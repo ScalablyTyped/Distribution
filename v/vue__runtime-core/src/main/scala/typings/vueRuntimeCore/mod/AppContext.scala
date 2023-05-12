@@ -15,7 +15,7 @@ trait AppContext extends StObject {
   
   var directives: Record[String, Directive[Any, Any]]
   
-  var mixins: js.Array[ComponentOptions[js.Object, Any, Any, Any, Any, Any, Any, Any]]
+  var mixins: js.Array[ComponentOptions[js.Object, Any, Any, Any, Any, Any, Any, Any, Any]]
   
   var provides: Record[String | js.Symbol, Any]
 }
@@ -26,7 +26,7 @@ object AppContext {
     components: Record[String, Component[Any, Any, Any, ComputedOptions, MethodOptions]],
     config: AppConfig,
     directives: Record[String, Directive[Any, Any]],
-    mixins: js.Array[ComponentOptions[js.Object, Any, Any, Any, Any, Any, Any, Any]],
+    mixins: js.Array[ComponentOptions[js.Object, Any, Any, Any, Any, Any, Any, Any, Any]],
     provides: Record[String | js.Symbol, Any]
   ): AppContext = {
     val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], components = components.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], directives = directives.asInstanceOf[js.Any], mixins = mixins.asInstanceOf[js.Any], provides = provides.asInstanceOf[js.Any])
@@ -44,9 +44,9 @@ object AppContext {
     
     inline def setDirectives(value: Record[String, Directive[Any, Any]]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     
-    inline def setMixins(value: js.Array[ComponentOptions[js.Object, Any, Any, Any, Any, Any, Any, Any]]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
+    inline def setMixins(value: js.Array[ComponentOptions[js.Object, Any, Any, Any, Any, Any, Any, Any, Any]]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
     
-    inline def setMixinsVarargs(value: (ComponentOptions[js.Object, Any, Any, Any, Any, Any, Any, Any])*): Self = StObject.set(x, "mixins", js.Array(value*))
+    inline def setMixinsVarargs(value: (ComponentOptions[js.Object, Any, Any, Any, Any, Any, Any, Any, Any])*): Self = StObject.set(x, "mixins", js.Array(value*))
     
     inline def setProvides(value: Record[String | js.Symbol, Any]): Self = StObject.set(x, "provides", value.asInstanceOf[js.Any])
   }

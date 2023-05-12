@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-discard-comments
 
-Typings are for version 5.1.2
+Typings are for version 6.0.0
 
 ## Library description:
 Discard comments in your CSS files with PostCSS.

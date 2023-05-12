@@ -1,6 +1,5 @@
 package typings.awsSdkClientSso
 
-import typings.awsSdkClientSso.distTypesSsoMod.SSO
 import typings.awsSdkClientSso.distTypesSsoclientMod.SSOClient
 import typings.awsSdkTypes.distTypesPaginationMod.PaginationConfiguration
 import org.scalablytyped.runtime.StObject
@@ -14,11 +13,11 @@ object distTypesPaginationInterfacesMod {
        with PaginationConfiguration {
     
     @JSName("client")
-    var client_SSOPaginationConfiguration: SSO | SSOClient
+    var client_SSOPaginationConfiguration: SSOClient
   }
   object SSOPaginationConfiguration {
     
-    inline def apply(client: SSO | SSOClient): SSOPaginationConfiguration = {
+    inline def apply(client: SSOClient): SSOPaginationConfiguration = {
       val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any])
       __obj.asInstanceOf[SSOPaginationConfiguration]
     }
@@ -26,7 +25,7 @@ object distTypesPaginationInterfacesMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: SSOPaginationConfiguration] (val x: Self) extends AnyVal {
       
-      inline def setClient(value: SSO | SSOClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: SSOClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     }
   }
 }

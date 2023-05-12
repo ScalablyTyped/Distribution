@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MsContentZoomSnapType
+import typings.csstype.mod.Property.PerspectiveOrigin
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `213` extends StObject {
   
   var value: js.UndefOr[
-    MsContentZoomSnapType | (js.Array[
+    (PerspectiveOrigin[Double | String]) | (js.Array[
       (Extract[
-        js.UndefOr[MsContentZoomSnapType | js.Array[NonNullable[js.UndefOr[MsContentZoomSnapType]]]], 
+        js.UndefOr[
+          (PerspectiveOrigin[Double | String]) | (js.Array[NonNullable[js.UndefOr[PerspectiveOrigin[Double | String]]]])
+        ], 
         String
-      ]) | NonNullable[js.UndefOr[MsContentZoomSnapType]]
+      ]) | (NonNullable[js.UndefOr[PerspectiveOrigin[Double | String]]])
     ])
   ] = js.native
 }

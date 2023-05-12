@@ -16,9 +16,10 @@ open class LayoutGroupComponent protected () extends Component {
   /**
     * Create a new LayoutGroupComponent instance.
     *
-    * @param {LayoutGroupComponentSystem} system - The ComponentSystem that created this
-    * Component.
-    * @param {Entity} entity - The Entity that this Component is attached to.
+    * @param {import('./system.js').LayoutGroupComponentSystem} system - The ComponentSystem that
+    * created this Component.
+    * @param {import('../../entity.js').Entity} entity - The Entity that this Component is
+    * attached to.
     */
   def this(system: LayoutGroupComponentSystem, entity: Entity) = this()
   

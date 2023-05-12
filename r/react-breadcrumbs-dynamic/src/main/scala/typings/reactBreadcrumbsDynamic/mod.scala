@@ -16,7 +16,7 @@ object mod {
     def this(props: BreadcrumbsProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: BreadcrumbsProps, context: Any) = this()
   }
@@ -28,7 +28,7 @@ object mod {
     def this(props: BreadcrumbsItemProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: BreadcrumbsItemProps, context: Any) = this()
   }
@@ -40,7 +40,7 @@ object mod {
     def this(props: BreadcrumbsProviderProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: BreadcrumbsProviderProps, context: Any) = this()
   }

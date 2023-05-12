@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `403ContentApplicationjsonDocumentationurl` extends StObject {
   
-  /** Forbidden if the project is not owned by the organization */
+  /** @description Forbidden if the project is not owned by the organization */
   var `403`: ContentApplicationjsonDocumentationurl
 }
 object `403ContentApplicationjsonDocumentationurl` {

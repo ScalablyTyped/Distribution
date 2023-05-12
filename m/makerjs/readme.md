@@ -1,7 +1,7 @@
 
 # Scala.js typings for makerjs
 
-Typings are for version 0.17.1
+Typings are for version 0.18.0
 
 ## Library description:
 Maker.js, a Microsoft Garage project, is a JavaScript library for creating and sharing modular line drawings for CNC and laser cutters.

@@ -1,5 +1,6 @@
 package typings.fhir.r5Mod
 
+import typings.fhir.fhirStrings.`entered-in-error`
 import typings.fhir.fhirStrings.`not-persuasive-with-modification`
 import typings.fhir.fhirStrings.`not-persuasive`
 import typings.fhir.fhirStrings.`persuasive-with-modification`
@@ -38,6 +39,8 @@ trait ArtifactAssessment
   var _disposition: js.UndefOr[Element] = js.undefined
   
   var _lastReviewDate: js.UndefOr[Element] = js.undefined
+  
+  var _title: js.UndefOr[Element] = js.undefined
   
   var _workflowStatus: js.UndefOr[Element] = js.undefined
   
@@ -82,7 +85,7 @@ trait ArtifactAssessment
   var copyright: js.UndefOr[String] = js.undefined
   
   /**
-    * Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the artifact assessment. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
+    * The date is often not tracked until the resource is published, but may be present on draft content. Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the artifact assessment. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
     */
   var date: js.UndefOr[String] = js.undefined
   
@@ -108,10 +111,15 @@ trait ArtifactAssessment
   val resourceType_ArtifactAssessment: typings.fhir.fhirStrings.ArtifactAssessment
   
   /**
+    * A short title for the assessment for use in displaying and selecting.
+    */
+  var title: js.UndefOr[String] = js.undefined
+  
+  /**
     * Indicates the workflow status of the comment or change request.
     */
   var workflowStatus: js.UndefOr[
-    submitted | triaged | `waiting-for-input` | `resolved-no-change` | `resolved-change-required` | deferred | duplicate | applied | published
+    submitted | triaged | `waiting-for-input` | `resolved-no-change` | `resolved-change-required` | deferred | duplicate | applied | published | `entered-in-error`
   ] = js.undefined
 }
 object ArtifactAssessment {
@@ -180,8 +188,12 @@ object ArtifactAssessment {
     
     inline def setResourceType(value: typings.fhir.fhirStrings.ArtifactAssessment): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
     inline def setWorkflowStatus(
-      value: submitted | triaged | `waiting-for-input` | `resolved-no-change` | `resolved-change-required` | deferred | duplicate | applied | published
+      value: submitted | triaged | `waiting-for-input` | `resolved-no-change` | `resolved-change-required` | deferred | duplicate | applied | published | `entered-in-error`
     ): Self = StObject.set(x, "workflowStatus", value.asInstanceOf[js.Any])
     
     inline def setWorkflowStatusUndefined: Self = StObject.set(x, "workflowStatus", js.undefined)
@@ -217,6 +229,10 @@ object ArtifactAssessment {
     inline def set_lastReviewDate(value: Element): Self = StObject.set(x, "_lastReviewDate", value.asInstanceOf[js.Any])
     
     inline def set_lastReviewDateUndefined: Self = StObject.set(x, "_lastReviewDate", js.undefined)
+    
+    inline def set_title(value: Element): Self = StObject.set(x, "_title", value.asInstanceOf[js.Any])
+    
+    inline def set_titleUndefined: Self = StObject.set(x, "_title", js.undefined)
     
     inline def set_workflowStatus(value: Element): Self = StObject.set(x, "_workflowStatus", value.asInstanceOf[js.Any])
     

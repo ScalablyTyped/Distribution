@@ -14,9 +14,11 @@ open class BatchManager protected ()
   /**
     * Create a new BatchManager instance.
     *
-    * @param {GraphicsDevice} device - The graphics device used by the batch manager.
-    * @param {Entity} root - The entity under which batched models are added.
-    * @param {Scene} scene - The scene that the batch manager affects.
+    * @param {import('../../platform/graphics/graphics-device.js').GraphicsDevice} device - The
+    * graphics device used by the batch manager.
+    * @param {import('../../framework/entity.js').Entity} root - The entity under which batched
+    * models are added.
+    * @param {import('../scene.js').Scene} scene - The scene that the batch manager affects.
     */
   def this(
     device: typings.playcanvas.mod.GraphicsDevice,

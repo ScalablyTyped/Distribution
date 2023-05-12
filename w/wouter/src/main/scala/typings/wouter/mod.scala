@@ -9,7 +9,6 @@ import typings.react.mod.ReactPortal
 import typings.wouter.anon.Children
 import typings.wouter.anon.Href
 import typings.wouter.anon.OmitAnchorHTMLAttributesH
-import typings.wouter.anon.PartialRouterPropschildre
 import typings.wouter.anon.To
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -31,7 +30,7 @@ object mod {
   
   @JSImport("wouter", "Router")
   @js.native
-  val Router: FunctionComponent[PartialRouterPropschildre] = js.native
+  val Router: FunctionComponent[RouterProps] = js.native
   
   @JSImport("wouter", "Switch")
   @js.native
@@ -43,7 +42,7 @@ object mod {
     pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
   ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useRoute")(pattern.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def useRouter(): RouterProps = ^.asInstanceOf[js.Dynamic].applyDynamic("useRouter")().asInstanceOf[RouterProps]
+  inline def useRouter(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useRouter")().asInstanceOf[Any]
   
   type LinkProps[H /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BaseLocationHook */ Any */] = OmitAnchorHTMLAttributesH & NavigationalProps[H]
   
@@ -134,39 +133,26 @@ object mod {
     }
   }
   
-  trait RouterProps extends StObject {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RouterOptions * / any */ trait RouterProps extends StObject {
     
-    var base: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
-    
-    var hook: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BaseLocationHook */ Any
-    
-    var matcher: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MatcherFn */ Any
+    var children: ReactNode
   }
   object RouterProps {
     
-    inline def apply(
-      base: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any,
-      hook: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BaseLocationHook */ Any,
-      matcher: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MatcherFn */ Any
-    ): RouterProps = {
-      val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], hook = hook.asInstanceOf[js.Any], matcher = matcher.asInstanceOf[js.Any])
+    inline def apply(): RouterProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RouterProps]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: RouterProps] (val x: Self) extends AnyVal {
       
-      inline def setBase(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
-      ): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setHook(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BaseLocationHook */ Any
-      ): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
+      inline def setChildrenNull: Self = StObject.set(x, "children", null)
       
-      inline def setMatcher(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MatcherFn */ Any
-      ): Self = StObject.set(x, "matcher", value.asInstanceOf[js.Any])
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
   

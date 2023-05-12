@@ -1,6 +1,8 @@
 package typings.monacoEditor.mod.editor
 
+import typings.monacoEditor.monacoEditorStrings.advanced
 import typings.monacoEditor.monacoEditorStrings.inherit
+import typings.monacoEditor.monacoEditorStrings.legacy
 import typings.monacoEditor.monacoEditorStrings.off
 import typings.monacoEditor.monacoEditorStrings.on
 import org.scalablytyped.runtime.StObject
@@ -8,6 +10,16 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IDiffEditorBaseOptions extends StObject {
+  
+  /**
+    * Whether the diff editor aria label should be verbose.
+    */
+  var accessibilityVerbose: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Diff Algorithm
+    */
+  var diffAlgorithm: js.UndefOr[legacy | advanced | IDocumentDiffProvider] = js.undefined
   
   /**
     * Should the diff editor enable code lens?
@@ -73,6 +85,13 @@ trait IDiffEditorBaseOptions extends StObject {
     * Defaults to true.
     */
   var renderSideBySide: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The default ratio when rendering side-by-side editors.
+    * Must be a number between 0 and 1, min sizes apply.
+    * Defaults to 0.5
+    */
+  var splitViewDefaultRatio: js.UndefOr[Double] = js.undefined
 }
 object IDiffEditorBaseOptions {
   
@@ -83,6 +102,14 @@ object IDiffEditorBaseOptions {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: IDiffEditorBaseOptions] (val x: Self) extends AnyVal {
+    
+    inline def setAccessibilityVerbose(value: Boolean): Self = StObject.set(x, "accessibilityVerbose", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityVerboseUndefined: Self = StObject.set(x, "accessibilityVerbose", js.undefined)
+    
+    inline def setDiffAlgorithm(value: legacy | advanced | IDocumentDiffProvider): Self = StObject.set(x, "diffAlgorithm", value.asInstanceOf[js.Any])
+    
+    inline def setDiffAlgorithmUndefined: Self = StObject.set(x, "diffAlgorithm", js.undefined)
     
     inline def setDiffCodeLens(value: Boolean): Self = StObject.set(x, "diffCodeLens", value.asInstanceOf[js.Any])
     
@@ -127,5 +154,9 @@ object IDiffEditorBaseOptions {
     inline def setRenderSideBySide(value: Boolean): Self = StObject.set(x, "renderSideBySide", value.asInstanceOf[js.Any])
     
     inline def setRenderSideBySideUndefined: Self = StObject.set(x, "renderSideBySide", js.undefined)
+    
+    inline def setSplitViewDefaultRatio(value: Double): Self = StObject.set(x, "splitViewDefaultRatio", value.asInstanceOf[js.Any])
+    
+    inline def setSplitViewDefaultRatioUndefined: Self = StObject.set(x, "splitViewDefaultRatio", js.undefined)
   }
 }

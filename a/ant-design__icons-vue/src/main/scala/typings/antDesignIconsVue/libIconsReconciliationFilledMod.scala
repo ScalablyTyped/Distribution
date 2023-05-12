@@ -16,7 +16,7 @@ object libIconsReconciliationFilledMod extends Shortcut {
   @js.native
   trait ReconciliationFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_ReconciliationFilledIconType: String = js.native

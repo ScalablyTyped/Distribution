@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined openapi-types.openapi-types.OpenAPIV3_1.Modify<std.Omit<openapi-types.openapi-types.OpenAPIV3.BaseSchemaObject, 'nullable'>, {  examples :std.Array<openapi-types.openapi-types.OpenAPIV3.BaseSchemaObject['example']> | undefined,   exclusiveMinimum :boolean | number | undefined,   exclusiveMaximum :boolean | number | undefined,   contentMediaType :string | undefined,   $schema :string | undefined,   additionalProperties :boolean | openapi-types.openapi-types.OpenAPIV3_1.ReferenceObject | openapi-types.openapi-types.OpenAPIV3_1.SchemaObject | undefined,   properties :{[name: string] : openapi-types.openapi-types.OpenAPIV3_1.ReferenceObject | openapi-types.openapi-types.OpenAPIV3_1.SchemaObject} | undefined,   allOf :std.Array<openapi-types.openapi-types.OpenAPIV3_1.ReferenceObject | openapi-types.openapi-types.OpenAPIV3_1.SchemaObject> | undefined,   oneOf :std.Array<openapi-types.openapi-types.OpenAPIV3_1.ReferenceObject | openapi-types.openapi-types.OpenAPIV3_1.SchemaObject> | undefined,   anyOf :std.Array<openapi-types.openapi-types.OpenAPIV3_1.ReferenceObject | openapi-types.openapi-types.OpenAPIV3_1.SchemaObject> | undefined,   not :openapi-types.openapi-types.OpenAPIV3_1.ReferenceObject | openapi-types.openapi-types.OpenAPIV3_1.SchemaObject | undefined,   discriminator :openapi-types.openapi-types.OpenAPIV3_1.DiscriminatorObject | undefined,   externalDocs :openapi-types.openapi-types.OpenAPIV3_1.ExternalDocumentationObject | undefined,   xml :openapi-types.openapi-types.OpenAPIV3_1.XMLObject | undefined}> */
+/* Inlined openapi-types.openapi-types.OpenAPIV3_1.Modify<std.Omit<openapi-types.openapi-types.OpenAPIV3.BaseSchemaObject, 'nullable'>, {  examples :std.Array<openapi-types.openapi-types.OpenAPIV3.BaseSchemaObject['example']> | undefined,   exclusiveMinimum :boolean | number | undefined,   exclusiveMaximum :boolean | number | undefined,   contentMediaType :string | undefined,   $schema :string | undefined,   additionalProperties :boolean | openapi-types.openapi-types.OpenAPIV3_1.ReferenceObject | openapi-types.openapi-types.OpenAPIV3_1.SchemaObject | undefined,   properties :{[name: string] : openapi-types.openapi-types.OpenAPIV3_1.ReferenceObject | openapi-types.openapi-types.OpenAPIV3_1.SchemaObject} | undefined,   allOf :std.Array<openapi-types.openapi-types.OpenAPIV3_1.ReferenceObject | openapi-types.openapi-types.OpenAPIV3_1.SchemaObject> | undefined,   oneOf :std.Array<openapi-types.openapi-types.OpenAPIV3_1.ReferenceObject | openapi-types.openapi-types.OpenAPIV3_1.SchemaObject> | undefined,   anyOf :std.Array<openapi-types.openapi-types.OpenAPIV3_1.ReferenceObject | openapi-types.openapi-types.OpenAPIV3_1.SchemaObject> | undefined,   not :openapi-types.openapi-types.OpenAPIV3_1.ReferenceObject | openapi-types.openapi-types.OpenAPIV3_1.SchemaObject | undefined,   discriminator :openapi-types.openapi-types.OpenAPIV3_1.DiscriminatorObject | undefined,   externalDocs :openapi-types.openapi-types.OpenAPIV3_1.ExternalDocumentationObject | undefined,   xml :openapi-types.openapi-types.OpenAPIV3_1.XMLObject | undefined,   const :any | undefined}> */
 trait BaseSchemaObject extends StObject {
   
   var default: js.UndefOr[Any] = js.undefined
@@ -18,6 +18,8 @@ trait BaseSchemaObject extends StObject {
   var allOf: js.UndefOr[js.Array[ReferenceObject | SchemaObject]] = js.undefined
   
   var anyOf: js.UndefOr[js.Array[ReferenceObject | SchemaObject]] = js.undefined
+  
+  var const: js.UndefOr[Any] = js.undefined
   
   var contentMediaType: js.UndefOr[String] = js.undefined
   
@@ -108,6 +110,10 @@ object BaseSchemaObject {
     inline def setAnyOfUndefined: Self = StObject.set(x, "anyOf", js.undefined)
     
     inline def setAnyOfVarargs(value: (ReferenceObject | SchemaObject)*): Self = StObject.set(x, "anyOf", js.Array(value*))
+    
+    inline def setConst(value: Any): Self = StObject.set(x, "const", value.asInstanceOf[js.Any])
+    
+    inline def setConstUndefined: Self = StObject.set(x, "const", js.undefined)
     
     inline def setContentMediaType(value: String): Self = StObject.set(x, "contentMediaType", value.asInstanceOf[js.Any])
     

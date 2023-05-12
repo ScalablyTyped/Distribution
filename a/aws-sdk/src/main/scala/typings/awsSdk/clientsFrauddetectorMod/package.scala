@@ -11,6 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type ATIMetricDataPointsList = js.Array[ATIMetricDataPoint]
 
+type AllowDenyLists = js.Array[AllowDenyList]
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IN_PROGRESS_INITIALIZING
   - typings.awsSdk.awsSdkStrings.IN_PROGRESS
@@ -69,6 +71,10 @@ type DetectorVersionSummaryList = js.Array[DetectorVersionSummary]
 
 type DetectorsMaxResults = Double
 
+type Elements = String
+
+type ElementsList = js.Array[Elements]
+
 type EvaluatedRuleList = js.Array[EvaluatedRule]
 
 type EventAttributeMap = StringDictionary[attributeValue]
@@ -125,6 +131,18 @@ type ListOfModelVersions = js.Array[ModelVersion]
 type ListOfRuleResults = js.Array[RuleResult]
 
 type ListOfStrings = js.Array[String]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.REPLACE
+  - typings.awsSdk.awsSdkStrings.APPEND
+  - typings.awsSdk.awsSdkStrings.REMOVE
+  - java.lang.String
+*/
+type ListUpdateMode = _ListUpdateMode | String
+
+type ListsElementsMaxResults = Double
+
+type ListsMetadataMaxResults = Double
 
 type Long = Double
 
@@ -209,6 +227,7 @@ type TrainingDataSourceEnum = _TrainingDataSourceEnum | String
   - typings.awsSdk.awsSdkStrings.IGNORE
   - typings.awsSdk.awsSdkStrings.FRAUD
   - typings.awsSdk.awsSdkStrings.LEGIT
+  - typings.awsSdk.awsSdkStrings.AUTO
   - java.lang.String
 */
 type UnlabeledEventsTreatment = _UnlabeledEventsTreatment | String
@@ -292,6 +311,10 @@ type modelVersionDetailList = js.Array[ModelVersionDetail]
 
 type modelsMaxPageSize = Double
 
+type nextToken = String
+
+type noDashIdentifier = String
+
 type ruleExpression = String
 
 type s3BucketLocation = String
@@ -313,6 +336,8 @@ type time = String
 type utcTimestampISO8601 = String
 
 type variableName = String
+
+type variableType = String
 
 type variableValue = String
 

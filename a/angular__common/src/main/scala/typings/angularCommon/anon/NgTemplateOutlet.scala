@@ -1,34 +1,31 @@
 package typings.angularCommon.anon
 
-import typings.angularCommon.angularCommonStrings.ngTemplateOutlet
-import typings.angularCommon.angularCommonStrings.ngTemplateOutletContext
-import typings.angularCommon.angularCommonStrings.ngTemplateOutletInjector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait NgTemplateOutlet extends StObject {
   
-  var ngTemplateOutlet: typings.angularCommon.angularCommonStrings.ngTemplateOutlet
+  var ngTemplateOutlet: `17`
   
-  var ngTemplateOutletContext: typings.angularCommon.angularCommonStrings.ngTemplateOutletContext
+  var ngTemplateOutletContext: `16`
   
-  var ngTemplateOutletInjector: typings.angularCommon.angularCommonStrings.ngTemplateOutletInjector
+  var ngTemplateOutletInjector: `18`
 }
 object NgTemplateOutlet {
   
-  inline def apply(): NgTemplateOutlet = {
-    val __obj = js.Dynamic.literal(ngTemplateOutlet = "ngTemplateOutlet", ngTemplateOutletContext = "ngTemplateOutletContext", ngTemplateOutletInjector = "ngTemplateOutletInjector")
+  inline def apply(ngTemplateOutlet: `17`, ngTemplateOutletContext: `16`, ngTemplateOutletInjector: `18`): NgTemplateOutlet = {
+    val __obj = js.Dynamic.literal(ngTemplateOutlet = ngTemplateOutlet.asInstanceOf[js.Any], ngTemplateOutletContext = ngTemplateOutletContext.asInstanceOf[js.Any], ngTemplateOutletInjector = ngTemplateOutletInjector.asInstanceOf[js.Any])
     __obj.asInstanceOf[NgTemplateOutlet]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: NgTemplateOutlet] (val x: Self) extends AnyVal {
     
-    inline def setNgTemplateOutlet(value: ngTemplateOutlet): Self = StObject.set(x, "ngTemplateOutlet", value.asInstanceOf[js.Any])
+    inline def setNgTemplateOutlet(value: `17`): Self = StObject.set(x, "ngTemplateOutlet", value.asInstanceOf[js.Any])
     
-    inline def setNgTemplateOutletContext(value: ngTemplateOutletContext): Self = StObject.set(x, "ngTemplateOutletContext", value.asInstanceOf[js.Any])
+    inline def setNgTemplateOutletContext(value: `16`): Self = StObject.set(x, "ngTemplateOutletContext", value.asInstanceOf[js.Any])
     
-    inline def setNgTemplateOutletInjector(value: ngTemplateOutletInjector): Self = StObject.set(x, "ngTemplateOutletInjector", value.asInstanceOf[js.Any])
+    inline def setNgTemplateOutletInjector(value: `18`): Self = StObject.set(x, "ngTemplateOutletInjector", value.asInstanceOf[js.Any])
   }
 }

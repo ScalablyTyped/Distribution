@@ -98,6 +98,8 @@ object buildSrcRetryingCallMod {
     
     /* private */ val channel: Any = js.native
     
+    /* private */ var clearSentMessages: Any = js.native
+    
     /* private */ var commitCall: Any = js.native
     
     /* private */ var commitCallWithMostMessages: Any = js.native
@@ -110,12 +112,16 @@ object buildSrcRetryingCallMod {
     
     /* private */ val deadline: Any = js.native
     
+    /* private */ var getBufferEntry: Any = js.native
+    
     /* CompleteClass */
     override def getCallNumber(): Double = js.native
     
     def getHost(): String = js.native
     
     def getMethod(): String = js.native
+    
+    /* private */ var getNextBufferIndex: Any = js.native
     
     /* private */ var getNextRetryBackoffMs: Any = js.native
     
@@ -128,6 +134,8 @@ object buildSrcRetryingCallMod {
     override def halfClose(): Unit = js.native
     
     /* private */ var handleChildStatus: Any = js.native
+    
+    /* private */ var handleChildWriteCompleted: Any = js.native
     
     /* private */ var handleProcessedStatus: Any = js.native
     
@@ -152,6 +160,14 @@ object buildSrcRetryingCallMod {
     /* private */ val methodName: Any = js.native
     
     /* private */ var nextRetryBackoffSec: Any = js.native
+    
+    /**
+      * Tracks whether a read has been started, so that we know whether to start
+      * reads on new child calls. This only matters for the first read, because
+      * once a message comes in the child call becomes committed and there will
+      * be no new child calls.
+      */
+    /* private */ var readStarted: Any = js.native
     
     /* private */ var reportStatus: Any = js.native
     
@@ -182,5 +198,12 @@ object buildSrcRetryingCallMod {
     /* private */ var underlyingCalls: Any = js.native
     
     /* private */ var writeBuffer: Any = js.native
+    
+    /**
+      * The offset of message indices in the writeBuffer. For example, if
+      * writeBufferOffset is 10, message 10 is in writeBuffer[0] and message 15
+      * is in writeBuffer[5].
+      */
+    /* private */ var writeBufferOffset: Any = js.native
   }
 }

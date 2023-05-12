@@ -1,6 +1,7 @@
 package typings.inferno.distCoreTypesMod
 
 import typings.inferno.distCoreNativetypesMod.NativeDragEvent
+import typings.inferno.distCoreTypesMod.Inferno.InfernoElement
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -38,7 +39,11 @@ type FormEvent[T] = SemiSyntheticEvent[T]
 
 type FormEventHandler[T] = EventHandler[FormEvent[T]]
 
+type InfernoChild = InfernoElement[Any] | InfernoText
+
 type InfernoEventHandler[T] = EventHandler[SemiSyntheticEvent[T]]
+
+type InfernoFragment = js.Object | InfernoNodeArray
 
 /** NOTE: Conditional type definitions are impossible to translate to Scala.
   * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
@@ -48,6 +53,12 @@ type InfernoEventHandler[T] = EventHandler[SemiSyntheticEvent[T]]
   }}}
   */
 type InfernoManagedAttributes[C, P] = P
+
+type InfernoNode = InfernoSingleNode | InfernoFragment
+
+type InfernoSingleNode = js.UndefOr[InfernoChild | Boolean | Null]
+
+type InfernoText = String | Double
 
 type InfernoWheelEvent[T] = InfernoMouseEvent[T] & WheelEvent
 

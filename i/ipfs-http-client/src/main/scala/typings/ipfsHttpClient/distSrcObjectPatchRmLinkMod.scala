@@ -14,7 +14,7 @@ object distSrcObjectPatchRmLinkMod {
   val createRmLink: Factory[
     js.Function3[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID<unknown, number, number, imported_cid.Version> */ /* cid */ Any, 
-      /* dLink */ String | PBLink, 
+      /* link */ String | PBLink, 
       /* options */ js.UndefOr[AbortOptions & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions], 
       js.Promise[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID<unknown, number, number, imported_cid.Version> */ Any

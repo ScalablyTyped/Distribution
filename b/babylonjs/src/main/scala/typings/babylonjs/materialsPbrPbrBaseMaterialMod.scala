@@ -5,6 +5,7 @@ import typings.babylonjs.anon.Default
 import typings.babylonjs.materialsImageProcessingConfigurationMod.IImageProcessingConfigurationDefines
 import typings.babylonjs.materialsImageProcessingConfigurationMod.ImageProcessingConfiguration
 import typings.babylonjs.materialsMaterialDefinesMod.MaterialDefines
+import typings.babylonjs.materialsMaterialDotdecalMapConfigurationMod.DecalMapConfiguration
 import typings.babylonjs.materialsMaterialDotdetailMapConfigurationMod.DetailMapConfiguration
 import typings.babylonjs.materialsPbrPbrAnisotropicConfigurationMod.PBRAnisotropicConfiguration
 import typings.babylonjs.materialsPbrPbrBRDFConfigurationMod.PBRBRDFConfiguration
@@ -94,25 +95,10 @@ object materialsPbrPbrBaseMaterialMod {
     
     /* protected */ var _cacheHasRenderTargetTextures: Boolean = js.native
     
-    /**
-      * @internal
-      * This is reserved for the inspector.
-      * As the default viewing range might not be enough (if the ambient is really small for instance)
-      * You can use the factor to better multiply the final value.
-      */
-    /* private */ var _debugFactor: Any = js.native
-    
-    /**
-      * @internal
-      * This is reserved for the inspector.
-      * Specify from where on screen the debug mode should start.
-      * The value goes from -1 (full screen) to 1 (not visible)
-      * It helps with side by side comparison against the final render
-      * This defaults to -1
-      */
-    /* private */ var _debugLimit: Any = js.native
-    
     /* private */ var _debugMode: Any = js.native
+    
+    /** @internal */
+    var _decalMap: Nullable[DecalMapConfiguration] = js.native
     
     /**
       * Intensity of the direct lights e.g. the four lights available in your scene.
@@ -539,10 +525,33 @@ object materialsPbrPbrBaseMaterialMod {
     /**
       * @internal
       * This is reserved for the inspector.
+      * As the default viewing range might not be enough (if the ambient is really small for instance)
+      * You can use the factor to better multiply the final value.
+      */
+    var debugFactor: Double = js.native
+    
+    /**
+      * @internal
+      * This is reserved for the inspector.
+      * Specify from where on screen the debug mode should start.
+      * The value goes from -1 (full screen) to 1 (not visible)
+      * It helps with side by side comparison against the final render
+      * This defaults to -1
+      */
+    var debugLimit: Double = js.native
+    
+    /**
+      * @internal
+      * This is reserved for the inspector.
       * Defines the material debug mode.
       * It helps seeing only some components of the material while troubleshooting.
       */
     var debugMode: Double = js.native
+    
+    /**
+      * Defines the decal map parameters for the material.
+      */
+    var decalMap: Nullable[DecalMapConfiguration] = js.native
     
     /**
       * Defines the detail map parameters for the material.
@@ -580,6 +589,8 @@ object materialsPbrPbrBaseMaterialMod {
     
     /**
       * Sets the required values to the prepass renderer.
+      * It can't be sets when subsurface scattering of this material is disabled.
+      * When scene have ability to enable subsurface prepass effect, it will enable.
       */
     def setPrePassRenderer(): Boolean = js.native
     
@@ -715,6 +726,10 @@ object materialsPbrPbrBaseMaterialMod {
     var BUMPDIRECTUV: Double = js.native
     
     var BonesPerMesh: Double = js.native
+    
+    var CAMERA_ORTHOGRAPHIC: Boolean = js.native
+    
+    var CAMERA_PERSPECTIVE: Boolean = js.native
     
     var CLIPPLANE: Boolean = js.native
     

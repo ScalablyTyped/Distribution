@@ -14,6 +14,7 @@ import typings.mparticleWebSdk.mod.GetAppName_
 import typings.mparticleWebSdk.mod.GetAppVersion_
 import typings.mparticleWebSdk.mod.GetCurrentUser
 import typings.mparticleWebSdk.mod.GetDeviceId_
+import typings.mparticleWebSdk.mod.GetEnvironment_
 import typings.mparticleWebSdk.mod.GetIntegrationAttributes_
 import typings.mparticleWebSdk.mod.GetSession
 import typings.mparticleWebSdk.mod.GetUser
@@ -350,6 +351,10 @@ object global {
     @JSGlobal("mParticle.getDeviceId")
     @js.native
     val getDeviceId: GetDeviceId_ = js.native
+    
+    @JSGlobal("mParticle.getEnvironment")
+    @js.native
+    val getEnvironment: GetEnvironment_ = js.native
     
     inline def getInstance(): mParticleInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[mParticleInstance]
     inline def getInstance(instanceName: String): mParticleInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(instanceName.asInstanceOf[js.Any]).asInstanceOf[mParticleInstance]

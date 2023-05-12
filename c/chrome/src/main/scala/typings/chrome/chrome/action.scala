@@ -18,7 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object action {
   
-  trait BadgeBackgroundColorDetails extends StObject {
+  type BadgeBackgroundColorDetails = BadgeColorDetails
+  
+  trait BadgeColorDetails extends StObject {
     
     /** An array of four integers in the range [0,255] that make up the RGBA color of the badge. For example, opaque red is [255, 0, 0, 255]. Can also be a string with a CSS value, with opaque red being #FF0000 or #F00. */
     var color: String | ColorArray
@@ -26,15 +28,15 @@ object action {
     /** Optional. Limits the change to when a particular tab is selected. Automatically resets when the tab is closed.  */
     var tabId: js.UndefOr[Double] = js.undefined
   }
-  object BadgeBackgroundColorDetails {
+  object BadgeColorDetails {
     
-    inline def apply(color: String | ColorArray): BadgeBackgroundColorDetails = {
+    inline def apply(color: String | ColorArray): BadgeColorDetails = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
-      __obj.asInstanceOf[BadgeBackgroundColorDetails]
+      __obj.asInstanceOf[BadgeColorDetails]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: BadgeBackgroundColorDetails] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: BadgeColorDetails] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String | ColorArray): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -73,6 +75,27 @@ object action {
   type BrowserClickedEvent = Event[js.Function1[/* tab */ Tab, Unit]]
   
   type ColorArray = js.Tuple4[Double, Double, Double, Double]
+  
+  trait OpenPopupOptions extends StObject {
+    
+    /** Optional. The id of the window to open the action popup in. Defaults to the currently-active window if unspecified.  */
+    var windowId: js.UndefOr[Double] = js.undefined
+  }
+  object OpenPopupOptions {
+    
+    inline def apply(): OpenPopupOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[OpenPopupOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenPopupOptions] (val x: Self) extends AnyVal {
+      
+      inline def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
+      
+      inline def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
+    }
+  }
   
   trait PopupDetails extends StObject {
     
@@ -179,6 +202,25 @@ object action {
       inline def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait UserSettings extends StObject {
+    
+    /** Whether the extension's action icon is visible on browser windows' top-level toolbar (i.e., whether the extension has been 'pinned' by the user). */
+    var isOnToolbar: Boolean
+  }
+  object UserSettings {
+    
+    inline def apply(isOnToolbar: Boolean): UserSettings = {
+      val __obj = js.Dynamic.literal(isOnToolbar = isOnToolbar.asInstanceOf[js.Any])
+      __obj.asInstanceOf[UserSettings]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserSettings] (val x: Self) extends AnyVal {
+      
+      inline def setIsOnToolbar(value: Boolean): Self = StObject.set(x, "isOnToolbar", value.asInstanceOf[js.Any])
     }
   }
 }

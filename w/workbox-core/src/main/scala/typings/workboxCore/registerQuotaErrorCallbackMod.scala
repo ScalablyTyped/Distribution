@@ -10,5 +10,12 @@ object registerQuotaErrorCallbackMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def registerQuotaErrorCallback(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerQuotaErrorCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  /**
+    * Adds a function to the set of quotaErrorCallbacks that will be executed if
+    * there's a quota error.
+    *
+    * @param {Function} callback
+    * @memberof workbox-core
+    */
+  inline def registerQuotaErrorCallback(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerQuotaErrorCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

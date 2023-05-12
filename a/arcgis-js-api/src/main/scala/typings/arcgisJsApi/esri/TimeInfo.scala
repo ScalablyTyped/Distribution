@@ -41,15 +41,6 @@ trait TimeInfo
   var startField: String = js.native
   
   /**
-    * Defines information about daylight savings time and the time zone in which data was collected.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#timeReference)
-    */
-  var timeReference: TimeReference = js.native
-  
-  /**
     * The name of the field used to join or group discrete locations.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#trackIdField)

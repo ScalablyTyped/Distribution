@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__notices
 
-Typings are for version 3.5
+Typings are for version 3.27
 
 ## Library description:
 State management for notices.

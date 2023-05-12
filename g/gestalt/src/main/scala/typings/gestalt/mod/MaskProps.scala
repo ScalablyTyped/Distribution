@@ -10,14 +10,13 @@ import typings.gestalt.gestaltInts.`6`
 import typings.gestalt.gestaltInts.`7`
 import typings.gestalt.gestaltInts.`8`
 import typings.gestalt.gestaltStrings.circle
-import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait MaskProps extends StObject {
   
-  var children: js.UndefOr[ReactNode] = js.undefined
+  var children: js.UndefOr[Node] = js.undefined
   
   var height: js.UndefOr[Double | String] = js.undefined
   
@@ -39,7 +38,7 @@ object MaskProps {
   @scala.inline
   implicit open class MutableBuilder[Self <: MaskProps] (val x: Self) extends AnyVal {
     
-    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Node): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     

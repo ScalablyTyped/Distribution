@@ -7,46 +7,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetPostPut extends StObject {
   
   /**
-    * Remove all custom labels from a self-hosted runner configured in a
-    * repository. Returns the remaining read-only labels from the runner.
-    *
-    * You must authenticate using an access token with the `repo` scope to use this
-    * endpoint.
+    * Remove status check contexts
+    * @description Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
-  var delete: ParametersPathOwnerRepoResponses66
+  var delete: Responses200Content29404422
   
   /**
-    * Lists all labels for a self-hosted runner configured in a repository.
-    *
-    * You must authenticate using an access token with the `repo` scope to use this
-    * endpoint.
+    * Get all status check contexts
+    * @description Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
-  var get: ParametersPathOwnerRepoResponses23
+  var get: Responses200Content29404
   
   /**
-    * Add custom labels to a self-hosted runner configured in a repository.
-    *
-    * You must authenticate using an access token with the `repo` scope to use this
-    * endpoint.
+    * Add status check contexts
+    * @description Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
-  var post: ParametersPathOwnerRepoRequestBodyContentApplicationjsonLabels
+  var post: Responses200Content29403
   
   /**
-    * Remove all previous custom labels and set the new custom labels for a specific
-    * self-hosted runner configured in a repository.
-    *
-    * You must authenticate using an access token with the `repo` scope to use this
-    * endpoint.
+    * Set status check contexts
+    * @description Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
-  var put: ParametersPathOwnerRepoRequestBodyContentApplicationjsonLabels
+  var put: Responses200Content29404422
 }
 object GetPostPut {
   
   inline def apply(
-    delete: ParametersPathOwnerRepoResponses66,
-    get: ParametersPathOwnerRepoResponses23,
-    post: ParametersPathOwnerRepoRequestBodyContentApplicationjsonLabels,
-    put: ParametersPathOwnerRepoRequestBodyContentApplicationjsonLabels
+    delete: Responses200Content29404422,
+    get: Responses200Content29404,
+    post: Responses200Content29403,
+    put: Responses200Content29404422
   ): GetPostPut = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPostPut]
@@ -55,12 +45,12 @@ object GetPostPut {
   @scala.inline
   implicit open class MutableBuilder[Self <: GetPostPut] (val x: Self) extends AnyVal {
     
-    inline def setDelete(value: ParametersPathOwnerRepoResponses66): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: Responses200Content29404422): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    inline def setGet(value: ParametersPathOwnerRepoResponses23): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: Responses200Content29404): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPost(value: ParametersPathOwnerRepoRequestBodyContentApplicationjsonLabels): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+    inline def setPost(value: Responses200Content29403): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
     
-    inline def setPut(value: ParametersPathOwnerRepoRequestBodyContentApplicationjsonLabels): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setPut(value: Responses200Content29404422): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

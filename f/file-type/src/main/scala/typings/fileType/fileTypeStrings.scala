@@ -51,6 +51,12 @@ object fileTypeStrings {
   inline def ac3: ac3 = "ac3".asInstanceOf[ac3]
   
   @js.native
+  sealed trait ace
+    extends StObject
+       with FileExtension
+  inline def ace: ace = "ace".asInstanceOf[ace]
+  
+  @js.native
   sealed trait ai
     extends StObject
        with FileExtension
@@ -87,6 +93,12 @@ object fileTypeStrings {
   inline def apng: apng = "apng".asInstanceOf[apng]
   
   @js.native
+  sealed trait applicationSlashavro
+    extends StObject
+       with _MimeType
+  inline def applicationSlashavro: applicationSlashavro = "application/avro".asInstanceOf[applicationSlashavro]
+  
+  @js.native
   sealed trait applicationSlashdicom
     extends StObject
        with _MimeType
@@ -109,6 +121,12 @@ object fileTypeStrings {
     extends StObject
        with _MimeType
   inline def applicationSlashgzip: applicationSlashgzip = "application/gzip".asInstanceOf[applicationSlashgzip]
+  
+  @js.native
+  sealed trait `applicationSlashjava-vm`
+    extends StObject
+       with _MimeType
+  inline def `applicationSlashjava-vm`: `applicationSlashjava-vm` = "application/java-vm".asInstanceOf[`applicationSlashjava-vm`]
   
   @js.native
   sealed trait applicationSlashmxf
@@ -171,6 +189,12 @@ object fileTypeStrings {
   inline def `applicationSlashvndDotms-htmlhelp`: `applicationSlashvndDotms-htmlhelp` = "application/vnd.ms-htmlhelp".asInstanceOf[`applicationSlashvndDotms-htmlhelp`]
   
   @js.native
+  sealed trait `applicationSlashvndDotms-outlook`
+    extends StObject
+       with _MimeType
+  inline def `applicationSlashvndDotms-outlook`: `applicationSlashvndDotms-outlook` = "application/vnd.ms-outlook".asInstanceOf[`applicationSlashvndDotms-outlook`]
+  
+  @js.native
   sealed trait applicationSlashvndDotoasisDotopendocumentDotpresentation
     extends StObject
        with _MimeType
@@ -213,6 +237,12 @@ object fileTypeStrings {
   inline def `applicationSlashx-7z-compressed`: `applicationSlashx-7z-compressed` = "application/x-7z-compressed".asInstanceOf[`applicationSlashx-7z-compressed`]
   
   @js.native
+  sealed trait `applicationSlashx-ace-compressed`
+    extends StObject
+       with _MimeType
+  inline def `applicationSlashx-ace-compressed`: `applicationSlashx-ace-compressed` = "application/x-ace-compressed".asInstanceOf[`applicationSlashx-ace-compressed`]
+  
+  @js.native
   sealed trait `applicationSlashx-apache-arrow`
     extends StObject
        with _MimeType
@@ -223,6 +253,12 @@ object fileTypeStrings {
     extends StObject
        with _MimeType
   inline def `applicationSlashx-apple-diskimage`: `applicationSlashx-apple-diskimage` = "application/x-apple-diskimage".asInstanceOf[`applicationSlashx-apple-diskimage`]
+  
+  @js.native
+  sealed trait `applicationSlashx-arj`
+    extends StObject
+       with _MimeType
+  inline def `applicationSlashx-arj`: `applicationSlashx-arj` = "application/x-arj".asInstanceOf[`applicationSlashx-arj`]
   
   @js.native
   sealed trait `applicationSlashx-asar`
@@ -253,6 +289,12 @@ object fileTypeStrings {
     extends StObject
        with _MimeType
   inline def `applicationSlashx-compress`: `applicationSlashx-compress` = "application/x-compress".asInstanceOf[`applicationSlashx-compress`]
+  
+  @js.native
+  sealed trait `applicationSlashx-cpio`
+    extends StObject
+       with _MimeType
+  inline def `applicationSlashx-cpio`: `applicationSlashx-cpio` = "application/x-cpio".asInstanceOf[`applicationSlashx-cpio`]
   
   @js.native
   sealed trait `applicationSlashx-deb`
@@ -319,6 +361,12 @@ object fileTypeStrings {
     extends StObject
        with _MimeType
   inline def `applicationSlashx-nintendo-nes-rom`: `applicationSlashx-nintendo-nes-rom` = "application/x-nintendo-nes-rom".asInstanceOf[`applicationSlashx-nintendo-nes-rom`]
+  
+  @js.native
+  sealed trait `applicationSlashx-parquet`
+    extends StObject
+       with _MimeType
+  inline def `applicationSlashx-parquet`: `applicationSlashx-parquet` = "application/x-parquet".asInstanceOf[`applicationSlashx-parquet`]
   
   @js.native
   sealed trait `applicationSlashx-rar-compressed`
@@ -403,6 +451,12 @@ object fileTypeStrings {
     extends StObject
        with FileExtension
   inline def ar: ar = "ar".asInstanceOf[ar]
+  
+  @js.native
+  sealed trait arj
+    extends StObject
+       with FileExtension
+  inline def arj: arj = "arj".asInstanceOf[arj]
   
   @js.native
   sealed trait arrow
@@ -573,6 +627,12 @@ object fileTypeStrings {
   inline def avif: avif = "avif".asInstanceOf[avif]
   
   @js.native
+  sealed trait avro
+    extends StObject
+       with FileExtension
+  inline def avro: avro = "avro".asInstanceOf[avro]
+  
+  @js.native
   sealed trait blend
     extends StObject
        with FileExtension
@@ -613,6 +673,18 @@ object fileTypeStrings {
     extends StObject
        with FileExtension
   inline def chm: chm = "chm".asInstanceOf[chm]
+  
+  @js.native
+  sealed trait `class`
+    extends StObject
+       with FileExtension
+  inline def `class`: `class` = "class".asInstanceOf[`class`]
+  
+  @js.native
+  sealed trait cpio
+    extends StObject
+       with FileExtension
+  inline def cpio: cpio = "cpio".asInstanceOf[cpio]
   
   @js.native
   sealed trait cr2
@@ -673,6 +745,12 @@ object fileTypeStrings {
     extends StObject
        with FileExtension
   inline def dsf: dsf = "dsf".asInstanceOf[dsf]
+  
+  @js.native
+  sealed trait dwg
+    extends StObject
+       with FileExtension
+  inline def dwg: dwg = "dwg".asInstanceOf[dwg]
   
   @js.native
   sealed trait elf
@@ -879,6 +957,18 @@ object fileTypeStrings {
   inline def imageSlashicns: imageSlashicns = "image/icns".asInstanceOf[imageSlashicns]
   
   @js.native
+  sealed trait imageSlashj2c
+    extends StObject
+       with _MimeType
+  inline def imageSlashj2c: imageSlashj2c = "image/j2c".asInstanceOf[imageSlashj2c]
+  
+  @js.native
+  sealed trait imageSlashjls
+    extends StObject
+       with _MimeType
+  inline def imageSlashjls: imageSlashjls = "image/jls".asInstanceOf[imageSlashjls]
+  
+  @js.native
   sealed trait imageSlashjp2
     extends StObject
        with _MimeType
@@ -937,6 +1027,12 @@ object fileTypeStrings {
     extends StObject
        with _MimeType
   inline def imageSlashvndDotadobeDotphotoshop: imageSlashvndDotadobeDotphotoshop = "image/vnd.adobe.photoshop".asInstanceOf[imageSlashvndDotadobeDotphotoshop]
+  
+  @js.native
+  sealed trait imageSlashvndDotdwg
+    extends StObject
+       with _MimeType
+  inline def imageSlashvndDotdwg: imageSlashvndDotdwg = "image/vnd.dwg".asInstanceOf[imageSlashvndDotdwg]
   
   @js.native
   sealed trait `imageSlashvndDotms-photo`
@@ -1021,6 +1117,18 @@ object fileTypeStrings {
     extends StObject
        with FileExtension
   inline def it: it = "it".asInstanceOf[it]
+  
+  @js.native
+  sealed trait j2c
+    extends StObject
+       with FileExtension
+  inline def j2c: j2c = "j2c".asInstanceOf[j2c]
+  
+  @js.native
+  sealed trait jls
+    extends StObject
+       with FileExtension
+  inline def jls: jls = "jls".asInstanceOf[jls]
   
   @js.native
   sealed trait jp2
@@ -1287,6 +1395,12 @@ object fileTypeStrings {
   inline def otf: otf = "otf".asInstanceOf[otf]
   
   @js.native
+  sealed trait parquet
+    extends StObject
+       with FileExtension
+  inline def parquet: parquet = "parquet".asInstanceOf[parquet]
+  
+  @js.native
   sealed trait pcap
     extends StObject
        with FileExtension
@@ -1327,6 +1441,12 @@ object fileTypeStrings {
     extends StObject
        with FileExtension
   inline def psd: psd = "psd".asInstanceOf[psd]
+  
+  @js.native
+  sealed trait pst
+    extends StObject
+       with FileExtension
+  inline def pst: pst = "pst".asInstanceOf[pst]
   
   @js.native
   sealed trait qcp

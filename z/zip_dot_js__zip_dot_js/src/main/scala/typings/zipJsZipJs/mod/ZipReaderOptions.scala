@@ -12,7 +12,7 @@ trait ZipReaderOptions extends StObject {
   
   /**
     * `true` to check the signature of the entry.
-    * 
+    *
     * @defaultValue false
     */
   var checkSignature: js.UndefOr[Boolean] = js.undefined
@@ -24,7 +24,7 @@ trait ZipReaderOptions extends StObject {
   
   /**
     * `true` to prevent closing of {@link Writer#writable} when calling {@link Entry#getData}.
-    * 
+    *
     * @defaultValue false
     */
   var preventClose: js.UndefOr[Boolean] = js.undefined
@@ -36,7 +36,7 @@ trait ZipReaderOptions extends StObject {
   
   /**
     * `true` to transfer streams to web workers when decompressing data.
-    * 
+    *
     * @defaultValue true
     */
   var transferStreams: js.UndefOr[Boolean] = js.undefined

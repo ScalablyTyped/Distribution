@@ -1,10 +1,10 @@
 package typings.devextreme.mod.DevExpress.ui
 
 import typings.devextreme.anon.Column
+import typings.devextreme.mod.DevExpress.common.grids.ColumnButtonBase
 import typings.devextreme.mod.DevExpress.core.DxElement_
 import typings.devextreme.mod.DevExpress.core.UserDefinedElement
 import typings.devextreme.mod.DevExpress.core.template
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.ColumnButtonBase
 import typings.devextreme.mod.DevExpress.ui.dxDataGrid.ColumnButtonClickEvent
 import typings.devextreme.mod.DevExpress.ui.dxDataGrid.ColumnButtonTemplateData
 import typings.devextreme.mod.DevExpress.ui.dxDataGrid.DataGridPredefinedColumnButton

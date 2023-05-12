@@ -26,8 +26,6 @@ trait TextAreaOptions extends StObject {
   
   var readonly: js.UndefOr[Boolean] = js.undefined
   
-  var resizable: js.UndefOr[String] = js.undefined
-  
   var resize: js.UndefOr[String] = js.undefined
   
   var rounded: js.UndefOr[String] = js.undefined
@@ -87,10 +85,6 @@ object TextAreaOptions {
     inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
     inline def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
-    
-    inline def setResizable(value: String): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
-    
-    inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
     
     inline def setResize(value: String): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
     

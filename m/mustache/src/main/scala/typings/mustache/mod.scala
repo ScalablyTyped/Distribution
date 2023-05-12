@@ -386,7 +386,8 @@ object mod {
   
   @JSImport("mustache", "escape")
   @js.native
-  val escape: EscapeFunction = js.native
+  def escape: EscapeFunction = js.native
+  inline def escape_=(x: EscapeFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("escape")(x.asInstanceOf[js.Any])
   
   @JSImport("mustache", "name")
   @js.native

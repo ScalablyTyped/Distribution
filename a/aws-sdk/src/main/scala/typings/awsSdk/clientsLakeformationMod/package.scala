@@ -307,6 +307,8 @@ type ValueString = java.lang.String
 
 type ValueStringList = js.Array[ValueString]
 
+type VersionString = java.lang.String
+
 type VirtualObjectList = js.Array[VirtualObject]
 
 type WorkUnitIdLong = Double

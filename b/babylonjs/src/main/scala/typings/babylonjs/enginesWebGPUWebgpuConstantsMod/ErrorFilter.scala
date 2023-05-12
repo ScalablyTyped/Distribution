@@ -14,6 +14,12 @@ object ErrorFilter extends StObject {
   def apply(value: String): js.UndefOr[ErrorFilter & String] = js.native
   
   @js.native
+  sealed trait Internal
+    extends StObject
+       with ErrorFilter
+  /* "internal" */ val Internal: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.ErrorFilter.Internal & String = js.native
+  
+  @js.native
   sealed trait OutOfMemory
     extends StObject
        with ErrorFilter

@@ -23,7 +23,8 @@ trait TypeofNgPlural
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `true`
+    `true`, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[typings.angularCommon.mod.NgPlural, scala.Nothing] = js.native

@@ -168,12 +168,14 @@ object global {
     /* static member */
     inline def calculateVarint32(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateVarint32")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
     
+    inline def calculateVarint64(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any
+    ): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateVarint64")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
     /**
       * Calculates the actual number of bytes required to store a 64bit base 128 variable-length integer.
       */
     /* static member */
     inline def calculateVarint64(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateVarint64")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
-    inline def calculateVarint64(value: typings.long.mod.^): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateVarint64")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Concatenates multiple ByteBuffers into one.
@@ -338,12 +340,14 @@ object global {
     /* static member */
     inline def zigZagDecode32(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagDecode32")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
     
+    inline def zigZagDecode64(
+      n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any
+    ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagDecode64")(n.asInstanceOf[js.Any]).asInstanceOf[Any]
     /**
       * Decodes a zigzag encoded signed 64bit integer.
       */
     /* static member */
-    inline def zigZagDecode64(n: Double): typings.long.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagDecode64")(n.asInstanceOf[js.Any]).asInstanceOf[typings.long.mod.^]
-    inline def zigZagDecode64(n: typings.long.mod.^): typings.long.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagDecode64")(n.asInstanceOf[js.Any]).asInstanceOf[typings.long.mod.^]
+    inline def zigZagDecode64(n: Double): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagDecode64")(n.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /**
       * Zigzag encodes a signed 32bit integer so that it can be effectively used with varint encoding.
@@ -351,11 +355,13 @@ object global {
     /* static member */
     inline def zigZagEncode32(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagEncode32")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
     
+    inline def zigZagEncode64(
+      n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any
+    ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagEncode64")(n.asInstanceOf[js.Any]).asInstanceOf[Any]
     /**
       * Zigzag encodes a signed 64bit integer so that it can be effectively used with varint encoding.
       */
     /* static member */
-    inline def zigZagEncode64(n: Double): typings.long.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagEncode64")(n.asInstanceOf[js.Any]).asInstanceOf[typings.long.mod.^]
-    inline def zigZagEncode64(n: typings.long.mod.^): typings.long.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagEncode64")(n.asInstanceOf[js.Any]).asInstanceOf[typings.long.mod.^]
+    inline def zigZagEncode64(n: Double): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagEncode64")(n.asInstanceOf[js.Any]).asInstanceOf[Any]
   }
 }

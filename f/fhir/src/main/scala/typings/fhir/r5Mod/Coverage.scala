@@ -1,9 +1,12 @@
 package typings.fhir.r5Mod
 
 import typings.fhir.fhirStrings.`entered-in-error`
+import typings.fhir.fhirStrings.`self-pay`
 import typings.fhir.fhirStrings.active
 import typings.fhir.fhirStrings.cancelled
 import typings.fhir.fhirStrings.draft
+import typings.fhir.fhirStrings.insurance
+import typings.fhir.fhirStrings.other
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,6 +17,8 @@ trait Coverage
      with _FhirResource {
   
   var _dependent: js.UndefOr[Element] = js.undefined
+  
+  var _kind: js.UndefOr[Element] = js.undefined
   
   var _network: js.UndefOr[Element] = js.undefined
   
@@ -47,9 +52,24 @@ trait Coverage
   var dependent: js.UndefOr[String] = js.undefined
   
   /**
-    * The main (and possibly only) identifier for the coverage - often referred to as a Member Id, Certificate number, Personal Health Number or Case ID. May be constructed as the concatenation of the Coverage.SubscriberID and the Coverage.dependant.
+    * The main (and possibly only) identifier for the coverage - often referred to as a Member Id, Certificate number, Personal Health Number or Case ID. May be constructed as the concatenation of the Coverage.SubscriberID and the Coverage.dependant. Note that not all insurers issue unique member IDs therefore searches may result in multiple responses.
     */
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
+  
+  /**
+    * The insurance plan details, benefits and costs, which constitute this insurance coverage.
+    */
+  var insurancePlan: js.UndefOr[Reference] = js.undefined
+  
+  /**
+    * May provide multiple identifiers such as insurance company identifier or business identifier (BIN number).
+    */
+  var insurer: js.UndefOr[Reference] = js.undefined
+  
+  /**
+    * The nature of the coverage be it insurance, or cash payment such as self-pay.
+    */
+  var kind: insurance | `self-pay` | other
   
   /**
     * The insurer-specific identifier for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate, otherwise 'out of network' terms and conditions apply.
@@ -57,15 +77,14 @@ trait Coverage
   var network: js.UndefOr[String] = js.undefined
   
   /**
-    * The order of applicability of this coverage relative to other coverages which are currently in force. Note, there may be gaps in the numbering and this does not imply primary, secondary etc. as the specific positioning of coverages depends upon the episode of care.
+    * The order of applicability of this coverage relative to other coverages which are currently in force. Note, there may be gaps in the numbering and this does not imply primary, secondary etc. as the specific positioning of coverages depends upon the episode of care. For example; a patient might have (0) auto insurance (1) their own health insurance and (2) spouse's health insurance. When claiming for treatments which were not the result of an auto accident then only coverages (1) and (2) above would be applicatble and would apply in the order specified in parenthesis.
     */
   var order: js.UndefOr[Double] = js.undefined
   
   /**
-    * May provide multiple identifiers such as insurance company identifier or business identifier (BIN number).
-    * For selfpay it may provide multiple paying persons and/or organizations.
+    * Link to the paying party and optionally what specifically they will be responsible to pay.
     */
-  var payor: js.Array[Reference]
+  var paymentBy: js.UndefOr[js.Array[CoveragePaymentBy]] = js.undefined
   
   /**
     * Time period during which the coverage is in force. A missing start date indicates the start date isn't known, a missing end date means the coverage is continuing to be in force.
@@ -97,14 +116,14 @@ trait Coverage
   var subrogation: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * May be self or a parent in the case of dependants.
+    * May be self or a parent in the case of dependants. A subscriber is only required on certain types of policies not all policies and that it is appropriate to have just a policyholder and a beneficiary when not other party can join that policy instance.
     */
   var subscriber: js.UndefOr[Reference] = js.undefined
   
   /**
     * The insurer assigned ID for the Subscriber.
     */
-  var subscriberId: js.UndefOr[Identifier] = js.undefined
+  var subscriberId: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * The type of coverage: social program, medical plan, accident coverage (workers compensation, auto), group health or payment by an individual or organization.
@@ -115,10 +134,10 @@ object Coverage {
   
   inline def apply(
     beneficiary: Reference,
-    payor: js.Array[Reference],
+    kind: insurance | `self-pay` | other,
     status: active | cancelled | draft | `entered-in-error`
   ): Coverage = {
-    val __obj = js.Dynamic.literal(beneficiary = beneficiary.asInstanceOf[js.Any], payor = payor.asInstanceOf[js.Any], resourceType = "Coverage", status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(beneficiary = beneficiary.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], resourceType = "Coverage", status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Coverage]
   }
   
@@ -155,6 +174,16 @@ object Coverage {
     
     inline def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value*))
     
+    inline def setInsurancePlan(value: Reference): Self = StObject.set(x, "insurancePlan", value.asInstanceOf[js.Any])
+    
+    inline def setInsurancePlanUndefined: Self = StObject.set(x, "insurancePlan", js.undefined)
+    
+    inline def setInsurer(value: Reference): Self = StObject.set(x, "insurer", value.asInstanceOf[js.Any])
+    
+    inline def setInsurerUndefined: Self = StObject.set(x, "insurer", js.undefined)
+    
+    inline def setKind(value: insurance | `self-pay` | other): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
     inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
     inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
@@ -163,9 +192,11 @@ object Coverage {
     
     inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    inline def setPayor(value: js.Array[Reference]): Self = StObject.set(x, "payor", value.asInstanceOf[js.Any])
+    inline def setPaymentBy(value: js.Array[CoveragePaymentBy]): Self = StObject.set(x, "paymentBy", value.asInstanceOf[js.Any])
     
-    inline def setPayorVarargs(value: Reference*): Self = StObject.set(x, "payor", js.Array(value*))
+    inline def setPaymentByUndefined: Self = StObject.set(x, "paymentBy", js.undefined)
+    
+    inline def setPaymentByVarargs(value: CoveragePaymentBy*): Self = StObject.set(x, "paymentBy", js.Array(value*))
     
     inline def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
@@ -189,9 +220,11 @@ object Coverage {
     
     inline def setSubscriber(value: Reference): Self = StObject.set(x, "subscriber", value.asInstanceOf[js.Any])
     
-    inline def setSubscriberId(value: Identifier): Self = StObject.set(x, "subscriberId", value.asInstanceOf[js.Any])
+    inline def setSubscriberId(value: js.Array[Identifier]): Self = StObject.set(x, "subscriberId", value.asInstanceOf[js.Any])
     
     inline def setSubscriberIdUndefined: Self = StObject.set(x, "subscriberId", js.undefined)
+    
+    inline def setSubscriberIdVarargs(value: Identifier*): Self = StObject.set(x, "subscriberId", js.Array(value*))
     
     inline def setSubscriberUndefined: Self = StObject.set(x, "subscriber", js.undefined)
     
@@ -202,6 +235,10 @@ object Coverage {
     inline def set_dependent(value: Element): Self = StObject.set(x, "_dependent", value.asInstanceOf[js.Any])
     
     inline def set_dependentUndefined: Self = StObject.set(x, "_dependent", js.undefined)
+    
+    inline def set_kind(value: Element): Self = StObject.set(x, "_kind", value.asInstanceOf[js.Any])
+    
+    inline def set_kindUndefined: Self = StObject.set(x, "_kind", js.undefined)
     
     inline def set_network(value: Element): Self = StObject.set(x, "_network", value.asInstanceOf[js.Any])
     

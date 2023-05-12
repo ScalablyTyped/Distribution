@@ -12,14 +12,29 @@ trait UpdateWorkspaceRequest extends StObject {
   var accountAccessType: js.UndefOr[AccountAccessType] = js.undefined
   
   /**
-    * The name of an IAM role that already exists to use to access resources through Organizations.
+    * The configuration settings for network access to your workspace. When this is configured, only listed IP addresses and VPC endpoints will be able to access your workspace. Standard Grafana authentication and authorization will still be required. If this is not configured, or is removed, then all IP addresses and VPC endpoints will be allowed. Standard Grafana authentication and authorization will still be required.
+    */
+  var networkAccessControl: js.UndefOr[NetworkAccessConfiguration] = js.undefined
+  
+  /**
+    * The name of an IAM role that already exists to use to access resources through Organizations. This can only be used with a workspace that has the permissionType set to CUSTOMER_MANAGED.
     */
   var organizationRoleName: js.UndefOr[OrganizationRoleName] = js.undefined
   
   /**
-    * If you specify Service Managed, Amazon Managed Grafana automatically creates the IAM roles and provisions the permissions that the workspace needs to use Amazon Web Services data sources and notification channels. If you specify CUSTOMER_MANAGED, you will manage those roles and permissions yourself. If you are creating this workspace in a member account of an organization and that account is not a delegated administrator account, and you want the workspace to access data sources in other Amazon Web Services accounts in the organization, you must choose CUSTOMER_MANAGED. For more information, see Amazon Managed Grafana permissions and policies for Amazon Web Services data sources and notification channels 
+    * Use this parameter if you want to change a workspace from SERVICE_MANAGED to CUSTOMER_MANAGED. This allows you to manage the permissions that the workspace uses to access datasources and notification channels. If the workspace is in a member Amazon Web Services account of an organization, and that account is not a delegated administrator account, and you want the workspace to access data sources in other Amazon Web Services accounts in the organization, you must choose CUSTOMER_MANAGED. If you specify this as CUSTOMER_MANAGED, you must also specify a workspaceRoleArn that the workspace will use for accessing Amazon Web Services resources. For more information on the role and permissions needed, see Amazon Managed Grafana permissions and policies for Amazon Web Services data sources and notification channels   Do not use this to convert a CUSTOMER_MANAGED workspace to SERVICE_MANAGED. Do not include this parameter if you want to leave the workspace as SERVICE_MANAGED. You can convert a CUSTOMER_MANAGED workspace to SERVICE_MANAGED using the Amazon Managed Grafana console. For more information, see Managing permissions for data sources and notification channels. 
     */
   var permissionType: js.UndefOr[PermissionType] = js.undefined
+  
+  /**
+    * Whether to remove the network access configuration from the workspace. Setting this to true and providing a networkAccessControl to set will return an error. If you remove this configuration by setting this to true, then all IP addresses and VPC endpoints will be allowed. Standard Grafana authentication and authorization will still be required.
+    */
+  var removeNetworkAccessConfiguration: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Whether to remove the VPC configuration from the workspace. Setting this to true and providing a vpcConfiguration to set will return an error.
+    */
+  var removeVpcConfiguration: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the CloudFormation stack set to use to generate IAM roles to be used for this workspace.
@@ -27,7 +42,12 @@ trait UpdateWorkspaceRequest extends StObject {
   var stackSetName: js.UndefOr[StackSetName] = js.undefined
   
   /**
-    * Specify the Amazon Web Services data sources that you want to be queried in this workspace. Specifying these data sources here enables Amazon Managed Grafana to create IAM roles and permissions that allow Amazon Managed Grafana to read data from these sources. You must still add them as data sources in the Grafana console in the workspace. If you don't specify a data source here, you can still add it as a data source later in the workspace console. However, you will then have to manually configure permissions for it.
+    * The configuration settings for an Amazon VPC that contains data sources for your Grafana workspace to connect to.
+    */
+  var vpcConfiguration: js.UndefOr[VpcConfiguration] = js.undefined
+  
+  /**
+    * This parameter is for internal use only, and should not be used.
     */
   var workspaceDataSources: js.UndefOr[DataSourceTypesList] = js.undefined
   
@@ -57,7 +77,7 @@ trait UpdateWorkspaceRequest extends StObject {
   var workspaceOrganizationalUnits: js.UndefOr[OrganizationalUnitList] = js.undefined
   
   /**
-    * The workspace needs an IAM role that grants permissions to the Amazon Web Services resources that the workspace will view data from. If you already have a role that you want to use, specify it here. If you omit this field and you specify some Amazon Web Services resources in workspaceDataSources or workspaceNotificationDestinations, a new IAM role with the necessary permissions is automatically created.
+    * Specifies an IAM role that grants permissions to Amazon Web Services resources that the workspace accesses, such as data sources and notification channels. If this workspace has permissionType CUSTOMER_MANAGED, then this role is required.
     */
   var workspaceRoleArn: js.UndefOr[IamRoleArn] = js.undefined
 }
@@ -75,6 +95,10 @@ object UpdateWorkspaceRequest {
     
     inline def setAccountAccessTypeUndefined: Self = StObject.set(x, "accountAccessType", js.undefined)
     
+    inline def setNetworkAccessControl(value: NetworkAccessConfiguration): Self = StObject.set(x, "networkAccessControl", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkAccessControlUndefined: Self = StObject.set(x, "networkAccessControl", js.undefined)
+    
     inline def setOrganizationRoleName(value: OrganizationRoleName): Self = StObject.set(x, "organizationRoleName", value.asInstanceOf[js.Any])
     
     inline def setOrganizationRoleNameUndefined: Self = StObject.set(x, "organizationRoleName", js.undefined)
@@ -83,9 +107,21 @@ object UpdateWorkspaceRequest {
     
     inline def setPermissionTypeUndefined: Self = StObject.set(x, "permissionType", js.undefined)
     
+    inline def setRemoveNetworkAccessConfiguration(value: Boolean): Self = StObject.set(x, "removeNetworkAccessConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveNetworkAccessConfigurationUndefined: Self = StObject.set(x, "removeNetworkAccessConfiguration", js.undefined)
+    
+    inline def setRemoveVpcConfiguration(value: Boolean): Self = StObject.set(x, "removeVpcConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveVpcConfigurationUndefined: Self = StObject.set(x, "removeVpcConfiguration", js.undefined)
+    
     inline def setStackSetName(value: StackSetName): Self = StObject.set(x, "stackSetName", value.asInstanceOf[js.Any])
     
     inline def setStackSetNameUndefined: Self = StObject.set(x, "stackSetName", js.undefined)
+    
+    inline def setVpcConfiguration(value: VpcConfiguration): Self = StObject.set(x, "vpcConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setVpcConfigurationUndefined: Self = StObject.set(x, "vpcConfiguration", js.undefined)
     
     inline def setWorkspaceDataSources(value: DataSourceTypesList): Self = StObject.set(x, "workspaceDataSources", value.asInstanceOf[js.Any])
     

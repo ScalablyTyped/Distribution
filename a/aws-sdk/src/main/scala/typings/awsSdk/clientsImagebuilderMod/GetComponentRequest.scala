@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetComponentRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the component that you want to retrieve. Regex requires "/\d+$" suffix.
+    * The Amazon Resource Name (ARN) of the component that you want to get. Regex requires the suffix /\d+$.
     */
   var componentBuildVersionArn: ComponentVersionArnOrBuildVersionArn
 }

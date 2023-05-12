@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ModifyVpcEndpointRequest extends StObject {
   
   /**
-    * (Gateway endpoint) One or more route tables IDs to associate with the endpoint.
+    * (Gateway endpoint) The IDs of the route tables to associate with the endpoint.
     */
   var AddRouteTableIds: js.UndefOr[VpcEndpointRouteTableIdList] = js.undefined
   
   /**
-    * (Interface endpoint) One or more security group IDs to associate with the network interface.
+    * (Interface endpoint) The IDs of the security groups to associate with the network interface.
     */
   var AddSecurityGroupIds: js.UndefOr[VpcEndpointSecurityGroupIdList] = js.undefined
   
   /**
-    * (Interface and Gateway Load Balancer endpoints) One or more subnet IDs in which to serve the endpoint. For a Gateway Load Balancer endpoint, you can specify only one subnet.
+    * (Interface and Gateway Load Balancer endpoints) The IDs of the subnets in which to serve the endpoint. For a Gateway Load Balancer endpoint, you can specify only one subnet.
     */
   var AddSubnetIds: js.UndefOr[VpcEndpointSubnetIdList] = js.undefined
   
@@ -47,17 +47,17 @@ trait ModifyVpcEndpointRequest extends StObject {
   var PrivateDnsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Gateway endpoint) One or more route table IDs to disassociate from the endpoint.
+    * (Gateway endpoint) The IDs of the route tables to disassociate from the endpoint.
     */
   var RemoveRouteTableIds: js.UndefOr[VpcEndpointRouteTableIdList] = js.undefined
   
   /**
-    * (Interface endpoint) One or more security group IDs to disassociate from the network interface.
+    * (Interface endpoint) The IDs of the security groups to disassociate from the network interface.
     */
   var RemoveSecurityGroupIds: js.UndefOr[VpcEndpointSecurityGroupIdList] = js.undefined
   
   /**
-    * (Interface endpoint) One or more subnets IDs in which to remove the endpoint.
+    * (Interface endpoint) The IDs of the subnets from which to remove the endpoint.
     */
   var RemoveSubnetIds: js.UndefOr[VpcEndpointSubnetIdList] = js.undefined
   

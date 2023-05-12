@@ -41,6 +41,36 @@ object anon {
     }
   }
   
+  trait Binary extends StObject {
+    
+    var binary: js.UndefOr[Boolean] = js.undefined
+    
+    var filename: String
+    
+    var token: js.UndefOr[String] = js.undefined
+  }
+  object Binary {
+    
+    inline def apply(filename: String): Binary = {
+      val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Binary]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Binary] (val x: Self) extends AnyVal {
+      
+      inline def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+      
+      inline def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
+      
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      
+      inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+    }
+  }
+  
   trait Body extends StObject {
     
     var body: String
@@ -116,30 +146,6 @@ object anon {
       inline def setExternal_ids(value: js.Array[ZendeskID]): Self = StObject.set(x, "external_ids", value.asInstanceOf[js.Any])
       
       inline def setExternal_idsVarargs(value: ZendeskID*): Self = StObject.set(x, "external_ids", js.Array(value*))
-    }
-  }
-  
-  trait Filename extends StObject {
-    
-    var filename: String
-    
-    var token: js.UndefOr[String] = js.undefined
-  }
-  object Filename {
-    
-    inline def apply(filename: String): Filename = {
-      val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Filename]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Filename] (val x: Self) extends AnyVal {
-      
-      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
-      
-      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
-      
-      inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
     }
   }
   

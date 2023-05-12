@@ -1,75 +1,50 @@
 package typings.workboxStrategies
 
-import typings.std.CacheQueryOptions
-import typings.std.RequestInit
-import typings.std.Response
-import typings.workboxCore.typesWorkboxPluginMod.WorkboxPlugin
-import typings.workboxRouting.typesRouteHandlerMod.RouteHandlerCallback
-import typings.workboxRouting.typesRouteHandlerMod.RouteHandlerCallbackContext
-import typings.workboxRouting.typesRouteHandlerMod.RouteHandlerObject
-import typings.workboxStrategies.typesMakeRequestCallbackMod.MakeRequestCallback
-import typings.workboxStrategies.typesMakeRequestCallbackMod.MakeRequestCallbackOptions
+import typings.workboxStrategies.strategyMod.Strategy
+import typings.workboxStrategies.strategyMod.StrategyOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object staleWhileRevalidateMod {
   
+  /**
+    * An implementation of a
+    * [stale-while-revalidate](https://developer.chrome.com/docs/workbox/caching-strategies-overview/#stale-while-revalidate)
+    * request strategy.
+    *
+    * Resources are requested from both the cache and the network in parallel.
+    * The strategy will respond with the cached version if available, otherwise
+    * wait for the network response. The cache is updated with the network response
+    * with each successful request.
+    *
+    * By default, this strategy will cache responses with a 200 status code as
+    * well as [opaque responses](https://developer.chrome.com/docs/workbox/caching-resources-during-runtime/#opaque-responses).
+    * Opaque responses are cross-origin requests where the response doesn't
+    * support [CORS](https://enable-cors.org/).
+    *
+    * If the network request fails, and there is no cache match, this will throw
+    * a `WorkboxError` exception.
+    *
+    * @extends workbox-strategies.Strategy
+    * @memberof workbox-strategies
+    */
   @JSImport("workbox-strategies/StaleWhileRevalidate", "StaleWhileRevalidate")
   @js.native
-  open class StaleWhileRevalidate ()
-    extends StObject
-       with RouteHandlerObject {
-    def this(options: StaleWhileRevalidateOptions) = this()
-    
-    /* CompleteClass */
-    override def handle(context: RouteHandlerCallbackContext): js.Promise[Response] = js.native
-    /* CompleteClass */
-    @JSName("handle")
-    var handle_Original: RouteHandlerCallback = js.native
-    
-    def makeRequest(options: MakeRequestCallbackOptions): js.Promise[Response] = js.native
-    @JSName("makeRequest")
-    var makeRequest_Original: MakeRequestCallback = js.native
-  }
-  
-  trait StaleWhileRevalidateOptions extends StObject {
-    
-    var cacheName: js.UndefOr[String] = js.undefined
-    
-    var fetchOptions: js.UndefOr[RequestInit] = js.undefined
-    
-    var matchOptions: js.UndefOr[CacheQueryOptions] = js.undefined
-    
-    var plugins: js.UndefOr[js.Array[WorkboxPlugin]] = js.undefined
-  }
-  object StaleWhileRevalidateOptions {
-    
-    inline def apply(): StaleWhileRevalidateOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[StaleWhileRevalidateOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: StaleWhileRevalidateOptions] (val x: Self) extends AnyVal {
-      
-      inline def setCacheName(value: String): Self = StObject.set(x, "cacheName", value.asInstanceOf[js.Any])
-      
-      inline def setCacheNameUndefined: Self = StObject.set(x, "cacheName", js.undefined)
-      
-      inline def setFetchOptions(value: RequestInit): Self = StObject.set(x, "fetchOptions", value.asInstanceOf[js.Any])
-      
-      inline def setFetchOptionsUndefined: Self = StObject.set(x, "fetchOptions", js.undefined)
-      
-      inline def setMatchOptions(value: CacheQueryOptions): Self = StObject.set(x, "matchOptions", value.asInstanceOf[js.Any])
-      
-      inline def setMatchOptionsUndefined: Self = StObject.set(x, "matchOptions", js.undefined)
-      
-      inline def setPlugins(value: js.Array[WorkboxPlugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
-      
-      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
-      
-      inline def setPluginsVarargs(value: WorkboxPlugin*): Self = StObject.set(x, "plugins", js.Array(value*))
-    }
+  /**
+    * @param {Object} [options]
+    * @param {string} [options.cacheName] Cache name to store and retrieve
+    * requests. Defaults to cache names provided by
+    * {@link workbox-core.cacheNames}.
+    * @param {Array<Object>} [options.plugins] [Plugins]{@link https://developers.google.com/web/tools/workbox/guides/using-plugins}
+    * to use in conjunction with this caching strategy.
+    * @param {Object} [options.fetchOptions] Values passed along to the
+    * [`init`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch#Parameters)
+    * of [non-navigation](https://github.com/GoogleChrome/workbox/issues/1796)
+    * `fetch()` requests made by this strategy.
+    * @param {Object} [options.matchOptions] [`CacheQueryOptions`](https://w3c.github.io/ServiceWorker/#dictdef-cachequeryoptions)
+    */
+  open class StaleWhileRevalidate () extends Strategy {
+    def this(options: StrategyOptions) = this()
   }
 }

@@ -34,18 +34,6 @@ open class EventManager protected () extends StObject {
   def addEventListener(element: HTMLElement, eventName: String, handler: js.Function): js.Function = js.native
   
   /**
-    * Registers a global handler for an event in a target view.
-    *
-    * @param target A target for global event notifications. One of "window", "document", or "body".
-    * @param eventName The name of the event to listen for.
-    * @param handler A function to call when the notification occurs. Receives the
-    * event object as an argument.
-    * @returns A callback function that can be used to remove the handler.
-    * @deprecated No longer being used in Ivy code. To be removed in version 14.
-    */
-  def addGlobalEventListener(target: String, eventName: String, handler: js.Function): js.Function = js.native
-  
-  /**
     * Retrieves the compilation zone in which event listeners are registered.
     */
   def getZone(): NgZone = js.native

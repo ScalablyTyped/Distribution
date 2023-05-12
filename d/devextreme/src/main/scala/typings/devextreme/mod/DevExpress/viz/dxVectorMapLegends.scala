@@ -2,6 +2,7 @@ package typings.devextreme.mod.DevExpress.viz
 
 import typings.devextreme.anon.Layer
 import typings.devextreme.anon.Start
+import typings.devextreme.mod.DevExpress.common.charts.BaseLegend
 import typings.devextreme.mod.DevExpress.core.UserDefinedElement
 import typings.devextreme.mod.DevExpress.core.template
 import typings.devextreme.mod.DevExpress.viz.dxVectorMap.LegendItem

@@ -190,7 +190,7 @@ type NodeConfigurationOptionsFilterList = js.Array[NodeConfigurationOptionsFilte
   - typings.awsSdk.awsSdkStrings.NodeType
   - typings.awsSdk.awsSdkStrings.NumberOfNodes
   - typings.awsSdk.awsSdkStrings.EstimatedDiskUtilizationPercent
-  - typings.awsSdk.awsSdkStrings.Mode
+  - typings.awsSdk.awsSdkStrings.Mode_
   - java.lang.String
 */
 type NodeConfigurationOptionsFilterName = _NodeConfigurationOptionsFilterName | java.lang.String

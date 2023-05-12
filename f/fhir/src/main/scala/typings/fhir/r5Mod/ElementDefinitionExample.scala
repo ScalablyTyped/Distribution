@@ -43,7 +43,7 @@ trait ElementDefinitionExample
   var _valueUuid: js.UndefOr[Element] = js.undefined
   
   /**
-    * Describes the purpose of this example amoung the set of examples.
+    * Describes the purpose of this example among the set of examples.
     */
   var label: String
   
@@ -66,6 +66,11 @@ trait ElementDefinitionExample
     * The actual value for the element, which must be one of the types allowed for this element.
     */
   var valueAttachment: js.UndefOr[Attachment] = js.undefined
+  
+  /**
+    * The actual value for the element, which must be one of the types allowed for this element.
+    */
+  var valueAvailability: js.UndefOr[Availability] = js.undefined
   
   /**
     * The actual value for the element, which must be one of the types allowed for this element.
@@ -115,11 +120,6 @@ trait ElementDefinitionExample
   /**
     * The actual value for the element, which must be one of the types allowed for this element.
     */
-  var valueContributor: js.UndefOr[Contributor] = js.undefined
-  
-  /**
-    * The actual value for the element, which must be one of the types allowed for this element.
-    */
   var valueCount: js.UndefOr[Count] = js.undefined
   
   /**
@@ -161,6 +161,11 @@ trait ElementDefinitionExample
     * The actual value for the element, which must be one of the types allowed for this element.
     */
   var valueExpression: js.UndefOr[Expression] = js.undefined
+  
+  /**
+    * The actual value for the element, which must be one of the types allowed for this element.
+    */
+  var valueExtendedContactDetail: js.UndefOr[ExtendedContactDetail] = js.undefined
   
   /**
     * The actual value for the element, which must be one of the types allowed for this element.
@@ -340,6 +345,10 @@ object ElementDefinitionExample {
     
     inline def setValueAttachmentUndefined: Self = StObject.set(x, "valueAttachment", js.undefined)
     
+    inline def setValueAvailability(value: Availability): Self = StObject.set(x, "valueAvailability", value.asInstanceOf[js.Any])
+    
+    inline def setValueAvailabilityUndefined: Self = StObject.set(x, "valueAvailability", js.undefined)
+    
     inline def setValueBase64Binary(value: String): Self = StObject.set(x, "valueBase64Binary", value.asInstanceOf[js.Any])
     
     inline def setValueBase64BinaryUndefined: Self = StObject.set(x, "valueBase64Binary", js.undefined)
@@ -376,10 +385,6 @@ object ElementDefinitionExample {
     
     inline def setValueContactPointUndefined: Self = StObject.set(x, "valueContactPoint", js.undefined)
     
-    inline def setValueContributor(value: Contributor): Self = StObject.set(x, "valueContributor", value.asInstanceOf[js.Any])
-    
-    inline def setValueContributorUndefined: Self = StObject.set(x, "valueContributor", js.undefined)
-    
     inline def setValueCount(value: Count): Self = StObject.set(x, "valueCount", value.asInstanceOf[js.Any])
     
     inline def setValueCountUndefined: Self = StObject.set(x, "valueCount", js.undefined)
@@ -415,6 +420,10 @@ object ElementDefinitionExample {
     inline def setValueExpression(value: Expression): Self = StObject.set(x, "valueExpression", value.asInstanceOf[js.Any])
     
     inline def setValueExpressionUndefined: Self = StObject.set(x, "valueExpression", js.undefined)
+    
+    inline def setValueExtendedContactDetail(value: ExtendedContactDetail): Self = StObject.set(x, "valueExtendedContactDetail", value.asInstanceOf[js.Any])
+    
+    inline def setValueExtendedContactDetailUndefined: Self = StObject.set(x, "valueExtendedContactDetail", js.undefined)
     
     inline def setValueHumanName(value: HumanName): Self = StObject.set(x, "valueHumanName", value.asInstanceOf[js.Any])
     

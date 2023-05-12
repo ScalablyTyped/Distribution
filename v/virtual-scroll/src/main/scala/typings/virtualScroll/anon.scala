@@ -1,16 +1,17 @@
 package typings.virtualScroll
 
 import typings.std.HTMLElement
+import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  /* Inlined std.Partial<virtual-scroll.virtual-scroll.Options> */
-  trait PartialOptions extends StObject {
+  /* Inlined std.Partial<virtual-scroll.virtual-scroll.VirtualScrollOptions> */
+  trait PartialVirtualScrollOptio extends StObject {
     
-    var el: js.UndefOr[HTMLElement] = js.undefined
+    var el: js.UndefOr[Window | HTMLElement] = js.undefined
     
     var firefoxMultiplier: js.UndefOr[Double] = js.undefined
     
@@ -30,17 +31,17 @@ object anon {
     
     var useTouch: js.UndefOr[Boolean] = js.undefined
   }
-  object PartialOptions {
+  object PartialVirtualScrollOptio {
     
-    inline def apply(): PartialOptions = {
+    inline def apply(): PartialVirtualScrollOptio = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PartialOptions]
+      __obj.asInstanceOf[PartialVirtualScrollOptio]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: PartialVirtualScrollOptio] (val x: Self) extends AnyVal {
       
-      inline def setEl(value: HTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+      inline def setEl(value: Window | HTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
       
       inline def setElUndefined: Self = StObject.set(x, "el", js.undefined)
       

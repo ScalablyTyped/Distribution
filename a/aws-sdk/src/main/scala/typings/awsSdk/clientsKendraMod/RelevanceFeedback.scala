@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RelevanceFeedback extends StObject {
   
   /**
-    * Whether to document was relevant or not relevant to the search.
+    * Whether the document was relevant or not relevant to the search.
     */
   var RelevanceValue: RelevanceType
   
   /**
-    * The unique identifier of the search result that the user provided relevance feedback for.
+    * The identifier of the search result that the user provided relevance feedback for.
     */
   var ResultId: typings.awsSdk.clientsKendraMod.ResultId
 }

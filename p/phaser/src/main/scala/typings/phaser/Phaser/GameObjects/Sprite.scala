@@ -11,6 +11,7 @@ import typings.phaser.Phaser.GameObjects.Components.GetBounds
 import typings.phaser.Phaser.GameObjects.Components.Mask
 import typings.phaser.Phaser.GameObjects.Components.Origin
 import typings.phaser.Phaser.GameObjects.Components.Pipeline
+import typings.phaser.Phaser.GameObjects.Components.PostPipeline
 import typings.phaser.Phaser.GameObjects.Components.ScrollFactor
 import typings.phaser.Phaser.GameObjects.Components.Size
 import typings.phaser.Phaser.GameObjects.Components.TextureCrop
@@ -45,6 +46,7 @@ trait Sprite
      with Mask
      with Origin
      with Pipeline
+     with PostPipeline
      with ScrollFactor
      with Size
      with TextureCrop
@@ -82,6 +84,7 @@ trait Sprite
     * search the global Animation Manager and look for it there.
     * @param key The string-based key of the animation to play, or an Animation instance, or a `PlayAnimationConfig` object, or an array of them.
     */
+  def chain(): this.type = js.native
   def chain(key: String): this.type = js.native
   def chain(key: js.Array[Animation | PlayAnimationConfig | String]): this.type = js.native
   def chain(key: Animation): this.type = js.native

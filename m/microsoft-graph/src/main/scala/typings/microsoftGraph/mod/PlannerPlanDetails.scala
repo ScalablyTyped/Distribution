@@ -12,9 +12,9 @@ trait PlannerPlanDetails
   var categoryDescriptions: js.UndefOr[NullableOption[PlannerCategoryDescriptions]] = js.undefined
   
   /**
-    * Set of user ids that this plan is shared with. If you are leveraging Microsoft 365 groups, use the Groups API to manage
-    * group membership to share the group's plan. You can also add existing members of the group to this collection though it
-    * is not required for them to access the plan owned by the group.
+    * Set of user IDs that this plan is shared with. If you are leveraging Microsoft 365 groups, use the Groups API to manage
+    * group membership to share the group's plan. You can also add existing members of the group to this collection, although
+    * it is not required for them to access the plan owned by the group.
     */
   var sharedWith: js.UndefOr[NullableOption[PlannerUserIds]] = js.undefined
 }

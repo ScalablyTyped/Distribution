@@ -64,7 +64,7 @@ object distProvidersOpenStreetMapProviderMod {
     
     var lat: String
     
-    var license: String
+    var licence: String
     
     var lon: String
     
@@ -84,14 +84,14 @@ object distProvidersOpenStreetMapProviderMod {
       display_name: String,
       importance: Double,
       lat: String,
-      license: String,
+      licence: String,
       lon: String,
       osm_id: Double,
       osm_type: String,
       place_id: String,
       `type`: String
     ): RawResult = {
-      val __obj = js.Dynamic.literal(boundingbox = boundingbox.asInstanceOf[js.Any], display_name = display_name.asInstanceOf[js.Any], importance = importance.asInstanceOf[js.Any], lat = lat.asInstanceOf[js.Any], license = license.asInstanceOf[js.Any], lon = lon.asInstanceOf[js.Any], osm_id = osm_id.asInstanceOf[js.Any], osm_type = osm_type.asInstanceOf[js.Any], place_id = place_id.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(boundingbox = boundingbox.asInstanceOf[js.Any], display_name = display_name.asInstanceOf[js.Any], importance = importance.asInstanceOf[js.Any], lat = lat.asInstanceOf[js.Any], licence = licence.asInstanceOf[js.Any], lon = lon.asInstanceOf[js.Any], osm_id = osm_id.asInstanceOf[js.Any], osm_type = osm_type.asInstanceOf[js.Any], place_id = place_id.asInstanceOf[js.Any])
       __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[RawResult]
@@ -114,7 +114,7 @@ object distProvidersOpenStreetMapProviderMod {
       
       inline def setLat(value: String): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
       
-      inline def setLicense(value: String): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
+      inline def setLicence(value: String): Self = StObject.set(x, "licence", value.asInstanceOf[js.Any])
       
       inline def setLon(value: String): Self = StObject.set(x, "lon", value.asInstanceOf[js.Any])
       

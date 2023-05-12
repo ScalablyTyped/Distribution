@@ -2,7 +2,7 @@ package typings.webdriver
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.eventsMod.EventEmitter
-import typings.node.urlMod.URL_
+import typings.node.nodeColonurlMod.URL
 import typings.std.Error
 import typings.std.Record
 import typings.wdioTypes.anon.Http
@@ -190,20 +190,20 @@ object buildRequestMod {
   @js.native
   trait WebDriverRequest extends EventEmitter {
     
-    /* protected */ def _createOptions(options: RequestOptions): RequestLibOptions = js.native
-    /* protected */ def _createOptions(options: RequestOptions, sessionId: String): RequestLibOptions = js.native
-    /* protected */ def _createOptions(options: RequestOptions, sessionId: String, isBrowser: Boolean): RequestLibOptions = js.native
-    /* protected */ def _createOptions(options: RequestOptions, sessionId: Unit, isBrowser: Boolean): RequestLibOptions = js.native
+    /* protected */ def _createOptions(options: RequestOptions): js.Promise[RequestLibOptions] = js.native
+    /* protected */ def _createOptions(options: RequestOptions, sessionId: String): js.Promise[RequestLibOptions] = js.native
+    /* protected */ def _createOptions(options: RequestOptions, sessionId: String, isBrowser: Boolean): js.Promise[RequestLibOptions] = js.native
+    /* protected */ def _createOptions(options: RequestOptions, sessionId: Unit, isBrowser: Boolean): js.Promise[RequestLibOptions] = js.native
     
     /* protected */ def _libPerformanceNow(): Double = js.native
     
-    /* protected */ def _libRequest(url: URL_, options: RequestLibOptions): js.Promise[RequestLibResponse] = js.native
+    /* protected */ def _libRequest(url: URL, options: RequestLibOptions): js.Promise[RequestLibResponse] = js.native
     
     /* private */ var _request: Any = js.native
     
     var body: js.UndefOr[Record[String, Any]] = js.native
     
-    var defaultAgents: Agents | Null = js.native
+    var defaultAgents: js.UndefOr[Agents] = js.native
     
     var defaultOptions: RequestLibOptions = js.native
     

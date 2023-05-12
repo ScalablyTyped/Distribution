@@ -9,7 +9,7 @@ trait KeyboardInputConfig extends StObject {
   /**
     * `preventDefault` will be called on every non-modified key which has a key code in this array. By default it is empty.
     */
-  var capture: js.UndefOr[js.Array[Double]] = js.undefined
+  var capture: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
   /**
     * Where the Keyboard Manager listens for keyboard input events.
@@ -27,6 +27,8 @@ object KeyboardInputConfig {
   implicit open class MutableBuilder[Self <: KeyboardInputConfig] (val x: Self) extends AnyVal {
     
     inline def setCapture(value: js.Array[Double]): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+    
+    inline def setCaptureNull: Self = StObject.set(x, "capture", null)
     
     inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     

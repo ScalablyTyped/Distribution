@@ -94,6 +94,16 @@ trait Application
   val decimalSeparator: String = js.native
   
   /**
+    * Specifies whether the Format Stale Values option within Calculation Options is enabled or disabled.
+    The stale formulas are rendered with stale formatting if the option is enabled.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var formatStaleValues: Boolean = js.native
+  
+  /**
     * Returns the iterative calculation settings.
     In Excel on Windows and Mac, the settings will apply to the Excel Application.
     In Excel on the web and other platforms, the settings will apply to the active workbook.

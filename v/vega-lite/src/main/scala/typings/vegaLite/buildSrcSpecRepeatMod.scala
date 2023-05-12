@@ -6,7 +6,7 @@ import typings.vegaLite.buildSrcSpecBaseMod.GenericCompositionLayoutWithColumns
 import typings.vegaLite.buildSrcSpecBaseMod.ResolveMixins
 import typings.vegaLite.buildSrcSpecLayerMod.LayerSpec
 import typings.vegaLite.buildSrcSpecMod.NonNormalizedSpec
-import typings.vegaLite.buildSrcSpecUnitMod.UnitSpec
+import typings.vegaLite.buildSrcSpecUnitMod.UnitSpecWithFrame
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,11 +63,11 @@ object buildSrcSpecRepeatMod {
     /**
       * A specification of the view that gets repeated.
       */
-    var spec: LayerSpec[Field] | UnitSpec[Field]
+    var spec: LayerSpec[Field] | UnitSpecWithFrame[Field]
   }
   object LayerRepeatSpec {
     
-    inline def apply(repeat: LayerRepeatMapping, spec: LayerSpec[Field] | UnitSpec[Field]): LayerRepeatSpec = {
+    inline def apply(repeat: LayerRepeatMapping, spec: LayerSpec[Field] | UnitSpecWithFrame[Field]): LayerRepeatSpec = {
       val __obj = js.Dynamic.literal(repeat = repeat.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
       __obj.asInstanceOf[LayerRepeatSpec]
     }
@@ -77,7 +77,7 @@ object buildSrcSpecRepeatMod {
       
       inline def setRepeat(value: LayerRepeatMapping): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
       
-      inline def setSpec(value: LayerSpec[Field] | UnitSpec[Field]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+      inline def setSpec(value: LayerSpec[Field] | UnitSpecWithFrame[Field]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     }
   }
   
@@ -161,7 +161,7 @@ object buildSrcSpecRepeatMod {
   trait RepeatSpec extends StObject
   object RepeatSpec {
     
-    inline def LayerRepeatSpec(repeat: LayerRepeatMapping, spec: LayerSpec[Field] | UnitSpec[Field]): typings.vegaLite.buildSrcSpecRepeatMod.LayerRepeatSpec = {
+    inline def LayerRepeatSpec(repeat: LayerRepeatMapping, spec: LayerSpec[Field] | UnitSpecWithFrame[Field]): typings.vegaLite.buildSrcSpecRepeatMod.LayerRepeatSpec = {
       val __obj = js.Dynamic.literal(repeat = repeat.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaLite.buildSrcSpecRepeatMod.LayerRepeatSpec]
     }

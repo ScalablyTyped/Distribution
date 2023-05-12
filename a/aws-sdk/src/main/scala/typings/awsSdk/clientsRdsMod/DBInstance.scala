@@ -82,9 +82,14 @@ trait DBInstance extends StObject {
   var BackupTarget: js.UndefOr[String] = js.undefined
   
   /**
-    * The identifier of the CA certificate for this DB instance.
+    * The identifier of the CA certificate for this DB instance. For more information, see Using SSL/TLS to encrypt a connection to a DB instance in the Amazon RDS User Guide and  Using SSL/TLS to encrypt a connection to a DB cluster in the Amazon Aurora User Guide.
     */
   var CACertificateIdentifier: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The details of the DB instance's server certificate.
+    */
+  var CertificateDetails: js.UndefOr[typings.awsSdk.clientsRdsMod.CertificateDetails] = js.undefined
   
   /**
     * If present, specifies the name of the character set that this instance is associated with.
@@ -157,6 +162,11 @@ trait DBInstance extends StObject {
   var DBSubnetGroup: js.UndefOr[typings.awsSdk.clientsRdsMod.DBSubnetGroup] = js.undefined
   
   /**
+    * The Oracle system ID (Oracle SID) for a container database (CDB). The Oracle SID is also the name of the CDB. This setting is valid for RDS Custom only.
+    */
+  var DBSystemId: js.UndefOr[String] = js.undefined
+  
+  /**
     * Specifies the port that the DB instance listens on. If the DB instance is part of a DB cluster, this can be a different port than the DB cluster port.
     */
   var DbInstancePort: js.UndefOr[Integer] = js.undefined
@@ -202,7 +212,7 @@ trait DBInstance extends StObject {
   var EnhancedMonitoringResourceArn: js.UndefOr[String] = js.undefined
   
   /**
-    * True if mapping of Amazon Web Services Identity and Access Management (IAM) accounts to database accounts is enabled, and otherwise false. IAM database authentication can be enabled for the following database engines   For MySQL 5.6, minor version 5.6.34 or higher   For MySQL 5.7, minor version 5.7.16 or higher   Aurora 5.6 or higher. To enable IAM database authentication for Aurora, see DBCluster Type.  
+    * True if mapping of Amazon Web Services Identity and Access Management (IAM) accounts to database accounts is enabled, and otherwise false. For a list of engine versions that support IAM database authentication, see IAM database authentication in the Amazon RDS User Guide and IAM database authentication in Aurora in the Amazon Aurora User Guide.
     */
   var IAMDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.undefined
   
@@ -235,6 +245,11 @@ trait DBInstance extends StObject {
     * Specifies the listener connection endpoint for SQL Server Always On.
     */
   var ListenerEndpoint: js.UndefOr[Endpoint] = js.undefined
+  
+  /**
+    * Contains the secret managed by RDS in Amazon Web Services Secrets Manager for the master user password. For more information, see Password management with Amazon Web Services Secrets Manager in the Amazon RDS User Guide. 
+    */
+  var MasterUserSecret: js.UndefOr[typings.awsSdk.clientsRdsMod.MasterUserSecret] = js.undefined
   
   /**
     * Contains the master username for the DB instance.
@@ -330,6 +345,11 @@ trait DBInstance extends StObject {
     * Contains one or more identifiers of the read replicas associated with this DB instance.
     */
   var ReadReplicaDBInstanceIdentifiers: js.UndefOr[ReadReplicaDBInstanceIdentifierList] = js.undefined
+  
+  /**
+    * Contains the identifier of the source DB cluster if this DB instance is a read replica.
+    */
+  var ReadReplicaSourceDBClusterIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * Contains the identifier of the source DB instance if this DB instance is a read replica.
@@ -464,6 +484,10 @@ object DBInstance {
     
     inline def setCACertificateIdentifierUndefined: Self = StObject.set(x, "CACertificateIdentifier", js.undefined)
     
+    inline def setCertificateDetails(value: CertificateDetails): Self = StObject.set(x, "CertificateDetails", value.asInstanceOf[js.Any])
+    
+    inline def setCertificateDetailsUndefined: Self = StObject.set(x, "CertificateDetails", js.undefined)
+    
     inline def setCharacterSetName(value: String): Self = StObject.set(x, "CharacterSetName", value.asInstanceOf[js.Any])
     
     inline def setCharacterSetNameUndefined: Self = StObject.set(x, "CharacterSetName", js.undefined)
@@ -525,6 +549,10 @@ object DBInstance {
     inline def setDBSubnetGroup(value: DBSubnetGroup): Self = StObject.set(x, "DBSubnetGroup", value.asInstanceOf[js.Any])
     
     inline def setDBSubnetGroupUndefined: Self = StObject.set(x, "DBSubnetGroup", js.undefined)
+    
+    inline def setDBSystemId(value: String): Self = StObject.set(x, "DBSystemId", value.asInstanceOf[js.Any])
+    
+    inline def setDBSystemIdUndefined: Self = StObject.set(x, "DBSystemId", js.undefined)
     
     inline def setDbInstancePort(value: Integer): Self = StObject.set(x, "DbInstancePort", value.asInstanceOf[js.Any])
     
@@ -593,6 +621,10 @@ object DBInstance {
     inline def setListenerEndpoint(value: Endpoint): Self = StObject.set(x, "ListenerEndpoint", value.asInstanceOf[js.Any])
     
     inline def setListenerEndpointUndefined: Self = StObject.set(x, "ListenerEndpoint", js.undefined)
+    
+    inline def setMasterUserSecret(value: MasterUserSecret): Self = StObject.set(x, "MasterUserSecret", value.asInstanceOf[js.Any])
+    
+    inline def setMasterUserSecretUndefined: Self = StObject.set(x, "MasterUserSecret", js.undefined)
     
     inline def setMasterUsername(value: String): Self = StObject.set(x, "MasterUsername", value.asInstanceOf[js.Any])
     
@@ -677,6 +709,10 @@ object DBInstance {
     inline def setReadReplicaDBInstanceIdentifiersUndefined: Self = StObject.set(x, "ReadReplicaDBInstanceIdentifiers", js.undefined)
     
     inline def setReadReplicaDBInstanceIdentifiersVarargs(value: String*): Self = StObject.set(x, "ReadReplicaDBInstanceIdentifiers", js.Array(value*))
+    
+    inline def setReadReplicaSourceDBClusterIdentifier(value: String): Self = StObject.set(x, "ReadReplicaSourceDBClusterIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setReadReplicaSourceDBClusterIdentifierUndefined: Self = StObject.set(x, "ReadReplicaSourceDBClusterIdentifier", js.undefined)
     
     inline def setReadReplicaSourceDBInstanceIdentifier(value: String): Self = StObject.set(x, "ReadReplicaSourceDBInstanceIdentifier", value.asInstanceOf[js.Any])
     

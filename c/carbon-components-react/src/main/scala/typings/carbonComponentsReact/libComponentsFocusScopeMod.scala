@@ -26,6 +26,7 @@ import typings.carbonComponentsReact.carbonComponentsReactStrings.br
 import typings.carbonComponentsReact.carbonComponentsReactStrings.button
 import typings.carbonComponentsReact.carbonComponentsReactStrings.canvas
 import typings.carbonComponentsReact.carbonComponentsReactStrings.caption
+import typings.carbonComponentsReact.carbonComponentsReactStrings.center
 import typings.carbonComponentsReact.carbonComponentsReactStrings.circle
 import typings.carbonComponentsReact.carbonComponentsReactStrings.cite
 import typings.carbonComponentsReact.carbonComponentsReactStrings.clipPath
@@ -291,6 +292,8 @@ object libComponentsFocusScopeMod {
   inline def FocusScope_canvas[R /* <: HTMLElement */](props: ForwardRefProps[R, FocusScopeIntrinsicProps[canvas]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("FocusScope")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def FocusScope_caption[R /* <: HTMLElement */](props: ForwardRefProps[R, FocusScopeIntrinsicProps[caption]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("FocusScope")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def FocusScope_center[R /* <: HTMLElement */](props: ForwardRefProps[R, FocusScopeIntrinsicProps[center]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("FocusScope")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def FocusScope_circle[R /* <: HTMLElement */](props: ForwardRefProps[R, FocusScopeIntrinsicProps[circle]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("FocusScope")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
@@ -654,7 +657,7 @@ object libComponentsFocusScopeMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.react.mod.DOMAttributes because var conflicts: children. Inlined onKeyDown, onPlaying, onMouseOver, onMouseMove, onPointerCancel, onDragStart, onMouseEnter, onDragEnter, onPointerOver, onDragLeave, onMouseOut, onVolumeChange, onSelect, onAnimationStart, onLoadedData, onTouchStart, onInput, onCompositionStart, onScroll, onDragEnd, onLoadStart, dangerouslySetInnerHTML, onFocus, onContextMenu, onError, onTouchMove, onTouchEnd, onDrag, onEnded, onAnimationIteration, onWaiting, onCompositionEnd, onDoubleClick, onEmptied, onStalled, onKeyPress, onMouseUp, onPointerLeave, onAuxClick, onWheel, onPointerUp, onProgress, onBlur, onPointerMove, onPause, onDrop, onReset, onPointerDown, onDragOver, onTimeUpdate, onMouseDown, onDurationChange, onSubmit, onSuspend, onTransitionEnd, onCanPlay, onDragExit, onEncrypted, onPlay, onPointerOut, onCopy, onAbort, onInvalid, onCompositionUpdate, onTouchCancel, onResize, onCanPlayThrough, onClick, onLoad, onLoadedMetadata, onSeeked, onChange, onPointerEnter, onBeforeInput, onAnimationEnd, onCut, onSeeking, onPaste, onMouseLeave, onRateChange, onKeyUp
-  - typings.react.mod.HTMLAttributes because var conflicts: children. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, nonce, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, placeholder, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, className, unselectable, role, datatype, itemProp, title, autoCorrect, results */ trait FocusScopeDefaultProps
+  - typings.react.mod.HTMLAttributes because var conflicts: children. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, content, nonce, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, rev, placeholder, rel, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, className, autoFocus, unselectable, role, datatype, itemProp, title, autoCorrect, results */ trait FocusScopeDefaultProps
     extends StObject
        with FocusScopeBaseProps
        with AriaAttributes {
@@ -672,11 +675,15 @@ object libComponentsFocusScopeMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -916,9 +923,13 @@ object libComponentsFocusScopeMod {
     // Unknown
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     // <command>, <menuitem>
     // WAI-ARIA
@@ -976,6 +987,10 @@ object libComponentsFocusScopeMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -988,9 +1003,13 @@ object libComponentsFocusScopeMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -1406,6 +1425,10 @@ object libComponentsFocusScopeMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1413,6 +1436,10 @@ object libComponentsFocusScopeMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1487,7 +1514,7 @@ object libComponentsFocusScopeMod {
     }
   }
   
-  type FocusScopeIntrinsicProps[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.carbonComponentsReact.carbonComponentsReactStrings.a, typings.carbonComponentsReact.carbonComponentsReactStrings.abbr, typings.carbonComponentsReact.carbonComponentsReactStrings.address */ Any */] = FocusScopeBaseProps & (SafeProps[JSXIntrinsicElementProps[K, `false`]]) & As[K]
+  type FocusScopeIntrinsicProps[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.carbonComponentsReact.carbonComponentsReactStrings.a, typings.carbonComponentsReact.carbonComponentsReactStrings.abbr, typings.carbonComponentsReact.carbonComponentsReactStrings.address */ Any */] = FocusScopeBaseProps & (SafeProps[JSXIntrinsicElementProps[K, `false`]]) & As[K]
   
   type SafeProps[P] = Omit[P, as | initialFocusRef]
 }

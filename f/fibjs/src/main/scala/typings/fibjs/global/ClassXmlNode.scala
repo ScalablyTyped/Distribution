@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** module Or Internal Object */
 /**
   * @brief XmlNode 对象是整个 DOM 的基础数据类型
-  * @detail 
+  * @detail
   */
 @JSGlobal("Class_XmlNode")
 @js.native

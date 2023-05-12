@@ -14,9 +14,11 @@ import typings.wdioTypes.buildFrameworksMod.Test
 import typings.wdioTypes.buildFrameworksMod.TestResult
 import typings.wdioTypes.buildReportersMod.ReporterEntry
 import typings.wdioTypes.buildServicesMod.ServiceEntry
+import typings.wdioTypes.mod.global.WebdriverIO.BrowserRunnerOptions
 import typings.wdioTypes.mod.global.WebdriverIO.CucumberOpts
 import typings.wdioTypes.mod.global.WebdriverIO.JasmineOpts
 import typings.wdioTypes.mod.global.WebdriverIO.MochaOpts
+import typings.wdioTypes.wdioTypesStrings.browser
 import typings.wdioTypes.wdioTypesStrings.local
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -30,7 +32,7 @@ trait MultiRemote extends StObject {
       /* result */ Double, 
       /* capabilities */ RemoteCapability, 
       /* specs */ js.Array[String], 
-      Unit
+      Any | js.Promise[Any]
     ]) | (js.Array[
       NonNullable[
         js.UndefOr[
@@ -38,7 +40,7 @@ trait MultiRemote extends StObject {
             /* result */ Double, 
             /* capabilities */ RemoteCapability, 
             /* specs */ js.Array[String], 
-            Unit
+            Any | js.Promise[Any]
           ]
         ]
       ]
@@ -51,7 +53,7 @@ trait MultiRemote extends StObject {
       /* args */ js.Array[Any], 
       /* result */ Any, 
       /* error */ js.UndefOr[js.Error], 
-      Unit
+      Any | js.Promise[Any]
     ]) | (js.Array[
       NonNullable[
         js.UndefOr[
@@ -60,7 +62,7 @@ trait MultiRemote extends StObject {
             /* args */ js.Array[Any], 
             /* result */ Any, 
             /* error */ js.UndefOr[js.Error], 
-            Unit
+            Any | js.Promise[Any]
           ]
         ]
       ]
@@ -68,9 +70,11 @@ trait MultiRemote extends StObject {
   ] = js.undefined
   
   var afterHook: js.UndefOr[
-    (js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Unit]) | (js.Array[
+    (js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Any | js.Promise[Any]]) | (js.Array[
       NonNullable[
-        js.UndefOr[js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Unit]]
+        js.UndefOr[
+          js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Any | js.Promise[Any]]
+        ]
       ]
     ])
   ] = js.undefined
@@ -80,7 +84,7 @@ trait MultiRemote extends StObject {
       /* config */ Testrunner, 
       /* capabilities */ RemoteCapability, 
       /* specs */ js.Array[String], 
-      Unit
+      Any | js.Promise[Any]
     ]) | (js.Array[
       NonNullable[
         js.UndefOr[
@@ -88,7 +92,7 @@ trait MultiRemote extends StObject {
             /* config */ Testrunner, 
             /* capabilities */ RemoteCapability, 
             /* specs */ js.Array[String], 
-            Unit
+            Any | js.Promise[Any]
           ]
         ]
       ]
@@ -96,13 +100,15 @@ trait MultiRemote extends StObject {
   ] = js.undefined
   
   var afterSuite: js.UndefOr[
-    (js.Function1[/* suite */ Suite, Unit]) | (js.Array[NonNullable[js.UndefOr[js.Function1[/* suite */ Suite, Unit]]]])
+    (js.Function1[/* suite */ Suite, Any | js.Promise[Any]]) | (js.Array[NonNullable[js.UndefOr[js.Function1[/* suite */ Suite, Any | js.Promise[Any]]]]])
   ] = js.undefined
   
   var afterTest: js.UndefOr[
-    (js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Unit]) | (js.Array[
+    (js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Any | js.Promise[Any]]) | (js.Array[
       NonNullable[
-        js.UndefOr[js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Unit]]
+        js.UndefOr[
+          js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Any | js.Promise[Any]]
+        ]
       ]
     ])
   ] = js.undefined
@@ -122,7 +128,7 @@ trait MultiRemote extends StObject {
       /* capabilities */ RemoteCapability, 
       /* specs */ js.Array[String], 
       /* browser */ Any, 
-      Unit
+      Any | js.Promise[Any]
     ]) | (js.Array[
       NonNullable[
         js.UndefOr[
@@ -130,7 +136,7 @@ trait MultiRemote extends StObject {
             /* capabilities */ RemoteCapability, 
             /* specs */ js.Array[String], 
             /* browser */ Any, 
-            Unit
+            Any | js.Promise[Any]
           ]
         ]
       ]
@@ -138,15 +144,21 @@ trait MultiRemote extends StObject {
   ] = js.undefined
   
   var beforeCommand: js.UndefOr[
-    (js.Function2[/* commandName */ String, /* args */ js.Array[Any], Unit]) | (js.Array[
+    (js.Function2[/* commandName */ String, /* args */ js.Array[Any], Any | js.Promise[Any]]) | (js.Array[
       NonNullable[
-        js.UndefOr[js.Function2[/* commandName */ String, /* args */ js.Array[Any], Unit]]
+        js.UndefOr[
+          js.Function2[/* commandName */ String, /* args */ js.Array[Any], Any | js.Promise[Any]]
+        ]
       ]
     ])
   ] = js.undefined
   
   var beforeHook: js.UndefOr[
-    (js.Function2[/* test */ Any, /* context */ Any, Unit]) | (js.Array[NonNullable[js.UndefOr[js.Function2[/* test */ Any, /* context */ Any, Unit]]]])
+    (js.Function2[/* test */ Any, /* context */ Any, Any | js.Promise[Any]]) | (js.Array[
+      NonNullable[
+        js.UndefOr[js.Function2[/* test */ Any, /* context */ Any, Any | js.Promise[Any]]]
+      ]
+    ])
   ] = js.undefined
   
   var beforeSession: js.UndefOr[
@@ -155,7 +167,7 @@ trait MultiRemote extends StObject {
       /* capabilities */ RemoteCapability, 
       /* specs */ js.Array[String], 
       /* cid */ String, 
-      Unit
+      Any | js.Promise[Any]
     ]) | (js.Array[
       NonNullable[
         js.UndefOr[
@@ -164,7 +176,7 @@ trait MultiRemote extends StObject {
             /* capabilities */ RemoteCapability, 
             /* specs */ js.Array[String], 
             /* cid */ String, 
-            Unit
+            Any | js.Promise[Any]
           ]
         ]
       ]
@@ -172,11 +184,15 @@ trait MultiRemote extends StObject {
   ] = js.undefined
   
   var beforeSuite: js.UndefOr[
-    (js.Function1[/* suite */ Suite, Unit]) | (js.Array[NonNullable[js.UndefOr[js.Function1[/* suite */ Suite, Unit]]]])
+    (js.Function1[/* suite */ Suite, Any | js.Promise[Any]]) | (js.Array[NonNullable[js.UndefOr[js.Function1[/* suite */ Suite, Any | js.Promise[Any]]]]])
   ] = js.undefined
   
   var beforeTest: js.UndefOr[
-    (js.Function2[/* test */ Test, /* context */ Any, Unit]) | (js.Array[NonNullable[js.UndefOr[js.Function2[/* test */ Test, /* context */ Any, Unit]]]])
+    (js.Function2[/* test */ Test, /* context */ Any, Any | js.Promise[Any]]) | (js.Array[
+      NonNullable[
+        js.UndefOr[js.Function2[/* test */ Test, /* context */ Any, Any | js.Promise[Any]]]
+      ]
+    ])
   ] = js.undefined
   
   var capabilities: MultiRemoteCapabilities
@@ -205,6 +221,8 @@ trait MultiRemote extends StObject {
   
   var hostname: js.UndefOr[String] = js.undefined
   
+  var injectGlobals: js.UndefOr[Boolean] = js.undefined
+  
   var jasmineOpts: js.UndefOr[JasmineOpts] = js.undefined
   
   var key: js.UndefOr[String] = js.undefined
@@ -225,7 +243,7 @@ trait MultiRemote extends StObject {
       /* config */ OmitTestrunnercapabilitieAfter, 
       /* capabilities */ RemoteCapabilities, 
       /* results */ Any, 
-      Unit
+      Any | js.Promise[Any]
     ]) | (js.Array[
       NonNullable[
         js.UndefOr[
@@ -234,7 +252,7 @@ trait MultiRemote extends StObject {
             /* config */ OmitTestrunnercapabilitieAfter, 
             /* capabilities */ RemoteCapabilities, 
             /* results */ Any, 
-            Unit
+            Any | js.Promise[Any]
           ]
         ]
       ]
@@ -242,19 +260,29 @@ trait MultiRemote extends StObject {
   ] = js.undefined
   
   var onPrepare: js.UndefOr[
-    (js.Function2[/* config */ Testrunner, /* capabilities */ RemoteCapabilities, Unit]) | (js.Array[
+    (js.Function2[
+      /* config */ Testrunner, 
+      /* capabilities */ RemoteCapabilities, 
+      Any | js.Promise[Any]
+    ]) | (js.Array[
       NonNullable[
         js.UndefOr[
-          js.Function2[/* config */ Testrunner, /* capabilities */ RemoteCapabilities, Unit]
+          js.Function2[
+            /* config */ Testrunner, 
+            /* capabilities */ RemoteCapabilities, 
+            Any | js.Promise[Any]
+          ]
         ]
       ]
     ])
   ] = js.undefined
   
   var onReload: js.UndefOr[
-    (js.Function2[/* oldSessionId */ String, /* newSessionId */ String, Unit]) | (js.Array[
+    (js.Function2[/* oldSessionId */ String, /* newSessionId */ String, Any | js.Promise[Any]]) | (js.Array[
       NonNullable[
-        js.UndefOr[js.Function2[/* oldSessionId */ String, /* newSessionId */ String, Unit]]
+        js.UndefOr[
+          js.Function2[/* oldSessionId */ String, /* newSessionId */ String, Any | js.Promise[Any]]
+        ]
       ]
     ])
   ] = js.undefined
@@ -265,7 +293,7 @@ trait MultiRemote extends StObject {
       /* exitCode */ Double, 
       /* specs */ js.Array[String], 
       /* retries */ Double, 
-      Unit
+      Any | js.Promise[Any]
     ]) | (js.Array[
       NonNullable[
         js.UndefOr[
@@ -274,7 +302,7 @@ trait MultiRemote extends StObject {
             /* exitCode */ Double, 
             /* specs */ js.Array[String], 
             /* retries */ Double, 
-            Unit
+            Any | js.Promise[Any]
           ]
         ]
       ]
@@ -288,7 +316,7 @@ trait MultiRemote extends StObject {
       /* specs */ js.Array[String], 
       /* args */ Testrunner, 
       /* execArgv */ js.Array[String], 
-      Unit
+      Any | js.Promise[Any]
     ]) | (js.Array[
       NonNullable[
         js.UndefOr[
@@ -298,7 +326,7 @@ trait MultiRemote extends StObject {
             /* specs */ js.Array[String], 
             /* args */ Testrunner, 
             /* execArgv */ js.Array[String], 
-            Unit
+            Any | js.Promise[Any]
           ]
         ]
       ]
@@ -323,7 +351,11 @@ trait MultiRemote extends StObject {
   
   var reporters: js.UndefOr[js.Array[ReporterEntry]] = js.undefined
   
-  var runner: js.UndefOr[local] = js.undefined
+  var rootDir: js.UndefOr[String] = js.undefined
+  
+  var runner: js.UndefOr[
+    local | browser | (js.Tuple2[browser | local, BrowserRunnerOptions | scala.Nothing])
+  ] = js.undefined
   
   var runnerEnv: js.UndefOr[Record[String, Any]] = js.undefined
   
@@ -339,7 +371,7 @@ trait MultiRemote extends StObject {
   
   var strictSSL: js.UndefOr[Boolean] = js.undefined
   
-  var suites: js.UndefOr[Record[String, js.Array[String]]] = js.undefined
+  var suites: js.UndefOr[Record[String, js.Array[js.Array[String] | String]]] = js.undefined
   
   var transformRequest: js.UndefOr[js.Function1[/* requestOptions */ RequestLibOptions, RequestLibOptions]] = js.undefined
   
@@ -374,7 +406,7 @@ object MultiRemote {
           /* result */ Double, 
           /* capabilities */ RemoteCapability, 
           /* specs */ js.Array[String], 
-          Unit
+          Any | js.Promise[Any]
         ]) | (js.Array[
           NonNullable[
             js.UndefOr[
@@ -382,7 +414,7 @@ object MultiRemote {
                 /* result */ Double, 
                 /* capabilities */ RemoteCapability, 
                 /* specs */ js.Array[String], 
-                Unit
+                Any | js.Promise[Any]
               ]
             ]
           ]
@@ -395,7 +427,7 @@ object MultiRemote {
           /* args */ js.Array[Any], 
           /* result */ Any, 
           /* error */ js.UndefOr[js.Error], 
-          Unit
+          Any | js.Promise[Any]
         ]) | (js.Array[
           NonNullable[
             js.UndefOr[
@@ -404,7 +436,7 @@ object MultiRemote {
                 /* args */ js.Array[Any], 
                 /* result */ Any, 
                 /* error */ js.UndefOr[js.Error], 
-                Unit
+                Any | js.Promise[Any]
               ]
             ]
           ]
@@ -412,7 +444,7 @@ object MultiRemote {
     ): Self = StObject.set(x, "afterCommand", value.asInstanceOf[js.Any])
     
     inline def setAfterCommandFunction4(
-      value: (/* commandName */ String, /* args */ js.Array[Any], /* result */ Any, /* error */ js.UndefOr[js.Error]) => Unit
+      value: (/* commandName */ String, /* args */ js.Array[Any], /* result */ Any, /* error */ js.UndefOr[js.Error]) => Any | js.Promise[Any]
     ): Self = StObject.set(x, "afterCommand", js.Any.fromFunction4(value))
     
     inline def setAfterCommandUndefined: Self = StObject.set(x, "afterCommand", js.undefined)
@@ -425,31 +457,35 @@ object MultiRemote {
               /* args */ js.Array[Any], 
               /* result */ Any, 
               /* error */ js.UndefOr[js.Error], 
-              Unit
+              Any | js.Promise[Any]
             ]
           ]
         ])*
     ): Self = StObject.set(x, "afterCommand", js.Array(value*))
     
     inline def setAfterFunction3(
-      value: (/* result */ Double, /* capabilities */ RemoteCapability, /* specs */ js.Array[String]) => Unit
+      value: (/* result */ Double, /* capabilities */ RemoteCapability, /* specs */ js.Array[String]) => Any | js.Promise[Any]
     ): Self = StObject.set(x, "after", js.Any.fromFunction3(value))
     
     inline def setAfterHook(
-      value: (js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Unit]) | (js.Array[
+      value: (js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Any | js.Promise[Any]]) | (js.Array[
           NonNullable[
-            js.UndefOr[js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Unit]]
+            js.UndefOr[
+              js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Any | js.Promise[Any]]
+            ]
           ]
         ])
     ): Self = StObject.set(x, "afterHook", value.asInstanceOf[js.Any])
     
-    inline def setAfterHookFunction3(value: (/* test */ Test, /* context */ Any, /* result */ TestResult) => Unit): Self = StObject.set(x, "afterHook", js.Any.fromFunction3(value))
+    inline def setAfterHookFunction3(value: (/* test */ Test, /* context */ Any, /* result */ TestResult) => Any | js.Promise[Any]): Self = StObject.set(x, "afterHook", js.Any.fromFunction3(value))
     
     inline def setAfterHookUndefined: Self = StObject.set(x, "afterHook", js.undefined)
     
     inline def setAfterHookVarargs(
       value: (NonNullable[
-          js.UndefOr[js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Unit]]
+          js.UndefOr[
+            js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Any | js.Promise[Any]]
+          ]
         ])*
     ): Self = StObject.set(x, "afterHook", js.Array(value*))
     
@@ -458,7 +494,7 @@ object MultiRemote {
           /* config */ Testrunner, 
           /* capabilities */ RemoteCapability, 
           /* specs */ js.Array[String], 
-          Unit
+          Any | js.Promise[Any]
         ]) | (js.Array[
           NonNullable[
             js.UndefOr[
@@ -466,7 +502,7 @@ object MultiRemote {
                 /* config */ Testrunner, 
                 /* capabilities */ RemoteCapability, 
                 /* specs */ js.Array[String], 
-                Unit
+                Any | js.Promise[Any]
               ]
             ]
           ]
@@ -474,7 +510,7 @@ object MultiRemote {
     ): Self = StObject.set(x, "afterSession", value.asInstanceOf[js.Any])
     
     inline def setAfterSessionFunction3(
-      value: (/* config */ Testrunner, /* capabilities */ RemoteCapability, /* specs */ js.Array[String]) => Unit
+      value: (/* config */ Testrunner, /* capabilities */ RemoteCapability, /* specs */ js.Array[String]) => Any | js.Promise[Any]
     ): Self = StObject.set(x, "afterSession", js.Any.fromFunction3(value))
     
     inline def setAfterSessionUndefined: Self = StObject.set(x, "afterSession", js.undefined)
@@ -486,37 +522,41 @@ object MultiRemote {
               /* config */ Testrunner, 
               /* capabilities */ RemoteCapability, 
               /* specs */ js.Array[String], 
-              Unit
+              Any | js.Promise[Any]
             ]
           ]
         ])*
     ): Self = StObject.set(x, "afterSession", js.Array(value*))
     
     inline def setAfterSuite(
-      value: (js.Function1[/* suite */ Suite, Unit]) | (js.Array[NonNullable[js.UndefOr[js.Function1[/* suite */ Suite, Unit]]]])
+      value: (js.Function1[/* suite */ Suite, Any | js.Promise[Any]]) | (js.Array[NonNullable[js.UndefOr[js.Function1[/* suite */ Suite, Any | js.Promise[Any]]]]])
     ): Self = StObject.set(x, "afterSuite", value.asInstanceOf[js.Any])
     
-    inline def setAfterSuiteFunction1(value: /* suite */ Suite => Unit): Self = StObject.set(x, "afterSuite", js.Any.fromFunction1(value))
+    inline def setAfterSuiteFunction1(value: /* suite */ Suite => Any | js.Promise[Any]): Self = StObject.set(x, "afterSuite", js.Any.fromFunction1(value))
     
     inline def setAfterSuiteUndefined: Self = StObject.set(x, "afterSuite", js.undefined)
     
-    inline def setAfterSuiteVarargs(value: (NonNullable[js.UndefOr[js.Function1[/* suite */ Suite, Unit]]])*): Self = StObject.set(x, "afterSuite", js.Array(value*))
+    inline def setAfterSuiteVarargs(value: (NonNullable[js.UndefOr[js.Function1[/* suite */ Suite, Any | js.Promise[Any]]]])*): Self = StObject.set(x, "afterSuite", js.Array(value*))
     
     inline def setAfterTest(
-      value: (js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Unit]) | (js.Array[
+      value: (js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Any | js.Promise[Any]]) | (js.Array[
           NonNullable[
-            js.UndefOr[js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Unit]]
+            js.UndefOr[
+              js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Any | js.Promise[Any]]
+            ]
           ]
         ])
     ): Self = StObject.set(x, "afterTest", value.asInstanceOf[js.Any])
     
-    inline def setAfterTestFunction3(value: (/* test */ Test, /* context */ Any, /* result */ TestResult) => Unit): Self = StObject.set(x, "afterTest", js.Any.fromFunction3(value))
+    inline def setAfterTestFunction3(value: (/* test */ Test, /* context */ Any, /* result */ TestResult) => Any | js.Promise[Any]): Self = StObject.set(x, "afterTest", js.Any.fromFunction3(value))
     
     inline def setAfterTestUndefined: Self = StObject.set(x, "afterTest", js.undefined)
     
     inline def setAfterTestVarargs(
       value: (NonNullable[
-          js.UndefOr[js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Unit]]
+          js.UndefOr[
+            js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Any | js.Promise[Any]]
+          ]
         ])*
     ): Self = StObject.set(x, "afterTest", js.Array(value*))
     
@@ -529,7 +569,7 @@ object MultiRemote {
               /* result */ Double, 
               /* capabilities */ RemoteCapability, 
               /* specs */ js.Array[String], 
-              Unit
+              Any | js.Promise[Any]
             ]
           ]
         ])*
@@ -560,7 +600,7 @@ object MultiRemote {
           /* capabilities */ RemoteCapability, 
           /* specs */ js.Array[String], 
           /* browser */ Any, 
-          Unit
+          Any | js.Promise[Any]
         ]) | (js.Array[
           NonNullable[
             js.UndefOr[
@@ -568,7 +608,7 @@ object MultiRemote {
                 /* capabilities */ RemoteCapability, 
                 /* specs */ js.Array[String], 
                 /* browser */ Any, 
-                Unit
+                Any | js.Promise[Any]
               ]
             ]
           ]
@@ -576,36 +616,48 @@ object MultiRemote {
     ): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
     inline def setBeforeCommand(
-      value: (js.Function2[/* commandName */ String, /* args */ js.Array[Any], Unit]) | (js.Array[
+      value: (js.Function2[/* commandName */ String, /* args */ js.Array[Any], Any | js.Promise[Any]]) | (js.Array[
           NonNullable[
-            js.UndefOr[js.Function2[/* commandName */ String, /* args */ js.Array[Any], Unit]]
+            js.UndefOr[
+              js.Function2[/* commandName */ String, /* args */ js.Array[Any], Any | js.Promise[Any]]
+            ]
           ]
         ])
     ): Self = StObject.set(x, "beforeCommand", value.asInstanceOf[js.Any])
     
-    inline def setBeforeCommandFunction2(value: (/* commandName */ String, /* args */ js.Array[Any]) => Unit): Self = StObject.set(x, "beforeCommand", js.Any.fromFunction2(value))
+    inline def setBeforeCommandFunction2(value: (/* commandName */ String, /* args */ js.Array[Any]) => Any | js.Promise[Any]): Self = StObject.set(x, "beforeCommand", js.Any.fromFunction2(value))
     
     inline def setBeforeCommandUndefined: Self = StObject.set(x, "beforeCommand", js.undefined)
     
     inline def setBeforeCommandVarargs(
       value: (NonNullable[
-          js.UndefOr[js.Function2[/* commandName */ String, /* args */ js.Array[Any], Unit]]
+          js.UndefOr[
+            js.Function2[/* commandName */ String, /* args */ js.Array[Any], Any | js.Promise[Any]]
+          ]
         ])*
     ): Self = StObject.set(x, "beforeCommand", js.Array(value*))
     
     inline def setBeforeFunction3(
-      value: (/* capabilities */ RemoteCapability, /* specs */ js.Array[String], /* browser */ Any) => Unit
+      value: (/* capabilities */ RemoteCapability, /* specs */ js.Array[String], /* browser */ Any) => Any | js.Promise[Any]
     ): Self = StObject.set(x, "before", js.Any.fromFunction3(value))
     
     inline def setBeforeHook(
-      value: (js.Function2[/* test */ Any, /* context */ Any, Unit]) | (js.Array[NonNullable[js.UndefOr[js.Function2[/* test */ Any, /* context */ Any, Unit]]]])
+      value: (js.Function2[/* test */ Any, /* context */ Any, Any | js.Promise[Any]]) | (js.Array[
+          NonNullable[
+            js.UndefOr[js.Function2[/* test */ Any, /* context */ Any, Any | js.Promise[Any]]]
+          ]
+        ])
     ): Self = StObject.set(x, "beforeHook", value.asInstanceOf[js.Any])
     
-    inline def setBeforeHookFunction2(value: (/* test */ Any, /* context */ Any) => Unit): Self = StObject.set(x, "beforeHook", js.Any.fromFunction2(value))
+    inline def setBeforeHookFunction2(value: (/* test */ Any, /* context */ Any) => Any | js.Promise[Any]): Self = StObject.set(x, "beforeHook", js.Any.fromFunction2(value))
     
     inline def setBeforeHookUndefined: Self = StObject.set(x, "beforeHook", js.undefined)
     
-    inline def setBeforeHookVarargs(value: (NonNullable[js.UndefOr[js.Function2[/* test */ Any, /* context */ Any, Unit]]])*): Self = StObject.set(x, "beforeHook", js.Array(value*))
+    inline def setBeforeHookVarargs(
+      value: (NonNullable[
+          js.UndefOr[js.Function2[/* test */ Any, /* context */ Any, Any | js.Promise[Any]]]
+        ])*
+    ): Self = StObject.set(x, "beforeHook", js.Array(value*))
     
     inline def setBeforeSession(
       value: (js.Function4[
@@ -613,7 +665,7 @@ object MultiRemote {
           /* capabilities */ RemoteCapability, 
           /* specs */ js.Array[String], 
           /* cid */ String, 
-          Unit
+          Any | js.Promise[Any]
         ]) | (js.Array[
           NonNullable[
             js.UndefOr[
@@ -622,7 +674,7 @@ object MultiRemote {
                 /* capabilities */ RemoteCapability, 
                 /* specs */ js.Array[String], 
                 /* cid */ String, 
-                Unit
+                Any | js.Promise[Any]
               ]
             ]
           ]
@@ -630,7 +682,7 @@ object MultiRemote {
     ): Self = StObject.set(x, "beforeSession", value.asInstanceOf[js.Any])
     
     inline def setBeforeSessionFunction4(
-      value: (/* config */ OmitTestrunnercapabilitieAfter, /* capabilities */ RemoteCapability, /* specs */ js.Array[String], /* cid */ String) => Unit
+      value: (/* config */ OmitTestrunnercapabilitieAfter, /* capabilities */ RemoteCapability, /* specs */ js.Array[String], /* cid */ String) => Any | js.Promise[Any]
     ): Self = StObject.set(x, "beforeSession", js.Any.fromFunction4(value))
     
     inline def setBeforeSessionUndefined: Self = StObject.set(x, "beforeSession", js.undefined)
@@ -643,31 +695,39 @@ object MultiRemote {
               /* capabilities */ RemoteCapability, 
               /* specs */ js.Array[String], 
               /* cid */ String, 
-              Unit
+              Any | js.Promise[Any]
             ]
           ]
         ])*
     ): Self = StObject.set(x, "beforeSession", js.Array(value*))
     
     inline def setBeforeSuite(
-      value: (js.Function1[/* suite */ Suite, Unit]) | (js.Array[NonNullable[js.UndefOr[js.Function1[/* suite */ Suite, Unit]]]])
+      value: (js.Function1[/* suite */ Suite, Any | js.Promise[Any]]) | (js.Array[NonNullable[js.UndefOr[js.Function1[/* suite */ Suite, Any | js.Promise[Any]]]]])
     ): Self = StObject.set(x, "beforeSuite", value.asInstanceOf[js.Any])
     
-    inline def setBeforeSuiteFunction1(value: /* suite */ Suite => Unit): Self = StObject.set(x, "beforeSuite", js.Any.fromFunction1(value))
+    inline def setBeforeSuiteFunction1(value: /* suite */ Suite => Any | js.Promise[Any]): Self = StObject.set(x, "beforeSuite", js.Any.fromFunction1(value))
     
     inline def setBeforeSuiteUndefined: Self = StObject.set(x, "beforeSuite", js.undefined)
     
-    inline def setBeforeSuiteVarargs(value: (NonNullable[js.UndefOr[js.Function1[/* suite */ Suite, Unit]]])*): Self = StObject.set(x, "beforeSuite", js.Array(value*))
+    inline def setBeforeSuiteVarargs(value: (NonNullable[js.UndefOr[js.Function1[/* suite */ Suite, Any | js.Promise[Any]]]])*): Self = StObject.set(x, "beforeSuite", js.Array(value*))
     
     inline def setBeforeTest(
-      value: (js.Function2[/* test */ Test, /* context */ Any, Unit]) | (js.Array[NonNullable[js.UndefOr[js.Function2[/* test */ Test, /* context */ Any, Unit]]]])
+      value: (js.Function2[/* test */ Test, /* context */ Any, Any | js.Promise[Any]]) | (js.Array[
+          NonNullable[
+            js.UndefOr[js.Function2[/* test */ Test, /* context */ Any, Any | js.Promise[Any]]]
+          ]
+        ])
     ): Self = StObject.set(x, "beforeTest", value.asInstanceOf[js.Any])
     
-    inline def setBeforeTestFunction2(value: (/* test */ Test, /* context */ Any) => Unit): Self = StObject.set(x, "beforeTest", js.Any.fromFunction2(value))
+    inline def setBeforeTestFunction2(value: (/* test */ Test, /* context */ Any) => Any | js.Promise[Any]): Self = StObject.set(x, "beforeTest", js.Any.fromFunction2(value))
     
     inline def setBeforeTestUndefined: Self = StObject.set(x, "beforeTest", js.undefined)
     
-    inline def setBeforeTestVarargs(value: (NonNullable[js.UndefOr[js.Function2[/* test */ Test, /* context */ Any, Unit]]])*): Self = StObject.set(x, "beforeTest", js.Array(value*))
+    inline def setBeforeTestVarargs(
+      value: (NonNullable[
+          js.UndefOr[js.Function2[/* test */ Test, /* context */ Any, Any | js.Promise[Any]]]
+        ])*
+    ): Self = StObject.set(x, "beforeTest", js.Array(value*))
     
     inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
@@ -678,7 +738,7 @@ object MultiRemote {
               /* capabilities */ RemoteCapability, 
               /* specs */ js.Array[String], 
               /* browser */ Any, 
-              Unit
+              Any | js.Promise[Any]
             ]
           ]
         ])*
@@ -742,6 +802,10 @@ object MultiRemote {
     
     inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
     
+    inline def setInjectGlobals(value: Boolean): Self = StObject.set(x, "injectGlobals", value.asInstanceOf[js.Any])
+    
+    inline def setInjectGlobalsUndefined: Self = StObject.set(x, "injectGlobals", js.undefined)
+    
     inline def setJasmineOpts(value: JasmineOpts): Self = StObject.set(x, "jasmineOpts", value.asInstanceOf[js.Any])
     
     inline def setJasmineOptsUndefined: Self = StObject.set(x, "jasmineOpts", js.undefined)
@@ -776,7 +840,7 @@ object MultiRemote {
           /* config */ OmitTestrunnercapabilitieAfter, 
           /* capabilities */ RemoteCapabilities, 
           /* results */ Any, 
-          Unit
+          Any | js.Promise[Any]
         ]) | (js.Array[
           NonNullable[
             js.UndefOr[
@@ -785,7 +849,7 @@ object MultiRemote {
                 /* config */ OmitTestrunnercapabilitieAfter, 
                 /* capabilities */ RemoteCapabilities, 
                 /* results */ Any, 
-                Unit
+                Any | js.Promise[Any]
               ]
             ]
           ]
@@ -793,7 +857,7 @@ object MultiRemote {
     ): Self = StObject.set(x, "onComplete", value.asInstanceOf[js.Any])
     
     inline def setOnCompleteFunction4(
-      value: (/* exitCode */ Double, /* config */ OmitTestrunnercapabilitieAfter, /* capabilities */ RemoteCapabilities, /* results */ Any) => Unit
+      value: (/* exitCode */ Double, /* config */ OmitTestrunnercapabilitieAfter, /* capabilities */ RemoteCapabilities, /* results */ Any) => Any | js.Promise[Any]
     ): Self = StObject.set(x, "onComplete", js.Any.fromFunction4(value))
     
     inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
@@ -806,49 +870,65 @@ object MultiRemote {
               /* config */ OmitTestrunnercapabilitieAfter, 
               /* capabilities */ RemoteCapabilities, 
               /* results */ Any, 
-              Unit
+              Any | js.Promise[Any]
             ]
           ]
         ])*
     ): Self = StObject.set(x, "onComplete", js.Array(value*))
     
     inline def setOnPrepare(
-      value: (js.Function2[/* config */ Testrunner, /* capabilities */ RemoteCapabilities, Unit]) | (js.Array[
+      value: (js.Function2[
+          /* config */ Testrunner, 
+          /* capabilities */ RemoteCapabilities, 
+          Any | js.Promise[Any]
+        ]) | (js.Array[
           NonNullable[
             js.UndefOr[
-              js.Function2[/* config */ Testrunner, /* capabilities */ RemoteCapabilities, Unit]
+              js.Function2[
+                /* config */ Testrunner, 
+                /* capabilities */ RemoteCapabilities, 
+                Any | js.Promise[Any]
+              ]
             ]
           ]
         ])
     ): Self = StObject.set(x, "onPrepare", value.asInstanceOf[js.Any])
     
-    inline def setOnPrepareFunction2(value: (/* config */ Testrunner, /* capabilities */ RemoteCapabilities) => Unit): Self = StObject.set(x, "onPrepare", js.Any.fromFunction2(value))
+    inline def setOnPrepareFunction2(value: (/* config */ Testrunner, /* capabilities */ RemoteCapabilities) => Any | js.Promise[Any]): Self = StObject.set(x, "onPrepare", js.Any.fromFunction2(value))
     
     inline def setOnPrepareUndefined: Self = StObject.set(x, "onPrepare", js.undefined)
     
     inline def setOnPrepareVarargs(
       value: (NonNullable[
           js.UndefOr[
-            js.Function2[/* config */ Testrunner, /* capabilities */ RemoteCapabilities, Unit]
+            js.Function2[
+              /* config */ Testrunner, 
+              /* capabilities */ RemoteCapabilities, 
+              Any | js.Promise[Any]
+            ]
           ]
         ])*
     ): Self = StObject.set(x, "onPrepare", js.Array(value*))
     
     inline def setOnReload(
-      value: (js.Function2[/* oldSessionId */ String, /* newSessionId */ String, Unit]) | (js.Array[
+      value: (js.Function2[/* oldSessionId */ String, /* newSessionId */ String, Any | js.Promise[Any]]) | (js.Array[
           NonNullable[
-            js.UndefOr[js.Function2[/* oldSessionId */ String, /* newSessionId */ String, Unit]]
+            js.UndefOr[
+              js.Function2[/* oldSessionId */ String, /* newSessionId */ String, Any | js.Promise[Any]]
+            ]
           ]
         ])
     ): Self = StObject.set(x, "onReload", value.asInstanceOf[js.Any])
     
-    inline def setOnReloadFunction2(value: (/* oldSessionId */ String, /* newSessionId */ String) => Unit): Self = StObject.set(x, "onReload", js.Any.fromFunction2(value))
+    inline def setOnReloadFunction2(value: (/* oldSessionId */ String, /* newSessionId */ String) => Any | js.Promise[Any]): Self = StObject.set(x, "onReload", js.Any.fromFunction2(value))
     
     inline def setOnReloadUndefined: Self = StObject.set(x, "onReload", js.undefined)
     
     inline def setOnReloadVarargs(
       value: (NonNullable[
-          js.UndefOr[js.Function2[/* oldSessionId */ String, /* newSessionId */ String, Unit]]
+          js.UndefOr[
+            js.Function2[/* oldSessionId */ String, /* newSessionId */ String, Any | js.Promise[Any]]
+          ]
         ])*
     ): Self = StObject.set(x, "onReload", js.Array(value*))
     
@@ -858,7 +938,7 @@ object MultiRemote {
           /* exitCode */ Double, 
           /* specs */ js.Array[String], 
           /* retries */ Double, 
-          Unit
+          Any | js.Promise[Any]
         ]) | (js.Array[
           NonNullable[
             js.UndefOr[
@@ -867,7 +947,7 @@ object MultiRemote {
                 /* exitCode */ Double, 
                 /* specs */ js.Array[String], 
                 /* retries */ Double, 
-                Unit
+                Any | js.Promise[Any]
               ]
             ]
           ]
@@ -875,7 +955,7 @@ object MultiRemote {
     ): Self = StObject.set(x, "onWorkerEnd", value.asInstanceOf[js.Any])
     
     inline def setOnWorkerEndFunction4(
-      value: (/* cid */ String, /* exitCode */ Double, /* specs */ js.Array[String], /* retries */ Double) => Unit
+      value: (/* cid */ String, /* exitCode */ Double, /* specs */ js.Array[String], /* retries */ Double) => Any | js.Promise[Any]
     ): Self = StObject.set(x, "onWorkerEnd", js.Any.fromFunction4(value))
     
     inline def setOnWorkerEndUndefined: Self = StObject.set(x, "onWorkerEnd", js.undefined)
@@ -888,7 +968,7 @@ object MultiRemote {
               /* exitCode */ Double, 
               /* specs */ js.Array[String], 
               /* retries */ Double, 
-              Unit
+              Any | js.Promise[Any]
             ]
           ]
         ])*
@@ -901,7 +981,7 @@ object MultiRemote {
           /* specs */ js.Array[String], 
           /* args */ Testrunner, 
           /* execArgv */ js.Array[String], 
-          Unit
+          Any | js.Promise[Any]
         ]) | (js.Array[
           NonNullable[
             js.UndefOr[
@@ -911,7 +991,7 @@ object MultiRemote {
                 /* specs */ js.Array[String], 
                 /* args */ Testrunner, 
                 /* execArgv */ js.Array[String], 
-                Unit
+                Any | js.Promise[Any]
               ]
             ]
           ]
@@ -919,7 +999,7 @@ object MultiRemote {
     ): Self = StObject.set(x, "onWorkerStart", value.asInstanceOf[js.Any])
     
     inline def setOnWorkerStartFunction5(
-      value: (/* cid */ String, /* caps */ DesiredCapabilities, /* specs */ js.Array[String], /* args */ Testrunner, /* execArgv */ js.Array[String]) => Unit
+      value: (/* cid */ String, /* caps */ DesiredCapabilities, /* specs */ js.Array[String], /* args */ Testrunner, /* execArgv */ js.Array[String]) => Any | js.Promise[Any]
     ): Self = StObject.set(x, "onWorkerStart", js.Any.fromFunction5(value))
     
     inline def setOnWorkerStartUndefined: Self = StObject.set(x, "onWorkerStart", js.undefined)
@@ -933,7 +1013,7 @@ object MultiRemote {
               /* specs */ js.Array[String], 
               /* args */ Testrunner, 
               /* execArgv */ js.Array[String], 
-              Unit
+              Any | js.Promise[Any]
             ]
           ]
         ])*
@@ -977,7 +1057,11 @@ object MultiRemote {
     
     inline def setReportersVarargs(value: ReporterEntry*): Self = StObject.set(x, "reporters", js.Array(value*))
     
-    inline def setRunner(value: local): Self = StObject.set(x, "runner", value.asInstanceOf[js.Any])
+    inline def setRootDir(value: String): Self = StObject.set(x, "rootDir", value.asInstanceOf[js.Any])
+    
+    inline def setRootDirUndefined: Self = StObject.set(x, "rootDir", js.undefined)
+    
+    inline def setRunner(value: local | browser | (js.Tuple2[browser | local, BrowserRunnerOptions | scala.Nothing])): Self = StObject.set(x, "runner", value.asInstanceOf[js.Any])
     
     inline def setRunnerEnv(value: Record[String, Any]): Self = StObject.set(x, "runnerEnv", value.asInstanceOf[js.Any])
     
@@ -1013,7 +1097,7 @@ object MultiRemote {
     
     inline def setStrictSSLUndefined: Self = StObject.set(x, "strictSSL", js.undefined)
     
-    inline def setSuites(value: Record[String, js.Array[String]]): Self = StObject.set(x, "suites", value.asInstanceOf[js.Any])
+    inline def setSuites(value: Record[String, js.Array[js.Array[String] | String]]): Self = StObject.set(x, "suites", value.asInstanceOf[js.Any])
     
     inline def setSuitesUndefined: Self = StObject.set(x, "suites", js.undefined)
     

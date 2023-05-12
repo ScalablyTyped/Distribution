@@ -1,7 +1,7 @@
 package typings.ink
 
 import typings.ink.anon.ShowCursor
-import typings.node.streamMod.Writable
+import typings.node.nodeColonstreamMod.Writable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

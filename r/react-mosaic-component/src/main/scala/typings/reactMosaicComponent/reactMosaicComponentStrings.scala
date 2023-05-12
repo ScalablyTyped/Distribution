@@ -207,6 +207,10 @@ object reactMosaicComponentStrings {
   inline def AUTOMATIC_UPDATES: AUTOMATIC_UPDATES = "AUTOMATIC_UPDATES".asInstanceOf[AUTOMATIC_UPDATES]
   
   @js.native
+  sealed trait AXLE extends StObject
+  inline def AXLE: AXLE = "AXLE".asInstanceOf[AXLE]
+  
+  @js.native
   sealed trait AddClip extends StObject
   inline def AddClip: AddClip = "AddClip".asInstanceOf[AddClip]
   
@@ -401,6 +405,10 @@ object reactMosaicComponentStrings {
   @js.native
   sealed trait AutomaticUpdates extends StObject
   inline def AutomaticUpdates: AutomaticUpdates = "AutomaticUpdates".asInstanceOf[AutomaticUpdates]
+  
+  @js.native
+  sealed trait Axle_ extends StObject
+  inline def Axle_ : Axle_ = "Axle".asInstanceOf[Axle_]
   
   @js.native
   sealed trait BACKLINK extends StObject
@@ -715,6 +723,10 @@ object reactMosaicComponentStrings {
   inline def CROSS: CROSS = "CROSS".asInstanceOf[CROSS]
   
   @js.native
+  sealed trait CROSS_CIRCLE extends StObject
+  inline def CROSS_CIRCLE: CROSS_CIRCLE = "CROSS_CIRCLE".asInstanceOf[CROSS_CIRCLE]
+  
+  @js.native
   sealed trait CROWN extends StObject
   inline def CROWN: CROWN = "CROWN".asInstanceOf[CROWN]
   
@@ -921,6 +933,10 @@ object reactMosaicComponentStrings {
   @js.native
   sealed trait CreditCard extends StObject
   inline def CreditCard: CreditCard = "CreditCard".asInstanceOf[CreditCard]
+  
+  @js.native
+  sealed trait CrossCircle extends StObject
+  inline def CrossCircle: CrossCircle = "CrossCircle".asInstanceOf[CrossCircle]
   
   @js.native
   sealed trait Cross_ extends StObject
@@ -2129,6 +2145,10 @@ object reactMosaicComponentStrings {
   inline def INSERT: INSERT = "INSERT".asInstanceOf[INSERT]
   
   @js.native
+  sealed trait INTELLIGENCE extends StObject
+  inline def INTELLIGENCE: INTELLIGENCE = "INTELLIGENCE".asInstanceOf[INTELLIGENCE]
+  
+  @js.native
   sealed trait INTERSECTION extends StObject
   inline def INTERSECTION: INTERSECTION = "INTERSECTION".asInstanceOf[INTERSECTION]
   
@@ -2207,6 +2227,10 @@ object reactMosaicComponentStrings {
   @js.native
   sealed trait Insert_ extends StObject
   inline def Insert_ : Insert_ = "Insert".asInstanceOf[Insert_]
+  
+  @js.native
+  sealed trait Intelligence_ extends StObject
+  inline def Intelligence_ : Intelligence_ = "Intelligence".asInstanceOf[Intelligence_]
   
   @js.native
   sealed trait Intersection_ extends StObject
@@ -2441,6 +2465,10 @@ object reactMosaicComponentStrings {
   inline def LOCK: LOCK = "LOCK".asInstanceOf[LOCK]
   
   @js.native
+  sealed trait LOCOMOTIVE extends StObject
+  inline def LOCOMOTIVE: LOCOMOTIVE = "LOCOMOTIVE".asInstanceOf[LOCOMOTIVE]
+  
+  @js.native
   sealed trait LOG_IN extends StObject
   inline def LOG_IN: LOG_IN = "LOG_IN".asInstanceOf[LOG_IN]
   
@@ -2565,6 +2593,10 @@ object reactMosaicComponentStrings {
   inline def Lock_ : Lock_ = "Lock".asInstanceOf[Lock_]
   
   @js.native
+  sealed trait Locomotive_ extends StObject
+  inline def Locomotive_ : Locomotive_ = "Locomotive".asInstanceOf[Locomotive_]
+  
+  @js.native
   sealed trait LogIn extends StObject
   inline def LogIn: LogIn = "LogIn".asInstanceOf[LogIn]
   
@@ -2655,6 +2687,10 @@ object reactMosaicComponentStrings {
   @js.native
   sealed trait MODAL_FILLED extends StObject
   inline def MODAL_FILLED: MODAL_FILLED = "MODAL_FILLED".asInstanceOf[MODAL_FILLED]
+  
+  @js.native
+  sealed trait MODEL extends StObject
+  inline def MODEL: MODEL = "MODEL".asInstanceOf[MODEL]
   
   @js.native
   sealed trait MOON extends StObject
@@ -2763,6 +2799,10 @@ object reactMosaicComponentStrings {
   @js.native
   sealed trait Modal_ extends StObject
   inline def Modal_ : Modal_ = "Modal".asInstanceOf[Modal_]
+  
+  @js.native
+  sealed trait Model_ extends StObject
+  inline def Model_ : Model_ = "Model".asInstanceOf[Model_]
   
   @js.native
   sealed trait Moon_ extends StObject
@@ -3505,6 +3545,10 @@ object reactMosaicComponentStrings {
   inline def SEND_TO_MAP: SEND_TO_MAP = "SEND_TO_MAP".asInstanceOf[SEND_TO_MAP]
   
   @js.native
+  sealed trait SENSOR extends StObject
+  inline def SENSOR: SENSOR = "SENSOR".asInstanceOf[SENSOR]
+  
+  @js.native
   sealed trait SERIES_ADD extends StObject
   inline def SERIES_ADD: SERIES_ADD = "SERIES_ADD".asInstanceOf[SERIES_ADD]
   
@@ -3681,6 +3725,14 @@ object reactMosaicComponentStrings {
   inline def STYLE: STYLE = "STYLE".asInstanceOf[STYLE]
   
   @js.native
+  sealed trait SUBSCRIPT extends StObject
+  inline def SUBSCRIPT: SUBSCRIPT = "SUBSCRIPT".asInstanceOf[SUBSCRIPT]
+  
+  @js.native
+  sealed trait SUPERSCRIPT extends StObject
+  inline def SUPERSCRIPT: SUPERSCRIPT = "SUPERSCRIPT".asInstanceOf[SUPERSCRIPT]
+  
+  @js.native
   sealed trait SWAP_HORIZONTAL extends StObject
   inline def SWAP_HORIZONTAL: SWAP_HORIZONTAL = "SWAP_HORIZONTAL".asInstanceOf[SWAP_HORIZONTAL]
   
@@ -3779,6 +3831,10 @@ object reactMosaicComponentStrings {
   @js.native
   sealed trait SendToMap extends StObject
   inline def SendToMap: SendToMap = "SendToMap".asInstanceOf[SendToMap]
+  
+  @js.native
+  sealed trait Sensor_ extends StObject
+  inline def Sensor_ : Sensor_ = "Sensor".asInstanceOf[Sensor_]
   
   @js.native
   sealed trait SeriesAdd extends StObject
@@ -3955,6 +4011,14 @@ object reactMosaicComponentStrings {
   @js.native
   sealed trait Style_ extends StObject
   inline def Style_ : Style_ = "Style".asInstanceOf[Style_]
+  
+  @js.native
+  sealed trait Subscript_ extends StObject
+  inline def Subscript_ : Subscript_ = "Subscript".asInstanceOf[Subscript_]
+  
+  @js.native
+  sealed trait Superscript_ extends StObject
+  inline def Superscript_ : Superscript_ = "Superscript".asInstanceOf[Superscript_]
   
   @js.native
   sealed trait SwapHorizontal extends StObject

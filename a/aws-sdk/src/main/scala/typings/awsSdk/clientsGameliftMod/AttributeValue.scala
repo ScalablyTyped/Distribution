@@ -14,17 +14,17 @@ trait AttributeValue extends StObject {
   /**
     * For single string values. Maximum string length is 100 characters.
     */
-  var S: js.UndefOr[NonZeroAndMaxString] = js.undefined
+  var S: js.UndefOr[PlayerAttributeString] = js.undefined
   
   /**
     * For a map of up to 10 data type:value pairs. Maximum length for each string value is 100 characters. 
     */
-  var SDM: js.UndefOr[StringDoubleMap] = js.undefined
+  var SDM: js.UndefOr[PlayerAttributeStringDoubleMap] = js.undefined
   
   /**
     * For a list of up to 100 strings. Maximum length for each string is 100 characters. Duplicate values are not recognized; all occurrences of the repeated value after the first of a repeated value are ignored.
     */
-  var SL: js.UndefOr[StringList] = js.undefined
+  var SL: js.UndefOr[PlayerAttributeStringList] = js.undefined
 }
 object AttributeValue {
   
@@ -40,17 +40,17 @@ object AttributeValue {
     
     inline def setNUndefined: Self = StObject.set(x, "N", js.undefined)
     
-    inline def setS(value: NonZeroAndMaxString): Self = StObject.set(x, "S", value.asInstanceOf[js.Any])
+    inline def setS(value: PlayerAttributeString): Self = StObject.set(x, "S", value.asInstanceOf[js.Any])
     
-    inline def setSDM(value: StringDoubleMap): Self = StObject.set(x, "SDM", value.asInstanceOf[js.Any])
+    inline def setSDM(value: PlayerAttributeStringDoubleMap): Self = StObject.set(x, "SDM", value.asInstanceOf[js.Any])
     
     inline def setSDMUndefined: Self = StObject.set(x, "SDM", js.undefined)
     
-    inline def setSL(value: StringList): Self = StObject.set(x, "SL", value.asInstanceOf[js.Any])
+    inline def setSL(value: PlayerAttributeStringList): Self = StObject.set(x, "SL", value.asInstanceOf[js.Any])
     
     inline def setSLUndefined: Self = StObject.set(x, "SL", js.undefined)
     
-    inline def setSLVarargs(value: NonZeroAndMaxString*): Self = StObject.set(x, "SL", js.Array(value*))
+    inline def setSLVarargs(value: PlayerAttributeString*): Self = StObject.set(x, "SL", js.Array(value*))
     
     inline def setSUndefined: Self = StObject.set(x, "S", js.undefined)
   }

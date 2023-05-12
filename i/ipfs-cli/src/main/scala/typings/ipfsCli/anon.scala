@@ -11,16 +11,16 @@ object anon {
     
     var api: js.UndefOr[String] = js.undefined
     
-    var migrate: Boolean
+    var migrate: js.UndefOr[Boolean] = js.undefined
     
     var pass: js.UndefOr[String] = js.undefined
     
-    var silent: Any
+    var silent: js.UndefOr[Boolean] = js.undefined
   }
   object Api {
     
-    inline def apply(migrate: Boolean, silent: Any): Api = {
-      val __obj = js.Dynamic.literal(migrate = migrate.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any])
+    inline def apply(): Api = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Api]
     }
     
@@ -33,11 +33,15 @@ object anon {
       
       inline def setMigrate(value: Boolean): Self = StObject.set(x, "migrate", value.asInstanceOf[js.Any])
       
+      inline def setMigrateUndefined: Self = StObject.set(x, "migrate", js.undefined)
+      
       inline def setPass(value: String): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
       
       inline def setPassUndefined: Self = StObject.set(x, "pass", js.undefined)
       
-      inline def setSilent(value: Any): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      
+      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     }
   }
   
@@ -64,44 +68,6 @@ object anon {
       inline def setIpfs(value: IPFS[Any]): Self = StObject.set(x, "ipfs", value.asInstanceOf[js.Any])
       
       inline def setIsDaemon(value: Boolean): Self = StObject.set(x, "isDaemon", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Migrate extends StObject {
-    
-    var api: js.UndefOr[String] = js.undefined
-    
-    var migrate: js.UndefOr[Boolean] = js.undefined
-    
-    var pass: js.UndefOr[String] = js.undefined
-    
-    var silent: js.UndefOr[Boolean] = js.undefined
-  }
-  object Migrate {
-    
-    inline def apply(): Migrate = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Migrate]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Migrate] (val x: Self) extends AnyVal {
-      
-      inline def setApi(value: String): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
-      
-      inline def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
-      
-      inline def setMigrate(value: Boolean): Self = StObject.set(x, "migrate", value.asInstanceOf[js.Any])
-      
-      inline def setMigrateUndefined: Self = StObject.set(x, "migrate", js.undefined)
-      
-      inline def setPass(value: String): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
-      
-      inline def setPassUndefined: Self = StObject.set(x, "pass", js.undefined)
-      
-      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
-      
-      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     }
   }
   

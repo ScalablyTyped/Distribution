@@ -1,16 +1,17 @@
 package typings.ink
 
-import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.FC
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object buildComponentsErrorOverviewMod extends Shortcut {
+object buildComponentsErrorOverviewMod {
   
-  @JSImport("ink/build/components/ErrorOverview", JSImport.Default)
+  @JSImport("ink/build/components/ErrorOverview", JSImport.Namespace)
   @js.native
-  val default: FC[Props] = js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(param0: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait Props extends StObject {
     
@@ -29,9 +30,4 @@ object buildComponentsErrorOverviewMod extends Shortcut {
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
-  
-  type _To = FC[Props]
-  
-  /* This means you don't have to write `default`, but can instead just say `buildComponentsErrorOverviewMod.foo` */
-  override def _to: FC[Props] = default
 }

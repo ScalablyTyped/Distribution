@@ -27,38 +27,38 @@ trait Chmod extends StObject {
   ): js.Promise[Unit] = js.native
   
   def cp(
-    sources: js.Array[
+    from: js.Array[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.IPFSPath */ Any
     ],
-    destination: String
+    to: String
   ): js.Promise[Unit] = js.native
   def cp(
-    sources: js.Array[
+    from: js.Array[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.IPFSPath */ Any
     ],
-    destination: String,
+    to: String,
     options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.CpOptions */ Any) & HTTPClientExtraOptions
   ): js.Promise[Unit] = js.native
   def cp(
-    sources: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.IPFSPath */ Any,
-    destination: String
+    from: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.IPFSPath */ Any,
+    to: String
   ): js.Promise[Unit] = js.native
   def cp(
-    sources: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.IPFSPath */ Any,
-    destination: String,
+    from: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.IPFSPath */ Any,
+    to: String,
     options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.CpOptions */ Any) & HTTPClientExtraOptions
   ): js.Promise[Unit] = js.native
   
-  def flush(path: String): js.Promise[CID[Any, Double, Double, Version]] = js.native
-  def flush(path: String, options: AbortOptions & HTTPClientExtraOptions): js.Promise[CID[Any, Double, Double, Version]] = js.native
+  def flush(ipfsPath: String): js.Promise[CID[Any, Double, Double, Version]] = js.native
+  def flush(ipfsPath: String, options: AbortOptions & HTTPClientExtraOptions): js.Promise[CID[Any, Double, Double, Version]] = js.native
   
   def ls(
-    path: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.IPFSPath */ Any
+    ipfsPath: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.IPFSPath */ Any
   ): AsyncIterable[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.MFSEntry */ Any
   ] = js.native
   def ls(
-    path: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.IPFSPath */ Any,
+    ipfsPath: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.IPFSPath */ Any,
     options: AbortOptions & HTTPClientExtraOptions
   ): AsyncIterable[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.MFSEntry */ Any
@@ -70,84 +70,84 @@ trait Chmod extends StObject {
     options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.MkdirOptions */ Any) & HTTPClientExtraOptions
   ): js.Promise[Unit] = js.native
   
-  def mv(sources: String, destination: String): js.Promise[Unit] = js.native
+  def mv(from: String, to: String): js.Promise[Unit] = js.native
   def mv(
-    sources: String,
-    destination: String,
+    from: String,
+    to: String,
     options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.MvOptions */ Any) & HTTPClientExtraOptions
   ): js.Promise[Unit] = js.native
-  def mv(sources: js.Array[String], destination: String): js.Promise[Unit] = js.native
+  def mv(from: js.Array[String], to: String): js.Promise[Unit] = js.native
   def mv(
-    sources: js.Array[String],
-    destination: String,
+    from: js.Array[String],
+    to: String,
     options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.MvOptions */ Any) & HTTPClientExtraOptions
   ): js.Promise[Unit] = js.native
   
   def read(
-    path: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.IPFSPath */ Any
+    ipfsPath: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.IPFSPath */ Any
   ): AsyncIterable[js.typedarray.Uint8Array] = js.native
   def read(
-    path: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.IPFSPath */ Any,
+    ipfsPath: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.IPFSPath */ Any,
     options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.ReadOptions */ Any) & HTTPClientExtraOptions
   ): AsyncIterable[js.typedarray.Uint8Array] = js.native
   
-  def rm(path: String): js.Promise[Unit] = js.native
+  def rm(ipfsPaths: String): js.Promise[Unit] = js.native
   def rm(
-    path: String,
+    ipfsPaths: String,
     options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.RmOptions */ Any) & HTTPClientExtraOptions
   ): js.Promise[Unit] = js.native
-  def rm(path: js.Array[String]): js.Promise[Unit] = js.native
+  def rm(ipfsPaths: js.Array[String]): js.Promise[Unit] = js.native
   def rm(
-    path: js.Array[String],
+    ipfsPaths: js.Array[String],
     options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.RmOptions */ Any) & HTTPClientExtraOptions
   ): js.Promise[Unit] = js.native
   
   def stat(
-    path: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.IPFSPath */ Any
+    ipfsPath: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.IPFSPath */ Any
   ): js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.StatResult */ Any
   ] = js.native
   def stat(
-    path: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.IPFSPath */ Any,
+    ipfsPath: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.IPFSPath */ Any,
     options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.StatOptions */ Any) & HTTPClientExtraOptions
   ): js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.StatResult */ Any
   ] = js.native
   
-  def touch(path: String): js.Promise[Unit] = js.native
+  def touch(ipfsPath: String): js.Promise[Unit] = js.native
   def touch(
-    path: String,
+    ipfsPath: String,
     options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.TouchOptions */ Any) & HTTPClientExtraOptions
   ): js.Promise[Unit] = js.native
   
-  def write(path: String, input: String): js.Promise[Unit] = js.native
+  def write(ipfsPath: String, content: String): js.Promise[Unit] = js.native
   def write(
-    path: String,
-    input: String,
+    ipfsPath: String,
+    content: String,
     options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.WriteOptions */ Any) & HTTPClientExtraOptions
   ): js.Promise[Unit] = js.native
-  def write(path: String, input: js.Iterable[js.typedarray.Uint8Array]): js.Promise[Unit] = js.native
+  def write(ipfsPath: String, content: js.Iterable[js.typedarray.Uint8Array]): js.Promise[Unit] = js.native
   def write(
-    path: String,
-    input: js.Iterable[js.typedarray.Uint8Array],
+    ipfsPath: String,
+    content: js.Iterable[js.typedarray.Uint8Array],
     options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.WriteOptions */ Any) & HTTPClientExtraOptions
   ): js.Promise[Unit] = js.native
-  def write(path: String, input: js.typedarray.Uint8Array): js.Promise[Unit] = js.native
+  def write(ipfsPath: String, content: js.typedarray.Uint8Array): js.Promise[Unit] = js.native
   def write(
-    path: String,
-    input: js.typedarray.Uint8Array,
+    ipfsPath: String,
+    content: js.typedarray.Uint8Array,
     options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.WriteOptions */ Any) & HTTPClientExtraOptions
   ): js.Promise[Unit] = js.native
-  def write(path: String, input: AsyncIterable[js.typedarray.Uint8Array]): js.Promise[Unit] = js.native
+  def write(ipfsPath: String, content: AsyncIterable[js.typedarray.Uint8Array]): js.Promise[Unit] = js.native
   def write(
-    path: String,
-    input: AsyncIterable[js.typedarray.Uint8Array],
+    ipfsPath: String,
+    content: AsyncIterable[js.typedarray.Uint8Array],
     options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.WriteOptions */ Any) & HTTPClientExtraOptions
   ): js.Promise[Unit] = js.native
-  def write(path: String, input: Blob): js.Promise[Unit] = js.native
+  def write(ipfsPath: String, content: Blob): js.Promise[Unit] = js.native
   def write(
-    path: String,
-    input: Blob,
+    ipfsPath: String,
+    content: Blob,
     options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.WriteOptions */ Any) & HTTPClientExtraOptions
   ): js.Promise[Unit] = js.native
 }

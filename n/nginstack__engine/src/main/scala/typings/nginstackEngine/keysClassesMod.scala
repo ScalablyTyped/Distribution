@@ -214,6 +214,18 @@ object keysClassesMod {
   @js.native
   val OIDC_IDENTITY_PROVIDERS: Double = js.native
   
+  @JSImport("@nginstack/engine/keys/Classes", "OIDC_IDENTITY_PROVIDER_GOOGLE")
+  @js.native
+  val OIDC_IDENTITY_PROVIDER_GOOGLE: Double = js.native
+  
+  @JSImport("@nginstack/engine/keys/Classes", "OIDC_IDENTITY_PROVIDER_KEYCLOAK")
+  @js.native
+  val OIDC_IDENTITY_PROVIDER_KEYCLOAK: Double = js.native
+  
+  @JSImport("@nginstack/engine/keys/Classes", "OIDC_IDENTITY_PROVIDER_MICROSOFT")
+  @js.native
+  val OIDC_IDENTITY_PROVIDER_MICROSOFT: Double = js.native
+  
   @JSImport("@nginstack/engine/keys/Classes", "ORPHANS")
   @js.native
   val ORPHANS: Double = js.native

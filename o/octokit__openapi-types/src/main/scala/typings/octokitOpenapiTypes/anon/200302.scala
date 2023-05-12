@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `200302` extends StObject {
   
-  /** Response */
+  /** @description Response */
   var `200`: ContentApplicationvndgithubobject
   
   var `302`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['found'] */ js.Any

@@ -13,7 +13,7 @@ open class RelevantSort protected ()
   def this(props: ButtonTextComponent) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: ButtonTextComponent, context: Any) = this()
 }

@@ -23,7 +23,7 @@ object mod {
       * The reason to give an initial capacity is to avoid potentially expensive resizing operations at runtime.
       */
     def this(capacity: Double) = this()
-    // tslint:disable-line:no-unnecessary-generics
+    // eslint-disable-line no-unnecessary-generics
     /**
       * Creates a double-ended queue from `items`.
       */

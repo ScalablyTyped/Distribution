@@ -4,6 +4,7 @@ import typings.react.mod.HTMLAttributes
 import typings.reactBigCalendar.anon.Accessors
 import typings.reactBigCalendar.anon.Agenda
 import typings.reactBigCalendar.anon.ClassName
+import typings.reactBigCalendar.anon.FirstDayOfWeek
 import typings.reactBigCalendar.mod.^
 import typings.std.Exclude
 import typings.std.HTMLDivElement
@@ -15,9 +16,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 inline def dateFnsLocalizer(config: js.Object): DateLocalizer = ^.asInstanceOf[js.Dynamic].applyDynamic("dateFnsLocalizer")(config.asInstanceOf[js.Any]).asInstanceOf[DateLocalizer]
 
+inline def dayjsLocalizer(dayjs: js.Object): DateLocalizer = ^.asInstanceOf[js.Dynamic].applyDynamic("dayjsLocalizer")(dayjs.asInstanceOf[js.Any]).asInstanceOf[DateLocalizer]
+
 inline def globalizeLocalizer(globalizeInstance: js.Object): DateLocalizer = ^.asInstanceOf[js.Dynamic].applyDynamic("globalizeLocalizer")(globalizeInstance.asInstanceOf[js.Any]).asInstanceOf[DateLocalizer]
 
-inline def luxonLocalizer(config: js.Object): DateLocalizer = ^.asInstanceOf[js.Dynamic].applyDynamic("luxonLocalizer")(config.asInstanceOf[js.Any]).asInstanceOf[DateLocalizer]
+inline def luxonLocalizer(luxonDateTime: js.Object): DateLocalizer = ^.asInstanceOf[js.Dynamic].applyDynamic("luxonLocalizer")(luxonDateTime.asInstanceOf[js.Any]).asInstanceOf[DateLocalizer]
+inline def luxonLocalizer(luxonDateTime: js.Object, options: FirstDayOfWeek): DateLocalizer = (^.asInstanceOf[js.Dynamic].applyDynamic("luxonLocalizer")(luxonDateTime.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DateLocalizer]
 
 inline def momentLocalizer(momentInstance: js.Object): DateLocalizer = ^.asInstanceOf[js.Dynamic].applyDynamic("momentLocalizer")(momentInstance.asInstanceOf[js.Any]).asInstanceOf[DateLocalizer]
 

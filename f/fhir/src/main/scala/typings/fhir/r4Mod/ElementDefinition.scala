@@ -255,12 +255,6 @@ trait ElementDefinition
     * Specifying a default value means that the property can never been unknown - it must always have a value. Further, the default value can never be changed, or changed in constraints on content models. Defining default values creates many difficulties in implementation (e.g. when is a value missing?). For these reasons, default values are (and should be) used extremely sparingly.
     * No default values are ever defined in the FHIR specification, nor can they be defined in constraints ("profiles") on data types or resources. This element only exists so that default values may be defined in logical models.
     */
-  var defaultValueCodeableReference: js.UndefOr[CodeableReference] = js.undefined
-  
-  /**
-    * Specifying a default value means that the property can never been unknown - it must always have a value. Further, the default value can never be changed, or changed in constraints on content models. Defining default values creates many difficulties in implementation (e.g. when is a value missing?). For these reasons, default values are (and should be) used extremely sparingly.
-    * No default values are ever defined in the FHIR specification, nor can they be defined in constraints ("profiles") on data types or resources. This element only exists so that default values may be defined in logical models.
-    */
   var defaultValueCoding: js.UndefOr[Coding] = js.undefined
   
   /**
@@ -429,12 +423,6 @@ trait ElementDefinition
     * Specifying a default value means that the property can never been unknown - it must always have a value. Further, the default value can never be changed, or changed in constraints on content models. Defining default values creates many difficulties in implementation (e.g. when is a value missing?). For these reasons, default values are (and should be) used extremely sparingly.
     * No default values are ever defined in the FHIR specification, nor can they be defined in constraints ("profiles") on data types or resources. This element only exists so that default values may be defined in logical models.
     */
-  var defaultValueRatioRange: js.UndefOr[RatioRange] = js.undefined
-  
-  /**
-    * Specifying a default value means that the property can never been unknown - it must always have a value. Further, the default value can never be changed, or changed in constraints on content models. Defining default values creates many difficulties in implementation (e.g. when is a value missing?). For these reasons, default values are (and should be) used extremely sparingly.
-    * No default values are ever defined in the FHIR specification, nor can they be defined in constraints ("profiles") on data types or resources. This element only exists so that default values may be defined in logical models.
-    */
   var defaultValueReference: js.UndefOr[Reference] = js.undefined
   
   /**
@@ -563,11 +551,6 @@ trait ElementDefinition
     * This is not recommended for Coding and CodeableConcept since these often have highly contextual properties such as version or display.
     */
   var fixedCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
-  
-  /**
-    * This is not recommended for Coding and CodeableConcept since these often have highly contextual properties such as version or display.
-    */
-  var fixedCodeableReference: js.UndefOr[CodeableReference] = js.undefined
   
   /**
     * This is not recommended for Coding and CodeableConcept since these often have highly contextual properties such as version or display.
@@ -708,11 +691,6 @@ trait ElementDefinition
     * This is not recommended for Coding and CodeableConcept since these often have highly contextual properties such as version or display.
     */
   var fixedRatio: js.UndefOr[Ratio] = js.undefined
-  
-  /**
-    * This is not recommended for Coding and CodeableConcept since these often have highly contextual properties such as version or display.
-    */
-  var fixedRatioRange: js.UndefOr[RatioRange] = js.undefined
   
   /**
     * This is not recommended for Coding and CodeableConcept since these often have highly contextual properties such as version or display.
@@ -977,11 +955,6 @@ trait ElementDefinition
   /**
     * Mostly used for fixing values of CodeableConcept. In general, pattern[x] is not intended for use with primitive types, where is has the same meaning as fixed[x].
     */
-  var patternCodeableReference: js.UndefOr[CodeableReference] = js.undefined
-  
-  /**
-    * Mostly used for fixing values of CodeableConcept. In general, pattern[x] is not intended for use with primitive types, where is has the same meaning as fixed[x].
-    */
   var patternCoding: js.UndefOr[Coding] = js.undefined
   
   /**
@@ -1118,11 +1091,6 @@ trait ElementDefinition
     * Mostly used for fixing values of CodeableConcept. In general, pattern[x] is not intended for use with primitive types, where is has the same meaning as fixed[x].
     */
   var patternRatio: js.UndefOr[Ratio] = js.undefined
-  
-  /**
-    * Mostly used for fixing values of CodeableConcept. In general, pattern[x] is not intended for use with primitive types, where is has the same meaning as fixed[x].
-    */
-  var patternRatioRange: js.UndefOr[RatioRange] = js.undefined
   
   /**
     * Mostly used for fixing values of CodeableConcept. In general, pattern[x] is not intended for use with primitive types, where is has the same meaning as fixed[x].
@@ -1310,10 +1278,6 @@ object ElementDefinition {
     
     inline def setDefaultValueCodeableConceptUndefined: Self = StObject.set(x, "defaultValueCodeableConcept", js.undefined)
     
-    inline def setDefaultValueCodeableReference(value: CodeableReference): Self = StObject.set(x, "defaultValueCodeableReference", value.asInstanceOf[js.Any])
-    
-    inline def setDefaultValueCodeableReferenceUndefined: Self = StObject.set(x, "defaultValueCodeableReference", js.undefined)
-    
     inline def setDefaultValueCoding(value: Coding): Self = StObject.set(x, "defaultValueCoding", value.asInstanceOf[js.Any])
     
     inline def setDefaultValueCodingUndefined: Self = StObject.set(x, "defaultValueCoding", js.undefined)
@@ -1424,10 +1388,6 @@ object ElementDefinition {
     
     inline def setDefaultValueRatio(value: Ratio): Self = StObject.set(x, "defaultValueRatio", value.asInstanceOf[js.Any])
     
-    inline def setDefaultValueRatioRange(value: RatioRange): Self = StObject.set(x, "defaultValueRatioRange", value.asInstanceOf[js.Any])
-    
-    inline def setDefaultValueRatioRangeUndefined: Self = StObject.set(x, "defaultValueRatioRange", js.undefined)
-    
     inline def setDefaultValueRatioUndefined: Self = StObject.set(x, "defaultValueRatio", js.undefined)
     
     inline def setDefaultValueReference(value: Reference): Self = StObject.set(x, "defaultValueReference", value.asInstanceOf[js.Any])
@@ -1527,10 +1487,6 @@ object ElementDefinition {
     inline def setFixedCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "fixedCodeableConcept", value.asInstanceOf[js.Any])
     
     inline def setFixedCodeableConceptUndefined: Self = StObject.set(x, "fixedCodeableConcept", js.undefined)
-    
-    inline def setFixedCodeableReference(value: CodeableReference): Self = StObject.set(x, "fixedCodeableReference", value.asInstanceOf[js.Any])
-    
-    inline def setFixedCodeableReferenceUndefined: Self = StObject.set(x, "fixedCodeableReference", js.undefined)
     
     inline def setFixedCoding(value: Coding): Self = StObject.set(x, "fixedCoding", value.asInstanceOf[js.Any])
     
@@ -1641,10 +1597,6 @@ object ElementDefinition {
     inline def setFixedRangeUndefined: Self = StObject.set(x, "fixedRange", js.undefined)
     
     inline def setFixedRatio(value: Ratio): Self = StObject.set(x, "fixedRatio", value.asInstanceOf[js.Any])
-    
-    inline def setFixedRatioRange(value: RatioRange): Self = StObject.set(x, "fixedRatioRange", value.asInstanceOf[js.Any])
-    
-    inline def setFixedRatioRangeUndefined: Self = StObject.set(x, "fixedRatioRange", js.undefined)
     
     inline def setFixedRatioUndefined: Self = StObject.set(x, "fixedRatio", js.undefined)
     
@@ -1856,10 +1808,6 @@ object ElementDefinition {
     
     inline def setPatternCodeableConceptUndefined: Self = StObject.set(x, "patternCodeableConcept", js.undefined)
     
-    inline def setPatternCodeableReference(value: CodeableReference): Self = StObject.set(x, "patternCodeableReference", value.asInstanceOf[js.Any])
-    
-    inline def setPatternCodeableReferenceUndefined: Self = StObject.set(x, "patternCodeableReference", js.undefined)
-    
     inline def setPatternCoding(value: Coding): Self = StObject.set(x, "patternCoding", value.asInstanceOf[js.Any])
     
     inline def setPatternCodingUndefined: Self = StObject.set(x, "patternCoding", js.undefined)
@@ -1969,10 +1917,6 @@ object ElementDefinition {
     inline def setPatternRangeUndefined: Self = StObject.set(x, "patternRange", js.undefined)
     
     inline def setPatternRatio(value: Ratio): Self = StObject.set(x, "patternRatio", value.asInstanceOf[js.Any])
-    
-    inline def setPatternRatioRange(value: RatioRange): Self = StObject.set(x, "patternRatioRange", value.asInstanceOf[js.Any])
-    
-    inline def setPatternRatioRangeUndefined: Self = StObject.set(x, "patternRatioRange", js.undefined)
     
     inline def setPatternRatioUndefined: Self = StObject.set(x, "patternRatio", js.undefined)
     

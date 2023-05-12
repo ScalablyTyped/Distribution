@@ -275,6 +275,7 @@ object bignumberJsMod {
       *
       * @param object The configuration object.
       */
+    inline def config(): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[Config]
     inline def config(`object`: Config): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(`object`.asInstanceOf[js.Any]).asInstanceOf[Config]
     
     /**
@@ -436,6 +437,7 @@ object bignumberJsMod {
       *
       * @param object The configuration object.
       */
+    inline def set(): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("set")().asInstanceOf[Config]
     inline def set(`object`: Config): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any]).asInstanceOf[Config]
     
     /**

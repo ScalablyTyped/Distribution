@@ -2,6 +2,7 @@ package typings.electron
 
 import typings.electron.Electron.Accelerator
 import typings.electron.Electron.AutoResizeOptions
+import typings.electron.Electron.ForkOptions
 import typings.electron.Electron.FromPartitionOptions
 import typings.electron.Electron.Main.App
 import typings.electron.Electron.Main.AutoUpdater
@@ -33,6 +34,7 @@ import typings.electron.Electron.TouchBarScrubber
 import typings.electron.Electron.TouchBarSegmentedControl
 import typings.electron.Electron.TouchBarSlider
 import typings.electron.Electron.TouchBarSpacer
+import typings.electron.Electron.UtilityProcess_
 import typings.electron.Electron.WebContents_
 import typings.electron.Electron.WebFrameMain_
 import typings.electron.electronStrings.checkbox
@@ -397,6 +399,25 @@ object mainMod {
   @js.native
   val systemPreferences: SystemPreferences = js.native
   
+  /* was `typeof UtilityProcess` */
+  @JSImport("electron/main", "utilityProcess")
+  @js.native
+  open class utilityProcess () extends UtilityProcess_
+  /* was `typeof UtilityProcess` */
+  object utilityProcess {
+    
+    @JSImport("electron/main", "utilityProcess")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    // Docs: https://electronjs.org/docs/api/utility-process
+    /* static member */
+    inline def fork(modulePath: String): UtilityProcess_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fork")(modulePath.asInstanceOf[js.Any]).asInstanceOf[UtilityProcess_]
+    inline def fork(modulePath: String, args: js.Array[String]): UtilityProcess_ = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(modulePath.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[UtilityProcess_]
+    inline def fork(modulePath: String, args: js.Array[String], options: ForkOptions): UtilityProcess_ = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(modulePath.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[UtilityProcess_]
+    inline def fork(modulePath: String, args: Unit, options: ForkOptions): UtilityProcess_ = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(modulePath.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[UtilityProcess_]
+  }
+  
   /* was `typeof WebContents` */
   @JSImport("electron/main", "webContents")
   @js.native
@@ -410,28 +431,28 @@ object mainMod {
     
     // Docs: https://electronjs.org/docs/api/web-contents
     /**
-      * | undefined - A WebContents instance with the given TargetID, or `undefined` if
-      * there is no WebContents associated with the given TargetID.
+      * A WebContents instance with the given TargetID, or `undefined` if there is no
+      * WebContents associated with the given TargetID.
       *
       * When communicating with the Chrome DevTools Protocol, it can be useful to lookup
       * a WebContents instance based on its assigned TargetID.
       */
     /* static member */
-    inline def fromDevToolsTargetId(targetId: String): WebContents_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDevToolsTargetId")(targetId.asInstanceOf[js.Any]).asInstanceOf[WebContents_]
+    inline def fromDevToolsTargetId(targetId: String): js.UndefOr[WebContents_] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDevToolsTargetId")(targetId.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[WebContents_]]
     
     /**
-      * | undefined - A WebContents instance with the given WebFrameMain, or `undefined`
-      * if there is no WebContents associated with the given WebFrameMain.
+      * A WebContents instance with the given WebFrameMain, or `undefined` if there is
+      * no WebContents associated with the given WebFrameMain.
       */
     /* static member */
-    inline def fromFrame(frame: WebFrameMain_): WebContents_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFrame")(frame.asInstanceOf[js.Any]).asInstanceOf[WebContents_]
+    inline def fromFrame(frame: WebFrameMain_): js.UndefOr[WebContents_] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFrame")(frame.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[WebContents_]]
     
     /**
-      * | undefined - A WebContents instance with the given ID, or `undefined` if there
-      * is no WebContents associated with the given ID.
+      * A WebContents instance with the given ID, or `undefined` if there is no
+      * WebContents associated with the given ID.
       */
     /* static member */
-    inline def fromId(id: Double): WebContents_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromId")(id.asInstanceOf[js.Any]).asInstanceOf[WebContents_]
+    inline def fromId(id: Double): js.UndefOr[WebContents_] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromId")(id.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[WebContents_]]
     
     /**
       * An array of all `WebContents` instances. This will contain web contents for all
@@ -441,11 +462,10 @@ object mainMod {
     inline def getAllWebContents(): js.Array[WebContents_] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllWebContents")().asInstanceOf[js.Array[WebContents_]]
     
     /**
-      * | null - The web contents that is focused in this application, otherwise returns
-      * `null`.
+      * The web contents that is focused in this application, otherwise returns `null`.
       */
     /* static member */
-    inline def getFocusedWebContents(): WebContents_ = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusedWebContents")().asInstanceOf[WebContents_]
+    inline def getFocusedWebContents(): WebContents_ | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusedWebContents")().asInstanceOf[WebContents_ | Null]
   }
   
   /* was `typeof WebFrameMain` */

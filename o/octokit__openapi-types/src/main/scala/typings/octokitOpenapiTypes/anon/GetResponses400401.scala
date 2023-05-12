@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetResponses400401 extends StObject {
   
   /**
-    * Lists the devcontainer.json files associated with a specified repository and the authenticated user. These files
+    * List devcontainer configurations in a repository for the authenticated user
+    * @description Lists the devcontainer.json files associated with a specified repository and the authenticated user. These files
     * specify launchpoint configurations for codespaces created within the repository.
     *
     * You must authenticate using an access token with the `codespace` scope to use this endpoint.

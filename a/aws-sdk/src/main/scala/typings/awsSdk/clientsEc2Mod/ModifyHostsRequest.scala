@@ -17,6 +17,11 @@ trait ModifyHostsRequest extends StObject {
   var HostIds: RequestHostIdList
   
   /**
+    * Indicates whether to enable or disable host maintenance for the Dedicated Host. For more information, see  Host maintenance in the Amazon EC2 User Guide.
+    */
+  var HostMaintenance: js.UndefOr[typings.awsSdk.clientsEc2Mod.HostMaintenance] = js.undefined
+  
+  /**
     * Indicates whether to enable or disable host recovery for the Dedicated Host. For more information, see  Host recovery in the Amazon EC2 User Guide.
     */
   var HostRecovery: js.UndefOr[typings.awsSdk.clientsEc2Mod.HostRecovery] = js.undefined
@@ -48,6 +53,10 @@ object ModifyHostsRequest {
     inline def setHostIds(value: RequestHostIdList): Self = StObject.set(x, "HostIds", value.asInstanceOf[js.Any])
     
     inline def setHostIdsVarargs(value: DedicatedHostId*): Self = StObject.set(x, "HostIds", js.Array(value*))
+    
+    inline def setHostMaintenance(value: HostMaintenance): Self = StObject.set(x, "HostMaintenance", value.asInstanceOf[js.Any])
+    
+    inline def setHostMaintenanceUndefined: Self = StObject.set(x, "HostMaintenance", js.undefined)
     
     inline def setHostRecovery(value: HostRecovery): Self = StObject.set(x, "HostRecovery", value.asInstanceOf[js.Any])
     

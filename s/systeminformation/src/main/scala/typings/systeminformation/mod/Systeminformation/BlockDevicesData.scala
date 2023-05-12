@@ -6,7 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BlockDevicesData extends StObject {
   
+  var device: js.UndefOr[String] = js.undefined
+  
   var fsType: String
+  
+  var group: js.UndefOr[String] = js.undefined
   
   var identifier: String
   
@@ -57,7 +61,15 @@ object BlockDevicesData {
   @scala.inline
   implicit open class MutableBuilder[Self <: BlockDevicesData] (val x: Self) extends AnyVal {
     
+    inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
+    
     inline def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
+    
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     

@@ -4,6 +4,7 @@ import typings.concurrently.anon.Hide
 import typings.concurrently.anon.Text
 import typings.concurrently.distSrcCommandMod.Command
 import typings.rxjs.mod.Subject
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,7 +57,7 @@ object distSrcLoggerMod {
       *
       * Each row is a single input item, and they are presented in the input order.
       */
-    def logTable(tableContents: js.Array[Any]): Unit = js.native
+    def logTable(tableContents: js.Array[Record[String, Any]]): Unit = js.native
     
     /**
       * Observable that emits when there's been output logged.

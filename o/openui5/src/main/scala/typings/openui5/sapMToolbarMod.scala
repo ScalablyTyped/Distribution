@@ -1,6 +1,6 @@
 package typings.openui5
 
-import typings.openui5.anon.`23`
+import typings.openui5.anon.`30`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.IBar
 import typings.openui5.sapMLibraryMod.ToolbarDesign
@@ -139,6 +139,8 @@ object sapMToolbarMod {
        with IBar {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets classes according to the context of the page. Possible contexts are header, footer and subheader.
       *
       * @returns `this` for chaining
@@ -146,6 +148,8 @@ object sapMToolbarMod {
     def _applyContextClassFor(): IBar = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets HTML tag according to the context of the page. Possible contexts are header, footer and subheader.
       *
       * @returns `this` for chaining
@@ -181,6 +185,8 @@ object sapMToolbarMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets classes and HTML tag according to the context of the page. Possible contexts are header, footer,
       * subheader
       *
@@ -283,6 +289,8 @@ object sapMToolbarMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:press press} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -291,7 +299,7 @@ object sapMToolbarMod {
     def firePress(/**
       * Parameters to pass along with the event
       */
-    mParameters: `23`): this.type = js.native
+    mParameters: `30`): this.type = js.native
     
     /**
       * Gets current value of property {@link #getActive active}.
@@ -365,6 +373,8 @@ object sapMToolbarMod {
     def getEnabled(): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Gets the HTML tag of the root domref
       *
       * @returns the HTML-tag
@@ -402,6 +412,7 @@ object sapMToolbarMod {
     
     /**
       * @SINCE 1.44
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Returns the first sap.m.Title control instance inside the toolbar for the accessibility
       *
@@ -411,6 +422,7 @@ object sapMToolbarMod {
     
     /**
       * @SINCE 1.28
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Returns the first sap.m.Title control id inside the toolbar for the accessibility
       *
@@ -460,6 +472,8 @@ object sapMToolbarMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns if the bar is sensitive to the container context. Implementation of the IBar interface
       *
       * @returns isContextSensitive
@@ -611,6 +625,8 @@ object sapMToolbarMod {
     bEnabled: Boolean): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets the HTML tag of the root domref
       *
       * @returns this for chaining

@@ -5,9 +5,10 @@ import typings.firebaseFirestore.distLiteFirestoreSrcCoreTargetMod.Target
 import typings.firebaseFirestore.distLiteFirestoreSrcCoreTypesMod.ListenSequenceNumber
 import typings.firebaseFirestore.distLiteFirestoreSrcCoreTypesMod.TargetId
 import typings.firebaseFirestore.distLiteFirestoreSrcUtilByteStringMod.ByteString
-import typings.firebaseFirestore.firebaseFirestoreInts.`0`
-import typings.firebaseFirestore.firebaseFirestoreInts.`1`
-import typings.firebaseFirestore.firebaseFirestoreInts.`2`
+import typings.firebaseFirestore.firebaseFirestoreStrings.TargetPurposeExistenceFilterMismatch
+import typings.firebaseFirestore.firebaseFirestoreStrings.TargetPurposeExistenceFilterMismatchBloom
+import typings.firebaseFirestore.firebaseFirestoreStrings.TargetPurposeLimboResolution
+import typings.firebaseFirestore.firebaseFirestoreStrings.TargetPurposeListen
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -217,6 +218,301 @@ object distLiteFirestoreSrcLocalTargetDataMod {
       */
     resumeToken: ByteString
     ) = this()
+    def this(
+      /** The target being listened to. */
+    target: Target,
+      /**
+      * The target ID to which the target corresponds; Assigned by the
+      * LocalStore for user listens and by the SyncEngine for limbo watches.
+      */
+    targetId: TargetId,
+      /** The purpose of the target. */
+    purpose: TargetPurpose,
+      /**
+      * The sequence number of the last transaction during which this target data
+      * was modified.
+      */
+    sequenceNumber: ListenSequenceNumber,
+      /** The latest snapshot version seen for this target. */
+    snapshotVersion: Unit,
+      /**
+      * The maximum snapshot version at which the associated view
+      * contained no limbo documents.
+      */
+    lastLimboFreeSnapshotVersion: Unit,
+      /**
+      * An opaque, server-assigned token that allows watching a target to be
+      * resumed after disconnecting without retransmitting all the data that
+      * matches the target. The resume token essentially identifies a point in
+      * time from which the server should resume sending results.
+      */
+    resumeToken: Unit,
+      /**
+      * The number of documents that last matched the query at the resume token or
+      * read time. Documents are counted only when making a listen request with
+      * resume token or read time, otherwise, keep it null.
+      */
+    expectedCount: Double
+    ) = this()
+    def this(
+      /** The target being listened to. */
+    target: Target,
+      /**
+      * The target ID to which the target corresponds; Assigned by the
+      * LocalStore for user listens and by the SyncEngine for limbo watches.
+      */
+    targetId: TargetId,
+      /** The purpose of the target. */
+    purpose: TargetPurpose,
+      /**
+      * The sequence number of the last transaction during which this target data
+      * was modified.
+      */
+    sequenceNumber: ListenSequenceNumber,
+      /** The latest snapshot version seen for this target. */
+    snapshotVersion: Unit,
+      /**
+      * The maximum snapshot version at which the associated view
+      * contained no limbo documents.
+      */
+    lastLimboFreeSnapshotVersion: Unit,
+      /**
+      * An opaque, server-assigned token that allows watching a target to be
+      * resumed after disconnecting without retransmitting all the data that
+      * matches the target. The resume token essentially identifies a point in
+      * time from which the server should resume sending results.
+      */
+    resumeToken: ByteString,
+      /**
+      * The number of documents that last matched the query at the resume token or
+      * read time. Documents are counted only when making a listen request with
+      * resume token or read time, otherwise, keep it null.
+      */
+    expectedCount: Double
+    ) = this()
+    def this(
+      /** The target being listened to. */
+    target: Target,
+      /**
+      * The target ID to which the target corresponds; Assigned by the
+      * LocalStore for user listens and by the SyncEngine for limbo watches.
+      */
+    targetId: TargetId,
+      /** The purpose of the target. */
+    purpose: TargetPurpose,
+      /**
+      * The sequence number of the last transaction during which this target data
+      * was modified.
+      */
+    sequenceNumber: ListenSequenceNumber,
+      /** The latest snapshot version seen for this target. */
+    snapshotVersion: Unit,
+      /**
+      * The maximum snapshot version at which the associated view
+      * contained no limbo documents.
+      */
+    lastLimboFreeSnapshotVersion: SnapshotVersion,
+      /**
+      * An opaque, server-assigned token that allows watching a target to be
+      * resumed after disconnecting without retransmitting all the data that
+      * matches the target. The resume token essentially identifies a point in
+      * time from which the server should resume sending results.
+      */
+    resumeToken: Unit,
+      /**
+      * The number of documents that last matched the query at the resume token or
+      * read time. Documents are counted only when making a listen request with
+      * resume token or read time, otherwise, keep it null.
+      */
+    expectedCount: Double
+    ) = this()
+    def this(
+      /** The target being listened to. */
+    target: Target,
+      /**
+      * The target ID to which the target corresponds; Assigned by the
+      * LocalStore for user listens and by the SyncEngine for limbo watches.
+      */
+    targetId: TargetId,
+      /** The purpose of the target. */
+    purpose: TargetPurpose,
+      /**
+      * The sequence number of the last transaction during which this target data
+      * was modified.
+      */
+    sequenceNumber: ListenSequenceNumber,
+      /** The latest snapshot version seen for this target. */
+    snapshotVersion: Unit,
+      /**
+      * The maximum snapshot version at which the associated view
+      * contained no limbo documents.
+      */
+    lastLimboFreeSnapshotVersion: SnapshotVersion,
+      /**
+      * An opaque, server-assigned token that allows watching a target to be
+      * resumed after disconnecting without retransmitting all the data that
+      * matches the target. The resume token essentially identifies a point in
+      * time from which the server should resume sending results.
+      */
+    resumeToken: ByteString,
+      /**
+      * The number of documents that last matched the query at the resume token or
+      * read time. Documents are counted only when making a listen request with
+      * resume token or read time, otherwise, keep it null.
+      */
+    expectedCount: Double
+    ) = this()
+    def this(
+      /** The target being listened to. */
+    target: Target,
+      /**
+      * The target ID to which the target corresponds; Assigned by the
+      * LocalStore for user listens and by the SyncEngine for limbo watches.
+      */
+    targetId: TargetId,
+      /** The purpose of the target. */
+    purpose: TargetPurpose,
+      /**
+      * The sequence number of the last transaction during which this target data
+      * was modified.
+      */
+    sequenceNumber: ListenSequenceNumber,
+      /** The latest snapshot version seen for this target. */
+    snapshotVersion: SnapshotVersion,
+      /**
+      * The maximum snapshot version at which the associated view
+      * contained no limbo documents.
+      */
+    lastLimboFreeSnapshotVersion: Unit,
+      /**
+      * An opaque, server-assigned token that allows watching a target to be
+      * resumed after disconnecting without retransmitting all the data that
+      * matches the target. The resume token essentially identifies a point in
+      * time from which the server should resume sending results.
+      */
+    resumeToken: Unit,
+      /**
+      * The number of documents that last matched the query at the resume token or
+      * read time. Documents are counted only when making a listen request with
+      * resume token or read time, otherwise, keep it null.
+      */
+    expectedCount: Double
+    ) = this()
+    def this(
+      /** The target being listened to. */
+    target: Target,
+      /**
+      * The target ID to which the target corresponds; Assigned by the
+      * LocalStore for user listens and by the SyncEngine for limbo watches.
+      */
+    targetId: TargetId,
+      /** The purpose of the target. */
+    purpose: TargetPurpose,
+      /**
+      * The sequence number of the last transaction during which this target data
+      * was modified.
+      */
+    sequenceNumber: ListenSequenceNumber,
+      /** The latest snapshot version seen for this target. */
+    snapshotVersion: SnapshotVersion,
+      /**
+      * The maximum snapshot version at which the associated view
+      * contained no limbo documents.
+      */
+    lastLimboFreeSnapshotVersion: Unit,
+      /**
+      * An opaque, server-assigned token that allows watching a target to be
+      * resumed after disconnecting without retransmitting all the data that
+      * matches the target. The resume token essentially identifies a point in
+      * time from which the server should resume sending results.
+      */
+    resumeToken: ByteString,
+      /**
+      * The number of documents that last matched the query at the resume token or
+      * read time. Documents are counted only when making a listen request with
+      * resume token or read time, otherwise, keep it null.
+      */
+    expectedCount: Double
+    ) = this()
+    def this(
+      /** The target being listened to. */
+    target: Target,
+      /**
+      * The target ID to which the target corresponds; Assigned by the
+      * LocalStore for user listens and by the SyncEngine for limbo watches.
+      */
+    targetId: TargetId,
+      /** The purpose of the target. */
+    purpose: TargetPurpose,
+      /**
+      * The sequence number of the last transaction during which this target data
+      * was modified.
+      */
+    sequenceNumber: ListenSequenceNumber,
+      /** The latest snapshot version seen for this target. */
+    snapshotVersion: SnapshotVersion,
+      /**
+      * The maximum snapshot version at which the associated view
+      * contained no limbo documents.
+      */
+    lastLimboFreeSnapshotVersion: SnapshotVersion,
+      /**
+      * An opaque, server-assigned token that allows watching a target to be
+      * resumed after disconnecting without retransmitting all the data that
+      * matches the target. The resume token essentially identifies a point in
+      * time from which the server should resume sending results.
+      */
+    resumeToken: Unit,
+      /**
+      * The number of documents that last matched the query at the resume token or
+      * read time. Documents are counted only when making a listen request with
+      * resume token or read time, otherwise, keep it null.
+      */
+    expectedCount: Double
+    ) = this()
+    def this(
+      /** The target being listened to. */
+    target: Target,
+      /**
+      * The target ID to which the target corresponds; Assigned by the
+      * LocalStore for user listens and by the SyncEngine for limbo watches.
+      */
+    targetId: TargetId,
+      /** The purpose of the target. */
+    purpose: TargetPurpose,
+      /**
+      * The sequence number of the last transaction during which this target data
+      * was modified.
+      */
+    sequenceNumber: ListenSequenceNumber,
+      /** The latest snapshot version seen for this target. */
+    snapshotVersion: SnapshotVersion,
+      /**
+      * The maximum snapshot version at which the associated view
+      * contained no limbo documents.
+      */
+    lastLimboFreeSnapshotVersion: SnapshotVersion,
+      /**
+      * An opaque, server-assigned token that allows watching a target to be
+      * resumed after disconnecting without retransmitting all the data that
+      * matches the target. The resume token essentially identifies a point in
+      * time from which the server should resume sending results.
+      */
+    resumeToken: ByteString,
+      /**
+      * The number of documents that last matched the query at the resume token or
+      * read time. Documents are counted only when making a listen request with
+      * resume token or read time, otherwise, keep it null.
+      */
+    expectedCount: Double
+    ) = this()
+    
+    /**
+      * The number of documents that last matched the query at the resume token or
+      * read time. Documents are counted only when making a listen request with
+      * resume token or read time, otherwise, keep it null.
+      */
+    val expectedCount: Double | Null = js.native
     
     /**
       * The maximum snapshot version at which the associated view
@@ -254,6 +550,11 @@ object distLiteFirestoreSrcLocalTargetDataMod {
     val targetId: TargetId = js.native
     
     /**
+      * Creates a new target data instance with an updated expected count.
+      */
+    def withExpectedCount(expectedCount: Double): TargetData = js.native
+    
+    /**
       * Creates a new target data instance with an updated last limbo free
       * snapshot version number.
       */
@@ -270,22 +571,30 @@ object distLiteFirestoreSrcLocalTargetDataMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.firebaseFirestore.firebaseFirestoreInts.`0`
-    - typings.firebaseFirestore.firebaseFirestoreInts.`1`
-    - typings.firebaseFirestore.firebaseFirestoreInts.`2`
+    - typings.firebaseFirestore.firebaseFirestoreStrings.TargetPurposeListen
+    - typings.firebaseFirestore.firebaseFirestoreStrings.TargetPurposeExistenceFilterMismatch
+    - typings.firebaseFirestore.firebaseFirestoreStrings.TargetPurposeExistenceFilterMismatchBloom
+    - typings.firebaseFirestore.firebaseFirestoreStrings.TargetPurposeLimboResolution
   */
   trait TargetPurpose extends StObject
   object TargetPurpose {
     
     /**
-      * The query target was used to refill a query after an existence filter mismatch.
+      * The query target was used to refill a query after an existence filter
+      * mismatch.
       */
-    inline def ExistenceFilterMismatch: `1` = 1.asInstanceOf[`1`]
+    inline def ExistenceFilterMismatch: TargetPurposeExistenceFilterMismatch = "TargetPurposeExistenceFilterMismatch".asInstanceOf[TargetPurposeExistenceFilterMismatch]
+    
+    /**
+      * The query target was used if the query is the result of a false positive in
+      * the bloom filter.
+      */
+    inline def ExistenceFilterMismatchBloom: TargetPurposeExistenceFilterMismatchBloom = "TargetPurposeExistenceFilterMismatchBloom".asInstanceOf[TargetPurposeExistenceFilterMismatchBloom]
     
     /** The query target was used to resolve a limbo document. */
-    inline def LimboResolution: `2` = 2.asInstanceOf[`2`]
+    inline def LimboResolution: TargetPurposeLimboResolution = "TargetPurposeLimboResolution".asInstanceOf[TargetPurposeLimboResolution]
     
     /** A regular, normal query target. */
-    inline def Listen: `0` = 0.asInstanceOf[`0`]
+    inline def Listen: TargetPurposeListen = "TargetPurposeListen".asInstanceOf[TargetPurposeListen]
   }
 }

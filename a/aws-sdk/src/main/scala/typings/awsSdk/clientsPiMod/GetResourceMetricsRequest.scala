@@ -32,6 +32,11 @@ trait GetResourceMetricsRequest extends StObject {
   var NextToken: js.UndefOr[typings.awsSdk.clientsPiMod.NextToken] = js.undefined
   
   /**
+    * The returned timestamp which is the start or end time of the time periods. The default value is END_TIME.
+    */
+  var PeriodAlignment: js.UndefOr[typings.awsSdk.clientsPiMod.PeriodAlignment] = js.undefined
+  
+  /**
     * The granularity, in seconds, of the data points returned from Performance Insights. A period can be as short as one second, or as long as one day (86400 seconds). Valid values are:    1 (one second)    60 (one minute)    300 (five minutes)    3600 (one hour)    86400 (twenty-four hours)   If you don't specify PeriodInSeconds, then Performance Insights will choose a value for you, with a goal of returning roughly 100-200 data points in the response.
     */
   var PeriodInSeconds: js.UndefOr[Integer] = js.undefined
@@ -77,6 +82,10 @@ object GetResourceMetricsRequest {
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    
+    inline def setPeriodAlignment(value: PeriodAlignment): Self = StObject.set(x, "PeriodAlignment", value.asInstanceOf[js.Any])
+    
+    inline def setPeriodAlignmentUndefined: Self = StObject.set(x, "PeriodAlignment", js.undefined)
     
     inline def setPeriodInSeconds(value: Integer): Self = StObject.set(x, "PeriodInSeconds", value.asInstanceOf[js.Any])
     

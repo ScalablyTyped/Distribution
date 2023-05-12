@@ -71,7 +71,15 @@ object buildSrcServerMod {
     
     /* private */ var http2ServerList: Any = js.native
     
+    /* private */ val keepaliveTimeMs: Any = js.native
+    
+    /* private */ val keepaliveTimeoutMs: Any = js.native
+    
     /* private */ var listenerChildrenTracker: Any = js.native
+    
+    /* private */ val maxConnectionAgeGraceMs: Any = js.native
+    
+    /* private */ val maxConnectionAgeMs: Any = js.native
     
     /* private */ var options: Any = js.native
     

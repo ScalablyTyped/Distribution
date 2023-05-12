@@ -45,8 +45,10 @@ object resetMod {
     /**
       * Look up a refs's commit.
       */
-    inline def reset(repo: Repository, target: Commit, resetType: Double, checkoutOpts: CheckoutOptions): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("reset")(repo.asInstanceOf[js.Any], target.asInstanceOf[js.Any], resetType.asInstanceOf[js.Any], checkoutOpts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
-    inline def reset(repo: Repository, target: Tag, resetType: Double, checkoutOpts: CheckoutOptions): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("reset")(repo.asInstanceOf[js.Any], target.asInstanceOf[js.Any], resetType.asInstanceOf[js.Any], checkoutOpts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    inline def reset(repo: Repository, target: Commit, resetType: TYPE): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reset")(repo.asInstanceOf[js.Any], target.asInstanceOf[js.Any], resetType.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def reset(repo: Repository, target: Commit, resetType: TYPE, checkoutOpts: CheckoutOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reset")(repo.asInstanceOf[js.Any], target.asInstanceOf[js.Any], resetType.asInstanceOf[js.Any], checkoutOpts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def reset(repo: Repository, target: Tag, resetType: TYPE): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reset")(repo.asInstanceOf[js.Any], target.asInstanceOf[js.Any], resetType.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def reset(repo: Repository, target: Tag, resetType: TYPE, checkoutOpts: CheckoutOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reset")(repo.asInstanceOf[js.Any], target.asInstanceOf[js.Any], resetType.asInstanceOf[js.Any], checkoutOpts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitInts.`1`

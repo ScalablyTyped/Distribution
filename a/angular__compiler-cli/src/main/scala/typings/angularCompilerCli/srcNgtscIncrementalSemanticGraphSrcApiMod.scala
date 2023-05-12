@@ -1,8 +1,8 @@
 package typings.angularCompilerCli
 
+import typings.angularCompilerCli.anon.ClassDeclarationDeclarati
+import typings.angularCompilerCli.anon.ClassDeclarationDeclaratiGetEnd
 import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.AbsoluteFsPath
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,12 +16,12 @@ object srcNgtscIncrementalSemanticGraphSrcApiMod {
     def this(/**
       * The declaration for this symbol.
       */
-    decl: ClassDeclaration[DeclarationNode]) = this()
+    decl: ClassDeclarationDeclaratiGetEnd) = this()
     
     /**
       * The declaration for this symbol.
       */
-    val decl: ClassDeclaration[DeclarationNode] = js.native
+    val decl: ClassDeclarationDeclarati = js.native
     
     /**
       * The identifier of this symbol, or null if no identifier could be determined. It should

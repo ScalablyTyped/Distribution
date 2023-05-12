@@ -1,5 +1,6 @@
 package typings.katex
 
+import org.scalablytyped.runtime.Instantiable3
 import typings.katex.katexStrings.html
 import typings.katex.katexStrings.htmlAndMathml
 import typings.katex.katexStrings.mathml
@@ -22,6 +23,19 @@ object mod {
     @JSImport("katex", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
+    
+    /**
+      * KaTeX error, usually during parsing.
+      */
+    @JSImport("katex", "default.ParseError")
+    @js.native
+    def ParseError: Instantiable3[
+        /* message */ String, 
+        /* lexer */ Any, 
+        /* position */ Double, 
+        typings.katex.mod.ParseError
+      ] = js.native
+    inline def ParseError_=(x: Instantiable3[/* message */ String, /* lexer */ Any, /* position */ Double, ParseError]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ParseError")(x.asInstanceOf[js.Any])
     
     /**
       * Renders a TeX expression into the specified DOM element

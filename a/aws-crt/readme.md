@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-crt
 
-Typings are for version 1.14.7
+Typings are for version 1.15.16
 
 ## Library description:
 NodeJS/browser bindings to the aws-c-* libraries

@@ -14,9 +14,9 @@ object libUtilCheckListItemIndentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def checkListItemIndent(context: Context): Exclude[js.UndefOr[tab | one | mixed], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkListItemIndent")(context.asInstanceOf[js.Any]).asInstanceOf[Exclude[js.UndefOr[tab | one | mixed], Unit]]
-  
-  type Context = typings.mdastUtilToMarkdown.libTypesMod.Context
+  inline def checkListItemIndent(state: State): Exclude[js.UndefOr[tab | one | mixed | Null], js.UndefOr[Null]] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkListItemIndent")(state.asInstanceOf[js.Any]).asInstanceOf[Exclude[js.UndefOr[tab | one | mixed | Null], js.UndefOr[Null]]]
   
   type Options = typings.mdastUtilToMarkdown.libTypesMod.Options
+  
+  type State = typings.mdastUtilToMarkdown.libTypesMod.State
 }

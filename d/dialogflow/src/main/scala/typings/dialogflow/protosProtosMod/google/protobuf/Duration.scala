@@ -1,7 +1,6 @@
 package typings.dialogflow.protosProtosMod.google.protobuf
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.long.mod.^
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
@@ -27,7 +26,7 @@ open class Duration ()
   
   /** Duration seconds. */
   @JSName("seconds")
-  var seconds_Duration: Double | ^ | String = js.native
+  var seconds_Duration: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ scala.Any) | String = js.native
   
   /**
     * Converts this Duration to JSON.

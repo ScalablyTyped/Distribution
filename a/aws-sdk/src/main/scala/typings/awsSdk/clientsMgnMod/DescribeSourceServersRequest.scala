@@ -14,7 +14,7 @@ trait DescribeSourceServersRequest extends StObject {
   /**
     * Request to filter Source Servers list by maximum results.
     */
-  var maxResults: js.UndefOr[StrictlyPositiveInteger] = js.undefined
+  var maxResults: js.UndefOr[MaxResultsType] = js.undefined
   
   /**
     * Request to filter Source Servers list by next token.
@@ -35,7 +35,7 @@ object DescribeSourceServersRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setMaxResults(value: StrictlyPositiveInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResultsType): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     

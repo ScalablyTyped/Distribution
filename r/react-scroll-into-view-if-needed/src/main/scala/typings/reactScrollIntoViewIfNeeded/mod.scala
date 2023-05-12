@@ -24,7 +24,7 @@ object mod {
     var active: js.UndefOr[Boolean] = js.undefined
     
     var elementType: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.reactScrollIntoViewIfNeeded.reactScrollIntoViewIfNeededStrings.a, typings.reactScrollIntoViewIfNeeded.reactScrollIntoViewIfNeededStrings.abbr, typings.reactScrollIntoViewIfNeeded.reactScrollIntoViewIfNeededStrings.address */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.reactScrollIntoViewIfNeeded.reactScrollIntoViewIfNeededStrings.a, typings.reactScrollIntoViewIfNeeded.reactScrollIntoViewIfNeededStrings.abbr, typings.reactScrollIntoViewIfNeeded.reactScrollIntoViewIfNeededStrings.address */ Any
       ] = js.undefined
     
     var options: js.UndefOr[Options[Any]] = js.undefined
@@ -44,7 +44,7 @@ object mod {
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
       inline def setElementType(
-        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.reactScrollIntoViewIfNeeded.reactScrollIntoViewIfNeededStrings.a, typings.reactScrollIntoViewIfNeeded.reactScrollIntoViewIfNeededStrings.abbr, typings.reactScrollIntoViewIfNeeded.reactScrollIntoViewIfNeededStrings.address */ Any
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.reactScrollIntoViewIfNeeded.reactScrollIntoViewIfNeededStrings.a, typings.reactScrollIntoViewIfNeeded.reactScrollIntoViewIfNeededStrings.abbr, typings.reactScrollIntoViewIfNeeded.reactScrollIntoViewIfNeededStrings.address */ Any
       ): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
       
       inline def setElementTypeUndefined: Self = StObject.set(x, "elementType", js.undefined)

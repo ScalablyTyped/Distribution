@@ -25,8 +25,14 @@ object distTypesCommandsDeleteIdentityPoolCommandMod {
           Any, 
           Any
         ] {
+    /**
+      * @public
+      */
     def this(input: DeleteIdentityPoolCommandInput) = this()
     
+    /**
+      * @internal
+      */
     /* private */ var deserialize: Any = js.native
     
     /**
@@ -42,6 +48,9 @@ object distTypesCommandsDeleteIdentityPoolCommandMod {
       options: HttpHandlerOptions
     ): Handler[DeleteIdentityPoolCommandInput, DeleteIdentityPoolCommandOutput] = js.native
     
+    /**
+      * @internal
+      */
     /* private */ var serialize: Any = js.native
   }
   /* static members */

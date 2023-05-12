@@ -4,10 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined i18next.i18next.MergeBy<{  detection :object | undefined,   backend :object | undefined,   cache :object | undefined,   i18nFormat :object | undefined}, i18next.i18next.CustomPluginOptions> */
-trait PluginOptions extends StObject {
+/* Inlined i18next.i18next.MergeBy<{  detection :object | undefined,   backend :T | undefined,   cache :object | undefined,   i18nFormat :object | undefined}, i18next.i18next.CustomPluginOptions> */
+trait PluginOptions[T] extends StObject {
   
-  var backend: js.UndefOr[js.Object] = js.undefined
+  var backend: js.UndefOr[T] = js.undefined
   
   var cache: js.UndefOr[js.Object] = js.undefined
   
@@ -17,15 +17,15 @@ trait PluginOptions extends StObject {
 }
 object PluginOptions {
   
-  inline def apply(): PluginOptions = {
+  inline def apply[T](): PluginOptions[T] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[PluginOptions]
+    __obj.asInstanceOf[PluginOptions[T]]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: PluginOptions] (val x: Self) extends AnyVal {
+  implicit open class MutableBuilder[Self <: PluginOptions[?], T] (val x: Self & PluginOptions[T]) extends AnyVal {
     
-    inline def setBackend(value: js.Object): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+    inline def setBackend(value: T): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     
     inline def setBackendUndefined: Self = StObject.set(x, "backend", js.undefined)
     

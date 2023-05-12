@@ -1,6 +1,7 @@
 package typings.jestReporters
 
 import typings.jestReporters.anon.Basename
+import typings.jestReporters.anon.Silent
 import typings.jestTestResult.anon.Added
 import typings.jestTestResult.mod.AggregatedResult
 import typings.jestTestResult.mod.AssertionResult
@@ -157,12 +158,40 @@ object mod {
   
   @JSImport("@jest/reporters", "GitHubActionsReporter")
   @js.native
-  open class GitHubActionsReporter () extends BaseReporter {
+  open class GitHubActionsReporter protected () extends BaseReporter {
+    def this(_globalConfig: GlobalConfig) = this()
+    def this(_globalConfig: GlobalConfig, reporterOptions: Silent) = this()
     
-    @JSName("onTestFileResult")
-    def onTestFileResult_MGitHubActionsReporter(param0: Test, param1: TestResult): Unit = js.native
+    /* private */ var arrayChild: Any = js.native
+    
+    /* private */ var arrayEqual: Any = js.native
+    
+    /* private */ var endGroup: Any = js.native
+    
+    /* private */ var generateAnnotations: Any = js.native
+    
+    /* private */ var getResultChildren: Any = js.native
+    
+    /* private */ var getResultTree: Any = js.native
+    
+    /* private */ var isLastTestSuite: Any = js.native
+    
+    @JSName("onTestResult")
+    def onTestResult_MGitHubActionsReporter(test: Test, testResult: TestResult, aggregatedResults: AggregatedResult): Unit = js.native
+    
+    /* private */ val options: Any = js.native
+    
+    /* private */ var printFailedTestLogs: Any = js.native
+    
+    /* private */ var printFullResult: Any = js.native
+    
+    /* private */ var printResultTree: Any = js.native
     
     /* private */ var `private`: Any = js.native
+    
+    /* private */ var recursivePrintResultTree: Any = js.native
+    
+    /* private */ var startGroup: Any = js.native
   }
   /* static members */
   object GitHubActionsReporter {
@@ -195,6 +224,7 @@ object mod {
   @js.native
   open class SummaryReporter protected () extends BaseReporter {
     def this(globalConfig: GlobalConfig) = this()
+    def this(globalConfig: GlobalConfig, options: SummaryReporterOptions) = this()
     
     /* private */ var _estimatedTime: Any = js.native
     
@@ -205,6 +235,10 @@ object mod {
     /* private */ var _printSnapshotSummary: Any = js.native
     
     /* private */ var _printSummary: Any = js.native
+    
+    /* private */ val _summaryThreshold: Any = js.native
+    
+    /* private */ var _validateOptions: Any = js.native
     
     /* private */ var _write: Any = js.native
   }
@@ -553,6 +587,26 @@ object mod {
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    }
+  }
+  
+  trait SummaryReporterOptions extends StObject {
+    
+    var summaryThreshold: js.UndefOr[Double] = js.undefined
+  }
+  object SummaryReporterOptions {
+    
+    inline def apply(): SummaryReporterOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SummaryReporterOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SummaryReporterOptions] (val x: Self) extends AnyVal {
+      
+      inline def setSummaryThreshold(value: Double): Self = StObject.set(x, "summaryThreshold", value.asInstanceOf[js.Any])
+      
+      inline def setSummaryThresholdUndefined: Self = StObject.set(x, "summaryThreshold", js.undefined)
     }
   }
 }

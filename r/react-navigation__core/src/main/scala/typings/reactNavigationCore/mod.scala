@@ -25,6 +25,7 @@ import typings.reactNavigationCore.libTypescriptSrcTypesMod.NavigationProp
 import typings.reactNavigationCore.libTypescriptSrcTypesMod.RouteProp
 import typings.reactNavigationCore.libTypescriptSrcTypesMod.TypedNavigator
 import typings.reactNavigationCore.libTypescriptSrcUseFocusEffectMod.EffectCallback
+import typings.reactNavigationCore.libTypescriptSrcUseNavigationBuilderMod.NavigationBuilderOptions
 import typings.reactNavigationCore.libTypescriptSrcUseNavigationStateMod.Selector
 import typings.reactNavigationCore.reactNavigationCoreStrings.key
 import typings.reactNavigationRouters.anon.Merge
@@ -259,7 +260,7 @@ object mod {
   
   inline def useNavigationBuilder[State /* <: NavigationState[ParamListBase] */, RouterOptions /* <: DefaultRouterOptions[String] */, ActionHelpers /* <: Record[String, js.Function0[Unit]] */, ScreenOptions /* <: js.Object */, EventMap /* <: Record[String, Any] */](
     createRouter: RouterFactory[State, Any, RouterOptions],
-    options: (DefaultNavigatorOptions[ParamListBase, State, ScreenOptions, EventMap]) & RouterOptions
+    options: (DefaultNavigatorOptions[ParamListBase, State, ScreenOptions, EventMap]) & NavigationBuilderOptions[ScreenOptions] & RouterOptions
   ): Descriptors[State, EventMap, ActionHelpers, ScreenOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("useNavigationBuilder")(createRouter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Descriptors[State, EventMap, ActionHelpers, ScreenOptions]]
   
   inline def useNavigationContainerRef[ParamList /* <: js.Object */](): NavigationContainerRefWithCurrent[ParamList] = ^.asInstanceOf[js.Dynamic].applyDynamic("useNavigationContainerRef")().asInstanceOf[NavigationContainerRefWithCurrent[ParamList]]

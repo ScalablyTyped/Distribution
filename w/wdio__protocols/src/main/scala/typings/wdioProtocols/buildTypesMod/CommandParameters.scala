@@ -10,14 +10,14 @@ trait CommandParameters extends StObject {
   
   var name: String
   
-  var required: Boolean
+  var required: js.UndefOr[Boolean] = js.undefined
   
   var `type`: String
 }
 object CommandParameters {
   
-  inline def apply(description: String, name: String, required: Boolean, `type`: String): CommandParameters = {
-    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any])
+  inline def apply(description: String, name: String, `type`: String): CommandParameters = {
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandParameters]
   }
@@ -30,6 +30,8 @@ object CommandParameters {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    
+    inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

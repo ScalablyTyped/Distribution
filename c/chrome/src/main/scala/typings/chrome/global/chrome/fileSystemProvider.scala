@@ -3,9 +3,11 @@ package typings.chrome.global.chrome
 import typings.chrome.chrome.fileSystemProvider.DirectoryPathRecursiveRequestedEvent
 import typings.chrome.chrome.fileSystemProvider.DirectoryPathRequestedEvent
 import typings.chrome.chrome.fileSystemProvider.EntryPathRecursiveRequestedEvent
+import typings.chrome.chrome.fileSystemProvider.ExecuteActionRequested
 import typings.chrome.chrome.fileSystemProvider.FilePathLengthRequestedEvent
 import typings.chrome.chrome.fileSystemProvider.FilePathRequestedEvent
 import typings.chrome.chrome.fileSystemProvider.FileSystemInfo
+import typings.chrome.chrome.fileSystemProvider.GetActionsRequested
 import typings.chrome.chrome.fileSystemProvider.MetadataRequestedEvent
 import typings.chrome.chrome.fileSystemProvider.MountOptions
 import typings.chrome.chrome.fileSystemProvider.NotificationOptions
@@ -85,6 +87,16 @@ object fileSystemProvider {
   @js.native
   def onDeleteEntryRequested: EntryPathRecursiveRequestedEvent = js.native
   inline def onDeleteEntryRequested_=(x: EntryPathRecursiveRequestedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onDeleteEntryRequested")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("chrome.fileSystemProvider.onExecuteActionRequested")
+  @js.native
+  def onExecuteActionRequested: ExecuteActionRequested = js.native
+  inline def onExecuteActionRequested_=(x: ExecuteActionRequested): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onExecuteActionRequested")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("chrome.fileSystemProvider.onGetActionsRequested")
+  @js.native
+  def onGetActionsRequested: GetActionsRequested = js.native
+  inline def onGetActionsRequested_=(x: GetActionsRequested): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onGetActionsRequested")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.fileSystemProvider.onGetMetadataRequested")
   @js.native

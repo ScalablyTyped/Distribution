@@ -15,14 +15,14 @@ object distEsmContainerTreeContainerBaseTreeIteratorMod {
   trait TreeIterator[K, V]
     extends ContainerIterator[K | (js.Tuple2[K, V])] {
     
-    def equals(obj: TreeIterator[K, V]): Boolean = js.native
+    @JSName("container")
+    val container_TreeIterator: typings.jsSdsl.distEsmContainerTreeContainerBaseMod.default[K, V] = js.native
     
     /**
       * @description Get the sequential index of the iterator in the tree container.<br/>
-      *              <strong>
-      *                Note:
-      *              </strong>
+      *              <strong>Note:</strong>
       *              This function only takes effect when the specified tree container `enableIndex = true`.
+      * @returns The index subscript of the node in the tree.
       * @example
       * const st = new OrderedSet([1, 2, 3], true);
       * console.log(st.begin().next().index);  // 1

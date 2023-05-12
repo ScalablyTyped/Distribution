@@ -1,5 +1,6 @@
 package typings.openui5
 
+import typings.openui5.anon.CloneBindings
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMViewSettingsItemMod.ViewSettingsItemSettings
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -131,9 +132,9 @@ object sapMViewSettingsCustomItemMod {
       */
     aLocalIds: js.Array[String],
       /**
-      * configuration object
+      * configuration object {@link https://openui5.hana.ondemand.com/api/sap.ui.base.ManagedObject#methods/clone}
       */
-    oOptions: js.Object
+    oOptions: CloneBindings
     ): this.type = js.native
     def clone(
       /**
@@ -145,9 +146,9 @@ object sapMViewSettingsCustomItemMod {
       */
     aLocalIds: Unit,
       /**
-      * configuration object
+      * configuration object {@link https://openui5.hana.ondemand.com/api/sap.ui.base.ManagedObject#methods/clone}
       */
-    oOptions: js.Object
+    oOptions: CloneBindings
     ): this.type = js.native
     def clone(
       /**
@@ -159,9 +160,9 @@ object sapMViewSettingsCustomItemMod {
       */
     aLocalIds: js.Array[String],
       /**
-      * configuration object
+      * configuration object {@link https://openui5.hana.ondemand.com/api/sap.ui.base.ManagedObject#methods/clone}
       */
-    oOptions: js.Object
+    oOptions: CloneBindings
     ): this.type = js.native
     def clone(
       /**
@@ -173,9 +174,9 @@ object sapMViewSettingsCustomItemMod {
       */
     aLocalIds: Unit,
       /**
-      * configuration object
+      * configuration object {@link https://openui5.hana.ondemand.com/api/sap.ui.base.ManagedObject#methods/clone}
       */
-    oOptions: js.Object
+    oOptions: CloneBindings
     ): this.type = js.native
     
     /**
@@ -209,7 +210,7 @@ object sapMViewSettingsCustomItemMod {
       * Internally the control is handled as a managed object instead of an aggregation as this control is sometimes
       * aggregated in other controls like a popover or a dialog.
       *
-      * @returns this pointer for chaining
+      * @returns Reference to `this` for method chaining
       */
     def setCustomControl(
       /**
@@ -221,7 +222,7 @@ object sapMViewSettingsCustomItemMod {
     /**
       * Sets the filterCount without invalidating the control as it is never rendered directly.
       *
-      * @returns this pointer for chaining
+      * @returns Reference to `this` for method chaining
       */
     def setFilterCount(/**
       * The new value for property filterCount

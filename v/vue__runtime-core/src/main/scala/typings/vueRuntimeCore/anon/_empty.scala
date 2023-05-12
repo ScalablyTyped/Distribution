@@ -1,22 +1,26 @@
 package typings.vueRuntimeCore.anon
 
+import typings.std.NonNullable
+import typings.std.Record
 import typings.vueRuntimeCore.mod.ComponentOptionsBase
 import typings.vueRuntimeCore.mod.ComponentPublicInstance
 import typings.vueRuntimeCore.mod.Data
 import typings.vueRuntimeCore.mod.EmitFn
 import typings.vueRuntimeCore.mod.EmitsOptions
 import typings.vueRuntimeCore.mod.MergedComponentOptionsOverride
-import typings.vueRuntimeCore.mod.Slots
+import typings.vueRuntimeCore.mod.SlotsType
+import typings.vueRuntimeCore.mod.UnwrapSlotsType
 import typings.vueRuntimeCore.mod.WatchOptions
 import typings.vueRuntimeCore.mod.WatchStopHandle
 import typings.vueRuntimeCore.vueRuntimeCoreBooleans.`false`
+import typings.vueShared.mod.Prettify
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait _empty[// raw bindings returned from setup()
-D, MakeDefaultsOptional /* <: Boolean */, Defaults, P, PublicProps, E /* <: EmitsOptions */, Options] extends StObject {
+D, MakeDefaultsOptional /* <: Boolean */, Defaults, P, PublicProps, S /* <: SlotsType[Record[String, Any]] */, E /* <: EmitsOptions */, Options] extends StObject {
   
   @JSName("$")
   var $: typings.vueRuntimeCore.mod.ComponentInternalInstance = js.native
@@ -57,12 +61,15 @@ D, MakeDefaultsOptional /* <: Boolean */, Defaults, P, PublicProps, E /* <: Emit
     js.Object, 
     js.Object, 
     `false`, 
-    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+    js.Object, 
     js.Object
   ]) | Null = js.native
   
   @JSName("$props")
-  var $props: /* import warning: importer.ImportType#apply Failed type conversion: MakeDefaultsOptional extends true ? std.Partial<Defaults> & std.Omit<P & PublicProps, keyof Defaults> : P & PublicProps */ js.Any = js.native
+  var $props: Prettify[
+    /* import warning: importer.ImportType#apply Failed type conversion: MakeDefaultsOptional extends true ? std.Partial<Defaults> & std.Omit<P & PublicProps, keyof Defaults> : P & PublicProps */ js.Any
+  ] = js.native
   
   @JSName("$refs")
   var $refs: Data = js.native
@@ -78,12 +85,18 @@ D, MakeDefaultsOptional /* <: Boolean */, Defaults, P, PublicProps, E /* <: Emit
     js.Object, 
     js.Object, 
     `false`, 
-    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+    js.Object, 
     js.Object
   ]) | Null = js.native
   
   @JSName("$slots")
-  var $slots: Slots = js.native
+  var $slots: UnwrapSlotsType[
+    S, 
+    NonNullable[
+      /* import warning: importer.ImportType#apply Failed type conversion: S[symbol] */ js.Any
+    ]
+  ] = js.native
   
   @JSName("$watch")
   def $watch[T /* <: String | (js.Function1[/* args */ Any, Any]) */](

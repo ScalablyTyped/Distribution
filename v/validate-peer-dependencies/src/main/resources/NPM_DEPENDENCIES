@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "validate-peer-dependencies" : "2.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "validate-peer-dependencies" : "2.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

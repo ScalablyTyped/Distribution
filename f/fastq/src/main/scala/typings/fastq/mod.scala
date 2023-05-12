@@ -31,7 +31,7 @@ object mod {
     
     def empty(): Unit = js.native
     
-    def error(handler: errorHandler[Any]): Unit = js.native
+    def error(handler: errorHandler[T]): Unit = js.native
     
     def getQueue(): js.Array[T] = js.native
     

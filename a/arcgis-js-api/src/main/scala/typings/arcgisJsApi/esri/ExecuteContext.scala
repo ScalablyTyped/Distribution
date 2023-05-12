@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExecuteContext extends StObject {
   
   /**
-    * The spatial reference used by geometries in geometry functions.
+    * The expected spatial reference of input geometries in geometry functions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#ExecuteContext)
     */

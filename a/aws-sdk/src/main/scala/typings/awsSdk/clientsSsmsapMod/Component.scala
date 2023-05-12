@@ -7,42 +7,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Component extends StObject {
   
   /**
-    * 
+    * The ID of the application.
     */
   var ApplicationId: js.UndefOr[typings.awsSdk.clientsSsmsapMod.ApplicationId] = js.undefined
   
   /**
-    * 
+    * The ID of the component.
     */
   var ComponentId: js.UndefOr[typings.awsSdk.clientsSsmsapMod.ComponentId] = js.undefined
   
   /**
-    * 
+    * The type of the component.
     */
   var ComponentType: js.UndefOr[typings.awsSdk.clientsSsmsapMod.ComponentType] = js.undefined
   
   /**
-    * 
+    * The SAP HANA databases of the component.
     */
   var Databases: js.UndefOr[DatabaseIdList] = js.undefined
   
   /**
-    * 
+    * The hosts of the component.
     */
   var Hosts: js.UndefOr[HostList] = js.undefined
   
   /**
-    * 
+    * The time at which the component was last updated.
     */
   var LastUpdated: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * 
+    * The primary host of the component.
     */
   var PrimaryHost: js.UndefOr[String] = js.undefined
   
   /**
-    * 
+    * The status of the component.
     */
   var Status: js.UndefOr[ComponentStatus] = js.undefined
 }

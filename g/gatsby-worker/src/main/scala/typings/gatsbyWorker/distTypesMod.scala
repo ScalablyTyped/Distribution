@@ -32,9 +32,11 @@ object distTypesMod {
   
   type ChildMessageUnion = TaskError | TaskResult | CustomMessage | WorkerReadyMessage
   
-  type CustomMessage = js.Tuple2[/* 4 */ Double, Any]
+  type Counter = Double
   
-  type EndMessage = js.Array[/* 0 */ Double]
+  type CustomMessage = js.Tuple3[/* 4 */ Double, Counter, Any]
+  
+  type EndMessage = js.Tuple2[/* 0 */ Double, Counter]
   
   type ErrorMessage = String
   
@@ -42,7 +44,7 @@ object distTypesMod {
   
   type ErrorType = String
   
-  type ExecuteMessage = js.Tuple3[/* 1 */ Double, FunctionName, FunctionArgs]
+  type ExecuteMessage = js.Tuple4[/* 1 */ Double, Counter, FunctionName, FunctionArgs]
   
   type FunctionArgs = js.Array[Any]
   
@@ -52,9 +54,9 @@ object distTypesMod {
   
   type ResultType = Any
   
-  type TaskError = js.Tuple5[/* 2 */ Double, ErrorType, ErrorMessage, js.UndefOr[ErrorStack], js.Error]
+  type TaskError = js.Tuple6[/* 2 */ Double, Counter, ErrorType, ErrorMessage, js.UndefOr[ErrorStack], js.Error]
   
-  type TaskResult = js.Tuple2[/* 3 */ Double, ResultType]
+  type TaskResult = js.Tuple3[/* 3 */ Double, Counter, ResultType]
   
-  type WorkerReadyMessage = js.Array[/* 8 */ Double]
+  type WorkerReadyMessage = js.Tuple2[/* 8 */ Double, Counter]
 }

@@ -2,7 +2,7 @@ package typings.inferno
 
 import typings.inferno.distCoreTypesMod.ForwardRef
 import typings.inferno.distCoreTypesMod.Inferno.ComponentClass
-import typings.inferno.distCoreTypesMod.Inferno.InfernoNode
+import typings.inferno.distCoreTypesMod.InfernoNode
 import typings.inferno.distCoreTypesMod.Ref
 import typings.inferno.distCoreTypesMod.Refs
 import typings.inferno.distCoreTypesMod.VNode

@@ -73,7 +73,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent @vue/runtime-dom.@vue/runtime-dom.EventHandlers<@vue/runtime-dom.@vue/runtime-dom.Events> */
 trait SVGAttributes extends StObject {
   
-  // SVG Specific attributes
   var `accent-height`: js.UndefOr[Numberish] = js.undefined
   
   var accumulate: js.UndefOr[none | sum] = js.undefined
@@ -966,7 +965,6 @@ trait SVGAttributes extends StObject {
   
   var result: js.UndefOr[String] = js.undefined
   
-  // Other HTML properties supported by SVG elements in browsers
   var role: js.UndefOr[String] = js.undefined
   
   var rotate: js.UndefOr[Numberish] = js.undefined

@@ -85,6 +85,8 @@ trait ChartOptions extends StObject {
   
   var seriesOver: js.UndefOr[js.Function1[/* e */ ChartSeriesOverEvent, Unit]] = js.undefined
   
+  var subtitle: js.UndefOr[String | ChartSubtitle] = js.undefined
+  
   var theme: js.UndefOr[String] = js.undefined
   
   var title: js.UndefOr[String | ChartTitle] = js.undefined
@@ -278,6 +280,10 @@ object ChartOptions {
     inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
     inline def setSeriesVarargs(value: ChartSeriesItem*): Self = StObject.set(x, "series", js.Array(value*))
+    
+    inline def setSubtitle(value: String | ChartSubtitle): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    
+    inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
     
     inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     

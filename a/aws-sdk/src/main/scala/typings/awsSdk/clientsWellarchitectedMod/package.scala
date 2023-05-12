@@ -2,6 +2,7 @@ package typings.awsSdk.clientsWellarchitectedMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdk.awsSdkStrings.TRUSTED_ADVISOR
+import typings.awsSdk.awsSdkStrings.WORKLOAD
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,6 +38,8 @@ type AwsAccountId = String
 type AwsRegion = String
 
 type Base64String = String
+
+type BestPractices = js.Array[BestPractice]
 
 type CheckDescription = String
 
@@ -113,7 +116,16 @@ type Choices = js.Array[Choice]
 
 type ClientRequestToken = String
 
+type ConsolidatedReportMetrics = js.Array[ConsolidatedReportMetric]
+
 type Count = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.WORKLOAD_METADATA
+  - typings.awsSdk.awsSdkStrings.APP_REGISTRY
+  - java.lang.String
+*/
+type DefinitionType = _DefinitionType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.UPDATED
@@ -123,9 +135,18 @@ type Count = Double
 */
 type DifferenceStatus = _DifferenceStatus | String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type DiscoveryIntegrationStatus = _DiscoveryIntegrationStatus | String
+
 type DisplayText = String
 
 type FlaggedResources = Double
+
+type GetConsolidatedReportMaxResults = Double
 
 type HelpfulResourceUrl = String
 
@@ -140,6 +161,8 @@ type ImportLensStatus = _ImportLensStatus | String
 type ImprovementPlanUrl = String
 
 type ImprovementSummaries = js.Array[ImprovementSummary]
+
+type IncludeSharedResources = Boolean
 
 type IsApplicable = Boolean
 
@@ -156,6 +179,8 @@ type LensArn = String
 type LensDescription = String
 
 type LensJSON = String
+
+type LensMetrics = js.Array[LensMetric]
 
 type LensName = String
 
@@ -197,6 +222,8 @@ type LensType = _LensType | String
 
 type LensVersion = String
 
+type LensesAppliedCount = Double
+
 type ListAnswersMaxResults = Double
 
 type ListLensReviewImprovementsMaxResults = Double
@@ -210,6 +237,8 @@ type ListWorkloadSharesMaxResults = Double
 type ListWorkloadsMaxResults = Double
 
 type MaxResults = Double
+
+type MetricType = WORKLOAD | String
 
 type MilestoneName = String
 
@@ -248,6 +277,8 @@ type PillarDifferences = js.Array[PillarDifference]
 
 type PillarId = String
 
+type PillarMetrics = js.Array[PillarMetric]
+
 type PillarName = String
 
 type PillarNotes = StringDictionary[Notes]
@@ -260,7 +291,16 @@ type QuestionDifferences = js.Array[QuestionDifference]
 
 type QuestionId = String
 
+type QuestionMetrics = js.Array[QuestionMetric]
+
 type QuestionTitle = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PDF
+  - typings.awsSdk.awsSdkStrings.JSON
+  - java.lang.String
+*/
+type ReportFormat = _ReportFormat | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.UNANSWERED
@@ -380,6 +420,8 @@ type WorkloadNonAwsRegion = String
 type WorkloadNonAwsRegions = js.Array[WorkloadNonAwsRegion]
 
 type WorkloadPillarPriorities = js.Array[PillarId]
+
+type WorkloadResourceDefinition = js.Array[DefinitionType]
 
 type WorkloadReviewOwner = String
 

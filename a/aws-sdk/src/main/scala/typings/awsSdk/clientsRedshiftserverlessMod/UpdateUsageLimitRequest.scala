@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateUsageLimitRequest extends StObject {
   
   /**
-    * The new limit amount. For more information about this parameter.
+    * The new limit amount. If time-based, this amount is in Redshift Processing Units (RPU) consumed per hour. If data-based, this amount is in terabytes (TB) of data transferred between Regions in cross-account sharing. The value must be a positive number.
     */
   var amount: js.UndefOr[Long] = js.undefined
   

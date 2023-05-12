@@ -10,7 +10,7 @@ open class LineMarkSeriesCanvas protected () extends AbstractSeries[LineMarkSeri
   def this(props: LineMarkSeriesCanvasProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: LineMarkSeriesCanvasProps, context: Any) = this()
 }

@@ -2,8 +2,8 @@ package typings.awsSdkSignatureV4Crt
 
 import typings.awsSdkSignatureV4.distTypesSignatureV4Mod.SignatureV4CryptoInit
 import typings.awsSdkSignatureV4.distTypesSignatureV4Mod.SignatureV4Init
-import typings.awsSdkTypes.distTypesCredentialsMod.Credentials
 import typings.awsSdkTypes.distTypesHttpMod.HttpRequest
+import typings.awsSdkTypes.distTypesIdentityAwsCredentialIdentityMod.AwsCredentialIdentity
 import typings.awsSdkTypes.distTypesSignatureMod.RequestPresigner
 import typings.awsSdkTypes.distTypesSignatureMod.RequestPresigningArguments
 import typings.awsSdkTypes.distTypesSignatureMod.RequestSigner
@@ -139,7 +139,7 @@ object distTypesCrtSignerV4Mod {
   object CrtSignerV4Init {
     
     inline def apply(
-      credentials: Credentials | Provider[Credentials],
+      credentials: AwsCredentialIdentity | Provider[AwsCredentialIdentity],
       region: String | Provider[String],
       service: String
     ): CrtSignerV4Init = {

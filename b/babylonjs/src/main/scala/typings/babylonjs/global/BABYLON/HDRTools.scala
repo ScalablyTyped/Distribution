@@ -30,6 +30,7 @@ object HDRTools {
     * @returns The Cube Map information.
     */
   inline def GetCubeMapTextureData(buffer: js.typedarray.ArrayBuffer, size: Double): CubeMapInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCubeMapTextureData")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[CubeMapInfo]
+  inline def GetCubeMapTextureData(buffer: js.typedarray.ArrayBuffer, size: Double, supersample: Boolean): CubeMapInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCubeMapTextureData")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], supersample.asInstanceOf[js.Any])).asInstanceOf[CubeMapInfo]
   
   /**
     * Reads header information from an RGBE texture stored in a native array.

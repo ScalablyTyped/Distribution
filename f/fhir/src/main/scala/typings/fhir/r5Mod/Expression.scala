@@ -24,14 +24,14 @@ trait Expression
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * An expression in the specified language that returns a value.
+    * If Expression.expression and Expression.reference are both present, the Expression.expression might just be a name pointing something within the referenced content.
     */
   var expression: js.UndefOr[String] = js.undefined
   
   /**
     * The media type of the language for the expression.
     */
-  var language: String
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * A short name assigned to the expression to allow for multiple reuse of the expression in the context where it is defined.
@@ -45,8 +45,8 @@ trait Expression
 }
 object Expression {
   
-  inline def apply(language: String): Expression = {
-    val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any])
+  inline def apply(): Expression = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Expression]
   }
   
@@ -62,6 +62,8 @@ object Expression {
     inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

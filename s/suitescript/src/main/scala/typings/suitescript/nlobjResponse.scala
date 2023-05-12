@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @classDescription Accessor to Http response made available to Suitelets.
   * @return {nlobjResponse}
-  * @constructor
   */
 @js.native
 trait nlobjResponse

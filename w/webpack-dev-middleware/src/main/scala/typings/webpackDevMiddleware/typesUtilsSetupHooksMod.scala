@@ -26,7 +26,6 @@ object typesUtilsSetupHooksMod {
   /** @typedef {Configuration["stats"]} StatsOptions */
   /** @typedef {{ children: Configuration["stats"][] }} MultiStatsOptions */
   /** @typedef {Exclude<Configuration["stats"], boolean | string | undefined>} NormalizedStatsOptions */
-  /** @typedef {{ children: StatsOptions[], colors?: any }} MultiNormalizedStatsOptions */
   /**
     * @template {IncomingMessage} Request
     * @template {ServerResponse} Response
@@ -45,32 +44,6 @@ object typesUtilsSetupHooksMod {
   type IncomingMessage = typings.webpackDevMiddleware.mod.IncomingMessage
   
   type MultiCompiler = typings.webpack.mod.MultiCompiler
-  
-  trait MultiNormalizedStatsOptions extends StObject {
-    
-    var children: js.Array[StatsOptions]
-    
-    var colors: js.UndefOr[Any] = js.undefined
-  }
-  object MultiNormalizedStatsOptions {
-    
-    inline def apply(children: js.Array[StatsOptions]): MultiNormalizedStatsOptions = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-      __obj.asInstanceOf[MultiNormalizedStatsOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: MultiNormalizedStatsOptions] (val x: Self) extends AnyVal {
-      
-      inline def setChildren(value: js.Array[StatsOptions]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenVarargs(value: StatsOptions*): Self = StObject.set(x, "children", js.Array(value*))
-      
-      inline def setColors(value: Any): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
-      
-      inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
-    }
-  }
   
   type MultiStats = typings.webpack.mod.MultiStats
   

@@ -61,6 +61,11 @@ trait Provenance
   var occurredPeriod: js.UndefOr[Period] = js.undefined
   
   /**
+    * The patient element is available to enable deterministic tracking of activities that involve the patient as the subject of the data used in an activity.
+    */
+  var patient: js.UndefOr[Reference] = js.undefined
+  
+  /**
     * For example: Where an OAuth token authorizes, the unique identifier from the OAuth token is placed into the policy element Where a policy engine (e.g. XACML) holds policy logic, the unique policy identifier is placed into the policy element.
     */
   var policy: js.UndefOr[js.Array[String]] = js.undefined
@@ -135,6 +140,10 @@ object Provenance {
     inline def setOccurredPeriod(value: Period): Self = StObject.set(x, "occurredPeriod", value.asInstanceOf[js.Any])
     
     inline def setOccurredPeriodUndefined: Self = StObject.set(x, "occurredPeriod", js.undefined)
+    
+    inline def setPatient(value: Reference): Self = StObject.set(x, "patient", value.asInstanceOf[js.Any])
+    
+    inline def setPatientUndefined: Self = StObject.set(x, "patient", js.undefined)
     
     inline def setPolicy(value: js.Array[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     

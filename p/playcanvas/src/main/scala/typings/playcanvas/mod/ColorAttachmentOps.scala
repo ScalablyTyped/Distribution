@@ -4,8 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../graphics/render-target.js').RenderTarget} RenderTarget */
-/** @typedef {import('../graphics/graphics-device.js').GraphicsDevice} GraphicsDevice */
 trait ColorAttachmentOps extends StObject {
   
   /**

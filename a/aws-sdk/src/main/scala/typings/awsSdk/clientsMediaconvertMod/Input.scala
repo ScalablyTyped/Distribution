@@ -7,6 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Input extends StObject {
   
   /**
+    * Use to remove noise, blocking, blurriness, or ringing from your input as a pre-filter step before encoding. The Advanced input filter removes more types of compression artifacts and is an improvement when compared to basic Deblock and Denoise filters. To remove video compression artifacts from your input and improve the video quality: Choose Enabled. Additionally, this filter can help increase the video quality of your output relative to its bitrate, since noisy inputs are more complex and require more bits to encode. To help restore loss of detail after applying the filter, you can optionally add texture or sharpening as an additional step.Jobs that use this feature incur pro-tier pricing. To not apply advanced input filtering: Choose Disabled. Note that you can still apply basic filtering with Deblock and Denoise.
+    */
+  var AdvancedInputFilter: js.UndefOr[typings.awsSdk.clientsMediaconvertMod.AdvancedInputFilter] = js.undefined
+  
+  /**
+    * Optional settings for Advanced input filter when you set Advanced input filter to Enabled.
+    */
+  var AdvancedInputFilterSettings: js.UndefOr[typings.awsSdk.clientsMediaconvertMod.AdvancedInputFilterSettings] = js.undefined
+  
+  /**
     * Use audio selector groups to combine multiple sidecar audio inputs so that you can assign them to a single output audio tab (AudioDescription). Note that, if you're working with embedded audio, it's simpler to assign multiple input tracks into a single audio selector rather than use an audio selector group.
     */
   var AudioSelectorGroups: js.UndefOr[mapOfAudioSelectorGroup] = js.undefined
@@ -37,7 +47,7 @@ trait Input extends StObject {
   var DecryptionSettings: js.UndefOr[InputDecryptionSettings] = js.undefined
   
   /**
-    * Enable Denoise (InputDenoiseFilter) to filter noise from the input.  Default is disabled. Only applicable to MPEG2, H.264, H.265, and uncompressed video inputs.
+    * Enable Denoise (InputDenoiseFilter) to filter noise from the input. Default is disabled. Only applicable to MPEG2, H.264, H.265, and uncompressed video inputs.
     */
   var DenoiseFilter: js.UndefOr[InputDenoiseFilter] = js.undefined
   
@@ -49,19 +59,17 @@ trait Input extends StObject {
   /**
     * Specify the source file for your transcoding job. You can use multiple inputs in a single job. The service concatenates these inputs, in the order that you specify them in the job, to create the outputs. If your input format is IMF, specify your input by providing the path to your CPL. For example, "s3://bucket/vf/cpl.xml". If the CPL is in an incomplete IMP, make sure to use *Supplemental IMPs* (SupplementalImps) to specify any supplemental IMPs that contain assets referenced by the CPL.
     */
-  var FileInput: js.UndefOr[
-    stringPatternS3MM2PPMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVaAAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8WWEEBBMMLLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMXXMMLLOOGGGGaAAATTMMOOSSHttpsMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVaAAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1
-  ] = js.undefined
+  var FileInput: js.UndefOr[stringPatternS3Https] = js.undefined
   
   /**
-    * Specify how the transcoding service applies the denoise and deblock filters. You must also enable the filters separately, with Denoise (InputDenoiseFilter) and Deblock (InputDeblockFilter). * Auto - The transcoding service determines whether to apply filtering, depending on input type and quality. * Disable - The input is not filtered. This is true even if you use the API to enable them in (InputDeblockFilter) and (InputDeblockFilter). * Force - The input is filtered regardless of input type.
+    * Specify whether to apply input filtering to improve the video quality of your input. To apply filtering depending on your input type and quality: Choose Auto. To apply no filtering: Choose Disable. To apply filtering regardless of your input type and quality: Choose Force. When you do, you must also specify a value for Filter strength.
     */
   var FilterEnable: js.UndefOr[InputFilterEnable] = js.undefined
   
   /**
-    * Use Filter strength (FilterStrength) to adjust the magnitude the input filter settings (Deblock and Denoise). The range is -5 to 5. Default is 0.
+    * Specify the strength of the input filter. To apply an automatic amount of filtering based the compression artifacts measured in your input: We recommend that you leave Filter strength blank and set Filter enable to Auto. To manually apply filtering: Enter a value from 1 to 5, where 1 is the least amount of filtering and 5 is the most. The value that you enter applies to the strength of the Deblock or Denoise filters, or to the strength of the Advanced input filter.
     */
-  var FilterStrength: js.UndefOr[integerMinNegative5Max5] = js.undefined
+  var FilterStrength: js.UndefOr[integerMin0Max5] = js.undefined
   
   /**
     * Enable the image inserter feature to include a graphic overlay on your video. Enable or disable this feature for each input individually. This setting is disabled by default.
@@ -128,6 +136,14 @@ object Input {
   @scala.inline
   implicit open class MutableBuilder[Self <: Input] (val x: Self) extends AnyVal {
     
+    inline def setAdvancedInputFilter(value: AdvancedInputFilter): Self = StObject.set(x, "AdvancedInputFilter", value.asInstanceOf[js.Any])
+    
+    inline def setAdvancedInputFilterSettings(value: AdvancedInputFilterSettings): Self = StObject.set(x, "AdvancedInputFilterSettings", value.asInstanceOf[js.Any])
+    
+    inline def setAdvancedInputFilterSettingsUndefined: Self = StObject.set(x, "AdvancedInputFilterSettings", js.undefined)
+    
+    inline def setAdvancedInputFilterUndefined: Self = StObject.set(x, "AdvancedInputFilter", js.undefined)
+    
     inline def setAudioSelectorGroups(value: mapOfAudioSelectorGroup): Self = StObject.set(x, "AudioSelectorGroups", value.asInstanceOf[js.Any])
     
     inline def setAudioSelectorGroupsUndefined: Self = StObject.set(x, "AudioSelectorGroups", js.undefined)
@@ -160,9 +176,7 @@ object Input {
     
     inline def setDolbyVisionMetadataXmlUndefined: Self = StObject.set(x, "DolbyVisionMetadataXml", js.undefined)
     
-    inline def setFileInput(
-      value: stringPatternS3MM2PPMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVaAAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8WWEEBBMMLLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMXXMMLLOOGGGGaAAATTMMOOSSHttpsMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVaAAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1
-    ): Self = StObject.set(x, "FileInput", value.asInstanceOf[js.Any])
+    inline def setFileInput(value: stringPatternS3Https): Self = StObject.set(x, "FileInput", value.asInstanceOf[js.Any])
     
     inline def setFileInputUndefined: Self = StObject.set(x, "FileInput", js.undefined)
     
@@ -170,7 +184,7 @@ object Input {
     
     inline def setFilterEnableUndefined: Self = StObject.set(x, "FilterEnable", js.undefined)
     
-    inline def setFilterStrength(value: integerMinNegative5Max5): Self = StObject.set(x, "FilterStrength", value.asInstanceOf[js.Any])
+    inline def setFilterStrength(value: integerMin0Max5): Self = StObject.set(x, "FilterStrength", value.asInstanceOf[js.Any])
     
     inline def setFilterStrengthUndefined: Self = StObject.set(x, "FilterStrength", js.undefined)
     

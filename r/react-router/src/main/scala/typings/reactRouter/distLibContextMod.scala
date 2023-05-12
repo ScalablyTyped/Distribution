@@ -1,5 +1,6 @@
 package typings.reactRouter
 
+import typings.react.mod.ComponentType
 import typings.react.mod.Context
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
@@ -9,18 +10,23 @@ import typings.reactRouter.reactRouterBooleans.`true`
 import typings.remixRunRouter.anon.ActionResult
 import typings.remixRunRouter.distHistoryMod.Action
 import typings.remixRunRouter.distHistoryMod.Location
+import typings.remixRunRouter.distHistoryMod.Path
 import typings.remixRunRouter.distHistoryMod.To
+import typings.remixRunRouter.distRouterMod.RelativeRoutingType
 import typings.remixRunRouter.distRouterMod.Router
 import typings.remixRunRouter.distRouterMod.RouterState
 import typings.remixRunRouter.distRouterMod.StaticHandlerContext
 import typings.remixRunRouter.distUtilsMod.ActionFunction
 import typings.remixRunRouter.distUtilsMod.ActionFunctionArgs
 import typings.remixRunRouter.distUtilsMod.AgnosticRouteMatch
+import typings.remixRunRouter.distUtilsMod.DataFunctionValue
+import typings.remixRunRouter.distUtilsMod.ImmutableRouteKey
+import typings.remixRunRouter.distUtilsMod.LazyRouteFunction
 import typings.remixRunRouter.distUtilsMod.LoaderFunction
 import typings.remixRunRouter.distUtilsMod.LoaderFunctionArgs
 import typings.remixRunRouter.distUtilsMod.ShouldRevalidateFunction
 import typings.remixRunRouter.distUtilsMod.TrackedPromise
-import typings.std.Response
+import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,10 +44,6 @@ object distLibContextMod {
   @JSImport("react-router/dist/lib/context", "DataRouterStateContext")
   @js.native
   val DataRouterStateContext: Context[RouterState | Null] = js.native
-  
-  @JSImport("react-router/dist/lib/context", "DataStaticRouterContext")
-  @js.native
-  val DataStaticRouterContext: Context[StaticHandlerContext | Null] = js.native
   
   @JSImport("react-router/dist/lib/context", "LocationContext")
   @js.native
@@ -68,6 +70,8 @@ object distLibContextMod {
        with NavigationContextObject {
     
     var router: Router
+    
+    var staticContext: js.UndefOr[StaticHandlerContext] = js.undefined
   }
   object DataRouterContextObject {
     
@@ -80,12 +84,20 @@ object distLibContextMod {
     implicit open class MutableBuilder[Self <: DataRouterContextObject] (val x: Self) extends AnyVal {
       
       inline def setRouter(value: Router): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
+      
+      inline def setStaticContext(value: StaticHandlerContext): Self = StObject.set(x, "staticContext", value.asInstanceOf[js.Any])
+      
+      inline def setStaticContextUndefined: Self = StObject.set(x, "staticContext", js.undefined)
     }
   }
   
   trait IndexRouteObject
     extends StObject
        with RouteObject {
+    
+    var Component: js.UndefOr[ComponentType[js.Object] | Null] = js.undefined
+    
+    var ErrorBoundary: js.UndefOr[ComponentType[js.Object] | Null] = js.undefined
     
     var action: js.UndefOr[ActionFunction] = js.undefined
     
@@ -105,6 +117,8 @@ object distLibContextMod {
     
     var index: `true`
     
+    var `lazy`: js.UndefOr[LazyRouteFunction[IndexRouteObject]] = js.undefined
+    
     var loader: js.UndefOr[LoaderFunction] = js.undefined
     
     var path: js.UndefOr[String] = js.undefined
@@ -121,7 +135,7 @@ object distLibContextMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: IndexRouteObject] (val x: Self) extends AnyVal {
       
-      inline def setAction(value: /* args */ ActionFunctionArgs => (js.Promise[Any | Response]) | Response | Any): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
+      inline def setAction(value: /* args */ ActionFunctionArgs => js.Promise[DataFunctionValue] | DataFunctionValue): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
@@ -131,11 +145,23 @@ object distLibContextMod {
       
       inline def setChildren(value: Unit): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
+      inline def setComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+      
+      inline def setComponentNull: Self = StObject.set(x, "Component", null)
+      
+      inline def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
+      
       inline def setElement(value: ReactNode): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementNull: Self = StObject.set(x, "element", null)
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+      
+      inline def setErrorBoundary(value: ComponentType[js.Object]): Self = StObject.set(x, "ErrorBoundary", value.asInstanceOf[js.Any])
+      
+      inline def setErrorBoundaryNull: Self = StObject.set(x, "ErrorBoundary", null)
+      
+      inline def setErrorBoundaryUndefined: Self = StObject.set(x, "ErrorBoundary", js.undefined)
       
       inline def setErrorElement(value: ReactNode): Self = StObject.set(x, "errorElement", value.asInstanceOf[js.Any])
       
@@ -157,7 +183,11 @@ object distLibContextMod {
       
       inline def setIndex(value: `true`): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      inline def setLoader(value: /* args */ LoaderFunctionArgs => (js.Promise[Any | Response]) | Response | Any): Self = StObject.set(x, "loader", js.Any.fromFunction1(value))
+      inline def setLazy(value: () => js.Promise[Omit[IndexRouteObject, ImmutableRouteKey]]): Self = StObject.set(x, "lazy", js.Any.fromFunction0(value))
+      
+      inline def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
+      
+      inline def setLoader(value: /* args */ LoaderFunctionArgs => js.Promise[DataFunctionValue] | DataFunctionValue): Self = StObject.set(x, "loader", js.Any.fromFunction1(value))
       
       inline def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
       
@@ -262,6 +292,8 @@ object distLibContextMod {
     
     var createHref: js.Function1[/* to */ To, String] = js.native
     
+    var encodeLocation: js.UndefOr[js.Function1[/* to */ To, Path]] = js.native
+    
     var go: js.Function1[/* delta */ Double, Unit] = js.native
     
     def push(to: To): Unit = js.native
@@ -278,6 +310,10 @@ object distLibContextMod {
   trait NonIndexRouteObject
     extends StObject
        with RouteObject {
+    
+    var Component: js.UndefOr[ComponentType[js.Object] | Null] = js.undefined
+    
+    var ErrorBoundary: js.UndefOr[ComponentType[js.Object] | Null] = js.undefined
     
     var action: js.UndefOr[ActionFunction] = js.undefined
     
@@ -297,6 +333,8 @@ object distLibContextMod {
     
     var index: js.UndefOr[`false`] = js.undefined
     
+    var `lazy`: js.UndefOr[LazyRouteFunction[NonIndexRouteObject]] = js.undefined
+    
     var loader: js.UndefOr[LoaderFunction] = js.undefined
     
     var path: js.UndefOr[String] = js.undefined
@@ -313,7 +351,7 @@ object distLibContextMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: NonIndexRouteObject] (val x: Self) extends AnyVal {
       
-      inline def setAction(value: /* args */ ActionFunctionArgs => (js.Promise[Any | Response]) | Response | Any): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
+      inline def setAction(value: /* args */ ActionFunctionArgs => js.Promise[DataFunctionValue] | DataFunctionValue): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
@@ -327,11 +365,23 @@ object distLibContextMod {
       
       inline def setChildrenVarargs(value: RouteObject*): Self = StObject.set(x, "children", js.Array(value*))
       
+      inline def setComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+      
+      inline def setComponentNull: Self = StObject.set(x, "Component", null)
+      
+      inline def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
+      
       inline def setElement(value: ReactNode): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementNull: Self = StObject.set(x, "element", null)
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+      
+      inline def setErrorBoundary(value: ComponentType[js.Object]): Self = StObject.set(x, "ErrorBoundary", value.asInstanceOf[js.Any])
+      
+      inline def setErrorBoundaryNull: Self = StObject.set(x, "ErrorBoundary", null)
+      
+      inline def setErrorBoundaryUndefined: Self = StObject.set(x, "ErrorBoundary", js.undefined)
       
       inline def setErrorElement(value: ReactNode): Self = StObject.set(x, "errorElement", value.asInstanceOf[js.Any])
       
@@ -355,7 +405,11 @@ object distLibContextMod {
       
       inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      inline def setLoader(value: /* args */ LoaderFunctionArgs => (js.Promise[Any | Response]) | Response | Any): Self = StObject.set(x, "loader", js.Any.fromFunction1(value))
+      inline def setLazy(value: () => js.Promise[Omit[NonIndexRouteObject, ImmutableRouteKey]]): Self = StObject.set(x, "lazy", js.Any.fromFunction0(value))
+      
+      inline def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
+      
+      inline def setLoader(value: /* args */ LoaderFunctionArgs => js.Promise[DataFunctionValue] | DataFunctionValue): Self = StObject.set(x, "loader", js.Any.fromFunction1(value))
       
       inline def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
       
@@ -369,19 +423,9 @@ object distLibContextMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactRouter.reactRouterStrings.route
-    - typings.reactRouter.reactRouterStrings.path
-  */
-  trait RelativeRoutingType extends StObject
-  object RelativeRoutingType {
-    
-    inline def path: typings.reactRouter.reactRouterStrings.path = "path".asInstanceOf[typings.reactRouter.reactRouterStrings.path]
-    
-    inline def route: typings.reactRouter.reactRouterStrings.route = "route".asInstanceOf[typings.reactRouter.reactRouterStrings.route]
-  }
-  
   trait RouteContextObject extends StObject {
+    
+    var isDataRoute: Boolean
     
     var matches: js.Array[RouteMatch[String, RouteObject]]
     
@@ -389,13 +433,15 @@ object distLibContextMod {
   }
   object RouteContextObject {
     
-    inline def apply(matches: js.Array[RouteMatch[String, RouteObject]]): RouteContextObject = {
-      val __obj = js.Dynamic.literal(matches = matches.asInstanceOf[js.Any], outlet = null)
+    inline def apply(isDataRoute: Boolean, matches: js.Array[RouteMatch[String, RouteObject]]): RouteContextObject = {
+      val __obj = js.Dynamic.literal(isDataRoute = isDataRoute.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any], outlet = null)
       __obj.asInstanceOf[RouteContextObject]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: RouteContextObject] (val x: Self) extends AnyVal {
+      
+      inline def setIsDataRoute(value: Boolean): Self = StObject.set(x, "isDataRoute", value.asInstanceOf[js.Any])
       
       inline def setMatches(value: js.Array[RouteMatch[String, RouteObject]]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
       

@@ -26,7 +26,7 @@ object serviceSchemaMod {
     /**
       * The name of the project.
       */
-    var project: js.UndefOr[String] = js.undefined
+    var project: String
     
     /**
       * Do not create "spec.ts" test files for the new service.
@@ -35,8 +35,8 @@ object serviceSchemaMod {
   }
   object Schema {
     
-    inline def apply(name: String): Schema = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    inline def apply(name: String, project: String): Schema = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any])
       __obj.asInstanceOf[Schema]
     }
     
@@ -54,8 +54,6 @@ object serviceSchemaMod {
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
       inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
-      
-      inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
       
       inline def setSkipTests(value: Boolean): Self = StObject.set(x, "skipTests", value.asInstanceOf[js.Any])
       

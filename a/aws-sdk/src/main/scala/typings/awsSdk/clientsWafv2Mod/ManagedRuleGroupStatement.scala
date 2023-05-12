@@ -12,7 +12,7 @@ trait ManagedRuleGroupStatement extends StObject {
   var ExcludedRules: js.UndefOr[typings.awsSdk.clientsWafv2Mod.ExcludedRules] = js.undefined
   
   /**
-    * Additional information that's used by a managed rule group. Many managed rule groups don't require this. Use the AWSManagedRulesBotControlRuleSet configuration object to configure the protection level that you want the Bot Control rule group to use. 
+    * Additional information that's used by a managed rule group. Many managed rule groups don't require this. Use the AWSManagedRulesATPRuleSet configuration object for the account takeover prevention managed rule group, to provide information such as the sign-in page of your application and the type of content to accept or reject from the client.  Use the AWSManagedRulesBotControlRuleSet configuration object to configure the protection level that you want the Bot Control rule group to use. 
     */
   var ManagedRuleGroupConfigs: js.UndefOr[typings.awsSdk.clientsWafv2Mod.ManagedRuleGroupConfigs] = js.undefined
   

@@ -44,5 +44,8 @@ object srcLoadersImageLoaderMod {
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): HTMLImageElement = js.native
     def load(url: String, onLoad: Unit, onProgress: Unit, onError: js.Function1[/* event */ ErrorEvent, Unit]): HTMLImageElement = js.native
+    
+    def loadAsync(url: String): js.Promise[HTMLImageElement] = js.native
+    def loadAsync(url: String, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[HTMLImageElement] = js.native
   }
 }

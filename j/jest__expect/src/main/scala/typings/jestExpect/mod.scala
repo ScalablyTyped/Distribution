@@ -54,7 +54,7 @@ object mod {
   @js.native
   trait JestMatchers[R /* <: Unit | js.Promise[Unit] */, T]
     extends StObject
-       with Matchers[R]
+       with Matchers[R, T]
        with SnapshotMatchers[R, T]
   
   trait PromiseMatchers[T] extends StObject {

@@ -16,7 +16,7 @@ object libIconsTaobaoCircleFilledMod extends Shortcut {
   @js.native
   trait TaobaoCircleFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_TaobaoCircleFilledIconType: String = js.native

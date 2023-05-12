@@ -5,9 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../../platform/graphics/bind-group.js').BindGroup} BindGroup */
-/** @typedef {import('../../platform/graphics/render-target.js').RenderTarget} RenderTarget */
-/** @typedef {import('./layer-composition.js').LayerComposition} LayerComposition */
 /**
   * Class representing an entry in the final order of rendering of cameras and layers in the engine
   * this is populated at runtime based on LayerComposition
@@ -42,7 +39,8 @@ trait RenderAction extends StObject {
   def hasDirectionalShadowLights: Boolean = js.native
   
   /**
-    * @param {LayerComposition} layerComposition - The layer composition.
+    * @param {import('./layer-composition.js').LayerComposition} layerComposition - The layer
+    * composition.
     * @returns {boolean} - True if the layer / sublayer referenced by the render action is enabled
     */
   def isLayerEnabled(layerComposition: LayerComposition): Boolean = js.native
@@ -56,7 +54,7 @@ trait RenderAction extends StObject {
   /**
     * render target this render action renders to (taken from either camera or layer)
     *
-    * @type {RenderTarget|null}
+    * @type {import('../../platform/graphics/render-target.js').RenderTarget|null}
     */
   var renderTarget: RenderTarget | Null = js.native
   
@@ -64,6 +62,6 @@ trait RenderAction extends StObject {
   
   var triggerPostprocess: Boolean = js.native
   
-  /** @type {Array<BindGroup>} */
+  /** @type {import('../../platform/graphics/bind-group.js').BindGroup[]} */
   var viewBindGroups: js.Array[BindGroup] = js.native
 }

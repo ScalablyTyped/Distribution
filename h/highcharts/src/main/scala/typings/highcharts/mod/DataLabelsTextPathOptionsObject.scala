@@ -9,7 +9,9 @@ trait DataLabelsTextPathOptionsObject extends StObject {
   /**
     * (Highcharts, Highstock, Gantt) Presentation attributes for the text path.
     */
-  var attributes: js.UndefOr[PlotDependencywheelDataLabelsTextPathAttributesOptions | SVGAttributes] = js.undefined
+  var attributes: js.UndefOr[
+    PlotDependencywheelDataLabelsTextPathAttributesOptions | PlotTreegraphDataLabelsLinkTextPathAttributesOptions | SVGAttributes
+  ] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Enable or disable `textPath` option for
@@ -27,7 +29,9 @@ object DataLabelsTextPathOptionsObject {
   @scala.inline
   implicit open class MutableBuilder[Self <: DataLabelsTextPathOptionsObject] (val x: Self) extends AnyVal {
     
-    inline def setAttributes(value: PlotDependencywheelDataLabelsTextPathAttributesOptions | SVGAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(
+      value: PlotDependencywheelDataLabelsTextPathAttributesOptions | PlotTreegraphDataLabelsLinkTextPathAttributesOptions | SVGAttributes
+    ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     

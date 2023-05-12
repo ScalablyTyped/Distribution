@@ -12,7 +12,7 @@ trait MetricDefinition extends StObject {
   var Name: MetricName
   
   /**
-    * A regular expression that searches the output of a training job and gets the value of the metric. For more information about using regular expressions to define metrics, see Defining Objective Metrics.
+    * A regular expression that searches the output of a training job and gets the value of the metric. For more information about using regular expressions to define metrics, see Defining metrics and environment variables.
     */
   var Regex: MetricRegex
 }

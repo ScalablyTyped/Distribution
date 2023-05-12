@@ -8,8 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GeneralJWSInput extends StObject {
   
   /**
-    * The "payload" member MUST be present and contain the value BASE64URL(JWS Payload). When RFC7797
-    * "b64": false is used the value passed may also be a Uint8Array.
+    * The "payload" member MUST be present and contain the value BASE64URL(JWS Payload). When when
+    * JWS Unencoded Payload ({@link https://www.rfc-editor.org/rfc/rfc7797 RFC7797}) "b64": false is
+    * used the value passed may also be a Uint8Array.
     */
   var payload: String | js.typedarray.Uint8Array
   

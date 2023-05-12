@@ -1,7 +1,7 @@
 
 # Scala.js typings for y-leveldb
 
-Typings are for version 0.1.1
+Typings are for version 0.1.2
 
 ## Library description:
 LevelDb database adapter for Yjs

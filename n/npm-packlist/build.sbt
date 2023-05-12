@@ -1,11 +1,22 @@
 organization := "org.scalablytyped"
 name := "npm-packlist"
-version := "3.0-dt-20220302Z-da7bfb"
+version := "7.0-dt-20221231Z-17d275"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "std" % "4.9-ecb5eb")
+  "org.scalablytyped" %%% "formdata-polyfill" % "4.0.10-534907",
+  "org.scalablytyped" %%% "ignore-walk" % "4.0-dt-20211202Z-6c7d97",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "node-fetch" % "3.3.1-2bc985",
+  "org.scalablytyped" %%% "npm-package-arg" % "6.1-dt-20211202Z-edb2bc",
+  "org.scalablytyped" %%% "npm-registry-fetch" % "8.0-dt-20220214Z-b7e291",
+  "org.scalablytyped" %%% "npmcli__arborist" % "5.6-dt-20230113Z-82a97b",
+  "org.scalablytyped" %%% "npmcli__package-json" % "2.0-dt-20220510Z-e880de",
+  "org.scalablytyped" %%% "npmlog" % "4.1-dt-20211223Z-0aacb3",
+  "org.scalablytyped" %%% "pacote" % "11.1-dt-20220616Z-5385c5",
+  "org.scalablytyped" %%% "ssri" % "7.1-dt-20211202Z-48f599",
+  "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

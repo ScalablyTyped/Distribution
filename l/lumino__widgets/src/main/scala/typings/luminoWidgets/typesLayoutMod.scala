@@ -1,7 +1,5 @@
 package typings.luminoWidgets
 
-import typings.luminoAlgorithm.typesIterMod.IIterable
-import typings.luminoAlgorithm.typesIterMod.IIterator
 import typings.luminoDisposable.mod.IDisposable
 import typings.luminoMessaging.mod.Message
 import typings.luminoWidgets.typesLayoutMod.Layout.FitPolicy
@@ -9,6 +7,8 @@ import typings.luminoWidgets.typesLayoutMod.Layout.IOptions
 import typings.luminoWidgets.typesWidgetMod.Widget
 import typings.luminoWidgets.typesWidgetMod.Widget.ChildMessage
 import typings.luminoWidgets.typesWidgetMod.Widget.ResizeMessage
+import typings.std.Iterable
+import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +24,7 @@ object typesLayoutMod {
     */
   open class Layout ()
     extends StObject
-       with IIterable[Widget]
+       with Iterable[Widget]
        with IDisposable {
     def this(options: IOptions) = this()
     
@@ -33,6 +33,16 @@ object typesLayoutMod {
     /* private */ var _fitPolicy: Any = js.native
     
     /* private */ var _parent: Any = js.native
+    
+    /**
+      * Create an iterator over the widgets in the layout.
+      *
+      * @returns A new iterator over the widgets in the layout.
+      *
+      * #### Notes
+      * This abstract method must be implemented by a subclass.
+      */
+    var `abstract`: Any = js.native
     
     /**
       * Dispose of the resources held by the object.
@@ -57,6 +67,7 @@ object typesLayoutMod {
       *
       * Some layout implementations may ignore the fit policy.
       */
+    def fitPolicy: FitPolicy = js.native
     /**
       * Set the fit policy for the layout.
       *
@@ -69,7 +80,7 @@ object typesLayoutMod {
       * Changing the fit policy will clear the current size constraint
       * for the parent widget and then re-fit the parent.
       */
-    var fitPolicy: FitPolicy = js.native
+    def fitPolicy_=(value: FitPolicy): Unit = js.native
     
     /**
       * Perform layout initialization which requires the parent widget.
@@ -94,20 +105,14 @@ object typesLayoutMod {
       */
     /* CompleteClass */
     override val isDisposed: Boolean = js.native
-    
     /**
-      * Get an iterator over the object's values.
-      *
-      * @returns An iterator which yields the object's values.
-      *
-      * #### Notes
-      * Depending on the iterable, the returned iterator may or may not be
-      * a new object. A collection or other container-like object should
-      * typically return a new iterator, while an iterator itself should
-      * normally return `this`.
+      * Test whether the layout is disposed.
       */
-    /* CompleteClass */
-    override def iter(): IIterator[Widget] = js.native
+    @JSName("isDisposed")
+    def isDisposed_MLayout: Boolean = js.native
+    
+    @JSName(js.Symbol.iterator)
+    var iterator_Layout: js.Function0[IterableIterator[Widget]] = js.native
     
     /**
       * A message handler invoked on an `'after-attach'` message.
@@ -272,6 +277,7 @@ object typesLayoutMod {
     /**
       * Get the parent widget of the layout.
       */
+    def parent: Widget | Null = js.native
     /**
       * Set the parent widget of the layout.
       *
@@ -279,7 +285,7 @@ object typesLayoutMod {
       * This is set automatically when installing the layout on the parent
       * widget. The parent widget should not be set directly by user code.
       */
-    var parent: Widget | Null = js.native
+    def parent_=(value: Widget | Null): Unit = js.native
     
     /**
       * Process a message sent to the parent widget.
@@ -496,6 +502,7 @@ object typesLayoutMod {
       *
       * #### Notes
       * The widget will be set to absolute positioning.
+      * The widget will use strict CSS containment.
       */
     def this(widget: Widget) = this()
     
@@ -539,7 +546,7 @@ object typesLayoutMod {
     /**
       * Whether the managed widget is attached.
       */
-    val isAttached: Boolean = js.native
+    def isAttached: Boolean = js.native
     
     /**
       * Test whether the object has been disposed.
@@ -549,16 +556,21 @@ object typesLayoutMod {
       */
     /* CompleteClass */
     override val isDisposed: Boolean = js.native
+    /**
+      * Whether the layout item is disposed.
+      */
+    @JSName("isDisposed")
+    def isDisposed_MLayoutItem: Boolean = js.native
     
     /**
       * Whether the managed widget is hidden.
       */
-    val isHidden: Boolean = js.native
+    def isHidden: Boolean = js.native
     
     /**
       * Whether the managed widget is visible.
       */
-    val isVisible: Boolean = js.native
+    def isVisible: Boolean = js.native
     
     /**
       * The computed maximum height of the widget.
@@ -566,7 +578,7 @@ object typesLayoutMod {
       * #### Notes
       * This value can be updated by calling the `fit` method.
       */
-    val maxHeight: Double = js.native
+    def maxHeight: Double = js.native
     
     /**
       * The computed maximum width of the widget.
@@ -574,7 +586,7 @@ object typesLayoutMod {
       * #### Notes
       * This value can be updated by calling the `fit` method.
       */
-    val maxWidth: Double = js.native
+    def maxWidth: Double = js.native
     
     /**
       * The computed minimum height of the widget.
@@ -582,7 +594,7 @@ object typesLayoutMod {
       * #### Notes
       * This value can be updated by calling the `fit` method.
       */
-    val minHeight: Double = js.native
+    def minHeight: Double = js.native
     
     /**
       * The computed minimum width of the widget.
@@ -590,7 +602,7 @@ object typesLayoutMod {
       * #### Notes
       * This value can be updated by calling the `fit` method.
       */
-    val minWidth: Double = js.native
+    def minWidth: Double = js.native
     
     /**
       * Update the position and size of the managed widget.

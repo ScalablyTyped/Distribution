@@ -1,0 +1,38 @@
+package typings.awsSdk2Types
+
+import typings.awsSdk2Types.libTokenMod.Token
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object libTokenSsoTokenProviderMod {
+  
+  @JSImport("aws-sdk2-types/lib/token/sso_token_provider", "SSOTokenProvider")
+  @js.native
+  /**
+    * Creates a new SSOTokenProvider object.
+    */
+  open class SSOTokenProvider () extends Token {
+    def this(options: SSOTokenProviderOptions) = this()
+  }
+  
+  trait SSOTokenProviderOptions extends StObject {
+    
+    var profile: js.UndefOr[String] = js.undefined
+  }
+  object SSOTokenProviderOptions {
+    
+    inline def apply(): SSOTokenProviderOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SSOTokenProviderOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SSOTokenProviderOptions] (val x: Self) extends AnyVal {
+      
+      inline def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      
+      inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+    }
+  }
+}

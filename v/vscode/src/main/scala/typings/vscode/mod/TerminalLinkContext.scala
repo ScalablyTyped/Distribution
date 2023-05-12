@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TerminalLinkContext extends StObject {
   
   /**
-    * This is the text from the unwrapped line in the terminal.
-    */
+  		 * This is the text from the unwrapped line in the terminal.
+  		 */
   var line: String
   
   /**
-    * The terminal the link belongs to.
-    */
+  		 * The terminal the link belongs to.
+  		 */
   var terminal: Terminal
 }
 object TerminalLinkContext {

@@ -1,20 +1,20 @@
 package typings.angularCli
 
 import typings.angularCli.srcCommandBuilderArchitectCommandModuleMod.ArchitectCommandModule
-import typings.angularCli.srcCommandBuilderCommandModuleMod.CommandContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcCommandsTestCliMod {
   
-  @JSImport("@angular/cli/src/commands/test/cli", "TestCommandModule")
+  @JSImport("@angular/cli/src/commands/test/cli", JSImport.Default)
   @js.native
-  open class TestCommandModule protected () extends ArchitectCommandModule {
-    def this(context: CommandContext) = this()
+  open class default () extends TestCommandModule
+  
+  @js.native
+  trait TestCommandModule extends ArchitectCommandModule {
     
-    @JSName("aliases")
-    var aliases_TestCommandModule: js.Array[String] = js.native
+    var aliases: js.UndefOr[js.Array[String]] = js.native
     
     @JSName("describe")
     var describe_TestCommandModule: String = js.native

@@ -7,11 +7,14 @@ import typings.cypress.typesSinonMod.SinonSpy
 import typings.std.Exclude
 import typings.std.Parameters
 import typings.std.Pick
+import typings.std.Record
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+
+type ActiveSessions = Record[String, SessionData]
 
 type Agent[T /* <: SinonSpy[js.Array[Any], Any] */] = SinonSpyAgent[T] & T
 
@@ -37,7 +40,7 @@ type BrowserName = _BrowserName | String
 
 type CanReturnChainable = Unit | Chainable[Any] | js.Promise[Any]
 
-type CommandFn[T /* <: /* keyof cypress.Cypress.ChainableMethods<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 88, starting with typings.cypress.cypressStrings.as, typings.cypress.cypressStrings.title, typings.cypress.cypressStrings.clearLocalStorage */ Any */] = js.ThisFunction1[
+type CommandFn[T /* <: /* keyof cypress.Cypress.ChainableMethods<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 93, starting with typings.cypress.cypressStrings.as, typings.cypress.cypressStrings.title, typings.cypress.cypressStrings.clearAllCookies */ Any */] = js.ThisFunction1[
 /* this */ Context, 
 /* args */ Parameters[
   /* import warning: importer.ImportType#apply Failed type conversion: cypress.Cypress.ChainableMethods<any>[T] */ js.Any
@@ -46,7 +49,7 @@ type CommandFn[T /* <: /* keyof cypress.Cypress.ChainableMethods<any> */ /* impo
   /* import warning: importer.ImportType#apply Failed type conversion: cypress.Cypress.ChainableMethods<any>[T] */ js.Any
 ]) | Unit]
 
-type CommandFnWithOriginalFn[T /* <: /* keyof cypress.Cypress.Chainable<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 88, starting with typings.cypress.cypressStrings.and, typings.cypress.cypressStrings.as, typings.cypress.cypressStrings.selectFile */ Any */] = js.ThisFunction2[
+type CommandFnWithOriginalFn[T /* <: /* keyof cypress.Cypress.Chainable<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 93, starting with typings.cypress.cypressStrings.and, typings.cypress.cypressStrings.as, typings.cypress.cypressStrings.blur */ Any */] = js.ThisFunction2[
 /* this */ Context, 
 /* originalFn */ CommandOriginalFn[T], 
 /* args */ Parameters[
@@ -56,7 +59,7 @@ type CommandFnWithOriginalFn[T /* <: /* keyof cypress.Cypress.Chainable<any> */ 
   /* import warning: importer.ImportType#apply Failed type conversion: cypress.Cypress.ChainableMethods<any>[T] */ js.Any
 ]) | Unit]
 
-type CommandFnWithOriginalFnAndSubject[T /* <: /* keyof cypress.Cypress.Chainable<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 88, starting with typings.cypress.cypressStrings.and, typings.cypress.cypressStrings.as, typings.cypress.cypressStrings.selectFile */ Any */, S] = js.ThisFunction3[
+type CommandFnWithOriginalFnAndSubject[T /* <: /* keyof cypress.Cypress.Chainable<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 93, starting with typings.cypress.cypressStrings.and, typings.cypress.cypressStrings.as, typings.cypress.cypressStrings.blur */ Any */, S] = js.ThisFunction3[
 /* this */ Context, 
 /* originalFn */ CommandOriginalFnWithSubject[T, S], 
 /* prevSubject */ S, 
@@ -67,7 +70,7 @@ type CommandFnWithOriginalFnAndSubject[T /* <: /* keyof cypress.Cypress.Chainabl
   /* import warning: importer.ImportType#apply Failed type conversion: cypress.Cypress.ChainableMethods<any>[T] */ js.Any
 ]) | Unit]
 
-type CommandFnWithSubject[T /* <: /* keyof cypress.Cypress.ChainableMethods<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 88, starting with typings.cypress.cypressStrings.as, typings.cypress.cypressStrings.title, typings.cypress.cypressStrings.clearLocalStorage */ Any */, S] = js.ThisFunction2[
+type CommandFnWithSubject[T /* <: /* keyof cypress.Cypress.ChainableMethods<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 93, starting with typings.cypress.cypressStrings.as, typings.cypress.cypressStrings.title, typings.cypress.cypressStrings.clearAllCookies */ Any */, S] = js.ThisFunction2[
 /* this */ Context, 
 /* prevSubject */ S, 
 /* args */ Parameters[
@@ -151,7 +154,35 @@ type PluginConfig = js.Function2[
 /* config */ PluginConfigOptions, 
 Unit | ConfigOptions[Any] | js.Promise[ConfigOptions[Any]]]
 
+type QueryFn[T /* <: /* keyof cypress.Cypress.ChainableMethods<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 93, starting with typings.cypress.cypressStrings.as, typings.cypress.cypressStrings.title, typings.cypress.cypressStrings.clearAllCookies */ Any */] = js.ThisFunction1[
+/* this */ Command, 
+/* args */ Parameters[
+  /* import warning: importer.ImportType#apply Failed type conversion: cypress.Cypress.ChainableMethods<any>[T] */ js.Any
+], 
+js.Function1[/* subject */ Any, Any]]
+
+type QueryFnWithOriginalFn[T /* <: /* keyof cypress.Cypress.Chainable<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 93, starting with typings.cypress.cypressStrings.and, typings.cypress.cypressStrings.as, typings.cypress.cypressStrings.blur */ Any */] = js.ThisFunction2[
+/* this */ Command, 
+/* originalFn */ QueryFn[T], 
+/* args */ Parameters[
+  /* import warning: importer.ImportType#apply Failed type conversion: cypress.Cypress.ChainableMethods<any>[T] */ js.Any
+], 
+js.Function1[/* subject */ Any, Any]]
+
 type RequestBody = String | js.Object
+
+// TODO: raise minimum required TypeScript version to 3.7
+// and make this recursive
+// https://github.com/cypress-io/cypress/issues/24875
+/* Rewritten from type alias, can be one of: 
+  - java.lang.String
+  - scala.Double
+  - scala.Boolean
+  - scala.Null
+  - typings.cypress.Cypress.StorableObject
+  - typings.cypress.Cypress.StorableArray
+*/
+type Storable = _Storable | String | Double | Boolean | Null
 
 /**
   * Individual task callback. Receives a single argument and _should_ return

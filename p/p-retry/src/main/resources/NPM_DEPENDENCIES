@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "p-retry" : "5.1.1"
+      "p-retry" : "5.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "p-retry" : "5.1.1"
+      "p-retry" : "5.1.2"
     }
   ],
   "compile-devDependencies" : [

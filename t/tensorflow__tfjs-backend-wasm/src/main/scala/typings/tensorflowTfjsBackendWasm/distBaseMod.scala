@@ -36,5 +36,5 @@ object distBaseMod {
   
   @JSImport("@tensorflow/tfjs-backend-wasm/dist/base", "version_wasm")
   @js.native
-  val versionWasm: /* "4.0.0" */ String = js.native
+  val versionWasm: /* "4.5.0" */ String = js.native
 }

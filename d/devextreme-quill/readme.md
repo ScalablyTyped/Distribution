@@ -1,7 +1,7 @@
 
 # Scala.js typings for devextreme-quill
 
-Typings are for version 1.5.18
+Typings are for version 1.6.2
 
 ## Library description:
 Core of the DevExtreme HtmlEditor

@@ -21,13 +21,14 @@ import typings.react.mod.FC
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.global.JSX.Element
+import typings.reactSpringCore.mod.SpringConfig
 import typings.std.Omit
 import typings.std.SVGPathElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined @nivo/pie.@nivo/pie/dist/types/types.DataProps<RawDatum> & @nivo/core.@nivo/core.Dimensions & std.Partial<@nivo/pie.@nivo/pie/dist/types/types.CommonPieProps<RawDatum>> & @nivo/core.@nivo/core.SvgDefsAndFill<@nivo/pie.@nivo/pie/dist/types/types.ComputedDatum<RawDatum>> & @nivo/pie.@nivo/pie/dist/types/types.PieHandlers<RawDatum, std.SVGPathElement> & {  layers :std.Array<@nivo/pie.@nivo/pie/dist/types/types.PieLayer<RawDatum>> | undefined,   animate :boolean | undefined,   motionConfig :@nivo/core.@nivo/core.ModernMotionProps['motionConfig'] | undefined,   transitionMode :@nivo/arcs.@nivo/arcs.ArcTransitionMode | undefined} & @nivo/pie.@nivo/pie/dist/types/types.PieSvgCustomComponents<RawDatum> */
+/* Inlined @nivo/pie.@nivo/pie/dist/types/types.DataProps<RawDatum> & @nivo/core.@nivo/core.Dimensions & std.Partial<@nivo/pie.@nivo/pie/dist/types/types.CommonPieProps<RawDatum>> & @nivo/core.@nivo/core.SvgDefsAndFill<@nivo/pie.@nivo/pie/dist/types/types.ComputedDatum<RawDatum>> & @nivo/pie.@nivo/pie/dist/types/types.PieHandlers<RawDatum, std.SVGPathElement> & {  layers :std.Array<@nivo/pie.@nivo/pie/dist/types/types.PieLayer<RawDatum>> | undefined,   animate :boolean | undefined,   motionConfig :@nivo/core.@nivo/core.MotionProps['motionConfig'] | undefined,   transitionMode :@nivo/arcs.@nivo/arcs.ArcTransitionMode | undefined} & @nivo/pie.@nivo/pie/dist/types/types.PieSvgCustomComponents<RawDatum> */
 trait PieSvgProps[RawDatum] extends StObject {
   
   var activeInnerRadiusOffset: js.UndefOr[Double] = js.undefined
@@ -104,9 +105,7 @@ trait PieSvgProps[RawDatum] extends StObject {
   
   var margin: js.UndefOr[Box] = js.undefined
   
-  var motionConfig: js.UndefOr[
-    String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-  ] = js.undefined
+  var motionConfig: js.UndefOr[String | SpringConfig] = js.undefined
   
   var onClick: js.UndefOr[MouseEventHandler[RawDatum, SVGPathElement]] = js.undefined
   
@@ -312,9 +311,7 @@ object PieSvgProps {
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    inline def setMotionConfig(
-      value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-    ): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
+    inline def setMotionConfig(value: String | SpringConfig): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
     
     inline def setMotionConfigUndefined: Self = StObject.set(x, "motionConfig", js.undefined)
     

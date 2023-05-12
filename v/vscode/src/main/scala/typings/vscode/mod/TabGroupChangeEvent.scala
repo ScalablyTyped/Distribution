@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TabGroupChangeEvent extends StObject {
   
   /**
-    * Tab groups that have changed, e.g have changed
-    * their {@link TabGroup.isActive active} state.
-    */
+  		 * Tab groups that have changed, e.g have changed
+  		 * their {@link TabGroup.isActive active} state.
+  		 */
   val changed: js.Array[TabGroup]
   
   /**
-    * Tab groups that have been closed.
-    */
+  		 * Tab groups that have been closed.
+  		 */
   val closed: js.Array[TabGroup]
   
   /**
-    * Tab groups that have been opened.
-    */
+  		 * Tab groups that have been opened.
+  		 */
   val opened: js.Array[TabGroup]
 }
 object TabGroupChangeEvent {

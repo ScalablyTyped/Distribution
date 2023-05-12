@@ -287,6 +287,8 @@ object sapUiBaseEventProviderMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires an {@link sap.ui.base.Event event} with the given settings and notifies all attached event handlers.
       *
       * @returns Returns `this` to allow method chaining. When `preventDefault` is supported on the fired event
@@ -416,6 +418,8 @@ object sapUiBaseEventProviderMod {
     ): this.type | Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns the parent in the eventing hierarchy of this object.
       *
       * Per default this returns null, but if eventing is used in objects, which are hierarchically structured,
@@ -427,6 +431,8 @@ object sapUiBaseEventProviderMod {
     def getEventingParent(): EventProvider | Null = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns whether there are any registered event handlers for the event with the given identifier.
       *
       * @returns Whether there are any registered event handlers

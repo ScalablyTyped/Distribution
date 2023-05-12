@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 // region Constructors
 /**
-  * @constructor
   */
 open class EventEmitter () extends StObject {
   
@@ -21,7 +20,6 @@ open class EventEmitter () extends StObject {
     *     after
     *    the first event is fired.
     * @return {!EventEmitter} A self reference.
-    * @private
     */
   def addListener(`type`: String, fn: js.Function): EventEmitter = js.native
   def addListener(`type`: String, fn: js.Function, opt_scope: Any): EventEmitter = js.native

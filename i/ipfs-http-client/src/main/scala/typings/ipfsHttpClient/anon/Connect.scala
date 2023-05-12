@@ -22,15 +22,15 @@ trait Connect extends StObject {
     ]
   ] = js.native
   
-  def connect(addr: PeerId): js.Promise[Unit] = js.native
-  def connect(addr: PeerId, options: AbortOptions & HTTPClientExtraOptions): js.Promise[Unit] = js.native
-  def connect(addr: Multiaddr_): js.Promise[Unit] = js.native
-  def connect(addr: Multiaddr_, options: AbortOptions & HTTPClientExtraOptions): js.Promise[Unit] = js.native
+  def connect(multiaddrOrPeerId: PeerId): js.Promise[Unit] = js.native
+  def connect(multiaddrOrPeerId: PeerId, options: AbortOptions & HTTPClientExtraOptions): js.Promise[Unit] = js.native
+  def connect(multiaddrOrPeerId: Multiaddr_): js.Promise[Unit] = js.native
+  def connect(multiaddrOrPeerId: Multiaddr_, options: AbortOptions & HTTPClientExtraOptions): js.Promise[Unit] = js.native
   
-  def disconnect(addr: PeerId): js.Promise[Unit] = js.native
-  def disconnect(addr: PeerId, options: AbortOptions & HTTPClientExtraOptions): js.Promise[Unit] = js.native
-  def disconnect(addr: Multiaddr_): js.Promise[Unit] = js.native
-  def disconnect(addr: Multiaddr_, options: AbortOptions & HTTPClientExtraOptions): js.Promise[Unit] = js.native
+  def disconnect(multiaddrOrPeerId: PeerId): js.Promise[Unit] = js.native
+  def disconnect(multiaddrOrPeerId: PeerId, options: AbortOptions & HTTPClientExtraOptions): js.Promise[Unit] = js.native
+  def disconnect(multiaddrOrPeerId: Multiaddr_): js.Promise[Unit] = js.native
+  def disconnect(multiaddrOrPeerId: Multiaddr_, options: AbortOptions & HTTPClientExtraOptions): js.Promise[Unit] = js.native
   
   def localAddrs(): js.Promise[js.Array[Multiaddr_]] = js.native
   def localAddrs(options: AbortOptions & HTTPClientExtraOptions): js.Promise[js.Array[Multiaddr_]] = js.native

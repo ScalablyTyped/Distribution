@@ -4,6 +4,7 @@ import typings.mendixmodelsdk.srcGenAppservicesMod.appservices.AppServiceAction
 import typings.mendixmodelsdk.srcGenAppservicesMod.appservices.AppServiceActionParameter
 import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
 import typings.mendixmodelsdk.srcGenConstantsMod.constants.Constant
+import typings.mendixmodelsdk.srcGenDatabaseconnectorMod.databaseconnector.QueryParameter
 import typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetColumn
 import typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetParameter
 import typings.mendixmodelsdk.srcGenDocumenttemplatesMod.documenttemplates.DocumentTemplateParameter
@@ -16,6 +17,8 @@ import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MicroflowParameterB
 import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MicroflowParameterObject
 import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.ResultHandling
 import typings.mendixmodelsdk.srcGenPagesMod.pages.PageParameter
+import typings.mendixmodelsdk.srcGenPagesMod.pages.SnippetParameter
+import typings.mendixmodelsdk.srcGenRestMod.rest.OperationParameter
 import typings.mendixmodelsdk.srcGenRestMod.rest.RestOperationParameter
 import typings.mendixmodelsdk.srcGenWebservicesMod.webservices.PublishedOperation
 import typings.mendixmodelsdk.srcGenWebservicesMod.webservices.PublishedParameter
@@ -191,6 +194,17 @@ object datatypes {
     
     /**
       * Creates and returns a new BinaryType instance in the SDK and on the server.
+      * The new BinaryType will be automatically stored in the 'dataType' property
+      * of the parent rest.OperationParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.24.0 and higher
+      */
+    /* static member */
+    inline def createInOperationParameterUnderDataType(container: OperationParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOperationParameterUnderDataType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType]
+    
+    /**
+      * Creates and returns a new BinaryType instance in the SDK and on the server.
       * The new BinaryType will be automatically stored in the 'parameterType' property
       * of the parent pages.PageParameter element passed as argument.
       *
@@ -224,6 +238,17 @@ object datatypes {
     
     /**
       * Creates and returns a new BinaryType instance in the SDK and on the server.
+      * The new BinaryType will be automatically stored in the 'dataType' property
+      * of the parent databaseconnector.QueryParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.22.0 and higher
+      */
+    /* static member */
+    inline def createInQueryParameterUnderDataType(container: QueryParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInQueryParameterUnderDataType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType]
+    
+    /**
+      * Creates and returns a new BinaryType instance in the SDK and on the server.
       * The new BinaryType will be automatically stored in the 'type' property
       * of the parent rest.RestOperationParameter element passed as argument.
       *
@@ -243,6 +268,17 @@ object datatypes {
       */
     /* static member */
     inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType]
+    
+    /**
+      * Creates and returns a new BinaryType instance in the SDK and on the server.
+      * The new BinaryType will be automatically stored in the 'parameterType' property
+      * of the parent pages.SnippetParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.21.0 and higher
+      */
+    /* static member */
+    inline def createInSnippetParameterUnderParameterType(container: SnippetParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BinaryType]
     
     /**
       * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -432,6 +468,17 @@ object datatypes {
     
     /**
       * Creates and returns a new BooleanType instance in the SDK and on the server.
+      * The new BooleanType will be automatically stored in the 'dataType' property
+      * of the parent rest.OperationParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.24.0 and higher
+      */
+    /* static member */
+    inline def createInOperationParameterUnderDataType(container: OperationParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOperationParameterUnderDataType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType]
+    
+    /**
+      * Creates and returns a new BooleanType instance in the SDK and on the server.
       * The new BooleanType will be automatically stored in the 'parameterType' property
       * of the parent pages.PageParameter element passed as argument.
       *
@@ -465,6 +512,17 @@ object datatypes {
     
     /**
       * Creates and returns a new BooleanType instance in the SDK and on the server.
+      * The new BooleanType will be automatically stored in the 'dataType' property
+      * of the parent databaseconnector.QueryParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.22.0 and higher
+      */
+    /* static member */
+    inline def createInQueryParameterUnderDataType(container: QueryParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInQueryParameterUnderDataType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType]
+    
+    /**
+      * Creates and returns a new BooleanType instance in the SDK and on the server.
       * The new BooleanType will be automatically stored in the 'type' property
       * of the parent rest.RestOperationParameter element passed as argument.
       *
@@ -484,6 +542,17 @@ object datatypes {
       */
     /* static member */
     inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType]
+    
+    /**
+      * Creates and returns a new BooleanType instance in the SDK and on the server.
+      * The new BooleanType will be automatically stored in the 'parameterType' property
+      * of the parent pages.SnippetParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.21.0 and higher
+      */
+    /* static member */
+    inline def createInSnippetParameterUnderParameterType(container: SnippetParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.BooleanType]
     
     /**
       * Creates and returns a new BooleanType instance in the SDK and on the server.
@@ -710,6 +779,17 @@ object datatypes {
     
     /**
       * Creates and returns a new DateTimeType instance in the SDK and on the server.
+      * The new DateTimeType will be automatically stored in the 'dataType' property
+      * of the parent rest.OperationParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.24.0 and higher
+      */
+    /* static member */
+    inline def createInOperationParameterUnderDataType(container: OperationParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOperationParameterUnderDataType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType]
+    
+    /**
+      * Creates and returns a new DateTimeType instance in the SDK and on the server.
       * The new DateTimeType will be automatically stored in the 'parameterType' property
       * of the parent pages.PageParameter element passed as argument.
       *
@@ -743,6 +823,17 @@ object datatypes {
     
     /**
       * Creates and returns a new DateTimeType instance in the SDK and on the server.
+      * The new DateTimeType will be automatically stored in the 'dataType' property
+      * of the parent databaseconnector.QueryParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.22.0 and higher
+      */
+    /* static member */
+    inline def createInQueryParameterUnderDataType(container: QueryParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInQueryParameterUnderDataType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType]
+    
+    /**
+      * Creates and returns a new DateTimeType instance in the SDK and on the server.
       * The new DateTimeType will be automatically stored in the 'type' property
       * of the parent rest.RestOperationParameter element passed as argument.
       *
@@ -762,6 +853,17 @@ object datatypes {
       */
     /* static member */
     inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType]
+    
+    /**
+      * Creates and returns a new DateTimeType instance in the SDK and on the server.
+      * The new DateTimeType will be automatically stored in the 'parameterType' property
+      * of the parent pages.SnippetParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.21.0 and higher
+      */
+    /* static member */
+    inline def createInSnippetParameterUnderParameterType(container: SnippetParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DateTimeType]
     
     /**
       * Creates and returns a new DateTimeType instance in the SDK and on the server.
@@ -951,6 +1053,17 @@ object datatypes {
     
     /**
       * Creates and returns a new DecimalType instance in the SDK and on the server.
+      * The new DecimalType will be automatically stored in the 'dataType' property
+      * of the parent rest.OperationParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.24.0 and higher
+      */
+    /* static member */
+    inline def createInOperationParameterUnderDataType(container: OperationParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOperationParameterUnderDataType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType]
+    
+    /**
+      * Creates and returns a new DecimalType instance in the SDK and on the server.
       * The new DecimalType will be automatically stored in the 'parameterType' property
       * of the parent pages.PageParameter element passed as argument.
       *
@@ -984,6 +1097,17 @@ object datatypes {
     
     /**
       * Creates and returns a new DecimalType instance in the SDK and on the server.
+      * The new DecimalType will be automatically stored in the 'dataType' property
+      * of the parent databaseconnector.QueryParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.22.0 and higher
+      */
+    /* static member */
+    inline def createInQueryParameterUnderDataType(container: QueryParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInQueryParameterUnderDataType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType]
+    
+    /**
+      * Creates and returns a new DecimalType instance in the SDK and on the server.
       * The new DecimalType will be automatically stored in the 'type' property
       * of the parent rest.RestOperationParameter element passed as argument.
       *
@@ -1003,6 +1127,17 @@ object datatypes {
       */
     /* static member */
     inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType]
+    
+    /**
+      * Creates and returns a new DecimalType instance in the SDK and on the server.
+      * The new DecimalType will be automatically stored in the 'parameterType' property
+      * of the parent pages.SnippetParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.21.0 and higher
+      */
+    /* static member */
+    inline def createInSnippetParameterUnderParameterType(container: SnippetParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.DecimalType]
     
     /**
       * Creates and returns a new DecimalType instance in the SDK and on the server.
@@ -1192,6 +1327,17 @@ object datatypes {
     
     /**
       * Creates and returns a new EmptyType instance in the SDK and on the server.
+      * The new EmptyType will be automatically stored in the 'dataType' property
+      * of the parent rest.OperationParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.24.0 and higher
+      */
+    /* static member */
+    inline def createInOperationParameterUnderDataType(container: OperationParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOperationParameterUnderDataType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType]
+    
+    /**
+      * Creates and returns a new EmptyType instance in the SDK and on the server.
       * The new EmptyType will be automatically stored in the 'parameterType' property
       * of the parent pages.PageParameter element passed as argument.
       *
@@ -1225,6 +1371,17 @@ object datatypes {
     
     /**
       * Creates and returns a new EmptyType instance in the SDK and on the server.
+      * The new EmptyType will be automatically stored in the 'dataType' property
+      * of the parent databaseconnector.QueryParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.22.0 and higher
+      */
+    /* static member */
+    inline def createInQueryParameterUnderDataType(container: QueryParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInQueryParameterUnderDataType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType]
+    
+    /**
+      * Creates and returns a new EmptyType instance in the SDK and on the server.
       * The new EmptyType will be automatically stored in the 'type' property
       * of the parent rest.RestOperationParameter element passed as argument.
       *
@@ -1244,6 +1401,17 @@ object datatypes {
       */
     /* static member */
     inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType]
+    
+    /**
+      * Creates and returns a new EmptyType instance in the SDK and on the server.
+      * The new EmptyType will be automatically stored in the 'parameterType' property
+      * of the parent pages.SnippetParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.21.0 and higher
+      */
+    /* static member */
+    inline def createInSnippetParameterUnderParameterType(container: SnippetParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EmptyType]
     
     /**
       * Creates and returns a new EmptyType instance in the SDK and on the server.
@@ -1468,6 +1636,17 @@ object datatypes {
     
     /**
       * Creates and returns a new EnumerationType instance in the SDK and on the server.
+      * The new EnumerationType will be automatically stored in the 'dataType' property
+      * of the parent rest.OperationParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.24.0 and higher
+      */
+    /* static member */
+    inline def createInOperationParameterUnderDataType(container: OperationParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOperationParameterUnderDataType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType]
+    
+    /**
+      * Creates and returns a new EnumerationType instance in the SDK and on the server.
       * The new EnumerationType will be automatically stored in the 'parameterType' property
       * of the parent pages.PageParameter element passed as argument.
       *
@@ -1501,6 +1680,17 @@ object datatypes {
     
     /**
       * Creates and returns a new EnumerationType instance in the SDK and on the server.
+      * The new EnumerationType will be automatically stored in the 'dataType' property
+      * of the parent databaseconnector.QueryParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.22.0 and higher
+      */
+    /* static member */
+    inline def createInQueryParameterUnderDataType(container: QueryParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInQueryParameterUnderDataType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType]
+    
+    /**
+      * Creates and returns a new EnumerationType instance in the SDK and on the server.
       * The new EnumerationType will be automatically stored in the 'type' property
       * of the parent rest.RestOperationParameter element passed as argument.
       *
@@ -1520,6 +1710,17 @@ object datatypes {
       */
     /* static member */
     inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType]
+    
+    /**
+      * Creates and returns a new EnumerationType instance in the SDK and on the server.
+      * The new EnumerationType will be automatically stored in the 'parameterType' property
+      * of the parent pages.SnippetParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.21.0 and higher
+      */
+    /* static member */
+    inline def createInSnippetParameterUnderParameterType(container: SnippetParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.EnumerationType]
     
     /**
       * Creates and returns a new EnumerationType instance in the SDK and on the server.
@@ -1709,6 +1910,17 @@ object datatypes {
     
     /**
       * Creates and returns a new FloatType instance in the SDK and on the server.
+      * The new FloatType will be automatically stored in the 'dataType' property
+      * of the parent rest.OperationParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.24.0 and higher
+      */
+    /* static member */
+    inline def createInOperationParameterUnderDataType(container: OperationParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOperationParameterUnderDataType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType]
+    
+    /**
+      * Creates and returns a new FloatType instance in the SDK and on the server.
       * The new FloatType will be automatically stored in the 'parameterType' property
       * of the parent pages.PageParameter element passed as argument.
       *
@@ -1742,6 +1954,17 @@ object datatypes {
     
     /**
       * Creates and returns a new FloatType instance in the SDK and on the server.
+      * The new FloatType will be automatically stored in the 'dataType' property
+      * of the parent databaseconnector.QueryParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.22.0 and higher
+      */
+    /* static member */
+    inline def createInQueryParameterUnderDataType(container: QueryParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInQueryParameterUnderDataType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType]
+    
+    /**
+      * Creates and returns a new FloatType instance in the SDK and on the server.
       * The new FloatType will be automatically stored in the 'type' property
       * of the parent rest.RestOperationParameter element passed as argument.
       *
@@ -1761,6 +1984,17 @@ object datatypes {
       */
     /* static member */
     inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType]
+    
+    /**
+      * Creates and returns a new FloatType instance in the SDK and on the server.
+      * The new FloatType will be automatically stored in the 'parameterType' property
+      * of the parent pages.SnippetParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.21.0 and higher
+      */
+    /* static member */
+    inline def createInSnippetParameterUnderParameterType(container: SnippetParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.FloatType]
     
     /**
       * Creates and returns a new FloatType instance in the SDK and on the server.
@@ -1950,6 +2184,17 @@ object datatypes {
     
     /**
       * Creates and returns a new IntegerType instance in the SDK and on the server.
+      * The new IntegerType will be automatically stored in the 'dataType' property
+      * of the parent rest.OperationParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.24.0 and higher
+      */
+    /* static member */
+    inline def createInOperationParameterUnderDataType(container: OperationParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOperationParameterUnderDataType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType]
+    
+    /**
+      * Creates and returns a new IntegerType instance in the SDK and on the server.
       * The new IntegerType will be automatically stored in the 'parameterType' property
       * of the parent pages.PageParameter element passed as argument.
       *
@@ -1983,6 +2228,17 @@ object datatypes {
     
     /**
       * Creates and returns a new IntegerType instance in the SDK and on the server.
+      * The new IntegerType will be automatically stored in the 'dataType' property
+      * of the parent databaseconnector.QueryParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.22.0 and higher
+      */
+    /* static member */
+    inline def createInQueryParameterUnderDataType(container: QueryParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInQueryParameterUnderDataType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType]
+    
+    /**
+      * Creates and returns a new IntegerType instance in the SDK and on the server.
       * The new IntegerType will be automatically stored in the 'type' property
       * of the parent rest.RestOperationParameter element passed as argument.
       *
@@ -2002,6 +2258,17 @@ object datatypes {
       */
     /* static member */
     inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType]
+    
+    /**
+      * Creates and returns a new IntegerType instance in the SDK and on the server.
+      * The new IntegerType will be automatically stored in the 'parameterType' property
+      * of the parent pages.SnippetParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.21.0 and higher
+      */
+    /* static member */
+    inline def createInSnippetParameterUnderParameterType(container: SnippetParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IntegerType]
     
     /**
       * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -2191,6 +2458,17 @@ object datatypes {
     
     /**
       * Creates and returns a new ListType instance in the SDK and on the server.
+      * The new ListType will be automatically stored in the 'dataType' property
+      * of the parent rest.OperationParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.24.0 and higher
+      */
+    /* static member */
+    inline def createInOperationParameterUnderDataType(container: OperationParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOperationParameterUnderDataType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType]
+    
+    /**
+      * Creates and returns a new ListType instance in the SDK and on the server.
       * The new ListType will be automatically stored in the 'parameterType' property
       * of the parent pages.PageParameter element passed as argument.
       *
@@ -2224,6 +2502,17 @@ object datatypes {
     
     /**
       * Creates and returns a new ListType instance in the SDK and on the server.
+      * The new ListType will be automatically stored in the 'dataType' property
+      * of the parent databaseconnector.QueryParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.22.0 and higher
+      */
+    /* static member */
+    inline def createInQueryParameterUnderDataType(container: QueryParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInQueryParameterUnderDataType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType]
+    
+    /**
+      * Creates and returns a new ListType instance in the SDK and on the server.
       * The new ListType will be automatically stored in the 'type' property
       * of the parent rest.RestOperationParameter element passed as argument.
       *
@@ -2243,6 +2532,17 @@ object datatypes {
       */
     /* static member */
     inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType]
+    
+    /**
+      * Creates and returns a new ListType instance in the SDK and on the server.
+      * The new ListType will be automatically stored in the 'parameterType' property
+      * of the parent pages.SnippetParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.21.0 and higher
+      */
+    /* static member */
+    inline def createInSnippetParameterUnderParameterType(container: SnippetParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ListType]
     
     /**
       * Creates and returns a new ListType instance in the SDK and on the server.
@@ -2432,6 +2732,17 @@ object datatypes {
     
     /**
       * Creates and returns a new ObjectType instance in the SDK and on the server.
+      * The new ObjectType will be automatically stored in the 'dataType' property
+      * of the parent rest.OperationParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.24.0 and higher
+      */
+    /* static member */
+    inline def createInOperationParameterUnderDataType(container: OperationParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOperationParameterUnderDataType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType]
+    
+    /**
+      * Creates and returns a new ObjectType instance in the SDK and on the server.
       * The new ObjectType will be automatically stored in the 'parameterType' property
       * of the parent pages.PageParameter element passed as argument.
       *
@@ -2465,6 +2776,17 @@ object datatypes {
     
     /**
       * Creates and returns a new ObjectType instance in the SDK and on the server.
+      * The new ObjectType will be automatically stored in the 'dataType' property
+      * of the parent databaseconnector.QueryParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.22.0 and higher
+      */
+    /* static member */
+    inline def createInQueryParameterUnderDataType(container: QueryParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInQueryParameterUnderDataType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType]
+    
+    /**
+      * Creates and returns a new ObjectType instance in the SDK and on the server.
       * The new ObjectType will be automatically stored in the 'type' property
       * of the parent rest.RestOperationParameter element passed as argument.
       *
@@ -2484,6 +2806,17 @@ object datatypes {
       */
     /* static member */
     inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType]
+    
+    /**
+      * Creates and returns a new ObjectType instance in the SDK and on the server.
+      * The new ObjectType will be automatically stored in the 'parameterType' property
+      * of the parent pages.SnippetParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.21.0 and higher
+      */
+    /* static member */
+    inline def createInSnippetParameterUnderParameterType(container: SnippetParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.ObjectType]
     
     /**
       * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -2673,6 +3006,17 @@ object datatypes {
     
     /**
       * Creates and returns a new StringType instance in the SDK and on the server.
+      * The new StringType will be automatically stored in the 'dataType' property
+      * of the parent rest.OperationParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.24.0 and higher
+      */
+    /* static member */
+    inline def createInOperationParameterUnderDataType(container: OperationParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOperationParameterUnderDataType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType]
+    
+    /**
+      * Creates and returns a new StringType instance in the SDK and on the server.
       * The new StringType will be automatically stored in the 'parameterType' property
       * of the parent pages.PageParameter element passed as argument.
       *
@@ -2706,6 +3050,17 @@ object datatypes {
     
     /**
       * Creates and returns a new StringType instance in the SDK and on the server.
+      * The new StringType will be automatically stored in the 'dataType' property
+      * of the parent databaseconnector.QueryParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.22.0 and higher
+      */
+    /* static member */
+    inline def createInQueryParameterUnderDataType(container: QueryParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInQueryParameterUnderDataType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType]
+    
+    /**
+      * Creates and returns a new StringType instance in the SDK and on the server.
       * The new StringType will be automatically stored in the 'type' property
       * of the parent rest.RestOperationParameter element passed as argument.
       *
@@ -2725,6 +3080,17 @@ object datatypes {
       */
     /* static member */
     inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType]
+    
+    /**
+      * Creates and returns a new StringType instance in the SDK and on the server.
+      * The new StringType will be automatically stored in the 'parameterType' property
+      * of the parent pages.SnippetParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.21.0 and higher
+      */
+    /* static member */
+    inline def createInSnippetParameterUnderParameterType(container: SnippetParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.StringType]
     
     /**
       * Creates and returns a new StringType instance in the SDK and on the server.
@@ -2914,6 +3280,17 @@ object datatypes {
     
     /**
       * Creates and returns a new UnknownType instance in the SDK and on the server.
+      * The new UnknownType will be automatically stored in the 'dataType' property
+      * of the parent rest.OperationParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.24.0 and higher
+      */
+    /* static member */
+    inline def createInOperationParameterUnderDataType(container: OperationParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOperationParameterUnderDataType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType]
+    
+    /**
+      * Creates and returns a new UnknownType instance in the SDK and on the server.
       * The new UnknownType will be automatically stored in the 'parameterType' property
       * of the parent pages.PageParameter element passed as argument.
       *
@@ -2947,6 +3324,17 @@ object datatypes {
     
     /**
       * Creates and returns a new UnknownType instance in the SDK and on the server.
+      * The new UnknownType will be automatically stored in the 'dataType' property
+      * of the parent databaseconnector.QueryParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.22.0 and higher
+      */
+    /* static member */
+    inline def createInQueryParameterUnderDataType(container: QueryParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInQueryParameterUnderDataType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType]
+    
+    /**
+      * Creates and returns a new UnknownType instance in the SDK and on the server.
       * The new UnknownType will be automatically stored in the 'type' property
       * of the parent rest.RestOperationParameter element passed as argument.
       *
@@ -2966,6 +3354,17 @@ object datatypes {
       */
     /* static member */
     inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType]
+    
+    /**
+      * Creates and returns a new UnknownType instance in the SDK and on the server.
+      * The new UnknownType will be automatically stored in the 'parameterType' property
+      * of the parent pages.SnippetParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.21.0 and higher
+      */
+    /* static member */
+    inline def createInSnippetParameterUnderParameterType(container: SnippetParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.UnknownType]
     
     /**
       * Creates and returns a new UnknownType instance in the SDK and on the server.
@@ -3155,6 +3554,17 @@ object datatypes {
     
     /**
       * Creates and returns a new VoidType instance in the SDK and on the server.
+      * The new VoidType will be automatically stored in the 'dataType' property
+      * of the parent rest.OperationParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.24.0 and higher
+      */
+    /* static member */
+    inline def createInOperationParameterUnderDataType(container: OperationParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOperationParameterUnderDataType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType]
+    
+    /**
+      * Creates and returns a new VoidType instance in the SDK and on the server.
       * The new VoidType will be automatically stored in the 'parameterType' property
       * of the parent pages.PageParameter element passed as argument.
       *
@@ -3188,6 +3598,17 @@ object datatypes {
     
     /**
       * Creates and returns a new VoidType instance in the SDK and on the server.
+      * The new VoidType will be automatically stored in the 'dataType' property
+      * of the parent databaseconnector.QueryParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.22.0 and higher
+      */
+    /* static member */
+    inline def createInQueryParameterUnderDataType(container: QueryParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInQueryParameterUnderDataType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType]
+    
+    /**
+      * Creates and returns a new VoidType instance in the SDK and on the server.
       * The new VoidType will be automatically stored in the 'type' property
       * of the parent rest.RestOperationParameter element passed as argument.
       *
@@ -3207,6 +3628,17 @@ object datatypes {
       */
     /* static member */
     inline def createInResultHandlingUnderVariableType(container: ResultHandling): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType]
+    
+    /**
+      * Creates and returns a new VoidType instance in the SDK and on the server.
+      * The new VoidType will be automatically stored in the 'parameterType' property
+      * of the parent pages.SnippetParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.21.0 and higher
+      */
+    /* static member */
+    inline def createInSnippetParameterUnderParameterType(container: SnippetParameter): typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.VoidType]
     
     /**
       * Creates and returns a new VoidType instance in the SDK and on the server.

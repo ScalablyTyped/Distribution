@@ -87,6 +87,7 @@ object distNodeEsmTestUnitTestsharedMod {
   inline def makeFakeAuthProvider(token: AccessToken): Provider[FirebaseAuthInternalName] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeFakeAuthProvider")(token.asInstanceOf[js.Any]).asInstanceOf[Provider[FirebaseAuthInternalName]]
   
   inline def storageServiceWithHandler(handler: RequestHandler): FirebaseStorageImpl = ^.asInstanceOf[js.Dynamic].applyDynamic("storageServiceWithHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[FirebaseStorageImpl]
+  inline def storageServiceWithHandler(handler: RequestHandler, shouldResponseCb: js.Function0[Boolean]): FirebaseStorageImpl = (^.asInstanceOf[js.Dynamic].applyDynamic("storageServiceWithHandler")(handler.asInstanceOf[js.Any], shouldResponseCb.asInstanceOf[js.Any])).asInstanceOf[FirebaseStorageImpl]
   
   type RequestHandler = js.Function4[
     /* url */ String, 

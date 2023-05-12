@@ -1,7 +1,7 @@
 
 # Scala.js typings for vega-canvas
 
-Typings are for version 1.2.6
+Typings are for version 1.2.7
 
 ## Library description:
 Canvas and Image utilities.

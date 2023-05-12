@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A distance matrix query sent by the <code>DistanceMatrixService</code>
-  * containing arrays of origin and destination locations, and various options
-  * for computing metrics.
-  */
 trait DistanceMatrixRequest extends StObject {
   
   /**
@@ -44,7 +39,6 @@ trait DistanceMatrixRequest extends StObject {
   var drivingOptions: js.UndefOr[DrivingOptions] = js.undefined
   
   /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
     * A language identifier for the language in which results should be
     * returned, when possible. See the <a
     * href="https://developers.google.com/maps/faq#languagesupport">list of

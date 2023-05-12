@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "protons-runtime" : "4.0.1"
+      "protons-runtime" : "5.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "protons-runtime" : "4.0.1"
+      "protons-runtime" : "5.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -37,6 +37,11 @@ trait RecognizeUtteranceResponse extends StObject {
   var messages: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
+    * The bot member that recognized the utterance.
+    */
+  var recognizedBotMember: js.UndefOr[NonEmptyString] = js.undefined
+  
+  /**
     * The attributes sent in the request. The requestAttributes field is compressed with gzip and then base64 encoded. Before you can use the contents of the field, you must decode and decompress the contents.
     */
   var requestAttributes: js.UndefOr[NonEmptyString] = js.undefined
@@ -84,6 +89,10 @@ object RecognizeUtteranceResponse {
     inline def setMessages(value: NonEmptyString): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    
+    inline def setRecognizedBotMember(value: NonEmptyString): Self = StObject.set(x, "recognizedBotMember", value.asInstanceOf[js.Any])
+    
+    inline def setRecognizedBotMemberUndefined: Self = StObject.set(x, "recognizedBotMember", js.undefined)
     
     inline def setRequestAttributes(value: NonEmptyString): Self = StObject.set(x, "requestAttributes", value.asInstanceOf[js.Any])
     

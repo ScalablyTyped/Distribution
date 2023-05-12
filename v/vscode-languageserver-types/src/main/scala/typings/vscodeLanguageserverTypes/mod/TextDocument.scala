@@ -13,8 +13,8 @@ trait TextDocument extends StObject {
     *
     * @param range (optional) An range within the document to return.
     * If no range is passed, the full content is returned.
-    * Invalid range positions are adjusted as described in [Position.line](#Position.line)
-    * and [Position.character](#Position.character).
+    * Invalid range positions are adjusted as described in {@link Position.line Position.line}
+    * and {@link Position.character Position.character}.
     * If the start range position is greater than the end range position,
     * then the effect of getText is as if the two positions were swapped.
     * @return The text of this document or a substring of the text if a
@@ -39,8 +39,8 @@ trait TextDocument extends StObject {
   
   /**
     * Converts the position to a zero-based offset.
-    * Invalid positions are adjusted as described in [Position.line](#Position.line)
-    * and [Position.character](#Position.character).
+    * Invalid positions are adjusted as described in {@link Position.line Position.line}
+    * and {@link Position.character Position.character}.
     *
     * @param position A position.
     * @return A valid zero-based offset.
@@ -51,7 +51,7 @@ trait TextDocument extends StObject {
     * Converts a zero-based offset to a position.
     *
     * @param offset A zero-based offset.
-    * @return A valid [position](#Position).
+    * @return A valid {@link Position position}.
     */
   def positionAt(offset: uinteger): Position = js.native
   
@@ -90,7 +90,7 @@ object TextDocument {
   inline def create(uri: DocumentUri, languageId: String, version: integer, content: String): TextDocument = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any], languageId.asInstanceOf[js.Any], version.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[TextDocument]
   
   /**
-    * Checks whether the given literal conforms to the [ITextDocument](#ITextDocument) interface.
+    * Checks whether the given literal conforms to the {@link ITextDocument} interface.
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.TextDocument */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.TextDocument */ Boolean]
 }

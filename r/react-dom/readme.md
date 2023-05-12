@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-dom
 
-Typings are for version 18.0
+Typings are for version 18.2
 
 ## Library description:
 React package for working with the DOM.

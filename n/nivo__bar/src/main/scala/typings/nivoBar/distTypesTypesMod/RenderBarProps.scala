@@ -1,6 +1,6 @@
 package typings.nivoBar.distTypesTypesMod
 
-import typings.nivoBar.anon.Color
+import typings.nivoBar.anon.ColorString
 import typings.nivoBar.anon.DataValue
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
@@ -26,7 +26,7 @@ trait RenderBarProps[RawDatum /* <: BarDatum */] extends StObject {
   
   var onClick: js.UndefOr[
     js.Function2[
-      /* datum */ ComputedDatum[RawDatum] & Color, 
+      /* datum */ ComputedDatum[RawDatum] & ColorString, 
       /* event */ MouseEvent[SVGRectElement, NativeMouseEvent], 
       Unit
     ]
@@ -81,7 +81,7 @@ object RenderBarProps {
     inline def setLabelColor(value: String): Self = StObject.set(x, "labelColor", value.asInstanceOf[js.Any])
     
     inline def setOnClick(
-      value: (/* datum */ ComputedDatum[RawDatum] & Color, /* event */ MouseEvent[SVGRectElement, NativeMouseEvent]) => Unit
+      value: (/* datum */ ComputedDatum[RawDatum] & ColorString, /* event */ MouseEvent[SVGRectElement, NativeMouseEvent]) => Unit
     ): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeResourcePolicyRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the policy to describe.
+    * The Amazon Resource Name (ARN) of the custom model version that has the resource policy.
     */
   var ResourceArn: ComprehendModelArn
 }

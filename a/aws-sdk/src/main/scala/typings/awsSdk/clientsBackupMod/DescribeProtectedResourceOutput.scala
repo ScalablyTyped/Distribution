@@ -17,6 +17,11 @@ trait DescribeProtectedResourceOutput extends StObject {
   var ResourceArn: js.UndefOr[ARN] = js.undefined
   
   /**
+    * This is the non-unique name of the resource that belongs to the specified backup.
+    */
+  var ResourceName: js.UndefOr[String] = js.undefined
+  
+  /**
     * The type of Amazon Web Services resource saved as a recovery point; for example, an Amazon EBS volume or an Amazon RDS database.
     */
   var ResourceType: js.UndefOr[typings.awsSdk.clientsBackupMod.ResourceType] = js.undefined
@@ -38,6 +43,10 @@ object DescribeProtectedResourceOutput {
     inline def setResourceArn(value: ARN): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
     inline def setResourceArnUndefined: Self = StObject.set(x, "ResourceArn", js.undefined)
+    
+    inline def setResourceName(value: String): Self = StObject.set(x, "ResourceName", value.asInstanceOf[js.Any])
+    
+    inline def setResourceNameUndefined: Self = StObject.set(x, "ResourceName", js.undefined)
     
     inline def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     

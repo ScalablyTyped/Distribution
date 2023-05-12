@@ -7,18 +7,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object assertionErrorMod {
   
+  /**
+    * Error object thrown when an assertion failed. This is an ECMA-262 Error,
+    * extended with a `code` property.
+    * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error.
+    */
   @JSImport("ol/AssertionError", JSImport.Default)
   @js.native
   open class default protected ()
     extends StObject
        with AssertionError {
+    /**
+      * @param {number} code Error code.
+      */
     def this(code: Double) = this()
     
     /**
       * Error code. The meaning of the code can be found on
-      * https://openlayers.org/en/latest/doc/errors/ (replace latest with
+      * https://openlayers.org/en/latest/doc/errors/ (replace `latest` with
       * the version found in the OpenLayers script's header comment if a version
       * other than the latest is used).
+      * @type {number}
+      * @deprecated ol/AssertionError and error codes will be removed in v8.0
+      * @api
       */
     /* CompleteClass */
     var code: Double = js.native
@@ -32,15 +43,23 @@ object assertionErrorMod {
     var name: String = js.native
   }
   
+  /**
+    * Error object thrown when an assertion failed. This is an ECMA-262 Error,
+    * extended with a `code` property.
+    * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error.
+    */
   trait AssertionError
     extends StObject
        with Error {
     
     /**
       * Error code. The meaning of the code can be found on
-      * https://openlayers.org/en/latest/doc/errors/ (replace latest with
+      * https://openlayers.org/en/latest/doc/errors/ (replace `latest` with
       * the version found in the OpenLayers script's header comment if a version
       * other than the latest is used).
+      * @type {number}
+      * @deprecated ol/AssertionError and error codes will be removed in v8.0
+      * @api
       */
     var code: Double
   }

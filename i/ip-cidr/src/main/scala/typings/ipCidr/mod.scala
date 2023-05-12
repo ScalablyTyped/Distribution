@@ -133,8 +133,12 @@ object mod {
     def start[T](options: FormatOptions): T = js.native
     
     def toArray(): js.Array[String] = js.native
+    def toArray(options: Unit, results: ChunkInfo): js.Array[String] = js.native
+    def toArray(options: FormatOptions): js.Array[String] = js.native
+    def toArray(options: FormatOptions, results: ChunkInfo): js.Array[String] = js.native
     
     def toObject(): End = js.native
+    def toObject(options: FormatOptions): End = js.native
     
     def toRange[T](): js.Tuple2[T, T] = js.native
     def toRange[T](options: FormatOptions): js.Tuple2[T, T] = js.native

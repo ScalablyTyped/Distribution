@@ -45,6 +45,8 @@ trait LanguageServiceDefaults extends StObject {
   
   val inlayHintsOptions: InlayHintsOptions = js.native
   
+  val modeConfiguration: ModeConfiguration = js.native
+  
   /**
     * Event fired when compiler options or diagnostics options are changed.
     */
@@ -91,6 +93,8 @@ trait LanguageServiceDefaults extends StObject {
     * No-op.
     */
   def setMaximumWorkerIdleTime(value: Double): Unit = js.native
+  
+  def setModeConfiguration(modeConfiguration: ModeConfiguration): Unit = js.native
   
   /**
     * Configure webworker options

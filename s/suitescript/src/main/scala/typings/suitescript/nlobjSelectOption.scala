@@ -10,8 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @classDescription select|radio option used for building select fields via the UI Object API and for describing select|radio fields.
   * @return {nlobjSelectOption}
-  * @constructor
-  *
   * @since 2009.2
   */
 @js.native

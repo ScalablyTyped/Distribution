@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@okta/okta-vue" : "5.5.0"
+      "@okta/okta-vue" : "5.6.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@okta/okta-vue" : "5.5.0"
+      "@okta/okta-vue" : "5.6.0"
     }
   ],
   "compile-devDependencies" : [

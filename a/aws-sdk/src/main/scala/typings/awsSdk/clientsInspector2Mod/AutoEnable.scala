@@ -15,6 +15,11 @@ trait AutoEnable extends StObject {
     * Represents whether Amazon ECR scans are automatically enabled for new members of your Amazon Inspector organization.
     */
   var ecr: Boolean
+  
+  /**
+    * Represents whether AWS Lambda standard scans are automatically enabled for new members of your Amazon Inspector organization. 
+    */
+  var lambda: js.UndefOr[Boolean] = js.undefined
 }
 object AutoEnable {
   
@@ -29,5 +34,9 @@ object AutoEnable {
     inline def setEc2(value: Boolean): Self = StObject.set(x, "ec2", value.asInstanceOf[js.Any])
     
     inline def setEcr(value: Boolean): Self = StObject.set(x, "ecr", value.asInstanceOf[js.Any])
+    
+    inline def setLambda(value: Boolean): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
+    
+    inline def setLambdaUndefined: Self = StObject.set(x, "lambda", js.undefined)
   }
 }

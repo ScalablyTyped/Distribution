@@ -70,6 +70,8 @@ object mod {
     
     var continuous: js.UndefOr[Boolean] = js.undefined
     
+    var interimResults: js.UndefOr[Boolean] = js.undefined
+    
     var language: js.UndefOr[String] = js.undefined
   }
   object ListeningOptions {
@@ -86,6 +88,10 @@ object mod {
       
       inline def setContinuousUndefined: Self = StObject.set(x, "continuous", js.undefined)
       
+      inline def setInterimResults(value: Boolean): Self = StObject.set(x, "interimResults", value.asInstanceOf[js.Any])
+      
+      inline def setInterimResultsUndefined: Self = StObject.set(x, "interimResults", js.undefined)
+      
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
       inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
@@ -95,18 +101,18 @@ object mod {
   @js.native
   trait SpeechRecognition extends StObject {
     
-    def abortListening(): Unit = js.native
+    def abortListening(): js.Promise[Unit] = js.native
     
     def applyPolyfill(speechRecognitionPolyfill: Any): Unit = js.native
     
     def browserSupportsSpeechRecognition(): Boolean = js.native
     
-    def getRecognition(): SpeechRecognition | Null = js.native
+    def getRecognition(): (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify globalThis.SpeechRecognition */ Any) | Null = js.native
     
     def startListening(): js.Promise[Unit] = js.native
     def startListening(options: ListeningOptions): js.Promise[Unit] = js.native
     
-    def stopListening(): Unit = js.native
+    def stopListening(): js.Promise[Unit] = js.native
   }
   
   trait SpeechRecognitionOptions extends StObject {

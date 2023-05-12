@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListEnvironmentsRequest extends StObject {
   
   /**
-    * The engine type for the environment.
+    * The engine type for the runtime environment.
     */
   var engineType: js.UndefOr[EngineType] = js.undefined
   
   /**
-    * The maximum number of environments to return.
+    * The maximum number of runtime environments to return.
     */
   var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
-    * The name of the environment.
+    * The names of the runtime environments. Must be unique within the account.
     */
   var names: js.UndefOr[EntityNameList] = js.undefined
   
   /**
-    * A pagination token to control the number of environments displayed in the list.
+    * A pagination token to control the number of runtime environments displayed in the list.
     */
   var nextToken: js.UndefOr[NextToken] = js.undefined
 }

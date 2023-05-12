@@ -7,6 +7,7 @@ import typings.rcMotion.rcMotionStrings.enter
 import typings.rcMotion.rcMotionStrings.leave
 import typings.rcMotion.rcMotionStrings.none
 import typings.rcMotion.rcMotionStrings.prepare
+import typings.rcMotion.rcMotionStrings.prepared
 import typings.rcMotion.rcMotionStrings.start
 import typings.react.mod.CSSProperties
 import typings.std.HTMLElement
@@ -48,6 +49,10 @@ object esInterfaceMod {
   @js.native
   val STEP_PREPARE: prepare = js.native
   
+  @JSImport("rc-motion/es/interface", "STEP_PREPARED")
+  @js.native
+  val STEP_PREPARED: prepared = js.native
+  
   @JSImport("rc-motion/es/interface", "STEP_START")
   @js.native
   val STEP_START: start = js.native
@@ -88,6 +93,7 @@ object esInterfaceMod {
     - typings.rcMotion.rcMotionStrings.start
     - typings.rcMotion.rcMotionStrings.active
     - typings.rcMotion.rcMotionStrings.end
+    - typings.rcMotion.rcMotionStrings.prepared
   */
   trait StepStatus extends StObject
   object StepStatus {
@@ -99,6 +105,8 @@ object esInterfaceMod {
     inline def none: typings.rcMotion.rcMotionStrings.none = "none".asInstanceOf[typings.rcMotion.rcMotionStrings.none]
     
     inline def prepare: typings.rcMotion.rcMotionStrings.prepare = "prepare".asInstanceOf[typings.rcMotion.rcMotionStrings.prepare]
+    
+    inline def prepared: typings.rcMotion.rcMotionStrings.prepared = "prepared".asInstanceOf[typings.rcMotion.rcMotionStrings.prepared]
     
     inline def start: typings.rcMotion.rcMotionStrings.start = "start".asInstanceOf[typings.rcMotion.rcMotionStrings.start]
   }

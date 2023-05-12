@@ -1,82 +1,131 @@
 package typings.prosemirrorTables
 
-import org.scalablytyped.runtime.Instantiable3
-import typings.prosemirrorModel.mod.Node
 import typings.prosemirrorModel.mod.NodeType
-import typings.prosemirrorView.mod.EditorView
-import typings.prosemirrorView.mod.NodeView
+import typings.prosemirrorTables.mod.ColWidths
+import typings.prosemirrorTables.mod.Problem
+import typings.prosemirrorTables.prosemirrorTablesStrings.`colwidth mismatch`
+import typings.prosemirrorTables.prosemirrorTablesStrings.collision
+import typings.prosemirrorTables.prosemirrorTablesStrings.missing
+import typings.prosemirrorTables.prosemirrorTablesStrings.overlong_rowspan
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait Bottom extends StObject {
+  trait Colwidth
+    extends StObject
+       with Problem {
     
-    var bottom: Double
+    var colwidth: ColWidths
     
-    var left: Double
+    var pos: Double
     
-    var right: Double
-    
-    var top: Double
+    var `type`: `colwidth mismatch`
   }
-  object Bottom {
+  object Colwidth {
     
-    inline def apply(bottom: Double, left: Double, right: Double, top: Double): Bottom = {
-      val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Bottom]
+    inline def apply(colwidth: ColWidths, pos: Double): Colwidth = {
+      val __obj = js.Dynamic.literal(colwidth = colwidth.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("colwidth mismatch")
+      __obj.asInstanceOf[Colwidth]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: Colwidth] (val x: Self) extends AnyVal {
       
-      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setColwidth(value: ColWidths): Self = StObject.set(x, "colwidth", value.asInstanceOf[js.Any])
       
-      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setColwidthVarargs(value: Double*): Self = StObject.set(x, "colwidth", js.Array(value*))
       
-      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
       
-      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setType(value: `colwidth mismatch`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  trait CellMinWidth extends StObject {
+  trait FixTables extends StObject {
     
-    var View: js.UndefOr[
-        Instantiable3[/* node */ Node, /* cellMinWidth */ Double, /* view */ EditorView, NodeView]
-      ] = js.undefined
-    
-    var cellMinWidth: js.UndefOr[Double] = js.undefined
-    
-    var handleWidth: js.UndefOr[Double] = js.undefined
+    var fixTables: Boolean
   }
-  object CellMinWidth {
+  object FixTables {
     
-    inline def apply(): CellMinWidth = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[CellMinWidth]
+    inline def apply(fixTables: Boolean): FixTables = {
+      val __obj = js.Dynamic.literal(fixTables = fixTables.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FixTables]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: CellMinWidth] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: FixTables] (val x: Self) extends AnyVal {
       
-      inline def setCellMinWidth(value: Double): Self = StObject.set(x, "cellMinWidth", value.asInstanceOf[js.Any])
-      
-      inline def setCellMinWidthUndefined: Self = StObject.set(x, "cellMinWidth", js.undefined)
-      
-      inline def setHandleWidth(value: Double): Self = StObject.set(x, "handleWidth", value.asInstanceOf[js.Any])
-      
-      inline def setHandleWidthUndefined: Self = StObject.set(x, "handleWidth", js.undefined)
-      
-      inline def setView(value: Instantiable3[/* node */ Node, /* cellMinWidth */ Double, /* view */ EditorView, NodeView]): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
-      
-      inline def setViewUndefined: Self = StObject.set(x, "View", js.undefined)
+      inline def setFixTables(value: Boolean): Self = StObject.set(x, "fixTables", value.asInstanceOf[js.Any])
     }
   }
   
-  /* Inlined std.Record<prosemirror-tables.prosemirror-tables.TableRoles, prosemirror-model.prosemirror-model.NodeType> */
-  trait RecordTableRolesNodeType extends StObject {
+  trait N
+    extends StObject
+       with Problem {
+    
+    var n: Double
+    
+    var pos: Double
+    
+    var row: Double
+    
+    var `type`: collision
+  }
+  object N {
+    
+    inline def apply(n: Double, pos: Double, row: Double): N = {
+      val __obj = js.Dynamic.literal(n = n.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("collision")
+      __obj.asInstanceOf[N]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: N] (val x: Self) extends AnyVal {
+      
+      inline def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+      
+      inline def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+      
+      inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: collision): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Pos
+    extends StObject
+       with Problem {
+    
+    var n: Double
+    
+    var pos: Double
+    
+    var `type`: overlong_rowspan
+  }
+  object Pos {
+    
+    inline def apply(n: Double, pos: Double): Pos = {
+      val __obj = js.Dynamic.literal(n = n.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("overlong_rowspan")
+      __obj.asInstanceOf[Pos]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pos] (val x: Self) extends AnyVal {
+      
+      inline def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+      
+      inline def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: overlong_rowspan): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined std.Record<prosemirror-tables.prosemirror-tables.TableRole, prosemirror-model.prosemirror-model.NodeType> */
+  trait RecordTableRoleNodeType extends StObject {
     
     var cell: NodeType
     
@@ -86,15 +135,15 @@ object anon {
     
     var table: NodeType
   }
-  object RecordTableRolesNodeType {
+  object RecordTableRoleNodeType {
     
-    inline def apply(cell: NodeType, header_cell: NodeType, row: NodeType, table: NodeType): RecordTableRolesNodeType = {
+    inline def apply(cell: NodeType, header_cell: NodeType, row: NodeType, table: NodeType): RecordTableRoleNodeType = {
       val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any], header_cell = header_cell.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
-      __obj.asInstanceOf[RecordTableRolesNodeType]
+      __obj.asInstanceOf[RecordTableRoleNodeType]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: RecordTableRolesNodeType] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: RecordTableRoleNodeType] (val x: Self) extends AnyVal {
       
       inline def setCell(value: NodeType): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
@@ -106,14 +155,43 @@ object anon {
     }
   }
   
+  trait Row
+    extends StObject
+       with Problem {
+    
+    var n: Double
+    
+    var row: Double
+    
+    var `type`: missing
+  }
+  object Row {
+    
+    inline def apply(n: Double, row: Double): Row = {
+      val __obj = js.Dynamic.literal(n = n.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("missing")
+      __obj.asInstanceOf[Row]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Row] (val x: Self) extends AnyVal {
+      
+      inline def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+      
+      inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: missing): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait UseDeprecatedLogic extends StObject {
     
-    var useDeprecatedLogic: js.UndefOr[Boolean] = js.undefined
+    var useDeprecatedLogic: Boolean
   }
   object UseDeprecatedLogic {
     
-    inline def apply(): UseDeprecatedLogic = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(useDeprecatedLogic: Boolean): UseDeprecatedLogic = {
+      val __obj = js.Dynamic.literal(useDeprecatedLogic = useDeprecatedLogic.asInstanceOf[js.Any])
       __obj.asInstanceOf[UseDeprecatedLogic]
     }
     
@@ -121,8 +199,6 @@ object anon {
     implicit open class MutableBuilder[Self <: UseDeprecatedLogic] (val x: Self) extends AnyVal {
       
       inline def setUseDeprecatedLogic(value: Boolean): Self = StObject.set(x, "useDeprecatedLogic", value.asInstanceOf[js.Any])
-      
-      inline def setUseDeprecatedLogicUndefined: Self = StObject.set(x, "useDeprecatedLogic", js.undefined)
     }
   }
 }

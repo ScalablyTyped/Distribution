@@ -11,7 +11,18 @@ object distSrcMigrationsMigration8Mod {
   @js.native
   val migration: Migration_ = js.native
   
-  type Datastore = typings.interfaceDatastore.mod.Datastore
+  type Datastore = typings.interfaceDatastore.mod.Datastore[
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object
+  ]
   
   type Migration_ = Migration
 }

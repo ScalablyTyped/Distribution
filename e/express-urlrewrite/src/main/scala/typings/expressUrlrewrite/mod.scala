@@ -28,6 +28,10 @@ object mod extends Shortcut {
         Unit
       ]
     
-    type urlrewrite = js.Function2[/* from */ String, /* to */ js.UndefOr[String], expressUrlRewriteInstance]
+    type urlrewrite = js.Function2[
+        /* from */ String | js.RegExp, 
+        /* to */ js.UndefOr[String], 
+        expressUrlRewriteInstance
+      ]
   }
 }

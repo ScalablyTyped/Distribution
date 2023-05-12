@@ -27,6 +27,11 @@ trait MetricDefinition extends StObject {
   var Name: MetricName
   
   /**
+    * If this metric definition is for a custom metric instead of an extended metric, this field displays the metric namespace that the custom metric is published to.
+    */
+  var Namespace: js.UndefOr[typings.awsSdk.clientsRumMod.Namespace] = js.undefined
+  
+  /**
     * Use this field only if you are sending this metric to CloudWatch. It defines the CloudWatch metric unit that this metric is measured in. 
     */
   var UnitLabel: js.UndefOr[typings.awsSdk.clientsRumMod.UnitLabel] = js.undefined
@@ -57,6 +62,10 @@ object MetricDefinition {
     inline def setMetricDefinitionId(value: MetricDefinitionId): Self = StObject.set(x, "MetricDefinitionId", value.asInstanceOf[js.Any])
     
     inline def setName(value: MetricName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    inline def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
+    
+    inline def setNamespaceUndefined: Self = StObject.set(x, "Namespace", js.undefined)
     
     inline def setUnitLabel(value: UnitLabel): Self = StObject.set(x, "UnitLabel", value.asInstanceOf[js.Any])
     

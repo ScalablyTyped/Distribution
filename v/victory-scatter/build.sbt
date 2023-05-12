@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "victory-scatter"
-version := "36.6.8-5dbd06"
+version := "36.6.10-92630b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "3.1.1-9b270c",
+  "org.scalablytyped" %%% "csstype" % "3.1.2-5927f3",
   "org.scalablytyped" %%% "d3-path" % "3.0-dt-20220310Z-1117bb",
-  "org.scalablytyped" %%% "d3-scale" % "4.0-dt-20220624Z-a0ef46",
-  "org.scalablytyped" %%% "d3-shape" % "3.1-dt-20220624Z-47ca74",
-  "org.scalablytyped" %%% "d3-time" % "3.0-dt-20211202Z-72901b",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-9c1d48",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-c1aa2f",
-  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-fd69ea",
-  "org.scalablytyped" %%% "std" % "4.9-ecb5eb",
-  "org.scalablytyped" %%% "victory-core" % "36.6.8-45c49d")
+  "org.scalablytyped" %%% "d3-scale" % "4.0-dt-20230328Z-6525b9",
+  "org.scalablytyped" %%% "d3-shape" % "3.1-dt-20221230Z-fce24b",
+  "org.scalablytyped" %%% "d3-time" % "3.0-dt-20211202Z-f00c5f",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4446ee",
+  "org.scalablytyped" %%% "react" % "18.2-dt-20230506Z-14ab9d",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20230322Z-da1b40",
+  "org.scalablytyped" %%% "std" % "5.0-e63739",
+  "org.scalablytyped" %%% "victory-core" % "36.6.10-6e52bb")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

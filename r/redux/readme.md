@@ -1,7 +1,7 @@
 
 # Scala.js typings for redux
 
-Typings are for version 4.2.0
+Typings are for version 4.2.1
 
 ## Library description:
 Predictable state container for JavaScript apps

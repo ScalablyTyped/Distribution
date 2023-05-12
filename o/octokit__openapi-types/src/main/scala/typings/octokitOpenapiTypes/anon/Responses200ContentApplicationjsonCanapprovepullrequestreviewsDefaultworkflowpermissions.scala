@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Responses200ContentApplicationjsonCanapprovepullrequestreviewsDefaultworkflowpermissions extends StObject {
   
-  var parameters: PathEnterpriseString
+  var parameters: `496`
   
   var responses: `200ContentApplicationjsonCanapprovepullrequestreviewsDefaultworkflowpermissions`
 }
 object Responses200ContentApplicationjsonCanapprovepullrequestreviewsDefaultworkflowpermissions {
   
   inline def apply(
-    parameters: PathEnterpriseString,
+    parameters: `496`,
     responses: `200ContentApplicationjsonCanapprovepullrequestreviewsDefaultworkflowpermissions`
   ): Responses200ContentApplicationjsonCanapprovepullrequestreviewsDefaultworkflowpermissions = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
@@ -23,7 +23,7 @@ object Responses200ContentApplicationjsonCanapprovepullrequestreviewsDefaultwork
   @scala.inline
   implicit open class MutableBuilder[Self <: Responses200ContentApplicationjsonCanapprovepullrequestreviewsDefaultworkflowpermissions] (val x: Self) extends AnyVal {
     
-    inline def setParameters(value: PathEnterpriseString): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: `496`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setResponses(value: `200ContentApplicationjsonCanapprovepullrequestreviewsDefaultworkflowpermissions`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }

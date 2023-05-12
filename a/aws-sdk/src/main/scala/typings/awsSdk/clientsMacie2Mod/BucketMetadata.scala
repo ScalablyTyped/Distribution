@@ -12,7 +12,7 @@ trait BucketMetadata extends StObject {
   var accountId: js.UndefOr[string] = js.undefined
   
   /**
-    * Specifies whether the bucket policy for the bucket requires server-side encryption of objects when objects are uploaded to the bucket. Possible values are: FALSE - The bucket policy requires server-side encryption of new objects. PutObject requests must include the x-amz-server-side-encryption header and the value for that header must be AES256 or aws:kms. TRUE - The bucket doesn't have a bucket policy or it has a bucket policy that doesn't require server-side encryption of new objects. If a bucket policy exists, it doesn't require PutObject requests to include the x-amz-server-side-encryption header and it doesn't require the value for that header to be AES256 or aws:kms. UNKNOWN - Amazon Macie can't determine whether the bucket policy requires server-side encryption of new objects.
+    * Specifies whether the bucket policy for the bucket requires server-side encryption of objects when objects are added to the bucket. Possible values are: FALSE - The bucket policy requires server-side encryption of new objects. PutObject requests must include a valid server-side encryption header. TRUE - The bucket doesn't have a bucket policy or it has a bucket policy that doesn't require server-side encryption of new objects. If a bucket policy exists, it doesn't require PutObject requests to include a valid server-side encryption header. UNKNOWN - Amazon Macie can't determine whether the bucket policy requires server-side encryption of new objects. Valid server-side encryption headers are: x-amz-server-side-encryption with a value of AES256 or aws:kms, and x-amz-server-side-encryption-customer-algorithm with a value of AES256.
     */
   var allowsUnencryptedObjectUploads: js.UndefOr[AllowsUnencryptedObjectUploads] = js.undefined
   
@@ -22,7 +22,7 @@ trait BucketMetadata extends StObject {
   var bucketArn: js.UndefOr[string] = js.undefined
   
   /**
-    * The date and time, in UTC and extended ISO 8601 format, when the bucket was created.
+    * The date and time, in UTC and extended ISO 8601 format, when the bucket was created. This value can also indicate when changes such as edits to the bucket's policy were most recently made to the bucket.
     */
   var bucketCreatedAt: js.UndefOr[js.Date] = js.undefined
   
@@ -42,7 +42,7 @@ trait BucketMetadata extends StObject {
   var classifiableSizeInBytes: js.UndefOr[long] = js.undefined
   
   /**
-    * Specifies the error code for an error that prevented Amazon Macie from retrieving and processing information about the bucket and the bucket's objects. If this value is ACCESS_DENIED, Macie doesn't have permission to retrieve the information. For example, the bucket has a restrictive bucket policy and Amazon S3 denied the request. If this value is null, Macie was able to retrieve and process the information.
+    * The error code for an error that prevented Amazon Macie from retrieving and processing information about the bucket and the bucket's objects. If this value is ACCESS_DENIED, Macie doesn't have permission to retrieve the information. For example, the bucket has a restrictive bucket policy and Amazon S3 denied the request. If this value is null, Macie was able to retrieve and process the information.
     */
   var errorCode: js.UndefOr[BucketMetadataErrorCode] = js.undefined
   
@@ -57,7 +57,12 @@ trait BucketMetadata extends StObject {
   var jobDetails: js.UndefOr[JobDetails] = js.undefined
   
   /**
-    * The date and time, in UTC and extended ISO 8601 format, when Amazon Macie most recently retrieved both bucket and object metadata from Amazon S3 for the bucket.
+    * The date and time, in UTC and extended ISO 8601 format, when Amazon Macie most recently analyzed data in the bucket while performing automated sensitive data discovery for your account. This value is null if automated sensitive data discovery is currently disabled for your account.
+    */
+  var lastAutomatedDiscoveryTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The date and time, in UTC and extended ISO 8601 format, when Amazon Macie most recently retrieved bucket or object metadata from Amazon S3 for the bucket.
     */
   var lastUpdated: js.UndefOr[js.Date] = js.undefined
   
@@ -67,7 +72,7 @@ trait BucketMetadata extends StObject {
   var objectCount: js.UndefOr[long] = js.undefined
   
   /**
-    * The total number of objects that are in the bucket, grouped by server-side encryption type. This includes a grouping that reports the total number of objects that aren't encrypted or use client-side encryption.
+    * The total number of objects in the bucket, grouped by server-side encryption type. This includes a grouping that reports the total number of objects that aren't encrypted or use client-side encryption.
     */
   var objectCountByEncryptionType: js.UndefOr[ObjectCountByEncryptionType] = js.undefined
   
@@ -87,12 +92,17 @@ trait BucketMetadata extends StObject {
   var replicationDetails: js.UndefOr[ReplicationDetails] = js.undefined
   
   /**
-    * Specifies whether the bucket encrypts new objects by default and, if so, the type of server-side encryption that's used.
+    * The sensitivity score for the bucket, ranging from -1 (classification error) to 100 (sensitive). This value is null if automated sensitive data discovery is currently disabled for your account.
+    */
+  var sensitivityScore: js.UndefOr[integer] = js.undefined
+  
+  /**
+    * The default server-side encryption settings for the bucket.
     */
   var serverSideEncryption: js.UndefOr[BucketServerSideEncryption] = js.undefined
   
   /**
-    *  Specifies whether the bucket is shared with another Amazon Web Services account. Possible values are: EXTERNAL - The bucket is shared with an Amazon Web Services account that isn't part of the same Amazon Macie organization. INTERNAL - The bucket is shared with an Amazon Web Services account that's part of the same Amazon Macie organization. NOT_SHARED - The bucket isn't shared with other Amazon Web Services accounts. UNKNOWN - Amazon Macie wasn't able to evaluate the shared access settings for the bucket.
+    * Specifies whether the bucket is shared with another Amazon Web Services account, an Amazon CloudFront origin access identity (OAI), or a CloudFront origin access control (OAC). Possible values are: EXTERNAL - The bucket is shared with one or more of the following or any combination of the following: a CloudFront OAI, a CloudFront OAC, or an Amazon Web Services account that isn't part of your Amazon Macie organization. INTERNAL - The bucket is shared with one or more Amazon Web Services accounts that are part of your Amazon Macie organization. It isn't shared with a CloudFront OAI or OAC. NOT_SHARED - The bucket isn't shared with another Amazon Web Services account, a CloudFront OAI, or a CloudFront OAC. UNKNOWN - Amazon Macie wasn't able to evaluate the shared access settings for the bucket. An Amazon Macie organization is a set of Macie accounts that are centrally managed as a group of related accounts through Organizations or by Macie invitation.
     */
   var sharedAccess: js.UndefOr[SharedAccess] = js.undefined
   
@@ -176,6 +186,10 @@ object BucketMetadata {
     
     inline def setJobDetailsUndefined: Self = StObject.set(x, "jobDetails", js.undefined)
     
+    inline def setLastAutomatedDiscoveryTime(value: js.Date): Self = StObject.set(x, "lastAutomatedDiscoveryTime", value.asInstanceOf[js.Any])
+    
+    inline def setLastAutomatedDiscoveryTimeUndefined: Self = StObject.set(x, "lastAutomatedDiscoveryTime", js.undefined)
+    
     inline def setLastUpdated(value: js.Date): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedUndefined: Self = StObject.set(x, "lastUpdated", js.undefined)
@@ -199,6 +213,10 @@ object BucketMetadata {
     inline def setReplicationDetails(value: ReplicationDetails): Self = StObject.set(x, "replicationDetails", value.asInstanceOf[js.Any])
     
     inline def setReplicationDetailsUndefined: Self = StObject.set(x, "replicationDetails", js.undefined)
+    
+    inline def setSensitivityScore(value: integer): Self = StObject.set(x, "sensitivityScore", value.asInstanceOf[js.Any])
+    
+    inline def setSensitivityScoreUndefined: Self = StObject.set(x, "sensitivityScore", js.undefined)
     
     inline def setServerSideEncryption(value: BucketServerSideEncryption): Self = StObject.set(x, "serverSideEncryption", value.asInstanceOf[js.Any])
     

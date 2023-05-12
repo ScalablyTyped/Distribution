@@ -1,10 +1,9 @@
 package typings.xummSdk
 
 import typings.xummSdk.distSrcMetaMod.Meta
-import typings.xummSdk.distSrcPayloadMod.Payload
-import typings.xummSdk.distSrcStorageMod.Storage
 import typings.xummSdk.distSrcTypesMetaApplicationDetailsMod.ApplicationDetails
 import typings.xummSdk.distSrcTypesMetaCuratedAssetsResponseMod.CuratedAssetsResponse
+import typings.xummSdk.distSrcTypesMetaNftokenDetailMod.NftokenDetail
 import typings.xummSdk.distSrcTypesMetaRatesResponseMod.RatesResponse
 import typings.xummSdk.distSrcTypesMetaUserTokensMod.UserTokenValidity
 import typings.xummSdk.distSrcTypesMetaXrplTransactionMod.XrplTransaction
@@ -20,6 +19,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("xumm-sdk", "JwtUserdata")
+  @js.native
+  open class JwtUserdata protected ()
+    extends typings.xummSdk.distSrcJwtUserdataMod.JwtUserdata {
+    def this(MetaObject: Meta) = this()
+  }
+  
+  @JSImport("xumm-sdk", "Payload")
+  @js.native
+  open class Payload protected ()
+    extends typings.xummSdk.distSrcPayloadMod.Payload {
+    def this(MetaObject: Meta) = this()
+  }
+  
+  @JSImport("xumm-sdk", "Push")
+  @js.native
+  open class Push protected ()
+    extends typings.xummSdk.distSrcPushMod.Push {
+    def this(MetaObject: Meta) = this()
+  }
+  
+  @JSImport("xumm-sdk", "Storage")
+  @js.native
+  open class Storage protected ()
+    extends typings.xummSdk.distSrcStorageMod.Storage {
+    def this(MetaObject: Meta) = this()
+  }
+  
   @JSImport("xumm-sdk", "XummSdk")
   @js.native
   open class XummSdk () extends StObject {
@@ -29,6 +56,8 @@ object mod {
     
     /* private */ var Meta: Any = js.native
     
+    var Push: typings.xummSdk.distSrcPushMod.Push = js.native
+    
     def caught(error: js.Error): Unit = js.native
     
     def getCuratedAssets(): js.Promise[CuratedAssetsResponse] = js.native
@@ -37,11 +66,15 @@ object mod {
     
     def getKycStatus(userTokenOrAccount: String): js.Promise[NONE | IN_PROGRESS | REJECTED | SUCCESSFUL] = js.native
     
+    def getNftokenDetail(tokenId: String): js.Promise[NftokenDetail] = js.native
+    
     def getRates(currencyCode: String): js.Promise[RatesResponse] = js.native
     
     def getTransaction(txHash: String): js.Promise[XrplTransaction] = js.native
     
-    var payload: Payload = js.native
+    var jwtUserdata: typings.xummSdk.distSrcJwtUserdataMod.JwtUserdata = js.native
+    
+    var payload: typings.xummSdk.distSrcPayloadMod.Payload = js.native
     
     /**
       * Proxy methods to Meta class below
@@ -50,7 +83,7 @@ object mod {
     
     def setEndpoint(endpoint: String): Boolean = js.native
     
-    var storage: Storage = js.native
+    var storage: typings.xummSdk.distSrcStorageMod.Storage = js.native
     
     def verifyUserToken(token: String): js.Promise[UserTokenValidity | Null] = js.native
     
@@ -71,7 +104,11 @@ object mod {
     
     var fatalHandler: js.UndefOr[js.Function1[/* error */ js.Error, Unit]] = js.native
     
+    def getJwt(): js.Promise[js.UndefOr[String]] = js.native
+    
     def getOttData(): js.Promise[xAppOttData] = js.native
+    
+    /* private */ var jwt: Any = js.native
     
     /* private */ var ottResolved: Any = js.native
     
@@ -80,6 +117,13 @@ object mod {
     /* private */ var resolve: Any = js.native
     
     /* private */ var store: Any = js.native
+  }
+  
+  @JSImport("xumm-sdk", "xApp")
+  @js.native
+  open class xApp protected ()
+    extends typings.xummSdk.distSrcXAppMod.xApp {
+    def this(MetaObject: Meta) = this()
   }
   
   trait XummJwtOptionsStore extends StObject {
@@ -108,6 +152,8 @@ object mod {
     
     var fatalHandler: js.UndefOr[js.Function1[/* error */ js.Error, Unit]] = js.undefined
     
+    var noAutoRetrieve: js.UndefOr[Boolean] = js.undefined
+    
     var store: js.UndefOr[XummJwtOptionsStore] = js.undefined
   }
   object XummSdkJwtOptions {
@@ -123,6 +169,10 @@ object mod {
       inline def setFatalHandler(value: /* error */ js.Error => Unit): Self = StObject.set(x, "fatalHandler", js.Any.fromFunction1(value))
       
       inline def setFatalHandlerUndefined: Self = StObject.set(x, "fatalHandler", js.undefined)
+      
+      inline def setNoAutoRetrieve(value: Boolean): Self = StObject.set(x, "noAutoRetrieve", value.asInstanceOf[js.Any])
+      
+      inline def setNoAutoRetrieveUndefined: Self = StObject.set(x, "noAutoRetrieve", js.undefined)
       
       inline def setStore(value: XummJwtOptionsStore): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       

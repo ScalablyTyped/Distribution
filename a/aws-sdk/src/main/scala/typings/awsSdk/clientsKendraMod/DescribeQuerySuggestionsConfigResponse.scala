@@ -7,17 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeQuerySuggestionsConfigResponse extends StObject {
   
   /**
+    * Configuration information for the document fields/attributes that you want to base query suggestions on.
+    */
+  var AttributeSuggestionsConfig: js.UndefOr[AttributeSuggestionsDescribeConfig] = js.undefined
+  
+  /**
     *  TRUE to use all queries, otherwise use only queries that include user information to generate the query suggestions.
     */
   var IncludeQueriesWithoutUserInformation: js.UndefOr[ObjectBoolean] = js.undefined
   
   /**
-    * The date-time query suggestions for an index was last cleared. After you clear suggestions, Amazon Kendra learns new suggestions based on new queries added to the query log from the time you cleared suggestions. Amazon Kendra only considers re-occurences of a query from the time you cleared suggestions. 
+    * The Unix timestamp when query suggestions for an index was last cleared. After you clear suggestions, Amazon Kendra learns new suggestions based on new queries added to the query log from the time you cleared suggestions. Amazon Kendra only considers re-occurences of a query from the time you cleared suggestions. 
     */
   var LastClearTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The date-time query suggestions for an index was last updated.
+    * The Unix timestamp when query suggestions for an index was last updated. Amazon Kendra automatically updates suggestions every 24 hours, after you change a setting or after you apply a block list.
     */
   var LastSuggestionsBuildTime: js.UndefOr[js.Date] = js.undefined
   
@@ -47,7 +52,7 @@ trait DescribeQuerySuggestionsConfigResponse extends StObject {
   var Status: js.UndefOr[QuerySuggestionsStatus] = js.undefined
   
   /**
-    * The current total count of query suggestions for an index. This count can change when you update your query suggestions settings, if you filter out certain queries from suggestions using a block list, and as the query log accumulates more queries for Amazon Kendra to learn from.
+    * The current total count of query suggestions for an index. This count can change when you update your query suggestions settings, if you filter out certain queries from suggestions using a block list, and as the query log accumulates more queries for Amazon Kendra to learn from. If the count is much lower than you expected, it could be because Amazon Kendra needs more queries in the query history to learn from or your current query suggestions settings are too strict.
     */
   var TotalSuggestionsCount: js.UndefOr[Integer] = js.undefined
 }
@@ -60,6 +65,10 @@ object DescribeQuerySuggestionsConfigResponse {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: DescribeQuerySuggestionsConfigResponse] (val x: Self) extends AnyVal {
+    
+    inline def setAttributeSuggestionsConfig(value: AttributeSuggestionsDescribeConfig): Self = StObject.set(x, "AttributeSuggestionsConfig", value.asInstanceOf[js.Any])
+    
+    inline def setAttributeSuggestionsConfigUndefined: Self = StObject.set(x, "AttributeSuggestionsConfig", js.undefined)
     
     inline def setIncludeQueriesWithoutUserInformation(value: ObjectBoolean): Self = StObject.set(x, "IncludeQueriesWithoutUserInformation", value.asInstanceOf[js.Any])
     

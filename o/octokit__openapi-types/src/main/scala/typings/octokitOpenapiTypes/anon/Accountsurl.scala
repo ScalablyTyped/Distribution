@@ -1,5 +1,8 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.FLAT_RATE
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.FREE
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.PER_UNIT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,8 +41,11 @@ trait Accountsurl extends StObject {
   /** @example 3 */
   var number: Double
   
-  /** @example flat-rate */
-  var price_model: String
+  /**
+    * @example FLAT_RATE
+    * @enum {string}
+    */
+  var price_model: FREE | FLAT_RATE | PER_UNIT
   
   /** @example published */
   var state: String
@@ -66,7 +72,7 @@ object Accountsurl {
     monthly_price_in_cents: Double,
     name: String,
     number: Double,
-    price_model: String,
+    price_model: FREE | FLAT_RATE | PER_UNIT,
     state: String,
     url: String,
     yearly_price_in_cents: Double
@@ -96,7 +102,7 @@ object Accountsurl {
     
     inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    inline def setPrice_model(value: String): Self = StObject.set(x, "price_model", value.asInstanceOf[js.Any])
+    inline def setPrice_model(value: FREE | FLAT_RATE | PER_UNIT): Self = StObject.set(x, "price_model", value.asInstanceOf[js.Any])
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

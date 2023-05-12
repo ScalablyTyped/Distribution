@@ -22,6 +22,11 @@ trait ImageVersion extends StObject {
   var dateCreated: js.UndefOr[DateTime] = js.undefined
   
   /**
+    * The origin of the base image that Image Builder used to build this image.
+    */
+  var imageSource: js.UndefOr[ImageSource] = js.undefined
+  
+  /**
     * The name of this specific version of an Image Builder image.
     */
   var name: js.UndefOr[ResourceName] = js.undefined
@@ -37,12 +42,12 @@ trait ImageVersion extends StObject {
   var owner: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The platform of the image version, for example "Windows" or "Linux".
+    * The operating system platform of the image version, for example "Windows" or "Linux".
     */
   var platform: js.UndefOr[Platform] = js.undefined
   
   /**
-    * Specifies whether this image is an AMI or a container image.
+    * Specifies whether this image produces an AMI or a container image.
     */
   var `type`: js.UndefOr[ImageType] = js.undefined
   
@@ -72,6 +77,10 @@ object ImageVersion {
     inline def setDateCreated(value: DateTime): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
     
     inline def setDateCreatedUndefined: Self = StObject.set(x, "dateCreated", js.undefined)
+    
+    inline def setImageSource(value: ImageSource): Self = StObject.set(x, "imageSource", value.asInstanceOf[js.Any])
+    
+    inline def setImageSourceUndefined: Self = StObject.set(x, "imageSource", js.undefined)
     
     inline def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -13,7 +13,13 @@ trait MediaTrackSupportedConstraints extends StObject {
   var autoGainControl: js.UndefOr[scala.Boolean] = js.undefined
   
   /* standard dom */
+  var channelCount: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
   var deviceId: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
+  var displaySurface: js.UndefOr[scala.Boolean] = js.undefined
   
   /* standard dom */
   var echoCancellation: js.UndefOr[scala.Boolean] = js.undefined
@@ -40,9 +46,6 @@ trait MediaTrackSupportedConstraints extends StObject {
   var sampleSize: js.UndefOr[scala.Boolean] = js.undefined
   
   /* standard dom */
-  var suppressLocalAudioPlayback: js.UndefOr[scala.Boolean] = js.undefined
-  
-  /* standard dom */
   var width: js.UndefOr[scala.Boolean] = js.undefined
 }
 object MediaTrackSupportedConstraints {
@@ -63,9 +66,17 @@ object MediaTrackSupportedConstraints {
     
     inline def setAutoGainControlUndefined: Self = StObject.set(x, "autoGainControl", js.undefined)
     
+    inline def setChannelCount(value: scala.Boolean): Self = StObject.set(x, "channelCount", value.asInstanceOf[js.Any])
+    
+    inline def setChannelCountUndefined: Self = StObject.set(x, "channelCount", js.undefined)
+    
     inline def setDeviceId(value: scala.Boolean): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
     inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+    
+    inline def setDisplaySurface(value: scala.Boolean): Self = StObject.set(x, "displaySurface", value.asInstanceOf[js.Any])
+    
+    inline def setDisplaySurfaceUndefined: Self = StObject.set(x, "displaySurface", js.undefined)
     
     inline def setEchoCancellation(value: scala.Boolean): Self = StObject.set(x, "echoCancellation", value.asInstanceOf[js.Any])
     
@@ -98,10 +109,6 @@ object MediaTrackSupportedConstraints {
     inline def setSampleSize(value: scala.Boolean): Self = StObject.set(x, "sampleSize", value.asInstanceOf[js.Any])
     
     inline def setSampleSizeUndefined: Self = StObject.set(x, "sampleSize", js.undefined)
-    
-    inline def setSuppressLocalAudioPlayback(value: scala.Boolean): Self = StObject.set(x, "suppressLocalAudioPlayback", value.asInstanceOf[js.Any])
-    
-    inline def setSuppressLocalAudioPlaybackUndefined: Self = StObject.set(x, "suppressLocalAudioPlayback", js.undefined)
     
     inline def setWidth(value: scala.Boolean): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

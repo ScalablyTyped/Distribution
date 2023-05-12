@@ -5,8 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// Note: this file is auto concatenated to the end of the bundled d.ts during
-// build.
 /* augmented module */
 object vueReactivityAugmentingMod {
   

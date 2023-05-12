@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EulaAcceptance extends StObject {
   
   /**
-    * The Unix epoch timestamp in seconds for when the EULA was accepted.
+    * The ISO timestamp in seconds for when the EULA was accepted.
     */
   var acceptedAt: js.UndefOr[js.Date] = js.undefined
   

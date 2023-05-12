@@ -351,4 +351,10 @@ open class Globe () extends StObject {
     * point on the ellipsoid instead of the camera's position.
     */
   var undergroundColorAlphaByDistance: NearFarScalar = js.native
+  
+  /**
+    * Determines the darkness of the vertex shadow.
+    * This only takes effect when <code>enableLighting</code> is <code>true</code>.
+    */
+  var vertexShadowDarkness: Double = js.native
 }

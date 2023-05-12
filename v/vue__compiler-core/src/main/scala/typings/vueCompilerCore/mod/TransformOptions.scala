@@ -145,7 +145,7 @@ object TransformOptions {
     inline def setSsrCssVarsUndefined: Self = StObject.set(x, "ssrCssVars", js.undefined)
     
     inline def setTransformHoist(
-      value: (/* children */ js.Array[TemplateChildNode], /* context */ TransformContext, /* parent */ ParentNode2) => Unit
+      value: (/* children */ js.Array[TemplateChildNode], /* context */ TransformContext, /* parent */ ParentNode) => Unit
     ): Self = StObject.set(x, "transformHoist", js.Any.fromFunction3(value))
     
     inline def setTransformHoistNull: Self = StObject.set(x, "transformHoist", null)

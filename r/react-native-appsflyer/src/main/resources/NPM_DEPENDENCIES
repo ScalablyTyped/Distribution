@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-native-appsflyer" : "6.9.2"
+      "react-native-appsflyer" : "6.10.3"
     }
   ],
   "test-dependencies" : [
     {
-      "react-native-appsflyer" : "6.9.2"
+      "react-native-appsflyer" : "6.10.3"
     }
   ],
   "compile-devDependencies" : [

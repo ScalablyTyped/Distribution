@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "retry-as-promised" : "7.0.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "retry-as-promised" : "7.0.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

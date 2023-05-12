@@ -18,11 +18,23 @@ object utilsMod {
   @js.native
   open class Hash[T /* <: Hash[T] */] () extends StObject {
     
+    /**
+      * Clones hash instance. Unsafe: doesn't check whether `to` is valid. Can be used as `clone()`
+      * when no options are passed.
+      * Reasons to use `_cloneInto` instead of clone: 1) performance 2) reuse instance => all internal
+      * buffers are overwritten => causes buffer overwrite which is used for digest in some cases.
+      * There are no guarantees for clean-up because it's impossible in JS.
+      */
     def _cloneInto(): T = js.native
     def _cloneInto(to: T): T = js.native
     
     var blockLen: Double = js.native
     
+    /**
+      * Resets internal state. Makes Hash instance unusable.
+      * Reset is impossible for keyed hashes if key is consumed into state. If digest is not consumed
+      * by user, they will need to manually call `destroy()` when zeroing is necessary.
+      */
     def destroy(): Unit = js.native
     
     def digest(): js.typedarray.Uint8Array = js.native

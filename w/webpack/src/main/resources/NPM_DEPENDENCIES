@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "webpack" : "5.75.0"
+      "webpack" : "5.82.1"
     }
   ],
   "test-dependencies" : [
     {
-      "webpack" : "5.75.0"
+      "webpack" : "5.82.1"
     }
   ],
   "compile-devDependencies" : [

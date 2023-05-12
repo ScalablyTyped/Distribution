@@ -6,6 +6,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  *
+  */
 @JSImport("babylonjs/Legacy/legacy", "Scene")
 @js.native
 open class Scene protected ()
@@ -60,7 +63,7 @@ object Scene {
   
   /**
     * Gets or sets the maximum deltatime when deterministic lock step is enabled
-    * @see https://doc.babylonjs.com/babylon101/animations#deterministic-lockstep
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/animation/advanced_animations#deterministic-lockstep
     */
   @JSImport("babylonjs/Legacy/legacy", "Scene.MaxDeltaTime")
   @js.native
@@ -69,7 +72,7 @@ object Scene {
   
   /**
     * Gets or sets the minimum deltatime when deterministic lock step is enabled
-    * @see https://doc.babylonjs.com/babylon101/animations#deterministic-lockstep
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/animation/advanced_animations#deterministic-lockstep
     */
   @JSImport("babylonjs/Legacy/legacy", "Scene.MinDeltaTime")
   @js.native

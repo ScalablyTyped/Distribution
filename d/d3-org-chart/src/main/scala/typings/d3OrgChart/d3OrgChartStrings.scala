@@ -20,10 +20,6 @@ object d3OrgChartStrings {
   inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait none extends StObject
-  inline def none: none = "none".asInstanceOf[none]
-  
-  @js.native
   sealed trait right
     extends StObject
        with Layout

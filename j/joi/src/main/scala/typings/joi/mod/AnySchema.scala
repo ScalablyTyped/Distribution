@@ -93,8 +93,8 @@ trait AnySchema[TSchema]
   /**
     * Adds a custom validation function.
     */
-  def custom(fn: CustomValidator[Any]): this.type = js.native
-  def custom(fn: CustomValidator[Any], description: String): this.type = js.native
+  def custom(fn: CustomValidator[Any, Any]): this.type = js.native
+  def custom(fn: CustomValidator[Any, Any], description: String): this.type = js.native
   
   /**
     * Returns a plain object representing the schema's rules and properties
@@ -162,8 +162,8 @@ trait AnySchema[TSchema]
     * This means that any changes made to the value by the external rules are not available to any other validation rules during the non-external validation phase.
     * If schema validation failed, no external validation rules are called.
     */
-  def external(method: ExternalValidationFunction[Any]): this.type = js.native
-  def external(method: ExternalValidationFunction[Any], description: String): this.type = js.native
+  def external(method: ExternalValidationFunction[Any, Any]): this.type = js.native
+  def external(method: ExternalValidationFunction[Any, Any], description: String): this.type = js.native
   
   /**
     * Returns a sub-schema based on a path of object keys or schema ids.
@@ -368,10 +368,10 @@ trait AnySchema[TSchema]
     * Validates a value using the schema and options.
     */
   def validateAsync[TOpts /* <: AsyncValidationOptions */](value: Any): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: TOpts extends {  artifacts :true} | {  warnings :true} ? {  value :TSchema} & TOpts extends {  artifacts :true} ? {  artifacts :std.Map<any, std.Array<std.Array<string>>>} : {} & TOpts extends {  warnings :true} ? {  warning :std.Array<joi.joi.ValidationError>} : {} : TSchema */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: TOpts extends {  artifacts :true} | {  warnings :true} ? {  value :TSchema} & TOpts extends {  artifacts :true} ? {  artifacts :std.Map<any, std.Array<std.Array<string>>>} : {} & TOpts extends {  warnings :true} ? {  warning :joi.joi.ValidationWarning} : {} : TSchema */ js.Any
   ] = js.native
   def validateAsync[TOpts /* <: AsyncValidationOptions */](value: Any, options: TOpts): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: TOpts extends {  artifacts :true} | {  warnings :true} ? {  value :TSchema} & TOpts extends {  artifacts :true} ? {  artifacts :std.Map<any, std.Array<std.Array<string>>>} : {} & TOpts extends {  warnings :true} ? {  warning :std.Array<joi.joi.ValidationError>} : {} : TSchema */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: TOpts extends {  artifacts :true} | {  warnings :true} ? {  value :TSchema} & TOpts extends {  artifacts :true} ? {  artifacts :std.Map<any, std.Array<std.Array<string>>>} : {} & TOpts extends {  warnings :true} ? {  warning :joi.joi.ValidationWarning} : {} : TSchema */ js.Any
   ] = js.native
   
   /**

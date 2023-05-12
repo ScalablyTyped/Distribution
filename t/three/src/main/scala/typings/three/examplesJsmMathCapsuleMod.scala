@@ -36,7 +36,7 @@ object examplesJsmMathCapsuleMod {
     
     var end: Vector3 = js.native
     
-    def getCenter(target: Double): Vector3 = js.native
+    def getCenter(target: Vector3): Vector3 = js.native
     
     def intersectsBox(box: Box3): Boolean = js.native
     

@@ -12,7 +12,7 @@ trait ProtectedTask extends StObject {
   var expirationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The protection status of the task. If scale-in protection is enabled for a task, the value is true. Otherwise, it is false.
+    * The protection status of the task. If scale-in protection is on for a task, the value is true. Otherwise, it is false.
     */
   var protectionEnabled: js.UndefOr[Boolean] = js.undefined
   

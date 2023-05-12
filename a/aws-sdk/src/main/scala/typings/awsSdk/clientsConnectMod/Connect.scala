@@ -12,6 +12,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Connect extends Service {
   
   /**
+    * Activates an evaluation form in the specified Amazon Connect instance. After the evaluation form is activated, it is available to start new evaluations based on the form. 
+    */
+  def activateEvaluationForm(): Request[ActivateEvaluationFormResponse, AWSError] = js.native
+  def activateEvaluationForm(callback: js.Function2[/* err */ AWSError, /* data */ ActivateEvaluationFormResponse, scala.Unit]): Request[ActivateEvaluationFormResponse, AWSError] = js.native
+  /**
+    * Activates an evaluation form in the specified Amazon Connect instance. After the evaluation form is activated, it is available to start new evaluations based on the form. 
+    */
+  def activateEvaluationForm(params: ActivateEvaluationFormRequest): Request[ActivateEvaluationFormResponse, AWSError] = js.native
+  def activateEvaluationForm(
+    params: ActivateEvaluationFormRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ActivateEvaluationFormResponse, scala.Unit]
+  ): Request[ActivateEvaluationFormResponse, AWSError] = js.native
+  
+  /**
     * This API is in preview release for Amazon Connect and is subject to change. Associates an approved origin to an Amazon Connect instance.
     */
   def associateApprovedOrigin(): Request[js.Object, AWSError] = js.native
@@ -86,12 +100,12 @@ trait Connect extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * This API is in preview release for Amazon Connect and is subject to change. Allows the specified Amazon Connect instance to access the specified Amazon Lex bot.
+    * This API is in preview release for Amazon Connect and is subject to change. Allows the specified Amazon Connect instance to access the specified Amazon Lex V1 bot. This API only supports the association of Amazon Lex V1 bots.
     */
   def associateLexBot(): Request[js.Object, AWSError] = js.native
   def associateLexBot(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * This API is in preview release for Amazon Connect and is subject to change. Allows the specified Amazon Connect instance to access the specified Amazon Lex bot.
+    * This API is in preview release for Amazon Connect and is subject to change. Allows the specified Amazon Connect instance to access the specified Amazon Lex V1 bot. This API only supports the association of Amazon Lex V1 bots.
     */
   def associateLexBot(params: AssociateLexBotRequest): Request[js.Object, AWSError] = js.native
   def associateLexBot(
@@ -156,12 +170,12 @@ trait Connect extends Service {
   ): Request[AssociateSecurityKeyResponse, AWSError] = js.native
   
   /**
-    * Claims an available phone number to your Amazon Connect instance or traffic distribution group. You can call this API only in the same Amazon Web Services Region where the Amazon Connect instance or traffic distribution group was created.  You can call the DescribePhoneNumber API to verify the status of a previous ClaimPhoneNumber operation. 
+    * Claims an available phone number to your Amazon Connect instance or traffic distribution group. You can call this API only in the same Amazon Web Services Region where the Amazon Connect instance or traffic distribution group was created. For more information about how to use this operation, see Claim a phone number in your country and Claim phone numbers to traffic distribution groups in the Amazon Connect Administrator Guide.   You can call the SearchAvailablePhoneNumbers API for available phone numbers that you can claim. Call the DescribePhoneNumber API to verify the status of a previous ClaimPhoneNumber operation. 
     */
   def claimPhoneNumber(): Request[ClaimPhoneNumberResponse, AWSError] = js.native
   def claimPhoneNumber(callback: js.Function2[/* err */ AWSError, /* data */ ClaimPhoneNumberResponse, scala.Unit]): Request[ClaimPhoneNumberResponse, AWSError] = js.native
   /**
-    * Claims an available phone number to your Amazon Connect instance or traffic distribution group. You can call this API only in the same Amazon Web Services Region where the Amazon Connect instance or traffic distribution group was created.  You can call the DescribePhoneNumber API to verify the status of a previous ClaimPhoneNumber operation. 
+    * Claims an available phone number to your Amazon Connect instance or traffic distribution group. You can call this API only in the same Amazon Web Services Region where the Amazon Connect instance or traffic distribution group was created. For more information about how to use this operation, see Claim a phone number in your country and Claim phone numbers to traffic distribution groups in the Amazon Connect Administrator Guide.   You can call the SearchAvailablePhoneNumbers API for available phone numbers that you can claim. Call the DescribePhoneNumber API to verify the status of a previous ClaimPhoneNumber operation. 
     */
   def claimPhoneNumber(params: ClaimPhoneNumberRequest): Request[ClaimPhoneNumberResponse, AWSError] = js.native
   def claimPhoneNumber(
@@ -215,6 +229,20 @@ trait Connect extends Service {
   ): Request[CreateContactFlowModuleResponse, AWSError] = js.native
   
   /**
+    * Creates an evaluation form in the specified Amazon Connect instance. The form can be used to define questions related to agent performance, and create sections to organize such questions. Question and section identifiers cannot be duplicated within the same evaluation form.
+    */
+  def createEvaluationForm(): Request[CreateEvaluationFormResponse, AWSError] = js.native
+  def createEvaluationForm(callback: js.Function2[/* err */ AWSError, /* data */ CreateEvaluationFormResponse, scala.Unit]): Request[CreateEvaluationFormResponse, AWSError] = js.native
+  /**
+    * Creates an evaluation form in the specified Amazon Connect instance. The form can be used to define questions related to agent performance, and create sections to organize such questions. Question and section identifiers cannot be duplicated within the same evaluation form.
+    */
+  def createEvaluationForm(params: CreateEvaluationFormRequest): Request[CreateEvaluationFormResponse, AWSError] = js.native
+  def createEvaluationForm(
+    params: CreateEvaluationFormRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateEvaluationFormResponse, scala.Unit]
+  ): Request[CreateEvaluationFormResponse, AWSError] = js.native
+  
+  /**
     * This API is in preview release for Amazon Connect and is subject to change. Creates hours of operation. 
     */
   def createHoursOfOperation(): Request[CreateHoursOfOperationResponse, AWSError] = js.native
@@ -259,6 +287,20 @@ trait Connect extends Service {
   ): Request[CreateIntegrationAssociationResponse, AWSError] = js.native
   
   /**
+    * Adds a new participant into an on-going chat contact. For more information, see Customize chat flow experiences by integrating custom participants.
+    */
+  def createParticipant(): Request[CreateParticipantResponse, AWSError] = js.native
+  def createParticipant(callback: js.Function2[/* err */ AWSError, /* data */ CreateParticipantResponse, scala.Unit]): Request[CreateParticipantResponse, AWSError] = js.native
+  /**
+    * Adds a new participant into an on-going chat contact. For more information, see Customize chat flow experiences by integrating custom participants.
+    */
+  def createParticipant(params: CreateParticipantRequest): Request[CreateParticipantResponse, AWSError] = js.native
+  def createParticipant(
+    params: CreateParticipantRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateParticipantResponse, scala.Unit]
+  ): Request[CreateParticipantResponse, AWSError] = js.native
+  
+  /**
     * This API is in preview release for Amazon Connect and is subject to change. Creates a new queue for the specified Amazon Connect instance.  If the number being used in the input is claimed to a traffic distribution group, and you are calling this API using an instance in the Amazon Web Services Region where the traffic distribution group was created, you can use either a full phone number ARN or UUID value for the OutboundCallerIdNumberId value of the OutboundCallerConfig request body parameter. However, if the number is claimed to a traffic distribution group and you are calling this API using an instance in the alternate Amazon Web Services Region associated with the traffic distribution group, you must provide a full phone number ARN. If a UUID is provided in this scenario, you will receive a ResourceNotFoundException. 
     */
   def createQueue(): Request[CreateQueueResponse, AWSError] = js.native
@@ -299,6 +341,20 @@ trait Connect extends Service {
     params: CreateRoutingProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateRoutingProfileResponse, scala.Unit]
   ): Request[CreateRoutingProfileResponse, AWSError] = js.native
+  
+  /**
+    * Creates a rule for the specified Amazon Connect instance. Use the Rules Function language to code conditions for the rule. 
+    */
+  def createRule(): Request[CreateRuleResponse, AWSError] = js.native
+  def createRule(callback: js.Function2[/* err */ AWSError, /* data */ CreateRuleResponse, scala.Unit]): Request[CreateRuleResponse, AWSError] = js.native
+  /**
+    * Creates a rule for the specified Amazon Connect instance. Use the Rules Function language to code conditions for the rule. 
+    */
+  def createRule(params: CreateRuleRequest): Request[CreateRuleResponse, AWSError] = js.native
+  def createRule(
+    params: CreateRuleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateRuleResponse, scala.Unit]
+  ): Request[CreateRuleResponse, AWSError] = js.native
   
   /**
     * This API is in preview release for Amazon Connect and is subject to change. Creates a security profile.
@@ -403,18 +459,48 @@ trait Connect extends Service {
   ): Request[CreateVocabularyResponse, AWSError] = js.native
   
   /**
-    * Deletes a flow for the specified Amazon Connect instance.
+    * Deactivates an evaluation form in the specified Amazon Connect instance. After a form is deactivated, it is no longer available for users to start new evaluations based on the form. 
     */
-  def deleteContactFlow(): Request[js.Object, AWSError] = js.native
-  def deleteContactFlow(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]): Request[js.Object, AWSError] = js.native
+  def deactivateEvaluationForm(): Request[DeactivateEvaluationFormResponse, AWSError] = js.native
+  def deactivateEvaluationForm(
+    callback: js.Function2[/* err */ AWSError, /* data */ DeactivateEvaluationFormResponse, scala.Unit]
+  ): Request[DeactivateEvaluationFormResponse, AWSError] = js.native
+  /**
+    * Deactivates an evaluation form in the specified Amazon Connect instance. After a form is deactivated, it is no longer available for users to start new evaluations based on the form. 
+    */
+  def deactivateEvaluationForm(params: DeactivateEvaluationFormRequest): Request[DeactivateEvaluationFormResponse, AWSError] = js.native
+  def deactivateEvaluationForm(
+    params: DeactivateEvaluationFormRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeactivateEvaluationFormResponse, scala.Unit]
+  ): Request[DeactivateEvaluationFormResponse, AWSError] = js.native
+  
+  /**
+    * Deletes a contact evaluation in the specified Amazon Connect instance.
+    */
+  def deleteContactEvaluation(): Request[js.Object, AWSError] = js.native
+  def deleteContactEvaluation(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes a contact evaluation in the specified Amazon Connect instance.
+    */
+  def deleteContactEvaluation(params: DeleteContactEvaluationRequest): Request[js.Object, AWSError] = js.native
+  def deleteContactEvaluation(
+    params: DeleteContactEvaluationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
   /**
     * Deletes a flow for the specified Amazon Connect instance.
     */
-  def deleteContactFlow(params: DeleteContactFlowRequest): Request[js.Object, AWSError] = js.native
+  def deleteContactFlow(): Request[DeleteContactFlowResponse, AWSError] = js.native
+  def deleteContactFlow(callback: js.Function2[/* err */ AWSError, /* data */ DeleteContactFlowResponse, scala.Unit]): Request[DeleteContactFlowResponse, AWSError] = js.native
+  /**
+    * Deletes a flow for the specified Amazon Connect instance.
+    */
+  def deleteContactFlow(params: DeleteContactFlowRequest): Request[DeleteContactFlowResponse, AWSError] = js.native
   def deleteContactFlow(
     params: DeleteContactFlowRequest,
-    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]
-  ): Request[js.Object, AWSError] = js.native
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteContactFlowResponse, scala.Unit]
+  ): Request[DeleteContactFlowResponse, AWSError] = js.native
   
   /**
     * Deletes the specified flow module.
@@ -429,6 +515,20 @@ trait Connect extends Service {
     params: DeleteContactFlowModuleRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteContactFlowModuleResponse, scala.Unit]
   ): Request[DeleteContactFlowModuleResponse, AWSError] = js.native
+  
+  /**
+    * Deletes an evaluation form in the specified Amazon Connect instance.    If the version property is provided, only the specified version of the evaluation form is deleted.   If no version is provided, then the full form (all versions) is deleted.  
+    */
+  def deleteEvaluationForm(): Request[js.Object, AWSError] = js.native
+  def deleteEvaluationForm(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes an evaluation form in the specified Amazon Connect instance.    If the version property is provided, only the specified version of the evaluation form is deleted.   If no version is provided, then the full form (all versions) is deleted.  
+    */
+  def deleteEvaluationForm(params: DeleteEvaluationFormRequest): Request[js.Object, AWSError] = js.native
+  def deleteEvaluationForm(
+    params: DeleteEvaluationFormRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]
+  ): Request[js.Object, AWSError] = js.native
   
   /**
     * This API is in preview release for Amazon Connect and is subject to change. Deletes an hours of operation.
@@ -483,6 +583,20 @@ trait Connect extends Service {
   def deleteQuickConnect(params: DeleteQuickConnectRequest): Request[js.Object, AWSError] = js.native
   def deleteQuickConnect(
     params: DeleteQuickConnectRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes a rule for the specified Amazon Connect instance.
+    */
+  def deleteRule(): Request[js.Object, AWSError] = js.native
+  def deleteRule(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes a rule for the specified Amazon Connect instance.
+    */
+  def deleteRule(params: DeleteRuleRequest): Request[js.Object, AWSError] = js.native
+  def deleteRule(
+    params: DeleteRuleRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]
   ): Request[js.Object, AWSError] = js.native
   
@@ -615,6 +729,22 @@ trait Connect extends Service {
   ): Request[DescribeContactResponse, AWSError] = js.native
   
   /**
+    * Describes a contact evaluation in the specified Amazon Connect instance.
+    */
+  def describeContactEvaluation(): Request[DescribeContactEvaluationResponse, AWSError] = js.native
+  def describeContactEvaluation(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeContactEvaluationResponse, scala.Unit]
+  ): Request[DescribeContactEvaluationResponse, AWSError] = js.native
+  /**
+    * Describes a contact evaluation in the specified Amazon Connect instance.
+    */
+  def describeContactEvaluation(params: DescribeContactEvaluationRequest): Request[DescribeContactEvaluationResponse, AWSError] = js.native
+  def describeContactEvaluation(
+    params: DescribeContactEvaluationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeContactEvaluationResponse, scala.Unit]
+  ): Request[DescribeContactEvaluationResponse, AWSError] = js.native
+  
+  /**
     * Describes the specified flow. You can also create and update flows using the Amazon Connect Flow language.
     */
   def describeContactFlow(): Request[DescribeContactFlowResponse, AWSError] = js.native
@@ -643,6 +773,20 @@ trait Connect extends Service {
     params: DescribeContactFlowModuleRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeContactFlowModuleResponse, scala.Unit]
   ): Request[DescribeContactFlowModuleResponse, AWSError] = js.native
+  
+  /**
+    * Describes an evaluation form in the specified Amazon Connect instance. If the version property is not provided, the latest version of the evaluation form is described.
+    */
+  def describeEvaluationForm(): Request[DescribeEvaluationFormResponse, AWSError] = js.native
+  def describeEvaluationForm(callback: js.Function2[/* err */ AWSError, /* data */ DescribeEvaluationFormResponse, scala.Unit]): Request[DescribeEvaluationFormResponse, AWSError] = js.native
+  /**
+    * Describes an evaluation form in the specified Amazon Connect instance. If the version property is not provided, the latest version of the evaluation form is described.
+    */
+  def describeEvaluationForm(params: DescribeEvaluationFormRequest): Request[DescribeEvaluationFormResponse, AWSError] = js.native
+  def describeEvaluationForm(
+    params: DescribeEvaluationFormRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeEvaluationFormResponse, scala.Unit]
+  ): Request[DescribeEvaluationFormResponse, AWSError] = js.native
   
   /**
     * This API is in preview release for Amazon Connect and is subject to change. Describes the hours of operation.
@@ -763,6 +907,20 @@ trait Connect extends Service {
   ): Request[DescribeRoutingProfileResponse, AWSError] = js.native
   
   /**
+    * Describes a rule for the specified Amazon Connect instance.
+    */
+  def describeRule(): Request[DescribeRuleResponse, AWSError] = js.native
+  def describeRule(callback: js.Function2[/* err */ AWSError, /* data */ DescribeRuleResponse, scala.Unit]): Request[DescribeRuleResponse, AWSError] = js.native
+  /**
+    * Describes a rule for the specified Amazon Connect instance.
+    */
+  def describeRule(params: DescribeRuleRequest): Request[DescribeRuleResponse, AWSError] = js.native
+  def describeRule(
+    params: DescribeRuleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeRuleResponse, scala.Unit]
+  ): Request[DescribeRuleResponse, AWSError] = js.native
+  
+  /**
     * This API is in preview release for Amazon Connect and is subject to change. Gets basic information about the security profle.
     */
   def describeSecurityProfile(): Request[DescribeSecurityProfileResponse, AWSError] = js.native
@@ -793,12 +951,12 @@ trait Connect extends Service {
   ): Request[DescribeTrafficDistributionGroupResponse, AWSError] = js.native
   
   /**
-    * Describes the specified user account. You can find the instance ID in the console (it’s the final part of the ARN). The console does not display the user IDs. Instead, list the users and note the IDs provided in the output.
+    * Describes the specified user account. You can find the instance ID in the Amazon Connect console (it’s the final part of the ARN). The console does not display the user IDs. Instead, list the users and note the IDs provided in the output.
     */
   def describeUser(): Request[DescribeUserResponse, AWSError] = js.native
   def describeUser(callback: js.Function2[/* err */ AWSError, /* data */ DescribeUserResponse, scala.Unit]): Request[DescribeUserResponse, AWSError] = js.native
   /**
-    * Describes the specified user account. You can find the instance ID in the console (it’s the final part of the ARN). The console does not display the user IDs. Instead, list the users and note the IDs provided in the output.
+    * Describes the specified user account. You can find the instance ID in the Amazon Connect console (it’s the final part of the ARN). The console does not display the user IDs. Instead, list the users and note the IDs provided in the output.
     */
   def describeUser(params: DescribeUserRequest): Request[DescribeUserResponse, AWSError] = js.native
   def describeUser(
@@ -1063,6 +1221,20 @@ trait Connect extends Service {
   ): Request[GetMetricDataResponse, AWSError] = js.native
   
   /**
+    * Gets metric data from the specified Amazon Connect instance.   GetMetricDataV2 offers more features than GetMetricData, the previous version of this API. It has new metrics, offers filtering at a metric level, and offers the ability to filter and group data by channels, queues, routing profiles, agents, and agent hierarchy levels. It can retrieve historical data for the last 35 days, in 24-hour intervals. For a description of the historical metrics that are supported by GetMetricDataV2 and GetMetricData, see Historical metrics definitions in the Amazon Connect Administrator's Guide.  This API is not available in the Amazon Web Services GovCloud (US) Regions.
+    */
+  def getMetricDataV2(): Request[GetMetricDataV2Response, AWSError] = js.native
+  def getMetricDataV2(callback: js.Function2[/* err */ AWSError, /* data */ GetMetricDataV2Response, scala.Unit]): Request[GetMetricDataV2Response, AWSError] = js.native
+  /**
+    * Gets metric data from the specified Amazon Connect instance.   GetMetricDataV2 offers more features than GetMetricData, the previous version of this API. It has new metrics, offers filtering at a metric level, and offers the ability to filter and group data by channels, queues, routing profiles, agents, and agent hierarchy levels. It can retrieve historical data for the last 35 days, in 24-hour intervals. For a description of the historical metrics that are supported by GetMetricDataV2 and GetMetricData, see Historical metrics definitions in the Amazon Connect Administrator's Guide.  This API is not available in the Amazon Web Services GovCloud (US) Regions.
+    */
+  def getMetricDataV2(params: GetMetricDataV2Request): Request[GetMetricDataV2Response, AWSError] = js.native
+  def getMetricDataV2(
+    params: GetMetricDataV2Request,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetMetricDataV2Response, scala.Unit]
+  ): Request[GetMetricDataV2Response, AWSError] = js.native
+  
+  /**
     * Gets details about a specific task template in the specified Amazon Connect instance.
     */
   def getTaskTemplate(): Request[GetTaskTemplateResponse, AWSError] = js.native
@@ -1133,6 +1305,20 @@ trait Connect extends Service {
   ): Request[ListBotsResponse, AWSError] = js.native
   
   /**
+    * Lists contact evaluations in the specified Amazon Connect instance.
+    */
+  def listContactEvaluations(): Request[ListContactEvaluationsResponse, AWSError] = js.native
+  def listContactEvaluations(callback: js.Function2[/* err */ AWSError, /* data */ ListContactEvaluationsResponse, scala.Unit]): Request[ListContactEvaluationsResponse, AWSError] = js.native
+  /**
+    * Lists contact evaluations in the specified Amazon Connect instance.
+    */
+  def listContactEvaluations(params: ListContactEvaluationsRequest): Request[ListContactEvaluationsResponse, AWSError] = js.native
+  def listContactEvaluations(
+    params: ListContactEvaluationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListContactEvaluationsResponse, scala.Unit]
+  ): Request[ListContactEvaluationsResponse, AWSError] = js.native
+  
+  /**
     * Provides information about the flow modules for the specified Amazon Connect instance.
     */
   def listContactFlowModules(): Request[ListContactFlowModulesResponse, AWSError] = js.native
@@ -1187,6 +1373,36 @@ trait Connect extends Service {
     params: ListDefaultVocabulariesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDefaultVocabulariesResponse, scala.Unit]
   ): Request[ListDefaultVocabulariesResponse, AWSError] = js.native
+  
+  /**
+    * Lists versions of an evaluation form in the specified Amazon Connect instance.
+    */
+  def listEvaluationFormVersions(): Request[ListEvaluationFormVersionsResponse, AWSError] = js.native
+  def listEvaluationFormVersions(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListEvaluationFormVersionsResponse, scala.Unit]
+  ): Request[ListEvaluationFormVersionsResponse, AWSError] = js.native
+  /**
+    * Lists versions of an evaluation form in the specified Amazon Connect instance.
+    */
+  def listEvaluationFormVersions(params: ListEvaluationFormVersionsRequest): Request[ListEvaluationFormVersionsResponse, AWSError] = js.native
+  def listEvaluationFormVersions(
+    params: ListEvaluationFormVersionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListEvaluationFormVersionsResponse, scala.Unit]
+  ): Request[ListEvaluationFormVersionsResponse, AWSError] = js.native
+  
+  /**
+    * Lists evaluation forms in the specified Amazon Connect instance.
+    */
+  def listEvaluationForms(): Request[ListEvaluationFormsResponse, AWSError] = js.native
+  def listEvaluationForms(callback: js.Function2[/* err */ AWSError, /* data */ ListEvaluationFormsResponse, scala.Unit]): Request[ListEvaluationFormsResponse, AWSError] = js.native
+  /**
+    * Lists evaluation forms in the specified Amazon Connect instance.
+    */
+  def listEvaluationForms(params: ListEvaluationFormsRequest): Request[ListEvaluationFormsResponse, AWSError] = js.native
+  def listEvaluationForms(
+    params: ListEvaluationFormsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListEvaluationFormsResponse, scala.Unit]
+  ): Request[ListEvaluationFormsResponse, AWSError] = js.native
   
   /**
     * Provides information about the hours of operation for the specified Amazon Connect instance. For more information about hours of operation, see Set the Hours of Operation for a Queue in the Amazon Connect Administrator Guide.
@@ -1405,6 +1621,20 @@ trait Connect extends Service {
   ): Request[ListRoutingProfilesResponse, AWSError] = js.native
   
   /**
+    * List all rules for the specified Amazon Connect instance.
+    */
+  def listRules(): Request[ListRulesResponse, AWSError] = js.native
+  def listRules(callback: js.Function2[/* err */ AWSError, /* data */ ListRulesResponse, scala.Unit]): Request[ListRulesResponse, AWSError] = js.native
+  /**
+    * List all rules for the specified Amazon Connect instance.
+    */
+  def listRules(params: ListRulesRequest): Request[ListRulesResponse, AWSError] = js.native
+  def listRules(
+    params: ListRulesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListRulesResponse, scala.Unit]
+  ): Request[ListRulesResponse, AWSError] = js.native
+  
+  /**
     * This API is in preview release for Amazon Connect and is subject to change. Returns a paginated list of all security keys associated with the instance.
     */
   def listSecurityKeys(): Request[ListSecurityKeysResponse, AWSError] = js.native
@@ -1533,6 +1763,20 @@ trait Connect extends Service {
     params: ListUsersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListUsersResponse, scala.Unit]
   ): Request[ListUsersResponse, AWSError] = js.native
+  
+  /**
+    * Initiates silent monitoring of a contact. The Contact Control Panel (CCP) of the user specified by userId will be set to silent monitoring mode on the contact.
+    */
+  def monitorContact(): Request[MonitorContactResponse, AWSError] = js.native
+  def monitorContact(callback: js.Function2[/* err */ AWSError, /* data */ MonitorContactResponse, scala.Unit]): Request[MonitorContactResponse, AWSError] = js.native
+  /**
+    * Initiates silent monitoring of a contact. The Contact Control Panel (CCP) of the user specified by userId will be set to silent monitoring mode on the contact.
+    */
+  def monitorContact(params: MonitorContactRequest): Request[MonitorContactResponse, AWSError] = js.native
+  def monitorContact(
+    params: MonitorContactRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ MonitorContactResponse, scala.Unit]
+  ): Request[MonitorContactResponse, AWSError] = js.native
   
   /**
     * Changes the current status of a user or agent in Amazon Connect. If the agent is currently handling a contact, this sets the agent's next status. For more information, see Agent status and Set your next status in the Amazon Connect Administrator Guide.
@@ -1691,6 +1935,20 @@ trait Connect extends Service {
   ): Request[StartChatContactResponse, AWSError] = js.native
   
   /**
+    * Starts an empty evaluation in the specified Amazon Connect instance, using the given evaluation form for the particular contact. The evaluation form version used for the contact evaluation corresponds to the currently activated version. If no version is activated for the evaluation form, the contact evaluation cannot be started.   Evaluations created through the public API do not contain answer values suggested from automation. 
+    */
+  def startContactEvaluation(): Request[StartContactEvaluationResponse, AWSError] = js.native
+  def startContactEvaluation(callback: js.Function2[/* err */ AWSError, /* data */ StartContactEvaluationResponse, scala.Unit]): Request[StartContactEvaluationResponse, AWSError] = js.native
+  /**
+    * Starts an empty evaluation in the specified Amazon Connect instance, using the given evaluation form for the particular contact. The evaluation form version used for the contact evaluation corresponds to the currently activated version. If no version is activated for the evaluation form, the contact evaluation cannot be started.   Evaluations created through the public API do not contain answer values suggested from automation. 
+    */
+  def startContactEvaluation(params: StartContactEvaluationRequest): Request[StartContactEvaluationResponse, AWSError] = js.native
+  def startContactEvaluation(
+    params: StartContactEvaluationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartContactEvaluationResponse, scala.Unit]
+  ): Request[StartContactEvaluationResponse, AWSError] = js.native
+  
+  /**
     * Starts recording the contact:    If the API is called before the agent joins the call, recording starts when the agent joins the call.   If the API is called after the agent joins the call, recording starts at the time of the API call.   StartContactRecording is a one-time action. For example, if you use StopContactRecording to stop recording an ongoing call, you can't use StartContactRecording to restart it. For scenarios where the recording has started and you want to suspend and resume it, such as when collecting sensitive information (for example, a credit card number), use SuspendContactRecording and ResumeContactRecording. You can use this API to override the recording behavior configured in the Set recording behavior block. Only voice recordings are supported at this time.
     */
   def startContactRecording(): Request[StartContactRecordingResponse, AWSError] = js.native
@@ -1791,6 +2049,20 @@ trait Connect extends Service {
   ): Request[StopContactStreamingResponse, AWSError] = js.native
   
   /**
+    * Submits a contact evaluation in the specified Amazon Connect instance. Answers included in the request are merged with existing answers for the given evaluation. If no answers or notes are passed, the evaluation is submitted with the existing answers and notes. You can delete an answer or note by passing an empty object ({}) to the question identifier.  If a contact evaluation is already in submitted state, this operation will trigger a resubmission.
+    */
+  def submitContactEvaluation(): Request[SubmitContactEvaluationResponse, AWSError] = js.native
+  def submitContactEvaluation(callback: js.Function2[/* err */ AWSError, /* data */ SubmitContactEvaluationResponse, scala.Unit]): Request[SubmitContactEvaluationResponse, AWSError] = js.native
+  /**
+    * Submits a contact evaluation in the specified Amazon Connect instance. Answers included in the request are merged with existing answers for the given evaluation. If no answers or notes are passed, the evaluation is submitted with the existing answers and notes. You can delete an answer or note by passing an empty object ({}) to the question identifier.  If a contact evaluation is already in submitted state, this operation will trigger a resubmission.
+    */
+  def submitContactEvaluation(params: SubmitContactEvaluationRequest): Request[SubmitContactEvaluationResponse, AWSError] = js.native
+  def submitContactEvaluation(
+    params: SubmitContactEvaluationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ SubmitContactEvaluationResponse, scala.Unit]
+  ): Request[SubmitContactEvaluationResponse, AWSError] = js.native
+  
+  /**
     * When a contact is being recorded, this API suspends recording the call. For example, you might suspend the call recording while collecting sensitive information, such as a credit card number. Then use ResumeContactRecording to restart recording.  The period of time that the recording is suspended is filled with silence in the final recording.  Only voice recordings are supported at this time.
     */
   def suspendContactRecording(): Request[SuspendContactRecordingResponse, AWSError] = js.native
@@ -1889,32 +2161,50 @@ trait Connect extends Service {
   ): Request[UpdateContactAttributesResponse, AWSError] = js.native
   
   /**
-    * Updates the specified flow. You can also create and update flows using the Amazon Connect Flow language.
+    * Updates details about a contact evaluation in the specified Amazon Connect instance. A contact evaluation must be in draft state. Answers included in the request are merged with existing answers for the given evaluation. An answer or note can be deleted by passing an empty object ({}) to the question identifier. 
     */
-  def updateContactFlowContent(): Request[js.Object, AWSError] = js.native
-  def updateContactFlowContent(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]): Request[js.Object, AWSError] = js.native
+  def updateContactEvaluation(): Request[UpdateContactEvaluationResponse, AWSError] = js.native
+  def updateContactEvaluation(callback: js.Function2[/* err */ AWSError, /* data */ UpdateContactEvaluationResponse, scala.Unit]): Request[UpdateContactEvaluationResponse, AWSError] = js.native
+  /**
+    * Updates details about a contact evaluation in the specified Amazon Connect instance. A contact evaluation must be in draft state. Answers included in the request are merged with existing answers for the given evaluation. An answer or note can be deleted by passing an empty object ({}) to the question identifier. 
+    */
+  def updateContactEvaluation(params: UpdateContactEvaluationRequest): Request[UpdateContactEvaluationResponse, AWSError] = js.native
+  def updateContactEvaluation(
+    params: UpdateContactEvaluationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateContactEvaluationResponse, scala.Unit]
+  ): Request[UpdateContactEvaluationResponse, AWSError] = js.native
+  
   /**
     * Updates the specified flow. You can also create and update flows using the Amazon Connect Flow language.
     */
-  def updateContactFlowContent(params: UpdateContactFlowContentRequest): Request[js.Object, AWSError] = js.native
+  def updateContactFlowContent(): Request[UpdateContactFlowContentResponse, AWSError] = js.native
+  def updateContactFlowContent(
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateContactFlowContentResponse, scala.Unit]
+  ): Request[UpdateContactFlowContentResponse, AWSError] = js.native
+  /**
+    * Updates the specified flow. You can also create and update flows using the Amazon Connect Flow language.
+    */
+  def updateContactFlowContent(params: UpdateContactFlowContentRequest): Request[UpdateContactFlowContentResponse, AWSError] = js.native
   def updateContactFlowContent(
     params: UpdateContactFlowContentRequest,
-    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]
-  ): Request[js.Object, AWSError] = js.native
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateContactFlowContentResponse, scala.Unit]
+  ): Request[UpdateContactFlowContentResponse, AWSError] = js.native
   
   /**
     * Updates metadata about specified flow.
     */
-  def updateContactFlowMetadata(): Request[js.Object, AWSError] = js.native
-  def updateContactFlowMetadata(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]): Request[js.Object, AWSError] = js.native
+  def updateContactFlowMetadata(): Request[UpdateContactFlowMetadataResponse, AWSError] = js.native
+  def updateContactFlowMetadata(
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateContactFlowMetadataResponse, scala.Unit]
+  ): Request[UpdateContactFlowMetadataResponse, AWSError] = js.native
   /**
     * Updates metadata about specified flow.
     */
-  def updateContactFlowMetadata(params: UpdateContactFlowMetadataRequest): Request[js.Object, AWSError] = js.native
+  def updateContactFlowMetadata(params: UpdateContactFlowMetadataRequest): Request[UpdateContactFlowMetadataResponse, AWSError] = js.native
   def updateContactFlowMetadata(
     params: UpdateContactFlowMetadataRequest,
-    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]
-  ): Request[js.Object, AWSError] = js.native
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateContactFlowMetadataResponse, scala.Unit]
+  ): Request[UpdateContactFlowMetadataResponse, AWSError] = js.native
   
   /**
     * Updates specified flow module for the specified Amazon Connect instance. 
@@ -1951,16 +2241,16 @@ trait Connect extends Service {
   /**
     * The name of the flow. You can also create and update flows using the Amazon Connect Flow language.
     */
-  def updateContactFlowName(): Request[js.Object, AWSError] = js.native
-  def updateContactFlowName(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]): Request[js.Object, AWSError] = js.native
+  def updateContactFlowName(): Request[UpdateContactFlowNameResponse, AWSError] = js.native
+  def updateContactFlowName(callback: js.Function2[/* err */ AWSError, /* data */ UpdateContactFlowNameResponse, scala.Unit]): Request[UpdateContactFlowNameResponse, AWSError] = js.native
   /**
     * The name of the flow. You can also create and update flows using the Amazon Connect Flow language.
     */
-  def updateContactFlowName(params: UpdateContactFlowNameRequest): Request[js.Object, AWSError] = js.native
+  def updateContactFlowName(params: UpdateContactFlowNameRequest): Request[UpdateContactFlowNameResponse, AWSError] = js.native
   def updateContactFlowName(
     params: UpdateContactFlowNameRequest,
-    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]
-  ): Request[js.Object, AWSError] = js.native
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateContactFlowNameResponse, scala.Unit]
+  ): Request[UpdateContactFlowNameResponse, AWSError] = js.native
   
   /**
     * Updates the scheduled time of a task contact that is already scheduled.
@@ -1975,6 +2265,20 @@ trait Connect extends Service {
     params: UpdateContactScheduleRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateContactScheduleResponse, scala.Unit]
   ): Request[UpdateContactScheduleResponse, AWSError] = js.native
+  
+  /**
+    * Updates details about a specific evaluation form version in the specified Amazon Connect instance. Question and section identifiers cannot be duplicated within the same evaluation form. This operation does not support partial updates. Instead it does a full update of evaluation form content.
+    */
+  def updateEvaluationForm(): Request[UpdateEvaluationFormResponse, AWSError] = js.native
+  def updateEvaluationForm(callback: js.Function2[/* err */ AWSError, /* data */ UpdateEvaluationFormResponse, scala.Unit]): Request[UpdateEvaluationFormResponse, AWSError] = js.native
+  /**
+    * Updates details about a specific evaluation form version in the specified Amazon Connect instance. Question and section identifiers cannot be duplicated within the same evaluation form. This operation does not support partial updates. Instead it does a full update of evaluation form content.
+    */
+  def updateEvaluationForm(params: UpdateEvaluationFormRequest): Request[UpdateEvaluationFormResponse, AWSError] = js.native
+  def updateEvaluationForm(
+    params: UpdateEvaluationFormRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateEvaluationFormResponse, scala.Unit]
+  ): Request[UpdateEvaluationFormResponse, AWSError] = js.native
   
   /**
     * This API is in preview release for Amazon Connect and is subject to change. Updates the hours of operation.
@@ -2019,12 +2323,28 @@ trait Connect extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Updates your claimed phone number from its current Amazon Connect instance or traffic distribution group to another Amazon Connect instance or traffic distribution group in the same Amazon Web Services Region.  You can call DescribePhoneNumber API to verify the status of a previous UpdatePhoneNumber operation. 
+    * Updates timeouts for when human chat participants are to be considered idle, and when agents are automatically disconnected from a chat due to idleness. You can set four timers:   Customer idle timeout   Customer auto-disconnect timeout   Agent idle timeout   Agent auto-disconnect timeout   For more information about how chat timeouts work, see Set up chat timeouts for human participants. 
+    */
+  def updateParticipantRoleConfig(): Request[UpdateParticipantRoleConfigResponse, AWSError] = js.native
+  def updateParticipantRoleConfig(
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateParticipantRoleConfigResponse, scala.Unit]
+  ): Request[UpdateParticipantRoleConfigResponse, AWSError] = js.native
+  /**
+    * Updates timeouts for when human chat participants are to be considered idle, and when agents are automatically disconnected from a chat due to idleness. You can set four timers:   Customer idle timeout   Customer auto-disconnect timeout   Agent idle timeout   Agent auto-disconnect timeout   For more information about how chat timeouts work, see Set up chat timeouts for human participants. 
+    */
+  def updateParticipantRoleConfig(params: UpdateParticipantRoleConfigRequest): Request[UpdateParticipantRoleConfigResponse, AWSError] = js.native
+  def updateParticipantRoleConfig(
+    params: UpdateParticipantRoleConfigRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateParticipantRoleConfigResponse, scala.Unit]
+  ): Request[UpdateParticipantRoleConfigResponse, AWSError] = js.native
+  
+  /**
+    * Updates your claimed phone number from its current Amazon Connect instance or traffic distribution group to another Amazon Connect instance or traffic distribution group in the same Amazon Web Services Region.  After using this API, you must verify that the phone number is attached to the correct flow in the target instance or traffic distribution group. You need to do this because the API switches only the phone number to a new instance or traffic distribution group. It doesn't migrate the flow configuration of the phone number, too. You can call DescribePhoneNumber API to verify the status of a previous UpdatePhoneNumber operation. 
     */
   def updatePhoneNumber(): Request[UpdatePhoneNumberResponse, AWSError] = js.native
   def updatePhoneNumber(callback: js.Function2[/* err */ AWSError, /* data */ UpdatePhoneNumberResponse, scala.Unit]): Request[UpdatePhoneNumberResponse, AWSError] = js.native
   /**
-    * Updates your claimed phone number from its current Amazon Connect instance or traffic distribution group to another Amazon Connect instance or traffic distribution group in the same Amazon Web Services Region.  You can call DescribePhoneNumber API to verify the status of a previous UpdatePhoneNumber operation. 
+    * Updates your claimed phone number from its current Amazon Connect instance or traffic distribution group to another Amazon Connect instance or traffic distribution group in the same Amazon Web Services Region.  After using this API, you must verify that the phone number is attached to the correct flow in the target instance or traffic distribution group. You need to do this because the API switches only the phone number to a new instance or traffic distribution group. It doesn't migrate the flow configuration of the phone number, too. You can call DescribePhoneNumber API to verify the status of a previous UpdatePhoneNumber operation. 
     */
   def updatePhoneNumber(params: UpdatePhoneNumberRequest): Request[UpdatePhoneNumberResponse, AWSError] = js.native
   def updatePhoneNumber(
@@ -2183,6 +2503,20 @@ trait Connect extends Service {
   def updateRoutingProfileQueues(params: UpdateRoutingProfileQueuesRequest): Request[js.Object, AWSError] = js.native
   def updateRoutingProfileQueues(
     params: UpdateRoutingProfileQueuesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Updates a rule for the specified Amazon Connect instance. Use the Rules Function language to code conditions for the rule. 
+    */
+  def updateRule(): Request[js.Object, AWSError] = js.native
+  def updateRule(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Updates a rule for the specified Amazon Connect instance. Use the Rules Function language to code conditions for the rule. 
+    */
+  def updateRule(params: UpdateRuleRequest): Request[js.Object, AWSError] = js.native
+  def updateRule(
+    params: UpdateRuleRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]
   ): Request[js.Object, AWSError] = js.native
   

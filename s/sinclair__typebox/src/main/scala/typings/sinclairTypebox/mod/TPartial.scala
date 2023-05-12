@@ -1,20 +1,15 @@
 package typings.sinclairTypebox.mod
 
-import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * You'll have to cast your way around this structure, unfortunately.
+  * TS definition: {{{
+  T extends @sinclair/typebox.@sinclair/typebox.TRecursive<infer S> ? @sinclair/typebox.@sinclair/typebox.TRecursive<@sinclair/typebox.@sinclair/typebox.TPartial<S>> : T extends @sinclair/typebox.@sinclair/typebox.TIntersect<infer S> ? @sinclair/typebox.@sinclair/typebox.TIntersect<@sinclair/typebox.@sinclair/typebox.TPartialArray<S>> : T extends @sinclair/typebox.@sinclair/typebox.TUnion<infer S> ? @sinclair/typebox.@sinclair/typebox.TUnion<@sinclair/typebox.@sinclair/typebox.TPartialArray<S>> : T extends @sinclair/typebox.@sinclair/typebox.TObject<infer S> ? @sinclair/typebox.@sinclair/typebox.TObject<@sinclair/typebox.@sinclair/typebox.TPartialProperties<S>> : T
+  }}}
+  */
 @js.native
-trait TPartial[T /* <: TObject[TProperties] */]
-  extends StObject
-     with TObject[TProperties] {
-  
-  @JSName("static")
-  var static_TPartial: Partial[
-    Static[
-      T, 
-      /* import warning: importer.ImportType#apply Failed type conversion: this['params'] */ js.Any
-    ]
-  ] = js.native
-}
+trait TPartial[T /* <: TSchema */] extends StObject

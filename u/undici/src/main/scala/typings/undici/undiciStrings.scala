@@ -1,7 +1,7 @@
 package typings.undici
 
 import typings.undici.libLlhttpConstantsMod.HTTPMode
-import typings.undici.typesDispatcherMod.HttpMethod
+import typings.undici.typesDispatcherMod.Dispatcher.HttpMethod
 import typings.undici.typesFetchMod.ReferrerPolicy
 import typings.undici.typesFetchMod.RequestCache
 import typings.undici.typesFetchMod.RequestCredentials
@@ -9,6 +9,7 @@ import typings.undici.typesFetchMod.RequestDestination
 import typings.undici.typesFetchMod.RequestMode
 import typings.undici.typesFetchMod.RequestRedirect
 import typings.undici.typesFetchMod.ResponseType
+import typings.undici.typesWebsocketMod.BinaryType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,8 +24,20 @@ object undiciStrings {
   inline def default: default = "default".asInstanceOf[default]
   
   @js.native
+  sealed trait AbortError extends StObject
+  inline def AbortError: AbortError = "AbortError".asInstanceOf[AbortError]
+  
+  @js.native
+  sealed trait BigInt extends StObject
+  inline def BigInt: BigInt = "BigInt".asInstanceOf[BigInt]
+  
+  @js.native
   sealed trait BodyTimeoutError extends StObject
   inline def BodyTimeoutError: BodyTimeoutError = "BodyTimeoutError".asInstanceOf[BodyTimeoutError]
+  
+  @js.native
+  sealed trait Boolean extends StObject
+  inline def Boolean: Boolean = "Boolean".asInstanceOf[Boolean]
   
   @js.native
   sealed trait CONNECT
@@ -39,6 +52,10 @@ object undiciStrings {
   @js.native
   sealed trait ClientDestroyedError extends StObject
   inline def ClientDestroyedError: ClientDestroyedError = "ClientDestroyedError".asInstanceOf[ClientDestroyedError]
+  
+  @js.native
+  sealed trait ConnectTimeoutError extends StObject
+  inline def ConnectTimeoutError: ConnectTimeoutError = "ConnectTimeoutError".asInstanceOf[ConnectTimeoutError]
   
   @js.native
   sealed trait DELETE
@@ -59,6 +76,14 @@ object undiciStrings {
   inline def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
   
   @js.native
+  sealed trait HTTPParserError extends StObject
+  inline def HTTPParserError: HTTPParserError = "HTTPParserError".asInstanceOf[HTTPParserError]
+  
+  @js.native
+  sealed trait HeadersOverflowError extends StObject
+  inline def HeadersOverflowError: HeadersOverflowError = "HeadersOverflowError".asInstanceOf[HeadersOverflowError]
+  
+  @js.native
   sealed trait HeadersTimeoutError extends StObject
   inline def HeadersTimeoutError: HeadersTimeoutError = "HeadersTimeoutError".asInstanceOf[HeadersTimeoutError]
   
@@ -71,22 +96,46 @@ object undiciStrings {
   inline def InvalidArgumentError: InvalidArgumentError = "InvalidArgumentError".asInstanceOf[InvalidArgumentError]
   
   @js.native
-  sealed trait InvalidReturnError extends StObject
-  inline def InvalidReturnError: InvalidReturnError = "InvalidReturnError".asInstanceOf[InvalidReturnError]
+  sealed trait InvalidReturnValueError extends StObject
+  inline def InvalidReturnValueError: InvalidReturnValueError = "InvalidReturnValueError".asInstanceOf[InvalidReturnValueError]
+  
+  @js.native
+  sealed trait Lax extends StObject
+  inline def Lax: Lax = "Lax".asInstanceOf[Lax]
+  
+  @js.native
+  sealed trait MissingUpstreamError extends StObject
+  inline def MissingUpstreamError: MissingUpstreamError = "MissingUpstreamError".asInstanceOf[MissingUpstreamError]
   
   @js.native
   sealed trait MockNotMatchedError extends StObject
   inline def MockNotMatchedError: MockNotMatchedError = "MockNotMatchedError".asInstanceOf[MockNotMatchedError]
   
   @js.native
+  sealed trait None extends StObject
+  inline def None: None = "None".asInstanceOf[None]
+  
+  @js.native
   sealed trait NotSupportedError extends StObject
   inline def NotSupportedError: NotSupportedError = "NotSupportedError".asInstanceOf[NotSupportedError]
+  
+  @js.native
+  sealed trait Null extends StObject
+  inline def Null: Null = "Null".asInstanceOf[Null]
+  
+  @js.native
+  sealed trait Number extends StObject
+  inline def Number: Number = "Number".asInstanceOf[Number]
   
   @js.native
   sealed trait OPTIONS
     extends StObject
        with HttpMethod
   inline def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
+  
+  @js.native
+  sealed trait Object extends StObject
+  inline def Object: Object = "Object".asInstanceOf[Object]
   
   @js.native
   sealed trait PATCH
@@ -107,12 +156,12 @@ object undiciStrings {
   inline def PUT: PUT = "PUT".asInstanceOf[PUT]
   
   @js.native
-  sealed trait RequestAbortedError extends StObject
-  inline def RequestAbortedError: RequestAbortedError = "RequestAbortedError".asInstanceOf[RequestAbortedError]
-  
-  @js.native
   sealed trait RequestContentLengthMismatchError extends StObject
   inline def RequestContentLengthMismatchError: RequestContentLengthMismatchError = "RequestContentLengthMismatchError".asInstanceOf[RequestContentLengthMismatchError]
+  
+  @js.native
+  sealed trait ResponseContentLengthMismatchError extends StObject
+  inline def ResponseContentLengthMismatchError: ResponseContentLengthMismatchError = "ResponseContentLengthMismatchError".asInstanceOf[ResponseContentLengthMismatchError]
   
   @js.native
   sealed trait ResponseExceededMaxSizeError extends StObject
@@ -127,8 +176,16 @@ object undiciStrings {
   inline def SocketError: SocketError = "SocketError".asInstanceOf[SocketError]
   
   @js.native
-  sealed trait SocketTimeoutError extends StObject
-  inline def SocketTimeoutError: SocketTimeoutError = "SocketTimeoutError".asInstanceOf[SocketTimeoutError]
+  sealed trait Strict extends StObject
+  inline def Strict: Strict = "Strict".asInstanceOf[Strict]
+  
+  @js.native
+  sealed trait String extends StObject
+  inline def String: String = "String".asInstanceOf[String]
+  
+  @js.native
+  sealed trait Symbol extends StObject
+  inline def Symbol: Symbol = "Symbol".asInstanceOf[Symbol]
   
   @js.native
   sealed trait TRACE
@@ -145,12 +202,24 @@ object undiciStrings {
   inline def UND_ERR_BODY_TIMEOUT: UND_ERR_BODY_TIMEOUT = "UND_ERR_BODY_TIMEOUT".asInstanceOf[UND_ERR_BODY_TIMEOUT]
   
   @js.native
+  sealed trait UND_ERR_BPL_MISSING_UPSTREAM extends StObject
+  inline def UND_ERR_BPL_MISSING_UPSTREAM: UND_ERR_BPL_MISSING_UPSTREAM = "UND_ERR_BPL_MISSING_UPSTREAM".asInstanceOf[UND_ERR_BPL_MISSING_UPSTREAM]
+  
+  @js.native
   sealed trait UND_ERR_CLOSED extends StObject
   inline def UND_ERR_CLOSED: UND_ERR_CLOSED = "UND_ERR_CLOSED".asInstanceOf[UND_ERR_CLOSED]
   
   @js.native
+  sealed trait UND_ERR_CONNECT_TIMEOUT extends StObject
+  inline def UND_ERR_CONNECT_TIMEOUT: UND_ERR_CONNECT_TIMEOUT = "UND_ERR_CONNECT_TIMEOUT".asInstanceOf[UND_ERR_CONNECT_TIMEOUT]
+  
+  @js.native
   sealed trait UND_ERR_DESTROYED extends StObject
   inline def UND_ERR_DESTROYED: UND_ERR_DESTROYED = "UND_ERR_DESTROYED".asInstanceOf[UND_ERR_DESTROYED]
+  
+  @js.native
+  sealed trait UND_ERR_HEADERS_OVERFLOW extends StObject
+  inline def UND_ERR_HEADERS_OVERFLOW: UND_ERR_HEADERS_OVERFLOW = "UND_ERR_HEADERS_OVERFLOW".asInstanceOf[UND_ERR_HEADERS_OVERFLOW]
   
   @js.native
   sealed trait UND_ERR_HEADERS_TIMEOUT extends StObject
@@ -181,6 +250,10 @@ object undiciStrings {
   inline def UND_ERR_RESPONSE_STATUS_CODE: UND_ERR_RESPONSE_STATUS_CODE = "UND_ERR_RESPONSE_STATUS_CODE".asInstanceOf[UND_ERR_RESPONSE_STATUS_CODE]
   
   @js.native
+  sealed trait UND_ERR_RES_CONTENT_LENGTH_MISMATCH extends StObject
+  inline def UND_ERR_RES_CONTENT_LENGTH_MISMATCH: UND_ERR_RES_CONTENT_LENGTH_MISMATCH = "UND_ERR_RES_CONTENT_LENGTH_MISMATCH".asInstanceOf[UND_ERR_RES_CONTENT_LENGTH_MISMATCH]
+  
+  @js.native
   sealed trait UND_ERR_RES_EXCEEDED_MAX_SIZE extends StObject
   inline def UND_ERR_RES_EXCEEDED_MAX_SIZE: UND_ERR_RES_EXCEEDED_MAX_SIZE = "UND_ERR_RES_EXCEEDED_MAX_SIZE".asInstanceOf[UND_ERR_RES_EXCEEDED_MAX_SIZE]
   
@@ -189,12 +262,12 @@ object undiciStrings {
   inline def UND_ERR_SOCKET: UND_ERR_SOCKET = "UND_ERR_SOCKET".asInstanceOf[UND_ERR_SOCKET]
   
   @js.native
-  sealed trait UND_ERR_SOCKET_TIMEOUT extends StObject
-  inline def UND_ERR_SOCKET_TIMEOUT: UND_ERR_SOCKET_TIMEOUT = "UND_ERR_SOCKET_TIMEOUT".asInstanceOf[UND_ERR_SOCKET_TIMEOUT]
-  
-  @js.native
   sealed trait UND_MOCK_ERR_MOCK_NOT_MATCHED extends StObject
   inline def UND_MOCK_ERR_MOCK_NOT_MATCHED: UND_MOCK_ERR_MOCK_NOT_MATCHED = "UND_MOCK_ERR_MOCK_NOT_MATCHED".asInstanceOf[UND_MOCK_ERR_MOCK_NOT_MATCHED]
+  
+  @js.native
+  sealed trait Undefined extends StObject
+  inline def Undefined: Undefined = "Undefined".asInstanceOf[Undefined]
   
   @js.native
   sealed trait _empty
@@ -202,6 +275,12 @@ object undiciStrings {
        with ReferrerPolicy
        with RequestDestination
   inline def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @js.native
+  sealed trait arraybuffer
+    extends StObject
+       with BinaryType
+  inline def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
   
   @js.native
   sealed trait audio
@@ -220,6 +299,16 @@ object undiciStrings {
     extends StObject
        with ResponseType
   inline def basic: basic = "basic".asInstanceOf[basic]
+  
+  @js.native
+  sealed trait blob
+    extends StObject
+       with BinaryType
+  inline def blob: blob = "blob".asInstanceOf[blob]
+  
+  @js.native
+  sealed trait close extends StObject
+  inline def close: close = "close".asInstanceOf[close]
   
   @js.native
   sealed trait connect_ extends StObject
@@ -262,6 +351,10 @@ object undiciStrings {
        with RequestRedirect
        with ResponseType
   inline def error: error = "error".asInstanceOf[error]
+  
+  @js.native
+  sealed trait failure extends StObject
+  inline def failure: failure = "failure".asInstanceOf[failure]
   
   @js.native
   sealed trait follow
@@ -316,6 +409,10 @@ object undiciStrings {
   inline def manual: manual = "manual".asInstanceOf[manual]
   
   @js.native
+  sealed trait message extends StObject
+  inline def message: message = "message".asInstanceOf[message]
+  
+  @js.native
   sealed trait native extends StObject
   inline def native: native = "native".asInstanceOf[native]
   
@@ -356,10 +453,10 @@ object undiciStrings {
   inline def `no-store`: `no-store` = "no-store".asInstanceOf[`no-store`]
   
   @js.native
-  sealed trait `object`
+  sealed trait object_
     extends StObject
        with RequestDestination
-  inline def `object`: `object` = "object".asInstanceOf[`object`]
+  inline def object_ : object_ = "object".asInstanceOf[object_]
   
   @js.native
   sealed trait omit
@@ -384,6 +481,10 @@ object undiciStrings {
     extends StObject
        with ResponseType
   inline def opaqueredirect: opaqueredirect = "opaqueredirect".asInstanceOf[opaqueredirect]
+  
+  @js.native
+  sealed trait open extends StObject
+  inline def open: open = "open".asInstanceOf[open]
   
   @js.native
   sealed trait origin
@@ -440,10 +541,8 @@ object undiciStrings {
   inline def sharedworker: sharedworker = "sharedworker".asInstanceOf[sharedworker]
   
   @js.native
-  sealed trait strict
-    extends StObject
-       with HTTPMode
-  inline def strict: strict = "strict".asInstanceOf[strict]
+  sealed trait signed extends StObject
+  inline def signed: signed = "signed".asInstanceOf[signed]
   
   @js.native
   sealed trait `strict-origin`
@@ -456,6 +555,12 @@ object undiciStrings {
     extends StObject
        with ReferrerPolicy
   inline def `strict-origin-when-cross-origin`: `strict-origin-when-cross-origin` = "strict-origin-when-cross-origin".asInstanceOf[`strict-origin-when-cross-origin`]
+  
+  @js.native
+  sealed trait strict_
+    extends StObject
+       with HTTPMode
+  inline def strict_ : strict_ = "strict".asInstanceOf[strict_]
   
   @js.native
   sealed trait style
@@ -478,6 +583,10 @@ object undiciStrings {
     extends StObject
        with ReferrerPolicy
   inline def `unsafe-url`: `unsafe-url` = "unsafe-url".asInstanceOf[`unsafe-url`]
+  
+  @js.native
+  sealed trait unsigned extends StObject
+  inline def unsigned: unsigned = "unsigned".asInstanceOf[unsigned]
   
   @js.native
   sealed trait video

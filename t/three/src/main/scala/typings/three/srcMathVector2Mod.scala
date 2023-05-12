@@ -62,6 +62,11 @@ object srcMathVector2Mod {
     def angle(): Double = js.native
     
     /**
+      * Returns the angle between this vector and vector {@link Vector2 | v} in radians.
+      */
+    def angleTo(v: Vector2): Double = js.native
+    
+    /**
       * Multiplies this vector (with an implicit 1 as the 3rd component) by m.
       */
     def applyMatrix3(m: Matrix3): this.type = js.native

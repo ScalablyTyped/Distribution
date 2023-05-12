@@ -210,6 +210,8 @@ object sapMPluginsColumnResizerMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:columnResize columnResize} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -224,6 +226,8 @@ object sapMPluginsColumnResizerMod {
     mParameters: ColumnWidth): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Displays the resize handle for the provided column `DOM` reference.
       */
     def startResizing(/**

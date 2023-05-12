@@ -1,6 +1,7 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.list
+import typings.arcgisJsApi.arcgisJsApiStrings.relationship_
 import typings.arcgisJsApi.esri.content.Content
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -63,5 +64,5 @@ trait RelationshipContent
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-RelationshipContent.html#type)
     */
   @JSName("type")
-  val type_RelationshipContent: typings.arcgisJsApi.arcgisJsApiStrings.relationship = js.native
+  val type_RelationshipContent: relationship_ = js.native
 }

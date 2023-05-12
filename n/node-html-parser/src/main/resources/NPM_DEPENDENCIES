@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "node-html-parser" : "6.1.1"
+      "node-html-parser" : "6.1.5"
     }
   ],
   "test-dependencies" : [
     {
-      "node-html-parser" : "6.1.1"
+      "node-html-parser" : "6.1.5"
     }
   ],
   "compile-devDependencies" : [

@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.firebaseUtil.distSrcCompatMod.Compat
 import typings.firebaseUtil.distSrcCryptMod.Base64_
 import typings.firebaseUtil.distSrcDefaultsMod.ExperimentalKey
+import typings.firebaseUtil.distSrcDefaultsMod.FirebaseDefaults
 import typings.firebaseUtil.distSrcEmulatorMod.EmulatorMockTokenOptions
 import typings.firebaseUtil.distSrcErrorsMod.ErrorMap
 import typings.firebaseUtil.distSrcJwtMod.DecodedToken
@@ -51,6 +52,11 @@ object distIndexDotnodeMod {
     def SDK_VERSION: String = js.native
     inline def SDK_VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SDK_VERSION")(x.asInstanceOf[js.Any])
   }
+  
+  @JSImport("@firebase/util/dist/index.node", "DecodeBase64StringError")
+  @js.native
+  open class DecodeBase64StringError ()
+    extends typings.firebaseUtil.distSrcCryptMod.DecodeBase64StringError
   
   @JSImport("@firebase/util/dist/index.node", "Deferred")
   @js.native
@@ -141,6 +147,8 @@ object distIndexDotnodeMod {
   inline def getDefaultEmulatorHost(productName: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultEmulatorHost")(productName.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
   inline def getDefaultEmulatorHostnameAndPort(productName: String): js.UndefOr[js.Tuple2[/* hostname */ String, /* port */ Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultEmulatorHostnameAndPort")(productName.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Tuple2[/* hostname */ String, /* port */ Double]]]
+  
+  inline def getDefaults(): js.UndefOr[FirebaseDefaults] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaults")().asInstanceOf[js.UndefOr[FirebaseDefaults]]
   
   inline def getExperimentalSetting[T /* <: ExperimentalKey */](name: T): /* import warning: importer.ImportType#apply Failed type conversion: @firebase/util.@firebase/util/dist/src/defaults.FirebaseDefaults[/ * template literal string: _${T} * / string] */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getExperimentalSetting")(name.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: @firebase/util.@firebase/util/dist/src/defaults.FirebaseDefaults[/ * template literal string: _${T} * / string] */ js.Any]
   

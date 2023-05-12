@@ -9,9 +9,10 @@ import typings.angularCompilerCli.srcNgtscAnnotationsComponentSrcResourcesMod.St
 import typings.angularCompilerCli.srcNgtscImportsMod.Reference
 import typings.angularCompilerCli.srcNgtscMetadataMod.ClassPropertyMapping
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.DirectiveTypeCheckMeta
+import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.HostDirectiveMeta
+import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.InputMapping
+import typings.angularCompilerCli.srcNgtscMetadataSrcPropertyMappingMod.InputOrOutput
 import typings.angularCompilerCli.srcNgtscMetadataSrcResourceRegistryMod.ComponentResources
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
 import typings.std.Set
 import typings.typescript.mod.Expression
 import org.scalablytyped.runtime.StObject
@@ -23,27 +24,31 @@ trait ReadonlyComponentAnalysis extends StObject {
   
   val animationTriggerNames: js.UndefOr[AnimationTriggerNames | Null] = js.undefined
   
-  val baseClass: js.UndefOr[Reference[ClassDeclaration[DeclarationNode]] | dynamic | Null] = js.undefined
+  val baseClass: js.UndefOr[Reference[ClassDeclarationDeclarati] | dynamic | Null] = js.undefined
   
   val classMetadata: js.UndefOr[R3ClassMetadata | Null] = js.undefined
   
   val decorator: js.UndefOr[typings.typescript.mod.Decorator | Null] = js.undefined
   
+  val hostDirectives: js.UndefOr[js.Array[HostDirectiveMeta] | Null] = js.undefined
+  
   val inlineStyles: js.UndefOr[js.Array[String] | Null] = js.undefined
   
-  val inputs: ClassPropertyMapping
+  val inputs: ClassPropertyMapping[InputMapping]
   
   val isPoisoned: Boolean
   
   val meta: OmitR3ComponentMetadataR3
   
-  val outputs: ClassPropertyMapping
+  val outputs: ClassPropertyMapping[InputOrOutput]
   
-  val providersRequiringFactory: js.UndefOr[Set[Reference[ClassDeclaration[DeclarationNode]]] | Null] = js.undefined
+  val providersRequiringFactory: js.UndefOr[Set[Reference[ClassDeclarationDeclarati]] | Null] = js.undefined
+  
+  val rawHostDirectives: js.UndefOr[Expression | Null] = js.undefined
   
   val rawImports: js.UndefOr[Expression | Null] = js.undefined
   
-  val resolvedImports: js.UndefOr[js.Array[Reference[ClassDeclaration[DeclarationNode]]] | Null] = js.undefined
+  val resolvedImports: js.UndefOr[js.Array[Reference[ClassDeclarationDeclarati]] | Null] = js.undefined
   
   val resources: ComponentResources
   
@@ -55,15 +60,15 @@ trait ReadonlyComponentAnalysis extends StObject {
   
   val typeCheckMeta: DirectiveTypeCheckMeta
   
-  val viewProvidersRequiringFactory: js.UndefOr[Set[Reference[ClassDeclaration[DeclarationNode]]] | Null] = js.undefined
+  val viewProvidersRequiringFactory: js.UndefOr[Set[Reference[ClassDeclarationDeclarati]] | Null] = js.undefined
 }
 object ReadonlyComponentAnalysis {
   
   inline def apply(
-    inputs: ClassPropertyMapping,
+    inputs: ClassPropertyMapping[InputMapping],
     isPoisoned: Boolean,
     meta: OmitR3ComponentMetadataR3,
-    outputs: ClassPropertyMapping,
+    outputs: ClassPropertyMapping[InputOrOutput],
     resources: ComponentResources,
     template: ParsedTemplateWithSource,
     typeCheckMeta: DirectiveTypeCheckMeta
@@ -81,7 +86,7 @@ object ReadonlyComponentAnalysis {
     
     inline def setAnimationTriggerNamesUndefined: Self = StObject.set(x, "animationTriggerNames", js.undefined)
     
-    inline def setBaseClass(value: Reference[ClassDeclaration[DeclarationNode]] | dynamic): Self = StObject.set(x, "baseClass", value.asInstanceOf[js.Any])
+    inline def setBaseClass(value: Reference[ClassDeclarationDeclarati] | dynamic): Self = StObject.set(x, "baseClass", value.asInstanceOf[js.Any])
     
     inline def setBaseClassNull: Self = StObject.set(x, "baseClass", null)
     
@@ -99,6 +104,14 @@ object ReadonlyComponentAnalysis {
     
     inline def setDecoratorUndefined: Self = StObject.set(x, "decorator", js.undefined)
     
+    inline def setHostDirectives(value: js.Array[HostDirectiveMeta]): Self = StObject.set(x, "hostDirectives", value.asInstanceOf[js.Any])
+    
+    inline def setHostDirectivesNull: Self = StObject.set(x, "hostDirectives", null)
+    
+    inline def setHostDirectivesUndefined: Self = StObject.set(x, "hostDirectives", js.undefined)
+    
+    inline def setHostDirectivesVarargs(value: HostDirectiveMeta*): Self = StObject.set(x, "hostDirectives", js.Array(value*))
+    
     inline def setInlineStyles(value: js.Array[String]): Self = StObject.set(x, "inlineStyles", value.asInstanceOf[js.Any])
     
     inline def setInlineStylesNull: Self = StObject.set(x, "inlineStyles", null)
@@ -107,19 +120,25 @@ object ReadonlyComponentAnalysis {
     
     inline def setInlineStylesVarargs(value: String*): Self = StObject.set(x, "inlineStyles", js.Array(value*))
     
-    inline def setInputs(value: ClassPropertyMapping): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: ClassPropertyMapping[InputMapping]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     inline def setIsPoisoned(value: Boolean): Self = StObject.set(x, "isPoisoned", value.asInstanceOf[js.Any])
     
     inline def setMeta(value: OmitR3ComponentMetadataR3): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    inline def setOutputs(value: ClassPropertyMapping): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+    inline def setOutputs(value: ClassPropertyMapping[InputOrOutput]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
-    inline def setProvidersRequiringFactory(value: Set[Reference[ClassDeclaration[DeclarationNode]]]): Self = StObject.set(x, "providersRequiringFactory", value.asInstanceOf[js.Any])
+    inline def setProvidersRequiringFactory(value: Set[Reference[ClassDeclarationDeclarati]]): Self = StObject.set(x, "providersRequiringFactory", value.asInstanceOf[js.Any])
     
     inline def setProvidersRequiringFactoryNull: Self = StObject.set(x, "providersRequiringFactory", null)
     
     inline def setProvidersRequiringFactoryUndefined: Self = StObject.set(x, "providersRequiringFactory", js.undefined)
+    
+    inline def setRawHostDirectives(value: Expression): Self = StObject.set(x, "rawHostDirectives", value.asInstanceOf[js.Any])
+    
+    inline def setRawHostDirectivesNull: Self = StObject.set(x, "rawHostDirectives", null)
+    
+    inline def setRawHostDirectivesUndefined: Self = StObject.set(x, "rawHostDirectives", js.undefined)
     
     inline def setRawImports(value: Expression): Self = StObject.set(x, "rawImports", value.asInstanceOf[js.Any])
     
@@ -127,13 +146,13 @@ object ReadonlyComponentAnalysis {
     
     inline def setRawImportsUndefined: Self = StObject.set(x, "rawImports", js.undefined)
     
-    inline def setResolvedImports(value: js.Array[Reference[ClassDeclaration[DeclarationNode]]]): Self = StObject.set(x, "resolvedImports", value.asInstanceOf[js.Any])
+    inline def setResolvedImports(value: js.Array[Reference[ClassDeclarationDeclarati]]): Self = StObject.set(x, "resolvedImports", value.asInstanceOf[js.Any])
     
     inline def setResolvedImportsNull: Self = StObject.set(x, "resolvedImports", null)
     
     inline def setResolvedImportsUndefined: Self = StObject.set(x, "resolvedImports", js.undefined)
     
-    inline def setResolvedImportsVarargs(value: Reference[ClassDeclaration[DeclarationNode]]*): Self = StObject.set(x, "resolvedImports", js.Array(value*))
+    inline def setResolvedImportsVarargs(value: Reference[ClassDeclarationDeclarati]*): Self = StObject.set(x, "resolvedImports", js.Array(value*))
     
     inline def setResources(value: ComponentResources): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
@@ -157,7 +176,7 @@ object ReadonlyComponentAnalysis {
     
     inline def setTypeCheckMeta(value: DirectiveTypeCheckMeta): Self = StObject.set(x, "typeCheckMeta", value.asInstanceOf[js.Any])
     
-    inline def setViewProvidersRequiringFactory(value: Set[Reference[ClassDeclaration[DeclarationNode]]]): Self = StObject.set(x, "viewProvidersRequiringFactory", value.asInstanceOf[js.Any])
+    inline def setViewProvidersRequiringFactory(value: Set[Reference[ClassDeclarationDeclarati]]): Self = StObject.set(x, "viewProvidersRequiringFactory", value.asInstanceOf[js.Any])
     
     inline def setViewProvidersRequiringFactoryNull: Self = StObject.set(x, "viewProvidersRequiringFactory", null)
     

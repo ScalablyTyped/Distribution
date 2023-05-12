@@ -67,6 +67,14 @@ object mod {
     inline def Success_=(x: SUCCESS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Success")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("@google-cloud/pubsub", "DebugMessage")
+  @js.native
+  open class DebugMessage protected ()
+    extends typings.googleCloudPubsub.buildSrcDebugMod.DebugMessage {
+    def this(message: String) = this()
+    def this(message: String, error: js.Error) = this()
+  }
+  
   @JSImport("@google-cloud/pubsub", "Duration")
   @js.native
   /* private */ open class Duration ()

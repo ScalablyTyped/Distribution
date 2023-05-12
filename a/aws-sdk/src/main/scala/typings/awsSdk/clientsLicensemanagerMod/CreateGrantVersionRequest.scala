@@ -27,6 +27,11 @@ trait CreateGrantVersionRequest extends StObject {
   var GrantName: js.UndefOr[String] = js.undefined
   
   /**
+    * The options specified for the grant.
+    */
+  var Options: js.UndefOr[typings.awsSdk.clientsLicensemanagerMod.Options] = js.undefined
+  
+  /**
     * Current version of the grant.
     */
   var SourceVersion: js.UndefOr[String] = js.undefined
@@ -64,6 +69,10 @@ object CreateGrantVersionRequest {
     inline def setGrantName(value: String): Self = StObject.set(x, "GrantName", value.asInstanceOf[js.Any])
     
     inline def setGrantNameUndefined: Self = StObject.set(x, "GrantName", js.undefined)
+    
+    inline def setOptions(value: Options): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "Options", js.undefined)
     
     inline def setSourceVersion(value: String): Self = StObject.set(x, "SourceVersion", value.asInstanceOf[js.Any])
     

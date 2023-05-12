@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Arguments for `gotoTargets` request. */
 trait GotoTargetsArguments extends StObject {
   
-  /** A column location for which the goto targets are determined. */
+  /** The position within `line` for which the goto targets are determined. It is measured in UTF-16 code units and the client capability `columnsStartAt1` determines whether it is 0- or 1-based. */
   var column: js.UndefOr[Double] = js.undefined
   
   /** The line location for which the goto targets are determined. */

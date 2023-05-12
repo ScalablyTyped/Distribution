@@ -7,10 +7,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An QueryAutocompletion request to be sent to the
-  * <code>QueryAutocompleteService</code>.
-  */
 trait QueryAutocompletionRequest extends StObject {
   
   /**

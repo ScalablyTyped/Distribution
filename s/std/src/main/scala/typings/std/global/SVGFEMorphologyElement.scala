@@ -3,6 +3,9 @@ package typings.std.global
 import typings.std.AddEventListenerOptions
 import typings.std.EventListenerOptions
 import typings.std.EventListenerOrEventListenerObject
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,10 +52,6 @@ open class SVGFEMorphologyElement ()
   /* standard dom */
   /* CompleteClass */
   var ariaColIndex: java.lang.String | Null = js.native
-  
-  /* standard dom */
-  /* CompleteClass */
-  var ariaColIndexText: java.lang.String | Null = js.native
   
   /* standard dom */
   /* CompleteClass */
@@ -148,10 +147,6 @@ open class SVGFEMorphologyElement ()
   
   /* standard dom */
   /* CompleteClass */
-  var ariaRowIndexText: java.lang.String | Null = js.native
-  
-  /* standard dom */
-  /* CompleteClass */
   var ariaRowSpan: java.lang.String | Null = js.native
   
   /* standard dom */
@@ -244,15 +239,15 @@ object SVGFEMorphologyElement {
   /* standard dom */
   @JSGlobal("SVGFEMorphologyElement.SVG_MORPHOLOGY_OPERATOR_DILATE")
   @js.native
-  val SVG_MORPHOLOGY_OPERATOR_DILATE: Double = js.native
+  val SVG_MORPHOLOGY_OPERATOR_DILATE: `2` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFEMorphologyElement.SVG_MORPHOLOGY_OPERATOR_ERODE")
   @js.native
-  val SVG_MORPHOLOGY_OPERATOR_ERODE: Double = js.native
+  val SVG_MORPHOLOGY_OPERATOR_ERODE: `1` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFEMorphologyElement.SVG_MORPHOLOGY_OPERATOR_UNKNOWN")
   @js.native
-  val SVG_MORPHOLOGY_OPERATOR_UNKNOWN: Double = js.native
+  val SVG_MORPHOLOGY_OPERATOR_UNKNOWN: `0` = js.native
 }

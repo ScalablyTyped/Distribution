@@ -16,7 +16,7 @@ object libIconsFileExcelTwoToneMod extends Shortcut {
   @js.native
   trait FileExcelTwoToneIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_FileExcelTwoToneIconType: String = js.native

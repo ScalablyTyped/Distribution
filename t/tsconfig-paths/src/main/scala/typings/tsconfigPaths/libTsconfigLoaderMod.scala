@@ -103,7 +103,7 @@ object libTsconfigLoaderMod {
     
     var compilerOptions: js.UndefOr[BaseUrl] = js.undefined
     
-    var `extends`: js.UndefOr[String] = js.undefined
+    var `extends`: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object Tsconfig {
     
@@ -119,9 +119,11 @@ object libTsconfigLoaderMod {
       
       inline def setCompilerOptionsUndefined: Self = StObject.set(x, "compilerOptions", js.undefined)
       
-      inline def setExtends(value: String): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
+      inline def setExtends(value: String | js.Array[String]): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
       
       inline def setExtendsUndefined: Self = StObject.set(x, "extends", js.undefined)
+      
+      inline def setExtendsVarargs(value: String*): Self = StObject.set(x, "extends", js.Array(value*))
     }
   }
 }

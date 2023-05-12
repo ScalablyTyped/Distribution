@@ -1,7 +1,7 @@
 package typings.three.mod
 
-import typings.std.Record
-import typings.three.srcUtilsMod.ColorRepresentation
+import typings.three.anon.Aliceblue
+import typings.three.srcMathColorMod.ColorRepresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,6 +25,6 @@ object Color {
     */
   @JSImport("three", "Color.NAMES")
   @js.native
-  def NAMES: Record[String, Double] = js.native
-  inline def NAMES_=(x: Record[String, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAMES")(x.asInstanceOf[js.Any])
+  def NAMES: Aliceblue = js.native
+  inline def NAMES_=(x: Aliceblue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAMES")(x.asInstanceOf[js.Any])
 }

@@ -5,22 +5,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FocusProps
+trait FocusProps[Target]
   extends StObject
-     with FocusEvents {
+     with FocusEvents[Target] {
   
   /** Whether the focus events should be disabled. */
   var isDisabled: js.UndefOr[Boolean] = js.undefined
 }
 object FocusProps {
   
-  inline def apply(): FocusProps = {
+  inline def apply[Target](): FocusProps[Target] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[FocusProps]
+    __obj.asInstanceOf[FocusProps[Target]]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: FocusProps] (val x: Self) extends AnyVal {
+  implicit open class MutableBuilder[Self <: FocusProps[?], Target] (val x: Self & FocusProps[Target]) extends AnyVal {
     
     inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
     

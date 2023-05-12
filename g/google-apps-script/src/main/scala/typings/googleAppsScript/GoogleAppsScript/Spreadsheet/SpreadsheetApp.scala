@@ -92,6 +92,8 @@ trait SpreadsheetApp extends StObject {
   
   def getUi(): Ui = js.native
   
+  def newCellImage(): CellImageBuilder = js.native
+  
   def newColor(): ColorBuilder = js.native
   
   def newConditionalFormatRule(): ConditionalFormatRuleBuilder = js.native

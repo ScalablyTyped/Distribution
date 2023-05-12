@@ -19,7 +19,7 @@ trait DeviceDeviceName
   var _type: js.UndefOr[Element] = js.undefined
   
   /**
-    * The name that identifies the device.
+    * The name of the device.
     */
   var name: String
   

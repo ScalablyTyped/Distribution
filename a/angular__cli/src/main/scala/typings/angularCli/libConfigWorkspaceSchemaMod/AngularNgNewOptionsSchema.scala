@@ -86,6 +86,11 @@ trait AngularNgNewOptionsSchema extends StObject {
   var skipTests: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Creates an application based upon the standalone API, without NgModules.
+    */
+  var standalone: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Creates a workspace with stricter type checking and stricter bundle budgets settings.
     * This setting helps improve maintainability and catch bugs ahead of time. For more
     * information, see https://angular.io/guide/strict-mode
@@ -174,6 +179,10 @@ object AngularNgNewOptionsSchema {
     inline def setSkipTests(value: Boolean): Self = StObject.set(x, "skipTests", value.asInstanceOf[js.Any])
     
     inline def setSkipTestsUndefined: Self = StObject.set(x, "skipTests", js.undefined)
+    
+    inline def setStandalone(value: Boolean): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
+    
+    inline def setStandaloneUndefined: Self = StObject.set(x, "standalone", js.undefined)
     
     inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     

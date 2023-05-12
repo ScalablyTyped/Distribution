@@ -74,7 +74,7 @@ open class Container protected ()
   def this(scene: Scene, x: Unit, y: Unit, children: js.Array[typings.phaser.Phaser.GameObjects.GameObject]) = this()
   
   /**
-    * The depth of this Game Object within the Scene.
+    * The depth of this Game Object within the Scene. Ensure this value is only ever set to a number data-type.
     * 
     * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
     * of Game Objects, without actually moving their position in the display list.
@@ -127,7 +127,7 @@ open class Container protected ()
     * value will always render in front of one with a lower value.
     * 
     * Setting the depth will queue a depth sort event within the Scene.
-    * @param value The depth of this Game Object.
+    * @param value The depth of this Game Object. Ensure this value is only ever a number data-type.
     */
   /* CompleteClass */
   override def setDepth(value: Double): this.type = js.native

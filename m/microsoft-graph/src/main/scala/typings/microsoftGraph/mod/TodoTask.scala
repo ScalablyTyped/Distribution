@@ -10,6 +10,7 @@ trait TodoTask
   
   var attachmentSessions: js.UndefOr[NullableOption[js.Array[AttachmentSession]]] = js.undefined
   
+  // A collection of file attachments for the task.
   var attachments: js.UndefOr[NullableOption[js.Array[AttachmentBase]]] = js.undefined
   
   // The task body that typically contains information about the task.
@@ -47,6 +48,7 @@ trait TodoTask
   // The collection of open extensions defined for the task. Nullable.
   var extensions: js.UndefOr[NullableOption[js.Array[Extension]]] = js.undefined
   
+  // Indicates whether the task has attachments.
   var hasAttachments: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // The importance of the task. Possible values are: low, normal, high.
@@ -71,6 +73,7 @@ trait TodoTask
   // The date and time in the specified time zone for a reminder alert of the task to occur.
   var reminderDateTime: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.undefined
   
+  // The date and time in the specified time zone at which the task is scheduled to start.
   var startDateTime: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.undefined
   
   /**

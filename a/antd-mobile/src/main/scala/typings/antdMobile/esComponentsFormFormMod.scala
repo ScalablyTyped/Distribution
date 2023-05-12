@@ -75,7 +75,7 @@ object esComponentsFormFormMod {
   @js.native
   val Form: ForwardRefExoticComponent[classNamestringundefineds] = js.native
   
-  /* Inlined std.Pick<rc-field-form.rc-field-form.FormInstance<any>, 'getFieldValue' | 'getFieldsValue' | 'getFieldError' | 'getFieldsError' | 'isFieldTouched' | 'isFieldsTouched' | 'resetFields' | 'setFields' | 'setFieldsValue' | 'submit' | 'validateFields'> */
+  /* Inlined std.Pick<rc-field-form.rc-field-form.FormInstance<any>, 'getFieldValue' | 'getFieldsValue' | 'getFieldError' | 'getFieldsError' | 'isFieldTouched' | 'isFieldsTouched' | 'resetFields' | 'setFields' | 'setFieldValue' | 'setFieldsValue' | 'submit' | 'validateFields'> */
   trait FormInstance extends StObject {
     
     var getFieldError: js.Function1[/* name */ NamePath, js.Array[String]]
@@ -99,6 +99,8 @@ object esComponentsFormFormMod {
       ]) & (js.Function1[/* allFieldsTouched */ js.UndefOr[Boolean], Boolean])
     
     var resetFields: js.Function0[Unit]
+    
+    var setFieldValue: js.Function2[/* name */ NamePath, /* value */ Any, Unit]
     
     var setFields: js.Function1[/* fields */ js.Array[FieldData], Unit]
     
@@ -126,12 +128,13 @@ object esComponentsFormFormMod {
           Boolean
         ]) & (js.Function1[/* allFieldsTouched */ js.UndefOr[Boolean], Boolean]),
       resetFields: () => Unit,
+      setFieldValue: (/* name */ NamePath, /* value */ Any) => Unit,
       setFields: /* fields */ js.Array[FieldData] => Unit,
       setFieldsValue: /* values */ RecursivePartial[Any] => Unit,
       submit: () => Unit,
       validateFields: /* nameList */ js.UndefOr[js.Array[NamePath]] => js.Promise[Any]
     ): FormInstance = {
-      val __obj = js.Dynamic.literal(getFieldError = js.Any.fromFunction1(getFieldError), getFieldValue = js.Any.fromFunction1(getFieldValue), getFieldsError = js.Any.fromFunction0(getFieldsError), getFieldsValue = getFieldsValue.asInstanceOf[js.Any], isFieldTouched = js.Any.fromFunction1(isFieldTouched), isFieldsTouched = isFieldsTouched.asInstanceOf[js.Any], resetFields = js.Any.fromFunction0(resetFields), setFields = js.Any.fromFunction1(setFields), setFieldsValue = js.Any.fromFunction1(setFieldsValue), submit = js.Any.fromFunction0(submit), validateFields = js.Any.fromFunction1(validateFields))
+      val __obj = js.Dynamic.literal(getFieldError = js.Any.fromFunction1(getFieldError), getFieldValue = js.Any.fromFunction1(getFieldValue), getFieldsError = js.Any.fromFunction0(getFieldsError), getFieldsValue = getFieldsValue.asInstanceOf[js.Any], isFieldTouched = js.Any.fromFunction1(isFieldTouched), isFieldsTouched = isFieldsTouched.asInstanceOf[js.Any], resetFields = js.Any.fromFunction0(resetFields), setFieldValue = js.Any.fromFunction2(setFieldValue), setFields = js.Any.fromFunction1(setFields), setFieldsValue = js.Any.fromFunction1(setFieldsValue), submit = js.Any.fromFunction0(submit), validateFields = js.Any.fromFunction1(validateFields))
       __obj.asInstanceOf[FormInstance]
     }
     
@@ -163,6 +166,8 @@ object esComponentsFormFormMod {
       ): Self = StObject.set(x, "isFieldsTouched", value.asInstanceOf[js.Any])
       
       inline def setResetFields(value: () => Unit): Self = StObject.set(x, "resetFields", js.Any.fromFunction0(value))
+      
+      inline def setSetFieldValue(value: (/* name */ NamePath, /* value */ Any) => Unit): Self = StObject.set(x, "setFieldValue", js.Any.fromFunction2(value))
       
       inline def setSetFields(value: /* fields */ js.Array[FieldData] => Unit): Self = StObject.set(x, "setFields", js.Any.fromFunction1(value))
       

@@ -62,6 +62,8 @@ trait WindowOptions extends StObject {
   
   var resize: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.undefined
   
+  var restore: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.undefined
+  
   var scrollable: js.UndefOr[Boolean] = js.undefined
   
   var size: js.UndefOr[String] = js.undefined
@@ -193,6 +195,10 @@ object WindowOptions {
     inline def setResize(value: /* e */ WindowEvent => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
     
     inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+    
+    inline def setRestore(value: /* e */ WindowEvent => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction1(value))
+    
+    inline def setRestoreUndefined: Self = StObject.set(x, "restore", js.undefined)
     
     inline def setScrollable(value: Boolean): Self = StObject.set(x, "scrollable", value.asInstanceOf[js.Any])
     

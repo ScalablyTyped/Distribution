@@ -15,4 +15,6 @@ trait ClassExpression
   
   @JSName("kind")
   val kind_ClassExpression: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.SyntaxKind.ClassExpression = js.native
+  
+  val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
 }

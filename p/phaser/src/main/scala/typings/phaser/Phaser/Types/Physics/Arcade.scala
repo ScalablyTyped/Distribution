@@ -8,6 +8,7 @@ import typings.phaser.Phaser.Physics.Arcade.Image
 import typings.phaser.Phaser.Physics.Arcade.Sprite
 import typings.phaser.Phaser.Physics.Arcade.StaticBody
 import typings.phaser.Phaser.Physics.Arcade.StaticGroup
+import typings.phaser.Phaser.Tilemaps.Tile
 import typings.phaser.Phaser.Tilemaps.TilemapLayer
 import typings.phaser.Phaser.Types.GameObjects.Group.GroupConfig
 import typings.phaser.Phaser.Types.Math.Vector2Like
@@ -123,6 +124,12 @@ object Arcade {
   typings.phaser.Phaser.GameObjects.GameObject | typings.phaser.Phaser.Physics.Arcade.Group | typings.phaser.Phaser.Physics.Arcade.Image | typings.phaser.Phaser.Physics.Arcade.Sprite | typings.phaser.Phaser.Physics.Arcade.StaticGroup | typings.phaser.Phaser.Tilemaps.TilemapLayer]
   */
   type ArcadeColliderType = _ArcadeColliderType | (js.Array[GameObject | Group | Image | Sprite | StaticGroup | TilemapLayer])
+  
+  type ArcadePhysicsCallback = js.Function2[
+    /* object1 */ GameObjectWithBody | Tile, 
+    /* object2 */ GameObjectWithBody | Tile, 
+    Unit
+  ]
   
   trait ArcadeWorldConfig extends StObject {
     
@@ -669,6 +676,11 @@ object Arcade {
     var mass: js.UndefOr[Double] = js.undefined
     
     /**
+      * Sets {@link Phaser.Physics.Arcade.Body#maxSpeed maxSpeed}.
+      */
+    var maxSpeed: js.UndefOr[Double] = js.undefined
+    
+    /**
       * Sets {@link Phaser.Physics.Arcade.Body#maxVelocity maxVelocity.x}.
       */
     var maxVelocityX: js.UndefOr[Double] = js.undefined
@@ -677,6 +689,11 @@ object Arcade {
       * Sets {@link Phaser.Physics.Arcade.Body#maxVelocity maxVelocity.y}.
       */
     var maxVelocityY: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Sets {@link Phaser.Physics.Arcade.Body#useDamping useDamping}.
+      */
+    var useDamping: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets {@link Phaser.Physics.Arcade.Body#velocity velocity.x}.
@@ -782,6 +799,10 @@ object Arcade {
       
       inline def setMassUndefined: Self = StObject.set(x, "mass", js.undefined)
       
+      inline def setMaxSpeed(value: Double): Self = StObject.set(x, "maxSpeed", value.asInstanceOf[js.Any])
+      
+      inline def setMaxSpeedUndefined: Self = StObject.set(x, "maxSpeed", js.undefined)
+      
       inline def setMaxVelocityX(value: Double): Self = StObject.set(x, "maxVelocityX", value.asInstanceOf[js.Any])
       
       inline def setMaxVelocityXUndefined: Self = StObject.set(x, "maxVelocityX", js.undefined)
@@ -789,6 +810,10 @@ object Arcade {
       inline def setMaxVelocityY(value: Double): Self = StObject.set(x, "maxVelocityY", value.asInstanceOf[js.Any])
       
       inline def setMaxVelocityYUndefined: Self = StObject.set(x, "maxVelocityY", js.undefined)
+      
+      inline def setUseDamping(value: Boolean): Self = StObject.set(x, "useDamping", value.asInstanceOf[js.Any])
+      
+      inline def setUseDampingUndefined: Self = StObject.set(x, "useDamping", js.undefined)
       
       inline def setVelocityX(value: Double): Self = StObject.set(x, "velocityX", value.asInstanceOf[js.Any])
       
@@ -863,6 +888,11 @@ object Arcade {
     var setCollideWorldBounds: Boolean
     
     /**
+      * As {@link Phaser.Physics.Arcade.Body#setDamping}.
+      */
+    var setDamping: Boolean
+    
+    /**
       * As {@link Phaser.Physics.Arcade.Body#setDragX}.
       */
     var setDragX: Double
@@ -908,6 +938,11 @@ object Arcade {
     var setMass: Double
     
     /**
+      * As {@link Phaser.Physics.Arcade.Body#setMaxSpeed}.
+      */
+    var setMaxSpeed: Double
+    
+    /**
       * As {@link Phaser.Physics.Arcade.Body#setVelocityX}.
       */
     var setVelocityX: Double
@@ -932,6 +967,7 @@ object Arcade {
       setBounceY: Double,
       setBoundsRectangle: Rectangle,
       setCollideWorldBounds: Boolean,
+      setDamping: Boolean,
       setDragX: Double,
       setDragY: Double,
       setEnable: Boolean,
@@ -941,10 +977,11 @@ object Arcade {
       setGravityY: Double,
       setImmovable: Boolean,
       setMass: Double,
+      setMaxSpeed: Double,
       setVelocityX: Double,
       setVelocityY: Double
     ): PhysicsGroupDefaults = {
-      val __obj = js.Dynamic.literal(setAccelerationX = setAccelerationX.asInstanceOf[js.Any], setAccelerationY = setAccelerationY.asInstanceOf[js.Any], setAllowDrag = setAllowDrag.asInstanceOf[js.Any], setAllowGravity = setAllowGravity.asInstanceOf[js.Any], setAllowRotation = setAllowRotation.asInstanceOf[js.Any], setAngularAcceleration = setAngularAcceleration.asInstanceOf[js.Any], setAngularDrag = setAngularDrag.asInstanceOf[js.Any], setAngularVelocity = setAngularVelocity.asInstanceOf[js.Any], setBounceX = setBounceX.asInstanceOf[js.Any], setBounceY = setBounceY.asInstanceOf[js.Any], setBoundsRectangle = setBoundsRectangle.asInstanceOf[js.Any], setCollideWorldBounds = setCollideWorldBounds.asInstanceOf[js.Any], setDragX = setDragX.asInstanceOf[js.Any], setDragY = setDragY.asInstanceOf[js.Any], setEnable = setEnable.asInstanceOf[js.Any], setFrictionX = setFrictionX.asInstanceOf[js.Any], setFrictionY = setFrictionY.asInstanceOf[js.Any], setGravityX = setGravityX.asInstanceOf[js.Any], setGravityY = setGravityY.asInstanceOf[js.Any], setImmovable = setImmovable.asInstanceOf[js.Any], setMass = setMass.asInstanceOf[js.Any], setVelocityX = setVelocityX.asInstanceOf[js.Any], setVelocityY = setVelocityY.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(setAccelerationX = setAccelerationX.asInstanceOf[js.Any], setAccelerationY = setAccelerationY.asInstanceOf[js.Any], setAllowDrag = setAllowDrag.asInstanceOf[js.Any], setAllowGravity = setAllowGravity.asInstanceOf[js.Any], setAllowRotation = setAllowRotation.asInstanceOf[js.Any], setAngularAcceleration = setAngularAcceleration.asInstanceOf[js.Any], setAngularDrag = setAngularDrag.asInstanceOf[js.Any], setAngularVelocity = setAngularVelocity.asInstanceOf[js.Any], setBounceX = setBounceX.asInstanceOf[js.Any], setBounceY = setBounceY.asInstanceOf[js.Any], setBoundsRectangle = setBoundsRectangle.asInstanceOf[js.Any], setCollideWorldBounds = setCollideWorldBounds.asInstanceOf[js.Any], setDamping = setDamping.asInstanceOf[js.Any], setDragX = setDragX.asInstanceOf[js.Any], setDragY = setDragY.asInstanceOf[js.Any], setEnable = setEnable.asInstanceOf[js.Any], setFrictionX = setFrictionX.asInstanceOf[js.Any], setFrictionY = setFrictionY.asInstanceOf[js.Any], setGravityX = setGravityX.asInstanceOf[js.Any], setGravityY = setGravityY.asInstanceOf[js.Any], setImmovable = setImmovable.asInstanceOf[js.Any], setMass = setMass.asInstanceOf[js.Any], setMaxSpeed = setMaxSpeed.asInstanceOf[js.Any], setVelocityX = setVelocityX.asInstanceOf[js.Any], setVelocityY = setVelocityY.asInstanceOf[js.Any])
       __obj.asInstanceOf[PhysicsGroupDefaults]
     }
     
@@ -975,6 +1012,8 @@ object Arcade {
       
       inline def setSetCollideWorldBounds(value: Boolean): Self = StObject.set(x, "setCollideWorldBounds", value.asInstanceOf[js.Any])
       
+      inline def setSetDamping(value: Boolean): Self = StObject.set(x, "setDamping", value.asInstanceOf[js.Any])
+      
       inline def setSetDragX(value: Double): Self = StObject.set(x, "setDragX", value.asInstanceOf[js.Any])
       
       inline def setSetDragY(value: Double): Self = StObject.set(x, "setDragY", value.asInstanceOf[js.Any])
@@ -992,6 +1031,8 @@ object Arcade {
       inline def setSetImmovable(value: Boolean): Self = StObject.set(x, "setImmovable", value.asInstanceOf[js.Any])
       
       inline def setSetMass(value: Double): Self = StObject.set(x, "setMass", value.asInstanceOf[js.Any])
+      
+      inline def setSetMaxSpeed(value: Double): Self = StObject.set(x, "setMaxSpeed", value.asInstanceOf[js.Any])
       
       inline def setSetVelocityX(value: Double): Self = StObject.set(x, "setVelocityX", value.asInstanceOf[js.Any])
       

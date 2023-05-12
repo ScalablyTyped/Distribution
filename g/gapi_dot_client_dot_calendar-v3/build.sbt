@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_calendar-v3"
-version := "0.0-dt-20220912Z-1efa45"
+version := "0.0-dt-20230214Z-1efa45"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

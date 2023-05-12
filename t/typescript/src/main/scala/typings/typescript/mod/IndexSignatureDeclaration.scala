@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IndexSignatureDeclaration
   extends StObject
      with SignatureDeclarationBase
+     with LocalsContainer
      with HasJSDoc
      with HasModifiers
      with SignatureDeclaration {
@@ -26,8 +27,7 @@ trait IndexSignatureDeclaration
   @JSName("kind")
   val kind_IndexSignatureDeclaration: IndexSignature = js.native
   
-  @JSName("modifiers")
-  val modifiers_IndexSignatureDeclaration: js.UndefOr[NodeArray[Modifier]] = js.native
+  val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
   
   @JSName("parent")
   val parent_IndexSignatureDeclaration: ObjectTypeDeclaration = js.native

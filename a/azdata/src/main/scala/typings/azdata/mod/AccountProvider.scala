@@ -1,5 +1,6 @@
 package typings.azdata.mod
 
+import typings.azdata.mod.accounts.AccountSecurityToken
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,11 +27,19 @@ trait AccountProvider extends StObject {
   def clearTokenCache(): Thenable[Unit]
   
   /**
+    * Generates a security token for the provided account and tenant
+    * @param account The account to generate a security token for
+    * @param resource The resource to get the token for
+    * @return Promise to return a security token object
+    */
+  def getAccountSecurityToken(account: Account, tenant: String, resource: AzureResource): Thenable[js.UndefOr[AccountSecurityToken]]
+  
+  /**
     * Generates a security token for the provided account
     * @param account The account to generate a security token for
     * @param resource The resource to get the token for
     * @return Promise to return a security token object
-    * @deprecated use getAccountSecurityToken
+    * @deprecated use {@link AccountProvider.getAccountSecurityToken}
     */
   def getSecurityToken(account: Account, resource: AzureResource): Thenable[js.UndefOr[js.Object]]
   
@@ -61,12 +70,13 @@ object AccountProvider {
     autoOAuthCancelled: () => Thenable[Unit],
     clear: AccountKey => Thenable[Unit],
     clearTokenCache: () => Thenable[Unit],
+    getAccountSecurityToken: (Account, String, AzureResource) => Thenable[js.UndefOr[AccountSecurityToken]],
     getSecurityToken: (Account, AzureResource) => Thenable[js.UndefOr[js.Object]],
     initialize: js.Array[Account] => Thenable[js.Array[Account]],
     prompt: () => Thenable[Account | PromptFailedResult],
     refresh: Account => Thenable[Account | PromptFailedResult]
   ): AccountProvider = {
-    val __obj = js.Dynamic.literal(autoOAuthCancelled = js.Any.fromFunction0(autoOAuthCancelled), clear = js.Any.fromFunction1(clear), clearTokenCache = js.Any.fromFunction0(clearTokenCache), getSecurityToken = js.Any.fromFunction2(getSecurityToken), initialize = js.Any.fromFunction1(initialize), prompt = js.Any.fromFunction0(prompt), refresh = js.Any.fromFunction1(refresh))
+    val __obj = js.Dynamic.literal(autoOAuthCancelled = js.Any.fromFunction0(autoOAuthCancelled), clear = js.Any.fromFunction1(clear), clearTokenCache = js.Any.fromFunction0(clearTokenCache), getAccountSecurityToken = js.Any.fromFunction3(getAccountSecurityToken), getSecurityToken = js.Any.fromFunction2(getSecurityToken), initialize = js.Any.fromFunction1(initialize), prompt = js.Any.fromFunction0(prompt), refresh = js.Any.fromFunction1(refresh))
     __obj.asInstanceOf[AccountProvider]
   }
   
@@ -78,6 +88,8 @@ object AccountProvider {
     inline def setClear(value: AccountKey => Thenable[Unit]): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
     
     inline def setClearTokenCache(value: () => Thenable[Unit]): Self = StObject.set(x, "clearTokenCache", js.Any.fromFunction0(value))
+    
+    inline def setGetAccountSecurityToken(value: (Account, String, AzureResource) => Thenable[js.UndefOr[AccountSecurityToken]]): Self = StObject.set(x, "getAccountSecurityToken", js.Any.fromFunction3(value))
     
     inline def setGetSecurityToken(value: (Account, AzureResource) => Thenable[js.UndefOr[js.Object]]): Self = StObject.set(x, "getSecurityToken", js.Any.fromFunction2(value))
     

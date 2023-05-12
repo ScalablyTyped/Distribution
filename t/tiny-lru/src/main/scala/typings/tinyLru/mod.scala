@@ -13,7 +13,11 @@ object mod {
   inline def lru[T](): LRU_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("lru")().asInstanceOf[LRU_[T]]
   inline def lru[T](max: Double): LRU_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("lru")(max.asInstanceOf[js.Any]).asInstanceOf[LRU_[T]]
   inline def lru[T](max: Double, ttl: Double): LRU_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("lru")(max.asInstanceOf[js.Any], ttl.asInstanceOf[js.Any])).asInstanceOf[LRU_[T]]
+  inline def lru[T](max: Double, ttl: Double, resetTtl: Boolean): LRU_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("lru")(max.asInstanceOf[js.Any], ttl.asInstanceOf[js.Any], resetTtl.asInstanceOf[js.Any])).asInstanceOf[LRU_[T]]
+  inline def lru[T](max: Double, ttl: Unit, resetTtl: Boolean): LRU_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("lru")(max.asInstanceOf[js.Any], ttl.asInstanceOf[js.Any], resetTtl.asInstanceOf[js.Any])).asInstanceOf[LRU_[T]]
   inline def lru[T](max: Unit, ttl: Double): LRU_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("lru")(max.asInstanceOf[js.Any], ttl.asInstanceOf[js.Any])).asInstanceOf[LRU_[T]]
+  inline def lru[T](max: Unit, ttl: Double, resetTtl: Boolean): LRU_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("lru")(max.asInstanceOf[js.Any], ttl.asInstanceOf[js.Any], resetTtl.asInstanceOf[js.Any])).asInstanceOf[LRU_[T]]
+  inline def lru[T](max: Unit, ttl: Unit, resetTtl: Boolean): LRU_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("lru")(max.asInstanceOf[js.Any], ttl.asInstanceOf[js.Any], resetTtl.asInstanceOf[js.Any])).asInstanceOf[LRU_[T]]
   
   @js.native
   trait LRU_[T] extends StObject {
@@ -25,11 +29,11 @@ object mod {
     def evict(): this.type = js.native
     def evict(bypass: Boolean): this.type = js.native
     
+    def expiresAt(key: Any): js.UndefOr[Double] = js.native
+    
     var first: T | Null = js.native
     
     def get(key: Any): js.UndefOr[T] = js.native
-    
-    def has(key: Any): Boolean = js.native
     
     def keys(): js.Array[String] = js.native
     
@@ -37,8 +41,12 @@ object mod {
     
     var max: Double = js.native
     
+    var resetTtl: Boolean = js.native
+    
     def set(key: Any, value: T): this.type = js.native
     def set(key: Any, value: T, bypass: Boolean): this.type = js.native
+    def set(key: Any, value: T, bypass: Boolean, resetTtl: Boolean): this.type = js.native
+    def set(key: Any, value: T, bypass: Unit, resetTtl: Boolean): this.type = js.native
     
     var size: Double = js.native
     

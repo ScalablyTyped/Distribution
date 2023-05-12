@@ -10,13 +10,13 @@ trait DictkAccounts
      with /* k */ StringDictionary[Any] {
   
   /**
-    * Array of accounts
+    * The list of accounts returned. If the filter results in an empty set then this array may have no records
     */
-  var accounts: js.Array[DictkAccountId]
+  var accounts: js.Array[AccountOwnership]
 }
 object DictkAccounts {
   
-  inline def apply(accounts: js.Array[DictkAccountId]): DictkAccounts = {
+  inline def apply(accounts: js.Array[AccountOwnership]): DictkAccounts = {
     val __obj = js.Dynamic.literal(accounts = accounts.asInstanceOf[js.Any])
     __obj.asInstanceOf[DictkAccounts]
   }
@@ -24,8 +24,8 @@ object DictkAccounts {
   @scala.inline
   implicit open class MutableBuilder[Self <: DictkAccounts] (val x: Self) extends AnyVal {
     
-    inline def setAccounts(value: js.Array[DictkAccountId]): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
+    inline def setAccounts(value: js.Array[AccountOwnership]): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
     
-    inline def setAccountsVarargs(value: DictkAccountId*): Self = StObject.set(x, "accounts", js.Array(value*))
+    inline def setAccountsVarargs(value: AccountOwnership*): Self = StObject.set(x, "accounts", js.Array(value*))
   }
 }

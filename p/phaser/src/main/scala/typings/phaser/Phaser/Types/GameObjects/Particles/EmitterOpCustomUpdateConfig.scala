@@ -17,7 +17,7 @@ trait EmitterOpCustomUpdateConfig
   /**
     * A callback that is invoked each time the emitter updates.
     */
-  def onUpdate(particle: Particle, key: String, t: Double, value: Double): Unit
+  def onUpdate(particle: Particle, key: String, t: Double, value: Double): Double
   /**
     * A callback that is invoked each time the emitter updates.
     */
@@ -26,7 +26,9 @@ trait EmitterOpCustomUpdateConfig
 }
 object EmitterOpCustomUpdateConfig {
   
-  inline def apply(onUpdate: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Unit): EmitterOpCustomUpdateConfig = {
+  inline def apply(
+    onUpdate: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Double
+  ): EmitterOpCustomUpdateConfig = {
     val __obj = js.Dynamic.literal(onUpdate = js.Any.fromFunction4(onUpdate))
     __obj.asInstanceOf[EmitterOpCustomUpdateConfig]
   }
@@ -34,10 +36,10 @@ object EmitterOpCustomUpdateConfig {
   @scala.inline
   implicit open class MutableBuilder[Self <: EmitterOpCustomUpdateConfig] (val x: Self) extends AnyVal {
     
-    inline def setOnEmit(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "onEmit", js.Any.fromFunction3(value))
+    inline def setOnEmit(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Double): Self = StObject.set(x, "onEmit", js.Any.fromFunction3(value))
     
     inline def setOnEmitUndefined: Self = StObject.set(x, "onEmit", js.undefined)
     
-    inline def setOnUpdate(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction4(value))
+    inline def setOnUpdate(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Double): Self = StObject.set(x, "onUpdate", js.Any.fromFunction4(value))
   }
 }

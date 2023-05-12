@@ -12,7 +12,7 @@ object postProcessesRenderPipelinePostProcessRenderPipelineManagerMod {
   @js.native
   /**
     * Initializes a PostProcessRenderPipelineManager
-    * @see https://doc.babylonjs.com/how_to/how_to_use_postprocessrenderpipeline
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/postProcesses/postProcessRenderPipeline
     */
   open class PostProcessRenderPipelineManager () extends StObject {
     
@@ -73,6 +73,12 @@ object postProcessesRenderPipelinePostProcessRenderPipelineManagerMod {
       */
     def enableEffectInPipeline(renderPipelineName: String, renderEffectName: String, cameras: Any): Unit = js.native
     def enableEffectInPipeline(renderPipelineName: String, renderEffectName: String, cameras: Camera): Unit = js.native
+    
+    /**
+      * Remove the pipeline from the manager
+      * @param renderPipelineName the name of the pipeline to remove
+      */
+    def removePipeline(renderPipelineName: String): Unit = js.native
     
     /**
       * Gets the list of supported render pipelines

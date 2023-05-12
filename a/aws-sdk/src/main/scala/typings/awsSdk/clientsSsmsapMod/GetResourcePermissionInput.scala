@@ -12,7 +12,7 @@ trait GetResourcePermissionInput extends StObject {
   var ActionType: js.UndefOr[PermissionActionType] = js.undefined
   
   /**
-    * 
+    * The Amazon Resource Name (ARN) of the resource.
     */
   var ResourceArn: Arn
 }

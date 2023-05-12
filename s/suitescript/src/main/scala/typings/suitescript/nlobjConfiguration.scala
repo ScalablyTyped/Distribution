@@ -10,8 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @classDescription Class definition for interacting with setup/configuration pages
   * @return {nlobjConfiguration}
-  * @constructor
-  *
   * @since 2009.2
   */
 @js.native

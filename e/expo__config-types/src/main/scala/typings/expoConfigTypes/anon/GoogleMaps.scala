@@ -25,11 +25,6 @@ trait GoogleMaps extends StObject {
     * A boolean indicating whether to initialize Google App Measurement and begin sending user-level event data to Google immediately when the app starts. The default in Expo (Client and in standalone apps) is `false`. [Sets the opposite of the given value to the following key in `Info.plist`](https://developers.google.com/admob/ios/eu-consent#delay_app_measurement_optional)
     */
   var googleMobileAdsAutoInit: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * @deprecated Use `googleServicesFile` instead. [Google Sign-In Android SDK](https://developers.google.com/identity/sign-in/android/start-integrating) keys for your standalone app.
-    */
-  var googleSignIn: js.UndefOr[CertificateHash] = js.undefined
 }
 object GoogleMaps {
   
@@ -56,9 +51,5 @@ object GoogleMaps {
     inline def setGoogleMobileAdsAutoInit(value: Boolean): Self = StObject.set(x, "googleMobileAdsAutoInit", value.asInstanceOf[js.Any])
     
     inline def setGoogleMobileAdsAutoInitUndefined: Self = StObject.set(x, "googleMobileAdsAutoInit", js.undefined)
-    
-    inline def setGoogleSignIn(value: CertificateHash): Self = StObject.set(x, "googleSignIn", value.asInstanceOf[js.Any])
-    
-    inline def setGoogleSignInUndefined: Self = StObject.set(x, "googleSignIn", js.undefined)
   }
 }

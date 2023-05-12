@@ -1,6 +1,8 @@
 package typings.esbuildWasm.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.esbuildWasm.anon.In
+import typings.esbuildWasm.esbuildWasmStrings.external
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,6 +14,9 @@ trait BuildOptions
   
   /** Documentation: https://esbuild.github.io/api/#working-directory */
   var absWorkingDir: js.UndefOr[String] = js.undefined
+  
+  /** Documentation: https://esbuild.github.io/api/#alias */
+  var alias: js.UndefOr[Record[String, String]] = js.undefined
   
   /** Documentation: https://esbuild.github.io/api/#allow-overwrite */
   var allowOverwrite: js.UndefOr[Boolean] = js.undefined
@@ -35,16 +40,13 @@ trait BuildOptions
   var entryNames: js.UndefOr[String] = js.undefined
   
   /** Documentation: https://esbuild.github.io/api/#entry-points */
-  var entryPoints: js.UndefOr[js.Array[String] | (Record[String, String])] = js.undefined
+  var entryPoints: js.UndefOr[(js.Array[In | String]) | (Record[String, String])] = js.undefined
   
   /** Documentation: https://esbuild.github.io/api/#external */
   var external: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Documentation: https://esbuild.github.io/api/#footer */
   var footer: js.UndefOr[StringDictionary[String]] = js.undefined
-  
-  /** Documentation: https://esbuild.github.io/api/#incremental */
-  var incremental: js.UndefOr[Boolean] = js.undefined
   
   /** Documentation: https://esbuild.github.io/api/#inject */
   var inject: js.UndefOr[js.Array[String]] = js.undefined
@@ -73,6 +75,9 @@ trait BuildOptions
   /** Documentation: https://esbuild.github.io/api/#outfile */
   var outfile: js.UndefOr[String] = js.undefined
   
+  /** Documentation: https://esbuild.github.io/api/#packages */
+  var packages: js.UndefOr[external] = js.undefined
+  
   /** Documentation: https://esbuild.github.io/plugins/ */
   var plugins: js.UndefOr[js.Array[Plugin]] = js.undefined
   
@@ -94,10 +99,6 @@ trait BuildOptions
   /** Documentation: https://esbuild.github.io/api/#tsconfig */
   var tsconfig: js.UndefOr[String] = js.undefined
   
-  // The "NODE_PATH" variable from Node.js
-  /** Documentation: https://esbuild.github.io/api/#watch */
-  var watch: js.UndefOr[Boolean | WatchMode] = js.undefined
-  
   /** Documentation: https://esbuild.github.io/api/#write */
   var write: js.UndefOr[Boolean] = js.undefined
 }
@@ -114,6 +115,10 @@ object BuildOptions {
     inline def setAbsWorkingDir(value: String): Self = StObject.set(x, "absWorkingDir", value.asInstanceOf[js.Any])
     
     inline def setAbsWorkingDirUndefined: Self = StObject.set(x, "absWorkingDir", js.undefined)
+    
+    inline def setAlias(value: Record[String, String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    
+    inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
     inline def setAllowOverwrite(value: Boolean): Self = StObject.set(x, "allowOverwrite", value.asInstanceOf[js.Any])
     
@@ -145,11 +150,11 @@ object BuildOptions {
     
     inline def setEntryNamesUndefined: Self = StObject.set(x, "entryNames", js.undefined)
     
-    inline def setEntryPoints(value: js.Array[String] | (Record[String, String])): Self = StObject.set(x, "entryPoints", value.asInstanceOf[js.Any])
+    inline def setEntryPoints(value: (js.Array[In | String]) | (Record[String, String])): Self = StObject.set(x, "entryPoints", value.asInstanceOf[js.Any])
     
     inline def setEntryPointsUndefined: Self = StObject.set(x, "entryPoints", js.undefined)
     
-    inline def setEntryPointsVarargs(value: String*): Self = StObject.set(x, "entryPoints", js.Array(value*))
+    inline def setEntryPointsVarargs(value: (In | String)*): Self = StObject.set(x, "entryPoints", js.Array(value*))
     
     inline def setExternal(value: js.Array[String]): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
     
@@ -160,10 +165,6 @@ object BuildOptions {
     inline def setFooter(value: StringDictionary[String]): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
     inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
-    
-    inline def setIncremental(value: Boolean): Self = StObject.set(x, "incremental", value.asInstanceOf[js.Any])
-    
-    inline def setIncrementalUndefined: Self = StObject.set(x, "incremental", js.undefined)
     
     inline def setInject(value: js.Array[String]): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
     
@@ -207,6 +208,10 @@ object BuildOptions {
     
     inline def setOutfileUndefined: Self = StObject.set(x, "outfile", js.undefined)
     
+    inline def setPackages(value: external): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
+    
+    inline def setPackagesUndefined: Self = StObject.set(x, "packages", js.undefined)
+    
     inline def setPlugins(value: js.Array[Plugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
@@ -238,10 +243,6 @@ object BuildOptions {
     inline def setTsconfig(value: String): Self = StObject.set(x, "tsconfig", value.asInstanceOf[js.Any])
     
     inline def setTsconfigUndefined: Self = StObject.set(x, "tsconfig", js.undefined)
-    
-    inline def setWatch(value: Boolean | WatchMode): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
-    
-    inline def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
     
     inline def setWrite(value: Boolean): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
     

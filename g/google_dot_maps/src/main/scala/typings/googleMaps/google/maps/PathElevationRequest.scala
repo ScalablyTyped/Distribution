@@ -4,13 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An elevation query sent by the <code>ElevationService</code> containing the
-  * path along which to return sampled data. This request defines a continuous
-  * path along the earth along which elevation samples should be taken at
-  * evenly-spaced distances. All paths from vertex to vertex use segments of
-  * the great circle between those two points.
-  */
 trait PathElevationRequest extends StObject {
   
   /**

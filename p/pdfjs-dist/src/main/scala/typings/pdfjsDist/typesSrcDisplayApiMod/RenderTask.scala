@@ -13,8 +13,11 @@ open class RenderTask protected () extends StObject {
     * Cancels the rendering task. If the task is currently rendering it will
     * not be cancelled until graphics pauses with a timeout. The promise that
     * this object extends will be rejected when cancelled.
+    *
+    * @param {number} [extraDelay]
     */
   def cancel(): Unit = js.native
+  def cancel(extraDelay: Double): Unit = js.native
   
   /**
     * Callback for incremental rendering -- a function that will be called

@@ -17,9 +17,6 @@ trait DeleteOptions
   
   /** If true, when an insert fails, don't execute the remaining writes. If false, continue with remaining inserts when one fails. */
   var ordered: js.UndefOr[Boolean] = js.undefined
-  
-  /** @deprecated use `removeOne` or `removeMany` to implicitly specify the limit */
-  var single: js.UndefOr[Boolean] = js.undefined
 }
 object DeleteOptions {
   
@@ -42,9 +39,5 @@ object DeleteOptions {
     inline def setOrdered(value: Boolean): Self = StObject.set(x, "ordered", value.asInstanceOf[js.Any])
     
     inline def setOrderedUndefined: Self = StObject.set(x, "ordered", js.undefined)
-    
-    inline def setSingle(value: Boolean): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
-    
-    inline def setSingleUndefined: Self = StObject.set(x, "single", js.undefined)
   }
 }

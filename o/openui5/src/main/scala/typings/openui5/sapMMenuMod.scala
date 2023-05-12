@@ -1,6 +1,6 @@
 package typings.openui5
 
-import typings.openui5.anon.`14`
+import typings.openui5.anon.`17`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -338,6 +338,8 @@ object sapMMenuMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:closed closed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -349,6 +351,8 @@ object sapMMenuMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:itemSelected itemSelected} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -357,7 +361,7 @@ object sapMMenuMod {
     def fireItemSelected(/**
       * Parameters to pass along with the event
       */
-    mParameters: `14`): this.type = js.native
+    mParameters: `17`): this.type = js.native
     
     /**
       * Gets content of aggregation {@link #getItems items}.
@@ -411,7 +415,7 @@ object sapMMenuMod {
       /**
       * The control that defines the position for the menu
       */
-    oControl: js.Object,
+    oControl: typings.openui5.sapUiCoreControlMod.default,
       /**
       * Whether the menu is opened with a shortcut or not
       */
@@ -421,7 +425,7 @@ object sapMMenuMod {
       /**
       * The control that defines the position for the menu
       */
-    oControl: js.Object,
+    oControl: typings.openui5.sapUiCoreControlMod.default,
       /**
       * Whether the menu is opened with a shortcut or not
       */
@@ -445,7 +449,7 @@ object sapMMenuMod {
       /**
       * The control that defines the position for the menu
       */
-    oControl: js.Object,
+    oControl: typings.openui5.sapUiCoreControlMod.default,
       /**
       * Whether the menu is opened with a shortcut or not
       */
@@ -463,7 +467,7 @@ object sapMMenuMod {
       /**
       * The control that defines the position for the menu
       */
-    oControl: js.Object,
+    oControl: typings.openui5.sapUiCoreControlMod.default,
       /**
       * Whether the menu is opened with a shortcut or not
       */
@@ -487,7 +491,7 @@ object sapMMenuMod {
       /**
       * The control that defines the position for the menu
       */
-    oControl: js.Object,
+    oControl: typings.openui5.sapUiCoreControlMod.default,
       /**
       * Whether the menu is opened with a shortcut or not
       */
@@ -501,7 +505,7 @@ object sapMMenuMod {
       /**
       * The control that defines the position for the menu
       */
-    oControl: js.Object,
+    oControl: typings.openui5.sapUiCoreControlMod.default,
       /**
       * Whether the menu is opened with a shortcut or not
       */
@@ -525,7 +529,7 @@ object sapMMenuMod {
       /**
       * The control that defines the position for the menu
       */
-    oControl: js.Object,
+    oControl: typings.openui5.sapUiCoreControlMod.default,
       /**
       * Whether the menu is opened with a shortcut or not
       */
@@ -543,7 +547,7 @@ object sapMMenuMod {
       /**
       * The control that defines the position for the menu
       */
-    oControl: js.Object,
+    oControl: typings.openui5.sapUiCoreControlMod.default,
       /**
       * Whether the menu is opened with a shortcut or not
       */

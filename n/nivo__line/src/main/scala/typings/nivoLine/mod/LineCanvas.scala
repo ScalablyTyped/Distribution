@@ -13,7 +13,7 @@ open class LineCanvas protected ()
   def this(props: LineCanvasProps & Dimensions) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: LineCanvasProps & Dimensions, context: Any) = this()
 }

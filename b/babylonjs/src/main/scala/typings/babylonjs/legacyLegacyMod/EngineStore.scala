@@ -32,6 +32,15 @@ object EngineStore {
   inline def Instances_=(x: js.Array[typings.babylonjs.enginesEngineMod.Engine]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Instances")(x.asInstanceOf[js.Any])
   
   /**
+    * Notifies when an engine was disposed.
+    * Mainly used for static/cache cleanup
+    */
+  @JSImport("babylonjs/Legacy/legacy", "EngineStore.OnEnginesDisposedObservable")
+  @js.native
+  def OnEnginesDisposedObservable: typings.babylonjs.miscObservableMod.Observable[typings.babylonjs.enginesEngineMod.Engine] = js.native
+  inline def OnEnginesDisposedObservable_=(x: typings.babylonjs.miscObservableMod.Observable[typings.babylonjs.enginesEngineMod.Engine]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OnEnginesDisposedObservable")(x.asInstanceOf[js.Any])
+  
+  /**
     * Gets or sets a global variable indicating if fallback texture must be used when a texture cannot be loaded
     * @ignorenaming
     */

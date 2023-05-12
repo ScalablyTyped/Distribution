@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SearchResourcesResponse extends StObject {
   
   /**
-    * An array of objects, one for each resource that meets the filter criteria specified in the request.
+    * An array of objects, one for each resource that matches the filter criteria specified in the request.
     */
   var matchingResources: js.UndefOr[listOfMatchingResource] = js.undefined
   

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import typings.formidable.formidableBooleans.`false`
-import typings.formidable.formidableMod.^
 import typings.formidable.formidableStrings.END
 import typings.formidable.formidableStrings.HEADERS_ALMOST_DONE
 import typings.formidable.formidableStrings.HEADER_FIELD
@@ -28,6 +27,7 @@ import typings.formidable.parsersMod.MultipartParser
 import typings.formidable.parsersMod.OctetStreamParser
 import typings.formidable.parsersMod.QuerystringParser
 import typings.formidable.parsersMod.StreamingQuerystring
+import typings.formidable.volatileFileMod.^
 import typings.node.streamMod.Writable
 import typings.std.Partial
 import typings.std.Record
@@ -137,10 +137,16 @@ object anon {
     
     var encoding: js.UndefOr[BufferEncoding] = js.undefined
     
-    var fileWriteStreamHandler: js.UndefOr[js.Function0[Writable]] = js.undefined
+    var fileWriteStreamHandler: js.UndefOr[js.Function1[/* file */ js.UndefOr[^], Writable]] = js.undefined
     
     var filename: js.UndefOr[
-        js.Function4[/* name */ String, /* ext */ String, /* part */ Part, /* form */ ^, String]
+        js.Function4[
+          /* name */ String, 
+          /* ext */ String, 
+          /* part */ Part, 
+          /* form */ typings.formidable.formidableMod.^, 
+          String
+        ]
       ] = js.undefined
     
     var filter: js.UndefOr[js.Function1[/* part */ Part, Boolean]] = js.undefined
@@ -189,11 +195,13 @@ object anon {
       
       inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      inline def setFileWriteStreamHandler(value: () => Writable): Self = StObject.set(x, "fileWriteStreamHandler", js.Any.fromFunction0(value))
+      inline def setFileWriteStreamHandler(value: /* file */ js.UndefOr[^] => Writable): Self = StObject.set(x, "fileWriteStreamHandler", js.Any.fromFunction1(value))
       
       inline def setFileWriteStreamHandlerUndefined: Self = StObject.set(x, "fileWriteStreamHandler", js.undefined)
       
-      inline def setFilename(value: (/* name */ String, /* ext */ String, /* part */ Part, /* form */ ^) => String): Self = StObject.set(x, "filename", js.Any.fromFunction4(value))
+      inline def setFilename(
+        value: (/* name */ String, /* ext */ String, /* part */ Part, /* form */ typings.formidable.formidableMod.^) => String
+      ): Self = StObject.set(x, "filename", js.Any.fromFunction4(value))
       
       inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       

@@ -12,7 +12,7 @@ open class ListHeader protected () extends Component[Modifier, Any] {
   def this(props: HTMLAttributesidclassName & Modifier) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: HTMLAttributesidclassName & Modifier, context: Any) = this()
 }

@@ -82,34 +82,4 @@ object srcUtilsMod {
   inline def template[T](content: String, options: TemplateOptions): js.Function1[/* input */ T, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("template")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* input */ T, String]]
   
   inline def templateParser(sourceText: String, fileName: String): TemplateAst = (^.asInstanceOf[js.Dynamic].applyDynamic("templateParser")(sourceText.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[TemplateAst]
-  
-  /** NOTE: Conditional type definitions are impossible to translate to Scala.
-    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
-    * TS definition: {{{
-    T extends std.Array<infer R> ? @angular-devkit/core.@angular-devkit/core/src/utils.DeepReadonlyArray<R> : T extends std.Function ? T : T extends object ? @angular-devkit/core.@angular-devkit/core/src/utils.DeepReadonlyObject<T> : T
-    }}}
-    */
-  type DeepReadonly[T] = T
-  
-  type DeepReadonlyArray[T] = js.Array[DeepReadonly[T]]
-  
-  /** NOTE: Mapped type definitions are impossible to translate to Scala.
-    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
-    * TS definition: {{{
-    {readonly [ P in keyof T ]: @angular-devkit/core.@angular-devkit/core/src/utils.DeepReadonly<T[P]>}
-    }}}
-    */
-  @js.native
-  trait DeepReadonlyObject[T] extends StObject
-  
-  /** NOTE: Mapped type definitions are impossible to translate to Scala.
-    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
-    * This translation is imprecise and ignores the effect of the type mapping. 
-    * TS definition: {{{
-    {-readonly [ P in keyof T ]: T[P]}
-    }}}
-    */
-  type Readwrite[T] = T
 }

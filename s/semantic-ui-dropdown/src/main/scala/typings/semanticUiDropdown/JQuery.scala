@@ -2,9 +2,11 @@ package typings.semanticUiDropdown
 
 import typings.semanticUiDropdown.SemanticUI.Dropdown
 import typings.semanticUiDropdown.SemanticUI.DropdownSettings
+import typings.semanticUiDropdown.anon.Name
 import typings.semanticUiDropdown.semanticUiDropdownStrings.`bind intent`
 import typings.semanticUiDropdown.semanticUiDropdownStrings.`bind mouse events`
 import typings.semanticUiDropdown.semanticUiDropdownStrings.`bind touch events`
+import typings.semanticUiDropdown.semanticUiDropdownStrings.`change values`
 import typings.semanticUiDropdown.semanticUiDropdownStrings.`determine intent`
 import typings.semanticUiDropdown.semanticUiDropdownStrings.`determine select action`
 import typings.semanticUiDropdown.semanticUiDropdownStrings.`get default text`
@@ -65,6 +67,16 @@ trait JQuery extends StObject {
     */
   @JSName("dropdown")
   def dropdown_bindtouchevents(behavior: `bind touch events`): JQuery
+  /**
+    * Changes dropdown to use new values. values structure: [ {value, text, name} ].
+    */
+  @JSName("dropdown")
+  def dropdown_changevalues(behavior: `change values`): JQuery
+  /**
+    * Changes dropdown to use new values. values structure: [ {value, text, name} ].
+    */
+  @JSName("dropdown")
+  def dropdown_changevalues(behavior: `change values`, values: js.Array[Name]): JQuery
   /**
     * Clears dropdown of selection
     */

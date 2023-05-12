@@ -17,6 +17,11 @@ trait CategoryProperties extends StObject {
   var CreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
+    * The input type associated with the specified category. POST_CALL refers to a category that is applied to batch transcriptions; REAL_TIME refers to a category that is applied to streaming transcriptions.
+    */
+  var InputType: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.InputType] = js.undefined
+  
+  /**
     * The date and time the specified Call Analytics category was last updated. Timestamps are in the format YYYY-MM-DD'T'HH:MM:SS.SSSSSS-UTC. For example, 2022-05-05T12:45:32.691000-07:00 represents 12:45 PM UTC-7 on May 5, 2022.
     */
   var LastUpdateTime: js.UndefOr[js.Date] = js.undefined
@@ -43,6 +48,10 @@ object CategoryProperties {
     inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
+    
+    inline def setInputType(value: InputType): Self = StObject.set(x, "InputType", value.asInstanceOf[js.Any])
+    
+    inline def setInputTypeUndefined: Self = StObject.set(x, "InputType", js.undefined)
     
     inline def setLastUpdateTime(value: js.Date): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
     

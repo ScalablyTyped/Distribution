@@ -18,7 +18,7 @@ trait FormatValue[RawDatum /* <: BarDatum */] extends StObject {
   
   def getTooltipLabel(datum: ComputedDatum[RawDatum]): String
   
-  var hiddenIds: js.UndefOr[js.Array[String]] = js.undefined
+  var hiddenIds: js.UndefOr[js.Array[String | Double]] = js.undefined
   
   var margin: Margin
 }
@@ -46,11 +46,11 @@ object FormatValue {
     
     inline def setGetTooltipLabel(value: ComputedDatum[RawDatum] => String): Self = StObject.set(x, "getTooltipLabel", js.Any.fromFunction1(value))
     
-    inline def setHiddenIds(value: js.Array[String]): Self = StObject.set(x, "hiddenIds", value.asInstanceOf[js.Any])
+    inline def setHiddenIds(value: js.Array[String | Double]): Self = StObject.set(x, "hiddenIds", value.asInstanceOf[js.Any])
     
     inline def setHiddenIdsUndefined: Self = StObject.set(x, "hiddenIds", js.undefined)
     
-    inline def setHiddenIdsVarargs(value: String*): Self = StObject.set(x, "hiddenIds", js.Array(value*))
+    inline def setHiddenIdsVarargs(value: (String | Double)*): Self = StObject.set(x, "hiddenIds", js.Array(value*))
     
     inline def setMargin(value: Margin): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
   }

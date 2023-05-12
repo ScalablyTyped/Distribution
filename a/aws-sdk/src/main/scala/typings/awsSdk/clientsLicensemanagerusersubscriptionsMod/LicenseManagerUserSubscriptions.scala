@@ -12,12 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LicenseManagerUserSubscriptions extends Service {
   
   /**
-    * Associates the user to an EC2 instance to utilize user-based subscriptions.
+    * Associates the user to an EC2 instance to utilize user-based subscriptions.  Your estimated bill for charges on the number of users and related costs will take 48 hours to appear for billing periods that haven't closed (marked as Pending billing status) in Amazon Web Services Billing. For more information, see Viewing your monthly charges in the Amazon Web Services Billing User Guide. 
     */
   def associateUser(): Request[AssociateUserResponse, AWSError] = js.native
   def associateUser(callback: js.Function2[/* err */ AWSError, /* data */ AssociateUserResponse, Unit]): Request[AssociateUserResponse, AWSError] = js.native
   /**
-    * Associates the user to an EC2 instance to utilize user-based subscriptions.
+    * Associates the user to an EC2 instance to utilize user-based subscriptions.  Your estimated bill for charges on the number of users and related costs will take 48 hours to appear for billing periods that haven't closed (marked as Pending billing status) in Amazon Web Services Billing. For more information, see Viewing your monthly charges in the Amazon Web Services Billing User Guide. 
     */
   def associateUser(params: AssociateUserRequest): Request[AssociateUserResponse, AWSError] = js.native
   def associateUser(
@@ -127,12 +127,12 @@ trait LicenseManagerUserSubscriptions extends Service {
   ): Request[RegisterIdentityProviderResponse, AWSError] = js.native
   
   /**
-    * Starts a product subscription for a user with the specified identity provider.
+    * Starts a product subscription for a user with the specified identity provider.  Your estimated bill for charges on the number of users and related costs will take 48 hours to appear for billing periods that haven't closed (marked as Pending billing status) in Amazon Web Services Billing. For more information, see Viewing your monthly charges in the Amazon Web Services Billing User Guide. 
     */
   def startProductSubscription(): Request[StartProductSubscriptionResponse, AWSError] = js.native
   def startProductSubscription(callback: js.Function2[/* err */ AWSError, /* data */ StartProductSubscriptionResponse, Unit]): Request[StartProductSubscriptionResponse, AWSError] = js.native
   /**
-    * Starts a product subscription for a user with the specified identity provider.
+    * Starts a product subscription for a user with the specified identity provider.  Your estimated bill for charges on the number of users and related costs will take 48 hours to appear for billing periods that haven't closed (marked as Pending billing status) in Amazon Web Services Billing. For more information, see Viewing your monthly charges in the Amazon Web Services Billing User Guide. 
     */
   def startProductSubscription(params: StartProductSubscriptionRequest): Request[StartProductSubscriptionResponse, AWSError] = js.native
   def startProductSubscription(
@@ -153,4 +153,20 @@ trait LicenseManagerUserSubscriptions extends Service {
     params: StopProductSubscriptionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StopProductSubscriptionResponse, Unit]
   ): Request[StopProductSubscriptionResponse, AWSError] = js.native
+  
+  /**
+    * Updates additional product configuration settings for the registered identity provider.
+    */
+  def updateIdentityProviderSettings(): Request[UpdateIdentityProviderSettingsResponse, AWSError] = js.native
+  def updateIdentityProviderSettings(
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateIdentityProviderSettingsResponse, Unit]
+  ): Request[UpdateIdentityProviderSettingsResponse, AWSError] = js.native
+  /**
+    * Updates additional product configuration settings for the registered identity provider.
+    */
+  def updateIdentityProviderSettings(params: UpdateIdentityProviderSettingsRequest): Request[UpdateIdentityProviderSettingsResponse, AWSError] = js.native
+  def updateIdentityProviderSettings(
+    params: UpdateIdentityProviderSettingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateIdentityProviderSettingsResponse, Unit]
+  ): Request[UpdateIdentityProviderSettingsResponse, AWSError] = js.native
 }

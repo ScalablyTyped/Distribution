@@ -16,7 +16,7 @@ object libIconsAudioOutlinedMod extends Shortcut {
   @js.native
   trait AudioOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_AudioOutlinedIconType: String = js.native

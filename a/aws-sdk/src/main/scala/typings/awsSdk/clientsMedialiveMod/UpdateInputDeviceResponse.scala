@@ -57,6 +57,11 @@ trait UpdateInputDeviceResponse extends StObject {
   var SerialNumber: js.UndefOr[string] = js.undefined
   
   /**
+    * A collection of key-value pairs.
+    */
+  var Tags: js.UndefOr[typings.awsSdk.clientsMedialiveMod.Tags] = js.undefined
+  
+  /**
     * The type of the input device.
     */
   var Type: js.UndefOr[InputDeviceType] = js.undefined
@@ -115,6 +120,10 @@ object UpdateInputDeviceResponse {
     inline def setSerialNumber(value: string): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
     
     inline def setSerialNumberUndefined: Self = StObject.set(x, "SerialNumber", js.undefined)
+    
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     inline def setType(value: InputDeviceType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

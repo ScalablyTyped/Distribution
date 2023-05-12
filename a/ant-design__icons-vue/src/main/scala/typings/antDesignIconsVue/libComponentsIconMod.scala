@@ -113,7 +113,7 @@ object libComponentsIconMod extends Shortcut {
   @js.native
   trait IconType
     extends StObject
-       with FunctionalComponent[IconComponentProps, js.Object] {
+       with FunctionalComponent[IconComponentProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_IconType: String = js.native

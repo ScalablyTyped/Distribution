@@ -22,7 +22,7 @@ trait GetDataSetDetailsResponse extends StObject {
   var dataSetName: String200
   
   /**
-    * The type of data set. Possible values include VSAM, IS, PS, GDG, PO, PS, or unknown.
+    * The type of data set. The only supported value is VSAM.
     */
   var dataSetOrg: js.UndefOr[DatasetDetailOrgAttributes] = js.undefined
   
@@ -37,7 +37,7 @@ trait GetDataSetDetailsResponse extends StObject {
   var lastUpdatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The locaion where the data set is stored.
+    * The location where the data set is stored.
     */
   var location: js.UndefOr[String2000] = js.undefined
   

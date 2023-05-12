@@ -17,7 +17,7 @@ trait DeleteChannelModeratorRequest extends StObject {
   var ChannelModeratorArn: ChimeArn
   
   /**
-    * The AppInstanceUserArn of the user that makes the API call.
+    * The ARN of the AppInstanceUser or AppInstanceBot that makes the API call.
     */
   var ChimeBearer: ChimeArn
 }

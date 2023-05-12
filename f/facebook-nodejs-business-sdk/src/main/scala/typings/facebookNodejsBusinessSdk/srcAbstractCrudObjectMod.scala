@@ -1,5 +1,6 @@
 package typings.facebookNodejsBusinessSdk
 
+import typings.facebookNodejsBusinessSdk.facebookNodejsBusinessSdkBooleans.`false`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -110,41 +111,70 @@ object srcAbstractCrudObjectMod {
     
     def getApi(): typings.facebookNodejsBusinessSdk.srcApiMod.default = js.native
     
-    def getEdge(targetClass: Record[String, Any], fields: js.Array[String]): typings.facebookNodejsBusinessSdk.srcCursorMod.default = js.native
-    def getEdge(targetClass: Record[String, Any], fields: js.Array[String], params: Unit, fetchFirstPage: Boolean): typings.facebookNodejsBusinessSdk.srcCursorMod.default = js.native
+    def getEdge(targetClass: Record[String, Any], fields: js.Array[String]): typings.facebookNodejsBusinessSdk.srcCursorMod.default | js.Promise[typings.facebookNodejsBusinessSdk.srcCursorMod.default] = js.native
+    def getEdge(targetClass: Record[String, Any], fields: js.Array[String], params: Unit, fetchFirstPage: Boolean): typings.facebookNodejsBusinessSdk.srcCursorMod.default | js.Promise[typings.facebookNodejsBusinessSdk.srcCursorMod.default] = js.native
     def getEdge(
       targetClass: Record[String, Any],
       fields: js.Array[String],
       params: Unit,
       fetchFirstPage: Boolean,
       endpoint: String
-    ): typings.facebookNodejsBusinessSdk.srcCursorMod.default = js.native
+    ): typings.facebookNodejsBusinessSdk.srcCursorMod.default | js.Promise[typings.facebookNodejsBusinessSdk.srcCursorMod.default] = js.native
     def getEdge(
       targetClass: Record[String, Any],
       fields: js.Array[String],
       params: Unit,
       fetchFirstPage: Unit,
       endpoint: String
-    ): typings.facebookNodejsBusinessSdk.srcCursorMod.default = js.native
-    def getEdge(targetClass: Record[String, Any], fields: js.Array[String], params: Record[String, Any]): typings.facebookNodejsBusinessSdk.srcCursorMod.default = js.native
+    ): typings.facebookNodejsBusinessSdk.srcCursorMod.default | js.Promise[typings.facebookNodejsBusinessSdk.srcCursorMod.default] = js.native
+    def getEdge(targetClass: Record[String, Any], fields: js.Array[String], params: Record[String, Any]): typings.facebookNodejsBusinessSdk.srcCursorMod.default | js.Promise[typings.facebookNodejsBusinessSdk.srcCursorMod.default] = js.native
     def getEdge(
       targetClass: Record[String, Any],
       fields: js.Array[String],
       params: Record[String, Any],
       fetchFirstPage: Boolean
-    ): typings.facebookNodejsBusinessSdk.srcCursorMod.default = js.native
+    ): typings.facebookNodejsBusinessSdk.srcCursorMod.default | js.Promise[typings.facebookNodejsBusinessSdk.srcCursorMod.default] = js.native
     def getEdge(
       targetClass: Record[String, Any],
       fields: js.Array[String],
       params: Record[String, Any],
       fetchFirstPage: Boolean,
       endpoint: String
-    ): typings.facebookNodejsBusinessSdk.srcCursorMod.default = js.native
+    ): typings.facebookNodejsBusinessSdk.srcCursorMod.default | js.Promise[typings.facebookNodejsBusinessSdk.srcCursorMod.default] = js.native
     def getEdge(
       targetClass: Record[String, Any],
       fields: js.Array[String],
       params: Record[String, Any],
       fetchFirstPage: Unit,
+      endpoint: String
+    ): typings.facebookNodejsBusinessSdk.srcCursorMod.default | js.Promise[typings.facebookNodejsBusinessSdk.srcCursorMod.default] = js.native
+    @JSName("getEdge")
+    def getEdge_Promise(targetClass: Record[String, Any], fields: js.Array[String]): js.Promise[typings.facebookNodejsBusinessSdk.srcCursorMod.default] = js.native
+    @JSName("getEdge")
+    def getEdge_Promise(targetClass: Record[String, Any], fields: js.Array[String], params: Record[String, Any]): js.Promise[typings.facebookNodejsBusinessSdk.srcCursorMod.default] = js.native
+    @JSName("getEdge")
+    def getEdge_false(targetClass: Record[String, Any], fields: js.Array[String], params: Unit, fetchFirstPage: `false`): typings.facebookNodejsBusinessSdk.srcCursorMod.default = js.native
+    @JSName("getEdge")
+    def getEdge_false(
+      targetClass: Record[String, Any],
+      fields: js.Array[String],
+      params: Unit,
+      fetchFirstPage: `false`,
+      endpoint: String
+    ): typings.facebookNodejsBusinessSdk.srcCursorMod.default = js.native
+    @JSName("getEdge")
+    def getEdge_false(
+      targetClass: Record[String, Any],
+      fields: js.Array[String],
+      params: Record[String, Any],
+      fetchFirstPage: `false`
+    ): typings.facebookNodejsBusinessSdk.srcCursorMod.default = js.native
+    @JSName("getEdge")
+    def getEdge_false(
+      targetClass: Record[String, Any],
+      fields: js.Array[String],
+      params: Record[String, Any],
+      fetchFirstPage: `false`,
       endpoint: String
     ): typings.facebookNodejsBusinessSdk.srcCursorMod.default = js.native
     

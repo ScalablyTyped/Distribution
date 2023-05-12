@@ -25,23 +25,17 @@ object history {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def addUrl(details: Url): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addUrl")(details.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addUrl(details: Url): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("addUrl")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   inline def addUrl(details: Url, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUrl")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def addUrl_Promise(details: Url): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("addUrl")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   inline def deleteAll(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteAll")().asInstanceOf[js.Promise[Unit]]
   inline def deleteAll(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteAll")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def deleteRange(range: Range): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteRange")(range.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def deleteRange(range: Range): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteRange")(range.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   inline def deleteRange(range: Range, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteRange")(range.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def deleteRange_Promise(range: Range): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteRange")(range.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  
-  inline def deleteUrl(details: Url): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteUrl")(details.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def deleteUrl(details: Url): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteUrl")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   inline def deleteUrl(details: Url, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteUrl")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def deleteUrl_Promise(details: Url): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteUrl")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   inline def getVisits(details: Url): js.Promise[js.Array[VisitItem]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVisits")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[VisitItem]]]
   inline def getVisits(details: Url, callback: js.Function1[/* results */ js.Array[VisitItem], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getVisits")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -56,8 +50,6 @@ object history {
   def onVisited: HistoryVisitedEvent = js.native
   inline def onVisited_=(x: HistoryVisitedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onVisited")(x.asInstanceOf[js.Any])
   
-  inline def search(query: HistoryQuery): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def search(query: HistoryQuery): js.Promise[js.Array[HistoryItem]] = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[HistoryItem]]]
   inline def search(query: HistoryQuery, callback: js.Function1[/* results */ js.Array[HistoryItem], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def search_Promise(query: HistoryQuery): js.Promise[js.Array[HistoryItem]] = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[HistoryItem]]]
 }

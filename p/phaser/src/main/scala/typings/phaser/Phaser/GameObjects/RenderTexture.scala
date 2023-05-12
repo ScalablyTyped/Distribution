@@ -1,71 +1,62 @@
 package typings.phaser.Phaser.GameObjects
 
 import typings.phaser.Phaser.Cameras.Scene2D.BaseCamera
-import typings.phaser.Phaser.GameObjects.Components.Alpha
-import typings.phaser.Phaser.GameObjects.Components.BlendMode
-import typings.phaser.Phaser.GameObjects.Components.ComputedSize
-import typings.phaser.Phaser.GameObjects.Components.Crop
-import typings.phaser.Phaser.GameObjects.Components.Depth
-import typings.phaser.Phaser.GameObjects.Components.Flip
-import typings.phaser.Phaser.GameObjects.Components.GetBounds
-import typings.phaser.Phaser.GameObjects.Components.Mask
-import typings.phaser.Phaser.GameObjects.Components.Origin
-import typings.phaser.Phaser.GameObjects.Components.Pipeline
-import typings.phaser.Phaser.GameObjects.Components.ScrollFactor
-import typings.phaser.Phaser.GameObjects.Components.Tint
-import typings.phaser.Phaser.GameObjects.Components.Transform
-import typings.phaser.Phaser.GameObjects.Components.Visible
-import typings.phaser.Phaser.Renderer.Canvas.CanvasRenderer
-import typings.phaser.Phaser.Renderer.WebGL.RenderTarget
-import typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer
-import typings.phaser.Phaser.Textures.Texture
-import typings.phaser.Phaser.Textures.TextureManager
+import typings.phaser.Phaser.Textures.DynamicTexture
 import typings.phaser.Phaser.Types.Renderer.Snapshot.SnapshotCallback
-import typings.std.CanvasRenderingContext2D
-import typings.std.HTMLCanvasElement
+import typings.phaser.Phaser.Types.Textures.StampConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * A Render Texture.
+  * A Render Texture is a combination of Dynamic Texture and an Image Game Object, that uses the
+  * Dynamic Texture to display itself with.
   * 
-  * A Render Texture is a special texture that allows any number of Game Objects to be drawn to it. You can take many complex objects and
-  * draw them all to this one texture, which can they be used as the texture for other Game Object's. It's a way to generate dynamic
-  * textures at run-time that are WebGL friendly and don't invoke expensive GPU uploads.
+  * A Dynamic Texture is a special texture that allows you to draw textures, frames and most kind of
+  * Game Objects directly to it.
   * 
-  * Note that under WebGL a FrameBuffer, which is what the Render Texture uses internally, cannot be anti-aliased. This means
-  * that when drawing objects such as Shapes to a Render Texture they will appear to be drawn with no aliasing, however this
-  * is a technical limitation of WebGL. To get around it, create your shape as a texture in an art package, then draw that
-  * to the Render Texture.
+  * You can take many complex objects and draw them to this one texture, which can then be used as the
+  * base texture for other Game Objects, such as Sprites. Should you then update this texture, all
+  * Game Objects using it will instantly be updated as well, reflecting the changes immediately.
+  * 
+  * It's a powerful way to generate dynamic textures at run-time that are WebGL friendly and don't invoke
+  * expensive GPU uploads on each change.
+  * 
+  * In versions of Phaser before 3.60 a Render Texture was the only way you could create a texture
+  * like this, that had the ability to be drawn on. But in 3.60 we split the core functions out to
+  * the Dynamic Texture class as it made a lot more sense for them to reside in there. As a result,
+  * the Render Texture is now a light-weight shim that sits on-top of an Image Game Object and offers
+  * proxy methods to the features available from a Dynamic Texture.
+  * 
+  * **When should you use a Render Texture vs. a Dynamic Texture?**
+  * 
+  * You should use a Dynamic Texture if the texture is going to be used by multiple Game Objects,
+  * or you want to use it across multiple Scenes, because textures are globally stored.
+  * 
+  * You should use a Dynamic Texture if the texture isn't going to be displayed in-game, but is
+  * instead going to be used for something like a mask or shader.
+  * 
+  * You should use a Render Texture if you need to display the texture in-game on a single Game Object,
+  * as it provides the convenience of wrapping an Image and Dynamic Texture together for you.
+  * 
+  * Under WebGL1, a FrameBuffer, which is what this Dynamic Texture uses internally, cannot be anti-aliased.
+  * This means that when drawing objects such as Shapes or Graphics instances to this texture, they may appear
+  * to be drawn with no aliasing around the edges. This is a technical limitation of WebGL1. To get around it,
+  * create your shape as a texture in an art package, then draw that to this texture.
   */
 @js.native
 trait RenderTexture
   extends StObject
-     with GameObject
-     with Alpha
-     with BlendMode
-     with ComputedSize
-     with Crop
-     with Depth
-     with Flip
-     with GetBounds
-     with Mask
-     with Origin
-     with Pipeline
-     with ScrollFactor
-     with Tint
-     with Transform
-     with Visible {
+     with Image {
   
   /**
     * Use this method if you have already called `beginDraw` and need to batch
     * draw a large number of objects to this Render Texture.
     * 
-    * This method batches the drawing of the given objects to this Render Texture,
-    * without causing a bind or batch flush.
+    * This method batches the drawing of the given objects to this texture,
+    * without causing a WebGL bind or batch flush for each one.
     * 
-    * It is faster than calling `draw`, but you must be very careful to manage the
+    * It is faster than calling `draw`, but you must be careful to manage the
     * flow of code and remember to call `endDraw()`. If you don't need to draw large
     * numbers of objects it's much safer and easier to use the `draw` method instead.
     * 
@@ -86,18 +77,19 @@ trait RenderTexture
     * 
     * Do not call any methods other than `batchDraw`, `batchDrawFrame`, or `endDraw` once you
     * have started a batch. Also, be very careful not to destroy this Render Texture while the
-    * batch is still open, or call `beginDraw` again.
+    * batch is still open. Doing so will cause a run-time error in the WebGL Renderer.
     * 
-    * Draws the given object, or an array of objects, to this Render Texture.
+    * You can use the `RenderTexture.texture.isDrawing` boolean property to tell if a batch is
+    * currently open, or not.
     * 
-    * It can accept any of the following:
+    * This method can accept any of the following:
     * 
     * * Any renderable Game Object, such as a Sprite, Text, Graphics or TileSprite.
     * * Tilemap Layers.
     * * A Group. The contents of which will be iterated and drawn in turn.
     * * A Container. The contents of which will be iterated fully, and drawn in turn.
     * * A Scene's Display List. Pass in `Scene.children` to draw the whole list.
-    * * Another Render Texture.
+    * * Another Dynamic Texture or Render Texture.
     * * A Texture Frame instance.
     * * A string. This is used to look-up a texture from the Texture Manager.
     * 
@@ -121,11 +113,11 @@ trait RenderTexture
     * 
     * The `alpha` and `tint` values are only used by Texture Frames.
     * Game Objects use their own alpha and tint values when being drawn.
-    * @param entries Any renderable Game Object, or Group, Container, Display List, other Render Texture, Texture Frame or an array of any of these.
-    * @param x The x position to draw the Frame at, or the offset applied to the object.
-    * @param y The y position to draw the Frame at, or the offset applied to the object.
-    * @param alpha The alpha value. Only used for Texture Frames and if not specified defaults to the `globalAlpha` property. Game Objects use their own current alpha value.
-    * @param tint WebGL only. The tint color value. Only used for Texture Frames and if not specified defaults to the `globalTint` property. Game Objects use their own current tint value.
+    * @param entries Any renderable Game Object, or Group, Container, Display List, other Dynamic or Texture, Texture Frame or an array of any of these.
+    * @param x The x position to draw the Frame at, or the offset applied to the object. Default 0.
+    * @param y The y position to draw the Frame at, or the offset applied to the object. Default 0.
+    * @param alpha The alpha value. Only used when drawing Texture Frames to this texture. Game Objects use their own alpha. Default 1.
+    * @param tint The tint color value. Only used when drawing Texture Frames to this texture. Game Objects use their own tint. WebGL only. Default 0xffffff.
     */
   def batchDraw(entries: Any): this.type = js.native
   def batchDraw(entries: Any, x: Double): this.type = js.native
@@ -149,9 +141,9 @@ trait RenderTexture
     * draw a large number of texture frames to this Render Texture.
     * 
     * This method batches the drawing of the given frames to this Render Texture,
-    * without causing a bind or batch flush.
+    * without causing a WebGL bind or batch flush for each one.
     * 
-    * It is faster than calling `drawFrame`, but you must be very careful to manage the
+    * It is faster than calling `drawFrame`, but you must be careful to manage the
     * flow of code and remember to call `endDraw()`. If you don't need to draw large
     * numbers of frames it's much safer and easier to use the `drawFrame` method instead.
     * 
@@ -172,30 +164,21 @@ trait RenderTexture
     * 
     * Do not call any methods other than `batchDraw`, `batchDrawFrame`, or `endDraw` once you
     * have started a batch. Also, be very careful not to destroy this Render Texture while the
-    * batch is still open, or call `beginDraw` again.
+    * batch is still open. Doing so will cause a run-time error in the WebGL Renderer.
     * 
-    * Draws the Texture Frame to the Render Texture at the given position.
+    * You can use the `RenderTexture.texture.isDrawing` boolean property to tell if a batch is
+    * currently open, or not.
     * 
     * Textures are referenced by their string-based keys, as stored in the Texture Manager.
     * 
-    * ```javascript
-    * var rt = this.add.renderTexture(0, 0, 800, 600);
-    * rt.drawFrame(key, frame);
-    * ```
-    * 
     * You can optionally provide a position, alpha and tint value to apply to the frame
     * before it is drawn.
-    * 
-    * Calling this method will cause a batch flush, so if you've got a stack of things to draw
-    * in a tight loop, try using the `draw` method instead.
-    * 
-    * If you need to draw a Sprite to this Render Texture, use the `draw` method instead.
     * @param key The key of the texture to be used, as stored in the Texture Manager.
     * @param frame The name or index of the frame within the Texture.
     * @param x The x position to draw the frame at. Default 0.
     * @param y The y position to draw the frame at. Default 0.
-    * @param alpha The alpha to use. If not specified it uses the `globalAlpha` property.
-    * @param tint WebGL only. The tint color to use. If not specified it uses the `globalTint` property.
+    * @param alpha The alpha value. Only used when drawing Texture Frames to this texture. Game Objects use their own alpha. Default 1.
+    * @param tint The tint color value. Only used when drawing Texture Frames to this texture. Game Objects use their own tint. WebGL only. Default 0xffffff.
     */
   def batchDrawFrame(key: String): this.type = js.native
   def batchDrawFrame(key: String, frame: String): this.type = js.native
@@ -248,13 +231,17 @@ trait RenderTexture
   
   /**
     * Use this method if you need to batch draw a large number of Game Objects to
-    * this Render Texture in a single go, or on a frequent basis.
+    * this Render Texture in a single pass, or on a frequent basis. This is especially
+    * useful under WebGL, however, if your game is using Canvas only, it will not make
+    * any speed difference in that situation.
     * 
-    * This method starts the beginning of a batched draw.
+    * This method starts the beginning of a batched draw, unless one is already open.
     * 
-    * It is faster than calling `draw`, but you must be very careful to manage the
-    * flow of code and remember to call `endDraw()`. If you don't need to draw large
-    * numbers of objects it's much safer and easier to use the `draw` method instead.
+    * Batched drawing is faster than calling `draw` in loop, but you must be careful
+    * to manage the flow of code and remember to call `endDraw()` when you're finished.
+    * 
+    * If you don't need to draw large numbers of objects it's much safer and easier
+    * to use the `draw` method instead.
     * 
     * The flow should be:
     * 
@@ -273,36 +260,30 @@ trait RenderTexture
     * 
     * Do not call any methods other than `batchDraw`, `batchDrawFrame`, or `endDraw` once you
     * have started a batch. Also, be very careful not to destroy this Render Texture while the
-    * batch is still open, or call `beginDraw` again.
+    * batch is still open. Doing so will cause a run-time error in the WebGL Renderer.
+    * 
+    * You can use the `RenderTexture.texture.isDrawing` boolean property to tell if a batch is
+    * currently open, or not.
     */
   def beginDraw(): this.type = js.native
   
   /**
-    * An internal Camera that can be used to move around the Render Texture.
-    * Control it just like you would any Scene Camera. The difference is that it only impacts the placement of what
-    * is drawn to the Render Texture. You can scroll, zoom and rotate this Camera.
+    * An internal Camera that can be used to move around this Render Texture.
+    * 
+    * Control it just like you would any Scene Camera. The difference is that it only impacts
+    * the placement of Game Objects that you then draw to this texture.
+    * 
+    * You can scroll, zoom and rotate this Camera.
+    * 
+    * This property is a reference to `RenderTexture.texture.camera`.
     */
   var camera: BaseCamera = js.native
   
   /**
-    * The HTML Canvas Element that the Render Texture is drawing to when using the Canvas Renderer.
-    */
-  var canvas: HTMLCanvasElement = js.native
-  
-  /**
-    * Clears the Render Texture.
+    * Fully clears this Render Texture, erasing everything from it and resetting it back to
+    * a blank, transparent, texture.
     */
   def clear(): this.type = js.native
-  
-  /**
-    * A reference to the Rendering Context belonging to the Canvas Element this Render Texture is drawing to.
-    */
-  var context: CanvasRenderingContext2D = js.native
-  
-  /**
-    * Is this Render Texture dirty or not? If not it won't spend time clearing or filling itself.
-    */
-  var dirty: Boolean = js.native
   
   /**
     * Draws the given object, or an array of objects, to this Render Texture.
@@ -313,12 +294,15 @@ trait RenderTexture
     * * Tilemap Layers.
     * * A Group. The contents of which will be iterated and drawn in turn.
     * * A Container. The contents of which will be iterated fully, and drawn in turn.
-    * * A Scene's Display List. Pass in `Scene.children` to draw the whole list.
-    * * Another Render Texture.
+    * * A Scene Display List. Pass in `Scene.children` to draw the whole list.
+    * * Another Dynamic Texture, or a Render Texture.
     * * A Texture Frame instance.
-    * * A string. This is used to look-up a texture from the Texture Manager.
+    * * A string. This is used to look-up the texture from the Texture Manager.
     * 
-    * Note: You cannot draw a Render Texture to itself.
+    * Note 1: You cannot draw a Render Texture to itself.
+    * 
+    * Note 2: For Game Objects that have Post FX Pipelines, the pipeline _cannot_ be
+    * used when drawn to this texture.
     * 
     * If passing in a Group or Container it will only draw children that return `true`
     * when their `willRender()` method is called. I.e. a Container with 10 children,
@@ -345,10 +329,10 @@ trait RenderTexture
     * try and pass them in an array in one single call, rather than making lots of
     * separate calls.
     * @param entries Any renderable Game Object, or Group, Container, Display List, other Render Texture, Texture Frame or an array of any of these.
-    * @param x The x position to draw the Frame at, or the offset applied to the object.
-    * @param y The y position to draw the Frame at, or the offset applied to the object.
-    * @param alpha The alpha value. Only used for Texture Frames and if not specified defaults to the `globalAlpha` property. Game Objects use their own current alpha value.
-    * @param tint WebGL only. The tint color value. Only used for Texture Frames and if not specified defaults to the `globalTint` property. Game Objects use their own current tint value.
+    * @param x The x position to draw the Frame at, or the offset applied to the object. Default 0.
+    * @param y The y position to draw the Frame at, or the offset applied to the object. Default 0.
+    * @param alpha The alpha value. Only used when drawing Texture Frames to this texture. Game Objects use their own alpha. Default 1.
+    * @param tint The tint color value. Only used when drawing Texture Frames to this texture. Game Objects use their own tint. WebGL only. Default 0xffffff.
     */
   def draw(entries: Any): this.type = js.native
   def draw(entries: Any, x: Double): this.type = js.native
@@ -385,11 +369,11 @@ trait RenderTexture
     * 
     * If you need to draw a Sprite to this Render Texture, use the `draw` method instead.
     * @param key The key of the texture to be used, as stored in the Texture Manager.
-    * @param frame The name or index of the frame within the Texture.
+    * @param frame The name or index of the frame within the Texture. Set to `null` to skip this argument if not required.
     * @param x The x position to draw the frame at. Default 0.
     * @param y The y position to draw the frame at. Default 0.
-    * @param alpha The alpha to use. If not specified it uses the `globalAlpha` property.
-    * @param tint WebGL only. The tint color to use. If not specified it uses the `globalTint` property.
+    * @param alpha The alpha value. Only used when drawing Texture Frames to this texture. Default 1.
+    * @param tint The tint color value. Only used when drawing Texture Frames to this texture. WebGL only. Default 0xffffff.
     */
   def drawFrame(key: String): this.type = js.native
   def drawFrame(key: String, frame: String): this.type = js.native
@@ -443,11 +427,16 @@ trait RenderTexture
   /**
     * Use this method to finish batch drawing to this Render Texture.
     * 
-    * Never call this method without first calling `beginDraw`.
+    * Doing so will stop the WebGL Renderer from capturing draws and then blit the
+    * framebuffer to the Render Target owned by this texture.
     * 
-    * It is faster than calling `draw`, but you must be very careful to manage the
-    * flow of code and remember to call `endDraw()`. If you don't need to draw large
-    * numbers of objects it's much safer and easier to use the `draw` method instead.
+    * Calling this method without first calling `beginDraw` will have no effect.
+    * 
+    * Batch drawing is faster than calling `draw`, but you must be careful to manage the
+    * flow of code and remember to call `endDraw()` when you're finished.
+    * 
+    * If you don't need to draw large numbers of objects it's much safer and easier
+    * to use the `draw` method instead.
     * 
     * The flow should be:
     * 
@@ -466,7 +455,10 @@ trait RenderTexture
     * 
     * Do not call any methods other than `batchDraw`, `batchDrawFrame`, or `endDraw` once you
     * have started a batch. Also, be very careful not to destroy this Render Texture while the
-    * batch is still open, or call `beginDraw` again.
+    * batch is still open. Doing so will cause a run-time error in the WebGL Renderer.
+    * 
+    * You can use the `RenderTexture.texture.isDrawing` boolean property to tell if a batch is
+    * currently open, or not.
     * @param erase Draws all objects in this batch using a blend mode of ERASE. This has the effect of erasing any filled pixels in the objects being drawn. Default false.
     */
   def endDraw(): this.type = js.native
@@ -474,7 +466,7 @@ trait RenderTexture
   
   /**
     * Draws the given object, or an array of objects, to this Render Texture using a blend mode of ERASE.
-    * This has the effect of erasing any filled pixels in the objects from this Render Texture.
+    * This has the effect of erasing any filled pixels present in the objects from this texture.
     * 
     * It can accept any of the following:
     * 
@@ -482,10 +474,10 @@ trait RenderTexture
     * * Tilemap Layers.
     * * A Group. The contents of which will be iterated and drawn in turn.
     * * A Container. The contents of which will be iterated fully, and drawn in turn.
-    * * A Scene's Display List. Pass in `Scene.children` to draw the whole list.
-    * * Another Render Texture.
+    * * A Scene Display List. Pass in `Scene.children` to draw the whole list.
+    * * Another Dynamic Texture, or a Render Texture.
     * * A Texture Frame instance.
-    * * A string. This is used to look-up a texture from the Texture Manager.
+    * * A string. This is used to look-up the texture from the Texture Manager.
     * 
     * Note: You cannot erase a Render Texture from itself.
     * 
@@ -509,9 +501,9 @@ trait RenderTexture
     * after the entries have been iterated. So if you've a bunch of objects to draw,
     * try and pass them in an array in one single call, rather than making lots of
     * separate calls.
-    * @param entries Any renderable Game Object, or Group, Container, Display List, other Render Texture, Texture Frame or an array of any of these.
-    * @param x The x position to draw the Frame at, or the offset applied to the object.
-    * @param y The y position to draw the Frame at, or the offset applied to the object.
+    * @param entries Any renderable Game Object, or Group, Container, Display List, Render Texture, Texture Frame, or an array of any of these.
+    * @param x The x position to draw the Frame at, or the offset applied to the object. Default 0.
+    * @param y The y position to draw the Frame at, or the offset applied to the object. Default 0.
     */
   def erase(entries: Any): this.type = js.native
   def erase(entries: Any, x: Double): this.type = js.native
@@ -519,13 +511,18 @@ trait RenderTexture
   def erase(entries: Any, x: Unit, y: Double): this.type = js.native
   
   /**
-    * Fills the Render Texture with the given color.
-    * @param rgb The color to fill the Render Texture with.
+    * Fills this Render Texture with the given color.
+    * 
+    * By default it will fill the entire texture, however you can set it to fill a specific
+    * rectangular area by using the x, y, width and height arguments.
+    * 
+    * The color should be given in hex format, i.e. 0xff0000 for red, 0x00ff00 for green, etc.
+    * @param rgb The color to fill this Render Texture with, such as 0xff0000 for red.
     * @param alpha The alpha value used by the fill. Default 1.
     * @param x The left coordinate of the fill rectangle. Default 0.
     * @param y The top coordinate of the fill rectangle. Default 0.
-    * @param width The width of the fill rectangle. Default this.frame.cutWidth.
-    * @param height The height of the fill rectangle. Default this.frame.cutHeight.
+    * @param width The width of the fill rectangle. Default this.width.
+    * @param height The height of the fill rectangle. Default this.height.
     */
   def fill(rgb: Double): this.type = js.native
   def fill(rgb: Double, alpha: Double): this.type = js.native
@@ -561,41 +558,48 @@ trait RenderTexture
   def fill(rgb: Double, alpha: Unit, x: Unit, y: Unit, width: Unit, height: Double): this.type = js.native
   
   /**
-    * The alpha of the Render Texture when rendered.
-    */
-  var globalAlpha: Double = js.native
-  
-  /**
-    * The tint of the Render Texture when rendered.
-    */
-  var globalTint: Double = js.native
-  
-  /**
     * Internal destroy handler, called as part of the destroy process.
     */
   /* protected */ def preDestroy(): Unit = js.native
   
   /**
-    * The Render Target that belongs to this Render Texture.
+    * Takes the given Texture Frame and draws it to this Render Texture as a fill pattern,
+    * i.e. in a grid-layout based on the frame dimensions.
     * 
-    * A Render Target encapsulates a framebuffer and texture for the WebGL Renderer.
+    * Textures are referenced by their string-based keys, as stored in the Texture Manager.
     * 
-    * This property remains `null` under Canvas.
+    * You can optionally provide a position, width, height, alpha and tint value to apply to
+    * the frames before they are drawn. The position controls the top-left where the repeating
+    * fill will start from. The width and height control the size of the filled area.
+    * 
+    * The position can be negative if required, but the dimensions cannot.
+    * 
+    * Calling this method will cause a batch flush by default. Use the `skipBatch` argument
+    * to disable this if this call is part of a larger batch draw.
+    * @param key The key of the texture to be used, as stored in the Texture Manager.
+    * @param frame The name or index of the frame within the Texture. Set to `null` to skip this argument if not required.
+    * @param x The x position to start drawing the frames from (can be negative to offset). Default 0.
+    * @param y The y position to start drawing the frames from (can be negative to offset). Default 0.
+    * @param width The width of the area to repeat the frame within. Defaults to the width of this Dynamic Texture. Default this.width.
+    * @param height The height of the area to repeat the frame within. Defaults to the height of this Dynamic Texture. Default this.height.
+    * @param alpha The alpha to use. Defaults to 1, no alpha. Default 1.
+    * @param tint WebGL only. The tint color to use. Leave as undefined, or 0xffffff to have no tint. Default 0xffffff.
+    * @param skipBatch Skip beginning and ending a batch with this call. Use if this is part of a bigger batched draw. Default false.
     */
-  var renderTarget: RenderTarget = js.native
-  
-  /**
-    * A reference to either the Canvas or WebGL Renderer that the Game instance is using.
-    */
-  var renderer: CanvasRenderer | WebGLRenderer = js.native
+  def repeat(
+    key: String,
+    frame: js.UndefOr[String | Double],
+    x: js.UndefOr[Double],
+    y: js.UndefOr[Double],
+    width: js.UndefOr[Double],
+    height: js.UndefOr[Double],
+    alpha: js.UndefOr[Double],
+    tint: js.UndefOr[Double],
+    skipBatch: js.UndefOr[Boolean]
+  ): this.type = js.native
   
   /**
     * Resizes the Render Texture to the new dimensions given.
-    * 
-    * If Render Texture was created from specific frame, only the size of the frame will be changed. The size of the source
-    * texture will not change.
-    * 
-    * If Render Texture was not created from specific frame, the following will happen:
     * 
     * In WebGL it will destroy and then re-create the frame buffer being used by the Render Texture.
     * In Canvas it will resize the underlying canvas element.
@@ -638,31 +642,22 @@ trait RenderTexture
     * using it first, before destroying this Render Texture.
     * @param key The unique key to store the texture as within the global Texture Manager.
     */
-  def saveTexture(key: String): Texture = js.native
-  
-  /**
-    * Set the alpha to use when rendering this Render Texture.
-    * @param alpha The alpha value.
-    */
-  def setGlobalAlpha(alpha: Double): this.type = js.native
-  
-  /**
-    * Set the tint to use when rendering this Render Texture.
-    * @param tint The tint value.
-    */
-  def setGlobalTint(tint: Double): this.type = js.native
+  def saveTexture(key: String): DynamicTexture = js.native
   
   /**
     * Takes a snapshot of the whole of this Render Texture.
     * 
-    * The snapshot is taken immediately.
+    * The snapshot is taken immediately, but the results are returned via the given callback.
     * 
-    * To capture just a portion of the Render Texture see the `snapshotArea` method. To capture a specific pixel, see `snapshotPixel`.
+    * To capture a portion of this Render Texture see the `snapshotArea` method.
+    * To capture just a specific pixel, see the `snapshotPixel` method.
     * 
-    * Snapshots work by using the WebGL `readPixels` feature to grab every pixel from the frame buffer into an ArrayBufferView.
-    * It then parses this, copying the contents to a temporary Canvas and finally creating an Image object from it,
-    * which is the image returned to the callback provided. All in all, this is a computationally expensive and blocking process,
-    * which gets more expensive the larger the canvas size gets, so please be careful how you employ this in your game.
+    * Snapshots work by using the WebGL `readPixels` feature to grab every pixel from the frame buffer
+    * into an ArrayBufferView. It then parses this, copying the contents to a temporary Canvas and finally
+    * creating an Image object from it, which is the image returned to the callback provided.
+    * 
+    * All in all, this is a computationally expensive and blocking process, which gets more expensive
+    * the larger the resolution this Render Texture has, so please be careful how you employ this in your game.
     * @param callback The Function to invoke after the snapshot image is created.
     * @param type The format of the image to create, usually `image/png` or `image/jpeg`. Default 'image/png'.
     * @param encoderOptions The image quality, between 0 and 1. Used for image formats with lossy compression, such as `image/jpeg`. Default 0.92.
@@ -675,14 +670,17 @@ trait RenderTexture
   /**
     * Takes a snapshot of the given area of this Render Texture.
     * 
-    * The snapshot is taken immediately.
+    * The snapshot is taken immediately, but the results are returned via the given callback.
     * 
-    * To capture the whole Render Texture see the `snapshot` method. To capture a specific pixel, see `snapshotPixel`.
+    * To capture the whole Render Texture see the `snapshot` method.
+    * To capture just a specific pixel, see the `snapshotPixel` method.
     * 
-    * Snapshots work by using the WebGL `readPixels` feature to grab every pixel from the frame buffer into an ArrayBufferView.
-    * It then parses this, copying the contents to a temporary Canvas and finally creating an Image object from it,
-    * which is the image returned to the callback provided. All in all, this is a computationally expensive and blocking process,
-    * which gets more expensive the larger the canvas size gets, so please be careful how you employ this in your game.
+    * Snapshots work by using the WebGL `readPixels` feature to grab every pixel from the frame buffer
+    * into an ArrayBufferView. It then parses this, copying the contents to a temporary Canvas and finally
+    * creating an Image object from it, which is the image returned to the callback provided.
+    * 
+    * All in all, this is a computationally expensive and blocking process, which gets more expensive
+    * the larger the resolution this Render Texture has, so please be careful how you employ this in your game.
     * @param x The x coordinate to grab from.
     * @param y The y coordinate to grab from.
     * @param width The width of the area to grab.
@@ -715,13 +713,14 @@ trait RenderTexture
   /**
     * Takes a snapshot of the given pixel from this Render Texture.
     * 
-    * The snapshot is taken immediately.
+    * The snapshot is taken immediately, but the results are returned via the given callback.
     * 
-    * To capture the whole Render Texture see the `snapshot` method. To capture a specific portion, see `snapshotArea`.
+    * To capture the whole Render Texture see the `snapshot` method.
+    * To capture a portion of this Render Texture see the `snapshotArea` method.
     * 
-    * Unlike the other two snapshot methods, this one will send your callback a `Color` object containing the color data for
-    * the requested pixel. It doesn't need to create an internal Canvas or Image object, so is a lot faster to execute,
-    * using less memory, than the other snapshot methods.
+    * Unlike the two other snapshot methods, this one will send your callback a `Color` object
+    * containing the color data for the requested pixel. It doesn't need to create an internal
+    * Canvas or Image object, so is a lot faster to execute, using less memory than the other snapshot methods.
     * @param x The x coordinate of the pixel to get.
     * @param y The y coordinate of the pixel to get.
     * @param callback The Function to invoke after the snapshot pixel data is extracted.
@@ -729,13 +728,43 @@ trait RenderTexture
   def snapshotPixel(x: Double, y: Double, callback: SnapshotCallback): this.type = js.native
   
   /**
-    * A reference to the Texture Manager.
+    * Takes the given texture key and frame and then stamps it at the given
+    * x and y coordinates. You can use the optional 'config' argument to provide
+    * lots more options about how the stamp is applied, including the alpha,
+    * tint, angle, scale and origin.
+    * 
+    * By default, the frame will stamp on the x/y coordinates based on its center.
+    * 
+    * If you wish to stamp from the top-left, set the config `originX` and
+    * `originY` properties both to zero.
+    * @param key The key of the texture to be used, as stored in the Texture Manager.
+    * @param frame The name or index of the frame within the Texture. Set to `null` to skip this argument if not required.
+    * @param x The x position to draw the frame at. Default 0.
+    * @param y The y position to draw the frame at. Default 0.
+    * @param config The stamp configuration object, allowing you to set the alpha, tint, angle, scale and origin of the stamp.
     */
-  var textureManager: TextureManager = js.native
-  
-  /**
-    * The Texture corresponding to this Render Texture.
-    */
-  @JSName("texture")
-  var texture_RenderTexture: Texture = js.native
+  def stamp(key: String): this.type = js.native
+  def stamp(key: String, frame: String): this.type = js.native
+  def stamp(key: String, frame: String, x: Double): this.type = js.native
+  def stamp(key: String, frame: String, x: Double, y: Double): this.type = js.native
+  def stamp(key: String, frame: String, x: Double, y: Double, config: StampConfig): this.type = js.native
+  def stamp(key: String, frame: String, x: Double, y: Unit, config: StampConfig): this.type = js.native
+  def stamp(key: String, frame: String, x: Unit, y: Double): this.type = js.native
+  def stamp(key: String, frame: String, x: Unit, y: Double, config: StampConfig): this.type = js.native
+  def stamp(key: String, frame: String, x: Unit, y: Unit, config: StampConfig): this.type = js.native
+  def stamp(key: String, frame: Double): this.type = js.native
+  def stamp(key: String, frame: Double, x: Double): this.type = js.native
+  def stamp(key: String, frame: Double, x: Double, y: Double): this.type = js.native
+  def stamp(key: String, frame: Double, x: Double, y: Double, config: StampConfig): this.type = js.native
+  def stamp(key: String, frame: Double, x: Double, y: Unit, config: StampConfig): this.type = js.native
+  def stamp(key: String, frame: Double, x: Unit, y: Double): this.type = js.native
+  def stamp(key: String, frame: Double, x: Unit, y: Double, config: StampConfig): this.type = js.native
+  def stamp(key: String, frame: Double, x: Unit, y: Unit, config: StampConfig): this.type = js.native
+  def stamp(key: String, frame: Unit, x: Double): this.type = js.native
+  def stamp(key: String, frame: Unit, x: Double, y: Double): this.type = js.native
+  def stamp(key: String, frame: Unit, x: Double, y: Double, config: StampConfig): this.type = js.native
+  def stamp(key: String, frame: Unit, x: Double, y: Unit, config: StampConfig): this.type = js.native
+  def stamp(key: String, frame: Unit, x: Unit, y: Double): this.type = js.native
+  def stamp(key: String, frame: Unit, x: Unit, y: Double, config: StampConfig): this.type = js.native
+  def stamp(key: String, frame: Unit, x: Unit, y: Unit, config: StampConfig): this.type = js.native
 }

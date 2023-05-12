@@ -11,6 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object buildSrcAuthRefreshclientMod {
   
+  @JSImport("google-auth-library/build/src/auth/refreshclient", "USER_REFRESH_ACCOUNT_TYPE")
+  @js.native
+  val USER_REFRESH_ACCOUNT_TYPE: /* "authorized_user" */ String = js.native
+  
   @JSImport("google-auth-library/build/src/auth/refreshclient", "UserRefreshClient")
   @js.native
   /**

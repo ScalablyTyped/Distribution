@@ -28,8 +28,14 @@ object distTypesCommandsMergeDeveloperIdentitiesCommandMod {
           Any, 
           Any
         ] {
+    /**
+      * @public
+      */
     def this(input: MergeDeveloperIdentitiesCommandInput) = this()
     
+    /**
+      * @internal
+      */
     /* private */ var deserialize: Any = js.native
     
     /**
@@ -45,6 +51,9 @@ object distTypesCommandsMergeDeveloperIdentitiesCommandMod {
       options: HttpHandlerOptions
     ): Handler[MergeDeveloperIdentitiesCommandInput, MergeDeveloperIdentitiesCommandOutput] = js.native
     
+    /**
+      * @internal
+      */
     /* private */ var serialize: Any = js.native
   }
   /* static members */

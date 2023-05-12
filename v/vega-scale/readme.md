@@ -1,7 +1,7 @@
 
 # Scala.js typings for vega-scale
 
-Typings are for version 7.2.0
+Typings are for version 7.3.0
 
 ## Library description:
 Scales and color schemes for visual encoding.

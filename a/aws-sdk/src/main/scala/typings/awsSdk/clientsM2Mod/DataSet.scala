@@ -12,7 +12,7 @@ trait DataSet extends StObject {
   var datasetName: String
   
   /**
-    * The type of dataset. Possible values include VSAM, IS, PS, GDG, PO, PS, UNKNOWN etc.
+    * The type of dataset. The only supported value is VSAM.
     */
   var datasetOrg: DatasetOrgAttributes
   

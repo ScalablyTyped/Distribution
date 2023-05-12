@@ -18,21 +18,8 @@ trait Base extends StObject {
   def InvalidStateException(): Unit = js.native
   
   def afterTransition(
-    transition: Transition_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ],
-    callback: js.Function1[
-      /* transition */ Transition_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ], 
-      Unit
-    ]
+    transition: Transition_[BaseType, Any, BaseType, Any],
+    callback: js.Function1[/* transition */ Transition_[BaseType, Any, BaseType, Any], Unit]
   ): Unit = js.native
   
   // http://dc-js.github.io/dc.js/docs/html/dc.barChart.html
@@ -69,15 +56,11 @@ trait Base extends StObject {
   def dataTable(parent: String): DataTableWidget = js.native
   def dataTable(parent: String, chartGroup: String): DataTableWidget = js.native
   
-  var dateFormat: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.time.Format */ Any = js.native
-  
   def deregisterAllCharts(): Unit = js.native
   def deregisterAllCharts(group: String): Unit = js.native
   
   def deregisterChart(chart: BaseMixin[Any]): Unit = js.native
   def deregisterChart(chart: BaseMixin[Any], group: String): Unit = js.native
-  
-  var disableTransitions: Boolean = js.native
   
   var events: Events = js.native
   
@@ -112,657 +95,192 @@ trait Base extends StObject {
   def numberDisplay(parent: String, chartGroup: String): NumberDisplayWidget = js.native
   
   def optionalTransition(enable: Boolean): js.Function1[
-    /* selection */ Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ], 
+    /* selection */ Selection_[BaseType, Any, BaseType, Any], 
     (js.Function4[
-      /* selections */ Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ], 
+      /* selections */ Selection_[BaseType, Any, BaseType, Any], 
       /* duration */ js.UndefOr[Double | js.Function], 
       /* delay */ js.UndefOr[Double | js.Function], 
       /* name */ js.UndefOr[String], 
-      (Transition_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ]) | (Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ])
-    ]) | (Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ])
+      (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any])
+    ]) | (Selection_[BaseType, Any, BaseType, Any])
   ] = js.native
   def optionalTransition(enable: Boolean, duration: js.Function): js.Function1[
-    /* selection */ Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ], 
+    /* selection */ Selection_[BaseType, Any, BaseType, Any], 
     (js.Function4[
-      /* selections */ Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ], 
+      /* selections */ Selection_[BaseType, Any, BaseType, Any], 
       /* duration */ js.UndefOr[Double | js.Function], 
       /* delay */ js.UndefOr[Double | js.Function], 
       /* name */ js.UndefOr[String], 
-      (Transition_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ]) | (Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ])
-    ]) | (Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ])
+      (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any])
+    ]) | (Selection_[BaseType, Any, BaseType, Any])
   ] = js.native
   def optionalTransition(enable: Boolean, duration: js.Function, delay: js.Function): js.Function1[
-    /* selection */ Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ], 
+    /* selection */ Selection_[BaseType, Any, BaseType, Any], 
     (js.Function4[
-      /* selections */ Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ], 
+      /* selections */ Selection_[BaseType, Any, BaseType, Any], 
       /* duration */ js.UndefOr[Double | js.Function], 
       /* delay */ js.UndefOr[Double | js.Function], 
       /* name */ js.UndefOr[String], 
-      (Transition_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ]) | (Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ])
-    ]) | (Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ])
+      (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any])
+    ]) | (Selection_[BaseType, Any, BaseType, Any])
   ] = js.native
   def optionalTransition(enable: Boolean, duration: js.Function, delay: js.Function, name: String): js.Function1[
-    /* selection */ Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ], 
+    /* selection */ Selection_[BaseType, Any, BaseType, Any], 
     (js.Function4[
-      /* selections */ Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ], 
+      /* selections */ Selection_[BaseType, Any, BaseType, Any], 
       /* duration */ js.UndefOr[Double | js.Function], 
       /* delay */ js.UndefOr[Double | js.Function], 
       /* name */ js.UndefOr[String], 
-      (Transition_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ]) | (Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ])
-    ]) | (Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ])
+      (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any])
+    ]) | (Selection_[BaseType, Any, BaseType, Any])
   ] = js.native
   def optionalTransition(enable: Boolean, duration: js.Function, delay: Double): js.Function1[
-    /* selection */ Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ], 
+    /* selection */ Selection_[BaseType, Any, BaseType, Any], 
     (js.Function4[
-      /* selections */ Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ], 
+      /* selections */ Selection_[BaseType, Any, BaseType, Any], 
       /* duration */ js.UndefOr[Double | js.Function], 
       /* delay */ js.UndefOr[Double | js.Function], 
       /* name */ js.UndefOr[String], 
-      (Transition_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ]) | (Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ])
-    ]) | (Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ])
+      (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any])
+    ]) | (Selection_[BaseType, Any, BaseType, Any])
   ] = js.native
   def optionalTransition(enable: Boolean, duration: js.Function, delay: Double, name: String): js.Function1[
-    /* selection */ Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ], 
+    /* selection */ Selection_[BaseType, Any, BaseType, Any], 
     (js.Function4[
-      /* selections */ Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ], 
+      /* selections */ Selection_[BaseType, Any, BaseType, Any], 
       /* duration */ js.UndefOr[Double | js.Function], 
       /* delay */ js.UndefOr[Double | js.Function], 
       /* name */ js.UndefOr[String], 
-      (Transition_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ]) | (Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ])
-    ]) | (Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ])
+      (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any])
+    ]) | (Selection_[BaseType, Any, BaseType, Any])
   ] = js.native
   def optionalTransition(enable: Boolean, duration: js.Function, delay: Unit, name: String): js.Function1[
-    /* selection */ Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ], 
+    /* selection */ Selection_[BaseType, Any, BaseType, Any], 
     (js.Function4[
-      /* selections */ Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ], 
+      /* selections */ Selection_[BaseType, Any, BaseType, Any], 
       /* duration */ js.UndefOr[Double | js.Function], 
       /* delay */ js.UndefOr[Double | js.Function], 
       /* name */ js.UndefOr[String], 
-      (Transition_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ]) | (Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ])
-    ]) | (Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ])
+      (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any])
+    ]) | (Selection_[BaseType, Any, BaseType, Any])
   ] = js.native
   def optionalTransition(enable: Boolean, duration: Double): js.Function1[
-    /* selection */ Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ], 
+    /* selection */ Selection_[BaseType, Any, BaseType, Any], 
     (js.Function4[
-      /* selections */ Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ], 
+      /* selections */ Selection_[BaseType, Any, BaseType, Any], 
       /* duration */ js.UndefOr[Double | js.Function], 
       /* delay */ js.UndefOr[Double | js.Function], 
       /* name */ js.UndefOr[String], 
-      (Transition_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ]) | (Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ])
-    ]) | (Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ])
+      (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any])
+    ]) | (Selection_[BaseType, Any, BaseType, Any])
   ] = js.native
   def optionalTransition(enable: Boolean, duration: Double, delay: js.Function): js.Function1[
-    /* selection */ Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ], 
+    /* selection */ Selection_[BaseType, Any, BaseType, Any], 
     (js.Function4[
-      /* selections */ Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ], 
+      /* selections */ Selection_[BaseType, Any, BaseType, Any], 
       /* duration */ js.UndefOr[Double | js.Function], 
       /* delay */ js.UndefOr[Double | js.Function], 
       /* name */ js.UndefOr[String], 
-      (Transition_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ]) | (Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ])
-    ]) | (Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ])
+      (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any])
+    ]) | (Selection_[BaseType, Any, BaseType, Any])
   ] = js.native
   def optionalTransition(enable: Boolean, duration: Double, delay: js.Function, name: String): js.Function1[
-    /* selection */ Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ], 
+    /* selection */ Selection_[BaseType, Any, BaseType, Any], 
     (js.Function4[
-      /* selections */ Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ], 
+      /* selections */ Selection_[BaseType, Any, BaseType, Any], 
       /* duration */ js.UndefOr[Double | js.Function], 
       /* delay */ js.UndefOr[Double | js.Function], 
       /* name */ js.UndefOr[String], 
-      (Transition_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ]) | (Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ])
-    ]) | (Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ])
+      (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any])
+    ]) | (Selection_[BaseType, Any, BaseType, Any])
   ] = js.native
   def optionalTransition(enable: Boolean, duration: Double, delay: Double): js.Function1[
-    /* selection */ Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ], 
+    /* selection */ Selection_[BaseType, Any, BaseType, Any], 
     (js.Function4[
-      /* selections */ Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ], 
+      /* selections */ Selection_[BaseType, Any, BaseType, Any], 
       /* duration */ js.UndefOr[Double | js.Function], 
       /* delay */ js.UndefOr[Double | js.Function], 
       /* name */ js.UndefOr[String], 
-      (Transition_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ]) | (Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ])
-    ]) | (Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ])
+      (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any])
+    ]) | (Selection_[BaseType, Any, BaseType, Any])
   ] = js.native
   def optionalTransition(enable: Boolean, duration: Double, delay: Double, name: String): js.Function1[
-    /* selection */ Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ], 
+    /* selection */ Selection_[BaseType, Any, BaseType, Any], 
     (js.Function4[
-      /* selections */ Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ], 
+      /* selections */ Selection_[BaseType, Any, BaseType, Any], 
       /* duration */ js.UndefOr[Double | js.Function], 
       /* delay */ js.UndefOr[Double | js.Function], 
       /* name */ js.UndefOr[String], 
-      (Transition_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ]) | (Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ])
-    ]) | (Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ])
+      (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any])
+    ]) | (Selection_[BaseType, Any, BaseType, Any])
   ] = js.native
   def optionalTransition(enable: Boolean, duration: Double, delay: Unit, name: String): js.Function1[
-    /* selection */ Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ], 
+    /* selection */ Selection_[BaseType, Any, BaseType, Any], 
     (js.Function4[
-      /* selections */ Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ], 
+      /* selections */ Selection_[BaseType, Any, BaseType, Any], 
       /* duration */ js.UndefOr[Double | js.Function], 
       /* delay */ js.UndefOr[Double | js.Function], 
       /* name */ js.UndefOr[String], 
-      (Transition_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ]) | (Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ])
-    ]) | (Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ])
+      (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any])
+    ]) | (Selection_[BaseType, Any, BaseType, Any])
   ] = js.native
   def optionalTransition(enable: Boolean, duration: Unit, delay: js.Function): js.Function1[
-    /* selection */ Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ], 
+    /* selection */ Selection_[BaseType, Any, BaseType, Any], 
     (js.Function4[
-      /* selections */ Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ], 
+      /* selections */ Selection_[BaseType, Any, BaseType, Any], 
       /* duration */ js.UndefOr[Double | js.Function], 
       /* delay */ js.UndefOr[Double | js.Function], 
       /* name */ js.UndefOr[String], 
-      (Transition_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ]) | (Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ])
-    ]) | (Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ])
+      (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any])
+    ]) | (Selection_[BaseType, Any, BaseType, Any])
   ] = js.native
   def optionalTransition(enable: Boolean, duration: Unit, delay: js.Function, name: String): js.Function1[
-    /* selection */ Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ], 
+    /* selection */ Selection_[BaseType, Any, BaseType, Any], 
     (js.Function4[
-      /* selections */ Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ], 
+      /* selections */ Selection_[BaseType, Any, BaseType, Any], 
       /* duration */ js.UndefOr[Double | js.Function], 
       /* delay */ js.UndefOr[Double | js.Function], 
       /* name */ js.UndefOr[String], 
-      (Transition_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ]) | (Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ])
-    ]) | (Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ])
+      (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any])
+    ]) | (Selection_[BaseType, Any, BaseType, Any])
   ] = js.native
   def optionalTransition(enable: Boolean, duration: Unit, delay: Double): js.Function1[
-    /* selection */ Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ], 
+    /* selection */ Selection_[BaseType, Any, BaseType, Any], 
     (js.Function4[
-      /* selections */ Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ], 
+      /* selections */ Selection_[BaseType, Any, BaseType, Any], 
       /* duration */ js.UndefOr[Double | js.Function], 
       /* delay */ js.UndefOr[Double | js.Function], 
       /* name */ js.UndefOr[String], 
-      (Transition_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ]) | (Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ])
-    ]) | (Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ])
+      (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any])
+    ]) | (Selection_[BaseType, Any, BaseType, Any])
   ] = js.native
   def optionalTransition(enable: Boolean, duration: Unit, delay: Double, name: String): js.Function1[
-    /* selection */ Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ], 
+    /* selection */ Selection_[BaseType, Any, BaseType, Any], 
     (js.Function4[
-      /* selections */ Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ], 
+      /* selections */ Selection_[BaseType, Any, BaseType, Any], 
       /* duration */ js.UndefOr[Double | js.Function], 
       /* delay */ js.UndefOr[Double | js.Function], 
       /* name */ js.UndefOr[String], 
-      (Transition_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ]) | (Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ])
-    ]) | (Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ])
+      (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any])
+    ]) | (Selection_[BaseType, Any, BaseType, Any])
   ] = js.native
   def optionalTransition(enable: Boolean, duration: Unit, delay: Unit, name: String): js.Function1[
-    /* selection */ Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ], 
+    /* selection */ Selection_[BaseType, Any, BaseType, Any], 
     (js.Function4[
-      /* selections */ Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ], 
+      /* selections */ Selection_[BaseType, Any, BaseType, Any], 
       /* duration */ js.UndefOr[Double | js.Function], 
       /* delay */ js.UndefOr[Double | js.Function], 
       /* name */ js.UndefOr[String], 
-      (Transition_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ]) | (Selection_[
-        Any, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-        BaseType, 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-      ])
-    ]) | (Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ])
+      (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any])
+    ]) | (Selection_[BaseType, Any, BaseType, Any])
   ] = js.native
   
   def `override`(obj: Any, functionName: String, newFunction: js.Function): Unit = js.native
   
   def pieChart(parent: String): PieChart = js.native
   def pieChart(parent: String, chartGroup: String): PieChart = js.native
-  def pieChart(
-    parent: Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ]
-  ): PieChart = js.native
-  def pieChart(
-    parent: Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ],
-    chartGroup: String
-  ): PieChart = js.native
+  def pieChart(parent: Selection_[BaseType, Any, BaseType, Any]): PieChart = js.native
+  def pieChart(parent: Selection_[BaseType, Any, BaseType, Any], chartGroup: String): PieChart = js.native
   def pieChart(parent: Node): PieChart = js.native
   def pieChart(parent: Node, chartGroup: String): PieChart = js.native
   
@@ -799,394 +317,62 @@ trait Base extends StObject {
   
   def sunburstChart(parent: String): SunburstChart = js.native
   def sunburstChart(parent: String, chartGroup: String): SunburstChart = js.native
-  def sunburstChart(
-    parent: Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ]
-  ): SunburstChart = js.native
-  def sunburstChart(
-    parent: Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ],
-    chartGroup: String
-  ): SunburstChart = js.native
+  def sunburstChart(parent: Selection_[BaseType, Any, BaseType, Any]): SunburstChart = js.native
+  def sunburstChart(parent: Selection_[BaseType, Any, BaseType, Any], chartGroup: String): SunburstChart = js.native
   def sunburstChart(parent: Node): SunburstChart = js.native
   def sunburstChart(parent: Node, chartGroup: String): SunburstChart = js.native
   
   def textFilterWidget(parent: String): TextFilterWidget = js.native
   def textFilterWidget(parent: String, chartGroup: String): TextFilterWidget = js.native
   
+  def transition(selections: Selection_[BaseType, Any, BaseType, Any]): (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any]) = js.native
+  def transition(selections: Selection_[BaseType, Any, BaseType, Any], duration: js.Function): (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any]) = js.native
+  def transition(selections: Selection_[BaseType, Any, BaseType, Any], duration: js.Function, delay: js.Function): (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any]) = js.native
   def transition(
-    selections: Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ]
-  ): (Transition_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) | (Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) = js.native
-  def transition(
-    selections: Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ],
-    duration: js.Function
-  ): (Transition_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) | (Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) = js.native
-  def transition(
-    selections: Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ],
-    duration: js.Function,
-    delay: js.Function
-  ): (Transition_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) | (Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) = js.native
-  def transition(
-    selections: Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ],
+    selections: Selection_[BaseType, Any, BaseType, Any],
     duration: js.Function,
     delay: js.Function,
     name: String
-  ): (Transition_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) | (Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) = js.native
+  ): (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any]) = js.native
+  def transition(selections: Selection_[BaseType, Any, BaseType, Any], duration: js.Function, delay: Double): (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any]) = js.native
   def transition(
-    selections: Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ],
-    duration: js.Function,
-    delay: Double
-  ): (Transition_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) | (Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) = js.native
-  def transition(
-    selections: Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ],
+    selections: Selection_[BaseType, Any, BaseType, Any],
     duration: js.Function,
     delay: Double,
     name: String
-  ): (Transition_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) | (Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) = js.native
+  ): (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any]) = js.native
   def transition(
-    selections: Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ],
+    selections: Selection_[BaseType, Any, BaseType, Any],
     duration: js.Function,
     delay: Unit,
     name: String
-  ): (Transition_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) | (Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) = js.native
+  ): (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any]) = js.native
+  def transition(selections: Selection_[BaseType, Any, BaseType, Any], duration: Double): (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any]) = js.native
+  def transition(selections: Selection_[BaseType, Any, BaseType, Any], duration: Double, delay: js.Function): (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any]) = js.native
   def transition(
-    selections: Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ],
-    duration: Double
-  ): (Transition_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) | (Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) = js.native
-  def transition(
-    selections: Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ],
-    duration: Double,
-    delay: js.Function
-  ): (Transition_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) | (Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) = js.native
-  def transition(
-    selections: Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ],
+    selections: Selection_[BaseType, Any, BaseType, Any],
     duration: Double,
     delay: js.Function,
     name: String
-  ): (Transition_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) | (Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) = js.native
+  ): (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any]) = js.native
+  def transition(selections: Selection_[BaseType, Any, BaseType, Any], duration: Double, delay: Double): (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any]) = js.native
   def transition(
-    selections: Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ],
-    duration: Double,
-    delay: Double
-  ): (Transition_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) | (Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) = js.native
-  def transition(
-    selections: Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ],
+    selections: Selection_[BaseType, Any, BaseType, Any],
     duration: Double,
     delay: Double,
     name: String
-  ): (Transition_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) | (Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) = js.native
+  ): (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any]) = js.native
+  def transition(selections: Selection_[BaseType, Any, BaseType, Any], duration: Double, delay: Unit, name: String): (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any]) = js.native
+  def transition(selections: Selection_[BaseType, Any, BaseType, Any], duration: Unit, delay: js.Function): (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any]) = js.native
   def transition(
-    selections: Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ],
-    duration: Double,
-    delay: Unit,
-    name: String
-  ): (Transition_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) | (Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) = js.native
-  def transition(
-    selections: Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ],
-    duration: Unit,
-    delay: js.Function
-  ): (Transition_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) | (Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) = js.native
-  def transition(
-    selections: Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ],
+    selections: Selection_[BaseType, Any, BaseType, Any],
     duration: Unit,
     delay: js.Function,
     name: String
-  ): (Transition_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) | (Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) = js.native
-  def transition(
-    selections: Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ],
-    duration: Unit,
-    delay: Double
-  ): (Transition_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) | (Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) = js.native
-  def transition(
-    selections: Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ],
-    duration: Unit,
-    delay: Double,
-    name: String
-  ): (Transition_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) | (Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) = js.native
-  def transition(
-    selections: Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ],
-    duration: Unit,
-    delay: Unit,
-    name: String
-  ): (Transition_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) | (Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ]) = js.native
+  ): (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any]) = js.native
+  def transition(selections: Selection_[BaseType, Any, BaseType, Any], duration: Unit, delay: Double): (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any]) = js.native
+  def transition(selections: Selection_[BaseType, Any, BaseType, Any], duration: Unit, delay: Double, name: String): (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any]) = js.native
+  def transition(selections: Selection_[BaseType, Any, BaseType, Any], duration: Unit, delay: Unit, name: String): (Transition_[BaseType, Any, BaseType, Any]) | (Selection_[BaseType, Any, BaseType, Any]) = js.native
   
   var units: Units = js.native
   

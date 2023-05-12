@@ -45,6 +45,10 @@ object axeCoreStrings {
   inline def embedded: embedded = "embedded".asInstanceOf[embedded]
   
   @js.native
+  sealed trait failed extends StObject
+  inline def failed: failed = "failed".asInstanceOf[failed]
+  
+  @js.native
   sealed trait flow
     extends StObject
        with HtmlContentTypes
@@ -164,6 +168,10 @@ object axeCoreStrings {
     extends StObject
        with DpubRolesType
   inline def note: note = "note".asInstanceOf[note]
+  
+  @js.native
+  sealed trait passed extends StObject
+  inline def passed: passed = "passed".asInstanceOf[passed]
   
   @js.native
   sealed trait passes

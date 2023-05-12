@@ -1,6 +1,8 @@
 package typings.rcPicker
 
 import typings.rcPicker.esGenerateMod.GenerateConfig
+import typings.rcPicker.esInterfaceMod.CellRender
+import typings.rcPicker.esInterfaceMod.CellRenderInfo
 import typings.rcPicker.esInterfaceMod.DisabledTime
 import typings.rcPicker.esInterfaceMod.DisabledTimes
 import typings.rcPicker.esInterfaceMod.Locale
@@ -8,7 +10,6 @@ import typings.rcPicker.esInterfaceMod.NullableDateType
 import typings.rcPicker.esInterfaceMod.OnSelect
 import typings.rcPicker.esInterfaceMod.PanelMode
 import typings.rcPicker.esInterfaceMod.PanelRefProps
-import typings.rcPicker.esPanelsDatePanelDateBodyMod.DateRender
 import typings.rcPicker.esPanelsTimePanelMod.SharedTimeProps
 import typings.rcPicker.esUtilsUiUtilMod.KeyboardConfig
 import typings.rcPicker.rcPickerStrings.key
@@ -34,7 +35,7 @@ object esPanelsDatetimePanelMod {
     
     var active: js.UndefOr[Boolean] = js.undefined
     
-    var dateRender: js.UndefOr[DateRender[DateType]] = js.undefined
+    var cellRender: js.UndefOr[CellRender[DateType, DateType]] = js.undefined
     
     var defaultPickerValue: js.UndefOr[DateType] = js.undefined
     
@@ -45,6 +46,8 @@ object esPanelsDatetimePanelMod {
     var disabledTime: js.UndefOr[DisabledTime[DateType]] = js.undefined
     
     var generateConfig: GenerateConfig[DateType]
+    
+    var isSameCell: js.UndefOr[js.Function2[/* current */ DateType, /* target */ DateType, Boolean]] = js.undefined
     
     var keyboardConfig: js.UndefOr[KeyboardConfig] = js.undefined
     
@@ -103,9 +106,9 @@ object esPanelsDatetimePanelMod {
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      inline def setDateRender(value: (DateType, DateType) => ReactNode): Self = StObject.set(x, "dateRender", js.Any.fromFunction2(value))
+      inline def setCellRender(value: (DateType, /* info */ CellRenderInfo[DateType]) => ReactNode): Self = StObject.set(x, "cellRender", js.Any.fromFunction2(value))
       
-      inline def setDateRenderUndefined: Self = StObject.set(x, "dateRender", js.undefined)
+      inline def setCellRenderUndefined: Self = StObject.set(x, "cellRender", js.undefined)
       
       inline def setDefaultPickerValue(value: DateType): Self = StObject.set(x, "defaultPickerValue", value.asInstanceOf[js.Any])
       
@@ -124,6 +127,10 @@ object esPanelsDatetimePanelMod {
       inline def setDisabledTimeUndefined: Self = StObject.set(x, "disabledTime", js.undefined)
       
       inline def setGenerateConfig(value: GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
+      
+      inline def setIsSameCell(value: (/* current */ DateType, /* target */ DateType) => Boolean): Self = StObject.set(x, "isSameCell", js.Any.fromFunction2(value))
+      
+      inline def setIsSameCellUndefined: Self = StObject.set(x, "isSameCell", js.undefined)
       
       inline def setKeyboardConfig(value: KeyboardConfig): Self = StObject.set(x, "keyboardConfig", value.asInstanceOf[js.Any])
       

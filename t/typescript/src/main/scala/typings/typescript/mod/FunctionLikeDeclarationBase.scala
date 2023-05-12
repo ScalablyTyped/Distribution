@@ -4,6 +4,14 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Several node kinds share function-like features such as a signature,
+  * a name, and a body. These nodes should extend FunctionLikeDeclarationBase.
+  * Examples:
+  * - FunctionDeclaration
+  * - MethodDeclaration
+  * - AccessorDeclaration
+  */
 @js.native
 trait FunctionLikeDeclarationBase
   extends StObject

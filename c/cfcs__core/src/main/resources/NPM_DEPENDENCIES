@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@cfcs/core" : "0.0.5"
+      "@cfcs/core" : "0.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@cfcs/core" : "0.0.5"
+      "@cfcs/core" : "0.1.0"
     }
   ],
   "compile-devDependencies" : [

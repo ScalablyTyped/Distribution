@@ -67,7 +67,7 @@ trait AutoScalingGroup extends StObject {
   var HealthCheckGracePeriod: js.UndefOr[typings.awsSdk.clientsAutoscalingMod.HealthCheckGracePeriod] = js.undefined
   
   /**
-    * The service to use for the health checks. The valid values are EC2 and ELB. If you configure an Auto Scaling group to use ELB health checks, it considers the instance unhealthy if it fails either the EC2 status checks or the load balancer health checks.
+    * A comma-separated value string of one or more health check types.
     */
   var HealthCheckType: XmlStringMaxLen32
   
@@ -155,6 +155,11 @@ trait AutoScalingGroup extends StObject {
     * The termination policies for the group.
     */
   var TerminationPolicies: js.UndefOr[typings.awsSdk.clientsAutoscalingMod.TerminationPolicies] = js.undefined
+  
+  /**
+    * The traffic sources associated with this Auto Scaling group.
+    */
+  var TrafficSources: js.UndefOr[typings.awsSdk.clientsAutoscalingMod.TrafficSources] = js.undefined
   
   /**
     * One or more subnet IDs, if applicable, separated by commas.
@@ -309,6 +314,12 @@ object AutoScalingGroup {
     inline def setTerminationPoliciesUndefined: Self = StObject.set(x, "TerminationPolicies", js.undefined)
     
     inline def setTerminationPoliciesVarargs(value: XmlStringMaxLen1600*): Self = StObject.set(x, "TerminationPolicies", js.Array(value*))
+    
+    inline def setTrafficSources(value: TrafficSources): Self = StObject.set(x, "TrafficSources", value.asInstanceOf[js.Any])
+    
+    inline def setTrafficSourcesUndefined: Self = StObject.set(x, "TrafficSources", js.undefined)
+    
+    inline def setTrafficSourcesVarargs(value: TrafficSourceIdentifier*): Self = StObject.set(x, "TrafficSources", js.Array(value*))
     
     inline def setVPCZoneIdentifier(value: XmlStringMaxLen2047): Self = StObject.set(x, "VPCZoneIdentifier", value.asInstanceOf[js.Any])
     

@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This object defines the clickable region of a marker image. The shape
-  * consists of two properties &mdash; <code>type</code> and <code>coord</code>
-  * &mdash; which define the non-transparent region of an image.
-  */
 trait MarkerShape extends StObject {
   
   /**

@@ -2,8 +2,8 @@ package typings.googleCloudPubsub
 
 import typings.googleCloudPubsub.buildSrcSubscriberMod.Subscriber
 import typings.googleCloudPubsub.buildSrcTemporalMod.Duration
+import typings.grpcGrpcJs.buildSrcCallInterfaceMod.StatusObject
 import typings.grpcGrpcJs.buildSrcCallMod.ServiceError
-import typings.grpcGrpcJs.buildSrcCallStreamMod.StatusObject
 import typings.grpcGrpcJs.buildSrcConstantsMod.Status
 import typings.grpcGrpcJs.buildSrcMetadataMod.Metadata
 import typings.node.streamMod.PassThrough
@@ -46,14 +46,7 @@ object buildSrcMessageStreamMod {
     def this(sub: Subscriber) = this()
     def this(sub: Subscriber, options: MessageStreamOptions) = this()
     
-    /**
-      * Adds a StreamingPull stream to the combined stream.
-      *
-      * @private
-      *
-      * @param {stream} stream The StreamingPull stream.
-      */
-    /* private */ var _addStream: Any = js.native
+    /* private */ var _activeStreams: Any = js.native
     
     /**
       * Destroys the stream and any underlying streams.
@@ -65,7 +58,7 @@ object buildSrcMessageStreamMod {
     def _destroy(error: js.Error, callback: js.Function1[/* error */ js.Error | Null, Unit]): Unit = js.native
     def _destroy(error: Null, callback: js.Function1[/* error */ js.Error | Null, Unit]): Unit = js.native
     
-    /* private */ var _fillHandle: Any = js.native
+    /* private */ var _fillOne: Any = js.native
     
     /**
       * Attempts to create and cache the desired number of StreamingPull requests.
@@ -101,13 +94,15 @@ object buildSrcMessageStreamMod {
     
     /* private */ var _keepAliveHandle: Any = js.native
     
+    /* private */ var _onData: Any = js.native
+    
     /**
       * Once the stream has nothing left to read, we'll remove it and attempt to
       * refill our stream pool if needed.
       *
       * @private
       *
-      * @param {Duplex} stream The ended stream.
+      * @param {number} index The ended stream.
       * @param {object} status The stream status.
       */
     /* private */ var _onEnd: Any = js.native
@@ -119,7 +114,7 @@ object buildSrcMessageStreamMod {
       *
       * @private
       *
-      * @param {stream} stream The stream that errored.
+      * @param {number} index The stream that errored.
       * @param {Error} err The error.
       */
     /* private */ var _onError: Any = js.native
@@ -143,14 +138,23 @@ object buildSrcMessageStreamMod {
       *
       * @private
       *
-      * @param {stream} stream The stream to remove.
+      * @param {number} index The stream to remove.
       */
     /* private */ var _removeStream: Any = js.native
+    
+    /**
+      * Adds a StreamingPull stream to the combined stream.
+      *
+      * @private
+      *
+      * @param {stream} stream The StreamingPull stream.
+      */
+    /* private */ var _replaceStream: Any = js.native
     
     /* private */ var _retrier: Any = js.native
     
     /**
-      * Neither gRPC or gax allow for the highWaterMark option to be specified.
+      * Neither gRPC nor gax allow for the highWaterMark option to be specified.
       * However using the default value (16) it is possible to end up with a lot of
       * PullResponse objects stored in internal buffers. If this were to happen
       * and the client were slow to process messages, we could potentially see a
@@ -169,7 +173,7 @@ object buildSrcMessageStreamMod {
     /* private */ var _subscriber: Any = js.native
     
     /**
-      * Promisified version of gRPCs Client#waitForReady function.
+      * Promisified version of gRPC's Client#waitForReady function.
       *
       * @private
       *
@@ -184,6 +188,14 @@ object buildSrcMessageStreamMod {
       * @param {Duration} deadline The new deadline value to set.
       */
     def setStreamAckDeadline(deadline: Duration): Unit = js.native
+    
+    /**
+      * Actually starts the stream setup and subscription pulls.
+      * This is separated so that others can properly wait on the promise.
+      *
+      * @private
+      */
+    def start(): js.Promise[Unit] = js.native
   }
   
   @JSImport("@google-cloud/pubsub/build/src/message-stream", "StatusError")
@@ -219,6 +231,10 @@ object buildSrcMessageStreamMod {
     
     var maxStreams: js.UndefOr[Double] = js.undefined
     
+    var retryMaxBackoff: js.UndefOr[Duration] = js.undefined
+    
+    var retryMinBackoff: js.UndefOr[Duration] = js.undefined
+    
     var timeout: js.UndefOr[Double] = js.undefined
   }
   object MessageStreamOptions {
@@ -238,6 +254,14 @@ object buildSrcMessageStreamMod {
       inline def setMaxStreams(value: Double): Self = StObject.set(x, "maxStreams", value.asInstanceOf[js.Any])
       
       inline def setMaxStreamsUndefined: Self = StObject.set(x, "maxStreams", js.undefined)
+      
+      inline def setRetryMaxBackoff(value: Duration): Self = StObject.set(x, "retryMaxBackoff", value.asInstanceOf[js.Any])
+      
+      inline def setRetryMaxBackoffUndefined: Self = StObject.set(x, "retryMaxBackoff", js.undefined)
+      
+      inline def setRetryMinBackoff(value: Duration): Self = StObject.set(x, "retryMinBackoff", value.asInstanceOf[js.Any])
+      
+      inline def setRetryMinBackoffUndefined: Self = StObject.set(x, "retryMinBackoff", js.undefined)
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       

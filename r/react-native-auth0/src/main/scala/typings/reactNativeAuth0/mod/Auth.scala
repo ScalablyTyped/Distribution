@@ -10,29 +10,39 @@ open class Auth () extends StObject {
   
   def authorizeUrl(params: AuthorizeUrlParams): String = js.native
   
-  /* tslint:disable-next-line no-unnecessary-generics */
+  /* eslint-disable-next-line no-unnecessary-generics */
   def createUser[T](user: CreateUserParams[T]): js.Promise[CreateUserResponse] = js.native
   
-  def exchange(params: ExchangeParams): js.Promise[ExchangeResponse] = js.native
+  def exchange(params: ExchangeParams): js.Promise[Credentials] = js.native
   
-  def loginWithEmail(params: LoginWithEmailParams): js.Promise[Any] = js.native
+  def exchangeNativeSocial(params: ExchangeNativeSocialParams): js.Promise[Credentials] = js.native
   
-  def loginWithSMS(params: LoginWithSMSParams): js.Promise[Any] = js.native
+  def loginWithEmail(params: LoginWithEmailParams): js.Promise[Credentials] = js.native
+  
+  def loginWithOOB(params: LoginWithOOBParams): js.Promise[Credentials] = js.native
+  
+  def loginWithOTP(params: LoginWithOTPParams): js.Promise[Credentials] = js.native
+  
+  def loginWithRecoveryCode(params: LoginWithRecoveryCodeParams): js.Promise[Credentials] = js.native
+  
+  def loginWithSMS(params: LoginWithSMSParams): js.Promise[Credentials] = js.native
   
   def logoutUrl(params: LogoutParams): String = js.native
   
-  def passwordRealm(params: PasswordRealmParams): js.Promise[PasswordRealmResponse] = js.native
+  def multifactorChallenge(params: MultiFactorChallengeParams): js.Promise[MultiFactorChallengeResponse] = js.native
+  
+  def passwordRealm(params: PasswordRealmParams): js.Promise[Credentials] = js.native
   
   def passwordlessWithEmail(params: PasswordlessWithEmailParams): js.Promise[Any] = js.native
   
   def passwordlessWithSMS(params: PasswordlessWithSMSParams): js.Promise[Any] = js.native
   
-  def refreshToken(params: RefreshTokenParams): js.Promise[RefreshTokenResponse] = js.native
+  def refreshToken(params: RefreshTokenParams): js.Promise[Credentials] = js.native
   
   def resetPassword(params: ResetPasswordParams): js.Promise[Any] = js.native
   
   def revoke(params: RevokeParams): js.Promise[Any] = js.native
   
-  /* tslint:disable-next-line no-unnecessary-generics */
+  /* eslint-disable-next-line no-unnecessary-generics */
   def userInfo[CustomClaims](params: UserInfoParams): js.Promise[UserInfo[CustomClaims]] = js.native
 }

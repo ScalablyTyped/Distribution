@@ -32,7 +32,7 @@ trait Paragraph
   
   def getMinIntrinsicWidth(): Double
   
-  def getRectsForPlaceholders(): js.Array[js.typedarray.Float32Array]
+  def getRectsForPlaceholders(): js.Array[RectWithDirection]
   
   /**
     * Returns bounding boxes that enclose all text in the range of glpyh indexes [start, end).
@@ -41,7 +41,7 @@ trait Paragraph
     * @param hStyle
     * @param wStyle
     */
-  def getRectsForRange(start: Double, end: Double, hStyle: RectHeightStyle, wStyle: RectWidthStyle): js.Array[js.typedarray.Float32Array]
+  def getRectsForRange(start: Double, end: Double, hStyle: RectHeightStyle, wStyle: RectWidthStyle): js.Array[RectWithDirection]
   
   /**
     * Returns an array of ShapedLine objects, describing the paragraph.
@@ -75,8 +75,8 @@ object Paragraph {
     getMaxIntrinsicWidth: () => Double,
     getMaxWidth: () => Double,
     getMinIntrinsicWidth: () => Double,
-    getRectsForPlaceholders: () => js.Array[js.typedarray.Float32Array],
-    getRectsForRange: (Double, Double, RectHeightStyle, RectWidthStyle) => js.Array[js.typedarray.Float32Array],
+    getRectsForPlaceholders: () => js.Array[RectWithDirection],
+    getRectsForRange: (Double, Double, RectHeightStyle, RectWidthStyle) => js.Array[RectWithDirection],
     getShapedLines: () => js.Array[ShapedLine],
     getWordBoundary: Double => URange,
     isAliasOf: Any => Boolean,
@@ -110,9 +110,9 @@ object Paragraph {
     
     inline def setGetMinIntrinsicWidth(value: () => Double): Self = StObject.set(x, "getMinIntrinsicWidth", js.Any.fromFunction0(value))
     
-    inline def setGetRectsForPlaceholders(value: () => js.Array[js.typedarray.Float32Array]): Self = StObject.set(x, "getRectsForPlaceholders", js.Any.fromFunction0(value))
+    inline def setGetRectsForPlaceholders(value: () => js.Array[RectWithDirection]): Self = StObject.set(x, "getRectsForPlaceholders", js.Any.fromFunction0(value))
     
-    inline def setGetRectsForRange(value: (Double, Double, RectHeightStyle, RectWidthStyle) => js.Array[js.typedarray.Float32Array]): Self = StObject.set(x, "getRectsForRange", js.Any.fromFunction4(value))
+    inline def setGetRectsForRange(value: (Double, Double, RectHeightStyle, RectWidthStyle) => js.Array[RectWithDirection]): Self = StObject.set(x, "getRectsForRange", js.Any.fromFunction4(value))
     
     inline def setGetShapedLines(value: () => js.Array[ShapedLine]): Self = StObject.set(x, "getShapedLines", js.Any.fromFunction0(value))
     

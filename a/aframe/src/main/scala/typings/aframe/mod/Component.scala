@@ -1,6 +1,6 @@
 package typings.aframe.mod
 
-import typings.three.mod.Camera
+import typings.three.buildThreeDotmoduleDotminMod.Camera
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

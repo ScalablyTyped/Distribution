@@ -16,7 +16,7 @@ object libIconsRollbackOutlinedMod extends Shortcut {
   @js.native
   trait RollbackOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_RollbackOutlinedIconType: String = js.native

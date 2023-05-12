@@ -31,6 +31,10 @@ object anon {
   /* Inlined node.http.AgentOptions & {  proxyOptions :http2-wrapper.http2-wrapper.ProxyOptions} */
   trait AgentOptionsproxyOptionsP extends StObject {
     
+    var autoSelectFamily: js.UndefOr[Boolean] = js.undefined
+    
+    var autoSelectFamilyAttemptTimeout: js.UndefOr[Double] = js.undefined
+    
     var family: js.UndefOr[Double] = js.undefined
     
     var hints: js.UndefOr[Double] = js.undefined
@@ -99,6 +103,14 @@ object anon {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: AgentOptionsproxyOptionsP] (val x: Self) extends AnyVal {
+      
+      inline def setAutoSelectFamily(value: Boolean): Self = StObject.set(x, "autoSelectFamily", value.asInstanceOf[js.Any])
+      
+      inline def setAutoSelectFamilyAttemptTimeout(value: Double): Self = StObject.set(x, "autoSelectFamilyAttemptTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setAutoSelectFamilyAttemptTimeoutUndefined: Self = StObject.set(x, "autoSelectFamilyAttemptTimeout", js.undefined)
+      
+      inline def setAutoSelectFamilyUndefined: Self = StObject.set(x, "autoSelectFamily", js.undefined)
       
       inline def setFamily(value: Double): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
@@ -200,6 +212,10 @@ object anon {
         ]
       ] = js.undefined
     
+    var autoSelectFamily: js.UndefOr[Boolean] = js.undefined
+    
+    var autoSelectFamilyAttemptTimeout: js.UndefOr[Double] = js.undefined
+    
     /**
       * Optionally override the trusted CA certificates. Default is to trust
       * the well-known CAs curated by Mozilla. Mozilla's CAs are completely
@@ -244,12 +260,9 @@ object anon {
     var crl: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
     
     /**
-      * Diffie Hellman parameters, required for Perfect Forward Secrecy. Use
-      * openssl dhparam to create the parameters. The key length must be
-      * greater than or equal to 1024 bits or else an error will be thrown.
-      * Although 1024 bits is permissible, use 2048 bits or larger for
-      * stronger security. If omitted or invalid, the parameters are
-      * silently discarded and DHE ciphers will not be available.
+      * `'auto'` or custom Diffie-Hellman parameters, required for non-ECDHE perfect forward secrecy.
+      * If omitted or invalid, the parameters are silently discarded and DHE ciphers will not be available.
+      * ECDHE-based perfect forward secrecy will still be available.
       */
     var dhparam: js.UndefOr[String | Buffer] = js.undefined
     
@@ -511,6 +524,14 @@ object anon {
       inline def setALPNProtocolsUndefined: Self = StObject.set(x, "ALPNProtocols", js.undefined)
       
       inline def setALPNProtocolsVarargs(value: (String | js.typedarray.Uint8Array)*): Self = StObject.set(x, "ALPNProtocols", js.Array(value*))
+      
+      inline def setAutoSelectFamily(value: Boolean): Self = StObject.set(x, "autoSelectFamily", value.asInstanceOf[js.Any])
+      
+      inline def setAutoSelectFamilyAttemptTimeout(value: Double): Self = StObject.set(x, "autoSelectFamilyAttemptTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setAutoSelectFamilyAttemptTimeoutUndefined: Self = StObject.set(x, "autoSelectFamilyAttemptTimeout", js.undefined)
+      
+      inline def setAutoSelectFamilyUndefined: Self = StObject.set(x, "autoSelectFamily", js.undefined)
       
       inline def setCa(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       

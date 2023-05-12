@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutoMLJobCompletionCriteria extends StObject {
   
   /**
-    * The maximum runtime, in seconds, an AutoML job has to complete. If an AutoML job exceeds the maximum runtime, the job is stopped automatically and its processing is ended gracefully. The AutoML job identifies the best model whose training was completed and marks it as the best-performing model. Any unfinished steps of the job, such as automatic one-click Autopilot model deployment, will not be completed. 
+    * The maximum runtime, in seconds, an AutoML job has to complete. If an AutoML job exceeds the maximum runtime, the job is stopped automatically and its processing is ended gracefully. The AutoML job identifies the best model whose training was completed and marks it as the best-performing model. Any unfinished steps of the job, such as automatic one-click Autopilot model deployment, are not completed.
     */
   var MaxAutoMLJobRuntimeInSeconds: js.UndefOr[typings.awsSdk.clientsSagemakerMod.MaxAutoMLJobRuntimeInSeconds] = js.undefined
   
   /**
-    * The maximum number of times a training job is allowed to run.
+    * The maximum number of times a training job is allowed to run. For V2 jobs (jobs created by calling CreateAutoMLJobV2), the supported value is 1.
     */
   var MaxCandidates: js.UndefOr[typings.awsSdk.clientsSagemakerMod.MaxCandidates] = js.undefined
   
   /**
-    * The maximum time, in seconds, that each training job executed inside hyperparameter tuning is allowed to run as part of a hyperparameter tuning job. For more information, see the used by the action.
+    * The maximum time, in seconds, that each training job executed inside hyperparameter tuning is allowed to run as part of a hyperparameter tuning job. For more information, see the StoppingCondition used by the CreateHyperParameterTuningJob action. For V2 jobs (jobs created by calling CreateAutoMLJobV2), this field controls the runtime of the job candidate.
     */
   var MaxRuntimePerTrainingJobInSeconds: js.UndefOr[typings.awsSdk.clientsSagemakerMod.MaxRuntimePerTrainingJobInSeconds] = js.undefined
 }

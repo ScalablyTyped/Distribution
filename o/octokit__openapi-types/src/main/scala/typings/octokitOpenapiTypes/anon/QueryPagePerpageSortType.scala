@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait QueryPagePerpageSortType extends StObject {
   
-  var path: `577`
+  var path: `649`
   
   var query: PagePerpageSortType
 }
 object QueryPagePerpageSortType {
   
-  inline def apply(path: `577`, query: PagePerpageSortType): QueryPagePerpageSortType = {
+  inline def apply(path: `649`, query: PagePerpageSortType): QueryPagePerpageSortType = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryPagePerpageSortType]
   }
@@ -20,7 +20,7 @@ object QueryPagePerpageSortType {
   @scala.inline
   implicit open class MutableBuilder[Self <: QueryPagePerpageSortType] (val x: Self) extends AnyVal {
     
-    inline def setPath(value: `577`): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: `649`): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setQuery(value: PagePerpageSortType): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

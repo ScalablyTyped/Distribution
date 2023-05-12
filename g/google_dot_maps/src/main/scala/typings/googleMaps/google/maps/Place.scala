@@ -4,13 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Contains information needed to locate, identify, or describe a place for
-  * a {@link google.maps.DirectionsRequest} or {@link
-  * google.maps.DistanceMatrixRequest}. In this context, &quot;place&quot;
-  * means a business, point of interest, or geographic location. For fetching
-  * information about a place, see {@link google.maps.places.PlacesService}.
-  */
 trait Place extends StObject {
   
   /**

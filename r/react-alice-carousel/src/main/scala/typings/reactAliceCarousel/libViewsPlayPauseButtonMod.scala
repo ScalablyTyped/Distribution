@@ -1,5 +1,6 @@
 package typings.reactAliceCarousel
 
+import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.reactAliceCarousel.anon.IsPlaying
 import org.scalablytyped.runtime.StObject
@@ -20,7 +21,7 @@ object libViewsPlayPauseButtonMod {
     
     def onClick(e: Any): Unit
     
-    var renderPlayPauseButton: js.UndefOr[js.Function1[/* param0 */ IsPlaying, Any]] = js.undefined
+    var renderPlayPauseButton: js.UndefOr[js.Function1[/* param0 */ IsPlaying, ReactNode]] = js.undefined
   }
   object Props {
     
@@ -36,7 +37,7 @@ object libViewsPlayPauseButtonMod {
       
       inline def setOnClick(value: Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      inline def setRenderPlayPauseButton(value: /* param0 */ IsPlaying => Any): Self = StObject.set(x, "renderPlayPauseButton", js.Any.fromFunction1(value))
+      inline def setRenderPlayPauseButton(value: /* param0 */ IsPlaying => ReactNode): Self = StObject.set(x, "renderPlayPauseButton", js.Any.fromFunction1(value))
       
       inline def setRenderPlayPauseButtonUndefined: Self = StObject.set(x, "renderPlayPauseButton", js.undefined)
     }

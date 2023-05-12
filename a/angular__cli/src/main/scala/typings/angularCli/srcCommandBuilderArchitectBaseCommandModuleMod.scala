@@ -22,6 +22,8 @@ object srcCommandBuilderArchitectBaseCommandModuleMod {
     
     /* private */ var _architectHost: Any = js.native
     
+    /* private */ var builderStatsToAnalyticsParameters: Any = js.native
+    
     /* protected */ def getArchitect(): Architect = js.native
     
     /* protected */ def getArchitectHost(): Any = js.native

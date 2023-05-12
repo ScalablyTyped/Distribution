@@ -15,5 +15,5 @@ object distUtilsVueCompatSupportMod {
   
   inline def isLegacyFunctionalComponent(component: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLegacyFunctionalComponent")(component.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def unwrapLegacyVueExtendComponent[T](selector: T): T | (ComponentOptions[js.Object, Any, Any, Any, Any, Any, Any, Any]) = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrapLegacyVueExtendComponent")(selector.asInstanceOf[js.Any]).asInstanceOf[T | (ComponentOptions[js.Object, Any, Any, Any, Any, Any, Any, Any])]
+  inline def unwrapLegacyVueExtendComponent[T](selector: T): T | (ComponentOptions[js.Object, Any, Any, Any, Any, Any, Any, Any, Any]) = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrapLegacyVueExtendComponent")(selector.asInstanceOf[js.Any]).asInstanceOf[T | (ComponentOptions[js.Object, Any, Any, Any, Any, Any, Any, Any, Any])]
 }

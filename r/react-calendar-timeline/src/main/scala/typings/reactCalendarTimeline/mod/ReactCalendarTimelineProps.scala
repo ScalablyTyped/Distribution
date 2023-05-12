@@ -29,6 +29,8 @@ trait ReactCalendarTimelineProps[CustomItem /* <: TimelineItemBase[Any] */, Cust
   
   var children: js.UndefOr[ReactNode] = js.undefined
   
+  var className: js.UndefOr[String] = js.undefined
+  
   var clickTolerance: js.UndefOr[Double] = js.undefined
   
   var defaultTimeEnd: js.UndefOr[js.Date | Moment] = js.undefined
@@ -134,15 +136,16 @@ trait ReactCalendarTimelineProps[CustomItem /* <: TimelineItemBase[Any] */, Cust
   var onItemSelect: js.UndefOr[js.Function3[/* itemId */ Id, /* e */ Any, /* time */ Double, scala.Unit]] = js.undefined
   
   var onTimeChange: js.UndefOr[
-    js.Function3[
+    js.Function4[
       /* visibleTimeStart */ Double, 
       /* visibleTimeEnd */ Double, 
       /* updateScrollCanvas */ js.Function2[/* start */ Double, /* end */ Double, scala.Unit], 
+      /* unit */ Unit, 
       Any
     ]
   ] = js.undefined
   
-  var onZoom: js.UndefOr[js.Function1[/* timelineContext */ TimelineContext, scala.Unit]] = js.undefined
+  var onZoom: js.UndefOr[js.Function2[/* timelineContext */ TimelineContext, /* unit */ Unit, scala.Unit]] = js.undefined
   
   var resizeDetector: js.UndefOr[js.Function1[/* containerResizeDetector */ Any, scala.Unit]] = js.undefined
   
@@ -152,7 +155,7 @@ trait ReactCalendarTimelineProps[CustomItem /* <: TimelineItemBase[Any] */, Cust
   
   var scrollRef: js.UndefOr[Ref[Any]] = js.undefined
   
-  var selected: js.UndefOr[js.Array[Double]] = js.undefined
+  var selected: js.UndefOr[js.Array[Id]] = js.undefined
   
   var sidebarContent: js.UndefOr[ReactNode] = js.undefined
   
@@ -201,6 +204,10 @@ object ReactCalendarTimelineProps {
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     inline def setClickTolerance(value: Double): Self = StObject.set(x, "clickTolerance", value.asInstanceOf[js.Any])
     
@@ -329,12 +336,12 @@ object ReactCalendarTimelineProps {
     inline def setOnItemSelectUndefined: Self = StObject.set(x, "onItemSelect", js.undefined)
     
     inline def setOnTimeChange(
-      value: (/* visibleTimeStart */ Double, /* visibleTimeEnd */ Double, /* updateScrollCanvas */ js.Function2[/* start */ Double, /* end */ Double, scala.Unit]) => Any
-    ): Self = StObject.set(x, "onTimeChange", js.Any.fromFunction3(value))
+      value: (/* visibleTimeStart */ Double, /* visibleTimeEnd */ Double, /* updateScrollCanvas */ js.Function2[/* start */ Double, /* end */ Double, scala.Unit], /* unit */ Unit) => Any
+    ): Self = StObject.set(x, "onTimeChange", js.Any.fromFunction4(value))
     
     inline def setOnTimeChangeUndefined: Self = StObject.set(x, "onTimeChange", js.undefined)
     
-    inline def setOnZoom(value: /* timelineContext */ TimelineContext => scala.Unit): Self = StObject.set(x, "onZoom", js.Any.fromFunction1(value))
+    inline def setOnZoom(value: (/* timelineContext */ TimelineContext, /* unit */ Unit) => scala.Unit): Self = StObject.set(x, "onZoom", js.Any.fromFunction2(value))
     
     inline def setOnZoomUndefined: Self = StObject.set(x, "onZoom", js.undefined)
     
@@ -358,11 +365,11 @@ object ReactCalendarTimelineProps {
     
     inline def setScrollRefUndefined: Self = StObject.set(x, "scrollRef", js.undefined)
     
-    inline def setSelected(value: js.Array[Double]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: js.Array[Id]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
-    inline def setSelectedVarargs(value: Double*): Self = StObject.set(x, "selected", js.Array(value*))
+    inline def setSelectedVarargs(value: Id*): Self = StObject.set(x, "selected", js.Array(value*))
     
     inline def setSidebarContent(value: ReactNode): Self = StObject.set(x, "sidebarContent", value.asInstanceOf[js.Any])
     

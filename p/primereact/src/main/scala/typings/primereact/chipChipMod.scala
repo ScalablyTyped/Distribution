@@ -103,10 +103,14 @@ object chipChipMod {
     def this(props: ChipProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ChipProps, context: Any) = this()
     
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
   }
   
@@ -219,13 +223,21 @@ object chipChipMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -245,14 +257,23 @@ object chipChipMod {
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Defines the icon to display.
+      */
     var icon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<ChipProps> */ Any
       ] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
+    /**
+      * Defines the image to display.
+      */
     var image: js.UndefOr[String] = js.undefined
     
+    /**
+      * It specifies an alternate text for an image, if the image cannot be displayed.
+      */
     var imageAlt: js.UndefOr[String] = js.undefined
     
     var inlist: js.UndefOr[Any] = js.undefined
@@ -273,6 +294,9 @@ object chipChipMod {
     
     var key: js.UndefOr[Key | Null] = js.undefined
     
+    /**
+      * Defines the text to display.
+      */
     var label: js.UndefOr[String] = js.undefined
     
     var lang: js.UndefOr[String] = js.undefined
@@ -343,6 +367,10 @@ object chipChipMod {
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * This event is triggered if an error occurs while loading an image file.
+      * @param {React.SyntheticEvent}  event - Browser event.
+      */
     var onImageError: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.undefined
     
     var onInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
@@ -405,6 +433,10 @@ object chipChipMod {
     
     var onRateChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke when a chip is removed.
+      * @param {React.MouseEvent}  event - Browser event.
+      */
     var onRemove: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
     
     var onReset: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
@@ -451,13 +483,26 @@ object chipChipMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Whether to display a remove icon.
+      * @defaultValue false
+      */
     var removable: js.UndefOr[Boolean] = js.undefined
     
-    var removeIcon: js.UndefOr[String] = js.undefined
+    /**
+      * Icon of the remove element.
+      */
+    var removeIcon: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<ChipProps> */ Any
+      ] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -475,6 +520,9 @@ object chipChipMod {
     
     var tabIndex: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Template of an item.
+      */
     var template: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TemplateType<ChipProps> */ Any
       ] = js.undefined
@@ -709,6 +757,10 @@ object chipChipMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -725,9 +777,13 @@ object chipChipMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -1175,11 +1231,17 @@ object chipChipMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRemovable(value: Boolean): Self = StObject.set(x, "removable", value.asInstanceOf[js.Any])
       
       inline def setRemovableUndefined: Self = StObject.set(x, "removable", js.undefined)
       
-      inline def setRemoveIcon(value: String): Self = StObject.set(x, "removeIcon", value.asInstanceOf[js.Any])
+      inline def setRemoveIcon(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<ChipProps> */ Any
+      ): Self = StObject.set(x, "removeIcon", value.asInstanceOf[js.Any])
       
       inline def setRemoveIconUndefined: Self = StObject.set(x, "removeIcon", js.undefined)
       
@@ -1190,6 +1252,10 @@ object chipChipMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       

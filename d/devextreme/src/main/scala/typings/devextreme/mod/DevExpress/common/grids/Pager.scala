@@ -1,8 +1,6 @@
 package typings.devextreme.mod.DevExpress.common.grids
 
 import typings.devextreme.mod.DevExpress.common.Mode
-import typings.devextreme.mod.DevExpress.common.charts.PagerDisplayMode
-import typings.devextreme.mod.DevExpress.common.charts.PagerPageSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,5 @@
 package typings.mongodb.mod
 
-import typings.buffer.mod.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ open class Decimal128 protected ()
     * @param bytes - a buffer containing the raw Decimal128 bytes in little endian order,
     *                or a string representation as returned by .toString()
     */
-  def this(bytes: Buffer) = this()
+  def this(bytes: js.typedarray.Uint8Array) = this()
 }
 /* static members */
 object Decimal128 {

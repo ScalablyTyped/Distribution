@@ -7,7 +7,7 @@ import typings.devextreme.anon.Image
 import typings.devextreme.anon.InvalidRangeColor
 import typings.devextreme.anon.LeftRight
 import typings.devextreme.anon.OpacityWidth
-import typings.devextreme.anon.`4`
+import typings.devextreme.anon.`5`
 import typings.devextreme.mod.DevExpress.common.charts.VisualRangeUpdateMode
 import typings.devextreme.mod.DevExpress.data.DataSource.DataSourceLike
 import typings.devextreme.mod.DevExpress.viz.dxRangeSelector.ValueChangedEvent
@@ -77,7 +77,7 @@ trait dxRangeSelectorOptions
   /**
     * Specifies range selector shutter properties.
     */
-  var shutter: js.UndefOr[`4`] = js.undefined
+  var shutter: js.UndefOr[`5`] = js.undefined
   
   /**
     * Specifies the appearance of the range selector&apos;s slider handles.
@@ -92,7 +92,9 @@ trait dxRangeSelectorOptions
   /**
     * The selected range (initial or current). Equals the entire scale when not set.
     */
-  var value: js.UndefOr[(js.Array[Double | String | js.Date]) | VizRange] = js.undefined
+  var value: js.UndefOr[
+    (js.Array[Double | String | js.Date]) | typings.devextreme.mod.DevExpress.common.charts.VisualRange
+  ] = js.undefined
 }
 object dxRangeSelectorOptions {
   
@@ -152,7 +154,7 @@ object dxRangeSelectorOptions {
     
     inline def setSelectedRangeUpdateModeUndefined: Self = StObject.set(x, "selectedRangeUpdateMode", js.undefined)
     
-    inline def setShutter(value: `4`): Self = StObject.set(x, "shutter", value.asInstanceOf[js.Any])
+    inline def setShutter(value: `5`): Self = StObject.set(x, "shutter", value.asInstanceOf[js.Any])
     
     inline def setShutterUndefined: Self = StObject.set(x, "shutter", js.undefined)
     
@@ -164,7 +166,9 @@ object dxRangeSelectorOptions {
     
     inline def setSliderMarkerUndefined: Self = StObject.set(x, "sliderMarker", js.undefined)
     
-    inline def setValue(value: (js.Array[Double | String | js.Date]) | VizRange): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(
+      value: (js.Array[Double | String | js.Date]) | typings.devextreme.mod.DevExpress.common.charts.VisualRange
+    ): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     

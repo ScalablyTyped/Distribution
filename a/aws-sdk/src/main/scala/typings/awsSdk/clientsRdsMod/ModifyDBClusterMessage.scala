@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ModifyDBClusterMessage extends StObject {
   
   /**
-    * The amount of storage in gibibytes (GiB) to allocate to each DB instance in the Multi-AZ DB cluster. Type: Integer Valid for: Multi-AZ DB clusters only
+    * The amount of storage in gibibytes (GiB) to allocate to each DB instance in the Multi-AZ DB cluster. Valid for: Multi-AZ DB clusters only
     */
   var AllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined
+  
+  /**
+    * A value that indicates whether engine mode changes from serverless to provisioned are allowed. Constraints: You must allow engine mode changes when specifying a different value for the EngineMode parameter from the DB cluster's current engine mode. Valid for: Aurora Serverless v1 DB clusters only
+    */
+  var AllowEngineModeChange: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A value that indicates whether major version upgrades are allowed. Constraints: You must allow major version upgrades when specifying a value for the EngineVersion parameter that is a different major version than the DB cluster's current version. Valid for: Aurora DB clusters only
@@ -17,7 +22,7 @@ trait ModifyDBClusterMessage extends StObject {
   var AllowMajorVersionUpgrade: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A value that indicates whether the modifications in this request and any pending modifications are asynchronously applied as soon as possible, regardless of the PreferredMaintenanceWindow setting for the DB cluster. If this parameter is disabled, changes to the DB cluster are applied during the next maintenance window. The ApplyImmediately parameter only affects the EnableIAMDatabaseAuthentication, MasterUserPassword, and NewDBClusterIdentifier values. If the ApplyImmediately parameter is disabled, then changes to the EnableIAMDatabaseAuthentication, MasterUserPassword, and NewDBClusterIdentifier values are applied during the next maintenance window. All other changes are applied immediately, regardless of the value of the ApplyImmediately parameter. By default, this parameter is disabled. Valid for: Aurora DB clusters and Multi-AZ DB clusters
+    * A value that indicates whether the modifications in this request and any pending modifications are asynchronously applied as soon as possible, regardless of the PreferredMaintenanceWindow setting for the DB cluster. If this parameter is disabled, changes to the DB cluster are applied during the next maintenance window. Most modifications can be applied immediately or during the next scheduled maintenance window. Some modifications, such as turning on deletion protection and changing the master password, are applied immediately—regardless of when you choose to apply them. By default, this parameter is disabled. Valid for: Aurora DB clusters and Multi-AZ DB clusters
     */
   var ApplyImmediately: js.UndefOr[Boolean] = js.undefined
   
@@ -102,7 +107,12 @@ trait ModifyDBClusterMessage extends StObject {
   var EnablePerformanceInsights: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * The version number of the database engine to which you want to upgrade. Changing this parameter results in an outage. The change is applied during the next maintenance window unless ApplyImmediately is enabled. To list all of the available engine versions for MySQL 5.6-compatible Aurora, use the following command:  aws rds describe-db-engine-versions --engine aurora --query "DBEngineVersions[].EngineVersion"  To list all of the available engine versions for MySQL 5.7-compatible and MySQL 8.0-compatible Aurora, use the following command:  aws rds describe-db-engine-versions --engine aurora-mysql --query "DBEngineVersions[].EngineVersion"  To list all of the available engine versions for Aurora PostgreSQL, use the following command:  aws rds describe-db-engine-versions --engine aurora-postgresql --query "DBEngineVersions[].EngineVersion"  To list all of the available engine versions for RDS for MySQL, use the following command:  aws rds describe-db-engine-versions --engine mysql --query "DBEngineVersions[].EngineVersion"  To list all of the available engine versions for RDS for PostgreSQL, use the following command:  aws rds describe-db-engine-versions --engine postgres --query "DBEngineVersions[].EngineVersion"  Valid for: Aurora DB clusters and Multi-AZ DB clusters
+    * The DB engine mode of the DB cluster, either provisioned or serverless.  The DB engine mode can be modified only from serverless to provisioned.  For more information, see  CreateDBCluster. Valid for: Aurora DB clusters only
+    */
+  var EngineMode: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The version number of the database engine to which you want to upgrade. Changing this parameter results in an outage. The change is applied during the next maintenance window unless ApplyImmediately is enabled. If the cluster that you're modifying has one or more read replicas, all replicas must be running an engine version that's the same or later than the version you specify. To list all of the available engine versions for Aurora MySQL, use the following command:  aws rds describe-db-engine-versions --engine aurora-mysql --query "DBEngineVersions[].EngineVersion"  To list all of the available engine versions for Aurora PostgreSQL, use the following command:  aws rds describe-db-engine-versions --engine aurora-postgresql --query "DBEngineVersions[].EngineVersion"  To list all of the available engine versions for RDS for MySQL, use the following command:  aws rds describe-db-engine-versions --engine mysql --query "DBEngineVersions[].EngineVersion"  To list all of the available engine versions for RDS for PostgreSQL, use the following command:  aws rds describe-db-engine-versions --engine postgres --query "DBEngineVersions[].EngineVersion"  Valid for: Aurora DB clusters and Multi-AZ DB clusters
     */
   var EngineVersion: js.UndefOr[String] = js.undefined
   
@@ -112,9 +122,19 @@ trait ModifyDBClusterMessage extends StObject {
   var Iops: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * The new password for the master database user. This password can contain any printable ASCII character except "/", """, or "@". Constraints: Must contain from 8 to 41 characters. Valid for: Aurora DB clusters and Multi-AZ DB clusters
+    * A value that indicates whether to manage the master user password with Amazon Web Services Secrets Manager. If the DB cluster doesn't manage the master user password with Amazon Web Services Secrets Manager, you can turn on this management. In this case, you can't specify MasterUserPassword. If the DB cluster already manages the master user password with Amazon Web Services Secrets Manager, and you specify that the master user password is not managed with Amazon Web Services Secrets Manager, then you must specify MasterUserPassword. In this case, RDS deletes the secret and uses the new password for the master user specified by MasterUserPassword. For more information, see Password management with Amazon Web Services Secrets Manager in the Amazon RDS User Guide and Password management with Amazon Web Services Secrets Manager in the Amazon Aurora User Guide.  Valid for: Aurora DB clusters and Multi-AZ DB clusters
+    */
+  var ManageMasterUserPassword: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
+    * The new password for the master database user. This password can contain any printable ASCII character except "/", """, or "@". Constraints:   Must contain from 8 to 41 characters.   Can't be specified if ManageMasterUserPassword is turned on.   Valid for: Aurora DB clusters and Multi-AZ DB clusters
     */
   var MasterUserPassword: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The Amazon Web Services KMS key identifier to encrypt a secret that is automatically generated and managed in Amazon Web Services Secrets Manager. This setting is valid only if both of the following conditions are met:   The DB cluster doesn't manage the master user password in Amazon Web Services Secrets Manager. If the DB cluster already manages the master user password in Amazon Web Services Secrets Manager, you can't change the KMS key that is used to encrypt the secret.   You are turning on ManageMasterUserPassword to manage the master user password in Amazon Web Services Secrets Manager. If you are turning on ManageMasterUserPassword and don't specify MasterUserSecretKmsKeyId, then the aws/secretsmanager KMS key is used to encrypt the secret. If the secret is in a different Amazon Web Services account, then you can't use the aws/secretsmanager KMS key to encrypt the secret, and you must use a customer managed KMS key.   The Amazon Web Services KMS key identifier is the key ARN, key ID, alias ARN, or alias name for the KMS key. To use a KMS key in a different Amazon Web Services account, specify the key ARN or alias ARN. There is a default KMS key for your Amazon Web Services account. Your Amazon Web Services account has a different default KMS key for each Amazon Web Services Region. Valid for: Aurora DB clusters and Multi-AZ DB clusters
+    */
+  var MasterUserSecretKmsKeyId: js.UndefOr[String] = js.undefined
   
   /**
     * The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB cluster. To turn off collecting Enhanced Monitoring metrics, specify 0. The default is 0. If MonitoringRoleArn is specified, also set MonitoringInterval to a value other than 0. Valid Values: 0, 1, 5, 10, 15, 30, 60  Valid for: Multi-AZ DB clusters only
@@ -132,7 +152,7 @@ trait ModifyDBClusterMessage extends StObject {
   var NetworkType: js.UndefOr[String] = js.undefined
   
   /**
-    * The new DB cluster identifier for the DB cluster when renaming a DB cluster. This value is stored as a lowercase string. Constraints:   Must contain from 1 to 63 letters, numbers, or hyphens   The first character must be a letter   Can't end with a hyphen or contain two consecutive hyphens   Example: my-cluster2  Valid for: Aurora DB clusters only
+    * The new DB cluster identifier for the DB cluster when renaming a DB cluster. This value is stored as a lowercase string. Constraints:   Must contain from 1 to 63 letters, numbers, or hyphens   The first character must be a letter   Can't end with a hyphen or contain two consecutive hyphens   Example: my-cluster2  Valid for: Aurora DB clusters and Multi-AZ DB clusters
     */
   var NewDBClusterIdentifier: js.UndefOr[String] = js.undefined
   
@@ -167,6 +187,11 @@ trait ModifyDBClusterMessage extends StObject {
   var PreferredMaintenanceWindow: js.UndefOr[String] = js.undefined
   
   /**
+    * A value that indicates whether to rotate the secret managed by Amazon Web Services Secrets Manager for the master user password. This setting is valid only if the master user password is managed by RDS in Amazon Web Services Secrets Manager for the DB cluster. The secret value contains the updated password. For more information, see Password management with Amazon Web Services Secrets Manager in the Amazon RDS User Guide and Password management with Amazon Web Services Secrets Manager in the Amazon Aurora User Guide.  Constraints:   You must apply the change immediately when rotating the master user password.   Valid for: Aurora DB clusters and Multi-AZ DB clusters
+    */
+  var RotateMasterUserPassword: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
     * The scaling properties of the DB cluster. You can only modify scaling properties for DB clusters in serverless DB engine mode. Valid for: Aurora DB clusters only
     */
   var ScalingConfiguration: js.UndefOr[typings.awsSdk.clientsRdsMod.ScalingConfiguration] = js.undefined
@@ -174,7 +199,7 @@ trait ModifyDBClusterMessage extends StObject {
   var ServerlessV2ScalingConfiguration: js.UndefOr[typings.awsSdk.clientsRdsMod.ServerlessV2ScalingConfiguration] = js.undefined
   
   /**
-    * Specifies the storage type to be associated with the DB cluster. Valid values: io1  When specified, a value for the Iops parameter is required. Default: io1  Valid for: Multi-AZ DB clusters only
+    * Specifies the storage type to be associated with the DB cluster. When specified for a Multi-AZ DB cluster, a value for the Iops parameter is required. Valid values: aurora, aurora-iopt1 (Aurora DB clusters); io1 (Multi-AZ DB clusters) Default: aurora (Aurora DB clusters); io1 (Multi-AZ DB clusters) Valid for: Aurora DB clusters and Multi-AZ DB clusters
     */
   var StorageType: js.UndefOr[String] = js.undefined
   
@@ -196,6 +221,10 @@ object ModifyDBClusterMessage {
     inline def setAllocatedStorage(value: IntegerOptional): Self = StObject.set(x, "AllocatedStorage", value.asInstanceOf[js.Any])
     
     inline def setAllocatedStorageUndefined: Self = StObject.set(x, "AllocatedStorage", js.undefined)
+    
+    inline def setAllowEngineModeChange(value: Boolean): Self = StObject.set(x, "AllowEngineModeChange", value.asInstanceOf[js.Any])
+    
+    inline def setAllowEngineModeChangeUndefined: Self = StObject.set(x, "AllowEngineModeChange", js.undefined)
     
     inline def setAllowMajorVersionUpgrade(value: Boolean): Self = StObject.set(x, "AllowMajorVersionUpgrade", value.asInstanceOf[js.Any])
     
@@ -267,6 +296,10 @@ object ModifyDBClusterMessage {
     
     inline def setEnablePerformanceInsightsUndefined: Self = StObject.set(x, "EnablePerformanceInsights", js.undefined)
     
+    inline def setEngineMode(value: String): Self = StObject.set(x, "EngineMode", value.asInstanceOf[js.Any])
+    
+    inline def setEngineModeUndefined: Self = StObject.set(x, "EngineMode", js.undefined)
+    
     inline def setEngineVersion(value: String): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
     
     inline def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
@@ -275,9 +308,17 @@ object ModifyDBClusterMessage {
     
     inline def setIopsUndefined: Self = StObject.set(x, "Iops", js.undefined)
     
+    inline def setManageMasterUserPassword(value: BooleanOptional): Self = StObject.set(x, "ManageMasterUserPassword", value.asInstanceOf[js.Any])
+    
+    inline def setManageMasterUserPasswordUndefined: Self = StObject.set(x, "ManageMasterUserPassword", js.undefined)
+    
     inline def setMasterUserPassword(value: String): Self = StObject.set(x, "MasterUserPassword", value.asInstanceOf[js.Any])
     
     inline def setMasterUserPasswordUndefined: Self = StObject.set(x, "MasterUserPassword", js.undefined)
+    
+    inline def setMasterUserSecretKmsKeyId(value: String): Self = StObject.set(x, "MasterUserSecretKmsKeyId", value.asInstanceOf[js.Any])
+    
+    inline def setMasterUserSecretKmsKeyIdUndefined: Self = StObject.set(x, "MasterUserSecretKmsKeyId", js.undefined)
     
     inline def setMonitoringInterval(value: IntegerOptional): Self = StObject.set(x, "MonitoringInterval", value.asInstanceOf[js.Any])
     
@@ -318,6 +359,10 @@ object ModifyDBClusterMessage {
     inline def setPreferredMaintenanceWindow(value: String): Self = StObject.set(x, "PreferredMaintenanceWindow", value.asInstanceOf[js.Any])
     
     inline def setPreferredMaintenanceWindowUndefined: Self = StObject.set(x, "PreferredMaintenanceWindow", js.undefined)
+    
+    inline def setRotateMasterUserPassword(value: BooleanOptional): Self = StObject.set(x, "RotateMasterUserPassword", value.asInstanceOf[js.Any])
+    
+    inline def setRotateMasterUserPasswordUndefined: Self = StObject.set(x, "RotateMasterUserPassword", js.undefined)
     
     inline def setScalingConfiguration(value: ScalingConfiguration): Self = StObject.set(x, "ScalingConfiguration", value.asInstanceOf[js.Any])
     

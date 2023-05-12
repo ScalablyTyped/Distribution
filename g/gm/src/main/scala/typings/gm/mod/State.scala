@@ -119,7 +119,7 @@ trait State extends StObject {
   
   def define(value: String): State = js.native
   
-  def delay(milliseconds: Double): State = js.native
+  def delay(centiseconds: Double): State = js.native
   
   def density(width: Double, height: Double): State = js.native
   

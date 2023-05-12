@@ -27,6 +27,12 @@ trait ExportingOptions extends StObject {
   var allowHTML: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Allows the end user to sort the
+    * data table by clicking on column headers.
+    */
+  var allowTableSorting: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for the export related
     * buttons, print and export. In addition to the default buttons listed
     * here, custom buttons can be added. See navigation.buttonOptions for
@@ -242,6 +248,10 @@ object ExportingOptions {
     inline def setAllowHTML(value: Boolean): Self = StObject.set(x, "allowHTML", value.asInstanceOf[js.Any])
     
     inline def setAllowHTMLUndefined: Self = StObject.set(x, "allowHTML", js.undefined)
+    
+    inline def setAllowTableSorting(value: Boolean): Self = StObject.set(x, "allowTableSorting", value.asInstanceOf[js.Any])
+    
+    inline def setAllowTableSortingUndefined: Self = StObject.set(x, "allowTableSorting", js.undefined)
     
     inline def setButtons(value: ExportingButtonsOptions | Dictionary[ExportingButtonsOptionsObject]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     

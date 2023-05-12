@@ -30,6 +30,15 @@ trait ExperimentalOptions extends StObject {
     * @experimental
     */
   var renderBuiltUrl: js.UndefOr[RenderBuiltAssetUrl] = js.undefined
+  
+  /**
+    * Skips SSR transform to make it easier to use Vite with Node ESM loaders.
+    * @warning Enabling this will break normal operation of Vite's SSR in development mode.
+    *
+    * @experimental
+    * @default false
+    */
+  var skipSsrTransform: js.UndefOr[Boolean] = js.undefined
 }
 object ExperimentalOptions {
   
@@ -52,5 +61,9 @@ object ExperimentalOptions {
     inline def setRenderBuiltUrl(value: (/* filename */ String, /* type */ HostId) => js.UndefOr[String | Relative]): Self = StObject.set(x, "renderBuiltUrl", js.Any.fromFunction2(value))
     
     inline def setRenderBuiltUrlUndefined: Self = StObject.set(x, "renderBuiltUrl", js.undefined)
+    
+    inline def setSkipSsrTransform(value: Boolean): Self = StObject.set(x, "skipSsrTransform", value.asInstanceOf[js.Any])
+    
+    inline def setSkipSsrTransformUndefined: Self = StObject.set(x, "skipSsrTransform", js.undefined)
   }
 }

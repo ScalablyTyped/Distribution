@@ -2,7 +2,7 @@ package typings.jupyterlabServices
 
 import typings.jupyterlabServices.anon.PartialISettings
 import typings.jupyterlabServices.anon.PickIModelidDeepPartialOm
-import typings.jupyterlabServices.libConfigMod.ConfigSection.IOptions
+import typings.jupyterlabServices.libBasemanagerMod.BaseManager.IOptions
 import typings.jupyterlabServices.libConfigMod.IConfigSection
 import typings.jupyterlabServices.libContentsMod.Contents.ICheckpointModel
 import typings.jupyterlabServices.libContentsMod.Contents.IModel
@@ -21,6 +21,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  /* note: abstract class */ @JSImport("@jupyterlab/services", "BaseManager")
+  @js.native
+  open class BaseManager protected ()
+    extends typings.jupyterlabServices.libBasemanagerMod.BaseManager {
+    def this(options: IOptions) = this()
+  }
+  
   object ConfigSection {
     
     @JSImport("@jupyterlab/services", "ConfigSection")
@@ -32,7 +39,7 @@ object mod {
       *
       * @returns A Promise that is fulfilled with the config section is loaded.
       */
-    inline def create(options: IOptions): js.Promise[IConfigSection] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IConfigSection]]
+    inline def create(options: typings.jupyterlabServices.libConfigMod.ConfigSection.IOptions): js.Promise[IConfigSection] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IConfigSection]]
   }
   
   @JSImport("@jupyterlab/services", "ConfigWithDefaults")
@@ -84,6 +91,16 @@ object mod {
   open class Drive ()
     extends typings.jupyterlabServices.libContentsMod.Drive {
     def this(options: typings.jupyterlabServices.libContentsMod.Drive.IOptions) = this()
+  }
+  
+  @JSImport("@jupyterlab/services", "EventManager")
+  @js.native
+  /**
+    * Create a new event manager.
+    */
+  open class EventManager ()
+    extends typings.jupyterlabServices.libEventMod.EventManager {
+    def this(options: typings.jupyterlabServices.libEventMod.EventManager.IOptions) = this()
   }
   
   object KernelAPI {
@@ -406,6 +423,16 @@ object mod {
   open class TerminalManager ()
     extends typings.jupyterlabServices.libTerminalMod.TerminalManager {
     def this(options: typings.jupyterlabServices.libTerminalManagerMod.TerminalManager.IOptions) = this()
+  }
+  
+  @JSImport("@jupyterlab/services", "UserManager")
+  @js.native
+  /**
+    * Create a new user manager.
+    */
+  open class UserManager ()
+    extends typings.jupyterlabServices.libUserMod.UserManager {
+    def this(options: typings.jupyterlabServices.libUserMod.UserManager.IOptions) = this()
   }
   
   @JSImport("@jupyterlab/services", "WorkspaceManager")

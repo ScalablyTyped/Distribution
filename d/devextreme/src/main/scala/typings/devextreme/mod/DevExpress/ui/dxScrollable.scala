@@ -142,6 +142,8 @@ object dxScrollable {
   type ScrollableInstance = devextreme.devextreme.DevExpress.ui.dxScrollable<devextreme.devextreme.DevExpress.ui.dxScrollable.Properties>
   }}}
   to avoid circular code involving: 
+  - devextreme.devextreme.DevExpress.common.Scrollable
+  - devextreme.devextreme.DevExpress.ui.dxDataGrid.Scrollable
   - devextreme.devextreme.DevExpress.ui.dxScrollable.Properties
   - devextreme.devextreme.DevExpress.ui.dxScrollable.ScrollableInstance
   */

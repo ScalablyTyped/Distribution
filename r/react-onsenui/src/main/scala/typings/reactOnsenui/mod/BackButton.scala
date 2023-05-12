@@ -12,7 +12,7 @@ open class BackButton protected () extends Component[OnClick, Any] {
   def this(props: HTMLAttributesidclassName & OnClick) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: HTMLAttributesidclassName & OnClick, context: Any) = this()
 }

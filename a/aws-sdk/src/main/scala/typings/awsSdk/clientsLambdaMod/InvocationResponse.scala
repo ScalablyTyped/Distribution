@@ -17,7 +17,7 @@ trait InvocationResponse extends StObject {
   var FunctionError: js.UndefOr[String] = js.undefined
   
   /**
-    * The last 4 KB of the execution log, which is base64 encoded.
+    * The last 4 KB of the execution log, which is base64-encoded.
     */
   var LogResult: js.UndefOr[String] = js.undefined
   

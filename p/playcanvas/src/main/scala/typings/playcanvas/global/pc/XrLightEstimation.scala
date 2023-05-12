@@ -20,7 +20,7 @@ open class XrLightEstimation protected ()
   /**
     * Create a new XrLightEstimation instance.
     *
-    * @param {XrManager} manager - WebXR Manager.
+    * @param {import('./xr-manager.js').XrManager} manager - WebXR Manager.
     * @hideconstructor
     */
   def this(manager: typings.playcanvas.mod.XrManager) = this()

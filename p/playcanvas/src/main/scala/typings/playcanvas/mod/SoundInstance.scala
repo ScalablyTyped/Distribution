@@ -19,8 +19,8 @@ open class SoundInstance protected () extends EventHandler {
   /**
     * Create a new SoundInstance instance.
     *
-    * @param {SoundManager} manager - The sound manager.
-    * @param {Sound} sound - The sound to play.
+    * @param {import('./manager.js').SoundManager} manager - The sound manager.
+    * @param {import('./sound.js').Sound} sound - The sound to play.
     * @param {object} options - Options for the instance.
     * @param {number} [options.volume=1] - The playback volume, between 0 and 1.
     * @param {number} [options.pitch=1] - The relative pitch, default of 1, plays at normal pitch.
@@ -124,7 +124,7 @@ open class SoundInstance protected () extends EventHandler {
   /* private */ var _loop: Any = js.native
   
   /**
-    * @type {SoundManager}
+    * @type {import('./manager.js').SoundManager}
     * @private
     */
   /* private */ var _manager: Any = js.native
@@ -210,7 +210,7 @@ open class SoundInstance protected () extends EventHandler {
   /* private */ var _playWhenLoaded: Any = js.native
   
   /**
-    * @type {Sound}
+    * @type {import('./sound.js').Sound}
     * @private
     */
   /* private */ var _sound: Any = js.native
@@ -427,10 +427,10 @@ open class SoundInstance protected () extends EventHandler {
     * @param {AudioNode} [lastNode] - The last node that will be connected to the destination of the AudioContext.
     * If unspecified then the firstNode will be connected to the destination instead.
     * @example
-    * var context = app.systems.sound.context;
-    * var analyzer = context.createAnalyzer();
-    * var distortion = context.createWaveShaper();
-    * var filter = context.createBiquadFilter();
+    * const context = app.systems.sound.context;
+    * const analyzer = context.createAnalyzer();
+    * const distortion = context.createWaveShaper();
+    * const filter = context.createBiquadFilter();
     * analyzer.connect(distortion);
     * distortion.connect(filter);
     * instance.setExternalNodes(analyzer, filter);
@@ -442,7 +442,7 @@ open class SoundInstance protected () extends EventHandler {
   /**
     * The sound resource that the instance will play.
     *
-    * @type {Sound}
+    * @type {import('./sound.js').Sound}
     */
   def sound_=(arg: Sound): Unit = js.native
   

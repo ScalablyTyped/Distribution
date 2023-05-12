@@ -12,7 +12,7 @@ trait DescribeExperienceResponse extends StObject {
   var Configuration: js.UndefOr[ExperienceConfiguration] = js.undefined
   
   /**
-    * Shows the date-time your Amazon Kendra experience was created.
+    * The Unix timestamp when your Amazon Kendra experience was created.
     */
   var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
@@ -57,7 +57,7 @@ trait DescribeExperienceResponse extends StObject {
   var Status: js.UndefOr[ExperienceStatus] = js.undefined
   
   /**
-    * Shows the date-time your Amazon Kendra experience was last updated.
+    * The Unix timestamp when your Amazon Kendra experience was last updated.
     */
   var UpdatedAt: js.UndefOr[js.Date] = js.undefined
 }

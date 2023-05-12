@@ -1,33 +1,23 @@
 package typings.hlsJs.mod
 
+import typings.hlsJs.hlsJsStrings.comDotappleDotquicktimeDotHLS
+import typings.hlsJs.hlsJsStrings.httpsColonSlashSlashaomediaDotorgSlashemsgSlashID3
+import typings.hlsJs.hlsJsStrings.orgDotid3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait MetadataSchema extends StObject
-@JSImport("hls.js", "MetadataSchema")
-@js.native
-object MetadataSchema extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.hlsJs.hlsJsStrings.orgDotid3
+  - typings.hlsJs.hlsJsStrings.comDotappleDotquicktimeDotHLS
+  - typings.hlsJs.hlsJsStrings.httpsColonSlashSlashaomediaDotorgSlashemsgSlashID3
+*/
+trait MetadataSchema extends StObject
+object MetadataSchema {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[MetadataSchema & String] = js.native
+  inline def audioId3: orgDotid3 = "org.id3".asInstanceOf[orgDotid3]
   
-  @js.native
-  sealed trait audioId3
-    extends StObject
-       with MetadataSchema
-  /* "org.id3" */ val audioId3: typings.hlsJs.mod.MetadataSchema.audioId3 & String = js.native
+  inline def dateRange: comDotappleDotquicktimeDotHLS = "com.apple.quicktime.HLS".asInstanceOf[comDotappleDotquicktimeDotHLS]
   
-  @js.native
-  sealed trait dateRange
-    extends StObject
-       with MetadataSchema
-  /* "com.apple.quicktime.HLS" */ val dateRange: typings.hlsJs.mod.MetadataSchema.dateRange & String = js.native
-  
-  @js.native
-  sealed trait emsg
-    extends StObject
-       with MetadataSchema
-  /* "https://aomedia.org/emsg/ID3" */ val emsg: typings.hlsJs.mod.MetadataSchema.emsg & String = js.native
+  inline def emsg: httpsColonSlashSlashaomediaDotorgSlashemsgSlashID3 = "https://aomedia.org/emsg/ID3".asInstanceOf[httpsColonSlashSlashaomediaDotorgSlashemsgSlashID3]
 }

@@ -66,6 +66,11 @@ trait TrialComponent extends StObject {
   var Parents: js.UndefOr[typings.awsSdk.clientsSagemakerMod.Parents] = js.undefined
   
   /**
+    * The name of the experiment run.
+    */
+  var RunName: js.UndefOr[ExperimentEntityName] = js.undefined
+  
+  /**
     * The Amazon Resource Name (ARN) and job type of the source of the component.
     */
   var Source: js.UndefOr[TrialComponentSource] = js.undefined
@@ -162,6 +167,10 @@ object TrialComponent {
     inline def setParentsUndefined: Self = StObject.set(x, "Parents", js.undefined)
     
     inline def setParentsVarargs(value: Parent*): Self = StObject.set(x, "Parents", js.Array(value*))
+    
+    inline def setRunName(value: ExperimentEntityName): Self = StObject.set(x, "RunName", value.asInstanceOf[js.Any])
+    
+    inline def setRunNameUndefined: Self = StObject.set(x, "RunName", js.undefined)
     
     inline def setSource(value: TrialComponentSource): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     

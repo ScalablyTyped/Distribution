@@ -19,7 +19,7 @@ trait DisassociateAddressRequest extends StObject {
   /**
     * [EC2-Classic] The Elastic IP address. Required for EC2-Classic.
     */
-  var PublicIp: js.UndefOr[String] = js.undefined
+  var PublicIp: js.UndefOr[EipAllocationPublicIp] = js.undefined
 }
 object DisassociateAddressRequest {
   
@@ -39,7 +39,7 @@ object DisassociateAddressRequest {
     
     inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    inline def setPublicIp(value: String): Self = StObject.set(x, "PublicIp", value.asInstanceOf[js.Any])
+    inline def setPublicIp(value: EipAllocationPublicIp): Self = StObject.set(x, "PublicIp", value.asInstanceOf[js.Any])
     
     inline def setPublicIpUndefined: Self = StObject.set(x, "PublicIp", js.undefined)
   }

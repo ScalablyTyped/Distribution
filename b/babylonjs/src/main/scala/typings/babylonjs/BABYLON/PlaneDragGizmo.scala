@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.babylonjs.BABYLON.IDisposable because Already inherited
 - typings.babylonjs.BABYLON.IGizmo because Already inherited
-- typings.babylonjs.BABYLON.IPlaneDragGizmo because var conflicts: _rootMesh, attachedMesh, attachedNode, customRotationQuaternion, gizmoLayer, isHovered, scaleRatio, updateGizmoPositionToMatchAttachedMesh, updateGizmoRotationToMatchAttachedMesh, updateScale. Inlined dragBehavior, snapDistance, onSnapObservable, isEnabled */ @js.native
+- typings.babylonjs.BABYLON.IPlaneDragGizmo because var conflicts: _rootMesh, attachedMesh, attachedNode, customRotationQuaternion, gizmoLayer, isHovered, scaleRatio, updateGizmoPositionToMatchAttachedMesh, updateGizmoRotationToMatchAttachedMesh, updateScale. Inlined dragBehavior, snapDistance, onSnapObservable, isEnabled, coloredMaterial, hoverMaterial, disableMaterial */ @js.native
 trait PlaneDragGizmo
   extends StObject
      with Gizmo {
@@ -29,10 +29,28 @@ trait PlaneDragGizmo
   
   /* protected */ var _pointerObserver: Nullable[Observer[PointerInfo]] = js.native
   
+  /** Default material used to render when gizmo is not disabled or hovered */
+  def coloredMaterial: StandardMaterial = js.native
+  /** Default material used to render when gizmo is not disabled or hovered */
+  @JSName("coloredMaterial")
+  var coloredMaterial_FPlaneDragGizmo: StandardMaterial = js.native
+  
+  /** Material used to render when gizmo is disabled. typically grey.*/
+  def disableMaterial: StandardMaterial = js.native
+  /** Material used to render when gizmo is disabled. typically grey.*/
+  @JSName("disableMaterial")
+  var disableMaterial_FPlaneDragGizmo: StandardMaterial = js.native
+  
   /**
     * Drag behavior responsible for the gizmos dragging interactions
     */
   var dragBehavior: PointerDragBehavior = js.native
+  
+  /** Material used to render when gizmo is hovered with mouse*/
+  def hoverMaterial: StandardMaterial = js.native
+  /** Material used to render when gizmo is hovered with mouse*/
+  @JSName("hoverMaterial")
+  var hoverMaterial_FPlaneDragGizmo: StandardMaterial = js.native
   
   def isEnabled: Boolean = js.native
   /**

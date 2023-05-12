@@ -1,7 +1,7 @@
 package typings.plotlyJs
 
-import typings.plotlyJs.libTracesOhclMod.HoverInfo
-import typings.plotlyJs.libTracesOhclMod.XCalendar
+import typings.plotlyJs.libTracesOhlcMod.HoverInfo
+import typings.plotlyJs.libTracesOhlcMod.XCalendar
 import typings.plotlyJs.libTracesPieMod.PieHoverInfo
 import typings.plotlyJs.libTracesPieMod.PieInsideTextOrientation
 import typings.plotlyJs.libTracesPieMod.PieTextPosition
@@ -9,6 +9,7 @@ import typings.plotlyJs.mod.AxisName
 import typings.plotlyJs.mod.AxisType
 import typings.plotlyJs.mod.Calendar
 import typings.plotlyJs.mod.Dash
+import typings.plotlyJs.mod.DefaultIcons
 import typings.plotlyJs.mod.ModeBarDefaultButtons
 import typings.plotlyJs.mod.PlotType
 import typings.plotlyJs.mod.XAxisName
@@ -26,6 +27,12 @@ object plotlyJsStrings {
   inline def `-_`: `-_` = "-".asInstanceOf[`-_`]
   
   @js.native
+  sealed trait `3d_rotate`
+    extends StObject
+       with DefaultIcons
+  inline def `3d_rotate`: `3d_rotate` = "3d_rotate".asInstanceOf[`3d_rotate`]
+  
+  @js.native
   sealed trait B extends StObject
   inline def B: B = "B".asInstanceOf[B]
   
@@ -38,8 +45,28 @@ object plotlyJsStrings {
   inline def E: E = "E".asInstanceOf[E]
   
   @js.native
+  sealed trait Equalssign extends StObject
+  inline def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
+  
+  @js.native
+  sealed trait Greaterthansign extends StObject
+  inline def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
+  
+  @js.native
+  sealed trait GreaterthansignEqualssign extends StObject
+  inline def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
+  
+  @js.native
   sealed trait `ISO-3` extends StObject
   inline def `ISO-3`: `ISO-3` = "ISO-3".asInstanceOf[`ISO-3`]
+  
+  @js.native
+  sealed trait Lessthansign extends StObject
+  inline def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
+  
+  @js.native
+  sealed trait LessthansignEqualssign extends StObject
+  inline def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   
   @js.native
   sealed trait Plussign extends StObject
@@ -60,6 +87,14 @@ object plotlyJsStrings {
   @js.native
   sealed trait Verticalline extends StObject
   inline def Verticalline: Verticalline = "|".asInstanceOf[Verticalline]
+  
+  @js.native
+  sealed trait `[]` extends StObject
+  inline def `[]`: `[]` = "[]".asInstanceOf[`[]`]
+  
+  @js.native
+  sealed trait `][` extends StObject
+  inline def `][`: `][` = "][".asInstanceOf[`][`]
   
   @js.native
   sealed trait _empty extends StObject
@@ -140,6 +175,12 @@ object plotlyJsStrings {
     extends StObject
        with ModeBarDefaultButtons
   inline def autoScale2d: autoScale2d = "autoScale2d".asInstanceOf[autoScale2d]
+  
+  @js.native
+  sealed trait autoscale
+    extends StObject
+       with DefaultIcons
+  inline def autoscale: autoscale = "autoscale".asInstanceOf[autoscale]
   
   @js.native
   sealed trait autosize extends StObject
@@ -248,6 +289,22 @@ object plotlyJsStrings {
   inline def bullet: bullet = "bullet".asInstanceOf[bullet]
   
   @js.native
+  sealed trait buttons extends StObject
+  inline def buttons: buttons = "buttons".asInstanceOf[buttons]
+  
+  @js.native
+  sealed trait camera
+    extends StObject
+       with DefaultIcons
+  inline def camera: camera = "camera".asInstanceOf[camera]
+  
+  @js.native
+  sealed trait `camera-retro`
+    extends StObject
+       with DefaultIcons
+  inline def `camera-retro`: `camera-retro` = "camera-retro".asInstanceOf[`camera-retro`]
+  
+  @js.native
   sealed trait candlestick
     extends StObject
        with PlotType
@@ -339,6 +396,10 @@ object plotlyJsStrings {
   inline def constant: constant = "constant".asInstanceOf[constant]
   
   @js.native
+  sealed trait constraint extends StObject
+  inline def constraint: constraint = "constraint".asInstanceOf[constraint]
+  
+  @js.native
   sealed trait contain extends StObject
   inline def contain: contain = "contain".asInstanceOf[contain]
   
@@ -413,14 +474,14 @@ object plotlyJsStrings {
   sealed trait dash
     extends StObject
        with Dash
-       with typings.plotlyJs.libTracesOhclMod.Dash
+       with typings.plotlyJs.libTracesOhlcMod.Dash
   inline def dash: dash = "dash".asInstanceOf[dash]
   
   @js.native
   sealed trait dashdot
     extends StObject
        with Dash
-       with typings.plotlyJs.libTracesOhclMod.Dash
+       with typings.plotlyJs.libTracesOhlcMod.Dash
   inline def dashdot: dashdot = "dashdot".asInstanceOf[dashdot]
   
   @js.native
@@ -440,6 +501,10 @@ object plotlyJsStrings {
   @js.native
   sealed trait delta extends StObject
   inline def delta: delta = "delta".asInstanceOf[delta]
+  
+  @js.native
+  sealed trait density extends StObject
+  inline def density: density = "density".asInstanceOf[density]
   
   @js.native
   sealed trait densitymapbox
@@ -463,6 +528,12 @@ object plotlyJsStrings {
   inline def discworld: discworld = "discworld".asInstanceOf[discworld]
   
   @js.native
+  sealed trait disk
+    extends StObject
+       with DefaultIcons
+  inline def disk: disk = "disk".asInstanceOf[disk]
+  
+  @js.native
   sealed trait domain extends StObject
   inline def domain: domain = "domain".asInstanceOf[domain]
   
@@ -470,8 +541,46 @@ object plotlyJsStrings {
   sealed trait dot_
     extends StObject
        with Dash
-       with typings.plotlyJs.libTracesOhclMod.Dash
+       with typings.plotlyJs.libTracesOhlcMod.Dash
   inline def dot_ : dot_ = "dot".asInstanceOf[dot_]
+  
+  @js.native
+  sealed trait down extends StObject
+  inline def down: down = "down".asInstanceOf[down]
+  
+  @js.native
+  sealed trait drawcircle
+    extends StObject
+       with DefaultIcons
+  inline def drawcircle: drawcircle = "drawcircle".asInstanceOf[drawcircle]
+  
+  @js.native
+  sealed trait drawclosedpath
+    extends StObject
+       with DefaultIcons
+  inline def drawclosedpath: drawclosedpath = "drawclosedpath".asInstanceOf[drawclosedpath]
+  
+  @js.native
+  sealed trait drawline
+    extends StObject
+       with DefaultIcons
+  inline def drawline: drawline = "drawline".asInstanceOf[drawline]
+  
+  @js.native
+  sealed trait drawopenpath
+    extends StObject
+       with DefaultIcons
+  inline def drawopenpath: drawopenpath = "drawopenpath".asInstanceOf[drawopenpath]
+  
+  @js.native
+  sealed trait drawrect
+    extends StObject
+       with DefaultIcons
+  inline def drawrect: drawrect = "drawrect".asInstanceOf[drawrect]
+  
+  @js.native
+  sealed trait dropdown extends StObject
+  inline def dropdown: dropdown = "dropdown".asInstanceOf[dropdown]
   
   @js.native
   sealed trait e_ extends StObject
@@ -496,6 +605,12 @@ object plotlyJsStrings {
   @js.native
   sealed trait end extends StObject
   inline def end: end = "end".asInstanceOf[end]
+  
+  @js.native
+  sealed trait eraseshape
+    extends StObject
+       with DefaultIcons
+  inline def eraseshape: eraseshape = "eraseshape".asInstanceOf[eraseshape]
   
   @js.native
   sealed trait ethiopian
@@ -620,6 +735,12 @@ object plotlyJsStrings {
   inline def h: h = "h".asInstanceOf[h]
   
   @js.native
+  sealed trait handleDrag3d
+    extends StObject
+       with ModeBarDefaultButtons
+  inline def handleDrag3d: handleDrag3d = "handleDrag3d".asInstanceOf[handleDrag3d]
+  
+  @js.native
   sealed trait hard extends StObject
   inline def hard: hard = "hard".asInstanceOf[hard]
   
@@ -659,6 +780,12 @@ object plotlyJsStrings {
     extends StObject
        with PlotType
   inline def histogram2dcontour: histogram2dcontour = "histogram2dcontour".asInstanceOf[histogram2dcontour]
+  
+  @js.native
+  sealed trait home
+    extends StObject
+       with DefaultIcons
+  inline def home: home = "home".asInstanceOf[home]
   
   @js.native
   sealed trait horizontal
@@ -709,6 +836,18 @@ object plotlyJsStrings {
     extends StObject
        with ModeBarDefaultButtons
   inline def hoverCompareCartesian: hoverCompareCartesian = "hoverCompareCartesian".asInstanceOf[hoverCompareCartesian]
+  
+  @js.native
+  sealed trait hoverclosest
+    extends StObject
+       with ModeBarDefaultButtons
+  inline def hoverclosest: hoverclosest = "hoverclosest".asInstanceOf[hoverclosest]
+  
+  @js.native
+  sealed trait hovercompare
+    extends StObject
+       with ModeBarDefaultButtons
+  inline def hovercompare: hovercompare = "hovercompare".asInstanceOf[hovercompare]
   
   @js.native
   sealed trait `hovered data` extends StObject
@@ -882,7 +1021,9 @@ object plotlyJsStrings {
   inline def labelPlussignvaluePlussignpercentPlussignname: labelPlussignvaluePlussignpercentPlussignname = "label+value+percent+name".asInstanceOf[labelPlussignvaluePlussignpercentPlussignname]
   
   @js.native
-  sealed trait lasso extends StObject
+  sealed trait lasso
+    extends StObject
+       with DefaultIcons
   inline def lasso: lasso = "lasso".asInstanceOf[lasso]
   
   @js.native
@@ -910,6 +1051,10 @@ object plotlyJsStrings {
   @js.native
   sealed trait legendonly extends StObject
   inline def legendonly: legendonly = "legendonly".asInstanceOf[legendonly]
+  
+  @js.native
+  sealed trait levels extends StObject
+  inline def levels: levels = "levels".asInstanceOf[levels]
   
   @js.native
   sealed trait line extends StObject
@@ -959,14 +1104,14 @@ object plotlyJsStrings {
   sealed trait longdash
     extends StObject
        with Dash
-       with typings.plotlyJs.libTracesOhclMod.Dash
+       with typings.plotlyJs.libTracesOhlcMod.Dash
   inline def longdash: longdash = "longdash".asInstanceOf[longdash]
   
   @js.native
   sealed trait longdashdot
     extends StObject
        with Dash
-       with typings.plotlyJs.libTracesOhclMod.Dash
+       with typings.plotlyJs.libTracesOhlcMod.Dash
   inline def longdashdot: longdashdot = "longdashdot".asInstanceOf[longdashdot]
   
   @js.native
@@ -1067,6 +1212,12 @@ object plotlyJsStrings {
   inline def month: month = "month".asInstanceOf[month]
   
   @js.native
+  sealed trait movie
+    extends StObject
+       with DefaultIcons
+  inline def movie: movie = "movie".asInstanceOf[movie]
+  
+  @js.native
   sealed trait multicategory
     extends StObject
        with AxisType
@@ -1098,6 +1249,12 @@ object plotlyJsStrings {
   inline def nepali: nepali = "nepali".asInstanceOf[nepali]
   
   @js.native
+  sealed trait newplotlylogo
+    extends StObject
+       with DefaultIcons
+  inline def newplotlylogo: newplotlylogo = "newplotlylogo".asInstanceOf[newplotlylogo]
+  
+  @js.native
   sealed trait none
     extends StObject
        with HoverInfo
@@ -1120,10 +1277,6 @@ object plotlyJsStrings {
   @js.native
   sealed trait numberPlussigndelta extends StObject
   inline def numberPlussigndelta: numberPlussigndelta = "number+delta".asInstanceOf[numberPlussigndelta]
-  
-  @js.native
-  sealed trait ohcl extends StObject
-  inline def ohcl: ohcl = "ohcl".asInstanceOf[ohcl]
   
   @js.native
   sealed trait ohlc
@@ -1168,7 +1321,9 @@ object plotlyJsStrings {
   inline def overlay: overlay = "overlay".asInstanceOf[overlay]
   
   @js.native
-  sealed trait pan extends StObject
+  sealed trait pan
+    extends StObject
+       with DefaultIcons
   inline def pan: pan = "pan".asInstanceOf[pan]
   
   @js.native
@@ -1202,6 +1357,12 @@ object plotlyJsStrings {
   @js.native
   sealed trait path extends StObject
   inline def path: path = "path".asInstanceOf[path]
+  
+  @js.native
+  sealed trait pencil
+    extends StObject
+       with DefaultIcons
+  inline def pencil: pencil = "pencil".asInstanceOf[pencil]
   
   @js.native
   sealed trait percent
@@ -1357,6 +1518,12 @@ object plotlyJsStrings {
   inline def plotly_unhover: plotly_unhover = "plotly_unhover".asInstanceOf[plotly_unhover]
   
   @js.native
+  sealed trait plotlylogo
+    extends StObject
+       with DefaultIcons
+  inline def plotlylogo: plotlylogo = "plotlylogo".asInstanceOf[plotlylogo]
+  
+  @js.native
   sealed trait png extends StObject
   inline def png: png = "png".asInstanceOf[png]
   
@@ -1387,6 +1554,14 @@ object plotlyJsStrings {
   inline def power: power = "power".asInstanceOf[power]
   
   @js.native
+  sealed trait probability extends StObject
+  inline def probability: probability = "probability".asInstanceOf[probability]
+  
+  @js.native
+  sealed trait `probability density` extends StObject
+  inline def `probability density`: `probability density` = ("probability density").asInstanceOf[`probability density`]
+  
+  @js.native
   sealed trait quad extends StObject
   inline def quad: quad = "quad".asInstanceOf[quad]
   
@@ -1401,6 +1576,12 @@ object plotlyJsStrings {
   @js.native
   sealed trait `quad-out` extends StObject
   inline def `quad-out`: `quad-out` = "quad-out".asInstanceOf[`quad-out`]
+  
+  @js.native
+  sealed trait question
+    extends StObject
+       with DefaultIcons
+  inline def question: question = "question".asInstanceOf[question]
   
   @js.native
   sealed trait radial
@@ -1467,6 +1648,12 @@ object plotlyJsStrings {
     extends StObject
        with ModeBarDefaultButtons
   inline def resetScale2d: resetScale2d = "resetScale2d".asInstanceOf[resetScale2d]
+  
+  @js.native
+  sealed trait resetViewMapbox
+    extends StObject
+       with ModeBarDefaultButtons
+  inline def resetViewMapbox: resetViewMapbox = "resetViewMapbox".asInstanceOf[resetViewMapbox]
   
   @js.native
   sealed trait resetViews
@@ -1585,6 +1772,12 @@ object plotlyJsStrings {
   inline def select2d: select2d = "select2d".asInstanceOf[select2d]
   
   @js.native
+  sealed trait selectbox
+    extends StObject
+       with DefaultIcons
+  inline def selectbox: selectbox = "selectbox".asInstanceOf[selectbox]
+  
+  @js.native
   sealed trait sendDataToCloud
     extends StObject
        with ModeBarDefaultButtons
@@ -1621,12 +1814,18 @@ object plotlyJsStrings {
   sealed trait solid
     extends StObject
        with Dash
-       with typings.plotlyJs.libTracesOhclMod.Dash
+       with typings.plotlyJs.libTracesOhlcMod.Dash
   inline def solid: solid = "solid".asInstanceOf[solid]
   
   @js.native
   sealed trait sort extends StObject
   inline def sort: sort = "sort".asInstanceOf[sort]
+  
+  @js.native
+  sealed trait spikeline
+    extends StObject
+       with DefaultIcons
+  inline def spikeline: spikeline = "spikeline".asInstanceOf[spikeline]
   
   @js.native
   sealed trait spline extends StObject
@@ -1840,12 +2039,24 @@ object plotlyJsStrings {
   inline def togglegroup: togglegroup = "togglegroup".asInstanceOf[togglegroup]
   
   @js.native
+  sealed trait togglehover_
+    extends StObject
+       with ModeBarDefaultButtons
+  inline def togglehover_ : togglehover_ = "togglehover".asInstanceOf[togglehover_]
+  
+  @js.native
   sealed trait toggleitem extends StObject
   inline def toggleitem: toggleitem = "toggleitem".asInstanceOf[toggleitem]
   
   @js.native
   sealed trait toggleothers extends StObject
   inline def toggleothers: toggleothers = "toggleothers".asInstanceOf[toggleothers]
+  
+  @js.native
+  sealed trait togglespikelines_
+    extends StObject
+       with ModeBarDefaultButtons
+  inline def togglespikelines_ : togglespikelines_ = "togglespikelines".asInstanceOf[togglespikelines_]
   
   @js.native
   sealed trait tonext extends StObject
@@ -1858,6 +2069,18 @@ object plotlyJsStrings {
   @js.native
   sealed trait tonexty extends StObject
   inline def tonexty: tonexty = "tonexty".asInstanceOf[tonexty]
+  
+  @js.native
+  sealed trait tooltip_basic
+    extends StObject
+       with DefaultIcons
+  inline def tooltip_basic: tooltip_basic = "tooltip_basic".asInstanceOf[tooltip_basic]
+  
+  @js.native
+  sealed trait tooltip_compare
+    extends StObject
+       with DefaultIcons
+  inline def tooltip_compare: tooltip_compare = "tooltip_compare".asInstanceOf[tooltip_compare]
   
   @js.native
   sealed trait top extends StObject
@@ -1945,12 +2168,28 @@ object plotlyJsStrings {
   inline def ummalqura: ummalqura = "ummalqura".asInstanceOf[ummalqura]
   
   @js.native
+  sealed trait undo
+    extends StObject
+       with DefaultIcons
+  inline def undo: undo = "undo".asInstanceOf[undo]
+  
+  @js.native
+  sealed trait up extends StObject
+  inline def up: up = "up".asInstanceOf[up]
+  
+  @js.native
   sealed trait update extends StObject
   inline def update: update = "update".asInstanceOf[update]
   
   @js.native
   sealed trait v extends StObject
   inline def v: v = "v".asInstanceOf[v]
+  
+  @js.native
+  sealed trait v1hovermode
+    extends StObject
+       with ModeBarDefaultButtons
+  inline def v1hovermode: v1hovermode = "v1hovermode".asInstanceOf[v1hovermode]
   
   @js.native
   sealed trait value
@@ -2301,6 +2540,12 @@ object plotlyJsStrings {
   inline def z: z = "z".asInstanceOf[z]
   
   @js.native
+  sealed trait `z-axis`
+    extends StObject
+       with DefaultIcons
+  inline def `z-axis`: `z-axis` = "z-axis".asInstanceOf[`z-axis`]
+  
+  @js.native
   sealed trait zPlussignname
     extends StObject
        with HoverInfo
@@ -2383,6 +2628,12 @@ object plotlyJsStrings {
   inline def zoomInGeo: zoomInGeo = "zoomInGeo".asInstanceOf[zoomInGeo]
   
   @js.native
+  sealed trait zoomInMapbox
+    extends StObject
+       with ModeBarDefaultButtons
+  inline def zoomInMapbox: zoomInMapbox = "zoomInMapbox".asInstanceOf[zoomInMapbox]
+  
+  @js.native
   sealed trait zoomOut2d
     extends StObject
        with ModeBarDefaultButtons
@@ -2393,4 +2644,28 @@ object plotlyJsStrings {
     extends StObject
        with ModeBarDefaultButtons
   inline def zoomOutGeo: zoomOutGeo = "zoomOutGeo".asInstanceOf[zoomOutGeo]
+  
+  @js.native
+  sealed trait zoomOutMapbox
+    extends StObject
+       with ModeBarDefaultButtons
+  inline def zoomOutMapbox: zoomOutMapbox = "zoomOutMapbox".asInstanceOf[zoomOutMapbox]
+  
+  @js.native
+  sealed trait zoom_minus
+    extends StObject
+       with DefaultIcons
+  inline def zoom_minus: zoom_minus = "zoom_minus".asInstanceOf[zoom_minus]
+  
+  @js.native
+  sealed trait zoom_plus
+    extends StObject
+       with DefaultIcons
+  inline def zoom_plus: zoom_plus = "zoom_plus".asInstanceOf[zoom_plus]
+  
+  @js.native
+  sealed trait zoombox
+    extends StObject
+       with DefaultIcons
+  inline def zoombox: zoombox = "zoombox".asInstanceOf[zoombox]
 }

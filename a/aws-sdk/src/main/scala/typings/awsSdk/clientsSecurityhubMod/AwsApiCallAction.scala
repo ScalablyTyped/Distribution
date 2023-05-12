@@ -27,12 +27,12 @@ trait AwsApiCallAction extends StObject {
   var DomainDetails: js.UndefOr[AwsApiCallActionDomainDetails] = js.undefined
   
   /**
-    * An ISO8601-formatted timestamp that indicates when the API call was first observed.
+    * An ISO8601-formatted timestamp that indicates when the API call was first observed. A correctly formatted example is 2020-05-21T20:16:34.724Z. The value cannot contain spaces, and date and time should be separated by T. For more information, see RFC 3339 section 5.6, Internet Date/Time Format.
     */
   var FirstSeen: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * An ISO8601-formatted timestamp that indicates when the API call was most recently observed.
+    * An ISO8601-formatted timestamp that indicates when the API call was most recently observed. A correctly formatted example is 2020-05-21T20:16:34.724Z. The value cannot contain spaces, and date and time should be separated by T. For more information, see RFC 3339 section 5.6, Internet Date/Time Format.
     */
   var LastSeen: js.UndefOr[NonEmptyString] = js.undefined
   

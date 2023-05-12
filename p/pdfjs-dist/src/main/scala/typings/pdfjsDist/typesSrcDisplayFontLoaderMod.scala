@@ -2,7 +2,7 @@ package typings.pdfjsDist
 
 import typings.pdfjsDist.anon.Callback
 import typings.pdfjsDist.anon.DisableFontFace
-import typings.pdfjsDist.anon.OnUnsupportedFeature
+import typings.pdfjsDist.anon.StyleElement
 import typings.std.Document
 import typings.std.FontFace
 import typings.std.HTMLStyleElement
@@ -17,7 +17,7 @@ object typesSrcDisplayFontLoaderMod {
   open class FontFaceObject protected () extends StObject {
     def this(translatedData: Any, param1: DisableFontFace) = this()
     
-    var _onUnsupportedFeature: Any = js.native
+    var _inspectFont: Any = js.native
     
     var compiledGlyphs: Any = js.native
     
@@ -26,8 +26,6 @@ object typesSrcDisplayFontLoaderMod {
     def createNativeFontFace(): FontFace | Null = js.native
     
     var disableFontFace: Boolean = js.native
-    
-    var fontRegistry: Any = js.native
     
     def getPathGenerator(objs: Any, character: Any): Any = js.native
     
@@ -39,13 +37,11 @@ object typesSrcDisplayFontLoaderMod {
   @JSImport("pdfjs-dist/types/src/display/font_loader", "FontLoader")
   @js.native
   open class FontLoader protected () extends StObject {
-    def this(param0: OnUnsupportedFeature) = this()
+    def this(param0: StyleElement) = this()
     
     var _document: Document = js.native
     
     def _loadTestFont: Any = js.native
-    
-    var _onUnsupportedFeature: Any = js.native
     
     def _prepareFontLoadEvent(font: Any, request: Any): Unit = js.native
     

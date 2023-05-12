@@ -4,6 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Subset of properties from SourceFile that are used in multiple utility functions
+  */
 trait SourceFileLike extends StObject {
   
   def getLineAndCharacterOfPosition(pos: Double): LineAndCharacter

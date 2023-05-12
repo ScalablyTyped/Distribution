@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AxiosResponse[T, D] extends StObject {
   
-  var config: AxiosRequestConfig[D]
+  var config: InternalAxiosRequestConfig[D]
   
   var data: T
   
@@ -21,7 +21,7 @@ trait AxiosResponse[T, D] extends StObject {
 object AxiosResponse {
   
   inline def apply[T, D](
-    config: AxiosRequestConfig[D],
+    config: InternalAxiosRequestConfig[D],
     data: T,
     headers: RawAxiosResponseHeaders | AxiosResponseHeaders,
     status: Double,
@@ -34,7 +34,7 @@ object AxiosResponse {
   @scala.inline
   implicit open class MutableBuilder[Self <: AxiosResponse[?, ?], T, D] (val x: Self & (AxiosResponse[T, D])) extends AnyVal {
     
-    inline def setConfig(value: AxiosRequestConfig[D]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: InternalAxiosRequestConfig[D]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

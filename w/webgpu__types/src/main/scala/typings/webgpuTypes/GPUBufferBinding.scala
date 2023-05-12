@@ -20,7 +20,8 @@ trait GPUBufferBinding
   var offset: js.UndefOr[GPUSize64] = js.undefined
   
   /**
-    * The size, in bytes, of the buffer binding. If `undefined`, specifies the range starting at
+    * The size, in bytes, of the buffer binding.
+    * If not map/exist|provided, specifies the range starting at
     * {@link GPUBufferBinding#offset} and ending at the end of {@link GPUBufferBinding#buffer}.
     */
   var size: js.UndefOr[GPUSize64] = js.undefined

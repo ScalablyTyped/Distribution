@@ -1,7 +1,9 @@
 package typings.libp2pInterfaceConnectionEncrypter
 
 import typings.itStreamTypes.mod.Duplex
+import typings.itStreamTypes.mod.Source
 import typings.libp2pInterfacePeerId.mod.PeerId
+import typings.std.AsyncGenerator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,11 +22,19 @@ object mod {
       */
     def secureInbound(
       localPeer: PeerId,
-      connection: Duplex[js.typedarray.Uint8Array, js.typedarray.Uint8Array, js.Promise[Unit]]
+      connection: Duplex[
+          AsyncGenerator[js.typedarray.Uint8Array, Any, Any], 
+          Source[js.typedarray.Uint8Array], 
+          js.Promise[Unit]
+        ]
     ): js.Promise[SecuredConnection[Extension]] = js.native
     def secureInbound(
       localPeer: PeerId,
-      connection: Duplex[js.typedarray.Uint8Array, js.typedarray.Uint8Array, js.Promise[Unit]],
+      connection: Duplex[
+          AsyncGenerator[js.typedarray.Uint8Array, Any, Any], 
+          Source[js.typedarray.Uint8Array], 
+          js.Promise[Unit]
+        ],
       remotePeer: PeerId
     ): js.Promise[SecuredConnection[Extension]] = js.native
     
@@ -35,18 +45,30 @@ object mod {
       */
     def secureOutbound(
       localPeer: PeerId,
-      connection: Duplex[js.typedarray.Uint8Array, js.typedarray.Uint8Array, js.Promise[Unit]]
+      connection: Duplex[
+          AsyncGenerator[js.typedarray.Uint8Array, Any, Any], 
+          Source[js.typedarray.Uint8Array], 
+          js.Promise[Unit]
+        ]
     ): js.Promise[SecuredConnection[Extension]] = js.native
     def secureOutbound(
       localPeer: PeerId,
-      connection: Duplex[js.typedarray.Uint8Array, js.typedarray.Uint8Array, js.Promise[Unit]],
+      connection: Duplex[
+          AsyncGenerator[js.typedarray.Uint8Array, Any, Any], 
+          Source[js.typedarray.Uint8Array], 
+          js.Promise[Unit]
+        ],
       remotePeer: PeerId
     ): js.Promise[SecuredConnection[Extension]] = js.native
   }
   
   trait SecuredConnection[Extension] extends StObject {
     
-    var conn: Duplex[js.typedarray.Uint8Array, js.typedarray.Uint8Array, js.Promise[Unit]]
+    var conn: Duplex[
+        AsyncGenerator[js.typedarray.Uint8Array, Any, Any], 
+        Source[js.typedarray.Uint8Array], 
+        js.Promise[Unit]
+      ]
     
     var remoteExtensions: js.UndefOr[Extension] = js.undefined
     
@@ -55,7 +77,11 @@ object mod {
   object SecuredConnection {
     
     inline def apply[Extension](
-      conn: Duplex[js.typedarray.Uint8Array, js.typedarray.Uint8Array, js.Promise[Unit]],
+      conn: Duplex[
+          AsyncGenerator[js.typedarray.Uint8Array, Any, Any], 
+          Source[js.typedarray.Uint8Array], 
+          js.Promise[Unit]
+        ],
       remotePeer: PeerId
     ): SecuredConnection[Extension] = {
       val __obj = js.Dynamic.literal(conn = conn.asInstanceOf[js.Any], remotePeer = remotePeer.asInstanceOf[js.Any])
@@ -65,7 +91,13 @@ object mod {
     @scala.inline
     implicit open class MutableBuilder[Self <: SecuredConnection[?], Extension] (val x: Self & SecuredConnection[Extension]) extends AnyVal {
       
-      inline def setConn(value: Duplex[js.typedarray.Uint8Array, js.typedarray.Uint8Array, js.Promise[Unit]]): Self = StObject.set(x, "conn", value.asInstanceOf[js.Any])
+      inline def setConn(
+        value: Duplex[
+              AsyncGenerator[js.typedarray.Uint8Array, Any, Any], 
+              Source[js.typedarray.Uint8Array], 
+              js.Promise[Unit]
+            ]
+      ): Self = StObject.set(x, "conn", value.asInstanceOf[js.Any])
       
       inline def setRemoteExtensions(value: Extension): Self = StObject.set(x, "remoteExtensions", value.asInstanceOf[js.Any])
       

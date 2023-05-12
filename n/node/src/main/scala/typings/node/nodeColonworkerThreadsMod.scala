@@ -26,8 +26,8 @@ object nodeColonworkerThreadsMod {
     * const {
     *   isMainThread,
     *   BroadcastChannel,
-    *   Worker
-    * } = require('worker_threads');
+    *   Worker,
+    * } = require('node:worker_threads');
     *
     * const bc = new BroadcastChannel('hello');
     *
@@ -59,7 +59,7 @@ object nodeColonworkerThreadsMod {
     * The `MessageChannel` has no methods of its own. `new MessageChannel()`yields an object with `port1` and `port2` properties, which refer to linked `MessagePort` instances.
     *
     * ```js
-    * const { MessageChannel } = require('worker_threads');
+    * const { MessageChannel } = require('node:worker_threads');
     *
     * const { port1, port2 } = new MessageChannel();
     * port1.on('message', (message) => console.log('received', message));
@@ -95,9 +95,9 @@ object nodeColonworkerThreadsMod {
     *
     * Notable differences inside a Worker environment are:
     *
-    * * The `process.stdin`, `process.stdout` and `process.stderr` may be redirected by the parent thread.
-    * * The `require('worker_threads').isMainThread` property is set to `false`.
-    * * The `require('worker_threads').parentPort` message port is available.
+    * * The `process.stdin`, `process.stdout`, and `process.stderr` streams may be redirected by the parent thread.
+    * * The `require('node:worker_threads').isMainThread` property is set to `false`.
+    * * The `require('node:worker_threads').parentPort` message port is available.
     * * `process.exit()` does not stop the whole program, just the single thread,
     * and `process.abort()` is not available.
     * * `process.chdir()` and `process` methods that set group or user ids
@@ -114,11 +114,11 @@ object nodeColonworkerThreadsMod {
     *
     * Creating `Worker` instances inside of other `Worker`s is possible.
     *
-    * Like [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API) and the `cluster module`, two-way communication can be
-    * achieved through inter-thread message passing. Internally, a `Worker` has a
-    * built-in pair of `MessagePort` s that are already associated with each other
-    * when the `Worker` is created. While the `MessagePort` object on the parent side
-    * is not directly exposed, its functionalities are exposed through `worker.postMessage()` and the `worker.on('message')` event
+    * Like [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API) and the `node:cluster module`, two-way communication
+    * can be achieved through inter-thread message passing. Internally, a `Worker` has
+    * a built-in pair of `MessagePort` s that are already associated with each
+    * other when the `Worker` is created. While the `MessagePort` object on the parent
+    * side is not directly exposed, its functionalities are exposed through `worker.postMessage()` and the `worker.on('message')` event
     * on the `Worker` object for the parent thread.
     *
     * To create custom messaging channels (which is encouraged over using the default
@@ -131,10 +131,10 @@ object nodeColonworkerThreadsMod {
     * the thread barrier.
     *
     * ```js
-    * const assert = require('assert');
+    * const assert = require('node:assert');
     * const {
-    *   Worker, MessageChannel, MessagePort, isMainThread, parentPort
-    * } = require('worker_threads');
+    *   Worker, MessageChannel, MessagePort, isMainThread, parentPort,
+    * } = require('node:worker_threads');
     * if (isMainThread) {
     *   const worker = new Worker(__filename);
     *   const subChannel = new MessageChannel();
@@ -178,7 +178,7 @@ object nodeColonworkerThreadsMod {
     *   isMainThread,
     *   setEnvironmentData,
     *   getEnvironmentData,
-    * } = require('worker_threads');
+    * } = require('node:worker_threads');
     *
     * if (isMainThread) {
     *   setEnvironmentData('Hello', 'World!');
@@ -207,7 +207,7 @@ object nodeColonworkerThreadsMod {
     * This operation cannot be undone.
     *
     * ```js
-    * const { MessageChannel, markAsUntransferable } = require('worker_threads');
+    * const { MessageChannel, markAsUntransferable } = require('node:worker_threads');
     *
     * const pooledBuffer = new ArrayBuffer(8);
     * const typedArray1 = new Uint8Array(pooledBuffer);
@@ -255,10 +255,10 @@ object nodeColonworkerThreadsMod {
   
   /**
     * Receive a single message from a given `MessagePort`. If no message is available,`undefined` is returned, otherwise an object with a single `message` property
-    * that contains the message payload, corresponding to the oldest message in the`MessagePort`’s queue.
+    * that contains the message payload, corresponding to the oldest message in the`MessagePort`'s queue.
     *
     * ```js
-    * const { MessageChannel, receiveMessageOnPort } = require('worker_threads');
+    * const { MessageChannel, receiveMessageOnPort } = require('node:worker_threads');
     * const { port1, port2 } = new MessageChannel();
     * port1.postMessage({ hello: 'world' });
     *

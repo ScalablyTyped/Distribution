@@ -8,8 +8,6 @@ trait R3InjectableMetadata extends StObject {
   
   var deps: js.UndefOr[js.Array[R3DependencyMetadata]] = js.undefined
   
-  var internalType: Expression
-  
   var name: String
   
   var providedIn: MaybeForwardRefExpression[Expression]
@@ -29,13 +27,12 @@ trait R3InjectableMetadata extends StObject {
 object R3InjectableMetadata {
   
   inline def apply(
-    internalType: Expression,
     name: String,
     providedIn: MaybeForwardRefExpression[Expression],
     `type`: R3Reference,
     typeArgumentCount: Double
   ): R3InjectableMetadata = {
-    val __obj = js.Dynamic.literal(internalType = internalType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], providedIn = providedIn.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], providedIn = providedIn.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3InjectableMetadata]
   }
@@ -48,8 +45,6 @@ object R3InjectableMetadata {
     inline def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
     
     inline def setDepsVarargs(value: R3DependencyMetadata*): Self = StObject.set(x, "deps", js.Array(value*))
-    
-    inline def setInternalType(value: Expression): Self = StObject.set(x, "internalType", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

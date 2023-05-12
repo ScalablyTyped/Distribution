@@ -10,7 +10,7 @@ trait BadgeOptions extends StObject {
   
   var cutoutBorder: js.UndefOr[Boolean] = js.undefined
   
-  var fill: js.UndefOr[String] = js.undefined
+  var fillMode: js.UndefOr[String] = js.undefined
   
   var icon: js.UndefOr[String] = js.undefined
   
@@ -20,7 +20,7 @@ trait BadgeOptions extends StObject {
   
   var position: js.UndefOr[String] = js.undefined
   
-  var shape: js.UndefOr[String] = js.undefined
+  var rounded: js.UndefOr[String] = js.undefined
   
   var size: js.UndefOr[String] = js.undefined
   
@@ -50,9 +50,9 @@ object BadgeOptions {
     
     inline def setCutoutBorderUndefined: Self = StObject.set(x, "cutoutBorder", js.undefined)
     
-    inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFillMode(value: String): Self = StObject.set(x, "fillMode", value.asInstanceOf[js.Any])
     
-    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillModeUndefined: Self = StObject.set(x, "fillMode", js.undefined)
     
     inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
@@ -70,9 +70,9 @@ object BadgeOptions {
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    inline def setShape(value: String): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setRounded(value: String): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
     
-    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    inline def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
     
     inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

@@ -6,26 +6,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `201202401` extends StObject {
   
-  /** Response when the codespace was successfully created */
-  var `201`: ContentApplicationjsonGitstatus
+  /** @description Response when the codespace was successfully created */
+  var `201`: ContentApplicationjsonIdletimeoutnotice
   
-  /** Response when the codespace creation partially failed but is being retried in the background */
-  var `202`: ContentApplicationjsonGitstatus
+  /** @description Response when the codespace creation partially failed but is being retried in the background */
+  var `202`: ContentApplicationjsonIdletimeoutnotice
   
-  var `401`: Content48
+  var `401`: Content36
   
-  var `403`: Content48
+  var `403`: Content36
   
-  var `404`: Content48
+  var `404`: Content36
+  
+  var `503`: ContentApplicationjsonCodeDocumentationurlMessage
 }
 object `201202401` {
   
   inline def apply(
-    `201`: ContentApplicationjsonGitstatus,
-    `202`: ContentApplicationjsonGitstatus,
-    `401`: Content48,
-    `403`: Content48,
-    `404`: Content48
+    `201`: ContentApplicationjsonIdletimeoutnotice,
+    `202`: ContentApplicationjsonIdletimeoutnotice,
+    `401`: Content36,
+    `403`: Content36,
+    `404`: Content36,
+    `503`: ContentApplicationjsonCodeDocumentationurlMessage
   ): `201202401` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("201")(`201`.asInstanceOf[js.Any])
@@ -33,20 +36,23 @@ object `201202401` {
     __obj.updateDynamic("401")(`401`.asInstanceOf[js.Any])
     __obj.updateDynamic("403")(`403`.asInstanceOf[js.Any])
     __obj.updateDynamic("404")(`404`.asInstanceOf[js.Any])
+    __obj.updateDynamic("503")(`503`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`201202401`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `201202401`] (val x: Self) extends AnyVal {
     
-    inline def set201(value: ContentApplicationjsonGitstatus): Self = StObject.set(x, "201", value.asInstanceOf[js.Any])
+    inline def set201(value: ContentApplicationjsonIdletimeoutnotice): Self = StObject.set(x, "201", value.asInstanceOf[js.Any])
     
-    inline def set202(value: ContentApplicationjsonGitstatus): Self = StObject.set(x, "202", value.asInstanceOf[js.Any])
+    inline def set202(value: ContentApplicationjsonIdletimeoutnotice): Self = StObject.set(x, "202", value.asInstanceOf[js.Any])
     
-    inline def set401(value: Content48): Self = StObject.set(x, "401", value.asInstanceOf[js.Any])
+    inline def set401(value: Content36): Self = StObject.set(x, "401", value.asInstanceOf[js.Any])
     
-    inline def set403(value: Content48): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+    inline def set403(value: Content36): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
     
-    inline def set404(value: Content48): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(value: Content36): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    
+    inline def set503(value: ContentApplicationjsonCodeDocumentationurlMessage): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
   }
 }

@@ -31,7 +31,7 @@ object middlewareImmerMod {
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
     * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
-    T extends [] ? [] : T extends [unknown] ? [] : T extends [unknown | undefined] ? [] : T extends [unknown, unknown, ...infer A] ? A : T extends [unknown, unknown | undefined, ...infer A] ? A : T extends [unknown | undefined, unknown | undefined, ...infer A] ? A : never
+    T extends {  length :0} ? [] : T extends {  length :1} ? [] : T extends {  length :0 | 1} ? [] : T extends [unknown, unknown, ...infer A] ? A : T extends [unknown, unknown | undefined, ...infer A] ? A : T extends [unknown | undefined, unknown | undefined, ...infer A] ? A : never
     }}}
     */
   type SkipTwo[T] = js.Array[Any]
@@ -40,7 +40,7 @@ object middlewareImmerMod {
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
     * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
-    S extends {getState (): infer T,   setState :infer SetState} ? SetState extends (a : infer A): infer Sr ? {setState (nextStateOrUpdater : T, shouldReplace : boolean, a : zustand.zustand/middleware/immer.SkipTwo<A>): Sr, setState (nextStateOrUpdater : std.Partial<T>, shouldReplace : boolean, a : zustand.zustand/middleware/immer.SkipTwo<A>): Sr, setState (nextStateOrUpdater : (state : immer.immer/dist/types/types-external.Draft<T>): void, shouldReplace : boolean, a : zustand.zustand/middleware/immer.SkipTwo<A>): Sr, setState (nextStateOrUpdater : T, shouldReplace : undefined, a : zustand.zustand/middleware/immer.SkipTwo<A>): Sr, setState (nextStateOrUpdater : std.Partial<T>, shouldReplace : undefined, a : zustand.zustand/middleware/immer.SkipTwo<A>): Sr, setState (nextStateOrUpdater : (state : immer.immer/dist/types/types-external.Draft<T>): void, shouldReplace : undefined, a : zustand.zustand/middleware/immer.SkipTwo<A>): Sr} : never : never
+    S extends {getState (): infer T,   setState :infer SetState} ? SetState extends (a : infer A): infer Sr ? {setState (nextStateOrUpdater : T, shouldReplace : boolean, a : zustand.zustand/middleware/immer.SkipTwo<A>): Sr, setState (nextStateOrUpdater : std.Partial<T>, shouldReplace : boolean, a : zustand.zustand/middleware/immer.SkipTwo<A>): Sr, setState (nextStateOrUpdater : (state : immer.immer.Draft<T>): void, shouldReplace : boolean, a : zustand.zustand/middleware/immer.SkipTwo<A>): Sr, setState (nextStateOrUpdater : T, shouldReplace : undefined, a : zustand.zustand/middleware/immer.SkipTwo<A>): Sr, setState (nextStateOrUpdater : std.Partial<T>, shouldReplace : undefined, a : zustand.zustand/middleware/immer.SkipTwo<A>): Sr, setState (nextStateOrUpdater : (state : immer.immer.Draft<T>): void, shouldReplace : undefined, a : zustand.zustand/middleware/immer.SkipTwo<A>): Sr} : never : never
     }}}
     */
   @js.native

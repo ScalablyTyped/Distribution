@@ -27,7 +27,7 @@ trait Evidence extends StObject {
   var awsOrganization: js.UndefOr[String] = js.undefined
   
   /**
-    *  The evaluation status for evidence that falls under the compliance check category. For evidence collected from Security Hub, a Pass or Fail result is shown. For evidence collected from Config, a Compliant or Noncompliant result is shown. 
+    * The evaluation status for automated evidence that falls under the compliance check category.   Audit Manager classes evidence as non-compliant if Security Hub reports a Fail result, or if Config reports a Non-compliant result.   Audit Manager classes evidence as compliant if Security Hub reports a Pass result, or if Config reports a Compliant result.   If a compliance check isn't available or applicable, then no compliance evaluation can be made for that evidence. This is the case if the evidence uses Config or Security Hub as the underlying data source type, but those services aren't enabled. This is also the case if the evidence uses an underlying data source type that doesn't support compliance checks (such as manual evidence, Amazon Web Services API calls, or CloudTrail).   
     */
   var complianceCheck: js.UndefOr[String] = js.undefined
   
@@ -62,7 +62,7 @@ trait Evidence extends StObject {
   var evidenceFolderId: js.UndefOr[UUID] = js.undefined
   
   /**
-    *  The unique identifier for the IAM user or role that's associated with the evidence. 
+    *  The unique identifier for the user or role that's associated with the evidence. 
     */
   var iamId: js.UndefOr[IamArn] = js.undefined
   

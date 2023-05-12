@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait MissingDeclaration
   extends StObject
-     with DeclarationStatement {
+     with DeclarationStatement
+     with PrimaryExpression {
   
   @JSName("kind")
   val kind_MissingDeclaration: typings.typescript.mod.SyntaxKind.MissingDeclaration = js.native

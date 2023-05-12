@@ -13,7 +13,7 @@ trait Party
      with /* k */ StringDictionary[Any] {
   
   /**
-    * The name of the party/orginsation related to this service point
+    * The name of the party/organisation related to this service point
     */
   var party: String
   

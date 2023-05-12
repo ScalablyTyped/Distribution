@@ -12,7 +12,7 @@ trait ReplicaGlobalSecondaryIndexAutoScalingDescription extends StObject {
   var IndexName: js.UndefOr[typings.awsSdk.clientsDynamodbMod.IndexName] = js.undefined
   
   /**
-    * The current state of the replica global secondary index:    CREATING - The index is being created.    UPDATING - The index is being updated.    DELETING - The index is being deleted.    ACTIVE - The index is ready for use.  
+    * The current state of the replica global secondary index:    CREATING - The index is being created.    UPDATING - The table/index configuration is being updated. The table/index remains available for data operations when UPDATING     DELETING - The index is being deleted.    ACTIVE - The index is ready for use.  
     */
   var IndexStatus: js.UndefOr[typings.awsSdk.clientsDynamodbMod.IndexStatus] = js.undefined
   

@@ -1,7 +1,6 @@
 
 # Scala.js typings for baidumap-web-sdk
 
-Typings are for version v3.0
 
 
 

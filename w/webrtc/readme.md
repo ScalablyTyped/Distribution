@@ -1,7 +1,6 @@
 
 # Scala.js typings for webrtc
 
-Typings are for version 2016-09-13
 
 ## Library description:
 WebRTC abstraction for making it simple to manage multiple peer connections of various types.

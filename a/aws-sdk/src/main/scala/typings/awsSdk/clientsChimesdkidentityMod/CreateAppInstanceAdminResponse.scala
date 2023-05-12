@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateAppInstanceAdminResponse extends StObject {
   
   /**
-    * The name and ARN of the admin for the AppInstance.
+    * The ARN and name of the administrator, the ARN of the AppInstance, and the created and last-updated timestamps. All timestamps use epoch milliseconds.
     */
   var AppInstanceAdmin: js.UndefOr[Identity] = js.undefined
   

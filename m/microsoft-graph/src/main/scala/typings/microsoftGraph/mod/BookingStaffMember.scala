@@ -24,10 +24,13 @@ trait BookingStaffMember
     */
   var emailAddress: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // True indicates that a staff member will be notified via email when a booking assigned to them is created or changed.
+  var isEmailNotificationEnabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The role of the staff member in the business. Possible values are: guest, administrator, viewer, externalGuest,
-    * unknownFutureValue, scheduler and member. Note that you must use the Prefer: include-unknown-enum-members request
-    * header to get the following value(s) in this evolvable enum: scheduler, member. Required.
+    * unknownFutureValue, scheduler, teamMember. Note that you must use the Prefer: include-unknown-enum-members request
+    * header to get the following values from this evolvable enum: scheduler, teamMember. Required.
     */
   var role: js.UndefOr[BookingStaffRole] = js.undefined
   
@@ -69,6 +72,10 @@ object BookingStaffMember {
     inline def setEmailAddressNull: Self = StObject.set(x, "emailAddress", null)
     
     inline def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
+    
+    inline def setIsEmailNotificationEnabled(value: Boolean): Self = StObject.set(x, "isEmailNotificationEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setIsEmailNotificationEnabledUndefined: Self = StObject.set(x, "isEmailNotificationEnabled", js.undefined)
     
     inline def setRole(value: BookingStaffRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     

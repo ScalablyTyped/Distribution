@@ -22,6 +22,7 @@ type Arn = String
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLE
   - typings.awsSdk.awsSdkStrings.DISABLE
+  - typings.awsSdk.awsSdkStrings.USE_LOCAL_RESOURCE_SETTING
   - java.lang.String
 */
 type AutodefinedReverseFlag = _AutodefinedReverseFlag | String
@@ -91,6 +92,7 @@ type FirewallDomains = js.Array[FirewallDomainName]
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.DISABLED
+  - typings.awsSdk.awsSdkStrings.USE_LOCAL_RESOURCE_SETTING
   - java.lang.String
 */
 type FirewallFailOpenStatus = _FirewallFailOpenStatus | String
@@ -134,6 +136,7 @@ type IpAddressCount = Double
   - typings.awsSdk.awsSdkStrings.FAILED_RESOURCE_GONE
   - typings.awsSdk.awsSdkStrings.DELETING
   - typings.awsSdk.awsSdkStrings.DELETE_FAILED_FAS_EXPIRED
+  - typings.awsSdk.awsSdkStrings.UPDATING
   - java.lang.String
 */
 type IpAddressStatus = _IpAddressStatus | String
@@ -141,6 +144,8 @@ type IpAddressStatus = _IpAddressStatus | String
 type IpAddressesRequest = js.Array[IpAddressRequest]
 
 type IpAddressesResponse = js.Array[IpAddressResponse]
+
+type Ipv6 = String
 
 type ListDomainMaxResults = Double
 
@@ -170,6 +175,8 @@ type Priority = Double
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.DISABLING
   - typings.awsSdk.awsSdkStrings.DISABLED
+  - typings.awsSdk.awsSdkStrings.UPDATING_TO_USE_LOCAL_RESOURCE_SETTING
+  - typings.awsSdk.awsSdkStrings.USE_LOCAL_RESOURCE_SETTING
   - java.lang.String
 */
 type ResolverAutodefinedReverseStatus = _ResolverAutodefinedReverseStatus | String
@@ -181,6 +188,8 @@ type ResolverConfigList = js.Array[ResolverConfig]
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.DISABLING
   - typings.awsSdk.awsSdkStrings.DISABLED
+  - typings.awsSdk.awsSdkStrings.UPDATING_TO_USE_LOCAL_RESOURCE_SETTING
+  - typings.awsSdk.awsSdkStrings.USE_LOCAL_RESOURCE_SETTING
   - java.lang.String
 */
 type ResolverDNSSECValidationStatus = _ResolverDNSSECValidationStatus | String
@@ -204,6 +213,14 @@ type ResolverEndpointDirection = _ResolverEndpointDirection | String
   - java.lang.String
 */
 type ResolverEndpointStatus = _ResolverEndpointStatus | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.IPV6
+  - typings.awsSdk.awsSdkStrings.IPV4
+  - typings.awsSdk.awsSdkStrings.DUALSTACK
+  - java.lang.String
+*/
+type ResolverEndpointType = _ResolverEndpointType | String
 
 type ResolverEndpoints = js.Array[ResolverEndpoint]
 
@@ -319,9 +336,12 @@ type TargetList = js.Array[TargetAddress]
 
 type Unsigned = Double
 
+type UpdateIpAddresses = js.Array[UpdateIpAddress]
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLE
   - typings.awsSdk.awsSdkStrings.DISABLE
+  - typings.awsSdk.awsSdkStrings.USE_LOCAL_RESOURCE_SETTING
   - java.lang.String
 */
 type Validation = _Validation | String

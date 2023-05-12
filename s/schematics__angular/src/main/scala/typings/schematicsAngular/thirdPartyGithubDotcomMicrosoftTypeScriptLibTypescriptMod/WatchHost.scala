@@ -39,14 +39,9 @@ trait WatchHost extends StObject {
     path: java.lang.String,
     callback: DirectoryWatcherCallback,
     recursive: Boolean,
-    options: CompilerOptions
+    options: WatchOptions
   ): FileWatcher = js.native
-  def watchDirectory(
-    path: java.lang.String,
-    callback: DirectoryWatcherCallback,
-    recursive: Unit,
-    options: CompilerOptions
-  ): FileWatcher = js.native
+  def watchDirectory(path: java.lang.String, callback: DirectoryWatcherCallback, recursive: Unit, options: WatchOptions): FileWatcher = js.native
   
   /** Used to watch changes in source files, missing files needed to update the program or config file */
   def watchFile(path: java.lang.String, callback: FileWatcherCallback): FileWatcher = js.native
@@ -55,12 +50,12 @@ trait WatchHost extends StObject {
     path: java.lang.String,
     callback: FileWatcherCallback,
     pollingInterval: Double,
-    options: CompilerOptions
+    options: WatchOptions
   ): FileWatcher = js.native
   def watchFile(
     path: java.lang.String,
     callback: FileWatcherCallback,
     pollingInterval: Unit,
-    options: CompilerOptions
+    options: WatchOptions
   ): FileWatcher = js.native
 }

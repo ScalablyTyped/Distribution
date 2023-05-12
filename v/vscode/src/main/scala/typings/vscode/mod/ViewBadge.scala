@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ViewBadge extends StObject {
   
   /**
-    * A label to present in tooltip for the badge.
-    */
+  		 * A label to present in tooltip for the badge.
+  		 */
   val tooltip: String
   
   /**
-    * The value to present in the badge.
-    */
+  		 * The value to present in the badge.
+  		 */
   val value: Double
 }
 object ViewBadge {

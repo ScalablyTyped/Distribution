@@ -1,7 +1,7 @@
 
 # Scala.js typings for commitlint__resolve-extends
 
-Typings are for version 17.1.0
+Typings are for version 17.4.4
 
 ## Library description:
 Lint your commit messages

@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Setup options for the place details. Read more about <a
-  * href="https://developers.google.com/maps/documentation/javascript/local-context/set-options#setting_layout_and_visibility">setting
-  * layout and visibility</a>.
-  */
 trait PlaceDetailsViewSetupOptions extends StObject {
   
   var hidesOnMapClick: js.UndefOr[Boolean] = js.undefined

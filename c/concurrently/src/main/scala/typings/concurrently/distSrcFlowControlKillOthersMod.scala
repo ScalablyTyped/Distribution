@@ -22,6 +22,8 @@ object distSrcFlowControlKillOthersMod {
     /* CompleteClass */
     override def handle(commands: js.Array[Command]): Commands = js.native
     
+    /* private */ val killSignal: Any = js.native
+    
     /* private */ val logger: Any = js.native
   }
   

@@ -1,7 +1,5 @@
 package typings.nginstackIquery
 
-import typings.nginstackIquery.anon.DisableGetChildren
-import typings.nginstackIquery.anon.Field
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +27,7 @@ object libPermissionClauseGeneratorMod {
     var extrafilterClassMap_ : Any = js.native
     
     /* CompleteClass */
-    override def generate(classFieldName: Any): String | (js.Array[(js.Array[String | DisableGetChildren]) | DisableGetChildren | Field | String]) | Field = js.native
+    override def generate(classFieldName: Any): Any = js.native
     
     /* private */ /* CompleteClass */
     var iGroupUser_ : Any = js.native
@@ -51,7 +49,7 @@ object libPermissionClauseGeneratorMod {
     
     /* private */ var extrafilterClassMap_ : Any
     
-    def generate(classFieldName: Any): String | (js.Array[(js.Array[String | DisableGetChildren]) | DisableGetChildren | Field | String]) | Field
+    def generate(classFieldName: Any): Any
     
     /* private */ var iGroupUser_ : Any
     
@@ -64,7 +62,7 @@ object libPermissionClauseGeneratorMod {
       classDefManager_ : Any,
       classesWithoutExtrafilter_ : Any,
       extrafilterClassMap_ : Any,
-      generate: Any => String | (js.Array[(js.Array[String | DisableGetChildren]) | DisableGetChildren | Field | String]) | Field,
+      generate: Any => Any,
       iGroupUser_ : Any,
       insertClassPermission_ : Any
     ): PermissionClauseGenerator = {
@@ -83,9 +81,7 @@ object libPermissionClauseGeneratorMod {
       
       inline def setExtrafilterClassMap_(value: Any): Self = StObject.set(x, "extrafilterClassMap_", value.asInstanceOf[js.Any])
       
-      inline def setGenerate(
-        value: Any => String | (js.Array[(js.Array[String | DisableGetChildren]) | DisableGetChildren | Field | String]) | Field
-      ): Self = StObject.set(x, "generate", js.Any.fromFunction1(value))
+      inline def setGenerate(value: Any => Any): Self = StObject.set(x, "generate", js.Any.fromFunction1(value))
       
       inline def setIGroupUser_(value: Any): Self = StObject.set(x, "iGroupUser_", value.asInstanceOf[js.Any])
       

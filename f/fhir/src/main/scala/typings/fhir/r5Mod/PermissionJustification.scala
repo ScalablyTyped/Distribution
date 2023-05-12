@@ -9,14 +9,14 @@ trait PermissionJustification
      with BackboneElement {
   
   /**
-    * Evidence – reference to consent, or a contract, or a policy, or a regulation, or an attachment that contains a screenshot.
-    */
-  var evidence: js.UndefOr[js.Array[Reference]] = js.undefined
-  
-  /**
     * This would be a codeableconcept, or a coding, which can be constrained to , for example, the 6 grounds for processing in GDPR.
     */
-  var grounds: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var basis: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  
+  /**
+    * While any resource may be used, DocumentReference, Consent, PlanDefinition, and Contract would be most frequent
+    */
+  var evidence: js.UndefOr[js.Array[Reference]] = js.undefined
 }
 object PermissionJustification {
   
@@ -28,16 +28,16 @@ object PermissionJustification {
   @scala.inline
   implicit open class MutableBuilder[Self <: PermissionJustification] (val x: Self) extends AnyVal {
     
+    inline def setBasis(value: js.Array[CodeableConcept]): Self = StObject.set(x, "basis", value.asInstanceOf[js.Any])
+    
+    inline def setBasisUndefined: Self = StObject.set(x, "basis", js.undefined)
+    
+    inline def setBasisVarargs(value: CodeableConcept*): Self = StObject.set(x, "basis", js.Array(value*))
+    
     inline def setEvidence(value: js.Array[Reference]): Self = StObject.set(x, "evidence", value.asInstanceOf[js.Any])
     
     inline def setEvidenceUndefined: Self = StObject.set(x, "evidence", js.undefined)
     
     inline def setEvidenceVarargs(value: Reference*): Self = StObject.set(x, "evidence", js.Array(value*))
-    
-    inline def setGrounds(value: js.Array[CodeableConcept]): Self = StObject.set(x, "grounds", value.asInstanceOf[js.Any])
-    
-    inline def setGroundsUndefined: Self = StObject.set(x, "grounds", js.undefined)
-    
-    inline def setGroundsVarargs(value: CodeableConcept*): Self = StObject.set(x, "grounds", js.Array(value*))
   }
 }

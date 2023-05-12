@@ -98,6 +98,16 @@ object geo {
     val ^ : js.Any = js.native
     
     /**
+      * Decodes the specified Flexible Polyline and converts it to the LineString.
+      *
+      * @param encodedPolyline {string}
+      * @throws {Error} - if the specified data has an invalid encoding.
+      * @throws {H.lang.InvalidArgumentError} - if the third dimension type is other then ABSENT or ALTITUDE
+      */
+    /* static member */
+    inline def fromFlexiblePolyline(encodedPolyline: String): typings.heremaps.H.geo.LineString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFlexiblePolyline")(encodedPolyline.asInstanceOf[js.Any]).asInstanceOf[typings.heremaps.H.geo.LineString]
+    
+    /**
       * This method initializes a new LineString with an array of lat, lng values. Arrays are expected to have an even length with the format [lat, lng, lat, lng, ...].
       * @param latLngs {number[]} - the array of lat, lng value.
       * @return {H.geo.LineString} - The LineString containing the lat, lng values
@@ -215,11 +225,11 @@ object geo {
   /**
     * PixelProjection transforms pixel world coordinates at a certain scale (zoom level) to geographical coordinates and vice versa.
     * By default, it uses the Mercator projection to transform geographic points into the 2d plane map points, which are adjusted to the current scale.
-    * @property projection {H.geo.IProjection} - This property indicates the geographical projection that underlies the given PixelProjection.
-    * @property x {number} - This property holds the x-offset in the projection relative to the top-left corner of the screen.
-    * @property y {number} - This property holds the y-offset in the projection relative to the top-left corner of the screen.
-    * @property w {number} - This property holds a value indicating the width of the world in pixels.
-    * @property h {number} - This property holds a value indicating the height of the world in pixels.
+    * projection {H.geo.IProjection} - This property indicates the geographical projection that underlies the given PixelProjection.
+    * x {number} - This property holds the x-offset in the projection relative to the top-left corner of the screen.
+    * y {number} - This property holds the y-offset in the projection relative to the top-left corner of the screen.
+    * w {number} - This property holds a value indicating the width of the world in pixels.
+    * h {number} - This property holds a value indicating the height of the world in pixels.
     */
   @JSGlobal("H.geo.PixelProjection")
   @js.native
@@ -238,10 +248,10 @@ object geo {
   
   /**
     * Class represents a geographical point, which is defined by the latitude, longitude and optional altitude.
-    * @property lat {H.geo.Latitude} - The latitude coordinate.
-    * @property lng {H.geo.Longitude} - The longitude coordinate.
-    * @property alt {H.geo.Altitude} - The altitude coordinate.
-    * @property ctx {H.geo.AltitudeContext} - The altitude context.
+    * lat {H.geo.Latitude} - The latitude coordinate.
+    * lng {H.geo.Longitude} - The longitude coordinate.
+    * alt {H.geo.Altitude} - The altitude coordinate.
+    * ctx {H.geo.AltitudeContext} - The altitude context.
     */
   @JSGlobal("H.geo.Point")
   @js.native
@@ -250,10 +260,10 @@ object geo {
        with typings.heremaps.H.geo.Point {
     /**
       * Constructor
-      * @property lat {H.geo.Latitude} - The latitude coordinate.
-      * @property lng {H.geo.Longitude} - The longitude coordinate.
-      * @property opt_alt {H.geo.Altitude=} - The altitude coordinate.
-      * @property opt_ctx {H.geo.AltitudeContext=} - The altitude context.
+      * lat {H.geo.Latitude} - The latitude coordinate.
+      * lng {H.geo.Longitude} - The longitude coordinate.
+      * opt_alt {H.geo.Altitude=} - The altitude coordinate.
+      * opt_ctx {H.geo.AltitudeContext=} - The altitude context.
       */
     def this(lat: Latitude, lng: Longitude) = this()
     def this(lat: Latitude, lng: Longitude, opt_alt: Altitude) = this()

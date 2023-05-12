@@ -8,20 +8,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libBlankNodeMod {
   
-  // tslint:disable-next-line:no-unnecessary-class
-  @JSImport("rdf-ext/lib/BlankNode", JSImport.Namespace)
+  @JSImport("rdf-ext/lib/BlankNode", JSImport.Default)
   @js.native
-  open class ^ protected ()
-    extends StObject
-       with BlankNodeExt {
+  open class default protected () extends BlankNodeExt {
     def this(id: String) = this()
   }
   
-  // tslint:disable-next-line:no-unnecessary-class
+  @JSImport("rdf-ext/lib/BlankNode", "BlankNodeExt")
   @js.native
-  trait BlankNodeExt
+  open class BlankNodeExt protected ()
     extends StObject
        with BlankNode {
+    def this(id: String) = this()
     
     def toCanonical(): String = js.native
     

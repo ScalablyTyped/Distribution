@@ -18,6 +18,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distSrcUtilsUndoManagerMod {
   
+  @JSImport("yjs/dist/src/utils/UndoManager", "StackItem")
+  @js.native
+  open class StackItem protected () extends StObject {
+    /**
+      * @param {DeleteSet} deletions
+      * @param {DeleteSet} insertions
+      */
+    def this(deletions: DeleteSet, insertions: DeleteSet) = this()
+    
+    var deletions: DeleteSet = js.native
+    
+    var insertions: DeleteSet = js.native
+    
+    /**
+      * Use this to save and restore metadata like selection range
+      */
+    var meta: Map[Any, Any] = js.native
+  }
+  
   @JSImport("yjs/dist/src/utils/UndoManager", "UndoManager")
   @js.native
   open class UndoManager protected () extends Observable[
@@ -145,35 +164,6 @@ object distSrcUtilsUndoManagerMod {
       * @type {boolean}
       */
     var undoing: Boolean = js.native
-  }
-  
-  trait StackItem extends StObject {
-    
-    var deletions: DeleteSet
-    
-    var insertions: DeleteSet
-    
-    /**
-      * Use this to save and restore metadata like selection range
-      */
-    var meta: Map[Any, Any]
-  }
-  object StackItem {
-    
-    inline def apply(deletions: DeleteSet, insertions: DeleteSet, meta: Map[Any, Any]): StackItem = {
-      val __obj = js.Dynamic.literal(deletions = deletions.asInstanceOf[js.Any], insertions = insertions.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
-      __obj.asInstanceOf[StackItem]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: StackItem] (val x: Self) extends AnyVal {
-      
-      inline def setDeletions(value: DeleteSet): Self = StObject.set(x, "deletions", value.asInstanceOf[js.Any])
-      
-      inline def setInsertions(value: DeleteSet): Self = StObject.set(x, "insertions", value.asInstanceOf[js.Any])
-      
-      inline def setMeta(value: Map[Any, Any]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
-    }
   }
   
   trait UndoManagerOptions extends StObject {

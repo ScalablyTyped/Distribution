@@ -9,7 +9,7 @@ trait MarginStyle extends StObject {
   /**
     * This Boolean value controls whether to display sheet margins.
     */
-  var Show: js.UndefOr[scala.Boolean] = js.undefined
+  var Show: js.UndefOr[Boolean] = js.undefined
 }
 object MarginStyle {
   
@@ -21,7 +21,7 @@ object MarginStyle {
   @scala.inline
   implicit open class MutableBuilder[Self <: MarginStyle] (val x: Self) extends AnyVal {
     
-    inline def setShow(value: scala.Boolean): Self = StObject.set(x, "Show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "Show", value.asInstanceOf[js.Any])
     
     inline def setShowUndefined: Self = StObject.set(x, "Show", js.undefined)
   }

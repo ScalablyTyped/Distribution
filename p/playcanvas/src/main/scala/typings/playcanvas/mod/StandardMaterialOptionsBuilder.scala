@@ -14,7 +14,7 @@ trait StandardMaterialOptionsBuilder extends StObject {
   
   def _updateEnvOptions(options: Any, stdMat: Any, scene: Any): Unit
   
-  def _updateLightOptions(options: Any, stdMat: Any, objDefs: Any, sortedLights: Any, staticLightList: Any): Unit
+  def _updateLightOptions(options: Any, scene: Any, stdMat: Any, objDefs: Any, sortedLights: Any, staticLightList: Any): Unit
   
   def _updateMaterialOptions(options: Any, stdMat: Any): Unit
   
@@ -62,7 +62,7 @@ object StandardMaterialOptionsBuilder {
     _getMapTransformID: (Any, Any) => Any,
     _mapXForms: js.Array[Any],
     _updateEnvOptions: (Any, Any, Any) => Unit,
-    _updateLightOptions: (Any, Any, Any, Any, Any) => Unit,
+    _updateLightOptions: (Any, Any, Any, Any, Any, Any) => Unit,
     _updateMaterialOptions: (Any, Any) => Unit,
     _updateMinOptions: (Any, Any) => Unit,
     _updateSharedOptions: (Any, Any, Any, Any, Any) => Unit,
@@ -71,7 +71,7 @@ object StandardMaterialOptionsBuilder {
     updateMinRef: (Any, Any, Any, Any, Any, Any, Any) => Unit,
     updateRef: (Any, Any, Any, Any, Any, Any, Any) => Unit
   ): StandardMaterialOptionsBuilder = {
-    val __obj = js.Dynamic.literal(_collectLights = js.Any.fromFunction5(_collectLights), _getMapTransformID = js.Any.fromFunction2(_getMapTransformID), _mapXForms = _mapXForms.asInstanceOf[js.Any], _updateEnvOptions = js.Any.fromFunction3(_updateEnvOptions), _updateLightOptions = js.Any.fromFunction5(_updateLightOptions), _updateMaterialOptions = js.Any.fromFunction2(_updateMaterialOptions), _updateMinOptions = js.Any.fromFunction2(_updateMinOptions), _updateSharedOptions = js.Any.fromFunction5(_updateSharedOptions), _updateTexOptions = js.Any.fromFunction8(_updateTexOptions), _updateUVOptions = js.Any.fromFunction4(_updateUVOptions), updateMinRef = js.Any.fromFunction7(updateMinRef), updateRef = js.Any.fromFunction7(updateRef))
+    val __obj = js.Dynamic.literal(_collectLights = js.Any.fromFunction5(_collectLights), _getMapTransformID = js.Any.fromFunction2(_getMapTransformID), _mapXForms = _mapXForms.asInstanceOf[js.Any], _updateEnvOptions = js.Any.fromFunction3(_updateEnvOptions), _updateLightOptions = js.Any.fromFunction6(_updateLightOptions), _updateMaterialOptions = js.Any.fromFunction2(_updateMaterialOptions), _updateMinOptions = js.Any.fromFunction2(_updateMinOptions), _updateSharedOptions = js.Any.fromFunction5(_updateSharedOptions), _updateTexOptions = js.Any.fromFunction8(_updateTexOptions), _updateUVOptions = js.Any.fromFunction4(_updateUVOptions), updateMinRef = js.Any.fromFunction7(updateMinRef), updateRef = js.Any.fromFunction7(updateRef))
     __obj.asInstanceOf[StandardMaterialOptionsBuilder]
   }
   
@@ -92,7 +92,7 @@ object StandardMaterialOptionsBuilder {
     
     inline def set_updateEnvOptions(value: (Any, Any, Any) => Unit): Self = StObject.set(x, "_updateEnvOptions", js.Any.fromFunction3(value))
     
-    inline def set_updateLightOptions(value: (Any, Any, Any, Any, Any) => Unit): Self = StObject.set(x, "_updateLightOptions", js.Any.fromFunction5(value))
+    inline def set_updateLightOptions(value: (Any, Any, Any, Any, Any, Any) => Unit): Self = StObject.set(x, "_updateLightOptions", js.Any.fromFunction6(value))
     
     inline def set_updateMaterialOptions(value: (Any, Any) => Unit): Self = StObject.set(x, "_updateMaterialOptions", js.Any.fromFunction2(value))
     

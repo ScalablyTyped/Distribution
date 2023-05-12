@@ -38,9 +38,19 @@ trait Margin extends StObject {
   var opacity: js.UndefOr[Double] = js.undefined
   
   /**
+    * 
+    */
+  var panVisible: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Specifies the position of the control bar.
     */
   var verticalAlignment: js.UndefOr[VerticalEdge] = js.undefined
+  
+  /**
+    * 
+    */
+  var zoomVisible: js.UndefOr[Boolean] = js.undefined
 }
 object Margin {
   
@@ -76,8 +86,16 @@ object Margin {
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
+    inline def setPanVisible(value: Boolean): Self = StObject.set(x, "panVisible", value.asInstanceOf[js.Any])
+    
+    inline def setPanVisibleUndefined: Self = StObject.set(x, "panVisible", js.undefined)
+    
     inline def setVerticalAlignment(value: VerticalEdge): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
     
     inline def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
+    
+    inline def setZoomVisible(value: Boolean): Self = StObject.set(x, "zoomVisible", value.asInstanceOf[js.Any])
+    
+    inline def setZoomVisibleUndefined: Self = StObject.set(x, "zoomVisible", js.undefined)
   }
 }

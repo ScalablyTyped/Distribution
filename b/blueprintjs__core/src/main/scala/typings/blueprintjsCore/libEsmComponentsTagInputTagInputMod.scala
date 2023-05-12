@@ -11,7 +11,7 @@ import typings.blueprintjsCore.libEsmCommonPropsMod.IIntentProps
 import typings.blueprintjsCore.libEsmCommonPropsMod.IProps
 import typings.blueprintjsCore.libEsmCommonPropsMod.MaybeElement
 import typings.blueprintjsCore.libEsmComponentsTagTagMod.TagProps
-import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsIcons.libEsmGeneratedIcons16pxBlueprintIcons16Mod.BlueprintIcons16Id
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
 import typings.react.mod.KeyboardEvent
@@ -129,6 +129,20 @@ object libEsmComponentsTagInputTagInputMod {
       */
     var addOnPaste: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Whether the component should automatically resize as a user types in the text input.
+      * This will have no effect when `fill={true}`.
+      *
+      * @default false
+      */
+    var autoResize: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Optional child elements which will be rendered between the selected tags and
+      * the text input. Rendering children is usually unnecessary.
+      *
+      * @default undefined
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
@@ -146,6 +160,7 @@ object libEsmComponentsTagInputTagInputMod {
     /**
       * React props to pass to the `<input>` element.
       * Note that `ref` and `key` are not supported here; use `inputRef` below.
+      * Also note that `inputProps.style.width` will be overriden if `autoResize={true}`.
       */
     var inputProps: js.UndefOr[HTMLInputProps] = js.undefined
     
@@ -275,6 +290,10 @@ object libEsmComponentsTagInputTagInputMod {
       inline def setAddOnPaste(value: Boolean): Self = StObject.set(x, "addOnPaste", value.asInstanceOf[js.Any])
       
       inline def setAddOnPasteUndefined: Self = StObject.set(x, "addOnPaste", js.undefined)
+      
+      inline def setAutoResize(value: Boolean): Self = StObject.set(x, "autoResize", value.asInstanceOf[js.Any])
+      
+      inline def setAutoResizeUndefined: Self = StObject.set(x, "autoResize", js.undefined)
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

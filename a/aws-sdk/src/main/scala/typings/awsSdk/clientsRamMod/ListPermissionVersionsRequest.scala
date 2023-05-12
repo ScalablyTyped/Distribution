@@ -17,7 +17,7 @@ trait ListPermissionVersionsRequest extends StObject {
   var nextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies the Amazon Resoure Name (ARN) of the RAM permission whose versions you want to list. You can use the permissionVersion parameter on the AssociateResourceSharePermission operation to specify a non-default version to attach.
+    * Specifies the Amazon Resource Name (ARN) of the RAM permission whose versions you want to list. You can use the permissionVersion parameter on the AssociateResourceSharePermission operation to specify a non-default version to attach.
     */
   var permissionArn: String
 }

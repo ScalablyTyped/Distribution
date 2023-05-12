@@ -17,7 +17,7 @@ trait StopTaskRequest extends StObject {
   var reason: js.UndefOr[String] = js.undefined
   
   /**
-    * The task ID or full Amazon Resource Name (ARN) of the task to stop.
+    * The task ID of the task to stop.
     */
   var task: String
 }

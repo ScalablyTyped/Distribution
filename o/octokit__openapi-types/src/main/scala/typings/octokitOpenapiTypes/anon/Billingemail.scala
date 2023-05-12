@@ -193,6 +193,18 @@ trait Billingemail extends StObject {
   var secret_scanning_enabled_for_new_repositories: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * @description An optional URL string to display to contributors who are blocked from pushing a secret.
+    * @example https://github.com/test-org/test-repo/blob/main/README.md
+    */
+  var secret_scanning_push_protection_custom_link: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * @description Whether a custom link is shown to contributors who are blocked from pushing a secret by push protection.
+    * @example false
+    */
+  var secret_scanning_push_protection_custom_link_enabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * @description Whether secret scanning push protection is automatically enabled for new repositories and repositories
     * transferred to this organization.
     *
@@ -419,6 +431,16 @@ object Billingemail {
     inline def setSecret_scanning_enabled_for_new_repositories(value: Boolean): Self = StObject.set(x, "secret_scanning_enabled_for_new_repositories", value.asInstanceOf[js.Any])
     
     inline def setSecret_scanning_enabled_for_new_repositoriesUndefined: Self = StObject.set(x, "secret_scanning_enabled_for_new_repositories", js.undefined)
+    
+    inline def setSecret_scanning_push_protection_custom_link(value: String): Self = StObject.set(x, "secret_scanning_push_protection_custom_link", value.asInstanceOf[js.Any])
+    
+    inline def setSecret_scanning_push_protection_custom_linkNull: Self = StObject.set(x, "secret_scanning_push_protection_custom_link", null)
+    
+    inline def setSecret_scanning_push_protection_custom_linkUndefined: Self = StObject.set(x, "secret_scanning_push_protection_custom_link", js.undefined)
+    
+    inline def setSecret_scanning_push_protection_custom_link_enabled(value: Boolean): Self = StObject.set(x, "secret_scanning_push_protection_custom_link_enabled", value.asInstanceOf[js.Any])
+    
+    inline def setSecret_scanning_push_protection_custom_link_enabledUndefined: Self = StObject.set(x, "secret_scanning_push_protection_custom_link_enabled", js.undefined)
     
     inline def setSecret_scanning_push_protection_enabled_for_new_repositories(value: Boolean): Self = StObject.set(x, "secret_scanning_push_protection_enabled_for_new_repositories", value.asInstanceOf[js.Any])
     

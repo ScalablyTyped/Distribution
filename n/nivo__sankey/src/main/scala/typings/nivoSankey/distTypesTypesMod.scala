@@ -26,6 +26,7 @@ import typings.nivoSankey.nivoSankeyStrings.vertical
 import typings.react.mod.FunctionComponent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.reactSpringCore.mod.SpringConfig
 import typings.std.Element
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
@@ -466,7 +467,7 @@ object distTypesTypesMod {
     inline def input: typings.nivoSankey.nivoSankeyStrings.input = "input".asInstanceOf[typings.nivoSankey.nivoSankeyStrings.input]
   }
   
-  /* Inlined std.Partial<@nivo/sankey.@nivo/sankey/dist/types/types.SankeyCommonProps<N, L>> & @nivo/sankey.@nivo/sankey/dist/types/types.SankeyDataProps<N, L> & @nivo/core.@nivo/core.Dimensions & @nivo/core.@nivo/core.ModernMotionProps */
+  /* Inlined std.Partial<@nivo/sankey.@nivo/sankey/dist/types/types.SankeyCommonProps<N, L>> & @nivo/sankey.@nivo/sankey/dist/types/types.SankeyDataProps<N, L> & @nivo/core.@nivo/core.Dimensions & @nivo/core.@nivo/core.MotionProps */
   trait SankeySvgProps[N /* <: DefaultNode */, L /* <: DefaultLink */] extends StObject {
     
     var align: js.UndefOr[SankeyAlignType | SankeyAlignFunction] = js.undefined
@@ -526,9 +527,7 @@ object distTypesTypesMod {
     
     var margin: js.UndefOr[Box] = js.undefined
     
-    var motionConfig: js.UndefOr[
-        String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-      ] = js.undefined
+    var motionConfig: js.UndefOr[String | SpringConfig] = js.undefined
     
     var nodeBorderColor: js.UndefOr[InheritedColorConfig[SankeyNodeDatum[N, L]]] = js.undefined
     
@@ -686,9 +685,7 @@ object distTypesTypesMod {
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      inline def setMotionConfig(
-        value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-      ): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
+      inline def setMotionConfig(value: String | SpringConfig): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
       
       inline def setMotionConfigUndefined: Self = StObject.set(x, "motionConfig", js.undefined)
       

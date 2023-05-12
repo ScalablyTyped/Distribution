@@ -1,6 +1,8 @@
 package typings.rcSegmented
 
 import typings.rcSegmented.mod.SegmentedValue
+import typings.rcSegmented.rcSegmentedStrings.ltr
+import typings.rcSegmented.rcSegmentedStrings.rtl
 import typings.react.mod.RefObject
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLDivElement
@@ -20,6 +22,8 @@ object esMotionThumbMod {
   trait MotionThumbInterface extends StObject {
     
     var containerRef: RefObject[HTMLDivElement]
+    
+    var direction: js.UndefOr[ltr | rtl] = js.undefined
     
     def getValueIndex(value: SegmentedValue): Double
     
@@ -52,6 +56,10 @@ object esMotionThumbMod {
     implicit open class MutableBuilder[Self <: MotionThumbInterface] (val x: Self) extends AnyVal {
       
       inline def setContainerRef(value: RefObject[HTMLDivElement]): Self = StObject.set(x, "containerRef", value.asInstanceOf[js.Any])
+      
+      inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
       inline def setGetValueIndex(value: SegmentedValue => Double): Self = StObject.set(x, "getValueIndex", js.Any.fromFunction1(value))
       

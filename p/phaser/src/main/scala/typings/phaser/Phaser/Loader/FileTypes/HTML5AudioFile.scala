@@ -3,10 +3,8 @@ package typings.phaser.Phaser.Loader.FileTypes
 import typings.phaser.Phaser.Cache.BaseCache
 import typings.phaser.Phaser.Loader.File
 import typings.phaser.Phaser.Loader.LoaderPlugin
-import typings.phaser.Phaser.Loader.MultiFile
 import typings.phaser.Phaser.Textures.TextureManager
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
-import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,10 +47,8 @@ object HTML5AudioFile {
     destroy: () => Unit,
     hasCacheConflict: () => Boolean,
     key: String,
-    linkFile: File,
     load: () => Unit,
     loader: LoaderPlugin,
-    multiFile: MultiFile,
     onError: () => Unit,
     onLoad: () => Unit,
     onProcess: () => Unit,
@@ -67,10 +63,9 @@ object HTML5AudioFile {
     state: Double,
     `type`: String,
     url: js.Object | String,
-    xhrLoader: XMLHttpRequest,
     xhrSettings: XHRSettingsObject
   ): HTML5AudioFile = {
-    val __obj = js.Dynamic.literal(addToCache = js.Any.fromFunction0(addToCache), bytesLoaded = bytesLoaded.asInstanceOf[js.Any], bytesTotal = bytesTotal.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), hasCacheConflict = js.Any.fromFunction0(hasCacheConflict), key = key.asInstanceOf[js.Any], linkFile = linkFile.asInstanceOf[js.Any], load = js.Any.fromFunction0(load), loader = loader.asInstanceOf[js.Any], multiFile = multiFile.asInstanceOf[js.Any], onError = js.Any.fromFunction0(onError), onLoad = js.Any.fromFunction0(onLoad), onProcess = js.Any.fromFunction0(onProcess), onProcessComplete = js.Any.fromFunction0(onProcessComplete), onProcessError = js.Any.fromFunction0(onProcessError), onProgress = js.Any.fromFunction0(onProgress), pendingDestroy = js.Any.fromFunction0(pendingDestroy), percentComplete = percentComplete.asInstanceOf[js.Any], resetXHR = js.Any.fromFunction0(resetXHR), setLink = js.Any.fromFunction1(setLink), src = src.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], xhrLoader = xhrLoader.asInstanceOf[js.Any], xhrSettings = xhrSettings.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addToCache = js.Any.fromFunction0(addToCache), bytesLoaded = bytesLoaded.asInstanceOf[js.Any], bytesTotal = bytesTotal.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), hasCacheConflict = js.Any.fromFunction0(hasCacheConflict), key = key.asInstanceOf[js.Any], load = js.Any.fromFunction0(load), loader = loader.asInstanceOf[js.Any], onError = js.Any.fromFunction0(onError), onLoad = js.Any.fromFunction0(onLoad), onProcess = js.Any.fromFunction0(onProcess), onProcessComplete = js.Any.fromFunction0(onProcessComplete), onProcessError = js.Any.fromFunction0(onProcessError), onProgress = js.Any.fromFunction0(onProgress), pendingDestroy = js.Any.fromFunction0(pendingDestroy), percentComplete = percentComplete.asInstanceOf[js.Any], resetXHR = js.Any.fromFunction0(resetXHR), setLink = js.Any.fromFunction1(setLink), src = src.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], xhrSettings = xhrSettings.asInstanceOf[js.Any], linkFile = null, multiFile = null, xhrLoader = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTML5AudioFile]
   }

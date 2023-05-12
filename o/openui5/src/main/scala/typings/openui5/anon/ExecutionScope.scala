@@ -23,9 +23,14 @@ trait ExecutionScope extends StObject {
   var failOnHighIssues: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The metadata that will be passed to the analyse method.
+    * The metadata that will be passed to the analysis.
     */
   var metadata: js.UndefOr[js.Object] = js.undefined
+  
+  /**
+    * This parameter allows for selection of subset of rules for the analysis
+    */
+  var preset: js.UndefOr[js.Object] = js.undefined
   
   /**
     * The rules to check.
@@ -57,6 +62,10 @@ object ExecutionScope {
     inline def setMetadata(value: js.Object): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    
+    inline def setPreset(value: js.Object): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
+    
+    inline def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
     
     inline def setRules(value: js.Array[LibName]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     

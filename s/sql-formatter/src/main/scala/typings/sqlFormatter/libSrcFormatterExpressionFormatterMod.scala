@@ -125,6 +125,9 @@ object libSrcFormatterExpressionFormatterMod {
     var `inline`: Any = js.native
     
     /* private */ /* CompleteClass */
+    var isDocComment: Any = js.native
+    
+    /* private */ /* CompleteClass */
     var isMultilineBlockComment: Any = js.native
     
     /* private */ /* CompleteClass */
@@ -254,6 +257,8 @@ object libSrcFormatterExpressionFormatterMod {
     
     /* private */ var `inline`: Any
     
+    /* private */ var isDocComment: Any
+    
     /* private */ var isMultilineBlockComment: Any
     
     /* private */ var isOnelineClause: Any
@@ -311,6 +316,7 @@ object libSrcFormatterExpressionFormatterMod {
       formatSubExpression: Any,
       index: Any,
       `inline`: Any,
+      isDocComment: Any,
       isMultilineBlockComment: Any,
       isOnelineClause: Any,
       layout: Any,
@@ -321,7 +327,7 @@ object libSrcFormatterExpressionFormatterMod {
       splitBlockComment: Any,
       withComments: Any
     ): ExpressionFormatter = {
-      val __obj = js.Dynamic.literal(cfg = cfg.asInstanceOf[js.Any], dialectCfg = dialectCfg.asInstanceOf[js.Any], format = js.Any.fromFunction1(format), formatAllColumnsAsterisk = formatAllColumnsAsterisk.asInstanceOf[js.Any], formatArraySubscript = formatArraySubscript.asInstanceOf[js.Any], formatBetweenPredicate = formatBetweenPredicate.asInstanceOf[js.Any], formatBlockComment = formatBlockComment.asInstanceOf[js.Any], formatCaseElse = formatCaseElse.asInstanceOf[js.Any], formatCaseExpression = formatCaseExpression.asInstanceOf[js.Any], formatCaseWhen = formatCaseWhen.asInstanceOf[js.Any], formatClause = formatClause.asInstanceOf[js.Any], formatClauseInIndentedStyle = formatClauseInIndentedStyle.asInstanceOf[js.Any], formatClauseInOnelineStyle = formatClauseInOnelineStyle.asInstanceOf[js.Any], formatClauseInTabularStyle = formatClauseInTabularStyle.asInstanceOf[js.Any], formatComma = formatComma.asInstanceOf[js.Any], formatComments = formatComments.asInstanceOf[js.Any], formatFunctionCall = formatFunctionCall.asInstanceOf[js.Any], formatIdentifier = formatIdentifier.asInstanceOf[js.Any], formatInlineExpression = formatInlineExpression.asInstanceOf[js.Any], formatJoin = formatJoin.asInstanceOf[js.Any], formatKeyword = formatKeyword.asInstanceOf[js.Any], formatKeywordNode = formatKeywordNode.asInstanceOf[js.Any], formatLimitClause = formatLimitClause.asInstanceOf[js.Any], formatLineComment = formatLineComment.asInstanceOf[js.Any], formatLiteral = formatLiteral.asInstanceOf[js.Any], formatLogicalOperator = formatLogicalOperator.asInstanceOf[js.Any], formatNode = formatNode.asInstanceOf[js.Any], formatNodeWithoutComments = formatNodeWithoutComments.asInstanceOf[js.Any], formatOperator = formatOperator.asInstanceOf[js.Any], formatParameter = formatParameter.asInstanceOf[js.Any], formatParenthesis = formatParenthesis.asInstanceOf[js.Any], formatPropertyAccess = formatPropertyAccess.asInstanceOf[js.Any], formatSetOperation = formatSetOperation.asInstanceOf[js.Any], formatSubExpression = formatSubExpression.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], isMultilineBlockComment = isMultilineBlockComment.asInstanceOf[js.Any], isOnelineClause = isOnelineClause.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], showKw = showKw.asInstanceOf[js.Any], showNonTabularKw = showNonTabularKw.asInstanceOf[js.Any], splitBlockComment = splitBlockComment.asInstanceOf[js.Any], withComments = withComments.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(cfg = cfg.asInstanceOf[js.Any], dialectCfg = dialectCfg.asInstanceOf[js.Any], format = js.Any.fromFunction1(format), formatAllColumnsAsterisk = formatAllColumnsAsterisk.asInstanceOf[js.Any], formatArraySubscript = formatArraySubscript.asInstanceOf[js.Any], formatBetweenPredicate = formatBetweenPredicate.asInstanceOf[js.Any], formatBlockComment = formatBlockComment.asInstanceOf[js.Any], formatCaseElse = formatCaseElse.asInstanceOf[js.Any], formatCaseExpression = formatCaseExpression.asInstanceOf[js.Any], formatCaseWhen = formatCaseWhen.asInstanceOf[js.Any], formatClause = formatClause.asInstanceOf[js.Any], formatClauseInIndentedStyle = formatClauseInIndentedStyle.asInstanceOf[js.Any], formatClauseInOnelineStyle = formatClauseInOnelineStyle.asInstanceOf[js.Any], formatClauseInTabularStyle = formatClauseInTabularStyle.asInstanceOf[js.Any], formatComma = formatComma.asInstanceOf[js.Any], formatComments = formatComments.asInstanceOf[js.Any], formatFunctionCall = formatFunctionCall.asInstanceOf[js.Any], formatIdentifier = formatIdentifier.asInstanceOf[js.Any], formatInlineExpression = formatInlineExpression.asInstanceOf[js.Any], formatJoin = formatJoin.asInstanceOf[js.Any], formatKeyword = formatKeyword.asInstanceOf[js.Any], formatKeywordNode = formatKeywordNode.asInstanceOf[js.Any], formatLimitClause = formatLimitClause.asInstanceOf[js.Any], formatLineComment = formatLineComment.asInstanceOf[js.Any], formatLiteral = formatLiteral.asInstanceOf[js.Any], formatLogicalOperator = formatLogicalOperator.asInstanceOf[js.Any], formatNode = formatNode.asInstanceOf[js.Any], formatNodeWithoutComments = formatNodeWithoutComments.asInstanceOf[js.Any], formatOperator = formatOperator.asInstanceOf[js.Any], formatParameter = formatParameter.asInstanceOf[js.Any], formatParenthesis = formatParenthesis.asInstanceOf[js.Any], formatPropertyAccess = formatPropertyAccess.asInstanceOf[js.Any], formatSetOperation = formatSetOperation.asInstanceOf[js.Any], formatSubExpression = formatSubExpression.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], isDocComment = isDocComment.asInstanceOf[js.Any], isMultilineBlockComment = isMultilineBlockComment.asInstanceOf[js.Any], isOnelineClause = isOnelineClause.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], showKw = showKw.asInstanceOf[js.Any], showNonTabularKw = showNonTabularKw.asInstanceOf[js.Any], splitBlockComment = splitBlockComment.asInstanceOf[js.Any], withComments = withComments.asInstanceOf[js.Any])
       __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExpressionFormatter]
     }
@@ -400,6 +406,8 @@ object libSrcFormatterExpressionFormatterMod {
       inline def setIndex(value: Any): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
       inline def setInline(value: Any): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      
+      inline def setIsDocComment(value: Any): Self = StObject.set(x, "isDocComment", value.asInstanceOf[js.Any])
       
       inline def setIsMultilineBlockComment(value: Any): Self = StObject.set(x, "isMultilineBlockComment", value.asInstanceOf[js.Any])
       

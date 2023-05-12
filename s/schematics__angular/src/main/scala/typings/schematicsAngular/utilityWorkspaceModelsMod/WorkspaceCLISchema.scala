@@ -7,8 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WorkspaceCLISchema extends StObject {
   
-  var defaultCollection: js.UndefOr[String] = js.undefined
-  
   var schematicCollections: js.UndefOr[js.Array[String]] = js.undefined
   
   var warnings: js.UndefOr[Record[String, Boolean]] = js.undefined
@@ -22,10 +20,6 @@ object WorkspaceCLISchema {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: WorkspaceCLISchema] (val x: Self) extends AnyVal {
-    
-    inline def setDefaultCollection(value: String): Self = StObject.set(x, "defaultCollection", value.asInstanceOf[js.Any])
-    
-    inline def setDefaultCollectionUndefined: Self = StObject.set(x, "defaultCollection", js.undefined)
     
     inline def setSchematicCollections(value: js.Array[String]): Self = StObject.set(x, "schematicCollections", value.asInstanceOf[js.Any])
     

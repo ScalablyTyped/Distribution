@@ -12,6 +12,11 @@ trait CreateUserMessage extends StObject {
   var AccessString: typings.awsSdk.clientsElasticacheMod.AccessString
   
   /**
+    * Specifies how to authenticate the user.
+    */
+  var AuthenticationMode: js.UndefOr[typings.awsSdk.clientsElasticacheMod.AuthenticationMode] = js.undefined
+  
+  /**
     * The current supported value is Redis. 
     */
   var Engine: EngineType
@@ -52,6 +57,10 @@ object CreateUserMessage {
   implicit open class MutableBuilder[Self <: CreateUserMessage] (val x: Self) extends AnyVal {
     
     inline def setAccessString(value: AccessString): Self = StObject.set(x, "AccessString", value.asInstanceOf[js.Any])
+    
+    inline def setAuthenticationMode(value: AuthenticationMode): Self = StObject.set(x, "AuthenticationMode", value.asInstanceOf[js.Any])
+    
+    inline def setAuthenticationModeUndefined: Self = StObject.set(x, "AuthenticationMode", js.undefined)
     
     inline def setEngine(value: EngineType): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     

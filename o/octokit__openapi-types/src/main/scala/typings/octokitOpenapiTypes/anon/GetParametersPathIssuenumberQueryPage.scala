@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersPathIssuenumberQueryPage extends StObject {
   
+  /** List issue events */
   var get: ParametersPathIssuenumberQueryPage
 }
 object GetParametersPathIssuenumberQueryPage {

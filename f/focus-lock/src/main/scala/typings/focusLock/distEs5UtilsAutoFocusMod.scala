@@ -13,5 +13,5 @@ object distEs5UtilsAutoFocusMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def pickAutofocus(nodesIndexes: js.Array[NodeIndex], orderedNodes: js.Array[HTMLElement], groups: js.Array[Element]): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("pickAutofocus")(nodesIndexes.asInstanceOf[js.Any], orderedNodes.asInstanceOf[js.Any], groups.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  inline def pickAutofocus(nodesIndexes: js.Array[NodeIndex], orderedNodes: js.Array[HTMLElement], groups: js.Array[Element]): js.UndefOr[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("pickAutofocus")(nodesIndexes.asInstanceOf[js.Any], orderedNodes.asInstanceOf[js.Any], groups.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[HTMLElement]]
 }

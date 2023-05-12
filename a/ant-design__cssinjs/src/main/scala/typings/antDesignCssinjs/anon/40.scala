@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MaskMode
+import typings.csstype.mod.Property.FontVariant
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `40` extends StObject {
   
   var value: js.UndefOr[
-    MaskMode | (js.Array[
-      (Extract[js.UndefOr[MaskMode | js.Array[NonNullable[js.UndefOr[MaskMode]]]], String]) | NonNullable[js.UndefOr[MaskMode]]
+    FontVariant | (js.Array[
+      (Extract[js.UndefOr[FontVariant | js.Array[NonNullable[js.UndefOr[FontVariant]]]], String]) | NonNullable[js.UndefOr[FontVariant]]
     ])
   ] = js.native
 }

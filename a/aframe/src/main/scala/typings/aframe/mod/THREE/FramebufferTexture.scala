@@ -10,5 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class FramebufferTexture protected ()
   extends typings.three.mod.FramebufferTexture {
+  /**
+    * Create a new instance of {@link FramebufferTexture}
+    * @param width The width of the texture.
+    * @param height The height of the texture.
+    * @param format See {@link Texture.format | .format}. Default {@link THREE.RGBAFormat}.
+    */
   def this(width: Double, height: Double, format: PixelFormat) = this()
 }

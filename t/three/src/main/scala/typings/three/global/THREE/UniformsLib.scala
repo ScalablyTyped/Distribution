@@ -1,13 +1,14 @@
 package typings.three.global.THREE
 
 import typings.three.anon.AlphaMap
+import typings.three.anon.AlphaTest
 import typings.three.anon.AmbientLightColor
 import typings.three.anon.AoMap
-import typings.three.anon.BackgroundBlurriness
 import typings.three.anon.BumpMap
-import typings.three.anon.Diffuse
+import typings.three.anon.Center
 import typings.three.anon.DisplacementBias
 import typings.three.anon.EmissiveMap
+import typings.three.anon.EnvMap
 import typings.three.anon.FogColor
 import typings.three.anon.GradientMap
 import typings.three.anon.LightMap
@@ -52,8 +53,8 @@ object UniformsLib {
   
   @JSGlobal("THREE.UniformsLib.envmap")
   @js.native
-  def envmap: BackgroundBlurriness = js.native
-  inline def envmap_=(x: BackgroundBlurriness): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("envmap")(x.asInstanceOf[js.Any])
+  def envmap: EnvMap = js.native
+  inline def envmap_=(x: EnvMap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("envmap")(x.asInstanceOf[js.Any])
   
   @JSGlobal("THREE.UniformsLib.fog")
   @js.native
@@ -87,8 +88,8 @@ object UniformsLib {
   
   @JSGlobal("THREE.UniformsLib.points")
   @js.native
-  def points: Diffuse = js.native
-  inline def points_=(x: Diffuse): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("points")(x.asInstanceOf[js.Any])
+  def points: AlphaTest = js.native
+  inline def points_=(x: AlphaTest): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("points")(x.asInstanceOf[js.Any])
   
   @JSGlobal("THREE.UniformsLib.roughnessmap")
   @js.native
@@ -99,4 +100,9 @@ object UniformsLib {
   @js.native
   def specularmap: SpecularMap = js.native
   inline def specularmap_=(x: SpecularMap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("specularmap")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("THREE.UniformsLib.sprite")
+  @js.native
+  def sprite: Center = js.native
+  inline def sprite_=(x: Center): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sprite")(x.asInstanceOf[js.Any])
 }

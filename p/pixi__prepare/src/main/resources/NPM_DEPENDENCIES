@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pixi/prepare" : "7.0.4"
+      "@pixi/prepare" : "7.2.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@pixi/prepare" : "7.0.4"
+      "@pixi/prepare" : "7.2.4"
     }
   ],
   "compile-devDependencies" : [

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-image
 
-Typings are for version 4.0.3
+Typings are for version 4.1.0
 
 ## Library description:
 React Image is an <img> tag replacement for react, featuring preloader and multiple image fallback support

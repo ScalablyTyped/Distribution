@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ClientidString extends StObject {
   
-  /** The client ID of the GitHub app. */
   var client_id: String
 }
 object ClientidString {

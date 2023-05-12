@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@hapi/topo" : "6.0.0"
+      "@hapi/topo" : "6.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@hapi/topo" : "6.0.0"
+      "@hapi/topo" : "6.0.2"
     }
   ],
   "compile-devDependencies" : [

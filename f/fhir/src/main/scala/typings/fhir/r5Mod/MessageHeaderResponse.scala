@@ -13,8 +13,6 @@ trait MessageHeaderResponse
   
   var _code: js.UndefOr[Element] = js.undefined
   
-  var _identifier: js.UndefOr[Element] = js.undefined
-  
   /**
     * This is a generic response to the request message. Specific data for the response will be found in MessageHeader.focus.
     */
@@ -26,13 +24,13 @@ trait MessageHeaderResponse
   var details: js.UndefOr[Reference] = js.undefined
   
   /**
-    * The MessageHeader.id of the message to which this message is a response.
+    * The Bundle.identifier of the message to which this message is a response.
     */
-  var identifier: String
+  var identifier: Identifier
 }
 object MessageHeaderResponse {
   
-  inline def apply(code: ok | `transient-error` | `fatal-error`, identifier: String): MessageHeaderResponse = {
+  inline def apply(code: ok | `transient-error` | `fatal-error`, identifier: Identifier): MessageHeaderResponse = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageHeaderResponse]
   }
@@ -46,14 +44,10 @@ object MessageHeaderResponse {
     
     inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     inline def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
     
     inline def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
-    
-    inline def set_identifier(value: Element): Self = StObject.set(x, "_identifier", value.asInstanceOf[js.Any])
-    
-    inline def set_identifierUndefined: Self = StObject.set(x, "_identifier", js.undefined)
   }
 }

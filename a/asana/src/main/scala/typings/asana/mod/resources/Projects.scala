@@ -23,7 +23,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * change the team of a project via the API. Non-organization workspaces do not
   * have teams and so you should not specify the team of project in a
   * regular workspace.
-  * @class
   * @param {Dispatcher} dispatcher The API dispatcher
   */
 @js.native

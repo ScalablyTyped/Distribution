@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BinaryExpression
   extends StObject
      with Expression
-     with Declaration {
+     with Declaration
+     with JSDocContainer
+     with HasJSDoc {
   
   @JSName("kind")
   val kind_BinaryExpression: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.SyntaxKind.BinaryExpression = js.native

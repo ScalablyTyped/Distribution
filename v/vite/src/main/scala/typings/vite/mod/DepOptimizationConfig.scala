@@ -59,6 +59,15 @@ trait DepOptimizationConfig extends StObject {
     * @experimental
     */
   var needsInterop: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /**
+    * Automatic dependency discovery. When `noDiscovery` is true, only dependencies
+    * listed in `include` will be optimized. The scanner isn't run for cold start
+    * in this case. CJS-only dependencies must be present in `include` during dev.
+    * @default false
+    * @experimental
+    */
+  var noDiscovery: js.UndefOr[Boolean] = js.undefined
 }
 object DepOptimizationConfig {
   
@@ -101,5 +110,9 @@ object DepOptimizationConfig {
     inline def setNeedsInteropUndefined: Self = StObject.set(x, "needsInterop", js.undefined)
     
     inline def setNeedsInteropVarargs(value: String*): Self = StObject.set(x, "needsInterop", js.Array(value*))
+    
+    inline def setNoDiscovery(value: Boolean): Self = StObject.set(x, "noDiscovery", value.asInstanceOf[js.Any])
+    
+    inline def setNoDiscoveryUndefined: Self = StObject.set(x, "noDiscovery", js.undefined)
   }
 }

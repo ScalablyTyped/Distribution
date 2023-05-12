@@ -10,6 +10,7 @@ import typings.slate.anon.Split
 import typings.slate.distInterfacesEditorMod.Editor
 import typings.slate.distInterfacesElementMod.Element
 import typings.slate.distInterfacesNodeMod.Node
+import typings.slate.distInterfacesTransformsNodeMod.NodeInsertNodesOptions
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,43 +18,63 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTransformsNodeMod {
   
+  @JSImport("slate/dist/transforms-node", "insertNodes")
   @js.native
-  trait NodeTransforms extends StObject {
-    
-    def insertNodes[T /* <: Node */](editor: Editor, nodes: js.Array[Node]): Unit = js.native
-    def insertNodes[T /* <: Node */](editor: Editor, nodes: js.Array[Node], options: At[T]): Unit = js.native
-    def insertNodes[T /* <: Node */](editor: Editor, nodes: Node): Unit = js.native
-    def insertNodes[T /* <: Node */](editor: Editor, nodes: Node, options: At[T]): Unit = js.native
-    
-    def liftNodes[T /* <: Node */](editor: Editor): Unit = js.native
-    def liftNodes[T /* <: Node */](editor: Editor, options: Match[T]): Unit = js.native
-    
-    def mergeNodes[T /* <: Node */](editor: Editor): Unit = js.native
-    def mergeNodes[T /* <: Node */](editor: Editor, options: Hanging[T]): Unit = js.native
-    
-    def moveNodes[T /* <: Node */](editor: Editor, options: Mode[T]): Unit = js.native
-    
-    def removeNodes[T /* <: Node */](editor: Editor): Unit = js.native
-    def removeNodes[T /* <: Node */](editor: Editor, options: Hanging[T]): Unit = js.native
-    
-    def setNodes[T /* <: Node */](editor: Editor, props: Partial[T]): Unit = js.native
-    def setNodes[T /* <: Node */](editor: Editor, props: Partial[T], options: Compare[T]): Unit = js.native
-    
-    def splitNodes[T /* <: Node */](editor: Editor): Unit = js.native
-    def splitNodes[T /* <: Node */](editor: Editor, options: Always[T]): Unit = js.native
-    
-    def unsetNodes[T /* <: Node */](editor: Editor, props: String): Unit = js.native
-    def unsetNodes[T /* <: Node */](editor: Editor, props: String, options: Split[T]): Unit = js.native
-    def unsetNodes[T /* <: Node */](editor: Editor, props: js.Array[String]): Unit = js.native
-    def unsetNodes[T /* <: Node */](editor: Editor, props: js.Array[String], options: Split[T]): Unit = js.native
-    
-    def unwrapNodes[T /* <: Node */](editor: Editor): Unit = js.native
-    def unwrapNodes[T /* <: Node */](editor: Editor, options: Split[T]): Unit = js.native
-    
-    def wrapNodes[T /* <: Node */](editor: Editor, element: Element): Unit = js.native
-    def wrapNodes[T /* <: Node */](editor: Editor, element: Element, options: Split[T]): Unit = js.native
-  }
-  @JSImport("slate/dist/transforms/node", "NodeTransforms")
+  val insertNodes: js.Function3[
+    /* editor */ Editor, 
+    /* nodes */ Node | js.Array[Node], 
+    /* options */ js.UndefOr[NodeInsertNodesOptions[Node]], 
+    Unit
+  ] = js.native
+  
+  @JSImport("slate/dist/transforms-node", "liftNodes")
   @js.native
-  val NodeTransforms: typings.slate.distTransformsNodeMod.NodeTransforms = js.native
+  val liftNodes: js.Function2[/* editor */ Editor, /* options */ js.UndefOr[At[Node]], Unit] = js.native
+  
+  @JSImport("slate/dist/transforms-node", "mergeNodes")
+  @js.native
+  val mergeNodes: js.Function2[/* editor */ Editor, /* options */ js.UndefOr[Hanging[Node]], Unit] = js.native
+  
+  @JSImport("slate/dist/transforms-node", "moveNodes")
+  @js.native
+  val moveNodes: js.Function2[/* editor */ Editor, /* options */ Match[Node], Unit] = js.native
+  
+  @JSImport("slate/dist/transforms-node", "removeNodes")
+  @js.native
+  val removeNodes: js.Function2[/* editor */ Editor, /* options */ js.UndefOr[Hanging[Node]], Unit] = js.native
+  
+  @JSImport("slate/dist/transforms-node", "setNodes")
+  @js.native
+  val setNodes: js.Function3[
+    /* editor */ Editor, 
+    /* props */ Partial[Node], 
+    /* options */ js.UndefOr[Compare[Node]], 
+    Unit
+  ] = js.native
+  
+  @JSImport("slate/dist/transforms-node", "splitNodes")
+  @js.native
+  val splitNodes: js.Function2[/* editor */ Editor, /* options */ js.UndefOr[Always[Node]], Unit] = js.native
+  
+  @JSImport("slate/dist/transforms-node", "unsetNodes")
+  @js.native
+  val unsetNodes: js.Function3[
+    /* editor */ Editor, 
+    /* props */ String | js.Array[String], 
+    /* options */ js.UndefOr[Mode[Node]], 
+    Unit
+  ] = js.native
+  
+  @JSImport("slate/dist/transforms-node", "unwrapNodes")
+  @js.native
+  val unwrapNodes: js.Function2[/* editor */ Editor, /* options */ js.UndefOr[Split[Node]], Unit] = js.native
+  
+  @JSImport("slate/dist/transforms-node", "wrapNodes")
+  @js.native
+  val wrapNodes: js.Function3[
+    /* editor */ Editor, 
+    /* element */ Element, 
+    /* options */ js.UndefOr[Split[Node]], 
+    Unit
+  ] = js.native
 }

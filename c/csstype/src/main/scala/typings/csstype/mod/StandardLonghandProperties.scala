@@ -85,6 +85,7 @@ import typings.csstype.mod.Property.BreakBefore
 import typings.csstype.mod.Property.BreakInside
 import typings.csstype.mod.Property.CaptionSide
 import typings.csstype.mod.Property.CaretColor
+import typings.csstype.mod.Property.CaretShape
 import typings.csstype.mod.Property.Clear
 import typings.csstype.mod.Property.ClipPath
 import typings.csstype.mod.Property.Color
@@ -98,6 +99,12 @@ import typings.csstype.mod.Property.ColumnRuleWidth
 import typings.csstype.mod.Property.ColumnSpan
 import typings.csstype.mod.Property.ColumnWidth
 import typings.csstype.mod.Property.Contain
+import typings.csstype.mod.Property.ContainIntrinsicBlockSize
+import typings.csstype.mod.Property.ContainIntrinsicHeight
+import typings.csstype.mod.Property.ContainIntrinsicInlineSize
+import typings.csstype.mod.Property.ContainIntrinsicWidth
+import typings.csstype.mod.Property.ContainerName
+import typings.csstype.mod.Property.ContainerType
 import typings.csstype.mod.Property.Content
 import typings.csstype.mod.Property.ContentVisibility
 import typings.csstype.mod.Property.CounterIncrement
@@ -119,6 +126,7 @@ import typings.csstype.mod.Property.FontFeatureSettings
 import typings.csstype.mod.Property.FontKerning
 import typings.csstype.mod.Property.FontLanguageOverride
 import typings.csstype.mod.Property.FontOpticalSizing
+import typings.csstype.mod.Property.FontPalette
 import typings.csstype.mod.Property.FontSize
 import typings.csstype.mod.Property.FontSizeAdjust
 import typings.csstype.mod.Property.FontSmooth
@@ -129,6 +137,7 @@ import typings.csstype.mod.Property.FontVariant
 import typings.csstype.mod.Property.FontVariantAlternates
 import typings.csstype.mod.Property.FontVariantCaps
 import typings.csstype.mod.Property.FontVariantEastAsian
+import typings.csstype.mod.Property.FontVariantEmoji
 import typings.csstype.mod.Property.FontVariantLigatures
 import typings.csstype.mod.Property.FontVariantNumeric
 import typings.csstype.mod.Property.FontVariantPosition
@@ -148,6 +157,7 @@ import typings.csstype.mod.Property.GridTemplateRows
 import typings.csstype.mod.Property.HangingPunctuation
 import typings.csstype.mod.Property.Height
 import typings.csstype.mod.Property.HyphenateCharacter
+import typings.csstype.mod.Property.HyphenateLimitChars
 import typings.csstype.mod.Property.Hyphens
 import typings.csstype.mod.Property.ImageOrientation
 import typings.csstype.mod.Property.ImageRendering
@@ -155,11 +165,8 @@ import typings.csstype.mod.Property.ImageResolution
 import typings.csstype.mod.Property.InitialLetter
 import typings.csstype.mod.Property.InlineSize
 import typings.csstype.mod.Property.InputSecurity
-import typings.csstype.mod.Property.Inset
-import typings.csstype.mod.Property.InsetBlock
 import typings.csstype.mod.Property.InsetBlockEnd
 import typings.csstype.mod.Property.InsetBlockStart
-import typings.csstype.mod.Property.InsetInline
 import typings.csstype.mod.Property.InsetInlineEnd
 import typings.csstype.mod.Property.InsetInlineStart
 import typings.csstype.mod.Property.Isolation
@@ -175,16 +182,15 @@ import typings.csstype.mod.Property.LineHeightStep
 import typings.csstype.mod.Property.ListStyleImage
 import typings.csstype.mod.Property.ListStylePosition
 import typings.csstype.mod.Property.ListStyleType
-import typings.csstype.mod.Property.MarginBlock
 import typings.csstype.mod.Property.MarginBlockEnd
 import typings.csstype.mod.Property.MarginBlockStart
 import typings.csstype.mod.Property.MarginBottom
-import typings.csstype.mod.Property.MarginInline
 import typings.csstype.mod.Property.MarginInlineEnd
 import typings.csstype.mod.Property.MarginInlineStart
 import typings.csstype.mod.Property.MarginLeft
 import typings.csstype.mod.Property.MarginRight
 import typings.csstype.mod.Property.MarginTop
+import typings.csstype.mod.Property.MarginTrim
 import typings.csstype.mod.Property.MaskBorderMode
 import typings.csstype.mod.Property.MaskBorderOutset
 import typings.csstype.mod.Property.MaskBorderRepeat
@@ -218,6 +224,7 @@ import typings.csstype.mod.Property.ObjectPosition
 import typings.csstype.mod.Property.OffsetAnchor
 import typings.csstype.mod.Property.OffsetDistance
 import typings.csstype.mod.Property.OffsetPath
+import typings.csstype.mod.Property.OffsetPosition
 import typings.csstype.mod.Property.OffsetRotate
 import typings.csstype.mod.Property.Opacity
 import typings.csstype.mod.Property.Order
@@ -238,23 +245,21 @@ import typings.csstype.mod.Property.OverscrollBehaviorBlock
 import typings.csstype.mod.Property.OverscrollBehaviorInline
 import typings.csstype.mod.Property.OverscrollBehaviorX
 import typings.csstype.mod.Property.OverscrollBehaviorY
-import typings.csstype.mod.Property.PaddingBlock
 import typings.csstype.mod.Property.PaddingBlockEnd
 import typings.csstype.mod.Property.PaddingBlockStart
 import typings.csstype.mod.Property.PaddingBottom
-import typings.csstype.mod.Property.PaddingInline
 import typings.csstype.mod.Property.PaddingInlineEnd
 import typings.csstype.mod.Property.PaddingInlineStart
 import typings.csstype.mod.Property.PaddingLeft
 import typings.csstype.mod.Property.PaddingRight
 import typings.csstype.mod.Property.PaddingTop
+import typings.csstype.mod.Property.Page
 import typings.csstype.mod.Property.PageBreakAfter
 import typings.csstype.mod.Property.PageBreakBefore
 import typings.csstype.mod.Property.PageBreakInside
 import typings.csstype.mod.Property.PaintOrder
 import typings.csstype.mod.Property.Perspective
 import typings.csstype.mod.Property.PerspectiveOrigin
-import typings.csstype.mod.Property.PlaceContent
 import typings.csstype.mod.Property.PointerEvents
 import typings.csstype.mod.Property.Position
 import typings.csstype.mod.Property.PrintColorAdjust
@@ -268,23 +273,17 @@ import typings.csstype.mod.Property.RubyMerge
 import typings.csstype.mod.Property.RubyPosition
 import typings.csstype.mod.Property.Scale
 import typings.csstype.mod.Property.ScrollBehavior
-import typings.csstype.mod.Property.ScrollMargin
-import typings.csstype.mod.Property.ScrollMarginBlock
 import typings.csstype.mod.Property.ScrollMarginBlockEnd
 import typings.csstype.mod.Property.ScrollMarginBlockStart
 import typings.csstype.mod.Property.ScrollMarginBottom
-import typings.csstype.mod.Property.ScrollMarginInline
 import typings.csstype.mod.Property.ScrollMarginInlineEnd
 import typings.csstype.mod.Property.ScrollMarginInlineStart
 import typings.csstype.mod.Property.ScrollMarginLeft
 import typings.csstype.mod.Property.ScrollMarginRight
 import typings.csstype.mod.Property.ScrollMarginTop
-import typings.csstype.mod.Property.ScrollPadding
-import typings.csstype.mod.Property.ScrollPaddingBlock
 import typings.csstype.mod.Property.ScrollPaddingBlockEnd
 import typings.csstype.mod.Property.ScrollPaddingBlockStart
 import typings.csstype.mod.Property.ScrollPaddingBottom
-import typings.csstype.mod.Property.ScrollPaddingInline
 import typings.csstype.mod.Property.ScrollPaddingInlineEnd
 import typings.csstype.mod.Property.ScrollPaddingInlineStart
 import typings.csstype.mod.Property.ScrollPaddingLeft
@@ -293,6 +292,8 @@ import typings.csstype.mod.Property.ScrollPaddingTop
 import typings.csstype.mod.Property.ScrollSnapAlign
 import typings.csstype.mod.Property.ScrollSnapStop
 import typings.csstype.mod.Property.ScrollSnapType
+import typings.csstype.mod.Property.ScrollTimelineAxis
+import typings.csstype.mod.Property.ScrollTimelineName
 import typings.csstype.mod.Property.ScrollbarColor
 import typings.csstype.mod.Property.ScrollbarGutter
 import typings.csstype.mod.Property.ScrollbarWidth
@@ -337,6 +338,7 @@ import typings.csstype.mod.Property.Translate
 import typings.csstype.mod.Property.UnicodeBidi
 import typings.csstype.mod.Property.UserSelect
 import typings.csstype.mod.Property.VerticalAlign
+import typings.csstype.mod.Property.ViewTransitionName
 import typings.csstype.mod.Property.Visibility
 import typings.csstype.mod.Property.WhiteSpace
 import typings.csstype.mod.Property.Widows
@@ -439,9 +441,9 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
     *
     * **Initial value**: `replace`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * |   No   |   n/a   |   No   | n/a  | No  |
+    * | Chrome  | Firefox | Safari | Edge | IE  |
+    * | :-----: | :-----: | :----: | :--: | :-: |
+    * | **112** |   n/a   | **16** | n/a  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/animation-composition
     */
@@ -528,7 +530,7 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
   var animationIterationCount: js.UndefOr[AnimationIterationCount] = js.undefined
   
   /**
-    * The **`animation-name`** CSS property specifies the names of one or more `@keyframes` at-rules describing the animation or animations to apply to the element.
+    * The **`animation-name`** CSS property specifies the names of one or more `@keyframes` at-rules that describe the animation to apply to an element. Multiple `@keyframe` at-rules are specified as a comma-separated list of names. If the specified name does not match any `@keyframe` at-rule, no properties are animated.
     *
     * **Syntax**: `[ none | <keyframes-name> ]#`
     *
@@ -560,7 +562,7 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
   var animationPlayState: js.UndefOr[AnimationPlayState] = js.undefined
   
   /**
-    * The **`animation-timeline`** CSS property specifies the names of one or more `@scroll-timeline` at-rules describing the scroll animations to apply to the element.
+    * The **`animation-timeline`** CSS property specifies the timeline that is used to control the progress of an animation.
     *
     * **Syntax**: `<single-animation-timeline>#`
     *
@@ -591,7 +593,7 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
   var animationTimingFunction: js.UndefOr[AnimationTimingFunction] = js.undefined
   
   /**
-    * The **`appearance`** CSS property is used to display an element using platform-native styling, based on the operating system's theme. The **`-moz-appearance`** and **`-webkit-appearance`** properties are non-standard versions of this property, used (respectively) by Gecko (Firefox) and by WebKit-based (e.g., Safari) and Blink-based (e.g., Chrome, Opera) browsers to achieve the same thing. Note that Firefox and Edge also support **`-webkit-appearance`**, for compatibility reasons.
+    * The **`appearance`** CSS property is used to control native appearance of UI controls, that are based on operating system's theme.
     *
     * **Syntax**: `none | auto | textfield | menulist-button | <compat-auto>`
     *
@@ -1099,7 +1101,7 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
   var borderImageOutset: js.UndefOr[BorderImageOutset[TLength]] = js.undefined
   
   /**
-    * The **`border-image-repeat`** CSS property defines how the edge regions of a source image are adjusted to fit the dimensions of an element's border image.
+    * The **`border-image-repeat`** CSS property defines how the edge regions and middle region of a source image are adjusted to fit the dimensions of an element's border image. The middle region can be displayed by using the keyword "fill" in the border-image-slice property.
     *
     * **Syntax**: `[ stretch | repeat | round | space ]{1,2}`
     *
@@ -1389,7 +1391,7 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
   var borderRightWidth: js.UndefOr[BorderRightWidth[TLength]] = js.undefined
   
   /**
-    * The **`border-spacing`** CSS property sets the distance between the borders of adjacent `<table>` cells. This property applies only when `border-collapse` is `separate`.
+    * The **`border-spacing`** CSS property sets the distance between the borders of adjacent cells in a `<table>`. This property applies only when `border-collapse` is `separate`.
     *
     * **Syntax**: `<length> <length>?`
     *
@@ -1648,6 +1650,13 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
   var caretColor: js.UndefOr[CaretColor] = js.undefined
   
   /**
+    * **Syntax**: `auto | bar | block | underscore`
+    *
+    * **Initial value**: `auto`
+    */
+  var caretShape: js.UndefOr[CaretShape] = js.undefined
+  
+  /**
     * The **`clear`** CSS property sets whether an element must be moved below (cleared) floating elements that precede it. The `clear` property applies to floating and non-floating elements.
     *
     * **Syntax**: `none | left | right | both | inline-start | inline-end`
@@ -1679,7 +1688,7 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
   var clipPath: js.UndefOr[ClipPath] = js.undefined
   
   /**
-    * The **`color`** CSS property sets the foreground color value of an element's text and text decorations, and sets the `<currentcolor>` value. `currentcolor` may be used as an indirect value on _other_ properties and is the default for other color properties, such as `border-color`.
+    * The **`color`** CSS property sets the foreground color value of an element's text and text decorations, and sets the `currentcolor` value. `currentcolor` may be used as an indirect value on _other_ properties and is the default for other color properties, such as `border-color`.
     *
     * **Syntax**: `<color>`
     *
@@ -1852,7 +1861,7 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
   var columnWidth: js.UndefOr[ColumnWidth[TLength]] = js.undefined
   
   /**
-    * The **`contain`** CSS property allows an author to indicate that an element and its contents are, as much as possible, _independent_ of the rest of the document tree. This allows the browser to recalculate layout, style, paint, size, or any combination of them for a limited area of the DOM and not the entire page, leading to obvious performance benefits.
+    * The **`contain`** CSS property indicates that an element and its contents are, as much as possible, independent from the rest of the document tree. Containment enables isolating a subsection of the DOM, providing performance benefits by limiting calculations of layout, style, paint, size, or any combination to a DOM subtree rather than the entire page. Containment can also be used to scope CSS counters and quotes.
     *
     * **Syntax**: `none | strict | content | [ [ size || inline-size ] || layout || style || paint ]`
     *
@@ -1865,6 +1874,96 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/contain
     */
   var contain: js.UndefOr[Contain] = js.undefined
+  
+  /**
+    * The **`contain-intrinsic-block-size`** CSS logical property defines the block size of an element that a browser can use for layout when the element is subject to size containment.
+    *
+    * **Syntax**: `none | <length> | auto <length>`
+    *
+    * **Initial value**: `none`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * | **95** | **107** |   No   | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/contain-intrinsic-contain-intrinsic-block-size
+    */
+  var containIntrinsicBlockSize: js.UndefOr[ContainIntrinsicBlockSize[TLength]] = js.undefined
+  
+  /**
+    * The **`contain-intrinsic-length`** CSS property sets the height of an element that a browser can use for layout when the element is subject to size containment.
+    *
+    * **Syntax**: `none | <length> | auto <length>`
+    *
+    * **Initial value**: `none`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * | **83** | **107** |   No   | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/contain-intrinsic-height
+    */
+  var containIntrinsicHeight: js.UndefOr[ContainIntrinsicHeight[TLength]] = js.undefined
+  
+  /**
+    * The **`contain-intrinsic-inline-size`** CSS logical property defines the inline-size of an element that a browser can use for layout when the element is subject to size containment.
+    *
+    * **Syntax**: `none | <length> | auto <length>`
+    *
+    * **Initial value**: `none`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * | **95** | **107** |   No   | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/contain-intrinsic-contain-intrinsic-inline-size
+    */
+  var containIntrinsicInlineSize: js.UndefOr[ContainIntrinsicInlineSize[TLength]] = js.undefined
+  
+  /**
+    * The **`contain-intrinsic-width`** CSS property sets the width of an element that a browser will use for layout when the element is subject to size containment.
+    *
+    * **Syntax**: `none | <length> | auto <length>`
+    *
+    * **Initial value**: `none`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * | **83** | **107** |   No   | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/contain-intrinsic-width
+    */
+  var containIntrinsicWidth: js.UndefOr[ContainIntrinsicWidth[TLength]] = js.undefined
+  
+  /**
+    * The **container-name** CSS property specifies a list of query container names used by the @container at-rule in a container query. A container query will apply styles to elements based on the size of the nearest ancestor with a containment context. When a containment context is given a name, it can be specifically targeted using the `@container` at-rule instead of the nearest ancestor with containment.
+    *
+    * **Syntax**: `none | <custom-ident>+`
+    *
+    * **Initial value**: `none`
+    *
+    * | Chrome  | Firefox | Safari | Edge | IE  |
+    * | :-----: | :-----: | :----: | :--: | :-: |
+    * | **105** | **110** | **16** | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/container-name
+    */
+  var containerName: js.UndefOr[ContainerName] = js.undefined
+  
+  /**
+    * The **container-type** CSS property is used to define the type of containment used in a container query.
+    *
+    * **Syntax**: `normal | size | inline-size`
+    *
+    * **Initial value**: `normal`
+    *
+    * | Chrome  | Firefox | Safari | Edge | IE  |
+    * | :-----: | :-----: | :----: | :--: | :-: |
+    * | **105** | **110** | **16** | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/container-type
+    */
+  var containerType: js.UndefOr[ContainerType] = js.undefined
   
   /**
     * The **`content`** CSS property replaces an element with a generated value. Objects inserted using the `content` property are **anonymous replaced elements**.
@@ -1882,7 +1981,7 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
   var content: js.UndefOr[Content] = js.undefined
   
   /**
-    * The **`content-visibility`** CSS property controls whether or not an element renders its contents at all, along with forcing a strong set of containments, allowing user agents to potentially omit large swathes of layout and rendering work until it becomes needed. Basically it enables the user agent to skip an element's rendering work (including layout and painting) until it is needed — which makes the initial page load much faster.
+    * The **`content-visibility`** CSS property controls whether or not an element renders its contents at all, along with forcing a strong set of containments, allowing user agents to potentially omit large swathes of layout and rendering work until it becomes needed. It enables the user agent to skip an element's rendering work (including layout and painting) until it is needed — which makes the initial page load much faster.
     *
     * **Syntax**: `visible | auto | hidden`
     *
@@ -1890,7 +1989,7 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **85** |   No    |   No   | n/a  | No  |
+    * | **85** |   n/a   |   No   | n/a  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/content-visibility
     */
@@ -2191,6 +2290,19 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
   var fontOpticalSizing: js.UndefOr[FontOpticalSizing] = js.undefined
   
   /**
+    * **Syntax**: `normal | light | dark | <palette-identifier>`
+    *
+    * **Initial value**: `normal`
+    *
+    * | Chrome  | Firefox |  Safari  | Edge | IE  |
+    * | :-----: | :-----: | :------: | :--: | :-: |
+    * | **101** | **107** | **15.4** | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/font-palette
+    */
+  var fontPalette: js.UndefOr[FontPalette] = js.undefined
+  
+  /**
     * The **`font-size`** CSS property sets the size of the font. Changing the font size also updates the sizes of the font size-relative `<length>` units, such as `em`, `ex`, and so forth.
     *
     * **Syntax**: `<absolute-size> | <relative-size> | <length-percentage>`
@@ -2212,9 +2324,9 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
     *
     * **Initial value**: `none`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * |   No   |  **3**  |   No   | n/a  | No  |
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * |   No   |  **3**  | **16.4** | n/a  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/font-size-adjust
     */
@@ -2339,6 +2451,19 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/font-variant-east-asian
     */
   var fontVariantEastAsian: js.UndefOr[FontVariantEastAsian] = js.undefined
+  
+  /**
+    * **Syntax**: `normal | text | emoji | unicode`
+    *
+    * **Initial value**: `normal`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |   No   | **108** |   No   | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/font-variant-emoji
+    */
+  var fontVariantEmoji: js.UndefOr[FontVariantEmoji] = js.undefined
   
   /**
     * The **`font-variant-ligatures`** CSS property controls which ligatures and contextual forms are used in textual content of the elements it applies to. This leads to more harmonized forms in the resulting text.
@@ -2619,13 +2744,27 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
     *
     * **Initial value**: `auto`
     *
-    * |   Chrome    | Firefox |    Safari     | Edge | IE  |
-    * | :---------: | :-----: | :-----------: | :--: | :-: |
-    * | **6** _-x-_ | **98**  | **5.1** _-x-_ | n/a  | No  |
+    * | Chrome  | Firefox |    Safari     | Edge | IE  |
+    * | :-----: | :-----: | :-----------: | :--: | :-: |
+    * | **106** | **98**  | **5.1** _-x-_ | n/a  | No  |
+    * | 6 _-x-_ |         |               |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/hyphenate-character
     */
   var hyphenateCharacter: js.UndefOr[HyphenateCharacter] = js.undefined
+  
+  /**
+    * The **`hyphenate-limit-chars`** CSS property specifies the minimum word length to allow hyphenation of words as well as the the minimum number of characters before and after the hyphen.
+    *
+    * **Syntax**: `[ auto | <integer> ]{1,3}`
+    *
+    * **Initial value**: `auto`
+    *
+    * | Chrome  | Firefox | Safari | Edge | IE  |
+    * | :-----: | :-----: | :----: | :--: | :-: |
+    * | **109** |   No    |   No   | n/a  | No  |
+    */
+  var hyphenateLimitChars: js.UndefOr[HyphenateLimitChars] = js.undefined
   
   /**
     * The **`hyphens`** CSS property specifies how words should be hyphenated when text wraps across multiple lines. It can prevent hyphenation entirely, hyphenate at manually-specified points within the text, or let the browser automatically insert hyphens where appropriate.
@@ -2687,9 +2826,9 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
     *
     * **Initial value**: `normal`
     *
-    * | Chrome | Firefox |   Safari    | Edge | IE  |
-    * | :----: | :-----: | :---------: | :--: | :-: |
-    * |   No   |   No    | **9** _-x-_ | n/a  | No  |
+    * | Chrome  | Firefox |   Safari    | Edge | IE  |
+    * | :-----: | :-----: | :---------: | :--: | :-: |
+    * | **110** |   No    | **9** _-x-_ | n/a  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/initial-letter
     */
@@ -2716,36 +2855,6 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
     * **Initial value**: `auto`
     */
   var inputSecurity: js.UndefOr[InputSecurity] = js.undefined
-  
-  /**
-    * The **`inset`** CSS property is a shorthand that corresponds to the `top`, `right`, `bottom`, and/or `left` properties. It has the same multi-value syntax of the `margin` shorthand.
-    *
-    * **Syntax**: `<'top'>{1,4}`
-    *
-    * **Initial value**: `auto`
-    *
-    * | Chrome | Firefox |  Safari  | Edge | IE  |
-    * | :----: | :-----: | :------: | :--: | :-: |
-    * | **87** | **66**  | **14.1** | n/a  | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/inset
-    */
-  var inset: js.UndefOr[Inset[TLength]] = js.undefined
-  
-  /**
-    * The **`inset-block`** CSS property defines the logical block start and end offsets of an element, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top` and `bottom`, or `right` and `left` properties depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
-    *
-    * **Syntax**: `<'top'>{1,2}`
-    *
-    * **Initial value**: `auto`
-    *
-    * | Chrome | Firefox |  Safari  | Edge | IE  |
-    * | :----: | :-----: | :------: | :--: | :-: |
-    * | **87** | **63**  | **14.1** | n/a  | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/inset-block
-    */
-  var insetBlock: js.UndefOr[InsetBlock[TLength]] = js.undefined
   
   /**
     * The **`inset-block-end`** CSS property defines the logical block end offset of an element, which maps to a physical inset depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top`, `right`, `bottom`, or `left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
@@ -2776,21 +2885,6 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/inset-block-start
     */
   var insetBlockStart: js.UndefOr[InsetBlockStart[TLength]] = js.undefined
-  
-  /**
-    * The **`inset-inline`** CSS property defines the logical start and end offsets of an element in the inline direction, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top` and `bottom`, or `right` and `left` properties depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
-    *
-    * **Syntax**: `<'top'>{1,2}`
-    *
-    * **Initial value**: `auto`
-    *
-    * | Chrome | Firefox |  Safari  | Edge | IE  |
-    * | :----: | :-----: | :------: | :--: | :-: |
-    * | **87** | **63**  | **14.1** | n/a  | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/inset-inline
-    */
-  var insetInline: js.UndefOr[InsetInline[TLength]] = js.undefined
   
   /**
     * The **`inset-inline-end`** CSS property defines the logical inline end inset of an element, which maps to a physical offset depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top`, `right`, `bottom`, or `left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
@@ -3020,21 +3114,6 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
   var listStyleType: js.UndefOr[ListStyleType] = js.undefined
   
   /**
-    * The **`margin-block`** CSS shorthand property defines the logical block start and end margins of an element, which maps to physical margins depending on the element's writing mode, directionality, and text orientation.
-    *
-    * **Syntax**: `<'margin-left'>{1,2}`
-    *
-    * **Initial value**: `0`
-    *
-    * | Chrome | Firefox |  Safari  | Edge | IE  |
-    * | :----: | :-----: | :------: | :--: | :-: |
-    * | **87** | **66**  | **14.1** | n/a  | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/margin-block
-    */
-  var marginBlock: js.UndefOr[MarginBlock[TLength]] = js.undefined
-  
-  /**
     * The **`margin-block-end`** CSS property defines the logical block end margin of an element, which maps to a physical margin depending on the element's writing mode, directionality, and text orientation.
     *
     * **Syntax**: `<'margin-left'>`
@@ -3078,21 +3157,6 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/margin-bottom
     */
   var marginBottom: js.UndefOr[MarginBottom[TLength]] = js.undefined
-  
-  /**
-    * The **`margin-inline`** CSS shorthand property is a shorthand property that defines both the logical inline start and end margins of an element, which maps to physical margins depending on the element's writing mode, directionality, and text orientation.
-    *
-    * **Syntax**: `<'margin-left'>{1,2}`
-    *
-    * **Initial value**: `0`
-    *
-    * | Chrome | Firefox |  Safari  | Edge | IE  |
-    * | :----: | :-----: | :------: | :--: | :-: |
-    * | **87** | **66**  | **14.1** | n/a  | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/margin-inline
-    */
-  var marginInline: js.UndefOr[MarginInline[TLength]] = js.undefined
   
   /**
     * The **`margin-inline-end`** CSS property defines the logical inline end margin of an element, which maps to a physical margin depending on the element's writing mode, directionality, and text orientation. In other words, it corresponds to the `margin-top`, `margin-right`, `margin-bottom` or `margin-left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
@@ -3170,6 +3234,21 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/margin-top
     */
   var marginTop: js.UndefOr[MarginTop[TLength]] = js.undefined
+  
+  /**
+    * The `margin-trim` property allows the container to trim the margins of its children where they adjoin the container's edges.
+    *
+    * **Syntax**: `none | in-flow | all`
+    *
+    * **Initial value**: `none`
+    *
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * |   No   |   No    | **16.4** | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/margin-trim
+    */
+  var marginTrim: js.UndefOr[MarginTrim] = js.undefined
   
   /**
     * The **`mask-border-mode`** CSS property specifies the blending mode used in a mask border.
@@ -3354,7 +3433,7 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
     *
     * **Syntax**: `<repeat-style>#`
     *
-    * **Initial value**: `no-repeat`
+    * **Initial value**: `repeat`
     *
     * |   Chrome    | Firefox |  Safari   | Edge  | IE  |
     * | :---------: | :-----: | :-------: | :---: | :-: |
@@ -3403,9 +3482,9 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
     *
     * **Initial value**: `0`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   |   n/a   |   No   | n/a  | No  |
+    * | Chrome  | Firefox | Safari | Edge | IE  |
+    * | :-----: | :-----: | :----: | :--: | :-: |
+    * | **109** |   n/a   |   No   | n/a  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/math-depth
     */
@@ -3418,9 +3497,9 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
     *
     * **Initial value**: `normal`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   |   No    |   No   | n/a  | No  |
+    * | Chrome  | Firefox | Safari | Edge | IE  |
+    * | :-----: | :-----: | :----: | :--: | :-: |
+    * | **109** |   No    |   No   | n/a  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/math-shift
     */
@@ -3433,9 +3512,9 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
     *
     * **Initial value**: `normal`
     *
-    * | Chrome | Firefox |  Safari  | Edge | IE  |
-    * | :----: | :-----: | :------: | :--: | :-: |
-    * |  n/a   |   n/a   | **14.1** | n/a  | No  |
+    * | Chrome  | Firefox |  Safari  | Edge | IE  |
+    * | :-----: | :-----: | :------: | :--: | :-: |
+    * | **109** |   n/a   | **14.1** | n/a  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/math-style
     */
@@ -3591,10 +3670,10 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
     *
     * **Initial value**: `0`
     *
-    * |         Chrome         | Firefox | Safari | Edge | IE  |
-    * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **55**         | **72**  |   No   | n/a  | No  |
-    * | 46 _(motion-distance)_ |         |        |      |     |
+    * |         Chrome         | Firefox |   Safari    | Edge | IE  |
+    * | :--------------------: | :-----: | :---------: | :--: | :-: |
+    * |         **55**         | **72**  | **preview** | n/a  | No  |
+    * | 46 _(motion-distance)_ |         |             |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-distance
     */
@@ -3623,10 +3702,10 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
     *
     * **Initial value**: `auto`
     *
-    * |         Chrome         | Firefox | Safari | Edge | IE  |
-    * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **56**         | **72**  |   No   | n/a  | No  |
-    * | 46 _(motion-rotation)_ |         |        |      |     |
+    * |         Chrome         | Firefox |   Safari    | Edge | IE  |
+    * | :--------------------: | :-----: | :---------: | :--: | :-: |
+    * |         **56**         | **72**  | **preview** | n/a  | No  |
+    * | 46 _(motion-rotation)_ |         |             |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-rotate
     */
@@ -3667,9 +3746,9 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
     *
     * **Initial value**: `auto`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * |   No   | **72**  |   No   | n/a  | No  |
+    * | Chrome | Firefox |   Safari    | Edge | IE  |
+    * | :----: | :-----: | :---------: | :--: | :-: |
+    * |   No   | **72**  | **preview** | n/a  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-anchor
     */
@@ -3682,10 +3761,10 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
     *
     * **Initial value**: `0`
     *
-    * |         Chrome         | Firefox | Safari | Edge | IE  |
-    * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **55**         | **72**  |   No   | n/a  | No  |
-    * | 46 _(motion-distance)_ |         |        |      |     |
+    * |         Chrome         | Firefox |   Safari    | Edge | IE  |
+    * | :--------------------: | :-----: | :---------: | :--: | :-: |
+    * |         **55**         | **72**  | **preview** | n/a  | No  |
+    * | 46 _(motion-distance)_ |         |             |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-distance
     */
@@ -3708,16 +3787,29 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
   var offsetPath: js.UndefOr[OffsetPath] = js.undefined
   
   /**
+    * **Syntax**: `auto | <position>`
+    *
+    * **Initial value**: `auto`
+    *
+    * | Chrome | Firefox |   Safari    | Edge | IE  |
+    * | :----: | :-----: | :---------: | :--: | :-: |
+    * |   No   |   No    | **preview** | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/offset-position
+    */
+  var offsetPosition: js.UndefOr[OffsetPosition[TLength]] = js.undefined
+  
+  /**
     * The **`offset-rotate`** CSS property defines the orientation/direction of the element as it is positioned along the `offset-path`.
     *
     * **Syntax**: `[ auto | reverse ] || <angle>`
     *
     * **Initial value**: `auto`
     *
-    * |         Chrome         | Firefox | Safari | Edge | IE  |
-    * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **56**         | **72**  |   No   | n/a  | No  |
-    * | 46 _(motion-rotation)_ |         |        |      |     |
+    * |         Chrome         | Firefox |   Safari    | Edge | IE  |
+    * | :--------------------: | :-----: | :---------: | :--: | :-: |
+    * |         **56**         | **72**  | **preview** | n/a  | No  |
+    * | 46 _(motion-rotation)_ |         |             |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-rotate
     */
@@ -3730,10 +3822,10 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
     *
     * **Initial value**: `auto`
     *
-    * |         Chrome         | Firefox | Safari | Edge | IE  |
-    * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **56**         | **72**  |   No   | n/a  | No  |
-    * | 46 _(motion-rotation)_ |         |        |      |     |
+    * |         Chrome         | Firefox |   Safari    | Edge | IE  |
+    * | :--------------------: | :-----: | :---------: | :--: | :-: |
+    * |         **56**         | **72**  | **preview** | n/a  | No  |
+    * | 46 _(motion-rotation)_ |         |             |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-rotate
     */
@@ -3893,7 +3985,7 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **90** |   No    |   No   | n/a  | No  |
+    * | **90** | **102** |   No   | n/a  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/overflow-clip-margin
     */
@@ -4019,21 +4111,6 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
   var overscrollBehaviorY: js.UndefOr[OverscrollBehaviorY] = js.undefined
   
   /**
-    * The **`padding-block`** CSS shorthand property defines the logical block start and end padding of an element, which maps to physical padding properties depending on the element's writing mode, directionality, and text orientation.
-    *
-    * **Syntax**: `<'padding-left'>{1,2}`
-    *
-    * **Initial value**: `0`
-    *
-    * | Chrome | Firefox |  Safari  | Edge | IE  |
-    * | :----: | :-----: | :------: | :--: | :-: |
-    * | **87** | **66**  | **14.1** | n/a  | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/padding-block
-    */
-  var paddingBlock: js.UndefOr[PaddingBlock[TLength]] = js.undefined
-  
-  /**
     * The **`padding-block-end`** CSS property defines the logical block end padding of an element, which maps to a physical padding depending on the element's writing mode, directionality, and text orientation.
     *
     * **Syntax**: `<'padding-left'>`
@@ -4077,21 +4154,6 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/padding-bottom
     */
   var paddingBottom: js.UndefOr[PaddingBottom[TLength]] = js.undefined
-  
-  /**
-    * The **`padding-inline`** CSS shorthand property defines the logical inline start and end padding of an element, which maps to physical padding properties depending on the element's writing mode, directionality, and text orientation.
-    *
-    * **Syntax**: `<'padding-left'>{1,2}`
-    *
-    * **Initial value**: `0`
-    *
-    * | Chrome | Firefox |  Safari  | Edge | IE  |
-    * | :----: | :-----: | :------: | :--: | :-: |
-    * | **87** | **66**  | **14.1** | n/a  | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/padding-inline
-    */
-  var paddingInline: js.UndefOr[PaddingInline[TLength]] = js.undefined
   
   /**
     * The **`padding-inline-end`** CSS property defines the logical inline end padding of an element, which maps to a physical padding depending on the element's writing mode, directionality, and text orientation.
@@ -4169,6 +4231,21 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/padding-top
     */
   var paddingTop: js.UndefOr[PaddingTop[TLength]] = js.undefined
+  
+  /**
+    * The **`page`** CSS property is used to specify the named page, a specific type of page defined by the `@page` at-rule.
+    *
+    * **Syntax**: `auto | <custom-ident>`
+    *
+    * **Initial value**: `auto`
+    *
+    * | Chrome | Firefox |   Safari    | Edge | IE  |
+    * | :----: | :-----: | :---------: | :--: | :-: |
+    * | **85** | **110** | **preview** | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/page
+    */
+  var page: js.UndefOr[Page] = js.undefined
   
   /**
     * The **`page-break-after`** CSS property adjusts page breaks _after_ the current element.
@@ -4261,21 +4338,6 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/perspective-origin
     */
   var perspectiveOrigin: js.UndefOr[PerspectiveOrigin[TLength]] = js.undefined
-  
-  /**
-    * The **`place-content`** CSS shorthand property allows you to align content along both the block and inline directions at once (i.e. the `align-content` and `justify-content` properties) in a relevant layout system such as Grid or Flexbox.
-    *
-    * **Syntax**: `<'align-content'> <'justify-content'>?`
-    *
-    * **Initial value**: `normal`
-    *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **59** | **45**  | **9**  | n/a  | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/place-content
-    */
-  var placeContent: js.UndefOr[PlaceContent] = js.undefined
   
   /**
     * The **`pointer-events`** CSS property sets under what circumstances (if any) a particular graphic element can become the target of pointer events.
@@ -4384,7 +4446,7 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
   var rotate: js.UndefOr[Rotate] = js.undefined
   
   /**
-    * The **`row-gap`** CSS property sets the size of the gap (gutter) between an element's grid rows.
+    * The **`row-gap`** CSS property sets the size of the gap (gutter) between an element's rows.
     *
     * **Syntax**: `normal | <length-percentage>`
     *
@@ -4467,37 +4529,6 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
   var scrollBehavior: js.UndefOr[ScrollBehavior] = js.undefined
   
   /**
-    * The **`scroll-margin`** shorthand property sets all of the scroll margins of an element at once, assigning values much like the `margin` property does for margins of an element.
-    *
-    * **Syntax**: `<length>{1,4}`
-    *
-    * **Initial value**: `0`
-    *
-    * | Chrome | Firefox |          Safari           | Edge | IE  |
-    * | :----: | :-----: | :-----------------------: | :--: | :-: |
-    * | **69** | **90**  |         **14.1**          | n/a  | No  |
-    * |        |         | 11 _(scroll-snap-margin)_ |      |     |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/scroll-margin
-    */
-  var scrollMargin: js.UndefOr[ScrollMargin[TLength]] = js.undefined
-  
-  /**
-    * The `scroll-margin-block` shorthand property sets the scroll margins of an element in the block dimension.
-    *
-    * **Syntax**: `<length>{1,2}`
-    *
-    * **Initial value**: `0`
-    *
-    * | Chrome | Firefox |  Safari  | Edge | IE  |
-    * | :----: | :-----: | :------: | :--: | :-: |
-    * | **69** | **68**  | **14.1** | n/a  | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/scroll-margin-block
-    */
-  var scrollMarginBlock: js.UndefOr[ScrollMarginBlock[TLength]] = js.undefined
-  
-  /**
     * The `scroll-margin-block-end` property defines the margin of the scroll snap area at the end of the block dimension that is used for snapping this box to the snapport. The scroll snap area is determined by taking the transformed border box, finding its rectangular bounding box (axis-aligned in the scroll container's coordinate space), then adding the specified outsets.
     *
     * **Syntax**: `<length>`
@@ -4542,21 +4573,6 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-margin-bottom
     */
   var scrollMarginBottom: js.UndefOr[ScrollMarginBottom[TLength]] = js.undefined
-  
-  /**
-    * The `scroll-margin-inline` shorthand property sets the scroll margins of an element in the inline dimension.
-    *
-    * **Syntax**: `<length>{1,2}`
-    *
-    * **Initial value**: `0`
-    *
-    * | Chrome | Firefox |  Safari  | Edge | IE  |
-    * | :----: | :-----: | :------: | :--: | :-: |
-    * | **69** | **68**  | **14.1** | n/a  | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/scroll-margin-inline
-    */
-  var scrollMarginInline: js.UndefOr[ScrollMarginInline[TLength]] = js.undefined
   
   /**
     * The `scroll-margin-inline-end` property defines the margin of the scroll snap area at the end of the inline dimension that is used for snapping this box to the snapport. The scroll snap area is determined by taking the transformed border box, finding its rectangular bounding box (axis-aligned in the scroll container's coordinate space), then adding the specified outsets.
@@ -4637,36 +4653,6 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
   var scrollMarginTop: js.UndefOr[ScrollMarginTop[TLength]] = js.undefined
   
   /**
-    * The **`scroll-padding`** shorthand property sets scroll padding on all sides of an element at once, much like the `padding` property does for padding on an element.
-    *
-    * **Syntax**: `[ auto | <length-percentage> ]{1,4}`
-    *
-    * **Initial value**: `auto`
-    *
-    * | Chrome | Firefox |  Safari  | Edge | IE  |
-    * | :----: | :-----: | :------: | :--: | :-: |
-    * | **69** | **68**  | **14.1** | n/a  | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/scroll-padding
-    */
-  var scrollPadding: js.UndefOr[ScrollPadding[TLength]] = js.undefined
-  
-  /**
-    * The `scroll-padding-block` shorthand property sets the scroll padding of an element in the block dimension.
-    *
-    * **Syntax**: `[ auto | <length-percentage> ]{1,2}`
-    *
-    * **Initial value**: `auto`
-    *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** | **68**  | **15** | n/a  | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/scroll-padding-block
-    */
-  var scrollPaddingBlock: js.UndefOr[ScrollPaddingBlock[TLength]] = js.undefined
-  
-  /**
     * The `scroll-padding-block-end` property defines offsets for the end edge in the block dimension of the _optimal viewing region_ of the scrollport: the region used as the target region for placing things in view of the user. This allows the author to exclude regions of the scrollport that are obscured by other content (such as fixed-positioned toolbars or sidebars) or to put more breathing room between a targeted element and the edges of the scrollport.
     *
     * **Syntax**: `auto | <length-percentage>`
@@ -4710,21 +4696,6 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-padding-bottom
     */
   var scrollPaddingBottom: js.UndefOr[ScrollPaddingBottom[TLength]] = js.undefined
-  
-  /**
-    * The `scroll-padding-inline` shorthand property sets the scroll padding of an element in the inline dimension.
-    *
-    * **Syntax**: `[ auto | <length-percentage> ]{1,2}`
-    *
-    * **Initial value**: `auto`
-    *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** | **68**  | **15** | n/a  | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/scroll-padding-inline
-    */
-  var scrollPaddingInline: js.UndefOr[ScrollPaddingInline[TLength]] = js.undefined
   
   /**
     * The `scroll-padding-inline-end` property defines offsets for the end edge in the inline dimension of the _optimal viewing region_ of the scrollport: the region used as the target region for placing things in view of the user. This allows the author to exclude regions of the scrollport that are obscured by other content (such as fixed-positioned toolbars or sidebars) or to put more breathing room between a targeted element and the edges of the scrollport.
@@ -4817,22 +4788,6 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
   var scrollSnapAlign: js.UndefOr[ScrollSnapAlign] = js.undefined
   
   /**
-    * The **`scroll-margin`** shorthand property sets all of the scroll margins of an element at once, assigning values much like the `margin` property does for margins of an element.
-    *
-    * **Syntax**: `<length>{1,4}`
-    *
-    * **Initial value**: `0`
-    *
-    * | Chrome | Firefox |          Safari           | Edge | IE  |
-    * | :----: | :-----: | :-----------------------: | :--: | :-: |
-    * | **69** |  68-90  |         **14.1**          | n/a  | No  |
-    * |        |         | 11 _(scroll-snap-margin)_ |      |     |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/scroll-margin
-    */
-  var scrollSnapMargin: js.UndefOr[ScrollMargin[TLength]] = js.undefined
-  
-  /**
     * The `scroll-margin-bottom` property defines the bottom margin of the scroll snap area that is used for snapping this box to the snapport. The scroll snap area is determined by taking the transformed border box, finding its rectangular bounding box (axis-aligned in the scroll container's coordinate space), then adding the specified outsets.
     *
     * **Syntax**: `<length>`
@@ -4897,7 +4852,7 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
   var scrollSnapMarginTop: js.UndefOr[ScrollMarginTop[TLength]] = js.undefined
   
   /**
-    * The **`scroll-snap-stop`** CSS property defines whether the scroll container is allowed to "pass over" possible snap positions.
+    * The **`scroll-snap-stop`** CSS property defines whether or not the scroll container is allowed to "pass over" possible snap positions.
     *
     * **Syntax**: `normal | always`
     *
@@ -4926,6 +4881,36 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-snap-type
     */
   var scrollSnapType: js.UndefOr[ScrollSnapType] = js.undefined
+  
+  /**
+    * The **`scroll-timeline-axis`** CSS property can be used to specify the scrollbar that will be used to provide the timeline for a scroll-timeline animation.
+    *
+    * **Syntax**: `[ block | inline | vertical | horizontal ]#`
+    *
+    * **Initial value**: `block`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |   No   |   n/a   |   No   | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/scroll-timeline-axis
+    */
+  var scrollTimelineAxis: js.UndefOr[ScrollTimelineAxis] = js.undefined
+  
+  /**
+    * The **`scroll-timeline-name`** CSS property defines a name that can be used to identify an element as the source of a scroll timeline for an animation.
+    *
+    * **Syntax**: `none | <custom-ident>#`
+    *
+    * **Initial value**: `none`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |   No   |   n/a   |   No   | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/scroll-timeline-name
+    */
+  var scrollTimelineName: js.UndefOr[ScrollTimelineName] = js.undefined
   
   /**
     * The **`scrollbar-color`** CSS property sets the color of the scrollbar track and thumb.
@@ -5049,7 +5034,7 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
   var tableLayout: js.UndefOr[TableLayout] = js.undefined
   
   /**
-    * The **`text-align`** CSS property sets the horizontal alignment of the content inside a block element or table-cell box. This means it works like `vertical-align` but in the horizontal direction.
+    * The **`text-align`** CSS property sets the horizontal alignment of the inline-level content inside a block element or table-cell box. This means it works like `vertical-align` but in the horizontal direction.
     *
     * **Syntax**: `start | end | left | right | center | justify | match-parent`
     *
@@ -5085,10 +5070,10 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
     *
     * **Initial value**: `none`
     *
-    * |           Chrome           | Firefox |              Safari              | Edge  |                   IE                   |
-    * | :------------------------: | :-----: | :------------------------------: | :---: | :------------------------------------: |
-    * |           **48**           | **48**  | **5.1** _(-webkit-text-combine)_ | 15-79 | **11** _(-ms-text-combine-horizontal)_ |
-    * | 9 _(-webkit-text-combine)_ |         |                                  |       |                                        |
+    * |           Chrome           | Firefox |            Safari            | Edge  |                   IE                   |
+    * | :------------------------: | :-----: | :--------------------------: | :---: | :------------------------------------: |
+    * |           **48**           | **48**  |         **preview**          | 15-79 | **11** _(-ms-text-combine-horizontal)_ |
+    * | 9 _(-webkit-text-combine)_ |         | 5.1 _(-webkit-text-combine)_ |       |                                        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-combine-upright
     */
@@ -5436,7 +5421,7 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
   var transform: js.UndefOr[Transform] = js.undefined
   
   /**
-    * The **`transform-box`** CSS property defines the layout box to which the `transform` and `transform-origin` properties relate.
+    * The **`transform-box`** CSS property defines the layout box to which the `transform`, individual transform properties `translate`,`scale`, and `rotate`, and `transform-origin` properties relate.
     *
     * **Syntax**: `content-box | border-box | fill-box | stroke-box | view-box`
     *
@@ -5608,6 +5593,21 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
   var verticalAlign: js.UndefOr[VerticalAlign[TLength]] = js.undefined
   
   /**
+    * The **`view-transition-name`** CSS property provides the selected element with a distinct identifying name (a `<custom-ident>`) and causes it to participate in a separate view transition from the root view transition — or no view transition if the `none` value is specified.
+    *
+    * **Syntax**: `none | <custom-ident>`
+    *
+    * **Initial value**: `none`
+    *
+    * | Chrome  | Firefox | Safari | Edge | IE  |
+    * | :-----: | :-----: | :----: | :--: | :-: |
+    * | **111** |   No    |   No   | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/view-transition-name
+    */
+  var viewTransitionName: js.UndefOr[ViewTransitionName] = js.undefined
+  
+  /**
     * The **`visibility`** CSS property shows or hides an element without changing the layout of a document. The property can also hide rows or columns in a `<table>`.
     *
     * **Syntax**: `visible | hidden | collapse`
@@ -5753,7 +5753,7 @@ trait StandardLonghandProperties[TLength, TTime] extends StObject {
   var zIndex: js.UndefOr[ZIndex] = js.undefined
   
   /**
-    * The non-standard **_`zoom`_** CSS property can be used to control the magnification level of an element. `transform: scale()` should be used instead of this property, if possible. However, unlike CSS Transforms, `zoom` affects the layout size of the element.
+    * The non-standard **`zoom`** CSS property can be used to control the magnification level of an element. `transform: scale()` should be used instead of this property, if possible. However, unlike CSS Transforms, `zoom` affects the layout size of the element.
     *
     * **Syntax**: `normal | reset | <number> | <percentage>`
     *
@@ -6117,6 +6117,10 @@ object StandardLonghandProperties {
     
     inline def setCaretColorUndefined: Self = StObject.set(x, "caretColor", js.undefined)
     
+    inline def setCaretShape(value: CaretShape): Self = StObject.set(x, "caretShape", value.asInstanceOf[js.Any])
+    
+    inline def setCaretShapeUndefined: Self = StObject.set(x, "caretShape", js.undefined)
+    
     inline def setClear(value: Clear): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     
     inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
@@ -6171,7 +6175,31 @@ object StandardLonghandProperties {
     
     inline def setContain(value: Contain): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
     
+    inline def setContainIntrinsicBlockSize(value: ContainIntrinsicBlockSize[TLength]): Self = StObject.set(x, "containIntrinsicBlockSize", value.asInstanceOf[js.Any])
+    
+    inline def setContainIntrinsicBlockSizeUndefined: Self = StObject.set(x, "containIntrinsicBlockSize", js.undefined)
+    
+    inline def setContainIntrinsicHeight(value: ContainIntrinsicHeight[TLength]): Self = StObject.set(x, "containIntrinsicHeight", value.asInstanceOf[js.Any])
+    
+    inline def setContainIntrinsicHeightUndefined: Self = StObject.set(x, "containIntrinsicHeight", js.undefined)
+    
+    inline def setContainIntrinsicInlineSize(value: ContainIntrinsicInlineSize[TLength]): Self = StObject.set(x, "containIntrinsicInlineSize", value.asInstanceOf[js.Any])
+    
+    inline def setContainIntrinsicInlineSizeUndefined: Self = StObject.set(x, "containIntrinsicInlineSize", js.undefined)
+    
+    inline def setContainIntrinsicWidth(value: ContainIntrinsicWidth[TLength]): Self = StObject.set(x, "containIntrinsicWidth", value.asInstanceOf[js.Any])
+    
+    inline def setContainIntrinsicWidthUndefined: Self = StObject.set(x, "containIntrinsicWidth", js.undefined)
+    
     inline def setContainUndefined: Self = StObject.set(x, "contain", js.undefined)
+    
+    inline def setContainerName(value: ContainerName): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+    
+    inline def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
+    
+    inline def setContainerType(value: ContainerType): Self = StObject.set(x, "containerType", value.asInstanceOf[js.Any])
+    
+    inline def setContainerTypeUndefined: Self = StObject.set(x, "containerType", js.undefined)
     
     inline def setContent(value: Content): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
@@ -6257,6 +6285,10 @@ object StandardLonghandProperties {
     
     inline def setFontOpticalSizingUndefined: Self = StObject.set(x, "fontOpticalSizing", js.undefined)
     
+    inline def setFontPalette(value: FontPalette): Self = StObject.set(x, "fontPalette", value.asInstanceOf[js.Any])
+    
+    inline def setFontPaletteUndefined: Self = StObject.set(x, "fontPalette", js.undefined)
+    
     inline def setFontSize(value: FontSize[TLength]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     inline def setFontSizeAdjust(value: FontSizeAdjust): Self = StObject.set(x, "fontSizeAdjust", value.asInstanceOf[js.Any])
@@ -6294,6 +6326,10 @@ object StandardLonghandProperties {
     inline def setFontVariantEastAsian(value: FontVariantEastAsian): Self = StObject.set(x, "fontVariantEastAsian", value.asInstanceOf[js.Any])
     
     inline def setFontVariantEastAsianUndefined: Self = StObject.set(x, "fontVariantEastAsian", js.undefined)
+    
+    inline def setFontVariantEmoji(value: FontVariantEmoji): Self = StObject.set(x, "fontVariantEmoji", value.asInstanceOf[js.Any])
+    
+    inline def setFontVariantEmojiUndefined: Self = StObject.set(x, "fontVariantEmoji", js.undefined)
     
     inline def setFontVariantLigatures(value: FontVariantLigatures): Self = StObject.set(x, "fontVariantLigatures", value.asInstanceOf[js.Any])
     
@@ -6373,6 +6409,10 @@ object StandardLonghandProperties {
     
     inline def setHyphenateCharacterUndefined: Self = StObject.set(x, "hyphenateCharacter", js.undefined)
     
+    inline def setHyphenateLimitChars(value: HyphenateLimitChars): Self = StObject.set(x, "hyphenateLimitChars", value.asInstanceOf[js.Any])
+    
+    inline def setHyphenateLimitCharsUndefined: Self = StObject.set(x, "hyphenateLimitChars", js.undefined)
+    
     inline def setHyphens(value: Hyphens): Self = StObject.set(x, "hyphens", value.asInstanceOf[js.Any])
     
     inline def setHyphensUndefined: Self = StObject.set(x, "hyphens", js.undefined)
@@ -6401,10 +6441,6 @@ object StandardLonghandProperties {
     
     inline def setInputSecurityUndefined: Self = StObject.set(x, "inputSecurity", js.undefined)
     
-    inline def setInset(value: Inset[TLength]): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
-    
-    inline def setInsetBlock(value: InsetBlock[TLength]): Self = StObject.set(x, "insetBlock", value.asInstanceOf[js.Any])
-    
     inline def setInsetBlockEnd(value: InsetBlockEnd[TLength]): Self = StObject.set(x, "insetBlockEnd", value.asInstanceOf[js.Any])
     
     inline def setInsetBlockEndUndefined: Self = StObject.set(x, "insetBlockEnd", js.undefined)
@@ -6413,10 +6449,6 @@ object StandardLonghandProperties {
     
     inline def setInsetBlockStartUndefined: Self = StObject.set(x, "insetBlockStart", js.undefined)
     
-    inline def setInsetBlockUndefined: Self = StObject.set(x, "insetBlock", js.undefined)
-    
-    inline def setInsetInline(value: InsetInline[TLength]): Self = StObject.set(x, "insetInline", value.asInstanceOf[js.Any])
-    
     inline def setInsetInlineEnd(value: InsetInlineEnd[TLength]): Self = StObject.set(x, "insetInlineEnd", value.asInstanceOf[js.Any])
     
     inline def setInsetInlineEndUndefined: Self = StObject.set(x, "insetInlineEnd", js.undefined)
@@ -6424,10 +6456,6 @@ object StandardLonghandProperties {
     inline def setInsetInlineStart(value: InsetInlineStart[TLength]): Self = StObject.set(x, "insetInlineStart", value.asInstanceOf[js.Any])
     
     inline def setInsetInlineStartUndefined: Self = StObject.set(x, "insetInlineStart", js.undefined)
-    
-    inline def setInsetInlineUndefined: Self = StObject.set(x, "insetInline", js.undefined)
-    
-    inline def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
     
     inline def setIsolation(value: Isolation): Self = StObject.set(x, "isolation", value.asInstanceOf[js.Any])
     
@@ -6481,8 +6509,6 @@ object StandardLonghandProperties {
     
     inline def setListStyleTypeUndefined: Self = StObject.set(x, "listStyleType", js.undefined)
     
-    inline def setMarginBlock(value: MarginBlock[TLength]): Self = StObject.set(x, "marginBlock", value.asInstanceOf[js.Any])
-    
     inline def setMarginBlockEnd(value: MarginBlockEnd[TLength]): Self = StObject.set(x, "marginBlockEnd", value.asInstanceOf[js.Any])
     
     inline def setMarginBlockEndUndefined: Self = StObject.set(x, "marginBlockEnd", js.undefined)
@@ -6491,13 +6517,9 @@ object StandardLonghandProperties {
     
     inline def setMarginBlockStartUndefined: Self = StObject.set(x, "marginBlockStart", js.undefined)
     
-    inline def setMarginBlockUndefined: Self = StObject.set(x, "marginBlock", js.undefined)
-    
     inline def setMarginBottom(value: MarginBottom[TLength]): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
     
     inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
-    
-    inline def setMarginInline(value: MarginInline[TLength]): Self = StObject.set(x, "marginInline", value.asInstanceOf[js.Any])
     
     inline def setMarginInlineEnd(value: MarginInlineEnd[TLength]): Self = StObject.set(x, "marginInlineEnd", value.asInstanceOf[js.Any])
     
@@ -6506,8 +6528,6 @@ object StandardLonghandProperties {
     inline def setMarginInlineStart(value: MarginInlineStart[TLength]): Self = StObject.set(x, "marginInlineStart", value.asInstanceOf[js.Any])
     
     inline def setMarginInlineStartUndefined: Self = StObject.set(x, "marginInlineStart", js.undefined)
-    
-    inline def setMarginInlineUndefined: Self = StObject.set(x, "marginInline", js.undefined)
     
     inline def setMarginLeft(value: MarginLeft[TLength]): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
@@ -6520,6 +6540,10 @@ object StandardLonghandProperties {
     inline def setMarginTop(value: MarginTop[TLength]): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
     inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
+    
+    inline def setMarginTrim(value: MarginTrim): Self = StObject.set(x, "marginTrim", value.asInstanceOf[js.Any])
+    
+    inline def setMarginTrimUndefined: Self = StObject.set(x, "marginTrim", js.undefined)
     
     inline def setMaskBorderMode(value: MaskBorderMode): Self = StObject.set(x, "maskBorderMode", value.asInstanceOf[js.Any])
     
@@ -6665,6 +6689,10 @@ object StandardLonghandProperties {
     
     inline def setOffsetPathUndefined: Self = StObject.set(x, "offsetPath", js.undefined)
     
+    inline def setOffsetPosition(value: OffsetPosition[TLength]): Self = StObject.set(x, "offsetPosition", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetPositionUndefined: Self = StObject.set(x, "offsetPosition", js.undefined)
+    
     inline def setOffsetRotate(value: OffsetRotate): Self = StObject.set(x, "offsetRotate", value.asInstanceOf[js.Any])
     
     inline def setOffsetRotateUndefined: Self = StObject.set(x, "offsetRotate", js.undefined)
@@ -6749,8 +6777,6 @@ object StandardLonghandProperties {
     
     inline def setOverscrollBehaviorYUndefined: Self = StObject.set(x, "overscrollBehaviorY", js.undefined)
     
-    inline def setPaddingBlock(value: PaddingBlock[TLength]): Self = StObject.set(x, "paddingBlock", value.asInstanceOf[js.Any])
-    
     inline def setPaddingBlockEnd(value: PaddingBlockEnd[TLength]): Self = StObject.set(x, "paddingBlockEnd", value.asInstanceOf[js.Any])
     
     inline def setPaddingBlockEndUndefined: Self = StObject.set(x, "paddingBlockEnd", js.undefined)
@@ -6759,13 +6785,9 @@ object StandardLonghandProperties {
     
     inline def setPaddingBlockStartUndefined: Self = StObject.set(x, "paddingBlockStart", js.undefined)
     
-    inline def setPaddingBlockUndefined: Self = StObject.set(x, "paddingBlock", js.undefined)
-    
     inline def setPaddingBottom(value: PaddingBottom[TLength]): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
     
     inline def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
-    
-    inline def setPaddingInline(value: PaddingInline[TLength]): Self = StObject.set(x, "paddingInline", value.asInstanceOf[js.Any])
     
     inline def setPaddingInlineEnd(value: PaddingInlineEnd[TLength]): Self = StObject.set(x, "paddingInlineEnd", value.asInstanceOf[js.Any])
     
@@ -6774,8 +6796,6 @@ object StandardLonghandProperties {
     inline def setPaddingInlineStart(value: PaddingInlineStart[TLength]): Self = StObject.set(x, "paddingInlineStart", value.asInstanceOf[js.Any])
     
     inline def setPaddingInlineStartUndefined: Self = StObject.set(x, "paddingInlineStart", js.undefined)
-    
-    inline def setPaddingInlineUndefined: Self = StObject.set(x, "paddingInline", js.undefined)
     
     inline def setPaddingLeft(value: PaddingLeft[TLength]): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
     
@@ -6789,6 +6809,8 @@ object StandardLonghandProperties {
     
     inline def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
     
+    inline def setPage(value: Page): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    
     inline def setPageBreakAfter(value: PageBreakAfter): Self = StObject.set(x, "pageBreakAfter", value.asInstanceOf[js.Any])
     
     inline def setPageBreakAfterUndefined: Self = StObject.set(x, "pageBreakAfter", js.undefined)
@@ -6801,6 +6823,8 @@ object StandardLonghandProperties {
     
     inline def setPageBreakInsideUndefined: Self = StObject.set(x, "pageBreakInside", js.undefined)
     
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    
     inline def setPaintOrder(value: PaintOrder): Self = StObject.set(x, "paintOrder", value.asInstanceOf[js.Any])
     
     inline def setPaintOrderUndefined: Self = StObject.set(x, "paintOrder", js.undefined)
@@ -6812,10 +6836,6 @@ object StandardLonghandProperties {
     inline def setPerspectiveOriginUndefined: Self = StObject.set(x, "perspectiveOrigin", js.undefined)
     
     inline def setPerspectiveUndefined: Self = StObject.set(x, "perspective", js.undefined)
-    
-    inline def setPlaceContent(value: PlaceContent): Self = StObject.set(x, "placeContent", value.asInstanceOf[js.Any])
-    
-    inline def setPlaceContentUndefined: Self = StObject.set(x, "placeContent", js.undefined)
     
     inline def setPointerEvents(value: PointerEvents): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
     
@@ -6869,10 +6889,6 @@ object StandardLonghandProperties {
     
     inline def setScrollBehaviorUndefined: Self = StObject.set(x, "scrollBehavior", js.undefined)
     
-    inline def setScrollMargin(value: ScrollMargin[TLength]): Self = StObject.set(x, "scrollMargin", value.asInstanceOf[js.Any])
-    
-    inline def setScrollMarginBlock(value: ScrollMarginBlock[TLength]): Self = StObject.set(x, "scrollMarginBlock", value.asInstanceOf[js.Any])
-    
     inline def setScrollMarginBlockEnd(value: ScrollMarginBlockEnd[TLength]): Self = StObject.set(x, "scrollMarginBlockEnd", value.asInstanceOf[js.Any])
     
     inline def setScrollMarginBlockEndUndefined: Self = StObject.set(x, "scrollMarginBlockEnd", js.undefined)
@@ -6881,13 +6897,9 @@ object StandardLonghandProperties {
     
     inline def setScrollMarginBlockStartUndefined: Self = StObject.set(x, "scrollMarginBlockStart", js.undefined)
     
-    inline def setScrollMarginBlockUndefined: Self = StObject.set(x, "scrollMarginBlock", js.undefined)
-    
     inline def setScrollMarginBottom(value: ScrollMarginBottom[TLength]): Self = StObject.set(x, "scrollMarginBottom", value.asInstanceOf[js.Any])
     
     inline def setScrollMarginBottomUndefined: Self = StObject.set(x, "scrollMarginBottom", js.undefined)
-    
-    inline def setScrollMarginInline(value: ScrollMarginInline[TLength]): Self = StObject.set(x, "scrollMarginInline", value.asInstanceOf[js.Any])
     
     inline def setScrollMarginInlineEnd(value: ScrollMarginInlineEnd[TLength]): Self = StObject.set(x, "scrollMarginInlineEnd", value.asInstanceOf[js.Any])
     
@@ -6896,8 +6908,6 @@ object StandardLonghandProperties {
     inline def setScrollMarginInlineStart(value: ScrollMarginInlineStart[TLength]): Self = StObject.set(x, "scrollMarginInlineStart", value.asInstanceOf[js.Any])
     
     inline def setScrollMarginInlineStartUndefined: Self = StObject.set(x, "scrollMarginInlineStart", js.undefined)
-    
-    inline def setScrollMarginInlineUndefined: Self = StObject.set(x, "scrollMarginInline", js.undefined)
     
     inline def setScrollMarginLeft(value: ScrollMarginLeft[TLength]): Self = StObject.set(x, "scrollMarginLeft", value.asInstanceOf[js.Any])
     
@@ -6911,12 +6921,6 @@ object StandardLonghandProperties {
     
     inline def setScrollMarginTopUndefined: Self = StObject.set(x, "scrollMarginTop", js.undefined)
     
-    inline def setScrollMarginUndefined: Self = StObject.set(x, "scrollMargin", js.undefined)
-    
-    inline def setScrollPadding(value: ScrollPadding[TLength]): Self = StObject.set(x, "scrollPadding", value.asInstanceOf[js.Any])
-    
-    inline def setScrollPaddingBlock(value: ScrollPaddingBlock[TLength]): Self = StObject.set(x, "scrollPaddingBlock", value.asInstanceOf[js.Any])
-    
     inline def setScrollPaddingBlockEnd(value: ScrollPaddingBlockEnd[TLength]): Self = StObject.set(x, "scrollPaddingBlockEnd", value.asInstanceOf[js.Any])
     
     inline def setScrollPaddingBlockEndUndefined: Self = StObject.set(x, "scrollPaddingBlockEnd", js.undefined)
@@ -6925,13 +6929,9 @@ object StandardLonghandProperties {
     
     inline def setScrollPaddingBlockStartUndefined: Self = StObject.set(x, "scrollPaddingBlockStart", js.undefined)
     
-    inline def setScrollPaddingBlockUndefined: Self = StObject.set(x, "scrollPaddingBlock", js.undefined)
-    
     inline def setScrollPaddingBottom(value: ScrollPaddingBottom[TLength]): Self = StObject.set(x, "scrollPaddingBottom", value.asInstanceOf[js.Any])
     
     inline def setScrollPaddingBottomUndefined: Self = StObject.set(x, "scrollPaddingBottom", js.undefined)
-    
-    inline def setScrollPaddingInline(value: ScrollPaddingInline[TLength]): Self = StObject.set(x, "scrollPaddingInline", value.asInstanceOf[js.Any])
     
     inline def setScrollPaddingInlineEnd(value: ScrollPaddingInlineEnd[TLength]): Self = StObject.set(x, "scrollPaddingInlineEnd", value.asInstanceOf[js.Any])
     
@@ -6940,8 +6940,6 @@ object StandardLonghandProperties {
     inline def setScrollPaddingInlineStart(value: ScrollPaddingInlineStart[TLength]): Self = StObject.set(x, "scrollPaddingInlineStart", value.asInstanceOf[js.Any])
     
     inline def setScrollPaddingInlineStartUndefined: Self = StObject.set(x, "scrollPaddingInlineStart", js.undefined)
-    
-    inline def setScrollPaddingInlineUndefined: Self = StObject.set(x, "scrollPaddingInline", js.undefined)
     
     inline def setScrollPaddingLeft(value: ScrollPaddingLeft[TLength]): Self = StObject.set(x, "scrollPaddingLeft", value.asInstanceOf[js.Any])
     
@@ -6955,13 +6953,9 @@ object StandardLonghandProperties {
     
     inline def setScrollPaddingTopUndefined: Self = StObject.set(x, "scrollPaddingTop", js.undefined)
     
-    inline def setScrollPaddingUndefined: Self = StObject.set(x, "scrollPadding", js.undefined)
-    
     inline def setScrollSnapAlign(value: ScrollSnapAlign): Self = StObject.set(x, "scrollSnapAlign", value.asInstanceOf[js.Any])
     
     inline def setScrollSnapAlignUndefined: Self = StObject.set(x, "scrollSnapAlign", js.undefined)
-    
-    inline def setScrollSnapMargin(value: ScrollMargin[TLength]): Self = StObject.set(x, "scrollSnapMargin", value.asInstanceOf[js.Any])
     
     inline def setScrollSnapMarginBottom(value: ScrollMarginBottom[TLength]): Self = StObject.set(x, "scrollSnapMarginBottom", value.asInstanceOf[js.Any])
     
@@ -6979,8 +6973,6 @@ object StandardLonghandProperties {
     
     inline def setScrollSnapMarginTopUndefined: Self = StObject.set(x, "scrollSnapMarginTop", js.undefined)
     
-    inline def setScrollSnapMarginUndefined: Self = StObject.set(x, "scrollSnapMargin", js.undefined)
-    
     inline def setScrollSnapStop(value: ScrollSnapStop): Self = StObject.set(x, "scrollSnapStop", value.asInstanceOf[js.Any])
     
     inline def setScrollSnapStopUndefined: Self = StObject.set(x, "scrollSnapStop", js.undefined)
@@ -6988,6 +6980,14 @@ object StandardLonghandProperties {
     inline def setScrollSnapType(value: ScrollSnapType): Self = StObject.set(x, "scrollSnapType", value.asInstanceOf[js.Any])
     
     inline def setScrollSnapTypeUndefined: Self = StObject.set(x, "scrollSnapType", js.undefined)
+    
+    inline def setScrollTimelineAxis(value: ScrollTimelineAxis): Self = StObject.set(x, "scrollTimelineAxis", value.asInstanceOf[js.Any])
+    
+    inline def setScrollTimelineAxisUndefined: Self = StObject.set(x, "scrollTimelineAxis", js.undefined)
+    
+    inline def setScrollTimelineName(value: ScrollTimelineName): Self = StObject.set(x, "scrollTimelineName", value.asInstanceOf[js.Any])
+    
+    inline def setScrollTimelineNameUndefined: Self = StObject.set(x, "scrollTimelineName", js.undefined)
     
     inline def setScrollbarColor(value: ScrollbarColor): Self = StObject.set(x, "scrollbarColor", value.asInstanceOf[js.Any])
     
@@ -7164,6 +7164,10 @@ object StandardLonghandProperties {
     inline def setVerticalAlign(value: VerticalAlign[TLength]): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
     inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+    
+    inline def setViewTransitionName(value: ViewTransitionName): Self = StObject.set(x, "viewTransitionName", value.asInstanceOf[js.Any])
+    
+    inline def setViewTransitionNameUndefined: Self = StObject.set(x, "viewTransitionName", js.undefined)
     
     inline def setVisibility(value: Visibility): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     

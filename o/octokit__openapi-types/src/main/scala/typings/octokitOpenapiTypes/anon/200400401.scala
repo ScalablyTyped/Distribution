@@ -6,52 +6,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `200400401` extends StObject {
   
-  /** Response */
-  var `200`: ContentApplicationjsonDevcontainers
+  /** @description Response */
+  var `200`: Content510
   
-  var `400`: ContentApplicationjsonApplicationscimjson
+  var `400`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabelsreadonly['package_es_list_error'] */ js.Any
   
-  var `401`: Content48
+  var `401`: Content36
   
-  var `403`: Content48
-  
-  var `404`: Content48
-  
-  var `500`: Content48
+  var `403`: Content36
 }
 object `200400401` {
   
   inline def apply(
-    `200`: ContentApplicationjsonDevcontainers,
-    `400`: ContentApplicationjsonApplicationscimjson,
-    `401`: Content48,
-    `403`: Content48,
-    `404`: Content48,
-    `500`: Content48
+    `200`: Content510,
+    `400`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabelsreadonly['package_es_list_error'] */ js.Any,
+    `401`: Content36,
+    `403`: Content36
   ): `200400401` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.updateDynamic("400")(`400`.asInstanceOf[js.Any])
     __obj.updateDynamic("401")(`401`.asInstanceOf[js.Any])
     __obj.updateDynamic("403")(`403`.asInstanceOf[js.Any])
-    __obj.updateDynamic("404")(`404`.asInstanceOf[js.Any])
-    __obj.updateDynamic("500")(`500`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`200400401`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `200400401`] (val x: Self) extends AnyVal {
     
-    inline def set200(value: ContentApplicationjsonDevcontainers): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    inline def set200(value: Content510): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set400(value: ContentApplicationjsonApplicationscimjson): Self = StObject.set(x, "400", value.asInstanceOf[js.Any])
+    inline def set400(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabelsreadonly['package_es_list_error'] */ js.Any
+    ): Self = StObject.set(x, "400", value.asInstanceOf[js.Any])
     
-    inline def set401(value: Content48): Self = StObject.set(x, "401", value.asInstanceOf[js.Any])
+    inline def set401(value: Content36): Self = StObject.set(x, "401", value.asInstanceOf[js.Any])
     
-    inline def set403(value: Content48): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
-    
-    inline def set404(value: Content48): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
-    
-    inline def set500(value: Content48): Self = StObject.set(x, "500", value.asInstanceOf[js.Any])
+    inline def set403(value: Content36): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
   }
 }

@@ -1,236 +1,140 @@
 package typings.twilio
 
+import typings.twilio.anon.Identity
 import typings.twilio.libBasePageMod.TwilioResponsePayload
-import typings.twilio.libInterfacesMod.SerializableClass
+import typings.twilio.libRestPreviewSyncMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libRestPreviewSyncServiceSyncListSyncListPermissionMod {
   
-  @JSImport("twilio/lib/rest/preview/sync/service/syncList/syncListPermission", JSImport.Namespace)
+  @JSImport("twilio/lib/rest/preview/sync/service/syncList/syncListPermission", "SyncListPermissionContextImpl")
   @js.native
-  val ^ : js.Any = js.native
-  
-  @JSImport("twilio/lib/rest/preview/sync/service/syncList/syncListPermission", "SyncListPermissionContext")
-  @js.native
-  open class SyncListPermissionContext protected () extends StObject {
-    /**
-      * Initialize the SyncListPermissionContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param serviceSid - The service_sid
-      * @param listSid - Sync List SID or unique name.
-      * @param identity - Identity of the user to whom the Sync List Permission applies.
-      */
-    def this(
-      version: typings.twilio.libRestPreviewSyncMod.^,
-      serviceSid: String,
-      listSid: String,
-      identity: String
-    ) = this()
+  open class SyncListPermissionContextImpl protected ()
+    extends StObject
+       with SyncListPermissionContext {
+    def this(_version: default, serviceSid: String, listSid: String, identity: String) = this()
     
-    /**
-      * fetch a SyncListPermissionInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def fetch(): js.Promise[SyncListPermissionInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ SyncListPermissionInstance, Any]): js.Promise[SyncListPermissionInstance] = js.native
+    /* protected */ var _solution: SyncListPermissionContextSolution = js.native
     
-    /**
-      * remove a SyncListPermissionInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def remove(): js.Promise[Boolean] = js.native
-    def remove(callback: js.Function2[/* error */ js.Error | Null, /* items */ SyncListPermissionInstance, Any]): js.Promise[Boolean] = js.native
+    /* protected */ var _uri: String = js.native
     
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
-    
-    /**
-      * update a SyncListPermissionInstance
-      *
-      * @param opts - Options for request
-      * @param callback - Callback to handle processed record
-      */
-    def update(opts: SyncListPermissionInstanceUpdateOptions): js.Promise[SyncListPermissionInstance] = js.native
-    def update(
-      opts: SyncListPermissionInstanceUpdateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ SyncListPermissionInstance, Any]
-    ): js.Promise[SyncListPermissionInstance] = js.native
+    /* protected */ var _version: default = js.native
   }
   
   @JSImport("twilio/lib/rest/preview/sync/service/syncList/syncListPermission", "SyncListPermissionInstance")
   @js.native
-  open class SyncListPermissionInstance protected () extends SerializableClass {
-    /**
-      * Initialize the SyncListPermissionContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param payload - The instance payload
-      * @param serviceSid - Sync Service Instance SID.
-      * @param listSid - Sync List SID.
-      * @param identity - Identity of the user to whom the Sync List Permission applies.
-      */
+  open class SyncListPermissionInstance protected () extends StObject {
+    def this(_version: default, payload: SyncListPermissionResource, serviceSid: String, listSid: String) = this()
     def this(
-      version: typings.twilio.libRestPreviewSyncMod.^,
-      payload: SyncListPermissionPayload,
+      _version: default,
+      payload: SyncListPermissionResource,
       serviceSid: String,
       listSid: String,
       identity: String
     ) = this()
     
-    /* private */ var _proxy: SyncListPermissionContext = js.native
+    /* protected */ var _context: js.UndefOr[SyncListPermissionContext] = js.native
     
+    /* private */ def _proxy: Any = js.native
+    
+    /* protected */ var _solution: SyncListPermissionContextSolution = js.native
+    
+    /* protected */ var _version: default = js.native
+    
+    /**
+      * The unique SID identifier of the Twilio Account.
+      */
     var accountSid: String = js.native
     
     /**
-      * fetch a SyncListPermissionInstance
+      * Fetch a SyncListPermissionInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed SyncListPermissionInstance
       */
     def fetch(): js.Promise[SyncListPermissionInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[SyncListPermissionInstance] = js.native
+    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]): js.Promise[SyncListPermissionInstance] = js.native
     
+    /**
+      * Arbitrary string identifier representing a human user associated with an FPA token, assigned by the developer.
+      */
     var identity: String = js.native
     
+    /**
+      * The unique SID identifier of the Sync List to which the Permission applies.
+      */
     var listSid: String = js.native
     
+    /**
+      * Boolean flag specifying whether the identity can delete the Sync List.
+      */
     var manage: Boolean = js.native
     
+    /**
+      * Boolean flag specifying whether the identity can read the Sync List and its Items.
+      */
     var read: Boolean = js.native
     
     /**
-      * remove a SyncListPermissionInstance
+      * Remove a SyncListPermissionInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed boolean
       */
     def remove(): js.Promise[Boolean] = js.native
-    def remove(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[Boolean] = js.native
+    def remove(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any]): js.Promise[Boolean] = js.native
     
+    /**
+      * The unique SID identifier of the Sync Service Instance.
+      */
     var serviceSid: String = js.native
     
     /**
-      * update a SyncListPermissionInstance
+      * Provide a user-friendly representation
       *
-      * @param opts - Options for request
-      * @param callback - Callback to handle processed record
+      * @returns Object
       */
-    def update(opts: SyncListPermissionInstanceUpdateOptions): js.Promise[SyncListPermissionInstance] = js.native
+    def toJSON(): Identity = js.native
+    
+    /**
+      * Update a SyncListPermissionInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed SyncListPermissionInstance
+      */
+    def update(params: SyncListPermissionContextUpdateOptions): js.Promise[SyncListPermissionInstance] = js.native
     def update(
-      opts: SyncListPermissionInstanceUpdateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]
+      params: SyncListPermissionContextUpdateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]
     ): js.Promise[SyncListPermissionInstance] = js.native
     
+    /**
+      * Contains an absolute URL for this Sync List Permission.
+      */
     var url: String = js.native
     
+    /**
+      * Boolean flag specifying whether the identity can create, update and delete Items of the Sync List.
+      */
     var write: Boolean = js.native
-  }
-  
-  /**
-    * Initialize the SyncListPermissionList
-    *
-    * PLEASE NOTE that this class contains preview products that are subject to
-    * change. Use them with caution. If you currently do not have developer preview
-    * access, please contact help@twilio.com.
-    *
-    * @param version - Version of the resource
-    * @param serviceSid - Sync Service Instance SID.
-    * @param listSid - Sync List SID.
-    */
-  inline def SyncListPermissionList(version: typings.twilio.libRestPreviewSyncMod.^, serviceSid: String, listSid: String): SyncListPermissionListInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("SyncListPermissionList")(version.asInstanceOf[js.Any], serviceSid.asInstanceOf[js.Any], listSid.asInstanceOf[js.Any])).asInstanceOf[SyncListPermissionListInstance]
-  
-  @JSImport("twilio/lib/rest/preview/sync/service/syncList/syncListPermission", "SyncListPermissionPage")
-  @js.native
-  open class SyncListPermissionPage protected ()
-    extends typings.twilio.libBasePageMod.^[
-          typings.twilio.libRestPreviewSyncMod.^, 
-          SyncListPermissionPayload, 
-          SyncListPermissionResource, 
-          SyncListPermissionInstance
-        ] {
-    /**
-      * Initialize the SyncListPermissionPage
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param response - Response from the API
-      * @param solution - Path solution
-      */
-    def this(
-      version: typings.twilio.libRestPreviewSyncMod.^,
-      response: typings.twilio.libHttpResponseMod.^[String],
-      solution: SyncListPermissionSolution
-    ) = this()
-    
-    /**
-      * Build an instance of SyncListPermissionInstance
-      *
-      * @param payload - Payload response from the API
-      */
-    def getInstance(payload: SyncListPermissionPayload): SyncListPermissionInstance = js.native
-    
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
-  }
-  
-  /**
-    * Options to pass to update
-    *
-    * @property manage - Manage access.
-    * @property read - Read access.
-    * @property write - Write access.
-    */
-  trait SyncListPermissionInstanceUpdateOptions extends StObject {
-    
-    var manage: Boolean
-    
-    var read: Boolean
-    
-    var write: Boolean
-  }
-  object SyncListPermissionInstanceUpdateOptions {
-    
-    inline def apply(manage: Boolean, read: Boolean, write: Boolean): SyncListPermissionInstanceUpdateOptions = {
-      val __obj = js.Dynamic.literal(manage = manage.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any], write = write.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SyncListPermissionInstanceUpdateOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: SyncListPermissionInstanceUpdateOptions] (val x: Self) extends AnyVal {
-      
-      inline def setManage(value: Boolean): Self = StObject.set(x, "manage", value.asInstanceOf[js.Any])
-      
-      inline def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
-      
-      inline def setWrite(value: Boolean): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
-    }
   }
   
   @js.native
   trait SyncListPermissionListInstance extends StObject {
     
-    /**
-      * @param sid - sid of instance
-      */
-    def apply(sid: String): SyncListPermissionContext = js.native
+    def apply(identity: String): SyncListPermissionContext = js.native
+    
+    var _solution: SyncListPermissionSolution = js.native
+    
+    var _uri: String = js.native
+    
+    var _version: default = js.native
     
     /**
       * Streams SyncListPermissionInstance records from the API.
@@ -244,7 +148,8 @@ object libRestPreviewSyncServiceSyncListSyncListPermissionMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Function to process each record
+      * @param { SyncListPermissionListInstanceEachOptions } [params] - Options for request
+      * @param { function } [callback] - Function to process each record
       */
     def each(): Unit = js.native
     def each(
@@ -254,17 +159,9 @@ object libRestPreviewSyncServiceSyncListSyncListPermissionMod {
           Unit
         ]
     ): Unit = js.native
+    def each(params: SyncListPermissionListInstanceEachOptions): Unit = js.native
     def each(
-      opts: Unit,
-      callback: js.Function2[
-          /* item */ SyncListPermissionInstance, 
-          /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
-          Unit
-        ]
-    ): Unit = js.native
-    def each(opts: SyncListPermissionListInstanceEachOptions): Unit = js.native
-    def each(
-      opts: SyncListPermissionListInstanceEachOptions,
+      params: SyncListPermissionListInstanceEachOptions,
       callback: js.Function2[
           /* item */ SyncListPermissionInstance, 
           /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
@@ -272,33 +169,19 @@ object libRestPreviewSyncServiceSyncListSyncListPermissionMod {
         ]
     ): Unit = js.native
     
-    /**
-      * Constructs a sync_list_permission
-      *
-      * @param identity - Identity of the user to whom the Sync List Permission applies.
-      */
     def get(identity: String): SyncListPermissionContext = js.native
     
     /**
-      * Retrieve a single target page of SyncListPermissionInstance records from the
-      * API.
+      * Retrieve a single target page of SyncListPermissionInstance records from the API.
       *
       * The request is executed immediately.
       *
-      * If a function is passed as the first argument, it will be used as the callback
-      * function.
-      *
-      * @param callback - Callback to handle list of records
+      * @param { string } [targetUrl] - API-generated URL for the requested results page
+      * @param { function } [callback] - Callback to handle list of records
       */
-    def getPage(): js.Promise[SyncListPermissionPage] = js.native
-    def getPage(callback: js.Function2[/* error */ js.Error | Null, /* items */ SyncListPermissionPage, Any]): js.Promise[SyncListPermissionPage] = js.native
     def getPage(targetUrl: String): js.Promise[SyncListPermissionPage] = js.native
     def getPage(
       targetUrl: String,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ SyncListPermissionPage, Any]
-    ): js.Promise[SyncListPermissionPage] = js.native
-    def getPage(
-      targetUrl: Unit,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ SyncListPermissionPage, Any]
     ): js.Promise[SyncListPermissionPage] = js.native
     
@@ -308,19 +191,16 @@ object libRestPreviewSyncServiceSyncListSyncListPermissionMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { SyncListPermissionListInstanceOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def list(): js.Promise[js.Array[SyncListPermissionInstance]] = js.native
     def list(
       callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[SyncListPermissionInstance], Any]
     ): js.Promise[js.Array[SyncListPermissionInstance]] = js.native
+    def list(params: SyncListPermissionListInstanceOptions): js.Promise[js.Array[SyncListPermissionInstance]] = js.native
     def list(
-      opts: Unit,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[SyncListPermissionInstance], Any]
-    ): js.Promise[js.Array[SyncListPermissionInstance]] = js.native
-    def list(opts: SyncListPermissionListInstanceOptions): js.Promise[js.Array[SyncListPermissionInstance]] = js.native
-    def list(
-      opts: SyncListPermissionListInstanceOptions,
+      params: SyncListPermissionListInstanceOptions,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[SyncListPermissionInstance], Any]
     ): js.Promise[js.Array[SyncListPermissionInstance]] = js.native
     
@@ -332,17 +212,14 @@ object libRestPreviewSyncServiceSyncListSyncListPermissionMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { SyncListPermissionListInstancePageOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def page(): js.Promise[SyncListPermissionPage] = js.native
     def page(callback: js.Function2[/* error */ js.Error | Null, /* items */ SyncListPermissionPage, Any]): js.Promise[SyncListPermissionPage] = js.native
+    def page(params: SyncListPermissionListInstancePageOptions): js.Promise[SyncListPermissionPage] = js.native
     def page(
-      opts: Unit,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ SyncListPermissionPage, Any]
-    ): js.Promise[SyncListPermissionPage] = js.native
-    def page(opts: SyncListPermissionListInstancePageOptions): js.Promise[SyncListPermissionPage] = js.native
-    def page(
-      opts: SyncListPermissionListInstancePageOptions,
+      params: SyncListPermissionListInstancePageOptions,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ SyncListPermissionPage, Any]
     ): js.Promise[SyncListPermissionPage] = js.native
     
@@ -351,27 +228,146 @@ object libRestPreviewSyncServiceSyncListSyncListPermissionMod {
       */
     def toJSON(): Any = js.native
   }
+  object SyncListPermissionListInstance {
+    
+    @JSImport("twilio/lib/rest/preview/sync/service/syncList/syncListPermission", "SyncListPermissionListInstance")
+    @js.native
+    def apply(version: default, serviceSid: String, listSid: String): SyncListPermissionListInstance = js.native
+  }
   
-  /**
-    * Options to pass to each
-    *
-    * @property callback -
-    *                         Function to process each record. If this and a positional
-    *                         callback are passed, this one will be used
-    * @property done - Function to be called upon completion of streaming
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         each() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no pageSize is defined but a limit is defined,
-    *                         each() will attempt to read the limit with the most efficient
-    *                         page size, i.e. min(limit, 1000)
-    */
+  @JSImport("twilio/lib/rest/preview/sync/service/syncList/syncListPermission", "SyncListPermissionPage")
+  @js.native
+  open class SyncListPermissionPage protected ()
+    extends typings.twilio.libBasePageMod.default[
+          default, 
+          SyncListPermissionPayload, 
+          SyncListPermissionResource, 
+          SyncListPermissionInstance
+        ] {
+    /**
+      * Initialize the SyncListPermissionPage
+      *
+      * @param version - Version of the resource
+      * @param response - Response from the API
+      * @param solution - Path solution
+      */
+    def this(
+      version: default,
+      response: typings.twilio.libHttpResponseMod.default[String],
+      solution: SyncListPermissionSolution
+    ) = this()
+    
+    /**
+      * Build an instance of SyncListPermissionInstance
+      *
+      * @param payload - Payload response from the API
+      */
+    def getInstance(payload: SyncListPermissionResource): SyncListPermissionInstance = js.native
+  }
+  
+  @js.native
+  trait SyncListPermissionContext extends StObject {
+    
+    /**
+      * Fetch a SyncListPermissionInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed SyncListPermissionInstance
+      */
+    def fetch(): js.Promise[SyncListPermissionInstance] = js.native
+    def fetch(
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[SyncListPermissionInstance], Any]
+    ): js.Promise[SyncListPermissionInstance] = js.native
+    
+    /**
+      * Remove a SyncListPermissionInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed boolean
+      */
+    def remove(): js.Promise[Boolean] = js.native
+    def remove(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any]): js.Promise[Boolean] = js.native
+    
+    /**
+      * Provide a user-friendly representation
+      */
+    def toJSON(): Any = js.native
+    
+    /**
+      * Update a SyncListPermissionInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed SyncListPermissionInstance
+      */
+    def update(params: SyncListPermissionContextUpdateOptions): js.Promise[SyncListPermissionInstance] = js.native
+    def update(
+      params: SyncListPermissionContextUpdateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[SyncListPermissionInstance], Any]
+    ): js.Promise[SyncListPermissionInstance] = js.native
+  }
+  
+  trait SyncListPermissionContextSolution extends StObject {
+    
+    var identity: String
+    
+    var listSid: String
+    
+    var serviceSid: String
+  }
+  object SyncListPermissionContextSolution {
+    
+    inline def apply(identity: String, listSid: String, serviceSid: String): SyncListPermissionContextSolution = {
+      val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], listSid = listSid.asInstanceOf[js.Any], serviceSid = serviceSid.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SyncListPermissionContextSolution]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncListPermissionContextSolution] (val x: Self) extends AnyVal {
+      
+      inline def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      
+      inline def setListSid(value: String): Self = StObject.set(x, "listSid", value.asInstanceOf[js.Any])
+      
+      inline def setServiceSid(value: String): Self = StObject.set(x, "serviceSid", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait SyncListPermissionContextUpdateOptions extends StObject {
+    
+    /** Boolean flag specifying whether the identity can delete the Sync List. */
+    var manage: Boolean
+    
+    /** Boolean flag specifying whether the identity can read the Sync List. */
+    var read: Boolean
+    
+    /** Boolean flag specifying whether the identity can create, update and delete Items of the Sync List. */
+    var write: Boolean
+  }
+  object SyncListPermissionContextUpdateOptions {
+    
+    inline def apply(manage: Boolean, read: Boolean, write: Boolean): SyncListPermissionContextUpdateOptions = {
+      val __obj = js.Dynamic.literal(manage = manage.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any], write = write.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SyncListPermissionContextUpdateOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncListPermissionContextUpdateOptions] (val x: Self) extends AnyVal {
+      
+      inline def setManage(value: Boolean): Self = StObject.set(x, "manage", value.asInstanceOf[js.Any])
+      
+      inline def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+      
+      inline def setWrite(value: Boolean): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait SyncListPermissionListInstanceEachOptions extends StObject {
     
+    /** Function to process each record. If this and a positional callback are passed, this one will be used */
     var callback: js.UndefOr[
         js.Function2[
           /* item */ SyncListPermissionInstance, 
@@ -380,10 +376,13 @@ object libRestPreviewSyncServiceSyncListSyncListPermissionMod {
         ]
       ] = js.undefined
     
+    /** Function to be called upon completion of streaming */
     var done: js.UndefOr[js.Function] = js.undefined
     
+    /** Upper limit for the number of records to return. each() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
   }
   object SyncListPermissionListInstanceEachOptions {
@@ -416,24 +415,12 @@ object libRestPreviewSyncServiceSyncListSyncListPermissionMod {
     }
   }
   
-  /**
-    * Options to pass to list
-    *
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         list() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no page_size is defined but a limit is defined,
-    *                         list() will attempt to read the limit with the most
-    *                         efficient page size, i.e. min(limit, 1000)
-    */
   trait SyncListPermissionListInstanceOptions extends StObject {
     
+    /** Upper limit for the number of records to return. list() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
   }
   object SyncListPermissionListInstanceOptions {
@@ -456,19 +443,15 @@ object libRestPreviewSyncServiceSyncListSyncListPermissionMod {
     }
   }
   
-  /**
-    * Options to pass to page
-    *
-    * @property pageNumber - Page Number, this value is simply for client state
-    * @property pageSize - Number of records to return, defaults to 50
-    * @property pageToken - PageToken provided by the API
-    */
   trait SyncListPermissionListInstancePageOptions extends StObject {
     
+    /** Page Number, this value is simply for client state */
     var pageNumber: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
     
+    /** PageToken provided by the API */
     var pageToken: js.UndefOr[String] = js.undefined
   }
   object SyncListPermissionListInstancePageOptions {
@@ -497,28 +480,31 @@ object libRestPreviewSyncServiceSyncListSyncListPermissionMod {
   
   trait SyncListPermissionPayload
     extends StObject
-       with SyncListPermissionResource
-       with TwilioResponsePayload
+       with TwilioResponsePayload {
+    
+    var permissions: js.Array[SyncListPermissionResource]
+  }
   object SyncListPermissionPayload {
     
     inline def apply(
-      account_sid: String,
       first_page_uri: String,
-      identity: String,
-      list_sid: String,
-      manage: Boolean,
       next_page_uri: String,
       page: Double,
       page_size: Double,
+      permissions: js.Array[SyncListPermissionResource],
       previous_page_uri: String,
-      read: Boolean,
-      service_sid: String,
-      uri: String,
-      url: String,
-      write: Boolean
+      uri: String
     ): SyncListPermissionPayload = {
-      val __obj = js.Dynamic.literal(account_sid = account_sid.asInstanceOf[js.Any], first_page_uri = first_page_uri.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], list_sid = list_sid.asInstanceOf[js.Any], manage = manage.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any], service_sid = service_sid.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], write = write.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(first_page_uri = first_page_uri.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[SyncListPermissionPayload]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncListPermissionPayload] (val x: Self) extends AnyVal {
+      
+      inline def setPermissions(value: js.Array[SyncListPermissionResource]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+      
+      inline def setPermissionsVarargs(value: SyncListPermissionResource*): Self = StObject.set(x, "permissions", js.Array(value*))
     }
   }
   
@@ -579,14 +565,14 @@ object libRestPreviewSyncServiceSyncListSyncListPermissionMod {
   
   trait SyncListPermissionSolution extends StObject {
     
-    var listSid: js.UndefOr[String] = js.undefined
+    var listSid: String
     
-    var serviceSid: js.UndefOr[String] = js.undefined
+    var serviceSid: String
   }
   object SyncListPermissionSolution {
     
-    inline def apply(): SyncListPermissionSolution = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(listSid: String, serviceSid: String): SyncListPermissionSolution = {
+      val __obj = js.Dynamic.literal(listSid = listSid.asInstanceOf[js.Any], serviceSid = serviceSid.asInstanceOf[js.Any])
       __obj.asInstanceOf[SyncListPermissionSolution]
     }
     
@@ -595,11 +581,7 @@ object libRestPreviewSyncServiceSyncListSyncListPermissionMod {
       
       inline def setListSid(value: String): Self = StObject.set(x, "listSid", value.asInstanceOf[js.Any])
       
-      inline def setListSidUndefined: Self = StObject.set(x, "listSid", js.undefined)
-      
       inline def setServiceSid(value: String): Self = StObject.set(x, "serviceSid", value.asInstanceOf[js.Any])
-      
-      inline def setServiceSidUndefined: Self = StObject.set(x, "serviceSid", js.undefined)
     }
   }
 }

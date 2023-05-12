@@ -1,6 +1,6 @@
 package typings.amazonDaxClient
 
-import typings.awsSdk.mod.Request
+import typings.awsSdk2Types.mod.Request
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -96,6 +96,8 @@ object mod {
     var region: js.UndefOr[String] = js.undefined
     
     var secretAccessKey: js.UndefOr[String] = js.undefined
+    
+    var sessionToken: js.UndefOr[String] = js.undefined
   }
   object AmazonDaxClientOptions {
     
@@ -148,6 +150,10 @@ object mod {
       inline def setSecretAccessKey(value: String): Self = StObject.set(x, "secretAccessKey", value.asInstanceOf[js.Any])
       
       inline def setSecretAccessKeyUndefined: Self = StObject.set(x, "secretAccessKey", js.undefined)
+      
+      inline def setSessionToken(value: String): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
+      
+      inline def setSessionTokenUndefined: Self = StObject.set(x, "sessionToken", js.undefined)
     }
   }
 }

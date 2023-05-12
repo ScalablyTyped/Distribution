@@ -16,7 +16,7 @@ object libIconsDatabaseFilledMod extends Shortcut {
   @js.native
   trait DatabaseFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_DatabaseFilledIconType: String = js.native

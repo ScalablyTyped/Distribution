@@ -42,6 +42,8 @@ object typesMod {
     def formatNational(): String = js.native
     def formatNational(options: FormatNumberOptionsWithoutIDD): String = js.native
     
+    def getPossibleCountries(): js.Array[CountryCode] = js.native
+    
     def getType(): NumberType = js.native
     
     def getURI(): String = js.native

@@ -12,7 +12,7 @@ open class AreaLine protected ()
   def this(props: AreaLineProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: AreaLineProps, context: Any) = this()
 }

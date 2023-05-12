@@ -9,7 +9,6 @@ object mod {
   @JSImport("confidence", "Store")
   @js.native
   /**
-    * @constructor
     * @param {any} document - the configuration document for this document store
     */
   open class Store () extends StObject {

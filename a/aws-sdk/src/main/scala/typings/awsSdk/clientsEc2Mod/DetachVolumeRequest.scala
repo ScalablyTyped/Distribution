@@ -24,16 +24,16 @@ trait DetachVolumeRequest extends StObject {
   /**
     * The ID of the instance. If you are detaching a Multi-Attach enabled volume, you must specify an instance ID.
     */
-  var InstanceId: js.UndefOr[typings.awsSdk.clientsEc2Mod.InstanceId] = js.undefined
+  var InstanceId: js.UndefOr[InstanceIdForResolver] = js.undefined
   
   /**
     * The ID of the volume.
     */
-  var VolumeId: typings.awsSdk.clientsEc2Mod.VolumeId
+  var VolumeId: VolumeIdWithResolver
 }
 object DetachVolumeRequest {
   
-  inline def apply(VolumeId: VolumeId): DetachVolumeRequest = {
+  inline def apply(VolumeId: VolumeIdWithResolver): DetachVolumeRequest = {
     val __obj = js.Dynamic.literal(VolumeId = VolumeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetachVolumeRequest]
   }
@@ -53,10 +53,10 @@ object DetachVolumeRequest {
     
     inline def setForceUndefined: Self = StObject.set(x, "Force", js.undefined)
     
-    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceIdForResolver): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    inline def setVolumeId(value: VolumeId): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
+    inline def setVolumeId(value: VolumeIdWithResolver): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
   }
 }

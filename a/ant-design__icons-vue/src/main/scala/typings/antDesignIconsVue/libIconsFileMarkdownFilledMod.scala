@@ -16,7 +16,7 @@ object libIconsFileMarkdownFilledMod extends Shortcut {
   @js.native
   trait FileMarkdownFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_FileMarkdownFilledIconType: String = js.native

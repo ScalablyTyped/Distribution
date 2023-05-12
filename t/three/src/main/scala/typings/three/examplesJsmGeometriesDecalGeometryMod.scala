@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.BufferGeometry
 import typings.three.srcThreeMod.Euler
@@ -13,10 +14,10 @@ object examplesJsmGeometriesDecalGeometryMod {
   
   @JSImport("three/examples/jsm/geometries/DecalGeometry", "DecalGeometry")
   @js.native
-  open class DecalGeometry protected () extends BufferGeometry {
+  open class DecalGeometry protected () extends BufferGeometry[NormalBufferAttributes] {
     def this(
       mesh: Mesh[
-            typings.three.srcCoreBufferGeometryMod.BufferGeometry, 
+            typings.three.srcCoreBufferGeometryMod.BufferGeometry[NormalBufferAttributes], 
             Material | js.Array[Material]
           ],
       position: Vector3,

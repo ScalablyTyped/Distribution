@@ -24,16 +24,6 @@ trait Branchkey extends StObject {
   
   var CFBundleVersion: js.UndefOr[String] = js.undefined
   
-  var FacebookAdvertiserIDCollectionEnabled: js.UndefOr[Boolean] = js.undefined
-  
-  var FacebookAppID: js.UndefOr[String] = js.undefined
-  
-  var FacebookAutoInitEnabled: js.UndefOr[Boolean] = js.undefined
-  
-  var FacebookAutoLogAppEventsEnabled: js.UndefOr[Boolean] = js.undefined
-  
-  var FacebookDisplayName: js.UndefOr[String] = js.undefined
-  
   var GADApplicationIdentifier: js.UndefOr[String] = js.undefined
   
   var GMSApiKey: js.UndefOr[String] = js.undefined
@@ -103,26 +93,6 @@ object Branchkey {
     inline def setCFBundleVersion(value: String): Self = StObject.set(x, "CFBundleVersion", value.asInstanceOf[js.Any])
     
     inline def setCFBundleVersionUndefined: Self = StObject.set(x, "CFBundleVersion", js.undefined)
-    
-    inline def setFacebookAdvertiserIDCollectionEnabled(value: Boolean): Self = StObject.set(x, "FacebookAdvertiserIDCollectionEnabled", value.asInstanceOf[js.Any])
-    
-    inline def setFacebookAdvertiserIDCollectionEnabledUndefined: Self = StObject.set(x, "FacebookAdvertiserIDCollectionEnabled", js.undefined)
-    
-    inline def setFacebookAppID(value: String): Self = StObject.set(x, "FacebookAppID", value.asInstanceOf[js.Any])
-    
-    inline def setFacebookAppIDUndefined: Self = StObject.set(x, "FacebookAppID", js.undefined)
-    
-    inline def setFacebookAutoInitEnabled(value: Boolean): Self = StObject.set(x, "FacebookAutoInitEnabled", value.asInstanceOf[js.Any])
-    
-    inline def setFacebookAutoInitEnabledUndefined: Self = StObject.set(x, "FacebookAutoInitEnabled", js.undefined)
-    
-    inline def setFacebookAutoLogAppEventsEnabled(value: Boolean): Self = StObject.set(x, "FacebookAutoLogAppEventsEnabled", value.asInstanceOf[js.Any])
-    
-    inline def setFacebookAutoLogAppEventsEnabledUndefined: Self = StObject.set(x, "FacebookAutoLogAppEventsEnabled", js.undefined)
-    
-    inline def setFacebookDisplayName(value: String): Self = StObject.set(x, "FacebookDisplayName", value.asInstanceOf[js.Any])
-    
-    inline def setFacebookDisplayNameUndefined: Self = StObject.set(x, "FacebookDisplayName", js.undefined)
     
     inline def setGADApplicationIdentifier(value: String): Self = StObject.set(x, "GADApplicationIdentifier", value.asInstanceOf[js.Any])
     

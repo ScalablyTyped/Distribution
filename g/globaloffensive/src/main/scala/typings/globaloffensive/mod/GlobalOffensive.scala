@@ -5,6 +5,8 @@ import typings.globaloffensive.anon.GCGOINGDOWN
 import typings.globaloffensive.anon.MatchId
 import typings.globaloffensive.globaloffensiveStrings.connectedToGC
 import typings.globaloffensive.globaloffensiveStrings.connectionStatus
+import typings.globaloffensive.globaloffensiveStrings.craftingComplete
+import typings.globaloffensive.globaloffensiveStrings.debug
 import typings.globaloffensive.globaloffensiveStrings.disconnectedFromGC
 import typings.globaloffensive.globaloffensiveStrings.inspectItemInfo
 import typings.globaloffensive.globaloffensiveStrings.inspectItemTimedOut
@@ -39,6 +41,18 @@ trait GlobalOffensive extends EventEmitter {
   def addToCasket(casketId: String, itemId: String): Unit = js.native
   
   /**
+    * Craft some items using a given recipe.
+    *
+    * You will receive a `craftingComplete` event in response.
+    * If crafting succeeded, you will also get `itemRemoved` events for each item you spent,
+    * and `itemAcquired` events for each item you received.
+    *
+    * @param items - IDs of items to craft
+    * @param recipe - The ID of the recipe to use
+    */
+  def craft(items: js.Array[Double], recipe: Double): Unit = js.native
+  
+  /**
     * Deletes a particular item from your inventory.
     * This is a destructive operation, which cannot be undone.
     * @param itemId The ID of the item you want to delete
@@ -66,7 +80,7 @@ trait GlobalOffensive extends EventEmitter {
   def getCasketContents(
     casketId: String,
     callback: js.Function2[/* err */ js.Error | Null, /* items */ js.Array[InventoryItem], Unit]
-  ): js.Promise[js.Array[InventoryItem]] = js.native
+  ): Unit = js.native
   
   /**
     * `true` if we're currently connected to the GC, `false` otherwise.
@@ -160,6 +174,16 @@ trait GlobalOffensive extends EventEmitter {
     listener: js.Function1[/* args */ js.Tuple2[/* status */ ValueOf[GCGOINGDOWN], /* data */ Any], Unit]
   ): this.type = js.native
   @JSName("off")
+  def off_craftingComplete(
+    event: craftingComplete,
+    listener: js.Function1[
+      /* args */ js.Tuple2[/* recipe */ Double, /* itemsGained */ js.Array[String]], 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("off")
+  def off_debug(event: debug, listener: js.Function1[/* args */ js.Array[/* message */ String], Unit]): this.type = js.native
+  @JSName("off")
   def off_disconnectedFromGC(
     event: disconnectedFromGC,
     listener: js.Function1[/* args */ js.Array[/* reason */ ValueOf[GCGOINGDOWN]], Unit]
@@ -201,7 +225,6 @@ trait GlobalOffensive extends EventEmitter {
     event: typings.globaloffensive.globaloffensiveStrings.accountData,
     listener: js.Function1[/* args */ js.Array[/* accountData */ AccountData], Unit]
   ): this.type = js.native
-  // EVENTS
   @JSName("on")
   def on_connectedToGC(event: connectedToGC, listener: js.Function1[/* args */ js.Array[Any], Unit]): this.type = js.native
   @JSName("on")
@@ -209,6 +232,17 @@ trait GlobalOffensive extends EventEmitter {
     event: connectionStatus,
     listener: js.Function1[/* args */ js.Tuple2[/* status */ ValueOf[GCGOINGDOWN], /* data */ Any], Unit]
   ): this.type = js.native
+  @JSName("on")
+  def on_craftingComplete(
+    event: craftingComplete,
+    listener: js.Function1[
+      /* args */ js.Tuple2[/* recipe */ Double, /* itemsGained */ js.Array[String]], 
+      Unit
+    ]
+  ): this.type = js.native
+  // EVENTS
+  @JSName("on")
+  def on_debug(event: debug, listener: js.Function1[/* args */ js.Array[/* message */ String], Unit]): this.type = js.native
   @JSName("on")
   def on_disconnectedFromGC(
     event: disconnectedFromGC,
@@ -259,6 +293,16 @@ trait GlobalOffensive extends EventEmitter {
     listener: js.Function1[/* args */ js.Tuple2[/* status */ ValueOf[GCGOINGDOWN], /* data */ Any], Unit]
   ): this.type = js.native
   @JSName("once")
+  def once_craftingComplete(
+    event: craftingComplete,
+    listener: js.Function1[
+      /* args */ js.Tuple2[/* recipe */ Double, /* itemsGained */ js.Array[String]], 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  def once_debug(event: debug, listener: js.Function1[/* args */ js.Array[/* message */ String], Unit]): this.type = js.native
+  @JSName("once")
   def once_disconnectedFromGC(
     event: disconnectedFromGC,
     listener: js.Function1[/* args */ js.Array[/* reason */ ValueOf[GCGOINGDOWN]], Unit]
@@ -296,7 +340,7 @@ trait GlobalOffensive extends EventEmitter {
   def once_playersProfile(event: playersProfile, listener: js.Function1[/* args */ js.Array[/* profile */ Profile], Unit]): this.type = js.native
   
   def removeAllListeners(
-    event: connectedToGC | disconnectedFromGC | typings.globaloffensive.globaloffensiveStrings.accountData | connectionStatus | matchList | inspectItemInfo | inspectItemTimedOut | itemAcquired | itemChanged | itemRemoved | itemCustomizationNotification | playersProfile
+    event: debug | connectedToGC | disconnectedFromGC | typings.globaloffensive.globaloffensiveStrings.accountData | connectionStatus | matchList | inspectItemInfo | inspectItemTimedOut | itemAcquired | itemChanged | itemRemoved | itemCustomizationNotification | playersProfile | craftingComplete
   ): this.type = js.native
   
   /**
@@ -321,6 +365,16 @@ trait GlobalOffensive extends EventEmitter {
     event: connectionStatus,
     listener: js.Function1[/* args */ js.Tuple2[/* status */ ValueOf[GCGOINGDOWN], /* data */ Any], Unit]
   ): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_craftingComplete(
+    event: craftingComplete,
+    listener: js.Function1[
+      /* args */ js.Tuple2[/* recipe */ Double, /* itemsGained */ js.Array[String]], 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_debug(event: debug, listener: js.Function1[/* args */ js.Array[/* message */ String], Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_disconnectedFromGC(
     event: disconnectedFromGC,

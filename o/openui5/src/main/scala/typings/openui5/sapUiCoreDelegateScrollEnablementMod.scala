@@ -14,6 +14,8 @@ object sapUiCoreDelegateScrollEnablementMod {
   @js.native
   open class default protected () extends ScrollEnablement {
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Creates a ScrollEnablement delegate that can be attached to Controls requiring capabilities for scrolling
       * of a certain part of their DOM.
       */
@@ -40,6 +42,8 @@ object sapUiCoreDelegateScrollEnablementMod {
     val ^ : js.Any = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Creates a new subclass of class sap.ui.core.delegate.ScrollEnablement with name `sClassName` and enriches
       * it with the information contained in `oClassInfo`.
       *
@@ -93,6 +97,8 @@ object sapUiCoreDelegateScrollEnablementMod {
     ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any], FNMetaImpl.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns a metadata object for class sap.ui.core.delegate.ScrollEnablement.
       *
       * @returns Metadata object describing this class
@@ -111,6 +117,8 @@ object sapUiCoreDelegateScrollEnablementMod {
     vElement: jQuery[HTMLElement]
     ): js.Object = js.native
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Calculates scroll position of a child of a container.
       *
       * @returns Position object.
@@ -124,6 +132,7 @@ object sapUiCoreDelegateScrollEnablementMod {
     
     /**
       * @SINCE 1.9.1
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Get current setting for horizontal scrolling.
       *
@@ -133,6 +142,7 @@ object sapUiCoreDelegateScrollEnablementMod {
     
     /**
       * @SINCE 1.9.1
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Get current setting for vertical scrolling.
       *
@@ -141,6 +151,8 @@ object sapUiCoreDelegateScrollEnablementMod {
     def getVertical(): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Refreshes this Scrolling delegate.
       */
     def refresh(): Unit = js.native
@@ -186,6 +198,8 @@ object sapUiCoreDelegateScrollEnablementMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Scrolls to an element within a container.
       */
     def scrollToElement(/**
@@ -217,6 +231,50 @@ object sapUiCoreDelegateScrollEnablementMod {
       * The duration of animated scrolling in milliseconds. To scroll immediately without animation, give 0 as
       * value.
       */
+    iTime: Unit,
+      /**
+      * Specifies an additional left and top offset of the target scroll position, relative to the upper left
+      * corner of the DOM element
+      */
+    aOffset: js.Array[int],
+      /**
+      * The configuration of the parameter for scrolling only if the element is not in the view port - i.e. if
+      * bSkipElementsInScrollport is set to true, there will be no scrolling if the element is already in the
+      * view port
+      */
+    bSkipElementsInScrollport: Boolean
+    ): this.type = js.native
+    def scrollToElement(
+      /**
+      * A DOM element.
+      */
+    oElement: HTMLElement,
+      /**
+      * The duration of animated scrolling in milliseconds. To scroll immediately without animation, give 0 as
+      * value.
+      */
+    iTime: Unit,
+      /**
+      * Specifies an additional left and top offset of the target scroll position, relative to the upper left
+      * corner of the DOM element
+      */
+    aOffset: Unit,
+      /**
+      * The configuration of the parameter for scrolling only if the element is not in the view port - i.e. if
+      * bSkipElementsInScrollport is set to true, there will be no scrolling if the element is already in the
+      * view port
+      */
+    bSkipElementsInScrollport: Boolean
+    ): this.type = js.native
+    def scrollToElement(
+      /**
+      * A DOM element.
+      */
+    oElement: HTMLElement,
+      /**
+      * The duration of animated scrolling in milliseconds. To scroll immediately without animation, give 0 as
+      * value.
+      */
     iTime: int
     ): this.type = js.native
     def scrollToElement(
@@ -235,10 +293,55 @@ object sapUiCoreDelegateScrollEnablementMod {
       */
     aOffset: js.Array[int]
     ): this.type = js.native
+    def scrollToElement(
+      /**
+      * A DOM element.
+      */
+    oElement: HTMLElement,
+      /**
+      * The duration of animated scrolling in milliseconds. To scroll immediately without animation, give 0 as
+      * value.
+      */
+    iTime: int,
+      /**
+      * Specifies an additional left and top offset of the target scroll position, relative to the upper left
+      * corner of the DOM element
+      */
+    aOffset: js.Array[int],
+      /**
+      * The configuration of the parameter for scrolling only if the element is not in the view port - i.e. if
+      * bSkipElementsInScrollport is set to true, there will be no scrolling if the element is already in the
+      * view port
+      */
+    bSkipElementsInScrollport: Boolean
+    ): this.type = js.native
+    def scrollToElement(
+      /**
+      * A DOM element.
+      */
+    oElement: HTMLElement,
+      /**
+      * The duration of animated scrolling in milliseconds. To scroll immediately without animation, give 0 as
+      * value.
+      */
+    iTime: int,
+      /**
+      * Specifies an additional left and top offset of the target scroll position, relative to the upper left
+      * corner of the DOM element
+      */
+    aOffset: Unit,
+      /**
+      * The configuration of the parameter for scrolling only if the element is not in the view port - i.e. if
+      * bSkipElementsInScrollport is set to true, there will be no scrolling if the element is already in the
+      * view port
+      */
+    bSkipElementsInScrollport: Boolean
+    ): this.type = js.native
     
     /**
       * @SINCE 1.17
       * @deprecated (since 1.42)
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Setter for property `bounce`.
       */
@@ -249,6 +352,7 @@ object sapUiCoreDelegateScrollEnablementMod {
     
     /**
       * @SINCE 1.11.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Sets GrowingList control to scroll container
       */
@@ -268,6 +372,8 @@ object sapUiCoreDelegateScrollEnablementMod {
     ): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Enable or disable horizontal scrolling.
       */
     def setHorizontal(/**
@@ -277,6 +383,7 @@ object sapUiCoreDelegateScrollEnablementMod {
     
     /**
       * @SINCE 1.16.1
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Sets IconTabBar control to scroll container
       */
@@ -297,6 +404,7 @@ object sapUiCoreDelegateScrollEnablementMod {
     
     /**
       * @SINCE 1.9.2
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Set overflow control on top of scroll container.
       */
@@ -308,6 +416,8 @@ object sapUiCoreDelegateScrollEnablementMod {
     ): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Enable or disable vertical scrolling.
       */
     def setVertical(/**

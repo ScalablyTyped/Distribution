@@ -37,6 +37,11 @@ trait ListCopyJobsInput extends StObject {
   var ByDestinationVaultArn: js.UndefOr[String] = js.undefined
   
   /**
+    * This is a filter to list child (nested) jobs based on parent job ID.
+    */
+  var ByParentJobId: js.UndefOr[String] = js.undefined
+  
+  /**
     * Returns only copy jobs that match the specified resource Amazon Resource Name (ARN). 
     */
   var ByResourceArn: js.UndefOr[ARN] = js.undefined
@@ -94,6 +99,10 @@ object ListCopyJobsInput {
     inline def setByDestinationVaultArn(value: String): Self = StObject.set(x, "ByDestinationVaultArn", value.asInstanceOf[js.Any])
     
     inline def setByDestinationVaultArnUndefined: Self = StObject.set(x, "ByDestinationVaultArn", js.undefined)
+    
+    inline def setByParentJobId(value: String): Self = StObject.set(x, "ByParentJobId", value.asInstanceOf[js.Any])
+    
+    inline def setByParentJobIdUndefined: Self = StObject.set(x, "ByParentJobId", js.undefined)
     
     inline def setByResourceArn(value: ARN): Self = StObject.set(x, "ByResourceArn", value.asInstanceOf[js.Any])
     

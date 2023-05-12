@@ -1,14 +1,16 @@
 package typings.typeFest.sourceTsconfigJsonMod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.std.Lowercase
 import typings.std.Record
 import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.CompilerOptions
 import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.CompilerOptions.FallbackPolling
+import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.CompilerOptions.IgnoreDeprecations
 import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.CompilerOptions.ImportsNotUsedAsValues
 import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.CompilerOptions.JSX
 import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.CompilerOptions.Lib
 import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.CompilerOptions.Module
+import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.CompilerOptions.ModuleDetection
+import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.CompilerOptions.ModuleResolution
 import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.CompilerOptions.NewLine
 import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.CompilerOptions.Plugin
 import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.CompilerOptions.Target
@@ -20,8 +22,10 @@ import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.WatchOptions
 import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.WatchOptions.PollingWatchKind
 import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.WatchOptions.WatchDirectoryKind
 import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.WatchOptions.WatchFileKind
+import typings.typeFest.typeFestStrings.`5Dot0`
 import typings.typeFest.typeFestStrings.amd_
-import typings.typeFest.typeFestStrings.classic
+import typings.typeFest.typeFestStrings.bundler_
+import typings.typeFest.typeFestStrings.classic_
 import typings.typeFest.typeFestStrings.commonjs_
 import typings.typeFest.typeFestStrings.crlf_
 import typings.typeFest.typeFestStrings.dom_
@@ -45,8 +49,9 @@ import typings.typeFest.typeFestStrings.fixedChunkSize_
 import typings.typeFest.typeFestStrings.fixedInterval_
 import typings.typeFest.typeFestStrings.fixedPollingInterval_
 import typings.typeFest.typeFestStrings.lf_
-import typings.typeFest.typeFestStrings.node
+import typings.typeFest.typeFestStrings.node10_
 import typings.typeFest.typeFestStrings.node16_
+import typings.typeFest.typeFestStrings.node_
 import typings.typeFest.typeFestStrings.nodenext_
 import typings.typeFest.typeFestStrings.none_
 import typings.typeFest.typeFestStrings.priorityInterval_
@@ -81,9 +86,8 @@ trait TsConfigJson extends StObject {
   
   /**
   	Path to base configuration file to inherit from.
-  	Requires TypeScript version 2.1 or later.
   	*/
-  var `extends`: js.UndefOr[String] = js.undefined
+  var `extends`: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
   	If no `files` or `include` property is present in a `tsconfig.json`, the compiler defaults to including all files in the containing directory and subdirectories except those specified by `exclude`. When a `files` property is specified, only those files and those specified by `include` are included.
@@ -93,19 +97,16 @@ trait TsConfigJson extends StObject {
   /**
   	Specifies a list of glob patterns that match files to be included in compilation.
   	If no `files` or `include` property is present in a `tsconfig.json`, the compiler defaults to including all files in the containing directory and subdirectories except those specified by `exclude`.
-  	Requires TypeScript version 2.0 or later.
   	*/
   var include: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
   	Referenced projects.
-  	Requires TypeScript version 3.0 or later.
   	*/
   var references: js.UndefOr[js.Array[References]] = js.undefined
   
   /**
   	Auto type (.d.ts) acquisition options for this project.
-  	Requires TypeScript version 2.1 or later.
   	*/
   var typeAcquisition: js.UndefOr[TypeAcquisition] = js.undefined
   
@@ -122,6 +123,18 @@ object TsConfigJson {
   }
   
   trait CompilerOptions extends StObject {
+    
+    /**
+    		Suppress errors for file formats that TypeScript does not understand.
+    		@default false
+    		*/
+    var allowArbitraryExtensions: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+    		Allows TypeScript files to import each other with a TypeScript-specific extension like .ts, .mts, or .tsx.
+    		@default false
+    		*/
+    var allowImportingTsExtensions: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Allow javascript files to be compiled.
@@ -155,14 +168,12 @@ object TsConfigJson {
     
     /**
     		Parse in strict mode and emit `'use strict'` for each source file.
-    		Requires TypeScript version 2.1 or later.
     		@default false
     		*/
     var alwaysStrict: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Have recompiles in '--incremental' and '--watch' assume that changes within a file will only affect files directly depending on it.
-    		Requires TypeScript version 3.8 or later.
     		@default false
     		*/
     var assumeChangesOnlyAffectDirectDependencies: js.UndefOr[Boolean] = js.undefined
@@ -175,12 +186,12 @@ object TsConfigJson {
     /**
     		The character set of the input files.
     		@default 'utf8'
+    		@deprecated This option will be removed in TypeScript 5.5.
     		*/
     var charset: js.UndefOr[String] = js.undefined
     
     /**
     		Report errors in `.js` files.
-    		Requires TypeScript version 2.3 or later.
     		@default false
     		*/
     var checkJs: js.UndefOr[Boolean] = js.undefined
@@ -192,6 +203,11 @@ object TsConfigJson {
     var composite: js.UndefOr[Boolean] = js.undefined
     
     /**
+    		List of additional conditions that should succeed when TypeScript resolves from package.json.
+    		*/
+    var customConditions: js.UndefOr[js.Array[String]] = js.undefined
+    
+    /**
     		Generates corresponding d.ts files.
     		@default false
     		*/
@@ -199,13 +215,11 @@ object TsConfigJson {
     
     /**
     		Specify output directory for generated declaration files.
-    		Requires TypeScript version 2.0 or later.
     		*/
     var declarationDir: js.UndefOr[String] = js.undefined
     
     /**
     		Generates a sourcemap for each corresponding `.d.ts` file.
-    		Requires TypeScript version 2.9 or later.
     		@default false
     		*/
     var declarationMap: js.UndefOr[Boolean] = js.undefined
@@ -218,21 +232,18 @@ object TsConfigJson {
     
     /**
     		Reduce the number of projects loaded automatically by TypeScript.
-    		Requires TypeScript version 4.0 or later.
     		@default false
     		*/
     var disableReferencedProjectLoad: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Disable size limit for JavaScript project.
-    		Requires TypeScript version 2.0 or later.
     		@default false
     		*/
     var disableSizeLimit: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Opt a project out of multi-project reference checking when editing.
-    		Requires TypeScript version 3.8 or later.
     		@default false
     		*/
     var disableSolutionSearching: js.UndefOr[Boolean] = js.undefined
@@ -245,7 +256,6 @@ object TsConfigJson {
     
     /**
     		Provide full support for iterables in `for-of`, spread, and destructuring when targeting `ES5` or `ES3`.
-    		Requires TypeScript version 2.3 or later.
     		@default false
     		*/
     var downlevelIteration: js.UndefOr[Boolean] = js.undefined
@@ -270,14 +280,12 @@ object TsConfigJson {
     
     /**
     		Emit `__importStar` and `__importDefault` helpers for runtime Babel ecosystem compatibility and enable `--allowSyntheticDefaultImports` for typesystem compatibility.
-    		Requires TypeScript version 2.7 or later.
     		@default false
     		*/
     var esModuleInterop: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Differentiate between undefined and not present when type checking.
-    		Requires TypeScript version 4.4 or later.
     		@default false
     		*/
     var exactOptionalPropertyTypes: js.UndefOr[Boolean] = js.undefined
@@ -290,7 +298,6 @@ object TsConfigJson {
     
     /**
     		Print names of files which TypeScript sees as a part of your project and the reason they are part of the compilation.
-    		Requires TypeScript version 4.2 or later.
     		@default false
     		*/
     var explainFiles: js.UndefOr[Boolean] = js.undefined
@@ -303,27 +310,29 @@ object TsConfigJson {
     
     /**
     		Specify the polling strategy to use when the system runs out of or doesn't support native file watchers.
-    		Requires TypeScript version 3.8 or later.
     		@deprecated Use watchOptions.fallbackPolling instead.
     		*/
     var fallbackPolling: js.UndefOr[FallbackPolling] = js.undefined
     
     /**
     		Disallow inconsistently-cased references to the same file.
-    		@default false
+    		@default true
     		*/
     var forceConsistentCasingInFileNames: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Emit a v8 CPU profile of the compiler run for debugging.
-    		Requires TypeScript version 3.7 or later.
     		@default 'profile.cpuprofile'
     		*/
     var generateCpuProfile: js.UndefOr[String] = js.undefined
     
     /**
+    		Suppress deprecation warnings
+    		*/
+    var ignoreDeprecations: js.UndefOr[IgnoreDeprecations] = js.undefined
+    
+    /**
     		Import emit helpers (e.g. `__extends`, `__rest`, etc..) from tslib.
-    		Requires TypeScript version 2.1 or later.
     		@default false
     		*/
     var importHelpers: js.UndefOr[Boolean] = js.undefined
@@ -331,6 +340,7 @@ object TsConfigJson {
     /**
     		Specify emit/checking behavior for imports that are only used for types.
     		@default 'remove'
+    		@deprecated Use `verbatimModuleSyntax` instead.
     		*/
     var importsNotUsedAsValues: js.UndefOr[ImportsNotUsedAsValues] = js.undefined
     
@@ -367,41 +377,36 @@ object TsConfigJson {
     
     /**
     		Specify the JSX factory function to use when targeting React JSX emit, e.g. `React.createElement` or `h`.
-    		Requires TypeScript version 2.1 or later.
     		@default 'React.createElement'
     		*/
     var jsxFactory: js.UndefOr[String] = js.undefined
     
     /**
     		Specify the JSX Fragment reference used for fragments when targeting React JSX emit e.g. 'React.Fragment' or 'Fragment'.
-    		Requires TypeScript version 4.0 or later.
     		@default 'React.Fragment'
     		*/
     var jsxFragmentFactory: js.UndefOr[String] = js.undefined
     
     /**
     		Specify module specifier used to import the JSX factory functions when using `jsx: react-jsx*`.
-    		Requires TypeScript version 4.1 or later.
     		@default 'react'
     		*/
     var jsxImportSource: js.UndefOr[String] = js.undefined
     
     /**
     		Resolve `keyof` to string valued property names only (no numbers or symbols).
-    		Requires TypeScript version 2.9 or later.
     		@default false
+    		@deprecated This option will be removed in TypeScript 5.5.
     		*/
     var keyofStringsOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
     		List of library files to be included in the compilation.
-    		Requires TypeScript version 2.0 or later.
     		*/
     var lib: js.UndefOr[js.Array[Lib]] = js.undefined
     
     /**
     		Enable to list all emitted files.
-    		Requires TypeScript version 2.0 or later.
     		@default false
     		*/
     var listEmittedFiles: js.UndefOr[Boolean] = js.undefined
@@ -436,14 +441,25 @@ object TsConfigJson {
     var module: js.UndefOr[Module] = js.undefined
     
     /**
+    		Control what method is used to detect module-format JS files.
+    		@default 'auto'
+    		*/
+    var moduleDetection: js.UndefOr[ModuleDetection] = js.undefined
+    
+    /**
     		Specifies module resolution strategy: 'node' (Node) or 'classic' (TypeScript pre 1.6).
     		@default ['AMD', 'System', 'ES6'].includes(module) ? 'classic' : 'node'
     		*/
-    var moduleResolution: js.UndefOr[classic | node] = js.undefined
+    var moduleResolution: js.UndefOr[ModuleResolution] = js.undefined
+    
+    /**
+    		List of file name suffixes to search when resolving a module.
+    		*/
+    var moduleSuffixes: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
     		Specifies the end of line sequence to be used when emitting files: 'crlf' (Windows) or 'lf' (Unix).
-    		Default: Platform specific
+    		@default 'LF'
     		*/
     var newLine: js.UndefOr[NewLine] = js.undefined
     
@@ -504,6 +520,7 @@ object TsConfigJson {
     /**
     		Do not emit `'use strict'` directives in module output.
     		@default false
+    		@deprecated This option will be removed in TypeScript 5.5.
     		*/
     var noImplicitUseStrict: js.UndefOr[Boolean] = js.undefined
     
@@ -515,7 +532,6 @@ object TsConfigJson {
     
     /**
     		Enforces using indexed accessors for keys declared using an indexed type.
-    		Requires TypeScript version 4.2 or later.
     		@default false
     		*/
     var noPropertyAccessFromIndexSignature: js.UndefOr[Boolean] = js.undefined
@@ -529,26 +545,24 @@ object TsConfigJson {
     /**
     		Disable strict checking of generic signatures in function types.
     		@default false
+    		@deprecated This option will be removed in TypeScript 5.5.
     		*/
     var noStrictGenericChecks: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Add `undefined` to a type when accessed using an index.
-    		Requires TypeScript version 4.1 or later.
     		@default false
     		*/
     var noUncheckedIndexedAccess: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Report errors on unused locals.
-    		Requires TypeScript version 2.0 or later.
     		@default false
     		*/
     var noUnusedLocals: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Report errors on unused parameters.
-    		Requires TypeScript version 2.0 or later.
     		@default false
     		*/
     var noUnusedParameters: js.UndefOr[Boolean] = js.undefined
@@ -570,7 +584,6 @@ object TsConfigJson {
     
     /**
     		List of TypeScript language server plugins to load.
-    		Requires TypeScript version 2.3 or later.
     		*/
     var plugins: js.UndefOr[js.Array[Plugin]] = js.undefined
     
@@ -585,6 +598,13 @@ object TsConfigJson {
     		@default false
     		*/
     var preserveSymlinks: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+    		Preserve unused imported values in the JavaScript output that would otherwise be removed.
+    		@default true
+    		@deprecated Use `verbatimModuleSyntax` instead.
+    		*/
+    var preserveValueImports: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Keep outdated console output in watch mode instead of clearing the screen.
@@ -612,10 +632,21 @@ object TsConfigJson {
     
     /**
     		Include modules imported with `.json` extension.
-    		Requires TypeScript version 2.9 or later.
     		@default false
     		*/
     var resolveJsonModule: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+    		Forces TypeScript to consult the exports field of package.json files if it ever reads from a package in node_modules.
+    		@default false
+    		*/
+    var resolvePackageJsonExports: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+    		Forces TypeScript to consult the imports field of package.json files when performing a lookup that starts with # from a file whose ancestor directory contains a package.json.
+    		@default false
+    		*/
+    var resolvePackageJsonImports: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Specifies the root directory of input files.
@@ -635,7 +666,6 @@ object TsConfigJson {
     
     /**
     		Skip type checking of declaration files.
-    		Requires TypeScript version 2.0 or later.
     		@default false
     		*/
     var skipLibCheck: js.UndefOr[Boolean] = js.undefined
@@ -653,7 +683,6 @@ object TsConfigJson {
     
     /**
     		Enable all strict type checking options.
-    		Requires TypeScript version 2.3 or later.
     		@default false
     		*/
     var strict: js.UndefOr[Boolean] = js.undefined
@@ -666,21 +695,18 @@ object TsConfigJson {
     
     /**
     		Disable bivariant parameter checking for function types.
-    		Requires TypeScript version 2.6 or later.
     		@default false
     		*/
     var strictFunctionTypes: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Enable strict null checks.
-    		Requires TypeScript version 2.0 or later.
     		@default false
     		*/
     var strictNullChecks: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Ensure non-undefined class properties are initialized in the constructor.
-    		Requires TypeScript version 2.7 or later.
     		@default false
     		*/
     var strictPropertyInitialization: js.UndefOr[Boolean] = js.undefined
@@ -693,12 +719,14 @@ object TsConfigJson {
     /**
     		Suppress excess property checks for object literals.
     		@default false
+    		@deprecated This option will be removed in TypeScript 5.5.
     		*/
     var suppressExcessPropertyErrors: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Suppress noImplicitAny errors for indexing objects lacking index signatures.
     		@default false
+    		@deprecated This option will be removed in TypeScript 5.5.
     		*/
     var suppressImplicitAnyIndexErrors: js.UndefOr[Boolean] = js.undefined
     
@@ -722,29 +750,31 @@ object TsConfigJson {
     
     /**
     		Specify list of directories for type definition files to be included.
-    		Requires TypeScript version 2.0 or later.
     		*/
     var typeRoots: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
     		Type declaration files to be included in compilation.
-    		Requires TypeScript version 2.0 or later.
     		*/
     var types: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
     		Emit ECMAScript standard class fields.
-    		Requires TypeScript version 3.7 or later.
     		@default false
     		*/
     var useDefineForClassFields: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Default catch clause variables as `unknown` instead of `any`.
-    		Requires TypeScript version 4.4 or later.
     		@default false
     		*/
     var useUnknownInCatchVariables: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+    		Anything that uses the type modifier is dropped entirely.
+    		@default false
+    		*/
+    var verbatimModuleSyntax: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Watch input files.
@@ -755,7 +785,6 @@ object TsConfigJson {
     
     /**
     		Specify the strategy for watching directories under systems that lack recursive file-watching functionality.
-    		Requires TypeScript version 3.8 or later.
     		@default 'useFsEvents'
     		@deprecated Use watchOptions.watchDirectory instead.
     		*/
@@ -763,7 +792,6 @@ object TsConfigJson {
     
     /**
     		Specify the strategy for watching individual files.
-    		Requires TypeScript version 3.8 or later.
     		@default 'useFsEvents'
     		@deprecated Use watchOptions.watchFile instead.
     		*/
@@ -802,6 +830,8 @@ object TsConfigJson {
       
       inline def priorityPollingInterval: priorityPollingInterval_ = "priorityPollingInterval".asInstanceOf[priorityPollingInterval_]
     }
+    
+    type IgnoreDeprecations = `5Dot0`
     
     /* Rewritten from type alias, can be one of: 
       - typings.typeFest.typeFestStrings.remove
@@ -1271,8 +1301,73 @@ object TsConfigJson {
       inline def umd: umd_ = "umd".asInstanceOf[umd_]
     }
     
+    /* Rewritten from type alias, can be one of: 
+      - typings.typeFest.typeFestStrings.auto
+      - typings.typeFest.typeFestStrings.legacy
+      - typings.typeFest.typeFestStrings.force
+    */
+    trait ModuleDetection extends StObject
+    object ModuleDetection {
+      
+      inline def auto: typings.typeFest.typeFestStrings.auto = "auto".asInstanceOf[typings.typeFest.typeFestStrings.auto]
+      
+      inline def force: typings.typeFest.typeFestStrings.force = "force".asInstanceOf[typings.typeFest.typeFestStrings.force]
+      
+      inline def legacy: typings.typeFest.typeFestStrings.legacy = "legacy".asInstanceOf[typings.typeFest.typeFestStrings.legacy]
+    }
+    
+    /* Rewritten from type alias, can be one of: 
+      - typings.typeFest.typeFestStrings.classic_
+      - typings.typeFest.typeFestStrings.node_
+      - typings.typeFest.typeFestStrings.node10_
+      - typings.typeFest.typeFestStrings.node16_
+      - typings.typeFest.typeFestStrings.nodenext_
+      - typings.typeFest.typeFestStrings.bundler_
+      - typings.typeFest.typeFestStrings.Classic
+      - typings.typeFest.typeFestStrings.Node
+      - typings.typeFest.typeFestStrings.Node10
+      - typings.typeFest.typeFestStrings.Node16
+      - typings.typeFest.typeFestStrings.NodeNext
+      - typings.typeFest.typeFestStrings.Bundler
+    */
+    trait ModuleResolution extends StObject
+    object ModuleResolution {
+      
+      inline def Bundler: typings.typeFest.typeFestStrings.Bundler = "Bundler".asInstanceOf[typings.typeFest.typeFestStrings.Bundler]
+      
+      inline def Classic: typings.typeFest.typeFestStrings.Classic = "Classic".asInstanceOf[typings.typeFest.typeFestStrings.Classic]
+      
+      inline def Node: typings.typeFest.typeFestStrings.Node = "Node".asInstanceOf[typings.typeFest.typeFestStrings.Node]
+      
+      inline def Node10: typings.typeFest.typeFestStrings.Node10 = "Node10".asInstanceOf[typings.typeFest.typeFestStrings.Node10]
+      
+      inline def Node16: typings.typeFest.typeFestStrings.Node16 = "Node16".asInstanceOf[typings.typeFest.typeFestStrings.Node16]
+      
+      inline def NodeNext: typings.typeFest.typeFestStrings.NodeNext = "NodeNext".asInstanceOf[typings.typeFest.typeFestStrings.NodeNext]
+      
+      inline def bundler: bundler_ = "bundler".asInstanceOf[bundler_]
+      
+      inline def classic: classic_ = "classic".asInstanceOf[classic_]
+      
+      inline def node: node_ = "node".asInstanceOf[node_]
+      
+      inline def node10: node10_ = "node10".asInstanceOf[node10_]
+      
+      inline def node16: node16_ = "node16".asInstanceOf[node16_]
+      
+      inline def nodenext: nodenext_ = "nodenext".asInstanceOf[nodenext_]
+    }
+    
     @scala.inline
     implicit open class MutableBuilder[Self <: CompilerOptions] (val x: Self) extends AnyVal {
+      
+      inline def setAllowArbitraryExtensions(value: Boolean): Self = StObject.set(x, "allowArbitraryExtensions", value.asInstanceOf[js.Any])
+      
+      inline def setAllowArbitraryExtensionsUndefined: Self = StObject.set(x, "allowArbitraryExtensions", js.undefined)
+      
+      inline def setAllowImportingTsExtensions(value: Boolean): Self = StObject.set(x, "allowImportingTsExtensions", value.asInstanceOf[js.Any])
+      
+      inline def setAllowImportingTsExtensionsUndefined: Self = StObject.set(x, "allowImportingTsExtensions", js.undefined)
       
       inline def setAllowJs(value: Boolean): Self = StObject.set(x, "allowJs", value.asInstanceOf[js.Any])
       
@@ -1317,6 +1412,12 @@ object TsConfigJson {
       inline def setComposite(value: Boolean): Self = StObject.set(x, "composite", value.asInstanceOf[js.Any])
       
       inline def setCompositeUndefined: Self = StObject.set(x, "composite", js.undefined)
+      
+      inline def setCustomConditions(value: js.Array[String]): Self = StObject.set(x, "customConditions", value.asInstanceOf[js.Any])
+      
+      inline def setCustomConditionsUndefined: Self = StObject.set(x, "customConditions", js.undefined)
+      
+      inline def setCustomConditionsVarargs(value: String*): Self = StObject.set(x, "customConditions", js.Array(value*))
       
       inline def setDeclaration(value: Boolean): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
       
@@ -1398,6 +1499,10 @@ object TsConfigJson {
       
       inline def setGenerateCpuProfileUndefined: Self = StObject.set(x, "generateCpuProfile", js.undefined)
       
+      inline def setIgnoreDeprecations(value: IgnoreDeprecations): Self = StObject.set(x, "ignoreDeprecations", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreDeprecationsUndefined: Self = StObject.set(x, "ignoreDeprecations", js.undefined)
+      
       inline def setImportHelpers(value: Boolean): Self = StObject.set(x, "importHelpers", value.asInstanceOf[js.Any])
       
       inline def setImportHelpersUndefined: Self = StObject.set(x, "importHelpers", js.undefined)
@@ -1470,9 +1575,19 @@ object TsConfigJson {
       
       inline def setModule(value: Module): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
       
-      inline def setModuleResolution(value: classic | node): Self = StObject.set(x, "moduleResolution", value.asInstanceOf[js.Any])
+      inline def setModuleDetection(value: ModuleDetection): Self = StObject.set(x, "moduleDetection", value.asInstanceOf[js.Any])
+      
+      inline def setModuleDetectionUndefined: Self = StObject.set(x, "moduleDetection", js.undefined)
+      
+      inline def setModuleResolution(value: ModuleResolution): Self = StObject.set(x, "moduleResolution", value.asInstanceOf[js.Any])
       
       inline def setModuleResolutionUndefined: Self = StObject.set(x, "moduleResolution", js.undefined)
+      
+      inline def setModuleSuffixes(value: js.Array[String]): Self = StObject.set(x, "moduleSuffixes", value.asInstanceOf[js.Any])
+      
+      inline def setModuleSuffixesUndefined: Self = StObject.set(x, "moduleSuffixes", js.undefined)
+      
+      inline def setModuleSuffixesVarargs(value: String*): Self = StObject.set(x, "moduleSuffixes", js.Array(value*))
       
       inline def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
       
@@ -1574,6 +1689,10 @@ object TsConfigJson {
       
       inline def setPreserveSymlinksUndefined: Self = StObject.set(x, "preserveSymlinks", js.undefined)
       
+      inline def setPreserveValueImports(value: Boolean): Self = StObject.set(x, "preserveValueImports", value.asInstanceOf[js.Any])
+      
+      inline def setPreserveValueImportsUndefined: Self = StObject.set(x, "preserveValueImports", js.undefined)
+      
       inline def setPreserveWatchOutput(value: Boolean): Self = StObject.set(x, "preserveWatchOutput", value.asInstanceOf[js.Any])
       
       inline def setPreserveWatchOutputUndefined: Self = StObject.set(x, "preserveWatchOutput", js.undefined)
@@ -1593,6 +1712,14 @@ object TsConfigJson {
       inline def setResolveJsonModule(value: Boolean): Self = StObject.set(x, "resolveJsonModule", value.asInstanceOf[js.Any])
       
       inline def setResolveJsonModuleUndefined: Self = StObject.set(x, "resolveJsonModule", js.undefined)
+      
+      inline def setResolvePackageJsonExports(value: Boolean): Self = StObject.set(x, "resolvePackageJsonExports", value.asInstanceOf[js.Any])
+      
+      inline def setResolvePackageJsonExportsUndefined: Self = StObject.set(x, "resolvePackageJsonExports", js.undefined)
+      
+      inline def setResolvePackageJsonImports(value: Boolean): Self = StObject.set(x, "resolvePackageJsonImports", value.asInstanceOf[js.Any])
+      
+      inline def setResolvePackageJsonImportsUndefined: Self = StObject.set(x, "resolvePackageJsonImports", js.undefined)
       
       inline def setRootDir(value: String): Self = StObject.set(x, "rootDir", value.asInstanceOf[js.Any])
       
@@ -1684,6 +1811,10 @@ object TsConfigJson {
       
       inline def setUseUnknownInCatchVariablesUndefined: Self = StObject.set(x, "useUnknownInCatchVariables", js.undefined)
       
+      inline def setVerbatimModuleSyntax(value: Boolean): Self = StObject.set(x, "verbatimModuleSyntax", value.asInstanceOf[js.Any])
+      
+      inline def setVerbatimModuleSyntaxUndefined: Self = StObject.set(x, "verbatimModuleSyntax", js.undefined)
+      
       inline def setWatch(value: Boolean): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
       
       inline def setWatchDirectory(value: WatchDirectory): Self = StObject.set(x, "watchDirectory", value.asInstanceOf[js.Any])
@@ -1715,19 +1846,17 @@ object TsConfigJson {
       inline def lf: lf_ = "lf".asInstanceOf[lf_]
     }
     
-    trait Plugin
-      extends StObject
-         with /* key */ StringDictionary[Any] {
+    trait Plugin extends StObject {
       
       /**
       			Plugin name.
       			*/
-      var name: js.UndefOr[String] = js.undefined
+      var name: String
     }
     object Plugin {
       
-      inline def apply(): Plugin = {
-        val __obj = js.Dynamic.literal()
+      inline def apply(name: String): Plugin = {
+        val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
         __obj.asInstanceOf[Plugin]
       }
       
@@ -1735,8 +1864,6 @@ object TsConfigJson {
       implicit open class MutableBuilder[Self <: Plugin] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-        
-        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       }
     }
     
@@ -1751,6 +1878,7 @@ object TsConfigJson {
       - typings.typeFest.typeFestStrings.ES2019
       - typings.typeFest.typeFestStrings.ES2020
       - typings.typeFest.typeFestStrings.ES2021
+      - typings.typeFest.typeFestStrings.ES2022
       - typings.typeFest.typeFestStrings.ESNext
       - typings.typeFest.typeFestStrings.es3_
       - typings.typeFest.typeFestStrings.es5_
@@ -1762,6 +1890,7 @@ object TsConfigJson {
       - typings.typeFest.typeFestStrings.es2019_
       - typings.typeFest.typeFestStrings.es2020_
       - typings.typeFest.typeFestStrings.es2021_
+      - typings.typeFest.typeFestStrings.es2022_
       - typings.typeFest.typeFestStrings.esnext_
     */
     trait Target extends StObject
@@ -1780,6 +1909,8 @@ object TsConfigJson {
       inline def ES2020: typings.typeFest.typeFestStrings.ES2020 = "ES2020".asInstanceOf[typings.typeFest.typeFestStrings.ES2020]
       
       inline def ES2021: typings.typeFest.typeFestStrings.ES2021 = "ES2021".asInstanceOf[typings.typeFest.typeFestStrings.ES2021]
+      
+      inline def ES2022: typings.typeFest.typeFestStrings.ES2022 = "ES2022".asInstanceOf[typings.typeFest.typeFestStrings.ES2022]
       
       inline def ES3: typings.typeFest.typeFestStrings.ES3 = "ES3".asInstanceOf[typings.typeFest.typeFestStrings.ES3]
       
@@ -1802,6 +1933,8 @@ object TsConfigJson {
       inline def es2020: es2020_ = "es2020".asInstanceOf[es2020_]
       
       inline def es2021: es2021_ = "es2021".asInstanceOf[es2021_]
+      
+      inline def es2022: es2022_ = "es2022".asInstanceOf[es2022_]
       
       inline def es3: es3_ = "es3".asInstanceOf[es3_]
       
@@ -1872,9 +2005,11 @@ object TsConfigJson {
     
     inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
     
-    inline def setExtends(value: String): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
+    inline def setExtends(value: String | js.Array[String]): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
     
     inline def setExtendsUndefined: Self = StObject.set(x, "extends", js.undefined)
+    
+    inline def setExtendsVarargs(value: String*): Self = StObject.set(x, "extends", js.Array(value*))
     
     inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
@@ -1923,6 +2058,7 @@ object TsConfigJson {
     /**
     		True if the output of this reference should be prepended to the output of this project.
     		Only valid for `--outFile` compilations.
+    		@deprecated This option will be removed in TypeScript 5.5.
     		*/
     var prepend: js.UndefOr[Boolean] = js.undefined
   }
@@ -2011,7 +2147,6 @@ object TsConfigJson {
     
     /**
     		Specify the polling strategy to use when the system runs out of or doesn't support native file watchers.
-    		Requires TypeScript version 3.8 or later.
     		*/
     var fallbackPolling: js.UndefOr[PollingWatchKind | Lowercase[PollingWatchKind]] = js.undefined
     
@@ -2022,14 +2157,12 @@ object TsConfigJson {
     
     /**
     		Specify the strategy for watching directories under systems that lack recursive file-watching functionality.
-    		Requires TypeScript version 3.8 or later.
     		@default 'UseFsEvents'
     		*/
     var watchDirectory: js.UndefOr[WatchDirectoryKind | Lowercase[WatchDirectoryKind]] = js.undefined
     
     /**
     		Specify the strategy for watching individual files.
-    		Requires TypeScript version 3.8 or later.
     		@default 'UseFsEvents'
     		*/
     var watchFile: js.UndefOr[WatchFileKind | Lowercase[WatchFileKind]] = js.undefined

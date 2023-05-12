@@ -1,7 +1,7 @@
 
 # Scala.js typings for unload
 
-Typings are for version 2.3.1
+Typings are for version 2.4.1
 
 ## Library description:
 Execute code when the js-process exits. On all javascript-environments

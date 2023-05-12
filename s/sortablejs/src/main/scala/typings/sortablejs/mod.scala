@@ -15,6 +15,7 @@ import typings.sortablejs.pluginsMod.SwapPlugin
 import typings.sortablejs.sortablejsInts.`-1`
 import typings.sortablejs.sortablejsInts.`1`
 import typings.sortablejs.sortablejsStrings.animation
+import typings.sortablejs.sortablejsStrings.avoidImplicitDeselect
 import typings.sortablejs.sortablejsStrings.bubbleScroll
 import typings.sortablejs.sortablejsStrings.chosenClass
 import typings.sortablejs.sortablejsStrings.clone
@@ -472,6 +473,12 @@ object mod {
       */
     @JSName("option")
     def option_animation_Unit(name: animation): Unit = js.native
+    @JSName("option")
+    def option_avoidImplicitDeselect(name: avoidImplicitDeselect): js.UndefOr[Boolean] = js.native
+    @JSName("option")
+    def option_avoidImplicitDeselect(name: avoidImplicitDeselect, value: Boolean): Unit = js.native
+    @JSName("option")
+    def option_avoidImplicitDeselect_Unit(name: avoidImplicitDeselect): Unit = js.native
     @JSName("option")
     def option_bubbleScroll(name: bubbleScroll): js.UndefOr[Boolean] = js.native
     @JSName("option")
@@ -1426,14 +1433,14 @@ object mod {
       * @param element an HTMLElement.
       * @param prop a property key.
       */
-    def css[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 465, starting with typings.sortablejs.sortablejsStrings.accentColor, typings.sortablejs.sortablejsStrings.alignContent, typings.sortablejs.sortablejsStrings.alignItems */ Any */](element: HTMLElement, prop: K): /* import warning: importer.ImportType#apply Failed type conversion: std.CSSStyleDeclaration[K] */ js.Any = js.native
+    def css[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 472, starting with typings.sortablejs.sortablejsStrings.accentColor, typings.sortablejs.sortablejsStrings.alignContent, typings.sortablejs.sortablejsStrings.alignItems */ Any */](element: HTMLElement, prop: K): /* import warning: importer.ImportType#apply Failed type conversion: std.CSSStyleDeclaration[K] */ js.Any = js.native
     /**
       * Set one CSS property.
       * @param element an HTMLElement.
       * @param prop a property key.
       * @param value a property value.
       */
-    def css[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 465, starting with typings.sortablejs.sortablejsStrings.accentColor, typings.sortablejs.sortablejsStrings.alignContent, typings.sortablejs.sortablejsStrings.alignItems */ Any */](
+    def css[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 472, starting with typings.sortablejs.sortablejsStrings.accentColor, typings.sortablejs.sortablejsStrings.alignContent, typings.sortablejs.sortablejsStrings.alignItems */ Any */](
       element: HTMLElement,
       prop: K,
       value: /* import warning: importer.ImportType#apply Failed type conversion: std.CSSStyleDeclaration[K] */ js.Any

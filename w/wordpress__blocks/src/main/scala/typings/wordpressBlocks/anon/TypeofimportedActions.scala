@@ -1,8 +1,8 @@
 package typings.wordpressBlocks.anon
 
-import typings.wordpressBlocks.apiCategoriesMod.Category
-import typings.wordpressBlocks.mod.BlockConfiguration
-import typings.wordpressBlocks.mod.BlockStyle
+import typings.std.Partial
+import typings.wordpressBlocks.BlockConfiguration
+import typings.wordpressBlocks.BlockStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +22,11 @@ trait TypeofimportedActions extends StObject {
   def removeBlockTypes(names: String): Unit = js.native
   def removeBlockTypes(names: js.Array[String]): Unit = js.native
   
-  def setCategories(categories: js.Array[Category]): Unit = js.native
+  def setCategories(
+    categories: js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Category */ Any
+    ]
+  ): Unit = js.native
   
   def setDefaultBlockName(name: String): Unit = js.native
   
@@ -32,5 +36,10 @@ trait TypeofimportedActions extends StObject {
   
   def setUnregisteredFallbackBlockName(name: String): Unit = js.native
   
-  def updateCategory(slug: String, category: PartialCategory): Unit = js.native
+  def updateCategory(
+    slug: String,
+    category: Partial[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Category */ Any
+    ]
+  ): Unit = js.native
 }

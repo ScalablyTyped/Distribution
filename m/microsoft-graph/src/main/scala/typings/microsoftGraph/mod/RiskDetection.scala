@@ -65,10 +65,12 @@ trait RiskDetection
   var requestId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
-    * Details of the detected risk. Possible values are: none, adminGeneratedTemporaryPassword,
+    * Details of the detected risk. The possible values are: none, adminGeneratedTemporaryPassword,
     * userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset, adminConfirmedSigninSafe, aiConfirmedSigninSafe,
     * userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, hidden,
-    * adminConfirmedUserCompromised, unknownFutureValue.
+    * adminConfirmedUserCompromised, unknownFutureValue, m365DAdminDismissedDetection. Note that you must use the Prefer:
+    * include - unknown -enum-members request header to get the following value(s) in this evolvable enum:
+    * m365DAdminDismissedDetection.
     */
   var riskDetail: js.UndefOr[NullableOption[RiskDetail]] = js.undefined
   
@@ -77,7 +79,7 @@ trait RiskDetection
     * unfamiliarFeatures, malwareInfectedIPAddress, suspiciousIPAddress, leakedCredentials, investigationsThreatIntelligence,
     * generic,adminConfirmedUserCompromised, passwordSpray, impossibleTravel, newCountry, anomalousToken,
     * tokenIssuerAnomaly,suspiciousBrowser, riskyIPAddress, mcasSuspiciousInboxManipulationRules, suspiciousInboxForwarding,
-    * and unknownFutureValue. If the risk detection is a premium detection, will show generic. For more information about
+    * and anomalousUserActivity. If the risk detection is a premium detection, will show generic. For more information about
     * each value, see riskEventType values.
     */
   var riskEventType: js.UndefOr[NullableOption[String]] = js.undefined

@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Target extends StObject {
   
   /**
-    * A target URI to open with more information about the diagnostic error.
-    */
+  			 * A target URI to open with more information about the diagnostic error.
+  			 */
   var target: Uri
   
   /**
-    * A code or identifier for this diagnostic.
-    * Should be used for later processing, e.g. when providing {@link CodeActionContext code actions}.
-    */
+  			 * A code or identifier for this diagnostic.
+  			 * Should be used for later processing, e.g. when providing {@link CodeActionContext code actions}.
+  			 */
   var value: String | Double
 }
 object Target {

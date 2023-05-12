@@ -152,19 +152,19 @@ object libLineByLineRendererMod {
     
     def generateFileHtml(file: DiffFile): String = js.native
     
-    def generateLineHtml(): FileHtml = js.native
-    def generateLineHtml(oldLine: Unit, newLine: DiffPreparedLine): FileHtml = js.native
-    def generateLineHtml(oldLine: DiffPreparedLine): FileHtml = js.native
-    def generateLineHtml(oldLine: DiffPreparedLine, newLine: DiffPreparedLine): FileHtml = js.native
+    def generateLineHtml(file: DiffFile): FileHtml = js.native
+    def generateLineHtml(file: DiffFile, oldLine: Unit, newLine: DiffPreparedLine): FileHtml = js.native
+    def generateLineHtml(file: DiffFile, oldLine: DiffPreparedLine): FileHtml = js.native
+    def generateLineHtml(file: DiffFile, oldLine: DiffPreparedLine, newLine: DiffPreparedLine): FileHtml = js.native
     
-    def generateSingleLineHtml(): String = js.native
-    def generateSingleLineHtml(line: DiffPreparedLine): String = js.native
+    def generateSingleLineHtml(file: DiffFile): String = js.native
+    def generateSingleLineHtml(file: DiffFile, line: DiffPreparedLine): String = js.native
     
     /* private */ val hoganUtils: Any = js.native
     
     def makeFileDiffHtml(file: DiffFile, diffs: String): String = js.native
     
-    def processChangedLines(isCombined: Boolean, oldLines: js.Array[DiffLine], newLines: js.Array[DiffLine]): FileHtml = js.native
+    def processChangedLines(file: DiffFile, isCombined: Boolean, oldLines: js.Array[DiffLine], newLines: js.Array[DiffLine]): FileHtml = js.native
     
     def render(diffFiles: js.Array[DiffFile]): String = js.native
   }

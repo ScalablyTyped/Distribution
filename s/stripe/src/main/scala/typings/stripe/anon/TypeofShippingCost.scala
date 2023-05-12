@@ -6,18 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TypeofShippingCost extends StObject {
   
-  val ShippingRateData: TypeofShippingRateData
+  val Tax: Any
 }
 object TypeofShippingCost {
   
-  inline def apply(ShippingRateData: TypeofShippingRateData): TypeofShippingCost = {
-    val __obj = js.Dynamic.literal(ShippingRateData = ShippingRateData.asInstanceOf[js.Any])
+  inline def apply(Tax: Any): TypeofShippingCost = {
+    val __obj = js.Dynamic.literal(Tax = Tax.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofShippingCost]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: TypeofShippingCost] (val x: Self) extends AnyVal {
     
-    inline def setShippingRateData(value: TypeofShippingRateData): Self = StObject.set(x, "ShippingRateData", value.asInstanceOf[js.Any])
+    inline def setTax(value: Any): Self = StObject.set(x, "Tax", value.asInstanceOf[js.Any])
   }
 }

@@ -61,6 +61,9 @@ trait Node
   /** @internal */
   def _initCache(): Unit = js.native
   
+  /** @internal */
+  var _internalMetadata: Any = js.native
+  
   /* protected */ var _isDirty: Boolean = js.native
   
   /** @internal */
@@ -166,9 +169,19 @@ trait Node
   
   /**
     * Gets the list of attached behaviors
-    * @see https://doc.babylonjs.com/features/behaviour
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/behaviors
     */
   def behaviors: js.Array[Behavior[Node]] = js.native
+  
+  /**
+    * Clone the current node
+    * @param name Name of the new clone
+    * @param newParent New parent for the clone
+    * @param doNotCloneChildren Do not clone children hierarchy
+    * @returns the new transform node
+    */
+  def clone(name: String, newParent: Nullable[Node]): Nullable[Node] = js.native
+  def clone(name: String, newParent: Nullable[Node], doNotCloneChildren: Boolean): Nullable[Node] = js.native
   
   /**
     * Computes the world matrix of the node
@@ -353,7 +366,7 @@ trait Node
   
   /**
     * List of inspectable custom properties (used by the Inspector)
-    * @see https://doc.babylonjs.com/how_to/debug_layer#extensibility
+    * @see https://doc.babylonjs.com/toolsAndResources/inspector#extensibility
     */
   var inspectableCustomProperties: js.Array[IInspectable] = js.native
   
@@ -442,7 +455,7 @@ trait Node
   def parent: Nullable[Node] = js.native
   /**
     * Gets or sets the parent of the node (without keeping the current position in the scene)
-    * @see https://doc.babylonjs.com/how_to/parenting
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/transforms/parent_pivot/parent
     */
   def parent_=(parent: Nullable[Node]): Unit = js.native
   

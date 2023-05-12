@@ -11,6 +11,7 @@ import typings.mysql2.typingsMysqlLibProtocolPacketsResultSetHeaderMod.ResultSet
 import typings.mysql2.typingsMysqlLibProtocolPacketsRowDataPacketMod.RowDataPacket
 import typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.QueryError
 import typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.QueryOptions
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -81,6 +82,58 @@ object typingsMysqlLibConnectionMod {
     def escapeId(value: String): String = js.native
     def escapeId(values: js.Array[String]): String = js.native
     
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
+      options: QueryOptions,
+      callback: js.Function3[
+          /* err */ QueryError | Null, 
+          /* result */ T, 
+          /* fields */ js.UndefOr[js.Array[FieldPacket]], 
+          Any
+        ]
+    ): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Array[Any]): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
+      options: QueryOptions,
+      values: js.Array[Any],
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
+    ): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: StringDictionary[Any]): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
+      options: QueryOptions,
+      values: StringDictionary[Any],
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
+    ): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: Any): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
+      options: QueryOptions,
+      values: Any,
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
+    ): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
+      sql: String,
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
+    ): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Array[Any]): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
+      sql: String,
+      values: js.Array[Any],
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
+    ): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: StringDictionary[Any]): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
+      sql: String,
+      values: StringDictionary[Any],
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
+    ): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: Any): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
+      sql: String,
+      values: Any,
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
+    ): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
+    
     def format(sql: String): String = js.native
     def format(sql: String, values: js.Array[Any]): String = js.native
     def format(sql: String, values: StringDictionary[Any]): String = js.native
@@ -144,9 +197,13 @@ object typingsMysqlLibConnectionMod {
     
     def resume(): Unit = js.native
     
-    def rollback(callback: js.Function0[Unit]): Unit = js.native
+    def rollback(callback: js.Function1[/* err */ QueryError | Null, Unit]): Unit = js.native
+    
+    def serverHandshake(args: Any): Any = js.native
     
     var threadId: Double = js.native
+    
+    def unprepare(sql: String): Any = js.native
   }
   
   trait ConnectionOptions extends StObject {
@@ -155,7 +212,7 @@ object typingsMysqlLibConnectionMod {
       * Enabling both supportBigNumbers and bigNumberStrings forces big numbers (BIGINT and DECIMAL columns) to be
       * always returned as JavaScript String objects (Default: false). Enabling supportBigNumbers but leaving
       * bigNumberStrings disabled will return big numbers as String objects only when they cannot be accurately
-      * represented with [JavaScript Number objects] (http://ecma262-5.com/ELS5_HTML.htm#Section_8.5)
+      * represented with [JavaScript Number objects](https://262.ecma-international.org/5.1/#sec-8.5)
       * (which happens when they exceed the [-2^53, +2^53] range), otherwise they will be returned as Number objects.
       * This option is ignored if supportBigNumbers is disabled.
       */
@@ -195,6 +252,11 @@ object typingsMysqlLibConnectionMod {
     var debug: js.UndefOr[Any] = js.undefined
     
     /**
+      * DECIMAL and NEWDECIMAL types will be returned as numbers if this option is set to `true` ( default: `false`).
+      */
+    var decimalNumbers: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * List of connection flags to use other than the default ones. It is also possible to blacklist default ones
       */
     var flags: js.UndefOr[js.Array[String]] = js.undefined
@@ -223,6 +285,26 @@ object typingsMysqlLibConnectionMod {
       * The password of that MySQL user
       */
     var password: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Alias for the MySQL user password. Makes a bit more sense in a multifactor authentication setup (see
+      * "password2" and "password3")
+      */
+    var password1: js.UndefOr[String] = js.undefined
+    
+    /**
+      * 2nd factor authentication password. Mandatory when the authentication policy for the MySQL user account
+      * requires an additional authentication method that needs a password.
+      * https://dev.mysql.com/doc/refman/8.0/en/multifactor-authentication.html
+      */
+    var password2: js.UndefOr[String] = js.undefined
+    
+    /**
+      * 3rd factor authentication password. Mandatory when the authentication policy for the MySQL user account
+      * requires two additional authentication methods and the last one needs a password.
+      * https://dev.mysql.com/doc/refman/8.0/en/multifactor-authentication.html
+      */
+    var password3: js.UndefOr[String] = js.undefined
     
     /**
       * The port number to connect to. (Default: 3306)
@@ -336,6 +418,10 @@ object typingsMysqlLibConnectionMod {
       
       inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
+      inline def setDecimalNumbers(value: Boolean): Self = StObject.set(x, "decimalNumbers", value.asInstanceOf[js.Any])
+      
+      inline def setDecimalNumbersUndefined: Self = StObject.set(x, "decimalNumbers", js.undefined)
+      
       inline def setFlags(value: js.Array[String]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
       inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
@@ -359,6 +445,18 @@ object typingsMysqlLibConnectionMod {
       inline def setMultipleStatementsUndefined: Self = StObject.set(x, "multipleStatements", js.undefined)
       
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      
+      inline def setPassword1(value: String): Self = StObject.set(x, "password1", value.asInstanceOf[js.Any])
+      
+      inline def setPassword1Undefined: Self = StObject.set(x, "password1", js.undefined)
+      
+      inline def setPassword2(value: String): Self = StObject.set(x, "password2", value.asInstanceOf[js.Any])
+      
+      inline def setPassword2Undefined: Self = StObject.set(x, "password2", js.undefined)
+      
+      inline def setPassword3(value: String): Self = StObject.set(x, "password3", value.asInstanceOf[js.Any])
+      
+      inline def setPassword3Undefined: Self = StObject.set(x, "password3", js.undefined)
       
       inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
@@ -413,14 +511,14 @@ object typingsMysqlLibConnectionMod {
   trait SslOptions extends StObject {
     
     /**
-      * Either a string or list of strings of PEM encoded CA certificates to trust.
+      * Either a string/Buffer or list of strings/Buffers of PEM encoded CA certificates to trust.
       */
-    var ca: js.UndefOr[String | js.Array[String]] = js.undefined
+    var ca: js.UndefOr[String | (js.Array[Buffer | String]) | Buffer] = js.undefined
     
     /**
-      * A string holding the PEM encoded certificate
+      * A string/buffer or list of strings/Buffers holding the PEM encoded certificate(s)
       */
-    var cert: js.UndefOr[String] = js.undefined
+    var cert: js.UndefOr[String | (js.Array[Buffer | String]) | Buffer] = js.undefined
     
     /**
       * A string describing the ciphers to use or exclude
@@ -433,9 +531,19 @@ object typingsMysqlLibConnectionMod {
     var crl: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
-      * A string holding the PEM encoded private key
+      * Either a string/buffer or list of strings/Buffers holding the PEM encoded private key(s) to use
       */
-    var key: js.UndefOr[String] = js.undefined
+    var key: js.UndefOr[String | (js.Array[Buffer | String]) | Buffer] = js.undefined
+    
+    /**
+    	 * Configure the maximum supported version of SSL, the default is TLSv1.3.
+      */
+    var maxVersion: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Configure the minimum supported version of SSL, the default is TLSv1.2.
+      */
+    var minVersion: js.UndefOr[String] = js.undefined
     
     /**
       * A string of passphrase for the private key or pfx
@@ -451,6 +559,12 @@ object typingsMysqlLibConnectionMod {
       * You can also connect to a MySQL server without properly providing the appropriate CA to trust. You should not do this.
       */
     var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * You can verify the server name identity presented on the server certificate when connecting to a MySQL server.
+      * You should enable this but it is disabled by default right now for backwards compatibility.
+      */
+    var verifyIdentity: js.UndefOr[Boolean] = js.undefined
   }
   object SslOptions {
     
@@ -462,15 +576,17 @@ object typingsMysqlLibConnectionMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: SslOptions] (val x: Self) extends AnyVal {
       
-      inline def setCa(value: String | js.Array[String]): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
+      inline def setCa(value: String | (js.Array[Buffer | String]) | Buffer): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       
       inline def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
       
-      inline def setCaVarargs(value: String*): Self = StObject.set(x, "ca", js.Array(value*))
+      inline def setCaVarargs(value: (Buffer | String)*): Self = StObject.set(x, "ca", js.Array(value*))
       
-      inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+      inline def setCert(value: String | (js.Array[Buffer | String]) | Buffer): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
       inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
+      
+      inline def setCertVarargs(value: (Buffer | String)*): Self = StObject.set(x, "cert", js.Array(value*))
       
       inline def setCiphers(value: String): Self = StObject.set(x, "ciphers", value.asInstanceOf[js.Any])
       
@@ -482,9 +598,19 @@ object typingsMysqlLibConnectionMod {
       
       inline def setCrlVarargs(value: String*): Self = StObject.set(x, "crl", js.Array(value*))
       
-      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String | (js.Array[Buffer | String]) | Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      
+      inline def setKeyVarargs(value: (Buffer | String)*): Self = StObject.set(x, "key", js.Array(value*))
+      
+      inline def setMaxVersion(value: String): Self = StObject.set(x, "maxVersion", value.asInstanceOf[js.Any])
+      
+      inline def setMaxVersionUndefined: Self = StObject.set(x, "maxVersion", js.undefined)
+      
+      inline def setMinVersion(value: String): Self = StObject.set(x, "minVersion", value.asInstanceOf[js.Any])
+      
+      inline def setMinVersionUndefined: Self = StObject.set(x, "minVersion", js.undefined)
       
       inline def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
       
@@ -497,6 +623,10 @@ object typingsMysqlLibConnectionMod {
       inline def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
       
       inline def setRejectUnauthorizedUndefined: Self = StObject.set(x, "rejectUnauthorized", js.undefined)
+      
+      inline def setVerifyIdentity(value: Boolean): Self = StObject.set(x, "verifyIdentity", value.asInstanceOf[js.Any])
+      
+      inline def setVerifyIdentityUndefined: Self = StObject.set(x, "verifyIdentity", js.undefined)
     }
   }
 }

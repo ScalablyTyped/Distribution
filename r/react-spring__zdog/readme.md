@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-spring__zdog
 
-Typings are for version 9.5.4
+Typings are for version 9.7.2
 
 ## Library description:
 [`zdog`](https://github.com/metafizzy/zdog) support

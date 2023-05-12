@@ -701,10 +701,13 @@ object Resource {
     * @property [retryCallback] - The Function to call when a request for this resource fails. If it returns true, the request will be retried.
     * @property [retryAttempts = 0] - The number of times the retryCallback should be called before giving up.
     * @property [request] - A Request object that will be used. Intended for internal use only.
+    * @property [parseUrl = true] - If true, parse the url for query parameters; otherwise store the url without change
     */
   trait ConstructorOptions extends StObject {
     
     var headers: js.UndefOr[Any] = js.undefined
+    
+    var parseUrl: js.UndefOr[Boolean] = js.undefined
     
     var proxy: js.UndefOr[Proxy] = js.undefined
     
@@ -734,6 +737,10 @@ object Resource {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
+      inline def setParseUrl(value: Boolean): Self = StObject.set(x, "parseUrl", value.asInstanceOf[js.Any])
+      
+      inline def setParseUrlUndefined: Self = StObject.set(x, "parseUrl", js.undefined)
+      
       inline def setProxy(value: Proxy): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
       inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
@@ -751,7 +758,7 @@ object Resource {
       inline def setRetryAttemptsUndefined: Self = StObject.set(x, "retryAttempts", js.undefined)
       
       inline def setRetryCallback(
-        value: (/* resource */ js.UndefOr[Resource], /* error */ js.UndefOr[js.Error]) => Boolean | js.Promise[Boolean]
+        value: (/* resource */ js.UndefOr[Resource], /* error */ js.UndefOr[RequestErrorEvent]) => Boolean | js.Promise[Boolean]
       ): Self = StObject.set(x, "retryCallback", js.Any.fromFunction2(value))
       
       inline def setRetryCallbackUndefined: Self = StObject.set(x, "retryCallback", js.undefined)
@@ -771,7 +778,7 @@ object Resource {
     */
   type RetryCallback = js.Function2[
     /* resource */ js.UndefOr[Resource], 
-    /* error */ js.UndefOr[js.Error], 
+    /* error */ js.UndefOr[RequestErrorEvent], 
     Boolean | js.Promise[Boolean]
   ]
 }

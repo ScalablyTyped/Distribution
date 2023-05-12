@@ -42,6 +42,6 @@ object ProviderViewModel {
     * A function which creates one or more providers.
     */
   type CreationFunction = js.Function0[
-    ImageryProvider | TerrainProvider | (js.Array[ImageryProvider | TerrainProvider])
+    ImageryProvider | TerrainProvider | (js.Array[ImageryProvider | TerrainProvider]) | (js.Promise[js.Array[TerrainProvider] | TerrainProvider])
   ]
 }

@@ -8,7 +8,7 @@ trait SyncCodec extends StObject {
   
   /**
     * Appends a chunk of decompressed data to compress
-    * 
+    *
     * @param data The chunk of decompressed data to append.
     * @returns A chunk of compressed data.
     */

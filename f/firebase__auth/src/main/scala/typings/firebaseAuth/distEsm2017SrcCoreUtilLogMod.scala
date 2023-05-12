@@ -37,5 +37,7 @@ object distEsm2017SrcCoreUtilLogMod {
   
   inline def logError(msg: String, args: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_logError")(scala.List(msg.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
+  inline def logWarn(msg: String, args: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_logWarn")(scala.List(msg.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  
   inline def setLogLevel(newLevel: LogLevel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_setLogLevel")(newLevel.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

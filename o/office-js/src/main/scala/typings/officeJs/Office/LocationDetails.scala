@@ -12,7 +12,7 @@ trait LocationDetails extends StObject {
   var displayName: String
   
   /**
-    * The email address associated with the location.
+    * The email address associated with the location. Only locations of type `Room` have an email address.
     */
   var emailAddress: String
   

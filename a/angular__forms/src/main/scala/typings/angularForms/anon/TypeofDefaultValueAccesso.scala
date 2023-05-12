@@ -29,7 +29,8 @@ trait TypeofDefaultValueAccesso
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    `false`, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[DefaultValueAccessor, js.Tuple3[Null, Null, Optional]] = js.native

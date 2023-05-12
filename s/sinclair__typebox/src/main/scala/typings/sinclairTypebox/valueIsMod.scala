@@ -17,6 +17,8 @@ object valueIsMod {
     
     inline def Array(value: Any): /* is @sinclair/typebox.@sinclair/typebox/value/is.ArrayType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("Array")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @sinclair/typebox.@sinclair/typebox/value/is.ArrayType */ Boolean]
     
+    inline def Date(value: Any): /* is std.Date */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("Date")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Date */ Boolean]
+    
     inline def Object(value: Any): /* is @sinclair/typebox.@sinclair/typebox/value/is.ObjectType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("Object")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @sinclair/typebox.@sinclair/typebox/value/is.ObjectType */ Boolean]
     
     inline def TypedArray(value: Any): /* is @sinclair/typebox.@sinclair/typebox/value/is.TypedArrayType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("TypedArray")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @sinclair/typebox.@sinclair/typebox/value/is.TypedArrayType */ Boolean]

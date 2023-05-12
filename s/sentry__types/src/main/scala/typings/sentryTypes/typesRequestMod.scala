@@ -66,4 +66,42 @@ object typesRequestMod {
       inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
+  
+  trait SanitizedRequestData extends StObject {
+    
+    @JSName("http.fragment")
+    var httpDotfragment: js.UndefOr[String] = js.undefined
+    
+    @JSName("http.method")
+    var httpDotmethod: String
+    
+    @JSName("http.query")
+    var httpDotquery: js.UndefOr[String] = js.undefined
+    
+    var url: String
+  }
+  object SanitizedRequestData {
+    
+    inline def apply(httpDotmethod: String, url: String): SanitizedRequestData = {
+      val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+      __obj.updateDynamic("http.method")(httpDotmethod.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SanitizedRequestData]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SanitizedRequestData] (val x: Self) extends AnyVal {
+      
+      inline def setHttpDotfragment(value: String): Self = StObject.set(x, "http.fragment", value.asInstanceOf[js.Any])
+      
+      inline def setHttpDotfragmentUndefined: Self = StObject.set(x, "http.fragment", js.undefined)
+      
+      inline def setHttpDotmethod(value: String): Self = StObject.set(x, "http.method", value.asInstanceOf[js.Any])
+      
+      inline def setHttpDotquery(value: String): Self = StObject.set(x, "http.query", value.asInstanceOf[js.Any])
+      
+      inline def setHttpDotqueryUndefined: Self = StObject.set(x, "http.query", js.undefined)
+      
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    }
+  }
 }

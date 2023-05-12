@@ -8,6 +8,7 @@ import typings.gestalt.gestaltStrings.error
 import typings.gestalt.gestaltStrings.info
 import typings.gestalt.gestaltStrings.inverse
 import typings.gestalt.gestaltStrings.light
+import typings.gestalt.gestaltStrings.recommendation
 import typings.gestalt.gestaltStrings.shopping
 import typings.gestalt.gestaltStrings.subtle
 import typings.gestalt.gestaltStrings.success
@@ -21,7 +22,7 @@ trait IconProps extends StObject {
   var accessibilityLabel: String
   
   var color: js.UndefOr[
-    default | subtle | success | error | warning | info | inverse | shopping | brandPrimary | light | dark
+    default | subtle | success | error | warning | info | recommendation | inverse | shopping | brandPrimary | light | dark
   ] = js.undefined
   
   var dangerouslySetSvgPath: js.UndefOr[Path] = js.undefined
@@ -45,7 +46,7 @@ object IconProps {
     inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     
     inline def setColor(
-      value: default | subtle | success | error | warning | info | inverse | shopping | brandPrimary | light | dark
+      value: default | subtle | success | error | warning | info | recommendation | inverse | shopping | brandPrimary | light | dark
     ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)

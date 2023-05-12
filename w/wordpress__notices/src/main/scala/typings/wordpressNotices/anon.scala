@@ -1,17 +1,13 @@
 package typings.wordpressNotices
 
 import typings.react.mod.global.JSX.Element
-import typings.wordpressNotices.mod.Action
-import typings.wordpressNotices.mod.Notice
-import typings.wordpressNotices.mod.NoticeType
-import typings.wordpressNotices.mod.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  /* Inlined std.Partial<@wordpress/notices.@wordpress/notices.Options> */
+  /* Inlined std.Partial<@wordpress/notices.Options> */
   trait PartialOptions extends StObject {
     
     var actions: js.UndefOr[js.Array[Action]] = js.undefined

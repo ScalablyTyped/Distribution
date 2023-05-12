@@ -1,6 +1,7 @@
 package typings.pixiCore.mod
 
 import typings.pixiCore.libIrendererMod.IRenderer
+import typings.pixiCore.libStartupStartupSystemMod.StartupSystemOptions
 import typings.pixiExtensions.mod.ExtensionMetadata
 import typings.pixiSettings.libIcanvasMod.ICanvas
 import org.scalablytyped.runtime.StObject
@@ -15,6 +16,16 @@ open class StartupSystem protected ()
 }
 /* static members */
 object StartupSystem {
+  
+  @JSImport("@pixi/core", "StartupSystem")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /** @ignore */
+  @JSImport("@pixi/core", "StartupSystem.defaultOptions")
+  @js.native
+  def defaultOptions: StartupSystemOptions = js.native
+  inline def defaultOptions_=(x: StartupSystemOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
   
   /** @ignore */
   @JSImport("@pixi/core", "StartupSystem.extension")

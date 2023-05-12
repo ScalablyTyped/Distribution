@@ -1988,6 +1988,8 @@ object Mocha {
       */
     def globals(globals: js.Array[String]): Unit = js.native
     
+    var id: String = js.native
+    
     /**
       * Inspect the runnable void of private properties.
       *

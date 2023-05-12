@@ -9,13 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Typeofruntime extends StObject {
   
-  /** @enum */
   val ActionType: NEWNOTE
   
-  /** @enum */
   val LaunchSource: ABOUTPAGE
   
-  /** @enum */
   val PlayStoreStatus: AVAILABLE
   
   /**

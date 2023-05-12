@@ -1,34 +1,27 @@
 package typings.atlaskitAnalyticsNext
 
-import org.scalablytyped.runtime.Shortcut
-import org.scalablytyped.runtime.StringDictionary
-import typings.atlaskitAnalyticsNext.anon.OmitAnalyticsErrorBoundar
-import typings.atlaskitAnalyticsNext.distTypesHocsWithAnalyticsEventsMod.WithAnalyticsEventsProps
 import typings.react.mod.Component
 import typings.react.mod.ComponentType
-import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object distTypesComponentsAnalyticsErrorBoundaryMod extends Shortcut {
+object distTypesComponentsAnalyticsErrorBoundaryMod {
   
   @JSImport("@atlaskit/analytics-next/dist/types/components/AnalyticsErrorBoundary", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[OmitAnalyticsErrorBoundar] = js.native
-  
-  @JSImport("@atlaskit/analytics-next/dist/types/components/AnalyticsErrorBoundary", "BaseAnalyticsErrorBoundary")
-  @js.native
-  open class BaseAnalyticsErrorBoundary protected () extends Component[AnalyticsErrorBoundaryProps, AnalyticsErrorBoundaryState, Any] {
+  open class default protected () extends AnalyticsErrorBoundary {
     def this(props: AnalyticsErrorBoundaryProps) = this()
+  }
+  
+  @js.native
+  trait AnalyticsErrorBoundary extends Component[AnalyticsErrorBoundaryProps, AnalyticsErrorBoundaryState, Any] {
     
     @JSName("componentDidCatch")
-    def componentDidCatch_MBaseAnalyticsErrorBoundary(error: js.Error): Unit = js.native
+    def componentDidCatch_MAnalyticsErrorBoundary(error: js.Error): Unit = js.native
     @JSName("componentDidCatch")
-    def componentDidCatch_MBaseAnalyticsErrorBoundary(error: js.Error, info: AnalyticsErrorBoundaryErrorInfo): Unit = js.native
-    
-    def fireAnalytics(analyticsErrorPayload: AnalyticsErrorBoundaryPayload): Unit = js.native
+    def componentDidCatch_MAnalyticsErrorBoundary(error: js.Error, info: AnalyticsErrorBoundaryErrorInfo): Unit = js.native
   }
   
   trait AnalyticsErrorBoundaryErrorInfo extends StObject {
@@ -49,35 +42,7 @@ object distTypesComponentsAnalyticsErrorBoundaryMod extends Shortcut {
     }
   }
   
-  trait AnalyticsErrorBoundaryPayload
-    extends StObject
-       with /* key */ StringDictionary[Any] {
-    
-    var error: js.Error | String
-    
-    var info: js.UndefOr[AnalyticsErrorBoundaryErrorInfo] = js.undefined
-  }
-  object AnalyticsErrorBoundaryPayload {
-    
-    inline def apply(error: js.Error | String): AnalyticsErrorBoundaryPayload = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
-      __obj.asInstanceOf[AnalyticsErrorBoundaryPayload]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: AnalyticsErrorBoundaryPayload] (val x: Self) extends AnyVal {
-      
-      inline def setError(value: js.Error | String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
-      
-      inline def setInfo(value: AnalyticsErrorBoundaryErrorInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
-      
-      inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
-    }
-  }
-  
-  trait AnalyticsErrorBoundaryProps
-    extends StObject
-       with WithAnalyticsEventsProps {
+  trait AnalyticsErrorBoundaryProps extends StObject {
     
     var ErrorComponent: js.UndefOr[ComponentType[js.Object]] = js.undefined
     
@@ -133,9 +98,4 @@ object distTypesComponentsAnalyticsErrorBoundaryMod extends Shortcut {
       inline def setHasError(value: Boolean): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
     }
   }
-  
-  type _To = ForwardRefExoticComponent[OmitAnalyticsErrorBoundar]
-  
-  /* This means you don't have to write `default`, but can instead just say `distTypesComponentsAnalyticsErrorBoundaryMod.foo` */
-  override def _to: ForwardRefExoticComponent[OmitAnalyticsErrorBoundar] = default
 }

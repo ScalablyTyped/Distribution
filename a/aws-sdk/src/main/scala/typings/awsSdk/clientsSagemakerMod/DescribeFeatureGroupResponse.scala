@@ -62,7 +62,7 @@ trait DescribeFeatureGroupResponse extends StObject {
   var NextToken: typings.awsSdk.clientsSagemakerMod.NextToken
   
   /**
-    * The configuration of the OfflineStore, inducing the S3 location of the OfflineStore, Amazon Web Services Glue or Amazon Web Services Hive data catalogue configurations, and the security configuration.
+    * The configuration of the offline store. It includes the following configurations:   Amazon S3 location of the offline store.   Configuration of the Glue data catalog.   Table format of the offline store.   Option to disable the automatic creation of a Glue table for the offline store.   Encryption configuration.  
     */
   var OfflineStoreConfig: js.UndefOr[typings.awsSdk.clientsSagemakerMod.OfflineStoreConfig] = js.undefined
   

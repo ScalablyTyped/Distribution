@@ -1,11 +1,11 @@
 package typings.reactSpringCore.anon
 
 import typings.react.mod.ReactNode
-import typings.reactSpringCore.distDeclarationsSrcTypesObjectsMod.SpringValues
-import typings.reactSpringCore.distDeclarationsSrcTypesPropsMod.PickAnimated
+import typings.reactSpringCore.mod.PickAnimated
+import typings.reactSpringCore.mod.SpringValues
 import typings.reactSpringCore.reactSpringCoreBooleans.`true`
-import typings.reactSpringTypes.utilMod.Falsy
-import typings.reactSpringTypes.utilMod.NoInfer
+import typings.reactSpringTypes.mod.Falsy
+import typings.reactSpringTypes.mod.NoInfer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

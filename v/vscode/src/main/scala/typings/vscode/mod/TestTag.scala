@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class TestTag protected () extends StObject {
   /**
-    * Creates a new TestTag instance.
-    * @param id ID of the test tag.
-    */
+  		 * Creates a new TestTag instance.
+  		 * @param id ID of the test tag.
+  		 */
   def this(id: String) = this()
   
   /**
-    * ID of the test tag. `TestTag` instances with the same ID are considered
-    * to be identical.
-    */
+  		 * ID of the test tag. `TestTag` instances with the same ID are considered
+  		 * to be identical.
+  		 */
   val id: String = js.native
 }

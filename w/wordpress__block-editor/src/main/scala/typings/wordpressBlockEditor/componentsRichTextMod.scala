@@ -42,8 +42,10 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.react.mod.global.JSX.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.wordpressBlockEditor.componentsRichTextMod.RichText.ContentProps
 import typings.wordpressBlockEditor.componentsRichTextMod.RichText.Props
+import typings.wordpressBlockEditor.wordpressBlockEditorStrings._empty
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.`additions removals`
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.`additions text`
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.`inline`
@@ -52,6 +54,7 @@ import typings.wordpressBlockEditor.wordpressBlockEditorStrings.`removals additi
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.`removals text`
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.`text additions`
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.`text removals`
+import typings.wordpressBlockEditor.wordpressBlockEditorStrings.`use-credentials`
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.`var`
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.a
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.abbr
@@ -60,6 +63,7 @@ import typings.wordpressBlockEditor.wordpressBlockEditorStrings.additions
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.address
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.all
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.alt
+import typings.wordpressBlockEditor.wordpressBlockEditorStrings.anonymous
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.area
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.article
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.ascending
@@ -207,13 +211,14 @@ import typings.wordpressBlockEditor.wordpressBlockEditorStrings.track
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.tree
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.u
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.ul
+import typings.wordpressBlockEditor.wordpressBlockEditorStrings.undefined
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.url
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.user
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.vertical
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.video
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.wbr
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.yes
-import typings.wordpressBlocks.mod.BlockInstance
+import typings.wordpressBlocks.BlockInstance
 import typings.wordpressComponents.autocompleteMod.Autocomplete.Completer
 import typings.wordpressComponents.dashiconMod.Dashicon.Icon
 import org.scalablytyped.runtime.StObject
@@ -475,14 +480,14 @@ object componentsRichTextMod {
       
       def onUse(): Unit
       
-      var `type`: /* keyof @wordpress/block-editor.anon.TypeofrawShortcut */ primary | primaryShift | primaryAlt | secondary | access | ctrl | alt | ctrlShift | shift | shiftAlt
+      var `type`: /* keyof @wordpress/keycodes.@wordpress/keycodes.WPModifierHandler<@wordpress/keycodes.@wordpress/keycodes.WPKeyHandler<string>> */ shiftAlt | ctrl | primary | shift | secondary | ctrlShift | undefined | primaryAlt | access | alt | primaryShift
     }
     object Props {
       
       inline def apply(
         character: String,
         onUse: () => Unit,
-        `type`: /* keyof @wordpress/block-editor.anon.TypeofrawShortcut */ primary | primaryShift | primaryAlt | secondary | access | ctrl | alt | ctrlShift | shift | shiftAlt
+        `type`: /* keyof @wordpress/keycodes.@wordpress/keycodes.WPModifierHandler<@wordpress/keycodes.@wordpress/keycodes.WPKeyHandler<string>> */ shiftAlt | ctrl | primary | shift | secondary | ctrlShift | undefined | primaryAlt | access | alt | primaryShift
       ): typings.wordpressBlockEditor.componentsRichTextMod.RichTextShortcut.Props = {
         val __obj = js.Dynamic.literal(character = character.asInstanceOf[js.Any], onUse = js.Any.fromFunction0(onUse))
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -497,7 +502,7 @@ object componentsRichTextMod {
         inline def setOnUse(value: () => Unit): Self = StObject.set(x, "onUse", js.Any.fromFunction0(value))
         
         inline def setType(
-          value: /* keyof @wordpress/block-editor.anon.TypeofrawShortcut */ primary | primaryShift | primaryAlt | secondary | access | ctrl | alt | ctrlShift | shift | shiftAlt
+          value: /* keyof @wordpress/keycodes.@wordpress/keycodes.WPModifierHandler<@wordpress/keycodes.@wordpress/keycodes.WPKeyHandler<string>> */ shiftAlt | ctrl | primary | shift | secondary | ctrlShift | undefined | primaryAlt | access | alt | primaryShift
         ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
@@ -523,7 +528,7 @@ object componentsRichTextMod {
       var shortcutCharacter: js.UndefOr[String] = js.undefined
       
       var shortcutType: js.UndefOr[
-            primary | primaryShift | primaryAlt | secondary | access | ctrl | alt | ctrlShift | shift | shiftAlt
+            shiftAlt | ctrl | primary | shift | secondary | ctrlShift | undefined | primaryAlt | access | alt | primaryShift
           ] = js.undefined
     }
     object Props {
@@ -545,7 +550,7 @@ object componentsRichTextMod {
         inline def setShortcutCharacterUndefined: Self = StObject.set(x, "shortcutCharacter", js.undefined)
         
         inline def setShortcutType(
-          value: primary | primaryShift | primaryAlt | secondary | access | ctrl | alt | ctrlShift | shift | shiftAlt
+          value: shiftAlt | ctrl | primary | shift | secondary | ctrlShift | undefined | primaryAlt | access | alt | primaryShift
         ): Self = StObject.set(x, "shortcutType", value.asInstanceOf[js.Any])
         
         inline def setShortcutTypeUndefined: Self = StObject.set(x, "shortcutType", js.undefined)
@@ -609,7 +614,7 @@ object componentsRichTextMod {
       
       var accessKey: js.UndefOr[String] = js.undefined
       
-      var action: js.UndefOr[String] = js.undefined
+      var action: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
       
       var allowFullScreen: js.UndefOr[Boolean] = js.undefined
       
@@ -778,7 +783,7 @@ object componentsRichTextMod {
       
       var coords: js.UndefOr[String] = js.undefined
       
-      var crossOrigin: js.UndefOr[String] = js.undefined
+      var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
       
       var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
       
@@ -806,7 +811,7 @@ object componentsRichTextMod {
       
       var form: js.UndefOr[String] = js.undefined
       
-      var formAction: js.UndefOr[String] = js.undefined
+      var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
       
       var formEncType: js.UndefOr[String] = js.undefined
       
@@ -1147,6 +1152,8 @@ object componentsRichTextMod {
       
       var results: js.UndefOr[Double] = js.undefined
       
+      var rev: js.UndefOr[String] = js.undefined
+      
       var reversed: js.UndefOr[Boolean] = js.undefined
       
       var role: js.UndefOr[AriaRole] = js.undefined
@@ -1265,7 +1272,9 @@ object componentsRichTextMod {
         
         inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
         
-        inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+        inline def setAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+        
+        inline def setActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
         
         inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
         
@@ -1587,7 +1596,7 @@ object componentsRichTextMod {
         
         inline def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
         
-        inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+        inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
         
         inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
         
@@ -1647,7 +1656,9 @@ object componentsRichTextMod {
         
         inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
         
-        inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+        inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+        
+        inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
         
         inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
         
@@ -2268,6 +2279,10 @@ object componentsRichTextMod {
         inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
         
         inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+        
+        inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+        
+        inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
         
         inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
         

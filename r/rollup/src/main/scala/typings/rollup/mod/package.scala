@@ -24,6 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 inline def VERSION: String = ^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[String]
 
+inline def defineConfig(optionsFunction: RollupOptionsFunction): RollupOptionsFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("defineConfig")(optionsFunction.asInstanceOf[js.Any]).asInstanceOf[RollupOptionsFunction]
 inline def defineConfig(options: js.Array[RollupOptions]): js.Array[RollupOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("defineConfig")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[RollupOptions]]
 inline def defineConfig(options: RollupOptions): RollupOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("defineConfig")(options.asInstanceOf[js.Any]).asInstanceOf[RollupOptions]
 
@@ -164,6 +165,13 @@ ResolveIdResult]
 */
 type ResolveIdResult = _ResolveIdResult | String | NullValue
 
+/* Rewritten from type alias, can be one of: 
+  - java.lang.String
+  - typings.rollup.rollupBooleans.`false`
+  - typings.rollup.mod.PartialResolvedId
+*/
+type ResolveIdResultWithoutNullValue = _ResolveIdResultWithoutNullValue | String
+
 type ResolveImportMetaHook = js.ThisFunction2[
 /* this */ PluginContext, 
 /* property */ String | Null, 
@@ -171,6 +179,10 @@ type ResolveImportMetaHook = js.ThisFunction2[
 String | NullValue]
 
 type ResolvedIdMap = StringDictionary[ResolvedId]
+
+type RollupOptionsFunction = js.Function1[
+/* commandLineArguments */ Record[String, Any], 
+MaybePromise[RollupOptions | js.Array[RollupOptions]]]
 
 type RollupWarning = RollupLog
 
@@ -180,7 +192,7 @@ type SerializablePluginCache = StringDictionary[js.Tuple2[Double, Any]]
 
 type SerializedTimings = StringDictionary[js.Tuple3[Double, Double, Double]]
 
-type ShouldTransformCachedModuleHook = js.ThisFunction1[/* this */ PluginContext, /* options */ Ast, Boolean]
+type ShouldTransformCachedModuleHook = js.ThisFunction1[/* this */ PluginContext, /* options */ Ast, Boolean | NullValue]
 
 /* Rewritten from type alias, can be one of: 
   - typings.rollup.mod.ExistingRawSourceMap
@@ -191,6 +203,8 @@ type ShouldTransformCachedModuleHook = js.ThisFunction1[/* this */ PluginContext
 type SourceMapInput = _SourceMapInput | String | Null
 
 type SourceMapSegment = js.Array[Double] | (js.Tuple4[Double, Double, Double, Double]) | (js.Tuple5[Double, Double, Double, Double, Double])
+
+type SourcemapIgnoreListOption = js.Function2[/* relativeSourcePath */ String, /* sourcemapPath */ String, Boolean]
 
 type SourcemapPathTransformOption = js.Function2[/* relativeSourcePath */ String, /* sourcemapPath */ String, String]
 

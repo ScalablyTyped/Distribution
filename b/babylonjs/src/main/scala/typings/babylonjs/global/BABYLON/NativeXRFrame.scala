@@ -1,6 +1,7 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.INativeXRFrame
+import typings.babylonjs.XRCPUDepthInformation
 import typings.babylonjs.XRHitTestResult
 import typings.babylonjs.XRHitTestSource
 import typings.babylonjs.XRLightEstimate
@@ -11,6 +12,7 @@ import typings.babylonjs.XRSession
 import typings.babylonjs.XRSpace
 import typings.babylonjs.XRTransientInputHitTestResult
 import typings.babylonjs.XRTransientInputHitTestSource
+import typings.babylonjs.XRView
 import typings.babylonjs.XRViewerPose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,6 +24,9 @@ open class NativeXRFrame protected ()
   extends StObject
      with typings.babylonjs.BABYLON.NativeXRFrame {
   def this(_nativeImpl: INativeXRFrame) = this()
+  
+  /* CompleteClass */
+  override def getDepthInformation(view: XRView): js.UndefOr[XRCPUDepthInformation] = js.native
   
   /* CompleteClass */
   override def getHitTestResults(hitTestSource: XRHitTestSource): js.Array[XRHitTestResult] = js.native

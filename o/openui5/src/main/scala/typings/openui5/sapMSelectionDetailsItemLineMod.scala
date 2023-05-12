@@ -13,6 +13,8 @@ object sapMSelectionDetailsItemLineMod {
   @JSImport("sap/m/SelectionDetailsItemLine", JSImport.Default)
   @js.native
   /**
+    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    *
     * Constructor for a new SelectionDetailsItemLine.
     *
     * Accepts an object literal `mSettings` that defines initial property values, aggregated and associated
@@ -57,6 +59,8 @@ object sapMSelectionDetailsItemLineMod {
     val ^ : js.Any = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Creates a new subclass of class sap.m.SelectionDetailsItemLine with name `sClassName` and enriches it
       * with the information contained in `oClassInfo`.
       *
@@ -110,6 +114,8 @@ object sapMSelectionDetailsItemLineMod {
     ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any], FNMetaImpl.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns a metadata object for class sap.m.SelectionDetailsItemLine.
       *
       * @returns Metadata object describing this class
@@ -122,6 +128,8 @@ object sapMSelectionDetailsItemLineMod {
     extends typings.openui5.sapUiCoreElementMod.default {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Gets current value of property {@link #getDisplayValue displayValue}.
       *
       * The display value of the line. If this property is set, it overrides the value property and is displayed
@@ -132,6 +140,8 @@ object sapMSelectionDetailsItemLineMod {
     def getDisplayValue(): String = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Gets current value of property {@link #getLabel label}.
       *
       * The label that is shown as the first part of the line. It may contain the name of the currently selected
@@ -142,6 +152,8 @@ object sapMSelectionDetailsItemLineMod {
     def getLabel(): String = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Gets current value of property {@link #getLineMarker lineMarker}.
       *
       * A string to be rendered by the control as a line marker. This string must be a valid SVG definition.
@@ -152,6 +164,8 @@ object sapMSelectionDetailsItemLineMod {
     def getLineMarker(): String = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Gets current value of property {@link #getUnit unit}.
       *
       * The unit of the given value. If this unit is given, the line is displayed bold.
@@ -161,6 +175,8 @@ object sapMSelectionDetailsItemLineMod {
     def getUnit(): String = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Gets current value of property {@link #getValue value}.
       *
       * The value of the line, for example the value of the currently selected measure. Expected type is a string,
@@ -171,6 +187,8 @@ object sapMSelectionDetailsItemLineMod {
     def getValue(): Any = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets a new value for property {@link #getDisplayValue displayValue}.
       *
       * The display value of the line. If this property is set, it overrides the value property and is displayed
@@ -187,6 +205,8 @@ object sapMSelectionDetailsItemLineMod {
     sDisplayValue: String): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets a new value for property {@link #getLabel label}.
       *
       * The label that is shown as the first part of the line. It may contain the name of the currently selected
@@ -202,6 +222,8 @@ object sapMSelectionDetailsItemLineMod {
     sLabel: String): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets a new value for property {@link #getLineMarker lineMarker}.
       *
       * A string to be rendered by the control as a line marker. This string must be a valid SVG definition.
@@ -218,6 +240,8 @@ object sapMSelectionDetailsItemLineMod {
     sLineMarker: String): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets a new value for property {@link #getUnit unit}.
       *
       * The unit of the given value. If this unit is given, the line is displayed bold.
@@ -233,6 +257,8 @@ object sapMSelectionDetailsItemLineMod {
     sUnit: String): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets a new value for property {@link #getValue value}.
       *
       * The value of the line, for example the value of the currently selected measure. Expected type is a string,

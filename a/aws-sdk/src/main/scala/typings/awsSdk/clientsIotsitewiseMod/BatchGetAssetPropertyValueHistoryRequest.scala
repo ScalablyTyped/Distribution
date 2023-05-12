@@ -12,7 +12,7 @@ trait BatchGetAssetPropertyValueHistoryRequest extends StObject {
   var entries: BatchGetAssetPropertyValueHistoryEntries
   
   /**
-    * The maximum number of results to return for each paginated request. A result set is returned in the two cases, whichever occurs first.   The size of the result set is less than 1 MB.   The number of data points in the result set is less than the value of maxResults. The maximum value of maxResults is 4000.  
+    * The maximum number of results to return for each paginated request. A result set is returned in the two cases, whichever occurs first.   The size of the result set is equal to 4 MB.   The number of data points in the result set is equal to the value of maxResults. The maximum value of maxResults is 20000.  
     */
   var maxResults: js.UndefOr[BatchGetAssetPropertyValueHistoryMaxResults] = js.undefined
   

@@ -5,6 +5,8 @@ import typings.recurlyRecurlyJs.lib3dSecureMod.Risk
 import typings.recurlyRecurlyJs.libAdyenMod.Adyen
 import typings.recurlyRecurlyJs.libAdyenMod.AdyenInstance
 import typings.recurlyRecurlyJs.libAdyenMod.AdyenOptions
+import typings.recurlyRecurlyJs.libAlternativePaymentMethodsMod.AlternativePaymentMethods
+import typings.recurlyRecurlyJs.libAlternativePaymentMethodsMod.AlternativePaymentMethodsInstance
 import typings.recurlyRecurlyJs.libApplePayMod.ApplePay
 import typings.recurlyRecurlyJs.libApplePayMod.ApplePayConfig
 import typings.recurlyRecurlyJs.libApplePayMod.ApplePayInstance
@@ -27,6 +29,7 @@ import typings.recurlyRecurlyJs.libPaypalMod.PayPalConfig
 import typings.recurlyRecurlyJs.libPaypalMod.PayPalInstance
 import typings.recurlyRecurlyJs.libTokenMod.Token
 import typings.recurlyRecurlyJs.libValidateMod.Validate
+import typings.std.VoidFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,6 +45,20 @@ object libRecurlyMod {
     def Adyen(adyenOptions: AdyenOptions): AdyenInstance = js.native
     @JSName("Adyen")
     var Adyen_Original: Adyen = js.native
+    
+    /**
+      * Pay with Alternative Payment Methods.
+      *
+      * @see {@link https://developers.recurly.com/reference/recurly-js/index.html}
+      */
+    def AlternativePaymentMethods(): AlternativePaymentMethodsInstance = js.native
+    /**
+      * Pay with Alternative Payment Methods.
+      *
+      * @see {@link https://developers.recurly.com/reference/recurly-js/index.html}
+      */
+    @JSName("AlternativePaymentMethods")
+    var AlternativePaymentMethods_Original: AlternativePaymentMethods = js.native
     
     /**
       * Use Recurly.js to process Apple Pay transactions.
@@ -194,6 +211,12 @@ object libRecurlyMod {
     def giftCard(giftCardOptions: GiftCardOptions, done: Done): Unit = js.native
     @JSName("giftCard")
     var giftCard_Original: GiftCard = js.native
+    
+    /**
+      * Triggered once Recurly has fully been initialized after configuring.the instance.
+      */
+    def ready(): Unit = js.native
+    def ready(cb: VoidFunction): Unit = js.native
     
     /**
       * Recurly.js works with tokens, which represent secure and temporary storage for your customer’s sensitive billing

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "steno" : "2.1.0"
+      "steno" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "steno" : "2.1.0"
+      "steno" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

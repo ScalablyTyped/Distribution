@@ -31,13 +31,16 @@ trait CloseOnNavigation extends StObject {
   var contentWidth: js.UndefOr[CSSSize] = js.undefined
   
   /**
-    * Added since version 1.28.0. If 'details' is set, a link to view details is added. When the user clicks
-    * the link, the text area containing 'details' information is displayed. The initial visibility is not
-    * configurable and the details are hidden by default.
-    *  If object is given, it will be serialized using `JSON.stringify`.
-    *  Since version 1.103, a callback function can be used. It should return a promise, that resolves with
-    * a `string` value or a JSON object, which will be stringified, or rejects - in this case a default error
-    * message will be displayed.
+    * Added since version 1.28.0. If set, a link to view details is added. When the user clicks the link, the
+    * text area containing 'details' information is displayed. The initial visibility is not configurable and
+    * the details are hidden by default.
+    *  The following details can be used:
+    * 	 - `string` - text in HTML format. For full list of supported HTML tags see {@link sap.m.FormattedText}
+    *
+    * 	 - `object` - JSON object that will be serialized using `JSON.stringify`
+    * 	 - `function` - since version 1.103, a callback function that fetches the details asynchronously. It
+    * 			should return a promise that resolves with a `string` value or an `object`, or rejects - in this case
+    * 			a default error message will be displayed
     */
   var details: js.UndefOr[String | js.Object | (js.Function0[js.Promise[String | js.Object]])] = js.undefined
   

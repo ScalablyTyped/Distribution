@@ -16,7 +16,7 @@ object libIconsWechatFilledMod extends Shortcut {
   @js.native
   trait WechatFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_WechatFilledIconType: String = js.native

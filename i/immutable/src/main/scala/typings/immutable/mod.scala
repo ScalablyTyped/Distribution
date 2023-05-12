@@ -312,7 +312,7 @@ object mod {
     def getIn(searchKeyPath: js.Iterable[Any], notSetValue: Any): Any = js.native
     
     /**
-      * Returns a `Collection.Keyed` of `Collection.Keyeds`, grouped by the return
+      * Returns a `Map` of `Collection`, grouped by the return
       * value of the `grouper` function.
       *
       * Note: This is always an eager operation.
@@ -335,8 +335,8 @@ object mod {
       * // }
       * ```
       */
-    def groupBy[G](grouper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, G]): /*Map*/ Keyed[G, /*this*/ Collection[K, V]] = js.native
-    def groupBy[G](grouper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, G], context: Any): /*Map*/ Keyed[G, /*this*/ Collection[K, V]] = js.native
+    def groupBy[G](grouper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, G]): Map[G, this.type] = js.native
+    def groupBy[G](grouper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, G], context: Any): Map[G, this.type] = js.native
     
     /**
       * True if a key exists within this `Collection`, using `Immutable.is`
@@ -463,7 +463,7 @@ object mod {
       * that value will be returned.
       */
     def max(): js.UndefOr[V] = js.native
-    def max(comparator: js.Function2[/* valueA */ V, /* valueB */ V, Double]): js.UndefOr[V] = js.native
+    def max(comparator: Comparator[V]): js.UndefOr[V] = js.native
     
     /**
       * Like `max`, but also accepts a `comparatorValueMapper` which allows for
@@ -483,7 +483,7 @@ object mod {
     def maxBy[C](comparatorValueMapper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, C]): js.UndefOr[V] = js.native
     def maxBy[C](
       comparatorValueMapper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, C],
-      comparator: js.Function2[/* valueA */ C, /* valueB */ C, Double]
+      comparator: Comparator[C]
     ): js.UndefOr[V] = js.native
     
     /**
@@ -502,7 +502,7 @@ object mod {
       * that value will be returned.
       */
     def min(): js.UndefOr[V] = js.native
-    def min(comparator: js.Function2[/* valueA */ V, /* valueB */ V, Double]): js.UndefOr[V] = js.native
+    def min(comparator: Comparator[V]): js.UndefOr[V] = js.native
     
     /**
       * Like `min`, but also accepts a `comparatorValueMapper` which allows for
@@ -522,8 +522,27 @@ object mod {
     def minBy[C](comparatorValueMapper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, C]): js.UndefOr[V] = js.native
     def minBy[C](
       comparatorValueMapper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, C],
-      comparator: js.Function2[/* valueA */ C, /* valueB */ C, Double]
+      comparator: Comparator[C]
     ): js.UndefOr[V] = js.native
+    
+    def partition[C](predicate: js.ThisFunction3[/* this */ C, /* value */ V, /* key */ K, /* iter */ this.type, Any]): js.Tuple2[this.type, this.type] = js.native
+    def partition[C](
+      predicate: js.ThisFunction3[/* this */ C, /* value */ V, /* key */ K, /* iter */ this.type, Any],
+      context: C
+    ): js.Tuple2[this.type, this.type] = js.native
+    /**
+      * Returns a new Collection with the values for which the `predicate`
+      * function returns false and another for which is returns true.
+      */
+    @JSName("partition")
+    def partition_FC[F /* <: V */, C](
+      predicate: js.ThisFunction3[/* this */ C, /* value */ V, /* key */ K, /* iter */ this.type, /* is F */ Boolean]
+    ): js.Tuple2[Collection[K, V], Collection[K, F]] = js.native
+    @JSName("partition")
+    def partition_FC[F /* <: V */, C](
+      predicate: js.ThisFunction3[/* this */ C, /* value */ V, /* key */ K, /* iter */ this.type, /* is F */ Boolean],
+      context: C
+    ): js.Tuple2[Collection[K, V], Collection[K, F]] = js.native
     
     def reduce[R](reducer: js.Function4[/* reduction */ V | R, /* value */ V, /* key */ K, /* iter */ this.type, R]): R = js.native
     // Reducing a value
@@ -655,6 +674,7 @@ object mod {
       *   * Returns `0` if the elements should not be swapped.
       *   * Returns `-1` (or any negative number) if `valueA` comes before `valueB`
       *   * Returns `1` (or any positive number) if `valueA` comes after `valueB`
+      *   * Alternatively, can return a value of the `PairSorting` enum type
       *   * Is pure, i.e. it must always return the same value for the same pair
       *     of values.
       *
@@ -678,7 +698,7 @@ object mod {
       * Note: This is always an eager operation.
       */
     def sort(): this.type = js.native
-    def sort(comparator: js.Function2[/* valueA */ V, /* valueB */ V, Double]): this.type = js.native
+    def sort(comparator: Comparator[V]): this.type = js.native
     
     /**
       * Like `sort`, but also accepts a `comparatorValueMapper` which allows for
@@ -704,7 +724,7 @@ object mod {
     def sortBy[C](comparatorValueMapper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, C]): this.type = js.native
     def sortBy[C](
       comparatorValueMapper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, C],
-      comparator: js.Function2[/* valueA */ C, /* valueB */ C, Double]
+      comparator: Comparator[C]
     ): this.type = js.native
     
     /**
@@ -769,7 +789,7 @@ object mod {
       * `Collection.Indexed`, and `Collection.Set` become `Array`, while
       * `Collection.Keyed` become `Object`, converting keys to Strings.
       */
-    def toJS(): js.Array[Any] | StringDictionary[Any] = js.native
+    def toJS(): js.Array[DeepCopy[V]] | (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in string | number | symbol ]: immutable.immutable.DeepCopy<V>} */ js.Any) = js.native
     
     /**
       * Shallowly converts this Collection to equivalent native JavaScript Array or Object.
@@ -777,7 +797,7 @@ object mod {
       * `Collection.Indexed`, and `Collection.Set` become `Array`, while
       * `Collection.Keyed` become `Object`, converting keys to Strings.
       */
-    def toJSON(): js.Array[V] | StringDictionary[V] = js.native
+    def toJSON(): js.Array[V] | (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in string | number | symbol ]: V} */ js.Any) = js.native
     
     /**
       * Returns a Seq.Keyed from this Collection where indices are treated as keys.
@@ -1801,7 +1821,7 @@ object mod {
       * @see `Map#update`
       */
     def update(index: Double, notSetValue: T, updater: js.Function1[/* value */ T, T]): this.type = js.native
-    def update(index: Double, updater: js.Function1[/* value */ js.UndefOr[T], T]): this.type = js.native
+    def update(index: Double, updater: js.Function1[/* value */ js.UndefOr[T], js.UndefOr[T]]): this.type = js.native
     
     /**
       * Note: `updateIn` can be used in `withMutations`.
@@ -2376,7 +2396,7 @@ object mod {
       * Note: `update(key)` can be used in `withMutations`.
       */
     def update(key: K, notSetValue: V, updater: js.Function1[/* value */ V, V]): this.type = js.native
-    def update(key: K, updater: js.Function1[/* value */ js.UndefOr[V], V]): this.type = js.native
+    def update(key: K, updater: js.Function1[/* value */ js.UndefOr[V], js.UndefOr[V]]): this.type = js.native
     
     /**
       * Returns a new Map having applied the `updater` to the entry found at the
@@ -2782,6 +2802,28 @@ object mod {
     inline def of[T](values: T*): OrderedSet[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(values.asInstanceOf[scala.Seq[js.Any]]*).asInstanceOf[OrderedSet[T]]
   }
   
+  @js.native
+  sealed trait PairSorting extends StObject
+  @JSImport("immutable", "PairSorting")
+  @js.native
+  object PairSorting extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[PairSorting & Double] = js.native
+    
+    @js.native
+    sealed trait LeftThenRight
+      extends StObject
+         with PairSorting
+    /* -1 */ val LeftThenRight: typings.immutable.mod.PairSorting.LeftThenRight & Double = js.native
+    
+    @js.native
+    sealed trait RightThenLeft
+      extends StObject
+         with PairSorting
+    /* +1 */ val RightThenLeft: typings.immutable.mod.PairSorting.RightThenLeft & Double = js.native
+  }
+  
   /**
     * Returns a Seq.Indexed of numbers from `start` (inclusive) to `end`
     * (exclusive), by `step`, where `start` defaults to 0, `step` to 1, and `end` to
@@ -2909,7 +2951,7 @@ object mod {
       * Note: This method may not be overridden. Objects with custom
       * serialization to plain JS may override toJSON() instead.
       */
-    def toJS(): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof TProps ]: unknown} */ js.Any = js.native
+    def toJS(): DeepCopy[TProps] = js.native
     
     /**
       * Shallowly converts this Record to equivalent native JavaScript Object.
@@ -4339,6 +4381,16 @@ object mod {
     inline def of[T](values: T*): Stack[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(values.asInstanceOf[scala.Seq[js.Any]]*).asInstanceOf[Stack[T]]
   }
   
+  inline def fromJS(jsValue: Any): Collection[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJS")(jsValue.asInstanceOf[js.Any]).asInstanceOf[Collection[Any, Any]]
+  inline def fromJS(
+    jsValue: Any,
+    reviver: js.Function3[
+      /* key */ String | Double, 
+      /* sequence */ (typings.immutable.mod.Collection.Keyed[String, Any]) | typings.immutable.mod.Collection.Indexed[Any], 
+      /* path */ js.UndefOr[js.Array[String | Double]], 
+      Any
+    ]
+  ): Collection[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJS")(jsValue.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[Collection[Any, Any]]
   /**
     * Deeply converts plain JS objects and arrays to Immutable Maps and Lists.
     *
@@ -4409,16 +4461,7 @@ object mod {
     * [3]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#the_iterable_protocol
     *      "The iterable protocol"
     */
-  inline def fromJS(jsValue: Any): Collection[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJS")(jsValue.asInstanceOf[js.Any]).asInstanceOf[Collection[Any, Any]]
-  inline def fromJS(
-    jsValue: Any,
-    reviver: js.Function3[
-      /* key */ String | Double, 
-      /* sequence */ (typings.immutable.mod.Collection.Keyed[String, Any]) | typings.immutable.mod.Collection.Indexed[Any], 
-      /* path */ js.UndefOr[js.Array[String | Double]], 
-      Any
-    ]
-  ): Collection[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJS")(jsValue.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[Collection[Any, Any]]
+  inline def fromJS[JSValue](jsValue: JSValue, reviver: Unit): FromJS_[JSValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJS")(jsValue.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[FromJS_[JSValue]]
   
   inline def get[V](collection: js.Array[V], key: Double): js.UndefOr[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(collection.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[V]]
   inline def get[V](collection: StringDictionary[V], key: String): js.UndefOr[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(collection.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[V]]
@@ -4882,7 +4925,11 @@ object mod {
     value: /* import warning: importer.ImportType#apply Failed type conversion: TProps[K] */ js.Any
   ): C = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(record.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[C]
   
-  inline def update[V](collection: js.Array[V], key: Double, updater: js.Function1[/* value */ V, V]): js.Array[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(collection.asInstanceOf[js.Any], key.asInstanceOf[js.Any], updater.asInstanceOf[js.Any])).asInstanceOf[js.Array[V]]
+  inline def update[V](
+    collection: js.Array[V],
+    key: Double,
+    updater: js.Function1[/* value */ js.UndefOr[V], js.UndefOr[V]]
+  ): js.Array[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(collection.asInstanceOf[js.Any], key.asInstanceOf[js.Any], updater.asInstanceOf[js.Any])).asInstanceOf[js.Array[V]]
   inline def update[V, NSV](
     collection: js.Array[V],
     key: Double,
@@ -4949,7 +4996,7 @@ object mod {
     * console.log(originalObject) // { x: 123, y: 456 }
     * ```
     */
-  inline def update_KVC[K, V, C /* <: Collection[K, V] */](collection: C, key: K, updater: js.Function1[/* value */ js.UndefOr[V], V]): C = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(collection.asInstanceOf[js.Any], key.asInstanceOf[js.Any], updater.asInstanceOf[js.Any])).asInstanceOf[C]
+  inline def update_KVC[K, V, C /* <: Collection[K, V] */](collection: C, key: K, updater: js.Function1[/* value */ js.UndefOr[V], js.UndefOr[V]]): C = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(collection.asInstanceOf[js.Any], key.asInstanceOf[js.Any], updater.asInstanceOf[js.Any])).asInstanceOf[C]
   
   inline def update_KVCNSV[K, V, C /* <: Collection[K, V] */, NSV](collection: C, key: K, notSetValue: NSV, updater: js.Function1[/* value */ V | NSV, V]): C = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(collection.asInstanceOf[js.Any], key.asInstanceOf[js.Any], notSetValue.asInstanceOf[js.Any], updater.asInstanceOf[js.Any])).asInstanceOf[C]
   
@@ -4975,6 +5022,57 @@ object mod {
   inline def update_VCKNSV_StringDictionary[V, C /* <: StringDictionary[V] */, K /* <: /* keyof C */ String */, NSV](collection: C, key: K, notSetValue: NSV, updater: js.Function1[/* value */ V | NSV, V]): StringDictionary[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(collection.asInstanceOf[js.Any], key.asInstanceOf[js.Any], notSetValue.asInstanceOf[js.Any], updater.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[V]]
   
   inline def update_VCK_StringDictionary[V, C /* <: StringDictionary[V] */, K /* <: /* keyof C */ String */](collection: C, key: K, updater: js.Function1[/* value */ V, V]): StringDictionary[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(collection.asInstanceOf[js.Any], key.asInstanceOf[js.Any], updater.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[V]]
+  
+  type Comparator[T] = js.Function2[/* left */ T, /* right */ T, PairSorting | Double]
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately.
+    * TS definition: {{{
+    T extends immutable.immutable.Record<infer R> ? // convert Record to DeepCopy plain JS object
+  {[ key in keyof R ]: R[key] extends object? unknown : R[key]} : T extends immutable.immutable.Collection.Keyed<infer KeyedKey, infer V> ? // convert KeyedCollection to DeepCopy plain JS object
+  {[ key in KeyedKey extends string | number | symbol? KeyedKey : string ]: V extends object? unknown : V} : // convert IndexedCollection or Immutable.Set to DeepCopy plain JS array
+  T extends immutable.immutable.Collection<infer _, infer V> ? std.Array<V extends object ? unknown : V> : T extends string | number ? T : T extends std.Iterable<infer V> ? std.Array<V extends object ? unknown : V> : T extends object ? {[ ObjectKey in keyof T ]: T[ObjectKey] extends object? unknown : T[ObjectKey]} : // other case : should be kept as is
+  T
+    }}}
+    */
+  @js.native
+  trait DeepCopy[T] extends StObject
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately.
+    * TS definition: {{{
+    JSValue extends std.Array<infer T> ? immutable.immutable.List<immutable.immutable.FromJS<T>> : never
+    }}}
+    */
+  @js.native
+  trait FromJSArray[JSValue] extends StObject
+  
+  type FromJSNoTransform = js.UndefOr[(Collection[Any, Any]) | Double | String | Null]
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+    * TS definition: {{{
+    JSValue extends {} ? immutable.immutable.Map<keyof JSValue, immutable.immutable.FromJS<JSValue[keyof JSValue]>> : never
+    }}}
+    */
+  type FromJSObject[JSValue] = Map[
+    /* keyof JSValue */ String, 
+    FromJS_[
+      /* import warning: importer.ImportType#apply Failed type conversion: JSValue[keyof JSValue] */ js.Any
+    ]
+  ]
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+    * TS definition: {{{
+    JSValue extends immutable.immutable.FromJSNoTransform ? JSValue : JSValue extends std.Array<any> ? immutable.immutable.FromJSArray<JSValue> : JSValue extends {} ? immutable.immutable.FromJSObject<JSValue> : any
+    }}}
+    */
+  type FromJS_[JSValue] = JSValue
   
   /**
     * RecordOf<T> is used in TypeScript to define interfaces expecting an

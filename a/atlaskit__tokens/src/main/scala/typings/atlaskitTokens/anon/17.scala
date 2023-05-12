@@ -1,28 +1,28 @@
 package typings.atlaskitTokens.anon
 
-import typings.atlaskitTokens.distTypesTypesMod.PaintToken
+import typings.atlaskitTokens.atlaskitTokensStrings.`3rem`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `17`[BaseToken] extends StObject {
+trait `17` extends StObject {
   
-  var pressed: PaintToken[BaseToken]
+  val attributes: `7`
   
-  var resting: PaintToken[BaseToken]
+  val value: `3rem`
 }
 object `17` {
   
-  inline def apply[BaseToken](pressed: PaintToken[BaseToken], resting: PaintToken[BaseToken]): `17`[BaseToken] = {
-    val __obj = js.Dynamic.literal(pressed = pressed.asInstanceOf[js.Any], resting = resting.asInstanceOf[js.Any])
-    __obj.asInstanceOf[`17`[BaseToken]]
+  inline def apply(attributes: `7`): `17` = {
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], value = "3rem")
+    __obj.asInstanceOf[`17`]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: `17`[?], BaseToken] (val x: Self & `17`[BaseToken]) extends AnyVal {
+  implicit open class MutableBuilder[Self <: `17`] (val x: Self) extends AnyVal {
     
-    inline def setPressed(value: PaintToken[BaseToken]): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: `7`): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    inline def setResting(value: PaintToken[BaseToken]): Self = StObject.set(x, "resting", value.asInstanceOf[js.Any])
+    inline def setValue(value: `3rem`): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

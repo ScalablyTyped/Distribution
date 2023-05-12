@@ -12,7 +12,7 @@ trait DeleteCachePolicyRequest extends StObject {
   var Id: String
   
   /**
-    * The version of the cache policy that you are deleting. The version is the cache policy’s ETag value, which you can get using ListCachePolicies, GetCachePolicy, or GetCachePolicyConfig.
+    * The version of the cache policy that you are deleting. The version is the cache policy's ETag value, which you can get using ListCachePolicies, GetCachePolicy, or GetCachePolicyConfig.
     */
   var IfMatch: js.UndefOr[String] = js.undefined
 }

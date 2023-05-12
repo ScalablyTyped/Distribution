@@ -1,5 +1,6 @@
 package typings.babylonjs.anon
 
+import typings.babylonjs.materialsNodeNodeMaterialBlockMod.NodeMaterialBlock
 import typings.babylonjs.sceneMod.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +12,12 @@ trait ActivatePreviewCommand extends StObject {
   var activatePreviewCommand: js.UndefOr[Boolean] = js.undefined
   
   /** a callback to trigger */
-  var callback: js.UndefOr[js.Function1[/* scene */ Scene, Unit]] = js.undefined
+  var callback: js.UndefOr[
+    js.Function2[/* scene */ Scene, /* block */ NodeMaterialBlock, js.UndefOr[Boolean | Unit]]
+  ] = js.undefined
+  
+  /** a callback to validate the property. Returns true if the property is ok, else false. If false, the rebuild/update/callback events won't be called */
+  var onValidation: js.UndefOr[js.Function2[/* block */ NodeMaterialBlock, /* propertyName */ String, Boolean]] = js.undefined
   
   /** the material should be rebuilt */
   var rebuild: js.UndefOr[Boolean] = js.undefined
@@ -33,9 +39,13 @@ object ActivatePreviewCommand {
     
     inline def setActivatePreviewCommandUndefined: Self = StObject.set(x, "activatePreviewCommand", js.undefined)
     
-    inline def setCallback(value: /* scene */ Scene => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+    inline def setCallback(value: (/* scene */ Scene, /* block */ NodeMaterialBlock) => js.UndefOr[Boolean | Unit]): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    
+    inline def setOnValidation(value: (/* block */ NodeMaterialBlock, /* propertyName */ String) => Boolean): Self = StObject.set(x, "onValidation", js.Any.fromFunction2(value))
+    
+    inline def setOnValidationUndefined: Self = StObject.set(x, "onValidation", js.undefined)
     
     inline def setRebuild(value: Boolean): Self = StObject.set(x, "rebuild", value.asInstanceOf[js.Any])
     

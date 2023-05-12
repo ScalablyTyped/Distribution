@@ -2,6 +2,7 @@ package typings.rcPicker
 
 import typings.rcPicker.esGenerateMod.GenerateConfig
 import typings.rcPicker.esInterfaceMod.PanelMode
+import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.std.Record
@@ -31,7 +32,7 @@ object esPanelsPanelBodyMod {
     
     def getCellDate(date: DateType, offset: Double): DateType
     
-    var getCellNode: js.UndefOr[js.Function1[/* date */ DateType, ReactNode]] = js.undefined
+    var getCellNode: js.UndefOr[js.Function2[/* date */ DateType, /* wrapperNode */ ReactElement, ReactNode]] = js.undefined
     
     def getCellText(date: DateType): ReactNode
     
@@ -85,7 +86,7 @@ object esPanelsPanelBodyMod {
       
       inline def setGetCellDate(value: (DateType, Double) => DateType): Self = StObject.set(x, "getCellDate", js.Any.fromFunction2(value))
       
-      inline def setGetCellNode(value: /* date */ DateType => ReactNode): Self = StObject.set(x, "getCellNode", js.Any.fromFunction1(value))
+      inline def setGetCellNode(value: (/* date */ DateType, /* wrapperNode */ ReactElement) => ReactNode): Self = StObject.set(x, "getCellNode", js.Any.fromFunction2(value))
       
       inline def setGetCellNodeUndefined: Self = StObject.set(x, "getCellNode", js.undefined)
       

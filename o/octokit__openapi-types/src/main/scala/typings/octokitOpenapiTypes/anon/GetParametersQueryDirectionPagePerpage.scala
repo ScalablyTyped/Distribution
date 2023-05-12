@@ -6,7 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersQueryDirectionPagePerpage extends StObject {
   
-  /** Lists review comments for all pull requests in a repository. By default, review comments are in ascending order by ID. */
+  /**
+    * List repositories starred by the authenticated user
+    * @description Lists repositories the authenticated user has starred.
+    *
+    * You can also find out _when_ stars were created by passing the following custom [media type](https://docs.github.com/rest/overview/media-types/) via the `Accept` header: `application/vnd.github.star+json`.
+    */
   var get: ParametersQueryDirectionPagePerpage
 }
 object GetParametersQueryDirectionPagePerpage {

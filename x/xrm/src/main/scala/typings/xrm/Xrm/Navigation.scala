@@ -116,7 +116,7 @@ trait Navigation extends StObject {
 }
 /**
   * Namespace to hold Xrm.Navigation related types
-  * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation External Link: Xrm.Navigation (Client API reference)}
+  * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-navigation External Link: Xrm.Navigation (Client API reference)}
   */
 object Navigation {
   

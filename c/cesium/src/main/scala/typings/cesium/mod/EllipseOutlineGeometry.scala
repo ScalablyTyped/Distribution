@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.anon.NumberOfVerticalLines
+import typings.cesium.anon.Height
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("cesium", "EllipseOutlineGeometry")
 @js.native
 open class EllipseOutlineGeometry protected () extends StObject {
-  def this(options: NumberOfVerticalLines) = this()
+  def this(options: Height) = this()
 }
 /* static members */
 object EllipseOutlineGeometry {

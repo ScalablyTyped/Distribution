@@ -42,7 +42,7 @@ trait S3Object extends StObject {
   var publicAccess: js.UndefOr[boolean] = js.undefined
   
   /**
-    * The type of server-side encryption that's used to encrypt the object.
+    * The type of server-side encryption that was used to encrypt the object.
     */
   var serverSideEncryption: js.UndefOr[ServerSideEncryption] = js.undefined
   

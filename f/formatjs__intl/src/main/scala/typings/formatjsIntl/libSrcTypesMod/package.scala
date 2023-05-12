@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
   * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
   * TS definition: {{{
-  @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.IntlConfig extends {  locale :string} ? @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.IntlConfig['locale'] : string
+  @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.IntlConfig extends {  locale :infer T} ? T extends string ? T : string : string
   }}}
   */
 type Locale = String
@@ -24,7 +24,7 @@ type Locale = String
   * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
   * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
   * TS definition: {{{
-  @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Message extends {  ids :string} ? @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Message['ids'] : string
+  @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Message extends {  ids :infer T} ? T extends string ? T : string : string
   }}}
   */
 type MessageIds = String

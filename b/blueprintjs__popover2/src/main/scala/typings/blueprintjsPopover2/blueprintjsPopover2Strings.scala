@@ -556,6 +556,10 @@ object blueprintjsPopover2Strings {
   inline def listbox: listbox = "listbox".asInstanceOf[listbox]
   
   @js.native
+  sealed trait listitem extends StObject
+  inline def listitem: listitem = "listitem".asInstanceOf[listitem]
+  
+  @js.native
   sealed trait listoption extends StObject
   inline def listoption: listoption = "listoption".asInstanceOf[listoption]
   

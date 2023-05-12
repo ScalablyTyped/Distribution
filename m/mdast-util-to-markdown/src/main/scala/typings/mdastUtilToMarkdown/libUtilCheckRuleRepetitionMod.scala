@@ -11,9 +11,9 @@ object libUtilCheckRuleRepetitionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def checkRuleRepetition(context: Context): Exclude[js.UndefOr[Double], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkRuleRepetition")(context.asInstanceOf[js.Any]).asInstanceOf[Exclude[js.UndefOr[Double], Unit]]
-  
-  type Context = typings.mdastUtilToMarkdown.libTypesMod.Context
+  inline def checkRuleRepetition(state: State): Exclude[js.UndefOr[Double | Null], js.UndefOr[Null]] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkRuleRepetition")(state.asInstanceOf[js.Any]).asInstanceOf[Exclude[js.UndefOr[Double | Null], js.UndefOr[Null]]]
   
   type Options = typings.mdastUtilToMarkdown.libTypesMod.Options
+  
+  type State = typings.mdastUtilToMarkdown.libTypesMod.State
 }

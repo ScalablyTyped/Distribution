@@ -136,6 +136,8 @@ object anon {
     
     var isNot: js.UndefOr[Boolean] = js.undefined
     
+    var numPassingAsserts: js.UndefOr[Double] = js.undefined
+    
     var promise: js.UndefOr[String] = js.undefined
     
     var suppressedErrors: js.UndefOr[js.Array[js.Error]] = js.undefined
@@ -189,6 +191,10 @@ object anon {
       inline def setIsNot(value: Boolean): Self = StObject.set(x, "isNot", value.asInstanceOf[js.Any])
       
       inline def setIsNotUndefined: Self = StObject.set(x, "isNot", js.undefined)
+      
+      inline def setNumPassingAsserts(value: Double): Self = StObject.set(x, "numPassingAsserts", value.asInstanceOf[js.Any])
+      
+      inline def setNumPassingAssertsUndefined: Self = StObject.set(x, "numPassingAsserts", js.undefined)
       
       inline def setPromise(value: String): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       
@@ -244,7 +250,7 @@ object anon {
     
     def highlightTrailingWhitespace(text: String): String = js.native
     
-    def iterableEquality(a: Any, b: Any): js.UndefOr[Boolean] = js.native
+    def iterableEquality(a: Any, b: Any, customTesters: js.Array[Tester]): js.UndefOr[Boolean] = js.native
     @JSName("iterableEquality")
     var iterableEquality_Original: Tester = js.native
     
@@ -282,7 +288,7 @@ object anon {
     def stringify(`object`: Any, maxDepth: Double, maxWidth: Double): String = js.native
     def stringify(`object`: Any, maxDepth: Unit, maxWidth: Double): String = js.native
     
-    def subsetEquality(a: Any, b: Any): js.UndefOr[Boolean] = js.native
+    def subsetEquality(a: Any, b: Any, customTesters: js.Array[Tester]): js.UndefOr[Boolean] = js.native
     @JSName("subsetEquality")
     var subsetEquality_Original: Tester = js.native
   }

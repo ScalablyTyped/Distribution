@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ModifyImageAttributeRequest extends StObject {
   
   /**
-    * The name of the attribute to modify. Valid values: description | launchPermission 
+    * The name of the attribute to modify. Valid values: description | imdsSupport | launchPermission 
     */
   var Attribute: js.UndefOr[String] = js.undefined
   
@@ -25,6 +25,11 @@ trait ModifyImageAttributeRequest extends StObject {
     * The ID of the AMI.
     */
   var ImageId: typings.awsSdk.clientsEc2Mod.ImageId
+  
+  /**
+    * Set to v2.0 to indicate that IMDSv2 is specified in the AMI. Instances launched from this AMI will have HttpTokens automatically set to required so that, by default, the instance requires that IMDSv2 is used when requesting instance metadata. In addition, HttpPutResponseHopLimit is set to 2. For more information, see Configure the AMI in the Amazon EC2 User Guide.  Do not use this parameter unless your AMI software supports IMDSv2. After you set the value to v2.0, you can't undo it. The only way to “reset” your AMI is to create a new AMI from the underlying snapshot. 
+    */
+  var ImdsSupport: js.UndefOr[AttributeValue] = js.undefined
   
   /**
     * A new launch permission for the AMI.
@@ -62,7 +67,7 @@ trait ModifyImageAttributeRequest extends StObject {
   var UserIds: js.UndefOr[UserIdStringList] = js.undefined
   
   /**
-    * The value of the attribute being modified. This parameter can be used only when the Attribute parameter is description.
+    * The value of the attribute being modified. This parameter can be used only when the Attribute parameter is description or imdsSupport.
     */
   var Value: js.UndefOr[String] = js.undefined
 }
@@ -89,6 +94,10 @@ object ModifyImageAttributeRequest {
     inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     inline def setImageId(value: ImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
+    
+    inline def setImdsSupport(value: AttributeValue): Self = StObject.set(x, "ImdsSupport", value.asInstanceOf[js.Any])
+    
+    inline def setImdsSupportUndefined: Self = StObject.set(x, "ImdsSupport", js.undefined)
     
     inline def setLaunchPermission(value: LaunchPermissionModifications): Self = StObject.set(x, "LaunchPermission", value.asInstanceOf[js.Any])
     

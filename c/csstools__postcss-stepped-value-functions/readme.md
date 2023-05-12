@@ -1,7 +1,7 @@
 
 # Scala.js typings for csstools__postcss-stepped-value-functions
 
-Typings are for version 1.0.1
+Typings are for version 2.1.1
 
 ## Library description:
 Use round, rem and mod functions in CSS

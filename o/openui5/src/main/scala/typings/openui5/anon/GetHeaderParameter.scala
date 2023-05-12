@@ -12,8 +12,9 @@ trait GetHeaderParameter extends StObject {
   var fileName: js.UndefOr[String] = js.undefined
   
   /**
-    * This callback function returns the corresponding header parameter (type sap.m.UploadCollectionParameter)
-    * if available.
+    * A function that returns the corresponding header parameter (type `sap.m.UploadCollectionParameter`) if
+    * available. The function accepts one optional parameter of type `string`, which is the name of the header
+    * parameter. If no parameter is provided all header parameters are returned.
     */
   var getHeaderParameter: js.UndefOr[js.Function] = js.undefined
 }

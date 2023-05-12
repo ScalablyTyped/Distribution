@@ -10,6 +10,11 @@ trait LoRaWANMulticastSession extends StObject {
   
   var DlFreq: js.UndefOr[typings.awsSdk.clientsIotwirelessMod.DlFreq] = js.undefined
   
+  /**
+    * The PingSlotPeriod value.
+    */
+  var PingSlotPeriod: js.UndefOr[typings.awsSdk.clientsIotwirelessMod.PingSlotPeriod] = js.undefined
+  
   var SessionStartTime: js.UndefOr[js.Date] = js.undefined
   
   var SessionTimeout: js.UndefOr[typings.awsSdk.clientsIotwirelessMod.SessionTimeout] = js.undefined
@@ -31,6 +36,10 @@ object LoRaWANMulticastSession {
     inline def setDlFreq(value: DlFreq): Self = StObject.set(x, "DlFreq", value.asInstanceOf[js.Any])
     
     inline def setDlFreqUndefined: Self = StObject.set(x, "DlFreq", js.undefined)
+    
+    inline def setPingSlotPeriod(value: PingSlotPeriod): Self = StObject.set(x, "PingSlotPeriod", value.asInstanceOf[js.Any])
+    
+    inline def setPingSlotPeriodUndefined: Self = StObject.set(x, "PingSlotPeriod", js.undefined)
     
     inline def setSessionStartTime(value: js.Date): Self = StObject.set(x, "SessionStartTime", value.asInstanceOf[js.Any])
     

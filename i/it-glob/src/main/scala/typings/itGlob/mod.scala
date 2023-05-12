@@ -1,74 +1,48 @@
 package typings.itGlob
 
-import typings.minimatch.mod.IOptions
-import typings.std.AsyncIterable
+import typings.minimatch.mod.MinimatchOptions
+import typings.std.AsyncGenerator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  /**
-    * @typedef {string} Glob
-    * @typedef {object} OptionsExt
-    * @property {string} [cwd=process.cwd()]
-    * @property {boolean} [absolute=false] - If true produces absolute paths
-    * @property {boolean} [nodir] - If true yields file paths and skip directories
-    *
-    * @typedef {OptionsExt & minimatch.IOptions} Options
-    */
-  /**
-    * Async iterable filename pattern matcher
-    *
-    * @param {string} dir
-    * @param {string} pattern
-    * @param {Options} [options]
-    * @returns {AsyncIterable<string>}
-    */
-  inline def apply(dir: String, pattern: String): AsyncIterable[String] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[String]]
-  inline def apply(dir: String, pattern: String, options: Options): AsyncIterable[String] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[String]]
-  
   @JSImport("it-glob", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  type Glob = String
+  inline def default(dir: String, pattern: String): AsyncGenerator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(dir.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[String, Unit, Unit]]
+  inline def default(dir: String, pattern: String, options: GlobOptions): AsyncGenerator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(dir.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[String, Unit, Unit]]
   
-  trait Options
+  trait GlobOptions
     extends StObject
-       with OptionsExt
-       with IOptions
-  object Options {
-    
-    inline def apply(): Options = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Options]
-    }
-  }
-  
-  trait OptionsExt extends StObject {
+       with MinimatchOptions {
     
     /**
-      * - If true produces absolute paths
+      * If true produces absolute paths (default: false)
       */
     var absolute: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * The current working directory
+      */
     var cwd: js.UndefOr[String] = js.undefined
     
     /**
-      * - If true yields file paths and skip directories
+      * If true yields file paths and skip directories (default: false)
       */
     var nodir: js.UndefOr[Boolean] = js.undefined
   }
-  object OptionsExt {
+  object GlobOptions {
     
-    inline def apply(): OptionsExt = {
+    inline def apply(): GlobOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[OptionsExt]
+      __obj.asInstanceOf[GlobOptions]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: OptionsExt] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: GlobOptions] (val x: Self) extends AnyVal {
       
       inline def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
       

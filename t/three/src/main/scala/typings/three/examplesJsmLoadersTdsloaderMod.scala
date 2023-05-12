@@ -4,6 +4,7 @@ import typings.std.ErrorEvent
 import typings.std.EventTarget
 import typings.std.ProgressEvent
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcThreeMod.Color
 import typings.three.srcThreeMod.Group
 import typings.three.srcThreeMod.Loader
@@ -49,6 +50,9 @@ object examplesJsmLoadersTdsloaderMod {
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): Unit = js.native
     
+    def loadAsync(url: String): js.Promise[Group] = js.native
+    def loadAsync(url: String, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[Group] = js.native
+    
     @JSName("manager")
     var manager_TDSLoader: LoadingManager = js.native
     
@@ -56,7 +60,7 @@ object examplesJsmLoadersTdsloaderMod {
     
     var meshes: js.Array[
         Mesh[
-          BufferGeometry, 
+          BufferGeometry[NormalBufferAttributes], 
           typings.three.srcMaterialsMaterialMod.Material | js.Array[typings.three.srcMaterialsMaterialMod.Material]
         ]
       ] = js.native
@@ -78,7 +82,7 @@ object examplesJsmLoadersTdsloaderMod {
     def readFaceArray(
       data: js.typedarray.DataView,
       mesh: Mesh[
-          BufferGeometry, 
+          BufferGeometry[NormalBufferAttributes], 
           typings.three.srcMaterialsMaterialMod.Material | js.Array[typings.three.srcMaterialsMaterialMod.Material]
         ]
     ): Unit = js.native
@@ -96,7 +100,7 @@ object examplesJsmLoadersTdsloaderMod {
     def readMaterialGroup(data: js.typedarray.DataView): js.Object = js.native
     
     def readMesh(data: js.typedarray.DataView): Mesh[
-        BufferGeometry, 
+        BufferGeometry[NormalBufferAttributes], 
         typings.three.srcMaterialsMaterialMod.Material | js.Array[typings.three.srcMaterialsMaterialMod.Material]
       ] = js.native
     

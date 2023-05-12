@@ -102,8 +102,7 @@ object mod {
     }
   }
   
-  /* Inlined parent std.Readonly<globby.globby.Options> */
-  /* Inlined parent cp-file.cp-file.Options */
+  /* Inlined { readonly cwd :string | undefined,  readonly flat :boolean | undefined,  readonly rename :string | (basename : string): string | undefined,  readonly concurrency :number | undefined,  readonly ignoreJunk :boolean | undefined,  readonly filter :(file : cpy.cpy.Entry): boolean | std.Promise<boolean> | undefined} & std.Readonly<globby.globby.Options> & cp-file.cp-file.Options */
   trait Options extends StObject {
     
     val absolute: js.UndefOr[Boolean] = js.undefined
@@ -122,6 +121,11 @@ object mod {
     
     /**
     	Working directory to find source files.
+    	@default process.cwd()
+    	*/
+    /**
+    	The working directory to find source files.
+    	The source and destination path are relative to this.
     	@default process.cwd()
     	*/
     val cwd: js.UndefOr[String] = js.undefined
@@ -199,6 +203,7 @@ object mod {
     	```
     	import cpy from 'cpy';
     	await cpy('foo.js', 'destination', {
+    		// The `basename` is the filename with extension.
     		rename: basename => `prefix-${basename}`
     	});
     	await cpy('foo.js', 'destination', {
@@ -369,9 +374,19 @@ object mod {
     var completedSize: Double
     
     /**
+    	The absolute destination path of the current file being copied.
+    	*/
+    var destinationPath: String
+    
+    /**
     	Completed percentage. A value between `0` and `1`.
     	*/
     var percent: Double
+    
+    /**
+    	The absolute source path of the current file being copied.
+    	*/
+    var sourcePath: String
     
     /**
     	Overall file count.
@@ -380,8 +395,15 @@ object mod {
   }
   object ProgressData {
     
-    inline def apply(completedFiles: Double, completedSize: Double, percent: Double, totalFiles: Double): ProgressData = {
-      val __obj = js.Dynamic.literal(completedFiles = completedFiles.asInstanceOf[js.Any], completedSize = completedSize.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], totalFiles = totalFiles.asInstanceOf[js.Any])
+    inline def apply(
+      completedFiles: Double,
+      completedSize: Double,
+      destinationPath: String,
+      percent: Double,
+      sourcePath: String,
+      totalFiles: Double
+    ): ProgressData = {
+      val __obj = js.Dynamic.literal(completedFiles = completedFiles.asInstanceOf[js.Any], completedSize = completedSize.asInstanceOf[js.Any], destinationPath = destinationPath.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], sourcePath = sourcePath.asInstanceOf[js.Any], totalFiles = totalFiles.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProgressData]
     }
     
@@ -392,7 +414,11 @@ object mod {
       
       inline def setCompletedSize(value: Double): Self = StObject.set(x, "completedSize", value.asInstanceOf[js.Any])
       
+      inline def setDestinationPath(value: String): Self = StObject.set(x, "destinationPath", value.asInstanceOf[js.Any])
+      
       inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+      
+      inline def setSourcePath(value: String): Self = StObject.set(x, "sourcePath", value.asInstanceOf[js.Any])
       
       inline def setTotalFiles(value: Double): Self = StObject.set(x, "totalFiles", value.asInstanceOf[js.Any])
     }

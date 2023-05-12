@@ -16,7 +16,7 @@ object libIconsCompassOutlinedMod extends Shortcut {
   @js.native
   trait CompassOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_CompassOutlinedIconType: String = js.native

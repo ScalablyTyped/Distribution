@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@fullcalendar/vue" : "5.11.2"
+      "@fullcalendar/vue" : "6.1.7"
     }
   ],
   "test-dependencies" : [
     {
-      "@fullcalendar/vue" : "5.11.2"
+      "@fullcalendar/vue" : "6.1.7"
     }
   ],
   "compile-devDependencies" : [

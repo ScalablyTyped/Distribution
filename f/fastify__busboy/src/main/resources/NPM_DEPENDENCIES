@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@fastify/busboy" : "1.1.0"
+      "@fastify/busboy" : "1.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@fastify/busboy" : "1.1.0"
+      "@fastify/busboy" : "1.2.1"
     }
   ],
   "compile-devDependencies" : [

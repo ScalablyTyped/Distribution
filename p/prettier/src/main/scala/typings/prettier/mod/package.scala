@@ -93,6 +93,8 @@ type MapCallback[T, U] = js.Function3[/* path */ AstPath[ArrayElement[T]], /* in
 /* Rewritten from type alias, can be one of: 
   - typings.prettier.mod.IntSupportOption
   - typings.prettier.mod.IntArraySupportOption
+  - typings.prettier.mod.StringSupportOption
+  - typings.prettier.mod.StringArraySupportOption
   - typings.prettier.mod.BooleanSupportOption
   - typings.prettier.mod.BooleanArraySupportOption
   - typings.prettier.mod.ChoiceSupportOption[scala.Any]

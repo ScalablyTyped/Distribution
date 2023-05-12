@@ -1,5 +1,6 @@
 package typings.primereact
 
+import typings.primereact.primereactStrings._empty
 import typings.primereact.primereactStrings.`additions removals`
 import typings.primereact.primereactStrings.`additions text`
 import typings.primereact.primereactStrings.`inline`
@@ -7,8 +8,10 @@ import typings.primereact.primereactStrings.`removals additions`
 import typings.primereact.primereactStrings.`removals text`
 import typings.primereact.primereactStrings.`text additions`
 import typings.primereact.primereactStrings.`text removals`
+import typings.primereact.primereactStrings.`use-credentials`
 import typings.primereact.primereactStrings.additions
 import typings.primereact.primereactStrings.all
+import typings.primereact.primereactStrings.anonymous
 import typings.primereact.primereactStrings.ascending
 import typings.primereact.primereactStrings.assertive
 import typings.primereact.primereactStrings.both
@@ -69,7 +72,6 @@ import typings.react.mod.ChangeEvent
 import typings.react.mod.ChangeEventHandler
 import typings.react.mod.ClipboardEvent
 import typings.react.mod.ClipboardEventHandler
-import typings.react.mod.Component
 import typings.react.mod.CompositionEvent
 import typings.react.mod.CompositionEventHandler
 import typings.react.mod.DragEvent
@@ -78,6 +80,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.HTMLInputTypeAttribute
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
@@ -90,6 +93,7 @@ import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
+import typings.react.mod.RefAttributes
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -101,6 +105,7 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -110,16 +115,9 @@ object inputtextInputtextMod {
   
   @JSImport("primereact/inputtext/inputtext", "InputText")
   @js.native
-  open class InputText protected () extends Component[InputTextProps, Any, Any] {
-    def this(props: InputTextProps) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: InputTextProps, context: Any) = this()
-  }
+  val InputText: ForwardRefExoticComponent[InputTextProps & RefAttributes[HTMLInputElement]] = js.native
   
-  /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLInputElement>, std.HTMLInputElement>, 'onInput' | 'ref'> */
+  /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLInputElement>, std.HTMLInputElement>, 'onInput' | 'ref' | 'value'> */
   trait InputTextProps extends StObject {
     
     var about: js.UndefOr[String] = js.undefined
@@ -242,17 +240,23 @@ object inputtextInputtextMod {
     
     var checked: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
     
+    var content: js.UndefOr[String] = js.undefined
+    
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
@@ -272,7 +276,7 @@ object inputtextInputtextMod {
     
     var form: js.UndefOr[String] = js.undefined
     
-    var formAction: js.UndefOr[String] = js.undefined
+    var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     var formEncType: js.UndefOr[String] = js.undefined
     
@@ -306,6 +310,9 @@ object inputtextInputtextMod {
     
     var key: js.UndefOr[Key | Null] = js.undefined
     
+    /**
+      * Format definition of the keys to block.
+      */
     var keyfilter: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KeyFilterType */ Any
       ] = js.undefined
@@ -392,6 +399,11 @@ object inputtextInputtextMod {
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
+    /**
+      * Callback to invoke while typing value on input
+      * @param {React.FormEvent<HTMLInputElement>} event - Browser event
+      * @param {boolean} validatePattern - Whether to validate the value
+      */
     var onInput: js.UndefOr[
         js.Function2[/* event */ FormEvent[HTMLInputElement], /* validatePattern */ Boolean, Unit]
       ] = js.undefined
@@ -502,11 +514,15 @@ object inputtextInputtextMod {
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var required: js.UndefOr[Boolean] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -532,8 +548,15 @@ object inputtextInputtextMod {
     
     var title: js.UndefOr[String] = js.undefined
     
+    /**
+      * Content of the tooltip.
+      */
     var tooltip: js.UndefOr[String] = js.undefined
     
+    /**
+      * Configuration of the tooltip, refer to the tooltip documentation for more information.
+      * @type {TooltipOptions}
+      */
     var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
     
     var translate: js.UndefOr[yes | no] = js.undefined
@@ -544,9 +567,16 @@ object inputtextInputtextMod {
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
+    /**
+      * When enabled, instead of blocking keys, input is validated internally to test against the regular expression.
+      * @defaultValue false
+      */
     var validateOnly: js.UndefOr[Boolean] = js.undefined
     
-    var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
+    /**
+      * The value of component
+      */
+    var value: js.UndefOr[String] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
     
@@ -812,15 +842,19 @@ object inputtextInputtextMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -860,7 +894,9 @@ object inputtextInputtextMod {
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      
+      inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
       
       inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
@@ -1318,6 +1354,10 @@ object inputtextInputtextMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -1329,6 +1369,10 @@ object inputtextInputtextMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1406,11 +1450,9 @@ object inputtextInputtextMod {
       
       inline def setValidateOnlyUndefined: Self = StObject.set(x, "validateOnly", js.undefined)
       
-      inline def setValue(value: String | js.Array[String] | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
-      
-      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
       
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       

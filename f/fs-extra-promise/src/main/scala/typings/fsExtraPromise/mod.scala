@@ -1,52 +1,64 @@
 package typings.fsExtraPromise
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.fsExtra.anon.BufferBigInt64Array
-import typings.fsExtra.anon.BufferBigInt64ArrayBytesWrittenNumber
-import typings.fsExtra.anon.BufferBigUint64Array
-import typings.fsExtra.anon.BufferBigUint64ArrayBytesWrittenNumber
-import typings.fsExtra.anon.BufferBytesRead
-import typings.fsExtra.anon.BufferBytesWritten
-import typings.fsExtra.anon.BufferDataView
-import typings.fsExtra.anon.BufferDataViewBytesWrittenNumber
-import typings.fsExtra.anon.BufferFloat32Array
-import typings.fsExtra.anon.BufferFloat32ArrayBytesWrittenNumber
-import typings.fsExtra.anon.BufferFloat64Array
-import typings.fsExtra.anon.BufferFloat64ArrayBytesWrittenNumber
-import typings.fsExtra.anon.BufferInt16Array
-import typings.fsExtra.anon.BufferInt16ArrayBytesWrittenNumber
-import typings.fsExtra.anon.BufferInt32Array
-import typings.fsExtra.anon.BufferInt32ArrayBytesWrittenNumber
-import typings.fsExtra.anon.BufferInt8Array
-import typings.fsExtra.anon.BufferInt8ArrayBytesWrittenNumber
-import typings.fsExtra.anon.BufferString
-import typings.fsExtra.anon.BufferUint16Array
-import typings.fsExtra.anon.BufferUint32Array
-import typings.fsExtra.anon.BytesRead
-import typings.fsExtra.anon.BytesWritten
-import typings.fsExtra.anon.BytesWrittenNumber
-import typings.fsExtra.anon.Encoding
-import typings.fsExtra.anon.EncodingFlag
-import typings.fsExtra.anon.EncodingWithFileTypes
-import typings.fsExtra.anon.Flag
-import typings.fsExtra.anon.Force
-import typings.fsExtra.anon.WithFileTypes
-import typings.fsExtra.anon.`0`
-import typings.fsExtra.anon.`1`
-import typings.fsExtra.anon.`2`
-import typings.fsExtra.anon.`3`
+import typings.fsExtra.anon.Native
+import typings.fsExtra.anon.Typeofaccess
+import typings.fsExtra.anon.TypeofappendFile
+import typings.fsExtra.anon.Typeofchmod
+import typings.fsExtra.anon.Typeofchown
+import typings.fsExtra.anon.Typeofclose
+import typings.fsExtra.anon.TypeofcopyFile
+import typings.fsExtra.anon.Typeofexists
+import typings.fsExtra.anon.Typeoffchmod
+import typings.fsExtra.anon.Typeoffchown
+import typings.fsExtra.anon.Typeoffdatasync
+import typings.fsExtra.anon.Typeoffstat
+import typings.fsExtra.anon.Typeoffsync
+import typings.fsExtra.anon.Typeofftruncate
+import typings.fsExtra.anon.Typeoffutimes
+import typings.fsExtra.anon.Typeoflchmod
+import typings.fsExtra.anon.Typeoflchown
+import typings.fsExtra.anon.Typeoflink
+import typings.fsExtra.anon.Typeoflstat
+import typings.fsExtra.anon.Typeofmkdir
+import typings.fsExtra.anon.Typeofmkdtemp
+import typings.fsExtra.anon.Typeofopen
+import typings.fsExtra.anon.Typeofopendir
+import typings.fsExtra.anon.Typeofread
+import typings.fsExtra.anon.TypeofreadFile
+import typings.fsExtra.anon.Typeofreaddir
+import typings.fsExtra.anon.Typeofreadlink
+import typings.fsExtra.anon.Typeofreadv
+import typings.fsExtra.anon.Typeofrealpath
+import typings.fsExtra.anon.Typeofrename
+import typings.fsExtra.anon.Typeofrm
+import typings.fsExtra.anon.Typeofrmdir
+import typings.fsExtra.anon.Typeofstat
+import typings.fsExtra.anon.Typeofsymlink
+import typings.fsExtra.anon.Typeoftruncate
+import typings.fsExtra.anon.Typeofunlink
+import typings.fsExtra.anon.Typeofutimes
+import typings.fsExtra.anon.Typeofwrite
+import typings.fsExtra.anon.TypeofwriteFile
+import typings.fsExtra.anon.Typeofwritev
 import typings.fsExtra.mod.CopyOptions
 import typings.fsExtra.mod.CopyOptionsSync
-import typings.fsExtra.mod.EnsureOptions
-import typings.fsExtra.mod.Mode
+import typings.fsExtra.mod.EnsureDirOptions
+import typings.fsExtra.mod.JsonOutputOptions
 import typings.fsExtra.mod.MoveOptions
-import typings.fsExtra.mod.ReadOptions
+import typings.fsExtra.mod.NoParamCallbackWithUndefined
 import typings.fsExtra.mod.SymlinkType
-import typings.fsExtra.mod.WriteOptions
-import typings.fsExtra.mod.WritevResult
+import typings.fsExtraPromise.anon.Encoding
 import typings.fsExtraPromise.fsExtraPromiseStrings.buffer
+import typings.jsonfile.mod.JFReadOptions
+import typings.jsonfile.mod.JFWriteOptions
+import typings.jsonfile.mod.Path
+import typings.jsonfile.mod.ReadCallback
+import typings.jsonfile.mod.WriteCallback
 import typings.node.NodeJS.ArrayBufferView
 import typings.node.NodeJS.ErrnoException
+import typings.node.anon.EncodingFlag
+import typings.node.anon.Flag
 import typings.node.anon.MakeDirectoryOptionsrecur
 import typings.node.anon.MakeDirectoryOptionsrecurMode
 import typings.node.anon.ObjectEncodingOptionsAbor
@@ -54,6 +66,9 @@ import typings.node.anon.ObjectEncodingOptionsflagEncoding
 import typings.node.anon.ObjectEncodingOptionsmode
 import typings.node.anon.ObjectEncodingOptionswith
 import typings.node.anon.ObjectEncodingOptionswithEncoding
+import typings.node.anon.Recursive
+import typings.node.anon.StatFsOptionsbigintfalseu
+import typings.node.anon.StatFsOptionsbiginttrue
 import typings.node.anon.StatOptionsbigintfalseund
 import typings.node.anon.StatOptionsbiginttrue
 import typings.node.anon.WatchFileOptionsbigintfal
@@ -64,11 +79,14 @@ import typings.node.anon.encodingnullundefinedflag
 import typings.node.bufferMod.global.Buffer
 import typings.node.bufferMod.global.BufferEncoding
 import typings.node.fsMod.BigIntStats
+import typings.node.fsMod.BigIntStatsFs
+import typings.node.fsMod.BigIntStatsListener
 import typings.node.fsMod.BufferEncodingOption
 import typings.node.fsMod.CopySyncOptions
 import typings.node.fsMod.EncodingOption
 import typings.node.fsMod.FSWatcher
 import typings.node.fsMod.MakeDirectoryOptions
+import typings.node.fsMod.Mode
 import typings.node.fsMod.NoParamCallback
 import typings.node.fsMod.ObjectEncodingOptions
 import typings.node.fsMod.OpenDirOptions
@@ -80,9 +98,11 @@ import typings.node.fsMod.ReadStreamOptions
 import typings.node.fsMod.ReadSyncOptions
 import typings.node.fsMod.RmDirOptions
 import typings.node.fsMod.RmOptions
+import typings.node.fsMod.StatFsOptions
 import typings.node.fsMod.StatOptions
 import typings.node.fsMod.StatSyncFn
 import typings.node.fsMod.StatWatcher
+import typings.node.fsMod.StatsListener
 import typings.node.fsMod.StreamOptions
 import typings.node.fsMod.TimeLike
 import typings.node.fsMod.WatchListener
@@ -97,8 +117,6 @@ import typings.node.nodeColonurlMod.URL
 import typings.node.streamMod.ReadableOptions
 import typings.node.streamMod.WritableOptions
 import typings.std.AsyncIterable
-import typings.std.BigInt64Array
-import typings.std.BigUint64Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -131,6 +149,11 @@ object mod {
   open class Stats ()
     extends typings.fsExtra.mod.Stats
   
+  @JSImport("fs-extra-promise", "StatsFs")
+  @js.native
+  open class StatsFs ()
+    extends typings.fsExtra.mod.StatsFs
+  
   @JSImport("fs-extra-promise", "WriteStream")
   @js.native
   open class WriteStream ()
@@ -138,58 +161,50 @@ object mod {
     def this(opts: WritableOptions) = this()
   }
   
-  inline def access(path: PathLike): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("access")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def access(path: PathLike, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("access")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def access(path: PathLike, mode: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("access")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def access(path: PathLike, mode: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("access")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "access")
+  @js.native
+  val access: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.access.__promisify__ */ Any) & Typeofaccess = js.native
   
   inline def accessSync(path: PathLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("accessSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def accessSync(path: PathLike, mode: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("accessSync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def appendFile(file: Double, data: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def appendFile(file: Double, data: Any, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def appendFile(file: Double, data: Any, options: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def appendFile(file: Double, data: Any, options: Encoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def appendFile(file: Double, data: Any, options: Encoding, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def appendFile(file: Double, data: Any, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def appendFile(file: PathLike, data: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def appendFile(file: PathLike, data: Any, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def appendFile(file: PathLike, data: Any, options: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def appendFile(file: PathLike, data: Any, options: Encoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def appendFile(
-    file: PathLike,
-    data: Any,
-    options: Encoding,
-    callback: js.Function1[/* err */ ErrnoException, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def appendFile(file: PathLike, data: Any, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @JSImport("fs-extra-promise", "appendFile")
+  @js.native
+  val appendFile: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.appendFile.__promisify__ */ Any) & TypeofappendFile = js.native
   
   inline def appendFileAsync(filename: String, data: Any): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileAsync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   inline def appendFileAsync(filename: String, data: Any, option: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileAsync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
-  inline def appendFileAsync(filename: String, data: Any, option: WriteOptions): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileAsync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  inline def appendFileAsync(
+    filename: String,
+    data: Any,
+    option: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WriteOptions */ Any
+  ): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileAsync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
   inline def appendFileSync(path: PathOrFileDescriptor, data: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def appendFileSync(path: PathOrFileDescriptor, data: String, options: WriteFileOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def appendFileSync(path: PathOrFileDescriptor, data: js.typedarray.Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def appendFileSync(path: PathOrFileDescriptor, data: js.typedarray.Uint8Array, options: WriteFileOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def chmod(path: PathLike, mode: Mode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("chmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def chmod(path: PathLike, mode: Mode, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "chmod")
+  @js.native
+  val chmod: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.chmod.__promisify__ */ Any) & Typeofchmod = js.native
   
   inline def chmodAsync(path: String, mode: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("chmodAsync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   inline def chmodAsync(path: String, mode: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("chmodAsync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  inline def chmodSync(path: PathLike, mode: typings.node.fsMod.Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chmodSync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def chmodSync(path: PathLike, mode: Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chmodSync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def chown(path: PathLike, uid: Double, gid: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("chown")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def chown(path: PathLike, uid: Double, gid: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chown")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "chown")
+  @js.native
+  val chown: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.chown.__promisify__ */ Any) & Typeofchown = js.native
   
   inline def chownAsync(path: String, uid: Double, gid: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("chownAsync")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
   inline def chownSync(path: PathLike, uid: Double, gid: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chownSync")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def close(fd: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(fd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def close(fd: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("close")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "close")
+  @js.native
+  val close: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.close.__promisify__ */ Any) & Typeofclose = js.native
   
   inline def closeAsync(fd: Double): typings.bluebird.mod.^[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("closeAsync")(fd.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
@@ -443,9 +458,9 @@ object mod {
   }
   
   inline def copy(src: String, dest: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def copy(src: String, dest: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def copy(src: String, dest: String, callback: NoParamCallbackWithUndefined): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def copy(src: String, dest: String, options: CopyOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def copy(src: String, dest: String, options: CopyOptions, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def copy(src: String, dest: String, options: CopyOptions, callback: NoParamCallbackWithUndefined): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def copyAsync(src: String, dest: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyAsync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   inline def copyAsync(
@@ -455,10 +470,9 @@ object mod {
   ): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyAsync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   inline def copyAsync(src: String, dest: String, options: CopyOptions): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyAsync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  inline def copyFile(src: String, dest: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def copyFile(src: String, dest: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def copyFile(src: String, dest: String, flags: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def copyFile(src: String, dest: String, flags: Double, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "copyFile")
+  @js.native
+  val copyFile: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.copyFile.__promisify__ */ Any) & TypeofcopyFile = js.native
   
   inline def copyFileSync(src: PathLike, dest: PathLike): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFileSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def copyFileSync(src: PathLike, dest: PathLike, mode: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFileSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -505,14 +519,16 @@ object mod {
   inline def cpSync(source: URL, destination: URL, opts: CopySyncOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cpSync")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def createFile(file: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFile")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def createFile(file: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createFile")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createFile(file: String, callback: NoParamCallbackWithUndefined): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createFile")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def createFileAsync(file: String): typings.bluebird.mod.^[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFileAsync")(file.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  inline def createFileSync(file: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createFileSync")(file.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "createFileSync")
+  @js.native
+  val createFileSync: js.Function1[/* file */ String, Unit] = js.native
   
   inline def createLink(src: String, dest: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def createLink(src: String, dest: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createLink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createLink(src: String, dest: String, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createLink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("fs-extra-promise", "createLinkSync")
   @js.native
@@ -522,12 +538,14 @@ object mod {
   inline def createReadStream(path: PathLike, options: BufferEncoding): typings.node.fsMod.ReadStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createReadStream")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.ReadStream]
   inline def createReadStream(path: PathLike, options: ReadStreamOptions): typings.node.fsMod.ReadStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createReadStream")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.ReadStream]
   
-  inline def createSymlink(src: String, dest: String, `type`: SymlinkType): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def createSymlink(src: String, dest: String, `type`: SymlinkType, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createSymlink(src: String, dest: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def createSymlink(src: String, dest: String, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createSymlink(src: String, dest: String, `type`: SymlinkType): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def createSymlink(src: String, dest: String, `type`: SymlinkType, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def createSymlinkSync(src: String, dest: String, `type`: SymlinkType): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createSymlinkSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def createSymlink_Promise(src: String, dest: String, `type`: SymlinkType): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @JSImport("fs-extra-promise", "createSymlinkSync")
+  @js.native
+  val createSymlinkSync: js.Function3[/* src */ String, /* dest */ String, /* type */ js.UndefOr[SymlinkType], Unit] = js.native
   
   inline def createWriteStream(path: PathLike): typings.node.fsMod.WriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")(path.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.WriteStream]
   inline def createWriteStream(path: PathLike, options: BufferEncoding): typings.node.fsMod.WriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.WriteStream]
@@ -536,82 +554,80 @@ object mod {
   inline def emptyDirSync_(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyDirSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def emptyDir_(path: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyDir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def emptyDir_(path: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("emptyDir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def emptyDir_(path: String, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("emptyDir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def emptydir(path: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("emptydir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def emptydir(path: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("emptydir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def emptydir(path: String, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("emptydir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("fs-extra-promise", "emptydirSync")
   @js.native
   val emptydirSync: js.Function1[/* path */ String, Unit] = js.native
   
-  inline def ensureDir(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def ensureDir(path: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def ensureDir(path: String, options: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def ensureDir(path: String, options: Double, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def ensureDir(path: String, options: Unit, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def ensureDir(path: String, options: EnsureOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def ensureDir(path: String, options: EnsureOptions, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ensureDir(path: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def ensureDir(path: String, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ensureDir(path: String, options: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def ensureDir(path: String, options: Double, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ensureDir(path: String, options: EnsureDirOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def ensureDir(path: String, options: EnsureDirOptions, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def ensureDirAsync(path: String): typings.bluebird.mod.^[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureDirAsync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
   inline def ensureDirSync(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureDirSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def ensureDirSync(path: String, options: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def ensureDirSync(path: String, options: EnsureOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ensureDirSync(path: String, options: EnsureDirOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def ensureDir_Promise(path: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def ensureDir_Promise(path: String, options: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def ensureDir_Promise(path: String, options: EnsureOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def ensureFile(file: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureFile")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def ensureFile(file: String, callback: NoParamCallbackWithUndefined): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureFile")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def ensureFile(path: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureFile")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def ensureFile(path: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureFile")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def ensureFileSync(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureFileSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def ensureFileSync(file: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureFileSync")(file.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def ensureLink(src: String, dest: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureLink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def ensureLink(src: String, dest: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureLink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ensureLink(src: String, dest: String, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureLink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def ensureLinkSync(src: String, dest: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureLinkSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def ensureSymlink(src: String, dest: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def ensureSymlink(src: String, dest: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ensureSymlink(src: String, dest: String, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def ensureSymlink(src: String, dest: String, `type`: SymlinkType): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def ensureSymlink(src: String, dest: String, `type`: SymlinkType, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ensureSymlink(src: String, dest: String, `type`: SymlinkType, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def ensureSymlinkSync(src: String, dest: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureSymlinkSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def ensureSymlinkSync(src: String, dest: String, `type`: SymlinkType): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureSymlinkSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def exists(path: PathLike, callback: js.Function1[/* exists */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exists")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "exists")
+  @js.native
+  val exists: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.exists.__promisify__ */ Any) & Typeofexists = js.native
   
   inline def existsAsync(path: String): typings.bluebird.mod.^[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("existsAsync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Boolean]]
   
   inline def existsSync(path: PathLike): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("existsSync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def fchmod(fd: Double, mode: Mode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("fchmod")(fd.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def fchmod(fd: Double, mode: Mode, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fchmod")(fd.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "fchmod")
+  @js.native
+  val fchmod: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.fchmod.__promisify__ */ Any) & Typeoffchmod = js.native
   
   inline def fchmodAsync(fd: Double, mode: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("fchmodAsync")(fd.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   inline def fchmodAsync(fd: Double, mode: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("fchmodAsync")(fd.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  inline def fchmodSync(fd: Double, mode: typings.node.fsMod.Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fchmodSync")(fd.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fchmodSync(fd: Double, mode: Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fchmodSync")(fd.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def fchown(fd: Double, uid: Double, gid: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("fchown")(fd.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def fchown(fd: Double, uid: Double, gid: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fchown")(fd.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "fchown")
+  @js.native
+  val fchown: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.fchown.__promisify__ */ Any) & Typeoffchown = js.native
   
   inline def fchownAsync(fd: Double, uid: Double, gid: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("fchownAsync")(fd.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
   inline def fchownSync(fd: Double, uid: Double, gid: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fchownSync")(fd.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def fdatasync(fd: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("fdatasync")(fd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def fdatasync(fd: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fdatasync")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "fdatasync")
+  @js.native
+  val fdatasync: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.fdatasync.__promisify__ */ Any) & Typeoffdatasync = js.native
   
   inline def fdatasyncSync(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fdatasyncSync")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def fstat(fd: Double): js.Promise[typings.node.fsMod.Stats] = ^.asInstanceOf[js.Dynamic].applyDynamic("fstat")(fd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.node.fsMod.Stats]]
-  inline def fstat(
-    fd: Double,
-    callback: js.Function2[/* err */ ErrnoException, /* stats */ typings.node.fsMod.Stats, Any]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fstat")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "fstat")
+  @js.native
+  val fstat: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.fstat.__promisify__ */ Any) & Typeoffstat = js.native
   
   inline def fstatAsync(fd: Double): typings.bluebird.mod.^[typings.node.fsMod.Stats] = ^.asInstanceOf[js.Dynamic].applyDynamic("fstatAsync")(fd.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[typings.node.fsMod.Stats]]
   
@@ -622,25 +638,24 @@ object mod {
   
   inline def fstatSync_Stats(fd: Double): typings.node.fsMod.Stats = ^.asInstanceOf[js.Dynamic].applyDynamic("fstatSync")(fd.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.Stats]
   
-  inline def fsync(fd: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("fsync")(fd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def fsync(fd: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fsync")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "fsync")
+  @js.native
+  val fsync: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.fsync.__promisify__ */ Any) & Typeoffsync = js.native
   
   inline def fsyncAsync(fd: Double): typings.bluebird.mod.^[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("fsyncAsync")(fd.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
   inline def fsyncSync(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fsyncSync")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def ftruncate(fd: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("ftruncate")(fd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def ftruncate(fd: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ftruncate")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def ftruncate(fd: Double, len: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("ftruncate")(fd.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def ftruncate(fd: Double, len: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ftruncate")(fd.asInstanceOf[js.Any], len.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "ftruncate")
+  @js.native
+  val ftruncate: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.ftruncate.__promisify__ */ Any) & Typeofftruncate = js.native
   
   inline def ftruncateSync(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ftruncateSync")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def ftruncateSync(fd: Double, len: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ftruncateSync")(fd.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def futimes(fd: Double, atime: js.Date, mtime: js.Date): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def futimes(fd: Double, atime: js.Date, mtime: js.Date, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def futimes(fd: Double, atime: Double, mtime: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def futimes(fd: Double, atime: Double, mtime: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "futimes")
+  @js.native
+  val futimes: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.futimes.__promisify__ */ Any) & Typeoffutimes = js.native
   
   inline def futimesAsync(fd: Double, atime: Double, mtime: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("futimesAsync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
@@ -653,32 +668,34 @@ object mod {
   
   inline def isDirectorySync(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDirectorySync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def lchmod(path: PathLike, mode: typings.node.fsMod.Mode, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lchmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "lchmod")
+  @js.native
+  val lchmod: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.lchmod.__promisify__ */ Any) & Typeoflchmod = js.native
   
   inline def lchmodAsync(path: String, mode: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lchmodAsync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   inline def lchmodAsync(path: String, mode: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lchmodAsync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  inline def lchmodSync(path: PathLike, mode: typings.node.fsMod.Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lchmodSync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def lchmodSync(path: PathLike, mode: Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lchmodSync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def lchown(path: PathLike, uid: Double, gid: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lchown")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def lchown(path: PathLike, uid: Double, gid: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lchown")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "lchown")
+  @js.native
+  val lchown: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.lchown.__promisify__ */ Any) & Typeoflchown = js.native
   
   inline def lchownAsync(path: String, uid: Double, gid: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lchownAsync")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
   inline def lchownSync(path: PathLike, uid: Double, gid: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lchownSync")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def link(existingPath: PathLike, newPath: PathLike): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(existingPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def link(existingPath: PathLike, newPath: PathLike, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(existingPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "link")
+  @js.native
+  val link: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.link.__promisify__ */ Any) & Typeoflink = js.native
   
   inline def linkAsync(srcpath: String, dstpath: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("linkAsync")(srcpath.asInstanceOf[js.Any], dstpath.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
   inline def linkSync(existingPath: PathLike, newPath: PathLike): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("linkSync")(existingPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def lstat(path: PathLike): js.Promise[typings.node.fsMod.Stats] = ^.asInstanceOf[js.Dynamic].applyDynamic("lstat")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.node.fsMod.Stats]]
-  inline def lstat(
-    path: PathLike,
-    callback: js.Function2[/* err */ ErrnoException, /* stats */ typings.node.fsMod.Stats, Any]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lstat")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "lstat")
+  @js.native
+  val lstat: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.lstat.__promisify__ */ Any) & Typeoflstat = js.native
   
   inline def lstatAsync(path: String): typings.bluebird.mod.^[typings.node.fsMod.Stats] = ^.asInstanceOf[js.Dynamic].applyDynamic("lstatAsync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[typings.node.fsMod.Stats]]
   
@@ -690,47 +707,57 @@ object mod {
   
   inline def lutimesSync(path: PathLike, atime: TimeLike, mtime: TimeLike): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lutimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def mkdir(path: PathLike): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def mkdir(path: PathLike, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def mkdir(path: PathLike, options: Null, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def mkdir(path: PathLike, options: Mode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def mkdir(path: PathLike, options: Mode, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def mkdir(path: PathLike, options: MakeDirectoryOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def mkdir(
-    path: PathLike,
-    options: MakeDirectoryOptions,
-    callback: js.Function1[/* err */ ErrnoException, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "mkdir")
+  @js.native
+  val mkdir: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.mkdir.__promisify__ */ Any) & Typeofmkdir = js.native
   
   inline def mkdirAsync(path: String): typings.bluebird.mod.^[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirAsync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Unit]]
   inline def mkdirAsync(path: String, mode: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirAsync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   inline def mkdirAsync(path: String, mode: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirAsync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  inline def mkdirSync(path: PathLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def mkdirSync(path: PathLike, options: Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def mkdirSync(path: PathLike, options: MakeDirectoryOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mkdirSync(path: PathLike): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def mkdirSync(path: PathLike, options: MakeDirectoryOptionsrecur): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def mkdirSync(path: PathLike, options: MakeDirectoryOptionsrecurMode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mkdirSync(path: PathLike, options: MakeDirectoryOptions): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def mkdirSync(path: PathLike, options: Mode): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
-  inline def mkdirp(dir: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirp")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def mkdirp(dir: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirp")(dir.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mkdirSync_Unit(path: PathLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def mkdirSync_Unit(path: PathLike, options: Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def mkdirp(path: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirp")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def mkdirp(path: String, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirp")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mkdirp(path: String, options: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirp")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def mkdirp(path: String, options: Double, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirp")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mkdirp(path: String, options: EnsureDirOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirp")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def mkdirp(path: String, options: EnsureDirOptions, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirp")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def mkdirpAsync(dir: String): typings.bluebird.mod.^[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirpAsync")(dir.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Unit]]
   inline def mkdirpAsync(dir: String, options: MkdirOptions): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirpAsync")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  inline def mkdirpSync(dir: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirpSync")(dir.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "mkdirpSync")
+  @js.native
+  val mkdirpSync: js.Function2[/* path */ String, /* options */ js.UndefOr[EnsureDirOptions | Double], Unit] = js.native
   
-  inline def mkdirs(dir: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirs")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def mkdirs(dir: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirs")(dir.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mkdirs(path: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirs")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def mkdirs(path: String, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirs")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mkdirs(path: String, options: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirs")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def mkdirs(path: String, options: Double, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirs")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mkdirs(path: String, options: EnsureDirOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirs")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def mkdirs(path: String, options: EnsureDirOptions, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirs")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def mkdirsAsync(dir: String): typings.bluebird.mod.^[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirsAsync")(dir.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Unit]]
   inline def mkdirsAsync(dir: String, options: MkdirOptions): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirsAsync")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  inline def mkdirsSync(dir: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirsSync")(dir.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "mkdirsSync")
+  @js.native
+  val mkdirsSync: js.Function2[/* path */ String, /* options */ js.UndefOr[EnsureDirOptions | Double], Unit] = js.native
   
-  inline def mkdtemp(prefix: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdtemp")(prefix.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  inline def mkdtemp(prefix: String, callback: js.Function2[/* err */ ErrnoException, /* folder */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtemp")(prefix.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "mkdtemp")
+  @js.native
+  val mkdtemp: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.mkdtemp.__promisify__ */ Any) & Typeofmkdtemp = js.native
   
   inline def mkdtempAsync(prefix: String, options: String): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempAsync")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
-  inline def mkdtempAsync(prefix: String, options: typings.fsExtraPromise.anon.Encoding): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempAsync")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
+  inline def mkdtempAsync(prefix: String, options: Encoding): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempAsync")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
   
   inline def mkdtempSync(prefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempSync")(prefix.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def mkdtempSync(prefix: String, options: BufferEncodingOption): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempSync")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
@@ -740,9 +767,9 @@ object mod {
   inline def mkdtempSync_Union(prefix: String, options: EncodingOption): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempSync")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
   
   inline def move(src: String, dest: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def move(src: String, dest: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def move(src: String, dest: String, callback: NoParamCallbackWithUndefined): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def move(src: String, dest: String, options: MoveOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def move(src: String, dest: String, options: MoveOptions, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def move(src: String, dest: String, options: MoveOptions, callback: NoParamCallbackWithUndefined): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def moveAsync(src: String, dest: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveAsync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   inline def moveAsync(src: String, dest: String, options: MoveOptions): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveAsync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
@@ -750,108 +777,62 @@ object mod {
   inline def moveSync(src: String, dest: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("moveSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def moveSync(src: String, dest: String, options: MoveOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("moveSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def open(path: PathLike, flags: String): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
-  inline def open(
-    path: PathLike,
-    flags: String,
-    callback: js.Function2[/* err */ ErrnoException, /* fd */ Double, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def open(path: PathLike, flags: String, mode: Mode): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
-  inline def open(
-    path: PathLike,
-    flags: String,
-    mode: Mode,
-    callback: js.Function2[/* err */ ErrnoException, /* fd */ Double, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def open(path: PathLike, flags: Double): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
-  inline def open(
-    path: PathLike,
-    flags: Double,
-    callback: js.Function2[/* err */ ErrnoException, /* fd */ Double, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def open(path: PathLike, flags: Double, mode: Mode): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
-  inline def open(
-    path: PathLike,
-    flags: Double,
-    mode: Mode,
-    callback: js.Function2[/* err */ ErrnoException, /* fd */ Double, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "open")
+  @js.native
+  val open: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.open.__promisify__ */ Any) & Typeofopen = js.native
   
   inline def openAsync(path: String, flags: String): typings.bluebird.mod.^[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("openAsync")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Double]]
   inline def openAsync(path: String, flags: String, mode: String): typings.bluebird.mod.^[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("openAsync")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Double]]
   
   inline def openSync(path: PathLike, flags: OpenMode): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def openSync(path: PathLike, flags: OpenMode, mode: typings.node.fsMod.Mode): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def openSync(path: PathLike, flags: OpenMode, mode: Mode): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def opendir(path: String): js.Promise[typings.node.fsMod.Dir] = ^.asInstanceOf[js.Dynamic].applyDynamic("opendir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.node.fsMod.Dir]]
-  inline def opendir(
-    path: String,
-    cb: js.Function2[/* err */ ErrnoException | Null, /* dir */ typings.node.fsMod.Dir, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("opendir")(path.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def opendir(path: String, options: OpenDirOptions): js.Promise[typings.node.fsMod.Dir] = (^.asInstanceOf[js.Dynamic].applyDynamic("opendir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.node.fsMod.Dir]]
-  inline def opendir(
-    path: String,
-    options: OpenDirOptions,
-    cb: js.Function2[/* err */ ErrnoException | Null, /* dir */ typings.node.fsMod.Dir, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("opendir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "opendir")
+  @js.native
+  val opendir: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.opendir.__promisify__ */ Any) & Typeofopendir = js.native
   
   inline def opendirSync(path: PathLike): typings.node.fsMod.Dir = ^.asInstanceOf[js.Dynamic].applyDynamic("opendirSync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.Dir]
   inline def opendirSync(path: PathLike, options: OpenDirOptions): typings.node.fsMod.Dir = (^.asInstanceOf[js.Dynamic].applyDynamic("opendirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.Dir]
   
-  inline def outputFile(file: String, data: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def outputFile(file: String, data: Any, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def outputFile(file: String, data: Any, options: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def outputFile(file: String, data: Any, options: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def outputFile(file: String, data: Any, options: typings.fsExtra.mod.WriteFileOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def outputFile(
-    file: String,
-    data: Any,
-    options: typings.fsExtra.mod.WriteFileOptions,
-    callback: js.Function1[/* err */ js.Error, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def outputFile(file: String, data: Any, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def outputFile(file: String, data: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def outputFile(file: String, data: String, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def outputFile(file: String, data: String, options: WriteFileOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def outputFile(file: String, data: String, options: WriteFileOptions, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def outputFile(file: String, data: ArrayBufferView): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def outputFile(file: String, data: ArrayBufferView, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def outputFile(file: String, data: ArrayBufferView, options: WriteFileOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def outputFile(file: String, data: ArrayBufferView, options: WriteFileOptions, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def outputFileAsync(file: String, data: Any): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFileAsync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  inline def outputFileSync(file: String, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def outputFileSync(file: String, data: Any, options: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def outputFileSync(file: String, data: Any, options: typings.fsExtra.mod.WriteFileOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def outputFileSync(file: String, data: Any, options: BufferEncoding): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def outputFileSync(file: String, data: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def outputFileSync(file: String, data: String, options: WriteFileOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def outputFileSync(file: String, data: ArrayBufferView): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def outputFileSync(file: String, data: ArrayBufferView, options: WriteFileOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def outputJSONAsync_(file: String, data: Any): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSONAsync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  inline def outputJSONSync_(file: String, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSONSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def outputJSONSync_(file: String, data: Any, options: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSONSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def outputJSONSync_(file: String, data: Any, options: WriteOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSONSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def outputJSONSync_(file: String, data: Any, options: BufferEncoding): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSONSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "outputJSONSync")
+  @js.native
+  val outputJSONSync_ : js.Function3[/* file */ String, /* data */ Any, /* options */ js.UndefOr[JsonOutputOptions], Unit] = js.native
   
   inline def outputJSON_(file: String, data: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSON")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def outputJSON_(file: String, data: Any, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSON")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def outputJSON_(file: String, data: Any, options: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSON")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def outputJSON_(file: String, data: Any, options: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSON")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def outputJSON_(file: String, data: Any, options: WriteOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSON")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def outputJSON_(file: String, data: Any, options: WriteOptions, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSON")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def outputJSON_(file: String, data: Any, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSON")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def outputJSON_(file: String, data: Any, options: BufferEncoding, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSON")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def outputJSON_(file: String, data: Any, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSON")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def outputJSON_(file: String, data: Any, options: JsonOutputOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSON")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def outputJSON_(file: String, data: Any, options: JsonOutputOptions, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSON")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def outputJson(file: String, data: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJson")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def outputJson(file: String, data: Any, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJson")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def outputJson(file: String, data: Any, options: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJson")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def outputJson(file: String, data: Any, options: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJson")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def outputJson(file: String, data: Any, options: WriteOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJson")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def outputJson(file: String, data: Any, options: WriteOptions, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJson")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def outputJson(file: String, data: Any, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJson")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def outputJson(file: String, data: Any, options: BufferEncoding, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJson")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def outputJson(file: String, data: Any, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJson")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def outputJson(file: String, data: Any, options: JsonOutputOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJson")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def outputJson(file: String, data: Any, options: JsonOutputOptions, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJson")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def outputJsonAsync(file: String, data: Any): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJsonAsync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
   inline def outputJsonSync(file: String, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJsonSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def outputJsonSync(file: String, data: Any, options: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJsonSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def outputJsonSync(file: String, data: Any, options: WriteOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJsonSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def outputJsonSync(file: String, data: Any, options: BufferEncoding): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJsonSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def outputJsonSync(file: String, data: Any, options: JsonOutputOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJsonSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def pathExists(path: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("pathExists")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
-  inline def pathExists(path: String, callback: js.Function2[/* err */ js.Error, /* exists */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pathExists")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def pathExists(path: String, callback: js.Function2[/* err */ ErrnoException | Null, /* exists */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pathExists")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def pathExistsSync(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("pathExistsSync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
@@ -874,8 +855,7 @@ object mod {
       * written by the current process.
       *
       * ```js
-      * import { access } from 'fs/promises';
-      * import { constants } from 'fs';
+      * import { access, constants } from 'node:fs/promises';
       *
       * try {
       *   await access('/etc/passwd', constants.R_OK | constants.W_OK);
@@ -929,7 +909,7 @@ object mod {
       * @since v10.0.0
       * @return Fulfills with `undefined` upon success.
       */
-    inline def chmod(path: PathLike, mode: typings.node.fsMod.Mode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("chmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def chmod(path: PathLike, mode: Mode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("chmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Changes the ownership of a file.
@@ -1195,14 +1175,13 @@ object mod {
       * will be made to remove the destination.
       *
       * ```js
-      * import { constants } from 'fs';
-      * import { copyFile } from 'fs/promises';
+      * import { copyFile, constants } from 'node:fs/promises';
       *
       * try {
       *   await copyFile('source.txt', 'destination.txt');
       *   console.log('source.txt was copied to destination.txt');
       * } catch {
-      *   console.log('The file could not be copied');
+      *   console.error('The file could not be copied');
       * }
       *
       * // By using COPYFILE_EXCL, the operation will fail if destination.txt exists.
@@ -1210,7 +1189,7 @@ object mod {
       *   await copyFile('source.txt', 'destination.txt', constants.COPYFILE_EXCL);
       *   console.log('source.txt was copied to destination.txt');
       * } catch {
-      *   console.log('The file could not be copied');
+      *   console.error('The file could not be copied');
       * }
       * ```
       * @since v10.0.0
@@ -1251,7 +1230,7 @@ object mod {
       * @deprecated Since v10.0.0
       * @return Fulfills with `undefined` upon success.
       */
-    inline def lchmod(path: PathLike, mode: typings.node.fsMod.Mode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lchmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def lchmod(path: PathLike, mode: Mode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lchmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Changes the ownership on a symbolic link.
@@ -1302,13 +1281,26 @@ object mod {
       * and sticky bits), or an object with a `mode` property and a `recursive`property indicating whether parent directories should be created. Calling`fsPromises.mkdir()` when `path` is a directory
       * that exists results in a
       * rejection only when `recursive` is false.
+      *
+      * ```js
+      * import { mkdir } from 'node:fs/promises';
+      *
+      * try {
+      *   const projectFolder = new URL('./test/project/', import.meta.url);
+      *   const createDir = await mkdir(projectFolder, { recursive: true });
+      *
+      *   console.log(`created ${createDir}`);
+      * } catch (err) {
+      *   console.error(err.message);
+      * }
+      * ```
       * @since v10.0.0
       * @return Upon success, fulfills with `undefined` if `recursive` is `false`, or the first directory path created if `recursive` is `true`.
       */
     inline def mkdir(path: PathLike, options: MakeDirectoryOptionsrecur): js.Promise[js.UndefOr[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[String]]]
     inline def mkdir(path: PathLike, options: MakeDirectoryOptionsrecurMode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     inline def mkdir(path: PathLike, options: MakeDirectoryOptions): js.Promise[js.UndefOr[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[String]]]
-    inline def mkdir(path: PathLike, options: typings.node.fsMod.Mode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def mkdir(path: PathLike, options: Mode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Creates a unique temporary directory. A unique directory name is generated by
@@ -1321,10 +1313,12 @@ object mod {
       * object with an `encoding` property specifying the character encoding to use.
       *
       * ```js
-      * import { mkdtemp } from 'fs/promises';
+      * import { mkdtemp } from 'node:fs/promises';
+      * import { join } from 'node:path';
+      * import { tmpdir } from 'node:os';
       *
       * try {
-      *   await mkdtemp(path.join(os.tmpdir(), 'foo-'));
+      *   await mkdtemp(join(tmpdir(), 'foo-'));
       * } catch (err) {
       *   console.error(err);
       * }
@@ -1333,9 +1327,9 @@ object mod {
       * The `fsPromises.mkdtemp()` method will append the six randomly selected
       * characters directly to the `prefix` string. For instance, given a directory`/tmp`, if the intention is to create a temporary directory _within_`/tmp`, the`prefix` must end with a trailing
       * platform-specific path separator
-      * (`require('path').sep`).
+      * (`require('node:path').sep`).
       * @since v10.0.0
-      * @return Fulfills with a string containing the filesystem path of the newly created temporary directory.
+      * @return Fulfills with a string containing the file system path of the newly created temporary directory.
       */
     /**
       * Asynchronously creates a unique temporary directory.
@@ -1367,10 +1361,10 @@ object mod {
       */
     inline def open(path: PathLike): js.Promise[FileHandle] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FileHandle]]
     inline def open(path: PathLike, flags: String): js.Promise[FileHandle] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileHandle]]
-    inline def open(path: PathLike, flags: String, mode: typings.node.fsMod.Mode): js.Promise[FileHandle] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileHandle]]
+    inline def open(path: PathLike, flags: String, mode: Mode): js.Promise[FileHandle] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileHandle]]
     inline def open(path: PathLike, flags: Double): js.Promise[FileHandle] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileHandle]]
-    inline def open(path: PathLike, flags: Double, mode: typings.node.fsMod.Mode): js.Promise[FileHandle] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileHandle]]
-    inline def open(path: PathLike, flags: Unit, mode: typings.node.fsMod.Mode): js.Promise[FileHandle] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileHandle]]
+    inline def open(path: PathLike, flags: Double, mode: Mode): js.Promise[FileHandle] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileHandle]]
+    inline def open(path: PathLike, flags: Unit, mode: Mode): js.Promise[FileHandle] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileHandle]]
     
     /**
       * Asynchronously open a directory for iterative scanning. See the POSIX [`opendir(3)`](http://man7.org/linux/man-pages/man3/opendir.3.html) documentation for more detail.
@@ -1384,7 +1378,7 @@ object mod {
       * Example using async iteration:
       *
       * ```js
-      * import { opendir } from 'fs/promises';
+      * import { opendir } from 'node:fs/promises';
       *
       * try {
       *   const dir = await opendir('./');
@@ -1416,11 +1410,25 @@ object mod {
       * with an error. On FreeBSD, a representation of the directory's contents will be
       * returned.
       *
+      * An example of reading a `package.json` file located in the same directory of the
+      * running code:
+      *
+      * ```js
+      * import { readFile } from 'node:fs/promises';
+      * try {
+      *   const filePath = new URL('./package.json', import.meta.url);
+      *   const contents = await readFile(filePath, { encoding: 'utf8' });
+      *   console.log(contents);
+      * } catch (err) {
+      *   console.error(err.message);
+      * }
+      * ```
+      *
       * It is possible to abort an ongoing `readFile` using an `AbortSignal`. If a
       * request is aborted the promise returned is rejected with an `AbortError`:
       *
       * ```js
-      * import { readFile } from 'fs/promises';
+      * import { readFile } from 'node:fs/promises';
       *
       * try {
       *   const controller = new AbortController();
@@ -1481,7 +1489,7 @@ object mod {
       * If `options.withFileTypes` is set to `true`, the resolved array will contain `fs.Dirent` objects.
       *
       * ```js
-      * import { readdir } from 'fs/promises';
+      * import { readdir } from 'node:fs/promises';
       *
       * try {
       *   const files = await readdir(path);
@@ -1613,13 +1621,24 @@ object mod {
     inline def stat(path: PathLike, opts: StatOptions): js.Promise[typings.node.nodeColonfsMod.Stats | BigIntStats] = (^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.node.nodeColonfsMod.Stats | BigIntStats]]
     
     /**
+      * @since v19.6.0, v18.15.0
+      * @return Fulfills with the {fs.StatFs} object for the given `path`.
+      */
+    inline def statfs(path: PathLike): js.Promise[typings.node.nodeColonfsMod.StatsFs] = ^.asInstanceOf[js.Dynamic].applyDynamic("statfs")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.node.nodeColonfsMod.StatsFs]]
+    inline def statfs(path: PathLike, opts: StatFsOptionsbigintfalseu): js.Promise[typings.node.nodeColonfsMod.StatsFs] = (^.asInstanceOf[js.Dynamic].applyDynamic("statfs")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.node.nodeColonfsMod.StatsFs]]
+    inline def statfs(path: PathLike, opts: StatFsOptionsbiginttrue): js.Promise[BigIntStatsFs] = (^.asInstanceOf[js.Dynamic].applyDynamic("statfs")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BigIntStatsFs]]
+    inline def statfs(path: PathLike, opts: StatFsOptions): js.Promise[typings.node.nodeColonfsMod.StatsFs | BigIntStatsFs] = (^.asInstanceOf[js.Dynamic].applyDynamic("statfs")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.node.nodeColonfsMod.StatsFs | BigIntStatsFs]]
+    
+    /**
       * Creates a symbolic link.
       *
-      * The `type` argument is only used on Windows platforms and can be one of `'dir'`,`'file'`, or `'junction'`. Windows junction points require the destination path
-      * to be absolute. When using `'junction'`, the `target` argument will
+      * The `type` argument is only used on Windows platforms and can be one of `'dir'`,`'file'`, or `'junction'`. If the `type` argument is not a string, Node.js will
+      * autodetect `target` type and use `'file'` or `'dir'`. If the `target` does not
+      * exist, `'file'` will be used. Windows junction points require the destination
+      * path to be absolute. When using `'junction'`, the `target` argument will
       * automatically be normalized to absolute path.
       * @since v10.0.0
-      * @param [type='file']
+      * @param [type='null']
       * @return Fulfills with `undefined` upon success.
       */
     inline def symlink(target: PathLike, path: PathLike): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
@@ -1650,7 +1669,7 @@ object mod {
       *
       * * Values can be either numbers representing Unix epoch time, `Date`s, or a
       * numeric string like `'123456789.0'`.
-      * * If the value can not be converted to a number, or is `NaN`, `Infinity` or`-Infinity`, an `Error` will be thrown.
+      * * If the value can not be converted to a number, or is `NaN`, `Infinity`, or`-Infinity`, an `Error` will be thrown.
       * @since v10.0.0
       * @return Fulfills with `undefined` upon success.
       */
@@ -1670,7 +1689,7 @@ object mod {
       * Returns an async iterator that watches for changes on `filename`, where `filename`is either a file or a directory.
       *
       * ```js
-      * const { watch } = require('fs/promises');
+      * const { watch } = require('node:fs/promises');
       *
       * const ac = new AbortController();
       * const { signal } = ac;
@@ -1712,7 +1731,7 @@ object mod {
     
     /**
       * Asynchronously writes data to a file, replacing the file if it already exists.`data` can be a string, a buffer, an
-      * [AsyncIterable](https://tc39.github.io/ecma262/#sec-asynciterable-interface) or
+      * [AsyncIterable](https://tc39.github.io/ecma262/#sec-asynciterable-interface), or an
       * [Iterable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterable_protocol) object.
       *
       * The `encoding` option is ignored if `data` is a buffer.
@@ -1735,8 +1754,8 @@ object mod {
       * to be written.
       *
       * ```js
-      * import { writeFile } from 'fs/promises';
-      * import { Buffer } from 'buffer';
+      * import { writeFile } from 'node:fs/promises';
+      * import { Buffer } from 'node:buffer';
       *
       * try {
       *   const controller = new AbortController();
@@ -1796,391 +1815,26 @@ object mod {
     inline def writeFile(file: FileHandle, data: AsyncIterable[String | ArrayBufferView], options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   }
   
-  inline def read(fd: Double, buffer: js.typedarray.DataView, offset: Double, length: Double): js.Promise[BufferDataView] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferDataView]]
-  inline def read(fd: Double, buffer: js.typedarray.DataView, offset: Double, length: Double, position: Double): js.Promise[BufferDataView] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferDataView]]
-  inline def read(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Double,
-    length: Double,
-    position: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* bytesRead */ Double, 
-      /* buffer */ js.typedarray.DataView, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Double,
-    length: Double,
-    position: Null,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* bytesRead */ Double, 
-      /* buffer */ js.typedarray.DataView, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(fd: Double, buffer: js.typedarray.Float32Array, offset: Double, length: Double): js.Promise[BufferFloat32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat32Array]]
-  inline def read(fd: Double, buffer: js.typedarray.Float32Array, offset: Double, length: Double, position: Double): js.Promise[BufferFloat32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat32Array]]
-  inline def read(
-    fd: Double,
-    buffer: js.typedarray.Float32Array,
-    offset: Double,
-    length: Double,
-    position: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* bytesRead */ Double, 
-      /* buffer */ js.typedarray.Float32Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(
-    fd: Double,
-    buffer: js.typedarray.Float32Array,
-    offset: Double,
-    length: Double,
-    position: Null,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* bytesRead */ Double, 
-      /* buffer */ js.typedarray.Float32Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(fd: Double, buffer: js.typedarray.Float64Array, offset: Double, length: Double): js.Promise[BufferFloat64Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat64Array]]
-  inline def read(fd: Double, buffer: js.typedarray.Float64Array, offset: Double, length: Double, position: Double): js.Promise[BufferFloat64Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat64Array]]
-  inline def read(
-    fd: Double,
-    buffer: js.typedarray.Float64Array,
-    offset: Double,
-    length: Double,
-    position: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* bytesRead */ Double, 
-      /* buffer */ js.typedarray.Float64Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(
-    fd: Double,
-    buffer: js.typedarray.Float64Array,
-    offset: Double,
-    length: Double,
-    position: Null,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* bytesRead */ Double, 
-      /* buffer */ js.typedarray.Float64Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(fd: Double, buffer: js.typedarray.Int16Array, offset: Double, length: Double): js.Promise[BufferInt16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt16Array]]
-  inline def read(fd: Double, buffer: js.typedarray.Int16Array, offset: Double, length: Double, position: Double): js.Promise[BufferInt16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt16Array]]
-  inline def read(
-    fd: Double,
-    buffer: js.typedarray.Int16Array,
-    offset: Double,
-    length: Double,
-    position: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* bytesRead */ Double, 
-      /* buffer */ js.typedarray.Int16Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(
-    fd: Double,
-    buffer: js.typedarray.Int16Array,
-    offset: Double,
-    length: Double,
-    position: Null,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* bytesRead */ Double, 
-      /* buffer */ js.typedarray.Int16Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(fd: Double, buffer: js.typedarray.Int32Array, offset: Double, length: Double): js.Promise[BufferInt32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt32Array]]
-  inline def read(fd: Double, buffer: js.typedarray.Int32Array, offset: Double, length: Double, position: Double): js.Promise[BufferInt32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt32Array]]
-  inline def read(
-    fd: Double,
-    buffer: js.typedarray.Int32Array,
-    offset: Double,
-    length: Double,
-    position: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* bytesRead */ Double, 
-      /* buffer */ js.typedarray.Int32Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(
-    fd: Double,
-    buffer: js.typedarray.Int32Array,
-    offset: Double,
-    length: Double,
-    position: Null,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* bytesRead */ Double, 
-      /* buffer */ js.typedarray.Int32Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(fd: Double, buffer: js.typedarray.Int8Array, offset: Double, length: Double): js.Promise[BufferInt8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt8Array]]
-  inline def read(fd: Double, buffer: js.typedarray.Int8Array, offset: Double, length: Double, position: Double): js.Promise[BufferInt8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt8Array]]
-  inline def read(
-    fd: Double,
-    buffer: js.typedarray.Int8Array,
-    offset: Double,
-    length: Double,
-    position: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* bytesRead */ Double, 
-      /* buffer */ js.typedarray.Int8Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(
-    fd: Double,
-    buffer: js.typedarray.Int8Array,
-    offset: Double,
-    length: Double,
-    position: Null,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* bytesRead */ Double, 
-      /* buffer */ js.typedarray.Int8Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(fd: Double, buffer: js.typedarray.Uint16Array, offset: Double, length: Double): js.Promise[BufferBytesRead] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBytesRead]]
-  inline def read(fd: Double, buffer: js.typedarray.Uint16Array, offset: Double, length: Double, position: Double): js.Promise[BufferBytesRead] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBytesRead]]
-  inline def read(
-    fd: Double,
-    buffer: js.typedarray.Uint16Array,
-    offset: Double,
-    length: Double,
-    position: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* bytesRead */ Double, 
-      /* buffer */ js.typedarray.Uint16Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(
-    fd: Double,
-    buffer: js.typedarray.Uint16Array,
-    offset: Double,
-    length: Double,
-    position: Null,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* bytesRead */ Double, 
-      /* buffer */ js.typedarray.Uint16Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(fd: Double, buffer: js.typedarray.Uint32Array, offset: Double, length: Double): js.Promise[BufferUint32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferUint32Array]]
-  inline def read(fd: Double, buffer: js.typedarray.Uint32Array, offset: Double, length: Double, position: Double): js.Promise[BufferUint32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferUint32Array]]
-  inline def read(
-    fd: Double,
-    buffer: js.typedarray.Uint32Array,
-    offset: Double,
-    length: Double,
-    position: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* bytesRead */ Double, 
-      /* buffer */ js.typedarray.Uint32Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(
-    fd: Double,
-    buffer: js.typedarray.Uint32Array,
-    offset: Double,
-    length: Double,
-    position: Null,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* bytesRead */ Double, 
-      /* buffer */ js.typedarray.Uint32Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(fd: Double, buffer: js.typedarray.Uint8Array, offset: Double, length: Double): js.Promise[typings.fsExtra.anon.Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.Buffer]]
-  inline def read(fd: Double, buffer: js.typedarray.Uint8Array, offset: Double, length: Double, position: Double): js.Promise[typings.fsExtra.anon.Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.Buffer]]
-  inline def read(
-    fd: Double,
-    buffer: js.typedarray.Uint8Array,
-    offset: Double,
-    length: Double,
-    position: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* bytesRead */ Double, 
-      /* buffer */ js.typedarray.Uint8Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(
-    fd: Double,
-    buffer: js.typedarray.Uint8Array,
-    offset: Double,
-    length: Double,
-    position: Null,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* bytesRead */ Double, 
-      /* buffer */ js.typedarray.Uint8Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(fd: Double, buffer: js.typedarray.Uint8ClampedArray, offset: Double, length: Double): js.Promise[BytesRead] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesRead]]
-  inline def read(
-    fd: Double,
-    buffer: js.typedarray.Uint8ClampedArray,
-    offset: Double,
-    length: Double,
-    position: Double
-  ): js.Promise[BytesRead] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesRead]]
-  inline def read(
-    fd: Double,
-    buffer: js.typedarray.Uint8ClampedArray,
-    offset: Double,
-    length: Double,
-    position: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* bytesRead */ Double, 
-      /* buffer */ js.typedarray.Uint8ClampedArray, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(
-    fd: Double,
-    buffer: js.typedarray.Uint8ClampedArray,
-    offset: Double,
-    length: Double,
-    position: Null,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* bytesRead */ Double, 
-      /* buffer */ js.typedarray.Uint8ClampedArray, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(fd: Double, buffer: BigInt64Array, offset: Double, length: Double): js.Promise[BufferBigInt64Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBigInt64Array]]
-  inline def read(fd: Double, buffer: BigInt64Array, offset: Double, length: Double, position: Double): js.Promise[BufferBigInt64Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBigInt64Array]]
-  inline def read(
-    fd: Double,
-    buffer: BigInt64Array,
-    offset: Double,
-    length: Double,
-    position: Double,
-    callback: js.Function3[/* err */ ErrnoException, /* bytesRead */ Double, /* buffer */ BigInt64Array, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(
-    fd: Double,
-    buffer: BigInt64Array,
-    offset: Double,
-    length: Double,
-    position: Null,
-    callback: js.Function3[/* err */ ErrnoException, /* bytesRead */ Double, /* buffer */ BigInt64Array, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(fd: Double, buffer: BigUint64Array, offset: Double, length: Double): js.Promise[BufferBigUint64Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBigUint64Array]]
-  inline def read(fd: Double, buffer: BigUint64Array, offset: Double, length: Double, position: Double): js.Promise[BufferBigUint64Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBigUint64Array]]
-  inline def read(
-    fd: Double,
-    buffer: BigUint64Array,
-    offset: Double,
-    length: Double,
-    position: Double,
-    callback: js.Function3[/* err */ ErrnoException, /* bytesRead */ Double, /* buffer */ BigUint64Array, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read(
-    fd: Double,
-    buffer: BigUint64Array,
-    offset: Double,
-    length: Double,
-    position: Null,
-    callback: js.Function3[/* err */ ErrnoException, /* bytesRead */ Double, /* buffer */ BigUint64Array, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "read")
+  @js.native
+  val read: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.read.__promisify__ */ Any) & Typeofread = js.native
   
   inline def readAsync(fd: Double, buffer: Buffer, offset: Double, length: Double, position: Double): typings.bluebird.mod.^[js.Tuple2[Double, Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readAsync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[js.Tuple2[Double, Buffer]]]
   
-  inline def readFile(file: Double): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
-  inline def readFile(file: Double, callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readFile(file: Double, encoding: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  inline def readFile(
-    file: Double,
-    encoding: String,
-    callback: js.Function2[/* err */ ErrnoException, /* data */ String, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readFile(file: Double, encoding: BufferEncoding): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  inline def readFile(
-    file: Double,
-    encoding: BufferEncoding,
-    callback: js.Function2[/* err */ ErrnoException, /* data */ String, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readFile(file: Double, options: EncodingFlag): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  inline def readFile(
-    file: Double,
-    options: EncodingFlag,
-    callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readFile(file: Double, options: Flag): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  inline def readFile(
-    file: Double,
-    options: Flag,
-    callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readFile(file: PathLike): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
-  inline def readFile(file: PathLike, callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readFile(file: PathLike, encoding: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  inline def readFile(
-    file: PathLike,
-    encoding: String,
-    callback: js.Function2[/* err */ ErrnoException, /* data */ String, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readFile(file: PathLike, encoding: BufferEncoding): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  inline def readFile(
-    file: PathLike,
-    encoding: BufferEncoding,
-    callback: js.Function2[/* err */ ErrnoException, /* data */ String, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readFile(file: PathLike, options: EncodingFlag): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  inline def readFile(
-    file: PathLike,
-    options: EncodingFlag,
-    callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readFile(file: PathLike, options: Flag): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  inline def readFile(
-    file: PathLike,
-    options: Flag,
-    callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "readFile")
+  @js.native
+  val readFile: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.readFile.__promisify__ */ Any) & TypeofreadFile = js.native
   
   inline def readFileAsync(filename: String): typings.bluebird.mod.^[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFileAsync")(filename.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Buffer]]
   inline def readFileAsync(filename: String, options: String): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileAsync")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
-  inline def readFileAsync(filename: String, options: ReadOptions): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileAsync")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
+  inline def readFileAsync(
+    filename: String,
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReadOptions */ Any
+  ): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileAsync")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
   
   inline def readFileSync(path: PathOrFileDescriptor): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
-  inline def readFileSync(path: PathOrFileDescriptor, options: typings.node.anon.EncodingFlag): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def readFileSync(path: PathOrFileDescriptor, options: typings.node.anon.Flag): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def readFileSync(path: PathOrFileDescriptor, options: EncodingFlag): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def readFileSync(path: PathOrFileDescriptor, options: Flag): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   inline def readFileSync(path: PathOrFileDescriptor, options: ObjectEncodingOptionsflagEncoding): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
   inline def readFileSync(path: PathOrFileDescriptor, options: BufferEncoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
@@ -2189,79 +1843,41 @@ object mod {
   inline def readFileSync_Union(path: PathOrFileDescriptor, options: BufferEncoding): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
   
   inline def readJSONAsync_(file: String): typings.bluebird.mod.^[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readJSONAsync")(file.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Any]]
-  inline def readJSONAsync_(file: String, options: ReadOptions): typings.bluebird.mod.^[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readJSONAsync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Any]]
+  inline def readJSONAsync_(
+    file: String,
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReadOptions */ Any
+  ): typings.bluebird.mod.^[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readJSONAsync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Any]]
   
-  inline def readJSONSync_(file: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("readJSONSync")(file.asInstanceOf[js.Any]).asInstanceOf[Any]
-  inline def readJSONSync_(file: String, options: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readJSONSync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def readJSONSync_(file: String, options: ReadOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readJSONSync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def readJSONSync_(file: String, options: BufferEncoding): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readJSONSync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def readJSONSync_(file: Path): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("readJSONSync")(file.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def readJSONSync_(file: Path, options: JFReadOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readJSONSync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def readJSON_(file: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
-  inline def readJSON_(file: String, callback: js.Function2[/* err */ js.Error, /* jsonObject */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readJSON_(file: String, options: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
-  inline def readJSON_(
-    file: String,
-    options: String,
-    callback: js.Function2[/* err */ js.Error, /* jsonObject */ Any, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readJSON_(file: String, options: ReadOptions): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
-  inline def readJSON_(
-    file: String,
-    options: ReadOptions,
-    callback: js.Function2[/* err */ js.Error, /* jsonObject */ Any, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readJSON_(file: String, options: BufferEncoding): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
-  inline def readJSON_(
-    file: String,
-    options: BufferEncoding,
-    callback: js.Function2[/* err */ js.Error, /* jsonObject */ Any, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def readJSON_(file: Path): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+  inline def readJSON_(file: Path, callback: ReadCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def readJSON_(file: Path, options: JFReadOptions): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  inline def readJSON_(file: Path, options: JFReadOptions, callback: ReadCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def readJson(file: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readJson")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
-  inline def readJson(file: String, callback: js.Function2[/* err */ js.Error, /* jsonObject */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readJson")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readJson(file: String, options: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readJson")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
-  inline def readJson(
-    file: String,
-    options: String,
-    callback: js.Function2[/* err */ js.Error, /* jsonObject */ Any, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readJson")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readJson(file: String, options: ReadOptions): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readJson")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
-  inline def readJson(
-    file: String,
-    options: ReadOptions,
-    callback: js.Function2[/* err */ js.Error, /* jsonObject */ Any, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readJson")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readJson(file: String, options: BufferEncoding): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readJson")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
-  inline def readJson(
-    file: String,
-    options: BufferEncoding,
-    callback: js.Function2[/* err */ js.Error, /* jsonObject */ Any, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readJson")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def readJson(file: Path): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readJson")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+  inline def readJson(file: Path, callback: ReadCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readJson")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def readJson(file: Path, options: JFReadOptions): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readJson")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  inline def readJson(file: Path, options: JFReadOptions, callback: ReadCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readJson")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def readJsonAsync(file: String): typings.bluebird.mod.^[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readJsonAsync")(file.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Any]]
-  inline def readJsonAsync(file: String, options: ReadOptions): typings.bluebird.mod.^[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readJsonAsync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Any]]
+  inline def readJsonAsync(
+    file: String,
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReadOptions */ Any
+  ): typings.bluebird.mod.^[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readJsonAsync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Any]]
   
-  inline def readJsonSync(file: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("readJsonSync")(file.asInstanceOf[js.Any]).asInstanceOf[Any]
-  inline def readJsonSync(file: String, options: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readJsonSync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def readJsonSync(file: String, options: ReadOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readJsonSync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def readJsonSync(file: String, options: BufferEncoding): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readJsonSync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def readJsonSync(file: Path): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("readJsonSync")(file.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def readJsonSync(file: Path, options: JFReadOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readJsonSync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def readSync(fd: Double, buffer: ArrayBufferView): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def readSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def readSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double, position: ReadPosition): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def readSync(fd: Double, buffer: ArrayBufferView, opts: ReadSyncOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def readdir(path: PathLike): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
-  inline def readdir(
-    path: PathLike,
-    callback: js.Function2[/* err */ ErrnoException, /* files */ js.Array[String], Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readdir(path: PathLike, options: String): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
-  inline def readdir(path: PathLike, options: EncodingWithFileTypes): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
-  inline def readdir(path: PathLike, options: WithFileTypes): js.Promise[js.Array[Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Buffer]]]
-  inline def readdir(path: PathLike, options: `0`): js.Promise[js.Array[Buffer | String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Buffer | String]]]
-  inline def readdir(path: PathLike, options: `1`): js.Promise[js.Array[typings.node.fsMod.Dirent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.node.fsMod.Dirent]]]
-  inline def readdir(path: PathLike, options: BufferEncoding): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  @JSImport("fs-extra-promise", "readdir")
+  @js.native
+  val readdir: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.readdir.__promisify__ */ Any) & Typeofreaddir = js.native
   
   inline def readdirAsync(path: String): typings.bluebird.mod.^[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdirAsync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[js.Array[String]]]
   
@@ -2269,15 +1885,14 @@ object mod {
   inline def readdirSync(path: PathLike, options: typings.node.anon.Encoding): js.Array[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer]]
   inline def readdirSync(path: PathLike, options: ObjectEncodingOptionswith): js.Array[Buffer | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer | String]]
   inline def readdirSync(path: PathLike, options: ObjectEncodingOptionswithEncoding): js.Array[typings.node.fsMod.Dirent] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.node.fsMod.Dirent]]
-  inline def readdirSync(path: PathLike, options: typings.node.anon.WithFileTypes): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def readdirSync(path: PathLike, options: Recursive): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   inline def readdirSync(path: PathLike, options: BufferEncoding): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   inline def readdirSync_buffer(path: PathLike, options: buffer): js.Array[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer]]
   
-  inline def readdir_buffer(path: PathLike, options: buffer): js.Promise[js.Array[Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Buffer]]]
-  
-  inline def readlink(path: PathLike): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  inline def readlink(path: PathLike, callback: js.Function2[/* err */ ErrnoException, /* linkString */ String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "readlink")
+  @js.native
+  val readlink: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.readlink.__promisify__ */ Any) & Typeofreadlink = js.native
   
   inline def readlinkAsync(path: String): typings.bluebird.mod.^[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readlinkAsync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[String]]
   
@@ -2288,76 +1903,16 @@ object mod {
   inline def readlinkSync_Union(path: PathLike): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
   inline def readlinkSync_Union(path: PathLike, options: EncodingOption): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
   
-  inline def readv(
-    fd: Double,
-    buffers: js.Array[ArrayBufferView],
-    cb: js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* bytesRead */ Double, 
-      /* buffers */ js.Array[ArrayBufferView], 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readv")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readv(
-    fd: Double,
-    buffers: js.Array[ArrayBufferView],
-    position: Double,
-    cb: js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* bytesRead */ Double, 
-      /* buffers */ js.Array[ArrayBufferView], 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readv")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], position.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "readv")
+  @js.native
+  val readv: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.readv.__promisify__ */ Any) & Typeofreadv = js.native
   
   inline def readvSync(fd: Double, buffers: js.Array[ArrayBufferView]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readvSync")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def readvSync(fd: Double, buffers: js.Array[ArrayBufferView], position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readvSync")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  object realpath {
-    
-    inline def apply(path: PathLike): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-    inline def apply(path: PathLike, cache: StringDictionary[String]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], cache.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-    inline def apply(
-      path: PathLike,
-      cache: StringDictionary[String],
-      callback: js.Function2[/* err */ ErrnoException, /* resolvedPath */ String, Any]
-    ): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def apply(path: PathLike, callback: js.Function2[/* err */ ErrnoException, /* resolvedPath */ String, Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    @JSImport("fs-extra-promise", "realpath")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /* Inlined {None (path : node.fs.PathLike, options : {  encoding :'buffer'} | 'buffer'): std.Promise<node.buffer.<global>.Buffer>, None (path : node.fs.PathLike, options : {  encoding :node.buffer.<global>.BufferEncoding | string | null} | node.buffer.<global>.BufferEncoding | string | undefined | null): std.Promise<string>, None (path : node.fs.PathLike, options : {  encoding :node.buffer.<global>.BufferEncoding | string | null} | string | undefined | null): std.Promise<string | node.buffer.<global>.Buffer>, None (path : node.fs.PathLike): std.Promise<string>} & {None (path : node.fs.PathLike, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : string): void): void, None (path : node.fs.PathLike, options : node.fs.EncodingOption, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : string | node.buffer.<global>.Buffer): void): void, None (path : node.fs.PathLike, options : node.fs.BufferEncodingOption, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : node.buffer.<global>.Buffer): void): void, None (path : node.fs.PathLike, options : node.fs.EncodingOption, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : string): void): void} */
-    inline def native(path: PathLike): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("native")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-    /* Inlined {None (path : node.fs.PathLike, options : {  encoding :'buffer'} | 'buffer'): std.Promise<node.buffer.<global>.Buffer>, None (path : node.fs.PathLike, options : {  encoding :node.buffer.<global>.BufferEncoding | string | null} | node.buffer.<global>.BufferEncoding | string | undefined | null): std.Promise<string>, None (path : node.fs.PathLike, options : {  encoding :node.buffer.<global>.BufferEncoding | string | null} | string | undefined | null): std.Promise<string | node.buffer.<global>.Buffer>, None (path : node.fs.PathLike): std.Promise<string>} & {None (path : node.fs.PathLike, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : string): void): void, None (path : node.fs.PathLike, options : node.fs.EncodingOption, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : string | node.buffer.<global>.Buffer): void): void, None (path : node.fs.PathLike, options : node.fs.BufferEncodingOption, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : node.buffer.<global>.Buffer): void): void, None (path : node.fs.PathLike, options : node.fs.EncodingOption, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : string): void): void} */
-    inline def native(
-      path: PathLike,
-      callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String, Unit]
-    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("native")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    /* Inlined {None (path : node.fs.PathLike, options : {  encoding :'buffer'} | 'buffer'): std.Promise<node.buffer.<global>.Buffer>, None (path : node.fs.PathLike, options : {  encoding :node.buffer.<global>.BufferEncoding | string | null} | node.buffer.<global>.BufferEncoding | string | undefined | null): std.Promise<string>, None (path : node.fs.PathLike, options : {  encoding :node.buffer.<global>.BufferEncoding | string | null} | string | undefined | null): std.Promise<string | node.buffer.<global>.Buffer>, None (path : node.fs.PathLike): std.Promise<string>} & {None (path : node.fs.PathLike, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : string): void): void, None (path : node.fs.PathLike, options : node.fs.EncodingOption, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : string | node.buffer.<global>.Buffer): void): void, None (path : node.fs.PathLike, options : node.fs.BufferEncodingOption, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : node.buffer.<global>.Buffer): void): void, None (path : node.fs.PathLike, options : node.fs.EncodingOption, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : string): void): void} */
-    inline def native(path: PathLike, options: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("native")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-    /* Inlined {None (path : node.fs.PathLike, options : {  encoding :'buffer'} | 'buffer'): std.Promise<node.buffer.<global>.Buffer>, None (path : node.fs.PathLike, options : {  encoding :node.buffer.<global>.BufferEncoding | string | null} | node.buffer.<global>.BufferEncoding | string | undefined | null): std.Promise<string>, None (path : node.fs.PathLike, options : {  encoding :node.buffer.<global>.BufferEncoding | string | null} | string | undefined | null): std.Promise<string | node.buffer.<global>.Buffer>, None (path : node.fs.PathLike): std.Promise<string>} & {None (path : node.fs.PathLike, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : string): void): void, None (path : node.fs.PathLike, options : node.fs.EncodingOption, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : string | node.buffer.<global>.Buffer): void): void, None (path : node.fs.PathLike, options : node.fs.BufferEncodingOption, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : node.buffer.<global>.Buffer): void): void, None (path : node.fs.PathLike, options : node.fs.EncodingOption, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : string): void): void} */
-    inline def native(path: PathLike, options: `2`): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("native")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
-    /* Inlined {None (path : node.fs.PathLike, options : {  encoding :'buffer'} | 'buffer'): std.Promise<node.buffer.<global>.Buffer>, None (path : node.fs.PathLike, options : {  encoding :node.buffer.<global>.BufferEncoding | string | null} | node.buffer.<global>.BufferEncoding | string | undefined | null): std.Promise<string>, None (path : node.fs.PathLike, options : {  encoding :node.buffer.<global>.BufferEncoding | string | null} | string | undefined | null): std.Promise<string | node.buffer.<global>.Buffer>, None (path : node.fs.PathLike): std.Promise<string>} & {None (path : node.fs.PathLike, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : string): void): void, None (path : node.fs.PathLike, options : node.fs.EncodingOption, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : string | node.buffer.<global>.Buffer): void): void, None (path : node.fs.PathLike, options : node.fs.BufferEncodingOption, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : node.buffer.<global>.Buffer): void): void, None (path : node.fs.PathLike, options : node.fs.EncodingOption, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : string): void): void} */
-    inline def native(path: PathLike, options: `3`): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("native")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-    /* Inlined {None (path : node.fs.PathLike, options : {  encoding :'buffer'} | 'buffer'): std.Promise<node.buffer.<global>.Buffer>, None (path : node.fs.PathLike, options : {  encoding :node.buffer.<global>.BufferEncoding | string | null} | node.buffer.<global>.BufferEncoding | string | undefined | null): std.Promise<string>, None (path : node.fs.PathLike, options : {  encoding :node.buffer.<global>.BufferEncoding | string | null} | string | undefined | null): std.Promise<string | node.buffer.<global>.Buffer>, None (path : node.fs.PathLike): std.Promise<string>} & {None (path : node.fs.PathLike, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : string): void): void, None (path : node.fs.PathLike, options : node.fs.EncodingOption, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : string | node.buffer.<global>.Buffer): void): void, None (path : node.fs.PathLike, options : node.fs.BufferEncodingOption, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : node.buffer.<global>.Buffer): void): void, None (path : node.fs.PathLike, options : node.fs.EncodingOption, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : string): void): void} */
-    inline def native(path: PathLike, options: buffer): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("native")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
-    /* Inlined {None (path : node.fs.PathLike, options : {  encoding :'buffer'} | 'buffer'): std.Promise<node.buffer.<global>.Buffer>, None (path : node.fs.PathLike, options : {  encoding :node.buffer.<global>.BufferEncoding | string | null} | node.buffer.<global>.BufferEncoding | string | undefined | null): std.Promise<string>, None (path : node.fs.PathLike, options : {  encoding :node.buffer.<global>.BufferEncoding | string | null} | string | undefined | null): std.Promise<string | node.buffer.<global>.Buffer>, None (path : node.fs.PathLike): std.Promise<string>} & {None (path : node.fs.PathLike, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : string): void): void, None (path : node.fs.PathLike, options : node.fs.EncodingOption, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : string | node.buffer.<global>.Buffer): void): void, None (path : node.fs.PathLike, options : node.fs.BufferEncodingOption, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : node.buffer.<global>.Buffer): void): void, None (path : node.fs.PathLike, options : node.fs.EncodingOption, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : string): void): void} */
-    inline def native(path: PathLike, options: BufferEncoding): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("native")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-    /* Inlined {None (path : node.fs.PathLike, options : {  encoding :'buffer'} | 'buffer'): std.Promise<node.buffer.<global>.Buffer>, None (path : node.fs.PathLike, options : {  encoding :node.buffer.<global>.BufferEncoding | string | null} | node.buffer.<global>.BufferEncoding | string | undefined | null): std.Promise<string>, None (path : node.fs.PathLike, options : {  encoding :node.buffer.<global>.BufferEncoding | string | null} | string | undefined | null): std.Promise<string | node.buffer.<global>.Buffer>, None (path : node.fs.PathLike): std.Promise<string>} & {None (path : node.fs.PathLike, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : string): void): void, None (path : node.fs.PathLike, options : node.fs.EncodingOption, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : string | node.buffer.<global>.Buffer): void): void, None (path : node.fs.PathLike, options : node.fs.BufferEncodingOption, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : node.buffer.<global>.Buffer): void): void, None (path : node.fs.PathLike, options : node.fs.EncodingOption, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : string): void): void} */
-    inline def native(
-      path: PathLike,
-      options: BufferEncodingOption,
-      callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ Buffer, Unit]
-    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("native")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    /* Inlined {None (path : node.fs.PathLike, options : {  encoding :'buffer'} | 'buffer'): std.Promise<node.buffer.<global>.Buffer>, None (path : node.fs.PathLike, options : {  encoding :node.buffer.<global>.BufferEncoding | string | null} | node.buffer.<global>.BufferEncoding | string | undefined | null): std.Promise<string>, None (path : node.fs.PathLike, options : {  encoding :node.buffer.<global>.BufferEncoding | string | null} | string | undefined | null): std.Promise<string | node.buffer.<global>.Buffer>, None (path : node.fs.PathLike): std.Promise<string>} & {None (path : node.fs.PathLike, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : string): void): void, None (path : node.fs.PathLike, options : node.fs.EncodingOption, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : string | node.buffer.<global>.Buffer): void): void, None (path : node.fs.PathLike, options : node.fs.BufferEncodingOption, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : node.buffer.<global>.Buffer): void): void, None (path : node.fs.PathLike, options : node.fs.EncodingOption, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : string): void): void} */
-    inline def native(
-      path: PathLike,
-      options: EncodingOption,
-      callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
-    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("native")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  }
+  @JSImport("fs-extra-promise", "realpath")
+  @js.native
+  val realpath: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.realpath.__promisify__ */ Any) & Typeofrealpath & Native = js.native
   
   inline def realpathAsync(path: String): typings.bluebird.mod.^[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("realpathAsync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[String]]
   inline def realpathAsync(path: String, cache: StringDictionary[String]): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("realpathAsync")(path.asInstanceOf[js.Any], cache.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
@@ -2381,41 +1936,39 @@ object mod {
   }
   
   inline def remove(dir: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def remove(dir: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(dir.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def remove(dir: String, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(dir.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def removeAsync(dir: String): typings.bluebird.mod.^[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAsync")(dir.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
   inline def removeSync(dir: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSync")(dir.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def remove_Promise(dir: String, callback: js.Function1[/* err */ js.Error, Unit]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(dir.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  
-  inline def rename(oldPath: PathLike, newPath: PathLike): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("rename")(oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def rename(oldPath: PathLike, newPath: PathLike, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rename")(oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "rename")
+  @js.native
+  val rename: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.rename.__promisify__ */ Any) & Typeofrename = js.native
   
   inline def renameAsync(oldPath: String, newPath: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("renameAsync")(oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
   inline def renameSync(oldPath: PathLike, newPath: PathLike): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renameSync")(oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def rm(path: PathLike): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("rm")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def rm(path: PathLike, options: Force): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("rm")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @JSImport("fs-extra-promise", "rm")
+  @js.native
+  val rm: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.rm.__promisify__ */ Any) & Typeofrm = js.native
   
   inline def rmSync(path: PathLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("rmSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def rmSync(path: PathLike, options: RmOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rmSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def rmdir(path: PathLike): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("rmdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def rmdir(path: PathLike, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rmdir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def rmdir(path: PathLike, options: RmDirOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("rmdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @JSImport("fs-extra-promise", "rmdir")
+  @js.native
+  val rmdir: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.rmdir.__promisify__ */ Any) & Typeofrmdir = js.native
   
   inline def rmdirAsync(path: String): typings.bluebird.mod.^[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("rmdirAsync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
   inline def rmdirSync(path: PathLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("rmdirSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def rmdirSync(path: PathLike, options: RmDirOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rmdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def stat(path: PathLike): js.Promise[typings.node.fsMod.Stats] = ^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.node.fsMod.Stats]]
-  inline def stat(
-    path: PathLike,
-    callback: js.Function2[/* err */ ErrnoException, /* stats */ typings.node.fsMod.Stats, Any]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "stat")
+  @js.native
+  val stat: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.stat.__promisify__ */ Any) & Typeofstat = js.native
   
   inline def statAsync(path: String): typings.bluebird.mod.^[typings.node.fsMod.Stats] = ^.asInstanceOf[js.Dynamic].applyDynamic("statAsync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[typings.node.fsMod.Stats]]
   
@@ -2423,21 +1976,49 @@ object mod {
   @js.native
   val statSync: StatSyncFn = js.native
   
-  inline def symlink(target: PathLike, path: PathLike): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def symlink(target: PathLike, path: PathLike, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def symlink(
-    target: PathLike,
+  inline def statfs(
     path: PathLike,
-    `type`: Unit,
-    callback: js.Function1[/* err */ ErrnoException, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def symlink(target: PathLike, path: PathLike, `type`: SymlinkType): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def symlink(
-    target: PathLike,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ typings.node.fsMod.StatsFs, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("statfs")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def statfs(
     path: PathLike,
-    `type`: SymlinkType,
-    callback: js.Function1[/* err */ ErrnoException, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    options: Unit,
+    callback: js.Function2[
+      ErrnoException | Null, 
+      BigIntStatsFs | (/* stats */ typings.node.fsMod.StatsFs), 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("statfs")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def statfs(
+    path: PathLike,
+    options: StatFsOptionsbigintfalseu,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ typings.node.fsMod.StatsFs, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("statfs")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def statfs(
+    path: PathLike,
+    options: StatFsOptionsbiginttrue,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ BigIntStatsFs, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("statfs")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def statfs(
+    path: PathLike,
+    options: StatFsOptions,
+    callback: js.Function2[
+      /* err */ ErrnoException | Null, 
+      /* stats */ typings.node.fsMod.StatsFs | BigIntStatsFs, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("statfs")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def statfsSync(path: PathLike): typings.node.fsMod.StatsFs = ^.asInstanceOf[js.Dynamic].applyDynamic("statfsSync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.StatsFs]
+  inline def statfsSync(path: PathLike, options: StatFsOptionsbigintfalseu): typings.node.fsMod.StatsFs = (^.asInstanceOf[js.Dynamic].applyDynamic("statfsSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.StatsFs]
+  inline def statfsSync(path: PathLike, options: StatFsOptionsbiginttrue): BigIntStatsFs = (^.asInstanceOf[js.Dynamic].applyDynamic("statfsSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BigIntStatsFs]
+  inline def statfsSync(path: PathLike, options: StatFsOptions): typings.node.fsMod.StatsFs | BigIntStatsFs = (^.asInstanceOf[js.Dynamic].applyDynamic("statfsSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.StatsFs | BigIntStatsFs]
+  
+  inline def statfsSync_Union(path: PathLike): typings.node.fsMod.StatsFs | BigIntStatsFs = ^.asInstanceOf[js.Dynamic].applyDynamic("statfsSync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.StatsFs | BigIntStatsFs]
+  
+  @JSImport("fs-extra-promise", "symlink")
+  @js.native
+  val symlink: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.symlink.__promisify__ */ Any) & Typeofsymlink = js.native
   
   inline def symlinkAsync(srcpath: String, dstpath: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("symlinkAsync")(srcpath.asInstanceOf[js.Any], dstpath.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   inline def symlinkAsync(srcpath: String, dstpath: String, `type`: Type): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("symlinkAsync")(srcpath.asInstanceOf[js.Any], dstpath.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
@@ -2445,43 +2026,29 @@ object mod {
   inline def symlinkSync(target: PathLike, path: PathLike): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("symlinkSync")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def symlinkSync(target: PathLike, path: PathLike, `type`: Type): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("symlinkSync")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def truncate(path: PathLike): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def truncate(path: PathLike, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def truncate(path: PathLike, len: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(path.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def truncate(path: PathLike, len: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(path.asInstanceOf[js.Any], len.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "truncate")
+  @js.native
+  val truncate: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.truncate.__promisify__ */ Any) & Typeoftruncate = js.native
   
   inline def truncateAsync(fd: Double, len: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncateAsync")(fd.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
   inline def truncateSync(path: PathLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("truncateSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def truncateSync(path: PathLike, len: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("truncateSync")(path.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def unlink(path: PathLike): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unlink")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def unlink(path: PathLike, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unlink")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "unlink")
+  @js.native
+  val unlink: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.unlink.__promisify__ */ Any) & Typeofunlink = js.native
   
   inline def unlinkAsync(path: String): typings.bluebird.mod.^[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unlinkAsync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
   inline def unlinkSync(path: PathLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unlinkSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def unwatchFile(filename: PathLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unwatchFile")(filename.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def unwatchFile(
-    filename: PathLike,
-    listener: js.Function2[/* curr */ typings.node.fsMod.Stats, /* prev */ typings.node.fsMod.Stats, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unwatchFile")(filename.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unwatchFile(filename: PathLike, listener: BigIntStatsListener | StatsListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unwatchFile")(filename.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def utimes(path: PathLike, atime: js.Date, mtime: js.Date): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def utimes(
-    path: PathLike,
-    atime: js.Date,
-    mtime: js.Date,
-    callback: js.Function1[/* err */ ErrnoException, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def utimes(path: PathLike, atime: Double, mtime: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def utimes(
-    path: PathLike,
-    atime: Double,
-    mtime: Double,
-    callback: js.Function1[/* err */ ErrnoException, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "utimes")
+  @js.native
+  val utimes: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.utimes.__promisify__ */ Any) & Typeofutimes = js.native
   
   inline def utimesAsync(path: String, atime: Double, mtime: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("utimesAsync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
@@ -2500,647 +2067,31 @@ object mod {
   inline def watch(filename: PathLike, options: WatchOptions): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   inline def watch(filename: PathLike, options: WatchOptions, listener: WatchListener[Buffer | String]): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   
-  inline def watchFile(
-    filename: PathLike,
-    listener: js.Function2[/* curr */ typings.node.fsMod.Stats, /* prev */ typings.node.fsMod.Stats, Unit]
-  ): StatWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[StatWatcher]
-  inline def watchFile(
-    filename: PathLike,
-    options: Unit,
-    listener: js.Function2[
-      (/* curr */ BigIntStats) | (/* curr */ typings.node.fsMod.Stats), 
-      (/* prev */ BigIntStats) | (/* prev */ typings.node.fsMod.Stats), 
-      Unit
-    ]
-  ): StatWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[StatWatcher]
-  inline def watchFile(
-    filename: PathLike,
-    options: WatchFileOptionsbigintfal,
-    listener: js.Function2[/* curr */ typings.node.fsMod.Stats, /* prev */ typings.node.fsMod.Stats, Unit]
-  ): StatWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[StatWatcher]
-  inline def watchFile(
-    filename: PathLike,
-    options: WatchFileOptionsbiginttru,
-    listener: js.Function2[/* curr */ BigIntStats, /* prev */ BigIntStats, Unit]
-  ): StatWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[StatWatcher]
+  inline def watchFile(filename: PathLike, listener: StatsListener): StatWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[StatWatcher]
+  inline def watchFile(filename: PathLike, options: Unit, listener: BigIntStatsListener | StatsListener): StatWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[StatWatcher]
+  inline def watchFile(filename: PathLike, options: WatchFileOptionsbigintfal, listener: StatsListener): StatWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[StatWatcher]
+  inline def watchFile(filename: PathLike, options: WatchFileOptionsbiginttru, listener: BigIntStatsListener): StatWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[StatWatcher]
   
   inline def watch_buffer(filename: PathLike, options: buffer): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   inline def watch_buffer(filename: PathLike, options: buffer, listener: WatchListener[Buffer]): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   
-  inline def write(fd: Double, buffer: js.typedarray.DataView): js.Promise[BufferDataViewBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferDataViewBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.DataView, offset: Double): js.Promise[BufferDataViewBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferDataViewBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.DataView, offset: Double, length: Double): js.Promise[BufferDataViewBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferDataViewBytesWrittenNumber]]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Double,
-    length: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* written */ Double, 
-      /* buffer */ js.typedarray.DataView, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(fd: Double, buffer: js.typedarray.DataView, offset: Double, length: Double, position: Double): js.Promise[BufferDataViewBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferDataViewBytesWrittenNumber]]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Double,
-    length: Double,
-    position: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* written */ Double, 
-      /* buffer */ js.typedarray.DataView, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.DataView,
-    offset: Double,
-    length: Double,
-    position: Null,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* written */ Double, 
-      /* buffer */ js.typedarray.DataView, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(fd: Double, buffer: js.typedarray.DataView, offset: Double, length: Unit, position: Double): js.Promise[BufferDataViewBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferDataViewBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.DataView, offset: Unit, length: Double): js.Promise[BufferDataViewBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferDataViewBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.DataView, offset: Unit, length: Double, position: Double): js.Promise[BufferDataViewBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferDataViewBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.DataView, offset: Unit, length: Unit, position: Double): js.Promise[BufferDataViewBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferDataViewBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Float32Array): js.Promise[BufferFloat32ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat32ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Float32Array, offset: Double): js.Promise[BufferFloat32ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat32ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Float32Array, offset: Double, length: Double): js.Promise[BufferFloat32ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat32ArrayBytesWrittenNumber]]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.Float32Array,
-    offset: Double,
-    length: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* written */ Double, 
-      /* buffer */ js.typedarray.Float32Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(fd: Double, buffer: js.typedarray.Float32Array, offset: Double, length: Double, position: Double): js.Promise[BufferFloat32ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat32ArrayBytesWrittenNumber]]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.Float32Array,
-    offset: Double,
-    length: Double,
-    position: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* written */ Double, 
-      /* buffer */ js.typedarray.Float32Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.Float32Array,
-    offset: Double,
-    length: Double,
-    position: Null,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* written */ Double, 
-      /* buffer */ js.typedarray.Float32Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(fd: Double, buffer: js.typedarray.Float32Array, offset: Double, length: Unit, position: Double): js.Promise[BufferFloat32ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat32ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Float32Array, offset: Unit, length: Double): js.Promise[BufferFloat32ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat32ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Float32Array, offset: Unit, length: Double, position: Double): js.Promise[BufferFloat32ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat32ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Float32Array, offset: Unit, length: Unit, position: Double): js.Promise[BufferFloat32ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat32ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Float64Array): js.Promise[BufferFloat64ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat64ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Float64Array, offset: Double): js.Promise[BufferFloat64ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat64ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Float64Array, offset: Double, length: Double): js.Promise[BufferFloat64ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat64ArrayBytesWrittenNumber]]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.Float64Array,
-    offset: Double,
-    length: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* written */ Double, 
-      /* buffer */ js.typedarray.Float64Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(fd: Double, buffer: js.typedarray.Float64Array, offset: Double, length: Double, position: Double): js.Promise[BufferFloat64ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat64ArrayBytesWrittenNumber]]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.Float64Array,
-    offset: Double,
-    length: Double,
-    position: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* written */ Double, 
-      /* buffer */ js.typedarray.Float64Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.Float64Array,
-    offset: Double,
-    length: Double,
-    position: Null,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* written */ Double, 
-      /* buffer */ js.typedarray.Float64Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(fd: Double, buffer: js.typedarray.Float64Array, offset: Double, length: Unit, position: Double): js.Promise[BufferFloat64ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat64ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Float64Array, offset: Unit, length: Double): js.Promise[BufferFloat64ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat64ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Float64Array, offset: Unit, length: Double, position: Double): js.Promise[BufferFloat64ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat64ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Float64Array, offset: Unit, length: Unit, position: Double): js.Promise[BufferFloat64ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferFloat64ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Int16Array): js.Promise[BufferInt16ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt16ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Int16Array, offset: Double): js.Promise[BufferInt16ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt16ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Int16Array, offset: Double, length: Double): js.Promise[BufferInt16ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt16ArrayBytesWrittenNumber]]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.Int16Array,
-    offset: Double,
-    length: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* written */ Double, 
-      /* buffer */ js.typedarray.Int16Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(fd: Double, buffer: js.typedarray.Int16Array, offset: Double, length: Double, position: Double): js.Promise[BufferInt16ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt16ArrayBytesWrittenNumber]]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.Int16Array,
-    offset: Double,
-    length: Double,
-    position: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* written */ Double, 
-      /* buffer */ js.typedarray.Int16Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.Int16Array,
-    offset: Double,
-    length: Double,
-    position: Null,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* written */ Double, 
-      /* buffer */ js.typedarray.Int16Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(fd: Double, buffer: js.typedarray.Int16Array, offset: Double, length: Unit, position: Double): js.Promise[BufferInt16ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt16ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Int16Array, offset: Unit, length: Double): js.Promise[BufferInt16ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt16ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Int16Array, offset: Unit, length: Double, position: Double): js.Promise[BufferInt16ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt16ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Int16Array, offset: Unit, length: Unit, position: Double): js.Promise[BufferInt16ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt16ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Int32Array): js.Promise[BufferInt32ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt32ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Int32Array, offset: Double): js.Promise[BufferInt32ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt32ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Int32Array, offset: Double, length: Double): js.Promise[BufferInt32ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt32ArrayBytesWrittenNumber]]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.Int32Array,
-    offset: Double,
-    length: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* written */ Double, 
-      /* buffer */ js.typedarray.Int32Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(fd: Double, buffer: js.typedarray.Int32Array, offset: Double, length: Double, position: Double): js.Promise[BufferInt32ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt32ArrayBytesWrittenNumber]]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.Int32Array,
-    offset: Double,
-    length: Double,
-    position: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* written */ Double, 
-      /* buffer */ js.typedarray.Int32Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.Int32Array,
-    offset: Double,
-    length: Double,
-    position: Null,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* written */ Double, 
-      /* buffer */ js.typedarray.Int32Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(fd: Double, buffer: js.typedarray.Int32Array, offset: Double, length: Unit, position: Double): js.Promise[BufferInt32ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt32ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Int32Array, offset: Unit, length: Double): js.Promise[BufferInt32ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt32ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Int32Array, offset: Unit, length: Double, position: Double): js.Promise[BufferInt32ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt32ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Int32Array, offset: Unit, length: Unit, position: Double): js.Promise[BufferInt32ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt32ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Int8Array): js.Promise[BufferInt8ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt8ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Int8Array, offset: Double): js.Promise[BufferInt8ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt8ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Int8Array, offset: Double, length: Double): js.Promise[BufferInt8ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt8ArrayBytesWrittenNumber]]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.Int8Array,
-    offset: Double,
-    length: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* written */ Double, 
-      /* buffer */ js.typedarray.Int8Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(fd: Double, buffer: js.typedarray.Int8Array, offset: Double, length: Double, position: Double): js.Promise[BufferInt8ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt8ArrayBytesWrittenNumber]]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.Int8Array,
-    offset: Double,
-    length: Double,
-    position: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* written */ Double, 
-      /* buffer */ js.typedarray.Int8Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.Int8Array,
-    offset: Double,
-    length: Double,
-    position: Null,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* written */ Double, 
-      /* buffer */ js.typedarray.Int8Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(fd: Double, buffer: js.typedarray.Int8Array, offset: Double, length: Unit, position: Double): js.Promise[BufferInt8ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt8ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Int8Array, offset: Unit, length: Double): js.Promise[BufferInt8ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt8ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Int8Array, offset: Unit, length: Double, position: Double): js.Promise[BufferInt8ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt8ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Int8Array, offset: Unit, length: Unit, position: Double): js.Promise[BufferInt8ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferInt8ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Uint16Array): js.Promise[BufferUint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferUint16Array]]
-  inline def write(fd: Double, buffer: js.typedarray.Uint16Array, offset: Double): js.Promise[BufferUint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferUint16Array]]
-  inline def write(fd: Double, buffer: js.typedarray.Uint16Array, offset: Double, length: Double): js.Promise[BufferUint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferUint16Array]]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.Uint16Array,
-    offset: Double,
-    length: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* written */ Double, 
-      /* buffer */ js.typedarray.Uint16Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(fd: Double, buffer: js.typedarray.Uint16Array, offset: Double, length: Double, position: Double): js.Promise[BufferUint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferUint16Array]]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.Uint16Array,
-    offset: Double,
-    length: Double,
-    position: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* written */ Double, 
-      /* buffer */ js.typedarray.Uint16Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.Uint16Array,
-    offset: Double,
-    length: Double,
-    position: Null,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* written */ Double, 
-      /* buffer */ js.typedarray.Uint16Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(fd: Double, buffer: js.typedarray.Uint16Array, offset: Double, length: Unit, position: Double): js.Promise[BufferUint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferUint16Array]]
-  inline def write(fd: Double, buffer: js.typedarray.Uint16Array, offset: Unit, length: Double): js.Promise[BufferUint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferUint16Array]]
-  inline def write(fd: Double, buffer: js.typedarray.Uint16Array, offset: Unit, length: Double, position: Double): js.Promise[BufferUint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferUint16Array]]
-  inline def write(fd: Double, buffer: js.typedarray.Uint16Array, offset: Unit, length: Unit, position: Double): js.Promise[BufferUint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferUint16Array]]
-  inline def write(fd: Double, buffer: js.typedarray.Uint32Array): js.Promise[BytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Uint32Array, offset: Double): js.Promise[BytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Uint32Array, offset: Double, length: Double): js.Promise[BytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWrittenNumber]]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.Uint32Array,
-    offset: Double,
-    length: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* written */ Double, 
-      /* buffer */ js.typedarray.Uint32Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(fd: Double, buffer: js.typedarray.Uint32Array, offset: Double, length: Double, position: Double): js.Promise[BytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWrittenNumber]]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.Uint32Array,
-    offset: Double,
-    length: Double,
-    position: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* written */ Double, 
-      /* buffer */ js.typedarray.Uint32Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.Uint32Array,
-    offset: Double,
-    length: Double,
-    position: Null,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* written */ Double, 
-      /* buffer */ js.typedarray.Uint32Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(fd: Double, buffer: js.typedarray.Uint32Array, offset: Double, length: Unit, position: Double): js.Promise[BytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Uint32Array, offset: Unit, length: Double): js.Promise[BytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Uint32Array, offset: Unit, length: Double, position: Double): js.Promise[BytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Uint32Array, offset: Unit, length: Unit, position: Double): js.Promise[BytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWrittenNumber]]
-  inline def write(fd: Double, buffer: js.typedarray.Uint8Array): js.Promise[BytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten]]
-  inline def write(fd: Double, buffer: js.typedarray.Uint8Array, offset: Double): js.Promise[BytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten]]
-  inline def write(fd: Double, buffer: js.typedarray.Uint8Array, offset: Double, length: Double): js.Promise[BytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten]]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.Uint8Array,
-    offset: Double,
-    length: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* written */ Double, 
-      /* buffer */ js.typedarray.Uint8Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(fd: Double, buffer: js.typedarray.Uint8Array, offset: Double, length: Double, position: Double): js.Promise[BytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten]]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.Uint8Array,
-    offset: Double,
-    length: Double,
-    position: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* written */ Double, 
-      /* buffer */ js.typedarray.Uint8Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.Uint8Array,
-    offset: Double,
-    length: Double,
-    position: Null,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* written */ Double, 
-      /* buffer */ js.typedarray.Uint8Array, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(fd: Double, buffer: js.typedarray.Uint8Array, offset: Double, length: Unit, position: Double): js.Promise[BytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten]]
-  inline def write(fd: Double, buffer: js.typedarray.Uint8Array, offset: Unit, length: Double): js.Promise[BytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten]]
-  inline def write(fd: Double, buffer: js.typedarray.Uint8Array, offset: Unit, length: Double, position: Double): js.Promise[BytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten]]
-  inline def write(fd: Double, buffer: js.typedarray.Uint8Array, offset: Unit, length: Unit, position: Double): js.Promise[BytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten]]
-  inline def write(fd: Double, buffer: js.typedarray.Uint8ClampedArray): js.Promise[BufferBytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBytesWritten]]
-  inline def write(fd: Double, buffer: js.typedarray.Uint8ClampedArray, offset: Double): js.Promise[BufferBytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBytesWritten]]
-  inline def write(fd: Double, buffer: js.typedarray.Uint8ClampedArray, offset: Double, length: Double): js.Promise[BufferBytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBytesWritten]]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.Uint8ClampedArray,
-    offset: Double,
-    length: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* written */ Double, 
-      /* buffer */ js.typedarray.Uint8ClampedArray, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.Uint8ClampedArray,
-    offset: Double,
-    length: Double,
-    position: Double
-  ): js.Promise[BufferBytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBytesWritten]]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.Uint8ClampedArray,
-    offset: Double,
-    length: Double,
-    position: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* written */ Double, 
-      /* buffer */ js.typedarray.Uint8ClampedArray, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.Uint8ClampedArray,
-    offset: Double,
-    length: Double,
-    position: Null,
-    callback: js.Function3[
-      /* err */ ErrnoException, 
-      /* written */ Double, 
-      /* buffer */ js.typedarray.Uint8ClampedArray, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.Uint8ClampedArray,
-    offset: Double,
-    length: Unit,
-    position: Double
-  ): js.Promise[BufferBytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBytesWritten]]
-  inline def write(fd: Double, buffer: js.typedarray.Uint8ClampedArray, offset: Unit, length: Double): js.Promise[BufferBytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBytesWritten]]
-  inline def write(
-    fd: Double,
-    buffer: js.typedarray.Uint8ClampedArray,
-    offset: Unit,
-    length: Double,
-    position: Double
-  ): js.Promise[BufferBytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBytesWritten]]
-  inline def write(fd: Double, buffer: js.typedarray.Uint8ClampedArray, offset: Unit, length: Unit, position: Double): js.Promise[BufferBytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBytesWritten]]
-  inline def write(fd: Double, buffer: BigInt64Array): js.Promise[BufferBigInt64ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBigInt64ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: BigInt64Array, offset: Double): js.Promise[BufferBigInt64ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBigInt64ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: BigInt64Array, offset: Double, length: Double): js.Promise[BufferBigInt64ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBigInt64ArrayBytesWrittenNumber]]
-  inline def write(
-    fd: Double,
-    buffer: BigInt64Array,
-    offset: Double,
-    length: Double,
-    callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ BigInt64Array, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(fd: Double, buffer: BigInt64Array, offset: Double, length: Double, position: Double): js.Promise[BufferBigInt64ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBigInt64ArrayBytesWrittenNumber]]
-  inline def write(
-    fd: Double,
-    buffer: BigInt64Array,
-    offset: Double,
-    length: Double,
-    position: Double,
-    callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ BigInt64Array, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: BigInt64Array,
-    offset: Double,
-    length: Double,
-    position: Null,
-    callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ BigInt64Array, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(fd: Double, buffer: BigInt64Array, offset: Double, length: Unit, position: Double): js.Promise[BufferBigInt64ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBigInt64ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: BigInt64Array, offset: Unit, length: Double): js.Promise[BufferBigInt64ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBigInt64ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: BigInt64Array, offset: Unit, length: Double, position: Double): js.Promise[BufferBigInt64ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBigInt64ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: BigInt64Array, offset: Unit, length: Unit, position: Double): js.Promise[BufferBigInt64ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBigInt64ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: BigUint64Array): js.Promise[BufferBigUint64ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBigUint64ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: BigUint64Array, offset: Double): js.Promise[BufferBigUint64ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBigUint64ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: BigUint64Array, offset: Double, length: Double): js.Promise[BufferBigUint64ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBigUint64ArrayBytesWrittenNumber]]
-  inline def write(
-    fd: Double,
-    buffer: BigUint64Array,
-    offset: Double,
-    length: Double,
-    callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ BigUint64Array, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(fd: Double, buffer: BigUint64Array, offset: Double, length: Double, position: Double): js.Promise[BufferBigUint64ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBigUint64ArrayBytesWrittenNumber]]
-  inline def write(
-    fd: Double,
-    buffer: BigUint64Array,
-    offset: Double,
-    length: Double,
-    position: Double,
-    callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ BigUint64Array, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(
-    fd: Double,
-    buffer: BigUint64Array,
-    offset: Double,
-    length: Double,
-    position: Null,
-    callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ BigUint64Array, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(fd: Double, buffer: BigUint64Array, offset: Double, length: Unit, position: Double): js.Promise[BufferBigUint64ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBigUint64ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: BigUint64Array, offset: Unit, length: Double): js.Promise[BufferBigUint64ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBigUint64ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: BigUint64Array, offset: Unit, length: Double, position: Double): js.Promise[BufferBigUint64ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBigUint64ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, buffer: BigUint64Array, offset: Unit, length: Unit, position: Double): js.Promise[BufferBigUint64ArrayBytesWrittenNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBigUint64ArrayBytesWrittenNumber]]
-  inline def write(fd: Double, data: Any): js.Promise[BufferString] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferString]]
-  inline def write(
-    fd: Double,
-    data: Any,
-    callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* str */ String, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(fd: Double, data: Any, offset: Double): js.Promise[BufferString] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferString]]
-  inline def write(
-    fd: Double,
-    data: Any,
-    offset: Double,
-    callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* str */ String, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(fd: Double, data: Any, offset: Double, encoding: String): js.Promise[BufferString] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferString]]
-  inline def write(
-    fd: Double,
-    data: Any,
-    offset: Double,
-    encoding: String,
-    callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* str */ String, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(fd: Double, data: Any, offset: Double, encoding: BufferEncoding): js.Promise[BufferString] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferString]]
-  inline def write(
-    fd: Double,
-    data: Any,
-    offset: Double,
-    encoding: BufferEncoding,
-    callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* str */ String, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(fd: Double, data: Any, offset: Unit, encoding: String): js.Promise[BufferString] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferString]]
-  inline def write(fd: Double, data: Any, offset: Unit, encoding: BufferEncoding): js.Promise[BufferString] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferString]]
+  @JSImport("fs-extra-promise", "write")
+  @js.native
+  val write: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.write.__promisify__ */ Any) & Typeofwrite = js.native
   
   inline def writeAsync(fd: Double, buffer: Buffer, offset: Double, length: Double, position: Double): typings.bluebird.mod.^[js.Tuple2[Double, Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeAsync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[js.Tuple2[Double, Buffer]]]
   
-  inline def writeFile(file: Double, data: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeFile(file: Double, data: Any, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def writeFile(file: Double, data: Any, options: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeFile(file: Double, data: Any, options: String, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def writeFile(file: Double, data: Any, options: typings.fsExtra.mod.WriteFileOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeFile(
-    file: Double,
-    data: Any,
-    options: typings.fsExtra.mod.WriteFileOptions,
-    callback: js.Function1[/* err */ ErrnoException, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def writeFile(file: Double, data: Any, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeFile(
-    file: Double,
-    data: Any,
-    options: BufferEncoding,
-    callback: js.Function1[/* err */ ErrnoException, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def writeFile(file: PathLike, data: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeFile(file: PathLike, data: Any, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def writeFile(file: PathLike, data: Any, options: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeFile(file: PathLike, data: Any, options: String, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def writeFile(file: PathLike, data: Any, options: typings.fsExtra.mod.WriteFileOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeFile(
-    file: PathLike,
-    data: Any,
-    options: typings.fsExtra.mod.WriteFileOptions,
-    callback: js.Function1[/* err */ ErrnoException, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def writeFile(file: PathLike, data: Any, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeFile(
-    file: PathLike,
-    data: Any,
-    options: BufferEncoding,
-    callback: js.Function1[/* err */ ErrnoException, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "writeFile")
+  @js.native
+  val writeFile: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.writeFile.__promisify__ */ Any) & TypeofwriteFile = js.native
   
   inline def writeFileAsync(filename: String, data: Any): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileAsync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   inline def writeFileAsync(filename: String, data: Any, options: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileAsync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
-  inline def writeFileAsync(filename: String, data: Any, options: WriteOptions): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileAsync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  inline def writeFileAsync(
+    filename: String,
+    data: Any,
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WriteOptions */ Any
+  ): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileAsync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
   inline def writeFileSync(file: PathOrFileDescriptor, data: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def writeFileSync(file: PathOrFileDescriptor, data: String, options: WriteFileOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -3148,58 +2099,34 @@ object mod {
   inline def writeFileSync(file: PathOrFileDescriptor, data: ArrayBufferView, options: WriteFileOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def writeJSONAsync_(file: String, `object`: Any): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSONAsync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
-  inline def writeJSONAsync_(file: String, `object`: Any, options: WriteOptions): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSONAsync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  inline def writeJSONAsync_(
+    file: String,
+    `object`: Any,
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WriteOptions */ Any
+  ): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSONAsync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  inline def writeJSONSync_(file: String, `object`: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSONSync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def writeJSONSync_(file: String, `object`: Any, options: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSONSync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def writeJSONSync_(file: String, `object`: Any, options: WriteOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSONSync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def writeJSONSync_(file: String, `object`: Any, options: BufferEncoding): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSONSync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def writeJSONSync_(file: Path, obj: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSONSync")(file.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def writeJSONSync_(file: Path, obj: Any, options: JFWriteOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSONSync")(file.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def writeJSON_(file: String, `object`: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeJSON_(file: String, `object`: Any, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def writeJSON_(file: String, `object`: Any, options: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeJSON_(file: String, `object`: Any, options: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def writeJSON_(file: String, `object`: Any, options: WriteOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeJSON_(
-    file: String,
-    `object`: Any,
-    options: WriteOptions,
-    callback: js.Function1[/* err */ js.Error, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def writeJSON_(file: String, `object`: Any, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeJSON_(
-    file: String,
-    `object`: Any,
-    options: BufferEncoding,
-    callback: js.Function1[/* err */ js.Error, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def writeJSON_(file: Path, obj: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(file.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeJSON_(file: Path, obj: Any, callback: WriteCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(file.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def writeJSON_(file: Path, obj: Any, options: JFWriteOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(file.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeJSON_(file: Path, obj: Any, options: JFWriteOptions, callback: WriteCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(file.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def writeJson(file: String, `object`: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJson")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeJson(file: String, `object`: Any, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJson")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def writeJson(file: String, `object`: Any, options: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJson")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeJson(file: String, `object`: Any, options: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJson")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def writeJson(file: String, `object`: Any, options: WriteOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJson")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeJson(
-    file: String,
-    `object`: Any,
-    options: WriteOptions,
-    callback: js.Function1[/* err */ js.Error, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJson")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def writeJson(file: String, `object`: Any, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJson")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeJson(
-    file: String,
-    `object`: Any,
-    options: BufferEncoding,
-    callback: js.Function1[/* err */ js.Error, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJson")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def writeJson(file: Path, obj: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJson")(file.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeJson(file: Path, obj: Any, callback: WriteCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJson")(file.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def writeJson(file: Path, obj: Any, options: JFWriteOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJson")(file.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeJson(file: Path, obj: Any, options: JFWriteOptions, callback: WriteCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJson")(file.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def writeJsonAsync(file: String, `object`: Any): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJsonAsync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
-  inline def writeJsonAsync(file: String, `object`: Any, options: WriteOptions): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJsonAsync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  inline def writeJsonAsync(
+    file: String,
+    `object`: Any,
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WriteOptions */ Any
+  ): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJsonAsync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  inline def writeJsonSync(file: String, `object`: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJsonSync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def writeJsonSync(file: String, `object`: Any, options: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJsonSync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def writeJsonSync(file: String, `object`: Any, options: WriteOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJsonSync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def writeJsonSync(file: String, `object`: Any, options: BufferEncoding): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJsonSync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def writeJsonSync(file: Path, obj: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJsonSync")(file.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def writeJsonSync(file: Path, obj: Any, options: JFWriteOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJsonSync")(file.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def writeSync(fd: Double, buffer: ArrayBufferView): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Double]
@@ -3221,29 +2148,9 @@ object mod {
   inline def writeSync(fd: Double, string: String, position: Null, encoding: BufferEncoding): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def writeSync(fd: Double, string: String, position: Unit, encoding: BufferEncoding): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def writev(fd: Double, buffers: js.Array[ArrayBufferView]): js.Promise[WritevResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("writev")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WritevResult]]
-  inline def writev(
-    fd: Double,
-    buffers: js.Array[ArrayBufferView],
-    cb: js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* bytesWritten */ Double, 
-      /* buffers */ js.Array[ArrayBufferView], 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writev")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def writev(fd: Double, buffers: js.Array[ArrayBufferView], position: Double): js.Promise[WritevResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("writev")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WritevResult]]
-  inline def writev(
-    fd: Double,
-    buffers: js.Array[ArrayBufferView],
-    position: Double,
-    cb: js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* bytesWritten */ Double, 
-      /* buffers */ js.Array[ArrayBufferView], 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writev")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], position.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("fs-extra-promise", "writev")
+  @js.native
+  val writev: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.writev.__promisify__ */ Any) & Typeofwritev = js.native
   
   inline def writevSync(fd: Double, buffers: js.Array[ArrayBufferView]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writevSync")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def writevSync(fd: Double, buffers: js.Array[ArrayBufferView], position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writevSync")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]

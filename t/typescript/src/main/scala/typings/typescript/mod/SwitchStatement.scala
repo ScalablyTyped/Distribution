@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SwitchStatement
   extends StObject
      with Statement
+     with FlowContainer
      with HasJSDoc {
   
   val caseBlock: CaseBlock = js.native

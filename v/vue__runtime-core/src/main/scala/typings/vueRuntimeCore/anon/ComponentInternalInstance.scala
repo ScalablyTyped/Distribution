@@ -6,8 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ComponentInternalInstance extends StObject {
   
-  // directly bailing on ComponentPublicInstance results in recursion
-  // so we use this as a bail hint
   @JSName("$")
   var $: typings.vueRuntimeCore.mod.ComponentInternalInstance
 }

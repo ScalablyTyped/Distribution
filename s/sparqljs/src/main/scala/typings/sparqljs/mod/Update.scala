@@ -10,6 +10,8 @@ trait Update
   extends StObject
      with SparqlQuery {
   
+  var base: js.UndefOr[String] = js.undefined
+  
   var prefixes: StringDictionary[String]
   
   var `type`: update
@@ -26,6 +28,10 @@ object Update {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Update] (val x: Self) extends AnyVal {
+    
+    inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    
+    inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
     
     inline def setPrefixes(value: StringDictionary[String]): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
     

@@ -72,9 +72,19 @@ trait Contact extends StObject {
   var QueueInfo: js.UndefOr[typings.awsSdk.clientsConnectMod.QueueInfo] = js.undefined
   
   /**
+    * The contactId that is related to this contact.
+    */
+  var RelatedContactId: js.UndefOr[ContactId] = js.undefined
+  
+  /**
     * The timestamp, in Unix epoch time format, at which to start running the inbound flow. 
     */
   var ScheduledTimestamp: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * Information about Amazon Connect Wisdom.
+    */
+  var WisdomInfo: js.UndefOr[typings.awsSdk.clientsConnectMod.WisdomInfo] = js.undefined
 }
 object Contact {
   
@@ -138,8 +148,16 @@ object Contact {
     
     inline def setQueueInfoUndefined: Self = StObject.set(x, "QueueInfo", js.undefined)
     
+    inline def setRelatedContactId(value: ContactId): Self = StObject.set(x, "RelatedContactId", value.asInstanceOf[js.Any])
+    
+    inline def setRelatedContactIdUndefined: Self = StObject.set(x, "RelatedContactId", js.undefined)
+    
     inline def setScheduledTimestamp(value: js.Date): Self = StObject.set(x, "ScheduledTimestamp", value.asInstanceOf[js.Any])
     
     inline def setScheduledTimestampUndefined: Self = StObject.set(x, "ScheduledTimestamp", js.undefined)
+    
+    inline def setWisdomInfo(value: WisdomInfo): Self = StObject.set(x, "WisdomInfo", value.asInstanceOf[js.Any])
+    
+    inline def setWisdomInfoUndefined: Self = StObject.set(x, "WisdomInfo", js.undefined)
   }
 }

@@ -16,7 +16,7 @@ object libIconsWalletFilledMod extends Shortcut {
   @js.native
   trait WalletFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_WalletFilledIconType: String = js.native

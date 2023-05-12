@@ -12,18 +12,18 @@ trait AssetDestinationEntry extends StObject {
   var AssetId: Id
   
   /**
-    * The S3 bucket that is the destination for the asset.
+    * The Amazon S3 bucket that is the destination for the asset.
     */
-  var Bucket: string
+  var Bucket: _String
   
   /**
     * The name of the object in Amazon S3 for the asset.
     */
-  var Key: js.UndefOr[string] = js.undefined
+  var Key: js.UndefOr[_String] = js.undefined
 }
 object AssetDestinationEntry {
   
-  inline def apply(AssetId: Id, Bucket: string): AssetDestinationEntry = {
+  inline def apply(AssetId: Id, Bucket: _String): AssetDestinationEntry = {
     val __obj = js.Dynamic.literal(AssetId = AssetId.asInstanceOf[js.Any], Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetDestinationEntry]
   }
@@ -33,9 +33,9 @@ object AssetDestinationEntry {
     
     inline def setAssetId(value: Id): Self = StObject.set(x, "AssetId", value.asInstanceOf[js.Any])
     
-    inline def setBucket(value: string): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: _String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    inline def setKey(value: string): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: _String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
   }

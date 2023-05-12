@@ -16,6 +16,8 @@ trait ThemeConfiguration extends StObject {
     */
   var Sheet: js.UndefOr[SheetStyle] = js.undefined
   
+  var Typography: js.UndefOr[typings.awsSdk.clientsQuicksightMod.Typography] = js.undefined
+  
   /**
     * Color properties that apply to the UI and to charts, excluding the colors that apply to data. 
     */
@@ -38,6 +40,10 @@ object ThemeConfiguration {
     inline def setSheet(value: SheetStyle): Self = StObject.set(x, "Sheet", value.asInstanceOf[js.Any])
     
     inline def setSheetUndefined: Self = StObject.set(x, "Sheet", js.undefined)
+    
+    inline def setTypography(value: Typography): Self = StObject.set(x, "Typography", value.asInstanceOf[js.Any])
+    
+    inline def setTypographyUndefined: Self = StObject.set(x, "Typography", js.undefined)
     
     inline def setUIColorPalette(value: UIColorPalette): Self = StObject.set(x, "UIColorPalette", value.asInstanceOf[js.Any])
     

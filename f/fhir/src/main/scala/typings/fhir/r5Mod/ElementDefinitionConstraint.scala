@@ -22,7 +22,7 @@ trait ElementDefinitionConstraint
   
   var _source: js.UndefOr[Element] = js.undefined
   
-  var _xpath: js.UndefOr[Element] = js.undefined
+  var _suppress: js.UndefOr[Element] = js.undefined
   
   /**
     * In the absense of an expression, the expression is likely not enforceable by validators, and might be missed by many systems.
@@ -55,9 +55,9 @@ trait ElementDefinitionConstraint
   var source: js.UndefOr[String] = js.undefined
   
   /**
-    * Elements SHALL use "f" as the namespace prefix for the FHIR namespace, and "x" for the xhtml namespace, and SHALL NOT use any other prefixes.     Note: XPath is generally considered not useful because it does not apply to JSON and other formats and because of XSLT implementation issues, and may be removed in the future.
+    * This element should only be present in a derived profile where a warning or hint has been determined to be spurious/incorrect. E.g. a warning encouraging the inclusion of an element that the profile explicitly prohibits.
     */
-  var xpath: js.UndefOr[String] = js.undefined
+  var suppress: js.UndefOr[Boolean] = js.undefined
 }
 object ElementDefinitionConstraint {
   
@@ -87,9 +87,9 @@ object ElementDefinitionConstraint {
     
     inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    inline def setXpath(value: String): Self = StObject.set(x, "xpath", value.asInstanceOf[js.Any])
+    inline def setSuppress(value: Boolean): Self = StObject.set(x, "suppress", value.asInstanceOf[js.Any])
     
-    inline def setXpathUndefined: Self = StObject.set(x, "xpath", js.undefined)
+    inline def setSuppressUndefined: Self = StObject.set(x, "suppress", js.undefined)
     
     inline def set_expression(value: Element): Self = StObject.set(x, "_expression", value.asInstanceOf[js.Any])
     
@@ -115,8 +115,8 @@ object ElementDefinitionConstraint {
     
     inline def set_sourceUndefined: Self = StObject.set(x, "_source", js.undefined)
     
-    inline def set_xpath(value: Element): Self = StObject.set(x, "_xpath", value.asInstanceOf[js.Any])
+    inline def set_suppress(value: Element): Self = StObject.set(x, "_suppress", value.asInstanceOf[js.Any])
     
-    inline def set_xpathUndefined: Self = StObject.set(x, "_xpath", js.undefined)
+    inline def set_suppressUndefined: Self = StObject.set(x, "_suppress", js.undefined)
   }
 }

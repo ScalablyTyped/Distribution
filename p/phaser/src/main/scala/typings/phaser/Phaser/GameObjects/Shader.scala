@@ -92,7 +92,7 @@ trait Shader
     * A reference to the GL Frame Buffer this Shader is drawing to.
     * This property is only set if you have called `Shader.setRenderToTexture`.
     */
-  var framebuffer: WebGLFramebuffer = js.native
+  var framebuffer: WebGLFramebuffer | Null = js.native
   
   /**
     * Returns the uniform object for the given key, or `null` if the uniform couldn't be found.
@@ -109,7 +109,7 @@ trait Shader
     * A reference to the WebGLTexture this Shader is rendering to.
     * This property is only set if you have called `Shader.setRenderToTexture`.
     */
-  var glTexture: WebGLTexture = js.native
+  var glTexture: WebGLTexture | Null = js.native
   
   /**
     * Called automatically during render.

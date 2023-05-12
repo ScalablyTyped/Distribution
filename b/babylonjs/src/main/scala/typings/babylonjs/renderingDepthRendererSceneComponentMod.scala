@@ -80,16 +80,153 @@ object renderingDepthRendererSceneComponentMod {
         * @param camera The camera to create the depth renderer on (default: scene's active camera)
         * @param storeNonLinearDepth Defines whether the depth is stored linearly like in Babylon Shadows or directly like glFragCoord.z
         * @param force32bitsFloat Forces 32 bits float when supported (else 16 bits float is prioritized over 32 bits float if supported)
+        * @param samplingMode The sampling mode to be used with the render target (Linear, Nearest...)
+        * @param storeCameraSpaceZ Defines whether the depth stored is the Z coordinate in camera space. If true, storeNonLinearDepth has no effect. (Default: false)
         * @returns the created depth renderer
         */
       def enableDepthRenderer(): DepthRenderer = js.native
       def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Boolean): DepthRenderer = js.native
       def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Boolean, force32bitsFloat: Boolean): DepthRenderer = js.native
+      def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Boolean, force32bitsFloat: Boolean, samplingMode: Double): DepthRenderer = js.native
+      def enableDepthRenderer(
+        camera: Unit,
+        storeNonLinearDepth: Boolean,
+        force32bitsFloat: Boolean,
+        samplingMode: Double,
+        storeCameraSpaceZ: Boolean
+      ): DepthRenderer = js.native
+      def enableDepthRenderer(
+        camera: Unit,
+        storeNonLinearDepth: Boolean,
+        force32bitsFloat: Boolean,
+        samplingMode: Unit,
+        storeCameraSpaceZ: Boolean
+      ): DepthRenderer = js.native
+      def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Boolean, force32bitsFloat: Unit, samplingMode: Double): DepthRenderer = js.native
+      def enableDepthRenderer(
+        camera: Unit,
+        storeNonLinearDepth: Boolean,
+        force32bitsFloat: Unit,
+        samplingMode: Double,
+        storeCameraSpaceZ: Boolean
+      ): DepthRenderer = js.native
+      def enableDepthRenderer(
+        camera: Unit,
+        storeNonLinearDepth: Boolean,
+        force32bitsFloat: Unit,
+        samplingMode: Unit,
+        storeCameraSpaceZ: Boolean
+      ): DepthRenderer = js.native
       def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Unit, force32bitsFloat: Boolean): DepthRenderer = js.native
+      def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Unit, force32bitsFloat: Boolean, samplingMode: Double): DepthRenderer = js.native
+      def enableDepthRenderer(
+        camera: Unit,
+        storeNonLinearDepth: Unit,
+        force32bitsFloat: Boolean,
+        samplingMode: Double,
+        storeCameraSpaceZ: Boolean
+      ): DepthRenderer = js.native
+      def enableDepthRenderer(
+        camera: Unit,
+        storeNonLinearDepth: Unit,
+        force32bitsFloat: Boolean,
+        samplingMode: Unit,
+        storeCameraSpaceZ: Boolean
+      ): DepthRenderer = js.native
+      def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Unit, force32bitsFloat: Unit, samplingMode: Double): DepthRenderer = js.native
+      def enableDepthRenderer(
+        camera: Unit,
+        storeNonLinearDepth: Unit,
+        force32bitsFloat: Unit,
+        samplingMode: Double,
+        storeCameraSpaceZ: Boolean
+      ): DepthRenderer = js.native
+      def enableDepthRenderer(
+        camera: Unit,
+        storeNonLinearDepth: Unit,
+        force32bitsFloat: Unit,
+        samplingMode: Unit,
+        storeCameraSpaceZ: Boolean
+      ): DepthRenderer = js.native
       def enableDepthRenderer(camera: Nullable[Camera]): DepthRenderer = js.native
       def enableDepthRenderer(camera: Nullable[Camera], storeNonLinearDepth: Boolean): DepthRenderer = js.native
       def enableDepthRenderer(camera: Nullable[Camera], storeNonLinearDepth: Boolean, force32bitsFloat: Boolean): DepthRenderer = js.native
+      def enableDepthRenderer(
+        camera: Nullable[Camera],
+        storeNonLinearDepth: Boolean,
+        force32bitsFloat: Boolean,
+        samplingMode: Double
+      ): DepthRenderer = js.native
+      def enableDepthRenderer(
+        camera: Nullable[Camera],
+        storeNonLinearDepth: Boolean,
+        force32bitsFloat: Boolean,
+        samplingMode: Double,
+        storeCameraSpaceZ: Boolean
+      ): DepthRenderer = js.native
+      def enableDepthRenderer(
+        camera: Nullable[Camera],
+        storeNonLinearDepth: Boolean,
+        force32bitsFloat: Boolean,
+        samplingMode: Unit,
+        storeCameraSpaceZ: Boolean
+      ): DepthRenderer = js.native
+      def enableDepthRenderer(
+        camera: Nullable[Camera],
+        storeNonLinearDepth: Boolean,
+        force32bitsFloat: Unit,
+        samplingMode: Double
+      ): DepthRenderer = js.native
+      def enableDepthRenderer(
+        camera: Nullable[Camera],
+        storeNonLinearDepth: Boolean,
+        force32bitsFloat: Unit,
+        samplingMode: Double,
+        storeCameraSpaceZ: Boolean
+      ): DepthRenderer = js.native
+      def enableDepthRenderer(
+        camera: Nullable[Camera],
+        storeNonLinearDepth: Boolean,
+        force32bitsFloat: Unit,
+        samplingMode: Unit,
+        storeCameraSpaceZ: Boolean
+      ): DepthRenderer = js.native
       def enableDepthRenderer(camera: Nullable[Camera], storeNonLinearDepth: Unit, force32bitsFloat: Boolean): DepthRenderer = js.native
+      def enableDepthRenderer(
+        camera: Nullable[Camera],
+        storeNonLinearDepth: Unit,
+        force32bitsFloat: Boolean,
+        samplingMode: Double
+      ): DepthRenderer = js.native
+      def enableDepthRenderer(
+        camera: Nullable[Camera],
+        storeNonLinearDepth: Unit,
+        force32bitsFloat: Boolean,
+        samplingMode: Double,
+        storeCameraSpaceZ: Boolean
+      ): DepthRenderer = js.native
+      def enableDepthRenderer(
+        camera: Nullable[Camera],
+        storeNonLinearDepth: Unit,
+        force32bitsFloat: Boolean,
+        samplingMode: Unit,
+        storeCameraSpaceZ: Boolean
+      ): DepthRenderer = js.native
+      def enableDepthRenderer(camera: Nullable[Camera], storeNonLinearDepth: Unit, force32bitsFloat: Unit, samplingMode: Double): DepthRenderer = js.native
+      def enableDepthRenderer(
+        camera: Nullable[Camera],
+        storeNonLinearDepth: Unit,
+        force32bitsFloat: Unit,
+        samplingMode: Double,
+        storeCameraSpaceZ: Boolean
+      ): DepthRenderer = js.native
+      def enableDepthRenderer(
+        camera: Nullable[Camera],
+        storeNonLinearDepth: Unit,
+        force32bitsFloat: Unit,
+        samplingMode: Unit,
+        storeCameraSpaceZ: Boolean
+      ): DepthRenderer = js.native
     }
   }
 }

@@ -81,6 +81,12 @@ open class InternalAbstractMeshDataInfo ()
   /* CompleteClass */
   var _positions: Nullable[js.Array[typings.babylonjs.BABYLON.Vector3]] = js.native
   
+  /** @internal
+    * Bounding info that is unnafected by the addition of thin instances
+    */
+  /* CompleteClass */
+  var _rawBoundingInfo: Nullable[typings.babylonjs.BABYLON.BoundingInfo] = js.native
+  
   /* CompleteClass */
   var _receiveShadows: Boolean = js.native
   

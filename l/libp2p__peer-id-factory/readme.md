@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__peer-id-factory
 
-Typings are for version 1.0.19
+Typings are for version 2.0.3
 
 ## Library description:
 Create PeerId instances

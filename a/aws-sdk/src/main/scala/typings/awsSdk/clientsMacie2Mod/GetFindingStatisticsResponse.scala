@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetFindingStatisticsResponse extends StObject {
   
   /**
-    * An array of objects, one for each group of findings that meet the filter criteria specified in the request.
+    * An array of objects, one for each group of findings that matches the filter criteria specified in the request.
     */
   var countsByGroup: js.UndefOr[listOfGroupCount] = js.undefined
 }

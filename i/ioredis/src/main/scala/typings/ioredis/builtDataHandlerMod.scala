@@ -42,7 +42,7 @@ object builtDataHandlerMod {
   
   trait Condition extends StObject {
     
-    var auth: String
+    var auth: js.UndefOr[String | (js.Tuple2[String, String])] = js.undefined
     
     var select: Double
     
@@ -50,19 +50,17 @@ object builtDataHandlerMod {
   }
   object Condition {
     
-    inline def apply(
-      auth: String,
-      select: Double,
-      subscriber: `false` | typings.ioredis.builtSubscriptionSetMod.default
-    ): Condition = {
-      val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], subscriber = subscriber.asInstanceOf[js.Any])
+    inline def apply(select: Double, subscriber: `false` | typings.ioredis.builtSubscriptionSetMod.default): Condition = {
+      val __obj = js.Dynamic.literal(select = select.asInstanceOf[js.Any], subscriber = subscriber.asInstanceOf[js.Any])
       __obj.asInstanceOf[Condition]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
       
-      inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: String | (js.Tuple2[String, String])): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      
+      inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
       
       inline def setSelect(value: Double): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
       
@@ -75,13 +73,13 @@ object builtDataHandlerMod {
     
     var commandQueue: ^[CommandItem] = js.native
     
-    var condition: Condition = js.native
+    var condition: Condition | Null = js.native
     
     def disconnect(reconnect: Boolean): Unit = js.native
     
     def handleReconnection(err: js.Error, item: CommandItem): Unit = js.native
     
-    def recoverFromFatalError(commandError: js.Error, err: js.Error, options: Any): Unit = js.native
+    def recoverFromFatalError(commandError: js.Error, err: js.Error, options: FlushQueueOptions): Unit = js.native
     
     var status: String = js.native
     
@@ -135,6 +133,32 @@ object builtDataHandlerMod {
       inline def setReturnReply(value: Any): Self = StObject.set(x, "returnReply", value.asInstanceOf[js.Any])
       
       inline def setShiftCommand(value: Any): Self = StObject.set(x, "shiftCommand", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait FlushQueueOptions extends StObject {
+    
+    var commandQueue: js.UndefOr[Boolean] = js.undefined
+    
+    var offlineQueue: js.UndefOr[Boolean] = js.undefined
+  }
+  object FlushQueueOptions {
+    
+    inline def apply(): FlushQueueOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FlushQueueOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlushQueueOptions] (val x: Self) extends AnyVal {
+      
+      inline def setCommandQueue(value: Boolean): Self = StObject.set(x, "commandQueue", value.asInstanceOf[js.Any])
+      
+      inline def setCommandQueueUndefined: Self = StObject.set(x, "commandQueue", js.undefined)
+      
+      inline def setOfflineQueue(value: Boolean): Self = StObject.set(x, "offlineQueue", value.asInstanceOf[js.Any])
+      
+      inline def setOfflineQueueUndefined: Self = StObject.set(x, "offlineQueue", js.undefined)
     }
   }
   

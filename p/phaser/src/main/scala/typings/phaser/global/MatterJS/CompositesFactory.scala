@@ -14,15 +14,15 @@ open class CompositesFactory ()
   /**
     * Creates a composite with simple car setup of bodies and constraints.
     * @method car
-    * @param {number} xx
-    * @param {number} yy
+    * @param {number} x
+    * @param {number} y
     * @param {number} width
     * @param {number} height
     * @param {number} wheelSize
     * @return {composite} A new composite car body
     */
   /* CompleteClass */
-  override def car(xx: Double, yy: Double, width: Double, height: Double, wheelSize: Double): CompositeType = js.native
+  override def car(x: Double, y: Double, width: Double, height: Double, wheelSize: Double): CompositeType = js.native
   
   /**
     * Chains all bodies in the given composite together using constraints.
@@ -61,22 +61,22 @@ open class CompositesFactory ()
   /**
     * Creates a composite with a Newton's Cradle setup of bodies and constraints.
     * @method newtonsCradle
-    * @param {number} xx
-    * @param {number} yy
+    * @param {number} x
+    * @param {number} y
     * @param {number} number
     * @param {number} size
     * @param {number} length
     * @return {composite} A new composite newtonsCradle body
     */
   /* CompleteClass */
-  override def newtonsCradle(xx: Double, yy: Double, number: Double, size: Double, length: Double): CompositeType = js.native
+  override def newtonsCradle(x: Double, y: Double, number: Double, size: Double, length: Double): CompositeType = js.native
   
   /**
     * Create a new composite containing bodies created in the callback in a pyramid arrangement.
     * This function uses the body's bounds to prevent overlaps.
     * @method pyramid
-    * @param {number} xx
-    * @param {number} yy
+    * @param {number} x
+    * @param {number} y
     * @param {number} columns
     * @param {number} rows
     * @param {number} columnGap
@@ -86,8 +86,8 @@ open class CompositesFactory ()
     */
   /* CompleteClass */
   override def pyramid(
-    xx: Double,
-    yy: Double,
+    x: Double,
+    y: Double,
     columns: Double,
     rows: Double,
     columnGap: Double,
@@ -98,8 +98,8 @@ open class CompositesFactory ()
   /**
     * Creates a simple soft body like object.
     * @method softBody
-    * @param {number} xx
-    * @param {number} yy
+    * @param {number} x
+    * @param {number} y
     * @param {number} columns
     * @param {number} rows
     * @param {number} columnGap
@@ -112,8 +112,8 @@ open class CompositesFactory ()
     */
   /* CompleteClass */
   override def softBody(
-    xx: Double,
-    yy: Double,
+    x: Double,
+    y: Double,
     columns: Double,
     rows: Double,
     columnGap: Double,
@@ -128,8 +128,8 @@ open class CompositesFactory ()
     * Create a new composite containing bodies created in the callback in a grid arrangement.
     * This function uses the body's bounds to prevent overlaps.
     * @method stack
-    * @param {number} xx
-    * @param {number} yy
+    * @param {number} x
+    * @param {number} y
     * @param {number} columns
     * @param {number} rows
     * @param {number} columnGap
@@ -139,8 +139,8 @@ open class CompositesFactory ()
     */
   /* CompleteClass */
   override def stack(
-    xx: Double,
-    yy: Double,
+    x: Double,
+    y: Double,
     columns: Double,
     rows: Double,
     columnGap: Double,

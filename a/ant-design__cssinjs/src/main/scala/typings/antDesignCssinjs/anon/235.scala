@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.AnimationDelay
+import typings.csstype.mod.Property.LetterSpacing
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `235` extends StObject {
   
   var value: js.UndefOr[
-    AnimationDelay[String] | (js.Array[
+    (LetterSpacing[Double | String]) | (js.Array[
       (Extract[
         js.UndefOr[
-          AnimationDelay[String] | js.Array[NonNullable[js.UndefOr[AnimationDelay[String]]]]
+          (LetterSpacing[Double | String]) | (js.Array[NonNullable[js.UndefOr[LetterSpacing[Double | String]]]])
         ], 
         String
-      ]) | NonNullable[js.UndefOr[AnimationDelay[String]]]
+      ]) | (NonNullable[js.UndefOr[LetterSpacing[Double | String]]])
     ])
   ] = js.native
 }

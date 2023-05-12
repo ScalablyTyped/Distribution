@@ -6,29 +6,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `304401403422503` extends StObject {
   
-  /** Response */
-  var `201`: ContentApplicationjsonColumnurl
+  /** @description Response */
+  var `201`: ContentApplicationjsonArchivedColumnname
   
-  var `304`: Any
+  var `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabelsreadonly['not_modified'] */ js.Any
   
-  var `401`: Content48
+  var `401`: Content36
   
-  var `403`: Content48
+  var `403`: Content36
   
-  /** Validation failed */
-  var `422`: Content435
+  /** @description Validation failed */
+  var `422`: Content499
   
-  /** Response */
+  /** @description Response */
   var `503`: ContentApplicationjsonCodeDocumentationurl
 }
 object `304401403422503` {
   
   inline def apply(
-    `201`: ContentApplicationjsonColumnurl,
-    `304`: Any,
-    `401`: Content48,
-    `403`: Content48,
-    `422`: Content435,
+    `201`: ContentApplicationjsonArchivedColumnname,
+    `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabelsreadonly['not_modified'] */ js.Any,
+    `401`: Content36,
+    `403`: Content36,
+    `422`: Content499,
     `503`: ContentApplicationjsonCodeDocumentationurl
   ): `304401403422503` = {
     val __obj = js.Dynamic.literal()
@@ -44,15 +44,17 @@ object `304401403422503` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `304401403422503`] (val x: Self) extends AnyVal {
     
-    inline def set201(value: ContentApplicationjsonColumnurl): Self = StObject.set(x, "201", value.asInstanceOf[js.Any])
+    inline def set201(value: ContentApplicationjsonArchivedColumnname): Self = StObject.set(x, "201", value.asInstanceOf[js.Any])
     
-    inline def set304(value: Any): Self = StObject.set(x, "304", value.asInstanceOf[js.Any])
+    inline def set304(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabelsreadonly['not_modified'] */ js.Any
+    ): Self = StObject.set(x, "304", value.asInstanceOf[js.Any])
     
-    inline def set401(value: Content48): Self = StObject.set(x, "401", value.asInstanceOf[js.Any])
+    inline def set401(value: Content36): Self = StObject.set(x, "401", value.asInstanceOf[js.Any])
     
-    inline def set403(value: Content48): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+    inline def set403(value: Content36): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
     
-    inline def set422(value: Content435): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
+    inline def set422(value: Content499): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
     
     inline def set503(value: ContentApplicationjsonCodeDocumentationurl): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
   }

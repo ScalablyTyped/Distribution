@@ -1,7 +1,7 @@
 
 # Scala.js typings for lru-memoizer
 
-Typings are for version 2.1.4
+Typings are for version 2.2.0
 
 ## Library description:
 Memoize functions results using an lru-cache.

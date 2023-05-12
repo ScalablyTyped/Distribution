@@ -16,7 +16,7 @@ object libIconsQqCircleFilledMod extends Shortcut {
   @js.native
   trait QqCircleFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_QqCircleFilledIconType: String = js.native

@@ -34,7 +34,7 @@ object materialsShaderMaterialMod {
       * Instantiate a new shader material.
       * The ShaderMaterial object has the necessary methods to pass data from your scene to the Vertex and Fragment Shaders and returns a material that can be applied to any mesh.
       * This returned material effects how the mesh will look based on the code in the shaders.
-      * @see https://doc.babylonjs.com/how_to/shader_material
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/shaders/shaderMaterial
       * @param name Define the name of the material in the scene
       * @param scene Define the scene the material belongs to
       * @param shaderPath Defines  the route to the shader code in one of three ways:
@@ -103,6 +103,8 @@ object materialsShaderMaterialMod {
     /* private */ var _textureSamplers: Any = js.native
     
     /* private */ var _textures: Any = js.native
+    
+    /* private */ var _uints: Any = js.native
     
     /* private */ var _uniformBuffers: Any = js.native
     
@@ -307,6 +309,14 @@ object materialsShaderMaterialMod {
       * @returns the material itself allowing "fluent" like uniform updates
       */
     def setTextureSampler(name: String, sampler: TextureSampler): ShaderMaterial = js.native
+    
+    /**
+      * Set a unsigned int in the shader.
+      * @param name Define the name of the uniform as defined in the shader
+      * @param value Define the value to give to the uniform
+      * @return the material itself allowing "fluent" like uniform updates
+      */
+    def setUInt(name: String, value: Double): ShaderMaterial = js.native
     
     /**
       * Set a uniform buffer in the shader

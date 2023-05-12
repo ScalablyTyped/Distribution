@@ -17,7 +17,7 @@ trait UpdateWorkforceRequest extends StObject {
   var SourceIpConfig: js.UndefOr[typings.awsSdk.clientsSagemakerMod.SourceIpConfig] = js.undefined
   
   /**
-    * The name of the private workforce that you want to update. You can find your workforce name by using the operation.
+    * The name of the private workforce that you want to update. You can find your workforce name by using the ListWorkforces operation.
     */
   var WorkforceName: typings.awsSdk.clientsSagemakerMod.WorkforceName
   

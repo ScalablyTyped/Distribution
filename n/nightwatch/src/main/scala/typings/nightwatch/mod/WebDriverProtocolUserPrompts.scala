@@ -12,11 +12,13 @@ trait WebDriverProtocolUserPrompts extends StObject {
     *
     * @example
     * browser.acceptAlert()
+    *
+    * @see https://nightwatchjs.org/api/acceptAlert.html#apimethod-container
     */
-  def acceptAlert(): this.type = js.native
+  def acceptAlert(): Awaitable[this.type, Null] = js.native
   def acceptAlert(
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   
   /**
     * Dismisses the currently displayed alert dialog. For confirm() and prompt() dialogs, this is equivalent to clicking the 'Cancel' button.
@@ -25,22 +27,26 @@ trait WebDriverProtocolUserPrompts extends StObject {
     *
     * @example
     * browser.dismissAlert();
+    *
+    * @see https://nightwatchjs.org/api/dismissAlert.html#apimethod-container
     */
-  def dismissAlert(): this.type = js.native
+  def dismissAlert(): Awaitable[this.type, Null] = js.native
   def dismissAlert(
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   
   /**
     * Gets the text of the currently displayed JavaScript alert(), confirm(), or prompt() dialog.
     *
     * @example
     * browser.getAlertText();
+    *
+    * @see https://nightwatchjs.org/api/getAlertText.html#apimethod-container
     */
-  def getAlertText(): this.type = js.native
+  def getAlertText(): Awaitable[this.type, String] = js.native
   def getAlertText(
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
-  ): this.type = js.native
+  ): Awaitable[this.type, String] = js.native
   
   /**
     * Automate the input of basic auth credentials whenever they arise.
@@ -52,23 +58,27 @@ trait WebDriverProtocolUserPrompts extends StObject {
     *      .navigateTo('http://browserspy.dk/password-ok.php');
     *  };
     *
+    * @see https://nightwatchjs.org/api/registerBasicAuth.html#apimethod-container
+    *
     */
-  def registerBasicAuth(username: String, password: String): this.type = js.native
+  def registerBasicAuth(username: String, password: String): Awaitable[this.type, Null] = js.native
   def registerBasicAuth(
     username: String,
     password: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
-  ): this.type = js.native
+  ): Awaitable[this.type, Null] = js.native
   
   /**
     * Sends keystrokes to a JavaScript prompt() dialog.
     *
     * @example
     * browser.setAlertText('randomalert');
+    *
+    * @see https://nightwatchjs.org/api/setAlertText.html#apimethod-container
     */
-  def setAlertText(value: String): this.type = js.native
+  def setAlertText(value: String): Awaitable[this.type, Null] = js.native
   def setAlertText(
     value: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
 }

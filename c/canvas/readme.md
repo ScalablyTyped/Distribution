@@ -1,7 +1,7 @@
 
 # Scala.js typings for canvas
 
-Typings are for version 2.10.2
+Typings are for version 2.11.2
 
 ## Library description:
 Canvas graphics API backed by Cairo

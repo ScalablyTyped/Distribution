@@ -223,6 +223,7 @@ object sapMAppMod {
     
     /**
       * @deprecated (since 1.20.0) - use {@link sap.ui.Device.orientation.attachHandler} instead.
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:orientationChange orientationChange} to attached listeners.
       *

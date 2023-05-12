@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@storybook/global" : "5.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@storybook/global" : "5.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -41,7 +41,7 @@ trait NutritionIntakeConsumedItem
   var schedule: js.UndefOr[Timing] = js.undefined
   
   /**
-    * Indicates what a category of item that was consumed: eg., food, fluid, enteral, etc.
+    * Indicates what a category of item that was consumed: e.g., food, fluid, enteral, etc.
     */
   var `type`: CodeableConcept
 }

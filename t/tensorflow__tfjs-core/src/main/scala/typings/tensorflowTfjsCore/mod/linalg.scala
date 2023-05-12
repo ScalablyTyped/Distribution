@@ -1,5 +1,6 @@
 package typings.tensorflowTfjsCore.mod
 
+import typings.tensorflowTfjsCore.distTensorMod.Scalar
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTensorMod.Tensor1D
 import typings.tensorflowTfjsCore.distTensorMod.Tensor2D
@@ -15,6 +16,9 @@ object linalg {
   val ^ : js.Any = js.native
   
   inline def bandPart[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: T | TensorLike, numLower: Double, numUpper: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bandPart")(a.asInstanceOf[js.Any], numLower.asInstanceOf[js.Any], numUpper.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def bandPart[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: T | TensorLike, numLower: Double, numUpper: Scalar): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bandPart")(a.asInstanceOf[js.Any], numLower.asInstanceOf[js.Any], numUpper.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def bandPart[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: T | TensorLike, numLower: Scalar, numUpper: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bandPart")(a.asInstanceOf[js.Any], numLower.asInstanceOf[js.Any], numUpper.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def bandPart[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: T | TensorLike, numLower: Scalar, numUpper: Scalar): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bandPart")(a.asInstanceOf[js.Any], numLower.asInstanceOf[js.Any], numUpper.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def gramSchmidt(xs: js.Array[Tensor1D]): Tensor2D | js.Array[Tensor1D] = ^.asInstanceOf[js.Dynamic].applyDynamic("gramSchmidt")(xs.asInstanceOf[js.Any]).asInstanceOf[Tensor2D | js.Array[Tensor1D]]
   inline def gramSchmidt(xs: Tensor2D): Tensor2D | js.Array[Tensor1D] = ^.asInstanceOf[js.Dynamic].applyDynamic("gramSchmidt")(xs.asInstanceOf[js.Any]).asInstanceOf[Tensor2D | js.Array[Tensor1D]]

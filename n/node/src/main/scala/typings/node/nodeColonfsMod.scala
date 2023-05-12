@@ -13,12 +13,14 @@ import typings.node.anon.ObjectEncodingOptionsflagEncoding
 import typings.node.anon.ObjectEncodingOptionsmode
 import typings.node.anon.ObjectEncodingOptionswith
 import typings.node.anon.ObjectEncodingOptionswithEncoding
+import typings.node.anon.Recursive
+import typings.node.anon.StatFsOptionsbigintfalseu
+import typings.node.anon.StatFsOptionsbiginttrue
 import typings.node.anon.StatOptionsbigintfalseund
 import typings.node.anon.StatOptionsbiginttrue
 import typings.node.anon.WatchFileOptionsbigintfal
 import typings.node.anon.WatchFileOptionsbiginttru
 import typings.node.anon.WatchOptionsencodingbuffe
-import typings.node.anon.WithFileTypes
 import typings.node.anon.`2`
 import typings.node.anon.encodingBufferEncodingfla
 import typings.node.anon.encodingBufferEncodingflaEncoding
@@ -27,6 +29,8 @@ import typings.node.anon.encodingnullundefinedflagEncoding
 import typings.node.bufferMod.global.Buffer
 import typings.node.bufferMod.global.BufferEncoding
 import typings.node.fsMod.BigIntStats
+import typings.node.fsMod.BigIntStatsFs
+import typings.node.fsMod.BigIntStatsListener
 import typings.node.fsMod.BufferEncodingOption
 import typings.node.fsMod.CopyOptions
 import typings.node.fsMod.CopySyncOptions
@@ -46,9 +50,11 @@ import typings.node.fsMod.ReadStreamOptions
 import typings.node.fsMod.ReadSyncOptions
 import typings.node.fsMod.RmDirOptions
 import typings.node.fsMod.RmOptions
+import typings.node.fsMod.StatFsOptions
 import typings.node.fsMod.StatOptions
 import typings.node.fsMod.StatSyncFn
 import typings.node.fsMod.StatWatcher
+import typings.node.fsMod.StatsListener
 import typings.node.fsMod.StreamOptions
 import typings.node.fsMod.TimeLike
 import typings.node.fsMod.WatchListener
@@ -96,6 +102,11 @@ object nodeColonfsMod {
   @js.native
   open class Stats ()
     extends typings.node.fsMod.Stats
+  
+  @JSImport("node:fs", "StatsFs")
+  @js.native
+  open class StatsFs ()
+    extends typings.node.fsMod.StatsFs
   
   @JSImport("node:fs", "WriteStream")
   @js.native
@@ -701,8 +712,7 @@ object nodeColonfsMod {
       * written by the current process.
       *
       * ```js
-      * import { access } from 'fs/promises';
-      * import { constants } from 'fs';
+      * import { access, constants } from 'node:fs/promises';
       *
       * try {
       *   await access('/etc/passwd', constants.R_OK | constants.W_OK);
@@ -1022,14 +1032,13 @@ object nodeColonfsMod {
       * will be made to remove the destination.
       *
       * ```js
-      * import { constants } from 'fs';
-      * import { copyFile } from 'fs/promises';
+      * import { copyFile, constants } from 'node:fs/promises';
       *
       * try {
       *   await copyFile('source.txt', 'destination.txt');
       *   console.log('source.txt was copied to destination.txt');
       * } catch {
-      *   console.log('The file could not be copied');
+      *   console.error('The file could not be copied');
       * }
       *
       * // By using COPYFILE_EXCL, the operation will fail if destination.txt exists.
@@ -1037,7 +1046,7 @@ object nodeColonfsMod {
       *   await copyFile('source.txt', 'destination.txt', constants.COPYFILE_EXCL);
       *   console.log('source.txt was copied to destination.txt');
       * } catch {
-      *   console.log('The file could not be copied');
+      *   console.error('The file could not be copied');
       * }
       * ```
       * @since v10.0.0
@@ -1129,6 +1138,19 @@ object nodeColonfsMod {
       * and sticky bits), or an object with a `mode` property and a `recursive`property indicating whether parent directories should be created. Calling`fsPromises.mkdir()` when `path` is a directory
       * that exists results in a
       * rejection only when `recursive` is false.
+      *
+      * ```js
+      * import { mkdir } from 'node:fs/promises';
+      *
+      * try {
+      *   const projectFolder = new URL('./test/project/', import.meta.url);
+      *   const createDir = await mkdir(projectFolder, { recursive: true });
+      *
+      *   console.log(`created ${createDir}`);
+      * } catch (err) {
+      *   console.error(err.message);
+      * }
+      * ```
       * @since v10.0.0
       * @return Upon success, fulfills with `undefined` if `recursive` is `false`, or the first directory path created if `recursive` is `true`.
       */
@@ -1148,10 +1170,12 @@ object nodeColonfsMod {
       * object with an `encoding` property specifying the character encoding to use.
       *
       * ```js
-      * import { mkdtemp } from 'fs/promises';
+      * import { mkdtemp } from 'node:fs/promises';
+      * import { join } from 'node:path';
+      * import { tmpdir } from 'node:os';
       *
       * try {
-      *   await mkdtemp(path.join(os.tmpdir(), 'foo-'));
+      *   await mkdtemp(join(tmpdir(), 'foo-'));
       * } catch (err) {
       *   console.error(err);
       * }
@@ -1160,9 +1184,9 @@ object nodeColonfsMod {
       * The `fsPromises.mkdtemp()` method will append the six randomly selected
       * characters directly to the `prefix` string. For instance, given a directory`/tmp`, if the intention is to create a temporary directory _within_`/tmp`, the`prefix` must end with a trailing
       * platform-specific path separator
-      * (`require('path').sep`).
+      * (`require('node:path').sep`).
       * @since v10.0.0
-      * @return Fulfills with a string containing the filesystem path of the newly created temporary directory.
+      * @return Fulfills with a string containing the file system path of the newly created temporary directory.
       */
     /**
       * Asynchronously creates a unique temporary directory.
@@ -1211,7 +1235,7 @@ object nodeColonfsMod {
       * Example using async iteration:
       *
       * ```js
-      * import { opendir } from 'fs/promises';
+      * import { opendir } from 'node:fs/promises';
       *
       * try {
       *   const dir = await opendir('./');
@@ -1243,11 +1267,25 @@ object nodeColonfsMod {
       * with an error. On FreeBSD, a representation of the directory's contents will be
       * returned.
       *
+      * An example of reading a `package.json` file located in the same directory of the
+      * running code:
+      *
+      * ```js
+      * import { readFile } from 'node:fs/promises';
+      * try {
+      *   const filePath = new URL('./package.json', import.meta.url);
+      *   const contents = await readFile(filePath, { encoding: 'utf8' });
+      *   console.log(contents);
+      * } catch (err) {
+      *   console.error(err.message);
+      * }
+      * ```
+      *
       * It is possible to abort an ongoing `readFile` using an `AbortSignal`. If a
       * request is aborted the promise returned is rejected with an `AbortError`:
       *
       * ```js
-      * import { readFile } from 'fs/promises';
+      * import { readFile } from 'node:fs/promises';
       *
       * try {
       *   const controller = new AbortController();
@@ -1308,7 +1346,7 @@ object nodeColonfsMod {
       * If `options.withFileTypes` is set to `true`, the resolved array will contain `fs.Dirent` objects.
       *
       * ```js
-      * import { readdir } from 'fs/promises';
+      * import { readdir } from 'node:fs/promises';
       *
       * try {
       *   const files = await readdir(path);
@@ -1440,13 +1478,24 @@ object nodeColonfsMod {
     inline def stat(path: PathLike, opts: StatOptions): js.Promise[Stats | BigIntStats] = (^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stats | BigIntStats]]
     
     /**
+      * @since v19.6.0, v18.15.0
+      * @return Fulfills with the {fs.StatFs} object for the given `path`.
+      */
+    inline def statfs(path: PathLike): js.Promise[StatsFs] = ^.asInstanceOf[js.Dynamic].applyDynamic("statfs")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[StatsFs]]
+    inline def statfs(path: PathLike, opts: StatFsOptionsbigintfalseu): js.Promise[StatsFs] = (^.asInstanceOf[js.Dynamic].applyDynamic("statfs")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StatsFs]]
+    inline def statfs(path: PathLike, opts: StatFsOptionsbiginttrue): js.Promise[BigIntStatsFs] = (^.asInstanceOf[js.Dynamic].applyDynamic("statfs")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BigIntStatsFs]]
+    inline def statfs(path: PathLike, opts: StatFsOptions): js.Promise[StatsFs | BigIntStatsFs] = (^.asInstanceOf[js.Dynamic].applyDynamic("statfs")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StatsFs | BigIntStatsFs]]
+    
+    /**
       * Creates a symbolic link.
       *
-      * The `type` argument is only used on Windows platforms and can be one of `'dir'`,`'file'`, or `'junction'`. Windows junction points require the destination path
-      * to be absolute. When using `'junction'`, the `target` argument will
+      * The `type` argument is only used on Windows platforms and can be one of `'dir'`,`'file'`, or `'junction'`. If the `type` argument is not a string, Node.js will
+      * autodetect `target` type and use `'file'` or `'dir'`. If the `target` does not
+      * exist, `'file'` will be used. Windows junction points require the destination
+      * path to be absolute. When using `'junction'`, the `target` argument will
       * automatically be normalized to absolute path.
       * @since v10.0.0
-      * @param [type='file']
+      * @param [type='null']
       * @return Fulfills with `undefined` upon success.
       */
     inline def symlink(target: PathLike, path: PathLike): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
@@ -1477,7 +1526,7 @@ object nodeColonfsMod {
       *
       * * Values can be either numbers representing Unix epoch time, `Date`s, or a
       * numeric string like `'123456789.0'`.
-      * * If the value can not be converted to a number, or is `NaN`, `Infinity` or`-Infinity`, an `Error` will be thrown.
+      * * If the value can not be converted to a number, or is `NaN`, `Infinity`, or`-Infinity`, an `Error` will be thrown.
       * @since v10.0.0
       * @return Fulfills with `undefined` upon success.
       */
@@ -1497,7 +1546,7 @@ object nodeColonfsMod {
       * Returns an async iterator that watches for changes on `filename`, where `filename`is either a file or a directory.
       *
       * ```js
-      * const { watch } = require('fs/promises');
+      * const { watch } = require('node:fs/promises');
       *
       * const ac = new AbortController();
       * const { signal } = ac;
@@ -1539,7 +1588,7 @@ object nodeColonfsMod {
     
     /**
       * Asynchronously writes data to a file, replacing the file if it already exists.`data` can be a string, a buffer, an
-      * [AsyncIterable](https://tc39.github.io/ecma262/#sec-asynciterable-interface) or
+      * [AsyncIterable](https://tc39.github.io/ecma262/#sec-asynciterable-interface), or an
       * [Iterable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterable_protocol) object.
       *
       * The `encoding` option is ignored if `data` is a buffer.
@@ -1562,8 +1611,8 @@ object nodeColonfsMod {
       * to be written.
       *
       * ```js
-      * import { writeFile } from 'fs/promises';
-      * import { Buffer } from 'buffer';
+      * import { writeFile } from 'node:fs/promises';
+      * import { Buffer } from 'node:buffer';
       *
       * try {
       *   const controller = new AbortController();
@@ -2035,7 +2084,7 @@ object nodeColonfsMod {
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def readdir(
     path: PathLike,
-    options: WithFileTypes,
+    options: Recursive,
     callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[String], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def readdir(
@@ -2053,7 +2102,7 @@ object nodeColonfsMod {
   inline def readdirSync(path: PathLike, options: Encoding): js.Array[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer]]
   inline def readdirSync(path: PathLike, options: ObjectEncodingOptionswith): js.Array[Buffer | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer | String]]
   inline def readdirSync(path: PathLike, options: ObjectEncodingOptionswithEncoding): js.Array[typings.node.fsMod.Dirent] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.node.fsMod.Dirent]]
-  inline def readdirSync(path: PathLike, options: WithFileTypes): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def readdirSync(path: PathLike, options: Recursive): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   inline def readdirSync(path: PathLike, options: BufferEncoding): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   inline def readdirSync_buffer(path: PathLike, options: buffer_): js.Array[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer]]
@@ -2226,6 +2275,46 @@ object nodeColonfsMod {
   @js.native
   val statSync: StatSyncFn = js.native
   
+  inline def statfs(
+    path: PathLike,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ typings.node.fsMod.StatsFs, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("statfs")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def statfs(
+    path: PathLike,
+    options: Unit,
+    callback: js.Function2[
+      ErrnoException | Null, 
+      BigIntStatsFs | (/* stats */ typings.node.fsMod.StatsFs), 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("statfs")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def statfs(
+    path: PathLike,
+    options: StatFsOptionsbigintfalseu,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ typings.node.fsMod.StatsFs, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("statfs")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def statfs(
+    path: PathLike,
+    options: StatFsOptionsbiginttrue,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ BigIntStatsFs, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("statfs")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def statfs(
+    path: PathLike,
+    options: StatFsOptions,
+    callback: js.Function2[
+      /* err */ ErrnoException | Null, 
+      /* stats */ typings.node.fsMod.StatsFs | BigIntStatsFs, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("statfs")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def statfsSync(path: PathLike): typings.node.fsMod.StatsFs = ^.asInstanceOf[js.Dynamic].applyDynamic("statfsSync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.StatsFs]
+  inline def statfsSync(path: PathLike, options: StatFsOptionsbigintfalseu): typings.node.fsMod.StatsFs = (^.asInstanceOf[js.Dynamic].applyDynamic("statfsSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.StatsFs]
+  inline def statfsSync(path: PathLike, options: StatFsOptionsbiginttrue): BigIntStatsFs = (^.asInstanceOf[js.Dynamic].applyDynamic("statfsSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BigIntStatsFs]
+  inline def statfsSync(path: PathLike, options: StatFsOptions): typings.node.fsMod.StatsFs | BigIntStatsFs = (^.asInstanceOf[js.Dynamic].applyDynamic("statfsSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.StatsFs | BigIntStatsFs]
+  
+  inline def statfsSync_Union(path: PathLike): typings.node.fsMod.StatsFs | BigIntStatsFs = ^.asInstanceOf[js.Dynamic].applyDynamic("statfsSync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.StatsFs | BigIntStatsFs]
+  
   inline def symlink(target: PathLike, path: PathLike, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def symlink(target: PathLike, path: PathLike, `type`: Null, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def symlink(target: PathLike, path: PathLike, `type`: Unit, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -2247,10 +2336,7 @@ object nodeColonfsMod {
   inline def unlinkSync(path: PathLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unlinkSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def unwatchFile(filename: PathLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unwatchFile")(filename.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def unwatchFile(
-    filename: PathLike,
-    listener: js.Function2[/* curr */ typings.node.fsMod.Stats, /* prev */ typings.node.fsMod.Stats, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unwatchFile")(filename.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unwatchFile(filename: PathLike, listener: BigIntStatsListener | StatsListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unwatchFile")(filename.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def utimes(path: PathLike, atime: TimeLike, mtime: TimeLike, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -2269,29 +2355,10 @@ object nodeColonfsMod {
   inline def watch(filename: PathLike, options: WatchOptions): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   inline def watch(filename: PathLike, options: WatchOptions, listener: WatchListener[Buffer | String]): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   
-  inline def watchFile(
-    filename: PathLike,
-    listener: js.Function2[/* curr */ typings.node.fsMod.Stats, /* prev */ typings.node.fsMod.Stats, Unit]
-  ): StatWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[StatWatcher]
-  inline def watchFile(
-    filename: PathLike,
-    options: Unit,
-    listener: js.Function2[
-      (/* curr */ BigIntStats) | (/* curr */ typings.node.fsMod.Stats), 
-      (/* prev */ BigIntStats) | (/* prev */ typings.node.fsMod.Stats), 
-      Unit
-    ]
-  ): StatWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[StatWatcher]
-  inline def watchFile(
-    filename: PathLike,
-    options: WatchFileOptionsbigintfal,
-    listener: js.Function2[/* curr */ typings.node.fsMod.Stats, /* prev */ typings.node.fsMod.Stats, Unit]
-  ): StatWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[StatWatcher]
-  inline def watchFile(
-    filename: PathLike,
-    options: WatchFileOptionsbiginttru,
-    listener: js.Function2[/* curr */ BigIntStats, /* prev */ BigIntStats, Unit]
-  ): StatWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[StatWatcher]
+  inline def watchFile(filename: PathLike, listener: StatsListener): StatWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[StatWatcher]
+  inline def watchFile(filename: PathLike, options: Unit, listener: BigIntStatsListener | StatsListener): StatWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[StatWatcher]
+  inline def watchFile(filename: PathLike, options: WatchFileOptionsbigintfal, listener: StatsListener): StatWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[StatWatcher]
+  inline def watchFile(filename: PathLike, options: WatchFileOptionsbiginttru, listener: BigIntStatsListener): StatWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[StatWatcher]
   
   inline def watch_buffer(filename: PathLike, options: buffer_): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
   inline def watch_buffer(filename: PathLike, options: buffer_, listener: WatchListener[Buffer]): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]

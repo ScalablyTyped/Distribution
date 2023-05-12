@@ -31,7 +31,7 @@ object libMosaicWindowMod {
     def this(props: InternalMosaicWindowProps[T]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: InternalMosaicWindowProps[T], context: Any) = this()
     
@@ -85,18 +85,10 @@ object libMosaicWindowMod {
     def this(props: MosaicWindowProps[T]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: MosaicWindowProps[T], context: Any) = this()
   }
-  
-  @JSImport("react-mosaic-component/lib/MosaicWindow", "SourceConnectedInternalMosaicWindow")
-  @js.native
-  val SourceConnectedInternalMosaicWindow: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_react-dnd.DndComponentClass<typeof InternalMosaicWindow, imported_react-dnd.Omit<InternalMosaicWindowProps<any> | InternalMosaicWindowProps<MosaicKey>, 'connectDragSource' | 'connectDragPreview'>> */ Any = js.native
-  
-  @JSImport("react-mosaic-component/lib/MosaicWindow", "SourceDropConnectedInternalMosaicWindow")
-  @js.native
-  val SourceDropConnectedInternalMosaicWindow: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_react-dnd.DndComponentClass<any, imported_react-dnd.Omit<unknown, never>> */ Any = js.native
   
   trait InternalDragSourceProps extends StObject {
     

@@ -163,14 +163,16 @@ object sapUiTablePluginsMultiSelectionPluginMod {
       * Gets current value of property {@link #getLimit limit}.
       *
       * Number of indices which can be selected in a range. Accepts positive integer values. If set to 0, the
-      * limit is disabled, and the Select All checkbox appears instead of the Deselect All button. **Note:**
-      * To avoid severe performance problems, the limit should only be set to 0 in the following cases:
+      * limit is disabled, and the Select All checkbox appears instead of the Deselect All button.
+      *
+      * **Note:** To avoid severe performance problems, the limit should only be set to 0 in the following cases:
       *
       * 	 - With client-side models
       * 	 - With server-side models if they are used in client mode
-      * 	 - If the entity set is small  In other cases, we recommend to set the limit to at least double
-      * 			the value of the {@link sap.ui.table.Table#getThreshold threshold} property of the related `sap.ui.table.Table`
-      * 			control.
+      * 	 - If the entity set is small
+      *
+      * In other cases, we recommend to set the limit to at least double the value of the {@link sap.ui.table.Table#getThreshold
+      * threshold} property of the related `sap.ui.table.Table` control.
       *
       * Default value is `200`.
       *
@@ -287,14 +289,16 @@ object sapUiTablePluginsMultiSelectionPluginMod {
       * Sets a new value for property {@link #getLimit limit}.
       *
       * Number of indices which can be selected in a range. Accepts positive integer values. If set to 0, the
-      * limit is disabled, and the Select All checkbox appears instead of the Deselect All button. **Note:**
-      * To avoid severe performance problems, the limit should only be set to 0 in the following cases:
+      * limit is disabled, and the Select All checkbox appears instead of the Deselect All button.
+      *
+      * **Note:** To avoid severe performance problems, the limit should only be set to 0 in the following cases:
       *
       * 	 - With client-side models
       * 	 - With server-side models if they are used in client mode
-      * 	 - If the entity set is small  In other cases, we recommend to set the limit to at least double
-      * 			the value of the {@link sap.ui.table.Table#getThreshold threshold} property of the related `sap.ui.table.Table`
-      * 			control.
+      * 	 - If the entity set is small
+      *
+      * In other cases, we recommend to set the limit to at least double the value of the {@link sap.ui.table.Table#getThreshold
+      * threshold} property of the related `sap.ui.table.Table` control.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -422,14 +426,16 @@ object sapUiTablePluginsMultiSelectionPluginMod {
     
     /**
       * Number of indices which can be selected in a range. Accepts positive integer values. If set to 0, the
-      * limit is disabled, and the Select All checkbox appears instead of the Deselect All button. **Note:**
-      * To avoid severe performance problems, the limit should only be set to 0 in the following cases:
+      * limit is disabled, and the Select All checkbox appears instead of the Deselect All button.
+      *
+      * **Note:** To avoid severe performance problems, the limit should only be set to 0 in the following cases:
       *
       * 	 - With client-side models
       * 	 - With server-side models if they are used in client mode
-      * 	 - If the entity set is small  In other cases, we recommend to set the limit to at least double
-      * 			the value of the {@link sap.ui.table.Table#getThreshold threshold} property of the related `sap.ui.table.Table`
-      * 			control.
+      * 	 - If the entity set is small
+      *
+      * In other cases, we recommend to set the limit to at least double the value of the {@link sap.ui.table.Table#getThreshold
+      * threshold} property of the related `sap.ui.table.Table` control.
       */
     var limit: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     

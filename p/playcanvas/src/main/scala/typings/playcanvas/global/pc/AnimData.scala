@@ -6,8 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Wraps a set of data used in animation.
-  *
-  * @ignore
   */
 @JSGlobal("pc.AnimData")
 @js.native

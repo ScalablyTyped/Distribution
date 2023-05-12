@@ -9,5 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class SpotLightHelper protected ()
   extends typings.three.mod.SpotLightHelper {
-  def this(light: typings.three.srcLightsLightMod.Light) = this()
+  /**
+    * Create a new instance of {@link SpotLightHelper}
+    * @param light The {@link THREE.SpotLight | SpotLight} to be visualized.
+    * @param color If this is not the set the helper will take the color of the light. Default `light.color`
+    */
+  def this(light: typings.three.srcLightsLightMod.Light[
+        js.UndefOr[
+          typings.three.srcLightsLightShadowMod.LightShadow[typings.three.srcCamerasCameraMod.Camera]
+        ]
+      ]) = this()
 }

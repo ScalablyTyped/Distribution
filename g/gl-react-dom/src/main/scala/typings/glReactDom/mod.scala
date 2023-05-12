@@ -16,7 +16,7 @@ object mod {
     def this(props: typings.glReact.mod.SurfaceProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: typings.glReact.mod.SurfaceProps, context: Any) = this()
   }

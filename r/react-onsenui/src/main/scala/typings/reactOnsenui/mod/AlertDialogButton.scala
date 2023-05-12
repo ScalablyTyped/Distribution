@@ -12,7 +12,7 @@ open class AlertDialogButton protected () extends Component[DisabledModifier, An
   def this(props: HTMLAttributesidclassName & DisabledModifier) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: HTMLAttributesidclassName & DisabledModifier, context: Any) = this()
 }

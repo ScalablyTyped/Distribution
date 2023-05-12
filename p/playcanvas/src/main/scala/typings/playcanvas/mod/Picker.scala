@@ -18,13 +18,12 @@ open class Picker protected () extends StObject {
   /**
     * Create a new Picker instance.
     *
-    * @param {AppBase} app - The application managing this picker instance.
+    * @param {import('../app-base.js').AppBase} app - The application managing this picker
+    * instance.
     * @param {number} width - The width of the pick buffer in pixels.
     * @param {number} height - The height of the pick buffer in pixels.
     */
   def this(app: AppBase, width: Double, height: Double) = this()
-  
-  var _renderTarget: Any = js.native
   
   def allocateRenderTarget(): Unit = js.native
   
@@ -44,13 +43,14 @@ open class Picker protected () extends StObject {
     * @param {number} y - The top edge of the rectangle.
     * @param {number} [width] - The width of the rectangle.
     * @param {number} [height] - The height of the rectangle.
-    * @returns {MeshInstance[]} An array of mesh instances that are in the selection.
+    * @returns {import('../../scene/mesh-instance.js').MeshInstance[]} An array of mesh instances
+    * that are in the selection.
     * @example
     * // Get the selection at the point (10,20)
-    * var selection = picker.getSelection(10, 20);
+    * const selection = picker.getSelection(10, 20);
     * @example
     * // Get all models in rectangle with corners at (10,20) and (20,40)
-    * var selection = picker.getSelection(10, 20, 10, 20);
+    * const selection = picker.getSelection(10, 20, 10, 20);
     */
   def getSelection(x: Double, y: Double): js.Array[MeshInstance] = js.native
   def getSelection(x: Double, y: Double, width: Double): js.Array[MeshInstance] = js.native
@@ -75,8 +75,10 @@ open class Picker protected () extends StObject {
     * be called multiple times on the same picker object. Therefore, if the models or camera do
     * not change in any way, {@link Picker#prepare} does not need to be called again.
     *
-    * @param {CameraComponent} camera - The camera component used to render the scene.
-    * @param {Scene} scene - The scene containing the pickable mesh instances.
+    * @param {import('../components/camera/component.js').CameraComponent} camera - The camera
+    * component used to render the scene.
+    * @param {import('../../scene/scene.js').Scene} scene - The scene containing the pickable mesh
+    * instances.
     * @param {Layer[]} [layers] - Layers from which objects will be picked. If not supplied, all layers of the specified camera will be used.
     */
   def prepare(camera: CameraComponent, scene: Scene_): Unit = js.native
@@ -84,7 +86,7 @@ open class Picker protected () extends StObject {
   
   def releaseRenderTarget(): Unit = js.native
   
-  var renderTarget: RenderTarget = js.native
+  var renderTarget: Any = js.native
   
   /**
     * Sets the resolution of the pick buffer. The pick buffer resolution does not need to match

@@ -8,13 +8,11 @@ trait ISerializedGast extends StObject {
   
   var definition: js.UndefOr[js.Array[ISerializedGast]] = js.undefined
   
-  var `type`: typings.chevrotainTypes.chevrotainTypesStrings.NonTerminal | typings.chevrotainTypes.chevrotainTypesStrings.Alternative | typings.chevrotainTypes.chevrotainTypesStrings.Option | typings.chevrotainTypes.chevrotainTypesStrings.RepetitionMandatory | typings.chevrotainTypes.chevrotainTypesStrings.RepetitionMandatoryWithSeparator | typings.chevrotainTypes.chevrotainTypesStrings.Repetition | typings.chevrotainTypes.chevrotainTypesStrings.RepetitionWithSeparator | typings.chevrotainTypes.chevrotainTypesStrings.Alternation | typings.chevrotainTypes.chevrotainTypesStrings.Terminal | typings.chevrotainTypes.chevrotainTypesStrings.Rule
+  var `type`: ProductionType
 }
 object ISerializedGast {
   
-  inline def apply(
-    `type`: typings.chevrotainTypes.chevrotainTypesStrings.NonTerminal | typings.chevrotainTypes.chevrotainTypesStrings.Alternative | typings.chevrotainTypes.chevrotainTypesStrings.Option | typings.chevrotainTypes.chevrotainTypesStrings.RepetitionMandatory | typings.chevrotainTypes.chevrotainTypesStrings.RepetitionMandatoryWithSeparator | typings.chevrotainTypes.chevrotainTypesStrings.Repetition | typings.chevrotainTypes.chevrotainTypesStrings.RepetitionWithSeparator | typings.chevrotainTypes.chevrotainTypesStrings.Alternation | typings.chevrotainTypes.chevrotainTypesStrings.Terminal | typings.chevrotainTypes.chevrotainTypesStrings.Rule
-  ): ISerializedGast = {
+  inline def apply(`type`: ProductionType): ISerializedGast = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISerializedGast]
@@ -29,8 +27,6 @@ object ISerializedGast {
     
     inline def setDefinitionVarargs(value: ISerializedGast*): Self = StObject.set(x, "definition", js.Array(value*))
     
-    inline def setType(
-      value: typings.chevrotainTypes.chevrotainTypesStrings.NonTerminal | typings.chevrotainTypes.chevrotainTypesStrings.Alternative | typings.chevrotainTypes.chevrotainTypesStrings.Option | typings.chevrotainTypes.chevrotainTypesStrings.RepetitionMandatory | typings.chevrotainTypes.chevrotainTypesStrings.RepetitionMandatoryWithSeparator | typings.chevrotainTypes.chevrotainTypesStrings.Repetition | typings.chevrotainTypes.chevrotainTypesStrings.RepetitionWithSeparator | typings.chevrotainTypes.chevrotainTypesStrings.Alternation | typings.chevrotainTypes.chevrotainTypesStrings.Terminal | typings.chevrotainTypes.chevrotainTypesStrings.Rule
-    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ProductionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

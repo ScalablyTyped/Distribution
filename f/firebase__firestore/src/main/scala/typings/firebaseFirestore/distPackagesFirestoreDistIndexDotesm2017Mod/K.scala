@@ -5,39 +5,27 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * A CredentialsProvider that always yields an empty token.
-  * @internal
-  */ trait K extends StObject {
+  * @license
+  * Copyright 2017 Google LLC
+  *
+  * Licensed under the Apache License, Version 2.0 (the "License");
+  * you may not use this file except in compliance with the License.
+  * You may obtain a copy of the License at
+  *
+  *   http://www.apache.org/licenses/LICENSE-2.0
+  *
+  * Unless required by applicable law or agreed to in writing, software
+  * distributed under the License is distributed on an "AS IS" BASIS,
+  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  * See the License for the specific language governing permissions and
+  * limitations under the License.
+  */ @js.native
+trait K extends StObject {
   
-  def getToken(): js.Promise[Null]
+  var promise: js.Promise[Any] = js.native
   
-  def invalidateToken(): Unit
+  def reject(): Unit = js.native
+  def reject(reason: Any): Unit = js.native
   
-  def shutdown(): Unit
-  
-  def start(t: Any, e: Any): Unit
-}
-object K {
-  
-  inline def apply(
-    getToken: () => js.Promise[Null],
-    invalidateToken: () => Unit,
-    shutdown: () => Unit,
-    start: (Any, Any) => Unit
-  ): K = {
-    val __obj = js.Dynamic.literal(getToken = js.Any.fromFunction0(getToken), invalidateToken = js.Any.fromFunction0(invalidateToken), shutdown = js.Any.fromFunction0(shutdown), start = js.Any.fromFunction2(start))
-    __obj.asInstanceOf[K]
-  }
-  
-  @scala.inline
-  implicit open class MutableBuilder[Self <: K] (val x: Self) extends AnyVal {
-    
-    inline def setGetToken(value: () => js.Promise[Null]): Self = StObject.set(x, "getToken", js.Any.fromFunction0(value))
-    
-    inline def setInvalidateToken(value: () => Unit): Self = StObject.set(x, "invalidateToken", js.Any.fromFunction0(value))
-    
-    inline def setShutdown(value: () => Unit): Self = StObject.set(x, "shutdown", js.Any.fromFunction0(value))
-    
-    inline def setStart(value: (Any, Any) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
-  }
+  def resolve(value: Any): Unit = js.native
 }

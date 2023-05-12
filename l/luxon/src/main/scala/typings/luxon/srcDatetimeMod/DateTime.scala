@@ -1,6 +1,8 @@
 package typings.luxon.srcDatetimeMod
 
-import typings.luxon.anon.IncludeConfig
+import typings.luxon.anon.`0`
+import typings.luxon.luxonBooleans.`false`
+import typings.luxon.luxonStrings.`Invalid DateTime`
 import typings.luxon.srcDurationMod.Duration
 import typings.luxon.srcDurationMod.DurationLike
 import typings.luxon.srcDurationMod.DurationUnits
@@ -8,6 +10,7 @@ import typings.luxon.srcIntervalMod.Interval
 import typings.luxon.srcIntervalMod._DateInput
 import typings.luxon.srcMiscMod.DateTimeFormatOptions
 import typings.luxon.srcMiscMod.ZoneOptions
+import typings.luxon.srcUtilMod.IfInvalid
 import typings.luxon.srcZoneMod.Zone
 import typings.std.Intl.DateTimeFormatPart
 import org.scalablytyped.runtime.StObject
@@ -26,7 +29,7 @@ open class DateTime protected ()
     *
     * @example DateTime.local(2017, 5, 25).day //=> 25
     */
-  def day: DayNumbers = js.native
+  def day: DayNumbers | IfInvalid[Double] = js.native
   
   /**
     * Returns the number of days in this DateTime's month
@@ -36,7 +39,7 @@ open class DateTime protected ()
     * @example
     * DateTime.local(2016, 3).daysInMonth //=> 31
     */
-  def daysInMonth: PossibleDaysInMonth = js.native
+  def daysInMonth: PossibleDaysInMonth | IfInvalid[Unit] = js.native
   
   /**
     * Returns the number of days in this DateTime's year
@@ -46,19 +49,21 @@ open class DateTime protected ()
     * @example
     * DateTime.local(2013).daysInYear //=> 365
     */
-  def daysInYear: PossibleDaysInYear = js.native
+  def daysInYear: PossibleDaysInYear | IfInvalid[Double] = js.native
   
   // COMPARE
   /**
     * Return the difference between two DateTimes as a Duration.
     *
     * @param otherDateTime - the DateTime to compare this one to
-    * @param unit- the unit or array of units (such as 'hours' or 'days') to include in the duration. Defaults to ['milliseconds'].
+    * @param unit - the unit or array of units to include in the duration.
+    * Defaults to ['milliseconds'].
     * @param opts - options that affect the creation of the Duration
-    * @param opts.conversionAccuracy - the conversion system to use. Defaults to 'casual'.
+    * @param opts.conversionAccuracy - the conversion system to use.
+    * Defaults to 'casual'.
     *
     * @example
-    * var i1 = DateTime.fromISO('1982-05-25T09:45'),
+    * let i1 = DateTime.fromISO('1982-05-25T09:45'),
     *     i2 = DateTime.fromISO('1983-10-14T10:30');
     * i2.diff(i1).toObject() //=> { milliseconds: 43807500000 }
     * i2.diff(i1, 'hours').toObject() //=> { hours: 12168.75 }
@@ -74,7 +79,7 @@ open class DateTime protected ()
     * Return the difference between this DateTime and right now.
     * See {@link DateTime.diff}
     *
-    * @param unit - the unit or units units (such as 'hours' or 'days') to include in the duration. Defaults to ['milliseconds'].
+    * @param unit - the unit(s) to include in the duration. Defaults to ['milliseconds'].
     * @param opts - options that affect the creation of the Duration
     * @param opts.conversionAccuracy - the conversion system to use. Defaults to 'casual'.
     */
@@ -102,13 +107,13 @@ open class DateTime protected ()
   def endOf(unit: DateTimeUnit): DateTime = js.native
   
   /**
-    * Equality check
-    * Two DateTimes are equal iff they represent the same millisecond, have the same zone and location, and are both valid.
+    * An equality check.
+    * Two DateTimes are equal if and only if they represent the same millisecond, have the same zone and location, and are both valid.
     * To compare just the millisecond values, use `+dt1 === +dt2`.
     *
     * @param other - the other DateTime
     */
-  def equals(other: DateTime): Boolean = js.native
+  def equals(other: DateTime): Boolean | IfInvalid[`false`] = js.native
   
   // INFO
   /**
@@ -135,14 +140,14 @@ open class DateTime protected ()
     * @example
     * DateTime.now().hasSame(otherDT, 'day'); //~> true if otherDT is in the same current calendar day
     */
-  def hasSame(otherDateTime: DateTime, unit: DateTimeUnit): Boolean = js.native
+  def hasSame(otherDateTime: DateTime, unit: DateTimeUnit): Boolean | IfInvalid[`false`] = js.native
   
   /**
     * Get the hour of the day (0-23).
     *
     * @example DateTime.local(2017, 5, 25, 9).hour //=> 9
     */
-  def hour: HourNumbers = js.native
+  def hour: HourNumbers | IfInvalid[Double] = js.native
   
   /**
     * Returns an explanation of why this DateTime became invalid, or null if the DateTime is valid
@@ -157,7 +162,7 @@ open class DateTime protected ()
   /**
     * Get whether the DateTime is in a DST.
     */
-  def isInDST: Boolean = js.native
+  def isInDST: Boolean | IfInvalid[`false`] = js.native
   
   /**
     * Returns true if this DateTime is in a leap year, false otherwise
@@ -172,7 +177,7 @@ open class DateTime protected ()
   /**
     * Get whether this zone's offset ever changes, as in a DST.
     */
-  def isOffsetFixed: Boolean = js.native
+  def isOffsetFixed: Boolean | IfInvalid[Null] = js.native
   
   /**
     * Returns whether the DateTime is valid. Invalid DateTimes occur when:
@@ -182,9 +187,9 @@ open class DateTime protected ()
   def isValid: Boolean = js.native
   
   /**
-    * Get the locale of a DateTime, such 'en-GB'. The locale is used when formatting the DateTime
+    * Get the locale of a DateTime, such as 'en-GB'. The locale is used when formatting the DateTime
     */
-  def locale: String = js.native
+  def locale: String | IfInvalid[Null] = js.native
   
   /**
     * Get the millisecond of the second (0-999).
@@ -192,7 +197,7 @@ open class DateTime protected ()
     * @example
     * DateTime.local(2017, 5, 25, 9, 30, 52, 654).millisecond //=> 654
     */
-  def millisecond: Double = js.native
+  def millisecond: Double | IfInvalid[Double] = js.native
   
   /**
     * See {@link DateTime.plus}
@@ -207,14 +212,14 @@ open class DateTime protected ()
     * @example
     * DateTime.local(2017, 5, 25, 9, 30).minute //=> 30
     */
-  def minute: MinuteNumbers = js.native
+  def minute: MinuteNumbers | IfInvalid[Double] = js.native
   
   /**
     * Get the month (1-12).
     *
     * @example DateTime.local(2017, 5, 25).month //=> 5
     */
-  def month: MonthNumbers = js.native
+  def month: MonthNumbers | IfInvalid[Double] = js.native
   
   /**
     * Get the human readable long month name, such as 'October'.
@@ -223,7 +228,7 @@ open class DateTime protected ()
     * @example
     * DateTime.local(2017, 10, 30).monthLong //=> October
     */
-  def monthLong: String = js.native
+  def monthLong: String | IfInvalid[Null] = js.native
   
   /**
     * Get the human readable short month name, such as 'Oct'.
@@ -232,12 +237,12 @@ open class DateTime protected ()
     * @example
     * DateTime.local(2017, 10, 30).monthShort //=> Oct
     */
-  def monthShort: String = js.native
+  def monthShort: String | IfInvalid[Null] = js.native
   
   /**
-    * Get the numbering system of a DateTime, such 'beng'. The numbering system is used when formatting the DateTime
+    * Get the numbering system of a DateTime, such as 'beng'. The numbering system is used when formatting the DateTime
     */
-  def numberingSystem: String = js.native
+  def numberingSystem: String | IfInvalid[Null] = js.native
   
   /**
     * Get the UTC offset of this DateTime in minutes
@@ -247,19 +252,19 @@ open class DateTime protected ()
     * @example
     * DateTime.utc().offset //=> 0
     */
-  def offset: Double = js.native
+  def offset: Double | IfInvalid[Double] = js.native
   
   /**
     * Get the long human name for the zone's current offset, for example "Eastern Standard Time" or "Eastern Daylight Time".
     * Defaults to the system's locale if no locale has been specified
     */
-  def offsetNameLong: String = js.native
+  def offsetNameLong: String | IfInvalid[Null] = js.native
   
   /**
     * Get the short human name for the zone's current offset, for example "EST" or "EDT".
     * Defaults to the system's locale if no locale has been specified
     */
-  def offsetNameShort: String = js.native
+  def offsetNameShort: String | IfInvalid[Null] = js.native
   
   /**
     * Get the ordinal (meaning the day of the year)
@@ -267,12 +272,12 @@ open class DateTime protected ()
     * @example
     * DateTime.local(2017, 5, 25).ordinal //=> 145
     */
-  def ordinal: Double = js.native
+  def ordinal: Double | IfInvalid[Double] = js.native
   
   /**
-    * Get the output calendar of a DateTime, such 'islamic'. The output calendar is used when formatting the DateTime
+    * Get the output calendar of a DateTime, such as 'islamic'. The output calendar is used when formatting the DateTime
     */
-  def outputCalendar: String = js.native
+  def outputCalendar: String | IfInvalid[Null] = js.native
   
   /**
     * Adding hours, minutes, seconds, or milliseconds increases the timestamp by the right number of milliseconds. Adding days, months, or years shifts the calendar,
@@ -300,7 +305,7 @@ open class DateTime protected ()
     *
     * @example DateTime.local(2017, 5, 25).quarter //=> 2
     */
-  def quarter: QuarterNumbers = js.native
+  def quarter: QuarterNumbers | IfInvalid[Double] = js.native
   
   /**
     * "Set" the locale, numberingSystem, or outputCalendar. Returns a newly-constructed DateTime.
@@ -328,7 +333,7 @@ open class DateTime protected ()
     * @example
     * DateTime.local(2017, 5, 25, 9, 30, 52).second //=> 52
     */
-  def second: SecondNumbers = js.native
+  def second: SecondNumbers | IfInvalid[Double] = js.native
   
   /**
     * "Set" the values of specified units. Returns a newly-constructed DateTime.
@@ -363,7 +368,7 @@ open class DateTime protected ()
     * as with {@link DateTime.plus}. You may wish to use {@link DateTime.toLocal} and {@link DateTime.toUTC} which provide simple convenience wrappers for commonly used zones.
     *
     * @param zone - a zone identifier. As a string, that can be any IANA zone supported by the host environment, or a fixed-offset name of the form 'UTC+3', or the strings 'local' or 'utc'.
-    * You may also supply an instance of a {@link DateTime.Zone} class. Defaults to 'local'.
+    * You may also supply an instance of a {@link Zone} class. Defaults to 'local'.
     * @param opts - options
     * @param opts.keepLocalTime - If true, adjust the underlying time so that the local time stays the same, but in the target zone. You should rarely need this. Defaults to false.
     */
@@ -375,7 +380,7 @@ open class DateTime protected ()
   def setZone(zone: Zone, opts: ZoneOptions): DateTime = js.native
   
   /**
-    * "Set" this DateTime to the beginning of a unit of time.
+    * "Set" this DateTime to the beginning of the given unit.
     *
     * @param unit - The unit to go to the beginning of. Can be 'year', 'quarter', 'month', 'week', 'day', 'hour', 'minute', 'second', or 'millisecond'.
     *
@@ -393,7 +398,7 @@ open class DateTime protected ()
   def startOf(unit: DateTimeUnit): DateTime = js.native
   
   /**
-    * Returns a BSON serializable equivalent to this DateTime.
+    * Returns a BSON-serializable equivalent to this DateTime.
     */
   def toBSON(): js.Date = js.native
   
@@ -416,8 +421,8 @@ open class DateTime protected ()
     * @example
     * DateTime.now().toFormat("HH 'hours and' mm 'minutes'") //=> '20 hours and 55 minutes'
     */
-  def toFormat(fmt: String): String = js.native
-  def toFormat(fmt: String, opts: LocaleOptions): String = js.native
+  def toFormat(fmt: String): String | (IfInvalid[`Invalid DateTime`]) = js.native
+  def toFormat(fmt: String, opts: LocaleOptions): String | (IfInvalid[`Invalid DateTime`]) = js.native
   
   /**
     * Returns a string representation of this DateTime appropriate for use in HTTP headers.
@@ -429,16 +434,10 @@ open class DateTime protected ()
     * @example
     * DateTime.utc(2014, 7, 13, 19).toHTTP() //=> 'Sun, 13 Jul 2014 19:00:00 GMT'
     */
-  def toHTTP(): String = js.native
+  def toHTTP(): String | IfInvalid[Null] = js.native
   
   /**
     * Returns an ISO 8601-compliant string representation of this DateTime
-    *
-    * @param opts - options
-    * @param opts.suppressMilliseconds - exclude milliseconds from the format if they're 0. Defaults to false.
-    * @param opts.suppressSeconds - exclude seconds from the format if they're 0. Defaults to false.
-    * @param opts.includeOffset - include the offset, such as 'Z' or '-04:00'. Defaults to true.
-    * @param opts.format - choose between the basic and extended format. Defaults to 'extended'.
     *
     * @example
     * DateTime.utc(1982, 5, 25).toISO() //=> '1982-05-25T00:00:00.000Z'
@@ -449,8 +448,8 @@ open class DateTime protected ()
     * @example
     * DateTime.now().toISO({ format: 'basic' }) //=> '20170422T204705.335-0400'
     */
-  def toISO(): String = js.native
-  def toISO(opts: ToISOTimeOptions): String = js.native
+  def toISO(): String | IfInvalid[Null] = js.native
+  def toISO(opts: ToISOTimeOptions): String | IfInvalid[Null] = js.native
   
   /**
     * Returns an ISO 8601-compliant string representation of this DateTime's date component
@@ -463,8 +462,8 @@ open class DateTime protected ()
     * @example
     * DateTime.utc(1982, 5, 25).toISODate({ format: 'basic' }) //=> '19820525'
     */
-  def toISODate(): String = js.native
-  def toISODate(opts: ToISODateOptions): String = js.native
+  def toISODate(): String | IfInvalid[Null] = js.native
+  def toISODate(opts: ToISODateOptions): String | IfInvalid[Null] = js.native
   
   /**
     * Returns an ISO 8601-compliant string representation of this DateTime's time component
@@ -485,8 +484,8 @@ open class DateTime protected ()
     * @example
     * DateTime.utc().set({ hour: 7, minute: 34 }).toISOTime({ includePrefix: true }) //=> 'T07:34:19.361Z'
     */
-  def toISOTime(): String = js.native
-  def toISOTime(ops: ToISOTimeOptions): String = js.native
+  def toISOTime(): String | IfInvalid[Null] = js.native
+  def toISOTime(opts: ToISOTimeOptions): String | IfInvalid[Null] = js.native
   
   /**
     * Returns an ISO 8601-compliant string representation of this DateTime's week date
@@ -494,7 +493,7 @@ open class DateTime protected ()
     * @example
     * DateTime.utc(1982, 5, 25).toISOWeekDate() //=> '1982-W21-2'
     */
-  def toISOWeekDate(): String = js.native
+  def toISOWeekDate(): String | IfInvalid[Null] = js.native
   
   /**
     * Returns a JavaScript Date equivalent to this DateTime.
@@ -504,7 +503,7 @@ open class DateTime protected ()
   /**
     * Returns an ISO 8601 representation of this DateTime appropriate for use in JSON.
     */
-  def toJSON(): String = js.native
+  def toJSON(): String | IfInvalid[Null] = js.native
   
   /**
     * "Set" the DateTime's zone to the host's local zone. Returns a newly-constructed DateTime.
@@ -518,8 +517,6 @@ open class DateTime protected ()
     * Defaults to the system's locale if no locale has been specified
     * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat/formatToParts
     *
-    * @param opts - Intl.DateTimeFormat constructor options, same as `toLocaleString`.
-    *
     * @example
     * DateTime.now().toLocaleParts(); //=> [
     *                                 //=>   { type: 'day', value: '25' },
@@ -529,17 +526,17 @@ open class DateTime protected ()
     *                                 //=>   { type: 'year', value: '1982' }
     *                                 //=> ]
     */
-  def toLocaleParts(): js.Array[DateTimeFormatPart] = js.native
-  def toLocaleParts(opts: DateTimeFormatOptions): js.Array[DateTimeFormatPart] = js.native
+  def toLocaleParts(): js.Array[DateTimeFormatPart] | IfInvalid[js.Array[Any]] = js.native
+  def toLocaleParts(opts: DateTimeFormatOptions): js.Array[DateTimeFormatPart] | IfInvalid[js.Array[Any]] = js.native
   
-  def toLocaleString(formatOpts: Unit, opts: LocaleOptions): String = js.native
-  def toLocaleString(formatOpts: DateTimeFormatOptions): String = js.native
-  def toLocaleString(formatOpts: DateTimeFormatOptions, opts: LocaleOptions): String = js.native
+  def toLocaleString(formatOpts: Unit, opts: LocaleOptions): String | (IfInvalid[`Invalid DateTime`]) = js.native
+  def toLocaleString(formatOpts: DateTimeFormatOptions): String | (IfInvalid[`Invalid DateTime`]) = js.native
+  def toLocaleString(formatOpts: DateTimeFormatOptions, opts: LocaleOptions): String | (IfInvalid[`Invalid DateTime`]) = js.native
   
   /**
     * Returns the epoch milliseconds of this DateTime.
     */
-  def toMillis(): Double = js.native
+  def toMillis(): Double | IfInvalid[Double] = js.native
   
   /**
     * Returns a JavaScript object with this DateTime's year, month, day, and so on.
@@ -550,8 +547,8 @@ open class DateTime protected ()
     * @example
     * DateTime.now().toObject() //=> { year: 2017, month: 4, day: 22, hour: 20, minute: 49, second: 42, millisecond: 268 }
     */
-  def toObject(): ToObjectOutput = js.native
-  def toObject(opts: IncludeConfig): ToObjectOutput = js.native
+  def toObject[IncludeConfig /* <: js.UndefOr[Boolean] */](): ToObjectOutput[IncludeConfig] = js.native
+  def toObject[IncludeConfig /* <: js.UndefOr[Boolean] */](opts: `0`[IncludeConfig]): ToObjectOutput[IncludeConfig] = js.native
   
   /**
     * Returns an RFC 2822-compatible string representation of this DateTime, always in UTC
@@ -561,22 +558,12 @@ open class DateTime protected ()
     * @example
     * DateTime.local(2014, 7, 13).toRFC2822() //=> 'Sun, 13 Jul 2014 00:00:00 -0400'
     */
-  def toRFC2822(): String = js.native
+  def toRFC2822(): String | IfInvalid[Null] = js.native
   
   /**
-    * Returns a string representation of a this time relative to now, such as "in two days". Can only internationalize if your
-    * platform supports Intl.RelativeTimeFormat. Rounds down by default.
-    *
-    * @param options - options that affect the output
-    * @param options.base - the DateTime to use as the basis to which this time is compared. Defaults to now.
-    * @param options.style - the style of units, must be "long", "short", or "narrow". Defaults to long.
-    * @param options.unit - use a specific unit or array of units; if omitted, or an array, the method will pick the best unit.
-    * Use an array or one of "years", "quarters", "months", "weeks", "days", "hours", "minutes", or "seconds"
-    * @param options.round - whether to round the numbers in the output. Defaults to true.
-    * @param options.padding - padding in milliseconds. This allows you to round up the result if it fits inside the threshold. Don't use in combination with {round: false}
-    * because the decimal output will include the padding. Defaults to 0.
-    * @param options.locale - override the locale of this DateTime
-    * @param options.numberingSystem - override the numberingSystem of this DateTime. The Intl system may choose not to honor this
+    * Returns a string representation of this time relative to now, such as "in two days".
+    * Can only internationalize if your platform supports Intl.RelativeTimeFormat.
+    * Rounds down by default.
     *
     * @example
     * DateTime.now().plus({ days: 1 }).toRelative() //=> "in 1 day"
@@ -591,18 +578,12 @@ open class DateTime protected ()
     * @example
     * DateTime.now().minus({ hours: 36 }).toRelative({ round: false }) //=> "1.5 days ago"
     */
-  def toRelative(): String | Null = js.native
-  def toRelative(options: ToRelativeOptions): String | Null = js.native
+  def toRelative(): String | IfInvalid[Null] = js.native
+  def toRelative(options: ToRelativeOptions): String | IfInvalid[Null] = js.native
   
   /**
     * Returns a string representation of this date relative to today, such as "yesterday" or "next month".
-    * Only internationalizes on platforms that supports Intl.RelativeTimeFormat.
-    *
-    * @param options - options that affect the output
-    * @param options.base - the DateTime to use as the basis to which this time is compared. Defaults to now.
-    * @param options.locale - override the locale of this DateTime
-    * @param options.unit - use a specific unit; if omitted, the method will pick the unit. Use one of "years", "quarters", "months", "weeks", or "days"
-    * @param options.numberingSystem - override the numberingSystem of this DateTime. The Intl system may choose not to honor this
+    * Only internationalizes on platforms that support Intl.RelativeTimeFormat.
     *
     * @example
     * DateTime.now().plus({ days: 1 }).toRelativeCalendar() //=> "tomorrow"
@@ -613,15 +594,11 @@ open class DateTime protected ()
     * @example
     * DateTime.now().minus({ days: 2 }).toRelativeCalendar() //=> "2 days ago"
     */
-  def toRelativeCalendar(): String | Null = js.native
-  def toRelativeCalendar(options: ToRelativeCalendarOptions): String | Null = js.native
+  def toRelativeCalendar(): String | IfInvalid[Null] = js.native
+  def toRelativeCalendar(options: ToRelativeCalendarOptions): String | IfInvalid[Null] = js.native
   
   /**
-    * Returns a string representation of this DateTime appropriate for use in SQL DateTime
-    *
-    * @param opts - options
-    * @param opts.includeZone - include the zone, such as 'America/New_York'. Overrides includeOffset. Defaults to false.
-    * @param opts.includeOffset - include the offset, such as 'Z' or '-04:00'. Defaults to true.
+    * Returns a string representation of this DateTime for use in SQL DateTime
     *
     * @example
     * DateTime.utc(2014, 7, 13).toSQL() //=> '2014-07-13 00:00:00.000 Z'
@@ -632,8 +609,8 @@ open class DateTime protected ()
     * @example
     * DateTime.local(2014, 7, 13).toSQL({ includeZone: true }) //=> '2014-07-13 00:00:00.000 America/New_York'
     */
-  def toSQL(): String = js.native
-  def toSQL(opts: ToSQLOptions): String = js.native
+  def toSQL(): String | IfInvalid[Null] = js.native
+  def toSQL(opts: ToSQLOptions): String | IfInvalid[Null] = js.native
   
   /**
     * Returns a string representation of this DateTime appropriate for use in SQL Date
@@ -641,14 +618,10 @@ open class DateTime protected ()
     * @example
     * DateTime.utc(2014, 7, 13).toSQLDate() //=> '2014-07-13'
     */
-  def toSQLDate(): String = js.native
+  def toSQLDate(): String | IfInvalid[Null] = js.native
   
   /**
     * Returns a string representation of this DateTime appropriate for use in SQL Time
-    *
-    * @param opts - options
-    * @param opts.includeZone - include the zone, such as 'America/New_York'. Overrides includeOffset. Defaults to false.
-    * @param opts.includeOffset - include the offset, such as 'Z' or '-04:00'. Defaults to true.
     *
     * @example
     * DateTime.utc().toSQL() //=> '05:15:16.345'
@@ -659,13 +632,13 @@ open class DateTime protected ()
     * @example
     * DateTime.now().toSQL({ includeZone: false }) //=> '05:15:16.345 America/New_York'
     */
-  def toSQLTime(): String = js.native
-  def toSQLTime(opts: ToSQLOptions): String = js.native
+  def toSQLTime(): String | IfInvalid[Null] = js.native
+  def toSQLTime(opts: ToSQLOptions): String | IfInvalid[Null] = js.native
   
   /**
     * Returns the epoch seconds of this DateTime.
     */
-  def toSeconds(): Double = js.native
+  def toSeconds(): Double | IfInvalid[Double] = js.native
   
   // TRANSFORM
   /**
@@ -684,7 +657,7 @@ open class DateTime protected ()
   /**
     * Returns the epoch seconds (as a whole number) of this DateTime.
     */
-  def toUnixInteger(): Double = js.native
+  def toUnixInteger(): Double | IfInvalid[Double] = js.native
   
   /**
     * Return an Interval spanning between this DateTime and another DateTime
@@ -700,7 +673,7 @@ open class DateTime protected ()
     * @example
     * DateTime.local(2017, 5, 25).weekNumber //=> 21
     */
-  def weekNumber: WeekNumbers = js.native
+  def weekNumber: WeekNumbers | IfInvalid[Double] = js.native
   
   /**
     * Get the week year
@@ -709,7 +682,7 @@ open class DateTime protected ()
     * @example
     * DateTime.local(2014, 12, 31).weekYear //=> 2015
     */
-  def weekYear: Double = js.native
+  def weekYear: Double | IfInvalid[Double] = js.native
   
   /**
     * Get the day of the week.
@@ -719,7 +692,7 @@ open class DateTime protected ()
     * @example
     * DateTime.local(2014, 11, 31).weekday //=> 4
     */
-  def weekday: WeekdayNumbers = js.native
+  def weekday: WeekdayNumbers | IfInvalid[Double] = js.native
   
   /**
     * Get the human readable long weekday, such as 'Monday'.
@@ -728,7 +701,7 @@ open class DateTime protected ()
     * @example
     * DateTime.local(2017, 10, 30).weekdayLong //=> Monday
     */
-  def weekdayLong: String = js.native
+  def weekdayLong: String | IfInvalid[Null] = js.native
   
   /**
     * Get the human readable short weekday, such as 'Mon'.
@@ -737,7 +710,7 @@ open class DateTime protected ()
     * @example
     * DateTime.local(2017, 10, 30).weekdayShort //=> Mon
     */
-  def weekdayShort: String = js.native
+  def weekdayShort: String | IfInvalid[Null] = js.native
   
   /**
     * Returns the number of weeks in this DateTime's year
@@ -748,14 +721,14 @@ open class DateTime protected ()
     * @example
     * DateTime.local(2013).weeksInWeekYear //=> 52
     */
-  def weeksInWeekYear: PossibleWeeksInYear = js.native
+  def weeksInWeekYear: PossibleWeeksInYear | IfInvalid[Double] = js.native
   
   /**
     * Get the year
     *
     * @example DateTime.local(2017, 5, 25).year //=> 2017
     */
-  def year: Double = js.native
+  def year: Double | IfInvalid[Double] = js.native
   
   /**
     * Get the time zone associated with this DateTime.
@@ -765,7 +738,7 @@ open class DateTime protected ()
   /**
     * Get the name of the time zone.
     */
-  def zoneName: String = js.native
+  def zoneName: String | IfInvalid[Null] = js.native
 }
 /* static members */
 object DateTime {
@@ -1037,6 +1010,7 @@ object DateTime {
     * @param minute - The minute of the hour, meaning a number between 0 and 59
     * @param second - The second of the minute, meaning a number between 0 and 59
     * @param millisecond - The millisecond of the second, meaning a number between 0 and 999
+    * @param opts
     *
     * @example
     * DateTime.local()                                  //~> now

@@ -1,10 +1,10 @@
 package typings.opentelemetryInstrumentation
 
 import typings.opentelemetryApi.buildSrcDiagTypesMod.DiagLogger
+import typings.opentelemetryApi.buildSrcMetricsMeterMod.Meter
+import typings.opentelemetryApi.buildSrcMetricsMeterProviderMod.MeterProvider
 import typings.opentelemetryApi.buildSrcTraceTracerMod.Tracer
 import typings.opentelemetryApi.buildSrcTraceTracerProviderMod.TracerProvider
-import typings.opentelemetryApiMetrics.buildSrcTypesMeterMod.Meter
-import typings.opentelemetryApiMetrics.buildSrcTypesMeterProviderMod.MeterProvider
 import typings.opentelemetryInstrumentation.buildSrcPlatformNodeTypesMod.InstrumentationModuleDefinition
 import typings.opentelemetryInstrumentation.buildSrcTypesMod.Instrumentation
 import typings.opentelemetryInstrumentation.buildSrcTypesMod.InstrumentationConfig
@@ -42,6 +42,11 @@ object buildSrcInstrumentationMod {
     /* private */ var _tracer: Any = js.native
     
     /* protected */ def _unwrap[Nodule /* <: js.Object */](nodule: Nodule, name: /* keyof Nodule */ String): Unit = js.native
+    
+    /**
+      * Sets the new metric instruments with the current Meter.
+      */
+    /* protected */ def _updateMetricInstruments(): Unit = js.native
     
     /* protected */ def _wrap[Nodule /* <: js.Object */, FieldName /* <: /* keyof Nodule */ String */](
       nodule: Nodule,

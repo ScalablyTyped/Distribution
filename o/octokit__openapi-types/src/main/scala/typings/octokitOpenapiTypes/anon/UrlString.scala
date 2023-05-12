@@ -6,8 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UrlString extends StObject {
   
-  /** Format: uri */
-  var url: String
+  /**
+    * Format: uri
+    * @description The URL of the reference.
+    */
+  val url: String
 }
 object UrlString {
   

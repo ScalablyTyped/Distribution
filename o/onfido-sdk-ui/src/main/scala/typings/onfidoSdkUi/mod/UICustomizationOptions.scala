@@ -80,6 +80,10 @@ trait UICustomizationOptions extends StObject {
   
   var colorBackgroundDocTypeButton: js.UndefOr[String] = js.undefined
   
+  var colorBackgroundDocTypeButtonActive: js.UndefOr[String] = js.undefined
+  
+  var colorBackgroundDocTypeButtonHover: js.UndefOr[String] = js.undefined
+  
   var colorBackgroundIcon: js.UndefOr[String] = js.undefined
   
   var colorBackgroundInfoPill: js.UndefOr[String] = js.undefined
@@ -90,11 +94,21 @@ trait UICustomizationOptions extends StObject {
   
   var colorBackgroundQRCode: js.UndefOr[String] = js.undefined
   
+  var colorBackgroundSelector: js.UndefOr[String] = js.undefined
+  
   var colorBackgroundSurfaceModal: js.UndefOr[String] = js.undefined
   
   var colorBorderButtonPrimary: js.UndefOr[String] = js.undefined
   
+  var colorBorderButtonPrimaryActive: js.UndefOr[String] = js.undefined
+  
+  var colorBorderButtonPrimaryHover: js.UndefOr[String] = js.undefined
+  
   var colorBorderButtonSecondary: js.UndefOr[String] = js.undefined
+  
+  var colorBorderButtonSecondaryActive: js.UndefOr[String] = js.undefined
+  
+  var colorBorderButtonSecondaryHover: js.UndefOr[String] = js.undefined
   
   var colorBorderDocTypeButton: js.UndefOr[String] = js.undefined
   
@@ -125,6 +139,10 @@ trait UICustomizationOptions extends StObject {
   var colorContentSubtitle: js.UndefOr[String] = js.undefined
   
   var colorContentTitle: js.UndefOr[String] = js.undefined
+  
+  var colorIcon: js.UndefOr[String] = js.undefined
+  
+  var colorInputOutline: js.UndefOr[String] = js.undefined
   
   var fontFamilyBody: js.UndefOr[String] = js.undefined
   
@@ -300,6 +318,14 @@ object UICustomizationOptions {
     
     inline def setColorBackgroundDocTypeButton(value: String): Self = StObject.set(x, "colorBackgroundDocTypeButton", value.asInstanceOf[js.Any])
     
+    inline def setColorBackgroundDocTypeButtonActive(value: String): Self = StObject.set(x, "colorBackgroundDocTypeButtonActive", value.asInstanceOf[js.Any])
+    
+    inline def setColorBackgroundDocTypeButtonActiveUndefined: Self = StObject.set(x, "colorBackgroundDocTypeButtonActive", js.undefined)
+    
+    inline def setColorBackgroundDocTypeButtonHover(value: String): Self = StObject.set(x, "colorBackgroundDocTypeButtonHover", value.asInstanceOf[js.Any])
+    
+    inline def setColorBackgroundDocTypeButtonHoverUndefined: Self = StObject.set(x, "colorBackgroundDocTypeButtonHover", js.undefined)
+    
     inline def setColorBackgroundDocTypeButtonUndefined: Self = StObject.set(x, "colorBackgroundDocTypeButton", js.undefined)
     
     inline def setColorBackgroundIcon(value: String): Self = StObject.set(x, "colorBackgroundIcon", value.asInstanceOf[js.Any])
@@ -322,15 +348,35 @@ object UICustomizationOptions {
     
     inline def setColorBackgroundQRCodeUndefined: Self = StObject.set(x, "colorBackgroundQRCode", js.undefined)
     
+    inline def setColorBackgroundSelector(value: String): Self = StObject.set(x, "colorBackgroundSelector", value.asInstanceOf[js.Any])
+    
+    inline def setColorBackgroundSelectorUndefined: Self = StObject.set(x, "colorBackgroundSelector", js.undefined)
+    
     inline def setColorBackgroundSurfaceModal(value: String): Self = StObject.set(x, "colorBackgroundSurfaceModal", value.asInstanceOf[js.Any])
     
     inline def setColorBackgroundSurfaceModalUndefined: Self = StObject.set(x, "colorBackgroundSurfaceModal", js.undefined)
     
     inline def setColorBorderButtonPrimary(value: String): Self = StObject.set(x, "colorBorderButtonPrimary", value.asInstanceOf[js.Any])
     
+    inline def setColorBorderButtonPrimaryActive(value: String): Self = StObject.set(x, "colorBorderButtonPrimaryActive", value.asInstanceOf[js.Any])
+    
+    inline def setColorBorderButtonPrimaryActiveUndefined: Self = StObject.set(x, "colorBorderButtonPrimaryActive", js.undefined)
+    
+    inline def setColorBorderButtonPrimaryHover(value: String): Self = StObject.set(x, "colorBorderButtonPrimaryHover", value.asInstanceOf[js.Any])
+    
+    inline def setColorBorderButtonPrimaryHoverUndefined: Self = StObject.set(x, "colorBorderButtonPrimaryHover", js.undefined)
+    
     inline def setColorBorderButtonPrimaryUndefined: Self = StObject.set(x, "colorBorderButtonPrimary", js.undefined)
     
     inline def setColorBorderButtonSecondary(value: String): Self = StObject.set(x, "colorBorderButtonSecondary", value.asInstanceOf[js.Any])
+    
+    inline def setColorBorderButtonSecondaryActive(value: String): Self = StObject.set(x, "colorBorderButtonSecondaryActive", value.asInstanceOf[js.Any])
+    
+    inline def setColorBorderButtonSecondaryActiveUndefined: Self = StObject.set(x, "colorBorderButtonSecondaryActive", js.undefined)
+    
+    inline def setColorBorderButtonSecondaryHover(value: String): Self = StObject.set(x, "colorBorderButtonSecondaryHover", value.asInstanceOf[js.Any])
+    
+    inline def setColorBorderButtonSecondaryHoverUndefined: Self = StObject.set(x, "colorBorderButtonSecondaryHover", js.undefined)
     
     inline def setColorBorderButtonSecondaryUndefined: Self = StObject.set(x, "colorBorderButtonSecondary", js.undefined)
     
@@ -393,6 +439,14 @@ object UICustomizationOptions {
     inline def setColorContentTitle(value: String): Self = StObject.set(x, "colorContentTitle", value.asInstanceOf[js.Any])
     
     inline def setColorContentTitleUndefined: Self = StObject.set(x, "colorContentTitle", js.undefined)
+    
+    inline def setColorIcon(value: String): Self = StObject.set(x, "colorIcon", value.asInstanceOf[js.Any])
+    
+    inline def setColorIconUndefined: Self = StObject.set(x, "colorIcon", js.undefined)
+    
+    inline def setColorInputOutline(value: String): Self = StObject.set(x, "colorInputOutline", value.asInstanceOf[js.Any])
+    
+    inline def setColorInputOutlineUndefined: Self = StObject.set(x, "colorInputOutline", js.undefined)
     
     inline def setFontFamilyBody(value: String): Self = StObject.set(x, "fontFamilyBody", value.asInstanceOf[js.Any])
     

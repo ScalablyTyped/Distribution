@@ -7,12 +7,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+	 * A linter result.
+	 */
 trait LinterResult extends StObject {
   
   /**
-  			 * The working directory from which the linter was run when the
-  			 * results were generated.
-  			 */
+  		 * The working directory from which the linter was run when the
+  		 * results were generated.
+  		 */
   var cwd: String
   
   var descriptionlessDisables: js.UndefOr[DisableOptionsReport] = js.undefined
@@ -32,8 +35,8 @@ trait LinterResult extends StObject {
   var results: js.Array[LintResult]
   
   /**
-  			 * Each rule metadata by name.
-  			 */
+  		 * Each rule metadata by name.
+  		 */
   var ruleMetadata: StringDictionary[PartialRuleMeta]
 }
 object LinterResult {

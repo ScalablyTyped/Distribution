@@ -14,39 +14,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distSrcCodingMod {
   
-  trait BytesReader extends StObject {
+  @js.native
+  trait BytesBufferReader
+    extends StObject
+       with Seekable {
     
-    def exactly(length: Double): js.Promise[js.typedarray.Uint8Array]
+    def exactly(length: Double): js.typedarray.Uint8Array = js.native
+    def exactly(length: Double, seek: Boolean): js.typedarray.Uint8Array = js.native
     
-    var pos: Double
+    var pos: Double = js.native
     
-    def seek(length: Double): Unit
-    
-    def upTo(length: Double): js.Promise[js.typedarray.Uint8Array]
+    def upTo(length: Double): js.typedarray.Uint8Array = js.native
   }
-  object BytesReader {
+  
+  @js.native
+  trait BytesReader
+    extends StObject
+       with Seekable {
     
-    inline def apply(
-      exactly: Double => js.Promise[js.typedarray.Uint8Array],
-      pos: Double,
-      seek: Double => Unit,
-      upTo: Double => js.Promise[js.typedarray.Uint8Array]
-    ): BytesReader = {
-      val __obj = js.Dynamic.literal(exactly = js.Any.fromFunction1(exactly), pos = pos.asInstanceOf[js.Any], seek = js.Any.fromFunction1(seek), upTo = js.Any.fromFunction1(upTo))
-      __obj.asInstanceOf[BytesReader]
-    }
+    def exactly(length: Double): js.Promise[js.typedarray.Uint8Array] = js.native
+    def exactly(length: Double, seek: Boolean): js.Promise[js.typedarray.Uint8Array] = js.native
     
-    @scala.inline
-    implicit open class MutableBuilder[Self <: BytesReader] (val x: Self) extends AnyVal {
-      
-      inline def setExactly(value: Double => js.Promise[js.typedarray.Uint8Array]): Self = StObject.set(x, "exactly", js.Any.fromFunction1(value))
-      
-      inline def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
-      
-      inline def setSeek(value: Double => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
-      
-      inline def setUpTo(value: Double => js.Promise[js.typedarray.Uint8Array]): Self = StObject.set(x, "upTo", js.Any.fromFunction1(value))
-    }
+    var pos: Double = js.native
+    
+    def upTo(length: Double): js.Promise[js.typedarray.Uint8Array] = js.native
   }
   
   trait CarDecoder extends StObject {
@@ -241,6 +232,24 @@ object distSrcCodingMod {
       inline def setEnd(value: () => js.Promise[Unit]): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       
       inline def setWrite(value: T => js.Promise[Unit]): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+    }
+  }
+  
+  trait Seekable extends StObject {
+    
+    def seek(length: Double): Unit
+  }
+  object Seekable {
+    
+    inline def apply(seek: Double => Unit): Seekable = {
+      val __obj = js.Dynamic.literal(seek = js.Any.fromFunction1(seek))
+      __obj.asInstanceOf[Seekable]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Seekable] (val x: Self) extends AnyVal {
+      
+      inline def setSeek(value: Double => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
     }
   }
 }

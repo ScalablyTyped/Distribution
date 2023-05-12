@@ -14,9 +14,9 @@ object NotebookCellKind extends StObject {
   def apply(value: Double): js.UndefOr[NotebookCellKind & Double] = js.native
   
   /**
-    * A code-cell is source that can be {@link NotebookController executed} and that
-    * produces {@link NotebookCellOutput output}.
-    */
+  		 * A code-cell is source that can be {@link NotebookController executed} and that
+  		 * produces {@link NotebookCellOutput output}.
+  		 */
   @js.native
   sealed trait Code
     extends StObject
@@ -24,8 +24,8 @@ object NotebookCellKind extends StObject {
   /* 2 */ val Code: typings.vscode.mod.NotebookCellKind.Code & Double = js.native
   
   /**
-    * A markup-cell is formatted source that is used for display.
-    */
+  		 * A markup-cell is formatted source that is used for display.
+  		 */
   @js.native
   sealed trait Markup
     extends StObject

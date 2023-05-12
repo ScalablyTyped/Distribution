@@ -5,9 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Object literal which represents a circle.
-  */
 trait CircleLiteral
   extends StObject
      with CircleOptions

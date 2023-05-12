@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateKeyDescriptionRequest extends StObject {
   
   /**
-    * New description for the KMS key.
+    * New description for the KMS key.  Do not include confidential or sensitive information in this field. This field may be displayed in plaintext in CloudTrail logs and other output. 
     */
   var Description: DescriptionType
   

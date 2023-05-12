@@ -6,20 +6,18 @@ import typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity
 import typings.azureMsalCommon.distCacheEntitiesAppMetadataEntityMod.AppMetadataEntity
 import typings.azureMsalCommon.distCacheEntitiesAuthorityMetadataEntityMod.AuthorityMetadataEntity
 import typings.azureMsalCommon.distCacheEntitiesCacheRecordMod.CacheRecord
-import typings.azureMsalCommon.distCacheEntitiesCredentialEntityMod.CredentialEntity
 import typings.azureMsalCommon.distCacheEntitiesIdTokenEntityMod.IdTokenEntity
 import typings.azureMsalCommon.distCacheEntitiesRefreshTokenEntityMod.RefreshTokenEntity
 import typings.azureMsalCommon.distCacheEntitiesServerTelemetryEntityMod.ServerTelemetryEntity
 import typings.azureMsalCommon.distCacheEntitiesThrottlingEntityMod.ThrottlingEntity
 import typings.azureMsalCommon.distCacheInterfaceIcachemanagerMod.ICacheManager
-import typings.azureMsalCommon.distCacheUtilsCacheTypesMod.AccountCache
-import typings.azureMsalCommon.distCacheUtilsCacheTypesMod.AccountFilter
 import typings.azureMsalCommon.distCacheUtilsCacheTypesMod.AppMetadataCache
 import typings.azureMsalCommon.distCacheUtilsCacheTypesMod.AppMetadataFilter
-import typings.azureMsalCommon.distCacheUtilsCacheTypesMod.CredentialCache
 import typings.azureMsalCommon.distCacheUtilsCacheTypesMod.CredentialFilter
+import typings.azureMsalCommon.distCacheUtilsCacheTypesMod.TokenKeys
 import typings.azureMsalCommon.distCacheUtilsCacheTypesMod.ValidCredentialType
 import typings.azureMsalCommon.distCryptoIcryptoMod.ICrypto
+import typings.azureMsalCommon.distLoggerLoggerMod.Logger
 import typings.azureMsalCommon.distRequestBaseAuthRequestMod.BaseAuthRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -32,7 +30,16 @@ object distCacheCacheManagerMod {
   open class CacheManager protected ()
     extends StObject
        with ICacheManager {
-    def this(clientId: String, cryptoImpl: ICrypto) = this()
+    def this(clientId: String, cryptoImpl: ICrypto, logger: Logger) = this()
+    
+    /**
+      * Validate the cache key against filter before retrieving and parsing cache value
+      * @param key
+      * @param filter
+      * @param keyMustContainAllScopes
+      * @returns
+      */
+    def accessTokenKeyMatchesFilter(inputKey: String, filter: CredentialFilter, keyMustContainAllScopes: Boolean): Boolean = js.native
     
     /**
       * Function which clears cache.
@@ -41,6 +48,8 @@ object distCacheCacheManagerMod {
     
     /* protected */ var clientId: String = js.native
     
+    /* private */ var commonLogger: Any = js.native
+    
     /**
       * Function which returns boolean whether cache contains a specific key.
       * @param key
@@ -48,67 +57,39 @@ object distCacheCacheManagerMod {
     def containsKey(key: String): Boolean = js.native
     def containsKey(key: String, `type`: String): Boolean = js.native
     
+    /**
+      * Returns whether or not the given credential entity matches the filter
+      * @param entity
+      * @param filter
+      * @returns
+      */
+    def credentialMatchesFilter(entity: ValidCredentialType, filter: CredentialFilter): Boolean = js.native
+    
     /* protected */ var cryptoImpl: ICrypto = js.native
     
     /**
-      * given an authority generates the cache key for authorityMetadata
-      * @param authority
+      * Retrieve AccessTokenEntity from cache
+      * @param clientId
+      * @param account
+      * @param scopes
+      * @param authScheme
       */
-    /* CompleteClass */
-    override def generateAuthorityMetadataCacheKey(authority: String): String = js.native
+    def getAccessToken(account: AccountInfo, request: BaseAuthRequest): AccessTokenEntity | Null = js.native
+    def getAccessToken(account: AccountInfo, request: BaseAuthRequest, tokenKeys: TokenKeys): AccessTokenEntity | Null = js.native
     
     /**
-      * fetch the idToken entity from the platform cache
-      * @param accessTokenKey
+      * Gets all access tokens matching the filter
+      * @param filter
+      * @returns
       */
-    /* CompleteClass */
-    override def getAccessTokenCredential(accessTokenKey: String): AccessTokenEntity | Null = js.native
+    def getAccessTokensByFilter(filter: CredentialFilter): js.Array[AccessTokenEntity] = js.native
+    
+    /* private */ var getAccountInfoFromEntity: Any = js.native
     
     /**
-      * fetch the account entity from the platform cache
-      * @param accountKey
+      * Function which retrieves all account keys from the cache
       */
-    /* CompleteClass */
-    override def getAccount(accountKey: String): AccountEntity | Null = js.native
-    
-    /**
-      * retrieve accounts matching all provided filters; if no filter is set, get all accounts
-      * not checking for casing as keys are all generated in lower case, remember to convert to lower case if object properties are compared
-      * @param homeAccountId
-      * @param environment
-      * @param realm
-      */
-    def getAccountsFilteredBy(): AccountCache = js.native
-    /**
-      * retrieve accounts matching all provided filters; if no filter is set, get all accounts
-      * @param homeAccountId
-      * @param environment
-      * @param realm
-      */
-    /* CompleteClass */
-    override def getAccountsFilteredBy(filter: AccountFilter): AccountCache = js.native
-    
-    /**
-      * retrieve accounts matching all provided filters; if no filter is set, get all accounts
-      * not checking for casing as keys are all generated in lower case, remember to convert to lower case if object properties are compared
-      * @param homeAccountId
-      * @param environment
-      * @param realm
-      */
-    /* private */ var getAccountsFilteredByInternal: Any = js.native
-    
-    /**
-      * Returns all accounts in cache
-      */
-    /* CompleteClass */
-    override def getAllAccounts(): js.Array[AccountInfo] = js.native
-    
-    /**
-      * fetch appMetadata entity from the platform cache
-      * @param appMetadataKey
-      */
-    /* CompleteClass */
-    override def getAppMetadata(appMetadataKey: String): AppMetadataEntity | Null = js.native
+    def getAccountKeys(): js.Array[String] = js.native
     
     /**
       * retrieve appMetadata matching all provided filters; if no filter is set, get all appMetadata
@@ -124,56 +105,21 @@ object distCacheCacheManagerMod {
     /* private */ var getAppMetadataFilteredByInternal: Any = js.native
     
     /**
-      * fetch cloud discovery metadata entity from the platform cache
-      * @param key
-      */
-    /* CompleteClass */
-    override def getAuthorityMetadata(key: String): AuthorityMetadataEntity | Null = js.native
-    
-    /**
-      * Provide an alias to find a matching AuthorityMetadataEntity in cache
-      * @param host
-      */
-    /* CompleteClass */
-    override def getAuthorityMetadataByAlias(host: String): AuthorityMetadataEntity | Null = js.native
-    
-    /**
-      * Get cache keys for authority metadata
-      */
-    /* CompleteClass */
-    override def getAuthorityMetadataKeys(): js.Array[String] = js.native
-    
-    /**
-      * retrieve credentials matching all provided filters; if no filter is set, get all credentials
-      * @param homeAccountId
-      * @param environment
-      * @param credentialType
+      * Retrieve IdTokenEntity from cache
       * @param clientId
-      * @param realm
-      * @param target
+      * @param account
+      * @param inputRealm
       */
-    /* CompleteClass */
-    override def getCredentialsFilteredBy(filter: CredentialFilter): CredentialCache = js.native
+    def getIdToken(account: AccountInfo): IdTokenEntity | Null = js.native
+    def getIdToken(account: AccountInfo, tokenKeys: TokenKeys): IdTokenEntity | Null = js.native
     
     /**
-      * Support function to help match credentials
-      * @param homeAccountId
-      * @param environment
-      * @param credentialType
-      * @param clientId
-      * @param realm
-      * @param target
-      * @param userAssertionHash
-      * @param tokenType
+      * Gets all idTokens matching the given filter
+      * @param filter
+      * @returns
       */
-    /* private */ var getCredentialsFilteredByInternal: Any = js.native
-    
-    /**
-      * fetch the idToken entity from the platform cache
-      * @param idTokenKey
-      */
-    /* CompleteClass */
-    override def getIdTokenCredential(idTokenKey: String): IdTokenEntity | Null = js.native
+    def getIdTokensByFilter(filter: CredentialFilter): js.Array[IdTokenEntity] = js.native
+    def getIdTokensByFilter(filter: CredentialFilter, tokenKeys: TokenKeys): js.Array[IdTokenEntity] = js.native
     
     /**
       * Function which retrieves all current keys from the cache.
@@ -181,32 +127,26 @@ object distCacheCacheManagerMod {
     def getKeys(): js.Array[String] = js.native
     
     /**
-      * fetch the idToken entity from the platform cache
-      * @param refreshTokenKey
+      * Helper to retrieve the appropriate refresh token from cache
+      * @param clientId
+      * @param account
+      * @param familyRT
       */
-    /* CompleteClass */
-    override def getRefreshTokenCredential(refreshTokenKey: String): RefreshTokenEntity | Null = js.native
+    def getRefreshToken(account: AccountInfo, familyRT: Boolean): RefreshTokenEntity | Null = js.native
+    def getRefreshToken(account: AccountInfo, familyRT: Boolean, tokenKeys: TokenKeys): RefreshTokenEntity | Null = js.native
     
     /**
-      * fetch server telemetry entity from the platform cache
-      * @param serverTelemetryKey
+      * Function which retrieves all token keys from the cache
       */
-    /* CompleteClass */
-    override def getServerTelemetry(serverTelemetryKey: String): ServerTelemetryEntity | Null = js.native
+    def getTokenKeys(): TokenKeys = js.native
     
     /**
-      * Returns the specific credential (IdToken/AccessToken/RefreshToken) from the cache
+      * Validate the cache key against filter before retrieving and parsing cache value
       * @param key
-      * @param credType
+      * @param filter
+      * @returns
       */
-    /* private */ var getSpecificCredential: Any = js.native
-    
-    /**
-      * fetch throttling entity from the platform cache
-      * @param throttlingCacheKey
-      */
-    /* CompleteClass */
-    override def getThrottlingCache(throttlingCacheKey: String): ThrottlingEntity | Null = js.native
+    def idTokenKeyMatchesFilter(inputKey: String, filter: CredentialFilter): Boolean = js.native
     
     /**
       * returns if a given cache entity is of the type appmetadata
@@ -219,13 +159,19 @@ object distCacheCacheManagerMod {
       * @param environment
       * @param clientId
       */
-    def isAppMetadataFOCI(environment: String, clientId: String): Boolean = js.native
+    def isAppMetadataFOCI(environment: String): Boolean = js.native
     
     /**
       * returns if a given cache entity is of the type authoritymetadata
       * @param key
       */
     /* protected */ def isAuthorityMetadata(key: String): Boolean = js.native
+    
+    /**
+      * Returns true if the given key matches our credential key schema.
+      * @param key
+      */
+    def isCredentialKey(key: String): Boolean = js.native
     
     /**
       * helper to match client ids
@@ -270,6 +216,14 @@ object distCacheCacheManagerMod {
     /* private */ var matchKeyId: Any = js.native
     
     /**
+      * helper to match account ids
+      * @param entity
+      * @param localAccountId
+      * @returns
+      */
+    /* private */ var matchLocalAccountId: Any = js.native
+    
+    /**
       * helper to match nativeAccountId
       * @param entity
       * @param nativeAccountId
@@ -306,13 +260,12 @@ object distCacheCacheManagerMod {
     /* private */ var matchUserAssertionHash: Any = js.native
     
     /**
-      * Retrieve AccessTokenEntity from cache
-      * @param clientId
-      * @param account
-      * @param scopes
-      * @param authScheme
+      * helper to match usernames
+      * @param entity
+      * @param username
+      * @returns
       */
-    def readAccessTokenFromCache(clientId: String, account: AccountInfo, request: BaseAuthRequest): AccessTokenEntity | Null = js.native
+    /* private */ var matchUsername: Any = js.native
     
     /**
       * Retrieve AccountEntity from cache
@@ -321,16 +274,9 @@ object distCacheCacheManagerMod {
     def readAccountFromCache(account: AccountInfo): AccountEntity | Null = js.native
     
     /**
-      * Retrieve AccountEntity from cache
-      * @param nativeAccountId
-      * @returns AccountEntity or Null
-      */
-    def readAccountFromCacheWithNativeAccountId(nativeAccountId: String): AccountEntity | Null = js.native
-    
-    /**
       * Retrieve AppMetadataEntity from cache
       */
-    def readAppMetadataFromCache(environment: String, clientId: String): AppMetadataEntity | Null = js.native
+    def readAppMetadataFromCache(environment: String): AppMetadataEntity | Null = js.native
     
     /**
       * Retrieve the cached credentials into a cacherecord
@@ -340,43 +286,14 @@ object distCacheCacheManagerMod {
       * @param environment
       * @param authScheme
       */
-    def readCacheRecord(account: AccountInfo, clientId: String, request: BaseAuthRequest, environment: String): CacheRecord = js.native
+    def readCacheRecord(account: AccountInfo, request: BaseAuthRequest, environment: String): CacheRecord = js.native
     
     /**
-      * Retrieve IdTokenEntity from cache
-      * @param clientId
-      * @param account
-      * @param inputRealm
+      * Validate the cache key against filter before retrieving and parsing cache value
+      * @param key
+      * @param filter
       */
-    def readIdTokenFromCache(clientId: String, account: AccountInfo): IdTokenEntity | Null = js.native
-    
-    /**
-      * Helper to retrieve the appropriate refresh token from cache
-      * @param clientId
-      * @param account
-      * @param familyRT
-      */
-    def readRefreshTokenFromCache(clientId: String, account: AccountInfo, familyRT: Boolean): RefreshTokenEntity | Null = js.native
-    
-    /**
-      * returns a boolean if the given account is removed
-      * @param account
-      */
-    /* CompleteClass */
-    override def removeAccount(accountKey: String): js.Promise[Boolean] = js.native
-    
-    /**
-      * returns a boolean if the given account is removed
-      * @param account
-      */
-    /* CompleteClass */
-    override def removeAccountContext(account: AccountEntity): js.Promise[Boolean] = js.native
-    
-    /**
-      * Removes all accounts and related tokens from cache.
-      */
-    /* CompleteClass */
-    override def removeAllAccounts(): js.Promise[Boolean] = js.native
+    def refreshTokenKeyMatchesFilter(inputKey: String, filter: CredentialFilter): Boolean = js.native
     
     /**
       * Removes all app metadata objects from cache.
@@ -384,90 +301,16 @@ object distCacheCacheManagerMod {
     def removeAppMetadata(): Boolean = js.native
     
     /**
-      * returns a boolean if the given credential is removed
-      * @param credential
-      */
-    /* CompleteClass */
-    override def removeCredential(credential: CredentialEntity): js.Promise[Boolean] = js.native
-    
-    /**
       * Function to remove an item from cache given its key.
       * @param key
       */
-    def removeItem(key: String): Boolean = js.native
-    def removeItem(key: String, `type`: String): Boolean = js.native
+    def removeItem(key: String): Unit = js.native
     
     /**
       * saves access token credential
       * @param credential
       */
     /* private */ var saveAccessToken: Any = js.native
-    
-    /**
-      * saves a cache record
-      * @param cacheRecord
-      */
-    /* CompleteClass */
-    override def saveCacheRecord(cacheRecord: CacheRecord): js.Promise[Unit] = js.native
-    
-    /**
-      * set idToken entity to the platform cache
-      * @param accessToken
-      */
-    /* CompleteClass */
-    override def setAccessTokenCredential(accessToken: AccessTokenEntity): Unit = js.native
-    
-    /**
-      * set account entity in the platform cache
-      * @param account
-      */
-    /* CompleteClass */
-    override def setAccount(account: AccountEntity): Unit = js.native
-    
-    /**
-      * set appMetadata entity to the platform cache
-      * @param appMetadata
-      */
-    /* CompleteClass */
-    override def setAppMetadata(appMetadata: AppMetadataEntity): Unit = js.native
-    
-    /**
-      * set cloud discovery metadata entity to the platform cache
-      * @param key
-      * @param value
-      */
-    /* CompleteClass */
-    override def setAuthorityMetadata(key: String, value: AuthorityMetadataEntity): Unit = js.native
-    
-    /**
-      * set idToken entity to the platform cache
-      * @param idToken
-      */
-    /* CompleteClass */
-    override def setIdTokenCredential(idToken: IdTokenEntity): Unit = js.native
-    
-    /**
-      * set idToken entity to the platform cache
-      * @param refreshToken
-      */
-    /* CompleteClass */
-    override def setRefreshTokenCredential(refreshToken: RefreshTokenEntity): Unit = js.native
-    
-    /**
-      * set server telemetry entity to the platform cache
-      * @param serverTelemetryKey
-      * @param serverTelemetry
-      */
-    /* CompleteClass */
-    override def setServerTelemetry(serverTelemetryKey: String, serverTelemetry: ServerTelemetryEntity): Unit = js.native
-    
-    /**
-      * set throttling entity to the platform cache
-      * @param throttlingCacheKey
-      * @param throttlingCache
-      */
-    /* CompleteClass */
-    override def setThrottlingCache(throttlingCacheKey: String, throttlingCache: ThrottlingEntity): Unit = js.native
     
     /**
       * Function which updates an outdated credential cache key
@@ -492,7 +335,7 @@ object distCacheCacheManagerMod {
   @JSImport("@azure/msal-common/dist/cache/CacheManager", "DefaultStorageClass")
   @js.native
   open class DefaultStorageClass protected () extends CacheManager {
-    def this(clientId: String, cryptoImpl: ICrypto) = this()
+    def this(clientId: String, cryptoImpl: ICrypto, logger: Logger) = this()
     
     def containsKey(): Boolean = js.native
     

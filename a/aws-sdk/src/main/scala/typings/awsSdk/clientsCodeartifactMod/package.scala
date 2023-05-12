@@ -97,6 +97,7 @@ type PackageDependencyList = js.Array[PackageDependency]
   - typings.awsSdk.awsSdkStrings.pypi
   - typings.awsSdk.awsSdkStrings.maven
   - typings.awsSdk.awsSdkStrings.nuget_
+  - typings.awsSdk.awsSdkStrings.generic_
   - java.lang.String
 */
 type PackageFormat = _PackageFormat | java.lang.String
@@ -162,6 +163,8 @@ type RepositoryExternalConnectionInfoList = js.Array[RepositoryExternalConnectio
 type RepositoryName = java.lang.String
 
 type RepositorySummaryList = js.Array[RepositorySummary]
+
+type SHA256 = java.lang.String
 
 type String = java.lang.String
 

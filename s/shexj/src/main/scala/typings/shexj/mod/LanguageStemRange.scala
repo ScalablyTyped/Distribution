@@ -11,12 +11,12 @@ trait LanguageStemRange
   /**
     * Language Tags or {@link LanguageStem}s to exclude.
     */
-  var exclusions: js.Array[LANGTAG | LanguageStem]
+  var exclusions: js.Array[languageRangeExclusion]
   
   /**
     * substring of Language-Tag to be matched or a {@link Wildcard} matching any Language Tag.
     */
-  var stem: LANGTAG | Wildcard
+  var stem: languageRangeStem
   
   /**
     * Mandatory type "LanguageStemRange".
@@ -25,7 +25,7 @@ trait LanguageStemRange
 }
 object LanguageStemRange {
   
-  inline def apply(exclusions: js.Array[LANGTAG | LanguageStem], stem: LANGTAG | Wildcard): LanguageStemRange = {
+  inline def apply(exclusions: js.Array[languageRangeExclusion], stem: languageRangeStem): LanguageStemRange = {
     val __obj = js.Dynamic.literal(exclusions = exclusions.asInstanceOf[js.Any], stem = stem.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("LanguageStemRange")
     __obj.asInstanceOf[LanguageStemRange]
@@ -34,11 +34,11 @@ object LanguageStemRange {
   @scala.inline
   implicit open class MutableBuilder[Self <: LanguageStemRange] (val x: Self) extends AnyVal {
     
-    inline def setExclusions(value: js.Array[LANGTAG | LanguageStem]): Self = StObject.set(x, "exclusions", value.asInstanceOf[js.Any])
+    inline def setExclusions(value: js.Array[languageRangeExclusion]): Self = StObject.set(x, "exclusions", value.asInstanceOf[js.Any])
     
-    inline def setExclusionsVarargs(value: (LANGTAG | LanguageStem)*): Self = StObject.set(x, "exclusions", js.Array(value*))
+    inline def setExclusionsVarargs(value: languageRangeExclusion*): Self = StObject.set(x, "exclusions", js.Array(value*))
     
-    inline def setStem(value: LANGTAG | Wildcard): Self = StObject.set(x, "stem", value.asInstanceOf[js.Any])
+    inline def setStem(value: languageRangeStem): Self = StObject.set(x, "stem", value.asInstanceOf[js.Any])
     
     inline def setType(value: typings.shexj.shexjStrings.LanguageStemRange): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

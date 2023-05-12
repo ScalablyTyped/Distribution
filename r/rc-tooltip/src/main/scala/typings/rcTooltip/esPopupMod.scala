@@ -17,8 +17,6 @@ object esPopupMod {
   
   trait ContentProps extends StObject {
     
-    var arrowContent: js.UndefOr[ReactNode] = js.undefined
-    
     var children: js.Function0[ReactNode] | ReactNode
     
     var className: js.UndefOr[String] = js.undefined
@@ -28,8 +26,6 @@ object esPopupMod {
     var overlayInnerStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
-    
-    var showArrow: js.UndefOr[Boolean] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
   }
@@ -42,10 +38,6 @@ object esPopupMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: ContentProps] (val x: Self) extends AnyVal {
-      
-      inline def setArrowContent(value: ReactNode): Self = StObject.set(x, "arrowContent", value.asInstanceOf[js.Any])
-      
-      inline def setArrowContentUndefined: Self = StObject.set(x, "arrowContent", js.undefined)
       
       inline def setChildren(value: js.Function0[ReactNode] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -68,10 +60,6 @@ object esPopupMod {
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
-      
-      inline def setShowArrow(value: Boolean): Self = StObject.set(x, "showArrow", value.asInstanceOf[js.Any])
-      
-      inline def setShowArrowUndefined: Self = StObject.set(x, "showArrow", js.undefined)
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       

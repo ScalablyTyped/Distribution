@@ -1,5 +1,8 @@
 package typings.react.mod
 
+import typings.react.reactStrings._empty
+import typings.react.reactStrings.`use-credentials`
+import typings.react.reactStrings.anonymous
 import typings.react.reactStrings.done
 import typings.react.reactStrings.enter
 import typings.react.reactStrings.environment
@@ -9,6 +12,7 @@ import typings.react.reactStrings.previous
 import typings.react.reactStrings.search
 import typings.react.reactStrings.send
 import typings.react.reactStrings.user
+import typings.std.FormData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,14 +27,12 @@ trait InputHTMLAttributes[T]
   
   var autoComplete: js.UndefOr[String] = js.undefined
   
-  var autoFocus: js.UndefOr[Boolean] = js.undefined
-  
   var capture: js.UndefOr[Boolean | user | environment] = js.undefined
   
   // https://www.w3.org/TR/html-media-capture/#the-capture-attribute
   var checked: js.UndefOr[Boolean] = js.undefined
   
-  var crossOrigin: js.UndefOr[String] = js.undefined
+  var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
@@ -38,7 +40,7 @@ trait InputHTMLAttributes[T]
   
   var form: js.UndefOr[String] = js.undefined
   
-  var formAction: js.UndefOr[String] = js.undefined
+  var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
   
   var formEncType: js.UndefOr[String] = js.undefined
   
@@ -107,10 +109,6 @@ object InputHTMLAttributes {
     
     inline def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
     
-    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
-    
-    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
-    
     inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
     inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
@@ -119,7 +117,7 @@ object InputHTMLAttributes {
     
     inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
     
-    inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+    inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
@@ -133,7 +131,9 @@ object InputHTMLAttributes {
     
     inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
-    inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+    inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+    
+    inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
     
     inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
     

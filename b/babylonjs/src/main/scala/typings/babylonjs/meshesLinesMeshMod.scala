@@ -1,9 +1,11 @@
 package typings.babylonjs
 
+import typings.babylonjs.materialsEffectMod.Effect
 import typings.babylonjs.materialsMaterialMod.Material
 import typings.babylonjs.mathsMathDotcolorMod.Color3
 import typings.babylonjs.meshesInstancedMeshMod.InstancedMesh
 import typings.babylonjs.meshesMeshMod.Mesh
+import typings.babylonjs.meshesSubMeshMod.SubMesh
 import typings.babylonjs.nodeMod.Node
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
@@ -62,7 +64,7 @@ object meshesLinesMeshMod {
     /**
       * @internal
       */
-    def _bind(): Mesh = js.native
+    def _bind(_subMesh: SubMesh, colorEffect: Effect): Mesh = js.native
     
     /* private */ var _color4: Any = js.native
     
@@ -79,6 +81,11 @@ object meshesLinesMeshMod {
       * Color of the line (Default: White)
       */
     var color: Color3 = js.native
+    
+    def dispose(doNotRecurse: Boolean, disposeMaterialAndTextures: Boolean, doNotDisposeMaterial: Boolean): Unit = js.native
+    def dispose(doNotRecurse: Boolean, disposeMaterialAndTextures: Unit, doNotDisposeMaterial: Boolean): Unit = js.native
+    def dispose(doNotRecurse: Unit, disposeMaterialAndTextures: Boolean, doNotDisposeMaterial: Boolean): Unit = js.native
+    def dispose(doNotRecurse: Unit, disposeMaterialAndTextures: Unit, doNotDisposeMaterial: Boolean): Unit = js.native
     
     /**
       * The intersection Threshold is the margin applied when intersection a segment of the LinesMesh with a Ray.

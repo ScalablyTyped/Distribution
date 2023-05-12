@@ -500,7 +500,7 @@ object global {
   /// https://docs.nova.app/api-reference/notification-request/
   @JSGlobal("NotificationRequest")
   @js.native
-  open class NotificationRequest protected ()
+  open class NotificationRequest ()
     extends StObject
        with typings.novaEditorNode.NotificationRequest {
     def this(identifier: String) = this()

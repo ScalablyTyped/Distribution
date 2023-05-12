@@ -17,6 +17,11 @@ trait AppMonitor extends StObject {
   var Created: js.UndefOr[ISOTimestampString] = js.undefined
   
   /**
+    * Specifies whether this app monitor allows the web client to define and send custom events. For more information about custom events, see Send custom events.
+    */
+  var CustomEvents: js.UndefOr[typings.awsSdk.clientsRumMod.CustomEvents] = js.undefined
+  
+  /**
     * A structure that contains information about whether this app monitor stores a copy of the telemetry data that RUM collects using CloudWatch Logs.
     */
   var DataStorage: js.UndefOr[typings.awsSdk.clientsRumMod.DataStorage] = js.undefined
@@ -68,6 +73,10 @@ object AppMonitor {
     inline def setCreated(value: ISOTimestampString): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     
     inline def setCreatedUndefined: Self = StObject.set(x, "Created", js.undefined)
+    
+    inline def setCustomEvents(value: CustomEvents): Self = StObject.set(x, "CustomEvents", value.asInstanceOf[js.Any])
+    
+    inline def setCustomEventsUndefined: Self = StObject.set(x, "CustomEvents", js.undefined)
     
     inline def setDataStorage(value: DataStorage): Self = StObject.set(x, "DataStorage", value.asInstanceOf[js.Any])
     

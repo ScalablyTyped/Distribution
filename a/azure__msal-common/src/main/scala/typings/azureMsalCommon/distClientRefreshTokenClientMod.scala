@@ -33,12 +33,6 @@ object distClientRefreshTokenClientMod {
     /* private */ var acquireTokenWithCachedRefreshToken: Any = js.native
     
     /**
-      * Creates query string for the /token request
-      * @param request
-      */
-    /* private */ var createTokenQueryParameters: Any = js.native
-    
-    /**
       * Helper function to create the token request body
       * @param request
       */

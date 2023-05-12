@@ -17,7 +17,7 @@ trait CreateStreamingDistributionWithTagsResult extends StObject {
   var Location: js.UndefOr[String] = js.undefined
   
   /**
-    * The streaming distribution's information. 
+    * The streaming distribution's information.
     */
   var StreamingDistribution: js.UndefOr[typings.awsSdk.clientsCloudfrontMod.StreamingDistribution] = js.undefined
 }

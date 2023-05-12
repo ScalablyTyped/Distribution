@@ -17,7 +17,8 @@ open class SoundSlot protected ()
   /**
     * Create a new SoundSlot.
     *
-    * @param {SoundComponent} component - The Component that created this slot.
+    * @param {import('./component.js').SoundComponent} component - The Component that created this
+    * slot.
     * @param {string} [name] - The name of the slot. Defaults to 'Untitled'.
     * @param {object} [options] - Settings for the slot.
     * @param {number} [options.volume=1] - The playback volume, between 0 and 1.

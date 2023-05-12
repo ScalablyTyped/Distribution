@@ -34,12 +34,12 @@ trait CreateVpcPeeringConnectionRequest extends StObject {
   /**
     * The ID of the requester VPC. You must specify this parameter in the request.
     */
-  var VpcId: js.UndefOr[typings.awsSdk.clientsEc2Mod.VpcId] = js.undefined
+  var VpcId: typings.awsSdk.clientsEc2Mod.VpcId
 }
 object CreateVpcPeeringConnectionRequest {
   
-  inline def apply(): CreateVpcPeeringConnectionRequest = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(VpcId: VpcId): CreateVpcPeeringConnectionRequest = {
+    val __obj = js.Dynamic.literal(VpcId = VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateVpcPeeringConnectionRequest]
   }
   
@@ -69,7 +69,5 @@ object CreateVpcPeeringConnectionRequest {
     inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value*))
     
     inline def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
-    
-    inline def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

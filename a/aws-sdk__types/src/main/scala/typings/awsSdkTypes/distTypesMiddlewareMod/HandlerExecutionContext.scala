@@ -1,7 +1,9 @@
 package typings.awsSdkTypes.distTypesMiddlewareMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdkTypes.anon.PartialoverrideInputFilte
 import typings.awsSdkTypes.distTypesAuthMod.AuthScheme
+import typings.awsSdkTypes.distTypesAuthMod.HttpAuthDefinition
 import typings.awsSdkTypes.distTypesEndpointMod.EndpointV2
 import typings.awsSdkTypes.distTypesLoggerMod.Logger
 import typings.awsSdkTypes.distTypesUtilMod.UserAgent
@@ -20,7 +22,18 @@ trait HandlerExecutionContext
   var authSchemes: js.UndefOr[js.Array[AuthScheme]] = js.undefined
   
   /**
-    * Resolved by the endpointMiddleware function of @aws-sdk/middleware-endpoint
+    * The current auth configuration that has been set by any auth middleware and
+    * that will prevent from being set more than once.
+    */
+  var currentAuthConfig: js.UndefOr[HttpAuthDefinition] = js.undefined
+  
+  /**
+    * Used by DynamoDbDocumentClient.
+    */
+  var dynamoDbDocumentClientOptions: js.UndefOr[PartialoverrideInputFilte] = js.undefined
+  
+  /**
+    * Resolved by the endpointMiddleware function of `@aws-sdk/middleware-endpoint`
     * in the serialization stage.
     */
   var endpointV2: js.UndefOr[EndpointV2] = js.undefined
@@ -53,6 +66,14 @@ object HandlerExecutionContext {
     inline def setAuthSchemesUndefined: Self = StObject.set(x, "authSchemes", js.undefined)
     
     inline def setAuthSchemesVarargs(value: AuthScheme*): Self = StObject.set(x, "authSchemes", js.Array(value*))
+    
+    inline def setCurrentAuthConfig(value: HttpAuthDefinition): Self = StObject.set(x, "currentAuthConfig", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentAuthConfigUndefined: Self = StObject.set(x, "currentAuthConfig", js.undefined)
+    
+    inline def setDynamoDbDocumentClientOptions(value: PartialoverrideInputFilte): Self = StObject.set(x, "dynamoDbDocumentClientOptions", value.asInstanceOf[js.Any])
+    
+    inline def setDynamoDbDocumentClientOptionsUndefined: Self = StObject.set(x, "dynamoDbDocumentClientOptions", js.undefined)
     
     inline def setEndpointV2(value: EndpointV2): Self = StObject.set(x, "endpointV2", value.asInstanceOf[js.Any])
     

@@ -54,6 +54,8 @@ trait TextValidationBuilder extends StObject {
   def requireTextMatchesPattern(pattern: String): TextValidationBuilder
   
   def requireWholeNumber(): TextValidationBuilder
+  
+  def setHelpText(text: String): TextValidationBuilder
 }
 object TextValidationBuilder {
   
@@ -76,9 +78,10 @@ object TextValidationBuilder {
     requireTextLengthGreaterThanOrEqualTo: Integer => TextValidationBuilder,
     requireTextLengthLessThanOrEqualTo: Integer => TextValidationBuilder,
     requireTextMatchesPattern: String => TextValidationBuilder,
-    requireWholeNumber: () => TextValidationBuilder
+    requireWholeNumber: () => TextValidationBuilder,
+    setHelpText: String => TextValidationBuilder
   ): TextValidationBuilder = {
-    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), requireNumber = js.Any.fromFunction0(requireNumber), requireNumberBetween = js.Any.fromFunction2(requireNumberBetween), requireNumberEqualTo = js.Any.fromFunction1(requireNumberEqualTo), requireNumberGreaterThan = js.Any.fromFunction1(requireNumberGreaterThan), requireNumberGreaterThanOrEqualTo = js.Any.fromFunction1(requireNumberGreaterThanOrEqualTo), requireNumberLessThan = js.Any.fromFunction1(requireNumberLessThan), requireNumberLessThanOrEqualTo = js.Any.fromFunction1(requireNumberLessThanOrEqualTo), requireNumberNotBetween = js.Any.fromFunction2(requireNumberNotBetween), requireNumberNotEqualTo = js.Any.fromFunction1(requireNumberNotEqualTo), requireTextContainsPattern = js.Any.fromFunction1(requireTextContainsPattern), requireTextDoesNotContainPattern = js.Any.fromFunction1(requireTextDoesNotContainPattern), requireTextDoesNotMatchPattern = js.Any.fromFunction1(requireTextDoesNotMatchPattern), requireTextIsEmail = js.Any.fromFunction0(requireTextIsEmail), requireTextIsUrl = js.Any.fromFunction0(requireTextIsUrl), requireTextLengthGreaterThanOrEqualTo = js.Any.fromFunction1(requireTextLengthGreaterThanOrEqualTo), requireTextLengthLessThanOrEqualTo = js.Any.fromFunction1(requireTextLengthLessThanOrEqualTo), requireTextMatchesPattern = js.Any.fromFunction1(requireTextMatchesPattern), requireWholeNumber = js.Any.fromFunction0(requireWholeNumber))
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), requireNumber = js.Any.fromFunction0(requireNumber), requireNumberBetween = js.Any.fromFunction2(requireNumberBetween), requireNumberEqualTo = js.Any.fromFunction1(requireNumberEqualTo), requireNumberGreaterThan = js.Any.fromFunction1(requireNumberGreaterThan), requireNumberGreaterThanOrEqualTo = js.Any.fromFunction1(requireNumberGreaterThanOrEqualTo), requireNumberLessThan = js.Any.fromFunction1(requireNumberLessThan), requireNumberLessThanOrEqualTo = js.Any.fromFunction1(requireNumberLessThanOrEqualTo), requireNumberNotBetween = js.Any.fromFunction2(requireNumberNotBetween), requireNumberNotEqualTo = js.Any.fromFunction1(requireNumberNotEqualTo), requireTextContainsPattern = js.Any.fromFunction1(requireTextContainsPattern), requireTextDoesNotContainPattern = js.Any.fromFunction1(requireTextDoesNotContainPattern), requireTextDoesNotMatchPattern = js.Any.fromFunction1(requireTextDoesNotMatchPattern), requireTextIsEmail = js.Any.fromFunction0(requireTextIsEmail), requireTextIsUrl = js.Any.fromFunction0(requireTextIsUrl), requireTextLengthGreaterThanOrEqualTo = js.Any.fromFunction1(requireTextLengthGreaterThanOrEqualTo), requireTextLengthLessThanOrEqualTo = js.Any.fromFunction1(requireTextLengthLessThanOrEqualTo), requireTextMatchesPattern = js.Any.fromFunction1(requireTextMatchesPattern), requireWholeNumber = js.Any.fromFunction0(requireWholeNumber), setHelpText = js.Any.fromFunction1(setHelpText))
     __obj.asInstanceOf[TextValidationBuilder]
   }
   
@@ -122,5 +125,7 @@ object TextValidationBuilder {
     inline def setRequireTextMatchesPattern(value: String => TextValidationBuilder): Self = StObject.set(x, "requireTextMatchesPattern", js.Any.fromFunction1(value))
     
     inline def setRequireWholeNumber(value: () => TextValidationBuilder): Self = StObject.set(x, "requireWholeNumber", js.Any.fromFunction0(value))
+    
+    inline def setSetHelpText(value: String => TextValidationBuilder): Self = StObject.set(x, "setHelpText", js.Any.fromFunction1(value))
   }
 }

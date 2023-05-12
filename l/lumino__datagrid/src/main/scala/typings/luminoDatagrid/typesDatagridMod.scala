@@ -351,6 +351,11 @@ object typesDatagridMod {
     /* private */ var _overlayGC: Any = js.native
     
     /**
+      * Paint group cells.
+      */
+    /* private */ var _paintMergedCells: Any = js.native
+    
+    /**
       * Paint the overlay content for the entire grid.
       *
       * This is the primary overlay paint entry point. The individual
@@ -458,7 +463,7 @@ object typesDatagridMod {
       * #### Notes
       * This does *not* account for a stretched last row.
       */
-    val bodyHeight: Double = js.native
+    def bodyHeight: Double = js.native
     
     /**
       * The virtual width of the grid body.
@@ -466,20 +471,23 @@ object typesDatagridMod {
       * #### Notes
       * This does *not* account for a stretched last column.
       */
-    val bodyWidth: Double = js.native
+    def bodyWidth: Double = js.native
     
     /**
       * The rendering context for painting the data grid.
       */
-    /* protected */ val canvasGC: CanvasRenderingContext2D = js.native
+    /* protected */ def canvasGC: CanvasRenderingContext2D = js.native
+    
+    /* private */ var cellGroupInteresectsRegion: Any = js.native
     
     /**
       * Get the cell renderer map for the data grid.
       */
+    def cellRenderers: RendererMap = js.native
     /**
       * Set the cell renderer map for the data grid.
       */
-    var cellRenderers: RendererMap = js.native
+    def cellRenderers_=(value: RendererMap): Unit = js.native
     
     /**
       * Get the column at a virtual offset in the data grid.
@@ -507,7 +515,7 @@ object typesDatagridMod {
     /**
       * The column header sections of the data grid.
       */
-    /* protected */ val columnHeaderSections: SectionList = js.native
+    /* protected */ def columnHeaderSections: SectionList = js.native
     
     /**
       * Get the offset of a column in the data grid.
@@ -526,7 +534,7 @@ object typesDatagridMod {
     /**
       * The column sections of the data grid.
       */
-    /* protected */ val columnSections: SectionList = js.native
+    /* protected */ def columnSections: SectionList = js.native
     
     /**
       * Get the size of a column in the data grid.
@@ -545,10 +553,11 @@ object typesDatagridMod {
     /**
       * Get the copy configuration for the data grid.
       */
+    def copyConfig: CopyConfig = js.native
     /**
       * Set the copy configuration for the data grid.
       */
-    var copyConfig: CopyConfig = js.native
+    def copyConfig_=(value: CopyConfig): Unit = js.native
     
     /**
       * Copy the current selection to the system clipboard.
@@ -563,21 +572,23 @@ object typesDatagridMod {
     /**
       * Get the data model for the data grid.
       */
+    def dataModel: DataModel | Null = js.native
     /**
       * Set the data model for the data grid.
       *
       * #### Notes
       * This will automatically remove the current selection model.
       */
-    var dataModel: DataModel | Null = js.native
+    def dataModel_=(value: DataModel | Null): Unit = js.native
     
     /**
       * Get the default sizes for the various sections of the data grid.
       */
+    def defaultSizes: DefaultSizes_ = js.native
     /**
       * Set the default sizes for the various sections of the data grid.
       */
-    var defaultSizes: DefaultSizes_ = js.native
+    def defaultSizes_=(value: DefaultSizes_): Unit = js.native
     
     /**
       * Draw the corner header region which intersects the dirty rect.
@@ -590,17 +601,19 @@ object typesDatagridMod {
       * `editingEnabled` flag must be on and grid must have required
       * selection model, editor controller and data model properties.
       */
-    val editable: Boolean = js.native
+    def editable: Boolean = js.native
     
     /**
       * Whether the cell editing is enabled for the data grid.
       */
-    var editingEnabled: Boolean = js.native
+    def editingEnabled: Boolean = js.native
+    def editingEnabled_=(enabled: Boolean): Unit = js.native
     
     /**
       * The cell editor controller object for the data grid.
       */
-    var editorController: ICellEditorController | Null = js.native
+    def editorController: ICellEditorController | Null = js.native
+    def editorController_=(controller: ICellEditorController | Null): Unit = js.native
     
     /**
       * Auto sizes column widths based on their text content.
@@ -632,20 +645,21 @@ object typesDatagridMod {
     /**
       * The virtual height of the column headers.
       */
-    val headerHeight: Double = js.native
+    def headerHeight: Double = js.native
     
     /**
       * Get the header visibility for the data grid.
       */
+    def headerVisibility: HeaderVisibility = js.native
     /**
       * Set the header visibility for the data grid.
       */
-    var headerVisibility: HeaderVisibility = js.native
+    def headerVisibility_=(value: HeaderVisibility): Unit = js.native
     
     /**
       * The virtual width of the row headers.
       */
-    val headerWidth: Double = js.native
+    def headerWidth: Double = js.native
     
     /**
       * Hit test the viewport for the given client position.
@@ -665,10 +679,11 @@ object typesDatagridMod {
     /**
       * Get the key handler for the data grid.
       */
+    def keyHandler: IKeyHandler | Null = js.native
     /**
       * Set the key handler for the data grid.
       */
-    var keyHandler: IKeyHandler | Null = js.native
+    def keyHandler_=(value: IKeyHandler | Null): Unit = js.native
     
     /**
       * Map a client position to local viewport coordinates.
@@ -695,12 +710,12 @@ object typesDatagridMod {
     /**
       * The maximum scroll X position for the grid.
       */
-    val maxScrollX: Double = js.native
+    def maxScrollX: Double = js.native
     
     /**
       * The maximum scroll Y position for the grid.
       */
-    val maxScrollY: Double = js.native
+    def maxScrollY: Double = js.native
     
     /**
       * Intercept a message sent to a message handler.
@@ -717,18 +732,20 @@ object typesDatagridMod {
     /**
       * Get the minimum sizes for the various sections of the data grid.
       */
+    def minimumSizes: DefaultSizes_ = js.native
     /**
       * Set the minimum sizes for the various sections of the data grid.
       */
-    var minimumSizes: DefaultSizes_ = js.native
+    def minimumSizes_=(value: DefaultSizes_): Unit = js.native
     
     /**
       * Get the mouse handler for the data grid.
       */
+    def mouseHandler: IMouseHandler | Null = js.native
     /**
       * Set the mouse handler for the data grid.
       */
-    var mouseHandler: IMouseHandler | Null = js.native
+    def mouseHandler_=(value: IMouseHandler | Null): Unit = js.native
     
     /**
       * Move cursor down/up/left/right while making sure it remains
@@ -746,12 +763,12 @@ object typesDatagridMod {
     /**
       * The height of the visible portion of the grid body.
       */
-    val pageHeight: Double = js.native
+    def pageHeight: Double = js.native
     
     /**
       * The width of the visible portion of the grid body.
       */
-    val pageWidth: Double = js.native
+    def pageWidth: Double = js.native
     
     /**
       * Paint the grid content for the given dirty rect.
@@ -845,7 +862,7 @@ object typesDatagridMod {
     /**
       * The row header sections of the data grid.
       */
-    /* protected */ val rowHeaderSections: SectionList = js.native
+    /* protected */ def rowHeaderSections: SectionList = js.native
     
     /**
       * Get the offset of a row in the data grid.
@@ -864,7 +881,7 @@ object typesDatagridMod {
     /**
       * The row sections of the data grid.
       */
-    /* protected */ val rowSections: SectionList = js.native
+    /* protected */ def rowSections: SectionList = js.native
     
     /**
       * Get the size of a row in the data grid.
@@ -956,44 +973,48 @@ object typesDatagridMod {
     /**
       * The current scroll X position of the viewport.
       */
-    val scrollX: Double = js.native
+    def scrollX: Double = js.native
     
     /**
       * The current scroll Y position of the viewport.
       */
-    val scrollY: Double = js.native
+    def scrollY: Double = js.native
     
     /**
       * Get the selection model for the data grid.
       */
+    def selectionModel: SelectionModel | Null = js.native
     /**
       * Set the selection model for the data grid.
       */
-    var selectionModel: SelectionModel | Null = js.native
+    def selectionModel_=(value: SelectionModel | Null): Unit = js.native
     
     /**
       * Get whether the last column is stretched.
       */
+    def stretchLastColumn: Boolean = js.native
     /**
       * Set whether the last column is stretched.
       */
-    var stretchLastColumn: Boolean = js.native
+    def stretchLastColumn_=(value: Boolean): Unit = js.native
     
     /**
       * Get whether the last row is stretched.
       */
+    def stretchLastRow: Boolean = js.native
     /**
       * Set whether the last row is stretched.
       */
-    var stretchLastRow: Boolean = js.native
+    def stretchLastRow_=(value: Boolean): Unit = js.native
     
     /**
       * Get the style for the data grid.
       */
+    def style: Style = js.native
     /**
       * Set the style for the data grid.
       */
-    var style: Style = js.native
+    def style_=(value: Style): Unit = js.native
     
     /**
       * The virtual height of the entire grid.
@@ -1001,7 +1022,7 @@ object typesDatagridMod {
       * #### Notes
       * This does *not* account for a stretched last row.
       */
-    val totalHeight: Double = js.native
+    def totalHeight: Double = js.native
     
     /**
       * The virtual width of the entire grid.
@@ -1009,22 +1030,22 @@ object typesDatagridMod {
       * #### Notes
       * This does *not* account for a stretched last column.
       */
-    val totalWidth: Double = js.native
+    def totalWidth: Double = js.native
     
     /**
       * The viewport widget for the data grid.
       */
-    val viewport: Widget = js.native
+    def viewport: Widget = js.native
     
     /**
       * The actual height of the viewport.
       */
-    val viewportHeight: Double = js.native
+    def viewportHeight: Double = js.native
     
     /**
       * The actual width of the viewport.
       */
-    val viewportWidth: Double = js.native
+    def viewportWidth: Double = js.native
   }
   object DataGrid {
     

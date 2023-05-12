@@ -1,7 +1,8 @@
 package typings.datastoreCore
 
 import typings.datastoreCore.distSrcBaseMod.BaseDatastore
-import typings.datastoreCore.distSrcKeytransformMod.KeyTransformDatastore
+import typings.datastoreCore.mod.Shard_
+import typings.interfaceDatastore.mod.Datastore
 import typings.interfaceDatastore.mod.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,25 +13,31 @@ object distSrcShardingMod {
   @JSImport("datastore-core/dist/src/sharding", "ShardingDatastore")
   @js.native
   open class ShardingDatastore protected () extends BaseDatastore {
-    /**
-      * @param {Datastore} store
-      * @param {Shard} shard
-      */
-    def this(store: Datastore, shard: Shard) = this()
+    def this(
+      store: Datastore[
+            js.Object, 
+            js.Object, 
+            js.Object, 
+            js.Object, 
+            js.Object, 
+            js.Object, 
+            js.Object, 
+            js.Object, 
+            js.Object, 
+            js.Object
+          ],
+      shard: Shard_
+    ) = this()
     
-    /**
-      * @param {Key} key
-      */
     def _convertKey(key: Key): Key = js.native
     
-    /**
-      * @param {Key} key
-      */
     def _invertKey(key: Key): Key = js.native
     
-    var child: KeyTransformDatastore = js.native
+    /* private */ val child: Any = js.native
     
-    var shard: typings.datastoreCore.distSrcTypesMod.Shard = js.native
+    def open(): js.Promise[Unit] = js.native
+    
+    /* private */ var shard: Any = js.native
   }
   /* static members */
   object ShardingDatastore {
@@ -39,49 +46,34 @@ object distSrcShardingMod {
     @js.native
     val ^ : js.Any = js.native
     
-    /**
-      * @param {Datastore} store
-      * @param {Shard} shard
-      */
-    inline def create(store: Datastore, shard: Shard): js.Promise[typings.datastoreCore.distSrcTypesMod.Shard] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(store.asInstanceOf[js.Any], shard.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.datastoreCore.distSrcTypesMod.Shard]]
-    
-    /**
-      * @deprecated
-      * @param {Datastore} store
-      * @param {Shard} shard
-      */
-    inline def createOrOpen(store: Datastore, shard: Shard): js.Promise[ShardingDatastore] = (^.asInstanceOf[js.Dynamic].applyDynamic("createOrOpen")(store.asInstanceOf[js.Any], shard.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ShardingDatastore]]
-    
-    /**
-      * @deprecated
-      * @param {Datastore} store
-      */
-    inline def open(store: Datastore): js.Promise[ShardingDatastore] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(store.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ShardingDatastore]]
+    inline def create(
+      store: Datastore[
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object
+        ]
+    ): js.Promise[Shard_] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(store.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Shard_]]
+    inline def create(
+      store: Datastore[
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object
+        ],
+      shard: Shard_
+    ): js.Promise[Shard_] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(store.asInstanceOf[js.Any], shard.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Shard_]]
   }
-  
-  type Await[TValue] = typings.interfaceStore.mod.Await[TValue]
-  
-  type AwaitIterable[TEntry] = typings.interfaceStore.mod.AwaitIterable[TEntry]
-  
-  type Batch = typings.interfaceDatastore.mod.Batch
-  
-  type Datastore = typings.interfaceDatastore.mod.Datastore
-  
-  type KeyQuery = typings.interfaceDatastore.mod.KeyQuery
-  
-  type KeyQueryFilter = typings.interfaceDatastore.mod.KeyQueryFilter
-  
-  type KeyQueryOrder = typings.interfaceDatastore.mod.KeyQueryOrder
-  
-  type Options = typings.interfaceDatastore.mod.Options
-  
-  type Pair = typings.interfaceDatastore.mod.Pair
-  
-  type Query = typings.interfaceDatastore.mod.Query
-  
-  type QueryFilter = typings.interfaceDatastore.mod.QueryFilter
-  
-  type QueryOrder = typings.interfaceDatastore.mod.QueryOrder
-  
-  type Shard = typings.datastoreCore.distSrcTypesMod.Shard
 }

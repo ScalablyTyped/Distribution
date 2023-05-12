@@ -11,6 +11,10 @@ import typings.webextensionPolyfill.namespacesCaptivePortalMod.CaptivePortal.OnS
 import typings.webextensionPolyfill.namespacesClipboardMod.Clipboard.SetImageDataImageTypeEnum
 import typings.webextensionPolyfill.namespacesCookiesMod.Cookies.OnChangedCause
 import typings.webextensionPolyfill.namespacesCookiesMod.Cookies.SameSiteStatus
+import typings.webextensionPolyfill.namespacesDeclarativeNetRequestMod.DeclarativeNetRequest.ResourceType
+import typings.webextensionPolyfill.namespacesDeclarativeNetRequestMod.DeclarativeNetRequest.RuleActionTypeEnum
+import typings.webextensionPolyfill.namespacesDeclarativeNetRequestMod.DeclarativeNetRequest.RuleConditionDomainTypeEnum
+import typings.webextensionPolyfill.namespacesDeclarativeNetRequestMod.DeclarativeNetRequest.URLTransformSchemeEnum
 import typings.webextensionPolyfill.namespacesDnsMod.Dns.ResolveFlagsItemEnum
 import typings.webextensionPolyfill.namespacesDownloadsMod.Downloads.DangerType
 import typings.webextensionPolyfill.namespacesDownloadsMod.Downloads.DownloadOptionsTypeMethodEnum
@@ -39,6 +43,7 @@ import typings.webextensionPolyfill.namespacesManifestMod.Manifest.ThemeTypeProp
 import typings.webextensionPolyfill.namespacesManifestMod.Manifest.ThemeTypePropertiesColorSchemeEnum
 import typings.webextensionPolyfill.namespacesManifestMod.Manifest.ThemeTypePropertiesContentColorSchemeEnum
 import typings.webextensionPolyfill.namespacesManifestMod.Manifest.WebExtensionManifestIncognitoEnum
+import typings.webextensionPolyfill.namespacesManifestMod.Manifest._Permission
 import typings.webextensionPolyfill.namespacesMenusMod.Menus.ContextType
 import typings.webextensionPolyfill.namespacesMenusMod.Menus.ItemType
 import typings.webextensionPolyfill.namespacesMenusMod.Menus.OnClickDataModifiersItemEnum
@@ -87,7 +92,7 @@ import typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.OnComplet
 import typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.OnHeadersReceivedOptions
 import typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.OnResponseStartedOptions
 import typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.OnSendHeadersOptions
-import typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.ResourceType
+import typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.SecurityInfoOverridableErrorCategoryEnum
 import typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.SecurityInfoProtocolVersionEnum
 import typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.SecurityInfoStateEnum
 import typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.StreamFilterStatus
@@ -124,6 +129,10 @@ object webextensionPolyfillStrings {
   @js.native
   sealed trait Application extends StObject
   inline def Application: Application = "Application".asInstanceOf[Application]
+  
+  @js.native
+  sealed trait Asterisk extends StObject
+  inline def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   
   @js.native
   sealed trait CRASH
@@ -459,6 +468,18 @@ object webextensionPolyfillStrings {
   inline def all: all = "all".asInstanceOf[all]
   
   @js.native
+  sealed trait allow
+    extends StObject
+       with RuleActionTypeEnum
+  inline def allow: allow = "allow".asInstanceOf[allow]
+  
+  @js.native
+  sealed trait allowAllRequests
+    extends StObject
+       with RuleActionTypeEnum
+  inline def allowAllRequests: allowAllRequests = "allowAllRequests".asInstanceOf[allowAllRequests]
+  
+  @js.native
   sealed trait allow_all
     extends StObject
        with CookieConfigBehaviorEnum
@@ -531,6 +552,10 @@ object webextensionPolyfillStrings {
     extends StObject
        with OnRestartRequiredReason
   inline def app_update: app_update = "app_update".asInstanceOf[app_update]
+  
+  @js.native
+  sealed trait append extends StObject
+  inline def append: append = "append".asInstanceOf[append]
   
   @js.native
   sealed trait arm
@@ -635,11 +660,18 @@ object webextensionPolyfillStrings {
   sealed trait beacon
     extends StObject
        with ResourceType
+       with typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.ResourceType
   inline def beacon: beacon = "beacon".asInstanceOf[beacon]
   
   @js.native
   sealed trait bitcoin extends StObject
   inline def bitcoin: bitcoin = "bitcoin".asInstanceOf[bitcoin]
+  
+  @js.native
+  sealed trait block
+    extends StObject
+       with RuleActionTypeEnum
+  inline def block: block = "block".asInstanceOf[block]
   
   @js.native
   sealed trait blocking
@@ -902,6 +934,7 @@ object webextensionPolyfillStrings {
   sealed trait csp_report
     extends StObject
        with ResourceType
+       with typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.ResourceType
   inline def csp_report: csp_report = "csp_report".asInstanceOf[csp_report]
   
   @js.native
@@ -920,6 +953,24 @@ object webextensionPolyfillStrings {
   @js.native
   sealed trait dat extends StObject
   inline def dat: dat = "dat".asInstanceOf[dat]
+  
+  @js.native
+  sealed trait declarativeNetRequest
+    extends StObject
+       with _Permission
+  inline def declarativeNetRequest: declarativeNetRequest = "declarativeNetRequest".asInstanceOf[declarativeNetRequest]
+  
+  @js.native
+  sealed trait declarativeNetRequestFeedback
+    extends StObject
+       with PermissionNoPrompt
+  inline def declarativeNetRequestFeedback: declarativeNetRequestFeedback = "declarativeNetRequestFeedback".asInstanceOf[declarativeNetRequestFeedback]
+  
+  @js.native
+  sealed trait declarativeNetRequestWithHostAccess
+    extends StObject
+       with PermissionNoPrompt
+  inline def declarativeNetRequestWithHostAccess: declarativeNetRequestWithHostAccess = "declarativeNetRequestWithHostAccess".asInstanceOf[declarativeNetRequestWithHostAccess]
   
   @js.native
   sealed trait default_public_and_private_interfaces
@@ -1068,6 +1119,12 @@ object webextensionPolyfillStrings {
   inline def document_start: document_start = "document_start".asInstanceOf[document_start]
   
   @js.native
+  sealed trait domain_mismatch
+    extends StObject
+       with SecurityInfoOverridableErrorCategoryEnum
+  inline def domain_mismatch: domain_mismatch = "domain_mismatch".asInstanceOf[domain_mismatch]
+  
+  @js.native
   sealed trait down
     extends StObject
        with NetworkLinkInfoStatusEnum
@@ -1102,6 +1159,18 @@ object webextensionPolyfillStrings {
   inline def editable: editable = "editable".asInstanceOf[editable]
   
   @js.native
+  sealed trait emailtracking
+    extends StObject
+       with UrlClassificationFlags
+  inline def emailtracking: emailtracking = "emailtracking".asInstanceOf[emailtracking]
+  
+  @js.native
+  sealed trait emailtracking_content
+    extends StObject
+       with UrlClassificationFlags
+  inline def emailtracking_content: emailtracking_content = "emailtracking_content".asInstanceOf[emailtracking_content]
+  
+  @js.native
   sealed trait engagement
     extends StObject
        with EngagementState
@@ -1124,6 +1193,12 @@ object webextensionPolyfillStrings {
     extends StObject
        with OnChangedCause
   inline def expired: expired = "expired".asInstanceOf[expired]
+  
+  @js.native
+  sealed trait expired_or_not_yet_valid
+    extends StObject
+       with SecurityInfoOverridableErrorCategoryEnum
+  inline def expired_or_not_yet_valid: expired_or_not_yet_valid = "expired_or_not_yet_valid".asInstanceOf[expired_or_not_yet_valid]
   
   @js.native
   sealed trait expired_overwrite
@@ -1212,6 +1287,12 @@ object webextensionPolyfillStrings {
   inline def finishedtransferringdata: finishedtransferringdata = "finishedtransferringdata".asInstanceOf[finishedtransferringdata]
   
   @js.native
+  sealed trait firstParty
+    extends StObject
+       with RuleConditionDomainTypeEnum
+  inline def firstParty: firstParty = "firstParty".asInstanceOf[firstParty]
+  
+  @js.native
   sealed trait folder
     extends StObject
        with BookmarkTreeNodeType
@@ -1221,6 +1302,7 @@ object webextensionPolyfillStrings {
   sealed trait font
     extends StObject
        with ResourceType
+       with typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.ResourceType
   inline def font: font = "font".asInstanceOf[font]
   
   @js.native
@@ -1321,6 +1403,18 @@ object webextensionPolyfillStrings {
   inline def host: host = "host".asInstanceOf[host]
   
   @js.native
+  sealed trait http
+    extends StObject
+       with URLTransformSchemeEnum
+  inline def http: http = "http".asInstanceOf[http]
+  
+  @js.native
+  sealed trait https
+    extends StObject
+       with URLTransformSchemeEnum
+  inline def https: https = "https".asInstanceOf[https]
+  
+  @js.native
   sealed trait identity
     extends StObject
        with PermissionNoPrompt
@@ -1350,6 +1444,7 @@ object webextensionPolyfillStrings {
     extends StObject
        with ContextType
        with ResourceType
+       with typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.ResourceType
        with TemplateType
   inline def image: image = "image".asInstanceOf[image]
   
@@ -1357,6 +1452,7 @@ object webextensionPolyfillStrings {
   sealed trait imageset
     extends StObject
        with ResourceType
+       with typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.ResourceType
   inline def imageset: imageset = "imageset".asInstanceOf[imageset]
   
   @js.native
@@ -1455,12 +1551,6 @@ object webextensionPolyfillStrings {
   inline def jsallocations: jsallocations = "jsallocations".asInstanceOf[jsallocations]
   
   @js.native
-  sealed trait jstracer
-    extends StObject
-       with ProfilerFeature
-  inline def jstracer: jstracer = "jstracer".asInstanceOf[jstracer]
-  
-  @js.native
   sealed trait keyword
     extends StObject
        with TransitionType
@@ -1485,12 +1575,6 @@ object webextensionPolyfillStrings {
     extends StObject
        with SameSiteStatus
   inline def lax: lax = "lax".asInstanceOf[lax]
-  
-  @js.native
-  sealed trait leaf
-    extends StObject
-       with ProfilerFeature
-  inline def leaf: leaf = "leaf".asInstanceOf[leaf]
   
   @js.native
   sealed trait left
@@ -1585,6 +1669,7 @@ object webextensionPolyfillStrings {
   sealed trait main_frame
     extends StObject
        with ResourceType
+       with typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.ResourceType
   inline def main_frame: main_frame = "main_frame".asInstanceOf[main_frame]
   
   @js.native
@@ -1643,6 +1728,7 @@ object webextensionPolyfillStrings {
   sealed trait media
     extends StObject
        with ResourceType
+       with typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.ResourceType
   inline def media: media = "media".asInstanceOf[media]
   
   @js.native
@@ -1694,6 +1780,16 @@ object webextensionPolyfillStrings {
   inline def mobile: mobile = "mobile".asInstanceOf[mobile]
   
   @js.native
+  sealed trait modifyHeaders
+    extends StObject
+       with RuleActionTypeEnum
+  inline def modifyHeaders: modifyHeaders = "modifyHeaders".asInstanceOf[modifyHeaders]
+  
+  @js.native
+  sealed trait module extends StObject
+  inline def module: module = "module".asInstanceOf[module]
+  
+  @js.native
   sealed trait mousedown
     extends StObject
        with ContextMenuMouseEvent
@@ -1704,6 +1800,12 @@ object webextensionPolyfillStrings {
     extends StObject
        with ContextMenuMouseEvent
   inline def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
+  
+  @js.native
+  sealed trait `moz-extension`
+    extends StObject
+       with URLTransformSchemeEnum
+  inline def `moz-extension`: `moz-extension` = "moz-extension".asInstanceOf[`moz-extension`]
   
   @js.native
   sealed trait mozillaAddons
@@ -1882,12 +1984,14 @@ object webextensionPolyfillStrings {
   sealed trait `object`
     extends StObject
        with ResourceType
+       with typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.ResourceType
   inline def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
   sealed trait object_subrequest
     extends StObject
        with ResourceType
+       with typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.ResourceType
   inline def object_subrequest: object_subrequest = "object_subrequest".asInstanceOf[object_subrequest]
   
   @js.native
@@ -1925,6 +2029,7 @@ object webextensionPolyfillStrings {
     extends StObject
        with ExtensionInstallType
        with ResourceType
+       with typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.ResourceType
   inline def other: other = "other".asInstanceOf[other]
   
   @js.native
@@ -1994,6 +2099,7 @@ object webextensionPolyfillStrings {
   sealed trait ping
     extends StObject
        with ResourceType
+       with typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.ResourceType
   inline def ping: ping = "ping".asInstanceOf[ping]
   
   @js.native
@@ -2042,6 +2148,12 @@ object webextensionPolyfillStrings {
        with WindowType
        with typings.webextensionPolyfill.namespacesWindowsMod.Windows.WindowType
   inline def popup: popup = "popup".asInstanceOf[popup]
+  
+  @js.native
+  sealed trait power
+    extends StObject
+       with ProfilerFeature
+  inline def power: power = "power".asInstanceOf[power]
   
   @js.native
   sealed trait ppc64
@@ -2125,6 +2237,12 @@ object webextensionPolyfillStrings {
   inline def radio: radio = "radio".asInstanceOf[radio]
   
   @js.native
+  sealed trait redirect
+    extends StObject
+       with RuleActionTypeEnum
+  inline def redirect: redirect = "redirect".asInstanceOf[redirect]
+  
+  @js.native
   sealed trait regular
     extends StObject
        with SettingScope
@@ -2172,6 +2290,10 @@ object webextensionPolyfillStrings {
     extends StObject
        with ResultType
   inline def remote_tab: remote_tab = "remote_tab".asInstanceOf[remote_tab]
+  
+  @js.native
+  sealed trait remove extends StObject
+  inline def remove: remove = "remove".asInstanceOf[remove]
   
   @js.native
   sealed trait repeat
@@ -2278,6 +2400,7 @@ object webextensionPolyfillStrings {
   sealed trait script
     extends StObject
        with ResourceType
+       with typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.ResourceType
   inline def script: script = "script".asInstanceOf[script]
   
   @js.native
@@ -2341,6 +2464,10 @@ object webextensionPolyfillStrings {
   inline def sessions: sessions = "sessions".asInstanceOf[sessions]
   
   @js.native
+  sealed trait set extends StObject
+  inline def set: set = "set".asInstanceOf[set]
+  
+  @js.native
   sealed trait sharingState
     extends StObject
        with UpdatePropertyName
@@ -2393,6 +2520,7 @@ object webextensionPolyfillStrings {
   sealed trait speculative
     extends StObject
        with ResourceType
+       with typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.ResourceType
   inline def speculative: speculative = "speculative".asInstanceOf[speculative]
   
   @js.native
@@ -2447,12 +2575,14 @@ object webextensionPolyfillStrings {
   sealed trait stylesheet
     extends StObject
        with ResourceType
+       with typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.ResourceType
   inline def stylesheet: stylesheet = "stylesheet".asInstanceOf[stylesheet]
   
   @js.native
   sealed trait sub_frame
     extends StObject
        with ResourceType
+       with typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.ResourceType
   inline def sub_frame: sub_frame = "sub_frame".asInstanceOf[sub_frame]
   
   @js.native
@@ -2514,6 +2644,12 @@ object webextensionPolyfillStrings {
        with ExtensionType
        with PermissionNoPrompt
   inline def theme: theme = "theme".asInstanceOf[theme]
+  
+  @js.native
+  sealed trait thirdParty
+    extends StObject
+       with RuleConditionDomainTypeEnum
+  inline def thirdParty: thirdParty = "thirdParty".asInstanceOf[thirdParty]
   
   @js.native
   sealed trait throttled
@@ -2586,6 +2722,12 @@ object webextensionPolyfillStrings {
     extends StObject
        with StreamFilterStatus
   inline def transferringdata: transferringdata = "transferringdata".asInstanceOf[transferringdata]
+  
+  @js.native
+  sealed trait trust_error
+    extends StObject
+       with SecurityInfoOverridableErrorCategoryEnum
+  inline def trust_error: trust_error = "trust_error".asInstanceOf[trust_error]
   
   @js.native
   sealed trait typed
@@ -2665,6 +2807,12 @@ object webextensionPolyfillStrings {
     extends StObject
        with RequestUpdateCheckStatus
   inline def update_available: update_available = "update_available".asInstanceOf[update_available]
+  
+  @js.native
+  sealed trait upgradeScheme
+    extends StObject
+       with RuleActionTypeEnum
+  inline def upgradeScheme: upgradeScheme = "upgradeScheme".asInstanceOf[upgradeScheme]
   
   @js.native
   sealed trait url
@@ -2752,6 +2900,7 @@ object webextensionPolyfillStrings {
   sealed trait web_manifest
     extends StObject
        with ResourceType
+       with typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.ResourceType
   inline def web_manifest: web_manifest = "web_manifest".asInstanceOf[web_manifest]
   
   @js.native
@@ -2762,6 +2911,7 @@ object webextensionPolyfillStrings {
   sealed trait websocket
     extends StObject
        with ResourceType
+       with typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.ResourceType
   inline def websocket: websocket = "websocket".asInstanceOf[websocket]
   
   @js.native
@@ -2806,12 +2956,14 @@ object webextensionPolyfillStrings {
   sealed trait xml_dtd
     extends StObject
        with ResourceType
+       with typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.ResourceType
   inline def xml_dtd: xml_dtd = "xml_dtd".asInstanceOf[xml_dtd]
   
   @js.native
   sealed trait xmlhttprequest
     extends StObject
        with ResourceType
+       with typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.ResourceType
   inline def xmlhttprequest: xmlhttprequest = "xmlhttprequest".asInstanceOf[xmlhttprequest]
   
   @js.native
@@ -2822,5 +2974,6 @@ object webextensionPolyfillStrings {
   sealed trait xslt
     extends StObject
        with ResourceType
+       with typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.ResourceType
   inline def xslt: xslt = "xslt".asInstanceOf[xslt]
 }

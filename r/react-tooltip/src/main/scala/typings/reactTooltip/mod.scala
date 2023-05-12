@@ -1,94 +1,420 @@
 package typings.reactTooltip
 
-import typings.react.mod.Component
+import typings.react.mod.AriaAttributes
+import typings.react.mod.CSSProperties
+import typings.react.mod.DOMAttributes
+import typings.react.mod.ElementType
+import typings.react.mod.FC
+import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactNode
-import typings.reactTooltip.anon.Left
-import typings.reactTooltip.reactTooltipStrings.div
-import typings.reactTooltip.reactTooltipStrings.span
-import typings.std.Element
-import typings.std.Event
-import typings.std.EventTarget
-import typings.std.HTMLDivElement
-import typings.std.HTMLSpanElement
+import typings.react.mod.global.JSX.Element
+import typings.reactTooltip.anon.ActiveAnchor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-tooltip", JSImport.Default)
+  @JSImport("react-tooltip", JSImport.Namespace)
   @js.native
-  open class default ()
-    extends Component[TooltipProps, js.Object, Any]
-  /* static members */
-  object default {
-    
-    @JSImport("react-tooltip", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    inline def hide(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[js.Object]
-    inline def hide(target: Element): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(target.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-    
-    inline def rebuild(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("rebuild")().asInstanceOf[js.Object]
-    
-    // static methods
-    inline def show(target: Element): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(target.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-  }
+  val ^ : js.Any = js.native
+  
+  inline def Tooltip(param0: ITooltipController): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Tooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  /**
+    * @deprecated Use the `data-tooltip-id` attribute, or the `anchorSelect` prop instead.
+    * See https://react-tooltip.com/docs/getting-started
+    */
+  @JSImport("react-tooltip", "TooltipProvider")
+  @js.native
+  val TooltipProvider: FC[PropsWithChildren[Unit]] = js.native
+  
+  /**
+    * @deprecated Use the `data-tooltip-id` attribute, or the `anchorSelect` prop instead.
+    * See https://react-tooltip.com/docs/getting-started
+    */
+  inline def TooltipWrapper(param0: ITooltipWrapper): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TooltipWrapper")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  type ChildrenType = typings.std.Element | ElementType[Any] | ReactNode
   
   /* Rewritten from type alias, can be one of: 
+    - typings.reactTooltip.reactTooltipStrings.place
+    - typings.reactTooltip.reactTooltipStrings.content
+    - typings.reactTooltip.reactTooltipStrings.html
+    - typings.reactTooltip.reactTooltipStrings.variant
+    - typings.reactTooltip.reactTooltipStrings.offset
+    - typings.reactTooltip.reactTooltipStrings.wrapper
+    - typings.reactTooltip.reactTooltipStrings.events
+    - typings.reactTooltip.reactTooltipStrings.`position-strategy`
+    - typings.reactTooltip.reactTooltipStrings.`delay-show`
+    - typings.reactTooltip.reactTooltipStrings.`delay-hide`
     - typings.reactTooltip.reactTooltipStrings.float
-    - typings.reactTooltip.reactTooltipStrings.solid
   */
-  trait Effect extends StObject
-  object Effect {
+  trait DataAttribute extends StObject
+  object DataAttribute {
+    
+    inline def content: typings.reactTooltip.reactTooltipStrings.content = "content".asInstanceOf[typings.reactTooltip.reactTooltipStrings.content]
+    
+    inline def `delay-hide`: typings.reactTooltip.reactTooltipStrings.`delay-hide` = "delay-hide".asInstanceOf[typings.reactTooltip.reactTooltipStrings.`delay-hide`]
+    
+    inline def `delay-show`: typings.reactTooltip.reactTooltipStrings.`delay-show` = "delay-show".asInstanceOf[typings.reactTooltip.reactTooltipStrings.`delay-show`]
+    
+    inline def events: typings.reactTooltip.reactTooltipStrings.events = "events".asInstanceOf[typings.reactTooltip.reactTooltipStrings.events]
     
     inline def float: typings.reactTooltip.reactTooltipStrings.float = "float".asInstanceOf[typings.reactTooltip.reactTooltipStrings.float]
     
-    inline def solid: typings.reactTooltip.reactTooltipStrings.solid = "solid".asInstanceOf[typings.reactTooltip.reactTooltipStrings.solid]
+    inline def html: typings.reactTooltip.reactTooltipStrings.html = "html".asInstanceOf[typings.reactTooltip.reactTooltipStrings.html]
+    
+    inline def offset: typings.reactTooltip.reactTooltipStrings.offset = "offset".asInstanceOf[typings.reactTooltip.reactTooltipStrings.offset]
+    
+    inline def place: typings.reactTooltip.reactTooltipStrings.place = "place".asInstanceOf[typings.reactTooltip.reactTooltipStrings.place]
+    
+    inline def `position-strategy`: typings.reactTooltip.reactTooltipStrings.`position-strategy` = "position-strategy".asInstanceOf[typings.reactTooltip.reactTooltipStrings.`position-strategy`]
+    
+    inline def variant: typings.reactTooltip.reactTooltipStrings.variant = "variant".asInstanceOf[typings.reactTooltip.reactTooltipStrings.variant]
+    
+    inline def wrapper: typings.reactTooltip.reactTooltipStrings.wrapper = "wrapper".asInstanceOf[typings.reactTooltip.reactTooltipStrings.wrapper]
   }
   
-  type GetContent = GetContentFunc | (js.Tuple2[GetContentFunc, Double])
-  
-  type GetContentFunc = js.Function1[/* toolTipStr */ String, ReactNode]
-  
-  trait Offset extends StObject {
+  /* Rewritten from type alias, can be one of: 
+    - typings.reactTooltip.reactTooltipStrings.hover
+    - typings.reactTooltip.reactTooltipStrings.click
+  */
+  trait EventsType extends StObject
+  object EventsType {
     
-    var bottom: js.UndefOr[Double] = js.undefined
+    inline def click: typings.reactTooltip.reactTooltipStrings.click = "click".asInstanceOf[typings.reactTooltip.reactTooltipStrings.click]
     
-    var left: js.UndefOr[Double] = js.undefined
-    
-    var right: js.UndefOr[Double] = js.undefined
-    
-    var top: js.UndefOr[Double] = js.undefined
+    inline def hover: typings.reactTooltip.reactTooltipStrings.hover = "hover".asInstanceOf[typings.reactTooltip.reactTooltipStrings.hover]
   }
-  object Offset {
+  
+  trait IPosition extends StObject {
     
-    inline def apply(): Offset = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Offset]
+    var x: Double
+    
+    var y: Double
+  }
+  object IPosition {
+    
+    inline def apply(x: Double, y: Double): IPosition = {
+      val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IPosition]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: IPosition] (val x: Self) extends AnyVal {
       
-      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
-      
-      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
-      
-      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
-      
-      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
-      
-      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
-      
-      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
-      
-      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
+  
+  trait ITooltipController extends StObject {
+    
+    var afterHide: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    var afterShow: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    /**
+      * @deprecated Use the `data-tooltip-id` attribute, or the `anchorSelect` prop instead.
+      * See https://react-tooltip.com/docs/getting-started
+      */
+    var anchorId: js.UndefOr[String] = js.undefined
+    
+    var anchorSelect: js.UndefOr[String] = js.undefined
+    
+    var children: js.UndefOr[ChildrenType] = js.undefined
+    
+    var className: js.UndefOr[String] = js.undefined
+    
+    var classNameArrow: js.UndefOr[String] = js.undefined
+    
+    var clickable: js.UndefOr[Boolean] = js.undefined
+    
+    var closeOnEsc: js.UndefOr[Boolean] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
+    
+    var delayHide: js.UndefOr[Double] = js.undefined
+    
+    var delayShow: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * @deprecated Use `openOnClick` instead.
+      */
+    var events: js.UndefOr[js.Array[EventsType]] = js.undefined
+    
+    var float: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * @deprecated Use `children` or `render` instead
+      */
+    var html: js.UndefOr[String] = js.undefined
+    
+    var id: js.UndefOr[String] = js.undefined
+    
+    var isOpen: js.UndefOr[Boolean] = js.undefined
+    
+    var middlewares: js.UndefOr[js.Array[Middleware]] = js.undefined
+    
+    var noArrow: js.UndefOr[Boolean] = js.undefined
+    
+    var offset: js.UndefOr[Double] = js.undefined
+    
+    var openOnClick: js.UndefOr[Boolean] = js.undefined
+    
+    var place: js.UndefOr[PlacesType] = js.undefined
+    
+    var position: js.UndefOr[IPosition] = js.undefined
+    
+    var positionStrategy: js.UndefOr[PositionStrategy] = js.undefined
+    
+    var render: js.UndefOr[js.Function1[/* render */ ActiveAnchor, ChildrenType]] = js.undefined
+    
+    var setIsOpen: js.UndefOr[js.Function1[/* value */ Boolean, Unit]] = js.undefined
+    
+    var style: js.UndefOr[CSSProperties] = js.undefined
+    
+    var variant: js.UndefOr[VariantType] = js.undefined
+    
+    var wrapper: js.UndefOr[WrapperType] = js.undefined
+  }
+  object ITooltipController {
+    
+    inline def apply(): ITooltipController = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ITooltipController]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITooltipController] (val x: Self) extends AnyVal {
+      
+      inline def setAfterHide(value: () => Unit): Self = StObject.set(x, "afterHide", js.Any.fromFunction0(value))
+      
+      inline def setAfterHideUndefined: Self = StObject.set(x, "afterHide", js.undefined)
+      
+      inline def setAfterShow(value: () => Unit): Self = StObject.set(x, "afterShow", js.Any.fromFunction0(value))
+      
+      inline def setAfterShowUndefined: Self = StObject.set(x, "afterShow", js.undefined)
+      
+      inline def setAnchorId(value: String): Self = StObject.set(x, "anchorId", value.asInstanceOf[js.Any])
+      
+      inline def setAnchorIdUndefined: Self = StObject.set(x, "anchorId", js.undefined)
+      
+      inline def setAnchorSelect(value: String): Self = StObject.set(x, "anchorSelect", value.asInstanceOf[js.Any])
+      
+      inline def setAnchorSelectUndefined: Self = StObject.set(x, "anchorSelect", js.undefined)
+      
+      inline def setChildren(value: ChildrenType): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      
+      inline def setClassNameArrow(value: String): Self = StObject.set(x, "classNameArrow", value.asInstanceOf[js.Any])
+      
+      inline def setClassNameArrowUndefined: Self = StObject.set(x, "classNameArrow", js.undefined)
+      
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      
+      inline def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
+      
+      inline def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
+      
+      inline def setCloseOnEsc(value: Boolean): Self = StObject.set(x, "closeOnEsc", value.asInstanceOf[js.Any])
+      
+      inline def setCloseOnEscUndefined: Self = StObject.set(x, "closeOnEsc", js.undefined)
+      
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
+      inline def setDelayHide(value: Double): Self = StObject.set(x, "delayHide", value.asInstanceOf[js.Any])
+      
+      inline def setDelayHideUndefined: Self = StObject.set(x, "delayHide", js.undefined)
+      
+      inline def setDelayShow(value: Double): Self = StObject.set(x, "delayShow", value.asInstanceOf[js.Any])
+      
+      inline def setDelayShowUndefined: Self = StObject.set(x, "delayShow", js.undefined)
+      
+      inline def setEvents(value: js.Array[EventsType]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      
+      inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+      
+      inline def setEventsVarargs(value: EventsType*): Self = StObject.set(x, "events", js.Array(value*))
+      
+      inline def setFloat(value: Boolean): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
+      
+      inline def setFloatUndefined: Self = StObject.set(x, "float", js.undefined)
+      
+      inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      
+      inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      
+      inline def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
+      
+      inline def setMiddlewares(value: js.Array[Middleware]): Self = StObject.set(x, "middlewares", value.asInstanceOf[js.Any])
+      
+      inline def setMiddlewaresUndefined: Self = StObject.set(x, "middlewares", js.undefined)
+      
+      inline def setMiddlewaresVarargs(value: Middleware*): Self = StObject.set(x, "middlewares", js.Array(value*))
+      
+      inline def setNoArrow(value: Boolean): Self = StObject.set(x, "noArrow", value.asInstanceOf[js.Any])
+      
+      inline def setNoArrowUndefined: Self = StObject.set(x, "noArrow", js.undefined)
+      
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      
+      inline def setOpenOnClick(value: Boolean): Self = StObject.set(x, "openOnClick", value.asInstanceOf[js.Any])
+      
+      inline def setOpenOnClickUndefined: Self = StObject.set(x, "openOnClick", js.undefined)
+      
+      inline def setPlace(value: PlacesType): Self = StObject.set(x, "place", value.asInstanceOf[js.Any])
+      
+      inline def setPlaceUndefined: Self = StObject.set(x, "place", js.undefined)
+      
+      inline def setPosition(value: IPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      
+      inline def setPositionStrategy(value: PositionStrategy): Self = StObject.set(x, "positionStrategy", value.asInstanceOf[js.Any])
+      
+      inline def setPositionStrategyUndefined: Self = StObject.set(x, "positionStrategy", js.undefined)
+      
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      
+      inline def setRender(value: /* render */ ActiveAnchor => ChildrenType): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      
+      inline def setSetIsOpen(value: /* value */ Boolean => Unit): Self = StObject.set(x, "setIsOpen", js.Any.fromFunction1(value))
+      
+      inline def setSetIsOpenUndefined: Self = StObject.set(x, "setIsOpen", js.undefined)
+      
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      
+      inline def setVariant(value: VariantType): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+      
+      inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
+      
+      inline def setWrapper(value: WrapperType): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      
+      inline def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
+    }
+  }
+  
+  /**
+    * @deprecated Use the `data-tooltip-id` attribute, or the `anchorSelect` prop instead.
+    * See https://react-tooltip.com/docs/getting-started
+    */
+  trait ITooltipWrapper extends StObject {
+    
+    var children: ReactNode
+    
+    var className: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
+    
+    var delayHide: js.UndefOr[Double] = js.undefined
+    
+    var delayShow: js.UndefOr[Double] = js.undefined
+    
+    var events: js.UndefOr[js.Array[EventsType]] = js.undefined
+    
+    var html: js.UndefOr[String] = js.undefined
+    
+    var offset: js.UndefOr[Double] = js.undefined
+    
+    var place: js.UndefOr[PlacesType] = js.undefined
+    
+    var positionStrategy: js.UndefOr[PositionStrategy] = js.undefined
+    
+    var tooltipId: js.UndefOr[String] = js.undefined
+    
+    var variant: js.UndefOr[VariantType] = js.undefined
+    
+    var wrapper: js.UndefOr[WrapperType] = js.undefined
+  }
+  object ITooltipWrapper {
+    
+    inline def apply(): ITooltipWrapper = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ITooltipWrapper]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITooltipWrapper] (val x: Self) extends AnyVal {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
+      inline def setDelayHide(value: Double): Self = StObject.set(x, "delayHide", value.asInstanceOf[js.Any])
+      
+      inline def setDelayHideUndefined: Self = StObject.set(x, "delayHide", js.undefined)
+      
+      inline def setDelayShow(value: Double): Self = StObject.set(x, "delayShow", value.asInstanceOf[js.Any])
+      
+      inline def setDelayShowUndefined: Self = StObject.set(x, "delayShow", js.undefined)
+      
+      inline def setEvents(value: js.Array[EventsType]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      
+      inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+      
+      inline def setEventsVarargs(value: EventsType*): Self = StObject.set(x, "events", js.Array(value*))
+      
+      inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      
+      inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+      
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      
+      inline def setPlace(value: PlacesType): Self = StObject.set(x, "place", value.asInstanceOf[js.Any])
+      
+      inline def setPlaceUndefined: Self = StObject.set(x, "place", js.undefined)
+      
+      inline def setPositionStrategy(value: PositionStrategy): Self = StObject.set(x, "positionStrategy", value.asInstanceOf[js.Any])
+      
+      inline def setPositionStrategyUndefined: Self = StObject.set(x, "positionStrategy", js.undefined)
+      
+      inline def setTooltipId(value: String): Self = StObject.set(x, "tooltipId", value.asInstanceOf[js.Any])
+      
+      inline def setTooltipIdUndefined: Self = StObject.set(x, "tooltipId", js.undefined)
+      
+      inline def setVariant(value: VariantType): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+      
+      inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
+      
+      inline def setWrapper(value: WrapperType): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      
+      inline def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
+    }
+  }
+  
+  /**
+    * @description floating-ui middleware
+    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  type Middleware = Any
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactTooltip.reactTooltipStrings.top
@@ -96,8 +422,8 @@ object mod {
     - typings.reactTooltip.reactTooltipStrings.bottom
     - typings.reactTooltip.reactTooltipStrings.left
   */
-  trait Place extends StObject
-  object Place {
+  trait PlacesType extends StObject
+  object PlacesType {
     
     inline def bottom: typings.reactTooltip.reactTooltipStrings.bottom = "bottom".asInstanceOf[typings.reactTooltip.reactTooltipStrings.bottom]
     
@@ -108,345 +434,28 @@ object mod {
     inline def top: typings.reactTooltip.reactTooltipStrings.top = "top".asInstanceOf[typings.reactTooltip.reactTooltipStrings.top]
   }
   
-  type ReactTooltip = Component[TooltipProps, js.Object, Any]
-  
-  trait TooltipProps extends StObject {
+  /* Rewritten from type alias, can be one of: 
+    - typings.reactTooltip.reactTooltipStrings.absolute
+    - typings.reactTooltip.reactTooltipStrings.fixed
+  */
+  trait PositionStrategy extends StObject
+  object PositionStrategy {
     
-    // Callback after tooltip is hidden
-    var afterHide: js.UndefOr[VoidFunc] = js.undefined
+    inline def absolute: typings.reactTooltip.reactTooltipStrings.absolute = "absolute".asInstanceOf[typings.reactTooltip.reactTooltipStrings.absolute]
     
-    // Callback after tooltip is shown
-    var afterShow: js.UndefOr[VoidFunc] = js.undefined
-    
-    // Popup arrow color
-    var arrowColor: js.UndefOr[String] = js.undefined
-    
-    // Popup background color
-    var backgroundColor: js.UndefOr[String] = js.undefined
-    
-    // Listen to body events vs. individual events
-    var bodyMode: js.UndefOr[Boolean] = js.undefined
-    
-    // Add 1px white border
-    var border: js.UndefOr[Boolean] = js.undefined
-    
-    // A custom class name to use for the border
-    var borderClass: js.UndefOr[String] = js.undefined
-    
-    // Popup border color
-    var borderColor: js.UndefOr[String] = js.undefined
-    
-    var children: js.UndefOr[ReactNode] = js.undefined
-    
-    // Extra style class
-    var `class`: js.UndefOr[String] = js.undefined
-    
-    // Extra style class
-    var className: js.UndefOr[String] = js.undefined
-    
-    // Should the tooltip by clickable?
-    var clickable: js.UndefOr[Boolean] = js.undefined
-    
-    // Time delay for hiding popup
-    var delayHide: js.UndefOr[Double] = js.undefined
-    
-    // Time delay for showing popup
-    var delayShow: js.UndefOr[Double] = js.undefined
-    
-    // Time delay for updating popup
-    var delayUpdate: js.UndefOr[Double] = js.undefined
-    
-    // Manually disable the tooltip behavior
-    var disable: js.UndefOr[Boolean] = js.undefined
-    
-    // Set internal style as optional
-    var disableInternalStyle: js.UndefOr[Boolean] = js.undefined
-    
-    // Behavior of tooltip
-    var effect: js.UndefOr[Effect] = js.undefined
-    
-    // Custom event to trigger tooltip
-    var event: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 103, starting with typings.reactTooltip.reactTooltipStrings.fullscreenchange, typings.reactTooltip.reactTooltipStrings.fullscreenerror, typings.reactTooltip.reactTooltipStrings.copy */ Any
-      ] = js.undefined
-    
-    // Custom event to hide tooltip
-    // (this requires the event prop as well)
-    var eventOff: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 103, starting with typings.reactTooltip.reactTooltipStrings.fullscreenchange, typings.reactTooltip.reactTooltipStrings.fullscreenerror, typings.reactTooltip.reactTooltipStrings.copy */ Any
-      ] = js.undefined
-    
-    // Function to dynamically generate the tooltip content
-    var getContent: js.UndefOr[GetContent] = js.undefined
-    
-    // Global event to hide tooltip
-    var globalEventOff: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 103, starting with typings.reactTooltip.reactTooltipStrings.fullscreenchange, typings.reactTooltip.reactTooltipStrings.fullscreenerror, typings.reactTooltip.reactTooltipStrings.copy */ Any
-      ] = js.undefined
-    
-    // Inject raw HTML? (This is a security risk)
-    var html: js.UndefOr[Boolean] = js.undefined
-    
-    // HTML id attribute
-    var id: js.UndefOr[String] = js.undefined
-    
-    // Whether to inject the style header into the page
-    // dynamically (violates CSP style-src, but is a convenient default);
-    // default = true
-    var insecure: js.UndefOr[Boolean] = js.undefined
-    
-    // When set to true, custom event's propagation
-    // mode will be captue
-    var isCapture: js.UndefOr[Boolean] = js.undefined
-    
-    // Support <br /> to make explicitly multiline tooltip comments
-    var multiline: js.UndefOr[Boolean] = js.undefined
-    
-    // Global tooltip offset, e.g., offset={{ top: 10, left: 5 }}
-    var offset: js.UndefOr[Offset] = js.undefined
-    
-    // Callback to override the tooltip position
-    var overridePosition: js.UndefOr[
-        js.Function8[
-          /* position */ Left, 
-          /* currentEvent */ Event, 
-          /* currentTarget */ EventTarget, 
-          /* refNode */ Null | HTMLDivElement | HTMLSpanElement, 
-          /* place */ Place, 
-          /* desiredPlace */ Place, 
-          /* effect */ Effect, 
-          /* offset */ Offset, 
-          Left
-        ]
-      ] = js.undefined
-    
-    // Padding attribute
-    var padding: js.UndefOr[String] = js.undefined
-    
-    // Placement of tooltip
-    var place: js.UndefOr[Place] = js.undefined
-    
-    // List of potential custom events to trigger the popup (in body mode)
-    var possibleCustomEvents: js.UndefOr[String] = js.undefined
-    
-    // List of potential custom events to hide the popup (in body mode)
-    var possibleCustomEventsOff: js.UndefOr[String] = js.undefined
-    
-    // Hide the tooltip when risizing the window;
-    // default = true
-    var resizeHide: js.UndefOr[Boolean] = js.undefined
-    
-    // Aria role for the tooltip
-    var role: js.UndefOr[String] = js.undefined
-    
-    // Hide the tooltip when scrolling;
-    // default = true
-    var scrollHide: js.UndefOr[Boolean] = js.undefined
-    
-    // Popup text color
-    var textColor: js.UndefOr[String] = js.undefined
-    
-    // Tooltip styling theme
-    var `type`: js.UndefOr[Type] = js.undefined
-    
-    var uuid: js.UndefOr[String] = js.undefined
-    
-    // The tooltip parent component;
-    // default = 'div'
-    var wrapper: js.UndefOr[div | span] = js.undefined
-  }
-  object TooltipProps {
-    
-    inline def apply(): TooltipProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[TooltipProps]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: TooltipProps] (val x: Self) extends AnyVal {
-      
-      inline def setAfterHide(value: VoidFunc): Self = StObject.set(x, "afterHide", value.asInstanceOf[js.Any])
-      
-      inline def setAfterHideUndefined: Self = StObject.set(x, "afterHide", js.undefined)
-      
-      inline def setAfterShow(value: VoidFunc): Self = StObject.set(x, "afterShow", value.asInstanceOf[js.Any])
-      
-      inline def setAfterShowUndefined: Self = StObject.set(x, "afterShow", js.undefined)
-      
-      inline def setArrowColor(value: String): Self = StObject.set(x, "arrowColor", value.asInstanceOf[js.Any])
-      
-      inline def setArrowColorUndefined: Self = StObject.set(x, "arrowColor", js.undefined)
-      
-      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
-      
-      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
-      
-      inline def setBodyMode(value: Boolean): Self = StObject.set(x, "bodyMode", value.asInstanceOf[js.Any])
-      
-      inline def setBodyModeUndefined: Self = StObject.set(x, "bodyMode", js.undefined)
-      
-      inline def setBorder(value: Boolean): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
-      
-      inline def setBorderClass(value: String): Self = StObject.set(x, "borderClass", value.asInstanceOf[js.Any])
-      
-      inline def setBorderClassUndefined: Self = StObject.set(x, "borderClass", js.undefined)
-      
-      inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
-      
-      inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
-      
-      inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
-      
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
-      
-      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
-      
-      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
-      
-      inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
-      
-      inline def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
-      
-      inline def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
-      
-      inline def setDelayHide(value: Double): Self = StObject.set(x, "delayHide", value.asInstanceOf[js.Any])
-      
-      inline def setDelayHideUndefined: Self = StObject.set(x, "delayHide", js.undefined)
-      
-      inline def setDelayShow(value: Double): Self = StObject.set(x, "delayShow", value.asInstanceOf[js.Any])
-      
-      inline def setDelayShowUndefined: Self = StObject.set(x, "delayShow", js.undefined)
-      
-      inline def setDelayUpdate(value: Double): Self = StObject.set(x, "delayUpdate", value.asInstanceOf[js.Any])
-      
-      inline def setDelayUpdateUndefined: Self = StObject.set(x, "delayUpdate", js.undefined)
-      
-      inline def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
-      
-      inline def setDisableInternalStyle(value: Boolean): Self = StObject.set(x, "disableInternalStyle", value.asInstanceOf[js.Any])
-      
-      inline def setDisableInternalStyleUndefined: Self = StObject.set(x, "disableInternalStyle", js.undefined)
-      
-      inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
-      
-      inline def setEffect(value: Effect): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
-      
-      inline def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
-      
-      inline def setEvent(
-        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 103, starting with typings.reactTooltip.reactTooltipStrings.fullscreenchange, typings.reactTooltip.reactTooltipStrings.fullscreenerror, typings.reactTooltip.reactTooltipStrings.copy */ Any
-      ): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
-      
-      inline def setEventOff(
-        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 103, starting with typings.reactTooltip.reactTooltipStrings.fullscreenchange, typings.reactTooltip.reactTooltipStrings.fullscreenerror, typings.reactTooltip.reactTooltipStrings.copy */ Any
-      ): Self = StObject.set(x, "eventOff", value.asInstanceOf[js.Any])
-      
-      inline def setEventOffUndefined: Self = StObject.set(x, "eventOff", js.undefined)
-      
-      inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
-      
-      inline def setGetContent(value: GetContent): Self = StObject.set(x, "getContent", value.asInstanceOf[js.Any])
-      
-      inline def setGetContentFunction1(value: /* toolTipStr */ String => ReactNode): Self = StObject.set(x, "getContent", js.Any.fromFunction1(value))
-      
-      inline def setGetContentUndefined: Self = StObject.set(x, "getContent", js.undefined)
-      
-      inline def setGlobalEventOff(
-        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 103, starting with typings.reactTooltip.reactTooltipStrings.fullscreenchange, typings.reactTooltip.reactTooltipStrings.fullscreenerror, typings.reactTooltip.reactTooltipStrings.copy */ Any
-      ): Self = StObject.set(x, "globalEventOff", value.asInstanceOf[js.Any])
-      
-      inline def setGlobalEventOffUndefined: Self = StObject.set(x, "globalEventOff", js.undefined)
-      
-      inline def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
-      
-      inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
-      
-      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
-      
-      inline def setInsecure(value: Boolean): Self = StObject.set(x, "insecure", value.asInstanceOf[js.Any])
-      
-      inline def setInsecureUndefined: Self = StObject.set(x, "insecure", js.undefined)
-      
-      inline def setIsCapture(value: Boolean): Self = StObject.set(x, "isCapture", value.asInstanceOf[js.Any])
-      
-      inline def setIsCaptureUndefined: Self = StObject.set(x, "isCapture", js.undefined)
-      
-      inline def setMultiline(value: Boolean): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
-      
-      inline def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
-      
-      inline def setOffset(value: Offset): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
-      
-      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
-      
-      inline def setOverridePosition(
-        value: (/* position */ Left, /* currentEvent */ Event, /* currentTarget */ EventTarget, /* refNode */ Null | HTMLDivElement | HTMLSpanElement, /* place */ Place, /* desiredPlace */ Place, /* effect */ Effect, /* offset */ Offset) => Left
-      ): Self = StObject.set(x, "overridePosition", js.Any.fromFunction8(value))
-      
-      inline def setOverridePositionUndefined: Self = StObject.set(x, "overridePosition", js.undefined)
-      
-      inline def setPadding(value: String): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
-      
-      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
-      
-      inline def setPlace(value: Place): Self = StObject.set(x, "place", value.asInstanceOf[js.Any])
-      
-      inline def setPlaceUndefined: Self = StObject.set(x, "place", js.undefined)
-      
-      inline def setPossibleCustomEvents(value: String): Self = StObject.set(x, "possibleCustomEvents", value.asInstanceOf[js.Any])
-      
-      inline def setPossibleCustomEventsOff(value: String): Self = StObject.set(x, "possibleCustomEventsOff", value.asInstanceOf[js.Any])
-      
-      inline def setPossibleCustomEventsOffUndefined: Self = StObject.set(x, "possibleCustomEventsOff", js.undefined)
-      
-      inline def setPossibleCustomEventsUndefined: Self = StObject.set(x, "possibleCustomEvents", js.undefined)
-      
-      inline def setResizeHide(value: Boolean): Self = StObject.set(x, "resizeHide", value.asInstanceOf[js.Any])
-      
-      inline def setResizeHideUndefined: Self = StObject.set(x, "resizeHide", js.undefined)
-      
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
-      
-      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
-      
-      inline def setScrollHide(value: Boolean): Self = StObject.set(x, "scrollHide", value.asInstanceOf[js.Any])
-      
-      inline def setScrollHideUndefined: Self = StObject.set(x, "scrollHide", js.undefined)
-      
-      inline def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
-      
-      inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
-      
-      inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      
-      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
-      
-      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
-      
-      inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
-      
-      inline def setWrapper(value: div | span): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
-      
-      inline def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
-    }
+    inline def fixed: typings.reactTooltip.reactTooltipStrings.fixed = "fixed".asInstanceOf[typings.reactTooltip.reactTooltipStrings.fixed]
   }
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactTooltip.reactTooltipStrings.dark
+    - typings.reactTooltip.reactTooltipStrings.light
     - typings.reactTooltip.reactTooltipStrings.success
     - typings.reactTooltip.reactTooltipStrings.warning
     - typings.reactTooltip.reactTooltipStrings.error
     - typings.reactTooltip.reactTooltipStrings.info
-    - typings.reactTooltip.reactTooltipStrings.light
   */
-  trait Type extends StObject
-  object Type {
+  trait VariantType extends StObject
+  object VariantType {
     
     inline def dark: typings.reactTooltip.reactTooltipStrings.dark = "dark".asInstanceOf[typings.reactTooltip.reactTooltipStrings.dark]
     
@@ -461,9 +470,110 @@ object mod {
     inline def warning: typings.reactTooltip.reactTooltipStrings.warning = "warning".asInstanceOf[typings.reactTooltip.reactTooltipStrings.warning]
   }
   
-  @js.native
-  trait VoidFunc extends StObject {
+  /* Rewritten from type alias, can be one of: 
+    - typings.react.mod.ElementType[scala.Any]
+    - typings.reactTooltip.reactTooltipStrings.div
+    - typings.reactTooltip.reactTooltipStrings.span
+  */
+  type WrapperType = _WrapperType | ElementType[Any]
+  
+  trait _WrapperType extends StObject
+  
+  /* augmented module */
+  object reactAugmentingMod {
     
-    def apply(args: Any*): Unit = js.native
+    trait HTMLAttributes[T]
+      extends StObject
+         with AriaAttributes
+         with DOMAttributes[T] {
+      
+      var `data-tooltip-content`: js.UndefOr[String] = js.undefined
+      
+      var `data-tooltip-delay-hide`: js.UndefOr[Double] = js.undefined
+      
+      var `data-tooltip-delay-show`: js.UndefOr[Double] = js.undefined
+      
+      /**
+        * @deprecated Use `openOnClick` tooltip prop instead.
+        */
+      var `data-tooltip-events`: js.UndefOr[js.Array[EventsType]] = js.undefined
+      
+      var `data-tooltip-float`: js.UndefOr[Boolean] = js.undefined
+      
+      var `data-tooltip-html`: js.UndefOr[String] = js.undefined
+      
+      var `data-tooltip-id`: js.UndefOr[String] = js.undefined
+      
+      var `data-tooltip-offset`: js.UndefOr[Double] = js.undefined
+      
+      var `data-tooltip-place`: js.UndefOr[PlacesType] = js.undefined
+      
+      var `data-tooltip-position-strategy`: js.UndefOr[PositionStrategy] = js.undefined
+      
+      var `data-tooltip-variant`: js.UndefOr[VariantType] = js.undefined
+      
+      var `data-tooltip-wrapper`: js.UndefOr[WrapperType] = js.undefined
+    }
+    object HTMLAttributes {
+      
+      inline def apply[T](): HTMLAttributes[T] = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[HTMLAttributes[T]]
+      }
+      
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HTMLAttributes[?], T] (val x: Self & HTMLAttributes[T]) extends AnyVal {
+        
+        inline def `setData-tooltip-content`(value: String): Self = StObject.set(x, "data-tooltip-content", value.asInstanceOf[js.Any])
+        
+        inline def `setData-tooltip-contentUndefined`: Self = StObject.set(x, "data-tooltip-content", js.undefined)
+        
+        inline def `setData-tooltip-delay-hide`(value: Double): Self = StObject.set(x, "data-tooltip-delay-hide", value.asInstanceOf[js.Any])
+        
+        inline def `setData-tooltip-delay-hideUndefined`: Self = StObject.set(x, "data-tooltip-delay-hide", js.undefined)
+        
+        inline def `setData-tooltip-delay-show`(value: Double): Self = StObject.set(x, "data-tooltip-delay-show", value.asInstanceOf[js.Any])
+        
+        inline def `setData-tooltip-delay-showUndefined`: Self = StObject.set(x, "data-tooltip-delay-show", js.undefined)
+        
+        inline def `setData-tooltip-events`(value: js.Array[EventsType]): Self = StObject.set(x, "data-tooltip-events", value.asInstanceOf[js.Any])
+        
+        inline def `setData-tooltip-eventsUndefined`: Self = StObject.set(x, "data-tooltip-events", js.undefined)
+        
+        inline def `setData-tooltip-eventsVarargs`(value: EventsType*): Self = StObject.set(x, "data-tooltip-events", js.Array(value*))
+        
+        inline def `setData-tooltip-float`(value: Boolean): Self = StObject.set(x, "data-tooltip-float", value.asInstanceOf[js.Any])
+        
+        inline def `setData-tooltip-floatUndefined`: Self = StObject.set(x, "data-tooltip-float", js.undefined)
+        
+        inline def `setData-tooltip-html`(value: String): Self = StObject.set(x, "data-tooltip-html", value.asInstanceOf[js.Any])
+        
+        inline def `setData-tooltip-htmlUndefined`: Self = StObject.set(x, "data-tooltip-html", js.undefined)
+        
+        inline def `setData-tooltip-id`(value: String): Self = StObject.set(x, "data-tooltip-id", value.asInstanceOf[js.Any])
+        
+        inline def `setData-tooltip-idUndefined`: Self = StObject.set(x, "data-tooltip-id", js.undefined)
+        
+        inline def `setData-tooltip-offset`(value: Double): Self = StObject.set(x, "data-tooltip-offset", value.asInstanceOf[js.Any])
+        
+        inline def `setData-tooltip-offsetUndefined`: Self = StObject.set(x, "data-tooltip-offset", js.undefined)
+        
+        inline def `setData-tooltip-place`(value: PlacesType): Self = StObject.set(x, "data-tooltip-place", value.asInstanceOf[js.Any])
+        
+        inline def `setData-tooltip-placeUndefined`: Self = StObject.set(x, "data-tooltip-place", js.undefined)
+        
+        inline def `setData-tooltip-position-strategy`(value: PositionStrategy): Self = StObject.set(x, "data-tooltip-position-strategy", value.asInstanceOf[js.Any])
+        
+        inline def `setData-tooltip-position-strategyUndefined`: Self = StObject.set(x, "data-tooltip-position-strategy", js.undefined)
+        
+        inline def `setData-tooltip-variant`(value: VariantType): Self = StObject.set(x, "data-tooltip-variant", value.asInstanceOf[js.Any])
+        
+        inline def `setData-tooltip-variantUndefined`: Self = StObject.set(x, "data-tooltip-variant", js.undefined)
+        
+        inline def `setData-tooltip-wrapper`(value: WrapperType): Self = StObject.set(x, "data-tooltip-wrapper", value.asInstanceOf[js.Any])
+        
+        inline def `setData-tooltip-wrapperUndefined`: Self = StObject.set(x, "data-tooltip-wrapper", js.undefined)
+      }
+    }
   }
 }

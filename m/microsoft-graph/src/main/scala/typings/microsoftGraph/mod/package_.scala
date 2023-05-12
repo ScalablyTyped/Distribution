@@ -10,6 +10,8 @@ type AcceptJoinResponse = ParticipantJoiningResponse
 
 type ActivityBasedTimeoutPolicy = StsPolicy
 
+type AddLargeGalleryViewOperation = CommsOperation
+
 type AgreementFileVersion = AgreementFileProperties
 
 type AllDevicesAssignmentTarget = DeviceAndAppManagementAssignmentTarget
@@ -41,6 +43,10 @@ type ChatMessageHostedContent = TeamworkHostedContent
 type ChatMessageReactionIdentitySet = IdentitySet
 
 type ClaimsMappingPolicy = StsPolicy
+
+type ConditionalAccessAllExternalTenants = ConditionalAccessExternalTenants
+
+type ContentSharingSession = Entity
 
 type DeviceAndAppManagementRoleDefinition = RoleDefinition
 
@@ -82,6 +88,8 @@ type MacOSOfficeSuiteApp = MobileApp
 
 type MdmWindowsInformationProtectionPolicy = WindowsInformationProtection
 
+type MobileContainedApp = Entity
+
 type MuteParticipantOperation = CommsOperation
 
 type NullableOption[T] = T | Null
@@ -101,6 +109,8 @@ type RemoveAccessApplyAction = AccessReviewApplyAction
 type ResultTemplateDictionary = Dictionary
 
 type SearchEntity = Entity
+
+type SecurityReportsRoot = Entity
 
 type StartHoldMusicOperation = CommsOperation
 

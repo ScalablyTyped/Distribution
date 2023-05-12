@@ -5,6 +5,7 @@ import typings.konva.konvaStrings.left
 import typings.konva.konvaStrings.right
 import typings.konva.konvaStrings.top
 import typings.konva.libContainerMod.ContainerConfig
+import typings.konva.libContextMod.Context
 import typings.konva.libGroupMod.Group
 import typings.konva.libShapeMod.Shape
 import typings.konva.libShapeMod.ShapeConfig
@@ -19,7 +20,7 @@ object libShapesLabelMod {
   @JSImport("konva/lib/shapes/Label", "Label")
   @js.native
   open class Label () extends Group {
-    def this(config: Any) = this()
+    def this(config: LabelConfig) = this()
     
     def _addListeners(text: Any): Unit = js.native
     
@@ -39,7 +40,7 @@ object libShapesLabelMod {
   open class Tag () extends Shape[TagConfig] {
     def this(config: TagConfig) = this()
     
-    def _sceneFunc(context: Any): Unit = js.native
+    def _sceneFunc(context: Context): Unit = js.native
     
     def cornerRadius(): Double = js.native
     def cornerRadius(v: Double): this.type = js.native

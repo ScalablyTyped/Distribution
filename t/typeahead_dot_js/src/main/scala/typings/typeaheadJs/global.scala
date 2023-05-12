@@ -21,7 +21,6 @@ object global {
     /**
       * The constructor function.
       *
-      * @constructor
       * @param options Options hash.
       */
     def this(options: BloodhoundOptions[T]) = this()

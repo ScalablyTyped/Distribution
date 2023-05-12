@@ -17,7 +17,7 @@ trait ListAppVersionResourcesResponse extends StObject {
   var physicalResources: PhysicalResourceList
   
   /**
-    * The identifier for a specific resolution.
+    * The ID for a specific resolution.
     */
   var resolutionId: String255
 }

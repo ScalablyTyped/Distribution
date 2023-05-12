@@ -344,6 +344,8 @@ object mod {
     
     var onSuccess: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
     
+    var onUploadUrlAvailable: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
+    
     var overridePatchMethod: js.UndefOr[Boolean] = js.undefined
     
     var parallelUploadBoundaries: js.UndefOr[js.Array[End] | Null] = js.undefined
@@ -447,6 +449,12 @@ object mod {
       inline def setOnSuccessNull: Self = StObject.set(x, "onSuccess", null)
       
       inline def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
+      
+      inline def setOnUploadUrlAvailable(value: () => Unit): Self = StObject.set(x, "onUploadUrlAvailable", js.Any.fromFunction0(value))
+      
+      inline def setOnUploadUrlAvailableNull: Self = StObject.set(x, "onUploadUrlAvailable", null)
+      
+      inline def setOnUploadUrlAvailableUndefined: Self = StObject.set(x, "onUploadUrlAvailable", js.undefined)
       
       inline def setOverridePatchMethod(value: Boolean): Self = StObject.set(x, "overridePatchMethod", value.asInstanceOf[js.Any])
       

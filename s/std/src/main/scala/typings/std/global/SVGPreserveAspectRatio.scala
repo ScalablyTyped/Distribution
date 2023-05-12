@@ -1,5 +1,16 @@
 package typings.std.global
 
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`10`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
+import typings.std.stdInts.`4`
+import typings.std.stdInts.`5`
+import typings.std.stdInts.`6`
+import typings.std.stdInts.`7`
+import typings.std.stdInts.`8`
+import typings.std.stdInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,59 +25,59 @@ open class SVGPreserveAspectRatio ()
   
   /* standard dom */
   /* CompleteClass */
-  override val SVG_MEETORSLICE_MEET: Double = js.native
+  override val SVG_MEETORSLICE_MEET: `1` = js.native
   
   /* standard dom */
   /* CompleteClass */
-  override val SVG_MEETORSLICE_SLICE: Double = js.native
+  override val SVG_MEETORSLICE_SLICE: `2` = js.native
   
   /* standard dom */
   /* CompleteClass */
-  override val SVG_MEETORSLICE_UNKNOWN: Double = js.native
+  override val SVG_MEETORSLICE_UNKNOWN: `0` = js.native
   
   /* standard dom */
   /* CompleteClass */
-  override val SVG_PRESERVEASPECTRATIO_NONE: Double = js.native
+  override val SVG_PRESERVEASPECTRATIO_NONE: `1` = js.native
   
   /* standard dom */
   /* CompleteClass */
-  override val SVG_PRESERVEASPECTRATIO_UNKNOWN: Double = js.native
+  override val SVG_PRESERVEASPECTRATIO_UNKNOWN: `0` = js.native
   
   /* standard dom */
   /* CompleteClass */
-  override val SVG_PRESERVEASPECTRATIO_XMAXYMAX: Double = js.native
+  override val SVG_PRESERVEASPECTRATIO_XMAXYMAX: `10` = js.native
   
   /* standard dom */
   /* CompleteClass */
-  override val SVG_PRESERVEASPECTRATIO_XMAXYMID: Double = js.native
+  override val SVG_PRESERVEASPECTRATIO_XMAXYMID: `7` = js.native
   
   /* standard dom */
   /* CompleteClass */
-  override val SVG_PRESERVEASPECTRATIO_XMAXYMIN: Double = js.native
+  override val SVG_PRESERVEASPECTRATIO_XMAXYMIN: `4` = js.native
   
   /* standard dom */
   /* CompleteClass */
-  override val SVG_PRESERVEASPECTRATIO_XMIDYMAX: Double = js.native
+  override val SVG_PRESERVEASPECTRATIO_XMIDYMAX: `9` = js.native
   
   /* standard dom */
   /* CompleteClass */
-  override val SVG_PRESERVEASPECTRATIO_XMIDYMID: Double = js.native
+  override val SVG_PRESERVEASPECTRATIO_XMIDYMID: `6` = js.native
   
   /* standard dom */
   /* CompleteClass */
-  override val SVG_PRESERVEASPECTRATIO_XMIDYMIN: Double = js.native
+  override val SVG_PRESERVEASPECTRATIO_XMIDYMIN: `3` = js.native
   
   /* standard dom */
   /* CompleteClass */
-  override val SVG_PRESERVEASPECTRATIO_XMINYMAX: Double = js.native
+  override val SVG_PRESERVEASPECTRATIO_XMINYMAX: `8` = js.native
   
   /* standard dom */
   /* CompleteClass */
-  override val SVG_PRESERVEASPECTRATIO_XMINYMID: Double = js.native
+  override val SVG_PRESERVEASPECTRATIO_XMINYMID: `5` = js.native
   
   /* standard dom */
   /* CompleteClass */
-  override val SVG_PRESERVEASPECTRATIO_XMINYMIN: Double = js.native
+  override val SVG_PRESERVEASPECTRATIO_XMINYMIN: `2` = js.native
   
   /* standard dom */
   /* CompleteClass */
@@ -81,70 +92,70 @@ object SVGPreserveAspectRatio {
   /* standard dom */
   @JSGlobal("SVGPreserveAspectRatio.SVG_MEETORSLICE_MEET")
   @js.native
-  val SVG_MEETORSLICE_MEET: Double = js.native
+  val SVG_MEETORSLICE_MEET: `1` = js.native
   
   /* standard dom */
   @JSGlobal("SVGPreserveAspectRatio.SVG_MEETORSLICE_SLICE")
   @js.native
-  val SVG_MEETORSLICE_SLICE: Double = js.native
+  val SVG_MEETORSLICE_SLICE: `2` = js.native
   
   /* standard dom */
   @JSGlobal("SVGPreserveAspectRatio.SVG_MEETORSLICE_UNKNOWN")
   @js.native
-  val SVG_MEETORSLICE_UNKNOWN: Double = js.native
+  val SVG_MEETORSLICE_UNKNOWN: `0` = js.native
   
   /* standard dom */
   @JSGlobal("SVGPreserveAspectRatio.SVG_PRESERVEASPECTRATIO_NONE")
   @js.native
-  val SVG_PRESERVEASPECTRATIO_NONE: Double = js.native
+  val SVG_PRESERVEASPECTRATIO_NONE: `1` = js.native
   
   /* standard dom */
   @JSGlobal("SVGPreserveAspectRatio.SVG_PRESERVEASPECTRATIO_UNKNOWN")
   @js.native
-  val SVG_PRESERVEASPECTRATIO_UNKNOWN: Double = js.native
+  val SVG_PRESERVEASPECTRATIO_UNKNOWN: `0` = js.native
   
   /* standard dom */
   @JSGlobal("SVGPreserveAspectRatio.SVG_PRESERVEASPECTRATIO_XMAXYMAX")
   @js.native
-  val SVG_PRESERVEASPECTRATIO_XMAXYMAX: Double = js.native
+  val SVG_PRESERVEASPECTRATIO_XMAXYMAX: `10` = js.native
   
   /* standard dom */
   @JSGlobal("SVGPreserveAspectRatio.SVG_PRESERVEASPECTRATIO_XMAXYMID")
   @js.native
-  val SVG_PRESERVEASPECTRATIO_XMAXYMID: Double = js.native
+  val SVG_PRESERVEASPECTRATIO_XMAXYMID: `7` = js.native
   
   /* standard dom */
   @JSGlobal("SVGPreserveAspectRatio.SVG_PRESERVEASPECTRATIO_XMAXYMIN")
   @js.native
-  val SVG_PRESERVEASPECTRATIO_XMAXYMIN: Double = js.native
+  val SVG_PRESERVEASPECTRATIO_XMAXYMIN: `4` = js.native
   
   /* standard dom */
   @JSGlobal("SVGPreserveAspectRatio.SVG_PRESERVEASPECTRATIO_XMIDYMAX")
   @js.native
-  val SVG_PRESERVEASPECTRATIO_XMIDYMAX: Double = js.native
+  val SVG_PRESERVEASPECTRATIO_XMIDYMAX: `9` = js.native
   
   /* standard dom */
   @JSGlobal("SVGPreserveAspectRatio.SVG_PRESERVEASPECTRATIO_XMIDYMID")
   @js.native
-  val SVG_PRESERVEASPECTRATIO_XMIDYMID: Double = js.native
+  val SVG_PRESERVEASPECTRATIO_XMIDYMID: `6` = js.native
   
   /* standard dom */
   @JSGlobal("SVGPreserveAspectRatio.SVG_PRESERVEASPECTRATIO_XMIDYMIN")
   @js.native
-  val SVG_PRESERVEASPECTRATIO_XMIDYMIN: Double = js.native
+  val SVG_PRESERVEASPECTRATIO_XMIDYMIN: `3` = js.native
   
   /* standard dom */
   @JSGlobal("SVGPreserveAspectRatio.SVG_PRESERVEASPECTRATIO_XMINYMAX")
   @js.native
-  val SVG_PRESERVEASPECTRATIO_XMINYMAX: Double = js.native
+  val SVG_PRESERVEASPECTRATIO_XMINYMAX: `8` = js.native
   
   /* standard dom */
   @JSGlobal("SVGPreserveAspectRatio.SVG_PRESERVEASPECTRATIO_XMINYMID")
   @js.native
-  val SVG_PRESERVEASPECTRATIO_XMINYMID: Double = js.native
+  val SVG_PRESERVEASPECTRATIO_XMINYMID: `5` = js.native
   
   /* standard dom */
   @JSGlobal("SVGPreserveAspectRatio.SVG_PRESERVEASPECTRATIO_XMINYMIN")
   @js.native
-  val SVG_PRESERVEASPECTRATIO_XMINYMIN: Double = js.native
+  val SVG_PRESERVEASPECTRATIO_XMINYMIN: `2` = js.native
 }

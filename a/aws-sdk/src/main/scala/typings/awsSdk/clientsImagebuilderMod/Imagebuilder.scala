@@ -73,12 +73,12 @@ trait Imagebuilder extends Service {
   ): Request[CreateDistributionConfigurationResponse, AWSError] = js.native
   
   /**
-    *  Creates a new image. This request will create a new image along with all of the configured output resources defined in the distribution configuration. You must specify exactly one recipe for your image, using either a ContainerRecipeArn or an ImageRecipeArn.
+    * Creates a new image. This request will create a new image along with all of the configured output resources defined in the distribution configuration. You must specify exactly one recipe for your image, using either a ContainerRecipeArn or an ImageRecipeArn.
     */
   def createImage(): Request[CreateImageResponse, AWSError] = js.native
   def createImage(callback: js.Function2[/* err */ AWSError, /* data */ CreateImageResponse, Unit]): Request[CreateImageResponse, AWSError] = js.native
   /**
-    *  Creates a new image. This request will create a new image along with all of the configured output resources defined in the distribution configuration. You must specify exactly one recipe for your image, using either a ContainerRecipeArn or an ImageRecipeArn.
+    * Creates a new image. This request will create a new image along with all of the configured output resources defined in the distribution configuration. You must specify exactly one recipe for your image, using either a ContainerRecipeArn or an ImageRecipeArn.
     */
   def createImage(params: CreateImageRequest): Request[CreateImageResponse, AWSError] = js.native
   def createImage(
@@ -87,12 +87,12 @@ trait Imagebuilder extends Service {
   ): Request[CreateImageResponse, AWSError] = js.native
   
   /**
-    *  Creates a new image pipeline. Image pipelines enable you to automate the creation and distribution of images.
+    * Creates a new image pipeline. Image pipelines enable you to automate the creation and distribution of images.
     */
   def createImagePipeline(): Request[CreateImagePipelineResponse, AWSError] = js.native
   def createImagePipeline(callback: js.Function2[/* err */ AWSError, /* data */ CreateImagePipelineResponse, Unit]): Request[CreateImagePipelineResponse, AWSError] = js.native
   /**
-    *  Creates a new image pipeline. Image pipelines enable you to automate the creation and distribution of images.
+    * Creates a new image pipeline. Image pipelines enable you to automate the creation and distribution of images.
     */
   def createImagePipeline(params: CreateImagePipelineRequest): Request[CreateImagePipelineResponse, AWSError] = js.native
   def createImagePipeline(
@@ -101,12 +101,12 @@ trait Imagebuilder extends Service {
   ): Request[CreateImagePipelineResponse, AWSError] = js.native
   
   /**
-    *  Creates a new image recipe. Image recipes define how images are configured, tested, and assessed.
+    * Creates a new image recipe. Image recipes define how images are configured, tested, and assessed.
     */
   def createImageRecipe(): Request[CreateImageRecipeResponse, AWSError] = js.native
   def createImageRecipe(callback: js.Function2[/* err */ AWSError, /* data */ CreateImageRecipeResponse, Unit]): Request[CreateImageRecipeResponse, AWSError] = js.native
   /**
-    *  Creates a new image recipe. Image recipes define how images are configured, tested, and assessed.
+    * Creates a new image recipe. Image recipes define how images are configured, tested, and assessed.
     */
   def createImageRecipe(params: CreateImageRecipeRequest): Request[CreateImageRecipeResponse, AWSError] = js.native
   def createImageRecipe(
@@ -115,14 +115,14 @@ trait Imagebuilder extends Service {
   ): Request[CreateImageRecipeResponse, AWSError] = js.native
   
   /**
-    *  Creates a new infrastructure configuration. An infrastructure configuration defines the environment in which your image will be built and tested.
+    * Creates a new infrastructure configuration. An infrastructure configuration defines the environment in which your image will be built and tested.
     */
   def createInfrastructureConfiguration(): Request[CreateInfrastructureConfigurationResponse, AWSError] = js.native
   def createInfrastructureConfiguration(
     callback: js.Function2[/* err */ AWSError, /* data */ CreateInfrastructureConfigurationResponse, Unit]
   ): Request[CreateInfrastructureConfigurationResponse, AWSError] = js.native
   /**
-    *  Creates a new infrastructure configuration. An infrastructure configuration defines the environment in which your image will be built and tested.
+    * Creates a new infrastructure configuration. An infrastructure configuration defines the environment in which your image will be built and tested.
     */
   def createInfrastructureConfiguration(params: CreateInfrastructureConfigurationRequest): Request[CreateInfrastructureConfigurationResponse, AWSError] = js.native
   def createInfrastructureConfiguration(
@@ -131,12 +131,12 @@ trait Imagebuilder extends Service {
   ): Request[CreateInfrastructureConfigurationResponse, AWSError] = js.native
   
   /**
-    *  Deletes a component build version.
+    * Deletes a component build version.
     */
   def deleteComponent(): Request[DeleteComponentResponse, AWSError] = js.native
   def deleteComponent(callback: js.Function2[/* err */ AWSError, /* data */ DeleteComponentResponse, Unit]): Request[DeleteComponentResponse, AWSError] = js.native
   /**
-    *  Deletes a component build version.
+    * Deletes a component build version.
     */
   def deleteComponent(params: DeleteComponentRequest): Request[DeleteComponentResponse, AWSError] = js.native
   def deleteComponent(
@@ -159,14 +159,14 @@ trait Imagebuilder extends Service {
   ): Request[DeleteContainerRecipeResponse, AWSError] = js.native
   
   /**
-    *  Deletes a distribution configuration.
+    * Deletes a distribution configuration.
     */
   def deleteDistributionConfiguration(): Request[DeleteDistributionConfigurationResponse, AWSError] = js.native
   def deleteDistributionConfiguration(
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDistributionConfigurationResponse, Unit]
   ): Request[DeleteDistributionConfigurationResponse, AWSError] = js.native
   /**
-    *  Deletes a distribution configuration.
+    * Deletes a distribution configuration.
     */
   def deleteDistributionConfiguration(params: DeleteDistributionConfigurationRequest): Request[DeleteDistributionConfigurationResponse, AWSError] = js.native
   def deleteDistributionConfiguration(
@@ -189,12 +189,12 @@ trait Imagebuilder extends Service {
   ): Request[DeleteImageResponse, AWSError] = js.native
   
   /**
-    *  Deletes an image pipeline.
+    * Deletes an image pipeline.
     */
   def deleteImagePipeline(): Request[DeleteImagePipelineResponse, AWSError] = js.native
   def deleteImagePipeline(callback: js.Function2[/* err */ AWSError, /* data */ DeleteImagePipelineResponse, Unit]): Request[DeleteImagePipelineResponse, AWSError] = js.native
   /**
-    *  Deletes an image pipeline.
+    * Deletes an image pipeline.
     */
   def deleteImagePipeline(params: DeleteImagePipelineRequest): Request[DeleteImagePipelineResponse, AWSError] = js.native
   def deleteImagePipeline(
@@ -203,12 +203,12 @@ trait Imagebuilder extends Service {
   ): Request[DeleteImagePipelineResponse, AWSError] = js.native
   
   /**
-    *  Deletes an image recipe.
+    * Deletes an image recipe.
     */
   def deleteImageRecipe(): Request[DeleteImageRecipeResponse, AWSError] = js.native
   def deleteImageRecipe(callback: js.Function2[/* err */ AWSError, /* data */ DeleteImageRecipeResponse, Unit]): Request[DeleteImageRecipeResponse, AWSError] = js.native
   /**
-    *  Deletes an image recipe.
+    * Deletes an image recipe.
     */
   def deleteImageRecipe(params: DeleteImageRecipeRequest): Request[DeleteImageRecipeResponse, AWSError] = js.native
   def deleteImageRecipe(
@@ -217,14 +217,14 @@ trait Imagebuilder extends Service {
   ): Request[DeleteImageRecipeResponse, AWSError] = js.native
   
   /**
-    *  Deletes an infrastructure configuration.
+    * Deletes an infrastructure configuration.
     */
   def deleteInfrastructureConfiguration(): Request[DeleteInfrastructureConfigurationResponse, AWSError] = js.native
   def deleteInfrastructureConfiguration(
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteInfrastructureConfigurationResponse, Unit]
   ): Request[DeleteInfrastructureConfigurationResponse, AWSError] = js.native
   /**
-    *  Deletes an infrastructure configuration.
+    * Deletes an infrastructure configuration.
     */
   def deleteInfrastructureConfiguration(params: DeleteInfrastructureConfigurationRequest): Request[DeleteInfrastructureConfigurationResponse, AWSError] = js.native
   def deleteInfrastructureConfiguration(
@@ -233,12 +233,12 @@ trait Imagebuilder extends Service {
   ): Request[DeleteInfrastructureConfigurationResponse, AWSError] = js.native
   
   /**
-    *  Gets a component object.
+    * Gets a component object.
     */
   def getComponent(): Request[GetComponentResponse, AWSError] = js.native
   def getComponent(callback: js.Function2[/* err */ AWSError, /* data */ GetComponentResponse, Unit]): Request[GetComponentResponse, AWSError] = js.native
   /**
-    *  Gets a component object.
+    * Gets a component object.
     */
   def getComponent(params: GetComponentRequest): Request[GetComponentResponse, AWSError] = js.native
   def getComponent(
@@ -247,12 +247,12 @@ trait Imagebuilder extends Service {
   ): Request[GetComponentResponse, AWSError] = js.native
   
   /**
-    *  Gets a component policy.
+    * Gets a component policy.
     */
   def getComponentPolicy(): Request[GetComponentPolicyResponse, AWSError] = js.native
   def getComponentPolicy(callback: js.Function2[/* err */ AWSError, /* data */ GetComponentPolicyResponse, Unit]): Request[GetComponentPolicyResponse, AWSError] = js.native
   /**
-    *  Gets a component policy.
+    * Gets a component policy.
     */
   def getComponentPolicy(params: GetComponentPolicyRequest): Request[GetComponentPolicyResponse, AWSError] = js.native
   def getComponentPolicy(
@@ -289,12 +289,12 @@ trait Imagebuilder extends Service {
   ): Request[GetContainerRecipePolicyResponse, AWSError] = js.native
   
   /**
-    *  Gets a distribution configuration.
+    * Gets a distribution configuration.
     */
   def getDistributionConfiguration(): Request[GetDistributionConfigurationResponse, AWSError] = js.native
   def getDistributionConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ GetDistributionConfigurationResponse, Unit]): Request[GetDistributionConfigurationResponse, AWSError] = js.native
   /**
-    *  Gets a distribution configuration.
+    * Gets a distribution configuration.
     */
   def getDistributionConfiguration(params: GetDistributionConfigurationRequest): Request[GetDistributionConfigurationResponse, AWSError] = js.native
   def getDistributionConfiguration(
@@ -303,12 +303,12 @@ trait Imagebuilder extends Service {
   ): Request[GetDistributionConfigurationResponse, AWSError] = js.native
   
   /**
-    *  Gets an image.
+    * Gets an image.
     */
   def getImage(): Request[GetImageResponse, AWSError] = js.native
   def getImage(callback: js.Function2[/* err */ AWSError, /* data */ GetImageResponse, Unit]): Request[GetImageResponse, AWSError] = js.native
   /**
-    *  Gets an image.
+    * Gets an image.
     */
   def getImage(params: GetImageRequest): Request[GetImageResponse, AWSError] = js.native
   def getImage(
@@ -317,12 +317,12 @@ trait Imagebuilder extends Service {
   ): Request[GetImageResponse, AWSError] = js.native
   
   /**
-    *  Gets an image pipeline.
+    * Gets an image pipeline.
     */
   def getImagePipeline(): Request[GetImagePipelineResponse, AWSError] = js.native
   def getImagePipeline(callback: js.Function2[/* err */ AWSError, /* data */ GetImagePipelineResponse, Unit]): Request[GetImagePipelineResponse, AWSError] = js.native
   /**
-    *  Gets an image pipeline.
+    * Gets an image pipeline.
     */
   def getImagePipeline(params: GetImagePipelineRequest): Request[GetImagePipelineResponse, AWSError] = js.native
   def getImagePipeline(
@@ -331,12 +331,12 @@ trait Imagebuilder extends Service {
   ): Request[GetImagePipelineResponse, AWSError] = js.native
   
   /**
-    *  Gets an image policy.
+    * Gets an image policy.
     */
   def getImagePolicy(): Request[GetImagePolicyResponse, AWSError] = js.native
   def getImagePolicy(callback: js.Function2[/* err */ AWSError, /* data */ GetImagePolicyResponse, Unit]): Request[GetImagePolicyResponse, AWSError] = js.native
   /**
-    *  Gets an image policy.
+    * Gets an image policy.
     */
   def getImagePolicy(params: GetImagePolicyRequest): Request[GetImagePolicyResponse, AWSError] = js.native
   def getImagePolicy(
@@ -345,12 +345,12 @@ trait Imagebuilder extends Service {
   ): Request[GetImagePolicyResponse, AWSError] = js.native
   
   /**
-    *  Gets an image recipe.
+    * Gets an image recipe.
     */
   def getImageRecipe(): Request[GetImageRecipeResponse, AWSError] = js.native
   def getImageRecipe(callback: js.Function2[/* err */ AWSError, /* data */ GetImageRecipeResponse, Unit]): Request[GetImageRecipeResponse, AWSError] = js.native
   /**
-    *  Gets an image recipe.
+    * Gets an image recipe.
     */
   def getImageRecipe(params: GetImageRecipeRequest): Request[GetImageRecipeResponse, AWSError] = js.native
   def getImageRecipe(
@@ -359,12 +359,12 @@ trait Imagebuilder extends Service {
   ): Request[GetImageRecipeResponse, AWSError] = js.native
   
   /**
-    *  Gets an image recipe policy.
+    * Gets an image recipe policy.
     */
   def getImageRecipePolicy(): Request[GetImageRecipePolicyResponse, AWSError] = js.native
   def getImageRecipePolicy(callback: js.Function2[/* err */ AWSError, /* data */ GetImageRecipePolicyResponse, Unit]): Request[GetImageRecipePolicyResponse, AWSError] = js.native
   /**
-    *  Gets an image recipe policy.
+    * Gets an image recipe policy.
     */
   def getImageRecipePolicy(params: GetImageRecipePolicyRequest): Request[GetImageRecipePolicyResponse, AWSError] = js.native
   def getImageRecipePolicy(
@@ -373,20 +373,48 @@ trait Imagebuilder extends Service {
   ): Request[GetImageRecipePolicyResponse, AWSError] = js.native
   
   /**
-    *  Gets an infrastructure configuration.
+    * Gets an infrastructure configuration.
     */
   def getInfrastructureConfiguration(): Request[GetInfrastructureConfigurationResponse, AWSError] = js.native
   def getInfrastructureConfiguration(
     callback: js.Function2[/* err */ AWSError, /* data */ GetInfrastructureConfigurationResponse, Unit]
   ): Request[GetInfrastructureConfigurationResponse, AWSError] = js.native
   /**
-    *  Gets an infrastructure configuration.
+    * Gets an infrastructure configuration.
     */
   def getInfrastructureConfiguration(params: GetInfrastructureConfigurationRequest): Request[GetInfrastructureConfigurationResponse, AWSError] = js.native
   def getInfrastructureConfiguration(
     params: GetInfrastructureConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetInfrastructureConfigurationResponse, Unit]
   ): Request[GetInfrastructureConfigurationResponse, AWSError] = js.native
+  
+  /**
+    * Get the runtime information that was logged for a specific runtime instance of the workflow.
+    */
+  def getWorkflowExecution(): Request[GetWorkflowExecutionResponse, AWSError] = js.native
+  def getWorkflowExecution(callback: js.Function2[/* err */ AWSError, /* data */ GetWorkflowExecutionResponse, Unit]): Request[GetWorkflowExecutionResponse, AWSError] = js.native
+  /**
+    * Get the runtime information that was logged for a specific runtime instance of the workflow.
+    */
+  def getWorkflowExecution(params: GetWorkflowExecutionRequest): Request[GetWorkflowExecutionResponse, AWSError] = js.native
+  def getWorkflowExecution(
+    params: GetWorkflowExecutionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetWorkflowExecutionResponse, Unit]
+  ): Request[GetWorkflowExecutionResponse, AWSError] = js.native
+  
+  /**
+    * Get the runtime information that was logged for a specific runtime instance of the workflow step.
+    */
+  def getWorkflowStepExecution(): Request[GetWorkflowStepExecutionResponse, AWSError] = js.native
+  def getWorkflowStepExecution(callback: js.Function2[/* err */ AWSError, /* data */ GetWorkflowStepExecutionResponse, Unit]): Request[GetWorkflowStepExecutionResponse, AWSError] = js.native
+  /**
+    * Get the runtime information that was logged for a specific runtime instance of the workflow step.
+    */
+  def getWorkflowStepExecution(params: GetWorkflowStepExecutionRequest): Request[GetWorkflowStepExecutionResponse, AWSError] = js.native
+  def getWorkflowStepExecution(
+    params: GetWorkflowStepExecutionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetWorkflowStepExecutionResponse, Unit]
+  ): Request[GetWorkflowStepExecutionResponse, AWSError] = js.native
   
   /**
     * Imports a component and transforms its data into a component document.
@@ -417,12 +445,12 @@ trait Imagebuilder extends Service {
   ): Request[ImportVmImageResponse, AWSError] = js.native
   
   /**
-    *  Returns the list of component build versions for the specified semantic version.  The semantic version has four nodes: &lt;major&gt;.&lt;minor&gt;.&lt;patch&gt;/&lt;build&gt;. You can assign values for the first three, and can filter on all of them.  Filtering: With semantic versioning, you have the flexibility to use wildcards (x) to specify the most recent versions or nodes when selecting the base image or components for your recipe. When you use a wildcard in any node, all nodes to the right of the first wildcard must also be wildcards. 
+    * Returns the list of component build versions for the specified semantic version.  The semantic version has four nodes: &lt;major&gt;.&lt;minor&gt;.&lt;patch&gt;/&lt;build&gt;. You can assign values for the first three, and can filter on all of them.  Filtering: With semantic versioning, you have the flexibility to use wildcards (x) to specify the most recent versions or nodes when selecting the base image or components for your recipe. When you use a wildcard in any node, all nodes to the right of the first wildcard must also be wildcards. 
     */
   def listComponentBuildVersions(): Request[ListComponentBuildVersionsResponse, AWSError] = js.native
   def listComponentBuildVersions(callback: js.Function2[/* err */ AWSError, /* data */ ListComponentBuildVersionsResponse, Unit]): Request[ListComponentBuildVersionsResponse, AWSError] = js.native
   /**
-    *  Returns the list of component build versions for the specified semantic version.  The semantic version has four nodes: &lt;major&gt;.&lt;minor&gt;.&lt;patch&gt;/&lt;build&gt;. You can assign values for the first three, and can filter on all of them.  Filtering: With semantic versioning, you have the flexibility to use wildcards (x) to specify the most recent versions or nodes when selecting the base image or components for your recipe. When you use a wildcard in any node, all nodes to the right of the first wildcard must also be wildcards. 
+    * Returns the list of component build versions for the specified semantic version.  The semantic version has four nodes: &lt;major&gt;.&lt;minor&gt;.&lt;patch&gt;/&lt;build&gt;. You can assign values for the first three, and can filter on all of them.  Filtering: With semantic versioning, you have the flexibility to use wildcards (x) to specify the most recent versions or nodes when selecting the base image or components for your recipe. When you use a wildcard in any node, all nodes to the right of the first wildcard must also be wildcards. 
     */
   def listComponentBuildVersions(params: ListComponentBuildVersionsRequest): Request[ListComponentBuildVersionsResponse, AWSError] = js.native
   def listComponentBuildVersions(
@@ -431,12 +459,12 @@ trait Imagebuilder extends Service {
   ): Request[ListComponentBuildVersionsResponse, AWSError] = js.native
   
   /**
-    * Returns the list of component build versions for the specified semantic version.  The semantic version has four nodes: &lt;major&gt;.&lt;minor&gt;.&lt;patch&gt;/&lt;build&gt;. You can assign values for the first three, and can filter on all of them.  Filtering: With semantic versioning, you have the flexibility to use wildcards (x) to specify the most recent versions or nodes when selecting the base image or components for your recipe. When you use a wildcard in any node, all nodes to the right of the first wildcard must also be wildcards. 
+    * Returns the list of components that can be filtered by name, or by using the listed filters to streamline results. Newly created components can take up to two minutes to appear in the ListComponents API Results.  The semantic version has four nodes: &lt;major&gt;.&lt;minor&gt;.&lt;patch&gt;/&lt;build&gt;. You can assign values for the first three, and can filter on all of them.  Filtering: With semantic versioning, you have the flexibility to use wildcards (x) to specify the most recent versions or nodes when selecting the base image or components for your recipe. When you use a wildcard in any node, all nodes to the right of the first wildcard must also be wildcards. 
     */
   def listComponents(): Request[ListComponentsResponse, AWSError] = js.native
   def listComponents(callback: js.Function2[/* err */ AWSError, /* data */ ListComponentsResponse, Unit]): Request[ListComponentsResponse, AWSError] = js.native
   /**
-    * Returns the list of component build versions for the specified semantic version.  The semantic version has four nodes: &lt;major&gt;.&lt;minor&gt;.&lt;patch&gt;/&lt;build&gt;. You can assign values for the first three, and can filter on all of them.  Filtering: With semantic versioning, you have the flexibility to use wildcards (x) to specify the most recent versions or nodes when selecting the base image or components for your recipe. When you use a wildcard in any node, all nodes to the right of the first wildcard must also be wildcards. 
+    * Returns the list of components that can be filtered by name, or by using the listed filters to streamline results. Newly created components can take up to two minutes to appear in the ListComponents API Results.  The semantic version has four nodes: &lt;major&gt;.&lt;minor&gt;.&lt;patch&gt;/&lt;build&gt;. You can assign values for the first three, and can filter on all of them.  Filtering: With semantic versioning, you have the flexibility to use wildcards (x) to specify the most recent versions or nodes when selecting the base image or components for your recipe. When you use a wildcard in any node, all nodes to the right of the first wildcard must also be wildcards. 
     */
   def listComponents(params: ListComponentsRequest): Request[ListComponentsResponse, AWSError] = js.native
   def listComponents(
@@ -475,12 +503,12 @@ trait Imagebuilder extends Service {
   ): Request[ListDistributionConfigurationsResponse, AWSError] = js.native
   
   /**
-    *  Returns a list of image build versions.
+    * Returns a list of image build versions.
     */
   def listImageBuildVersions(): Request[ListImageBuildVersionsResponse, AWSError] = js.native
   def listImageBuildVersions(callback: js.Function2[/* err */ AWSError, /* data */ ListImageBuildVersionsResponse, Unit]): Request[ListImageBuildVersionsResponse, AWSError] = js.native
   /**
-    *  Returns a list of image build versions.
+    * Returns a list of image build versions.
     */
   def listImageBuildVersions(params: ListImageBuildVersionsRequest): Request[ListImageBuildVersionsResponse, AWSError] = js.native
   def listImageBuildVersions(
@@ -503,12 +531,12 @@ trait Imagebuilder extends Service {
   ): Request[ListImagePackagesResponse, AWSError] = js.native
   
   /**
-    *  Returns a list of images created by the specified pipeline.
+    * Returns a list of images created by the specified pipeline.
     */
   def listImagePipelineImages(): Request[ListImagePipelineImagesResponse, AWSError] = js.native
   def listImagePipelineImages(callback: js.Function2[/* err */ AWSError, /* data */ ListImagePipelineImagesResponse, Unit]): Request[ListImagePipelineImagesResponse, AWSError] = js.native
   /**
-    *  Returns a list of images created by the specified pipeline.
+    * Returns a list of images created by the specified pipeline.
     */
   def listImagePipelineImages(params: ListImagePipelineImagesRequest): Request[ListImagePipelineImagesResponse, AWSError] = js.native
   def listImagePipelineImages(
@@ -531,12 +559,12 @@ trait Imagebuilder extends Service {
   ): Request[ListImagePipelinesResponse, AWSError] = js.native
   
   /**
-    *  Returns a list of image recipes.
+    * Returns a list of image recipes.
     */
   def listImageRecipes(): Request[ListImageRecipesResponse, AWSError] = js.native
   def listImageRecipes(callback: js.Function2[/* err */ AWSError, /* data */ ListImageRecipesResponse, Unit]): Request[ListImageRecipesResponse, AWSError] = js.native
   /**
-    *  Returns a list of image recipes.
+    * Returns a list of image recipes.
     */
   def listImageRecipes(params: ListImageRecipesRequest): Request[ListImageRecipesResponse, AWSError] = js.native
   def listImageRecipes(
@@ -545,12 +573,42 @@ trait Imagebuilder extends Service {
   ): Request[ListImageRecipesResponse, AWSError] = js.native
   
   /**
-    *  Returns the list of images that you have access to.
+    * Returns a list of image scan aggregations for your account. You can filter by the type of key that Image Builder uses to group results. For example, if you want to get a list of findings by severity level for one of your pipelines, you might specify your pipeline with the imagePipelineArn filter. If you don't specify a filter, Image Builder returns an aggregation for your account. To streamline results, you can use the following filters in your request:    accountId     imageBuildVersionArn     imagePipelineArn     vulnerabilityId   
+    */
+  def listImageScanFindingAggregations(): Request[ListImageScanFindingAggregationsResponse, AWSError] = js.native
+  def listImageScanFindingAggregations(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListImageScanFindingAggregationsResponse, Unit]
+  ): Request[ListImageScanFindingAggregationsResponse, AWSError] = js.native
+  /**
+    * Returns a list of image scan aggregations for your account. You can filter by the type of key that Image Builder uses to group results. For example, if you want to get a list of findings by severity level for one of your pipelines, you might specify your pipeline with the imagePipelineArn filter. If you don't specify a filter, Image Builder returns an aggregation for your account. To streamline results, you can use the following filters in your request:    accountId     imageBuildVersionArn     imagePipelineArn     vulnerabilityId   
+    */
+  def listImageScanFindingAggregations(params: ListImageScanFindingAggregationsRequest): Request[ListImageScanFindingAggregationsResponse, AWSError] = js.native
+  def listImageScanFindingAggregations(
+    params: ListImageScanFindingAggregationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListImageScanFindingAggregationsResponse, Unit]
+  ): Request[ListImageScanFindingAggregationsResponse, AWSError] = js.native
+  
+  /**
+    * Returns a list of image scan findings for your account.
+    */
+  def listImageScanFindings(): Request[ListImageScanFindingsResponse, AWSError] = js.native
+  def listImageScanFindings(callback: js.Function2[/* err */ AWSError, /* data */ ListImageScanFindingsResponse, Unit]): Request[ListImageScanFindingsResponse, AWSError] = js.native
+  /**
+    * Returns a list of image scan findings for your account.
+    */
+  def listImageScanFindings(params: ListImageScanFindingsRequest): Request[ListImageScanFindingsResponse, AWSError] = js.native
+  def listImageScanFindings(
+    params: ListImageScanFindingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListImageScanFindingsResponse, Unit]
+  ): Request[ListImageScanFindingsResponse, AWSError] = js.native
+  
+  /**
+    * Returns the list of images that you have access to. Newly created images can take up to two minutes to appear in the ListImages API Results.
     */
   def listImages(): Request[ListImagesResponse, AWSError] = js.native
   def listImages(callback: js.Function2[/* err */ AWSError, /* data */ ListImagesResponse, Unit]): Request[ListImagesResponse, AWSError] = js.native
   /**
-    *  Returns the list of images that you have access to.
+    * Returns the list of images that you have access to. Newly created images can take up to two minutes to appear in the ListImages API Results.
     */
   def listImages(params: ListImagesRequest): Request[ListImagesResponse, AWSError] = js.native
   def listImages(
@@ -559,14 +617,14 @@ trait Imagebuilder extends Service {
   ): Request[ListImagesResponse, AWSError] = js.native
   
   /**
-    *  Returns a list of infrastructure configurations.
+    * Returns a list of infrastructure configurations.
     */
   def listInfrastructureConfigurations(): Request[ListInfrastructureConfigurationsResponse, AWSError] = js.native
   def listInfrastructureConfigurations(
     callback: js.Function2[/* err */ AWSError, /* data */ ListInfrastructureConfigurationsResponse, Unit]
   ): Request[ListInfrastructureConfigurationsResponse, AWSError] = js.native
   /**
-    *  Returns a list of infrastructure configurations.
+    * Returns a list of infrastructure configurations.
     */
   def listInfrastructureConfigurations(params: ListInfrastructureConfigurationsRequest): Request[ListInfrastructureConfigurationsResponse, AWSError] = js.native
   def listInfrastructureConfigurations(
@@ -575,12 +633,12 @@ trait Imagebuilder extends Service {
   ): Request[ListInfrastructureConfigurationsResponse, AWSError] = js.native
   
   /**
-    *  Returns the list of tags for the specified resource.
+    * Returns the list of tags for the specified resource.
     */
   def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]): Request[ListTagsForResourceResponse, AWSError] = js.native
   /**
-    *  Returns the list of tags for the specified resource.
+    * Returns the list of tags for the specified resource.
     */
   def listTagsForResource(params: ListTagsForResourceRequest): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(
@@ -589,12 +647,40 @@ trait Imagebuilder extends Service {
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
   
   /**
-    *  Applies a policy to a component. We recommend that you call the RAM API CreateResourceShare to share resources. If you call the Image Builder API PutComponentPolicy, you must also call the RAM API PromoteResourceShareCreatedFromPolicy in order for the resource to be visible to all principals with whom the resource is shared.
+    * Returns a list of workflow runtime instance metadata objects for a specific image build version.
+    */
+  def listWorkflowExecutions(): Request[ListWorkflowExecutionsResponse, AWSError] = js.native
+  def listWorkflowExecutions(callback: js.Function2[/* err */ AWSError, /* data */ ListWorkflowExecutionsResponse, Unit]): Request[ListWorkflowExecutionsResponse, AWSError] = js.native
+  /**
+    * Returns a list of workflow runtime instance metadata objects for a specific image build version.
+    */
+  def listWorkflowExecutions(params: ListWorkflowExecutionsRequest): Request[ListWorkflowExecutionsResponse, AWSError] = js.native
+  def listWorkflowExecutions(
+    params: ListWorkflowExecutionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListWorkflowExecutionsResponse, Unit]
+  ): Request[ListWorkflowExecutionsResponse, AWSError] = js.native
+  
+  /**
+    * Shows runtime data for each step in a runtime instance of the workflow that you specify in the request.
+    */
+  def listWorkflowStepExecutions(): Request[ListWorkflowStepExecutionsResponse, AWSError] = js.native
+  def listWorkflowStepExecutions(callback: js.Function2[/* err */ AWSError, /* data */ ListWorkflowStepExecutionsResponse, Unit]): Request[ListWorkflowStepExecutionsResponse, AWSError] = js.native
+  /**
+    * Shows runtime data for each step in a runtime instance of the workflow that you specify in the request.
+    */
+  def listWorkflowStepExecutions(params: ListWorkflowStepExecutionsRequest): Request[ListWorkflowStepExecutionsResponse, AWSError] = js.native
+  def listWorkflowStepExecutions(
+    params: ListWorkflowStepExecutionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListWorkflowStepExecutionsResponse, Unit]
+  ): Request[ListWorkflowStepExecutionsResponse, AWSError] = js.native
+  
+  /**
+    * Applies a policy to a component. We recommend that you call the RAM API CreateResourceShare to share resources. If you call the Image Builder API PutComponentPolicy, you must also call the RAM API PromoteResourceShareCreatedFromPolicy in order for the resource to be visible to all principals with whom the resource is shared.
     */
   def putComponentPolicy(): Request[PutComponentPolicyResponse, AWSError] = js.native
   def putComponentPolicy(callback: js.Function2[/* err */ AWSError, /* data */ PutComponentPolicyResponse, Unit]): Request[PutComponentPolicyResponse, AWSError] = js.native
   /**
-    *  Applies a policy to a component. We recommend that you call the RAM API CreateResourceShare to share resources. If you call the Image Builder API PutComponentPolicy, you must also call the RAM API PromoteResourceShareCreatedFromPolicy in order for the resource to be visible to all principals with whom the resource is shared.
+    * Applies a policy to a component. We recommend that you call the RAM API CreateResourceShare to share resources. If you call the Image Builder API PutComponentPolicy, you must also call the RAM API PromoteResourceShareCreatedFromPolicy in order for the resource to be visible to all principals with whom the resource is shared.
     */
   def putComponentPolicy(params: PutComponentPolicyRequest): Request[PutComponentPolicyResponse, AWSError] = js.native
   def putComponentPolicy(
@@ -631,12 +717,12 @@ trait Imagebuilder extends Service {
   ): Request[PutImagePolicyResponse, AWSError] = js.native
   
   /**
-    *  Applies a policy to an image recipe. We recommend that you call the RAM API CreateResourceShare to share resources. If you call the Image Builder API PutImageRecipePolicy, you must also call the RAM API PromoteResourceShareCreatedFromPolicy in order for the resource to be visible to all principals with whom the resource is shared.
+    * Applies a policy to an image recipe. We recommend that you call the RAM API CreateResourceShare to share resources. If you call the Image Builder API PutImageRecipePolicy, you must also call the RAM API PromoteResourceShareCreatedFromPolicy in order for the resource to be visible to all principals with whom the resource is shared.
     */
   def putImageRecipePolicy(): Request[PutImageRecipePolicyResponse, AWSError] = js.native
   def putImageRecipePolicy(callback: js.Function2[/* err */ AWSError, /* data */ PutImageRecipePolicyResponse, Unit]): Request[PutImageRecipePolicyResponse, AWSError] = js.native
   /**
-    *  Applies a policy to an image recipe. We recommend that you call the RAM API CreateResourceShare to share resources. If you call the Image Builder API PutImageRecipePolicy, you must also call the RAM API PromoteResourceShareCreatedFromPolicy in order for the resource to be visible to all principals with whom the resource is shared.
+    * Applies a policy to an image recipe. We recommend that you call the RAM API CreateResourceShare to share resources. If you call the Image Builder API PutImageRecipePolicy, you must also call the RAM API PromoteResourceShareCreatedFromPolicy in order for the resource to be visible to all principals with whom the resource is shared.
     */
   def putImageRecipePolicy(params: PutImageRecipePolicyRequest): Request[PutImageRecipePolicyResponse, AWSError] = js.native
   def putImageRecipePolicy(
@@ -645,12 +731,12 @@ trait Imagebuilder extends Service {
   ): Request[PutImageRecipePolicyResponse, AWSError] = js.native
   
   /**
-    *  Manually triggers a pipeline to create an image.
+    * Manually triggers a pipeline to create an image.
     */
   def startImagePipelineExecution(): Request[StartImagePipelineExecutionResponse, AWSError] = js.native
   def startImagePipelineExecution(callback: js.Function2[/* err */ AWSError, /* data */ StartImagePipelineExecutionResponse, Unit]): Request[StartImagePipelineExecutionResponse, AWSError] = js.native
   /**
-    *  Manually triggers a pipeline to create an image.
+    * Manually triggers a pipeline to create an image.
     */
   def startImagePipelineExecution(params: StartImagePipelineExecutionRequest): Request[StartImagePipelineExecutionResponse, AWSError] = js.native
   def startImagePipelineExecution(
@@ -659,12 +745,12 @@ trait Imagebuilder extends Service {
   ): Request[StartImagePipelineExecutionResponse, AWSError] = js.native
   
   /**
-    *  Adds a tag to a resource.
+    * Adds a tag to a resource.
     */
   def tagResource(): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]): Request[TagResourceResponse, AWSError] = js.native
   /**
-    *  Adds a tag to a resource.
+    * Adds a tag to a resource.
     */
   def tagResource(params: TagResourceRequest): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(
@@ -673,12 +759,12 @@ trait Imagebuilder extends Service {
   ): Request[TagResourceResponse, AWSError] = js.native
   
   /**
-    *  Removes a tag from a resource.
+    * Removes a tag from a resource.
     */
   def untagResource(): Request[UntagResourceResponse, AWSError] = js.native
   def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]): Request[UntagResourceResponse, AWSError] = js.native
   /**
-    *  Removes a tag from a resource.
+    * Removes a tag from a resource.
     */
   def untagResource(params: UntagResourceRequest): Request[UntagResourceResponse, AWSError] = js.native
   def untagResource(
@@ -687,14 +773,14 @@ trait Imagebuilder extends Service {
   ): Request[UntagResourceResponse, AWSError] = js.native
   
   /**
-    *  Updates a new distribution configuration. Distribution configurations define and configure the outputs of your pipeline.
+    * Updates a new distribution configuration. Distribution configurations define and configure the outputs of your pipeline.
     */
   def updateDistributionConfiguration(): Request[UpdateDistributionConfigurationResponse, AWSError] = js.native
   def updateDistributionConfiguration(
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDistributionConfigurationResponse, Unit]
   ): Request[UpdateDistributionConfigurationResponse, AWSError] = js.native
   /**
-    *  Updates a new distribution configuration. Distribution configurations define and configure the outputs of your pipeline.
+    * Updates a new distribution configuration. Distribution configurations define and configure the outputs of your pipeline.
     */
   def updateDistributionConfiguration(params: UpdateDistributionConfigurationRequest): Request[UpdateDistributionConfigurationResponse, AWSError] = js.native
   def updateDistributionConfiguration(
@@ -703,12 +789,12 @@ trait Imagebuilder extends Service {
   ): Request[UpdateDistributionConfigurationResponse, AWSError] = js.native
   
   /**
-    *  Updates an image pipeline. Image pipelines enable you to automate the creation and distribution of images.  UpdateImagePipeline does not support selective updates for the pipeline. You must specify all of the required properties in the update request, not just the properties that have changed. 
+    * Updates an image pipeline. Image pipelines enable you to automate the creation and distribution of images.  UpdateImagePipeline does not support selective updates for the pipeline. You must specify all of the required properties in the update request, not just the properties that have changed. 
     */
   def updateImagePipeline(): Request[UpdateImagePipelineResponse, AWSError] = js.native
   def updateImagePipeline(callback: js.Function2[/* err */ AWSError, /* data */ UpdateImagePipelineResponse, Unit]): Request[UpdateImagePipelineResponse, AWSError] = js.native
   /**
-    *  Updates an image pipeline. Image pipelines enable you to automate the creation and distribution of images.  UpdateImagePipeline does not support selective updates for the pipeline. You must specify all of the required properties in the update request, not just the properties that have changed. 
+    * Updates an image pipeline. Image pipelines enable you to automate the creation and distribution of images.  UpdateImagePipeline does not support selective updates for the pipeline. You must specify all of the required properties in the update request, not just the properties that have changed. 
     */
   def updateImagePipeline(params: UpdateImagePipelineRequest): Request[UpdateImagePipelineResponse, AWSError] = js.native
   def updateImagePipeline(
@@ -717,14 +803,14 @@ trait Imagebuilder extends Service {
   ): Request[UpdateImagePipelineResponse, AWSError] = js.native
   
   /**
-    *  Updates a new infrastructure configuration. An infrastructure configuration defines the environment in which your image will be built and tested.
+    * Updates a new infrastructure configuration. An infrastructure configuration defines the environment in which your image will be built and tested.
     */
   def updateInfrastructureConfiguration(): Request[UpdateInfrastructureConfigurationResponse, AWSError] = js.native
   def updateInfrastructureConfiguration(
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateInfrastructureConfigurationResponse, Unit]
   ): Request[UpdateInfrastructureConfigurationResponse, AWSError] = js.native
   /**
-    *  Updates a new infrastructure configuration. An infrastructure configuration defines the environment in which your image will be built and tested.
+    * Updates a new infrastructure configuration. An infrastructure configuration defines the environment in which your image will be built and tested.
     */
   def updateInfrastructureConfiguration(params: UpdateInfrastructureConfigurationRequest): Request[UpdateInfrastructureConfigurationResponse, AWSError] = js.native
   def updateInfrastructureConfiguration(

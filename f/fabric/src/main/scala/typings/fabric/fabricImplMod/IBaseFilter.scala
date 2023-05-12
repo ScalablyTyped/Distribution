@@ -1,5 +1,6 @@
 package typings.fabric.fabricImplMod
 
+import typings.fabric.anon.Objects
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +26,7 @@ trait IBaseFilter extends StObject {
   /**
     * Returns a JSON representation of an instance
     */
-  def toJSON(): String = js.native
+  def toJSON(): Objects = js.native
   
   /**
     * Returns object representation of an instance

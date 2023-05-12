@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-image
 
-Typings are for version 5.12.0
+Typings are for version 5.16.0
 
 ## Library description:
 React easy to use image component

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListLoggingConfigurationsResponse extends StObject {
   
   /**
-    * 
+    * Array of logging configurations. If you specified a Limit in your request, this might not be the full list. 
     */
   var LoggingConfigurations: js.UndefOr[typings.awsSdk.clientsWafv2Mod.LoggingConfigurations] = js.undefined
   

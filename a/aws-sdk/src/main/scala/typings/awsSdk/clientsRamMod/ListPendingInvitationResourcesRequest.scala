@@ -22,7 +22,7 @@ trait ListPendingInvitationResourcesRequest extends StObject {
   var resourceRegionScope: js.UndefOr[ResourceRegionScopeFilter] = js.undefined
   
   /**
-    * Specifies the Amazon Resoure Name (ARN) of the invitation. You can use GetResourceShareInvitations to find the ARN of the invitation.
+    * Specifies the Amazon Resource Name (ARN) of the invitation. You can use GetResourceShareInvitations to find the ARN of the invitation.
     */
   var resourceShareInvitationArn: String
 }

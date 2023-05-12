@@ -8,9 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The Cloud Firestore service interface.
   *
   * Do not call this constructor directly. Instead, use {@link (getFirestore:1)}.
-  */
-@JSImport("@firebase/firestore/dist/packages/firestore/dist/index.esm2017", "Firestore")
+  */ @JSImport("@firebase/firestore/dist/packages/firestore/dist/index.esm2017", "Firestore")
 @js.native
 open class Firestore ()
   extends StObject
-     with a
+     with Ah_

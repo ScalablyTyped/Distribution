@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait WebGPUTintWASM extends StObject {
   
-  /* private */ var _twgsl: Any = js.native
-  
   def convertSpirV2WGSL(code: js.typedarray.Uint32Array): String = js.native
+  def convertSpirV2WGSL(code: js.typedarray.Uint32Array, disableUniformityAnalysis: Boolean): String = js.native
   
   def initTwgsl(): js.Promise[Unit] = js.native
   def initTwgsl(twgslOptions: TwgslOptions): js.Promise[Unit] = js.native

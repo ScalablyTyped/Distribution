@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssociateApiRequest extends StObject {
   
   /**
-    * The API ID.
+    * The API ID. Private APIs can not be associated with custom domains.
     */
   var apiId: String
   

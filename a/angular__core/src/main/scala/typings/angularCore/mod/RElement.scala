@@ -21,6 +21,10 @@ trait RElement
   
   var className: String = js.native
   
+  var firstChild: RNode | Null = js.native
+  
+  def getAttribute(name: String): String | Null = js.native
+  
   def removeAttribute(name: String): Unit = js.native
   
   def removeEventListener(`type`: String): Unit = js.native

@@ -8,30 +8,34 @@ import typings.chartJs.chartJsStrings.inner
 import typings.chartJs.chartJsStrings.pie
 import typings.chartJs.chartJsStrings.x
 import typings.chartJs.chartJsStrings.y
-import typings.chartJs.mod.AnimationsSpec
-import typings.chartJs.mod.ArcBorderRadius
-import typings.chartJs.mod.ScriptableAndArray
-import typings.chartJs.mod.ScriptableContext
-import typings.chartJs.mod.TransitionsSpec
-import typings.chartJs.typesBasicMod.AnyObject
-import typings.chartJs.typesGeometricMod.ChartArea
+import typings.chartJs.distTypesBasicMod.AnyObject
+import typings.chartJs.distTypesGeometricMod.ChartArea
+import typings.chartJs.distTypesIndexMod.AnimationsSpec
+import typings.chartJs.distTypesIndexMod.ArcBorderRadius
+import typings.chartJs.distTypesIndexMod.ScriptableAndArray
+import typings.chartJs.distTypesIndexMod.ScriptableContext
+import typings.chartJs.distTypesIndexMod.TransitionsSpec
 import typings.std.CanvasLineJoin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  type :'pie'} & chart.js.chart.js.PieControllerDatasetOptions */
+/* Inlined {  type :'pie'} & chart.js.chart.js/dist/types/index.PieControllerDatasetOptions */
 trait typepiePieControllerDatas extends StObject {
   
   var animation: `false` | AnimationSpecdoughnutonPr
   
   var animations: AnimationsSpec[doughnut]
   
-  var backgroundColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]]
+  var backgroundColor: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[doughnut]]
   
   var borderAlign: ScriptableAndArray[center | inner, ScriptableContext[doughnut]]
   
-  var borderColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]]
+  var borderColor: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[doughnut]]
+  
+  var borderDash: ScriptableAndArray[js.Array[Double], ScriptableContext[doughnut]]
+  
+  var borderDashOffset: ScriptableAndArray[Double, ScriptableContext[doughnut]]
   
   var borderJoinStyle: ScriptableAndArray[CanvasLineJoin, ScriptableContext[doughnut]]
   
@@ -48,7 +52,7 @@ trait typepiePieControllerDatas extends StObject {
   var circumference: Double
   
   /**
-    * How to clip relative to chartArea. Positive value allows overflow, negative value clips that many pixels inside chartArea. 0 = clip at chartArea. Clipping can also be configured per side: clip: {left: 5, top: false, right: -2, bottom: 0}
+    * How to clip relative to chartArea. Positive value allows overflow, negative value clips that many pixels inside chartArea. 0 = clip at chartArea. Clipping can also be configured per side: `clip: {left: 5, top: false, right: -2, bottom: 0}`
     */
   var clip: Double | ChartArea | `false`
   
@@ -58,9 +62,13 @@ trait typepiePieControllerDatas extends StObject {
     */
   var hidden: Boolean
   
-  var hoverBackgroundColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]]
+  var hoverBackgroundColor: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[doughnut]]
   
-  var hoverBorderColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]]
+  var hoverBorderColor: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[doughnut]]
+  
+  var hoverBorderDash: ScriptableAndArray[js.Array[Double], ScriptableContext[doughnut]]
+  
+  var hoverBorderDashOffset: ScriptableAndArray[Double, ScriptableContext[doughnut]]
   
   var hoverBorderWidth: ScriptableAndArray[Double, ScriptableContext[doughnut]]
   
@@ -85,7 +93,7 @@ trait typepiePieControllerDatas extends StObject {
   /**
     * Arc offset (in pixels).
     */
-  var offset: Double
+  var offset: Double | js.Array[Double]
   
   /**
     * The drawing order of dataset. Also affects order for stacking, tooltip and legend.
@@ -130,9 +138,11 @@ object typepiePieControllerDatas {
   inline def apply(
     animation: `false` | AnimationSpecdoughnutonPr,
     animations: AnimationsSpec[doughnut],
-    backgroundColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]],
+    backgroundColor: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[doughnut]],
     borderAlign: ScriptableAndArray[center | inner, ScriptableContext[doughnut]],
-    borderColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]],
+    borderColor: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[doughnut]],
+    borderDash: ScriptableAndArray[js.Array[Double], ScriptableContext[doughnut]],
+    borderDashOffset: ScriptableAndArray[Double, ScriptableContext[doughnut]],
     borderJoinStyle: ScriptableAndArray[CanvasLineJoin, ScriptableContext[doughnut]],
     borderRadius: ScriptableAndArray[Double | ArcBorderRadius, ScriptableContext[doughnut]],
     borderWidth: ScriptableAndArray[Double, ScriptableContext[doughnut]],
@@ -140,14 +150,16 @@ object typepiePieControllerDatas {
     circumference: Double,
     clip: Double | ChartArea | `false`,
     hidden: Boolean,
-    hoverBackgroundColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]],
-    hoverBorderColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]],
+    hoverBackgroundColor: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[doughnut]],
+    hoverBorderColor: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[doughnut]],
+    hoverBorderDash: ScriptableAndArray[js.Array[Double], ScriptableContext[doughnut]],
+    hoverBorderDashOffset: ScriptableAndArray[Double, ScriptableContext[doughnut]],
     hoverBorderWidth: ScriptableAndArray[Double, ScriptableContext[doughnut]],
     hoverOffset: ScriptableAndArray[Double, ScriptableContext[doughnut]],
     indexAxis: x | y,
     label: String,
     normalized: Boolean,
-    offset: Double,
+    offset: Double | js.Array[Double],
     order: Double,
     parsing: StringDictionary[String] | `false`,
     rotation: Double,
@@ -156,7 +168,7 @@ object typepiePieControllerDatas {
     transitions: TransitionsSpec[doughnut],
     weight: Double
   ): typepiePieControllerDatas = {
-    val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], animations = animations.asInstanceOf[js.Any], backgroundColor = backgroundColor.asInstanceOf[js.Any], borderAlign = borderAlign.asInstanceOf[js.Any], borderColor = borderColor.asInstanceOf[js.Any], borderJoinStyle = borderJoinStyle.asInstanceOf[js.Any], borderRadius = borderRadius.asInstanceOf[js.Any], borderWidth = borderWidth.asInstanceOf[js.Any], circular = circular.asInstanceOf[js.Any], circumference = circumference.asInstanceOf[js.Any], clip = clip.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], hoverBackgroundColor = hoverBackgroundColor.asInstanceOf[js.Any], hoverBorderColor = hoverBorderColor.asInstanceOf[js.Any], hoverBorderWidth = hoverBorderWidth.asInstanceOf[js.Any], hoverOffset = hoverOffset.asInstanceOf[js.Any], indexAxis = indexAxis.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], normalized = normalized.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], parsing = parsing.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], spacing = spacing.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any], transitions = transitions.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], animations = animations.asInstanceOf[js.Any], backgroundColor = backgroundColor.asInstanceOf[js.Any], borderAlign = borderAlign.asInstanceOf[js.Any], borderColor = borderColor.asInstanceOf[js.Any], borderDash = borderDash.asInstanceOf[js.Any], borderDashOffset = borderDashOffset.asInstanceOf[js.Any], borderJoinStyle = borderJoinStyle.asInstanceOf[js.Any], borderRadius = borderRadius.asInstanceOf[js.Any], borderWidth = borderWidth.asInstanceOf[js.Any], circular = circular.asInstanceOf[js.Any], circumference = circumference.asInstanceOf[js.Any], clip = clip.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], hoverBackgroundColor = hoverBackgroundColor.asInstanceOf[js.Any], hoverBorderColor = hoverBorderColor.asInstanceOf[js.Any], hoverBorderDash = hoverBorderDash.asInstanceOf[js.Any], hoverBorderDashOffset = hoverBorderDashOffset.asInstanceOf[js.Any], hoverBorderWidth = hoverBorderWidth.asInstanceOf[js.Any], hoverOffset = hoverOffset.asInstanceOf[js.Any], indexAxis = indexAxis.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], normalized = normalized.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], parsing = parsing.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], spacing = spacing.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any], transitions = transitions.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("pie")
     __obj.asInstanceOf[typepiePieControllerDatas]
   }
@@ -168,13 +180,13 @@ object typepiePieControllerDatas {
     
     inline def setAnimations(value: AnimationsSpec[doughnut]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
-    inline def setBackgroundColor(value: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[doughnut]]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     inline def setBackgroundColorFunction2(
-      value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
+      value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[typings.chartJs.distTypesColorMod.Color]
     ): Self = StObject.set(x, "backgroundColor", js.Any.fromFunction2(value))
     
-    inline def setBackgroundColorVarargs(value: typings.chartJs.typesColorMod.Color*): Self = StObject.set(x, "backgroundColor", js.Array(value*))
+    inline def setBackgroundColorVarargs(value: typings.chartJs.distTypesColorMod.Color*): Self = StObject.set(x, "backgroundColor", js.Array(value*))
     
     inline def setBorderAlign(value: ScriptableAndArray[center | inner, ScriptableContext[doughnut]]): Self = StObject.set(x, "borderAlign", value.asInstanceOf[js.Any])
     
@@ -182,13 +194,25 @@ object typepiePieControllerDatas {
     
     inline def setBorderAlignVarargs(value: (center | inner)*): Self = StObject.set(x, "borderAlign", js.Array(value*))
     
-    inline def setBorderColor(value: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[doughnut]]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     inline def setBorderColorFunction2(
-      value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
+      value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[typings.chartJs.distTypesColorMod.Color]
     ): Self = StObject.set(x, "borderColor", js.Any.fromFunction2(value))
     
-    inline def setBorderColorVarargs(value: typings.chartJs.typesColorMod.Color*): Self = StObject.set(x, "borderColor", js.Array(value*))
+    inline def setBorderColorVarargs(value: typings.chartJs.distTypesColorMod.Color*): Self = StObject.set(x, "borderColor", js.Array(value*))
+    
+    inline def setBorderDash(value: ScriptableAndArray[js.Array[Double], ScriptableContext[doughnut]]): Self = StObject.set(x, "borderDash", value.asInstanceOf[js.Any])
+    
+    inline def setBorderDashFunction2(value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[js.Array[Double]]): Self = StObject.set(x, "borderDash", js.Any.fromFunction2(value))
+    
+    inline def setBorderDashOffset(value: ScriptableAndArray[Double, ScriptableContext[doughnut]]): Self = StObject.set(x, "borderDashOffset", value.asInstanceOf[js.Any])
+    
+    inline def setBorderDashOffsetFunction2(value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[Double]): Self = StObject.set(x, "borderDashOffset", js.Any.fromFunction2(value))
+    
+    inline def setBorderDashOffsetVarargs(value: Double*): Self = StObject.set(x, "borderDashOffset", js.Array(value*))
+    
+    inline def setBorderDashVarargs(value: (js.Array[Double] | Double)*): Self = StObject.set(x, "borderDash", js.Array(value*))
     
     inline def setBorderJoinStyle(value: ScriptableAndArray[CanvasLineJoin, ScriptableContext[doughnut]]): Self = StObject.set(x, "borderJoinStyle", value.asInstanceOf[js.Any])
     
@@ -222,21 +246,33 @@ object typepiePieControllerDatas {
     
     inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    inline def setHoverBackgroundColor(value: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]]): Self = StObject.set(x, "hoverBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setHoverBackgroundColor(value: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[doughnut]]): Self = StObject.set(x, "hoverBackgroundColor", value.asInstanceOf[js.Any])
     
     inline def setHoverBackgroundColorFunction2(
-      value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
+      value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[typings.chartJs.distTypesColorMod.Color]
     ): Self = StObject.set(x, "hoverBackgroundColor", js.Any.fromFunction2(value))
     
-    inline def setHoverBackgroundColorVarargs(value: typings.chartJs.typesColorMod.Color*): Self = StObject.set(x, "hoverBackgroundColor", js.Array(value*))
+    inline def setHoverBackgroundColorVarargs(value: typings.chartJs.distTypesColorMod.Color*): Self = StObject.set(x, "hoverBackgroundColor", js.Array(value*))
     
-    inline def setHoverBorderColor(value: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]]): Self = StObject.set(x, "hoverBorderColor", value.asInstanceOf[js.Any])
+    inline def setHoverBorderColor(value: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[doughnut]]): Self = StObject.set(x, "hoverBorderColor", value.asInstanceOf[js.Any])
     
     inline def setHoverBorderColorFunction2(
-      value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
+      value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[typings.chartJs.distTypesColorMod.Color]
     ): Self = StObject.set(x, "hoverBorderColor", js.Any.fromFunction2(value))
     
-    inline def setHoverBorderColorVarargs(value: typings.chartJs.typesColorMod.Color*): Self = StObject.set(x, "hoverBorderColor", js.Array(value*))
+    inline def setHoverBorderColorVarargs(value: typings.chartJs.distTypesColorMod.Color*): Self = StObject.set(x, "hoverBorderColor", js.Array(value*))
+    
+    inline def setHoverBorderDash(value: ScriptableAndArray[js.Array[Double], ScriptableContext[doughnut]]): Self = StObject.set(x, "hoverBorderDash", value.asInstanceOf[js.Any])
+    
+    inline def setHoverBorderDashFunction2(value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[js.Array[Double]]): Self = StObject.set(x, "hoverBorderDash", js.Any.fromFunction2(value))
+    
+    inline def setHoverBorderDashOffset(value: ScriptableAndArray[Double, ScriptableContext[doughnut]]): Self = StObject.set(x, "hoverBorderDashOffset", value.asInstanceOf[js.Any])
+    
+    inline def setHoverBorderDashOffsetFunction2(value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[Double]): Self = StObject.set(x, "hoverBorderDashOffset", js.Any.fromFunction2(value))
+    
+    inline def setHoverBorderDashOffsetVarargs(value: Double*): Self = StObject.set(x, "hoverBorderDashOffset", js.Array(value*))
+    
+    inline def setHoverBorderDashVarargs(value: (js.Array[Double] | Double)*): Self = StObject.set(x, "hoverBorderDash", js.Array(value*))
     
     inline def setHoverBorderWidth(value: ScriptableAndArray[Double, ScriptableContext[doughnut]]): Self = StObject.set(x, "hoverBorderWidth", value.asInstanceOf[js.Any])
     
@@ -256,7 +292,9 @@ object typepiePieControllerDatas {
     
     inline def setNormalized(value: Boolean): Self = StObject.set(x, "normalized", value.asInstanceOf[js.Any])
     
-    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double | js.Array[Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value*))
     
     inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     

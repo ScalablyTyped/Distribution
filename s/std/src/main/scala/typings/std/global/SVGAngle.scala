@@ -1,5 +1,10 @@
 package typings.std.global
 
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
+import typings.std.stdInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,23 +19,23 @@ open class SVGAngle ()
   
   /* standard dom */
   /* CompleteClass */
-  override val SVG_ANGLETYPE_DEG: Double = js.native
+  override val SVG_ANGLETYPE_DEG: `2` = js.native
   
   /* standard dom */
   /* CompleteClass */
-  override val SVG_ANGLETYPE_GRAD: Double = js.native
+  override val SVG_ANGLETYPE_GRAD: `4` = js.native
   
   /* standard dom */
   /* CompleteClass */
-  override val SVG_ANGLETYPE_RAD: Double = js.native
+  override val SVG_ANGLETYPE_RAD: `3` = js.native
   
   /* standard dom */
   /* CompleteClass */
-  override val SVG_ANGLETYPE_UNKNOWN: Double = js.native
+  override val SVG_ANGLETYPE_UNKNOWN: `0` = js.native
   
   /* standard dom */
   /* CompleteClass */
-  override val SVG_ANGLETYPE_UNSPECIFIED: Double = js.native
+  override val SVG_ANGLETYPE_UNSPECIFIED: `1` = js.native
   
   /* standard dom */
   /* CompleteClass */
@@ -61,25 +66,25 @@ object SVGAngle {
   /* standard dom */
   @JSGlobal("SVGAngle.SVG_ANGLETYPE_DEG")
   @js.native
-  val SVG_ANGLETYPE_DEG: Double = js.native
+  val SVG_ANGLETYPE_DEG: `2` = js.native
   
   /* standard dom */
   @JSGlobal("SVGAngle.SVG_ANGLETYPE_GRAD")
   @js.native
-  val SVG_ANGLETYPE_GRAD: Double = js.native
+  val SVG_ANGLETYPE_GRAD: `4` = js.native
   
   /* standard dom */
   @JSGlobal("SVGAngle.SVG_ANGLETYPE_RAD")
   @js.native
-  val SVG_ANGLETYPE_RAD: Double = js.native
+  val SVG_ANGLETYPE_RAD: `3` = js.native
   
   /* standard dom */
   @JSGlobal("SVGAngle.SVG_ANGLETYPE_UNKNOWN")
   @js.native
-  val SVG_ANGLETYPE_UNKNOWN: Double = js.native
+  val SVG_ANGLETYPE_UNKNOWN: `0` = js.native
   
   /* standard dom */
   @JSGlobal("SVGAngle.SVG_ANGLETYPE_UNSPECIFIED")
   @js.native
-  val SVG_ANGLETYPE_UNSPECIFIED: Double = js.native
+  val SVG_ANGLETYPE_UNSPECIFIED: `1` = js.native
 }

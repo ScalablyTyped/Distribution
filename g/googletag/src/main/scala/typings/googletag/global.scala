@@ -7,6 +7,8 @@ import typings.googletag.googletag.PubAdsService
 import typings.googletag.googletag.SizeMappingBuilder
 import typings.googletag.googletag.Slot
 import typings.googletag.googletag.enums.OutOfPageFormat
+import typings.googletag.googletag.secureSignals.SecureSignalProvider
+import typings.googletag.googletag.secureSignals.SecureSignalProvidersArray
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,20 +23,18 @@ object global {
     val ^ : js.Any = js.native
     
     /**
-      * Flag indicating that GPT API is loaded and ready to be called.
+      * Flag indicating that the GPT API is loaded and ready to be called.
       * This property will be simply `undefined` until the API is ready.
       *
-      * Note that the recommended way of handling async is to use {@link googletag.cmd} to queue callbacks for when GPT is ready.
+      * Note that the recommended way of handling async is to use {@link cmd googletag.cmd} to queue callbacks for when GPT is ready.
       * These callbacks do not have to check googletag.apiReady as they are guaranteed to execute once the API is set up.
       *
-      * **Example**
-      * ```
-      * <script>
-      *   if (window.googletag && googletag.apiReady) {
-      *     // GPT API can be called safely.
-      *   }
-      * </script>
-      * ```
+      * @example
+      *   <script>
+      *     if (window.googletag && googletag.apiReady) {
+      *       // GPT API can be called safely.
+      *     }
+      *   </script>
       */
     @JSGlobal("googletag.apiReady")
     @js.native
@@ -49,20 +49,19 @@ object global {
       * The script then replaces {@link cmd} with a {@link CommandArray} object whose push method is defined to execute the function argument passed to it.
       * This mechanism allows GPT to reduce perceived latency by fetching the JavaScript asynchronously while allowing the browser to continue rendering the page.
       *
-      * **Example**
-      * ```
-      * googletag.cmd.push(function() {
-      *   googletag.defineSlot('/1234567/sports', [160, 600])
-      *            .addService(googletag.pubads());
-      * });
-      * ```
+      * @example
+      *   googletag.cmd.push(function() {
+      *     googletag.defineSlot('/1234567/sports', [160, 600])
+      *              .addService(googletag.pubads());
+      *   });
       */
     @JSGlobal("googletag.cmd")
     @js.native
-    val cmd: CommandArray | js.Array[js.Function0[Unit]] = js.native
+    val cmd: CommandArray | (js.Array[js.ThisFunction0[/* globalThis */ /* this */ Any, Unit]]) = js.native
     
     /**
       * Returns a reference to the {@link CompanionAdsService}.
+      *
       * @returns The Companion Ads service.
       */
     inline def companionAds(): CompanionAdsService = ^.asInstanceOf[js.Dynamic].applyDynamic("companionAds")().asInstanceOf[CompanionAdsService]
@@ -76,20 +75,17 @@ object global {
       *
       * For GPT managed out-of-page ads, `div` is a supported {@link googletag.enums.OutOfPageFormat OutOfPageFormat}.
       *
-      * **Example**
-      * ```
-      * // Define a custom out-of-page ad slot.
-      * googletag.defineOutOfPageSlot('/1234567/sports', 'div-1');
-      * // Define a GPT managed web interstitial ad slot.
-      * googletag.defineOutOfPageSlot('/1234567/sports',
-      *                               googletag.enums.OutOfPageFormat.INTERSTITIAL);
-      * ```
-      * **See also**
-      * - [Display a rewarded ad](https://developers.google.com/publisher-tag/samples/display-rewarded-ad)
-      * - [Display a web interstitial ad](https://developers.google.com/publisher-tag/samples/display-web-interstitial-ad)
-      * - [Display an anchor ad](https://developers.google.com/publisher-tag/samples/display-anchor-ad)
-      * - [Display an out-of-page ad](https://developers.google.com/publisher-tag/samples/display-out-of-page-ad)
+      * @example
+      *   // Define a custom out-of-page ad slot.
+      *   googletag.defineOutOfPageSlot('/1234567/sports', 'div-1');
+      *   // Define a GPT managed web interstitial ad slot.
+      *   googletag.defineOutOfPageSlot('/1234567/sports',
+      *                                 googletag.enums.OutOfPageFormat.INTERSTITIAL);
       *
+      * @see [Display a rewarded ad](https://developers.google.com/publisher-tag/samples/display-rewarded-ad)
+      * @see [Display a web interstitial ad](https://developers.google.com/publisher-tag/samples/display-web-interstitial-ad)
+      * @see [Display an anchor ad](https://developers.google.com/publisher-tag/samples/display-anchor-ad)
+      * @see [Display an out-of-page ad](https://developers.google.com/publisher-tag/samples/display-out-of-page-ad)
       * @param adUnitPath Full [ad unit path](https://developers.google.com/publisher-tag/guides/get-started#ad-unit-path) with the network code and ad unit code.
       * @param div ID of the div that will contain this ad unit or OutOfPageFormat.
       * @returns The newly created slot, or `null` if a slot cannot be created.
@@ -101,26 +97,19 @@ object global {
     /**
       * Constructs an ad slot with a given ad unit path and size and associates it with the ID of a div element on the page that will contain the ad.
       *
-      * **Example**
-      * ```
-      * googletag.defineSlot('/1234567/sports', [728, 90], 'div-1');
-      * ```
+      * @example
+      *   googletag.defineSlot('/1234567/sports', [728, 90], 'div-1');
       *
-      * **See also**
-      * - [Get Started with Google Publisher Tags](https://developers.google.com/publisher-tag/guides/get-started)
-      *
+      * @see [Get Started with Google Publisher Tags](https://developers.google.com/publisher-tag/guides/get-started)
       * @param adUnitPath Full [ad unit path](https://developers.google.com/publisher-tag/guides/get-started#ad-unit-path) with the network code and unit code.
       * @param size Width and height of the added slot.
-      * This is the size that is used in the ad request if no responsive size mapping is provided or the size of the viewport is smaller than the smallest size provided in the mapping.
+      *   This is the size that is used in the ad request if no responsive size mapping is provided or the size of the viewport is smaller than the smallest size provided in the mapping.
       * @param div ID of the div that will contain this ad unit.
       * @returns The newly created slot, or `null` if a slot cannot be created.
       */
     inline def defineSlot(adUnitPath: String, size: GeneralSize, div: String): Slot | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("defineSlot")(adUnitPath.asInstanceOf[js.Any], size.asInstanceOf[js.Any], div.asInstanceOf[js.Any])).asInstanceOf[Slot | Null]
     
     inline def defineUnit(adUnitPath: String, size: GeneralSize): Slot = (^.asInstanceOf[js.Dynamic].applyDynamic("defineUnit")(adUnitPath.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Slot]
-    /**
-      * @see googletag.defineSlot
-      */
     inline def defineUnit(adUnitPath: String, size: GeneralSize, div: String): Slot | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("defineUnit")(adUnitPath.asInstanceOf[js.Any], size.asInstanceOf[js.Any], div.asInstanceOf[js.Any])).asInstanceOf[Slot | Null]
     
     /**
@@ -136,25 +125,23 @@ object global {
       * so future requests will not be influenced by roadblocks or competitive exclusions involving this ad.
       * Failure to call this function before removing a slot's div from the page will result in undefined behavior.
       *
-      * **Example**
-      * ```
-      * // The calls to construct an ad and display contents.
-      * var slot1 =
-      *     googletag.defineSlot('/1234567/sports', [728, 90], 'div-1');
-      * googletag.display('div-1');
-      * var slot2 =
-      *     googletag.defineSlot('/1234567/news', [160, 600], 'div-2');
-      * googletag.display('div-2');
-      * var slot3 =
-      *     googletag.defineSlot('/1234567/weather', [160, 600], 'div-3');
-      * googletag.display('div-3');
-      * // This call to destroy only slot1.
-      * googletag.destroySlots([slot1]);
-      * // This call to destroy both slot1 and slot2.
-      * googletag.destroySlots([slot1, slot2]);
-      * // This call to destroy all slots.
-      * googletag.destroySlots();
-      * ```
+      * @example
+      *   // The calls to construct an ad and display contents.
+      *   var slot1 =
+      *       googletag.defineSlot('/1234567/sports', [728, 90], 'div-1');
+      *   googletag.display('div-1');
+      *   var slot2 =
+      *       googletag.defineSlot('/1234567/news', [160, 600], 'div-2');
+      *   googletag.display('div-2');
+      *   var slot3 =
+      *       googletag.defineSlot('/1234567/weather', [160, 600], 'div-3');
+      *   googletag.display('div-3');
+      *   // This call to destroy only slot1.
+      *   googletag.destroySlots([slot1]);
+      *   // This call to destroy both slot1 and slot2.
+      *   googletag.destroySlots([slot1, slot2]);
+      *   // This call to destroy all slots.
+      *   googletag.destroySlots();
       *
       * @param slots The array of slots to destroy. Array is optional; all slots will be destroyed if it is unspecified.
       * @returns `true` if slots have been destroyed, `false` otherwise.
@@ -165,10 +152,8 @@ object global {
     /**
       * Disables the Google Publisher Console.
       *
-      * **See also**
-      * - [Google Publisher Console](https://developers.google.com/publisher-tag/guides/publisher-console)
-      *
-      * **Note**: Can only be called after the document is loaded.
+      * @see [Google Publisher Console](https://developers.google.com/publisher-tag/guides/publisher-console)
+      *   **Note**: Can only be called after the document is loaded.
       */
     inline def disablePublisherConsole(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disablePublisherConsole")().asInstanceOf[Unit]
     
@@ -182,24 +167,20 @@ object global {
       * If single request architecture (SRA) is being used, all unfetched ad slots at the time this method is called will be fetched at once.
       * To force an ad slot not to display, the entire div must be removed.
       *
-      * **Example**
-      * ```
-      * <div id="div-1" style="width: 728px; height: 90px">
-      *   <script type="text/javascript">
-      *     googletag.cmd.push(function() {
-      *       googletag.display('div-1');
-      *     });
-      *   </script>
-      * </div>
-      * ```
+      * @example
+      *   <div id="div-1" style="width: 728px; height: 90px">
+      *     <script type="text/javascript">
+      *       googletag.cmd.push(function() {
+      *         googletag.display('div-1');
+      *       });
+      *     </script>
+      *   </div>
       *
-      * **See also**
-      * - [Get Started with Google Publisher Tags](https://developers.google.com/publisher-tag/guides/get-started)
-      * - [Display a test ad](https://developers.google.com/publisher-tag/samples/display-test-ad)
-      * - [Control ad loading and refresh](https://developers.google.com/publisher-tag/guides/control-ad-loading)
-      *
+      * @see [Get Started with Google Publisher Tags](https://developers.google.com/publisher-tag/guides/get-started)
+      * @see [Display a test ad](https://developers.google.com/publisher-tag/samples/display-test-ad)
+      * @see [Control ad loading and refresh](https://developers.google.com/publisher-tag/guides/control-ad-loading)
       * @param divOrSlot Either the ID of the div element containing the ad slot or the div element, or the slot object.
-      * If a div element is provided, it must have an 'id' attribute which matches the ID passed into {@link googletag.defineSlot()}.
+      *   If a div element is provided, it must have an 'id' attribute which matches the ID passed into {@link googletag.defineSlot()}.
       */
     inline def display(divOrSlot: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("display")(divOrSlot.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def display(divOrSlot: Slot): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("display")(divOrSlot.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -218,8 +199,7 @@ object global {
       /**
         * Out-of-page formats supported by GPT.
         *
-        * **See also**
-        * - {@link googletag.defineOutOfPageSlot}
+        * @see {@link googletag.defineOutOfPageSlot}
         */
       @JSGlobal("googletag.enums.OutOfPageFormat")
       @js.native
@@ -240,8 +220,7 @@ object global {
       /**
         * [Traffic sources](https://support.google.com/admanager/answer/11233407) supported by GPT.
         *
-        * **See also**
-        * - {@link PrivacySettingsConfig.trafficSource}
+        * @see {@link PrivacySettingsConfig.trafficSource}
         */
       @JSGlobal("googletag.enums.TrafficSource")
       @js.native
@@ -259,9 +238,7 @@ object global {
     /**
       * Returns the current version of GPT.
       *
-      * **See also**
-      * - [GPT version history](https://developers.google.com/publisher-tag/versions)
-      *
+      * @see [GPT version history](https://developers.google.com/publisher-tag/versions)
       * @returns The currently executing GPT version string.
       */
     inline def getVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getVersion")().asInstanceOf[String]
@@ -269,18 +246,14 @@ object global {
     /**
       * Opens the Google Publisher Console.
       *
-      * **See also**
-      * - [Google Publisher Console](https://developers.google.com/publisher-tag/guides/publisher-console)
+      * @see [Google Publisher Console](https://developers.google.com/publisher-tag/guides/publisher-console)
+      *   **Note**: Can only be called after the document is loaded.
       *
-      * **Note**: Can only be called after the document is loaded.
-      *
-      * **Example**
-      * ```
-      * // Calling with div ID.
-      * googletag.openConsole('div-1');
-      * // Calling without div ID.
-      * googletag.openConsole();
-      * ```
+      * @example
+      *   // Calling with div ID.
+      *   googletag.openConsole('div-1');
+      *   // Calling without div ID.
+      *   googletag.openConsole();
       *
       * @param div An ad slot div ID. This value is optional. When provided, the Publisher Console will attempt to open with details of the specified ad slot in view.
       */
@@ -289,7 +262,7 @@ object global {
     
     /**
       * Returns a reference to the {@link PubAdsService}.
-      * @returns The Publisher Ads service..
+      * @returns The Publisher Ads service.
       */
     inline def pubads(): PubAdsService = ^.asInstanceOf[js.Dynamic].applyDynamic("pubads")().asInstanceOf[PubAdsService]
     
@@ -304,23 +277,38 @@ object global {
     val pubadsReady: js.UndefOr[Boolean] = js.native
     
     /**
+      * Reference to the secure signal providers array.
+      *
+      * The secure signal providers array accepts a sequence of signal-generating functions and invokes them in order.
+      * It is intended to replace a standard array that is used to enqueue signal-generating functions to be invoked once GPT is loaded.
+      *
+      * @example
+      * window.googletag = window.googletag || { cmd: [], secureSignalProviders: [] };
+      * window.googletag.secureSignalProviders.push({
+      *   id: 'collector123',
+      *   collectorFunction: () => { return Promise.resolve('signal'); }
+      * });
+      *
+      * @see [Share secure signals with bidders](https://support.google.com/admanager/answer/10488752)
+      */
+    @JSGlobal("googletag.secureSignalProviders")
+    @js.native
+    val secureSignalProviders: SecureSignalProvidersArray | js.Array[SecureSignalProvider] = js.native
+    
+    /**
       * Sets the title for all ad container iframes created by {@link PubAdsService}, from this point onwards.
       *
-      * **Example**
-      * ```
-      * googletag.setAdIframeTitle('title');
-      * ```
+      * @example
+      *   googletag.setAdIframeTitle('title');
       *
-      * @param title The title to set.
+      * @param title The new title for all ad container iframes.
       */
     inline def setAdIframeTitle(title: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAdIframeTitle")(title.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Creates a new {@link SizeMappingBuilder}.
       *
-      * **See also**
-      * - [Ad sizes: Responsive ads](https://developers.google.com/publisher-tag/guides/ad-sizes#responsive_ads)
-      *
+      * @see [Ad sizes: Responsive ads](https://developers.google.com/publisher-tag/guides/ad-sizes#responsive_ads)
       * @returns A new builder.
       */
     inline def sizeMapping(): SizeMappingBuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeMapping")().asInstanceOf[SizeMappingBuilder]

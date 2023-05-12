@@ -44,13 +44,13 @@ object mod {
       * Logs the given arguments to the `log` method.
       */
     /**
-      * Used for detailed trbouleshooting scenarios. This is
+      * Used for detailed troubleshooting scenarios. This is
       * intended for use by developers / system administrators
       * for diagnosing specific failures.
       */
     def verbose(args: Any*): Unit
     /**
-      * Used for detailed trbouleshooting scenarios. This is
+      * Used for detailed troubleshooting scenarios. This is
       * intended for use by developers / system administrators
       * for diagnosing specific failures.
       */

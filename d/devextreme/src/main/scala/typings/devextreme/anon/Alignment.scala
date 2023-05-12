@@ -1,6 +1,11 @@
 package typings.devextreme.anon
 
+import typings.devextreme.mod.DevExpress.core.DxElement_
+import typings.devextreme.mod.DevExpress.core.UserDefinedElement
+import typings.devextreme.mod.DevExpress.core.template
 import typings.devextreme.mod.DevExpress.ui.dxForm.LabelLocation
+import typings.devextreme.mod.DevExpress.ui.dxForm.SimpleItemLabelTemplateData
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,6 +26,17 @@ trait Alignment extends StObject {
     * Specifies whether or not a colon is displayed at the end of the current label.
     */
   var showColon: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * 
+    */
+  var template: js.UndefOr[
+    typings.devextreme.mod.DevExpress.core.template | (js.Function2[
+      /* itemData */ SimpleItemLabelTemplateData, 
+      /* itemElement */ DxElement_[HTMLElement], 
+      String | UserDefinedElement[typings.std.Element]
+    ])
+  ] = js.undefined
   
   /**
     * Specifies the label text.
@@ -53,6 +69,20 @@ object Alignment {
     inline def setShowColon(value: Boolean): Self = StObject.set(x, "showColon", value.asInstanceOf[js.Any])
     
     inline def setShowColonUndefined: Self = StObject.set(x, "showColon", js.undefined)
+    
+    inline def setTemplate(
+      value: template | (js.Function2[
+          /* itemData */ SimpleItemLabelTemplateData, 
+          /* itemElement */ DxElement_[HTMLElement], 
+          String | UserDefinedElement[typings.std.Element]
+        ])
+    ): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateFunction2(
+      value: (/* itemData */ SimpleItemLabelTemplateData, /* itemElement */ DxElement_[HTMLElement]) => String | UserDefinedElement[typings.std.Element]
+    ): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
+    
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

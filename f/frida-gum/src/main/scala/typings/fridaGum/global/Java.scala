@@ -23,6 +23,54 @@ object Java {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSGlobal("Java.ACC_ABSTRACT")
+  @js.native
+  val ACC_ABSTRACT: Double = js.native
+  
+  @JSGlobal("Java.ACC_BRIDGE")
+  @js.native
+  val ACC_BRIDGE: Double = js.native
+  
+  @JSGlobal("Java.ACC_FINAL")
+  @js.native
+  val ACC_FINAL: Double = js.native
+  
+  @JSGlobal("Java.ACC_NATIVE")
+  @js.native
+  val ACC_NATIVE: Double = js.native
+  
+  @JSGlobal("Java.ACC_PRIVATE")
+  @js.native
+  val ACC_PRIVATE: Double = js.native
+  
+  @JSGlobal("Java.ACC_PROTECTED")
+  @js.native
+  val ACC_PROTECTED: Double = js.native
+  
+  @JSGlobal("Java.ACC_PUBLIC")
+  @js.native
+  val ACC_PUBLIC: Double = js.native
+  
+  @JSGlobal("Java.ACC_STATIC")
+  @js.native
+  val ACC_STATIC: Double = js.native
+  
+  @JSGlobal("Java.ACC_STRICT")
+  @js.native
+  val ACC_STRICT: Double = js.native
+  
+  @JSGlobal("Java.ACC_SYNCHRONIZED")
+  @js.native
+  val ACC_SYNCHRONIZED: Double = js.native
+  
+  @JSGlobal("Java.ACC_SYNTHETIC")
+  @js.native
+  val ACC_SYNTHETIC: Double = js.native
+  
+  @JSGlobal("Java.ACC_VARARGS")
+  @js.native
+  val ACC_VARARGS: Double = js.native
+  
   @JSGlobal("Java.ClassFactory")
   @js.native
   open class ClassFactory_ ()
@@ -101,7 +149,7 @@ object Java {
     * @param className Name of class to enumerate instances of.
     * @param callbacks Object with callbacks.
     */
-  inline def choose(className: String, callbacks: ChooseCallbacks[js.Object]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("choose")(className.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def choose[T /* <: Members[T] */](className: String, callbacks: ChooseCallbacks[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("choose")(className.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * The default class factory used to implement e.g. `Java.use()`.

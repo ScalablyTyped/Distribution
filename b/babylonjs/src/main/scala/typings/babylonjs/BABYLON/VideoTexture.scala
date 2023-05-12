@@ -20,6 +20,8 @@ trait VideoTexture
   
   /* private */ var _errorFound: Any = js.native
   
+  /* private */ var _externalTexture: Any = js.native
+  
   /* private */ var _frameId: Any = js.native
   
   /* private */ var _generateMipMaps: Any = js.native
@@ -37,6 +39,8 @@ trait VideoTexture
   /* private */ var _processError: Any = js.native
   
   /* private */ var _reset: Any = js.native
+  
+  /* private */ var _resizeInternalTexture: Any = js.native
   
   /* private */ var _settings: Any = js.native
   

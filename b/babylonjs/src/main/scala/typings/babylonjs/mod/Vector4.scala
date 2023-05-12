@@ -276,6 +276,17 @@ object Vector4 {
   inline def One(): typings.babylonjs.mathsMathDotvectorMod.Vector4 = ^.asInstanceOf[js.Dynamic].applyDynamic("One")().asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Vector4]
   
   /**
+    * Returns a new Vector4 with random values between min and max
+    * @param min the minimum random value
+    * @param max the maximum random value
+    * @returns a Vector4 with random values between min and max
+    */
+  inline def Random(): typings.babylonjs.mathsMathDotvectorMod.Vector4 = ^.asInstanceOf[js.Dynamic].applyDynamic("Random")().asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Vector4]
+  inline def Random(min: Double): typings.babylonjs.mathsMathDotvectorMod.Vector4 = ^.asInstanceOf[js.Dynamic].applyDynamic("Random")(min.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Vector4]
+  inline def Random(min: Double, max: Double): typings.babylonjs.mathsMathDotvectorMod.Vector4 = (^.asInstanceOf[js.Dynamic].applyDynamic("Random")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Vector4]
+  inline def Random(min: Unit, max: Double): typings.babylonjs.mathsMathDotvectorMod.Vector4 = (^.asInstanceOf[js.Dynamic].applyDynamic("Random")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Vector4]
+  
+  /**
     * Returns a new Vector4 set with the result of the transformation by the given matrix of the given vector.
     * This method computes tranformed coordinates only, not transformed direction vectors (ie. it takes translation in account)
     * The difference with Vector3.TransformCoordinates is that the w component is not used to divide the other coordinates but is returned in the w coordinate instead

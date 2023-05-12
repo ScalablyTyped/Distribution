@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("@rdfjs/serializer-ntriples", JSImport.Namespace)
+  @JSImport("@rdfjs/serializer-ntriples", JSImport.Default)
   @js.native
-  open class ^[Q /* <: BaseQuad */] ()
+  open class default[Q /* <: BaseQuad */] ()
     extends StObject
        with Serializer[Q] {
     

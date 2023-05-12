@@ -123,6 +123,8 @@ object mod {
     
     var pending: Boolean
     
+    var requiredTags: js.UndefOr[js.Array[String]] = js.undefined
+    
     var suiteCount: Double
     
     var suites: js.Array[Suite]
@@ -156,6 +158,12 @@ object mod {
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setPending(value: Boolean): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+      
+      inline def setRequiredTags(value: js.Array[String]): Self = StObject.set(x, "requiredTags", value.asInstanceOf[js.Any])
+      
+      inline def setRequiredTagsUndefined: Self = StObject.set(x, "requiredTags", js.undefined)
+      
+      inline def setRequiredTagsVarargs(value: String*): Self = StObject.set(x, "requiredTags", js.Array(value*))
       
       inline def setSuiteCount(value: Double): Self = StObject.set(x, "suiteCount", value.asInstanceOf[js.Any])
       
@@ -244,6 +252,8 @@ object mod {
     
     var pending: Boolean
     
+    var requiredTags: js.UndefOr[js.Array[String]] = js.undefined
+    
     var tags: Tags
     
     var `type`: test
@@ -262,6 +272,12 @@ object mod {
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setPending(value: Boolean): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+      
+      inline def setRequiredTags(value: js.Array[String]): Self = StObject.set(x, "requiredTags", value.asInstanceOf[js.Any])
+      
+      inline def setRequiredTagsUndefined: Self = StObject.set(x, "requiredTags", js.undefined)
+      
+      inline def setRequiredTagsVarargs(value: String*): Self = StObject.set(x, "requiredTags", js.Array(value*))
       
       inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       

@@ -21,19 +21,7 @@ object mod {
       
       val Data: Any
       
-      val LatLngBounds: Any
-      
-      val Map: Any
-      
-      val Marker: Any
-      
-      val OverlayView: Any
-      
-      val Settings: Any
-      
       val drawing: Any
-      
-      val event: Any
       
       val geometry: Typeofgeometry
       
@@ -51,13 +39,7 @@ object mod {
       
       inline def apply(
         Data: Any,
-        LatLngBounds: Any,
-        Map: Any,
-        Marker: Any,
-        OverlayView: Any,
-        Settings: Any,
         drawing: Any,
-        event: Any,
         geometry: Typeofgeometry,
         journeySharing: Any,
         localContext: Any,
@@ -65,7 +47,7 @@ object mod {
         places: Any,
         visualization: Any
       ): GoogleMaps = {
-        val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], LatLngBounds = LatLngBounds.asInstanceOf[js.Any], Map = Map.asInstanceOf[js.Any], Marker = Marker.asInstanceOf[js.Any], OverlayView = OverlayView.asInstanceOf[js.Any], Settings = Settings.asInstanceOf[js.Any], drawing = drawing.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], journeySharing = journeySharing.asInstanceOf[js.Any], localContext = localContext.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], places = places.asInstanceOf[js.Any], visualization = visualization.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], drawing = drawing.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], journeySharing = journeySharing.asInstanceOf[js.Any], localContext = localContext.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], places = places.asInstanceOf[js.Any], visualization = visualization.asInstanceOf[js.Any])
         __obj.asInstanceOf[GoogleMaps]
       }
       
@@ -76,25 +58,15 @@ object mod {
         
         inline def setDrawing(value: Any): Self = StObject.set(x, "drawing", value.asInstanceOf[js.Any])
         
-        inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
-        
         inline def setGeometry(value: Typeofgeometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
         
         inline def setJourneySharing(value: Any): Self = StObject.set(x, "journeySharing", value.asInstanceOf[js.Any])
         
-        inline def setLatLngBounds(value: Any): Self = StObject.set(x, "LatLngBounds", value.asInstanceOf[js.Any])
-        
         inline def setLocalContext(value: Any): Self = StObject.set(x, "localContext", value.asInstanceOf[js.Any])
         
-        inline def setMap(value: Any): Self = StObject.set(x, "Map", value.asInstanceOf[js.Any])
-        
-        inline def setMarker(value: Any): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
-        
-        inline def setOverlayView(value: Any): Self = StObject.set(x, "OverlayView", value.asInstanceOf[js.Any])
+        inline def setMarker(value: Any): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
         
         inline def setPlaces(value: Any): Self = StObject.set(x, "places", value.asInstanceOf[js.Any])
-        
-        inline def setSettings(value: Any): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
         
         inline def setVisualization(value: Any): Self = StObject.set(x, "visualization", value.asInstanceOf[js.Any])
       }

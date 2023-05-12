@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @callback CalculateSortDistanceCallback
   * @param {MeshInstance} meshInstance - The mesh instance.
-  * @param {Vec3} cameraPosition - The position of the camera.
-  * @param {Vec3} cameraForward - The forward vector of the camera.
+  * @param {import('../core/math/vec3.js').Vec3} cameraPosition - The position of the camera.
+  * @param {import('../core/math/vec3.js').Vec3} cameraForward - The forward vector of the camera.
   */
 /**
   * An instance of a {@link Mesh}. A single mesh can be referenced by many mesh instances that can
@@ -23,19 +23,20 @@ open class MeshInstance protected () extends StObject {
   /**
     * Create a new MeshInstance instance.
     *
-    * @param {Mesh} mesh - The graphics mesh to instance.
-    * @param {Material} material - The material to use for this mesh instance.
+    * @param {import('./mesh.js').Mesh} mesh - The graphics mesh to instance.
+    * @param {import('./materials/material.js').Material} material - The material to use for this
+    * mesh instance.
     * @param {GraphNode} [node] - The graph node defining the transform for this instance. This
     * parameter is optional when used with {@link RenderComponent} and will use the node the
     * component is attached to.
     * @example
     * // Create a mesh instance pointing to a 1x1x1 'cube' mesh
-    * var mesh = pc.createBox(graphicsDevice);
-    * var material = new pc.StandardMaterial();
+    * const mesh = pc.createBox(graphicsDevice);
+    * const material = new pc.StandardMaterial();
     *
-    * var meshInstance = new pc.MeshInstance(mesh, material);
+    * const meshInstance = new pc.MeshInstance(mesh, material);
     *
-    * var entity = new pc.Entity();
+    * const entity = new pc.Entity();
     * entity.addComponent('render', {
     *     meshInstances: [meshInstance]
     * });
@@ -76,7 +77,7 @@ open class MeshInstance protected () extends StObject {
   var _lightHash: Double = js.native
   
   /**
-    * @type {Material}
+    * @type {import('./materials/material.js').Material}
     * @private
     */
   /* private */ var _material: Any = js.native
@@ -84,7 +85,7 @@ open class MeshInstance protected () extends StObject {
   var _mesh: Mesh = js.native
   
   /**
-    * @type {MorphInstance}
+    * @type {import('./morph-instance.js').MorphInstance}
     * @private
     */
   /* private */ var _morphInstance: Any = js.native
@@ -103,7 +104,7 @@ open class MeshInstance protected () extends StObject {
   /**
     * An array of shaders used by the mesh instance, indexed by the shader pass constant (SHADER_FORWARD..)
     *
-    * @type {Array<Shader>}
+    * @type {Array<import('../platform/graphics/shader.js').Shader>}
     * @ignore
     */
   var _shader: js.Array[Shader] = js.native
@@ -111,7 +112,7 @@ open class MeshInstance protected () extends StObject {
   var _shaderDefs: Double = js.native
   
   /**
-    * @type {SkinInstance}
+    * @type {import('./skin-instance.js').SkinInstance}
     * @private
     */
   /* private */ var _skinInstance: Any = js.native
@@ -144,6 +145,15 @@ open class MeshInstance protected () extends StObject {
     */
   def calculateSortDistance_=(arg: Any): Unit = js.native
   
+  /**
+    * Enable shadow casting for this mesh instance. Use this property to enable/disable
+    * shadow casting without overhead of removing from scene. Note that this property does not
+    * add the mesh instance to appropriate list of shadow casters on a {@link pc.Layer}, but
+    * allows mesh to be skipped from shadow casting while it is in the list already. Defaults to
+    * false.
+    *
+    * @type {boolean}
+    */
   var castShadow: Boolean = js.native
   
   def clearParameters(): Unit = js.native
@@ -157,7 +167,7 @@ open class MeshInstance protected () extends StObject {
   
   /**
     * Controls whether the mesh instance can be culled by frustum culling
-    * ({@link CameraComponent#frustumCulling}).
+    * ({@link CameraComponent#frustumCulling}). Defaults to true.
     *
     * @type {boolean}
     */
@@ -186,10 +196,11 @@ open class MeshInstance protected () extends StObject {
   
   def ensureMaterial(device: Any): Unit = js.native
   
-  var flipFaces: Boolean = js.native
+  var flipFacesFactor: Double = js.native
   
   /**
-    * @param {GraphicsDevice} device - The graphics device.
+    * @param {import('../platform/graphics/graphics-device.js').GraphicsDevice} device - The
+    * graphics device.
     * @param {number} pass - Shader pass number.
     * @returns {BindGroup} - The mesh bind group.
     * @ignore
@@ -239,7 +250,7 @@ open class MeshInstance protected () extends StObject {
   /**
     * The material used by this mesh instance.
     *
-    * @type {Material}
+    * @type {import('./materials/material.js').Material}
     */
   def material_=(arg: Material): Unit = js.native
   
@@ -247,7 +258,7 @@ open class MeshInstance protected () extends StObject {
   /**
     * The graphics mesh being instanced.
     *
-    * @type {Mesh}
+    * @type {import('./mesh.js').Mesh}
     */
   def mesh_=(arg: Mesh): Unit = js.native
   
@@ -255,7 +266,7 @@ open class MeshInstance protected () extends StObject {
   /**
     * The morph instance managing morphing of this mesh instance, or null if morphing is not used.
     *
-    * @type {MorphInstance}
+    * @type {import('./morph-instance.js').MorphInstance}
     */
   def morphInstance_=(arg: MorphInstance): Unit = js.native
   
@@ -299,7 +310,7 @@ open class MeshInstance protected () extends StObject {
   /**
     * Sets up {@link MeshInstance} to be rendered using Hardware Instancing.
     *
-    * @param {VertexBuffer|null} vertexBuffer - Vertex buffer to hold per-instance vertex data
+    * @param {import('../platform/graphics/vertex-buffer.js').VertexBuffer|null} vertexBuffer - Vertex buffer to hold per-instance vertex data
     * (usually world matrices). Pass null to turn off hardware instancing.
     */
   def setInstancing(): Unit = js.native
@@ -314,7 +325,8 @@ open class MeshInstance protected () extends StObject {
     * over parameter of the same name if set on Material this mesh instance uses for rendering.
     *
     * @param {string} name - The name of the parameter to set.
-    * @param {number|number[]|Texture} data - The value for the specified parameter.
+    * @param {number|number[]|import('../platform/graphics/texture.js').Texture} data - The value
+    * for the specified parameter.
     * @param {number} [passFlags] - Mask describing which passes the material should be included
     * in.
     */
@@ -331,7 +343,7 @@ open class MeshInstance protected () extends StObject {
   /**
     * The skin instance managing skinning of this mesh instance, or null if skinning is not used.
     *
-    * @type {SkinInstance}
+    * @type {import('./skin-instance.js').SkinInstance}
     */
   def skinInstance_=(arg: SkinInstance): Unit = js.native
   
@@ -344,12 +356,14 @@ open class MeshInstance protected () extends StObject {
   /**
     * Obtain a shader variant required to render the mesh instance within specified pass.
     *
-    * @param {Scene} scene - The scene.
+    * @param {import('./scene.js').Scene} scene - The scene.
     * @param {number} pass - The render pass.
     * @param {any} staticLightList - List of static lights.
     * @param {any} sortedLights - Array of arrays of lights.
-    * @param {UniformBufferFormat} viewUniformFormat - THe format of the view uniform buffer.
-    * @param {BindGroupFormat} viewBindGroupFormat - The format of the view bind group.
+    * @param {import('../platform/graphics/uniform-buffer-format.js').UniformBufferFormat} viewUniformFormat - The
+    * format of the view uniform buffer.
+    * @param {import('../platform/graphics/bind-group-format.js').BindGroupFormat} viewBindGroupFormat - The
+    * format of the view bind group.
     * @ignore
     */
   def updatePassShader(

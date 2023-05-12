@@ -12,7 +12,7 @@ open class SingleTileImageryProvider protected () extends StObject {
   
   /**
     * Gets the credit to display when this imagery provider is active.  Typically this is used to credit
-    * the source of the imagery.  This function should not be called before {@link SingleTileImageryProvider#ready} returns true.
+    * the source of the imagery.
     */
   val credit: Credit = js.native
   
@@ -98,14 +98,12 @@ open class SingleTileImageryProvider protected () extends StObject {
   val hasAlphaChannel: Boolean = js.native
   
   /**
-    * Gets the maximum level-of-detail that can be requested.  This function should
-    * not be called before {@link SingleTileImageryProvider#ready} returns true.
+    * Gets the maximum level-of-detail that can be requested.
     */
   val maximumLevel: js.UndefOr[Double] = js.native
   
   /**
-    * Gets the minimum level-of-detail that can be requested.  This function should
-    * not be called before {@link SingleTileImageryProvider#ready} returns true.
+    * Gets the minimum level-of-detail that can be requested.
     */
   val minimumLevel: Double = js.native
   
@@ -137,14 +135,12 @@ open class SingleTileImageryProvider protected () extends StObject {
   val readyPromise: js.Promise[Boolean] = js.native
   
   /**
-    * Gets the rectangle, in radians, of the imagery provided by this instance.  This function should
-    * not be called before {@link SingleTileImageryProvider#ready} returns true.
+    * Gets the rectangle, in radians, of the imagery provided by this instance.
     */
   val rectangle: Rectangle = js.native
   
   /**
-    * Requests the image for a given tile.  This function should
-    * not be called before {@link SingleTileImageryProvider#ready} returns true.
+    * Requests the image for a given tile.
     * @param x - The tile X coordinate.
     * @param y - The tile Y coordinate.
     * @param level - The tile level.
@@ -157,26 +153,22 @@ open class SingleTileImageryProvider protected () extends StObject {
   /**
     * Gets the tile discard policy.  If not undefined, the discard policy is responsible
     * for filtering out "missing" tiles via its shouldDiscardImage function.  If this function
-    * returns undefined, no tiles are filtered.  This function should
-    * not be called before {@link SingleTileImageryProvider#ready} returns true.
+    * returns undefined, no tiles are filtered.
     */
   val tileDiscardPolicy: TileDiscardPolicy = js.native
   
   /**
-    * Gets the height of each tile, in pixels.  This function should
-    * not be called before {@link SingleTileImageryProvider#ready} returns true.
+    * Gets the height of each tile, in pixels.
     */
   val tileHeight: Double = js.native
   
   /**
-    * Gets the width of each tile, in pixels. This function should
-    * not be called before {@link SingleTileImageryProvider#ready} returns true.
+    * Gets the width of each tile, in pixels.
     */
   val tileWidth: Double = js.native
   
   /**
-    * Gets the tiling scheme used by this provider.  This function should
-    * not be called before {@link SingleTileImageryProvider#ready} returns true.
+    * Gets the tiling scheme used by this provider.
     */
   val tilingScheme: TilingScheme = js.native
   
@@ -185,11 +177,30 @@ open class SingleTileImageryProvider protected () extends StObject {
     */
   val url: String = js.native
 }
+/* static members */
 object SingleTileImageryProvider {
+  
+  @JSImport("cesium", "SingleTileImageryProvider")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def fromUrl(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def fromUrl(url: String, options: fromUrlOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  /**
+    * Creates a provider for a single, top-level imagery tile.  The single image is assumed to use a
+    * @example
+    * const provider = await SingleTileImageryProvider.fromUrl("https://yoururl.com/image.png");
+    * @param url - The url for the tile
+    * @param [options] - Object describing initialization options.
+    */
+  inline def fromUrl(url: Resource): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def fromUrl(url: Resource, options: fromUrlOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Initialization options for the SingleTileImageryProvider constructor
     * @property url - The url for the tile.
+    * @property [tileWidth] - The width of the tile, in pixels.
+    * @property [tileHeight] - The height of the tile, in pixels.
     * @property [rectangle = Rectangle.MAX_VALUE] - The rectangle, in radians, covered by the image.
     * @property [credit] - A credit for the data source, which is displayed on the canvas.
     * @property [ellipsoid] - The ellipsoid.  If not specified, the WGS84 ellipsoid is used.
@@ -201,6 +212,10 @@ object SingleTileImageryProvider {
     var ellipsoid: js.UndefOr[Ellipsoid] = js.undefined
     
     var rectangle: js.UndefOr[Rectangle] = js.undefined
+    
+    var tileHeight: js.UndefOr[Double] = js.undefined
+    
+    var tileWidth: js.UndefOr[Double] = js.undefined
     
     var url: Resource | String
   }
@@ -226,7 +241,53 @@ object SingleTileImageryProvider {
       
       inline def setRectangleUndefined: Self = StObject.set(x, "rectangle", js.undefined)
       
+      inline def setTileHeight(value: Double): Self = StObject.set(x, "tileHeight", value.asInstanceOf[js.Any])
+      
+      inline def setTileHeightUndefined: Self = StObject.set(x, "tileHeight", js.undefined)
+      
+      inline def setTileWidth(value: Double): Self = StObject.set(x, "tileWidth", value.asInstanceOf[js.Any])
+      
+      inline def setTileWidthUndefined: Self = StObject.set(x, "tileWidth", js.undefined)
+      
       inline def setUrl(value: Resource | String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /**
+    * Initialization options for the SingleTileImageryProvider constructor when using SingleTileImageryProvider.fromUrl
+    * @property [rectangle = Rectangle.MAX_VALUE] - The rectangle, in radians, covered by the image.
+    * @property [credit] - A credit for the data source, which is displayed on the canvas.
+    * @property [ellipsoid] - The ellipsoid.  If not specified, the WGS84 ellipsoid is used.
+    */
+  trait fromUrlOptions extends StObject {
+    
+    var credit: js.UndefOr[Credit | String] = js.undefined
+    
+    var ellipsoid: js.UndefOr[Ellipsoid] = js.undefined
+    
+    var rectangle: js.UndefOr[Rectangle] = js.undefined
+  }
+  object fromUrlOptions {
+    
+    inline def apply(): fromUrlOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[fromUrlOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: fromUrlOptions] (val x: Self) extends AnyVal {
+      
+      inline def setCredit(value: Credit | String): Self = StObject.set(x, "credit", value.asInstanceOf[js.Any])
+      
+      inline def setCreditUndefined: Self = StObject.set(x, "credit", js.undefined)
+      
+      inline def setEllipsoid(value: Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
+      
+      inline def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
+      
+      inline def setRectangle(value: Rectangle): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
+      
+      inline def setRectangleUndefined: Self = StObject.set(x, "rectangle", js.undefined)
     }
   }
 }

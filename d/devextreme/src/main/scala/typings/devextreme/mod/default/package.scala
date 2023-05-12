@@ -3,16 +3,16 @@ package typings.devextreme.mod.default
 import org.scalablytyped.runtime.StringDictionary
 import typings.devextreme.anon.Compile
 import typings.devextreme.mod.DevExpress.DOMComponent.Properties
+import typings.devextreme.mod.DevExpress.common.GlobalConfig
 import typings.devextreme.mod.DevExpress.core.ComponentFactory
-import typings.devextreme.mod.DevExpress.globalConfig
 import typings.devextreme.mod.default.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def config(): globalConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[globalConfig]
-inline def config(config: globalConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def config(): GlobalConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[GlobalConfig]
+inline def config(config: GlobalConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
 inline def devices: typings.devextreme.mod.DevExpress.DevicesObject = ^.asInstanceOf[js.Dynamic].selectDynamic("devices").asInstanceOf[typings.devextreme.mod.DevExpress.DevicesObject]
 

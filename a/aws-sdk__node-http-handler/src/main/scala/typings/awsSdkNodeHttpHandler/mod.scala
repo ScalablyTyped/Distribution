@@ -10,6 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("@aws-sdk/node-http-handler", "DEFAULT_REQUEST_TIMEOUT")
+  @js.native
+  val DEFAULT_REQUEST_TIMEOUT: /* 0 */ Double = js.native
+  
   @JSImport("@aws-sdk/node-http-handler", "NodeHttp2Handler")
   @js.native
   open class NodeHttp2Handler ()

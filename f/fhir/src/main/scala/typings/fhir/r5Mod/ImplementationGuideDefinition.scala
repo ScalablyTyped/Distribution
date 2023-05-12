@@ -26,7 +26,7 @@ trait ImplementationGuideDefinition
   /**
     * A resource that is part of the implementation guide. Conformance resources (value set, structure definition, capability statements etc.) are obvious candidates for inclusion, but any kind of resource can be included as an example resource.
     */
-  var resource: js.Array[ImplementationGuideDefinitionResource]
+  var resource: js.UndefOr[js.Array[ImplementationGuideDefinitionResource]] = js.undefined
   
   /**
     * A template for building resources.
@@ -35,8 +35,8 @@ trait ImplementationGuideDefinition
 }
 object ImplementationGuideDefinition {
   
-  inline def apply(resource: js.Array[ImplementationGuideDefinitionResource]): ImplementationGuideDefinition = {
-    val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
+  inline def apply(): ImplementationGuideDefinition = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImplementationGuideDefinition]
   }
   
@@ -60,6 +60,8 @@ object ImplementationGuideDefinition {
     inline def setParameterVarargs(value: ImplementationGuideDefinitionParameter*): Self = StObject.set(x, "parameter", js.Array(value*))
     
     inline def setResource(value: js.Array[ImplementationGuideDefinitionResource]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
     inline def setResourceVarargs(value: ImplementationGuideDefinitionResource*): Self = StObject.set(x, "resource", js.Array(value*))
     

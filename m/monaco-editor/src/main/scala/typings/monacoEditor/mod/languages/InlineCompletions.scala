@@ -11,7 +11,14 @@ trait InlineCompletions[TItem /* <: InlineCompletion */] extends StObject {
     */
   val commands: js.UndefOr[js.Array[Command]] = js.undefined
   
+  /**
+    * When set and the user types a suggestion without derivating from it, the inline suggestion is not updated.
+    */
+  val enableForwardStability: js.UndefOr[Boolean] = js.undefined
+  
   val items: js.Array[TItem]
+  
+  val suppressSuggestions: js.UndefOr[Boolean] = js.undefined
 }
 object InlineCompletions {
   
@@ -29,8 +36,16 @@ object InlineCompletions {
     
     inline def setCommandsVarargs(value: Command*): Self = StObject.set(x, "commands", js.Array(value*))
     
+    inline def setEnableForwardStability(value: Boolean): Self = StObject.set(x, "enableForwardStability", value.asInstanceOf[js.Any])
+    
+    inline def setEnableForwardStabilityUndefined: Self = StObject.set(x, "enableForwardStability", js.undefined)
+    
     inline def setItems(value: js.Array[TItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsVarargs(value: TItem*): Self = StObject.set(x, "items", js.Array(value*))
+    
+    inline def setSuppressSuggestions(value: Boolean): Self = StObject.set(x, "suppressSuggestions", value.asInstanceOf[js.Any])
+    
+    inline def setSuppressSuggestionsUndefined: Self = StObject.set(x, "suppressSuggestions", js.undefined)
   }
 }

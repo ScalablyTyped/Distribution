@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VpcConfigResponse extends StObject {
   
   /**
-    * A list of VPC security groups IDs.
+    * A list of VPC security group IDs.
     */
   var SecurityGroupIds: js.UndefOr[typings.awsSdk.clientsLambdaMod.SecurityGroupIds] = js.undefined
   

@@ -469,9 +469,9 @@ object dxChart {
     
     val axis: chartAxisObject
     
-    val previousRange: VizRange
+    val previousRange: typings.devextreme.mod.DevExpress.common.charts.VisualRange
     
-    val range: VizRange
+    val range: typings.devextreme.mod.DevExpress.common.charts.VisualRange
     
     val rangeEnd: js.Date | Double
     
@@ -488,8 +488,8 @@ object dxChart {
       axis: chartAxisObject,
       component: dxChart,
       element: DxElement_[HTMLElement],
-      previousRange: VizRange,
-      range: VizRange,
+      previousRange: typings.devextreme.mod.DevExpress.common.charts.VisualRange,
+      range: typings.devextreme.mod.DevExpress.common.charts.VisualRange,
       rangeEnd: js.Date | Double,
       rangeStart: js.Date | Double,
       shift: Double,
@@ -506,9 +506,9 @@ object dxChart {
       
       inline def setAxis(value: chartAxisObject): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
-      inline def setPreviousRange(value: VizRange): Self = StObject.set(x, "previousRange", value.asInstanceOf[js.Any])
+      inline def setPreviousRange(value: typings.devextreme.mod.DevExpress.common.charts.VisualRange): Self = StObject.set(x, "previousRange", value.asInstanceOf[js.Any])
       
-      inline def setRange(value: VizRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: typings.devextreme.mod.DevExpress.common.charts.VisualRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
       inline def setRangeEnd(value: js.Date | Double): Self = StObject.set(x, "rangeEnd", value.asInstanceOf[js.Any])
       
@@ -529,11 +529,16 @@ object dxChart {
     
     val axis: chartAxisObject
     
-    val range: VizRange
+    val range: typings.devextreme.mod.DevExpress.common.charts.VisualRange
   }
   object ZoomStartEvent {
     
-    inline def apply(axis: chartAxisObject, component: dxChart, element: DxElement_[HTMLElement], range: VizRange): ZoomStartEvent = {
+    inline def apply(
+      axis: chartAxisObject,
+      component: dxChart,
+      element: DxElement_[HTMLElement],
+      range: typings.devextreme.mod.DevExpress.common.charts.VisualRange
+    ): ZoomStartEvent = {
       val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], component = component.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
       __obj.asInstanceOf[ZoomStartEvent]
     }
@@ -547,7 +552,7 @@ object dxChart {
       
       inline def setAxis(value: chartAxisObject): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
-      inline def setRange(value: VizRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: typings.devextreme.mod.DevExpress.common.charts.VisualRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     }
   }
 }

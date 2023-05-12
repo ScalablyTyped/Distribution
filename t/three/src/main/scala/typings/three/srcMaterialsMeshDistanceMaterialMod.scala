@@ -36,11 +36,6 @@ object srcMaterialsMeshDistanceMaterialMod {
     var displacementScale: Double = js.native
     
     /**
-      * @default 1000
-      */
-    var farDistance: Double = js.native
-    
-    /**
       * @default false
       */
     var fog: Boolean = js.native
@@ -49,16 +44,6 @@ object srcMaterialsMeshDistanceMaterialMod {
       * @default null
       */
     var map: Texture | Null = js.native
-    
-    /**
-      * @default 1
-      */
-    var nearDistance: Double = js.native
-    
-    /**
-      * @default new THREE.Vector3()
-      */
-    var referencePosition: Vector3 = js.native
     
     def setValues(parameters: MeshDistanceMaterialParameters): Unit = js.native
   }

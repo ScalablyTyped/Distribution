@@ -1,10 +1,10 @@
 package typings.hyperformula
 
-import typings.hyperformula.anon.CUMIPMT
 import typings.hyperformula.typingsInterpreterInterpreterMod.Interpreter
 import typings.hyperformula.typingsInterpreterInterpreterStateMod.InterpreterState
 import typings.hyperformula.typingsInterpreterInterpreterValueMod.InterpreterValue
 import typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.FunctionPlugin
+import typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.ImplementedFunctions
 import typings.hyperformula.typingsParserAstMod.ProcedureAst
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -81,7 +81,7 @@ object typingsInterpreterPluginFinancialPluginMod {
     
     @JSImport("hyperformula/typings/interpreter/plugin/FinancialPlugin", "FinancialPlugin.implementedFunctions")
     @js.native
-    def implementedFunctions: CUMIPMT = js.native
-    inline def implementedFunctions_=(x: CUMIPMT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("implementedFunctions")(x.asInstanceOf[js.Any])
+    def implementedFunctions: ImplementedFunctions = js.native
+    inline def implementedFunctions_=(x: ImplementedFunctions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("implementedFunctions")(x.asInstanceOf[js.Any])
   }
 }

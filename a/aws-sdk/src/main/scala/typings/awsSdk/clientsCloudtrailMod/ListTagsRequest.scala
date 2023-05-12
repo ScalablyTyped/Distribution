@@ -12,7 +12,7 @@ trait ListTagsRequest extends StObject {
   var NextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies a list of trail and event data store ARNs whose tags will be listed. The list has a limit of 20 ARNs.
+    * Specifies a list of trail, event data store, or channel ARNs whose tags will be listed. The list has a limit of 20 ARNs.
     */
   var ResourceIdList: typings.awsSdk.clientsCloudtrailMod.ResourceIdList
 }

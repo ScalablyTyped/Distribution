@@ -17,6 +17,8 @@ object examplesJsmControlsPointerLockControlsMod {
     def this(camera: Camera) = this()
     def this(camera: Camera, domElement: HTMLElement) = this()
     
+    var camera: Camera = js.native
+    
     def connect(): Unit = js.native
     
     def disconnect(): Unit = js.native
@@ -41,6 +43,8 @@ object examplesJsmControlsPointerLockControlsMod {
     def moveForward(distance: Double): Unit = js.native
     
     def moveRight(distance: Double): Unit = js.native
+    
+    var pointerSpeed: Double = js.native
     
     def unlock(): Unit = js.native
   }

@@ -13,8 +13,6 @@ trait AudioSceneComponent
   
   /* private */ var _audioEnabled: Any = js.native
   
-  /* private */ var _audioListenerPositionProvider: Any = js.native
-  
   /* private */ var _cachedCameraDirection: Any = js.native
   
   /* private */ var _cachedCameraPosition: Any = js.native
@@ -34,14 +32,16 @@ trait AudioSceneComponent
   def audioEnabled: Boolean = js.native
   
   /**
-    * Gets the current audio listener position provider
-    */
-  def audioListenerPositionProvider: Nullable[js.Function0[Vector3]] = js.native
-  /**
-    * Sets a custom listener position for all sounds in the scene
+    * Gets or Sets a custom listener position for all sounds in the scene
     * By default, this is the position of the first active camera
     */
-  def audioListenerPositionProvider_=(value: Nullable[js.Function0[Vector3]]): Unit = js.native
+  var audioListenerPositionProvider: Nullable[js.Function0[Vector3]] = js.native
+  
+  /**
+    * Gets or Sets a custom listener rotation for all sounds in the scene
+    * By default, this is the rotation of the first active camera
+    */
+  var audioListenerRotationProvider: Nullable[js.Function0[Vector3]] = js.native
   
   /**
     * Gets or sets a refresh rate when using 3D audio positioning

@@ -18,28 +18,28 @@ object webContents {
   
   // Docs: https://electronjs.org/docs/api/web-contents
   /**
-    * | undefined - A WebContents instance with the given TargetID, or `undefined` if
-    * there is no WebContents associated with the given TargetID.
+    * A WebContents instance with the given TargetID, or `undefined` if there is no
+    * WebContents associated with the given TargetID.
     *
     * When communicating with the Chrome DevTools Protocol, it can be useful to lookup
     * a WebContents instance based on its assigned TargetID.
     */
   /* static member */
-  inline def fromDevToolsTargetId(targetId: String): typings.electron.Electron.WebContents_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDevToolsTargetId")(targetId.asInstanceOf[js.Any]).asInstanceOf[typings.electron.Electron.WebContents_]
+  inline def fromDevToolsTargetId(targetId: String): js.UndefOr[typings.electron.Electron.WebContents_] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDevToolsTargetId")(targetId.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.electron.Electron.WebContents_]]
   
   /**
-    * | undefined - A WebContents instance with the given WebFrameMain, or `undefined`
-    * if there is no WebContents associated with the given WebFrameMain.
+    * A WebContents instance with the given WebFrameMain, or `undefined` if there is
+    * no WebContents associated with the given WebFrameMain.
     */
   /* static member */
-  inline def fromFrame(frame: typings.electron.Electron.WebFrameMain_): typings.electron.Electron.WebContents_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFrame")(frame.asInstanceOf[js.Any]).asInstanceOf[typings.electron.Electron.WebContents_]
+  inline def fromFrame(frame: typings.electron.Electron.WebFrameMain_): js.UndefOr[typings.electron.Electron.WebContents_] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFrame")(frame.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.electron.Electron.WebContents_]]
   
   /**
-    * | undefined - A WebContents instance with the given ID, or `undefined` if there
-    * is no WebContents associated with the given ID.
+    * A WebContents instance with the given ID, or `undefined` if there is no
+    * WebContents associated with the given ID.
     */
   /* static member */
-  inline def fromId(id: Double): typings.electron.Electron.WebContents_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromId")(id.asInstanceOf[js.Any]).asInstanceOf[typings.electron.Electron.WebContents_]
+  inline def fromId(id: Double): js.UndefOr[typings.electron.Electron.WebContents_] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromId")(id.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.electron.Electron.WebContents_]]
   
   /**
     * An array of all `WebContents` instances. This will contain web contents for all
@@ -49,9 +49,8 @@ object webContents {
   inline def getAllWebContents(): js.Array[typings.electron.Electron.WebContents_] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllWebContents")().asInstanceOf[js.Array[typings.electron.Electron.WebContents_]]
   
   /**
-    * | null - The web contents that is focused in this application, otherwise returns
-    * `null`.
+    * The web contents that is focused in this application, otherwise returns `null`.
     */
   /* static member */
-  inline def getFocusedWebContents(): typings.electron.Electron.WebContents_ = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusedWebContents")().asInstanceOf[typings.electron.Electron.WebContents_]
+  inline def getFocusedWebContents(): typings.electron.Electron.WebContents_ | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusedWebContents")().asInstanceOf[typings.electron.Electron.WebContents_ | Null]
 }

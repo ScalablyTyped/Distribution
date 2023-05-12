@@ -14,7 +14,7 @@ trait UpdateDashboardPermissionsRequest extends StObject {
   /**
     * The ID for the dashboard.
     */
-  var DashboardId: RestrictiveResourceId
+  var DashboardId: ShortRestrictiveResourceId
   
   /**
     * Grants link permissions to all users in a defined namespace.
@@ -38,7 +38,7 @@ trait UpdateDashboardPermissionsRequest extends StObject {
 }
 object UpdateDashboardPermissionsRequest {
   
-  inline def apply(AwsAccountId: AwsAccountId, DashboardId: RestrictiveResourceId): UpdateDashboardPermissionsRequest = {
+  inline def apply(AwsAccountId: AwsAccountId, DashboardId: ShortRestrictiveResourceId): UpdateDashboardPermissionsRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], DashboardId = DashboardId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDashboardPermissionsRequest]
   }
@@ -48,7 +48,7 @@ object UpdateDashboardPermissionsRequest {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    inline def setDashboardId(value: RestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
+    inline def setDashboardId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
     
     inline def setGrantLinkPermissions(value: UpdateLinkPermissionList): Self = StObject.set(x, "GrantLinkPermissions", value.asInstanceOf[js.Any])
     

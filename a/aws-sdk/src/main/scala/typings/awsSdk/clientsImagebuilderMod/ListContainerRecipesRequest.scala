@@ -12,12 +12,12 @@ trait ListContainerRecipesRequest extends StObject {
   var filters: js.UndefOr[FilterList] = js.undefined
   
   /**
-    * The maximum number of results to return in the list.
+    * The maximum items to return in a request.
     */
   var maxResults: js.UndefOr[RestrictedInteger] = js.undefined
   
   /**
-    * Provides a token for pagination, which determines where to begin the next set of results when the current set reaches the maximum for one request.
+    * A token to specify where to start paginating. This is the NextToken from a previously truncated response.
     */
   var nextToken: js.UndefOr[NonEmptyString] = js.undefined
   

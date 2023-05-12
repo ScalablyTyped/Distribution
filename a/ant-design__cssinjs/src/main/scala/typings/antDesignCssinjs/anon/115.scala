@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.Color
+import typings.csstype.mod.Property.MozImageRegion
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `115` extends StObject {
   
   var value: js.UndefOr[
-    Color | (js.Array[
-      (Extract[js.UndefOr[Color | js.Array[NonNullable[js.UndefOr[Color]]]], String]) | NonNullable[js.UndefOr[Color]]
+    MozImageRegion | (js.Array[
+      (Extract[
+        js.UndefOr[MozImageRegion | js.Array[NonNullable[js.UndefOr[MozImageRegion]]]], 
+        String
+      ]) | NonNullable[js.UndefOr[MozImageRegion]]
     ])
   ] = js.native
 }

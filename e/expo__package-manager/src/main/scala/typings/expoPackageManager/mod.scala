@@ -1,14 +1,14 @@
 package typings.expoPackageManager
 
 import typings.expoPackageManager.anon.Cwd
-import typings.expoPackageManager.anon.Log
 import typings.expoPackageManager.anon.Message
 import typings.expoPackageManager.anon.NonInteractive
 import typings.expoPackageManager.anon.PickSpawnOptionscwd
 import typings.expoPackageManager.anon.ShouldUpdateRepo
-import typings.expoPackageManager.buildCocoaPodsPackageManagerMod.CocoaPodsErrorCode
-import typings.expoPackageManager.buildNodePackageManagersMod.CreateForProjectOptions
-import typings.expoPackageManager.buildNodePackageManagersMod.NodePackageManager
+import typings.expoPackageManager.buildIosCocoaPodsPackageManagerMod.CocoaPodsErrorCode
+import typings.expoPackageManager.buildPackageManagerMod.PackageManagerOptions
+import typings.expoPackageManager.buildUtilsNodeManagersMod.NodePackageManager
+import typings.expoPackageManager.buildUtilsNodeManagersMod.NodePackageManagerForProject
 import typings.expoSpawnAsync.mod.SpawnOptions
 import typings.expoSpawnAsync.mod.SpawnResult
 import org.scalablytyped.runtime.StObject
@@ -24,7 +24,7 @@ object mod {
   @JSImport("@expo/package-manager", "CocoaPodsError")
   @js.native
   open class CocoaPodsError protected ()
-    extends typings.expoPackageManager.buildCocoaPodsPackageManagerMod.CocoaPodsError {
+    extends typings.expoPackageManager.buildIosCocoaPodsPackageManagerMod.CocoaPodsError {
     def this(message: String, code: CocoaPodsErrorCode) = this()
     def this(message: String, code: CocoaPodsErrorCode, cause: js.Error) = this()
   }
@@ -32,7 +32,7 @@ object mod {
   @JSImport("@expo/package-manager", "CocoaPodsPackageManager")
   @js.native
   open class CocoaPodsPackageManager protected ()
-    extends typings.expoPackageManager.buildCocoaPodsPackageManagerMod.CocoaPodsPackageManager {
+    extends typings.expoPackageManager.buildIosCocoaPodsPackageManagerMod.CocoaPodsPackageManager {
     def this(param0: Cwd) = this()
   }
   /* static members */
@@ -65,32 +65,15 @@ object mod {
     inline def isUsingPods(projectRoot: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUsingPods")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
-  object DISABLE_ADS_ENV {
-    
-    @JSImport("@expo/package-manager", "DISABLE_ADS_ENV")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("@expo/package-manager", "DISABLE_ADS_ENV.ADBLOCK")
-    @js.native
-    def ADBLOCK: String = js.native
-    inline def ADBLOCK_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ADBLOCK")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@expo/package-manager", "DISABLE_ADS_ENV.DISABLE_OPENCOLLECTIVE")
-    @js.native
-    def DISABLE_OPENCOLLECTIVE: String = js.native
-    inline def DISABLE_OPENCOLLECTIVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISABLE_OPENCOLLECTIVE")(x.asInstanceOf[js.Any])
-  }
-  
   @JSImport("@expo/package-manager", "NPM_LOCK_FILE")
   @js.native
   val NPM_LOCK_FILE: /* "package-lock.json" */ String = js.native
   
   @JSImport("@expo/package-manager", "NpmPackageManager")
   @js.native
-  open class NpmPackageManager protected ()
-    extends typings.expoPackageManager.buildNodePackageManagersMod.NpmPackageManager {
-    def this(param0: Log) = this()
+  open class NpmPackageManager ()
+    extends typings.expoPackageManager.buildNodeNpmPackageManagerMod.NpmPackageManager {
+    def this(param0: PackageManagerOptions) = this()
   }
   
   @JSImport("@expo/package-manager", "PNPM_LOCK_FILE")
@@ -103,10 +86,14 @@ object mod {
   
   @JSImport("@expo/package-manager", "PnpmPackageManager")
   @js.native
-  open class PnpmPackageManager protected ()
-    extends typings.expoPackageManager.buildPnpmPackageManagerMod.PnpmPackageManager {
-    def this(param0: Log) = this()
+  open class PnpmPackageManager ()
+    extends typings.expoPackageManager.buildNodePnpmPackageManagerMod.PnpmPackageManager {
+    def this(param0: PackageManagerOptions) = this()
   }
+  
+  @JSImport("@expo/package-manager", "RESOLUTION_ORDER")
+  @js.native
+  val RESOLUTION_ORDER: js.Array[/* "npm" */ String] = js.native
   
   @JSImport("@expo/package-manager", "YARN_LOCK_FILE")
   @js.native
@@ -114,45 +101,31 @@ object mod {
   
   @JSImport("@expo/package-manager", "YarnPackageManager")
   @js.native
-  open class YarnPackageManager protected ()
-    extends typings.expoPackageManager.buildNodePackageManagersMod.YarnPackageManager {
-    def this(param0: Log) = this()
+  open class YarnPackageManager ()
+    extends typings.expoPackageManager.buildNodeYarnPackageManagerMod.YarnPackageManager {
+    def this(param0: PackageManagerOptions) = this()
   }
   
-  inline def createForProject(projectRoot: String): typings.expoPackageManager.buildNodePackageManagersMod.NpmPackageManager | typings.expoPackageManager.buildNodePackageManagersMod.YarnPackageManager | typings.expoPackageManager.buildPnpmPackageManagerMod.PnpmPackageManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createForProject")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[typings.expoPackageManager.buildNodePackageManagersMod.NpmPackageManager | typings.expoPackageManager.buildNodePackageManagersMod.YarnPackageManager | typings.expoPackageManager.buildPnpmPackageManagerMod.PnpmPackageManager]
-  inline def createForProject(projectRoot: String, options: CreateForProjectOptions): typings.expoPackageManager.buildNodePackageManagersMod.NpmPackageManager | typings.expoPackageManager.buildNodePackageManagersMod.YarnPackageManager | typings.expoPackageManager.buildPnpmPackageManagerMod.PnpmPackageManager = (^.asInstanceOf[js.Dynamic].applyDynamic("createForProject")(projectRoot.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.expoPackageManager.buildNodePackageManagersMod.NpmPackageManager | typings.expoPackageManager.buildNodePackageManagersMod.YarnPackageManager | typings.expoPackageManager.buildPnpmPackageManagerMod.PnpmPackageManager]
+  inline def createForProject(projectRoot: String): NodePackageManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createForProject")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[NodePackageManager]
+  inline def createForProject(projectRoot: String, options: NodePackageManagerForProject): NodePackageManager = (^.asInstanceOf[js.Dynamic].applyDynamic("createForProject")(projectRoot.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[NodePackageManager]
   
   inline def extractMissingDependencyError(errorOutput: String): (js.Tuple2[String, String]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("extractMissingDependencyError")(errorOutput.asInstanceOf[js.Any]).asInstanceOf[(js.Tuple2[String, String]) | Null]
   
-  inline def findWorkspaceRoot(projectRoot: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findWorkspaceRoot")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[String | Null]
-  inline def findWorkspaceRoot(projectRoot: String, packageManager: NodePackageManager): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findWorkspaceRoot")(projectRoot.asInstanceOf[js.Any], packageManager.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def findPnpmWorkspaceRoot(projectRoot: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findPnpmWorkspaceRoot")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  inline def findYarnOrNpmWorkspaceRootSafe(projectRoot: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findYarnOrNpmWorkspaceRootSafe")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def findWorkspaceRoot(projectRoot: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findWorkspaceRoot")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def findWorkspaceRoot(projectRoot: String, preferredManager: /* "npm" */ String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findWorkspaceRoot")(projectRoot.asInstanceOf[js.Any], preferredManager.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  
+  inline def findYarnOrNpmWorkspaceRoot(projectRoot: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findYarnOrNpmWorkspaceRoot")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   inline def getImprovedPodInstallError(error: SpawnResult & js.Error, param1: PickSpawnOptionscwd): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getImprovedPodInstallError")(error.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Error]
-  
-  inline def getModulesPath(projectRoot: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getModulesPath")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def getPodRepoUpdateMessage(errorOutput: String): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("getPodRepoUpdateMessage")(errorOutput.asInstanceOf[js.Any]).asInstanceOf[Message]
   
   inline def getPodUpdateMessage(output: String): ShouldUpdateRepo = ^.asInstanceOf[js.Dynamic].applyDynamic("getPodUpdateMessage")(output.asInstanceOf[js.Any]).asInstanceOf[ShouldUpdateRepo]
   
-  inline def getPossibleProjectRoot(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPossibleProjectRoot")().asInstanceOf[String]
-  
-  inline def isUsingNpm(projectRoot: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUsingNpm")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
-  inline def isUsingYarn(projectRoot: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUsingYarn")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
   inline def isYarnOfflineAsync(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isYarnOfflineAsync")().asInstanceOf[js.Promise[Boolean]]
   
-  @JSImport("@expo/package-manager", "managerResolutionOrder")
-  @js.native
-  val managerResolutionOrder: js.Array[NodePackageManager] = js.native
-  
-  inline def resolvePackageManager(projectRoot: String): NodePackageManager | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvePackageManager")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[NodePackageManager | Null]
-  inline def resolvePackageManager(projectRoot: String, packageManager: NodePackageManager): NodePackageManager | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePackageManager")(projectRoot.asInstanceOf[js.Any], packageManager.asInstanceOf[js.Any])).asInstanceOf[NodePackageManager | Null]
-  
-  inline def shouldUseYarn(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldUseYarn")().asInstanceOf[Boolean]
-  
-  inline def spawnSudoAsync(command: js.Array[String], spawnOptions: SpawnOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawnSudoAsync")(command.asInstanceOf[js.Any], spawnOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def resolvePackageManager(projectRoot: String): (/* "npm" */ String) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvePackageManager")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[(/* "npm" */ String) | Null]
+  inline def resolvePackageManager(projectRoot: String, preferredManager: /* "npm" */ String): (/* "npm" */ String) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePackageManager")(projectRoot.asInstanceOf[js.Any], preferredManager.asInstanceOf[js.Any])).asInstanceOf[(/* "npm" */ String) | Null]
 }

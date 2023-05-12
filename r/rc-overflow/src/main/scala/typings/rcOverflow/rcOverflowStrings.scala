@@ -116,6 +116,12 @@ object rcOverflowStrings {
   inline def caption: caption = "caption".asInstanceOf[caption]
   
   @js.native
+  sealed trait center
+    extends StObject
+       with _ComponentType
+  inline def center: center = "center".asInstanceOf[center]
+  
+  @js.native
   sealed trait cite
     extends StObject
        with _ComponentType

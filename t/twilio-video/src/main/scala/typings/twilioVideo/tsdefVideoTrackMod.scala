@@ -1,14 +1,10 @@
 package typings.twilioVideo
 
-import typings.std.HTMLMediaElement
-import typings.std.HTMLVideoElement
 import typings.std.MediaStreamTrack
-import typings.twilioVideo.tsdefTrackMod.Track
+import typings.twilioVideo.tsdefMediaTrackMod.MediaTrack
+import typings.twilioVideo.tsdefTypesMod.AddProcessorOptions
 import typings.twilioVideo.tsdefVideoProcessorMod.VideoProcessor
 import typings.twilioVideo.tsdefVideoTrackMod.VideoTrack.Dimensions
-import typings.twilioVideo.twilioVideoStrings.disabled
-import typings.twilioVideo.twilioVideoStrings.enabled
-import typings.twilioVideo.twilioVideoStrings.started
 import typings.twilioVideo.twilioVideoStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,36 +14,15 @@ object tsdefVideoTrackMod {
   
   @JSImport("twilio-video/tsdef/VideoTrack", "VideoTrack")
   @js.native
-  open class VideoTrack () extends Track {
+  open class VideoTrack () extends MediaTrack {
     
     def addProcessor(processor: VideoProcessor): this.type = js.native
-    
-    def attach(): HTMLVideoElement = js.native
-    def attach(element: String): HTMLVideoElement = js.native
-    def attach(element: HTMLMediaElement): HTMLVideoElement = js.native
-    
-    def detach(): js.Array[HTMLVideoElement] = js.native
-    def detach(element: String): js.Array[HTMLVideoElement] = js.native
-    def detach(element: HTMLMediaElement): js.Array[HTMLVideoElement] = js.native
+    def addProcessor(processor: VideoProcessor, options: AddProcessorOptions): this.type = js.native
     
     var dimensions: Dimensions = js.native
     
-    var isEnabled: Boolean = js.native
-    
-    var isStarted: Boolean = js.native
-    
     @JSName("kind")
     var kind_VideoTrack: video = js.native
-    
-    var mediaStreamTrack: MediaStreamTrack = js.native
-    
-    def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    @JSName("on")
-    def on_disabled(event: disabled, listener: js.Function1[/* track */ this.type, Unit]): this.type = js.native
-    @JSName("on")
-    def on_enabled(event: enabled, listener: js.Function1[/* track */ this.type, Unit]): this.type = js.native
-    @JSName("on")
-    def on_started(event: started, listener: js.Function1[/* track */ this.type, Unit]): this.type = js.native
     
     var processedTrack: MediaStreamTrack | Null = js.native
     

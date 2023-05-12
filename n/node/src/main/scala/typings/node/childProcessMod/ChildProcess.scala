@@ -53,7 +53,7 @@ open class ChildProcess () extends StObject {
   
   /**
     * The `subprocess.channel` property is a reference to the child's IPC channel. If
-    * no IPC channel currently exists, this property is `undefined`.
+    * no IPC channel exists, this property is `undefined`.
     * @since v7.1.0
     */
   val channel: js.UndefOr[Pipe | Null] = js.native
@@ -121,7 +121,7 @@ open class ChildProcess () extends StObject {
     * returns `true` if [`kill(2)`](http://man7.org/linux/man-pages/man2/kill.2.html) succeeds, and `false` otherwise.
     *
     * ```js
-    * const { spawn } = require('child_process');
+    * const { spawn } = require('node:child_process');
     * const grep = spawn('grep', ['ssh']);
     *
     * grep.on('close', (code, signal) => {
@@ -154,7 +154,7 @@ open class ChildProcess () extends StObject {
     *
     * ```js
     * 'use strict';
-    * const { spawn } = require('child_process');
+    * const { spawn } = require('node:child_process');
     *
     * const subprocess = spawn(
     *   'sh',
@@ -164,8 +164,8 @@ open class ChildProcess () extends StObject {
     *       console.log(process.pid, 'is alive')
     *     }, 500);"`,
     *   ], {
-    *     stdio: ['inherit', 'inherit', 'inherit']
-    *   }
+    *     stdio: ['inherit', 'inherit', 'inherit'],
+    *   },
     * );
     *
     * setTimeout(() => {
@@ -226,7 +226,7 @@ open class ChildProcess () extends StObject {
     * emitted.
     *
     * ```js
-    * const { spawn } = require('child_process');
+    * const { spawn } = require('node:child_process');
     * const grep = spawn('grep', ['ssh']);
     *
     * console.log(`Spawned child pid: ${grep.pid}`);
@@ -276,11 +276,11 @@ open class ChildProcess () extends StObject {
     * to wait for the child to exit before exiting itself.
     *
     * ```js
-    * const { spawn } = require('child_process');
+    * const { spawn } = require('node:child_process');
     *
     * const subprocess = spawn(process.argv[0], ['child_program.js'], {
     *   detached: true,
-    *   stdio: 'ignore'
+    *   stdio: 'ignore',
     * });
     *
     * subprocess.unref();
@@ -302,7 +302,7 @@ open class ChildProcess () extends StObject {
     * For example, in the parent script:
     *
     * ```js
-    * const cp = require('child_process');
+    * const cp = require('node:child_process');
     * const n = cp.fork(`${__dirname}/sub.js`);
     *
     * n.on('message', (m) => {
@@ -356,10 +356,10 @@ open class ChildProcess () extends StObject {
     * a TCP server object to the child process as illustrated in the example below:
     *
     * ```js
-    * const subprocess = require('child_process').fork('subprocess.js');
+    * const subprocess = require('node:child_process').fork('subprocess.js');
     *
     * // Open up the server object and send the handle.
-    * const server = require('net').createServer();
+    * const server = require('node:net').createServer();
     * server.on('connection', (socket) => {
     *   socket.end('handled by parent');
     * });
@@ -383,10 +383,9 @@ open class ChildProcess () extends StObject {
     * Once the server is now shared between the parent and child, some connections
     * can be handled by the parent and some by the child.
     *
-    * While the example above uses a server created using the `net` module, `dgram`module servers use exactly the same workflow with the exceptions of listening on
-    * a `'message'` event instead of `'connection'` and using `server.bind()` instead
-    * of `server.listen()`. This is, however, currently only supported on Unix
-    * platforms.
+    * While the example above uses a server created using the `node:net` module,`node:dgram` module servers use exactly the same workflow with the exceptions of
+    * listening on a `'message'` event instead of `'connection'` and using`server.bind()` instead of `server.listen()`. This is, however, only
+    * supported on Unix platforms.
     *
     * #### Example: sending a socket object
     *
@@ -395,13 +394,13 @@ open class ChildProcess () extends StObject {
     * handle connections with "normal" or "special" priority:
     *
     * ```js
-    * const { fork } = require('child_process');
+    * const { fork } = require('node:child_process');
     * const normal = fork('subprocess.js', ['normal']);
     * const special = fork('subprocess.js', ['special']);
     *
     * // Open up the server and send sockets to child. Use pauseOnConnect to prevent
     * // the sockets from being read before they are sent to the child process.
-    * const server = require('net').createServer({ pauseOnConnect: true });
+    * const server = require('node:net').createServer({ pauseOnConnect: true });
     * server.on('connection', (socket) => {
     *
     *   // If this is special priority...
@@ -509,8 +508,7 @@ open class ChildProcess () extends StObject {
     * `subprocess.stderr` is an alias for `subprocess.stdio[2]`. Both properties will
     * refer to the same value.
     *
-    * The `subprocess.stderr` property can be `null` if the child process could
-    * not be successfully spawned.
+    * The `subprocess.stderr` property can be `null` or `undefined`if the child process could not be successfully spawned.
     * @since v0.1.90
     */
   var stderr: Readable | Null = js.native
@@ -527,8 +525,7 @@ open class ChildProcess () extends StObject {
     * `subprocess.stdin` is an alias for `subprocess.stdio[0]`. Both properties will
     * refer to the same value.
     *
-    * The `subprocess.stdin` property can be `undefined` if the child process could
-    * not be successfully spawned.
+    * The `subprocess.stdin` property can be `null` or `undefined`if the child process could not be successfully spawned.
     * @since v0.1.90
     */
   var stdin: Writable | Null = js.native
@@ -544,16 +541,16 @@ open class ChildProcess () extends StObject {
     * in the array are `null`.
     *
     * ```js
-    * const assert = require('assert');
-    * const fs = require('fs');
-    * const child_process = require('child_process');
+    * const assert = require('node:assert');
+    * const fs = require('node:fs');
+    * const child_process = require('node:child_process');
     *
     * const subprocess = child_process.spawn('ls', {
     *   stdio: [
     *     0, // Use parent's stdin for child.
     *     'pipe', // Pipe child's stdout to parent.
     *     fs.openSync('err.out', 'w'), // Direct child's stderr to a file.
-    *   ]
+    *   ],
     * });
     *
     * assert.strictEqual(subprocess.stdio[0], null);
@@ -592,7 +589,7 @@ open class ChildProcess () extends StObject {
     * refer to the same value.
     *
     * ```js
-    * const { spawn } = require('child_process');
+    * const { spawn } = require('node:child_process');
     *
     * const subprocess = spawn('ls');
     *
@@ -601,8 +598,7 @@ open class ChildProcess () extends StObject {
     * });
     * ```
     *
-    * The `subprocess.stdout` property can be `null` if the child process could
-    * not be successfully spawned.
+    * The `subprocess.stdout` property can be `null` or `undefined`if the child process could not be successfully spawned.
     * @since v0.1.90
     */
   var stdout: Readable | Null = js.native
@@ -615,11 +611,11 @@ open class ChildProcess () extends StObject {
     * the child and the parent.
     *
     * ```js
-    * const { spawn } = require('child_process');
+    * const { spawn } = require('node:child_process');
     *
     * const subprocess = spawn(process.argv[0], ['child_program.js'], {
     *   detached: true,
-    *   stdio: 'ignore'
+    *   stdio: 'ignore',
     * });
     *
     * subprocess.unref();

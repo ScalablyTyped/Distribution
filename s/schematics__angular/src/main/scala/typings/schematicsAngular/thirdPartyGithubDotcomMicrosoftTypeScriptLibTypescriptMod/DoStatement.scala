@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DoStatement
   extends StObject
      with IterationStatement
+     with FlowContainer
      with HasJSDoc {
   
   val expression: Expression = js.native

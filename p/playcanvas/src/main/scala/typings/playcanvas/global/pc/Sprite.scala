@@ -19,7 +19,8 @@ open class Sprite protected ()
   /**
     * Create a new Sprite instance.
     *
-    * @param {GraphicsDevice} device - The graphics device of the application.
+    * @param {import('../platform/graphics/graphics-device.js').GraphicsDevice} device - The
+    * graphics device of the application.
     * @param {object} [options] - Options for creating the Sprite.
     * @param {number} [options.pixelsPerUnit] - The number of pixels that map to one PlayCanvas
     * unit. Defaults to 1.
@@ -30,7 +31,8 @@ open class Sprite protected ()
     * - {@link SPRITE_RENDERMODE_TILED}
     *
     * Defaults to {@link SPRITE_RENDERMODE_SIMPLE}.
-    * @param {TextureAtlas} [options.atlas] - The texture atlas. Defaults to null.
+    * @param {import('./texture-atlas.js').TextureAtlas} [options.atlas] - The texture atlas.
+    * Defaults to null.
     * @param {string[]} [options.frameKeys] - The keys of the frames in the sprite atlas that this
     * sprite is using. Defaults to null.
     */

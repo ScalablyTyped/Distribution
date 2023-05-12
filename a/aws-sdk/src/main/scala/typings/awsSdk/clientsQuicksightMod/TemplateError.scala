@@ -15,6 +15,11 @@ trait TemplateError extends StObject {
     * Type of error.
     */
   var Type: js.UndefOr[TemplateErrorType] = js.undefined
+  
+  /**
+    * An error path that shows which entities caused the template error.
+    */
+  var ViolatedEntities: js.UndefOr[EntityList] = js.undefined
 }
 object TemplateError {
   
@@ -33,5 +38,11 @@ object TemplateError {
     inline def setType(value: TemplateErrorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    
+    inline def setViolatedEntities(value: EntityList): Self = StObject.set(x, "ViolatedEntities", value.asInstanceOf[js.Any])
+    
+    inline def setViolatedEntitiesUndefined: Self = StObject.set(x, "ViolatedEntities", js.undefined)
+    
+    inline def setViolatedEntitiesVarargs(value: Entity*): Self = StObject.set(x, "ViolatedEntities", js.Array(value*))
   }
 }

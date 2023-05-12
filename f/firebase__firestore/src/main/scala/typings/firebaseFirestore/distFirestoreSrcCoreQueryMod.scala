@@ -1,9 +1,8 @@
 package typings.firebaseFirestore
 
-import typings.firebaseFirestore.distFirestoreSrcCoreTargetMod.Bound
-import typings.firebaseFirestore.distFirestoreSrcCoreTargetMod.Filter
-import typings.firebaseFirestore.distFirestoreSrcCoreTargetMod.Operator
-import typings.firebaseFirestore.distFirestoreSrcCoreTargetMod.OrderBy
+import typings.firebaseFirestore.distFirestoreSrcCoreBoundMod.Bound
+import typings.firebaseFirestore.distFirestoreSrcCoreFilterMod.Filter
+import typings.firebaseFirestore.distFirestoreSrcCoreOrderByMod.OrderBy
 import typings.firebaseFirestore.distFirestoreSrcCoreTargetMod.Target
 import typings.firebaseFirestore.distFirestoreSrcModelDocumentMod.Document
 import typings.firebaseFirestore.distFirestoreSrcModelPathMod.FieldPath
@@ -74,8 +73,6 @@ object distFirestoreSrcCoreQueryMod {
   inline def canonifyQuery(query: Query): String = ^.asInstanceOf[js.Dynamic].applyDynamic("canonifyQuery")(query.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def compareDocs(orderBy: OrderBy, d1: Document, d2: Document): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareDocs")(orderBy.asInstanceOf[js.Any], d1.asInstanceOf[js.Any], d2.asInstanceOf[js.Any])).asInstanceOf[Double]
-  
-  inline def findFilterOperator(query: Query, operators: js.Array[Operator]): Operator | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findFilterOperator")(query.asInstanceOf[js.Any], operators.asInstanceOf[js.Any])).asInstanceOf[Operator | Null]
   
   inline def getFirstOrderByField(query: Query): FieldPath | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstOrderByField")(query.asInstanceOf[js.Any]).asInstanceOf[FieldPath | Null]
   

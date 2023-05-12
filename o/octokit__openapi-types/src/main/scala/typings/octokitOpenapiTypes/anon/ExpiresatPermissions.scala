@@ -1,8 +1,8 @@
 package typings.octokitOpenapiTypes.anon
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.all
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.selected
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +22,7 @@ trait ExpiresatPermissions extends StObject {
     *   "deployments": "write"
     * }
     */
-  var permissions: js.UndefOr[StringDictionary[Any]] = js.undefined
+  var permissions: js.UndefOr[Record[String, scala.Nothing]] = js.undefined
   
   /** @description The repositories this token has access to */
   var repositories: js.UndefOr[
@@ -58,7 +58,7 @@ object ExpiresatPermissions {
     
     inline def setExpires_at(value: String): Self = StObject.set(x, "expires_at", value.asInstanceOf[js.Any])
     
-    inline def setPermissions(value: StringDictionary[Any]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: Record[String, scala.Nothing]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     

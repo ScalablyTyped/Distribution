@@ -1,5 +1,7 @@
 package typings.highcharts.mod
 
+import typings.highcharts.highchartsInts.`0`
+import typings.highcharts.highchartsInts.`100`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,28 +39,6 @@ trait PlotFlagsOptions extends StObject {
   var allowPointSelect: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highstock) Enable or disable the initial animation when a series is
-    * displayed. The animation can also be set as a configuration object.
-    * Please note that this option only applies to the initial animation of the
-    * series itself. For other animations, see chart.animation and the
-    * animation parameter under the API methods. The following properties are
-    * supported:
-    *
-    * - `defer`: The animation delay time in milliseconds.
-    *
-    * - `duration`: The duration of the animation in milliseconds. (Defaults to
-    * `1000`)
-    *
-    * - `easing`: Can be a string reference to an easing function set on the
-    * `Math` object or a function. See the _Custom easing function_ demo below.
-    * (Defaults to `easeInOutSine`)
-    *
-    * Due to poor performance, animation is disabled in old IE browsers for
-    * several chart types.
-    */
-  var animation: js.UndefOr[Boolean | AnimationOptionsObject] = js.undefined
-  
-  /**
     * (Highstock) For some series, there is a limit that shuts down animation
     * by default when the total number of points in the chart is too high. For
     * example, for a column chart and its derivatives, animation does not run
@@ -72,7 +52,7 @@ trait PlotFlagsOptions extends StObject {
   /**
     * (Highstock) Sets the color blending in the boost module.
     */
-  var boostBlending: js.UndefOr[String] = js.undefined
+  var boostBlending: js.UndefOr[OptionsBoostBlendingValue] = js.undefined
   
   /**
     * (Highstock) Set the point threshold for when a series should enter boost
@@ -92,32 +72,6 @@ trait PlotFlagsOptions extends StObject {
   var boostThreshold: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Gantt) The color of the border surrounding each
-    * column or bar.
-    *
-    * In styled mode, the border stroke can be set with the `.highcharts-point`
-    * rule.
-    */
-  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock, Gantt) The corner radius of the border
-    * surrounding each column or bar.
-    */
-  var borderRadius: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock, Gantt) The width of the border surrounding each
-    * column or bar. Defaults to `1` when there is room for a border, but to
-    * `0` when the columns are so dense that a border would cover the next
-    * column.
-    *
-    * In styled mode, the stroke width can be set with the `.highcharts-point`
-    * rule.
-    */
-  var borderWidth: js.UndefOr[Double] = js.undefined
-  
-  /**
     * (Highcharts, Highstock, Gantt) When `true`, the columns will center in
     * the category, ignoring null or missing points. When `false`, space will
     * be reserved for null or missing points.
@@ -127,7 +81,8 @@ trait PlotFlagsOptions extends StObject {
   /**
     * (Highstock) An additional class name to apply to the series' graphical
     * elements. This option does not replace default class names of the
-    * graphical element.
+    * graphical element. Changes to the series' color will also be reflected in
+    * a chart's legend and tooltip.
     */
   var className: js.UndefOr[String] = js.undefined
   
@@ -166,21 +121,12 @@ trait PlotFlagsOptions extends StObject {
   var colorAxis: js.UndefOr[Boolean | Double | String] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Gantt) When using automatic point colors pulled
-    * from the global colors or series-specific plotOptions.column.colors
-    * collections, this option determines whether the chart should receive one
-    * color per series or one color per point.
-    *
-    * In styled mode, the `colors` or `series.colors` arrays are not supported,
-    * and instead this option gives the points individual color class names on
-    * the form `highcharts-color-{n}`.
-    */
-  var colorByPoint: js.UndefOr[Boolean] = js.undefined
-  
-  /**
     * (Highstock) Styled mode only. A specific color index to use for the
     * series, so its graphic representations are given the class name
     * `highcharts-color-{n}`.
+    *
+    * Since v11, CSS variables on the form `--highcharts-color-{n}` make
+    * changing the color scheme very convenient.
     */
   var colorIndex: js.UndefOr[Double] = js.undefined
   
@@ -207,13 +153,13 @@ trait PlotFlagsOptions extends StObject {
     * the development of the series against each other. Adds a `change` field
     * to every point object.
     */
-  var compare: js.UndefOr[String] = js.undefined
+  var compare: js.UndefOr[OptionsCompareValue] = js.undefined
   
   /**
     * (Highstock) When compare is `percent`, this option dictates whether to
     * use 0 or 100 as the base of comparison.
     */
-  var compareBase: js.UndefOr[Double] = js.undefined
+  var compareBase: js.UndefOr[`0` | `100`] = js.undefined
   
   /**
     * (Highstock) Defines if comparison should start from the first point
@@ -225,19 +171,6 @@ trait PlotFlagsOptions extends StObject {
     * calculated according to the previous point (`compareStart=false`).
     */
   var compareStart: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * (Highcharts) Polar charts only. Whether to connect the ends of a line
-    * series plot across the extremes.
-    */
-  var connectEnds: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock) Whether to connect a graph line across null
-    * points, or render a gap between the two points on either side of the
-    * null.
-    */
-  var connectNulls: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Gantt) Override Pathfinder connector options for a series. Requires
@@ -254,18 +187,6 @@ trait PlotFlagsOptions extends StObject {
     * column is rendered blurry.
     */
   var crisp: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock, Gantt) When the series contains less points than
-    * the crop threshold, all points are drawn, event if the points fall
-    * outside the visible plot area at the current zoom. The advantage of
-    * drawing all points (including markers and columns), is that animation is
-    * performed on updates. On the other hand, when the series contains more
-    * points than the crop threshold, the series data is cropped to only
-    * contain points that fall within the plot area. The advantage of cropping
-    * away invisible points is to increase performance on large series.
-    */
-  var cropThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) Cumulative Sum feature replaces points' values with the
@@ -301,27 +222,6 @@ trait PlotFlagsOptions extends StObject {
     * listed under series.color.
     */
   var dashStyle: js.UndefOr[DashStyleValue] = js.undefined
-  
-  /**
-    * (Highstock) Indicates data is structured as columns instead of rows.
-    */
-  var dataAsColumns: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * (Highstock) Data grouping is the concept of sampling the data values into
-    * larger blocks in order to ease readability and increase performance of
-    * the JavaScript charts. Highcharts Stock by default applies data grouping
-    * when the points become closer than a certain pixel value, determined by
-    * the `groupPixelWidth` option.
-    *
-    * If data grouping is applied, the grouping information of grouped points
-    * can be read from the Point.dataGroup. If point options other than the
-    * data itself are set, for example `name` or `color` or custom properties,
-    * the grouping logic doesn't know how to group it. In this case the options
-    * of the first point instance are copied over to the group point. This can
-    * be altered through a custom `approximation` callback function.
-    */
-  var dataGrouping: js.UndefOr[DataGroupingOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for the series data
@@ -400,38 +300,7 @@ trait PlotFlagsOptions extends StObject {
     * Applies only to series types using nearest neighbor search (not direct
     * hover) for tooltip.
     */
-  var findNearestPointBy: js.UndefOr[String] = js.undefined
-  
-  /**
-    * (Highstock) Defines when to display a gap in the graph, together with the
-    * gapUnit option.
-    *
-    * In case when `dataGrouping` is enabled, points can be grouped into a
-    * larger time span. This can make the grouped points to have a greater
-    * distance than the absolute value of `gapSize` property, which will result
-    * in disappearing graph completely. To prevent this situation the mentioned
-    * distance between grouped points is used instead of previously defined
-    * `gapSize`.
-    *
-    * In practice, this option is most often used to visualize gaps in time
-    * series. In a stock chart, intraday data is available for daytime hours,
-    * while gaps will appear in nights and weekends.
-    */
-  var gapSize: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * (Highstock) Together with gapSize, this option defines where to draw gaps
-    * in the graph.
-    *
-    * When the `gapUnit` is `"relative"` (default), a gap size of 5 means that
-    * if the distance between two points is greater than 5 times that of the
-    * two closest points, the graph will be broken.
-    *
-    * When the `gapUnit` is `"value"`, the gap is based on absolute axis
-    * values, which on a datetime axis is milliseconds. This also applies to
-    * the navigator series that inherits gap options from the base series.
-    */
-  var gapUnit: js.UndefOr[String] = js.undefined
+  var findNearestPointBy: js.UndefOr[OptionsFindNearestPointByValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Whether to use the Y extremes of the total
@@ -520,6 +389,8 @@ trait PlotFlagsOptions extends StObject {
     */
   var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.undefined
   
+  var legendSymbol: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highstock) The color of the line/border of the flag.
     *
@@ -534,13 +405,6 @@ trait PlotFlagsOptions extends StObject {
   var lineWidth: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts, Highstock) The SVG value used for the `stroke-linecap` and
-    * `stroke-linejoin` of a line graph. Round means that lines are rounded in
-    * the ends and bends.
-    */
-  var linecap: js.UndefOr[SeriesLinecapValue] = js.undefined
-  
-  /**
     * (Highcharts, Highstock, Gantt) The id of another series to link to.
     * Additionally, the value can be ":previous" to link to the previous
     * series. When two series are linked, only the first one appears in the
@@ -551,17 +415,6 @@ trait PlotFlagsOptions extends StObject {
     * order as the master one.
     */
   var linkedTo: js.UndefOr[String] = js.undefined
-  
-  /**
-    * (Highstock) Options for the point markers of line-like series. Properties
-    * like `fillColor`, `lineColor` and `lineWidth` define the visual
-    * appearance of the markers. Other series types, like column series, don't
-    * have markers, but have visual options on the series level instead.
-    *
-    * In styled mode, the markers can be styled with the `.highcharts-point`,
-    * `.highcharts-point-hover` and `.highcharts-point-select` class names.
-    */
-  var marker: js.UndefOr[PointMarkerOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The maximum allowed pixel width for a
@@ -604,7 +457,7 @@ trait PlotFlagsOptions extends StObject {
     * series, however, the flag can optionally be placed on the `open`, `high`,
     * `low` or `close` key.
     */
-  var onKey: js.UndefOr[String] = js.undefined
+  var onKey: js.UndefOr[OptionsOnKeyValue] = js.undefined
   
   /**
     * (Highstock) Options for the _Series on point_ feature. Only `pie` and
@@ -664,13 +517,7 @@ trait PlotFlagsOptions extends StObject {
     * Please note that this options applies to the _series data_, not the
     * interval of the axis ticks, which is independent.
     */
-  var pointIntervalUnit: js.UndefOr[String] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock, Gantt) Padding between each column or bar, in x
-    * axis units.
-    */
-  var pointPadding: js.UndefOr[Double] = js.undefined
+  var pointIntervalUnit: js.UndefOr[OptionsPointIntervalUnitValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Possible values: `"on"`, `"between"`,
@@ -726,15 +573,6 @@ trait PlotFlagsOptions extends StObject {
   var pointStart: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Gantt) A pixel value specifying a fixed width for
-    * each column or bar point. When set to `undefined`, the width is
-    * calculated from the `pointPadding` and `groupPadding`. The width effects
-    * the dimension that is not based on the point value. For column series it
-    * is the hoizontal length and for bar series it is the vertical length.
-    */
-  var pointWidth: js.UndefOr[Double] = js.undefined
-  
-  /**
     * (Highcharts, Highstock) When true, X values in the data set are relative
     * to the current `pointStart`, `pointInterval` and `pointIntervalUnit`
     * settings. This allows compression of the data for datasets with irregular
@@ -757,6 +595,11 @@ trait PlotFlagsOptions extends StObject {
     * (Highstock) Whether to apply a drop shadow to the graph line. Since 2.3
     * the shadow can be an object configuration containing `color`, `offsetX`,
     * `offsetY`, `opacity` and `width`.
+    *
+    * Note that in some cases, like stacked columns or other dense layouts, the
+    * series may cast shadows on each other. In that case, the
+    * `chart.seriesGroupShadow` allows applying a common drop shadow to the
+    * whole series group.
     */
   var shadow: js.UndefOr[Boolean | ShadowOptionsObject] = js.undefined
   
@@ -806,6 +649,11 @@ trait PlotFlagsOptions extends StObject {
   var softThreshold: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * (Highstock) Sonification/audio chart options for a series.
+    */
+  var sonification: js.UndefOr[PlotFlagsSonificationOptions] = js.undefined
+  
+  /**
     * (Highstock) When multiple flags in the same series fall on the same
     * value, this number determines the vertical offset between them.
     */
@@ -822,15 +670,9 @@ trait PlotFlagsOptions extends StObject {
     * streamgraph series type, the stacking option is set to `"stream"`. The
     * second one is `"overlap"`, which only applies to waterfall series.
     */
-  var stacking: js.UndefOr[String] = js.undefined
+  var stacking: js.UndefOr[OptionsStackingValue] = js.undefined
   
   var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock) Whether to apply steps to the line. Possible
-    * values are `left`, `center` and `right`.
-    */
-  var step: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) Sticky tracking of mouse events. When true, the `mouseOut`
@@ -858,7 +700,7 @@ trait PlotFlagsOptions extends StObject {
   /**
     * (Highstock) Text alignment for the text inside the flag.
     */
-  var textAlign: js.UndefOr[String] = js.undefined
+  var textAlign: js.UndefOr[OptionsTextAlignValue] = js.undefined
   
   /**
     * (Highcharts) The Y axis value to serve as the base for the columns, for
@@ -882,31 +724,12 @@ trait PlotFlagsOptions extends StObject {
   var tooltip: js.UndefOr[SeriesTooltipOptionsObject] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Gantt) When a series contains a data array that
-    * is longer than this, only one dimensional arrays of numbers, or two
-    * dimensional arrays with x and y values are allowed. Also, only the first
-    * point is tested, and the rest are assumed to be the same format. This
-    * saves expensive data checking and indexing in long series. Set it to `0`
-    * disable.
-    *
-    * Note: In boost mode turbo threshold is forced. Only array of numbers or
-    * two dimensional arrays are allowed.
-    */
-  var turboThreshold: js.UndefOr[Double] = js.undefined
-  
-  /**
     * (Highstock) Whether to use HTML to render the flag texts. Using HTML
     * allows for advanced formatting, images and reliable bi-directional text
     * rendering. Note that exported images won't respect the HTML, and that
     * HTML won't respect Z-index settings.
     */
   var useHTML: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * (Highstock) The parameter allows setting line series type and use OHLC
-    * indicators. Data in OHLC format is required.
-    */
-  var useOhlcData: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) Set the initial visibility of the series.
@@ -974,33 +797,17 @@ object PlotFlagsOptions {
     
     inline def setAllowPointSelectUndefined: Self = StObject.set(x, "allowPointSelect", js.undefined)
     
-    inline def setAnimation(value: Boolean | AnimationOptionsObject): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
-    
     inline def setAnimationLimit(value: Double): Self = StObject.set(x, "animationLimit", value.asInstanceOf[js.Any])
     
     inline def setAnimationLimitUndefined: Self = StObject.set(x, "animationLimit", js.undefined)
     
-    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
-    
-    inline def setBoostBlending(value: String): Self = StObject.set(x, "boostBlending", value.asInstanceOf[js.Any])
+    inline def setBoostBlending(value: OptionsBoostBlendingValue): Self = StObject.set(x, "boostBlending", value.asInstanceOf[js.Any])
     
     inline def setBoostBlendingUndefined: Self = StObject.set(x, "boostBlending", js.undefined)
     
     inline def setBoostThreshold(value: Double): Self = StObject.set(x, "boostThreshold", value.asInstanceOf[js.Any])
     
     inline def setBoostThresholdUndefined: Self = StObject.set(x, "boostThreshold", js.undefined)
-    
-    inline def setBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
-    
-    inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
-    
-    inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
-    
-    inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
-    
-    inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
-    
-    inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
     inline def setCenterInCategory(value: Boolean): Self = StObject.set(x, "centerInCategory", value.asInstanceOf[js.Any])
     
@@ -1020,10 +827,6 @@ object PlotFlagsOptions {
     
     inline def setColorAxisUndefined: Self = StObject.set(x, "colorAxis", js.undefined)
     
-    inline def setColorByPoint(value: Boolean): Self = StObject.set(x, "colorByPoint", value.asInstanceOf[js.Any])
-    
-    inline def setColorByPointUndefined: Self = StObject.set(x, "colorByPoint", js.undefined)
-    
     inline def setColorIndex(value: Double): Self = StObject.set(x, "colorIndex", value.asInstanceOf[js.Any])
     
     inline def setColorIndexUndefined: Self = StObject.set(x, "colorIndex", js.undefined)
@@ -1040,9 +843,9 @@ object PlotFlagsOptions {
     
     inline def setColorsVarargs(value: (ColorString | GradientColorObject | PatternObject)*): Self = StObject.set(x, "colors", js.Array(value*))
     
-    inline def setCompare(value: String): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
+    inline def setCompare(value: OptionsCompareValue): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
     
-    inline def setCompareBase(value: Double): Self = StObject.set(x, "compareBase", value.asInstanceOf[js.Any])
+    inline def setCompareBase(value: `0` | `100`): Self = StObject.set(x, "compareBase", value.asInstanceOf[js.Any])
     
     inline def setCompareBaseUndefined: Self = StObject.set(x, "compareBase", js.undefined)
     
@@ -1052,14 +855,6 @@ object PlotFlagsOptions {
     
     inline def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
     
-    inline def setConnectEnds(value: Boolean): Self = StObject.set(x, "connectEnds", value.asInstanceOf[js.Any])
-    
-    inline def setConnectEndsUndefined: Self = StObject.set(x, "connectEnds", js.undefined)
-    
-    inline def setConnectNulls(value: Boolean): Self = StObject.set(x, "connectNulls", value.asInstanceOf[js.Any])
-    
-    inline def setConnectNullsUndefined: Self = StObject.set(x, "connectNulls", js.undefined)
-    
     inline def setConnectors(value: SeriesConnectorsOptionsObject): Self = StObject.set(x, "connectors", value.asInstanceOf[js.Any])
     
     inline def setConnectorsUndefined: Self = StObject.set(x, "connectors", js.undefined)
@@ -1067,10 +862,6 @@ object PlotFlagsOptions {
     inline def setCrisp(value: Boolean): Self = StObject.set(x, "crisp", value.asInstanceOf[js.Any])
     
     inline def setCrispUndefined: Self = StObject.set(x, "crisp", js.undefined)
-    
-    inline def setCropThreshold(value: Double): Self = StObject.set(x, "cropThreshold", value.asInstanceOf[js.Any])
-    
-    inline def setCropThresholdUndefined: Self = StObject.set(x, "cropThreshold", js.undefined)
     
     inline def setCumulative(value: Boolean): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
     
@@ -1087,14 +878,6 @@ object PlotFlagsOptions {
     inline def setDashStyle(value: DashStyleValue): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     
     inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
-    
-    inline def setDataAsColumns(value: Boolean): Self = StObject.set(x, "dataAsColumns", value.asInstanceOf[js.Any])
-    
-    inline def setDataAsColumnsUndefined: Self = StObject.set(x, "dataAsColumns", js.undefined)
-    
-    inline def setDataGrouping(value: DataGroupingOptionsObject): Self = StObject.set(x, "dataGrouping", value.asInstanceOf[js.Any])
-    
-    inline def setDataGroupingUndefined: Self = StObject.set(x, "dataGrouping", js.undefined)
     
     inline def setDataLabels(value: PlotFlagsDataLabelsOptions | js.Array[PlotFlagsDataLabelsOptions]): Self = StObject.set(x, "dataLabels", value.asInstanceOf[js.Any])
     
@@ -1138,17 +921,9 @@ object PlotFlagsOptions {
     
     inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
     
-    inline def setFindNearestPointBy(value: String): Self = StObject.set(x, "findNearestPointBy", value.asInstanceOf[js.Any])
+    inline def setFindNearestPointBy(value: OptionsFindNearestPointByValue): Self = StObject.set(x, "findNearestPointBy", value.asInstanceOf[js.Any])
     
     inline def setFindNearestPointByUndefined: Self = StObject.set(x, "findNearestPointBy", js.undefined)
-    
-    inline def setGapSize(value: Double): Self = StObject.set(x, "gapSize", value.asInstanceOf[js.Any])
-    
-    inline def setGapSizeUndefined: Self = StObject.set(x, "gapSize", js.undefined)
-    
-    inline def setGapUnit(value: String): Self = StObject.set(x, "gapUnit", value.asInstanceOf[js.Any])
-    
-    inline def setGapUnitUndefined: Self = StObject.set(x, "gapUnit", js.undefined)
     
     inline def setGetExtremesFromAll(value: Boolean): Self = StObject.set(x, "getExtremesFromAll", value.asInstanceOf[js.Any])
     
@@ -1198,6 +973,10 @@ object PlotFlagsOptions {
     
     inline def setLastVisiblePriceUndefined: Self = StObject.set(x, "lastVisiblePrice", js.undefined)
     
+    inline def setLegendSymbol(value: String): Self = StObject.set(x, "legendSymbol", value.asInstanceOf[js.Any])
+    
+    inline def setLegendSymbolUndefined: Self = StObject.set(x, "legendSymbol", js.undefined)
+    
     inline def setLineColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     
     inline def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
@@ -1206,17 +985,9 @@ object PlotFlagsOptions {
     
     inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
     
-    inline def setLinecap(value: SeriesLinecapValue): Self = StObject.set(x, "linecap", value.asInstanceOf[js.Any])
-    
-    inline def setLinecapUndefined: Self = StObject.set(x, "linecap", js.undefined)
-    
     inline def setLinkedTo(value: String): Self = StObject.set(x, "linkedTo", value.asInstanceOf[js.Any])
     
     inline def setLinkedToUndefined: Self = StObject.set(x, "linkedTo", js.undefined)
-    
-    inline def setMarker(value: PointMarkerOptionsObject): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
-    
-    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
     inline def setMaxPointWidth(value: Double): Self = StObject.set(x, "maxPointWidth", value.asInstanceOf[js.Any])
     
@@ -1234,7 +1005,7 @@ object PlotFlagsOptions {
     
     inline def setNegativeColorUndefined: Self = StObject.set(x, "negativeColor", js.undefined)
     
-    inline def setOnKey(value: String): Self = StObject.set(x, "onKey", value.asInstanceOf[js.Any])
+    inline def setOnKey(value: OptionsOnKeyValue): Self = StObject.set(x, "onKey", value.asInstanceOf[js.Any])
     
     inline def setOnKeyUndefined: Self = StObject.set(x, "onKey", js.undefined)
     
@@ -1260,13 +1031,9 @@ object PlotFlagsOptions {
     
     inline def setPointIntervalUndefined: Self = StObject.set(x, "pointInterval", js.undefined)
     
-    inline def setPointIntervalUnit(value: String): Self = StObject.set(x, "pointIntervalUnit", value.asInstanceOf[js.Any])
+    inline def setPointIntervalUnit(value: OptionsPointIntervalUnitValue): Self = StObject.set(x, "pointIntervalUnit", value.asInstanceOf[js.Any])
     
     inline def setPointIntervalUnitUndefined: Self = StObject.set(x, "pointIntervalUnit", js.undefined)
-    
-    inline def setPointPadding(value: Double): Self = StObject.set(x, "pointPadding", value.asInstanceOf[js.Any])
-    
-    inline def setPointPaddingUndefined: Self = StObject.set(x, "pointPadding", js.undefined)
     
     inline def setPointPlacement(value: Double | String): Self = StObject.set(x, "pointPlacement", value.asInstanceOf[js.Any])
     
@@ -1283,10 +1050,6 @@ object PlotFlagsOptions {
     inline def setPointStartUndefined: Self = StObject.set(x, "pointStart", js.undefined)
     
     inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
-    
-    inline def setPointWidth(value: Double): Self = StObject.set(x, "pointWidth", value.asInstanceOf[js.Any])
-    
-    inline def setPointWidthUndefined: Self = StObject.set(x, "pointWidth", js.undefined)
     
     inline def setRelativeXValue(value: Boolean): Self = StObject.set(x, "relativeXValue", value.asInstanceOf[js.Any])
     
@@ -1324,21 +1087,21 @@ object PlotFlagsOptions {
     
     inline def setSoftThresholdUndefined: Self = StObject.set(x, "softThreshold", js.undefined)
     
+    inline def setSonification(value: PlotFlagsSonificationOptions): Self = StObject.set(x, "sonification", value.asInstanceOf[js.Any])
+    
+    inline def setSonificationUndefined: Self = StObject.set(x, "sonification", js.undefined)
+    
     inline def setStackDistance(value: Double): Self = StObject.set(x, "stackDistance", value.asInstanceOf[js.Any])
     
     inline def setStackDistanceUndefined: Self = StObject.set(x, "stackDistance", js.undefined)
     
-    inline def setStacking(value: String): Self = StObject.set(x, "stacking", value.asInstanceOf[js.Any])
+    inline def setStacking(value: OptionsStackingValue): Self = StObject.set(x, "stacking", value.asInstanceOf[js.Any])
     
     inline def setStackingUndefined: Self = StObject.set(x, "stacking", js.undefined)
     
     inline def setStates(value: SeriesStatesOptionsObject): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
     inline def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
-    
-    inline def setStep(value: String): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
-    
-    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
     inline def setStickyTracking(value: Boolean): Self = StObject.set(x, "stickyTracking", value.asInstanceOf[js.Any])
     
@@ -1348,7 +1111,7 @@ object PlotFlagsOptions {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+    inline def setTextAlign(value: OptionsTextAlignValue): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
     
     inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
     
@@ -1366,17 +1129,9 @@ object PlotFlagsOptions {
     
     inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
-    inline def setTurboThreshold(value: Double): Self = StObject.set(x, "turboThreshold", value.asInstanceOf[js.Any])
-    
-    inline def setTurboThresholdUndefined: Self = StObject.set(x, "turboThreshold", js.undefined)
-    
     inline def setUseHTML(value: Boolean): Self = StObject.set(x, "useHTML", value.asInstanceOf[js.Any])
     
     inline def setUseHTMLUndefined: Self = StObject.set(x, "useHTML", js.undefined)
-    
-    inline def setUseOhlcData(value: Boolean): Self = StObject.set(x, "useOhlcData", value.asInstanceOf[js.Any])
-    
-    inline def setUseOhlcDataUndefined: Self = StObject.set(x, "useOhlcData", js.undefined)
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     

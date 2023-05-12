@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('./mat4.js').Mat4} Mat4 */
 /**
   * A 3x3 matrix.
   */
@@ -18,8 +17,8 @@ open class Mat3 () extends StObject {
     * @param {Mat3} rhs - A 3x3 matrix to be copied.
     * @returns {Mat3} Self for chaining.
     * @example
-    * var src = new pc.Mat3().translate(10, 20, 30);
-    * var dst = new pc.Mat3();
+    * const src = new pc.Mat3().translate(10, 20, 30);
+    * const dst = new pc.Mat3();
     * dst.copy(src);
     * console.log("The two matrices are " + (src.equals(dst) ? "equal" : "different"));
     */
@@ -38,8 +37,8 @@ open class Mat3 () extends StObject {
     * @param {Mat3} rhs - The other matrix.
     * @returns {boolean} True if the matrices are equal and false otherwise.
     * @example
-    * var a = new pc.Mat3().translate(10, 20, 30);
-    * var b = new pc.Mat3();
+    * const a = new pc.Mat3().translate(10, 20, 30);
+    * const b = new pc.Mat3();
     * console.log("The two matrices are " + (a.equals(b) ? "equal" : "different"));
     */
   def equals(rhs: Mat3): Boolean = js.native
@@ -49,7 +48,7 @@ open class Mat3 () extends StObject {
     *
     * @returns {boolean} True if the matrix is identity and false otherwise.
     * @example
-    * var m = new pc.Mat3();
+    * const m = new pc.Mat3();
     * console.log("The matrix is " + (m.isIdentity() ? "identity" : "not identity"));
     */
   def isIdentity(): Boolean = js.native
@@ -60,7 +59,7 @@ open class Mat3 () extends StObject {
     * @param {number[]} src - An array[9] to be copied.
     * @returns {Mat3} Self for chaining.
     * @example
-    * var dst = new pc.Mat3();
+    * const dst = new pc.Mat3();
     * dst.set([0, 1, 2, 3, 4, 5, 6, 7, 8]);
     */
   def set(src: js.Array[Double]): Mat3 = js.native
@@ -68,7 +67,7 @@ open class Mat3 () extends StObject {
   /**
     * Converts the specified 4x4 matrix to a Mat3.
     *
-    * @param {Mat4} m - The 4x4 matrix to convert.
+    * @param {import('./mat4.js').Mat4} m - The 4x4 matrix to convert.
     * @returns {Mat3} Self for chaining.
     */
   def setFromMat4(m: Mat4): Mat3 = js.native
@@ -99,7 +98,7 @@ open class Mat3 () extends StObject {
     *
     * @returns {Mat3} Self for chaining.
     * @example
-    * var m = new pc.Mat3();
+    * const m = new pc.Mat3();
     *
     * // Transpose in place
     * m.transpose();

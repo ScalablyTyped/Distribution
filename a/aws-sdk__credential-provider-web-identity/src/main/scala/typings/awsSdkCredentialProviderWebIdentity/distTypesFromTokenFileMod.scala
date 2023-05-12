@@ -2,8 +2,8 @@ package typings.awsSdkCredentialProviderWebIdentity
 
 import typings.awsSdkCredentialProviderWebIdentity.anon.Arn
 import typings.awsSdkCredentialProviderWebIdentity.distTypesFromWebTokenMod.AssumeRoleWithWebIdentityParams
-import typings.awsSdkTypes.distTypesCredentialsMod.CredentialProvider
-import typings.awsSdkTypes.distTypesCredentialsMod.Credentials
+import typings.awsSdkTypes.distTypesIdentityAwsCredentialIdentityMod.AwsCredentialIdentity
+import typings.awsSdkTypes.distTypesIdentityAwsCredentialIdentityMod.AwsCredentialIdentityProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,8 +14,8 @@ object distTypesFromTokenFileMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromTokenFile(): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTokenFile")().asInstanceOf[CredentialProvider]
-  inline def fromTokenFile(init: FromTokenFileInit): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTokenFile")(init.asInstanceOf[js.Any]).asInstanceOf[CredentialProvider]
+  inline def fromTokenFile(): AwsCredentialIdentityProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTokenFile")().asInstanceOf[AwsCredentialIdentityProvider]
+  inline def fromTokenFile(init: FromTokenFileInit): AwsCredentialIdentityProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTokenFile")(init.asInstanceOf[js.Any]).asInstanceOf[AwsCredentialIdentityProvider]
   
   /* Inlined parent std.Partial<std.Omit<@aws-sdk/credential-provider-web-identity.@aws-sdk/credential-provider-web-identity/dist-types/fromWebToken.FromWebTokenInit, 'webIdentityToken'>> */
   trait FromTokenFileInit extends StObject {
@@ -35,7 +35,7 @@ object distTypesFromTokenFileMod {
     var WebIdentityToken: js.UndefOr[String] = js.undefined
     
     var roleAssumerWithWebIdentity: js.UndefOr[
-        js.Function1[/* params */ AssumeRoleWithWebIdentityParams, js.Promise[Credentials]]
+        js.Function1[/* params */ AssumeRoleWithWebIdentityParams, js.Promise[AwsCredentialIdentity]]
       ] = js.undefined
     
     var roleSessionName: js.UndefOr[String] = js.undefined
@@ -77,7 +77,7 @@ object distTypesFromTokenFileMod {
       
       inline def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
       
-      inline def setRoleAssumerWithWebIdentity(value: /* params */ AssumeRoleWithWebIdentityParams => js.Promise[Credentials]): Self = StObject.set(x, "roleAssumerWithWebIdentity", js.Any.fromFunction1(value))
+      inline def setRoleAssumerWithWebIdentity(value: /* params */ AssumeRoleWithWebIdentityParams => js.Promise[AwsCredentialIdentity]): Self = StObject.set(x, "roleAssumerWithWebIdentity", js.Any.fromFunction1(value))
       
       inline def setRoleAssumerWithWebIdentityUndefined: Self = StObject.set(x, "roleAssumerWithWebIdentity", js.undefined)
       

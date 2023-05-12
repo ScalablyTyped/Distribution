@@ -1,13 +1,11 @@
 package typings.devextreme.mod.DevExpress.ui
 
 import typings.devextreme.mod.DevExpress.core.DxElement_
-import typings.devextreme.mod.DevExpress.core.UserDefinedElement
 import typings.devextreme.mod.DevExpress.core.template
 import typings.devextreme.mod.DevExpress.events.DxEvent
 import typings.devextreme.mod.DevExpress.ui.dxDrawer.OpenedStateMode
 import typings.devextreme.mod.DevExpress.ui.dxDrawer.PanelLocation
 import typings.devextreme.mod.DevExpress.ui.dxDrawer.RevealMode
-import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import typings.std.PointerEvent
@@ -73,12 +71,6 @@ trait dxDrawerOptions
   var shading: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specifies a CSS selector for the element in which the drawer should be rendered. Applies only when the openedStateMode is &apos;overlap&apos;.
-    * @deprecated 
-    */
-  var target: js.UndefOr[String | UserDefinedElement[Element]] = js.undefined
-  
-  /**
     * Specifies the drawer&apos;s content.
     */
   var template: js.UndefOr[
@@ -138,10 +130,6 @@ object dxDrawerOptions {
     inline def setShading(value: Boolean): Self = StObject.set(x, "shading", value.asInstanceOf[js.Any])
     
     inline def setShadingUndefined: Self = StObject.set(x, "shading", js.undefined)
-    
-    inline def setTarget(value: String | UserDefinedElement[Element]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
-    
-    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     inline def setTemplate(value: template | (js.Function1[/* Element */ DxElement_[HTMLElement], Any])): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     

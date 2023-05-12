@@ -374,6 +374,12 @@ object codes extends StObject {
   /* "ERR_TOO_MANY_OUTBOUND_PROTOCOL_STREAMS" */ val ERR_TOO_MANY_OUTBOUND_PROTOCOL_STREAMS: typings.libp2p.distSrcErrorsMod.codes.ERR_TOO_MANY_OUTBOUND_PROTOCOL_STREAMS & String = js.native
   
   @js.native
+  sealed trait ERR_TRANSFER_LIMIT_EXCEEDED
+    extends StObject
+       with codes
+  /* "ERR_TRANSFER_LIMIT_EXCEEDED" */ val ERR_TRANSFER_LIMIT_EXCEEDED: typings.libp2p.distSrcErrorsMod.codes.ERR_TRANSFER_LIMIT_EXCEEDED & String = js.native
+  
+  @js.native
   sealed trait ERR_TRANSPORTS_REQUIRED
     extends StObject
        with codes

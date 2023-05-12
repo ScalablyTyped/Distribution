@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "viewerjs" : "1.11.1"
+      "viewerjs" : "1.11.3"
     }
   ],
   "test-dependencies" : [
     {
-      "viewerjs" : "1.11.1"
+      "viewerjs" : "1.11.3"
     }
   ],
   "compile-devDependencies" : [

@@ -1,7 +1,7 @@
 
 # Scala.js typings for vscode-languageserver-protocol
 
-Typings are for version 3.17.2
+Typings are for version 3.17.3
 
 ## Library description:
 VSCode Language Server Protocol implementation

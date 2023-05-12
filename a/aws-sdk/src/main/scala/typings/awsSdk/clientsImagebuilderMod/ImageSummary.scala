@@ -17,9 +17,14 @@ trait ImageSummary extends StObject {
   var buildType: js.UndefOr[BuildType] = js.undefined
   
   /**
-    * The date on which this image was created.
+    * The date on which Image Builder created this image.
     */
   var dateCreated: js.UndefOr[DateTime] = js.undefined
+  
+  /**
+    * The origin of the base image that Image Builder used to build this image.
+    */
+  var imageSource: js.UndefOr[ImageSource] = js.undefined
   
   /**
     * The name of the image.
@@ -27,12 +32,12 @@ trait ImageSummary extends StObject {
   var name: js.UndefOr[ResourceName] = js.undefined
   
   /**
-    * The operating system version of the instance. For example, Amazon Linux 2, Ubuntu 18, or Microsoft Windows Server 2019.
+    * The operating system version of the instances that launch from this image. For example, Amazon Linux 2, Ubuntu 18, or Microsoft Windows Server 2019.
     */
   var osVersion: js.UndefOr[OsVersion] = js.undefined
   
   /**
-    * The output resources produced when creating this image.
+    * The output resources that Image Builder produced when it created this image.
     */
   var outputResources: js.UndefOr[OutputResources] = js.undefined
   
@@ -42,7 +47,7 @@ trait ImageSummary extends StObject {
   var owner: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The platform of the image.
+    * The image operating system platform, such as Linux or Windows.
     */
   var platform: js.UndefOr[Platform] = js.undefined
   
@@ -52,12 +57,12 @@ trait ImageSummary extends StObject {
   var state: js.UndefOr[ImageState] = js.undefined
   
   /**
-    * The tags of the image.
+    * The tags that apply to this image.
     */
   var tags: js.UndefOr[TagMap] = js.undefined
   
   /**
-    * Specifies whether this is an AMI or container image.
+    * Specifies whether this image produces an AMI or a container image.
     */
   var `type`: js.UndefOr[ImageType] = js.undefined
   
@@ -87,6 +92,10 @@ object ImageSummary {
     inline def setDateCreated(value: DateTime): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
     
     inline def setDateCreatedUndefined: Self = StObject.set(x, "dateCreated", js.undefined)
+    
+    inline def setImageSource(value: ImageSource): Self = StObject.set(x, "imageSource", value.asInstanceOf[js.Any])
+    
+    inline def setImageSourceUndefined: Self = StObject.set(x, "imageSource", js.undefined)
     
     inline def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

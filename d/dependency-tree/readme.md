@@ -1,7 +1,7 @@
 
 # Scala.js typings for dependency-tree
 
-Typings are for version 8.1.2
+Typings are for version 10.0.5
 
 ## Library description:
 Get the dependency tree of a module

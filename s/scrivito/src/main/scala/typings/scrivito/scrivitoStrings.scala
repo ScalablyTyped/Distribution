@@ -31,6 +31,10 @@ object scrivitoStrings {
   inline def _createdAt: _createdAt = "_createdAt".asInstanceOf[_createdAt]
   
   @js.native
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @js.native
   sealed trait _lastChanged
     extends StObject
        with _ObjSearchSingleAttribute
@@ -75,6 +79,10 @@ object scrivitoStrings {
   @js.native
   sealed trait all extends StObject
   inline def all: all = "all".asInstanceOf[all]
+  
+  @js.native
+  sealed trait anonymous extends StObject
+  inline def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
   
   @js.native
   sealed trait asc extends StObject
@@ -471,6 +479,10 @@ object scrivitoStrings {
   @js.native
   sealed trait url extends StObject
   inline def url: url = "url".asInstanceOf[url]
+  
+  @js.native
+  sealed trait `use-credentials` extends StObject
+  inline def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
   
   @js.native
   sealed trait user extends StObject

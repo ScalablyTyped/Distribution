@@ -13,6 +13,11 @@ trait PackagingConfiguration extends StObject {
   
   var CmafPackage: js.UndefOr[typings.awsSdk.clientsMediapackagevodMod.CmafPackage] = js.undefined
   
+  /**
+    * The time the PackagingConfiguration was created.
+    */
+  var CreatedAt: js.UndefOr[string] = js.undefined
+  
   var DashPackage: js.UndefOr[typings.awsSdk.clientsMediapackagevodMod.DashPackage] = js.undefined
   
   var HlsPackage: js.UndefOr[typings.awsSdk.clientsMediapackagevodMod.HlsPackage] = js.undefined
@@ -48,6 +53,10 @@ object PackagingConfiguration {
     inline def setCmafPackage(value: CmafPackage): Self = StObject.set(x, "CmafPackage", value.asInstanceOf[js.Any])
     
     inline def setCmafPackageUndefined: Self = StObject.set(x, "CmafPackage", js.undefined)
+    
+    inline def setCreatedAt(value: string): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
     inline def setDashPackage(value: DashPackage): Self = StObject.set(x, "DashPackage", value.asInstanceOf[js.Any])
     

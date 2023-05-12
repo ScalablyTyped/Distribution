@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Logout extends StObject {
   
-  var logout: js.UndefOr[js.Object] = js.undefined
+  var logout: js.UndefOr[Boolean] = js.undefined
 }
 object Logout {
   
@@ -18,7 +18,7 @@ object Logout {
   @scala.inline
   implicit open class MutableBuilder[Self <: Logout] (val x: Self) extends AnyVal {
     
-    inline def setLogout(value: js.Object): Self = StObject.set(x, "logout", value.asInstanceOf[js.Any])
+    inline def setLogout(value: Boolean): Self = StObject.set(x, "logout", value.asInstanceOf[js.Any])
     
     inline def setLogoutUndefined: Self = StObject.set(x, "logout", js.undefined)
   }

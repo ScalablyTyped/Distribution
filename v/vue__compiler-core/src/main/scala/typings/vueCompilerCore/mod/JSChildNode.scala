@@ -21,7 +21,7 @@ trait JSChildNode
      with CodegenNode
 object JSChildNode {
   
-  inline def ArrayExpression(elements: js.Array[String | Node2], loc: SourceLocation): typings.vueCompilerCore.mod.ArrayExpression = {
+  inline def ArrayExpression(elements: js.Array[String | Node], loc: SourceLocation): typings.vueCompilerCore.mod.ArrayExpression = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(17)
     __obj.asInstanceOf[typings.vueCompilerCore.mod.ArrayExpression]

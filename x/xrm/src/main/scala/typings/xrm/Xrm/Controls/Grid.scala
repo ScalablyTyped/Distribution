@@ -17,14 +17,14 @@ trait Grid extends StObject {
   /**
     * Returns a collection of every GridRow in the Grid.
     * @returns The rows.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/collections External Link: Collections (Client API reference)}
     */
   def getRows(): ItemCollection[GridRow]
   
   /**
     * Returns a collection of every selected GridRow in the Grid.
     * @returns The selected rows.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/collections External Link: Collections (Client API reference)}
     */
   def getSelectedRows(): ItemCollection[GridRow]
   

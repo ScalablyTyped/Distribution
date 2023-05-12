@@ -11,6 +11,8 @@ trait AuthenticationClientOptions extends StObject {
   var clientSecret: js.UndefOr[String] = js.undefined
   
   var domain: String
+  
+  var telemetry: js.UndefOr[Boolean] = js.undefined
 }
 object AuthenticationClientOptions {
   
@@ -31,5 +33,9 @@ object AuthenticationClientOptions {
     inline def setClientSecretUndefined: Self = StObject.set(x, "clientSecret", js.undefined)
     
     inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    
+    inline def setTelemetry(value: Boolean): Self = StObject.set(x, "telemetry", value.asInstanceOf[js.Any])
+    
+    inline def setTelemetryUndefined: Self = StObject.set(x, "telemetry", js.undefined)
   }
 }

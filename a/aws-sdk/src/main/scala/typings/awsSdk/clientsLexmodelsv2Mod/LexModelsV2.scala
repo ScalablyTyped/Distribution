@@ -12,14 +12,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LexModelsV2 extends Service {
   
   /**
-    * Batch create custom vocabulary item for the specified locale in the specified bot.
+    * Create a batch of custom vocabulary items for a given bot locale's custom vocabulary.
     */
   def batchCreateCustomVocabularyItem(): Request[BatchCreateCustomVocabularyItemResponse, AWSError] = js.native
   def batchCreateCustomVocabularyItem(
     callback: js.Function2[/* err */ AWSError, /* data */ BatchCreateCustomVocabularyItemResponse, Unit]
   ): Request[BatchCreateCustomVocabularyItemResponse, AWSError] = js.native
   /**
-    * Batch create custom vocabulary item for the specified locale in the specified bot.
+    * Create a batch of custom vocabulary items for a given bot locale's custom vocabulary.
     */
   def batchCreateCustomVocabularyItem(params: BatchCreateCustomVocabularyItemRequest): Request[BatchCreateCustomVocabularyItemResponse, AWSError] = js.native
   def batchCreateCustomVocabularyItem(
@@ -28,14 +28,14 @@ trait LexModelsV2 extends Service {
   ): Request[BatchCreateCustomVocabularyItemResponse, AWSError] = js.native
   
   /**
-    * Batch delete custom vocabulary item for the specified locale in the specified bot.
+    * Delete a batch of custom vocabulary items for a given bot locale's custom vocabulary.
     */
   def batchDeleteCustomVocabularyItem(): Request[BatchDeleteCustomVocabularyItemResponse, AWSError] = js.native
   def batchDeleteCustomVocabularyItem(
     callback: js.Function2[/* err */ AWSError, /* data */ BatchDeleteCustomVocabularyItemResponse, Unit]
   ): Request[BatchDeleteCustomVocabularyItemResponse, AWSError] = js.native
   /**
-    * Batch delete custom vocabulary item for the specified locale in the specified bot.
+    * Delete a batch of custom vocabulary items for a given bot locale's custom vocabulary.
     */
   def batchDeleteCustomVocabularyItem(params: BatchDeleteCustomVocabularyItemRequest): Request[BatchDeleteCustomVocabularyItemResponse, AWSError] = js.native
   def batchDeleteCustomVocabularyItem(
@@ -44,14 +44,14 @@ trait LexModelsV2 extends Service {
   ): Request[BatchDeleteCustomVocabularyItemResponse, AWSError] = js.native
   
   /**
-    * Batch update custom vocabulary item for the specified locale in the specified bot.
+    * Update a batch of custom vocabulary items for a given bot locale's custom vocabulary.
     */
   def batchUpdateCustomVocabularyItem(): Request[BatchUpdateCustomVocabularyItemResponse, AWSError] = js.native
   def batchUpdateCustomVocabularyItem(
     callback: js.Function2[/* err */ AWSError, /* data */ BatchUpdateCustomVocabularyItemResponse, Unit]
   ): Request[BatchUpdateCustomVocabularyItemResponse, AWSError] = js.native
   /**
-    * Batch update custom vocabulary item for the specified locale in the specified bot.
+    * Update a batch of custom vocabulary items for a given bot locale's custom vocabulary.
     */
   def batchUpdateCustomVocabularyItem(params: BatchUpdateCustomVocabularyItemRequest): Request[BatchUpdateCustomVocabularyItemResponse, AWSError] = js.native
   def batchUpdateCustomVocabularyItem(
@@ -273,12 +273,12 @@ trait LexModelsV2 extends Service {
   ): Request[DeleteBotLocaleResponse, AWSError] = js.native
   
   /**
-    * Deletes a specific version of a bot. To delete all version of a bot, use the DeleteBot operation.
+    * Deletes a specific version of a bot. To delete all versions of a bot, use the DeleteBot operation.
     */
   def deleteBotVersion(): Request[DeleteBotVersionResponse, AWSError] = js.native
   def deleteBotVersion(callback: js.Function2[/* err */ AWSError, /* data */ DeleteBotVersionResponse, Unit]): Request[DeleteBotVersionResponse, AWSError] = js.native
   /**
-    * Deletes a specific version of a bot. To delete all version of a bot, use the DeleteBot operation.
+    * Deletes a specific version of a bot. To delete all versions of a bot, use the DeleteBot operation.
     */
   def deleteBotVersion(params: DeleteBotVersionRequest): Request[DeleteBotVersionResponse, AWSError] = js.native
   def deleteBotVersion(
@@ -692,12 +692,12 @@ trait LexModelsV2 extends Service {
   ): Request[ListBuiltInSlotTypesResponse, AWSError] = js.native
   
   /**
-    * List custom vocabulary items for the specified locale in the specified bot.
+    * Paginated list of custom vocabulary items for a given bot locale's custom vocabulary.
     */
   def listCustomVocabularyItems(): Request[ListCustomVocabularyItemsResponse, AWSError] = js.native
   def listCustomVocabularyItems(callback: js.Function2[/* err */ AWSError, /* data */ ListCustomVocabularyItemsResponse, Unit]): Request[ListCustomVocabularyItemsResponse, AWSError] = js.native
   /**
-    * List custom vocabulary items for the specified locale in the specified bot.
+    * Paginated list of custom vocabulary items for a given bot locale's custom vocabulary.
     */
   def listCustomVocabularyItems(params: ListCustomVocabularyItemsRequest): Request[ListCustomVocabularyItemsResponse, AWSError] = js.native
   def listCustomVocabularyItems(

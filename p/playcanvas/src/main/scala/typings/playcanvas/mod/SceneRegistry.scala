@@ -4,14 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('./app-base.js').AppBase} AppBase */
-/** @typedef {import('./entity.js').Entity} Entity */
 /**
   * Callback used by {@link SceneRegistry#loadSceneHierarchy}.
   *
   * @callback LoadHierarchyCallback
   * @param {string|null} err - The error message in the case where the loading or parsing fails.
-  * @param {Entity} [entity] - The loaded root entity if no errors were encountered.
+  * @param {import('./entity.js').Entity} [entity] - The loaded root entity if no errors were encountered.
   */
 /**
   * Callback used by {@link SceneRegistry#loadSceneSettings}.
@@ -24,14 +22,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @callback ChangeSceneCallback
   * @param {string|null} err - The error message in the case where the loading or parsing fails.
-  * @param {Entity} [entity] - The loaded root entity if no errors were encountered.
+  * @param {import('./entity.js').Entity} [entity] - The loaded root entity if no errors were encountered.
   */
 /**
   * Callback used by {@link SceneRegistry#loadScene}.
   *
   * @callback LoadSceneCallback
   * @param {string|null} err - The error message in the case where the loading or parsing fails.
-  * @param {Entity} [entity] - The loaded root entity if no errors were encountered.
+  * @param {import('./entity.js').Entity} [entity] - The loaded root entity if no errors were encountered.
   */
 /**
   * Callback used by {@link SceneRegistry#loadSceneData}.
@@ -50,7 +48,7 @@ open class SceneRegistry protected () extends StObject {
   /**
     * Create a new SceneRegistry instance.
     *
-    * @param {AppBase} app - The application.
+    * @param {import('./app-base.js').AppBase} app - The application.
     */
   def this(app: AppBase) = this()
   
@@ -143,7 +141,7 @@ open class SceneRegistry protected () extends StObject {
     * @param {LoadSceneDataCallback} callback - The function to call after loading,
     * passed (err, sceneItem) where err is null if no errors occurred.
     * @example
-    * var sceneItem = app.scenes.find("Scene Name");
+    * const sceneItem = app.scenes.find("Scene Name");
     * app.scenes.loadSceneData(sceneItem, function (err, sceneItem) {
     *     if (err) {
     *         // error
@@ -162,10 +160,10 @@ open class SceneRegistry protected () extends StObject {
     * @param {LoadHierarchyCallback} callback - The function to call after loading,
     * passed (err, entity) where err is null if no errors occurred.
     * @example
-    * var sceneItem = app.scenes.find("Scene Name");
+    * const sceneItem = app.scenes.find("Scene Name");
     * app.scenes.loadSceneHierarchy(sceneItem, function (err, entity) {
     *     if (!err) {
-    *         var e = app.root.find("My New Entity");
+    *         const e = app.root.find("My New Entity");
     *     } else {
     *         // error
     *     }
@@ -182,7 +180,7 @@ open class SceneRegistry protected () extends StObject {
     * @param {LoadSettingsCallback} callback - The function called after the settings
     * are applied. Passed (err) where err is null if no error occurred.
     * @example
-    * var sceneItem = app.scenes.find("Scene Name");
+    * const sceneItem = app.scenes.find("Scene Name");
     * app.scenes.loadSceneSettings(sceneItem, function (err) {
     *     if (!err) {
     *         // success
@@ -207,7 +205,7 @@ open class SceneRegistry protected () extends StObject {
     * @param {SceneRegistryItem | string} sceneItem - The scene item (which can be found with
     * {@link SceneRegistry#find} or URL of the scene file. Usually this will be "scene_id.json".
     * @example
-    * var sceneItem = app.scenes.find("Scene Name");
+    * const sceneItem = app.scenes.find("Scene Name");
     * app.scenes.unloadSceneData(sceneItem);
     */
   def unloadSceneData(sceneItem: SceneRegistryItem): Unit = js.native

@@ -1,7 +1,8 @@
 package typings.reactNativeCommunityCliPlatformIos
 
-import typings.reactNativeCommunityCliPlatformIos.anon.Description
 import typings.reactNativeCommunityCliPlatformIos.anon.Examples
+import typings.reactNativeCommunityCliPlatformIos.anon.Func
+import typings.reactNativeCommunityCliPlatformIos.anon.Options
 import typings.reactNativeCommunityCliTypes.buildIosMod.IOSDependencyConfig
 import typings.reactNativeCommunityCliTypes.buildIosMod.IOSDependencyParams
 import typings.reactNativeCommunityCliTypes.buildIosMod.IOSProjectConfig
@@ -18,7 +19,7 @@ object buildMod {
   
   @JSImport("@react-native-community/cli-platform-ios/build", "commands")
   @js.native
-  val commands: js.Array[Description | Examples] = js.native
+  val commands: js.Array[Func | Examples | Options] = js.native
   
   inline def dependencyConfig(folder: String): IOSDependencyConfig | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("dependencyConfig")(folder.asInstanceOf[js.Any]).asInstanceOf[IOSDependencyConfig | Null]
   inline def dependencyConfig(folder: String, userConfig: IOSDependencyParams): IOSDependencyConfig | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("dependencyConfig")(folder.asInstanceOf[js.Any], userConfig.asInstanceOf[js.Any])).asInstanceOf[IOSDependencyConfig | Null]

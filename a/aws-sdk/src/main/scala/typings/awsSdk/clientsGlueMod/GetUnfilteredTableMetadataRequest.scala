@@ -6,14 +6,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetUnfilteredTableMetadataRequest extends StObject {
   
+  /**
+    * A structure containing Lake Formation audit context information.
+    */
   var AuditContext: js.UndefOr[typings.awsSdk.clientsGlueMod.AuditContext] = js.undefined
   
+  /**
+    * The catalog ID where the table resides.
+    */
   var CatalogId: CatalogIdString
   
+  /**
+    * (Required) Specifies the name of a database that contains the table.
+    */
   var DatabaseName: NameString
   
+  /**
+    * (Required) Specifies the name of a table for which you are requesting metadata.
+    */
   var Name: NameString
   
+  /**
+    * (Required) A list of supported permission types. 
+    */
   var SupportedPermissionTypes: PermissionTypeList
 }
 object GetUnfilteredTableMetadataRequest {

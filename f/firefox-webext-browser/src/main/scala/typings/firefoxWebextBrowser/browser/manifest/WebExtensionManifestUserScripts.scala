@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** Not supported on manifest versions above 2. */
 trait WebExtensionManifestUserScripts extends StObject {
   
   var api_script: js.UndefOr[ExtensionURL] = js.undefined

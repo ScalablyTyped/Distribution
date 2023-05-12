@@ -1,7 +1,7 @@
 
 # Scala.js typings for ora
 
-Typings are for version 6.1.2
+Typings are for version 6.3.0
 
 ## Library description:
 Elegant terminal spinner

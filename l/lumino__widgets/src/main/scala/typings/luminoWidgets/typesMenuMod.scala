@@ -146,7 +146,7 @@ object typesMenuMod {
       * This signal is not emitted if the menu is already detached from
       * the DOM when it receives the `'close-request'` message.
       */
-    val aboutToClose: ISignal[this.type, Unit] = js.native
+    def aboutToClose: ISignal[this.type, Unit] = js.native
     
     /**
       * Activate the next selectable item in the menu.
@@ -170,24 +170,26 @@ object typesMenuMod {
       * #### Notes
       * This will be `-1` if no menu item is active.
       */
+    def activeIndex: Double = js.native
     /**
       * Set the index of the currently active menu item.
       *
       * #### Notes
       * If the item cannot be activated, the index will be set to `-1`.
       */
-    var activeIndex: Double = js.native
+    def activeIndex_=(value: Double): Unit = js.native
     
     /**
       * Get the currently active menu item.
       */
+    def activeItem: IItem | Null = js.native
     /**
       * Set the currently active menu item.
       *
       * #### Notes
       * If the item cannot be activated, the item will be set to `null`.
       */
-    var activeItem: IItem | Null = js.native
+    def activeItem_=(value: IItem | Null): Unit = js.native
     
     /**
       * Add a menu item to the end of the menu.
@@ -204,7 +206,7 @@ object typesMenuMod {
       * #### Notes
       * This is `null` unless the menu has an open submenu.
       */
-    val childMenu: Menu | Null = js.native
+    def childMenu: Menu | Null = js.native
     
     /**
       * Remove all menu items from the menu.
@@ -224,7 +226,7 @@ object typesMenuMod {
       *
       * Modifying this node directly can lead to undefined behavior.
       */
-    val contentNode: HTMLUListElement = js.native
+    def contentNode: HTMLUListElement = js.native
     
     /**
       * Handle the DOM events for the menu.
@@ -255,12 +257,12 @@ object typesMenuMod {
     /**
       * A read-only array of the menu items in the menu.
       */
-    val items: js.Array[IItem] = js.native
+    def items: js.Array[IItem] = js.native
     
     /**
       * The leaf menu of the menu hierarchy.
       */
-    val leafMenu: Menu = js.native
+    def leafMenu: Menu = js.native
     
     /**
       * A signal emitted when a new menu is requested by the user.
@@ -274,7 +276,7 @@ object typesMenuMod {
       *
       * This signal is only emitted for the root menu in a hierarchy.
       */
-    val menuRequested: ISignal[this.type, next | previous] = js.native
+    def menuRequested: ISignal[this.type, next | previous] = js.native
     
     /**
       * Open the menu at the specified location.
@@ -301,7 +303,7 @@ object typesMenuMod {
       * #### Notes
       * This is `null` unless the menu is an open submenu.
       */
-    val parentMenu: Menu | Null = js.native
+    def parentMenu: Menu | Null = js.native
     
     /**
       * Remove an item from the menu.
@@ -331,7 +333,7 @@ object typesMenuMod {
     /**
       * The root menu of the menu hierarchy.
       */
-    val rootMenu: Menu = js.native
+    def rootMenu: Menu = js.native
     
     /**
       * Trigger the active menu item.
@@ -348,7 +350,12 @@ object typesMenuMod {
       */
     def triggerActiveItem(): Unit = js.native
   }
+  /* static members */
   object Menu {
+    
+    @JSImport("@lumino/widgets/types/menu", "Menu")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * The default implementation of `IRenderer`.
@@ -471,6 +478,17 @@ object typesMenuMod {
     val defaultRenderer: Renderer = js.native
     
     /**
+      * Save window data used for menu positioning in transient cache.
+      *
+      * In order to avoid layout trashing it is recommended to invoke this
+      * method immediately prior to opening the menu and any DOM modifications
+      * (like closing previously visible menu, or adding a class to menu widget).
+      *
+      * The transient cache will be released upon `open()` call.
+      */
+    inline def saveWindowData(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("saveWindowData")().asInstanceOf[Unit]
+    
+    /**
       * An object which represents a menu item.
       *
       * #### Notes
@@ -506,7 +524,7 @@ object typesMenuMod {
       /**
         * The icon renderer for the menu item.
         */
-      val icon: js.UndefOr[typings.luminoVirtualdom.mod.VirtualElement.IRenderer | String] = js.undefined
+      val icon: js.UndefOr[typings.luminoVirtualdom.mod.VirtualElement.IRenderer] = js.undefined
       
       /**
         * The icon class for the menu item.
@@ -593,7 +611,7 @@ object typesMenuMod {
         
         inline def setDataset(value: Dataset): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
         
-        inline def setIcon(value: typings.luminoVirtualdom.mod.VirtualElement.IRenderer | String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: typings.luminoVirtualdom.mod.VirtualElement.IRenderer): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
         inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
         

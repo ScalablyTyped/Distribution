@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LambdaFunctionScheduledEventDetails extends StObject {
   
   /**
-    * The JSON data input to the lambda function. Length constraints apply to the payload size, and are expressed as bytes in UTF-8 encoding.
+    * The JSON data input to the Lambda function. Length constraints apply to the payload size, and are expressed as bytes in UTF-8 encoding.
     */
   var input: js.UndefOr[SensitiveData] = js.undefined
   
@@ -17,12 +17,17 @@ trait LambdaFunctionScheduledEventDetails extends StObject {
   var inputDetails: js.UndefOr[HistoryEventExecutionDataDetails] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the scheduled lambda function.
+    * The Amazon Resource Name (ARN) of the scheduled Lambda function.
     */
   var resource: Arn
   
   /**
-    * The maximum allowed duration of the lambda function.
+    * The credentials that Step Functions uses for the task.
+    */
+  var taskCredentials: js.UndefOr[TaskCredentials] = js.undefined
+  
+  /**
+    * The maximum allowed duration of the Lambda function.
     */
   var timeoutInSeconds: js.UndefOr[TimeoutInSeconds] = js.undefined
 }
@@ -45,6 +50,10 @@ object LambdaFunctionScheduledEventDetails {
     inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     inline def setResource(value: Arn): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    
+    inline def setTaskCredentials(value: TaskCredentials): Self = StObject.set(x, "taskCredentials", value.asInstanceOf[js.Any])
+    
+    inline def setTaskCredentialsUndefined: Self = StObject.set(x, "taskCredentials", js.undefined)
     
     inline def setTimeoutInSeconds(value: TimeoutInSeconds): Self = StObject.set(x, "timeoutInSeconds", value.asInstanceOf[js.Any])
     

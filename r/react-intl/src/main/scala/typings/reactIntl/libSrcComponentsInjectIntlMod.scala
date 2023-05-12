@@ -13,6 +13,7 @@ import typings.reactIntl.reactIntlBooleans.`false`
 import typings.reactIntl.reactIntlBooleans.`true`
 import typings.reactIntl.reactIntlStrings.intl
 import typings.std.Omit
+import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,6 +39,15 @@ object libSrcComponentsInjectIntlMod {
   inline def default_false[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */](WrappedComponent: ComponentType[P], options: Opts[IntlPropName, `false`]): FC[WithIntlProps[P]] & (WrappedComponentComponentType[P, IntlPropName]) = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(WrappedComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FC[WithIntlProps[P]] & (WrappedComponentComponentType[P, IntlPropName])]
   
   inline def default_true[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */, T /* <: ComponentType[P] */](WrappedComponent: ComponentType[P], options: Opts[IntlPropName, `true`]): (ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[PropsWithChildren[P]]] & RefAttributes[T]]) & (WrappedComponentComponentType[P, IntlPropName]) = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(WrappedComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[(ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[PropsWithChildren[P]]] & RefAttributes[T]]) & (WrappedComponentComponentType[P, IntlPropName])]
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+    * TS definition: {{{
+    T extends unknown ? std.Omit<T, K> : never
+    }}}
+    */
+  type DistributedOmit[T, K /* <: PropertyKey */] = Omit[T, K]
   
   trait Opts[IntlPropName /* <: String */, ForwardRef /* <: Boolean */] extends StObject {
     
@@ -71,7 +81,7 @@ object libSrcComponentsInjectIntlMod {
     }
   }
   
-  type WithIntlProps[P] = (Omit[P, intl]) & ForwardedRef
+  type WithIntlProps[P] = (DistributedOmit[P, intl]) & ForwardedRef
   
   /** NOTE: Mapped type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
@@ -82,4 +92,27 @@ object libSrcComponentsInjectIntlMod {
     */
   @js.native
   trait WrappedComponentProps[IntlPropName /* <: String */] extends StObject
+  
+  object global {
+    
+    trait Window extends StObject {
+      
+      var __REACT_INTL_CONTEXT__ : js.UndefOr[typings.react.mod.Context[IntlShape]] = js.undefined
+    }
+    object Window {
+      
+      inline def apply(): Window = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[Window]
+      }
+      
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+        
+        inline def set__REACT_INTL_CONTEXT__(value: typings.react.mod.Context[IntlShape]): Self = StObject.set(x, "__REACT_INTL_CONTEXT__", value.asInstanceOf[js.Any])
+        
+        inline def set__REACT_INTL_CONTEXT__Undefined: Self = StObject.set(x, "__REACT_INTL_CONTEXT__", js.undefined)
+      }
+    }
+  }
 }

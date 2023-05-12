@@ -10,6 +10,8 @@ open class TestStepResult () extends StObject {
   
   var duration: Duration = js.native
   
+  var exception: js.UndefOr[Exception] = js.native
+  
   var message: js.UndefOr[String] = js.native
   
   var status: TestStepResultStatus = js.native

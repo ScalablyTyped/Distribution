@@ -10,6 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ISVGElementRenderOptions extends StObject {
   
   /**
+    * SVG class name of the rendered paths.
+    */
+  var className: js.UndefOr[String] = js.undefined
+  
+  /**
     * CSS style to apply to elements.
     */
   var cssStyle: js.UndefOr[String] = js.undefined
@@ -38,6 +43,10 @@ object ISVGElementRenderOptions {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: ISVGElementRenderOptions] (val x: Self) extends AnyVal {
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     inline def setCssStyle(value: String): Self = StObject.set(x, "cssStyle", value.asInstanceOf[js.Any])
     

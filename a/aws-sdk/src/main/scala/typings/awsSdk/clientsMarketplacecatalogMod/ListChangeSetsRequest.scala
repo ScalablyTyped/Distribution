@@ -19,7 +19,7 @@ trait ListChangeSetsRequest extends StObject {
   /**
     * The maximum number of results returned by a single call. This value must be provided in the next call to retrieve the next set of results. By default, this value is 20.
     */
-  var MaxResults: js.UndefOr[MaxResultInteger] = js.undefined
+  var MaxResults: js.UndefOr[ListChangeSetsMaxResultInteger] = js.undefined
   
   /**
     * The token value retrieved from a previous call to access the next page of results.
@@ -49,7 +49,7 @@ object ListChangeSetsRequest {
     
     inline def setFilterListVarargs(value: Filter*): Self = StObject.set(x, "FilterList", js.Array(value*))
     
-    inline def setMaxResults(value: MaxResultInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: ListChangeSetsMaxResultInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     

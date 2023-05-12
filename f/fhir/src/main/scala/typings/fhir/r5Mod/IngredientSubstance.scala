@@ -9,12 +9,12 @@ trait IngredientSubstance
      with BackboneElement {
   
   /**
-    * A code or full resource that represents the ingredient substance.
+    * A code or full resource that represents the ingredient's substance.
     */
   var code: CodeableReference
   
   /**
-    * The quantity of substance in the unit of presentation, or in the volume (or mass) of the single pharmaceutical product or manufactured item.
+    * The quantity of substance in the unit of presentation, or in the volume (or mass) of the single pharmaceutical product or manufactured item. The allowed repetitions do not represent different strengths, but are different representations - mathematically equivalent - of a single strength.
     */
   var strength: js.UndefOr[js.Array[IngredientSubstanceStrength]] = js.undefined
 }

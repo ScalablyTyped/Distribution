@@ -12,7 +12,7 @@ trait LaunchSpecification extends StObject {
   var AddressingType: js.UndefOr[String] = js.undefined
   
   /**
-    * One or more block device mapping entries.
+    * The block device mapping entries.
     */
   var BlockDeviceMappings: js.UndefOr[BlockDeviceMappingList] = js.undefined
   
@@ -49,7 +49,7 @@ trait LaunchSpecification extends StObject {
   var Monitoring: js.UndefOr[RunInstancesMonitoringEnabled] = js.undefined
   
   /**
-    * One or more network interfaces. If you specify a network interface, you must specify subnet IDs and security group IDs using the network interface.
+    * The network interfaces. If you specify a network interface, you must specify subnet IDs and security group IDs using the network interface.
     */
   var NetworkInterfaces: js.UndefOr[InstanceNetworkInterfaceSpecificationList] = js.undefined
   
@@ -64,7 +64,7 @@ trait LaunchSpecification extends StObject {
   var RamdiskId: js.UndefOr[String] = js.undefined
   
   /**
-    * One or more security groups. When requesting instances in a VPC, you must specify the IDs of the security groups. When requesting instances in EC2-Classic, you can specify the names or the IDs of the security groups.
+    * The IDs of the security groups.
     */
   var SecurityGroups: js.UndefOr[GroupIdentifierList] = js.undefined
   
@@ -74,9 +74,9 @@ trait LaunchSpecification extends StObject {
   var SubnetId: js.UndefOr[String] = js.undefined
   
   /**
-    * The Base64-encoded user data for the instance.
+    * The base64-encoded user data that instances use when starting up. User data is limited to 16 KB.
     */
-  var UserData: js.UndefOr[String] = js.undefined
+  var UserData: js.UndefOr[SensitiveUserData] = js.undefined
 }
 object LaunchSpecification {
   
@@ -150,7 +150,7 @@ object LaunchSpecification {
     
     inline def setSubnetIdUndefined: Self = StObject.set(x, "SubnetId", js.undefined)
     
-    inline def setUserData(value: String): Self = StObject.set(x, "UserData", value.asInstanceOf[js.Any])
+    inline def setUserData(value: SensitiveUserData): Self = StObject.set(x, "UserData", value.asInstanceOf[js.Any])
     
     inline def setUserDataUndefined: Self = StObject.set(x, "UserData", js.undefined)
   }

@@ -2,27 +2,37 @@ package typings.primereact
 
 import typings.primereact.primereactStrings.`additions removals`
 import typings.primereact.primereactStrings.`additions text`
+import typings.primereact.primereactStrings.`down-left`
+import typings.primereact.primereactStrings.`down-right`
 import typings.primereact.primereactStrings.`inline`
+import typings.primereact.primereactStrings.`quarter-circle`
 import typings.primereact.primereactStrings.`removals additions`
 import typings.primereact.primereactStrings.`removals text`
+import typings.primereact.primereactStrings.`semi-circle`
 import typings.primereact.primereactStrings.`text additions`
 import typings.primereact.primereactStrings.`text removals`
+import typings.primereact.primereactStrings.`up-left`
+import typings.primereact.primereactStrings.`up-right`
 import typings.primereact.primereactStrings.additions
 import typings.primereact.primereactStrings.all
 import typings.primereact.primereactStrings.ascending
 import typings.primereact.primereactStrings.assertive
 import typings.primereact.primereactStrings.both
+import typings.primereact.primereactStrings.circle
 import typings.primereact.primereactStrings.copy
 import typings.primereact.primereactStrings.date
 import typings.primereact.primereactStrings.decimal
 import typings.primereact.primereactStrings.descending
 import typings.primereact.primereactStrings.dialog
+import typings.primereact.primereactStrings.down
 import typings.primereact.primereactStrings.email
 import typings.primereact.primereactStrings.execute
 import typings.primereact.primereactStrings.grammar
 import typings.primereact.primereactStrings.grid
 import typings.primereact.primereactStrings.horizontal
 import typings.primereact.primereactStrings.inherit
+import typings.primereact.primereactStrings.left
+import typings.primereact.primereactStrings.linear
 import typings.primereact.primereactStrings.link
 import typings.primereact.primereactStrings.list
 import typings.primereact.primereactStrings.listbox
@@ -40,6 +50,7 @@ import typings.primereact.primereactStrings.page
 import typings.primereact.primereactStrings.polite
 import typings.primereact.primereactStrings.popup
 import typings.primereact.primereactStrings.removals
+import typings.primereact.primereactStrings.right
 import typings.primereact.primereactStrings.search
 import typings.primereact.primereactStrings.spelling
 import typings.primereact.primereactStrings.step
@@ -47,6 +58,7 @@ import typings.primereact.primereactStrings.tel
 import typings.primereact.primereactStrings.text
 import typings.primereact.primereactStrings.time
 import typings.primereact.primereactStrings.tree
+import typings.primereact.primereactStrings.up
 import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.yes
@@ -103,29 +115,60 @@ object speeddialSpeeddialMod {
     def this(props: SpeedDialProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SpeedDialProps, context: Any) = this()
     
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
     
+    /**
+      * Used to hide the popup.
+      */
     def hide(): Unit = js.native
     
+    /**
+      * Used to show the popup.
+      */
     def show(): Unit = js.native
   }
   
+  /**
+    */
   trait SpeedDialButtonOptions extends StObject {
     
+    /**
+      * Style class of the element.
+      */
     var className: String
     
+    /**
+      * Default element created by the component.
+      */
     var element: Element
     
+    /**
+      * Icon Classname of the element.
+      */
     var iconClassName: String
     
+    /**
+      * Fired when the button element clicked.
+      * @param {React.MouseEvent<HTMLElement>} event - Browser event.
+      */
     var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
     
+    /**
+      * Properties passed to the component.
+      */
     var props: SpeedDialProps
     
+    /**
+      * Whether the overlay is opened.
+      */
     var visible: Boolean
   }
   object SpeedDialButtonOptions {
@@ -158,38 +201,6 @@ object speeddialSpeeddialMod {
       
       inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
-  }
-  
-  type SpeedDialButtonTemplateType = ReactNode | (js.Function1[/* options */ SpeedDialButtonOptions, ReactNode])
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.up
-    - typings.primereact.primereactStrings.down
-    - typings.primereact.primereactStrings.left
-    - typings.primereact.primereactStrings.right
-    - typings.primereact.primereactStrings.`up-left`
-    - typings.primereact.primereactStrings.`up-right`
-    - typings.primereact.primereactStrings.`down-left`
-    - typings.primereact.primereactStrings.`down-right`
-  */
-  trait SpeedDialDirectionType extends StObject
-  object SpeedDialDirectionType {
-    
-    inline def down: typings.primereact.primereactStrings.down = "down".asInstanceOf[typings.primereact.primereactStrings.down]
-    
-    inline def `down-left`: typings.primereact.primereactStrings.`down-left` = "down-left".asInstanceOf[typings.primereact.primereactStrings.`down-left`]
-    
-    inline def `down-right`: typings.primereact.primereactStrings.`down-right` = "down-right".asInstanceOf[typings.primereact.primereactStrings.`down-right`]
-    
-    inline def left: typings.primereact.primereactStrings.left = "left".asInstanceOf[typings.primereact.primereactStrings.left]
-    
-    inline def right: typings.primereact.primereactStrings.right = "right".asInstanceOf[typings.primereact.primereactStrings.right]
-    
-    inline def up: typings.primereact.primereactStrings.up = "up".asInstanceOf[typings.primereact.primereactStrings.up]
-    
-    inline def `up-left`: typings.primereact.primereactStrings.`up-left` = "up-left".asInstanceOf[typings.primereact.primereactStrings.`up-left`]
-    
-    inline def `up-right`: typings.primereact.primereactStrings.`up-right` = "up-right".asInstanceOf[typings.primereact.primereactStrings.`up-right`]
   }
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
@@ -301,19 +312,36 @@ object speeddialSpeeddialMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Style class of the button element.
+      */
     var buttonClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Inline style of the button element.
+      */
     var buttonStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var buttonTemplate: js.UndefOr[SpeedDialButtonTemplateType] = js.undefined
+    /**
+      * Template of button element.
+      */
+    var buttonTemplate: js.UndefOr[ReactNode | (js.Function1[/* options */ SpeedDialButtonOptions, ReactNode])] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -329,18 +357,33 @@ object speeddialSpeeddialMod {
     
     var dir: js.UndefOr[String] = js.undefined
     
-    var direction: js.UndefOr[SpeedDialDirectionType] = js.undefined
+    /**
+      * Specifies the opening direction of actions. Valid values are 'up', 'down', 'left', 'right', 'up-left', 'up-right', 'down-left' and 'down-right'
+      * @defaultValue up
+      */
+    var direction: js.UndefOr[up | down | left | right | `up-left` | `up-right` | `down-left` | `down-right`] = js.undefined
     
+    /**
+      * Whether the component is disabled.
+      * @defaultValue false
+      */
     var disabled: js.UndefOr[Boolean] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Hide icon of the button element.
+      */
     var hideIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<SpeedDialProps> */ Any
       ] = js.undefined
     
+    /**
+      * Whether the actions close when clicked outside.
+      * @defaultValue true
+      */
     var hideOnClickOutside: js.UndefOr[Boolean] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
@@ -365,12 +408,25 @@ object speeddialSpeeddialMod {
     
     var lang: js.UndefOr[String] = js.undefined
     
+    /**
+      * Whether to show a mask element behind the speeddial.
+      * @defaultValue false
+      */
     var mask: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Style class of the mask element.
+      */
     var maskClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Inline style of the mask element.
+      */
     var maskStyle: js.UndefOr[CSSProperties] = js.undefined
     
+    /**
+      * MenuModel instance to define the action items.
+      */
     var model: js.UndefOr[
         js.Array[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuItem */ Any
@@ -399,6 +455,10 @@ object speeddialSpeeddialMod {
     
     var onChange: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Fired when the button element clicked.
+      * @param {React.MouseEvent<HTMLElement>} event - Browser event.
+      */
     var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
     
     var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
@@ -443,6 +503,9 @@ object speeddialSpeeddialMod {
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Fired when the actions are hidden.
+      */
     var onHide: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
@@ -517,6 +580,9 @@ object speeddialSpeeddialMod {
     
     var onSelect: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Fired when the actions are visible.
+      */
     var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onStalled: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
@@ -537,6 +603,10 @@ object speeddialSpeeddialMod {
     
     var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Fired when the visibility of element changed.
+      * @param {boolean} visible - Custom visible change event
+      */
     var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
     
     var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
@@ -553,18 +623,33 @@ object speeddialSpeeddialMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    /**
+      * Radius for *circle types.
+      * @defaultValue 0
+      */
     var radius: js.UndefOr[Double] = js.undefined
+    
+    var rel: js.UndefOr[String] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
     
+    var rev: js.UndefOr[String] = js.undefined
+    
     var role: js.UndefOr[AriaRole] = js.undefined
     
+    /**
+      * Defined to rotate showIcon when hideIcon is not present.
+      * @defaultValue true
+      */
     var rotateAnimation: js.UndefOr[Boolean] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
+    /**
+      * Show icon of the button element.
+      */
     var showIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<SpeedDialProps> */ Any
       ] = js.undefined
@@ -583,16 +668,28 @@ object speeddialSpeeddialMod {
     
     var title: js.UndefOr[String] = js.undefined
     
+    /**
+      * Transition delay step for each action item.
+      * @defaultValue 30
+      */
     var transitionDelay: js.UndefOr[Double] = js.undefined
     
     var translate: js.UndefOr[yes | no] = js.undefined
     
-    var `type`: js.UndefOr[SpeedDialType] = js.undefined
+    /**
+      * Specifies the opening type of actions.
+      * @defaultValue linear
+      */
+    var `type`: js.UndefOr[linear | circle | `semi-circle` | `quarter-circle`] = js.undefined
     
     var typeof: js.UndefOr[String] = js.undefined
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
+    /**
+      * Specifies the visibility of the overlay.
+      * @defaultValue false
+      */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
@@ -817,6 +914,10 @@ object speeddialSpeeddialMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -829,7 +930,7 @@ object speeddialSpeeddialMod {
       
       inline def setButtonStyleUndefined: Self = StObject.set(x, "buttonStyle", js.undefined)
       
-      inline def setButtonTemplate(value: SpeedDialButtonTemplateType): Self = StObject.set(x, "buttonTemplate", value.asInstanceOf[js.Any])
+      inline def setButtonTemplate(value: ReactNode | (js.Function1[/* options */ SpeedDialButtonOptions, ReactNode])): Self = StObject.set(x, "buttonTemplate", value.asInstanceOf[js.Any])
       
       inline def setButtonTemplateFunction1(value: /* options */ SpeedDialButtonOptions => ReactNode): Self = StObject.set(x, "buttonTemplate", js.Any.fromFunction1(value))
       
@@ -847,9 +948,13 @@ object speeddialSpeeddialMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -877,7 +982,7 @@ object speeddialSpeeddialMod {
       
       inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
-      inline def setDirection(value: SpeedDialDirectionType): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: up | down | left | right | `up-left` | `up-right` | `down-left` | `down-right`): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
@@ -1329,6 +1434,10 @@ object speeddialSpeeddialMod {
       
       inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1336,6 +1445,10 @@ object speeddialSpeeddialMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1391,7 +1504,7 @@ object speeddialSpeeddialMod {
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
-      inline def setType(value: SpeedDialType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: linear | circle | `semi-circle` | `quarter-circle`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
@@ -1411,23 +1524,5 @@ object speeddialSpeeddialMod {
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
     }
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.linear
-    - typings.primereact.primereactStrings.circle
-    - typings.primereact.primereactStrings.`semi-circle`
-    - typings.primereact.primereactStrings.`quarter-circle`
-  */
-  trait SpeedDialType extends StObject
-  object SpeedDialType {
-    
-    inline def circle: typings.primereact.primereactStrings.circle = "circle".asInstanceOf[typings.primereact.primereactStrings.circle]
-    
-    inline def linear: typings.primereact.primereactStrings.linear = "linear".asInstanceOf[typings.primereact.primereactStrings.linear]
-    
-    inline def `quarter-circle`: typings.primereact.primereactStrings.`quarter-circle` = "quarter-circle".asInstanceOf[typings.primereact.primereactStrings.`quarter-circle`]
-    
-    inline def `semi-circle`: typings.primereact.primereactStrings.`semi-circle` = "semi-circle".asInstanceOf[typings.primereact.primereactStrings.`semi-circle`]
   }
 }

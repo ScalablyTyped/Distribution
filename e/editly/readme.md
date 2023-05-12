@@ -1,7 +1,7 @@
 
 # Scala.js typings for editly
 
-Typings are for version 0.14.0
+Typings are for version 0.14.2
 
 ## Library description:
 Simple, sexy, declarative video editing

@@ -2,7 +2,6 @@ package typings.draftJs
 
 import typings.draftJs.mod.Draft.Component.Base.DraftTextAlignment
 import typings.draftJs.mod.Draft.Component.Base.DraftTextDirectionality
-import typings.draftJs.mod.Draft.Model.Constants.ComposedEntityType
 import typings.draftJs.mod.Draft.Model.Constants.CoreDraftBlockType
 import typings.draftJs.mod.Draft.Model.Constants.DraftDragType
 import typings.draftJs.mod.Draft.Model.Constants.DraftEditorCommand
@@ -31,12 +30,6 @@ object draftJsStrings {
   inline def CODE: CODE = "CODE".asInstanceOf[CODE]
   
   @js.native
-  sealed trait IMAGE
-    extends StObject
-       with ComposedEntityType
-  inline def IMAGE: IMAGE = "IMAGE".asInstanceOf[IMAGE]
-  
-  @js.native
   sealed trait IMMUTABLE
     extends StObject
        with DraftEntityMutability
@@ -47,12 +40,6 @@ object draftJsStrings {
     extends StObject
        with DraftInlineStyleType
   inline def ITALIC: ITALIC = "ITALIC".asInstanceOf[ITALIC]
-  
-  @js.native
-  sealed trait LINK
-    extends StObject
-       with ComposedEntityType
-  inline def LINK: LINK = "LINK".asInstanceOf[LINK]
   
   @js.native
   sealed trait LTR
@@ -73,12 +60,6 @@ object draftJsStrings {
   inline def NEUTRAL: NEUTRAL = "NEUTRAL".asInstanceOf[NEUTRAL]
   
   @js.native
-  sealed trait PHOTO
-    extends StObject
-       with ComposedEntityType
-  inline def PHOTO: PHOTO = "PHOTO".asInstanceOf[PHOTO]
-  
-  @js.native
   sealed trait RTL
     extends StObject
        with DraftTextDirectionality
@@ -95,12 +76,6 @@ object draftJsStrings {
     extends StObject
        with DraftInlineStyleType
   inline def STRIKETHROUGH: STRIKETHROUGH = "STRIKETHROUGH".asInstanceOf[STRIKETHROUGH]
-  
-  @js.native
-  sealed trait TOKEN
-    extends StObject
-       with ComposedEntityType
-  inline def TOKEN: TOKEN = "TOKEN".asInstanceOf[TOKEN]
   
   @js.native
   sealed trait UNDERLINE
@@ -133,6 +108,12 @@ object draftJsStrings {
     extends StObject
        with EditorChangeType
   inline def `apply-entity`: `apply-entity` = "apply-entity".asInstanceOf[`apply-entity`]
+  
+  @js.native
+  sealed trait article
+    extends StObject
+       with CoreDraftBlockType
+  inline def article: article = "article".asInstanceOf[article]
   
   @js.native
   sealed trait atomic
@@ -373,12 +354,6 @@ object draftJsStrings {
   inline def `ordered-list-item`: `ordered-list-item` = "ordered-list-item".asInstanceOf[`ordered-list-item`]
   
   @js.native
-  sealed trait paragraph
-    extends StObject
-       with CoreDraftBlockType
-  inline def paragraph: paragraph = "paragraph".asInstanceOf[paragraph]
-  
-  @js.native
   sealed trait redo
     extends StObject
        with DraftEditorCommand
@@ -414,6 +389,12 @@ object draftJsStrings {
     extends StObject
        with DraftEditorCommand
   inline def `secondary-paste`: `secondary-paste` = "secondary-paste".asInstanceOf[`secondary-paste`]
+  
+  @js.native
+  sealed trait section
+    extends StObject
+       with CoreDraftBlockType
+  inline def section: section = "section".asInstanceOf[section]
   
   @js.native
   sealed trait `spellcheck-change`

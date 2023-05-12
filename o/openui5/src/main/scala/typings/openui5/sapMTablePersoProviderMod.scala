@@ -153,6 +153,8 @@ object sapMTablePersoProviderMod {
     def getResetPersData(): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Initializes the TablePersoProvider instance after creation.
       */
     def init(): Unit = js.native

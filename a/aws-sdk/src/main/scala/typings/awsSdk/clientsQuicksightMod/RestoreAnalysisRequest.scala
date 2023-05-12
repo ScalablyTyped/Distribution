@@ -9,7 +9,7 @@ trait RestoreAnalysisRequest extends StObject {
   /**
     * The ID of the analysis that you're restoring.
     */
-  var AnalysisId: RestrictiveResourceId
+  var AnalysisId: ShortRestrictiveResourceId
   
   /**
     * The ID of the Amazon Web Services account that contains the analysis.
@@ -18,7 +18,7 @@ trait RestoreAnalysisRequest extends StObject {
 }
 object RestoreAnalysisRequest {
   
-  inline def apply(AnalysisId: RestrictiveResourceId, AwsAccountId: AwsAccountId): RestoreAnalysisRequest = {
+  inline def apply(AnalysisId: ShortRestrictiveResourceId, AwsAccountId: AwsAccountId): RestoreAnalysisRequest = {
     val __obj = js.Dynamic.literal(AnalysisId = AnalysisId.asInstanceOf[js.Any], AwsAccountId = AwsAccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestoreAnalysisRequest]
   }
@@ -26,7 +26,7 @@ object RestoreAnalysisRequest {
   @scala.inline
   implicit open class MutableBuilder[Self <: RestoreAnalysisRequest] (val x: Self) extends AnyVal {
     
-    inline def setAnalysisId(value: RestrictiveResourceId): Self = StObject.set(x, "AnalysisId", value.asInstanceOf[js.Any])
+    inline def setAnalysisId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "AnalysisId", value.asInstanceOf[js.Any])
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
   }

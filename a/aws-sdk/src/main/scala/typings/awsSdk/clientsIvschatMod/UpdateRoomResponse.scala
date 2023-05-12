@@ -22,12 +22,17 @@ trait UpdateRoomResponse extends StObject {
   var id: js.UndefOr[RoomID] = js.undefined
   
   /**
-    * Maximum number of characters in a single message, from the request.
+    * Array of logging configurations attached to the room, from the request (if specified).
+    */
+  var loggingConfigurationIdentifiers: js.UndefOr[LoggingConfigurationIdentifierList] = js.undefined
+  
+  /**
+    * Maximum number of characters in a single message, from the request (if specified).
     */
   var maximumMessageLength: js.UndefOr[RoomMaxMessageLength] = js.undefined
   
   /**
-    * Maximum number of messages per second that can be sent to the room (by all clients), from the request.
+    * Maximum number of messages per second that can be sent to the room (by all clients), from the request (if specified).
     */
   var maximumMessageRatePerSecond: js.UndefOr[RoomMaxMessageRatePerSecond] = js.undefined
   
@@ -37,12 +42,12 @@ trait UpdateRoomResponse extends StObject {
   var messageReviewHandler: js.UndefOr[MessageReviewHandler] = js.undefined
   
   /**
-    * Room name, from the request.
+    * Room name, from the request (if specified).
     */
   var name: js.UndefOr[RoomName] = js.undefined
   
   /**
-    * Tags attached to the resource.
+    * Tags attached to the resource. Array of maps, each of the form string:string (key:value).
     */
   var tags: js.UndefOr[Tags] = js.undefined
   
@@ -72,6 +77,12 @@ object UpdateRoomResponse {
     inline def setId(value: RoomID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setLoggingConfigurationIdentifiers(value: LoggingConfigurationIdentifierList): Self = StObject.set(x, "loggingConfigurationIdentifiers", value.asInstanceOf[js.Any])
+    
+    inline def setLoggingConfigurationIdentifiersUndefined: Self = StObject.set(x, "loggingConfigurationIdentifiers", js.undefined)
+    
+    inline def setLoggingConfigurationIdentifiersVarargs(value: LoggingConfigurationIdentifier*): Self = StObject.set(x, "loggingConfigurationIdentifiers", js.Array(value*))
     
     inline def setMaximumMessageLength(value: RoomMaxMessageLength): Self = StObject.set(x, "maximumMessageLength", value.asInstanceOf[js.Any])
     

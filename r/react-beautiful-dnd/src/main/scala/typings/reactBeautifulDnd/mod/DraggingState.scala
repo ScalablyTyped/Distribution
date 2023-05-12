@@ -20,7 +20,7 @@ trait DraggingState
   var dimensions: DimensionMap
   
   // whether or not draggable movements should be animated
-  var forceShouldAnimate: js.UndefOr[Boolean] = js.undefined
+  var forceShouldAnimate: js.UndefOr[Boolean | Null] = js.undefined
   
   var impact: DragImpact
   
@@ -38,7 +38,7 @@ trait DraggingState
   var phase: DRAGGING
   
   // if we need to jump the scroll (keyboard dragging)
-  var scrollJumpRequest: js.UndefOr[Position] = js.undefined
+  var scrollJumpRequest: js.UndefOr[Position | Null] = js.undefined
   
   var viewport: Viewport
 }
@@ -73,6 +73,8 @@ object DraggingState {
     
     inline def setForceShouldAnimate(value: Boolean): Self = StObject.set(x, "forceShouldAnimate", value.asInstanceOf[js.Any])
     
+    inline def setForceShouldAnimateNull: Self = StObject.set(x, "forceShouldAnimate", null)
+    
     inline def setForceShouldAnimateUndefined: Self = StObject.set(x, "forceShouldAnimate", js.undefined)
     
     inline def setImpact(value: DragImpact): Self = StObject.set(x, "impact", value.asInstanceOf[js.Any])
@@ -90,6 +92,8 @@ object DraggingState {
     inline def setPhase(value: DRAGGING): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
     
     inline def setScrollJumpRequest(value: Position): Self = StObject.set(x, "scrollJumpRequest", value.asInstanceOf[js.Any])
+    
+    inline def setScrollJumpRequestNull: Self = StObject.set(x, "scrollJumpRequest", null)
     
     inline def setScrollJumpRequestUndefined: Self = StObject.set(x, "scrollJumpRequest", js.undefined)
     

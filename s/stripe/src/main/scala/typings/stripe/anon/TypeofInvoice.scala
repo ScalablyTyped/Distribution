@@ -12,9 +12,13 @@ trait TypeofInvoice extends StObject {
   
   val LastFinalizationError: Any
   
-  val PaymentSettings: TypeofPaymentSettings
+  val PaymentSettings: TypeofPaymentSettingsPaymentMethodOptionsTypeofPaymentMethodOptionUsBankAccount
+  
+  val ShippingCost: TypeofShippingCost
   
   val ThresholdReason: Any
+  
+  val TotalTaxAmount: Any
 }
 object TypeofInvoice {
   
@@ -22,10 +26,12 @@ object TypeofInvoice {
     AutomaticTax: Any,
     CustomerTaxId: Any,
     LastFinalizationError: Any,
-    PaymentSettings: TypeofPaymentSettings,
-    ThresholdReason: Any
+    PaymentSettings: TypeofPaymentSettingsPaymentMethodOptionsTypeofPaymentMethodOptionUsBankAccount,
+    ShippingCost: TypeofShippingCost,
+    ThresholdReason: Any,
+    TotalTaxAmount: Any
   ): TypeofInvoice = {
-    val __obj = js.Dynamic.literal(AutomaticTax = AutomaticTax.asInstanceOf[js.Any], CustomerTaxId = CustomerTaxId.asInstanceOf[js.Any], LastFinalizationError = LastFinalizationError.asInstanceOf[js.Any], PaymentSettings = PaymentSettings.asInstanceOf[js.Any], ThresholdReason = ThresholdReason.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AutomaticTax = AutomaticTax.asInstanceOf[js.Any], CustomerTaxId = CustomerTaxId.asInstanceOf[js.Any], LastFinalizationError = LastFinalizationError.asInstanceOf[js.Any], PaymentSettings = PaymentSettings.asInstanceOf[js.Any], ShippingCost = ShippingCost.asInstanceOf[js.Any], ThresholdReason = ThresholdReason.asInstanceOf[js.Any], TotalTaxAmount = TotalTaxAmount.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofInvoice]
   }
   
@@ -38,8 +44,12 @@ object TypeofInvoice {
     
     inline def setLastFinalizationError(value: Any): Self = StObject.set(x, "LastFinalizationError", value.asInstanceOf[js.Any])
     
-    inline def setPaymentSettings(value: TypeofPaymentSettings): Self = StObject.set(x, "PaymentSettings", value.asInstanceOf[js.Any])
+    inline def setPaymentSettings(value: TypeofPaymentSettingsPaymentMethodOptionsTypeofPaymentMethodOptionUsBankAccount): Self = StObject.set(x, "PaymentSettings", value.asInstanceOf[js.Any])
+    
+    inline def setShippingCost(value: TypeofShippingCost): Self = StObject.set(x, "ShippingCost", value.asInstanceOf[js.Any])
     
     inline def setThresholdReason(value: Any): Self = StObject.set(x, "ThresholdReason", value.asInstanceOf[js.Any])
+    
+    inline def setTotalTaxAmount(value: Any): Self = StObject.set(x, "TotalTaxAmount", value.asInstanceOf[js.Any])
   }
 }

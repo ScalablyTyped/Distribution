@@ -12,7 +12,7 @@ trait AwsRedshiftClusterClusterSnapshotCopyStatus extends StObject {
   var DestinationRegion: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The number of days that manual snapshots are retained in the destination region after they are copied from a source region. If the value is -1, then the manual snapshot is retained indefinitely. Valid values: Either -1 or an integer between 1 and 3,653
+    * The number of days that manual snapshots are retained in the destination Region after they are copied from a source Region. If the value is -1, then the manual snapshot is retained indefinitely. Valid values: Either -1 or an integer between 1 and 3,653
     */
   var ManualSnapshotRetentionPeriod: js.UndefOr[Integer] = js.undefined
   

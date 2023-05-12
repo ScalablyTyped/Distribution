@@ -13,8 +13,10 @@ trait ComponentInternalInstance extends StObject {
   
   var attrs: Data
   
-  /* Excluded from this release type: withProxy */
-  /* Excluded from this release type: ctx */
+  var attrsProxy: Data | Null
+  
+  /* removed internal: withProxy */
+  /* removed internal: ctx */
   var data: Data
   
   /**
@@ -33,15 +35,15 @@ trait ComponentInternalInstance extends StObject {
   
   var isDeactivated: Boolean
   
-  /* Excluded from this release type: emitted */
-  /* Excluded from this release type: propsDefaults */
-  /* Excluded from this release type: setupState */
-  /* Excluded from this release type: devtoolsRawSetupState */
-  /* Excluded from this release type: setupContext */
-  /* Excluded from this release type: suspense */
-  /* Excluded from this release type: suspenseId */
-  /* Excluded from this release type: asyncDep */
-  /* Excluded from this release type: asyncResolved */
+  /* removed internal: emitted */
+  /* removed internal: propsDefaults */
+  /* removed internal: setupState */
+  /* removed internal: devtoolsRawSetupState */
+  /* removed internal: setupContext */
+  /* removed internal: suspense */
+  /* removed internal: suspenseId */
+  /* removed internal: asyncDep */
+  /* removed internal: asyncResolved */
   var isMounted: Boolean
   
   var isUnmounted: Boolean
@@ -50,20 +52,20 @@ trait ComponentInternalInstance extends StObject {
   
   var props: Data
   
-  /* Excluded from this release type: render */
-  /* Excluded from this release type: ssrRender */
-  /* Excluded from this release type: provides */
-  /* Excluded from this release type: scope */
-  /* Excluded from this release type: accessCache */
-  /* Excluded from this release type: renderCache */
-  /* Excluded from this release type: components */
-  /* Excluded from this release type: directives */
-  /* Excluded from this release type: filters */
-  /* Excluded from this release type: propsOptions */
-  /* Excluded from this release type: emitsOptions */
-  /* Excluded from this release type: inheritAttrs */
-  /* Excluded from this release type: isCE */
-  /* Excluded from this release type: ceReload */
+  /* removed internal: render */
+  /* removed internal: ssrRender */
+  /* removed internal: provides */
+  /* removed internal: scope */
+  /* removed internal: accessCache */
+  /* removed internal: renderCache */
+  /* removed internal: components */
+  /* removed internal: directives */
+  /* removed internal: filters */
+  /* removed internal: propsOptions */
+  /* removed internal: emitsOptions */
+  /* removed internal: inheritAttrs */
+  /* removed internal: isCE */
+  /* removed internal: ceReload */
   var proxy: (ComponentPublicInstance[
     js.Object, 
     js.Object, 
@@ -74,7 +76,8 @@ trait ComponentInternalInstance extends StObject {
     js.Object, 
     js.Object, 
     `false`, 
-    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+    js.Object, 
     js.Object
   ]) | Null
   
@@ -84,7 +87,9 @@ trait ComponentInternalInstance extends StObject {
   
   var slots: InternalSlots
   
-  /* Excluded from this release type: next */
+  var slotsProxy: Slots | Null
+  
+  /* removed internal: next */
   /**
     * Root vnode of this component's own vdom tree
     */
@@ -125,7 +130,7 @@ object ComponentInternalInstance {
     update: SchedulerJob,
     vnode: VNode[RendererNode, RendererElement, StringDictionary[Any]]
   ): ComponentInternalInstance = {
-    val __obj = js.Dynamic.literal(appContext = appContext.asInstanceOf[js.Any], attrs = attrs.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], effect = effect.asInstanceOf[js.Any], emit = js.Any.fromFunction2(emit), isDeactivated = isDeactivated.asInstanceOf[js.Any], isMounted = isMounted.asInstanceOf[js.Any], isUnmounted = isUnmounted.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], refs = refs.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], slots = slots.asInstanceOf[js.Any], subTree = subTree.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any], vnode = vnode.asInstanceOf[js.Any], exposeProxy = null, exposed = null, parent = null, proxy = null)
+    val __obj = js.Dynamic.literal(appContext = appContext.asInstanceOf[js.Any], attrs = attrs.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], effect = effect.asInstanceOf[js.Any], emit = js.Any.fromFunction2(emit), isDeactivated = isDeactivated.asInstanceOf[js.Any], isMounted = isMounted.asInstanceOf[js.Any], isUnmounted = isUnmounted.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], refs = refs.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], slots = slots.asInstanceOf[js.Any], subTree = subTree.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any], vnode = vnode.asInstanceOf[js.Any], attrsProxy = null, exposeProxy = null, exposed = null, parent = null, proxy = null, slotsProxy = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentInternalInstance]
   }
@@ -136,6 +141,10 @@ object ComponentInternalInstance {
     inline def setAppContext(value: AppContext): Self = StObject.set(x, "appContext", value.asInstanceOf[js.Any])
     
     inline def setAttrs(value: Data): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+    
+    inline def setAttrsProxy(value: Data): Self = StObject.set(x, "attrsProxy", value.asInstanceOf[js.Any])
+    
+    inline def setAttrsProxyNull: Self = StObject.set(x, "attrsProxy", null)
     
     inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
@@ -174,7 +183,8 @@ object ComponentInternalInstance {
           js.Object, 
           js.Object, 
           `false`, 
-          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+          js.Object, 
           js.Object
         ]
     ): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
@@ -186,6 +196,10 @@ object ComponentInternalInstance {
     inline def setRoot(value: ComponentInternalInstance): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     inline def setSlots(value: InternalSlots): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    
+    inline def setSlotsProxy(value: Slots): Self = StObject.set(x, "slotsProxy", value.asInstanceOf[js.Any])
+    
+    inline def setSlotsProxyNull: Self = StObject.set(x, "slotsProxy", null)
     
     inline def setSubTree(value: VNode[RendererNode, RendererElement, StringDictionary[Any]]): Self = StObject.set(x, "subTree", value.asInstanceOf[js.Any])
     

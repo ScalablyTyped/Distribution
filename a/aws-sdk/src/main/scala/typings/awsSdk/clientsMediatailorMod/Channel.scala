@@ -37,6 +37,11 @@ trait Channel extends StObject {
   var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
+    * The log configuration.
+    */
+  var LogConfiguration: LogConfigurationForChannel
+  
+  /**
     * The channel's output properties.
     */
   var Outputs: ResponseOutputs
@@ -62,11 +67,12 @@ object Channel {
     Arn: _String,
     ChannelName: _String,
     ChannelState: _String,
+    LogConfiguration: LogConfigurationForChannel,
     Outputs: ResponseOutputs,
     PlaybackMode: _String,
     Tier: _String
   ): Channel = {
-    val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], ChannelName = ChannelName.asInstanceOf[js.Any], ChannelState = ChannelState.asInstanceOf[js.Any], Outputs = Outputs.asInstanceOf[js.Any], PlaybackMode = PlaybackMode.asInstanceOf[js.Any], Tier = Tier.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], ChannelName = ChannelName.asInstanceOf[js.Any], ChannelState = ChannelState.asInstanceOf[js.Any], LogConfiguration = LogConfiguration.asInstanceOf[js.Any], Outputs = Outputs.asInstanceOf[js.Any], PlaybackMode = PlaybackMode.asInstanceOf[js.Any], Tier = Tier.asInstanceOf[js.Any])
     __obj.asInstanceOf[Channel]
   }
   
@@ -90,6 +96,8 @@ object Channel {
     inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
+    
+    inline def setLogConfiguration(value: LogConfigurationForChannel): Self = StObject.set(x, "LogConfiguration", value.asInstanceOf[js.Any])
     
     inline def setOutputs(value: ResponseOutputs): Self = StObject.set(x, "Outputs", value.asInstanceOf[js.Any])
     

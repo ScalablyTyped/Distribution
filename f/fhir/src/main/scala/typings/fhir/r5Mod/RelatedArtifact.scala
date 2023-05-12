@@ -2,21 +2,25 @@ package typings.fhir.r5Mod
 
 import typings.fhir.fhirStrings.`amended-with`
 import typings.fhir.fhirStrings.`appended-with`
+import typings.fhir.fhirStrings.`cite-as`
 import typings.fhir.fhirStrings.`cited-by`
 import typings.fhir.fhirStrings.`comment-in`
 import typings.fhir.fhirStrings.`comments-on`
 import typings.fhir.fhirStrings.`composed-of`
 import typings.fhir.fhirStrings.`contained-in`
 import typings.fhir.fhirStrings.`correction-in`
+import typings.fhir.fhirStrings.`created-with`
 import typings.fhir.fhirStrings.`depends-on`
 import typings.fhir.fhirStrings.`derived-from`
 import typings.fhir.fhirStrings.`part-of`
 import typings.fhir.fhirStrings.`replaced-with`
 import typings.fhir.fhirStrings.`retracted-by`
 import typings.fhir.fhirStrings.`similar-to`
+import typings.fhir.fhirStrings.`specification-of`
 import typings.fhir.fhirStrings.`supported-with`
 import typings.fhir.fhirStrings.`transformed-into`
 import typings.fhir.fhirStrings.`transformed-with`
+import typings.fhir.fhirStrings.active
 import typings.fhir.fhirStrings.amends
 import typings.fhir.fhirStrings.appends
 import typings.fhir.fhirStrings.citation_
@@ -24,14 +28,18 @@ import typings.fhir.fhirStrings.cites
 import typings.fhir.fhirStrings.contains
 import typings.fhir.fhirStrings.corrects
 import typings.fhir.fhirStrings.documentation
+import typings.fhir.fhirStrings.documents
+import typings.fhir.fhirStrings.draft
 import typings.fhir.fhirStrings.justification
 import typings.fhir.fhirStrings.predecessor
 import typings.fhir.fhirStrings.replaces
+import typings.fhir.fhirStrings.retired
 import typings.fhir.fhirStrings.retracts
 import typings.fhir.fhirStrings.signs
 import typings.fhir.fhirStrings.successor
 import typings.fhir.fhirStrings.supports
 import typings.fhir.fhirStrings.transforms
+import typings.fhir.fhirStrings.unknown
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,6 +53,10 @@ trait RelatedArtifact
   var _display: js.UndefOr[Element] = js.undefined
   
   var _label: js.UndefOr[Element] = js.undefined
+  
+  var _publicationDate: js.UndefOr[Element] = js.undefined
+  
+  var _publicationStatus: js.UndefOr[Element] = js.undefined
   
   var _resource: js.UndefOr[Element] = js.undefined
   
@@ -76,6 +88,16 @@ trait RelatedArtifact
   var label: js.UndefOr[String] = js.undefined
   
   /**
+    * The date of publication of the artifact being referred to.
+    */
+  var publicationDate: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The publication status of the artifact being referred to.
+    */
+  var publicationStatus: js.UndefOr[draft | active | retired | unknown] = js.undefined
+  
+  /**
     * If the type is predecessor, this is a reference to the succeeding knowledge resource. If the type is successor, this is a reference to the prior knowledge resource.
     */
   var resource: js.UndefOr[String] = js.undefined
@@ -86,14 +108,14 @@ trait RelatedArtifact
   var resourceReference: js.UndefOr[Reference] = js.undefined
   
   /**
-    * The presence of both sides of a relationship type (e.g. successor and predecessor) is required to support use cases where one side of a relationship is not represented in FHIR. However, this feature SHALL NOT be used to create bi-directional resource links in FHIR instances.
+    * The presence of both sides of a relationship type (e.g. successor and predecessor) is required to support use cases where one side of a relationship is not represented in FHIR. However, this feature SHALL NOT be used to create bi-directional resource links in FHIR instances. Specifically, following the methodology of "new points to old" and "many points to one", when using related artifact elements to describe and reference FHIR resources, the type element SHALL be drawn from the fhir-related-artifact-type ValueSet.
     */
-  var `type`: documentation | justification | citation_ | predecessor | successor | `derived-from` | `depends-on` | `composed-of` | `part-of` | amends | `amended-with` | appends | `appended-with` | cites | `cited-by` | `comments-on` | `comment-in` | contains | `contained-in` | corrects | `correction-in` | replaces | `replaced-with` | retracts | `retracted-by` | signs | `similar-to` | supports | `supported-with` | transforms | `transformed-into` | `transformed-with`
+  var `type`: documentation | justification | citation_ | predecessor | successor | `derived-from` | `depends-on` | `composed-of` | `part-of` | amends | `amended-with` | appends | `appended-with` | cites | `cited-by` | `comments-on` | `comment-in` | contains | `contained-in` | corrects | `correction-in` | replaces | `replaced-with` | retracts | `retracted-by` | signs | `similar-to` | supports | `supported-with` | transforms | `transformed-into` | `transformed-with` | documents | `specification-of` | `created-with` | `cite-as`
 }
 object RelatedArtifact {
   
   inline def apply(
-    `type`: documentation | justification | citation_ | predecessor | successor | `derived-from` | `depends-on` | `composed-of` | `part-of` | amends | `amended-with` | appends | `appended-with` | cites | `cited-by` | `comments-on` | `comment-in` | contains | `contained-in` | corrects | `correction-in` | replaces | `replaced-with` | retracts | `retracted-by` | signs | `similar-to` | supports | `supported-with` | transforms | `transformed-into` | `transformed-with`
+    `type`: documentation | justification | citation_ | predecessor | successor | `derived-from` | `depends-on` | `composed-of` | `part-of` | amends | `amended-with` | appends | `appended-with` | cites | `cited-by` | `comments-on` | `comment-in` | contains | `contained-in` | corrects | `correction-in` | replaces | `replaced-with` | retracts | `retracted-by` | signs | `similar-to` | supports | `supported-with` | transforms | `transformed-into` | `transformed-with` | documents | `specification-of` | `created-with` | `cite-as`
   ): RelatedArtifact = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -125,6 +147,14 @@ object RelatedArtifact {
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
+    inline def setPublicationDate(value: String): Self = StObject.set(x, "publicationDate", value.asInstanceOf[js.Any])
+    
+    inline def setPublicationDateUndefined: Self = StObject.set(x, "publicationDate", js.undefined)
+    
+    inline def setPublicationStatus(value: draft | active | retired | unknown): Self = StObject.set(x, "publicationStatus", value.asInstanceOf[js.Any])
+    
+    inline def setPublicationStatusUndefined: Self = StObject.set(x, "publicationStatus", js.undefined)
+    
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setResourceReference(value: Reference): Self = StObject.set(x, "resourceReference", value.asInstanceOf[js.Any])
@@ -134,7 +164,7 @@ object RelatedArtifact {
     inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
     inline def setType(
-      value: documentation | justification | citation_ | predecessor | successor | `derived-from` | `depends-on` | `composed-of` | `part-of` | amends | `amended-with` | appends | `appended-with` | cites | `cited-by` | `comments-on` | `comment-in` | contains | `contained-in` | corrects | `correction-in` | replaces | `replaced-with` | retracts | `retracted-by` | signs | `similar-to` | supports | `supported-with` | transforms | `transformed-into` | `transformed-with`
+      value: documentation | justification | citation_ | predecessor | successor | `derived-from` | `depends-on` | `composed-of` | `part-of` | amends | `amended-with` | appends | `appended-with` | cites | `cited-by` | `comments-on` | `comment-in` | contains | `contained-in` | corrects | `correction-in` | replaces | `replaced-with` | retracts | `retracted-by` | signs | `similar-to` | supports | `supported-with` | transforms | `transformed-into` | `transformed-with` | documents | `specification-of` | `created-with` | `cite-as`
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def set_citation(value: Element): Self = StObject.set(x, "_citation", value.asInstanceOf[js.Any])
@@ -148,6 +178,14 @@ object RelatedArtifact {
     inline def set_label(value: Element): Self = StObject.set(x, "_label", value.asInstanceOf[js.Any])
     
     inline def set_labelUndefined: Self = StObject.set(x, "_label", js.undefined)
+    
+    inline def set_publicationDate(value: Element): Self = StObject.set(x, "_publicationDate", value.asInstanceOf[js.Any])
+    
+    inline def set_publicationDateUndefined: Self = StObject.set(x, "_publicationDate", js.undefined)
+    
+    inline def set_publicationStatus(value: Element): Self = StObject.set(x, "_publicationStatus", value.asInstanceOf[js.Any])
+    
+    inline def set_publicationStatusUndefined: Self = StObject.set(x, "_publicationStatus", js.undefined)
     
     inline def set_resource(value: Element): Self = StObject.set(x, "_resource", value.asInstanceOf[js.Any])
     

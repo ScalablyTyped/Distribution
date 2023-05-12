@@ -1,7 +1,7 @@
 package typings.dynogels.mod.AWS
 
-import typings.awsSdk.clientsS3Mod.ClientConfiguration
-import typings.awsSdk.libS3ManagedUploadMod.ManagedUpload.ManagedUploadOptions
+import typings.awsSdk2Types.clientsS3Mod.ClientConfiguration
+import typings.awsSdk2Types.libS3ManagedUploadMod.ManagedUpload.ManagedUploadOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a service object. This object has one method for each API operation.
   */
 open class S3 ()
-  extends typings.awsSdk.mod.S3 {
+  extends typings.awsSdk2Types.mod.S3 {
   def this(options: ClientConfiguration) = this()
 }
 object S3 {
@@ -20,7 +20,7 @@ object S3 {
   @JSImport("dynogels", "AWS.S3.ManagedUpload")
   @js.native
   open class ManagedUpload protected ()
-    extends typings.awsSdk.mod.S3.ManagedUpload {
+    extends typings.awsSdk2Types.mod.S3.ManagedUpload {
     /**
       * Creates a managed upload object with a set of configuration options.
       */
@@ -55,5 +55,5 @@ object S3 {
   @JSImport("dynogels", "AWS.S3.PresignedPost")
   @js.native
   open class PresignedPost ()
-    extends typings.awsSdk.mod.S3.PresignedPost
+    extends typings.awsSdk2Types.mod.S3.PresignedPost
 }

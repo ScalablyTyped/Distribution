@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListLaunchProfileMembersRequest extends StObject {
   
   /**
-    * The Launch Profile ID.
+    * The ID of the launch profile used to control access from the streaming session.
     */
   var launchProfileId: String
   
@@ -17,7 +17,7 @@ trait ListLaunchProfileMembersRequest extends StObject {
   var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
-    * The token to request the next page of results. 
+    * The token for the next set of results, or null if there are no more results.
     */
   var nextToken: js.UndefOr[String] = js.undefined
   

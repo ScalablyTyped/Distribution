@@ -1,11 +1,12 @@
 package typings.libp2pKadDht
 
-import typings.libp2pInterfaceDht.mod.QueryEvent
-import typings.libp2pInterfaceDht.mod.QueryOptions
 import typings.libp2pInterfaceMetrics.mod.Metrics
 import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pInterfaces.distSrcStartableMod.Startable
 import typings.libp2pKadDht.distSrcQueryTypesMod.QueryFunc
+import typings.libp2pKadDht.distSrcRoutingTableMod.RoutingTable
+import typings.libp2pKadDht.mod.QueryEvent
+import typings.pDefer.mod.DeferredPromise
 import typings.std.AsyncGenerator
 import typings.std.CustomEvent
 import org.scalablytyped.runtime.StObject
@@ -25,26 +26,27 @@ object distSrcQueryManagerMod {
     
     /* private */ val components: Any = js.native
     
-    /* private */ val controllers: Any = js.native
-    
     var disjointPaths: Double = js.native
+    
+    /* private */ var initialQuerySelfHasRun: Any = js.native
     
     /* CompleteClass */
     override def isStarted(): Boolean = js.native
     
     /* private */ val lan: Any = js.native
     
+    /* private */ var metrics: Any = js.native
+    
     /* private */ var queries: Any = js.native
     
-    def run(key: js.typedarray.Uint8Array, peers: js.Array[PeerId], queryFunc: QueryFunc): AsyncGenerator[QueryEvent, Unit, Any] = js.native
-    def run(
-      key: js.typedarray.Uint8Array,
-      peers: js.Array[PeerId],
-      queryFunc: QueryFunc,
-      options: QueryOptions
-    ): AsyncGenerator[QueryEvent, Unit, Any] = js.native
+    /* private */ val routingTable: Any = js.native
+    
+    def run(key: js.typedarray.Uint8Array, queryFunc: QueryFunc): AsyncGenerator[QueryEvent, Any, Any] = js.native
+    def run(key: js.typedarray.Uint8Array, queryFunc: QueryFunc, options: QueryOptions): AsyncGenerator[QueryEvent, Any, Any] = js.native
     
     /* private */ var running: Any = js.native
+    
+    /* private */ val shutDownController: Any = js.native
     
     /**
       * This method will be invoked to start the component.
@@ -111,12 +113,16 @@ object distSrcQueryManagerMod {
     
     var disjointPaths: js.UndefOr[Double] = js.undefined
     
+    var initialQuerySelfHasRun: DeferredPromise[Unit]
+    
     var lan: js.UndefOr[Boolean] = js.undefined
+    
+    var routingTable: RoutingTable
   }
   object QueryManagerInit {
     
-    inline def apply(): QueryManagerInit = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(initialQuerySelfHasRun: DeferredPromise[Unit], routingTable: RoutingTable): QueryManagerInit = {
+      val __obj = js.Dynamic.literal(initialQuerySelfHasRun = initialQuerySelfHasRun.asInstanceOf[js.Any], routingTable = routingTable.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueryManagerInit]
     }
     
@@ -131,9 +137,35 @@ object distSrcQueryManagerMod {
       
       inline def setDisjointPathsUndefined: Self = StObject.set(x, "disjointPaths", js.undefined)
       
+      inline def setInitialQuerySelfHasRun(value: DeferredPromise[Unit]): Self = StObject.set(x, "initialQuerySelfHasRun", value.asInstanceOf[js.Any])
+      
       inline def setLan(value: Boolean): Self = StObject.set(x, "lan", value.asInstanceOf[js.Any])
       
       inline def setLanUndefined: Self = StObject.set(x, "lan", js.undefined)
+      
+      inline def setRoutingTable(value: RoutingTable): Self = StObject.set(x, "routingTable", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait QueryOptions
+    extends StObject
+       with typings.libp2pKadDht.mod.QueryOptions {
+    
+    var isSelfQuery: js.UndefOr[Boolean] = js.undefined
+  }
+  object QueryOptions {
+    
+    inline def apply(): QueryOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[QueryOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryOptions] (val x: Self) extends AnyVal {
+      
+      inline def setIsSelfQuery(value: Boolean): Self = StObject.set(x, "isSelfQuery", value.asInstanceOf[js.Any])
+      
+      inline def setIsSelfQueryUndefined: Self = StObject.set(x, "isSelfQuery", js.undefined)
     }
   }
 }

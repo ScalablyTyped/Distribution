@@ -37,6 +37,11 @@ trait GetResponsePlanOutput extends StObject {
   var incidentTemplate: IncidentTemplate
   
   /**
+    * Information about third-party services integrated into the Incident Manager response plan.
+    */
+  var integrations: js.UndefOr[Integrations] = js.undefined
+  
+  /**
     * The short format name of the response plan. The name can't contain spaces.
     */
   var name: ResponsePlanName
@@ -74,6 +79,12 @@ object GetResponsePlanOutput {
     inline def setEngagementsVarargs(value: SsmContactsArn*): Self = StObject.set(x, "engagements", js.Array(value*))
     
     inline def setIncidentTemplate(value: IncidentTemplate): Self = StObject.set(x, "incidentTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setIntegrations(value: Integrations): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
+    
+    inline def setIntegrationsUndefined: Self = StObject.set(x, "integrations", js.undefined)
+    
+    inline def setIntegrationsVarargs(value: Integration*): Self = StObject.set(x, "integrations", js.Array(value*))
     
     inline def setName(value: ResponsePlanName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

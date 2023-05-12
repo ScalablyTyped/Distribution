@@ -6,10 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object domActionsMod {
   
-  @JSImport("photoshop/dom/Actions", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
-  
   @JSImport("photoshop/dom/Actions", "Action")
   @js.native
   open class Action protected () extends StObject {
@@ -19,54 +15,69 @@ object domActionsMod {
     def this(id: Double) = this()
     
     /**
-      * Deletes this action from the actions panel
+      * Deletes this Action from the Actions panel
       *
+      * @minVersion 22.1
       */
     def delete(): Unit = js.native
     
     /**
-      * Creates a copy of this action, placing it in the same action set
+      * Creates a copy of this Action, placing it in the same Action Set
+      *
+      * @minVersion 22.1
       */
     def duplicate(): Action = js.native
     
     /**
-      * The internal ID of this action
-      *
+      * The internal ID of this Action
       * Can be used for batchPlay calls, used internally
+      *
+      * @minVersion 22.1
       */
     def id: Double = js.native
     
     /**
-      * 0-index of this action in it's parent action set
+      * Zero-based index of this Action in it's parent Action Set
+      *
+      * @minVersion 22.1
       */
     def index: Double = js.native
     
     /**
-      * The name of this action, displayed in the panel
+      * The name of this Action, displayed in the panel
       * Cannot be changed
+      *
+      * @minVersion 22.1
       */
     def name: String = js.native
     /**
-      * Renames the action set
+      * Renames the Action Set
+      *
+      * @minVersion 22.1
       */
     def name_=(name: String): Unit = js.native
     
     /**
-      * The action set this action belongs to
+      * The Action Set this Action belongs to
+      *
+      * @minVersion 22.1
       */
     def parent: ActionSet = js.native
     
     /**
-      * Plays this action
+      * Plays this Action
       *
       * @async
+      * @minVersion 22.1
       */
     def play(): js.Promise[Unit] = js.native
     
     /**
-      * The class name of the referenced Action object
+      * The class name of the referenced object: *"Action"*.
+      *
+      * @minVersion 23.0
       */
-    def typename: String = js.native
+    def typename: typings.photoshop.photoshopStrings.Action = js.native
   }
   
   @JSImport("photoshop/dom/Actions", "ActionSet")
@@ -78,56 +89,67 @@ object domActionsMod {
     def this(id: Any) = this()
     
     /**
-      * List of actions in this action set
+      * List of Actions in this Action Set
+      *
+      * @minVersion 22.1
       */
     def actions: js.Array[Action] = js.native
     
     /**
-      * Deletes this action set from the actions panel
+      * Deletes this Action Set from the Actions panel
+      *
+      * @minVersion 22.1
       */
     def delete(): Unit = js.native
     
     /**
-      * Creates a copy of this action set
+      * Creates a copy of this Action Set
+      *
+      * @minVersion 22.1
       */
     def duplicate(): ActionSet = js.native
     
     /**
       * The internal ID of this Action Set
       * Can be used for batchPlay calls, used internally
+      *
+      * @minVersion 22.1
       */
     def id: Double = js.native
     
     /**
-      * 0-index of this action set in the actions palette
+      * Zero-based index of this Action Set in the Actions palette
+      *
+      * @minVersion 22.1
       */
     def index: Double = js.native
     
     /**
-      * The name of this action set, displayed in the panel
+      * The name of this Action Set, displayed in the panel
+      *
+      * @minVersion 22.1
       */
     def name: String = js.native
     /**
-      * Renames the action set
+      * Renames the Action Set
+      *
+      * @minVersion 22.1
       */
     def name_=(name: String): Unit = js.native
     
     /**
-      * Plays all actions in this set one by one
+      * Plays all Actions in this set one by one
       *
       * @async
+      * @minVersion 22.1
       */
     def play(): js.Promise[Unit] = js.native
     
     /**
-      * The class name of the referenced ActionSet object
+      * The class name of the referenced object: *"ActionSet"*.
+      *
+      * @minVersion 23.0
       */
-    def typename: String = js.native
+    def typename: typings.photoshop.photoshopStrings.ActionSet = js.native
   }
-  
-  inline def PSAction(id: Double): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("PSAction")(id.asInstanceOf[js.Any]).asInstanceOf[Action]
-  
-  inline def PSActionSet(id: Double): ActionSet = ^.asInstanceOf[js.Dynamic].applyDynamic("PSActionSet")(id.asInstanceOf[js.Any]).asInstanceOf[ActionSet]
-  
-  inline def validateActionSet(actionSet: ActionSet): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateActionSet")(actionSet.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

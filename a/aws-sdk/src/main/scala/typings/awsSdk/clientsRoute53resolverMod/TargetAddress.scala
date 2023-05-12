@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TargetAddress extends StObject {
   
   /**
-    * One IP address that you want to forward DNS queries to. You can specify only IPv4 addresses.
+    * One IPv4 address that you want to forward DNS queries to.
     */
-  var Ip: typings.awsSdk.clientsRoute53resolverMod.Ip
+  var Ip: js.UndefOr[typings.awsSdk.clientsRoute53resolverMod.Ip] = js.undefined
+  
+  /**
+    *  One IPv6 address that you want to forward DNS queries to. 
+    */
+  var Ipv6: js.UndefOr[typings.awsSdk.clientsRoute53resolverMod.Ipv6] = js.undefined
   
   /**
     * The port at Ip that you want to forward DNS queries to.
@@ -18,8 +23,8 @@ trait TargetAddress extends StObject {
 }
 object TargetAddress {
   
-  inline def apply(Ip: Ip): TargetAddress = {
-    val __obj = js.Dynamic.literal(Ip = Ip.asInstanceOf[js.Any])
+  inline def apply(): TargetAddress = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TargetAddress]
   }
   
@@ -27,6 +32,12 @@ object TargetAddress {
   implicit open class MutableBuilder[Self <: TargetAddress] (val x: Self) extends AnyVal {
     
     inline def setIp(value: Ip): Self = StObject.set(x, "Ip", value.asInstanceOf[js.Any])
+    
+    inline def setIpUndefined: Self = StObject.set(x, "Ip", js.undefined)
+    
+    inline def setIpv6(value: Ipv6): Self = StObject.set(x, "Ipv6", value.asInstanceOf[js.Any])
+    
+    inline def setIpv6Undefined: Self = StObject.set(x, "Ipv6", js.undefined)
     
     inline def setPort(value: Port): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     

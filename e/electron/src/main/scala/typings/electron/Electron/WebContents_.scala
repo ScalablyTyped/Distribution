@@ -1,18 +1,19 @@
 package typings.electron.Electron
 
 import typings.electron.anon.Action
-import typings.electron.anon.OverrideBrowserWindowOptions
+import typings.electron.anon.OutlivesOpener
 import typings.electron.electronStrings.HTMLComplete
 import typings.electron.electronStrings.HTMLOnly
 import typings.electron.electronStrings.MHTML
-import typings.electron.electronStrings.`background-tab`
 import typings.electron.electronStrings.`before-input-event`
 import typings.electron.electronStrings.`certificate-error`
 import typings.electron.electronStrings.`console-message`
+import typings.electron.electronStrings.`content-bounds-updated`
 import typings.electron.electronStrings.`context-menu`
 import typings.electron.electronStrings.`cursor-changed`
 import typings.electron.electronStrings.`devtools-closed`
 import typings.electron.electronStrings.`devtools-focused`
+import typings.electron.electronStrings.`devtools-open-url`
 import typings.electron.electronStrings.`devtools-opened`
 import typings.electron.electronStrings.`devtools-reload-page`
 import typings.electron.electronStrings.`did-attach-webview`
@@ -31,22 +32,20 @@ import typings.electron.electronStrings.`did-start-navigation`
 import typings.electron.electronStrings.`did-stop-loading`
 import typings.electron.electronStrings.`dom-ready`
 import typings.electron.electronStrings.`enter-html-full-screen`
-import typings.electron.electronStrings.`foreground-tab`
 import typings.electron.electronStrings.`found-in-page`
 import typings.electron.electronStrings.`frame-created`
+import typings.electron.electronStrings.`input-event`
 import typings.electron.electronStrings.`ipc-message-sync`
 import typings.electron.electronStrings.`ipc-message`
 import typings.electron.electronStrings.`leave-html-full-screen`
 import typings.electron.electronStrings.`media-paused`
 import typings.electron.electronStrings.`media-started-playing`
-import typings.electron.electronStrings.`new-window`
 import typings.electron.electronStrings.`page-favicon-updated`
 import typings.electron.electronStrings.`page-title-updated`
 import typings.electron.electronStrings.`plugin-crashed`
 import typings.electron.electronStrings.`preferred-size-changed`
 import typings.electron.electronStrings.`preload-error`
 import typings.electron.electronStrings.`render-process-gone`
-import typings.electron.electronStrings.`save-to-disk`
 import typings.electron.electronStrings.`select-bluetooth-device`
 import typings.electron.electronStrings.`select-client-certificate`
 import typings.electron.electronStrings.`update-target-url`
@@ -74,7 +73,6 @@ import typings.electron.electronStrings.keepSelection
 import typings.electron.electronStrings.login
 import typings.electron.electronStrings.noAnimation
 import typings.electron.electronStrings.offscreen
-import typings.electron.electronStrings.other
 import typings.electron.electronStrings.out
 import typings.electron.electronStrings.paint
 import typings.electron.electronStrings.remote
@@ -92,20 +90,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait WebContents_ extends EventEmitter {
   
-  def addListener(
-    event: `new-window`,
-    listener: js.Function8[
-      /* event */ NewWindowWebContentsEvent, 
-      /* url */ String, 
-      /* frameName */ String, 
-      /* disposition */ default | `foreground-tab` | `background-tab` | `new-window` | `save-to-disk` | other, 
-      /* options */ BrowserWindowConstructorOptions, 
-      /* additionalFeatures */ js.Array[String], 
-      /* referrer */ Referrer, 
-      /* postBody */ PostBody, 
-      Unit
-    ]
-  ): this.type = js.native
   def addListener(
     event: `zoom-changed`,
     listener: js.Function2[/* event */ Event, /* zoomDirection */ in | out, Unit]
@@ -140,6 +124,11 @@ trait WebContents_ extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
+  def addListener_contentboundsupdated(
+    event: `content-bounds-updated`,
+    listener: js.Function2[/* event */ Event, /* bounds */ Rectangle, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
   def addListener_contextmenu(
     event: `context-menu`,
     listener: js.Function2[/* event */ Event, /* params */ ContextMenuParams, Unit]
@@ -167,6 +156,8 @@ trait WebContents_ extends EventEmitter {
   def addListener_devtoolsfocused(event: `devtools-focused`, listener: js.Function): this.type = js.native
   @JSName("addListener")
   def addListener_devtoolsopened(event: `devtools-opened`, listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  def addListener_devtoolsopenurl(event: `devtools-open-url`, listener: js.Function1[/* url */ String, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_devtoolsreloadpage(event: `devtools-reload-page`, listener: js.Function): this.type = js.native
   @JSName("addListener")
@@ -293,7 +284,7 @@ trait WebContents_ extends EventEmitter {
   @JSName("addListener")
   def addListener_didstoploading(event: `did-stop-loading`, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def addListener_domready(event: `dom-ready`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def addListener_domready(event: `dom-ready`, listener: js.Function): this.type = js.native
   @JSName("addListener")
   def addListener_enterhtmlfullscreen(event: `enter-html-full-screen`, listener: js.Function): this.type = js.native
   @JSName("addListener")
@@ -305,6 +296,8 @@ trait WebContents_ extends EventEmitter {
     event: `frame-created`,
     listener: js.Function2[/* event */ Event, /* details */ FrameCreatedDetails, Unit]
   ): this.type = js.native
+  @JSName("addListener")
+  def addListener_inputevent(event: `input-event`, listener: js.Function2[/* event */ Event, /* inputEvent */ InputEvent, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_ipcmessage(
     event: `ipc-message`,
@@ -487,15 +480,29 @@ trait WebContents_ extends EventEmitter {
     * Resolves with a NativeImage
     *
     * Captures a snapshot of the page within `rect`. Omitting `rect` will capture the
-    * whole visible page.
+    * whole visible page. The page is considered visible when its browser window is
+    * hidden and the capturer count is non-zero. If you would like the page to stay
+    * hidden, you should ensure that `stayHidden` is set to true.
     */
   def capturePage(): js.Promise[NativeImage_] = js.native
+  def capturePage(rect: Unit, opts: Opts): js.Promise[NativeImage_] = js.native
   def capturePage(rect: Rectangle): js.Promise[NativeImage_] = js.native
+  def capturePage(rect: Rectangle, opts: Opts): js.Promise[NativeImage_] = js.native
   
   /**
     * Clears the navigation history.
     */
   def clearHistory(): Unit = js.native
+  
+  /**
+    * Closes the page, as if the web content had called `window.close()`.
+    *
+    * If the page is successfully closed (i.e. the unload is not prevented by the
+    * page, or `waitForBeforeUnload` is false or unspecified), the WebContents will be
+    * destroyed and no longer usable. The `destroyed` event will be emitted.
+    */
+  def close(): Unit = js.native
+  def close(opts: CloseOpts): Unit = js.native
   
   /**
     * Closes the devtools.
@@ -522,17 +529,6 @@ trait WebContents_ extends EventEmitter {
     *
     */
   val debugger: Debugger = js.native
-  
-  /**
-    * Decrease the capturer count by one. The page will be set to hidden or occluded
-    * state when its browser window is hidden or occluded and the capturer count
-    * reaches zero. If you want to decrease the hidden capturer count instead you
-    * should set `stayHidden` to true.
-    */
-  def decrementCapturerCount(): Unit = js.native
-  def decrementCapturerCount(stayHidden: Boolean): Unit = js.native
-  def decrementCapturerCount(stayHidden: Boolean, stayAwake: Boolean): Unit = js.native
-  def decrementCapturerCount(stayHidden: Unit, stayAwake: Boolean): Unit = js.native
   
   /**
     * Executes the editing command `delete` in web page.
@@ -625,7 +621,7 @@ trait WebContents_ extends EventEmitter {
     * An `Integer` property that sets the frame rate of the web contents to the
     * specified number. Only values between 1 and 240 are accepted.
     *
-    * Only applicable if *offscreen rendering* is enabled.
+    * Only applicable if _offscreen rendering_ is enabled.
     */
   var frameRate: Double = js.native
   
@@ -641,7 +637,7 @@ trait WebContents_ extends EventEmitter {
   def getBackgroundThrottling(): Boolean = js.native
   
   /**
-    * If *offscreen rendering* is enabled returns the current frame rate.
+    * If _offscreen rendering_ is enabled returns the current frame rate.
     */
   def getFrameRate(): Double = js.native
   
@@ -752,22 +748,6 @@ trait WebContents_ extends EventEmitter {
   val id: Double = js.native
   
   /**
-    * Increase the capturer count by one. The page is considered visible when its
-    * browser window is hidden and the capturer count is non-zero. If you would like
-    * the page to stay hidden, you should ensure that `stayHidden` is set to true.
-    *
-    * This also affects the Page Visibility API.
-    */
-  def incrementCapturerCount(): Unit = js.native
-  def incrementCapturerCount(size: Unit, stayHidden: Boolean): Unit = js.native
-  def incrementCapturerCount(size: Unit, stayHidden: Boolean, stayAwake: Boolean): Unit = js.native
-  def incrementCapturerCount(size: Unit, stayHidden: Unit, stayAwake: Boolean): Unit = js.native
-  def incrementCapturerCount(size: Size): Unit = js.native
-  def incrementCapturerCount(size: Size, stayHidden: Boolean): Unit = js.native
-  def incrementCapturerCount(size: Size, stayHidden: Boolean, stayAwake: Boolean): Unit = js.native
-  def incrementCapturerCount(size: Size, stayHidden: Unit, stayAwake: Boolean): Unit = js.native
-  
-  /**
     * A promise that resolves with a key for the inserted CSS that can later be used
     * to remove the CSS via `contents.removeInsertedCSS(key)`.
     *
@@ -805,7 +785,7 @@ trait WebContents_ extends EventEmitter {
   /**
     * Schedules a full repaint of the window this web contents is in.
     *
-    * If *offscreen rendering* is enabled invalidates the frame and generates a new
+    * If _offscreen rendering_ is enabled invalidates the frame and generates a new
     * one through the `'paint'` event.
     */
   def invalidate(): Unit = js.native
@@ -893,12 +873,12 @@ trait WebContents_ extends EventEmitter {
   def isLoadingMainFrame(): Boolean = js.native
   
   /**
-    * Indicates whether *offscreen rendering* is enabled.
+    * Indicates whether _offscreen rendering_ is enabled.
     */
   def isOffscreen(): Boolean = js.native
   
   /**
-    * If *offscreen rendering* is enabled returns whether it is currently painting.
+    * If _offscreen rendering_ is enabled returns whether it is currently painting.
     */
   def isPainting(): Boolean = js.native
   
@@ -941,36 +921,6 @@ trait WebContents_ extends EventEmitter {
     */
   val mainFrame: WebFrameMain_ = js.native
   
-  /**
-    * Deprecated in favor of `webContents.setWindowOpenHandler`.
-    *
-    * Emitted when the page requests to open a new window for a `url`. It could be
-    * requested by `window.open` or an external link like `<a target='_blank'>`.
-    *
-    * By default a new `BrowserWindow` will be created for the `url`.
-    *
-    * Calling `event.preventDefault()` will prevent Electron from automatically
-    * creating a new `BrowserWindow`. If you call `event.preventDefault()` and
-    * manually create a new `BrowserWindow` then you must set `event.newGuest` to
-    * reference the new `BrowserWindow` instance, failing to do so may result in
-    * unexpected behavior. For example:
-    *
-    * @deprecated
-    */
-  def on(
-    event: `new-window`,
-    listener: js.Function8[
-      /* event */ NewWindowWebContentsEvent, 
-      /* url */ String, 
-      /* frameName */ String, 
-      /* disposition */ default | `foreground-tab` | `background-tab` | `new-window` | `save-to-disk` | other, 
-      /* options */ BrowserWindowConstructorOptions, 
-      /* additionalFeatures */ js.Array[String], 
-      /* referrer */ Referrer, 
-      /* postBody */ PostBody, 
-      Unit
-    ]
-  ): this.type = js.native
   /**
     * Emitted when the user is requesting to change the zoom level using the mouse
     * wheel.
@@ -1025,6 +975,17 @@ trait WebContents_ extends EventEmitter {
       /* sourceId */ String, 
       Unit
     ]
+  ): this.type = js.native
+  /**
+    * Emitted when the page calls `window.moveTo`, `window.resizeTo` or related APIs.
+    *
+    * By default, this will move the window. To prevent that behavior, call
+    * `event.preventDefault()`.
+    */
+  @JSName("on")
+  def on_contentboundsupdated(
+    event: `content-bounds-updated`,
+    listener: js.Function2[/* event */ Event, /* bounds */ Rectangle, Unit]
   ): this.type = js.native
   /**
     * Emitted when there is a new context menu that needs to be handled.
@@ -1093,6 +1054,12 @@ trait WebContents_ extends EventEmitter {
     */
   @JSName("on")
   def on_devtoolsopened(event: `devtools-opened`, listener: js.Function): this.type = js.native
+  /**
+    * Emitted when a link is clicked in DevTools or 'Open in new tab' is selected for
+    * a link in its context menu.
+    */
+  @JSName("on")
+  def on_devtoolsopenurl(event: `devtools-open-url`, listener: js.Function1[/* url */ String, Unit]): this.type = js.native
   /**
     * Emitted when the devtools window instructs the webContents to reload
     */
@@ -1293,7 +1260,7 @@ trait WebContents_ extends EventEmitter {
     * Emitted when the document in the top-level frame is loaded.
     */
   @JSName("on")
-  def on_domready(event: `dom-ready`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def on_domready(event: `dom-ready`, listener: js.Function): this.type = js.native
   /**
     * Emitted when the window enters a full-screen state triggered by HTML API.
     */
@@ -1314,7 +1281,7 @@ trait WebContents_ extends EventEmitter {
   @JSName("on")
   def on_focus(event: focus, listener: js.Function): this.type = js.native
   /**
-    * Emitted when a result is available for [`webContents.findInPage`] request.
+    * Emitted when a result is available for `webContents.findInPage` request.
     */
   @JSName("on")
   def on_foundinpage(event: `found-in-page`, listener: js.Function2[/* event */ Event, /* result */ Result, Unit]): this.type = js.native
@@ -1327,6 +1294,12 @@ trait WebContents_ extends EventEmitter {
     event: `frame-created`,
     listener: js.Function2[/* event */ Event, /* details */ FrameCreatedDetails, Unit]
   ): this.type = js.native
+  /**
+    * Emitted when an input event is sent to the WebContents. See InputEvent for
+    * details.
+    */
+  @JSName("on")
+  def on_inputevent(event: `input-event`, listener: js.Function2[/* event */ Event, /* inputEvent */ InputEvent, Unit]): this.type = js.native
   /**
     * Emitted when the renderer process sends an asynchronous message via
     * `ipcRenderer.send()`.
@@ -1451,14 +1424,19 @@ trait WebContents_ extends EventEmitter {
   @JSName("on")
   def on_responsive(event: responsive, listener: js.Function): this.type = js.native
   /**
-    * Emitted when bluetooth device needs to be selected on call to
-    * `navigator.bluetooth.requestDevice`. To use `navigator.bluetooth` api
-    * `webBluetooth` should be enabled. If `event.preventDefault` is not called, first
-    * available device will be selected. `callback` should be called with `deviceId`
-    * to be selected, passing empty string to `callback` will cancel the request.
+    * Emitted when a bluetooth device needs to be selected when a call to
+    * `navigator.bluetooth.requestDevice` is made. `callback` should be called with
+    * the `deviceId` of the device to be selected.  Passing an empty string to
+    * `callback` will cancel the request.
     *
-    * If no event listener is added for this event, all bluetooth requests will be
-    * cancelled.
+    * If an event listener is not added for this event, or if `event.preventDefault`
+    * is not called when handling this event, the first available device will be
+    * automatically selected.
+    *
+    * Due to the nature of bluetooth, scanning for devices when
+    * `navigator.bluetooth.requestDevice` is called may take time and will cause
+    * `select-bluetooth-device` to fire multiple times until `callback` is called with
+    * either a device id or an empty string to cancel the request.
     */
   @JSName("on")
   def on_selectbluetoothdevice(
@@ -1567,20 +1545,6 @@ trait WebContents_ extends EventEmitter {
   ): this.type = js.native
   
   def once(
-    event: `new-window`,
-    listener: js.Function8[
-      /* event */ NewWindowWebContentsEvent, 
-      /* url */ String, 
-      /* frameName */ String, 
-      /* disposition */ default | `foreground-tab` | `background-tab` | `new-window` | `save-to-disk` | other, 
-      /* options */ BrowserWindowConstructorOptions, 
-      /* additionalFeatures */ js.Array[String], 
-      /* referrer */ Referrer, 
-      /* postBody */ PostBody, 
-      Unit
-    ]
-  ): this.type = js.native
-  def once(
     event: `zoom-changed`,
     listener: js.Function2[/* event */ Event, /* zoomDirection */ in | out, Unit]
   ): this.type = js.native
@@ -1614,6 +1578,11 @@ trait WebContents_ extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
+  def once_contentboundsupdated(
+    event: `content-bounds-updated`,
+    listener: js.Function2[/* event */ Event, /* bounds */ Rectangle, Unit]
+  ): this.type = js.native
+  @JSName("once")
   def once_contextmenu(
     event: `context-menu`,
     listener: js.Function2[/* event */ Event, /* params */ ContextMenuParams, Unit]
@@ -1641,6 +1610,8 @@ trait WebContents_ extends EventEmitter {
   def once_devtoolsfocused(event: `devtools-focused`, listener: js.Function): this.type = js.native
   @JSName("once")
   def once_devtoolsopened(event: `devtools-opened`, listener: js.Function): this.type = js.native
+  @JSName("once")
+  def once_devtoolsopenurl(event: `devtools-open-url`, listener: js.Function1[/* url */ String, Unit]): this.type = js.native
   @JSName("once")
   def once_devtoolsreloadpage(event: `devtools-reload-page`, listener: js.Function): this.type = js.native
   @JSName("once")
@@ -1767,7 +1738,7 @@ trait WebContents_ extends EventEmitter {
   @JSName("once")
   def once_didstoploading(event: `did-stop-loading`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def once_domready(event: `dom-ready`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def once_domready(event: `dom-ready`, listener: js.Function): this.type = js.native
   @JSName("once")
   def once_enterhtmlfullscreen(event: `enter-html-full-screen`, listener: js.Function): this.type = js.native
   @JSName("once")
@@ -1779,6 +1750,8 @@ trait WebContents_ extends EventEmitter {
     event: `frame-created`,
     listener: js.Function2[/* event */ Event, /* details */ FrameCreatedDetails, Unit]
   ): this.type = js.native
+  @JSName("once")
+  def once_inputevent(event: `input-event`, listener: js.Function2[/* event */ Event, /* inputEvent */ InputEvent, Unit]): this.type = js.native
   @JSName("once")
   def once_ipcmessage(
     event: `ipc-message`,
@@ -1928,7 +1901,7 @@ trait WebContents_ extends EventEmitter {
   
   /**
     * Send a message to the renderer process, optionally transferring ownership of
-    * zero or more [`MessagePortMain`][] objects.
+    * zero or more `MessagePortMain` objects.
     *
     * The transferred `MessagePortMain` objects will be available in the renderer
     * process by accessing the `ports` property of the emitted event. When they arrive
@@ -1998,20 +1971,6 @@ trait WebContents_ extends EventEmitter {
   def removeInsertedCSS(key: String): js.Promise[Unit] = js.native
   
   def removeListener(
-    event: `new-window`,
-    listener: js.Function8[
-      /* event */ NewWindowWebContentsEvent, 
-      /* url */ String, 
-      /* frameName */ String, 
-      /* disposition */ default | `foreground-tab` | `background-tab` | `new-window` | `save-to-disk` | other, 
-      /* options */ BrowserWindowConstructorOptions, 
-      /* additionalFeatures */ js.Array[String], 
-      /* referrer */ Referrer, 
-      /* postBody */ PostBody, 
-      Unit
-    ]
-  ): this.type = js.native
-  def removeListener(
     event: `zoom-changed`,
     listener: js.Function2[/* event */ Event, /* zoomDirection */ in | out, Unit]
   ): this.type = js.native
@@ -2045,6 +2004,11 @@ trait WebContents_ extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
+  def removeListener_contentboundsupdated(
+    event: `content-bounds-updated`,
+    listener: js.Function2[/* event */ Event, /* bounds */ Rectangle, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
   def removeListener_contextmenu(
     event: `context-menu`,
     listener: js.Function2[/* event */ Event, /* params */ ContextMenuParams, Unit]
@@ -2072,6 +2036,8 @@ trait WebContents_ extends EventEmitter {
   def removeListener_devtoolsfocused(event: `devtools-focused`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
   def removeListener_devtoolsopened(event: `devtools-opened`, listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_devtoolsopenurl(event: `devtools-open-url`, listener: js.Function1[/* url */ String, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_devtoolsreloadpage(event: `devtools-reload-page`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
@@ -2198,7 +2164,7 @@ trait WebContents_ extends EventEmitter {
   @JSName("removeListener")
   def removeListener_didstoploading(event: `did-stop-loading`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def removeListener_domready(event: `dom-ready`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def removeListener_domready(event: `dom-ready`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
   def removeListener_enterhtmlfullscreen(event: `enter-html-full-screen`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
@@ -2210,6 +2176,8 @@ trait WebContents_ extends EventEmitter {
     event: `frame-created`,
     listener: js.Function2[/* event */ Event, /* details */ FrameCreatedDetails, Unit]
   ): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_inputevent(event: `input-event`, listener: js.Function2[/* event */ Event, /* inputEvent */ InputEvent, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_ipcmessage(
     event: `ipc-message`,
@@ -2358,13 +2326,14 @@ trait WebContents_ extends EventEmitter {
     * just like `postMessage`, so prototype chains will not be included. Sending
     * Functions, Promises, Symbols, WeakMaps, or WeakSets will throw an exception.
     *
-    * > **NOTE**: Sending non-standard JavaScript types such as DOM objects or special
-    * Electron objects will throw an exception.
+    * :::warning
     *
-    * The renderer process can handle the message by listening to `channel` with the
-    * `ipcRenderer` module.
+    * Sending non-standard JavaScript types such as DOM objects or special Electron
+    * objects will throw an exception.
     *
-    * An example of sending messages from the main process to the renderer process:
+    * :::
+    *
+    * For additional reading, refer to Electron's IPC guide.
     */
   def send(channel: String, args: Any*): Unit = js.native
   
@@ -2436,7 +2405,7 @@ trait WebContents_ extends EventEmitter {
   def setDevToolsWebContents(devToolsWebContents: WebContents_): Unit = js.native
   
   /**
-    * If *offscreen rendering* is enabled sets the frame rate to the specified number.
+    * If _offscreen rendering_ is enabled sets the frame rate to the specified number.
     * Only values between 1 and 240 are accepted.
     */
   def setFrameRate(fps: Double): Unit = js.native
@@ -2484,7 +2453,7 @@ trait WebContents_ extends EventEmitter {
     * submitting a form with `<form target="_blank">`. See `window.open()` for more
     * details and how to use this in conjunction with `did-create-window`.
     */
-  def setWindowOpenHandler(handler: js.Function1[/* details */ HandlerDetails, Action | OverrideBrowserWindowOptions]): Unit = js.native
+  def setWindowOpenHandler(handler: js.Function1[/* details */ HandlerDetails, Action | OutlivesOpener]): Unit = js.native
   
   /**
     * Changes the zoom factor to the specified factor. Zoom factor is zoom percent
@@ -2522,7 +2491,7 @@ trait WebContents_ extends EventEmitter {
   def startDrag(item: Item): Unit = js.native
   
   /**
-    * If *offscreen rendering* is enabled and not painting, start painting.
+    * If _offscreen rendering_ is enabled and not painting, start painting.
     */
   def startPainting(): Unit = js.native
   
@@ -2537,7 +2506,7 @@ trait WebContents_ extends EventEmitter {
   def stopFindInPage(action: clearSelection | keepSelection | activateSelection): Unit = js.native
   
   /**
-    * If *offscreen rendering* is enabled and painting, stop painting.
+    * If _offscreen rendering_ is enabled and painting, stop painting.
     */
   def stopPainting(): Unit = js.native
   

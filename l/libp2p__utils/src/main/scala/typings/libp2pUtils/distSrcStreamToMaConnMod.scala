@@ -1,9 +1,11 @@
 package typings.libp2pUtils
 
 import typings.itStreamTypes.mod.Duplex
+import typings.itStreamTypes.mod.Source
 import typings.libp2pInterfaceConnection.mod.MultiaddrConnection
 import typings.multiformatsMultiaddr.mod.Multiaddr_
 import typings.std.AbortSignal
+import typings.std.AsyncIterable
 import typings.uint8arraylist.mod.Uint8ArrayList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -44,14 +46,22 @@ object distSrcStreamToMaConnMod {
     
     var remoteAddr: Multiaddr_
     
-    var stream: Duplex[Uint8ArrayList, Uint8ArrayList | js.typedarray.Uint8Array, js.Promise[Unit]]
+    var stream: Duplex[
+        AsyncIterable[Uint8ArrayList], 
+        Source[Uint8ArrayList | js.typedarray.Uint8Array], 
+        Any
+      ]
   }
   object StreamProperties {
     
     inline def apply(
       localAddr: Multiaddr_,
       remoteAddr: Multiaddr_,
-      stream: Duplex[Uint8ArrayList, Uint8ArrayList | js.typedarray.Uint8Array, js.Promise[Unit]]
+      stream: Duplex[
+          AsyncIterable[Uint8ArrayList], 
+          Source[Uint8ArrayList | js.typedarray.Uint8Array], 
+          Any
+        ]
     ): StreamProperties = {
       val __obj = js.Dynamic.literal(localAddr = localAddr.asInstanceOf[js.Any], remoteAddr = remoteAddr.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any])
       __obj.asInstanceOf[StreamProperties]
@@ -64,7 +74,13 @@ object distSrcStreamToMaConnMod {
       
       inline def setRemoteAddr(value: Multiaddr_): Self = StObject.set(x, "remoteAddr", value.asInstanceOf[js.Any])
       
-      inline def setStream(value: Duplex[Uint8ArrayList, Uint8ArrayList | js.typedarray.Uint8Array, js.Promise[Unit]]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(
+        value: Duplex[
+              AsyncIterable[Uint8ArrayList], 
+              Source[Uint8ArrayList | js.typedarray.Uint8Array], 
+              Any
+            ]
+      ): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }
   }
   

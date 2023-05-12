@@ -19,8 +19,11 @@ object distRuntimeRe2Mod extends Shortcut {
     def this(pattern: String) = this()
     def this(pattern: js.RegExp) = this()
     def this(pattern: Buffer) = this()
+    def this(pattern: RE2) = this()
     def this(pattern: String, flags: String) = this()
+    def this(pattern: String, flags: Buffer) = this()
     def this(pattern: Buffer, flags: String) = this()
+    def this(pattern: Buffer, flags: Buffer) = this()
   }
   @JSImport("ajv/dist/runtime/re2", JSImport.Default)
   @js.native

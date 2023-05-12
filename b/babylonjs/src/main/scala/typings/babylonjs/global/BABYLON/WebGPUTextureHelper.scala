@@ -30,6 +30,8 @@ object WebGPUTextureHelper {
   
   inline def ComputeNumMipmapLevels(width: Double, height: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ComputeNumMipmapLevels")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Double]
   
+  inline def GetDepthFormatOnly(format: GPUTextureFormat): GPUTextureFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("GetDepthFormatOnly")(format.asInstanceOf[js.Any]).asInstanceOf[GPUTextureFormat]
+  
   inline def GetNumChannelsFromWebGPUTextureFormat(format: GPUTextureFormat): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetNumChannelsFromWebGPUTextureFormat")(format.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   inline def GetWebGPUTextureFormat(`type`: Double, format: Double): GPUTextureFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("GetWebGPUTextureFormat")(`type`.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[GPUTextureFormat]

@@ -15,13 +15,13 @@ trait ConfigStyle extends StObject {
     */
   var properties: js.UndefOr[
     js.Array[
-      /* keyof csstype.csstype.Properties<string & {} | 0, string & {}> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 788, starting with typings.styledSystem.styledSystemStrings.accentColor, typings.styledSystem.styledSystemStrings.alignContent, typings.styledSystem.styledSystemStrings.alignItems */ Any
+      /* keyof csstype.csstype.Properties<string & {} | 0, string & {}> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 808, starting with typings.styledSystem.styledSystemStrings.accentColor, typings.styledSystem.styledSystemStrings.alignContent, typings.styledSystem.styledSystemStrings.alignItems */ Any
     ]
   ] = js.undefined
   
   /** The CSS property to use in the returned style object (overridden by `properties` if present). */
   var property: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 789, starting with typings.styledSystem.styledSystemStrings.accentColor, typings.styledSystem.styledSystemStrings.alignContent, typings.styledSystem.styledSystemStrings.alignItems */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 809, starting with typings.styledSystem.styledSystemStrings.accentColor, typings.styledSystem.styledSystemStrings.alignContent, typings.styledSystem.styledSystemStrings.alignItems */ Any
   ] = js.undefined
   
   /** A string referencing a key in the `theme` object. */
@@ -48,18 +48,18 @@ object ConfigStyle {
     
     inline def setProperties(
       value: js.Array[
-          /* keyof csstype.csstype.Properties<string & {} | 0, string & {}> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 788, starting with typings.styledSystem.styledSystemStrings.accentColor, typings.styledSystem.styledSystemStrings.alignContent, typings.styledSystem.styledSystemStrings.alignItems */ Any
+          /* keyof csstype.csstype.Properties<string & {} | 0, string & {}> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 808, starting with typings.styledSystem.styledSystemStrings.accentColor, typings.styledSystem.styledSystemStrings.alignContent, typings.styledSystem.styledSystemStrings.alignItems */ Any
         ]
     ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     inline def setPropertiesVarargs(
-      value: (/* keyof csstype.csstype.Properties<string & {} | 0, string & {}> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 788, starting with typings.styledSystem.styledSystemStrings.accentColor, typings.styledSystem.styledSystemStrings.alignContent, typings.styledSystem.styledSystemStrings.alignItems */ Any)*
+      value: (/* keyof csstype.csstype.Properties<string & {} | 0, string & {}> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 808, starting with typings.styledSystem.styledSystemStrings.accentColor, typings.styledSystem.styledSystemStrings.alignContent, typings.styledSystem.styledSystemStrings.alignItems */ Any)*
     ): Self = StObject.set(x, "properties", js.Array(value*))
     
     inline def setProperty(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 789, starting with typings.styledSystem.styledSystemStrings.accentColor, typings.styledSystem.styledSystemStrings.alignContent, typings.styledSystem.styledSystemStrings.alignItems */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 809, starting with typings.styledSystem.styledSystemStrings.accentColor, typings.styledSystem.styledSystemStrings.alignContent, typings.styledSystem.styledSystemStrings.alignItems */ Any
     ): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
     inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)

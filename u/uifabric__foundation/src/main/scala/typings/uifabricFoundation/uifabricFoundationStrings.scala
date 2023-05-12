@@ -91,6 +91,10 @@ object uifabricFoundationStrings {
   inline def caption: caption = "caption".asInstanceOf[caption]
   
   @js.native
+  sealed trait center extends StObject
+  inline def center: center = "center".asInstanceOf[center]
+  
+  @js.native
   sealed trait children extends StObject
   inline def children: children = "children".asInstanceOf[children]
   

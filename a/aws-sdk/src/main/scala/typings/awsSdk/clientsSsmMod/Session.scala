@@ -32,7 +32,7 @@ trait Session extends StObject {
   var OutputUrl: js.UndefOr[SessionManagerOutputUrl] = js.undefined
   
   /**
-    * The ID of the Amazon Web Services user account that started the session.
+    * The ID of the Amazon Web Services user that started the session.
     */
   var Owner: js.UndefOr[SessionOwner] = js.undefined
   

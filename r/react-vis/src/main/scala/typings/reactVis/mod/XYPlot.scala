@@ -12,7 +12,7 @@ open class XYPlot[T] protected ()
   def this(props: XYPlotProps & T) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: XYPlotProps & T, context: Any) = this()
 }

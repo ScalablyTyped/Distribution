@@ -47,6 +47,11 @@ trait itemanyundefinedonMouseEn extends StObject {
   
   var overrides: js.UndefOr[ListOverrides] = js.undefined
   
+  /**
+    * Allows getting a ref to the component instance.
+    * Once the component unmounts, React will set `ref.current` to `null` (or call the ref with `null` if you passed a callback ref).
+    * @see https://react.dev/learn/referencing-values-with-refs#refs-and-the-dom
+    */
   var ref: js.UndefOr[typings.react.mod.Ref[HTMLLIElement]] = js.undefined
   
   var role: js.UndefOr[String] = js.undefined

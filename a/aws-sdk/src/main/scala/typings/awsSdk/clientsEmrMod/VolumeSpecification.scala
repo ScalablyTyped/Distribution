@@ -22,7 +22,7 @@ trait VolumeSpecification extends StObject {
   var Throughput: js.UndefOr[ThroughputVal] = js.undefined
   
   /**
-    * The volume type. Volume types supported are gp2, io1, and standard.
+    * The volume type. Volume types supported are gp3, gp2, io1, st1, sc1, and standard.
     */
   var VolumeType: String
 }

@@ -84,6 +84,13 @@ trait JobInfo
   var messages: js.Array[GPMessage] = js.native
   
   /**
+    * Displays the progress of the geoprocessing job.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-JobInfo.html#progress)
+    */
+  val progress: JobInfoProgress = js.native
+  
+  /**
     * The [options](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#esriRequest) to be used for data requests.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-JobInfo.html#requestOptions)

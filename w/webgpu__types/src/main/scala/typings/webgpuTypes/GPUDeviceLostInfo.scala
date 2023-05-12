@@ -15,12 +15,12 @@ trait GPUDeviceLostInfo extends StObject {
   
   val message: String
   
-  val reason: js.UndefOr[GPUDeviceLostReason] = js.undefined
+  val reason: GPUDeviceLostReason
 }
 object GPUDeviceLostInfo {
   
-  inline def apply(message: String): GPUDeviceLostInfo = {
-    val __obj = js.Dynamic.literal(__brand = "GPUDeviceLostInfo", message = message.asInstanceOf[js.Any])
+  inline def apply(message: String, reason: GPUDeviceLostReason): GPUDeviceLostInfo = {
+    val __obj = js.Dynamic.literal(__brand = "GPUDeviceLostInfo", message = message.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[GPUDeviceLostInfo]
   }
   
@@ -30,8 +30,6 @@ object GPUDeviceLostInfo {
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     inline def setReason(value: GPUDeviceLostReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
-    
-    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
     inline def set__brand(value: typings.webgpuTypes.webgpuTypesStrings.GPUDeviceLostInfo): Self = StObject.set(x, "__brand", value.asInstanceOf[js.Any])
   }

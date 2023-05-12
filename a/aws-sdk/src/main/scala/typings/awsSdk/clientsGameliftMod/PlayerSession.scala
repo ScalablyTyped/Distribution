@@ -32,12 +32,12 @@ trait PlayerSession extends StObject {
   var GameSessionId: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
-    * The IP address of the game session. To connect to a GameLift game server, an app needs both the IP address and port number.
+    * The IP address of the game session. To connect to a Amazon GameLift game server, an app needs both the IP address and port number.
     */
   var IpAddress: js.UndefOr[typings.awsSdk.clientsGameliftMod.IpAddress] = js.undefined
   
   /**
-    * Developer-defined information related to a player. GameLift does not use this data, so it can be formatted as needed for use in the game. 
+    * Developer-defined information related to a player. Amazon GameLift does not use this data, so it can be formatted as needed for use in the game. 
     */
   var PlayerData: js.UndefOr[typings.awsSdk.clientsGameliftMod.PlayerData] = js.undefined
   

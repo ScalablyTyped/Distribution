@@ -10,10 +10,54 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object konvaStrings {
   
   @js.native
+  sealed trait A extends StObject
+  inline def A: A = "A".asInstanceOf[A]
+  
+  @js.native
+  sealed trait C extends StObject
+  inline def C: C = "C".asInstanceOf[C]
+  
+  @js.native
+  sealed trait H extends StObject
+  inline def H: H = "H".asInstanceOf[H]
+  
+  @js.native
+  sealed trait L extends StObject
+  inline def L: L = "L".asInstanceOf[L]
+  
+  @js.native
+  sealed trait M extends StObject
+  inline def M: M = "M".asInstanceOf[M]
+  
+  @js.native
+  sealed trait Q extends StObject
+  inline def Q: Q = "Q".asInstanceOf[Q]
+  
+  @js.native
+  sealed trait S extends StObject
+  inline def S: S = "S".asInstanceOf[S]
+  
+  @js.native
+  sealed trait T extends StObject
+  inline def T: T = "T".asInstanceOf[T]
+  
+  @js.native
+  sealed trait V extends StObject
+  inline def V: V = "V".asInstanceOf[V]
+  
+  @js.native
+  sealed trait Z extends StObject
+  inline def Z: Z = "Z".asInstanceOf[Z]
+  
+  @js.native
   sealed trait _empty
     extends StObject
        with globalCompositeOperationType
   inline def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @js.native
+  sealed trait a_ extends StObject
+  inline def a_ : a_ = "a".asInstanceOf[a_]
   
   @js.native
   sealed trait abort extends StObject
@@ -66,6 +110,10 @@ object konvaStrings {
     extends StObject
        with LineCap
   inline def butt: butt = "butt".asInstanceOf[butt]
+  
+  @js.native
+  sealed trait c_ extends StObject
+  inline def c_ : c_ = "c".asInstanceOf[c_]
   
   @js.native
   sealed trait cancel extends StObject
@@ -134,6 +182,10 @@ object konvaStrings {
   @js.native
   sealed trait cuechange extends StObject
   inline def cuechange: cuechange = "cuechange".asInstanceOf[cuechange]
+  
+  @js.native
+  sealed trait cut extends StObject
+  inline def cut: cut = "cut".asInstanceOf[cut]
   
   @js.native
   sealed trait darken
@@ -266,6 +318,10 @@ object konvaStrings {
   inline def gotpointercapture: gotpointercapture = "gotpointercapture".asInstanceOf[gotpointercapture]
   
   @js.native
+  sealed trait h_ extends StObject
+  inline def h_ : h_ = "h".asInstanceOf[h_]
+  
+  @js.native
   sealed trait `hard-light`
     extends StObject
        with globalCompositeOperationType
@@ -300,6 +356,10 @@ object konvaStrings {
   @js.native
   sealed trait keyup extends StObject
   inline def keyup: keyup = "keyup".asInstanceOf[keyup]
+  
+  @js.native
+  sealed trait l_ extends StObject
+  inline def l_ : l_ = "l".asInstanceOf[l_]
   
   @js.native
   sealed trait left extends StObject
@@ -360,6 +420,10 @@ object konvaStrings {
   inline def luminosity: luminosity = "luminosity".asInstanceOf[luminosity]
   
   @js.native
+  sealed trait m_ extends StObject
+  inline def m_ : m_ = "m".asInstanceOf[m_]
+  
+  @js.native
   sealed trait miter
     extends StObject
        with LineJoin
@@ -410,6 +474,10 @@ object konvaStrings {
   inline def overlay: overlay = "overlay".asInstanceOf[overlay]
   
   @js.native
+  sealed trait paste extends StObject
+  inline def paste: paste = "paste".asInstanceOf[paste]
+  
+  @js.native
   sealed trait pause extends StObject
   inline def pause: pause = "pause".asInstanceOf[pause]
   
@@ -458,6 +526,10 @@ object konvaStrings {
   inline def progress: progress = "progress".asInstanceOf[progress]
   
   @js.native
+  sealed trait q_ extends StObject
+  inline def q_ : q_ = "q".asInstanceOf[q_]
+  
+  @js.native
   sealed trait ratechange extends StObject
   inline def ratechange: ratechange = "ratechange".asInstanceOf[ratechange]
   
@@ -483,6 +555,10 @@ object konvaStrings {
        with LineCap
        with LineJoin
   inline def round: round = "round".asInstanceOf[round]
+  
+  @js.native
+  sealed trait s_ extends StObject
+  inline def s_ : s_ = "s".asInstanceOf[s_]
   
   @js.native
   sealed trait saturation
@@ -601,6 +677,10 @@ object konvaStrings {
   inline def suspend: suspend = "suspend".asInstanceOf[suspend]
   
   @js.native
+  sealed trait t_ extends StObject
+  inline def t_ : t_ = "t".asInstanceOf[t_]
+  
+  @js.native
   sealed trait textAlign extends StObject
   inline def textAlign: textAlign = "textAlign".asInstanceOf[textAlign]
   
@@ -653,6 +733,10 @@ object konvaStrings {
   inline def transitionstart: transitionstart = "transitionstart".asInstanceOf[transitionstart]
   
   @js.native
+  sealed trait v_ extends StObject
+  inline def v_ : v_ = "v".asInstanceOf[v_]
+  
+  @js.native
   sealed trait volumechange extends StObject
   inline def volumechange: volumechange = "volumechange".asInstanceOf[volumechange]
   
@@ -685,4 +769,8 @@ object konvaStrings {
     extends StObject
        with globalCompositeOperationType
   inline def xor: xor = "xor".asInstanceOf[xor]
+  
+  @js.native
+  sealed trait z_ extends StObject
+  inline def z_ : z_ = "z".asInstanceOf[z_]
 }

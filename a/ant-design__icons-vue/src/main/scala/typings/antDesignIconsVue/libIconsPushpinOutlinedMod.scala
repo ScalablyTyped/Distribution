@@ -16,7 +16,7 @@ object libIconsPushpinOutlinedMod extends Shortcut {
   @js.native
   trait PushpinOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_PushpinOutlinedIconType: String = js.native

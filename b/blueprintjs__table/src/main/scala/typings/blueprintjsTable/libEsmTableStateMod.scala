@@ -3,6 +3,7 @@ package typings.blueprintjsTable
 import org.scalablytyped.runtime.StringDictionary
 import typings.blueprintjsTable.libEsmCommonCellTypesMod.FocusedCellCoordinates
 import typings.blueprintjsTable.libEsmCommonMod.Rect
+import typings.blueprintjsTable.libEsmCommonScrollDirectionMod.ScrollDirection
 import typings.blueprintjsTable.libEsmRegionsMod.Region
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
@@ -98,6 +99,8 @@ object libEsmTableStateMod {
       */
     var rowHeights: js.Array[Double]
     
+    var scrollDirection: js.UndefOr[ScrollDirection | Null] = js.undefined
+    
     /**
       * An array of Regions representing the selections of the table.
       */
@@ -171,6 +174,12 @@ object libEsmTableStateMod {
       inline def setRowHeights(value: js.Array[Double]): Self = StObject.set(x, "rowHeights", value.asInstanceOf[js.Any])
       
       inline def setRowHeightsVarargs(value: Double*): Self = StObject.set(x, "rowHeights", js.Array(value*))
+      
+      inline def setScrollDirection(value: ScrollDirection): Self = StObject.set(x, "scrollDirection", value.asInstanceOf[js.Any])
+      
+      inline def setScrollDirectionNull: Self = StObject.set(x, "scrollDirection", null)
+      
+      inline def setScrollDirectionUndefined: Self = StObject.set(x, "scrollDirection", js.undefined)
       
       inline def setSelectedRegions(value: js.Array[Region]): Self = StObject.set(x, "selectedRegions", value.asInstanceOf[js.Any])
       

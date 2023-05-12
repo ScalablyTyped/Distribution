@@ -128,7 +128,7 @@ object mod {
     
     def isList(): Boolean = js.native
     
-    def list(): (js.Iterable[Iteratee[Term, D]]) | Null = js.native
+    def list(): (js.Iterable[GraphPointer[Term, D]]) | Null = js.native
     
     def literal(value: (AnyPointer[Literal, D]) | (MultiPointer[Literal, D])): AnyPointer[Literal, D] = js.native
     def literal(value: (AnyPointer[Literal, D]) | (MultiPointer[Literal, D]), languageOrDatatype: String): AnyPointer[Literal, D] = js.native

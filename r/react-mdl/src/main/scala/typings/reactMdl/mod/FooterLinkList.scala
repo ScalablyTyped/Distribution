@@ -10,7 +10,7 @@ open class FooterLinkList protected () extends _MDLComponent[FooterLinkListProps
   def this(props: FooterLinkListProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: FooterLinkListProps, context: Any) = this()
 }

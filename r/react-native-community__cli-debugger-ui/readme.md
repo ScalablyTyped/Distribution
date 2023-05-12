@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-community__cli-debugger-ui
 
-Typings are for version 9.0.0
+Typings are for version 11.2.3
 
 
 

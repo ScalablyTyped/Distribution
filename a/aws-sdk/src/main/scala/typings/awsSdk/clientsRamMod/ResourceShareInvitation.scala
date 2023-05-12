@@ -17,12 +17,12 @@ trait ResourceShareInvitation extends StObject {
   var receiverAccountId: js.UndefOr[String] = js.undefined
   
   /**
-    * The Amazon Resoure Name (ARN) of the IAM user or role that received the invitation.
+    * The Amazon Resource Name (ARN) of the IAM user or role that received the invitation.
     */
   var receiverArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The Amazon Resoure Name (ARN) of the resource share
+    * The Amazon Resource Name (ARN) of the resource share
     */
   var resourceShareArn: js.UndefOr[String] = js.undefined
   
@@ -32,7 +32,7 @@ trait ResourceShareInvitation extends StObject {
   var resourceShareAssociations: js.UndefOr[ResourceShareAssociationList] = js.undefined
   
   /**
-    * The Amazon Resoure Name (ARN) of the invitation.
+    * The Amazon Resource Name (ARN) of the invitation.
     */
   var resourceShareInvitationArn: js.UndefOr[String] = js.undefined
   

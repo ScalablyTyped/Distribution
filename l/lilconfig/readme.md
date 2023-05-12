@@ -1,7 +1,7 @@
 
 # Scala.js typings for lilconfig
 
-Typings are for version 2.0.6
+Typings are for version 2.1.0
 
 ## Library description:
 A zero-dependency alternative to cosmiconfig

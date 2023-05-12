@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-  * These options specify the way the style of a <code>Feature</code> should be
-  * modified on a map.
-  */
 trait FeatureStyleOptions extends StObject {
   
   /**

@@ -31,6 +31,9 @@ trait ShadowDepthWrapper extends StObject {
     */
   def dispose(): Unit = js.native
   
+  /** Gets the doNotInjectCode status of the wrapper */
+  def doNotInjectCode: Boolean = js.native
+  
   /**
     * Gets the effect to use to generate the depth map
     * @param subMesh subMesh to get the effect for

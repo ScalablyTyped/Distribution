@@ -1365,6 +1365,12 @@ object anon {
     def assertImportNamespaceSpecifier(node: Null, opts: js.Object): Unit = js.native
     def assertImportNamespaceSpecifier(node: Unit, opts: js.Object): Unit = js.native
     
+    def assertImportOrExportDeclaration(): Unit = js.native
+    def assertImportOrExportDeclaration(node: js.Object): Unit = js.native
+    def assertImportOrExportDeclaration(node: js.Object, opts: js.Object): Unit = js.native
+    def assertImportOrExportDeclaration(node: Null, opts: js.Object): Unit = js.native
+    def assertImportOrExportDeclaration(node: Unit, opts: js.Object): Unit = js.native
+    
     def assertImportSpecifier(): Unit = js.native
     def assertImportSpecifier(node: js.Object): Unit = js.native
     def assertImportSpecifier(node: js.Object, opts: js.Object): Unit = js.native
@@ -3948,6 +3954,12 @@ object anon {
     def isImportNamespaceSpecifier(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.ImportNamespaceSpecifier */ Boolean = js.native
     def isImportNamespaceSpecifier(node: Null, opts: js.Object): /* is @babel/types.@babel/types.ImportNamespaceSpecifier */ Boolean = js.native
     def isImportNamespaceSpecifier(node: Unit, opts: js.Object): /* is @babel/types.@babel/types.ImportNamespaceSpecifier */ Boolean = js.native
+    
+    def isImportOrExportDeclaration(): /* is @babel/types.@babel/types.ImportOrExportDeclaration */ Boolean = js.native
+    def isImportOrExportDeclaration(node: js.Object): /* is @babel/types.@babel/types.ImportOrExportDeclaration */ Boolean = js.native
+    def isImportOrExportDeclaration(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.ImportOrExportDeclaration */ Boolean = js.native
+    def isImportOrExportDeclaration(node: Null, opts: js.Object): /* is @babel/types.@babel/types.ImportOrExportDeclaration */ Boolean = js.native
+    def isImportOrExportDeclaration(node: Unit, opts: js.Object): /* is @babel/types.@babel/types.ImportOrExportDeclaration */ Boolean = js.native
     
     def isImportSpecifier(): /* is @babel/types.@babel/types.ImportSpecifier */ Boolean = js.native
     def isImportSpecifier(node: js.Object): /* is @babel/types.@babel/types.ImportSpecifier */ Boolean = js.native

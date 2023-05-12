@@ -1,7 +1,7 @@
 
 # Scala.js typings for merge-anything
 
-Typings are for version 5.0.4
+Typings are for version 5.1.6
 
 ## Library description:
 Merge objects & other types recursively. A simple & small integration.

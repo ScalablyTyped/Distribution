@@ -1,15 +1,16 @@
 package typings.nivoBullet.distTypesTypesMod
 
+import typings.reactSpringCore.mod.SpringValues
 import typings.std.MouseEvent
 import typings.std.SVGRectElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Pick<@nivo/bullet.@nivo/bullet/dist/types/types.BulletRectsProps, 'onMouseEnter' | 'onMouseLeave' | 'onClick'> & @nivo/bullet.@nivo/bullet/dist/types/types.Point & @nivo/core.@nivo/core.Dimensions & {  animatedProps :/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValues<BulletRectAnimatedProps> * / any,   borderColor :string,   borderWidth :number,   color :string,   data :@nivo/bullet.@nivo/bullet/dist/types/types.ComputedRangeDatum,   index :number,   onMouseMove :@nivo/bullet.@nivo/bullet/dist/types/types.BulletRectsProps['onMouseEnter']} */
+/* Inlined std.Pick<@nivo/bullet.@nivo/bullet/dist/types/types.BulletRectsProps, 'onMouseEnter' | 'onMouseLeave' | 'onClick'> & @nivo/bullet.@nivo/bullet/dist/types/types.Point & @nivo/core.@nivo/core.Dimensions & {  animatedProps :@react-spring/web.@react-spring/web.SpringValues<@nivo/bullet.@nivo/bullet/dist/types/types.BulletRectAnimatedProps>,   borderColor :string,   borderWidth :number,   color :string,   data :@nivo/bullet.@nivo/bullet/dist/types/types.ComputedRangeDatum,   index :number,   onMouseMove :@nivo/bullet.@nivo/bullet/dist/types/types.BulletRectsProps['onMouseEnter']} */
 trait BulletRectsItemProps extends StObject {
   
-  var animatedProps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValues<BulletRectAnimatedProps> */ Any
+  var animatedProps: SpringValues[BulletRectAnimatedProps]
   
   var borderColor: String
   
@@ -40,7 +41,7 @@ trait BulletRectsItemProps extends StObject {
 object BulletRectsItemProps {
   
   inline def apply(
-    animatedProps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValues<BulletRectAnimatedProps> */ Any,
+    animatedProps: SpringValues[BulletRectAnimatedProps],
     borderColor: String,
     borderWidth: Double,
     color: String,
@@ -62,9 +63,7 @@ object BulletRectsItemProps {
   @scala.inline
   implicit open class MutableBuilder[Self <: BulletRectsItemProps] (val x: Self) extends AnyVal {
     
-    inline def setAnimatedProps(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValues<BulletRectAnimatedProps> */ Any
-    ): Self = StObject.set(x, "animatedProps", value.asInstanceOf[js.Any])
+    inline def setAnimatedProps(value: SpringValues[BulletRectAnimatedProps]): Self = StObject.set(x, "animatedProps", value.asInstanceOf[js.Any])
     
     inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

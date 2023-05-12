@@ -2,14 +2,19 @@ package typings.ol
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
+import typings.ol.anon.Height
 import typings.ol.colorlikeMod.ColorLike
 import typings.ol.objectMod.default
 import typings.ol.renderCanvasExecutorMod.ReplayImageOrLabelArgs
 import typings.ol.sizeMod.Size
+import typings.ol.styleTextMod.TextJustify
+import typings.ol.styleTextMod.TextPlacement
 import typings.ol.transformMod.Transform
 import typings.std.CanvasLineCap
 import typings.std.CanvasLineJoin
 import typings.std.CanvasRenderingContext2D
+import typings.std.CanvasTextAlign
+import typings.std.CanvasTextBaseline
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
@@ -26,8 +31,6 @@ object renderCanvasMod {
   @JSImport("ol/render/canvas", "checkedFonts")
   @js.native
   val checkedFonts: default = js.native
-  
-  inline def createTransformString(transform: Transform): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransformString")(transform.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("ol/render/canvas", "defaultFillStyle")
   @js.native
@@ -71,11 +74,11 @@ object renderCanvasMod {
   
   @JSImport("ol/render/canvas", "defaultTextAlign")
   @js.native
-  val defaultTextAlign: String = js.native
+  val defaultTextAlign: CanvasTextAlign = js.native
   
   @JSImport("ol/render/canvas", "defaultTextBaseline")
   @js.native
-  val defaultTextBaseline: String = js.native
+  val defaultTextBaseline: CanvasTextBaseline = js.native
   
   inline def drawImageOrLabel(
     context: CanvasRenderingContext2D,
@@ -182,26 +185,49 @@ object renderCanvasMod {
     scale: Size
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawImageOrLabel")(context.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any], labelOrImage.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("ol/render/canvas", "labelCache")
-  @js.native
-  val labelCache: Any = js.native
+  inline def getTextDimensions(baseStyle: TextState, chunks: js.Array[String]): Height = (^.asInstanceOf[js.Dynamic].applyDynamic("getTextDimensions")(baseStyle.asInstanceOf[js.Any], chunks.asInstanceOf[js.Any])).asInstanceOf[Height]
   
   inline def measureAndCacheTextWidth(font: String, text: String, cache: StringDictionary[Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("measureAndCacheTextWidth")(font.asInstanceOf[js.Any], text.asInstanceOf[js.Any], cache.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def measureTextHeight(font: String): Size = ^.asInstanceOf[js.Dynamic].applyDynamic("measureTextHeight")(font.asInstanceOf[js.Any]).asInstanceOf[Size]
+  inline def measureTextHeight(fontSpec: Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("measureTextHeight")(fontSpec.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   inline def measureTextWidth(font: String, text: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("measureTextWidth")(font.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def measureTextWidths(font: String, lines: js.Array[String], widths: js.Array[Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("measureTextWidths")(font.asInstanceOf[js.Any], lines.asInstanceOf[js.Any], widths.asInstanceOf[js.Any])).asInstanceOf[Double]
-  
-  inline def registerFont(fontSpec: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerFont")(fontSpec.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerFont(fontSpec: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerFont")(fontSpec.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def rotateAtOffset(context: CanvasRenderingContext2D, rotation: Double, offsetX: Double, offsetY: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotateAtOffset")(context.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.ol.olStrings.Circle
+    - typings.ol.olStrings.Image
+    - typings.ol.olStrings.LineString
+    - typings.ol.olStrings.Polygon
+    - typings.ol.olStrings.Text
+    - typings.ol.olStrings.Default
+  */
+  trait BuilderType extends StObject
+  object BuilderType {
+    
+    inline def Circle: typings.ol.olStrings.Circle = "Circle".asInstanceOf[typings.ol.olStrings.Circle]
+    
+    inline def Default: typings.ol.olStrings.Default = "Default".asInstanceOf[typings.ol.olStrings.Default]
+    
+    inline def Image: typings.ol.olStrings.Image = "Image".asInstanceOf[typings.ol.olStrings.Image]
+    
+    inline def LineString: typings.ol.olStrings.LineString = "LineString".asInstanceOf[typings.ol.olStrings.LineString]
+    
+    inline def Polygon: typings.ol.olStrings.Polygon = "Polygon".asInstanceOf[typings.ol.olStrings.Polygon]
+    
+    inline def Text: typings.ol.olStrings.Text = "Text".asInstanceOf[typings.ol.olStrings.Text]
+  }
   
   type DeclutterImageWithText = NumberDictionary[ReplayImageOrLabelArgs]
   
   trait FillState extends StObject {
     
+    /**
+      * FillStyle.
+      */
     var fillStyle: ColorLike
   }
   object FillState {
@@ -220,38 +246,89 @@ object renderCanvasMod {
   
   trait FillStrokeState extends StObject {
     
+    /**
+      * Current FillStyle.
+      */
     var currentFillStyle: js.UndefOr[ColorLike] = js.undefined
     
+    /**
+      * Current LineCap.
+      */
     var currentLineCap: js.UndefOr[CanvasLineCap] = js.undefined
     
+    /**
+      * Current LineDash.
+      */
     var currentLineDash: js.Array[Double]
     
+    /**
+      * Current LineDashOffset.
+      */
     var currentLineDashOffset: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Current LineJoin.
+      */
     var currentLineJoin: js.UndefOr[CanvasLineJoin] = js.undefined
     
+    /**
+      * Current LineWidth.
+      */
     var currentLineWidth: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Current MiterLimit.
+      */
     var currentMiterLimit: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Current StrokeStyle.
+      */
     var currentStrokeStyle: js.UndefOr[ColorLike] = js.undefined
     
+    /**
+      * FillStyle.
+      */
     var fillStyle: js.UndefOr[ColorLike] = js.undefined
     
+    /**
+      * Last stroke.
+      */
     var lastStroke: js.UndefOr[Double] = js.undefined
     
+    /**
+      * LineCap.
+      */
     var lineCap: js.UndefOr[CanvasLineCap] = js.undefined
     
+    /**
+      * LineDash.
+      */
     var lineDash: js.Array[Double]
     
+    /**
+      * LineDashOffset.
+      */
     var lineDashOffset: js.UndefOr[Double] = js.undefined
     
+    /**
+      * LineJoin.
+      */
     var lineJoin: js.UndefOr[CanvasLineJoin] = js.undefined
     
+    /**
+      * LineWidth.
+      */
     var lineWidth: js.UndefOr[Double] = js.undefined
     
+    /**
+      * MiterLimit.
+      */
     var miterLimit: js.UndefOr[Double] = js.undefined
     
+    /**
+      * StrokeStyle.
+      */
     var strokeStyle: js.UndefOr[ColorLike] = js.undefined
   }
   object FillStrokeState {
@@ -336,10 +413,19 @@ object renderCanvasMod {
   
   trait Label extends StObject {
     
+    /**
+      * ContextInstructions.
+      */
     var contextInstructions: js.Array[String | Double]
     
+    /**
+      * Height.
+      */
     var height: Double
     
+    /**
+      * Width.
+      */
     var width: Double
   }
   object Label {
@@ -364,16 +450,34 @@ object renderCanvasMod {
   
   trait SerializableInstructions extends StObject {
     
+    /**
+      * The array of all coordinates.
+      */
     var coordinates: js.Array[Double]
     
+    /**
+      * The fill states (decluttering).
+      */
     var fillStates: js.UndefOr[StringDictionary[FillState]] = js.undefined
     
+    /**
+      * The rendering hit detection instructions.
+      */
     var hitDetectionInstructions: js.Array[Any]
     
+    /**
+      * The rendering instructions.
+      */
     var instructions: js.Array[Any]
     
+    /**
+      * The stroke states (decluttering).
+      */
     var strokeStates: js.UndefOr[StringDictionary[StrokeState]] = js.undefined
     
+    /**
+      * The text states (decluttering).
+      */
     var textStates: js.UndefOr[StringDictionary[TextState]] = js.undefined
   }
   object SerializableInstructions {
@@ -418,18 +522,39 @@ object renderCanvasMod {
   
   trait StrokeState extends StObject {
     
+    /**
+      * LineCap.
+      */
     var lineCap: CanvasLineCap
     
+    /**
+      * LineDash.
+      */
     var lineDash: js.Array[Double]
     
+    /**
+      * LineDashOffset.
+      */
     var lineDashOffset: Double
     
+    /**
+      * LineJoin.
+      */
     var lineJoin: CanvasLineJoin
     
+    /**
+      * LineWidth.
+      */
     var lineWidth: Double
     
+    /**
+      * MiterLimit.
+      */
     var miterLimit: Double
     
+    /**
+      * StrokeStyle.
+      */
     var strokeStyle: ColorLike
   }
   object StrokeState {
@@ -470,29 +595,69 @@ object renderCanvasMod {
   
   trait TextState extends StObject {
     
+    /**
+      * BackgroundFill.
+      */
     var backgroundFill: js.UndefOr[typings.ol.styleFillMod.default] = js.undefined
     
+    /**
+      * BackgroundStroke.
+      */
     var backgroundStroke: js.UndefOr[typings.ol.styleStrokeMod.default] = js.undefined
     
+    /**
+      * Font.
+      */
     var font: String
     
+    /**
+      * Justify.
+      */
+    var justify: js.UndefOr[TextJustify] = js.undefined
+    
+    /**
+      * MaxAngle.
+      */
     var maxAngle: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Overflow.
+      */
     var overflow: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Padding.
+      */
     var padding: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var placement: js.UndefOr[String] = js.undefined
+    /**
+      * Placement.
+      */
+    var placement: js.UndefOr[TextPlacement] = js.undefined
     
+    /**
+      * Repeat.
+      */
+    var repeat: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Scale.
+      */
     var scale: js.UndefOr[Size] = js.undefined
     
-    var textAlign: js.UndefOr[String] = js.undefined
+    /**
+      * TextAlign.
+      */
+    var textAlign: js.UndefOr[CanvasTextAlign] = js.undefined
     
-    var textBaseline: String
+    /**
+      * TextBaseline.
+      */
+    var textBaseline: CanvasTextBaseline
   }
   object TextState {
     
-    inline def apply(font: String, textBaseline: String): TextState = {
+    inline def apply(font: String, textBaseline: CanvasTextBaseline): TextState = {
       val __obj = js.Dynamic.literal(font = font.asInstanceOf[js.Any], textBaseline = textBaseline.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextState]
     }
@@ -510,6 +675,10 @@ object renderCanvasMod {
       
       inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
+      inline def setJustify(value: TextJustify): Self = StObject.set(x, "justify", value.asInstanceOf[js.Any])
+      
+      inline def setJustifyUndefined: Self = StObject.set(x, "justify", js.undefined)
+      
       inline def setMaxAngle(value: Double): Self = StObject.set(x, "maxAngle", value.asInstanceOf[js.Any])
       
       inline def setMaxAngleUndefined: Self = StObject.set(x, "maxAngle", js.undefined)
@@ -524,19 +693,25 @@ object renderCanvasMod {
       
       inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value*))
       
-      inline def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: TextPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
       inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      
+      inline def setRepeat(value: Double): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+      
+      inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
       
       inline def setScale(value: Size): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
       inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      inline def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+      inline def setScaleVarargs(value: Double*): Self = StObject.set(x, "scale", js.Array(value*))
+      
+      inline def setTextAlign(value: CanvasTextAlign): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
       
       inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
       
-      inline def setTextBaseline(value: String): Self = StObject.set(x, "textBaseline", value.asInstanceOf[js.Any])
+      inline def setTextBaseline(value: CanvasTextBaseline): Self = StObject.set(x, "textBaseline", value.asInstanceOf[js.Any])
     }
   }
 }

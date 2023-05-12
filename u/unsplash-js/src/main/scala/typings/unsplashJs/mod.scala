@@ -3,7 +3,7 @@ package typings.unsplashJs
 import typings.std.Response
 import typings.unsplashJs.anon.AppId
 import typings.unsplashJs.anon.DownloadLocation_
-import typings.unsplashJs.anon.OmitStrictPaginationParamOrderBy
+import typings.unsplashJs.anon.OmitStrictPaginationParam
 import typings.unsplashJs.anon.Photos
 import typings.unsplashJs.anon.PickPaginationParamspagep
 import typings.unsplashJs.anon.ResponseResponse
@@ -578,8 +578,8 @@ object mod {
         
         inline def getPathname(params: TopicIdOrSlug): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPathname")(params.asInstanceOf[js.Any]).asInstanceOf[String]
         
-        inline def handleRequest(a: OmitStrictPaginationParamOrderBy): CompleteRequestParams = ^.asInstanceOf[js.Dynamic].applyDynamic("handleRequest")(a.asInstanceOf[js.Any]).asInstanceOf[CompleteRequestParams]
-        inline def handleRequest(a: OmitStrictPaginationParamOrderBy, additionalFetchOptions: AdditionalFetchOptions): CompleteRequestParams = (^.asInstanceOf[js.Dynamic].applyDynamic("handleRequest")(a.asInstanceOf[js.Any], additionalFetchOptions.asInstanceOf[js.Any])).asInstanceOf[CompleteRequestParams]
+        inline def handleRequest(a: OmitStrictPaginationParam): CompleteRequestParams = ^.asInstanceOf[js.Dynamic].applyDynamic("handleRequest")(a.asInstanceOf[js.Any]).asInstanceOf[CompleteRequestParams]
+        inline def handleRequest(a: OmitStrictPaginationParam, additionalFetchOptions: AdditionalFetchOptions): CompleteRequestParams = (^.asInstanceOf[js.Dynamic].applyDynamic("handleRequest")(a.asInstanceOf[js.Any], additionalFetchOptions.asInstanceOf[js.Any])).asInstanceOf[CompleteRequestParams]
         
         @JSImport("unsplash-js", "_internals.topics.list.handleResponse")
         @js.native

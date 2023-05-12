@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object DistanceMeasurement {
   
   /**
-    * @property alignment {H.ui.LayoutAlignment=} - the layout alignment which should be applied to this control, default is H.ui.LayoutAlignment.RIGHT_BOTTOM
-    * @property startIcon {H.map.Icon=} - the icon to use for the first measurement point
-    * @property stopoverIcon {H.map.Icon=} - the icon to use for the intermediate measurement points
-    * @property endIcon {H.map.Icon=} - the icon to use for the last measurement point
-    * @property splitIcon {H.map.Icon=} - the icon to use for indicating position under pointer over the line where new point will be created once user clicks
-    * @property lineStyle {(H.map.SpatialStyle | H.map.SpatialStyle.Options)} - the style to use for connecting lines of the measurement points
-    * @property distanceFormatter {function(number)=} - Optional function used for formatting a distance. By default distance measurement tool will do the formatting according to the
+    * alignment {H.ui.LayoutAlignment=} - the layout alignment which should be applied to this control, default is H.ui.LayoutAlignment.RIGHT_BOTTOM
+    * startIcon {H.map.Icon=} - the icon to use for the first measurement point
+    * stopoverIcon {H.map.Icon=} - the icon to use for the intermediate measurement points
+    * endIcon {H.map.Icon=} - the icon to use for the last measurement point
+    * splitIcon {H.map.Icon=} - the icon to use for indicating position under pointer over the line where new point will be created once user clicks
+    * lineStyle {(H.map.SpatialStyle | H.map.SpatialStyle.Options)} - the style to use for connecting lines of the measurement points
+    * distanceFormatter {function(number)=} - Optional function used for formatting a distance. By default distance measurement tool will do the formatting according to the
     * specified measurement unit (see H.ui.UI.Options#unitSystem)
     */
   trait Options extends StObject {

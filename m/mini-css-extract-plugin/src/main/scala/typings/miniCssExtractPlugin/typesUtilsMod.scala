@@ -49,6 +49,9 @@ object typesUtilsMod {
   
   inline def getUndoPath(filename: String, outputPath: String, enforceRelative: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUndoPath")(filename.asInstanceOf[js.Any], outputPath.asInstanceOf[js.Any], enforceRelative.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  inline def stringifyLocal(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyLocal")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringifyLocal(value: js.Function): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyLocal")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   inline def stringifyRequest(loaderContext: LoaderContext, request: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyRequest")(loaderContext.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def trueFn(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("trueFn")().asInstanceOf[Boolean]

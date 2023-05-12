@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cordova-plugin-ble-central" : "1.6.1"
+      "cordova-plugin-ble-central" : "1.6.3"
     }
   ],
   "test-dependencies" : [
     {
-      "cordova-plugin-ble-central" : "1.6.1"
+      "cordova-plugin-ble-central" : "1.6.3"
     }
   ],
   "compile-devDependencies" : [

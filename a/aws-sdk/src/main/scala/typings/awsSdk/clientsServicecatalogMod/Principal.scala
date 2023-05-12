@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Principal extends StObject {
   
   /**
-    * The ARN of the principal (IAM user, role, or group).
+    * The ARN of the principal (user, role, or group). This field allows for an ARN with no accountID if the PrincipalType is an IAM_PATTERN. 
     */
   var PrincipalARN: js.UndefOr[typings.awsSdk.clientsServicecatalogMod.PrincipalARN] = js.undefined
   
   /**
-    * The principal type. The supported value is IAM.
+    * The principal type. The supported value is IAM if you use a fully defined ARN, or IAM_PATTERN if you use an ARN with no accountID. 
     */
   var PrincipalType: js.UndefOr[typings.awsSdk.clientsServicecatalogMod.PrincipalType] = js.undefined
 }

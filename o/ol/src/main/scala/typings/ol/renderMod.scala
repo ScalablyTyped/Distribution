@@ -1,8 +1,8 @@
 package typings.ol
 
+import typings.ol.eventsEventMod.default
 import typings.ol.featureMod.FeatureLike
 import typings.ol.pixelMod.Pixel
-import typings.ol.renderEventMod.default
 import typings.ol.sizeMod.Size
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
@@ -20,22 +20,41 @@ object renderMod {
   inline def getVectorContext(event: default): typings.ol.renderCanvasImmediateMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getVectorContext")(event.asInstanceOf[js.Any]).asInstanceOf[typings.ol.renderCanvasImmediateMod.default]
   
   inline def toContext(context: CanvasRenderingContext2D): typings.ol.renderCanvasImmediateMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("toContext")(context.asInstanceOf[js.Any]).asInstanceOf[typings.ol.renderCanvasImmediateMod.default]
-  inline def toContext(context: CanvasRenderingContext2D, opt_options: ToContextOptions): typings.ol.renderCanvasImmediateMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("toContext")(context.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[typings.ol.renderCanvasImmediateMod.default]
+  inline def toContext(context: CanvasRenderingContext2D, options: ToContextOptions): typings.ol.renderCanvasImmediateMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("toContext")(context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.ol.renderCanvasImmediateMod.default]
   
-  type OrderFunction = js.Function2[/* p0 */ FeatureLike, /* p1 */ FeatureLike, Double]
+  type OrderFunction = js.Function2[/* arg0 */ FeatureLike, /* arg1 */ FeatureLike, Double]
   
   trait State extends StObject {
     
+    /**
+      * Canvas context that the layer is being rendered to.
+      */
     var context: CanvasRenderingContext2D
     
+    /**
+      * Feature.
+      */
     var feature: FeatureLike
     
+    /**
+      * Geometry.
+      */
     var geometry: typings.ol.geomSimpleGeometryMod.default
     
+    /**
+      * Pixel ratio used by the layer renderer.
+      */
     var pixelRatio: Double
     
+    /**
+      * Resolution that the render batch was created and optimized for.
+      * This is not the view's resolution that is being rendered.
+      */
     var resolution: Double
     
+    /**
+      * Rotation of the rendered layer in radians.
+      */
     var rotation: Double
   }
   object State {
@@ -71,8 +90,18 @@ object renderMod {
   
   trait ToContextOptions extends StObject {
     
+    /**
+      * Pixel ratio (canvas
+      * pixel to css pixel ratio) for the canvas.
+      */
     var pixelRatio: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Desired size of the canvas in css
+      * pixels. When provided, both canvas and css size will be set according to the
+      * `pixelRatio`. If not provided, the current canvas and css sizes will not be
+      * altered.
+      */
     var size: js.UndefOr[Size] = js.undefined
   }
   object ToContextOptions {
@@ -92,6 +121,8 @@ object renderMod {
       inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      
+      inline def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value*))
     }
   }
 }

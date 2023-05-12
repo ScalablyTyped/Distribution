@@ -14,7 +14,7 @@ trait EncodedVideoChunk extends StObject {
   
   val timestamp: Double
   
-  val `type`: EncodedVideoChunkType
+  val `type`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EncodedVideoChunkType */ Any
 }
 object EncodedVideoChunk {
   
@@ -22,7 +22,7 @@ object EncodedVideoChunk {
     byteLength: Double,
     copyTo: AllowSharedBufferSource => Unit,
     timestamp: Double,
-    `type`: EncodedVideoChunkType
+    `type`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EncodedVideoChunkType */ Any
   ): EncodedVideoChunk = {
     val __obj = js.Dynamic.literal(byteLength = byteLength.asInstanceOf[js.Any], copyTo = js.Any.fromFunction1(copyTo), timestamp = timestamp.asInstanceOf[js.Any], duration = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -42,6 +42,8 @@ object EncodedVideoChunk {
     
     inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    inline def setType(value: EncodedVideoChunkType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EncodedVideoChunkType */ Any
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

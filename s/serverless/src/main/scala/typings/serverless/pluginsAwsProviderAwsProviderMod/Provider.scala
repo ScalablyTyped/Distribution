@@ -17,7 +17,7 @@ trait Provider extends StObject {
   
   var apiGateway: js.UndefOr[ApiGateway] = js.undefined
   
-  var apiKeys: js.UndefOr[js.Array[String]] = js.undefined
+  var apiKeys: js.UndefOr[js.Array[ApiKey | String]] = js.undefined
   
   var apiName: js.UndefOr[String] = js.undefined
   
@@ -126,11 +126,11 @@ object Provider {
     
     inline def setApiGatewayUndefined: Self = StObject.set(x, "apiGateway", js.undefined)
     
-    inline def setApiKeys(value: js.Array[String]): Self = StObject.set(x, "apiKeys", value.asInstanceOf[js.Any])
+    inline def setApiKeys(value: js.Array[ApiKey | String]): Self = StObject.set(x, "apiKeys", value.asInstanceOf[js.Any])
     
     inline def setApiKeysUndefined: Self = StObject.set(x, "apiKeys", js.undefined)
     
-    inline def setApiKeysVarargs(value: String*): Self = StObject.set(x, "apiKeys", js.Array(value*))
+    inline def setApiKeysVarargs(value: (ApiKey | String)*): Self = StObject.set(x, "apiKeys", js.Array(value*))
     
     inline def setApiName(value: String): Self = StObject.set(x, "apiName", value.asInstanceOf[js.Any])
     

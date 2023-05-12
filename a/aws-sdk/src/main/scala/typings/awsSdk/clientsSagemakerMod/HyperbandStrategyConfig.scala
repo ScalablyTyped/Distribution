@@ -12,7 +12,7 @@ trait HyperbandStrategyConfig extends StObject {
   var MaxResource: js.UndefOr[HyperbandStrategyMaxResource] = js.undefined
   
   /**
-    * The minimum number of resources (such as epochs) that can be used by a training job launched by a hyperparameter tuning job. If the value for MinResource has not been reached, the training job will not be stopped by Hyperband.
+    * The minimum number of resources (such as epochs) that can be used by a training job launched by a hyperparameter tuning job. If the value for MinResource has not been reached, the training job is not stopped by Hyperband.
     */
   var MinResource: js.UndefOr[HyperbandStrategyMinResource] = js.undefined
 }

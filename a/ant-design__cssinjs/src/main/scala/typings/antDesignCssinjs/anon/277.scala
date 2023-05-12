@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.Offset
+import typings.csstype.mod.Property.Isolation
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `277` extends StObject {
   
   var value: js.UndefOr[
-    (Offset[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (Offset[Double | String]) | (js.Array[NonNullable[js.UndefOr[Offset[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[Offset[Double | String]]])
+    Isolation | (js.Array[
+      (Extract[js.UndefOr[Isolation | js.Array[NonNullable[js.UndefOr[Isolation]]]], String]) | NonNullable[js.UndefOr[Isolation]]
     ])
   ] = js.native
 }

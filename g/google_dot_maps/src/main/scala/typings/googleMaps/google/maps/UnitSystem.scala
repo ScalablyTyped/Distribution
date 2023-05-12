@@ -6,10 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait UnitSystem extends StObject
-/**
-  * The valid unit systems that can be specified in a <i><code><a
-  * href="#DirectionsRequest">DirectionsRequest</a></code></i>.
-  */
 @JSGlobal("google.maps.UnitSystem")
 @js.native
 object UnitSystem extends StObject {

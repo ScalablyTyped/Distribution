@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "slate" : "0.82.1"
+      "slate" : "0.94.1"
     }
   ],
   "test-dependencies" : [
     {
-      "slate" : "0.82.1"
+      "slate" : "0.94.1"
     }
   ],
   "compile-devDependencies" : [

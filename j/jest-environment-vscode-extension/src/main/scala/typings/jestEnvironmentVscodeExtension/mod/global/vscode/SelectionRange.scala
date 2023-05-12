@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class SelectionRange protected ()
   extends typings.vscode.mod.SelectionRange {
   /**
-    * Creates a new selection range.
-    *
-    * @param range The range of the selection range.
-    * @param parent The parent of the selection range.
-    */
+  		 * Creates a new selection range.
+  		 *
+  		 * @param range The range of the selection range.
+  		 * @param parent The parent of the selection range.
+  		 */
   def this(range: typings.vscode.mod.Range) = this()
   def this(range: typings.vscode.mod.Range, parent: typings.vscode.mod.SelectionRange) = this()
 }

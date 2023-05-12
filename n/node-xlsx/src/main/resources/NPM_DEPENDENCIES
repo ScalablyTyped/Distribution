@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "node-xlsx" : "0.21.0"
+      "node-xlsx" : "0.21.2"
     }
   ],
   "test-dependencies" : [
     {
-      "node-xlsx" : "0.21.0"
+      "node-xlsx" : "0.21.2"
     }
   ],
   "compile-devDependencies" : [

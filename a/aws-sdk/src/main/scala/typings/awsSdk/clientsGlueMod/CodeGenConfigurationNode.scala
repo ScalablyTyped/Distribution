@@ -12,6 +12,16 @@ trait CodeGenConfigurationNode extends StObject {
   var Aggregate: js.UndefOr[typings.awsSdk.clientsGlueMod.Aggregate] = js.undefined
   
   /**
+    * Specifies a target that writes to a data source in Amazon Redshift.
+    */
+  var AmazonRedshiftSource: js.UndefOr[typings.awsSdk.clientsGlueMod.AmazonRedshiftSource] = js.undefined
+  
+  /**
+    * Specifies a target that writes to a data target in Amazon Redshift.
+    */
+  var AmazonRedshiftTarget: js.UndefOr[typings.awsSdk.clientsGlueMod.AmazonRedshiftTarget] = js.undefined
+  
+  /**
     * Specifies a transform that maps data property keys in the data source to data property keys in the data target. You can rename keys, modify the data types for keys, and choose which keys to drop from the dataset.
     */
   var ApplyMapping: js.UndefOr[typings.awsSdk.clientsGlueMod.ApplyMapping] = js.undefined
@@ -20,6 +30,16 @@ trait CodeGenConfigurationNode extends StObject {
     * Specifies a connector to an Amazon Athena data source.
     */
   var AthenaConnectorSource: js.UndefOr[typings.awsSdk.clientsGlueMod.AthenaConnectorSource] = js.undefined
+  
+  /**
+    * Specifies a Delta Lake data source that is registered in the Glue Data Catalog.
+    */
+  var CatalogDeltaSource: js.UndefOr[typings.awsSdk.clientsGlueMod.CatalogDeltaSource] = js.undefined
+  
+  /**
+    * Specifies a Hudi data source that is registered in the Glue Data Catalog.
+    */
+  var CatalogHudiSource: js.UndefOr[typings.awsSdk.clientsGlueMod.CatalogHudiSource] = js.undefined
   
   /**
     * Specifies an Apache Kafka data store in the Data Catalog.
@@ -46,6 +66,8 @@ trait CodeGenConfigurationNode extends StObject {
     */
   var CustomCode: js.UndefOr[typings.awsSdk.clientsGlueMod.CustomCode] = js.undefined
   
+  var DirectJDBCSource: js.UndefOr[typings.awsSdk.clientsGlueMod.DirectJDBCSource] = js.undefined
+  
   /**
     * Specifies an Apache Kafka data store.
     */
@@ -71,7 +93,20 @@ trait CodeGenConfigurationNode extends StObject {
     */
   var DropNullFields: js.UndefOr[typings.awsSdk.clientsGlueMod.DropNullFields] = js.undefined
   
+  /**
+    * Specifies a custom visual transform created by a user.
+    */
+  var DynamicTransform: js.UndefOr[typings.awsSdk.clientsGlueMod.DynamicTransform] = js.undefined
+  
+  /**
+    * Specifies a DynamoDBC Catalog data store in the Glue Data Catalog.
+    */
   var DynamoDBCatalogSource: js.UndefOr[typings.awsSdk.clientsGlueMod.DynamoDBCatalogSource] = js.undefined
+  
+  /**
+    * Specifies your data quality evaluation criteria.
+    */
+  var EvaluateDataQuality: js.UndefOr[typings.awsSdk.clientsGlueMod.EvaluateDataQuality] = js.undefined
   
   /**
     * Specifies a transform that locates records in the dataset that have missing values and adds a new field with a value determined by imputation. The input data set is used to train the machine learning model that determines what the missing value should be.
@@ -168,12 +203,25 @@ trait CodeGenConfigurationNode extends StObject {
     */
   var RedshiftTarget: js.UndefOr[typings.awsSdk.clientsGlueMod.RedshiftTarget] = js.undefined
   
+  /**
+    * Specifies a relational catalog data store in the Glue Data Catalog.
+    */
   var RelationalCatalogSource: js.UndefOr[typings.awsSdk.clientsGlueMod.RelationalCatalogSource] = js.undefined
   
   /**
     * Specifies a transform that renames a single data property key.
     */
   var RenameField: js.UndefOr[typings.awsSdk.clientsGlueMod.RenameField] = js.undefined
+  
+  /**
+    * Specifies a Delta Lake data source that is registered in the Glue Data Catalog. The data source must be stored in Amazon S3.
+    */
+  var S3CatalogDeltaSource: js.UndefOr[typings.awsSdk.clientsGlueMod.S3CatalogDeltaSource] = js.undefined
+  
+  /**
+    * Specifies a Hudi data source that is registered in the Glue Data Catalog. The data source must be stored in Amazon S3.
+    */
+  var S3CatalogHudiSource: js.UndefOr[typings.awsSdk.clientsGlueMod.S3CatalogHudiSource] = js.undefined
   
   /**
     * Specifies an Amazon S3 data store in the Glue Data Catalog.
@@ -191,6 +239,21 @@ trait CodeGenConfigurationNode extends StObject {
   var S3CsvSource: js.UndefOr[typings.awsSdk.clientsGlueMod.S3CsvSource] = js.undefined
   
   /**
+    * Specifies a target that writes to a Delta Lake data source in the Glue Data Catalog.
+    */
+  var S3DeltaCatalogTarget: js.UndefOr[typings.awsSdk.clientsGlueMod.S3DeltaCatalogTarget] = js.undefined
+  
+  /**
+    * Specifies a target that writes to a Delta Lake data source in Amazon S3.
+    */
+  var S3DeltaDirectTarget: js.UndefOr[typings.awsSdk.clientsGlueMod.S3DeltaDirectTarget] = js.undefined
+  
+  /**
+    * Specifies a Delta Lake data source stored in Amazon S3.
+    */
+  var S3DeltaSource: js.UndefOr[typings.awsSdk.clientsGlueMod.S3DeltaSource] = js.undefined
+  
+  /**
     * Specifies a data target that writes to Amazon S3.
     */
   var S3DirectTarget: js.UndefOr[typings.awsSdk.clientsGlueMod.S3DirectTarget] = js.undefined
@@ -199,6 +262,21 @@ trait CodeGenConfigurationNode extends StObject {
     * Specifies a data target that writes to Amazon S3 in Apache Parquet columnar storage.
     */
   var S3GlueParquetTarget: js.UndefOr[typings.awsSdk.clientsGlueMod.S3GlueParquetTarget] = js.undefined
+  
+  /**
+    * Specifies a target that writes to a Hudi data source in the Glue Data Catalog.
+    */
+  var S3HudiCatalogTarget: js.UndefOr[typings.awsSdk.clientsGlueMod.S3HudiCatalogTarget] = js.undefined
+  
+  /**
+    * Specifies a target that writes to a Hudi data source in Amazon S3.
+    */
+  var S3HudiDirectTarget: js.UndefOr[typings.awsSdk.clientsGlueMod.S3HudiDirectTarget] = js.undefined
+  
+  /**
+    * Specifies a Hudi data source stored in Amazon S3.
+    */
+  var S3HudiSource: js.UndefOr[typings.awsSdk.clientsGlueMod.S3HudiSource] = js.undefined
   
   /**
     * Specifies a JSON data store stored in Amazon S3.
@@ -264,6 +342,14 @@ object CodeGenConfigurationNode {
     
     inline def setAggregateUndefined: Self = StObject.set(x, "Aggregate", js.undefined)
     
+    inline def setAmazonRedshiftSource(value: AmazonRedshiftSource): Self = StObject.set(x, "AmazonRedshiftSource", value.asInstanceOf[js.Any])
+    
+    inline def setAmazonRedshiftSourceUndefined: Self = StObject.set(x, "AmazonRedshiftSource", js.undefined)
+    
+    inline def setAmazonRedshiftTarget(value: AmazonRedshiftTarget): Self = StObject.set(x, "AmazonRedshiftTarget", value.asInstanceOf[js.Any])
+    
+    inline def setAmazonRedshiftTargetUndefined: Self = StObject.set(x, "AmazonRedshiftTarget", js.undefined)
+    
     inline def setApplyMapping(value: ApplyMapping): Self = StObject.set(x, "ApplyMapping", value.asInstanceOf[js.Any])
     
     inline def setApplyMappingUndefined: Self = StObject.set(x, "ApplyMapping", js.undefined)
@@ -271,6 +357,14 @@ object CodeGenConfigurationNode {
     inline def setAthenaConnectorSource(value: AthenaConnectorSource): Self = StObject.set(x, "AthenaConnectorSource", value.asInstanceOf[js.Any])
     
     inline def setAthenaConnectorSourceUndefined: Self = StObject.set(x, "AthenaConnectorSource", js.undefined)
+    
+    inline def setCatalogDeltaSource(value: CatalogDeltaSource): Self = StObject.set(x, "CatalogDeltaSource", value.asInstanceOf[js.Any])
+    
+    inline def setCatalogDeltaSourceUndefined: Self = StObject.set(x, "CatalogDeltaSource", js.undefined)
+    
+    inline def setCatalogHudiSource(value: CatalogHudiSource): Self = StObject.set(x, "CatalogHudiSource", value.asInstanceOf[js.Any])
+    
+    inline def setCatalogHudiSourceUndefined: Self = StObject.set(x, "CatalogHudiSource", js.undefined)
     
     inline def setCatalogKafkaSource(value: CatalogKafkaSource): Self = StObject.set(x, "CatalogKafkaSource", value.asInstanceOf[js.Any])
     
@@ -292,6 +386,10 @@ object CodeGenConfigurationNode {
     
     inline def setCustomCodeUndefined: Self = StObject.set(x, "CustomCode", js.undefined)
     
+    inline def setDirectJDBCSource(value: DirectJDBCSource): Self = StObject.set(x, "DirectJDBCSource", value.asInstanceOf[js.Any])
+    
+    inline def setDirectJDBCSourceUndefined: Self = StObject.set(x, "DirectJDBCSource", js.undefined)
+    
     inline def setDirectKafkaSource(value: DirectKafkaSource): Self = StObject.set(x, "DirectKafkaSource", value.asInstanceOf[js.Any])
     
     inline def setDirectKafkaSourceUndefined: Self = StObject.set(x, "DirectKafkaSource", js.undefined)
@@ -312,9 +410,17 @@ object CodeGenConfigurationNode {
     
     inline def setDropNullFieldsUndefined: Self = StObject.set(x, "DropNullFields", js.undefined)
     
+    inline def setDynamicTransform(value: DynamicTransform): Self = StObject.set(x, "DynamicTransform", value.asInstanceOf[js.Any])
+    
+    inline def setDynamicTransformUndefined: Self = StObject.set(x, "DynamicTransform", js.undefined)
+    
     inline def setDynamoDBCatalogSource(value: DynamoDBCatalogSource): Self = StObject.set(x, "DynamoDBCatalogSource", value.asInstanceOf[js.Any])
     
     inline def setDynamoDBCatalogSourceUndefined: Self = StObject.set(x, "DynamoDBCatalogSource", js.undefined)
+    
+    inline def setEvaluateDataQuality(value: EvaluateDataQuality): Self = StObject.set(x, "EvaluateDataQuality", value.asInstanceOf[js.Any])
+    
+    inline def setEvaluateDataQualityUndefined: Self = StObject.set(x, "EvaluateDataQuality", js.undefined)
     
     inline def setFillMissingValues(value: FillMissingValues): Self = StObject.set(x, "FillMissingValues", value.asInstanceOf[js.Any])
     
@@ -400,6 +506,14 @@ object CodeGenConfigurationNode {
     
     inline def setRenameFieldUndefined: Self = StObject.set(x, "RenameField", js.undefined)
     
+    inline def setS3CatalogDeltaSource(value: S3CatalogDeltaSource): Self = StObject.set(x, "S3CatalogDeltaSource", value.asInstanceOf[js.Any])
+    
+    inline def setS3CatalogDeltaSourceUndefined: Self = StObject.set(x, "S3CatalogDeltaSource", js.undefined)
+    
+    inline def setS3CatalogHudiSource(value: S3CatalogHudiSource): Self = StObject.set(x, "S3CatalogHudiSource", value.asInstanceOf[js.Any])
+    
+    inline def setS3CatalogHudiSourceUndefined: Self = StObject.set(x, "S3CatalogHudiSource", js.undefined)
+    
     inline def setS3CatalogSource(value: S3CatalogSource): Self = StObject.set(x, "S3CatalogSource", value.asInstanceOf[js.Any])
     
     inline def setS3CatalogSourceUndefined: Self = StObject.set(x, "S3CatalogSource", js.undefined)
@@ -412,6 +526,18 @@ object CodeGenConfigurationNode {
     
     inline def setS3CsvSourceUndefined: Self = StObject.set(x, "S3CsvSource", js.undefined)
     
+    inline def setS3DeltaCatalogTarget(value: S3DeltaCatalogTarget): Self = StObject.set(x, "S3DeltaCatalogTarget", value.asInstanceOf[js.Any])
+    
+    inline def setS3DeltaCatalogTargetUndefined: Self = StObject.set(x, "S3DeltaCatalogTarget", js.undefined)
+    
+    inline def setS3DeltaDirectTarget(value: S3DeltaDirectTarget): Self = StObject.set(x, "S3DeltaDirectTarget", value.asInstanceOf[js.Any])
+    
+    inline def setS3DeltaDirectTargetUndefined: Self = StObject.set(x, "S3DeltaDirectTarget", js.undefined)
+    
+    inline def setS3DeltaSource(value: S3DeltaSource): Self = StObject.set(x, "S3DeltaSource", value.asInstanceOf[js.Any])
+    
+    inline def setS3DeltaSourceUndefined: Self = StObject.set(x, "S3DeltaSource", js.undefined)
+    
     inline def setS3DirectTarget(value: S3DirectTarget): Self = StObject.set(x, "S3DirectTarget", value.asInstanceOf[js.Any])
     
     inline def setS3DirectTargetUndefined: Self = StObject.set(x, "S3DirectTarget", js.undefined)
@@ -419,6 +545,18 @@ object CodeGenConfigurationNode {
     inline def setS3GlueParquetTarget(value: S3GlueParquetTarget): Self = StObject.set(x, "S3GlueParquetTarget", value.asInstanceOf[js.Any])
     
     inline def setS3GlueParquetTargetUndefined: Self = StObject.set(x, "S3GlueParquetTarget", js.undefined)
+    
+    inline def setS3HudiCatalogTarget(value: S3HudiCatalogTarget): Self = StObject.set(x, "S3HudiCatalogTarget", value.asInstanceOf[js.Any])
+    
+    inline def setS3HudiCatalogTargetUndefined: Self = StObject.set(x, "S3HudiCatalogTarget", js.undefined)
+    
+    inline def setS3HudiDirectTarget(value: S3HudiDirectTarget): Self = StObject.set(x, "S3HudiDirectTarget", value.asInstanceOf[js.Any])
+    
+    inline def setS3HudiDirectTargetUndefined: Self = StObject.set(x, "S3HudiDirectTarget", js.undefined)
+    
+    inline def setS3HudiSource(value: S3HudiSource): Self = StObject.set(x, "S3HudiSource", value.asInstanceOf[js.Any])
+    
+    inline def setS3HudiSourceUndefined: Self = StObject.set(x, "S3HudiSource", js.undefined)
     
     inline def setS3JsonSource(value: S3JsonSource): Self = StObject.set(x, "S3JsonSource", value.asInstanceOf[js.Any])
     

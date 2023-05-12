@@ -1,7 +1,7 @@
 package typings.angularCompilerCli
 
 import typings.angularCompilerCli.anon.Close
-import typings.angularCompilerCli.anon.ExitCode
+import typings.angularCompilerCli.anon.Diagnostics
 import typings.angularCompilerCli.anon.Program
 import typings.angularCompilerCli.srcPerformCompileMod.ParsedConfiguration
 import typings.angularCompilerCli.srcTransformersApiMod.CompilerOptions
@@ -29,108 +29,108 @@ object srcMainMod {
     tsickle: js.UndefOr[TsickleModule]
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("main")(args.asInstanceOf[js.Any], consoleError.asInstanceOf[js.Any], config.asInstanceOf[js.Any], customTransformers.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any], tsickle.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def mainDiagnosticsForTest(args: js.Array[String]): ExitCode = ^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any]).asInstanceOf[ExitCode]
+  inline def mainDiagnosticsForTest(args: js.Array[String]): Diagnostics = ^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any]).asInstanceOf[Diagnostics]
   inline def mainDiagnosticsForTest(
     args: js.Array[String],
     config: Unit,
     programReuse: Unit,
     modifiedResourceFiles: Null,
     tsickle: TsickleModule
-  ): ExitCode = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any], tsickle.asInstanceOf[js.Any])).asInstanceOf[ExitCode]
+  ): Diagnostics = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any], tsickle.asInstanceOf[js.Any])).asInstanceOf[Diagnostics]
   inline def mainDiagnosticsForTest(
     args: js.Array[String],
     config: Unit,
     programReuse: Unit,
     modifiedResourceFiles: Unit,
     tsickle: TsickleModule
-  ): ExitCode = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any], tsickle.asInstanceOf[js.Any])).asInstanceOf[ExitCode]
-  inline def mainDiagnosticsForTest(args: js.Array[String], config: Unit, programReuse: Unit, modifiedResourceFiles: Set[String]): ExitCode = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any])).asInstanceOf[ExitCode]
+  ): Diagnostics = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any], tsickle.asInstanceOf[js.Any])).asInstanceOf[Diagnostics]
+  inline def mainDiagnosticsForTest(args: js.Array[String], config: Unit, programReuse: Unit, modifiedResourceFiles: Set[String]): Diagnostics = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any])).asInstanceOf[Diagnostics]
   inline def mainDiagnosticsForTest(
     args: js.Array[String],
     config: Unit,
     programReuse: Unit,
     modifiedResourceFiles: Set[String],
     tsickle: TsickleModule
-  ): ExitCode = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any], tsickle.asInstanceOf[js.Any])).asInstanceOf[ExitCode]
-  inline def mainDiagnosticsForTest(args: js.Array[String], config: Unit, programReuse: Program): ExitCode = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any])).asInstanceOf[ExitCode]
+  ): Diagnostics = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any], tsickle.asInstanceOf[js.Any])).asInstanceOf[Diagnostics]
+  inline def mainDiagnosticsForTest(args: js.Array[String], config: Unit, programReuse: Program): Diagnostics = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any])).asInstanceOf[Diagnostics]
   inline def mainDiagnosticsForTest(
     args: js.Array[String],
     config: Unit,
     programReuse: Program,
     modifiedResourceFiles: Null,
     tsickle: TsickleModule
-  ): ExitCode = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any], tsickle.asInstanceOf[js.Any])).asInstanceOf[ExitCode]
+  ): Diagnostics = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any], tsickle.asInstanceOf[js.Any])).asInstanceOf[Diagnostics]
   inline def mainDiagnosticsForTest(
     args: js.Array[String],
     config: Unit,
     programReuse: Program,
     modifiedResourceFiles: Unit,
     tsickle: TsickleModule
-  ): ExitCode = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any], tsickle.asInstanceOf[js.Any])).asInstanceOf[ExitCode]
-  inline def mainDiagnosticsForTest(args: js.Array[String], config: Unit, programReuse: Program, modifiedResourceFiles: Set[String]): ExitCode = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any])).asInstanceOf[ExitCode]
+  ): Diagnostics = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any], tsickle.asInstanceOf[js.Any])).asInstanceOf[Diagnostics]
+  inline def mainDiagnosticsForTest(args: js.Array[String], config: Unit, programReuse: Program, modifiedResourceFiles: Set[String]): Diagnostics = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any])).asInstanceOf[Diagnostics]
   inline def mainDiagnosticsForTest(
     args: js.Array[String],
     config: Unit,
     programReuse: Program,
     modifiedResourceFiles: Set[String],
     tsickle: TsickleModule
-  ): ExitCode = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any], tsickle.asInstanceOf[js.Any])).asInstanceOf[ExitCode]
-  inline def mainDiagnosticsForTest(args: js.Array[String], config: NgcParsedConfiguration): ExitCode = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ExitCode]
+  ): Diagnostics = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any], tsickle.asInstanceOf[js.Any])).asInstanceOf[Diagnostics]
+  inline def mainDiagnosticsForTest(args: js.Array[String], config: NgcParsedConfiguration): Diagnostics = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Diagnostics]
   inline def mainDiagnosticsForTest(
     args: js.Array[String],
     config: NgcParsedConfiguration,
     programReuse: Unit,
     modifiedResourceFiles: Null,
     tsickle: TsickleModule
-  ): ExitCode = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any], tsickle.asInstanceOf[js.Any])).asInstanceOf[ExitCode]
+  ): Diagnostics = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any], tsickle.asInstanceOf[js.Any])).asInstanceOf[Diagnostics]
   inline def mainDiagnosticsForTest(
     args: js.Array[String],
     config: NgcParsedConfiguration,
     programReuse: Unit,
     modifiedResourceFiles: Unit,
     tsickle: TsickleModule
-  ): ExitCode = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any], tsickle.asInstanceOf[js.Any])).asInstanceOf[ExitCode]
+  ): Diagnostics = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any], tsickle.asInstanceOf[js.Any])).asInstanceOf[Diagnostics]
   inline def mainDiagnosticsForTest(
     args: js.Array[String],
     config: NgcParsedConfiguration,
     programReuse: Unit,
     modifiedResourceFiles: Set[String]
-  ): ExitCode = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any])).asInstanceOf[ExitCode]
+  ): Diagnostics = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any])).asInstanceOf[Diagnostics]
   inline def mainDiagnosticsForTest(
     args: js.Array[String],
     config: NgcParsedConfiguration,
     programReuse: Unit,
     modifiedResourceFiles: Set[String],
     tsickle: TsickleModule
-  ): ExitCode = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any], tsickle.asInstanceOf[js.Any])).asInstanceOf[ExitCode]
-  inline def mainDiagnosticsForTest(args: js.Array[String], config: NgcParsedConfiguration, programReuse: Program): ExitCode = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any])).asInstanceOf[ExitCode]
+  ): Diagnostics = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any], tsickle.asInstanceOf[js.Any])).asInstanceOf[Diagnostics]
+  inline def mainDiagnosticsForTest(args: js.Array[String], config: NgcParsedConfiguration, programReuse: Program): Diagnostics = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any])).asInstanceOf[Diagnostics]
   inline def mainDiagnosticsForTest(
     args: js.Array[String],
     config: NgcParsedConfiguration,
     programReuse: Program,
     modifiedResourceFiles: Null,
     tsickle: TsickleModule
-  ): ExitCode = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any], tsickle.asInstanceOf[js.Any])).asInstanceOf[ExitCode]
+  ): Diagnostics = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any], tsickle.asInstanceOf[js.Any])).asInstanceOf[Diagnostics]
   inline def mainDiagnosticsForTest(
     args: js.Array[String],
     config: NgcParsedConfiguration,
     programReuse: Program,
     modifiedResourceFiles: Unit,
     tsickle: TsickleModule
-  ): ExitCode = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any], tsickle.asInstanceOf[js.Any])).asInstanceOf[ExitCode]
+  ): Diagnostics = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any], tsickle.asInstanceOf[js.Any])).asInstanceOf[Diagnostics]
   inline def mainDiagnosticsForTest(
     args: js.Array[String],
     config: NgcParsedConfiguration,
     programReuse: Program,
     modifiedResourceFiles: Set[String]
-  ): ExitCode = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any])).asInstanceOf[ExitCode]
+  ): Diagnostics = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any])).asInstanceOf[Diagnostics]
   inline def mainDiagnosticsForTest(
     args: js.Array[String],
     config: NgcParsedConfiguration,
     programReuse: Program,
     modifiedResourceFiles: Set[String],
     tsickle: TsickleModule
-  ): ExitCode = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any], tsickle.asInstanceOf[js.Any])).asInstanceOf[ExitCode]
+  ): Diagnostics = (^.asInstanceOf[js.Dynamic].applyDynamic("mainDiagnosticsForTest")(args.asInstanceOf[js.Any], config.asInstanceOf[js.Any], programReuse.asInstanceOf[js.Any], modifiedResourceFiles.asInstanceOf[js.Any], tsickle.asInstanceOf[js.Any])).asInstanceOf[Diagnostics]
   
   inline def readCommandLineAndConfiguration(args: js.Array[String]): ParsedConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("readCommandLineAndConfiguration")(args.asInstanceOf[js.Any]).asInstanceOf[ParsedConfiguration]
   inline def readCommandLineAndConfiguration(args: js.Array[String], existingOptions: Unit, ngCmdLineOptions: js.Array[String]): ParsedConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("readCommandLineAndConfiguration")(args.asInstanceOf[js.Any], existingOptions.asInstanceOf[js.Any], ngCmdLineOptions.asInstanceOf[js.Any])).asInstanceOf[ParsedConfiguration]

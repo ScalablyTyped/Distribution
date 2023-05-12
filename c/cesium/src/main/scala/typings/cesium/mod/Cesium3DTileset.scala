@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.anon.BackFaceCulling
+import typings.cesium.mod.Cesium3DTileset.ConstructorOptions
 import typings.cesium.mod.Cesium3DTileset.foveatedInterpolationCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("cesium", "Cesium3DTileset")
 @js.native
 open class Cesium3DTileset protected () extends StObject {
-  def this(options: BackFaceCulling) = this()
+  def this(options: ConstructorOptions) = this()
   
   /**
     * The event fired to indicate that all tiles that meet the screen space error this frame are loaded. The tileset
@@ -55,14 +55,12 @@ open class Cesium3DTileset protected () extends StObject {
   /**
     * The tileset's bounding sphere.
     * @example
-    * const tileset = viewer.scene.primitives.add(new Cesium.Cesium3DTileset({
-    *     url : 'http://localhost:8002/tilesets/Seattle/tileset.json'
-    * }));
+    * const tileset = await Cesium.Cesium3DTileset.fromUrl("http://localhost:8002/tilesets/Seattle/tileset.json");
     *
-    * tileset.readyPromise.then(function(tileset) {
-    *     // Set the camera to view the newly added tileset
-    *     viewer.camera.viewBoundingSphere(tileset.boundingSphere, new Cesium.HeadingPitchRange(0, -0.5, 0));
-    * });
+    * viewer.scene.primitives.add(tileset);
+    *
+    * // Set the camera to view the newly added tileset
+    * viewer.camera.viewBoundingSphere(tileset.boundingSphere, new Cesium.HeadingPitchRange(0, -0.5, 0));
     */
   val boundingSphere: BoundingSphere = js.native
   
@@ -545,7 +543,6 @@ open class Cesium3DTileset protected () extends StObject {
   
   /**
     * When <code>true</code>, the tileset's root tile is loaded and the tileset is ready to render.
-    * This is set to <code>true</code> right before {@link Cesium3DTileset#readyPromise} is resolved.
     */
   val ready: Boolean = js.native
   
@@ -812,6 +809,65 @@ object Cesium3DTileset {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    * Creates a {@link https://github.com/CesiumGS/3d-tiles/tree/main/specification|3D Tiles tileset},
+    * used for streaming massive heterogeneous 3D geospatial datasets, from a Cesium ion asset ID.
+    * @example
+    * // Load a Cesium3DTileset with a Cesium ion asset ID of 124624234
+    * try {
+    *   const tileset = await Cesium.Cesium3DTileset.fromIonAssetId(124624234);
+    *   scene.primitives.add(tileset);
+    * } catch (error) {
+    *   console.error(`Error creating tileset: ${error}`);
+    * }
+    * @param assetId - The Cesium ion asset id.
+    * @param options - An object describing initialization options
+    */
+  inline def fromIonAssetId(assetId: Double, options: ConstructorOptions): js.Promise[Cesium3DTileset] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromIonAssetId")(assetId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Cesium3DTileset]]
+  
+  inline def fromUrl(url: String): js.Promise[Cesium3DTileset] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Cesium3DTileset]]
+  inline def fromUrl(url: String, options: ConstructorOptions): js.Promise[Cesium3DTileset] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Cesium3DTileset]]
+  /**
+    * Creates a {@link https://github.com/CesiumGS/3d-tiles/tree/main/specification|3D Tiles tileset},
+    * used for streaming massive heterogeneous 3D geospatial datasets.
+    * @example
+    * try {
+    *   const tileset = await Cesium.Cesium3DTileset.fromUrl(
+    *      "http://localhost:8002/tilesets/Seattle/tileset.json"
+    *   );
+    *   scene.primitives.add(tileset);
+    * } catch (error) {
+    *   console.error(`Error creating tileset: ${error}`);
+    * }
+    * @example
+    * // Common setting for the skipLevelOfDetail optimization
+    * const tileset = await Cesium.Cesium3DTileset.fromUrl(
+    *   "http://localhost:8002/tilesets/Seattle/tileset.json", {
+    *      skipLevelOfDetail: true,
+    *      baseScreenSpaceError: 1024,
+    *      skipScreenSpaceErrorFactor: 16,
+    *      skipLevels: 1,
+    *      immediatelyLoadDesiredLevelOfDetail: false,
+    *      loadSiblings: false,
+    *      cullWithChildrenBounds: true
+    * });
+    * scene.primitives.add(tileset);
+    * @example
+    * // Common settings for the dynamicScreenSpaceError optimization
+    * const tileset = await Cesium.Cesium3DTileset.fromUrl(
+    *   "http://localhost:8002/tilesets/Seattle/tileset.json", {
+    *      dynamicScreenSpaceError: true,
+    *      dynamicScreenSpaceErrorDensity: 0.00278,
+    *      dynamicScreenSpaceErrorFactor: 4.0,
+    *      dynamicScreenSpaceErrorHeightFalloff: 0.25
+    * });
+    * scene.primitives.add(tileset);
+    * @param url - The url to a tileset JSON file.
+    * @param [options] - An object describing initialization options
+    */
+  inline def fromUrl(url: Resource): js.Promise[Cesium3DTileset] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Cesium3DTileset]]
+  inline def fromUrl(url: Resource, options: ConstructorOptions): js.Promise[Cesium3DTileset] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Cesium3DTileset]]
+  
   inline def loadJson(tilesetUrl: String): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadJson")(tilesetUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
   /**
     * Provides a hook to override the method used to request the tileset json
@@ -820,6 +876,430 @@ object Cesium3DTileset {
     * @returns A promise that resolves with the fetched json data
     */
   inline def loadJson(tilesetUrl: Resource): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadJson")(tilesetUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
+  
+  /**
+    * Initialization options for the Cesium3DTileset constructor
+    * @property [.url] - The url to a tileset JSON file. Deprecated.
+    * @property [show = true] - Determines if the tileset will be shown.
+    * @property [modelMatrix = Matrix4.IDENTITY] - A 4x4 transformation matrix that transforms the tileset's root tile.
+    * @property [modelUpAxis = Axis.Y] - Which axis is considered up when loading models for tile contents.
+    * @property [modelForwardAxis = Axis.X] - Which axis is considered forward when loading models for tile contents.
+    * @property [shadows = ShadowMode.ENABLED] - Determines whether the tileset casts or receives shadows from light sources.
+    * @property [maximumScreenSpaceError = 16] - The maximum screen space error used to drive level of detail refinement.
+    * @property [maximumMemoryUsage = 512] - The maximum amount of memory in MB that can be used by the tileset.
+    * @property [cullWithChildrenBounds = true] - Optimization option. Whether to cull tiles using the union of their children bounding volumes.
+    * @property [cullRequestsWhileMoving = true] - Optimization option. Don't request tiles that will likely be unused when they come back because of the camera's movement. This optimization only applies to stationary tilesets.
+    * @property [cullRequestsWhileMovingMultiplier = 60.0] - Optimization option. Multiplier used in culling requests while moving. Larger is more aggressive culling, smaller less aggressive culling.
+    * @property [preloadWhenHidden = false] - Preload tiles when <code>tileset.show</code> is <code>false</code>. Loads tiles as if the tileset is visible but does not render them.
+    * @property [preloadFlightDestinations = true] - Optimization option. Preload tiles at the camera's flight destination while the camera is in flight.
+    * @property [preferLeaves = false] - Optimization option. Prefer loading of leaves first.
+    * @property [dynamicScreenSpaceError = false] - Optimization option. Reduce the screen space error for tiles that are further away from the camera.
+    * @property [dynamicScreenSpaceErrorDensity = 0.00278] - Density used to adjust the dynamic screen space error, similar to fog density.
+    * @property [dynamicScreenSpaceErrorFactor = 4.0] - A factor used to increase the computed dynamic screen space error.
+    * @property [dynamicScreenSpaceErrorHeightFalloff = 0.25] - A ratio of the tileset's height at which the density starts to falloff.
+    * @property [progressiveResolutionHeightFraction = 0.3] - Optimization option. If between (0.0, 0.5], tiles at or above the screen space error for the reduced screen resolution of <code>progressiveResolutionHeightFraction*screenHeight</code> will be prioritized first. This can help get a quick layer of tiles down while full resolution tiles continue to load.
+    * @property [foveatedScreenSpaceError = true] - Optimization option. Prioritize loading tiles in the center of the screen by temporarily raising the screen space error for tiles around the edge of the screen. Screen space error returns to normal once all the tiles in the center of the screen as determined by the {@link Cesium3DTileset#foveatedConeSize} are loaded.
+    * @property [foveatedConeSize = 0.1] - Optimization option. Used when {@link Cesium3DTileset#foveatedScreenSpaceError} is true to control the cone size that determines which tiles are deferred. Tiles that are inside this cone are loaded immediately. Tiles outside the cone are potentially deferred based on how far outside the cone they are and their screen space error. This is controlled by {@link Cesium3DTileset#foveatedInterpolationCallback} and {@link Cesium3DTileset#foveatedMinimumScreenSpaceErrorRelaxation}. Setting this to 0.0 means the cone will be the line formed by the camera position and its view direction. Setting this to 1.0 means the cone encompasses the entire field of view of the camera, disabling the effect.
+    * @property [foveatedMinimumScreenSpaceErrorRelaxation = 0.0] - Optimization option. Used when {@link Cesium3DTileset#foveatedScreenSpaceError} is true to control the starting screen space error relaxation for tiles outside the foveated cone. The screen space error will be raised starting with tileset value up to {@link Cesium3DTileset#maximumScreenSpaceError} based on the provided {@link Cesium3DTileset#foveatedInterpolationCallback}.
+    * @property [foveatedInterpolationCallback = Math.lerp] - Optimization option. Used when {@link Cesium3DTileset#foveatedScreenSpaceError} is true to control how much to raise the screen space error for tiles outside the foveated cone, interpolating between {@link Cesium3DTileset#foveatedMinimumScreenSpaceErrorRelaxation} and {@link Cesium3DTileset#maximumScreenSpaceError}
+    * @property [foveatedTimeDelay = 0.2] - Optimization option. Used when {@link Cesium3DTileset#foveatedScreenSpaceError} is true to control how long in seconds to wait after the camera stops moving before deferred tiles start loading in. This time delay prevents requesting tiles around the edges of the screen when the camera is moving. Setting this to 0.0 will immediately request all tiles in any given view.
+    * @property [skipLevelOfDetail = false] - Optimization option. Determines if level of detail skipping should be applied during the traversal.
+    * @property [baseScreenSpaceError = 1024] - When <code>skipLevelOfDetail</code> is <code>true</code>, the screen space error that must be reached before skipping levels of detail.
+    * @property [skipScreenSpaceErrorFactor = 16] - When <code>skipLevelOfDetail</code> is <code>true</code>, a multiplier defining the minimum screen space error to skip. Used in conjunction with <code>skipLevels</code> to determine which tiles to load.
+    * @property [skipLevels = 1] - When <code>skipLevelOfDetail</code> is <code>true</code>, a constant defining the minimum number of levels to skip when loading tiles. When it is 0, no levels are skipped. Used in conjunction with <code>skipScreenSpaceErrorFactor</code> to determine which tiles to load.
+    * @property [immediatelyLoadDesiredLevelOfDetail = false] - When <code>skipLevelOfDetail</code> is <code>true</code>, only tiles that meet the maximum screen space error will ever be downloaded. Skipping factors are ignored and just the desired tiles are loaded.
+    * @property [loadSiblings = false] - When <code>skipLevelOfDetail</code> is <code>true</code>, determines whether siblings of visible tiles are always downloaded during traversal.
+    * @property [clippingPlanes] - The {@link ClippingPlaneCollection} used to selectively disable rendering the tileset.
+    * @property [classificationType] - Determines whether terrain, 3D Tiles or both will be classified by this tileset. See {@link Cesium3DTileset#classificationType} for details about restrictions and limitations.
+    * @property [ellipsoid = Ellipsoid.WGS84] - The ellipsoid determining the size and shape of the globe.
+    * @property [pointCloudShading] - Options for constructing a {@link PointCloudShading} object to control point attenuation based on geometric error and lighting.
+    * @property [lightColor] - The light color when shading models. When <code>undefined</code> the scene's light color is used instead.
+    * @property [imageBasedLighting] - The properties for managing image-based lighting for this tileset.
+    * @property [backFaceCulling = true] - Whether to cull back-facing geometry. When true, back face culling is determined by the glTF material's doubleSided property; when false, back face culling is disabled.
+    * @property [enableShowOutline = true] - Whether to enable outlines for models using the {@link https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Vendor/CESIUM_primitive_outline|CESIUM_primitive_outline} extension. This can be set to false to avoid the additional processing of geometry at load time. When false, the showOutlines and outlineColor options are ignored.
+    * @property [showOutline = true] - Whether to display the outline for models using the {@link https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Vendor/CESIUM_primitive_outline|CESIUM_primitive_outline} extension. When true, outlines are displayed. When false, outlines are not displayed.
+    * @property [outlineColor = Color.BLACK] - The color to use when rendering outlines.
+    * @property [vectorClassificationOnly = false] - Indicates that only the tileset's vector tiles should be used for classification.
+    * @property [vectorKeepDecodedPositions = false] - Whether vector tiles should keep decoded positions in memory. This is used with {@link Cesium3DTileFeature.getPolylinePositions}.
+    * @property [featureIdLabel = "featureId_0"] - Label of the feature ID set to use for picking and styling. For EXT_mesh_features, this is the feature ID's label property, or "featureId_N" (where N is the index in the featureIds array) when not specified. EXT_feature_metadata did not have a label field, so such feature ID sets are always labeled "featureId_N" where N is the index in the list of all feature Ids, where feature ID attributes are listed before feature ID textures. If featureIdLabel is an integer N, it is converted to the string "featureId_N" automatically. If both per-primitive and per-instance feature IDs are present, the instance feature IDs take priority.
+    * @property [instanceFeatureIdLabel = "instanceFeatureId_0"] - Label of the instance feature ID set used for picking and styling. If instanceFeatureIdLabel is set to an integer N, it is converted to the string "instanceFeatureId_N" automatically. If both per-primitive and per-instance feature IDs are present, the instance feature IDs take priority.
+    * @property [showCreditsOnScreen = false] - Whether to display the credits of this tileset on screen.
+    * @property [splitDirection = SplitDirection.NONE] - The {@link SplitDirection} split to apply to this tileset.
+    * @property [projectTo2D = false] - Whether to accurately project the tileset to 2D. If this is true, the tileset will be projected accurately to 2D, but it will use more memory to do so. If this is false, the tileset will use less memory and will still render in 2D / CV mode, but its projected positions may be inaccurate. This cannot be set after the tileset has loaded.
+    * @property [debugHeatmapTilePropertyName] - The tile variable to colorize as a heatmap. All rendered tiles will be colorized relative to each other's specified variable value.
+    * @property [debugFreezeFrame = false] - For debugging only. Determines if only the tiles from last frame should be used for rendering.
+    * @property [debugColorizeTiles = false] - For debugging only. When true, assigns a random color to each tile.
+    * @property [enableDebugWireframe] - For debugging only. This must be true for debugWireframe to work in WebGL1. This cannot be set after the tileset has loaded.
+    * @property [debugWireframe = false] - For debugging only. When true, render's each tile's content as a wireframe.
+    * @property [debugShowBoundingVolume = false] - For debugging only. When true, renders the bounding volume for each tile.
+    * @property [debugShowContentBoundingVolume = false] - For debugging only. When true, renders the bounding volume for each tile's content.
+    * @property [debugShowViewerRequestVolume = false] - For debugging only. When true, renders the viewer request volume for each tile.
+    * @property [debugShowGeometricError = false] - For debugging only. When true, draws labels to indicate the geometric error of each tile.
+    * @property [debugShowRenderingStatistics = false] - For debugging only. When true, draws labels to indicate the number of commands, points, triangles and features for each tile.
+    * @property [debugShowMemoryUsage = false] - For debugging only. When true, draws labels to indicate the texture and geometry memory in megabytes used by each tile.
+    * @property [debugShowUrl = false] - For debugging only. When true, draws labels to indicate the url of each tile.
+    */
+  trait ConstructorOptions extends StObject {
+    
+    var backFaceCulling: js.UndefOr[Boolean] = js.undefined
+    
+    var baseScreenSpaceError: js.UndefOr[Double] = js.undefined
+    
+    var classificationType: js.UndefOr[ClassificationType] = js.undefined
+    
+    var clippingPlanes: js.UndefOr[ClippingPlaneCollection] = js.undefined
+    
+    var cullRequestsWhileMoving: js.UndefOr[Boolean] = js.undefined
+    
+    var cullRequestsWhileMovingMultiplier: js.UndefOr[Double] = js.undefined
+    
+    var cullWithChildrenBounds: js.UndefOr[Boolean] = js.undefined
+    
+    var debugColorizeTiles: js.UndefOr[Boolean] = js.undefined
+    
+    var debugFreezeFrame: js.UndefOr[Boolean] = js.undefined
+    
+    var debugHeatmapTilePropertyName: js.UndefOr[String] = js.undefined
+    
+    var debugShowBoundingVolume: js.UndefOr[Boolean] = js.undefined
+    
+    var debugShowContentBoundingVolume: js.UndefOr[Boolean] = js.undefined
+    
+    var debugShowGeometricError: js.UndefOr[Boolean] = js.undefined
+    
+    var debugShowMemoryUsage: js.UndefOr[Boolean] = js.undefined
+    
+    var debugShowRenderingStatistics: js.UndefOr[Boolean] = js.undefined
+    
+    var debugShowUrl: js.UndefOr[Boolean] = js.undefined
+    
+    var debugShowViewerRequestVolume: js.UndefOr[Boolean] = js.undefined
+    
+    var debugWireframe: js.UndefOr[Boolean] = js.undefined
+    
+    var dynamicScreenSpaceError: js.UndefOr[Boolean] = js.undefined
+    
+    var dynamicScreenSpaceErrorDensity: js.UndefOr[Double] = js.undefined
+    
+    var dynamicScreenSpaceErrorFactor: js.UndefOr[Double] = js.undefined
+    
+    var dynamicScreenSpaceErrorHeightFalloff: js.UndefOr[Double] = js.undefined
+    
+    var ellipsoid: js.UndefOr[Ellipsoid] = js.undefined
+    
+    var enableDebugWireframe: js.UndefOr[Boolean] = js.undefined
+    
+    var enableShowOutline: js.UndefOr[Boolean] = js.undefined
+    
+    var featureIdLabel: js.UndefOr[String | Double] = js.undefined
+    
+    var foveatedConeSize: js.UndefOr[Double] = js.undefined
+    
+    var foveatedInterpolationCallback: js.UndefOr[typings.cesium.mod.Cesium3DTileset.foveatedInterpolationCallback] = js.undefined
+    
+    var foveatedMinimumScreenSpaceErrorRelaxation: js.UndefOr[Double] = js.undefined
+    
+    var foveatedScreenSpaceError: js.UndefOr[Boolean] = js.undefined
+    
+    var foveatedTimeDelay: js.UndefOr[Double] = js.undefined
+    
+    var imageBasedLighting: js.UndefOr[ImageBasedLighting] = js.undefined
+    
+    var immediatelyLoadDesiredLevelOfDetail: js.UndefOr[Boolean] = js.undefined
+    
+    var instanceFeatureIdLabel: js.UndefOr[String | Double] = js.undefined
+    
+    var lightColor: js.UndefOr[Cartesian3] = js.undefined
+    
+    var loadSiblings: js.UndefOr[Boolean] = js.undefined
+    
+    var maximumMemoryUsage: js.UndefOr[Double] = js.undefined
+    
+    var maximumScreenSpaceError: js.UndefOr[Double] = js.undefined
+    
+    var modelForwardAxis: js.UndefOr[Axis] = js.undefined
+    
+    var modelMatrix: js.UndefOr[Matrix4] = js.undefined
+    
+    var modelUpAxis: js.UndefOr[Axis] = js.undefined
+    
+    var outlineColor: js.UndefOr[Color] = js.undefined
+    
+    var pointCloudShading: js.UndefOr[Any] = js.undefined
+    
+    var preferLeaves: js.UndefOr[Boolean] = js.undefined
+    
+    var preloadFlightDestinations: js.UndefOr[Boolean] = js.undefined
+    
+    var preloadWhenHidden: js.UndefOr[Boolean] = js.undefined
+    
+    var progressiveResolutionHeightFraction: js.UndefOr[Double] = js.undefined
+    
+    var projectTo2D: js.UndefOr[Boolean] = js.undefined
+    
+    var shadows: js.UndefOr[ShadowMode] = js.undefined
+    
+    var show: js.UndefOr[Boolean] = js.undefined
+    
+    var showCreditsOnScreen: js.UndefOr[Boolean] = js.undefined
+    
+    var showOutline: js.UndefOr[Boolean] = js.undefined
+    
+    var skipLevelOfDetail: js.UndefOr[Boolean] = js.undefined
+    
+    var skipLevels: js.UndefOr[Double] = js.undefined
+    
+    var skipScreenSpaceErrorFactor: js.UndefOr[Double] = js.undefined
+    
+    var splitDirection: js.UndefOr[SplitDirection] = js.undefined
+    
+    var vectorClassificationOnly: js.UndefOr[Boolean] = js.undefined
+    
+    var vectorKeepDecodedPositions: js.UndefOr[Boolean] = js.undefined
+  }
+  object ConstructorOptions {
+    
+    inline def apply(): ConstructorOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ConstructorOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
+      
+      inline def setBackFaceCulling(value: Boolean): Self = StObject.set(x, "backFaceCulling", value.asInstanceOf[js.Any])
+      
+      inline def setBackFaceCullingUndefined: Self = StObject.set(x, "backFaceCulling", js.undefined)
+      
+      inline def setBaseScreenSpaceError(value: Double): Self = StObject.set(x, "baseScreenSpaceError", value.asInstanceOf[js.Any])
+      
+      inline def setBaseScreenSpaceErrorUndefined: Self = StObject.set(x, "baseScreenSpaceError", js.undefined)
+      
+      inline def setClassificationType(value: ClassificationType): Self = StObject.set(x, "classificationType", value.asInstanceOf[js.Any])
+      
+      inline def setClassificationTypeUndefined: Self = StObject.set(x, "classificationType", js.undefined)
+      
+      inline def setClippingPlanes(value: ClippingPlaneCollection): Self = StObject.set(x, "clippingPlanes", value.asInstanceOf[js.Any])
+      
+      inline def setClippingPlanesUndefined: Self = StObject.set(x, "clippingPlanes", js.undefined)
+      
+      inline def setCullRequestsWhileMoving(value: Boolean): Self = StObject.set(x, "cullRequestsWhileMoving", value.asInstanceOf[js.Any])
+      
+      inline def setCullRequestsWhileMovingMultiplier(value: Double): Self = StObject.set(x, "cullRequestsWhileMovingMultiplier", value.asInstanceOf[js.Any])
+      
+      inline def setCullRequestsWhileMovingMultiplierUndefined: Self = StObject.set(x, "cullRequestsWhileMovingMultiplier", js.undefined)
+      
+      inline def setCullRequestsWhileMovingUndefined: Self = StObject.set(x, "cullRequestsWhileMoving", js.undefined)
+      
+      inline def setCullWithChildrenBounds(value: Boolean): Self = StObject.set(x, "cullWithChildrenBounds", value.asInstanceOf[js.Any])
+      
+      inline def setCullWithChildrenBoundsUndefined: Self = StObject.set(x, "cullWithChildrenBounds", js.undefined)
+      
+      inline def setDebugColorizeTiles(value: Boolean): Self = StObject.set(x, "debugColorizeTiles", value.asInstanceOf[js.Any])
+      
+      inline def setDebugColorizeTilesUndefined: Self = StObject.set(x, "debugColorizeTiles", js.undefined)
+      
+      inline def setDebugFreezeFrame(value: Boolean): Self = StObject.set(x, "debugFreezeFrame", value.asInstanceOf[js.Any])
+      
+      inline def setDebugFreezeFrameUndefined: Self = StObject.set(x, "debugFreezeFrame", js.undefined)
+      
+      inline def setDebugHeatmapTilePropertyName(value: String): Self = StObject.set(x, "debugHeatmapTilePropertyName", value.asInstanceOf[js.Any])
+      
+      inline def setDebugHeatmapTilePropertyNameUndefined: Self = StObject.set(x, "debugHeatmapTilePropertyName", js.undefined)
+      
+      inline def setDebugShowBoundingVolume(value: Boolean): Self = StObject.set(x, "debugShowBoundingVolume", value.asInstanceOf[js.Any])
+      
+      inline def setDebugShowBoundingVolumeUndefined: Self = StObject.set(x, "debugShowBoundingVolume", js.undefined)
+      
+      inline def setDebugShowContentBoundingVolume(value: Boolean): Self = StObject.set(x, "debugShowContentBoundingVolume", value.asInstanceOf[js.Any])
+      
+      inline def setDebugShowContentBoundingVolumeUndefined: Self = StObject.set(x, "debugShowContentBoundingVolume", js.undefined)
+      
+      inline def setDebugShowGeometricError(value: Boolean): Self = StObject.set(x, "debugShowGeometricError", value.asInstanceOf[js.Any])
+      
+      inline def setDebugShowGeometricErrorUndefined: Self = StObject.set(x, "debugShowGeometricError", js.undefined)
+      
+      inline def setDebugShowMemoryUsage(value: Boolean): Self = StObject.set(x, "debugShowMemoryUsage", value.asInstanceOf[js.Any])
+      
+      inline def setDebugShowMemoryUsageUndefined: Self = StObject.set(x, "debugShowMemoryUsage", js.undefined)
+      
+      inline def setDebugShowRenderingStatistics(value: Boolean): Self = StObject.set(x, "debugShowRenderingStatistics", value.asInstanceOf[js.Any])
+      
+      inline def setDebugShowRenderingStatisticsUndefined: Self = StObject.set(x, "debugShowRenderingStatistics", js.undefined)
+      
+      inline def setDebugShowUrl(value: Boolean): Self = StObject.set(x, "debugShowUrl", value.asInstanceOf[js.Any])
+      
+      inline def setDebugShowUrlUndefined: Self = StObject.set(x, "debugShowUrl", js.undefined)
+      
+      inline def setDebugShowViewerRequestVolume(value: Boolean): Self = StObject.set(x, "debugShowViewerRequestVolume", value.asInstanceOf[js.Any])
+      
+      inline def setDebugShowViewerRequestVolumeUndefined: Self = StObject.set(x, "debugShowViewerRequestVolume", js.undefined)
+      
+      inline def setDebugWireframe(value: Boolean): Self = StObject.set(x, "debugWireframe", value.asInstanceOf[js.Any])
+      
+      inline def setDebugWireframeUndefined: Self = StObject.set(x, "debugWireframe", js.undefined)
+      
+      inline def setDynamicScreenSpaceError(value: Boolean): Self = StObject.set(x, "dynamicScreenSpaceError", value.asInstanceOf[js.Any])
+      
+      inline def setDynamicScreenSpaceErrorDensity(value: Double): Self = StObject.set(x, "dynamicScreenSpaceErrorDensity", value.asInstanceOf[js.Any])
+      
+      inline def setDynamicScreenSpaceErrorDensityUndefined: Self = StObject.set(x, "dynamicScreenSpaceErrorDensity", js.undefined)
+      
+      inline def setDynamicScreenSpaceErrorFactor(value: Double): Self = StObject.set(x, "dynamicScreenSpaceErrorFactor", value.asInstanceOf[js.Any])
+      
+      inline def setDynamicScreenSpaceErrorFactorUndefined: Self = StObject.set(x, "dynamicScreenSpaceErrorFactor", js.undefined)
+      
+      inline def setDynamicScreenSpaceErrorHeightFalloff(value: Double): Self = StObject.set(x, "dynamicScreenSpaceErrorHeightFalloff", value.asInstanceOf[js.Any])
+      
+      inline def setDynamicScreenSpaceErrorHeightFalloffUndefined: Self = StObject.set(x, "dynamicScreenSpaceErrorHeightFalloff", js.undefined)
+      
+      inline def setDynamicScreenSpaceErrorUndefined: Self = StObject.set(x, "dynamicScreenSpaceError", js.undefined)
+      
+      inline def setEllipsoid(value: Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
+      
+      inline def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
+      
+      inline def setEnableDebugWireframe(value: Boolean): Self = StObject.set(x, "enableDebugWireframe", value.asInstanceOf[js.Any])
+      
+      inline def setEnableDebugWireframeUndefined: Self = StObject.set(x, "enableDebugWireframe", js.undefined)
+      
+      inline def setEnableShowOutline(value: Boolean): Self = StObject.set(x, "enableShowOutline", value.asInstanceOf[js.Any])
+      
+      inline def setEnableShowOutlineUndefined: Self = StObject.set(x, "enableShowOutline", js.undefined)
+      
+      inline def setFeatureIdLabel(value: String | Double): Self = StObject.set(x, "featureIdLabel", value.asInstanceOf[js.Any])
+      
+      inline def setFeatureIdLabelUndefined: Self = StObject.set(x, "featureIdLabel", js.undefined)
+      
+      inline def setFoveatedConeSize(value: Double): Self = StObject.set(x, "foveatedConeSize", value.asInstanceOf[js.Any])
+      
+      inline def setFoveatedConeSizeUndefined: Self = StObject.set(x, "foveatedConeSize", js.undefined)
+      
+      inline def setFoveatedInterpolationCallback(value: (/* p */ Double, /* q */ Double, /* time */ Double) => Double): Self = StObject.set(x, "foveatedInterpolationCallback", js.Any.fromFunction3(value))
+      
+      inline def setFoveatedInterpolationCallbackUndefined: Self = StObject.set(x, "foveatedInterpolationCallback", js.undefined)
+      
+      inline def setFoveatedMinimumScreenSpaceErrorRelaxation(value: Double): Self = StObject.set(x, "foveatedMinimumScreenSpaceErrorRelaxation", value.asInstanceOf[js.Any])
+      
+      inline def setFoveatedMinimumScreenSpaceErrorRelaxationUndefined: Self = StObject.set(x, "foveatedMinimumScreenSpaceErrorRelaxation", js.undefined)
+      
+      inline def setFoveatedScreenSpaceError(value: Boolean): Self = StObject.set(x, "foveatedScreenSpaceError", value.asInstanceOf[js.Any])
+      
+      inline def setFoveatedScreenSpaceErrorUndefined: Self = StObject.set(x, "foveatedScreenSpaceError", js.undefined)
+      
+      inline def setFoveatedTimeDelay(value: Double): Self = StObject.set(x, "foveatedTimeDelay", value.asInstanceOf[js.Any])
+      
+      inline def setFoveatedTimeDelayUndefined: Self = StObject.set(x, "foveatedTimeDelay", js.undefined)
+      
+      inline def setImageBasedLighting(value: ImageBasedLighting): Self = StObject.set(x, "imageBasedLighting", value.asInstanceOf[js.Any])
+      
+      inline def setImageBasedLightingUndefined: Self = StObject.set(x, "imageBasedLighting", js.undefined)
+      
+      inline def setImmediatelyLoadDesiredLevelOfDetail(value: Boolean): Self = StObject.set(x, "immediatelyLoadDesiredLevelOfDetail", value.asInstanceOf[js.Any])
+      
+      inline def setImmediatelyLoadDesiredLevelOfDetailUndefined: Self = StObject.set(x, "immediatelyLoadDesiredLevelOfDetail", js.undefined)
+      
+      inline def setInstanceFeatureIdLabel(value: String | Double): Self = StObject.set(x, "instanceFeatureIdLabel", value.asInstanceOf[js.Any])
+      
+      inline def setInstanceFeatureIdLabelUndefined: Self = StObject.set(x, "instanceFeatureIdLabel", js.undefined)
+      
+      inline def setLightColor(value: Cartesian3): Self = StObject.set(x, "lightColor", value.asInstanceOf[js.Any])
+      
+      inline def setLightColorUndefined: Self = StObject.set(x, "lightColor", js.undefined)
+      
+      inline def setLoadSiblings(value: Boolean): Self = StObject.set(x, "loadSiblings", value.asInstanceOf[js.Any])
+      
+      inline def setLoadSiblingsUndefined: Self = StObject.set(x, "loadSiblings", js.undefined)
+      
+      inline def setMaximumMemoryUsage(value: Double): Self = StObject.set(x, "maximumMemoryUsage", value.asInstanceOf[js.Any])
+      
+      inline def setMaximumMemoryUsageUndefined: Self = StObject.set(x, "maximumMemoryUsage", js.undefined)
+      
+      inline def setMaximumScreenSpaceError(value: Double): Self = StObject.set(x, "maximumScreenSpaceError", value.asInstanceOf[js.Any])
+      
+      inline def setMaximumScreenSpaceErrorUndefined: Self = StObject.set(x, "maximumScreenSpaceError", js.undefined)
+      
+      inline def setModelForwardAxis(value: Axis): Self = StObject.set(x, "modelForwardAxis", value.asInstanceOf[js.Any])
+      
+      inline def setModelForwardAxisUndefined: Self = StObject.set(x, "modelForwardAxis", js.undefined)
+      
+      inline def setModelMatrix(value: Matrix4): Self = StObject.set(x, "modelMatrix", value.asInstanceOf[js.Any])
+      
+      inline def setModelMatrixUndefined: Self = StObject.set(x, "modelMatrix", js.undefined)
+      
+      inline def setModelUpAxis(value: Axis): Self = StObject.set(x, "modelUpAxis", value.asInstanceOf[js.Any])
+      
+      inline def setModelUpAxisUndefined: Self = StObject.set(x, "modelUpAxis", js.undefined)
+      
+      inline def setOutlineColor(value: Color): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
+      
+      inline def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
+      
+      inline def setPointCloudShading(value: Any): Self = StObject.set(x, "pointCloudShading", value.asInstanceOf[js.Any])
+      
+      inline def setPointCloudShadingUndefined: Self = StObject.set(x, "pointCloudShading", js.undefined)
+      
+      inline def setPreferLeaves(value: Boolean): Self = StObject.set(x, "preferLeaves", value.asInstanceOf[js.Any])
+      
+      inline def setPreferLeavesUndefined: Self = StObject.set(x, "preferLeaves", js.undefined)
+      
+      inline def setPreloadFlightDestinations(value: Boolean): Self = StObject.set(x, "preloadFlightDestinations", value.asInstanceOf[js.Any])
+      
+      inline def setPreloadFlightDestinationsUndefined: Self = StObject.set(x, "preloadFlightDestinations", js.undefined)
+      
+      inline def setPreloadWhenHidden(value: Boolean): Self = StObject.set(x, "preloadWhenHidden", value.asInstanceOf[js.Any])
+      
+      inline def setPreloadWhenHiddenUndefined: Self = StObject.set(x, "preloadWhenHidden", js.undefined)
+      
+      inline def setProgressiveResolutionHeightFraction(value: Double): Self = StObject.set(x, "progressiveResolutionHeightFraction", value.asInstanceOf[js.Any])
+      
+      inline def setProgressiveResolutionHeightFractionUndefined: Self = StObject.set(x, "progressiveResolutionHeightFraction", js.undefined)
+      
+      inline def setProjectTo2D(value: Boolean): Self = StObject.set(x, "projectTo2D", value.asInstanceOf[js.Any])
+      
+      inline def setProjectTo2DUndefined: Self = StObject.set(x, "projectTo2D", js.undefined)
+      
+      inline def setShadows(value: ShadowMode): Self = StObject.set(x, "shadows", value.asInstanceOf[js.Any])
+      
+      inline def setShadowsUndefined: Self = StObject.set(x, "shadows", js.undefined)
+      
+      inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+      
+      inline def setShowCreditsOnScreen(value: Boolean): Self = StObject.set(x, "showCreditsOnScreen", value.asInstanceOf[js.Any])
+      
+      inline def setShowCreditsOnScreenUndefined: Self = StObject.set(x, "showCreditsOnScreen", js.undefined)
+      
+      inline def setShowOutline(value: Boolean): Self = StObject.set(x, "showOutline", value.asInstanceOf[js.Any])
+      
+      inline def setShowOutlineUndefined: Self = StObject.set(x, "showOutline", js.undefined)
+      
+      inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+      
+      inline def setSkipLevelOfDetail(value: Boolean): Self = StObject.set(x, "skipLevelOfDetail", value.asInstanceOf[js.Any])
+      
+      inline def setSkipLevelOfDetailUndefined: Self = StObject.set(x, "skipLevelOfDetail", js.undefined)
+      
+      inline def setSkipLevels(value: Double): Self = StObject.set(x, "skipLevels", value.asInstanceOf[js.Any])
+      
+      inline def setSkipLevelsUndefined: Self = StObject.set(x, "skipLevels", js.undefined)
+      
+      inline def setSkipScreenSpaceErrorFactor(value: Double): Self = StObject.set(x, "skipScreenSpaceErrorFactor", value.asInstanceOf[js.Any])
+      
+      inline def setSkipScreenSpaceErrorFactorUndefined: Self = StObject.set(x, "skipScreenSpaceErrorFactor", js.undefined)
+      
+      inline def setSplitDirection(value: SplitDirection): Self = StObject.set(x, "splitDirection", value.asInstanceOf[js.Any])
+      
+      inline def setSplitDirectionUndefined: Self = StObject.set(x, "splitDirection", js.undefined)
+      
+      inline def setVectorClassificationOnly(value: Boolean): Self = StObject.set(x, "vectorClassificationOnly", value.asInstanceOf[js.Any])
+      
+      inline def setVectorClassificationOnlyUndefined: Self = StObject.set(x, "vectorClassificationOnly", js.undefined)
+      
+      inline def setVectorKeepDecodedPositions(value: Boolean): Self = StObject.set(x, "vectorKeepDecodedPositions", value.asInstanceOf[js.Any])
+      
+      inline def setVectorKeepDecodedPositionsUndefined: Self = StObject.set(x, "vectorKeepDecodedPositions", js.undefined)
+    }
+  }
   
   /**
     * Optimization option. Used as a callback when {@link Cesium3DTileset#foveatedScreenSpaceError} is true to control how much to raise the screen space error for tiles outside the foveated cone,

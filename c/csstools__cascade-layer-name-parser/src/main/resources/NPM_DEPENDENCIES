@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@csstools/cascade-layer-name-parser" : "1.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@csstools/cascade-layer-name-parser" : "1.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

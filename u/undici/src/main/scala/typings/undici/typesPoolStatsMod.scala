@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object typesPoolStatsMod {
   
-  @JSImport("undici/types/pool-stats", JSImport.Namespace)
+  @JSImport("undici/types/pool-stats", JSImport.Default)
   @js.native
-  open class ^ protected ()
+  open class default protected ()
     extends StObject
        with PoolStats {
-    def this(pool: typings.undici.typesPoolMod.^) = this()
+    def this(pool: typings.undici.typesPoolMod.default) = this()
     
     /** Number of open socket connections in this pool. */
     /* CompleteClass */

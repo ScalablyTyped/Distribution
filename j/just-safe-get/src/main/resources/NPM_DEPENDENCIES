@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "just-safe-get" : "4.1.1"
+      "just-safe-get" : "4.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "just-safe-get" : "4.1.1"
+      "just-safe-get" : "4.2.0"
     }
   ],
   "compile-devDependencies" : [

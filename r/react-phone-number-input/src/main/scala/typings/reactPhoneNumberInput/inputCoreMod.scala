@@ -4,7 +4,8 @@ import typings.libphonenumberJs.anon.DefaultCountry
 import typings.libphonenumberJs.typesMod.CountryCallingCode
 import typings.libphonenumberJs.typesMod.CountryCode
 import typings.libphonenumberJs.typesMod.MetadataJson
-import typings.react.mod.global.JSX.Element
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.RefAttributes
 import typings.reactPhoneNumberInput.mod.DefaultInputComponentProps
 import typings.reactPhoneNumberInput.mod.Metadata
 import typings.reactPhoneNumberInput.mod.Value
@@ -40,7 +41,7 @@ object inputCoreMod {
   inline def isValidPhoneNumber(text: String, defaultCountry: CountryCode, metadata: MetadataJson): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidPhoneNumber")(text.asInstanceOf[js.Any], defaultCountry.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def isValidPhoneNumber(text: String, metadata: MetadataJson): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidPhoneNumber")(text.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  type PhoneInputComponentType[InputComponentProps] = js.Function1[/* props */ Props[InputComponentProps], Element]
+  type PhoneInputComponentType[InputComponentProps] = ForwardRefExoticComponent[Props[InputComponentProps] & RefAttributes[Any]]
   
   type Props[InputComponentProps] = typings.reactPhoneNumberInput.inputMod.Props[InputComponentProps] & typings.reactPhoneNumberInput.anon.Metadata
 }

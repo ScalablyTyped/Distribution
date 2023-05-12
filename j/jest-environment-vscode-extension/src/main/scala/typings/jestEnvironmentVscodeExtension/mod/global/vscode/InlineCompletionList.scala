@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class InlineCompletionList protected ()
   extends typings.vscode.mod.InlineCompletionList {
   /**
-    * Creates a new list of inline completion items.
-    */
+  		 * Creates a new list of inline completion items.
+  		*/
   def this(items: js.Array[typings.vscode.mod.InlineCompletionItem]) = this()
 }

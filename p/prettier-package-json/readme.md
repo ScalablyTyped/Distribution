@@ -1,7 +1,7 @@
 
 # Scala.js typings for prettier-package-json
 
-Typings are for version 2.7.0
+Typings are for version 2.8.0
 
 ## Library description:
 Prettier formatter for package.json files

@@ -27,6 +27,11 @@ trait UpdateSceneRequest extends StObject {
   var sceneId: Id
   
   /**
+    * The scene metadata.
+    */
+  var sceneMetadata: js.UndefOr[SceneMetadataMap] = js.undefined
+  
+  /**
     * The ID of the workspace that contains the scene.
     */
   var workspaceId: Id
@@ -56,6 +61,10 @@ object UpdateSceneRequest {
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setSceneId(value: Id): Self = StObject.set(x, "sceneId", value.asInstanceOf[js.Any])
+    
+    inline def setSceneMetadata(value: SceneMetadataMap): Self = StObject.set(x, "sceneMetadata", value.asInstanceOf[js.Any])
+    
+    inline def setSceneMetadataUndefined: Self = StObject.set(x, "sceneMetadata", js.undefined)
     
     inline def setWorkspaceId(value: Id): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
   }

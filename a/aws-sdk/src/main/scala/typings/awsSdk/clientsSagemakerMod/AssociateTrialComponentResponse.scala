@@ -12,7 +12,7 @@ trait AssociateTrialComponentResponse extends StObject {
   var TrialArn: js.UndefOr[typings.awsSdk.clientsSagemakerMod.TrialArn] = js.undefined
   
   /**
-    * The ARN of the trial component.
+    * The Amazon Resource Name (ARN) of the trial component.
     */
   var TrialComponentArn: js.UndefOr[typings.awsSdk.clientsSagemakerMod.TrialComponentArn] = js.undefined
 }

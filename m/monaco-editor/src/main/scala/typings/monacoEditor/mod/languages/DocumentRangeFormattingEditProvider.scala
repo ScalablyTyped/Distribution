@@ -19,6 +19,16 @@ trait DocumentRangeFormattingEditProvider extends StObject {
     * of the range to full syntax nodes.
     */
   def provideDocumentRangeFormattingEdits(model: ITextModel, range: Range, options: FormattingOptions, token: CancellationToken): ProviderResult[js.Array[TextEdit]]
+  
+  var provideDocumentRangesFormattingEdits: js.UndefOr[
+    js.Function4[
+      /* model */ ITextModel, 
+      /* ranges */ js.Array[Range], 
+      /* options */ FormattingOptions, 
+      /* token */ CancellationToken, 
+      ProviderResult[js.Array[TextEdit]]
+    ]
+  ] = js.undefined
 }
 object DocumentRangeFormattingEditProvider {
   
@@ -39,5 +49,11 @@ object DocumentRangeFormattingEditProvider {
     inline def setProvideDocumentRangeFormattingEdits(
       value: (ITextModel, Range, FormattingOptions, CancellationToken) => ProviderResult[js.Array[TextEdit]]
     ): Self = StObject.set(x, "provideDocumentRangeFormattingEdits", js.Any.fromFunction4(value))
+    
+    inline def setProvideDocumentRangesFormattingEdits(
+      value: (/* model */ ITextModel, /* ranges */ js.Array[Range], /* options */ FormattingOptions, /* token */ CancellationToken) => ProviderResult[js.Array[TextEdit]]
+    ): Self = StObject.set(x, "provideDocumentRangesFormattingEdits", js.Any.fromFunction4(value))
+    
+    inline def setProvideDocumentRangesFormattingEditsUndefined: Self = StObject.set(x, "provideDocumentRangesFormattingEdits", js.undefined)
   }
 }

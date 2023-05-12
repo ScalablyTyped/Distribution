@@ -206,6 +206,8 @@ open class Light protected () extends StObject {
   def outerConeAngle: Double = js.native
   def outerConeAngle_=(arg: Double): Unit = js.native
   
+  def releaseRenderData(): Unit = js.native
+  
   def setColor(args: Any*): Unit = js.native
   
   var shadowBias: Double = js.native
@@ -225,6 +227,8 @@ open class Light protected () extends StObject {
   
   var shadowUpdateMode: Double = js.native
   
+  var shadowUpdateOverrides: Any = js.native
+  
   def shape: Double = js.native
   def shape_=(arg: Double): Unit = js.native
   
@@ -232,8 +236,6 @@ open class Light protected () extends StObject {
   def type_=(arg: Double): Unit = js.native
   
   def updateKey(): Unit = js.native
-  
-  def updateShadow(): Unit = js.native
   
   def usePhysicalUnits: Any = js.native
   def usePhysicalUnits_=(arg: Any): Unit = js.native

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListGameServerGroupsOutput extends StObject {
   
   /**
-    * A collection of game server group objects that match the request.
+    * The game server groups' game server groups.
     */
   var GameServerGroups: js.UndefOr[typings.awsSdk.clientsGameliftMod.GameServerGroups] = js.undefined
   
   /**
-    * A token that indicates where to resume retrieving results on the next call to this operation. If no token is returned, these results represent the end of the list.
+    * Specify the pagination token from a previous request to retrieve the next page of results.
     */
   var NextToken: js.UndefOr[NonZeroAndMaxString] = js.undefined
 }

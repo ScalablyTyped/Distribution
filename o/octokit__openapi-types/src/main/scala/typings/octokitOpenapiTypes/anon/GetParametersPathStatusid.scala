@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersPathStatusid extends StObject {
   
-  /** Users with pull access can view a deployment status for a deployment: */
+  /**
+    * Get a deployment status
+    * @description Users with pull access can view a deployment status for a deployment:
+    */
   var get: ParametersPathStatusid
 }
 object GetParametersPathStatusid {

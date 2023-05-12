@@ -11,7 +11,7 @@ open class ScaleControl protected () extends BaseControl[ScaleControlProps, HTML
   def this(props: ScaleControlProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: ScaleControlProps, context: Any) = this()
 }

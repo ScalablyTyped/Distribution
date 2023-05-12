@@ -67,6 +67,7 @@ object esCssmotionMod {
     
     var onAppearEnd: js.UndefOr[MotionEndEventHandler] = js.undefined
     
+    /** Prepare phase is used for measure element info. It will always trigger even motion is off */
     var onAppearPrepare: js.UndefOr[MotionPrepareEventHandler] = js.undefined
     
     var onAppearStart: js.UndefOr[MotionEventHandler] = js.undefined
@@ -75,6 +76,7 @@ object esCssmotionMod {
     
     var onEnterEnd: js.UndefOr[MotionEndEventHandler] = js.undefined
     
+    /** Prepare phase is used for measure element info. It will always trigger even motion is off */
     var onEnterPrepare: js.UndefOr[MotionPrepareEventHandler] = js.undefined
     
     var onEnterStart: js.UndefOr[MotionEventHandler] = js.undefined
@@ -83,6 +85,7 @@ object esCssmotionMod {
     
     var onLeaveEnd: js.UndefOr[MotionEndEventHandler] = js.undefined
     
+    /** Prepare phase is used for measure element info. It will always trigger even motion is off */
     var onLeavePrepare: js.UndefOr[MotionPrepareEventHandler] = js.undefined
     
     var onLeaveStart: js.UndefOr[MotionEventHandler] = js.undefined

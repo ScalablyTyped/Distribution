@@ -74,6 +74,26 @@ type NodeType = BROKER | String
 */
 type StorageMode = _StorageMode | String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AWSACCOUNT
+  - typings.awsSdk.awsSdkStrings.AWSSERVICE
+  - java.lang.String
+*/
+type UserIdentityType = _UserIdentityType | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CREATING
+  - typings.awsSdk.awsSdkStrings.AVAILABLE
+  - typings.awsSdk.awsSdkStrings.INACTIVE
+  - typings.awsSdk.awsSdkStrings.DEACTIVATING
+  - typings.awsSdk.awsSdkStrings.DELETING
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.REJECTED
+  - typings.awsSdk.awsSdkStrings.REJECTING
+  - java.lang.String
+*/
+type VpcConnectionState = _VpcConnectionState | String
+
 type _Blob = Buffer | js.typedarray.Uint8Array | Blob | String
 
 /* Rewritten from type alias, can be one of: 
@@ -94,6 +114,8 @@ type integerMin1Max15 = Double
 type integerMin1Max16384 = Double
 
 type listOfBrokerEBSVolumeInfo = js.Array[BrokerEBSVolumeInfo]
+
+type listOfClientVpcConnection = js.Array[ClientVpcConnection]
 
 type listOfCluster = js.Array[Cluster]
 
@@ -118,6 +140,8 @@ type listOfString = js.Array[string]
 type listOfUnprocessedScramSecret = js.Array[UnprocessedScramSecret]
 
 type listOfVpcConfig = js.Array[VpcConfig]
+
+type listOfVpcConnection = js.Array[VpcConnection]
 
 type long = Double
 

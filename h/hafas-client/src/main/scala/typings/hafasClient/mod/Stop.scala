@@ -5,10 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A stop is a single small point or structure at which vehicles stop.
-  * A stop always belongs to a station. It may for example be a sign, a basic shelter or a railway platform.
-  */
 trait Stop extends StObject {
   
   var distance: js.UndefOr[Double] = js.undefined

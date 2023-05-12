@@ -7,7 +7,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GeoJSONOptions[P]
+trait GeoJSONOptions[P, G /* <: GeometryObject */]
   extends StObject
      with InteractiveLayerOptions {
   
@@ -33,7 +33,7 @@ trait GeoJSONOptions[P]
     * }
     * ```
     */
-  var filter: js.UndefOr[js.Function1[/* geoJsonFeature */ Feature[GeometryObject, P], Boolean]] = js.undefined
+  var filter: js.UndefOr[js.Function1[/* geoJsonFeature */ Feature[G, P], Boolean]] = js.undefined
   
   // check if LatLng has an altitude property
   /** Whether default Markers for "Point" type Features inherit from group options. */
@@ -49,7 +49,7 @@ trait GeoJSONOptions[P]
     * function (feature, layer) {}
     * ```
     */
-  var onEachFeature: js.UndefOr[js.Function2[/* feature */ Feature[GeometryObject, P], /* layer */ Layer, Unit]] = js.undefined
+  var onEachFeature: js.UndefOr[js.Function2[/* feature */ Feature[G, P], /* layer */ Layer, Unit]] = js.undefined
   
   /**
     * A Function defining how GeoJSON points spawn Leaflet layers.
@@ -83,19 +83,19 @@ trait GeoJSONOptions[P]
 }
 object GeoJSONOptions {
   
-  inline def apply[P](): GeoJSONOptions[P] = {
+  inline def apply[P, G /* <: GeometryObject */](): GeoJSONOptions[P, G] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[GeoJSONOptions[P]]
+    __obj.asInstanceOf[GeoJSONOptions[P, G]]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: GeoJSONOptions[?], P] (val x: Self & GeoJSONOptions[P]) extends AnyVal {
+  implicit open class MutableBuilder[Self <: GeoJSONOptions[?, ?], P, G /* <: GeometryObject */] (val x: Self & (GeoJSONOptions[P, G])) extends AnyVal {
     
     inline def setCoordsToLatLng(value: /* coords */ (js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Double]) => LatLng_): Self = StObject.set(x, "coordsToLatLng", js.Any.fromFunction1(value))
     
     inline def setCoordsToLatLngUndefined: Self = StObject.set(x, "coordsToLatLng", js.undefined)
     
-    inline def setFilter(value: /* geoJsonFeature */ Feature[GeometryObject, P] => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+    inline def setFilter(value: /* geoJsonFeature */ Feature[G, P] => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
@@ -103,7 +103,7 @@ object GeoJSONOptions {
     
     inline def setMarkersInheritOptionsUndefined: Self = StObject.set(x, "markersInheritOptions", js.undefined)
     
-    inline def setOnEachFeature(value: (/* feature */ Feature[GeometryObject, P], /* layer */ Layer) => Unit): Self = StObject.set(x, "onEachFeature", js.Any.fromFunction2(value))
+    inline def setOnEachFeature(value: (/* feature */ Feature[G, P], /* layer */ Layer) => Unit): Self = StObject.set(x, "onEachFeature", js.Any.fromFunction2(value))
     
     inline def setOnEachFeatureUndefined: Self = StObject.set(x, "onEachFeature", js.undefined)
     

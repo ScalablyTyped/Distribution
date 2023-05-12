@@ -73,6 +73,8 @@ object mod {
     
     inline def getAnalytics(app: js.UndefOr[FirebaseApp]): Analytics = ^.asInstanceOf[js.Dynamic].applyDynamic("getAnalytics")(app.asInstanceOf[js.Any]).asInstanceOf[Analytics]
     
+    inline def getGoogleAnalyticsClientId(analyticsInstance: FirebaseAnalytics): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGoogleAnalyticsClientId")(analyticsInstance.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+    
     inline def initializeAnalytics(app: FirebaseApp, options: js.UndefOr[AnalyticsSettings]): Analytics = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeAnalytics")(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Analytics]
     
     inline def logEvent(

@@ -18,22 +18,15 @@ open class GridFSBucket protected () extends TypedEventEmitter[GridFSBucketEvent
     * @param id - The id of the file doc
     */
   def delete(id: typings.bson.mod.ObjectId): js.Promise[Unit] = js.native
-  /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  def delete(id: typings.bson.mod.ObjectId, callback: Callback[Unit]): Unit = js.native
   
   /** Removes this bucket's files collection, followed by its chunks collection. */
   def drop(): js.Promise[Unit] = js.native
-  /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  def drop(callback: Callback[Unit]): Unit = js.native
   
   /** Convenience wrapper around find on the files collection */
   def find(): FindCursor[GridFSFile] = js.native
   def find(filter: Unit, options: FindOptions[Document]): FindCursor[GridFSFile] = js.native
   def find(filter: Filter[GridFSFile]): FindCursor[GridFSFile] = js.native
   def find(filter: Filter[GridFSFile], options: FindOptions[Document]): FindCursor[GridFSFile] = js.native
-  
-  /** Get the Db scoped logger. */
-  def getLogger(): Logger = js.native
   
   /** Returns a readable stream (GridFSBucketReadStream) for streaming file data from GridFS. */
   def openDownloadStream(id: typings.bson.mod.ObjectId): GridFSBucketReadStream = js.native
@@ -75,8 +68,6 @@ open class GridFSBucket protected () extends TypedEventEmitter[GridFSBucketEvent
     * @param filename - new name for the file
     */
   def rename(id: typings.bson.mod.ObjectId, filename: String): js.Promise[Unit] = js.native
-  /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  def rename(id: typings.bson.mod.ObjectId, filename: String, callback: Callback[Unit]): Unit = js.native
 }
 /* static members */
 object GridFSBucket {

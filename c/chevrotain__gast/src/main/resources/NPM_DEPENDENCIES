@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@chevrotain/gast" : "10.3.0"
+      "@chevrotain/gast" : "10.5.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@chevrotain/gast" : "10.3.0"
+      "@chevrotain/gast" : "10.5.0"
     }
   ],
   "compile-devDependencies" : [

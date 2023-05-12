@@ -31,7 +31,6 @@ object libWebdriverMod {
       * @return {!Promise<T>} A promise that will be resolved with the result.
       * @template T
       * @see WebDriver#schedule
-      * @private
       */
     def execute_[T](command: Command): js.Promise[T] = js.native
     

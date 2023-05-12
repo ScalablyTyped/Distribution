@@ -1,5 +1,8 @@
 package typings.pgPromise.mod
 
+import typings.pgPromise.anon.Client
+import typings.pgPromise.anon.Ctx
+import typings.pgPromise.anon.Dc
 import typings.pgPromise.typescriptPgSubsetMod.IClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,15 +14,13 @@ trait IInitOptions[Ext, C /* <: IClient */] extends StObject {
   
   var capSQL: js.UndefOr[Boolean] = js.undefined
   
-  var connect: js.UndefOr[js.Function3[/* client */ C, /* dc */ Any, /* useCount */ Double, Unit]] = js.undefined
+  var connect: js.UndefOr[js.Function1[/* e */ Client[C], Unit]] = js.undefined
   
-  var disconnect: js.UndefOr[js.Function2[/* client */ C, /* dc */ Any, Unit]] = js.undefined
+  var disconnect: js.UndefOr[js.Function1[/* e */ Dc[C], Unit]] = js.undefined
   
   var error: js.UndefOr[js.Function2[/* err */ Any, /* e */ IEventContext[C], Unit]] = js.undefined
   
   var extend: js.UndefOr[js.Function2[/* obj */ (IDatabase[Ext, C]) & Ext, /* dc */ Any, Unit]] = js.undefined
-  
-  var noLocking: js.UndefOr[Boolean] = js.undefined
   
   var noWarnings: js.UndefOr[Boolean] = js.undefined
   
@@ -32,14 +33,7 @@ trait IInitOptions[Ext, C /* <: IClient */] extends StObject {
   var query: js.UndefOr[js.Function1[/* e */ IEventContext[C], Unit]] = js.undefined
   
   // NOTE: result is undefined when data comes from QueryStream, i.e. via method Database.stream
-  var receive: js.UndefOr[
-    js.Function3[
-      /* data */ js.Array[Any], 
-      /* result */ IResultExt[Any] | Unit, 
-      /* e */ IEventContext[C], 
-      Unit
-    ]
-  ] = js.undefined
+  var receive: js.UndefOr[js.Function1[/* e */ Ctx[C], Unit]] = js.undefined
   
   var schema: js.UndefOr[ValidSchema | (js.Function1[/* dc */ Any, ValidSchema])] = js.undefined
   
@@ -61,11 +55,11 @@ object IInitOptions {
     
     inline def setCapSQLUndefined: Self = StObject.set(x, "capSQL", js.undefined)
     
-    inline def setConnect(value: (/* client */ C, /* dc */ Any, /* useCount */ Double) => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction3(value))
+    inline def setConnect(value: /* e */ Client[C] => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
     
     inline def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
     
-    inline def setDisconnect(value: (/* client */ C, /* dc */ Any) => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction2(value))
+    inline def setDisconnect(value: /* e */ Dc[C] => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction1(value))
     
     inline def setDisconnectUndefined: Self = StObject.set(x, "disconnect", js.undefined)
     
@@ -76,10 +70,6 @@ object IInitOptions {
     inline def setExtend(value: (/* obj */ (IDatabase[Ext, C]) & Ext, /* dc */ Any) => Unit): Self = StObject.set(x, "extend", js.Any.fromFunction2(value))
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
-    
-    inline def setNoLocking(value: Boolean): Self = StObject.set(x, "noLocking", value.asInstanceOf[js.Any])
-    
-    inline def setNoLockingUndefined: Self = StObject.set(x, "noLocking", js.undefined)
     
     inline def setNoWarnings(value: Boolean): Self = StObject.set(x, "noWarnings", value.asInstanceOf[js.Any])
     
@@ -101,9 +91,7 @@ object IInitOptions {
     
     inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    inline def setReceive(
-      value: (/* data */ js.Array[Any], /* result */ IResultExt[Any] | Unit, /* e */ IEventContext[C]) => Unit
-    ): Self = StObject.set(x, "receive", js.Any.fromFunction3(value))
+    inline def setReceive(value: /* e */ Ctx[C] => Unit): Self = StObject.set(x, "receive", js.Any.fromFunction1(value))
     
     inline def setReceiveUndefined: Self = StObject.set(x, "receive", js.undefined)
     

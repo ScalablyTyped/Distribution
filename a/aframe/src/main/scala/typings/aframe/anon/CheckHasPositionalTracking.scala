@@ -1,6 +1,6 @@
 package typings.aframe.anon
 
-import typings.three.mod.Object3D
+import typings.three.buildThreeDotmoduleDotminMod.Object3D
 import typings.three.srcCoreEventDispatcherMod.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

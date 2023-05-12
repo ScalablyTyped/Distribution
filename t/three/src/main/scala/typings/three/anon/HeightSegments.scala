@@ -6,21 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HeightSegments extends StObject {
   
-  var height: Double
+  val height: Double
   
-  var heightSegments: Double
+  val heightSegments: Double
   
-  var openEnded: Boolean
+  val openEnded: Boolean
   
-  var radialSegments: Double
+  val radialSegments: Double
   
-  var radiusBottom: Double
+  val radius: Double
   
-  var radiusTop: Double
+  val radiusBottom: Double
   
-  var thetaLength: Double
+  val radiusTop: Double
   
-  var thetaStart: Double
+  val thetaLength: Double
+  
+  val thetaStart: Double
 }
 object HeightSegments {
   
@@ -29,12 +31,13 @@ object HeightSegments {
     heightSegments: Double,
     openEnded: Boolean,
     radialSegments: Double,
+    radius: Double,
     radiusBottom: Double,
     radiusTop: Double,
     thetaLength: Double,
     thetaStart: Double
   ): HeightSegments = {
-    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], heightSegments = heightSegments.asInstanceOf[js.Any], openEnded = openEnded.asInstanceOf[js.Any], radialSegments = radialSegments.asInstanceOf[js.Any], radiusBottom = radiusBottom.asInstanceOf[js.Any], radiusTop = radiusTop.asInstanceOf[js.Any], thetaLength = thetaLength.asInstanceOf[js.Any], thetaStart = thetaStart.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], heightSegments = heightSegments.asInstanceOf[js.Any], openEnded = openEnded.asInstanceOf[js.Any], radialSegments = radialSegments.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], radiusBottom = radiusBottom.asInstanceOf[js.Any], radiusTop = radiusTop.asInstanceOf[js.Any], thetaLength = thetaLength.asInstanceOf[js.Any], thetaStart = thetaStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeightSegments]
   }
   
@@ -48,6 +51,8 @@ object HeightSegments {
     inline def setOpenEnded(value: Boolean): Self = StObject.set(x, "openEnded", value.asInstanceOf[js.Any])
     
     inline def setRadialSegments(value: Double): Self = StObject.set(x, "radialSegments", value.asInstanceOf[js.Any])
+    
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     inline def setRadiusBottom(value: Double): Self = StObject.set(x, "radiusBottom", value.asInstanceOf[js.Any])
     

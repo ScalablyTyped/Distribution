@@ -141,35 +141,66 @@ object sapUiUnifiedDateRangeMod {
     def getStartDate(): js.Object = js.native
     
     /**
-      * Sets a new value for property {@link #getEndDate endDate}.
+      * Set end date for a date range.
       *
-      * End date for a date range. If empty only a single date is presented by this DateRange element. This must
-      * be a JavaScript date object.
-      *
-      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
-      *
-      * @returns Reference to `this` in order to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def setEndDate(): this.type = js.native
     def setEndDate(/**
-      * New value for property `endDate`
+      * A JavaScript date
       */
-    oEndDate: js.Object): this.type = js.native
+    oDate: js.Date): this.type = js.native
+    def setEndDate(
+      /**
+      * A JavaScript date
+      */
+    oDate: js.Date,
+      /**
+      * If true, `endDate` is not marked as changed
+      */
+    bInvalidate: Boolean
+    ): this.type = js.native
+    def setEndDate(
+      /**
+      * A JavaScript date
+      */
+    oDate: Unit,
+      /**
+      * If true, `endDate` is not marked as changed
+      */
+    bInvalidate: Boolean
+    ): this.type = js.native
     
     /**
-      * Sets a new value for property {@link #getStartDate startDate}.
+      * Set start date for a date range.
       *
-      * Start date for a date range. This must be a JavaScript date object.
-      *
-      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
-      *
-      * @returns Reference to `this` in order to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def setStartDate(): this.type = js.native
     def setStartDate(/**
-      * New value for property `startDate`
+      * A JavaScript date
       */
-    oStartDate: js.Object): this.type = js.native
+    oDate: js.Date): this.type = js.native
+    def setStartDate(
+      /**
+      * A JavaScript date
+      */
+    oDate: js.Date,
+      /**
+      * If true, `startDate` is not marked as changed
+      */
+    bInvalidate: Boolean
+    ): this.type = js.native
+    def setStartDate(
+      /**
+      * A JavaScript date
+      */
+    oDate: Unit,
+      /**
+      * If true, `startDate` is not marked as changed
+      */
+    bInvalidate: Boolean
+    ): this.type = js.native
   }
   
   trait DateRangeSettings

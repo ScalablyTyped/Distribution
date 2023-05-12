@@ -8,11 +8,11 @@ trait TotalcountWorkflows extends StObject {
   
   var total_count: Double
   
-  var workflows: js.Array[Badgeurl]
+  var workflows: js.Array[BadgeurlCreatedat]
 }
 object TotalcountWorkflows {
   
-  inline def apply(total_count: Double, workflows: js.Array[Badgeurl]): TotalcountWorkflows = {
+  inline def apply(total_count: Double, workflows: js.Array[BadgeurlCreatedat]): TotalcountWorkflows = {
     val __obj = js.Dynamic.literal(total_count = total_count.asInstanceOf[js.Any], workflows = workflows.asInstanceOf[js.Any])
     __obj.asInstanceOf[TotalcountWorkflows]
   }
@@ -22,8 +22,8 @@ object TotalcountWorkflows {
     
     inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
     
-    inline def setWorkflows(value: js.Array[Badgeurl]): Self = StObject.set(x, "workflows", value.asInstanceOf[js.Any])
+    inline def setWorkflows(value: js.Array[BadgeurlCreatedat]): Self = StObject.set(x, "workflows", value.asInstanceOf[js.Any])
     
-    inline def setWorkflowsVarargs(value: Badgeurl*): Self = StObject.set(x, "workflows", js.Array(value*))
+    inline def setWorkflowsVarargs(value: BadgeurlCreatedat*): Self = StObject.set(x, "workflows", js.Array(value*))
   }
 }

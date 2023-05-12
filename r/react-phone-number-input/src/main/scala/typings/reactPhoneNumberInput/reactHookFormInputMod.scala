@@ -19,14 +19,14 @@ object reactHookFormInputMod extends Shortcut {
   // type PhoneInputType = <InputComponentProps = DefaultInputComponentProps, FormValues = DefaultFormValues>(props: Props<InputComponentProps, FormValues>) => JSX.Element;
   @JSImport("react-phone-number-input/react-hook-form-input", JSImport.Default)
   @js.native
-  val default: PhoneInputType[DefaultInputComponentProps, DefaultFormValues] = js.native
+  val default: PhoneInputType = js.native
   
-  type PhoneInputType[InputComponentProps, FormValues] = js.Function1[/* props */ Props[InputComponentProps, FormValues], Element]
+  type PhoneInputType = js.Function1[/* props */ Props[DefaultInputComponentProps, DefaultFormValues], Element]
   
   type Props[InputComponentProps, FormValues] = FeatureProps[InputComponentProps] & ReactHookFormComponentProps[FormValues]
   
-  type _To = PhoneInputType[DefaultInputComponentProps, DefaultFormValues]
+  type _To = PhoneInputType
   
   /* This means you don't have to write `default`, but can instead just say `reactHookFormInputMod.foo` */
-  override def _to: PhoneInputType[DefaultInputComponentProps, DefaultFormValues] = default
+  override def _to: PhoneInputType = default
 }

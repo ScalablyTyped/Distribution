@@ -22,7 +22,7 @@ trait Workforce extends StObject {
   var FailureReason: js.UndefOr[WorkforceFailureReason] = js.undefined
   
   /**
-    * The most recent date that was used to successfully add one or more IP address ranges (CIDRs) to a private workforce's allow list.
+    * The most recent date that UpdateWorkforce was used to successfully add one or more IP address ranges (CIDRs) to a private workforce's allow list.
     */
   var LastUpdatedDate: js.UndefOr[js.Date] = js.undefined
   

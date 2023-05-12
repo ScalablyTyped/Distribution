@@ -7,8 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NotDraggingStyle extends StObject {
   
+  /**
+    * This value will actually be `null` instead of `undefined`.
+    *
+    * The type is fudged because `null` is not compatible with the
+    * `React.CSSProperties` type.
+    *
+    * The `style` prop should interpret `null` and `undefined` the same way.
+    */
   var transform: js.UndefOr[String] = js.undefined
   
+  /**
+    * This value will actually be `null` instead of `undefined`.
+    *
+    * The type is fudged because `null` is not compatible with the
+    * `React.CSSProperties` type.
+    *
+    * The `style` prop should interpret `null` and `undefined` the same way.
+    */
   var transition: js.UndefOr[none] = js.undefined
 }
 object NotDraggingStyle {

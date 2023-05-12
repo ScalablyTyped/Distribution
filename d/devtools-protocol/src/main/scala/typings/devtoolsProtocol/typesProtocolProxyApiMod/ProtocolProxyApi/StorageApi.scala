@@ -6,6 +6,8 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.indexedDBContentUpdated
 import typings.devtoolsProtocol.devtoolsProtocolStrings.indexedDBListUpdated
 import typings.devtoolsProtocol.devtoolsProtocolStrings.interestGroupAccessed
 import typings.devtoolsProtocol.devtoolsProtocolStrings.sharedStorageAccessed
+import typings.devtoolsProtocol.devtoolsProtocolStrings.storageBucketCreatedOrUpdated
+import typings.devtoolsProtocol.devtoolsProtocolStrings.storageBucketDeleted
 import typings.devtoolsProtocol.mod.Protocol.Storage.CacheStorageContentUpdatedEvent
 import typings.devtoolsProtocol.mod.Protocol.Storage.CacheStorageListUpdatedEvent
 import typings.devtoolsProtocol.mod.Protocol.Storage.ClearCookiesRequest
@@ -15,6 +17,7 @@ import typings.devtoolsProtocol.mod.Protocol.Storage.ClearSharedStorageEntriesRe
 import typings.devtoolsProtocol.mod.Protocol.Storage.ClearTrustTokensRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.ClearTrustTokensResponse
 import typings.devtoolsProtocol.mod.Protocol.Storage.DeleteSharedStorageEntryRequest
+import typings.devtoolsProtocol.mod.Protocol.Storage.DeleteStorageBucketRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.GetCookiesRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.GetCookiesResponse
 import typings.devtoolsProtocol.mod.Protocol.Storage.GetInterestGroupDetailsRequest
@@ -32,15 +35,22 @@ import typings.devtoolsProtocol.mod.Protocol.Storage.IndexedDBContentUpdatedEven
 import typings.devtoolsProtocol.mod.Protocol.Storage.IndexedDBListUpdatedEvent
 import typings.devtoolsProtocol.mod.Protocol.Storage.InterestGroupAccessedEvent
 import typings.devtoolsProtocol.mod.Protocol.Storage.OverrideQuotaForOriginRequest
+import typings.devtoolsProtocol.mod.Protocol.Storage.ResetSharedStorageBudgetRequest
+import typings.devtoolsProtocol.mod.Protocol.Storage.RunBounceTrackingMitigationsResponse
 import typings.devtoolsProtocol.mod.Protocol.Storage.SetCookiesRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.SetInterestGroupTrackingRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.SetSharedStorageEntryRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.SetSharedStorageTrackingRequest
+import typings.devtoolsProtocol.mod.Protocol.Storage.SetStorageBucketTrackingRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.SharedStorageAccessedEvent
+import typings.devtoolsProtocol.mod.Protocol.Storage.StorageBucketCreatedOrUpdatedEvent
+import typings.devtoolsProtocol.mod.Protocol.Storage.StorageBucketDeletedEvent
 import typings.devtoolsProtocol.mod.Protocol.Storage.TrackCacheStorageForOriginRequest
+import typings.devtoolsProtocol.mod.Protocol.Storage.TrackCacheStorageForStorageKeyRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.TrackIndexedDBForOriginRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.TrackIndexedDBForStorageKeyRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.UntrackCacheStorageForOriginRequest
+import typings.devtoolsProtocol.mod.Protocol.Storage.UntrackCacheStorageForStorageKeyRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.UntrackIndexedDBForOriginRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.UntrackIndexedDBForStorageKeyRequest
 import org.scalablytyped.runtime.StObject
@@ -80,6 +90,11 @@ trait StorageApi extends StObject {
     * Deletes entry for `key` (if it exists) for a given origin's shared storage.
     */
   def deleteSharedStorageEntry(params: DeleteSharedStorageEntryRequest): js.Promise[Unit] = js.native
+  
+  /**
+    * Deletes the Storage Bucket with the given storage key and bucket name.
+    */
+  def deleteStorageBucket(params: DeleteStorageBucketRequest): js.Promise[Unit] = js.native
   
   /**
     * Returns all browser cookies.
@@ -163,11 +178,28 @@ trait StorageApi extends StObject {
     event: sharedStorageAccessed,
     listener: js.Function1[/* params */ SharedStorageAccessedEvent, Unit]
   ): Unit = js.native
+  @JSName("on")
+  def on_storageBucketCreatedOrUpdated(
+    event: storageBucketCreatedOrUpdated,
+    listener: js.Function1[/* params */ StorageBucketCreatedOrUpdatedEvent, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_storageBucketDeleted(event: storageBucketDeleted, listener: js.Function1[/* params */ StorageBucketDeletedEvent, Unit]): Unit = js.native
   
   /**
     * Override quota for the specified origin
     */
   def overrideQuotaForOrigin(params: OverrideQuotaForOriginRequest): js.Promise[Unit] = js.native
+  
+  /**
+    * Resets the budget for `ownerOrigin` by clearing all budget withdrawals.
+    */
+  def resetSharedStorageBudget(params: ResetSharedStorageBudgetRequest): js.Promise[Unit] = js.native
+  
+  /**
+    * Deletes state for sites identified as potential bounce trackers, immediately.
+    */
+  def runBounceTrackingMitigations(): js.Promise[RunBounceTrackingMitigationsResponse] = js.native
   
   /**
     * Sets given cookies.
@@ -190,9 +222,19 @@ trait StorageApi extends StObject {
   def setSharedStorageTracking(params: SetSharedStorageTrackingRequest): js.Promise[Unit] = js.native
   
   /**
+    * Set tracking for a storage key's buckets.
+    */
+  def setStorageBucketTracking(params: SetStorageBucketTrackingRequest): js.Promise[Unit] = js.native
+  
+  /**
     * Registers origin to be notified when an update occurs to its cache storage list.
     */
   def trackCacheStorageForOrigin(params: TrackCacheStorageForOriginRequest): js.Promise[Unit] = js.native
+  
+  /**
+    * Registers storage key to be notified when an update occurs to its cache storage list.
+    */
+  def trackCacheStorageForStorageKey(params: TrackCacheStorageForStorageKeyRequest): js.Promise[Unit] = js.native
   
   /**
     * Registers origin to be notified when an update occurs to its IndexedDB.
@@ -208,6 +250,11 @@ trait StorageApi extends StObject {
     * Unregisters origin from receiving notifications for cache storage.
     */
   def untrackCacheStorageForOrigin(params: UntrackCacheStorageForOriginRequest): js.Promise[Unit] = js.native
+  
+  /**
+    * Unregisters storage key from receiving notifications for cache storage.
+    */
+  def untrackCacheStorageForStorageKey(params: UntrackCacheStorageForStorageKeyRequest): js.Promise[Unit] = js.native
   
   /**
     * Unregisters origin from receiving notifications for IndexedDB.

@@ -48,12 +48,12 @@ trait ParametersParameter
   var name: String
   
   /**
-    * Only one level of nested parameters is allowed.
+    * A named part of a multi-part parameter.
     */
   var part: js.UndefOr[js.Array[ParametersParameter]] = js.undefined
   
   /**
-    * When resolving references in resources, the operation definition may specify how references may be resolved between parameters. If a reference cannot be resolved between the parameters, the application should fall back to it's general resource resolution methods.
+    * When resolving references in resources, the operation definition may specify how references may be resolved between parameters. If a reference cannot be resolved between the parameters, the application should fall back to its general resource resolution methods.
     */
   var resource: js.UndefOr[FhirResource] = js.undefined
   
@@ -76,6 +76,11 @@ trait ParametersParameter
     * Conveys the content if the parameter is a data type.
     */
   var valueAttachment: js.UndefOr[Attachment] = js.undefined
+  
+  /**
+    * Conveys the content if the parameter is a data type.
+    */
+  var valueAvailability: js.UndefOr[Availability] = js.undefined
   
   /**
     * Conveys the content if the parameter is a data type.
@@ -125,11 +130,6 @@ trait ParametersParameter
   /**
     * Conveys the content if the parameter is a data type.
     */
-  var valueContributor: js.UndefOr[Contributor] = js.undefined
-  
-  /**
-    * Conveys the content if the parameter is a data type.
-    */
   var valueCount: js.UndefOr[Count] = js.undefined
   
   /**
@@ -171,6 +171,11 @@ trait ParametersParameter
     * Conveys the content if the parameter is a data type.
     */
   var valueExpression: js.UndefOr[Expression] = js.undefined
+  
+  /**
+    * Conveys the content if the parameter is a data type.
+    */
+  var valueExtendedContactDetail: js.UndefOr[ExtendedContactDetail] = js.undefined
   
   /**
     * Conveys the content if the parameter is a data type.
@@ -360,6 +365,10 @@ object ParametersParameter {
     
     inline def setValueAttachmentUndefined: Self = StObject.set(x, "valueAttachment", js.undefined)
     
+    inline def setValueAvailability(value: Availability): Self = StObject.set(x, "valueAvailability", value.asInstanceOf[js.Any])
+    
+    inline def setValueAvailabilityUndefined: Self = StObject.set(x, "valueAvailability", js.undefined)
+    
     inline def setValueBase64Binary(value: String): Self = StObject.set(x, "valueBase64Binary", value.asInstanceOf[js.Any])
     
     inline def setValueBase64BinaryUndefined: Self = StObject.set(x, "valueBase64Binary", js.undefined)
@@ -396,10 +405,6 @@ object ParametersParameter {
     
     inline def setValueContactPointUndefined: Self = StObject.set(x, "valueContactPoint", js.undefined)
     
-    inline def setValueContributor(value: Contributor): Self = StObject.set(x, "valueContributor", value.asInstanceOf[js.Any])
-    
-    inline def setValueContributorUndefined: Self = StObject.set(x, "valueContributor", js.undefined)
-    
     inline def setValueCount(value: Count): Self = StObject.set(x, "valueCount", value.asInstanceOf[js.Any])
     
     inline def setValueCountUndefined: Self = StObject.set(x, "valueCount", js.undefined)
@@ -435,6 +440,10 @@ object ParametersParameter {
     inline def setValueExpression(value: Expression): Self = StObject.set(x, "valueExpression", value.asInstanceOf[js.Any])
     
     inline def setValueExpressionUndefined: Self = StObject.set(x, "valueExpression", js.undefined)
+    
+    inline def setValueExtendedContactDetail(value: ExtendedContactDetail): Self = StObject.set(x, "valueExtendedContactDetail", value.asInstanceOf[js.Any])
+    
+    inline def setValueExtendedContactDetailUndefined: Self = StObject.set(x, "valueExtendedContactDetail", js.undefined)
     
     inline def setValueHumanName(value: HumanName): Self = StObject.set(x, "valueHumanName", value.asInstanceOf[js.Any])
     

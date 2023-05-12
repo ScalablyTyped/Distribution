@@ -1,7 +1,7 @@
 
 # Scala.js typings for reselect
 
-Typings are for version 4.1.7
+Typings are for version 4.1.8
 
 ## Library description:
 Selectors for Redux.

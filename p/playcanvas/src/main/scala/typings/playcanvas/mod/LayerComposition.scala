@@ -91,7 +91,7 @@ open class LayerComposition () extends EventHandler {
     * Inside {@link Layer#onPreCull}, {@link Layer#onPostCull}, {@link Layer#onPreRender},
     * {@link Layer#onPostRender}.
     *
-    * @type {CameraComponent[]}
+    * @type {import('../../framework/components/camera/component.js').CameraComponent[]}
     */
   var cameras: js.Array[CameraComponent] = js.native
   
@@ -105,8 +105,8 @@ open class LayerComposition () extends EventHandler {
     * Finds a layer inside this composition by its ID. Null is returned, if nothing is found.
     *
     * @param {number} id - An ID of the layer to find.
-    * @returns {Layer|null} The layer corresponding to the specified ID. Returns null if layer is
-    * not found.
+    * @returns {import('../layer.js').Layer|null} The layer corresponding to the specified ID.
+    * Returns null if layer is not found.
     */
   def getLayerById(id: Double): Layer | Null = js.native
   
@@ -114,49 +114,49 @@ open class LayerComposition () extends EventHandler {
     * Finds a layer inside this composition by its name. Null is returned, if nothing is found.
     *
     * @param {string} name - The name of the layer to find.
-    * @returns {Layer|null} The layer corresponding to the specified name. Returns null if layer
-    * is not found.
+    * @returns {import('../layer.js').Layer|null} The layer corresponding to the specified name.
+    * Returns null if layer is not found.
     */
   def getLayerByName(name: String): Layer | Null = js.native
   
   /**
-    * Gets index of the opaque part of the supplied layer in the {@link Layer#layerList}.
+    * Gets index of the opaque part of the supplied layer in the {@link LayerComposition#layerList}.
     *
-    * @param {Layer} layer - A {@link Layer} to find index of.
+    * @param {import('../layer.js').Layer} layer - A {@link Layer} to find index of.
     * @returns {number} The index of the opaque part of the specified layer.
     */
   def getOpaqueIndex(layer: Layer): Double = js.native
   
   /**
-    * Gets index of the semi-transparent part of the supplied layer in the {@link Layer#layerList}.
+    * Gets index of the semi-transparent part of the supplied layer in the {@link LayerComposition#layerList}.
     *
-    * @param {Layer} layer - A {@link Layer} to find index of.
+    * @param {import('../layer.js').Layer} layer - A {@link Layer} to find index of.
     * @returns {number} The index of the semi-transparent part of the specified layer.
     */
   def getTransparentIndex(layer: Layer): Double = js.native
   
   /**
     * Inserts a layer (both opaque and semi-transparent parts) at the chosen index in the
-    * {@link Layer#layerList}.
+    * {@link LayerComposition#layerList}.
     *
-    * @param {Layer} layer - A {@link Layer} to add.
+    * @param {import('../layer.js').Layer} layer - A {@link Layer} to add.
     * @param {number} index - Insertion position.
     */
   def insert(layer: Layer, index: Double): Unit = js.native
   
   /**
     * Inserts an opaque part of the layer (non semi-transparent mesh instances) at the chosen
-    * index in the {@link Layer#layerList}.
+    * index in the {@link LayerComposition#layerList}.
     *
-    * @param {Layer} layer - A {@link Layer} to add.
+    * @param {import('../layer.js').Layer} layer - A {@link Layer} to add.
     * @param {number} index - Insertion position.
     */
   def insertOpaque(layer: Layer, index: Double): Unit = js.native
   
   /**
-    * Inserts a semi-transparent part of the layer at the chosen index in the {@link Layer#layerList}.
+    * Inserts a semi-transparent part of the layer at the chosen index in the {@link LayerComposition#layerList}.
     *
-    * @param {Layer} layer - A {@link Layer} to add.
+    * @param {import('../layer.js').Layer} layer - A {@link Layer} to add.
     * @param {number} index - Insertion position.
     */
   def insertTransparent(layer: Layer, index: Double): Unit = js.native
@@ -164,7 +164,7 @@ open class LayerComposition () extends EventHandler {
   /**
     * A read-only array of {@link Layer} sorted in the order they will be rendered.
     *
-    * @type {Layer[]}
+    * @type {import('../layer.js').Layer[]}
     */
   var layerList: js.Array[Layer] = js.native
   
@@ -173,46 +173,46 @@ open class LayerComposition () extends EventHandler {
   def propagateRenderTarget(startIndex: Any, fromCamera: Any): Unit = js.native
   
   /**
-    * Adds a layer (both opaque and semi-transparent parts) to the end of the {@link Layer#layerList}.
+    * Adds a layer (both opaque and semi-transparent parts) to the end of the {@link LayerComposition#layerList}.
     *
-    * @param {Layer} layer - A {@link Layer} to add.
+    * @param {import('../layer.js').Layer} layer - A {@link Layer} to add.
     */
   def push(layer: Layer): Unit = js.native
   
   /**
     * Adds part of the layer with opaque (non semi-transparent) objects to the end of the
-    * {@link Layer#layerList}.
+    * {@link LayerComposition#layerList}.
     *
-    * @param {Layer} layer - A {@link Layer} to add.
+    * @param {import('../layer.js').Layer} layer - A {@link Layer} to add.
     */
   def pushOpaque(layer: Layer): Unit = js.native
   
   /**
-    * Adds part of the layer with semi-transparent objects to the end of the {@link Layer#layerList}.
+    * Adds part of the layer with semi-transparent objects to the end of the {@link LayerComposition#layerList}.
     *
-    * @param {Layer} layer - A {@link Layer} to add.
+    * @param {import('../layer.js').Layer} layer - A {@link Layer} to add.
     */
   def pushTransparent(layer: Layer): Unit = js.native
   
   /**
-    * Removes a layer (both opaque and semi-transparent parts) from {@link Layer#layerList}.
+    * Removes a layer (both opaque and semi-transparent parts) from {@link LayerComposition#layerList}.
     *
-    * @param {Layer} layer - A {@link Layer} to remove.
+    * @param {import('../layer.js').Layer} layer - A {@link Layer} to remove.
     */
   def remove(layer: Layer): Unit = js.native
   
   /**
     * Removes an opaque part of the layer (non semi-transparent mesh instances) from
-    * {@link Layer#layerList}.
+    * {@link LayerComposition#layerList}.
     *
-    * @param {Layer} layer - A {@link Layer} to remove.
+    * @param {import('../layer.js').Layer} layer - A {@link Layer} to remove.
     */
   def removeOpaque(layer: Layer): Unit = js.native
   
   /**
-    * Removes a transparent part of the layer from {@link Layer#layerList}.
+    * Removes a transparent part of the layer from {@link LayerComposition#layerList}.
     *
-    * @param {Layer} layer - A {@link Layer} to remove.
+    * @param {import('../layer.js').Layer} layer - A {@link Layer} to remove.
     */
   def removeTransparent(layer: Layer): Unit = js.native
   
@@ -244,7 +244,7 @@ open class LayerComposition () extends EventHandler {
   /* private */ var sortTransparentLayers: Any = js.native
   
   /**
-    * A read-only array of boolean values, matching {@link Layer#layerList}. True means the
+    * A read-only array of boolean values, matching {@link LayerComposition#layerList}. True means the
     * layer is rendered, false means it's skipped.
     *
     * @type {boolean[]}
@@ -252,7 +252,7 @@ open class LayerComposition () extends EventHandler {
   var subLayerEnabled: js.Array[Boolean] = js.native
   
   /**
-    * A read-only array of boolean values, matching {@link Layer#layerList}. True means only
+    * A read-only array of boolean values, matching {@link LayerComposition#layerList}. True means only
     * semi-transparent objects are rendered, and false means opaque.
     *
     * @type {boolean[]}

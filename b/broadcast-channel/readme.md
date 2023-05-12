@@ -1,7 +1,7 @@
 
 # Scala.js typings for broadcast-channel
 
-Typings are for version 4.18.1
+Typings are for version 5.1.0
 
 ## Library description:
 A BroadcastChannel that works in New Browsers, Old Browsers, WebWorkers and NodeJs and iframes

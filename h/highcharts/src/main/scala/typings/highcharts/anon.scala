@@ -39,7 +39,6 @@ import typings.highcharts.mod.CSSObject
 import typings.highcharts.mod.ChartCallbackFunction
 import typings.highcharts.mod.Chart_
 import typings.highcharts.mod.Class
-import typings.highcharts.mod.ColorAxisOptions
 import typings.highcharts.mod.ColorString
 import typings.highcharts.mod.ColorType
 import typings.highcharts.mod.Color_
@@ -68,6 +67,7 @@ import typings.highcharts.mod.SVGPathCommand
 import typings.highcharts.mod.SVGRenderer
 import typings.highcharts.mod.Series
 import typings.highcharts.mod.SeriesOptionsType
+import typings.highcharts.mod.SynthPatchOptionsObject
 import typings.highcharts.mod.TimeFormatCallbackFunction
 import typings.highcharts.mod.TimeOptions
 import typings.highcharts.mod.Time_
@@ -345,6 +345,8 @@ object anon {
     
     var center: js.UndefOr[LonLatArray] = js.undefined
     
+    var fitToGeometry: js.UndefOr[js.Object] = js.undefined
+    
     var insetOptions: js.UndefOr[MapViewInsetOptions] = js.undefined
     
     var insets: js.UndefOr[MapViewInsetsOptions | js.Array[js.Object]] = js.undefined
@@ -372,6 +374,10 @@ object anon {
       inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
       
       inline def setCenterVarargs(value: Double*): Self = StObject.set(x, "center", js.Array(value*))
+      
+      inline def setFitToGeometry(value: js.Object): Self = StObject.set(x, "fitToGeometry", value.asInstanceOf[js.Any])
+      
+      inline def setFitToGeometryUndefined: Self = StObject.set(x, "fitToGeometry", js.undefined)
       
       inline def setInsetOptions(value: MapViewInsetOptions): Self = StObject.set(x, "insetOptions", value.asInstanceOf[js.Any])
       
@@ -520,6 +526,147 @@ object anon {
     }
   }
   
+  /* Inlined std.Record<highcharts.highcharts/modules/sonification.highcharts.SonificationSynthPreset, highcharts.highcharts.SynthPatchOptionsObject> */
+  trait RecordSonificationSynthPr extends StObject {
+    
+    var basic1: SynthPatchOptionsObject
+    
+    var basic2: SynthPatchOptionsObject
+    
+    var chop: SynthPatchOptionsObject
+    
+    var chord: SynthPatchOptionsObject
+    
+    var filteredNoise: SynthPatchOptionsObject
+    
+    var flute: SynthPatchOptionsObject
+    
+    var kick: SynthPatchOptionsObject
+    
+    var lead: SynthPatchOptionsObject
+    
+    var noise: SynthPatchOptionsObject
+    
+    var piano: SynthPatchOptionsObject
+    
+    var plucked: SynthPatchOptionsObject
+    
+    var sawsynth: SynthPatchOptionsObject
+    
+    var sawtooth: SynthPatchOptionsObject
+    
+    var saxophone: SynthPatchOptionsObject
+    
+    var shaker: SynthPatchOptionsObject
+    
+    var shortnote: SynthPatchOptionsObject
+    
+    var sine: SynthPatchOptionsObject
+    
+    var sineGlide: SynthPatchOptionsObject
+    
+    var square: SynthPatchOptionsObject
+    
+    var step: SynthPatchOptionsObject
+    
+    var triangle: SynthPatchOptionsObject
+    
+    var trumpet: SynthPatchOptionsObject
+    
+    var vibraphone: SynthPatchOptionsObject
+    
+    var wind: SynthPatchOptionsObject
+    
+    var wobble: SynthPatchOptionsObject
+  }
+  object RecordSonificationSynthPr {
+    
+    inline def apply(
+      basic1: SynthPatchOptionsObject,
+      basic2: SynthPatchOptionsObject,
+      chop: SynthPatchOptionsObject,
+      chord: SynthPatchOptionsObject,
+      filteredNoise: SynthPatchOptionsObject,
+      flute: SynthPatchOptionsObject,
+      kick: SynthPatchOptionsObject,
+      lead: SynthPatchOptionsObject,
+      noise: SynthPatchOptionsObject,
+      piano: SynthPatchOptionsObject,
+      plucked: SynthPatchOptionsObject,
+      sawsynth: SynthPatchOptionsObject,
+      sawtooth: SynthPatchOptionsObject,
+      saxophone: SynthPatchOptionsObject,
+      shaker: SynthPatchOptionsObject,
+      shortnote: SynthPatchOptionsObject,
+      sine: SynthPatchOptionsObject,
+      sineGlide: SynthPatchOptionsObject,
+      square: SynthPatchOptionsObject,
+      step: SynthPatchOptionsObject,
+      triangle: SynthPatchOptionsObject,
+      trumpet: SynthPatchOptionsObject,
+      vibraphone: SynthPatchOptionsObject,
+      wind: SynthPatchOptionsObject,
+      wobble: SynthPatchOptionsObject
+    ): RecordSonificationSynthPr = {
+      val __obj = js.Dynamic.literal(basic1 = basic1.asInstanceOf[js.Any], basic2 = basic2.asInstanceOf[js.Any], chop = chop.asInstanceOf[js.Any], chord = chord.asInstanceOf[js.Any], filteredNoise = filteredNoise.asInstanceOf[js.Any], flute = flute.asInstanceOf[js.Any], kick = kick.asInstanceOf[js.Any], lead = lead.asInstanceOf[js.Any], noise = noise.asInstanceOf[js.Any], piano = piano.asInstanceOf[js.Any], plucked = plucked.asInstanceOf[js.Any], sawsynth = sawsynth.asInstanceOf[js.Any], sawtooth = sawtooth.asInstanceOf[js.Any], saxophone = saxophone.asInstanceOf[js.Any], shaker = shaker.asInstanceOf[js.Any], shortnote = shortnote.asInstanceOf[js.Any], sine = sine.asInstanceOf[js.Any], sineGlide = sineGlide.asInstanceOf[js.Any], square = square.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any], triangle = triangle.asInstanceOf[js.Any], trumpet = trumpet.asInstanceOf[js.Any], vibraphone = vibraphone.asInstanceOf[js.Any], wind = wind.asInstanceOf[js.Any], wobble = wobble.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RecordSonificationSynthPr]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordSonificationSynthPr] (val x: Self) extends AnyVal {
+      
+      inline def setBasic1(value: SynthPatchOptionsObject): Self = StObject.set(x, "basic1", value.asInstanceOf[js.Any])
+      
+      inline def setBasic2(value: SynthPatchOptionsObject): Self = StObject.set(x, "basic2", value.asInstanceOf[js.Any])
+      
+      inline def setChop(value: SynthPatchOptionsObject): Self = StObject.set(x, "chop", value.asInstanceOf[js.Any])
+      
+      inline def setChord(value: SynthPatchOptionsObject): Self = StObject.set(x, "chord", value.asInstanceOf[js.Any])
+      
+      inline def setFilteredNoise(value: SynthPatchOptionsObject): Self = StObject.set(x, "filteredNoise", value.asInstanceOf[js.Any])
+      
+      inline def setFlute(value: SynthPatchOptionsObject): Self = StObject.set(x, "flute", value.asInstanceOf[js.Any])
+      
+      inline def setKick(value: SynthPatchOptionsObject): Self = StObject.set(x, "kick", value.asInstanceOf[js.Any])
+      
+      inline def setLead(value: SynthPatchOptionsObject): Self = StObject.set(x, "lead", value.asInstanceOf[js.Any])
+      
+      inline def setNoise(value: SynthPatchOptionsObject): Self = StObject.set(x, "noise", value.asInstanceOf[js.Any])
+      
+      inline def setPiano(value: SynthPatchOptionsObject): Self = StObject.set(x, "piano", value.asInstanceOf[js.Any])
+      
+      inline def setPlucked(value: SynthPatchOptionsObject): Self = StObject.set(x, "plucked", value.asInstanceOf[js.Any])
+      
+      inline def setSawsynth(value: SynthPatchOptionsObject): Self = StObject.set(x, "sawsynth", value.asInstanceOf[js.Any])
+      
+      inline def setSawtooth(value: SynthPatchOptionsObject): Self = StObject.set(x, "sawtooth", value.asInstanceOf[js.Any])
+      
+      inline def setSaxophone(value: SynthPatchOptionsObject): Self = StObject.set(x, "saxophone", value.asInstanceOf[js.Any])
+      
+      inline def setShaker(value: SynthPatchOptionsObject): Self = StObject.set(x, "shaker", value.asInstanceOf[js.Any])
+      
+      inline def setShortnote(value: SynthPatchOptionsObject): Self = StObject.set(x, "shortnote", value.asInstanceOf[js.Any])
+      
+      inline def setSine(value: SynthPatchOptionsObject): Self = StObject.set(x, "sine", value.asInstanceOf[js.Any])
+      
+      inline def setSineGlide(value: SynthPatchOptionsObject): Self = StObject.set(x, "sineGlide", value.asInstanceOf[js.Any])
+      
+      inline def setSquare(value: SynthPatchOptionsObject): Self = StObject.set(x, "square", value.asInstanceOf[js.Any])
+      
+      inline def setStep(value: SynthPatchOptionsObject): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      
+      inline def setTriangle(value: SynthPatchOptionsObject): Self = StObject.set(x, "triangle", value.asInstanceOf[js.Any])
+      
+      inline def setTrumpet(value: SynthPatchOptionsObject): Self = StObject.set(x, "trumpet", value.asInstanceOf[js.Any])
+      
+      inline def setVibraphone(value: SynthPatchOptionsObject): Self = StObject.set(x, "vibraphone", value.asInstanceOf[js.Any])
+      
+      inline def setWind(value: SynthPatchOptionsObject): Self = StObject.set(x, "wind", value.asInstanceOf[js.Any])
+      
+      inline def setWobble(value: SynthPatchOptionsObject): Self = StObject.set(x, "wobble", value.asInstanceOf[js.Any])
+    }
+  }
+  
   @js.native
   trait TypeofAST
     extends StObject
@@ -530,20 +677,20 @@ object anon {
       * potentially harmful content from the chart configuration before adding to
       * the DOM.
       */
-    var allowedAttributes: Any = js.native
+    var allowedAttributes: js.Array[String] = js.native
     
     /**
       * The list of allowed references for referring attributes like `href` and
       * `src`. Attribute values will only be allowed if they start with one of
       * these strings.
       */
-    var allowedReferences: Any = js.native
+    var allowedReferences: js.Array[String] = js.native
     
     /**
       * The list of allowed SVG or HTML tags, used for sanitizing potentially
       * harmful content from the chart configuration before adding to the DOM.
       */
-    var allowedTags: Any = js.native
+    var allowedTags: js.Array[String] = js.native
     
     /**
       * Allow all custom SVG and HTML attributes, references and tags (together
@@ -607,12 +754,6 @@ object anon {
     
     var Color: TypeofColor = js.native
     
-    var ColorAxis: Instantiable2[
-        /* chart */ Chart_, 
-        /* userOptions */ ColorAxisOptions, 
-        typings.highcharts.mod.ColorAxis
-      ] = js.native
-    
     var Legend: Instantiable2[/* chart */ Chart_, /* options */ LegendOptions, typings.highcharts.mod.Legend] = js.native
     
     var PlotLineOrBand: Instantiable2[
@@ -654,11 +795,6 @@ object anon {
     var Time: Instantiable1[/* options */ js.UndefOr[TimeOptions], Time_] = js.native
     
     var Tooltip: Instantiable2[/* chart */ Chart_, /* options */ TooltipOptions, typings.highcharts.mod.Tooltip] = js.native
-    
-    /**
-      * 3D axis for z coordinates.
-      */
-    var ZAxis: Any = js.native
     
     def addEvent[T](el: T, `type`: String, fn: js.Function): js.Function = js.native
     def addEvent[T](el: T, `type`: String, fn: js.Function, options: EventOptionsObject): js.Function = js.native
@@ -712,6 +848,8 @@ object anon {
     def attr(elem: SVGDOMElement, keyOrAttribs: SVGAttributes, value: Double): js.UndefOr[String | Null] = js.native
     
     def callout(): Unit = js.native
+    
+    def centerImage(): Unit = js.native
     
     def chart(options: Options): Chart_ = js.native
     def chart(options: Options, callback: ChartCallbackFunction): Chart_ = js.native
@@ -913,6 +1051,8 @@ object anon {
     
     def pick[T](items: (js.UndefOr[T | Null])*): T = js.native
     
+    def pushUnique(array: js.Array[Any], item: Any): Boolean = js.native
+    
     def reduce(arr: js.Array[Any], fn: js.Function, initialValue: Any): Any = js.native
     
     def registerRendererType(rendererType: String, rendererClass: Class[SVGRenderer], setAsDefault: Boolean): Unit = js.native
@@ -1010,12 +1150,6 @@ object anon {
     var Chart: Instantiable2[/* options */ Options, /* callback */ js.UndefOr[ChartCallbackFunction], Chart_] = js.native
     
     var Color: TypeofColor = js.native
-    
-    var ColorAxis: Instantiable2[
-        /* chart */ Chart_, 
-        /* userOptions */ ColorAxisOptions, 
-        typings.highcharts.mod.ColorAxis
-      ] = js.native
     
     var Legend: Instantiable2[/* chart */ Chart_, /* options */ LegendOptions, typings.highcharts.mod.Legend] = js.native
     
@@ -1117,6 +1251,8 @@ object anon {
     def axisBeforePadding(): Unit = js.native
     
     def callout(): Unit = js.native
+    
+    def centerImage(): Unit = js.native
     
     def chart(options: Options): Chart_ = js.native
     def chart(options: Options, callback: ChartCallbackFunction): Chart_ = js.native
@@ -1371,6 +1507,8 @@ object anon {
     
     def pick[T](items: (js.UndefOr[T | Null])*): T = js.native
     
+    def pushUnique(array: js.Array[Any], item: Any): Boolean = js.native
+    
     def reduce(arr: js.Array[Any], fn: js.Function, initialValue: Any): Any = js.native
     
     def registerRendererType(rendererType: String, rendererClass: Class[SVGRenderer], setAsDefault: Boolean): Unit = js.native
@@ -1391,405 +1529,6 @@ object anon {
       * Prevent setting Y axis dirty.
       */
     def renderHidden(): Unit = js.native
-    
-    def seriesType(`type`: String, parent: String, options: Dictionary[Any]): Series = js.native
-    def seriesType(`type`: String, parent: String, options: Dictionary[Any], props: Unit, pointProps: Dictionary[Any]): Series = js.native
-    def seriesType(`type`: String, parent: String, options: Dictionary[Any], props: Dictionary[Any]): Series = js.native
-    def seriesType(
-      `type`: String,
-      parent: String,
-      options: Dictionary[Any],
-      props: Dictionary[Any],
-      pointProps: Dictionary[Any]
-    ): Series = js.native
-    def seriesType(`type`: String, parent: String, options: SeriesOptionsType): Series = js.native
-    def seriesType(
-      `type`: String,
-      parent: String,
-      options: SeriesOptionsType,
-      props: Unit,
-      pointProps: Dictionary[Any]
-    ): Series = js.native
-    def seriesType(`type`: String, parent: String, options: SeriesOptionsType, props: Dictionary[Any]): Series = js.native
-    def seriesType(
-      `type`: String,
-      parent: String,
-      options: SeriesOptionsType,
-      props: Dictionary[Any],
-      pointProps: Dictionary[Any]
-    ): Series = js.native
-    
-    def setAnimation(animation: Boolean, chart: Chart_): Unit = js.native
-    def setAnimation(animation: Unit, chart: Chart_): Unit = js.native
-    def setAnimation(animation: PartialAnimationOptionsOb, chart: Chart_): Unit = js.native
-    
-    def setOptions(options: Options): Unit = js.native
-    
-    def some(arr: js.Array[Any], fn: js.Function, ctx: Any): Boolean = js.native
-    
-    def splat(obj: Any): js.Array[Any] = js.native
-    
-    def stableSort(arr: js.Array[Any], sortFunction: js.Function): Unit = js.native
-    
-    def stop(el: SVGElement): Unit = js.native
-    def stop(el: SVGElement, prop: String): Unit = js.native
-    
-    def syncTimeout(fn: js.Function, delay: Double): Double = js.native
-    def syncTimeout(fn: js.Function, delay: Double, context: Any): Double = js.native
-    
-    var theme: Options = js.native
-    
-    var time: Time_ = js.native
-    
-    def uniqueKey(): String = js.native
-    
-    def useSerialIds(): js.UndefOr[Boolean] = js.native
-    def useSerialIds(mode: Boolean): js.UndefOr[Boolean] = js.native
-    
-    def wrap(obj: Any, method: String, func: WrapProceedFunction): Unit = js.native
-  }
-  
-  @js.native
-  trait TypeofHighchartsAddEvent extends StObject {
-    
-    var AST: TypeofAST = js.native
-    
-    var Annotation: Instantiable2[
-        /* chart */ Chart_, 
-        /* userOptions */ AnnotationsOptions, 
-        typings.highcharts.mod.Annotation
-      ] = js.native
-    
-    var AnnotationControlPoint: Instantiable4[
-        /* chart */ Chart_, 
-        /* target */ AnnotationControllable, 
-        /* options */ AnnotationControlPointOptionsObject, 
-        /* index */ js.UndefOr[Double], 
-        typings.highcharts.mod.AnnotationControlPoint
-      ] = js.native
-    
-    var Axis: Instantiable2[/* chart */ Chart_, /* userOptions */ AxisOptions, typings.highcharts.mod.Axis] = js.native
-    
-    var Chart: Instantiable2[/* options */ Options, /* callback */ js.UndefOr[ChartCallbackFunction], Chart_] = js.native
-    
-    var Color: TypeofColor = js.native
-    
-    var ColorAxis: Instantiable2[
-        /* chart */ Chart_, 
-        /* userOptions */ ColorAxisOptions, 
-        typings.highcharts.mod.ColorAxis
-      ] = js.native
-    
-    var Legend: Instantiable2[/* chart */ Chart_, /* options */ LegendOptions, typings.highcharts.mod.Legend] = js.native
-    
-    var PlotLineOrBand: Instantiable2[
-        /* axis */ Axis, 
-        /* options */ js.UndefOr[AxisPlotBandsOptions | AxisPlotLinesOptions], 
-        typings.highcharts.mod.PlotLineOrBand
-      ] = js.native
-    
-    var Point: Instantiable0[typings.highcharts.mod.Point] = js.native
-    
-    var Pointer: Instantiable2[/* chart */ Chart_, /* options */ Options, typings.highcharts.mod.Pointer] = js.native
-    
-    var SVGElement: Instantiable0[typings.highcharts.mod.SVGElement] = js.native
-    
-    var SVGRenderer: Instantiable7[
-        /* container */ HTMLDOMElement, 
-        /* width */ Double, 
-        /* height */ Double, 
-        /* style */ js.UndefOr[CSSObject], 
-        /* forExport */ js.UndefOr[Boolean], 
-        /* allowHTML */ js.UndefOr[Boolean], 
-        /* styledMode */ js.UndefOr[Boolean], 
-        typings.highcharts.mod.SVGRenderer
-      ] = js.native
-    
-    var Series: TypeofSeries = js.native
-    
-    var SeriesPalettes: Any = js.native
-    
-    var Tick: Instantiable5[
-        /* axis */ Axis, 
-        /* pos */ Double, 
-        /* type */ js.UndefOr[String], 
-        /* noLabel */ js.UndefOr[Boolean], 
-        /* parameters */ js.UndefOr[js.Object], 
-        typings.highcharts.mod.Tick
-      ] = js.native
-    
-    var Time: Instantiable1[/* options */ js.UndefOr[TimeOptions], Time_] = js.native
-    
-    var Tooltip: Instantiable2[/* chart */ Chart_, /* options */ TooltipOptions, typings.highcharts.mod.Tooltip] = js.native
-    
-    def addEvent[T](el: T, `type`: String, fn: js.Function): js.Function = js.native
-    def addEvent[T](el: T, `type`: String, fn: js.Function, options: EventOptionsObject): js.Function = js.native
-    def addEvent[T](el: T, `type`: String, fn: EventCallbackFunction[T]): js.Function = js.native
-    def addEvent[T](el: T, `type`: String, fn: EventCallbackFunction[T], options: EventOptionsObject): js.Function = js.native
-    def addEvent[T](el: Class[T], `type`: String, fn: js.Function): js.Function = js.native
-    def addEvent[T](el: Class[T], `type`: String, fn: js.Function, options: EventOptionsObject): js.Function = js.native
-    def addEvent[T](el: Class[T], `type`: String, fn: EventCallbackFunction[T]): js.Function = js.native
-    def addEvent[T](el: Class[T], `type`: String, fn: EventCallbackFunction[T], options: EventOptionsObject): js.Function = js.native
-    
-    def animObject(): AnimationOptionsObject = js.native
-    def animObject(animation: Boolean): AnimationOptionsObject = js.native
-    def animObject(animation: AnimationOptionsObject): AnimationOptionsObject = js.native
-    
-    def animate(el: HTMLDOMElement, params: CSSObject): Unit = js.native
-    def animate(el: HTMLDOMElement, params: CSSObject, opt: PartialAnimationOptionsOb): Unit = js.native
-    def animate(el: HTMLDOMElement, params: SVGAttributes): Unit = js.native
-    def animate(el: HTMLDOMElement, params: SVGAttributes, opt: PartialAnimationOptionsOb): Unit = js.native
-    def animate(el: SVGElement, params: CSSObject): Unit = js.native
-    def animate(el: SVGElement, params: CSSObject, opt: PartialAnimationOptionsOb): Unit = js.native
-    def animate(el: SVGElement, params: SVGAttributes): Unit = js.native
-    def animate(el: SVGElement, params: SVGAttributes, opt: PartialAnimationOptionsOb): Unit = js.native
-    
-    def arrayMax(data: js.Array[Any]): Double = js.native
-    
-    def arrayMin(data: js.Array[Any]): Double = js.native
-    
-    def attr(elem: HTMLDOMElement): js.UndefOr[String | Null] = js.native
-    def attr(elem: HTMLDOMElement, keyOrAttribs: String): js.UndefOr[String | Null] = js.native
-    def attr(elem: HTMLDOMElement, keyOrAttribs: String, value: String): js.UndefOr[String | Null] = js.native
-    def attr(elem: HTMLDOMElement, keyOrAttribs: String, value: Double): js.UndefOr[String | Null] = js.native
-    def attr(elem: HTMLDOMElement, keyOrAttribs: Unit, value: String): js.UndefOr[String | Null] = js.native
-    def attr(elem: HTMLDOMElement, keyOrAttribs: Unit, value: Double): js.UndefOr[String | Null] = js.native
-    def attr(elem: HTMLDOMElement, keyOrAttribs: HTMLAttributes): js.UndefOr[String | Null] = js.native
-    def attr(elem: HTMLDOMElement, keyOrAttribs: HTMLAttributes, value: String): js.UndefOr[String | Null] = js.native
-    def attr(elem: HTMLDOMElement, keyOrAttribs: HTMLAttributes, value: Double): js.UndefOr[String | Null] = js.native
-    def attr(elem: HTMLDOMElement, keyOrAttribs: SVGAttributes): js.UndefOr[String | Null] = js.native
-    def attr(elem: HTMLDOMElement, keyOrAttribs: SVGAttributes, value: String): js.UndefOr[String | Null] = js.native
-    def attr(elem: HTMLDOMElement, keyOrAttribs: SVGAttributes, value: Double): js.UndefOr[String | Null] = js.native
-    def attr(elem: SVGDOMElement): js.UndefOr[String | Null] = js.native
-    def attr(elem: SVGDOMElement, keyOrAttribs: String): js.UndefOr[String | Null] = js.native
-    def attr(elem: SVGDOMElement, keyOrAttribs: String, value: String): js.UndefOr[String | Null] = js.native
-    def attr(elem: SVGDOMElement, keyOrAttribs: String, value: Double): js.UndefOr[String | Null] = js.native
-    def attr(elem: SVGDOMElement, keyOrAttribs: Unit, value: String): js.UndefOr[String | Null] = js.native
-    def attr(elem: SVGDOMElement, keyOrAttribs: Unit, value: Double): js.UndefOr[String | Null] = js.native
-    def attr(elem: SVGDOMElement, keyOrAttribs: HTMLAttributes): js.UndefOr[String | Null] = js.native
-    def attr(elem: SVGDOMElement, keyOrAttribs: HTMLAttributes, value: String): js.UndefOr[String | Null] = js.native
-    def attr(elem: SVGDOMElement, keyOrAttribs: HTMLAttributes, value: Double): js.UndefOr[String | Null] = js.native
-    def attr(elem: SVGDOMElement, keyOrAttribs: SVGAttributes): js.UndefOr[String | Null] = js.native
-    def attr(elem: SVGDOMElement, keyOrAttribs: SVGAttributes, value: String): js.UndefOr[String | Null] = js.native
-    def attr(elem: SVGDOMElement, keyOrAttribs: SVGAttributes, value: Double): js.UndefOr[String | Null] = js.native
-    
-    def callout(): Unit = js.native
-    
-    def chart(options: Options): Chart_ = js.native
-    def chart(options: Options, callback: ChartCallbackFunction): Chart_ = js.native
-    def chart(renderTo: String, options: Options): Chart_ = js.native
-    def chart(renderTo: String, options: Options, callback: ChartCallbackFunction): Chart_ = js.native
-    def chart(renderTo: HTMLDOMElement, options: Options): Chart_ = js.native
-    def chart(renderTo: HTMLDOMElement, options: Options, callback: ChartCallbackFunction): Chart_ = js.native
-    
-    var charts: js.Array[js.UndefOr[Chart_]] = js.native
-    
-    def clearTimeout(): Unit = js.native
-    def clearTimeout(id: Double): Unit = js.native
-    
-    def color(input: ColorType): Color_ = js.native
-    
-    def correctFloat(num: Double): Double = js.native
-    def correctFloat(num: Double, prec: Double): Double = js.native
-    
-    def createElement(tag: String): HTMLDOMElement = js.native
-    def createElement(tag: String, attribs: Unit, styles: Unit, parent: Unit, nopad: Boolean): HTMLDOMElement = js.native
-    def createElement(tag: String, attribs: Unit, styles: Unit, parent: HTMLDOMElement): HTMLDOMElement = js.native
-    def createElement(tag: String, attribs: Unit, styles: Unit, parent: HTMLDOMElement, nopad: Boolean): HTMLDOMElement = js.native
-    def createElement(tag: String, attribs: Unit, styles: CSSObject): HTMLDOMElement = js.native
-    def createElement(tag: String, attribs: Unit, styles: CSSObject, parent: Unit, nopad: Boolean): HTMLDOMElement = js.native
-    def createElement(tag: String, attribs: Unit, styles: CSSObject, parent: HTMLDOMElement): HTMLDOMElement = js.native
-    def createElement(tag: String, attribs: Unit, styles: CSSObject, parent: HTMLDOMElement, nopad: Boolean): HTMLDOMElement = js.native
-    def createElement(tag: String, attribs: HTMLAttributes): HTMLDOMElement = js.native
-    def createElement(tag: String, attribs: HTMLAttributes, styles: Unit, parent: Unit, nopad: Boolean): HTMLDOMElement = js.native
-    def createElement(tag: String, attribs: HTMLAttributes, styles: Unit, parent: HTMLDOMElement): HTMLDOMElement = js.native
-    def createElement(tag: String, attribs: HTMLAttributes, styles: Unit, parent: HTMLDOMElement, nopad: Boolean): HTMLDOMElement = js.native
-    def createElement(tag: String, attribs: HTMLAttributes, styles: CSSObject): HTMLDOMElement = js.native
-    def createElement(tag: String, attribs: HTMLAttributes, styles: CSSObject, parent: Unit, nopad: Boolean): HTMLDOMElement = js.native
-    def createElement(tag: String, attribs: HTMLAttributes, styles: CSSObject, parent: HTMLDOMElement): HTMLDOMElement = js.native
-    def createElement(tag: String, attribs: HTMLAttributes, styles: CSSObject, parent: HTMLDOMElement, nopad: Boolean): HTMLDOMElement = js.native
-    
-    def css(el: HTMLDOMElement, styles: CSSObject): Unit = js.native
-    def css(el: SVGDOMElement, styles: CSSObject): Unit = js.native
-    
-    def dateFormat(format: String, timestamp: Double): String = js.native
-    def dateFormat(format: String, timestamp: Double, capitalize: Boolean): String = js.native
-    
-    var dateFormats: Record[String, TimeFormatCallbackFunction] = js.native
-    
-    var defaultOptions: Options = js.native
-    
-    def defined(obj: Any): Boolean = js.native
-    
-    def destroyObjectProperties(obj: Any): Unit = js.native
-    def destroyObjectProperties(obj: Any, except: Any): Unit = js.native
-    
-    def discardElement(element: HTMLDOMElement): Unit = js.native
-    
-    def each(arr: js.Array[Any], fn: js.Function): Unit = js.native
-    def each(arr: js.Array[Any], fn: js.Function, ctx: Any): Unit = js.native
-    
-    def erase(arr: js.Array[Any], item: Any): Unit = js.native
-    
-    def error(code: String): Unit = js.native
-    def error(code: String, stop: Boolean): Unit = js.native
-    def error(code: String, stop: Boolean, chart: Unit, params: Dictionary[String]): Unit = js.native
-    def error(code: String, stop: Boolean, chart: Chart_): Unit = js.native
-    def error(code: String, stop: Boolean, chart: Chart_, params: Dictionary[String]): Unit = js.native
-    def error(code: String, stop: Unit, chart: Unit, params: Dictionary[String]): Unit = js.native
-    def error(code: String, stop: Unit, chart: Chart_): Unit = js.native
-    def error(code: String, stop: Unit, chart: Chart_, params: Dictionary[String]): Unit = js.native
-    def error(code: Double): Unit = js.native
-    def error(code: Double, stop: Boolean): Unit = js.native
-    def error(code: Double, stop: Boolean, chart: Unit, params: Dictionary[String]): Unit = js.native
-    def error(code: Double, stop: Boolean, chart: Chart_): Unit = js.native
-    def error(code: Double, stop: Boolean, chart: Chart_, params: Dictionary[String]): Unit = js.native
-    def error(code: Double, stop: Unit, chart: Unit, params: Dictionary[String]): Unit = js.native
-    def error(code: Double, stop: Unit, chart: Chart_): Unit = js.native
-    def error(code: Double, stop: Unit, chart: Chart_, params: Dictionary[String]): Unit = js.native
-    
-    def extend[T](a: T, b: Partial[T]): T = js.native
-    def extend[T](a: Unit, b: Partial[T]): T = js.native
-    
-    def extendClass[T](parent: Class[T], members: Dictionary[Any]): Class[T] = js.native
-    
-    def find[T](arr: js.Array[T], callback: js.Function): js.UndefOr[T] = js.native
-    
-    def fireEvent[T](el: T, `type`: String): Unit = js.native
-    def fireEvent[T](el: T, `type`: String, eventArguments: Unit, defaultFunction: js.Function): Unit = js.native
-    def fireEvent[T](el: T, `type`: String, eventArguments: Unit, defaultFunction: EventCallbackFunction[T]): Unit = js.native
-    def fireEvent[T](el: T, `type`: String, eventArguments: Dictionary[Any]): Unit = js.native
-    def fireEvent[T](el: T, `type`: String, eventArguments: Dictionary[Any], defaultFunction: js.Function): Unit = js.native
-    def fireEvent[T](el: T, `type`: String, eventArguments: Dictionary[Any], defaultFunction: EventCallbackFunction[T]): Unit = js.native
-    def fireEvent[T](el: T, `type`: String, eventArguments: Event): Unit = js.native
-    def fireEvent[T](el: T, `type`: String, eventArguments: Event, defaultFunction: js.Function): Unit = js.native
-    def fireEvent[T](el: T, `type`: String, eventArguments: Event, defaultFunction: EventCallbackFunction[T]): Unit = js.native
-    
-    def format(str: String, ctx: Record[String, Any]): String = js.native
-    def format(str: String, ctx: Record[String, Any], chart: Chart_): String = js.native
-    
-    def getDeferredAnimation(chart: Chart_, animation: Boolean): Double = js.native
-    def getDeferredAnimation(chart: Chart_, animation: Boolean, series: Series): Double = js.native
-    def getDeferredAnimation(chart: Chart_, animation: AnimationOptionsObject): Double = js.native
-    def getDeferredAnimation(chart: Chart_, animation: AnimationOptionsObject, series: Series): Double = js.native
-    
-    def getMagnitude(num: Double): Double = js.native
-    
-    def getOptions(): Options = js.native
-    
-    def getRendererType(): Class[SVGRenderer] = js.native
-    def getRendererType(rendererType: String): Class[SVGRenderer] = js.native
-    
-    def getStyle(el: HTMLDOMElement, prop: String): js.UndefOr[Double | String] = js.native
-    def getStyle(el: HTMLDOMElement, prop: String, toInt: Boolean): js.UndefOr[Double | String] = js.native
-    
-    def grep(arr: js.Array[Any], callback: js.Function): js.Array[Any] = js.native
-    
-    def inArray(item: Any, arr: js.Array[Any]): Double = js.native
-    def inArray(item: Any, arr: js.Array[Any], fromIndex: Double): Double = js.native
-    
-    def isArray(obj: Any): Boolean = js.native
-    
-    def isClass(): Boolean = js.native
-    def isClass(obj: js.Object): Boolean = js.native
-    
-    def isDOMElement(obj: Any): Boolean = js.native
-    
-    def isNumber(n: Any): Boolean = js.native
-    
-    def isObject(obj: Any): Boolean = js.native
-    def isObject(obj: Any, strict: Boolean): Boolean = js.native
-    
-    def isString(s: Any): Boolean = js.native
-    
-    def keys(obj: Any): js.Array[String] = js.native
-    
-    def map(arr: js.Array[Any], fn: js.Function): js.Array[Any] = js.native
-    
-    def merge[T](a: T, n: js.UndefOr[js.Object]*): T = js.native
-    def merge[T](a: Unit, n: js.UndefOr[js.Object]*): T = js.native
-    def merge[T](extend: Boolean, a: T, n: js.UndefOr[js.Object]*): T = js.native
-    def merge[T](extend: Boolean, a: Unit, n: js.UndefOr[js.Object]*): T = js.native
-    
-    def normalizeTickInterval(interval: Double): Double = js.native
-    def normalizeTickInterval(interval: Double, multiples: js.Array[Any]): Double = js.native
-    def normalizeTickInterval(interval: Double, multiples: js.Array[Any], magnitude: Double): Double = js.native
-    def normalizeTickInterval(interval: Double, multiples: js.Array[Any], magnitude: Double, allowDecimals: Boolean): Double = js.native
-    def normalizeTickInterval(
-      interval: Double,
-      multiples: js.Array[Any],
-      magnitude: Double,
-      allowDecimals: Boolean,
-      hasTickAmount: Boolean
-    ): Double = js.native
-    def normalizeTickInterval(
-      interval: Double,
-      multiples: js.Array[Any],
-      magnitude: Double,
-      allowDecimals: Unit,
-      hasTickAmount: Boolean
-    ): Double = js.native
-    def normalizeTickInterval(interval: Double, multiples: js.Array[Any], magnitude: Unit, allowDecimals: Boolean): Double = js.native
-    def normalizeTickInterval(
-      interval: Double,
-      multiples: js.Array[Any],
-      magnitude: Unit,
-      allowDecimals: Boolean,
-      hasTickAmount: Boolean
-    ): Double = js.native
-    def normalizeTickInterval(
-      interval: Double,
-      multiples: js.Array[Any],
-      magnitude: Unit,
-      allowDecimals: Unit,
-      hasTickAmount: Boolean
-    ): Double = js.native
-    def normalizeTickInterval(interval: Double, multiples: Unit, magnitude: Double): Double = js.native
-    def normalizeTickInterval(interval: Double, multiples: Unit, magnitude: Double, allowDecimals: Boolean): Double = js.native
-    def normalizeTickInterval(
-      interval: Double,
-      multiples: Unit,
-      magnitude: Double,
-      allowDecimals: Boolean,
-      hasTickAmount: Boolean
-    ): Double = js.native
-    def normalizeTickInterval(interval: Double, multiples: Unit, magnitude: Double, allowDecimals: Unit, hasTickAmount: Boolean): Double = js.native
-    def normalizeTickInterval(interval: Double, multiples: Unit, magnitude: Unit, allowDecimals: Boolean): Double = js.native
-    def normalizeTickInterval(interval: Double, multiples: Unit, magnitude: Unit, allowDecimals: Boolean, hasTickAmount: Boolean): Double = js.native
-    def normalizeTickInterval(interval: Double, multiples: Unit, magnitude: Unit, allowDecimals: Unit, hasTickAmount: Boolean): Double = js.native
-    
-    def numberFormat(number: Double, decimals: Double): String = js.native
-    def numberFormat(number: Double, decimals: Double, decimalPoint: String): String = js.native
-    def numberFormat(number: Double, decimals: Double, decimalPoint: String, thousandsSep: String): String = js.native
-    def numberFormat(number: Double, decimals: Double, decimalPoint: Unit, thousandsSep: String): String = js.native
-    
-    def objectEach[T](obj: Any, fn: ObjectEachCallbackFunction[T]): Unit = js.native
-    def objectEach[T](obj: Any, fn: ObjectEachCallbackFunction[T], ctx: T): Unit = js.native
-    
-    def offset(el: Element): OffsetObject = js.native
-    
-    def pad(number: Double): String = js.native
-    def pad(number: Double, length: Double): String = js.native
-    def pad(number: Double, length: Double, padder: String): String = js.native
-    def pad(number: Double, length: Unit, padder: String): String = js.native
-    
-    def pick[T](items: (js.UndefOr[T | Null])*): T = js.native
-    
-    def reduce(arr: js.Array[Any], fn: js.Function, initialValue: Any): Any = js.native
-    
-    def registerRendererType(rendererType: String, rendererClass: Class[SVGRenderer], setAsDefault: Boolean): Unit = js.native
-    
-    def relativeLength(value: RelativeSize, base: Double): Double = js.native
-    def relativeLength(value: RelativeSize, base: Double, offset: Double): Double = js.native
-    
-    def removeEvent[T](el: T): Unit = js.native
-    def removeEvent[T](el: T, `type`: String): Unit = js.native
-    def removeEvent[T](el: T, `type`: String, fn: EventCallbackFunction[T]): Unit = js.native
-    def removeEvent[T](el: T, `type`: Unit, fn: EventCallbackFunction[T]): Unit = js.native
-    def removeEvent[T](el: Class[T]): Unit = js.native
-    def removeEvent[T](el: Class[T], `type`: String): Unit = js.native
-    def removeEvent[T](el: Class[T], `type`: String, fn: EventCallbackFunction[T]): Unit = js.native
-    def removeEvent[T](el: Class[T], `type`: Unit, fn: EventCallbackFunction[T]): Unit = js.native
     
     def seriesType(`type`: String, parent: String, options: Dictionary[Any]): Series = js.native
     def seriesType(`type`: String, parent: String, options: Dictionary[Any], props: Unit, pointProps: Dictionary[Any]): Series = js.native

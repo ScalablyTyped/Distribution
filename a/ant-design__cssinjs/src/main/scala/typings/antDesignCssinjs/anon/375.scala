@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BackgroundBlendMode
+import typings.csstype.mod.Property.ScrollPadding
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `375` extends StObject {
   
   var value: js.UndefOr[
-    BackgroundBlendMode | (js.Array[
+    (ScrollPadding[Double | String]) | (js.Array[
       (Extract[
-        js.UndefOr[BackgroundBlendMode | js.Array[NonNullable[js.UndefOr[BackgroundBlendMode]]]], 
+        js.UndefOr[
+          (ScrollPadding[Double | String]) | (js.Array[NonNullable[js.UndefOr[ScrollPadding[Double | String]]]])
+        ], 
         String
-      ]) | NonNullable[js.UndefOr[BackgroundBlendMode]]
+      ]) | (NonNullable[js.UndefOr[ScrollPadding[Double | String]]])
     ])
   ] = js.native
 }

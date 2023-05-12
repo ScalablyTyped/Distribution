@@ -36,12 +36,12 @@ trait TooltipOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The pixel width of the tooltip
-    * border.
+    * border. Defaults to 0 for single tooltips and 1 for split tooltips.
     *
     * In styled mode, the stroke width is set in the `.highcharts-tooltip-box`
     * class.
     */
-  var borderWidth: js.UndefOr[Double] = js.undefined
+  var borderWidth: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) How many decimals to show for the `point.change` or the
@@ -186,7 +186,7 @@ trait TooltipOptions extends StObject {
     * `Highcharts.SVGRenderer.prototype.symbols` the same way as for
     * series.marker.symbol.
     */
-  var headerShape: js.UndefOr[TooltipShapeValue] = js.undefined
+  var headerShape: js.UndefOr[OptionsHeaderShapeValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The number of milliseconds to
@@ -317,6 +317,8 @@ trait TooltipOptions extends StObject {
     * the header close to the axis. This is recommended over shared tooltips
     * for charts with multiple line series, generally making them easier to
     * read. This option takes precedence over `tooltip.shared`.
+    *
+    * Not supported for polar and inverted charts.
     */
   var split: js.UndefOr[Boolean] = js.undefined
   
@@ -396,7 +398,7 @@ object TooltipOptions {
     
     inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
     
-    inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+    inline def setBorderWidth(value: String): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
@@ -444,7 +446,7 @@ object TooltipOptions {
     
     inline def setHeaderFormatUndefined: Self = StObject.set(x, "headerFormat", js.undefined)
     
-    inline def setHeaderShape(value: TooltipShapeValue): Self = StObject.set(x, "headerShape", value.asInstanceOf[js.Any])
+    inline def setHeaderShape(value: OptionsHeaderShapeValue): Self = StObject.set(x, "headerShape", value.asInstanceOf[js.Any])
     
     inline def setHeaderShapeUndefined: Self = StObject.set(x, "headerShape", js.undefined)
     

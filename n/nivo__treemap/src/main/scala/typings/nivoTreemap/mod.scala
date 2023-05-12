@@ -30,6 +30,9 @@ import typings.nivoTreemap.nivoTreemapStrings.squarify
 import typings.nivoTreemap.nivoTreemapStrings.top
 import typings.nivoTreemap.nivoTreemapStrings.width
 import typings.react.mod.global.JSX.Element
+import typings.reactSpringCore.mod.Interpolation
+import typings.reactSpringCore.mod.SpringConfig
+import typings.reactSpringWeb.mod.SpringValue
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -316,14 +319,8 @@ object mod {
     
     @JSImport("@nivo/treemap", "commonDefaultProps.motionConfig")
     @js.native
-    def motionConfig: js.UndefOr[
-        String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-      ] = js.native
-    inline def motionConfig_=(
-      x: js.UndefOr[
-          String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-        ]
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("motionConfig")(x.asInstanceOf[js.Any])
+    def motionConfig: js.UndefOr[String | SpringConfig] = js.native
+    inline def motionConfig_=(x: js.UndefOr[String | SpringConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("motionConfig")(x.asInstanceOf[js.Any])
     
     @JSImport("@nivo/treemap", "commonDefaultProps.nodeOpacity")
     @js.native
@@ -550,22 +547,11 @@ object mod {
     inline def value_=(x: PropertyAccessor[DefaultTreeMapDatum, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("value")(x.asInstanceOf[js.Any])
   }
   
-  inline def htmlLabelTransform(
-    x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any,
-    y: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any,
-    rotation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlLabelTransform")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def htmlLabelTransform(x: SpringValue[Double], y: SpringValue[Double], rotation: SpringValue[Double]): Interpolation[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlLabelTransform")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[Interpolation[String, Any]]
   
-  inline def htmlNodeTransform(
-    x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any,
-    y: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlNodeTransform")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def htmlNodeTransform(x: SpringValue[Double], y: SpringValue[Double]): Interpolation[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlNodeTransform")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Interpolation[String, Any]]
   
-  inline def htmlParentLabelTransform(
-    x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any,
-    y: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any,
-    rotation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlParentLabelTransform")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def htmlParentLabelTransform(x: SpringValue[Double], y: SpringValue[Double], rotation: SpringValue[Double]): Interpolation[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlParentLabelTransform")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[Interpolation[String, Any]]
   
   object svgDefaultProps {
     
@@ -740,16 +726,9 @@ object mod {
     inline def value_=(x: PropertyAccessor[DefaultTreeMapDatum, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("value")(x.asInstanceOf[js.Any])
   }
   
-  inline def svgLabelTransform(
-    x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any,
-    y: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any,
-    rotation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("svgLabelTransform")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def svgLabelTransform(x: SpringValue[Double], y: SpringValue[Double], rotation: SpringValue[Double]): Interpolation[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("svgLabelTransform")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[Interpolation[String, Any]]
   
-  inline def svgNodeTransform(
-    x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any,
-    y: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("svgNodeTransform")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def svgNodeTransform(x: SpringValue[Double], y: SpringValue[Double]): Interpolation[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("svgNodeTransform")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Interpolation[String, Any]]
   
   object tileByType {
     

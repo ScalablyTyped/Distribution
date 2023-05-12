@@ -12,6 +12,7 @@ import typings.monacoEditor.anon.ReadonlyRequiredIEditorLi
 import typings.monacoEditor.anon.ReadonlyRequiredIEditorMi
 import typings.monacoEditor.anon.ReadonlyRequiredIEditorPa
 import typings.monacoEditor.anon.ReadonlyRequiredIEditorPaCycle
+import typings.monacoEditor.anon.ReadonlyRequiredIEditorSt
 import typings.monacoEditor.anon.ReadonlyRequiredIGotoLoca
 import typings.monacoEditor.anon.ReadonlyRequiredIGuidesOp
 import typings.monacoEditor.anon.ReadonlyRequiredIInlineSu
@@ -20,7 +21,6 @@ import typings.monacoEditor.anon.ReadonlyRequiredISuggestO
 import typings.monacoEditor.mod.IDisposable
 import typings.monacoEditor.mod.editor.AccessibilitySupport
 import typings.monacoEditor.mod.editor.EditorAutoIndentStrategy
-import typings.monacoEditor.mod.editor.EditorExperimentalOptions
 import typings.monacoEditor.mod.editor.EditorLayoutInfo
 import typings.monacoEditor.mod.editor.EditorOption.acceptSuggestionOnCommitCharacter
 import typings.monacoEditor.mod.editor.EditorOption.acceptSuggestionOnEnter
@@ -39,6 +39,7 @@ import typings.monacoEditor.mod.editor.EditorOption.codeLens
 import typings.monacoEditor.mod.editor.EditorOption.codeLensFontFamily
 import typings.monacoEditor.mod.editor.EditorOption.codeLensFontSize
 import typings.monacoEditor.mod.editor.EditorOption.colorDecorators
+import typings.monacoEditor.mod.editor.EditorOption.colorDecoratorsLimit
 import typings.monacoEditor.mod.editor.EditorOption.columnSelection
 import typings.monacoEditor.mod.editor.EditorOption.comments
 import typings.monacoEditor.mod.editor.EditorOption.contextmenu
@@ -49,6 +50,7 @@ import typings.monacoEditor.mod.editor.EditorOption.cursorStyle
 import typings.monacoEditor.mod.editor.EditorOption.cursorSurroundingLines
 import typings.monacoEditor.mod.editor.EditorOption.cursorSurroundingLinesStyle
 import typings.monacoEditor.mod.editor.EditorOption.cursorWidth
+import typings.monacoEditor.mod.editor.EditorOption.defaultColorDecorators
 import typings.monacoEditor.mod.editor.EditorOption.definitionLinkOpensInPeek
 import typings.monacoEditor.mod.editor.EditorOption.disableLayerHinting
 import typings.monacoEditor.mod.editor.EditorOption.disableMonospaceOptimizations
@@ -57,7 +59,7 @@ import typings.monacoEditor.mod.editor.EditorOption.dragAndDrop
 import typings.monacoEditor.mod.editor.EditorOption.dropIntoEditor
 import typings.monacoEditor.mod.editor.EditorOption.editorClassName
 import typings.monacoEditor.mod.editor.EditorOption.emptySelectionClipboard
-import typings.monacoEditor.mod.editor.EditorOption.experimental
+import typings.monacoEditor.mod.editor.EditorOption.experimentalWhitespaceRendering
 import typings.monacoEditor.mod.editor.EditorOption.extraEditorClassName
 import typings.monacoEditor.mod.editor.EditorOption.fastScrollSensitivity
 import typings.monacoEditor.mod.editor.EditorOption.find
@@ -71,6 +73,7 @@ import typings.monacoEditor.mod.editor.EditorOption.fontFamily
 import typings.monacoEditor.mod.editor.EditorOption.fontInfo
 import typings.monacoEditor.mod.editor.EditorOption.fontLigatures
 import typings.monacoEditor.mod.editor.EditorOption.fontSize
+import typings.monacoEditor.mod.editor.EditorOption.fontVariations
 import typings.monacoEditor.mod.editor.EditorOption.fontWeight
 import typings.monacoEditor.mod.editor.EditorOption.formatOnPaste
 import typings.monacoEditor.mod.editor.EditorOption.formatOnType
@@ -96,6 +99,7 @@ import typings.monacoEditor.mod.editor.EditorOption.minimap
 import typings.monacoEditor.mod.editor.EditorOption.mouseStyle
 import typings.monacoEditor.mod.editor.EditorOption.mouseWheelScrollSensitivity
 import typings.monacoEditor.mod.editor.EditorOption.mouseWheelZoom
+import typings.monacoEditor.mod.editor.EditorOption.multiCursorLimit
 import typings.monacoEditor.mod.editor.EditorOption.multiCursorMergeOverlapping
 import typings.monacoEditor.mod.editor.EditorOption.multiCursorModifier
 import typings.monacoEditor.mod.editor.EditorOption.multiCursorPaste
@@ -119,6 +123,7 @@ import typings.monacoEditor.mod.editor.EditorOption.renderWhitespace
 import typings.monacoEditor.mod.editor.EditorOption.revealHorizontalRightPadding
 import typings.monacoEditor.mod.editor.EditorOption.roundedSelection
 import typings.monacoEditor.mod.editor.EditorOption.rulers
+import typings.monacoEditor.mod.editor.EditorOption.screenReaderAnnounceInlineSuggestion
 import typings.monacoEditor.mod.editor.EditorOption.scrollBeyondLastColumn
 import typings.monacoEditor.mod.editor.EditorOption.scrollBeyondLastLine
 import typings.monacoEditor.mod.editor.EditorOption.scrollPredominantAxis
@@ -132,6 +137,7 @@ import typings.monacoEditor.mod.editor.EditorOption.showUnused
 import typings.monacoEditor.mod.editor.EditorOption.smartSelect
 import typings.monacoEditor.mod.editor.EditorOption.smoothScrolling
 import typings.monacoEditor.mod.editor.EditorOption.snippetSuggestions
+import typings.monacoEditor.mod.editor.EditorOption.stickyScroll
 import typings.monacoEditor.mod.editor.EditorOption.stickyTabStops
 import typings.monacoEditor.mod.editor.EditorOption.stopRenderingLineAfter
 import typings.monacoEditor.mod.editor.EditorOption.suggest
@@ -147,6 +153,7 @@ import typings.monacoEditor.mod.editor.EditorOption.unicodeHighlighting
 import typings.monacoEditor.mod.editor.EditorOption.unusualLineTerminators
 import typings.monacoEditor.mod.editor.EditorOption.useShadowDOM
 import typings.monacoEditor.mod.editor.EditorOption.useTabStops
+import typings.monacoEditor.mod.editor.EditorOption.wordBreak
 import typings.monacoEditor.mod.editor.EditorOption.wordSeparators
 import typings.monacoEditor.mod.editor.EditorOption.wordWrap
 import typings.monacoEditor.mod.editor.EditorOption.wordWrapBreakAfterCharacters
@@ -159,6 +166,7 @@ import typings.monacoEditor.mod.editor.EditorOption.wrappingStrategy
 import typings.monacoEditor.mod.editor.EditorWrappingInfo
 import typings.monacoEditor.mod.editor.IActionDescriptor
 import typings.monacoEditor.mod.editor.ICodeEditor
+import typings.monacoEditor.mod.editor.ICodeEditorOpener
 import typings.monacoEditor.mod.editor.IColorizerElementOptions
 import typings.monacoEditor.mod.editor.IColorizerOptions
 import typings.monacoEditor.mod.editor.ICommandDescriptor
@@ -167,7 +175,9 @@ import typings.monacoEditor.mod.editor.IDiffNavigator
 import typings.monacoEditor.mod.editor.IDiffNavigatorOptions
 import typings.monacoEditor.mod.editor.IEditorOption
 import typings.monacoEditor.mod.editor.IEditorOverrideServices
+import typings.monacoEditor.mod.editor.IEditorZoom
 import typings.monacoEditor.mod.editor.IKeybindingRule
+import typings.monacoEditor.mod.editor.ILinkOpener
 import typings.monacoEditor.mod.editor.IMarker
 import typings.monacoEditor.mod.editor.IMarkerData
 import typings.monacoEditor.mod.editor.IStandaloneCodeEditor
@@ -198,12 +208,16 @@ import typings.reactMonacoEditor.reactMonacoEditorStrings.brackets
 import typings.reactMonacoEditor.reactMonacoEditorStrings.copy
 import typings.reactMonacoEditor.reactMonacoEditorStrings.ctrlKey
 import typings.reactMonacoEditor.reactMonacoEditorStrings.default
+import typings.reactMonacoEditor.reactMonacoEditorStrings.dimmed
 import typings.reactMonacoEditor.reactMonacoEditorStrings.editable
+import typings.reactMonacoEditor.reactMonacoEditorStrings.explicit
 import typings.reactMonacoEditor.reactMonacoEditorStrings.first
+import typings.reactMonacoEditor.reactMonacoEditorStrings.font
 import typings.reactMonacoEditor.reactMonacoEditorStrings.full
 import typings.reactMonacoEditor.reactMonacoEditorStrings.gutter
 import typings.reactMonacoEditor.reactMonacoEditorStrings.indentation
 import typings.reactMonacoEditor.reactMonacoEditorStrings.inherit
+import typings.reactMonacoEditor.reactMonacoEditorStrings.keepAll
 import typings.reactMonacoEditor.reactMonacoEditorStrings.languageDefined
 import typings.reactMonacoEditor.reactMonacoEditorStrings.line
 import typings.reactMonacoEditor.reactMonacoEditorStrings.metaKey
@@ -211,6 +225,7 @@ import typings.reactMonacoEditor.reactMonacoEditorStrings.mouseover
 import typings.reactMonacoEditor.reactMonacoEditorStrings.near
 import typings.reactMonacoEditor.reactMonacoEditorStrings.never
 import typings.reactMonacoEditor.reactMonacoEditorStrings.none
+import typings.reactMonacoEditor.reactMonacoEditorStrings.normal
 import typings.reactMonacoEditor.reactMonacoEditorStrings.off
 import typings.reactMonacoEditor.reactMonacoEditorStrings.on
 import typings.reactMonacoEditor.reactMonacoEditorStrings.onlySnippets
@@ -222,6 +237,7 @@ import typings.reactMonacoEditor.reactMonacoEditorStrings.selection
 import typings.reactMonacoEditor.reactMonacoEditorStrings.simple
 import typings.reactMonacoEditor.reactMonacoEditorStrings.smart
 import typings.reactMonacoEditor.reactMonacoEditorStrings.spread
+import typings.reactMonacoEditor.reactMonacoEditorStrings.svg
 import typings.reactMonacoEditor.reactMonacoEditorStrings.text
 import typings.reactMonacoEditor.reactMonacoEditorStrings.top
 import typings.reactMonacoEditor.reactMonacoEditorStrings.trailing
@@ -354,263 +370,277 @@ object editor {
     
     /* 5 */ val autoClosingBrackets: typings.monacoEditor.mod.editor.EditorOption.autoClosingBrackets & Double = js.native
     
-    /* 6 */ val autoClosingDelete: typings.monacoEditor.mod.editor.EditorOption.autoClosingDelete & Double = js.native
+    /* 7 */ val autoClosingDelete: typings.monacoEditor.mod.editor.EditorOption.autoClosingDelete & Double = js.native
     
-    /* 7 */ val autoClosingOvertype: typings.monacoEditor.mod.editor.EditorOption.autoClosingOvertype & Double = js.native
+    /* 8 */ val autoClosingOvertype: typings.monacoEditor.mod.editor.EditorOption.autoClosingOvertype & Double = js.native
     
-    /* 8 */ val autoClosingQuotes: typings.monacoEditor.mod.editor.EditorOption.autoClosingQuotes & Double = js.native
+    /* 9 */ val autoClosingQuotes: typings.monacoEditor.mod.editor.EditorOption.autoClosingQuotes & Double = js.native
     
-    /* 9 */ val autoIndent: typings.monacoEditor.mod.editor.EditorOption.autoIndent & Double = js.native
+    /* 10 */ val autoIndent: typings.monacoEditor.mod.editor.EditorOption.autoIndent & Double = js.native
     
-    /* 11 */ val autoSurround: typings.monacoEditor.mod.editor.EditorOption.autoSurround & Double = js.native
+    /* 12 */ val autoSurround: typings.monacoEditor.mod.editor.EditorOption.autoSurround & Double = js.native
     
-    /* 10 */ val automaticLayout: typings.monacoEditor.mod.editor.EditorOption.automaticLayout & Double = js.native
+    /* 11 */ val automaticLayout: typings.monacoEditor.mod.editor.EditorOption.automaticLayout & Double = js.native
     
-    /* 12 */ val bracketPairColorization: typings.monacoEditor.mod.editor.EditorOption.bracketPairColorization & Double = js.native
+    /* 13 */ val bracketPairColorization: typings.monacoEditor.mod.editor.EditorOption.bracketPairColorization & Double = js.native
     
-    /* 14 */ val codeLens: typings.monacoEditor.mod.editor.EditorOption.codeLens & Double = js.native
+    /* 15 */ val codeLens: typings.monacoEditor.mod.editor.EditorOption.codeLens & Double = js.native
     
-    /* 15 */ val codeLensFontFamily: typings.monacoEditor.mod.editor.EditorOption.codeLensFontFamily & Double = js.native
+    /* 16 */ val codeLensFontFamily: typings.monacoEditor.mod.editor.EditorOption.codeLensFontFamily & Double = js.native
     
-    /* 16 */ val codeLensFontSize: typings.monacoEditor.mod.editor.EditorOption.codeLensFontSize & Double = js.native
+    /* 17 */ val codeLensFontSize: typings.monacoEditor.mod.editor.EditorOption.codeLensFontSize & Double = js.native
     
-    /* 17 */ val colorDecorators: typings.monacoEditor.mod.editor.EditorOption.colorDecorators & Double = js.native
+    /* 18 */ val colorDecorators: typings.monacoEditor.mod.editor.EditorOption.colorDecorators & Double = js.native
     
-    /* 18 */ val columnSelection: typings.monacoEditor.mod.editor.EditorOption.columnSelection & Double = js.native
+    /* 19 */ val colorDecoratorsLimit: typings.monacoEditor.mod.editor.EditorOption.colorDecoratorsLimit & Double = js.native
     
-    /* 19 */ val comments: typings.monacoEditor.mod.editor.EditorOption.comments & Double = js.native
+    /* 20 */ val columnSelection: typings.monacoEditor.mod.editor.EditorOption.columnSelection & Double = js.native
     
-    /* 20 */ val contextmenu: typings.monacoEditor.mod.editor.EditorOption.contextmenu & Double = js.native
+    /* 21 */ val comments: typings.monacoEditor.mod.editor.EditorOption.comments & Double = js.native
     
-    /* 21 */ val copyWithSyntaxHighlighting: typings.monacoEditor.mod.editor.EditorOption.copyWithSyntaxHighlighting & Double = js.native
+    /* 22 */ val contextmenu: typings.monacoEditor.mod.editor.EditorOption.contextmenu & Double = js.native
     
-    /* 22 */ val cursorBlinking: typings.monacoEditor.mod.editor.EditorOption.cursorBlinking & Double = js.native
+    /* 23 */ val copyWithSyntaxHighlighting: typings.monacoEditor.mod.editor.EditorOption.copyWithSyntaxHighlighting & Double = js.native
     
-    /* 23 */ val cursorSmoothCaretAnimation: typings.monacoEditor.mod.editor.EditorOption.cursorSmoothCaretAnimation & Double = js.native
+    /* 24 */ val cursorBlinking: typings.monacoEditor.mod.editor.EditorOption.cursorBlinking & Double = js.native
     
-    /* 24 */ val cursorStyle: typings.monacoEditor.mod.editor.EditorOption.cursorStyle & Double = js.native
+    /* 25 */ val cursorSmoothCaretAnimation: typings.monacoEditor.mod.editor.EditorOption.cursorSmoothCaretAnimation & Double = js.native
     
-    /* 25 */ val cursorSurroundingLines: typings.monacoEditor.mod.editor.EditorOption.cursorSurroundingLines & Double = js.native
+    /* 26 */ val cursorStyle: typings.monacoEditor.mod.editor.EditorOption.cursorStyle & Double = js.native
     
-    /* 26 */ val cursorSurroundingLinesStyle: typings.monacoEditor.mod.editor.EditorOption.cursorSurroundingLinesStyle & Double = js.native
+    /* 27 */ val cursorSurroundingLines: typings.monacoEditor.mod.editor.EditorOption.cursorSurroundingLines & Double = js.native
     
-    /* 27 */ val cursorWidth: typings.monacoEditor.mod.editor.EditorOption.cursorWidth & Double = js.native
+    /* 28 */ val cursorSurroundingLinesStyle: typings.monacoEditor.mod.editor.EditorOption.cursorSurroundingLinesStyle & Double = js.native
     
-    /* 80 */ val definitionLinkOpensInPeek: typings.monacoEditor.mod.editor.EditorOption.definitionLinkOpensInPeek & Double = js.native
+    /* 29 */ val cursorWidth: typings.monacoEditor.mod.editor.EditorOption.cursorWidth & Double = js.native
     
-    /* 28 */ val disableLayerHinting: typings.monacoEditor.mod.editor.EditorOption.disableLayerHinting & Double = js.native
+    /* 141 */ val defaultColorDecorators: typings.monacoEditor.mod.editor.EditorOption.defaultColorDecorators & Double = js.native
     
-    /* 29 */ val disableMonospaceOptimizations: typings.monacoEditor.mod.editor.EditorOption.disableMonospaceOptimizations & Double = js.native
+    /* 84 */ val definitionLinkOpensInPeek: typings.monacoEditor.mod.editor.EditorOption.definitionLinkOpensInPeek & Double = js.native
     
-    /* 30 */ val domReadOnly: typings.monacoEditor.mod.editor.EditorOption.domReadOnly & Double = js.native
+    /* 30 */ val disableLayerHinting: typings.monacoEditor.mod.editor.EditorOption.disableLayerHinting & Double = js.native
     
-    /* 31 */ val dragAndDrop: typings.monacoEditor.mod.editor.EditorOption.dragAndDrop & Double = js.native
+    /* 31 */ val disableMonospaceOptimizations: typings.monacoEditor.mod.editor.EditorOption.disableMonospaceOptimizations & Double = js.native
     
-    /* 32 */ val dropIntoEditor: typings.monacoEditor.mod.editor.EditorOption.dropIntoEditor & Double = js.native
+    /* 32 */ val domReadOnly: typings.monacoEditor.mod.editor.EditorOption.domReadOnly & Double = js.native
     
-    /* 130 */ val editorClassName: typings.monacoEditor.mod.editor.EditorOption.editorClassName & Double = js.native
+    /* 33 */ val dragAndDrop: typings.monacoEditor.mod.editor.EditorOption.dragAndDrop & Double = js.native
     
-    /* 33 */ val emptySelectionClipboard: typings.monacoEditor.mod.editor.EditorOption.emptySelectionClipboard & Double = js.native
+    /* 34 */ val dropIntoEditor: typings.monacoEditor.mod.editor.EditorOption.dropIntoEditor & Double = js.native
     
-    /* 34 */ val experimental: typings.monacoEditor.mod.editor.EditorOption.experimental & Double = js.native
+    /* 136 */ val editorClassName: typings.monacoEditor.mod.editor.EditorOption.editorClassName & Double = js.native
     
-    /* 35 */ val extraEditorClassName: typings.monacoEditor.mod.editor.EditorOption.extraEditorClassName & Double = js.native
+    /* 35 */ val emptySelectionClipboard: typings.monacoEditor.mod.editor.EditorOption.emptySelectionClipboard & Double = js.native
     
-    /* 36 */ val fastScrollSensitivity: typings.monacoEditor.mod.editor.EditorOption.fastScrollSensitivity & Double = js.native
+    /* 36 */ val experimentalWhitespaceRendering: typings.monacoEditor.mod.editor.EditorOption.experimentalWhitespaceRendering & Double = js.native
     
-    /* 37 */ val find: typings.monacoEditor.mod.editor.EditorOption.find & Double = js.native
+    /* 37 */ val extraEditorClassName: typings.monacoEditor.mod.editor.EditorOption.extraEditorClassName & Double = js.native
     
-    /* 38 */ val fixedOverflowWidgets: typings.monacoEditor.mod.editor.EditorOption.fixedOverflowWidgets & Double = js.native
+    /* 38 */ val fastScrollSensitivity: typings.monacoEditor.mod.editor.EditorOption.fastScrollSensitivity & Double = js.native
     
-    /* 39 */ val folding: typings.monacoEditor.mod.editor.EditorOption.folding & Double = js.native
+    /* 39 */ val find: typings.monacoEditor.mod.editor.EditorOption.find & Double = js.native
     
-    /* 41 */ val foldingHighlight: typings.monacoEditor.mod.editor.EditorOption.foldingHighlight & Double = js.native
+    /* 40 */ val fixedOverflowWidgets: typings.monacoEditor.mod.editor.EditorOption.fixedOverflowWidgets & Double = js.native
     
-    /* 42 */ val foldingImportsByDefault: typings.monacoEditor.mod.editor.EditorOption.foldingImportsByDefault & Double = js.native
+    /* 41 */ val folding: typings.monacoEditor.mod.editor.EditorOption.folding & Double = js.native
     
-    /* 43 */ val foldingMaximumRegions: typings.monacoEditor.mod.editor.EditorOption.foldingMaximumRegions & Double = js.native
+    /* 43 */ val foldingHighlight: typings.monacoEditor.mod.editor.EditorOption.foldingHighlight & Double = js.native
     
-    /* 40 */ val foldingStrategy: typings.monacoEditor.mod.editor.EditorOption.foldingStrategy & Double = js.native
+    /* 44 */ val foldingImportsByDefault: typings.monacoEditor.mod.editor.EditorOption.foldingImportsByDefault & Double = js.native
     
-    /* 45 */ val fontFamily: typings.monacoEditor.mod.editor.EditorOption.fontFamily & Double = js.native
+    /* 45 */ val foldingMaximumRegions: typings.monacoEditor.mod.editor.EditorOption.foldingMaximumRegions & Double = js.native
     
-    /* 46 */ val fontInfo: typings.monacoEditor.mod.editor.EditorOption.fontInfo & Double = js.native
+    /* 42 */ val foldingStrategy: typings.monacoEditor.mod.editor.EditorOption.foldingStrategy & Double = js.native
     
-    /* 47 */ val fontLigatures: typings.monacoEditor.mod.editor.EditorOption.fontLigatures & Double = js.native
+    /* 47 */ val fontFamily: typings.monacoEditor.mod.editor.EditorOption.fontFamily & Double = js.native
     
-    /* 48 */ val fontSize: typings.monacoEditor.mod.editor.EditorOption.fontSize & Double = js.native
+    /* 48 */ val fontInfo: typings.monacoEditor.mod.editor.EditorOption.fontInfo & Double = js.native
     
-    /* 49 */ val fontWeight: typings.monacoEditor.mod.editor.EditorOption.fontWeight & Double = js.native
+    /* 49 */ val fontLigatures: typings.monacoEditor.mod.editor.EditorOption.fontLigatures & Double = js.native
     
-    /* 50 */ val formatOnPaste: typings.monacoEditor.mod.editor.EditorOption.formatOnPaste & Double = js.native
+    /* 50 */ val fontSize: typings.monacoEditor.mod.editor.EditorOption.fontSize & Double = js.native
     
-    /* 51 */ val formatOnType: typings.monacoEditor.mod.editor.EditorOption.formatOnType & Double = js.native
+    /* 52 */ val fontVariations: typings.monacoEditor.mod.editor.EditorOption.fontVariations & Double = js.native
     
-    /* 52 */ val glyphMargin: typings.monacoEditor.mod.editor.EditorOption.glyphMargin & Double = js.native
+    /* 51 */ val fontWeight: typings.monacoEditor.mod.editor.EditorOption.fontWeight & Double = js.native
     
-    /* 53 */ val gotoLocation: typings.monacoEditor.mod.editor.EditorOption.gotoLocation & Double = js.native
+    /* 53 */ val formatOnPaste: typings.monacoEditor.mod.editor.EditorOption.formatOnPaste & Double = js.native
     
-    /* 13 */ val guides: typings.monacoEditor.mod.editor.EditorOption.guides & Double = js.native
+    /* 54 */ val formatOnType: typings.monacoEditor.mod.editor.EditorOption.formatOnType & Double = js.native
     
-    /* 54 */ val hideCursorInOverviewRuler: typings.monacoEditor.mod.editor.EditorOption.hideCursorInOverviewRuler & Double = js.native
+    /* 55 */ val glyphMargin: typings.monacoEditor.mod.editor.EditorOption.glyphMargin & Double = js.native
     
-    /* 55 */ val hover: typings.monacoEditor.mod.editor.EditorOption.hover & Double = js.native
+    /* 56 */ val gotoLocation: typings.monacoEditor.mod.editor.EditorOption.gotoLocation & Double = js.native
     
-    /* 56 */ val inDiffEditor: typings.monacoEditor.mod.editor.EditorOption.inDiffEditor & Double = js.native
+    /* 14 */ val guides: typings.monacoEditor.mod.editor.EditorOption.guides & Double = js.native
     
-    /* 129 */ val inlayHints: typings.monacoEditor.mod.editor.EditorOption.inlayHints & Double = js.native
+    /* 57 */ val hideCursorInOverviewRuler: typings.monacoEditor.mod.editor.EditorOption.hideCursorInOverviewRuler & Double = js.native
     
-    /* 57 */ val inlineSuggest: typings.monacoEditor.mod.editor.EditorOption.inlineSuggest & Double = js.native
+    /* 58 */ val hover: typings.monacoEditor.mod.editor.EditorOption.hover & Double = js.native
     
-    /* 133 */ val layoutInfo: typings.monacoEditor.mod.editor.EditorOption.layoutInfo & Double = js.native
+    /* 59 */ val inDiffEditor: typings.monacoEditor.mod.editor.EditorOption.inDiffEditor & Double = js.native
     
-    /* 58 */ val letterSpacing: typings.monacoEditor.mod.editor.EditorOption.letterSpacing & Double = js.native
+    /* 135 */ val inlayHints: typings.monacoEditor.mod.editor.EditorOption.inlayHints & Double = js.native
     
-    /* 59 */ val lightbulb: typings.monacoEditor.mod.editor.EditorOption.lightbulb & Double = js.native
+    /* 60 */ val inlineSuggest: typings.monacoEditor.mod.editor.EditorOption.inlineSuggest & Double = js.native
     
-    /* 60 */ val lineDecorationsWidth: typings.monacoEditor.mod.editor.EditorOption.lineDecorationsWidth & Double = js.native
+    /* 139 */ val layoutInfo: typings.monacoEditor.mod.editor.EditorOption.layoutInfo & Double = js.native
     
-    /* 61 */ val lineHeight: typings.monacoEditor.mod.editor.EditorOption.lineHeight & Double = js.native
+    /* 61 */ val letterSpacing: typings.monacoEditor.mod.editor.EditorOption.letterSpacing & Double = js.native
     
-    /* 62 */ val lineNumbers: typings.monacoEditor.mod.editor.EditorOption.lineNumbers & Double = js.native
+    /* 62 */ val lightbulb: typings.monacoEditor.mod.editor.EditorOption.lightbulb & Double = js.native
     
-    /* 63 */ val lineNumbersMinChars: typings.monacoEditor.mod.editor.EditorOption.lineNumbersMinChars & Double = js.native
+    /* 63 */ val lineDecorationsWidth: typings.monacoEditor.mod.editor.EditorOption.lineDecorationsWidth & Double = js.native
     
-    /* 64 */ val linkedEditing: typings.monacoEditor.mod.editor.EditorOption.linkedEditing & Double = js.native
+    /* 64 */ val lineHeight: typings.monacoEditor.mod.editor.EditorOption.lineHeight & Double = js.native
     
-    /* 65 */ val links: typings.monacoEditor.mod.editor.EditorOption.links & Double = js.native
+    /* 65 */ val lineNumbers: typings.monacoEditor.mod.editor.EditorOption.lineNumbers & Double = js.native
     
-    /* 66 */ val matchBrackets: typings.monacoEditor.mod.editor.EditorOption.matchBrackets & Double = js.native
+    /* 66 */ val lineNumbersMinChars: typings.monacoEditor.mod.editor.EditorOption.lineNumbersMinChars & Double = js.native
     
-    /* 67 */ val minimap: typings.monacoEditor.mod.editor.EditorOption.minimap & Double = js.native
+    /* 67 */ val linkedEditing: typings.monacoEditor.mod.editor.EditorOption.linkedEditing & Double = js.native
     
-    /* 68 */ val mouseStyle: typings.monacoEditor.mod.editor.EditorOption.mouseStyle & Double = js.native
+    /* 68 */ val links: typings.monacoEditor.mod.editor.EditorOption.links & Double = js.native
     
-    /* 69 */ val mouseWheelScrollSensitivity: typings.monacoEditor.mod.editor.EditorOption.mouseWheelScrollSensitivity & Double = js.native
+    /* 69 */ val matchBrackets: typings.monacoEditor.mod.editor.EditorOption.matchBrackets & Double = js.native
     
-    /* 70 */ val mouseWheelZoom: typings.monacoEditor.mod.editor.EditorOption.mouseWheelZoom & Double = js.native
+    /* 70 */ val minimap: typings.monacoEditor.mod.editor.EditorOption.minimap & Double = js.native
     
-    /* 71 */ val multiCursorMergeOverlapping: typings.monacoEditor.mod.editor.EditorOption.multiCursorMergeOverlapping & Double = js.native
+    /* 71 */ val mouseStyle: typings.monacoEditor.mod.editor.EditorOption.mouseStyle & Double = js.native
     
-    /* 72 */ val multiCursorModifier: typings.monacoEditor.mod.editor.EditorOption.multiCursorModifier & Double = js.native
+    /* 72 */ val mouseWheelScrollSensitivity: typings.monacoEditor.mod.editor.EditorOption.mouseWheelScrollSensitivity & Double = js.native
     
-    /* 73 */ val multiCursorPaste: typings.monacoEditor.mod.editor.EditorOption.multiCursorPaste & Double = js.native
+    /* 73 */ val mouseWheelZoom: typings.monacoEditor.mod.editor.EditorOption.mouseWheelZoom & Double = js.native
     
-    /* 74 */ val occurrencesHighlight: typings.monacoEditor.mod.editor.EditorOption.occurrencesHighlight & Double = js.native
+    /* 77 */ val multiCursorLimit: typings.monacoEditor.mod.editor.EditorOption.multiCursorLimit & Double = js.native
     
-    /* 75 */ val overviewRulerBorder: typings.monacoEditor.mod.editor.EditorOption.overviewRulerBorder & Double = js.native
+    /* 74 */ val multiCursorMergeOverlapping: typings.monacoEditor.mod.editor.EditorOption.multiCursorMergeOverlapping & Double = js.native
     
-    /* 76 */ val overviewRulerLanes: typings.monacoEditor.mod.editor.EditorOption.overviewRulerLanes & Double = js.native
+    /* 75 */ val multiCursorModifier: typings.monacoEditor.mod.editor.EditorOption.multiCursorModifier & Double = js.native
     
-    /* 77 */ val padding: typings.monacoEditor.mod.editor.EditorOption.padding & Double = js.native
+    /* 76 */ val multiCursorPaste: typings.monacoEditor.mod.editor.EditorOption.multiCursorPaste & Double = js.native
     
-    /* 78 */ val parameterHints: typings.monacoEditor.mod.editor.EditorOption.parameterHints & Double = js.native
+    /* 78 */ val occurrencesHighlight: typings.monacoEditor.mod.editor.EditorOption.occurrencesHighlight & Double = js.native
     
-    /* 79 */ val peekWidgetDefaultFocus: typings.monacoEditor.mod.editor.EditorOption.peekWidgetDefaultFocus & Double = js.native
+    /* 79 */ val overviewRulerBorder: typings.monacoEditor.mod.editor.EditorOption.overviewRulerBorder & Double = js.native
     
-    /* 131 */ val pixelRatio: typings.monacoEditor.mod.editor.EditorOption.pixelRatio & Double = js.native
+    /* 80 */ val overviewRulerLanes: typings.monacoEditor.mod.editor.EditorOption.overviewRulerLanes & Double = js.native
     
-    /* 81 */ val quickSuggestions: typings.monacoEditor.mod.editor.EditorOption.quickSuggestions & Double = js.native
+    /* 81 */ val padding: typings.monacoEditor.mod.editor.EditorOption.padding & Double = js.native
     
-    /* 82 */ val quickSuggestionsDelay: typings.monacoEditor.mod.editor.EditorOption.quickSuggestionsDelay & Double = js.native
+    /* 82 */ val parameterHints: typings.monacoEditor.mod.editor.EditorOption.parameterHints & Double = js.native
     
-    /* 83 */ val readOnly: typings.monacoEditor.mod.editor.EditorOption.readOnly & Double = js.native
+    /* 83 */ val peekWidgetDefaultFocus: typings.monacoEditor.mod.editor.EditorOption.peekWidgetDefaultFocus & Double = js.native
     
-    /* 84 */ val renameOnType: typings.monacoEditor.mod.editor.EditorOption.renameOnType & Double = js.native
+    /* 137 */ val pixelRatio: typings.monacoEditor.mod.editor.EditorOption.pixelRatio & Double = js.native
     
-    /* 85 */ val renderControlCharacters: typings.monacoEditor.mod.editor.EditorOption.renderControlCharacters & Double = js.native
+    /* 85 */ val quickSuggestions: typings.monacoEditor.mod.editor.EditorOption.quickSuggestions & Double = js.native
     
-    /* 86 */ val renderFinalNewline: typings.monacoEditor.mod.editor.EditorOption.renderFinalNewline & Double = js.native
+    /* 86 */ val quickSuggestionsDelay: typings.monacoEditor.mod.editor.EditorOption.quickSuggestionsDelay & Double = js.native
     
-    /* 87 */ val renderLineHighlight: typings.monacoEditor.mod.editor.EditorOption.renderLineHighlight & Double = js.native
+    /* 87 */ val readOnly: typings.monacoEditor.mod.editor.EditorOption.readOnly & Double = js.native
     
-    /* 88 */ val renderLineHighlightOnlyWhenFocus: typings.monacoEditor.mod.editor.EditorOption.renderLineHighlightOnlyWhenFocus & Double = js.native
+    /* 88 */ val renameOnType: typings.monacoEditor.mod.editor.EditorOption.renameOnType & Double = js.native
     
-    /* 89 */ val renderValidationDecorations: typings.monacoEditor.mod.editor.EditorOption.renderValidationDecorations & Double = js.native
+    /* 89 */ val renderControlCharacters: typings.monacoEditor.mod.editor.EditorOption.renderControlCharacters & Double = js.native
     
-    /* 90 */ val renderWhitespace: typings.monacoEditor.mod.editor.EditorOption.renderWhitespace & Double = js.native
+    /* 90 */ val renderFinalNewline: typings.monacoEditor.mod.editor.EditorOption.renderFinalNewline & Double = js.native
     
-    /* 91 */ val revealHorizontalRightPadding: typings.monacoEditor.mod.editor.EditorOption.revealHorizontalRightPadding & Double = js.native
+    /* 91 */ val renderLineHighlight: typings.monacoEditor.mod.editor.EditorOption.renderLineHighlight & Double = js.native
     
-    /* 92 */ val roundedSelection: typings.monacoEditor.mod.editor.EditorOption.roundedSelection & Double = js.native
+    /* 92 */ val renderLineHighlightOnlyWhenFocus: typings.monacoEditor.mod.editor.EditorOption.renderLineHighlightOnlyWhenFocus & Double = js.native
     
-    /* 93 */ val rulers: typings.monacoEditor.mod.editor.EditorOption.rulers & Double = js.native
+    /* 93 */ val renderValidationDecorations: typings.monacoEditor.mod.editor.EditorOption.renderValidationDecorations & Double = js.native
     
-    /* 95 */ val scrollBeyondLastColumn: typings.monacoEditor.mod.editor.EditorOption.scrollBeyondLastColumn & Double = js.native
+    /* 94 */ val renderWhitespace: typings.monacoEditor.mod.editor.EditorOption.renderWhitespace & Double = js.native
     
-    /* 96 */ val scrollBeyondLastLine: typings.monacoEditor.mod.editor.EditorOption.scrollBeyondLastLine & Double = js.native
+    /* 95 */ val revealHorizontalRightPadding: typings.monacoEditor.mod.editor.EditorOption.revealHorizontalRightPadding & Double = js.native
     
-    /* 97 */ val scrollPredominantAxis: typings.monacoEditor.mod.editor.EditorOption.scrollPredominantAxis & Double = js.native
+    /* 96 */ val roundedSelection: typings.monacoEditor.mod.editor.EditorOption.roundedSelection & Double = js.native
     
-    /* 94 */ val scrollbar: typings.monacoEditor.mod.editor.EditorOption.scrollbar & Double = js.native
+    /* 97 */ val rulers: typings.monacoEditor.mod.editor.EditorOption.rulers & Double = js.native
     
-    /* 100 */ val selectOnLineNumbers: typings.monacoEditor.mod.editor.EditorOption.selectOnLineNumbers & Double = js.native
+    /* 6 */ val screenReaderAnnounceInlineSuggestion: typings.monacoEditor.mod.editor.EditorOption.screenReaderAnnounceInlineSuggestion & Double = js.native
     
-    /* 98 */ val selectionClipboard: typings.monacoEditor.mod.editor.EditorOption.selectionClipboard & Double = js.native
+    /* 99 */ val scrollBeyondLastColumn: typings.monacoEditor.mod.editor.EditorOption.scrollBeyondLastColumn & Double = js.native
     
-    /* 99 */ val selectionHighlight: typings.monacoEditor.mod.editor.EditorOption.selectionHighlight & Double = js.native
+    /* 100 */ val scrollBeyondLastLine: typings.monacoEditor.mod.editor.EditorOption.scrollBeyondLastLine & Double = js.native
     
-    /* 128 */ val showDeprecated: typings.monacoEditor.mod.editor.EditorOption.showDeprecated & Double = js.native
+    /* 101 */ val scrollPredominantAxis: typings.monacoEditor.mod.editor.EditorOption.scrollPredominantAxis & Double = js.native
     
-    /* 101 */ val showFoldingControls: typings.monacoEditor.mod.editor.EditorOption.showFoldingControls & Double = js.native
+    /* 98 */ val scrollbar: typings.monacoEditor.mod.editor.EditorOption.scrollbar & Double = js.native
     
-    /* 102 */ val showUnused: typings.monacoEditor.mod.editor.EditorOption.showUnused & Double = js.native
+    /* 104 */ val selectOnLineNumbers: typings.monacoEditor.mod.editor.EditorOption.selectOnLineNumbers & Double = js.native
     
-    /* 104 */ val smartSelect: typings.monacoEditor.mod.editor.EditorOption.smartSelect & Double = js.native
+    /* 102 */ val selectionClipboard: typings.monacoEditor.mod.editor.EditorOption.selectionClipboard & Double = js.native
     
-    /* 105 */ val smoothScrolling: typings.monacoEditor.mod.editor.EditorOption.smoothScrolling & Double = js.native
+    /* 103 */ val selectionHighlight: typings.monacoEditor.mod.editor.EditorOption.selectionHighlight & Double = js.native
     
-    /* 103 */ val snippetSuggestions: typings.monacoEditor.mod.editor.EditorOption.snippetSuggestions & Double = js.native
+    /* 134 */ val showDeprecated: typings.monacoEditor.mod.editor.EditorOption.showDeprecated & Double = js.native
     
-    /* 106 */ val stickyTabStops: typings.monacoEditor.mod.editor.EditorOption.stickyTabStops & Double = js.native
+    /* 105 */ val showFoldingControls: typings.monacoEditor.mod.editor.EditorOption.showFoldingControls & Double = js.native
     
-    /* 107 */ val stopRenderingLineAfter: typings.monacoEditor.mod.editor.EditorOption.stopRenderingLineAfter & Double = js.native
+    /* 106 */ val showUnused: typings.monacoEditor.mod.editor.EditorOption.showUnused & Double = js.native
     
-    /* 108 */ val suggest: typings.monacoEditor.mod.editor.EditorOption.suggest & Double = js.native
+    /* 108 */ val smartSelect: typings.monacoEditor.mod.editor.EditorOption.smartSelect & Double = js.native
     
-    /* 109 */ val suggestFontSize: typings.monacoEditor.mod.editor.EditorOption.suggestFontSize & Double = js.native
+    /* 109 */ val smoothScrolling: typings.monacoEditor.mod.editor.EditorOption.smoothScrolling & Double = js.native
     
-    /* 110 */ val suggestLineHeight: typings.monacoEditor.mod.editor.EditorOption.suggestLineHeight & Double = js.native
+    /* 107 */ val snippetSuggestions: typings.monacoEditor.mod.editor.EditorOption.snippetSuggestions & Double = js.native
     
-    /* 111 */ val suggestOnTriggerCharacters: typings.monacoEditor.mod.editor.EditorOption.suggestOnTriggerCharacters & Double = js.native
+    /* 110 */ val stickyScroll: typings.monacoEditor.mod.editor.EditorOption.stickyScroll & Double = js.native
     
-    /* 112 */ val suggestSelection: typings.monacoEditor.mod.editor.EditorOption.suggestSelection & Double = js.native
+    /* 111 */ val stickyTabStops: typings.monacoEditor.mod.editor.EditorOption.stickyTabStops & Double = js.native
     
-    /* 113 */ val tabCompletion: typings.monacoEditor.mod.editor.EditorOption.tabCompletion & Double = js.native
+    /* 112 */ val stopRenderingLineAfter: typings.monacoEditor.mod.editor.EditorOption.stopRenderingLineAfter & Double = js.native
     
-    /* 132 */ val tabFocusMode: typings.monacoEditor.mod.editor.EditorOption.tabFocusMode & Double = js.native
+    /* 113 */ val suggest: typings.monacoEditor.mod.editor.EditorOption.suggest & Double = js.native
     
-    /* 114 */ val tabIndex: typings.monacoEditor.mod.editor.EditorOption.tabIndex & Double = js.native
+    /* 114 */ val suggestFontSize: typings.monacoEditor.mod.editor.EditorOption.suggestFontSize & Double = js.native
     
-    /* 44 */ val unfoldOnClickAfterEndOfLine: typings.monacoEditor.mod.editor.EditorOption.unfoldOnClickAfterEndOfLine & Double = js.native
+    /* 115 */ val suggestLineHeight: typings.monacoEditor.mod.editor.EditorOption.suggestLineHeight & Double = js.native
     
-    /* 115 */ val unicodeHighlighting: typings.monacoEditor.mod.editor.EditorOption.unicodeHighlighting & Double = js.native
+    /* 116 */ val suggestOnTriggerCharacters: typings.monacoEditor.mod.editor.EditorOption.suggestOnTriggerCharacters & Double = js.native
     
-    /* 116 */ val unusualLineTerminators: typings.monacoEditor.mod.editor.EditorOption.unusualLineTerminators & Double = js.native
+    /* 117 */ val suggestSelection: typings.monacoEditor.mod.editor.EditorOption.suggestSelection & Double = js.native
     
-    /* 117 */ val useShadowDOM: typings.monacoEditor.mod.editor.EditorOption.useShadowDOM & Double = js.native
+    /* 118 */ val tabCompletion: typings.monacoEditor.mod.editor.EditorOption.tabCompletion & Double = js.native
     
-    /* 118 */ val useTabStops: typings.monacoEditor.mod.editor.EditorOption.useTabStops & Double = js.native
+    /* 138 */ val tabFocusMode: typings.monacoEditor.mod.editor.EditorOption.tabFocusMode & Double = js.native
     
-    /* 119 */ val wordSeparators: typings.monacoEditor.mod.editor.EditorOption.wordSeparators & Double = js.native
+    /* 119 */ val tabIndex: typings.monacoEditor.mod.editor.EditorOption.tabIndex & Double = js.native
     
-    /* 120 */ val wordWrap: typings.monacoEditor.mod.editor.EditorOption.wordWrap & Double = js.native
+    /* 46 */ val unfoldOnClickAfterEndOfLine: typings.monacoEditor.mod.editor.EditorOption.unfoldOnClickAfterEndOfLine & Double = js.native
     
-    /* 121 */ val wordWrapBreakAfterCharacters: typings.monacoEditor.mod.editor.EditorOption.wordWrapBreakAfterCharacters & Double = js.native
+    /* 120 */ val unicodeHighlighting: typings.monacoEditor.mod.editor.EditorOption.unicodeHighlighting & Double = js.native
     
-    /* 122 */ val wordWrapBreakBeforeCharacters: typings.monacoEditor.mod.editor.EditorOption.wordWrapBreakBeforeCharacters & Double = js.native
+    /* 121 */ val unusualLineTerminators: typings.monacoEditor.mod.editor.EditorOption.unusualLineTerminators & Double = js.native
     
-    /* 123 */ val wordWrapColumn: typings.monacoEditor.mod.editor.EditorOption.wordWrapColumn & Double = js.native
+    /* 122 */ val useShadowDOM: typings.monacoEditor.mod.editor.EditorOption.useShadowDOM & Double = js.native
     
-    /* 124 */ val wordWrapOverride1: typings.monacoEditor.mod.editor.EditorOption.wordWrapOverride1 & Double = js.native
+    /* 123 */ val useTabStops: typings.monacoEditor.mod.editor.EditorOption.useTabStops & Double = js.native
     
-    /* 125 */ val wordWrapOverride2: typings.monacoEditor.mod.editor.EditorOption.wordWrapOverride2 & Double = js.native
+    /* 124 */ val wordBreak: typings.monacoEditor.mod.editor.EditorOption.wordBreak & Double = js.native
     
-    /* 126 */ val wrappingIndent: typings.monacoEditor.mod.editor.EditorOption.wrappingIndent & Double = js.native
+    /* 125 */ val wordSeparators: typings.monacoEditor.mod.editor.EditorOption.wordSeparators & Double = js.native
     
-    /* 134 */ val wrappingInfo: typings.monacoEditor.mod.editor.EditorOption.wrappingInfo & Double = js.native
+    /* 126 */ val wordWrap: typings.monacoEditor.mod.editor.EditorOption.wordWrap & Double = js.native
     
-    /* 127 */ val wrappingStrategy: typings.monacoEditor.mod.editor.EditorOption.wrappingStrategy & Double = js.native
+    /* 127 */ val wordWrapBreakAfterCharacters: typings.monacoEditor.mod.editor.EditorOption.wordWrapBreakAfterCharacters & Double = js.native
+    
+    /* 128 */ val wordWrapBreakBeforeCharacters: typings.monacoEditor.mod.editor.EditorOption.wordWrapBreakBeforeCharacters & Double = js.native
+    
+    /* 129 */ val wordWrapColumn: typings.monacoEditor.mod.editor.EditorOption.wordWrapColumn & Double = js.native
+    
+    /* 130 */ val wordWrapOverride1: typings.monacoEditor.mod.editor.EditorOption.wordWrapOverride1 & Double = js.native
+    
+    /* 131 */ val wordWrapOverride2: typings.monacoEditor.mod.editor.EditorOption.wordWrapOverride2 & Double = js.native
+    
+    /* 132 */ val wrappingIndent: typings.monacoEditor.mod.editor.EditorOption.wrappingIndent & Double = js.native
+    
+    /* 140 */ val wrappingInfo: typings.monacoEditor.mod.editor.EditorOption.wrappingInfo & Double = js.native
+    
+    /* 133 */ val wrappingStrategy: typings.monacoEditor.mod.editor.EditorOption.wrappingStrategy & Double = js.native
   }
   
   object EditorOptions {
@@ -735,6 +765,12 @@ object editor {
     @JSImport("react-monaco-editor", "monaco.editor.EditorOptions.colorDecorators")
     @js.native
     def colorDecorators: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.colorDecorators, Boolean] = js.native
+    
+    @JSImport("react-monaco-editor", "monaco.editor.EditorOptions.colorDecoratorsLimit")
+    @js.native
+    def colorDecoratorsLimit: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.colorDecoratorsLimit, Double] = js.native
+    inline def colorDecoratorsLimit_=(x: IEditorOption[colorDecoratorsLimit, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("colorDecoratorsLimit")(x.asInstanceOf[js.Any])
+    
     inline def colorDecorators_=(x: IEditorOption[colorDecorators, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("colorDecorators")(x.asInstanceOf[js.Any])
     
     @JSImport("react-monaco-editor", "monaco.editor.EditorOptions.columnSelection")
@@ -767,8 +803,11 @@ object editor {
     
     @JSImport("react-monaco-editor", "monaco.editor.EditorOptions.cursorSmoothCaretAnimation")
     @js.native
-    def cursorSmoothCaretAnimation: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.cursorSmoothCaretAnimation, Boolean] = js.native
-    inline def cursorSmoothCaretAnimation_=(x: IEditorOption[cursorSmoothCaretAnimation, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cursorSmoothCaretAnimation")(x.asInstanceOf[js.Any])
+    def cursorSmoothCaretAnimation: IEditorOption[
+        typings.monacoEditor.mod.editor.EditorOption.cursorSmoothCaretAnimation, 
+        on | off | explicit
+      ] = js.native
+    inline def cursorSmoothCaretAnimation_=(x: IEditorOption[cursorSmoothCaretAnimation, on | off | explicit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cursorSmoothCaretAnimation")(x.asInstanceOf[js.Any])
     
     @JSImport("react-monaco-editor", "monaco.editor.EditorOptions.cursorStyle")
     @js.native
@@ -793,6 +832,11 @@ object editor {
     @js.native
     def cursorWidth: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.cursorWidth, Double] = js.native
     inline def cursorWidth_=(x: IEditorOption[cursorWidth, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cursorWidth")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-monaco-editor", "monaco.editor.EditorOptions.defaultColorDecorators")
+    @js.native
+    def defaultColorDecorators: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.defaultColorDecorators, Boolean] = js.native
+    inline def defaultColorDecorators_=(x: IEditorOption[defaultColorDecorators, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultColorDecorators")(x.asInstanceOf[js.Any])
     
     @JSImport("react-monaco-editor", "monaco.editor.EditorOptions.definitionLinkOpensInPeek")
     @js.native
@@ -840,13 +884,13 @@ object editor {
     def emptySelectionClipboard: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.emptySelectionClipboard, Boolean] = js.native
     inline def emptySelectionClipboard_=(x: IEditorOption[emptySelectionClipboard, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("emptySelectionClipboard")(x.asInstanceOf[js.Any])
     
-    @JSImport("react-monaco-editor", "monaco.editor.EditorOptions.experimental")
+    @JSImport("react-monaco-editor", "monaco.editor.EditorOptions.experimentalWhitespaceRendering")
     @js.native
-    def experimental: IEditorOption[
-        typings.monacoEditor.mod.editor.EditorOption.experimental, 
-        EditorExperimentalOptions
+    def experimentalWhitespaceRendering: IEditorOption[
+        typings.monacoEditor.mod.editor.EditorOption.experimentalWhitespaceRendering, 
+        off | svg | font
       ] = js.native
-    inline def experimental_=(x: IEditorOption[experimental, EditorExperimentalOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("experimental")(x.asInstanceOf[js.Any])
+    inline def experimentalWhitespaceRendering_=(x: IEditorOption[experimentalWhitespaceRendering, off | svg | font]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("experimentalWhitespaceRendering")(x.asInstanceOf[js.Any])
     
     @JSImport("react-monaco-editor", "monaco.editor.EditorOptions.extraEditorClassName")
     @js.native
@@ -916,6 +960,11 @@ object editor {
     @js.native
     def fontSize: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.fontSize, Double] = js.native
     inline def fontSize_=(x: IEditorOption[fontSize, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fontSize")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-monaco-editor", "monaco.editor.EditorOptions.fontVariations")
+    @js.native
+    def fontVariations: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.fontVariations, String] = js.native
+    inline def fontVariations_=(x: IEditorOption[fontVariations, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fontVariations")(x.asInstanceOf[js.Any])
     
     @JSImport("react-monaco-editor", "monaco.editor.EditorOptions.fontWeight")
     @js.native
@@ -990,8 +1039,8 @@ object editor {
     
     @JSImport("react-monaco-editor", "monaco.editor.EditorOptions.lineDecorationsWidth")
     @js.native
-    def lineDecorationsWidth: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.lineDecorationsWidth, String | Double] = js.native
-    inline def lineDecorationsWidth_=(x: IEditorOption[lineDecorationsWidth, String | Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lineDecorationsWidth")(x.asInstanceOf[js.Any])
+    def lineDecorationsWidth: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.lineDecorationsWidth, Double] = js.native
+    inline def lineDecorationsWidth_=(x: IEditorOption[lineDecorationsWidth, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lineDecorationsWidth")(x.asInstanceOf[js.Any])
     
     @JSImport("react-monaco-editor", "monaco.editor.EditorOptions.lineHeight")
     @js.native
@@ -1046,6 +1095,11 @@ object editor {
     @js.native
     def mouseWheelZoom: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.mouseWheelZoom, Boolean] = js.native
     inline def mouseWheelZoom_=(x: IEditorOption[mouseWheelZoom, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mouseWheelZoom")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-monaco-editor", "monaco.editor.EditorOptions.multiCursorLimit")
+    @js.native
+    def multiCursorLimit: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.multiCursorLimit, Double] = js.native
+    inline def multiCursorLimit_=(x: IEditorOption[multiCursorLimit, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("multiCursorLimit")(x.asInstanceOf[js.Any])
     
     @JSImport("react-monaco-editor", "monaco.editor.EditorOptions.multiCursorMergeOverlapping")
     @js.native
@@ -1142,8 +1196,8 @@ object editor {
     
     @JSImport("react-monaco-editor", "monaco.editor.EditorOptions.renderFinalNewline")
     @js.native
-    def renderFinalNewline: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.renderFinalNewline, Boolean] = js.native
-    inline def renderFinalNewline_=(x: IEditorOption[renderFinalNewline, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderFinalNewline")(x.asInstanceOf[js.Any])
+    def renderFinalNewline: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.renderFinalNewline, on | off | dimmed] = js.native
+    inline def renderFinalNewline_=(x: IEditorOption[renderFinalNewline, on | off | dimmed]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderFinalNewline")(x.asInstanceOf[js.Any])
     
     @JSImport("react-monaco-editor", "monaco.editor.EditorOptions.renderLineHighlight")
     @js.native
@@ -1192,6 +1246,14 @@ object editor {
     @js.native
     def rulers: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.rulers, js.Object] = js.native
     inline def rulers_=(x: IEditorOption[rulers, js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rulers")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-monaco-editor", "monaco.editor.EditorOptions.screenReaderAnnounceInlineSuggestion")
+    @js.native
+    def screenReaderAnnounceInlineSuggestion: IEditorOption[
+        typings.monacoEditor.mod.editor.EditorOption.screenReaderAnnounceInlineSuggestion, 
+        Boolean
+      ] = js.native
+    inline def screenReaderAnnounceInlineSuggestion_=(x: IEditorOption[screenReaderAnnounceInlineSuggestion, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("screenReaderAnnounceInlineSuggestion")(x.asInstanceOf[js.Any])
     
     @JSImport("react-monaco-editor", "monaco.editor.EditorOptions.scrollBeyondLastColumn")
     @js.native
@@ -1269,6 +1331,14 @@ object editor {
         none | top | bottom | `inline`
       ] = js.native
     inline def snippetSuggestions_=(x: IEditorOption[snippetSuggestions, none | top | bottom | `inline`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("snippetSuggestions")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-monaco-editor", "monaco.editor.EditorOptions.stickyScroll")
+    @js.native
+    def stickyScroll: IEditorOption[
+        typings.monacoEditor.mod.editor.EditorOption.stickyScroll, 
+        ReadonlyRequiredIEditorSt
+      ] = js.native
+    inline def stickyScroll_=(x: IEditorOption[stickyScroll, ReadonlyRequiredIEditorSt]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stickyScroll")(x.asInstanceOf[js.Any])
     
     @JSImport("react-monaco-editor", "monaco.editor.EditorOptions.stickyTabStops")
     @js.native
@@ -1355,6 +1425,11 @@ object editor {
     def useTabStops: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.useTabStops, Boolean] = js.native
     inline def useTabStops_=(x: IEditorOption[useTabStops, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useTabStops")(x.asInstanceOf[js.Any])
     
+    @JSImport("react-monaco-editor", "monaco.editor.EditorOptions.wordBreak")
+    @js.native
+    def wordBreak: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.wordBreak, normal | keepAll] = js.native
+    inline def wordBreak_=(x: IEditorOption[wordBreak, normal | keepAll]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wordBreak")(x.asInstanceOf[js.Any])
+    
     @JSImport("react-monaco-editor", "monaco.editor.EditorOptions.wordSeparators")
     @js.native
     def wordSeparators: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.wordSeparators, String] = js.native
@@ -1427,6 +1502,10 @@ object editor {
     inline def IDiffEditor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IDiffEditor")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("react-monaco-editor", "monaco.editor.EditorZoom")
+  @js.native
+  val EditorZoom: IEditorZoom = js.native
+  
   @JSImport("react-monaco-editor", "monaco.editor.EndOfLinePreference")
   @js.native
   object EndOfLinePreference extends StObject {
@@ -1463,6 +1542,18 @@ object editor {
   open class FontInfo ()
     extends typings.monacoEditor.mod.editor.FontInfo
   
+  @JSImport("react-monaco-editor", "monaco.editor.GlyphMarginLane")
+  @js.native
+  object GlyphMarginLane extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.monacoEditor.mod.editor.GlyphMarginLane & Double] = js.native
+    
+    /* 1 */ val Left: typings.monacoEditor.mod.editor.GlyphMarginLane.Left & Double = js.native
+    
+    /* 2 */ val Right: typings.monacoEditor.mod.editor.GlyphMarginLane.Right & Double = js.native
+  }
+  
   @JSImport("react-monaco-editor", "monaco.editor.InjectedTextCursorStops")
   @js.native
   object InjectedTextCursorStops extends StObject {
@@ -1477,6 +1568,49 @@ object editor {
     /* 3 */ val None: typings.monacoEditor.mod.editor.InjectedTextCursorStops.None & Double = js.native
     
     /* 1 */ val Right: typings.monacoEditor.mod.editor.InjectedTextCursorStops.Right & Double = js.native
+  }
+  
+  @JSImport("react-monaco-editor", "monaco.editor.LineRange")
+  @js.native
+  open class LineRange protected ()
+    extends typings.monacoEditor.mod.editor.LineRange {
+    def this(startLineNumber: Double, endLineNumberExclusive: Double) = this()
+  }
+  /* static members */
+  object LineRange {
+    
+    @JSImport("react-monaco-editor", "monaco.editor.LineRange")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * @param lineRanges1 Must be sorted.
+      * @param lineRanges2 Must be sorted.
+      */
+    inline def join(
+      lineRanges1: js.Array[typings.monacoEditor.mod.editor.LineRange],
+      lineRanges2: js.Array[typings.monacoEditor.mod.editor.LineRange]
+    ): js.Array[typings.monacoEditor.mod.editor.LineRange] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(lineRanges1.asInstanceOf[js.Any], lineRanges2.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.monacoEditor.mod.editor.LineRange]]
+    
+    /**
+      * @param lineRanges An array of sorted line ranges.
+      */
+    inline def joinMany(lineRanges: js.Array[js.Array[typings.monacoEditor.mod.editor.LineRange]]): js.Array[typings.monacoEditor.mod.editor.LineRange] = ^.asInstanceOf[js.Dynamic].applyDynamic("joinMany")(lineRanges.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.monacoEditor.mod.editor.LineRange]]
+  }
+  
+  @JSImport("react-monaco-editor", "monaco.editor.LineRangeMapping")
+  @js.native
+  open class LineRangeMapping protected ()
+    extends typings.monacoEditor.mod.editor.LineRangeMapping {
+    def this(
+      originalRange: typings.monacoEditor.mod.editor.LineRange,
+      modifiedRange: typings.monacoEditor.mod.editor.LineRange
+    ) = this()
+    def this(
+      originalRange: typings.monacoEditor.mod.editor.LineRange,
+      modifiedRange: typings.monacoEditor.mod.editor.LineRange,
+      innerChanges: js.Array[typings.monacoEditor.mod.editor.RangeMapping]
+    ) = this()
   }
   
   @JSImport("react-monaco-editor", "monaco.editor.MinimapPosition")
@@ -1573,6 +1707,13 @@ object editor {
     /* 1 */ val Right: typings.monacoEditor.mod.editor.PositionAffinity.Right & Double = js.native
     
     /* 4 */ val RightOfInjectedText: typings.monacoEditor.mod.editor.PositionAffinity.RightOfInjectedText & Double = js.native
+  }
+  
+  @JSImport("react-monaco-editor", "monaco.editor.RangeMapping")
+  @js.native
+  open class RangeMapping protected ()
+    extends typings.monacoEditor.mod.editor.RangeMapping {
+    def this(originalRange: typings.monacoEditor.mod.Range, modifiedRange: typings.monacoEditor.mod.Range) = this()
   }
   
   @JSImport("react-monaco-editor", "monaco.editor.RenderLineNumbersType")
@@ -1779,11 +1920,15 @@ object editor {
   
   inline def registerCommand(id: String, handler: js.Function2[/* accessor */ Any, /* repeated */ Any, Unit]): IDisposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCommand")(id.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[IDisposable]
   
+  inline def registerEditorOpener(opener: ICodeEditorOpener): IDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("registerEditorOpener")(opener.asInstanceOf[js.Any]).asInstanceOf[IDisposable]
+  
+  inline def registerLinkOpener(opener: ILinkOpener): IDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("registerLinkOpener")(opener.asInstanceOf[js.Any]).asInstanceOf[IDisposable]
+  
   inline def remeasureFonts(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remeasureFonts")().asInstanceOf[Unit]
   
   inline def removeAllMarkers(owner: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllMarkers")(owner.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def setModelLanguage(model: ITextModel, languageId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setModelLanguage")(model.asInstanceOf[js.Any], languageId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setModelLanguage(model: ITextModel, mimeTypeOrLanguageId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setModelLanguage")(model.asInstanceOf[js.Any], mimeTypeOrLanguageId.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def setModelMarkers(model: ITextModel, owner: String, markers: js.Array[IMarkerData]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setModelMarkers")(model.asInstanceOf[js.Any], owner.asInstanceOf[js.Any], markers.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

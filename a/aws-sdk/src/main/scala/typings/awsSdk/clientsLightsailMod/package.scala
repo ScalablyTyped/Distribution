@@ -1,8 +1,9 @@
 package typings.awsSdk.clientsLightsailMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.awsSdk.awsSdkStrings.AutoSnapshot
 import typings.awsSdk.awsSdkStrings.Email_
+import typings.awsSdk.awsSdkStrings.LfR
+import typings.awsSdk.awsSdkStrings.USD
 import typings.awsSdk.awsSdkStrings.mysql__
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -40,7 +41,12 @@ type AddOnList = js.Array[AddOn]
 
 type AddOnRequestList = js.Array[AddOnRequest]
 
-type AddOnType = AutoSnapshot | String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AutoSnapshot
+  - typings.awsSdk.awsSdkStrings.StopInstanceOnIdle
+  - java.lang.String
+*/
+type AddOnType = _AddOnType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.OK
@@ -52,9 +58,22 @@ type AlarmState = _AlarmState | String
 
 type AlarmsList = js.Array[Alarm]
 
+type AppCategory = LfR | String
+
+type AppCategoryList = js.Array[AppCategory]
+
 type AttachedDiskList = js.Array[AttachedDisk]
 
 type AttachedDiskMap = StringDictionary[DiskMapList]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Failed_
+  - typings.awsSdk.awsSdkStrings.Pending_
+  - typings.awsSdk.awsSdkStrings.Mounted
+  - typings.awsSdk.awsSdkStrings.NotMounted
+  - java.lang.String
+*/
+type AutoMountStatus = _AutoMountStatus | String
 
 type AutoSnapshotDate = String
 
@@ -269,6 +288,10 @@ type ContainerServiceState = _ContainerServiceState | String
 */
 type ContainerServiceStateDetailCode = _ContainerServiceStateDetailCode | String
 
+type CostEstimates = js.Array[CostEstimate]
+
+type Currency = USD | String
+
 type DiskInfoList = js.Array[DiskInfo]
 
 type DiskList = js.Array[Disk]
@@ -339,6 +362,8 @@ type EligibleToRenew = String
 
 type Environment = StringDictionary[String]
 
+type EstimatesByTime = js.Array[EstimateByTime]
+
 type ExportSnapshotRecordList = js.Array[ExportSnapshotRecord]
 
 /* Rewritten from type alias, can be one of: 
@@ -362,7 +387,7 @@ type ForwardValues = _ForwardValues | String
   - typings.awsSdk.awsSdkStrings.`Accept-Datetime`
   - typings.awsSdk.awsSdkStrings.`Accept-Encoding`
   - typings.awsSdk.awsSdkStrings.`Accept-Language`
-  - typings.awsSdk.awsSdkStrings.Authorization
+  - typings.awsSdk.awsSdkStrings.Authorization_
   - typings.awsSdk.awsSdkStrings.`CloudFront-Forwarded-Proto`
   - typings.awsSdk.awsSdkStrings.`CloudFront-Is-Desktop-Viewer`
   - typings.awsSdk.awsSdkStrings.`CloudFront-Is-Mobile-Viewer`
@@ -436,9 +461,9 @@ type InstanceHealthReason = _InstanceHealthReason | String
   - typings.awsSdk.awsSdkStrings.initial__
   - typings.awsSdk.awsSdkStrings.healthy__
   - typings.awsSdk.awsSdkStrings.unhealthy__
-  - typings.awsSdk.awsSdkStrings.unused
+  - typings.awsSdk.awsSdkStrings.unused_
   - typings.awsSdk.awsSdkStrings.draining_
-  - typings.awsSdk.awsSdkStrings.unavailable__
+  - typings.awsSdk.awsSdkStrings.unavailable___
   - java.lang.String
 */
 type InstanceHealthState = _InstanceHealthState | String
@@ -494,7 +519,7 @@ type InstanceSnapshotState = _InstanceSnapshotState | String
 type IpAddress = String
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.dualstack
+  - typings.awsSdk.awsSdkStrings.dualstack_
   - typings.awsSdk.awsSdkStrings.ipv4__
   - java.lang.String
 */
@@ -828,6 +853,8 @@ type OperationStatus = _OperationStatus | String
   - typings.awsSdk.awsSdkStrings.UpdateBucket
   - typings.awsSdk.awsSdkStrings.SetResourceAccessForBucket
   - typings.awsSdk.awsSdkStrings.UpdateInstanceMetadataOptions
+  - typings.awsSdk.awsSdkStrings.StartGUISession
+  - typings.awsSdk.awsSdkStrings.StopGUISession
   - java.lang.String
 */
 type OperationType = _OperationType | String
@@ -873,6 +900,16 @@ type PortMap = StringDictionary[ContainerServiceProtocol]
   - java.lang.String
 */
 type PortState = _PortState | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.GB
+  - typings.awsSdk.awsSdkStrings.Hrs
+  - typings.awsSdk.awsSdkStrings.`GB-Mo`
+  - typings.awsSdk.awsSdkStrings.Bundles
+  - typings.awsSdk.awsSdkStrings.Queries_
+  - java.lang.String
+*/
+type PricingUnit = _PricingUnit | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SUCCEEDED
@@ -990,20 +1027,41 @@ type ResourceNameList = js.Array[ResourceName]
   - typings.awsSdk.awsSdkStrings.CloudFormationStackRecord
   - typings.awsSdk.awsSdkStrings.Alarm_
   - typings.awsSdk.awsSdkStrings.ContactMethod
-  - typings.awsSdk.awsSdkStrings.Distribution
+  - typings.awsSdk.awsSdkStrings.Distribution_
   - typings.awsSdk.awsSdkStrings.Certificate_
   - typings.awsSdk.awsSdkStrings.Bucket
   - java.lang.String
 */
 type ResourceType = _ResourceType | String
 
+type ResourcesBudgetEstimate = js.Array[ResourceBudgetEstimate]
+
 type RevocationReason = String
+
+type SensitiveNonEmptyString = String
 
 type SensitiveString = String
 
 type SerialNumber = String
 
+type Sessions = js.Array[Session]
+
 type StaticIpList = js.Array[StaticIp]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.startExpired
+  - typings.awsSdk.awsSdkStrings.notStarted_
+  - typings.awsSdk.awsSdkStrings.started__
+  - typings.awsSdk.awsSdkStrings.starting__
+  - typings.awsSdk.awsSdkStrings.stopped__
+  - typings.awsSdk.awsSdkStrings.stopping__
+  - typings.awsSdk.awsSdkStrings.settingUpInstance
+  - typings.awsSdk.awsSdkStrings.failedInstanceCreation
+  - typings.awsSdk.awsSdkStrings.failedStartingGUISession
+  - typings.awsSdk.awsSdkStrings.failedStoppingGUISession
+  - java.lang.String
+*/
+type Status = _Status | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Active_

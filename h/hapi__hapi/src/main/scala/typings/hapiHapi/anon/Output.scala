@@ -1,7 +1,7 @@
 package typings.hapiHapi.anon
 
 import typings.hapiHapi.hapiHapiStrings.annotated
-import typings.hapiHapi.mod.PayloadOutput
+import typings.hapiHapi.libTypesRouteMod.PayloadOutput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -80,7 +80,7 @@ object distDeclarationsSrcComponentsMod {
     
     inline def MenuList[Option_10, IsMulti_10 /* <: Boolean */, Group_10 /* <: GroupBase[Option_10] */](props: MenuListProps[Option_10, IsMulti_10, Group_10]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuList")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
-    inline def MenuPortal[Option_11, IsMulti_11 /* <: Boolean */, Group_11 /* <: GroupBase[Option_11] */](param0: MenuPortalProps[Option_11, IsMulti_11, Group_11]): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuPortal")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+    inline def MenuPortal[Option_11, IsMulti_11 /* <: Boolean */, Group_11 /* <: GroupBase[Option_11] */](props: MenuPortalProps[Option_11, IsMulti_11, Group_11]): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuPortal")(props.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
     
     inline def MultiValue[Option_14, IsMulti_14 /* <: Boolean */, Group_14 /* <: GroupBase[Option_14] */](props: MultiValueProps[Option_14, IsMulti_14, Group_14]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MultiValue")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
@@ -470,7 +470,7 @@ object distDeclarationsSrcComponentsMod {
     
     def MenuList[Option_10, IsMulti_10 /* <: Boolean */, Group_10 /* <: GroupBase[Option_10] */](props: MenuListProps[Option_10, IsMulti_10, Group_10]): Element
     
-    def MenuPortal[Option_11, IsMulti_11 /* <: Boolean */, Group_11 /* <: GroupBase[Option_11] */](param0: MenuPortalProps[Option_11, IsMulti_11, Group_11]): Element | Null
+    def MenuPortal[Option_11, IsMulti_11 /* <: Boolean */, Group_11 /* <: GroupBase[Option_11] */](props: MenuPortalProps[Option_11, IsMulti_11, Group_11]): Element | Null
     
     def MultiValue[Option_14, IsMulti_14 /* <: Boolean */, Group_14 /* <: GroupBase[Option_14] */](props: MultiValueProps[Option_14, IsMulti_14, Group_14]): Element
     

@@ -3,28 +3,61 @@ package typings.atomically
 import typings.atomically.anon.Gid
 import typings.atomically.atomicallyBooleans.`false`
 import typings.node.NodeJS.ErrnoException
-import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distTypesMod {
   
-  type Callback = js.Function1[/* error */ Exception | Unit, Any]
+  type Callback = js.Function1[/* error */ Exception | Unit, Unit]
   
-  type Data = js.UndefOr[Buffer | String]
+  type Data = js.UndefOr[js.typedarray.Uint8Array | String]
   
   type Disposer = js.Function0[Unit]
   
-  type Exception = ErrnoException
+  /* Rewritten from type alias, can be one of: 
+    - typings.atomically.atomicallyStrings.ascii
+    - typings.atomically.atomicallyStrings.base64
+    - typings.atomically.atomicallyStrings.binary
+    - typings.atomically.atomicallyStrings.hex
+    - typings.atomically.atomicallyStrings.latin1
+    - typings.atomically.atomicallyStrings.utf8
+    - typings.atomically.atomicallyStrings.`utf-8`
+    - typings.atomically.atomicallyStrings.utf16le
+    - typings.atomically.atomicallyStrings.ucs2
+    - typings.atomically.atomicallyStrings.`ucs-2`
+  */
+  trait Encoding extends StObject
+  object Encoding {
+    
+    inline def ascii: typings.atomically.atomicallyStrings.ascii = "ascii".asInstanceOf[typings.atomically.atomicallyStrings.ascii]
+    
+    inline def base64: typings.atomically.atomicallyStrings.base64 = "base64".asInstanceOf[typings.atomically.atomicallyStrings.base64]
+    
+    inline def binary: typings.atomically.atomicallyStrings.binary = "binary".asInstanceOf[typings.atomically.atomicallyStrings.binary]
+    
+    inline def hex: typings.atomically.atomicallyStrings.hex = "hex".asInstanceOf[typings.atomically.atomicallyStrings.hex]
+    
+    inline def latin1: typings.atomically.atomicallyStrings.latin1 = "latin1".asInstanceOf[typings.atomically.atomicallyStrings.latin1]
+    
+    inline def `ucs-2`: typings.atomically.atomicallyStrings.`ucs-2` = "ucs-2".asInstanceOf[typings.atomically.atomicallyStrings.`ucs-2`]
+    
+    inline def ucs2: typings.atomically.atomicallyStrings.ucs2 = "ucs2".asInstanceOf[typings.atomically.atomicallyStrings.ucs2]
+    
+    inline def `utf-8`: typings.atomically.atomicallyStrings.`utf-8` = "utf-8".asInstanceOf[typings.atomically.atomicallyStrings.`utf-8`]
+    
+    inline def utf16le: typings.atomically.atomicallyStrings.utf16le = "utf16le".asInstanceOf[typings.atomically.atomicallyStrings.utf16le]
+    
+    inline def utf8: typings.atomically.atomicallyStrings.utf8 = "utf8".asInstanceOf[typings.atomically.atomicallyStrings.utf8]
+  }
   
-  type FN[Arguments /* <: js.Array[Any] */, Return] = js.Function1[/* args */ Arguments, Return]
+  type Exception = ErrnoException
   
   type Path = String
   
   trait ReadOptions extends StObject {
     
-    var encoding: js.UndefOr[String | Null] = js.undefined
+    var encoding: js.UndefOr[Encoding | Null] = js.undefined
     
     var mode: js.UndefOr[String | Double | `false`] = js.undefined
     
@@ -40,7 +73,7 @@ object distTypesMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: ReadOptions] (val x: Self) extends AnyVal {
       
-      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: Encoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
       inline def setEncodingNull: Self = StObject.set(x, "encoding", null)
       
@@ -60,7 +93,7 @@ object distTypesMod {
     
     var chown: js.UndefOr[Gid | `false`] = js.undefined
     
-    var encoding: js.UndefOr[String | Null] = js.undefined
+    var encoding: js.UndefOr[Encoding | Null] = js.undefined
     
     var fsync: js.UndefOr[Boolean] = js.undefined
     
@@ -74,7 +107,7 @@ object distTypesMod {
     
     var tmpCreate: js.UndefOr[js.Function1[/* filePath */ String, String]] = js.undefined
     
-    var tmpCreated: js.UndefOr[js.Function1[/* filePath */ String, Any]] = js.undefined
+    var tmpCreated: js.UndefOr[js.Function1[/* filePath */ String, Unit]] = js.undefined
     
     var tmpPurge: js.UndefOr[Boolean] = js.undefined
   }
@@ -92,7 +125,7 @@ object distTypesMod {
       
       inline def setChownUndefined: Self = StObject.set(x, "chown", js.undefined)
       
-      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: Encoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
       inline def setEncodingNull: Self = StObject.set(x, "encoding", null)
       
@@ -122,7 +155,7 @@ object distTypesMod {
       
       inline def setTmpCreateUndefined: Self = StObject.set(x, "tmpCreate", js.undefined)
       
-      inline def setTmpCreated(value: /* filePath */ String => Any): Self = StObject.set(x, "tmpCreated", js.Any.fromFunction1(value))
+      inline def setTmpCreated(value: /* filePath */ String => Unit): Self = StObject.set(x, "tmpCreated", js.Any.fromFunction1(value))
       
       inline def setTmpCreatedUndefined: Self = StObject.set(x, "tmpCreated", js.undefined)
       

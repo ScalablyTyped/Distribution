@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@wdio/repl" : "7.26.0"
+      "@wdio/repl" : "8.10.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@wdio/repl" : "7.26.0"
+      "@wdio/repl" : "8.10.1"
     }
   ],
   "compile-devDependencies" : [

@@ -12,7 +12,7 @@ trait WorkspaceDescription extends StObject {
   var accountAccessType: js.UndefOr[AccountAccessType] = js.undefined
   
   /**
-    * A structure that describes whether the workspace uses SAML, Amazon Web Services SSO, or both methods for user authentication.
+    * A structure that describes whether the workspace uses SAML, IAM Identity Center, or both methods for user authentication.
     */
   var authentication: AuthenticationSummary
   
@@ -22,7 +22,7 @@ trait WorkspaceDescription extends StObject {
   var created: js.Date
   
   /**
-    * Specifies the Amazon Web Services data sources that have been configured to have IAM roles and permissions created to allow Amazon Managed Grafana to read data from these sources.
+    * Specifies the Amazon Web Services data sources that have been configured to have IAM roles and permissions created to allow Amazon Managed Grafana to read data from these sources. This list is only used when the workspace was created through the Amazon Web Services console, and the permissionType is SERVICE_MANAGED.
     */
   var dataSources: DataSourceTypesList
   
@@ -77,6 +77,11 @@ trait WorkspaceDescription extends StObject {
   var name: js.UndefOr[WorkspaceName] = js.undefined
   
   /**
+    * The configuration settings for network access to your workspace.
+    */
+  var networkAccessControl: js.UndefOr[NetworkAccessConfiguration] = js.undefined
+  
+  /**
     * The Amazon Web Services notification channels that Amazon Managed Grafana can automatically create IAM roles and permissions for, to allow Amazon Managed Grafana to use these channels.
     */
   var notificationDestinations: js.UndefOr[NotificationDestinationsList] = js.undefined
@@ -92,7 +97,7 @@ trait WorkspaceDescription extends StObject {
   var organizationalUnits: js.UndefOr[OrganizationalUnitList] = js.undefined
   
   /**
-    * If this is Service Managed, Amazon Managed Grafana automatically creates the IAM roles and provisions the permissions that the workspace needs to use Amazon Web Services data sources and notification channels. If this is CUSTOMER_MANAGED, you manage those roles and permissions yourself. If you are creating this workspace in a member account of an organization and that account is not a delegated administrator account, and you want the workspace to access data sources in other Amazon Web Services accounts in the organization, you must choose CUSTOMER_MANAGED. For more information, see Amazon Managed Grafana permissions and policies for Amazon Web Services data sources and notification channels 
+    * If this is SERVICE_MANAGED, and the workplace was created through the Amazon Managed Grafana console, then Amazon Managed Grafana automatically creates the IAM roles and provisions the permissions that the workspace needs to use Amazon Web Services data sources and notification channels. If this is CUSTOMER_MANAGED, you must manage those roles and permissions yourself. If you are working with a workspace in a member account of an organization and that account is not a delegated administrator account, and you want the workspace to access data sources in other Amazon Web Services accounts in the organization, this parameter must be set to CUSTOMER_MANAGED. For more information about converting between customer and service managed, see Managing permissions for data sources and notification channels. For more information about the roles and permissions that must be managed for customer managed workspaces, see Amazon Managed Grafana permissions and policies for Amazon Web Services data sources and notification channels 
     */
   var permissionType: js.UndefOr[PermissionType] = js.undefined
   
@@ -110,6 +115,11 @@ trait WorkspaceDescription extends StObject {
     * The list of tags associated with the workspace.
     */
   var tags: js.UndefOr[TagMap] = js.undefined
+  
+  /**
+    * The configuration for connecting to data sources in a private VPC (Amazon Virtual Private Cloud).
+    */
+  var vpcConfiguration: js.UndefOr[VpcConfiguration] = js.undefined
   
   /**
     * The IAM role that grants permissions to the Amazon Web Services resources that the workspace will view data from. This role must already exist.
@@ -179,6 +189,10 @@ object WorkspaceDescription {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
+    inline def setNetworkAccessControl(value: NetworkAccessConfiguration): Self = StObject.set(x, "networkAccessControl", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkAccessControlUndefined: Self = StObject.set(x, "networkAccessControl", js.undefined)
+    
     inline def setNotificationDestinations(value: NotificationDestinationsList): Self = StObject.set(x, "notificationDestinations", value.asInstanceOf[js.Any])
     
     inline def setNotificationDestinationsUndefined: Self = StObject.set(x, "notificationDestinations", js.undefined)
@@ -208,6 +222,10 @@ object WorkspaceDescription {
     inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setVpcConfiguration(value: VpcConfiguration): Self = StObject.set(x, "vpcConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setVpcConfigurationUndefined: Self = StObject.set(x, "vpcConfiguration", js.undefined)
     
     inline def setWorkspaceRoleArn(value: IamRoleArn): Self = StObject.set(x, "workspaceRoleArn", value.asInstanceOf[js.Any])
     

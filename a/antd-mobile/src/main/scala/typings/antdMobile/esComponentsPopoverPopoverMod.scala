@@ -1,6 +1,6 @@
 package typings.antdMobile
 
-import typings.antdMobile.anon.CSSPropertiesPartialRecorAlignmentBaseline
+import typings.antdMobile.anon.CSSPropertiesPartialRecorArrowsize
 import typings.antdMobile.anon.defaultVisiblebooleanunde
 import typings.antdMobile.antdMobileStrings.`additions removals`
 import typings.antdMobile.antdMobileStrings.`additions text`
@@ -64,7 +64,7 @@ object esComponentsPopoverPopoverMod {
   @js.native
   val Popover: ForwardRefExoticComponent[defaultVisiblebooleanunde] = js.native
   
-  /* Inlined {  defaultVisible :boolean | undefined,   visible :boolean | undefined,   onVisibleChange :(visible : boolean): void | undefined,   getContainer :antd-mobile.antd-mobile/es/utils/render-to-container.GetContainer | undefined,   destroyOnHide :boolean | undefined,   children :react.react.ReactElement,   mode :'light' | 'dark' | undefined,   trigger :'click' | undefined,   placement :antd-mobile.antd-mobile/es/components/popover.Placement | antd-mobile.antd-mobile/es/components/popover.DeprecatedPlacement | undefined,   stopPropagation :std.Array<antd-mobile.antd-mobile/es/utils/with-stop-propagation.PropagationEvent> | undefined,   content :react.react.ReactNode} & antd-mobile.antd-mobile/es/utils/native-props.NativeProps<'--z-index'> */
+  /* Inlined {  defaultVisible :boolean | undefined,   visible :boolean | undefined,   onVisibleChange :(visible : boolean): void | undefined,   getContainer :antd-mobile.antd-mobile/es/utils/render-to-container.GetContainer | undefined,   destroyOnHide :boolean | undefined,   children :react.react.ReactElement,   mode :'light' | 'dark' | undefined,   trigger :'click' | undefined,   placement :antd-mobile.antd-mobile/es/components/popover.Placement | antd-mobile.antd-mobile/es/components/popover.DeprecatedPlacement | undefined,   stopPropagation :std.Array<antd-mobile.antd-mobile/es/utils/with-stop-propagation.PropagationEvent> | undefined,   content :react.react.ReactNode} & antd-mobile.antd-mobile/es/utils/native-props.NativeProps<'--z-index' | '--arrow-size'> */
   trait PopoverProps extends StObject {
     
     /** Identifies the currently active element when DOM focus is on a composite widget, textbox, group, or application. */
@@ -321,7 +321,7 @@ object esComponentsPopoverPopoverMod {
     
     var stopPropagation: js.UndefOr[js.Array[PropagationEvent]] = js.undefined
     
-    var style: js.UndefOr[CSSPropertiesPartialRecorAlignmentBaseline] = js.undefined
+    var style: js.UndefOr[CSSPropertiesPartialRecorArrowsize] = js.undefined
     
     var tabIndex: js.UndefOr[Double] = js.undefined
     
@@ -577,7 +577,7 @@ object esComponentsPopoverPopoverMod {
       
       inline def setStopPropagationVarargs(value: PropagationEvent*): Self = StObject.set(x, "stopPropagation", js.Array(value*))
       
-      inline def setStyle(value: CSSPropertiesPartialRecorAlignmentBaseline): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSPropertiesPartialRecorArrowsize): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       

@@ -68,12 +68,6 @@ trait Tab extends StObject {
   /** Whether the tab is pinned. */
   var pinned: Boolean
   
-  /**
-    * Whether the tab is selected.
-    * @deprecated Please use `tabs.Tab.highlighted`.
-    */
-  var selected: js.UndefOr[Boolean] = js.undefined
-  
   /** The session ID used to uniquely identify a Tab obtained from the `sessions` API. */
   var sessionId: js.UndefOr[String] = js.undefined
   
@@ -173,10 +167,6 @@ object Tab {
     inline def setOpenerTabIdUndefined: Self = StObject.set(x, "openerTabId", js.undefined)
     
     inline def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
-    
-    inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
-    
-    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
     inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     

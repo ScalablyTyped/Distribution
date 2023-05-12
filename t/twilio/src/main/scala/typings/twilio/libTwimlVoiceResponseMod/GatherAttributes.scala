@@ -6,40 +6,58 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GatherAttributes extends StObject {
   
+  /** action - Action URL */
   var action: js.UndefOr[String] = js.undefined
   
+  /** actionOnEmptyResult - Force webhook to the action URL event if there is no input */
   var actionOnEmptyResult: js.UndefOr[Boolean] = js.undefined
   
+  /** bargeIn - Stop playing media upon speech */
   var bargeIn: js.UndefOr[Boolean] = js.undefined
   
+  /** debug - Allow debug for gather */
   var debug: js.UndefOr[Boolean] = js.undefined
   
+  /** enhanced - Use enhanced speech model */
   var enhanced: js.UndefOr[Boolean] = js.undefined
   
+  /** finishOnKey - Finish gather on key */
   var finishOnKey: js.UndefOr[String] = js.undefined
   
+  /** hints - Speech recognition hints */
   var hints: js.UndefOr[String] = js.undefined
   
+  /** input - Input type Twilio should accept */
   var input: js.UndefOr[js.Array[GatherInput]] = js.undefined
   
+  /** language - Language to use */
   var language: js.UndefOr[GatherLanguage] = js.undefined
   
+  /** maxSpeechTime - Max allowed time for speech input */
   var maxSpeechTime: js.UndefOr[Double] = js.undefined
   
+  /** method - Action URL method */
   var method: js.UndefOr[String] = js.undefined
   
+  /** numDigits - Number of digits to collect */
   var numDigits: js.UndefOr[Double] = js.undefined
   
+  /** partialResultCallback - Partial result callback URL */
   var partialResultCallback: js.UndefOr[String] = js.undefined
   
+  /** partialResultCallbackMethod - Partial result callback URL method */
   var partialResultCallbackMethod: js.UndefOr[String] = js.undefined
   
+  /** profanityFilter - Profanity Filter on speech */
   var profanityFilter: js.UndefOr[Boolean] = js.undefined
   
+  /** speechModel - Specify the model that is best suited for your use case */
   var speechModel: js.UndefOr[GatherSpeechModel] = js.undefined
   
+  /** speechTimeout - Time to wait to gather speech input and it should be either auto or a positive integer. */
   var speechTimeout: js.UndefOr[String] = js.undefined
   
+  /** timeout - Time to wait to gather input */
   var timeout: js.UndefOr[Double] = js.undefined
 }
 object GatherAttributes {

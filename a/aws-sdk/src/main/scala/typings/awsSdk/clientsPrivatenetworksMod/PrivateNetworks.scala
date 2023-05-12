@@ -211,12 +211,12 @@ trait PrivateNetworks extends Service {
   ): Request[GetOrderResponse, AWSError] = js.native
   
   /**
-    * Lists device identifiers. Add filters to your request to return a more specific list of results. Use filters to match the Amazon Resource Name (ARN) of an order, the status of device identifiers, or the ARN of the traffic group.  &lt;p&gt;If you specify multiple filters, filters are joined with an OR, and the request  returns results that match all of the specified filters.
+    * Lists device identifiers. Add filters to your request to return a more specific list of results. Use filters to match the Amazon Resource Name (ARN) of an order, the status of device identifiers, or the ARN of the traffic group. If you specify multiple filters, filters are joined with an OR, and the request returns results that match all of the specified filters.
     */
   def listDeviceIdentifiers(): Request[ListDeviceIdentifiersResponse, AWSError] = js.native
   def listDeviceIdentifiers(callback: js.Function2[/* err */ AWSError, /* data */ ListDeviceIdentifiersResponse, Unit]): Request[ListDeviceIdentifiersResponse, AWSError] = js.native
   /**
-    * Lists device identifiers. Add filters to your request to return a more specific list of results. Use filters to match the Amazon Resource Name (ARN) of an order, the status of device identifiers, or the ARN of the traffic group.  &lt;p&gt;If you specify multiple filters, filters are joined with an OR, and the request  returns results that match all of the specified filters.
+    * Lists device identifiers. Add filters to your request to return a more specific list of results. Use filters to match the Amazon Resource Name (ARN) of an order, the status of device identifiers, or the ARN of the traffic group. If you specify multiple filters, filters are joined with an OR, and the request returns results that match all of the specified filters.
     */
   def listDeviceIdentifiers(params: ListDeviceIdentifiersRequest): Request[ListDeviceIdentifiersResponse, AWSError] = js.native
   def listDeviceIdentifiers(
@@ -299,6 +299,20 @@ trait PrivateNetworks extends Service {
     */
   def ping(): Request[PingResponse, AWSError] = js.native
   def ping(callback: js.Function2[/* err */ AWSError, /* data */ PingResponse, Unit]): Request[PingResponse, AWSError] = js.native
+  
+  /**
+    * Starts an update of the specified network resource. After you submit a request to replace or return a network resource, the status of the network resource is CREATING_SHIPPING_LABEL. The shipping label is available when the status of the network resource is PENDING_RETURN. After the network resource is successfully returned, its status is DELETED. For more information, see Return a radio unit.
+    */
+  def startNetworkResourceUpdate(): Request[StartNetworkResourceUpdateResponse, AWSError] = js.native
+  def startNetworkResourceUpdate(callback: js.Function2[/* err */ AWSError, /* data */ StartNetworkResourceUpdateResponse, Unit]): Request[StartNetworkResourceUpdateResponse, AWSError] = js.native
+  /**
+    * Starts an update of the specified network resource. After you submit a request to replace or return a network resource, the status of the network resource is CREATING_SHIPPING_LABEL. The shipping label is available when the status of the network resource is PENDING_RETURN. After the network resource is successfully returned, its status is DELETED. For more information, see Return a radio unit.
+    */
+  def startNetworkResourceUpdate(params: StartNetworkResourceUpdateRequest): Request[StartNetworkResourceUpdateResponse, AWSError] = js.native
+  def startNetworkResourceUpdate(
+    params: StartNetworkResourceUpdateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartNetworkResourceUpdateResponse, Unit]
+  ): Request[StartNetworkResourceUpdateResponse, AWSError] = js.native
   
   /**
     *  Adds tags to the specified resource. 

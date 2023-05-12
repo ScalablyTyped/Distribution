@@ -23,7 +23,7 @@ trait flowTheme extends StObject {
   /**
     * The label identifying the theme in UI elements.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#Theme)
+    * [Read more...](global.html)
     */
   var label: String
   

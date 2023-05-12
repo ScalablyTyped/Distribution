@@ -6,13 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait BusinessStatus extends StObject
-/**
-  * The operational status of the Place, if it is a business, returned in a
-  * PlaceResult (indicates whether the place is operational, or closed either
-  * temporarily or permanently). Specify these by value, or the constant&#39;s
-  * name (example: <code>&#39;OPERATIONAL&#39;</code> or
-  * <code>google.maps.places.BusinessStatus.OPERATIONAL</code>).
-  */
 @JSGlobal("google.maps.places.BusinessStatus")
 @js.native
 object BusinessStatus extends StObject {

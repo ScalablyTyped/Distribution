@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-crypto/sha256-js" : "2.0.2"
+      "@aws-crypto/sha256-js" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-crypto/sha256-js" : "2.0.2"
+      "@aws-crypto/sha256-js" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

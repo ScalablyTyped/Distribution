@@ -4,20 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait ObjectDeserializerContext extends StObject {
   
-  def read(): Any
-}
-object ObjectDeserializerContext {
+  def read(): Any = js.native
   
-  inline def apply(read: () => Any): ObjectDeserializerContext = {
-    val __obj = js.Dynamic.literal(read = js.Any.fromFunction0(read))
-    __obj.asInstanceOf[ObjectDeserializerContext]
-  }
-  
-  @scala.inline
-  implicit open class MutableBuilder[Self <: ObjectDeserializerContext] (val x: Self) extends AnyVal {
-    
-    inline def setRead(value: () => Any): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
-  }
+  def setCircularReference(): Unit = js.native
+  def setCircularReference(arg0: Any): Unit = js.native
 }

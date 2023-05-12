@@ -13,11 +13,75 @@ object connection {
   @js.native
   val ^ : js.Any = js.native
   
+  @js.native
+  sealed trait AuthenticationType extends StObject
+  @JSImport("azdata", "connection.AuthenticationType")
+  @js.native
+  object AuthenticationType extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[AuthenticationType & String] = js.native
+    
+    /**
+      * Azure Active Directory - Universal with MFA support
+      */
+    @js.native
+    sealed trait AzureMFA
+      extends StObject
+         with AuthenticationType
+    /* "AzureMFA" */ val AzureMFA: typings.azdata.mod.connection.AuthenticationType.AzureMFA & String = js.native
+    
+    /**
+      * Azure Active Directory - Password
+      */
+    @js.native
+    sealed trait AzureMFAAndUser
+      extends StObject
+         with AuthenticationType
+    /* "AzureMFAAndUser" */ val AzureMFAAndUser: typings.azdata.mod.connection.AuthenticationType.AzureMFAAndUser & String = js.native
+    
+    /**
+      * Datacenter Security Token Service Authentication
+      */
+    @js.native
+    sealed trait DSTSAuth
+      extends StObject
+         with AuthenticationType
+    /* "dstsAuth" */ val DSTSAuth: typings.azdata.mod.connection.AuthenticationType.DSTSAuth & String = js.native
+    
+    /**
+      * Windows Authentication
+      */
+    @js.native
+    sealed trait Integrated
+      extends StObject
+         with AuthenticationType
+    /* "Integrated" */ val Integrated: typings.azdata.mod.connection.AuthenticationType.Integrated & String = js.native
+    
+    /**
+      * No authentication required
+      */
+    @js.native
+    sealed trait None
+      extends StObject
+         with AuthenticationType
+    /* "None" */ val None: typings.azdata.mod.connection.AuthenticationType.None & String = js.native
+    
+    /**
+      * Username and password
+      */
+    @js.native
+    sealed trait SqlLogin
+      extends StObject
+         with AuthenticationType
+    /* "SqlLogin" */ val SqlLogin: typings.azdata.mod.connection.AuthenticationType.SqlLogin & String = js.native
+  }
+  
   @JSImport("azdata", "connection.ConnectionProfile")
   @js.native
   open class ConnectionProfile () extends StObject {
     
-    var authenticationType: String = js.native
+    var authenticationType: String | AuthenticationType = js.native
     
     var azureTenantId: js.UndefOr[String] = js.native
     

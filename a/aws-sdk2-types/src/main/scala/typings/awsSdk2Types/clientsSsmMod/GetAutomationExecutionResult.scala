@@ -1,0 +1,28 @@
+package typings.awsSdk2Types.clientsSsmMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait GetAutomationExecutionResult extends StObject {
+  
+  /**
+    * Detailed information about the current state of an automation execution.
+    */
+  var AutomationExecution: js.UndefOr[typings.awsSdk2Types.clientsSsmMod.AutomationExecution] = js.undefined
+}
+object GetAutomationExecutionResult {
+  
+  inline def apply(): GetAutomationExecutionResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[GetAutomationExecutionResult]
+  }
+  
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAutomationExecutionResult] (val x: Self) extends AnyVal {
+    
+    inline def setAutomationExecution(value: AutomationExecution): Self = StObject.set(x, "AutomationExecution", value.asInstanceOf[js.Any])
+    
+    inline def setAutomationExecutionUndefined: Self = StObject.set(x, "AutomationExecution", js.undefined)
+  }
+}

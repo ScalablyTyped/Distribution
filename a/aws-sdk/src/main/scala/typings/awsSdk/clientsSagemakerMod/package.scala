@@ -6,6 +6,9 @@ import typings.awsSdk.awsSdkStrings.BENCHMARK
 import typings.awsSdk.awsSdkStrings.GreengrassV2Component
 import typings.awsSdk.awsSdkStrings.PHASES
 import typings.awsSdk.awsSdkStrings.Prioritized
+import typings.awsSdk.awsSdkStrings.RealTimeInference
+import typings.awsSdk.awsSdkStrings.ShadowMode
+import typings.awsSdk.awsSdkStrings.Version_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -141,6 +144,9 @@ type AppImageConfigSortKey = _AppImageConfigSortKey | java.lang.String
   - typings.awsSdk.awsSdkStrings.mlDotg5Dot12xlarge
   - typings.awsSdk.awsSdkStrings.mlDotg5Dot24xlarge
   - typings.awsSdk.awsSdkStrings.mlDotg5Dot48xlarge
+  - typings.awsSdk.awsSdkStrings.mlDotgeospatialDotinteractive
+  - typings.awsSdk.awsSdkStrings.mlDotp4dDot24xlarge
+  - typings.awsSdk.awsSdkStrings.mlDotp4deDot24xlarge
   - java.lang.String
 */
 type AppInstanceType = _AppInstanceType | java.lang.String
@@ -228,6 +234,15 @@ type AssociationEntityArn = java.lang.String
 
 type AssociationSummaries = js.Array[AssociationSummary]
 
+type AsyncNotificationTopicTypeList = js.Array[AsyncNotificationTopicTypes]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SUCCESS_NOTIFICATION_TOPIC
+  - typings.awsSdk.awsSdkStrings.ERROR_NOTIFICATION_TOPIC
+  - java.lang.String
+*/
+type AsyncNotificationTopicTypes = _AsyncNotificationTopicTypes | java.lang.String
+
 type AthenaCatalog = java.lang.String
 
 type AthenaDatabase = java.lang.String
@@ -267,6 +282,24 @@ type AuthMode = _AuthMode | java.lang.String
 
 type AutoGenerateEndpointName = scala.Boolean
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.xgboost_
+  - typings.awsSdk.awsSdkStrings.`linear-learner`
+  - typings.awsSdk.awsSdkStrings.mlp
+  - typings.awsSdk.awsSdkStrings.lightgbm
+  - typings.awsSdk.awsSdkStrings.catboost
+  - typings.awsSdk.awsSdkStrings.randomforest
+  - typings.awsSdk.awsSdkStrings.`extra-trees`
+  - typings.awsSdk.awsSdkStrings.`nn-torch`
+  - typings.awsSdk.awsSdkStrings.fastai
+  - java.lang.String
+*/
+type AutoMLAlgorithm = _AutoMLAlgorithm | java.lang.String
+
+type AutoMLAlgorithms = js.Array[AutoMLAlgorithm]
+
+type AutoMLAlgorithmsConfig = js.Array[AutoMLAlgorithmConfig]
+
 type AutoMLCandidates = js.Array[AutoMLCandidate]
 
 /* Rewritten from type alias, can be one of: 
@@ -280,9 +313,13 @@ type AutoMLContainerDefinitions = js.Array[AutoMLContainerDefinition]
 
 type AutoMLFailureReason = java.lang.String
 
+type AutoMLInferenceContainerDefinitions = StringDictionary[AutoMLContainerDefinitions]
+
 type AutoMLInputDataConfig = js.Array[AutoMLChannel]
 
 type AutoMLJobArn = java.lang.String
+
+type AutoMLJobInputDataConfig = js.Array[AutoMLJobChannel]
 
 type AutoMLJobName = java.lang.String
 
@@ -311,6 +348,7 @@ type AutoMLJobObjectiveType = _AutoMLJobObjectiveType | java.lang.String
   - typings.awsSdk.awsSdkStrings.ModelDeploymentError
   - typings.awsSdk.awsSdkStrings.GeneratingModelInsightsReport
   - typings.awsSdk.awsSdkStrings.ModelInsightsError
+  - typings.awsSdk.awsSdkStrings.TrainingModels
   - java.lang.String
 */
 type AutoMLJobSecondaryStatus = _AutoMLJobSecondaryStatus | java.lang.String
@@ -335,6 +373,14 @@ type AutoMLMaxResults = Double
   - typings.awsSdk.awsSdkStrings.F1
   - typings.awsSdk.awsSdkStrings.F1macro
   - typings.awsSdk.awsSdkStrings.AUC
+  - typings.awsSdk.awsSdkStrings.RMSE
+  - typings.awsSdk.awsSdkStrings.MAE
+  - typings.awsSdk.awsSdkStrings.R2
+  - typings.awsSdk.awsSdkStrings.BalancedAccuracy
+  - typings.awsSdk.awsSdkStrings.Precision
+  - typings.awsSdk.awsSdkStrings.PrecisionMacro
+  - typings.awsSdk.awsSdkStrings.Recall
+  - typings.awsSdk.awsSdkStrings.RecallMacro
   - java.lang.String
 */
 type AutoMLMetricEnum = _AutoMLMetricEnum | java.lang.String
@@ -372,8 +418,16 @@ type AutoMLNameContains = java.lang.String
 type AutoMLPartialFailureReasons = js.Array[AutoMLPartialFailureReason]
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CPU
+  - typings.awsSdk.awsSdkStrings.GPU
+  - java.lang.String
+*/
+type AutoMLProcessingUnit = _AutoMLProcessingUnit | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ManifestFile
   - typings.awsSdk.awsSdkStrings.S3Prefix
+  - typings.awsSdk.awsSdkStrings.AugmentedManifestFile
   - java.lang.String
 */
 type AutoMLS3DataType = _AutoMLS3DataType | java.lang.String
@@ -570,20 +624,20 @@ type ClarifyTextGranularity = _ClarifyTextGranularity | java.lang.String
   - typings.awsSdk.awsSdkStrings.bn_
   - typings.awsSdk.awsSdkStrings.bg_
   - typings.awsSdk.awsSdkStrings.ca_
-  - typings.awsSdk.awsSdkStrings.zh
+  - typings.awsSdk.awsSdkStrings.zh_
   - typings.awsSdk.awsSdkStrings.hr_
   - typings.awsSdk.awsSdkStrings.cs_
-  - typings.awsSdk.awsSdkStrings.da
+  - typings.awsSdk.awsSdkStrings.da_
   - typings.awsSdk.awsSdkStrings.nl_
   - typings.awsSdk.awsSdkStrings.en_
   - typings.awsSdk.awsSdkStrings.et_
   - typings.awsSdk.awsSdkStrings.fi_
   - typings.awsSdk.awsSdkStrings.fr_
   - typings.awsSdk.awsSdkStrings.de_
-  - typings.awsSdk.awsSdkStrings.el
+  - typings.awsSdk.awsSdkStrings.el_
   - typings.awsSdk.awsSdkStrings.gu_
   - typings.awsSdk.awsSdkStrings.he
-  - typings.awsSdk.awsSdkStrings.hi
+  - typings.awsSdk.awsSdkStrings.hi_
   - typings.awsSdk.awsSdkStrings.hu_
   - typings.awsSdk.awsSdkStrings.is_
   - typings.awsSdk.awsSdkStrings.id__
@@ -599,7 +653,7 @@ type ClarifyTextGranularity = _ClarifyTextGranularity | java.lang.String
   - typings.awsSdk.awsSdkStrings.mr_
   - typings.awsSdk.awsSdkStrings.ne_
   - typings.awsSdk.awsSdkStrings.nb
-  - typings.awsSdk.awsSdkStrings.fa
+  - typings.awsSdk.awsSdkStrings.fa_
   - typings.awsSdk.awsSdkStrings.pl_
   - typings.awsSdk.awsSdkStrings.pt_
   - typings.awsSdk.awsSdkStrings.ro_
@@ -631,6 +685,8 @@ type ClientId = java.lang.String
 type ClientSecret = java.lang.String
 
 type ClientToken = java.lang.String
+
+type CodeRepositories = js.Array[CodeRepository]
 
 type CodeRepositoryArn = java.lang.String
 
@@ -685,6 +741,13 @@ type CompilationJobSummaries = js.Array[CompilationJobSummary]
 type CompilerOptions = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Disabled_
+  - typings.awsSdk.awsSdkStrings.Enabled_
+  - java.lang.String
+*/
+type CompleteOnConvergence = _CompleteOnConvergence | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.None_
   - typings.awsSdk.awsSdkStrings.Gzip_
   - java.lang.String
@@ -734,6 +797,8 @@ type ContentClassifier = _ContentClassifier | java.lang.String
 
 type ContentClassifiers = js.Array[ContentClassifier]
 
+type ContentColumn = java.lang.String
+
 type ContentDigest = java.lang.String
 
 type ContentType = java.lang.String
@@ -782,6 +847,10 @@ type DebugRuleEvaluationStatuses = js.Array[DebugRuleEvaluationStatus]
 type DefaultGid = Double
 
 type DefaultUid = Double
+
+type DependencyCopyPath = java.lang.String
+
+type DependencyOriginPath = java.lang.String
 
 type DeployedImages = js.Array[DeployedImage]
 
@@ -880,6 +949,8 @@ type DisassociateDefaultCodeRepository = scala.Boolean
 type DisassociateNotebookInstanceAcceleratorTypes = scala.Boolean
 
 type DisassociateNotebookInstanceLifecycleConfig = scala.Boolean
+
+type DocumentSchemaVersion = java.lang.String
 
 type Dollars = Double
 
@@ -1211,6 +1282,88 @@ type Groups = js.Array[Group]
 
 type HookParameters = StringDictionary[ConfigValue]
 
+type Horovod = scala.Boolean
+
+type HubArn = java.lang.String
+
+type HubContentArn = java.lang.String
+
+type HubContentDependencyList = js.Array[HubContentDependency]
+
+type HubContentDescription = java.lang.String
+
+type HubContentDisplayName = java.lang.String
+
+type HubContentDocument = java.lang.String
+
+type HubContentInfoList = js.Array[HubContentInfo]
+
+type HubContentMarkdown = java.lang.String
+
+type HubContentName = java.lang.String
+
+type HubContentSearchKeywordList = js.Array[HubSearchKeyword]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.HubContentName
+  - typings.awsSdk.awsSdkStrings.CreationTime
+  - typings.awsSdk.awsSdkStrings.HubContentStatus
+  - java.lang.String
+*/
+type HubContentSortBy = _HubContentSortBy | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Available_
+  - typings.awsSdk.awsSdkStrings.Importing_
+  - typings.awsSdk.awsSdkStrings.Deleting_
+  - typings.awsSdk.awsSdkStrings.ImportFailed
+  - typings.awsSdk.awsSdkStrings.DeleteFailed
+  - java.lang.String
+*/
+type HubContentStatus = _HubContentStatus | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Model_
+  - typings.awsSdk.awsSdkStrings.Notebook
+  - java.lang.String
+*/
+type HubContentType = _HubContentType | java.lang.String
+
+type HubContentVersion = java.lang.String
+
+type HubDescription = java.lang.String
+
+type HubDisplayName = java.lang.String
+
+type HubInfoList = js.Array[HubInfo]
+
+type HubName = java.lang.String
+
+type HubSearchKeyword = java.lang.String
+
+type HubSearchKeywordList = js.Array[HubSearchKeyword]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.HubName
+  - typings.awsSdk.awsSdkStrings.CreationTime
+  - typings.awsSdk.awsSdkStrings.HubStatus
+  - typings.awsSdk.awsSdkStrings.AccountIdOwner
+  - java.lang.String
+*/
+type HubSortBy = _HubSortBy | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.InService
+  - typings.awsSdk.awsSdkStrings.Creating_
+  - typings.awsSdk.awsSdkStrings.Updating_
+  - typings.awsSdk.awsSdkStrings.Deleting_
+  - typings.awsSdk.awsSdkStrings.CreateFailed
+  - typings.awsSdk.awsSdkStrings.UpdateFailed
+  - typings.awsSdk.awsSdkStrings.DeleteFailed
+  - java.lang.String
+*/
+type HubStatus = _HubStatus | java.lang.String
+
 type HumanLoopActivationConditions = java.lang.String
 
 type HumanTaskUiArn = java.lang.String
@@ -1242,6 +1395,12 @@ type HyperParameterSpecifications = js.Array[HyperParameterSpecification]
 type HyperParameterTrainingJobDefinitionName = java.lang.String
 
 type HyperParameterTrainingJobDefinitions = js.Array[HyperParameterTrainingJobDefinition]
+
+type HyperParameterTrainingJobEnvironmentKey = java.lang.String
+
+type HyperParameterTrainingJobEnvironmentMap = StringDictionary[HyperParameterTrainingJobEnvironmentValue]
+
+type HyperParameterTrainingJobEnvironmentValue = java.lang.String
 
 type HyperParameterTrainingJobSummaries = js.Array[HyperParameterTrainingJobSummary]
 
@@ -1297,6 +1456,8 @@ type HyperParameterTuningJobSummaries = js.Array[HyperParameterTuningJobSummary]
   - java.lang.String
 */
 type HyperParameterTuningJobWarmStartType = _HyperParameterTuningJobWarmStartType | java.lang.String
+
+type HyperParameterTuningMaxRuntimeInSeconds = Double
 
 type HyperParameterValue = java.lang.String
 
@@ -1396,6 +1557,38 @@ type Images = js.Array[Image]
   - java.lang.String
 */
 type InferenceExecutionMode = _InferenceExecutionMode | java.lang.String
+
+type InferenceExperimentArn = java.lang.String
+
+type InferenceExperimentDescription = java.lang.String
+
+type InferenceExperimentList = js.Array[InferenceExperimentSummary]
+
+type InferenceExperimentName = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Creating_
+  - typings.awsSdk.awsSdkStrings.Created_
+  - typings.awsSdk.awsSdkStrings.Updating_
+  - typings.awsSdk.awsSdkStrings.Running_
+  - typings.awsSdk.awsSdkStrings.Starting_
+  - typings.awsSdk.awsSdkStrings.Stopping_
+  - typings.awsSdk.awsSdkStrings.Completed_
+  - typings.awsSdk.awsSdkStrings.Cancelled_
+  - java.lang.String
+*/
+type InferenceExperimentStatus = _InferenceExperimentStatus | java.lang.String
+
+type InferenceExperimentStatusReason = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Completed_
+  - typings.awsSdk.awsSdkStrings.Cancelled_
+  - java.lang.String
+*/
+type InferenceExperimentStopDesiredState = _InferenceExperimentStopDesiredState | java.lang.String
+
+type InferenceExperimentType = ShadowMode | java.lang.String
 
 type InferenceImage = java.lang.String
 
@@ -1519,6 +1712,14 @@ type JobDurationInSeconds = Double
 type JobReferenceCode = java.lang.String
 
 type JobReferenceCodeContains = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.TRAINING
+  - typings.awsSdk.awsSdkStrings.INFERENCE
+  - typings.awsSdk.awsSdkStrings.NOTEBOOK_KERNEL
+  - java.lang.String
+*/
+type JobType = _JobType | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Input_
@@ -1670,6 +1871,8 @@ type ListWorkteamsSortByOptions = _ListWorkteamsSortByOptions | java.lang.String
 
 type Long = Double
 
+type MLFramework = java.lang.String
+
 type MaxAutoMLJobRuntimeInSeconds = Double
 
 type MaxCandidates = Double
@@ -1685,6 +1888,8 @@ type MaxHumanLabeledObjectCount = Double
 type MaxNumberOfTests = Double
 
 type MaxNumberOfTrainingJobs = Double
+
+type MaxNumberOfTrainingJobsNotImproving = Double
 
 type MaxParallelExecutionSteps = Double
 
@@ -1750,6 +1955,83 @@ type ModelArn = java.lang.String
   - java.lang.String
 */
 type ModelCacheSetting = _ModelCacheSetting | java.lang.String
+
+type ModelCardArn = java.lang.String
+
+type ModelCardContent = java.lang.String
+
+type ModelCardExportJobArn = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Name_
+  - typings.awsSdk.awsSdkStrings.CreationTime
+  - typings.awsSdk.awsSdkStrings.Status_
+  - java.lang.String
+*/
+type ModelCardExportJobSortBy = _ModelCardExportJobSortBy | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Ascending_
+  - typings.awsSdk.awsSdkStrings.Descending_
+  - java.lang.String
+*/
+type ModelCardExportJobSortOrder = _ModelCardExportJobSortOrder | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.InProgress_
+  - typings.awsSdk.awsSdkStrings.Completed_
+  - typings.awsSdk.awsSdkStrings.Failed_
+  - java.lang.String
+*/
+type ModelCardExportJobStatus = _ModelCardExportJobStatus | java.lang.String
+
+type ModelCardExportJobSummaryList = js.Array[ModelCardExportJobSummary]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DeleteInProgress
+  - typings.awsSdk.awsSdkStrings.DeletePending
+  - typings.awsSdk.awsSdkStrings.ContentDeleted
+  - typings.awsSdk.awsSdkStrings.ExportJobsDeleted
+  - typings.awsSdk.awsSdkStrings.DeleteCompleted
+  - typings.awsSdk.awsSdkStrings.DeleteFailed
+  - java.lang.String
+*/
+type ModelCardProcessingStatus = _ModelCardProcessingStatus | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Name_
+  - typings.awsSdk.awsSdkStrings.CreationTime
+  - java.lang.String
+*/
+type ModelCardSortBy = _ModelCardSortBy | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Ascending_
+  - typings.awsSdk.awsSdkStrings.Descending_
+  - java.lang.String
+*/
+type ModelCardSortOrder = _ModelCardSortOrder | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Draft_
+  - typings.awsSdk.awsSdkStrings.PendingReview
+  - typings.awsSdk.awsSdkStrings.Approved_
+  - typings.awsSdk.awsSdkStrings.Archived_
+  - java.lang.String
+*/
+type ModelCardStatus = _ModelCardStatus | java.lang.String
+
+type ModelCardSummaryList = js.Array[ModelCardSummary]
+
+type ModelCardVersionSortBy = Version_ | java.lang.String
+
+type ModelCardVersionSummaryList = js.Array[ModelCardVersionSummary]
+
+type ModelDashboardEndpoints = js.Array[ModelDashboardEndpoint]
+
+type ModelDashboardMonitoringSchedules = js.Array[ModelDashboardMonitoringSchedule]
+
+type ModelInfrastructureType = RealTimeInference | java.lang.String
 
 type ModelInsightsLocation = java.lang.String
 
@@ -1846,9 +2128,59 @@ type ModelSortKey = _ModelSortKey | java.lang.String
 
 type ModelSummaryList = js.Array[ModelSummary]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Retain_
+  - typings.awsSdk.awsSdkStrings.Remove_
+  - typings.awsSdk.awsSdkStrings.Promote
+  - java.lang.String
+*/
+type ModelVariantAction = _ModelVariantAction | java.lang.String
+
+type ModelVariantActionMap = StringDictionary[ModelVariantAction]
+
+type ModelVariantConfigList = js.Array[ModelVariantConfig]
+
+type ModelVariantConfigSummaryList = js.Array[ModelVariantConfigSummary]
+
+type ModelVariantName = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Creating_
+  - typings.awsSdk.awsSdkStrings.Updating_
+  - typings.awsSdk.awsSdkStrings.InService
+  - typings.awsSdk.awsSdkStrings.Deleting_
+  - typings.awsSdk.awsSdkStrings.Deleted_
+  - java.lang.String
+*/
+type ModelVariantStatus = _ModelVariantStatus | java.lang.String
+
+type MonitoringAlertHistoryList = js.Array[MonitoringAlertHistorySummary]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CreationTime
+  - typings.awsSdk.awsSdkStrings.Status_
+  - java.lang.String
+*/
+type MonitoringAlertHistorySortKey = _MonitoringAlertHistorySortKey | java.lang.String
+
+type MonitoringAlertName = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.InAlert
+  - typings.awsSdk.awsSdkStrings.OK
+  - java.lang.String
+*/
+type MonitoringAlertStatus = _MonitoringAlertStatus | java.lang.String
+
+type MonitoringAlertSummaryList = js.Array[MonitoringAlertSummary]
+
 type MonitoringContainerArguments = js.Array[ContainerArgument]
 
+type MonitoringDatapointsToAlert = Double
+
 type MonitoringEnvironmentMap = StringDictionary[ProcessingEnvironmentValue]
+
+type MonitoringEvaluationPeriod = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CreationTime
@@ -2137,6 +2469,8 @@ type PipelineExecutionSummaryList = js.Array[PipelineExecutionSummary]
 
 type PipelineName = java.lang.String
 
+type PipelineNameOrArn = java.lang.String
+
 type PipelineParameterName = java.lang.String
 
 type PipelineStatus = Active_ | java.lang.String
@@ -2276,6 +2610,13 @@ type ProcessingS3InputMode = _ProcessingS3InputMode | java.lang.String
 type ProcessingS3UploadMode = _ProcessingS3UploadMode | java.lang.String
 
 type ProcessingVolumeSizeInGB = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CPU
+  - typings.awsSdk.awsSdkStrings.GPU
+  - java.lang.String
+*/
+type Processor = _Processor | java.lang.String
 
 type ProductId = java.lang.String
 
@@ -2435,6 +2776,13 @@ type ProductionVariantContainerStartupHealthCheckTimeoutInSeconds = Double
   - typings.awsSdk.awsSdkStrings.mlDotr6gdDot8xlarge
   - typings.awsSdk.awsSdkStrings.mlDotr6gdDot12xlarge
   - typings.awsSdk.awsSdkStrings.mlDotr6gdDot16xlarge
+  - typings.awsSdk.awsSdkStrings.mlDotp4deDot24xlarge
+  - typings.awsSdk.awsSdkStrings.mlDottrn1Dot2xlarge
+  - typings.awsSdk.awsSdkStrings.mlDottrn1Dot32xlarge
+  - typings.awsSdk.awsSdkStrings.mlDotinf2Dotxlarge
+  - typings.awsSdk.awsSdkStrings.mlDotinf2Dot8xlarge
+  - typings.awsSdk.awsSdkStrings.mlDotinf2Dot24xlarge
+  - typings.awsSdk.awsSdkStrings.mlDotinf2Dot48xlarge
   - java.lang.String
 */
 type ProductionVariantInstanceType = _ProductionVariantInstanceType | java.lang.String
@@ -2442,6 +2790,8 @@ type ProductionVariantInstanceType = _ProductionVariantInstanceType | java.lang.
 type ProductionVariantList = js.Array[ProductionVariant]
 
 type ProductionVariantModelDataDownloadTimeoutInSeconds = Double
+
+type ProductionVariantSSMAccess = scala.Boolean
 
 type ProductionVariantStatusList = js.Array[ProductionVariantStatus]
 
@@ -2463,6 +2813,8 @@ type ProfilingParameters = StringDictionary[ConfigValue]
   - java.lang.String
 */
 type ProfilingStatus = _ProfilingStatus | java.lang.String
+
+type ProgrammingLang = java.lang.String
 
 type ProjectArn = java.lang.String
 
@@ -2539,11 +2891,17 @@ type RStudioServerProAccessStatus = _RStudioServerProAccessStatus | java.lang.St
 */
 type RStudioServerProUserGroup = _RStudioServerProUserGroup | java.lang.String
 
+type RandomSeed = Double
+
 type RealtimeInferenceInstanceTypes = js.Array[ProductionVariantInstanceType]
 
 type RecommendationFailureReason = java.lang.String
 
 type RecommendationJobArn = java.lang.String
+
+type RecommendationJobCompilationJobName = java.lang.String
+
+type RecommendationJobDataInputConfig = java.lang.String
 
 type RecommendationJobDescription = java.lang.String
 
@@ -2570,6 +2928,14 @@ type RecommendationJobSupportedInstanceTypes = js.Array[String]
   - java.lang.String
 */
 type RecommendationJobType = _RecommendationJobType | java.lang.String
+
+type RecommendationJobVpcSecurityGroupId = java.lang.String
+
+type RecommendationJobVpcSecurityGroupIds = js.Array[RecommendationJobVpcSecurityGroupId]
+
+type RecommendationJobVpcSubnetId = java.lang.String
+
+type RecommendationJobVpcSubnets = js.Array[RecommendationJobVpcSubnetId]
 
 type RecommendationStepType = BENCHMARK | java.lang.String
 
@@ -2605,6 +2971,8 @@ type RedshiftResultFormat = _RedshiftResultFormat | java.lang.String
 
 type RedshiftUserName = java.lang.String
 
+type ReleaseNotes = java.lang.String
+
 type RenderingErrorList = js.Array[RenderingError]
 
 /* Rewritten from type alias, can be one of: 
@@ -2615,6 +2983,8 @@ type RenderingErrorList = js.Array[RenderingError]
 type RepositoryAccessMode = _RepositoryAccessMode | java.lang.String
 
 type RepositoryCredentialsProviderArn = java.lang.String
+
+type RepositoryUrl = java.lang.String
 
 type ResourceArn = java.lang.String
 
@@ -2640,6 +3010,8 @@ type ResourceRetainedBillableTimeInSeconds = Double
   - typings.awsSdk.awsSdkStrings.Project_
   - typings.awsSdk.awsSdkStrings.FeatureMetadata
   - typings.awsSdk.awsSdkStrings.HyperParameterTuningJob
+  - typings.awsSdk.awsSdkStrings.ModelCard
+  - typings.awsSdk.awsSdkStrings.Model_
   - java.lang.String
 */
 type ResourceType = _ResourceType | java.lang.String
@@ -2694,7 +3066,13 @@ type S3DataDistribution = _S3DataDistribution | java.lang.String
 */
 type S3DataType = _S3DataType | java.lang.String
 
+type S3OutputPath = java.lang.String
+
 type S3Uri = java.lang.String
+
+type SageMakerImageVersionAlias = java.lang.String
+
+type SageMakerImageVersionAliases = js.Array[SageMakerImageVersionAlias]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Enabled_
@@ -2702,6 +3080,8 @@ type S3Uri = java.lang.String
   - java.lang.String
 */
 type SagemakerServicecatalogStatus = _SagemakerServicecatalogStatus | java.lang.String
+
+type SampleWeightAttributeName = java.lang.String
 
 type SamplingPercentage = Double
 
@@ -2762,9 +3142,13 @@ type ServerlessMaxConcurrency = Double
 
 type ServerlessMemorySizeInMB = Double
 
+type ServerlessProvisionedConcurrency = Double
+
 type ServiceCatalogEntityId = java.lang.String
 
 type SessionExpirationDurationInSeconds = Double
+
+type ShadowModelVariantConfigList = js.Array[ShadowModelVariantConfig]
 
 type SingleSignOnUserIdentifier = java.lang.String
 
@@ -2814,6 +3198,14 @@ type SortExperimentsBy = _SortExperimentsBy | java.lang.String
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Name_
   - typings.awsSdk.awsSdkStrings.CreationTime
+  - typings.awsSdk.awsSdkStrings.Status_
+  - java.lang.String
+*/
+type SortInferenceExperimentsBy = _SortInferenceExperimentsBy | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Name_
+  - typings.awsSdk.awsSdkStrings.CreationTime
   - java.lang.String
 */
 type SortLineageGroupsBy = _SortLineageGroupsBy | java.lang.String
@@ -2858,6 +3250,31 @@ type SourceAlgorithmList = js.Array[SourceAlgorithm]
 type SourceType = java.lang.String
 
 type SourceUri = java.lang.String
+
+type SpaceArn = java.lang.String
+
+type SpaceList = js.Array[SpaceDetails]
+
+type SpaceName = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CreationTime
+  - typings.awsSdk.awsSdkStrings.LastModifiedTime
+  - java.lang.String
+*/
+type SpaceSortKey = _SpaceSortKey | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Deleting_
+  - typings.awsSdk.awsSdkStrings.Failed_
+  - typings.awsSdk.awsSdkStrings.InService
+  - typings.awsSdk.awsSdkStrings.Pending_
+  - typings.awsSdk.awsSdkStrings.Updating_
+  - typings.awsSdk.awsSdkStrings.Update_Failed_
+  - typings.awsSdk.awsSdkStrings.Delete_Failed_
+  - java.lang.String
+*/
+type SpaceStatus = _SpaceStatus | java.lang.String
 
 type SpawnRate = Double
 
@@ -2957,6 +3374,13 @@ type SubscribedWorkteams = js.Array[SubscribedWorkteam]
 
 type Success = scala.Boolean
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Glue_
+  - typings.awsSdk.awsSdkStrings.Iceberg
+  - java.lang.String
+*/
+type TableFormat = _TableFormat | java.lang.String
+
 type TableName = java.lang.String
 
 type TagKey = java.lang.String
@@ -3005,6 +3429,8 @@ type TargetAttributeName = java.lang.String
   - java.lang.String
 */
 type TargetDevice = _TargetDevice | java.lang.String
+
+type TargetLabelColumn = java.lang.String
 
 type TargetObjectiveMetricValue = Double
 
@@ -3190,6 +3616,15 @@ type TrainingJobStatusCounter = Double
 
 type TrainingJobSummaries = js.Array[TrainingJobSummary]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Platform_
+  - typings.awsSdk.awsSdkStrings.Vpc_
+  - java.lang.String
+*/
+type TrainingRepositoryAccessMode = _TrainingRepositoryAccessMode | java.lang.String
+
+type TrainingRepositoryCredentialsProviderArn = java.lang.String
+
 type TrainingTimeInSeconds = Double
 
 type TransformEnvironmentKey = java.lang.String
@@ -3285,6 +3720,8 @@ type TrialComponentSimpleSummaries = js.Array[TrialComponentSimpleSummary]
 
 type TrialComponentSourceArn = java.lang.String
 
+type TrialComponentSources = js.Array[TrialComponentSource]
+
 type TrialComponentStatusMessage = java.lang.String
 
 type TrialComponentSummaries = js.Array[TrialComponentSummary]
@@ -3320,6 +3757,8 @@ type UserProfileSortKey = _UserProfileSortKey | java.lang.String
 */
 type UserProfileStatus = _UserProfileStatus | java.lang.String
 
+type UtilizationMetric = Double
+
 type ValidationFraction = Double
 
 type VariantName = java.lang.String
@@ -3347,6 +3786,15 @@ type VariantStatus = _VariantStatus | java.lang.String
 type VariantStatusMessage = java.lang.String
 
 type VariantWeight = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NOT_PROVIDED
+  - typings.awsSdk.awsSdkStrings.STABLE
+  - typings.awsSdk.awsSdkStrings.TO_BE_ARCHIVED
+  - typings.awsSdk.awsSdkStrings.ARCHIVED
+  - java.lang.String
+*/
+type VendorGuidance = _VendorGuidance | java.lang.String
 
 type VersionId = java.lang.String
 

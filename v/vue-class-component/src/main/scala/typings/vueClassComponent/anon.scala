@@ -3,19 +3,24 @@ package typings.vueClassComponent
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.ArrayConstructor
+import typings.std.BooleanConstructor
 import typings.std.Element
 import typings.std.Event
 import typings.std.Exclude
+import typings.std.FunctionConstructor
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import typings.std.HTMLSelectElement
 import typings.std.HTMLTextAreaElement
 import typings.std.KeyboardEvent
 import typings.std.Node
+import typings.std.NonNullable
 import typings.std.Omit
 import typings.std.Parameters
 import typings.std.Record
 import typings.std.ShadowRoot
+import typings.std.StringConstructor
 import typings.vue.mod.EffectScope_
 import typings.vueClassComponent.vueClassComponentBooleans.`false`
 import typings.vueClassComponent.vueClassComponentBooleans.`true`
@@ -29,6 +34,8 @@ import typings.vueClassComponent.vueClassComponentStrings.fill
 import typings.vueClassComponent.vueClassComponentStrings.filter
 import typings.vueClassComponent.vueClassComponentStrings.find
 import typings.vueClassComponent.vueClassComponentStrings.findIndex
+import typings.vueClassComponent.vueClassComponentStrings.findLast
+import typings.vueClassComponent.vueClassComponentStrings.findLastIndex
 import typings.vueClassComponent.vueClassComponentStrings.flat
 import typings.vueClassComponent.vueClassComponentStrings.flatMap
 import typings.vueClassComponent.vueClassComponentStrings.forEach
@@ -59,6 +66,8 @@ import typings.vueReactivity.mod.ComputedRef
 import typings.vueReactivity.mod.CustomRefFactory
 import typings.vueReactivity.mod.DebuggerOptions
 import typings.vueReactivity.mod.DeepReadonly
+import typings.vueReactivity.mod.MaybeRef
+import typings.vueReactivity.mod.MaybeRefOrGetter
 import typings.vueReactivity.mod.Raw
 import typings.vueReactivity.mod.ReactiveEffectOptions
 import typings.vueReactivity.mod.ReactiveEffectRunner
@@ -72,12 +81,19 @@ import typings.vueReactivity.mod.UnwrapNestedRefs
 import typings.vueReactivity.mod.UnwrapRef
 import typings.vueReactivity.mod.WritableComputedOptions
 import typings.vueReactivity.mod.WritableComputedRef
+import typings.vueRuntimeCore.anon.DefaultAny
 import typings.vueRuntimeCore.anon.ElementvnodeVNodeRenderer
+import typings.vueRuntimeCore.anon.Emits
+import typings.vueRuntimeCore.anon.EmitsProps
+import typings.vueRuntimeCore.anon.EmitsPropsSlots
 import typings.vueRuntimeCore.anon.IsFragment
 import typings.vueRuntimeCore.anon.IsSuspense
 import typings.vueRuntimeCore.anon.IsTeleport
-import typings.vueRuntimeCore.anon.Props
+import typings.vueRuntimeCore.anon.Local
+import typings.vueRuntimeCore.anon.PickComponentOptionsanyan
+import typings.vueRuntimeCore.anon.PropsSlots
 import typings.vueRuntimeCore.anon.ReadonlyMultiWatchSources
+import typings.vueRuntimeCore.anon.Required
 import typings.vueRuntimeCore.anon.ShadowRootvnodeVNodeRende
 import typings.vueRuntimeCore.mod.App
 import typings.vueRuntimeCore.mod.AsyncComponentLoader
@@ -101,6 +117,8 @@ import typings.vueRuntimeCore.mod.Constructor
 import typings.vueRuntimeCore.mod.Data
 import typings.vueRuntimeCore.mod.DebuggerHook
 import typings.vueRuntimeCore.mod.DefineComponent_
+import typings.vueRuntimeCore.mod.DefineModelOptions
+import typings.vueRuntimeCore.mod.DefineProps_
 import typings.vueRuntimeCore.mod.DevtoolsHook
 import typings.vueRuntimeCore.mod.Directive
 import typings.vueRuntimeCore.mod.DirectiveArguments
@@ -119,6 +137,7 @@ import typings.vueRuntimeCore.mod.MapSources
 import typings.vueRuntimeCore.mod.MethodOptions
 import typings.vueRuntimeCore.mod.MultiWatchSources
 import typings.vueRuntimeCore.mod.ObjectDirective
+import typings.vueRuntimeCore.mod.PropOptions
 import typings.vueRuntimeCore.mod.PropsWithDefaults
 import typings.vueRuntimeCore.mod.PublicProps
 import typings.vueRuntimeCore.mod.RawChildren
@@ -129,10 +148,13 @@ import typings.vueRuntimeCore.mod.Renderer
 import typings.vueRuntimeCore.mod.RendererElement
 import typings.vueRuntimeCore.mod.RendererNode
 import typings.vueRuntimeCore.mod.RendererOptions
+import typings.vueRuntimeCore.mod.ResolveProps
 import typings.vueRuntimeCore.mod.SSRSlot
 import typings.vueRuntimeCore.mod.SchedulerJobs
 import typings.vueRuntimeCore.mod.SetupContext
 import typings.vueRuntimeCore.mod.Slots
+import typings.vueRuntimeCore.mod.SlotsType
+import typings.vueRuntimeCore.mod.StrictUnwrapSlotsType
 import typings.vueRuntimeCore.mod.SuspenseProps
 import typings.vueRuntimeCore.mod.TeleportProps
 import typings.vueRuntimeCore.mod.TransitionHooks
@@ -149,19 +171,152 @@ import typings.vueRuntimeCore.mod.WatchOptionsBase
 import typings.vueRuntimeCore.mod.WatchSource
 import typings.vueRuntimeCore.mod.WatchStopHandle
 import typings.vueRuntimeDom.anon.Instantiable
+import typings.vueRuntimeDom.anon.Props
 import typings.vueRuntimeDom.anon.Styles
 import typings.vueRuntimeDom.mod.InnerComponentDef
 import typings.vueRuntimeDom.mod.ModelDirective
 import typings.vueRuntimeDom.mod.TransitionProps
 import typings.vueRuntimeDom.mod.VShowElement
 import typings.vueRuntimeDom.mod.VueElementConstructor
+import typings.vueShared.mod.IfAny
 import typings.vueShared.mod.NormalizedStyle
-import typings.vueShared.mod.ShapeFlags
+import typings.vueShared.mod.Prettify
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
+  
+  trait Typeof extends StObject {
+    
+    /* standard es5 */
+    def appear[T](): Boolean
+    def appear[T](value: T): Boolean
+    @JSName("appear")
+    var appear_Original: BooleanConstructor
+    
+    /* standard es5 */
+    def mode(): String
+    def mode(value: Any): String
+    @JSName("mode")
+    var mode_Original: StringConstructor
+    
+    var onAfterAppear: js.Array[ArrayConstructor | FunctionConstructor]
+    
+    var onAfterEnter: js.Array[ArrayConstructor | FunctionConstructor]
+    
+    var onAfterLeave: js.Array[ArrayConstructor | FunctionConstructor]
+    
+    var onAppear: js.Array[ArrayConstructor | FunctionConstructor]
+    
+    var onAppearCancelled: js.Array[ArrayConstructor | FunctionConstructor]
+    
+    var onBeforeAppear: js.Array[ArrayConstructor | FunctionConstructor]
+    
+    var onBeforeEnter: js.Array[ArrayConstructor | FunctionConstructor]
+    
+    var onBeforeLeave: js.Array[ArrayConstructor | FunctionConstructor]
+    
+    var onEnter: js.Array[ArrayConstructor | FunctionConstructor]
+    
+    var onEnterCancelled: js.Array[ArrayConstructor | FunctionConstructor]
+    
+    var onLeave: js.Array[ArrayConstructor | FunctionConstructor]
+    
+    var onLeaveCancelled: js.Array[ArrayConstructor | FunctionConstructor]
+    
+    /* standard es5 */
+    def persisted[T](): Boolean
+    def persisted[T](value: T): Boolean
+    @JSName("persisted")
+    var persisted_Original: BooleanConstructor
+  }
+  object Typeof {
+    
+    inline def apply(
+      appear: BooleanConstructor,
+      mode: StringConstructor,
+      onAfterAppear: js.Array[ArrayConstructor | FunctionConstructor],
+      onAfterEnter: js.Array[ArrayConstructor | FunctionConstructor],
+      onAfterLeave: js.Array[ArrayConstructor | FunctionConstructor],
+      onAppear: js.Array[ArrayConstructor | FunctionConstructor],
+      onAppearCancelled: js.Array[ArrayConstructor | FunctionConstructor],
+      onBeforeAppear: js.Array[ArrayConstructor | FunctionConstructor],
+      onBeforeEnter: js.Array[ArrayConstructor | FunctionConstructor],
+      onBeforeLeave: js.Array[ArrayConstructor | FunctionConstructor],
+      onEnter: js.Array[ArrayConstructor | FunctionConstructor],
+      onEnterCancelled: js.Array[ArrayConstructor | FunctionConstructor],
+      onLeave: js.Array[ArrayConstructor | FunctionConstructor],
+      onLeaveCancelled: js.Array[ArrayConstructor | FunctionConstructor],
+      persisted: BooleanConstructor
+    ): Typeof = {
+      val __obj = js.Dynamic.literal(appear = appear.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], onAfterAppear = onAfterAppear.asInstanceOf[js.Any], onAfterEnter = onAfterEnter.asInstanceOf[js.Any], onAfterLeave = onAfterLeave.asInstanceOf[js.Any], onAppear = onAppear.asInstanceOf[js.Any], onAppearCancelled = onAppearCancelled.asInstanceOf[js.Any], onBeforeAppear = onBeforeAppear.asInstanceOf[js.Any], onBeforeEnter = onBeforeEnter.asInstanceOf[js.Any], onBeforeLeave = onBeforeLeave.asInstanceOf[js.Any], onEnter = onEnter.asInstanceOf[js.Any], onEnterCancelled = onEnterCancelled.asInstanceOf[js.Any], onLeave = onLeave.asInstanceOf[js.Any], onLeaveCancelled = onLeaveCancelled.asInstanceOf[js.Any], persisted = persisted.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Typeof]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeof] (val x: Self) extends AnyVal {
+      
+      inline def setAppear(value: BooleanConstructor): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
+      
+      inline def setMode(value: StringConstructor): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      
+      inline def setOnAfterAppear(value: js.Array[ArrayConstructor | FunctionConstructor]): Self = StObject.set(x, "onAfterAppear", value.asInstanceOf[js.Any])
+      
+      inline def setOnAfterAppearVarargs(value: (ArrayConstructor | FunctionConstructor)*): Self = StObject.set(x, "onAfterAppear", js.Array(value*))
+      
+      inline def setOnAfterEnter(value: js.Array[ArrayConstructor | FunctionConstructor]): Self = StObject.set(x, "onAfterEnter", value.asInstanceOf[js.Any])
+      
+      inline def setOnAfterEnterVarargs(value: (ArrayConstructor | FunctionConstructor)*): Self = StObject.set(x, "onAfterEnter", js.Array(value*))
+      
+      inline def setOnAfterLeave(value: js.Array[ArrayConstructor | FunctionConstructor]): Self = StObject.set(x, "onAfterLeave", value.asInstanceOf[js.Any])
+      
+      inline def setOnAfterLeaveVarargs(value: (ArrayConstructor | FunctionConstructor)*): Self = StObject.set(x, "onAfterLeave", js.Array(value*))
+      
+      inline def setOnAppear(value: js.Array[ArrayConstructor | FunctionConstructor]): Self = StObject.set(x, "onAppear", value.asInstanceOf[js.Any])
+      
+      inline def setOnAppearCancelled(value: js.Array[ArrayConstructor | FunctionConstructor]): Self = StObject.set(x, "onAppearCancelled", value.asInstanceOf[js.Any])
+      
+      inline def setOnAppearCancelledVarargs(value: (ArrayConstructor | FunctionConstructor)*): Self = StObject.set(x, "onAppearCancelled", js.Array(value*))
+      
+      inline def setOnAppearVarargs(value: (ArrayConstructor | FunctionConstructor)*): Self = StObject.set(x, "onAppear", js.Array(value*))
+      
+      inline def setOnBeforeAppear(value: js.Array[ArrayConstructor | FunctionConstructor]): Self = StObject.set(x, "onBeforeAppear", value.asInstanceOf[js.Any])
+      
+      inline def setOnBeforeAppearVarargs(value: (ArrayConstructor | FunctionConstructor)*): Self = StObject.set(x, "onBeforeAppear", js.Array(value*))
+      
+      inline def setOnBeforeEnter(value: js.Array[ArrayConstructor | FunctionConstructor]): Self = StObject.set(x, "onBeforeEnter", value.asInstanceOf[js.Any])
+      
+      inline def setOnBeforeEnterVarargs(value: (ArrayConstructor | FunctionConstructor)*): Self = StObject.set(x, "onBeforeEnter", js.Array(value*))
+      
+      inline def setOnBeforeLeave(value: js.Array[ArrayConstructor | FunctionConstructor]): Self = StObject.set(x, "onBeforeLeave", value.asInstanceOf[js.Any])
+      
+      inline def setOnBeforeLeaveVarargs(value: (ArrayConstructor | FunctionConstructor)*): Self = StObject.set(x, "onBeforeLeave", js.Array(value*))
+      
+      inline def setOnEnter(value: js.Array[ArrayConstructor | FunctionConstructor]): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
+      
+      inline def setOnEnterCancelled(value: js.Array[ArrayConstructor | FunctionConstructor]): Self = StObject.set(x, "onEnterCancelled", value.asInstanceOf[js.Any])
+      
+      inline def setOnEnterCancelledVarargs(value: (ArrayConstructor | FunctionConstructor)*): Self = StObject.set(x, "onEnterCancelled", js.Array(value*))
+      
+      inline def setOnEnterVarargs(value: (ArrayConstructor | FunctionConstructor)*): Self = StObject.set(x, "onEnter", js.Array(value*))
+      
+      inline def setOnLeave(value: js.Array[ArrayConstructor | FunctionConstructor]): Self = StObject.set(x, "onLeave", value.asInstanceOf[js.Any])
+      
+      inline def setOnLeaveCancelled(value: js.Array[ArrayConstructor | FunctionConstructor]): Self = StObject.set(x, "onLeaveCancelled", value.asInstanceOf[js.Any])
+      
+      inline def setOnLeaveCancelledVarargs(value: (ArrayConstructor | FunctionConstructor)*): Self = StObject.set(x, "onLeaveCancelled", js.Array(value*))
+      
+      inline def setOnLeaveVarargs(value: (ArrayConstructor | FunctionConstructor)*): Self = StObject.set(x, "onLeave", js.Array(value*))
+      
+      inline def setPersisted(value: BooleanConstructor): Self = StObject.set(x, "persisted", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  @js.native
+  trait TypeofBaseTransitionProps
+    extends StObject
+       with Typeof
   
   trait TypeofFragment extends StObject {
     
@@ -238,7 +393,9 @@ object anon {
   @js.native
   trait TypeofVue extends StObject {
     
-    val BaseTransition: Instantiable0[Props] = js.native
+    val BaseTransition: Instantiable0[PropsSlots] = js.native
+    
+    val BaseTransitionPropsValidators: TypeofBaseTransitionProps = js.native
     
     val Comment: js.Symbol = js.native
     
@@ -261,12 +418,15 @@ object anon {
     
     val Text: js.Symbol = js.native
     
-    val TransitionGroup: Instantiable0[typings.vueRuntimeDom.anon.Props] = js.native
+    val TransitionGroup: Instantiable0[Props] = js.native
     
     @JSName("Transition")
-    val Transition_Original: FunctionalComponent[TransitionProps, js.Object] = js.native
+    val Transition_Original: FunctionalComponent[TransitionProps, js.Object, Any] = js.native
     @JSName("Transition")
-    def Transition_expose(props: TransitionProps, ctx: Omit[SetupContext[js.Object], expose]): Any = js.native
+    def Transition_expose(
+      props: TransitionProps,
+      ctx: Omit[SetupContext[js.Object, IfAny[Any, js.Object, SlotsType[Any]]], expose]
+    ): Any = js.native
     
     var VueElement: Instantiable1[/* _def */ InnerComponentDef, typings.vue.mod.VueElement] = js.native
     
@@ -304,10 +464,26 @@ object anon {
     def compile(template: HTMLElement): RenderFunction = js.native
     def compile(template: HTMLElement, options: CompilerOptions): RenderFunction = js.native
     
+    def compileToFunction(template: String): RenderFunction = js.native
+    def compileToFunction(template: String, options: CompilerOptions): RenderFunction = js.native
+    def compileToFunction(template: HTMLElement): RenderFunction = js.native
+    def compileToFunction(template: HTMLElement, options: CompilerOptions): RenderFunction = js.native
+    
     val computed: Typeofcomputed = js.native
     
     def createApp(rootComponent: Component[Any, Any, Any, ComputedOptions, MethodOptions]): App[Element] = js.native
     def createApp(rootComponent: Component[Any, Any, Any, ComputedOptions, MethodOptions], rootProps: Data): App[Element] = js.native
+    
+    def createBaseVNode(
+      `type`: VNodeTypes | ClassComponent | js.Symbol,
+      props: js.UndefOr[(Data & VNodeProps) | Null],
+      children: js.UndefOr[Any],
+      patchFlag: js.UndefOr[Double],
+      dynamicProps: js.UndefOr[js.Array[String] | Null],
+      shapeFlag: js.UndefOr[Double],
+      isBlockNode: js.UndefOr[Boolean],
+      needFullChildrenNormalization: js.UndefOr[Boolean]
+    ): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
     
     def createBlock(`type`: ClassComponent): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
     def createBlock(`type`: ClassComponent, props: Null, children: Any): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
@@ -472,7 +648,7 @@ object anon {
       children: js.UndefOr[Any],
       patchFlag: js.UndefOr[Double],
       dynamicProps: js.UndefOr[js.Array[String] | Null],
-      shapeFlag: js.UndefOr[Double | ShapeFlags],
+      shapeFlag: js.UndefOr[Double],
       isBlockNode: js.UndefOr[Boolean],
       needFullChildrenNormalization: js.UndefOr[Boolean]
     ): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
@@ -510,58 +686,30 @@ object anon {
     def defineAsyncComponent[T /* <: Component[Any, Any, Any, ComputedOptions, MethodOptions] */](source: AsyncComponentLoader[T]): T = js.native
     def defineAsyncComponent[T /* <: Component[Any, Any, Any, ComputedOptions, MethodOptions] */](source: AsyncComponentOptions[T]): T = js.native
     
-    def defineComponent[Props, RawBindings](
+    def defineComponent[Props /* <: Record[String, Any] */, E /* <: EmitsOptions */, EE /* <: String */, S /* <: SlotsType[Record[String, Any]] */](
       setup: js.Function2[
           /* props */ Props, 
-          /* ctx */ SetupContext[EmitsOptions], 
-          RawBindings | RenderFunction
+          /* ctx */ SetupContext[E, S], 
+          RenderFunction | js.Promise[RenderFunction]
         ]
-    ): DefineComponent_[
-        Props, 
-        RawBindings, 
-        js.Object, 
-        ComputedOptions, 
-        MethodOptions, 
-        ComponentOptionsMixin, 
-        ComponentOptionsMixin, 
-        js.Object, 
-        String, 
-        PublicProps, 
-        /* import warning: importer.ImportType#apply Failed type conversion: Props extends @vue/runtime-core.@vue/runtime-core.ComponentPropsOptions<@vue/runtime-core.@vue/runtime-core.Data> ? @vue/runtime-core.@vue/runtime-core.ExtractPropTypes<Props> : Props */ js.Any, 
-        ExtractDefaultPropTypes[Props]
-      ] = js.native
-    def defineComponent[PropNames /* <: String */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
-      options: ComponentOptionsWithArrayProps[
-          PropNames, 
-          RawBindings, 
-          D, 
-          C, 
-          M, 
-          Mixin, 
-          Extends, 
-          E, 
-          EE, 
-          I, 
-          II, 
-          (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in PropNames ]:? any} */ js.Any) & EmitsToProps[E]
-        ]
-    ): DefineComponent_[
-        /* import warning: importer.ImportType#apply Failed type conversion: {[ key in PropNames ]:? any} */ js.Any, 
-        RawBindings, 
-        D, 
-        C, 
-        M, 
-        Mixin, 
-        Extends, 
-        E, 
-        EE, 
-        PublicProps, 
-        /* import warning: importer.ImportType#apply Failed type conversion: std.Readonly<{[ key in PropNames ]:? any}> extends @vue/runtime-core.@vue/runtime-core.ComponentPropsOptions<@vue/runtime-core.@vue/runtime-core.Data> ? @vue/runtime-core.@vue/runtime-core.ExtractPropTypes<std.Readonly<{[ key in PropNames ]:? any}>> : std.Readonly<{[ key in PropNames ]:? any}> */ js.Any, 
-        ExtractDefaultPropTypes[
-          /* import warning: importer.ImportType#apply Failed type conversion: {[ key in PropNames ]:? any} */ js.Any
-        ]
-      ] = js.native
-    def defineComponent[PropsOptions /* <: ComponentPropsOptions[Data] */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
+    ): js.Function1[/* props */ Props & EmitsToProps[E], Any] = js.native
+    def defineComponent[Props /* <: Record[String, Any] */, E /* <: EmitsOptions */, EE /* <: String */, S /* <: SlotsType[Record[String, Any]] */](
+      setup: js.Function2[
+          /* props */ Props, 
+          /* ctx */ SetupContext[E, S], 
+          RenderFunction | js.Promise[RenderFunction]
+        ],
+      options: PickComponentOptionsanyan & (EmitsPropsSlots[Props, E, EE, S])
+    ): js.Function1[/* props */ Props & EmitsToProps[E], Any] = js.native
+    def defineComponent[Props /* <: Record[String, Any] */, E /* <: EmitsOptions */, EE /* <: String */, S /* <: SlotsType[Record[String, Any]] */](
+      setup: js.Function2[
+          /* props */ Props, 
+          /* ctx */ SetupContext[E, S], 
+          RenderFunction | js.Promise[RenderFunction]
+        ],
+      options: PickComponentOptionsanyan & (EmitsProps[Props, E, EE, S])
+    ): js.Function1[/* props */ Props & EmitsToProps[E], Any] = js.native
+    def defineComponent[PropsOptions /* <: ComponentPropsOptions[Data] */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, S /* <: SlotsType[Record[String, Any]] */, I /* <: ComponentInjectOptions */, II /* <: String */](
       options: ComponentOptionsWithObjectProps[
           PropsOptions, 
           RawBindings, 
@@ -574,7 +722,8 @@ object anon {
           EE, 
           I, 
           II, 
-          ExtractPropTypes[PropsOptions] & EmitsToProps[E], 
+          S, 
+          Prettify[ExtractPropTypes[PropsOptions] & EmitsToProps[E]], 
           ExtractDefaultPropTypes[PropsOptions]
         ]
     ): DefineComponent_[
@@ -588,11 +737,12 @@ object anon {
         E, 
         EE, 
         PublicProps, 
-        /* import warning: importer.ImportType#apply Failed type conversion: PropsOptions extends @vue/runtime-core.@vue/runtime-core.ComponentPropsOptions<@vue/runtime-core.@vue/runtime-core.Data> ? @vue/runtime-core.@vue/runtime-core.ExtractPropTypes<PropsOptions> : PropsOptions */ js.Any, 
-        ExtractDefaultPropTypes[PropsOptions]
+        ResolveProps[PropsOptions, E], 
+        ExtractDefaultPropTypes[PropsOptions], 
+        S
       ] = js.native
-    def defineComponent[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
-      options: ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, I, II, Props & EmitsToProps[E]]
+    def defineComponent[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, S /* <: SlotsType[Record[String, Any]] */, I /* <: ComponentInjectOptions */, II /* <: String */](
+      options: ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, I, II, S, Props & EmitsToProps[E]]
     ): DefineComponent_[
         Props, 
         RawBindings, 
@@ -604,19 +754,53 @@ object anon {
         E, 
         EE, 
         PublicProps, 
-        /* import warning: importer.ImportType#apply Failed type conversion: Props extends @vue/runtime-core.@vue/runtime-core.ComponentPropsOptions<@vue/runtime-core.@vue/runtime-core.Data> ? @vue/runtime-core.@vue/runtime-core.ExtractPropTypes<Props> : Props */ js.Any, 
-        ExtractDefaultPropTypes[Props]
+        ResolveProps[Props, E], 
+        ExtractDefaultPropTypes[Props], 
+        S
+      ] = js.native
+    def defineComponent[PropNames /* <: String */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, S /* <: SlotsType[Record[String, Any]] */, I /* <: ComponentInjectOptions */, II /* <: String */, Props](
+      options: ComponentOptionsWithArrayProps[
+          PropNames, 
+          RawBindings, 
+          D, 
+          C, 
+          M, 
+          Mixin, 
+          Extends, 
+          E, 
+          EE, 
+          I, 
+          II, 
+          S, 
+          Prettify[
+            (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in PropNames ]:? any} */ js.Any) & EmitsToProps[E]
+          ]
+        ]
+    ): DefineComponent_[
+        Props, 
+        RawBindings, 
+        D, 
+        C, 
+        M, 
+        Mixin, 
+        Extends, 
+        E, 
+        EE, 
+        PublicProps, 
+        ResolveProps[Props, E], 
+        ExtractDefaultPropTypes[Props], 
+        S
       ] = js.native
     
     def defineCustomElement(options: Instantiable): VueElementConstructor[js.Object] = js.native
     def defineCustomElement[Props, RawBindings](
       setup: js.Function2[
           /* props */ Props, 
-          /* ctx */ SetupContext[EmitsOptions], 
+          /* ctx */ SetupContext[EmitsOptions, js.Object], 
           RawBindings | RenderFunction
         ]
     ): VueElementConstructor[Props] = js.native
-    def defineCustomElement[PropsOptions /* <: ComponentPropsOptions[Data] */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
+    def defineCustomElement[PropsOptions /* <: ComponentPropsOptions[Data] */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */, S /* <: SlotsType[Record[String, Any]] */](
       options: (ComponentOptionsWithObjectProps[
           PropsOptions, 
           RawBindings, 
@@ -629,11 +813,12 @@ object anon {
           EE, 
           I, 
           II, 
-          ExtractPropTypes[PropsOptions] & EmitsToProps[E], 
+          S, 
+          Prettify[ExtractPropTypes[PropsOptions] & EmitsToProps[E]], 
           ExtractDefaultPropTypes[PropsOptions]
         ]) & Styles
     ): VueElementConstructor[ExtractPropTypes[PropsOptions]] = js.native
-    def defineCustomElement[PropNames /* <: String */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
+    def defineCustomElement[PropNames /* <: String */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */, S /* <: SlotsType[Record[String, Any]] */](
       options: (ComponentOptionsWithArrayProps[
           PropNames, 
           RawBindings, 
@@ -646,30 +831,70 @@ object anon {
           EE, 
           I, 
           II, 
-          (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in PropNames ]:? any} */ js.Any) & EmitsToProps[E]
+          S, 
+          Prettify[
+            (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in PropNames ]:? any} */ js.Any) & EmitsToProps[E]
+          ]
         ]) & Styles
     ): VueElementConstructor[
         /* import warning: importer.ImportType#apply Failed type conversion: {[ K in PropNames ]: any} */ js.Any
       ] = js.native
-    def defineCustomElement[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
-      options: (ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, I, II, Props & EmitsToProps[E]]) & Styles
+    def defineCustomElement[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */, S /* <: SlotsType[Record[String, Any]] */](
+      options: (ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, I, II, S, Props & EmitsToProps[E]]) & Styles
     ): VueElementConstructor[Props] = js.native
     
-    def defineEmits[TypeEmit](): TypeEmit = js.native
+    def defineEmits[T /* <: (js.Function1[/* repeated */ Any, Any]) | (Record[String, js.Array[Any]]) */](): /* import warning: importer.ImportType#apply Failed type conversion: T extends (args : ...any): any ? T : @vue/runtime-core.@vue/runtime-core.ShortEmits<T> */ js.Any = js.native
     def defineEmits[E /* <: EmitsOptions */](emitOptions: E): EmitFn[E, /* keyof E */ String] = js.native
     def defineEmits[EE /* <: String */](emitOptions: js.Array[EE]): EmitFn[
         js.Array[EE], 
-        /* keyof std.Array<EE> */ length | toString | toLocaleString | pop | push | concat | join | reverse | shift | slice | sort | splice | unshift | indexOf | lastIndexOf | every | some | forEach | map | filter | reduce | reduceRight | find | findIndex | fill | copyWithin | entries | keys | values | includes | flatMap | flat | at
+        /* keyof std.Array<EE> */ length | toString | toLocaleString | pop | push | concat | join | reverse | shift | slice | sort | splice | unshift | indexOf | lastIndexOf | every | some | forEach | map | filter | reduce | reduceRight | find | findIndex | fill | copyWithin | entries | keys | values | includes | flatMap | flat | at | findLast | findLastIndex
       ] = js.native
     
     def defineExpose[Exposed /* <: Record[String, Any] */](): Unit = js.native
     def defineExpose[Exposed /* <: Record[String, Any] */](exposed: Exposed): Unit = js.native
     
-    def defineProps[TypeProps](): TypeProps = js.native
-    def defineProps[PP /* <: ComponentObjectPropsOptions[Data] */](props: PP): ExtractPropTypes[PP] = js.native
-    def defineProps[PropNames /* <: String */](props: js.Array[PropNames]): /* import warning: importer.ImportType#apply Failed type conversion: {[ key in PropNames ]:? any} */ js.Any = js.native
+    def defineModel[T](): Ref_[js.UndefOr[T]] = js.native
+    def defineModel[T](name: String): Ref_[js.UndefOr[T]] = js.native
+    def defineModel[T](name: String, options: Required & (PropOptions[T, T]) & DefineModelOptions): Ref_[T] = js.native
+    def defineModel[T](name: String, options: (PropOptions[T, T]) & DefineModelOptions): Ref_[js.UndefOr[T]] = js.native
+    def defineModel[T](name: String, options: DefaultAny & (PropOptions[T, T]) & DefineModelOptions): Ref_[T] = js.native
+    def defineModel[T](options: (PropOptions[T, T]) & DefineModelOptions): Ref_[js.UndefOr[T]] = js.native
+    def defineModel[T](options: Required & (PropOptions[T, T]) & DefineModelOptions): Ref_[T] = js.native
+    def defineModel[T](options: DefaultAny & (PropOptions[T, T]) & DefineModelOptions): Ref_[T] = js.native
+    
+    def defineOptions[RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */](): Unit = js.native
+    def defineOptions[RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */](
+      options: (ComponentOptionsWithoutProps[
+          js.Object, 
+          RawBindings, 
+          D, 
+          C, 
+          M, 
+          Mixin, 
+          Extends, 
+          EmitsOptions, 
+          String, 
+          js.Object, 
+          String, 
+          js.Object, 
+          EmitsToProps[EmitsOptions]
+        ]) & Emits
+    ): Unit = js.native
+    
+    def defineProps[TypeProps](): DefineProps_[TypeProps] = js.native
+    def defineProps[PP /* <: ComponentObjectPropsOptions[Data] */](props: PP): Prettify[ExtractPropTypes[PP]] = js.native
+    def defineProps[PropNames /* <: String */](props: js.Array[PropNames]): Prettify[
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ key in PropNames ]:? any} */ js.Any
+      ] = js.native
     
     val defineSSRCustomElement: TypeofdefineSSRCustomElem = js.native
+    
+    def defineSlots[S /* <: Record[String, Any] */](): StrictUnwrapSlotsType[
+        SlotsType[S], 
+        NonNullable[
+          /* import warning: importer.ImportType#apply Failed type conversion: @vue/runtime-core.@vue/runtime-core.SlotsType<S>[symbol] */ js.Any
+        ]
+      ] = js.native
     
     var devtools: DevtoolsHook = js.native
     
@@ -774,8 +999,9 @@ object anon {
           js.Object, 
           String, 
           PublicProps, 
-          /* import warning: importer.ImportType#apply Failed type conversion: {} extends @vue/runtime-core.@vue/runtime-core.ComponentPropsOptions<@vue/runtime-core.@vue/runtime-core.Data> ? @vue/runtime-core.@vue/runtime-core.ExtractPropTypes<{}> : {} */ js.Any, 
-          ExtractDefaultPropTypes[js.Object]
+          ResolveProps[js.Object, js.Object], 
+          ExtractDefaultPropTypes[js.Object], 
+          js.Object
         ]
     ): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
     def h(
@@ -790,8 +1016,9 @@ object anon {
           js.Object, 
           String, 
           PublicProps, 
-          /* import warning: importer.ImportType#apply Failed type conversion: {} extends @vue/runtime-core.@vue/runtime-core.ComponentPropsOptions<@vue/runtime-core.@vue/runtime-core.Data> ? @vue/runtime-core.@vue/runtime-core.ExtractPropTypes<{}> : {} */ js.Any, 
-          ExtractDefaultPropTypes[js.Object]
+          ResolveProps[js.Object, js.Object], 
+          ExtractDefaultPropTypes[js.Object], 
+          js.Object
         ],
       children: RawChildren
     ): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
@@ -805,34 +1032,42 @@ object anon {
       props: /* import warning: importer.ImportType#apply Failed type conversion: {} extends P ? null : never */ js.Any,
       children: RawChildren
     ): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
-    def h[P](`type`: ComponentOptions[P, Any, Any, Any, Any, Any, Any, Any]): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
-    def h[P](`type`: ComponentOptions[P, Any, Any, Any, Any, Any, Any, Any], props: RawProps & P): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
+    def h[P](`type`: ComponentOptions[P, Any, Any, Any, Any, Any, Any, Any, Any]): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
+    def h[P](`type`: ComponentOptions[P, Any, Any, Any, Any, Any, Any, Any, Any], props: RawProps & P): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
     def h[P](
-      `type`: ComponentOptions[P, Any, Any, Any, Any, Any, Any, Any],
+      `type`: ComponentOptions[P, Any, Any, Any, Any, Any, Any, Any, Any],
       props: RawProps & P,
       children: RawChildren
     ): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
     def h[P](
-      `type`: ComponentOptions[P, Any, Any, Any, Any, Any, Any, Any],
+      `type`: ComponentOptions[P, Any, Any, Any, Any, Any, Any, Any, Any],
       props: RawProps & P,
       children: RawSlots
     ): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
     def h[P](
-      `type`: ComponentOptions[P, Any, Any, Any, Any, Any, Any, Any],
+      `type`: ComponentOptions[P, Any, Any, Any, Any, Any, Any, Any, Any],
       props: /* import warning: importer.ImportType#apply Failed type conversion: {} extends P ? null : never */ js.Any
     ): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
     def h[P](
-      `type`: ComponentOptions[P, Any, Any, Any, Any, Any, Any, Any],
+      `type`: ComponentOptions[P, Any, Any, Any, Any, Any, Any, Any, Any],
       props: /* import warning: importer.ImportType#apply Failed type conversion: {} extends P ? null : never */ js.Any,
       children: RawChildren
     ): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
     def h[P](
-      `type`: ComponentOptions[P, Any, Any, Any, Any, Any, Any, Any],
+      `type`: ComponentOptions[P, Any, Any, Any, Any, Any, Any, Any, Any],
       props: /* import warning: importer.ImportType#apply Failed type conversion: {} extends P ? null : never */ js.Any,
       children: RawSlots
     ): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
-    def h[P](`type`: ComponentOptions[P, Any, Any, Any, Any, Any, Any, Any], props: Unit, children: RawChildren): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
-    def h[P](`type`: ComponentOptions[P, Any, Any, Any, Any, Any, Any, Any], props: Unit, children: RawSlots): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
+    def h[P](
+      `type`: ComponentOptions[P, Any, Any, Any, Any, Any, Any, Any, Any],
+      props: Unit,
+      children: RawChildren
+    ): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
+    def h[P](
+      `type`: ComponentOptions[P, Any, Any, Any, Any, Any, Any, Any, Any],
+      props: Unit,
+      children: RawSlots
+    ): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
     def h[P](
       `type`: Component[P, Any, Any, ComputedOptions, MethodOptions],
       props: RawProps & P,
@@ -901,8 +1136,9 @@ object anon {
           js.Object, 
           String, 
           PublicProps, 
-          /* import warning: importer.ImportType#apply Failed type conversion: P extends @vue/runtime-core.@vue/runtime-core.ComponentPropsOptions<@vue/runtime-core.@vue/runtime-core.Data> ? @vue/runtime-core.@vue/runtime-core.ExtractPropTypes<P> : P */ js.Any, 
-          ExtractDefaultPropTypes[P]
+          ResolveProps[P, js.Object], 
+          ExtractDefaultPropTypes[P], 
+          js.Object
         ],
       props: RawProps & P,
       children: RawChildren
@@ -919,8 +1155,9 @@ object anon {
           js.Object, 
           String, 
           PublicProps, 
-          /* import warning: importer.ImportType#apply Failed type conversion: P extends @vue/runtime-core.@vue/runtime-core.ComponentPropsOptions<@vue/runtime-core.@vue/runtime-core.Data> ? @vue/runtime-core.@vue/runtime-core.ExtractPropTypes<P> : P */ js.Any, 
-          ExtractDefaultPropTypes[P]
+          ResolveProps[P, js.Object], 
+          ExtractDefaultPropTypes[P], 
+          js.Object
         ],
       props: RawProps & P,
       children: RawSlots
@@ -937,8 +1174,9 @@ object anon {
           js.Object, 
           String, 
           PublicProps, 
-          /* import warning: importer.ImportType#apply Failed type conversion: P extends @vue/runtime-core.@vue/runtime-core.ComponentPropsOptions<@vue/runtime-core.@vue/runtime-core.Data> ? @vue/runtime-core.@vue/runtime-core.ExtractPropTypes<P> : P */ js.Any, 
-          ExtractDefaultPropTypes[P]
+          ResolveProps[P, js.Object], 
+          ExtractDefaultPropTypes[P], 
+          js.Object
         ],
       props: /* import warning: importer.ImportType#apply Failed type conversion: {} extends P ? null : never */ js.Any
     ): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
@@ -954,8 +1192,9 @@ object anon {
           js.Object, 
           String, 
           PublicProps, 
-          /* import warning: importer.ImportType#apply Failed type conversion: P extends @vue/runtime-core.@vue/runtime-core.ComponentPropsOptions<@vue/runtime-core.@vue/runtime-core.Data> ? @vue/runtime-core.@vue/runtime-core.ExtractPropTypes<P> : P */ js.Any, 
-          ExtractDefaultPropTypes[P]
+          ResolveProps[P, js.Object], 
+          ExtractDefaultPropTypes[P], 
+          js.Object
         ],
       props: /* import warning: importer.ImportType#apply Failed type conversion: {} extends P ? null : never */ js.Any,
       children: RawChildren
@@ -972,8 +1211,9 @@ object anon {
           js.Object, 
           String, 
           PublicProps, 
-          /* import warning: importer.ImportType#apply Failed type conversion: P extends @vue/runtime-core.@vue/runtime-core.ComponentPropsOptions<@vue/runtime-core.@vue/runtime-core.Data> ? @vue/runtime-core.@vue/runtime-core.ExtractPropTypes<P> : P */ js.Any, 
-          ExtractDefaultPropTypes[P]
+          ResolveProps[P, js.Object], 
+          ExtractDefaultPropTypes[P], 
+          js.Object
         ],
       props: /* import warning: importer.ImportType#apply Failed type conversion: {} extends P ? null : never */ js.Any,
       children: RawSlots
@@ -990,8 +1230,9 @@ object anon {
           js.Object, 
           String, 
           PublicProps, 
-          /* import warning: importer.ImportType#apply Failed type conversion: P extends @vue/runtime-core.@vue/runtime-core.ComponentPropsOptions<@vue/runtime-core.@vue/runtime-core.Data> ? @vue/runtime-core.@vue/runtime-core.ExtractPropTypes<P> : P */ js.Any, 
-          ExtractDefaultPropTypes[P]
+          ResolveProps[P, js.Object], 
+          ExtractDefaultPropTypes[P], 
+          js.Object
         ],
       props: Unit,
       children: RawChildren
@@ -1008,32 +1249,33 @@ object anon {
           js.Object, 
           String, 
           PublicProps, 
-          /* import warning: importer.ImportType#apply Failed type conversion: P extends @vue/runtime-core.@vue/runtime-core.ComponentPropsOptions<@vue/runtime-core.@vue/runtime-core.Data> ? @vue/runtime-core.@vue/runtime-core.ExtractPropTypes<P> : P */ js.Any, 
-          ExtractDefaultPropTypes[P]
+          ResolveProps[P, js.Object], 
+          ExtractDefaultPropTypes[P], 
+          js.Object
         ],
       props: Unit,
       children: RawSlots
     ): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
-    def h[P, E /* <: EmitsOptions */](`type`: FunctionalComponent[P, E]): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
-    def h[P, E /* <: EmitsOptions */](`type`: FunctionalComponent[P, E], props: RawProps & P): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
-    def h[P, E /* <: EmitsOptions */](`type`: FunctionalComponent[P, E], props: RawProps & P, children: RawChildren): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
-    def h[P, E /* <: EmitsOptions */](`type`: FunctionalComponent[P, E], props: RawProps & P, children: RawSlots): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
-    def h[P, E /* <: EmitsOptions */](
-      `type`: FunctionalComponent[P, E],
+    def h[P, E /* <: EmitsOptions */, S /* <: Record[String, Any] */](`type`: FunctionalComponent[P, E, S]): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
+    def h[P, E /* <: EmitsOptions */, S /* <: Record[String, Any] */](`type`: FunctionalComponent[P, E, S], props: RawProps & P): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
+    def h[P, E /* <: EmitsOptions */, S /* <: Record[String, Any] */](`type`: FunctionalComponent[P, E, S], props: RawProps & P, children: RawChildren): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
+    def h[P, E /* <: EmitsOptions */, S /* <: Record[String, Any] */](`type`: FunctionalComponent[P, E, S], props: RawProps & P, children: RawSlots): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
+    def h[P, E /* <: EmitsOptions */, S /* <: Record[String, Any] */](
+      `type`: FunctionalComponent[P, E, S],
       props: /* import warning: importer.ImportType#apply Failed type conversion: {} extends P ? null : never */ js.Any
     ): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
-    def h[P, E /* <: EmitsOptions */](
-      `type`: FunctionalComponent[P, E],
+    def h[P, E /* <: EmitsOptions */, S /* <: Record[String, Any] */](
+      `type`: FunctionalComponent[P, E, S],
       props: /* import warning: importer.ImportType#apply Failed type conversion: {} extends P ? null : never */ js.Any,
       children: RawChildren
     ): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
-    def h[P, E /* <: EmitsOptions */](
-      `type`: FunctionalComponent[P, E],
+    def h[P, E /* <: EmitsOptions */, S /* <: Record[String, Any] */](
+      `type`: FunctionalComponent[P, E, S],
       props: /* import warning: importer.ImportType#apply Failed type conversion: {} extends P ? null : never */ js.Any,
       children: RawSlots
     ): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
-    def h[P, E /* <: EmitsOptions */](`type`: FunctionalComponent[P, E], props: Unit, children: RawChildren): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
-    def h[P, E /* <: EmitsOptions */](`type`: FunctionalComponent[P, E], props: Unit, children: RawSlots): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
+    def h[P, E /* <: EmitsOptions */, S /* <: Record[String, Any] */](`type`: FunctionalComponent[P, E, S], props: Unit, children: RawChildren): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
+    def h[P, E /* <: EmitsOptions */, S /* <: Record[String, Any] */](`type`: FunctionalComponent[P, E, S], props: Unit, children: RawSlots): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
     @JSName("h")
     def h_P[P](`type`: String): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
     @JSName("h")
@@ -1061,8 +1303,9 @@ object anon {
           js.Object, 
           String, 
           PublicProps, 
-          /* import warning: importer.ImportType#apply Failed type conversion: P extends @vue/runtime-core.@vue/runtime-core.ComponentPropsOptions<@vue/runtime-core.@vue/runtime-core.Data> ? @vue/runtime-core.@vue/runtime-core.ExtractPropTypes<P> : P */ js.Any, 
-          ExtractDefaultPropTypes[P]
+          ResolveProps[P, js.Object], 
+          ExtractDefaultPropTypes[P], 
+          js.Object
         ]
     ): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
     @JSName("h")
@@ -1078,8 +1321,9 @@ object anon {
           js.Object, 
           String, 
           PublicProps, 
-          /* import warning: importer.ImportType#apply Failed type conversion: P extends @vue/runtime-core.@vue/runtime-core.ComponentPropsOptions<@vue/runtime-core.@vue/runtime-core.Data> ? @vue/runtime-core.@vue/runtime-core.ExtractPropTypes<P> : P */ js.Any, 
-          ExtractDefaultPropTypes[P]
+          ResolveProps[P, js.Object], 
+          ExtractDefaultPropTypes[P], 
+          js.Object
         ],
       props: RawProps & P
     ): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
@@ -1088,6 +1332,8 @@ object anon {
     def handleError(err: Any, instance: Null, `type`: ErrorTypes, throwInDev: Boolean): Unit = js.native
     def handleError(err: Any, instance: ComponentInternalInstance, `type`: ErrorTypes): Unit = js.native
     def handleError(err: Any, instance: ComponentInternalInstance, `type`: ErrorTypes, throwInDev: Boolean): Unit = js.native
+    
+    def hasInjectionContext(): Boolean = js.native
     
     def hydrate(vnode: VNode[Node, Element, StringDictionary[Any]], container: ElementvnodeVNodeRenderer): Unit = js.native
     def hydrate(vnode: VNode[Node, Element, StringDictionary[Any]], container: ShadowRootvnodeVNodeRende): Unit = js.native
@@ -1185,9 +1431,10 @@ object anon {
     
     def popScopeId(): Unit = js.native
     
-    def provide[T](key: String, value: T): Unit = js.native
-    def provide[T](key: Double, value: T): Unit = js.native
-    def provide[T](key: InjectionKey[T], value: T): Unit = js.native
+    def provide[T, K](
+      key: K,
+      value: /* import warning: importer.ImportType#apply Failed type conversion: K extends @vue/runtime-core.@vue/runtime-core.InjectionKey<infer V> ? V : T */ js.Any
+    ): Unit = js.native
     
     def proxyRefs[T /* <: js.Object */](objectWithRefs: T): ShallowUnwrapRef[T] = js.native
     
@@ -1201,9 +1448,9 @@ object anon {
     def readonly[T /* <: js.Object */](target: T): DeepReadonly[UnwrapNestedRefs[T]] = js.native
     
     def ref[T](): Ref_[js.UndefOr[T]] = js.native
-    def ref[T /* <: js.Object */](value: T): /* import warning: importer.ImportType#apply Failed type conversion: [T] extends [@vue/reactivity.@vue/reactivity.Ref<any>] ? T : @vue/reactivity.@vue/reactivity.Ref<@vue/reactivity.@vue/reactivity.UnwrapRef<T>> */ js.Any = js.native
+    def ref[T](value: T): Ref_[UnwrapRef[T]] = js.native
     @JSName("ref")
-    def ref_T_Ref_[T](value: T): Ref_[UnwrapRef[T]] = js.native
+    def ref_T_T[T /* <: Ref_[Any] */](value: T): T = js.native
     
     def registerRuntimeCompiler(_compile: Any): Unit = js.native
     
@@ -1304,6 +1551,7 @@ object anon {
     
     def toRaw[T](observed: T): T = js.native
     
+    def toRef[T](value: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends (): infer R ? std.Readonly<@vue/reactivity.@vue/reactivity.Ref<R>> : T extends @vue/reactivity.@vue/reactivity.Ref<any> ? T : @vue/reactivity.@vue/reactivity.Ref<@vue/reactivity.@vue/reactivity.UnwrapRef<T>> */ js.Any = js.native
     def toRef[T /* <: js.Object */, K /* <: /* keyof T */ String */](`object`: T, key: K): ToRef_[
         /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
       ] = js.native
@@ -1320,6 +1568,8 @@ object anon {
     
     def toRefs[T /* <: js.Object */](`object`: T): ToRefs_[T] = js.native
     
+    def toValue[T](source: MaybeRefOrGetter[T]): T = js.native
+    
     def transformVNodeArgs(): Unit = js.native
     def transformVNodeArgs(
       transformer: js.Function2[
@@ -1335,19 +1585,25 @@ object anon {
     
     def triggerRef(ref: Ref_[Any]): Unit = js.native
     
-    def unref[T](ref: T): T = js.native
-    def unref[T](ref: Ref_[T]): T = js.native
+    def unref[T](ref: MaybeRef[T]): T = js.native
     
-    def useAttrs(): Data = js.native
+    def useAttrs(): /* import warning: importer.ImportType#apply Failed type conversion: @vue/runtime-core.@vue/runtime-core.SetupContext<@vue/runtime-core.@vue/runtime-core.EmitsOptions, {}>['attrs'] */ js.Any = js.native
     
     def useCssModule(): Record[String, String] = js.native
     def useCssModule(name: String): Record[String, String] = js.native
     
     def useCssVars(getter: js.Function1[/* ctx */ Any, Record[String, String]]): Unit = js.native
     
+    def useModel[T /* <: Record[String, Any] */, K /* <: /* keyof T */ String */](props: T, name: K): Ref_[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+      ] = js.native
+    def useModel[T /* <: Record[String, Any] */, K /* <: /* keyof T */ String */](props: T, name: K, options: Local): Ref_[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+      ] = js.native
+    
     def useSSRContext[T](): js.UndefOr[T] = js.native
     
-    def useSlots(): Slots = js.native
+    def useSlots(): /* import warning: importer.ImportType#apply Failed type conversion: @vue/runtime-core.@vue/runtime-core.SetupContext<@vue/runtime-core.@vue/runtime-core.EmitsOptions, {}>['slots'] */ js.Any = js.native
     
     def useTransitionState(): TransitionState = js.native
     
@@ -1475,11 +1731,11 @@ object anon {
     def apply[Props, RawBindings](
       setup: js.Function2[
           /* props */ Props, 
-          /* ctx */ SetupContext[EmitsOptions], 
+          /* ctx */ SetupContext[EmitsOptions, js.Object], 
           RawBindings | RenderFunction
         ]
     ): VueElementConstructor[Props] = js.native
-    def apply[PropNames /* <: String */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
+    def apply[PropNames /* <: String */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */, S /* <: SlotsType[Record[String, Any]] */](
       options: (ComponentOptionsWithArrayProps[
           PropNames, 
           RawBindings, 
@@ -1492,15 +1748,18 @@ object anon {
           EE, 
           I, 
           II, 
-          (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in PropNames ]:? any} */ js.Any) & EmitsToProps[E]
+          S, 
+          Prettify[
+            (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in PropNames ]:? any} */ js.Any) & EmitsToProps[E]
+          ]
         ]) & Styles
     ): VueElementConstructor[
         /* import warning: importer.ImportType#apply Failed type conversion: {[ K in PropNames ]: any} */ js.Any
       ] = js.native
-    def apply[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
-      options: (ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, I, II, Props & EmitsToProps[E]]) & Styles
+    def apply[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */, S /* <: SlotsType[Record[String, Any]] */](
+      options: (ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, I, II, S, Props & EmitsToProps[E]]) & Styles
     ): VueElementConstructor[Props] = js.native
-    def apply[PropsOptions /* <: ComponentPropsOptions[Data] */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
+    def apply[PropsOptions /* <: ComponentPropsOptions[Data] */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */, S /* <: SlotsType[Record[String, Any]] */](
       options: (ComponentOptionsWithObjectProps[
           PropsOptions, 
           RawBindings, 
@@ -1513,7 +1772,8 @@ object anon {
           EE, 
           I, 
           II, 
-          ExtractPropTypes[PropsOptions] & EmitsToProps[E], 
+          S, 
+          Prettify[ExtractPropTypes[PropsOptions] & EmitsToProps[E]], 
           ExtractDefaultPropTypes[PropsOptions]
         ]) & Styles
     ): VueElementConstructor[ExtractPropTypes[PropsOptions]] = js.native

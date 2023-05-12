@@ -22,12 +22,12 @@ trait Application
   var context_Application: RequestContext = js.native
   
   /**
-    * Creates a new document by using an optional base64 encoded .docx file.
+    * Creates a new document by using an optional Base64-encoded .docx file.
     *
     * @remarks
     * [Api set: WordApi 1.3]
     *
-    * @param base64File Optional. The base64 encoded .docx file. The default value is null.
+    * @param base64File Optional. The Base64-encoded .docx file. The default value is null.
     */
   def createDocument(): DocumentCreated = js.native
   def createDocument(base64File: String): DocumentCreated = js.native

@@ -6,12 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait QueueAttributes extends StObject {
   
+  /** method - Action URL method */
   var method: js.UndefOr[String] = js.undefined
   
+  /** postWorkActivitySid - TaskRouter Activity SID */
   var postWorkActivitySid: js.UndefOr[String] = js.undefined
   
+  /** reservationSid - TaskRouter Reservation SID */
   var reservationSid: js.UndefOr[String] = js.undefined
   
+  /** url - Action URL */
   var url: js.UndefOr[String] = js.undefined
 }
 object QueueAttributes {

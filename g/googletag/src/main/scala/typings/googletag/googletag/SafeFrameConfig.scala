@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Configuration object for [SafeFrame](https://support.google.com/admanager/answer/6023110) containers.
   *
-  * **See also**
-  * - {@link PubAdsService.setSafeFrameConfig}
+  * @see {@link PubAdsService.setSafeFrameConfig}
   */
 trait SafeFrameConfig extends StObject {
   

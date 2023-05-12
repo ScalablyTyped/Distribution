@@ -40,8 +40,7 @@ trait ReadonlyMultiWatchSources extends StObject {
   ): js.Array[S] = js.native
   
   def find[S /* <: WatchSource[Any] | js.Object */](
-    predicate: js.ThisFunction3[
-      /* this */ Unit, 
+    predicate: js.Function3[
       /* value */ WatchSource[Any] | js.Object, 
       /* index */ Double, 
       /* obj */ js.Array[WatchSource[Any] | js.Object], 
@@ -54,6 +53,24 @@ trait ReadonlyMultiWatchSources extends StObject {
       /* value */ WatchSource[Any] | js.Object, 
       /* index */ Double, 
       /* obj */ js.Array[WatchSource[Any] | js.Object], 
+      Any
+    ]
+  ): Double = js.native
+  
+  def findLast[S /* <: WatchSource[Any] | js.Object */](
+    predicate: js.Function3[
+      /* value */ WatchSource[Any] | js.Object, 
+      /* index */ Double, 
+      /* array */ js.Array[WatchSource[Any] | js.Object], 
+      /* is S */ Boolean
+    ]
+  ): js.UndefOr[S] = js.native
+  
+  def findLastIndex(
+    predicate: js.Function3[
+      /* value */ WatchSource[Any] | js.Object, 
+      /* index */ Double, 
+      /* array */ js.Array[WatchSource[Any] | js.Object], 
       Any
     ]
   ): Double = js.native

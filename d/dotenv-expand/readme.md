@@ -1,7 +1,7 @@
 
 # Scala.js typings for dotenv-expand
 
-Typings are for version 9.0.0
+Typings are for version 10.0.0
 
 ## Library description:
 Expand environment variables using dotenv

@@ -107,6 +107,27 @@ object sha512Mod {
     inline def outputLen_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("outputLen")(x.asInstanceOf[js.Any])
   }
   
+  object sha512224 {
+    
+    inline def apply(message: Input): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    
+    @JSImport("@noble/hashes/sha512", "sha512_224")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@noble/hashes/sha512", "sha512_224.blockLen")
+    @js.native
+    def blockLen: Double = js.native
+    inline def blockLen_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("blockLen")(x.asInstanceOf[js.Any])
+    
+    inline def create(): Hash[SHA512_] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Hash[SHA512_]]
+    
+    @JSImport("@noble/hashes/sha512", "sha512_224.outputLen")
+    @js.native
+    def outputLen: Double = js.native
+    inline def outputLen_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("outputLen")(x.asInstanceOf[js.Any])
+  }
+  
   object sha512256 {
     
     inline def apply(message: Input): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]

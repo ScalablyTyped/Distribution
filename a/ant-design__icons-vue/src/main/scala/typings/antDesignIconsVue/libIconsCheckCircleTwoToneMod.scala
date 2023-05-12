@@ -16,7 +16,7 @@ object libIconsCheckCircleTwoToneMod extends Shortcut {
   @js.native
   trait CheckCircleTwoToneIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_CheckCircleTwoToneIconType: String = js.native

@@ -1,7 +1,7 @@
 package typings.openui5
 
 import typings.openui5.anon.ItemTargetRef
-import typings.openui5.anon.`11`
+import typings.openui5.anon.`13`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -551,6 +551,8 @@ object sapUiWebcMainInputMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -562,6 +564,8 @@ object sapUiWebcMainInputMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:input input} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -573,6 +577,8 @@ object sapUiWebcMainInputMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:suggestionItemPreview suggestionItemPreview} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -584,6 +590,8 @@ object sapUiWebcMainInputMod {
     mParameters: ItemTargetRef): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:suggestionItemSelect suggestionItemSelect} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -592,7 +600,7 @@ object sapUiWebcMainInputMod {
     def fireSuggestionItemSelect(/**
       * Parameters to pass along with the event
       */
-    mParameters: `11`): this.type = js.native
+    mParameters: `13`): this.type = js.native
     
     /**
       * Gets current value of property {@link #getAccessibleName accessibleName}.

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@azure/opentelemetry-instrumentation-azure-sdk" : "1.0.0-beta.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@azure/opentelemetry-instrumentation-azure-sdk" : "1.0.0-beta.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

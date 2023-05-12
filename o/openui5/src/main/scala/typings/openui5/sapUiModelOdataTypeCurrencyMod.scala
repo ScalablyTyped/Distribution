@@ -17,8 +17,8 @@ object sapUiModelOdataTypeCurrencyMod {
     */
   open class default () extends Currency {
     def this(/**
-      * See parameter `oFormatOptions` of {@link sap.ui.model.type.Currency#constructor}. Format options are
-      * immutable, that is, they can only be set once on construction. Format options that are not supported
+      * Format options as defined in {@link sap.ui.core.format.NumberFormat.getCurrencyInstance}. Format options
+      * are immutable, that is, they can only be set once on construction. Format options that are not supported
       * or have a different default are listed below. If the format option `showMeasure` is set to `false`, model
       * messages for the currency code are not propagated to the control if the corresponding binding supports
       * the feature of ignoring messages, see {@link sap.ui.model.Binding#supportsIgnoreMessages}, and the corresponding
@@ -27,8 +27,8 @@ object sapUiModelOdataTypeCurrencyMod {
     oFormatOptions: CustomCurrencies) = this()
     def this(
       /**
-      * See parameter `oFormatOptions` of {@link sap.ui.model.type.Currency#constructor}. Format options are
-      * immutable, that is, they can only be set once on construction. Format options that are not supported
+      * Format options as defined in {@link sap.ui.core.format.NumberFormat.getCurrencyInstance}. Format options
+      * are immutable, that is, they can only be set once on construction. Format options that are not supported
       * or have a different default are listed below. If the format option `showMeasure` is set to `false`, model
       * messages for the currency code are not propagated to the control if the corresponding binding supports
       * the feature of ignoring messages, see {@link sap.ui.model.Binding#supportsIgnoreMessages}, and the corresponding
@@ -43,8 +43,8 @@ object sapUiModelOdataTypeCurrencyMod {
     ) = this()
     def this(
       /**
-      * See parameter `oFormatOptions` of {@link sap.ui.model.type.Currency#constructor}. Format options are
-      * immutable, that is, they can only be set once on construction. Format options that are not supported
+      * Format options as defined in {@link sap.ui.core.format.NumberFormat.getCurrencyInstance}. Format options
+      * are immutable, that is, they can only be set once on construction. Format options that are not supported
       * or have a different default are listed below. If the format option `showMeasure` is set to `false`, model
       * messages for the currency code are not propagated to the control if the corresponding binding supports
       * the feature of ignoring messages, see {@link sap.ui.model.Binding#supportsIgnoreMessages}, and the corresponding

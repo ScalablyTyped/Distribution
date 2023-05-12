@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Segments extends StObject {
   
-  var radius: Double
+  val radius: Double
   
-  var segments: Double
+  val segments: Double
   
-  var thetaLength: Double
+  val thetaLength: Double
   
-  var thetaStart: Double
+  val thetaStart: Double
 }
 object Segments {
   

@@ -19,6 +19,8 @@ trait FiberNode extends StObject {
   /** First child */
   var child: FiberNode | Null
   
+  var deletions: js.Array[FiberNode] | Null
+  
   var key: String | Null
   
   var pendingProps: (Record[String, Any]) | Null
@@ -46,7 +48,7 @@ trait FiberNode extends StObject {
 object FiberNode {
   
   inline def apply(): FiberNode = {
-    val __obj = js.Dynamic.literal(_debugSource = null, alternate = null, child = null, key = null, pendingProps = null, sibling = null, stateNode = null)
+    val __obj = js.Dynamic.literal(_debugSource = null, alternate = null, child = null, deletions = null, key = null, pendingProps = null, sibling = null, stateNode = null)
     __obj.updateDynamic("return")(null)
     __obj.updateDynamic("type")(null)
     __obj.asInstanceOf[FiberNode]
@@ -62,6 +64,12 @@ object FiberNode {
     inline def setChild(value: FiberNode): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
     
     inline def setChildNull: Self = StObject.set(x, "child", null)
+    
+    inline def setDeletions(value: js.Array[FiberNode]): Self = StObject.set(x, "deletions", value.asInstanceOf[js.Any])
+    
+    inline def setDeletionsNull: Self = StObject.set(x, "deletions", null)
+    
+    inline def setDeletionsVarargs(value: FiberNode*): Self = StObject.set(x, "deletions", js.Array(value*))
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

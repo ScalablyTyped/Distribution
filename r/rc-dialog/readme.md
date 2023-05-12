@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-dialog
 
-Typings are for version 9.0.2
+Typings are for version 9.1.0
 
 ## Library description:
 dialog ui component for react

@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AttachDiskRequest extends StObject {
   
   /**
+    * A Boolean value used to determine the automatic mounting of a storage volume to a virtual computer. The default value is False.  This value only applies to Lightsail for Research resources. 
+    */
+  var autoMounting: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * The unique Lightsail disk name (e.g., my-disk).
     */
   var diskName: ResourceName
@@ -30,6 +35,10 @@ object AttachDiskRequest {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: AttachDiskRequest] (val x: Self) extends AnyVal {
+    
+    inline def setAutoMounting(value: Boolean): Self = StObject.set(x, "autoMounting", value.asInstanceOf[js.Any])
+    
+    inline def setAutoMountingUndefined: Self = StObject.set(x, "autoMounting", js.undefined)
     
     inline def setDiskName(value: ResourceName): Self = StObject.set(x, "diskName", value.asInstanceOf[js.Any])
     

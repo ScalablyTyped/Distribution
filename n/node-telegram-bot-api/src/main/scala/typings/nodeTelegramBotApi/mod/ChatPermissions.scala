@@ -12,15 +12,27 @@ trait ChatPermissions extends StObject {
   
   var can_invite_users: js.UndefOr[Boolean] = js.undefined
   
+  var can_manage_topics: js.UndefOr[Boolean] = js.undefined
+  
   var can_pin_messages: js.UndefOr[Boolean] = js.undefined
   
-  var can_send_media_messages: js.UndefOr[Boolean] = js.undefined
+  var can_send_audios: js.UndefOr[Boolean] = js.undefined
+  
+  var can_send_documents: js.UndefOr[Boolean] = js.undefined
   
   var can_send_messages: js.UndefOr[Boolean] = js.undefined
   
   var can_send_other_messages: js.UndefOr[Boolean] = js.undefined
   
+  var can_send_photos: js.UndefOr[Boolean] = js.undefined
+  
   var can_send_polls: js.UndefOr[Boolean] = js.undefined
+  
+  var can_send_video_notes: js.UndefOr[Boolean] = js.undefined
+  
+  var can_send_videos: js.UndefOr[Boolean] = js.undefined
+  
+  var can_send_voice_notes: js.UndefOr[Boolean] = js.undefined
 }
 object ChatPermissions {
   
@@ -44,13 +56,21 @@ object ChatPermissions {
     
     inline def setCan_invite_usersUndefined: Self = StObject.set(x, "can_invite_users", js.undefined)
     
+    inline def setCan_manage_topics(value: Boolean): Self = StObject.set(x, "can_manage_topics", value.asInstanceOf[js.Any])
+    
+    inline def setCan_manage_topicsUndefined: Self = StObject.set(x, "can_manage_topics", js.undefined)
+    
     inline def setCan_pin_messages(value: Boolean): Self = StObject.set(x, "can_pin_messages", value.asInstanceOf[js.Any])
     
     inline def setCan_pin_messagesUndefined: Self = StObject.set(x, "can_pin_messages", js.undefined)
     
-    inline def setCan_send_media_messages(value: Boolean): Self = StObject.set(x, "can_send_media_messages", value.asInstanceOf[js.Any])
+    inline def setCan_send_audios(value: Boolean): Self = StObject.set(x, "can_send_audios", value.asInstanceOf[js.Any])
     
-    inline def setCan_send_media_messagesUndefined: Self = StObject.set(x, "can_send_media_messages", js.undefined)
+    inline def setCan_send_audiosUndefined: Self = StObject.set(x, "can_send_audios", js.undefined)
+    
+    inline def setCan_send_documents(value: Boolean): Self = StObject.set(x, "can_send_documents", value.asInstanceOf[js.Any])
+    
+    inline def setCan_send_documentsUndefined: Self = StObject.set(x, "can_send_documents", js.undefined)
     
     inline def setCan_send_messages(value: Boolean): Self = StObject.set(x, "can_send_messages", value.asInstanceOf[js.Any])
     
@@ -60,8 +80,24 @@ object ChatPermissions {
     
     inline def setCan_send_other_messagesUndefined: Self = StObject.set(x, "can_send_other_messages", js.undefined)
     
+    inline def setCan_send_photos(value: Boolean): Self = StObject.set(x, "can_send_photos", value.asInstanceOf[js.Any])
+    
+    inline def setCan_send_photosUndefined: Self = StObject.set(x, "can_send_photos", js.undefined)
+    
     inline def setCan_send_polls(value: Boolean): Self = StObject.set(x, "can_send_polls", value.asInstanceOf[js.Any])
     
     inline def setCan_send_pollsUndefined: Self = StObject.set(x, "can_send_polls", js.undefined)
+    
+    inline def setCan_send_video_notes(value: Boolean): Self = StObject.set(x, "can_send_video_notes", value.asInstanceOf[js.Any])
+    
+    inline def setCan_send_video_notesUndefined: Self = StObject.set(x, "can_send_video_notes", js.undefined)
+    
+    inline def setCan_send_videos(value: Boolean): Self = StObject.set(x, "can_send_videos", value.asInstanceOf[js.Any])
+    
+    inline def setCan_send_videosUndefined: Self = StObject.set(x, "can_send_videos", js.undefined)
+    
+    inline def setCan_send_voice_notes(value: Boolean): Self = StObject.set(x, "can_send_voice_notes", value.asInstanceOf[js.Any])
+    
+    inline def setCan_send_voice_notesUndefined: Self = StObject.set(x, "can_send_voice_notes", js.undefined)
   }
 }

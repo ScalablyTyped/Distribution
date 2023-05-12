@@ -11,6 +11,14 @@ object BrowserConstants {
   val ^ : js.Any = js.native
   
   /**
+    * Default popup monitor poll interval in milliseconds
+    */
+  @JSImport("@azure/msal-browser/dist/utils/BrowserConstants", "BrowserConstants.DEFAULT_POLL_INTERVAL_MS")
+  @js.native
+  def DEFAULT_POLL_INTERVAL_MS: Double = js.native
+  inline def DEFAULT_POLL_INTERVAL_MS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_POLL_INTERVAL_MS")(x.asInstanceOf[js.Any])
+  
+  /**
     * Interaction in progress cache value
     */
   @JSImport("@azure/msal-browser/dist/utils/BrowserConstants", "BrowserConstants.INTERACTION_IN_PROGRESS_VALUE")
@@ -33,14 +41,6 @@ object BrowserConstants {
   @js.native
   def MSAL_SKU: String = js.native
   inline def MSAL_SKU_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MSAL_SKU")(x.asInstanceOf[js.Any])
-  
-  /**
-    * Default popup monitor poll interval in milliseconds
-    */
-  @JSImport("@azure/msal-browser/dist/utils/BrowserConstants", "BrowserConstants.POLL_INTERVAL_MS")
-  @js.native
-  def POLL_INTERVAL_MS: Double = js.native
-  inline def POLL_INTERVAL_MS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POLL_INTERVAL_MS")(x.asInstanceOf[js.Any])
   
   /**
     * Default popup window height

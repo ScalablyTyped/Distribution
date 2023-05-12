@@ -217,7 +217,8 @@ object sapMNavContainerMod {
       *
       * The event is fired when navigation between two pages has completed (once all events to the child controls
       * have been fired). In case of animated transitions this event is fired with some delay after the "navigate"
-      * event.
+      * event. This event is only fired if the DOM ref of the `NavContainer` is available. If the DOM ref is
+      * not available, the `navigationFinished` event should be used instead.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
@@ -247,7 +248,8 @@ object sapMNavContainerMod {
       *
       * The event is fired when navigation between two pages has completed (once all events to the child controls
       * have been fired). In case of animated transitions this event is fired with some delay after the "navigate"
-      * event.
+      * event. This event is only fired if the DOM ref of the `NavContainer` is available. If the DOM ref is
+      * not available, the `navigationFinished` event should be used instead.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
@@ -334,6 +336,79 @@ object sapMNavContainerMod {
     fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
     ): this.type = js.native
     def attachNavigate(
+      /**
+      * An application-specific payload object that will be passed to the event handler along with the event
+      * object when firing the event
+      */
+    oData: js.Object,
+      /**
+      * The function to be called when the event occurs
+      */
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+      /**
+      * Context object to call the event handler with. Defaults to this `sap.m.NavContainer` itself
+      */
+    oListener: js.Object
+    ): this.type = js.native
+    
+    /**
+      * @SINCE 1.111.0
+      *
+      * Attaches event handler `fnFunction` to the {@link #event:navigationFinished navigationFinished} event
+      * of this `sap.m.NavContainer`.
+      *
+      * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
+      * otherwise it will be bound to this `sap.m.NavContainer` itself.
+      *
+      * The event is fired when navigation between two pages has completed regardless of whether the DOM is ready
+      * or not. This event is useful when performing navigation without/before rendering of the `NavContainer`.
+      * Keep in mind that the DOM is not guaranteed to be ready when this event is fired.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def attachNavigationFinished(
+      /**
+      * The function to be called when the event occurs
+      */
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    ): this.type = js.native
+    def attachNavigationFinished(
+      /**
+      * The function to be called when the event occurs
+      */
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+      /**
+      * Context object to call the event handler with. Defaults to this `sap.m.NavContainer` itself
+      */
+    oListener: js.Object
+    ): this.type = js.native
+    /**
+      * @SINCE 1.111.0
+      *
+      * Attaches event handler `fnFunction` to the {@link #event:navigationFinished navigationFinished} event
+      * of this `sap.m.NavContainer`.
+      *
+      * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
+      * otherwise it will be bound to this `sap.m.NavContainer` itself.
+      *
+      * The event is fired when navigation between two pages has completed regardless of whether the DOM is ready
+      * or not. This event is useful when performing navigation without/before rendering of the `NavContainer`.
+      * Keep in mind that the DOM is not guaranteed to be ready when this event is fired.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def attachNavigationFinished(
+      /**
+      * An application-specific payload object that will be passed to the event handler along with the event
+      * object when firing the event
+      */
+    oData: js.Object,
+      /**
+      * The function to be called when the event occurs
+      */
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    ): this.type = js.native
+    def attachNavigationFinished(
       /**
       * An application-specific payload object that will be passed to the event handler along with the event
       * object when firing the event
@@ -677,7 +752,35 @@ object sapMNavContainerMod {
     ): this.type = js.native
     
     /**
+      * @SINCE 1.111.0
+      *
+      * Detaches event handler `fnFunction` from the {@link #event:navigationFinished navigationFinished} event
+      * of this `sap.m.NavContainer`.
+      *
+      * The passed function and listener object must match the ones used for event registration.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def detachNavigationFinished(
+      /**
+      * The function to be called, when the event occurs
+      */
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    ): this.type = js.native
+    def detachNavigationFinished(
+      /**
+      * The function to be called, when the event occurs
+      */
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+      /**
+      * Context object on which the given function had to be called
+      */
+    oListener: js.Object
+    ): this.type = js.native
+    
+    /**
       * @SINCE 1.7.1
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:afterNavigate afterNavigate} to attached listeners.
       *
@@ -691,6 +794,7 @@ object sapMNavContainerMod {
     
     /**
       * @SINCE 1.7.1
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:navigate navigate} to attached listeners.
       *
@@ -704,6 +808,20 @@ object sapMNavContainerMod {
       * Parameters to pass along with the event
       */
     mParameters: Direction): Boolean = js.native
+    
+    /**
+      * @SINCE 1.111.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
+      * Fires event {@link #event:navigationFinished navigationFinished} to attached listeners.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def fireNavigationFinished(): this.type = js.native
+    def fireNavigationFinished(/**
+      * Parameters to pass along with the event
+      */
+    mParameters: Direction): this.type = js.native
     
     /**
       * @SINCE 1.30
@@ -919,6 +1037,8 @@ object sapMNavContainerMod {
     vPage: String
     ): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Removes a page.
       *
       * @returns the removed page or `null`
@@ -1517,7 +1637,8 @@ object sapMNavContainerMod {
       *
       * The event is fired when navigation between two pages has completed (once all events to the child controls
       * have been fired). In case of animated transitions this event is fired with some delay after the "navigate"
-      * event.
+      * event. This event is only fired if the DOM ref of the `NavContainer` is available. If the DOM ref is
+      * not available, the `navigationFinished` event should be used instead.
       */
     var afterNavigate: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
     
@@ -1580,6 +1701,15 @@ object sapMNavContainerMod {
     var navigate: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
     
     /**
+      * @SINCE 1.111.0
+      *
+      * The event is fired when navigation between two pages has completed regardless of whether the DOM is ready
+      * or not. This event is useful when performing navigation without/before rendering of the `NavContainer`.
+      * Keep in mind that the DOM is not guaranteed to be ready when this event is fired.
+      */
+    var navigationFinished: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    
+    /**
       * The content entities between which this NavContainer navigates. These can be of type sap.m.Page, sap.ui.core.mvc.View,
       * sap.m.Carousel or any other control with fullscreen/page semantics.
       *
@@ -1631,6 +1761,10 @@ object sapMNavContainerMod {
       inline def setNavigate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
       
       inline def setNavigateUndefined: Self = StObject.set(x, "navigate", js.undefined)
+      
+      inline def setNavigationFinished(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "navigationFinished", js.Any.fromFunction1(value))
+      
+      inline def setNavigationFinishedUndefined: Self = StObject.set(x, "navigationFinished", js.undefined)
       
       inline def setPages(
         value: js.Array[typings.openui5.sapUiCoreControlMod.default] | typings.openui5.sapUiCoreControlMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

@@ -12,7 +12,7 @@ trait KinesisStreamSourceConfiguration extends StObject {
   var KinesisStreamARN: typings.awsSdk.clientsFirehoseMod.KinesisStreamARN
   
   /**
-    * The ARN of the role that provides access to the source Kinesis data stream. For more information, see AWS Identity and Access Management (IAM) ARN Format.
+    * The ARN of the role that provides access to the source Kinesis data stream. For more information, see Amazon Web Services Identity and Access Management (IAM) ARN Format.
     */
   var RoleARN: typings.awsSdk.clientsFirehoseMod.RoleARN
 }

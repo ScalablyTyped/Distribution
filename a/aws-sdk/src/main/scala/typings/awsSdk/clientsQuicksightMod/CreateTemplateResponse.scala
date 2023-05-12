@@ -29,7 +29,7 @@ trait CreateTemplateResponse extends StObject {
   /**
     * The ID of the template.
     */
-  var TemplateId: js.UndefOr[RestrictiveResourceId] = js.undefined
+  var TemplateId: js.UndefOr[ShortRestrictiveResourceId] = js.undefined
   
   /**
     * The ARN for the template, including the version information of the first version.
@@ -62,7 +62,7 @@ object CreateTemplateResponse {
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    inline def setTemplateId(value: RestrictiveResourceId): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
+    inline def setTemplateId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
     
     inline def setTemplateIdUndefined: Self = StObject.set(x, "TemplateId", js.undefined)
     

@@ -12,14 +12,9 @@ trait DeleteChannelRequest extends StObject {
   var ChannelArn: ChimeArn
   
   /**
-    * The AppInstanceUserArn of the user that makes the API call.
+    * The ARN of the AppInstanceUser or AppInstanceBot that makes the API call.
     */
   var ChimeBearer: ChimeArn
-  
-  /**
-    * The ID of the SubChannel in the request.
-    */
-  var SubChannelId: js.UndefOr[typings.awsSdk.clientsChimesdkmessagingMod.SubChannelId] = js.undefined
 }
 object DeleteChannelRequest {
   
@@ -34,9 +29,5 @@ object DeleteChannelRequest {
     inline def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
     
     inline def setChimeBearer(value: ChimeArn): Self = StObject.set(x, "ChimeBearer", value.asInstanceOf[js.Any])
-    
-    inline def setSubChannelId(value: SubChannelId): Self = StObject.set(x, "SubChannelId", value.asInstanceOf[js.Any])
-    
-    inline def setSubChannelIdUndefined: Self = StObject.set(x, "SubChannelId", js.undefined)
   }
 }

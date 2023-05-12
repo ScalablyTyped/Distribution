@@ -16,6 +16,7 @@ import typings.inferno.distCoreTypesMod.InfernoAnimationEvent
 import typings.inferno.distCoreTypesMod.InfernoEventHandler
 import typings.inferno.distCoreTypesMod.InfernoKeyboardEvent
 import typings.inferno.distCoreTypesMod.InfernoMouseEvent
+import typings.inferno.distCoreTypesMod.InfernoNode
 import typings.inferno.distCoreTypesMod.InfernoPointerEvent
 import typings.inferno.distCoreTypesMod.InfernoTouchEvent
 import typings.inferno.distCoreTypesMod.InfernoTransitionEvent
@@ -196,6 +197,164 @@ trait DOMAttributes[T] extends StObject {
   var onWaiting: js.UndefOr[InfernoEventHandler[T]] = js.undefined
   
   var onWheel: js.UndefOr[WheelEventHandler[T]] = js.undefined
+  
+  var onabort: js.UndefOr[InfernoEventHandler[T]] = js.undefined
+  
+  var onanimationend: js.UndefOr[AnimationEventHandler[T]] = js.undefined
+  
+  var onanimationiteration: js.UndefOr[AnimationEventHandler[T]] = js.undefined
+  
+  var onanimationstart: js.UndefOr[AnimationEventHandler[T]] = js.undefined
+  
+  var onauxclick: js.UndefOr[MouseEventHandler[T]] = js.undefined
+  
+  var onbeforeinput: js.UndefOr[FormEventHandler[T]] = js.undefined
+  
+  var onblur: js.UndefOr[FocusEventHandler[T]] = js.undefined
+  
+  var oncanplay: js.UndefOr[InfernoEventHandler[T]] = js.undefined
+  
+  var oncanplaythrough: js.UndefOr[InfernoEventHandler[T]] = js.undefined
+  
+  var onchange: js.UndefOr[FormEventHandler[T] | Null] = js.undefined
+  
+  var onclick: js.UndefOr[MouseEventHandler[T]] = js.undefined
+  
+  var oncompositionend: js.UndefOr[CompositionEventHandler[T]] = js.undefined
+  
+  var oncompositionstart: js.UndefOr[CompositionEventHandler[T]] = js.undefined
+  
+  var oncompositionupdate: js.UndefOr[CompositionEventHandler[T]] = js.undefined
+  
+  var oncontextmenu: js.UndefOr[MouseEventHandler[T]] = js.undefined
+  
+  var oncopy: js.UndefOr[ClipboardEventHandler[T]] = js.undefined
+  
+  var oncut: js.UndefOr[ClipboardEventHandler[T]] = js.undefined
+  
+  var ondblclick: js.UndefOr[MouseEventHandler[T]] = js.undefined
+  
+  var ondrag: js.UndefOr[DragEventHandler[T]] = js.undefined
+  
+  var ondragLeave: js.UndefOr[DragEventHandler[T]] = js.undefined
+  
+  var ondragend: js.UndefOr[DragEventHandler[T]] = js.undefined
+  
+  var ondragenter: js.UndefOr[DragEventHandler[T]] = js.undefined
+  
+  var ondragexit: js.UndefOr[DragEventHandler[T]] = js.undefined
+  
+  var ondragover: js.UndefOr[DragEventHandler[T]] = js.undefined
+  
+  var ondragstart: js.UndefOr[DragEventHandler[T]] = js.undefined
+  
+  var ondrop: js.UndefOr[DragEventHandler[T]] = js.undefined
+  
+  var ondurationchange: js.UndefOr[InfernoEventHandler[T]] = js.undefined
+  
+  var onemptied: js.UndefOr[InfernoEventHandler[T]] = js.undefined
+  
+  var onencrypted: js.UndefOr[InfernoEventHandler[T]] = js.undefined
+  
+  var onended: js.UndefOr[InfernoEventHandler[T]] = js.undefined
+  
+  var onerror: js.UndefOr[InfernoEventHandler[T]] = js.undefined
+  
+  var onfocus: js.UndefOr[FocusEventHandler[T]] = js.undefined
+  
+  var oninput: js.UndefOr[FormEventHandler[T]] = js.undefined
+  
+  var oninvalid: js.UndefOr[FormEventHandler[T]] = js.undefined
+  
+  var onkeydown: js.UndefOr[KeyboardEventHandler[T]] = js.undefined
+  
+  var onkeypress: js.UndefOr[KeyboardEventHandler[T]] = js.undefined
+  
+  var onkeyup: js.UndefOr[KeyboardEventHandler[T]] = js.undefined
+  
+  var onload: js.UndefOr[InfernoEventHandler[T]] = js.undefined
+  
+  var onloadeddata: js.UndefOr[InfernoEventHandler[T]] = js.undefined
+  
+  var onloadedmetadata: js.UndefOr[InfernoEventHandler[T]] = js.undefined
+  
+  var onloadstart: js.UndefOr[InfernoEventHandler[T]] = js.undefined
+  
+  var onmousedown: js.UndefOr[MouseEventHandler[T]] = js.undefined
+  
+  var onmouseenter: js.UndefOr[MouseEventHandler[T]] = js.undefined
+  
+  var onmouseleave: js.UndefOr[MouseEventHandler[T]] = js.undefined
+  
+  var onmousemove: js.UndefOr[MouseEventHandler[T]] = js.undefined
+  
+  var onmouseout: js.UndefOr[MouseEventHandler[T]] = js.undefined
+  
+  var onmouseover: js.UndefOr[MouseEventHandler[T]] = js.undefined
+  
+  var onmouseup: js.UndefOr[MouseEventHandler[T]] = js.undefined
+  
+  var onpaste: js.UndefOr[ClipboardEventHandler[T]] = js.undefined
+  
+  var onpause: js.UndefOr[InfernoEventHandler[T]] = js.undefined
+  
+  var onplay: js.UndefOr[InfernoEventHandler[T]] = js.undefined
+  
+  var onplaying: js.UndefOr[InfernoEventHandler[T]] = js.undefined
+  
+  var onpointercancel: js.UndefOr[PointerEventHandler[T]] = js.undefined
+  
+  var onpointerdown: js.UndefOr[PointerEventHandler[T]] = js.undefined
+  
+  var onpointerenter: js.UndefOr[PointerEventHandler[T]] = js.undefined
+  
+  var onpointerleave: js.UndefOr[PointerEventHandler[T]] = js.undefined
+  
+  var onpointermove: js.UndefOr[PointerEventHandler[T]] = js.undefined
+  
+  var onpointerout: js.UndefOr[PointerEventHandler[T]] = js.undefined
+  
+  var onpointerover: js.UndefOr[PointerEventHandler[T]] = js.undefined
+  
+  var onpointerup: js.UndefOr[PointerEventHandler[T]] = js.undefined
+  
+  var onprogress: js.UndefOr[InfernoEventHandler[T]] = js.undefined
+  
+  var onratechange: js.UndefOr[InfernoEventHandler[T]] = js.undefined
+  
+  var onreset: js.UndefOr[FormEventHandler[T]] = js.undefined
+  
+  var onscroll: js.UndefOr[UIEventHandler[T]] = js.undefined
+  
+  var onseeked: js.UndefOr[InfernoEventHandler[T]] = js.undefined
+  
+  var onseeking: js.UndefOr[InfernoEventHandler[T]] = js.undefined
+  
+  var onselect: js.UndefOr[InfernoEventHandler[T]] = js.undefined
+  
+  var onstalled: js.UndefOr[InfernoEventHandler[T]] = js.undefined
+  
+  var onsubmit: js.UndefOr[FormEventHandler[T]] = js.undefined
+  
+  var onsuspend: js.UndefOr[InfernoEventHandler[T]] = js.undefined
+  
+  var ontimeupdate: js.UndefOr[InfernoEventHandler[T]] = js.undefined
+  
+  var ontouchcancel: js.UndefOr[TouchEventHandler[T]] = js.undefined
+  
+  var ontouchend: js.UndefOr[TouchEventHandler[T]] = js.undefined
+  
+  var ontouchmove: js.UndefOr[TouchEventHandler[T]] = js.undefined
+  
+  var ontouchstart: js.UndefOr[TouchEventHandler[T]] = js.undefined
+  
+  var ontransitionend: js.UndefOr[TransitionEventHandler[T]] = js.undefined
+  
+  var onvolumechange: js.UndefOr[InfernoEventHandler[T]] = js.undefined
+  
+  var onwaiting: js.UndefOr[InfernoEventHandler[T]] = js.undefined
+  
+  var onwheel: js.UndefOr[WheelEventHandler[T]] = js.undefined
 }
 object DOMAttributes {
   

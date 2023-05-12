@@ -17,6 +17,12 @@ trait Chat
   // A collection of all the apps in the chat. Nullable.
   var installedApps: js.UndefOr[NullableOption[js.Array[TeamsAppInstallation]]] = js.undefined
   
+  /**
+    * Preview of the last message sent in the chat. Null if no messages have been sent in the chat. Currently, only the list
+    * chats operation supports this property.
+    */
+  var lastMessagePreview: js.UndefOr[NullableOption[ChatMessageInfo]] = js.undefined
+  
   // Date and time at which the chat was renamed or list of members were last changed. Read-only.
   var lastUpdatedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
@@ -32,6 +38,9 @@ trait Chat
     */
   var onlineMeetingInfo: js.UndefOr[NullableOption[TeamworkOnlineMeetingInfo]] = js.undefined
   
+  // A collection of all the pinned messages in the chat. Nullable.
+  var pinnedMessages: js.UndefOr[NullableOption[js.Array[PinnedChatMessageInfo]]] = js.undefined
+  
   // A collection of all the tabs in the chat. Nullable.
   var tabs: js.UndefOr[NullableOption[js.Array[TeamsTab]]] = js.undefined
   
@@ -40,6 +49,12 @@ trait Chat
   
   // (Optional) Subject or topic for the chat. Only available for group chats.
   var topic: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  /**
+    * Represents caller-specific information about the chat, such as last message read date and time. This property is
+    * populated only when the request is made in a delegated context.
+    */
+  var viewpoint: js.UndefOr[NullableOption[ChatViewpoint]] = js.undefined
   
   // The URL for the chat in Microsoft Teams. The URL should be treated as an opaque blob, and not parsed. Read-only.
   var webUrl: js.UndefOr[NullableOption[String]] = js.undefined
@@ -72,6 +87,12 @@ object Chat {
     
     inline def setInstalledAppsVarargs(value: TeamsAppInstallation*): Self = StObject.set(x, "installedApps", js.Array(value*))
     
+    inline def setLastMessagePreview(value: NullableOption[ChatMessageInfo]): Self = StObject.set(x, "lastMessagePreview", value.asInstanceOf[js.Any])
+    
+    inline def setLastMessagePreviewNull: Self = StObject.set(x, "lastMessagePreview", null)
+    
+    inline def setLastMessagePreviewUndefined: Self = StObject.set(x, "lastMessagePreview", js.undefined)
+    
     inline def setLastUpdatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastUpdatedDateTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedDateTimeNull: Self = StObject.set(x, "lastUpdatedDateTime", null)
@@ -100,6 +121,14 @@ object Chat {
     
     inline def setOnlineMeetingInfoUndefined: Self = StObject.set(x, "onlineMeetingInfo", js.undefined)
     
+    inline def setPinnedMessages(value: NullableOption[js.Array[PinnedChatMessageInfo]]): Self = StObject.set(x, "pinnedMessages", value.asInstanceOf[js.Any])
+    
+    inline def setPinnedMessagesNull: Self = StObject.set(x, "pinnedMessages", null)
+    
+    inline def setPinnedMessagesUndefined: Self = StObject.set(x, "pinnedMessages", js.undefined)
+    
+    inline def setPinnedMessagesVarargs(value: PinnedChatMessageInfo*): Self = StObject.set(x, "pinnedMessages", js.Array(value*))
+    
     inline def setTabs(value: NullableOption[js.Array[TeamsTab]]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
     
     inline def setTabsNull: Self = StObject.set(x, "tabs", null)
@@ -119,6 +148,12 @@ object Chat {
     inline def setTopicNull: Self = StObject.set(x, "topic", null)
     
     inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
+    
+    inline def setViewpoint(value: NullableOption[ChatViewpoint]): Self = StObject.set(x, "viewpoint", value.asInstanceOf[js.Any])
+    
+    inline def setViewpointNull: Self = StObject.set(x, "viewpoint", null)
+    
+    inline def setViewpointUndefined: Self = StObject.set(x, "viewpoint", js.undefined)
     
     inline def setWebUrl(value: NullableOption[String]): Self = StObject.set(x, "webUrl", value.asInstanceOf[js.Any])
     

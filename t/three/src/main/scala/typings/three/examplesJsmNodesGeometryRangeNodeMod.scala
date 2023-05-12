@@ -25,7 +25,7 @@ object examplesJsmNodesGeometryRangeNodeMod {
   trait RangeNode
     extends typings.three.examplesJsmNodesCoreNodeMod.default {
     
-    def getVectorLength(): Double = js.native
+    def getVectorLength(builder: typings.three.examplesJsmNodesCoreNodeBuilderMod.default): Double = js.native
     
     var max: RangeModeBound = js.native
     

@@ -77,7 +77,7 @@ trait ServiceConfiguration extends StObject {
   var SupportedIpAddressTypes: js.UndefOr[typings.awsSdk.clientsEc2Mod.SupportedIpAddressTypes] = js.undefined
   
   /**
-    * Any tags assigned to the service.
+    * The tags assigned to the service.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
 }

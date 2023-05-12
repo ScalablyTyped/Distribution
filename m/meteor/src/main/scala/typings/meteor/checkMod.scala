@@ -144,7 +144,8 @@ object checkMod {
       * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
       * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
       * TS definition: {{{
-      T extends meteor.meteor/check.Match.Matcher<infer U> ? U : T extends std.StringConstructor ? string : T extends std.NumberConstructor ? number : T extends std.BooleanConstructor ? boolean : T extends std.ObjectConstructor ? object : T extends std.FunctionConstructor ? std.Function : T extends undefined | null | string | number | boolean ? T : T extends new (args : ...any): infer U ? U : T extends [meteor.meteor/check.Match.Pattern] ? std.Array<meteor.meteor/check.Match.PatternMatch<T[0]>> : T extends {[key: string] : meteor.meteor/check.Match.Pattern} ? {[ K in keyof T ]: meteor.meteor/check.Match.PatternMatch<T[K]>} : unknown
+      T extends meteor.meteor/check.Match.Matcher<infer U> ? U : T extends std.StringConstructor ? string : T extends std.NumberConstructor ? number : T extends std.BooleanConstructor ? boolean : T extends std.ObjectConstructor ? object : T extends std.FunctionConstructor ? std.Function : T extends undefined | null | string | number | boolean ? T : T extends new (args : ...any): infer U ? U : // eslint-disable-next-line no-single-element-tuple-type
+    T extends [meteor.meteor/check.Match.Pattern] ? std.Array<meteor.meteor/check.Match.PatternMatch<T[0]>> : T extends {[key: string] : meteor.meteor/check.Match.Pattern} ? {[ K in keyof T ]: meteor.meteor/check.Match.PatternMatch<T[K]>} : unknown
       }}}
       */
     type PatternMatch[T /* <: Pattern */] = String

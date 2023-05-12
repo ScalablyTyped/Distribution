@@ -8,6 +8,9 @@ trait AccessPackage
   extends StObject
      with Entity {
   
+  // The access packages that are incompatible with this package. Read-only.
+  var accessPackagesIncompatibleWith: js.UndefOr[NullableOption[js.Array[AccessPackage]]] = js.undefined
+  
   var assignmentPolicies: js.UndefOr[NullableOption[js.Array[AccessPackageAssignmentPolicy]]] = js.undefined
   
   var catalog: js.UndefOr[NullableOption[AccessPackageCatalog]] = js.undefined
@@ -23,6 +26,12 @@ trait AccessPackage
   
   // The display name of the access package. Supports $filter (eq, contains).
   var displayName: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  // The access packages whose assigned users are ineligible to be assigned this access package.
+  var incompatibleAccessPackages: js.UndefOr[NullableOption[js.Array[AccessPackage]]] = js.undefined
+  
+  // The groups whose members are ineligible to be assigned this access package.
+  var incompatibleGroups: js.UndefOr[NullableOption[js.Array[Group]]] = js.undefined
   
   // Whether the access package is hidden from the requestor.
   var isHidden: js.UndefOr[NullableOption[Boolean]] = js.undefined
@@ -42,6 +51,14 @@ object AccessPackage {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: AccessPackage] (val x: Self) extends AnyVal {
+    
+    inline def setAccessPackagesIncompatibleWith(value: NullableOption[js.Array[AccessPackage]]): Self = StObject.set(x, "accessPackagesIncompatibleWith", value.asInstanceOf[js.Any])
+    
+    inline def setAccessPackagesIncompatibleWithNull: Self = StObject.set(x, "accessPackagesIncompatibleWith", null)
+    
+    inline def setAccessPackagesIncompatibleWithUndefined: Self = StObject.set(x, "accessPackagesIncompatibleWith", js.undefined)
+    
+    inline def setAccessPackagesIncompatibleWithVarargs(value: AccessPackage*): Self = StObject.set(x, "accessPackagesIncompatibleWith", js.Array(value*))
     
     inline def setAssignmentPolicies(value: NullableOption[js.Array[AccessPackageAssignmentPolicy]]): Self = StObject.set(x, "assignmentPolicies", value.asInstanceOf[js.Any])
     
@@ -74,6 +91,22 @@ object AccessPackage {
     inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setIncompatibleAccessPackages(value: NullableOption[js.Array[AccessPackage]]): Self = StObject.set(x, "incompatibleAccessPackages", value.asInstanceOf[js.Any])
+    
+    inline def setIncompatibleAccessPackagesNull: Self = StObject.set(x, "incompatibleAccessPackages", null)
+    
+    inline def setIncompatibleAccessPackagesUndefined: Self = StObject.set(x, "incompatibleAccessPackages", js.undefined)
+    
+    inline def setIncompatibleAccessPackagesVarargs(value: AccessPackage*): Self = StObject.set(x, "incompatibleAccessPackages", js.Array(value*))
+    
+    inline def setIncompatibleGroups(value: NullableOption[js.Array[Group]]): Self = StObject.set(x, "incompatibleGroups", value.asInstanceOf[js.Any])
+    
+    inline def setIncompatibleGroupsNull: Self = StObject.set(x, "incompatibleGroups", null)
+    
+    inline def setIncompatibleGroupsUndefined: Self = StObject.set(x, "incompatibleGroups", js.undefined)
+    
+    inline def setIncompatibleGroupsVarargs(value: Group*): Self = StObject.set(x, "incompatibleGroups", js.Array(value*))
     
     inline def setIsHidden(value: NullableOption[Boolean]): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
     

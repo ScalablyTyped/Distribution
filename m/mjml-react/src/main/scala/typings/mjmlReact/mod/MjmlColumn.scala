@@ -16,7 +16,7 @@ open class MjmlColumn protected ()
   def this(props: MjmlColumnProps & PaddingProps & ClassNameProps & BorderProps & InnerBorderProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(
     props: MjmlColumnProps & PaddingProps & ClassNameProps & BorderProps & InnerBorderProps,

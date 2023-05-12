@@ -12,7 +12,7 @@ trait EksPodPropertiesDetail extends StObject {
   var containers: js.UndefOr[EksContainerDetails] = js.undefined
   
   /**
-    * The DNS policy for the pod. The default value is ClusterFirst. If the hostNetwork parameter is not specified, the default is ClusterFirstWithHostNet. ClusterFirst indicates that any DNS query that does not match the configured cluster domain suffix is forwarded to the upstream nameserver inherited from the node. For more information, see Pod's DNS policy in the Kubernetes documentation. Valid values: Default | ClusterFirst | ClusterFirstWithHostNet | None 
+    * The DNS policy for the pod. The default value is ClusterFirst. If the hostNetwork parameter is not specified, the default is ClusterFirstWithHostNet. ClusterFirst indicates that any DNS query that does not match the configured cluster domain suffix is forwarded to the upstream nameserver inherited from the node. If no value was specified for dnsPolicy in the RegisterJobDefinition API operation, then no value will be returned for dnsPolicy by either of DescribeJobDefinitions or DescribeJobs API operations. The pod spec setting will contain either ClusterFirst or ClusterFirstWithHostNet, depending on the value of the hostNetwork parameter. For more information, see Pod's DNS policy in the Kubernetes documentation. Valid values: Default | ClusterFirst | ClusterFirstWithHostNet 
     */
   var dnsPolicy: js.UndefOr[String] = js.undefined
   
@@ -20,6 +20,8 @@ trait EksPodPropertiesDetail extends StObject {
     * Indicates if the pod uses the hosts' network IP address. The default value is true. Setting this to false enables the Kubernetes pod networking model. Most Batch workloads are egress-only and don't require the overhead of IP allocation for each pod for incoming connections. For more information, see Host namespaces and Pod networking in the Kubernetes documentation.
     */
   var hostNetwork: js.UndefOr[Boolean] = js.undefined
+  
+  var metadata: js.UndefOr[EksMetadata] = js.undefined
   
   /**
     * The name of the node for this job.
@@ -64,6 +66,10 @@ object EksPodPropertiesDetail {
     inline def setHostNetwork(value: Boolean): Self = StObject.set(x, "hostNetwork", value.asInstanceOf[js.Any])
     
     inline def setHostNetworkUndefined: Self = StObject.set(x, "hostNetwork", js.undefined)
+    
+    inline def setMetadata(value: EksMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     inline def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
     

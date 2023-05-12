@@ -16,7 +16,7 @@ trait DeviceVersion
   var component: js.UndefOr[Identifier] = js.undefined
   
   /**
-    * The type of the device version, e.g. manufacturer, approved, internal.
+    * The type of the device version.
     */
   var `type`: js.UndefOr[CodeableConcept] = js.undefined
   

@@ -5,24 +5,39 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * An infinite plane.
-  *
-  * @ignore
+  * An infinite plane. Internally it's represented in a parametric equation form:
+  * ax + by + cz + distance = 0.
   */
 @JSImport("playcanvas", "Plane")
 @js.native
 /**
   * Create a new Plane instance.
   *
-  * @param {Vec3} [point] - Point position on the plane. The constructor takes a reference of
-  * this parameter.
-  * @param {Vec3} [normal] - Normal of the plane. The constructor takes a reference of this
-  * parameter.
+  * @param {Vec3} [normal] - Normal of the plane. The constructor copies this parameter. Defaults
+  * to {@link Vec3#UP}.
+  * @param {Vec3} [distance] - The distance from the plane to the origin, along its normal.
+  * Defaults to 0.
   */
 open class Plane () extends StObject {
-  def this(point: Vec3) = this()
-  def this(point: Unit, normal: Vec3) = this()
-  def this(point: Vec3, normal: Vec3) = this()
+  def this(normal: Vec3) = this()
+  def this(normal: Unit, distance: Vec3) = this()
+  def this(normal: Vec3, distance: Vec3) = this()
+  
+  /**
+    * Copies the contents of a source Plane.
+    *
+    * @param {Plane} src - The Plane to copy from.
+    * @returns {Plane} Self for chaining.
+    */
+  def copy(src: Plane): Plane = js.native
+  
+  /**
+    * The distance from the plane to the origin, along its normal.
+    *
+    * @readonly
+    * @type {number}
+    */
+  val distance: Double = js.native
   
   /**
     * Test if the plane intersects between two points.
@@ -39,7 +54,7 @@ open class Plane () extends StObject {
   /**
     * Test if a ray intersects with the infinite plane.
     *
-    * @param {Ray} ray - Ray to test against (direction must be normalized).
+    * @param {import('./ray.js').Ray} ray - Ray to test against (direction must be normalized).
     * @param {Vec3} [point] - If there is an intersection, the intersection point will be copied
     * into here.
     * @returns {boolean} True if there is an intersection.
@@ -47,7 +62,20 @@ open class Plane () extends StObject {
   def intersectsRay(ray: Ray): Boolean = js.native
   def intersectsRay(ray: Ray, point: Vec3): Boolean = js.native
   
-  var normal: Vec3 = js.native
+  /**
+    * The normal of the plane.
+    *
+    * @readonly
+    * @type {Vec3}
+    */
+  val normal: Vec3 = js.native
   
-  var point: Vec3 = js.native
+  /**
+    * Sets the plane based on a specified normal and a point on the plane.
+    *
+    * @param {Vec3} point - The point on the plane.
+    * @param {Vec3} normal - The normal of the plane.
+    * @returns {Plane} Self for chaining.
+    */
+  def setFromPointNormal(point: Vec3, normal: Vec3): Plane = js.native
 }

@@ -43,12 +43,12 @@ object distTypesEnteringStaggeredEntranceMod {
     var column: js.UndefOr[Double] = js.undefined
     
     /**
-      * Number of columns the children elements will be displayed over.
-      * Use `"responsive"` to have it calculate dynamically on the client side.
-      *
-      * __NOTE:__ This has a big caveat that the elements will be invisible until the client side Javascript executes.
-      * If you have a fixed grid or list, set this to a specific number.
-      * Defaults to `"responsive"`.
+      Number of columns the children elements will be displayed over.
+      Use `"responsive"` to have it calculate dynamically on the client side.
+      
+      __NOTE:__ This has a big caveat that the elements will be invisible until the client side Javascript executes.
+      If you have a fixed grid or list, set this to a specific number.
+      Defaults to `"responsive"`.
       */
     var columns: js.UndefOr[Double | responsive] = js.undefined
     

@@ -22,7 +22,7 @@ trait QueryResultItem extends StObject {
   var DocumentExcerpt: js.UndefOr[TextWithHighlights] = js.undefined
   
   /**
-    * The unique identifier for the document.
+    * The identifier for the document.
     */
   var DocumentId: js.UndefOr[typings.awsSdk.clientsKendraMod.DocumentId] = js.undefined
   
@@ -37,12 +37,17 @@ trait QueryResultItem extends StObject {
   var DocumentURI: js.UndefOr[Url] = js.undefined
   
   /**
-    * A token that identifies a particular result from a particular query. Use this token to provide click-through feedback for the result. For more information, see  Submitting feedback .
+    * A token that identifies a particular result from a particular query. Use this token to provide click-through feedback for the result. For more information, see Submitting feedback .
     */
   var FeedbackToken: js.UndefOr[typings.awsSdk.clientsKendraMod.FeedbackToken] = js.undefined
   
   /**
-    * The unique identifier for the query result.
+    * If the Type of document within the response is ANSWER, then it is either a TABLE answer or TEXT answer. If it's a table answer, a table excerpt is returned in TableExcerpt. If it's a text answer, a text excerpt is returned in DocumentExcerpt.
+    */
+  var Format: js.UndefOr[QueryResultFormat] = js.undefined
+  
+  /**
+    * The identifier for the query result.
     */
   var Id: js.UndefOr[ResultId] = js.undefined
   
@@ -52,7 +57,12 @@ trait QueryResultItem extends StObject {
   var ScoreAttributes: js.UndefOr[typings.awsSdk.clientsKendraMod.ScoreAttributes] = js.undefined
   
   /**
-    * The type of document. 
+    * An excerpt from a table within a document.
+    */
+  var TableExcerpt: js.UndefOr[typings.awsSdk.clientsKendraMod.TableExcerpt] = js.undefined
+  
+  /**
+    * The type of document within the response. For example, a response could include a question-answer that's relevant to the query.
     */
   var Type: js.UndefOr[QueryResultType] = js.undefined
 }
@@ -98,6 +108,10 @@ object QueryResultItem {
     
     inline def setFeedbackTokenUndefined: Self = StObject.set(x, "FeedbackToken", js.undefined)
     
+    inline def setFormat(value: QueryResultFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
+    
     inline def setId(value: ResultId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
@@ -105,6 +119,10 @@ object QueryResultItem {
     inline def setScoreAttributes(value: ScoreAttributes): Self = StObject.set(x, "ScoreAttributes", value.asInstanceOf[js.Any])
     
     inline def setScoreAttributesUndefined: Self = StObject.set(x, "ScoreAttributes", js.undefined)
+    
+    inline def setTableExcerpt(value: TableExcerpt): Self = StObject.set(x, "TableExcerpt", value.asInstanceOf[js.Any])
+    
+    inline def setTableExcerptUndefined: Self = StObject.set(x, "TableExcerpt", js.undefined)
     
     inline def setType(value: QueryResultType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

@@ -2,6 +2,7 @@ package typings.builderIoPartytown
 
 import typings.std.Location
 import typings.std.URL
+import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,8 +33,8 @@ object integrationMod {
   }
   object ApplyHookOptions {
     
-    inline def apply(args: js.Array[Any], continue: js.Symbol, name: String): ApplyHookOptions = {
-      val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], continue = continue.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    inline def apply(args: js.Array[Any], continue: js.Symbol, instance: WorkerInstance, name: String, window: Window): ApplyHookOptions = {
+      val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], continue = continue.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
       __obj.asInstanceOf[ApplyHookOptions]
     }
     
@@ -59,14 +60,18 @@ object integrationMod {
     
     var continue: js.Symbol
     
+    var instance: WorkerInstance
+    
     var name: String
     
     var nodeName: js.UndefOr[String] = js.undefined
+    
+    var window: Window
   }
   object HookOptions {
     
-    inline def apply(continue: js.Symbol, name: String): HookOptions = {
-      val __obj = js.Dynamic.literal(continue = continue.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    inline def apply(continue: js.Symbol, instance: WorkerInstance, name: String, window: Window): HookOptions = {
+      val __obj = js.Dynamic.literal(continue = continue.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
       __obj.asInstanceOf[HookOptions]
     }
     
@@ -79,13 +84,19 @@ object integrationMod {
       
       inline def setContinue(value: js.Symbol): Self = StObject.set(x, "continue", value.asInstanceOf[js.Any])
       
+      inline def setInstance(value: WorkerInstance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
       
       inline def setNodeNameUndefined: Self = StObject.set(x, "nodeName", js.undefined)
+      
+      inline def setWindow(value: Window): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     }
   }
+  
+  type InstanceId = String
   
   trait PartytownConfig extends StObject {
     
@@ -210,6 +221,12 @@ object integrationMod {
         ]
       ] = js.undefined
     
+    /**
+      * The css selector where the sandbox should be placed.
+      * Default: body
+      */
+    var sandboxParent: js.UndefOr[String] = js.undefined
+    
     var set: js.UndefOr[SetHook] = js.undefined
     
     /**
@@ -305,6 +322,10 @@ object integrationMod {
       
       inline def setResolveUrlUndefined: Self = StObject.set(x, "resolveUrl", js.undefined)
       
+      inline def setSandboxParent(value: String): Self = StObject.set(x, "sandboxParent", value.asInstanceOf[js.Any])
+      
+      inline def setSandboxParentUndefined: Self = StObject.set(x, "sandboxParent", js.undefined)
+      
       inline def setSet(value: /* opts */ SetHookOptions => Any): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
       
       inline def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
@@ -322,6 +343,7 @@ object integrationMod {
     - typings.builderIoPartytown.builderIoPartytownStrings.xhr
     - typings.builderIoPartytown.builderIoPartytownStrings.script
     - typings.builderIoPartytown.builderIoPartytownStrings.iframe
+    - typings.builderIoPartytown.builderIoPartytownStrings.image
   */
   trait ResolveUrlType extends StObject
   object ResolveUrlType {
@@ -329,6 +351,8 @@ object integrationMod {
     inline def fetch: typings.builderIoPartytown.builderIoPartytownStrings.fetch = "fetch".asInstanceOf[typings.builderIoPartytown.builderIoPartytownStrings.fetch]
     
     inline def iframe: typings.builderIoPartytown.builderIoPartytownStrings.iframe = "iframe".asInstanceOf[typings.builderIoPartytown.builderIoPartytownStrings.iframe]
+    
+    inline def image: typings.builderIoPartytown.builderIoPartytownStrings.image = "image".asInstanceOf[typings.builderIoPartytown.builderIoPartytownStrings.image]
     
     inline def script: typings.builderIoPartytown.builderIoPartytownStrings.script = "script".asInstanceOf[typings.builderIoPartytown.builderIoPartytownStrings.script]
     
@@ -350,8 +374,15 @@ object integrationMod {
   }
   object SetHookOptions {
     
-    inline def apply(continue: js.Symbol, name: String, prevent: js.Symbol, value: Any): SetHookOptions = {
-      val __obj = js.Dynamic.literal(continue = continue.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], prevent = prevent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    inline def apply(
+      continue: js.Symbol,
+      instance: WorkerInstance,
+      name: String,
+      prevent: js.Symbol,
+      value: Any,
+      window: Window
+    ): SetHookOptions = {
+      val __obj = js.Dynamic.literal(continue = continue.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], prevent = prevent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetHookOptions]
     }
     
@@ -363,4 +394,9 @@ object integrationMod {
       inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
+  
+  type WinId = String
+  
+  @js.native
+  trait WorkerInstance extends StObject
 }

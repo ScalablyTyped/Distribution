@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The properties of a click event on a KML/KMZ or GeoRSS document.
-  */
 trait KmlMouseEvent extends StObject {
   
   /**

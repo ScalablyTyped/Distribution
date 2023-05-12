@@ -16,7 +16,7 @@ object libIconsWalletOutlinedMod extends Shortcut {
   @js.native
   trait WalletOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_WalletOutlinedIconType: String = js.native

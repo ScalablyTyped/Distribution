@@ -13,4 +13,4 @@ inline def OIDC_DEFAULT_SCOPES: js.Array[String] = ^.asInstanceOf[js.Dynamic].se
 
 inline def stubbedPublicClientApplication: IPublicClientApplication = ^.asInstanceOf[js.Dynamic].selectDynamic("stubbedPublicClientApplication").asInstanceOf[IPublicClientApplication]
 
-inline def version: /* "2.28.3" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[/* "2.28.3" */ String]
+inline def version: /* "2.37.0" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[/* "2.37.0" */ String]

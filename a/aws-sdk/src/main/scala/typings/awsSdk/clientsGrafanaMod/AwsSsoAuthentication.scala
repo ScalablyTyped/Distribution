@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AwsSsoAuthentication extends StObject {
   
   /**
-    * The ID of the Amazon Web Services SSO-managed application that is created by Amazon Managed Grafana.
+    * The ID of the IAM Identity Center-managed application that is created by Amazon Managed Grafana.
     */
   var ssoClientId: js.UndefOr[SSOClientId] = js.undefined
 }

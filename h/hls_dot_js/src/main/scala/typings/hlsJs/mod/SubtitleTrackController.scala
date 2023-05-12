@@ -1,5 +1,6 @@
 package typings.hlsJs.mod
 
+import typings.hlsJs.mod.Events.ERROR
 import typings.hlsJs.mod.Events.LEVEL_LOADING
 import typings.hlsJs.mod.Events.LEVEL_SWITCHING
 import typings.hlsJs.mod.Events.MANIFEST_PARSED
@@ -9,10 +10,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@JSImport("hls.js", "SubtitleTrackController")
 @js.native
-trait SubtitleTrackController
-  extends StObject
-     with BasePlaylistController {
+open class SubtitleTrackController protected () extends BasePlaylistController {
+  def this(hls: Hls) = this()
   
   /* private */ var _subtitleDisplay: Any = js.native
   
@@ -23,6 +24,8 @@ trait SubtitleTrackController
   /* private */ var groupId: Any = js.native
   
   /* private */ var media: Any = js.native
+  
+  /* protected */ def onError(event: ERROR, data: ErrorData): Unit = js.native
   
   /* protected */ def onLevelLoading(event: LEVEL_LOADING, data: LevelLoadingData): Unit = js.native
   

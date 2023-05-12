@@ -43,6 +43,28 @@ object ClientTemplate {
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
+    * The new ClientTemplate will be automatically stored in the 'screenReaderDescription' property
+    * of the parent AccessibilitySettings element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.22.0 and higher
+    */
+  /* static member */
+  inline def createInAccessibilitySettingsUnderScreenReaderDescription(container: typings.mendixmodelsdk.srcGenPagesMod.pages.AccessibilitySettings): typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAccessibilitySettingsUnderScreenReaderDescription")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate]
+  
+  /**
+    * Creates and returns a new ClientTemplate instance in the SDK and on the server.
+    * The new ClientTemplate will be automatically stored in the 'screenReaderTitle' property
+    * of the parent AccessibilitySettings element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.22.0 and higher
+    */
+  /* static member */
+  inline def createInAccessibilitySettingsUnderScreenReaderTitle(container: typings.mendixmodelsdk.srcGenPagesMod.pages.AccessibilitySettings): typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAccessibilitySettingsUnderScreenReaderTitle")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate]
+  
+  /**
+    * Creates and returns a new ClientTemplate instance in the SDK and on the server.
     * The new ClientTemplate will be automatically stored in the 'caption' property
     * of the parent Button element passed as argument.
     */

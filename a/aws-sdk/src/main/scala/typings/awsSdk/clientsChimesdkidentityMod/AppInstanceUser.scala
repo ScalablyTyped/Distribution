@@ -17,6 +17,11 @@ trait AppInstanceUser extends StObject {
   var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
+    * The interval after which an AppInstanceUser is automatically deleted.
+    */
+  var ExpirationSettings: js.UndefOr[typings.awsSdk.clientsChimesdkidentityMod.ExpirationSettings] = js.undefined
+  
+  /**
     * The time at which the AppInstanceUser was last updated.
     */
   var LastUpdatedTimestamp: js.UndefOr[js.Date] = js.undefined
@@ -48,6 +53,10 @@ object AppInstanceUser {
     inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
+    
+    inline def setExpirationSettings(value: ExpirationSettings): Self = StObject.set(x, "ExpirationSettings", value.asInstanceOf[js.Any])
+    
+    inline def setExpirationSettingsUndefined: Self = StObject.set(x, "ExpirationSettings", js.undefined)
     
     inline def setLastUpdatedTimestamp(value: js.Date): Self = StObject.set(x, "LastUpdatedTimestamp", value.asInstanceOf[js.Any])
     

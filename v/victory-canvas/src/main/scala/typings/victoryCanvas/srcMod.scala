@@ -22,7 +22,7 @@ object srcMod {
     def this(props: CanvasBarProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: CanvasBarProps, context: Any) = this()
   }
@@ -34,7 +34,7 @@ object srcMod {
     def this(props: CanvasCurveProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: CanvasCurveProps, context: Any) = this()
   }
@@ -45,7 +45,7 @@ object srcMod {
     def this(props: CanvasGroupProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: CanvasGroupProps, context: Any) = this()
   }
@@ -57,7 +57,7 @@ object srcMod {
     def this(props: CanvasPointProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: CanvasPointProps, context: Any) = this()
   }

@@ -6,7 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait StreamLayerViewProperties
   extends StObject
-     with LayerViewProperties {
+     with LayerViewProperties
+     with HighlightLayerViewMixinProperties {
   
   /**
     * The featureEffect can be used to draw attention features of interest.

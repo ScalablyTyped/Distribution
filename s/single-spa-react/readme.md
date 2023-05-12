@@ -1,7 +1,7 @@
 
 # Scala.js typings for single-spa-react
 
-Typings are for version 5.0.0
+Typings are for version 5.0.1
 
 ## Library description:
 Single-spa lifecycles helper for React apps

@@ -52,6 +52,11 @@ trait ConnectorMetadata extends StObject {
   var Marketo: js.UndefOr[MarketoMetadata] = js.undefined
   
   /**
+    * The connector metadata specific to Salesforce Pardot.
+    */
+  var Pardot: js.UndefOr[PardotMetadata] = js.undefined
+  
+  /**
     *  The connector metadata specific to Amazon Redshift. 
     */
   var Redshift: js.UndefOr[RedshiftMetadata] = js.undefined
@@ -153,6 +158,10 @@ object ConnectorMetadata {
     inline def setMarketo(value: MarketoMetadata): Self = StObject.set(x, "Marketo", value.asInstanceOf[js.Any])
     
     inline def setMarketoUndefined: Self = StObject.set(x, "Marketo", js.undefined)
+    
+    inline def setPardot(value: PardotMetadata): Self = StObject.set(x, "Pardot", value.asInstanceOf[js.Any])
+    
+    inline def setPardotUndefined: Self = StObject.set(x, "Pardot", js.undefined)
     
     inline def setRedshift(value: RedshiftMetadata): Self = StObject.set(x, "Redshift", value.asInstanceOf[js.Any])
     

@@ -153,6 +153,8 @@ object sapMP13nItemMod {
     def getDescription(): String = js.native
     
     /**
+      * @SINCE 1.52
+      *
       * Gets current value of property {@link #getFormatSettings formatSettings}.
       *
       * A JSON object containing the formatSettings which will be used to pass additional type/format settings
@@ -290,6 +292,8 @@ object sapMP13nItemMod {
     def getType(): String = js.native
     
     /**
+      * @SINCE 1.56
+      *
       * Gets current value of property {@link #getTypeInstance typeInstance}.
       *
       * data type instance of the column. Can be used instead of the type, precision, scale and formatSettings
@@ -379,6 +383,8 @@ object sapMP13nItemMod {
     sDescription: String): this.type = js.native
     
     /**
+      * @SINCE 1.52
+      *
       * Sets a new value for property {@link #getFormatSettings formatSettings}.
       *
       * A JSON object containing the formatSettings which will be used to pass additional type/format settings
@@ -588,6 +594,8 @@ object sapMP13nItemMod {
     sType: String): this.type = js.native
     
     /**
+      * @SINCE 1.56
+      *
       * Sets a new value for property {@link #getTypeInstance typeInstance}.
       *
       * data type instance of the column. Can be used instead of the type, precision, scale and formatSettings
@@ -676,6 +684,8 @@ object sapMP13nItemMod {
     var description: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
+      * @SINCE 1.52
+      *
       * A JSON object containing the formatSettings which will be used to pass additional type/format settings
       * for the entered value. if type==time or date or datetime the object will be used for the DateFormatter,
       * TimeFormatter or DateTimeFormatter
@@ -764,6 +774,8 @@ object sapMP13nItemMod {
     var `type`: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
+      * @SINCE 1.56
+      *
       * data type instance of the column. Can be used instead of the type, precision, scale and formatSettings
       * properties
       */

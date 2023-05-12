@@ -80,8 +80,7 @@ object R3ComponentMetadata {
     fullInheritance: Boolean,
     host: R3HostMetadata,
     i18nUseExternalIds: Boolean,
-    inputs: StringDictionary[String | (js.Tuple2[String, String])],
-    internalType: Expression,
+    inputs: StringDictionary[R3InputMetadata],
     interpolation: InterpolationConfig,
     isStandalone: Boolean,
     lifecycle: UsesOnChanges,
@@ -97,7 +96,7 @@ object R3ComponentMetadata {
     usesInheritance: Boolean,
     viewQueries: js.Array[R3QueryMetadata]
   ): R3ComponentMetadata[DeclarationT] = {
-    val __obj = js.Dynamic.literal(declarationListEmitMode = declarationListEmitMode.asInstanceOf[js.Any], declarations = declarations.asInstanceOf[js.Any], encapsulation = encapsulation.asInstanceOf[js.Any], fullInheritance = fullInheritance.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], i18nUseExternalIds = i18nUseExternalIds.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], interpolation = interpolation.asInstanceOf[js.Any], isStandalone = isStandalone.asInstanceOf[js.Any], lifecycle = lifecycle.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], queries = queries.asInstanceOf[js.Any], relativeContextFilePath = relativeContextFilePath.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], typeSourceSpan = typeSourceSpan.asInstanceOf[js.Any], usesInheritance = usesInheritance.asInstanceOf[js.Any], viewQueries = viewQueries.asInstanceOf[js.Any], animations = null, deps = null, exportAs = null, providers = null, selector = null, viewProviders = null)
+    val __obj = js.Dynamic.literal(declarationListEmitMode = declarationListEmitMode.asInstanceOf[js.Any], declarations = declarations.asInstanceOf[js.Any], encapsulation = encapsulation.asInstanceOf[js.Any], fullInheritance = fullInheritance.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], i18nUseExternalIds = i18nUseExternalIds.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], interpolation = interpolation.asInstanceOf[js.Any], isStandalone = isStandalone.asInstanceOf[js.Any], lifecycle = lifecycle.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], queries = queries.asInstanceOf[js.Any], relativeContextFilePath = relativeContextFilePath.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], typeSourceSpan = typeSourceSpan.asInstanceOf[js.Any], usesInheritance = usesInheritance.asInstanceOf[js.Any], viewQueries = viewQueries.asInstanceOf[js.Any], animations = null, deps = null, exportAs = null, hostDirectives = null, providers = null, selector = null, viewProviders = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3ComponentMetadata[DeclarationT]]
   }

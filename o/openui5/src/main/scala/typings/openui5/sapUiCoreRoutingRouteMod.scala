@@ -374,6 +374,7 @@ object sapUiCoreRoutingRouteMod {
     
     /**
       * @SINCE 1.46.1
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:beforeMatched beforeMatched} to attached listeners.
       *

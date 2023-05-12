@@ -44,6 +44,12 @@ open class ActionButton protected () extends Button {
     */
   def disabledDuringAction: Boolean = js.native
   def disabledDuringAction_=(newValue: Boolean): Unit = js.native
+  
+  /**
+    * In version 9.24.0: introduced
+    */
+  def nativeAccessibilitySettings: AccessibilitySettings | Null = js.native
+  def nativeAccessibilitySettings_=(newValue: AccessibilitySettings | Null): Unit = js.native
 }
 object ActionButton {
   

@@ -19,11 +19,11 @@ object relayHooksUsePaginationFragmentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def usePaginationFragment[TQuery /* <: OperationType */, TKey /* <: KeyType[Any] */](fragmentInput: GraphQLTaggedNode): // tslint:disable-next-line no-unnecessary-generics
-  usePaginationFragmentHookType[TQuery, TKey | Null, (KeyTypeData[TKey, Any]) | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePaginationFragment")(fragmentInput.asInstanceOf[js.Any]).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
+  inline def usePaginationFragment[TQuery /* <: OperationType */, TKey /* <: KeyType[Any] */](fragmentInput: GraphQLTaggedNode): // eslint-disable-next-line no-unnecessary-generics
+  usePaginationFragmentHookType[TQuery, TKey | Null, (KeyTypeData[TKey, Any]) | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePaginationFragment")(fragmentInput.asInstanceOf[js.Any]).asInstanceOf[// eslint-disable-next-line no-unnecessary-generics
   usePaginationFragmentHookType[TQuery, TKey | Null, (KeyTypeData[TKey, Any]) | Null]]
-  inline def usePaginationFragment[TQuery /* <: OperationType */, TKey /* <: KeyType[Any] */](fragmentInput: GraphQLTaggedNode, parentFragmentRef: TKey): // tslint:disable-next-line no-unnecessary-generics
-  usePaginationFragmentHookType[TQuery, TKey, KeyTypeData[TKey, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("usePaginationFragment")(fragmentInput.asInstanceOf[js.Any], parentFragmentRef.asInstanceOf[js.Any])).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
+  inline def usePaginationFragment[TQuery /* <: OperationType */, TKey /* <: KeyType[Any] */](fragmentInput: GraphQLTaggedNode, parentFragmentRef: TKey): // eslint-disable-next-line no-unnecessary-generics
+  usePaginationFragmentHookType[TQuery, TKey, KeyTypeData[TKey, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("usePaginationFragment")(fragmentInput.asInstanceOf[js.Any], parentFragmentRef.asInstanceOf[js.Any])).asInstanceOf[// eslint-disable-next-line no-unnecessary-generics
   usePaginationFragmentHookType[TQuery, TKey, KeyTypeData[TKey, Any]]]
   
   trait usePaginationFragmentHookType[TQuery /* <: OperationType */, TKey /* <: KeyType[Any] | Null */, TFragmentData] extends StObject {

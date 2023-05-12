@@ -23,7 +23,7 @@ object libComponentsSwatchColorPickerMod {
     def this(props: IColorPickerGridCellProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: IColorPickerGridCellProps, context: Any) = this()
   }

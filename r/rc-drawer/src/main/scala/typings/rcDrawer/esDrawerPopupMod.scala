@@ -1,24 +1,25 @@
 package typings.rcDrawer
 
+import org.scalablytyped.runtime.Shortcut
 import typings.rcMotion.esCssmotionMod.CSSMotionProps
 import typings.react.mod.CSSProperties
+import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
-import typings.react.mod.global.JSX.Element
+import typings.react.mod.RefAttributes
+import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esDrawerPopupMod {
+object esDrawerPopupMod extends Shortcut {
   
-  @JSImport("rc-drawer/es/DrawerPopup", JSImport.Namespace)
+  @JSImport("rc-drawer/es/DrawerPopup", JSImport.Default)
   @js.native
-  val ^ : js.Any = js.native
-  
-  inline def default(props: DrawerPopupProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  val default: ForwardRefExoticComponent[DrawerPopupProps & RefAttributes[HTMLDivElement]] = js.native
   
   trait DrawerPopupProps extends StObject {
     
@@ -228,4 +229,9 @@ object esDrawerPopupMod {
       inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     }
   }
+  
+  type _To = ForwardRefExoticComponent[DrawerPopupProps & RefAttributes[HTMLDivElement]]
+  
+  /* This means you don't have to write `default`, but can instead just say `esDrawerPopupMod.foo` */
+  override def _to: ForwardRefExoticComponent[DrawerPopupProps & RefAttributes[HTMLDivElement]] = default
 }

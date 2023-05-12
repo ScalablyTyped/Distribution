@@ -163,7 +163,7 @@ trait LegendOptions extends StObject {
     * graphs they're representing, except in inverted charts or when the legend
     * position doesn't allow it.
     */
-  var layout: js.UndefOr[String] = js.undefined
+  var layout: js.UndefOr[OptionsLayoutValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) If the plot area sized is
@@ -237,7 +237,9 @@ trait LegendOptions extends StObject {
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The border radius of the symbol
     * for series types that use a rectangle in the legend. Defaults to half the
-    * `symbolHeight`.
+    * `symbolHeight`, effectively creating a circle.
+    *
+    * For color axis scales, it defaults to 3.
     */
   var symbolRadius: js.UndefOr[Double] = js.undefined
   
@@ -409,7 +411,7 @@ object LegendOptions {
     
     inline def setLabelFormatterUndefined: Self = StObject.set(x, "labelFormatter", js.undefined)
     
-    inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: OptionsLayoutValue): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     

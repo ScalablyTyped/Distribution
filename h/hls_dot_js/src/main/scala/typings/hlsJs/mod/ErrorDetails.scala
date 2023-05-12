@@ -80,6 +80,12 @@ object ErrorDetails extends StObject {
   /* "fragDecryptError" */ val FRAG_DECRYPT_ERROR: typings.hlsJs.mod.ErrorDetails.FRAG_DECRYPT_ERROR & String = js.native
   
   @js.native
+  sealed trait FRAG_GAP
+    extends StObject
+       with ErrorDetails
+  /* "fragGap" */ val FRAG_GAP: typings.hlsJs.mod.ErrorDetails.FRAG_GAP & String = js.native
+  
+  @js.native
   sealed trait FRAG_LOAD_ERROR
     extends StObject
        with ErrorDetails
@@ -134,10 +140,10 @@ object ErrorDetails extends StObject {
   /* "keySystemNoAccess" */ val KEY_SYSTEM_NO_ACCESS: typings.hlsJs.mod.ErrorDetails.KEY_SYSTEM_NO_ACCESS & String = js.native
   
   @js.native
-  sealed trait KEY_SYSTEM_NO_INIT_DATA
+  sealed trait KEY_SYSTEM_NO_CONFIGURED_LICENSE
     extends StObject
        with ErrorDetails
-  /* "keySystemNoInitData" */ val KEY_SYSTEM_NO_INIT_DATA: typings.hlsJs.mod.ErrorDetails.KEY_SYSTEM_NO_INIT_DATA & String = js.native
+  /* "keySystemNoConfiguredLicense" */ val KEY_SYSTEM_NO_CONFIGURED_LICENSE: typings.hlsJs.mod.ErrorDetails.KEY_SYSTEM_NO_CONFIGURED_LICENSE & String = js.native
   
   @js.native
   sealed trait KEY_SYSTEM_NO_KEYS
@@ -150,6 +156,36 @@ object ErrorDetails extends StObject {
     extends StObject
        with ErrorDetails
   /* "keySystemNoSession" */ val KEY_SYSTEM_NO_SESSION: typings.hlsJs.mod.ErrorDetails.KEY_SYSTEM_NO_SESSION & String = js.native
+  
+  @js.native
+  sealed trait KEY_SYSTEM_SERVER_CERTIFICATE_REQUEST_FAILED
+    extends StObject
+       with ErrorDetails
+  /* "keySystemServerCertificateRequestFailed" */ val KEY_SYSTEM_SERVER_CERTIFICATE_REQUEST_FAILED: typings.hlsJs.mod.ErrorDetails.KEY_SYSTEM_SERVER_CERTIFICATE_REQUEST_FAILED & String = js.native
+  
+  @js.native
+  sealed trait KEY_SYSTEM_SERVER_CERTIFICATE_UPDATE_FAILED
+    extends StObject
+       with ErrorDetails
+  /* "keySystemServerCertificateUpdateFailed" */ val KEY_SYSTEM_SERVER_CERTIFICATE_UPDATE_FAILED: typings.hlsJs.mod.ErrorDetails.KEY_SYSTEM_SERVER_CERTIFICATE_UPDATE_FAILED & String = js.native
+  
+  @js.native
+  sealed trait KEY_SYSTEM_SESSION_UPDATE_FAILED
+    extends StObject
+       with ErrorDetails
+  /* "keySystemSessionUpdateFailed" */ val KEY_SYSTEM_SESSION_UPDATE_FAILED: typings.hlsJs.mod.ErrorDetails.KEY_SYSTEM_SESSION_UPDATE_FAILED & String = js.native
+  
+  @js.native
+  sealed trait KEY_SYSTEM_STATUS_INTERNAL_ERROR
+    extends StObject
+       with ErrorDetails
+  /* "keySystemStatusInternalError" */ val KEY_SYSTEM_STATUS_INTERNAL_ERROR: typings.hlsJs.mod.ErrorDetails.KEY_SYSTEM_STATUS_INTERNAL_ERROR & String = js.native
+  
+  @js.native
+  sealed trait KEY_SYSTEM_STATUS_OUTPUT_RESTRICTED
+    extends StObject
+       with ErrorDetails
+  /* "keySystemStatusOutputRestricted" */ val KEY_SYSTEM_STATUS_OUTPUT_RESTRICTED: typings.hlsJs.mod.ErrorDetails.KEY_SYSTEM_STATUS_OUTPUT_RESTRICTED & String = js.native
   
   @js.native
   sealed trait LEVEL_EMPTY_ERROR
@@ -168,6 +204,12 @@ object ErrorDetails extends StObject {
     extends StObject
        with ErrorDetails
   /* "levelLoadTimeOut" */ val LEVEL_LOAD_TIMEOUT: typings.hlsJs.mod.ErrorDetails.LEVEL_LOAD_TIMEOUT & String = js.native
+  
+  @js.native
+  sealed trait LEVEL_PARSING_ERROR
+    extends StObject
+       with ErrorDetails
+  /* "levelParsingError" */ val LEVEL_PARSING_ERROR: typings.hlsJs.mod.ErrorDetails.LEVEL_PARSING_ERROR & String = js.native
   
   @js.native
   sealed trait LEVEL_SWITCH_ERROR

@@ -4,6 +4,8 @@ import typings.i18next.i18nextBooleans.`false`
 import typings.i18next.i18nextBooleans.`true`
 import typings.i18next.mod.FallbackLng
 import typings.i18next.mod.FallbackLngObjList
+import typings.i18next.mod.FallbackOrNS
+import typings.i18next.mod.Namespace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,6 +27,24 @@ object anon {
     implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setReturnDetails(value: `true`): Self = StObject.set(x, "returnDetails", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait `1` extends StObject {
+    
+    var returnObjects: `true`
+  }
+  object `1` {
+    
+    inline def apply(): `1` = {
+      val __obj = js.Dynamic.literal(returnObjects = true)
+      __obj.asInstanceOf[`1`]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
+      
+      inline def setReturnObjects(value: `true`): Self = StObject.set(x, "returnObjects", value.asInstanceOf[js.Any])
     }
   }
   
@@ -101,6 +121,24 @@ object anon {
     }
   }
   
+  trait DefaultValue extends StObject {
+    
+    var defaultValue: String
+  }
+  object DefaultValue {
+    
+    inline def apply(defaultValue: String): DefaultValue = {
+      val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DefaultValue]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultValue] (val x: Self) extends AnyVal {
+      
+      inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait KeySeparator extends StObject {
     
     var keySeparator: js.UndefOr[String] = js.undefined
@@ -127,20 +165,64 @@ object anon {
     }
   }
   
-  /* Inlined std.Pick<i18next.i18next.InitOptions, 'fallbackLng'> */
-  trait PickInitOptionsfallbackLn extends StObject {
+  trait Ns[PassedNS /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */] extends StObject {
     
-    var fallbackLng: js.UndefOr[`false` | FallbackLng] = js.undefined
+    var ns: PassedNS
+    
+    var returnDetails: `true`
+    
+    var returnObjects: `true`
   }
-  object PickInitOptionsfallbackLn {
+  object Ns {
     
-    inline def apply(): PickInitOptionsfallbackLn = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PickInitOptionsfallbackLn]
+    inline def apply[PassedNS /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */](ns: PassedNS): Ns[PassedNS] = {
+      val __obj = js.Dynamic.literal(ns = ns.asInstanceOf[js.Any], returnDetails = true, returnObjects = true)
+      __obj.asInstanceOf[Ns[PassedNS]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: PickInitOptionsfallbackLn] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: Ns[?], PassedNS /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */] (val x: Self & Ns[PassedNS]) extends AnyVal {
+      
+      inline def setNs(value: PassedNS): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
+      
+      inline def setReturnDetails(value: `true`): Self = StObject.set(x, "returnDetails", value.asInstanceOf[js.Any])
+      
+      inline def setReturnObjects(value: `true`): Self = StObject.set(x, "returnObjects", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait NsPassedNS[PassedNS /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */] extends StObject {
+    
+    var ns: PassedNS
+  }
+  object NsPassedNS {
+    
+    inline def apply[PassedNS /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */](ns: PassedNS): NsPassedNS[PassedNS] = {
+      val __obj = js.Dynamic.literal(ns = ns.asInstanceOf[js.Any])
+      __obj.asInstanceOf[NsPassedNS[PassedNS]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NsPassedNS[?], PassedNS /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */] (val x: Self & NsPassedNS[PassedNS]) extends AnyVal {
+      
+      inline def setNs(value: PassedNS): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined std.Pick<i18next.i18next.InitOptions<object>, 'fallbackLng'> */
+  trait PickInitOptionsobjectfall extends StObject {
+    
+    var fallbackLng: js.UndefOr[`false` | FallbackLng] = js.undefined
+  }
+  object PickInitOptionsobjectfall {
+    
+    inline def apply(): PickInitOptionsobjectfall = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PickInitOptionsobjectfall]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickInitOptionsobjectfall] (val x: Self) extends AnyVal {
       
       inline def setFallbackLng(value: `false` | FallbackLng): Self = StObject.set(x, "fallbackLng", value.asInstanceOf[js.Any])
       
@@ -152,22 +234,22 @@ object anon {
     }
   }
   
-  /* Inlined std.Pick<i18next.i18next.InitOptions, 'keySeparator' | 'ignoreJSONStructure'> */
-  trait PickInitOptionskeySeparat extends StObject {
+  /* Inlined std.Pick<i18next.i18next.InitOptions<object>, 'keySeparator' | 'ignoreJSONStructure'> */
+  trait PickInitOptionsobjectkeyS extends StObject {
     
     var ignoreJSONStructure: js.UndefOr[Boolean] = js.undefined
     
     var keySeparator: js.UndefOr[`false` | String] = js.undefined
   }
-  object PickInitOptionskeySeparat {
+  object PickInitOptionsobjectkeyS {
     
-    inline def apply(): PickInitOptionskeySeparat = {
+    inline def apply(): PickInitOptionsobjectkeyS = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PickInitOptionskeySeparat]
+      __obj.asInstanceOf[PickInitOptionsobjectkeyS]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: PickInitOptionskeySeparat] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: PickInitOptionsobjectkeyS] (val x: Self) extends AnyVal {
       
       inline def setIgnoreJSONStructure(value: Boolean): Self = StObject.set(x, "ignoreJSONStructure", value.asInstanceOf[js.Any])
       
@@ -201,19 +283,23 @@ object anon {
     }
   }
   
-  trait ReturnObjects extends StObject {
+  trait ReturnObjects[PassedNS /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */] extends StObject {
+    
+    var ns: PassedNS
     
     var returnObjects: `true`
   }
   object ReturnObjects {
     
-    inline def apply(): ReturnObjects = {
-      val __obj = js.Dynamic.literal(returnObjects = true)
-      __obj.asInstanceOf[ReturnObjects]
+    inline def apply[PassedNS /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */](ns: PassedNS): ReturnObjects[PassedNS] = {
+      val __obj = js.Dynamic.literal(ns = ns.asInstanceOf[js.Any], returnObjects = true)
+      __obj.asInstanceOf[ReturnObjects[PassedNS]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: ReturnObjects] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: ReturnObjects[?], PassedNS /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */] (val x: Self & ReturnObjects[PassedNS]) extends AnyVal {
+      
+      inline def setNs(value: PassedNS): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
       
       inline def setReturnObjects(value: `true`): Self = StObject.set(x, "returnObjects", value.asInstanceOf[js.Any])
     }

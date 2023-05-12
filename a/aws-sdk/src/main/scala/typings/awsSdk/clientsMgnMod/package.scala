@@ -9,6 +9,61 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type ARN = String
 
+type AccountID = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DISASTER_RECOVERY
+  - typings.awsSdk.awsSdkStrings.OPERATING_SYSTEM
+  - typings.awsSdk.awsSdkStrings.LICENSE_AND_SUBSCRIPTION
+  - typings.awsSdk.awsSdkStrings.VALIDATION
+  - typings.awsSdk.awsSdkStrings.OBSERVABILITY
+  - typings.awsSdk.awsSdkStrings.SECURITY
+  - typings.awsSdk.awsSdkStrings.NETWORKING
+  - typings.awsSdk.awsSdkStrings.CONFIGURATION
+  - typings.awsSdk.awsSdkStrings.BACKUP
+  - typings.awsSdk.awsSdkStrings.OTHER
+  - java.lang.String
+*/
+type ActionCategory = _ActionCategory | String
+
+type ActionDescription = String
+
+type ActionID = String
+
+type ActionIDs = js.Array[ActionID]
+
+type ActionName = String
+
+type ApplicationDescription = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.HEALTHY
+  - typings.awsSdk.awsSdkStrings.LAGGING
+  - typings.awsSdk.awsSdkStrings.ERROR
+  - java.lang.String
+*/
+type ApplicationHealthStatus = _ApplicationHealthStatus | String
+
+type ApplicationID = String
+
+type ApplicationIDs = js.Array[ApplicationID]
+
+type ApplicationIDsFilter = js.Array[ApplicationID]
+
+type ApplicationName = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NOT_STARTED
+  - typings.awsSdk.awsSdkStrings.IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.COMPLETED
+  - java.lang.String
+*/
+type ApplicationProgressStatus = _ApplicationProgressStatus | String
+
+type ApplicationsList = js.Array[Application]
+
+type AssociateSourceServersRequestSourceServerIDs = js.Array[SourceServerID]
+
 type Boolean = scala.Boolean
 
 /* Rewritten from type alias, can be one of: 
@@ -27,6 +82,8 @@ type BoundedString = String
   - java.lang.String
 */
 type ChangeServerLifeCycleStateSourceServerLifecycleState = _ChangeServerLifeCycleStateSourceServerLifecycleState | String
+
+type ClientIdempotencyToken = String
 
 type CloudWatchLogGroupName = String
 
@@ -102,13 +159,36 @@ type DataReplicationState = _DataReplicationState | String
 
 type DescribeJobsRequestFiltersJobIDs = js.Array[JobID]
 
+type DescribeSourceServersRequestApplicationIDs = js.Array[ApplicationID]
+
 type DescribeSourceServersRequestFiltersIDs = js.Array[SourceServerID]
 
+type DisassociateSourceServersRequestSourceServerIDs = js.Array[SourceServerID]
+
 type Disks = js.Array[Disk]
+
+type DocumentVersion = String
 
 type EC2InstanceID = String
 
 type EC2InstanceType = String
+
+type EC2LaunchConfigurationTemplateID = String
+
+type ExportErrors = js.Array[ExportTaskError]
+
+type ExportID = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PENDING
+  - typings.awsSdk.awsSdkStrings.STARTED
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.SUCCEEDED
+  - java.lang.String
+*/
+type ExportStatus = _ExportStatus | String
+
+type ExportsList = js.Array[ExportTask]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.WAITING
@@ -119,11 +199,37 @@ type EC2InstanceType = String
 */
 type FirstBoot = _FirstBoot | String
 
+type Float = Double
+
 type IPsList = js.Array[BoundedString]
 
 type ISO8601DatetimeString = String
 
 type ISO8601DurationString = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.VALIDATION_ERROR
+  - typings.awsSdk.awsSdkStrings.PROCESSING_ERROR
+  - java.lang.String
+*/
+type ImportErrorType = _ImportErrorType | String
+
+type ImportErrors = js.Array[ImportTaskError]
+
+type ImportID = String
+
+type ImportIDsFilter = js.Array[ImportID]
+
+type ImportList = js.Array[ImportTask]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PENDING
+  - typings.awsSdk.awsSdkStrings.STARTED
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.SUCCEEDED
+  - java.lang.String
+*/
+type ImportStatus = _ImportStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.START_TEST
@@ -133,6 +239,8 @@ type ISO8601DurationString = String
   - java.lang.String
 */
 type InitiatedBy = _InitiatedBy | String
+
+type JmesPathString = String
 
 type JobID = String
 
@@ -211,13 +319,22 @@ type LaunchStatus = _LaunchStatus | String
   - typings.awsSdk.awsSdkStrings.CUTOVER
   - typings.awsSdk.awsSdkStrings.DISCONNECTED
   - typings.awsSdk.awsSdkStrings.DISCOVERED
+  - typings.awsSdk.awsSdkStrings.PENDING_INSTALLATION
   - java.lang.String
 */
 type LifeCycleState = _LifeCycleState | String
 
 type LifeCycleStates = js.Array[LifeCycleState]
 
+type ListExportsRequestFiltersExportIDs = js.Array[ExportID]
+
+type MaxResultsType = Double
+
 type NetworkInterfaces = js.Array[NetworkInterface]
+
+type OperatingSystemString = String
+
+type OrderType = Double
 
 type PaginationToken = String
 
@@ -236,6 +353,7 @@ type PostLaunchActionExecutionStatus = _PostLaunchActionExecutionStatus | String
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TEST_AND_CUTOVER
   - typings.awsSdk.awsSdkStrings.CUTOVER_ONLY
+  - typings.awsSdk.awsSdkStrings.TEST_ONLY
   - java.lang.String
 */
 type PostLaunchActionsDeploymentType = _PostLaunchActionsDeploymentType | String
@@ -296,15 +414,23 @@ type ReplicationType = _ReplicationType | String
 
 type ReplicationTypes = js.Array[ReplicationType]
 
+type S3BucketName = String
+
+type S3Key = String
+
 type S3LogBucketName = String
 
 type SecurityGroupID = String
 
 type SmallBoundedString = String
 
+type SourceServerActionDocuments = js.Array[SourceServerActionDocument]
+
 type SourceServerID = String
 
 type SourceServersList = js.Array[SourceServer]
+
+type SsmDocumentExternalParameters = StringDictionary[SsmExternalParameter]
 
 type SsmDocumentName = String
 
@@ -350,11 +476,51 @@ type TagsMap = StringDictionary[TagValue]
 */
 type TargetInstanceTypeRightSizingMethod = _TargetInstanceTypeRightSizingMethod | String
 
+type TemplateActionDocuments = js.Array[TemplateActionDocument]
+
 type TerminateTargetInstancesRequestSourceServerIDs = js.Array[SourceServerID]
 
 type VcenterClientID = String
 
 type VcenterClientList = js.Array[VcenterClient]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.io1_
+  - typings.awsSdk.awsSdkStrings.io2_
+  - typings.awsSdk.awsSdkStrings.gp3_
+  - typings.awsSdk.awsSdkStrings.gp2_
+  - typings.awsSdk.awsSdkStrings.st1_
+  - typings.awsSdk.awsSdkStrings.sc1_
+  - typings.awsSdk.awsSdkStrings.standard__
+  - java.lang.String
+*/
+type VolumeType = _VolumeType | String
+
+type WaveDescription = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.HEALTHY
+  - typings.awsSdk.awsSdkStrings.LAGGING
+  - typings.awsSdk.awsSdkStrings.ERROR
+  - java.lang.String
+*/
+type WaveHealthStatus = _WaveHealthStatus | String
+
+type WaveID = String
+
+type WaveIDsFilter = js.Array[WaveID]
+
+type WaveName = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NOT_STARTED
+  - typings.awsSdk.awsSdkStrings.IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.COMPLETED
+  - java.lang.String
+*/
+type WaveProgressStatus = _WaveProgressStatus | String
+
+type WavesList = js.Array[Wave]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2020-02-26`

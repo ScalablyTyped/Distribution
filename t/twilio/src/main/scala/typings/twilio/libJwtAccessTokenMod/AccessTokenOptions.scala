@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AccessTokenOptions extends StObject {
   
   /**
-    * The identity of the first person
+    * The identity of the first person. Required.
     */
-  var identity: js.UndefOr[String] = js.undefined
+  var identity: String
   
   /**
     * Time from epoch in seconds for not before value
@@ -28,8 +28,8 @@ trait AccessTokenOptions extends StObject {
 }
 object AccessTokenOptions {
   
-  inline def apply(): AccessTokenOptions = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(identity: String): AccessTokenOptions = {
+    val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessTokenOptions]
   }
   
@@ -37,8 +37,6 @@ object AccessTokenOptions {
   implicit open class MutableBuilder[Self <: AccessTokenOptions] (val x: Self) extends AnyVal {
     
     inline def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
-    
-    inline def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
     
     inline def setNbf(value: Double): Self = StObject.set(x, "nbf", value.asInstanceOf[js.Any])
     

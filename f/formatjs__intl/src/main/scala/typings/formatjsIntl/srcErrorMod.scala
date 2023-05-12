@@ -81,6 +81,8 @@ object srcErrorMod {
     def this(message: String, locale: String, exception: Any) = this()
     
     val descriptor: js.UndefOr[MessageDescriptor] = js.native
+    
+    val locale: String = js.native
   }
   
   @JSImport("@formatjs/intl/src/error", "InvalidConfigError")

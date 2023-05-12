@@ -11,11 +11,9 @@ trait RouterConfigLoader extends StObject {
   
   /* private */ var childrenLoaders: Any
   
-  /* private */ var compiler: Any
+  /* private */ val compiler: Any
   
   /* private */ var componentLoaders: Any
-  
-  /* private */ var injector: Any
   
   def loadChildren(parentInjector: Injector, route: Route): Observable_[LoadedRouterConfig]
   
@@ -33,12 +31,11 @@ object RouterConfigLoader {
     childrenLoaders: Any,
     compiler: Any,
     componentLoaders: Any,
-    injector: Any,
     loadChildren: (Injector, Route) => Observable_[LoadedRouterConfig],
     loadComponent: Route => Observable_[Type[Any]],
     loadModuleFactoryOrRoutes: Any
   ): RouterConfigLoader = {
-    val __obj = js.Dynamic.literal(childrenLoaders = childrenLoaders.asInstanceOf[js.Any], compiler = compiler.asInstanceOf[js.Any], componentLoaders = componentLoaders.asInstanceOf[js.Any], injector = injector.asInstanceOf[js.Any], loadChildren = js.Any.fromFunction2(loadChildren), loadComponent = js.Any.fromFunction1(loadComponent), loadModuleFactoryOrRoutes = loadModuleFactoryOrRoutes.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(childrenLoaders = childrenLoaders.asInstanceOf[js.Any], compiler = compiler.asInstanceOf[js.Any], componentLoaders = componentLoaders.asInstanceOf[js.Any], loadChildren = js.Any.fromFunction2(loadChildren), loadComponent = js.Any.fromFunction1(loadComponent), loadModuleFactoryOrRoutes = loadModuleFactoryOrRoutes.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouterConfigLoader]
   }
   
@@ -50,8 +47,6 @@ object RouterConfigLoader {
     inline def setCompiler(value: Any): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
     
     inline def setComponentLoaders(value: Any): Self = StObject.set(x, "componentLoaders", value.asInstanceOf[js.Any])
-    
-    inline def setInjector(value: Any): Self = StObject.set(x, "injector", value.asInstanceOf[js.Any])
     
     inline def setLoadChildren(value: (Injector, Route) => Observable_[LoadedRouterConfig]): Self = StObject.set(x, "loadChildren", js.Any.fromFunction2(value))
     

@@ -21,5 +21,6 @@ trait TypeofCylinderGeometry
       CylinderGeometry
     ] {
   
+  /** @internal */
   def fromJSON(data: Any): typings.three.srcGeometriesCylinderGeometryMod.CylinderGeometry = js.native
 }

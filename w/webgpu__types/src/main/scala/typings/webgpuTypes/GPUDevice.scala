@@ -44,15 +44,16 @@ trait GPUDevice
   def createCommandEncoder(descriptor: GPUCommandEncoderDescriptor): GPUCommandEncoder = js.native
   
   /**
-    * Creates a {@link GPUComputePipeline}.
+    * Creates a {@link GPUComputePipeline} using immediate pipeline creation.
     * @param descriptor - Description of the {@link GPUComputePipeline} to create.
     */
   def createComputePipeline(descriptor: GPUComputePipelineDescriptor): GPUComputePipeline = js.native
   
   /**
-    * Creates a {@link GPUComputePipeline}. The returned {@link Promise} resolves when the created pipeline
+    * Creates a {@link GPUComputePipeline} using async pipeline creation.
+    * The returned {@link Promise} resolves when the created pipeline
     * is ready to be used without additional delay.
-    * If pipeline creation fails, the returned {@link Promise} rejects with an {@link OperationError}.
+    * If pipeline creation fails, the returned {@link Promise} rejects with an {@link GPUPipelineError}.
     * Note: Use of this method is preferred whenever possible, as it prevents blocking the
     * queue timeline work on pipeline compilation.
     * @param descriptor - Description of the {@link GPUComputePipeline} to create.
@@ -78,15 +79,16 @@ trait GPUDevice
   def createRenderBundleEncoder(descriptor: GPURenderBundleEncoderDescriptor): GPURenderBundleEncoder = js.native
   
   /**
-    * Creates a {@link GPURenderPipeline}.
+    * Creates a {@link GPURenderPipeline} using immediate pipeline creation.
     * @param descriptor - Description of the {@link GPURenderPipeline} to create.
     */
   def createRenderPipeline(descriptor: GPURenderPipelineDescriptor): GPURenderPipeline = js.native
   
   /**
-    * Creates a {@link GPURenderPipeline}. The returned {@link Promise} resolves when the created pipeline
+    * Creates a {@link GPURenderPipeline} using async pipeline creation.
+    * The returned {@link Promise} resolves when the created pipeline
     * is ready to be used without additional delay.
-    * If pipeline creation fails, the returned {@link Promise} rejects with an {@link OperationError}.
+    * If pipeline creation fails, the returned {@link Promise} rejects with an {@link GPUPipelineError}.
     * Note: Use of this method is preferred whenever possible, as it prevents blocking the
     * queue timeline work on pipeline compilation.
     * @param descriptor - Description of the {@link GPURenderPipeline} to create.

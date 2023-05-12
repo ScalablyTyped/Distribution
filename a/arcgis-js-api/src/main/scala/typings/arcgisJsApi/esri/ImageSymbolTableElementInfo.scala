@@ -18,7 +18,7 @@ trait ImageSymbolTableElementInfo
   /**
     * The label of the category corresponding to the given image.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#ImageSymbolTableElementInfo)
+    * [Read more...](global.html)
     */
   var label: js.UndefOr[String] = js.undefined
   

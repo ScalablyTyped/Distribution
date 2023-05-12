@@ -59,9 +59,9 @@ trait NormalModuleLoaderContext[OptionsType] extends StObject {
     context: String,
     request: String,
     callback: js.Function3[
-      /* arg0 */ Null | js.Error, 
-      /* arg1 */ js.UndefOr[String | `false`], 
-      /* arg2 */ js.UndefOr[ResolveRequest], 
+      /* err */ Null | ErrorWithDetail, 
+      /* res */ js.UndefOr[String | `false`], 
+      /* req */ js.UndefOr[ResolveRequest], 
       Unit
     ]
   ): Any = js.native

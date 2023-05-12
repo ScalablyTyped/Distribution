@@ -14,7 +14,7 @@ trait Marketplacependingchange extends StObject {
   
   var marketplace_pending_change: js.UndefOr[Isinstalled | Null] = js.undefined
   
-  var marketplace_purchase: Nextbillingdate
+  var marketplace_purchase: BillingcycleFreetrialendson
   
   var organization_billing_email: js.UndefOr[String] = js.undefined
   
@@ -24,7 +24,13 @@ trait Marketplacependingchange extends StObject {
 }
 object Marketplacependingchange {
   
-  inline def apply(id: Double, login: String, marketplace_purchase: Nextbillingdate, `type`: String, url: String): Marketplacependingchange = {
+  inline def apply(
+    id: Double,
+    login: String,
+    marketplace_purchase: BillingcycleFreetrialendson,
+    `type`: String,
+    url: String
+  ): Marketplacependingchange = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], login = login.asInstanceOf[js.Any], marketplace_purchase = marketplace_purchase.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Marketplacependingchange]
@@ -49,7 +55,7 @@ object Marketplacependingchange {
     
     inline def setMarketplace_pending_changeUndefined: Self = StObject.set(x, "marketplace_pending_change", js.undefined)
     
-    inline def setMarketplace_purchase(value: Nextbillingdate): Self = StObject.set(x, "marketplace_purchase", value.asInstanceOf[js.Any])
+    inline def setMarketplace_purchase(value: BillingcycleFreetrialendson): Self = StObject.set(x, "marketplace_purchase", value.asInstanceOf[js.Any])
     
     inline def setOrganization_billing_email(value: String): Self = StObject.set(x, "organization_billing_email", value.asInstanceOf[js.Any])
     

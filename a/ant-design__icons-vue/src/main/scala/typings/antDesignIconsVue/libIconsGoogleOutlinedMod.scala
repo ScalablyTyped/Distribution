@@ -16,7 +16,7 @@ object libIconsGoogleOutlinedMod extends Shortcut {
   @js.native
   trait GoogleOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_GoogleOutlinedIconType: String = js.native

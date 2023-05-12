@@ -15,7 +15,9 @@ trait Job extends StObject {
   /** @description A collection of package manifests, which are a collection of related dependencies declared in a file or representing a logical group of dependencies. */
   var manifests: js.UndefOr[
     StringDictionary[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['manifest'] */ js.Any
+      js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['manifest'] */ js.Any
+      ]
     ]
   ] = js.undefined
   
@@ -37,7 +39,7 @@ trait Job extends StObject {
   var scanned: String
   
   /**
-    * @description The commit SHA associated with this dependency snapshot.
+    * @description The commit SHA associated with this dependency snapshot. Maximum length: 40 characters.
     * @example ddc951f4b1293222421f2c8df679786153acf689
     */
   var sha: String
@@ -61,7 +63,9 @@ object Job {
     
     inline def setManifests(
       value: StringDictionary[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['manifest'] */ js.Any
+          js.UndefOr[
+            /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['manifest'] */ js.Any
+          ]
         ]
     ): Self = StObject.set(x, "manifests", value.asInstanceOf[js.Any])
     

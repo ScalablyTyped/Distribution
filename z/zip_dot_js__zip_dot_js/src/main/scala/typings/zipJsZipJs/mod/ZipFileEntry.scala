@@ -1,5 +1,6 @@
 package typings.zipJsZipJs.mod
 
+import typings.std.AsyncGenerator
 import typings.std.Blob
 import typings.std.ReadableStream
 import typings.std.WritableStream
@@ -14,19 +15,13 @@ open class ZipFileEntry[ReaderType, WriterType] ()
      with ZipEntry {
   
   /**
-    * The children of the entry.
-    */
-  /* CompleteClass */
-  var children: js.Array[ZipEntry] = js.native
-  
-  /**
     * `void` for {@link ZipFileEntry} instances.
     */
   var directory: Unit = js.native
   
   /**
     * Retrieves the content of the entry as a `Blob` instance
-    * 
+    *
     * @param mimeType The MIME type of the content.
     * @param options The options.
     * @returns A promise resolving to a `Blob` instance.
@@ -36,19 +31,28 @@ open class ZipFileEntry[ReaderType, WriterType] ()
   def getBlob(mimeType: String, options: EntryGetDataOptions): js.Promise[Blob] = js.native
   def getBlob(mimeType: Unit, options: EntryGetDataOptions): js.Promise[Blob] = js.native
   
+  def getData(writer: AsyncGenerator[Writer[Any] | WritableWriter | WritableStream[Any], Any, Any]): js.Promise[Any] = js.native
+  def getData(
+    writer: AsyncGenerator[Writer[Any] | WritableWriter | WritableStream[Any], Any, Any],
+    options: EntryGetDataOptions
+  ): js.Promise[Any] = js.native
+  def getData(writer: WritableStream[Any]): js.Promise[Any] = js.native
+  def getData(writer: WritableStream[Any], options: EntryGetDataOptions): js.Promise[Any] = js.native
+  def getData(writer: WritableWriter): js.Promise[Any] = js.native
+  def getData(writer: WritableWriter, options: EntryGetDataOptions): js.Promise[Any] = js.native
   /**
     * Retrieves the content of the entry via a {@link Writer} instance
-    * 
+    *
     * @param writer The {@link Writer} instance.
     * @param options The options.
     * @returns A promise resolving to data associated to the {@link Writer} instance.
     */
-  def getData(writer: Writer[WriterType]): js.Promise[WriterType] = js.native
-  def getData(writer: Writer[WriterType], options: EntryGetDataOptions): js.Promise[WriterType] = js.native
+  def getData(writer: Writer[Any]): js.Promise[Any] = js.native
+  def getData(writer: Writer[Any], options: EntryGetDataOptions): js.Promise[Any] = js.native
   
   /**
     * Retrieves the content of the entry as as a Data URI `string` encoded in Base64
-    * 
+    *
     * @param mimeType The MIME type of the content.
     * @param options The options.
     * @returns A promise resolving to a Data URI `string` encoded in Base64.
@@ -59,20 +63,8 @@ open class ZipFileEntry[ReaderType, WriterType] ()
   def getData64URI(mimeType: Unit, options: EntryGetDataOptions): js.Promise[String] = js.native
   
   /**
-    * Returns the full filename of the entry
-    */
-  /* CompleteClass */
-  override def getFullname(): String = js.native
-  
-  /**
-    * Returns the filename of the entry relative to a parent directory
-    */
-  /* CompleteClass */
-  override def getRelativeName(ancestor: ZipDirectoryEntry): String = js.native
-  
-  /**
     * Retrieves the text content of the entry as a `string`
-    * 
+    *
     * @param encoding The encoding of the text.
     * @param options The options.
     * @returns A promise resolving to a `string`.
@@ -84,7 +76,7 @@ open class ZipFileEntry[ReaderType, WriterType] ()
   
   /**
     * Retrieves the content of the entry as a `Uint8Array` instance
-    * 
+    *
     * @param options The options.
     * @returns A promise resolving to a `Uint8Array` instance.
     */
@@ -93,7 +85,7 @@ open class ZipFileEntry[ReaderType, WriterType] ()
   
   /**
     * Retrieves the content of the entry via a `WritableStream` instance
-    * 
+    *
     * @param writable The `WritableStream` instance.
     * @param options The options.
     * @returns A promise resolving to the `WritableStream` instance.
@@ -104,73 +96,47 @@ open class ZipFileEntry[ReaderType, WriterType] ()
   def getWritable(writable: WritableStream[Any], options: EntryGetDataOptions): js.Promise[WritableStream[Any]] = js.native
   
   /**
-    * The ID of the instance.
-    */
-  /* CompleteClass */
-  var id: Double = js.native
-  
-  /**
-    * Tests if a {@link ZipDirectoryEntry} instance is an ancestor of the entry
-    * 
-    * @param ancestor The {@link ZipDirectoryEntry} instance.
-    */
-  /* CompleteClass */
-  override def isDescendantOf(ancestor: ZipDirectoryEntry): Boolean = js.native
-  
-  /**
-    * The relative filename of the entry.
-    */
-  /* CompleteClass */
-  var name: String = js.native
-  
-  /**
     * The {@link Reader} instance used to read the content of the entry.
     */
-  var reader: Reader[ReaderType] | ReadableReader = js.native
+  var reader: Reader[ReaderType] | ReadableReader | ReadableStream[Any] | (js.Array[ReadableReader | ReadableStream[Any] | Reader[Any]]) = js.native
   
   /**
     * Replaces the content of the entry with a `Blob` instance
-    * 
+    *
     * @param blob The `Blob` instance.
     */
   def replaceBlob(blob: Blob): Unit = js.native
   
   /**
     * Replaces the content of the entry with a Data URI `string` encoded in Base64
-    * 
+    *
     * @param dataURI The Data URI `string` encoded in Base64.
     */
   def replaceData64URI(dataURI: String): Unit = js.native
   
   /**
     * Replaces the content of the entry with a `ReadableStream` instance
-    * 
+    *
     * @param readable The `ReadableStream` instance.
     */
   def replaceReadable(readable: ReadableStream[Any]): Unit = js.native
   
   /**
     * Replaces the content of the entry with a `string`
-    * 
+    *
     * @param text The `string`.
     */
   def replaceText(text: String): Unit = js.native
   
   /**
     * Replaces the content of the entry with a `Uint8Array` instance
-    * 
+    *
     * @param array The `Uint8Array` instance.
     */
   def replaceUint8Array(array: js.typedarray.Uint8Array): Unit = js.native
   
   /**
-    * The uncompressed size of the content.
-    */
-  /* CompleteClass */
-  var uncompressedSize: Double = js.native
-  
-  /**
     * The {@link Writer} instance used to write the content of the entry.
     */
-  var writer: Writer[WriterType] | WritableWriter = js.native
+  var writer: Writer[WriterType] | WritableWriter | WritableStream[Any] | (AsyncGenerator[Writer[Any] | WritableWriter | WritableStream[Any], Any, Any]) = js.native
 }

@@ -6,11 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PasswordProfile extends StObject {
   
-  /**
-    * true if the user must change her password on the next login; otherwise false. If not set, default is false. NOTE: For
-    * Azure B2C tenants, set to false and instead use custom policies and user flows to force password reset at first sign
-    * in. See Force password reset at first logon.
-    */
+  // true if the user must change her password on the next login; otherwise false.
   var forceChangePasswordNextSignIn: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**

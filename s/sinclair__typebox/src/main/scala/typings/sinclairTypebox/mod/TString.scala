@@ -14,16 +14,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - org.scalablytyped.runtime.StObject because Already inherited
 - org.scalablytyped.runtime.StringDictionary because Already inherited
 - typings.sinclairTypebox.mod.SchemaOptions because Already inherited
+- typings.sinclairTypebox.mod._TAnySchema because Already inherited
 - typings.sinclairTypebox.mod.StringOptions because var conflicts: $id, $schema, default, description, examples, title. Inlined minLength, maxLength, pattern, format, contentEncoding, contentMediaType */ @js.native
-trait TString[Format /* <: String */]
+trait TString
   extends StObject
-     with TSchema {
+     with TSchema
+     with _RecordKey
+     with _TTemplateLiteralKind {
   
   var contentEncoding: js.UndefOr[`7bit` | `8bit` | binary | `quoted-printable` | base64] = js.native
   
   var contentMediaType: js.UndefOr[String] = js.native
   
-  var format: js.UndefOr[Format] = js.native
+  var format: js.UndefOr[String] = js.native
   
   var maxLength: js.UndefOr[Double] = js.native
   

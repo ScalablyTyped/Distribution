@@ -50,7 +50,7 @@ object mod {
     
     def disconnect(): Unit
     
-    /* tslint:disable-next-line:no-unnecessary-generics */
+    /* eslint-disable-next-line no-unnecessary-generics */
     def getInterface[T](
       serviceName: String,
       objectPath: String,

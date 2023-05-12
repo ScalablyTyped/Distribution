@@ -18,9 +18,9 @@ trait Get extends StObject {
     options: AbortOptions & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.PreloadOptions */ Any) & HTTPClientExtraOptions
   ): js.Promise[js.typedarray.Uint8Array] = js.native
   
-  def put(data: js.typedarray.Uint8Array): js.Promise[CID[Any, Double, Double, Version]] = js.native
+  def put(block: js.typedarray.Uint8Array): js.Promise[CID[Any, Double, Double, Version]] = js.native
   def put(
-    data: js.typedarray.Uint8Array,
+    block: js.typedarray.Uint8Array,
     options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.PutOptions */ Any) & HTTPClientExtraOptions
   ): js.Promise[CID[Any, Double, Double, Version]] = js.native
   

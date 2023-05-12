@@ -32,10 +32,12 @@ import typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture
 import typings.babylonjs.materialsTexturesRenderTargetTextureMod.RenderTargetTexture
 import typings.babylonjs.materialsUniformBufferMod.UniformBuffer
 import typings.babylonjs.mathsMathDotvectorMod.Matrix
+import typings.babylonjs.mathsMathMod.Plane
 import typings.babylonjs.meshesAbstractMeshMod.AbstractMesh
 import typings.babylonjs.meshesMeshMod.Mesh
 import typings.babylonjs.meshesSubMeshMod.SubMesh
 import typings.babylonjs.miscIInspectableMod.IInspectable
+import typings.babylonjs.miscInterfacesIClipPlanesHolderMod.IClipPlanesHolder
 import typings.babylonjs.miscObservableMod.Observable
 import typings.babylonjs.miscSmartArrayMod.SmartArray
 import typings.babylonjs.renderingPrePassRendererMod.PrePassRenderer
@@ -51,7 +53,8 @@ object materialsMaterialMod {
   @js.native
   open class Material protected ()
     extends StObject
-       with IAnimatable {
+       with IAnimatable
+       with IClipPlanesHolder {
     /**
       * Creates a material instance
       * @param name defines the name of the material
@@ -135,6 +138,8 @@ object materialsMaterialMod {
     /** @internal */
     def _callbackPluginEventPrepareDefinesBeforeAttributes(eventData: MaterialPluginPrepareDefines): Unit = js.native
     
+    /* protected */ def _checkScenePerformancePriority(): Unit = js.native
+    
     /**
       * Specifies if back or front faces should be culled (when culling is enabled)
       */
@@ -172,6 +177,12 @@ object materialsMaterialMod {
     
     /** @internal */
     var _indexInSceneMaterialArray: Double = js.native
+    
+    /** @internal */
+    var _internalMetadata: Any = js.native
+    
+    /** @internal */
+    def _isMaterial: Boolean = js.native
     
     /** @internal */
     var _loadedUniqueId: String = js.native
@@ -453,6 +464,73 @@ object materialsMaterialMod {
     var checkReadyOnlyOnce: Boolean = js.native
     
     /**
+      * Gets or sets the active clipplane 1
+      */
+    /* CompleteClass */
+    var clipPlane: Nullable[Plane] = js.native
+    
+    /**
+      * Gets or sets the active clipplane 2
+      */
+    /* CompleteClass */
+    var clipPlane2: Nullable[Plane] = js.native
+    /**
+      * Gets or sets the active clipplane 2
+      */
+    @JSName("clipPlane2")
+    var clipPlane2_Material: Nullable[typings.babylonjs.mathsMathDotplaneMod.Plane] = js.native
+    
+    /**
+      * Gets or sets the active clipplane 3
+      */
+    /* CompleteClass */
+    var clipPlane3: Nullable[Plane] = js.native
+    /**
+      * Gets or sets the active clipplane 3
+      */
+    @JSName("clipPlane3")
+    var clipPlane3_Material: Nullable[typings.babylonjs.mathsMathDotplaneMod.Plane] = js.native
+    
+    /**
+      * Gets or sets the active clipplane 4
+      */
+    /* CompleteClass */
+    var clipPlane4: Nullable[Plane] = js.native
+    /**
+      * Gets or sets the active clipplane 4
+      */
+    @JSName("clipPlane4")
+    var clipPlane4_Material: Nullable[typings.babylonjs.mathsMathDotplaneMod.Plane] = js.native
+    
+    /**
+      * Gets or sets the active clipplane 5
+      */
+    /* CompleteClass */
+    var clipPlane5: Nullable[Plane] = js.native
+    /**
+      * Gets or sets the active clipplane 5
+      */
+    @JSName("clipPlane5")
+    var clipPlane5_Material: Nullable[typings.babylonjs.mathsMathDotplaneMod.Plane] = js.native
+    
+    /**
+      * Gets or sets the active clipplane 6
+      */
+    /* CompleteClass */
+    var clipPlane6: Nullable[Plane] = js.native
+    /**
+      * Gets or sets the active clipplane 6
+      */
+    @JSName("clipPlane6")
+    var clipPlane6_Material: Nullable[typings.babylonjs.mathsMathDotplaneMod.Plane] = js.native
+    
+    /**
+      * Gets or sets the active clipplane 1
+      */
+    @JSName("clipPlane")
+    var clipPlane_Material: Nullable[typings.babylonjs.mathsMathDotplaneMod.Plane] = js.native
+    
+    /**
       * Makes a duplicate of the material, and gives it a new name
       * @param name defines the new name for the duplicated material
       * @returns the cloned material
@@ -716,7 +794,7 @@ object materialsMaterialMod {
     
     /**
       * List of inspectable custom properties (used by the Inspector)
-      * @see https://doc.babylonjs.com/how_to/debug_layer#extensibility
+      * @see https://doc.babylonjs.com/toolsAndResources/inspector#extensibility
       */
     var inspectableCustomProperties: js.Array[IInspectable] = js.native
     
@@ -759,8 +837,10 @@ object materialsMaterialMod {
     
     /**
       * Marks the material to indicate that it needs to be re-calculated
+      * @param forceMaterialDirty - Forces the material to be marked as dirty for all components (same as this.markAsDirty(Material.AllDirtyFlag)). You should use this flag if the material is frozen and you want to force a recompilation.
       */
     def markDirty(): Unit = js.native
+    def markDirty(forceMaterialDirty: Boolean): Unit = js.native
     
     /** @internal */
     var meshMap: Nullable[StringDictionary[js.UndefOr[AbstractMesh]]] = js.native

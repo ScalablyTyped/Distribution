@@ -12,7 +12,7 @@ open class Group protected ()
   def this(props: GroupProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: GroupProps, context: Any) = this()
 }

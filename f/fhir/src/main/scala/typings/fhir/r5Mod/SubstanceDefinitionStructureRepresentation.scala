@@ -11,7 +11,7 @@ trait SubstanceDefinitionStructureRepresentation
   var _representation: js.UndefOr[Element] = js.undefined
   
   /**
-    * An attached file with the structural representation or characterization e.g. a molecular structure graphic of the substance, a JCAMP or AnIML file.
+    * An attached file with the structural representation e.g. a molecular structure graphic of the substance, a JCAMP or AnIML file.
     */
   var document: js.UndefOr[Reference] = js.undefined
   
@@ -21,7 +21,7 @@ trait SubstanceDefinitionStructureRepresentation
   var format: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * The structural representation or characterization as a text string in a standard format.
+    * The structural representation as a text string in a standard format.
     */
   var representation: js.UndefOr[String] = js.undefined
   

@@ -1119,6 +1119,8 @@ object sapFFlexibleColumnLayoutMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:afterBeginColumnNavigate afterBeginColumnNavigate} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1130,6 +1132,8 @@ object sapFFlexibleColumnLayoutMod {
     mParameters: Direction): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:afterEndColumnNavigate afterEndColumnNavigate} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1141,6 +1145,8 @@ object sapFFlexibleColumnLayoutMod {
     mParameters: Direction): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:afterMidColumnNavigate afterMidColumnNavigate} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1152,6 +1158,8 @@ object sapFFlexibleColumnLayoutMod {
     mParameters: Direction): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:beginColumnNavigate beginColumnNavigate} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -1167,6 +1175,7 @@ object sapFFlexibleColumnLayoutMod {
     
     /**
       * @SINCE 1.76
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:columnResize columnResize} to attached listeners.
       *
@@ -1179,6 +1188,8 @@ object sapFFlexibleColumnLayoutMod {
     mParameters: BeginColumn): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:endColumnNavigate endColumnNavigate} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -1193,6 +1204,8 @@ object sapFFlexibleColumnLayoutMod {
     mParameters: Direction): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:midColumnNavigate midColumnNavigate} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -1207,6 +1220,8 @@ object sapFFlexibleColumnLayoutMod {
     mParameters: Direction): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:stateChange stateChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

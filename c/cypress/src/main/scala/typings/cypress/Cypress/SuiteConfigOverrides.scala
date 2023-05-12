@@ -3,13 +3,11 @@ package typings.cypress.Cypress
 import org.scalablytyped.runtime.StringDictionary
 import typings.cypress.anon.OpenMode
 import typings.cypress.anon.PartialBrowser
-import typings.cypress.cypressStrings.off
-import typings.cypress.cypressStrings.on
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined parent std.Partial<std.Pick<cypress.Cypress.ConfigOptions<any>, 'animationDistanceThreshold' | 'blockHosts' | 'defaultCommandTimeout' | 'env' | 'execTimeout' | 'includeShadowDom' | 'numTestsKeptInMemory' | 'pageLoadTimeout' | 'redirectionLimit' | 'requestTimeout' | 'responseTimeout' | 'retries' | 'screenshotOnRunFailure' | 'slowTestThreshold' | 'scrollBehavior' | 'taskTimeout' | 'viewportHeight' | 'viewportWidth' | 'waitForAnimations' | 'experimentalSessionAndOrigin'>> */
+/* Inlined parent std.Partial<std.Pick<cypress.Cypress.ConfigOptions<any>, 'animationDistanceThreshold' | 'blockHosts' | 'defaultCommandTimeout' | 'env' | 'execTimeout' | 'includeShadowDom' | 'numTestsKeptInMemory' | 'pageLoadTimeout' | 'redirectionLimit' | 'requestTimeout' | 'responseTimeout' | 'retries' | 'screenshotOnRunFailure' | 'slowTestThreshold' | 'scrollBehavior' | 'taskTimeout' | 'viewportHeight' | 'viewportWidth' | 'waitForAnimations'>> */
 /* Inlined parent std.Partial<std.Pick<cypress.Cypress.ResolvedConfigOptions<any>, 'baseUrl' | 'testIsolation'>> */
 trait SuiteConfigOverrides extends StObject {
   
@@ -26,8 +24,6 @@ trait SuiteConfigOverrides extends StObject {
   var env: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var execTimeout: js.UndefOr[Double] = js.undefined
-  
-  var experimentalSessionAndOrigin: js.UndefOr[Boolean] = js.undefined
   
   var includeShadowDom: js.UndefOr[Boolean] = js.undefined
   
@@ -53,7 +49,7 @@ trait SuiteConfigOverrides extends StObject {
   
   var taskTimeout: js.UndefOr[Double] = js.undefined
   
-  var testIsolation: js.UndefOr[Null | on | off] = js.undefined
+  var testIsolation: js.UndefOr[Boolean] = js.undefined
   
   var viewportHeight: js.UndefOr[Double] = js.undefined
   
@@ -107,10 +103,6 @@ object SuiteConfigOverrides {
     
     inline def setExecTimeoutUndefined: Self = StObject.set(x, "execTimeout", js.undefined)
     
-    inline def setExperimentalSessionAndOrigin(value: Boolean): Self = StObject.set(x, "experimentalSessionAndOrigin", value.asInstanceOf[js.Any])
-    
-    inline def setExperimentalSessionAndOriginUndefined: Self = StObject.set(x, "experimentalSessionAndOrigin", js.undefined)
-    
     inline def setIncludeShadowDom(value: Boolean): Self = StObject.set(x, "includeShadowDom", value.asInstanceOf[js.Any])
     
     inline def setIncludeShadowDomUndefined: Self = StObject.set(x, "includeShadowDom", js.undefined)
@@ -161,9 +153,7 @@ object SuiteConfigOverrides {
     
     inline def setTaskTimeoutUndefined: Self = StObject.set(x, "taskTimeout", js.undefined)
     
-    inline def setTestIsolation(value: on | off): Self = StObject.set(x, "testIsolation", value.asInstanceOf[js.Any])
-    
-    inline def setTestIsolationNull: Self = StObject.set(x, "testIsolation", null)
+    inline def setTestIsolation(value: Boolean): Self = StObject.set(x, "testIsolation", value.asInstanceOf[js.Any])
     
     inline def setTestIsolationUndefined: Self = StObject.set(x, "testIsolation", js.undefined)
     

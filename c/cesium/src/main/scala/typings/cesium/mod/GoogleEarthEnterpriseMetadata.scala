@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cesium", "GoogleEarthEnterpriseMetadata")
 @js.native
-open class GoogleEarthEnterpriseMetadata protected () extends StObject {
+open class GoogleEarthEnterpriseMetadata () extends StObject {
   def this(resourceOrUrl: String) = this()
   def this(resourceOrUrl: Resource) = this()
   
@@ -71,6 +71,15 @@ object GoogleEarthEnterpriseMetadata {
   @JSImport("cesium", "GoogleEarthEnterpriseMetadata")
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def fromUrl(resourceOrUrl: String): js.Promise[GoogleEarthEnterpriseMetadata] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(resourceOrUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GoogleEarthEnterpriseMetadata]]
+  /**
+    * Creates a metadata object using the Google Earth Enterprise REST API. This is used by the GoogleEarthEnterpriseImageryProvider
+    * and GoogleEarthEnterpriseTerrainProvider to share metadata requests.
+    * @param resourceOrUrl - The url of the Google Earth Enterprise server hosting the imagery.
+    * @returns A promise which resolves to the created GoogleEarthEnterpriseMetadata instance/
+    */
+  inline def fromUrl(resourceOrUrl: Resource): js.Promise[GoogleEarthEnterpriseMetadata] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(resourceOrUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GoogleEarthEnterpriseMetadata]]
   
   /**
     * Converts a tile's quadkey used to request an image from a Google Earth Enterprise server into the

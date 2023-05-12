@@ -17,7 +17,7 @@ object ModifierFlags extends StObject {
   sealed trait Abstract
     extends StObject
        with ModifierFlags
-  /* 128 */ val Abstract: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ModifierFlags.Abstract & Double = js.native
+  /* 256 */ val Abstract: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ModifierFlags.Abstract & Double = js.native
   
   @js.native
   sealed trait AccessibilityModifier
@@ -26,10 +26,16 @@ object ModifierFlags extends StObject {
   /* 28 */ val AccessibilityModifier: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ModifierFlags.AccessibilityModifier & Double = js.native
   
   @js.native
+  sealed trait Accessor
+    extends StObject
+       with ModifierFlags
+  /* 128 */ val Accessor: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ModifierFlags.Accessor & Double = js.native
+  
+  @js.native
   sealed trait All
     extends StObject
        with ModifierFlags
-  /* 257023 */ val All: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ModifierFlags.All & Double = js.native
+  /* 258047 */ val All: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ModifierFlags.All & Double = js.native
   
   @js.native
   sealed trait Ambient
@@ -41,7 +47,7 @@ object ModifierFlags extends StObject {
   sealed trait Async
     extends StObject
        with ModifierFlags
-  /* 256 */ val Async: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ModifierFlags.Async & Double = js.native
+  /* 512 */ val Async: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ModifierFlags.Async & Double = js.native
   
   @js.native
   sealed trait Const
@@ -59,7 +65,7 @@ object ModifierFlags extends StObject {
   sealed trait Default
     extends StObject
        with ModifierFlags
-  /* 512 */ val Default: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ModifierFlags.Default & Double = js.native
+  /* 1024 */ val Default: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ModifierFlags.Default & Double = js.native
   
   @js.native
   sealed trait Deprecated
@@ -77,7 +83,7 @@ object ModifierFlags extends StObject {
   sealed trait ExportDefault
     extends StObject
        with ModifierFlags
-  /* 513 */ val ExportDefault: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ModifierFlags.ExportDefault & Double = js.native
+  /* 1025 */ val ExportDefault: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ModifierFlags.ExportDefault & Double = js.native
   
   @js.native
   sealed trait HasComputedFlags
@@ -101,7 +107,7 @@ object ModifierFlags extends StObject {
   sealed trait Modifier
     extends StObject
        with ModifierFlags
-  /* 125951 */ val Modifier: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ModifierFlags.Modifier & Double = js.native
+  /* 126975 */ val Modifier: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ModifierFlags.Modifier & Double = js.native
   
   @js.native
   sealed trait NonPublicAccessibilityModifier
@@ -167,5 +173,5 @@ object ModifierFlags extends StObject {
   sealed trait TypeScriptModifier
     extends StObject
        with ModifierFlags
-  /* 116958 */ val TypeScriptModifier: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ModifierFlags.TypeScriptModifier & Double = js.native
+  /* 117086 */ val TypeScriptModifier: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ModifierFlags.TypeScriptModifier & Double = js.native
 }

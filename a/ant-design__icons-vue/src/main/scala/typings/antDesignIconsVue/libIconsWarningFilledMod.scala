@@ -16,7 +16,7 @@ object libIconsWarningFilledMod extends Shortcut {
   @js.native
   trait WarningFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_WarningFilledIconType: String = js.native

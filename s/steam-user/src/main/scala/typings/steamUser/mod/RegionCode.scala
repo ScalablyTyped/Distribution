@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.steamUser.steamUserInts.`0x05`
   - typings.steamUser.steamUserInts.`0x06`
   - typings.steamUser.steamUserInts.`0x07`
-  - typings.steamUser.steamUserInts.`0xFF`
+  - typings.steamUser.steamUserInts.`0xff`
 */
 trait RegionCode extends StObject
 object RegionCode {
@@ -36,5 +36,5 @@ object RegionCode {
   
   inline def `0x07`: typings.steamUser.steamUserInts.`0x07` = 0x07.asInstanceOf[typings.steamUser.steamUserInts.`0x07`]
   
-  inline def `0xFF`: typings.steamUser.steamUserInts.`0xFF` = 0xFF.asInstanceOf[typings.steamUser.steamUserInts.`0xFF`]
+  inline def `0xff`: typings.steamUser.steamUserInts.`0xff` = 0xff.asInstanceOf[typings.steamUser.steamUserInts.`0xff`]
 }

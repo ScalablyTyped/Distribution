@@ -17,6 +17,8 @@ trait Log4js extends StObject {
   def getLogger(): Logger = js.native
   def getLogger(category: String): Logger = js.native
   
+  def isConfigured(): Boolean = js.native
+  
   // express.Handler;
   var levels: Levels_ = js.native
   

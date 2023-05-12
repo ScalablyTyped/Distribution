@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.immediate_
+  - typings.awsSdk.awsSdkStrings.immediate__
   - typings.awsSdk.awsSdkStrings.`pending-reboot`
   - java.lang.String
 */

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConfigurationRecorderStatus extends StObject {
   
   /**
-    * The error code indicating that the recording failed.
+    * The latest error code from when the recorder last failed.
     */
   var lastErrorCode: js.UndefOr[String] = js.undefined
   
   /**
-    * The message indicating that the recording failed due to an error.
+    * The latest error message from when the recorder last failed.
     */
   var lastErrorMessage: js.UndefOr[String] = js.undefined
   
@@ -22,12 +22,12 @@ trait ConfigurationRecorderStatus extends StObject {
   var lastStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The last (previous) status of the recorder.
+    * The status of the latest recording event processed by the recorder.
     */
   var lastStatus: js.UndefOr[RecorderStatus] = js.undefined
   
   /**
-    * The time when the status was last changed.
+    * The time of the latest change in status of an recording event processed by the recorder.
     */
   var lastStatusChangeTime: js.UndefOr[js.Date] = js.undefined
   

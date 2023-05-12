@@ -14,15 +14,15 @@ trait StaticPhrasingContentMap extends StObject {
   
   var footnote: Footnote
   
-  var footnotereference: FootnoteReference
+  var footnoteReference: FootnoteReference
   
   var html: HTML
   
   var image: Image
   
-  var imagereference: ImageReference
+  var imageReference: ImageReference
   
-  var inlinecode: InlineCode
+  var inlineCode: InlineCode
   
   var strong: Strong
   
@@ -35,15 +35,15 @@ object StaticPhrasingContentMap {
     delete: Delete,
     emphasis: Emphasis,
     footnote: Footnote,
-    footnotereference: FootnoteReference,
+    footnoteReference: FootnoteReference,
     html: HTML,
     image: Image,
-    imagereference: ImageReference,
-    inlinecode: InlineCode,
+    imageReference: ImageReference,
+    inlineCode: InlineCode,
     strong: Strong,
     text: Text
   ): StaticPhrasingContentMap = {
-    val __obj = js.Dynamic.literal(break = break.asInstanceOf[js.Any], delete = delete.asInstanceOf[js.Any], emphasis = emphasis.asInstanceOf[js.Any], footnote = footnote.asInstanceOf[js.Any], footnotereference = footnotereference.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], imagereference = imagereference.asInstanceOf[js.Any], inlinecode = inlinecode.asInstanceOf[js.Any], strong = strong.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(break = break.asInstanceOf[js.Any], delete = delete.asInstanceOf[js.Any], emphasis = emphasis.asInstanceOf[js.Any], footnote = footnote.asInstanceOf[js.Any], footnoteReference = footnoteReference.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], imageReference = imageReference.asInstanceOf[js.Any], inlineCode = inlineCode.asInstanceOf[js.Any], strong = strong.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[StaticPhrasingContentMap]
   }
   
@@ -58,15 +58,15 @@ object StaticPhrasingContentMap {
     
     inline def setFootnote(value: Footnote): Self = StObject.set(x, "footnote", value.asInstanceOf[js.Any])
     
-    inline def setFootnotereference(value: FootnoteReference): Self = StObject.set(x, "footnotereference", value.asInstanceOf[js.Any])
+    inline def setFootnoteReference(value: FootnoteReference): Self = StObject.set(x, "footnoteReference", value.asInstanceOf[js.Any])
     
     inline def setHtml(value: HTML): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     inline def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    inline def setImagereference(value: ImageReference): Self = StObject.set(x, "imagereference", value.asInstanceOf[js.Any])
+    inline def setImageReference(value: ImageReference): Self = StObject.set(x, "imageReference", value.asInstanceOf[js.Any])
     
-    inline def setInlinecode(value: InlineCode): Self = StObject.set(x, "inlinecode", value.asInstanceOf[js.Any])
+    inline def setInlineCode(value: InlineCode): Self = StObject.set(x, "inlineCode", value.asInstanceOf[js.Any])
     
     inline def setStrong(value: Strong): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
     

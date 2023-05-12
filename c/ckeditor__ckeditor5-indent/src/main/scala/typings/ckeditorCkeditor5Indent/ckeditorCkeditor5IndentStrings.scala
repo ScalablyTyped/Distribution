@@ -7,14 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ckeditorCkeditor5IndentStrings {
   
   @js.native
-  sealed trait Indent extends StObject
-  inline def Indent: Indent = "Indent".asInstanceOf[Indent]
-  
-  @js.native
-  sealed trait IndentBlock extends StObject
-  inline def IndentBlock: IndentBlock = "IndentBlock".asInstanceOf[IndentBlock]
-  
-  @js.native
   sealed trait IndentEditing extends StObject
   inline def IndentEditing: IndentEditing = "IndentEditing".asInstanceOf[IndentEditing]
   

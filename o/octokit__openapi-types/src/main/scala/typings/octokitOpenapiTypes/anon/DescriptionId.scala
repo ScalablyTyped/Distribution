@@ -1,50 +1,69 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.error
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.none_
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.note
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait DescriptionId extends StObject {
   
-  var default: Boolean
+  /** @description A short description of the rule used to detect the alert. */
+  var description: js.UndefOr[String] = js.undefined
   
-  var color: String
+  /** @description A unique identifier for the rule used to detect the alert. */
+  var id: js.UndefOr[String | Null] = js.undefined
   
-  var description: String | Null
+  /** @description The name of the rule used to detect the alert. */
+  var name: js.UndefOr[String] = js.undefined
   
-  /** Format: int64 */
-  var id: Double
+  /**
+    * @description The severity of the alert.
+    * @enum {string|null}
+    */
+  var severity: js.UndefOr[none_ | note | warning | error | Null] = js.undefined
   
-  var name: String
-  
-  var node_id: String
-  
-  var url: String
+  /** @description A set of tags applicable for the rule. */
+  var tags: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object DescriptionId {
   
-  inline def apply(color: String, default: Boolean, id: Double, name: String, node_id: String, url: String): DescriptionId = {
-    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], description = null)
+  inline def apply(): DescriptionId = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescriptionId]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: DescriptionId] (val x: Self) extends AnyVal {
     
-    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
-    
-    inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
-    
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdNull: Self = StObject.set(x, "id", null)
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: none_ | note | warning | error): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+    
+    inline def setSeverityNull: Self = StObject.set(x, "severity", null)
+    
+    inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
+    
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsNull: Self = StObject.set(x, "tags", null)
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

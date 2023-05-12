@@ -1,7 +1,7 @@
 
 # Scala.js typings for just-map-values
 
-Typings are for version 3.1.1
+Typings are for version 3.2.0
 
 ## Library description:
 map an object, predicate updates values, receives (value, key, object)

@@ -2,6 +2,7 @@ package typings.jsrsasign.global.jsrsasign
 
 import typings.jsrsasign.anon.E
 import typings.jsrsasign.anon.PrvKeyObj
+import typings.jsrsasign.anon.PubKeyObj
 import typings.jsrsasign.jsrsasign.CSRHexResult
 import typings.jsrsasign.jsrsasign.ECCPrivateKey
 import typings.jsrsasign.jsrsasign.EncryptionAlgorithm
@@ -18,6 +19,9 @@ import typings.jsrsasign.jsrsasign.PublicPKCS8HexResult
 import typings.jsrsasign.jsrsasign.PublicRawRSAKeyHexResult
 import typings.jsrsasign.jsrsasignStrings.EC
 import typings.jsrsasign.jsrsasignStrings.RSA
+import typings.jsrsasign.jsrsasignStrings.secp256k1
+import typings.jsrsasign.jsrsasignStrings.secp256r1
+import typings.jsrsasign.jsrsasignStrings.secp384r1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -89,31 +93,49 @@ object KEYUTIL {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def generateKeypair(alg: RSA | EC, keylenOrCurve: String): PrvKeyObj = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeypair")(alg.asInstanceOf[js.Any], keylenOrCurve.asInstanceOf[js.Any])).asInstanceOf[PrvKeyObj]
   /**
-    * @param alg 'RSA' or 'EC'
-    * @param keylenOrCurve key length for RSA or curve name for EC
+    * @param alg 'EC'
+    * @param curve curve name
     * @return associative array of keypair which has prvKeyObj and pubKeyObj parameters
     * @description
     * This method generates a key pair of public key algorithm.
     * The result will be an associative array which has following
     * parameters:
     *
-    * - prvKeyObj - RSAKey or ECDSA object of private key
-    * - pubKeyObj - RSAKey or ECDSA object of public key
+    * - prvKeyObj - ECDSA object of private key
+    * - pubKeyObj - ECDSA object of public key
     *
-    * NOTE1: As for RSA algoirthm, public exponent has fixed
-    * value '0x10001'.
-    * NOTE2: As for EC algorithm, supported names of curve are
-    * secp256r1, secp256k1 and secp384r1.
-    * NOTE3: DSA is not supported yet.
+    * NOTE1: supported names of curve are secp256r1, secp256k1 and
+    * secp384r1.
+    * NOTE2: DSA algorithm is not supported yet.
+    * @example
+    * var ecKeypair = KEYUTIL.generateKeypair("EC", "secp256r1");
+    *
+    */
+  /* static member */
+  inline def generateKeypair(alg: EC, curve: secp256r1 | secp256k1 | secp384r1): PubKeyObj = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeypair")(alg.asInstanceOf[js.Any], curve.asInstanceOf[js.Any])).asInstanceOf[PubKeyObj]
+  
+  /**
+    * @param alg 'RSA'
+    * @param keylen key length
+    * @return associative array of keypair which has prvKeyObj and pubKeyObj parameters
+    * @description
+    * This method generates a key pair of public key algorithm.
+    * The result will be an associative array which has following
+    * parameters:
+    *
+    * - prvKeyObj - RSAKey object of private key
+    * - pubKeyObj - RSAKey object of public key
+    *
+    * NOTE1: public exponent has fixed value '0x10001'.
+    * NOTE2: DSA algorithm is not supported yet.
     * @example
     * var rsaKeypair = KEYUTIL.generateKeypair("RSA", 1024);
     * var ecKeypair = KEYUTIL.generateKeypair("EC", "secp256r1");
     *
     */
   /* static member */
-  inline def generateKeypair(alg: RSA | EC, keylenOrCurve: Double): PrvKeyObj = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeypair")(alg.asInstanceOf[js.Any], keylenOrCurve.asInstanceOf[js.Any])).asInstanceOf[PrvKeyObj]
+  inline def generateKeypair_RSA(alg: RSA, keylen: Double): PrvKeyObj = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeypair")(alg.asInstanceOf[js.Any], keylen.asInstanceOf[js.Any])).asInstanceOf[PrvKeyObj]
   
   /**
     * decrypt PEM formatted protected PKCS#5 private key with passcode

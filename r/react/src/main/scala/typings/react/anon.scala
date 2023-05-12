@@ -101,11 +101,13 @@ object anon {
   
   trait Html extends StObject {
     
-    var __html: String
+    // Should be InnerHTML['innerHTML'].
+    // But unfortunately we're mixing renderer-specific type declarations.
+    var __html: String | TrustedHTML
   }
   object Html {
     
-    inline def apply(__html: String): Html = {
+    inline def apply(__html: String | TrustedHTML): Html = {
       val __obj = js.Dynamic.literal(__html = __html.asInstanceOf[js.Any])
       __obj.asInstanceOf[Html]
     }
@@ -113,7 +115,7 @@ object anon {
     @scala.inline
     implicit open class MutableBuilder[Self <: Html] (val x: Self) extends AnyVal {
       
-      inline def set__html(value: String): Self = StObject.set(x, "__html", value.asInstanceOf[js.Any])
+      inline def set__html(value: String | TrustedHTML): Self = StObject.set(x, "__html", value.asInstanceOf[js.Any])
     }
   }
   

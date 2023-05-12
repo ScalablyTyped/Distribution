@@ -381,32 +381,32 @@ object global {
     /**
       * The playback states of the music player.
       */
-    @JSGlobal("MusicKit.PlaybackState")
+    @JSGlobal("MusicKit.PlaybackStates")
     @js.native
-    object PlaybackState extends StObject {
+    object PlaybackStates extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.musickitJs.MusicKit.PlaybackState & Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.musickitJs.MusicKit.PlaybackStates & Double] = js.native
       
-      /* 5 */ val ENDED: typings.musickitJs.MusicKit.PlaybackState.ENDED & Double = js.native
+      /* 0 */ val completed: typings.musickitJs.MusicKit.PlaybackStates.completed & Double = js.native
       
-      /* 1 */ val LOADING: typings.musickitJs.MusicKit.PlaybackState.LOADING & Double = js.native
+      /* 1 */ val ended: typings.musickitJs.MusicKit.PlaybackStates.ended & Double = js.native
       
-      /* 0 */ val NONE: typings.musickitJs.MusicKit.PlaybackState.NONE & Double = js.native
+      /* 2 */ val loading: typings.musickitJs.MusicKit.PlaybackStates.loading & Double = js.native
       
-      /* 3 */ val PAUSED: typings.musickitJs.MusicKit.PlaybackState.PAUSED & Double = js.native
+      /* 3 */ val none: typings.musickitJs.MusicKit.PlaybackStates.none & Double = js.native
       
-      /* 2 */ val PLAYING: typings.musickitJs.MusicKit.PlaybackState.PLAYING & Double = js.native
+      /* 4 */ val paused: typings.musickitJs.MusicKit.PlaybackStates.paused & Double = js.native
       
-      /* 6 */ val SEEKING: typings.musickitJs.MusicKit.PlaybackState.SEEKING & Double = js.native
+      /* 5 */ val playing: typings.musickitJs.MusicKit.PlaybackStates.playing & Double = js.native
       
-      /* 4 */ val STOPPED: typings.musickitJs.MusicKit.PlaybackState.STOPPED & Double = js.native
+      /* 6 */ val seeking: typings.musickitJs.MusicKit.PlaybackStates.seeking & Double = js.native
       
-      /* 9 */ val completed: typings.musickitJs.MusicKit.PlaybackState.completed & Double = js.native
+      /* 7 */ val stalled: typings.musickitJs.MusicKit.PlaybackStates.stalled & Double = js.native
       
-      /* 8 */ val stalled: typings.musickitJs.MusicKit.PlaybackState.stalled & Double = js.native
+      /* 8 */ val stopped: typings.musickitJs.MusicKit.PlaybackStates.stopped & Double = js.native
       
-      /* 7 */ val waiting: typings.musickitJs.MusicKit.PlaybackState.waiting & Double = js.native
+      /* 9 */ val waiting: typings.musickitJs.MusicKit.PlaybackStates.waiting & Double = js.native
     }
     
     /**

@@ -1,5 +1,6 @@
 package typings.openui5.anon
 
+import typings.openui5.sapUiUnifiedMenuItemBaseMod.MenuItemBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `8` extends StObject {
   
   /**
-    * The id of the PaneBarItem to which the closed pane belonged.
+    * The current item
     */
-  var id: js.UndefOr[String] = js.undefined
+  var item: js.UndefOr[MenuItemBase] = js.undefined
 }
 object `8` {
   
@@ -21,8 +22,8 @@ object `8` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `8`] (val x: Self) extends AnyVal {
     
-    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setItem(value: MenuItemBase): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
   }
 }

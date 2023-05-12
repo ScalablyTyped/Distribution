@@ -13,8 +13,8 @@ trait DataState extends StObject {
   var dataState: js.UndefOr[default] = js.undefined
   
   /**
-    * The messages (@see sap.ui.core.message.Message) from the current `dataState` object filtered by the given
-    * `filter` function.
+    * The messages ({@link sap.ui.core.message.Message}) from the current `dataState` object filtered by the
+    * given `filter` function.
     */
   var filteredMessages: js.UndefOr[js.Array[js.Object]] = js.undefined
 }

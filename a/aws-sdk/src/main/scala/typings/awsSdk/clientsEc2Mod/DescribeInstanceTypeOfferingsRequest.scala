@@ -22,12 +22,12 @@ trait DescribeInstanceTypeOfferingsRequest extends StObject {
   var LocationType: js.UndefOr[typings.awsSdk.clientsEc2Mod.LocationType] = js.undefined
   
   /**
-    * The maximum number of results to return for the request in a single page. The remaining results can be seen by sending another request with the next token value.
+    * The maximum number of items to return for this request. To get the next page of items, make another request with the token returned in the output. For more information, see Pagination.
     */
   var MaxResults: js.UndefOr[DITOMaxResults] = js.undefined
   
   /**
-    * The token to retrieve the next page of results.
+    * The token returned from a previous paginated request. Pagination continues from the end of the items returned by the previous request.
     */
   var NextToken: js.UndefOr[typings.awsSdk.clientsEc2Mod.NextToken] = js.undefined
 }

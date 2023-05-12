@@ -12,6 +12,11 @@ trait ModifyVpnTunnelOptionsRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Choose whether or not to trigger immediate tunnel replacement. Valid values: True | False 
+    */
+  var SkipTunnelReplacement: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * The tunnel options to modify.
     */
   var TunnelOptions: ModifyVpnTunnelOptionsSpecification
@@ -43,6 +48,10 @@ object ModifyVpnTunnelOptionsRequest {
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    
+    inline def setSkipTunnelReplacement(value: Boolean): Self = StObject.set(x, "SkipTunnelReplacement", value.asInstanceOf[js.Any])
+    
+    inline def setSkipTunnelReplacementUndefined: Self = StObject.set(x, "SkipTunnelReplacement", js.undefined)
     
     inline def setTunnelOptions(value: ModifyVpnTunnelOptionsSpecification): Self = StObject.set(x, "TunnelOptions", value.asInstanceOf[js.Any])
     

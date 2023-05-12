@@ -1,5 +1,6 @@
 package typings.sentryUtils
 
+import typings.sentryUtils.typesEnvMod.SdkSource
 import typings.sentryUtils.typesInstrumentMod.InstrumentHandlerType
 import typings.sentryUtils.typesLoggerMod.ConsoleLevel
 import typings.sentryUtils.typesRequestdataMod.TransactionNamingScheme
@@ -14,6 +15,12 @@ object sentryUtilsStrings {
     extends StObject
        with ConsoleLevel
   inline def assert: assert = "assert".asInstanceOf[assert]
+  
+  @js.native
+  sealed trait cdn
+    extends StObject
+       with SdkSource
+  inline def cdn: cdn = "cdn".asInstanceOf[cdn]
   
   @js.native
   sealed trait console
@@ -65,6 +72,12 @@ object sentryUtilsStrings {
   inline def info: info = "info".asInstanceOf[info]
   
   @js.native
+  sealed trait loader
+    extends StObject
+       with SdkSource
+  inline def loader: loader = "loader".asInstanceOf[loader]
+  
+  @js.native
   sealed trait log
     extends StObject
        with ConsoleLevel
@@ -75,6 +88,12 @@ object sentryUtilsStrings {
     extends StObject
        with TransactionNamingScheme
   inline def methodPath: methodPath = "methodPath".asInstanceOf[methodPath]
+  
+  @js.native
+  sealed trait npm
+    extends StObject
+       with SdkSource
+  inline def npm: npm = "npm".asInstanceOf[npm]
   
   @js.native
   sealed trait path

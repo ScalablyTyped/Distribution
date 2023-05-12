@@ -27,8 +27,14 @@ object distTypesCommandsStartDeviceAuthorizationCommandMod {
           Any, 
           Any
         ] {
+    /**
+      * @public
+      */
     def this(input: StartDeviceAuthorizationCommandInput) = this()
     
+    /**
+      * @internal
+      */
     /* private */ var deserialize: Any = js.native
     
     /**
@@ -44,6 +50,9 @@ object distTypesCommandsStartDeviceAuthorizationCommandMod {
       options: HttpHandlerOptions
     ): Handler[StartDeviceAuthorizationCommandInput, StartDeviceAuthorizationCommandOutput] = js.native
     
+    /**
+      * @internal
+      */
     /* private */ var serialize: Any = js.native
   }
   /* static members */

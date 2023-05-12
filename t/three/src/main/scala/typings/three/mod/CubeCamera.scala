@@ -8,6 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class CubeCamera protected ()
   extends typings.three.srcThreeMod.CubeCamera {
+  /**
+    * Constructs a {@link CubeCamera} that contains 6 {@link PerspectiveCamera | PerspectiveCameras} that render to a {@link THREE.WebGLCubeRenderTarget | WebGLCubeRenderTarget}.
+    * @param near The near clipping distance.
+    * @param far The far clipping distance.
+    * @param renderTarget The destination cube render target.
+    */
   def this(
     near: Double,
     far: Double,

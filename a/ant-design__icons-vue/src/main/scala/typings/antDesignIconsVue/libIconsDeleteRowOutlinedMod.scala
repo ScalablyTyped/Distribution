@@ -16,7 +16,7 @@ object libIconsDeleteRowOutlinedMod extends Shortcut {
   @js.native
   trait DeleteRowOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_DeleteRowOutlinedIconType: String = js.native

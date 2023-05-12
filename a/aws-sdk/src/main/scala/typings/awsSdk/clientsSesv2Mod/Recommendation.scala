@@ -37,7 +37,7 @@ trait Recommendation extends StObject {
   var Status: js.UndefOr[RecommendationStatus] = js.undefined
   
   /**
-    * The recommendation type, with values like DKIM, SPF or DMARC.
+    * The recommendation type, with values like DKIM, SPF, DMARC or BIMI.
     */
   var Type: js.UndefOr[RecommendationType] = js.undefined
 }

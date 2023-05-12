@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An event listener, created by <code><a
-  * href="#event">google.maps.event.addListener</a>()</code> and friends.
-  */
 trait MapsEventListener extends StObject {
   
   /**

@@ -16,7 +16,7 @@ object libIconsWindowsFilledMod extends Shortcut {
   @js.native
   trait WindowsFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_WindowsFilledIconType: String = js.native

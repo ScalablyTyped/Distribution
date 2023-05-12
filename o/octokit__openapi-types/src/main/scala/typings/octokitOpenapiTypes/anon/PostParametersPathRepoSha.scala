@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PostParametersPathRepoSha extends StObject {
   
   /**
-    * Users with push access in a repository can create commit statuses for a given SHA.
+    * Create a commit status
+    * @description Users with push access in a repository can create commit statuses for a given SHA.
     *
     * Note: there is a limit of 1000 statuses per `sha` and `context` within a repository. Attempts to create more than 1000 statuses will result in a validation error.
     */

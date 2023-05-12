@@ -27,6 +27,15 @@ object buildSrcSessionMod {
     def this(database: Database, name: String) = this()
     
     /**
+      * Gets the Spanner object
+      *
+      * @private
+      *
+      * @returns {Spanner}
+      */
+    /* private */ var _getSpanner: Any = js.native
+    
+    /**
       * Delete a session.
       *
       * Wrapper around {@link v1.SpannerClient#deleteSession}.
@@ -196,8 +205,6 @@ object buildSrcSessionMod {
     def transaction(queryOptions: Unit, requestOptions: PickanytransactionTag): Transaction = js.native
     
     var txn: js.UndefOr[Transaction] = js.native
-    
-    var `type`: js.UndefOr[types] = js.native
   }
   /* static members */
   object Session {
@@ -233,13 +240,69 @@ object buildSrcSessionMod {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.protobuf.IEmpty */ Any
   ]
   
-  type GetSessionMetadataCallback = NormalCallback[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.spanner.v1.ISession */ Any
-  ]
+  type GetSessionMetadataCallback = NormalCallback[GetSessionMetadataResponse]
   
-  type GetSessionMetadataResponse = js.Array[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.spanner.v1.ISession */ Any
-  ]
+  trait GetSessionMetadataResponse extends StObject {
+    
+    var approximateLastUseTime: js.UndefOr[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.protobuf.ITimestamp */ Any) | Null
+      ] = js.undefined
+    
+    var createTime: js.UndefOr[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.protobuf.ITimestamp */ Any) | Null
+      ] = js.undefined
+    
+    var databaseRole: js.UndefOr[String | Null] = js.undefined
+    
+    var labels: js.UndefOr[StringDictionary[String] | Null] = js.undefined
+    
+    var name: js.UndefOr[String | Null] = js.undefined
+  }
+  object GetSessionMetadataResponse {
+    
+    inline def apply(): GetSessionMetadataResponse = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[GetSessionMetadataResponse]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetSessionMetadataResponse] (val x: Self) extends AnyVal {
+      
+      inline def setApproximateLastUseTime(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.protobuf.ITimestamp */ Any
+      ): Self = StObject.set(x, "approximateLastUseTime", value.asInstanceOf[js.Any])
+      
+      inline def setApproximateLastUseTimeNull: Self = StObject.set(x, "approximateLastUseTime", null)
+      
+      inline def setApproximateLastUseTimeUndefined: Self = StObject.set(x, "approximateLastUseTime", js.undefined)
+      
+      inline def setCreateTime(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.protobuf.ITimestamp */ Any
+      ): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+      
+      inline def setCreateTimeNull: Self = StObject.set(x, "createTime", null)
+      
+      inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+      
+      inline def setDatabaseRole(value: String): Self = StObject.set(x, "databaseRole", value.asInstanceOf[js.Any])
+      
+      inline def setDatabaseRoleNull: Self = StObject.set(x, "databaseRole", null)
+      
+      inline def setDatabaseRoleUndefined: Self = StObject.set(x, "databaseRole", js.undefined)
+      
+      inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      
+      inline def setLabelsNull: Self = StObject.set(x, "labels", null)
+      
+      inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameNull: Self = StObject.set(x, "name", null)
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    }
+  }
   
   type GetSessionResponse = js.Tuple2[Session, Response[Any]]
   

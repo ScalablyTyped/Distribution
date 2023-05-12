@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.Cursor
+import typings.csstype.mod.Property.ContainIntrinsicWidth
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `205` extends StObject {
   
   var value: js.UndefOr[
-    Cursor | (js.Array[
-      (Extract[js.UndefOr[Cursor | js.Array[NonNullable[js.UndefOr[Cursor]]]], String]) | NonNullable[js.UndefOr[Cursor]]
+    (ContainIntrinsicWidth[Double | String]) | (js.Array[
+      (Extract[
+        js.UndefOr[
+          (ContainIntrinsicWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[ContainIntrinsicWidth[Double | String]]]])
+        ], 
+        String
+      ]) | (NonNullable[js.UndefOr[ContainIntrinsicWidth[Double | String]]])
     ])
   ] = js.native
 }

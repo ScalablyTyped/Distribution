@@ -30,7 +30,7 @@ trait ProfileInput extends StObject {
   
   var sampleType: js.UndefOr[js.Array[ValueTypeInput]] = js.undefined
   
-  var stringTable: js.UndefOr[StringTable | js.Array[String]] = js.undefined
+  var stringTable: js.UndefOr[StringTable] = js.undefined
   
   var timeNanos: js.UndefOr[Numeric] = js.undefined
 }
@@ -104,11 +104,9 @@ object ProfileInput {
     
     inline def setSampleVarargs(value: SampleInput*): Self = StObject.set(x, "sample", js.Array(value*))
     
-    inline def setStringTable(value: StringTable | js.Array[String]): Self = StObject.set(x, "stringTable", value.asInstanceOf[js.Any])
+    inline def setStringTable(value: StringTable): Self = StObject.set(x, "stringTable", value.asInstanceOf[js.Any])
     
     inline def setStringTableUndefined: Self = StObject.set(x, "stringTable", js.undefined)
-    
-    inline def setStringTableVarargs(value: String*): Self = StObject.set(x, "stringTable", js.Array(value*))
     
     inline def setTimeNanos(value: Numeric): Self = StObject.set(x, "timeNanos", value.asInstanceOf[js.Any])
     

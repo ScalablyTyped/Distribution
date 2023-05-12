@@ -14,6 +14,8 @@ object distExplorerSyncMod {
   open class ExplorerSync protected () extends ExplorerBase[ExplorerOptionsSync] {
     def this(options: ExplorerOptionsSync) = this()
     
+    /* private */ var _loadFileSync: Any = js.native
+    
     /* private */ var createCosmiconfigResultSync: Any = js.native
     
     /* private */ var loadFileContentSync: Any = js.native

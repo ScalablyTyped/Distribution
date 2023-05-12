@@ -4,7 +4,7 @@ import typings.slate.distInterfacesLocationMod.Location
 import typings.slate.distInterfacesNodeMod.Descendant
 import typings.slate.distInterfacesNodeMod.Node
 import typings.slate.distInterfacesPathMod.Path
-import typings.slate.distInterfacesTypesMod.SelectionMode
+import typings.slate.distTypesTypesMod.SelectionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

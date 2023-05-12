@@ -16,19 +16,34 @@ trait FieldValueQueryBuilder[T] extends StObject {
   
   def ascii[K /* <: /* keyof T */ String */](columnName: K): TypeMatchedValue[T, K, String, this.type]
   
-  def bigint[K /* <: /* keyof T */ String */](columnName: K): TypeMatchedValue[T, K, typings.long.mod.^, this.type]
+  def bigint[K /* <: /* keyof T */ String */](columnName: K): TypeMatchedValue[
+    T, 
+    K, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any, 
+    this.type
+  ]
   
   def blob[K /* <: /* keyof T */ String */](columnName: K): TypeMatchedValue[T, K, Buffer, this.type]
   
   def boolean[K /* <: /* keyof T */ String */](columnName: K): TypeMatchedValue[T, K, Boolean, this.type]
   
-  def counter[K /* <: /* keyof T */ String */](columnName: K): TypeMatchedValue[T, K, typings.long.mod.^, this.type]
+  def counter[K /* <: /* keyof T */ String */](columnName: K): TypeMatchedValue[
+    T, 
+    K, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any, 
+    this.type
+  ]
   
   def date[K /* <: /* keyof T */ String */](columnName: K): TypeMatchedValue[T, K, LocalDate, this.type]
   
   def decimal[K /* <: /* keyof T */ String */](columnName: K): TypeMatchedValue[T, K, BigDecimal, this.type]
   
-  def double[K /* <: /* keyof T */ String */](columnName: K): TypeMatchedValue[T, K, typings.long.mod.^, this.type]
+  def double[K /* <: /* keyof T */ String */](columnName: K): TypeMatchedValue[
+    T, 
+    K, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any, 
+    this.type
+  ]
   
   def float[K /* <: /* keyof T */ String */](columnName: K): TypeMatchedValue[T, K, Double, this.type]
   
@@ -65,13 +80,28 @@ object FieldValueQueryBuilder {
   
   inline def apply[T](
     ascii: Any => TypeMatchedValue[T, Any, String, FieldValueQueryBuilder[T]],
-    bigint: Any => TypeMatchedValue[T, Any, typings.long.mod.^, FieldValueQueryBuilder[T]],
+    bigint: Any => TypeMatchedValue[
+      T, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any, 
+      FieldValueQueryBuilder[T]
+    ],
     blob: Any => TypeMatchedValue[T, Any, Buffer, FieldValueQueryBuilder[T]],
     boolean: Any => TypeMatchedValue[T, Any, Boolean, FieldValueQueryBuilder[T]],
-    counter: Any => TypeMatchedValue[T, Any, typings.long.mod.^, FieldValueQueryBuilder[T]],
+    counter: Any => TypeMatchedValue[
+      T, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any, 
+      FieldValueQueryBuilder[T]
+    ],
     date: Any => TypeMatchedValue[T, Any, LocalDate, FieldValueQueryBuilder[T]],
     decimal: Any => TypeMatchedValue[T, Any, BigDecimal, FieldValueQueryBuilder[T]],
-    double: Any => TypeMatchedValue[T, Any, typings.long.mod.^, FieldValueQueryBuilder[T]],
+    double: Any => TypeMatchedValue[
+      T, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any, 
+      FieldValueQueryBuilder[T]
+    ],
     float: Any => TypeMatchedValue[T, Any, Double, FieldValueQueryBuilder[T]],
     inet: Any => TypeMatchedValue[T, Any, InetAddress, FieldValueQueryBuilder[T]],
     int: Any => TypeMatchedValue[T, Any, Double, FieldValueQueryBuilder[T]],
@@ -101,19 +131,40 @@ object FieldValueQueryBuilder {
     
     inline def setAscii(value: Any => TypeMatchedValue[T, Any, String, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "ascii", js.Any.fromFunction1(value))
     
-    inline def setBigint(value: Any => TypeMatchedValue[T, Any, typings.long.mod.^, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "bigint", js.Any.fromFunction1(value))
+    inline def setBigint(
+      value: Any => TypeMatchedValue[
+          T, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any, 
+          FieldValueQueryBuilder[T]
+        ]
+    ): Self = StObject.set(x, "bigint", js.Any.fromFunction1(value))
     
     inline def setBlob(value: Any => TypeMatchedValue[T, Any, Buffer, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "blob", js.Any.fromFunction1(value))
     
     inline def setBoolean(value: Any => TypeMatchedValue[T, Any, Boolean, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "boolean", js.Any.fromFunction1(value))
     
-    inline def setCounter(value: Any => TypeMatchedValue[T, Any, typings.long.mod.^, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "counter", js.Any.fromFunction1(value))
+    inline def setCounter(
+      value: Any => TypeMatchedValue[
+          T, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any, 
+          FieldValueQueryBuilder[T]
+        ]
+    ): Self = StObject.set(x, "counter", js.Any.fromFunction1(value))
     
     inline def setDate(value: Any => TypeMatchedValue[T, Any, LocalDate, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "date", js.Any.fromFunction1(value))
     
     inline def setDecimal(value: Any => TypeMatchedValue[T, Any, BigDecimal, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "decimal", js.Any.fromFunction1(value))
     
-    inline def setDouble(value: Any => TypeMatchedValue[T, Any, typings.long.mod.^, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "double", js.Any.fromFunction1(value))
+    inline def setDouble(
+      value: Any => TypeMatchedValue[
+          T, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any, 
+          FieldValueQueryBuilder[T]
+        ]
+    ): Self = StObject.set(x, "double", js.Any.fromFunction1(value))
     
     inline def setFloat(value: Any => TypeMatchedValue[T, Any, Double, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "float", js.Any.fromFunction1(value))
     

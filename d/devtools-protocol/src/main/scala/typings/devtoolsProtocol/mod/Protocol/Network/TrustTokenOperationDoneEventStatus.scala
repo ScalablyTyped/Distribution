@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.ResourceExhausted
   - typings.devtoolsProtocol.devtoolsProtocolStrings.AlreadyExists
   - typings.devtoolsProtocol.devtoolsProtocolStrings.Unavailable
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.Unauthorized
   - typings.devtoolsProtocol.devtoolsProtocolStrings.BadResponse
   - typings.devtoolsProtocol.devtoolsProtocolStrings.InternalError
   - typings.devtoolsProtocol.devtoolsProtocolStrings.UnknownError
@@ -34,6 +35,8 @@ object TrustTokenOperationDoneEventStatus {
   inline def Ok: typings.devtoolsProtocol.devtoolsProtocolStrings.Ok = "Ok".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Ok]
   
   inline def ResourceExhausted: typings.devtoolsProtocol.devtoolsProtocolStrings.ResourceExhausted = "ResourceExhausted".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ResourceExhausted]
+  
+  inline def Unauthorized: typings.devtoolsProtocol.devtoolsProtocolStrings.Unauthorized = "Unauthorized".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Unauthorized]
   
   inline def Unavailable: typings.devtoolsProtocol.devtoolsProtocolStrings.Unavailable = "Unavailable".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Unavailable]
   

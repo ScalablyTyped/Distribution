@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateUserRequest extends StObject {
   
   /**
-    * Amazon WorkDocs authentication token. Not required when using AWS administrator credentials to access the API.
+    * Amazon WorkDocs authentication token. Not required when using Amazon Web Services administrator credentials to access the API.
     */
   var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.undefined
   
@@ -17,7 +17,7 @@ trait UpdateUserRequest extends StObject {
   var GivenName: js.UndefOr[UserAttributeValueType] = js.undefined
   
   /**
-    * Boolean value to determine whether the user is granted Poweruser privileges.
+    * Boolean value to determine whether the user is granted Power user privileges.
     */
   var GrantPoweruserPrivileges: js.UndefOr[BooleanEnumType] = js.undefined
   

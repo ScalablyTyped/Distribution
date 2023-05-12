@@ -314,6 +314,12 @@ object prettierStrings {
   inline def strict: strict = "strict".asInstanceOf[strict]
   
   @js.native
+  sealed trait string
+    extends StObject
+       with SupportOptionType
+  inline def string: string = "string".asInstanceOf[string]
+  
+  @js.native
   sealed trait trim extends StObject
   inline def trim: trim = "trim".asInstanceOf[trim]
   

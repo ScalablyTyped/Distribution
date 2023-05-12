@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InputDataConfig extends StObject {
   
   /**
-    * The document reader config field applies only for InputDataConfig of StartEntitiesDetectionJob.  Use DocumentReaderConfig to provide specifications about how you want your inference documents read. Currently it applies for PDF documents in StartEntitiesDetectionJob custom inference.
+    * Provides configuration parameters to override the default actions for extracting text from PDF documents and image files.
     */
   var DocumentReaderConfig: js.UndefOr[typings.awsSdk.clientsComprehendMod.DocumentReaderConfig] = js.undefined
   
@@ -17,7 +17,7 @@ trait InputDataConfig extends StObject {
   var InputFormat: js.UndefOr[typings.awsSdk.clientsComprehendMod.InputFormat] = js.undefined
   
   /**
-    * The Amazon S3 URI for the input data. The URI must be in same region as the API endpoint that you are calling. The URI can point to a single input file or it can provide the prefix for a collection of data files.  For example, if you use the URI S3://bucketName/prefix, if the prefix is a single file, Amazon Comprehend uses that file as input. If more than one file begins with the prefix, Amazon Comprehend uses all of them as input.
+    * The Amazon S3 URI for the input data. The URI must be in same Region as the API endpoint that you are calling. The URI can point to a single input file or it can provide the prefix for a collection of data files.  For example, if you use the URI S3://bucketName/prefix, if the prefix is a single file, Amazon Comprehend uses that file as input. If more than one file begins with the prefix, Amazon Comprehend uses all of them as input.
     */
   var S3Uri: typings.awsSdk.clientsComprehendMod.S3Uri
 }

@@ -56,12 +56,20 @@ trait BuildOptions extends StObject {
   var cssCodeSplit: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Override CSS minification specifically instead of defaulting to `build.minify`,
+    * so you can configure minification for JS and CSS separately.
+    * @default minify
+    */
+  var cssMinify: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * An optional separate target for CSS minification.
     * As esbuild only supports configuring targets to mainstream
     * browsers, users may need this option when they are targeting
     * a niche browser that comes with most modern JavaScript features
     * but has poor CSS support, e.g. Android WeChat WebView, which
     * doesn't support the #RGBA syntax.
+    * @default target
     */
   var cssTarget: js.UndefOr[String | js.Array[String] | `false`] = js.undefined
   
@@ -80,6 +88,7 @@ trait BuildOptions extends StObject {
     * Build in library mode. The value should be the global name of the lib in
     * UMD mode. This will produce esm + cjs + umd bundle formats with default
     * configurations that are suitable for distributing libraries.
+    * @default false
     */
   var lib: js.UndefOr[LibraryOptions | `false`] = js.undefined
   
@@ -136,12 +145,13 @@ trait BuildOptions extends StObject {
   /**
     * Set to false to disable reporting compressed chunk sizes.
     * Can slightly improve build speed.
+    * @default true
     */
   var reportCompressedSize: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Will be merged with internal rollup options.
-    * https://rollupjs.org/guide/en/#big-list-of-options
+    * https://rollupjs.org/configuration-options/
     */
   var rollupOptions: js.UndefOr[RollupOptions] = js.undefined
   
@@ -157,12 +167,21 @@ trait BuildOptions extends StObject {
   /**
     * Produce SSR oriented build. Note this requires specifying SSR entry via
     * `rollupOptions.input`.
+    * @default false
     */
   var ssr: js.UndefOr[Boolean | String] = js.undefined
   
   /**
+    * Emit assets during SSR.
+    * @experimental
+    * @default false
+    */
+  var ssrEmitAssets: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Generate SSR manifest for determining style links and asset preload
     * directives in production.
+    * @default false
     */
   var ssrManifest: js.UndefOr[Boolean | String] = js.undefined
   
@@ -181,6 +200,7 @@ trait BuildOptions extends StObject {
     *
     * For custom targets, see https://esbuild.github.io/api/#target and
     * https://esbuild.github.io/content-types/#javascript for more details.
+    * @default 'modules'
     */
   var target: js.UndefOr[modules | String | js.Array[String] | `false`] = js.undefined
   
@@ -192,7 +212,8 @@ trait BuildOptions extends StObject {
   
   /**
     * Rollup watch options
-    * https://rollupjs.org/guide/en/#watchoptions
+    * https://rollupjs.org/configuration-options/#watch
+    * @default null
     */
   var watch: js.UndefOr[WatcherOptions | Null] = js.undefined
   
@@ -235,6 +256,10 @@ object BuildOptions {
     inline def setCssCodeSplit(value: Boolean): Self = StObject.set(x, "cssCodeSplit", value.asInstanceOf[js.Any])
     
     inline def setCssCodeSplitUndefined: Self = StObject.set(x, "cssCodeSplit", js.undefined)
+    
+    inline def setCssMinify(value: Boolean): Self = StObject.set(x, "cssMinify", value.asInstanceOf[js.Any])
+    
+    inline def setCssMinifyUndefined: Self = StObject.set(x, "cssMinify", js.undefined)
     
     inline def setCssTarget(value: String | js.Array[String] | `false`): Self = StObject.set(x, "cssTarget", value.asInstanceOf[js.Any])
     
@@ -289,6 +314,10 @@ object BuildOptions {
     inline def setSourcemapUndefined: Self = StObject.set(x, "sourcemap", js.undefined)
     
     inline def setSsr(value: Boolean | String): Self = StObject.set(x, "ssr", value.asInstanceOf[js.Any])
+    
+    inline def setSsrEmitAssets(value: Boolean): Self = StObject.set(x, "ssrEmitAssets", value.asInstanceOf[js.Any])
+    
+    inline def setSsrEmitAssetsUndefined: Self = StObject.set(x, "ssrEmitAssets", js.undefined)
     
     inline def setSsrManifest(value: Boolean | String): Self = StObject.set(x, "ssrManifest", value.asInstanceOf[js.Any])
     

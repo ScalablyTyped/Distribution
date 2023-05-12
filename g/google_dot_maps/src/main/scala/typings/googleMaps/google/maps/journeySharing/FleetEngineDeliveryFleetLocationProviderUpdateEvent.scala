@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-  * Event object returned by the delivery fleet location provider&#39;s update
-  * event.
-  */
 trait FleetEngineDeliveryFleetLocationProviderUpdateEvent extends StObject {
   
   /**

@@ -31,8 +31,8 @@ trait TracingApi extends StObject {
   @JSName("on")
   def on_bufferUsage(event: bufferUsage, listener: js.Function1[/* params */ BufferUsageEvent, Unit]): Unit = js.native
   /**
-    * Contains an bucket of collected trace events. When tracing is stopped collected events will be
-    * send as a sequence of dataCollected events followed by tracingComplete event.
+    * Contains a bucket of collected trace events. When tracing is stopped collected events will be
+    * sent as a sequence of dataCollected events followed by tracingComplete event.
     */
   @JSName("on")
   def on_dataCollected(event: dataCollected, listener: js.Function1[/* params */ DataCollectedEvent, Unit]): Unit = js.native

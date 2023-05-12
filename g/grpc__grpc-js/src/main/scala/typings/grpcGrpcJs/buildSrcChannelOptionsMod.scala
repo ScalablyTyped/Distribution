@@ -44,6 +44,12 @@ object buildSrcChannelOptionsMod {
     
     inline def grpcEnableHttpProxy_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("grpc.enable_http_proxy")(x.asInstanceOf[js.Any])
     
+    @JSImport("@grpc/grpc-js/build/src/channel-options", "recognizedOptions.grpc.enable_retries")
+    @js.native
+    def grpcEnableRetries: Boolean = js.native
+    
+    inline def grpcEnableRetries_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("grpc.enable_retries")(x.asInstanceOf[js.Any])
+    
     @JSImport("@grpc/grpc-js/build/src/channel-options", "recognizedOptions.grpc.initial_reconnect_backoff_ms")
     @js.native
     def grpcInitialReconnectBackoffMs: Boolean = js.native
@@ -74,6 +80,18 @@ object buildSrcChannelOptionsMod {
     
     inline def grpcMaxConcurrentStreams_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("grpc.max_concurrent_streams")(x.asInstanceOf[js.Any])
     
+    @JSImport("@grpc/grpc-js/build/src/channel-options", "recognizedOptions.grpc.max_connection_age_grace_ms")
+    @js.native
+    def grpcMaxConnectionAgeGraceMs: Boolean = js.native
+    
+    inline def grpcMaxConnectionAgeGraceMs_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("grpc.max_connection_age_grace_ms")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@grpc/grpc-js/build/src/channel-options", "recognizedOptions.grpc.max_connection_age_ms")
+    @js.native
+    def grpcMaxConnectionAgeMs: Boolean = js.native
+    
+    inline def grpcMaxConnectionAgeMs_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("grpc.max_connection_age_ms")(x.asInstanceOf[js.Any])
+    
     @JSImport("@grpc/grpc-js/build/src/channel-options", "recognizedOptions.grpc.max_receive_message_length")
     @js.native
     def grpcMaxReceiveMessageLength: Boolean = js.native
@@ -98,11 +116,23 @@ object buildSrcChannelOptionsMod {
     
     inline def grpcNodeMaxSessionMemory_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("grpc-node.max_session_memory")(x.asInstanceOf[js.Any])
     
+    @JSImport("@grpc/grpc-js/build/src/channel-options", "recognizedOptions.grpc.per_rpc_retry_buffer_size")
+    @js.native
+    def grpcPerRpcRetryBufferSize: Boolean = js.native
+    
+    inline def grpcPerRpcRetryBufferSize_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("grpc.per_rpc_retry_buffer_size")(x.asInstanceOf[js.Any])
+    
     @JSImport("@grpc/grpc-js/build/src/channel-options", "recognizedOptions.grpc.primary_user_agent")
     @js.native
     def grpcPrimaryUserAgent: Boolean = js.native
     
     inline def grpcPrimaryUserAgent_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("grpc.primary_user_agent")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@grpc/grpc-js/build/src/channel-options", "recognizedOptions.grpc.retry_buffer_size")
+    @js.native
+    def grpcRetryBufferSize: Boolean = js.native
+    
+    inline def grpcRetryBufferSize_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("grpc.retry_buffer_size")(x.asInstanceOf[js.Any])
     
     @JSImport("@grpc/grpc-js/build/src/channel-options", "recognizedOptions.grpc.secondary_user_agent")
     @js.native
@@ -113,6 +143,12 @@ object buildSrcChannelOptionsMod {
     @JSImport("@grpc/grpc-js/build/src/channel-options", "recognizedOptions.grpc.service_config")
     @js.native
     def grpcServiceConfig: Boolean = js.native
+    
+    @JSImport("@grpc/grpc-js/build/src/channel-options", "recognizedOptions.grpc.service_config_disable_resolution")
+    @js.native
+    def grpcServiceConfigDisableResolution: Boolean = js.native
+    
+    inline def grpcServiceConfigDisableResolution_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("grpc.service_config_disable_resolution")(x.asInstanceOf[js.Any])
     
     inline def grpcServiceConfig_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("grpc.service_config")(x.asInstanceOf[js.Any])
     
@@ -151,6 +187,9 @@ object buildSrcChannelOptionsMod {
     @JSName("grpc.enable_http_proxy")
     var grpcDotenable_http_proxy: js.UndefOr[Double] = js.undefined
     
+    @JSName("grpc.enable_retries")
+    var grpcDotenable_retries: js.UndefOr[Double] = js.undefined
+    
     @JSName("grpc.http_connect_creds")
     var grpcDothttp_connect_creds: js.UndefOr[String] = js.undefined
     
@@ -172,6 +211,12 @@ object buildSrcChannelOptionsMod {
     @JSName("grpc.max_concurrent_streams")
     var grpcDotmax_concurrent_streams: js.UndefOr[Double] = js.undefined
     
+    @JSName("grpc.max_connection_age_grace_ms")
+    var grpcDotmax_connection_age_grace_ms: js.UndefOr[Double] = js.undefined
+    
+    @JSName("grpc.max_connection_age_ms")
+    var grpcDotmax_connection_age_ms: js.UndefOr[Double] = js.undefined
+    
     @JSName("grpc.max_receive_message_length")
     var grpcDotmax_receive_message_length: js.UndefOr[Double] = js.undefined
     
@@ -181,14 +226,23 @@ object buildSrcChannelOptionsMod {
     @JSName("grpc.max_send_message_length")
     var grpcDotmax_send_message_length: js.UndefOr[Double] = js.undefined
     
+    @JSName("grpc.per_rpc_retry_buffer_size")
+    var grpcDotper_rpc_retry_buffer_size: js.UndefOr[Double] = js.undefined
+    
     @JSName("grpc.primary_user_agent")
     var grpcDotprimary_user_agent: js.UndefOr[String] = js.undefined
+    
+    @JSName("grpc.retry_buffer_size")
+    var grpcDotretry_buffer_size: js.UndefOr[Double] = js.undefined
     
     @JSName("grpc.secondary_user_agent")
     var grpcDotsecondary_user_agent: js.UndefOr[String] = js.undefined
     
     @JSName("grpc.service_config")
     var grpcDotservice_config: js.UndefOr[String] = js.undefined
+    
+    @JSName("grpc.service_config_disable_resolution")
+    var grpcDotservice_config_disable_resolution: js.UndefOr[Double] = js.undefined
     
     @JSName("grpc.ssl_target_name_override")
     var grpcDotssl_target_name_override: js.UndefOr[String] = js.undefined
@@ -230,6 +284,10 @@ object buildSrcChannelOptionsMod {
       
       inline def setGrpcDotenable_http_proxyUndefined: Self = StObject.set(x, "grpc.enable_http_proxy", js.undefined)
       
+      inline def setGrpcDotenable_retries(value: Double): Self = StObject.set(x, "grpc.enable_retries", value.asInstanceOf[js.Any])
+      
+      inline def setGrpcDotenable_retriesUndefined: Self = StObject.set(x, "grpc.enable_retries", js.undefined)
+      
       inline def setGrpcDothttp_connect_creds(value: String): Self = StObject.set(x, "grpc.http_connect_creds", value.asInstanceOf[js.Any])
       
       inline def setGrpcDothttp_connect_credsUndefined: Self = StObject.set(x, "grpc.http_connect_creds", js.undefined)
@@ -258,6 +316,14 @@ object buildSrcChannelOptionsMod {
       
       inline def setGrpcDotmax_concurrent_streamsUndefined: Self = StObject.set(x, "grpc.max_concurrent_streams", js.undefined)
       
+      inline def setGrpcDotmax_connection_age_grace_ms(value: Double): Self = StObject.set(x, "grpc.max_connection_age_grace_ms", value.asInstanceOf[js.Any])
+      
+      inline def setGrpcDotmax_connection_age_grace_msUndefined: Self = StObject.set(x, "grpc.max_connection_age_grace_ms", js.undefined)
+      
+      inline def setGrpcDotmax_connection_age_ms(value: Double): Self = StObject.set(x, "grpc.max_connection_age_ms", value.asInstanceOf[js.Any])
+      
+      inline def setGrpcDotmax_connection_age_msUndefined: Self = StObject.set(x, "grpc.max_connection_age_ms", js.undefined)
+      
       inline def setGrpcDotmax_receive_message_length(value: Double): Self = StObject.set(x, "grpc.max_receive_message_length", value.asInstanceOf[js.Any])
       
       inline def setGrpcDotmax_receive_message_lengthUndefined: Self = StObject.set(x, "grpc.max_receive_message_length", js.undefined)
@@ -270,9 +336,17 @@ object buildSrcChannelOptionsMod {
       
       inline def setGrpcDotmax_send_message_lengthUndefined: Self = StObject.set(x, "grpc.max_send_message_length", js.undefined)
       
+      inline def setGrpcDotper_rpc_retry_buffer_size(value: Double): Self = StObject.set(x, "grpc.per_rpc_retry_buffer_size", value.asInstanceOf[js.Any])
+      
+      inline def setGrpcDotper_rpc_retry_buffer_sizeUndefined: Self = StObject.set(x, "grpc.per_rpc_retry_buffer_size", js.undefined)
+      
       inline def setGrpcDotprimary_user_agent(value: String): Self = StObject.set(x, "grpc.primary_user_agent", value.asInstanceOf[js.Any])
       
       inline def setGrpcDotprimary_user_agentUndefined: Self = StObject.set(x, "grpc.primary_user_agent", js.undefined)
+      
+      inline def setGrpcDotretry_buffer_size(value: Double): Self = StObject.set(x, "grpc.retry_buffer_size", value.asInstanceOf[js.Any])
+      
+      inline def setGrpcDotretry_buffer_sizeUndefined: Self = StObject.set(x, "grpc.retry_buffer_size", js.undefined)
       
       inline def setGrpcDotsecondary_user_agent(value: String): Self = StObject.set(x, "grpc.secondary_user_agent", value.asInstanceOf[js.Any])
       
@@ -281,6 +355,10 @@ object buildSrcChannelOptionsMod {
       inline def setGrpcDotservice_config(value: String): Self = StObject.set(x, "grpc.service_config", value.asInstanceOf[js.Any])
       
       inline def setGrpcDotservice_configUndefined: Self = StObject.set(x, "grpc.service_config", js.undefined)
+      
+      inline def setGrpcDotservice_config_disable_resolution(value: Double): Self = StObject.set(x, "grpc.service_config_disable_resolution", value.asInstanceOf[js.Any])
+      
+      inline def setGrpcDotservice_config_disable_resolutionUndefined: Self = StObject.set(x, "grpc.service_config_disable_resolution", js.undefined)
       
       inline def setGrpcDotssl_target_name_override(value: String): Self = StObject.set(x, "grpc.ssl_target_name_override", value.asInstanceOf[js.Any])
       

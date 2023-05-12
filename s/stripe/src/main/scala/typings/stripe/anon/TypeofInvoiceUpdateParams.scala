@@ -6,22 +6,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TypeofInvoiceUpdateParams extends StObject {
   
-  val PaymentSettings: TypeofPaymentSettingsPaymentMethodOptions
+  val PaymentSettings: TypeofPaymentSettings
   
   val RenderingOptions: Any
+  
+  val ShippingCost: TypeofShippingCostShippingRateData
 }
 object TypeofInvoiceUpdateParams {
   
-  inline def apply(PaymentSettings: TypeofPaymentSettingsPaymentMethodOptions, RenderingOptions: Any): TypeofInvoiceUpdateParams = {
-    val __obj = js.Dynamic.literal(PaymentSettings = PaymentSettings.asInstanceOf[js.Any], RenderingOptions = RenderingOptions.asInstanceOf[js.Any])
+  inline def apply(
+    PaymentSettings: TypeofPaymentSettings,
+    RenderingOptions: Any,
+    ShippingCost: TypeofShippingCostShippingRateData
+  ): TypeofInvoiceUpdateParams = {
+    val __obj = js.Dynamic.literal(PaymentSettings = PaymentSettings.asInstanceOf[js.Any], RenderingOptions = RenderingOptions.asInstanceOf[js.Any], ShippingCost = ShippingCost.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofInvoiceUpdateParams]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: TypeofInvoiceUpdateParams] (val x: Self) extends AnyVal {
     
-    inline def setPaymentSettings(value: TypeofPaymentSettingsPaymentMethodOptions): Self = StObject.set(x, "PaymentSettings", value.asInstanceOf[js.Any])
+    inline def setPaymentSettings(value: TypeofPaymentSettings): Self = StObject.set(x, "PaymentSettings", value.asInstanceOf[js.Any])
     
     inline def setRenderingOptions(value: Any): Self = StObject.set(x, "RenderingOptions", value.asInstanceOf[js.Any])
+    
+    inline def setShippingCost(value: TypeofShippingCostShippingRateData): Self = StObject.set(x, "ShippingCost", value.asInstanceOf[js.Any])
   }
 }

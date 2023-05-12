@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "mongodb-client-encryption" : "2.8.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "mongodb-client-encryption" : "2.8.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

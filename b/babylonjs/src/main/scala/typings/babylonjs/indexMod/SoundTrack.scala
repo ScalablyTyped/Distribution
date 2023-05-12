@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 /**
   * Creates a new sound track.
-  * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music#using-sound-tracks
+  * @see https://doc.babylonjs.com/features/featuresDeepDive/audio/playingSoundsMusic#using-sound-tracks
   * @param scene Define the scene the sound track belongs to
   * @param options
   */

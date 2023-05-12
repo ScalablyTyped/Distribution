@@ -401,12 +401,12 @@ object mod {
     var rmWhitespace: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * The path to the project root. When this is set, absolute paths for includes
-      * (/filename.ejs) will be relative to the project root.
+      * The path to templates root(s). When this is set, absolute paths for includes
+      * (/filename.ejs) will be relative to the templates root(s).
       *
       * @default undefined
       */
-    var root: js.UndefOr[String] = js.undefined
+    var root: js.UndefOr[js.Array[String] | String] = js.undefined
     
     /**
       * Whether to run in strict mode or not.
@@ -501,9 +501,11 @@ object mod {
       
       inline def setRmWhitespaceUndefined: Self = StObject.set(x, "rmWhitespace", js.undefined)
       
-      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: js.Array[String] | String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
       inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      
+      inline def setRootVarargs(value: String*): Self = StObject.set(x, "root", js.Array(value*))
       
       inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       

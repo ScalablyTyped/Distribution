@@ -46,6 +46,8 @@ type StepConfigUserConsent = /* import warning: importer.ImportType#apply Failed
 
 type StepConfigWelcome = /* import warning: importer.ImportType#apply Failed type conversion: onfido-sdk-ui.onfido-sdk-ui.StepConfigMap['welcome'] */ js.Any
 
+type StepOptionPoA = js.Object
+
 type StepTypes = PublicStepTypes | PrivateStepTypes
 
 type UserExitCode = USER_CONSENT_DENIED

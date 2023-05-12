@@ -32,6 +32,11 @@ trait Table extends StObject {
   var Description: js.UndefOr[DescriptionString] = js.undefined
   
   /**
+    * A FederatedTable structure that references an entity outside the Glue Data Catalog.
+    */
+  var FederatedTable: js.UndefOr[typings.awsSdk.clientsGlueMod.FederatedTable] = js.undefined
+  
+  /**
     * Indicates whether the table has been registered with Lake Formation.
     */
   var IsRegisteredWithLakeFormation: js.UndefOr[Boolean] = js.undefined
@@ -77,7 +82,7 @@ trait Table extends StObject {
   var StorageDescriptor: js.UndefOr[typings.awsSdk.clientsGlueMod.StorageDescriptor] = js.undefined
   
   /**
-    * The type of this table (EXTERNAL_TABLE, VIRTUAL_VIEW, etc.).
+    * The type of this table. Glue will create tables with the EXTERNAL_TABLE type. Other services, such as Athena, may create tables with additional table types.  Glue related table types:  EXTERNAL_TABLE  Hive compatible attribute - indicates a non-Hive managed table.  GOVERNED  Used by Lake Formation. The Glue Data Catalog understands GOVERNED.  
     */
   var TableType: js.UndefOr[TableTypeString] = js.undefined
   
@@ -97,12 +102,12 @@ trait Table extends StObject {
   var VersionId: js.UndefOr[VersionString] = js.undefined
   
   /**
-    * If the table is a view, the expanded text of the view; otherwise null.
+    * Included for Apache Hive compatibility. Not used in the normal course of Glue operations.
     */
   var ViewExpandedText: js.UndefOr[ViewTextString] = js.undefined
   
   /**
-    * If the table is a view, the original text of the view; otherwise null.
+    * Included for Apache Hive compatibility. Not used in the normal course of Glue operations. If the table is a VIRTUAL_VIEW, certain Athena configuration encoded in base64.
     */
   var ViewOriginalText: js.UndefOr[ViewTextString] = js.undefined
 }
@@ -135,6 +140,10 @@ object Table {
     inline def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    
+    inline def setFederatedTable(value: FederatedTable): Self = StObject.set(x, "FederatedTable", value.asInstanceOf[js.Any])
+    
+    inline def setFederatedTableUndefined: Self = StObject.set(x, "FederatedTable", js.undefined)
     
     inline def setIsRegisteredWithLakeFormation(value: Boolean): Self = StObject.set(x, "IsRegisteredWithLakeFormation", value.asInstanceOf[js.Any])
     

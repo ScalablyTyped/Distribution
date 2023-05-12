@@ -4,11 +4,12 @@ import typings.mangopay2NodejsSdk.typingsModelsBankAccountMod.bankAccount.BankAc
 import typings.mangopay2NodejsSdk.typingsModelsBankAccountMod.bankAccount.DepositAccountType
 import typings.mangopay2NodejsSdk.typingsModelsCardMod.card.CardStatus
 import typings.mangopay2NodejsSdk.typingsModelsCardMod.card.CardValidity
-import typings.mangopay2NodejsSdk.typingsModelsCardPreauthorizationMod.cardPreAuthorization.PaymentStatus
 import typings.mangopay2NodejsSdk.typingsModelsCardPreauthorizationMod.cardPreAuthorization.PreAuthorizationStatus
 import typings.mangopay2NodejsSdk.typingsModelsClientMod.client.BusinessType
 import typings.mangopay2NodejsSdk.typingsModelsClientMod.client.PlatformType
 import typings.mangopay2NodejsSdk.typingsModelsClientMod.client.Sector
+import typings.mangopay2NodejsSdk.typingsModelsDepositMod.deposit.DepositStatus
+import typings.mangopay2NodejsSdk.typingsModelsDepositMod.deposit.PaymentStatus
 import typings.mangopay2NodejsSdk.typingsModelsDisputeDocumentMod.disputeDocument.DisputeDocumentType
 import typings.mangopay2NodejsSdk.typingsModelsDisputeDocumentMod.disputeDocument.DocumentStatus
 import typings.mangopay2NodejsSdk.typingsModelsDisputeDocumentMod.disputeDocument.RefusedReasonType
@@ -579,6 +580,7 @@ object mangopay2NodejsSdkStrings {
   sealed trait CANCELED
     extends StObject
        with PaymentStatus
+       with typings.mangopay2NodejsSdk.typingsModelsCardPreauthorizationMod.cardPreAuthorization.PaymentStatus
   inline def CANCELED: CANCELED = "CANCELED".asInstanceOf[CANCELED]
   
   @js.native
@@ -735,6 +737,7 @@ object mangopay2NodejsSdkStrings {
   sealed trait CREATED
     extends StObject
        with CardStatus
+       with DepositStatus
        with DisputeStatus
        with DocumentStatus
        with typings.mangopay2NodejsSdk.typingsModelsKycDocumentMod.kycDocument.DocumentStatus
@@ -958,6 +961,48 @@ object mangopay2NodejsSdkStrings {
     extends StObject
        with DisputeDocumentType
   inline def DELIVERY_PROOF: DELIVERY_PROOF = "DELIVERY_PROOF".asInstanceOf[DELIVERY_PROOF]
+  
+  @js.native
+  sealed trait DEPOSIT_PREAUTHORIZATION_CREATED
+    extends StObject
+       with EventType
+  inline def DEPOSIT_PREAUTHORIZATION_CREATED: DEPOSIT_PREAUTHORIZATION_CREATED = "DEPOSIT_PREAUTHORIZATION_CREATED".asInstanceOf[DEPOSIT_PREAUTHORIZATION_CREATED]
+  
+  @js.native
+  sealed trait DEPOSIT_PREAUTHORIZATION_FAILED
+    extends StObject
+       with EventType
+  inline def DEPOSIT_PREAUTHORIZATION_FAILED: DEPOSIT_PREAUTHORIZATION_FAILED = "DEPOSIT_PREAUTHORIZATION_FAILED".asInstanceOf[DEPOSIT_PREAUTHORIZATION_FAILED]
+  
+  @js.native
+  sealed trait DEPOSIT_PREAUTHORIZATION_PAYMENT_CANCELED
+    extends StObject
+       with EventType
+  inline def DEPOSIT_PREAUTHORIZATION_PAYMENT_CANCELED: DEPOSIT_PREAUTHORIZATION_PAYMENT_CANCELED = "DEPOSIT_PREAUTHORIZATION_PAYMENT_CANCELED".asInstanceOf[DEPOSIT_PREAUTHORIZATION_PAYMENT_CANCELED]
+  
+  @js.native
+  sealed trait DEPOSIT_PREAUTHORIZATION_PAYMENT_CANCEL_REQUEST
+    extends StObject
+       with EventType
+  inline def DEPOSIT_PREAUTHORIZATION_PAYMENT_CANCEL_REQUEST: DEPOSIT_PREAUTHORIZATION_PAYMENT_CANCEL_REQUEST = "DEPOSIT_PREAUTHORIZATION_PAYMENT_CANCEL_REQUEST".asInstanceOf[DEPOSIT_PREAUTHORIZATION_PAYMENT_CANCEL_REQUEST]
+  
+  @js.native
+  sealed trait DEPOSIT_PREAUTHORIZATION_PAYMENT_EXPIRED
+    extends StObject
+       with EventType
+  inline def DEPOSIT_PREAUTHORIZATION_PAYMENT_EXPIRED: DEPOSIT_PREAUTHORIZATION_PAYMENT_EXPIRED = "DEPOSIT_PREAUTHORIZATION_PAYMENT_EXPIRED".asInstanceOf[DEPOSIT_PREAUTHORIZATION_PAYMENT_EXPIRED]
+  
+  @js.native
+  sealed trait DEPOSIT_PREAUTHORIZATION_PAYMENT_VALIDATED
+    extends StObject
+       with EventType
+  inline def DEPOSIT_PREAUTHORIZATION_PAYMENT_VALIDATED: DEPOSIT_PREAUTHORIZATION_PAYMENT_VALIDATED = "DEPOSIT_PREAUTHORIZATION_PAYMENT_VALIDATED".asInstanceOf[DEPOSIT_PREAUTHORIZATION_PAYMENT_VALIDATED]
+  
+  @js.native
+  sealed trait DEPOSIT_PREAUTHORIZATION_PAYMENT_WAITING
+    extends StObject
+       with EventType
+  inline def DEPOSIT_PREAUTHORIZATION_PAYMENT_WAITING: DEPOSIT_PREAUTHORIZATION_PAYMENT_WAITING = "DEPOSIT_PREAUTHORIZATION_PAYMENT_WAITING".asInstanceOf[DEPOSIT_PREAUTHORIZATION_PAYMENT_WAITING]
   
   @js.native
   sealed trait DINERS
@@ -1317,7 +1362,7 @@ object mangopay2NodejsSdkStrings {
   sealed trait EXPIRED
     extends StObject
        with MandateStatus
-       with PaymentStatus
+       with typings.mangopay2NodejsSdk.typingsModelsCardPreauthorizationMod.cardPreAuthorization.PaymentStatus
   inline def EXPIRED: EXPIRED = "EXPIRED".asInstanceOf[EXPIRED]
   
   @js.native
@@ -1358,6 +1403,7 @@ object mangopay2NodejsSdkStrings {
   @js.native
   sealed trait FAILED
     extends StObject
+       with DepositStatus
        with MandateStatus
        with PreAuthorizationStatus
        with TransactionStatus
@@ -2885,6 +2931,12 @@ object mangopay2NodejsSdkStrings {
   inline def PAB: PAB = "PAB".asInstanceOf[PAB]
   
   @js.native
+  sealed trait PARTNERSHIP
+    extends StObject
+       with typings.mangopay2NodejsSdk.typingsModelsUserMod.user.LegalPersonType
+  inline def PARTNERSHIP: PARTNERSHIP = "PARTNERSHIP".asInstanceOf[PARTNERSHIP]
+  
+  @js.native
   sealed trait PAYCONIQ
     extends StObject
        with PayInPaymentType
@@ -3670,6 +3722,7 @@ object mangopay2NodejsSdkStrings {
   @js.native
   sealed trait SUCCEEDED
     extends StObject
+       with DepositStatus
        with PreAuthorizationStatus
        with TransactionStatus
   inline def SUCCEEDED: SUCCEEDED = "SUCCEEDED".asInstanceOf[SUCCEEDED]
@@ -4191,7 +4244,7 @@ object mangopay2NodejsSdkStrings {
        with CardStatus
        with DocumentStatus
        with typings.mangopay2NodejsSdk.typingsModelsKycDocumentMod.kycDocument.DocumentStatus
-       with PaymentStatus
+       with typings.mangopay2NodejsSdk.typingsModelsCardPreauthorizationMod.cardPreAuthorization.PaymentStatus
   inline def VALIDATED: VALIDATED = "VALIDATED".asInstanceOf[VALIDATED]
   
   @js.native
@@ -4259,6 +4312,7 @@ object mangopay2NodejsSdkStrings {
   sealed trait WAITING
     extends StObject
        with PaymentStatus
+       with typings.mangopay2NodejsSdk.typingsModelsCardPreauthorizationMod.cardPreAuthorization.PaymentStatus
   inline def WAITING: WAITING = "WAITING".asInstanceOf[WAITING]
   
   @js.native

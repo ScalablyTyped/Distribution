@@ -4,6 +4,8 @@ import typings.angularCompiler.mod.TmplAstElement
 import typings.angularCompiler.mod.TmplAstReference
 import typings.angularCompiler.mod.TmplAstTemplate
 import typings.angularCompiler.mod.TmplAstVariable
+import typings.angularCompilerCli.anon.ClassDeclarationDeclarati
+import typings.angularCompilerCli.srcNgtscImportsMod.Reference
 import typings.angularCompilerCli.srcNgtscTypecheckApiSymbolsMod.SymbolKind.Directive
 import typings.angularCompilerCli.srcNgtscTypecheckApiSymbolsMod.SymbolKind.DomBinding
 import typings.angularCompilerCli.srcNgtscTypecheckApiSymbolsMod.SymbolKind.Element
@@ -11,7 +13,6 @@ import typings.angularCompilerCli.srcNgtscTypecheckApiSymbolsMod.SymbolKind.Expr
 import typings.angularCompilerCli.srcNgtscTypecheckApiSymbolsMod.SymbolKind.Input
 import typings.angularCompilerCli.srcNgtscTypecheckApiSymbolsMod.SymbolKind.Output
 import typings.angularCompilerCli.srcNgtscTypecheckApiSymbolsMod.SymbolKind.Pipe
-import typings.angularCompilerCli.srcNgtscTypecheckApiSymbolsMod.SymbolKind.Reference
 import typings.angularCompilerCli.srcNgtscTypecheckApiSymbolsMod.SymbolKind.Template
 import typings.angularCompilerCli.srcNgtscTypecheckApiSymbolsMod.SymbolKind.Variable
 import typings.angularCompilerCli.srcNgtscUtilSrcTypescriptMod.SymbolWithValueDeclaration
@@ -36,17 +37,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Symbol extends StObject
 object Symbol {
   
-  inline def DirectiveSymbol(
+  inline def DirectiveSymbolBaseisHost(
     isComponent: Boolean,
+    isInScope: Boolean,
     isStructural: Boolean,
     kind: Directive,
-    selector: String,
+    ref: Reference[ClassDeclarationDeclarati],
     tcbLocation: TcbLocation,
     tsSymbol: SymbolWithValueDeclaration,
     tsType: Type
-  ): typings.angularCompilerCli.srcNgtscTypecheckApiSymbolsMod.DirectiveSymbol = {
-    val __obj = js.Dynamic.literal(isComponent = isComponent.asInstanceOf[js.Any], isStructural = isStructural.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], tcbLocation = tcbLocation.asInstanceOf[js.Any], tsSymbol = tsSymbol.asInstanceOf[js.Any], tsType = tsType.asInstanceOf[js.Any], ngModule = null)
-    __obj.asInstanceOf[typings.angularCompilerCli.srcNgtscTypecheckApiSymbolsMod.DirectiveSymbol]
+  ): typings.angularCompilerCli.anon.DirectiveSymbolBaseisHost = {
+    val __obj = js.Dynamic.literal(isComponent = isComponent.asInstanceOf[js.Any], isHostDirective = false, isInScope = isInScope.asInstanceOf[js.Any], isStructural = isStructural.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], tcbLocation = tcbLocation.asInstanceOf[js.Any], tsSymbol = tsSymbol.asInstanceOf[js.Any], tsType = tsType.asInstanceOf[js.Any], ngModule = null, selector = null)
+    __obj.asInstanceOf[typings.angularCompilerCli.anon.DirectiveSymbolBaseisHost]
+  }
+  
+  inline def DirectiveSymbolBaseisHostExposedInputs(
+    isComponent: Boolean,
+    isInScope: Boolean,
+    isStructural: Boolean,
+    kind: Directive,
+    ref: Reference[ClassDeclarationDeclarati],
+    tcbLocation: TcbLocation,
+    tsSymbol: SymbolWithValueDeclaration,
+    tsType: Type
+  ): typings.angularCompilerCli.anon.DirectiveSymbolBaseisHostExposedInputs = {
+    val __obj = js.Dynamic.literal(isComponent = isComponent.asInstanceOf[js.Any], isHostDirective = true, isInScope = isInScope.asInstanceOf[js.Any], isStructural = isStructural.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], tcbLocation = tcbLocation.asInstanceOf[js.Any], tsSymbol = tsSymbol.asInstanceOf[js.Any], tsType = tsType.asInstanceOf[js.Any], exposedInputs = null, exposedOutputs = null, ngModule = null, selector = null)
+    __obj.asInstanceOf[typings.angularCompilerCli.anon.DirectiveSymbolBaseisHostExposedInputs]
   }
   
   inline def DomBindingSymbol(host: ElementSymbol | TemplateSymbol, kind: DomBinding): typings.angularCompilerCli.srcNgtscTypecheckApiSymbolsMod.DomBindingSymbol = {
@@ -87,7 +103,7 @@ object Symbol {
   
   inline def ReferenceSymbol(
     declaration: TmplAstReference,
-    kind: Reference,
+    kind: typings.angularCompilerCli.srcNgtscTypecheckApiSymbolsMod.SymbolKind.Reference,
     referenceVarLocation: TcbLocation,
     target: TmplAstElement | TmplAstTemplate | ClassDeclaration,
     targetLocation: TcbLocation,

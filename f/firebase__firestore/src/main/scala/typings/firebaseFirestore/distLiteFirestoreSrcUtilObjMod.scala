@@ -16,6 +16,8 @@ object distLiteFirestoreSrcUtilObjMod {
   
   inline def isEmpty[V](obj: Dict[V]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
+  inline def mapToArray[V, R](obj: Dict[V], fn: js.Function3[/* element */ V, /* key */ String, /* obj */ Dict[V], R]): js.Array[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapToArray")(obj.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[R]]
+  
   inline def objectSize(obj: js.Object): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("objectSize")(obj.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   type Dict[V] = StringDictionary[V]

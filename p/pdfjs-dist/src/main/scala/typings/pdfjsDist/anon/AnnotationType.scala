@@ -14,7 +14,7 @@ trait AnnotationType extends StObject {
   
   var pageIndex: Double
   
-  var rect: js.Array[Double]
+  var rect: js.Array[Any]
   
   var rotation: Any
   
@@ -27,7 +27,7 @@ object AnnotationType {
     color: js.Array[Double],
     fontSize: Any,
     pageIndex: Double,
-    rect: js.Array[Double],
+    rect: js.Array[Any],
     rotation: Any,
     value: String
   ): AnnotationType = {
@@ -48,9 +48,9 @@ object AnnotationType {
     
     inline def setPageIndex(value: Double): Self = StObject.set(x, "pageIndex", value.asInstanceOf[js.Any])
     
-    inline def setRect(value: js.Array[Double]): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
+    inline def setRect(value: js.Array[Any]): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
     
-    inline def setRectVarargs(value: Double*): Self = StObject.set(x, "rect", js.Array(value*))
+    inline def setRectVarargs(value: Any*): Self = StObject.set(x, "rect", js.Array(value*))
     
     inline def setRotation(value: Any): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     

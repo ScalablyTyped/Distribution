@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-tabs" : "5.1.0"
+      "react-tabs" : "6.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "react-tabs" : "5.1.0"
+      "react-tabs" : "6.0.1"
     }
   ],
   "compile-devDependencies" : [

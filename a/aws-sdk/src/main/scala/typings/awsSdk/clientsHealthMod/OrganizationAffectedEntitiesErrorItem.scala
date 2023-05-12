@@ -12,7 +12,7 @@ trait OrganizationAffectedEntitiesErrorItem extends StObject {
   var awsAccountId: js.UndefOr[accountId] = js.undefined
   
   /**
-    * The unique identifier for the event type. The format is AWS_SERVICE_DESCRIPTION. For example, AWS_EC2_SYSTEM_MAINTENANCE_EVENT.
+    * A message that describes the error. Follow the error message and retry your request. For example, the InvalidAccountInputError error message appears if you call the DescribeAffectedEntitiesForOrganization operation and specify the AccountSpecific value for the EventScopeCode parameter, but don't specify an Amazon Web Services account.
     */
   var errorMessage: js.UndefOr[String] = js.undefined
   

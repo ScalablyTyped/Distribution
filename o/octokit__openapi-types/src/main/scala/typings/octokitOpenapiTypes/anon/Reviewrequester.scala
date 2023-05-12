@@ -39,7 +39,10 @@ trait Reviewrequester extends StObject {
   /** @example closed */
   var event: String
   
-  /** @example 1 */
+  /**
+    * Format: int64
+    * @example 1
+    */
   var id: Double
   
   var issue: js.UndefOr[

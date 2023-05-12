@@ -1,6 +1,9 @@
 package typings.awsSdk.clientsDatasyncMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.NetAppONTAP
 import typings.awsSdk.awsSdkStrings.SIMPLE_PATTERN
+import typings.awsSdk.awsSdkStrings.SVM
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -31,7 +34,49 @@ type Atime = _Atime | String
 
 type BytesPerSecond = Double
 
+type CollectionDurationMinutes = Double
+
 type DestinationNetworkInterfaceArns = js.Array[NetworkInterfaceArn]
+
+type DiscoveryAgentArnList = js.Array[AgentArn]
+
+type DiscoveryJobArn = String
+
+type DiscoveryJobList = js.Array[DiscoveryJobListEntry]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.RUNNING
+  - typings.awsSdk.awsSdkStrings.WARNING
+  - typings.awsSdk.awsSdkStrings.TERMINATED
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.STOPPED
+  - typings.awsSdk.awsSdkStrings.COMPLETED
+  - typings.awsSdk.awsSdkStrings.COMPLETED_WITH_ISSUES
+  - java.lang.String
+*/
+type DiscoveryJobStatus = _DiscoveryJobStatus | String
+
+type DiscoveryMaxResults = Double
+
+type DiscoveryNextToken = String
+
+type DiscoveryResourceFilter = SVM | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SVM
+  - typings.awsSdk.awsSdkStrings.VOLUME
+  - typings.awsSdk.awsSdkStrings.CLUSTER
+  - java.lang.String
+*/
+type DiscoveryResourceType = _DiscoveryResourceType | String
+
+type DiscoveryServerHostname = String
+
+type DiscoveryServerPort = Double
+
+type DiscoverySystemType = NetAppONTAP | String
+
+type DiscoveryTime = js.Date
 
 type Duration = Double
 
@@ -54,6 +99,8 @@ type EfsInTransitEncryption = _EfsInTransitEncryption | String
 
 type EfsSubdirectory = String
 
+type EnabledProtocols = js.Array[PtolemyString]
+
 type Endpoint = String
 
 /* Rewritten from type alias, can be one of: 
@@ -64,9 +111,13 @@ type Endpoint = String
 */
 type EndpointType = _EndpointType | String
 
+type ErrorMessage = String
+
 type FilterAttributeValue = String
 
 type FilterList = js.Array[FilterRule]
+
+type FilterMembers = js.Array[PtolemyString]
 
 type FilterType = SIMPLE_PATTERN | String
 
@@ -172,12 +223,22 @@ type LogLevel = _LogLevel | String
 
 type MaxResults = Double
 
+type Metrics = js.Array[ResourceMetrics]
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
   - typings.awsSdk.awsSdkStrings.PRESERVE
   - java.lang.String
 */
 type Mtime = _Mtime | String
+
+type Name = String
+
+type NetAppONTAPClusters = js.Array[NetAppONTAPCluster]
+
+type NetAppONTAPSVMs = js.Array[NetAppONTAPSVM]
+
+type NetAppONTAPVolumes = js.Array[NetAppONTAPVolume]
 
 type NetworkInterfaceArn = String
 
@@ -193,6 +254,10 @@ type NfsSubdirectory = String
   - java.lang.String
 */
 type NfsVersion = _NfsVersion | String
+
+type NonNegativeDouble = Double
+
+type NonNegativeLong = Double
 
 type ObjectStorageAccessKey = String
 
@@ -275,6 +340,35 @@ type PreserveDeletedFiles = _PreserveDeletedFiles | String
 */
 type PreserveDevices = _PreserveDevices | String
 
+type PtolemyBoolean = Boolean
+
+type PtolemyPassword = String
+
+type PtolemyString = String
+
+type PtolemyUUID = String
+
+type PtolemyUsername = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NONE
+  - typings.awsSdk.awsSdkStrings.IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.COMPLETED
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - java.lang.String
+*/
+type RecommendationStatus = _RecommendationStatus | String
+
+type Recommendations = js.Array[Recommendation]
+
+type RecommendationsConfigMap = StringDictionary[PtolemyString]
+
+type ResourceFilters = StringDictionary[FilterMembers]
+
+type ResourceId = String
+
+type ResourceIds = js.Array[ResourceId]
+
 type S3BucketArn = String
 
 /* Rewritten from type alias, can be one of: 
@@ -285,6 +379,7 @@ type S3BucketArn = String
   - typings.awsSdk.awsSdkStrings.GLACIER
   - typings.awsSdk.awsSdkStrings.DEEP_ARCHIVE
   - typings.awsSdk.awsSdkStrings.OUTPOSTS
+  - typings.awsSdk.awsSdkStrings.GLACIER_INSTANT_RETRIEVAL
   - java.lang.String
 */
 type S3StorageClass = _S3StorageClass | String
@@ -292,6 +387,8 @@ type S3StorageClass = _S3StorageClass | String
 type S3Subdirectory = String
 
 type ScheduleExpressionCron = String
+
+type SecretsManagerArn = String
 
 type ServerHostname = String
 
@@ -315,11 +412,25 @@ type SmbUser = String
   - typings.awsSdk.awsSdkStrings.AUTOMATIC
   - typings.awsSdk.awsSdkStrings.SMB2
   - typings.awsSdk.awsSdkStrings.SMB3
+  - typings.awsSdk.awsSdkStrings.SMB1
+  - typings.awsSdk.awsSdkStrings.SMB2_0
   - java.lang.String
 */
 type SmbVersion = _SmbVersion | String
 
 type SourceNetworkInterfaceArns = js.Array[NetworkInterfaceArn]
+
+type StorageSystemArn = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PASS
+  - typings.awsSdk.awsSdkStrings.FAIL
+  - typings.awsSdk.awsSdkStrings.UNKNOWN
+  - java.lang.String
+*/
+type StorageSystemConnectivityStatus = _StorageSystemConnectivityStatus | String
+
+type StorageSystemList = js.Array[StorageSystemListEntry]
 
 type StorageVirtualMachineArn = String
 
@@ -378,6 +489,8 @@ type TaskQueueing = _TaskQueueing | String
 type TaskStatus = _TaskStatus | String
 
 type Time = js.Date
+
+type Timestamp = js.Date
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CHANGED

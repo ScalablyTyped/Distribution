@@ -25,13 +25,13 @@ trait GPUDepthStencilState extends StObject {
     * The comparison operation used to test fragment depths against
     * {@link GPURenderPassDescriptor#depthStencilAttachment} depth values.
     */
-  var depthCompare: js.UndefOr[GPUCompareFunction] = js.undefined
+  var depthCompare: GPUCompareFunction
   
   /**
     * Indicates if this {@link GPURenderPipeline} can modify
     * {@link GPURenderPassDescriptor#depthStencilAttachment} depth values.
     */
-  var depthWriteEnabled: js.UndefOr[Boolean] = js.undefined
+  var depthWriteEnabled: Boolean
   
   /**
     * The {@link GPUTextureViewDescriptor#format} of {@link GPURenderPassDescriptor#depthStencilAttachment}
@@ -63,8 +63,8 @@ trait GPUDepthStencilState extends StObject {
 }
 object GPUDepthStencilState {
   
-  inline def apply(format: GPUTextureFormat): GPUDepthStencilState = {
-    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
+  inline def apply(depthCompare: GPUCompareFunction, depthWriteEnabled: Boolean, format: GPUTextureFormat): GPUDepthStencilState = {
+    val __obj = js.Dynamic.literal(depthCompare = depthCompare.asInstanceOf[js.Any], depthWriteEnabled = depthWriteEnabled.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
     __obj.asInstanceOf[GPUDepthStencilState]
   }
   
@@ -85,11 +85,7 @@ object GPUDepthStencilState {
     
     inline def setDepthCompare(value: GPUCompareFunction): Self = StObject.set(x, "depthCompare", value.asInstanceOf[js.Any])
     
-    inline def setDepthCompareUndefined: Self = StObject.set(x, "depthCompare", js.undefined)
-    
     inline def setDepthWriteEnabled(value: Boolean): Self = StObject.set(x, "depthWriteEnabled", value.asInstanceOf[js.Any])
-    
-    inline def setDepthWriteEnabledUndefined: Self = StObject.set(x, "depthWriteEnabled", js.undefined)
     
     inline def setFormat(value: GPUTextureFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

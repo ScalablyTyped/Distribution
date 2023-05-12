@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@libp2p/tracked-map" : "2.0.2"
+      "@libp2p/tracked-map" : "3.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@libp2p/tracked-map" : "2.0.2"
+      "@libp2p/tracked-map" : "3.0.2"
     }
   ],
   "compile-devDependencies" : [

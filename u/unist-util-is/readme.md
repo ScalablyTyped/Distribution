@@ -1,7 +1,7 @@
 
 # Scala.js typings for unist-util-is
 
-Typings are for version 5.1.1
+Typings are for version 5.2.1
 
 ## Library description:
 unist utility to check if a node passes a test

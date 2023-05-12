@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FirewallPolicy extends StObject {
   
   /**
+    * Contains variables that you can use to override default Suricata settings in your firewall policy.
+    */
+  var PolicyVariables: js.UndefOr[typings.awsSdk.clientsNetworkfirewallMod.PolicyVariables] = js.undefined
+  
+  /**
     * The default actions to take on a packet that doesn't match any stateful rules. The stateful default action is optional, and is only valid when using the strict rule order. Valid values of the stateful default action:   aws:drop_strict   aws:drop_established   aws:alert_strict   aws:alert_established   For more information, see Strict evaluation order in the Network Firewall Developer Guide. 
     */
   var StatefulDefaultActions: js.UndefOr[StatefulActions] = js.undefined
@@ -40,6 +45,11 @@ trait FirewallPolicy extends StObject {
     * References to the stateless rule groups that are used in the policy. These define the matching criteria in stateless rules. 
     */
   var StatelessRuleGroupReferences: js.UndefOr[typings.awsSdk.clientsNetworkfirewallMod.StatelessRuleGroupReferences] = js.undefined
+  
+  /**
+    * The Amazon Resource Name (ARN) of the TLS inspection configuration.
+    */
+  var TLSInspectionConfigurationArn: js.UndefOr[ResourceArn] = js.undefined
 }
 object FirewallPolicy {
   
@@ -50,6 +60,10 @@ object FirewallPolicy {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: FirewallPolicy] (val x: Self) extends AnyVal {
+    
+    inline def setPolicyVariables(value: PolicyVariables): Self = StObject.set(x, "PolicyVariables", value.asInstanceOf[js.Any])
+    
+    inline def setPolicyVariablesUndefined: Self = StObject.set(x, "PolicyVariables", js.undefined)
     
     inline def setStatefulDefaultActions(value: StatefulActions): Self = StObject.set(x, "StatefulDefaultActions", value.asInstanceOf[js.Any])
     
@@ -86,5 +100,9 @@ object FirewallPolicy {
     inline def setStatelessRuleGroupReferencesUndefined: Self = StObject.set(x, "StatelessRuleGroupReferences", js.undefined)
     
     inline def setStatelessRuleGroupReferencesVarargs(value: StatelessRuleGroupReference*): Self = StObject.set(x, "StatelessRuleGroupReferences", js.Array(value*))
+    
+    inline def setTLSInspectionConfigurationArn(value: ResourceArn): Self = StObject.set(x, "TLSInspectionConfigurationArn", value.asInstanceOf[js.Any])
+    
+    inline def setTLSInspectionConfigurationArnUndefined: Self = StObject.set(x, "TLSInspectionConfigurationArn", js.undefined)
   }
 }

@@ -23,7 +23,7 @@ trait GetAllCodesOfConduct extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /codes_of_conduct']['response'] */ js.Any
   ]
   @JSName("getAllCodesOfConduct")
-  var getAllCodesOfConduct_Original: `189`
+  var getAllCodesOfConduct_Original: `215`
   
   def getConductCode(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /codes_of_conduct/{key}']['response'] */ js.Any
@@ -37,11 +37,11 @@ trait GetAllCodesOfConduct extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /codes_of_conduct/{key}']['response'] */ js.Any
   ]
   @JSName("getConductCode")
-  var getConductCode_Original: `190`
+  var getConductCode_Original: `216`
 }
 object GetAllCodesOfConduct {
   
-  inline def apply(getAllCodesOfConduct: `189`, getConductCode: `190`): GetAllCodesOfConduct = {
+  inline def apply(getAllCodesOfConduct: `215`, getConductCode: `216`): GetAllCodesOfConduct = {
     val __obj = js.Dynamic.literal(getAllCodesOfConduct = getAllCodesOfConduct.asInstanceOf[js.Any], getConductCode = getConductCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAllCodesOfConduct]
   }
@@ -49,8 +49,8 @@ object GetAllCodesOfConduct {
   @scala.inline
   implicit open class MutableBuilder[Self <: GetAllCodesOfConduct] (val x: Self) extends AnyVal {
     
-    inline def setGetAllCodesOfConduct(value: `189`): Self = StObject.set(x, "getAllCodesOfConduct", value.asInstanceOf[js.Any])
+    inline def setGetAllCodesOfConduct(value: `215`): Self = StObject.set(x, "getAllCodesOfConduct", value.asInstanceOf[js.Any])
     
-    inline def setGetConductCode(value: `190`): Self = StObject.set(x, "getConductCode", value.asInstanceOf[js.Any])
+    inline def setGetConductCode(value: `216`): Self = StObject.set(x, "getConductCode", value.asInstanceOf[js.Any])
   }
 }

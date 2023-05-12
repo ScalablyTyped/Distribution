@@ -12,12 +12,12 @@ trait ReplicationDetails extends StObject {
   var replicated: js.UndefOr[boolean] = js.undefined
   
   /**
-    * Specifies whether the bucket is configured to replicate one or more objects to an Amazon Web Services account that isn't part of the same Amazon Macie organization.
+    * Specifies whether the bucket is configured to replicate one or more objects to a bucket for an Amazon Web Services account that isn't part of your Amazon Macie organization. An Amazon Macie organization is a set of Macie accounts that are centrally managed as a group of related accounts through Organizations or by Macie invitation.
     */
   var replicatedExternally: js.UndefOr[boolean] = js.undefined
   
   /**
-    * An array of Amazon Web Services account IDs, one for each Amazon Web Services account that the bucket is configured to replicate one or more objects to.
+    * An array of Amazon Web Services account IDs, one for each Amazon Web Services account that owns a bucket that the bucket is configured to replicate one or more objects to.
     */
   var replicationAccounts: js.UndefOr[listOfString] = js.undefined
 }

@@ -1,8 +1,7 @@
 package typings.esbuildWasm.anon
 
-import typings.esbuildWasm.libBrowserMod.BuildIncremental
+import typings.esbuildWasm.libBrowserMod.BuildContext
 import typings.esbuildWasm.libBrowserMod.BuildOptions
-import typings.esbuildWasm.libBrowserMod.BuildResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCall extends StObject {
   
-  def apply(options: BuildOptionsincrementaltr): js.Promise[BuildIncremental] = js.native
-  def apply(options: BuildOptionsincrementaltrAbsWorkingDir): js.Promise[BuildIncrementalmetafileM] = js.native
-  def apply(options: BuildOptionsmetafiletrue): js.Promise[BuildResultmetafileMetafi] = js.native
-  def apply(options: BuildOptionswritefalse): js.Promise[BuildResultoutputFilesArr] = js.native
-  def apply(options: BuildOptions): js.Promise[BuildResult] = js.native
+  def apply(options: BuildOptions): js.Promise[BuildContext[BuildOptions]] = js.native
+  def apply[T /* <: BuildOptions */](options: T): js.Promise[BuildContext[T]] = js.native
 }

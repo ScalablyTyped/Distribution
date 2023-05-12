@@ -192,6 +192,8 @@ object sapMRangeSliderMod {
     fValue2: float): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Updates values of the advanced tooltips.
       */
     def updateAdvancedTooltipDom(): Unit = js.native

@@ -3,6 +3,7 @@ package typings.xummSdk
 import typings.xummSdk.distSrcTypesMetaAnyJsonMod.AnyJson
 import typings.xummSdk.distSrcTypesMetaApplicationDetailsMod.ApplicationDetails
 import typings.xummSdk.distSrcTypesMetaCuratedAssetsResponseMod.CuratedAssetsResponse
+import typings.xummSdk.distSrcTypesMetaNftokenDetailMod.NftokenDetail
 import typings.xummSdk.distSrcTypesMetaRatesResponseMod.RatesResponse
 import typings.xummSdk.distSrcTypesMetaUserTokensMod.UserTokenValidity
 import typings.xummSdk.distSrcTypesMetaXrplTransactionMod.XrplTransaction
@@ -35,12 +36,12 @@ object distSrcMetaMod {
     
     /* private */ var authorize: Any = js.native
     
-    def call[T](endpoint: String): js.Promise[T] = js.native
-    def call[T](endpoint: String, httpMethod: String): js.Promise[T] = js.native
-    def call[T](endpoint: String, httpMethod: String, data: AnyJson): js.Promise[T] = js.native
-    def call[T](endpoint: String, httpMethod: String, data: CreatePayload): js.Promise[T] = js.native
-    def call[T](endpoint: String, httpMethod: Unit, data: AnyJson): js.Promise[T] = js.native
-    def call[T](endpoint: String, httpMethod: Unit, data: CreatePayload): js.Promise[T] = js.native
+    def call[T](endpoint: String): js.Promise[T] | scala.Nothing = js.native
+    def call[T](endpoint: String, httpMethod: String): js.Promise[T] | scala.Nothing = js.native
+    def call[T](endpoint: String, httpMethod: String, data: AnyJson): js.Promise[T] | scala.Nothing = js.native
+    def call[T](endpoint: String, httpMethod: String, data: CreatePayload): js.Promise[T] | scala.Nothing = js.native
+    def call[T](endpoint: String, httpMethod: Unit, data: AnyJson): js.Promise[T] | scala.Nothing = js.native
+    def call[T](endpoint: String, httpMethod: Unit, data: CreatePayload): js.Promise[T] | scala.Nothing = js.native
     
     var endpoint: String = js.native
     
@@ -49,6 +50,8 @@ object distSrcMetaMod {
     def getKycStatus(userTokenOrAccount: String): js.Promise[
         /* keyof xumm-sdk.xumm-sdk/dist/src/types/Meta/KycStatusResponse.PossibleKycStatuses */ NONE | IN_PROGRESS | REJECTED | SUCCESSFUL
       ] = js.native
+    
+    def getNftokenDetail(tokenId: String): js.Promise[NftokenDetail] | scala.Nothing = js.native
     
     def getRates(currencyCode: String): js.Promise[RatesResponse] = js.native
     

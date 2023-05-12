@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@lumino/properties" : "1.8.2"
+      "@lumino/properties" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@lumino/properties" : "1.8.2"
+      "@lumino/properties" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

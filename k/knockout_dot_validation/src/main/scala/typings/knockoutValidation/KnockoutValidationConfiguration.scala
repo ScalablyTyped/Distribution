@@ -14,7 +14,6 @@ trait KnockoutValidationConfiguration extends StObject {
   /**
     * Indicates whether css error classes are added only
     * when properties are modified or at all times
-    * @type {[type]}
     */
   var decorateElementOnModified: js.UndefOr[Boolean] = js.undefined
   

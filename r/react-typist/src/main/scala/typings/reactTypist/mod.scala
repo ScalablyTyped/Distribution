@@ -18,7 +18,7 @@ object mod {
     def this(props: TypistProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: TypistProps, context: Any) = this()
   }
@@ -31,7 +31,7 @@ object mod {
       def this(props: BackSpaceProps) = this()
       /**
         * @deprecated
-        * @see https://reactjs.org/docs/legacy-context.html
+        * @see https://legacy.reactjs.org/docs/legacy-context.html
         */
       def this(props: BackSpaceProps, context: Any) = this()
     }
@@ -43,7 +43,7 @@ object mod {
       def this(props: DelayProps) = this()
       /**
         * @deprecated
-        * @see https://reactjs.org/docs/legacy-context.html
+        * @see https://legacy.reactjs.org/docs/legacy-context.html
         */
       def this(props: DelayProps, context: Any) = this()
     }
@@ -56,7 +56,7 @@ object mod {
     def this(props: TypistProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: TypistProps, context: Any) = this()
   }
@@ -69,7 +69,7 @@ object mod {
       def this(props: BackSpaceProps) = this()
       /**
         * @deprecated
-        * @see https://reactjs.org/docs/legacy-context.html
+        * @see https://legacy.reactjs.org/docs/legacy-context.html
         */
       def this(props: BackSpaceProps, context: Any) = this()
     }
@@ -81,7 +81,7 @@ object mod {
       def this(props: DelayProps) = this()
       /**
         * @deprecated
-        * @see https://reactjs.org/docs/legacy-context.html
+        * @see https://legacy.reactjs.org/docs/legacy-context.html
         */
       def this(props: DelayProps, context: Any) = this()
     }

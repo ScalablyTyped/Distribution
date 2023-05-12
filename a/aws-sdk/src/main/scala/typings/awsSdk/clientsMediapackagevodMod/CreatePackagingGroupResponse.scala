@@ -14,6 +14,11 @@ trait CreatePackagingGroupResponse extends StObject {
   var Authorization: js.UndefOr[typings.awsSdk.clientsMediapackagevodMod.Authorization] = js.undefined
   
   /**
+    * The time the PackagingGroup was created.
+    */
+  var CreatedAt: js.UndefOr[string] = js.undefined
+  
+  /**
     * The fully qualified domain name for Assets in the PackagingGroup.
     */
   var DomainName: js.UndefOr[string] = js.undefined
@@ -44,6 +49,10 @@ object CreatePackagingGroupResponse {
     inline def setAuthorization(value: Authorization): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
     
     inline def setAuthorizationUndefined: Self = StObject.set(x, "Authorization", js.undefined)
+    
+    inline def setCreatedAt(value: string): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
     inline def setDomainName(value: string): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "memfs" : "3.4.7"
+      "memfs" : "3.5.1"
     }
   ],
   "test-dependencies" : [
     {
-      "memfs" : "3.4.7"
+      "memfs" : "3.5.1"
     }
   ],
   "compile-devDependencies" : [

@@ -19,11 +19,11 @@ trait DeleteThemeAliasRequest extends StObject {
   /**
     * The ID for the theme that the specified alias is for.
     */
-  var ThemeId: RestrictiveResourceId
+  var ThemeId: ShortRestrictiveResourceId
 }
 object DeleteThemeAliasRequest {
   
-  inline def apply(AliasName: AliasName, AwsAccountId: AwsAccountId, ThemeId: RestrictiveResourceId): DeleteThemeAliasRequest = {
+  inline def apply(AliasName: AliasName, AwsAccountId: AwsAccountId, ThemeId: ShortRestrictiveResourceId): DeleteThemeAliasRequest = {
     val __obj = js.Dynamic.literal(AliasName = AliasName.asInstanceOf[js.Any], AwsAccountId = AwsAccountId.asInstanceOf[js.Any], ThemeId = ThemeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteThemeAliasRequest]
   }
@@ -35,6 +35,6 @@ object DeleteThemeAliasRequest {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    inline def setThemeId(value: RestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
+    inline def setThemeId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
   }
 }

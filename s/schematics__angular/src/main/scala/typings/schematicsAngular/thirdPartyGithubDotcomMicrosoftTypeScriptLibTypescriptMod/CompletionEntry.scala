@@ -51,6 +51,13 @@ trait CompletionEntry extends StObject {
   var source: js.UndefOr[java.lang.String] = js.undefined
   
   var sourceDisplay: js.UndefOr[js.Array[SymbolDisplayPart]] = js.undefined
+  
+  /**
+    * For API purposes.
+    * Included for non-string completions only when `includeSymbol: true` option is passed to `getCompletionsAtPosition`.
+    * @example Get declaration of completion: `symbol.valueDeclaration`
+    */
+  var symbol: js.UndefOr[Symbol] = js.undefined
 }
 object CompletionEntry {
   
@@ -121,5 +128,9 @@ object CompletionEntry {
     inline def setSourceDisplayVarargs(value: SymbolDisplayPart*): Self = StObject.set(x, "sourceDisplay", js.Array(value*))
     
     inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    
+    inline def setSymbol(value: Symbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
   }
 }

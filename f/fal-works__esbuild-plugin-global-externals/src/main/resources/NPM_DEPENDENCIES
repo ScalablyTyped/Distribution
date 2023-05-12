@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@fal-works/esbuild-plugin-global-externals" : "2.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@fal-works/esbuild-plugin-global-externals" : "2.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

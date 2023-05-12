@@ -7,7 +7,7 @@ import typings.reactNativeRazorpay.anon.ContactEmail
 import typings.reactNativeRazorpay.anon.Display
 import typings.reactNativeRazorpay.anon.Email
 import typings.reactNativeRazorpay.anon.Enabled
-import typings.reactNativeRazorpay.anon.Orderid
+import typings.reactNativeRazorpay.anon.Field
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -195,20 +195,12 @@ object mod {
     
     var description: String
     
-    var field: js.UndefOr[String] = js.undefined
-    
-    var metadata: Orderid
-    
-    var reason: String
-    
-    var source: String
-    
-    var step: String
+    var error: Field
   }
   object ErrorResponse {
     
-    inline def apply(code: Double, description: String, metadata: Orderid, reason: String, source: String, step: String): ErrorResponse = {
-      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
+    inline def apply(code: Double, description: String, error: Field): ErrorResponse = {
+      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorResponse]
     }
     
@@ -219,17 +211,7 @@ object mod {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
-      
-      inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
-      
-      inline def setMetadata(value: Orderid): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
-      
-      inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
-      
-      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
-      
-      inline def setStep(value: String): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setError(value: Field): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
   
@@ -237,21 +219,14 @@ object mod {
     
     var razorpay_order_id: String
     
-    var razorpay_payment: String
+    var razorpay_payment_id: String
     
     var razorpay_signature: String
-    
-    var status_code: Double
   }
   object SuccessResponse {
     
-    inline def apply(
-      razorpay_order_id: String,
-      razorpay_payment: String,
-      razorpay_signature: String,
-      status_code: Double
-    ): SuccessResponse = {
-      val __obj = js.Dynamic.literal(razorpay_order_id = razorpay_order_id.asInstanceOf[js.Any], razorpay_payment = razorpay_payment.asInstanceOf[js.Any], razorpay_signature = razorpay_signature.asInstanceOf[js.Any], status_code = status_code.asInstanceOf[js.Any])
+    inline def apply(razorpay_order_id: String, razorpay_payment_id: String, razorpay_signature: String): SuccessResponse = {
+      val __obj = js.Dynamic.literal(razorpay_order_id = razorpay_order_id.asInstanceOf[js.Any], razorpay_payment_id = razorpay_payment_id.asInstanceOf[js.Any], razorpay_signature = razorpay_signature.asInstanceOf[js.Any])
       __obj.asInstanceOf[SuccessResponse]
     }
     
@@ -260,11 +235,9 @@ object mod {
       
       inline def setRazorpay_order_id(value: String): Self = StObject.set(x, "razorpay_order_id", value.asInstanceOf[js.Any])
       
-      inline def setRazorpay_payment(value: String): Self = StObject.set(x, "razorpay_payment", value.asInstanceOf[js.Any])
+      inline def setRazorpay_payment_id(value: String): Self = StObject.set(x, "razorpay_payment_id", value.asInstanceOf[js.Any])
       
       inline def setRazorpay_signature(value: String): Self = StObject.set(x, "razorpay_signature", value.asInstanceOf[js.Any])
-      
-      inline def setStatus_code(value: Double): Self = StObject.set(x, "status_code", value.asInstanceOf[js.Any])
     }
   }
 }

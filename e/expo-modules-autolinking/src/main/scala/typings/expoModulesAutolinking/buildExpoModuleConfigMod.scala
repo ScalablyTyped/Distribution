@@ -1,5 +1,6 @@
 package typings.expoModulesAutolinking
 
+import typings.expoModulesAutolinking.buildTypesMod.AndroidGradlePluginDescriptor
 import typings.expoModulesAutolinking.buildTypesMod.RawExpoModuleConfig
 import typings.expoModulesAutolinking.buildTypesMod.SupportedPlatform
 import org.scalablytyped.runtime.StObject
@@ -21,6 +22,11 @@ object buildExpoModuleConfigMod {
       * Returns build.gradle file paths defined by the module author.
       */
     def androidGradlePaths(): js.Array[String] = js.native
+    
+    /**
+      * Returns gradle plugins descriptors defined by the module author.
+      */
+    def androidGradlePlugins(): js.Array[AndroidGradlePluginDescriptor] = js.native
     
     /**
       * Returns a list of names of Kotlin native modules classes to put to the generated package provider file.

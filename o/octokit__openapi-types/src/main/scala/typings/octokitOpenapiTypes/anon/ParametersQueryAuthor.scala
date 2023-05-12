@@ -8,11 +8,11 @@ trait ParametersQueryAuthor extends StObject {
   
   var parameters: QueryAuthor
   
-  var responses: `400404`
+  var responses: `404409`
 }
 object ParametersQueryAuthor {
   
-  inline def apply(parameters: QueryAuthor, responses: `400404`): ParametersQueryAuthor = {
+  inline def apply(parameters: QueryAuthor, responses: `404409`): ParametersQueryAuthor = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryAuthor]
   }
@@ -22,6 +22,6 @@ object ParametersQueryAuthor {
     
     inline def setParameters(value: QueryAuthor): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `400404`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `404409`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExtendedS3DestinationConfiguration extends StObject {
   
   /**
-    * The ARN of the S3 bucket. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
+    * The ARN of the S3 bucket. For more information, see Amazon Resource Names (ARNs) and Amazon Web Services Service Namespaces.
     */
   var BucketARN: typings.awsSdk.clientsFirehoseMod.BucketARN
   
@@ -32,7 +32,7 @@ trait ExtendedS3DestinationConfiguration extends StObject {
   var DataFormatConversionConfiguration: js.UndefOr[typings.awsSdk.clientsFirehoseMod.DataFormatConversionConfiguration] = js.undefined
   
   /**
-    * The configuration of the dynamic partitioning mechanism that creates smaller data sets from the streaming data by partitioning it based on partition keys. Currently, dynamic partitioning is only supported for Amazon S3 destinations. For more information, see https://docs.aws.amazon.com/firehose/latest/dev/dynamic-partitioning.html 
+    * The configuration of the dynamic partitioning mechanism that creates smaller data sets from the streaming data by partitioning it based on partition keys. Currently, dynamic partitioning is only supported for Amazon S3 destinations. 
     */
   var DynamicPartitioningConfiguration: js.UndefOr[typings.awsSdk.clientsFirehoseMod.DynamicPartitioningConfiguration] = js.undefined
   
@@ -57,7 +57,7 @@ trait ExtendedS3DestinationConfiguration extends StObject {
   var ProcessingConfiguration: js.UndefOr[typings.awsSdk.clientsFirehoseMod.ProcessingConfiguration] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the AWS credentials. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
+    * The Amazon Resource Name (ARN) of the Amazon Web Services credentials. For more information, see Amazon Resource Names (ARNs) and Amazon Web Services Service Namespaces.
     */
   var RoleARN: typings.awsSdk.clientsFirehoseMod.RoleARN
   

@@ -27,6 +27,11 @@ trait ReplicationSubnetGroup extends StObject {
   var Subnets: js.UndefOr[SubnetList] = js.undefined
   
   /**
+    * The IP addressing protocol supported by the subnet group. This is used by a replication instance with values such as IPv4 only or Dual-stack that supports both IPv4 and IPv6 addressing. IPv6 only is not yet supported.
+    */
+  var SupportedNetworkTypes: js.UndefOr[StringList] = js.undefined
+  
+  /**
     * The ID of the VPC.
     */
   var VpcId: js.UndefOr[String] = js.undefined
@@ -58,6 +63,12 @@ object ReplicationSubnetGroup {
     inline def setSubnetsUndefined: Self = StObject.set(x, "Subnets", js.undefined)
     
     inline def setSubnetsVarargs(value: Subnet*): Self = StObject.set(x, "Subnets", js.Array(value*))
+    
+    inline def setSupportedNetworkTypes(value: StringList): Self = StObject.set(x, "SupportedNetworkTypes", value.asInstanceOf[js.Any])
+    
+    inline def setSupportedNetworkTypesUndefined: Self = StObject.set(x, "SupportedNetworkTypes", js.undefined)
+    
+    inline def setSupportedNetworkTypesVarargs(value: String*): Self = StObject.set(x, "SupportedNetworkTypes", js.Array(value*))
     
     inline def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     

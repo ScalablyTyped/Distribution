@@ -1,6 +1,6 @@
 package typings.photoshop
 
-import typings.photoshop.domCoreModulesMod.ColorConversionModel
+import typings.photoshop.domImagingModuleMod.imaging.ComponentSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,32 +8,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object photoshopInts {
   
   @js.native
-  sealed trait `15`
+  sealed trait `-1`
     extends StObject
-       with ColorConversionModel
-  inline def `15`: `15` = 15.asInstanceOf[`15`]
+       with ComponentSize
+  inline def `-1`: `-1` = -1.asInstanceOf[`-1`]
   
   @js.native
   sealed trait `16`
     extends StObject
-       with ColorConversionModel
+       with ComponentSize
   inline def `16`: `16` = 16.asInstanceOf[`16`]
   
   @js.native
-  sealed trait `4`
+  sealed trait `32`
     extends StObject
-       with ColorConversionModel
-  inline def `4`: `4` = 4.asInstanceOf[`4`]
+       with ComponentSize
+  inline def `32`: `32` = 32.asInstanceOf[`32`]
   
   @js.native
-  sealed trait `5`
+  sealed trait `8`
     extends StObject
-       with ColorConversionModel
-  inline def `5`: `5` = 5.asInstanceOf[`5`]
-  
-  @js.native
-  sealed trait `6`
-    extends StObject
-       with ColorConversionModel
-  inline def `6`: `6` = 6.asInstanceOf[`6`]
+       with ComponentSize
+  inline def `8`: `8` = 8.asInstanceOf[`8`]
 }

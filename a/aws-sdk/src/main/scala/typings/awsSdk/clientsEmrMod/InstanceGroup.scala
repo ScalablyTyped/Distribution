@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InstanceGroup extends StObject {
   
   /**
-    * An automatic scaling policy for a core instance group or task instance group in an Amazon EMR cluster. The automatic scaling policy defines how an instance group dynamically adds and terminates EC2 instances in response to the value of a CloudWatch metric. See PutAutoScalingPolicy.
+    * An automatic scaling policy for a core instance group or task instance group in an Amazon EMR cluster. The automatic scaling policy defines how an instance group dynamically adds and terminates Amazon EC2 instances in response to the value of a CloudWatch metric. See PutAutoScalingPolicy.
     */
   var AutoScalingPolicy: js.UndefOr[AutoScalingPolicyDescription] = js.undefined
   
@@ -52,7 +52,7 @@ trait InstanceGroup extends StObject {
   var InstanceGroupType: js.UndefOr[typings.awsSdk.clientsEmrMod.InstanceGroupType] = js.undefined
   
   /**
-    * The EC2 instance type for all instances in the instance group.
+    * The Amazon EC2 instance type for all instances in the instance group.
     */
   var InstanceType: js.UndefOr[typings.awsSdk.clientsEmrMod.InstanceType] = js.undefined
   

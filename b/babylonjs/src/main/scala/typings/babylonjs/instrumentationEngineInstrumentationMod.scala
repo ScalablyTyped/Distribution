@@ -17,7 +17,7 @@ object instrumentationEngineInstrumentationMod {
     /**
       * Instantiates a new engine instrumentation.
       * This class can be used to get instrumentation data from a Babylon engine
-      * @see https://doc.babylonjs.com/how_to/optimizing_your_scene#engineinstrumentation
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/optimize_your_scene#engineinstrumentation
       * @param engine Defines the engine to instrument
       */
     def this(/**

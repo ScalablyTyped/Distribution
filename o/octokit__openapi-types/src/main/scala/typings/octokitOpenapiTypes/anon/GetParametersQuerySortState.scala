@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersQuerySortState extends StObject {
   
+  /** List milestones */
   var get: ParametersQuerySortState
   
+  /** Create a milestone */
   var post: RequestBodyContentApplicationjsonDueon
 }
 object GetParametersQuerySortState {

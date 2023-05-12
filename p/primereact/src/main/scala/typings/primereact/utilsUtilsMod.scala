@@ -227,7 +227,23 @@ object utilsUtilsMod {
     inline def findIndexInList(value: Any, list: js.Array[Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndexInList")(value.asInstanceOf[js.Any], list.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def findIndexInList(value: Any, list: js.Array[Any], dataKey: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndexInList")(value.asInstanceOf[js.Any], list.asInstanceOf[js.Any], dataKey.asInstanceOf[js.Any])).asInstanceOf[Double]
     
+    inline def getComponentDiffProps(component: Any): js.UndefOr[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponentDiffProps")(component.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Object]]
+    inline def getComponentDiffProps(component: Any, defaultProps: js.Object): js.UndefOr[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("getComponentDiffProps")(component.asInstanceOf[js.Any], defaultProps.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Object]]
+    
+    inline def getComponentProp(component: Any, prop: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getComponentProp")(component.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def getComponentProp(component: Any, prop: String, defaultProps: js.Object): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getComponentProp")(component.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], defaultProps.asInstanceOf[js.Any])).asInstanceOf[Any]
+    
+    inline def getComponentProps(component: Any): js.UndefOr[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponentProps")(component.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Object]]
+    inline def getComponentProps(component: Any, defaultProps: js.Object): js.UndefOr[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("getComponentProps")(component.asInstanceOf[js.Any], defaultProps.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Object]]
+    
+    inline def getDiffProps(props: js.Object, defaultProps: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("getDiffProps")(props.asInstanceOf[js.Any], defaultProps.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    
     inline def getJSXElement(obj: Any, params: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getJSXElement")(scala.List(obj.asInstanceOf[js.Any]).`++`(params.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+    
+    inline def getMergedProps(props: js.Object, defaultProps: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("getMergedProps")(props.asInstanceOf[js.Any], defaultProps.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    
+    inline def getProp(props: js.Object, prop: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getProp")(props.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def getProp(props: js.Object, prop: String, defaultProps: js.Object): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getProp")(props.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], defaultProps.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     inline def getPropValue(obj: Any, params: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getPropValue")(scala.List(obj.asInstanceOf[js.Any]).`++`(params.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
     
@@ -238,6 +254,8 @@ object utilsUtilsMod {
     inline def isFunction(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     inline def isNotEmpty(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotEmpty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    inline def isValidChild(child: Any, `type`: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidChild")(child.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     inline def removeAccents(str: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAccents")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     

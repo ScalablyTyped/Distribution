@@ -7,6 +7,8 @@ import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreElementMod.ElementSettings
 import typings.openui5.sapUiCoreLibraryMod.CSSSize
 import typings.openui5.sapUiCoreLibraryMod.HorizontalAlign
+import typings.openui5.sapUiCoreLibraryMod.IColumnHeaderMenu
+import typings.openui5.sapUiCoreLibraryMod.ID
 import typings.openui5.sapUiTableLibraryMod.SortOrder
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -268,6 +270,7 @@ object sapUiTableColumnMod {
     
     /**
       * @SINCE 1.33.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:columnMenuOpen columnMenuOpen} to attached listeners.
       *
@@ -427,6 +430,14 @@ object sapUiTableColumnMod {
       * @returns Value of property `hAlign`
       */
     def getHAlign(): HorizontalAlign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof HorizontalAlign * / any */ String) = js.native
+    
+    /**
+      * @SINCE 1.110
+      *
+      * ID of the element which is the current target of the association {@link #getHeaderMenu headerMenu}, or
+      * `null`.
+      */
+    def getHeaderMenu(): ID = js.native
     
     /**
       * Gets current value of property {@link #getHeaderSpan headerSpan}.
@@ -595,6 +606,8 @@ object sapUiTableColumnMod {
     def getTemplate(): typings.openui5.sapUiCoreControlMod.default | String = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns a template clone. It either finds an unused clone or clones a new one from the template.
       *
       * @returns Clone of the template, or `null` if no template is defined
@@ -897,6 +910,28 @@ object sapUiTableColumnMod {
       */
     sHAlign: HorizontalAlign): this.type = js.native
     
+    def setHeaderMenu(
+      /**
+      * ID of an element which becomes the new target of this headerMenu association; alternatively, an element
+      * instance may be given
+      */
+    oHeaderMenu: IColumnHeaderMenu
+    ): this.type = js.native
+    /**
+      * @SINCE 1.110
+      *
+      * Sets the associated {@link #getHeaderMenu headerMenu}.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setHeaderMenu(
+      /**
+      * ID of an element which becomes the new target of this headerMenu association; alternatively, an element
+      * instance may be given
+      */
+    oHeaderMenu: ID
+    ): this.type = js.native
+    
     /**
       * Sets a new value for property {@link #getHeaderSpan headerSpan}.
       *
@@ -1153,6 +1188,8 @@ object sapUiTableColumnMod {
     sWidth: CSSSize): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns whether the column should be rendered.
       *
       * @returns Returns `true`, if the column should be rendered
@@ -1296,6 +1333,13 @@ object sapUiTableColumnMod {
     var hAlign: js.UndefOr[
         HorizontalAlign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof HorizontalAlign * / any */ String) | PropertyBindingInfo
       ] = js.undefined
+    
+    /**
+      * @SINCE 1.110
+      *
+      * The menu that can be opened by the header element of this column.
+      */
+    var headerMenu: js.UndefOr[IColumnHeaderMenu | String] = js.undefined
     
     /**
       * If this property is set, a span is applied for the header. When moving columns, all columns which are
@@ -1490,6 +1534,10 @@ object sapUiTableColumnMod {
       ): Self = StObject.set(x, "hAlign", value.asInstanceOf[js.Any])
       
       inline def setHAlignUndefined: Self = StObject.set(x, "hAlign", js.undefined)
+      
+      inline def setHeaderMenu(value: IColumnHeaderMenu | String): Self = StObject.set(x, "headerMenu", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderMenuUndefined: Self = StObject.set(x, "headerMenu", js.undefined)
       
       inline def setHeaderSpan(value: Any | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "headerSpan", value.asInstanceOf[js.Any])
       

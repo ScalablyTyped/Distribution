@@ -16,7 +16,7 @@ object libIconsBoxPlotTwoToneMod extends Shortcut {
   @js.native
   trait BoxPlotTwoToneIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_BoxPlotTwoToneIconType: String = js.native

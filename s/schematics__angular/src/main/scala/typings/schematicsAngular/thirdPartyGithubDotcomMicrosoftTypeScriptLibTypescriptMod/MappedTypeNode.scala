@@ -10,6 +10,7 @@ trait MappedTypeNode
   extends StObject
      with TypeNode
      with Declaration
+     with LocalsContainer
      with HasType {
   
   @JSName("kind")

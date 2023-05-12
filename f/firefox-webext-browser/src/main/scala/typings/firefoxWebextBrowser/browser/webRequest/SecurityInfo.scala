@@ -29,23 +29,34 @@ trait SecurityInfo extends StObject {
   /** True if host uses Strict Transport Security and state is "secure". */
   var hsts: js.UndefOr[Boolean] = js.undefined
   
-  /** The domain name does not match the certificate domain. */
+  /**
+    * The domain name does not match the certificate domain.
+    * @deprecated Please use `SecurityInfo.overridableErrorCategory`.
+    */
   var isDomainMismatch: js.UndefOr[Boolean] = js.undefined
   
   var isExtendedValidation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The certificate is either expired or is not yet valid. See `CertificateInfo.validity` for start and end dates.
+    * @deprecated Please use `SecurityInfo.overridableErrorCategory`.
     */
   var isNotValidAtThisTime: js.UndefOr[Boolean] = js.undefined
   
+  /** @deprecated Please use `SecurityInfo.overridableErrorCategory`. */
   var isUntrusted: js.UndefOr[Boolean] = js.undefined
   
   /** The key exchange algorithm used in this request if state is "secure". */
   var keaGroupName: js.UndefOr[String] = js.undefined
   
+  /** The type of certificate error that was overridden for this connection, if any. */
+  var overridableErrorCategory: js.UndefOr[SecurityInfoOverridableErrorCategory] = js.undefined
+  
   /** Protocol version if state is "secure" */
   var protocolVersion: js.UndefOr[SecurityInfoProtocolVersion] = js.undefined
+  
+  /** The length (in bits) of the secret key. */
+  var secretKeyLength: js.UndefOr[Double] = js.undefined
   
   /** The signature scheme used in this request if state is "secure". */
   var signatureSchemeName: js.UndefOr[String] = js.undefined
@@ -109,9 +120,17 @@ object SecurityInfo {
     
     inline def setKeaGroupNameUndefined: Self = StObject.set(x, "keaGroupName", js.undefined)
     
+    inline def setOverridableErrorCategory(value: SecurityInfoOverridableErrorCategory): Self = StObject.set(x, "overridableErrorCategory", value.asInstanceOf[js.Any])
+    
+    inline def setOverridableErrorCategoryUndefined: Self = StObject.set(x, "overridableErrorCategory", js.undefined)
+    
     inline def setProtocolVersion(value: SecurityInfoProtocolVersion): Self = StObject.set(x, "protocolVersion", value.asInstanceOf[js.Any])
     
     inline def setProtocolVersionUndefined: Self = StObject.set(x, "protocolVersion", js.undefined)
+    
+    inline def setSecretKeyLength(value: Double): Self = StObject.set(x, "secretKeyLength", value.asInstanceOf[js.Any])
+    
+    inline def setSecretKeyLengthUndefined: Self = StObject.set(x, "secretKeyLength", js.undefined)
     
     inline def setSignatureSchemeName(value: String): Self = StObject.set(x, "signatureSchemeName", value.asInstanceOf[js.Any])
     

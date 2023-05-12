@@ -1,6 +1,10 @@
 package typings.inferno.distCoreTypesMod
 
 import typings.std.Window
+import typings.std.stdInts.`0x00`
+import typings.std.stdInts.`0x01`
+import typings.std.stdInts.`0x02`
+import typings.std.stdInts.`0x03`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,16 +18,16 @@ trait InfernoKeyboardEvent[T]
      with SemiSyntheticEvent[T] {
   
   /* standard dom */
-  val DOM_KEY_LOCATION_LEFT: Double = js.native
+  val DOM_KEY_LOCATION_LEFT: `0x01` = js.native
   
   /* standard dom */
-  val DOM_KEY_LOCATION_NUMPAD: Double = js.native
+  val DOM_KEY_LOCATION_NUMPAD: `0x03` = js.native
   
   /* standard dom */
-  val DOM_KEY_LOCATION_RIGHT: Double = js.native
+  val DOM_KEY_LOCATION_RIGHT: `0x02` = js.native
   
   /* standard dom */
-  val DOM_KEY_LOCATION_STANDARD: Double = js.native
+  val DOM_KEY_LOCATION_STANDARD: `0x00` = js.native
   
   /* standard dom */
   val altKey: Boolean = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for vanilla-tilt
 
-Typings are for version 1.7.3
+Typings are for version 1.8.0
 
 ## Library description:
 A smooth 3D tilt javascript library forked from Tilt.js

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WorkspaceTargets[TProjectType /* <: ProjectType */]
   extends StObject
-     with /* key */ StringDictionary[Any] {
+     with /* property */ StringDictionary[Any] {
   
   var `app-shell`: js.UndefOr[AppShellBuilderTarget] = js.undefined
   

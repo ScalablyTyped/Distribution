@@ -46,7 +46,13 @@ trait LazyCompilationDefaultBackendOptions extends StObject {
         /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
         ServerResponse[IncomingMessage]
       ]
-    ]) | ServerOptionsHttps | js.Function0[Instantiable0[Server]]
+    ]) | (ServerOptionsHttps[
+      Instantiable1[/* socket */ Socket, IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        ServerResponse[IncomingMessage]
+      ]
+    ]) | js.Function0[Instantiable0[Server]]
   ] = js.undefined
 }
 object LazyCompilationDefaultBackendOptions {
@@ -80,7 +86,13 @@ object LazyCompilationDefaultBackendOptions {
             /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
             ServerResponse[IncomingMessage]
           ]
-        ]) | ServerOptionsHttps | js.Function0[Instantiable0[Server]]
+        ]) | (ServerOptionsHttps[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]) | js.Function0[Instantiable0[Server]]
     ): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
     inline def setServerFunction0(value: () => Instantiable0[Server]): Self = StObject.set(x, "server", js.Any.fromFunction0(value))

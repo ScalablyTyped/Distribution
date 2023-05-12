@@ -85,7 +85,7 @@ object browserAction {
     var popup: String
     
     /** Optional. Limits the change to when a particular tab is selected. Automatically resets when the tab is closed.  */
-    var tabId: js.UndefOr[Double] = js.undefined
+    var tabId: js.UndefOr[Double | Null] = js.undefined
   }
   object PopupDetails {
     
@@ -101,6 +101,8 @@ object browserAction {
       
       inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
       
+      inline def setTabIdNull: Self = StObject.set(x, "tabId", null)
+      
       inline def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
     }
   }
@@ -108,7 +110,7 @@ object browserAction {
   trait TabDetails extends StObject {
     
     /** Optional. Specify the tab to get the information. If no tab is specified, the non-tab-specific information is returned.  */
-    var tabId: js.UndefOr[Double] = js.undefined
+    var tabId: js.UndefOr[Double | Null] = js.undefined
   }
   object TabDetails {
     
@@ -121,6 +123,8 @@ object browserAction {
     implicit open class MutableBuilder[Self <: TabDetails] (val x: Self) extends AnyVal {
       
       inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      
+      inline def setTabIdNull: Self = StObject.set(x, "tabId", null)
       
       inline def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
     }
@@ -164,7 +168,7 @@ object browserAction {
   trait TitleDetails extends StObject {
     
     /** Optional. Limits the change to when a particular tab is selected. Automatically resets when the tab is closed.  */
-    var tabId: js.UndefOr[Double] = js.undefined
+    var tabId: js.UndefOr[Double | Null] = js.undefined
     
     /** The string the browser action should display when moused over. */
     var title: String
@@ -180,6 +184,8 @@ object browserAction {
     implicit open class MutableBuilder[Self <: TitleDetails] (val x: Self) extends AnyVal {
       
       inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      
+      inline def setTabIdNull: Self = StObject.set(x, "tabId", null)
       
       inline def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
       

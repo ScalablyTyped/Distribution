@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* note: abstract class */ @JSImport("dynogels", "AWS.ConfigurationOptions")
 @js.native
 open class ConfigurationOptions ()
-  extends typings.awsSdk.mod.ConfigurationOptions
+  extends typings.awsSdk2Types.mod.ConfigurationOptions

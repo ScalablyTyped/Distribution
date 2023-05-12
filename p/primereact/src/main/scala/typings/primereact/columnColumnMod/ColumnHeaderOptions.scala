@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ColumnHeaderOptions extends StObject {
   
+  /**
+    * Additional properties passed to the body component.
+    */
   var props: Any
 }
 object ColumnHeaderOptions {

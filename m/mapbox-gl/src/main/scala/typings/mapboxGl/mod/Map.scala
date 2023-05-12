@@ -1,9 +1,9 @@
 package typings.mapboxGl.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.mapboxGl.anon.Content
 import typings.mapboxGl.anon.Data
 import typings.mapboxGl.anon.Diff
-import typings.mapboxGl.anon.PixelRatio
 import typings.mapboxGl.anon.layersArraystringundefine
 import typings.mapboxGl.anon.sourceLayerstringundefine
 import typings.mapboxGl.mapboxGlStrings.`bottom-left`
@@ -81,15 +81,15 @@ open class Map () extends Evented {
   def addControl(control: IControl, position: `top-right` | `top-left` | `bottom-right` | `bottom-left`): this.type = js.native
   
   def addImage(name: String, image: js.typedarray.ArrayBufferView): Unit = js.native
-  def addImage(name: String, image: js.typedarray.ArrayBufferView, options: PixelRatio): Unit = js.native
+  def addImage(name: String, image: js.typedarray.ArrayBufferView, options: Content): Unit = js.native
   def addImage(name: String, image: Data): Unit = js.native
-  def addImage(name: String, image: Data, options: PixelRatio): Unit = js.native
+  def addImage(name: String, image: Data, options: Content): Unit = js.native
   def addImage(name: String, image: HTMLImageElement): Unit = js.native
-  def addImage(name: String, image: HTMLImageElement, options: PixelRatio): Unit = js.native
+  def addImage(name: String, image: HTMLImageElement, options: Content): Unit = js.native
   def addImage(name: String, image: ImageBitmap): Unit = js.native
-  def addImage(name: String, image: ImageBitmap, options: PixelRatio): Unit = js.native
+  def addImage(name: String, image: ImageBitmap, options: Content): Unit = js.native
   def addImage(name: String, image: ImageData): Unit = js.native
-  def addImage(name: String, image: ImageData, options: PixelRatio): Unit = js.native
+  def addImage(name: String, image: ImageData, options: Content): Unit = js.native
   
   def addLayer(layer: AnyLayer): this.type = js.native
   def addLayer(layer: AnyLayer, before: String): this.type = js.native
@@ -185,6 +185,8 @@ open class Map () extends Evented {
   def getPaintProperty(layer: String, name: String): Any = js.native
   
   def getPitch(): Double = js.native
+  
+  def getProjection(): Projection = js.native
   
   def getRenderWorldCopies(): Boolean = js.native
   
@@ -1462,6 +1464,9 @@ open class Map () extends Evented {
   def setPitch(pitch: Double): this.type = js.native
   def setPitch(pitch: Double, eventData: EventData): this.type = js.native
   
+  def setProjection(projection: String): this.type = js.native
+  def setProjection(projection: Projection): this.type = js.native
+  
   def setRenderWorldCopies(): this.type = js.native
   def setRenderWorldCopies(renderWorldCopies: Boolean): this.type = js.native
   
@@ -1499,7 +1504,6 @@ open class Map () extends Evented {
     * the padding offsets.
     *
     * @name showPadding
-    * @type {boolean}
     * @instance
     * @memberof Map
     */

@@ -3,6 +3,7 @@ package typings.three.examplesJsmLoadersIfcloaderMod
 import org.scalablytyped.runtime.NumberDictionary
 import typings.three.anon.Children
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.Mesh
@@ -47,7 +48,7 @@ open class IFCManager () extends StObject {
     * - **removePrevious**: wether to remove the previous subset of this model with this material.
     * - **material**: (optional) wether to apply a material to the subset
     */
-  def createSubset(config: HighlightConfigOfModel): Unit | (Mesh[BufferGeometry, Material | js.Array[Material]]) = js.native
+  def createSubset(config: HighlightConfigOfModel): Unit | (Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) = js.native
   
   /**
     * Completely releases the WASM memory, thus drastically decreasing the memory use of the app.
@@ -78,7 +79,7 @@ open class IFCManager () extends StObject {
     * @geometry The geometry of the IFC model.
     * @faceIndex The index of the face of a geometry.You can easily get this index using the [Raycaster](https://threejs.org/docs/#api/en/core/Raycaster).
     */
-  def getExpressId(geometry: typings.three.srcThreeMod.BufferGeometry, faceIndex: Double): js.UndefOr[Double] = js.native
+  def getExpressId(geometry: typings.three.srcThreeMod.BufferGeometry[NormalBufferAttributes], faceIndex: Double): js.UndefOr[Double] = js.native
   
   /**
     * Gets the ifc type of the specified item.
@@ -133,8 +134,8 @@ open class IFCManager () extends StObject {
     * @modelID ID of the IFC model.
     * @material Material assigned to the subset (if any).
     */
-  def getSubset(modelID: Double): (Mesh[BufferGeometry, Material | js.Array[Material]]) | Null = js.native
-  def getSubset(modelID: Double, material: typings.three.srcThreeMod.Material): (Mesh[BufferGeometry, Material | js.Array[Material]]) | Null = js.native
+  def getSubset(modelID: Double): (Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) | Null = js.native
+  def getSubset(modelID: Double, material: typings.three.srcThreeMod.Material): (Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) | Null = js.native
   
   /**
     * Gets the properties of the type assigned to the element.

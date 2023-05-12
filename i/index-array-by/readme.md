@@ -1,7 +1,7 @@
 
 # Scala.js typings for index-array-by
 
-Typings are for version 1.3.3
+Typings are for version 1.4.1
 
 ## Library description:
 A utility function to index arrays by any criteria

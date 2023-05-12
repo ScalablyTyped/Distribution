@@ -8,21 +8,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NotebookSerializer extends StObject {
   
   /**
-    * Deserialize contents of a notebook file into the notebook data structure.
-    *
-    * @param content Contents of a notebook file.
-    * @param token A cancellation token.
-    * @return Notebook data or a thenable that resolves to such.
-    */
+  		 * Deserialize contents of a notebook file into the notebook data structure.
+  		 *
+  		 * @param content Contents of a notebook file.
+  		 * @param token A cancellation token.
+  		 * @return Notebook data or a thenable that resolves to such.
+  		 */
   def deserializeNotebook(content: js.typedarray.Uint8Array, token: CancellationToken): NotebookData | Thenable[NotebookData]
   
   /**
-    * Serialize notebook data into file contents.
-    *
-    * @param data A notebook data structure.
-    * @param token A cancellation token.
-    * @returns An array of bytes or a thenable that resolves to such.
-    */
+  		 * Serialize notebook data into file contents.
+  		 *
+  		 * @param data A notebook data structure.
+  		 * @param token A cancellation token.
+  		 * @returns An array of bytes or a thenable that resolves to such.
+  		 */
   def serializeNotebook(data: NotebookData, token: CancellationToken): js.typedarray.Uint8Array | Thenable[js.typedarray.Uint8Array]
 }
 object NotebookSerializer {

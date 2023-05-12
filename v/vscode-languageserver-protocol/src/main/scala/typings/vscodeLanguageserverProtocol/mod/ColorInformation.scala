@@ -19,7 +19,7 @@ object ColorInformation {
   ): typings.vscodeLanguageserverTypes.mod.ColorInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.ColorInformation]
   
   /**
-    * Checks whether the given literal conforms to the [ColorInformation](#ColorInformation) interface.
+    * Checks whether the given literal conforms to the {@link ColorInformation} interface.
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.ColorInformation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.ColorInformation */ Boolean]
 }

@@ -7,26 +7,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LocationLink extends StObject {
   
   /**
-    * Span of the origin of this link.
-    *
-    * Used as the underlined span for mouse definition hover. Defaults to the word range at
-    * the definition position.
-    */
+  		 * Span of the origin of this link.
+  		 *
+  		 * Used as the underlined span for mouse definition hover. Defaults to the word range at
+  		 * the definition position.
+  		 */
   var originSelectionRange: js.UndefOr[Range] = js.undefined
   
   /**
-    * The full target range of this link.
-    */
+  		 * The full target range of this link.
+  		 */
   var targetRange: Range
   
   /**
-    * The span of this link.
-    */
+  		 * The span of this link.
+  		 */
   var targetSelectionRange: js.UndefOr[Range] = js.undefined
   
   /**
-    * The target resource identifier of this link.
-    */
+  		 * The target resource identifier of this link.
+  		 */
   var targetUri: Uri
 }
 object LocationLink {

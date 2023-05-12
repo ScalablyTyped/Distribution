@@ -278,11 +278,11 @@ object anon {
   
   trait Unclipped extends StObject {
     
-    var _unclipped: js.Tuple3[Double, Double, Double]
+    var _unclipped: js.Tuple4[Double, Double, Double, Double]
   }
   object Unclipped {
     
-    inline def apply(_unclipped: js.Tuple3[Double, Double, Double]): Unclipped = {
+    inline def apply(_unclipped: js.Tuple4[Double, Double, Double, Double]): Unclipped = {
       val __obj = js.Dynamic.literal(_unclipped = _unclipped.asInstanceOf[js.Any])
       __obj.asInstanceOf[Unclipped]
     }
@@ -290,7 +290,7 @@ object anon {
     @scala.inline
     implicit open class MutableBuilder[Self <: Unclipped] (val x: Self) extends AnyVal {
       
-      inline def set_unclipped(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "_unclipped", value.asInstanceOf[js.Any])
+      inline def set_unclipped(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "_unclipped", value.asInstanceOf[js.Any])
     }
   }
 }

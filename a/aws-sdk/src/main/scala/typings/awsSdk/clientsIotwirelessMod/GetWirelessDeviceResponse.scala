@@ -37,6 +37,11 @@ trait GetWirelessDeviceResponse extends StObject {
   var Name: js.UndefOr[WirelessDeviceName] = js.undefined
   
   /**
+    * FPort values for the GNSS, stream, and ClockSync functions of the positioning information.
+    */
+  var Positioning: js.UndefOr[PositioningConfigStatus] = js.undefined
+  
+  /**
     * Sidewalk device object.
     */
   var Sidewalk: js.UndefOr[SidewalkDevice] = js.undefined
@@ -89,6 +94,10 @@ object GetWirelessDeviceResponse {
     inline def setName(value: WirelessDeviceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    
+    inline def setPositioning(value: PositioningConfigStatus): Self = StObject.set(x, "Positioning", value.asInstanceOf[js.Any])
+    
+    inline def setPositioningUndefined: Self = StObject.set(x, "Positioning", js.undefined)
     
     inline def setSidewalk(value: SidewalkDevice): Self = StObject.set(x, "Sidewalk", value.asInstanceOf[js.Any])
     

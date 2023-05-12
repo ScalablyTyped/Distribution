@@ -414,6 +414,8 @@ object sapMFacetFilterListMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:listClose listClose} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -425,6 +427,8 @@ object sapMFacetFilterListMod {
     mParameters: AllSelected): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:listOpen listOpen} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -440,6 +444,7 @@ object sapMFacetFilterListMod {
     
     /**
       * @SINCE 1.76
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:search search} to attached listeners.
       *

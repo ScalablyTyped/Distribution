@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AvailConfiguration extends StObject {
   
   /**
-    * Ad avail settings.
+    * Controls how SCTE-35 messages create cues. Splice Insert mode treats all segmentation signals traditionally. With Time Signal APOS mode only Time Signal Placement Opportunity and Break messages create segment breaks. With ESAM mode, signals are forwarded to an ESAM server for possible update.
     */
   var AvailSettings: js.UndefOr[typings.awsSdk.clientsMedialiveMod.AvailSettings] = js.undefined
 }

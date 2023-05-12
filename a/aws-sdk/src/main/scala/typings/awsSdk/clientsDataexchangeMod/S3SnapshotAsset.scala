@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait S3SnapshotAsset extends StObject {
   
   /**
-    * The size of the S3 object that is the object.
+    * The size of the Amazon S3 object that is the object.
     */
   var Size: doubleMin0
 }

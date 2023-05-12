@@ -6,24 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `578` extends StObject {
   
-  var secrets: js.Array[NameSelectedrepositoriesurl]
-  
-  var total_count: Double
+  var content: ApplicationjsonLogurl
 }
 object `578` {
   
-  inline def apply(secrets: js.Array[NameSelectedrepositoriesurl], total_count: Double): `578` = {
-    val __obj = js.Dynamic.literal(secrets = secrets.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
+  inline def apply(content: ApplicationjsonLogurl): `578` = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[`578`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `578`] (val x: Self) extends AnyVal {
     
-    inline def setSecrets(value: js.Array[NameSelectedrepositoriesurl]): Self = StObject.set(x, "secrets", value.asInstanceOf[js.Any])
-    
-    inline def setSecretsVarargs(value: NameSelectedrepositoriesurl*): Self = StObject.set(x, "secrets", js.Array(value*))
-    
-    inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
+    inline def setContent(value: ApplicationjsonLogurl): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }
 }

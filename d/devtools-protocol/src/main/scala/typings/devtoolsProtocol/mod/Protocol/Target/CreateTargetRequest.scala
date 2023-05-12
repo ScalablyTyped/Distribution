@@ -26,6 +26,11 @@ trait CreateTargetRequest extends StObject {
   var enableBeginFrameControl: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Whether to create the target of type "tab".
+    */
+  var forTab: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Frame height in DIP (headless chrome only).
     */
   var height: js.UndefOr[integer] = js.undefined
@@ -66,6 +71,10 @@ object CreateTargetRequest {
     inline def setEnableBeginFrameControl(value: Boolean): Self = StObject.set(x, "enableBeginFrameControl", value.asInstanceOf[js.Any])
     
     inline def setEnableBeginFrameControlUndefined: Self = StObject.set(x, "enableBeginFrameControl", js.undefined)
+    
+    inline def setForTab(value: Boolean): Self = StObject.set(x, "forTab", value.asInstanceOf[js.Any])
+    
+    inline def setForTabUndefined: Self = StObject.set(x, "forTab", js.undefined)
     
     inline def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

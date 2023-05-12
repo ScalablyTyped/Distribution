@@ -1,11 +1,10 @@
 package typings.hapiInert
 
-import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.hapiHapi.mod.Plugin
-import typings.hapiHapi.mod.ReqRefDefaults
-import typings.hapiHapi.mod.Request
-import typings.hapiHapi.mod.ResponseObject
+import typings.hapiHapi.libTypesPluginMod.Plugin
+import typings.hapiHapi.libTypesRequestMod.ReqRefDefaults
+import typings.hapiHapi.libTypesRequestMod.Request
+import typings.hapiHapi.libTypesResponseMod.ResponseObject
 import typings.hapiInert.anon.RelativeTo
 import typings.hapiInert.hapiInertBooleans.`false`
 import typings.hapiInert.hapiInertStrings.`inline`
@@ -16,11 +15,16 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
   
   @JSImport("@hapi/inert", JSImport.Namespace)
   @js.native
-  val ^ : Plugin[OptionalRegistrationOptions] = js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@hapi/inert", "plugin")
+  @js.native
+  def plugin: Plugin[OptionalRegistrationOptions, Unit] = js.native
+  inline def plugin_=(x: Plugin[OptionalRegistrationOptions, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plugin")(x.asInstanceOf[js.Any])
   
   trait DirectoryHandlerRouteObject extends StObject {
     
@@ -270,11 +274,6 @@ object mod extends Shortcut {
   }
   
   type RequestHandler[T] = js.Function1[/* request */ Request[ReqRefDefaults], T]
-  
-  type _To = Plugin[OptionalRegistrationOptions]
-  
-  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Plugin[OptionalRegistrationOptions] = ^
   
   /* augmented module */
   object hapiHapiAugmentingMod {

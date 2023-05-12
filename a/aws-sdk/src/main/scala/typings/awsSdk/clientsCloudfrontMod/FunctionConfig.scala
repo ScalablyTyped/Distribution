@@ -12,7 +12,7 @@ trait FunctionConfig extends StObject {
   var Comment: String
   
   /**
-    * The function’s runtime environment. The only valid value is cloudfront-js-1.0.
+    * The function's runtime environment. The only valid value is cloudfront-js-1.0.
     */
   var Runtime: FunctionRuntime
 }

@@ -34,22 +34,43 @@ object cssMod {
   @js.native
   val CLASS_UNSUPPORTED: String = js.native
   
-  inline def getFontParameters(fontSpec: String): FontParameters = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontParameters")(fontSpec.asInstanceOf[js.Any]).asInstanceOf[FontParameters]
+  inline def getFontParameters(fontSpec: String): FontParameters | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontParameters")(fontSpec.asInstanceOf[js.Any]).asInstanceOf[FontParameters | Null]
   
   trait FontParameters extends StObject {
     
+    /**
+      * Families.
+      */
     var families: js.Array[String]
     
+    /**
+      * Family.
+      */
     var family: String
     
+    /**
+      * LineHeight.
+      */
     var lineHeight: String
     
+    /**
+      * Size.
+      */
     var size: String
     
+    /**
+      * Style.
+      */
     var style: String
     
+    /**
+      * Variant.
+      */
     var variant: String
     
+    /**
+      * Weight.
+      */
     var weight: String
   }
   object FontParameters {

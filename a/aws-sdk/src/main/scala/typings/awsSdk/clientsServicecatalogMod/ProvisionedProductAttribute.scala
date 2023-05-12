@@ -92,12 +92,12 @@ trait ProvisionedProductAttribute extends StObject {
   var Type: js.UndefOr[ProvisionedProductType] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the IAM user.
+    * The Amazon Resource Name (ARN) of the user.
     */
   var UserArn: js.UndefOr[typings.awsSdk.clientsServicecatalogMod.UserArn] = js.undefined
   
   /**
-    * The ARN of the IAM user in the session. This ARN might contain a session ID.
+    * The ARN of the user in the session. This ARN might contain a session ID.
     */
   var UserArnSession: js.UndefOr[typings.awsSdk.clientsServicecatalogMod.UserArnSession] = js.undefined
 }

@@ -8,7 +8,7 @@ trait InputBoxProperties
   extends StObject
      with ComponentProperties {
   
-  var ariaLive: js.UndefOr[String] = js.undefined
+  var ariaLive: js.UndefOr[AriaLiveValue] = js.undefined
   
   var columns: js.UndefOr[Double] = js.undefined
   
@@ -72,7 +72,7 @@ object InputBoxProperties {
   @scala.inline
   implicit open class MutableBuilder[Self <: InputBoxProperties] (val x: Self) extends AnyVal {
     
-    inline def setAriaLive(value: String): Self = StObject.set(x, "ariaLive", value.asInstanceOf[js.Any])
+    inline def setAriaLive(value: AriaLiveValue): Self = StObject.set(x, "ariaLive", value.asInstanceOf[js.Any])
     
     inline def setAriaLiveUndefined: Self = StObject.set(x, "ariaLive", js.undefined)
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Resource extends StObject {
   
   /**
-    * The IAM access key details (IAM user information) of a user that engaged in the activity that prompted GuardDuty to generate a finding.
+    * The IAM access key details (user information) of a user that engaged in the activity that prompted GuardDuty to generate a finding.
     */
   var AccessKeyDetails: js.UndefOr[typings.awsSdk.clientsGuarddutyMod.AccessKeyDetails] = js.undefined
   
@@ -37,6 +37,21 @@ trait Resource extends StObject {
     * Details about the Kubernetes user and workload involved in a Kubernetes finding.
     */
   var KubernetesDetails: js.UndefOr[typings.awsSdk.clientsGuarddutyMod.KubernetesDetails] = js.undefined
+  
+  /**
+    * Contains information about the Lambda function that was involved in a finding.
+    */
+  var LambdaDetails: js.UndefOr[typings.awsSdk.clientsGuarddutyMod.LambdaDetails] = js.undefined
+  
+  /**
+    * Contains information about the database instance to which an anomalous login attempt was made.
+    */
+  var RdsDbInstanceDetails: js.UndefOr[typings.awsSdk.clientsGuarddutyMod.RdsDbInstanceDetails] = js.undefined
+  
+  /**
+    * Contains information about the user details through which anomalous login attempt was made.
+    */
+  var RdsDbUserDetails: js.UndefOr[typings.awsSdk.clientsGuarddutyMod.RdsDbUserDetails] = js.undefined
   
   /**
     * The type of Amazon Web Services resource.
@@ -85,6 +100,18 @@ object Resource {
     inline def setKubernetesDetails(value: KubernetesDetails): Self = StObject.set(x, "KubernetesDetails", value.asInstanceOf[js.Any])
     
     inline def setKubernetesDetailsUndefined: Self = StObject.set(x, "KubernetesDetails", js.undefined)
+    
+    inline def setLambdaDetails(value: LambdaDetails): Self = StObject.set(x, "LambdaDetails", value.asInstanceOf[js.Any])
+    
+    inline def setLambdaDetailsUndefined: Self = StObject.set(x, "LambdaDetails", js.undefined)
+    
+    inline def setRdsDbInstanceDetails(value: RdsDbInstanceDetails): Self = StObject.set(x, "RdsDbInstanceDetails", value.asInstanceOf[js.Any])
+    
+    inline def setRdsDbInstanceDetailsUndefined: Self = StObject.set(x, "RdsDbInstanceDetails", js.undefined)
+    
+    inline def setRdsDbUserDetails(value: RdsDbUserDetails): Self = StObject.set(x, "RdsDbUserDetails", value.asInstanceOf[js.Any])
+    
+    inline def setRdsDbUserDetailsUndefined: Self = StObject.set(x, "RdsDbUserDetails", js.undefined)
     
     inline def setResourceType(value: String): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     

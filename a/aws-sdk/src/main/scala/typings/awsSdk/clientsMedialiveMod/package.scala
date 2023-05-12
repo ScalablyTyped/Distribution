@@ -2,7 +2,6 @@ package typings.awsSdk.clientsMedialiveMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdk.awsSdkStrings.CORRECT_AUDIO
-import typings.awsSdk.awsSdkStrings.HD
 import typings.awsSdk.awsSdkStrings.MONTHS
 import typings.awsSdk.awsSdkStrings.NO_UPFRONT
 import typings.awsSdk.awsSdkStrings.ON_CUE_POINT_SCTE35
@@ -314,6 +313,20 @@ type DeviceSettingsSyncState = _DeviceSettingsSyncState | String
   - java.lang.String
 */
 type DeviceUpdateStatus = _DeviceUpdateStatus | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ALL_CHANNELS
+  - typings.awsSdk.awsSdkStrings.PROGRAM_1
+  - typings.awsSdk.awsSdkStrings.PROGRAM_2
+  - typings.awsSdk.awsSdkStrings.PROGRAM_3
+  - typings.awsSdk.awsSdkStrings.PROGRAM_4
+  - typings.awsSdk.awsSdkStrings.PROGRAM_5
+  - typings.awsSdk.awsSdkStrings.PROGRAM_6
+  - typings.awsSdk.awsSdkStrings.PROGRAM_7
+  - typings.awsSdk.awsSdkStrings.PROGRAM_8
+  - java.lang.String
+*/
+type DolbyEProgramSelection = _DolbyEProgramSelection | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SDT_FOLLOW
@@ -1206,7 +1219,12 @@ type InputDeviceThumbnail = Buffer | js.typedarray.Uint8Array | Blob | String | 
 */
 type InputDeviceTransferType = _InputDeviceTransferType | String
 
-type InputDeviceType = HD | String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.HD
+  - typings.awsSdk.awsSdkStrings.UHD
+  - java.lang.String
+*/
+type InputDeviceType = _InputDeviceType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AUTO
@@ -1635,6 +1653,21 @@ type NetworkInputServerValidation = _NetworkInputServerValidation | String
 type NielsenPcmToId3TaggingState = _NielsenPcmToId3TaggingState | String
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AMERICA_PUERTO_RICO
+  - typings.awsSdk.awsSdkStrings.US_ALASKA
+  - typings.awsSdk.awsSdkStrings.US_ARIZONA
+  - typings.awsSdk.awsSdkStrings.US_CENTRAL
+  - typings.awsSdk.awsSdkStrings.US_EASTERN
+  - typings.awsSdk.awsSdkStrings.US_HAWAII
+  - typings.awsSdk.awsSdkStrings.US_MOUNTAIN
+  - typings.awsSdk.awsSdkStrings.US_PACIFIC
+  - typings.awsSdk.awsSdkStrings.US_SAMOA
+  - typings.awsSdk.awsSdkStrings.UTC
+  - java.lang.String
+*/
+type NielsenWatermarkTimezones = _NielsenWatermarkTimezones | String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
@@ -1972,6 +2005,29 @@ type TemporalFilterPostFilterSharpening = _TemporalFilterPostFilterSharpening | 
 type TemporalFilterStrength = _TemporalFilterStrength | String
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.EXTRA_SMALL_10
+  - typings.awsSdk.awsSdkStrings.LARGE_48
+  - typings.awsSdk.awsSdkStrings.MEDIUM_32
+  - typings.awsSdk.awsSdkStrings.SMALL_16
+  - java.lang.String
+*/
+type TimecodeBurninFontSize = _TimecodeBurninFontSize | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.BOTTOM_CENTER
+  - typings.awsSdk.awsSdkStrings.BOTTOM_LEFT
+  - typings.awsSdk.awsSdkStrings.BOTTOM_RIGHT
+  - typings.awsSdk.awsSdkStrings.MIDDLE_CENTER
+  - typings.awsSdk.awsSdkStrings.MIDDLE_LEFT
+  - typings.awsSdk.awsSdkStrings.MIDDLE_RIGHT
+  - typings.awsSdk.awsSdkStrings.TOP_CENTER
+  - typings.awsSdk.awsSdkStrings.TOP_LEFT
+  - typings.awsSdk.awsSdkStrings.TOP_RIGHT
+  - java.lang.String
+*/
+type TimecodeBurninPosition = _TimecodeBurninPosition | String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EMBEDDED
   - typings.awsSdk.awsSdkStrings.SYSTEMCLOCK
   - typings.awsSdk.awsSdkStrings.ZEROBASED
@@ -2056,6 +2112,8 @@ type doubleMin0 = Double
 type doubleMin0Max1 = Double
 
 type doubleMin0Max100 = Double
+
+type doubleMin0Max5000 = Double
 
 type doubleMin1 = Double
 

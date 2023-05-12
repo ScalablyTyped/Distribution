@@ -1,6 +1,6 @@
 package typings.reactDayPicker.mod
 
-import typings.dateFns.mod.Locale
+import typings.dateFns.Locale
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.reactDayPicker.anon.RequiredClassNames

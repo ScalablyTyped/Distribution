@@ -1,7 +1,7 @@
 
 # Scala.js typings for glob-stream
 
-Typings are for version v6.1.0
+Typings are for version v8.0.0
 
 ## Library description:
 A Readable Stream interface over node-glob.

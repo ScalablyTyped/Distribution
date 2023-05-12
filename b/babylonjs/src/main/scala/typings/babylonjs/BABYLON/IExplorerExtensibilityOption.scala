@@ -12,6 +12,11 @@ trait IExplorerExtensibilityOption extends StObject {
   def action(entity: Any): Unit
   
   /**
+    * Keep popup open after click
+    */
+  var keepOpenAfterClick: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Define the option label
     */
   var label: String
@@ -27,6 +32,10 @@ object IExplorerExtensibilityOption {
   implicit open class MutableBuilder[Self <: IExplorerExtensibilityOption] (val x: Self) extends AnyVal {
     
     inline def setAction(value: Any => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
+    
+    inline def setKeepOpenAfterClick(value: Boolean): Self = StObject.set(x, "keepOpenAfterClick", value.asInstanceOf[js.Any])
+    
+    inline def setKeepOpenAfterClickUndefined: Self = StObject.set(x, "keepOpenAfterClick", js.undefined)
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }

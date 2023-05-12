@@ -1,8 +1,6 @@
 package typings.nginstackDatasource
 
-import typings.nginstackDatasource.anon.Children
 import typings.nginstackDatasource.anon.DerivedFrom
-import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,8 +65,7 @@ object libDataSourceColumnsMod {
     /* private */ var importAndMixin_ : Any = js.native
     
     def importFields(classKey: Double, prefix: String): Unit = js.native
-    def importFields(classKey: Double, prefix: String, opt_options: Children): Unit = js.native
-    def importFields(classKey: Double, prefix: String, opt_options: Record[Any, Any]): Unit = js.native
+    def importFields(classKey: Double, prefix: String, opt_options: Any): Unit = js.native
     
     def importVisibleFields(classKey: Double): Unit = js.native
     def importVisibleFields(classKey: Double, fieldNamesPrefix: String): Unit = js.native

@@ -56,6 +56,7 @@ import typings.csstype.mod.Property.ColumnGap
 import typings.csstype.mod.Property.Content
 import typings.csstype.mod.Property.Cursor
 import typings.csstype.mod.Property.Display
+import typings.csstype.mod.Property.Fill
 import typings.csstype.mod.Property.Flex
 import typings.csstype.mod.Property.FlexBasis
 import typings.csstype.mod.Property.FlexDirection
@@ -128,6 +129,12 @@ import typings.csstype.mod.Property.Position
 import typings.csstype.mod.Property.Resize
 import typings.csstype.mod.Property.Right
 import typings.csstype.mod.Property.RowGap
+import typings.csstype.mod.Property.Stroke
+import typings.csstype.mod.Property.StrokeDasharray
+import typings.csstype.mod.Property.StrokeDashoffset
+import typings.csstype.mod.Property.StrokeLinecap
+import typings.csstype.mod.Property.StrokeMiterlimit
+import typings.csstype.mod.Property.StrokeWidth
 import typings.csstype.mod.Property.TextAlign
 import typings.csstype.mod.Property.TextDecoration
 import typings.csstype.mod.Property.TextOverflow
@@ -172,7 +179,7 @@ object distSrcTypesEnhancersMod {
   
   type BoxPropValue = js.UndefOr[String | Double | `false` | Null]
   
-  /* Inlined std.Pick<csstype.csstype.StandardProperties<string & {} | 0, string & {}>, 'alignContent' | 'alignItems' | 'alignSelf' | 'animation' | 'animationDelay' | 'animationDirection' | 'animationDuration' | 'animationFillMode' | 'animationIterationCount' | 'animationName' | 'animationPlayState' | 'animationTimingFunction' | 'background' | 'backgroundBlendMode' | 'backgroundClip' | 'backgroundColor' | 'backgroundImage' | 'backgroundOrigin' | 'backgroundPosition' | 'backgroundRepeat' | 'backgroundSize' | 'border' | 'borderBottom' | 'borderBottomColor' | 'borderBottomLeftRadius' | 'borderBottomRightRadius' | 'borderBottomStyle' | 'borderBottomWidth' | 'borderColor' | 'borderLeft' | 'borderLeftColor' | 'borderLeftStyle' | 'borderLeftWidth' | 'borderRadius' | 'borderRight' | 'borderRightColor' | 'borderRightStyle' | 'borderRightWidth' | 'borderStyle' | 'borderTop' | 'borderTopColor' | 'borderTopLeftRadius' | 'borderTopRightRadius' | 'borderTopStyle' | 'borderTopWidth' | 'borderWidth' | 'bottom' | 'boxShadow' | 'boxSizing' | 'clear' | 'color' | 'columnGap' | 'content' | 'cursor' | 'display' | 'flex' | 'flexBasis' | 'flexDirection' | 'flexFlow' | 'flexGrow' | 'flexShrink' | 'flexWrap' | 'float' | 'font' | 'fontFamily' | 'fontSize' | 'fontStyle' | 'fontVariant' | 'fontWeight' | 'gap' | 'grid' | 'gridArea' | 'gridAutoColumns' | 'gridAutoFlow' | 'gridAutoRows' | 'gridColumn' | 'gridColumnEnd' | 'gridColumnStart' | 'gridRow' | 'gridRowEnd' | 'gridRowStart' | 'gridTemplate' | 'gridTemplateAreas' | 'gridTemplateColumns' | 'gridTemplateRows' | 'height' | 'justifyContent' | 'justifyItems' | 'justifySelf' | 'left' | 'letterSpacing' | 'lineHeight' | 'listStyle' | 'listStyleImage' | 'listStylePosition' | 'listStyleType' | 'margin' | 'marginBottom' | 'marginLeft' | 'marginRight' | 'marginTop' | 'maxHeight' | 'maxWidth' | 'minHeight' | 'minWidth' | 'opacity' | 'order' | 'outline' | 'overflow' | 'overflowX' | 'overflowY' | 'padding' | 'paddingBottom' | 'paddingLeft' | 'paddingRight' | 'paddingTop' | 'placeContent' | 'placeItems' | 'placeSelf' | 'pointerEvents' | 'position' | 'resize' | 'right' | 'rowGap' | 'textAlign' | 'textDecoration' | 'textOverflow' | 'textShadow' | 'textTransform' | 'top' | 'transform' | 'transformOrigin' | 'transition' | 'transitionDelay' | 'transitionDuration' | 'transitionProperty' | 'transitionTimingFunction' | 'userSelect' | 'verticalAlign' | 'visibility' | 'whiteSpace' | 'width' | 'wordBreak' | 'wordWrap' | 'zIndex'> & std.Pick<csstype.csstype.ObsoleteProperties<string & {} | 0, string & {}>, 'gridColumnGap' | 'gridGap' | 'gridRowGap'> */
+  /* Inlined std.Pick<csstype.csstype.StandardProperties<string & {} | 0, string & {}>, 'alignContent' | 'alignItems' | 'alignSelf' | 'animation' | 'animationDelay' | 'animationDirection' | 'animationDuration' | 'animationFillMode' | 'animationIterationCount' | 'animationName' | 'animationPlayState' | 'animationTimingFunction' | 'background' | 'backgroundBlendMode' | 'backgroundClip' | 'backgroundColor' | 'backgroundImage' | 'backgroundOrigin' | 'backgroundPosition' | 'backgroundRepeat' | 'backgroundSize' | 'border' | 'borderBottom' | 'borderBottomColor' | 'borderBottomLeftRadius' | 'borderBottomRightRadius' | 'borderBottomStyle' | 'borderBottomWidth' | 'borderColor' | 'borderLeft' | 'borderLeftColor' | 'borderLeftStyle' | 'borderLeftWidth' | 'borderRadius' | 'borderRight' | 'borderRightColor' | 'borderRightStyle' | 'borderRightWidth' | 'borderStyle' | 'borderTop' | 'borderTopColor' | 'borderTopLeftRadius' | 'borderTopRightRadius' | 'borderTopStyle' | 'borderTopWidth' | 'borderWidth' | 'bottom' | 'boxShadow' | 'boxSizing' | 'clear' | 'color' | 'columnGap' | 'content' | 'cursor' | 'display' | 'flex' | 'flexBasis' | 'flexDirection' | 'flexFlow' | 'flexGrow' | 'flexShrink' | 'flexWrap' | 'float' | 'font' | 'fontFamily' | 'fontSize' | 'fontStyle' | 'fontVariant' | 'fontWeight' | 'gap' | 'grid' | 'gridArea' | 'gridAutoColumns' | 'gridAutoFlow' | 'gridAutoRows' | 'gridColumn' | 'gridColumnEnd' | 'gridColumnStart' | 'gridRow' | 'gridRowEnd' | 'gridRowStart' | 'gridTemplate' | 'gridTemplateAreas' | 'gridTemplateColumns' | 'gridTemplateRows' | 'height' | 'justifyContent' | 'justifyItems' | 'justifySelf' | 'left' | 'letterSpacing' | 'lineHeight' | 'listStyle' | 'listStyleImage' | 'listStylePosition' | 'listStyleType' | 'margin' | 'marginBottom' | 'marginLeft' | 'marginRight' | 'marginTop' | 'maxHeight' | 'maxWidth' | 'minHeight' | 'minWidth' | 'opacity' | 'order' | 'outline' | 'overflow' | 'overflowX' | 'overflowY' | 'padding' | 'paddingBottom' | 'paddingLeft' | 'paddingRight' | 'paddingTop' | 'placeContent' | 'placeItems' | 'placeSelf' | 'pointerEvents' | 'position' | 'resize' | 'right' | 'rowGap' | 'textAlign' | 'textDecoration' | 'textOverflow' | 'textShadow' | 'textTransform' | 'top' | 'transform' | 'transformOrigin' | 'transition' | 'transitionDelay' | 'transitionDuration' | 'transitionProperty' | 'transitionTimingFunction' | 'userSelect' | 'verticalAlign' | 'visibility' | 'whiteSpace' | 'width' | 'wordBreak' | 'wordWrap' | 'zIndex'> & std.Pick<csstype.csstype.ObsoleteProperties<string & {} | 0, string & {}>, 'gridColumnGap' | 'gridGap' | 'gridRowGap'> & std.Pick<csstype.csstype.SvgProperties<string & {} | 0, string & {}>, 'fill' | 'stroke' | 'strokeDasharray' | 'strokeDashoffset' | 'strokeLinecap' | 'strokeMiterlimit' | 'strokeWidth'> */
   trait CssProps extends StObject {
     
     var alignContent: js.UndefOr[AlignContent] = js.undefined
@@ -284,6 +291,8 @@ object distSrcTypesEnhancersMod {
     var cursor: js.UndefOr[Cursor] = js.undefined
     
     var display: js.UndefOr[Display] = js.undefined
+    
+    var fill: js.UndefOr[Fill] = js.undefined
     
     var flex: js.UndefOr[Flex[String | `0`]] = js.undefined
     
@@ -428,6 +437,18 @@ object distSrcTypesEnhancersMod {
     var right: js.UndefOr[Right[String | `0`]] = js.undefined
     
     var rowGap: js.UndefOr[RowGap[String | `0`]] = js.undefined
+    
+    var stroke: js.UndefOr[Stroke] = js.undefined
+    
+    var strokeDasharray: js.UndefOr[StrokeDasharray[String | `0`]] = js.undefined
+    
+    var strokeDashoffset: js.UndefOr[StrokeDashoffset[String | `0`]] = js.undefined
+    
+    var strokeLinecap: js.UndefOr[StrokeLinecap] = js.undefined
+    
+    var strokeMiterlimit: js.UndefOr[StrokeMiterlimit] = js.undefined
+    
+    var strokeWidth: js.UndefOr[StrokeWidth[String | `0`]] = js.undefined
     
     var textAlign: js.UndefOr[TextAlign] = js.undefined
     
@@ -700,6 +721,10 @@ object distSrcTypesEnhancersMod {
       inline def setDisplay(value: Display): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
       inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+      
+      inline def setFill(value: Fill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
       inline def setFlex(value: Flex[String | `0`]): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
       
@@ -989,6 +1014,30 @@ object distSrcTypesEnhancersMod {
       
       inline def setRowGapUndefined: Self = StObject.set(x, "rowGap", js.undefined)
       
+      inline def setStroke(value: Stroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+      
+      inline def setStrokeDasharray(value: StrokeDasharray[String | `0`]): Self = StObject.set(x, "strokeDasharray", value.asInstanceOf[js.Any])
+      
+      inline def setStrokeDasharrayUndefined: Self = StObject.set(x, "strokeDasharray", js.undefined)
+      
+      inline def setStrokeDashoffset(value: StrokeDashoffset[String | `0`]): Self = StObject.set(x, "strokeDashoffset", value.asInstanceOf[js.Any])
+      
+      inline def setStrokeDashoffsetUndefined: Self = StObject.set(x, "strokeDashoffset", js.undefined)
+      
+      inline def setStrokeLinecap(value: StrokeLinecap): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
+      
+      inline def setStrokeLinecapUndefined: Self = StObject.set(x, "strokeLinecap", js.undefined)
+      
+      inline def setStrokeMiterlimit(value: StrokeMiterlimit): Self = StObject.set(x, "strokeMiterlimit", value.asInstanceOf[js.Any])
+      
+      inline def setStrokeMiterlimitUndefined: Self = StObject.set(x, "strokeMiterlimit", js.undefined)
+      
+      inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+      
+      inline def setStrokeWidth(value: StrokeWidth[String | `0`]): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+      
+      inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+      
       inline def setTextAlign(value: TextAlign): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
       
       inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
@@ -1103,7 +1152,7 @@ object distSrcTypesEnhancersMod {
     }
   }
   
-  /* Inlined ui-box.ui-box/dist/src/types/enhancers.BoxCssProps<ui-box.ui-box/dist/src/types/enhancers.CssProps> & {  marginX :ui-box.ui-box/dist/src/types/enhancers.BoxPropValue | undefined,   marginY :ui-box.ui-box/dist/src/types/enhancers.BoxPropValue | undefined,   paddingX :ui-box.ui-box/dist/src/types/enhancers.BoxPropValue | undefined,   paddingY :ui-box.ui-box/dist/src/types/enhancers.BoxPropValue | undefined,   clearfix :boolean | undefined,   selectors :{[selector: string] : ui-box.ui-box/dist/src/types/enhancers.BoxCssProps<ui-box.ui-box/dist/src/types/enhancers.CssProps>} | undefined} */
+  /* Inlined ui-box.ui-box/dist/src/types/enhancers.BoxCssProps<ui-box.ui-box/dist/src/types/enhancers.CssProps> & {  marginX :ui-box.ui-box/dist/src/types/enhancers.BoxPropValue | undefined,   marginY :ui-box.ui-box/dist/src/types/enhancers.BoxPropValue | undefined,   paddingX :ui-box.ui-box/dist/src/types/enhancers.BoxPropValue | undefined,   paddingY :ui-box.ui-box/dist/src/types/enhancers.BoxPropValue | undefined,   clearfix :boolean | undefined,   selectors :ui-box.ui-box/dist/src/types/enhancers.SelectorMap | undefined} */
   trait EnhancerProps extends StObject {
     
     var alignContent: js.UndefOr[AlignContent | Double | `false` | Null] = js.undefined
@@ -1217,6 +1266,8 @@ object distSrcTypesEnhancersMod {
     var cursor: js.UndefOr[Cursor | Double | `false` | Null] = js.undefined
     
     var display: js.UndefOr[Display | Double | `false` | Null] = js.undefined
+    
+    var fill: js.UndefOr[Fill | Double | `false` | Null] = js.undefined
     
     var flex: js.UndefOr[(Flex[String | `0`]) | Double | `false` | Null] = js.undefined
     
@@ -1370,7 +1421,19 @@ object distSrcTypesEnhancersMod {
     
     var rowGap: js.UndefOr[(RowGap[String | `0`]) | Double | `false` | Null] = js.undefined
     
-    var selectors: js.UndefOr[StringDictionary[BoxCssPropsCssProps]] = js.undefined
+    var selectors: js.UndefOr[SelectorMap] = js.undefined
+    
+    var stroke: js.UndefOr[Stroke | Double | `false` | Null] = js.undefined
+    
+    var strokeDasharray: js.UndefOr[(StrokeDasharray[String | `0`]) | Double | `false` | Null] = js.undefined
+    
+    var strokeDashoffset: js.UndefOr[(StrokeDashoffset[String | `0`]) | Double | `false` | Null] = js.undefined
+    
+    var strokeLinecap: js.UndefOr[StrokeLinecap | Double | `false` | Null] = js.undefined
+    
+    var strokeMiterlimit: js.UndefOr[StrokeMiterlimit | Double | `false` | Null] = js.undefined
+    
+    var strokeWidth: js.UndefOr[(StrokeWidth[String | `0`]) | Double | `false` | Null] = js.undefined
     
     var textAlign: js.UndefOr[TextAlign | Double | `false` | Null] = js.undefined
     
@@ -1757,6 +1820,12 @@ object distSrcTypesEnhancersMod {
       inline def setDisplayNull: Self = StObject.set(x, "display", null)
       
       inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+      
+      inline def setFill(value: Fill | Double | `false`): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      
+      inline def setFillNull: Self = StObject.set(x, "fill", null)
+      
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
       inline def setFlex(value: (Flex[String | `0`]) | Double | `false`): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
       
@@ -2214,9 +2283,45 @@ object distSrcTypesEnhancersMod {
       
       inline def setRowGapUndefined: Self = StObject.set(x, "rowGap", js.undefined)
       
-      inline def setSelectors(value: StringDictionary[BoxCssPropsCssProps]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
+      inline def setSelectors(value: SelectorMap): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
       
       inline def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
+      
+      inline def setStroke(value: Stroke | Double | `false`): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+      
+      inline def setStrokeDasharray(value: (StrokeDasharray[String | `0`]) | Double | `false`): Self = StObject.set(x, "strokeDasharray", value.asInstanceOf[js.Any])
+      
+      inline def setStrokeDasharrayNull: Self = StObject.set(x, "strokeDasharray", null)
+      
+      inline def setStrokeDasharrayUndefined: Self = StObject.set(x, "strokeDasharray", js.undefined)
+      
+      inline def setStrokeDashoffset(value: (StrokeDashoffset[String | `0`]) | Double | `false`): Self = StObject.set(x, "strokeDashoffset", value.asInstanceOf[js.Any])
+      
+      inline def setStrokeDashoffsetNull: Self = StObject.set(x, "strokeDashoffset", null)
+      
+      inline def setStrokeDashoffsetUndefined: Self = StObject.set(x, "strokeDashoffset", js.undefined)
+      
+      inline def setStrokeLinecap(value: StrokeLinecap | Double | `false`): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
+      
+      inline def setStrokeLinecapNull: Self = StObject.set(x, "strokeLinecap", null)
+      
+      inline def setStrokeLinecapUndefined: Self = StObject.set(x, "strokeLinecap", js.undefined)
+      
+      inline def setStrokeMiterlimit(value: StrokeMiterlimit | Double | `false`): Self = StObject.set(x, "strokeMiterlimit", value.asInstanceOf[js.Any])
+      
+      inline def setStrokeMiterlimitNull: Self = StObject.set(x, "strokeMiterlimit", null)
+      
+      inline def setStrokeMiterlimitUndefined: Self = StObject.set(x, "strokeMiterlimit", js.undefined)
+      
+      inline def setStrokeNull: Self = StObject.set(x, "stroke", null)
+      
+      inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+      
+      inline def setStrokeWidth(value: (StrokeWidth[String | `0`]) | Double | `false`): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+      
+      inline def setStrokeWidthNull: Self = StObject.set(x, "strokeWidth", null)
+      
+      inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
       
       inline def setTextAlign(value: TextAlign | Double | `false`): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
       
@@ -2357,4 +2462,24 @@ object distSrcTypesEnhancersMod {
   type PropTypesMapping = StringDictionary[Validator[Any]]
   
   type PropValidators = StringDictionary[js.Function1[/* value */ Any, js.UndefOr[String]]]
+  
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type SelectorMap = {[selector: string] : / * Inlined ui-box.ui-box/dist/src/types/enhancers.BoxCssProps<ui-box.ui-box/dist/src/types/enhancers.CssProps> * /
+  {  borderColor :csstype.csstype.Property.BorderColor | undefined | number | false | null | undefined,   gridTemplate :csstype.csstype.Property.GridTemplate | undefined | number | false | null | undefined,   backgroundImage :csstype.csstype.Property.BackgroundImage | undefined | number | false | null | undefined,   flexWrap :csstype.csstype.Property.FlexWrap | undefined | number | false | null | undefined,   width :csstype.csstype.Property.Width<string & {} | 0> | undefined | number | false | null | undefined,   borderTopWidth :csstype.csstype.Property.BorderTopWidth<string & {} | 0> | undefined | number | false | null | undefined,   fontVariant :csstype.csstype.Property.FontVariant | undefined | number | false | null | undefined,   textAlign :csstype.csstype.Property.TextAlign | undefined | number | false | null | undefined,   gridAutoColumns :csstype.csstype.Property.GridAutoColumns<string & {} | 0> | undefined | number | false | null | undefined,   background :csstype.csstype.Property.Background<string & {} | 0> | undefined | number | false | null | undefined,   gridAutoFlow :csstype.csstype.Property.GridAutoFlow | undefined | number | false | null | undefined,   gridTemplateAreas :csstype.csstype.Property.GridTemplateAreas | undefined | number | false | null | undefined,   strokeMiterlimit :csstype.csstype.Property.StrokeMiterlimit | undefined | number | false | null | undefined,   verticalAlign :csstype.csstype.Property.VerticalAlign<string & {} | 0> | undefined | number | false | null | undefined,   fontWeight :csstype.csstype.Property.FontWeight | undefined | number | false | null | undefined,   animation :csstype.csstype.Property.Animation<string & {}> | undefined | number | false | null | undefined,   lineHeight :csstype.csstype.Property.LineHeight<string & {} | 0> | undefined | number | false | null | undefined,   transformOrigin :csstype.csstype.Property.TransformOrigin<string & {} | 0> | undefined | number | false | null | undefined,   userSelect :csstype.csstype.Property.UserSelect | undefined | number | false | null | undefined,   visibility :csstype.csstype.Property.Visibility | undefined | number | false | null | undefined,   gridColumnGap :csstype.csstype.Property.GridColumnGap<string & {} | 0> | undefined | number | false | null | undefined,   backgroundSize :csstype.csstype.Property.BackgroundSize<string & {} | 0> | undefined | number | false | null | undefined,   borderTopRightRadius :csstype.csstype.Property.BorderTopRightRadius<string & {} | 0> | undefined | number | false | null | undefined,   borderLeftStyle :csstype.csstype.Property.BorderLeftStyle | undefined | number | false | null | undefined,   height :csstype.csstype.Property.Height<string & {} | 0> | undefined | number | false | null | undefined,   gridTemplateColumns :csstype.csstype.Property.GridTemplateColumns<string & {} | 0> | undefined | number | false | null | undefined,   wordBreak :csstype.csstype.Property.WordBreak | undefined | number | false | null | undefined,   paddingRight :csstype.csstype.Property.PaddingRight<string & {} | 0> | undefined | number | false | null | undefined,   animationDuration :csstype.csstype.Property.AnimationDuration<string & {}> | undefined | number | false | null | undefined,   fill :csstype.csstype.Property.Fill | undefined | number | false | null | undefined,   boxShadow :csstype.csstype.Property.BoxShadow | undefined | number | false | null | undefined,   textOverflow :csstype.csstype.Property.TextOverflow | undefined | number | false | null | undefined,   backgroundColor :csstype.csstype.Property.BackgroundColor | undefined | number | false | null | undefined,   color :csstype.csstype.Property.Color | undefined | number | false | null | undefined,   border :csstype.csstype.Property.Border<string & {} | 0> | undefined | number | false | null | undefined,   animationIterationCount :csstype.csstype.Property.AnimationIterationCount | undefined | number | false | null | undefined,   borderBottomWidth :csstype.csstype.Property.BorderBottomWidth<string & {} | 0> | undefined | number | false | null | undefined,   backgroundClip :csstype.csstype.Property.BackgroundClip | undefined | number | false | null | undefined,   overflowY :csstype.csstype.Property.OverflowY | undefined | number | false | null | undefined,   marginRight :csstype.csstype.Property.MarginRight<string & {} | 0> | undefined | number | false | null | undefined,   animationTimingFunction :csstype.csstype.Property.AnimationTimingFunction | undefined | number | false | null | undefined,   borderRightColor :csstype.csstype.Property.BorderRightColor | undefined | number | false | null | undefined,   flexFlow :csstype.csstype.Property.FlexFlow | undefined | number | false | null | undefined,   transitionDuration :csstype.csstype.Property.TransitionDuration<string & {}> | undefined | number | false | null | undefined,   order :csstype.csstype.Property.Order | undefined | number | false | null | undefined,   float :csstype.csstype.Property.Float | undefined | number | false | null | undefined,   backgroundOrigin :csstype.csstype.Property.BackgroundOrigin | undefined | number | false | null | undefined,   textShadow :csstype.csstype.Property.TextShadow | undefined | number | false | null | undefined,   borderStyle :csstype.csstype.Property.BorderStyle | undefined | number | false | null | undefined,   borderBottomStyle :csstype.csstype.Property.BorderBottomStyle | undefined | number | false | null | undefined,   borderLeft :csstype.csstype.Property.BorderLeft<string & {} | 0> | undefined | number | false | null | undefined,   justifyContent :csstype.csstype.Property.JustifyContent | undefined | number | false | null | undefined,   animationFillMode :csstype.csstype.Property.AnimationFillMode | undefined | number | false | null | undefined,   animationPlayState :csstype.csstype.Property.AnimationPlayState | undefined | number | false | null | undefined,   flexDirection :csstype.csstype.Property.FlexDirection | undefined | number | false | null | undefined,   cursor :csstype.csstype.Property.Cursor | undefined | number | false | null | undefined,   transitionDelay :csstype.csstype.Property.TransitionDelay<string & {}> | undefined | number | false | null | undefined,   zIndex :csstype.csstype.Property.ZIndex | undefined | number | false | null | undefined,   borderBottom :csstype.csstype.Property.BorderBottom<string & {} | 0> | undefined | number | false | null | undefined,   gridRow :csstype.csstype.Property.GridRow | undefined | number | false | null | undefined,   letterSpacing :csstype.csstype.Property.LetterSpacing<string & {} | 0> | undefined | number | false | null | undefined,   listStyleImage :csstype.csstype.Property.ListStyleImage | undefined | number | false | null | undefined,   alignContent :csstype.csstype.Property.AlignContent | undefined | number | false | null | undefined,   resize :csstype.csstype.Property.Resize | undefined | number | false | null | undefined,   strokeLinecap :csstype.csstype.Property.StrokeLinecap | undefined | number | false | null | undefined,   pointerEvents :csstype.csstype.Property.PointerEvents | undefined | number | false | null | undefined,   borderLeftWidth :csstype.csstype.Property.BorderLeftWidth<string & {} | 0> | undefined | number | false | null | undefined,   minHeight :csstype.csstype.Property.MinHeight<string & {} | 0> | undefined | number | false | null | undefined,   whiteSpace :csstype.csstype.Property.WhiteSpace | undefined | number | false | null | undefined,   position :csstype.csstype.Property.Position | undefined | number | false | null | undefined,   maxWidth :csstype.csstype.Property.MaxWidth<string & {} | 0> | undefined | number | false | null | undefined,   transition :csstype.csstype.Property.Transition<string & {}> | undefined | number | false | null | undefined,   gridTemplateRows :csstype.csstype.Property.GridTemplateRows<string & {} | 0> | undefined | number | false | null | undefined,   columnGap :csstype.csstype.Property.ColumnGap<string & {} | 0> | undefined | number | false | null | undefined,   wordWrap :csstype.csstype.Property.WordWrap | undefined | number | false | null | undefined,   fontStyle :csstype.csstype.Property.FontStyle | undefined | number | false | null | undefined,   margin :csstype.csstype.Property.Margin<string & {} | 0> | undefined | number | false | null | undefined,   right :csstype.csstype.Property.Right<string & {} | 0> | undefined | number | false | null | undefined,   display :csstype.csstype.Property.Display | undefined | number | false | null | undefined,   borderRightWidth :csstype.csstype.Property.BorderRightWidth<string & {} | 0> | undefined | number | false | null | undefined,   strokeWidth :csstype.csstype.Property.StrokeWidth<string & {} | 0> | undefined | number | false | null | undefined,   backgroundPosition :csstype.csstype.Property.BackgroundPosition<string & {} | 0> | undefined | number | false | null | undefined,   font :csstype.csstype.Property.Font | undefined | number | false | null | undefined,   listStyle :csstype.csstype.Property.ListStyle | undefined | number | false | null | undefined,   padding :csstype.csstype.Property.Padding<string & {} | 0> | undefined | number | false | null | undefined,   borderTopColor :csstype.csstype.Property.BorderTopColor | undefined | number | false | null | undefined,   animationDelay :csstype.csstype.Property.AnimationDelay<string & {}> | undefined | number | false | null | undefined,   maxHeight :csstype.csstype.Property.MaxHeight<string & {} | 0> | undefined | number | false | null | undefined,   marginTop :csstype.csstype.Property.MarginTop<string & {} | 0> | undefined | number | false | null | undefined,   flex :csstype.csstype.Property.Flex<string & {} | 0> | undefined | number | false | null | undefined,   boxSizing :csstype.csstype.Property.BoxSizing | undefined | number | false | null | undefined,   strokeDashoffset :csstype.csstype.Property.StrokeDashoffset<string & {} | 0> | undefined | number | false | null | undefined,   borderRight :csstype.csstype.Property.BorderRight<string & {} | 0> | undefined | number | false | null | undefined,   flexGrow :csstype.csstype.Property.FlexGrow | undefined | number | false | null | undefined,   listStylePosition :csstype.csstype.Property.ListStylePosition | undefined | number | false | null | undefined,   rowGap :csstype.csstype.Property.RowGap<string & {} | 0> | undefined | number | false | null | undefined,   flexBasis :csstype.csstype.Property.FlexBasis<string & {} | 0> | undefined | number | false | null | undefined,   transform :csstype.csstype.Property.Transform | undefined | number | false | null | undefined,   justifyItems :csstype.csstype.Property.JustifyItems | undefined | number | false | null | undefined,   content :csstype.csstype.Property.Content | undefined | number | false | null | undefined,   textTransform :csstype.csstype.Property.TextTransform | undefined | number | false | null | undefined,   backgroundBlendMode :csstype.csstype.Property.BackgroundBlendMode | undefined | number | false | null | undefined,   justifySelf :csstype.csstype.Property.JustifySelf | undefined | number | false | null | undefined,   placeItems :csstype.csstype.Property.PlaceItems | undefined | number | false | null | undefined,   borderLeftColor :csstype.csstype.Property.BorderLeftColor | undefined | number | false | null | undefined,   gridColumn :csstype.csstype.Property.GridColumn | undefined | number | false | null | undefined,   overflow :csstype.csstype.Property.Overflow | undefined | number | false | null | undefined,   gridColumnStart :csstype.csstype.Property.GridColumnStart | undefined | number | false | null | undefined,   paddingBottom :csstype.csstype.Property.PaddingBottom<string & {} | 0> | undefined | number | false | null | undefined,   fontSize :csstype.csstype.Property.FontSize<string & {} | 0> | undefined | number | false | null | undefined,   paddingTop :csstype.csstype.Property.PaddingTop<string & {} | 0> | undefined | number | false | null | undefined,   transitionProperty :csstype.csstype.Property.TransitionProperty | undefined | number | false | null | undefined,   alignItems :csstype.csstype.Property.AlignItems | undefined | number | false | null | undefined,   animationName :csstype.csstype.Property.AnimationName | undefined | number | false | null | undefined,   listStyleType :csstype.csstype.Property.ListStyleType | undefined | number | false | null | undefined,   gridRowGap :csstype.csstype.Property.GridRowGap<string & {} | 0> | undefined | number | false | null | undefined,   borderWidth :csstype.csstype.Property.BorderWidth<string & {} | 0> | undefined | number | false | null | undefined,   left :csstype.csstype.Property.Left<string & {} | 0> | undefined | number | false | null | undefined,   animationDirection :csstype.csstype.Property.AnimationDirection | undefined | number | false | null | undefined,   marginBottom :csstype.csstype.Property.MarginBottom<string & {} | 0> | undefined | number | false | null | undefined,   placeContent :csstype.csstype.Property.PlaceContent | undefined | number | false | null | undefined,   bottom :csstype.csstype.Property.Bottom<string & {} | 0> | undefined | number | false | null | undefined,   stroke :csstype.csstype.Property.Stroke | undefined | number | false | null | undefined,   borderRadius :csstype.csstype.Property.BorderRadius<string & {} | 0> | undefined | number | false | null | undefined,   backgroundRepeat :csstype.csstype.Property.BackgroundRepeat | undefined | number | false | null | undefined,   alignSelf :csstype.csstype.Property.AlignSelf | undefined | number | false | null | undefined,   borderBottomLeftRadius :csstype.csstype.Property.BorderBottomLeftRadius<string & {} | 0> | undefined | number | false | null | undefined,   transitionTimingFunction :csstype.csstype.Property.TransitionTimingFunction | undefined | number | false | null | undefined,   borderTop :csstype.csstype.Property.BorderTop<string & {} | 0> | undefined | number | false | null | undefined,   minWidth :csstype.csstype.Property.MinWidth<string & {} | 0> | undefined | number | false | null | undefined,   borderBottomRightRadius :csstype.csstype.Property.BorderBottomRightRadius<string & {} | 0> | undefined | number | false | null | undefined,   marginLeft :csstype.csstype.Property.MarginLeft<string & {} | 0> | undefined | number | false | null | undefined,   gridArea :csstype.csstype.Property.GridArea | undefined | number | false | null | undefined,   gridRowStart :csstype.csstype.Property.GridRowStart | undefined | number | false | null | undefined,   gridColumnEnd :csstype.csstype.Property.GridColumnEnd | undefined | number | false | null | undefined,   overflowX :csstype.csstype.Property.OverflowX | undefined | number | false | null | undefined,   placeSelf :csstype.csstype.Property.PlaceSelf | undefined | number | false | null | undefined,   top :csstype.csstype.Property.Top<string & {} | 0> | undefined | number | false | null | undefined,   textDecoration :csstype.csstype.Property.TextDecoration<string & {} | 0> | undefined | number | false | null | undefined,   borderRightStyle :csstype.csstype.Property.BorderRightStyle | undefined | number | false | null | undefined,   grid :csstype.csstype.Property.Grid | undefined | number | false | null | undefined,   flexShrink :csstype.csstype.Property.FlexShrink | undefined | number | false | null | undefined,   strokeDasharray :csstype.csstype.Property.StrokeDasharray<string & {} | 0> | undefined | number | false | null | undefined,   gridGap :csstype.csstype.Property.GridGap<string & {} | 0> | undefined | number | false | null | undefined,   gap :csstype.csstype.Property.Gap<string & {} | 0> | undefined | number | false | null | undefined,   borderBottomColor :csstype.csstype.Property.BorderBottomColor | undefined | number | false | null | undefined,   borderTopLeftRadius :csstype.csstype.Property.BorderTopLeftRadius<string & {} | 0> | undefined | number | false | null | undefined,   gridAutoRows :csstype.csstype.Property.GridAutoRows<string & {} | 0> | undefined | number | false | null | undefined,   opacity :csstype.csstype.Property.Opacity | undefined | number | false | null | undefined,   outline :csstype.csstype.Property.Outline<string & {} | 0> | undefined | number | false | null | undefined,   clear :csstype.csstype.Property.Clear | undefined | number | false | null | undefined,   paddingLeft :csstype.csstype.Property.PaddingLeft<string & {} | 0> | undefined | number | false | null | undefined,   gridRowEnd :csstype.csstype.Property.GridRowEnd | undefined | number | false | null | undefined,   borderTopStyle :csstype.csstype.Property.BorderTopStyle | undefined | number | false | null | undefined,   fontFamily :csstype.csstype.Property.FontFamily | undefined | number | false | null | undefined} | ui-box.ui-box/dist/src/types/enhancers.SelectorMap}
+  }}}
+  to avoid circular code involving: 
+  - ui-box.ui-box/dist/src/types/enhancers.SelectorMap
+  */
+  trait SelectorMap
+    extends StObject
+       with /* selector */ StringDictionary[BoxCssPropsCssProps | SelectorMap]
+  object SelectorMap {
+    
+    inline def apply(): SelectorMap = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SelectorMap]
+    }
+  }
 }

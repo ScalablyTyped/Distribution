@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait PlaidLinkOptionsWithPublicKey
   extends StObject
-     with CommonPlaidLinkOptions
+     with CommonPlaidLinkOptions[PlaidLinkOnSuccess]
      with PlaidLinkOptions {
   
   var accountSubtypes: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined

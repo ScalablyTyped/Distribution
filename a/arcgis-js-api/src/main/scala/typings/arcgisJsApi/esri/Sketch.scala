@@ -108,6 +108,13 @@ trait Sketch
   def delete(): scala.Unit = js.native
   
   /**
+    * Duplicates current graphics used in the update workflow and automatically adds them to the associated layer
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#duplicate)
+    */
+  def duplicate(): scala.Unit = js.native
+  
+  /**
     * The Sketch widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#iconClass)

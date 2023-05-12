@@ -1,7 +1,7 @@
 
 # Scala.js typings for cucumber__messages
 
-Typings are for version 20.0.0
+Typings are for version 22.0.0
 
 ## Library description:
 JSON schema-based messages for Cucumber's inter-process communication

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PiiOutputDataConfig extends StObject {
   
   /**
-    * ID for the AWS Key Management Service (KMS) key that Amazon Comprehend uses to encrypt the output results from an analysis job.
+    * ID for the Amazon Web Services Key Management Service (KMS) key that Amazon Comprehend uses to encrypt the output results from an analysis job.
     */
   var KmsKeyId: js.UndefOr[typings.awsSdk.clientsComprehendMod.KmsKeyId] = js.undefined
   

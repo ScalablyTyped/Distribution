@@ -22,9 +22,19 @@ trait Frame extends StObject {
   var lineNumber: Double
   
   /**
+    * Method flags. E.g. `Java.ACC_PUBLIC | Java.ACC_STATIC`.
+    */
+  var methodFlags: Double
+  
+  /**
     * Method name, e.g. `"loopOnce"`.
     */
   var methodName: String
+  
+  /**
+    * Where the code is from, i.e. the filesystem path to the `.dex` on Android.
+    */
+  var origin: String
   
   /**
     * Signature, e.g. `"Landroid/os/Looper;,loopOnce,(Landroid/os/Looper;JI)Z"`.
@@ -33,8 +43,16 @@ trait Frame extends StObject {
 }
 object Frame {
   
-  inline def apply(className: String, fileName: String, lineNumber: Double, methodName: String, signature: String): Frame = {
-    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
+  inline def apply(
+    className: String,
+    fileName: String,
+    lineNumber: Double,
+    methodFlags: Double,
+    methodName: String,
+    origin: String,
+    signature: String
+  ): Frame = {
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any], methodFlags = methodFlags.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
     __obj.asInstanceOf[Frame]
   }
   
@@ -47,7 +65,11 @@ object Frame {
     
     inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
     
+    inline def setMethodFlags(value: Double): Self = StObject.set(x, "methodFlags", value.asInstanceOf[js.Any])
+    
     inline def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
+    
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
   }

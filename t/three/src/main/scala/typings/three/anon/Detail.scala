@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Detail extends StObject {
   
-  var detail: Double
+  val detail: Double
   
-  var indices: js.Array[Double]
+  val indices: js.Array[Double]
   
-  var radius: Double
+  val radius: Double
   
-  var vertices: js.Array[Double]
+  val vertices: js.Array[Double]
 }
 object Detail {
   

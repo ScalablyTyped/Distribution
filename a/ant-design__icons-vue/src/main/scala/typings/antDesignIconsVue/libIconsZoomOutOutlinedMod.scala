@@ -16,7 +16,7 @@ object libIconsZoomOutOutlinedMod extends Shortcut {
   @js.native
   trait ZoomOutOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_ZoomOutOutlinedIconType: String = js.native

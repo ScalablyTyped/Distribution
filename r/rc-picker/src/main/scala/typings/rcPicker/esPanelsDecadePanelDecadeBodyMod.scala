@@ -1,6 +1,10 @@
 package typings.rcPicker
 
 import typings.rcPicker.esGenerateMod.GenerateConfig
+import typings.rcPicker.esInterfaceMod.CellRender
+import typings.rcPicker.esInterfaceMod.CellRenderInfo
+import typings.rcPicker.esInterfaceMod.Locale
+import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,9 +24,13 @@ object esPanelsDecadePanelDecadeBodyMod {
   
   trait YearBodyProps[DateType] extends StObject {
     
+    var cellRender: js.UndefOr[CellRender[DateType, DateType]] = js.undefined
+    
     var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.undefined
     
     var generateConfig: GenerateConfig[DateType]
+    
+    var locale: Locale
     
     def onSelect(value: DateType): Unit
     
@@ -34,22 +42,29 @@ object esPanelsDecadePanelDecadeBodyMod {
     
     inline def apply[DateType](
       generateConfig: GenerateConfig[DateType],
+      locale: Locale,
       onSelect: DateType => Unit,
       prefixCls: String,
       viewDate: DateType
     ): YearBodyProps[DateType] = {
-      val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], onSelect = js.Any.fromFunction1(onSelect), prefixCls = prefixCls.asInstanceOf[js.Any], viewDate = viewDate.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], onSelect = js.Any.fromFunction1(onSelect), prefixCls = prefixCls.asInstanceOf[js.Any], viewDate = viewDate.asInstanceOf[js.Any])
       __obj.asInstanceOf[YearBodyProps[DateType]]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: YearBodyProps[?], DateType] (val x: Self & YearBodyProps[DateType]) extends AnyVal {
       
+      inline def setCellRender(value: (DateType, /* info */ CellRenderInfo[DateType]) => ReactNode): Self = StObject.set(x, "cellRender", js.Any.fromFunction2(value))
+      
+      inline def setCellRenderUndefined: Self = StObject.set(x, "cellRender", js.undefined)
+      
       inline def setDisabledDate(value: /* date */ DateType => Boolean): Self = StObject.set(x, "disabledDate", js.Any.fromFunction1(value))
       
       inline def setDisabledDateUndefined: Self = StObject.set(x, "disabledDate", js.undefined)
       
       inline def setGenerateConfig(value: GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
+      
+      inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
       inline def setOnSelect(value: DateType => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       

@@ -12,6 +12,11 @@ trait DescribeBotVersionResponse extends StObject {
   var botId: js.UndefOr[Id] = js.undefined
   
   /**
+    * The members of bot network in the version that was described.
+    */
+  var botMembers: js.UndefOr[BotMembers] = js.undefined
+  
+  /**
     * The name of the bot that contains the version.
     */
   var botName: js.UndefOr[Name] = js.undefined
@@ -22,7 +27,12 @@ trait DescribeBotVersionResponse extends StObject {
   var botStatus: js.UndefOr[BotStatus] = js.undefined
   
   /**
-    * The version of the bot to describe.
+    * The type of the bot in the version that was described.
+    */
+  var botType: js.UndefOr[BotType] = js.undefined
+  
+  /**
+    * The version of the bot that was described.
     */
   var botVersion: js.UndefOr[NumericalBotVersion] = js.undefined
   
@@ -52,6 +62,11 @@ trait DescribeBotVersionResponse extends StObject {
   var idleSessionTTLInSeconds: js.UndefOr[SessionTTL] = js.undefined
   
   /**
+    * A list of the networks to which the bot version you described belongs.
+    */
+  var parentBotNetworks: js.UndefOr[ParentBotNetworks] = js.undefined
+  
+  /**
     * The Amazon Resource Name (ARN) of an IAM role that has permission to access the bot version.
     */
   var roleArn: js.UndefOr[RoleArn] = js.undefined
@@ -70,6 +85,12 @@ object DescribeBotVersionResponse {
     
     inline def setBotIdUndefined: Self = StObject.set(x, "botId", js.undefined)
     
+    inline def setBotMembers(value: BotMembers): Self = StObject.set(x, "botMembers", value.asInstanceOf[js.Any])
+    
+    inline def setBotMembersUndefined: Self = StObject.set(x, "botMembers", js.undefined)
+    
+    inline def setBotMembersVarargs(value: BotMember*): Self = StObject.set(x, "botMembers", js.Array(value*))
+    
     inline def setBotName(value: Name): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
     
     inline def setBotNameUndefined: Self = StObject.set(x, "botName", js.undefined)
@@ -77,6 +98,10 @@ object DescribeBotVersionResponse {
     inline def setBotStatus(value: BotStatus): Self = StObject.set(x, "botStatus", value.asInstanceOf[js.Any])
     
     inline def setBotStatusUndefined: Self = StObject.set(x, "botStatus", js.undefined)
+    
+    inline def setBotType(value: BotType): Self = StObject.set(x, "botType", value.asInstanceOf[js.Any])
+    
+    inline def setBotTypeUndefined: Self = StObject.set(x, "botType", js.undefined)
     
     inline def setBotVersion(value: NumericalBotVersion): Self = StObject.set(x, "botVersion", value.asInstanceOf[js.Any])
     
@@ -103,6 +128,12 @@ object DescribeBotVersionResponse {
     inline def setIdleSessionTTLInSeconds(value: SessionTTL): Self = StObject.set(x, "idleSessionTTLInSeconds", value.asInstanceOf[js.Any])
     
     inline def setIdleSessionTTLInSecondsUndefined: Self = StObject.set(x, "idleSessionTTLInSeconds", js.undefined)
+    
+    inline def setParentBotNetworks(value: ParentBotNetworks): Self = StObject.set(x, "parentBotNetworks", value.asInstanceOf[js.Any])
+    
+    inline def setParentBotNetworksUndefined: Self = StObject.set(x, "parentBotNetworks", js.undefined)
+    
+    inline def setParentBotNetworksVarargs(value: ParentBotNetwork*): Self = StObject.set(x, "parentBotNetworks", js.Array(value*))
     
     inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     

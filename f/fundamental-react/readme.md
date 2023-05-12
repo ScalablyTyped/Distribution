@@ -1,7 +1,7 @@
 
 # Scala.js typings for fundamental-react
 
-Typings are for version 0.13
+Typings are for version 0.14
 
 ## Library description:
 SAP Fundamental Library, implemented in React

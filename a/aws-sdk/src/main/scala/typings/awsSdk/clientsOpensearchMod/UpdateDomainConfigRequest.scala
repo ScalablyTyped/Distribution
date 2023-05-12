@@ -12,7 +12,7 @@ trait UpdateDomainConfigRequest extends StObject {
   var AccessPolicies: js.UndefOr[PolicyDocument] = js.undefined
   
   /**
-    * Key-value pairs to specify advanced configuration options. The following key-value pairs are supported:    "rest.action.multi.allow_explicit_index": "true" | "false" - Note the use of a string rather than a boolean. Specifies whether explicit references to indexes are allowed inside the body of HTTP requests. If you want to configure access policies for domain sub-resources, such as specific indexes and domain APIs, you must disable this property. Default is true.    "indices.fielddata.cache.size": "80"  - Note the use of a string rather than a boolean. Specifies the percentage of heap space allocated to field data. Default is unbounded.    "indices.query.bool.max_clause_count": "1024" - Note the use of a string rather than a boolean. Specifies the maximum number of clauses allowed in a Lucene boolean query. Default is 1,024. Queries with more than the permitted number of clauses result in a TooManyClauses error.    "override_main_response_version": "true" | "false" - Note the use of a string rather than a boolean. Specifies whether the domain reports its version as 7.10 to allow Elasticsearch OSS clients and plugins to continue working with it. Default is false when creating a domain and true when upgrading a domain.   For more information, see Advanced cluster parameters.
+    * Key-value pairs to specify advanced configuration options. The following key-value pairs are supported:    "rest.action.multi.allow_explicit_index": "true" | "false" - Note the use of a string rather than a boolean. Specifies whether explicit references to indexes are allowed inside the body of HTTP requests. If you want to configure access policies for domain sub-resources, such as specific indexes and domain APIs, you must disable this property. Default is true.    "indices.fielddata.cache.size": "80"  - Note the use of a string rather than a boolean. Specifies the percentage of heap space allocated to field data. Default is unbounded.    "indices.query.bool.max_clause_count": "1024" - Note the use of a string rather than a boolean. Specifies the maximum number of clauses allowed in a Lucene boolean query. Default is 1,024. Queries with more than the permitted number of clauses result in a TooManyClauses error.   For more information, see Advanced cluster parameters.
     */
   var AdvancedOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.AdvancedOptions] = js.undefined
   
@@ -47,9 +47,14 @@ trait UpdateDomainConfigRequest extends StObject {
   var DomainName: typings.awsSdk.clientsOpensearchMod.DomainName
   
   /**
-    * This flag, when set to True, specifies whether the UpdateDomain request should return the results of validation check without actually applying the change.
+    * This flag, when set to True, specifies whether the UpdateDomain request should return the results of a dry run analysis without actually applying the change. A dry run determines what type of deployment the update will cause.
     */
   var DryRun: js.UndefOr[typings.awsSdk.clientsOpensearchMod.DryRun] = js.undefined
+  
+  /**
+    * The type of dry run to perform.    Basic only returns the type of deployment (blue/green or dynamic) that the update will cause.    Verbose runs an additional check to validate the changes you're making. For more information, see Validating a domain update.  
+    */
+  var DryRunMode: js.UndefOr[typings.awsSdk.clientsOpensearchMod.DryRunMode] = js.undefined
   
   /**
     * The type and size of the EBS volume to attach to instances in the domain.
@@ -62,19 +67,29 @@ trait UpdateDomainConfigRequest extends StObject {
   var EncryptionAtRestOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.EncryptionAtRestOptions] = js.undefined
   
   /**
-    * Options to publish OpenSearch lots to Amazon CloudWatch Logs.
+    * Options to publish OpenSearch logs to Amazon CloudWatch Logs.
     */
   var LogPublishingOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.LogPublishingOptions] = js.undefined
   
   /**
-    * Node-To-Node Encryption options for the domain.
+    * Node-to-node encryption options for the domain.
     */
   var NodeToNodeEncryptionOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.NodeToNodeEncryptionOptions] = js.undefined
+  
+  /**
+    * Off-peak window options for the domain.
+    */
+  var OffPeakWindowOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.OffPeakWindowOptions] = js.undefined
   
   /**
     * Option to set the time, in UTC format, for the daily automated snapshot. Default value is 0 hours. 
     */
   var SnapshotOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.SnapshotOptions] = js.undefined
+  
+  /**
+    * Service software update options for the domain.
+    */
+  var SoftwareUpdateOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.SoftwareUpdateOptions] = js.undefined
   
   /**
     * Options to specify the subnets and security groups for a VPC endpoint. For more information, see Launching your Amazon OpenSearch Service domains using a VPC.
@@ -123,6 +138,10 @@ object UpdateDomainConfigRequest {
     
     inline def setDryRun(value: DryRun): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
+    inline def setDryRunMode(value: DryRunMode): Self = StObject.set(x, "DryRunMode", value.asInstanceOf[js.Any])
+    
+    inline def setDryRunModeUndefined: Self = StObject.set(x, "DryRunMode", js.undefined)
+    
     inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     inline def setEBSOptions(value: EBSOptions): Self = StObject.set(x, "EBSOptions", value.asInstanceOf[js.Any])
@@ -141,9 +160,17 @@ object UpdateDomainConfigRequest {
     
     inline def setNodeToNodeEncryptionOptionsUndefined: Self = StObject.set(x, "NodeToNodeEncryptionOptions", js.undefined)
     
+    inline def setOffPeakWindowOptions(value: OffPeakWindowOptions): Self = StObject.set(x, "OffPeakWindowOptions", value.asInstanceOf[js.Any])
+    
+    inline def setOffPeakWindowOptionsUndefined: Self = StObject.set(x, "OffPeakWindowOptions", js.undefined)
+    
     inline def setSnapshotOptions(value: SnapshotOptions): Self = StObject.set(x, "SnapshotOptions", value.asInstanceOf[js.Any])
     
     inline def setSnapshotOptionsUndefined: Self = StObject.set(x, "SnapshotOptions", js.undefined)
+    
+    inline def setSoftwareUpdateOptions(value: SoftwareUpdateOptions): Self = StObject.set(x, "SoftwareUpdateOptions", value.asInstanceOf[js.Any])
+    
+    inline def setSoftwareUpdateOptionsUndefined: Self = StObject.set(x, "SoftwareUpdateOptions", js.undefined)
     
     inline def setVPCOptions(value: VPCOptions): Self = StObject.set(x, "VPCOptions", value.asInstanceOf[js.Any])
     

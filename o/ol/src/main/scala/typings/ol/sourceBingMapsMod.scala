@@ -1,5 +1,6 @@
 package typings.ol
 
+import typings.ol.arrayMod.NearestDirectionFunction
 import typings.ol.tileMod.LoadFunction
 import typings.ol.tileMod.Tile
 import typings.ol.tilecoordMod.TileCoord
@@ -13,39 +14,217 @@ object sourceBingMapsMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    * @typedef {Object} Options
+    * @property {number} [cacheSize] Initial tile cache size. Will auto-grow to hold at least the number of tiles in the viewport.
+    * @property {boolean} [hidpi=false] If `true` hidpi tiles will be requested.
+    * @property {string} [culture='en-us'] Culture code.
+    * @property {string} key Bing Maps API key. Get yours at https://www.bingmapsportal.com/.
+    * @property {string} imagerySet Type of imagery.
+    * @property {boolean} [interpolate=true] Use interpolated values when resampling.  By default,
+    * linear interpolation is used when resampling.  Set to false to use the nearest neighbor instead.
+    * @property {number} [maxZoom=21] Max zoom. Default is what's advertized by the BingMaps service.
+    * @property {number} [reprojectionErrorThreshold=0.5] Maximum allowed reprojection error (in pixels).
+    * Higher values can increase reprojection performance, but decrease precision.
+    * @property {import("../Tile.js").LoadFunction} [tileLoadFunction] Optional function to load a tile given a URL. The default is
+    * ```js
+    * function(imageTile, src) {
+    *   imageTile.getImage().src = src;
+    * };
+    * ```
+    * @property {boolean} [wrapX=true] Whether to wrap the world horizontally.
+    * @property {number} [transition] Duration of the opacity transition for rendering.
+    * To disable the opacity transition, pass `transition: 0`.
+    * @property {number|import("../array.js").NearestDirectionFunction} [zDirection=0]
+    * Choose whether to use tiles with a higher or lower zoom level when between integer
+    * zoom levels. See {@link module:ol/tilegrid/TileGrid~TileGrid#getZForResolution}.
+    */
+  /**
+    * @typedef {Object} BingMapsImageryMetadataResponse
+    * @property {number} statusCode The response status code
+    * @property {string} statusDescription The response status description
+    * @property {string} authenticationResultCode The authentication result code
+    * @property {Array<ResourceSet>} resourceSets The array of resource sets
+    */
+  /**
+    * @typedef {Object} ResourceSet
+    * @property {Array<Resource>} resources Resources.
+    */
+  /**
+    * @typedef {Object} Resource
+    * @property {number} imageHeight The image height
+    * @property {number} imageWidth The image width
+    * @property {number} zoomMin The minimum zoom level
+    * @property {number} zoomMax The maximum zoom level
+    * @property {string} imageUrl The image URL
+    * @property {Array<string>} imageUrlSubdomains The image URL subdomains for rotation
+    * @property {Array<ImageryProvider>} [imageryProviders] The array of ImageryProviders
+    */
+  /**
+    * @typedef {Object} ImageryProvider
+    * @property {Array<CoverageArea>} coverageAreas The coverage areas
+    * @property {string} [attribution] The attribution
+    */
+  /**
+    * @typedef {Object} CoverageArea
+    * @property {number} zoomMin The minimum zoom
+    * @property {number} zoomMax The maximum zoom
+    * @property {Array<number>} bbox The coverage bounding box
+    */
+  /**
+    * @classdesc
+    * Layer source for Bing Maps tile data.
+    * @api
+    */
   @JSImport("ol/source/BingMaps", JSImport.Default)
   @js.native
   open class default protected () extends BingMaps {
+    /**
+      * @param {Options} options Bing Maps options.
+      */
     def this(options: Options) = this()
   }
   
   inline def quadKey(tileCoord: TileCoord): String = ^.asInstanceOf[js.Dynamic].applyDynamic("quadKey")(tileCoord.asInstanceOf[js.Any]).asInstanceOf[String]
   
+  /**
+    * @typedef {Object} Options
+    * @property {number} [cacheSize] Initial tile cache size. Will auto-grow to hold at least the number of tiles in the viewport.
+    * @property {boolean} [hidpi=false] If `true` hidpi tiles will be requested.
+    * @property {string} [culture='en-us'] Culture code.
+    * @property {string} key Bing Maps API key. Get yours at https://www.bingmapsportal.com/.
+    * @property {string} imagerySet Type of imagery.
+    * @property {boolean} [interpolate=true] Use interpolated values when resampling.  By default,
+    * linear interpolation is used when resampling.  Set to false to use the nearest neighbor instead.
+    * @property {number} [maxZoom=21] Max zoom. Default is what's advertized by the BingMaps service.
+    * @property {number} [reprojectionErrorThreshold=0.5] Maximum allowed reprojection error (in pixels).
+    * Higher values can increase reprojection performance, but decrease precision.
+    * @property {import("../Tile.js").LoadFunction} [tileLoadFunction] Optional function to load a tile given a URL. The default is
+    * ```js
+    * function(imageTile, src) {
+    *   imageTile.getImage().src = src;
+    * };
+    * ```
+    * @property {boolean} [wrapX=true] Whether to wrap the world horizontally.
+    * @property {number} [transition] Duration of the opacity transition for rendering.
+    * To disable the opacity transition, pass `transition: 0`.
+    * @property {number|import("../array.js").NearestDirectionFunction} [zDirection=0]
+    * Choose whether to use tiles with a higher or lower zoom level when between integer
+    * zoom levels. See {@link module:ol/tilegrid/TileGrid~TileGrid#getZForResolution}.
+    */
+  /**
+    * @typedef {Object} BingMapsImageryMetadataResponse
+    * @property {number} statusCode The response status code
+    * @property {string} statusDescription The response status description
+    * @property {string} authenticationResultCode The authentication result code
+    * @property {Array<ResourceSet>} resourceSets The array of resource sets
+    */
+  /**
+    * @typedef {Object} ResourceSet
+    * @property {Array<Resource>} resources Resources.
+    */
+  /**
+    * @typedef {Object} Resource
+    * @property {number} imageHeight The image height
+    * @property {number} imageWidth The image width
+    * @property {number} zoomMin The minimum zoom level
+    * @property {number} zoomMax The maximum zoom level
+    * @property {string} imageUrl The image URL
+    * @property {Array<string>} imageUrlSubdomains The image URL subdomains for rotation
+    * @property {Array<ImageryProvider>} [imageryProviders] The array of ImageryProviders
+    */
+  /**
+    * @typedef {Object} ImageryProvider
+    * @property {Array<CoverageArea>} coverageAreas The coverage areas
+    * @property {string} [attribution] The attribution
+    */
+  /**
+    * @typedef {Object} CoverageArea
+    * @property {number} zoomMin The minimum zoom
+    * @property {number} zoomMax The maximum zoom
+    * @property {Array<number>} bbox The coverage bounding box
+    */
+  /**
+    * @classdesc
+    * Layer source for Bing Maps tile data.
+    * @api
+    */
   @js.native
   trait BingMaps
     extends typings.ol.sourceTileImageMod.default {
     
     /**
+      * @private
+      * @type {string}
+      */
+    /* private */ var apiKey_ : Any = js.native
+    
+    /**
+      * @private
+      * @type {string}
+      */
+    /* private */ var culture_ : Any = js.native
+    
+    /**
       * Get the api key used for this source.
+      *
+      * @return {string} The api key.
+      * @api
       */
     def getApiKey(): String = js.native
     
     /**
       * Get the imagery set associated with this source.
+      *
+      * @return {string} The imagery set.
+      * @api
       */
     def getImagerySet(): String = js.native
     
+    /**
+      * @param {BingMapsImageryMetadataResponse} response Response.
+      */
     def handleImageryMetadataResponse(response: BingMapsImageryMetadataResponse): Unit = js.native
+    
+    /**
+      * @private
+      * @type {boolean}
+      */
+    /* private */ var hidpi_ : Any = js.native
+    
+    /**
+      * @private
+      * @type {string}
+      */
+    /* private */ var imagerySet_ : Any = js.native
+    
+    /**
+      * @private
+      * @type {number}
+      */
+    /* private */ var maxZoom_ : Any = js.native
   }
   
   trait BingMapsImageryMetadataResponse extends StObject {
     
+    /**
+      * The authentication result code
+      */
     var authenticationResultCode: String
     
+    /**
+      * The array of resource sets
+      */
     var resourceSets: js.Array[ResourceSet]
     
+    /**
+      * The response status code
+      */
     var statusCode: Double
     
+    /**
+      * The response status description
+      */
     var statusDescription: String
   }
   object BingMapsImageryMetadataResponse {
@@ -77,10 +256,19 @@ object sourceBingMapsMod {
   
   trait CoverageArea extends StObject {
     
+    /**
+      * The coverage bounding box
+      */
     var bbox: js.Array[Double]
     
+    /**
+      * The maximum zoom
+      */
     var zoomMax: Double
     
+    /**
+      * The minimum zoom
+      */
     var zoomMin: Double
   }
   object CoverageArea {
@@ -105,8 +293,14 @@ object sourceBingMapsMod {
   
   trait ImageryProvider extends StObject {
     
+    /**
+      * The attribution
+      */
     var attribution: js.UndefOr[String] = js.undefined
     
+    /**
+      * The coverage areas
+      */
     var coverageAreas: js.Array[CoverageArea]
   }
   object ImageryProvider {
@@ -131,27 +325,74 @@ object sourceBingMapsMod {
   
   trait Options extends StObject {
     
+    /**
+      * Initial tile cache size. Will auto-grow to hold at least the number of tiles in the viewport.
+      */
     var cacheSize: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Culture code.
+      */
     var culture: js.UndefOr[String] = js.undefined
     
+    /**
+      * If `true` hidpi tiles will be requested.
+      */
     var hidpi: js.UndefOr[Boolean] = js.undefined
     
-    var imageSmoothing: js.UndefOr[Boolean] = js.undefined
-    
+    /**
+      * Type of imagery.
+      */
     var imagerySet: String
     
+    /**
+      * Use interpolated values when resampling.  By default,
+      * linear interpolation is used when resampling.  Set to false to use the nearest neighbor instead.
+      */
+    var interpolate: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Bing Maps API key. Get yours at https://www.bingmapsportal.com/.
+      */
     var key: String
     
+    /**
+      * Max zoom. Default is what's advertized by the BingMaps service.
+      */
     var maxZoom: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Maximum allowed reprojection error (in pixels).
+      * Higher values can increase reprojection performance, but decrease precision.
+      */
     var reprojectionErrorThreshold: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Optional function to load a tile given a URL. The default is
+      * ```js
+      * function(imageTile, src) {
+      * imageTile.getImage().src = src;
+      * };
+      * ```
+      */
     var tileLoadFunction: js.UndefOr[LoadFunction] = js.undefined
     
+    /**
+      * Duration of the opacity transition for rendering.
+      * To disable the opacity transition, pass `transition: 0`.
+      */
     var transition: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Whether to wrap the world horizontally.
+      */
     var wrapX: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Choose whether to use tiles with a higher or lower zoom level when between integer
+      * zoom levels. See {@link module :ol/tilegrid/TileGrid~TileGrid#getZForResolution}.
+      */
+    var zDirection: js.UndefOr[Double | NearestDirectionFunction] = js.undefined
   }
   object Options {
     
@@ -175,11 +416,11 @@ object sourceBingMapsMod {
       
       inline def setHidpiUndefined: Self = StObject.set(x, "hidpi", js.undefined)
       
-      inline def setImageSmoothing(value: Boolean): Self = StObject.set(x, "imageSmoothing", value.asInstanceOf[js.Any])
-      
-      inline def setImageSmoothingUndefined: Self = StObject.set(x, "imageSmoothing", js.undefined)
-      
       inline def setImagerySet(value: String): Self = StObject.set(x, "imagerySet", value.asInstanceOf[js.Any])
+      
+      inline def setInterpolate(value: Boolean): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
+      
+      inline def setInterpolateUndefined: Self = StObject.set(x, "interpolate", js.undefined)
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -191,7 +432,7 @@ object sourceBingMapsMod {
       
       inline def setReprojectionErrorThresholdUndefined: Self = StObject.set(x, "reprojectionErrorThreshold", js.undefined)
       
-      inline def setTileLoadFunction(value: (/* p0 */ Tile, /* p1 */ String) => Unit): Self = StObject.set(x, "tileLoadFunction", js.Any.fromFunction2(value))
+      inline def setTileLoadFunction(value: (/* arg0 */ Tile, /* arg1 */ String) => Unit): Self = StObject.set(x, "tileLoadFunction", js.Any.fromFunction2(value))
       
       inline def setTileLoadFunctionUndefined: Self = StObject.set(x, "tileLoadFunction", js.undefined)
       
@@ -202,23 +443,50 @@ object sourceBingMapsMod {
       inline def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
       
       inline def setWrapXUndefined: Self = StObject.set(x, "wrapX", js.undefined)
+      
+      inline def setZDirection(value: Double | NearestDirectionFunction): Self = StObject.set(x, "zDirection", value.asInstanceOf[js.Any])
+      
+      inline def setZDirectionFunction3(value: (/* arg0 */ Double, /* arg1 */ Double, /* arg2 */ Double) => Double): Self = StObject.set(x, "zDirection", js.Any.fromFunction3(value))
+      
+      inline def setZDirectionUndefined: Self = StObject.set(x, "zDirection", js.undefined)
     }
   }
   
   trait Resource extends StObject {
     
+    /**
+      * The image height
+      */
     var imageHeight: Double
     
+    /**
+      * The image URL
+      */
     var imageUrl: String
     
+    /**
+      * The image URL subdomains for rotation
+      */
     var imageUrlSubdomains: js.Array[String]
     
+    /**
+      * The image width
+      */
     var imageWidth: Double
     
+    /**
+      * The array of ImageryProviders
+      */
     var imageryProviders: js.UndefOr[js.Array[ImageryProvider]] = js.undefined
     
+    /**
+      * The maximum zoom level
+      */
     var zoomMax: Double
     
+    /**
+      * The minimum zoom level
+      */
     var zoomMin: Double
   }
   object Resource {
@@ -262,6 +530,9 @@ object sourceBingMapsMod {
   
   trait ResourceSet extends StObject {
     
+    /**
+      * Resources.
+      */
     var resources: js.Array[Resource]
   }
   object ResourceSet {

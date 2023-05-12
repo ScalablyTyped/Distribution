@@ -47,7 +47,7 @@ object distTypesTokensMod {
     }
   }
   
-  /* Inlined ret.ret/dist/types/tokens.Base<ret.ret/dist/types/types.types.GROUP, {  stack :std.Array<ret.ret/dist/types/tokens.Token> | undefined,   options :std.Array<std.Array<ret.ret/dist/types/tokens.Token>> | undefined,   remember :boolean,   followedBy :boolean | undefined,   notFollowedBy :boolean | undefined,   lookBehind :boolean | undefined}> */
+  /* Inlined ret.ret/dist/types/tokens.Base<ret.ret/dist/types/types.types.GROUP, {  stack :std.Array<ret.ret/dist/types/tokens.Token> | undefined,   options :std.Array<std.Array<ret.ret/dist/types/tokens.Token>> | undefined,   remember :boolean,   followedBy :boolean | undefined,   notFollowedBy :boolean | undefined,   lookBehind :boolean | undefined,   name :string | undefined}> */
   trait Group
     extends StObject
        with Token {
@@ -55,6 +55,8 @@ object distTypesTokensMod {
     var followedBy: js.UndefOr[Boolean] = js.undefined
     
     var lookBehind: js.UndefOr[Boolean] = js.undefined
+    
+    var name: js.UndefOr[String] = js.undefined
     
     var notFollowedBy: js.UndefOr[Boolean] = js.undefined
     
@@ -84,6 +86,10 @@ object distTypesTokensMod {
       inline def setLookBehind(value: Boolean): Self = StObject.set(x, "lookBehind", value.asInstanceOf[js.Any])
       
       inline def setLookBehindUndefined: Self = StObject.set(x, "lookBehind", js.undefined)
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       inline def setNotFollowedBy(value: Boolean): Self = StObject.set(x, "notFollowedBy", value.asInstanceOf[js.Any])
       

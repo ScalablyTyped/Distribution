@@ -1,6 +1,6 @@
 package typings.workboxRouting
 
-import typings.workboxRouting.typesHttpmethodMod.HTTPMethod
+import typings.workboxRouting.utilsConstantsMod.HTTPMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

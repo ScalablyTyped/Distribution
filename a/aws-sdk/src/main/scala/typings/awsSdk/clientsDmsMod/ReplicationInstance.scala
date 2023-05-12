@@ -52,6 +52,11 @@ trait ReplicationInstance extends StObject {
   var MultiAZ: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * The type of IP address protocol used by a replication instance, such as IPv4 only or Dual-stack that supports both IPv4 and IPv6 addressing. IPv6 only is not yet supported.
+    */
+  var NetworkType: js.UndefOr[String] = js.undefined
+  
+  /**
     * The pending modification values.
     */
   var PendingModifiedValues: js.UndefOr[ReplicationPendingModifiedValues] = js.undefined
@@ -80,6 +85,11 @@ trait ReplicationInstance extends StObject {
     * The replication instance identifier is a required parameter. This parameter is stored as a lowercase string. Constraints:   Must contain 1-63 alphanumeric characters or hyphens.   First character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.   Example: myrepinstance 
     */
   var ReplicationInstanceIdentifier: js.UndefOr[String] = js.undefined
+  
+  /**
+    * One or more IPv6 addresses for the replication instance.
+    */
+  var ReplicationInstanceIpv6Addresses: js.UndefOr[ReplicationInstanceIpv6AddressList] = js.undefined
   
   /**
     * The private IP address of the replication instance.
@@ -167,6 +177,10 @@ object ReplicationInstance {
     
     inline def setMultiAZUndefined: Self = StObject.set(x, "MultiAZ", js.undefined)
     
+    inline def setNetworkType(value: String): Self = StObject.set(x, "NetworkType", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkTypeUndefined: Self = StObject.set(x, "NetworkType", js.undefined)
+    
     inline def setPendingModifiedValues(value: ReplicationPendingModifiedValues): Self = StObject.set(x, "PendingModifiedValues", value.asInstanceOf[js.Any])
     
     inline def setPendingModifiedValuesUndefined: Self = StObject.set(x, "PendingModifiedValues", js.undefined)
@@ -190,6 +204,12 @@ object ReplicationInstance {
     inline def setReplicationInstanceIdentifier(value: String): Self = StObject.set(x, "ReplicationInstanceIdentifier", value.asInstanceOf[js.Any])
     
     inline def setReplicationInstanceIdentifierUndefined: Self = StObject.set(x, "ReplicationInstanceIdentifier", js.undefined)
+    
+    inline def setReplicationInstanceIpv6Addresses(value: ReplicationInstanceIpv6AddressList): Self = StObject.set(x, "ReplicationInstanceIpv6Addresses", value.asInstanceOf[js.Any])
+    
+    inline def setReplicationInstanceIpv6AddressesUndefined: Self = StObject.set(x, "ReplicationInstanceIpv6Addresses", js.undefined)
+    
+    inline def setReplicationInstanceIpv6AddressesVarargs(value: String*): Self = StObject.set(x, "ReplicationInstanceIpv6Addresses", js.Array(value*))
     
     inline def setReplicationInstancePrivateIpAddress(value: String): Self = StObject.set(x, "ReplicationInstancePrivateIpAddress", value.asInstanceOf[js.Any])
     

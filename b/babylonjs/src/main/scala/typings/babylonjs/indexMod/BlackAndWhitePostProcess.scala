@@ -12,7 +12,7 @@ open class BlackAndWhitePostProcess protected ()
   extends typings.babylonjs.postProcessesIndexMod.BlackAndWhitePostProcess {
   /**
     * Creates a black and white post process
-    * @see https://doc.babylonjs.com/how_to/how_to_use_postprocesses#black-and-white
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/postProcesses/usePostProcesses#black-and-white
     * @param name The name of the effect.
     * @param options The required width/height ratio to downsize to before computing the render pass.
     * @param camera The camera to apply the render pass to.

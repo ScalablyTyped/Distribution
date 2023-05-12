@@ -1,5 +1,6 @@
 package typings.openui5
 
+import typings.openui5.sapMLibraryMod.DynamicDateRangeValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ object sapMDynamicDateFormatMod {
       /**
       * The value to format
       */
-    oObj: js.Object,
+    oObj: DynamicDateRangeValue,
       /**
       * If set to `true` the formatter does not format to the equivalent user-friendly string. Instead, the formatter
       * uses the specified option key and parameters.
@@ -45,7 +46,7 @@ object sapMDynamicDateFormatMod {
       * String value of the key we will parse for
       */
     sKey: String
-    ): js.Object = js.native
+    ): js.Array[DynamicDateRangeValue] = js.native
   }
   /* static members */
   object default {
@@ -60,20 +61,6 @@ object sapMDynamicDateFormatMod {
       * @returns Instance of the DynamicDateFormat
       */
     inline def getInstance(): DynamicDateFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[DynamicDateFormat]
-    inline def getInstance(/**
-      * Object which defines the format options
-      */
-    oFormatOptions: js.Object): DynamicDateFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(oFormatOptions.asInstanceOf[js.Any]).asInstanceOf[DynamicDateFormat]
-    inline def getInstance(
-      /**
-      * Object which defines the format options
-      */
-    oFormatOptions: js.Object,
-      /**
-      * Locale to get the formatter for
-      */
-    oLocale: typings.openui5.sapUiCoreLocaleMod.default
-    ): DynamicDateFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(oFormatOptions.asInstanceOf[js.Any], oLocale.asInstanceOf[js.Any])).asInstanceOf[DynamicDateFormat]
     inline def getInstance(
       /**
       * Object which defines the format options
@@ -84,6 +71,24 @@ object sapMDynamicDateFormatMod {
       */
     oLocale: typings.openui5.sapUiCoreLocaleMod.default
     ): DynamicDateFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(oFormatOptions.asInstanceOf[js.Any], oLocale.asInstanceOf[js.Any])).asInstanceOf[DynamicDateFormat]
+    inline def getInstance(/**
+      * Object which defines the format options
+      */
+    oFormatOptions: DynamicDateFormatOptions): DynamicDateFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(oFormatOptions.asInstanceOf[js.Any]).asInstanceOf[DynamicDateFormat]
+    inline def getInstance(
+      /**
+      * Object which defines the format options
+      */
+    oFormatOptions: DynamicDateFormatOptions,
+      /**
+      * Locale to get the formatter for
+      */
+    oLocale: typings.openui5.sapUiCoreLocaleMod.default
+    ): DynamicDateFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(oFormatOptions.asInstanceOf[js.Any], oLocale.asInstanceOf[js.Any])).asInstanceOf[DynamicDateFormat]
+    inline def getInstance(/**
+      * Locale to get the formatter for
+      */
+    oLocale: typings.openui5.sapUiCoreLocaleMod.default): DynamicDateFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(oLocale.asInstanceOf[js.Any]).asInstanceOf[DynamicDateFormat]
   }
   
   trait DynamicDateFormat extends StObject {
@@ -97,7 +102,7 @@ object sapMDynamicDateFormatMod {
       /**
       * The value to format
       */
-    oObj: js.Object,
+    oObj: DynamicDateRangeValue,
       /**
       * If set to `true` the formatter does not format to the equivalent user-friendly string. Instead, the formatter
       * uses the specified option key and parameters.
@@ -119,11 +124,14 @@ object sapMDynamicDateFormatMod {
       * String value of the key we will parse for
       */
     sKey: String
-    ): js.Object
+    ): js.Array[DynamicDateRangeValue]
   }
   object DynamicDateFormat {
     
-    inline def apply(format: (js.Object, Boolean) => String, parse: (String, String) => js.Object): DynamicDateFormat = {
+    inline def apply(
+      format: (DynamicDateRangeValue, Boolean) => String,
+      parse: (String, String) => js.Array[DynamicDateRangeValue]
+    ): DynamicDateFormat = {
       val __obj = js.Dynamic.literal(format = js.Any.fromFunction2(format), parse = js.Any.fromFunction2(parse))
       __obj.asInstanceOf[DynamicDateFormat]
     }
@@ -131,9 +139,11 @@ object sapMDynamicDateFormatMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: DynamicDateFormat] (val x: Self) extends AnyVal {
       
-      inline def setFormat(value: (js.Object, Boolean) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
+      inline def setFormat(value: (DynamicDateRangeValue, Boolean) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
       
-      inline def setParse(value: (String, String) => js.Object): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
+      inline def setParse(value: (String, String) => js.Array[DynamicDateRangeValue]): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
     }
   }
+  
+  type DynamicDateFormatOptions = js.Function0[js.Object]
 }

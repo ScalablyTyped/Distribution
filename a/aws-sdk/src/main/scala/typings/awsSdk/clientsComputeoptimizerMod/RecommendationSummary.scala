@@ -17,6 +17,11 @@ trait RecommendationSummary extends StObject {
   var currentPerformanceRiskRatings: js.UndefOr[CurrentPerformanceRiskRatings] = js.undefined
   
   /**
+    *  An array of objects that describes the estimated monthly saving amounts for the instances running on the specified inferredWorkloadTypes. The array contains the top three savings opportunites for the instances running inferred workload types. 
+    */
+  var inferredWorkloadSavings: js.UndefOr[InferredWorkloadSavings] = js.undefined
+  
+  /**
     * The resource type that the recommendation summary applies to.
     */
   var recommendationResourceType: js.UndefOr[RecommendationSourceType] = js.undefined
@@ -48,6 +53,12 @@ object RecommendationSummary {
     inline def setCurrentPerformanceRiskRatings(value: CurrentPerformanceRiskRatings): Self = StObject.set(x, "currentPerformanceRiskRatings", value.asInstanceOf[js.Any])
     
     inline def setCurrentPerformanceRiskRatingsUndefined: Self = StObject.set(x, "currentPerformanceRiskRatings", js.undefined)
+    
+    inline def setInferredWorkloadSavings(value: InferredWorkloadSavings): Self = StObject.set(x, "inferredWorkloadSavings", value.asInstanceOf[js.Any])
+    
+    inline def setInferredWorkloadSavingsUndefined: Self = StObject.set(x, "inferredWorkloadSavings", js.undefined)
+    
+    inline def setInferredWorkloadSavingsVarargs(value: InferredWorkloadSaving*): Self = StObject.set(x, "inferredWorkloadSavings", js.Array(value*))
     
     inline def setRecommendationResourceType(value: RecommendationSourceType): Self = StObject.set(x, "recommendationResourceType", value.asInstanceOf[js.Any])
     

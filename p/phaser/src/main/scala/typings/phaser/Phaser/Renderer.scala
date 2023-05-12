@@ -3,28 +3,56 @@ package typings.phaser.Phaser
 import typings.phaser.Class
 import typings.phaser.Phaser.Cameras.Scene2D.Camera
 import typings.phaser.Phaser.Display.ColorMatrix
+import typings.phaser.Phaser.Display.Masks.BitmapMask
 import typings.phaser.Phaser.Display.Masks.GeometryMask
 import typings.phaser.Phaser.Events.EventEmitter
+import typings.phaser.Phaser.FX.Barrel
+import typings.phaser.Phaser.FX.Bloom
+import typings.phaser.Phaser.FX.Blur
+import typings.phaser.Phaser.FX.Bokeh
+import typings.phaser.Phaser.FX.Circle
+import typings.phaser.Phaser.FX.Controller
+import typings.phaser.Phaser.FX.Displacement
+import typings.phaser.Phaser.FX.Glow
+import typings.phaser.Phaser.FX.Gradient
+import typings.phaser.Phaser.FX.Pixelate
+import typings.phaser.Phaser.FX.Shadow
+import typings.phaser.Phaser.FX.Shine
+import typings.phaser.Phaser.FX.Vignette
+import typings.phaser.Phaser.FX.Wipe
 import typings.phaser.Phaser.GameObjects.Components.TransformMatrix
 import typings.phaser.Phaser.GameObjects.GameObject
 import typings.phaser.Phaser.GameObjects.Image
 import typings.phaser.Phaser.GameObjects.PointLight
 import typings.phaser.Phaser.GameObjects.Sprite
 import typings.phaser.Phaser.Math.Matrix4
+import typings.phaser.Phaser.Math.Vector2
 import typings.phaser.Phaser.Renderer.WebGL.Pipelines.BitmapMaskPipeline
+import typings.phaser.Phaser.Renderer.WebGL.Pipelines.FX.BarrelFXPipeline
+import typings.phaser.Phaser.Renderer.WebGL.Pipelines.FX.BokehFXPipeline
+import typings.phaser.Phaser.Renderer.WebGL.Pipelines.FX.CircleFXPipeline
+import typings.phaser.Phaser.Renderer.WebGL.Pipelines.FX.GlowFXPipeline
+import typings.phaser.Phaser.Renderer.WebGL.Pipelines.FX.GradientFXPipeline
+import typings.phaser.Phaser.Renderer.WebGL.Pipelines.FX.PixelateFXPipeline
+import typings.phaser.Phaser.Renderer.WebGL.Pipelines.FX.ShadowFXPipeline
+import typings.phaser.Phaser.Renderer.WebGL.Pipelines.FX.ShineFXPipeline
+import typings.phaser.Phaser.Renderer.WebGL.Pipelines.FX.VignetteFXPipeline
+import typings.phaser.Phaser.Renderer.WebGL.Pipelines.FX.WipeFXPipeline
+import typings.phaser.Phaser.Renderer.WebGL.Pipelines.FXPipeline
+import typings.phaser.Phaser.Renderer.WebGL.Pipelines.MobilePipeline
 import typings.phaser.Phaser.Renderer.WebGL.Pipelines.MultiPipeline
 import typings.phaser.Phaser.Renderer.WebGL.Pipelines.PostFXPipeline
 import typings.phaser.Phaser.Renderer.WebGL.Pipelines.UtilityPipeline
 import typings.phaser.Phaser.Structs.Map
 import typings.phaser.Phaser.Structs.Size
 import typings.phaser.Phaser.Textures.Frame
-import typings.phaser.Phaser.Textures.TextureSource
 import typings.phaser.Phaser.Types.Core.PipelineConfig
 import typings.phaser.Phaser.Types.Math.Vector2Like
 import typings.phaser.Phaser.Types.Renderer.Snapshot.SnapshotCallback
 import typings.phaser.Phaser.Types.Renderer.Snapshot.SnapshotState
 import typings.phaser.Phaser.Types.Renderer.WebGL.WebGLPipelineAttribute
 import typings.phaser.Phaser.Types.Renderer.WebGL.WebGLPipelineAttributeConfig
+import typings.phaser.Phaser.Types.Renderer.WebGL.WebGLPipelineBatchEntry
 import typings.phaser.Phaser.Types.Renderer.WebGL.WebGLPipelineConfig
 import typings.phaser.Phaser.Types.Renderer.WebGL.WebGLPipelineUniformsConfig
 import typings.phaser.Phaser.Types.Renderer.WebGL.WebGLTextureCompression
@@ -325,16 +353,17 @@ object Renderer {
       * The `WebGLRenderer` owns a single instance of the Pipeline Manager, which you can access
       * via the `WebGLRenderer.pipelines` property.
       * 
-      * By default, there are 8 pipelines installed into the Pipeline Manager when Phaser boots:
+      * By default, there are 9 pipelines installed into the Pipeline Manager when Phaser boots:
       * 
       * 1. The Multi Pipeline. Responsible for all multi-texture rendering, i.e. Sprites and Tilemaps.
-      * 2. The Graphics Pipeline. Responsible for rendering Graphics and Shape objects.
-      * 3. The Rope Pipeline. Responsible for rendering the Rope Game Object.
-      * 4. The Light Pipeline. Responsible for rendering the Light Game Object.
-      * 5. The Point Light Pipeline. Responsible for rendering the Point Light Game Object.
-      * 6. The Single Pipeline. Responsible for rendering Game Objects that explicitly require one bound texture.
-      * 7. The Bitmap Mask Pipeline. Responsible for Bitmap Mask rendering.
-      * 8. The Utility Pipeline. Responsible for providing lots of handy texture manipulation functions.
+      * 2. The Rope Pipeline. Responsible for rendering the Rope Game Object.
+      * 3. The Light Pipeline. Responsible for rendering the Light Game Object.
+      * 4. The Point Light Pipeline. Responsible for rendering the Point Light Game Object.
+      * 5. The Single Pipeline. Responsible for rendering Game Objects that explicitly require one bound texture.
+      * 6. The Bitmap Mask Pipeline. Responsible for Bitmap Mask rendering.
+      * 7. The Utility Pipeline. Responsible for providing lots of handy texture manipulation functions.
+      * 8. The Mobile Pipeline. Responsible for rendering on mobile with single-bound textures.
+      * 9. The FX Pipeline. Responsible for rendering Game Objects with special FX applied to them.
       * 
       * You can add your own custom pipeline via the `PipelineManager.add` method. Pipelines are
       * identified by unique string-based keys.
@@ -343,12 +372,33 @@ object Renderer {
     trait PipelineManager extends StObject {
       
       /**
+        * The default Game Object pipeline.
+        */
+      var default: WebGLPipeline = js.native
+      
+      /**
         * A constant-style reference to the Bitmap Mask Pipeline Instance.
         * 
         * This is the default Phaser 3 mask pipeline and is used Game Objects using
         * a Bitmap Mask. This property is set during the `boot` method.
         */
       var BITMAPMASK_PIPELINE: BitmapMaskPipeline = js.native
+      
+      /**
+        * A constant-style reference to the FX Pipeline Instance.
+        * 
+        * This is the default Phaser 3 FX pipeline and is used by the WebGL Renderer to manage
+        * Game Objects with special effects enabled. This property is set during the `boot` method.
+        */
+      var FX_PIPELINE: FXPipeline = js.native
+      
+      /**
+        * A constant-style reference to the Mobile Pipeline Instance.
+        * 
+        * This is the default Phaser 3 mobile pipeline and is used by the WebGL Renderer to manage
+        * camera effects and more on mobile devices. This property is set during the `boot` method.
+        */
+      var MOBILE_PIPELINE: MobilePipeline = js.native
       
       /**
         * A constant-style reference to the Multi Pipeline Instance.
@@ -373,7 +423,7 @@ object Renderer {
         * For example, you should pass it like this:
         * 
         * ```javascript
-        * this.add('yourName', new CustomPipeline());`
+        * this.add('yourName', new CustomPipeline(game));`
         * ```
         * 
         * and **not** like this:
@@ -577,9 +627,10 @@ object Renderer {
         * 
         * Finally, the default pipeline is set.
         * @param pipelineConfig The pipeline configuration object as set in the Game Config.
+        * @param defaultPipeline The name of the default Game Object pipeline, as set in the Game Config
+        * @param autoMobilePipeline Automatically set the default pipeline to mobile if non-desktop detected?
         */
-      def boot(): Unit = js.native
-      def boot(pipelineConfig: PipelineConfig): Unit = js.native
+      def boot(pipelineConfig: PipelineConfig, defaultPipeline: String, autoMobilePipeline: Boolean): Unit = js.native
       
       /**
         * This map stores all pipeline classes available in this manager.
@@ -752,6 +803,13 @@ object Renderer {
       def forceZero(): Boolean = js.native
       
       /**
+        * The amount in which each target frame will increase.
+        * 
+        * Defaults to 32px but can be overridden in the config.
+        */
+      var frameInc: Double = js.native
+      
+      /**
         * A reference to the Full Frame 1 Render Target that belongs to the
         * Utility Pipeline. This property is set during the `boot` method.
         * 
@@ -788,18 +846,46 @@ object Renderer {
       def get(pipeline: WebGLPipeline): WebGLPipeline = js.native
       
       /**
+        * Gets a matching Render Target, the same size as the one the Sprite was drawn to,
+        * useful for double-buffer style effects such as blurs.
+        */
+      def getAltSwapRenderTarget(): RenderTarget = js.native
+      
+      /**
         * Returns a _new instance_ of the post pipeline based on the given name, or class.
         * 
         * If no instance, or matching name, exists in this manager, it returns `undefined`.
         * @param pipeline Either the string-based name of the pipeline to get, or a pipeline instance, or class to look-up.
         * @param gameObject If this post pipeline is being installed into a Game Object or Camera, this is a reference to it.
+        * @param config Optional pipeline data object that is set in to the `postPipelineData` property of this Game Object.
         */
       def getPostPipeline(pipeline: String): PostFXPipeline = js.native
+      def getPostPipeline(pipeline: String, gameObject: Unit, config: js.Object): PostFXPipeline = js.native
       def getPostPipeline(pipeline: String, gameObject: GameObject): PostFXPipeline = js.native
+      def getPostPipeline(pipeline: String, gameObject: GameObject, config: js.Object): PostFXPipeline = js.native
       def getPostPipeline(pipeline: js.Function): PostFXPipeline = js.native
+      def getPostPipeline(pipeline: js.Function, gameObject: Unit, config: js.Object): PostFXPipeline = js.native
       def getPostPipeline(pipeline: js.Function, gameObject: GameObject): PostFXPipeline = js.native
+      def getPostPipeline(pipeline: js.Function, gameObject: GameObject, config: js.Object): PostFXPipeline = js.native
       def getPostPipeline(pipeline: PostFXPipeline): PostFXPipeline = js.native
+      def getPostPipeline(pipeline: PostFXPipeline, gameObject: Unit, config: js.Object): PostFXPipeline = js.native
       def getPostPipeline(pipeline: PostFXPipeline, gameObject: GameObject): PostFXPipeline = js.native
+      def getPostPipeline(pipeline: PostFXPipeline, gameObject: GameObject, config: js.Object): PostFXPipeline = js.native
+      
+      /**
+        * Gets a Render Target the right size to render the Sprite on.
+        * 
+        * If the Sprite exceeds the size of the renderer, the Render Target will only ever be the maximum
+        * size of the renderer.
+        * @param size The maximum dimension required.
+        */
+      def getRenderTarget(size: Double): RenderTarget = js.native
+      
+      /**
+        * Gets a matching Render Target, the same size as the one the Sprite was drawn to,
+        * useful for double-buffer style effects such as blurs.
+        */
+      def getSwapRenderTarget(): RenderTarget = js.native
       
       /**
         * A reference to the Half Frame 1 Render Target that belongs to the
@@ -840,6 +926,11 @@ object Renderer {
       def isCurrent(pipeline: WebGLPipeline, currentShader: WebGLShader): Boolean = js.native
       
       /**
+        * The largest render target dimension before we just use a full-screen target.
+        */
+      var maxDimension: Double = js.native
+      
+      /**
         * This map stores all pipeline instances in this manager.
         * 
         * This is populated with the default pipelines in the `boot` method.
@@ -848,9 +939,15 @@ object Renderer {
       
       /**
         * This method is called by the `WebGLPipeline.batchQuad` method, right after a quad
-        * belonging to a Game Object has been added to the batch. It causes a batch
-        * flush, then calls the `postBatch` method on the post-fx pipelines belonging to the
-        * Game Object.
+        * belonging to a Game Object has been added to the batch.
+        * 
+        * It is also called directly bu custom Game Objects, such as Nine Slice or Mesh,
+        * from their render methods.
+        * 
+        * It causes a batch flush, then calls the `postBatch` method on the Post FX Pipelines
+        * belonging to the Game Object.
+        * 
+        * It should be preceeded by a call to `preBatch` to start the process.
         * @param gameObject The Game Object that was just added to the batch.
         */
       def postBatch(gameObject: GameObject): Unit = js.native
@@ -866,14 +963,40 @@ object Renderer {
       
       /**
         * This map stores all Post FX Pipeline classes available in this manager.
+        * 
+        * As of v3.60 this is now populated by default with the following
+        * Post FX Pipelines:
+        * 
+        * * Barrel
+        * * Bloom
+        * * Blur
+        * * Bokeh / TiltShift
+        * * Circle
+        * * ColorMatrix
+        * * Displacement
+        * * Glow
+        * * Gradient
+        * * Pixelate
+        * * Shadow
+        * * Shine
+        * * Vignette
+        * * Wipe
+        * 
+        * See the FX Controller class for more details.
         */
       var postPipelineClasses: Map[String, Class] = js.native
       
       /**
         * This method is called by the `WebGLPipeline.batchQuad` method, right before a quad
-        * belonging to a Game Object is about to be added to the batch. It causes a batch
-        * flush, then calls the `preBatch` method on the post-fx pipelines belonging to the
-        * Game Object.
+        * belonging to a Game Object is about to be added to the batch.
+        * 
+        * It is also called directly bu custom Game Objects, such as Nine Slice or Mesh,
+        * from their render methods.
+        * 
+        * It causes a batch flush, then calls the `preBatch` method on the Post FX Pipelines
+        * belonging to the Game Object.
+        * 
+        * It should be followed by a call to `postBatch` to complete the process.
         * @param gameObject The Game Object about to be batched.
         */
       def preBatch(gameObject: GameObject): Unit = js.native
@@ -930,6 +1053,11 @@ object Renderer {
       def remove(name: String, removeClass: Unit, removePostPipelineClass: Boolean): Unit = js.native
       
       /**
+        * An array of RenderTarget instances that belong to this pipeline.
+        */
+      var renderTargets: js.Array[RenderTarget] = js.native
+      
+      /**
         * A reference to the WebGL Renderer instance.
         */
       var renderer: WebGLRenderer = js.native
@@ -953,6 +1081,27 @@ object Renderer {
       def set(pipeline: WebGLPipeline, gameObject: GameObject, currentShader: WebGLShader): WebGLPipeline = js.native
       
       /**
+        * Sets the default pipeline being used by Game Objects.
+        * 
+        * If no instance, or matching name, exists in this manager, it returns `undefined`.
+        * 
+        * You can use this to override the default pipeline, for example by forcing
+        * the Mobile or Multi Tint Pipelines, which is especially useful for development
+        * testing.
+        * 
+        * Make sure you call this method _before_ creating any Game Objects, as it will
+        * only impact Game Objects created after you call it.
+        * @param pipeline Either the string-based name of the pipeline to get, or a pipeline instance to look-up.
+        */
+      def setDefaultPipeline(pipeline: String): WebGLPipeline = js.native
+      def setDefaultPipeline(pipeline: WebGLPipeline): WebGLPipeline = js.native
+      
+      /**
+        * Sets the FX Pipeline to be the currently bound pipeline.
+        */
+      def setFX(): FXPipeline = js.native
+      
+      /**
         * Sets the Multi Pipeline to be the currently bound pipeline.
         * 
         * This is the default Phaser 3 rendering pipeline.
@@ -965,6 +1114,12 @@ object Renderer {
         */
       def setUtility(): UtilityPipeline = js.native
       def setUtility(currentShader: WebGLShader): UtilityPipeline = js.native
+      
+      /**
+        * The Render Target index. Used internally by the methods
+        * in this class. Do not modify directly.
+        */
+      var targetIndex: Double = js.native
     }
     
     object Pipelines {
@@ -996,197 +1151,893 @@ object Renderer {
         /**
           * Binds necessary resources and renders the mask to a separated framebuffer.
           * The framebuffer for the masked object is also bound for further use.
-          * @param mask GameObject used as mask.
+          * @param mask The BitmapMask instance that called beginMask.
           * @param maskedObject GameObject masked by the mask GameObject.
           * @param camera The camera rendering the current mask.
           */
-        def beginMask(mask: GameObject, maskedObject: GameObject, camera: Camera): Unit = js.native
+        def beginMask(mask: BitmapMask, maskedObject: GameObject, camera: Camera): Unit = js.native
         
         /**
           * The masked game objects framebuffer is unbound and its texture
           * is bound together with the mask texture and the mask shader and
           * a draw call with a single quad is processed. Here is where the
           * masking effect is applied.
-          * @param mask GameObject used as a mask.
+          * @param mask The BitmapMask instance that called endMask.
+          * @param camera The Camera to render to.
+          * @param renderTarget Optional WebGL RenderTarget.
           */
-        def endMask(mask: GameObject): Unit = js.native
+        def endMask(mask: BitmapMask, camera: Camera): Unit = js.native
+        def endMask(mask: BitmapMask, camera: Camera, renderTarget: RenderTarget): Unit = js.native
+      }
+      
+      object FX {
+        
+        /**
+          * The Barrel FX Pipeline.
+          * 
+          * A barrel effect allows you to apply either a 'pinch' or 'expand' distortion to
+          * a Game Object. The amount of the effect can be modified in real-time.
+          * 
+          * A Barrel effect is added to a Game Object via the FX component:
+          * 
+          * ```js
+          * const sprite = this.add.sprite();
+          * 
+          * sprite.postFX.addBarrel();
+          * ```
+          */
+        @js.native
+        trait BarrelFXPipeline
+          extends StObject
+             with WebGLPipeline {
+          
+          /**
+            * The amount of distortion applied to the barrel effect.
+            * 
+            * Typically keep this within the range 1 (no distortion) to +- 1.
+            */
+          var amount: Double = js.native
+        }
+        
+        /**
+          * The Bloom FX Pipeline.
+          * 
+          * Bloom is an effect used to reproduce an imaging artifact of real-world cameras.
+          * The effect produces fringes of light extending from the borders of bright areas in an image,
+          * contributing to the illusion of an extremely bright light overwhelming the
+          * camera or eye capturing the scene.
+          * 
+          * A Bloom effect is added to a Game Object via the FX component:
+          * 
+          * ```js
+          * const sprite = this.add.sprite();
+          * 
+          * sprite.postFX.addBloom();
+          * ```
+          */
+        @js.native
+        trait BloomFXPipeline
+          extends StObject
+             with WebGLPipeline {
+          
+          /**
+            * The strength of the blur process of the bloom effect.
+            */
+          var blurStrength: Double = js.native
+          
+          /**
+            * The internal gl color array.
+            */
+          var glcolor: js.Array[Double] = js.native
+          
+          /**
+            * The horizontal offset of the bloom effect.
+            */
+          var offsetX: Double = js.native
+          
+          /**
+            * The vertical offset of the bloom effect.
+            */
+          var offsetY: Double = js.native
+          
+          /**
+            * The number of steps to run the Bloom effect for.
+            * 
+            * This value should always be an integer.
+            * 
+            * It defaults to 4. The higher the value, the smoother the Bloom,
+            * but at the cost of exponentially more gl operations.
+            * 
+            * Keep this to the lowest possible number you can have it, while
+            * still looking correct for your game.
+            */
+          var steps: Double = js.native
+          
+          /**
+            * The strength of the blend process of the bloom effect.
+            */
+          var strength: Double = js.native
+        }
+        
+        /**
+          * The Blur FX Pipeline.
+          * 
+          * A Gaussian blur is the result of blurring an image by a Gaussian function. It is a widely used effect,
+          * typically to reduce image noise and reduce detail. The visual effect of this blurring technique is a
+          * smooth blur resembling that of viewing the image through a translucent screen, distinctly different
+          * from the bokeh effect produced by an out-of-focus lens or the shadow of an object under usual illumination.
+          * 
+          * A Blur effect is added to a Game Object via the FX component:
+          * 
+          * ```js
+          * const sprite = this.add.sprite();
+          * 
+          * sprite.postFX.addBlur();
+          * ```
+          */
+        @js.native
+        trait BlurFXPipeline
+          extends StObject
+             with WebGLPipeline {
+          
+          /**
+            * The internal gl color array.
+            */
+          var glcolor: js.Array[Double] = js.native
+          
+          /**
+            * Sets the quality of the blur effect to high.
+            */
+          def setQualityHigh(): this.type = js.native
+          
+          /**
+            * Sets the quality of the blur effect to low.
+            */
+          def setQualityLow(): this.type = js.native
+          
+          /**
+            * Sets the quality of the blur effect to medium.
+            */
+          def setQualityMedium(): this.type = js.native
+          
+          /**
+            * The number of steps to run the Blur effect for.
+            * 
+            * This value should always be an integer.
+            * 
+            * It defaults to 4. The higher the value, the smoother the blur,
+            * but at the cost of exponentially more gl operations.
+            * 
+            * Keep this to the lowest possible number you can have it, while
+            * still looking correct for your game.
+            */
+          var steps: Double = js.native
+          
+          /**
+            * The strength of the blur effect.
+            */
+          var strength: Double = js.native
+          
+          /**
+            * The horizontal offset of the blur effect.
+            */
+          var x: Double = js.native
+          
+          /**
+            * The vertical offset of the blur effect.
+            */
+          var y: Double = js.native
+        }
+        
+        /**
+          * The Bokeh FX Pipeline.
+          * 
+          * Bokeh refers to a visual effect that mimics the photographic technique of creating a shallow depth of field.
+          * This effect is used to emphasize the game's main subject or action, by blurring the background or foreground
+          * elements, resulting in a more immersive and visually appealing experience. It is achieved through rendering
+          * techniques that simulate the out-of-focus areas, giving a sense of depth and realism to the game's graphics.
+          * 
+          * This effect can also be used to generate a Tilt Shift effect, which is a technique used to create a miniature
+          * effect by blurring everything except a small area of the image. This effect is achieved by blurring the
+          * top and bottom elements, while keeping the center area in focus.
+          * 
+          * A Bokeh effect is added to a Game Object via the FX component:
+          * 
+          * ```js
+          * const sprite = this.add.sprite();
+          * 
+          * sprite.postFX.addBokeh();
+          * ```
+          */
+        @js.native
+        trait BokehFXPipeline
+          extends StObject
+             with WebGLPipeline {
+          
+          /**
+            * The amount, or strength, of the bokeh effect. Defaults to 1.
+            */
+          var amount: Double = js.native
+          
+          /**
+            * If a Tilt Shift effect this controls the amount of horizontal blur.
+            * 
+            * Setting this value on a non-Tilt Shift effect will have no effect.
+            */
+          var blurX: Double = js.native
+          
+          /**
+            * If a Tilt Shift effect this controls the amount of vertical blur.
+            * 
+            * Setting this value on a non-Tilt Shift effect will have no effect.
+            */
+          var blurY: Double = js.native
+          
+          /**
+            * The color contrast, or brightness, of the bokeh effect. Defaults to 0.2.
+            */
+          var contrast: Double = js.native
+          
+          /**
+            * Is this a Tilt Shift effect or a standard bokeh effect?
+            */
+          var isTiltShift: Boolean = js.native
+          
+          /**
+            * The radius of the bokeh effect.
+            * 
+            * This is a float value, where a radius of 0 will result in no effect being applied,
+            * and a radius of 1 will result in a strong bokeh. However, you can exceed this value
+            * for even stronger effects.
+            */
+          var radius: Double = js.native
+          
+          /**
+            * If a Tilt Shift effect this controls the strength of the blur.
+            * 
+            * Setting this value on a non-Tilt Shift effect will have no effect.
+            */
+          var strength: Double = js.native
+        }
+        
+        /**
+          * The Circle FX Pipeline.
+          * 
+          * This effect will draw a circle around the texture of the Game Object, effectively masking off
+          * any area outside of the circle without the need for an actual mask. You can control the thickness
+          * of the circle, the color of the circle and the color of the background, should the texture be
+          * transparent. You can also control the feathering applied to the circle, allowing for a harsh or soft edge.
+          * 
+          * Please note that adding this effect to a Game Object will not change the input area or physics body of
+          * the Game Object, should it have one.
+          * 
+          * A Circle effect is added to a Game Object via the FX component:
+          * 
+          * ```js
+          * const sprite = this.add.sprite();
+          * 
+          * sprite.postFX.addCircle();
+          * ```
+          */
+        @js.native
+        trait CircleFXPipeline
+          extends StObject
+             with WebGLPipeline {
+          
+          /**
+            * The amount of feathering to apply to the circle from the ring,
+            * extending into the middle of the circle. The default is 0.005,
+            * which is a very low amount of feathering just making sure the ring
+            * has a smooth edge. Increase this amount to a value such as 0.5
+            * or 0.025 for larger amounts of feathering.
+            */
+          var feather: Double = js.native
+          
+          /**
+            * The internal gl color array for the ring color.
+            */
+          var glcolor: js.Array[Double] = js.native
+          
+          /**
+            * The internal gl color array for the background color.
+            */
+          var glcolor2: js.Array[Double] = js.native
+          
+          /**
+            * The scale of the circle. The default scale is 1, which is a circle
+            * the full size of the underlying texture. Reduce this value to create
+            * a smaller circle, or increase it to create a circle that extends off
+            * the edges of the texture.
+            */
+          var scale: Double = js.native
+          
+          /**
+            * The width of the circle around the texture, in pixels. This value
+            * doesn't factor in the feather, which can extend the thickness
+            * internally depending on its value.
+            */
+          var thickness: Double = js.native
+        }
+        
+        /**
+          * The ColorMatrix FX Pipeline.
+          * 
+          * The color matrix effect is a visual technique that involves manipulating the colors of an image
+          * or scene using a mathematical matrix. This process can adjust hue, saturation, brightness, and contrast,
+          * allowing developers to create various stylistic appearances or mood settings within the game.
+          * Common applications include simulating different lighting conditions, applying color filters,
+          * or achieving a specific visual style.
+          * 
+          * A ColorMatrix effect is added to a Game Object via the FX component:
+          * 
+          * ```js
+          * const sprite = this.add.sprite();
+          * 
+          * sprite.postFX.addColorMatrix();
+          * ```
+          */
+        type ColorMatrixFXPipeline = WebGLPipeline
+        
+        /**
+          * The Displacement FX Pipeline.
+          * 
+          * The displacement effect is a visual technique that alters the position of pixels in an image
+          * or texture based on the values of a displacement map. This effect is used to create the illusion
+          * of depth, surface irregularities, or distortion in otherwise flat elements. It can be applied to
+          * characters, objects, or backgrounds to enhance realism, convey movement, or achieve various
+          * stylistic appearances.
+          * 
+          * A Displacement effect is added to a Game Object via the FX component:
+          * 
+          * ```js
+          * const sprite = this.add.sprite();
+          * 
+          * sprite.postFX.addDisplacement();
+          * ```
+          */
+        @js.native
+        trait DisplacementFXPipeline
+          extends StObject
+             with WebGLPipeline {
+          
+          /**
+            * The underlying WebGLTexture used for displacement.
+            */
+          var glTexture: WebGLTexture = js.native
+          
+          /**
+            * The amount of horizontal displacement to apply.
+            */
+          var x: Double = js.native
+          
+          /**
+            * The amount of vertical displacement to apply.
+            */
+          var y: Double = js.native
+        }
+        
+        /**
+          * The Glow FX Pipeline.
+          * 
+          * The glow effect is a visual technique that creates a soft, luminous halo around game objects,
+          * characters, or UI elements. This effect is used to emphasize importance, enhance visual appeal,
+          * or convey a sense of energy, magic, or otherworldly presence. The effect can also be set on
+          * the inside of the Game Object. The color and strength of the glow can be modified.
+          * 
+          * A Glow effect is added to a Game Object via the FX component:
+          * 
+          * ```js
+          * const sprite = this.add.sprite();
+          * 
+          * sprite.postFX.addGlow();
+          * ```
+          */
+        @js.native
+        trait GlowFXPipeline
+          extends StObject
+             with WebGLPipeline {
+          
+          /**
+            * A 4 element array of gl color values.
+            */
+          var glcolor: js.Array[Double] = js.native
+          
+          /**
+            * The strength of the glow inward from the edge of the Sprite.
+            */
+          var innerStrength: Double = js.native
+          
+          /**
+            * If `true` only the glow is drawn, not the texture itself.
+            */
+          var knockout: Double = js.native
+          
+          /**
+            * The strength of the glow outward from the edge of the Sprite.
+            */
+          var outerStrength: Double = js.native
+        }
+        
+        /**
+          * The Gradient FX Pipeline.
+          * 
+          * The gradient overlay effect is a visual technique where a smooth color transition is applied over Game Objects,
+          * such as sprites or UI components. This effect is used to enhance visual appeal, emphasize depth, or create
+          * stylistic and atmospheric variations. It can also be utilized to convey information, such as representing
+          * progress or health status through color changes.
+          * 
+          * A Gradient effect is added to a Game Object via the FX component:
+          * 
+          * ```js
+          * const sprite = this.add.sprite();
+          * 
+          * sprite.postFX.addGradient();
+          * ```
+          */
+        @js.native
+        trait GradientFXPipeline
+          extends StObject
+             with WebGLPipeline {
+          
+          /**
+            * The alpha value of the gradient effect.
+            */
+          var alpha: Double = js.native
+          
+          /**
+            * The horizontal position the gradient will start from. This value is noralized, between 0 and 1 and is not in pixels.
+            */
+          var fromX: Double = js.native
+          
+          /**
+            * The vertical position the gradient will start from. This value is noralized, between 0 and 1 and is not in pixels.
+            */
+          var fromY: Double = js.native
+          
+          /**
+            * The internal gl color array for the starting color.
+            */
+          var glcolor1: js.Array[Double] = js.native
+          
+          /**
+            * The internal gl color array for the ending color.
+            */
+          var glcolor2: js.Array[Double] = js.native
+          
+          /**
+            * Sets how many 'chunks' the gradient is divided in to, as spread over the
+            * entire height of the texture. Leave this at zero for a smooth gradient,
+            * or set to a higher number to split the gradient into that many sections, giving
+            * a more banded 'retro' effect.
+            */
+          var size: Double = js.native
+          
+          /**
+            * The horizontal position the gradient will end. This value is noralized, between 0 and 1 and is not in pixels.
+            */
+          var toX: Double = js.native
+          
+          /**
+            * The vertical position the gradient will end. This value is noralized, between 0 and 1 and is not in pixels.
+            */
+          var toY: Double = js.native
+        }
+        
+        /**
+          * The Pixelate FX Pipeline.
+          * 
+          * The pixelate effect is a visual technique that deliberately reduces the resolution or detail of an image,
+          * creating a blocky or mosaic appearance composed of large, visible pixels. This effect can be used for stylistic
+          * purposes, as a homage to retro gaming, or as a means to obscure certain elements within the game, such as
+          * during a transition or to censor specific content.
+          * 
+          * A Pixelate effect is added to a Game Object via the FX component:
+          * 
+          * ```js
+          * const sprite = this.add.sprite();
+          * 
+          * sprite.postFX.addPixelate();
+          * ```
+          */
+        @js.native
+        trait PixelateFXPipeline
+          extends StObject
+             with WebGLPipeline {
+          
+          /**
+            * The amount of pixelation to apply.
+            */
+          var amount: Double = js.native
+        }
+        
+        /**
+          * The Shadow FX Pipeline.
+          * 
+          * The shadow effect is a visual technique used to create the illusion of depth and realism by adding darker,
+          * offset silhouettes or shapes beneath game objects, characters, or environments. These simulated shadows
+          * help to enhance the visual appeal and immersion, making the 2D game world appear more dynamic and three-dimensional.
+          * 
+          * A Shadow effect is added to a Game Object via the FX component:
+          * 
+          * ```js
+          * const sprite = this.add.sprite();
+          * 
+          * sprite.postFX.addShadow();
+          * ```
+          */
+        @js.native
+        trait ShadowFXPipeline
+          extends StObject
+             with WebGLPipeline {
+          
+          /**
+            * The amount of decay for the shadow effect.
+            */
+          var decay: Double = js.native
+          
+          /**
+            * The internal gl color array.
+            */
+          var glcolor: js.Array[Double] = js.native
+          
+          /**
+            * The intensity of the shadow effect.
+            */
+          var intensity: Double = js.native
+          
+          /**
+            * The power of the shadow effect.
+            */
+          var power: Double = js.native
+          
+          /**
+            * The number of samples that the shadow effect will run for.
+            * 
+            * This should be an integer with a minimum value of 1 and a maximum of 12.
+            */
+          var samples: Double = js.native
+          
+          /**
+            * The horizontal offset of the shadow effect.
+            */
+          var x: Double = js.native
+          
+          /**
+            * The vertical offset of the shadow effect.
+            */
+          var y: Double = js.native
+        }
+        
+        /**
+          * The Shine FX Pipeline.
+          * 
+          * The shine effect is a visual technique that simulates the appearance of reflective
+          * or glossy surfaces by passing a light beam across a Game Object. This effect is used to
+          * enhance visual appeal, emphasize certain features, and create a sense of depth or
+          * material properties.
+          * 
+          * A Shine effect is added to a Game Object via the FX component:
+          * 
+          * ```js
+          * const sprite = this.add.sprite();
+          * 
+          * sprite.postFX.addShine();
+          * ```
+          */
+        @js.native
+        trait ShineFXPipeline
+          extends StObject
+             with WebGLPipeline {
+          
+          /**
+            * The gradient of the Shine effect.
+            */
+          var gradient: Double = js.native
+          
+          /**
+            * The line width of the Shine effect.
+            */
+          var lineWidth: Double = js.native
+          
+          /**
+            * Does this Shine effect reveal or get added to its target?
+            */
+          var reveal: Boolean = js.native
+          
+          /**
+            * The speed of the Shine effect.
+            */
+          var speed: Double = js.native
+        }
+        
+        /**
+          * The Vignette FX Pipeline.
+          * 
+          * The vignette effect is a visual technique where the edges of the screen, or a Game Object, gradually darken or blur,
+          * creating a frame-like appearance. This effect is used to draw the player's focus towards the central action or subject,
+          * enhance immersion, and provide a cinematic or artistic quality to the game's visuals.
+          * 
+          * A Vignette effect is added to a Game Object via the FX component:
+          * 
+          * ```js
+          * const sprite = this.add.sprite();
+          * 
+          * sprite.postFX.addVignette();
+          * ```
+          */
+        @js.native
+        trait VignetteFXPipeline
+          extends StObject
+             with WebGLPipeline {
+          
+          /**
+            * The radius of the vignette effect. This value is normalized to the range 0 to 1.
+            */
+          var radius: Double = js.native
+          
+          /**
+            * The strength of the vignette effect.
+            */
+          var strength: Double = js.native
+          
+          /**
+            * The horizontal offset of the vignette effect. This value is normalized to the range 0 to 1.
+            */
+          var x: Double = js.native
+          
+          /**
+            * The vertical offset of the vignette effect. This value is normalized to the range 0 to 1.
+            */
+          var y: Double = js.native
+        }
+        
+        /**
+          * The Wipe FX Pipeline.
+          * 
+          * The wipe or reveal effect is a visual technique that gradually uncovers or conceals elements
+          * in the game, such as images, text, or scene transitions. This effect is often used to create
+          * a sense of progression, reveal hidden content, or provide a smooth and visually appealing transition
+          * between game states.
+          * 
+          * You can set both the direction and the axis of the wipe effect. The following combinations are possible:
+          * 
+          * * left to right: direction 0, axis 0
+          * * right to left: direction 1, axis 0
+          * * top to bottom: direction 1, axis 1
+          * * bottom to top: direction 1, axis 0
+          * 
+          * It is up to you to set the `progress` value yourself, i.e. via a Tween, in order to transition the effect.
+          * 
+          * A Wipe effect is added to a Game Object via the FX component:
+          * 
+          * ```js
+          * const sprite = this.add.sprite();
+          * 
+          * sprite.postFX.addWipe();
+          * sprite.postFX.addReveal();
+          * ```
+          */
+        @js.native
+        trait WipeFXPipeline
+          extends StObject
+             with WebGLPipeline {
+          
+          /**
+            * The axis of the wipe effect. Either 0 or 1. Set in conjunction with the direction property.
+            */
+          var axis: Double = js.native
+          
+          /**
+            * The direction of the wipe effect. Either 0 or 1. Set in conjunction with the axis property.
+            */
+          var direction: Double = js.native
+          
+          /**
+            * The progress of the Wipe effect. This value is normalized to the range 0 to 1.
+            * 
+            * Adjust this value to make the wipe transition (i.e. via a Tween)
+            */
+          var progress: Double = js.native
+          
+          /**
+            * Is this a reveal (true) or a fade (false) effect?
+            */
+          var reveal: Boolean = js.native
+          
+          /**
+            * The width of the wipe effect. This value is normalized in the range 0 to 1.
+            */
+          var wipeWidth: Double = js.native
+        }
       }
       
       /**
-        * The Graphics Pipeline is the rendering pipeline used by Phaser in WebGL when drawing
-        * primitive geometry objects, such as the Graphics Game Object, or the Shape Game Objects
-        * such as Arc, Line, Rectangle and Star. It handles the preperation and batching of related vertices.
+        * The FXPipeline is a built-in pipeline that controls the application of FX Controllers during
+        * the rendering process. It maintains all of the FX shaders, instances of Post FX Pipelines and
+        * is responsible for rendering.
         * 
-        * Prior to Phaser v3.50 the functions of this pipeline were merged with the `TextureTintPipeline`.
-        * 
-        * The fragment shader it uses can be found in `shaders/src/Graphics.frag`.
-        * The vertex shader it uses can be found in `shaders/src/Graphics.vert`.
-        * 
-        * The default shader attributes for this pipeline are:
-        * 
-        * `inPosition` (vec2)
-        * `inColor` (vec4, normalized)
-        * 
-        * The default shader uniforms for this pipeline are:
-        * 
-        * `uProjectionMatrix` (mat4)
+        * You should rarely interact with this pipeline directly. Instead, use the FX Controllers that
+        * is part of the Game Object class in order to manage the effects.
         */
       @js.native
-      trait GraphicsPipeline
+      trait FXPipeline
         extends StObject
-           with WebGLPipeline {
+           with PreFXPipeline {
         
         /**
-          * Adds the given path to the vertex batch for rendering.
-          * 
-          * It works by taking the array of path data and then passing it through Earcut, which
-          * creates a list of polygons. Each polygon is then added to the batch.
-          * 
-          * The path is always automatically closed because it's filled.
-          * @param path Collection of points that represent the path.
-          * @param currentMatrix The current transform.
-          * @param parentMatrix The parent transform.
+          * An instance of the Barrel Post FX Pipeline.
           */
-        def batchFillPath(path: js.Array[Vector2Like], currentMatrix: TransformMatrix, parentMatrix: TransformMatrix): Unit = js.native
+        var barrel: BarrelFXPipeline = js.native
         
         /**
-          * Pushes a filled rectangle into the vertex batch.
-          * 
-          * Rectangle factors in the given transform matrices before adding to the batch.
-          * @param x Horizontal top left coordinate of the rectangle.
-          * @param y Vertical top left coordinate of the rectangle.
-          * @param width Width of the rectangle.
-          * @param height Height of the rectangle.
-          * @param currentMatrix The current transform.
-          * @param parentMatrix The parent transform.
+          * An instance of the Bokeh Post FX Pipeline.
           */
-        def batchFillRect(
-          x: Double,
-          y: Double,
-          width: Double,
-          height: Double,
-          currentMatrix: TransformMatrix,
-          parentMatrix: TransformMatrix
-        ): Unit = js.native
+        var bokeh: BokehFXPipeline = js.native
         
         /**
-          * Pushes a filled triangle into the vertex batch.
-          * 
-          * Triangle factors in the given transform matrices before adding to the batch.
-          * @param x0 Point 0 x coordinate.
-          * @param y0 Point 0 y coordinate.
-          * @param x1 Point 1 x coordinate.
-          * @param y1 Point 1 y coordinate.
-          * @param x2 Point 2 x coordinate.
-          * @param y2 Point 2 y coordinate.
-          * @param currentMatrix The current transform.
-          * @param parentMatrix The parent transform.
+          * An instance of the Circle Post FX Pipeline.
           */
-        def batchFillTriangle(
-          x0: Double,
-          y0: Double,
-          x1: Double,
-          y1: Double,
-          x2: Double,
-          y2: Double,
-          currentMatrix: TransformMatrix,
-          parentMatrix: TransformMatrix
-        ): Unit = js.native
+        var circle: CircleFXPipeline = js.native
         
         /**
-          * Creates a line out of 4 quads and adds it to the vertex batch based on the given line values.
-          * @param ax x coordinate of the start of the line.
-          * @param ay y coordinate of the start of the line.
-          * @param bx x coordinate of the end of the line.
-          * @param by y coordinate of the end of the line.
-          * @param aLineWidth Width of the start of the line.
-          * @param bLineWidth Width of the end of the line.
-          * @param index If this line is part of a multi-line draw, the index of the line in the draw.
-          * @param closePath Does this line close a multi-line path?
-          * @param currentMatrix The current transform.
-          * @param parentMatrix The parent transform.
+          * An array containing references to the methods that map to the FX CONSTs.
+          * 
+          * This array is intentionally sparse. Do not adjust.
           */
-        def batchLine(
-          ax: Double,
-          ay: Double,
-          bx: Double,
-          by: Double,
-          aLineWidth: Double,
-          bLineWidth: Double,
-          index: Double,
-          closePath: Boolean,
-          currentMatrix: TransformMatrix,
-          parentMatrix: TransformMatrix
-        ): Unit = js.native
+        var fxHandlers: js.Array[js.Function] = js.native
         
         /**
-          * Adds the given path to the vertex batch for rendering.
-          * 
-          * It works by taking the array of path data and calling `batchLine` for each section
-          * of the path.
-          * 
-          * The path is optionally closed at the end.
-          * @param path Collection of points that represent the path.
-          * @param lineWidth The width of the line segments in pixels.
-          * @param pathOpen Indicates if the path should be closed or left open.
-          * @param currentMatrix The current transform.
-          * @param parentMatrix The parent transform.
+          * An instance of the Glow Post FX Pipeline.
           */
-        def batchStrokePath(
-          path: js.Array[Vector2Like],
-          lineWidth: Double,
-          pathOpen: Boolean,
-          currentMatrix: TransformMatrix,
-          parentMatrix: TransformMatrix
-        ): Unit = js.native
+        var glow: GlowFXPipeline = js.native
         
         /**
-          * Pushes a stroked triangle into the vertex batch.
-          * 
-          * Triangle factors in the given transform matrices before adding to the batch.
-          * 
-          * The triangle is created from 3 lines and drawn using the `batchStrokePath` method.
-          * @param x0 Point 0 x coordinate.
-          * @param y0 Point 0 y coordinate.
-          * @param x1 Point 1 x coordinate.
-          * @param y1 Point 1 y coordinate.
-          * @param x2 Point 2 x coordinate.
-          * @param y2 Point 2 y coordinate.
-          * @param lineWidth The width of the line in pixels.
-          * @param currentMatrix The current transform.
-          * @param parentMatrix The parent transform.
+          * An instance of the Gradient Post FX Pipeline.
           */
-        def batchStrokeTriangle(
-          x0: Double,
-          y0: Double,
-          x1: Double,
-          y1: Double,
-          x2: Double,
-          y2: Double,
-          lineWidth: Double,
-          currentMatrix: TransformMatrix,
-          parentMatrix: TransformMatrix
-        ): Unit = js.native
+        var gradient: GradientFXPipeline = js.native
         
         /**
-          * Adds a single vertex to the current vertex buffer and increments the
-          * `vertexCount` property by 1.
-          * 
-          * This method is called directly by `batchTri` and `batchQuad`.
-          * 
-          * It does not perform any batch limit checking itself, so if you need to call
-          * this method directly, do so in the same way that `batchQuad` does, for example.
-          * @param x The vertex x position.
-          * @param y The vertex y position.
-          * @param tint The tint color value.
+          * Runs the Barrel FX controller.
+          * @param config The Barrel FX controller.
           */
-        def batchVert(x: Double, y: Double, tint: Double): Unit = js.native
+        def onBarrel(config: Barrel): Unit = js.native
         
         /**
-          * A temporary Transform Matrix, re-used internally during batching by the
-          * Shape Game Objects.
+          * Runs the Bloom FX controller.
+          * @param config The Bloom FX controller.
+          * @param width The width of the target.
+          * @param height The height of the target.
           */
-        var calcMatrix: TransformMatrix = js.native
+        def onBloom(config: Bloom, width: Double, height: Double): Unit = js.native
+        
+        /**
+          * Runs the Blur FX controller.
+          * @param config The Blur FX controller.
+          * @param width The width of the target.
+          * @param height The height of the target.
+          */
+        def onBlur(config: Blur, width: Double, height: Double): Unit = js.native
+        
+        /**
+          * Runs the Bokeh FX controller.
+          * @param config The Bokeh FX controller.
+          */
+        def onBokeh(config: Bokeh): Unit = js.native
+        
+        /**
+          * Runs the Circle FX controller.
+          * @param config The Circle FX controller.
+          * @param width The width of the target.
+          * @param height The height of the target.
+          */
+        def onCircle(config: Circle, width: Double, height: Double): Unit = js.native
+        
+        /**
+          * Runs the ColorMatrix FX controller.
+          * @param config The ColorMatrix FX controller.
+          */
+        def onColorMatrix(config: typings.phaser.Phaser.FX.ColorMatrix): Unit = js.native
+        
+        /**
+          * Runs the Displacement FX controller.
+          * @param config The Displacement FX controller.
+          */
+        def onDisplacement(config: Displacement): Unit = js.native
+        
+        /**
+          * Runs the Glow FX controller.
+          * @param config The Glow FX controller.
+          * @param width The width of the target.
+          * @param height The height of the target.
+          */
+        def onGlow(config: Glow, width: Double, height: Double): Unit = js.native
+        
+        /**
+          * Runs the Gradient FX controller.
+          * @param config The Gradient FX controller.
+          */
+        def onGradient(config: Gradient): Unit = js.native
+        
+        /**
+          * Runs the Pixelate FX controller.
+          * @param config The Pixelate FX controller.
+          * @param width The width of the target.
+          * @param height The height of the target.
+          */
+        def onPixelate(config: Pixelate, width: Double, height: Double): Unit = js.native
+        
+        /**
+          * Runs the Shadow FX controller.
+          * @param config The Shadow FX controller.
+          */
+        def onShadow(config: Shadow): Unit = js.native
+        
+        /**
+          * Runs the Shine FX controller.
+          * @param config The Shine FX controller.
+          * @param width The width of the target.
+          * @param height The height of the target.
+          */
+        def onShine(config: Shine, width: Double, height: Double): Unit = js.native
+        
+        /**
+          * Runs the Vignette FX controller.
+          * @param config The Vignette FX controller.
+          */
+        def onVignette(config: Vignette): Unit = js.native
+        
+        /**
+          * Runs the Wipe FX controller.
+          * @param config The Wipe FX controller.
+          */
+        def onWipe(config: Wipe): Unit = js.native
+        
+        /**
+          * An instance of the Pixelate Post FX Pipeline.
+          */
+        var pixelate: PixelateFXPipeline = js.native
+        
+        /**
+          * Takes the source and target and runs a copy from source to target.
+          * 
+          * This will use the current shader and pipeline.
+          */
+        def runDraw(): Unit = js.native
+        
+        /**
+          * An instance of the Shadow Post FX Pipeline.
+          */
+        var shadow: ShadowFXPipeline = js.native
+        
+        /**
+          * An instance of the Shine Post FX Pipeline.
+          */
+        var shine: ShineFXPipeline = js.native
+        
+        /**
+          * The source Render Target.
+          */
+        var source: RenderTarget = js.native
+        
+        /**
+          * The swap Render Target.
+          */
+        var swap: RenderTarget = js.native
+        
+        /**
+          * The target Render Target.
+          */
+        var target: RenderTarget = js.native
+        
+        /**
+          * An instance of the Vignette Post FX Pipeline.
+          */
+        var vignette: VignetteFXPipeline = js.native
+        
+        /**
+          * An instance of the Wipe Post FX Pipeline.
+          */
+        var wipe: WipeFXPipeline = js.native
       }
       
       /**
@@ -1255,7 +2106,50 @@ object Renderer {
           * @param rotation The angle of rotation in radians.
           */
         def setNormalMapRotation(rotation: Double): Unit = js.native
+        
+        /**
+          * A persistent calculation vector used when processing the lights.
+          */
+        var tempVec2: Vector2 = js.native
       }
+      
+      /**
+        * The Mobile Pipeline is the core 2D texture rendering pipeline used by Phaser in WebGL
+        * when the device running the game is detected to be a mobile.
+        * 
+        * You can control the use of this pipeline by setting the Game Configuration
+        * property `autoMobilePipeline`. If set to `false` then all devices will use
+        * the Multi Tint Pipeline. You can also call the `PipelineManager.setDefaultPipeline`
+        * method at run-time, rather than boot-time, to modify the default Game Object
+        * pipeline.
+        * 
+        * Virtually all Game Objects use this pipeline by default, including Sprites, Graphics
+        * and Tilemaps. It handles the batching of quads and tris, as well as methods for
+        * drawing and batching geometry data.
+        * 
+        * The fragment shader it uses can be found in `shaders/src/Mobile.frag`.
+        * The vertex shader it uses can be found in `shaders/src/Mobile.vert`.
+        * 
+        * The default shader attributes for this pipeline are:
+        * 
+        * `inPosition` (vec2, offset 0)
+        * `inTexCoord` (vec2, offset 8)
+        * `inTexId` (float, offset 16)
+        * `inTintEffect` (float, offset 20)
+        * `inTint` (vec4, offset 24, normalized)
+        * 
+        * Note that `inTexId` isn't used in the shader, it's just kept to allow us
+        * to piggy-back on the Multi Tint Pipeline functions.
+        * 
+        * The default shader uniforms for this pipeline are:
+        * 
+        * `uProjectionMatrix` (mat4)
+        * `uMainSampler` (sampler2D)
+        */
+      @js.native
+      trait MobilePipeline
+        extends StObject
+           with MultiPipeline
       
       /**
         * The Multi Pipeline is the core 2D texture rendering pipeline used by Phaser in WebGL.
@@ -1285,12 +2179,14 @@ object Renderer {
         * `uProjectionMatrix` (mat4)
         * `uMainSampler` (sampler2D array)
         * 
-        * If you wish to create a custom pipeline extending from this one, you can use two string
-        * declarations in your fragment shader source: `%count%` and `%forloop%`, where `count` is
-        * used to set the number of `sampler2Ds` available, and `forloop` is a block of GLSL code
-        * that will get the currently bound texture unit.
+        * If you wish to create a custom pipeline extending from this one, you should use the string
+        * declaration `%count%` in your fragment shader source, which is used to set the number of
+        * `sampler2Ds` available. Also add `%getSampler%` so Phaser can inject the getSampler glsl function.
+        * This function can be used to get the pixel vec4 from the texture:
         * 
-        * This pipeline will automatically inject that code for you, should those values exist
+        * `vec4 texture = getSampler(int(outTexId), outTexCoord);`
+        * 
+        * This pipeline will automatically inject the getSampler function for you, should the value exist
         * in your shader source. If you wish to handle this yourself, you can also use the
         * function `Utils.parseFragmentShaderMaxTextures`.
         * 
@@ -1940,6 +2836,12 @@ object Renderer {
         var colorMatrix: ColorMatrix = js.native
         
         /**
+          * If this Post Pipeline belongs to an FX Controller, this is a
+          * reference to it.
+          */
+        var controller: Controller = js.native
+        
+        /**
           * Copy the `source` Render Target to the `target` Render Target.
           * 
           * You can optionally set the brightness factor of the copy.
@@ -2025,6 +2927,18 @@ object Renderer {
         ): Unit = js.native
         
         /**
+          * Copy the `source` Render Target to the `target` Render Target.
+          * 
+          * This method does _not_ bind a shader. It uses whatever shader
+          * is currently bound in this pipeline. It also does _not_ clear
+          * the frame buffers after use. You should take care of both of
+          * these things if you call this method directly.
+          * @param source The source Render Target.
+          * @param target The target Render Target.
+          */
+        def copySprite(source: RenderTarget, target: RenderTarget): Unit = js.native
+        
+        /**
           * Pops the framebuffer from the renderers FBO stack and sets that as the active target,
           * then draws the `source` Render Target to it. It then resets the renderer textures.
           * 
@@ -2038,8 +2952,8 @@ object Renderer {
         def copyToGame(source: RenderTarget): Unit = js.native
         
         /**
-          * Copy the `source` Render Target to the `target` Render Target, using the
-          * given Color Matrix.
+          * Copy the `source` Render Target to the `target` Render Target, using this pipelines
+          * Color Matrix.
           * 
           * The difference between this method and `copyFrame` is that this method
           * uses a color matrix shader, where you have full control over the luminance
@@ -2077,9 +2991,19 @@ object Renderer {
         var fullFrame2: RenderTarget = js.native
         
         /**
-          * If this post-pipeline belongs to a Game Object or Camera, this contains a reference to it.
+          * If this Post Pipeline belongs to a Game Object or Camera,
+          * this property contains a reference to it.
           */
-        var gameObject: GameObject = js.native
+        var gameObject: GameObject | Camera = js.native
+        
+        /**
+          * Returns the FX Controller for this Post FX Pipeline.
+          * 
+          * This is called internally and not typically required outside.
+          * @param controller An FX Controller, or undefined.
+          */
+        def getController(): Controller | PostFXPipeline = js.native
+        def getController(controller: Controller): Controller | PostFXPipeline = js.native
         
         /**
           * A reference to the Half Frame 1 Render Target that belongs to the
@@ -2102,6 +3026,500 @@ object Renderer {
           * However, be aware that these targets are shared between all post fx pipelines.
           */
         var halfFrame2: RenderTarget = js.native
+      }
+      
+      /**
+        * The Pre FX Pipeline is a special kind of pipeline designed specifically for applying
+        * special effects to Game Objects before they are rendered. Where-as the Post FX Pipeline applies an effect _after_ the
+        * object has been rendered, the Pre FX Pipeline allows you to control the rendering of
+        * the object itself - passing it off to its own texture, where multi-buffer compositing
+        * can take place.
+        * 
+        * You can only use the PreFX Pipeline on the following types of Game Objects, or those
+        * that extend from them:
+        * 
+        * Sprite
+        * Image
+        * Text
+        * TileSprite
+        * RenderTexture
+        * Video
+        */
+      @js.native
+      trait PreFXPipeline
+        extends StObject
+           with WebGLPipeline {
+        
+        /**
+          * This method is called by `drawToGame` and `copyToGame`. It takes the source Render Target
+          * and copies it back to the game canvas, or the next frame buffer in the stack, and should
+          * be considered the very last thing this pipeline does.
+          * 
+          * You don't normally need to call this method, or override it, however it is left public
+          * should you wish to do so.
+          * 
+          * Note that it does _not_ set a shader. You should do this yourself if invoking this.
+          * @param source The Render Target to draw to the game.
+          */
+        def bindAndDraw(source: RenderTarget): Unit = js.native
+        
+        /**
+          * Draws the `source1` and `source2` Render Targets to the `target` Render Target
+          * using a linear blend effect, which is controlled by the `strength` parameter.
+          * @param source1 The first source Render Target.
+          * @param source2 The second source Render Target.
+          * @param target The target Render Target.
+          * @param strength The strength of the blend. Default 1.
+          * @param clearAlpha Clear the alpha channel when running `gl.clear` on the target? Default true.
+          */
+        def blendFrames(source1: RenderTarget, source2: RenderTarget): Unit = js.native
+        def blendFrames(source1: RenderTarget, source2: RenderTarget, target: Unit, strength: Double): Unit = js.native
+        def blendFrames(source1: RenderTarget, source2: RenderTarget, target: Unit, strength: Double, clearAlpha: Boolean): Unit = js.native
+        def blendFrames(source1: RenderTarget, source2: RenderTarget, target: Unit, strength: Unit, clearAlpha: Boolean): Unit = js.native
+        def blendFrames(source1: RenderTarget, source2: RenderTarget, target: RenderTarget): Unit = js.native
+        def blendFrames(source1: RenderTarget, source2: RenderTarget, target: RenderTarget, strength: Double): Unit = js.native
+        def blendFrames(
+          source1: RenderTarget,
+          source2: RenderTarget,
+          target: RenderTarget,
+          strength: Double,
+          clearAlpha: Boolean
+        ): Unit = js.native
+        def blendFrames(
+          source1: RenderTarget,
+          source2: RenderTarget,
+          target: RenderTarget,
+          strength: Unit,
+          clearAlpha: Boolean
+        ): Unit = js.native
+        
+        /**
+          * Draws the `source1` and `source2` Render Targets to the `target` Render Target
+          * using an additive blend effect, which is controlled by the `strength` parameter.
+          * @param source1 The first source Render Target.
+          * @param source2 The second source Render Target.
+          * @param target The target Render Target.
+          * @param strength The strength of the blend. Default 1.
+          * @param clearAlpha Clear the alpha channel when running `gl.clear` on the target? Default true.
+          */
+        def blendFramesAdditive(source1: RenderTarget, source2: RenderTarget): Unit = js.native
+        def blendFramesAdditive(source1: RenderTarget, source2: RenderTarget, target: Unit, strength: Double): Unit = js.native
+        def blendFramesAdditive(source1: RenderTarget, source2: RenderTarget, target: Unit, strength: Double, clearAlpha: Boolean): Unit = js.native
+        def blendFramesAdditive(source1: RenderTarget, source2: RenderTarget, target: Unit, strength: Unit, clearAlpha: Boolean): Unit = js.native
+        def blendFramesAdditive(source1: RenderTarget, source2: RenderTarget, target: RenderTarget): Unit = js.native
+        def blendFramesAdditive(source1: RenderTarget, source2: RenderTarget, target: RenderTarget, strength: Double): Unit = js.native
+        def blendFramesAdditive(
+          source1: RenderTarget,
+          source2: RenderTarget,
+          target: RenderTarget,
+          strength: Double,
+          clearAlpha: Boolean
+        ): Unit = js.native
+        def blendFramesAdditive(
+          source1: RenderTarget,
+          source2: RenderTarget,
+          target: RenderTarget,
+          strength: Unit,
+          clearAlpha: Boolean
+        ): Unit = js.native
+        
+        /**
+          * A reference to the Color Matrix Shader belonging to this Pipeline.
+          * 
+          * This property is set during the `boot` method.
+          */
+        var colorMatrixShader: WebGLShader = js.native
+        
+        /**
+          * Draws the `source` Render Target to the `target` Render Target.
+          * 
+          * This is done using whatever the currently bound shader is. This method does
+          * not set a shader. All it does is bind the source texture, set the viewport and UVs
+          * then bind the target framebuffer, clears it and draws the source to it.
+          * 
+          * At the end a null framebuffer is bound. No other clearing-up takes place, so
+          * use this method carefully.
+          * @param source The source Render Target.
+          * @param target The target Render Target.
+          */
+        def copy(source: RenderTarget, target: RenderTarget): Unit = js.native
+        
+        /**
+          * A reference to the Copy Shader belonging to this Pipeline.
+          * 
+          * This shader is used when you call the `copySprite` method.
+          * 
+          * This property is set during the `boot` method.
+          */
+        var copyShader: WebGLShader = js.native
+        
+        /**
+          * Copy the `source` Render Target to the `target` Render Target.
+          * 
+          * No target resizing takes place. If the `source` Render Target is larger than the `target`,
+          * then only a portion the same size as the `target` dimensions is copied across.
+          * 
+          * Calling this method will invoke the `onCopySprite` handler and will also call
+          * the `onFXCopy` callback on the Sprite. Both of these happen prior to the copy, allowing you
+          * to use them to set shader uniforms and other values.
+          * 
+          * You can optionally pass in a ColorMatrix. If so, it will use the ColorMatrix shader
+          * during the copy, allowing you to manipulate the colors to a fine degree.
+          * See the `ColorMatrix` class for more details.
+          * @param source The source Render Target being copied from.
+          * @param target The target Render Target that will be copied to.
+          * @param clear Clear the target before copying? Default true.
+          * @param clearAlpha Clear the alpha channel when running `gl.clear` on the target? Default true.
+          * @param eraseMode Erase source from target using ERASE Blend Mode? Default false.
+          * @param colorMatrix Optional ColorMatrix to use when copying the Sprite.
+          * @param shader The shader to use to copy the target. Defaults to the `copyShader`.
+          */
+        def copySprite(source: RenderTarget, target: RenderTarget): Unit = js.native
+        def copySprite(source: RenderTarget, target: RenderTarget, clear: Boolean): Unit = js.native
+        def copySprite(source: RenderTarget, target: RenderTarget, clear: Boolean, clearAlpha: Boolean): Unit = js.native
+        def copySprite(
+          source: RenderTarget,
+          target: RenderTarget,
+          clear: Boolean,
+          clearAlpha: Boolean,
+          eraseMode: Boolean
+        ): Unit = js.native
+        def copySprite(
+          source: RenderTarget,
+          target: RenderTarget,
+          clear: Boolean,
+          clearAlpha: Boolean,
+          eraseMode: Boolean,
+          colorMatrix: Unit,
+          shader: WebGLShader
+        ): Unit = js.native
+        def copySprite(
+          source: RenderTarget,
+          target: RenderTarget,
+          clear: Boolean,
+          clearAlpha: Boolean,
+          eraseMode: Boolean,
+          colorMatrix: ColorMatrix
+        ): Unit = js.native
+        def copySprite(
+          source: RenderTarget,
+          target: RenderTarget,
+          clear: Boolean,
+          clearAlpha: Boolean,
+          eraseMode: Boolean,
+          colorMatrix: ColorMatrix,
+          shader: WebGLShader
+        ): Unit = js.native
+        def copySprite(
+          source: RenderTarget,
+          target: RenderTarget,
+          clear: Boolean,
+          clearAlpha: Boolean,
+          eraseMode: Unit,
+          colorMatrix: Unit,
+          shader: WebGLShader
+        ): Unit = js.native
+        def copySprite(
+          source: RenderTarget,
+          target: RenderTarget,
+          clear: Boolean,
+          clearAlpha: Boolean,
+          eraseMode: Unit,
+          colorMatrix: ColorMatrix
+        ): Unit = js.native
+        def copySprite(
+          source: RenderTarget,
+          target: RenderTarget,
+          clear: Boolean,
+          clearAlpha: Boolean,
+          eraseMode: Unit,
+          colorMatrix: ColorMatrix,
+          shader: WebGLShader
+        ): Unit = js.native
+        def copySprite(source: RenderTarget, target: RenderTarget, clear: Boolean, clearAlpha: Unit, eraseMode: Boolean): Unit = js.native
+        def copySprite(
+          source: RenderTarget,
+          target: RenderTarget,
+          clear: Boolean,
+          clearAlpha: Unit,
+          eraseMode: Boolean,
+          colorMatrix: Unit,
+          shader: WebGLShader
+        ): Unit = js.native
+        def copySprite(
+          source: RenderTarget,
+          target: RenderTarget,
+          clear: Boolean,
+          clearAlpha: Unit,
+          eraseMode: Boolean,
+          colorMatrix: ColorMatrix
+        ): Unit = js.native
+        def copySprite(
+          source: RenderTarget,
+          target: RenderTarget,
+          clear: Boolean,
+          clearAlpha: Unit,
+          eraseMode: Boolean,
+          colorMatrix: ColorMatrix,
+          shader: WebGLShader
+        ): Unit = js.native
+        def copySprite(
+          source: RenderTarget,
+          target: RenderTarget,
+          clear: Boolean,
+          clearAlpha: Unit,
+          eraseMode: Unit,
+          colorMatrix: Unit,
+          shader: WebGLShader
+        ): Unit = js.native
+        def copySprite(
+          source: RenderTarget,
+          target: RenderTarget,
+          clear: Boolean,
+          clearAlpha: Unit,
+          eraseMode: Unit,
+          colorMatrix: ColorMatrix
+        ): Unit = js.native
+        def copySprite(
+          source: RenderTarget,
+          target: RenderTarget,
+          clear: Boolean,
+          clearAlpha: Unit,
+          eraseMode: Unit,
+          colorMatrix: ColorMatrix,
+          shader: WebGLShader
+        ): Unit = js.native
+        def copySprite(source: RenderTarget, target: RenderTarget, clear: Unit, clearAlpha: Boolean): Unit = js.native
+        def copySprite(source: RenderTarget, target: RenderTarget, clear: Unit, clearAlpha: Boolean, eraseMode: Boolean): Unit = js.native
+        def copySprite(
+          source: RenderTarget,
+          target: RenderTarget,
+          clear: Unit,
+          clearAlpha: Boolean,
+          eraseMode: Boolean,
+          colorMatrix: Unit,
+          shader: WebGLShader
+        ): Unit = js.native
+        def copySprite(
+          source: RenderTarget,
+          target: RenderTarget,
+          clear: Unit,
+          clearAlpha: Boolean,
+          eraseMode: Boolean,
+          colorMatrix: ColorMatrix
+        ): Unit = js.native
+        def copySprite(
+          source: RenderTarget,
+          target: RenderTarget,
+          clear: Unit,
+          clearAlpha: Boolean,
+          eraseMode: Boolean,
+          colorMatrix: ColorMatrix,
+          shader: WebGLShader
+        ): Unit = js.native
+        def copySprite(
+          source: RenderTarget,
+          target: RenderTarget,
+          clear: Unit,
+          clearAlpha: Boolean,
+          eraseMode: Unit,
+          colorMatrix: Unit,
+          shader: WebGLShader
+        ): Unit = js.native
+        def copySprite(
+          source: RenderTarget,
+          target: RenderTarget,
+          clear: Unit,
+          clearAlpha: Boolean,
+          eraseMode: Unit,
+          colorMatrix: ColorMatrix
+        ): Unit = js.native
+        def copySprite(
+          source: RenderTarget,
+          target: RenderTarget,
+          clear: Unit,
+          clearAlpha: Boolean,
+          eraseMode: Unit,
+          colorMatrix: ColorMatrix,
+          shader: WebGLShader
+        ): Unit = js.native
+        def copySprite(source: RenderTarget, target: RenderTarget, clear: Unit, clearAlpha: Unit, eraseMode: Boolean): Unit = js.native
+        def copySprite(
+          source: RenderTarget,
+          target: RenderTarget,
+          clear: Unit,
+          clearAlpha: Unit,
+          eraseMode: Boolean,
+          colorMatrix: Unit,
+          shader: WebGLShader
+        ): Unit = js.native
+        def copySprite(
+          source: RenderTarget,
+          target: RenderTarget,
+          clear: Unit,
+          clearAlpha: Unit,
+          eraseMode: Boolean,
+          colorMatrix: ColorMatrix
+        ): Unit = js.native
+        def copySprite(
+          source: RenderTarget,
+          target: RenderTarget,
+          clear: Unit,
+          clearAlpha: Unit,
+          eraseMode: Boolean,
+          colorMatrix: ColorMatrix,
+          shader: WebGLShader
+        ): Unit = js.native
+        def copySprite(
+          source: RenderTarget,
+          target: RenderTarget,
+          clear: Unit,
+          clearAlpha: Unit,
+          eraseMode: Unit,
+          colorMatrix: Unit,
+          shader: WebGLShader
+        ): Unit = js.native
+        def copySprite(
+          source: RenderTarget,
+          target: RenderTarget,
+          clear: Unit,
+          clearAlpha: Unit,
+          eraseMode: Unit,
+          colorMatrix: ColorMatrix
+        ): Unit = js.native
+        def copySprite(
+          source: RenderTarget,
+          target: RenderTarget,
+          clear: Unit,
+          clearAlpha: Unit,
+          eraseMode: Unit,
+          colorMatrix: ColorMatrix,
+          shader: WebGLShader
+        ): Unit = js.native
+        
+        /**
+          * This method will copy the given Render Target to the game canvas using the `gameShader`.
+          * 
+          * Unless you've changed it, the `gameShader` copies the target without modifying it, just
+          * ensuring it is placed in the correct location on the canvas.
+          * 
+          * If you wish to draw the target with and apply the fragment shader at the same time,
+          * see the `drawToGame` method instead.
+          * 
+          * This method should be the final thing called in your pipeline.
+          * @param source The Render Target to copy to the game.
+          */
+        def copyToGame(source: RenderTarget): Unit = js.native
+        
+        /**
+          * A reference to the Draw Sprite Shader belonging to this Pipeline.
+          * 
+          * This shader is used when the sprite is drawn to this fbo (or to the game if drawToFrame is false)
+          * 
+          * This property is set during the `boot` method.
+          */
+        var drawSpriteShader: WebGLShader = js.native
+        
+        /**
+          * This method will copy the given Render Target to the game canvas using the `copyShader`.
+          * 
+          * This applies the results of the copy shader during the draw.
+          * 
+          * If you wish to copy the target without any effects see the `copyToGame` method instead.
+          * 
+          * This method should be the final thing called in your pipeline.
+          * @param source The Render Target to draw to the game.
+          */
+        def drawToGame(source: RenderTarget): Unit = js.native
+        
+        /**
+          * The full-screen Render Target that the sprite is first drawn to.
+          */
+        var fsTarget: RenderTarget = js.native
+        
+        /**
+          * A reference to the Game Draw Shader belonging to this Pipeline.
+          * 
+          * This shader draws the fbo to the game.
+          * 
+          * This property is set during the `boot` method.
+          */
+        var gameShader: WebGLShader = js.native
+        
+        /**
+          * This callback is invoked when you call the `copySprite` method.
+          * 
+          * It will fire after the shader has been set, but before the source target has been copied,
+          * so use it to set any additional uniforms you may need.
+          * 
+          * Note: Manipulating the Sprite during this callback will _not_ change the Render Targets.
+          * @param source The source Render Target being copied from.
+          * @param target The target Render Target that will be copied to.
+          * @param gameObject The Sprite being copied.
+          */
+        def onCopySprite(source: RenderTarget, target: RenderTarget, gameObject: Sprite): Unit = js.native
+        
+        def onDraw(target: RenderTarget, swapTarget: Unit, altSwapTarget: RenderTarget): Unit = js.native
+        def onDraw(target: RenderTarget, swapTarget: RenderTarget, altSwapTarget: RenderTarget): Unit = js.native
+        
+        /**
+          * This callback is invoked when a sprite is drawn by this pipeline.
+          * 
+          * It will fire after the shader has been set, but before the sprite has been drawn,
+          * so use it to set any additional uniforms you may need.
+          * 
+          * Note: Manipulating the Sprite during this callback will _not_ change how it is drawn to the Render Target.
+          * @param gameObject The Sprite being drawn.
+          * @param target The Render Target the Sprite will be drawn to.
+          */
+        def onDrawSprite(gameObject: Sprite, target: RenderTarget): Unit = js.native
+        
+        /**
+          * The WebGLBuffer that holds the quadVertexData.
+          */
+        val quadVertexBuffer: WebGLBuffer = js.native
+        
+        /**
+          * Raw byte buffer of vertices used specifically during the copySprite method.
+          */
+        val quadVertexData: js.typedarray.ArrayBuffer = js.native
+        
+        /**
+          * Float32 view of the quad array buffer.
+          */
+        var quadVertexViewF32: js.typedarray.Float32Array = js.native
+        
+        /**
+          * Resets the quad vertice UV values to their default settings.
+          * 
+          * The quad is used by the copy shader in this pipeline.
+          */
+        def resetUVs(): Unit = js.native
+        
+        /**
+          * Sets the vertex UV coordinates of the quad used by the copy shaders
+          * so that they correctly adjust the texture coordinates for a blit frame effect.
+          * 
+          * Be sure to call `resetUVs` once you have finished manipulating the UV coordinates.
+          * @param source The source Render Target.
+          * @param target The target Render Target.
+          */
+        def setTargetUVs(source: RenderTarget, target: RenderTarget): Unit = js.native
+        
+        /**
+          * Set the UV values for the 6 vertices that make up the quad used by the copy shader.
+          * 
+          * Be sure to call `resetUVs` once you have finished manipulating the UV coordinates.
+          * @param uA The u value of vertex A.
+          * @param vA The v value of vertex A.
+          * @param uB The u value of vertex B.
+          * @param vB The v value of vertex B.
+          * @param uC The u value of vertex C.
+          * @param vC The v value of vertex C.
+          * @param uD The u value of vertex D.
+          * @param vD The v value of vertex D.
+          */
+        def setUVs(uA: Double, vA: Double, uB: Double, vB: Double, uC: Double, vC: Double, uD: Double, vD: Double): Unit = js.native
       }
       
       /**
@@ -2333,6 +3751,7 @@ object Renderer {
           * @param clear Clear the target before copying? Default true.
           * @param clearAlpha Clear the alpha channel when running `gl.clear` on the target? Default true.
           * @param eraseMode Erase source from target using ERASE Blend Mode? Default false.
+          * @param flipY Flip the UV on the Y axis before drawing? Default false.
           */
         def blitFrame(source: RenderTarget, target: RenderTarget): Unit = js.native
         def blitFrame(source: RenderTarget, target: RenderTarget, brightness: Double): Unit = js.native
@@ -2357,8 +3776,44 @@ object Renderer {
           target: RenderTarget,
           brightness: Double,
           clear: Boolean,
+          clearAlpha: Boolean,
+          eraseMode: Boolean,
+          flipY: Boolean
+        ): Unit = js.native
+        def blitFrame(
+          source: RenderTarget,
+          target: RenderTarget,
+          brightness: Double,
+          clear: Boolean,
+          clearAlpha: Boolean,
+          eraseMode: Unit,
+          flipY: Boolean
+        ): Unit = js.native
+        def blitFrame(
+          source: RenderTarget,
+          target: RenderTarget,
+          brightness: Double,
+          clear: Boolean,
           clearAlpha: Unit,
           eraseMode: Boolean
+        ): Unit = js.native
+        def blitFrame(
+          source: RenderTarget,
+          target: RenderTarget,
+          brightness: Double,
+          clear: Boolean,
+          clearAlpha: Unit,
+          eraseMode: Boolean,
+          flipY: Boolean
+        ): Unit = js.native
+        def blitFrame(
+          source: RenderTarget,
+          target: RenderTarget,
+          brightness: Double,
+          clear: Boolean,
+          clearAlpha: Unit,
+          eraseMode: Unit,
+          flipY: Boolean
         ): Unit = js.native
         def blitFrame(source: RenderTarget, target: RenderTarget, brightness: Double, clear: Unit, clearAlpha: Boolean): Unit = js.native
         def blitFrame(
@@ -2374,8 +3829,44 @@ object Renderer {
           target: RenderTarget,
           brightness: Double,
           clear: Unit,
+          clearAlpha: Boolean,
+          eraseMode: Boolean,
+          flipY: Boolean
+        ): Unit = js.native
+        def blitFrame(
+          source: RenderTarget,
+          target: RenderTarget,
+          brightness: Double,
+          clear: Unit,
+          clearAlpha: Boolean,
+          eraseMode: Unit,
+          flipY: Boolean
+        ): Unit = js.native
+        def blitFrame(
+          source: RenderTarget,
+          target: RenderTarget,
+          brightness: Double,
+          clear: Unit,
           clearAlpha: Unit,
           eraseMode: Boolean
+        ): Unit = js.native
+        def blitFrame(
+          source: RenderTarget,
+          target: RenderTarget,
+          brightness: Double,
+          clear: Unit,
+          clearAlpha: Unit,
+          eraseMode: Boolean,
+          flipY: Boolean
+        ): Unit = js.native
+        def blitFrame(
+          source: RenderTarget,
+          target: RenderTarget,
+          brightness: Double,
+          clear: Unit,
+          clearAlpha: Unit,
+          eraseMode: Unit,
+          flipY: Boolean
         ): Unit = js.native
         def blitFrame(source: RenderTarget, target: RenderTarget, brightness: Unit, clear: Boolean): Unit = js.native
         def blitFrame(source: RenderTarget, target: RenderTarget, brightness: Unit, clear: Boolean, clearAlpha: Boolean): Unit = js.native
@@ -2392,8 +3883,44 @@ object Renderer {
           target: RenderTarget,
           brightness: Unit,
           clear: Boolean,
+          clearAlpha: Boolean,
+          eraseMode: Boolean,
+          flipY: Boolean
+        ): Unit = js.native
+        def blitFrame(
+          source: RenderTarget,
+          target: RenderTarget,
+          brightness: Unit,
+          clear: Boolean,
+          clearAlpha: Boolean,
+          eraseMode: Unit,
+          flipY: Boolean
+        ): Unit = js.native
+        def blitFrame(
+          source: RenderTarget,
+          target: RenderTarget,
+          brightness: Unit,
+          clear: Boolean,
           clearAlpha: Unit,
           eraseMode: Boolean
+        ): Unit = js.native
+        def blitFrame(
+          source: RenderTarget,
+          target: RenderTarget,
+          brightness: Unit,
+          clear: Boolean,
+          clearAlpha: Unit,
+          eraseMode: Boolean,
+          flipY: Boolean
+        ): Unit = js.native
+        def blitFrame(
+          source: RenderTarget,
+          target: RenderTarget,
+          brightness: Unit,
+          clear: Boolean,
+          clearAlpha: Unit,
+          eraseMode: Unit,
+          flipY: Boolean
         ): Unit = js.native
         def blitFrame(source: RenderTarget, target: RenderTarget, brightness: Unit, clear: Unit, clearAlpha: Boolean): Unit = js.native
         def blitFrame(
@@ -2409,8 +3936,44 @@ object Renderer {
           target: RenderTarget,
           brightness: Unit,
           clear: Unit,
+          clearAlpha: Boolean,
+          eraseMode: Boolean,
+          flipY: Boolean
+        ): Unit = js.native
+        def blitFrame(
+          source: RenderTarget,
+          target: RenderTarget,
+          brightness: Unit,
+          clear: Unit,
+          clearAlpha: Boolean,
+          eraseMode: Unit,
+          flipY: Boolean
+        ): Unit = js.native
+        def blitFrame(
+          source: RenderTarget,
+          target: RenderTarget,
+          brightness: Unit,
+          clear: Unit,
           clearAlpha: Unit,
           eraseMode: Boolean
+        ): Unit = js.native
+        def blitFrame(
+          source: RenderTarget,
+          target: RenderTarget,
+          brightness: Unit,
+          clear: Unit,
+          clearAlpha: Unit,
+          eraseMode: Boolean,
+          flipY: Boolean
+        ): Unit = js.native
+        def blitFrame(
+          source: RenderTarget,
+          target: RenderTarget,
+          brightness: Unit,
+          clear: Unit,
+          clearAlpha: Unit,
+          eraseMode: Unit,
+          flipY: Boolean
         ): Unit = js.native
         
         /**
@@ -2732,11 +4295,24 @@ object Renderer {
       var destroy: Any = js.native
       
       /**
+        * Force the WebGL Texture to use the CLAMP_TO_EDGE wrap mode, even if a power of two?
+        * 
+        * If `false` it will use `gl.REPEAT` instead, which may be required for some effects, such
+        * as using this Render Target as a texture for a Shader.
+        */
+      var forceClamp: Boolean = js.native
+      
+      /**
         * The WebGLFramebuffer of this Render Target.
         * 
         * This is created in the `RenderTarget.resize` method.
         */
       var framebuffer: WebGLFramebuffer = js.native
+      
+      /**
+        * Does this Render Target have a Depth Buffer?
+        */
+      val hasDepthBuffer: Boolean = js.native
       
       /**
         * The height of the texture.
@@ -2832,6 +4408,37 @@ object Renderer {
         * Toggle this property to enable or disable a pipeline from rendering anything.
         */
       var active: Boolean = js.native
+      
+      /**
+        * The currently active WebGLBuffer.
+        */
+      var activeBuffer: WebGLBuffer = js.native
+      
+      /**
+        * The currently active WebGLTextures, used as part of the batch process.
+        * 
+        * Reset to empty as part of the bind method.
+        * 
+        * Treat this array as read-only.
+        */
+      var activeTextures: js.Array[WebGLTexture] = js.native
+      
+      /**
+        * Adds the given texture to the current WebGL Pipeline Batch Entry and
+        * increases the batch entry unit and maxUnit values by 1.
+        * @param texture The WebGLTexture assigned to this batch entry.
+        */
+      def addTextureToBatch(texture: WebGLTexture): Unit = js.native
+      
+      /**
+        * The temporary Pipeline batch. This array contains the batch entries for
+        * the current frame, which is a package of textures and vertex offsets used
+        * for drawing. This package is built dynamically as the frame is built
+        * and cleared during the flush method.
+        * 
+        * Treat this array and all of its contents as read-only.
+        */
+      var batch: js.Array[WebGLPipelineBatchEntry] = js.native
       
       def batchQuad(
         gameObject: Null,
@@ -3609,6 +5216,22 @@ object Renderer {
       var config: WebGLPipelineConfig = js.native
       
       /**
+        * Creates a new WebGL Pipeline Batch Entry, sets the texture unit as zero
+        * and pushes the entry into the batch.
+        * @param texture The WebGLTexture assigned to this batch entry.
+        */
+      def createBatch(texture: WebGLTexture): Double = js.native
+      
+      /**
+        * The most recently created Pipeline batch entry.
+        * 
+        * Reset to null as part of the flush method.
+        * 
+        * Treat this value as read-only.
+        */
+      var currentBatch: WebGLPipelineBatchEntry | Null = js.native
+      
+      /**
         * A reference to the currently bound Render Target instance from the `WebGLPipeline.renderTargets` array.
         */
       var currentRenderTarget: RenderTarget = js.native
@@ -3620,6 +5243,15 @@ object Renderer {
         * an array look-up.
         */
       var currentShader: WebGLShader = js.native
+      
+      /**
+        * The most recently bound WebGLTexture, used as part of the batch process.
+        * 
+        * Reset to null as part of the flush method.
+        * 
+        * Treat this value as read-only.
+        */
+      var currentTexture: WebGLTexture | Null = js.native
       
       /**
         * Holds the most recently assigned texture unit.
@@ -3675,6 +5307,15 @@ object Renderer {
         texture: WebGLTexture,
         flipUV: Boolean
       ): Unit = js.native
+      
+      /**
+        * Adjusts this pipelines ortho Projection Matrix to flip the y
+        * and bottom values. Call with 'false' as the parameter to flip
+        * them back again.
+        * @param flipY Flip the y and bottom values? Default true.
+        */
+      def flipProjectionMatrix(): Unit = js.native
+      def flipProjectionMatrix(flipY: Boolean): Unit = js.native
       
       /**
         * Uploads the vertex data and emits a draw call for the current batch of vertices.
@@ -3734,12 +5375,17 @@ object Renderer {
       val isPostFX: Boolean = js.native
       
       /**
+        * Indicates if this is a Pre FX Pipeline, or not.
+        */
+      val isPreFX: Boolean = js.native
+      
+      /**
         * A reference to the WebGL Pipeline Manager.
         * 
         * This is initially undefined and only set when this pipeline is added
         * to the manager.
         */
-      var manager: PipelineManager = js.native
+      var manager: PipelineManager | Null = js.native
       
       /**
         * Name of the pipeline. Used for identification and setting from Game Objects.
@@ -3827,7 +5473,7 @@ object Renderer {
       def onBoot(): Unit = js.native
       
       /**
-        * This method is only used by Post FX Pipelines and those that extend from them.
+        * This method is only used by Sprite FX and Post FX Pipelines and those that extend from them.
         * 
         * This method is called every time the `postBatch` method is called and is passed a
         * reference to the current render target.
@@ -3836,8 +5482,10 @@ object Renderer {
         * however, you can do as much additional processing as you like in this method if
         * you override it from within your own pipelines.
         * @param renderTarget The Render Target.
+        * @param swapTarget A Swap Render Target, useful for double-buffer effects. Only set by SpriteFX Pipelines.
         */
       def onDraw(renderTarget: RenderTarget): Unit = js.native
+      def onDraw(renderTarget: RenderTarget, swapTarget: RenderTarget): Unit = js.native
       
       /**
         * By default this is an empty method hook that you can override and use in your own custom pipelines.
@@ -3912,6 +5560,8 @@ object Renderer {
         * 
         * It calls the `onDraw` hook followed by the `onPostBatch` hook, which can be used to perform
         * additional Post FX Pipeline processing.
+        * 
+        * It is also called as part of the `PipelineManager.postBatch` method when processing Post FX Pipelines.
         * @param gameObject The Game Object or Camera that invoked this pipeline, if any.
         */
       def postBatch(): this.type = js.native
@@ -3923,6 +5573,8 @@ object Renderer {
         * belonging to a Game Object is about to be added to the batch. When this is called, the
         * renderer has just performed a flush. It will bind the current render target, if any are set
         * and finally call the `onPreBatch` hook.
+        * 
+        * It is also called as part of the `PipelineManager.preBatch` method when processing Post FX Pipelines.
         * @param gameObject The Game Object or Camera that invoked this pipeline, if any.
         */
       def preBatch(): this.type = js.native
@@ -3943,6 +5595,24 @@ object Renderer {
         * The cached width of the Projection matrix.
         */
       var projectionWidth: Double = js.native
+      
+      /**
+        * Takes the given WebGLTexture and determines what to do with it.
+        * 
+        * If there is no current batch (i.e. after a flush) it will create a new
+        * batch from it.
+        * 
+        * If the texture is already bound, it will return the current texture unit.
+        * 
+        * If the texture already exists in the current batch, the unit gets reset
+        * to match it.
+        * 
+        * If the texture cannot be found in the current batch, and it supports
+        * multiple textures, it's added into the batch and the unit indexes are
+        * advanced.
+        * @param texture The WebGLTexture assigned to this batch entry.
+        */
+      def pushBatch(texture: WebGLTexture): Double = js.native
       
       /**
         * This method is called every time the Pipeline Manager rebinds this pipeline.
@@ -4241,6 +5911,21 @@ object Renderer {
       def set4iv(name: String, arr: js.typedarray.Float32Array, shader: WebGLShader): this.type = js.native
       
       /**
+        * Sets a boolean uniform value based on the given name on the currently set shader.
+        * 
+        * The current shader is bound, before the uniform is set, making it active within the
+        * WebGLRenderer. This means you can safely call this method from a location such as
+        * a Scene `create` or `update` method. However, when working within a Shader file
+        * directly, use the `WebGLShader` method equivalent instead, to avoid the program
+        * being set.
+        * @param name The name of the uniform to set.
+        * @param value The new value of the `boolean` uniform.
+        * @param shader The shader to set the value on. If not given, the `currentShader` is used.
+        */
+      def setBoolean(name: String, value: Boolean): this.type = js.native
+      def setBoolean(name: String, value: Boolean, shader: WebGLShader): this.type = js.native
+      
+      /**
         * Custom pipelines can use this method in order to perform any required pre-batch tasks
         * for the given Game Object. It must return the texture unit the Game Object was assigned.
         * @param gameObject The Game Object being rendered or added to the batch.
@@ -4292,8 +5977,8 @@ object Renderer {
         * directly, use the `WebGLShader` method equivalent instead, to avoid the program
         * being set.
         * @param name The name of the uniform to set.
-        * @param transpose Should the matrix be transpose
-        * @param matrix Matrix data
+        * @param transpose Whether to transpose the matrix. Should be `false`.
+        * @param matrix The matrix data. If using a Matrix4 this should be the `Matrix4.val` property.
         * @param shader The shader to set the value on. If not given, the `currentShader` is used.
         */
       def setMatrix4fv(name: String, transpose: Boolean, matrix: js.typedarray.Float32Array): this.type = js.native
@@ -4313,9 +5998,12 @@ object Renderer {
         * Sets the currently active shader within this pipeline.
         * @param shader The shader to set as being current.
         * @param setAttributes Should the vertex attribute pointers be set? Default false.
+        * @param vertexBuffer The vertex buffer to be set before the shader is bound. Defaults to the one owned by this pipeline.
         */
       def setShader(shader: WebGLShader): this.type = js.native
       def setShader(shader: WebGLShader, setAttributes: Boolean): this.type = js.native
+      def setShader(shader: WebGLShader, setAttributes: Boolean, vertexBuffer: WebGLBuffer): this.type = js.native
+      def setShader(shader: WebGLShader, setAttributes: Unit, vertexBuffer: WebGLBuffer): this.type = js.native
       
       /**
         * Destroys all shaders currently set in the `WebGLPipeline.shaders` array and then parses the given
@@ -4340,16 +6028,20 @@ object Renderer {
         * 
         * This can be used for mapping time uniform values, such as `iTime`.
         * @param name The name of the uniform to set.
+        * @param shader The shader to set the value on. If not given, the `currentShader` is used.
         */
       def setTime(name: String): this.type = js.native
+      def setTime(name: String, shader: WebGLShader): this.type = js.native
       
       /**
         * Binds the vertex buffer to be the active ARRAY_BUFFER on the WebGL context.
         * 
         * It first checks to see if it's already set as the active buffer and only
         * binds itself if not.
+        * @param buffer The Vertex Buffer to be bound. Defaults to the one owned by this pipeline.
         */
       def setVertexBuffer(): Boolean = js.native
+      def setVertexBuffer(buffer: WebGLBuffer): Boolean = js.native
       
       /**
         * An array of all the WebGLShader instances that belong to this pipeline.
@@ -4394,6 +6086,12 @@ object Renderer {
         * pipeline is set.
         */
       def updateProjectionMatrix(): Unit = js.native
+      
+      /**
+        * Returns the number of vertices that can be added to the current batch before
+        * it will trigger a flush to happen.
+        */
+      def vertexAvailable(): Double = js.native
       
       /**
         * The WebGLBuffer that holds the vertex data.
@@ -4468,6 +6166,14 @@ object Renderer {
       def addBlendMode(func: js.Array[GLenum], equation: GLenum): Double = js.native
       
       /**
+        * Binds necessary resources and renders the mask to a separated framebuffer.
+        * The framebuffer for the masked object is also bound for further use.
+        * @param mask The BitmapMask instance that called beginMask.
+        * @param camera The camera rendering the current mask.
+        */
+      def beginBitmapMask(mask: BitmapMask, camera: Camera): Unit = js.native
+      
+      /**
         * Binds the WebGL Renderers Render Target, so all drawn content is now redirected to it.
         * 
         * Make sure to call `endCapture` when you are finished.
@@ -4516,18 +6222,52 @@ object Renderer {
       def canvasToTexture(srcCanvas: HTMLCanvasElement, dstTexture: WebGLTexture, noRepeat: Unit, flipY: Boolean): WebGLTexture = js.native
       
       /**
-        * Clears the texture that was directly bound to texture unit one and
-        * increases the start active texture counter.
+        * This method is only available in the Debug Build of Phaser, or a build with the
+        * `WEBGL_DEBUG` flag set in the Webpack Config.
+        * 
+        * Phaser v3.60 Debug has a build of Spector.js embedded in it, which is a WebGL inspector
+        * that allows for live inspection of your WebGL calls. Although it's easy to add the Spector
+        * extension to a desktop browsr, by embedding it in Phaser we can make it available in mobile
+        * browsers too, making it a powerful tool for debugging WebGL games on mobile devices where
+        * extensions are not permitted.
+        * 
+        * See https://github.com/BabylonJS/Spector.js for more details.
+        * 
+        * This method will capture the current WebGL frame and send it to the Spector.js tool for inspection.
+        * @param quickCapture If `true` thumbnails are not captured in order to speed up the capture. Default false.
+        * @param fullCapture If `true` all details are captured. Default false.
         */
-      def clearNormalMap(): Unit = js.native
+      def captureFrame(): Unit = js.native
+      def captureFrame(quickCapture: Boolean): Unit = js.native
+      def captureFrame(quickCapture: Boolean, fullCapture: Boolean): Unit = js.native
+      def captureFrame(quickCapture: Unit, fullCapture: Boolean): Unit = js.native
       
       /**
-        * Clears the texture that was directly bound to texture unit zero.
+        * This method is only available in the Debug Build of Phaser, or a build with the
+        * `WEBGL_DEBUG` flag set in the Webpack Config.
+        * 
+        * Phaser v3.60 Debug has a build of Spector.js embedded in it, which is a WebGL inspector
+        * that allows for live inspection of your WebGL calls. Although it's easy to add the Spector
+        * extension to a desktop browsr, by embedding it in Phaser we can make it available in mobile
+        * browsers too, making it a powerful tool for debugging WebGL games on mobile devices where
+        * extensions are not permitted.
+        * 
+        * See https://github.com/BabylonJS/Spector.js for more details.
+        * 
+        * This method will capture the next WebGL frame and send it to the Spector.js tool for inspection.
         */
-      def clearTextureZero(): Unit = js.native
+      def captureNextFrame(): Unit = js.native
       
       /**
-        * Stores the supported WebGL texture compression formats.
+        * Disables the STENCIL_TEST but does not change the status
+        * of the current stencil mask.
+        */
+      def clearStencilMask(): Unit = js.native
+      
+      /**
+        * Stores the WebGL texture compression formats that this device and browser supports.
+        * 
+        * Support for using compressed texture formats was added in Phaser version 3.60.
         */
       var compression: WebGLTextureCompression = js.native
       
@@ -4555,7 +6295,7 @@ object Renderer {
       
       /**
         * Creates a new WebGL Texture based on the given Canvas Element.
-        * @param srcCanvas The Canvas to create the WebGL Texture from
+        * @param srcCanvas The Canvas to create the WebGL Texture from.
         * @param noRepeat Should this canvas be allowed to set `REPEAT` (such as for Text objects?) Default false.
         * @param flipY Should the WebGL Texture set `UNPACK_MULTIPLY_FLIP_Y`? Default false.
         */
@@ -4710,6 +6450,111 @@ object Renderer {
         forceSize: Unit,
         flipY: Boolean
       ): WebGLTexture = js.native
+      def createTexture2D(
+        mipLevel: Double,
+        minFilter: Double,
+        magFilter: Double,
+        wrapT: Double,
+        wrapS: Double,
+        format: Double,
+        pixels: Unit,
+        width: Double,
+        height: Double
+      ): WebGLTexture = js.native
+      def createTexture2D(
+        mipLevel: Double,
+        minFilter: Double,
+        magFilter: Double,
+        wrapT: Double,
+        wrapS: Double,
+        format: Double,
+        pixels: Unit,
+        width: Double,
+        height: Double,
+        pma: Boolean
+      ): WebGLTexture = js.native
+      def createTexture2D(
+        mipLevel: Double,
+        minFilter: Double,
+        magFilter: Double,
+        wrapT: Double,
+        wrapS: Double,
+        format: Double,
+        pixels: Unit,
+        width: Double,
+        height: Double,
+        pma: Boolean,
+        forceSize: Boolean
+      ): WebGLTexture = js.native
+      def createTexture2D(
+        mipLevel: Double,
+        minFilter: Double,
+        magFilter: Double,
+        wrapT: Double,
+        wrapS: Double,
+        format: Double,
+        pixels: Unit,
+        width: Double,
+        height: Double,
+        pma: Boolean,
+        forceSize: Boolean,
+        flipY: Boolean
+      ): WebGLTexture = js.native
+      def createTexture2D(
+        mipLevel: Double,
+        minFilter: Double,
+        magFilter: Double,
+        wrapT: Double,
+        wrapS: Double,
+        format: Double,
+        pixels: Unit,
+        width: Double,
+        height: Double,
+        pma: Boolean,
+        forceSize: Unit,
+        flipY: Boolean
+      ): WebGLTexture = js.native
+      def createTexture2D(
+        mipLevel: Double,
+        minFilter: Double,
+        magFilter: Double,
+        wrapT: Double,
+        wrapS: Double,
+        format: Double,
+        pixels: Unit,
+        width: Double,
+        height: Double,
+        pma: Unit,
+        forceSize: Boolean
+      ): WebGLTexture = js.native
+      def createTexture2D(
+        mipLevel: Double,
+        minFilter: Double,
+        magFilter: Double,
+        wrapT: Double,
+        wrapS: Double,
+        format: Double,
+        pixels: Unit,
+        width: Double,
+        height: Double,
+        pma: Unit,
+        forceSize: Boolean,
+        flipY: Boolean
+      ): WebGLTexture = js.native
+      def createTexture2D(
+        mipLevel: Double,
+        minFilter: Double,
+        magFilter: Double,
+        wrapT: Double,
+        wrapS: Double,
+        format: Double,
+        pixels: Unit,
+        width: Double,
+        height: Double,
+        pma: Unit,
+        forceSize: Unit,
+        flipY: Boolean
+      ): WebGLTexture = js.native
       
       /**
         * Creates a texture from an image source. If the source is not valid it creates an empty texture.
@@ -4717,8 +6562,10 @@ object Renderer {
         * @param width The width of the texture.
         * @param height The height of the texture.
         * @param scaleMode The scale mode to be used by the texture.
+        * @param forceClamp Force the texture to use the CLAMP_TO_EDGE wrap mode, even if a power of two? Default false.
         */
-      def createTextureFromSource(source: js.Object, width: Double, height: Double, scaleMode: Double): WebGLTexture = js.native
+      def createTextureFromSource(source: js.Object, width: Double, height: Double, scaleMode: Double): WebGLTexture | Null = js.native
+      def createTextureFromSource(source: js.Object, width: Double, height: Double, scaleMode: Double, forceClamp: Boolean): WebGLTexture | Null = js.native
       
       /**
         * Wrapper for creating a vertex buffer.
@@ -4739,11 +6586,6 @@ object Renderer {
       def createVideoTexture(srcVideo: HTMLVideoElement, noRepeat: Unit, flipY: Boolean): WebGLTexture = js.native
       
       /**
-        * Cached value for the last texture unit that was used.
-        */
-      var currentActiveTexture: Double = js.native
-      
-      /**
         * Current blend mode in use
         */
       var currentBlendMode: Double = js.native
@@ -4762,6 +6604,12 @@ object Renderer {
         * Internal property that tracks the currently set mask.
         */
       var currentMask: Any = js.native
+      
+      /**
+        * The currently bound normal map texture at texture unit one, if any.
+        */
+      @JSName("currentNormalMap;")
+      var currentNormalMapSemicolon: WebGLTexture | Null = js.native
       
       /**
         * Current WebGLProgram in use.
@@ -4806,10 +6654,17 @@ object Renderer {
         * Calls `GL.deleteTexture` on the given WebGLTexture and also optionally
         * resets the currently defined textures.
         * @param texture The WebGL Texture to be deleted.
-        * @param reset Call the `resetTextures` method after deleting this texture? Default false.
         */
       def deleteTexture(texture: WebGLTexture): this.type = js.native
-      def deleteTexture(texture: WebGLTexture, reset: Boolean): this.type = js.native
+      
+      /**
+        * Binds necessary resources and renders the mask to a separated framebuffer.
+        * The framebuffer for the masked object is also bound for further use.
+        * @param mask The BitmapMask instance that called beginMask.
+        * @param camera The camera rendering the current mask.
+        * @param bitmapMaskPipeline The BitmapMask Pipeline instance that is requesting the draw.
+        */
+      def drawBitmapMask(mask: BitmapMask, camera: Camera, bitmapMaskPipeline: BitmapMaskPipeline): Unit = js.native
       
       /**
         * Cached drawing buffer height to reduce gl calls.
@@ -4855,10 +6710,42 @@ object Renderer {
       def getAspectRatio(): Double = js.native
       
       /**
+        * Returns a compressed texture format GLenum name based on the given format.
+        * @param baseFormat The Base Format to check.
+        * @param format An optional GLenum format to check within the base format.
+        */
+      def getCompressedTextureName(baseFormat: String): String = js.native
+      def getCompressedTextureName(baseFormat: String, format: GLenum): String = js.native
+      
+      /**
+        * Determines which compressed texture formats this browser and device supports.
+        * 
+        * Called automatically as part of the WebGL Renderer init process. If you need to investigate
+        * which formats it supports, see the `Phaser.Renderer.WebGL.WebGLRenderer#compression` property instead.
+        */
+      def getCompressedTextures(): WebGLTextureCompression = js.native
+      
+      /**
         * Loads a WebGL extension
         * @param extensionName The name of the extension to load.
         */
       def getExtension(extensionName: String): js.Object = js.native
+      
+      /**
+        * This method is only available in the Debug Build of Phaser, or a build with the
+        * `WEBGL_DEBUG` flag set in the Webpack Config.
+        * 
+        * Phaser v3.60 Debug has a build of Spector.js embedded in it, which is a WebGL inspector
+        * that allows for live inspection of your WebGL calls. Although it's easy to add the Spector
+        * extension to a desktop browsr, by embedding it in Phaser we can make it available in mobile
+        * browsers too, making it a powerful tool for debugging WebGL games on mobile devices where
+        * extensions are not permitted.
+        * 
+        * See https://github.com/BabylonJS/Spector.js for more details.
+        * 
+        * This method will return the current FPS of the WebGL canvas.
+        */
+      def getFps(): Double = js.native
       
       /**
         * Returns the largest texture size (either width or height) that can be created.
@@ -4874,6 +6761,8 @@ object Renderer {
       
       /**
         * Stores the current WebGL component formats for further use.
+        * 
+        * This array is populated in the `init` method.
         */
       var glFormats: js.Array[Any] = js.native
       
@@ -4925,11 +6814,22 @@ object Renderer {
       def isNewNormalMap(texture: WebGLTexture, normalMap: WebGLTexture): Boolean = js.native
       
       /**
-        * Are the WebGL Textures in their default state?
+        * This method is only available in the Debug Build of Phaser, or a build with the
+        * `WEBGL_DEBUG` flag set in the Webpack Config.
         * 
-        * Used to avoid constant gl binds.
+        * Phaser v3.60 Debug has a build of Spector.js embedded in it, which is a WebGL inspector
+        * that allows for live inspection of your WebGL calls. Although it's easy to add the Spector
+        * extension to a desktop browsr, by embedding it in Phaser we can make it available in mobile
+        * browsers too, making it a powerful tool for debugging WebGL games on mobile devices where
+        * extensions are not permitted.
+        * 
+        * See https://github.com/BabylonJS/Spector.js for more details.
+        * 
+        * This method adds a command with the name value in the list. This can be filtered in the search.
+        * All logs can be filtered searching for "LOG".
+        * @param arguments The arguments to log to Spector.
         */
-      var isTextureClean: Boolean = js.native
+      def log(arguments: Any*): String = js.native
       
       /**
         * The total number of masks currently stacked.
@@ -4937,9 +6837,23 @@ object Renderer {
       var maskCount: Double = js.native
       
       /**
+        * A RenderTarget used by the BitmapMask Pipeline.
+        * 
+        * This is the source, i.e. the masked Game Object itself.
+        */
+      var maskSource: RenderTarget = js.native
+      
+      /**
         * The mask stack.
         */
       var maskStack: js.Array[GeometryMask] = js.native
+      
+      /**
+        * A RenderTarget used by the BitmapMask Pipeline.
+        * 
+        * This is the target, i.e. the framebuffer the masked objects are drawn to.
+        */
+      var maskTarget: RenderTarget = js.native
       
       /**
         * The maximum number of textures the GPU can handle. The minimum under the WebGL1 spec is 8.
@@ -4952,7 +6866,7 @@ object Renderer {
         * 
         * You can specify this as a string in the game config, i.e.:
         * 
-        * `renderer: { mipmapFilter: 'NEAREST_MIPMAP_LINEAR' }`
+        * `render: { mipmapFilter: 'NEAREST_MIPMAP_LINEAR' }`
         * 
         * The 6 options for WebGL1 are, in order from least to most computationally expensive:
         * 
@@ -4966,6 +6880,10 @@ object Renderer {
         * Mipmaps only work with textures that are fully power-of-two in size.
         * 
         * For more details see https://webglfundamentals.org/webgl/lessons/webgl-3d-textures.html
+        * 
+        * As of v3.60 no mipmaps will be generated unless a string is given in
+        * the game config. This saves on VRAM use when it may not be required.
+        * To obtain the previous result set the property to `LINEAR` in the config.
         */
       var mipmapFilter: GLenum = js.native
       
@@ -4980,11 +6898,6 @@ object Renderer {
         * of the object being currently rendered?
         */
       var nextTypeMatch: Boolean = js.native
-      
-      /**
-        * The currently bound normal map texture at texture unit one, if any.
-        */
-      var normalTexture: WebGLTexture = js.native
       
       /**
         * The event handler that manages the `resize` event dispatched by the Scale Manager.
@@ -5009,17 +6922,12 @@ object Renderer {
       /**
         * Pops the previous framebuffer from the fbo stack and sets it.
         * @param updateScissor If a framebuffer is given, set the gl scissor to match the frame buffer size? Or, if `null` given, pop the scissor from the stack. Default false.
-        * @param resetTextures Should the WebGL Textures be reset after the new framebuffer is bound? Default false.
         * @param setViewport Should the WebGL viewport be set? Default true.
         */
       def popFramebuffer(): WebGLFramebuffer = js.native
       def popFramebuffer(updateScissor: Boolean): WebGLFramebuffer = js.native
-      def popFramebuffer(updateScissor: Boolean, resetTextures: Boolean): WebGLFramebuffer = js.native
-      def popFramebuffer(updateScissor: Boolean, resetTextures: Boolean, setViewport: Boolean): WebGLFramebuffer = js.native
-      def popFramebuffer(updateScissor: Boolean, resetTextures: Unit, setViewport: Boolean): WebGLFramebuffer = js.native
-      def popFramebuffer(updateScissor: Unit, resetTextures: Boolean): WebGLFramebuffer = js.native
-      def popFramebuffer(updateScissor: Unit, resetTextures: Boolean, setViewport: Boolean): WebGLFramebuffer = js.native
-      def popFramebuffer(updateScissor: Unit, resetTextures: Unit, setViewport: Boolean): WebGLFramebuffer = js.native
+      def popFramebuffer(updateScissor: Boolean, setViewport: Boolean): WebGLFramebuffer = js.native
+      def popFramebuffer(updateScissor: Unit, setViewport: Boolean): WebGLFramebuffer = js.native
       
       /**
         * Pops the last scissor state and sets it.
@@ -5074,22 +6982,74 @@ object Renderer {
         * Call `popFramebuffer` to remove it again.
         * @param framebuffer The framebuffer that needs to be bound.
         * @param updateScissor Set the gl scissor to match the frame buffer size? Or, if `null` given, pop the scissor from the stack. Default false.
-        * @param resetTextures Should the WebGL Textures be reset after the new framebuffer is bound? Default false.
         * @param setViewport Should the WebGL viewport be set? Default true.
+        * @param texture Bind the given frame buffer texture? Default null.
+        * @param clear Clear the frame buffer after binding? Default false.
         */
       def pushFramebuffer(framebuffer: WebGLFramebuffer): this.type = js.native
       def pushFramebuffer(framebuffer: WebGLFramebuffer, updateScissor: Boolean): this.type = js.native
-      def pushFramebuffer(framebuffer: WebGLFramebuffer, updateScissor: Boolean, resetTextures: Boolean): this.type = js.native
+      def pushFramebuffer(framebuffer: WebGLFramebuffer, updateScissor: Boolean, setViewport: Boolean): this.type = js.native
       def pushFramebuffer(
         framebuffer: WebGLFramebuffer,
         updateScissor: Boolean,
-        resetTextures: Boolean,
-        setViewport: Boolean
+        setViewport: Boolean,
+        texture: Unit,
+        clear: Boolean
       ): this.type = js.native
-      def pushFramebuffer(framebuffer: WebGLFramebuffer, updateScissor: Boolean, resetTextures: Unit, setViewport: Boolean): this.type = js.native
-      def pushFramebuffer(framebuffer: WebGLFramebuffer, updateScissor: Unit, resetTextures: Boolean): this.type = js.native
-      def pushFramebuffer(framebuffer: WebGLFramebuffer, updateScissor: Unit, resetTextures: Boolean, setViewport: Boolean): this.type = js.native
-      def pushFramebuffer(framebuffer: WebGLFramebuffer, updateScissor: Unit, resetTextures: Unit, setViewport: Boolean): this.type = js.native
+      def pushFramebuffer(framebuffer: WebGLFramebuffer, updateScissor: Boolean, setViewport: Boolean, texture: WebGLTexture): this.type = js.native
+      def pushFramebuffer(
+        framebuffer: WebGLFramebuffer,
+        updateScissor: Boolean,
+        setViewport: Boolean,
+        texture: WebGLTexture,
+        clear: Boolean
+      ): this.type = js.native
+      def pushFramebuffer(
+        framebuffer: WebGLFramebuffer,
+        updateScissor: Boolean,
+        setViewport: Unit,
+        texture: Unit,
+        clear: Boolean
+      ): this.type = js.native
+      def pushFramebuffer(framebuffer: WebGLFramebuffer, updateScissor: Boolean, setViewport: Unit, texture: WebGLTexture): this.type = js.native
+      def pushFramebuffer(
+        framebuffer: WebGLFramebuffer,
+        updateScissor: Boolean,
+        setViewport: Unit,
+        texture: WebGLTexture,
+        clear: Boolean
+      ): this.type = js.native
+      def pushFramebuffer(framebuffer: WebGLFramebuffer, updateScissor: Unit, setViewport: Boolean): this.type = js.native
+      def pushFramebuffer(
+        framebuffer: WebGLFramebuffer,
+        updateScissor: Unit,
+        setViewport: Boolean,
+        texture: Unit,
+        clear: Boolean
+      ): this.type = js.native
+      def pushFramebuffer(framebuffer: WebGLFramebuffer, updateScissor: Unit, setViewport: Boolean, texture: WebGLTexture): this.type = js.native
+      def pushFramebuffer(
+        framebuffer: WebGLFramebuffer,
+        updateScissor: Unit,
+        setViewport: Boolean,
+        texture: WebGLTexture,
+        clear: Boolean
+      ): this.type = js.native
+      def pushFramebuffer(
+        framebuffer: WebGLFramebuffer,
+        updateScissor: Unit,
+        setViewport: Unit,
+        texture: Unit,
+        clear: Boolean
+      ): this.type = js.native
+      def pushFramebuffer(framebuffer: WebGLFramebuffer, updateScissor: Unit, setViewport: Unit, texture: WebGLTexture): this.type = js.native
+      def pushFramebuffer(
+        framebuffer: WebGLFramebuffer,
+        updateScissor: Unit,
+        setViewport: Unit,
+        texture: WebGLTexture,
+        clear: Boolean
+      ): this.type = js.native
       
       /**
         * Pushes a new scissor state. This is used to set nested scissor states.
@@ -5143,22 +7103,13 @@ object Renderer {
         * This is called during `endCapture`, should the matrix have been changed
         * as a result of the capture process.
         */
-      def resetProjectionMatrix(): Unit = js.native
+      def resetProjectionMatrix(): this.type = js.native
       
       /**
         * Resets the gl scissor state to be whatever the current scissor is, if there is one, without
         * modifying the scissor stack.
         */
       def resetScissor(): Unit = js.native
-      
-      /**
-        * Flushes the current pipeline, then resets the first two textures
-        * back to the default temporary textures, resets the start active
-        * counter and sets texture unit 1 as being active.
-        * @param all Reset all textures, or just the first two? Default false.
-        */
-      def resetTextures(): Unit = js.native
-      def resetTextures(all: Boolean): Unit = js.native
       
       /**
         * Resets the gl viewport to the current renderer dimensions.
@@ -5174,6 +7125,22 @@ object Renderer {
       def resize(width: Double): this.type = js.native
       def resize(width: Double, height: Double): this.type = js.native
       def resize(width: Unit, height: Double): this.type = js.native
+      
+      /**
+        * Restores the previous framebuffer from the fbo stack and sets it.
+        * @param updateScissor If a framebuffer is given, set the gl scissor to match the frame buffer size? Or, if `null` given, pop the scissor from the stack. Default false.
+        * @param setViewport Should the WebGL viewport be set? Default true.
+        */
+      def restoreFramebuffer(): Unit = js.native
+      def restoreFramebuffer(updateScissor: Boolean): Unit = js.native
+      def restoreFramebuffer(updateScissor: Boolean, setViewport: Boolean): Unit = js.native
+      def restoreFramebuffer(updateScissor: Unit, setViewport: Boolean): Unit = js.native
+      
+      /**
+        * Restores the current stencil function to the one that was in place
+        * before `clearStencilMask` was called.
+        */
+      def restoreStencilMask(): Unit = js.native
       
       /**
         * Stack of scissor data
@@ -5199,30 +7166,74 @@ object Renderer {
         * Typically, you should call `pushFramebuffer` instead of this method.
         * @param framebuffer The framebuffer that needs to be bound.
         * @param updateScissor If a framebuffer is given, set the gl scissor to match the frame buffer size? Or, if `null` given, pop the scissor from the stack. Default false.
-        * @param resetTextures Should the WebGL Textures be reset after the new framebuffer is bound? Default false.
         * @param setViewport Should the WebGL viewport be set? Default true.
+        * @param texture Bind the given frame buffer texture? Default null.
+        * @param clear Clear the frame buffer after binding? Default false.
         */
       def setFramebuffer(framebuffer: WebGLFramebuffer): this.type = js.native
       def setFramebuffer(framebuffer: WebGLFramebuffer, updateScissor: Boolean): this.type = js.native
-      def setFramebuffer(framebuffer: WebGLFramebuffer, updateScissor: Boolean, resetTextures: Boolean): this.type = js.native
+      def setFramebuffer(framebuffer: WebGLFramebuffer, updateScissor: Boolean, setViewport: Boolean): this.type = js.native
       def setFramebuffer(
         framebuffer: WebGLFramebuffer,
         updateScissor: Boolean,
-        resetTextures: Boolean,
-        setViewport: Boolean
+        setViewport: Boolean,
+        texture: Unit,
+        clear: Boolean
       ): this.type = js.native
-      def setFramebuffer(framebuffer: WebGLFramebuffer, updateScissor: Boolean, resetTextures: Unit, setViewport: Boolean): this.type = js.native
-      def setFramebuffer(framebuffer: WebGLFramebuffer, updateScissor: Unit, resetTextures: Boolean): this.type = js.native
-      def setFramebuffer(framebuffer: WebGLFramebuffer, updateScissor: Unit, resetTextures: Boolean, setViewport: Boolean): this.type = js.native
-      def setFramebuffer(framebuffer: WebGLFramebuffer, updateScissor: Unit, resetTextures: Unit, setViewport: Boolean): this.type = js.native
-      
-      /**
-        * Binds a texture directly to texture unit one then activates it.
-        * If the texture is already at unit one, it skips the bind.
-        * Make sure to call `clearNormalMap` after using this method.
-        * @param texture The WebGL texture that needs to be bound.
-        */
-      def setNormalMap(texture: WebGLTexture): Unit = js.native
+      def setFramebuffer(framebuffer: WebGLFramebuffer, updateScissor: Boolean, setViewport: Boolean, texture: WebGLTexture): this.type = js.native
+      def setFramebuffer(
+        framebuffer: WebGLFramebuffer,
+        updateScissor: Boolean,
+        setViewport: Boolean,
+        texture: WebGLTexture,
+        clear: Boolean
+      ): this.type = js.native
+      def setFramebuffer(
+        framebuffer: WebGLFramebuffer,
+        updateScissor: Boolean,
+        setViewport: Unit,
+        texture: Unit,
+        clear: Boolean
+      ): this.type = js.native
+      def setFramebuffer(framebuffer: WebGLFramebuffer, updateScissor: Boolean, setViewport: Unit, texture: WebGLTexture): this.type = js.native
+      def setFramebuffer(
+        framebuffer: WebGLFramebuffer,
+        updateScissor: Boolean,
+        setViewport: Unit,
+        texture: WebGLTexture,
+        clear: Boolean
+      ): this.type = js.native
+      def setFramebuffer(framebuffer: WebGLFramebuffer, updateScissor: Unit, setViewport: Boolean): this.type = js.native
+      def setFramebuffer(
+        framebuffer: WebGLFramebuffer,
+        updateScissor: Unit,
+        setViewport: Boolean,
+        texture: Unit,
+        clear: Boolean
+      ): this.type = js.native
+      def setFramebuffer(framebuffer: WebGLFramebuffer, updateScissor: Unit, setViewport: Boolean, texture: WebGLTexture): this.type = js.native
+      def setFramebuffer(
+        framebuffer: WebGLFramebuffer,
+        updateScissor: Unit,
+        setViewport: Boolean,
+        texture: WebGLTexture,
+        clear: Boolean
+      ): this.type = js.native
+      def setFramebuffer(
+        framebuffer: WebGLFramebuffer,
+        updateScissor: Unit,
+        setViewport: Unit,
+        texture: Unit,
+        clear: Boolean
+      ): this.type = js.native
+      def setFramebuffer(framebuffer: WebGLFramebuffer, updateScissor: Unit, setViewport: Unit, texture: WebGLTexture): this.type = js.native
+      def setFramebuffer(
+        framebuffer: WebGLFramebuffer,
+        updateScissor: Unit,
+        setViewport: Unit,
+        texture: WebGLTexture,
+        clear: Boolean
+      ): this.type = js.native
       
       /**
         * Binds a shader program.
@@ -5254,35 +7265,11 @@ object Renderer {
       def setScissor(x: Double, y: Double, width: Double, height: Double, drawingBufferHeight: Double): Unit = js.native
       
       /**
-        * Binds a texture at a texture unit. If a texture is already
-        * bound to that unit it will force a flush on the current pipeline.
-        * @param texture The WebGL texture that needs to be bound.
-        */
-      def setTexture2D(texture: WebGLTexture): Double = js.native
-      
-      /**
         * Sets the minification and magnification filter for a texture.
         * @param texture The texture to set the filter for.
         * @param filter The filter to set. 0 for linear filtering, 1 for nearest neighbor (blocky) filtering.
         */
       def setTextureFilter(texture: Double, filter: Double): this.type = js.native
-      
-      /**
-        * Activates the Texture Source and assigns it the next available texture unit.
-        * If none are available, it will flush the current pipeline first.
-        * @param textureSource The Texture Source to be assigned the texture unit.
-        */
-      def setTextureSource(textureSource: TextureSource): Double = js.native
-      
-      /**
-        * Binds a texture directly to texture unit zero then activates it.
-        * If the texture is already at unit zero, it skips the bind.
-        * Make sure to call `clearTextureZero` after using this method.
-        * @param texture The WebGL texture that needs to be bound.
-        * @param flush Flush the pipeline if the texture is different? Default false.
-        */
-      def setTextureZero(texture: WebGLTexture): Unit = js.native
-      def setTextureZero(texture: WebGLTexture, flush: Boolean): Unit = js.native
       
       /**
         * Schedules a snapshot of the entire game viewport to be taken after the current frame is rendered.
@@ -5317,8 +7304,8 @@ object Renderer {
         * It then parses this, copying the contents to a temporary Canvas and finally creating an Image object from it,
         * which is the image returned to the callback provided. All in all, this is a computationally expensive and blocking process,
         * which gets more expensive the larger the canvas size gets, so please be careful how you employ this in your game.
-        * @param x The x coordinate to grab from.
-        * @param y The y coordinate to grab from.
+        * @param x The x coordinate to grab from. This is based on the game viewport, not the world.
+        * @param y The y coordinate to grab from. This is based on the game viewport, not the world.
         * @param width The width of the area to grab.
         * @param height The height of the area to grab.
         * @param callback The Function to invoke after the snapshot image is created.
@@ -5360,8 +7347,8 @@ object Renderer {
         * @param bufferHeight The height of the framebuffer.
         * @param callback The Function to invoke after the snapshot image is created.
         * @param getPixel Grab a single pixel as a Color object, or an area as an Image object? Default false.
-        * @param x The x coordinate to grab from. Default 0.
-        * @param y The y coordinate to grab from. Default 0.
+        * @param x The x coordinate to grab from. This is based on the framebuffer, not the world. Default 0.
+        * @param y The y coordinate to grab from. This is based on the framebuffer, not the world. Default 0.
         * @param width The width of the area to grab. Default bufferWidth.
         * @param height The height of the area to grab. Default bufferHeight.
         * @param type The format of the image to create, usually `image/png` or `image/jpeg`. Default 'image/png'.
@@ -5392,8 +7379,8 @@ object Renderer {
         * Unlike the other two snapshot methods, this one will return a `Color` object containing the color data for
         * the requested pixel. It doesn't need to create an internal Canvas or Image object, so is a lot faster to execute,
         * using less memory.
-        * @param x The x coordinate of the pixel to get.
-        * @param y The y coordinate of the pixel to get.
+        * @param x The x coordinate of the pixel to get. This is based on the game viewport, not the world.
+        * @param y The y coordinate of the pixel to get. This is based on the game viewport, not the world.
         * @param callback The Function to invoke after the snapshot pixel data is extracted.
         */
       def snapshotPixel(x: Double, y: Double, callback: SnapshotCallback): this.type = js.native
@@ -5406,10 +7393,57 @@ object Renderer {
       var snapshotState: SnapshotState = js.native
       
       /**
-        * Contains the current starting active texture unit.
-        * This value is constantly updated and should be treated as read-only by your code.
+        * An instance of SpectorJS used for WebGL Debugging.
+        * 
+        * Only available in the Phaser Debug build.
         */
-      var startActiveTexture: Double = js.native
+      var spector: js.Function = js.native
+      
+      /**
+        * This method is only available in the Debug Build of Phaser, or a build with the
+        * `WEBGL_DEBUG` flag set in the Webpack Config.
+        * 
+        * Phaser v3.60 Debug has a build of Spector.js embedded in it, which is a WebGL inspector
+        * that allows for live inspection of your WebGL calls. Although it's easy to add the Spector
+        * extension to a desktop browsr, by embedding it in Phaser we can make it available in mobile
+        * browsers too, making it a powerful tool for debugging WebGL games on mobile devices where
+        * extensions are not permitted.
+        * 
+        * See https://github.com/BabylonJS/Spector.js for more details.
+        * 
+        * This method will start a capture on the Phaser canvas. The capture will stop once it reaches
+        * the number of commands specified as a parameter, or after 10 seconds. If quick capture is true,
+        * the thumbnails are not captured in order to speed up the capture.
+        * @param commandCount The number of commands to capture. If zero it will capture for 10 seconds. Default 0.
+        * @param quickCapture If `true` thumbnails are not captured in order to speed up the capture. Default false.
+        * @param fullCapture If `true` all details are captured. Default false.
+        */
+      def startCapture(): Unit = js.native
+      def startCapture(commandCount: Double): Unit = js.native
+      def startCapture(commandCount: Double, quickCapture: Boolean): Unit = js.native
+      def startCapture(commandCount: Double, quickCapture: Boolean, fullCapture: Boolean): Unit = js.native
+      def startCapture(commandCount: Double, quickCapture: Unit, fullCapture: Boolean): Unit = js.native
+      def startCapture(commandCount: Unit, quickCapture: Boolean): Unit = js.native
+      def startCapture(commandCount: Unit, quickCapture: Boolean, fullCapture: Boolean): Unit = js.native
+      def startCapture(commandCount: Unit, quickCapture: Unit, fullCapture: Boolean): Unit = js.native
+      
+      /**
+        * This method is only available in the Debug Build of Phaser, or a build with the
+        * `WEBGL_DEBUG` flag set in the Webpack Config.
+        * 
+        * Phaser v3.60 Debug has a build of Spector.js embedded in it, which is a WebGL inspector
+        * that allows for live inspection of your WebGL calls. Although it's easy to add the Spector
+        * extension to a desktop browsr, by embedding it in Phaser we can make it available in mobile
+        * browsers too, making it a powerful tool for debugging WebGL games on mobile devices where
+        * extensions are not permitted.
+        * 
+        * See https://github.com/BabylonJS/Spector.js for more details.
+        * 
+        * This method will stop the current capture and returns the result in JSON. It displays the
+        * result if the UI has been displayed. This returns undefined if the capture has not been completed
+        * or did not find any commands.
+        */
+      def stopCapture(): js.Object = js.native
       
       /**
         * Array of strings that indicate which WebGL extensions are supported by the browser.
@@ -5418,16 +7452,12 @@ object Renderer {
       var supportedExtensions: js.Array[String] = js.native
       
       /**
-        * An array of default temporary WebGL Textures.
-        * 
-        * This array is populated during the init phase and should never be changed after boot.
+        * Checks if the given compressed texture format is supported, or not.
+        * @param baseFormat The Base Format to check.
+        * @param format An optional GLenum format to check within the base format.
         */
-      var tempTextures: js.Array[Any] = js.native
-      
-      /**
-        * The number of times the renderer had to flush this frame, due to running out of texture units.
-        */
-      var textureFlush: Double = js.native
+      def supportsCompressedTexture(baseFormat: String): Boolean = js.native
+      def supportsCompressedTexture(baseFormat: String, format: GLenum): Boolean = js.native
       
       /**
         * An array of the available WebGL texture units, used to populate the uSampler uniforms.
@@ -5437,21 +7467,9 @@ object Renderer {
       var textureIndexes: js.Array[Any] = js.native
       
       /**
-        * The currently bound texture at texture unit zero, if any.
-        */
-      var textureZero: WebGLTexture = js.native
-      
-      /**
         * A constant which allows the renderer to be easily identified as a WebGL Renderer.
         */
       var `type`: Double = js.native
-      
-      /**
-        * Activates each texture, in turn, then binds them all to `null`.
-        * @param all Reset all textures, or just the first two? Default false.
-        */
-      def unbindTextures(): Unit = js.native
-      def unbindTextures(all: Boolean): Unit = js.native
       
       /**
         * Updates the function bound to a given custom blend mode.
@@ -5545,6 +7563,28 @@ object Renderer {
       def createAttributes(attributes: js.Array[WebGLPipelineAttributeConfig]): Unit = js.native
       
       /**
+        * This method will create the Shader Program on the current GL context.
+        * 
+        * If a program already exists, it will be destroyed and the new one will take its place.
+        * 
+        * After the program is created the uniforms will be reset and
+        * this shader will be rebound.
+        * 
+        * This is a very expensive process and if your shader is referenced elsewhere in
+        * your game those references may then be lost, so be sure to use this carefully.
+        * 
+        * However, if you need to update say the fragment shader source, then you can pass
+        * the new source into this method and it'll rebuild the program using it. If you
+        * don't want to change the vertex shader src, pass `undefined` as the parameter.
+        * @param vertSrc The source code of the vertex shader. If not given, uses the source already defined in this Shader.
+        * @param fragSrc The source code of the fragment shader. If not given, uses the source already defined in this Shader.
+        */
+      def createProgram(): this.type = js.native
+      def createProgram(vertSrc: String): this.type = js.native
+      def createProgram(vertSrc: String, fragSrc: String): this.type = js.native
+      def createProgram(vertSrc: Unit, fragSrc: String): this.type = js.native
+      
+      /**
         * Sets up the `WebGLShader.uniforms` object, populating it with the names
         * and locations of the shader uniforms this shader requires.
         * 
@@ -5563,6 +7603,11 @@ object Renderer {
         * Does not remove this shader from the parent pipeline.
         */
       def destroy(): Unit = js.native
+      
+      /**
+        * The fragment shader source code.
+        */
+      var fragSrc: String = js.native
       
       /**
         * A reference to the WebGL Rendering Context the WebGL Renderer is using.
@@ -5850,6 +7895,19 @@ object Renderer {
       def setAttribPointers(reset: Boolean): this.type = js.native
       
       /**
+        * Sets a boolean uniform value based on the given name on this shader.
+        * 
+        * The uniform is only set if the value/s given are different to those previously set.
+        * 
+        * This method works by first setting this shader as being the current shader within the
+        * WebGL Renderer, if it isn't already. It also sets this shader as being the current
+        * one within the pipeline it belongs to.
+        * @param name The name of the uniform to set.
+        * @param value The new value of the `boolean` uniform.
+        */
+      def setBoolean(name: String, value: Boolean): this.type = js.native
+      
+      /**
         * Sets a matrix 2fv uniform value based on the given name on this shader.
         * 
         * The uniform is only set if the value/s given are different to those previously set.
@@ -6080,6 +8138,11 @@ object Renderer {
         * It is populated automatically via the `createUniforms` method.
         */
       var uniforms: WebGLPipelineUniformsConfig = js.native
+      
+      /**
+        * The vertex shader source code.
+        */
+      var vertSrc: String = js.native
       
       /**
         * The amount of vertex attribute components of 32 bit length.

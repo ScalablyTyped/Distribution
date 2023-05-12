@@ -7,7 +7,6 @@ import typings.lambdaLog.lambdaLogStrings.info
 import typings.lambdaLog.lambdaLogStrings.log
 import typings.lambdaLog.lambdaLogStrings.warn
 import typings.node.eventsMod.EventEmitter
-import typings.node.fsMod.WriteStream
 import typings.std.Console
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -162,6 +161,15 @@ object mod {
     // Optional function which will run for every log to inject dynamic metadata
     var dynamicMeta: js.UndefOr[js.Function1[/* message */ LogMessage, Any]] = js.undefined
     
+    // Override the key in the JSON log message for the message. Default is "msg".
+    var levelKey: js.UndefOr[String | Null] = js.undefined
+    
+    // Console-like object containing all standard console functions. Allows logs to be written to any custom location. Default is console.
+    var logHandler: js.UndefOr[Console] = js.undefined
+    
+    // Override the key in the JSON log message for the message. Default is "msg".
+    var messageKey: js.UndefOr[String] = js.undefined
+    
     var meta: js.UndefOr[Any] = js.undefined
     
     // Optional replacer function for `JSON.stringify`
@@ -170,14 +178,11 @@ object mod {
     // Disables logging to the console (used for testing)
     var silent: js.UndefOr[Boolean] = js.undefined
     
-    // Optional stream to write stderr messages to
-    var stderrStream: js.UndefOr[WriteStream] = js.undefined
-    
-    // Optional stream to write stdout messages to
-    var stdoutStream: js.UndefOr[WriteStream] = js.undefined
-    
     // Global tags array to include with every log
     var tags: js.UndefOr[js.Array[String]] = js.undefined
+    
+    // Override the key in the JSON log message for the tags. Set to null to remove this key from the JSON output. Default is '_tags'.
+    var tagsKey: js.UndefOr[String | Null] = js.undefined
   }
   object LambdaLogOptions {
     
@@ -201,6 +206,20 @@ object mod {
       
       inline def setDynamicMetaUndefined: Self = StObject.set(x, "dynamicMeta", js.undefined)
       
+      inline def setLevelKey(value: String): Self = StObject.set(x, "levelKey", value.asInstanceOf[js.Any])
+      
+      inline def setLevelKeyNull: Self = StObject.set(x, "levelKey", null)
+      
+      inline def setLevelKeyUndefined: Self = StObject.set(x, "levelKey", js.undefined)
+      
+      inline def setLogHandler(value: Console): Self = StObject.set(x, "logHandler", value.asInstanceOf[js.Any])
+      
+      inline def setLogHandlerUndefined: Self = StObject.set(x, "logHandler", js.undefined)
+      
+      inline def setMessageKey(value: String): Self = StObject.set(x, "messageKey", value.asInstanceOf[js.Any])
+      
+      inline def setMessageKeyUndefined: Self = StObject.set(x, "messageKey", js.undefined)
+      
       inline def setMeta(value: Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
       inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
@@ -213,15 +232,13 @@ object mod {
       
       inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
       
-      inline def setStderrStream(value: WriteStream): Self = StObject.set(x, "stderrStream", value.asInstanceOf[js.Any])
-      
-      inline def setStderrStreamUndefined: Self = StObject.set(x, "stderrStream", js.undefined)
-      
-      inline def setStdoutStream(value: WriteStream): Self = StObject.set(x, "stdoutStream", value.asInstanceOf[js.Any])
-      
-      inline def setStdoutStreamUndefined: Self = StObject.set(x, "stdoutStream", js.undefined)
-      
       inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      
+      inline def setTagsKey(value: String): Self = StObject.set(x, "tagsKey", value.asInstanceOf[js.Any])
+      
+      inline def setTagsKeyNull: Self = StObject.set(x, "tagsKey", null)
+      
+      inline def setTagsKeyUndefined: Self = StObject.set(x, "tagsKey", js.undefined)
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       

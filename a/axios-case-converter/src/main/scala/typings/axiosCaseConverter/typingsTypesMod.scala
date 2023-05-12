@@ -2,13 +2,14 @@ package typings.axiosCaseConverter
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.axios.mod.AxiosInstance
-import typings.axios.mod.AxiosRequestConfig
 import typings.axios.mod.AxiosRequestTransformer
 import typings.axios.mod.AxiosResponseTransformer
+import typings.axiosCaseConverter.anon.AxiosRequestConfiganyhead
 import typings.axiosCaseConverter.anon.PartialCaseFunctions
 import typings.axiosCaseConverter.anon.RequestInterceptor
 import typings.noCase.mod.Options
 import typings.std.FormData
+import typings.std.NonNullable
 import typings.std.Record
 import typings.std.URLSearchParams
 import org.scalablytyped.runtime.StObject
@@ -23,7 +24,7 @@ object typingsTypesMod {
     AxiosInstance
   ]
   
-  /* Inlined axios-case-converter.axios-case-converter/typings/types.AxiosCaseMiddlewareOptions & {  caseMiddleware :{  requestTransformer :axios.axios.AxiosRequestTransformer | undefined,   responseTransformer :axios.axios.AxiosResponseTransformer | undefined,   requestInterceptor :axios-case-converter.axios-case-converter/typings/types.AxiosInterceptor | undefined} | undefined} */
+  /* Inlined axios-case-converter.axios-case-converter/typings/types.AxiosCaseMiddlewareOptions & {  caseMiddleware :{  requestTransformer :axios.axios.AxiosRequestTransformer | undefined,   responseTransformer :axios.axios.AxiosResponseTransformer | undefined,   requestInterceptor :axios-case-converter.axios-case-converter/typings/types.AxiosRequestInterceptor | undefined} | undefined} */
   trait ApplyCaseMiddlewareOptions extends StObject {
     
     var caseFunctions: js.UndefOr[PartialCaseFunctions] = js.undefined
@@ -33,6 +34,8 @@ object typingsTypesMod {
     var caseOptions: js.UndefOr[Options] = js.undefined
     
     var ignoreHeaders: js.UndefOr[Boolean] = js.undefined
+    
+    var ignoreParams: js.UndefOr[Boolean] = js.undefined
     
     var preservedKeys: js.UndefOr[js.Array[String] | PreservedKeysCondition] = js.undefined
   }
@@ -62,6 +65,10 @@ object typingsTypesMod {
       
       inline def setIgnoreHeadersUndefined: Self = StObject.set(x, "ignoreHeaders", js.undefined)
       
+      inline def setIgnoreParams(value: Boolean): Self = StObject.set(x, "ignoreParams", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreParamsUndefined: Self = StObject.set(x, "ignoreParams", js.undefined)
+      
       inline def setPreservedKeys(value: js.Array[String] | PreservedKeysCondition): Self = StObject.set(x, "preservedKeys", value.asInstanceOf[js.Any])
       
       inline def setPreservedKeysFunction2(value: (/* input */ String, /* options */ js.UndefOr[Options]) => Boolean): Self = StObject.set(x, "preservedKeys", js.Any.fromFunction2(value))
@@ -74,7 +81,7 @@ object typingsTypesMod {
   
   type ApplyCaseOptions = js.Function2[/* fn */ CaseFunction, /* options */ js.UndefOr[Options], CaseFunction]
   
-  /* Inlined std.Omit<axios-case-converter.axios-case-converter/typings/types.ObjectTransformerOptions, 'overwrite'> & {  caseFunctions :std.Partial<axios-case-converter.axios-case-converter/typings/types.CaseFunctions> | undefined,   ignoreHeaders :boolean | undefined} */
+  /* Inlined std.Omit<axios-case-converter.axios-case-converter/typings/types.ObjectTransformerOptions, 'overwrite'> & {  caseFunctions :std.Partial<axios-case-converter.axios-case-converter/typings/types.CaseFunctions> | undefined,   ignoreHeaders :boolean | undefined,   ignoreParams :boolean | undefined} */
   trait AxiosCaseMiddlewareOptions extends StObject {
     
     var caseFunctions: js.UndefOr[PartialCaseFunctions] = js.undefined
@@ -82,6 +89,8 @@ object typingsTypesMod {
     var caseOptions: js.UndefOr[Options] = js.undefined
     
     var ignoreHeaders: js.UndefOr[Boolean] = js.undefined
+    
+    var ignoreParams: js.UndefOr[Boolean] = js.undefined
     
     var preservedKeys: js.UndefOr[js.Array[String] | PreservedKeysCondition] = js.undefined
   }
@@ -107,6 +116,10 @@ object typingsTypesMod {
       
       inline def setIgnoreHeadersUndefined: Self = StObject.set(x, "ignoreHeaders", js.undefined)
       
+      inline def setIgnoreParams(value: Boolean): Self = StObject.set(x, "ignoreParams", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreParamsUndefined: Self = StObject.set(x, "ignoreParams", js.undefined)
+      
       inline def setPreservedKeys(value: js.Array[String] | PreservedKeysCondition): Self = StObject.set(x, "preservedKeys", value.asInstanceOf[js.Any])
       
       inline def setPreservedKeysFunction2(value: (/* input */ String, /* options */ js.UndefOr[Options]) => Boolean): Self = StObject.set(x, "preservedKeys", js.Any.fromFunction2(value))
@@ -117,7 +130,11 @@ object typingsTypesMod {
     }
   }
   
-  type AxiosInterceptor = js.Function1[/* config */ AxiosRequestConfig[Any], AxiosRequestConfig[Any]]
+  type AxiosInterceptor[V] = NonNullable[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<axios-case-converter.anon.FnCall<V>>[0] */ js.Any
+  ]
+  
+  type AxiosRequestInterceptor = AxiosInterceptor[AxiosRequestConfiganyhead]
   
   type CaseFunction = js.Function2[/* input */ String, /* options */ js.UndefOr[Options], String]
   
@@ -176,7 +193,9 @@ object typingsTypesMod {
     }
   }
   
-  type CreateAxiosInterceptor = js.Function1[/* options */ js.UndefOr[AxiosCaseMiddlewareOptions], AxiosInterceptor]
+  type CreateAxiosInterceptor[V] = js.Function1[/* options */ js.UndefOr[AxiosCaseMiddlewareOptions], AxiosInterceptor[V]]
+  
+  type CreateAxiosRequestInterceptor = js.Function1[/* options */ js.UndefOr[AxiosCaseMiddlewareOptions], AxiosRequestInterceptor]
   
   type CreateAxiosRequestTransformer = js.Function1[/* options */ js.UndefOr[AxiosCaseMiddlewareOptions], AxiosRequestTransformer]
   

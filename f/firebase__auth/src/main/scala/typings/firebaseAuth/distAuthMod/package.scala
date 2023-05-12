@@ -69,6 +69,8 @@ inline def indexedDBLocalPersistence: Persistence = ^.asInstanceOf[js.Dynamic].s
 inline def initializeAuth(app: FirebaseApp): Auth = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeAuth")(app.asInstanceOf[js.Any]).asInstanceOf[Auth]
 inline def initializeAuth(app: FirebaseApp, deps: Dependencies): Auth = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeAuth")(app.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Auth]
 
+inline def initializeRecaptchaConfig(auth: Auth): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeRecaptchaConfig")(auth.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+
 inline def isSignInWithEmailLink(auth: Auth, emailLink: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSignInWithEmailLink")(auth.asInstanceOf[js.Any], emailLink.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
 inline def linkWithCredential(user: User, credential: AuthCredential): js.Promise[UserCredential] = (^.asInstanceOf[js.Dynamic].applyDynamic("linkWithCredential")(user.asInstanceOf[js.Any], credential.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UserCredential]]
@@ -171,9 +173,9 @@ type CustomParameters = Record[String, String]
 type IdToken = String
 
 /**
-  * MfaEnrollment can be any subtype of BaseMfaEnrollment, currently only PhoneMfaEnrollment is supported
+  * MfaEnrollment can be any subtype of BaseMfaEnrollment, currently only PhoneMfaEnrollment and TotpMfaEnrollment are supported.
   */
-type MfaEnrollment = PhoneMfaEnrollment
+type MfaEnrollment = PhoneMfaEnrollment | TotpMfaEnrollment
 
 type NextOrObserver[T] = (NextFn[T | Null]) | (Observer[T | Null])
 
@@ -182,5 +184,14 @@ type PersistedBlob = Record[String, Any]
 type PhoneMultiFactorAssertion = MultiFactorAssertion
 
 type RecaptchaParameters = StringDictionary[Any]
+
+/**
+  * An MFA provided by TOTP (Time-based One Time Password).
+  */
+type TotpMfaEnrollment = BaseMfaEnrollment
+
+type TotpMultiFactorAssertion = MultiFactorAssertion
+
+type TotpMultiFactorInfo = MultiFactorInfo
 
 type UserProfile = Record[String, Any]

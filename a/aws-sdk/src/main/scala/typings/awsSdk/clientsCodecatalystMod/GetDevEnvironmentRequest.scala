@@ -1,0 +1,40 @@
+package typings.awsSdk.clientsCodecatalystMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait GetDevEnvironmentRequest extends StObject {
+  
+  /**
+    * The system-generated unique ID of the Dev Environment for which you want to view information. To retrieve a list of Dev Environment IDs, use ListDevEnvironments.
+    */
+  var id: Uuid
+  
+  /**
+    * The name of the project in the space.
+    */
+  var projectName: NameString
+  
+  /**
+    * The name of the space.
+    */
+  var spaceName: NameString
+}
+object GetDevEnvironmentRequest {
+  
+  inline def apply(id: Uuid, projectName: NameString, spaceName: NameString): GetDevEnvironmentRequest = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any], spaceName = spaceName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GetDevEnvironmentRequest]
+  }
+  
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDevEnvironmentRequest] (val x: Self) extends AnyVal {
+    
+    inline def setId(value: Uuid): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setProjectName(value: NameString): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
+    
+    inline def setSpaceName(value: NameString): Self = StObject.set(x, "spaceName", value.asInstanceOf[js.Any])
+  }
+}

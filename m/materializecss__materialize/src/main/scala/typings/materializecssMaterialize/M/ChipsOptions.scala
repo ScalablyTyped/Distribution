@@ -15,50 +15,50 @@ trait ChipsOptions extends StObject {
   var autocompleteOnly: Boolean
   
   /**
-    * Set autocomplete options
+    * Set autocomplete options.
     * @default {}
     */
   var autocompleteOptions: PartialAutocompleteOption
   
   /**
-    * Set the chip data
+    * Set the chip data.
     * @default []
     */
   var data: js.Array[ChipData]
   
   /**
-    * Set chips limit
+    * Set chips limit.
     * @default Infinity
     */
   var limit: Double
   
   /**
-    * Callback for chip add
+    * Callback for chip add.
     * @default null
     */
   def onChipAdd(element: Element, chip: Element): Unit
   
   /**
-    * Callback for chip delete
+    * Callback for chip delete.
     * @default null
     */
   def onChipDelete(element: Element, chip: Element): Unit
   
   /**
-    * Callback for chip select
+    * Callback for chip select.
     * @default null
     */
   def onChipSelect(element: Element, chip: Element): Unit
   
   /**
-    * Set first placeholder when there are no tags
-    * @default ''
+    * Set first placeholder when there are no tags.
+    * @default ""
     */
   var placeholder: String
   
   /**
-    * Set second placeholder when adding additional tags
-    * @default ''
+    * Set second placeholder when adding additional tags.
+    * @default ""
     */
   var secondaryPlaceholder: String
 }

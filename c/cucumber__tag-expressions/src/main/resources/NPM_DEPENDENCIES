@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@cucumber/tag-expressions" : "4.1.0"
+      "@cucumber/tag-expressions" : "5.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@cucumber/tag-expressions" : "4.1.0"
+      "@cucumber/tag-expressions" : "5.0.1"
     }
   ],
   "compile-devDependencies" : [

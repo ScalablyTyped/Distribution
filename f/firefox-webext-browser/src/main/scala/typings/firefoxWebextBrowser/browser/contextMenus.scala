@@ -52,6 +52,7 @@ object contextMenus {
       * A function that will be called back when the menu item is clicked. Event pages cannot use this; instead, they should register a listener for `contextMenus.onClicked`.
       * @param info Information about the item clicked and the context where the click happened.
       * @param tab The details of the tab where the click took place. Note: this parameter only present for extensions.
+      * Not supported on manifest versions above 2.
       */
     var onclick: js.UndefOr[js.Function2[/* info */ OnClickData, /* tab */ Tab, js.UndefOr[Unit]]] = js.undefined
     
@@ -198,7 +199,7 @@ object contextMenus {
   trait OnClickData extends StObject {
     
     /** The id of the bookmark where the context menu was clicked, if it was on a bookmark. */
-    var bookmarkId: String
+    var bookmarkId: js.UndefOr[String] = js.undefined
     
     /** An integer value of button by which menu item was clicked. */
     var button: js.UndefOr[Double] = js.undefined
@@ -259,13 +260,8 @@ object contextMenus {
   }
   object OnClickData {
     
-    inline def apply(
-      bookmarkId: String,
-      editable: Boolean,
-      menuItemId: Double | String,
-      modifiers: js.Array[OnClickDataModifiers]
-    ): OnClickData = {
-      val __obj = js.Dynamic.literal(bookmarkId = bookmarkId.asInstanceOf[js.Any], editable = editable.asInstanceOf[js.Any], menuItemId = menuItemId.asInstanceOf[js.Any], modifiers = modifiers.asInstanceOf[js.Any])
+    inline def apply(editable: Boolean, menuItemId: Double | String, modifiers: js.Array[OnClickDataModifiers]): OnClickData = {
+      val __obj = js.Dynamic.literal(editable = editable.asInstanceOf[js.Any], menuItemId = menuItemId.asInstanceOf[js.Any], modifiers = modifiers.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnClickData]
     }
     
@@ -273,6 +269,8 @@ object contextMenus {
     implicit open class MutableBuilder[Self <: OnClickData] (val x: Self) extends AnyVal {
       
       inline def setBookmarkId(value: String): Self = StObject.set(x, "bookmarkId", value.asInstanceOf[js.Any])
+      
+      inline def setBookmarkIdUndefined: Self = StObject.set(x, "bookmarkId", js.undefined)
       
       inline def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
@@ -380,7 +378,7 @@ object contextMenus {
     var mediaType: js.UndefOr[String] = js.undefined
     
     /** A list of IDs of the menu items that were shown. */
-    var menuIds: Double | js.Array[String]
+    var menuIds: js.Array[Double | String]
     
     var pageUrl: js.UndefOr[String] = js.undefined
     
@@ -394,7 +392,7 @@ object contextMenus {
   }
   object OnShownInfo {
     
-    inline def apply(contexts: js.Array[ContextType], editable: Boolean, menuIds: Double | js.Array[String]): OnShownInfo = {
+    inline def apply(contexts: js.Array[ContextType], editable: Boolean, menuIds: js.Array[Double | String]): OnShownInfo = {
       val __obj = js.Dynamic.literal(contexts = contexts.asInstanceOf[js.Any], editable = editable.asInstanceOf[js.Any], menuIds = menuIds.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnShownInfo]
     }
@@ -424,9 +422,9 @@ object contextMenus {
       
       inline def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
       
-      inline def setMenuIds(value: Double | js.Array[String]): Self = StObject.set(x, "menuIds", value.asInstanceOf[js.Any])
+      inline def setMenuIds(value: js.Array[Double | String]): Self = StObject.set(x, "menuIds", value.asInstanceOf[js.Any])
       
-      inline def setMenuIdsVarargs(value: String*): Self = StObject.set(x, "menuIds", js.Array(value*))
+      inline def setMenuIdsVarargs(value: (Double | String)*): Self = StObject.set(x, "menuIds", js.Array(value*))
       
       inline def setPageUrl(value: String): Self = StObject.set(x, "pageUrl", value.asInstanceOf[js.Any])
       
@@ -524,6 +522,7 @@ object contextMenus {
     
     /**
       * @param tab The details of the tab where the click took place. Note: this parameter only present for extensions.
+      * Not supported on manifest versions above 2.
       */
     var onclick: js.UndefOr[js.Function2[/* info */ OnClickData, /* tab */ Tab, js.UndefOr[Unit]]] = js.undefined
     

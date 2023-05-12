@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-focus-visible
 
-Typings are for version 7.1.0
+Typings are for version 8.0.2
 
 ## Library description:
 Use the :focus-visible pseudo-selector in CSS

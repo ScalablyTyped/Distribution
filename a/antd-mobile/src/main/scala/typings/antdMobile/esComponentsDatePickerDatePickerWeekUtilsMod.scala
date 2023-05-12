@@ -16,9 +16,7 @@ object esComponentsDatePickerDatePickerWeekUtilsMod {
   inline def convertDateToStringArray(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertDateToStringArray")().asInstanceOf[js.Array[String]]
   inline def convertDateToStringArray(date: js.Date): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertDateToStringArray")(date.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  inline def convertStringArrayToDate(value: js.Array[js.UndefOr[String | Null]]): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("convertStringArrayToDate")(value.asInstanceOf[js.Any]).asInstanceOf[js.Date]
-  
-  inline def defaultRenderLabel(`type`: WeekPrecision, data: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultRenderLabel")(`type`.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def convertStringArrayToDate[T /* <: js.UndefOr[String | Double | Null] */](value: js.Array[T]): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("convertStringArrayToDate")(value.asInstanceOf[js.Any]).asInstanceOf[js.Date]
   
   inline def generateDatePickerColumns(
     selected: js.Array[String],

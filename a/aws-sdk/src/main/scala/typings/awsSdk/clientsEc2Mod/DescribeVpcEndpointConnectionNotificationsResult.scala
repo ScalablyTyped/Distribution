@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeVpcEndpointConnectionNotificationsResult extends StObject {
   
   /**
-    * One or more notifications.
+    * The notifications.
     */
   var ConnectionNotificationSet: js.UndefOr[typings.awsSdk.clientsEc2Mod.ConnectionNotificationSet] = js.undefined
   

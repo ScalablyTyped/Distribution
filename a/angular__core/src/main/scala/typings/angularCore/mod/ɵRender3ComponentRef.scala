@@ -49,4 +49,6 @@ open class ɵRender3ComponentRef[T] protected () extends ComponentRef[T] {
   var location_FɵRender3ComponentRef: ElementRef[Any] = js.native
   
   def onDestroy(callback: js.Function0[Unit]): Unit = js.native
+  
+  /* private */ var previousInputValues: Any = js.native
 }

@@ -23,6 +23,24 @@ object mod {
     val basePath: js.UndefOr[String] = js.undefined
     
     /**
+    	Remove the stack lines where the given function returns `false`. The function receives the path part of the stack line.
+    	@example
+    	```
+    	import cleanStack from 'clean-stack';
+    	const error = new Error('Missing unicorn');
+    	console.log(cleanStack(error.stack));
+    	// Error: Missing unicorn
+    	//     at Object.<anonymous> (/Users/sindresorhus/dev/clean-stack/unicorn.js:2:15)
+    	//     at Object.<anonymous> (/Users/sindresorhus/dev/clean-stack/omit-me.js:1:16)
+    	const pathFilter = path => !/omit-me/.test(path);
+    	console.log(cleanStack(error.stack, {pathFilter}));
+    	// Error: Missing unicorn
+    	//     at Object.<anonymous> (/Users/sindresorhus/dev/clean-stack/unicorn.js:2:15)
+    	```
+    	*/
+    val pathFilter: js.UndefOr[js.Function1[/* path */ String, Boolean]] = js.undefined
+    
+    /**
     	Prettify the file paths in the stack:
     	`/Users/sindresorhus/dev/clean-stack/unicorn.js:2:15` → `~/dev/clean-stack/unicorn.js:2:15`
     	@default false
@@ -42,6 +60,10 @@ object mod {
       inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       
       inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
+      
+      inline def setPathFilter(value: /* path */ String => Boolean): Self = StObject.set(x, "pathFilter", js.Any.fromFunction1(value))
+      
+      inline def setPathFilterUndefined: Self = StObject.set(x, "pathFilter", js.undefined)
       
       inline def setPretty(value: Boolean): Self = StObject.set(x, "pretty", value.asInstanceOf[js.Any])
       

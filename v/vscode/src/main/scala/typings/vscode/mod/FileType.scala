@@ -14,8 +14,8 @@ object FileType extends StObject {
   def apply(value: Double): js.UndefOr[FileType & Double] = js.native
   
   /**
-    * A directory.
-    */
+  		 * A directory.
+  		 */
   @js.native
   sealed trait Directory
     extends StObject
@@ -23,8 +23,8 @@ object FileType extends StObject {
   /* 2 */ val Directory: typings.vscode.mod.FileType.Directory & Double = js.native
   
   /**
-    * A regular file.
-    */
+  		 * A regular file.
+  		 */
   @js.native
   sealed trait File
     extends StObject
@@ -32,8 +32,8 @@ object FileType extends StObject {
   /* 1 */ val File: typings.vscode.mod.FileType.File & Double = js.native
   
   /**
-    * A symbolic link to a file.
-    */
+  		 * A symbolic link to a file.
+  		 */
   @js.native
   sealed trait SymbolicLink
     extends StObject
@@ -41,8 +41,8 @@ object FileType extends StObject {
   /* 64 */ val SymbolicLink: typings.vscode.mod.FileType.SymbolicLink & Double = js.native
   
   /**
-    * The file type is unknown.
-    */
+  		 * The file type is unknown.
+  		 */
   @js.native
   sealed trait Unknown
     extends StObject

@@ -17,6 +17,16 @@ trait Settings extends StObject {
   var defaultProcessOwners: js.UndefOr[Roles] = js.undefined
   
   /**
+    * The deregistration policy for your Audit Manager data. You can use this attribute to determine how your data is handled when you deregister Audit Manager.
+    */
+  var deregistrationPolicy: js.UndefOr[DeregistrationPolicy] = js.undefined
+  
+  /**
+    * The current evidence finder status and event data store details.
+    */
+  var evidenceFinderEnablement: js.UndefOr[EvidenceFinderEnablement] = js.undefined
+  
+  /**
     *  Specifies whether Organizations is enabled. 
     */
   var isAwsOrgEnabled: js.UndefOr[Boolean] = js.undefined
@@ -50,6 +60,14 @@ object Settings {
     inline def setDefaultProcessOwnersUndefined: Self = StObject.set(x, "defaultProcessOwners", js.undefined)
     
     inline def setDefaultProcessOwnersVarargs(value: Role*): Self = StObject.set(x, "defaultProcessOwners", js.Array(value*))
+    
+    inline def setDeregistrationPolicy(value: DeregistrationPolicy): Self = StObject.set(x, "deregistrationPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setDeregistrationPolicyUndefined: Self = StObject.set(x, "deregistrationPolicy", js.undefined)
+    
+    inline def setEvidenceFinderEnablement(value: EvidenceFinderEnablement): Self = StObject.set(x, "evidenceFinderEnablement", value.asInstanceOf[js.Any])
+    
+    inline def setEvidenceFinderEnablementUndefined: Self = StObject.set(x, "evidenceFinderEnablement", js.undefined)
     
     inline def setIsAwsOrgEnabled(value: Boolean): Self = StObject.set(x, "isAwsOrgEnabled", value.asInstanceOf[js.Any])
     

@@ -82,14 +82,14 @@ object mod {
   /**
     * Compile a format string in token notation into a format function.
     */
-  // tslint:disable-next-line:no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   inline def compile[Request /* <: IncomingMessage */, Response /* <: ServerResponse[IncomingMessage] */](format: String): FormatFn[Request, Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(format.asInstanceOf[js.Any]).asInstanceOf[FormatFn[Request, Response]]
   
   /**
     * Define a named custom format by specifying a format string in token
     * notation.
     */
-  // tslint:disable-next-line:no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   inline def format[Request /* <: IncomingMessage */, Response /* <: ServerResponse[IncomingMessage] */](name: String, fmt: String): Morgan[Request, Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(name.asInstanceOf[js.Any], fmt.asInstanceOf[js.Any])).asInstanceOf[Morgan[Request, Response]]
   /**
     * Define a named custom format by specifying a format function.

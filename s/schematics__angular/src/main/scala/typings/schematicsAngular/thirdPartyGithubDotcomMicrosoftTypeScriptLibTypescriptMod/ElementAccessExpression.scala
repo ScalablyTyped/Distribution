@@ -8,9 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ElementAccessExpression
   extends StObject
      with MemberExpression
+     with Declaration
+     with JSDocContainer
+     with FlowContainer
      with AccessExpression
      with BindingOrAssignmentElementTarget
      with DeclarationName
+     with HasJSDoc
      with _ArrayBindingOrAssignmentElement {
   
   val argumentExpression: Expression = js.native

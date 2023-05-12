@@ -5,6 +5,7 @@ import typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity
 import typings.azureMsalCommon.distCacheEntitiesAppMetadataEntityMod.AppMetadataEntity
 import typings.azureMsalCommon.distCacheEntitiesIdTokenEntityMod.IdTokenEntity
 import typings.azureMsalCommon.distCacheEntitiesRefreshTokenEntityMod.RefreshTokenEntity
+import typings.azureMsalCommon.distRequestScopeSetMod.ScopeSet
 import typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -23,9 +24,13 @@ object distCacheUtilsCacheTypesMod {
     
     var homeAccountId: js.UndefOr[String] = js.undefined
     
+    var localAccountId: js.UndefOr[String] = js.undefined
+    
     var nativeAccountId: js.UndefOr[String] = js.undefined
     
     var realm: js.UndefOr[String] = js.undefined
+    
+    var username: js.UndefOr[String] = js.undefined
   }
   object AccountFilter {
     
@@ -45,6 +50,10 @@ object distCacheUtilsCacheTypesMod {
       
       inline def setHomeAccountIdUndefined: Self = StObject.set(x, "homeAccountId", js.undefined)
       
+      inline def setLocalAccountId(value: String): Self = StObject.set(x, "localAccountId", value.asInstanceOf[js.Any])
+      
+      inline def setLocalAccountIdUndefined: Self = StObject.set(x, "localAccountId", js.undefined)
+      
       inline def setNativeAccountId(value: String): Self = StObject.set(x, "nativeAccountId", value.asInstanceOf[js.Any])
       
       inline def setNativeAccountIdUndefined: Self = StObject.set(x, "nativeAccountId", js.undefined)
@@ -52,6 +61,10 @@ object distCacheUtilsCacheTypesMod {
       inline def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
       
       inline def setRealmUndefined: Self = StObject.set(x, "realm", js.undefined)
+      
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     }
   }
   
@@ -83,32 +96,6 @@ object distCacheUtilsCacheTypesMod {
     }
   }
   
-  trait CredentialCache extends StObject {
-    
-    var accessTokens: AccessTokenCache
-    
-    var idTokens: IdTokenCache
-    
-    var refreshTokens: RefreshTokenCache
-  }
-  object CredentialCache {
-    
-    inline def apply(accessTokens: AccessTokenCache, idTokens: IdTokenCache, refreshTokens: RefreshTokenCache): CredentialCache = {
-      val __obj = js.Dynamic.literal(accessTokens = accessTokens.asInstanceOf[js.Any], idTokens = idTokens.asInstanceOf[js.Any], refreshTokens = refreshTokens.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CredentialCache]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: CredentialCache] (val x: Self) extends AnyVal {
-      
-      inline def setAccessTokens(value: AccessTokenCache): Self = StObject.set(x, "accessTokens", value.asInstanceOf[js.Any])
-      
-      inline def setIdTokens(value: IdTokenCache): Self = StObject.set(x, "idTokens", value.asInstanceOf[js.Any])
-      
-      inline def setRefreshTokens(value: RefreshTokenCache): Self = StObject.set(x, "refreshTokens", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait CredentialFilter extends StObject {
     
     var clientId: js.UndefOr[String] = js.undefined
@@ -127,7 +114,7 @@ object distCacheUtilsCacheTypesMod {
     
     var requestedClaimsHash: js.UndefOr[String] = js.undefined
     
-    var target: js.UndefOr[String] = js.undefined
+    var target: js.UndefOr[ScopeSet] = js.undefined
     
     var tokenType: js.UndefOr[AuthenticationScheme] = js.undefined
     
@@ -175,7 +162,7 @@ object distCacheUtilsCacheTypesMod {
       
       inline def setRequestedClaimsHashUndefined: Self = StObject.set(x, "requestedClaimsHash", js.undefined)
       
-      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: ScopeSet): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -192,6 +179,38 @@ object distCacheUtilsCacheTypesMod {
   type IdTokenCache = Record[String, IdTokenEntity]
   
   type RefreshTokenCache = Record[String, RefreshTokenEntity]
+  
+  trait TokenKeys extends StObject {
+    
+    var accessToken: js.Array[String]
+    
+    var idToken: js.Array[String]
+    
+    var refreshToken: js.Array[String]
+  }
+  object TokenKeys {
+    
+    inline def apply(accessToken: js.Array[String], idToken: js.Array[String], refreshToken: js.Array[String]): TokenKeys = {
+      val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], idToken = idToken.asInstanceOf[js.Any], refreshToken = refreshToken.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TokenKeys]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenKeys] (val x: Self) extends AnyVal {
+      
+      inline def setAccessToken(value: js.Array[String]): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+      
+      inline def setAccessTokenVarargs(value: String*): Self = StObject.set(x, "accessToken", js.Array(value*))
+      
+      inline def setIdToken(value: js.Array[String]): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
+      
+      inline def setIdTokenVarargs(value: String*): Self = StObject.set(x, "idToken", js.Array(value*))
+      
+      inline def setRefreshToken(value: js.Array[String]): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
+      
+      inline def setRefreshTokenVarargs(value: String*): Self = StObject.set(x, "refreshToken", js.Array(value*))
+    }
+  }
   
   /* Rewritten from type alias, can be one of: 
     - typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity

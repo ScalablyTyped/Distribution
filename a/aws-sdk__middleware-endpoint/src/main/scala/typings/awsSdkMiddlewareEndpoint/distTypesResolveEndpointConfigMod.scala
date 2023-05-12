@@ -22,11 +22,19 @@ object distTypesResolveEndpointConfigMod {
   trait EndpointInputConfig[T /* <: EndpointParameters */] extends StObject {
     
     /**
-      * The fully qualified endpoint of the webservice. This is only required when using
+      * The fully qualified endpoint of the webservice. This is only for using
       * a custom endpoint (for example, when using a local version of S3).
+      *
+      * Endpoint transformations such as S3 applying a bucket to the hostname are
+      * still applicable to this custom endpoint.
       */
     var endpoint: js.UndefOr[String | Endpoint | (Provider[Endpoint | EndpointV2]) | EndpointV2] = js.undefined
     
+    /**
+      * Providing a custom endpointProvider will override
+      * built-in transformations of the endpoint such as S3 adding the bucket
+      * name to the hostname, since they are part of the default endpointProvider.
+      */
     var endpointProvider: js.UndefOr[js.Function2[/* params */ T, /* context */ js.UndefOr[Logger], EndpointV2]] = js.undefined
     
     /**
@@ -90,12 +98,6 @@ object distTypesResolveEndpointConfigMod {
       * Custom endpoint provided by the user.
       * This is normalized to a single interface from the various acceptable types.
       * This field will be undefined if a custom endpoint is not provided.
-      *
-      * As of endpoints 2.0, this config method can not be used to resolve
-      * the endpoint for a service and region.
-      *
-      * @see https://github.com/aws/aws-sdk-js-v3/issues/4122
-      * @deprecated Use {@link EndpointResolvedConfig.endpointProvider} instead.
       */
     var endpoint: js.UndefOr[Provider[Endpoint]] = js.native
     

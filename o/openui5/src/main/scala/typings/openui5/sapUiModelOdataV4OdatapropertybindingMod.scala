@@ -190,7 +190,9 @@ object sapUiModelOdataV4OdatapropertybindingMod {
       * Returns `true` if this binding or its dependent bindings have property changes, created entities, or
       * entity deletions which have not been sent successfully to the server. This function does not take the
       * execution of OData operations (see {@link sap.ui.model.odata.v4.ODataContextBinding#execute}) into account.
-      * Since 1.98.0, {@link sap.ui.model.odata.v4.Context#isInactive inactive} contexts are ignored.
+      * Since 1.98.0, {@link sap.ui.model.odata.v4.Context#isInactive inactive} contexts are ignored, unless
+      * (since 1.100.0) their {@link sap.ui.model.odata.v4.ODataListBinding#event:createActivate activation}
+      * has been prevented and {@link sap.ui.model.odata.v4.Context#isInactive} therefore returns `1`.
       *
       * Note: If this binding is relative, its data is cached separately for each parent context path. This method
       * returns `true` if there are pending changes for the current parent context path of this binding. If this

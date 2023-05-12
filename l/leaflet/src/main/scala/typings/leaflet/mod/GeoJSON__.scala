@@ -9,17 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("leaflet", "GeoJSON")
 @js.native
-open class GeoJSON__[P] () extends FeatureGroup_[P] {
+open class GeoJSON__[P, G /* <: GeometryObject */] () extends FeatureGroup_[P] {
   def this(geojson: GeoJsonObject) = this()
-  def this(geojson: Unit, options: GeoJSONOptions[P]) = this()
-  def this(geojson: GeoJsonObject, options: GeoJSONOptions[P]) = this()
+  def this(geojson: Unit, options: GeoJSONOptions[P, G]) = this()
+  def this(geojson: GeoJsonObject, options: GeoJSONOptions[P, G]) = this()
   
   /**
     * Adds a GeoJSON object to the layer.
     */
   def addData(data: GeoJsonObject): this.type = js.native
   
-  var options: GeoJSONOptions[P] = js.native
+  @JSName("options")
+  var options_GeoJSON__ : GeoJSONOptions[P, G] = js.native
   
   /**
     * Resets the given vector layer's style to the original GeoJSON style,
@@ -37,12 +38,12 @@ object GeoJSON__ {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def asFeature[P, G /* <: GeometryObject */](geojson: G): Feature[G, P] = ^.asInstanceOf[js.Dynamic].applyDynamic("asFeature")(geojson.asInstanceOf[js.Any]).asInstanceOf[Feature[G, P]]
   // Using any[] to avoid artificially limiting valid calls
   /**
     * Normalize GeoJSON geometries/features into GeoJSON features.
     */
-  inline def asFeature[P](geojson: Feature[GeometryObject, P]): Feature[GeometryObject, P] = ^.asInstanceOf[js.Dynamic].applyDynamic("asFeature")(geojson.asInstanceOf[js.Any]).asInstanceOf[Feature[GeometryObject, P]]
-  inline def asFeature[P](geojson: GeometryObject): Feature[GeometryObject, P] = ^.asInstanceOf[js.Dynamic].applyDynamic("asFeature")(geojson.asInstanceOf[js.Any]).asInstanceOf[Feature[GeometryObject, P]]
+  inline def asFeature[P, G /* <: GeometryObject */](geojson: Feature[G, P]): Feature[G, P] = ^.asInstanceOf[js.Dynamic].applyDynamic("asFeature")(geojson.asInstanceOf[js.Any]).asInstanceOf[Feature[G, P]]
   
   /**
     * Creates a LatLng object from an array of 2 numbers (longitude, latitude) or
@@ -80,14 +81,14 @@ object GeoJSON__ {
     * Creates a Layer from a given GeoJSON feature. Can use a custom pointToLayer
     * and/or coordsToLatLng functions if provided as options.
     */
-  inline def geometryToLayer[P](featureData: Feature[GeometryObject, P]): Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("geometryToLayer")(featureData.asInstanceOf[js.Any]).asInstanceOf[Layer]
-  inline def geometryToLayer[P](featureData: Feature[GeometryObject, P], options: GeoJSONOptions[P]): Layer = (^.asInstanceOf[js.Dynamic].applyDynamic("geometryToLayer")(featureData.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Layer]
+  inline def geometryToLayer[P, G /* <: GeometryObject */](featureData: Feature[G, P]): Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("geometryToLayer")(featureData.asInstanceOf[js.Any]).asInstanceOf[Layer]
+  inline def geometryToLayer[P, G /* <: GeometryObject */](featureData: Feature[G, P], options: GeoJSONOptions[P, G]): Layer = (^.asInstanceOf[js.Dynamic].applyDynamic("geometryToLayer")(featureData.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Layer]
   
+  inline def getFeature[P, G /* <: GeometryObject */](layer: Layer, newGeometry: G): Feature[G, P] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFeature")(layer.asInstanceOf[js.Any], newGeometry.asInstanceOf[js.Any])).asInstanceOf[Feature[G, P]]
   /**
     * Convert layer into GeoJSON feature
     */
-  inline def getFeature[P](layer: Layer, newGeometry: Feature[GeometryObject, P]): Feature[GeometryObject, P] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFeature")(layer.asInstanceOf[js.Any], newGeometry.asInstanceOf[js.Any])).asInstanceOf[Feature[GeometryObject, P]]
-  inline def getFeature[P](layer: Layer, newGeometry: GeometryObject): Feature[GeometryObject, P] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFeature")(layer.asInstanceOf[js.Any], newGeometry.asInstanceOf[js.Any])).asInstanceOf[Feature[GeometryObject, P]]
+  inline def getFeature[P, G /* <: GeometryObject */](layer: Layer, newGeometry: Feature[G, P]): Feature[G, P] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFeature")(layer.asInstanceOf[js.Any], newGeometry.asInstanceOf[js.Any])).asInstanceOf[Feature[G, P]]
   
   // Using any[] to avoid artificially limiting valid calls
   /**

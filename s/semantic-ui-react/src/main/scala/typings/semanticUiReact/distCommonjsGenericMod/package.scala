@@ -13,7 +13,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type SemanticShorthandCollection[TProps] = js.Array[SemanticShorthandItem[TProps]]
+type SemanticShorthandCollection[TProps /* <: Record[String, Any] */] = js.Array[SemanticShorthandItem[TProps]]
 
 type SemanticShorthandContent = ReactNode
 

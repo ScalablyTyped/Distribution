@@ -48,7 +48,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.BOOT")
     @js.native
-    val BOOT: Any = js.native
+    val BOOT: String = js.native
     
     /**
       * The Input Plugin Destroy Event.
@@ -57,7 +57,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.DESTROY")
     @js.native
-    val DESTROY: Any = js.native
+    val DESTROY: String = js.native
     
     /**
       * The Pointer Drag Input Event.
@@ -72,7 +72,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.DRAG")
     @js.native
-    val DRAG: Any = js.native
+    val DRAG: String = js.native
     
     /**
       * The Pointer Drag End Input Event.
@@ -85,7 +85,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.DRAG_END")
     @js.native
-    val DRAG_END: Any = js.native
+    val DRAG_END: String = js.native
     
     /**
       * The Pointer Drag Enter Input Event.
@@ -100,7 +100,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.DRAG_ENTER")
     @js.native
-    val DRAG_ENTER: Any = js.native
+    val DRAG_ENTER: String = js.native
     
     /**
       * The Pointer Drag Leave Input Event.
@@ -115,7 +115,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.DRAG_LEAVE")
     @js.native
-    val DRAG_LEAVE: Any = js.native
+    val DRAG_LEAVE: String = js.native
     
     /**
       * The Pointer Drag Over Input Event.
@@ -133,7 +133,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.DRAG_OVER")
     @js.native
-    val DRAG_OVER: Any = js.native
+    val DRAG_OVER: String = js.native
     
     /**
       * The Pointer Drag Start Input Event.
@@ -148,7 +148,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.DRAG_START")
     @js.native
-    val DRAG_START: Any = js.native
+    val DRAG_START: String = js.native
     
     /**
       * The Pointer Drop Input Event.
@@ -161,7 +161,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.DROP")
     @js.native
-    val DROP: Any = js.native
+    val DROP: String = js.native
     
     /**
       * The Game Object Down Input Event.
@@ -186,7 +186,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_DOWN")
     @js.native
-    val GAMEOBJECT_DOWN: Any = js.native
+    val GAMEOBJECT_DOWN: String = js.native
     
     /**
       * The Game Object Drag Event.
@@ -201,7 +201,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_DRAG")
     @js.native
-    val GAMEOBJECT_DRAG: Any = js.native
+    val GAMEOBJECT_DRAG: String = js.native
     
     /**
       * The Game Object Drag End Event.
@@ -216,7 +216,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_DRAG_END")
     @js.native
-    val GAMEOBJECT_DRAG_END: Any = js.native
+    val GAMEOBJECT_DRAG_END: String = js.native
     
     /**
       * The Game Object Drag Enter Event.
@@ -231,7 +231,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_DRAG_ENTER")
     @js.native
-    val GAMEOBJECT_DRAG_ENTER: Any = js.native
+    val GAMEOBJECT_DRAG_ENTER: String = js.native
     
     /**
       * The Game Object Drag Leave Event.
@@ -246,7 +246,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_DRAG_LEAVE")
     @js.native
-    val GAMEOBJECT_DRAG_LEAVE: Any = js.native
+    val GAMEOBJECT_DRAG_LEAVE: String = js.native
     
     /**
       * The Game Object Drag Over Event.
@@ -264,7 +264,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_DRAG_OVER")
     @js.native
-    val GAMEOBJECT_DRAG_OVER: Any = js.native
+    val GAMEOBJECT_DRAG_OVER: String = js.native
     
     /**
       * The Game Object Drag Start Event.
@@ -282,7 +282,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_DRAG_START")
     @js.native
-    val GAMEOBJECT_DRAG_START: Any = js.native
+    val GAMEOBJECT_DRAG_START: String = js.native
     
     /**
       * The Game Object Drop Event.
@@ -297,7 +297,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_DROP")
     @js.native
-    val GAMEOBJECT_DROP: Any = js.native
+    val GAMEOBJECT_DROP: String = js.native
     
     /**
       * The Game Object Move Input Event.
@@ -322,7 +322,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_MOVE")
     @js.native
-    val GAMEOBJECT_MOVE: Any = js.native
+    val GAMEOBJECT_MOVE: String = js.native
     
     /**
       * The Game Object Out Input Event.
@@ -344,10 +344,13 @@ object Input {
       * 
       * With the top event being dispatched first and then flowing down the list. Note that higher-up event handlers can stop
       * the propagation of this event.
+      * 
+      * If the pointer leaves the game canvas itself, it will not trigger an this event. To handle those cases,
+      * please listen for the [GAME_OUT]{@linkcode Phaser.Input.Events#event:GAME_OUT} event.
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_OUT")
     @js.native
-    val GAMEOBJECT_OUT: Any = js.native
+    val GAMEOBJECT_OUT: String = js.native
     
     /**
       * The Game Object Over Input Event.
@@ -372,7 +375,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_OVER")
     @js.native
-    val GAMEOBJECT_OVER: Any = js.native
+    val GAMEOBJECT_OVER: String = js.native
     
     /**
       * The Game Object Pointer Down Event.
@@ -396,7 +399,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_POINTER_DOWN")
     @js.native
-    val GAMEOBJECT_POINTER_DOWN: Any = js.native
+    val GAMEOBJECT_POINTER_DOWN: String = js.native
     
     /**
       * The Game Object Pointer Move Event.
@@ -420,7 +423,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_POINTER_MOVE")
     @js.native
-    val GAMEOBJECT_POINTER_MOVE: Any = js.native
+    val GAMEOBJECT_POINTER_MOVE: String = js.native
     
     /**
       * The Game Object Pointer Out Event.
@@ -441,10 +444,13 @@ object Input {
       * 
       * With the top event being dispatched first and then flowing down the list. Note that higher-up event handlers can stop
       * the propagation of this event.
+      * 
+      * If the pointer leaves the game canvas itself, it will not trigger an this event. To handle those cases,
+      * please listen for the [GAME_OUT]{@linkcode Phaser.Input.Events#event:GAME_OUT} event.
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_POINTER_OUT")
     @js.native
-    val GAMEOBJECT_POINTER_OUT: Any = js.native
+    val GAMEOBJECT_POINTER_OUT: String = js.native
     
     /**
       * The Game Object Pointer Over Event.
@@ -468,7 +474,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_POINTER_OVER")
     @js.native
-    val GAMEOBJECT_POINTER_OVER: Any = js.native
+    val GAMEOBJECT_POINTER_OVER: String = js.native
     
     /**
       * The Game Object Pointer Up Event.
@@ -492,7 +498,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_POINTER_UP")
     @js.native
-    val GAMEOBJECT_POINTER_UP: Any = js.native
+    val GAMEOBJECT_POINTER_UP: String = js.native
     
     /**
       * The Game Object Pointer Wheel Event.
@@ -516,7 +522,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_POINTER_WHEEL")
     @js.native
-    val GAMEOBJECT_POINTER_WHEEL: Any = js.native
+    val GAMEOBJECT_POINTER_WHEEL: String = js.native
     
     /**
       * The Game Object Up Input Event.
@@ -541,7 +547,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_UP")
     @js.native
-    val GAMEOBJECT_UP: Any = js.native
+    val GAMEOBJECT_UP: String = js.native
     
     /**
       * The Game Object Wheel Input Event.
@@ -566,7 +572,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_WHEEL")
     @js.native
-    val GAMEOBJECT_WHEEL: Any = js.native
+    val GAMEOBJECT_WHEEL: String = js.native
     
     /**
       * The Input Plugin Game Out Event.
@@ -578,7 +584,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAME_OUT")
     @js.native
-    val GAME_OUT: Any = js.native
+    val GAME_OUT: String = js.native
     
     /**
       * The Input Plugin Game Over Event.
@@ -590,7 +596,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAME_OVER")
     @js.native
-    val GAME_OVER: Any = js.native
+    val GAME_OVER: String = js.native
     
     /**
       * The Input Manager Boot Event.
@@ -599,7 +605,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.MANAGER_BOOT")
     @js.native
-    val MANAGER_BOOT: Any = js.native
+    val MANAGER_BOOT: String = js.native
     
     /**
       * The Input Manager Process Event.
@@ -609,7 +615,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.MANAGER_PROCESS")
     @js.native
-    val MANAGER_PROCESS: Any = js.native
+    val MANAGER_PROCESS: String = js.native
     
     /**
       * The Input Manager Update Event.
@@ -618,7 +624,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.MANAGER_UPDATE")
     @js.native
-    val MANAGER_UPDATE: Any = js.native
+    val MANAGER_UPDATE: String = js.native
     
     /**
       * The Input Manager Pointer Lock Change Event.
@@ -627,7 +633,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.POINTERLOCK_CHANGE")
     @js.native
-    val POINTERLOCK_CHANGE: Any = js.native
+    val POINTERLOCK_CHANGE: String = js.native
     
     /**
       * The Pointer Down Input Event.
@@ -647,7 +653,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.POINTER_DOWN")
     @js.native
-    val POINTER_DOWN: Any = js.native
+    val POINTER_DOWN: String = js.native
     
     /**
       * The Pointer Down Outside Input Event.
@@ -667,7 +673,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.POINTER_DOWN_OUTSIDE")
     @js.native
-    val POINTER_DOWN_OUTSIDE: Any = js.native
+    val POINTER_DOWN_OUTSIDE: String = js.native
     
     /**
       * The Pointer Move Input Event.
@@ -687,7 +693,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.POINTER_MOVE")
     @js.native
-    val POINTER_MOVE: Any = js.native
+    val POINTER_MOVE: String = js.native
     
     /**
       * The Pointer Out Input Event.
@@ -704,10 +710,13 @@ object Input {
       * 
       * With the top event being dispatched first and then flowing down the list. Note that higher-up event handlers can stop
       * the propagation of this event.
+      * 
+      * If the pointer leaves the game canvas itself, it will not trigger an this event. To handle those cases,
+      * please listen for the [GAME_OUT]{@linkcode Phaser.Input.Events#event:GAME_OUT} event.
       */
     @JSImport("phaser", "Input.Events.POINTER_OUT")
     @js.native
-    val POINTER_OUT: Any = js.native
+    val POINTER_OUT: String = js.native
     
     /**
       * The Pointer Over Input Event.
@@ -727,7 +736,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.POINTER_OVER")
     @js.native
-    val POINTER_OVER: Any = js.native
+    val POINTER_OVER: String = js.native
     
     /**
       * The Pointer Up Input Event.
@@ -747,7 +756,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.POINTER_UP")
     @js.native
-    val POINTER_UP: Any = js.native
+    val POINTER_UP: String = js.native
     
     /**
       * The Pointer Up Outside Input Event.
@@ -767,7 +776,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.POINTER_UP_OUTSIDE")
     @js.native
-    val POINTER_UP_OUTSIDE: Any = js.native
+    val POINTER_UP_OUTSIDE: String = js.native
     
     /**
       * The Pointer Wheel Input Event.
@@ -787,7 +796,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.POINTER_WHEEL")
     @js.native
-    val POINTER_WHEEL: Any = js.native
+    val POINTER_WHEEL: String = js.native
     
     /**
       * The Input Plugin Pre-Update Event.
@@ -797,7 +806,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.PRE_UPDATE")
     @js.native
-    val PRE_UPDATE: Any = js.native
+    val PRE_UPDATE: String = js.native
     
     /**
       * The Input Plugin Shutdown Event.
@@ -806,7 +815,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.SHUTDOWN")
     @js.native
-    val SHUTDOWN: Any = js.native
+    val SHUTDOWN: String = js.native
     
     /**
       * The Input Plugin Start Event.
@@ -816,7 +825,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.START")
     @js.native
-    val START: Any = js.native
+    val START: String = js.native
     
     /**
       * The Input Plugin Update Event.
@@ -826,7 +835,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.UPDATE")
     @js.native
-    val UPDATE: Any = js.native
+    val UPDATE: String = js.native
   }
   
   object Gamepad {
@@ -953,35 +962,410 @@ object Input {
     
     object Configs {
       
-      @JSImport("phaser", "Input.Gamepad.Configs")
-      @js.native
-      val ^ : js.Any = js.native
-      
       /**
         * PlayStation DualShock 4 Gamepad Configuration.
         * Sony PlayStation DualShock 4 (v2) wireless controller
         */
-      @JSImport("phaser", "Input.Gamepad.Configs.DUALSHOCK_4")
-      @js.native
-      def DUALSHOCK_4: js.Object = js.native
-      inline def DUALSHOCK_4_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DUALSHOCK_4")(x.asInstanceOf[js.Any])
+      object DUALSHOCK_4 {
+        
+        /**
+          * Circle button (Right)
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.DUALSHOCK_4.CIRCLE")
+        @js.native
+        val CIRCLE: Double = js.native
+        
+        /**
+          * D-Pad down
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.DUALSHOCK_4.DOWN")
+        @js.native
+        val DOWN: Double = js.native
+        
+        /**
+          * Left bumper (L1)
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.DUALSHOCK_4.L1")
+        @js.native
+        val L1: Double = js.native
+        
+        /**
+          * Left trigger (L2)
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.DUALSHOCK_4.L2")
+        @js.native
+        val L2: Double = js.native
+        
+        /**
+          * Left stick click (L3)
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.DUALSHOCK_4.L3")
+        @js.native
+        val L3: Double = js.native
+        
+        /**
+          * D-Pad left
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.DUALSHOCK_4.LEFT")
+        @js.native
+        val LEFT: Double = js.native
+        
+        /**
+          * Left stick horizontal
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.DUALSHOCK_4.LEFT_STICK_H")
+        @js.native
+        val LEFT_STICK_H: Double = js.native
+        
+        /**
+          * Left stick vertical
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.DUALSHOCK_4.LEFT_STICK_V")
+        @js.native
+        val LEFT_STICK_V: Double = js.native
+        
+        /**
+          * Options button
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.DUALSHOCK_4.OPTIONS")
+        @js.native
+        val OPTIONS: Double = js.native
+        
+        /**
+          * PlayStation logo button
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.DUALSHOCK_4.PS")
+        @js.native
+        val PS: Double = js.native
+        
+        /**
+          * Right bumper (R1)
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.DUALSHOCK_4.R1")
+        @js.native
+        val R1: Double = js.native
+        
+        /**
+          * Right trigger (R2)
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.DUALSHOCK_4.R2")
+        @js.native
+        val R2: Double = js.native
+        
+        /**
+          * Right stick click (R3)
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.DUALSHOCK_4.R3")
+        @js.native
+        val R3: Double = js.native
+        
+        /**
+          * D-Pad up
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.DUALSHOCK_4.RIGHT")
+        @js.native
+        val RIGHT: Double = js.native
+        
+        /**
+          * Right stick horizontal
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.DUALSHOCK_4.RIGHT_STICK_H")
+        @js.native
+        val RIGHT_STICK_H: Double = js.native
+        
+        /**
+          * Right stick vertical
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.DUALSHOCK_4.RIGHT_STICK_V")
+        @js.native
+        val RIGHT_STICK_V: Double = js.native
+        
+        /**
+          * Share button
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.DUALSHOCK_4.SHARE")
+        @js.native
+        val SHARE: Double = js.native
+        
+        /**
+          * Square button (Left)
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.DUALSHOCK_4.SQUARE")
+        @js.native
+        val SQUARE: Double = js.native
+        
+        /**
+          * Touchpad click
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.DUALSHOCK_4.TOUCHBAR")
+        @js.native
+        val TOUCHBAR: Double = js.native
+        
+        /**
+          * Triangle button (Top)
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.DUALSHOCK_4.TRIANGLE")
+        @js.native
+        val TRIANGLE: Double = js.native
+        
+        /**
+          * D-Pad up
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.DUALSHOCK_4.UP")
+        @js.native
+        val UP: Double = js.native
+        
+        /**
+          * Cross button (Bottom)
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.DUALSHOCK_4.X")
+        @js.native
+        val X: Double = js.native
+      }
       
       /**
         * Tatar SNES USB Controller Gamepad Configuration.
         * USB Gamepad  (STANDARD GAMEPAD Vendor: 0079 Product: 0011)
         */
-      @JSImport("phaser", "Input.Gamepad.Configs.SNES_USB")
-      @js.native
-      def SNES_USB: js.Object = js.native
-      inline def SNES_USB_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SNES_USB")(x.asInstanceOf[js.Any])
+      object SNES_USB {
+        
+        /**
+          * A Button (Right)
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.SNES_USB.A")
+        @js.native
+        val A: Double = js.native
+        
+        /**
+          * B Button (Bottom)
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.SNES_USB.B")
+        @js.native
+        val B: Double = js.native
+        
+        /**
+          * D-Pad down
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.SNES_USB.DOWN")
+        @js.native
+        val DOWN: Double = js.native
+        
+        /**
+          * D-Pad left
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.SNES_USB.LEFT")
+        @js.native
+        val LEFT: Double = js.native
+        
+        /**
+          * Left bumper
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.SNES_USB.LEFT_SHOULDER")
+        @js.native
+        val LEFT_SHOULDER: Double = js.native
+        
+        /**
+          * D-Pad right
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.SNES_USB.RIGHT")
+        @js.native
+        val RIGHT: Double = js.native
+        
+        /**
+          * Right bumper
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.SNES_USB.RIGHT_SHOULDER")
+        @js.native
+        val RIGHT_SHOULDER: Double = js.native
+        
+        /**
+          * Select button
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.SNES_USB.SELECT")
+        @js.native
+        val SELECT: Double = js.native
+        
+        /**
+          * Start button
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.SNES_USB.START")
+        @js.native
+        val START: Double = js.native
+        
+        /**
+          * D-Pad up
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.SNES_USB.UP")
+        @js.native
+        val UP: Double = js.native
+        
+        /**
+          * X Button (Top)
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.SNES_USB.X")
+        @js.native
+        val X: Double = js.native
+        
+        /**
+          * Y Button (Left)
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.SNES_USB.Y")
+        @js.native
+        val Y: Double = js.native
+      }
       
       /**
         * XBox 360 Gamepad Configuration.
         */
-      @JSImport("phaser", "Input.Gamepad.Configs.XBOX_360")
-      @js.native
-      def XBOX_360: js.Object = js.native
-      inline def XBOX_360_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XBOX_360")(x.asInstanceOf[js.Any])
+      object XBOX_360 {
+        
+        /**
+          * A button (Bottom)
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.XBOX_360.A")
+        @js.native
+        val A: Double = js.native
+        
+        /**
+          * B button (Right)
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.XBOX_360.B")
+        @js.native
+        val B: Double = js.native
+        
+        /**
+          * Back / Change View button
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.XBOX_360.BACK")
+        @js.native
+        val BACK: Double = js.native
+        
+        /**
+          * D-Pad down
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.XBOX_360.DOWN")
+        @js.native
+        val DOWN: Double = js.native
+        
+        /**
+          * Left Bumper
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.XBOX_360.LB")
+        @js.native
+        val LB: Double = js.native
+        
+        /**
+          * D-Pad left
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.XBOX_360.LEFT")
+        @js.native
+        val LEFT: Double = js.native
+        
+        /**
+          * Left Stick horizontal
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.XBOX_360.LEFT_STICK_H")
+        @js.native
+        val LEFT_STICK_H: Double = js.native
+        
+        /**
+          * Left Stick vertical
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.XBOX_360.LEFT_STICK_V")
+        @js.native
+        val LEFT_STICK_V: Double = js.native
+        
+        /**
+          * Left Stick press
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.XBOX_360.LS")
+        @js.native
+        val LS: Double = js.native
+        
+        /**
+          * Left Trigger
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.XBOX_360.LT")
+        @js.native
+        val LT: Double = js.native
+        
+        /**
+          * XBox menu button
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.XBOX_360.MENU")
+        @js.native
+        val MENU: Double = js.native
+        
+        /**
+          * Right Bumper
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.XBOX_360.RB")
+        @js.native
+        val RB: Double = js.native
+        
+        /**
+          * D-Pad right
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.XBOX_360.RIGHT")
+        @js.native
+        val RIGHT: Double = js.native
+        
+        /**
+          * Right Stick horizontal
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.XBOX_360.RIGHT_STICK_H")
+        @js.native
+        val RIGHT_STICK_H: Double = js.native
+        
+        /**
+          * Right Stick vertical
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.XBOX_360.RIGHT_STICK_V")
+        @js.native
+        val RIGHT_STICK_V: Double = js.native
+        
+        /**
+          * Right stick press
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.XBOX_360.RS")
+        @js.native
+        val RS: Double = js.native
+        
+        /**
+          * Right Trigger
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.XBOX_360.RT")
+        @js.native
+        val RT: Double = js.native
+        
+        /**
+          * Start button
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.XBOX_360.START")
+        @js.native
+        val START: Double = js.native
+        
+        /**
+          * D-Pad up
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.XBOX_360.UP")
+        @js.native
+        val UP: Double = js.native
+        
+        /**
+          * X button (Left)
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.XBOX_360.X")
+        @js.native
+        val X: Double = js.native
+        
+        /**
+          * Y button (Top)
+          */
+        @JSImport("phaser", "Input.Gamepad.Configs.XBOX_360.Y")
+        @js.native
+        val Y: Double = js.native
+      }
     }
     
     object Events {
@@ -997,7 +1381,7 @@ object Input {
         */
       @JSImport("phaser", "Input.Gamepad.Events.BUTTON_DOWN")
       @js.native
-      val BUTTON_DOWN: Any = js.native
+      val BUTTON_DOWN: String = js.native
       
       /**
         * The Gamepad Button Up Event.
@@ -1010,7 +1394,7 @@ object Input {
         */
       @JSImport("phaser", "Input.Gamepad.Events.BUTTON_UP")
       @js.native
-      val BUTTON_UP: Any = js.native
+      val BUTTON_UP: String = js.native
       
       /**
         * The Gamepad Connected Event.
@@ -1026,7 +1410,7 @@ object Input {
         */
       @JSImport("phaser", "Input.Gamepad.Events.CONNECTED")
       @js.native
-      val CONNECTED: Any = js.native
+      val CONNECTED: String = js.native
       
       /**
         * The Gamepad Disconnected Event.
@@ -1037,7 +1421,7 @@ object Input {
         */
       @JSImport("phaser", "Input.Gamepad.Events.DISCONNECTED")
       @js.native
-      val DISCONNECTED: Any = js.native
+      val DISCONNECTED: String = js.native
       
       /**
         * The Gamepad Button Down Event.
@@ -1053,7 +1437,7 @@ object Input {
         */
       @JSImport("phaser", "Input.Gamepad.Events.GAMEPAD_BUTTON_DOWN")
       @js.native
-      val GAMEPAD_BUTTON_DOWN: Any = js.native
+      val GAMEPAD_BUTTON_DOWN: String = js.native
       
       /**
         * The Gamepad Button Up Event.
@@ -1069,7 +1453,7 @@ object Input {
         */
       @JSImport("phaser", "Input.Gamepad.Events.GAMEPAD_BUTTON_UP")
       @js.native
-      val GAMEPAD_BUTTON_UP: Any = js.native
+      val GAMEPAD_BUTTON_UP: String = js.native
     }
     
     /**
@@ -1289,7 +1673,7 @@ object Input {
         */
       @JSImport("phaser", "Input.Keyboard.Events.ANY_KEY_DOWN")
       @js.native
-      val ANY_KEY_DOWN: Any = js.native
+      val ANY_KEY_DOWN: String = js.native
       
       /**
         * The Global Key Up Event.
@@ -1304,7 +1688,7 @@ object Input {
         */
       @JSImport("phaser", "Input.Keyboard.Events.ANY_KEY_UP")
       @js.native
-      val ANY_KEY_UP: Any = js.native
+      val ANY_KEY_UP: String = js.native
       
       /**
         * The Key Combo Match Event.
@@ -1323,7 +1707,7 @@ object Input {
         */
       @JSImport("phaser", "Input.Keyboard.Events.COMBO_MATCH")
       @js.native
-      val COMBO_MATCH: Any = js.native
+      val COMBO_MATCH: String = js.native
       
       /**
         * The Key Down Event.
@@ -1342,7 +1726,7 @@ object Input {
         */
       @JSImport("phaser", "Input.Keyboard.Events.DOWN")
       @js.native
-      val DOWN: Any = js.native
+      val DOWN: String = js.native
       
       /**
         * The Key Down Event.
@@ -1351,7 +1735,7 @@ object Input {
         * 
         * Unlike the `ANY_KEY_DOWN` event, this one has a special dynamic event name. For example, to listen for the `A` key being pressed
         * use the following from within a Scene: `this.input.keyboard.on('keydown-A', listener)`. You can replace the `-A` part of the event
-        * name with any valid [Key Code string]{@link Phaser.Input.Keyboard.KeyCodes}. For example, this will listen for the space bar: 
+        * name with any valid [Key Code string]{@link Phaser.Input.Keyboard.KeyCodes}. For example, this will listen for the space bar:
         * `this.input.keyboard.on('keydown-SPACE', listener)`.
         * 
         * You can also create a generic 'global' listener. See [Keyboard.Events.ANY_KEY_DOWN]{@linkcode Phaser.Input.Keyboard.Events#event:ANY_KEY_DOWN} for details.
@@ -1367,7 +1751,7 @@ object Input {
         */
       @JSImport("phaser", "Input.Keyboard.Events.KEY_DOWN")
       @js.native
-      val KEY_DOWN: Any = js.native
+      val KEY_DOWN: String = js.native
       
       /**
         * The Key Up Event.
@@ -1376,7 +1760,7 @@ object Input {
         * 
         * Unlike the `ANY_KEY_UP` event, this one has a special dynamic event name. For example, to listen for the `A` key being released
         * use the following from within a Scene: `this.input.keyboard.on('keyup-A', listener)`. You can replace the `-A` part of the event
-        * name with any valid [Key Code string]{@link Phaser.Input.Keyboard.KeyCodes}. For example, this will listen for the space bar: 
+        * name with any valid [Key Code string]{@link Phaser.Input.Keyboard.KeyCodes}. For example, this will listen for the space bar:
         * `this.input.keyboard.on('keyup-SPACE', listener)`.
         * 
         * You can also create a generic 'global' listener. See [Keyboard.Events.ANY_KEY_UP]{@linkcode Phaser.Input.Keyboard.Events#event:ANY_KEY_UP} for details.
@@ -1385,7 +1769,7 @@ object Input {
         */
       @JSImport("phaser", "Input.Keyboard.Events.KEY_UP")
       @js.native
-      val KEY_UP: Any = js.native
+      val KEY_UP: String = js.native
       
       /**
         * The Key Up Event.
@@ -1404,7 +1788,7 @@ object Input {
         */
       @JSImport("phaser", "Input.Keyboard.Events.UP")
       @js.native
-      val UP: Any = js.native
+      val UP: String = js.native
     }
     
     /**
@@ -2455,7 +2839,8 @@ object Input {
       * Scene to stop all input, or `this.input.keyboard.preventDefault = false` to stop a Scene halting input on another Scene.
       * 
       * _Note_: Many keyboards are unable to process certain combinations of keys due to hardware limitations known as ghosting.
-      * See http://www.html5gamedevs.com/topic/4876-impossible-to-use-more-than-2-keyboard-input-buttons-at-the-same-time/ for more details.
+      * See http://www.html5gamedevs.com/topic/4876-impossible-to-use-more-than-2-keyboard-input-buttons-at-the-same-time/ for more details
+      * and use the site https://w3c.github.io/uievents/tools/key-event-viewer.html to test your n-key support in browser.
       * 
       * Also please be aware that certain browser extensions can disable or override Phaser keyboard handling.
       * For example the Chrome extension vimium is known to disable Phaser from using the D key, while EverNote disables the backtick key.
@@ -2542,11 +2927,11 @@ object Input {
       override def destroy(): Unit = js.native
       
       /**
-        * Attempts to disable the context menu from appearing if you right-click on the browser.
+        * Attempts to disable the context menu from appearing if you right-click on the game canvas, or specified input target.
         * 
         * Works by listening for the `contextmenu` event and prevent defaulting it.
         * 
-        * Use this if you need to enable right-button mouse support in your game, and the browser
+        * Use this if you need to enable right-button mouse support in your game, and the context
         * menu keeps getting in the way.
         */
       /* CompleteClass */
@@ -2846,6 +3231,16 @@ object Input {
       var enabled: Boolean = js.native
       
       /**
+        * Are the event listeners hooked into `window.top` or `window`?
+        * 
+        * This is set during the `boot` sequence. If the browser does not have access to `window.top`,
+        * such as in cross-origin iframe environments, this property gets set to `false` and the events
+        * are hooked into `window` instead.
+        */
+      /* CompleteClass */
+      override val isTop: Boolean = js.native
+      
+      /**
         * A reference to the Input Manager.
         */
       /* CompleteClass */
@@ -2885,20 +3280,6 @@ object Input {
         */
       /* CompleteClass */
       var onTouchMove: js.Function = js.native
-      
-      /**
-        * The Touch Out event handler function.
-        * Initially empty and bound in the `startListeners` method.
-        */
-      /* CompleteClass */
-      var onTouchOut: js.Function = js.native
-      
-      /**
-        * The Touch Over event handler function.
-        * Initially empty and bound in the `startListeners` method.
-        */
-      /* CompleteClass */
-      var onTouchOver: js.Function = js.native
       
       /**
         * The Touch Start event handler function.

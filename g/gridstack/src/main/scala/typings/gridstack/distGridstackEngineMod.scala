@@ -3,6 +3,7 @@ package typings.gridstack
 import typings.gridstack.distTypesMod.GridStackMoveOpts
 import typings.gridstack.distTypesMod.GridStackNode
 import typings.gridstack.distTypesMod.GridStackPosition
+import typings.gridstack.distTypesMod.SaveFcn
 import typings.gridstack.gridstackInts.`-1`
 import typings.gridstack.gridstackInts.`1`
 import org.scalablytyped.runtime.StObject
@@ -80,8 +81,13 @@ object distGridstackEngineMod {
     
     /* protected */ def findCacheLayout(n: GridStackNode, column: Double): Double = js.native
     
-    /** find the first available empty spot for the given node width/height, updating the x,y attributes. return true if found */
+    /** find the first available empty spot for the given node width/height, updating the x,y attributes. return true if found.
+      * optionally you can pass your own existing node list and column count, otherwise defaults to that engine data.
+      */
     def findEmptyPosition(node: GridStackNode): Boolean = js.native
+    def findEmptyPosition(node: GridStackNode, nodeList: js.Array[GridStackNode]): Boolean = js.native
+    def findEmptyPosition(node: GridStackNode, nodeList: js.Array[GridStackNode], column: Double): Boolean = js.native
+    def findEmptyPosition(node: GridStackNode, nodeList: Unit, column: Double): Boolean = js.native
     
     /** float getter method */
     def float: Boolean = js.native
@@ -134,6 +140,8 @@ object distGridstackEngineMod {
       * returning a list of widgets for serialization */
     def save(): js.Array[GridStackNode] = js.native
     def save(saveElement: Boolean): js.Array[GridStackNode] = js.native
+    def save(saveElement: Boolean, saveCB: SaveFcn): js.Array[GridStackNode] = js.native
+    def save(saveElement: Unit, saveCB: SaveFcn): js.Array[GridStackNode] = js.native
     
     /** sort the nodes array from first to last, or reverse. Called during collision/placement to force an order */
     def sortNodes(): GridStackEngine = js.native

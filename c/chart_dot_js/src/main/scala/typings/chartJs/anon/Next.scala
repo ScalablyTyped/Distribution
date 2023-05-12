@@ -1,6 +1,6 @@
 package typings.chartJs.anon
 
-import typings.chartJs.typesHelpersHelpersDotcurveMod.SplinePoint
+import typings.chartJs.distTypesGeometricMod.SplinePoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

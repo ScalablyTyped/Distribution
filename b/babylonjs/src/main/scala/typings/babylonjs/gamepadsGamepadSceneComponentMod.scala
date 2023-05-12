@@ -123,7 +123,7 @@ object gamepadsGamepadSceneComponentMod {
       
       /**
         * Gets the gamepad manager associated with the scene
-        * @see https://doc.babylonjs.com/how_to/how_to_use_gamepads
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/input/gamepads
         */
       var gamepadManager: GamepadManager
     }

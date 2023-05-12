@@ -43,6 +43,9 @@ trait EquiRectangularCubeTexture
   /** The size of the cubemap. */
   /* private */ var _size: Any = js.native
   
+  /** Whether to supersample the input image */
+  /* private */ var _supersample: Any = js.native
+  
   /** The width of the input image. */
   /* private */ var _width: Any = js.native
   

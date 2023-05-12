@@ -10,27 +10,27 @@ trait Slider
      with Component[SliderOptions] {
   
   /**
-    * Index of current slide
+    * Index of current slide.
     */
   var activeIndex: Double
   
   /**
-    * Move to next slider
+    * Move to next slider.
     */
   def next(): Unit
   
   /**
-    * Pause slider autoslide
+    * Pause slider autoslide.
     */
   def pause(): Unit
   
   /**
-    * Move to prev slider
+    * Move to prev slider.
     */
   def prev(): Unit
   
   /**
-    * Start slider autoslide
+    * Start slider autoslide.
     */
   def start(): Unit
 }

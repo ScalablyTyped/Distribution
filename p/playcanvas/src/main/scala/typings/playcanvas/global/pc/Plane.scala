@@ -5,23 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * An infinite plane.
-  *
-  * @ignore
+  * An infinite plane. Internally it's represented in a parametric equation form:
+  * ax + by + cz + distance = 0.
   */
 @JSGlobal("pc.Plane")
 @js.native
 /**
   * Create a new Plane instance.
   *
-  * @param {Vec3} [point] - Point position on the plane. The constructor takes a reference of
-  * this parameter.
-  * @param {Vec3} [normal] - Normal of the plane. The constructor takes a reference of this
-  * parameter.
+  * @param {Vec3} [normal] - Normal of the plane. The constructor copies this parameter. Defaults
+  * to {@link Vec3#UP}.
+  * @param {Vec3} [distance] - The distance from the plane to the origin, along its normal.
+  * Defaults to 0.
   */
 open class Plane ()
   extends typings.playcanvas.mod.Plane {
-  def this(point: typings.playcanvas.mod.Vec3) = this()
-  def this(point: Unit, normal: typings.playcanvas.mod.Vec3) = this()
-  def this(point: typings.playcanvas.mod.Vec3, normal: typings.playcanvas.mod.Vec3) = this()
+  def this(normal: typings.playcanvas.mod.Vec3) = this()
+  def this(normal: Unit, distance: typings.playcanvas.mod.Vec3) = this()
+  def this(normal: typings.playcanvas.mod.Vec3, distance: typings.playcanvas.mod.Vec3) = this()
 }

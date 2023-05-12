@@ -7,12 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeviceUnderTest extends StObject {
   
   /**
-    * Lists devices certificate ARN.
+    * Lists device's certificate ARN.
     */
   var certificateArn: js.UndefOr[AmazonResourceName] = js.undefined
   
   /**
-    * Lists devices thing ARN.
+    * Lists device's role ARN.
+    */
+  var deviceRoleArn: js.UndefOr[AmazonResourceName] = js.undefined
+  
+  /**
+    * Lists device's thing ARN.
     */
   var thingArn: js.UndefOr[AmazonResourceName] = js.undefined
 }
@@ -29,6 +34,10 @@ object DeviceUnderTest {
     inline def setCertificateArn(value: AmazonResourceName): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
     
     inline def setCertificateArnUndefined: Self = StObject.set(x, "certificateArn", js.undefined)
+    
+    inline def setDeviceRoleArn(value: AmazonResourceName): Self = StObject.set(x, "deviceRoleArn", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceRoleArnUndefined: Self = StObject.set(x, "deviceRoleArn", js.undefined)
     
     inline def setThingArn(value: AmazonResourceName): Self = StObject.set(x, "thingArn", value.asInstanceOf[js.Any])
     

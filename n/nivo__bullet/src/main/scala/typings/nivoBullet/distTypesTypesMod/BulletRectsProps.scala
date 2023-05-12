@@ -1,22 +1,22 @@
 package typings.nivoBullet.distTypesTypesMod
 
+import typings.nivoBullet.anon.MeasuresY
 import typings.nivoBullet.nivoBulletStrings.horizontal
 import typings.nivoBullet.nivoBulletStrings.vertical
 import typings.nivoColors.distTypesInheritedColorMod.InheritedColorConfig
 import typings.nivoScales.distTypesTypesMod.ScaleLinear
 import typings.react.mod.ComponentType
+import typings.reactSpringCore.mod.SpringValues
 import typings.std.MouseEvent
 import typings.std.SVGRectElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Pick<@nivo/bullet.@nivo/bullet/dist/types/types.CommonBulletProps, 'layout' | 'reverse'> & @nivo/core.@nivo/core.Dimensions & @nivo/bullet.@nivo/bullet/dist/types/types.Point & {  animatedProps :/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValues<{  measuresY :number,   transform :string}> * / any | undefined,   borderColor :@nivo/colors.@nivo/colors.InheritedColorConfig<@nivo/bullet.@nivo/bullet/dist/types/types.ComputedRangeDatum>,   borderWidth :number,   scale :@nivo/scales.@nivo/scales.ScaleLinear<number>,   data :std.Array<@nivo/bullet.@nivo/bullet/dist/types/types.ComputedRangeDatum>,   component :@nivo/bullet.@nivo/bullet/dist/types/types.CommonBulletProps['rangeComponent'],   onMouseEnter :@nivo/bullet.@nivo/bullet/dist/types/types.MouseEventWithDatum<@nivo/bullet.@nivo/bullet/dist/types/types.ComputedRangeDatum, std.SVGRectElement>,   onMouseLeave :@nivo/bullet.@nivo/bullet/dist/types/types.MouseEventWithDatum<@nivo/bullet.@nivo/bullet/dist/types/types.ComputedRangeDatum, std.SVGRectElement>,   onClick :@nivo/bullet.@nivo/bullet/dist/types/types.MouseEventWithDatum<@nivo/bullet.@nivo/bullet/dist/types/types.ComputedRangeDatum, std.SVGRectElement>} */
+/* Inlined std.Pick<@nivo/bullet.@nivo/bullet/dist/types/types.CommonBulletProps, 'layout' | 'reverse'> & @nivo/core.@nivo/core.Dimensions & @nivo/bullet.@nivo/bullet/dist/types/types.Point & {  animatedProps :@react-spring/web.@react-spring/web.SpringValues<{  measuresY :number,   transform :string}> | undefined,   borderColor :@nivo/colors.@nivo/colors.InheritedColorConfig<@nivo/bullet.@nivo/bullet/dist/types/types.ComputedRangeDatum>,   borderWidth :number,   scale :@nivo/scales.@nivo/scales.ScaleLinear<number>,   data :std.Array<@nivo/bullet.@nivo/bullet/dist/types/types.ComputedRangeDatum>,   component :@nivo/bullet.@nivo/bullet/dist/types/types.CommonBulletProps['rangeComponent'],   onMouseEnter :@nivo/bullet.@nivo/bullet/dist/types/types.MouseEventWithDatum<@nivo/bullet.@nivo/bullet/dist/types/types.ComputedRangeDatum, std.SVGRectElement>,   onMouseLeave :@nivo/bullet.@nivo/bullet/dist/types/types.MouseEventWithDatum<@nivo/bullet.@nivo/bullet/dist/types/types.ComputedRangeDatum, std.SVGRectElement>,   onClick :@nivo/bullet.@nivo/bullet/dist/types/types.MouseEventWithDatum<@nivo/bullet.@nivo/bullet/dist/types/types.ComputedRangeDatum, std.SVGRectElement>} */
 trait BulletRectsProps extends StObject {
   
-  var animatedProps: js.UndefOr[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValues<{  measuresY :number,   transform :string}> */ Any
-  ] = js.undefined
+  var animatedProps: js.UndefOr[SpringValues[MeasuresY]] = js.undefined
   
   var borderColor: InheritedColorConfig[ComputedRangeDatum]
   
@@ -71,9 +71,7 @@ object BulletRectsProps {
   @scala.inline
   implicit open class MutableBuilder[Self <: BulletRectsProps] (val x: Self) extends AnyVal {
     
-    inline def setAnimatedProps(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValues<{  measuresY :number,   transform :string}> */ Any
-    ): Self = StObject.set(x, "animatedProps", value.asInstanceOf[js.Any])
+    inline def setAnimatedProps(value: SpringValues[MeasuresY]): Self = StObject.set(x, "animatedProps", value.asInstanceOf[js.Any])
     
     inline def setAnimatedPropsUndefined: Self = StObject.set(x, "animatedProps", js.undefined)
     

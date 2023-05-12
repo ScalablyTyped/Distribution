@@ -12,26 +12,22 @@ object mod {
   open class GraphDatabase protected () extends StObject {
     /**
       * Constructor.
-      * @constructor
       * @param {GraphDatabaseOptions} options Connection options.
       */
     def this(options: GraphDatabaseOptions) = this()
     /**
       * Constructor.
-      * @constructor
       * @param {string} url A URL connection.
       */
     def this(url: String) = this()
     
     /**
       * Agent.
-      * @type {any}
       */
     var agent: Any = js.native
     
     /**
       * Credentials.
-      * @type {Authentication}
       */
     var auth: Authentication = js.native
     
@@ -145,13 +141,11 @@ object mod {
     
     /**
       * Proxy.
-      * @type {any}
       */
     var proxy: Any = js.native
     
     /**
       * URL connection.
-      * @type {string}
       */
     var url: String = js.native
   }
@@ -272,31 +266,26 @@ object mod {
     
     /**
       * HTTP agent.
-      * @type {any}
       */
     var agent: js.UndefOr[Any] = js.undefined
     
     /**
       * Authentication information.
-      * @type {string|Authentication}
       */
     var auth: String | Authentication
     
     /**
       * HTTP headers.
-      * @type {Object}
       */
     var headers: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Proxy address.
-      * @type {string}
       */
     var proxy: js.UndefOr[String] = js.undefined
     
     /**
       * URL connection.
-      * @type {string}
       */
     var url: String
   }

@@ -95,6 +95,10 @@ object playcanvasInts {
   inline def `23`: `23` = 23.asInstanceOf[`23`]
   
   @js.native
+  sealed trait `24` extends StObject
+  inline def `24`: `24` = 24.asInstanceOf[`24`]
+  
+  @js.native
   sealed trait `256` extends StObject
   inline def `256`: `256` = 256.asInstanceOf[`256`]
   

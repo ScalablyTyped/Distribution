@@ -165,6 +165,7 @@ object mod {
   /* Rewritten from type alias, can be one of: 
     - typings.reactRte.reactRteStrings.INLINE_STYLE_BUTTONS
     - typings.reactRte.reactRteStrings.BLOCK_TYPE_BUTTONS
+    - typings.reactRte.reactRteStrings.BLOCK_ALIGNMENT_BUTTONS
     - typings.reactRte.reactRteStrings.LINK_BUTTONS
     - typings.reactRte.reactRteStrings.BLOCK_TYPE_DROPDOWN
     - typings.reactRte.reactRteStrings.HISTORY_BUTTONS
@@ -172,6 +173,8 @@ object mod {
   */
   trait GroupName extends StObject
   object GroupName {
+    
+    inline def BLOCK_ALIGNMENT_BUTTONS: typings.reactRte.reactRteStrings.BLOCK_ALIGNMENT_BUTTONS = "BLOCK_ALIGNMENT_BUTTONS".asInstanceOf[typings.reactRte.reactRteStrings.BLOCK_ALIGNMENT_BUTTONS]
     
     inline def BLOCK_TYPE_BUTTONS: typings.reactRte.reactRteStrings.BLOCK_TYPE_BUTTONS = "BLOCK_TYPE_BUTTONS".asInstanceOf[typings.reactRte.reactRteStrings.BLOCK_TYPE_BUTTONS]
     
@@ -259,6 +262,8 @@ object mod {
     
     var keyBindingFn: js.UndefOr[js.Function1[/* event */ js.Object, js.UndefOr[String]]] = js.undefined
     
+    var onBlur: js.UndefOr[js.Function1[/* event */ js.Object, Unit]] = js.undefined
+    
     var onChange: js.UndefOr[ChangeHandler] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
@@ -327,6 +332,10 @@ object mod {
       inline def setKeyBindingFn(value: /* event */ js.Object => js.UndefOr[String]): Self = StObject.set(x, "keyBindingFn", js.Any.fromFunction1(value))
       
       inline def setKeyBindingFnUndefined: Self = StObject.set(x, "keyBindingFn", js.undefined)
+      
+      inline def setOnBlur(value: /* event */ js.Object => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      
+      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
       inline def setOnChange(value: /* value */ EditorValue => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
@@ -453,6 +462,8 @@ object mod {
   
   trait ToolbarConfig extends StObject {
     
+    var BLOCK_ALIGNMENT_BUTTONS: StyleConfigList
+    
     var BLOCK_TYPE_BUTTONS: StyleConfigList
     
     var BLOCK_TYPE_DROPDOWN: StyleConfigList
@@ -466,17 +477,22 @@ object mod {
   object ToolbarConfig {
     
     inline def apply(
+      BLOCK_ALIGNMENT_BUTTONS: StyleConfigList,
       BLOCK_TYPE_BUTTONS: StyleConfigList,
       BLOCK_TYPE_DROPDOWN: StyleConfigList,
       INLINE_STYLE_BUTTONS: StyleConfigList,
       display: js.Array[GroupName]
     ): ToolbarConfig = {
-      val __obj = js.Dynamic.literal(BLOCK_TYPE_BUTTONS = BLOCK_TYPE_BUTTONS.asInstanceOf[js.Any], BLOCK_TYPE_DROPDOWN = BLOCK_TYPE_DROPDOWN.asInstanceOf[js.Any], INLINE_STYLE_BUTTONS = INLINE_STYLE_BUTTONS.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(BLOCK_ALIGNMENT_BUTTONS = BLOCK_ALIGNMENT_BUTTONS.asInstanceOf[js.Any], BLOCK_TYPE_BUTTONS = BLOCK_TYPE_BUTTONS.asInstanceOf[js.Any], BLOCK_TYPE_DROPDOWN = BLOCK_TYPE_DROPDOWN.asInstanceOf[js.Any], INLINE_STYLE_BUTTONS = INLINE_STYLE_BUTTONS.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any])
       __obj.asInstanceOf[ToolbarConfig]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: ToolbarConfig] (val x: Self) extends AnyVal {
+      
+      inline def setBLOCK_ALIGNMENT_BUTTONS(value: StyleConfigList): Self = StObject.set(x, "BLOCK_ALIGNMENT_BUTTONS", value.asInstanceOf[js.Any])
+      
+      inline def setBLOCK_ALIGNMENT_BUTTONSVarargs(value: StyleConfig*): Self = StObject.set(x, "BLOCK_ALIGNMENT_BUTTONS", js.Array(value*))
       
       inline def setBLOCK_TYPE_BUTTONS(value: StyleConfigList): Self = StObject.set(x, "BLOCK_TYPE_BUTTONS", value.asInstanceOf[js.Any])
       

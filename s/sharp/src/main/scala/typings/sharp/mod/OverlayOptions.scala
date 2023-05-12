@@ -8,11 +8,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OverlayOptions extends StObject {
   
+  /** Set to true to read all frames/pages of an animated image. (optional, default false). */
+  var animated: js.UndefOr[Boolean] = js.undefined
+  
   /** how to blend this image with the image below. (optional, default `'over'`) */
   var blend: js.UndefOr[Blend] = js.undefined
   
   /** number representing the DPI for vector overlay image. (optional, default 72) */
   var density: js.UndefOr[Double] = js.undefined
+  
+  /**
+    *  When to abort processing of invalid pixel data, one of (in order of sensitivity):
+    *  'none' (least), 'truncated', 'error' or 'warning' (most), highers level imply lower levels, invalid metadata will always abort. (optional, default 'warning')
+    */
+  var failOn: js.UndefOr[FailOnOptions] = js.undefined
   
   /** gravity at which to place the overlay. (optional, default 'centre') */
   var gravity: js.UndefOr[Gravity_] = js.undefined
@@ -52,6 +61,10 @@ object OverlayOptions {
   @scala.inline
   implicit open class MutableBuilder[Self <: OverlayOptions] (val x: Self) extends AnyVal {
     
+    inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+    
+    inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
+    
     inline def setBlend(value: Blend): Self = StObject.set(x, "blend", value.asInstanceOf[js.Any])
     
     inline def setBlendUndefined: Self = StObject.set(x, "blend", js.undefined)
@@ -59,6 +72,10 @@ object OverlayOptions {
     inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
     
     inline def setDensityUndefined: Self = StObject.set(x, "density", js.undefined)
+    
+    inline def setFailOn(value: FailOnOptions): Self = StObject.set(x, "failOn", value.asInstanceOf[js.Any])
+    
+    inline def setFailOnUndefined: Self = StObject.set(x, "failOn", js.undefined)
     
     inline def setGravity(value: Gravity_): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
     

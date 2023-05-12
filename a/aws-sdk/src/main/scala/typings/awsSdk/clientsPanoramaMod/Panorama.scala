@@ -29,12 +29,12 @@ trait Panorama extends Service {
   ): Request[CreateApplicationInstanceResponse, AWSError] = js.native
   
   /**
-    * Creates a job to run on one or more devices. A job can update a device's software or reboot it.
+    * Creates a job to run on a device. A job can update a device's software or reboot it.
     */
   def createJobForDevices(): Request[CreateJobForDevicesResponse, AWSError] = js.native
   def createJobForDevices(callback: js.Function2[/* err */ AWSError, /* data */ CreateJobForDevicesResponse, Unit]): Request[CreateJobForDevicesResponse, AWSError] = js.native
   /**
-    * Creates a job to run on one or more devices. A job can update a device's software or reboot it.
+    * Creates a job to run on a device. A job can update a device's software or reboot it.
     */
   def createJobForDevices(params: CreateJobForDevicesRequest): Request[CreateJobForDevicesResponse, AWSError] = js.native
   def createJobForDevices(

@@ -13,7 +13,7 @@ open class StandardMaterial protected ()
     * Instantiates a new standard material.
     * This is the default material used in Babylon. It is the best trade off between quality
     * and performances.
-    * @see https://doc.babylonjs.com/babylon101/materials
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/materials_introduction
     * @param name Define the name of the material in the scene
     * @param scene Define the scene the material belong to
     */

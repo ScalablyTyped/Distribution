@@ -10,7 +10,7 @@ open class ContourSeries protected () extends AbstractSeries[ContourSeriesProps]
   def this(props: ContourSeriesProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: ContourSeriesProps, context: Any) = this()
 }

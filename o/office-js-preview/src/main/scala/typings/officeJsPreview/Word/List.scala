@@ -73,7 +73,7 @@ trait List
   def getLevelParagraphs(level: Double): ParagraphCollection = js.native
   
   /**
-    * Gets the base64 encoded string representation of the picture at the specified level in the list.
+    * Gets the Base64-encoded string representation of the picture at the specified level in the list.
     *
     * @remarks
     * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -279,7 +279,7 @@ trait List
     * @beta
     *
     * @param level Required. The level in the list.
-    * @param base64EncodedImage Optional. The base64 encoded image to be set. If not given, the default picture is set.
+    * @param base64EncodedImage Optional. The Base64-encoded image to be set. If not given, the default picture is set.
     */
   def setLevelPicture(level: Double): Unit = js.native
   def setLevelPicture(level: Double, base64EncodedImage: String): Unit = js.native

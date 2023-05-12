@@ -9,6 +9,7 @@ trait JSDocFunctionType
   extends StObject
      with JSDocType
      with SignatureDeclarationBase
+     with LocalsContainer
      with HasJSDoc
      with SignatureDeclaration {
   

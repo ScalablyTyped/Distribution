@@ -7,28 +7,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libSystemIsystemMod {
   
-  trait ISystem[INIT_OPTIONS, DESTROY_OPTIONS] extends StObject {
+  trait ISystem[InitOptions, DestroyOptions] extends StObject {
     
     /** Generic destroy methods to be overridden by the subclass */
-    var destroy: js.UndefOr[js.Function1[/* options */ js.UndefOr[DESTROY_OPTIONS], Unit]] = js.undefined
+    var destroy: js.UndefOr[js.Function1[/* options */ js.UndefOr[DestroyOptions], Unit]] = js.undefined
     
-    var init: js.UndefOr[js.Function1[/* options */ js.UndefOr[INIT_OPTIONS], Unit]] = js.undefined
+    var init: js.UndefOr[js.Function1[/* options */ js.UndefOr[InitOptions], Unit]] = js.undefined
   }
   object ISystem {
     
-    inline def apply[INIT_OPTIONS, DESTROY_OPTIONS](): ISystem[INIT_OPTIONS, DESTROY_OPTIONS] = {
+    inline def apply[InitOptions, DestroyOptions](): ISystem[InitOptions, DestroyOptions] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ISystem[INIT_OPTIONS, DESTROY_OPTIONS]]
+      __obj.asInstanceOf[ISystem[InitOptions, DestroyOptions]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: ISystem[?, ?], INIT_OPTIONS, DESTROY_OPTIONS] (val x: Self & (ISystem[INIT_OPTIONS, DESTROY_OPTIONS])) extends AnyVal {
+    implicit open class MutableBuilder[Self <: ISystem[?, ?], InitOptions, DestroyOptions] (val x: Self & (ISystem[InitOptions, DestroyOptions])) extends AnyVal {
       
-      inline def setDestroy(value: /* options */ js.UndefOr[DESTROY_OPTIONS] => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+      inline def setDestroy(value: /* options */ js.UndefOr[DestroyOptions] => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
       
       inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      inline def setInit(value: /* options */ js.UndefOr[INIT_OPTIONS] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+      inline def setInit(value: /* options */ js.UndefOr[InitOptions] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       
       inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     }

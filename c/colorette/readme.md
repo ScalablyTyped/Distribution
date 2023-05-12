@@ -1,7 +1,7 @@
 
 # Scala.js typings for colorette
 
-Typings are for version 2.0.19
+Typings are for version 2.0.20
 
 ## Library description:
 🌈Easily set your terminal text color & styles.

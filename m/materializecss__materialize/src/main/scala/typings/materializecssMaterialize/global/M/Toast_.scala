@@ -14,19 +14,19 @@ open class Toast_ ()
      with Toast {
   
   /**
-    * remove a specific toast
+    * remove a specific toast.
     */
   /* CompleteClass */
   override def dismiss(): Unit = js.native
   
   /**
-    * The DOM element the plugin was initialized with
+    * The DOM element the plugin was initialized with.
     */
   /* CompleteClass */
   var el: Element = js.native
   
   /**
-    * The options the instance was initialized with
+    * The options the instance was initialized with.
     */
   /* CompleteClass */
   var options: ToastOptions = js.native
@@ -38,7 +38,8 @@ open class Toast_ ()
   var panning: Boolean = js.native
   
   /**
-    * The remaining amount of time in ms that the toast will stay before dismissal.
+    * The remaining amount of time in ms that the toast
+    * will stay before dismissal.
     */
   /* CompleteClass */
   var timeRemaining: Double = js.native
@@ -50,13 +51,13 @@ object Toast_ {
   val ^ : js.Any = js.native
   
   /**
-    * dismiss all toasts
+    * dismiss all toasts.
     */
   /* static member */
   inline def dismissAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dismissAll")().asInstanceOf[Unit]
   
   /**
-    * Get Instance
+    * Get Instance.
     */
   /* static member */
   inline def getInstance(elem: Element): Toast = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(elem.asInstanceOf[js.Any]).asInstanceOf[Toast]

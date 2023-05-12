@@ -1,7 +1,7 @@
 
 # Scala.js typings for unsplash-js
 
-Typings are for version 7.0.15
+Typings are for version 7.0.18
 
 ## Library description:
 Official JavaScript wrapper for the Unsplash API

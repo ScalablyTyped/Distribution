@@ -9,77 +9,77 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TerminalOptions extends StObject {
   
   /**
-    * The icon {@link ThemeColor} for the terminal.
-    * The `terminal.ansi*` theme keys are
-    * recommended for the best contrast and consistency across themes.
-    */
+  		 * The icon {@link ThemeColor} for the terminal.
+  		 * The `terminal.ansi*` theme keys are
+  		 * recommended for the best contrast and consistency across themes.
+  		 */
   var color: js.UndefOr[ThemeColor] = js.undefined
   
   /**
-    * A path or Uri for the current working directory to be used for the terminal.
-    */
+  		 * A path or Uri for the current working directory to be used for the terminal.
+  		 */
   var cwd: js.UndefOr[String | Uri] = js.undefined
   
   /**
-    * Object with environment variables that will be added to the editor process.
-    */
+  		 * Object with environment variables that will be added to the editor process.
+  		 */
   var env: js.UndefOr[StringDictionary[js.UndefOr[String | Null]]] = js.undefined
   
   /**
-    * When enabled the terminal will run the process as normal but not be surfaced to the user
-    * until `Terminal.show` is called. The typical usage for this is when you need to run
-    * something that may need interactivity but only want to tell the user about it when
-    * interaction is needed. Note that the terminals will still be exposed to all extensions
-    * as normal.
-    */
+  		 * When enabled the terminal will run the process as normal but not be surfaced to the user
+  		 * until `Terminal.show` is called. The typical usage for this is when you need to run
+  		 * something that may need interactivity but only want to tell the user about it when
+  		 * interaction is needed. Note that the terminals will still be exposed to all extensions
+  		 * as normal.
+  		 */
   var hideFromUser: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The icon path or {@link ThemeIcon} for the terminal.
-    */
+  		 * The icon path or {@link ThemeIcon} for the terminal.
+  		 */
   var iconPath: js.UndefOr[Uri | Dark | ThemeIcon] = js.undefined
   
   /**
-    * Opt-out of the default terminal persistence on restart and reload.
-    * This will only take effect when `terminal.integrated.enablePersistentSessions` is enabled.
-    */
+  		 * Opt-out of the default terminal persistence on restart and reload.
+  		 * This will only take effect when `terminal.integrated.enablePersistentSessions` is enabled.
+  		 */
   var isTransient: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The {@link TerminalLocation} or {@link TerminalEditorLocationOptions} or {@link TerminalSplitLocationOptions} for the terminal.
-    */
+  		* The {@link TerminalLocation} or {@link TerminalEditorLocationOptions} or {@link TerminalSplitLocationOptions} for the terminal.
+  		*/
   var location: js.UndefOr[TerminalLocation | TerminalEditorLocationOptions | TerminalSplitLocationOptions] = js.undefined
   
   /**
-    * A message to write to the terminal on first launch, note that this is not sent to the
-    * process but, rather written directly to the terminal. This supports escape sequences such
-    * a setting text style.
-    */
+  		 * A message to write to the terminal on first launch, note that this is not sent to the
+  		 * process but, rather written directly to the terminal. This supports escape sequences such
+  		 * a setting text style.
+  		 */
   var message: js.UndefOr[String] = js.undefined
   
   /**
-    * A human-readable string which will be used to represent the terminal in the UI.
-    */
+  		 * A human-readable string which will be used to represent the terminal in the UI.
+  		 */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * Args for the custom shell executable. A string can be used on Windows only which allows
-    * specifying shell args in [command-line format](https://msdn.microsoft.com/en-au/08dfcab2-eb6e-49a4-80eb-87d4076c98c6).
-    */
+  		 * Args for the custom shell executable. A string can be used on Windows only which allows
+  		 * specifying shell args in [command-line format](https://msdn.microsoft.com/en-au/08dfcab2-eb6e-49a4-80eb-87d4076c98c6).
+  		 */
   var shellArgs: js.UndefOr[js.Array[String] | String] = js.undefined
   
   /**
-    * A path to a custom shell executable to be used in the terminal.
-    */
+  		 * A path to a custom shell executable to be used in the terminal.
+  		 */
   var shellPath: js.UndefOr[String] = js.undefined
   
   /**
-    * Whether the terminal process environment should be exactly as provided in
-    * `TerminalOptions.env`. When this is false (default), the environment will be based on the
-    * window's environment and also apply configured platform settings like
-    * `terminal.integrated.env.windows` on top. When this is true, the complete environment
-    * must be provided as nothing will be inherited from the process or any configuration.
-    */
+  		 * Whether the terminal process environment should be exactly as provided in
+  		 * `TerminalOptions.env`. When this is false (default), the environment will be based on the
+  		 * window's environment and also apply configured platform settings like
+  		 * `terminal.integrated.env.windows` on top. When this is true, the complete environment
+  		 * must be provided as nothing will be inherited from the process or any configuration.
+  		 */
   var strictEnv: js.UndefOr[Boolean] = js.undefined
 }
 object TerminalOptions {

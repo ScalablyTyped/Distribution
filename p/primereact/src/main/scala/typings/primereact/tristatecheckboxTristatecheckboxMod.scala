@@ -1,5 +1,6 @@
 package typings.primereact
 
+import typings.primereact.primereactStrings._empty
 import typings.primereact.primereactStrings.`additions removals`
 import typings.primereact.primereactStrings.`additions text`
 import typings.primereact.primereactStrings.`inline`
@@ -7,8 +8,10 @@ import typings.primereact.primereactStrings.`removals additions`
 import typings.primereact.primereactStrings.`removals text`
 import typings.primereact.primereactStrings.`text additions`
 import typings.primereact.primereactStrings.`text removals`
+import typings.primereact.primereactStrings.`use-credentials`
 import typings.primereact.primereactStrings.additions
 import typings.primereact.primereactStrings.all
+import typings.primereact.primereactStrings.anonymous
 import typings.primereact.primereactStrings.ascending
 import typings.primereact.primereactStrings.assertive
 import typings.primereact.primereactStrings.both
@@ -59,6 +62,9 @@ import typings.primereact.primereactStrings.user
 import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.yes
 import typings.primereact.tooltipTooltipoptionsMod.TooltipOptions
+import typings.primereact.tsHelpersMod.FormEvent
+import typings.primereact.utilsUtilsMod.IconOptions
+import typings.primereact.utilsUtilsMod.IconType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -74,7 +80,6 @@ import typings.react.mod.DragEvent
 import typings.react.mod.DragEventHandler
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
-import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
 import typings.react.mod.HTMLInputTypeAttribute
 import typings.react.mod.Key
@@ -99,6 +104,7 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -112,85 +118,29 @@ object tristatecheckboxTristatecheckboxMod {
     def this(props: TriStateCheckboxProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: TriStateCheckboxProps, context: Any) = this()
     
+    /**
+      * Used to focus the component.
+      */
+    def focus(): Unit = js.native
+    
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
   }
   
-  trait TriStateCheckboxChangeParams extends StObject {
-    
-    var originalEvent: SyntheticEvent[Element, Event]
-    
-    def preventDefault(): Unit
-    
-    def stopPropagation(): Unit
-    
-    var target: TriStateCheckboxChangeTargetOptions
-    
-    var value: js.UndefOr[Boolean | Null] = js.undefined
-  }
-  object TriStateCheckboxChangeParams {
-    
-    inline def apply(
-      originalEvent: SyntheticEvent[Element, Event],
-      preventDefault: () => Unit,
-      stopPropagation: () => Unit,
-      target: TriStateCheckboxChangeTargetOptions
-    ): TriStateCheckboxChangeParams = {
-      val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any])
-      __obj.asInstanceOf[TriStateCheckboxChangeParams]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: TriStateCheckboxChangeParams] (val x: Self) extends AnyVal {
-      
-      inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
-      
-      inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
-      
-      inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
-      
-      inline def setTarget(value: TriStateCheckboxChangeTargetOptions): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
-      
-      inline def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-      
-      inline def setValueNull: Self = StObject.set(x, "value", null)
-      
-      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
-    }
-  }
-  
-  trait TriStateCheckboxChangeTargetOptions extends StObject {
-    
-    var id: String
-    
-    var name: String
-    
-    var value: js.UndefOr[Boolean | Null] = js.undefined
-  }
-  object TriStateCheckboxChangeTargetOptions {
-    
-    inline def apply(id: String, name: String): TriStateCheckboxChangeTargetOptions = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[TriStateCheckboxChangeTargetOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: TriStateCheckboxChangeTargetOptions] (val x: Self) extends AnyVal {
-      
-      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-      
-      inline def setValueNull: Self = StObject.set(x, "value", null)
-      
-      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
-    }
-  }
+  /**
+    * Custom change event.
+    * @see {@link TriStateCheckboxProps.onChange}
+    * @extends {FormEvent}
+    * @event
+    */
+  type TriStateCheckboxChangeEvent = FormEvent[Boolean, SyntheticEvent[Element, Event]]
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'onChange' | 'value' | 'ref'> */
   trait TriStateCheckboxProps extends StObject {
@@ -313,19 +263,30 @@ object tristatecheckboxTristatecheckboxMod {
     
     var capture: js.UndefOr[Boolean | user | environment] = js.undefined
     
+    /**
+      * Icon of the checkbox when checked.
+      */
+    var checkIcon: js.UndefOr[IconType[TriStateCheckboxProps]] = js.undefined
+    
     var checked: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
     
+    var content: js.UndefOr[String] = js.undefined
+    
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
@@ -337,6 +298,10 @@ object tristatecheckboxTristatecheckboxMod {
     
     var dir: js.UndefOr[String] = js.undefined
     
+    /**
+      * When present, it specifies that the element value cannot be altered.
+      * @defaultValue false
+      */
     var disabled: js.UndefOr[Boolean] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
@@ -345,7 +310,7 @@ object tristatecheckboxTristatecheckboxMod {
     
     var form: js.UndefOr[String] = js.undefined
     
-    var formAction: js.UndefOr[String] = js.undefined
+    var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     var formEncType: js.UndefOr[String] = js.undefined
     
@@ -415,7 +380,11 @@ object tristatecheckboxTristatecheckboxMod {
     
     var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ TriStateCheckboxChangeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke on value change
+      * @param {TriStateCheckboxChangeEvent} event - Browser event.
+      */
+    var onChange: js.UndefOr[js.Function1[/* event */ TriStateCheckboxChangeEvent, Unit]] = js.undefined
     
     var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
@@ -567,13 +536,21 @@ object tristatecheckboxTristatecheckboxMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    /**
+      * When present, it specifies that the value cannot be changed.
+      * @defaultValue false
+      */
     var readOnly: js.UndefOr[Boolean] = js.undefined
+    
+    var rel: js.UndefOr[String] = js.undefined
     
     var required: js.UndefOr[Boolean] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -599,8 +576,14 @@ object tristatecheckboxTristatecheckboxMod {
     
     var title: js.UndefOr[String] = js.undefined
     
+    /**
+      * Content of the tooltip.
+      */
     var tooltip: js.UndefOr[String] = js.undefined
     
+    /**
+      * Configuration of the tooltip, refer to the tooltip documentation for more information.
+      */
     var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
     
     var translate: js.UndefOr[yes | no] = js.undefined
@@ -609,8 +592,16 @@ object tristatecheckboxTristatecheckboxMod {
     
     var typeof: js.UndefOr[String] = js.undefined
     
+    /**
+      * Icon of the checkbox when unchecked.
+      */
+    var uncheckIcon: js.UndefOr[IconType[TriStateCheckboxProps]] = js.undefined
+    
     var unselectable: js.UndefOr[on | off] = js.undefined
     
+    /**
+      * Value of the TriStateCheckbox.
+      */
     var value: js.UndefOr[Boolean | Null] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
@@ -861,6 +852,12 @@ object tristatecheckboxTristatecheckboxMod {
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
+      inline def setCheckIcon(value: IconType[TriStateCheckboxProps]): Self = StObject.set(x, "checkIcon", value.asInstanceOf[js.Any])
+      
+      inline def setCheckIconFunction1(value: /* options */ IconOptions[TriStateCheckboxProps] => ReactNode): Self = StObject.set(x, "checkIcon", js.Any.fromFunction1(value))
+      
+      inline def setCheckIconUndefined: Self = StObject.set(x, "checkIcon", js.undefined)
+      
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
       inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
@@ -877,15 +874,19 @@ object tristatecheckboxTristatecheckboxMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -925,7 +926,9 @@ object tristatecheckboxTristatecheckboxMod {
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      
+      inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
       
       inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
@@ -1053,7 +1056,7 @@ object tristatecheckboxTristatecheckboxMod {
       
       inline def setOnAuxClickUndefined: Self = StObject.set(x, "onAuxClick", js.undefined)
       
-      inline def setOnBeforeInput(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
+      inline def setOnBeforeInput(value: typings.react.mod.FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
@@ -1069,7 +1072,7 @@ object tristatecheckboxTristatecheckboxMod {
       
       inline def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
       
-      inline def setOnChange(value: /* e */ TriStateCheckboxChangeParams => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* event */ TriStateCheckboxChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -1161,11 +1164,11 @@ object tristatecheckboxTristatecheckboxMod {
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      inline def setOnInput(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
+      inline def setOnInput(value: typings.react.mod.FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
       
       inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
       
-      inline def setOnInvalid(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
+      inline def setOnInvalid(value: typings.react.mod.FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
       
       inline def setOnInvalidUndefined: Self = StObject.set(x, "onInvalid", js.undefined)
       
@@ -1281,7 +1284,7 @@ object tristatecheckboxTristatecheckboxMod {
       
       inline def setOnRateChangeUndefined: Self = StObject.set(x, "onRateChange", js.undefined)
       
-      inline def setOnReset(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
+      inline def setOnReset(value: typings.react.mod.FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
@@ -1309,7 +1312,7 @@ object tristatecheckboxTristatecheckboxMod {
       
       inline def setOnStalledUndefined: Self = StObject.set(x, "onStalled", js.undefined)
       
-      inline def setOnSubmit(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
+      inline def setOnSubmit(value: typings.react.mod.FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
       
       inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
       
@@ -1377,6 +1380,10 @@ object tristatecheckboxTristatecheckboxMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -1388,6 +1395,10 @@ object tristatecheckboxTristatecheckboxMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1456,6 +1467,12 @@ object tristatecheckboxTristatecheckboxMod {
       inline def setTypeof(value: String): Self = StObject.set(x, "typeof", value.asInstanceOf[js.Any])
       
       inline def setTypeofUndefined: Self = StObject.set(x, "typeof", js.undefined)
+      
+      inline def setUncheckIcon(value: IconType[TriStateCheckboxProps]): Self = StObject.set(x, "uncheckIcon", value.asInstanceOf[js.Any])
+      
+      inline def setUncheckIconFunction1(value: /* options */ IconOptions[TriStateCheckboxProps] => ReactNode): Self = StObject.set(x, "uncheckIcon", js.Any.fromFunction1(value))
+      
+      inline def setUncheckIconUndefined: Self = StObject.set(x, "uncheckIcon", js.undefined)
       
       inline def setUnselectable(value: on | off): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
       

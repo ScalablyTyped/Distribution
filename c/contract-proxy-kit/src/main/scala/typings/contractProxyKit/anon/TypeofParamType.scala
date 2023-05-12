@@ -1,8 +1,7 @@
 package typings.contractProxyKit.anon
 
-import org.scalablytyped.runtime.Instantiable2
-import typings.ethers.mod.ethers.utils.ParamType
-import typings.ethersprojectAbi.libFragmentsMod.JsonFragmentType
+import org.scalablytyped.runtime.Instantiable4
+import typings.ethers.mod.ethers.ParamType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,20 +9,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TypeofParamType
   extends StObject
-     with Instantiable2[/* constructorGuard */ Any, /* params */ Any, ParamType] {
+     with Instantiable4[/* guard */ Any, /* name */ String, /* type */ String, /* baseType */ String, ParamType] {
   
-  def from(value: String): typings.ethersprojectAbi.libFragmentsMod.ParamType = js.native
-  def from(value: String, allowIndexed: Boolean): typings.ethersprojectAbi.libFragmentsMod.ParamType = js.native
-  def from(value: JsonFragmentType): typings.ethersprojectAbi.libFragmentsMod.ParamType = js.native
-  def from(value: JsonFragmentType, allowIndexed: Boolean): typings.ethersprojectAbi.libFragmentsMod.ParamType = js.native
-  def from(value: typings.ethersprojectAbi.libFragmentsMod.ParamType): typings.ethersprojectAbi.libFragmentsMod.ParamType = js.native
-  def from(value: typings.ethersprojectAbi.libFragmentsMod.ParamType, allowIndexed: Boolean): typings.ethersprojectAbi.libFragmentsMod.ParamType = js.native
+  /**
+    *  Creates a new **ParamType** for %%obj%%.
+    *
+    *  If %%allowIndexed%% then the ``indexed`` keyword is permitted,
+    *  otherwise the ``indexed`` keyword will throw an error.
+    */
+  def from(obj: Any): typings.ethers.typesAbiFragmentsMod.ParamType = js.native
+  def from(obj: Any, allowIndexed: Boolean): typings.ethers.typesAbiFragmentsMod.ParamType = js.native
   
-  def fromObject(value: JsonFragmentType): typings.ethersprojectAbi.libFragmentsMod.ParamType = js.native
-  def fromObject(value: typings.ethersprojectAbi.libFragmentsMod.ParamType): typings.ethersprojectAbi.libFragmentsMod.ParamType = js.native
-  
-  def fromString(value: String): typings.ethersprojectAbi.libFragmentsMod.ParamType = js.native
-  def fromString(value: String, allowIndexed: Boolean): typings.ethersprojectAbi.libFragmentsMod.ParamType = js.native
-  
-  def isParamType(value: Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.ParamType */ Boolean = js.native
+  /**
+    *  Returns true if %%value%% is a **ParamType**.
+    */
+  def isParamType(value: Any): /* is ethers.ethers/types/abi/fragments.ParamType */ Boolean = js.native
 }

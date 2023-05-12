@@ -787,6 +787,21 @@ object Math {
   inline def Linear(p0: Double, p1: Double, t: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Linear")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
+    * Interpolates two given Vectors and returns a new Vector between them.
+    * 
+    * Does not modify either of the passed Vectors.
+    * @param vector1 Starting vector
+    * @param vector2 Ending vector
+    * @param t The percentage between vector1 and vector2 to return, represented as a number between 0 and 1. Default 0.
+    */
+  inline def LinearXY(vector1: typings.phaser.Phaser.Math.Vector2, vector2: typings.phaser.Phaser.Math.Vector2): typings.phaser.Phaser.Math.Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("LinearXY")(vector1.asInstanceOf[js.Any], vector2.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Math.Vector2]
+  inline def LinearXY(
+    vector1: typings.phaser.Phaser.Math.Vector2,
+    vector2: typings.phaser.Phaser.Math.Vector2,
+    t: Double
+  ): typings.phaser.Phaser.Math.Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("LinearXY")(vector1.asInstanceOf[js.Any], vector2.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Math.Vector2]
+  
+  /**
     * The maximum safe integer this browser supports.
     * We use a const for backward compatibility with Internet Explorer.
     */
@@ -1201,6 +1216,10 @@ object Math {
   
   /**
     * The value of PI * 0.5.
+    * 
+    * Yes, we understand that this should actually be PI * 2, but
+    * it has been like this for so long we can't change it now.
+    * If you need PI * 2, use the PI2 constant instead.
     */
   @JSImport("phaser", "Math.TAU")
   @js.native
@@ -1282,8 +1301,8 @@ object Math {
   @js.native
   /**
     * 
-    * @param x The x component, or an object with `x` and `y` properties.
-    * @param y The y component.
+    * @param x The x component, or an object with `x` and `y` properties. Default 0.
+    * @param y The y component. Default x.
     */
   open class Vector2 ()
     extends StObject
@@ -1507,7 +1526,7 @@ object Math {
   inline def Within(a: Double, b: Double, tolerance: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Within")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
-    * Wrap the given `value` between `min` and `max.
+    * Wrap the given `value` between `min` and `max`.
     * @param value The value to wrap.
     * @param min The minimum value.
     * @param max The maximum value.

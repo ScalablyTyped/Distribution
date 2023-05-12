@@ -36,7 +36,7 @@ trait CapabilityStatementRestResourceSearchParam
   var documentation: js.UndefOr[String] = js.undefined
   
   /**
-    * Parameter names cannot overlap with standard parameter names, and standard parameters cannot be redefined.
+    * Parameter names cannot overlap with standard parameter names, and standard parameters cannot be redefined. There is no correspondence whatsoever between CapabilityStatement's searchParam.name and SearchParameter.name - the latter is used as a class name when generating code for the search parameter.
     */
   var name: String
   

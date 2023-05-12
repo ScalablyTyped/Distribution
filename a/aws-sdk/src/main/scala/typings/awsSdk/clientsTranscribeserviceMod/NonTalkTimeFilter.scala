@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NonTalkTimeFilter extends StObject {
   
   /**
-    * Allows you to specify a time range (in milliseconds) in your audio, during which you want to search for a period of silence. See for more detail.
+    * Makes it possible to specify a time range (in milliseconds) in your audio, during which you want to search for a period of silence. See for more detail.
     */
   var AbsoluteTimeRange: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.AbsoluteTimeRange] = js.undefined
   
@@ -17,12 +17,12 @@ trait NonTalkTimeFilter extends StObject {
   var Negate: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Allows you to specify a time range (in percentage) in your media file, during which you want to search for a period of silence. See for more detail.
+    * Makes it possible to specify a time range (in percentage) in your media file, during which you want to search for a period of silence. See for more detail.
     */
   var RelativeTimeRange: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.RelativeTimeRange] = js.undefined
   
   /**
-    * Specify the duration, in milliseconds, of the period of silence you want to flag. For example, you can flag a silent period that lasts 30000 milliseconds.
+    * Specify the duration, in milliseconds, of the period of silence that you want to flag. For example, you can flag a silent period that lasts 30,000 milliseconds.
     */
   var Threshold: js.UndefOr[TimestampMilliseconds] = js.undefined
 }

@@ -5,7 +5,7 @@ import typings.barnard59Base.concatMod.ConcatStream
 import typings.barnard59Base.concatMod.Factory
 import typings.barnard59Base.filterMod.Filter
 import typings.barnard59Base.globMod.Options
-import typings.barnard59Core.libStreamObjectMod.Context
+import typings.barnard59Base.mapMod.Callback
 import typings.node.streamMod.DuplexOptions
 import typings.node.streamMod.Stream
 import typings.node.streamMod.Transform
@@ -54,10 +54,8 @@ object mod {
   
   inline def limit(limit: Double): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("limit")(limit.asInstanceOf[js.Any]).asInstanceOf[Transform]
   
-  inline def map[From, To](
-    // tslint:disable-next-line:no-unnecessary-generics
-  cb: js.ThisFunction2[/* this */ Context, /* chunk */ From, /* encoding */ String, js.Promise[To] | To]
-  ): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(cb.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  inline def map[From, To](// eslint-disable-next-line no-unnecessary-generics
+  cb: Callback[From, To]): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(cb.asInstanceOf[js.Any]).asInstanceOf[Transform]
   
   inline def nul(): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("nul")().asInstanceOf[Writable]
   

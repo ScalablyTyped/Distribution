@@ -14,6 +14,8 @@ object SelectionDetailsActionLevel extends StObject {
   def apply(value: String): js.UndefOr[SelectionDetailsActionLevel & String] = js.native
   
   /**
+    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    *
     * ActionGroup on SelectionDetails list level.
     */
   @js.native
@@ -23,6 +25,8 @@ object SelectionDetailsActionLevel extends StObject {
   /* "Group" */ val Group: typings.openui5.sapMLibraryMod.SelectionDetailsActionLevel.Group & String = js.native
   
   /**
+    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    *
     * Action on SelectionDetailsItem level.
     */
   @js.native
@@ -32,6 +36,8 @@ object SelectionDetailsActionLevel extends StObject {
   /* "Item" */ val Item: typings.openui5.sapMLibraryMod.SelectionDetailsActionLevel.Item & String = js.native
   
   /**
+    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    *
     * Action on SelectionDetails list level.
     */
   @js.native

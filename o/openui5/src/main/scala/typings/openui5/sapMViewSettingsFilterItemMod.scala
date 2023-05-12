@@ -245,6 +245,8 @@ object sapMViewSettingsFilterItemMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:filterDetailItemsAggregationChange filterDetailItemsAggregationChange} to attached
       * listeners.
       *

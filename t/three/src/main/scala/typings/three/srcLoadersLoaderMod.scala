@@ -1,8 +1,6 @@
 package typings.three
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.EventTarget
-import typings.std.ProgressEvent
 import typings.three.srcLoadersLoadingManagerMod.LoadingManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,13 +17,6 @@ object srcLoadersLoaderMod {
       * @default 'anonymous'
       */
     var crossOrigin: String = js.native
-    
-    /*
-    	load(): void;
-    	parse(): void;
-    	*/
-    def loadAsync(url: String): js.Promise[Any] = js.native
-    def loadAsync(url: String, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[Any] = js.native
     
     var manager: LoadingManager = js.native
     
@@ -44,6 +35,11 @@ object srcLoadersLoaderMod {
       */
     var resourcePath: String = js.native
     
+    /*
+    	load(): void;
+      loadAsync(): Promise<unknown>;
+    	parse(): void;
+    	*/
     def setCrossOrigin(crossOrigin: String): this.type = js.native
     
     def setPath(path: String): this.type = js.native

@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ConditionalAccessGrantControls extends StObject {
   
+  var authenticationStrength: js.UndefOr[NullableOption[AuthenticationStrengthPolicy]] = js.undefined
+  
   /**
     * List of values of built-in controls required by the policy. Possible values: block, mfa, compliantDevice,
     * domainJoinedDevice, approvedApplication, compliantApplication, passwordChange, unknownFutureValue.
@@ -30,6 +32,12 @@ object ConditionalAccessGrantControls {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: ConditionalAccessGrantControls] (val x: Self) extends AnyVal {
+    
+    inline def setAuthenticationStrength(value: NullableOption[AuthenticationStrengthPolicy]): Self = StObject.set(x, "authenticationStrength", value.asInstanceOf[js.Any])
+    
+    inline def setAuthenticationStrengthNull: Self = StObject.set(x, "authenticationStrength", null)
+    
+    inline def setAuthenticationStrengthUndefined: Self = StObject.set(x, "authenticationStrength", js.undefined)
     
     inline def setBuiltInControls(value: js.Array[ConditionalAccessGrantControl]): Self = StObject.set(x, "builtInControls", value.asInstanceOf[js.Any])
     

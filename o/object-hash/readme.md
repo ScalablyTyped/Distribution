@@ -1,7 +1,7 @@
 
 # Scala.js typings for object-hash
 
-Typings are for version 2.2
+Typings are for version 3.0
 
 ## Library description:
 Generate hashes from javascript objects in node and the browser.

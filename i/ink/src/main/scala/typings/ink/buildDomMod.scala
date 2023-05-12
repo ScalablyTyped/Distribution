@@ -1,11 +1,11 @@
 package typings.ink
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.ink.anon.NodeName
 import typings.ink.buildRenderNodeToOutputMod.OutputTransformer
 import typings.ink.buildStylesMod.Styles
 import typings.ink.inkStrings.Numbersigntext
-import typings.yogaLayout.mod.YogaNode
+import typings.std.Record
+import typings.yogaWasmWeb.distWrapAsmMod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,10 +15,6 @@ object buildDomMod {
   @JSImport("ink/build/dom", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
-  
-  @JSImport("ink/build/dom", "TEXT_NAME")
-  @js.native
-  val TEXT_NAME: /* "#text" */ String = js.native
   
   inline def appendChildNode(node: DOMElement, childNode: DOMElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendChildNode")(node.asInstanceOf[js.Any], childNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -40,7 +36,7 @@ object buildDomMod {
     extends StObject
        with InkNode {
     
-    var attributes: StringDictionary[DOMNodeAttribute]
+    var attributes: Record[String, DOMNodeAttribute]
     
     var childNodes: js.Array[DOMNode[NodeName]]
     
@@ -50,28 +46,30 @@ object buildDomMod {
     
     var nodeName: ElementNames
     
+    var onComputeLayout: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
     var onImmediateRender: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onRender: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var staticNode: js.UndefOr[Any] = js.undefined
+    var staticNode: js.UndefOr[DOMElement] = js.undefined
   }
   object DOMElement {
     
     inline def apply(
-      attributes: StringDictionary[DOMNodeAttribute],
+      attributes: Record[String, DOMNodeAttribute],
       childNodes: js.Array[DOMNode[NodeName]],
       nodeName: ElementNames,
       style: Styles
     ): DOMElement = {
-      val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], childNodes = childNodes.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], parentNode = null)
+      val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], childNodes = childNodes.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[DOMElement]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: DOMElement] (val x: Self) extends AnyVal {
       
-      inline def setAttributes(value: StringDictionary[DOMNodeAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Record[String, DOMNodeAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
       inline def setChildNodes(value: js.Array[DOMNode[NodeName]]): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
       
@@ -87,6 +85,10 @@ object buildDomMod {
       
       inline def setNodeName(value: ElementNames): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
       
+      inline def setOnComputeLayout(value: () => Unit): Self = StObject.set(x, "onComputeLayout", js.Any.fromFunction0(value))
+      
+      inline def setOnComputeLayoutUndefined: Self = StObject.set(x, "onComputeLayout", js.undefined)
+      
       inline def setOnImmediateRender(value: () => Unit): Self = StObject.set(x, "onImmediateRender", js.Any.fromFunction0(value))
       
       inline def setOnImmediateRenderUndefined: Self = StObject.set(x, "onImmediateRender", js.undefined)
@@ -95,7 +97,7 @@ object buildDomMod {
       
       inline def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
       
-      inline def setStaticNode(value: Any): Self = StObject.set(x, "staticNode", value.asInstanceOf[js.Any])
+      inline def setStaticNode(value: DOMElement): Self = StObject.set(x, "staticNode", value.asInstanceOf[js.Any])
       
       inline def setStaticNodeUndefined: Self = StObject.set(x, "staticNode", js.undefined)
     }
@@ -134,16 +136,16 @@ object buildDomMod {
     
     var internal_static: js.UndefOr[Boolean] = js.undefined
     
-    var parentNode: DOMElement | Null
+    var parentNode: js.UndefOr[DOMElement] = js.undefined
     
     var style: Styles
     
-    var yogaNode: js.UndefOr[YogaNode] = js.undefined
+    var yogaNode: js.UndefOr[Node] = js.undefined
   }
   object InkNode {
     
     inline def apply(style: Styles): InkNode = {
-      val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any], parentNode = null)
+      val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[InkNode]
     }
     
@@ -156,11 +158,11 @@ object buildDomMod {
       
       inline def setParentNode(value: DOMElement): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
       
-      inline def setParentNodeNull: Self = StObject.set(x, "parentNode", null)
+      inline def setParentNodeUndefined: Self = StObject.set(x, "parentNode", js.undefined)
       
       inline def setStyle(value: Styles): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      inline def setYogaNode(value: YogaNode): Self = StObject.set(x, "yogaNode", value.asInstanceOf[js.Any])
+      inline def setYogaNode(value: Node): Self = StObject.set(x, "yogaNode", value.asInstanceOf[js.Any])
       
       inline def setYogaNodeUndefined: Self = StObject.set(x, "yogaNode", js.undefined)
     }
@@ -181,7 +183,7 @@ object buildDomMod {
   object TextNode {
     
     inline def apply(nodeName: TextName, nodeValue: String, style: Styles): TextNode = {
-      val __obj = js.Dynamic.literal(nodeName = nodeName.asInstanceOf[js.Any], nodeValue = nodeValue.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], parentNode = null)
+      val __obj = js.Dynamic.literal(nodeName = nodeName.asInstanceOf[js.Any], nodeValue = nodeValue.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextNode]
     }
     

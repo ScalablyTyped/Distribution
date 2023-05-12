@@ -2,11 +2,12 @@ package typings.swiper
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
-import typings.dom7.mod.Dom7Array
 import typings.std.HTMLElement
 import typings.swiper.anon.CurrentX
 import typings.swiper.swiperStrings.horizontal
 import typings.swiper.swiperStrings.ltr
+import typings.swiper.swiperStrings.next
+import typings.swiper.swiperStrings.prev
 import typings.swiper.swiperStrings.rtl
 import typings.swiper.swiperStrings.vertical
 import typings.swiper.typesModulesA11yMod.A11yMethods
@@ -22,7 +23,6 @@ import typings.swiper.typesModulesFreeModeMod.FreeModeMethods
 import typings.swiper.typesModulesHashNavigationMod.HashNavigationMethods
 import typings.swiper.typesModulesHistoryMod.HistoryMethods
 import typings.swiper.typesModulesKeyboardMod.KeyboardMethods
-import typings.swiper.typesModulesLazyMod.LazyMethods
 import typings.swiper.typesModulesManipulationMod.ManipulationMethods
 import typings.swiper.typesModulesMousewheelMod.MousewheelMethods
 import typings.swiper.typesModulesNavigationMod.NavigationMethods
@@ -101,24 +101,12 @@ object typesSwiperClassMod {
        with SwiperClass[SwiperEvents]
        with ManipulationMethods {
     
-    /**
-      * Dom7 element with slider container HTML element. To get vanilla HTMLElement use `swiper.el`
-      */
-    @JSName("$el")
-    var $el: Dom7Array = js.native
-    
-    /**
-      * Dom7 element with slider wrapper HTML element. To get vanilla HTMLElement use `swiper.wrapperEl`
-      */
-    @JSName("$wrapperEl")
-    var $wrapperEl: Dom7Array = js.native
-    
     var a11y: A11yMethods = js.native
     
     /**
       * Index number of currently active slide
       *
-      * @note Note, that in loop mode active index value will be always shifted on a number of looped/duplicated slides
+      * @note Note, that in loop mode active index value will be always shifted on a number of looped slides
       */
     var activeIndex: Double = js.native
     
@@ -285,8 +273,6 @@ object typesSwiperClassMod {
     
     var keyboard: KeyboardMethods = js.native
     
-    var `lazy`: LazyMethods = js.native
-    
     /**
       * !INTERNAL
       */
@@ -346,7 +332,7 @@ object typesSwiperClassMod {
     var progress: Double = js.native
     
     /**
-      * Index number of currently active slide considering duplicated slides in loop mode
+      * Index number of currently active slide considering rearranged slides in loop mode
       */
     var realIndex: Double = js.native
     
@@ -459,9 +445,9 @@ object typesSwiperClassMod {
     def slideToLoop(index: Double, speed: Unit, runCallbacks: Boolean): Unit = js.native
     
     /**
-      * Dom7 array-like collection of slides HTML elements. To get specific slide HTMLElement use `swiper.slides[1]`
+      * Array of slides HTML elements. To get specific slide HTMLElement use `swiper.slides[1]`
       */
-    var slides: Dom7Array = js.native
+    var slides: js.Array[HTMLElement] = js.native
     
     /**
       * Slides snap grid
@@ -472,6 +458,11 @@ object typesSwiperClassMod {
       * Index number of current snap in `snapGrid`
       */
     var snapIndex: Double = js.native
+    
+    /**
+      * Direction of sliding
+      */
+    var swipeDirection: prev | next = js.native
     
     var thumbs: ThumbsMethods = js.native
     

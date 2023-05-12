@@ -1,13 +1,14 @@
 package typings.aframe.anon
 
 import typings.three.anon.AlphaMap
+import typings.three.anon.AlphaTest
 import typings.three.anon.AmbientLightColor
 import typings.three.anon.AoMap
-import typings.three.anon.BackgroundBlurriness
 import typings.three.anon.BumpMap
-import typings.three.anon.Diffuse
+import typings.three.anon.Center
 import typings.three.anon.DisplacementBias
 import typings.three.anon.EmissiveMap
+import typings.three.anon.EnvMap
 import typings.three.anon.FogColor
 import typings.three.anon.GradientMap
 import typings.three.anon.LightMap
@@ -31,7 +32,7 @@ trait TypeofUniformsLib extends StObject {
   
   var emissivemap: EmissiveMap
   
-  var envmap: BackgroundBlurriness
+  var envmap: EnvMap
   
   var fog: FogColor
   
@@ -45,11 +46,13 @@ trait TypeofUniformsLib extends StObject {
   
   var normalmap: NormalMap
   
-  var points: Diffuse
+  var points: AlphaTest
   
   var roughnessmap: RoughnessMap
   
   var specularmap: SpecularMap
+  
+  var sprite: Center
 }
 object TypeofUniformsLib {
   
@@ -59,18 +62,19 @@ object TypeofUniformsLib {
     common: AlphaMap,
     displacementmap: DisplacementBias,
     emissivemap: EmissiveMap,
-    envmap: BackgroundBlurriness,
+    envmap: EnvMap,
     fog: FogColor,
     gradientmap: GradientMap,
     lightmap: LightMap,
     lights: AmbientLightColor,
     metalnessmap: MetalnessMap,
     normalmap: NormalMap,
-    points: Diffuse,
+    points: AlphaTest,
     roughnessmap: RoughnessMap,
-    specularmap: SpecularMap
+    specularmap: SpecularMap,
+    sprite: Center
   ): TypeofUniformsLib = {
-    val __obj = js.Dynamic.literal(aomap = aomap.asInstanceOf[js.Any], bumpmap = bumpmap.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], displacementmap = displacementmap.asInstanceOf[js.Any], emissivemap = emissivemap.asInstanceOf[js.Any], envmap = envmap.asInstanceOf[js.Any], fog = fog.asInstanceOf[js.Any], gradientmap = gradientmap.asInstanceOf[js.Any], lightmap = lightmap.asInstanceOf[js.Any], lights = lights.asInstanceOf[js.Any], metalnessmap = metalnessmap.asInstanceOf[js.Any], normalmap = normalmap.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any], roughnessmap = roughnessmap.asInstanceOf[js.Any], specularmap = specularmap.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(aomap = aomap.asInstanceOf[js.Any], bumpmap = bumpmap.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], displacementmap = displacementmap.asInstanceOf[js.Any], emissivemap = emissivemap.asInstanceOf[js.Any], envmap = envmap.asInstanceOf[js.Any], fog = fog.asInstanceOf[js.Any], gradientmap = gradientmap.asInstanceOf[js.Any], lightmap = lightmap.asInstanceOf[js.Any], lights = lights.asInstanceOf[js.Any], metalnessmap = metalnessmap.asInstanceOf[js.Any], normalmap = normalmap.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any], roughnessmap = roughnessmap.asInstanceOf[js.Any], specularmap = specularmap.asInstanceOf[js.Any], sprite = sprite.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofUniformsLib]
   }
   
@@ -87,7 +91,7 @@ object TypeofUniformsLib {
     
     inline def setEmissivemap(value: EmissiveMap): Self = StObject.set(x, "emissivemap", value.asInstanceOf[js.Any])
     
-    inline def setEnvmap(value: BackgroundBlurriness): Self = StObject.set(x, "envmap", value.asInstanceOf[js.Any])
+    inline def setEnvmap(value: EnvMap): Self = StObject.set(x, "envmap", value.asInstanceOf[js.Any])
     
     inline def setFog(value: FogColor): Self = StObject.set(x, "fog", value.asInstanceOf[js.Any])
     
@@ -101,10 +105,12 @@ object TypeofUniformsLib {
     
     inline def setNormalmap(value: NormalMap): Self = StObject.set(x, "normalmap", value.asInstanceOf[js.Any])
     
-    inline def setPoints(value: Diffuse): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: AlphaTest): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
     inline def setRoughnessmap(value: RoughnessMap): Self = StObject.set(x, "roughnessmap", value.asInstanceOf[js.Any])
     
     inline def setSpecularmap(value: SpecularMap): Self = StObject.set(x, "specularmap", value.asInstanceOf[js.Any])
+    
+    inline def setSprite(value: Center): Self = StObject.set(x, "sprite", value.asInstanceOf[js.Any])
   }
 }

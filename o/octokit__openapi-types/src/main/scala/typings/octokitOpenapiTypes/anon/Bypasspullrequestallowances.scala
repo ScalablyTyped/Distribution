@@ -18,6 +18,12 @@ trait Bypasspullrequestallowances extends StObject {
   /** @description Blocks merging pull requests until [code owners](https://docs.github.com/articles/about-code-owners/) have reviewed. */
   var require_code_owner_reviews: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @description Whether the most recent push must be approved by someone other than the person who pushed it. Default: `false`
+    * @default false
+    */
+  var require_last_push_approval: js.UndefOr[Boolean] = js.undefined
+  
   /** @description Specifies the number of reviewers required to approve pull requests. Use a number between 1 and 6 or 0 to not require reviewers. */
   var required_approving_review_count: js.UndefOr[Double] = js.undefined
 }
@@ -46,6 +52,10 @@ object Bypasspullrequestallowances {
     inline def setRequire_code_owner_reviews(value: Boolean): Self = StObject.set(x, "require_code_owner_reviews", value.asInstanceOf[js.Any])
     
     inline def setRequire_code_owner_reviewsUndefined: Self = StObject.set(x, "require_code_owner_reviews", js.undefined)
+    
+    inline def setRequire_last_push_approval(value: Boolean): Self = StObject.set(x, "require_last_push_approval", value.asInstanceOf[js.Any])
+    
+    inline def setRequire_last_push_approvalUndefined: Self = StObject.set(x, "require_last_push_approval", js.undefined)
     
     inline def setRequired_approving_review_count(value: Double): Self = StObject.set(x, "required_approving_review_count", value.asInstanceOf[js.Any])
     

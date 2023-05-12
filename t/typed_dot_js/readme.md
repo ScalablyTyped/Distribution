@@ -1,7 +1,7 @@
 
 # Scala.js typings for typed_dot_js
 
-Typings are for version 2.0.12
+Typings are for version 2.0.16
 
 ## Library description:
 A JavaScript Typing Animation Library

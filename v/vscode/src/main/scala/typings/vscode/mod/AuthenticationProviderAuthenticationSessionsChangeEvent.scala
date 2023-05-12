@@ -7,20 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AuthenticationProviderAuthenticationSessionsChangeEvent extends StObject {
   
   /**
-    * The {@link AuthenticationSession AuthenticationSessions} of the {@link AuthenticationProvider} that have been added.
-    */
+  		 * The {@link AuthenticationSession AuthenticationSessions} of the {@link AuthenticationProvider} that have been added.
+  		*/
   val added: js.UndefOr[js.Array[AuthenticationSession]] = js.undefined
   
   /**
-    * The {@link AuthenticationSession AuthenticationSessions} of the {@link AuthenticationProvider} that have been changed.
-    * A session changes when its data excluding the id are updated. An example of this is a session refresh that results in a new
-    * access token being set for the session.
-    */
+  		 * The {@link AuthenticationSession AuthenticationSessions} of the {@link AuthenticationProvider} that have been changed.
+  		 * A session changes when its data excluding the id are updated. An example of this is a session refresh that results in a new
+  		 * access token being set for the session.
+  		 */
   val changed: js.UndefOr[js.Array[AuthenticationSession]] = js.undefined
   
   /**
-    * The {@link AuthenticationSession AuthenticationSessions} of the {@link AuthenticationProvider} that have been removed.
-    */
+  		 * The {@link AuthenticationSession AuthenticationSessions} of the {@link AuthenticationProvider} that have been removed.
+  		 */
   val removed: js.UndefOr[js.Array[AuthenticationSession]] = js.undefined
 }
 object AuthenticationProviderAuthenticationSessionsChangeEvent {

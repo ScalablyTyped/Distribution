@@ -51,7 +51,7 @@ trait sizeAgeRendererResult extends StObject {
   /**
     * The time unit used to represent age in the output `renderer`.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#AgeRendererResult)
+    * [Read more...](global.html#unit)
     */
   var unit: String
   

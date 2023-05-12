@@ -16,7 +16,7 @@ object libIconsCodepenOutlinedMod extends Shortcut {
   @js.native
   trait CodepenOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_CodepenOutlinedIconType: String = js.native

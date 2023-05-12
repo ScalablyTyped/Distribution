@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BatchGroupIdError extends StObject {
   
   /**
-    * Deprecated - use `groupId` instead
+    * **Deprecated**, use `groupId` instead
     */
   var batchGroupId: js.UndefOr[String] = js.undefined
   
@@ -22,6 +22,13 @@ trait BatchGroupIdError extends StObject {
     * Requests belonging to the same group will be bundled in one batch request.
     */
   var groupId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * **Deprecated** since 1.38.0; use the `defaultUpdateMethod` constructor parameter instead. If unset, the
+    * update method is determined from the `defaultUpdateMethod` constructor parameter. If `true`, `sap.ui.model.odata.UpdateMethod.Merge`
+    * is used for update operations; if set to `false`, `sap.ui.model.odata.UpdateMethod.Put` is used.
+    */
+  var merge: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A callback function which is called when the data has been successfully updated. The handler can have
@@ -54,6 +61,10 @@ object BatchGroupIdError {
     inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
     inline def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
+    
+    inline def setMerge(value: Boolean): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
+    
+    inline def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
     
     inline def setSuccess(value: js.Function): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     

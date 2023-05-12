@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** Either a parsed command line or a parsed tsconfig.json */
 trait ParsedCommandLine extends StObject {
   
   var compileOnSave: js.UndefOr[Boolean] = js.undefined

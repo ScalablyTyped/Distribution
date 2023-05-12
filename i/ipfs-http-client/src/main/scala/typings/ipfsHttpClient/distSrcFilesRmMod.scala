@@ -11,7 +11,7 @@ object distSrcFilesRmMod {
   @js.native
   val createRm: Factory[
     js.Function2[
-      /* path */ String | js.Array[String], 
+      /* ipfsPaths */ String | js.Array[String], 
       /* options */ js.UndefOr[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_files.RmOptions */ Any) & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions
       ], 

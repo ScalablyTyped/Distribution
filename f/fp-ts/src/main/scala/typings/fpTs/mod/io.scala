@@ -120,6 +120,9 @@ object io {
   
   inline def flap[A](a: A): js.Function1[/* fab */ IO_[js.Function1[/* a */ A, Any]], IO_[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flap")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ IO_[js.Function1[/* a */ A, Any]], IO_[Any]]]
   
+  inline def flatMap[A, B](f: js.Function1[/* a */ A, IO_[B]]): js.Function1[/* ma */ IO_[A], IO_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ IO_[A], IO_[B]]]
+  inline def flatMap[A, B](ma: IO_[A], f: js.Function1[/* a */ A, IO_[B]]): IO_[B] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(ma.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[IO_[B]]
+  
   inline def flatten[A](mma: IO_[IO_[A]]): IO_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(mma.asInstanceOf[js.Any]).asInstanceOf[IO_[A]]
   
   inline def fromIO[A](fa: IO_[A]): IO_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIO")(fa.asInstanceOf[js.Any]).asInstanceOf[IO_[A]]
@@ -149,6 +152,9 @@ object io {
   inline def of[A](a: A): IO_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any]).asInstanceOf[IO_[A]]
   
   inline def sequenceArray[A](arr: js.Array[IO_[A]]): IO_[js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("sequenceArray")(arr.asInstanceOf[js.Any]).asInstanceOf[IO_[js.Array[A]]]
+  
+  inline def tap[A, _underscore](f: js.Function1[/* a */ A, IO_[_underscore]]): js.Function1[/* self */ IO_[A], IO_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* self */ IO_[A], IO_[A]]]
+  inline def tap[A, _underscore](self: IO_[A], f: js.Function1[/* a */ A, IO_[_underscore]]): IO_[A] = (^.asInstanceOf[js.Dynamic].applyDynamic("tap")(self.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[IO_[A]]
   
   inline def traverseArray[A, B](f: js.Function1[/* a */ A, IO_[B]]): js.Function1[/* as */ js.Array[A], IO_[js.Array[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverseArray")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], IO_[js.Array[B]]]]
   

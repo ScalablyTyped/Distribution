@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Rewritten from type alias, can be one of: 
   - typings.opentok.mod.PredefinedArchiveLayoutOptions
   - typings.opentok.mod.CustomArchiveLayoutOptions
+  - typings.opentok.mod.ScreenshareArchiveLayoutOptions
 */
 trait ArchiveLayoutOptions extends StObject
 object ArchiveLayoutOptions {
@@ -26,5 +27,11 @@ object ArchiveLayoutOptions {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.opentok.mod.PredefinedArchiveLayoutOptions]
+  }
+  
+  inline def ScreenshareArchiveLayoutOptions(): typings.opentok.mod.ScreenshareArchiveLayoutOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")("bestFit")
+    __obj.asInstanceOf[typings.opentok.mod.ScreenshareArchiveLayoutOptions]
   }
 }

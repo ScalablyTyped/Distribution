@@ -23,6 +23,18 @@ type LANGTAG = String
 
 type STRING = String
 
+type iriRangeExclusion = IRIREF | IriStem
+
+type iriRangeStem = IRIREF | Wildcard
+
+type languageRangeExclusion = String | LanguageStem
+
+type languageRangeStem = String | Wildcard
+
+type literalRangeExclusion = String | LiteralStem
+
+type literalRangeStem = String | Wildcard
+
 type numericLiteral = INTEGER | DECIMAL | DOUBLE
 
 type objectValue = IRIREF | ObjectLiteral

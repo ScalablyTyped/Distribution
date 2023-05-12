@@ -1,7 +1,5 @@
 package typings.webpack.mod
 
-import typings.webpack.anon.Read
-import typings.webpack.anon.Write
 import typings.webpack.webpackBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,7 +15,7 @@ open class Dependency () extends StObject {
   
   def createIgnoredModule(context: String): Module = js.native
   
-  def deserialize(__0: Read): Unit = js.native
+  def deserialize(__0: ObjectDeserializerContext): Unit = js.native
   
   def disconnect: Any = js.native
   
@@ -65,7 +63,7 @@ open class Dependency () extends StObject {
   
   var optional: Boolean = js.native
   
-  def serialize(__0: Write): Unit = js.native
+  def serialize(__0: ObjectSerializerContext): Unit = js.native
   
   def setLoc(): Unit = js.native
   def setLoc(startLine: Any): Unit = js.native

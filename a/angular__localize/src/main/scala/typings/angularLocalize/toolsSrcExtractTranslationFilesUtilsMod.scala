@@ -1,6 +1,6 @@
 package typings.angularLocalize
 
-import typings.angularLocalize.mod.ɵParsedMessage
+import typings.angularLocalize.localizeMod.ɵParsedMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

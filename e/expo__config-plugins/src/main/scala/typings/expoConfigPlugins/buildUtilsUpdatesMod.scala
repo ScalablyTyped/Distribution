@@ -55,6 +55,10 @@ object buildUtilsUpdatesMod {
   
   inline def getUpdatesEnabled(config: PickExpoConfigUpdatesupda): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getUpdatesEnabled")(config.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
+  inline def getUpdatesRequestHeaders(config: PickExpoConfigUpdatesupda): /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<@expo/config-types.anon.CheckAutomatically | undefined>['requestHeaders'] */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getUpdatesRequestHeaders")(config.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<@expo/config-types.anon.CheckAutomatically | undefined>['requestHeaders'] */ js.Any]
+  
+  inline def getUpdatesRequestHeadersStringified(config: PickExpoConfigUpdatesupda): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUpdatesRequestHeadersStringified")(config.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  
   inline def getUpdatesTimeout(config: PickExpoConfigUpdatesupda): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getUpdatesTimeout")(config.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   inline def withRuntimeVersion(config: ExpoConfig): ExpoConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("withRuntimeVersion")(config.asInstanceOf[js.Any]).asInstanceOf[ExpoConfig]

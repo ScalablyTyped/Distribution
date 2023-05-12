@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateStreamingSessionRequest extends StObject {
   
   /**
-    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. If you don’t specify a client token, the AWS SDK automatically generates a client token and uses it for the request to ensure idempotency.
+    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. If you don’t specify a client token, the Amazon Web Services SDK automatically generates a client token and uses it for the request to ensure idempotency.
     */
   var clientToken: js.UndefOr[ClientToken] = js.undefined
   
@@ -17,9 +17,9 @@ trait CreateStreamingSessionRequest extends StObject {
   var ec2InstanceType: js.UndefOr[StreamingInstanceType] = js.undefined
   
   /**
-    * The launch profile ID.
+    * The ID of the launch profile used to control access from the streaming session.
     */
-  var launchProfileId: js.UndefOr[String] = js.undefined
+  var launchProfileId: String
   
   /**
     * The user ID of the user that owns the streaming session. The user that owns the session will be logging into the session and interacting with the virtual workstation.
@@ -37,14 +37,14 @@ trait CreateStreamingSessionRequest extends StObject {
   var studioId: String
   
   /**
-    * A collection of labels, in the form of key:value pairs, that apply to this resource.
+    * A collection of labels, in the form of key-value pairs, that apply to this resource.
     */
   var tags: js.UndefOr[Tags] = js.undefined
 }
 object CreateStreamingSessionRequest {
   
-  inline def apply(studioId: String): CreateStreamingSessionRequest = {
-    val __obj = js.Dynamic.literal(studioId = studioId.asInstanceOf[js.Any])
+  inline def apply(launchProfileId: String, studioId: String): CreateStreamingSessionRequest = {
+    val __obj = js.Dynamic.literal(launchProfileId = launchProfileId.asInstanceOf[js.Any], studioId = studioId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateStreamingSessionRequest]
   }
   
@@ -60,8 +60,6 @@ object CreateStreamingSessionRequest {
     inline def setEc2InstanceTypeUndefined: Self = StObject.set(x, "ec2InstanceType", js.undefined)
     
     inline def setLaunchProfileId(value: String): Self = StObject.set(x, "launchProfileId", value.asInstanceOf[js.Any])
-    
-    inline def setLaunchProfileIdUndefined: Self = StObject.set(x, "launchProfileId", js.undefined)
     
     inline def setOwnedBy(value: String): Self = StObject.set(x, "ownedBy", value.asInstanceOf[js.Any])
     

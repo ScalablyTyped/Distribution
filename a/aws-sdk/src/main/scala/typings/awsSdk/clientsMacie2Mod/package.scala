@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdk.awsSdkStrings.ACCESS_DENIED
 import typings.awsSdk.awsSdkStrings.AWS_API_CALL
 import typings.awsSdk.awsSdkStrings.S3_OBJECT
-import typings.awsSdk.awsSdkStrings.SENSITIVE_DATA_DISCOVERY_JOB
 import typings.awsSdk.awsSdkStrings.TERABYTES
 import typings.awsSdk.awsSdkStrings.USD
 import org.scalablytyped.runtime.StObject
@@ -41,6 +40,13 @@ type AllowListStatusCode = _AllowListStatusCode | String
 type AllowsUnencryptedObjectUploads = _AllowsUnencryptedObjectUploads | String
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type AutomatedDiscoveryStatus = _AutomatedDiscoveryStatus | String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AVAILABLE
   - typings.awsSdk.awsSdkStrings.UNAVAILABLE
   - java.lang.String
@@ -52,6 +58,18 @@ type BucketCriteria = StringDictionary[BucketCriteriaAdditionalProperties]
 type BucketMetadataErrorCode = ACCESS_DENIED | String
 
 type Cells = js.Array[Cell]
+
+type ClassificationScopeId = String
+
+type ClassificationScopeName = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ADD
+  - typings.awsSdk.awsSdkStrings.REPLACE
+  - typings.awsSdk.awsSdkStrings.REMOVE
+  - java.lang.String
+*/
+type ClassificationScopeUpdateOperation = _ClassificationScopeUpdateOperation | String
 
 type Criterion = StringDictionary[CriterionAdditionalProperties]
 
@@ -66,6 +84,13 @@ type CustomDetections = js.Array[CustomDetection]
   - java.lang.String
 */
 type DataIdentifierSeverity = _DataIdentifierSeverity | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CUSTOM
+  - typings.awsSdk.awsSdkStrings.MANAGED
+  - java.lang.String
+*/
+type DataIdentifierType = _DataIdentifierType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SUNDAY
@@ -140,6 +165,7 @@ type FindingStatisticsSortAttributeName = _FindingStatisticsSortAttributeName | 
   - typings.awsSdk.awsSdkStrings.PolicyColonIAMUserSlashS3BucketReplicatedExternally
   - typings.awsSdk.awsSdkStrings.PolicyColonIAMUserSlashS3BucketEncryptionDisabled
   - typings.awsSdk.awsSdkStrings.PolicyColonIAMUserSlashS3BlockPublicAccessDisabled
+  - typings.awsSdk.awsSdkStrings.PolicyColonIAMUserSlashS3BucketSharedWithCloudFront
   - java.lang.String
 */
 type FindingType = _FindingType | String
@@ -252,6 +278,8 @@ type ManagedDataIdentifierSelector = _ManagedDataIdentifierSelector | String
 
 type MaxResults = Double
 
+type NextToken = String
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ASC
   - typings.awsSdk.awsSdkStrings.DESC
@@ -259,7 +287,12 @@ type MaxResults = Double
 */
 type OrderBy = _OrderBy | String
 
-type OriginType = SENSITIVE_DATA_DISCOVERY_JOB | String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SENSITIVE_DATA_DISCOVERY_JOB
+  - typings.awsSdk.awsSdkStrings.AUTOMATED_SENSITIVE_DATA_DISCOVERY
+  - java.lang.String
+*/
+type OriginType = _OriginType | String
 
 type Pages = js.Array[Page]
 
@@ -296,6 +329,8 @@ type RevealRequestStatus = _RevealRequestStatus | String
   - java.lang.String
 */
 type RevealStatus = _RevealStatus | String
+
+type S3BucketName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.OBJECT_EXTENSION
@@ -344,6 +379,8 @@ type SensitiveDataItemCategory = _SensitiveDataItemCategory | String
 
 type SensitiveDataOccurrences = StringDictionary[listOfDetectedDataDetails]
 
+type SensitivityInspectionTemplateId = String
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Low_
   - typings.awsSdk.awsSdkStrings.Medium_
@@ -380,6 +417,8 @@ type SimpleCriterionKeyForJob = _SimpleCriterionKeyForJob | String
   - typings.awsSdk.awsSdkStrings.DEEP_ARCHIVE
   - typings.awsSdk.awsSdkStrings.ONEZONE_IA
   - typings.awsSdk.awsSdkStrings.GLACIER
+  - typings.awsSdk.awsSdkStrings.GLACIER_IR
+  - typings.awsSdk.awsSdkStrings.OUTPOSTS
   - java.lang.String
 */
 type StorageClass = _StorageClass | String
@@ -394,6 +433,8 @@ type TagTarget = S3_OBJECT | String
   - java.lang.String
 */
 type TimeRange = _TimeRange | String
+
+type Timestamp = js.Date
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
@@ -448,6 +489,8 @@ type UsageStatisticsSortKey = _UsageStatisticsSortKey | String
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DATA_INVENTORY_EVALUATION
   - typings.awsSdk.awsSdkStrings.SENSITIVE_DATA_DISCOVERY
+  - typings.awsSdk.awsSdkStrings.AUTOMATED_SENSITIVE_DATA_DISCOVERY
+  - typings.awsSdk.awsSdkStrings.AUTOMATED_OBJECT_MONITORING
   - java.lang.String
 */
 type UsageType = _UsageType | String
@@ -457,8 +500,8 @@ type UsageType = _UsageType | String
   - typings.awsSdk.awsSdkStrings.IAMUser
   - typings.awsSdk.awsSdkStrings.FederatedUser
   - typings.awsSdk.awsSdkStrings.Root_
-  - typings.awsSdk.awsSdkStrings.AWSAccount
-  - typings.awsSdk.awsSdkStrings.AWSService
+  - typings.awsSdk.awsSdkStrings.AWSAccount_
+  - typings.awsSdk.awsSdkStrings.AWSService_
   - java.lang.String
 */
 type UserIdentityType = _UserIdentityType | String
@@ -484,11 +527,15 @@ type listOfBatchGetCustomDataIdentifierSummary = js.Array[BatchGetCustomDataIden
 
 type listOfBucketMetadata = js.Array[BucketMetadata]
 
+type listOfClassificationScopeSummary = js.Array[ClassificationScopeSummary]
+
 type listOfCriteriaForJob = js.Array[CriteriaForJob]
 
 type listOfCustomDataIdentifierSummary = js.Array[CustomDataIdentifierSummary]
 
 type listOfDetectedDataDetails = js.Array[DetectedDataDetails]
+
+type listOfDetection = js.Array[Detection]
 
 type listOfFinding = js.Array[Finding]
 
@@ -514,13 +561,21 @@ type listOfMatchingResource = js.Array[MatchingResource]
 
 type listOfMember = js.Array[Member]
 
+type listOfResourceProfileArtifact = js.Array[ResourceProfileArtifact]
+
 type listOfS3BucketDefinitionForJob = js.Array[S3BucketDefinitionForJob]
+
+type listOfS3BucketName = js.Array[S3BucketName]
 
 type listOfSearchResourcesCriteria = js.Array[SearchResourcesCriteria]
 
 type listOfSearchResourcesTagCriterionPair = js.Array[SearchResourcesTagCriterionPair]
 
+type listOfSensitivityInspectionTemplatesEntry = js.Array[SensitivityInspectionTemplatesEntry]
+
 type listOfString = js.Array[string]
+
+type listOfSuppressDataIdentifier = js.Array[SuppressDataIdentifier]
 
 type listOfTagCriterionPairForJob = js.Array[TagCriterionPairForJob]
 

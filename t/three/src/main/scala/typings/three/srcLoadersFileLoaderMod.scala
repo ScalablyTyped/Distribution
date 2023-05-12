@@ -49,6 +49,9 @@ object srcLoadersFileLoaderMod {
     ): Any = js.native
     def load(url: String, onLoad: Unit, onProgress: Unit, onError: js.Function1[/* event */ ErrorEvent, Unit]): Any = js.native
     
+    def loadAsync(url: String): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def loadAsync(url: String, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    
     var mimeType: js.UndefOr[MimeType] = js.native
     
     var responseType: js.UndefOr[String] = js.native

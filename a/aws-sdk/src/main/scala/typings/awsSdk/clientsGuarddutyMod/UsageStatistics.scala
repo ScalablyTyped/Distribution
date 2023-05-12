@@ -17,6 +17,11 @@ trait UsageStatistics extends StObject {
   var SumByDataSource: js.UndefOr[UsageDataSourceResultList] = js.undefined
   
   /**
+    * The usage statistic sum organized by feature.
+    */
+  var SumByFeature: js.UndefOr[UsageFeatureResultList] = js.undefined
+  
+  /**
     * The usage statistic sum organized by resource.
     */
   var SumByResource: js.UndefOr[UsageResourceResultList] = js.undefined
@@ -47,6 +52,12 @@ object UsageStatistics {
     inline def setSumByDataSourceUndefined: Self = StObject.set(x, "SumByDataSource", js.undefined)
     
     inline def setSumByDataSourceVarargs(value: UsageDataSourceResult*): Self = StObject.set(x, "SumByDataSource", js.Array(value*))
+    
+    inline def setSumByFeature(value: UsageFeatureResultList): Self = StObject.set(x, "SumByFeature", value.asInstanceOf[js.Any])
+    
+    inline def setSumByFeatureUndefined: Self = StObject.set(x, "SumByFeature", js.undefined)
+    
+    inline def setSumByFeatureVarargs(value: UsageFeatureResult*): Self = StObject.set(x, "SumByFeature", js.Array(value*))
     
     inline def setSumByResource(value: UsageResourceResultList): Self = StObject.set(x, "SumByResource", value.asInstanceOf[js.Any])
     

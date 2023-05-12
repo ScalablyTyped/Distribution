@@ -16,7 +16,7 @@ object libIconsPropertySafetyTwoToneMod extends Shortcut {
   @js.native
   trait PropertySafetyTwoToneIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_PropertySafetyTwoToneIconType: String = js.native

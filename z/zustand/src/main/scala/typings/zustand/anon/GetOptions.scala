@@ -19,7 +19,7 @@ trait GetOptions[S, Ps] extends StObject {
   
   def onHydrate(fn: PersistListener[S]): js.Function0[Unit]
   
-  def rehydrate(): js.Promise[Unit]
+  def rehydrate(): js.Promise[Unit] | Unit
   
   def setOptions(options: Partial[PersistOptions[S, Ps]]): Unit
 }
@@ -31,7 +31,7 @@ object GetOptions {
     hasHydrated: () => Boolean,
     onFinishHydration: PersistListener[S] => js.Function0[Unit],
     onHydrate: PersistListener[S] => js.Function0[Unit],
-    rehydrate: () => js.Promise[Unit],
+    rehydrate: () => js.Promise[Unit] | Unit,
     setOptions: Partial[PersistOptions[S, Ps]] => Unit
   ): GetOptions[S, Ps] = {
     val __obj = js.Dynamic.literal(clearStorage = js.Any.fromFunction0(clearStorage), getOptions = js.Any.fromFunction0(getOptions), hasHydrated = js.Any.fromFunction0(hasHydrated), onFinishHydration = js.Any.fromFunction1(onFinishHydration), onHydrate = js.Any.fromFunction1(onHydrate), rehydrate = js.Any.fromFunction0(rehydrate), setOptions = js.Any.fromFunction1(setOptions))
@@ -51,7 +51,7 @@ object GetOptions {
     
     inline def setOnHydrate(value: PersistListener[S] => js.Function0[Unit]): Self = StObject.set(x, "onHydrate", js.Any.fromFunction1(value))
     
-    inline def setRehydrate(value: () => js.Promise[Unit]): Self = StObject.set(x, "rehydrate", js.Any.fromFunction0(value))
+    inline def setRehydrate(value: () => js.Promise[Unit] | Unit): Self = StObject.set(x, "rehydrate", js.Any.fromFunction0(value))
     
     inline def setSetOptions(value: Partial[PersistOptions[S, Ps]] => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
   }

@@ -15,6 +15,11 @@ trait ProductionVariantServerlessConfig extends StObject {
     * The memory size of your serverless endpoint. Valid values are in 1 GB increments: 1024 MB, 2048 MB, 3072 MB, 4096 MB, 5120 MB, or 6144 MB.
     */
   var MemorySizeInMB: ServerlessMemorySizeInMB
+  
+  /**
+    * The amount of provisioned concurrency to allocate for the serverless endpoint. Should be less than or equal to MaxConcurrency.
+    */
+  var ProvisionedConcurrency: js.UndefOr[ServerlessProvisionedConcurrency] = js.undefined
 }
 object ProductionVariantServerlessConfig {
   
@@ -29,5 +34,9 @@ object ProductionVariantServerlessConfig {
     inline def setMaxConcurrency(value: ServerlessMaxConcurrency): Self = StObject.set(x, "MaxConcurrency", value.asInstanceOf[js.Any])
     
     inline def setMemorySizeInMB(value: ServerlessMemorySizeInMB): Self = StObject.set(x, "MemorySizeInMB", value.asInstanceOf[js.Any])
+    
+    inline def setProvisionedConcurrency(value: ServerlessProvisionedConcurrency): Self = StObject.set(x, "ProvisionedConcurrency", value.asInstanceOf[js.Any])
+    
+    inline def setProvisionedConcurrencyUndefined: Self = StObject.set(x, "ProvisionedConcurrency", js.undefined)
   }
 }

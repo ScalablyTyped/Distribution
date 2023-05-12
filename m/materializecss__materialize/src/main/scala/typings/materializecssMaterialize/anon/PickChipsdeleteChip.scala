@@ -7,14 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<@materializecss/materialize.M.Chips, 'deleteChip'> */
 trait PickChipsdeleteChip extends StObject {
   
-  def deleteChip(): Unit
   def deleteChip(n: Double): Unit
   @JSName("deleteChip")
-  var deleteChip_Original: js.Function1[/* n */ js.UndefOr[Double], Unit]
+  var deleteChip_Original: js.Function1[/* n */ Double, Unit]
 }
 object PickChipsdeleteChip {
   
-  inline def apply(deleteChip: /* n */ js.UndefOr[Double] => Unit): PickChipsdeleteChip = {
+  inline def apply(deleteChip: /* n */ Double => Unit): PickChipsdeleteChip = {
     val __obj = js.Dynamic.literal(deleteChip = js.Any.fromFunction1(deleteChip))
     __obj.asInstanceOf[PickChipsdeleteChip]
   }
@@ -22,6 +21,6 @@ object PickChipsdeleteChip {
   @scala.inline
   implicit open class MutableBuilder[Self <: PickChipsdeleteChip] (val x: Self) extends AnyVal {
     
-    inline def setDeleteChip(value: /* n */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "deleteChip", js.Any.fromFunction1(value))
+    inline def setDeleteChip(value: /* n */ Double => Unit): Self = StObject.set(x, "deleteChip", js.Any.fromFunction1(value))
   }
 }

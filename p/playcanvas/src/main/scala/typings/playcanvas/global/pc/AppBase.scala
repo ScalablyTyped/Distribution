@@ -1,6 +1,6 @@
 package typings.playcanvas.global.pc
 
-import typings.std.Element
+import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,12 +17,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * MyScript.prototype.initialize = function() {
   *     // Every script instance has a property 'this.app' accessible in the initialize...
-  *     var app = this.app;
+  *     const app = this.app;
   * };
   *
   * MyScript.prototype.update = function(dt) {
   *     // ...and update functions.
-  *     var app = this.app;
+  *     const app = this.app;
   * };
   * ```
   *
@@ -38,11 +38,11 @@ open class AppBase protected ()
   /**
     * Create a new AppBase instance.
     *
-    * @param {Element} canvas - The canvas element.
+    * @param {HTMLCanvasElement} canvas - The canvas element.
     * @example
     * // Engine-only example: create the application manually
-    * var options = new AppOptions();
-    * var app = new pc.AppBase(canvas);
+    * const options = new AppOptions();
+    * const app = new pc.AppBase(canvas);
     * app.init(options);
     *
     * // Start the application's main loop
@@ -50,7 +50,7 @@ open class AppBase protected ()
     *
     * @hideconstructor
     */
-  def this(canvas: Element) = this()
+  def this(canvas: HTMLCanvasElement) = this()
 }
 object AppBase {
   
@@ -82,7 +82,7 @@ object AppBase {
     * this id. Otherwise current application will be returned.
     * @returns {AppBase|undefined} The running application, if any.
     * @example
-    * var app = pc.AppBase.getApplication();
+    * const app = pc.AppBase.getApplication();
     */
   /* static member */
   inline def getApplication(): js.UndefOr[typings.playcanvas.mod.AppBase] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplication")().asInstanceOf[js.UndefOr[typings.playcanvas.mod.AppBase]]

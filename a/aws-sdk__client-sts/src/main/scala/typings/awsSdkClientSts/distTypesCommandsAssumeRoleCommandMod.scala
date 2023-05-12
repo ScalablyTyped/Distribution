@@ -21,8 +21,14 @@ object distTypesCommandsAssumeRoleCommandMod {
   @JSImport("@aws-sdk/client-sts/dist-types/commands/AssumeRoleCommand", "AssumeRoleCommand")
   @js.native
   open class AssumeRoleCommand protected () extends Command[AssumeRoleCommandInput, AssumeRoleCommandOutput, STSClientResolvedConfig, Any, Any] {
+    /**
+      * @public
+      */
     def this(input: AssumeRoleCommandInput) = this()
     
+    /**
+      * @internal
+      */
     /* private */ var deserialize: Any = js.native
     
     /**
@@ -38,6 +44,9 @@ object distTypesCommandsAssumeRoleCommandMod {
       options: HttpHandlerOptions
     ): Handler[AssumeRoleCommandInput, AssumeRoleCommandOutput] = js.native
     
+    /**
+      * @internal
+      */
     /* private */ var serialize: Any = js.native
   }
   /* static members */

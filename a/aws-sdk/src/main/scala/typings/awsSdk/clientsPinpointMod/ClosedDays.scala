@@ -7,27 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClosedDays extends StObject {
   
   /**
-    * Rules for Custom Channel.
+    * Rules for the Custom channel.
     */
   var CUSTOM: js.UndefOr[ListOfClosedDaysRules] = js.undefined
   
   /**
-    * Rules for Email Channel.
+    * Rules for the Email channel.
     */
   var EMAIL: js.UndefOr[ListOfClosedDaysRules] = js.undefined
   
   /**
-    * Rules for Push Channel.
+    * Rules for the Push channel.
     */
   var PUSH: js.UndefOr[ListOfClosedDaysRules] = js.undefined
   
   /**
-    * Rules for SMS Channel.
+    * Rules for the SMS channel.
     */
   var SMS: js.UndefOr[ListOfClosedDaysRules] = js.undefined
   
   /**
-    * Rules for Voice Channel.
+    * Rules for the Voice channel.
     */
   var VOICE: js.UndefOr[ListOfClosedDaysRules] = js.undefined
 }

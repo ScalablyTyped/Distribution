@@ -22,31 +22,28 @@ object mod {
     * semantics and does not listen to the `'error'` event.
     *
     * ```js
-    * const { once, EventEmitter } = require('events');
+    * import { once, EventEmitter } from 'node:events';
+    * import process from 'node:process';
     *
-    * async function run() {
-    *   const ee = new EventEmitter();
+    * const ee = new EventEmitter();
     *
-    *   process.nextTick(() => {
-    *     ee.emit('myevent', 42);
-    *   });
+    * process.nextTick(() => {
+    *   ee.emit('myevent', 42);
+    * });
     *
-    *   const [value] = await once(ee, 'myevent');
-    *   console.log(value);
+    * const [value] = await once(ee, 'myevent');
+    * console.log(value);
     *
-    *   const err = new Error('kaboom');
-    *   process.nextTick(() => {
-    *     ee.emit('error', err);
-    *   });
+    * const err = new Error('kaboom');
+    * process.nextTick(() => {
+    *   ee.emit('error', err);
+    * });
     *
-    *   try {
-    *     await once(ee, 'myevent');
-    *   } catch (err) {
-    *     console.log('error happened', err);
-    *   }
+    * try {
+    *   await once(ee, 'myevent');
+    * } catch (err) {
+    *   console.error('error happened', err);
     * }
-    *
-    * run();
     * ```
     *
     * The special handling of the `'error'` event is only used when `events.once()`is used to wait for another event. If `events.once()` is used to wait for the
@@ -54,13 +51,13 @@ object mod {
     * special handling:
     *
     * ```js
-    * const { EventEmitter, once } = require('events');
+    * import { EventEmitter, once } from 'node:events';
     *
     * const ee = new EventEmitter();
     *
     * once(ee, 'error')
     *   .then(([err]) => console.log('ok', err.message))
-    *   .catch((err) => console.log('error', err.message));
+    *   .catch((err) => console.error('error', err.message));
     *
     * ee.emit('error', new Error('boom'));
     *
@@ -70,7 +67,7 @@ object mod {
     * An `AbortSignal` can be used to cancel waiting for the event:
     *
     * ```js
-    * const { EventEmitter, once } = require('events');
+    * import { EventEmitter, once } from 'node:events';
     *
     * const ee = new EventEmitter();
     * const ac = new AbortController();

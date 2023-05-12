@@ -1,11 +1,11 @@
 package typings.dynogels.mod
 
-import typings.awsSdk.clientsDynamodbMod.AttributeName
-import typings.awsSdk.clientsDynamodbMod.AttributeNameList
-import typings.awsSdk.clientsDynamodbMod.ConsistentRead
-import typings.awsSdk.clientsDynamodbMod.ExpressionAttributeNameMap
-import typings.awsSdk.clientsDynamodbMod.ProjectionExpression
-import typings.awsSdk.clientsDynamodbMod.ReturnConsumedCapacity
+import typings.awsSdk2Types.clientsDynamodbMod.AttributeName
+import typings.awsSdk2Types.clientsDynamodbMod.AttributeNameList
+import typings.awsSdk2Types.clientsDynamodbMod.ConsistentRead
+import typings.awsSdk2Types.clientsDynamodbMod.ExpressionAttributeNameMap
+import typings.awsSdk2Types.clientsDynamodbMod.ProjectionExpression
+import typings.awsSdk2Types.clientsDynamodbMod.ReturnConsumedCapacity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,13 +14,13 @@ trait GetItemOptions extends StObject {
   
   var AttributesToGet: js.UndefOr[AttributeNameList] = js.undefined
   
-  var ConsistentRead: js.UndefOr[typings.awsSdk.clientsDynamodbMod.ConsistentRead] = js.undefined
+  var ConsistentRead: js.UndefOr[typings.awsSdk2Types.clientsDynamodbMod.ConsistentRead] = js.undefined
   
   var ExpressionAttributeNames: js.UndefOr[ExpressionAttributeNameMap] = js.undefined
   
-  var ProjectionExpression: js.UndefOr[typings.awsSdk.clientsDynamodbMod.ProjectionExpression] = js.undefined
+  var ProjectionExpression: js.UndefOr[typings.awsSdk2Types.clientsDynamodbMod.ProjectionExpression] = js.undefined
   
-  var ReturnConsumedCapacity: js.UndefOr[typings.awsSdk.clientsDynamodbMod.ReturnConsumedCapacity] = js.undefined
+  var ReturnConsumedCapacity: js.UndefOr[typings.awsSdk2Types.clientsDynamodbMod.ReturnConsumedCapacity] = js.undefined
 }
 object GetItemOptions {
   

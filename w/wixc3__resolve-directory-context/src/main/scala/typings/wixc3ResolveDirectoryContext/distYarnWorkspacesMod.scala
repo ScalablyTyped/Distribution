@@ -1,8 +1,6 @@
 package typings.wixc3ResolveDirectoryContext
 
 import typings.std.Generator
-import typings.typeFest.sourcePackageJsonMod.PackageJson.WorkspaceConfig
-import typings.typeFest.sourcePackageJsonMod.PackageJson.WorkspacePattern
 import typings.wixc3ResolveDirectoryContext.anon.IsDirectory
 import typings.wixc3ResolveDirectoryContext.anon.WithFileTypes
 import typings.wixc3ResolveDirectoryContext.distNpmPackageMod.INpmPackage
@@ -37,9 +35,9 @@ object distYarnWorkspacesMod {
   ): Generator[String, Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("deepFindFilesSync")(directoryPath.asInstanceOf[js.Any], filterFile.asInstanceOf[js.Any], filterDirectory.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[Generator[String, Any, Any]]
   inline def deepFindFilesSync(directoryPath: String, filterFile: Unit, filterDirectory: Unit, host: ResolveWorkspacePackagesHost): Generator[String, Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("deepFindFilesSync")(directoryPath.asInstanceOf[js.Any], filterFile.asInstanceOf[js.Any], filterDirectory.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[Generator[String, Any, Any]]
   
-  inline def extractPackageLocations(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractPackageLocations")().asInstanceOf[js.Array[String]]
-  inline def extractPackageLocations(workspaces: js.Array[WorkspacePattern]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractPackageLocations")(workspaces.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-  inline def extractPackageLocations(workspaces: WorkspaceConfig): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractPackageLocations")(workspaces.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def extractPackageLocations_workspaces(
+    workspaces: /* import warning: importer.ImportType#apply Failed type conversion: type-fest.type-fest/source/package-json.PackageJson.YarnConfiguration['workspaces'] */ js.Any
+  ): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractPackageLocations")(workspaces.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   inline def resolveWorkspacePackages(basePath: String, workspaces: js.Array[String], host: ResolveWorkspacePackagesHost): js.Array[INpmPackage] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveWorkspacePackages")(basePath.asInstanceOf[js.Any], workspaces.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[js.Array[INpmPackage]]
   

@@ -73,6 +73,7 @@ object typesSplitlayoutMod {
       * The alignment has no effect if the widgets can expand  to fill the
       * entire split layout.
       */
+    def alignment: Alignment = js.native
     /**
       * Set the content alignment for the split layout.
       *
@@ -82,12 +83,12 @@ object typesSplitlayoutMod {
       * The alignment has no effect if the widgets can expand  to fill the
       * entire split layout.
       */
-    var alignment: Alignment = js.native
+    def alignment_=(value: Alignment): Unit = js.native
     
     /**
       * A read-only array of the split handles in the layout.
       */
-    val handles: js.Array[HTMLDivElement] = js.native
+    def handles: js.Array[HTMLDivElement] = js.native
     
     /**
       * Move the offset position of a split handle.
@@ -107,10 +108,11 @@ object typesSplitlayoutMod {
     /**
       * Get the layout orientation for the split layout.
       */
+    def orientation: Orientation = js.native
     /**
       * Set the layout orientation for the split layout.
       */
-    var orientation: Orientation = js.native
+    def orientation_=(value: Orientation): Unit = js.native
     
     /**
       * Get the relative sizes of the widgets in the layout.
@@ -148,10 +150,11 @@ object typesSplitlayoutMod {
     /**
       * Get the inter-element spacing for the split layout.
       */
+    def spacing: Double = js.native
     /**
       * Set the inter-element spacing for the split layout.
       */
-    var spacing: Double = js.native
+    def spacing_=(value: Double): Unit = js.native
     
     /**
       * Update the item position.

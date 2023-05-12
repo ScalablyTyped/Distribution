@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-sticky-box
 
-Typings are for version 1.0.2
+Typings are for version 2.0.4
 
 ## Library description:
 Boxes that behave nicely while scrolling

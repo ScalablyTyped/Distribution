@@ -12,6 +12,8 @@ object distStorageMod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def offChange(eventHandler: js.Function1[/* arg0 */ Key, Unit]): `true` | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offChange")(eventHandler.asInstanceOf[js.Any]).asInstanceOf[`true` | Unit]
+  
   inline def onChange(eventHandler: js.Function1[/* arg0 */ Key, Unit]): `true` | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onChange")(eventHandler.asInstanceOf[js.Any]).asInstanceOf[`true` | Unit]
   
   @JSImport("lib0/dist/storage", "varStorage")

@@ -10,8 +10,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../../entity.js').Entity} Entity */
-/** @typedef {import('./system.js').ScrollbarComponentSystem} ScrollbarComponentSystem */
 /**
   * A ScrollbarComponent enables a group of entities to behave like a draggable scrollbar.
   *
@@ -26,8 +24,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property {number} handleSize The size of the handle relative to the size of the track, in the
   * range 0 to 1. For a vertical scrollbar, a value of 1 means that the handle will take up the full
   * height of the track.
-  * @property {Entity} handleEntity The entity to be used as the scrollbar handle. This entity must
-  * have a Scrollbar component.
+  * @property {import('../../entity.js').Entity} handleEntity The entity to be used as the scrollbar
+  * handle. This entity must have a Scrollbar component.
   * @augments Component
   */
 @JSImport("playcanvas", "ScrollbarComponent")
@@ -36,8 +34,10 @@ open class ScrollbarComponent protected () extends Component {
   /**
     * Create a new ScrollbarComponent.
     *
-    * @param {ScrollbarComponentSystem} system - The ComponentSystem that created this Component.
-    * @param {Entity} entity - The Entity that this Component is attached to.
+    * @param {import('./system.js').ScrollbarComponentSystem} system - The ComponentSystem that
+    * created this Component.
+    * @param {import('../../entity.js').Entity} entity - The Entity that this Component is
+    * attached to.
     */
   def this(system: ScrollbarComponentSystem, entity: Entity) = this()
   

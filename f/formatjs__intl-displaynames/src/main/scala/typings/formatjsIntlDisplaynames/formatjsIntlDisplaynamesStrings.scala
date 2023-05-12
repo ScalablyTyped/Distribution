@@ -11,12 +11,24 @@ object formatjsIntlDisplaynamesStrings {
   inline def `best fit`: `best fit` = ("best fit").asInstanceOf[`best fit`]
   
   @js.native
+  sealed trait calendar extends StObject
+  inline def calendar: calendar = "calendar".asInstanceOf[calendar]
+  
+  @js.native
   sealed trait code extends StObject
   inline def code: code = "code".asInstanceOf[code]
   
   @js.native
   sealed trait currency extends StObject
   inline def currency: currency = "currency".asInstanceOf[currency]
+  
+  @js.native
+  sealed trait dateTimeField extends StObject
+  inline def dateTimeField: dateTimeField = "dateTimeField".asInstanceOf[dateTimeField]
+  
+  @js.native
+  sealed trait dialect extends StObject
+  inline def dialect: dialect = "dialect".asInstanceOf[dialect]
   
   @js.native
   sealed trait language extends StObject
@@ -49,4 +61,8 @@ object formatjsIntlDisplaynamesStrings {
   @js.native
   sealed trait short extends StObject
   inline def short: short = "short".asInstanceOf[short]
+  
+  @js.native
+  sealed trait standard extends StObject
+  inline def standard: standard = "standard".asInstanceOf[standard]
 }

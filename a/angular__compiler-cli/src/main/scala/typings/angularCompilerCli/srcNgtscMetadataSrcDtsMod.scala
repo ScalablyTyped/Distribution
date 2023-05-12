@@ -1,12 +1,11 @@
 package typings.angularCompilerCli
 
+import typings.angularCompilerCli.anon.ClassDeclarationDeclarati
 import typings.angularCompilerCli.srcNgtscImportsMod.Reference
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.DirectiveMeta
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.MetadataReader
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.NgModuleMeta
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.PipeMeta
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ReflectionHost
 import typings.typescript.mod.TypeChecker
 import org.scalablytyped.runtime.StObject
@@ -25,13 +24,13 @@ object srcNgtscMetadataSrcDtsMod {
     /* private */ var checker: Any = js.native
     
     /* CompleteClass */
-    override def getDirectiveMetadata(node: Reference[ClassDeclaration[DeclarationNode]]): DirectiveMeta | Null = js.native
+    override def getDirectiveMetadata(node: Reference[ClassDeclarationDeclarati]): DirectiveMeta | Null = js.native
     
     /* CompleteClass */
-    override def getNgModuleMetadata(node: Reference[ClassDeclaration[DeclarationNode]]): NgModuleMeta | Null = js.native
+    override def getNgModuleMetadata(node: Reference[ClassDeclarationDeclarati]): NgModuleMeta | Null = js.native
     
     /* CompleteClass */
-    override def getPipeMetadata(node: Reference[ClassDeclaration[DeclarationNode]]): PipeMeta | Null = js.native
+    override def getPipeMetadata(node: Reference[ClassDeclarationDeclarati]): PipeMeta | Null = js.native
     
     /* private */ var reflector: Any = js.native
   }

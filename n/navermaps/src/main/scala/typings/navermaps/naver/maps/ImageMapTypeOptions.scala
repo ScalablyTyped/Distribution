@@ -19,6 +19,8 @@ trait ImageMapTypeOptions extends StObject {
   
   var name: js.UndefOr[String] = js.undefined
   
+  var overlayType: js.UndefOr[String] = js.undefined
+  
   var projection: js.UndefOr[Projection] = js.undefined
   
   var provider: js.UndefOr[js.Array[MapDataProvider]] = js.undefined
@@ -62,6 +64,10 @@ object ImageMapTypeOptions {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOverlayType(value: String): Self = StObject.set(x, "overlayType", value.asInstanceOf[js.Any])
+    
+    inline def setOverlayTypeUndefined: Self = StObject.set(x, "overlayType", js.undefined)
     
     inline def setProjection(value: Projection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     

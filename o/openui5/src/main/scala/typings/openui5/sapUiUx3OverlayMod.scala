@@ -1,6 +1,6 @@
 package typings.openui5
 
-import typings.openui5.anon.`8`
+import typings.openui5.anon.`10`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
@@ -481,6 +481,8 @@ object sapUiUx3OverlayMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:close close} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -492,9 +494,11 @@ object sapUiUx3OverlayMod {
     def fireClose(/**
       * Parameters to pass along with the event
       */
-    mParameters: `8`): Boolean = js.native
+    mParameters: `10`): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:closed closed} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -506,9 +510,11 @@ object sapUiUx3OverlayMod {
     def fireClosed(/**
       * Parameters to pass along with the event
       */
-    mParameters: `8`): Boolean = js.native
+    mParameters: `10`): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:open open} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -517,9 +523,11 @@ object sapUiUx3OverlayMod {
     def fireOpen(/**
       * Parameters to pass along with the event
       */
-    mParameters: `8`): this.type = js.native
+    mParameters: `10`): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:openNew openNew} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -528,7 +536,7 @@ object sapUiUx3OverlayMod {
     def fireOpenNew(/**
       * Parameters to pass along with the event
       */
-    mParameters: `8`): this.type = js.native
+    mParameters: `10`): this.type = js.native
     
     /**
       * Gets current value of property {@link #getCloseButtonVisible closeButtonVisible}.

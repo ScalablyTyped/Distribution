@@ -1,8 +1,8 @@
 package typings.tensorflowTfjsNode
 
 import typings.tensorflowTfjsCore.distKernelRegistryMod.KernelConfig
-import typings.tensorflowTfjsCore.distKernelRegistryMod.TensorInfo
 import typings.tensorflowTfjsCore.distOpsConvUtilMod.Conv2DInfo
+import typings.tensorflowTfjsCore.distTensorInfoMod.TensorInfo
 import typings.tensorflowTfjsCore.distTensorMod.Tensor4D
 import typings.tensorflowTfjsNode.distNodejsKernelBackendMod.NodeJSKernelBackend
 import org.scalablytyped.runtime.StObject

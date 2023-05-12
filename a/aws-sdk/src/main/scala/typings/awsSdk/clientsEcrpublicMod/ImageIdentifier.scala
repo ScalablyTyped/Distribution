@@ -12,7 +12,7 @@ trait ImageIdentifier extends StObject {
   var imageDigest: js.UndefOr[ImageDigest] = js.undefined
   
   /**
-    * The tag used for the image.
+    * The tag that's used for the image.
     */
   var imageTag: js.UndefOr[ImageTag] = js.undefined
 }

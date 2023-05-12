@@ -12,7 +12,7 @@ trait Workgroup extends StObject {
   var baseCapacity: js.UndefOr[Integer] = js.undefined
   
   /**
-    * An array of parameters to set for finer control over a database. The options are datestyle, enable_user_activity_logging, query_group, search_path, and max_query_execution_time.
+    * An array of parameters to set for advanced control over a database. The options are auto_mv, datestyle, enable_case_sensitivity_identifier, enable_user_activity_logging, query_group, , search_path, and query monitoring metrics that let you define performance boundaries. For more information about query monitoring rules and available metrics, see  Query monitoring metrics for Amazon Redshift Serverless.
     */
   var configParameters: js.UndefOr[ConfigParameterList] = js.undefined
   
@@ -35,6 +35,11 @@ trait Workgroup extends StObject {
     * The namespace the workgroup is associated with.
     */
   var namespaceName: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The custom port to use when connecting to a workgroup. Valid port ranges are 5431-5455 and 8191-8215. The default is 5439.
+    */
+  var port: js.UndefOr[Integer] = js.undefined
   
   /**
     * A value that specifies whether the workgroup can be accessible from a public network
@@ -106,6 +111,10 @@ object Workgroup {
     inline def setNamespaceName(value: String): Self = StObject.set(x, "namespaceName", value.asInstanceOf[js.Any])
     
     inline def setNamespaceNameUndefined: Self = StObject.set(x, "namespaceName", js.undefined)
+    
+    inline def setPort(value: Integer): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     inline def setPubliclyAccessible(value: Boolean): Self = StObject.set(x, "publiclyAccessible", value.asInstanceOf[js.Any])
     

@@ -82,7 +82,7 @@ object global {
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("metadata")(font.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
-      * @desc
+      * @description
       * Load a custom font from a file.
       *
       * @param fontName
@@ -104,7 +104,7 @@ object global {
       cb: js.Function2[/* error */ js.Error | Null, /* result */ js.UndefOr[String], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
-      * @desc
+      * @description
       * This `unified-signatures` is disabled because `Fonts` type is too long
       */
     // tslint:disable-next-line: unified-signatures
@@ -117,7 +117,7 @@ object global {
     inline def textSync(txt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("textSync")(txt.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def textSync(txt: String, font: Fonts_): String = (^.asInstanceOf[js.Dynamic].applyDynamic("textSync")(txt.asInstanceOf[js.Any], font.asInstanceOf[js.Any])).asInstanceOf[String]
     /**
-      * @desc
+      * @description
       * This `unified-signatures` is disabled because `Fonts` type is too long
       */
     inline def textSync(txt: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("textSync")(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]

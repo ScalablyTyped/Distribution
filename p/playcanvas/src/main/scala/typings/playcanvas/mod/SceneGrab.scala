@@ -31,16 +31,13 @@ trait SceneGrab extends StObject {
   
   def allocateTexture(device: Any, source: Any, name: Any, format: Any, isDepth: Any, mipmaps: Any): Texture
   
-  var application: Any
-  
-  var colorFormat: Double
-  
-  /** @type {GraphicsDevice} */
   var device: GraphicsDevice
   
-  def initWebGl1(): Unit
+  def getSourceColorFormat(texture: Any): Any
   
-  def initWebGl2(): Unit
+  def initFallbackPath(): Unit
+  
+  def initMainPath(): Unit
   
   var layer: Layer
   
@@ -48,27 +45,29 @@ trait SceneGrab extends StObject {
   
   def releaseRenderTarget(rt: Any): Unit
   
-  def resizeCondition(target: Any, source: Any, device: Any): Boolean
+  var scene: Scene_
   
   def setupUniform(device: Any, depth: Any, buffer: Any): Unit
+  
+  def shouldReallocate(targetRT: Any, sourceTexture: Any, testFormat: Any): Boolean
 }
 object SceneGrab {
   
   inline def apply(
     allocateRenderTarget: (Any, Any, Any, Any, Any, Any, Any) => Any,
     allocateTexture: (Any, Any, Any, Any, Any, Any) => Texture,
-    application: Any,
-    colorFormat: Double,
     device: GraphicsDevice,
-    initWebGl1: () => Unit,
-    initWebGl2: () => Unit,
+    getSourceColorFormat: Any => Any,
+    initFallbackPath: () => Unit,
+    initMainPath: () => Unit,
     layer: Layer,
     patch: Any => Unit,
     releaseRenderTarget: Any => Unit,
-    resizeCondition: (Any, Any, Any) => Boolean,
-    setupUniform: (Any, Any, Any) => Unit
+    scene: Scene_,
+    setupUniform: (Any, Any, Any) => Unit,
+    shouldReallocate: (Any, Any, Any) => Boolean
   ): SceneGrab = {
-    val __obj = js.Dynamic.literal(allocateRenderTarget = js.Any.fromFunction7(allocateRenderTarget), allocateTexture = js.Any.fromFunction6(allocateTexture), application = application.asInstanceOf[js.Any], colorFormat = colorFormat.asInstanceOf[js.Any], device = device.asInstanceOf[js.Any], initWebGl1 = js.Any.fromFunction0(initWebGl1), initWebGl2 = js.Any.fromFunction0(initWebGl2), layer = layer.asInstanceOf[js.Any], patch = js.Any.fromFunction1(patch), releaseRenderTarget = js.Any.fromFunction1(releaseRenderTarget), resizeCondition = js.Any.fromFunction3(resizeCondition), setupUniform = js.Any.fromFunction3(setupUniform))
+    val __obj = js.Dynamic.literal(allocateRenderTarget = js.Any.fromFunction7(allocateRenderTarget), allocateTexture = js.Any.fromFunction6(allocateTexture), device = device.asInstanceOf[js.Any], getSourceColorFormat = js.Any.fromFunction1(getSourceColorFormat), initFallbackPath = js.Any.fromFunction0(initFallbackPath), initMainPath = js.Any.fromFunction0(initMainPath), layer = layer.asInstanceOf[js.Any], patch = js.Any.fromFunction1(patch), releaseRenderTarget = js.Any.fromFunction1(releaseRenderTarget), scene = scene.asInstanceOf[js.Any], setupUniform = js.Any.fromFunction3(setupUniform), shouldReallocate = js.Any.fromFunction3(shouldReallocate))
     __obj.asInstanceOf[SceneGrab]
   }
   
@@ -79,15 +78,13 @@ object SceneGrab {
     
     inline def setAllocateTexture(value: (Any, Any, Any, Any, Any, Any) => Texture): Self = StObject.set(x, "allocateTexture", js.Any.fromFunction6(value))
     
-    inline def setApplication(value: Any): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
-    
-    inline def setColorFormat(value: Double): Self = StObject.set(x, "colorFormat", value.asInstanceOf[js.Any])
-    
     inline def setDevice(value: GraphicsDevice): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
-    inline def setInitWebGl1(value: () => Unit): Self = StObject.set(x, "initWebGl1", js.Any.fromFunction0(value))
+    inline def setGetSourceColorFormat(value: Any => Any): Self = StObject.set(x, "getSourceColorFormat", js.Any.fromFunction1(value))
     
-    inline def setInitWebGl2(value: () => Unit): Self = StObject.set(x, "initWebGl2", js.Any.fromFunction0(value))
+    inline def setInitFallbackPath(value: () => Unit): Self = StObject.set(x, "initFallbackPath", js.Any.fromFunction0(value))
+    
+    inline def setInitMainPath(value: () => Unit): Self = StObject.set(x, "initMainPath", js.Any.fromFunction0(value))
     
     inline def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
@@ -95,8 +92,10 @@ object SceneGrab {
     
     inline def setReleaseRenderTarget(value: Any => Unit): Self = StObject.set(x, "releaseRenderTarget", js.Any.fromFunction1(value))
     
-    inline def setResizeCondition(value: (Any, Any, Any) => Boolean): Self = StObject.set(x, "resizeCondition", js.Any.fromFunction3(value))
+    inline def setScene(value: Scene_): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
     inline def setSetupUniform(value: (Any, Any, Any) => Unit): Self = StObject.set(x, "setupUniform", js.Any.fromFunction3(value))
+    
+    inline def setShouldReallocate(value: (Any, Any, Any) => Boolean): Self = StObject.set(x, "shouldReallocate", js.Any.fromFunction3(value))
   }
 }

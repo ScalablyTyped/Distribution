@@ -21,6 +21,8 @@ trait PartialAutoPlacementOptio extends StObject {
   
   var boundary: js.UndefOr[typings.floatingUiDom.srcTypesMod.Boundary] = js.undefined
   
+  var crossAxis: js.UndefOr[Boolean] = js.undefined
+  
   var elementContext: js.UndefOr[ElementContext] = js.undefined
   
   var padding: js.UndefOr[Padding] = js.undefined
@@ -62,6 +64,10 @@ object PartialAutoPlacementOptio {
     inline def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
     
     inline def setBoundaryVarargs(value: typings.std.Element*): Self = StObject.set(x, "boundary", js.Array(value*))
+    
+    inline def setCrossAxis(value: Boolean): Self = StObject.set(x, "crossAxis", value.asInstanceOf[js.Any])
+    
+    inline def setCrossAxisUndefined: Self = StObject.set(x, "crossAxis", js.undefined)
     
     inline def setElementContext(value: ElementContext): Self = StObject.set(x, "elementContext", value.asInstanceOf[js.Any])
     

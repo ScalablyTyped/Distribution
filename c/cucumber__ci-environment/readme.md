@@ -1,7 +1,7 @@
 
 # Scala.js typings for cucumber__ci-environment
 
-Typings are for version 9.1.0
+Typings are for version 9.2.0
 
 ## Library description:
 Detect CI Environment from environment variables

@@ -96,6 +96,8 @@ type Boolean = scala.Boolean
 
 type ChangeLogs = js.Array[ChangeLog]
 
+type CloudTrailArn = java.lang.String
+
 type ComplianceType = java.lang.String
 
 type ControlCommentBody = java.lang.String
@@ -188,6 +190,13 @@ type DelegationStatus = _DelegationStatus | java.lang.String
 
 type Delegations = js.Array[Delegation]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ALL
+  - typings.awsSdk.awsSdkStrings.DEFAULT
+  - java.lang.String
+*/
+type DeleteResources = _DeleteResources | java.lang.String
+
 type EmailAddress = java.lang.String
 
 type ErrorCode = java.lang.String
@@ -201,6 +210,23 @@ type EvidenceAttributeKey = java.lang.String
 type EvidenceAttributeValue = java.lang.String
 
 type EvidenceAttributes = StringDictionary[EvidenceAttributeValue]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NOT_STARTED
+  - typings.awsSdk.awsSdkStrings.IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.COMPLETED
+  - java.lang.String
+*/
+type EvidenceFinderBackfillStatus = _EvidenceFinderBackfillStatus | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - typings.awsSdk.awsSdkStrings.ENABLE_IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.DISABLE_IN_PROGRESS
+  - java.lang.String
+*/
+type EvidenceFinderEnablementStatus = _EvidenceFinderEnablementStatus | java.lang.String
 
 type EvidenceIds = js.Array[UUID]
 
@@ -263,6 +289,8 @@ type NullableInteger = Double
 */
 type ObjectTypeEnum = _ObjectTypeEnum | java.lang.String
 
+type QueryStatement = java.lang.String
+
 type Region = java.lang.String
 
 type Resources = js.Array[Resource]
@@ -288,6 +316,8 @@ type ServiceMetadataList = js.Array[ServiceMetadata]
   - typings.awsSdk.awsSdkStrings.SNS_TOPIC
   - typings.awsSdk.awsSdkStrings.DEFAULT_ASSESSMENT_REPORTS_DESTINATION
   - typings.awsSdk.awsSdkStrings.DEFAULT_PROCESS_OWNERS
+  - typings.awsSdk.awsSdkStrings.EVIDENCE_FINDER_ENABLEMENT
+  - typings.awsSdk.awsSdkStrings.DEREGISTRATION_POLICY
   - java.lang.String
 */
 type SettingAttribute = _SettingAttribute | java.lang.String

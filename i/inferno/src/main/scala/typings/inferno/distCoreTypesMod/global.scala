@@ -23,8 +23,6 @@ import typings.inferno.distCoreTypesMod.Inferno.HTMLAttributes
 import typings.inferno.distCoreTypesMod.Inferno.HtmlHTMLAttributes
 import typings.inferno.distCoreTypesMod.Inferno.IframeHTMLAttributes
 import typings.inferno.distCoreTypesMod.Inferno.ImgHTMLAttributes
-import typings.inferno.distCoreTypesMod.Inferno.InfernoElement
-import typings.inferno.distCoreTypesMod.Inferno.InfernoNode
 import typings.inferno.distCoreTypesMod.Inferno.InputHTMLAttributes
 import typings.inferno.distCoreTypesMod.Inferno.InsHTMLAttributes
 import typings.inferno.distCoreTypesMod.Inferno.KeygenHTMLAttributes
@@ -32,6 +30,7 @@ import typings.inferno.distCoreTypesMod.Inferno.LabelHTMLAttributes
 import typings.inferno.distCoreTypesMod.Inferno.LiHTMLAttributes
 import typings.inferno.distCoreTypesMod.Inferno.LinkHTMLAttributes
 import typings.inferno.distCoreTypesMod.Inferno.MapHTMLAttributes
+import typings.inferno.distCoreTypesMod.Inferno.MediaHTMLAttributes
 import typings.inferno.distCoreTypesMod.Inferno.MenuHTMLAttributes
 import typings.inferno.distCoreTypesMod.Inferno.MetaHTMLAttributes
 import typings.inferno.distCoreTypesMod.Inferno.MeterHTMLAttributes
@@ -86,6 +85,7 @@ import typings.std.HTMLLabelElement
 import typings.std.HTMLLegendElement
 import typings.std.HTMLLinkElement
 import typings.std.HTMLMapElement
+import typings.std.HTMLMediaElement
 import typings.std.HTMLMetaElement
 import typings.std.HTMLMeterElement
 import typings.std.HTMLModElement
@@ -118,6 +118,7 @@ import typings.std.HTMLTitleElement
 import typings.std.HTMLTrackElement
 import typings.std.HTMLUListElement
 import typings.std.HTMLVideoElement
+import typings.std.MathMLElement
 import typings.std.SVGAnimateElement
 import typings.std.SVGAnimateTransformElement
 import typings.std.SVGCircleElement
@@ -182,8 +183,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object global {
   
   object JSX {
-    
-    type Element = InfernoElement[Any] | InfernoNode
     
     trait ElementAttributesProperty extends StObject
     
@@ -410,6 +409,8 @@ object global {
       
       var link: DetailedHTMLProps[LinkHTMLAttributes[HTMLLinkElement], HTMLLinkElement]
       
+      var maction: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]
+      
       var main: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
       var map: DetailedHTMLProps[MapHTMLAttributes[HTMLMapElement], HTMLMapElement]
@@ -420,9 +421,17 @@ object global {
       
       var mask: SVGProps[SVGMaskElement]
       
+      var math: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]
+      
+      var media: DetailedHTMLProps[MediaHTMLAttributes[HTMLMediaElement], HTMLMediaElement]
+      
+      var menclose: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]
+      
       var menu: DetailedHTMLProps[MenuHTMLAttributes[HTMLElement], HTMLElement]
       
       var menuitem: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
+      
+      var merror: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]
       
       var meta: DetailedHTMLProps[MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement]
       
@@ -430,7 +439,55 @@ object global {
       
       var meter: DetailedHTMLProps[MeterHTMLAttributes[HTMLMeterElement], HTMLMeterElement]
       
+      var mfenced: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]
+      
+      var mfrac: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]
+      
+      var mi: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]
+      
+      var mmultiscripts: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]
+      
+      var mn: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]
+      
+      var mo: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]
+      
+      var mover: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]
+      
+      var mpadded: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]
+      
       var mpath: SVGProps[SVGElement]
+      
+      var mphantom: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]
+      
+      var mroot: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]
+      
+      var mrow: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]
+      
+      var ms: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]
+      
+      var mspace: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]
+      
+      var msqrt: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]
+      
+      var mstyle: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]
+      
+      var msub: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]
+      
+      var msubsup: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]
+      
+      var msup: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]
+      
+      var mtable: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]
+      
+      var mtd: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]
+      
+      var mtext: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]
+      
+      var mtr: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]
+      
+      var munder: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]
+      
+      var munderover: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]
       
       var nav: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
@@ -487,6 +544,8 @@ object global {
       var section: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
       var select: DetailedHTMLProps[SelectHTMLAttributes[HTMLSelectElement], HTMLSelectElement]
+      
+      var semantics: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]
       
       var slot: DetailedHTMLProps[SlotHTMLAttributes[HTMLSlotElement], HTMLSlotElement]
       
@@ -661,17 +720,46 @@ object global {
         line: SVGProps[SVGLineElement],
         linearGradient: SVGProps[SVGLinearGradientElement],
         link: DetailedHTMLProps[LinkHTMLAttributes[HTMLLinkElement], HTMLLinkElement],
+        maction: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement],
         main: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
         map: DetailedHTMLProps[MapHTMLAttributes[HTMLMapElement], HTMLMapElement],
         mark: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
         marker: SVGProps[SVGMarkerElement],
         mask: SVGProps[SVGMaskElement],
+        math: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement],
+        media: DetailedHTMLProps[MediaHTMLAttributes[HTMLMediaElement], HTMLMediaElement],
+        menclose: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement],
         menu: DetailedHTMLProps[MenuHTMLAttributes[HTMLElement], HTMLElement],
         menuitem: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        merror: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement],
         meta: DetailedHTMLProps[MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement],
         metadata: SVGProps[SVGMetadataElement],
         meter: DetailedHTMLProps[MeterHTMLAttributes[HTMLMeterElement], HTMLMeterElement],
+        mfenced: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement],
+        mfrac: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement],
+        mi: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement],
+        mmultiscripts: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement],
+        mn: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement],
+        mo: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement],
+        mover: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement],
+        mpadded: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement],
         mpath: SVGProps[SVGElement],
+        mphantom: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement],
+        mroot: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement],
+        mrow: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement],
+        ms: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement],
+        mspace: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement],
+        msqrt: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement],
+        mstyle: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement],
+        msub: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement],
+        msubsup: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement],
+        msup: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement],
+        mtable: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement],
+        mtd: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement],
+        mtext: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement],
+        mtr: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement],
+        munder: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement],
+        munderover: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement],
         nav: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
         noindex: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
         noscript: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
@@ -700,6 +788,7 @@ object global {
         script: DetailedHTMLProps[ScriptHTMLAttributes[HTMLScriptElement], HTMLScriptElement],
         section: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
         select: DetailedHTMLProps[SelectHTMLAttributes[HTMLSelectElement], HTMLSelectElement],
+        semantics: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement],
         slot: DetailedHTMLProps[SlotHTMLAttributes[HTMLSlotElement], HTMLSlotElement],
         small: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
         source: DetailedHTMLProps[SourceHTMLAttributes[HTMLSourceElement], HTMLSourceElement],
@@ -736,7 +825,7 @@ object global {
         view: SVGProps[SVGViewElement],
         wbr: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       ): IntrinsicElements = {
-        val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], abbr = abbr.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], animate = animate.asInstanceOf[js.Any], animateMotion = animateMotion.asInstanceOf[js.Any], animateTransform = animateTransform.asInstanceOf[js.Any], area = area.asInstanceOf[js.Any], article = article.asInstanceOf[js.Any], aside = aside.asInstanceOf[js.Any], audio = audio.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], bdi = bdi.asInstanceOf[js.Any], bdo = bdo.asInstanceOf[js.Any], big = big.asInstanceOf[js.Any], blockquote = blockquote.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], br = br.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], canvas = canvas.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], circle = circle.asInstanceOf[js.Any], cite = cite.asInstanceOf[js.Any], clipPath = clipPath.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], colgroup = colgroup.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], datalist = datalist.asInstanceOf[js.Any], dd = dd.asInstanceOf[js.Any], defs = defs.asInstanceOf[js.Any], del = del.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], dfn = dfn.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], div = div.asInstanceOf[js.Any], dl = dl.asInstanceOf[js.Any], dt = dt.asInstanceOf[js.Any], ellipse = ellipse.asInstanceOf[js.Any], em = em.asInstanceOf[js.Any], embed = embed.asInstanceOf[js.Any], feBlend = feBlend.asInstanceOf[js.Any], feColorMatrix = feColorMatrix.asInstanceOf[js.Any], feComponentTransfer = feComponentTransfer.asInstanceOf[js.Any], feComposite = feComposite.asInstanceOf[js.Any], feConvolveMatrix = feConvolveMatrix.asInstanceOf[js.Any], feDiffuseLighting = feDiffuseLighting.asInstanceOf[js.Any], feDisplacementMap = feDisplacementMap.asInstanceOf[js.Any], feDistantLight = feDistantLight.asInstanceOf[js.Any], feDropShadow = feDropShadow.asInstanceOf[js.Any], feFlood = feFlood.asInstanceOf[js.Any], feFuncA = feFuncA.asInstanceOf[js.Any], feFuncB = feFuncB.asInstanceOf[js.Any], feFuncG = feFuncG.asInstanceOf[js.Any], feFuncR = feFuncR.asInstanceOf[js.Any], feGaussianBlur = feGaussianBlur.asInstanceOf[js.Any], feImage = feImage.asInstanceOf[js.Any], feMerge = feMerge.asInstanceOf[js.Any], feMergeNode = feMergeNode.asInstanceOf[js.Any], feMorphology = feMorphology.asInstanceOf[js.Any], feOffset = feOffset.asInstanceOf[js.Any], fePointLight = fePointLight.asInstanceOf[js.Any], feSpecularLighting = feSpecularLighting.asInstanceOf[js.Any], feSpotLight = feSpotLight.asInstanceOf[js.Any], feTile = feTile.asInstanceOf[js.Any], feTurbulence = feTurbulence.asInstanceOf[js.Any], fieldset = fieldset.asInstanceOf[js.Any], figcaption = figcaption.asInstanceOf[js.Any], figure = figure.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], foreignObject = foreignObject.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], h1 = h1.asInstanceOf[js.Any], h2 = h2.asInstanceOf[js.Any], h3 = h3.asInstanceOf[js.Any], h4 = h4.asInstanceOf[js.Any], h5 = h5.asInstanceOf[js.Any], h6 = h6.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], hgroup = hgroup.asInstanceOf[js.Any], hr = hr.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], iframe = iframe.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], ins = ins.asInstanceOf[js.Any], kbd = kbd.asInstanceOf[js.Any], keygen = keygen.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], li = li.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], linearGradient = linearGradient.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], main = main.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], menuitem = menuitem.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], meter = meter.asInstanceOf[js.Any], mpath = mpath.asInstanceOf[js.Any], nav = nav.asInstanceOf[js.Any], noindex = noindex.asInstanceOf[js.Any], noscript = noscript.asInstanceOf[js.Any], ol = ol.asInstanceOf[js.Any], optgroup = optgroup.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], param = param.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any], polygon = polygon.asInstanceOf[js.Any], polyline = polyline.asInstanceOf[js.Any], pre = pre.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], radialGradient = radialGradient.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any], rp = rp.asInstanceOf[js.Any], rt = rt.asInstanceOf[js.Any], ruby = ruby.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], samp = samp.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any], strong = strong.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], sup = sup.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any], switch = switch.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], tbody = tbody.asInstanceOf[js.Any], td = td.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textPath = textPath.asInstanceOf[js.Any], textarea = textarea.asInstanceOf[js.Any], tfoot = tfoot.asInstanceOf[js.Any], th = th.asInstanceOf[js.Any], thead = thead.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], tr = tr.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any], tspan = tspan.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any], ul = ul.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], wbr = wbr.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], abbr = abbr.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], animate = animate.asInstanceOf[js.Any], animateMotion = animateMotion.asInstanceOf[js.Any], animateTransform = animateTransform.asInstanceOf[js.Any], area = area.asInstanceOf[js.Any], article = article.asInstanceOf[js.Any], aside = aside.asInstanceOf[js.Any], audio = audio.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], bdi = bdi.asInstanceOf[js.Any], bdo = bdo.asInstanceOf[js.Any], big = big.asInstanceOf[js.Any], blockquote = blockquote.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], br = br.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], canvas = canvas.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], circle = circle.asInstanceOf[js.Any], cite = cite.asInstanceOf[js.Any], clipPath = clipPath.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], colgroup = colgroup.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], datalist = datalist.asInstanceOf[js.Any], dd = dd.asInstanceOf[js.Any], defs = defs.asInstanceOf[js.Any], del = del.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], dfn = dfn.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], div = div.asInstanceOf[js.Any], dl = dl.asInstanceOf[js.Any], dt = dt.asInstanceOf[js.Any], ellipse = ellipse.asInstanceOf[js.Any], em = em.asInstanceOf[js.Any], embed = embed.asInstanceOf[js.Any], feBlend = feBlend.asInstanceOf[js.Any], feColorMatrix = feColorMatrix.asInstanceOf[js.Any], feComponentTransfer = feComponentTransfer.asInstanceOf[js.Any], feComposite = feComposite.asInstanceOf[js.Any], feConvolveMatrix = feConvolveMatrix.asInstanceOf[js.Any], feDiffuseLighting = feDiffuseLighting.asInstanceOf[js.Any], feDisplacementMap = feDisplacementMap.asInstanceOf[js.Any], feDistantLight = feDistantLight.asInstanceOf[js.Any], feDropShadow = feDropShadow.asInstanceOf[js.Any], feFlood = feFlood.asInstanceOf[js.Any], feFuncA = feFuncA.asInstanceOf[js.Any], feFuncB = feFuncB.asInstanceOf[js.Any], feFuncG = feFuncG.asInstanceOf[js.Any], feFuncR = feFuncR.asInstanceOf[js.Any], feGaussianBlur = feGaussianBlur.asInstanceOf[js.Any], feImage = feImage.asInstanceOf[js.Any], feMerge = feMerge.asInstanceOf[js.Any], feMergeNode = feMergeNode.asInstanceOf[js.Any], feMorphology = feMorphology.asInstanceOf[js.Any], feOffset = feOffset.asInstanceOf[js.Any], fePointLight = fePointLight.asInstanceOf[js.Any], feSpecularLighting = feSpecularLighting.asInstanceOf[js.Any], feSpotLight = feSpotLight.asInstanceOf[js.Any], feTile = feTile.asInstanceOf[js.Any], feTurbulence = feTurbulence.asInstanceOf[js.Any], fieldset = fieldset.asInstanceOf[js.Any], figcaption = figcaption.asInstanceOf[js.Any], figure = figure.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], foreignObject = foreignObject.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], h1 = h1.asInstanceOf[js.Any], h2 = h2.asInstanceOf[js.Any], h3 = h3.asInstanceOf[js.Any], h4 = h4.asInstanceOf[js.Any], h5 = h5.asInstanceOf[js.Any], h6 = h6.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], hgroup = hgroup.asInstanceOf[js.Any], hr = hr.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], iframe = iframe.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], ins = ins.asInstanceOf[js.Any], kbd = kbd.asInstanceOf[js.Any], keygen = keygen.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], li = li.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], linearGradient = linearGradient.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], maction = maction.asInstanceOf[js.Any], main = main.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], math = math.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any], menclose = menclose.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], menuitem = menuitem.asInstanceOf[js.Any], merror = merror.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], meter = meter.asInstanceOf[js.Any], mfenced = mfenced.asInstanceOf[js.Any], mfrac = mfrac.asInstanceOf[js.Any], mi = mi.asInstanceOf[js.Any], mmultiscripts = mmultiscripts.asInstanceOf[js.Any], mn = mn.asInstanceOf[js.Any], mo = mo.asInstanceOf[js.Any], mover = mover.asInstanceOf[js.Any], mpadded = mpadded.asInstanceOf[js.Any], mpath = mpath.asInstanceOf[js.Any], mphantom = mphantom.asInstanceOf[js.Any], mroot = mroot.asInstanceOf[js.Any], mrow = mrow.asInstanceOf[js.Any], ms = ms.asInstanceOf[js.Any], mspace = mspace.asInstanceOf[js.Any], msqrt = msqrt.asInstanceOf[js.Any], mstyle = mstyle.asInstanceOf[js.Any], msub = msub.asInstanceOf[js.Any], msubsup = msubsup.asInstanceOf[js.Any], msup = msup.asInstanceOf[js.Any], mtable = mtable.asInstanceOf[js.Any], mtd = mtd.asInstanceOf[js.Any], mtext = mtext.asInstanceOf[js.Any], mtr = mtr.asInstanceOf[js.Any], munder = munder.asInstanceOf[js.Any], munderover = munderover.asInstanceOf[js.Any], nav = nav.asInstanceOf[js.Any], noindex = noindex.asInstanceOf[js.Any], noscript = noscript.asInstanceOf[js.Any], ol = ol.asInstanceOf[js.Any], optgroup = optgroup.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], param = param.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any], polygon = polygon.asInstanceOf[js.Any], polyline = polyline.asInstanceOf[js.Any], pre = pre.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], radialGradient = radialGradient.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any], rp = rp.asInstanceOf[js.Any], rt = rt.asInstanceOf[js.Any], ruby = ruby.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], samp = samp.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], semantics = semantics.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any], strong = strong.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], sup = sup.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any], switch = switch.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], tbody = tbody.asInstanceOf[js.Any], td = td.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textPath = textPath.asInstanceOf[js.Any], textarea = textarea.asInstanceOf[js.Any], tfoot = tfoot.asInstanceOf[js.Any], th = th.asInstanceOf[js.Any], thead = thead.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], tr = tr.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any], tspan = tspan.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any], ul = ul.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], wbr = wbr.asInstanceOf[js.Any])
         __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
         __obj.updateDynamic("var")(`var`.asInstanceOf[js.Any])
         __obj.asInstanceOf[IntrinsicElements]
@@ -945,6 +1034,8 @@ object global {
         
         inline def setLink(value: DetailedHTMLProps[LinkHTMLAttributes[HTMLLinkElement], HTMLLinkElement]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
         
+        inline def setMaction(value: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]): Self = StObject.set(x, "maction", value.asInstanceOf[js.Any])
+        
         inline def setMain(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
         
         inline def setMap(value: DetailedHTMLProps[MapHTMLAttributes[HTMLMapElement], HTMLMapElement]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
@@ -955,9 +1046,17 @@ object global {
         
         inline def setMask(value: SVGProps[SVGMaskElement]): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
         
+        inline def setMath(value: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]): Self = StObject.set(x, "math", value.asInstanceOf[js.Any])
+        
+        inline def setMedia(value: DetailedHTMLProps[MediaHTMLAttributes[HTMLMediaElement], HTMLMediaElement]): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+        
+        inline def setMenclose(value: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]): Self = StObject.set(x, "menclose", value.asInstanceOf[js.Any])
+        
         inline def setMenu(value: DetailedHTMLProps[MenuHTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
         
         inline def setMenuitem(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "menuitem", value.asInstanceOf[js.Any])
+        
+        inline def setMerror(value: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]): Self = StObject.set(x, "merror", value.asInstanceOf[js.Any])
         
         inline def setMeta(value: DetailedHTMLProps[MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
         
@@ -965,7 +1064,55 @@ object global {
         
         inline def setMeter(value: DetailedHTMLProps[MeterHTMLAttributes[HTMLMeterElement], HTMLMeterElement]): Self = StObject.set(x, "meter", value.asInstanceOf[js.Any])
         
+        inline def setMfenced(value: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]): Self = StObject.set(x, "mfenced", value.asInstanceOf[js.Any])
+        
+        inline def setMfrac(value: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]): Self = StObject.set(x, "mfrac", value.asInstanceOf[js.Any])
+        
+        inline def setMi(value: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]): Self = StObject.set(x, "mi", value.asInstanceOf[js.Any])
+        
+        inline def setMmultiscripts(value: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]): Self = StObject.set(x, "mmultiscripts", value.asInstanceOf[js.Any])
+        
+        inline def setMn(value: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]): Self = StObject.set(x, "mn", value.asInstanceOf[js.Any])
+        
+        inline def setMo(value: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]): Self = StObject.set(x, "mo", value.asInstanceOf[js.Any])
+        
+        inline def setMover(value: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]): Self = StObject.set(x, "mover", value.asInstanceOf[js.Any])
+        
+        inline def setMpadded(value: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]): Self = StObject.set(x, "mpadded", value.asInstanceOf[js.Any])
+        
         inline def setMpath(value: SVGProps[SVGElement]): Self = StObject.set(x, "mpath", value.asInstanceOf[js.Any])
+        
+        inline def setMphantom(value: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]): Self = StObject.set(x, "mphantom", value.asInstanceOf[js.Any])
+        
+        inline def setMroot(value: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]): Self = StObject.set(x, "mroot", value.asInstanceOf[js.Any])
+        
+        inline def setMrow(value: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]): Self = StObject.set(x, "mrow", value.asInstanceOf[js.Any])
+        
+        inline def setMs(value: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]): Self = StObject.set(x, "ms", value.asInstanceOf[js.Any])
+        
+        inline def setMspace(value: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]): Self = StObject.set(x, "mspace", value.asInstanceOf[js.Any])
+        
+        inline def setMsqrt(value: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]): Self = StObject.set(x, "msqrt", value.asInstanceOf[js.Any])
+        
+        inline def setMstyle(value: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]): Self = StObject.set(x, "mstyle", value.asInstanceOf[js.Any])
+        
+        inline def setMsub(value: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]): Self = StObject.set(x, "msub", value.asInstanceOf[js.Any])
+        
+        inline def setMsubsup(value: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]): Self = StObject.set(x, "msubsup", value.asInstanceOf[js.Any])
+        
+        inline def setMsup(value: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]): Self = StObject.set(x, "msup", value.asInstanceOf[js.Any])
+        
+        inline def setMtable(value: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]): Self = StObject.set(x, "mtable", value.asInstanceOf[js.Any])
+        
+        inline def setMtd(value: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]): Self = StObject.set(x, "mtd", value.asInstanceOf[js.Any])
+        
+        inline def setMtext(value: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]): Self = StObject.set(x, "mtext", value.asInstanceOf[js.Any])
+        
+        inline def setMtr(value: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]): Self = StObject.set(x, "mtr", value.asInstanceOf[js.Any])
+        
+        inline def setMunder(value: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]): Self = StObject.set(x, "munder", value.asInstanceOf[js.Any])
+        
+        inline def setMunderover(value: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]): Self = StObject.set(x, "munderover", value.asInstanceOf[js.Any])
         
         inline def setNav(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "nav", value.asInstanceOf[js.Any])
         
@@ -1022,6 +1169,8 @@ object global {
         inline def setSection(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
         
         inline def setSelect(value: DetailedHTMLProps[SelectHTMLAttributes[HTMLSelectElement], HTMLSelectElement]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+        
+        inline def setSemantics(value: DetailedHTMLProps[HTMLAttributes[MathMLElement], MathMLElement]): Self = StObject.set(x, "semantics", value.asInstanceOf[js.Any])
         
         inline def setSlot(value: DetailedHTMLProps[SlotHTMLAttributes[HTMLSlotElement], HTMLSlotElement]): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
         

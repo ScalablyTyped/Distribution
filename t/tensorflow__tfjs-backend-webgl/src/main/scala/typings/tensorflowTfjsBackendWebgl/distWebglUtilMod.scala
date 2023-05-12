@@ -9,7 +9,7 @@ import typings.std.WebGLTexture
 import typings.std.WebGLUniformLocation
 import typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglInts.`1`
 import typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglInts.`2`
-import typings.tensorflowTfjsCore.distKernelRegistryMod.TensorInfo
+import typings.tensorflowTfjsCore.distTensorInfoMod.TensorInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

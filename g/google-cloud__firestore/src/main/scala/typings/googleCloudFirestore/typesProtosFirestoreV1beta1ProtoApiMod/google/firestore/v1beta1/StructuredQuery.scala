@@ -154,6 +154,7 @@ object StructuredQuery {
     /* Rewritten from type alias, can be one of: 
       - typings.googleCloudFirestore.googleCloudFirestoreStrings.OPERATOR_UNSPECIFIED
       - typings.googleCloudFirestore.googleCloudFirestoreStrings.AND
+      - typings.googleCloudFirestore.googleCloudFirestoreStrings.OR
     */
     trait Operator extends StObject
     object Operator {
@@ -161,6 +162,8 @@ object StructuredQuery {
       inline def AND: typings.googleCloudFirestore.googleCloudFirestoreStrings.AND = "AND".asInstanceOf[typings.googleCloudFirestore.googleCloudFirestoreStrings.AND]
       
       inline def OPERATOR_UNSPECIFIED: typings.googleCloudFirestore.googleCloudFirestoreStrings.OPERATOR_UNSPECIFIED = "OPERATOR_UNSPECIFIED".asInstanceOf[typings.googleCloudFirestore.googleCloudFirestoreStrings.OPERATOR_UNSPECIFIED]
+      
+      inline def OR: typings.googleCloudFirestore.googleCloudFirestoreStrings.OR = "OR".asInstanceOf[typings.googleCloudFirestore.googleCloudFirestoreStrings.OR]
     }
   }
   

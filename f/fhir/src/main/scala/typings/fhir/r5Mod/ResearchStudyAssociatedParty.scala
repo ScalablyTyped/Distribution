@@ -11,7 +11,7 @@ trait ResearchStudyAssociatedParty
   var _name: js.UndefOr[Element] = js.undefined
   
   /**
-    * Organisational type of association.
+    * A categorization other than role for the associated party.
     */
   var classifier: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
@@ -24,6 +24,11 @@ trait ResearchStudyAssociatedParty
     * Suggestions of a better attribute name are appreciated
     */
   var party: js.UndefOr[Reference] = js.undefined
+  
+  /**
+    * The cardinality is 0..* due to the fact that an associated party may be intermittently active in a given role over multiple time periods.
+    */
+  var period: js.UndefOr[js.Array[Period]] = js.undefined
   
   /**
     * Type of association.
@@ -53,6 +58,12 @@ object ResearchStudyAssociatedParty {
     inline def setParty(value: Reference): Self = StObject.set(x, "party", value.asInstanceOf[js.Any])
     
     inline def setPartyUndefined: Self = StObject.set(x, "party", js.undefined)
+    
+    inline def setPeriod(value: js.Array[Period]): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    
+    inline def setPeriodVarargs(value: Period*): Self = StObject.set(x, "period", js.Array(value*))
     
     inline def setRole(value: CodeableConcept): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,7 @@ object libIconsColumnWidthOutlinedMod extends Shortcut {
   @js.native
   trait ColumnWidthOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_ColumnWidthOutlinedIconType: String = js.native

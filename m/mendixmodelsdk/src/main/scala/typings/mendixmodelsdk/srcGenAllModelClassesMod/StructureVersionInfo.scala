@@ -14,12 +14,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.srcGenClientMod.StructureVersionInfo because Inheritance from two classes. Inlined 
 - typings.mendixmodelsdk.srcGenCodeactionsMod.StructureVersionInfo because Inheritance from two classes. Inlined 
 - typings.mendixmodelsdk.srcGenConstantsMod.StructureVersionInfo because Inheritance from two classes. Inlined 
+- typings.mendixmodelsdk.srcGenCustomiconsMod.StructureVersionInfo because Inheritance from two classes. Inlined 
 - typings.mendixmodelsdk.srcGenCustomwidgetsMod.StructureVersionInfo because Inheritance from two classes. Inlined 
 - typings.mendixmodelsdk.srcGenDatasetsMod.StructureVersionInfo because Inheritance from two classes. Inlined 
 - typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo because Inheritance from two classes. Inlined 
+- typings.mendixmodelsdk.srcGenDatabaseconnectorMod.StructureVersionInfo because Inheritance from two classes. Inlined 
 - typings.mendixmodelsdk.srcGenDocumenttemplatesMod.StructureVersionInfo because Inheritance from two classes. Inlined 
 - typings.mendixmodelsdk.srcGenDomainmodelsMod.StructureVersionInfo because Inheritance from two classes. Inlined 
 - typings.mendixmodelsdk.srcGenEnumerationsMod.StructureVersionInfo because Inheritance from two classes. Inlined 
+- typings.mendixmodelsdk.srcGenExceldataimporterMod.StructureVersionInfo because Inheritance from two classes. Inlined 
 - typings.mendixmodelsdk.srcGenExportmappingsMod.StructureVersionInfo because Inheritance from two classes. Inlined 
 - typings.mendixmodelsdk.srcGenExpressionsMod.StructureVersionInfo because Inheritance from two classes. Inlined 
 - typings.mendixmodelsdk.srcGenImagesMod.StructureVersionInfo because Inheritance from two classes. Inlined 

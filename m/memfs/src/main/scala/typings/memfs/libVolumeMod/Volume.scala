@@ -5,6 +5,8 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.NumberDictionary
 import typings.memfs.anon.Bigint
 import typings.memfs.anon.BigintThrowIfNoEntry
+import typings.memfs.anon.IMkdirOptionsrecursivefal
+import typings.memfs.anon.IMkdirOptionsrecursivetru
 import typings.memfs.anon.ThrowIfNoEntry
 import typings.memfs.anon.`0`
 import typings.memfs.anon.`1`
@@ -230,17 +232,25 @@ open class Volume () extends StObject {
   var maxFiles: Double = js.native
   
   def mkdir(path: PathLike, callback: TCallback[Unit]): Any = js.native
-  def mkdir(path: PathLike, mode: IMkdirOptions, callback: TCallback[Unit]): Any = js.native
-  def mkdir(path: PathLike, mode: TMode, callback: TCallback[Unit]): Any = js.native
+  def mkdir(path: PathLike, mode: IMkdirOptionsrecursivefal, callback: TCallback[Unit]): Any = js.native
+  def mkdir(path: PathLike, mode: IMkdirOptionsrecursivetru, callback: TCallback[String]): Any = js.native
+  def mkdir(path: PathLike, mode: IMkdirOptions, callback: TCallback[String]): Any = js.native
+  def mkdir(path: PathLike, mode: TMode, callback: TCallback[String | Unit]): Any = js.native
   
   /* private */ var mkdirBase: Any = js.native
   
-  def mkdirSync(path: PathLike): Unit = js.native
-  def mkdirSync(path: PathLike, options: IMkdirOptions): Unit = js.native
-  def mkdirSync(path: PathLike, options: TMode): Unit = js.native
+  def mkdirSync(path: PathLike): js.UndefOr[String] = js.native
+  def mkdirSync(path: PathLike, options: IMkdirOptionsrecursivefal): Unit = js.native
+  def mkdirSync(path: PathLike, options: IMkdirOptionsrecursivetru): js.UndefOr[String] = js.native
+  def mkdirSync(path: PathLike, options: IMkdirOptions): js.UndefOr[String] = js.native
+  def mkdirSync(path: PathLike, options: TMode): js.UndefOr[String] = js.native
+  @JSName("mkdirSync")
+  def mkdirSync_Unit(path: PathLike): Unit = js.native
+  @JSName("mkdirSync")
+  def mkdirSync_Unit(path: PathLike, options: TMode): Unit = js.native
   
-  def mkdirp(path: PathLike, callback: TCallback[Unit]): Any = js.native
-  def mkdirp(path: PathLike, mode: TMode, callback: TCallback[Unit]): Any = js.native
+  def mkdirp(path: PathLike, callback: TCallback[String]): Any = js.native
+  def mkdirp(path: PathLike, mode: TMode, callback: TCallback[String]): Any = js.native
   
   /**
     * Creates directory tree recursively.
@@ -249,8 +259,8 @@ open class Volume () extends StObject {
     */
   /* private */ var mkdirpBase: Any = js.native
   
-  def mkdirpSync(path: PathLike): Unit = js.native
-  def mkdirpSync(path: PathLike, mode: TMode): Unit = js.native
+  def mkdirpSync(path: PathLike): js.UndefOr[String] = js.native
+  def mkdirpSync(path: PathLike, mode: TMode): js.UndefOr[String] = js.native
   
   def mkdtemp(prefix: String, callback: TCallback[Unit]): Any = js.native
   def mkdtemp(prefix: String, options: IOptions, callback: TCallback[Unit]): Any = js.native

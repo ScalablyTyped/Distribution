@@ -16,7 +16,7 @@ object libIconsControlOutlinedMod extends Shortcut {
   @js.native
   trait ControlOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_ControlOutlinedIconType: String = js.native

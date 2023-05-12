@@ -8,11 +8,11 @@ trait TypeofSubscriptionSchedulDefaultSettings extends StObject {
   
   val DefaultSettings: Any
   
-  val Phase: TypeofPhaseAddInvoiceItem
+  val Phase: TypeofPhaseItem
 }
 object TypeofSubscriptionSchedulDefaultSettings {
   
-  inline def apply(DefaultSettings: Any, Phase: TypeofPhaseAddInvoiceItem): TypeofSubscriptionSchedulDefaultSettings = {
+  inline def apply(DefaultSettings: Any, Phase: TypeofPhaseItem): TypeofSubscriptionSchedulDefaultSettings = {
     val __obj = js.Dynamic.literal(DefaultSettings = DefaultSettings.asInstanceOf[js.Any], Phase = Phase.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofSubscriptionSchedulDefaultSettings]
   }
@@ -22,6 +22,6 @@ object TypeofSubscriptionSchedulDefaultSettings {
     
     inline def setDefaultSettings(value: Any): Self = StObject.set(x, "DefaultSettings", value.asInstanceOf[js.Any])
     
-    inline def setPhase(value: TypeofPhaseAddInvoiceItem): Self = StObject.set(x, "Phase", value.asInstanceOf[js.Any])
+    inline def setPhase(value: TypeofPhaseItem): Self = StObject.set(x, "Phase", value.asInstanceOf[js.Any])
   }
 }

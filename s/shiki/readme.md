@@ -1,7 +1,7 @@
 
 # Scala.js typings for shiki
 
-Typings are for version 0.11.1
+Typings are for version 0.14.2
 
 ## Library description:
 shiki

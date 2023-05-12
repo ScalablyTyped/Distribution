@@ -16,7 +16,7 @@ object typesCreateMatcherAssertMethodExistsMod {
     * @param {string} methodPath The name of the method to use for error messages
     * @throws {TypeError} When the method doesn't exist
     */
-  inline def apply(value: Any, method: String, name: scala.Nothing, methodPath: String): Unit = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], method.asInstanceOf[js.Any], name.asInstanceOf[js.Any], methodPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(value: Any, method: String, name: Unit, methodPath: String): Unit = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], method.asInstanceOf[js.Any], name.asInstanceOf[js.Any], methodPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("@sinonjs/samsam/types/create-matcher/assert-method-exists", JSImport.Namespace)
   @js.native

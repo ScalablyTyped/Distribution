@@ -1,9 +1,12 @@
 package typings.rcPicker
 
 import typings.rcPicker.esGenerateMod.GenerateConfig
+import typings.rcPicker.esInterfaceMod.CellRender
+import typings.rcPicker.esInterfaceMod.CellRenderInfo
 import typings.rcPicker.esInterfaceMod.Components
 import typings.rcPicker.esInterfaceMod.DisabledTime
 import typings.rcPicker.esInterfaceMod.DisabledTimes
+import typings.rcPicker.esInterfaceMod.IntRange
 import typings.rcPicker.esInterfaceMod.Locale
 import typings.rcPicker.esInterfaceMod.OnPanelChange
 import typings.rcPicker.esInterfaceMod.PanelMode
@@ -11,6 +14,9 @@ import typings.rcPicker.esInterfaceMod.PickerMode
 import typings.rcPicker.esPanelsDatePanelDateBodyMod.DateRender
 import typings.rcPicker.esPanelsMonthPanelMonthBodyMod.MonthCellRender
 import typings.rcPicker.esPanelsTimePanelMod.SharedTimeProps
+import typings.rcPicker.rcPickerInts.`1`
+import typings.rcPicker.rcPickerInts.`23`
+import typings.rcPicker.rcPickerInts.`59`
 import typings.rcPicker.rcPickerStrings.date
 import typings.rcPicker.rcPickerStrings.ltr
 import typings.rcPicker.rcPickerStrings.rtl
@@ -129,11 +135,14 @@ object esPickerPanelMod {
   
   trait PickerPanelSharedProps[DateType] extends StObject {
     
+    var cellRender: js.UndefOr[CellRender[DateType, DateType]] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     /** @private Internal usage. Do not use in your production env */
     var components: js.UndefOr[Components] = js.undefined
     
+    /** @deprecated use cellRender instead of dateRender */
     var dateRender: js.UndefOr[DateRender[DateType]] = js.undefined
     
     /** [Legacy] Set default display picker view date */
@@ -152,9 +161,10 @@ object esPickerPanelMod {
     
     var locale: Locale
     
-    /** @deprecated Will be removed in next big version. Please use `mode` instead */
+    /** @deprecated Will be removed in next big version. Please use `picker` instead */
     var mode: js.UndefOr[PanelMode] = js.undefined
     
+    /** @deprecated use cellRender instead of monthCellRender */
     var monthCellRender: js.UndefOr[MonthCellRender[DateType]] = js.undefined
     
     var onChange: js.UndefOr[js.Function1[/* value */ DateType, Unit]] = js.undefined
@@ -192,6 +202,10 @@ object esPickerPanelMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: PickerPanelSharedProps[?], DateType] (val x: Self & PickerPanelSharedProps[DateType]) extends AnyVal {
+      
+      inline def setCellRender(value: (DateType, /* info */ CellRenderInfo[DateType]) => ReactNode): Self = StObject.set(x, "cellRender", js.Any.fromFunction2(value))
+      
+      inline def setCellRenderUndefined: Self = StObject.set(x, "cellRender", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -295,6 +309,9 @@ object esPickerPanelMod {
        with PickerPanelSharedProps[DateType]
        with PickerPanelProps[DateType] {
     
+    @JSName("cellRender")
+    var cellRender_PickerPanelTimeProps: js.UndefOr[CellRender[DateType, Double]] = js.undefined
+    
     /** @deprecated Please use `disabledTime` instead. */
     var disabledHours: js.UndefOr[js.Function0[js.Array[Double]]] = js.undefined
     
@@ -310,13 +327,13 @@ object esPickerPanelMod {
     
     var hideDisabledOptions: js.UndefOr[Boolean] = js.undefined
     
-    var hourStep: js.UndefOr[Double] = js.undefined
+    var hourStep: js.UndefOr[IntRange[`1`, `23`]] = js.undefined
     
-    var minuteStep: js.UndefOr[Double] = js.undefined
+    var minuteStep: js.UndefOr[IntRange[`1`, `59`]] = js.undefined
     
     var picker: time
     
-    var secondStep: js.UndefOr[Double] = js.undefined
+    var secondStep: js.UndefOr[IntRange[`1`, `59`]] = js.undefined
     
     var showHour: js.UndefOr[Boolean] = js.undefined
     
@@ -337,6 +354,10 @@ object esPickerPanelMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: PickerPanelTimeProps[?], DateType] (val x: Self & PickerPanelTimeProps[DateType]) extends AnyVal {
+      
+      inline def setCellRender(value: (Double, /* info */ CellRenderInfo[DateType]) => ReactNode): Self = StObject.set(x, "cellRender", js.Any.fromFunction2(value))
+      
+      inline def setCellRenderUndefined: Self = StObject.set(x, "cellRender", js.undefined)
       
       inline def setDisabledHours(value: () => js.Array[Double]): Self = StObject.set(x, "disabledHours", js.Any.fromFunction0(value))
       
@@ -362,17 +383,17 @@ object esPickerPanelMod {
       
       inline def setHideDisabledOptionsUndefined: Self = StObject.set(x, "hideDisabledOptions", js.undefined)
       
-      inline def setHourStep(value: Double): Self = StObject.set(x, "hourStep", value.asInstanceOf[js.Any])
+      inline def setHourStep(value: IntRange[`1`, `23`]): Self = StObject.set(x, "hourStep", value.asInstanceOf[js.Any])
       
       inline def setHourStepUndefined: Self = StObject.set(x, "hourStep", js.undefined)
       
-      inline def setMinuteStep(value: Double): Self = StObject.set(x, "minuteStep", value.asInstanceOf[js.Any])
+      inline def setMinuteStep(value: IntRange[`1`, `59`]): Self = StObject.set(x, "minuteStep", value.asInstanceOf[js.Any])
       
       inline def setMinuteStepUndefined: Self = StObject.set(x, "minuteStep", js.undefined)
       
       inline def setPicker(value: time): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
       
-      inline def setSecondStep(value: Double): Self = StObject.set(x, "secondStep", value.asInstanceOf[js.Any])
+      inline def setSecondStep(value: IntRange[`1`, `59`]): Self = StObject.set(x, "secondStep", value.asInstanceOf[js.Any])
       
       inline def setSecondStepUndefined: Self = StObject.set(x, "secondStep", js.undefined)
       

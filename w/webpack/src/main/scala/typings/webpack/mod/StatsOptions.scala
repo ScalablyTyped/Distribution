@@ -169,6 +169,11 @@ trait StatsOptions
   var errorsCount: js.UndefOr[Boolean] = js.undefined
   
   /**
+  	 * Space to display errors (value is in number of lines).
+  	 */
+  var errorsSpace: js.UndefOr[Double] = js.undefined
+  
+  /**
   	 * Please use excludeModules instead.
   	 */
   var exclude: js.UndefOr[
@@ -417,6 +422,11 @@ trait StatsOptions
   var warningsFilter: js.UndefOr[
     String | js.RegExp | js.Array[WarningFilterItemTypes] | (js.Function2[/* warning */ StatsError, /* value */ String, Boolean])
   ] = js.undefined
+  
+  /**
+  	 * Space to display warnings (value is in number of lines).
+  	 */
+  var warningsSpace: js.UndefOr[Double] = js.undefined
 }
 object StatsOptions {
   
@@ -541,6 +551,10 @@ object StatsOptions {
     inline def setErrorsCount(value: Boolean): Self = StObject.set(x, "errorsCount", value.asInstanceOf[js.Any])
     
     inline def setErrorsCountUndefined: Self = StObject.set(x, "errorsCount", js.undefined)
+    
+    inline def setErrorsSpace(value: Double): Self = StObject.set(x, "errorsSpace", value.asInstanceOf[js.Any])
+    
+    inline def setErrorsSpaceUndefined: Self = StObject.set(x, "errorsSpace", js.undefined)
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
@@ -769,6 +783,10 @@ object StatsOptions {
     inline def setWarningsFilterUndefined: Self = StObject.set(x, "warningsFilter", js.undefined)
     
     inline def setWarningsFilterVarargs(value: WarningFilterItemTypes*): Self = StObject.set(x, "warningsFilter", js.Array(value*))
+    
+    inline def setWarningsSpace(value: Double): Self = StObject.set(x, "warningsSpace", value.asInstanceOf[js.Any])
+    
+    inline def setWarningsSpaceUndefined: Self = StObject.set(x, "warningsSpace", js.undefined)
     
     inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
   }

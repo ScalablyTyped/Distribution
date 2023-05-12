@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListApplicationsResponse extends StObject {
   
   /**
-    * Returns a list of summary details for all the applications in an environment.
+    * Returns a list of summary details for all the applications in a runtime environment.
     */
   var applications: ApplicationSummaryList
   

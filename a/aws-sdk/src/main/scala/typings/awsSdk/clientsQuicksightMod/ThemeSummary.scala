@@ -34,7 +34,7 @@ trait ThemeSummary extends StObject {
   /**
     * The ID of the theme. This ID is unique per Amazon Web Services Region for each Amazon Web Services account.
     */
-  var ThemeId: js.UndefOr[RestrictiveResourceId] = js.undefined
+  var ThemeId: js.UndefOr[ShortRestrictiveResourceId] = js.undefined
 }
 object ThemeSummary {
   
@@ -66,7 +66,7 @@ object ThemeSummary {
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    inline def setThemeId(value: RestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
+    inline def setThemeId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
     
     inline def setThemeIdUndefined: Self = StObject.set(x, "ThemeId", js.undefined)
   }

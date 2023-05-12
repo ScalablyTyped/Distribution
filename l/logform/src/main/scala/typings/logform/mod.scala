@@ -431,28 +431,14 @@ object mod {
     TransformableInfo | Boolean
   ]
   
+  @js.native
   trait TransformableInfo
     extends StObject
        with /* key */ StringDictionary[Any] {
     
-    var level: String
+    var level: String = js.native
     
-    var message: Any
-  }
-  object TransformableInfo {
-    
-    inline def apply(level: String, message: Any): TransformableInfo = {
-      val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-      __obj.asInstanceOf[TransformableInfo]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: TransformableInfo] (val x: Self) extends AnyVal {
-      
-      inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
-      
-      inline def setMessage(value: Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
-    }
+    var message: Any = js.native
   }
   
   trait UncolorizeOptions extends StObject {

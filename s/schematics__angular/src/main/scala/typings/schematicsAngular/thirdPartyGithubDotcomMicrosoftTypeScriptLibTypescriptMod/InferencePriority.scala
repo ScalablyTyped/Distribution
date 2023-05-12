@@ -68,6 +68,12 @@ object InferencePriority extends StObject {
   /* 512 */ val NoConstraints: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.InferencePriority.NoConstraints & Double = js.native
   
   @js.native
+  sealed trait None
+    extends StObject
+       with InferencePriority
+  /* 0 */ val None: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.InferencePriority.None & Double = js.native
+  
+  @js.native
   sealed trait PartialHomomorphicMappedType
     extends StObject
        with InferencePriority

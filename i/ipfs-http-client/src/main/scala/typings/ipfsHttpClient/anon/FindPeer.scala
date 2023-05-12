@@ -40,11 +40,11 @@ trait FindPeer extends StObject {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.QueryEvent */ Any
   ] = js.native
   
-  def provide(cids: CID[Any, Double, Double, Version]): AsyncIterable[
+  def provide(cid: CID[Any, Double, Double, Version]): AsyncIterable[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.QueryEvent */ Any
   ] = js.native
   def provide(
-    cids: CID[Any, Double, Double, Version],
+    cid: CID[Any, Double, Double, Version],
     options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.DHTProvideOptions */ Any) & HTTPClientExtraOptions
   ): AsyncIterable[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.QueryEvent */ Any

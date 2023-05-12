@@ -201,6 +201,100 @@ import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-success`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-warning`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-card`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-blue-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-blue-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-blue-bolder-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-blue-bolder`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-blue-boldest-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-blue-boldest`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-brand-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-brand`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-1-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-1`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-2-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-2`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-3-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-3`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-4-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-4`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-5-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-5`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-6-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-6`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-7-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-7`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-8-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-8`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-danger-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-danger-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-danger-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-danger`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-discovery-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-discovery-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-discovery-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-discovery`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-gray-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-gray-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-gray-bolder-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-gray-bolder`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-gray-boldest-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-gray-boldest`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-green-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-green-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-green-bolder-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-green-bolder`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-green-boldest-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-green-boldest`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-information-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-information-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-information-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-information`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-magenta-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-magenta-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-magenta-bolder-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-magenta-bolder`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-magenta-boldest-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-magenta-boldest`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-neutral-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-neutral`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-orange-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-orange-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-orange-bolder-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-orange-bolder`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-orange-boldest-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-orange-boldest`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-purple-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-purple-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-purple-bolder-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-purple-bolder`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-purple-boldest-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-purple-boldest`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-red-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-red-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-red-bolder-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-red-bolder`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-red-boldest-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-red-boldest`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-success-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-success-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-success-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-success`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-teal-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-teal-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-teal-bolder-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-teal-bolder`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-teal-boldest-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-teal-boldest`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-warning-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-warning-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-warning-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-warning`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-yellow-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-yellow-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-yellow-bolder-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-yellow-bolder`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-yellow-boldest-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-yellow-boldest`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon-accent-blue`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon-accent-gray`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon-accent-green`
@@ -238,6 +332,8 @@ import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-opacity-loading`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-overlay-hover`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-overlay-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-overlay`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-shadow-overflow-perimeter`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-shadow-overflow-spread`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-shadow-overflow`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-shadow-overlay`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-shadow-raised`
@@ -1091,6 +1187,382 @@ object distTypesArtifactsTypescriptAtlassianLightTokenNamesMod {
     @js.native
     val colorBorderWarning: `--ds-border-warning` = js.native
     
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.blue.bold")
+    @js.native
+    val colorChartBlueBold: `--ds-chart-blue-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.blue.bold.hovered")
+    @js.native
+    val colorChartBlueBoldHovered: `--ds-chart-blue-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.blue.bolder")
+    @js.native
+    val colorChartBlueBolder: `--ds-chart-blue-bolder` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.blue.bolder.hovered")
+    @js.native
+    val colorChartBlueBolderHovered: `--ds-chart-blue-bolder-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.blue.boldest")
+    @js.native
+    val colorChartBlueBoldest: `--ds-chart-blue-boldest` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.blue.boldest.hovered")
+    @js.native
+    val colorChartBlueBoldestHovered: `--ds-chart-blue-boldest-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.brand")
+    @js.native
+    val colorChartBrand: `--ds-chart-brand` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.brand.hovered")
+    @js.native
+    val colorChartBrandHovered: `--ds-chart-brand-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.categorical.1")
+    @js.native
+    val colorChartCategorical1: `--ds-chart-categorical-1` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.categorical.1.hovered")
+    @js.native
+    val colorChartCategorical1Hovered: `--ds-chart-categorical-1-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.categorical.2")
+    @js.native
+    val colorChartCategorical2: `--ds-chart-categorical-2` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.categorical.2.hovered")
+    @js.native
+    val colorChartCategorical2Hovered: `--ds-chart-categorical-2-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.categorical.3")
+    @js.native
+    val colorChartCategorical3: `--ds-chart-categorical-3` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.categorical.3.hovered")
+    @js.native
+    val colorChartCategorical3Hovered: `--ds-chart-categorical-3-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.categorical.4")
+    @js.native
+    val colorChartCategorical4: `--ds-chart-categorical-4` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.categorical.4.hovered")
+    @js.native
+    val colorChartCategorical4Hovered: `--ds-chart-categorical-4-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.categorical.5")
+    @js.native
+    val colorChartCategorical5: `--ds-chart-categorical-5` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.categorical.5.hovered")
+    @js.native
+    val colorChartCategorical5Hovered: `--ds-chart-categorical-5-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.categorical.6")
+    @js.native
+    val colorChartCategorical6: `--ds-chart-categorical-6` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.categorical.6.hovered")
+    @js.native
+    val colorChartCategorical6Hovered: `--ds-chart-categorical-6-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.categorical.7")
+    @js.native
+    val colorChartCategorical7: `--ds-chart-categorical-7` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.categorical.7.hovered")
+    @js.native
+    val colorChartCategorical7Hovered: `--ds-chart-categorical-7-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.categorical.8")
+    @js.native
+    val colorChartCategorical8: `--ds-chart-categorical-8` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.categorical.8.hovered")
+    @js.native
+    val colorChartCategorical8Hovered: `--ds-chart-categorical-8-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.danger")
+    @js.native
+    val colorChartDanger: `--ds-chart-danger` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.danger.bold")
+    @js.native
+    val colorChartDangerBold: `--ds-chart-danger-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.danger.bold.hovered")
+    @js.native
+    val colorChartDangerBoldHovered: `--ds-chart-danger-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.danger.hovered")
+    @js.native
+    val colorChartDangerHovered: `--ds-chart-danger-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.discovery")
+    @js.native
+    val colorChartDiscovery: `--ds-chart-discovery` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.discovery.bold")
+    @js.native
+    val colorChartDiscoveryBold: `--ds-chart-discovery-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.discovery.bold.hovered")
+    @js.native
+    val colorChartDiscoveryBoldHovered: `--ds-chart-discovery-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.discovery.hovered")
+    @js.native
+    val colorChartDiscoveryHovered: `--ds-chart-discovery-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.gray.bold")
+    @js.native
+    val colorChartGrayBold: `--ds-chart-gray-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.gray.bold.hovered")
+    @js.native
+    val colorChartGrayBoldHovered: `--ds-chart-gray-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.gray.bolder")
+    @js.native
+    val colorChartGrayBolder: `--ds-chart-gray-bolder` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.gray.bolder.hovered")
+    @js.native
+    val colorChartGrayBolderHovered: `--ds-chart-gray-bolder-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.gray.boldest")
+    @js.native
+    val colorChartGrayBoldest: `--ds-chart-gray-boldest` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.gray.boldest.hovered")
+    @js.native
+    val colorChartGrayBoldestHovered: `--ds-chart-gray-boldest-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.green.bold")
+    @js.native
+    val colorChartGreenBold: `--ds-chart-green-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.green.bold.hovered")
+    @js.native
+    val colorChartGreenBoldHovered: `--ds-chart-green-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.green.bolder")
+    @js.native
+    val colorChartGreenBolder: `--ds-chart-green-bolder` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.green.bolder.hovered")
+    @js.native
+    val colorChartGreenBolderHovered: `--ds-chart-green-bolder-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.green.boldest")
+    @js.native
+    val colorChartGreenBoldest: `--ds-chart-green-boldest` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.green.boldest.hovered")
+    @js.native
+    val colorChartGreenBoldestHovered: `--ds-chart-green-boldest-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.information")
+    @js.native
+    val colorChartInformation: `--ds-chart-information` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.information.bold")
+    @js.native
+    val colorChartInformationBold: `--ds-chart-information-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.information.bold.hovered")
+    @js.native
+    val colorChartInformationBoldHovered: `--ds-chart-information-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.information.hovered")
+    @js.native
+    val colorChartInformationHovered: `--ds-chart-information-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.magenta.bold")
+    @js.native
+    val colorChartMagentaBold: `--ds-chart-magenta-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.magenta.bold.hovered")
+    @js.native
+    val colorChartMagentaBoldHovered: `--ds-chart-magenta-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.magenta.bolder")
+    @js.native
+    val colorChartMagentaBolder: `--ds-chart-magenta-bolder` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.magenta.bolder.hovered")
+    @js.native
+    val colorChartMagentaBolderHovered: `--ds-chart-magenta-bolder-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.magenta.boldest")
+    @js.native
+    val colorChartMagentaBoldest: `--ds-chart-magenta-boldest` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.magenta.boldest.hovered")
+    @js.native
+    val colorChartMagentaBoldestHovered: `--ds-chart-magenta-boldest-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.neutral")
+    @js.native
+    val colorChartNeutral: `--ds-chart-neutral` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.neutral.hovered")
+    @js.native
+    val colorChartNeutralHovered: `--ds-chart-neutral-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.orange.bold")
+    @js.native
+    val colorChartOrangeBold: `--ds-chart-orange-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.orange.bold.hovered")
+    @js.native
+    val colorChartOrangeBoldHovered: `--ds-chart-orange-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.orange.bolder")
+    @js.native
+    val colorChartOrangeBolder: `--ds-chart-orange-bolder` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.orange.bolder.hovered")
+    @js.native
+    val colorChartOrangeBolderHovered: `--ds-chart-orange-bolder-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.orange.boldest")
+    @js.native
+    val colorChartOrangeBoldest: `--ds-chart-orange-boldest` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.orange.boldest.hovered")
+    @js.native
+    val colorChartOrangeBoldestHovered: `--ds-chart-orange-boldest-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.purple.bold")
+    @js.native
+    val colorChartPurpleBold: `--ds-chart-purple-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.purple.bold.hovered")
+    @js.native
+    val colorChartPurpleBoldHovered: `--ds-chart-purple-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.purple.bolder")
+    @js.native
+    val colorChartPurpleBolder: `--ds-chart-purple-bolder` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.purple.bolder.hovered")
+    @js.native
+    val colorChartPurpleBolderHovered: `--ds-chart-purple-bolder-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.purple.boldest")
+    @js.native
+    val colorChartPurpleBoldest: `--ds-chart-purple-boldest` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.purple.boldest.hovered")
+    @js.native
+    val colorChartPurpleBoldestHovered: `--ds-chart-purple-boldest-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.red.bold")
+    @js.native
+    val colorChartRedBold: `--ds-chart-red-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.red.bold.hovered")
+    @js.native
+    val colorChartRedBoldHovered: `--ds-chart-red-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.red.bolder")
+    @js.native
+    val colorChartRedBolder: `--ds-chart-red-bolder` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.red.bolder.hovered")
+    @js.native
+    val colorChartRedBolderHovered: `--ds-chart-red-bolder-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.red.boldest")
+    @js.native
+    val colorChartRedBoldest: `--ds-chart-red-boldest` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.red.boldest.hovered")
+    @js.native
+    val colorChartRedBoldestHovered: `--ds-chart-red-boldest-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.success")
+    @js.native
+    val colorChartSuccess: `--ds-chart-success` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.success.bold")
+    @js.native
+    val colorChartSuccessBold: `--ds-chart-success-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.success.bold.hovered")
+    @js.native
+    val colorChartSuccessBoldHovered: `--ds-chart-success-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.success.hovered")
+    @js.native
+    val colorChartSuccessHovered: `--ds-chart-success-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.teal.bold")
+    @js.native
+    val colorChartTealBold: `--ds-chart-teal-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.teal.bold.hovered")
+    @js.native
+    val colorChartTealBoldHovered: `--ds-chart-teal-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.teal.bolder")
+    @js.native
+    val colorChartTealBolder: `--ds-chart-teal-bolder` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.teal.bolder.hovered")
+    @js.native
+    val colorChartTealBolderHovered: `--ds-chart-teal-bolder-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.teal.boldest")
+    @js.native
+    val colorChartTealBoldest: `--ds-chart-teal-boldest` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.teal.boldest.hovered")
+    @js.native
+    val colorChartTealBoldestHovered: `--ds-chart-teal-boldest-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.warning")
+    @js.native
+    val colorChartWarning: `--ds-chart-warning` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.warning.bold")
+    @js.native
+    val colorChartWarningBold: `--ds-chart-warning-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.warning.bold.hovered")
+    @js.native
+    val colorChartWarningBoldHovered: `--ds-chart-warning-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.warning.hovered")
+    @js.native
+    val colorChartWarningHovered: `--ds-chart-warning-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.yellow.bold")
+    @js.native
+    val colorChartYellowBold: `--ds-chart-yellow-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.yellow.bold.hovered")
+    @js.native
+    val colorChartYellowBoldHovered: `--ds-chart-yellow-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.yellow.bolder")
+    @js.native
+    val colorChartYellowBolder: `--ds-chart-yellow-bolder` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.yellow.bolder.hovered")
+    @js.native
+    val colorChartYellowBolderHovered: `--ds-chart-yellow-bolder-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.yellow.boldest")
+    @js.native
+    val colorChartYellowBoldest: `--ds-chart-yellow-boldest` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.chart.yellow.boldest.hovered")
+    @js.native
+    val colorChartYellowBoldestHovered: `--ds-chart-yellow-boldest-hovered` = js.native
+    
     @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.color.icon")
     @js.native
     val colorIcon: `--ds-icon` = js.native
@@ -1390,6 +1862,14 @@ object distTypesArtifactsTypescriptAtlassianLightTokenNamesMod {
     @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.elevation.shadow.overflow")
     @js.native
     val elevationShadowOverflow: `--ds-shadow-overflow` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.elevation.shadow.overflow.perimeter")
+    @js.native
+    val elevationShadowOverflowPerimeter: `--ds-shadow-overflow-perimeter` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.elevation.shadow.overflow.spread")
+    @js.native
+    val elevationShadowOverflowSpread: `--ds-shadow-overflow-spread` = js.native
     
     @JSImport("@atlaskit/tokens/dist/types/artifacts/typescript/atlassian-light-token-names", "default.elevation.shadow.overlay")
     @js.native
@@ -2060,6 +2540,288 @@ object distTypesArtifactsTypescriptAtlassianLightTokenNamesMod {
     @JSName("color.border.warning")
     var colorDotborderDotwarning: /* var(--ds-border-warning) */ String
     
+    @JSName("color.chart.blue.bold")
+    var colorDotchartDotblueDotbold: /* var(--ds-chart-blue-bold) */ String
+    
+    @JSName("color.chart.blue.bold.hovered")
+    var colorDotchartDotblueDotboldDothovered: /* var(--ds-chart-blue-bold-hovered) */ String
+    
+    @JSName("color.chart.blue.bolder")
+    var colorDotchartDotblueDotbolder: /* var(--ds-chart-blue-bolder) */ String
+    
+    @JSName("color.chart.blue.bolder.hovered")
+    var colorDotchartDotblueDotbolderDothovered: /* var(--ds-chart-blue-bolder-hovered) */ String
+    
+    @JSName("color.chart.blue.boldest")
+    var colorDotchartDotblueDotboldest: /* var(--ds-chart-blue-boldest) */ String
+    
+    @JSName("color.chart.blue.boldest.hovered")
+    var colorDotchartDotblueDotboldestDothovered: /* var(--ds-chart-blue-boldest-hovered) */ String
+    
+    @JSName("color.chart.brand")
+    var colorDotchartDotbrand: /* var(--ds-chart-brand) */ String
+    
+    @JSName("color.chart.brand.hovered")
+    var colorDotchartDotbrandDothovered: /* var(--ds-chart-brand-hovered) */ String
+    
+    @JSName("color.chart.categorical.1")
+    var colorDotchartDotcategoricalDot1: /* var(--ds-chart-categorical-1) */ String
+    
+    @JSName("color.chart.categorical.1.hovered")
+    var colorDotchartDotcategoricalDot1Dothovered: /* var(--ds-chart-categorical-1-hovered) */ String
+    
+    @JSName("color.chart.categorical.2")
+    var colorDotchartDotcategoricalDot2: /* var(--ds-chart-categorical-2) */ String
+    
+    @JSName("color.chart.categorical.2.hovered")
+    var colorDotchartDotcategoricalDot2Dothovered: /* var(--ds-chart-categorical-2-hovered) */ String
+    
+    @JSName("color.chart.categorical.3")
+    var colorDotchartDotcategoricalDot3: /* var(--ds-chart-categorical-3) */ String
+    
+    @JSName("color.chart.categorical.3.hovered")
+    var colorDotchartDotcategoricalDot3Dothovered: /* var(--ds-chart-categorical-3-hovered) */ String
+    
+    @JSName("color.chart.categorical.4")
+    var colorDotchartDotcategoricalDot4: /* var(--ds-chart-categorical-4) */ String
+    
+    @JSName("color.chart.categorical.4.hovered")
+    var colorDotchartDotcategoricalDot4Dothovered: /* var(--ds-chart-categorical-4-hovered) */ String
+    
+    @JSName("color.chart.categorical.5")
+    var colorDotchartDotcategoricalDot5: /* var(--ds-chart-categorical-5) */ String
+    
+    @JSName("color.chart.categorical.5.hovered")
+    var colorDotchartDotcategoricalDot5Dothovered: /* var(--ds-chart-categorical-5-hovered) */ String
+    
+    @JSName("color.chart.categorical.6")
+    var colorDotchartDotcategoricalDot6: /* var(--ds-chart-categorical-6) */ String
+    
+    @JSName("color.chart.categorical.6.hovered")
+    var colorDotchartDotcategoricalDot6Dothovered: /* var(--ds-chart-categorical-6-hovered) */ String
+    
+    @JSName("color.chart.categorical.7")
+    var colorDotchartDotcategoricalDot7: /* var(--ds-chart-categorical-7) */ String
+    
+    @JSName("color.chart.categorical.7.hovered")
+    var colorDotchartDotcategoricalDot7Dothovered: /* var(--ds-chart-categorical-7-hovered) */ String
+    
+    @JSName("color.chart.categorical.8")
+    var colorDotchartDotcategoricalDot8: /* var(--ds-chart-categorical-8) */ String
+    
+    @JSName("color.chart.categorical.8.hovered")
+    var colorDotchartDotcategoricalDot8Dothovered: /* var(--ds-chart-categorical-8-hovered) */ String
+    
+    @JSName("color.chart.danger")
+    var colorDotchartDotdanger: /* var(--ds-chart-danger) */ String
+    
+    @JSName("color.chart.danger.bold")
+    var colorDotchartDotdangerDotbold: /* var(--ds-chart-danger-bold) */ String
+    
+    @JSName("color.chart.danger.bold.hovered")
+    var colorDotchartDotdangerDotboldDothovered: /* var(--ds-chart-danger-bold-hovered) */ String
+    
+    @JSName("color.chart.danger.hovered")
+    var colorDotchartDotdangerDothovered: /* var(--ds-chart-danger-hovered) */ String
+    
+    @JSName("color.chart.discovery")
+    var colorDotchartDotdiscovery: /* var(--ds-chart-discovery) */ String
+    
+    @JSName("color.chart.discovery.bold")
+    var colorDotchartDotdiscoveryDotbold: /* var(--ds-chart-discovery-bold) */ String
+    
+    @JSName("color.chart.discovery.bold.hovered")
+    var colorDotchartDotdiscoveryDotboldDothovered: /* var(--ds-chart-discovery-bold-hovered) */ String
+    
+    @JSName("color.chart.discovery.hovered")
+    var colorDotchartDotdiscoveryDothovered: /* var(--ds-chart-discovery-hovered) */ String
+    
+    @JSName("color.chart.gray.bold")
+    var colorDotchartDotgrayDotbold: /* var(--ds-chart-gray-bold) */ String
+    
+    @JSName("color.chart.gray.bold.hovered")
+    var colorDotchartDotgrayDotboldDothovered: /* var(--ds-chart-gray-bold-hovered) */ String
+    
+    @JSName("color.chart.gray.bolder")
+    var colorDotchartDotgrayDotbolder: /* var(--ds-chart-gray-bolder) */ String
+    
+    @JSName("color.chart.gray.bolder.hovered")
+    var colorDotchartDotgrayDotbolderDothovered: /* var(--ds-chart-gray-bolder-hovered) */ String
+    
+    @JSName("color.chart.gray.boldest")
+    var colorDotchartDotgrayDotboldest: /* var(--ds-chart-gray-boldest) */ String
+    
+    @JSName("color.chart.gray.boldest.hovered")
+    var colorDotchartDotgrayDotboldestDothovered: /* var(--ds-chart-gray-boldest-hovered) */ String
+    
+    @JSName("color.chart.green.bold")
+    var colorDotchartDotgreenDotbold: /* var(--ds-chart-green-bold) */ String
+    
+    @JSName("color.chart.green.bold.hovered")
+    var colorDotchartDotgreenDotboldDothovered: /* var(--ds-chart-green-bold-hovered) */ String
+    
+    @JSName("color.chart.green.bolder")
+    var colorDotchartDotgreenDotbolder: /* var(--ds-chart-green-bolder) */ String
+    
+    @JSName("color.chart.green.bolder.hovered")
+    var colorDotchartDotgreenDotbolderDothovered: /* var(--ds-chart-green-bolder-hovered) */ String
+    
+    @JSName("color.chart.green.boldest")
+    var colorDotchartDotgreenDotboldest: /* var(--ds-chart-green-boldest) */ String
+    
+    @JSName("color.chart.green.boldest.hovered")
+    var colorDotchartDotgreenDotboldestDothovered: /* var(--ds-chart-green-boldest-hovered) */ String
+    
+    @JSName("color.chart.information")
+    var colorDotchartDotinformation: /* var(--ds-chart-information) */ String
+    
+    @JSName("color.chart.information.bold")
+    var colorDotchartDotinformationDotbold: /* var(--ds-chart-information-bold) */ String
+    
+    @JSName("color.chart.information.bold.hovered")
+    var colorDotchartDotinformationDotboldDothovered: /* var(--ds-chart-information-bold-hovered) */ String
+    
+    @JSName("color.chart.information.hovered")
+    var colorDotchartDotinformationDothovered: /* var(--ds-chart-information-hovered) */ String
+    
+    @JSName("color.chart.magenta.bold")
+    var colorDotchartDotmagentaDotbold: /* var(--ds-chart-magenta-bold) */ String
+    
+    @JSName("color.chart.magenta.bold.hovered")
+    var colorDotchartDotmagentaDotboldDothovered: /* var(--ds-chart-magenta-bold-hovered) */ String
+    
+    @JSName("color.chart.magenta.bolder")
+    var colorDotchartDotmagentaDotbolder: /* var(--ds-chart-magenta-bolder) */ String
+    
+    @JSName("color.chart.magenta.bolder.hovered")
+    var colorDotchartDotmagentaDotbolderDothovered: /* var(--ds-chart-magenta-bolder-hovered) */ String
+    
+    @JSName("color.chart.magenta.boldest")
+    var colorDotchartDotmagentaDotboldest: /* var(--ds-chart-magenta-boldest) */ String
+    
+    @JSName("color.chart.magenta.boldest.hovered")
+    var colorDotchartDotmagentaDotboldestDothovered: /* var(--ds-chart-magenta-boldest-hovered) */ String
+    
+    @JSName("color.chart.neutral")
+    var colorDotchartDotneutral: /* var(--ds-chart-neutral) */ String
+    
+    @JSName("color.chart.neutral.hovered")
+    var colorDotchartDotneutralDothovered: /* var(--ds-chart-neutral-hovered) */ String
+    
+    @JSName("color.chart.orange.bold")
+    var colorDotchartDotorangeDotbold: /* var(--ds-chart-orange-bold) */ String
+    
+    @JSName("color.chart.orange.bold.hovered")
+    var colorDotchartDotorangeDotboldDothovered: /* var(--ds-chart-orange-bold-hovered) */ String
+    
+    @JSName("color.chart.orange.bolder")
+    var colorDotchartDotorangeDotbolder: /* var(--ds-chart-orange-bolder) */ String
+    
+    @JSName("color.chart.orange.bolder.hovered")
+    var colorDotchartDotorangeDotbolderDothovered: /* var(--ds-chart-orange-bolder-hovered) */ String
+    
+    @JSName("color.chart.orange.boldest")
+    var colorDotchartDotorangeDotboldest: /* var(--ds-chart-orange-boldest) */ String
+    
+    @JSName("color.chart.orange.boldest.hovered")
+    var colorDotchartDotorangeDotboldestDothovered: /* var(--ds-chart-orange-boldest-hovered) */ String
+    
+    @JSName("color.chart.purple.bold")
+    var colorDotchartDotpurpleDotbold: /* var(--ds-chart-purple-bold) */ String
+    
+    @JSName("color.chart.purple.bold.hovered")
+    var colorDotchartDotpurpleDotboldDothovered: /* var(--ds-chart-purple-bold-hovered) */ String
+    
+    @JSName("color.chart.purple.bolder")
+    var colorDotchartDotpurpleDotbolder: /* var(--ds-chart-purple-bolder) */ String
+    
+    @JSName("color.chart.purple.bolder.hovered")
+    var colorDotchartDotpurpleDotbolderDothovered: /* var(--ds-chart-purple-bolder-hovered) */ String
+    
+    @JSName("color.chart.purple.boldest")
+    var colorDotchartDotpurpleDotboldest: /* var(--ds-chart-purple-boldest) */ String
+    
+    @JSName("color.chart.purple.boldest.hovered")
+    var colorDotchartDotpurpleDotboldestDothovered: /* var(--ds-chart-purple-boldest-hovered) */ String
+    
+    @JSName("color.chart.red.bold")
+    var colorDotchartDotredDotbold: /* var(--ds-chart-red-bold) */ String
+    
+    @JSName("color.chart.red.bold.hovered")
+    var colorDotchartDotredDotboldDothovered: /* var(--ds-chart-red-bold-hovered) */ String
+    
+    @JSName("color.chart.red.bolder")
+    var colorDotchartDotredDotbolder: /* var(--ds-chart-red-bolder) */ String
+    
+    @JSName("color.chart.red.bolder.hovered")
+    var colorDotchartDotredDotbolderDothovered: /* var(--ds-chart-red-bolder-hovered) */ String
+    
+    @JSName("color.chart.red.boldest")
+    var colorDotchartDotredDotboldest: /* var(--ds-chart-red-boldest) */ String
+    
+    @JSName("color.chart.red.boldest.hovered")
+    var colorDotchartDotredDotboldestDothovered: /* var(--ds-chart-red-boldest-hovered) */ String
+    
+    @JSName("color.chart.success")
+    var colorDotchartDotsuccess: /* var(--ds-chart-success) */ String
+    
+    @JSName("color.chart.success.bold")
+    var colorDotchartDotsuccessDotbold: /* var(--ds-chart-success-bold) */ String
+    
+    @JSName("color.chart.success.bold.hovered")
+    var colorDotchartDotsuccessDotboldDothovered: /* var(--ds-chart-success-bold-hovered) */ String
+    
+    @JSName("color.chart.success.hovered")
+    var colorDotchartDotsuccessDothovered: /* var(--ds-chart-success-hovered) */ String
+    
+    @JSName("color.chart.teal.bold")
+    var colorDotchartDottealDotbold: /* var(--ds-chart-teal-bold) */ String
+    
+    @JSName("color.chart.teal.bold.hovered")
+    var colorDotchartDottealDotboldDothovered: /* var(--ds-chart-teal-bold-hovered) */ String
+    
+    @JSName("color.chart.teal.bolder")
+    var colorDotchartDottealDotbolder: /* var(--ds-chart-teal-bolder) */ String
+    
+    @JSName("color.chart.teal.bolder.hovered")
+    var colorDotchartDottealDotbolderDothovered: /* var(--ds-chart-teal-bolder-hovered) */ String
+    
+    @JSName("color.chart.teal.boldest")
+    var colorDotchartDottealDotboldest: /* var(--ds-chart-teal-boldest) */ String
+    
+    @JSName("color.chart.teal.boldest.hovered")
+    var colorDotchartDottealDotboldestDothovered: /* var(--ds-chart-teal-boldest-hovered) */ String
+    
+    @JSName("color.chart.warning")
+    var colorDotchartDotwarning: /* var(--ds-chart-warning) */ String
+    
+    @JSName("color.chart.warning.bold")
+    var colorDotchartDotwarningDotbold: /* var(--ds-chart-warning-bold) */ String
+    
+    @JSName("color.chart.warning.bold.hovered")
+    var colorDotchartDotwarningDotboldDothovered: /* var(--ds-chart-warning-bold-hovered) */ String
+    
+    @JSName("color.chart.warning.hovered")
+    var colorDotchartDotwarningDothovered: /* var(--ds-chart-warning-hovered) */ String
+    
+    @JSName("color.chart.yellow.bold")
+    var colorDotchartDotyellowDotbold: /* var(--ds-chart-yellow-bold) */ String
+    
+    @JSName("color.chart.yellow.bold.hovered")
+    var colorDotchartDotyellowDotboldDothovered: /* var(--ds-chart-yellow-bold-hovered) */ String
+    
+    @JSName("color.chart.yellow.bolder")
+    var colorDotchartDotyellowDotbolder: /* var(--ds-chart-yellow-bolder) */ String
+    
+    @JSName("color.chart.yellow.bolder.hovered")
+    var colorDotchartDotyellowDotbolderDothovered: /* var(--ds-chart-yellow-bolder-hovered) */ String
+    
+    @JSName("color.chart.yellow.boldest")
+    var colorDotchartDotyellowDotboldest: /* var(--ds-chart-yellow-boldest) */ String
+    
+    @JSName("color.chart.yellow.boldest.hovered")
+    var colorDotchartDotyellowDotboldestDothovered: /* var(--ds-chart-yellow-boldest-hovered) */ String
+    
     @JSName("color.icon")
     var colorDoticon: /* var(--ds-icon) */ String
     
@@ -2284,6 +3046,12 @@ object distTypesArtifactsTypescriptAtlassianLightTokenNamesMod {
     
     @JSName("elevation.shadow.overflow")
     var elevationDotshadowDotoverflow: /* var(--ds-shadow-overflow) */ String
+    
+    @JSName("elevation.shadow.overflow.perimeter")
+    var elevationDotshadowDotoverflowDotperimeter: /* var(--ds-shadow-overflow-perimeter) */ String
+    
+    @JSName("elevation.shadow.overflow.spread")
+    var elevationDotshadowDotoverflowDotspread: /* var(--ds-shadow-overflow-spread) */ String
     
     @JSName("elevation.shadow.overlay")
     var elevationDotshadowDotoverlay: /* var(--ds-shadow-overlay) */ String
@@ -2541,62 +3309,62 @@ object distTypesArtifactsTypescriptAtlassianLightTokenNamesMod {
       __obj.updateDynamic("color.border.selected")("var(--ds-border-selected)")
       __obj.updateDynamic("color.border.success")("var(--ds-border-success)")
       __obj.updateDynamic("color.border.warning")("var(--ds-border-warning)")
-      __obj.updateDynamic("color.icon")("var(--ds-icon)")
-      __obj.updateDynamic("color.iconBorder.brand")("var(--ds-iconBorder-brand)")
-      __obj.updateDynamic("color.iconBorder.danger")("var(--ds-iconBorder-danger)")
-      __obj.updateDynamic("color.iconBorder.discovery")("var(--ds-iconBorder-discovery)")
-      __obj.updateDynamic("color.iconBorder.success")("var(--ds-iconBorder-success)")
-      __obj.updateDynamic("color.iconBorder.warning")("var(--ds-iconBorder-warning)")
-      __obj.updateDynamic("color.icon.accent.blue")("var(--ds-icon-accent-blue)")
-      __obj.updateDynamic("color.icon.accent.gray")("var(--ds-icon-accent-gray)")
-      __obj.updateDynamic("color.icon.accent.green")("var(--ds-icon-accent-green)")
-      __obj.updateDynamic("color.icon.accent.magenta")("var(--ds-icon-accent-magenta)")
-      __obj.updateDynamic("color.icon.accent.orange")("var(--ds-icon-accent-orange)")
-      __obj.updateDynamic("color.icon.accent.purple")("var(--ds-icon-accent-purple)")
-      __obj.updateDynamic("color.icon.accent.red")("var(--ds-icon-accent-red)")
-      __obj.updateDynamic("color.icon.accent.teal")("var(--ds-icon-accent-teal)")
-      __obj.updateDynamic("color.icon.accent.yellow")("var(--ds-icon-accent-yellow)")
-      __obj.updateDynamic("color.icon.brand")("var(--ds-icon-brand)")
-      __obj.updateDynamic("color.icon.danger")("var(--ds-icon-danger)")
-      __obj.updateDynamic("color.icon.disabled")("var(--ds-icon-disabled)")
-      __obj.updateDynamic("color.icon.discovery")("var(--ds-icon-discovery)")
-      __obj.updateDynamic("color.icon.information")("var(--ds-icon-information)")
-      __obj.updateDynamic("color.icon.inverse")("var(--ds-icon-inverse)")
-      __obj.updateDynamic("color.icon.selected")("var(--ds-icon-selected)")
-      __obj.updateDynamic("color.icon.subtle")("var(--ds-icon-subtle)")
-      __obj.updateDynamic("color.icon.success")("var(--ds-icon-success)")
-      __obj.updateDynamic("color.icon.warning")("var(--ds-icon-warning)")
-      __obj.updateDynamic("color.icon.warning.inverse")("var(--ds-icon-warning-inverse)")
-      __obj.updateDynamic("color.interaction.hovered")("var(--ds-interaction-hovered)")
-      __obj.updateDynamic("color.interaction.inverse.hovered")("var(--ds-interaction-inverse-hovered)")
-      __obj.updateDynamic("color.interaction.inverse.pressed")("var(--ds-interaction-inverse-pressed)")
-      __obj.updateDynamic("color.interaction.pressed")("var(--ds-interaction-pressed)")
-      __obj.updateDynamic("color.link")("var(--ds-link)")
-      __obj.updateDynamic("color.link.pressed")("var(--ds-link-pressed)")
-      __obj.updateDynamic("color.overlay.hover")("var(--ds-overlay-hover)")
-      __obj.updateDynamic("color.overlay.pressed")("var(--ds-overlay-pressed)")
-      __obj.updateDynamic("color.skeleton")("var(--ds-skeleton)")
-      __obj.updateDynamic("color.skeleton.subtle")("var(--ds-skeleton-subtle)")
-      __obj.updateDynamic("color.text")("var(--ds-text)")
-      __obj.updateDynamic("color.text.accent.blue")("var(--ds-text-accent-blue)")
-      __obj.updateDynamic("color.text.accent.blue.bolder")("var(--ds-text-accent-blue-bolder)")
-      __obj.updateDynamic("color.text.accent.gray")("var(--ds-text-accent-gray)")
-      __obj.updateDynamic("color.text.accent.gray.bolder")("var(--ds-text-accent-gray-bolder)")
-      __obj.updateDynamic("color.text.accent.green")("var(--ds-text-accent-green)")
-      __obj.updateDynamic("color.text.accent.green.bolder")("var(--ds-text-accent-green-bolder)")
-      __obj.updateDynamic("color.text.accent.magenta")("var(--ds-text-accent-magenta)")
-      __obj.updateDynamic("color.text.accent.magenta.bolder")("var(--ds-text-accent-magenta-bolder)")
-      __obj.updateDynamic("color.text.accent.orange")("var(--ds-text-accent-orange)")
-      __obj.updateDynamic("color.text.accent.orange.bolder")("var(--ds-text-accent-orange-bolder)")
-      __obj.updateDynamic("color.text.accent.purple")("var(--ds-text-accent-purple)")
-      __obj.updateDynamic("color.text.accent.purple.bolder")("var(--ds-text-accent-purple-bolder)")
-      __obj.updateDynamic("color.text.accent.red")("var(--ds-text-accent-red)")
-      __obj.updateDynamic("color.text.accent.red.bolder")("var(--ds-text-accent-red-bolder)")
-      __obj.updateDynamic("color.text.accent.teal")("var(--ds-text-accent-teal)")
-      __obj.updateDynamic("color.text.accent.teal.bolder")("var(--ds-text-accent-teal-bolder)")
-      __obj.updateDynamic("color.text.accent.yellow")("var(--ds-text-accent-yellow)")
-      __obj.updateDynamic("color.text.accent.yellow.bolder")("var(--ds-text-accent-yellow-bolder)")
-      __obj.updateDynamic("color.text.brand")("var(--ds-text-brand)")
+      __obj.updateDynamic("color.chart.blue.bold")("var(--ds-chart-blue-bold)")
+      __obj.updateDynamic("color.chart.blue.bold.hovered")("var(--ds-chart-blue-bold-hovered)")
+      __obj.updateDynamic("color.chart.blue.bolder")("var(--ds-chart-blue-bolder)")
+      __obj.updateDynamic("color.chart.blue.bolder.hovered")("var(--ds-chart-blue-bolder-hovered)")
+      __obj.updateDynamic("color.chart.blue.boldest")("var(--ds-chart-blue-boldest)")
+      __obj.updateDynamic("color.chart.blue.boldest.hovered")("var(--ds-chart-blue-boldest-hovered)")
+      __obj.updateDynamic("color.chart.brand")("var(--ds-chart-brand)")
+      __obj.updateDynamic("color.chart.brand.hovered")("var(--ds-chart-brand-hovered)")
+      __obj.updateDynamic("color.chart.categorical.1")("var(--ds-chart-categorical-1)")
+      __obj.updateDynamic("color.chart.categorical.1.hovered")("var(--ds-chart-categorical-1-hovered)")
+      __obj.updateDynamic("color.chart.categorical.2")("var(--ds-chart-categorical-2)")
+      __obj.updateDynamic("color.chart.categorical.2.hovered")("var(--ds-chart-categorical-2-hovered)")
+      __obj.updateDynamic("color.chart.categorical.3")("var(--ds-chart-categorical-3)")
+      __obj.updateDynamic("color.chart.categorical.3.hovered")("var(--ds-chart-categorical-3-hovered)")
+      __obj.updateDynamic("color.chart.categorical.4")("var(--ds-chart-categorical-4)")
+      __obj.updateDynamic("color.chart.categorical.4.hovered")("var(--ds-chart-categorical-4-hovered)")
+      __obj.updateDynamic("color.chart.categorical.5")("var(--ds-chart-categorical-5)")
+      __obj.updateDynamic("color.chart.categorical.5.hovered")("var(--ds-chart-categorical-5-hovered)")
+      __obj.updateDynamic("color.chart.categorical.6")("var(--ds-chart-categorical-6)")
+      __obj.updateDynamic("color.chart.categorical.6.hovered")("var(--ds-chart-categorical-6-hovered)")
+      __obj.updateDynamic("color.chart.categorical.7")("var(--ds-chart-categorical-7)")
+      __obj.updateDynamic("color.chart.categorical.7.hovered")("var(--ds-chart-categorical-7-hovered)")
+      __obj.updateDynamic("color.chart.categorical.8")("var(--ds-chart-categorical-8)")
+      __obj.updateDynamic("color.chart.categorical.8.hovered")("var(--ds-chart-categorical-8-hovered)")
+      __obj.updateDynamic("color.chart.danger")("var(--ds-chart-danger)")
+      __obj.updateDynamic("color.chart.danger.bold")("var(--ds-chart-danger-bold)")
+      __obj.updateDynamic("color.chart.danger.bold.hovered")("var(--ds-chart-danger-bold-hovered)")
+      __obj.updateDynamic("color.chart.danger.hovered")("var(--ds-chart-danger-hovered)")
+      __obj.updateDynamic("color.chart.discovery")("var(--ds-chart-discovery)")
+      __obj.updateDynamic("color.chart.discovery.bold")("var(--ds-chart-discovery-bold)")
+      __obj.updateDynamic("color.chart.discovery.bold.hovered")("var(--ds-chart-discovery-bold-hovered)")
+      __obj.updateDynamic("color.chart.discovery.hovered")("var(--ds-chart-discovery-hovered)")
+      __obj.updateDynamic("color.chart.gray.bold")("var(--ds-chart-gray-bold)")
+      __obj.updateDynamic("color.chart.gray.bold.hovered")("var(--ds-chart-gray-bold-hovered)")
+      __obj.updateDynamic("color.chart.gray.bolder")("var(--ds-chart-gray-bolder)")
+      __obj.updateDynamic("color.chart.gray.bolder.hovered")("var(--ds-chart-gray-bolder-hovered)")
+      __obj.updateDynamic("color.chart.gray.boldest")("var(--ds-chart-gray-boldest)")
+      __obj.updateDynamic("color.chart.gray.boldest.hovered")("var(--ds-chart-gray-boldest-hovered)")
+      __obj.updateDynamic("color.chart.green.bold")("var(--ds-chart-green-bold)")
+      __obj.updateDynamic("color.chart.green.bold.hovered")("var(--ds-chart-green-bold-hovered)")
+      __obj.updateDynamic("color.chart.green.bolder")("var(--ds-chart-green-bolder)")
+      __obj.updateDynamic("color.chart.green.bolder.hovered")("var(--ds-chart-green-bolder-hovered)")
+      __obj.updateDynamic("color.chart.green.boldest")("var(--ds-chart-green-boldest)")
+      __obj.updateDynamic("color.chart.green.boldest.hovered")("var(--ds-chart-green-boldest-hovered)")
+      __obj.updateDynamic("color.chart.information")("var(--ds-chart-information)")
+      __obj.updateDynamic("color.chart.information.bold")("var(--ds-chart-information-bold)")
+      __obj.updateDynamic("color.chart.information.bold.hovered")("var(--ds-chart-information-bold-hovered)")
+      __obj.updateDynamic("color.chart.information.hovered")("var(--ds-chart-information-hovered)")
+      __obj.updateDynamic("color.chart.magenta.bold")("var(--ds-chart-magenta-bold)")
+      __obj.updateDynamic("color.chart.magenta.bold.hovered")("var(--ds-chart-magenta-bold-hovered)")
+      __obj.updateDynamic("color.chart.magenta.bolder")("var(--ds-chart-magenta-bolder)")
+      __obj.updateDynamic("color.chart.magenta.bolder.hovered")("var(--ds-chart-magenta-bolder-hovered)")
+      __obj.updateDynamic("color.chart.magenta.boldest")("var(--ds-chart-magenta-boldest)")
+      __obj.updateDynamic("color.chart.magenta.boldest.hovered")("var(--ds-chart-magenta-boldest-hovered)")
+      __obj.updateDynamic("color.chart.neutral")("var(--ds-chart-neutral)")
+      __obj.updateDynamic("color.chart.neutral.hovered")("var(--ds-chart-neutral-hovered)")
       __obj.asInstanceOf[CSSTokenMap]
     }
     
@@ -2999,6 +3767,194 @@ object distTypesArtifactsTypescriptAtlassianLightTokenNamesMod {
       
       inline def setColorDotborderDotwarning(value: /* var(--ds-border-warning) */ String): Self = StObject.set(x, "color.border.warning", value.asInstanceOf[js.Any])
       
+      inline def setColorDotchartDotblueDotbold(value: /* var(--ds-chart-blue-bold) */ String): Self = StObject.set(x, "color.chart.blue.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotblueDotboldDothovered(value: /* var(--ds-chart-blue-bold-hovered) */ String): Self = StObject.set(x, "color.chart.blue.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotblueDotbolder(value: /* var(--ds-chart-blue-bolder) */ String): Self = StObject.set(x, "color.chart.blue.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotblueDotbolderDothovered(value: /* var(--ds-chart-blue-bolder-hovered) */ String): Self = StObject.set(x, "color.chart.blue.bolder.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotblueDotboldest(value: /* var(--ds-chart-blue-boldest) */ String): Self = StObject.set(x, "color.chart.blue.boldest", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotblueDotboldestDothovered(value: /* var(--ds-chart-blue-boldest-hovered) */ String): Self = StObject.set(x, "color.chart.blue.boldest.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotbrand(value: /* var(--ds-chart-brand) */ String): Self = StObject.set(x, "color.chart.brand", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotbrandDothovered(value: /* var(--ds-chart-brand-hovered) */ String): Self = StObject.set(x, "color.chart.brand.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotcategoricalDot1(value: /* var(--ds-chart-categorical-1) */ String): Self = StObject.set(x, "color.chart.categorical.1", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotcategoricalDot1Dothovered(value: /* var(--ds-chart-categorical-1-hovered) */ String): Self = StObject.set(x, "color.chart.categorical.1.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotcategoricalDot2(value: /* var(--ds-chart-categorical-2) */ String): Self = StObject.set(x, "color.chart.categorical.2", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotcategoricalDot2Dothovered(value: /* var(--ds-chart-categorical-2-hovered) */ String): Self = StObject.set(x, "color.chart.categorical.2.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotcategoricalDot3(value: /* var(--ds-chart-categorical-3) */ String): Self = StObject.set(x, "color.chart.categorical.3", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotcategoricalDot3Dothovered(value: /* var(--ds-chart-categorical-3-hovered) */ String): Self = StObject.set(x, "color.chart.categorical.3.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotcategoricalDot4(value: /* var(--ds-chart-categorical-4) */ String): Self = StObject.set(x, "color.chart.categorical.4", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotcategoricalDot4Dothovered(value: /* var(--ds-chart-categorical-4-hovered) */ String): Self = StObject.set(x, "color.chart.categorical.4.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotcategoricalDot5(value: /* var(--ds-chart-categorical-5) */ String): Self = StObject.set(x, "color.chart.categorical.5", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotcategoricalDot5Dothovered(value: /* var(--ds-chart-categorical-5-hovered) */ String): Self = StObject.set(x, "color.chart.categorical.5.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotcategoricalDot6(value: /* var(--ds-chart-categorical-6) */ String): Self = StObject.set(x, "color.chart.categorical.6", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotcategoricalDot6Dothovered(value: /* var(--ds-chart-categorical-6-hovered) */ String): Self = StObject.set(x, "color.chart.categorical.6.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotcategoricalDot7(value: /* var(--ds-chart-categorical-7) */ String): Self = StObject.set(x, "color.chart.categorical.7", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotcategoricalDot7Dothovered(value: /* var(--ds-chart-categorical-7-hovered) */ String): Self = StObject.set(x, "color.chart.categorical.7.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotcategoricalDot8(value: /* var(--ds-chart-categorical-8) */ String): Self = StObject.set(x, "color.chart.categorical.8", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotcategoricalDot8Dothovered(value: /* var(--ds-chart-categorical-8-hovered) */ String): Self = StObject.set(x, "color.chart.categorical.8.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotdanger(value: /* var(--ds-chart-danger) */ String): Self = StObject.set(x, "color.chart.danger", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotdangerDotbold(value: /* var(--ds-chart-danger-bold) */ String): Self = StObject.set(x, "color.chart.danger.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotdangerDotboldDothovered(value: /* var(--ds-chart-danger-bold-hovered) */ String): Self = StObject.set(x, "color.chart.danger.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotdangerDothovered(value: /* var(--ds-chart-danger-hovered) */ String): Self = StObject.set(x, "color.chart.danger.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotdiscovery(value: /* var(--ds-chart-discovery) */ String): Self = StObject.set(x, "color.chart.discovery", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotdiscoveryDotbold(value: /* var(--ds-chart-discovery-bold) */ String): Self = StObject.set(x, "color.chart.discovery.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotdiscoveryDotboldDothovered(value: /* var(--ds-chart-discovery-bold-hovered) */ String): Self = StObject.set(x, "color.chart.discovery.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotdiscoveryDothovered(value: /* var(--ds-chart-discovery-hovered) */ String): Self = StObject.set(x, "color.chart.discovery.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotgrayDotbold(value: /* var(--ds-chart-gray-bold) */ String): Self = StObject.set(x, "color.chart.gray.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotgrayDotboldDothovered(value: /* var(--ds-chart-gray-bold-hovered) */ String): Self = StObject.set(x, "color.chart.gray.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotgrayDotbolder(value: /* var(--ds-chart-gray-bolder) */ String): Self = StObject.set(x, "color.chart.gray.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotgrayDotbolderDothovered(value: /* var(--ds-chart-gray-bolder-hovered) */ String): Self = StObject.set(x, "color.chart.gray.bolder.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotgrayDotboldest(value: /* var(--ds-chart-gray-boldest) */ String): Self = StObject.set(x, "color.chart.gray.boldest", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotgrayDotboldestDothovered(value: /* var(--ds-chart-gray-boldest-hovered) */ String): Self = StObject.set(x, "color.chart.gray.boldest.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotgreenDotbold(value: /* var(--ds-chart-green-bold) */ String): Self = StObject.set(x, "color.chart.green.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotgreenDotboldDothovered(value: /* var(--ds-chart-green-bold-hovered) */ String): Self = StObject.set(x, "color.chart.green.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotgreenDotbolder(value: /* var(--ds-chart-green-bolder) */ String): Self = StObject.set(x, "color.chart.green.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotgreenDotbolderDothovered(value: /* var(--ds-chart-green-bolder-hovered) */ String): Self = StObject.set(x, "color.chart.green.bolder.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotgreenDotboldest(value: /* var(--ds-chart-green-boldest) */ String): Self = StObject.set(x, "color.chart.green.boldest", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotgreenDotboldestDothovered(value: /* var(--ds-chart-green-boldest-hovered) */ String): Self = StObject.set(x, "color.chart.green.boldest.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotinformation(value: /* var(--ds-chart-information) */ String): Self = StObject.set(x, "color.chart.information", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotinformationDotbold(value: /* var(--ds-chart-information-bold) */ String): Self = StObject.set(x, "color.chart.information.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotinformationDotboldDothovered(value: /* var(--ds-chart-information-bold-hovered) */ String): Self = StObject.set(x, "color.chart.information.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotinformationDothovered(value: /* var(--ds-chart-information-hovered) */ String): Self = StObject.set(x, "color.chart.information.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotmagentaDotbold(value: /* var(--ds-chart-magenta-bold) */ String): Self = StObject.set(x, "color.chart.magenta.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotmagentaDotboldDothovered(value: /* var(--ds-chart-magenta-bold-hovered) */ String): Self = StObject.set(x, "color.chart.magenta.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotmagentaDotbolder(value: /* var(--ds-chart-magenta-bolder) */ String): Self = StObject.set(x, "color.chart.magenta.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotmagentaDotbolderDothovered(value: /* var(--ds-chart-magenta-bolder-hovered) */ String): Self = StObject.set(x, "color.chart.magenta.bolder.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotmagentaDotboldest(value: /* var(--ds-chart-magenta-boldest) */ String): Self = StObject.set(x, "color.chart.magenta.boldest", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotmagentaDotboldestDothovered(value: /* var(--ds-chart-magenta-boldest-hovered) */ String): Self = StObject.set(x, "color.chart.magenta.boldest.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotneutral(value: /* var(--ds-chart-neutral) */ String): Self = StObject.set(x, "color.chart.neutral", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotneutralDothovered(value: /* var(--ds-chart-neutral-hovered) */ String): Self = StObject.set(x, "color.chart.neutral.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotorangeDotbold(value: /* var(--ds-chart-orange-bold) */ String): Self = StObject.set(x, "color.chart.orange.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotorangeDotboldDothovered(value: /* var(--ds-chart-orange-bold-hovered) */ String): Self = StObject.set(x, "color.chart.orange.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotorangeDotbolder(value: /* var(--ds-chart-orange-bolder) */ String): Self = StObject.set(x, "color.chart.orange.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotorangeDotbolderDothovered(value: /* var(--ds-chart-orange-bolder-hovered) */ String): Self = StObject.set(x, "color.chart.orange.bolder.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotorangeDotboldest(value: /* var(--ds-chart-orange-boldest) */ String): Self = StObject.set(x, "color.chart.orange.boldest", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotorangeDotboldestDothovered(value: /* var(--ds-chart-orange-boldest-hovered) */ String): Self = StObject.set(x, "color.chart.orange.boldest.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotpurpleDotbold(value: /* var(--ds-chart-purple-bold) */ String): Self = StObject.set(x, "color.chart.purple.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotpurpleDotboldDothovered(value: /* var(--ds-chart-purple-bold-hovered) */ String): Self = StObject.set(x, "color.chart.purple.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotpurpleDotbolder(value: /* var(--ds-chart-purple-bolder) */ String): Self = StObject.set(x, "color.chart.purple.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotpurpleDotbolderDothovered(value: /* var(--ds-chart-purple-bolder-hovered) */ String): Self = StObject.set(x, "color.chart.purple.bolder.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotpurpleDotboldest(value: /* var(--ds-chart-purple-boldest) */ String): Self = StObject.set(x, "color.chart.purple.boldest", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotpurpleDotboldestDothovered(value: /* var(--ds-chart-purple-boldest-hovered) */ String): Self = StObject.set(x, "color.chart.purple.boldest.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotredDotbold(value: /* var(--ds-chart-red-bold) */ String): Self = StObject.set(x, "color.chart.red.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotredDotboldDothovered(value: /* var(--ds-chart-red-bold-hovered) */ String): Self = StObject.set(x, "color.chart.red.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotredDotbolder(value: /* var(--ds-chart-red-bolder) */ String): Self = StObject.set(x, "color.chart.red.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotredDotbolderDothovered(value: /* var(--ds-chart-red-bolder-hovered) */ String): Self = StObject.set(x, "color.chart.red.bolder.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotredDotboldest(value: /* var(--ds-chart-red-boldest) */ String): Self = StObject.set(x, "color.chart.red.boldest", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotredDotboldestDothovered(value: /* var(--ds-chart-red-boldest-hovered) */ String): Self = StObject.set(x, "color.chart.red.boldest.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotsuccess(value: /* var(--ds-chart-success) */ String): Self = StObject.set(x, "color.chart.success", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotsuccessDotbold(value: /* var(--ds-chart-success-bold) */ String): Self = StObject.set(x, "color.chart.success.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotsuccessDotboldDothovered(value: /* var(--ds-chart-success-bold-hovered) */ String): Self = StObject.set(x, "color.chart.success.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotsuccessDothovered(value: /* var(--ds-chart-success-hovered) */ String): Self = StObject.set(x, "color.chart.success.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDottealDotbold(value: /* var(--ds-chart-teal-bold) */ String): Self = StObject.set(x, "color.chart.teal.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDottealDotboldDothovered(value: /* var(--ds-chart-teal-bold-hovered) */ String): Self = StObject.set(x, "color.chart.teal.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDottealDotbolder(value: /* var(--ds-chart-teal-bolder) */ String): Self = StObject.set(x, "color.chart.teal.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDottealDotbolderDothovered(value: /* var(--ds-chart-teal-bolder-hovered) */ String): Self = StObject.set(x, "color.chart.teal.bolder.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDottealDotboldest(value: /* var(--ds-chart-teal-boldest) */ String): Self = StObject.set(x, "color.chart.teal.boldest", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDottealDotboldestDothovered(value: /* var(--ds-chart-teal-boldest-hovered) */ String): Self = StObject.set(x, "color.chart.teal.boldest.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotwarning(value: /* var(--ds-chart-warning) */ String): Self = StObject.set(x, "color.chart.warning", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotwarningDotbold(value: /* var(--ds-chart-warning-bold) */ String): Self = StObject.set(x, "color.chart.warning.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotwarningDotboldDothovered(value: /* var(--ds-chart-warning-bold-hovered) */ String): Self = StObject.set(x, "color.chart.warning.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotwarningDothovered(value: /* var(--ds-chart-warning-hovered) */ String): Self = StObject.set(x, "color.chart.warning.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotyellowDotbold(value: /* var(--ds-chart-yellow-bold) */ String): Self = StObject.set(x, "color.chart.yellow.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotyellowDotboldDothovered(value: /* var(--ds-chart-yellow-bold-hovered) */ String): Self = StObject.set(x, "color.chart.yellow.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotyellowDotbolder(value: /* var(--ds-chart-yellow-bolder) */ String): Self = StObject.set(x, "color.chart.yellow.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotyellowDotbolderDothovered(value: /* var(--ds-chart-yellow-bolder-hovered) */ String): Self = StObject.set(x, "color.chart.yellow.bolder.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotyellowDotboldest(value: /* var(--ds-chart-yellow-boldest) */ String): Self = StObject.set(x, "color.chart.yellow.boldest", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotyellowDotboldestDothovered(value: /* var(--ds-chart-yellow-boldest-hovered) */ String): Self = StObject.set(x, "color.chart.yellow.boldest.hovered", value.asInstanceOf[js.Any])
+      
       inline def setColorDoticon(value: /* var(--ds-icon) */ String): Self = StObject.set(x, "color.icon", value.asInstanceOf[js.Any])
       
       inline def setColorDoticonBorderDotbrand(value: /* var(--ds-iconBorder-brand) */ String): Self = StObject.set(x, "color.iconBorder.brand", value.asInstanceOf[js.Any])
@@ -3148,6 +4104,10 @@ object distTypesArtifactsTypescriptAtlassianLightTokenNamesMod {
       inline def setColorDottextDotwarningDotinverse(value: /* var(--ds-text-warning-inverse) */ String): Self = StObject.set(x, "color.text.warning.inverse", value.asInstanceOf[js.Any])
       
       inline def setElevationDotshadowDotoverflow(value: /* var(--ds-shadow-overflow) */ String): Self = StObject.set(x, "elevation.shadow.overflow", value.asInstanceOf[js.Any])
+      
+      inline def setElevationDotshadowDotoverflowDotperimeter(value: /* var(--ds-shadow-overflow-perimeter) */ String): Self = StObject.set(x, "elevation.shadow.overflow.perimeter", value.asInstanceOf[js.Any])
+      
+      inline def setElevationDotshadowDotoverflowDotspread(value: /* var(--ds-shadow-overflow-spread) */ String): Self = StObject.set(x, "elevation.shadow.overflow.spread", value.asInstanceOf[js.Any])
       
       inline def setElevationDotshadowDotoverlay(value: /* var(--ds-shadow-overlay) */ String): Self = StObject.set(x, "elevation.shadow.overlay", value.asInstanceOf[js.Any])
       

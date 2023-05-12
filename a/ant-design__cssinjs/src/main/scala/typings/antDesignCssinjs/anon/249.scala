@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.WebkitUserModify
+import typings.csstype.mod.Property.ContainIntrinsicInlineSize
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `249` extends StObject {
   
   var value: js.UndefOr[
-    WebkitUserModify | (js.Array[
+    (ContainIntrinsicInlineSize[Double | String]) | (js.Array[
       (Extract[
-        js.UndefOr[WebkitUserModify | js.Array[NonNullable[js.UndefOr[WebkitUserModify]]]], 
+        js.UndefOr[
+          (ContainIntrinsicInlineSize[Double | String]) | (js.Array[NonNullable[js.UndefOr[ContainIntrinsicInlineSize[Double | String]]]])
+        ], 
         String
-      ]) | NonNullable[js.UndefOr[WebkitUserModify]]
+      ]) | (NonNullable[js.UndefOr[ContainIntrinsicInlineSize[Double | String]]])
     ])
   ] = js.native
 }

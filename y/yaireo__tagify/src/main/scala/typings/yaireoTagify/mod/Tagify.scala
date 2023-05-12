@@ -176,6 +176,42 @@ trait Tagify[T /* <: BaseTagData */] extends StObject {
   def getPersistedData(key: String): Any = js.native
   
   /**
+    * Gets the tag data of the given tag element.
+    * @param tagElm A tag HTML element (by default those with the `tagify__tag`
+    * class).
+    * @return The data for the tag. `undefined` when no tag data was found or
+    * the element is not an existing tag.
+    */
+  def getSetTagData(tagElm: HTMLElement): js.UndefOr[T] = js.native
+  /**
+    * Sets the data of the given tag element to the given value.
+    * @param tagElm A tag HTML element (by default those with the `tagify__tag`
+    * class).
+    * @param data New data to set on the tag. Replaces the values for the given
+    * properties. Properties not given remain unchanged.
+    * @param override `undefined` or `false` to assign the given data to the
+    * tag's data and keep other properties.
+    * @return The new tag data for the tag, or the given data when the element
+    * is not an existing tag.
+    */
+  def getSetTagData[P /* <: Partial[T] */](tagElm: HTMLElement, data: P): P | T = js.native
+  @JSName("getSetTagData")
+  def getSetTagData_false[P /* <: Partial[T] */](tagElm: HTMLElement, data: P, `override`: `false`): P | T = js.native
+  /**
+    * Sets the data of the given tag element to the given value.
+    * @param tagElm A tag HTML element (by default those with the `tagify__tag`
+    * class).
+    * @param data New data to set on the tag. Replaces the values for the given
+    * properties. Properties not given remain unchanged.
+    * @param override `true` to replace all the entire tag data with the given
+    * data.
+    * @return The new tag data for the tag, or the given data when the element
+    * is not an existing tag.
+    */
+  @JSName("getSetTagData")
+  def getSetTagData_true(tagElm: HTMLElement, data: T, `override`: `true`): T = js.native
+  
+  /**
     * @param value Value to search for in the text content of the current tags.
     * @returns The DOM node for the first matching tag. `undefined` when no
     * matching tag was found.
@@ -559,42 +595,6 @@ trait Tagify[T /* <: BaseTagData */] extends StObject {
     * List with the currently available options for the dropdown.
     */
   var suggestedListItems: js.UndefOr[js.Array[T]] = js.native
-  
-  /**
-    * Gets the tag data of the given tag element.
-    * @param tagElm A tag HTML element (by default those with the `tagify__tag`
-    * class).
-    * @return The data for the tag. `undefined` when no tag data was found or
-    * the element is not an existing tag.
-    */
-  def tagData(tagElm: HTMLElement): js.UndefOr[T] = js.native
-  /**
-    * Sets the data of the given tag element to the given value.
-    * @param tagElm A tag HTML element (by default those with the `tagify__tag`
-    * class).
-    * @param data New data to set on the tag. Replaces the values for the given
-    * properties. Properties not given remain unchanged.
-    * @param override `undefined` or `false` to assign the given data to the
-    * tag's data and keep other properties.
-    * @return The new tag data for the tag, or the given data when the element
-    * is not an existing tag.
-    */
-  def tagData[P /* <: Partial[T] */](tagElm: HTMLElement, data: P): P | T = js.native
-  @JSName("tagData")
-  def tagData_false[P /* <: Partial[T] */](tagElm: HTMLElement, data: P, `override`: `false`): P | T = js.native
-  /**
-    * Sets the data of the given tag element to the given value.
-    * @param tagElm A tag HTML element (by default those with the `tagify__tag`
-    * class).
-    * @param data New data to set on the tag. Replaces the values for the given
-    * properties. Properties not given remain unchanged.
-    * @param override `true` to replace all the entire tag data with the given
-    * data.
-    * @return The new tag data for the tag, or the given data when the element
-    * is not an existing tag.
-    */
-  @JSName("tagData")
-  def tagData_true(tagElm: HTMLElement, data: T, `override`: `true`): T = js.native
   
   /**
     * Toggle specific tag loading state on or off.

@@ -12,7 +12,7 @@ trait ChimeSdkMeetingConfiguration extends StObject {
   var ArtifactsConfiguration: js.UndefOr[typings.awsSdk.clientsChimeMod.ArtifactsConfiguration] = js.undefined
   
   /**
-    * The source configuration for a specified media capture pipline.
+    * The source configuration for a specified media capture pipeline.
     */
   var SourceConfiguration: js.UndefOr[typings.awsSdk.clientsChimeMod.SourceConfiguration] = js.undefined
 }

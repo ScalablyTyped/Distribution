@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BUSINESS
   - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ORGANIZATION
   - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SOLETRADER
+  - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PARTNERSHIP
 */
 trait LegalPersonType extends StObject
 object LegalPersonType {
@@ -15,6 +16,8 @@ object LegalPersonType {
   inline def BUSINESS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BUSINESS = "BUSINESS".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BUSINESS]
   
   inline def ORGANIZATION: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ORGANIZATION = "ORGANIZATION".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ORGANIZATION]
+  
+  inline def PARTNERSHIP: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PARTNERSHIP = "PARTNERSHIP".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PARTNERSHIP]
   
   inline def SOLETRADER: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SOLETRADER = "SOLETRADER".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SOLETRADER]
 }

@@ -8,31 +8,40 @@ object libRestVoiceMod {
   
   @JSImport("twilio/lib/rest/Voice", JSImport.Namespace)
   @js.native
-  open class ^ protected () extends Voice {
-    /**
-      * Initialize voice domain
-      *
-      * @param twilio - The twilio client
-      */
-    def this(twilio: typings.twilio.libRestTwilioMod.^) = this()
-  }
+  open class ^ () extends Voice
   
   @js.native
   trait Voice
-    extends typings.twilio.libBaseDomainMod.^ {
+    extends typings.twilio.libRestVoiceBaseMod.^ {
     
-    val archivedCalls: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ArchivedCallListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.archivedCalls instead
+      */
+    def archivedCalls: Any = js.native
     
-    val byocTrunks: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ByocTrunkListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.byocTrunks instead
+      */
+    def byocTrunks: Any = js.native
     
-    val connectionPolicies: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ConnectionPolicyListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.connectionPolicies instead
+      */
+    def connectionPolicies: Any = js.native
     
-    val dialingPermissions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DialingPermissionsListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.dialingPermissions instead
+      */
+    def dialingPermissions: Any = js.native
     
-    val ipRecords: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IpRecordListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.ipRecords instead
+      */
+    def ipRecords: Any = js.native
     
-    val sourceIpMappings: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SourceIpMappingListInstance */ Any = js.native
-    
-    val v1: typings.twilio.libRestVoiceV1Mod.^ = js.native
+    /**
+      * @deprecated - Use v1.sourceIpMappings instead
+      */
+    def sourceIpMappings: Any = js.native
   }
 }

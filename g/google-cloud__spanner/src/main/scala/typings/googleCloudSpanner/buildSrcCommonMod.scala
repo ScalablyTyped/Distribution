@@ -1,5 +1,6 @@
 package typings.googleCloudSpanner
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.googleGax.buildSrcGaxMod.CallOptions
 import typings.googleGax.mod.Operation_
 import typings.grpcGrpcJs.buildSrcCallMod.ServiceError
@@ -9,9 +10,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object buildSrcCommonMod {
   
+  @JSImport("@google-cloud/spanner/build/src/common", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@google-cloud/spanner/build/src/common", "CLOUD_RESOURCE_HEADER")
   @js.native
   val CLOUD_RESOURCE_HEADER: /* "google-cloud-resource-prefix" */ String = js.native
+  
+  @JSImport("@google-cloud/spanner/build/src/common", "LEADER_AWARE_ROUTING_HEADER")
+  @js.native
+  val LEADER_AWARE_ROUTING_HEADER: /* "x-goog-spanner-route-to-leader" */ String = js.native
+  
+  inline def addLeaderAwareRoutingHeader(headers: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addLeaderAwareRoutingHeader")(headers.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type IOperation = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify instanceAdmin.longrunning.IOperation */ Any
   

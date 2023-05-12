@@ -6,18 +6,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `439` extends StObject {
   
-  var content: ApplicationjsonSelectedrepositoriesurl
+  var sha: js.UndefOr[String] = js.undefined
+  
+  var url: js.UndefOr[String] = js.undefined
 }
 object `439` {
   
-  inline def apply(content: ApplicationjsonSelectedrepositoriesurl): `439` = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+  inline def apply(): `439` = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`439`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `439`] (val x: Self) extends AnyVal {
     
-    inline def setContent(value: ApplicationjsonSelectedrepositoriesurl): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
+    
+    inline def setShaUndefined: Self = StObject.set(x, "sha", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

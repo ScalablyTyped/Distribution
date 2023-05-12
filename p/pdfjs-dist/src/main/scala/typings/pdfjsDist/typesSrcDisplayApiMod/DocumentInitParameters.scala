@@ -6,9 +6,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DocumentInitParameters
-  extends StObject
-     with _GetDocumentParameters {
+trait DocumentInitParameters extends StObject {
   
   /**
     * - The factory that will be used when
@@ -28,7 +26,7 @@ trait DocumentInitParameters
   
   /**
     * - Specifies if the Adobe CMaps are binary
-    * packed or not.
+    * packed or not. The default value is `true`.
     */
   var cMapPacked: js.UndefOr[Boolean] = js.undefined
   
@@ -39,9 +37,26 @@ trait DocumentInitParameters
   var cMapUrl: js.UndefOr[String] = js.undefined
   
   /**
+    * - The factory instance that will be used
+    * when creating canvases. The default value is {new DOMCanvasFactory()}.
+    */
+  var canvasFactory: js.UndefOr[js.Object] = js.undefined
+  
+  /**
+    * - The integer value is used to
+    * know when an image must be resized (uses `OffscreenCanvas` in the worker).
+    * If it's -1 then a possibly slow algorithm is used to guess the max value.
+    */
+  var canvasMaxAreaInBytes: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * - Binary PDF data.
-    * Use typed arrays (Uint8Array) to improve the memory usage. If PDF data is
+    * Use TypedArrays (Uint8Array) to improve the memory usage. If PDF data is
     * BASE64-encoded, use `atob()` to convert it to a binary string first.
+    *
+    * NOTE: If TypedArrays are used they will generally be transferred to the
+    * worker-thread. This will help reduce main-thread memory usage, however
+    * it will take ownership of the TypedArrays.
     */
   var data: js.UndefOr[BinaryData] = js.undefined
   
@@ -93,6 +108,12 @@ trait DocumentInitParameters
   var enableXfa: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * - A factory instance that will be used
+    * to create SVG filters when rendering some images on the main canvas.
+    */
+  var filterFactory: js.UndefOr[js.Object] = js.undefined
+  
+  /**
     * - Include additional properties,
     * which are unused during rendering of PDF documents, when exporting the
     * parsed font data from the worker-thread. This may be useful for debugging
@@ -105,13 +126,6 @@ trait DocumentInitParameters
     * - Basic authentication headers.
     */
   var httpHeaders: js.UndefOr[js.Object] = js.undefined
-  
-  /**
-    * - A typed array with the first portion
-    * or all of the pdf data. Used by the extension since some data is already
-    * loaded before the switch to range requests.
-    */
-  var initialData: js.UndefOr[TypedArray] = js.undefined
   
   /**
     * - Determines if we can evaluate strings
@@ -248,6 +262,14 @@ object DocumentInitParameters {
     
     inline def setCMapUrlUndefined: Self = StObject.set(x, "cMapUrl", js.undefined)
     
+    inline def setCanvasFactory(value: js.Object): Self = StObject.set(x, "canvasFactory", value.asInstanceOf[js.Any])
+    
+    inline def setCanvasFactoryUndefined: Self = StObject.set(x, "canvasFactory", js.undefined)
+    
+    inline def setCanvasMaxAreaInBytes(value: Boolean): Self = StObject.set(x, "canvasMaxAreaInBytes", value.asInstanceOf[js.Any])
+    
+    inline def setCanvasMaxAreaInBytesUndefined: Self = StObject.set(x, "canvasMaxAreaInBytes", js.undefined)
+    
     inline def setData(value: BinaryData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -278,6 +300,10 @@ object DocumentInitParameters {
     
     inline def setEnableXfaUndefined: Self = StObject.set(x, "enableXfa", js.undefined)
     
+    inline def setFilterFactory(value: js.Object): Self = StObject.set(x, "filterFactory", value.asInstanceOf[js.Any])
+    
+    inline def setFilterFactoryUndefined: Self = StObject.set(x, "filterFactory", js.undefined)
+    
     inline def setFontExtraProperties(value: Boolean): Self = StObject.set(x, "fontExtraProperties", value.asInstanceOf[js.Any])
     
     inline def setFontExtraPropertiesUndefined: Self = StObject.set(x, "fontExtraProperties", js.undefined)
@@ -285,10 +311,6 @@ object DocumentInitParameters {
     inline def setHttpHeaders(value: js.Object): Self = StObject.set(x, "httpHeaders", value.asInstanceOf[js.Any])
     
     inline def setHttpHeadersUndefined: Self = StObject.set(x, "httpHeaders", js.undefined)
-    
-    inline def setInitialData(value: TypedArray): Self = StObject.set(x, "initialData", value.asInstanceOf[js.Any])
-    
-    inline def setInitialDataUndefined: Self = StObject.set(x, "initialData", js.undefined)
     
     inline def setIsEvalSupported(value: Boolean): Self = StObject.set(x, "isEvalSupported", value.asInstanceOf[js.Any])
     

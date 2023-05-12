@@ -388,6 +388,12 @@ object typesMod {
   trait SagaMiddlewareOptions[C /* <: js.Object */] extends StObject {
     
     /**
+      * If provided, the middleware will use this channel instead of the default `stdChannel` for
+      * take and put effects.
+      */
+    var channel: js.UndefOr[MulticastChannel_[Action[Any]]] = js.undefined
+    
+    /**
       * Initial value of the saga's context.
       */
     var context: js.UndefOr[C] = js.undefined
@@ -419,6 +425,10 @@ object typesMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: SagaMiddlewareOptions[?], C /* <: js.Object */] (val x: Self & SagaMiddlewareOptions[C]) extends AnyVal {
+      
+      inline def setChannel(value: MulticastChannel_[Action[Any]]): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      
+      inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
       
       inline def setContext(value: C): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Enterprise extends StObject {
   
-  /** The slug version of the enterprise name. You can also substitute this value with the enterprise id. */
   var enterprise: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['enterprise'] */ js.Any
 }
 object Enterprise {

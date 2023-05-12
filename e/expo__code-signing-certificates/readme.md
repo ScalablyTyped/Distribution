@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo__code-signing-certificates
 
-Typings are for version 0.0.3
+Typings are for version 0.0.5
 
 ## Library description:
 A library for working with expo-updates code signing certificates

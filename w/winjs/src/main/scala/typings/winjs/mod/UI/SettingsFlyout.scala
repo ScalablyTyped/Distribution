@@ -14,7 +14,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#region Constructors
 /**
   * Creates a new SettingsFlyout object.
-  * @constructor
   * @param element The DOM element that will host the control.
   * @param options The set of properties and values to apply to the new SettingsFlyout.
   **/

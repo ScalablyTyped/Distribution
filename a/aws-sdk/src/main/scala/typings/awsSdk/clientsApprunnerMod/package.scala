@@ -162,6 +162,7 @@ type OperationSummaryList = js.Array[OperationSummary]
   - typings.awsSdk.awsSdkStrings.PAUSE_SERVICE
   - typings.awsSdk.awsSdkStrings.RESUME_SERVICE
   - typings.awsSdk.awsSdkStrings.DELETE_SERVICE
+  - typings.awsSdk.awsSdkStrings.UPDATE_SERVICE
   - java.lang.String
 */
 type OperationType = _OperationType | java.lang.String
@@ -184,6 +185,12 @@ type RoleArn = java.lang.String
   - java.lang.String
 */
 type Runtime = _Runtime | java.lang.String
+
+type RuntimeEnvironmentSecrets = StringDictionary[RuntimeEnvironmentSecretsValue]
+
+type RuntimeEnvironmentSecretsName = java.lang.String
+
+type RuntimeEnvironmentSecretsValue = java.lang.String
 
 type RuntimeEnvironmentVariables = StringDictionary[RuntimeEnvironmentVariablesValue]
 

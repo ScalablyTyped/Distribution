@@ -16,7 +16,7 @@ open class VueElement protected () extends StObject {
   
   /* private */ var _applyStyles: Any = js.native
   
-  /* Excluded from this release type: _instance */
+  /* removed internal: _instance */
   /* private */ var _connected: Any = js.native
   
   /* private */ var _createVNode: Any = js.native
@@ -40,8 +40,8 @@ open class VueElement protected () extends StObject {
   
   /* private */ var _styles: Any = js.native
   
-  /* Excluded from this release type: _getProp */
-  /* Excluded from this release type: _setProp */
+  /* removed internal: _getProp */
+  /* removed internal: _setProp */
   /* private */ var _update: Any = js.native
   
   def connectedCallback(): Unit = js.native

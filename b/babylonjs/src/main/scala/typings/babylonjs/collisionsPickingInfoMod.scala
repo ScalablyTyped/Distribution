@@ -39,7 +39,7 @@ object collisionsPickingInfoMod {
     /**
       * Gets the normal corresponding to the face the pick collided with
       * @param useWorldCoordinates If the resulting normal should be relative to the world (default: false)
-      * @param useVerticesNormals If the vertices normals should be used to calculate the normal instead of the normal map
+      * @param useVerticesNormals If the vertices normals should be used to calculate the normal instead of the normal map (default: true)
       * @returns The normal corresponding to the face the pick collided with
       * @remarks Note that the returned normal will always point towards the picking ray.
       */
@@ -50,9 +50,11 @@ object collisionsPickingInfoMod {
     
     /**
       * Gets the texture coordinates of where the pick occurred
-      * @returns the vector containing the coordinates of the texture
+      * @param uvSet The UV set to use to calculate the texture coordinates (default: VertexBuffer.UVKind)
+      * @returns The vector containing the coordinates of the texture
       */
     def getTextureCoordinates(): Nullable[Vector2] = js.native
+    def getTextureCoordinates(uvSet: String): Nullable[Vector2] = js.native
     
     /**
       * The grip-space transform of the input used for picking, if it is an XR input source.
@@ -71,7 +73,7 @@ object collisionsPickingInfoMod {
     var originMesh: Nullable[AbstractMesh] = js.native
     
     /**
-      * The mesh corresponding the the pick collision
+      * The mesh corresponding the pick collision
       */
     var pickedMesh: Nullable[AbstractMesh] = js.native
     
@@ -91,7 +93,7 @@ object collisionsPickingInfoMod {
     /** The index of the face on the subMesh that was picked, or the index of the Line if the picked Mesh is a LinesMesh */
     var subMeshFaceId: Double = js.native
     
-    /** Id of the the submesh that was picked */
+    /** Id of the submesh that was picked */
     var subMeshId: Double = js.native
     
     /** If we are picking a mesh with thin instance, this will give you the picked thin instance */

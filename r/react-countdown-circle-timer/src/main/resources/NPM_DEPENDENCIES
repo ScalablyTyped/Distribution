@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-countdown-circle-timer" : "3.0.9"
+      "react-countdown-circle-timer" : "3.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "react-countdown-circle-timer" : "3.0.9"
+      "react-countdown-circle-timer" : "3.2.1"
     }
   ],
   "compile-devDependencies" : [

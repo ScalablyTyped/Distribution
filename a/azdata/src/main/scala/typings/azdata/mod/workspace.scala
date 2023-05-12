@@ -45,7 +45,7 @@ object workspace {
     def openEditor(position: ViewColumn): Thenable[Unit] = js.native
     
     /**
-      * Registers a save handler for this editor. This will be called if [supportsSave](#ModelViewEditorOptions.supportsSave)
+      * Registers a save handler for this editor. This will be called if {@link ModelViewEditorOptions.supportsSave}
       * is set to true and the editor is marked as dirty
       */
     def registerSaveHandler(handler: js.Function0[Thenable[Boolean]]): Unit = js.native

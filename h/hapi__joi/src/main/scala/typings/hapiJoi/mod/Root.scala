@@ -221,7 +221,7 @@ trait Root extends StObject {
   /**
     * Generates a schema object that matches an object data type (as well as JSON strings that have been parsed into objects).
     */
-  // tslint:disable-next-line:no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   def `object`[TSchema, T](): ObjectSchema[TSchema] = js.native
   def `object`[TSchema, T](schema: SchemaMap[T]): ObjectSchema[TSchema] = js.native
   

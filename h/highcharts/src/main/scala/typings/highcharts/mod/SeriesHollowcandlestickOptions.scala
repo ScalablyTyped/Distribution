@@ -36,6 +36,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   ] = js.undefined
   
   /**
+    * Not available
+    */
+  var dataParser: Unit
+  
+  /**
+    * Not available
+    */
+  var dataURL: Unit
+  
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
     * be used after render time to get a pointer to the series object through
     * `chart.get()`.
@@ -102,8 +112,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object SeriesHollowcandlestickOptions {
   
-  inline def apply(`type`: String | hollowcandlestick): SeriesHollowcandlestickOptions = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(dataParser: Unit, dataURL: Unit, `type`: String | hollowcandlestick): SeriesHollowcandlestickOptions = {
+    val __obj = js.Dynamic.literal(dataParser = dataParser.asInstanceOf[js.Any], dataURL = dataURL.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesHollowcandlestickOptions]
   }
@@ -116,6 +126,10 @@ object SeriesHollowcandlestickOptions {
           (js.Tuple4[Double | String, Double, Double, Double]) | (js.Tuple5[Double | String, Double, Double, Double, Double]) | PointOptionsObject
         ]
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataParser(value: Unit): Self = StObject.set(x, "dataParser", value.asInstanceOf[js.Any])
+    
+    inline def setDataURL(value: Unit): Self = StObject.set(x, "dataURL", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     

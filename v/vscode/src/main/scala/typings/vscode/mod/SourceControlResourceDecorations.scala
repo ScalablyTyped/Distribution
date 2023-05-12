@@ -9,31 +9,31 @@ trait SourceControlResourceDecorations
      with SourceControlResourceThemableDecorations {
   
   /**
-    * The dark theme decorations.
-    */
+  		 * The dark theme decorations.
+  		 */
   val dark: js.UndefOr[SourceControlResourceThemableDecorations] = js.undefined
   
   /**
-    * Whether the {@link SourceControlResourceState source control resource state} should
-    * be faded in the UI.
-    */
+  		 * Whether the {@link SourceControlResourceState source control resource state} should
+  		 * be faded in the UI.
+  		 */
   val faded: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The light theme decorations.
-    */
+  		 * The light theme decorations.
+  		 */
   val light: js.UndefOr[SourceControlResourceThemableDecorations] = js.undefined
   
   /**
-    * Whether the {@link SourceControlResourceState source control resource state} should
-    * be striked-through in the UI.
-    */
+  		 * Whether the {@link SourceControlResourceState source control resource state} should
+  		 * be striked-through in the UI.
+  		 */
   val strikeThrough: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The title for a specific
-    * {@link SourceControlResourceState source control resource state}.
-    */
+  		 * The title for a specific
+  		 * {@link SourceControlResourceState source control resource state}.
+  		 */
   val tooltip: js.UndefOr[String] = js.undefined
 }
 object SourceControlResourceDecorations {

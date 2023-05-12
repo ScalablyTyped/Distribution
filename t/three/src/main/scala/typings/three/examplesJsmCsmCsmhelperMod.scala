@@ -1,6 +1,7 @@
 package typings.three
 
 import typings.three.examplesJsmCsmCsmMod.CSM
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcThreeMod.Box3Helper
 import typings.three.srcThreeMod.BufferGeometry
 import typings.three.srcThreeMod.Group
@@ -34,7 +35,7 @@ object examplesJsmCsmCsmhelperMod {
     
     def dispose(): Unit = js.native
     
-    var frustumLines: LineSegments[BufferGeometry, LineBasicMaterial] = js.native
+    var frustumLines: LineSegments[BufferGeometry[NormalBufferAttributes], LineBasicMaterial] = js.native
     
     var shadowLines: js.Array[Box3Helper] = js.native
     

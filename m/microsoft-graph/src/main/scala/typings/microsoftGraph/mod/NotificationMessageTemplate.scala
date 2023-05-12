@@ -10,7 +10,8 @@ trait NotificationMessageTemplate
   
   /**
     * The Message Template Branding Options. Branding is defined in the Intune Admin Console. Possible values are: none,
-    * includeCompanyLogo, includeCompanyName, includeContactInformation, includeDeviceDetails.
+    * includeCompanyLogo, includeCompanyName, includeContactInformation, includeCompanyPortalLink, includeDeviceDetails,
+    * unknownFutureValue.
     */
   var brandingOptions: js.UndefOr[NotificationTemplateBrandingOptions] = js.undefined
   
@@ -25,6 +26,9 @@ trait NotificationMessageTemplate
   
   // The list of localized messages for this Notification Message Template.
   var localizedNotificationMessages: js.UndefOr[NullableOption[js.Array[LocalizedNotificationMessage]]] = js.undefined
+  
+  // List of Scope Tags for this Entity instance.
+  var roleScopeTagIds: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
 }
 object NotificationMessageTemplate {
   
@@ -61,5 +65,13 @@ object NotificationMessageTemplate {
     inline def setLocalizedNotificationMessagesUndefined: Self = StObject.set(x, "localizedNotificationMessages", js.undefined)
     
     inline def setLocalizedNotificationMessagesVarargs(value: LocalizedNotificationMessage*): Self = StObject.set(x, "localizedNotificationMessages", js.Array(value*))
+    
+    inline def setRoleScopeTagIds(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "roleScopeTagIds", value.asInstanceOf[js.Any])
+    
+    inline def setRoleScopeTagIdsNull: Self = StObject.set(x, "roleScopeTagIds", null)
+    
+    inline def setRoleScopeTagIdsUndefined: Self = StObject.set(x, "roleScopeTagIds", js.undefined)
+    
+    inline def setRoleScopeTagIdsVarargs(value: String*): Self = StObject.set(x, "roleScopeTagIds", js.Array(value*))
   }
 }

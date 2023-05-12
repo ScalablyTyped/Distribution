@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BoxOrdinalGroup
+import typings.csstype.mod.Property.FontLanguageOverride
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `186` extends StObject {
   
   var value: js.UndefOr[
-    BoxOrdinalGroup | (js.Array[
+    FontLanguageOverride | (js.Array[
       (Extract[
-        js.UndefOr[BoxOrdinalGroup | js.Array[NonNullable[js.UndefOr[BoxOrdinalGroup]]]], 
+        js.UndefOr[FontLanguageOverride | js.Array[NonNullable[js.UndefOr[FontLanguageOverride]]]], 
         String
-      ]) | NonNullable[js.UndefOr[BoxOrdinalGroup]]
+      ]) | NonNullable[js.UndefOr[FontLanguageOverride]]
     ])
   ] = js.native
 }

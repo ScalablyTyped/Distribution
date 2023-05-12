@@ -58,6 +58,13 @@ trait OnlineMeeting
     */
   var joinInformation: js.UndefOr[NullableOption[ItemBody]] = js.undefined
   
+  /**
+    * Specifies the joinMeetingId, the meeting passcode, and the requirement for the passcode. Once an onlineMeeting is
+    * created, the joinMeetingIdSettings cannot be modified. To make any changes to this property, the meeting needs to be
+    * canceled and a new one needs to be created.
+    */
+  var joinMeetingIdSettings: js.UndefOr[NullableOption[JoinMeetingIdSettings]] = js.undefined
+  
   // The join URL of the online meeting. Read-only.
   var joinWebUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
@@ -78,6 +85,9 @@ trait OnlineMeeting
   
   // The video teleconferencing ID. Read-only.
   var videoTeleconferenceId: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  // Specifies whether a watermark should be applied to a content type by the client application.
+  var watermarkProtection: js.UndefOr[NullableOption[WatermarkProtectionValues]] = js.undefined
 }
 object OnlineMeeting {
   
@@ -187,6 +197,12 @@ object OnlineMeeting {
     
     inline def setJoinInformationUndefined: Self = StObject.set(x, "joinInformation", js.undefined)
     
+    inline def setJoinMeetingIdSettings(value: NullableOption[JoinMeetingIdSettings]): Self = StObject.set(x, "joinMeetingIdSettings", value.asInstanceOf[js.Any])
+    
+    inline def setJoinMeetingIdSettingsNull: Self = StObject.set(x, "joinMeetingIdSettings", null)
+    
+    inline def setJoinMeetingIdSettingsUndefined: Self = StObject.set(x, "joinMeetingIdSettings", js.undefined)
+    
     inline def setJoinWebUrl(value: NullableOption[String]): Self = StObject.set(x, "joinWebUrl", value.asInstanceOf[js.Any])
     
     inline def setJoinWebUrlNull: Self = StObject.set(x, "joinWebUrl", null)
@@ -228,5 +244,11 @@ object OnlineMeeting {
     inline def setVideoTeleconferenceIdNull: Self = StObject.set(x, "videoTeleconferenceId", null)
     
     inline def setVideoTeleconferenceIdUndefined: Self = StObject.set(x, "videoTeleconferenceId", js.undefined)
+    
+    inline def setWatermarkProtection(value: NullableOption[WatermarkProtectionValues]): Self = StObject.set(x, "watermarkProtection", value.asInstanceOf[js.Any])
+    
+    inline def setWatermarkProtectionNull: Self = StObject.set(x, "watermarkProtection", null)
+    
+    inline def setWatermarkProtectionUndefined: Self = StObject.set(x, "watermarkProtection", js.undefined)
   }
 }

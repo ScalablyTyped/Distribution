@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "signal-exit" : "4.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "signal-exit" : "4.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

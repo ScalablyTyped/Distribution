@@ -1,7 +1,7 @@
 
 # Scala.js typings for js-md5
 
-Typings are for version 0.4
+Typings are for version 0.7
 
 ## Library description:
 A simple MD5 hash function for JavaScript supports UTF-8 encoding.

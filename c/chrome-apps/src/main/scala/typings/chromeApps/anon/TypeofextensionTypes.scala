@@ -8,7 +8,6 @@ trait TypeofextensionTypes extends StObject {
   
   /**
     * Internal interfaces, not to be used directly
-    * @private
     * @internal
     */
   val _internal_ : Any

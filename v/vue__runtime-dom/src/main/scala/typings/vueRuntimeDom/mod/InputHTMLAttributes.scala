@@ -21,10 +21,8 @@ trait InputHTMLAttributes
   
   var capture: js.UndefOr[Boolean | user | environment] = js.undefined
   
-  // https://www.w3.org/tr/html-media-capture/#the-capture-attribute
   var checked: js.UndefOr[Booleanish | js.Array[Any] | Set[Any]] = js.undefined
   
-  // for IDE v-model multi-checkbox support
   var crossorigin: js.UndefOr[String] = js.undefined
   
   var disabled: js.UndefOr[Booleanish] = js.undefined
@@ -75,7 +73,6 @@ trait InputHTMLAttributes
   
   var value: js.UndefOr[Any] = js.undefined
   
-  // we support :value to be bound to anything w/ v-model
   var width: js.UndefOr[Numberish] = js.undefined
 }
 object InputHTMLAttributes {

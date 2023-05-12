@@ -13,6 +13,8 @@ import typings.nivoCore.mod.PropertyAccessor
 import typings.nivoLegends.distTypesTypesMod.LegendProps
 import typings.react.mod.MemoExoticComponent
 import typings.react.mod.global.JSX.Element
+import typings.reactSpringCore.mod.SpringConfig
+import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -277,10 +279,8 @@ object distTypesDefaultsMod {
     
     @JSImport("@nivo/chord/dist/types/defaults", "commonDefaultProps.motionConfig")
     @js.native
-    def motionConfig: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any) = js.native
-    inline def motionConfig_=(
-      x: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("motionConfig")(x.asInstanceOf[js.Any])
+    def motionConfig: String | SpringConfig = js.native
+    inline def motionConfig_=(x: String | SpringConfig): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("motionConfig")(x.asInstanceOf[js.Any])
     
     @JSImport("@nivo/chord/dist/types/defaults", "commonDefaultProps.padAngle")
     @js.native
@@ -432,8 +432,8 @@ object distTypesDefaultsMod {
     
     @JSImport("@nivo/chord/dist/types/defaults", "svgDefaultProps.ribbonBlendMode")
     @js.native
-    def ribbonBlendMode: CssMixBlendMode = js.native
-    inline def ribbonBlendMode_=(x: CssMixBlendMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ribbonBlendMode")(x.asInstanceOf[js.Any])
+    def ribbonBlendMode: NonNullable[js.UndefOr[CssMixBlendMode]] = js.native
+    inline def ribbonBlendMode_=(x: NonNullable[js.UndefOr[CssMixBlendMode]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ribbonBlendMode")(x.asInstanceOf[js.Any])
     
     @JSImport("@nivo/chord/dist/types/defaults", "svgDefaultProps.ribbonBorderColor")
     @js.native

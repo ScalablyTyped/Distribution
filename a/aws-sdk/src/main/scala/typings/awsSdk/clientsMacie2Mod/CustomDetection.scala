@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CustomDetection extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the custom data identifier.
+    * The unique identifier for the custom data identifier.
     */
   var arn: js.UndefOr[string] = js.undefined
   

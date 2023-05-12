@@ -16,7 +16,7 @@ object libIconsGithubOutlinedMod extends Shortcut {
   @js.native
   trait GithubOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_GithubOutlinedIconType: String = js.native

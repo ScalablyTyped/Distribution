@@ -6,55 +6,60 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Magenta extends StObject {
   
-  var blue: BoldPaintToken
+  var blue: BolderDefault
   
-  var green: BoldPaintToken
+  var gray: BolderDefault
   
-  var magenta: BoldPaintToken
+  var green: BolderDefault
   
-  var orange: BoldPaintToken
+  var magenta: BolderDefault
   
-  var purple: BoldPaintToken
+  var orange: BolderDefault
   
-  var red: BoldPaintToken
+  var purple: BolderDefault
   
-  var teal: BoldPaintToken
+  var red: BolderDefault
   
-  var yellow: BoldPaintToken
+  var teal: BolderDefault
+  
+  var yellow: BolderDefault
 }
 object Magenta {
   
   inline def apply(
-    blue: BoldPaintToken,
-    green: BoldPaintToken,
-    magenta: BoldPaintToken,
-    orange: BoldPaintToken,
-    purple: BoldPaintToken,
-    red: BoldPaintToken,
-    teal: BoldPaintToken,
-    yellow: BoldPaintToken
+    blue: BolderDefault,
+    gray: BolderDefault,
+    green: BolderDefault,
+    magenta: BolderDefault,
+    orange: BolderDefault,
+    purple: BolderDefault,
+    red: BolderDefault,
+    teal: BolderDefault,
+    yellow: BolderDefault
   ): Magenta = {
-    val __obj = js.Dynamic.literal(blue = blue.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], magenta = magenta.asInstanceOf[js.Any], orange = orange.asInstanceOf[js.Any], purple = purple.asInstanceOf[js.Any], red = red.asInstanceOf[js.Any], teal = teal.asInstanceOf[js.Any], yellow = yellow.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(blue = blue.asInstanceOf[js.Any], gray = gray.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], magenta = magenta.asInstanceOf[js.Any], orange = orange.asInstanceOf[js.Any], purple = purple.asInstanceOf[js.Any], red = red.asInstanceOf[js.Any], teal = teal.asInstanceOf[js.Any], yellow = yellow.asInstanceOf[js.Any])
     __obj.asInstanceOf[Magenta]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Magenta] (val x: Self) extends AnyVal {
     
-    inline def setBlue(value: BoldPaintToken): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
+    inline def setBlue(value: BolderDefault): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
     
-    inline def setGreen(value: BoldPaintToken): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
+    inline def setGray(value: BolderDefault): Self = StObject.set(x, "gray", value.asInstanceOf[js.Any])
     
-    inline def setMagenta(value: BoldPaintToken): Self = StObject.set(x, "magenta", value.asInstanceOf[js.Any])
+    inline def setGreen(value: BolderDefault): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
     
-    inline def setOrange(value: BoldPaintToken): Self = StObject.set(x, "orange", value.asInstanceOf[js.Any])
+    inline def setMagenta(value: BolderDefault): Self = StObject.set(x, "magenta", value.asInstanceOf[js.Any])
     
-    inline def setPurple(value: BoldPaintToken): Self = StObject.set(x, "purple", value.asInstanceOf[js.Any])
+    inline def setOrange(value: BolderDefault): Self = StObject.set(x, "orange", value.asInstanceOf[js.Any])
     
-    inline def setRed(value: BoldPaintToken): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
+    inline def setPurple(value: BolderDefault): Self = StObject.set(x, "purple", value.asInstanceOf[js.Any])
     
-    inline def setTeal(value: BoldPaintToken): Self = StObject.set(x, "teal", value.asInstanceOf[js.Any])
+    inline def setRed(value: BolderDefault): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
     
-    inline def setYellow(value: BoldPaintToken): Self = StObject.set(x, "yellow", value.asInstanceOf[js.Any])
+    inline def setTeal(value: BolderDefault): Self = StObject.set(x, "teal", value.asInstanceOf[js.Any])
+    
+    inline def setYellow(value: BolderDefault): Self = StObject.set(x, "yellow", value.asInstanceOf[js.Any])
   }
 }

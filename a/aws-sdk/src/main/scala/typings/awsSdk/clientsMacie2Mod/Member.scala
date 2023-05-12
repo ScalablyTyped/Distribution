@@ -22,12 +22,12 @@ trait Member extends StObject {
   var arn: js.UndefOr[string] = js.undefined
   
   /**
-    * The email address for the account.
+    * The email address for the account. This value is null if the account is associated with the administrator account through Organizations.
     */
   var email: js.UndefOr[string] = js.undefined
   
   /**
-    * The date and time, in UTC and extended ISO 8601 format, when an Amazon Macie membership invitation was last sent to the account. This value is null if an invitation hasn't been sent to the account.
+    * The date and time, in UTC and extended ISO 8601 format, when an Amazon Macie membership invitation was last sent to the account. This value is null if a Macie membership invitation hasn't been sent to the account.
     */
   var invitedAt: js.UndefOr[js.Date] = js.undefined
   

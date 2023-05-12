@@ -22,6 +22,11 @@ trait NetworkInfo extends StObject {
   var EfaSupported: js.UndefOr[EfaSupportedFlag] = js.undefined
   
   /**
+    * Indicates whether the instance type supports ENA Express. ENA Express uses Amazon Web Services Scalable Reliable Datagram (SRD) technology to increase the maximum bandwidth used per stream and minimize tail latency of network traffic between EC2 instances.
+    */
+  var EnaSrdSupported: js.UndefOr[typings.awsSdk.clientsEc2Mod.EnaSrdSupported] = js.undefined
+  
+  /**
     * Indicates whether Elastic Network Adapter (ENA) is supported.
     */
   var EnaSupport: js.UndefOr[typings.awsSdk.clientsEc2Mod.EnaSupport] = js.undefined
@@ -87,6 +92,10 @@ object NetworkInfo {
     inline def setEfaSupported(value: EfaSupportedFlag): Self = StObject.set(x, "EfaSupported", value.asInstanceOf[js.Any])
     
     inline def setEfaSupportedUndefined: Self = StObject.set(x, "EfaSupported", js.undefined)
+    
+    inline def setEnaSrdSupported(value: EnaSrdSupported): Self = StObject.set(x, "EnaSrdSupported", value.asInstanceOf[js.Any])
+    
+    inline def setEnaSrdSupportedUndefined: Self = StObject.set(x, "EnaSrdSupported", js.undefined)
     
     inline def setEnaSupport(value: EnaSupport): Self = StObject.set(x, "EnaSupport", value.asInstanceOf[js.Any])
     

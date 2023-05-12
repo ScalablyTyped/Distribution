@@ -13,7 +13,7 @@ trait PackageDependency extends StObject {
   var _package: js.UndefOr[PackageName] = js.undefined
   
   /**
-    *  The type of a package dependency. The possible values depend on the package type. Example types are compile, runtime, and test for Maven packages, and dev, prod, and optional for npm packages. 
+    *  The type of a package dependency. The possible values depend on the package type.   npm: regular, dev, peer, optional    maven: optional, parent, compile, runtime, test, system, provided.  Note that parent is not a regular Maven dependency type; instead this is extracted from the &lt;parent&gt; element if one is defined in the package version's POM file.    nuget: The dependencyType field is never set for NuGet packages.   pypi: Requires-Dist   
     */
   var dependencyType: js.UndefOr[String] = js.undefined
   

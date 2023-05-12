@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OntapVolumeConfiguration extends StObject {
   
   /**
+    * A boolean flag indicating whether tags for the volume should be copied to backups. This value defaults to false. If it's set to true, all tags for the volume are copied to all automatic and user-initiated backups where the user doesn't specify tags. If this value is true, and you specify one or more tags, only the specified tags are copied to backups. If you specify one or more tags when creating a user-initiated backup, no tags are copied from the volume, regardless of this value.
+    */
+  var CopyTagsToBackups: js.UndefOr[Flag] = js.undefined
+  
+  /**
     * Specifies the FlexCache endpoint type of the volume. Valid values are the following:    NONE specifies that the volume doesn't have a FlexCache configuration. NONE is the default.    ORIGIN specifies that the volume is the origin volume for a FlexCache volume.    CACHE specifies that the volume is a FlexCache volume.  
     */
   var FlexCacheEndpointType: js.UndefOr[typings.awsSdk.clientsFsxMod.FlexCacheEndpointType] = js.undefined
@@ -30,6 +35,11 @@ trait OntapVolumeConfiguration extends StObject {
     * The configured size of the volume, in megabytes (MBs).
     */
   var SizeInMegabytes: js.UndefOr[VolumeCapacity] = js.undefined
+  
+  /**
+    * Specifies the snapshot policy for the volume. There are three built-in snapshot policies:    default: This is the default policy. A maximum of six hourly snapshots taken five minutes past the hour. A maximum of two daily snapshots taken Monday through Saturday at 10 minutes after midnight. A maximum of two weekly snapshots taken every Sunday at 15 minutes after midnight.    default-1weekly: This policy is the same as the default policy except that it only retains one snapshot from the weekly schedule.    none: This policy does not take any snapshots. This policy can be assigned to volumes to prevent automatic snapshots from being taken.   You can also provide the name of a custom policy that you created with the ONTAP CLI or REST API. For more information, see Snapshot policies in the Amazon FSx for NetApp ONTAP User Guide.
+    */
+  var SnapshotPolicy: js.UndefOr[typings.awsSdk.clientsFsxMod.SnapshotPolicy] = js.undefined
   
   /**
     * The volume's storage efficiency setting.
@@ -66,6 +76,10 @@ object OntapVolumeConfiguration {
   @scala.inline
   implicit open class MutableBuilder[Self <: OntapVolumeConfiguration] (val x: Self) extends AnyVal {
     
+    inline def setCopyTagsToBackups(value: Flag): Self = StObject.set(x, "CopyTagsToBackups", value.asInstanceOf[js.Any])
+    
+    inline def setCopyTagsToBackupsUndefined: Self = StObject.set(x, "CopyTagsToBackups", js.undefined)
+    
     inline def setFlexCacheEndpointType(value: FlexCacheEndpointType): Self = StObject.set(x, "FlexCacheEndpointType", value.asInstanceOf[js.Any])
     
     inline def setFlexCacheEndpointTypeUndefined: Self = StObject.set(x, "FlexCacheEndpointType", js.undefined)
@@ -85,6 +99,10 @@ object OntapVolumeConfiguration {
     inline def setSizeInMegabytes(value: VolumeCapacity): Self = StObject.set(x, "SizeInMegabytes", value.asInstanceOf[js.Any])
     
     inline def setSizeInMegabytesUndefined: Self = StObject.set(x, "SizeInMegabytes", js.undefined)
+    
+    inline def setSnapshotPolicy(value: SnapshotPolicy): Self = StObject.set(x, "SnapshotPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setSnapshotPolicyUndefined: Self = StObject.set(x, "SnapshotPolicy", js.undefined)
     
     inline def setStorageEfficiencyEnabled(value: Flag): Self = StObject.set(x, "StorageEfficiencyEnabled", value.asInstanceOf[js.Any])
     

@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-  * Used for setting the map&#39;s camera options.
-  */
 trait CameraOptions extends StObject {
   
   var center: js.UndefOr[LatLngLiteral | LatLng] = js.undefined

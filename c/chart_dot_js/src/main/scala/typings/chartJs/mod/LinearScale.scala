@@ -1,12 +1,12 @@
 package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.chartJs.typesBasicMod.AnyObject
+import typings.chartJs.distTypesBasicMod.AnyObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined chart.js.chart.js.ChartComponent & {  prototype :chart.js.chart.js.LinearScale<chart.js.chart.js.LinearScaleOptions>, new <O extends chart.js.chart.js.LinearScaleOptions = chart.js.chart.js.LinearScaleOptions>(cfg : chart.js.chart.js/types/basic.AnyObject): chart.js.chart.js.LinearScale<O>} */
+/* Inlined chart.js.chart.js/dist/types/index.ChartComponent & {  prototype :chart.js.chart.js/dist/types/index.LinearScale<chart.js.chart.js/dist/types/index.LinearScaleOptions>, new <O extends chart.js.chart.js/dist/types/index.LinearScaleOptions = chart.js.chart.js/dist/types/index.LinearScaleOptions>(cfg : chart.js.chart.js/dist/types/basic.AnyObject): chart.js.chart.js/dist/types/index.LinearScale<O>} */
 object LinearScale {
   
   @JSImport("chart.js", "LinearScale")

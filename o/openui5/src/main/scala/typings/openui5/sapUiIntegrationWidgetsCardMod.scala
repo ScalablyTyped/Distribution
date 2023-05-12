@@ -13,6 +13,8 @@ import typings.openui5.sapUiCoreLibraryMod.MessageType
 import typings.openui5.sapUiCoreLibraryMod.URI
 import typings.openui5.sapUiIntegrationLibraryMod.CardArea
 import typings.openui5.sapUiIntegrationLibraryMod.CardDataMode
+import typings.openui5.sapUiIntegrationLibraryMod.CardDesign
+import typings.openui5.sapUiIntegrationLibraryMod.CardPreviewMode
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -160,6 +162,10 @@ object sapUiIntegrationWidgetsCardMod {
       *
       * Fired when an action is triggered on the card.
       *
+      * When an action is triggered in the card it can be handled on several places by "action" event handlers.
+      * In consecutive order those places are: `Extension`, `Card`, `Host`. Each of them can prevent the next
+      * one to handle the action by calling `oEvent.preventDefault()`.
+      *
       * @returns Reference to `this` in order to allow method chaining
       */
     def attachAction(
@@ -188,6 +194,10 @@ object sapUiIntegrationWidgetsCardMod {
       * otherwise it will be bound to this `sap.ui.integration.widgets.Card` itself.
       *
       * Fired when an action is triggered on the card.
+      *
+      * When an action is triggered in the card it can be handled on several places by "action" event handlers.
+      * In consecutive order those places are: `Extension`, `Card`, `Host`. Each of them can prevent the next
+      * one to handle the action by calling `oEvent.preventDefault()`.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
@@ -642,6 +652,7 @@ object sapUiIntegrationWidgetsCardMod {
     /**
       * @EXPERIMENTAL (since 1.64) - Disclaimer: this event is in a beta state - incompatible API changes may
       * be done before its official public release. Use at your own discretion.
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:action action} to attached listeners.
       *
@@ -658,6 +669,7 @@ object sapUiIntegrationWidgetsCardMod {
     
     /**
       * @EXPERIMENTAL (since 1.96)
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:configurationChange configurationChange} to attached listeners.
       *
@@ -670,6 +682,8 @@ object sapUiIntegrationWidgetsCardMod {
     mParameters: Changes): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:manifestApplied manifestApplied} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -682,6 +696,7 @@ object sapUiIntegrationWidgetsCardMod {
     
     /**
       * @EXPERIMENTAL (since 1.72)
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:manifestReady manifestReady} to attached listeners.
       *
@@ -695,6 +710,7 @@ object sapUiIntegrationWidgetsCardMod {
     
     /**
       * @EXPERIMENTAL (since 1.107)
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:stateChanged stateChanged} to attached listeners.
       *
@@ -754,11 +770,25 @@ object sapUiIntegrationWidgetsCardMod {
       *
       * Defines the state of the `Card`. When set to `Inactive`, the `Card` doesn't make requests.
       *
-      * Default value is `Active`.
+      * Default value is `Auto`.
       *
       * @returns Value of property `dataMode`
       */
     def getDataMode(): CardDataMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CardDataMode * / any */ String) = js.native
+    
+    /**
+      * @SINCE 1.109
+      * @EXPERIMENTAL (since 1.109)
+      *
+      * Gets current value of property {@link #getDesign design}.
+      *
+      * Defines the design of the `Card`.
+      *
+      * Default value is `Solid`.
+      *
+      * @returns Value of property `design`
+      */
+    def getDesign(): CardDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CardDesign * / any */ String) = js.native
     
     /**
       * ID of the element which is the current target of the association {@link #getHost host}, or `null`.
@@ -841,7 +871,26 @@ object sapUiIntegrationWidgetsCardMod {
     def getManifestEntry(/**
       * The path to return a value for.
       */
-    sPath: String): js.Object = js.native
+    sPath: String): Any = js.native
+    
+    /**
+      * @SINCE 1.112
+      * @EXPERIMENTAL (since 1.112)
+      *
+      * Gets current value of property {@link #getPreviewMode previewMode}.
+      *
+      * Preview mode of the `Card`. Helpful in scenarios when the end user is choosing or configuring a card.
+      *
+      * 	 - When set to "MockData", the card data is loaded, using a data request, as configured in the "data/mockData"
+      * 			in the manifest. If such configuration is missing, then the real data is loaded.
+      * 	 - When set to "Abstract", the card shows abstract placeholder without loading data.
+      * 	 - When set to "Off", the card displays real data.
+      *
+      * Default value is `Off`.
+      *
+      * @returns Value of property `previewMode`
+      */
+    def getPreviewMode(): CardPreviewMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CardPreviewMode * / any */ String) = js.native
     
     /**
       * Gets current value of property {@link #getReferenceId referenceId}.
@@ -997,7 +1046,7 @@ object sapUiIntegrationWidgetsCardMod {
       *
       * @returns Promise resolves after the designtime configuration is loaded.
       */
-    def loadDesigntime(): js.Promise[Any] = js.native
+    def loadDesigntime(): js.Promise[js.Object] = js.native
     
     /**
       * @EXPERIMENTAL (since 1.65) - The API might change.
@@ -1070,7 +1119,7 @@ object sapUiIntegrationWidgetsCardMod {
     def resolveDestination(/**
       * The destination's key used in the configuration.
       */
-    sKey: String): js.Promise[Any] = js.native
+    sKey: String): js.Promise[String] = js.native
     
     /**
       * @SINCE 1.70
@@ -1109,6 +1158,32 @@ object sapUiIntegrationWidgetsCardMod {
       * The mode to set to the Card.
       */
     sMode: CardDataMode): this.type = js.native
+    
+    /**
+      * @SINCE 1.109
+      * @EXPERIMENTAL (since 1.109)
+      *
+      * Sets a new value for property {@link #getDesign design}.
+      *
+      * Defines the design of the `Card`.
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * Default value is `Solid`.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setDesign(): this.type = js.native
+    def setDesign(
+      /**
+      * New value for property `design`
+      */
+    sDesign: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CardDesign * / any */ String
+    ): this.type = js.native
+    def setDesign(/**
+      * New value for property `design`
+      */
+    sDesign: CardDesign): this.type = js.native
     
     def setHost(
       /**
@@ -1199,6 +1274,37 @@ object sapUiIntegrationWidgetsCardMod {
       * New value for property `manifestChanges`
       */
     sManifestChanges: js.Array[js.Object]): this.type = js.native
+    
+    /**
+      * @SINCE 1.112
+      * @EXPERIMENTAL (since 1.112)
+      *
+      * Sets a new value for property {@link #getPreviewMode previewMode}.
+      *
+      * Preview mode of the `Card`. Helpful in scenarios when the end user is choosing or configuring a card.
+      *
+      * 	 - When set to "MockData", the card data is loaded, using a data request, as configured in the "data/mockData"
+      * 			in the manifest. If such configuration is missing, then the real data is loaded.
+      * 	 - When set to "Abstract", the card shows abstract placeholder without loading data.
+      * 	 - When set to "Off", the card displays real data.
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * Default value is `Off`.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setPreviewMode(): this.type = js.native
+    def setPreviewMode(
+      /**
+      * New value for property `previewMode`
+      */
+    sPreviewMode: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CardPreviewMode * / any */ String
+    ): this.type = js.native
+    def setPreviewMode(/**
+      * New value for property `previewMode`
+      */
+    sPreviewMode: CardPreviewMode): this.type = js.native
     
     /**
       * Sets a new value for property {@link #getReferenceId referenceId}.
@@ -1361,7 +1467,7 @@ object sapUiIntegrationWidgetsCardMod {
     def getManifestEntry(/**
       * The path to return a value for.
       */
-    sPath: String): js.Object = js.native
+    sPath: String): Any = js.native
     
     /**
       * @EXPERIMENTAL (since 1.65) - This property might be changed in future.
@@ -1555,7 +1661,7 @@ object sapUiIntegrationWidgetsCardMod {
     def resolveDestination(/**
       * The destination's key used in the configuration.
       */
-    sKey: String): js.Promise[Any] = js.native
+    sKey: String): js.Promise[String] = js.native
     
     /**
       * Displays the loading placeholders on the whole card, or a particular area of the card. **Note:** Only
@@ -1648,6 +1754,10 @@ object sapUiIntegrationWidgetsCardMod {
       * be done before its official public release. Use at your own discretion.
       *
       * Fired when an action is triggered on the card.
+      *
+      * When an action is triggered in the card it can be handled on several places by "action" event handlers.
+      * In consecutive order those places are: `Extension`, `Card`, `Host`. Each of them can prevent the next
+      * one to handle the action by calling `oEvent.preventDefault()`.
       */
     var action: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
     
@@ -1688,6 +1798,16 @@ object sapUiIntegrationWidgetsCardMod {
       */
     var dataMode: js.UndefOr[
         CardDataMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CardDataMode * / any */ String) | PropertyBindingInfo
+      ] = js.undefined
+    
+    /**
+      * @SINCE 1.109
+      * @EXPERIMENTAL (since 1.109)
+      *
+      * Defines the design of the `Card`.
+      */
+    var design: js.UndefOr[
+        CardDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CardDesign * / any */ String) | PropertyBindingInfo
       ] = js.undefined
     
     /**
@@ -1771,6 +1891,21 @@ object sapUiIntegrationWidgetsCardMod {
       ] = js.undefined
     
     /**
+      * @SINCE 1.112
+      * @EXPERIMENTAL (since 1.112)
+      *
+      * Preview mode of the `Card`. Helpful in scenarios when the end user is choosing or configuring a card.
+      *
+      * 	 - When set to "MockData", the card data is loaded, using a data request, as configured in the "data/mockData"
+      * 			in the manifest. If such configuration is missing, then the real data is loaded.
+      * 	 - When set to "Abstract", the card shows abstract placeholder without loading data.
+      * 	 - When set to "Off", the card displays real data.
+      */
+    var previewMode: js.UndefOr[
+        CardPreviewMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CardPreviewMode * / any */ String) | PropertyBindingInfo
+      ] = js.undefined
+    
+    /**
       * Optional property which can be used by the host to reference the card. It will be forwarded to any children
       * cards. Does not affect the card behavior.
       */
@@ -1820,6 +1955,12 @@ object sapUiIntegrationWidgetsCardMod {
       
       inline def setDataModeUndefined: Self = StObject.set(x, "dataMode", js.undefined)
       
+      inline def setDesign(
+        value: CardDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CardDesign * / any */ String) | PropertyBindingInfo
+      ): Self = StObject.set(x, "design", value.asInstanceOf[js.Any])
+      
+      inline def setDesignUndefined: Self = StObject.set(x, "design", js.undefined)
+      
       inline def setHost(value: typings.openui5.sapUiCoreControlMod.default | String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
       inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
@@ -1847,6 +1988,12 @@ object sapUiIntegrationWidgetsCardMod {
       inline def setParameters(value: js.Object | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
       inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      
+      inline def setPreviewMode(
+        value: CardPreviewMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CardPreviewMode * / any */ String) | PropertyBindingInfo
+      ): Self = StObject.set(x, "previewMode", value.asInstanceOf[js.Any])
+      
+      inline def setPreviewModeUndefined: Self = StObject.set(x, "previewMode", js.undefined)
       
       inline def setReferenceId(value: String | PropertyBindingInfo): Self = StObject.set(x, "referenceId", value.asInstanceOf[js.Any])
       

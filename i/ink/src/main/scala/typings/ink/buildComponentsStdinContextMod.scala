@@ -34,12 +34,17 @@ object buildComponentsStdinContextMod extends Shortcut {
     /**
       * Stdin stream passed to `render()` in `options.stdin` or `process.stdin` by default. Useful if your app needs to handle user input.
       */
-    val stdin: js.UndefOr[ReadStream] = js.undefined
+    val stdin: ReadStream
   }
   object Props {
     
-    inline def apply(internal_exitOnCtrlC: Boolean, isRawModeSupported: Boolean, setRawMode: Boolean => Unit): Props = {
-      val __obj = js.Dynamic.literal(internal_exitOnCtrlC = internal_exitOnCtrlC.asInstanceOf[js.Any], isRawModeSupported = isRawModeSupported.asInstanceOf[js.Any], setRawMode = js.Any.fromFunction1(setRawMode))
+    inline def apply(
+      internal_exitOnCtrlC: Boolean,
+      isRawModeSupported: Boolean,
+      setRawMode: Boolean => Unit,
+      stdin: ReadStream
+    ): Props = {
+      val __obj = js.Dynamic.literal(internal_exitOnCtrlC = internal_exitOnCtrlC.asInstanceOf[js.Any], isRawModeSupported = isRawModeSupported.asInstanceOf[js.Any], setRawMode = js.Any.fromFunction1(setRawMode), stdin = stdin.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
@@ -53,8 +58,6 @@ object buildComponentsStdinContextMod extends Shortcut {
       inline def setSetRawMode(value: Boolean => Unit): Self = StObject.set(x, "setRawMode", js.Any.fromFunction1(value))
       
       inline def setStdin(value: ReadStream): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
-      
-      inline def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
     }
   }
   

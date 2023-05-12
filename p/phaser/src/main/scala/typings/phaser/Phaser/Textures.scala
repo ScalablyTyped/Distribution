@@ -1,16 +1,26 @@
 package typings.phaser.Phaser
 
 import typings.phaser.EachTextureCallback
+import typings.phaser.Phaser.Cameras.Scene2D.BaseCamera
+import typings.phaser.Phaser.Cameras.Scene2D.Camera
 import typings.phaser.Phaser.Display.Color
 import typings.phaser.Phaser.Events.EventEmitter
+import typings.phaser.Phaser.GameObjects.Components.TransformMatrix
 import typings.phaser.Phaser.GameObjects.GameObject
+import typings.phaser.Phaser.GameObjects.Image
 import typings.phaser.Phaser.GameObjects.RenderTexture
+import typings.phaser.Phaser.Geom.Rectangle
 import typings.phaser.Phaser.Renderer.Canvas.CanvasRenderer
+import typings.phaser.Phaser.Renderer.WebGL.Pipelines.SinglePipeline
+import typings.phaser.Phaser.Renderer.WebGL.RenderTarget
 import typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer
 import typings.phaser.Phaser.Types.Create.GenerateTextureConfig
+import typings.phaser.Phaser.Types.Renderer.Snapshot.SnapshotCallback
+import typings.phaser.Phaser.Types.Textures.CompressedTextureData
 import typings.phaser.Phaser.Types.Textures.PixelConfig
 import typings.phaser.Phaser.Types.Textures.SpriteSheetConfig
 import typings.phaser.Phaser.Types.Textures.SpriteSheetFromAtlasConfig
+import typings.phaser.Phaser.Types.Textures.StampConfig
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
@@ -90,23 +100,40 @@ object Textures {
       * @param y The y coordinate of the top-left of the region to clear. Default 0.
       * @param width The width of the region.
       * @param height The height of the region.
+      * @param update Update the internal ImageData buffer and arrays. Default true.
       */
     def clear(): CanvasTexture = js.native
     def clear(x: Double): CanvasTexture = js.native
     def clear(x: Double, y: Double): CanvasTexture = js.native
     def clear(x: Double, y: Double, width: Double): CanvasTexture = js.native
     def clear(x: Double, y: Double, width: Double, height: Double): CanvasTexture = js.native
+    def clear(x: Double, y: Double, width: Double, height: Double, update: Boolean): CanvasTexture = js.native
+    def clear(x: Double, y: Double, width: Double, height: Unit, update: Boolean): CanvasTexture = js.native
     def clear(x: Double, y: Double, width: Unit, height: Double): CanvasTexture = js.native
+    def clear(x: Double, y: Double, width: Unit, height: Double, update: Boolean): CanvasTexture = js.native
+    def clear(x: Double, y: Double, width: Unit, height: Unit, update: Boolean): CanvasTexture = js.native
     def clear(x: Double, y: Unit, width: Double): CanvasTexture = js.native
     def clear(x: Double, y: Unit, width: Double, height: Double): CanvasTexture = js.native
+    def clear(x: Double, y: Unit, width: Double, height: Double, update: Boolean): CanvasTexture = js.native
+    def clear(x: Double, y: Unit, width: Double, height: Unit, update: Boolean): CanvasTexture = js.native
     def clear(x: Double, y: Unit, width: Unit, height: Double): CanvasTexture = js.native
+    def clear(x: Double, y: Unit, width: Unit, height: Double, update: Boolean): CanvasTexture = js.native
+    def clear(x: Double, y: Unit, width: Unit, height: Unit, update: Boolean): CanvasTexture = js.native
     def clear(x: Unit, y: Double): CanvasTexture = js.native
     def clear(x: Unit, y: Double, width: Double): CanvasTexture = js.native
     def clear(x: Unit, y: Double, width: Double, height: Double): CanvasTexture = js.native
+    def clear(x: Unit, y: Double, width: Double, height: Double, update: Boolean): CanvasTexture = js.native
+    def clear(x: Unit, y: Double, width: Double, height: Unit, update: Boolean): CanvasTexture = js.native
     def clear(x: Unit, y: Double, width: Unit, height: Double): CanvasTexture = js.native
+    def clear(x: Unit, y: Double, width: Unit, height: Double, update: Boolean): CanvasTexture = js.native
+    def clear(x: Unit, y: Double, width: Unit, height: Unit, update: Boolean): CanvasTexture = js.native
     def clear(x: Unit, y: Unit, width: Double): CanvasTexture = js.native
     def clear(x: Unit, y: Unit, width: Double, height: Double): CanvasTexture = js.native
+    def clear(x: Unit, y: Unit, width: Double, height: Double, update: Boolean): CanvasTexture = js.native
+    def clear(x: Unit, y: Unit, width: Double, height: Unit, update: Boolean): CanvasTexture = js.native
     def clear(x: Unit, y: Unit, width: Unit, height: Double): CanvasTexture = js.native
+    def clear(x: Unit, y: Unit, width: Unit, height: Double, update: Boolean): CanvasTexture = js.native
+    def clear(x: Unit, y: Unit, width: Unit, height: Unit, update: Boolean): CanvasTexture = js.native
     
     /**
       * The 2D Canvas Rendering Context.
@@ -121,14 +148,17 @@ object Textures {
     var data: js.typedarray.Uint8ClampedArray = js.native
     
     def draw(x: Double, y: Double, source: HTMLCanvasElement): CanvasTexture = js.native
+    def draw(x: Double, y: Double, source: HTMLCanvasElement, update: Boolean): CanvasTexture = js.native
     /**
       * Draws the given Image or Canvas element to this CanvasTexture, then updates the internal
       * ImageData buffer and arrays.
       * @param x The x coordinate to draw the source at.
       * @param y The y coordinate to draw the source at.
       * @param source The element to draw to this canvas.
+      * @param update Update the internal ImageData buffer and arrays. Default true.
       */
     def draw(x: Double, y: Double, source: HTMLImageElement): CanvasTexture = js.native
+    def draw(x: Double, y: Double, source: HTMLImageElement, update: Boolean): CanvasTexture = js.native
     
     /**
       * Draws the given texture frame to this CanvasTexture, then updates the internal
@@ -137,19 +167,32 @@ object Textures {
       * @param frame The string-based name, or integer based index, of the Frame to get from the Texture.
       * @param x The x coordinate to draw the source at. Default 0.
       * @param y The y coordinate to draw the source at. Default 0.
+      * @param update Update the internal ImageData buffer and arrays. Default true.
       */
     def drawFrame(key: String): CanvasTexture = js.native
     def drawFrame(key: String, frame: String): CanvasTexture = js.native
     def drawFrame(key: String, frame: String, x: Double): CanvasTexture = js.native
     def drawFrame(key: String, frame: String, x: Double, y: Double): CanvasTexture = js.native
+    def drawFrame(key: String, frame: String, x: Double, y: Double, update: Boolean): CanvasTexture = js.native
+    def drawFrame(key: String, frame: String, x: Double, y: Unit, update: Boolean): CanvasTexture = js.native
     def drawFrame(key: String, frame: String, x: Unit, y: Double): CanvasTexture = js.native
+    def drawFrame(key: String, frame: String, x: Unit, y: Double, update: Boolean): CanvasTexture = js.native
+    def drawFrame(key: String, frame: String, x: Unit, y: Unit, update: Boolean): CanvasTexture = js.native
     def drawFrame(key: String, frame: Double): CanvasTexture = js.native
     def drawFrame(key: String, frame: Double, x: Double): CanvasTexture = js.native
     def drawFrame(key: String, frame: Double, x: Double, y: Double): CanvasTexture = js.native
+    def drawFrame(key: String, frame: Double, x: Double, y: Double, update: Boolean): CanvasTexture = js.native
+    def drawFrame(key: String, frame: Double, x: Double, y: Unit, update: Boolean): CanvasTexture = js.native
     def drawFrame(key: String, frame: Double, x: Unit, y: Double): CanvasTexture = js.native
+    def drawFrame(key: String, frame: Double, x: Unit, y: Double, update: Boolean): CanvasTexture = js.native
+    def drawFrame(key: String, frame: Double, x: Unit, y: Unit, update: Boolean): CanvasTexture = js.native
     def drawFrame(key: String, frame: Unit, x: Double): CanvasTexture = js.native
     def drawFrame(key: String, frame: Unit, x: Double, y: Double): CanvasTexture = js.native
+    def drawFrame(key: String, frame: Unit, x: Double, y: Double, update: Boolean): CanvasTexture = js.native
+    def drawFrame(key: String, frame: Unit, x: Double, y: Unit, update: Boolean): CanvasTexture = js.native
     def drawFrame(key: String, frame: Unit, x: Unit, y: Double): CanvasTexture = js.native
+    def drawFrame(key: String, frame: Unit, x: Unit, y: Double, update: Boolean): CanvasTexture = js.native
+    def drawFrame(key: String, frame: Unit, x: Unit, y: Unit, update: Boolean): CanvasTexture = js.native
     
     /**
       * Gets the Canvas Element.
@@ -378,6 +421,837 @@ object Textures {
   }
   
   /**
+    * A Dynamic Texture is a special texture that allows you to draw textures, frames and most kind of
+    * Game Objects directly to it.
+    * 
+    * You can take many complex objects and draw them to this one texture, which can then be used as the
+    * base texture for other Game Objects, such as Sprites. Should you then update this texture, all
+    * Game Objects using it will instantly be updated as well, reflecting the changes immediately.
+    * 
+    * It's a powerful way to generate dynamic textures at run-time that are WebGL friendly and don't invoke
+    * expensive GPU uploads on each change.
+    * 
+    * ```js
+    * const t = this.textures.addDynamicTexture('player', 64, 128);
+    * // draw objects to t
+    * this.add.sprite(x, y, 'player');
+    * ```
+    * 
+    * Because this is a standard Texture within Phaser, you can add frames to it, meaning you can use it
+    * to generate sprite sheets, texture atlases or tile sets.
+    * 
+    * Under WebGL1, a FrameBuffer, which is what this Dynamic Texture uses internally, cannot be anti-aliased.
+    * This means that when drawing objects such as Shapes or Graphics instances to this texture, they may appear
+    * to be drawn with no aliasing around the edges. This is a technical limitation of WebGL1. To get around it,
+    * create your shape as a texture in an art package, then draw that to this texture.
+    * 
+    * Based on the assumption that you will be using this Dynamic Texture as a source for Sprites, it will
+    * automatically invert any drawing done to it on the y axis. If you do not require this, please call the
+    * `setIsSpriteTexture()` method and pass it `false` as its parameter. Do this before you start drawing
+    * to this texture, otherwise you will get vertically inverted frames under WebGL. This isn't required
+    * for Canvas.
+    */
+  @js.native
+  trait DynamicTexture
+    extends StObject
+       with Texture {
+    
+    /**
+      * Use this method if you have already called `beginDraw` and need to batch
+      * draw a large number of objects to this Dynamic Texture.
+      * 
+      * This method batches the drawing of the given objects to this texture,
+      * without causing a WebGL bind or batch flush for each one.
+      * 
+      * It is faster than calling `draw`, but you must be careful to manage the
+      * flow of code and remember to call `endDraw()`. If you don't need to draw large
+      * numbers of objects it's much safer and easier to use the `draw` method instead.
+      * 
+      * The flow should be:
+      * 
+      * ```javascript
+      * // Call once:
+      * DynamicTexture.beginDraw();
+      * 
+      * // repeat n times:
+      * DynamicTexture.batchDraw();
+      * // or
+      * DynamicTexture.batchDrawFrame();
+      * 
+      * // Call once:
+      * DynamicTexture.endDraw();
+      * ```
+      * 
+      * Do not call any methods other than `batchDraw`, `batchDrawFrame`, or `endDraw` once you
+      * have started a batch. Also, be very careful not to destroy this Dynamic Texture while the
+      * batch is still open. Doing so will cause a run-time error in the WebGL Renderer.
+      * 
+      * You can use the `DynamicTexture.isDrawing` boolean property to tell if a batch is
+      * currently open, or not.
+      * 
+      * This method can accept any of the following:
+      * 
+      * * Any renderable Game Object, such as a Sprite, Text, Graphics or TileSprite.
+      * * Tilemap Layers.
+      * * A Group. The contents of which will be iterated and drawn in turn.
+      * * A Container. The contents of which will be iterated fully, and drawn in turn.
+      * * A Scene's Display List. Pass in `Scene.children` to draw the whole list.
+      * * Another Dynamic Texture or Render Texture.
+      * * A Texture Frame instance.
+      * * A string. This is used to look-up a texture from the Texture Manager.
+      * 
+      * Note: You cannot draw a Dynamic Texture to itself.
+      * 
+      * If passing in a Group or Container it will only draw children that return `true`
+      * when their `willRender()` method is called. I.e. a Container with 10 children,
+      * 5 of which have `visible=false` will only draw the 5 visible ones.
+      * 
+      * If passing in an array of Game Objects it will draw them all, regardless if
+      * they pass a `willRender` check or not.
+      * 
+      * You can pass in a string in which case it will look for a texture in the Texture
+      * Manager matching that string, and draw the base frame. If you need to specify
+      * exactly which frame to draw then use the method `drawFrame` instead.
+      * 
+      * You can pass in the `x` and `y` coordinates to draw the objects at. The use of
+      * the coordinates differ based on what objects are being drawn. If the object is
+      * a Group, Container or Display List, the coordinates are _added_ to the positions
+      * of the children. For all other types of object, the coordinates are exact.
+      * 
+      * The `alpha` and `tint` values are only used by Texture Frames.
+      * Game Objects use their own alpha and tint values when being drawn.
+      * @param entries Any renderable Game Object, or Group, Container, Display List, other Dynamic or Texture, Texture Frame or an array of any of these.
+      * @param x The x position to draw the Frame at, or the offset applied to the object. Default 0.
+      * @param y The y position to draw the Frame at, or the offset applied to the object. Default 0.
+      * @param alpha The alpha value. Only used when drawing Texture Frames to this texture. Game Objects use their own alpha. Default 1.
+      * @param tint The tint color value. Only used when drawing Texture Frames to this texture. Game Objects use their own tint. WebGL only. Default 0xffffff.
+      */
+    def batchDraw(entries: Any): this.type = js.native
+    def batchDraw(entries: Any, x: Double): this.type = js.native
+    def batchDraw(entries: Any, x: Double, y: Double): this.type = js.native
+    def batchDraw(entries: Any, x: Double, y: Double, alpha: Double): this.type = js.native
+    def batchDraw(entries: Any, x: Double, y: Double, alpha: Double, tint: Double): this.type = js.native
+    def batchDraw(entries: Any, x: Double, y: Double, alpha: Unit, tint: Double): this.type = js.native
+    def batchDraw(entries: Any, x: Double, y: Unit, alpha: Double): this.type = js.native
+    def batchDraw(entries: Any, x: Double, y: Unit, alpha: Double, tint: Double): this.type = js.native
+    def batchDraw(entries: Any, x: Double, y: Unit, alpha: Unit, tint: Double): this.type = js.native
+    def batchDraw(entries: Any, x: Unit, y: Double): this.type = js.native
+    def batchDraw(entries: Any, x: Unit, y: Double, alpha: Double): this.type = js.native
+    def batchDraw(entries: Any, x: Unit, y: Double, alpha: Double, tint: Double): this.type = js.native
+    def batchDraw(entries: Any, x: Unit, y: Double, alpha: Unit, tint: Double): this.type = js.native
+    def batchDraw(entries: Any, x: Unit, y: Unit, alpha: Double): this.type = js.native
+    def batchDraw(entries: Any, x: Unit, y: Unit, alpha: Double, tint: Double): this.type = js.native
+    def batchDraw(entries: Any, x: Unit, y: Unit, alpha: Unit, tint: Double): this.type = js.native
+    
+    /**
+      * Use this method if you have already called `beginDraw` and need to batch
+      * draw a large number of texture frames to this Dynamic Texture.
+      * 
+      * This method batches the drawing of the given frames to this Dynamic Texture,
+      * without causing a WebGL bind or batch flush for each one.
+      * 
+      * It is faster than calling `drawFrame`, but you must be careful to manage the
+      * flow of code and remember to call `endDraw()`. If you don't need to draw large
+      * numbers of frames it's much safer and easier to use the `drawFrame` method instead.
+      * 
+      * The flow should be:
+      * 
+      * ```javascript
+      * // Call once:
+      * DynamicTexture.beginDraw();
+      * 
+      * // repeat n times:
+      * DynamicTexture.batchDraw();
+      * // or
+      * DynamicTexture.batchDrawFrame();
+      * 
+      * // Call once:
+      * DynamicTexture.endDraw();
+      * ```
+      * 
+      * Do not call any methods other than `batchDraw`, `batchDrawFrame`, or `endDraw` once you
+      * have started a batch. Also, be very careful not to destroy this Dynamic Texture while the
+      * batch is still open. Doing so will cause a run-time error in the WebGL Renderer.
+      * 
+      * You can use the `DynamicTexture.isDrawing` boolean property to tell if a batch is
+      * currently open, or not.
+      * 
+      * Textures are referenced by their string-based keys, as stored in the Texture Manager.
+      * 
+      * You can optionally provide a position, alpha and tint value to apply to the frame
+      * before it is drawn.
+      * @param key The key of the texture to be used, as stored in the Texture Manager.
+      * @param frame The name or index of the frame within the Texture.
+      * @param x The x position to draw the frame at. Default 0.
+      * @param y The y position to draw the frame at. Default 0.
+      * @param alpha The alpha value. Only used when drawing Texture Frames to this texture. Game Objects use their own alpha. Default 1.
+      * @param tint The tint color value. Only used when drawing Texture Frames to this texture. Game Objects use their own tint. WebGL only. Default 0xffffff.
+      */
+    def batchDrawFrame(key: String): this.type = js.native
+    def batchDrawFrame(key: String, frame: String): this.type = js.native
+    def batchDrawFrame(key: String, frame: String, x: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: String, x: Double, y: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: String, x: Double, y: Double, alpha: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: String, x: Double, y: Double, alpha: Double, tint: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: String, x: Double, y: Double, alpha: Unit, tint: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: String, x: Double, y: Unit, alpha: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: String, x: Double, y: Unit, alpha: Double, tint: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: String, x: Double, y: Unit, alpha: Unit, tint: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: String, x: Unit, y: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: String, x: Unit, y: Double, alpha: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: String, x: Unit, y: Double, alpha: Double, tint: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: String, x: Unit, y: Double, alpha: Unit, tint: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: String, x: Unit, y: Unit, alpha: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: String, x: Unit, y: Unit, alpha: Double, tint: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: String, x: Unit, y: Unit, alpha: Unit, tint: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: Double, x: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: Double, x: Double, y: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: Double, x: Double, y: Double, alpha: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: Double, x: Double, y: Double, alpha: Double, tint: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: Double, x: Double, y: Double, alpha: Unit, tint: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: Double, x: Double, y: Unit, alpha: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: Double, x: Double, y: Unit, alpha: Double, tint: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: Double, x: Double, y: Unit, alpha: Unit, tint: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: Double, x: Unit, y: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: Double, x: Unit, y: Double, alpha: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: Double, x: Unit, y: Double, alpha: Double, tint: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: Double, x: Unit, y: Double, alpha: Unit, tint: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: Double, x: Unit, y: Unit, alpha: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: Double, x: Unit, y: Unit, alpha: Double, tint: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: Double, x: Unit, y: Unit, alpha: Unit, tint: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: Unit, x: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: Unit, x: Double, y: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: Unit, x: Double, y: Double, alpha: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: Unit, x: Double, y: Double, alpha: Double, tint: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: Unit, x: Double, y: Double, alpha: Unit, tint: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: Unit, x: Double, y: Unit, alpha: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: Unit, x: Double, y: Unit, alpha: Double, tint: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: Unit, x: Double, y: Unit, alpha: Unit, tint: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: Unit, x: Unit, y: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: Unit, x: Unit, y: Double, alpha: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: Unit, x: Unit, y: Double, alpha: Double, tint: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: Unit, x: Unit, y: Double, alpha: Unit, tint: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: Unit, x: Unit, y: Unit, alpha: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: Unit, x: Unit, y: Unit, alpha: Double, tint: Double): this.type = js.native
+    def batchDrawFrame(key: String, frame: Unit, x: Unit, y: Unit, alpha: Unit, tint: Double): this.type = js.native
+    
+    /**
+      * Use this method if you need to batch draw a large number of Game Objects to
+      * this Dynamic Texture in a single pass, or on a frequent basis. This is especially
+      * useful under WebGL, however, if your game is using Canvas only, it will not make
+      * any speed difference in that situation.
+      * 
+      * This method starts the beginning of a batched draw, unless one is already open.
+      * 
+      * Batched drawing is faster than calling `draw` in loop, but you must be careful
+      * to manage the flow of code and remember to call `endDraw()` when you're finished.
+      * 
+      * If you don't need to draw large numbers of objects it's much safer and easier
+      * to use the `draw` method instead.
+      * 
+      * The flow should be:
+      * 
+      * ```javascript
+      * // Call once:
+      * DynamicTexture.beginDraw();
+      * 
+      * // repeat n times:
+      * DynamicTexture.batchDraw();
+      * // or
+      * DynamicTexture.batchDrawFrame();
+      * 
+      * // Call once:
+      * DynamicTexture.endDraw();
+      * ```
+      * 
+      * Do not call any methods other than `batchDraw`, `batchDrawFrame`, or `endDraw` once you
+      * have started a batch. Also, be very careful not to destroy this Dynamic Texture while the
+      * batch is still open. Doing so will cause a run-time error in the WebGL Renderer.
+      * 
+      * You can use the `DynamicTexture.isDrawing` boolean property to tell if a batch is
+      * currently open, or not.
+      */
+    def beginDraw(): this.type = js.native
+    
+    /**
+      * An internal Camera that can be used to move around this Dynamic Texture.
+      * 
+      * Control it just like you would any Scene Camera. The difference is that it only impacts
+      * the placement of **Game Objects** (not textures) that you then draw to this texture.
+      * 
+      * You can scroll, zoom and rotate this Camera.
+      */
+    var camera: BaseCamera = js.native
+    
+    /**
+      * A reference to the Rendering Context belonging to the Canvas Element this Dynamic Texture is drawing to.
+      */
+    var canvas: HTMLCanvasElement = js.native
+    
+    /**
+      * Fully clears this Dynamic Texture, erasing everything from it and resetting it back to
+      * a blank, transparent, texture.
+      */
+    def clear(): this.type = js.native
+    
+    /**
+      * The 2D Canvas Rendering Context.
+      */
+    val context: CanvasRenderingContext2D = js.native
+    
+    /**
+      * Is this Dynamic Texture dirty or not? If not it won't spend time clearing or filling itself.
+      */
+    var dirty: Boolean = js.native
+    
+    /**
+      * Draws the given object, or an array of objects, to this Dynamic Texture.
+      * 
+      * It can accept any of the following:
+      * 
+      * * Any renderable Game Object, such as a Sprite, Text, Graphics or TileSprite.
+      * * Tilemap Layers.
+      * * A Group. The contents of which will be iterated and drawn in turn.
+      * * A Container. The contents of which will be iterated fully, and drawn in turn.
+      * * A Scene Display List. Pass in `Scene.children` to draw the whole list.
+      * * Another Dynamic Texture, or a Render Texture.
+      * * A Texture Frame instance.
+      * * A string. This is used to look-up the texture from the Texture Manager.
+      * 
+      * Note 1: You cannot draw a Dynamic Texture to itself.
+      * 
+      * Note 2: For Game Objects that have Post FX Pipelines, the pipeline _cannot_ be
+      * used when drawn to this texture.
+      * 
+      * If passing in a Group or Container it will only draw children that return `true`
+      * when their `willRender()` method is called. I.e. a Container with 10 children,
+      * 5 of which have `visible=false` will only draw the 5 visible ones.
+      * 
+      * If passing in an array of Game Objects it will draw them all, regardless if
+      * they pass a `willRender` check or not.
+      * 
+      * You can pass in a string in which case it will look for a texture in the Texture
+      * Manager matching that string, and draw the base frame. If you need to specify
+      * exactly which frame to draw then use the method `drawFrame` instead.
+      * 
+      * You can pass in the `x` and `y` coordinates to draw the objects at. The use of
+      * the coordinates differ based on what objects are being drawn. If the object is
+      * a Group, Container or Display List, the coordinates are _added_ to the positions
+      * of the children. For all other types of object, the coordinates are exact.
+      * 
+      * The `alpha` and `tint` values are only used by Texture Frames.
+      * Game Objects use their own alpha and tint values when being drawn.
+      * 
+      * Calling this method causes the WebGL batch to flush, so it can write the texture
+      * data to the framebuffer being used internally. The batch is flushed at the end,
+      * after the entries have been iterated. So if you've a bunch of objects to draw,
+      * try and pass them in an array in one single call, rather than making lots of
+      * separate calls.
+      * 
+      * If you are not planning on using this Dynamic Texture as a base texture for Sprite
+      * Game Objects, then you should set `DynamicTexture.isSpriteTexture = false` before
+      * calling this method, otherwise you will get vertically inverted frames in WebGL.
+      * @param entries Any renderable Game Object, or Group, Container, Display List, other Render Texture, Texture Frame or an array of any of these.
+      * @param x The x position to draw the Frame at, or the offset applied to the object. Default 0.
+      * @param y The y position to draw the Frame at, or the offset applied to the object. Default 0.
+      * @param alpha The alpha value. Only used when drawing Texture Frames to this texture. Game Objects use their own alpha. Default 1.
+      * @param tint The tint color value. Only used when drawing Texture Frames to this texture. Game Objects use their own tint. WebGL only. Default 0xffffff.
+      */
+    def draw(entries: Any): this.type = js.native
+    def draw(entries: Any, x: Double): this.type = js.native
+    def draw(entries: Any, x: Double, y: Double): this.type = js.native
+    def draw(entries: Any, x: Double, y: Double, alpha: Double): this.type = js.native
+    def draw(entries: Any, x: Double, y: Double, alpha: Double, tint: Double): this.type = js.native
+    def draw(entries: Any, x: Double, y: Double, alpha: Unit, tint: Double): this.type = js.native
+    def draw(entries: Any, x: Double, y: Unit, alpha: Double): this.type = js.native
+    def draw(entries: Any, x: Double, y: Unit, alpha: Double, tint: Double): this.type = js.native
+    def draw(entries: Any, x: Double, y: Unit, alpha: Unit, tint: Double): this.type = js.native
+    def draw(entries: Any, x: Unit, y: Double): this.type = js.native
+    def draw(entries: Any, x: Unit, y: Double, alpha: Double): this.type = js.native
+    def draw(entries: Any, x: Unit, y: Double, alpha: Double, tint: Double): this.type = js.native
+    def draw(entries: Any, x: Unit, y: Double, alpha: Unit, tint: Double): this.type = js.native
+    def draw(entries: Any, x: Unit, y: Unit, alpha: Double): this.type = js.native
+    def draw(entries: Any, x: Unit, y: Unit, alpha: Double, tint: Double): this.type = js.native
+    def draw(entries: Any, x: Unit, y: Unit, alpha: Unit, tint: Double): this.type = js.native
+    
+    /**
+      * Draws the Texture Frame to the Render Texture at the given position.
+      * 
+      * Textures are referenced by their string-based keys, as stored in the Texture Manager.
+      * 
+      * ```javascript
+      * var rt = this.add.renderTexture(0, 0, 800, 600);
+      * rt.drawFrame(key, frame);
+      * ```
+      * 
+      * You can optionally provide a position, alpha and tint value to apply to the frame
+      * before it is drawn.
+      * 
+      * Calling this method will cause a batch flush, so if you've got a stack of things to draw
+      * in a tight loop, try using the `draw` method instead.
+      * 
+      * If you need to draw a Sprite to this Render Texture, use the `draw` method instead.
+      * 
+      * If you are not planning on using this Dynamic Texture as a base texture for Sprite
+      * Game Objects, then you should set `DynamicTexture.isSpriteTexture = false` before
+      * calling this method, otherwise you will get vertically inverted frames in WebGL.
+      * @param key The key of the texture to be used, as stored in the Texture Manager.
+      * @param frame The name or index of the frame within the Texture. Set to `null` to skip this argument if not required.
+      * @param x The x position to draw the frame at. Default 0.
+      * @param y The y position to draw the frame at. Default 0.
+      * @param alpha The alpha value. Only used when drawing Texture Frames to this texture. Default 1.
+      * @param tint The tint color value. Only used when drawing Texture Frames to this texture. WebGL only. Default 0xffffff.
+      */
+    def drawFrame(key: String): this.type = js.native
+    def drawFrame(key: String, frame: String): this.type = js.native
+    def drawFrame(key: String, frame: String, x: Double): this.type = js.native
+    def drawFrame(key: String, frame: String, x: Double, y: Double): this.type = js.native
+    def drawFrame(key: String, frame: String, x: Double, y: Double, alpha: Double): this.type = js.native
+    def drawFrame(key: String, frame: String, x: Double, y: Double, alpha: Double, tint: Double): this.type = js.native
+    def drawFrame(key: String, frame: String, x: Double, y: Double, alpha: Unit, tint: Double): this.type = js.native
+    def drawFrame(key: String, frame: String, x: Double, y: Unit, alpha: Double): this.type = js.native
+    def drawFrame(key: String, frame: String, x: Double, y: Unit, alpha: Double, tint: Double): this.type = js.native
+    def drawFrame(key: String, frame: String, x: Double, y: Unit, alpha: Unit, tint: Double): this.type = js.native
+    def drawFrame(key: String, frame: String, x: Unit, y: Double): this.type = js.native
+    def drawFrame(key: String, frame: String, x: Unit, y: Double, alpha: Double): this.type = js.native
+    def drawFrame(key: String, frame: String, x: Unit, y: Double, alpha: Double, tint: Double): this.type = js.native
+    def drawFrame(key: String, frame: String, x: Unit, y: Double, alpha: Unit, tint: Double): this.type = js.native
+    def drawFrame(key: String, frame: String, x: Unit, y: Unit, alpha: Double): this.type = js.native
+    def drawFrame(key: String, frame: String, x: Unit, y: Unit, alpha: Double, tint: Double): this.type = js.native
+    def drawFrame(key: String, frame: String, x: Unit, y: Unit, alpha: Unit, tint: Double): this.type = js.native
+    def drawFrame(key: String, frame: Double): this.type = js.native
+    def drawFrame(key: String, frame: Double, x: Double): this.type = js.native
+    def drawFrame(key: String, frame: Double, x: Double, y: Double): this.type = js.native
+    def drawFrame(key: String, frame: Double, x: Double, y: Double, alpha: Double): this.type = js.native
+    def drawFrame(key: String, frame: Double, x: Double, y: Double, alpha: Double, tint: Double): this.type = js.native
+    def drawFrame(key: String, frame: Double, x: Double, y: Double, alpha: Unit, tint: Double): this.type = js.native
+    def drawFrame(key: String, frame: Double, x: Double, y: Unit, alpha: Double): this.type = js.native
+    def drawFrame(key: String, frame: Double, x: Double, y: Unit, alpha: Double, tint: Double): this.type = js.native
+    def drawFrame(key: String, frame: Double, x: Double, y: Unit, alpha: Unit, tint: Double): this.type = js.native
+    def drawFrame(key: String, frame: Double, x: Unit, y: Double): this.type = js.native
+    def drawFrame(key: String, frame: Double, x: Unit, y: Double, alpha: Double): this.type = js.native
+    def drawFrame(key: String, frame: Double, x: Unit, y: Double, alpha: Double, tint: Double): this.type = js.native
+    def drawFrame(key: String, frame: Double, x: Unit, y: Double, alpha: Unit, tint: Double): this.type = js.native
+    def drawFrame(key: String, frame: Double, x: Unit, y: Unit, alpha: Double): this.type = js.native
+    def drawFrame(key: String, frame: Double, x: Unit, y: Unit, alpha: Double, tint: Double): this.type = js.native
+    def drawFrame(key: String, frame: Double, x: Unit, y: Unit, alpha: Unit, tint: Double): this.type = js.native
+    def drawFrame(key: String, frame: Unit, x: Double): this.type = js.native
+    def drawFrame(key: String, frame: Unit, x: Double, y: Double): this.type = js.native
+    def drawFrame(key: String, frame: Unit, x: Double, y: Double, alpha: Double): this.type = js.native
+    def drawFrame(key: String, frame: Unit, x: Double, y: Double, alpha: Double, tint: Double): this.type = js.native
+    def drawFrame(key: String, frame: Unit, x: Double, y: Double, alpha: Unit, tint: Double): this.type = js.native
+    def drawFrame(key: String, frame: Unit, x: Double, y: Unit, alpha: Double): this.type = js.native
+    def drawFrame(key: String, frame: Unit, x: Double, y: Unit, alpha: Double, tint: Double): this.type = js.native
+    def drawFrame(key: String, frame: Unit, x: Double, y: Unit, alpha: Unit, tint: Double): this.type = js.native
+    def drawFrame(key: String, frame: Unit, x: Unit, y: Double): this.type = js.native
+    def drawFrame(key: String, frame: Unit, x: Unit, y: Double, alpha: Double): this.type = js.native
+    def drawFrame(key: String, frame: Unit, x: Unit, y: Double, alpha: Double, tint: Double): this.type = js.native
+    def drawFrame(key: String, frame: Unit, x: Unit, y: Double, alpha: Unit, tint: Double): this.type = js.native
+    def drawFrame(key: String, frame: Unit, x: Unit, y: Unit, alpha: Double): this.type = js.native
+    def drawFrame(key: String, frame: Unit, x: Unit, y: Unit, alpha: Double, tint: Double): this.type = js.native
+    def drawFrame(key: String, frame: Unit, x: Unit, y: Unit, alpha: Unit, tint: Double): this.type = js.native
+    
+    /**
+      * Use this method to finish batch drawing to this Dynamic Texture.
+      * 
+      * Doing so will stop the WebGL Renderer from capturing draws and then blit the
+      * framebuffer to the Render Target owned by this texture.
+      * 
+      * Calling this method without first calling `beginDraw` will have no effect.
+      * 
+      * Batch drawing is faster than calling `draw`, but you must be careful to manage the
+      * flow of code and remember to call `endDraw()` when you're finished.
+      * 
+      * If you don't need to draw large numbers of objects it's much safer and easier
+      * to use the `draw` method instead.
+      * 
+      * The flow should be:
+      * 
+      * ```javascript
+      * // Call once:
+      * DynamicTexture.beginDraw();
+      * 
+      * // repeat n times:
+      * DynamicTexture.batchDraw();
+      * // or
+      * DynamicTexture.batchDrawFrame();
+      * 
+      * // Call once:
+      * DynamicTexture.endDraw();
+      * ```
+      * 
+      * Do not call any methods other than `batchDraw`, `batchDrawFrame`, or `endDraw` once you
+      * have started a batch. Also, be very careful not to destroy this Dynamic Texture while the
+      * batch is still open. Doing so will cause a run-time error in the WebGL Renderer.
+      * 
+      * You can use the `DynamicTexture.isDrawing` boolean property to tell if a batch is
+      * currently open, or not.
+      * @param erase Draws all objects in this batch using a blend mode of ERASE. This has the effect of erasing any filled pixels in the objects being drawn. Default false.
+      */
+    def endDraw(): this.type = js.native
+    def endDraw(erase: Boolean): this.type = js.native
+    
+    /**
+      * Draws the given object, or an array of objects, to this Dynamic Texture using a blend mode of ERASE.
+      * This has the effect of erasing any filled pixels present in the objects from this texture.
+      * 
+      * It can accept any of the following:
+      * 
+      * * Any renderable Game Object, such as a Sprite, Text, Graphics or TileSprite.
+      * * Tilemap Layers.
+      * * A Group. The contents of which will be iterated and drawn in turn.
+      * * A Container. The contents of which will be iterated fully, and drawn in turn.
+      * * A Scene Display List. Pass in `Scene.children` to draw the whole list.
+      * * Another Dynamic Texture, or a Render Texture.
+      * * A Texture Frame instance.
+      * * A string. This is used to look-up the texture from the Texture Manager.
+      * 
+      * Note: You cannot erase a Dynamic Texture from itself.
+      * 
+      * If passing in a Group or Container it will only draw children that return `true`
+      * when their `willRender()` method is called. I.e. a Container with 10 children,
+      * 5 of which have `visible=false` will only draw the 5 visible ones.
+      * 
+      * If passing in an array of Game Objects it will draw them all, regardless if
+      * they pass a `willRender` check or not.
+      * 
+      * You can pass in a string in which case it will look for a texture in the Texture
+      * Manager matching that string, and draw the base frame.
+      * 
+      * You can pass in the `x` and `y` coordinates to draw the objects at. The use of
+      * the coordinates differ based on what objects are being drawn. If the object is
+      * a Group, Container or Display List, the coordinates are _added_ to the positions
+      * of the children. For all other types of object, the coordinates are exact.
+      * 
+      * Calling this method causes the WebGL batch to flush, so it can write the texture
+      * data to the framebuffer being used internally. The batch is flushed at the end,
+      * after the entries have been iterated. So if you've a bunch of objects to draw,
+      * try and pass them in an array in one single call, rather than making lots of
+      * separate calls.
+      * 
+      * If you are not planning on using this Dynamic Texture as a base texture for Sprite
+      * Game Objects, then you should set `DynamicTexture.isSpriteTexture = false` before
+      * calling this method, otherwise you will get vertically inverted frames in WebGL.
+      * @param entries Any renderable Game Object, or Group, Container, Display List, Render Texture, Texture Frame, or an array of any of these.
+      * @param x The x position to draw the Frame at, or the offset applied to the object. Default 0.
+      * @param y The y position to draw the Frame at, or the offset applied to the object. Default 0.
+      */
+    def erase(entries: Any): this.type = js.native
+    def erase(entries: Any, x: Double): this.type = js.native
+    def erase(entries: Any, x: Double, y: Double): this.type = js.native
+    def erase(entries: Any, x: Unit, y: Double): this.type = js.native
+    
+    /**
+      * Fills this Dynamic Texture with the given color.
+      * 
+      * By default it will fill the entire texture, however you can set it to fill a specific
+      * rectangular area by using the x, y, width and height arguments.
+      * 
+      * The color should be given in hex format, i.e. 0xff0000 for red, 0x00ff00 for green, etc.
+      * @param rgb The color to fill this Dynamic Texture with, such as 0xff0000 for red.
+      * @param alpha The alpha value used by the fill. Default 1.
+      * @param x The left coordinate of the fill rectangle. Default 0.
+      * @param y The top coordinate of the fill rectangle. Default 0.
+      * @param width The width of the fill rectangle. Default this.width.
+      * @param height The height of the fill rectangle. Default this.height.
+      */
+    def fill(rgb: Double): this.type = js.native
+    def fill(rgb: Double, alpha: Double): this.type = js.native
+    def fill(rgb: Double, alpha: Double, x: Double): this.type = js.native
+    def fill(rgb: Double, alpha: Double, x: Double, y: Double): this.type = js.native
+    def fill(rgb: Double, alpha: Double, x: Double, y: Double, width: Double): this.type = js.native
+    def fill(rgb: Double, alpha: Double, x: Double, y: Double, width: Double, height: Double): this.type = js.native
+    def fill(rgb: Double, alpha: Double, x: Double, y: Double, width: Unit, height: Double): this.type = js.native
+    def fill(rgb: Double, alpha: Double, x: Double, y: Unit, width: Double): this.type = js.native
+    def fill(rgb: Double, alpha: Double, x: Double, y: Unit, width: Double, height: Double): this.type = js.native
+    def fill(rgb: Double, alpha: Double, x: Double, y: Unit, width: Unit, height: Double): this.type = js.native
+    def fill(rgb: Double, alpha: Double, x: Unit, y: Double): this.type = js.native
+    def fill(rgb: Double, alpha: Double, x: Unit, y: Double, width: Double): this.type = js.native
+    def fill(rgb: Double, alpha: Double, x: Unit, y: Double, width: Double, height: Double): this.type = js.native
+    def fill(rgb: Double, alpha: Double, x: Unit, y: Double, width: Unit, height: Double): this.type = js.native
+    def fill(rgb: Double, alpha: Double, x: Unit, y: Unit, width: Double): this.type = js.native
+    def fill(rgb: Double, alpha: Double, x: Unit, y: Unit, width: Double, height: Double): this.type = js.native
+    def fill(rgb: Double, alpha: Double, x: Unit, y: Unit, width: Unit, height: Double): this.type = js.native
+    def fill(rgb: Double, alpha: Unit, x: Double): this.type = js.native
+    def fill(rgb: Double, alpha: Unit, x: Double, y: Double): this.type = js.native
+    def fill(rgb: Double, alpha: Unit, x: Double, y: Double, width: Double): this.type = js.native
+    def fill(rgb: Double, alpha: Unit, x: Double, y: Double, width: Double, height: Double): this.type = js.native
+    def fill(rgb: Double, alpha: Unit, x: Double, y: Double, width: Unit, height: Double): this.type = js.native
+    def fill(rgb: Double, alpha: Unit, x: Double, y: Unit, width: Double): this.type = js.native
+    def fill(rgb: Double, alpha: Unit, x: Double, y: Unit, width: Double, height: Double): this.type = js.native
+    def fill(rgb: Double, alpha: Unit, x: Double, y: Unit, width: Unit, height: Double): this.type = js.native
+    def fill(rgb: Double, alpha: Unit, x: Unit, y: Double): this.type = js.native
+    def fill(rgb: Double, alpha: Unit, x: Unit, y: Double, width: Double): this.type = js.native
+    def fill(rgb: Double, alpha: Unit, x: Unit, y: Double, width: Double, height: Double): this.type = js.native
+    def fill(rgb: Double, alpha: Unit, x: Unit, y: Double, width: Unit, height: Double): this.type = js.native
+    def fill(rgb: Double, alpha: Unit, x: Unit, y: Unit, width: Double): this.type = js.native
+    def fill(rgb: Double, alpha: Unit, x: Unit, y: Unit, width: Double, height: Double): this.type = js.native
+    def fill(rgb: Double, alpha: Unit, x: Unit, y: Unit, width: Unit, height: Double): this.type = js.native
+    
+    /**
+      * Returns the underlying WebGLTexture, if not running in Canvas mode.
+      */
+    def getWebGLTexture(): WebGLTexture | Null = js.native
+    
+    /**
+      * This flag is set to 'true' during `beginDraw` and reset to 'false` in `endDraw`,
+      * allowing you to determine if this Dynamic Texture is batch drawing, or not.
+      */
+    val isDrawing: Boolean = js.native
+    
+    /**
+      * Is this Dynamic Texture being used as the base texture for a Sprite Game Object?
+      * 
+      * This is enabled by default, as we expect that will be the core use for Dynamic Textures.
+      * 
+      * However, to disable it, call `RenderTexture.setIsSpriteTexture(false)`.
+      * 
+      * You should do this _before_ drawing to this texture, so that it correctly
+      * inverses the frames for WebGL rendering. Not doing so will result in vertically flipped frames.
+      * 
+      * This property is used in the `endDraw` method.
+      */
+    var isSpriteTexture: Boolean = js.native
+    
+    /**
+      * A reference to the WebGL Single Pipeline.
+      * 
+      * This property remains `null` under Canvas.
+      */
+    var pipeline: SinglePipeline = js.native
+    
+    /**
+      * Internal destroy handler, called as part of the destroy process.
+      */
+    /* protected */ def preDestroy(): Unit = js.native
+    
+    /**
+      * This is a NOOP method. Bitmap Masks are not supported by the Canvas Renderer.
+      * @param renderer The Canvas Renderer which would be rendered to.
+      * @param mask The masked Game Object which would be rendered.
+      * @param camera The Camera to render to.
+      */
+    def renderCanvas(renderer: CanvasRenderer, mask: GameObject, camera: Camera): Unit = js.native
+    def renderCanvas(renderer: WebGLRenderer, mask: GameObject, camera: Camera): Unit = js.native
+    
+    /**
+      * The Render Target that belongs to this Dynamic Texture.
+      * 
+      * A Render Target encapsulates a framebuffer and texture for the WebGL Renderer.
+      * 
+      * This property remains `null` under Canvas.
+      */
+    var renderTarget: RenderTarget = js.native
+    
+    /**
+      * Renders this Dynamic Texture onto the Stamp Game Object as a BitmapMask.
+      * @param renderer A reference to the current active WebGL renderer.
+      * @param src The Game Object being rendered in this call.
+      * @param camera The Camera that is rendering the Game Object.
+      * @param parentMatrix This transform matrix is defined if the game object is nested
+      */
+    def renderWebGL(renderer: WebGLRenderer, src: Image, camera: Camera, parentMatrix: TransformMatrix): Unit = js.native
+    
+    /**
+      * A reference to either the Canvas or WebGL Renderer that the Game instance is using.
+      */
+    var renderer: CanvasRenderer | WebGLRenderer = js.native
+    
+    /**
+      * Takes the given Texture Frame and draws it to this Dynamic Texture as a fill pattern,
+      * i.e. in a grid-layout based on the frame dimensions.
+      * 
+      * Textures are referenced by their string-based keys, as stored in the Texture Manager.
+      * 
+      * You can optionally provide a position, width, height, alpha and tint value to apply to
+      * the frames before they are drawn. The position controls the top-left where the repeating
+      * fill will start from. The width and height control the size of the filled area.
+      * 
+      * The position can be negative if required, but the dimensions cannot.
+      * 
+      * Calling this method will cause a batch flush by default. Use the `skipBatch` argument
+      * to disable this if this call is part of a larger batch draw.
+      * 
+      * If you are not planning on using this Dynamic Texture as a base texture for Sprite
+      * Game Objects, then you should set `DynamicTexture.isSpriteTexture = false` before
+      * calling this method, otherwise you will get vertically inverted frames in WebGL.
+      * @param key The key of the texture to be used, as stored in the Texture Manager.
+      * @param frame The name or index of the frame within the Texture. Set to `null` to skip this argument if not required.
+      * @param x The x position to start drawing the frames from (can be negative to offset). Default 0.
+      * @param y The y position to start drawing the frames from (can be negative to offset). Default 0.
+      * @param width The width of the area to repeat the frame within. Defaults to the width of this Dynamic Texture. Default this.width.
+      * @param height The height of the area to repeat the frame within. Defaults to the height of this Dynamic Texture. Default this.height.
+      * @param alpha The alpha to use. Defaults to 1, no alpha. Default 1.
+      * @param tint WebGL only. The tint color to use. Leave as undefined, or 0xffffff to have no tint. Default 0xffffff.
+      * @param skipBatch Skip beginning and ending a batch with this call. Use if this is part of a bigger batched draw. Default false.
+      */
+    def repeat(
+      key: String,
+      frame: js.UndefOr[String | Double],
+      x: js.UndefOr[Double],
+      y: js.UndefOr[Double],
+      width: js.UndefOr[Double],
+      height: js.UndefOr[Double],
+      alpha: js.UndefOr[Double],
+      tint: js.UndefOr[Double],
+      skipBatch: js.UndefOr[Boolean]
+    ): this.type = js.native
+    
+    /**
+      * If you are planning on using this Render Texture as a base texture for Sprite
+      * Game Objects, then you should call this method with a value of `true` before
+      * drawing anything to it, otherwise you will get inverted frames in WebGL.
+      * @param value Is this Render Target being used as a Sprite Texture, or not?
+      */
+    def setIsSpriteTexture(value: Boolean): this.type = js.native
+    
+    /**
+      * Resizes this Dynamic Texture to the new dimensions given.
+      * 
+      * In WebGL it will destroy and then re-create the frame buffer being used by this Dynamic Texture.
+      * In Canvas it will resize the underlying canvas DOM element.
+      * 
+      * Both approaches will erase everything currently drawn to this texture.
+      * 
+      * If the dimensions given are the same as those already being used, calling this method will do nothing.
+      * @param width The new width of this Dynamic Texture.
+      * @param height The new height of this Dynamic Texture. If not specified, will be set the same as the `width`. Default width.
+      */
+    def setSize(width: Double): this.type = js.native
+    def setSize(width: Double, height: Double): this.type = js.native
+    
+    /**
+      * Takes a snapshot of the whole of this Dynamic Texture.
+      * 
+      * The snapshot is taken immediately, but the results are returned via the given callback.
+      * 
+      * To capture a portion of this Dynamic Texture see the `snapshotArea` method.
+      * To capture just a specific pixel, see the `snapshotPixel` method.
+      * 
+      * Snapshots work by using the WebGL `readPixels` feature to grab every pixel from the frame buffer
+      * into an ArrayBufferView. It then parses this, copying the contents to a temporary Canvas and finally
+      * creating an Image object from it, which is the image returned to the callback provided.
+      * 
+      * All in all, this is a computationally expensive and blocking process, which gets more expensive
+      * the larger the resolution this Dynamic Texture has, so please be careful how you employ this in your game.
+      * @param callback The Function to invoke after the snapshot image is created.
+      * @param type The format of the image to create, usually `image/png` or `image/jpeg`. Default 'image/png'.
+      * @param encoderOptions The image quality, between 0 and 1. Used for image formats with lossy compression, such as `image/jpeg`. Default 0.92.
+      */
+    def snapshot(callback: SnapshotCallback): this.type = js.native
+    def snapshot(callback: SnapshotCallback, `type`: String): this.type = js.native
+    def snapshot(callback: SnapshotCallback, `type`: String, encoderOptions: Double): this.type = js.native
+    def snapshot(callback: SnapshotCallback, `type`: Unit, encoderOptions: Double): this.type = js.native
+    
+    /**
+      * Takes a snapshot of the given area of this Dynamic Texture.
+      * 
+      * The snapshot is taken immediately, but the results are returned via the given callback.
+      * 
+      * To capture the whole Dynamic Texture see the `snapshot` method.
+      * To capture just a specific pixel, see the `snapshotPixel` method.
+      * 
+      * Snapshots work by using the WebGL `readPixels` feature to grab every pixel from the frame buffer
+      * into an ArrayBufferView. It then parses this, copying the contents to a temporary Canvas and finally
+      * creating an Image object from it, which is the image returned to the callback provided.
+      * 
+      * All in all, this is a computationally expensive and blocking process, which gets more expensive
+      * the larger the resolution this Dynamic Texture has, so please be careful how you employ this in your game.
+      * @param x The x coordinate to grab from.
+      * @param y The y coordinate to grab from.
+      * @param width The width of the area to grab.
+      * @param height The height of the area to grab.
+      * @param callback The Function to invoke after the snapshot image is created.
+      * @param type The format of the image to create, usually `image/png` or `image/jpeg`. Default 'image/png'.
+      * @param encoderOptions The image quality, between 0 and 1. Used for image formats with lossy compression, such as `image/jpeg`. Default 0.92.
+      */
+    def snapshotArea(x: Double, y: Double, width: Double, height: Double, callback: SnapshotCallback): this.type = js.native
+    def snapshotArea(x: Double, y: Double, width: Double, height: Double, callback: SnapshotCallback, `type`: String): this.type = js.native
+    def snapshotArea(
+      x: Double,
+      y: Double,
+      width: Double,
+      height: Double,
+      callback: SnapshotCallback,
+      `type`: String,
+      encoderOptions: Double
+    ): this.type = js.native
+    def snapshotArea(
+      x: Double,
+      y: Double,
+      width: Double,
+      height: Double,
+      callback: SnapshotCallback,
+      `type`: Unit,
+      encoderOptions: Double
+    ): this.type = js.native
+    
+    /**
+      * Takes a snapshot of the given pixel from this Dynamic Texture.
+      * 
+      * The snapshot is taken immediately, but the results are returned via the given callback.
+      * 
+      * To capture the whole Dynamic Texture see the `snapshot` method.
+      * To capture a portion of this Dynamic Texture see the `snapshotArea` method.
+      * 
+      * Unlike the two other snapshot methods, this one will send your callback a `Color` object
+      * containing the color data for the requested pixel. It doesn't need to create an internal
+      * Canvas or Image object, so is a lot faster to execute, using less memory than the other snapshot methods.
+      * @param x The x coordinate of the pixel to get.
+      * @param y The y coordinate of the pixel to get.
+      * @param callback The Function to invoke after the snapshot pixel data is extracted.
+      */
+    def snapshotPixel(x: Double, y: Double, callback: SnapshotCallback): this.type = js.native
+    
+    /**
+      * Takes the given texture key and frame and then stamps it at the given
+      * x and y coordinates. You can use the optional 'config' argument to provide
+      * lots more options about how the stamp is applied, including the alpha,
+      * tint, angle, scale and origin.
+      * 
+      * By default, the frame will stamp on the x/y coordinates based on its center.
+      * 
+      * If you wish to stamp from the top-left, set the config `originX` and
+      * `originY` properties both to zero.
+      * @param key The key of the texture to be used, as stored in the Texture Manager.
+      * @param frame The name or index of the frame within the Texture. Set to `null` to skip this argument if not required.
+      * @param x The x position to draw the frame at. Default 0.
+      * @param y The y position to draw the frame at. Default 0.
+      * @param config The stamp configuration object, allowing you to set the alpha, tint, angle, scale and origin of the stamp.
+      */
+    def stamp(key: String): this.type = js.native
+    def stamp(key: String, frame: String): this.type = js.native
+    def stamp(key: String, frame: String, x: Double): this.type = js.native
+    def stamp(key: String, frame: String, x: Double, y: Double): this.type = js.native
+    def stamp(key: String, frame: String, x: Double, y: Double, config: StampConfig): this.type = js.native
+    def stamp(key: String, frame: String, x: Double, y: Unit, config: StampConfig): this.type = js.native
+    def stamp(key: String, frame: String, x: Unit, y: Double): this.type = js.native
+    def stamp(key: String, frame: String, x: Unit, y: Double, config: StampConfig): this.type = js.native
+    def stamp(key: String, frame: String, x: Unit, y: Unit, config: StampConfig): this.type = js.native
+    def stamp(key: String, frame: Double): this.type = js.native
+    def stamp(key: String, frame: Double, x: Double): this.type = js.native
+    def stamp(key: String, frame: Double, x: Double, y: Double): this.type = js.native
+    def stamp(key: String, frame: Double, x: Double, y: Double, config: StampConfig): this.type = js.native
+    def stamp(key: String, frame: Double, x: Double, y: Unit, config: StampConfig): this.type = js.native
+    def stamp(key: String, frame: Double, x: Unit, y: Double): this.type = js.native
+    def stamp(key: String, frame: Double, x: Unit, y: Double, config: StampConfig): this.type = js.native
+    def stamp(key: String, frame: Double, x: Unit, y: Unit, config: StampConfig): this.type = js.native
+    def stamp(key: String, frame: Unit, x: Double): this.type = js.native
+    def stamp(key: String, frame: Unit, x: Double, y: Double): this.type = js.native
+    def stamp(key: String, frame: Unit, x: Double, y: Double, config: StampConfig): this.type = js.native
+    def stamp(key: String, frame: Unit, x: Double, y: Unit, config: StampConfig): this.type = js.native
+    def stamp(key: String, frame: Unit, x: Unit, y: Double): this.type = js.native
+    def stamp(key: String, frame: Unit, x: Unit, y: Double, config: StampConfig): this.type = js.native
+    def stamp(key: String, frame: Unit, x: Unit, y: Unit, config: StampConfig): this.type = js.native
+    
+    /**
+      * The internal data type of this object.
+      */
+    val `type`: String = js.native
+  }
+  
+  /**
     * A Frame is a section of a Texture.
     */
   @js.native
@@ -444,7 +1318,7 @@ object Textures {
     /**
       * A reference to the Texture Source WebGL Texture that this Frame is using.
       */
-    var glTexture: WebGLTexture = js.native
+    var glTexture: WebGLTexture | Null = js.native
     
     /**
       * Half the height, floored.
@@ -539,10 +1413,10 @@ object Textures {
       * @param x The x coordinate of the top-left of this Frame. Default 0.
       * @param y The y coordinate of the top-left of this Frame. Default 0.
       */
-    def setSize(width: Double, height: Double): Frame = js.native
-    def setSize(width: Double, height: Double, x: Double): Frame = js.native
-    def setSize(width: Double, height: Double, x: Double, y: Double): Frame = js.native
-    def setSize(width: Double, height: Double, x: Unit, y: Double): Frame = js.native
+    def setSize(width: Double, height: Double): this.type = js.native
+    def setSize(width: Double, height: Double, x: Double): this.type = js.native
+    def setSize(width: Double, height: Double, x: Double, y: Double): this.type = js.native
+    def setSize(width: Double, height: Double, x: Unit, y: Double): this.type = js.native
     
     /**
       * If the frame was trimmed when added to the Texture Atlas, this records the trim and source data.
@@ -560,7 +1434,7 @@ object Textures {
       destY: Double,
       destWidth: Double,
       destHeight: Double
-    ): Frame = js.native
+    ): this.type = js.native
     
     /**
       * Directly sets the canvas and WebGL UV data for this frame.
@@ -574,7 +1448,7 @@ object Textures {
       * @param u1 UV u1 value.
       * @param v1 UV v1 value.
       */
-    def setUVs(width: Double, height: Double, u0: Double, v0: Double, u1: Double, v1: Double): Frame = js.native
+    def setUVs(width: Double, height: Double, u0: Double, v0: Double, u1: Double, v1: Double): this.type = js.native
     
     /**
       * The TextureSource this Frame is part of.
@@ -618,12 +1492,12 @@ object Textures {
     /**
       * Updates the internal WebGL UV cache and the drawImage cache.
       */
-    def updateUVs(): Frame = js.native
+    def updateUVs(): this.type = js.native
     
     /**
       * Updates the internal WebGL UV cache.
       */
-    def updateUVsInverted(): Frame = js.native
+    def updateUVsInverted(): this.type = js.native
     
     /**
       * WebGL UV v0 value.
@@ -668,7 +1542,7 @@ object Textures {
   @js.native
   trait Texture extends StObject {
     
-    def add(name: String, sourceIndex: Double, x: Double, y: Double, width: Double, height: Double): Frame = js.native
+    def add(name: String, sourceIndex: Double, x: Double, y: Double, width: Double, height: Double): Frame | Null = js.native
     /**
       * Adds a new Frame to this Texture.
       * 
@@ -682,7 +1556,7 @@ object Textures {
       * @param width The width of this Frame.
       * @param height The height of this Frame.
       */
-    def add(name: Double, sourceIndex: Double, x: Double, y: Double, width: Double, height: Double): Frame = js.native
+    def add(name: Double, sourceIndex: Double, x: Double, y: Double, width: Double, height: Double): Frame | Null = js.native
     
     /**
       * Any additional data that was set in the source JSON (if any),
@@ -835,128 +1709,295 @@ object Textures {
   }
   
   /**
-    * Textures are managed by the global TextureManager. This is a singleton class that is
-    * responsible for creating and delivering Textures and their corresponding Frames to Game Objects.
+    * When Phaser boots it will create an instance of this Texture Manager class.
     * 
-    * Sprites and other Game Objects get the texture data they need from the TextureManager.
+    * It is a global manager that handles all textures in your game. You can access it from within
+    * a Scene via the `this.textures` property.
     * 
-    * Access it via `scene.textures`.
+    * Its role is as a manager for all textures that your game uses. It can create, update and remove
+    * textures globally, as well as parse texture data from external files, such as sprite sheets
+    * and texture atlases.
+    * 
+    * Sprites and other texture-based Game Objects get their texture data directly from this class.
     */
   @js.native
   trait TextureManager
     extends StObject
        with EventEmitter {
     
+    def addAtlas(key: String, source: js.Array[HTMLImageElement], data: js.Array[js.Object]): Texture | Null = js.native
+    def addAtlas(
+      key: String,
+      source: js.Array[HTMLImageElement],
+      data: js.Array[js.Object],
+      dataSource: js.Array[HTMLCanvasElement | HTMLImageElement]
+    ): Texture | Null = js.native
+    def addAtlas(
+      key: String,
+      source: js.Array[HTMLImageElement],
+      data: js.Array[js.Object],
+      dataSource: HTMLCanvasElement
+    ): Texture | Null = js.native
+    def addAtlas(
+      key: String,
+      source: js.Array[HTMLImageElement],
+      data: js.Array[js.Object],
+      dataSource: HTMLImageElement
+    ): Texture | Null = js.native
+    def addAtlas(key: String, source: js.Array[HTMLImageElement], data: js.Object): Texture | Null = js.native
+    def addAtlas(
+      key: String,
+      source: js.Array[HTMLImageElement],
+      data: js.Object,
+      dataSource: js.Array[HTMLCanvasElement | HTMLImageElement]
+    ): Texture | Null = js.native
+    def addAtlas(key: String, source: js.Array[HTMLImageElement], data: js.Object, dataSource: HTMLCanvasElement): Texture | Null = js.native
+    def addAtlas(key: String, source: js.Array[HTMLImageElement], data: js.Object, dataSource: HTMLImageElement): Texture | Null = js.native
+    def addAtlas(key: String, source: Texture, data: js.Array[js.Object]): Texture | Null = js.native
+    def addAtlas(
+      key: String,
+      source: Texture,
+      data: js.Array[js.Object],
+      dataSource: js.Array[HTMLCanvasElement | HTMLImageElement]
+    ): Texture | Null = js.native
+    def addAtlas(key: String, source: Texture, data: js.Array[js.Object], dataSource: HTMLCanvasElement): Texture | Null = js.native
+    def addAtlas(key: String, source: Texture, data: js.Array[js.Object], dataSource: HTMLImageElement): Texture | Null = js.native
+    def addAtlas(key: String, source: Texture, data: js.Object): Texture | Null = js.native
+    def addAtlas(
+      key: String,
+      source: Texture,
+      data: js.Object,
+      dataSource: js.Array[HTMLCanvasElement | HTMLImageElement]
+    ): Texture | Null = js.native
+    def addAtlas(key: String, source: Texture, data: js.Object, dataSource: HTMLCanvasElement): Texture | Null = js.native
+    def addAtlas(key: String, source: Texture, data: js.Object, dataSource: HTMLImageElement): Texture | Null = js.native
+    def addAtlas(key: String, source: HTMLImageElement, data: js.Array[js.Object]): Texture | Null = js.native
+    def addAtlas(
+      key: String,
+      source: HTMLImageElement,
+      data: js.Array[js.Object],
+      dataSource: js.Array[HTMLCanvasElement | HTMLImageElement]
+    ): Texture | Null = js.native
+    def addAtlas(key: String, source: HTMLImageElement, data: js.Array[js.Object], dataSource: HTMLCanvasElement): Texture | Null = js.native
+    def addAtlas(key: String, source: HTMLImageElement, data: js.Array[js.Object], dataSource: HTMLImageElement): Texture | Null = js.native
     /**
-      * Adds a new Texture Atlas to this Texture Manager.
+      * Adds a Texture Atlas to this Texture Manager.
+      * 
+      * In Phaser terminology, a Texture Atlas is a combination of an atlas image and a JSON data file,
+      * such as those exported by applications like Texture Packer.
+      * 
       * It can accept either JSON Array or JSON Hash formats, as exported by Texture Packer and similar software.
+      * 
+      * As of Phaser 3.60 you can use this method to add a atlas data to an existing Phaser Texture.
       * @param key The unique string-based key of the Texture.
-      * @param source The source Image element.
-      * @param data The Texture Atlas data.
+      * @param source The source Image element/s, or a Phaser Texture.
+      * @param data The Texture Atlas data/s.
       * @param dataSource An optional data Image element.
       */
-    def addAtlas(key: String, source: HTMLImageElement, data: js.Object): Texture = js.native
+    def addAtlas(key: String, source: HTMLImageElement, data: js.Object): Texture | Null = js.native
     def addAtlas(
       key: String,
       source: HTMLImageElement,
       data: js.Object,
       dataSource: js.Array[HTMLCanvasElement | HTMLImageElement]
-    ): Texture = js.native
-    def addAtlas(key: String, source: HTMLImageElement, data: js.Object, dataSource: HTMLCanvasElement): Texture = js.native
-    def addAtlas(key: String, source: HTMLImageElement, data: js.Object, dataSource: HTMLImageElement): Texture = js.native
+    ): Texture | Null = js.native
+    def addAtlas(key: String, source: HTMLImageElement, data: js.Object, dataSource: HTMLCanvasElement): Texture | Null = js.native
+    def addAtlas(key: String, source: HTMLImageElement, data: js.Object, dataSource: HTMLImageElement): Texture | Null = js.native
     
-    def addAtlasJSONArray(key: String, source: js.Array[HTMLImageElement], data: js.Array[js.Object]): Texture = js.native
+    def addAtlasJSONArray(key: String, source: js.Array[HTMLImageElement], data: js.Array[js.Object]): Texture | Null = js.native
     def addAtlasJSONArray(
       key: String,
       source: js.Array[HTMLImageElement],
       data: js.Array[js.Object],
       dataSource: js.Array[HTMLCanvasElement | HTMLImageElement]
-    ): Texture = js.native
+    ): Texture | Null = js.native
     def addAtlasJSONArray(
       key: String,
       source: js.Array[HTMLImageElement],
       data: js.Array[js.Object],
       dataSource: HTMLCanvasElement
-    ): Texture = js.native
+    ): Texture | Null = js.native
     def addAtlasJSONArray(
       key: String,
       source: js.Array[HTMLImageElement],
       data: js.Array[js.Object],
       dataSource: HTMLImageElement
-    ): Texture = js.native
-    def addAtlasJSONArray(key: String, source: js.Array[HTMLImageElement], data: js.Object): Texture = js.native
+    ): Texture | Null = js.native
+    def addAtlasJSONArray(key: String, source: js.Array[HTMLImageElement], data: js.Object): Texture | Null = js.native
     def addAtlasJSONArray(
       key: String,
       source: js.Array[HTMLImageElement],
       data: js.Object,
       dataSource: js.Array[HTMLCanvasElement | HTMLImageElement]
-    ): Texture = js.native
-    def addAtlasJSONArray(key: String, source: js.Array[HTMLImageElement], data: js.Object, dataSource: HTMLCanvasElement): Texture = js.native
-    def addAtlasJSONArray(key: String, source: js.Array[HTMLImageElement], data: js.Object, dataSource: HTMLImageElement): Texture = js.native
-    def addAtlasJSONArray(key: String, source: HTMLImageElement, data: js.Array[js.Object]): Texture = js.native
+    ): Texture | Null = js.native
+    def addAtlasJSONArray(key: String, source: js.Array[HTMLImageElement], data: js.Object, dataSource: HTMLCanvasElement): Texture | Null = js.native
+    def addAtlasJSONArray(key: String, source: js.Array[HTMLImageElement], data: js.Object, dataSource: HTMLImageElement): Texture | Null = js.native
+    def addAtlasJSONArray(key: String, source: Texture, data: js.Array[js.Object]): Texture | Null = js.native
+    def addAtlasJSONArray(
+      key: String,
+      source: Texture,
+      data: js.Array[js.Object],
+      dataSource: js.Array[HTMLCanvasElement | HTMLImageElement]
+    ): Texture | Null = js.native
+    def addAtlasJSONArray(key: String, source: Texture, data: js.Array[js.Object], dataSource: HTMLCanvasElement): Texture | Null = js.native
+    def addAtlasJSONArray(key: String, source: Texture, data: js.Array[js.Object], dataSource: HTMLImageElement): Texture | Null = js.native
+    def addAtlasJSONArray(key: String, source: Texture, data: js.Object): Texture | Null = js.native
+    def addAtlasJSONArray(
+      key: String,
+      source: Texture,
+      data: js.Object,
+      dataSource: js.Array[HTMLCanvasElement | HTMLImageElement]
+    ): Texture | Null = js.native
+    def addAtlasJSONArray(key: String, source: Texture, data: js.Object, dataSource: HTMLCanvasElement): Texture | Null = js.native
+    def addAtlasJSONArray(key: String, source: Texture, data: js.Object, dataSource: HTMLImageElement): Texture | Null = js.native
+    def addAtlasJSONArray(key: String, source: HTMLImageElement, data: js.Array[js.Object]): Texture | Null = js.native
     def addAtlasJSONArray(
       key: String,
       source: HTMLImageElement,
       data: js.Array[js.Object],
       dataSource: js.Array[HTMLCanvasElement | HTMLImageElement]
-    ): Texture = js.native
-    def addAtlasJSONArray(key: String, source: HTMLImageElement, data: js.Array[js.Object], dataSource: HTMLCanvasElement): Texture = js.native
-    def addAtlasJSONArray(key: String, source: HTMLImageElement, data: js.Array[js.Object], dataSource: HTMLImageElement): Texture = js.native
+    ): Texture | Null = js.native
+    def addAtlasJSONArray(key: String, source: HTMLImageElement, data: js.Array[js.Object], dataSource: HTMLCanvasElement): Texture | Null = js.native
+    def addAtlasJSONArray(key: String, source: HTMLImageElement, data: js.Array[js.Object], dataSource: HTMLImageElement): Texture | Null = js.native
     /**
       * Adds a Texture Atlas to this Texture Manager.
+      * 
+      * In Phaser terminology, a Texture Atlas is a combination of an atlas image and a JSON data file,
+      * such as those exported by applications like Texture Packer.
+      * 
       * The frame data of the atlas must be stored in an Array within the JSON.
+      * 
       * This is known as a JSON Array in software such as Texture Packer.
+      * 
+      * As of Phaser 3.60 you can use this method to add a atlas data to an existing Phaser Texture.
       * @param key The unique string-based key of the Texture.
-      * @param source The source Image element/s.
+      * @param source The source Image element/s, or a Phaser Texture.
       * @param data The Texture Atlas data/s.
       * @param dataSource An optional data Image element.
       */
-    def addAtlasJSONArray(key: String, source: HTMLImageElement, data: js.Object): Texture = js.native
+    def addAtlasJSONArray(key: String, source: HTMLImageElement, data: js.Object): Texture | Null = js.native
     def addAtlasJSONArray(
       key: String,
       source: HTMLImageElement,
       data: js.Object,
       dataSource: js.Array[HTMLCanvasElement | HTMLImageElement]
-    ): Texture = js.native
-    def addAtlasJSONArray(key: String, source: HTMLImageElement, data: js.Object, dataSource: HTMLCanvasElement): Texture = js.native
-    def addAtlasJSONArray(key: String, source: HTMLImageElement, data: js.Object, dataSource: HTMLImageElement): Texture = js.native
+    ): Texture | Null = js.native
+    def addAtlasJSONArray(key: String, source: HTMLImageElement, data: js.Object, dataSource: HTMLCanvasElement): Texture | Null = js.native
+    def addAtlasJSONArray(key: String, source: HTMLImageElement, data: js.Object, dataSource: HTMLImageElement): Texture | Null = js.native
     
+    def addAtlasJSONHash(key: String, source: js.Array[HTMLImageElement], data: js.Array[js.Object]): Texture | Null = js.native
+    def addAtlasJSONHash(
+      key: String,
+      source: js.Array[HTMLImageElement],
+      data: js.Array[js.Object],
+      dataSource: js.Array[HTMLCanvasElement | HTMLImageElement]
+    ): Texture | Null = js.native
+    def addAtlasJSONHash(
+      key: String,
+      source: js.Array[HTMLImageElement],
+      data: js.Array[js.Object],
+      dataSource: HTMLCanvasElement
+    ): Texture | Null = js.native
+    def addAtlasJSONHash(
+      key: String,
+      source: js.Array[HTMLImageElement],
+      data: js.Array[js.Object],
+      dataSource: HTMLImageElement
+    ): Texture | Null = js.native
+    def addAtlasJSONHash(key: String, source: js.Array[HTMLImageElement], data: js.Object): Texture | Null = js.native
+    def addAtlasJSONHash(
+      key: String,
+      source: js.Array[HTMLImageElement],
+      data: js.Object,
+      dataSource: js.Array[HTMLCanvasElement | HTMLImageElement]
+    ): Texture | Null = js.native
+    def addAtlasJSONHash(key: String, source: js.Array[HTMLImageElement], data: js.Object, dataSource: HTMLCanvasElement): Texture | Null = js.native
+    def addAtlasJSONHash(key: String, source: js.Array[HTMLImageElement], data: js.Object, dataSource: HTMLImageElement): Texture | Null = js.native
+    def addAtlasJSONHash(key: String, source: Texture, data: js.Array[js.Object]): Texture | Null = js.native
+    def addAtlasJSONHash(
+      key: String,
+      source: Texture,
+      data: js.Array[js.Object],
+      dataSource: js.Array[HTMLCanvasElement | HTMLImageElement]
+    ): Texture | Null = js.native
+    def addAtlasJSONHash(key: String, source: Texture, data: js.Array[js.Object], dataSource: HTMLCanvasElement): Texture | Null = js.native
+    def addAtlasJSONHash(key: String, source: Texture, data: js.Array[js.Object], dataSource: HTMLImageElement): Texture | Null = js.native
+    def addAtlasJSONHash(key: String, source: Texture, data: js.Object): Texture | Null = js.native
+    def addAtlasJSONHash(
+      key: String,
+      source: Texture,
+      data: js.Object,
+      dataSource: js.Array[HTMLCanvasElement | HTMLImageElement]
+    ): Texture | Null = js.native
+    def addAtlasJSONHash(key: String, source: Texture, data: js.Object, dataSource: HTMLCanvasElement): Texture | Null = js.native
+    def addAtlasJSONHash(key: String, source: Texture, data: js.Object, dataSource: HTMLImageElement): Texture | Null = js.native
+    def addAtlasJSONHash(key: String, source: HTMLImageElement, data: js.Array[js.Object]): Texture | Null = js.native
+    def addAtlasJSONHash(
+      key: String,
+      source: HTMLImageElement,
+      data: js.Array[js.Object],
+      dataSource: js.Array[HTMLCanvasElement | HTMLImageElement]
+    ): Texture | Null = js.native
+    def addAtlasJSONHash(key: String, source: HTMLImageElement, data: js.Array[js.Object], dataSource: HTMLCanvasElement): Texture | Null = js.native
+    def addAtlasJSONHash(key: String, source: HTMLImageElement, data: js.Array[js.Object], dataSource: HTMLImageElement): Texture | Null = js.native
     /**
       * Adds a Texture Atlas to this Texture Manager.
+      * 
+      * In Phaser terminology, a Texture Atlas is a combination of an atlas image and a JSON data file,
+      * such as those exported by applications like Texture Packer.
+      * 
       * The frame data of the atlas must be stored in an Object within the JSON.
+      * 
       * This is known as a JSON Hash in software such as Texture Packer.
+      * 
+      * As of Phaser 3.60 you can use this method to add a atlas data to an existing Phaser Texture.
       * @param key The unique string-based key of the Texture.
-      * @param source The source Image element.
-      * @param data The Texture Atlas data.
+      * @param source The source Image element/s, or a Phaser Texture.
+      * @param data The Texture Atlas data/s.
       * @param dataSource An optional data Image element.
       */
-    def addAtlasJSONHash(key: String, source: HTMLImageElement, data: js.Object): Texture = js.native
+    def addAtlasJSONHash(key: String, source: HTMLImageElement, data: js.Object): Texture | Null = js.native
     def addAtlasJSONHash(
       key: String,
       source: HTMLImageElement,
       data: js.Object,
       dataSource: js.Array[HTMLCanvasElement | HTMLImageElement]
-    ): Texture = js.native
-    def addAtlasJSONHash(key: String, source: HTMLImageElement, data: js.Object, dataSource: HTMLCanvasElement): Texture = js.native
-    def addAtlasJSONHash(key: String, source: HTMLImageElement, data: js.Object, dataSource: HTMLImageElement): Texture = js.native
+    ): Texture | Null = js.native
+    def addAtlasJSONHash(key: String, source: HTMLImageElement, data: js.Object, dataSource: HTMLCanvasElement): Texture | Null = js.native
+    def addAtlasJSONHash(key: String, source: HTMLImageElement, data: js.Object, dataSource: HTMLImageElement): Texture | Null = js.native
     
+    def addAtlasXML(key: String, source: Texture, data: js.Object): Texture | Null = js.native
+    def addAtlasXML(
+      key: String,
+      source: Texture,
+      data: js.Object,
+      dataSource: js.Array[HTMLCanvasElement | HTMLImageElement]
+    ): Texture | Null = js.native
+    def addAtlasXML(key: String, source: Texture, data: js.Object, dataSource: HTMLCanvasElement): Texture | Null = js.native
+    def addAtlasXML(key: String, source: Texture, data: js.Object, dataSource: HTMLImageElement): Texture | Null = js.native
     /**
-      * Adds a Texture Atlas to this Texture Manager, where the atlas data is given
-      * in the XML format.
+      * Adds a Texture Atlas to this Texture Manager.
+      * 
+      * In Phaser terminology, a Texture Atlas is a combination of an atlas image and a data file,
+      * such as those exported by applications like Texture Packer.
+      * 
+      * The frame data of the atlas must be stored in an XML file.
+      * 
+      * As of Phaser 3.60 you can use this method to add a atlas data to an existing Phaser Texture.
       * @param key The unique string-based key of the Texture.
-      * @param source The source Image element.
+      * @param source The source Image element, or a Phaser Texture.
       * @param data The Texture Atlas XML data.
       * @param dataSource An optional data Image element.
       */
-    def addAtlasXML(key: String, source: HTMLImageElement, data: js.Object): Texture = js.native
+    def addAtlasXML(key: String, source: HTMLImageElement, data: js.Object): Texture | Null = js.native
     def addAtlasXML(
       key: String,
       source: HTMLImageElement,
       data: js.Object,
       dataSource: js.Array[HTMLCanvasElement | HTMLImageElement]
-    ): Texture = js.native
-    def addAtlasXML(key: String, source: HTMLImageElement, data: js.Object, dataSource: HTMLCanvasElement): Texture = js.native
-    def addAtlasXML(key: String, source: HTMLImageElement, data: js.Object, dataSource: HTMLImageElement): Texture = js.native
+    ): Texture | Null = js.native
+    def addAtlasXML(key: String, source: HTMLImageElement, data: js.Object, dataSource: HTMLCanvasElement): Texture | Null = js.native
+    def addAtlasXML(key: String, source: HTMLImageElement, data: js.Object, dataSource: HTMLImageElement): Texture | Null = js.native
     
     /**
       * Adds a new Texture to the Texture Manager created from the given Base64 encoded data.
@@ -976,8 +2017,53 @@ object Textures {
       * @param source The Canvas element to form the base of the new Texture.
       * @param skipCache Skip adding this Texture into the Cache? Default false.
       */
-    def addCanvas(key: String, source: HTMLCanvasElement): CanvasTexture = js.native
-    def addCanvas(key: String, source: HTMLCanvasElement, skipCache: Boolean): CanvasTexture = js.native
+    def addCanvas(key: String, source: HTMLCanvasElement): CanvasTexture | Null = js.native
+    def addCanvas(key: String, source: HTMLCanvasElement, skipCache: Boolean): CanvasTexture | Null = js.native
+    
+    /**
+      * Adds a Compressed Texture to this Texture Manager.
+      * 
+      * The texture should typically have been loaded via the `CompressedTextureFile` loader,
+      * in order to prepare the correct data object this method requires.
+      * 
+      * You can optionally also pass atlas data to this method, in which case a texture atlas
+      * will be generated from the given compressed texture, combined with the atlas data.
+      * @param key The unique string-based key of the Texture.
+      * @param textureData The Compressed Texture data object.
+      * @param atlasData Optional Texture Atlas data.
+      */
+    def addCompressedTexture(key: String, textureData: CompressedTextureData): Texture | Null = js.native
+    def addCompressedTexture(key: String, textureData: CompressedTextureData, atlasData: js.Object): Texture | Null = js.native
+    
+    /**
+      * Creates a Dynamic Texture instance and adds itself to this Texture Manager.
+      * 
+      * A Dynamic Texture is a special texture that allows you to draw textures, frames and most kind of
+      * Game Objects directly to it.
+      * 
+      * You can take many complex objects and draw them to this one texture, which can then be used as the
+      * base texture for other Game Objects, such as Sprites. Should you then update this texture, all
+      * Game Objects using it will instantly be updated as well, reflecting the changes immediately.
+      * 
+      * It's a powerful way to generate dynamic textures at run-time that are WebGL friendly and don't invoke
+      * expensive GPU uploads on each change.
+      * 
+      * See the methods available on the `DynamicTexture` class for more details.
+      * 
+      * Optionally, you can also pass a Dynamic Texture instance to this method to have
+      * it added to the Texture Manager.
+      * @param key The string-based key of this Texture. Must be unique within the Texture Manager. Or, a DynamicTexture instance.
+      * @param width The width of this Dynamic Texture in pixels. Defaults to 256 x 256. Ignored if an instance is passed as the key. Default 256.
+      * @param height The height of this Dynamic Texture in pixels. Defaults to 256 x 256. Ignored if an instance is passed as the key. Default 256.
+      */
+    def addDynamicTexture(key: String): DynamicTexture | Null = js.native
+    def addDynamicTexture(key: String, width: Double): DynamicTexture | Null = js.native
+    def addDynamicTexture(key: String, width: Double, height: Double): DynamicTexture | Null = js.native
+    def addDynamicTexture(key: String, width: Unit, height: Double): DynamicTexture | Null = js.native
+    def addDynamicTexture(key: DynamicTexture): DynamicTexture | Null = js.native
+    def addDynamicTexture(key: DynamicTexture, width: Double): DynamicTexture | Null = js.native
+    def addDynamicTexture(key: DynamicTexture, width: Double, height: Double): DynamicTexture | Null = js.native
+    def addDynamicTexture(key: DynamicTexture, width: Unit, height: Double): DynamicTexture | Null = js.native
     
     /**
       * Takes a WebGL Texture and creates a Phaser Texture from it, which is added to the Texture Manager using the given key.
@@ -993,10 +2079,10 @@ object Textures {
       * @param width The new width of the Texture. Read from `glTexture.width` if omitted.
       * @param height The new height of the Texture. Read from `glTexture.height` if omitted.
       */
-    def addGLTexture(key: String, glTexture: WebGLTexture): Texture = js.native
-    def addGLTexture(key: String, glTexture: WebGLTexture, width: Double): Texture = js.native
-    def addGLTexture(key: String, glTexture: WebGLTexture, width: Double, height: Double): Texture = js.native
-    def addGLTexture(key: String, glTexture: WebGLTexture, width: Unit, height: Double): Texture = js.native
+    def addGLTexture(key: String, glTexture: WebGLTexture): Texture | Null = js.native
+    def addGLTexture(key: String, glTexture: WebGLTexture, width: Double): Texture | Null = js.native
+    def addGLTexture(key: String, glTexture: WebGLTexture, width: Double, height: Double): Texture | Null = js.native
+    def addGLTexture(key: String, glTexture: WebGLTexture, width: Unit, height: Double): Texture | Null = js.native
     
     /**
       * Adds a new Texture to the Texture Manager created from the given Image element.
@@ -1004,9 +2090,9 @@ object Textures {
       * @param source The source Image element.
       * @param dataSource An optional data Image element.
       */
-    def addImage(key: String, source: HTMLImageElement): Texture = js.native
-    def addImage(key: String, source: HTMLImageElement, dataSource: HTMLCanvasElement): Texture = js.native
-    def addImage(key: String, source: HTMLImageElement, dataSource: HTMLImageElement): Texture = js.native
+    def addImage(key: String, source: HTMLImageElement): Texture | Null = js.native
+    def addImage(key: String, source: HTMLImageElement, dataSource: HTMLCanvasElement): Texture | Null = js.native
+    def addImage(key: String, source: HTMLImageElement, dataSource: HTMLImageElement): Texture | Null = js.native
     
     /**
       * Adds a Render Texture to the Texture Manager using the given key.
@@ -1014,18 +2100,28 @@ object Textures {
       * @param key The unique string-based key of the Texture.
       * @param renderTexture The source Render Texture.
       */
-    def addRenderTexture(key: String, renderTexture: RenderTexture): Texture = js.native
+    def addRenderTexture(key: String, renderTexture: RenderTexture): Texture | Null = js.native
     
+    def addSpriteSheet(key: String, source: Texture, config: SpriteSheetConfig): Texture | Null = js.native
+    def addSpriteSheet(key: String, source: Texture, config: SpriteSheetConfig, dataSource: HTMLCanvasElement): Texture | Null = js.native
+    def addSpriteSheet(key: String, source: Texture, config: SpriteSheetConfig, dataSource: HTMLImageElement): Texture | Null = js.native
     /**
       * Adds a Sprite Sheet to this Texture Manager.
       * 
       * In Phaser terminology a Sprite Sheet is a texture containing different frames, but each frame is the exact
-      * same size and cannot be trimmed or rotated.
-      * @param key The unique string-based key of the Texture.
-      * @param source The source Image element.
+      * same size and cannot be trimmed or rotated. This is different to a Texture Atlas, created by tools such as
+      * Texture Packer, and more akin with the fixed-frame exports you get from apps like Aseprite or old arcade
+      * games.
+      * 
+      * As of Phaser 3.60 you can use this method to add a sprite sheet to an existing Phaser Texture.
+      * @param key The unique string-based key of the Texture. Give an empty string if you provide a Phaser Texture as the 2nd argument.
+      * @param source The source Image element, or a Phaser Texture.
       * @param config The configuration object for this Sprite Sheet.
+      * @param dataSource An optional data Image element.
       */
-    def addSpriteSheet(key: String, source: HTMLImageElement, config: SpriteSheetConfig): Texture = js.native
+    def addSpriteSheet(key: String, source: HTMLImageElement, config: SpriteSheetConfig): Texture | Null = js.native
+    def addSpriteSheet(key: String, source: HTMLImageElement, config: SpriteSheetConfig, dataSource: HTMLCanvasElement): Texture | Null = js.native
+    def addSpriteSheet(key: String, source: HTMLImageElement, config: SpriteSheetConfig, dataSource: HTMLImageElement): Texture | Null = js.native
     
     /**
       * Adds a Sprite Sheet to this Texture Manager, where the Sprite Sheet exists as a Frame within a Texture Atlas.
@@ -1035,28 +2131,35 @@ object Textures {
       * @param key The unique string-based key of the Texture.
       * @param config The configuration object for this Sprite Sheet.
       */
-    def addSpriteSheetFromAtlas(key: String, config: SpriteSheetFromAtlasConfig): Texture = js.native
+    def addSpriteSheetFromAtlas(key: String, config: SpriteSheetFromAtlasConfig): Texture | Null = js.native
     
     /**
       * Adds a Unity Texture Atlas to this Texture Manager.
-      * The data must be in the form of a Unity YAML file.
+      * 
+      * In Phaser terminology, a Texture Atlas is a combination of an atlas image and a data file,
+      * such as those exported by applications like Texture Packer or Unity.
+      * 
+      * The frame data of the atlas must be stored in a Unity YAML file.
+      * 
+      * As of Phaser 3.60 you can use this method to add a atlas data to an existing Phaser Texture.
       * @param key The unique string-based key of the Texture.
       * @param source The source Image element.
       * @param data The Texture Atlas data.
       * @param dataSource An optional data Image element.
       */
-    def addUnityAtlas(key: String, source: HTMLImageElement, data: js.Object): Texture = js.native
+    def addUnityAtlas(key: String, source: HTMLImageElement, data: js.Object): Texture | Null = js.native
     def addUnityAtlas(
       key: String,
       source: HTMLImageElement,
       data: js.Object,
       dataSource: js.Array[HTMLCanvasElement | HTMLImageElement]
-    ): Texture = js.native
-    def addUnityAtlas(key: String, source: HTMLImageElement, data: js.Object, dataSource: HTMLCanvasElement): Texture = js.native
-    def addUnityAtlas(key: String, source: HTMLImageElement, data: js.Object, dataSource: HTMLImageElement): Texture = js.native
+    ): Texture | Null = js.native
+    def addUnityAtlas(key: String, source: HTMLImageElement, data: js.Object, dataSource: HTMLCanvasElement): Texture | Null = js.native
+    def addUnityAtlas(key: String, source: HTMLImageElement, data: js.Object, dataSource: HTMLImageElement): Texture | Null = js.native
     
     /**
       * Checks the given texture key and throws a console.warn if the key is already in use, then returns false.
+      * 
       * If you wish to avoid the console.warn then use `TextureManager.exists` instead.
       * @param key The texture key to check.
       */
@@ -1077,7 +2180,7 @@ object Textures {
       * @param width The width of the Texture.
       * @param height The height of the Texture.
       */
-    def create(key: String, source: HTMLImageElement, width: Double, height: Double): Texture = js.native
+    def create(key: String, source: HTMLImageElement, width: Double, height: Double): Texture | Null = js.native
     
     /**
       * Creates a new Texture using a blank Canvas element of the size given.
@@ -1088,10 +2191,10 @@ object Textures {
       * @param width The width of the Canvas element. Default 256.
       * @param height The height of the Canvas element. Default 256.
       */
-    def createCanvas(key: String): CanvasTexture = js.native
-    def createCanvas(key: String, width: Double): CanvasTexture = js.native
-    def createCanvas(key: String, width: Double, height: Double): CanvasTexture = js.native
-    def createCanvas(key: String, width: Unit, height: Double): CanvasTexture = js.native
+    def createCanvas(key: String): CanvasTexture | Null = js.native
+    def createCanvas(key: String, width: Double): CanvasTexture | Null = js.native
+    def createCanvas(key: String, width: Double, height: Double): CanvasTexture | Null = js.native
+    def createCanvas(key: String, width: Unit, height: Double): CanvasTexture | Null = js.native
     
     /**
       * Passes all Textures to the given callback.
@@ -1108,7 +2211,9 @@ object Textures {
     def exists(key: String): Boolean = js.native
     
     /**
-      * The Game that this TextureManager belongs to.
+      * The Game that the Texture Manager belongs to.
+      * 
+      * A game will only ever have one instance of a Texture Manager.
       */
     var game: Game = js.native
     
@@ -1149,19 +2254,22 @@ object Textures {
       * @param key The unique string-based key of the Texture.
       * @param config The configuration object needed to generate the texture.
       */
-    def generate(key: String, config: GenerateTextureConfig): Texture = js.native
+    def generate(key: String, config: GenerateTextureConfig): Texture | Null = js.native
     
     /**
       * Returns a Texture from the Texture Manager that matches the given key.
       * 
       * If the key is `undefined` it will return the `__DEFAULT` Texture.
       * 
-      * If the key is an instance of a Texture, it will return the key directly.
+      * If the key is an instance of a Texture, it will return the instance.
       * 
-      * Finally. if the key is given, but not found and not a Texture instance, it will return the `__MISSING` Texture.
-      * @param key The unique string-based key of the Texture, or a Texture instance.
+      * If the key is an instance of a Frame, it will return the frames parent Texture instance.
+      * 
+      * Finally, if the key is given, but not found, and not a Texture or Frame instance, it will return the `__MISSING` Texture.
+      * @param key The unique string-based key of the Texture, or a Texture, or Frame instance.
       */
     def get(key: String): Texture = js.native
+    def get(key: Frame): Texture = js.native
     def get(key: Texture): Texture = js.native
     
     /**
@@ -1208,9 +2316,9 @@ object Textures {
       * @param key The unique string-based key of the Texture.
       * @param frame The string or index of the Frame.
       */
-    def getPixel(x: Double, y: Double, key: String): Color = js.native
-    def getPixel(x: Double, y: Double, key: String, frame: String): Color = js.native
-    def getPixel(x: Double, y: Double, key: String, frame: Double): Color = js.native
+    def getPixel(x: Double, y: Double, key: String): Color | Null = js.native
+    def getPixel(x: Double, y: Double, key: String, frame: String): Color | Null = js.native
+    def getPixel(x: Double, y: Double, key: String, frame: Double): Color | Null = js.native
     
     /**
       * Given a Texture and an `x` and `y` coordinate this method will return a value between 0 and 255
@@ -1227,20 +2335,44 @@ object Textures {
     
     /**
       * Returns an array with all of the keys of all Textures in this Texture Manager.
-      * The output array will exclude the `__DEFAULT` and `__MISSING` keys.
+      * The output array will exclude the `__DEFAULT`, `__MISSING`, and `__WHITE` keys.
       */
     def getTextureKeys(): js.Array[String] = js.native
     
     /**
-      * An object that has all of textures that Texture Manager creates.
-      * Textures are assigned to keys so we can access to any texture that this object has directly by key value without iteration.
+      * This object contains all Textures that belong to this Texture Manager.
+      * 
+      * Textures are identified by string-based keys, which are used as the property
+      * within this object. Therefore, you can access any texture directly from this
+      * object without any iteration.
+      * 
+      * You should not typically modify this object directly, but instead use the
+      * methods provided by the Texture Manager to add and remove entries from it.
       */
     var list: js.Object = js.native
     
     /**
-      * The name of this manager.
+      * The internal name of this manager.
       */
-    var name: String = js.native
+    val name: String = js.native
+    
+    /**
+      * Parses the 'key' parameter and returns a Texture Frame instance.
+      * 
+      * It can accept the following formats:
+      * 
+      * 1) A string
+      * 2) An array where the elements are: [ key, [frame] ]
+      * 3) An object with the properties: { key, [frame] }
+      * 4) A Texture instance - which returns the default frame from the Texture
+      * 5) A Frame instance - returns itself
+      * @param key The key to be parsed.
+      */
+    def parseFrame(key: String): Frame = js.native
+    def parseFrame(key: js.Array[Any]): Frame = js.native
+    def parseFrame(key: js.Object): Frame = js.native
+    def parseFrame(key: Frame): Frame = js.native
+    def parseFrame(key: Texture): Frame = js.native
     
     /**
       * Removes a Texture from the Texture Manager and destroys it. This will immediately
@@ -1274,6 +2406,16 @@ object Textures {
     def renameTexture(currentKey: String, newKey: String): Boolean = js.native
     
     /**
+      * Resets the internal Stamp object, ready for drawing and returns it.
+      * @param alpha The alpha to use. Default 1.
+      * @param tint WebGL only. The tint color to use. Default 0xffffff.
+      */
+    def resetStamp(): Image = js.native
+    def resetStamp(alpha: Double): Image = js.native
+    def resetStamp(alpha: Double, tint: Double): Image = js.native
+    def resetStamp(alpha: Unit, tint: Double): Image = js.native
+    
+    /**
       * Sets the given Game Objects `texture` and `frame` properties so that it uses
       * the Texture and Frame specified in the `key` and `frame` arguments to this method.
       * @param gameObject The Game Object the texture would be set on.
@@ -1283,6 +2425,26 @@ object Textures {
     def setTexture(gameObject: GameObject, key: String): GameObject = js.native
     def setTexture(gameObject: GameObject, key: String, frame: String): GameObject = js.native
     def setTexture(gameObject: GameObject, key: String, frame: Double): GameObject = js.native
+    
+    /**
+      * If this flag is `true` then the Texture Manager will never emit any
+      * warnings to the console log that report missing textures.
+      */
+    var silentWarnings: Boolean = js.native
+    
+    /**
+      * An Image Game Object that belongs to this Texture Manager.
+      * 
+      * Used as a drawing stamp within Dynamic Textures.
+      * 
+      * This is not part of the display list and doesn't render.
+      */
+    val stamp: Image = js.native
+    
+    /**
+      * The crop Rectangle as used by the Stamp when it needs to crop itself.
+      */
+    var stampCrop: Rectangle = js.native
   }
   
   /**
@@ -1296,7 +2458,9 @@ object Textures {
   trait TextureSource extends StObject {
     
     /**
-      * Currently un-used.
+      * Holds the compressed textured algorithm, or `null` if it's not a compressed texture.
+      * 
+      * Prior to Phaser 3.60 this value always held `null`.
       */
     var compressionAlgorithm: Double = js.native
     
@@ -1311,22 +2475,10 @@ object Textures {
     var flipY: Boolean = js.native
     
     /**
-      * The current texture unit index as assigned by the WebGL Renderer.
-      * Un-used in canvas. Should be treated as read-only.
-      */
-    var glIndex: Double = js.native
-    
-    /**
-      * The counter value when this texture was last assigned an index by the WebGL Renderer.
-      * Un-used in canvas. Should be treated as read-only.
-      */
-    var glIndexCounter: Double = js.native
-    
-    /**
       * The WebGL Texture of the source image. If this TextureSource is driven from a WebGLTexture
       * already, then this is a reference to that WebGLTexture.
       */
-    var glTexture: WebGLTexture = js.native
+    var glTexture: WebGLTexture | Null = js.native
     
     /**
       * The height of the source image. If not specified in the constructor it will check
@@ -1373,7 +2525,7 @@ object Textures {
     var isVideo: Boolean = js.native
     
     /**
-      * The Texture this TextureSource belongs to.
+      * A reference to the Canvas or WebGL Renderer.
       */
     var renderer: CanvasRenderer | WebGLRenderer = js.native
     
@@ -1409,11 +2561,13 @@ object Textures {
       * The source of the image data.
       * 
       * This is either an Image Element, a Canvas Element, a Video Element, a RenderTexture or a WebGLTexture.
+      * 
+      * In Phaser 3.60 and above it can also be a Compressed Texture data object.
       */
-    var source: HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | RenderTexture | WebGLTexture = js.native
+    var source: HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | RenderTexture | WebGLTexture | CompressedTextureData | DynamicTexture = js.native
     
     /**
-      * The Texture this TextureSource belongs to.
+      * The Texture this TextureSource instance belongs to.
       */
     var texture: Texture = js.native
     

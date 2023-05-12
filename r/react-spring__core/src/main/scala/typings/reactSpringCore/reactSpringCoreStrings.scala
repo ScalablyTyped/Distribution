@@ -1,7 +1,7 @@
 package typings.reactSpringCore
 
-import typings.reactSpringCore.distDeclarationsSrcTypesInternalMod.EventKey
-import typings.reactSpringCore.distDeclarationsSrcTypesTransitionMod.TransitionKey
+import typings.reactSpringCore.mod.EventKey
+import typings.reactSpringCore.mod.TransitionKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,6 +11,14 @@ object reactSpringCoreStrings {
   @js.native
   sealed trait default extends StObject
   inline def default: default = "default".asInstanceOf[default]
+  
+  @js.native
+  sealed trait all extends StObject
+  inline def all: all = "all".asInstanceOf[all]
+  
+  @js.native
+  sealed trait any extends StObject
+  inline def any: any = "any".asInstanceOf[any]
   
   @js.native
   sealed trait callId extends StObject

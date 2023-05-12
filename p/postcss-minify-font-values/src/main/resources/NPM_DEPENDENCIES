@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "postcss-minify-font-values" : "5.1.0"
+      "postcss-minify-font-values" : "6.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "postcss-minify-font-values" : "5.1.0"
+      "postcss-minify-font-values" : "6.0.0"
     }
   ],
   "compile-devDependencies" : [

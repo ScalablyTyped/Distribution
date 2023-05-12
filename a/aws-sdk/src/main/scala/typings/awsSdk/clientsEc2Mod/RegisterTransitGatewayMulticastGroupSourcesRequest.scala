@@ -19,17 +19,20 @@ trait RegisterTransitGatewayMulticastGroupSourcesRequest extends StObject {
   /**
     * The group sources' network interface IDs to register with the transit gateway multicast group.
     */
-  var NetworkInterfaceIds: js.UndefOr[TransitGatewayNetworkInterfaceIdList] = js.undefined
+  var NetworkInterfaceIds: TransitGatewayNetworkInterfaceIdList
   
   /**
     * The ID of the transit gateway multicast domain.
     */
-  var TransitGatewayMulticastDomainId: js.UndefOr[typings.awsSdk.clientsEc2Mod.TransitGatewayMulticastDomainId] = js.undefined
+  var TransitGatewayMulticastDomainId: typings.awsSdk.clientsEc2Mod.TransitGatewayMulticastDomainId
 }
 object RegisterTransitGatewayMulticastGroupSourcesRequest {
   
-  inline def apply(): RegisterTransitGatewayMulticastGroupSourcesRequest = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    NetworkInterfaceIds: TransitGatewayNetworkInterfaceIdList,
+    TransitGatewayMulticastDomainId: TransitGatewayMulticastDomainId
+  ): RegisterTransitGatewayMulticastGroupSourcesRequest = {
+    val __obj = js.Dynamic.literal(NetworkInterfaceIds = NetworkInterfaceIds.asInstanceOf[js.Any], TransitGatewayMulticastDomainId = TransitGatewayMulticastDomainId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterTransitGatewayMulticastGroupSourcesRequest]
   }
   
@@ -46,12 +49,8 @@ object RegisterTransitGatewayMulticastGroupSourcesRequest {
     
     inline def setNetworkInterfaceIds(value: TransitGatewayNetworkInterfaceIdList): Self = StObject.set(x, "NetworkInterfaceIds", value.asInstanceOf[js.Any])
     
-    inline def setNetworkInterfaceIdsUndefined: Self = StObject.set(x, "NetworkInterfaceIds", js.undefined)
-    
     inline def setNetworkInterfaceIdsVarargs(value: NetworkInterfaceId*): Self = StObject.set(x, "NetworkInterfaceIds", js.Array(value*))
     
     inline def setTransitGatewayMulticastDomainId(value: TransitGatewayMulticastDomainId): Self = StObject.set(x, "TransitGatewayMulticastDomainId", value.asInstanceOf[js.Any])
-    
-    inline def setTransitGatewayMulticastDomainIdUndefined: Self = StObject.set(x, "TransitGatewayMulticastDomainId", js.undefined)
   }
 }

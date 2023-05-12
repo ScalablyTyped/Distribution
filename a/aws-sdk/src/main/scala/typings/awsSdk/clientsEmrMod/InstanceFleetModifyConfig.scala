@@ -12,6 +12,11 @@ trait InstanceFleetModifyConfig extends StObject {
   var InstanceFleetId: typings.awsSdk.clientsEmrMod.InstanceFleetId
   
   /**
+    * The resize specification for the instance fleet.
+    */
+  var ResizeSpecifications: js.UndefOr[InstanceFleetResizingSpecifications] = js.undefined
+  
+  /**
     * The target capacity of On-Demand units for the instance fleet. For more information see InstanceFleetConfig$TargetOnDemandCapacity.
     */
   var TargetOnDemandCapacity: js.UndefOr[WholeNumber] = js.undefined
@@ -32,6 +37,10 @@ object InstanceFleetModifyConfig {
   implicit open class MutableBuilder[Self <: InstanceFleetModifyConfig] (val x: Self) extends AnyVal {
     
     inline def setInstanceFleetId(value: InstanceFleetId): Self = StObject.set(x, "InstanceFleetId", value.asInstanceOf[js.Any])
+    
+    inline def setResizeSpecifications(value: InstanceFleetResizingSpecifications): Self = StObject.set(x, "ResizeSpecifications", value.asInstanceOf[js.Any])
+    
+    inline def setResizeSpecificationsUndefined: Self = StObject.set(x, "ResizeSpecifications", js.undefined)
     
     inline def setTargetOnDemandCapacity(value: WholeNumber): Self = StObject.set(x, "TargetOnDemandCapacity", value.asInstanceOf[js.Any])
     

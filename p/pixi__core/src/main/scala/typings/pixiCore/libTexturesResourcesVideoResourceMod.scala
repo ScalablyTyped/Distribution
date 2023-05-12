@@ -31,7 +31,7 @@ object libTexturesResourcesVideoResourceMod {
     def this(source: HTMLVideoElement, options: IVideoResourceOptions) = this()
     
     /**
-      * `true` to use PIXI.Ticker.shared to auto update the base texture.
+      * `true` to use Ticker.shared to auto update the base texture.
       * @default true
       */
     /* protected */ var _autoUpdate: Boolean = js.native

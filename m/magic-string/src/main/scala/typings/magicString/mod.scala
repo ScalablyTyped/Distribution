@@ -22,6 +22,16 @@ object mod {
     def this(options: BundleOptions) = this()
     
     def addSource(source: Content): Bundle = js.native
+    /**
+      * Adds the specified source to the bundle, which can either be a `MagicString` object directly,
+      * or an options object that holds a magic string `content` property and optionally provides
+      * a `filename` for the source within the bundle, as well as an optional `ignoreList` hint
+      * (which defaults to `false`). The `filename` is used when constructing the source map for the
+      * bundle, to identify this `source` in the source map's `sources` field. The `ignoreList` hint
+      * is used to populate the `x_google_ignoreList` extension field in the source map, which is a
+      * mechanism for tools to signal to debuggers that certain sources should be ignored by default
+      * (depending on user preferences).
+      */
     def addSource(source: MagicString): Bundle = js.native
     
     def append(str: String): Bundle = js.native
@@ -71,7 +81,7 @@ object mod {
     
     var sources: js.Array[String] = js.native
     
-    var sourcesContent: js.Array[String] = js.native
+    var sourcesContent: js.Array[String | Null] = js.native
     
     /**
       * Returns a DataURI containing the sourcemap. Useful for doing this sort of thing:
@@ -80,6 +90,8 @@ object mod {
     def toUrl(): String = js.native
     
     var version: Double = js.native
+    
+    var x_google_ignoreList: js.UndefOr[js.Array[Double]] = js.native
   }
   
   trait BundleOptions extends StObject {
@@ -118,7 +130,9 @@ object mod {
     
     var sources: js.Array[String]
     
-    var sourcesContent: js.Array[String]
+    var sourcesContent: js.Array[String | Null]
+    
+    var x_google_ignoreList: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object DecodedSourceMap {
     
@@ -127,7 +141,7 @@ object mod {
       mappings: js.Array[js.Array[SourceMapSegment]],
       names: js.Array[String],
       sources: js.Array[String],
-      sourcesContent: js.Array[String]
+      sourcesContent: js.Array[String | Null]
     ): DecodedSourceMap = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], mappings = mappings.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any], sources = sources.asInstanceOf[js.Any], sourcesContent = sourcesContent.asInstanceOf[js.Any])
       __obj.asInstanceOf[DecodedSourceMap]
@@ -148,11 +162,17 @@ object mod {
       
       inline def setSources(value: js.Array[String]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
       
-      inline def setSourcesContent(value: js.Array[String]): Self = StObject.set(x, "sourcesContent", value.asInstanceOf[js.Any])
+      inline def setSourcesContent(value: js.Array[String | Null]): Self = StObject.set(x, "sourcesContent", value.asInstanceOf[js.Any])
       
-      inline def setSourcesContentVarargs(value: String*): Self = StObject.set(x, "sourcesContent", js.Array(value*))
+      inline def setSourcesContentVarargs(value: (String | Null)*): Self = StObject.set(x, "sourcesContent", js.Array(value*))
       
       inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value*))
+      
+      inline def setX_google_ignoreList(value: js.Array[Double]): Self = StObject.set(x, "x_google_ignoreList", value.asInstanceOf[js.Any])
+      
+      inline def setX_google_ignoreListUndefined: Self = StObject.set(x, "x_google_ignoreList", js.undefined)
+      
+      inline def setX_google_ignoreListVarargs(value: Double*): Self = StObject.set(x, "x_google_ignoreList", js.Array(value*))
     }
   }
   
@@ -201,7 +221,7 @@ object mod {
     
     /**
       * Appends the specified content at the index in the original string.
-      * If a range *ending* with index is subsequently moved, the insert will be moved with it. 
+      * If a range *ending* with index is subsequently moved, the insert will be moved with it.
       * See also `s.prependLeft(...)`.
       */
     def appendLeft(index: Double, content: String): MagicString = js.native
@@ -264,13 +284,13 @@ object mod {
     var original: String = js.native
     
     /**
-      * Replaces the characters from `start` to `end` with `content`, along with the appended/prepended content in 
+      * Replaces the characters from `start` to `end` with `content`, along with the appended/prepended content in
       * that range. The same restrictions as `s.remove()` apply.
       *
       * The fourth argument is optional. It can have a storeName property — if true, the original name will be stored
       * for later inclusion in a sourcemap's names array — and a contentOnly property which determines whether only
       * the content is overwritten, or anything that was appended/prepended to the range as well.
-      * 
+      *
       * It may be preferred to use `s.update(...)` instead if you wish to avoid overwriting the appended/prepended content.
       */
     def overwrite(start: Double, end: Double, content: String): MagicString = js.native
@@ -278,7 +298,7 @@ object mod {
     def overwrite(start: Double, end: Double, content: String, options: OverwriteOptions): MagicString = js.native
     
     /**
-      * Prepends the string with the specified content. 
+      * Prepends the string with the specified content.
       */
     def prepend(content: String): MagicString = js.native
     

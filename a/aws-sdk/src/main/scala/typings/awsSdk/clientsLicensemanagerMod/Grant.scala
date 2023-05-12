@@ -42,6 +42,11 @@ trait Grant extends StObject {
   var LicenseArn: Arn
   
   /**
+    * The options specified for the grant.
+    */
+  var Options: js.UndefOr[typings.awsSdk.clientsLicensemanagerMod.Options] = js.undefined
+  
+  /**
     * Parent ARN.
     */
   var ParentArn: Arn
@@ -91,6 +96,10 @@ object Grant {
     inline def setHomeRegion(value: String): Self = StObject.set(x, "HomeRegion", value.asInstanceOf[js.Any])
     
     inline def setLicenseArn(value: Arn): Self = StObject.set(x, "LicenseArn", value.asInstanceOf[js.Any])
+    
+    inline def setOptions(value: Options): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "Options", js.undefined)
     
     inline def setParentArn(value: Arn): Self = StObject.set(x, "ParentArn", value.asInstanceOf[js.Any])
     

@@ -1,33 +1,23 @@
 package typings.hlsJs.mod
 
+import typings.hlsJs.hlsJsStrings.audio_
+import typings.hlsJs.hlsJsStrings.main
+import typings.hlsJs.hlsJsStrings.subtitle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait PlaylistLevelType extends StObject
-@JSImport("hls.js", "PlaylistLevelType")
-@js.native
-object PlaylistLevelType extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.hlsJs.hlsJsStrings.main
+  - typings.hlsJs.hlsJsStrings.audio_
+  - typings.hlsJs.hlsJsStrings.subtitle
+*/
+trait PlaylistLevelType extends StObject
+object PlaylistLevelType {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[PlaylistLevelType & String] = js.native
+  inline def AUDIO: audio_ = "audio".asInstanceOf[audio_]
   
-  @js.native
-  sealed trait AUDIO
-    extends StObject
-       with PlaylistLevelType
-  /* "audio" */ val AUDIO: typings.hlsJs.mod.PlaylistLevelType.AUDIO & String = js.native
+  inline def MAIN: main = "main".asInstanceOf[main]
   
-  @js.native
-  sealed trait MAIN
-    extends StObject
-       with PlaylistLevelType
-  /* "main" */ val MAIN: typings.hlsJs.mod.PlaylistLevelType.MAIN & String = js.native
-  
-  @js.native
-  sealed trait SUBTITLE
-    extends StObject
-       with PlaylistLevelType
-  /* "subtitle" */ val SUBTITLE: typings.hlsJs.mod.PlaylistLevelType.SUBTITLE & String = js.native
+  inline def SUBTITLE: subtitle = "subtitle".asInstanceOf[subtitle]
 }

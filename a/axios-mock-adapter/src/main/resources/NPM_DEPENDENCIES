@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "axios-mock-adapter" : "1.21.2"
+      "axios-mock-adapter" : "1.21.4"
     }
   ],
   "test-dependencies" : [
     {
-      "axios-mock-adapter" : "1.21.2"
+      "axios-mock-adapter" : "1.21.4"
     }
   ],
   "compile-devDependencies" : [

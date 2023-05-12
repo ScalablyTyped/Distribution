@@ -8,6 +8,7 @@ import typings.firebaseAnalytics.firebaseAnalyticsStrings.config
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.consent
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.default
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.event
+import typings.firebaseAnalytics.firebaseAnalyticsStrings.get
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.set
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.update
 import typings.std.IArguments
@@ -82,6 +83,7 @@ object distSrcTypesMod {
   @js.native
   trait Gtag extends StObject {
     
+    def apply(command: String, args: Any*): Unit = js.native
     def apply(command: config, targetId: String): Unit = js.native
     def apply(command: config, targetId: String, config: ControlParams): Unit = js.native
     def apply(command: config, targetId: String, config: CustomParams): Unit = js.native
@@ -91,6 +93,12 @@ object distSrcTypesMod {
     def apply(command: event, eventName: String, eventParams: ControlParams): Unit = js.native
     def apply(command: event, eventName: String, eventParams: CustomParams): Unit = js.native
     def apply(command: event, eventName: String, eventParams: EventParams): Unit = js.native
+    def apply(
+      command: get,
+      measurementId: String,
+      fieldName: String,
+      callback: js.Function1[/* repeated */ Any, Unit]
+    ): Unit = js.native
     def apply(command: set, config: CustomParams): Unit = js.native
   }
   

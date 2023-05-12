@@ -1,7 +1,7 @@
 
 # Scala.js typings for victory-stack
 
-Typings are for version 36.6.8
+Typings are for version 36.6.10
 
 ## Library description:
 Stack Layout Component for Victory

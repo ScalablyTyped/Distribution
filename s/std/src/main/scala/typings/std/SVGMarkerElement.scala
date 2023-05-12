@@ -1,5 +1,8 @@
 package typings.std
 
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,22 +14,22 @@ trait SVGMarkerElement
      with SVGFitToViewBox {
   
   /* standard dom */
-  val SVG_MARKERUNITS_STROKEWIDTH: Double = js.native
+  val SVG_MARKERUNITS_STROKEWIDTH: `2` = js.native
   
   /* standard dom */
-  val SVG_MARKERUNITS_UNKNOWN: Double = js.native
+  val SVG_MARKERUNITS_UNKNOWN: `0` = js.native
   
   /* standard dom */
-  val SVG_MARKERUNITS_USERSPACEONUSE: Double = js.native
+  val SVG_MARKERUNITS_USERSPACEONUSE: `1` = js.native
   
   /* standard dom */
-  val SVG_MARKER_ORIENT_ANGLE: Double = js.native
+  val SVG_MARKER_ORIENT_ANGLE: `2` = js.native
   
   /* standard dom */
-  val SVG_MARKER_ORIENT_AUTO: Double = js.native
+  val SVG_MARKER_ORIENT_AUTO: `1` = js.native
   
   /* standard dom */
-  val SVG_MARKER_ORIENT_UNKNOWN: Double = js.native
+  val SVG_MARKER_ORIENT_UNKNOWN: `0` = js.native
   
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native

@@ -6,10 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait PlaceChooserLayoutMode extends StObject
-/**
-  * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-  * Layout modes for the place chooser.
-  */
 @JSGlobal("google.maps.localContext.PlaceChooserLayoutMode")
 @js.native
 object PlaceChooserLayoutMode extends StObject {

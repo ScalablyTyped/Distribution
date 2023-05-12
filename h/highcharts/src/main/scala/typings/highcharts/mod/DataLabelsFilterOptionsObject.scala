@@ -10,7 +10,7 @@ trait DataLabelsFilterOptionsObject extends StObject {
     * (Highcharts, Highstock, Gantt) The operator to compare by. Can be one of
     * `>`, `<`, `>=`, `<=`, `==`, and `===`.
     */
-  var operator: js.UndefOr[String] = js.undefined
+  var operator: js.UndefOr[OptionsOperatorValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The point property to filter by. Point
@@ -34,7 +34,7 @@ object DataLabelsFilterOptionsObject {
   @scala.inline
   implicit open class MutableBuilder[Self <: DataLabelsFilterOptionsObject] (val x: Self) extends AnyVal {
     
-    inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: OptionsOperatorValue): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
     inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     

@@ -10,7 +10,7 @@ open class Checkbox protected () extends _MDLComponent[CheckboxProps] {
   def this(props: CheckboxProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: CheckboxProps, context: Any) = this()
 }

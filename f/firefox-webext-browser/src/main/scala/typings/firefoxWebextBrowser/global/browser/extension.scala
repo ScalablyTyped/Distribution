@@ -20,7 +20,6 @@ object `extension` {
   
   /**
     * Returns the JavaScript 'window' object for the background page running inside the current extension. Returns null if the extension has no background page.
-    * Not supported on manifest versions above 2.
     */
   inline def getBackgroundPage(): Window | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getBackgroundPage")().asInstanceOf[Window | Unit]
   

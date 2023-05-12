@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class InlineValueEvaluatableExpression protected ()
   extends typings.vscode.mod.InlineValueEvaluatableExpression {
   /**
-    * Creates a new InlineValueEvaluatableExpression object.
-    *
-    * @param range The range in the underlying document from which the evaluatable expression is extracted.
-    * @param expression If specified overrides the extracted expression.
-    */
+  		 * Creates a new InlineValueEvaluatableExpression object.
+  		 *
+  		 * @param range The range in the underlying document from which the evaluatable expression is extracted.
+  		 * @param expression If specified overrides the extracted expression.
+  		 */
   def this(range: typings.vscode.mod.Range) = this()
   def this(range: typings.vscode.mod.Range, expression: String) = this()
 }

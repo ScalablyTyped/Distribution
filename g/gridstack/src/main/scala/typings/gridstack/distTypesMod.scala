@@ -6,6 +6,7 @@ import typings.gridstack.distGridstackEngineMod.GridStackEngineOptions
 import typings.gridstack.gridstackBooleans.`false`
 import typings.gridstack.gridstackBooleans.`true`
 import typings.gridstack.gridstackStrings.auto
+import typings.gridstack.gridstackStrings.clone
 import typings.gridstack.gridstackStrings.mobile
 import typings.gridstack.mod.GridStack
 import typings.std.AddEventListenerOptions
@@ -27,6 +28,14 @@ object distTypesMod {
   @JSImport("gridstack/dist/types", "gridDefaults")
   @js.native
   val gridDefaults: GridStackOptions = js.native
+  
+  type AddRemoveFcn = js.Function4[
+    /* parent */ HTMLElement, 
+    /* w */ GridStackWidget, 
+    /* add */ Boolean, 
+    /* grid */ Boolean, 
+    js.UndefOr[HTMLElement]
+  ]
   
   /* Rewritten from type alias, can be one of: 
     - typings.gridstack.gridstackStrings.moveScale
@@ -52,8 +61,8 @@ object distTypesMod {
     extends StObject
        with DDDragOpt {
     
-    /** helper function when dropping (ex: 'clone' or your own method) */
-    var helper: js.UndefOr[String | (js.Function1[/* event */ Event, HTMLElement])] = js.undefined
+    /** helper function when dropping: 'clone' or your own method */
+    var helper: js.UndefOr[clone | (js.Function1[/* event */ Event, HTMLElement])] = js.undefined
   }
   object DDDragInOpt {
     
@@ -65,7 +74,7 @@ object distTypesMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: DDDragInOpt] (val x: Self) extends AnyVal {
       
-      inline def setHelper(value: String | (js.Function1[/* event */ Event, HTMLElement])): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
+      inline def setHelper(value: clone | (js.Function1[/* event */ Event, HTMLElement])): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
       
       inline def setHelperFunction1(value: /* event */ Event => HTMLElement): Self = StObject.set(x, "helper", js.Any.fromFunction1(value))
       
@@ -78,11 +87,17 @@ object distTypesMod {
     /** default to 'body' */
     var appendTo: js.UndefOr[String] = js.undefined
     
+    /** prevents dragging from starting on specified elements, listed as comma separated selectors (eg: '.no-drag'). default built in is 'input,textarea,button,select,option' */
+    var cancel: js.UndefOr[String] = js.undefined
+    
     /** class selector of items that can be dragged. default to '.grid-stack-item-content' */
     var handle: js.UndefOr[String] = js.undefined
     
     /** if set (true | msec), dragging placement (collision) will only happen after a pause by the user. Note: this is Global */
     var pause: js.UndefOr[Boolean | Double] = js.undefined
+    
+    /** default to `true` */
+    var scroll: js.UndefOr[Boolean] = js.undefined
   }
   object DDDragOpt {
     
@@ -98,6 +113,10 @@ object distTypesMod {
       
       inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
       
+      inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      
       inline def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
       
       inline def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
@@ -105,6 +124,10 @@ object distTypesMod {
       inline def setPause(value: Boolean | Double): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
       
       inline def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
+      
+      inline def setScroll(value: Boolean): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+      
+      inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
     }
   }
   
@@ -215,14 +238,15 @@ object distTypesMod {
     override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
   }
   
+  type GridStackDroppedHandler = js.Function3[/* event */ Event, /* previousNode */ GridStackNode, /* newNode */ GridStackNode, Unit]
+  
   type GridStackElement = String | HTMLElement | GridItemHTMLElement
   
-  type GridStackEventHandlerCallback = js.Function3[
-    /* event */ Event, 
-    /* arg2 */ js.UndefOr[GridItemHTMLElement | GridStackNode | js.Array[GridStackNode]], 
-    /* newNode */ js.UndefOr[GridStackNode], 
-    Unit
-  ]
+  type GridStackElementHandler = js.Function2[/* event */ Event, /* el */ GridItemHTMLElement, Unit]
+  
+  type GridStackEventHandler = js.Function1[/* event */ Event, Unit]
+  
+  type GridStackEventHandlerCallback = GridStackEventHandler | GridStackElementHandler | GridStackNodesHandler | GridStackDroppedHandler
   
   trait GridStackMoveOpts
     extends StObject
@@ -326,8 +350,11 @@ object distTypesMod {
     /** pointer back to HTML element */
     var el: js.UndefOr[GridItemHTMLElement] = js.undefined
     
-    /** pointer back to Grid instance */
+    /** pointer back to parent Grid instance */
     var grid: js.UndefOr[GridStack] = js.undefined
+    
+    /** actual sub-grid instance */
+    var subGrid: js.UndefOr[GridStack] = js.undefined
   }
   object GridStackNode {
     
@@ -346,8 +373,14 @@ object distTypesMod {
       inline def setGrid(value: GridStack): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
       inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+      
+      inline def setSubGrid(value: GridStack): Self = StObject.set(x, "subGrid", value.asInstanceOf[js.Any])
+      
+      inline def setSubGridUndefined: Self = StObject.set(x, "subGrid", js.undefined)
     }
   }
+  
+  type GridStackNodesHandler = js.Function2[/* event */ Event, /* nodes */ js.Array[GridStackNode], Unit]
   
   trait GridStackOptions extends StObject {
     
@@ -363,8 +396,6 @@ object distTypesMod {
       * `false` the resizing handles are only shown while hovering over a widget
       * `true` the resizing handles are always shown
       * 'mobile' if running on a mobile device, default to `true` (since there is no hovering per say), else `false`.
-      * this uses this condition on browser agent check:
-      `alwaysShowResizeHandle: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent )`
       See [example](http://gridstack.github.io/gridstack.js/demo/mobile.html) */
     var alwaysShowResizeHandle: js.UndefOr[`true` | `false` | mobile] = js.undefined
     
@@ -465,6 +496,10 @@ object distTypesMod {
       */
     var minRow: js.UndefOr[Double] = js.undefined
     
+    /** If you are using a nonce-based Content Security Policy, pass your nonce here and
+      * GridStack will add it to the <style> elements it creates. */
+    var nonce: js.UndefOr[String] = js.undefined
+    
     /**
       * set to true if you want oneColumnMode to use the DOM order and ignore x,y from normal multi column
       * layouts during sorting. This enables you to have custom 1 column layout that differ from the rest. (default?: false)
@@ -512,12 +547,12 @@ object distTypesMod {
     /** if `true` will add style element to `<head>` otherwise will add it to element's parent node (default `false`). */
     var styleInHead: js.UndefOr[Boolean] = js.undefined
     
-    /** list of differences in options for automatically created sub-grids under us */
-    var subGrid: js.UndefOr[GridStackOptions] = js.undefined
-    
     /** enable/disable the creation of sub-grids on the fly by dragging items completely
       * over others (nest) vs partially (push). Forces `DDDragOpt.pause=true` to accomplish that. */
     var subGridDynamic: js.UndefOr[Boolean] = js.undefined
+    
+    /** list of differences in options for automatically created sub-grids under us (inside our grid-items) */
+    var subGridOpts: js.UndefOr[GridStackOptions] = js.undefined
   }
   object GridStackOptions {
     
@@ -645,6 +680,10 @@ object distTypesMod {
       
       inline def setMinRowUndefined: Self = StObject.set(x, "minRow", js.undefined)
       
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+      
       inline def setOneColumnModeDomSort(value: Boolean): Self = StObject.set(x, "oneColumnModeDomSort", value.asInstanceOf[js.Any])
       
       inline def setOneColumnModeDomSortUndefined: Self = StObject.set(x, "oneColumnModeDomSort", js.undefined)
@@ -689,13 +728,13 @@ object distTypesMod {
       
       inline def setStyleInHeadUndefined: Self = StObject.set(x, "styleInHead", js.undefined)
       
-      inline def setSubGrid(value: GridStackOptions): Self = StObject.set(x, "subGrid", value.asInstanceOf[js.Any])
-      
       inline def setSubGridDynamic(value: Boolean): Self = StObject.set(x, "subGridDynamic", value.asInstanceOf[js.Any])
       
       inline def setSubGridDynamicUndefined: Self = StObject.set(x, "subGridDynamic", js.undefined)
       
-      inline def setSubGridUndefined: Self = StObject.set(x, "subGrid", js.undefined)
+      inline def setSubGridOpts(value: GridStackOptions): Self = StObject.set(x, "subGridOpts", value.asInstanceOf[js.Any])
+      
+      inline def setSubGridOptsUndefined: Self = StObject.set(x, "subGridOpts", js.undefined)
     }
   }
   
@@ -775,11 +814,8 @@ object distTypesMod {
     /** prevent resizing (default?: undefined = un-constrained) */
     var noResize: js.UndefOr[Boolean] = js.undefined
     
-    /** widgets can have their own custom resize handles. For example 'e,w' will make that particular widget only resize east and west. See `resizable: {handles: string}` option */
-    var resizeHandles: js.UndefOr[String] = js.undefined
-    
-    /** optional nested grid options and list of children, which then turns into actual instance at runtime */
-    var subGrid: js.UndefOr[GridStackOptions | GridStack] = js.undefined
+    /** optional nested grid options and list of children, which then turns into actual instance at runtime to get options from */
+    var subGridOpts: js.UndefOr[GridStackOptions] = js.undefined
   }
   object GridStackWidget {
     
@@ -831,13 +867,9 @@ object distTypesMod {
       
       inline def setNoResizeUndefined: Self = StObject.set(x, "noResize", js.undefined)
       
-      inline def setResizeHandles(value: String): Self = StObject.set(x, "resizeHandles", value.asInstanceOf[js.Any])
+      inline def setSubGridOpts(value: GridStackOptions): Self = StObject.set(x, "subGridOpts", value.asInstanceOf[js.Any])
       
-      inline def setResizeHandlesUndefined: Self = StObject.set(x, "resizeHandles", js.undefined)
-      
-      inline def setSubGrid(value: GridStackOptions | GridStack): Self = StObject.set(x, "subGrid", value.asInstanceOf[js.Any])
-      
-      inline def setSubGridUndefined: Self = StObject.set(x, "subGrid", js.undefined)
+      inline def setSubGridOptsUndefined: Self = StObject.set(x, "subGridOpts", js.undefined)
     }
   }
   
@@ -874,6 +906,8 @@ object distTypesMod {
       __obj.asInstanceOf[Rect]
     }
   }
+  
+  type SaveFcn = js.Function2[/* node */ GridStackNode, /* w */ GridStackWidget, Unit]
   
   trait Size extends StObject {
     

@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.CaretColor
+import typings.csstype.mod.Property.GridColumnStart
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `408` extends StObject {
   
   var value: js.UndefOr[
-    CaretColor | (js.Array[
-      (Extract[js.UndefOr[CaretColor | js.Array[NonNullable[js.UndefOr[CaretColor]]]], String]) | NonNullable[js.UndefOr[CaretColor]]
+    GridColumnStart | (js.Array[
+      (Extract[
+        js.UndefOr[GridColumnStart | js.Array[NonNullable[js.UndefOr[GridColumnStart]]]], 
+        String
+      ]) | NonNullable[js.UndefOr[GridColumnStart]]
     ])
   ] = js.native
 }

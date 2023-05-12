@@ -24,7 +24,7 @@ object RenderTexturePool {
   
   /**
     * Key that is used to store fullscreen renderTextures in a pool
-    * @constant
+    * @readonly
     */
   @JSImport("@pixi/core", "RenderTexturePool.SCREEN_KEY")
   @js.native

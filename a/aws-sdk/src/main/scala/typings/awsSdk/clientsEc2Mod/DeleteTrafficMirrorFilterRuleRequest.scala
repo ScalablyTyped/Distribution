@@ -14,11 +14,11 @@ trait DeleteTrafficMirrorFilterRuleRequest extends StObject {
   /**
     * The ID of the Traffic Mirror rule.
     */
-  var TrafficMirrorFilterRuleId: typings.awsSdk.clientsEc2Mod.TrafficMirrorFilterRuleId
+  var TrafficMirrorFilterRuleId: TrafficMirrorFilterRuleIdWithResolver
 }
 object DeleteTrafficMirrorFilterRuleRequest {
   
-  inline def apply(TrafficMirrorFilterRuleId: TrafficMirrorFilterRuleId): DeleteTrafficMirrorFilterRuleRequest = {
+  inline def apply(TrafficMirrorFilterRuleId: TrafficMirrorFilterRuleIdWithResolver): DeleteTrafficMirrorFilterRuleRequest = {
     val __obj = js.Dynamic.literal(TrafficMirrorFilterRuleId = TrafficMirrorFilterRuleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTrafficMirrorFilterRuleRequest]
   }
@@ -30,6 +30,6 @@ object DeleteTrafficMirrorFilterRuleRequest {
     
     inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    inline def setTrafficMirrorFilterRuleId(value: TrafficMirrorFilterRuleId): Self = StObject.set(x, "TrafficMirrorFilterRuleId", value.asInstanceOf[js.Any])
+    inline def setTrafficMirrorFilterRuleId(value: TrafficMirrorFilterRuleIdWithResolver): Self = StObject.set(x, "TrafficMirrorFilterRuleId", value.asInstanceOf[js.Any])
   }
 }

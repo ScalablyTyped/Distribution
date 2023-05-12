@@ -1,7 +1,7 @@
 
 # Scala.js typings for junk
 
-Typings are for version 4.0.0
+Typings are for version 4.0.1
 
 ## Library description:
 Filter out system junk files like .DS_Store and Thumbs.db

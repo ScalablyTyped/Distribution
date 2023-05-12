@@ -25,13 +25,13 @@ object mod extends Shortcut {
   
   trait FcoseAlignmentConstraint extends StObject {
     
-    var horizontal: js.Array[js.Tuple2[String, String]]
+    var horizontal: js.Array[js.Array[String]]
     
-    var vertical: js.Array[js.Tuple2[String, String]]
+    var vertical: js.Array[js.Array[String]]
   }
   object FcoseAlignmentConstraint {
     
-    inline def apply(horizontal: js.Array[js.Tuple2[String, String]], vertical: js.Array[js.Tuple2[String, String]]): FcoseAlignmentConstraint = {
+    inline def apply(horizontal: js.Array[js.Array[String]], vertical: js.Array[js.Array[String]]): FcoseAlignmentConstraint = {
       val __obj = js.Dynamic.literal(horizontal = horizontal.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any])
       __obj.asInstanceOf[FcoseAlignmentConstraint]
     }
@@ -39,13 +39,13 @@ object mod extends Shortcut {
     @scala.inline
     implicit open class MutableBuilder[Self <: FcoseAlignmentConstraint] (val x: Self) extends AnyVal {
       
-      inline def setHorizontal(value: js.Array[js.Tuple2[String, String]]): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+      inline def setHorizontal(value: js.Array[js.Array[String]]): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
-      inline def setHorizontalVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "horizontal", js.Array(value*))
+      inline def setHorizontalVarargs(value: js.Array[String]*): Self = StObject.set(x, "horizontal", js.Array(value*))
       
-      inline def setVertical(value: js.Array[js.Tuple2[String, String]]): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      inline def setVertical(value: js.Array[js.Array[String]]): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
       
-      inline def setVerticalVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "vertical", js.Array(value*))
+      inline def setVerticalVarargs(value: js.Array[String]*): Self = StObject.set(x, "vertical", js.Array(value*))
     }
   }
   
@@ -89,7 +89,7 @@ object mod extends Shortcut {
     var animationEasing: js.UndefOr[`ease-out`] = js.undefined
     
     // Divisor to compute edge forces
-    var edgeElasticity: js.UndefOr[js.Function1[/* edge */ Any, Double]] = js.undefined
+    var edgeElasticity: js.UndefOr[(js.Function1[/* edge */ Any, Double]) | Double] = js.undefined
     
     // Fit the viewport to the repositioned nodes
     var fit: js.UndefOr[Boolean] = js.undefined
@@ -112,7 +112,7 @@ object mod extends Shortcut {
     var gravityRangeCompound: js.UndefOr[Double] = js.undefined
     
     // Ideal edge (non nested) length
-    var idealEdgeLength: js.UndefOr[js.Function1[/* edge */ Any, Double]] = js.undefined
+    var idealEdgeLength: js.UndefOr[(js.Function1[/* edge */ Any, Double]) | Double] = js.undefined
     
     // Initial cooling factor for incremental layout
     var initialEnergyOnIncremental: js.UndefOr[Double] = js.undefined
@@ -128,7 +128,7 @@ object mod extends Shortcut {
     
     /* incremental layout options */
     // Node repulsion (non overlapping) multiplier
-    var nodeRepulsion: js.UndefOr[Double] = js.undefined
+    var nodeRepulsion: js.UndefOr[(js.Function1[/* node */ Any, Double]) | Double] = js.undefined
     
     // Separation amount between nodes
     var nodeSeparation: js.UndefOr[Double] = js.undefined
@@ -172,6 +172,14 @@ object mod extends Shortcut {
     // For enabling tiling
     var tile: js.UndefOr[Boolean] = js.undefined
     
+    // The comparison function to be used while sorting nodes during tiling operation.
+    // Takes the ids of 2 nodes that will be compared as a parameter and the default tiling operation is performed when this option is not set.
+    // It works similar to ``compareFunction`` parameter of ``Array.prototype.sort()``
+    // If node1 is less then node2 by some ordering criterion ``tilingCompareBy(nodeId1, nodeId2)`` must return a negative value
+    // If node1 is greater then node2 by some ordering criterion ``tilingCompareBy(nodeId1, nodeId2)`` must return a positive value
+    // If node1 is equal to node2 by some ordering criterion ``tilingCompareBy(nodeId1, nodeId2)`` must return 0
+    var tilingCompareBy: js.UndefOr[js.Function2[/* nodeId1 */ String, /* nodeId2 */ String, Double]] = js.undefined
+    
     // Represents the amount of the horizontal space to put between the zero degree members during the tiling operation(can also be a function)
     var tilingPaddingHorizontal: js.UndefOr[Double] = js.undefined
     
@@ -207,7 +215,9 @@ object mod extends Shortcut {
       
       inline def setAnimationEasingUndefined: Self = StObject.set(x, "animationEasing", js.undefined)
       
-      inline def setEdgeElasticity(value: /* edge */ Any => Double): Self = StObject.set(x, "edgeElasticity", js.Any.fromFunction1(value))
+      inline def setEdgeElasticity(value: (js.Function1[/* edge */ Any, Double]) | Double): Self = StObject.set(x, "edgeElasticity", value.asInstanceOf[js.Any])
+      
+      inline def setEdgeElasticityFunction1(value: /* edge */ Any => Double): Self = StObject.set(x, "edgeElasticity", js.Any.fromFunction1(value))
       
       inline def setEdgeElasticityUndefined: Self = StObject.set(x, "edgeElasticity", js.undefined)
       
@@ -237,7 +247,9 @@ object mod extends Shortcut {
       
       inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
       
-      inline def setIdealEdgeLength(value: /* edge */ Any => Double): Self = StObject.set(x, "idealEdgeLength", js.Any.fromFunction1(value))
+      inline def setIdealEdgeLength(value: (js.Function1[/* edge */ Any, Double]) | Double): Self = StObject.set(x, "idealEdgeLength", value.asInstanceOf[js.Any])
+      
+      inline def setIdealEdgeLengthFunction1(value: /* edge */ Any => Double): Self = StObject.set(x, "idealEdgeLength", js.Any.fromFunction1(value))
       
       inline def setIdealEdgeLengthUndefined: Self = StObject.set(x, "idealEdgeLength", js.undefined)
       
@@ -255,7 +267,9 @@ object mod extends Shortcut {
       
       inline def setNodeDimensionsIncludeLabelsUndefined: Self = StObject.set(x, "nodeDimensionsIncludeLabels", js.undefined)
       
-      inline def setNodeRepulsion(value: Double): Self = StObject.set(x, "nodeRepulsion", value.asInstanceOf[js.Any])
+      inline def setNodeRepulsion(value: (js.Function1[/* node */ Any, Double]) | Double): Self = StObject.set(x, "nodeRepulsion", value.asInstanceOf[js.Any])
+      
+      inline def setNodeRepulsionFunction1(value: /* node */ Any => Double): Self = StObject.set(x, "nodeRepulsion", js.Any.fromFunction1(value))
       
       inline def setNodeRepulsionUndefined: Self = StObject.set(x, "nodeRepulsion", js.undefined)
       
@@ -308,6 +322,10 @@ object mod extends Shortcut {
       inline def setTile(value: Boolean): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
       
       inline def setTileUndefined: Self = StObject.set(x, "tile", js.undefined)
+      
+      inline def setTilingCompareBy(value: (/* nodeId1 */ String, /* nodeId2 */ String) => Double): Self = StObject.set(x, "tilingCompareBy", js.Any.fromFunction2(value))
+      
+      inline def setTilingCompareByUndefined: Self = StObject.set(x, "tilingCompareBy", js.undefined)
       
       inline def setTilingPaddingHorizontal(value: Double): Self = StObject.set(x, "tilingPaddingHorizontal", value.asInstanceOf[js.Any])
       

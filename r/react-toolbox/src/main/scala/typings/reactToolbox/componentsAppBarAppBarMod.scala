@@ -15,7 +15,7 @@ object componentsAppBarAppBarMod {
     def this(props: AppBarProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: AppBarProps, context: Any) = this()
   }
@@ -27,7 +27,7 @@ object componentsAppBarAppBarMod {
     def this(props: AppBarProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: AppBarProps, context: Any) = this()
   }

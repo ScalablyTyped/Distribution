@@ -7,6 +7,7 @@ import typings.bip174.srcLibInterfacesMod.PsbtInputUpdate
 import typings.bip174.srcLibInterfacesMod.PsbtOutput
 import typings.bip174.srcLibInterfacesMod.PsbtOutputUpdate
 import typings.bitcoinjsLib.anon.FinalScriptSig
+import typings.bitcoinjsLib.anon.FinalScriptWitness
 import typings.bitcoinjsLib.srcNetworksMod.Network
 import typings.bitcoinjsLib.srcTransactionMod.Transaction
 import typings.node.bufferMod.global.Buffer
@@ -25,6 +26,20 @@ object srcPsbtMod {
     
     /* private */ var __CACHE: Any = js.native
     
+    /* private */ var _finalizeInput: Any = js.native
+    
+    /* private */ var _finalizeTaprootInput: Any = js.native
+    
+    /* private */ var _signInput: Any = js.native
+    
+    /* private */ var _signInputAsync: Any = js.native
+    
+    /* private */ var _signTaprootInput: Any = js.native
+    
+    /* private */ var _signTaprootInputAsync: Any = js.native
+    
+    /* private */ var _validateSignaturesOfInput: Any = js.native
+    
     def addInput(inputData: PsbtInputExtended): this.type = js.native
     
     def addInputs(inputDatas: js.Array[PsbtInputExtended]): this.type = js.native
@@ -39,6 +54,8 @@ object srcPsbtMod {
     
     def addUnknownKeyValToOutput(outputIndex: Double, keyVal: KeyValue): this.type = js.native
     
+    /* private */ var checkTaprootHashesForSig: Any = js.native
+    
     def clearFinalizedInput(inputIndex: Double): this.type = js.native
     
     def combine(those: Psbt*): this.type = js.native
@@ -52,6 +69,12 @@ object srcPsbtMod {
     
     def finalizeInput(inputIndex: Double): this.type = js.native
     def finalizeInput(inputIndex: Double, finalScriptsFunc: FinalScriptsFunc): this.type = js.native
+    def finalizeInput(inputIndex: Double, finalScriptsFunc: FinalTaprootScriptsFunc): this.type = js.native
+    
+    def finalizeTaprootInput(inputIndex: Double): this.type = js.native
+    def finalizeTaprootInput(inputIndex: Double, tapLeafHashToFinalize: Unit, finalScriptsFunc: FinalTaprootScriptsFunc): this.type = js.native
+    def finalizeTaprootInput(inputIndex: Double, tapLeafHashToFinalize: Buffer): this.type = js.native
+    def finalizeTaprootInput(inputIndex: Double, tapLeafHashToFinalize: Buffer, finalScriptsFunc: FinalTaprootScriptsFunc): this.type = js.native
     
     def getFee(): Double = js.native
     
@@ -114,6 +137,20 @@ object srcPsbtMod {
     def signInputHDAsync(inputIndex: Double, hdKeyPair: HDSignerAsync, sighashTypes: js.Array[Double]): js.Promise[Unit] = js.native
     def signInputHDAsync(inputIndex: Double, hdKeyPair: HDSigner, sighashTypes: js.Array[Double]): js.Promise[Unit] = js.native
     
+    def signTaprootInput(inputIndex: Double, keyPair: Signer): this.type = js.native
+    def signTaprootInput(inputIndex: Double, keyPair: Signer, tapLeafHashToSign: Unit, sighashTypes: js.Array[Double]): this.type = js.native
+    def signTaprootInput(inputIndex: Double, keyPair: Signer, tapLeafHashToSign: Buffer): this.type = js.native
+    def signTaprootInput(inputIndex: Double, keyPair: Signer, tapLeafHashToSign: Buffer, sighashTypes: js.Array[Double]): this.type = js.native
+    
+    def signTaprootInputAsync(inputIndex: Double, keyPair: Signer): js.Promise[Unit] = js.native
+    def signTaprootInputAsync(inputIndex: Double, keyPair: SignerAsync): js.Promise[Unit] = js.native
+    def signTaprootInputAsync(inputIndex: Double, keyPair: SignerAsync, tapLeafHash: Unit, sighashTypes: js.Array[Double]): js.Promise[Unit] = js.native
+    def signTaprootInputAsync(inputIndex: Double, keyPair: SignerAsync, tapLeafHash: Buffer): js.Promise[Unit] = js.native
+    def signTaprootInputAsync(inputIndex: Double, keyPair: SignerAsync, tapLeafHash: Buffer, sighashTypes: js.Array[Double]): js.Promise[Unit] = js.native
+    def signTaprootInputAsync(inputIndex: Double, keyPair: Signer, tapLeafHash: Unit, sighashTypes: js.Array[Double]): js.Promise[Unit] = js.native
+    def signTaprootInputAsync(inputIndex: Double, keyPair: Signer, tapLeafHash: Buffer): js.Promise[Unit] = js.native
+    def signTaprootInputAsync(inputIndex: Double, keyPair: Signer, tapLeafHash: Buffer, sighashTypes: js.Array[Double]): js.Promise[Unit] = js.native
+    
     def toBase64(): String = js.native
     
     def toBuffer(): Buffer = js.native
@@ -134,6 +171,8 @@ object srcPsbtMod {
     
     def validateSignaturesOfInput(inputIndex: Double, validator: ValidateSigFunction): Boolean = js.native
     def validateSignaturesOfInput(inputIndex: Double, validator: ValidateSigFunction, pubkey: Buffer): Boolean = js.native
+    
+    /* private */ var validateSignaturesOfTaprootInput: Any = js.native
     
     def version: Double = js.native
     def version_=(version: Double): Unit = js.native
@@ -229,6 +268,13 @@ object srcPsbtMod {
     /* isP2SH */ Boolean, 
     /* isP2WSH */ Boolean, 
     FinalScriptSig
+  ]
+  
+  type FinalTaprootScriptsFunc = js.Function3[
+    /* inputIndex */ Double, 
+    /* input */ PsbtInput, 
+    /* tapLeafHashToFinalize */ js.UndefOr[Buffer], 
+    FinalScriptWitness
   ]
   
   trait HDSigner
@@ -480,6 +526,8 @@ object srcPsbtMod {
     
     def sign(hash: Buffer): Buffer = js.native
     def sign(hash: Buffer, lowR: Boolean): Buffer = js.native
+    
+    var signSchnorr: js.UndefOr[js.Function1[/* hash */ Buffer, Buffer]] = js.native
   }
   
   @js.native
@@ -493,6 +541,8 @@ object srcPsbtMod {
     
     def sign(hash: Buffer): js.Promise[Buffer] = js.native
     def sign(hash: Buffer, lowR: Boolean): js.Promise[Buffer] = js.native
+    
+    var signSchnorr: js.UndefOr[js.Function1[/* hash */ Buffer, js.Promise[Buffer]]] = js.native
   }
   
   trait TransactionInput extends StObject {

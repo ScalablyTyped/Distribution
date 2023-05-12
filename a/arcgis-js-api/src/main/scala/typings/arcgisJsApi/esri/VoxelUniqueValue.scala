@@ -23,7 +23,7 @@ trait VoxelUniqueValue extends StObject {
   /**
     * The label string for this value.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#VoxelUniqueValue)
+    * [Read more...](global.html)
     */
   var label: js.UndefOr[String] = js.undefined
   

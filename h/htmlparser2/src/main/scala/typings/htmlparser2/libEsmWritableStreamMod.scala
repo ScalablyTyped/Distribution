@@ -3,7 +3,7 @@ package typings.htmlparser2
 import typings.htmlparser2.anon.PartialHandlerOnattribute
 import typings.htmlparser2.libEsmParserMod.ParserOptions
 import typings.node.bufferMod.global.Buffer
-import typings.node.streamMod.Writable
+import typings.node.nodeColonstreamMod.Writable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,11 +18,11 @@ object libEsmWritableStreamMod {
     
     /* private */ val _decoder: Any = js.native
     
-    def _final(cb: js.Function0[Unit]): Unit = js.native
+    def _final(callback: js.Function0[Unit]): Unit = js.native
     
     /* private */ val _parser: Any = js.native
     
-    def _write(chunk: String, encoding: String, cb: js.Function0[Unit]): Unit = js.native
-    def _write(chunk: Buffer, encoding: String, cb: js.Function0[Unit]): Unit = js.native
+    def _write(chunk: String, encoding: String, callback: js.Function0[Unit]): Unit = js.native
+    def _write(chunk: Buffer, encoding: String, callback: js.Function0[Unit]): Unit = js.native
   }
 }

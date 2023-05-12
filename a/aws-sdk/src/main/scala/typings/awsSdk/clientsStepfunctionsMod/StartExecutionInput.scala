@@ -12,7 +12,7 @@ trait StartExecutionInput extends StObject {
   var input: js.UndefOr[SensitiveData] = js.undefined
   
   /**
-    * The name of the execution. This name must be unique for your AWS account, region, and state machine for 90 days. For more information, see  Limits Related to State Machine Executions in the AWS Step Functions Developer Guide. A name must not contain:   white space   brackets &lt; &gt; { } [ ]    wildcard characters ? *    special characters " # % \ ^ | ~ ` $ &amp; , ; : /    control characters (U+0000-001F, U+007F-009F)   To enable logging with CloudWatch Logs, the name should only contain 0-9, A-Z, a-z, - and _.
+    * The name of the execution. This name must be unique for your Amazon Web Services account, region, and state machine for 90 days. For more information, see  Limits Related to State Machine Executions in the Step Functions Developer Guide. A name must not contain:   white space   brackets &lt; &gt; { } [ ]    wildcard characters ? *    special characters " # % \ ^ | ~ ` $ &amp; , ; : /    control characters (U+0000-001F, U+007F-009F)   To enable logging with CloudWatch Logs, the name should only contain 0-9, A-Z, a-z, - and _.
     */
   var name: js.UndefOr[Name] = js.undefined
   
@@ -22,7 +22,7 @@ trait StartExecutionInput extends StObject {
   var stateMachineArn: Arn
   
   /**
-    * Passes the AWS X-Ray trace header. The trace header can also be passed in the request payload.
+    * Passes the X-Ray trace header. The trace header can also be passed in the request payload.
     */
   var traceHeader: js.UndefOr[TraceHeader] = js.undefined
 }

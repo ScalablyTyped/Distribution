@@ -2,6 +2,7 @@ package typings.rcTable
 
 import typings.rcTable.libInterfaceMod.AlignType
 import typings.rcTable.libInterfaceMod.ColScopeType
+import typings.rcTable.libInterfaceMod.Direction
 import typings.rcTable.libInterfaceMod.ExpandableType
 import typings.rcTable.libInterfaceMod.RowScopeType
 import typings.rcTable.libInterfaceMod.ScopeType
@@ -136,6 +137,7 @@ object rcTableStrings {
   sealed trait center
     extends StObject
        with AlignType
+       with _Component[Any]
   inline def center: center = "center".asInstanceOf[center]
   
   @js.native
@@ -414,7 +416,9 @@ object rcTableStrings {
   inline def link: link = "link".asInstanceOf[link]
   
   @js.native
-  sealed trait ltr extends StObject
+  sealed trait ltr
+    extends StObject
+       with Direction
   inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
@@ -578,7 +582,9 @@ object rcTableStrings {
   inline def rt: rt = "rt".asInstanceOf[rt]
   
   @js.native
-  sealed trait rtl extends StObject
+  sealed trait rtl
+    extends StObject
+       with Direction
   inline def rtl: rtl = "rtl".asInstanceOf[rtl]
   
   @js.native

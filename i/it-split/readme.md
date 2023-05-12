@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-split
 
-Typings are for version 2.0.0
+Typings are for version 3.0.2
 
 ## Library description:
 Splits Uint8Arrays emitted by an (async) iterable by a delimiter

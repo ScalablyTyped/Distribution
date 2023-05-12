@@ -1,7 +1,7 @@
 package typings.tensorflowTfjsCore.mod
 
-import typings.tensorflowTfjsCore.distKernelRegistryMod.TensorInfo
 import typings.tensorflowTfjsCore.distOpsScatterNdUtilMod.ScatterShapeInfo
+import typings.tensorflowTfjsCore.distTensorInfoMod.TensorInfo
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

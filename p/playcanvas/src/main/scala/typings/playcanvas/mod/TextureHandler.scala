@@ -1,6 +1,7 @@
 package typings.playcanvas.mod
 
 import typings.playcanvas.anon.Basis
+import typings.playcanvas.anon.ProfilerHint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ open class TextureHandler protected ()
   /**
     * Create a new TextureHandler instance.
     *
-    * @param {AppBase} app - The running {@link AppBase}.
+    * @param {import('../app-base.js').AppBase} app - The running {@link AppBase}.
     * @hideconstructor
     */
   def this(app: AppBase) = this()
@@ -29,9 +30,9 @@ open class TextureHandler protected ()
   
   def _getParser(url: Any): Any = js.native
   
-  def _getUrlWithoutParams(url: Any): Any = js.native
+  def _getTextureOptions(asset: Any): ProfilerHint = js.native
   
-  var _loader: ResourceLoader = js.native
+  def _getUrlWithoutParams(url: Any): Any = js.native
   
   def crossOrigin: String = js.native
   def crossOrigin_=(arg: String): Unit = js.native

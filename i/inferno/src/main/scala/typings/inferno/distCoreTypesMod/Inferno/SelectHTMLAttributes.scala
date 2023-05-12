@@ -22,6 +22,8 @@ trait SelectHTMLAttributes[T]
   
   var required: js.UndefOr[Boolean | Null] = js.undefined
   
+  var selectedIndex: js.UndefOr[Double | Null] = js.undefined
+  
   var size: js.UndefOr[Double | Null] = js.undefined
   
   var value: js.UndefOr[String | js.Array[String] | Double | Null] = js.undefined
@@ -77,6 +79,12 @@ object SelectHTMLAttributes {
     inline def setRequiredNull: Self = StObject.set(x, "required", null)
     
     inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+    
+    inline def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedIndexNull: Self = StObject.set(x, "selectedIndex", null)
+    
+    inline def setSelectedIndexUndefined: Self = StObject.set(x, "selectedIndex", js.undefined)
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

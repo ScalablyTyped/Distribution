@@ -233,12 +233,12 @@ trait Macie2 extends Service {
   ): Request[DeleteMemberResponse, AWSError] = js.native
   
   /**
-    *  Retrieves (queries) statistical data and other information about one or more S3 buckets that Amazon Macie monitors and analyzes.
+    * Retrieves (queries) statistical data and other information about one or more S3 buckets that Amazon Macie monitors and analyzes for an account.
     */
   def describeBuckets(): Request[DescribeBucketsResponse, AWSError] = js.native
   def describeBuckets(callback: js.Function2[/* err */ AWSError, /* data */ DescribeBucketsResponse, scala.Unit]): Request[DescribeBucketsResponse, AWSError] = js.native
   /**
-    *  Retrieves (queries) statistical data and other information about one or more S3 buckets that Amazon Macie monitors and analyzes.
+    * Retrieves (queries) statistical data and other information about one or more S3 buckets that Amazon Macie monitors and analyzes for an account.
     */
   def describeBuckets(params: DescribeBucketsRequest): Request[DescribeBucketsResponse, AWSError] = js.native
   def describeBuckets(
@@ -421,12 +421,36 @@ trait Macie2 extends Service {
   ): Request[GetAllowListResponse, AWSError] = js.native
   
   /**
-    * Retrieves (queries) aggregated statistical data about S3 buckets that Amazon Macie monitors and analyzes.
+    * Retrieves the configuration settings and status of automated sensitive data discovery for an account.
+    */
+  def getAutomatedDiscoveryConfiguration(): Request[GetAutomatedDiscoveryConfigurationResponse, AWSError] = js.native
+  def getAutomatedDiscoveryConfiguration(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ GetAutomatedDiscoveryConfigurationResponse, 
+      scala.Unit
+    ]
+  ): Request[GetAutomatedDiscoveryConfigurationResponse, AWSError] = js.native
+  /**
+    * Retrieves the configuration settings and status of automated sensitive data discovery for an account.
+    */
+  def getAutomatedDiscoveryConfiguration(params: GetAutomatedDiscoveryConfigurationRequest): Request[GetAutomatedDiscoveryConfigurationResponse, AWSError] = js.native
+  def getAutomatedDiscoveryConfiguration(
+    params: GetAutomatedDiscoveryConfigurationRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ GetAutomatedDiscoveryConfigurationResponse, 
+      scala.Unit
+    ]
+  ): Request[GetAutomatedDiscoveryConfigurationResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves (queries) aggregated statistical data about all the S3 buckets that Amazon Macie monitors and analyzes for an account.
     */
   def getBucketStatistics(): Request[GetBucketStatisticsResponse, AWSError] = js.native
   def getBucketStatistics(callback: js.Function2[/* err */ AWSError, /* data */ GetBucketStatisticsResponse, scala.Unit]): Request[GetBucketStatisticsResponse, AWSError] = js.native
   /**
-    * Retrieves (queries) aggregated statistical data about S3 buckets that Amazon Macie monitors and analyzes.
+    * Retrieves (queries) aggregated statistical data about all the S3 buckets that Amazon Macie monitors and analyzes for an account.
     */
   def getBucketStatistics(params: GetBucketStatisticsRequest): Request[GetBucketStatisticsResponse, AWSError] = js.native
   def getBucketStatistics(
@@ -457,6 +481,20 @@ trait Macie2 extends Service {
       scala.Unit
     ]
   ): Request[GetClassificationExportConfigurationResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves the classification scope settings for an account.
+    */
+  def getClassificationScope(): Request[GetClassificationScopeResponse, AWSError] = js.native
+  def getClassificationScope(callback: js.Function2[/* err */ AWSError, /* data */ GetClassificationScopeResponse, scala.Unit]): Request[GetClassificationScopeResponse, AWSError] = js.native
+  /**
+    * Retrieves the classification scope settings for an account.
+    */
+  def getClassificationScope(params: GetClassificationScopeRequest): Request[GetClassificationScopeResponse, AWSError] = js.native
+  def getClassificationScope(
+    params: GetClassificationScopeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetClassificationScopeResponse, scala.Unit]
+  ): Request[GetClassificationScopeResponse, AWSError] = js.native
   
   /**
     * Retrieves the criteria and other settings for a custom data identifier.
@@ -553,12 +591,12 @@ trait Macie2 extends Service {
   ): Request[GetInvitationsCountResponse, AWSError] = js.native
   
   /**
-    * Retrieves the current status and configuration settings for an Amazon Macie account.
+    * Retrieves the status and configuration settings for an Amazon Macie account.
     */
   def getMacieSession(): Request[GetMacieSessionResponse, AWSError] = js.native
   def getMacieSession(callback: js.Function2[/* err */ AWSError, /* data */ GetMacieSessionResponse, scala.Unit]): Request[GetMacieSessionResponse, AWSError] = js.native
   /**
-    * Retrieves the current status and configuration settings for an Amazon Macie account.
+    * Retrieves the status and configuration settings for an Amazon Macie account.
     */
   def getMacieSession(params: GetMacieSessionRequest): Request[GetMacieSessionResponse, AWSError] = js.native
   def getMacieSession(
@@ -593,6 +631,20 @@ trait Macie2 extends Service {
     params: GetMemberRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetMemberResponse, scala.Unit]
   ): Request[GetMemberResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves (queries) sensitive data discovery statistics and the sensitivity score for an S3 bucket.
+    */
+  def getResourceProfile(): Request[GetResourceProfileResponse, AWSError] = js.native
+  def getResourceProfile(callback: js.Function2[/* err */ AWSError, /* data */ GetResourceProfileResponse, scala.Unit]): Request[GetResourceProfileResponse, AWSError] = js.native
+  /**
+    * Retrieves (queries) sensitive data discovery statistics and the sensitivity score for an S3 bucket.
+    */
+  def getResourceProfile(params: GetResourceProfileRequest): Request[GetResourceProfileResponse, AWSError] = js.native
+  def getResourceProfile(
+    params: GetResourceProfileRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetResourceProfileResponse, scala.Unit]
+  ): Request[GetResourceProfileResponse, AWSError] = js.native
   
   /**
     * Retrieves the status and configuration settings for retrieving occurrences of sensitive data reported by findings.
@@ -649,6 +701,22 @@ trait Macie2 extends Service {
   ): Request[GetSensitiveDataOccurrencesAvailabilityResponse, AWSError] = js.native
   
   /**
+    *  Retrieves the settings for the sensitivity inspection template for an account.
+    */
+  def getSensitivityInspectionTemplate(): Request[GetSensitivityInspectionTemplateResponse, AWSError] = js.native
+  def getSensitivityInspectionTemplate(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetSensitivityInspectionTemplateResponse, scala.Unit]
+  ): Request[GetSensitivityInspectionTemplateResponse, AWSError] = js.native
+  /**
+    *  Retrieves the settings for the sensitivity inspection template for an account.
+    */
+  def getSensitivityInspectionTemplate(params: GetSensitivityInspectionTemplateRequest): Request[GetSensitivityInspectionTemplateResponse, AWSError] = js.native
+  def getSensitivityInspectionTemplate(
+    params: GetSensitivityInspectionTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetSensitivityInspectionTemplateResponse, scala.Unit]
+  ): Request[GetSensitivityInspectionTemplateResponse, AWSError] = js.native
+  
+  /**
     * Retrieves (queries) quotas and aggregated usage data for one or more accounts.
     */
   def getUsageStatistics(): Request[GetUsageStatisticsResponse, AWSError] = js.native
@@ -703,6 +771,22 @@ trait Macie2 extends Service {
     params: ListClassificationJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListClassificationJobsResponse, scala.Unit]
   ): Request[ListClassificationJobsResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves a subset of information about the classification scope for an account.
+    */
+  def listClassificationScopes(): Request[ListClassificationScopesResponse, AWSError] = js.native
+  def listClassificationScopes(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListClassificationScopesResponse, scala.Unit]
+  ): Request[ListClassificationScopesResponse, AWSError] = js.native
+  /**
+    * Retrieves a subset of information about the classification scope for an account.
+    */
+  def listClassificationScopes(params: ListClassificationScopesRequest): Request[ListClassificationScopesResponse, AWSError] = js.native
+  def listClassificationScopes(
+    params: ListClassificationScopesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListClassificationScopesResponse, scala.Unit]
+  ): Request[ListClassificationScopesResponse, AWSError] = js.native
   
   /**
     * Retrieves a subset of information about all the custom data identifiers for an account.
@@ -807,6 +891,62 @@ trait Macie2 extends Service {
     params: ListOrganizationAdminAccountsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListOrganizationAdminAccountsResponse, scala.Unit]
   ): Request[ListOrganizationAdminAccountsResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves information about objects that were selected from an S3 bucket for automated sensitive data discovery.
+    */
+  def listResourceProfileArtifacts(): Request[ListResourceProfileArtifactsResponse, AWSError] = js.native
+  def listResourceProfileArtifacts(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListResourceProfileArtifactsResponse, scala.Unit]
+  ): Request[ListResourceProfileArtifactsResponse, AWSError] = js.native
+  /**
+    * Retrieves information about objects that were selected from an S3 bucket for automated sensitive data discovery.
+    */
+  def listResourceProfileArtifacts(params: ListResourceProfileArtifactsRequest): Request[ListResourceProfileArtifactsResponse, AWSError] = js.native
+  def listResourceProfileArtifacts(
+    params: ListResourceProfileArtifactsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListResourceProfileArtifactsResponse, scala.Unit]
+  ): Request[ListResourceProfileArtifactsResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves information about the types and amount of sensitive data that Amazon Macie found in an S3 bucket.
+    */
+  def listResourceProfileDetections(): Request[ListResourceProfileDetectionsResponse, AWSError] = js.native
+  def listResourceProfileDetections(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListResourceProfileDetectionsResponse, scala.Unit]
+  ): Request[ListResourceProfileDetectionsResponse, AWSError] = js.native
+  /**
+    * Retrieves information about the types and amount of sensitive data that Amazon Macie found in an S3 bucket.
+    */
+  def listResourceProfileDetections(params: ListResourceProfileDetectionsRequest): Request[ListResourceProfileDetectionsResponse, AWSError] = js.native
+  def listResourceProfileDetections(
+    params: ListResourceProfileDetectionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListResourceProfileDetectionsResponse, scala.Unit]
+  ): Request[ListResourceProfileDetectionsResponse, AWSError] = js.native
+  
+  /**
+    *  Retrieves a subset of information about the sensitivity inspection template for an account.
+    */
+  def listSensitivityInspectionTemplates(): Request[ListSensitivityInspectionTemplatesResponse, AWSError] = js.native
+  def listSensitivityInspectionTemplates(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ ListSensitivityInspectionTemplatesResponse, 
+      scala.Unit
+    ]
+  ): Request[ListSensitivityInspectionTemplatesResponse, AWSError] = js.native
+  /**
+    *  Retrieves a subset of information about the sensitivity inspection template for an account.
+    */
+  def listSensitivityInspectionTemplates(params: ListSensitivityInspectionTemplatesRequest): Request[ListSensitivityInspectionTemplatesResponse, AWSError] = js.native
+  def listSensitivityInspectionTemplates(
+    params: ListSensitivityInspectionTemplatesRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ ListSensitivityInspectionTemplatesResponse, 
+      scala.Unit
+    ]
+  ): Request[ListSensitivityInspectionTemplatesResponse, AWSError] = js.native
   
   /**
     * Retrieves the tags (keys and values) that are associated with an Amazon Macie resource.
@@ -943,6 +1083,30 @@ trait Macie2 extends Service {
   ): Request[UpdateAllowListResponse, AWSError] = js.native
   
   /**
+    * Enables or disables automated sensitive data discovery for an account.
+    */
+  def updateAutomatedDiscoveryConfiguration(): Request[UpdateAutomatedDiscoveryConfigurationResponse, AWSError] = js.native
+  def updateAutomatedDiscoveryConfiguration(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ UpdateAutomatedDiscoveryConfigurationResponse, 
+      scala.Unit
+    ]
+  ): Request[UpdateAutomatedDiscoveryConfigurationResponse, AWSError] = js.native
+  /**
+    * Enables or disables automated sensitive data discovery for an account.
+    */
+  def updateAutomatedDiscoveryConfiguration(params: UpdateAutomatedDiscoveryConfigurationRequest): Request[UpdateAutomatedDiscoveryConfigurationResponse, AWSError] = js.native
+  def updateAutomatedDiscoveryConfiguration(
+    params: UpdateAutomatedDiscoveryConfigurationRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ UpdateAutomatedDiscoveryConfigurationResponse, 
+      scala.Unit
+    ]
+  ): Request[UpdateAutomatedDiscoveryConfigurationResponse, AWSError] = js.native
+  
+  /**
     * Changes the status of a classification job.
     */
   def updateClassificationJob(): Request[UpdateClassificationJobResponse, AWSError] = js.native
@@ -955,6 +1119,22 @@ trait Macie2 extends Service {
     params: UpdateClassificationJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateClassificationJobResponse, scala.Unit]
   ): Request[UpdateClassificationJobResponse, AWSError] = js.native
+  
+  /**
+    * Updates the classification scope settings for an account.
+    */
+  def updateClassificationScope(): Request[UpdateClassificationScopeResponse, AWSError] = js.native
+  def updateClassificationScope(
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateClassificationScopeResponse, scala.Unit]
+  ): Request[UpdateClassificationScopeResponse, AWSError] = js.native
+  /**
+    * Updates the classification scope settings for an account.
+    */
+  def updateClassificationScope(params: UpdateClassificationScopeRequest): Request[UpdateClassificationScopeResponse, AWSError] = js.native
+  def updateClassificationScope(
+    params: UpdateClassificationScopeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateClassificationScopeResponse, scala.Unit]
+  ): Request[UpdateClassificationScopeResponse, AWSError] = js.native
   
   /**
     * Updates the criteria and other settings for a findings filter.
@@ -1015,6 +1195,36 @@ trait Macie2 extends Service {
   ): Request[UpdateOrganizationConfigurationResponse, AWSError] = js.native
   
   /**
+    * Updates the sensitivity score for an S3 bucket.
+    */
+  def updateResourceProfile(): Request[UpdateResourceProfileResponse, AWSError] = js.native
+  def updateResourceProfile(callback: js.Function2[/* err */ AWSError, /* data */ UpdateResourceProfileResponse, scala.Unit]): Request[UpdateResourceProfileResponse, AWSError] = js.native
+  /**
+    * Updates the sensitivity score for an S3 bucket.
+    */
+  def updateResourceProfile(params: UpdateResourceProfileRequest): Request[UpdateResourceProfileResponse, AWSError] = js.native
+  def updateResourceProfile(
+    params: UpdateResourceProfileRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateResourceProfileResponse, scala.Unit]
+  ): Request[UpdateResourceProfileResponse, AWSError] = js.native
+  
+  /**
+    * Updates the sensitivity scoring settings for an S3 bucket.
+    */
+  def updateResourceProfileDetections(): Request[UpdateResourceProfileDetectionsResponse, AWSError] = js.native
+  def updateResourceProfileDetections(
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateResourceProfileDetectionsResponse, scala.Unit]
+  ): Request[UpdateResourceProfileDetectionsResponse, AWSError] = js.native
+  /**
+    * Updates the sensitivity scoring settings for an S3 bucket.
+    */
+  def updateResourceProfileDetections(params: UpdateResourceProfileDetectionsRequest): Request[UpdateResourceProfileDetectionsResponse, AWSError] = js.native
+  def updateResourceProfileDetections(
+    params: UpdateResourceProfileDetectionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateResourceProfileDetectionsResponse, scala.Unit]
+  ): Request[UpdateResourceProfileDetectionsResponse, AWSError] = js.native
+  
+  /**
     * Updates the status and configuration settings for retrieving occurrences of sensitive data reported by findings.
     */
   def updateRevealConfiguration(): Request[UpdateRevealConfigurationResponse, AWSError] = js.native
@@ -1029,6 +1239,30 @@ trait Macie2 extends Service {
     params: UpdateRevealConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateRevealConfigurationResponse, scala.Unit]
   ): Request[UpdateRevealConfigurationResponse, AWSError] = js.native
+  
+  /**
+    *  Updates the settings for the sensitivity inspection template for an account.
+    */
+  def updateSensitivityInspectionTemplate(): Request[UpdateSensitivityInspectionTemplateResponse, AWSError] = js.native
+  def updateSensitivityInspectionTemplate(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ UpdateSensitivityInspectionTemplateResponse, 
+      scala.Unit
+    ]
+  ): Request[UpdateSensitivityInspectionTemplateResponse, AWSError] = js.native
+  /**
+    *  Updates the settings for the sensitivity inspection template for an account.
+    */
+  def updateSensitivityInspectionTemplate(params: UpdateSensitivityInspectionTemplateRequest): Request[UpdateSensitivityInspectionTemplateResponse, AWSError] = js.native
+  def updateSensitivityInspectionTemplate(
+    params: UpdateSensitivityInspectionTemplateRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ UpdateSensitivityInspectionTemplateResponse, 
+      scala.Unit
+    ]
+  ): Request[UpdateSensitivityInspectionTemplateResponse, AWSError] = js.native
   
   /**
     * Waits for the findingRevealed state by periodically calling the underlying Macie2.getSensitiveDataOccurrencesoperation every 2 seconds (at most 60 times). Wait until the sensitive data occurrences are ready.

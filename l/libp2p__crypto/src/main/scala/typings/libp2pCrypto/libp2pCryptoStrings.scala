@@ -26,6 +26,18 @@ object libp2pCryptoStrings {
   inline def Ed25519: Ed25519 = "Ed25519".asInstanceOf[Ed25519]
   
   @js.native
+  sealed trait `P-256` extends StObject
+  inline def `P-256`: `P-256` = "P-256".asInstanceOf[`P-256`]
+  
+  @js.native
+  sealed trait `P-384` extends StObject
+  inline def `P-384`: `P-384` = "P-384".asInstanceOf[`P-384`]
+  
+  @js.native
+  sealed trait `P-521` extends StObject
+  inline def `P-521`: `P-521` = "P-521".asInstanceOf[`P-521`]
+  
+  @js.native
   sealed trait RSA
     extends StObject
        with KeyTypes

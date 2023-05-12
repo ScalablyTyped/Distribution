@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StartNetworkInsightsAnalysisRequest extends StObject {
   
   /**
+    * The member accounts that contain resources that the path can traverse.
+    */
+  var AdditionalAccounts: js.UndefOr[ValueStringList] = js.undefined
+  
+  /**
     * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to ensure idempotency.
     */
   var ClientToken: String
@@ -40,6 +45,12 @@ object StartNetworkInsightsAnalysisRequest {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: StartNetworkInsightsAnalysisRequest] (val x: Self) extends AnyVal {
+    
+    inline def setAdditionalAccounts(value: ValueStringList): Self = StObject.set(x, "AdditionalAccounts", value.asInstanceOf[js.Any])
+    
+    inline def setAdditionalAccountsUndefined: Self = StObject.set(x, "AdditionalAccounts", js.undefined)
+    
+    inline def setAdditionalAccountsVarargs(value: String*): Self = StObject.set(x, "AdditionalAccounts", js.Array(value*))
     
     inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

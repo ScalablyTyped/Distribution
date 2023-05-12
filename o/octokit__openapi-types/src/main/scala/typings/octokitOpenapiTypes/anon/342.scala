@@ -6,25 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `342` extends StObject {
   
-  /** A repository ID. Only return repositories with an ID greater than this ID. */
-  var since: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['since-repo'] */ js.Any
-  ] = js.undefined
+  @JSName("application/json")
+  var applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repository-advisory-create'] */ js.Any
 }
 object `342` {
   
-  inline def apply(): `342` = {
+  inline def apply(
+    applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repository-advisory-create'] */ js.Any
+  ): `342` = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`342`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `342`] (val x: Self) extends AnyVal {
     
-    inline def setSince(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['since-repo'] */ js.Any
-    ): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
-    
-    inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
+    inline def setApplicationSlashjson(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repository-advisory-create'] */ js.Any
+    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }
 }

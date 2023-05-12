@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Callback used by {@link CameraComponent#calculateTransform} and {@link CameraComponent#calculateProjection}.
   *
   * @callback CalculateMatrixCallback
-  * @param {Mat4} transformMatrix - Output of the function.
+  * @param {import('../../../core/math/mat4.js').Mat4} transformMatrix - Output of the function.
   * @param {number} view - Type of view. Can be {@link VIEW_CENTER}, {@link VIEW_LEFT} or {@link VIEW_RIGHT}. Left and right are only used in stereo rendering.
   */
 /**
@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * ```javascript
   * // Add a pc.CameraComponent to an entity
-  * var entity = new pc.Entity();
+  * const entity = new pc.Entity();
   * entity.addComponent('camera', {
   *     nearClip: 1,
   *     farClip: 100,
@@ -28,68 +28,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * });
   *
   * // Get the pc.CameraComponent on an entity
-  * var cameraComponent = entity.camera;
+  * const cameraComponent = entity.camera;
   *
   * // Update a property on a camera component
   * entity.camera.nearClip = 2;
   * ```
   *
-  * @property {number} projection The type of projection used to render the camera. Can be:
-  *
-  * - {@link PROJECTION_PERSPECTIVE}: A perspective projection. The camera frustum
-  * resembles a truncated pyramid.
-  * - {@link PROJECTION_ORTHOGRAPHIC}: An orthographic projection. The camera
-  * frustum is a cuboid.
-  *
-  * Defaults to {@link PROJECTION_PERSPECTIVE}.
-  * @property {number} aspectRatio The aspect ratio (width divided by height) of the camera. If
-  * aspectRatioMode is {@link ASPECT_AUTO}, then this value will be automatically calculated every
-  * frame, and you can only read it. If it's ASPECT_MANUAL, you can set the value.
-  * @property {number} aspectRatioMode The aspect ratio mode of the camera. Can be:
-  *
-  * - {@link ASPECT_AUTO}: aspect ratio will be calculated from the current render
-  * target's width divided by height.
-  * - {@link ASPECT_MANUAL}: use the aspectRatio value.
-  *
-  * Defaults to {@link ASPECT_AUTO}.
-  * @property {Color} clearColor The color used to clear the canvas to before the camera starts to
-  * render. Defaults to [0.75, 0.75, 0.75, 1].
-  * @property {number} farClip The distance from the camera after which no rendering will take
-  * place. Defaults to 1000.
-  * @property {number} fov The field of view of the camera in degrees. Usually this is the Y-axis
-  * field of view, see {@link CameraComponent#horizontalFov}. Used for
-  * {@link PROJECTION_PERSPECTIVE} cameras only. Defaults to 45.
-  * @property {boolean} horizontalFov Set which axis to use for the Field of View calculation.
-  * Defaults to false.
-  * @property {number} nearClip The distance from the camera before which no rendering will take
-  * place. Defaults to 0.1.
-  * @property {number} orthoHeight The half-height of the orthographic view window (in the Y-axis).
-  * Used for {@link PROJECTION_ORTHOGRAPHIC} cameras only. Defaults to 10.
-  * @property {Vec4} scissorRect Clips all pixels which are not in the rectangle. The order of the
-  * values is [x, y, width, height]. Defaults to [0, 0, 1, 1].
-  * @property {boolean} frustumCulling Controls the culling of mesh instances against the camera
-  * frustum, i.e. if objects outside of camera should be omitted from rendering. If false, all mesh
-  * instances in the scene are rendered by the camera, regardless of visibility. Defaults to false.
-  * @property {CalculateMatrixCallback} calculateTransform Custom function you can provide to
-  * calculate the camera transformation matrix manually. Can be used for complex effects like
-  * reflections. Function is called using component's scope. Arguments:
-  *
-  * - {@link Mat4} transformMatrix: output of the function.
-  * - view: Type of view. Can be {@link VIEW_CENTER}, {@link VIEW_LEFT} or {@link VIEW_RIGHT}.
-  *
-  * Left and right are only used in stereo rendering.
-  * @property {CalculateMatrixCallback} calculateProjection Custom function you can provide to
-  * calculate the camera projection matrix manually. Can be used for complex effects like doing
-  * oblique projection. Function is called using component's scope. Arguments:
-  *
-  * - {@link Mat4} transformMatrix: output of the function
-  * - view: Type of view. Can be {@link VIEW_CENTER}, {@link VIEW_LEFT} or {@link VIEW_RIGHT}.
-  *
-  * Left and right are only used in stereo rendering.
-  * @property {boolean} cullFaces If true the camera will take material.cull into account. Otherwise
-  * both front and back faces will be rendered. Defaults to true.
-  * @property {boolean} flipFaces If true the camera will invert front and back faces. Can be useful
-  * for reflection rendering. Defaults to false.
   * @augments Component
   */
 @JSImport("playcanvas", "CameraComponent")
@@ -98,20 +42,38 @@ open class CameraComponent protected () extends Component {
   /**
     * Create a new CameraComponent instance.
     *
-    * @param {CameraComponentSystem} system - The ComponentSystem that created this Component.
-    * @param {Entity} entity - The Entity that this Component is attached to.
+    * @param {import('./system.js').CameraComponentSystem} system - The ComponentSystem that
+    * created this Component.
+    * @param {import('../../entity.js').Entity} entity - The Entity that this Component is
+    * attached to.
     */
   def this(system: CameraComponentSystem, entity: Entity) = this()
   
-  var _camera: Camera = js.native
+  /** @private */
+  /* private */ var _camera: Any = js.native
   
-  var _disablePostEffectsLayer: Double = js.native
+  /**
+    * Layer id at which the postprocessing stops for the camera.
+    *
+    * @type {number}
+    * @private
+    */
+  /* private */ var _disablePostEffectsLayer: Any = js.native
   
-  def _enableDepthLayer(value: Any): Boolean = js.native
+  /**
+    * Based on the value, the depth layer's enable counter is incremented or decremented.
+    *
+    * @param {boolean} value - True to increment the counter, false to decrement it.
+    * @returns {boolean} True if the counter was incremented or decremented, false if the depth
+    * layer is not present.
+    * @private
+    */
+  /* private */ var _enableDepthLayer: Any = js.native
   
   var _postEffects: PostEffectQueue = js.native
   
-  var _priority: Double = js.native
+  /** @private */
+  /* private */ var _priority: Any = js.native
   
   /**
     * A counter of requests of color map rendering.
@@ -129,11 +91,14 @@ open class CameraComponent protected () extends Component {
     */
   /* private */ var _renderSceneDepthMap: Any = js.native
   
-  var _sceneColorMapRequested: Boolean = js.native
+  /** @private */
+  /* private */ var _sceneColorMapRequested: Any = js.native
   
-  var _sceneDepthMapRequested: Boolean = js.native
+  /** @private */
+  /* private */ var _sceneDepthMapRequested: Any = js.native
   
-  def addCameraToLayers(): Unit = js.native
+  /** @private */
+  /* private */ var addCameraToLayers: Any = js.native
   
   def aperture: Double = js.native
   /**
@@ -143,25 +108,70 @@ open class CameraComponent protected () extends Component {
     */
   def aperture_=(arg: Double): Unit = js.native
   
-  var aspectRatio: Double = js.native
+  def aspectRatio: Double = js.native
   
   def aspectRatioMode: Double = js.native
+  /**
+    * The aspect ratio mode of the camera. Can be:
+    *
+    * - {@link ASPECT_AUTO}: aspect ratio will be calculated from the current render
+    * target's width divided by height.
+    * - {@link ASPECT_MANUAL}: use the aspectRatio value.
+    *
+    * Defaults to {@link ASPECT_AUTO}.
+    *
+    * @type {number}
+    */
   def aspectRatioMode_=(arg: Double): Unit = js.native
+  
+  /**
+    * The aspect ratio (width divided by height) of the camera. If aspectRatioMode is
+    * {@link ASPECT_AUTO}, then this value will be automatically calculated every frame, and you
+    * can only read it. If it's ASPECT_MANUAL, you can set the value.
+    *
+    * @type {number}
+    */
+  def aspectRatio_=(arg: Double): Unit = js.native
   
   /**
     * Calculates aspect ratio value for a given render target.
     *
-    * @param {RenderTarget} [rt] - Optional render target. If unspecified, the backbuffer is used.
+    * @param {import('../../../platform/graphics/render-target.js').RenderTarget} [rt] - Optional
+    * render target. If unspecified, the backbuffer is used.
     * @returns {number} The aspect ratio of the render target (or backbuffer).
     */
   def calculateAspectRatio(): Double = js.native
   def calculateAspectRatio(rt: RenderTarget): Double = js.native
   
-  def calculateProjection: CalculateMatrixCallback = js.native
-  def calculateProjection_=(arg: CalculateMatrixCallback): Unit = js.native
+  def calculateProjection: Any = js.native
+  /**
+    * Custom function you can provide to calculate the camera projection matrix manually. Can be
+    * used for complex effects like doing oblique projection. Function is called using component's
+    * scope. Arguments:
+    *
+    * - {@link Mat4} transformMatrix: output of the function
+    * - view: Type of view. Can be {@link VIEW_CENTER}, {@link VIEW_LEFT} or {@link VIEW_RIGHT}.
+    *
+    * Left and right are only used in stereo rendering.
+    *
+    * @type {CalculateMatrixCallback}
+    */
+  def calculateProjection_=(arg: Any): Unit = js.native
   
-  def calculateTransform: CalculateMatrixCallback = js.native
-  def calculateTransform_=(arg: CalculateMatrixCallback): Unit = js.native
+  def calculateTransform: Any = js.native
+  /**
+    * Custom function you can provide to calculate the camera transformation matrix manually. Can
+    * be used for complex effects like reflections. Function is called using component's scope.
+    * Arguments:
+    *
+    * - {@link Mat4} transformMatrix: output of the function.
+    * - view: Type of view. Can be {@link VIEW_CENTER}, {@link VIEW_LEFT} or {@link VIEW_RIGHT}.
+    *
+    * Left and right are only used in stereo rendering.
+    *
+    * @type {CalculateMatrixCallback}
+    */
+  def calculateTransform_=(arg: Any): Unit = js.native
   
   /**
     * Queries the camera component's underlying Camera instance.
@@ -181,6 +191,12 @@ open class CameraComponent protected () extends Component {
     */
   def clearColorBuffer_=(arg: Boolean): Unit = js.native
   
+  /**
+    * The color used to clear the canvas to before the camera starts to render. Defaults to
+    * [0.75, 0.75, 0.75, 1].
+    *
+    * @type {import('../../../core/math/color.js').Color}
+    */
   def clearColor_=(arg: Color): Unit = js.native
   
   def clearDepthBuffer: Boolean = js.native
@@ -199,9 +215,23 @@ open class CameraComponent protected () extends Component {
     */
   def clearStencilBuffer_=(arg: Boolean): Unit = js.native
   
-  def copy(source: Any): Unit = js.native
+  /**
+    * Function to copy properties from the source CameraComponent.
+    * Properties not copied: postEffects.
+    * Inherited properties not copied (all): system, entity, enabled.
+    *
+    * @param {CameraComponent} source - The source component.
+    * @ignore
+    */
+  def copy(source: CameraComponent): Unit = js.native
   
   def cullFaces: Boolean = js.native
+  /**
+    * If true the camera will take material.cull into account. Otherwise both front and back faces
+    * will be rendered. Defaults to true.
+    *
+    * @type {boolean}
+    */
   def cullFaces_=(arg: Boolean): Unit = js.native
   
   def dirtyLayerCompositionCameras(): Unit = js.native
@@ -220,8 +250,9 @@ open class CameraComponent protected () extends Component {
   /**
     * Attempt to end XR session of this camera.
     *
-    * @param {XrErrorCallback} [callback] - Optional callback function called once session is
-    * ended. The callback has one argument Error - it is null if successfully ended XR session.
+    * @param {import('../../xr/xr-manager.js').XrErrorCallback} [callback] - Optional callback
+    * function called once session is ended. The callback has one argument Error - it is null if
+    * successfully ended XR session.
     * @example
     * // On an entity with a camera component
     * this.entity.camera.endXr(function (err) {
@@ -232,19 +263,38 @@ open class CameraComponent protected () extends Component {
   def endXr(callback: XrErrorCallback): Unit = js.native
   
   def farClip: Double = js.native
+  /**
+    * The distance from the camera after which no rendering will take place. Defaults to 1000.
+    *
+    * @type {number}
+    */
   def farClip_=(arg: Double): Unit = js.native
   
   def flipFaces: Boolean = js.native
+  /**
+    * If true the camera will invert front and back faces. Can be useful for reflection rendering.
+    * Defaults to false.
+    *
+    * @type {boolean}
+    */
   def flipFaces_=(arg: Boolean): Unit = js.native
   
   def fov: Double = js.native
+  /**
+    * The field of view of the camera in degrees. Usually this is the Y-axis field of view, see
+    * {@link CameraComponent#horizontalFov}. Used for {@link PROJECTION_PERSPECTIVE} cameras only.
+    * Defaults to 45.
+    *
+    * @type {number}
+    */
   def fov_=(arg: Double): Unit = js.native
   
   /**
     * Prepare the camera for frame rendering.
     *
-    * @param {RenderTarget} rt - Render target to which rendering will be performed. Will affect
-    * camera's aspect ratio, if aspectRatioMode is {@link ASPECT_AUTO}.
+    * @param {import('../../../platform/graphics/render-target.js').RenderTarget} rt - Render
+    * target to which rendering will be performed. Will affect camera's aspect ratio, if
+    * aspectRatioMode is {@link ASPECT_AUTO}.
     * @ignore
     */
   def frameUpdate(rt: RenderTarget): Unit = js.native
@@ -252,14 +302,33 @@ open class CameraComponent protected () extends Component {
   /**
     * Queries the camera's frustum shape.
     *
-    * @type {Frustum}
+    * @type {import('../../../core/shape/frustum.js').Frustum}
     */
   def frustum: Frustum = js.native
   
   def frustumCulling: Boolean = js.native
+  /**
+    * Controls the culling of mesh instances against the camera frustum, i.e. if objects outside
+    * of camera should be omitted from rendering. If false, all mesh instances in the scene are
+    * rendered by the camera, regardless of visibility. Defaults to false.
+    *
+    * @type {boolean}
+    */
   def frustumCulling_=(arg: Boolean): Unit = js.native
   
+  /**
+    * Shader pass name.
+    *
+    * @returns {string} The name of the shader pass, or undefined if no shader pass is set.
+    */
+  def getShaderPass(): String = js.native
+  
   def horizontalFov: Boolean = js.native
+  /**
+    * Set which axis to use for the Field of View calculation. Defaults to false.
+    *
+    * @type {boolean}
+    */
   def horizontalFov_=(arg: Boolean): Unit = js.native
   
   def layers: js.Array[Double] = js.native
@@ -276,15 +345,38 @@ open class CameraComponent protected () extends Component {
   def layers_=(arg: js.Array[Double]): Unit = js.native
   
   def nearClip: Double = js.native
+  /**
+    * The distance from the camera before which no rendering will take place. Defaults to 0.1.
+    *
+    * @type {number}
+    */
   def nearClip_=(arg: Double): Unit = js.native
   
+  /**
+    * Called before application renders the scene.
+    *
+    * @ignore
+    */
   def onAppPrerender(): Unit = js.native
   
-  def onLayerAdded(layer: Any): Unit = js.native
+  /**
+    * @param {import('../../../scene/layer.js').Layer} layer - The layer to add the camera to.
+    * @private
+    */
+  /* private */ var onLayerAdded: Any = js.native
   
-  def onLayerRemoved(layer: Any): Unit = js.native
+  /**
+    * @param {import('../../../scene/layer.js').Layer} layer - The layer to remove the camera from.
+    * @private
+    */
+  /* private */ var onLayerRemoved: Any = js.native
   
-  def onLayersChanged(oldComp: Any, newComp: Any): Unit = js.native
+  /**
+    * @param {import('../../../scene/composition/layer-composition.js').LayerComposition} oldComp - Old layer composition.
+    * @param {import('../../../scene/composition/layer-composition.js').LayerComposition} newComp - New layer composition.
+    * @private
+    */
+  /* private */ var onLayersChanged: Any = js.native
   
   /**
     * Custom function that is called after the camera renders the scene.
@@ -311,6 +403,12 @@ open class CameraComponent protected () extends Component {
   def onRemove(): Unit = js.native
   
   def orthoHeight: Double = js.native
+  /**
+    * The half-height of the orthographic view window (in the Y-axis). Used for
+    * {@link PROJECTION_ORTHOGRAPHIC} cameras only. Defaults to 10.
+    *
+    * @type {number}
+    */
   def orthoHeight_=(arg: Double): Unit = js.native
   
   def postEffects: PostEffectQueue = js.native
@@ -336,10 +434,22 @@ open class CameraComponent protected () extends Component {
   /**
     * Queries the camera's projection matrix.
     *
-    * @type {Mat4}
+    * @type {import('../../../core/math/mat4.js').Mat4}
     */
   def projectionMatrix: Mat4 = js.native
   
+  /**
+    * The type of projection used to render the camera. Can be:
+    *
+    * - {@link PROJECTION_PERSPECTIVE}: A perspective projection. The camera frustum
+    * resembles a truncated pyramid.
+    * - {@link PROJECTION_ORTHOGRAPHIC}: An orthographic projection. The camera
+    * frustum is a cuboid.
+    *
+    * Defaults to {@link PROJECTION_PERSPECTIVE}.
+    *
+    * @type {number}
+    */
   def projection_=(arg: Double): Unit = js.native
   
   def rect: Vec4 = js.native
@@ -347,11 +457,12 @@ open class CameraComponent protected () extends Component {
     * Controls where on the screen the camera will be rendered in normalized screen coordinates.
     * Defaults to [0, 0, 1, 1].
     *
-    * @type {Vec4}
+    * @type {import('../../../core/math/vec4.js').Vec4}
     */
   def rect_=(arg: Vec4): Unit = js.native
   
-  def removeCameraFromLayers(): Unit = js.native
+  /** @private */
+  /* private */ var removeCameraFromLayers: Any = js.native
   
   def renderSceneColorMap: Boolean = js.native
   def renderSceneColorMap_=(arg: Boolean): Unit = js.native
@@ -364,13 +475,13 @@ open class CameraComponent protected () extends Component {
     * Render target to which rendering of the cameras is performed. If not set, it will render
     * simply to the screen.
     *
-    * @type {RenderTarget}
+    * @type {import('../../../platform/graphics/render-target.js').RenderTarget}
     */
   def renderTarget_=(arg: Any): Unit = js.native
   
   /**
     * Request the scene to generate a texture containing the scene color map. Note that this call
-    * is accummulative, and for each enable request, a disable request need to be called.
+    * is accumulative, and for each enable request, a disable request need to be called.
     *
     * @param {boolean} enabled - True to request the generation, false to disable it.
     */
@@ -378,13 +489,19 @@ open class CameraComponent protected () extends Component {
   
   /**
     * Request the scene to generate a texture containing the scene depth map. Note that this call
-    * is accummulative, and for each enable request, a disable request need to be called.
+    * is accumulative, and for each enable request, a disable request need to be called.
     *
     * @param {boolean} enabled - True to request the generation, false to disable it.
     */
   def requestSceneDepthMap(enabled: Boolean): Unit = js.native
   
   def scissorRect: Vec4 = js.native
+  /**
+    * Clips all pixels which are not in the rectangle. The order of the values is
+    * [x, y, width, height]. Defaults to [0, 0, 1, 1].
+    *
+    * @type {import('../../../core/math/vec4.js').Vec4}
+    */
   def scissorRect_=(arg: Vec4): Unit = js.native
   
   /**
@@ -396,17 +513,18 @@ open class CameraComponent protected () extends Component {
     * 0 to `canvas.offsetHeight` of the application's canvas element.
     * @param {number} cameraz - The distance from the camera in world space to create the new
     * point.
-    * @param {Vec3} [worldCoord] - 3D vector to receive world coordinate result.
+    * @param {import('../../../core/math/vec3.js').Vec3} [worldCoord] - 3D vector to receive world
+    * coordinate result.
     * @example
     * // Get the start and end points of a 3D ray fired from a screen click position
-    * var start = entity.camera.screenToWorld(clickX, clickY, entity.camera.nearClip);
-    * var end = entity.camera.screenToWorld(clickX, clickY, entity.camera.farClip);
+    * const start = entity.camera.screenToWorld(clickX, clickY, entity.camera.nearClip);
+    * const end = entity.camera.screenToWorld(clickX, clickY, entity.camera.farClip);
     *
     * // Use the ray coordinates to perform a raycast
     * app.systems.rigidbody.raycastFirst(start, end, function (result) {
     *     console.log("Entity " + result.entity.name + " was selected");
     * });
-    * @returns {Vec3} The world space coordinate.
+    * @returns {import('../../../core/math/vec3.js').Vec3} The world space coordinate.
     */
   def screenToWorld(screenx: Double, screeny: Double, cameraz: Double): Vec3 = js.native
   def screenToWorld(screenx: Double, screeny: Double, cameraz: Double, worldCoord: Vec3): Vec3 = js.native
@@ -418,6 +536,51 @@ open class CameraComponent protected () extends Component {
     * @type {number}
     */
   def sensitivity_=(arg: Double): Unit = js.native
+  
+  /**
+    * Sets the name of the shader pass the camera will use when rendering.
+    *
+    * @param {string} name - The name of the shader pass. Defaults to undefined, which is
+    * equivalent to {@link SHADERPASS_FORWARD}. Can be:
+    *
+    * - {@link SHADERPASS_FORWARD}
+    * - {@link SHADERPASS_ALBEDO}
+    * - {@link SHADERPASS_OPACITY}
+    * - {@link SHADERPASS_WORLDNORMAL}
+    * - {@link SHADERPASS_SPECULARITY}
+    * - {@link SHADERPASS_GLOSS}
+    * - {@link SHADERPASS_METALNESS}
+    * - {@link SHADERPASS_AO}
+    * - {@link SHADERPASS_EMISSION}
+    * - {@link SHADERPASS_LIGHTING}
+    * - {@link SHADERPASS_UV0}
+    *
+    * Additionally, a new name can be specified, which creates a new shader pass with the given
+    * name. The name provided can only use alphanumeric characters and underscores. When a shader
+    * is compiled for the new pass, a define is added to the shader. For example, if the name is
+    * 'custom_rendering', the define 'CUSTOM_RENDERING_PASS' is added to the shader, allowing the
+    * shader code to conditionally execute code only when that shader pass is active.
+    *
+    * Another instance where this approach may prove useful is when a camera needs to render a more
+    * cost-effective version of shaders, such as when creating a reflection texture. To accomplish
+    * this, a callback on the material that triggers during shader compilation can be used. This
+    * callback can modify the shader generation options specifically for this shader pass.
+    *
+    * ```javascript
+    * const shaderPassId = camera.setShaderPass('custom_rendering');
+    *
+    * material.onUpdateShader = function (options) {
+    *    if (options.pass === shaderPassId) {
+    *        options.litOptions.normalMapEnabled = false;
+    *        options.litOptions.useSpecular = false;
+    *    }
+    *    return options;
+    * };
+    * ```
+    *
+    * @returns {number} The id of the shader pass.
+    */
+  def setShaderPass(name: String): Double = js.native
   
   def shutter: Double = js.native
   /**
@@ -460,9 +623,9 @@ open class CameraComponent protected () extends Component {
     * used for getting access to additional WebXR spec extensions.
     * @param {boolean} [options.imageTracking] - Set to true to attempt to enable {@link XrImageTracking}.
     * @param {boolean} [options.planeDetection] - Set to true to attempt to enable {@link XrPlaneDetection}.
-    * @param {XrErrorCallback} [options.callback] - Optional callback function called once the
-    * session is started. The callback has one argument Error - it is null if the XR session
-    * started successfully.
+    * @param {import('../../xr/xr-manager.js').XrErrorCallback} [options.callback] - Optional
+    * callback function called once the session is started. The callback has one argument Error -
+    * it is null if the XR session started successfully.
     * @param {object} [options.depthSensing] - Optional object with depth sensing parameters to
     * attempt to enable {@link XrDepthSensing}.
     * @param {string} [options.depthSensing.usagePreference] - Optional usage preference for depth
@@ -491,16 +654,17 @@ open class CameraComponent protected () extends Component {
   /**
     * Queries the camera's view matrix.
     *
-    * @type {Mat4}
+    * @type {import('../../../core/math/mat4.js').Mat4}
     */
   def viewMatrix: Mat4 = js.native
   
   /**
     * Convert a point from 3D world space to 2D screen space.
     *
-    * @param {Vec3} worldCoord - The world space coordinate.
-    * @param {Vec3} [screenCoord] - 3D vector to receive screen coordinate result.
-    * @returns {Vec3} The screen space coordinate.
+    * @param {import('../../../core/math/vec3.js').Vec3} worldCoord - The world space coordinate.
+    * @param {import('../../../core/math/vec3.js').Vec3} [screenCoord] - 3D vector to receive
+    * screen coordinate result.
+    * @returns {import('../../../core/math/vec3.js').Vec3} The screen space coordinate.
     */
   def worldToScreen(worldCoord: Vec3): Vec3 = js.native
   def worldToScreen(worldCoord: Vec3, screenCoord: Vec3): Vec3 = js.native

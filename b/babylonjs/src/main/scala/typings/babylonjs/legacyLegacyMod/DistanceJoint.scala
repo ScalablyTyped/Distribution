@@ -1,6 +1,6 @@
 package typings.babylonjs.legacyLegacyMod
 
-import typings.babylonjs.physicsPhysicsJointMod.DistanceJointData
+import typings.babylonjs.physicsV1PhysicsJointMod.DistanceJointData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

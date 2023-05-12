@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("vscode.CancellationError")
 @js.native
 /**
-  * Creates a new cancellation error.
-  */
+		 * Creates a new cancellation error.
+		 */
 open class CancellationError ()
   extends typings.vscode.mod.CancellationError

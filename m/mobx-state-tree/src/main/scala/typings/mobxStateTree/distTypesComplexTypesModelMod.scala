@@ -492,10 +492,8 @@ object distTypesComplexTypesModelMod {
     
     def named(newName: String): IModelType[PROPS, OTHERS, CustomC, CustomS] = js.native
     
-    /** @deprecated See `types.snapshotProcessor` */
     def postProcessSnapshot[NewS](fn: js.Function1[/* snapshot */ ModelSnapshotType2[PROPS, CustomS], NewS]): IModelType[PROPS, OTHERS, CustomC, NewS] = js.native
     
-    /** @deprecated See `types.snapshotProcessor` */
     def preProcessSnapshot[NewC](fn: js.Function1[/* snapshot */ NewC, ModelCreationType2[PROPS, CustomC]]): IModelType[PROPS, OTHERS, NewC, CustomS] = js.native
     
     val properties: PROPS = js.native

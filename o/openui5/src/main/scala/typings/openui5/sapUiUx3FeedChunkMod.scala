@@ -988,6 +988,8 @@ object sapUiUx3FeedChunkMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:actionItemSelected actionItemSelected} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -999,6 +1001,8 @@ object sapUiUx3FeedChunkMod {
     mParameters: ItemId): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:commentAdded commentAdded} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1010,6 +1014,8 @@ object sapUiUx3FeedChunkMod {
     mParameters: Comment): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:deleted deleted} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1021,6 +1027,8 @@ object sapUiUx3FeedChunkMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:inspect inspect} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1032,6 +1040,8 @@ object sapUiUx3FeedChunkMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:referenceClicked referenceClicked} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1043,6 +1053,8 @@ object sapUiUx3FeedChunkMod {
     mParameters: Text): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:senderClicked senderClicked} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1054,6 +1066,8 @@ object sapUiUx3FeedChunkMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:toggleFavorite toggleFavorite} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1065,6 +1079,8 @@ object sapUiUx3FeedChunkMod {
     mParameters: Favorite): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:toggleFlagged toggleFlagged} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1076,6 +1092,8 @@ object sapUiUx3FeedChunkMod {
     mParameters: Flagged): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:toggleShared toggleShared} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

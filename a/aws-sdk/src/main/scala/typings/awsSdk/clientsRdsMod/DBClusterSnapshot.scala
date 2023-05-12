@@ -37,6 +37,11 @@ trait DBClusterSnapshot extends StObject {
   var DBClusterSnapshotIdentifier: js.UndefOr[String] = js.undefined
   
   /**
+    * Reserved for future use.
+    */
+  var DBSystemId: js.UndefOr[String] = js.undefined
+  
+  /**
     * Specifies the name of the database engine for this DB cluster snapshot.
     */
   var Engine: js.UndefOr[String] = js.undefined
@@ -106,6 +111,11 @@ trait DBClusterSnapshot extends StObject {
     */
   var StorageEncrypted: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * The storage type associated with the DB cluster snapshot. This setting is only for Aurora DB clusters.
+    */
+  var StorageType: js.UndefOr[String] = js.undefined
+  
   var TagList: js.UndefOr[typings.awsSdk.clientsRdsMod.TagList] = js.undefined
   
   /**
@@ -148,6 +158,10 @@ object DBClusterSnapshot {
     inline def setDBClusterSnapshotIdentifier(value: String): Self = StObject.set(x, "DBClusterSnapshotIdentifier", value.asInstanceOf[js.Any])
     
     inline def setDBClusterSnapshotIdentifierUndefined: Self = StObject.set(x, "DBClusterSnapshotIdentifier", js.undefined)
+    
+    inline def setDBSystemId(value: String): Self = StObject.set(x, "DBSystemId", value.asInstanceOf[js.Any])
+    
+    inline def setDBSystemIdUndefined: Self = StObject.set(x, "DBSystemId", js.undefined)
     
     inline def setEngine(value: String): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     
@@ -204,6 +218,10 @@ object DBClusterSnapshot {
     inline def setStorageEncrypted(value: Boolean): Self = StObject.set(x, "StorageEncrypted", value.asInstanceOf[js.Any])
     
     inline def setStorageEncryptedUndefined: Self = StObject.set(x, "StorageEncrypted", js.undefined)
+    
+    inline def setStorageType(value: String): Self = StObject.set(x, "StorageType", value.asInstanceOf[js.Any])
+    
+    inline def setStorageTypeUndefined: Self = StObject.set(x, "StorageType", js.undefined)
     
     inline def setTagList(value: TagList): Self = StObject.set(x, "TagList", value.asInstanceOf[js.Any])
     

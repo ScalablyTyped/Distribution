@@ -22,7 +22,7 @@ trait RunInTerminalRequestArguments extends StObject {
   /** Environment key-value pairs that are added to or removed from the default environment. */
   var env: js.UndefOr[StringDictionary[String | Null]] = js.undefined
   
-  /** What kind of terminal to launch. */
+  /** What kind of terminal to launch. Defaults to `integrated` if not specified. */
   var kind: js.UndefOr[integrated | external] = js.undefined
   
   /** Title of the terminal. */

@@ -4,7 +4,6 @@ import typings.fhir.fhirStrings.append
 import typings.fhir.fhirStrings.c
 import typings.fhir.fhirStrings.cast
 import typings.fhir.fhirStrings.cc
-import typings.fhir.fhirStrings.collate
 import typings.fhir.fhirStrings.copy
 import typings.fhir.fhirStrings.cp
 import typings.fhir.fhirStrings.create
@@ -18,6 +17,7 @@ import typings.fhir.fhirStrings.pointer
 import typings.fhir.fhirStrings.qty
 import typings.fhir.fhirStrings.reference
 import typings.fhir.fhirStrings.share
+import typings.fhir.fhirStrings.single
 import typings.fhir.fhirStrings.translate
 import typings.fhir.fhirStrings.truncate
 import typings.fhir.fhirStrings.uuid
@@ -54,7 +54,7 @@ trait StructureMapGroupRuleTarget
   /**
     * If field is a list, how to manage the list.
     */
-  var listMode: js.UndefOr[js.Array[first | share | last | collate]] = js.undefined
+  var listMode: js.UndefOr[js.Array[first | share | last | single]] = js.undefined
   
   /**
     * Internal rule reference for shared list items.
@@ -96,11 +96,11 @@ object StructureMapGroupRuleTarget {
     
     inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    inline def setListMode(value: js.Array[first | share | last | collate]): Self = StObject.set(x, "listMode", value.asInstanceOf[js.Any])
+    inline def setListMode(value: js.Array[first | share | last | single]): Self = StObject.set(x, "listMode", value.asInstanceOf[js.Any])
     
     inline def setListModeUndefined: Self = StObject.set(x, "listMode", js.undefined)
     
-    inline def setListModeVarargs(value: (first | share | last | collate)*): Self = StObject.set(x, "listMode", js.Array(value*))
+    inline def setListModeVarargs(value: (first | share | last | single)*): Self = StObject.set(x, "listMode", js.Array(value*))
     
     inline def setListRuleId(value: String): Self = StObject.set(x, "listRuleId", value.asInstanceOf[js.Any])
     

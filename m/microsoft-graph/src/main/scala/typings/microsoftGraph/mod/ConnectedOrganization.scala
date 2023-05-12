@@ -23,8 +23,8 @@ trait ConnectedOrganization
   var externalSponsors: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
   /**
-    * The identity sources in this connected organization, one of azureActiveDirectoryTenant, domainIdentitySource or
-    * externalDomainFederation. Nullable.
+    * The identity sources in this connected organization, one of azureActiveDirectoryTenant, domainIdentitySource,
+    * externalDomainFederation or crossCloudAzureActiveDirectoryTenant. Nullable.
     */
   var identitySources: js.UndefOr[NullableOption[js.Array[IdentitySource]]] = js.undefined
   

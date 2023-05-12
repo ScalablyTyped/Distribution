@@ -32,6 +32,10 @@ object seleniumWebdriverStrings {
   inline def INFO: INFO = "INFO".asInstanceOf[INFO]
   
   @js.native
+  sealed trait MicrosoftEdge extends StObject
+  inline def MicrosoftEdge: MicrosoftEdge = "MicrosoftEdge".asInstanceOf[MicrosoftEdge]
+  
+  @js.native
   sealed trait TRACE
     extends StObject
        with Level
@@ -44,14 +48,30 @@ object seleniumWebdriverStrings {
   inline def WARN: WARN = "WARN".asInstanceOf[WARN]
   
   @js.native
+  sealed trait chrome extends StObject
+  inline def chrome: chrome = "chrome".asInstanceOf[chrome]
+  
+  @js.native
   sealed trait denied extends StObject
   inline def denied: denied = "denied".asInstanceOf[denied]
+  
+  @js.native
+  sealed trait firefox extends StObject
+  inline def firefox: firefox = "firefox".asInstanceOf[firefox]
   
   @js.native
   sealed trait granted extends StObject
   inline def granted: granted = "granted".asInstanceOf[granted]
   
   @js.native
+  sealed trait `internet explorer` extends StObject
+  inline def `internet explorer`: `internet explorer` = ("internet explorer").asInstanceOf[`internet explorer`]
+  
+  @js.native
   sealed trait prompt extends StObject
   inline def prompt: prompt = "prompt".asInstanceOf[prompt]
+  
+  @js.native
+  sealed trait safari extends StObject
+  inline def safari: safari = "safari".asInstanceOf[safari]
 }

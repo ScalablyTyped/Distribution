@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteWorkspaceApiKeyResponse extends StObject {
   
   /**
-    * The name of the API key that was deleted.
+    * The name of the key that was deleted.
     */
   var keyName: ApiKeyName
   

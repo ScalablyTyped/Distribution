@@ -1,7 +1,7 @@
 
 # Scala.js typings for zustand
 
-Typings are for version 4.1.1
+Typings are for version 4.3.8
 
 ## Library description:
 🐻 Bear necessities for state management in React

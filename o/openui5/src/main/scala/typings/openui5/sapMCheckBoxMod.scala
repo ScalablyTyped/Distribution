@@ -12,6 +12,8 @@ import typings.openui5.sapUiCoreLibraryMod.ISemanticFormContent
 import typings.openui5.sapUiCoreLibraryMod.TextAlign
 import typings.openui5.sapUiCoreLibraryMod.TextDirection
 import typings.openui5.sapUiCoreLibraryMod.ValueState
+import typings.std.Object
+import typings.std.PropertyKey
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -68,6 +70,27 @@ object sapMCheckBoxMod {
     
     /* CompleteClass */
     var __implements__sap_ui_core_ISemanticFormContent: Boolean = js.native
+    
+    /** The initial value of Object.prototype.constructor is the standard built-in Object constructor. */
+    /* standard es5 */
+    /* CompleteClass */
+    var constructor: js.Function = js.native
+    
+    /**
+      * Determines whether an object has a property with the specified name.
+      * @param v A property name.
+      */
+    /* standard es5 */
+    /* CompleteClass */
+    override def hasOwnProperty(v: PropertyKey): Boolean = js.native
+    
+    /**
+      * Determines whether a specified property is enumerable.
+      * @param v A property name.
+      */
+    /* standard es5 */
+    /* CompleteClass */
+    override def propertyIsEnumerable(v: PropertyKey): Boolean = js.native
   }
   /* static members */
   object default {
@@ -142,7 +165,10 @@ object sapMCheckBoxMod {
     extends typings.openui5.sapUiCoreControlMod.default
        with IFormContent
        with ISemanticFormContent
-       with IAccessKeySupport {
+       with IAccessKeySupport
+       with /* was: sap.m.IToolbarInteractiveControl */ Object {
+    
+    var __implements__sap_m_IToolbarInteractiveControl: Boolean = js.native
     
     def addAriaDescribedBy(
       /**
@@ -264,6 +290,8 @@ object sapMCheckBoxMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:select select} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -332,8 +360,9 @@ object sapMCheckBoxMod {
     /**
       * Gets current value of property {@link #getEnabled enabled}.
       *
-      * Disables the Checkbox. Disabled controls are not interactive and are rendered differently according to
-      * the theme.
+      * Whether the `CheckBox` is enabled.
+      *
+      * **Note:** Disabled `CheckBox` is not interactive and is rendered differently according to the theme.
       *
       * Default value is `true`.
       *
@@ -388,6 +417,7 @@ object sapMCheckBoxMod {
     
     /**
       * @SINCE 1.22
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Returns the CheckBox`s tab index.
       *
@@ -604,8 +634,9 @@ object sapMCheckBoxMod {
     /**
       * Sets a new value for property {@link #getEnabled enabled}.
       *
-      * Disables the Checkbox. Disabled controls are not interactive and are rendered differently according to
-      * the theme.
+      * Whether the `CheckBox` is enabled.
+      *
+      * **Note:** Disabled `CheckBox` is not interactive and is rendered differently according to the theme.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -684,6 +715,7 @@ object sapMCheckBoxMod {
     
     /**
       * @SINCE 1.16
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Sets the tab index of the control
       *
@@ -892,8 +924,9 @@ object sapMCheckBoxMod {
       ] = js.undefined
     
     /**
-      * Disables the Checkbox. Disabled controls are not interactive and are rendered differently according to
-      * the theme.
+      * Whether the `CheckBox` is enabled.
+      *
+      * **Note:** Disabled `CheckBox` is not interactive and is rendered differently according to the theme.
       */
     var enabled: js.UndefOr[
         Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)

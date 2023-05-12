@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Host extends StObject {
   
   /**
-    * 
+    * The IP address of the Dedicated Host. 
     */
   var HostIp: js.UndefOr[String] = js.undefined
   
   /**
-    * 
+    * The name of the Dedicated Host.
     */
   var HostName: js.UndefOr[String] = js.undefined
   
   /**
-    * 
+    * The role of the Dedicated Host.
     */
   var HostRole: js.UndefOr[typings.awsSdk.clientsSsmsapMod.HostRole] = js.undefined
   
   /**
-    * 
+    * The instance ID of the instance on the Dedicated Host.
     */
   var InstanceId: js.UndefOr[String] = js.undefined
 }

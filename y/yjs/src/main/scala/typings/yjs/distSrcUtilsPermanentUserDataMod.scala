@@ -49,7 +49,7 @@ object distSrcUtilsPermanentUserDataMod {
       * @param {Doc} doc
       * @param {number} clientid
       * @param {string} userDescription
-      * @param {Object} [conf]
+      * @param {Object} conf
       * @param {function(Transaction, DeleteSet):boolean} [conf.filter]
       */
     def setUserMapping(doc: Doc, clientid: Double, userDescription: String): Unit = js.native

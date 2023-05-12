@@ -88,6 +88,13 @@ trait ImageryTileLayer
   val rasterFields: js.Array[Field] = js.native
   
   /**
+    * The client-side raster functions are operations that apply processing directly to the source image pixels.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryTileLayer.html#rasterFunction)
+    */
+  var rasterFunction: RasterFunction = js.native
+  
+  /**
     * The [tiled image service's metadata JSON](https://developers.arcgis.com/rest/services-reference/image-service.htm) exposed by the ArcGIS REST API.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryTileLayer.html#sourceJSON)

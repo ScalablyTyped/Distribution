@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('./anim-track.js').AnimTrack} AnimTrack */
 /**
   * AnimSnapshot stores the state of an animation track at a particular time.
   *
@@ -16,7 +15,7 @@ open class AnimSnapshot protected () extends StObject {
   /**
     * Create a new animation snapshot.
     *
-    * @param {AnimTrack} animTrack - The source track.
+    * @param {import('./anim-track.js').AnimTrack} animTrack - The source track.
     */
   def this(animTrack: AnimTrack) = this()
   

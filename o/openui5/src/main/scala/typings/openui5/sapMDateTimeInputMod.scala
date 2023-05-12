@@ -10,6 +10,8 @@ import typings.openui5.sapUiCoreLibraryMod.ID
 import typings.openui5.sapUiCoreLibraryMod.TextAlign
 import typings.openui5.sapUiCoreLibraryMod.TextDirection
 import typings.openui5.sapUiCoreLibraryMod.ValueState
+import typings.std.Object
+import typings.std.PropertyKey
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -55,6 +57,27 @@ object sapMDateTimeInputMod {
       */
     mSettings: DateTimeInputSettings
     ) = this()
+    
+    /** The initial value of Object.prototype.constructor is the standard built-in Object constructor. */
+    /* standard es5 */
+    /* CompleteClass */
+    var constructor: js.Function = js.native
+    
+    /**
+      * Determines whether an object has a property with the specified name.
+      * @param v A property name.
+      */
+    /* standard es5 */
+    /* CompleteClass */
+    override def hasOwnProperty(v: PropertyKey): Boolean = js.native
+    
+    /**
+      * Determines whether a specified property is enumerable.
+      * @param v A property name.
+      */
+    /* standard es5 */
+    /* CompleteClass */
+    override def propertyIsEnumerable(v: PropertyKey): Boolean = js.native
   }
   /* static members */
   object default {
@@ -126,7 +149,10 @@ object sapMDateTimeInputMod {
   
   @js.native
   trait DateTimeInput
-    extends typings.openui5.sapUiCoreControlMod.default {
+    extends typings.openui5.sapUiCoreControlMod.default
+       with /* was: sap.m.IToolbarInteractiveControl */ Object {
+    
+    var __implements__sap_m_IToolbarInteractiveControl: Boolean = js.native
     
     def addAriaLabelledBy(
       /**
@@ -247,6 +273,8 @@ object sapMDateTimeInputMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -470,19 +498,14 @@ object sapMDateTimeInputMod {
     vAriaLabelledBy: ID): ID | Null = js.native
     
     /**
-      * Sets a new value for property {@link #getDateValue dateValue}.
+      * Setter for property `dateValue`.
       *
-      * This property as JavaScript Date Object can be used to assign a new value which is independent from valueFormat.
-      *
-      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
-      *
-      * @returns Reference to `this` in order to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
-    def setDateValue(): this.type = js.native
     def setDateValue(/**
-      * New value for property `dateValue`
+      * A JavaScript Date
       */
-    oDateValue: js.Object): this.type = js.native
+    oDate: js.Date): this.type = js.native
     
     /**
       * Sets a new value for property {@link #getDisplayFormat displayFormat}.

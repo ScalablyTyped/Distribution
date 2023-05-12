@@ -1,8 +1,10 @@
 package typings.aframe.mod.global.AFRAME.THREE
 
+import typings.three.srcConstantsMod.DeepTexturePixelFormat
+import typings.three.srcConstantsMod.MagnificationTextureFilter
 import typings.three.srcConstantsMod.Mapping
+import typings.three.srcConstantsMod.MinificationTextureFilter
 import typings.three.srcConstantsMod.TextureDataType
-import typings.three.srcConstantsMod.TextureFilter
 import typings.three.srcConstantsMod.Wrapping
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,15 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class DepthTexture protected ()
   extends typings.three.mod.DepthTexture {
   /**
-    * @param width
-    * @param height
-    * @param type
-    * @param [mapping=THREE.Texture.DEFAULT_MAPPING]
-    * @param [wrapS=THREE.ClampToEdgeWrapping]
-    * @param [wrapT=THREE.ClampToEdgeWrapping]
-    * @param [magFilter=THREE.NearestFilter]
-    * @param [minFilter=THREE.NearestFilter]
-    * @param [anisotropy=1]
+    * Create a new instance of {@link DepthTexture}
+    * @param width Width of the texture.
+    * @param height Height of the texture.
+    * @param type See {@link Texture.type | .type}. Default {@link THREE.UnsignedByteType} or {@link THREE.UnsignedInt248Type}
+    * @param mapping See {@link Texture.mapping | .mapping}. Default {@link THREE.Texture.DEFAULT_MAPPING}
+    * @param wrapS See {@link Texture.wrapS | .wrapS}. Default {@link THREE.ClampToEdgeWrapping}
+    * @param wrapT See {@link Texture.wrapT | .wrapT}. Default {@link THREE.ClampToEdgeWrapping}
+    * @param magFilter See {@link Texture.magFilter | .magFilter}. Default {@link THREE.NearestFilter}
+    * @param minFilter  See {@link Texture.minFilter | .minFilter}. Default {@link THREE.NearestFilter}
+    * @param anisotropy See {@link Texture.anisotropy | .anisotropy}. Default {@link THREE.Texture.DEFAULT_ANISOTROPY}
+    * @param format See {@link DepthTexture.format | .format}. Default {@link THREE.DepthFormat}
     */
   def this(
     width: Double,
@@ -31,8 +35,9 @@ open class DepthTexture protected ()
     mapping: js.UndefOr[Mapping],
     wrapS: js.UndefOr[Wrapping],
     wrapT: js.UndefOr[Wrapping],
-    magFilter: js.UndefOr[TextureFilter],
-    minFilter: js.UndefOr[TextureFilter],
-    anisotropy: js.UndefOr[Double]
+    magFilter: js.UndefOr[MagnificationTextureFilter],
+    minFilter: js.UndefOr[MinificationTextureFilter],
+    anisotropy: js.UndefOr[Double],
+    format: js.UndefOr[DeepTexturePixelFormat]
   ) = this()
 }

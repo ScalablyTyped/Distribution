@@ -16,7 +16,7 @@ object libIconsWeiboOutlinedMod extends Shortcut {
   @js.native
   trait WeiboOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_WeiboOutlinedIconType: String = js.native

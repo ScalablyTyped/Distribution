@@ -19,10 +19,22 @@ object srcMatchedDataMod {
   
   trait MatchedDataOptions extends StObject {
     
+    /**
+      * Whether the value returned by `matchedData()` should include data deemed optional.
+      * @default false
+      */
     var includeOptionals: Boolean
     
+    /**
+      * An array of locations in the request to extract the data from.
+      */
     var locations: js.Array[Location]
     
+    /**
+      * Whether the value returned by `matchedData()` should include only values that have passed
+      * validation.
+      * @default true
+      */
     var onlyValidData: Boolean
   }
   object MatchedDataOptions {

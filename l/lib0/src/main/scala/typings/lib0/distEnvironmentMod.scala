@@ -35,4 +35,8 @@ object distEnvironmentMod {
   @JSImport("lib0/dist/environment", "production")
   @js.native
   val production: Boolean = js.native
+  
+  @JSImport("lib0/dist/environment", "supportsColor")
+  @js.native
+  val supportsColor: Boolean = js.native
 }

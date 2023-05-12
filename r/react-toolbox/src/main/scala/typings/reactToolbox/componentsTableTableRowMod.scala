@@ -14,7 +14,7 @@ object componentsTableTableRowMod {
     def this(props: TableRowProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: TableRowProps, context: Any) = this()
   }
@@ -26,7 +26,7 @@ object componentsTableTableRowMod {
     def this(props: TableRowProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: TableRowProps, context: Any) = this()
   }

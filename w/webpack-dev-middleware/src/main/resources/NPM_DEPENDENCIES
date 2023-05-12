@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "webpack-dev-middleware" : "5.3.3"
+      "webpack-dev-middleware" : "6.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "webpack-dev-middleware" : "5.3.3"
+      "webpack-dev-middleware" : "6.1.0"
     }
   ],
   "compile-devDependencies" : [

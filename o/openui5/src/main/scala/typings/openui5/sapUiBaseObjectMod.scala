@@ -72,18 +72,10 @@ object sapUiBaseObjectMod {
       * contained in `oClassInfo`.
       *
       * `oClassInfo` might contain three kinds of information:
-      * 	 - `metadata:` an (optional) object literal with metadata about the class. The information in the object
-      * 			literal will be wrapped by an instance of {@link sap.ui.base.Metadata Metadata} and might contain the
-      * 			following information
-      * 	`interfaces:` {string[]} (optional) set of names of implemented interfaces (defaults to no interfaces)
-      *
-      * 	 - `publicMethods:` {string[]} (optional) list of methods that should be part of the public facade of
-      * 			the class
-      * 	 - `abstract:` {boolean} (optional) flag that marks the class as abstract (purely informational, defaults
-      * 			to false)
-      * 	 - `final:` {boolean} (optional) flag that marks the class as final (defaults to false)  Subclasses
-      * 			of sap.ui.base.Object can enrich the set of supported metadata (e.g. see {@link sap.ui.core.Element.extend}).
-      *
+      * 	 - `metadata:` an (optional) object literal with metadata about the class like implemented interfaces,
+      * 			see {@link sap.ui.base.Object.MetadataOptions MetadataOptions} for details. The information in the object
+      * 			literal will be wrapped by an instance of {@link sap.ui.base.Metadata Metadata}. Subclasses of sap.ui.base.Object
+      * 			can enrich the set of supported metadata (e.g. see {@link sap.ui.core.Element.extend}).
       *
       *
       * 	 - `constructor:` a function that serves as a constructor function for the new class. If no constructor
@@ -170,7 +162,7 @@ object sapUiBaseObjectMod {
       *
       * @returns Whether the given object is an instance of the given type or of any of the given types
       */
-    inline def isA(
+    inline def isA[T /* <: BaseObject */](
       /**
       * Object which will be checked whether it is an instance of the given type
       */
@@ -179,8 +171,8 @@ object sapUiBaseObjectMod {
       * Type or types to check for
       */
     vTypeName: String
-    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isA")(oObject.asInstanceOf[js.Any], vTypeName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def isA(
+    ): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isA")(oObject.asInstanceOf[js.Any], vTypeName.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
+    inline def isA[T /* <: BaseObject */](
       /**
       * Object which will be checked whether it is an instance of the given type
       */
@@ -189,7 +181,7 @@ object sapUiBaseObjectMod {
       * Type or types to check for
       */
     vTypeName: js.Array[String]
-    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isA")(oObject.asInstanceOf[js.Any], vTypeName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    ): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isA")(oObject.asInstanceOf[js.Any], vTypeName.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
   }
   
   @js.native
@@ -241,13 +233,67 @@ object sapUiBaseObjectMod {
       *
       * @returns Whether this object is an instance of the given type or of any of the given types
       */
-    def isA(/**
+    def isA[T /* <: BaseObject */](/**
       * Type or types to check for
       */
-    vTypeName: String): Boolean = js.native
-    def isA(/**
+    vTypeName: String): /* is T */ Boolean = js.native
+    def isA[T /* <: BaseObject */](/**
       * Type or types to check for
       */
-    vTypeName: js.Array[String]): Boolean = js.native
+    vTypeName: js.Array[String]): /* is T */ Boolean = js.native
+  }
+  
+  trait MetadataOptions extends StObject {
+    
+    /**
+      * flag that marks the class as abstract (purely informational, defaults to false)
+      */
+    var `abstract`: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * flag that marks the class as deprecated (defaults to false). May lead to an additional warning log message
+      * at runtime when the object is still used. For the documentation, also add a `@deprecated` tag in the
+      * JSDoc, describing since when it is deprecated and what any alternatives are.
+      */
+    var deprecated: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * flag that marks the class as final (defaults to false)
+      */
+    var `final`: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * set of names of implemented interfaces (defaults to no interfaces)
+      */
+    var interfaces: js.UndefOr[js.Array[String]] = js.undefined
+  }
+  object MetadataOptions {
+    
+    inline def apply(): MetadataOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MetadataOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetadataOptions] (val x: Self) extends AnyVal {
+      
+      inline def setAbstract(value: Boolean): Self = StObject.set(x, "abstract", value.asInstanceOf[js.Any])
+      
+      inline def setAbstractUndefined: Self = StObject.set(x, "abstract", js.undefined)
+      
+      inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+      
+      inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+      
+      inline def setFinal(value: Boolean): Self = StObject.set(x, "final", value.asInstanceOf[js.Any])
+      
+      inline def setFinalUndefined: Self = StObject.set(x, "final", js.undefined)
+      
+      inline def setInterfaces(value: js.Array[String]): Self = StObject.set(x, "interfaces", value.asInstanceOf[js.Any])
+      
+      inline def setInterfacesUndefined: Self = StObject.set(x, "interfaces", js.undefined)
+      
+      inline def setInterfacesVarargs(value: String*): Self = StObject.set(x, "interfaces", js.Array(value*))
+    }
   }
 }

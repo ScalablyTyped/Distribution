@@ -1,9 +1,9 @@
 package typings.fluentReact
 
 import typings.fluentBundle.mod.FluentBundle
+import typings.fluentReact.anon.Children
 import typings.fluentReact.esmLocalizedMod.LocalizedProps
 import typings.fluentReact.esmMarkupMod.MarkupParser
-import typings.fluentReact.esmProviderMod.LocalizationProviderProps
 import typings.fluentReact.esmWithLocalizationMod.WithLocalizationProps
 import typings.fluentReact.esmWithLocalizationMod.WithoutLocalizationProps
 import typings.react.mod.ComponentType
@@ -18,7 +18,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def LocalizationProvider(props: LocalizationProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("LocalizationProvider")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def LocalizationProvider(props: Children): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("LocalizationProvider")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   inline def Localized(props: LocalizedProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Localized")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   

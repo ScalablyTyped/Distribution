@@ -27,14 +27,24 @@ trait Addon extends StObject {
   var clusterName: js.UndefOr[ClusterName] = js.undefined
   
   /**
+    * The configuration values that you provided.
+    */
+  var configurationValues: js.UndefOr[String] = js.undefined
+  
+  /**
     * The date and time that the add-on was created.
     */
   var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * An object representing the health of the add-on.
+    * An object that represents the health of the add-on.
     */
   var health: js.UndefOr[AddonHealth] = js.undefined
+  
+  /**
+    * Information about an Amazon EKS add-on from the Amazon Web Services Marketplace.
+    */
+  var marketplaceInformation: js.UndefOr[MarketplaceInformation] = js.undefined
   
   /**
     * The date and time that the add-on was last modified.
@@ -42,7 +52,17 @@ trait Addon extends StObject {
   var modifiedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the IAM role that is bound to the Kubernetes service account used by the add-on.
+    * The owner of the add-on.
+    */
+  var owner: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The publisher of the add-on.
+    */
+  var publisher: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The Amazon Resource Name (ARN) of the IAM role that's bound to the Kubernetes service account that the add-on uses.
     */
   var serviceAccountRoleArn: js.UndefOr[String] = js.undefined
   
@@ -82,6 +102,10 @@ object Addon {
     
     inline def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
     
+    inline def setConfigurationValues(value: String): Self = StObject.set(x, "configurationValues", value.asInstanceOf[js.Any])
+    
+    inline def setConfigurationValuesUndefined: Self = StObject.set(x, "configurationValues", js.undefined)
+    
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
@@ -90,9 +114,21 @@ object Addon {
     
     inline def setHealthUndefined: Self = StObject.set(x, "health", js.undefined)
     
+    inline def setMarketplaceInformation(value: MarketplaceInformation): Self = StObject.set(x, "marketplaceInformation", value.asInstanceOf[js.Any])
+    
+    inline def setMarketplaceInformationUndefined: Self = StObject.set(x, "marketplaceInformation", js.undefined)
+    
     inline def setModifiedAt(value: js.Date): Self = StObject.set(x, "modifiedAt", value.asInstanceOf[js.Any])
     
     inline def setModifiedAtUndefined: Self = StObject.set(x, "modifiedAt", js.undefined)
+    
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
+    
+    inline def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
     
     inline def setServiceAccountRoleArn(value: String): Self = StObject.set(x, "serviceAccountRoleArn", value.asInstanceOf[js.Any])
     

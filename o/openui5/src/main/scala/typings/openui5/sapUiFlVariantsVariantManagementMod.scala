@@ -1,5 +1,6 @@
 package typings.openui5
 
+import typings.openui5.anon.CanOverflow
 import typings.openui5.anon.Def
 import typings.openui5.anon.Execute
 import typings.openui5.anon.Key
@@ -7,8 +8,12 @@ import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.IOverflowToolbarContent
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
+import typings.openui5.sapUiCoreLibraryMod.CSSSize
 import typings.openui5.sapUiCoreLibraryMod.ID
+import typings.openui5.sapUiCoreLibraryMod.IShrinkable
 import typings.openui5.sapUiCoreLibraryMod.TitleLevel
+import typings.std.Object
+import typings.std.PropertyKey
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -59,6 +64,30 @@ object sapUiFlVariantsVariantManagementMod {
     
     /* CompleteClass */
     var __implements__sap_m_IOverflowToolbarContent: Boolean = js.native
+    
+    /* CompleteClass */
+    var __implements__sap_ui_core_IShrinkable: Boolean = js.native
+    
+    /** The initial value of Object.prototype.constructor is the standard built-in Object constructor. */
+    /* standard es5 */
+    /* CompleteClass */
+    var constructor: js.Function = js.native
+    
+    /**
+      * Determines whether an object has a property with the specified name.
+      * @param v A property name.
+      */
+    /* standard es5 */
+    /* CompleteClass */
+    override def hasOwnProperty(v: PropertyKey): Boolean = js.native
+    
+    /**
+      * Determines whether a specified property is enumerable.
+      * @param v A property name.
+      */
+    /* standard es5 */
+    /* CompleteClass */
+    override def propertyIsEnumerable(v: PropertyKey): Boolean = js.native
   }
   /* static members */
   object default {
@@ -131,14 +160,18 @@ object sapUiFlVariantsVariantManagementMod {
   @js.native
   trait VariantManagement
     extends typings.openui5.sapUiCoreControlMod.default
-       with IOverflowToolbarContent {
+       with IShrinkable
+       with IOverflowToolbarContent
+       with /* was: sap.m.IToolbarInteractiveControl */ Object {
+    
+    var __implements__sap_m_IToolbarInteractiveControl: Boolean = js.native
     
     def addFor(
       /**
       * The control to add; if empty, nothing is inserted
       */
     vFor: typings.openui5.sapUiCoreControlMod.default
-    ): js.Object = js.native
+    ): this.type = js.native
     /**
       * Adds a control to the association {@link #for for}.
       *
@@ -147,7 +180,7 @@ object sapUiFlVariantsVariantManagementMod {
     def addFor(/**
       * The control to add; if empty, nothing is inserted
       */
-    vFor: ID): js.Object = js.native
+    vFor: ID): this.type = js.native
     
     /**
       * Attaches event handler `fnFunction` to the {@link #event:cancel cancel} event of this `sap.ui.fl.variants.VariantManagement`.
@@ -597,6 +630,8 @@ object sapUiFlVariantsVariantManagementMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:cancel cancel} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -608,6 +643,8 @@ object sapUiFlVariantsVariantManagementMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:initialized initialized} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -619,6 +656,8 @@ object sapUiFlVariantsVariantManagementMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:manage manage} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -630,6 +669,8 @@ object sapUiFlVariantsVariantManagementMod {
     mParameters: Def): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:save save} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -641,6 +682,8 @@ object sapUiFlVariantsVariantManagementMod {
     mParameters: Execute): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:select select} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -737,6 +780,19 @@ object sapUiFlVariantsVariantManagementMod {
     def getManualVariantKey(): Boolean = js.native
     
     /**
+      * @SINCE 1.109
+      *
+      * Gets current value of property {@link #getMaxWidth maxWidth}.
+      *
+      * Sets the maximum width of the control.
+      *
+      * Default value is `"100%"`.
+      *
+      * @returns Value of property `maxWidth`
+      */
+    def getMaxWidth(): CSSSize = js.native
+    
+    /**
       * Gets current value of property {@link #getModelName modelName}.
       *
       * The name of the model containing the data.
@@ -755,12 +811,14 @@ object sapUiFlVariantsVariantManagementMod {
     def getModified(): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Required by the {@link sap.m.IOverflowToolbarContent} interface. Registers invalidations event which
       * is fired when width of the control is changed.
       *
       * @returns Configuration information for the `sap.m.IOverflowToolbarContent` interface.
       */
-    def getOverflowToolbarConfig(): js.Object = js.native
+    def getOverflowToolbarConfig(): CanOverflow = js.native
     
     /**
       * Gets current value of property {@link #getResetOnContextChange resetOnContextChange}.
@@ -785,6 +843,19 @@ object sapUiFlVariantsVariantManagementMod {
       * @returns Value of property `showSetAsDefault`
       */
     def getShowSetAsDefault(): Boolean = js.native
+    
+    /**
+      * @SINCE 1.109
+      *
+      * Gets current value of property {@link #getTitleStyle titleStyle}.
+      *
+      * Defines the style of the title. For more information, see {@link sap.m.Title#setTitleStyle}.
+      *
+      * Default value is `Auto`.
+      *
+      * @returns Value of property `titleStyle`
+      */
+    def getTitleStyle(): TitleLevel | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TitleLevel * / any */ String) = js.native
     
     /**
       * Gets current value of property {@link #getUpdateVariantInURL updateVariantInURL}.
@@ -960,6 +1031,25 @@ object sapUiFlVariantsVariantManagementMod {
     bManualVariantKey: Boolean): this.type = js.native
     
     /**
+      * @SINCE 1.109
+      *
+      * Sets a new value for property {@link #getMaxWidth maxWidth}.
+      *
+      * Sets the maximum width of the control.
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * Default value is `"100%"`.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setMaxWidth(): this.type = js.native
+    def setMaxWidth(/**
+      * New value for property `maxWidth`
+      */
+    sMaxWidth: CSSSize): this.type = js.native
+    
+    /**
       * Sets a new value for property {@link #getModelName modelName}.
       *
       * The name of the model containing the data.
@@ -1011,6 +1101,31 @@ object sapUiFlVariantsVariantManagementMod {
       * New value for property `showSetAsDefault`
       */
     bShowSetAsDefault: Boolean): this.type = js.native
+    
+    /**
+      * @SINCE 1.109
+      *
+      * Sets a new value for property {@link #getTitleStyle titleStyle}.
+      *
+      * Defines the style of the title. For more information, see {@link sap.m.Title#setTitleStyle}.
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * Default value is `Auto`.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setTitleStyle(): this.type = js.native
+    def setTitleStyle(
+      /**
+      * New value for property `titleStyle`
+      */
+    sTitleStyle: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TitleLevel * / any */ String
+    ): this.type = js.native
+    def setTitleStyle(/**
+      * New value for property `titleStyle`
+      */
+    sTitleStyle: TitleLevel): this.type = js.native
     
     /**
       * Sets a new value for property {@link #getUpdateVariantInURL updateVariantInURL}.
@@ -1103,6 +1218,15 @@ object sapUiFlVariantsVariantManagementMod {
       ] = js.undefined
     
     /**
+      * @SINCE 1.109
+      *
+      * Sets the maximum width of the control.
+      */
+    var maxWidth: js.UndefOr[
+        CSSSize | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
+      ] = js.undefined
+    
+    /**
       * The name of the model containing the data.
       */
     var modelName: js.UndefOr[String | PropertyBindingInfo] = js.undefined
@@ -1132,6 +1256,15 @@ object sapUiFlVariantsVariantManagementMod {
       */
     var showSetAsDefault: js.UndefOr[
         Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
+      ] = js.undefined
+    
+    /**
+      * @SINCE 1.109
+      *
+      * Defines the style of the title. For more information, see {@link sap.m.Title#setTitleStyle}.
+      */
+    var titleStyle: js.UndefOr[
+        TitleLevel | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TitleLevel * / any */ String) | PropertyBindingInfo
       ] = js.undefined
     
     /**
@@ -1197,6 +1330,10 @@ object sapUiFlVariantsVariantManagementMod {
       
       inline def setManualVariantKeyUndefined: Self = StObject.set(x, "manualVariantKey", js.undefined)
       
+      inline def setMaxWidth(value: CSSSize | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      
       inline def setModelName(value: String | PropertyBindingInfo): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
       
       inline def setModelNameUndefined: Self = StObject.set(x, "modelName", js.undefined)
@@ -1216,6 +1353,12 @@ object sapUiFlVariantsVariantManagementMod {
       inline def setShowSetAsDefault(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "showSetAsDefault", value.asInstanceOf[js.Any])
       
       inline def setShowSetAsDefaultUndefined: Self = StObject.set(x, "showSetAsDefault", js.undefined)
+      
+      inline def setTitleStyle(
+        value: TitleLevel | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TitleLevel * / any */ String) | PropertyBindingInfo
+      ): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
+      
+      inline def setTitleStyleUndefined: Self = StObject.set(x, "titleStyle", js.undefined)
       
       inline def setUpdateVariantInURL(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "updateVariantInURL", value.asInstanceOf[js.Any])
       

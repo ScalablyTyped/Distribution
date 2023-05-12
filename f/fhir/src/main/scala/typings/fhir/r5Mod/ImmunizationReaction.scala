@@ -20,7 +20,7 @@ trait ImmunizationReaction
   /**
     * Details of the reaction.
     */
-  var detail: js.UndefOr[Reference] = js.undefined
+  var manifestation: js.UndefOr[CodeableReference] = js.undefined
   
   /**
     * Self-reported indicator.
@@ -41,9 +41,9 @@ object ImmunizationReaction {
     
     inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    inline def setDetail(value: Reference): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+    inline def setManifestation(value: CodeableReference): Self = StObject.set(x, "manifestation", value.asInstanceOf[js.Any])
     
-    inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+    inline def setManifestationUndefined: Self = StObject.set(x, "manifestation", js.undefined)
     
     inline def setReported(value: Boolean): Self = StObject.set(x, "reported", value.asInstanceOf[js.Any])
     

@@ -11,7 +11,10 @@ trait PlannerBucket
   // Name of the bucket.
   var name: js.UndefOr[String] = js.undefined
   
-  // Hint used to order items of this type in a list view. The format is defined as outlined here.
+  /**
+    * Hint used to order items of this type in a list view. For details about the supported format, see Using order hints in
+    * Planner.
+    */
   var orderHint: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Plan ID to which the bucket belongs.

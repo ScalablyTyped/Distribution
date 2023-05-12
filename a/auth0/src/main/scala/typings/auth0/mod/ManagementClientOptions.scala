@@ -18,6 +18,8 @@ trait ManagementClientOptions extends StObject {
   
   var scope: js.UndefOr[String] = js.undefined
   
+  var telemetry: js.UndefOr[Boolean] = js.undefined
+  
   var token: js.UndefOr[String] = js.undefined
   
   var tokenProvider: js.UndefOr[TokenProvider] = js.undefined
@@ -53,6 +55,10 @@ object ManagementClientOptions {
     inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    
+    inline def setTelemetry(value: Boolean): Self = StObject.set(x, "telemetry", value.asInstanceOf[js.Any])
+    
+    inline def setTelemetryUndefined: Self = StObject.set(x, "telemetry", js.undefined)
     
     inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     

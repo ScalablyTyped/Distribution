@@ -21,7 +21,7 @@ object CustomCanvasLayerProps {
     data: js.Array[Serie],
     innerHeight: Double,
     innerWidth: Double,
-    lineGenerator: Line_[js.Array[X]],
+    lineGenerator: Line_[X],
     points: js.Array[Point],
     series: js.Array[ComputedSerie],
     xScale: Scale[Any, Any],

@@ -76,7 +76,7 @@ trait SearchOptions extends StObject {
   val aroundPrecision: js.UndefOr[Double | js.Array[From]] = js.undefined
   
   /**
-    * Search for entries around a given location automatically computed from the requester’s IP address.
+    * Define the maximum radius for a geo search (in meters).
     */
   val aroundRadius: js.UndefOr[Double | all] = js.undefined
   

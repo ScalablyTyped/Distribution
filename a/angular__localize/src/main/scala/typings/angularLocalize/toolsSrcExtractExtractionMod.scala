@@ -3,7 +3,7 @@ package typings.angularLocalize
 import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.AbsoluteFsPath
 import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.ReadonlyFileSystem
 import typings.angularCompilerCli.srcNgtscLoggingSrcLoggerMod.Logger
-import typings.angularLocalize.mod.ɵParsedMessage
+import typings.angularLocalize.localizeMod.ɵParsedMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

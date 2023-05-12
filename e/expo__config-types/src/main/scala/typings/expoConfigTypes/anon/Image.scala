@@ -30,11 +30,6 @@ trait Image
     * Local path or remote URL to an image to fill the background of the loading screen. Image size and aspect ratio are up to you. Must be a .png.
     */
   var tabletImage: js.UndefOr[String] = js.undefined
-  
-  /**
-    * @deprecated Apple has deprecated `.xib` splash screens in favor of `.storyboard` files. Local path to a XIB file as the loading screen. It overrides other loading screen options. Note: This will only be used in the standalone app (i.e., after you build the app). It will not be used in the Expo Go.
-    */
-  var xib: js.UndefOr[String] = js.undefined
 }
 object Image {
   
@@ -61,9 +56,5 @@ object Image {
     inline def setTabletImage(value: String): Self = StObject.set(x, "tabletImage", value.asInstanceOf[js.Any])
     
     inline def setTabletImageUndefined: Self = StObject.set(x, "tabletImage", js.undefined)
-    
-    inline def setXib(value: String): Self = StObject.set(x, "xib", value.asInstanceOf[js.Any])
-    
-    inline def setXibUndefined: Self = StObject.set(x, "xib", js.undefined)
   }
 }

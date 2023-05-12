@@ -64,19 +64,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`otp-credentials`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.payment
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`picture-in-picture`
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.`private-aggregation`
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.`private-state-token-issuance`
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.`private-state-token-redemption`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`publickey-credentials-get`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`run-ad-auction`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`screen-wake-lock`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.serial
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`shared-autofill`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`shared-storage`
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.`shared-storage-select-url`
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.`smart-card`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`storage-access`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`sync-xhr`
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.`trust-token-redemption`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.unload
   - typings.devtoolsProtocol.devtoolsProtocolStrings.usb
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`vertical-scroll`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`web-share`
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.`window-management`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`window-placement`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`xr-spatial-tracking`
 */
@@ -201,6 +206,12 @@ object PermissionsPolicyFeature {
   
   inline def `picture-in-picture`: typings.devtoolsProtocol.devtoolsProtocolStrings.`picture-in-picture` = "picture-in-picture".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`picture-in-picture`]
   
+  inline def `private-aggregation`: typings.devtoolsProtocol.devtoolsProtocolStrings.`private-aggregation` = "private-aggregation".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`private-aggregation`]
+  
+  inline def `private-state-token-issuance`: typings.devtoolsProtocol.devtoolsProtocolStrings.`private-state-token-issuance` = "private-state-token-issuance".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`private-state-token-issuance`]
+  
+  inline def `private-state-token-redemption`: typings.devtoolsProtocol.devtoolsProtocolStrings.`private-state-token-redemption` = "private-state-token-redemption".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`private-state-token-redemption`]
+  
   inline def `publickey-credentials-get`: typings.devtoolsProtocol.devtoolsProtocolStrings.`publickey-credentials-get` = "publickey-credentials-get".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`publickey-credentials-get`]
   
   inline def `run-ad-auction`: typings.devtoolsProtocol.devtoolsProtocolStrings.`run-ad-auction` = "run-ad-auction".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`run-ad-auction`]
@@ -213,11 +224,13 @@ object PermissionsPolicyFeature {
   
   inline def `shared-storage`: typings.devtoolsProtocol.devtoolsProtocolStrings.`shared-storage` = "shared-storage".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`shared-storage`]
   
+  inline def `shared-storage-select-url`: typings.devtoolsProtocol.devtoolsProtocolStrings.`shared-storage-select-url` = "shared-storage-select-url".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`shared-storage-select-url`]
+  
+  inline def `smart-card`: typings.devtoolsProtocol.devtoolsProtocolStrings.`smart-card` = "smart-card".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`smart-card`]
+  
   inline def `storage-access`: typings.devtoolsProtocol.devtoolsProtocolStrings.`storage-access` = "storage-access".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`storage-access`]
   
   inline def `sync-xhr`: typings.devtoolsProtocol.devtoolsProtocolStrings.`sync-xhr` = "sync-xhr".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`sync-xhr`]
-  
-  inline def `trust-token-redemption`: typings.devtoolsProtocol.devtoolsProtocolStrings.`trust-token-redemption` = "trust-token-redemption".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`trust-token-redemption`]
   
   inline def unload: typings.devtoolsProtocol.devtoolsProtocolStrings.unload = "unload".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.unload]
   
@@ -226,6 +239,8 @@ object PermissionsPolicyFeature {
   inline def `vertical-scroll`: typings.devtoolsProtocol.devtoolsProtocolStrings.`vertical-scroll` = "vertical-scroll".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`vertical-scroll`]
   
   inline def `web-share`: typings.devtoolsProtocol.devtoolsProtocolStrings.`web-share` = "web-share".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`web-share`]
+  
+  inline def `window-management`: typings.devtoolsProtocol.devtoolsProtocolStrings.`window-management` = "window-management".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`window-management`]
   
   inline def `window-placement`: typings.devtoolsProtocol.devtoolsProtocolStrings.`window-placement` = "window-placement".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`window-placement`]
   

@@ -1953,6 +1953,8 @@ object sapUiModelModelMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:parseError parseError} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1967,6 +1969,8 @@ object sapUiModelModelMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:propertyChange propertyChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1978,6 +1982,8 @@ object sapUiModelModelMod {
     oParameters: Context): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:requestCompleted requestCompleted} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1989,6 +1995,8 @@ object sapUiModelModelMod {
     oParameters: Info): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:requestFailed requestFailed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -2000,6 +2008,8 @@ object sapUiModelModelMod {
     oParameters: ResponseText): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:requestSent requestSent} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -2036,6 +2046,8 @@ object sapUiModelModelMod {
     ): js.Array[typings.openui5.sapUiCoreMessageMessageMod.default] = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns model messages for which the target matches the given resolved binding path.
       *
       * @returns An array of messages matching the given path; may be empty but not `null` or `undefined`

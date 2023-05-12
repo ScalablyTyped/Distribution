@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.Marker
+import typings.csstype.mod.Property.MarginTrim
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `493` extends StObject {
   
   var value: js.UndefOr[
-    Marker | (js.Array[
-      (Extract[js.UndefOr[Marker | js.Array[NonNullable[js.UndefOr[Marker]]]], String]) | NonNullable[js.UndefOr[Marker]]
+    MarginTrim | (js.Array[
+      (Extract[js.UndefOr[MarginTrim | js.Array[NonNullable[js.UndefOr[MarginTrim]]]], String]) | NonNullable[js.UndefOr[MarginTrim]]
     ])
   ] = js.native
 }

@@ -1,6 +1,7 @@
 package typings.three
 
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.Mesh
 import org.scalablytyped.runtime.StObject
@@ -12,8 +13,11 @@ object examplesJsmMiscMorphBlendMeshMod {
   @JSImport("three/examples/jsm/misc/MorphBlendMesh", "MorphBlendMesh")
   @js.native
   open class MorphBlendMesh protected ()
-    extends Mesh[BufferGeometry, Material | js.Array[Material]] {
-    def this(geometry: typings.three.srcThreeMod.BufferGeometry, material: typings.three.srcThreeMod.Material) = this()
+    extends Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]] {
+    def this(
+      geometry: typings.three.srcThreeMod.BufferGeometry[NormalBufferAttributes],
+      material: typings.three.srcThreeMod.Material
+    ) = this()
     
     var animationsList: js.Array[js.Object] = js.native
     

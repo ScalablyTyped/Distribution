@@ -2,7 +2,7 @@ package typings.openui5
 
 import typings.openui5.anon.ColumnListItem
 import typings.openui5.anon.HasPopin
-import typings.openui5.anon.`4`
+import typings.openui5.anon.`6`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.BackgroundDesign
 import typings.openui5.sapMLibraryMod.PopinLayout
@@ -344,6 +344,7 @@ object sapMTableMod {
     
     /**
       * @SINCE 1.60
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:paste paste} to attached listeners.
       *
@@ -356,10 +357,11 @@ object sapMTableMod {
     def firePaste(/**
       * Parameters to pass along with the event
       */
-    mParameters: `4`): Boolean = js.native
+    mParameters: `6`): Boolean = js.native
     
     /**
       * @SINCE 1.77
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:popinChanged popinChanged} to attached listeners.
       *

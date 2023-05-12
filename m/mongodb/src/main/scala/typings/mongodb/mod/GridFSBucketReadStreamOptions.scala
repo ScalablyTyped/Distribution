@@ -6,14 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GridFSBucketReadStreamOptions extends StObject {
   
-  /** 0-based offset in bytes to stop streaming before */
+  /**
+    * 0-indexed non-negative byte offset to the end of the file contents
+    * to be returned by the stream. `end` is non-inclusive
+    */
   var end: js.UndefOr[scala.Double] = js.undefined
   
   var skip: js.UndefOr[scala.Double] = js.undefined
   
   var sort: js.UndefOr[Sort] = js.undefined
   
-  /** 0-based offset in bytes to start streaming from */
+  /**
+    * 0-indexed non-negative byte offset from the beginning of the file
+    */
   var start: js.UndefOr[scala.Double] = js.undefined
 }
 object GridFSBucketReadStreamOptions {

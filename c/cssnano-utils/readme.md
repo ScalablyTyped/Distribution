@@ -1,7 +1,7 @@
 
 # Scala.js typings for cssnano-utils
 
-Typings are for version 3.1.0
+Typings are for version 4.0.0
 
 ## Library description:
 Utility methods and plugin for cssnano projects

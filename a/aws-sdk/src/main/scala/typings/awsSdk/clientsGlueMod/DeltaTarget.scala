@@ -12,6 +12,11 @@ trait DeltaTarget extends StObject {
   var ConnectionName: js.UndefOr[typings.awsSdk.clientsGlueMod.ConnectionName] = js.undefined
   
   /**
+    * Specifies whether the crawler will create native tables, to allow integration with query engines that support querying of the Delta transaction log directly.
+    */
+  var CreateNativeDeltaTable: js.UndefOr[NullableBoolean] = js.undefined
+  
+  /**
     * A list of the Amazon S3 paths to the Delta tables.
     */
   var DeltaTables: js.UndefOr[PathList] = js.undefined
@@ -34,6 +39,10 @@ object DeltaTarget {
     inline def setConnectionName(value: ConnectionName): Self = StObject.set(x, "ConnectionName", value.asInstanceOf[js.Any])
     
     inline def setConnectionNameUndefined: Self = StObject.set(x, "ConnectionName", js.undefined)
+    
+    inline def setCreateNativeDeltaTable(value: NullableBoolean): Self = StObject.set(x, "CreateNativeDeltaTable", value.asInstanceOf[js.Any])
+    
+    inline def setCreateNativeDeltaTableUndefined: Self = StObject.set(x, "CreateNativeDeltaTable", js.undefined)
     
     inline def setDeltaTables(value: PathList): Self = StObject.set(x, "DeltaTables", value.asInstanceOf[js.Any])
     

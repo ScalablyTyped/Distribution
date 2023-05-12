@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TaskExecution extends StObject {
   
   /**
-    * The task that got started.
-    */
+  		 * The task that got started.
+  		 */
   var task: Task
   
   /**
-    * Terminates the task execution.
-    */
+  		 * Terminates the task execution.
+  		 */
   def terminate(): Unit
 }
 object TaskExecution {

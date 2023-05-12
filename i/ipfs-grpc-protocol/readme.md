@@ -1,7 +1,7 @@
 
 # Scala.js typings for ipfs-grpc-protocol
 
-Typings are for version 0.7.0
+Typings are for version 0.8.0
 
 ## Library description:
 Protobuf definitions for the IPFS gRPC API

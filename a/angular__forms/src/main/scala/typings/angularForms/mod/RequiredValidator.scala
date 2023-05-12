@@ -4,7 +4,7 @@ import typings.angularCore.mod.SimpleChanges
 import typings.angularCore.mod.ɵɵDirectiveDeclaration
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularForms.angularFormsBooleans.`false`
-import typings.angularForms.anon.Required
+import typings.angularForms.anon.Required18
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -79,22 +79,24 @@ object RequiredValidator {
     RequiredValidator, 
     /* :not([type=checkbox])[required][formControlName],:not([type=checkbox])[required][formControl],:not([type=checkbox])[required][ngModel] */ String, 
     scala.Nothing, 
-    Required, 
+    Required18, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    `false`, 
+    scala.Nothing
   ] = js.native
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
       RequiredValidator, 
       /* :not([type=checkbox])[required][formControlName],:not([type=checkbox])[required][formControl],:not([type=checkbox])[required][ngModel] */ String, 
       scala.Nothing, 
-      Required, 
+      Required18, 
       js.Object, 
       scala.Nothing, 
       scala.Nothing, 
-      `false`
+      `false`, 
+      scala.Nothing
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
   

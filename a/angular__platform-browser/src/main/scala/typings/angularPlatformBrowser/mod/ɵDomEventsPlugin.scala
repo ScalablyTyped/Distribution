@@ -21,9 +21,6 @@ open class ɵDomEventsPlugin protected ()
   override def addEventListener(element: HTMLElement, eventName: String, handler: js.Function): js.Function = js.native
   
   /* CompleteClass */
-  override def addGlobalEventListener(element: String, eventName: String, handler: js.Function): js.Function = js.native
-  
-  /* CompleteClass */
   var manager: EventManager = js.native
   
   def removeEventListener(target: Any, eventName: String, callback: js.Function): Unit = js.native

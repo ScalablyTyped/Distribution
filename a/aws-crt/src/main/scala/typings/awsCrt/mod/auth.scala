@@ -2,6 +2,7 @@ package typings.awsCrt.mod
 
 import typings.awsCrt.distNativeAuthMod.AwsSigningConfig
 import typings.awsCrt.distNativeAuthMod.CognitoCredentialsProviderConfig
+import typings.awsCrt.distNativeAuthMod.X509CredentialsConfig
 import typings.awsCrt.distNativeBindingMod.StringLike
 import typings.awsCrt.distNativeHttpMod.HttpRequest
 import typings.awsCrt.distNativeIoMod.ClientBootstrap
@@ -64,6 +65,15 @@ object auth {
       */
     inline def newStatic(access_key: StringLike, secret_key: StringLike): typings.awsCrt.distNativeAuthMod.AwsCredentialsProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("newStatic")(access_key.asInstanceOf[js.Any], secret_key.asInstanceOf[js.Any])).asInstanceOf[typings.awsCrt.distNativeAuthMod.AwsCredentialsProvider]
     inline def newStatic(access_key: StringLike, secret_key: StringLike, session_token: StringLike): typings.awsCrt.distNativeAuthMod.AwsCredentialsProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("newStatic")(access_key.asInstanceOf[js.Any], secret_key.asInstanceOf[js.Any], session_token.asInstanceOf[js.Any])).asInstanceOf[typings.awsCrt.distNativeAuthMod.AwsCredentialsProvider]
+    
+    /**
+      * Creates a new credentials provider that sources credentials from the the X509 service on AWS IoT Core.
+      *
+      * @param config provider configuration necessary to source credentials via X509
+      *
+      * @returns a new credentials provider that returns credentials sourced from the AWS X509 service
+      */
+    inline def newX509(config: X509CredentialsConfig): typings.awsCrt.distNativeAuthMod.AwsCredentialsProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("newX509")(config.asInstanceOf[js.Any]).asInstanceOf[typings.awsCrt.distNativeAuthMod.AwsCredentialsProvider]
   }
   
   @JSImport("aws-crt", "auth.AwsSignatureType")

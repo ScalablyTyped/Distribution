@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderLeftColor
+import typings.csstype.mod.Property.WordSpacing
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `383` extends StObject {
   
   var value: js.UndefOr[
-    BorderLeftColor | (js.Array[
+    (WordSpacing[Double | String]) | (js.Array[
       (Extract[
-        js.UndefOr[BorderLeftColor | js.Array[NonNullable[js.UndefOr[BorderLeftColor]]]], 
+        js.UndefOr[
+          (WordSpacing[Double | String]) | (js.Array[NonNullable[js.UndefOr[WordSpacing[Double | String]]]])
+        ], 
         String
-      ]) | NonNullable[js.UndefOr[BorderLeftColor]]
+      ]) | (NonNullable[js.UndefOr[WordSpacing[Double | String]]])
     ])
   ] = js.native
 }

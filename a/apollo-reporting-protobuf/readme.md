@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollo-reporting-protobuf
 
-Typings are for version 3.3.3
+Typings are for version 3.4.0
 
 ## Library description:
 Protobuf format for Apollo usage reporting

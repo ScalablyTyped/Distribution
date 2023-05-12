@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@fluent/langneg" : "0.6.2"
+      "@fluent/langneg" : "0.7.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@fluent/langneg" : "0.6.2"
+      "@fluent/langneg" : "0.7.0"
     }
   ],
   "compile-devDependencies" : [

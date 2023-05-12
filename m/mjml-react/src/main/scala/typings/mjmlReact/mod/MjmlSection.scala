@@ -12,7 +12,7 @@ open class MjmlSection protected ()
   def this(props: MjmlSectionProps & BorderProps & PaddingProps & ClassNameProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: MjmlSectionProps & BorderProps & PaddingProps & ClassNameProps, context: Any) = this()
 }

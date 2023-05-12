@@ -12,7 +12,7 @@ trait UpdateStudioRequest extends StObject {
   var adminRoleArn: js.UndefOr[RoleArn] = js.undefined
   
   /**
-    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. If you don’t specify a client token, the AWS SDK automatically generates a client token and uses it for the request to ensure idempotency.
+    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. If you don’t specify a client token, the Amazon Web Services SDK automatically generates a client token and uses it for the request to ensure idempotency.
     */
   var clientToken: js.UndefOr[ClientToken] = js.undefined
   

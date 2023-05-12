@@ -37,22 +37,22 @@ trait CreateVpcEndpointRequest extends StObject {
   var PrivateDnsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Gateway endpoint) One or more route table IDs.
+    * (Gateway endpoint) The route table IDs.
     */
   var RouteTableIds: js.UndefOr[VpcEndpointRouteTableIdList] = js.undefined
   
   /**
-    * (Interface endpoint) The ID of one or more security groups to associate with the endpoint network interface.
+    * (Interface endpoint) The IDs of the security groups to associate with the endpoint network interface. If this parameter is not specified, we use the default security group for the VPC.
     */
   var SecurityGroupIds: js.UndefOr[VpcEndpointSecurityGroupIdList] = js.undefined
   
   /**
-    * The service name. To get a list of available services, use the DescribeVpcEndpointServices request, or get the name from the service provider.
+    * The service name.
     */
   var ServiceName: String
   
   /**
-    * (Interface and Gateway Load Balancer endpoints) The ID of one or more subnets in which to create an endpoint network interface. For a Gateway Load Balancer endpoint, you can specify one subnet only.
+    * (Interface and Gateway Load Balancer endpoints) The IDs of the subnets in which to create an endpoint network interface. For a Gateway Load Balancer endpoint, you can specify only one subnet.
     */
   var SubnetIds: js.UndefOr[VpcEndpointSubnetIdList] = js.undefined
   
@@ -67,7 +67,7 @@ trait CreateVpcEndpointRequest extends StObject {
   var VpcEndpointType: js.UndefOr[typings.awsSdk.clientsEc2Mod.VpcEndpointType] = js.undefined
   
   /**
-    * The ID of the VPC in which the endpoint will be used.
+    * The ID of the VPC for the endpoint.
     */
   var VpcId: typings.awsSdk.clientsEc2Mod.VpcId
 }

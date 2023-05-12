@@ -11,6 +11,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with PlotSmaOptions {
   
   /**
+    * Not available
+    */
+  var dataParser: Unit
+  
+  /**
+    * Not available
+    */
+  var dataURL: Unit
+  
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
     * be used after render time to get a pointer to the series object through
     * `chart.get()`.
@@ -54,6 +64,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var `type`: String | sma
   
   /**
+    * Not available
+    */
+  var useOhlcData: Unit
+  
+  /**
     * (Highcharts, Highstock) When using dual or multiple x axes, this number
     * defines which xAxis the particular series is connected to. It refers to
     * either the axis id or the index of the axis in the xAxis array, with 0
@@ -71,14 +86,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object SeriesSmaOptions {
   
-  inline def apply(`type`: String | sma): SeriesSmaOptions = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(dataParser: Unit, dataURL: Unit, `type`: String | sma, useOhlcData: Unit): SeriesSmaOptions = {
+    val __obj = js.Dynamic.literal(dataParser = dataParser.asInstanceOf[js.Any], dataURL = dataURL.asInstanceOf[js.Any], useOhlcData = useOhlcData.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesSmaOptions]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: SeriesSmaOptions] (val x: Self) extends AnyVal {
+    
+    inline def setDataParser(value: Unit): Self = StObject.set(x, "dataParser", value.asInstanceOf[js.Any])
+    
+    inline def setDataURL(value: Unit): Self = StObject.set(x, "dataURL", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -103,6 +122,8 @@ object SeriesSmaOptions {
     inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     
     inline def setType(value: String | sma): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setUseOhlcData(value: Unit): Self = StObject.set(x, "useOhlcData", value.asInstanceOf[js.Any])
     
     inline def setXAxis(value: Double | String): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     

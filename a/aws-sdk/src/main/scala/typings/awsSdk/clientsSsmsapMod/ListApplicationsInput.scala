@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListApplicationsInput extends StObject {
   
   /**
-    * 
+    * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value. 
     */
   var MaxResults: js.UndefOr[typings.awsSdk.clientsSsmsapMod.MaxResults] = js.undefined
   
   /**
-    * 
+    * The token for the next page of results.
     */
   var NextToken: js.UndefOr[typings.awsSdk.clientsSsmsapMod.NextToken] = js.undefined
 }

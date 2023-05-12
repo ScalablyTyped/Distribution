@@ -1,6 +1,7 @@
 package typings.three
 
 import typings.three.anon.Func
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcThreeMod.BufferGeometry
 import typings.three.srcThreeMod.Vector3
 import org.scalablytyped.runtime.StObject
@@ -31,7 +32,7 @@ object examplesJsmGeometriesParametricGeometryMod {
   
   @JSImport("three/examples/jsm/geometries/ParametricGeometry", "ParametricGeometry")
   @js.native
-  open class ParametricGeometry () extends BufferGeometry {
+  open class ParametricGeometry () extends BufferGeometry[NormalBufferAttributes] {
     def this(func: js.Function3[/* u */ Double, /* v */ Double, /* target */ Vector3, Unit]) = this()
     def this(func: js.Function3[/* u */ Double, /* v */ Double, /* target */ Vector3, Unit], slices: Double) = this()
     def this(func: Unit, slices: Double) = this()
@@ -49,5 +50,11 @@ object examplesJsmGeometriesParametricGeometryMod {
     def this(func: Unit, slices: Unit, stacks: Double) = this()
     
     var parameters: Func = js.native
+    
+    /**
+      * @default 'ParametricGeometry'
+      */
+    @JSName("type")
+    var type_ParametricGeometry: String = js.native
   }
 }

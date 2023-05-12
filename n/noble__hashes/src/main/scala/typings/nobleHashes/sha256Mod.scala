@@ -9,6 +9,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object sha256Mod {
   
+  object sha224 {
+    
+    inline def apply(message: Input): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    
+    @JSImport("@noble/hashes/sha256", "sha224")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@noble/hashes/sha256", "sha224.blockLen")
+    @js.native
+    def blockLen: Double = js.native
+    inline def blockLen_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("blockLen")(x.asInstanceOf[js.Any])
+    
+    inline def create(): Hash[SHA256_] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Hash[SHA256_]]
+    
+    @JSImport("@noble/hashes/sha256", "sha224.outputLen")
+    @js.native
+    def outputLen: Double = js.native
+    inline def outputLen_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("outputLen")(x.asInstanceOf[js.Any])
+  }
+  
   object sha256 {
     
     inline def apply(message: Input): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
@@ -33,21 +54,21 @@ object sha256Mod {
   @js.native
   trait SHA256_ extends SHA2[SHA256_] {
     
-    /* private */ var A: Any = js.native
+    var A: Double = js.native
     
-    /* private */ var B: Any = js.native
+    var B: Double = js.native
     
-    /* private */ var C: Any = js.native
+    var C: Double = js.native
     
-    /* private */ var D: Any = js.native
+    var D: Double = js.native
     
-    /* private */ var E: Any = js.native
+    var E: Double = js.native
     
-    /* private */ var F: Any = js.native
+    var F: Double = js.native
     
-    /* private */ var G: Any = js.native
+    var G: Double = js.native
     
-    /* private */ var H: Any = js.native
+    var H: Double = js.native
     
     /* protected */ def set(A: Double, B: Double, C: Double, D: Double, E: Double, F: Double, G: Double, H: Double): Unit = js.native
   }

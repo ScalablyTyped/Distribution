@@ -136,8 +136,8 @@ object Plugins {
       * @param key The key of the plugin to get.
       * @param autoStart Automatically start a new instance of the plugin if found in the cache, but not actively running. Default true.
       */
-    def get(key: String): BasePlugin | js.Function = js.native
-    def get(key: String, autoStart: Boolean): BasePlugin | js.Function = js.native
+    def get(key: String): BasePlugin | js.Function | Null = js.native
+    def get(key: String, autoStart: Boolean): BasePlugin | js.Function | Null = js.native
     
     /**
       * Returns the plugin class from the cache.
@@ -188,14 +188,14 @@ object Plugins {
       * @param mapping If this plugin is injected into the Phaser.Scene class, this is the property key to use.
       * @param data A value passed to the plugin's `init` method.
       */
-    def install(key: String, plugin: js.Function): BasePlugin = js.native
-    def install(key: String, plugin: js.Function, start: Boolean): BasePlugin = js.native
-    def install(key: String, plugin: js.Function, start: Boolean, mapping: String): BasePlugin = js.native
-    def install(key: String, plugin: js.Function, start: Boolean, mapping: String, data: Any): BasePlugin = js.native
-    def install(key: String, plugin: js.Function, start: Boolean, mapping: Unit, data: Any): BasePlugin = js.native
-    def install(key: String, plugin: js.Function, start: Unit, mapping: String): BasePlugin = js.native
-    def install(key: String, plugin: js.Function, start: Unit, mapping: String, data: Any): BasePlugin = js.native
-    def install(key: String, plugin: js.Function, start: Unit, mapping: Unit, data: Any): BasePlugin = js.native
+    def install(key: String, plugin: js.Function): BasePlugin | Null = js.native
+    def install(key: String, plugin: js.Function, start: Boolean): BasePlugin | Null = js.native
+    def install(key: String, plugin: js.Function, start: Boolean, mapping: String): BasePlugin | Null = js.native
+    def install(key: String, plugin: js.Function, start: Boolean, mapping: String, data: Any): BasePlugin | Null = js.native
+    def install(key: String, plugin: js.Function, start: Boolean, mapping: Unit, data: Any): BasePlugin | Null = js.native
+    def install(key: String, plugin: js.Function, start: Unit, mapping: String): BasePlugin | Null = js.native
+    def install(key: String, plugin: js.Function, start: Unit, mapping: String, data: Any): BasePlugin | Null = js.native
+    def install(key: String, plugin: js.Function, start: Unit, mapping: Unit, data: Any): BasePlugin | Null = js.native
     
     /**
       * Installs a new Scene Plugin into the Plugin Manager and optionally adds it
@@ -359,8 +359,8 @@ object Plugins {
       * @param key The key of the plugin to start.
       * @param runAs Run the plugin under a new key. This allows you to run one plugin multiple times.
       */
-    def start(key: String): BasePlugin = js.native
-    def start(key: String, runAs: String): BasePlugin = js.native
+    def start(key: String): BasePlugin | Null = js.native
+    def start(key: String, runAs: String): BasePlugin | Null = js.native
     
     /**
       * Stops a global plugin from running.
@@ -432,7 +432,7 @@ object Plugins {
       * This property is only set when the plugin is instantiated and added to the Scene, not before.
       * You can use it during the `boot` method.
       */
-    /* protected */ var scene: Scene = js.native
+    /* protected */ var scene: Scene | Null = js.native
     
     /**
       * A reference to the Scene Systems of the Scene that has installed this plugin.
@@ -440,6 +440,6 @@ object Plugins {
       * This property is only set when the plugin is instantiated and added to the Scene, not before.
       * You can use it during the `boot` method.
       */
-    /* protected */ var systems: Systems = js.native
+    /* protected */ var systems: Systems | Null = js.native
   }
 }

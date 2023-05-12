@@ -11,7 +11,6 @@ object typesSrcCorePusherWithEncryptionMod {
   @js.native
   open class default protected ()
     extends typings.pusherJs.typesSrcCorePusherMod.default {
-    def this(app_key: String) = this()
     def this(app_key: String, options: Options) = this()
   }
   

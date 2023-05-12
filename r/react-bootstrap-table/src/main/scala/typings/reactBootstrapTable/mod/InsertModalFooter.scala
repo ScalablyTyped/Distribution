@@ -12,7 +12,7 @@ open class InsertModalFooter protected ()
   def this(props: InsertModalFooterProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: InsertModalFooterProps, context: Any) = this()
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for hafas-client
 
-Typings are for version 5.25
+Typings are for version 6.0
 
 ## Library description:
 Client for HAFAS public transport APIs.

@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Attach request; value of command field is 'attach'.
-		The attach request is sent from the client to the debug adapter to attach to a debuggee that is already running.
+		The `attach` request is sent from the client to the debug adapter to attach to a debuggee that is already running.
 		Since attaching is debugger/runtime specific, the arguments for this request are not part of this specification.
 	*/
 trait AttachRequest

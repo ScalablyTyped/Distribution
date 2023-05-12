@@ -10,6 +10,7 @@ import typings.azureMsalBrowser.distUtilsBrowserConstantsMod.InteractionType
 import typings.azureMsalCommon.distAccountAccountInfoMod.AccountInfo
 import typings.azureMsalCommon.distCryptoIcryptoMod.ICrypto
 import typings.azureMsalCommon.distRequestCommonAuthorizationCodeRequestMod.CommonAuthorizationCodeRequest
+import typings.azureMsalCommon.distUtilsConstantsMod.CredentialType
 import typings.azureMsalCommon.mod.AccessTokenEntity
 import typings.azureMsalCommon.mod.AccountEntity
 import typings.azureMsalCommon.mod.AppMetadataEntity
@@ -36,6 +37,19 @@ object distCacheBrowserCacheManagerMod {
     def this(clientId: String, cacheConfig: RequiredCacheOptions, cryptoImpl: ICrypto, logger: Logger) = this()
     
     /* protected */ val COOKIE_LIFE_MULTIPLIER: Double = js.native
+    
+    /**
+      * Add a new account to the key map
+      * @param key
+      */
+    def addAccountKeyToMap(key: String): Unit = js.native
+    
+    /**
+      * Adds the given key to the token key map
+      * @param key
+      * @param type
+      */
+    def addTokenKey(key: String, `type`: CredentialType): Unit = js.native
     
     /* protected */ var browserStorage: IWindowStorage[String] = js.native
     
@@ -66,6 +80,13 @@ object distCacheBrowserCacheManagerMod {
       * Clear all msal-related cookies currently set in the browser. Should only be used to clear temporary cache items.
       */
     def clearMsalCookies(): Unit = js.native
+    
+    /**
+      * Searches all cache entries for MSAL accounts and creates the account key map
+      * This is used to migrate users from older versions of MSAL which did not create the map.
+      * @returns
+      */
+    /* private */ var createKeyMaps: Any = js.native
     
     /**
       * Create authorityKey to cache authority
@@ -159,6 +180,11 @@ object distCacheBrowserCacheManagerMod {
     def getLegacyLoginHint(): String | Null = js.native
     
     /**
+      * Returns application id as redirect context during AcquireTokenRedirect flow.
+      */
+    def getRedirectRequestContext(): String | Null = js.native
+    
+    /**
       * Gets cache item with given key.
       * Will retrieve from cookies if storeAuthStateInCookie is set to true.
       * @param key
@@ -192,6 +218,19 @@ object distCacheBrowserCacheManagerMod {
       */
     /* protected */ def migrateCacheEntry(newKey: String): Unit = js.native
     /* protected */ def migrateCacheEntry(newKey: String, value: String): Unit = js.native
+    
+    /**
+      * Remove an account from the key map
+      * @param key
+      */
+    def removeAccountKeyFromMap(key: String): Unit = js.native
+    
+    /**
+      * Removes the given key from the token key map
+      * @param key
+      * @param type
+      */
+    def removeTokenKey(key: String, `type`: CredentialType): Unit = js.native
     
     /**
       * Reset all temporary cache items
@@ -261,6 +300,12 @@ object distCacheBrowserCacheManagerMod {
     def setItemCookie(cookieName: String, cookieValue: String, expires: Double): Unit = js.native
     
     /**
+      * Sets application id as the redirect context during AcquireTokenRedirect flow.
+      * @param value
+      */
+    def setRedirectRequestContext(value: String): Unit = js.native
+    
+    /**
       * set refreshToken credential to the platform cache
       * @param refreshToken
       */
@@ -304,12 +349,15 @@ object distCacheBrowserCacheManagerMod {
       */
     /* protected */ def setupBrowserStorage(cacheLocation: BrowserCacheLocation): IWindowStorage[String] = js.native
     
-    /* protected */ def setupTemporaryCacheStorage(cacheLocation: String): IWindowStorage[String] = js.native
+    /* protected */ def setupTemporaryCacheStorage(temporaryCacheLocation: String, cacheLocation: String): IWindowStorage[String] = js.native
+    /* protected */ def setupTemporaryCacheStorage(temporaryCacheLocation: String, cacheLocation: BrowserCacheLocation): IWindowStorage[String] = js.native
+    /* protected */ def setupTemporaryCacheStorage(temporaryCacheLocation: BrowserCacheLocation, cacheLocation: String): IWindowStorage[String] = js.native
     /**
-      *
+      * Returns a window storage class implementing the IWindowStorage interface that corresponds to the configured temporaryCacheLocation.
+      * @param temporaryCacheLocation
       * @param cacheLocation
       */
-    /* protected */ def setupTemporaryCacheStorage(cacheLocation: BrowserCacheLocation): IWindowStorage[String] = js.native
+    /* protected */ def setupTemporaryCacheStorage(temporaryCacheLocation: BrowserCacheLocation, cacheLocation: BrowserCacheLocation): IWindowStorage[String] = js.native
     
     /* protected */ var temporaryCacheStorage: IWindowStorage[String] = js.native
     

@@ -6,6 +6,7 @@ import typings.openui5.anon.Icon
 import typings.openui5.anon.Image
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapFLibraryMod.IShellBar
+import typings.openui5.sapMBarInPageEnablerMod.BarContexts
 import typings.openui5.sapMLibraryMod.IBar
 import typings.openui5.sapTntLibraryMod.IToolHeader
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
@@ -144,6 +145,7 @@ object sapFShellBarMod {
     
     /**
       * @SINCE 1.65
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Sets classes according to the context of the page. Possible contexts are header, footer, and subheader.
       *
@@ -153,6 +155,7 @@ object sapFShellBarMod {
     
     /**
       * @SINCE 1.65
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Sets the HTML tag according to the context of the page. Possible contexts are header, footer, and subheader.
       *
@@ -174,6 +177,7 @@ object sapFShellBarMod {
     
     /**
       * @SINCE 1.65
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Sets classes and HTML tag according to the context of the page. Possible contexts are header, footer,
       * and subheader
@@ -931,6 +935,8 @@ object sapFShellBarMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:avatarPressed avatarPressed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -942,6 +948,8 @@ object sapFShellBarMod {
     mParameters: Avatar): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:copilotPressed copilotPressed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -953,6 +961,8 @@ object sapFShellBarMod {
     mParameters: Image): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:homeIconPressed homeIconPressed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -964,6 +974,8 @@ object sapFShellBarMod {
     mParameters: Icon): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:menuButtonPressed menuButtonPressed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -975,6 +987,8 @@ object sapFShellBarMod {
     mParameters: Button): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:navButtonPressed navButtonPressed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -986,6 +1000,8 @@ object sapFShellBarMod {
     mParameters: Button): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:notificationsPressed notificationsPressed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -997,6 +1013,8 @@ object sapFShellBarMod {
     mParameters: Button): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:productSwitcherPressed productSwitcherPressed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1008,6 +1026,8 @@ object sapFShellBarMod {
     mParameters: Button): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:searchButtonPressed searchButtonPressed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1029,15 +1049,17 @@ object sapFShellBarMod {
     
     /**
       * @SINCE 1.65
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Gets the available Bar contexts.
       *
       * @returns with all available contexts
       */
-    def getContext(): js.Object = js.native
+    def getContext(): BarContexts = js.native
     
     /**
       * @SINCE 1.65
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Gets the HTML tag of the root DOM Reference.
       *
@@ -1227,6 +1249,7 @@ object sapFShellBarMod {
     
     /**
       * @SINCE 1.65
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Returns if the bar is sensitive to the container context. Implementation of the IBar interface
       *
@@ -1263,6 +1286,7 @@ object sapFShellBarMod {
     
     /**
       * @SINCE 1.65
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Sets the HTML tag of the root DOM Reference.
       *

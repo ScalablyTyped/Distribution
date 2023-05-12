@@ -114,10 +114,10 @@ object distSrcUtilsTransactionMod {
   
   inline def nextID(transaction: Transaction): ID = ^.asInstanceOf[js.Dynamic].applyDynamic("nextID")(transaction.asInstanceOf[js.Any]).asInstanceOf[ID]
   
-  inline def transact(doc: Doc, f: js.Function1[/* arg0 */ Transaction, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transact")(doc.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def transact(doc: Doc, f: js.Function1[/* arg0 */ Transaction, Unit], origin: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transact")(doc.asInstanceOf[js.Any], f.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def transact(doc: Doc, f: js.Function1[/* arg0 */ Transaction, Unit], origin: Any, local: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transact")(doc.asInstanceOf[js.Any], f.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def transact(doc: Doc, f: js.Function1[/* arg0 */ Transaction, Unit], origin: Unit, local: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transact")(doc.asInstanceOf[js.Any], f.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def transact[T](doc: Doc, f: js.Function1[/* arg0 */ Transaction, T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("transact")(doc.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def transact[T](doc: Doc, f: js.Function1[/* arg0 */ Transaction, T], origin: Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("transact")(doc.asInstanceOf[js.Any], f.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def transact[T](doc: Doc, f: js.Function1[/* arg0 */ Transaction, T], origin: Any, local: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("transact")(doc.asInstanceOf[js.Any], f.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def transact[T](doc: Doc, f: js.Function1[/* arg0 */ Transaction, T], origin: Unit, local: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("transact")(doc.asInstanceOf[js.Any], f.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def tryGc(ds: DeleteSet, store: StructStore, gcFilter: js.Function1[/* arg0 */ Item, Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("tryGc")(ds.asInstanceOf[js.Any], store.asInstanceOf[js.Any], gcFilter.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

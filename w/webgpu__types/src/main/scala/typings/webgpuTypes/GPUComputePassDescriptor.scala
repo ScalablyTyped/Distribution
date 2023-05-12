@@ -9,9 +9,9 @@ trait GPUComputePassDescriptor
      with GPUObjectDescriptorBase {
   
   /**
-    * A sequence of {@link GPUComputePassTimestampWrite} values define where and when timestamp values will be written for this pass.
+    * Defines which timestamp values will be written for this pass, and where to write them to.
     */
-  var timestampWrites: js.UndefOr[js.Iterable[GPUComputePassTimestampWrite]] = js.undefined
+  var timestampWrites: js.UndefOr[GPUComputePassTimestampWrites] = js.undefined
 }
 object GPUComputePassDescriptor {
   
@@ -23,7 +23,7 @@ object GPUComputePassDescriptor {
   @scala.inline
   implicit open class MutableBuilder[Self <: GPUComputePassDescriptor] (val x: Self) extends AnyVal {
     
-    inline def setTimestampWrites(value: js.Iterable[GPUComputePassTimestampWrite]): Self = StObject.set(x, "timestampWrites", value.asInstanceOf[js.Any])
+    inline def setTimestampWrites(value: GPUComputePassTimestampWrites): Self = StObject.set(x, "timestampWrites", value.asInstanceOf[js.Any])
     
     inline def setTimestampWritesUndefined: Self = StObject.set(x, "timestampWrites", js.undefined)
   }

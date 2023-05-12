@@ -8,14 +8,17 @@ import typings.algoliaClientSearch.algoliaClientSearchStrings.exactPhrase
 import typings.algoliaClientSearch.algoliaClientSearchStrings.excludeWords
 import typings.algoliaClientSearch.algoliaClientSearchStrings.firstWords
 import typings.algoliaClientSearch.algoliaClientSearchStrings.ignorePlurals
+import typings.algoliaClientSearch.algoliaClientSearchStrings.keywordSearch
 import typings.algoliaClientSearch.algoliaClientSearchStrings.lastWords
 import typings.algoliaClientSearch.algoliaClientSearchStrings.multiWordsSynonym
+import typings.algoliaClientSearch.algoliaClientSearchStrings.neuralSearch
 import typings.algoliaClientSearch.algoliaClientSearchStrings.none
 import typings.algoliaClientSearch.algoliaClientSearchStrings.prefixAll
 import typings.algoliaClientSearch.algoliaClientSearchStrings.prefixLast
 import typings.algoliaClientSearch.algoliaClientSearchStrings.prefixNone
 import typings.algoliaClientSearch.algoliaClientSearchStrings.singleWordSynonym
 import typings.algoliaClientSearch.algoliaClientSearchStrings.word
+import typings.algoliaClientSearch.anon.EventSources
 import typings.algoliaClientSearch.anon.FacetOrdering
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -227,6 +230,11 @@ trait Settings extends StObject {
   val minWordSizefor2Typos: js.UndefOr[Double] = js.undefined
   
   /**
+    * The search mode that the index will use to query for results.
+    */
+  val mode: js.UndefOr[neuralSearch | keywordSearch] = js.undefined
+  
+  /**
     * List of numeric attributes that can be used as numerical filters.
     */
   val numericAttributesForFiltering: js.UndefOr[js.Array[String]] = js.undefined
@@ -315,6 +323,12 @@ trait Settings extends StObject {
     * The complete list of attributes that will be used for searching.
     */
   val searchableAttributes: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /**
+    * The settings relevant for configuration of the semantic search engine.
+    * These settings are only used when the mode is set to 'neuralSearch'.
+    */
+  val semanticSearch: js.UndefOr[EventSources] = js.undefined
   
   /**
     * Control which separators are indexed.
@@ -545,6 +559,10 @@ object Settings {
     
     inline def setMinWordSizefor2TyposUndefined: Self = StObject.set(x, "minWordSizefor2Typos", js.undefined)
     
+    inline def setMode(value: neuralSearch | keywordSearch): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
     inline def setNumericAttributesForFiltering(value: js.Array[String]): Self = StObject.set(x, "numericAttributesForFiltering", value.asInstanceOf[js.Any])
     
     inline def setNumericAttributesForFilteringUndefined: Self = StObject.set(x, "numericAttributesForFiltering", js.undefined)
@@ -632,6 +650,10 @@ object Settings {
     inline def setSearchableAttributesUndefined: Self = StObject.set(x, "searchableAttributes", js.undefined)
     
     inline def setSearchableAttributesVarargs(value: String*): Self = StObject.set(x, "searchableAttributes", js.Array(value*))
+    
+    inline def setSemanticSearch(value: EventSources): Self = StObject.set(x, "semanticSearch", value.asInstanceOf[js.Any])
+    
+    inline def setSemanticSearchUndefined: Self = StObject.set(x, "semanticSearch", js.undefined)
     
     inline def setSeparatorsToIndex(value: String): Self = StObject.set(x, "separatorsToIndex", value.asInstanceOf[js.Any])
     

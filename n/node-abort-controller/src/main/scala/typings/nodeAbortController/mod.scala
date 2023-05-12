@@ -14,6 +14,7 @@ object mod {
   open class AbortController () extends StObject {
     
     def abort(): Unit = js.native
+    def abort(reason: Any): Unit = js.native
     
     var signal: AbortSignal = js.native
   }
@@ -43,6 +44,8 @@ object mod {
     
     var onabort: Null | (js.ThisFunction1[/* this */ this.type, /* event */ Any, Unit]) = js.native
     
+    var reason: js.UndefOr[Any] = js.native
+    
     @JSName("removeEventListener")
     def removeEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* event */ Any, Any]): Unit = js.native
     @JSName("removeEventListener")
@@ -57,5 +60,19 @@ object mod {
       listener: js.ThisFunction1[/* this */ this.type, /* event */ Any, Any],
       options: `0`
     ): Unit = js.native
+    
+    def throwIfAborted(): Unit = js.native
+  }
+  /* static members */
+  object AbortSignal {
+    
+    @JSImport("node-abort-controller", "AbortSignal")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def abort(): AbortSignal = ^.asInstanceOf[js.Dynamic].applyDynamic("abort")().asInstanceOf[AbortSignal]
+    inline def abort(reason: Any): AbortSignal = ^.asInstanceOf[js.Dynamic].applyDynamic("abort")(reason.asInstanceOf[js.Any]).asInstanceOf[AbortSignal]
+    
+    inline def timeout(time: Double): AbortSignal = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(time.asInstanceOf[js.Any]).asInstanceOf[AbortSignal]
   }
 }

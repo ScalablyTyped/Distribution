@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-dropdown
 
-Typings are for version 4.0.1
+Typings are for version 4.1.0
 
 ## Library description:
 dropdown ui component for react

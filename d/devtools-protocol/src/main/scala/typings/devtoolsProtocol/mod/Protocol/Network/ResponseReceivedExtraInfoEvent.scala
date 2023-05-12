@@ -15,6 +15,17 @@ trait ResponseReceivedExtraInfoEvent extends StObject {
   var blockedCookies: js.Array[BlockedSetCookieWithReason]
   
   /**
+    * The cookie partition key that will be used to store partitioned cookies set in this response.
+    * Only sent when partitioned cookies are enabled.
+    */
+  var cookiePartitionKey: js.UndefOr[String] = js.undefined
+  
+  /**
+    * True if partitioned cookies are enabled, but the partition key is not serializeable to string.
+    */
+  var cookiePartitionKeyOpaque: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Raw response headers as they were received over the wire.
     */
   var headers: Headers
@@ -62,6 +73,14 @@ object ResponseReceivedExtraInfoEvent {
     inline def setBlockedCookies(value: js.Array[BlockedSetCookieWithReason]): Self = StObject.set(x, "blockedCookies", value.asInstanceOf[js.Any])
     
     inline def setBlockedCookiesVarargs(value: BlockedSetCookieWithReason*): Self = StObject.set(x, "blockedCookies", js.Array(value*))
+    
+    inline def setCookiePartitionKey(value: String): Self = StObject.set(x, "cookiePartitionKey", value.asInstanceOf[js.Any])
+    
+    inline def setCookiePartitionKeyOpaque(value: Boolean): Self = StObject.set(x, "cookiePartitionKeyOpaque", value.asInstanceOf[js.Any])
+    
+    inline def setCookiePartitionKeyOpaqueUndefined: Self = StObject.set(x, "cookiePartitionKeyOpaque", js.undefined)
+    
+    inline def setCookiePartitionKeyUndefined: Self = StObject.set(x, "cookiePartitionKey", js.undefined)
     
     inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

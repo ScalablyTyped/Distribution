@@ -1,18 +1,25 @@
 package typings.rcPicker
 
+import typings.rcComponentTrigger.esInterfaceMod.AlignType
 import typings.rcPicker.esGenerateMod.GenerateConfig
+import typings.rcPicker.esInterfaceMod.CellRender
+import typings.rcPicker.esInterfaceMod.CellRenderInfo
 import typings.rcPicker.esInterfaceMod.Components
 import typings.rcPicker.esInterfaceMod.CustomFormat
 import typings.rcPicker.esInterfaceMod.DisabledTimes
 import typings.rcPicker.esInterfaceMod.EventValue
+import typings.rcPicker.esInterfaceMod.IntRange
 import typings.rcPicker.esInterfaceMod.Locale
 import typings.rcPicker.esInterfaceMod.PanelMode
 import typings.rcPicker.esInterfaceMod.PickerMode
+import typings.rcPicker.esInterfaceMod.PresetDate
 import typings.rcPicker.esInterfaceMod.RangeValue
 import typings.rcPicker.esPanelsMonthPanelMonthBodyMod.MonthCellRender
 import typings.rcPicker.esPickerMod.PickerRefConfig
 import typings.rcPicker.rcPickerInts.`0`
 import typings.rcPicker.rcPickerInts.`1`
+import typings.rcPicker.rcPickerInts.`23`
+import typings.rcPicker.rcPickerInts.`59`
 import typings.rcPicker.rcPickerStrings.`additions removals`
 import typings.rcPicker.rcPickerStrings.`additions text`
 import typings.rcPicker.rcPickerStrings.`inline`
@@ -25,9 +32,9 @@ import typings.rcPicker.rcPickerStrings.all
 import typings.rcPicker.rcPickerStrings.ascending
 import typings.rcPicker.rcPickerStrings.assertive
 import typings.rcPicker.rcPickerStrings.both
+import typings.rcPicker.rcPickerStrings.cellRender
 import typings.rcPicker.rcPickerStrings.copy
 import typings.rcPicker.rcPickerStrings.date
-import typings.rcPicker.rcPickerStrings.dateRender
 import typings.rcPicker.rcPickerStrings.defaultPickerValue
 import typings.rcPicker.rcPickerStrings.defaultValue
 import typings.rcPicker.rcPickerStrings.descending
@@ -60,6 +67,7 @@ import typings.rcPicker.rcPickerStrings.pickerValue
 import typings.rcPicker.rcPickerStrings.placeholder
 import typings.rcPicker.rcPickerStrings.polite
 import typings.rcPicker.rcPickerStrings.popup
+import typings.rcPicker.rcPickerStrings.presets
 import typings.rcPicker.rcPickerStrings.removals
 import typings.rcPicker.rcPickerStrings.rtl
 import typings.rcPicker.rcPickerStrings.showTime
@@ -71,7 +79,6 @@ import typings.rcPicker.rcPickerStrings.time
 import typings.rcPicker.rcPickerStrings.tree
 import typings.rcPicker.rcPickerStrings.value
 import typings.rcPicker.rcPickerStrings.vertical
-import typings.rcTrigger.esInterfaceMod.AlignType
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
@@ -104,7 +111,7 @@ object esRangePickerMod {
   
   type OmitPickerProps[Props] = Omit[
     Props, 
-    value | defaultValue | defaultPickerValue | placeholder | disabled | disabledTime | showToday | showTime | mode | onChange | onSelect | onPanelChange | pickerValue | onPickerValueChange | onOk | dateRender
+    value | defaultValue | defaultPickerValue | placeholder | disabled | disabledTime | showToday | showTime | mode | onChange | onSelect | onPanelChange | pickerValue | onPickerValueChange | onOk | cellRender | presets
   ]
   
   type RangeDateRender[DateType] = js.Function3[/* currentDate */ DateType, /* today */ DateType, /* info */ RangeInfo, ReactNode]
@@ -252,12 +259,21 @@ object esRangePickerMod {
     
     var autoFocus: js.UndefOr[Boolean] = js.undefined
     
+    var cellRender: js.UndefOr[CellRender[DateType, DateType]] = js.undefined
+    
+    /**
+      * Trigger `onChange` event when blur.
+      * If you don't want to user click `confirm` to trigger change, can use this.
+      */
+    var changeOnBlur: js.UndefOr[Boolean] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var clearIcon: js.UndefOr[ReactNode] = js.undefined
     
     var components: js.UndefOr[Components] = js.undefined
     
+    /** @deprecated use cellRender instead of dateRender */
     var dateRender: js.UndefOr[RangeDateRender[DateType]] = js.undefined
     
     var defaultOpen: js.UndefOr[Boolean] = js.undefined
@@ -365,8 +381,11 @@ object esRangePickerMod {
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
+    var presets: js.UndefOr[js.Array[PresetDate[Exclude[RangeValue[DateType], Null]]]] = js.undefined
+    
     var prevIcon: js.UndefOr[ReactNode] = js.undefined
     
+    /** @deprecated Please use `presets` instead */
     var ranges: js.UndefOr[
         Record[
           String, 
@@ -618,6 +637,14 @@ object esRangePickerMod {
       
       inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
+      inline def setCellRender(value: (DateType, /* info */ CellRenderInfo[DateType]) => ReactNode): Self = StObject.set(x, "cellRender", js.Any.fromFunction2(value))
+      
+      inline def setCellRenderUndefined: Self = StObject.set(x, "cellRender", js.undefined)
+      
+      inline def setChangeOnBlur(value: Boolean): Self = StObject.set(x, "changeOnBlur", value.asInstanceOf[js.Any])
+      
+      inline def setChangeOnBlurUndefined: Self = StObject.set(x, "changeOnBlur", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
@@ -802,6 +829,12 @@ object esRangePickerMod {
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
+      inline def setPresets(value: js.Array[PresetDate[Exclude[RangeValue[DateType], Null]]]): Self = StObject.set(x, "presets", value.asInstanceOf[js.Any])
+      
+      inline def setPresetsUndefined: Self = StObject.set(x, "presets", js.undefined)
+      
+      inline def setPresetsVarargs(value: (PresetDate[Exclude[RangeValue[DateType], Null]])*): Self = StObject.set(x, "presets", js.Array(value*))
+      
       inline def setPrevIcon(value: ReactNode): Self = StObject.set(x, "prevIcon", value.asInstanceOf[js.Any])
       
       inline def setPrevIconUndefined: Self = StObject.set(x, "prevIcon", js.undefined)
@@ -973,12 +1006,21 @@ object esRangePickerMod {
     
     var autoFocus: js.UndefOr[Boolean] = js.undefined
     
+    var cellRender: js.UndefOr[CellRender[DateType, DateType]] = js.undefined
+    
+    /**
+      * Trigger `onChange` event when blur.
+      * If you don't want to user click `confirm` to trigger change, can use this.
+      */
+    var changeOnBlur: js.UndefOr[Boolean] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var clearIcon: js.UndefOr[ReactNode] = js.undefined
     
     var components: js.UndefOr[Components] = js.undefined
     
+    /** @deprecated use cellRender instead of dateRender */
     var dateRender: js.UndefOr[RangeDateRender[DateType]] = js.undefined
     
     var defaultOpen: js.UndefOr[Boolean] = js.undefined
@@ -1086,8 +1128,11 @@ object esRangePickerMod {
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
+    var presets: js.UndefOr[js.Array[PresetDate[Exclude[RangeValue[DateType], Null]]]] = js.undefined
+    
     var prevIcon: js.UndefOr[ReactNode] = js.undefined
     
+    /** @deprecated Please use `presets` instead */
     var ranges: js.UndefOr[
         Record[
           String, 
@@ -1343,6 +1388,14 @@ object esRangePickerMod {
       
       inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
+      inline def setCellRender(value: (DateType, /* info */ CellRenderInfo[DateType]) => ReactNode): Self = StObject.set(x, "cellRender", js.Any.fromFunction2(value))
+      
+      inline def setCellRenderUndefined: Self = StObject.set(x, "cellRender", js.undefined)
+      
+      inline def setChangeOnBlur(value: Boolean): Self = StObject.set(x, "changeOnBlur", value.asInstanceOf[js.Any])
+      
+      inline def setChangeOnBlurUndefined: Self = StObject.set(x, "changeOnBlur", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
@@ -1529,6 +1582,12 @@ object esRangePickerMod {
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
+      inline def setPresets(value: js.Array[PresetDate[Exclude[RangeValue[DateType], Null]]]): Self = StObject.set(x, "presets", value.asInstanceOf[js.Any])
+      
+      inline def setPresetsUndefined: Self = StObject.set(x, "presets", js.undefined)
+      
+      inline def setPresetsVarargs(value: (PresetDate[Exclude[RangeValue[DateType], Null]])*): Self = StObject.set(x, "presets", js.Array(value*))
+      
       inline def setPrevIcon(value: ReactNode): Self = StObject.set(x, "prevIcon", value.asInstanceOf[js.Any])
       
       inline def setPrevIconUndefined: Self = StObject.set(x, "prevIcon", js.undefined)
@@ -1627,6 +1686,15 @@ object esRangePickerMod {
     
     var autoComplete: js.UndefOr[String] = js.undefined
     
+    var cellRender: js.UndefOr[CellRender[DateType, DateType]] = js.undefined
+    
+    /**
+      * Trigger `onChange` event when blur.
+      * If you don't want to user click `confirm` to trigger change, can use this.
+      */
+    var changeOnBlur: js.UndefOr[Boolean] = js.undefined
+    
+    /** @deprecated use cellRender instead of dateRender */
     var dateRender: js.UndefOr[RangeDateRender[DateType]] = js.undefined
     
     var defaultPickerValue: js.UndefOr[js.Tuple2[DateType, DateType]] = js.undefined
@@ -1686,6 +1754,9 @@ object esRangePickerMod {
     
     var placeholder: js.UndefOr[js.Tuple2[String, String]] = js.undefined
     
+    var presets: js.UndefOr[js.Array[PresetDate[Exclude[RangeValue[DateType], Null]]]] = js.undefined
+    
+    /** @deprecated Please use `presets` instead */
     var ranges: js.UndefOr[
         Record[
           String, 
@@ -1718,6 +1789,14 @@ object esRangePickerMod {
       inline def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
       
       inline def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
+      
+      inline def setCellRender(value: (DateType, /* info */ CellRenderInfo[DateType]) => ReactNode): Self = StObject.set(x, "cellRender", js.Any.fromFunction2(value))
+      
+      inline def setCellRenderUndefined: Self = StObject.set(x, "cellRender", js.undefined)
+      
+      inline def setChangeOnBlur(value: Boolean): Self = StObject.set(x, "changeOnBlur", value.asInstanceOf[js.Any])
+      
+      inline def setChangeOnBlurUndefined: Self = StObject.set(x, "changeOnBlur", js.undefined)
       
       inline def setDateRender(value: (DateType, DateType, /* info */ RangeInfo) => ReactNode): Self = StObject.set(x, "dateRender", js.Any.fromFunction3(value))
       
@@ -1806,6 +1885,12 @@ object esRangePickerMod {
       inline def setPlaceholder(value: js.Tuple2[String, String]): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      
+      inline def setPresets(value: js.Array[PresetDate[Exclude[RangeValue[DateType], Null]]]): Self = StObject.set(x, "presets", value.asInstanceOf[js.Any])
+      
+      inline def setPresetsUndefined: Self = StObject.set(x, "presets", js.undefined)
+      
+      inline def setPresetsVarargs(value: (PresetDate[Exclude[RangeValue[DateType], Null]])*): Self = StObject.set(x, "presets", js.Array(value*))
       
       inline def setRanges(
         value: Record[
@@ -1942,12 +2027,21 @@ object esRangePickerMod {
     
     var autoFocus: js.UndefOr[Boolean] = js.undefined
     
+    var cellRender: js.UndefOr[CellRender[DateType, DateType]] = js.undefined
+    
+    /**
+      * Trigger `onChange` event when blur.
+      * If you don't want to user click `confirm` to trigger change, can use this.
+      */
+    var changeOnBlur: js.UndefOr[Boolean] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var clearIcon: js.UndefOr[ReactNode] = js.undefined
     
     var components: js.UndefOr[Components] = js.undefined
     
+    /** @deprecated use cellRender instead of dateRender */
     var dateRender: js.UndefOr[RangeDateRender[DateType]] = js.undefined
     
     var defaultOpen: js.UndefOr[Boolean] = js.undefined
@@ -1986,7 +2080,7 @@ object esRangePickerMod {
     
     var hideDisabledOptions: js.UndefOr[Boolean] = js.undefined
     
-    var hourStep: js.UndefOr[Double] = js.undefined
+    var hourStep: js.UndefOr[IntRange[`1`, `23`]] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
@@ -1996,7 +2090,7 @@ object esRangePickerMod {
     
     var locale: Locale
     
-    var minuteStep: js.UndefOr[Double] = js.undefined
+    var minuteStep: js.UndefOr[IntRange[`1`, `59`]] = js.undefined
     
     var mode: js.UndefOr[js.Tuple2[PanelMode, PanelMode]] = js.undefined
     
@@ -2071,8 +2165,11 @@ object esRangePickerMod {
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
+    var presets: js.UndefOr[js.Array[PresetDate[Exclude[RangeValue[DateType], Null]]]] = js.undefined
+    
     var prevIcon: js.UndefOr[ReactNode] = js.undefined
     
+    /** @deprecated Please use `presets` instead */
     var ranges: js.UndefOr[
         Record[
           String, 
@@ -2084,7 +2181,7 @@ object esRangePickerMod {
     
     var role: js.UndefOr[String] = js.undefined
     
-    var secondStep: js.UndefOr[Double] = js.undefined
+    var secondStep: js.UndefOr[IntRange[`1`, `59`]] = js.undefined
     
     var separator: js.UndefOr[ReactNode] = js.undefined
     
@@ -2336,6 +2433,14 @@ object esRangePickerMod {
       
       inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
+      inline def setCellRender(value: (DateType, /* info */ CellRenderInfo[DateType]) => ReactNode): Self = StObject.set(x, "cellRender", js.Any.fromFunction2(value))
+      
+      inline def setCellRenderUndefined: Self = StObject.set(x, "cellRender", js.undefined)
+      
+      inline def setChangeOnBlur(value: Boolean): Self = StObject.set(x, "changeOnBlur", value.asInstanceOf[js.Any])
+      
+      inline def setChangeOnBlurUndefined: Self = StObject.set(x, "changeOnBlur", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
@@ -2424,7 +2529,7 @@ object esRangePickerMod {
       
       inline def setHideDisabledOptionsUndefined: Self = StObject.set(x, "hideDisabledOptions", js.undefined)
       
-      inline def setHourStep(value: Double): Self = StObject.set(x, "hourStep", value.asInstanceOf[js.Any])
+      inline def setHourStep(value: IntRange[`1`, `23`]): Self = StObject.set(x, "hourStep", value.asInstanceOf[js.Any])
       
       inline def setHourStepUndefined: Self = StObject.set(x, "hourStep", js.undefined)
       
@@ -2442,7 +2547,7 @@ object esRangePickerMod {
       
       inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      inline def setMinuteStep(value: Double): Self = StObject.set(x, "minuteStep", value.asInstanceOf[js.Any])
+      inline def setMinuteStep(value: IntRange[`1`, `59`]): Self = StObject.set(x, "minuteStep", value.asInstanceOf[js.Any])
       
       inline def setMinuteStepUndefined: Self = StObject.set(x, "minuteStep", js.undefined)
       
@@ -2552,6 +2657,12 @@ object esRangePickerMod {
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
+      inline def setPresets(value: js.Array[PresetDate[Exclude[RangeValue[DateType], Null]]]): Self = StObject.set(x, "presets", value.asInstanceOf[js.Any])
+      
+      inline def setPresetsUndefined: Self = StObject.set(x, "presets", js.undefined)
+      
+      inline def setPresetsVarargs(value: (PresetDate[Exclude[RangeValue[DateType], Null]])*): Self = StObject.set(x, "presets", js.Array(value*))
+      
       inline def setPrevIcon(value: ReactNode): Self = StObject.set(x, "prevIcon", value.asInstanceOf[js.Any])
       
       inline def setPrevIconUndefined: Self = StObject.set(x, "prevIcon", js.undefined)
@@ -2573,7 +2684,7 @@ object esRangePickerMod {
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
-      inline def setSecondStep(value: Double): Self = StObject.set(x, "secondStep", value.asInstanceOf[js.Any])
+      inline def setSecondStep(value: IntRange[`1`, `59`]): Self = StObject.set(x, "secondStep", value.asInstanceOf[js.Any])
       
       inline def setSecondStepUndefined: Self = StObject.set(x, "secondStep", js.undefined)
       
@@ -2650,11 +2761,11 @@ object esRangePickerMod {
     
     var hideDisabledOptions: js.UndefOr[Boolean] = js.undefined
     
-    var hourStep: js.UndefOr[Double] = js.undefined
+    var hourStep: js.UndefOr[IntRange[`1`, `23`]] = js.undefined
     
-    var minuteStep: js.UndefOr[Double] = js.undefined
+    var minuteStep: js.UndefOr[IntRange[`1`, `59`]] = js.undefined
     
-    var secondStep: js.UndefOr[Double] = js.undefined
+    var secondStep: js.UndefOr[IntRange[`1`, `59`]] = js.undefined
     
     var showHour: js.UndefOr[Boolean] = js.undefined
     
@@ -2706,15 +2817,15 @@ object esRangePickerMod {
       
       inline def setHideDisabledOptionsUndefined: Self = StObject.set(x, "hideDisabledOptions", js.undefined)
       
-      inline def setHourStep(value: Double): Self = StObject.set(x, "hourStep", value.asInstanceOf[js.Any])
+      inline def setHourStep(value: IntRange[`1`, `23`]): Self = StObject.set(x, "hourStep", value.asInstanceOf[js.Any])
       
       inline def setHourStepUndefined: Self = StObject.set(x, "hourStep", js.undefined)
       
-      inline def setMinuteStep(value: Double): Self = StObject.set(x, "minuteStep", value.asInstanceOf[js.Any])
+      inline def setMinuteStep(value: IntRange[`1`, `59`]): Self = StObject.set(x, "minuteStep", value.asInstanceOf[js.Any])
       
       inline def setMinuteStepUndefined: Self = StObject.set(x, "minuteStep", js.undefined)
       
-      inline def setSecondStep(value: Double): Self = StObject.set(x, "secondStep", value.asInstanceOf[js.Any])
+      inline def setSecondStep(value: IntRange[`1`, `59`]): Self = StObject.set(x, "secondStep", value.asInstanceOf[js.Any])
       
       inline def setSecondStepUndefined: Self = StObject.set(x, "secondStep", js.undefined)
       

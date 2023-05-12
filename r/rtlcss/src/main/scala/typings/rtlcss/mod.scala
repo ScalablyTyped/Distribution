@@ -2,7 +2,6 @@ package typings.rtlcss
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.postcss.libProcessorMod.default
 import typings.postcss.mod.PluginCreator
 import typings.postcss.mod.Postcss
 import typings.postcss.mod.Root_
@@ -172,7 +171,7 @@ object mod extends Shortcut {
       * @param config  An object containing RTLCSS options, plugins and hooks.
       * @returns A new RTLCSS instance.
       */
-    def configure(config: ConfigureOptions): default = js.native
+    def configure(config: ConfigureOptions): typings.postcss.libProcessorMod.^ = js.native
     
     /**
       * Creates a new RTLCSS instance, process the input and return its result.

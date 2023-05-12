@@ -14,7 +14,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#region Constructors
 /**
   * Creates a new GridLayout object.
-  * @constructor
   * @param options The set of properties and values to apply to the new GridLayout.
   **/
 open class GridLayout ()

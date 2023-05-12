@@ -1,5 +1,6 @@
 package typings.findMyWay
 
+import typings.findMyWay.mod.HTTPMethod
 import typings.findMyWay.mod.HTTPVersion
 import typings.findMyWay.mod.Handler
 import org.scalablytyped.runtime.StObject
@@ -13,6 +14,8 @@ object anon {
     var commonPrefix: js.UndefOr[Boolean] = js.undefined
     
     var includeMeta: js.UndefOr[Boolean | (js.Array[String | js.Symbol])] = js.undefined
+    
+    var method: js.UndefOr[HTTPMethod] = js.undefined
   }
   object CommonPrefix {
     
@@ -33,6 +36,10 @@ object anon {
       inline def setIncludeMetaUndefined: Self = StObject.set(x, "includeMeta", js.undefined)
       
       inline def setIncludeMetaVarargs(value: (String | js.Symbol)*): Self = StObject.set(x, "includeMeta", js.Array(value*))
+      
+      inline def setMethod(value: HTTPMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     }
   }
   

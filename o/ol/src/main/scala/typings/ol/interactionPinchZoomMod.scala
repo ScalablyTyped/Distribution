@@ -6,14 +6,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object interactionPinchZoomMod {
   
+  /**
+    * @typedef {Object} Options
+    * @property {number} [duration=400] Animation duration in milliseconds.
+    */
+  /**
+    * @classdesc
+    * Allows the user to zoom the map by pinching with two fingers
+    * on a touch screen.
+    * @api
+    */
   @JSImport("ol/interaction/PinchZoom", JSImport.Default)
   @js.native
+  /**
+    * @param {Options} [options] Options.
+    */
   open class default () extends PinchZoom {
-    def this(opt_options: Options) = this()
+    def this(options: Options) = this()
   }
   
   trait Options extends StObject {
     
+    /**
+      * Animation duration in milliseconds.
+      */
     var duration: js.UndefOr[Double] = js.undefined
   }
   object Options {
@@ -32,7 +48,42 @@ object interactionPinchZoomMod {
     }
   }
   
+  /**
+    * @typedef {Object} Options
+    * @property {number} [duration=400] Animation duration in milliseconds.
+    */
+  /**
+    * @classdesc
+    * Allows the user to zoom the map by pinching with two fingers
+    * on a touch screen.
+    * @api
+    */
   @js.native
   trait PinchZoom
-    extends typings.ol.interactionPointerMod.default
+    extends typings.ol.interactionPointerMod.default {
+    
+    /**
+      * @private
+      * @type {import("../coordinate.js").Coordinate}
+      */
+    /* private */ var anchor_ : Any = js.native
+    
+    /**
+      * @private
+      * @type {number}
+      */
+    /* private */ var duration_ : Any = js.native
+    
+    /**
+      * @private
+      * @type {number|undefined}
+      */
+    /* private */ var lastDistance_ : Any = js.native
+    
+    /**
+      * @private
+      * @type {number}
+      */
+    /* private */ var lastScaleDelta_ : Any = js.native
+  }
 }

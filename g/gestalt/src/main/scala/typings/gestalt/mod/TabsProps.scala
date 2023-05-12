@@ -1,11 +1,15 @@
 package typings.gestalt.mod
 
 import typings.gestalt.anon.ActiveTabIndex
+import typings.gestalt.anon.Event
 import typings.gestalt.anon.Id
 import typings.gestalt.gestaltStrings.default
-import typings.gestalt.gestaltStrings.lg
-import typings.gestalt.gestaltStrings.md
 import typings.gestalt.gestaltStrings.transparent
+import typings.react.mod.KeyboardEvent
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
+import typings.std.HTMLAnchorElement
+import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +20,10 @@ trait TabsProps extends StObject {
   
   var bgColor: js.UndefOr[default | transparent] = js.undefined
   
-  def onChange(args: ActiveTabIndex): Unit
-  
-  var size: js.UndefOr[md | lg] = js.undefined
+  var onChange: AbstractEventHandler[
+    (MouseEvent[HTMLAnchorElement | HTMLDivElement, NativeMouseEvent]) | (KeyboardEvent[HTMLAnchorElement | HTMLDivElement]), 
+    ActiveTabIndex
+  ]
   
   var tabs: js.Array[Id]
   
@@ -26,7 +31,13 @@ trait TabsProps extends StObject {
 }
 object TabsProps {
   
-  inline def apply(activeTabIndex: Double, onChange: ActiveTabIndex => Unit, tabs: js.Array[Id]): TabsProps = {
+  inline def apply(
+    activeTabIndex: Double,
+    onChange: /* arg */ ActiveTabIndex & (Event[
+      (MouseEvent[HTMLAnchorElement | HTMLDivElement, NativeMouseEvent]) | (KeyboardEvent[HTMLAnchorElement | HTMLDivElement])
+    ]) => Unit,
+    tabs: js.Array[Id]
+  ): TabsProps = {
     val __obj = js.Dynamic.literal(activeTabIndex = activeTabIndex.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), tabs = tabs.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabsProps]
   }
@@ -40,11 +51,11 @@ object TabsProps {
     
     inline def setBgColorUndefined: Self = StObject.set(x, "bgColor", js.undefined)
     
-    inline def setOnChange(value: ActiveTabIndex => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
-    
-    inline def setSize(value: md | lg): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-    
-    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setOnChange(
+      value: /* arg */ ActiveTabIndex & (Event[
+          (MouseEvent[HTMLAnchorElement | HTMLDivElement, NativeMouseEvent]) | (KeyboardEvent[HTMLAnchorElement | HTMLDivElement])
+        ]) => Unit
+    ): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     inline def setTabs(value: js.Array[Id]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
     

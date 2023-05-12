@@ -12,7 +12,7 @@ trait MySQLSettings extends StObject {
   var AfterConnectScript: js.UndefOr[String] = js.undefined
   
   /**
-    * Adjusts the behavior of DMS when migrating from an SQL Server source database that is hosted as part of an Always On availability group cluster. If you need DMS to poll all the nodes in the Always On cluster for transaction backups, set this attribute to false.
+    * Cleans and recreates table metadata information on the replication instance when a mismatch occurs. For example, in a situation where running an alter DDL on the table could result in different information about the table cached in the replication instance. 
     */
   var CleanSourceMetadataOnMismatch: js.UndefOr[BooleanOptional] = js.undefined
   
@@ -57,7 +57,7 @@ trait MySQLSettings extends StObject {
   var SecretsManagerSecretId: js.UndefOr[String] = js.undefined
   
   /**
-    * Fully qualified domain name of the endpoint.
+    * The host name of the endpoint database.  For an Amazon RDS MySQL instance, this is the output of DescribeDBInstances, in the  Endpoint.Address field. For an Aurora MySQL instance, this is the output of DescribeDBClusters, in the Endpoint field.
     */
   var ServerName: js.UndefOr[String] = js.undefined
   

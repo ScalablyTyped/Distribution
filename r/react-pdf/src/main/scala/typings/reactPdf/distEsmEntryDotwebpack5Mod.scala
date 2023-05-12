@@ -5,17 +5,18 @@ import typings.pdfjsDist.anon.Name
 import typings.pdfjsDist.anon.Rotation
 import typings.pdfjsDist.anon.TextDivs
 import typings.pdfjsDist.typesSrcDisplayAnnotationLayerMod.AnnotationLayerParameters
-import typings.pdfjsDist.typesSrcDisplayAnnotationLayerMod.PageViewport
-import typings.pdfjsDist.typesSrcDisplayApiMod.GetDocumentParameters
+import typings.pdfjsDist.typesSrcDisplayApiMod.DocumentInitParameters
 import typings.pdfjsDist.typesSrcDisplayApiMod.PDFDocumentLoadingTask
 import typings.pdfjsDist.typesSrcDisplayApiMod.PDFWorkerParameters
+import typings.pdfjsDist.typesSrcDisplayApiMod.TypedArray
+import typings.pdfjsDist.typesSrcDisplayDisplayUtilsMod.PageViewport
 import typings.pdfjsDist.typesSrcDisplayEditorAnnotationEditorLayerMod.AnnotationEditorLayerOptions
 import typings.pdfjsDist.typesSrcDisplayEditorToolsMod.KeyboardManager
 import typings.pdfjsDist.typesSrcDisplayTextLayerMod.TextLayerRenderParameters
 import typings.pdfjsDist.typesSrcDisplayTextLayerMod.TextLayerRenderTask
+import typings.pdfjsDist.typesSrcDisplayTextLayerMod.TextLayerUpdateParameters
 import typings.pdfjsDist.typesSrcDisplayWorkerOptionsMod.GlobalWorkerOptionsType
 import typings.pdfjsDist.typesSrcDisplayXfaLayerMod.XfaLayerParameters
-import typings.pdfjsDist.typesSrcSharedUtilMod.PromiseCapability
 import typings.reactPdf.distDocumentMod.default
 import typings.std.HTMLDivElement
 import typings.std.URL
@@ -45,6 +46,13 @@ object distEsmEntryDotwebpack5Mod {
     @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs")
     @js.native
     val ^ : js.Any = js.native
+    
+    @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs.AbortException")
+    @js.native
+    open class AbortException protected ()
+      extends typings.reactPdf.distPdfjsDistMod.default.AbortException {
+      def this(msg: Any) = this()
+    }
     
     @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs.AnnotationEditorLayer")
     @js.native
@@ -118,7 +126,7 @@ object distEsmEntryDotwebpack5Mod {
     @js.native
     open class AnnotationEditorUIManager protected ()
       extends typings.reactPdf.distPdfjsDistMod.default.AnnotationEditorUIManager {
-      def this(container: Any, eventBus: Any) = this()
+      def this(container: Any, eventBus: Any, annotationStorage: Any) = this()
     }
     /* static members */
     object AnnotationEditorUIManager {
@@ -149,28 +157,20 @@ object distEsmEntryDotwebpack5Mod {
       inline def `__Numbersign28@NumbersignsetAnnotationCanvasMap`(div: Any, annotationCanvasMap: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__#28@#setAnnotationCanvasMap")(div.asInstanceOf[js.Any], annotationCanvasMap.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
-        * @param {HTMLDivElement} div
-        * @param {PageViewport} viewport
-        */
-      inline def `__Numbersign28@NumbersignsetDimensions`(div: HTMLDivElement, param1: PageViewport): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__#28@#setDimensions")(div.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      
-      /**
         * Render a new annotation layer with all annotation elements.
         *
-        * @public
-        * @param {AnnotationLayerParameters} parameters
+        * @param {AnnotationLayerParameters} params
         * @memberof AnnotationLayer
         */
-      inline def render(parameters: AnnotationLayerParameters): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(parameters.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def render(params: AnnotationLayerParameters): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Update the annotation elements on existing annotation layer.
         *
-        * @public
-        * @param {AnnotationLayerParameters} parameters
+        * @param {AnnotationLayerParameters} params
         * @memberof AnnotationLayer
         */
-      inline def update(parameters: AnnotationLayerParameters): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(parameters.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def update(params: AnnotationLayerParameters): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     }
     
     object AnnotationMode {
@@ -202,6 +202,11 @@ object distEsmEntryDotwebpack5Mod {
       @js.native
       val NONE_2: Double = js.native
     }
+    
+    @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs.FeatureTest")
+    @js.native
+    open class FeatureTest ()
+      extends typings.reactPdf.distPdfjsDistMod.default.FeatureTest
     
     @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs.GlobalWorkerOptions")
     @js.native
@@ -582,12 +587,14 @@ object distEsmEntryDotwebpack5Mod {
       extends typings.reactPdf.distPdfjsDistMod.default.PDFDataRangeTransport {
       /**
         * @param {number} length
-        * @param {Uint8Array} initialData
+        * @param {Uint8Array|null} initialData
         * @param {boolean} [progressiveDone]
         * @param {string} [contentDispositionFilename]
         */
+      def this(length: Double) = this()
       def this(length: Double, initialData: js.typedarray.Uint8Array) = this()
       def this(length: Double, initialData: js.typedarray.Uint8Array, progressiveDone: Boolean) = this()
+      def this(length: Double, initialData: Null, progressiveDone: Boolean) = this()
       def this(
         length: Double,
         initialData: js.typedarray.Uint8Array,
@@ -600,6 +607,8 @@ object distEsmEntryDotwebpack5Mod {
         progressiveDone: Unit,
         contentDispositionFilename: String
       ) = this()
+      def this(length: Double, initialData: Null, progressiveDone: Boolean, contentDispositionFilename: String) = this()
+      def this(length: Double, initialData: Null, progressiveDone: Unit, contentDispositionFilename: String) = this()
     }
     
     @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs.PDFDateString")
@@ -645,9 +654,9 @@ object distEsmEntryDotwebpack5Mod {
       @js.native
       val ^ : js.Any = js.native
       
-      @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs.PDFWorker.__#17@#workerPorts")
+      @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs.PDFWorker.__#21@#workerPorts")
       @js.native
-      val `__Numbersign17@NumbersignworkerPorts`: WeakMap[js.Object, Any] = js.native
+      val `__Numbersign21@NumbersignworkerPorts`: WeakMap[js.Object, Any] = js.native
       
       /**
         * @param {PDFWorkerParameters} params - The worker initialization parameters.
@@ -728,100 +737,23 @@ object distEsmEntryDotwebpack5Mod {
       inline def PDF_TO_CSS_UNITS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PDF_TO_CSS_UNITS")(x.asInstanceOf[js.Any])
     }
     
+    @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs.PromiseCapability")
+    @js.native
+    open class PromiseCapability ()
+      extends typings.reactPdf.distPdfjsDistMod.default.PromiseCapability
+    
     @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs.RenderingCancelledException")
     @js.native
     open class RenderingCancelledException protected ()
       extends typings.reactPdf.distPdfjsDistMod.default.RenderingCancelledException {
       def this(msg: Any, `type`: Any) = this()
+      def this(msg: Any, `type`: Any, extraDelay: Double) = this()
     }
     
     @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs.SVGGraphics")
     @js.native
     def SVGGraphics: Any = js.native
     inline def SVGGraphics_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SVGGraphics")(x.asInstanceOf[js.Any])
-    
-    object UNSUPPORTED_FEATURES {
-      
-      @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs.UNSUPPORTED_FEATURES.errorColorSpace")
-      @js.native
-      val errorColorSpace: String = js.native
-      
-      @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs.UNSUPPORTED_FEATURES.errorContentSubStream")
-      @js.native
-      val errorContentSubStream: String = js.native
-      
-      @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs.UNSUPPORTED_FEATURES.errorExtGState")
-      @js.native
-      val errorExtGState: String = js.native
-      
-      @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs.UNSUPPORTED_FEATURES.errorFontBuildPath")
-      @js.native
-      val errorFontBuildPath: String = js.native
-      
-      @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs.UNSUPPORTED_FEATURES.errorFontGetPath")
-      @js.native
-      val errorFontGetPath: String = js.native
-      
-      @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs.UNSUPPORTED_FEATURES.errorFontLoadNative")
-      @js.native
-      val errorFontLoadNative: String = js.native
-      
-      @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs.UNSUPPORTED_FEATURES.errorFontLoadType3")
-      @js.native
-      val errorFontLoadType3: String = js.native
-      
-      @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs.UNSUPPORTED_FEATURES.errorFontMissing")
-      @js.native
-      val errorFontMissing: String = js.native
-      
-      @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs.UNSUPPORTED_FEATURES.errorFontState")
-      @js.native
-      val errorFontState: String = js.native
-      
-      @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs.UNSUPPORTED_FEATURES.errorFontToUnicode")
-      @js.native
-      val errorFontToUnicode: String = js.native
-      
-      @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs.UNSUPPORTED_FEATURES.errorFontTranslate")
-      @js.native
-      val errorFontTranslate: String = js.native
-      
-      @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs.UNSUPPORTED_FEATURES.errorMarkedContent")
-      @js.native
-      val errorMarkedContent: String = js.native
-      
-      @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs.UNSUPPORTED_FEATURES.errorOperatorList")
-      @js.native
-      val errorOperatorList: String = js.native
-      
-      @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs.UNSUPPORTED_FEATURES.errorTilingPattern")
-      @js.native
-      val errorTilingPattern: String = js.native
-      
-      @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs.UNSUPPORTED_FEATURES.errorXObject")
-      @js.native
-      val errorXObject: String = js.native
-      
-      @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs.UNSUPPORTED_FEATURES.forms")
-      @js.native
-      val forms: String = js.native
-      
-      @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs.UNSUPPORTED_FEATURES.javaScript")
-      @js.native
-      val javaScript: String = js.native
-      
-      @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs.UNSUPPORTED_FEATURES.shadingPattern")
-      @js.native
-      val shadingPattern: String = js.native
-      
-      @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs.UNSUPPORTED_FEATURES.signatures")
-      @js.native
-      val signatures: String = js.native
-      
-      @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs.UNSUPPORTED_FEATURES.smask")
-      @js.native
-      val smask: String = js.native
-    }
     
     @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs.UnexpectedResponseException")
     @js.native
@@ -913,8 +845,6 @@ object distEsmEntryDotwebpack5Mod {
     @js.native
     val build: String = js.native
     
-    inline def createPromiseCapability(): PromiseCapability = ^.asInstanceOf[js.Dynamic].applyDynamic("createPromiseCapability")().asInstanceOf[PromiseCapability]
-    
     inline def createValidAbsoluteUrl(url: String): URL | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("createValidAbsoluteUrl")(url.asInstanceOf[js.Any]).asInstanceOf[URL | Null]
     inline def createValidAbsoluteUrl(url: String, baseUrl: String): URL | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("createValidAbsoluteUrl")(url.asInstanceOf[js.Any], baseUrl.asInstanceOf[js.Any])).asInstanceOf[URL | Null]
     inline def createValidAbsoluteUrl(url: String, baseUrl: String, options: js.Object): URL | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("createValidAbsoluteUrl")(url.asInstanceOf[js.Any], baseUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[URL | Null]
@@ -928,23 +858,40 @@ object distEsmEntryDotwebpack5Mod {
     inline def createValidAbsoluteUrl(url: URL, baseUrl: URL): URL | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("createValidAbsoluteUrl")(url.asInstanceOf[js.Any], baseUrl.asInstanceOf[js.Any])).asInstanceOf[URL | Null]
     inline def createValidAbsoluteUrl(url: URL, baseUrl: URL, options: js.Object): URL | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("createValidAbsoluteUrl")(url.asInstanceOf[js.Any], baseUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[URL | Null]
     
-    inline def getDocument(src: GetDocumentParameters): PDFDocumentLoadingTask = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocument")(src.asInstanceOf[js.Any]).asInstanceOf[PDFDocumentLoadingTask]
+    inline def getDocument(src: String): PDFDocumentLoadingTask = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocument")(src.asInstanceOf[js.Any]).asInstanceOf[PDFDocumentLoadingTask]
+    inline def getDocument(src: js.typedarray.ArrayBuffer): PDFDocumentLoadingTask = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocument")(src.asInstanceOf[js.Any]).asInstanceOf[PDFDocumentLoadingTask]
+    inline def getDocument(src: DocumentInitParameters): PDFDocumentLoadingTask = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocument")(src.asInstanceOf[js.Any]).asInstanceOf[PDFDocumentLoadingTask]
+    inline def getDocument(src: TypedArray): PDFDocumentLoadingTask = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocument")(src.asInstanceOf[js.Any]).asInstanceOf[PDFDocumentLoadingTask]
+    inline def getDocument(src: URL): PDFDocumentLoadingTask = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocument")(src.asInstanceOf[js.Any]).asInstanceOf[PDFDocumentLoadingTask]
     
     inline def getFilenameFromUrl(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilenameFromUrl")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getFilenameFromUrl(url: String, onlyStripPath: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getFilenameFromUrl")(url.asInstanceOf[js.Any], onlyStripPath.asInstanceOf[js.Any])).asInstanceOf[String]
     
     inline def getPdfFilenameFromUrl(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPdfFilenameFromUrl")(url.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def getPdfFilenameFromUrl(url: String, defaultFilename: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPdfFilenameFromUrl")(url.asInstanceOf[js.Any], defaultFilename.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    inline def getXfaPageViewport(xfaPage: Any, param1: Rotation): typings.pdfjsDist.typesSrcDisplayDisplayUtilsMod.PageViewport = (^.asInstanceOf[js.Dynamic].applyDynamic("getXfaPageViewport")(xfaPage.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[typings.pdfjsDist.typesSrcDisplayDisplayUtilsMod.PageViewport]
+    inline def getXfaPageViewport(xfaPage: Any, param1: Rotation): PageViewport = (^.asInstanceOf[js.Dynamic].applyDynamic("getXfaPageViewport")(xfaPage.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[PageViewport]
+    
+    inline def isDataScheme(url: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDataScheme")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     inline def isPdfFile(filename: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPdfFile")(filename.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     inline def loadScript(src: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadScript")(src.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     inline def loadScript(src: String, removeScriptElement: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadScript")(src.asInstanceOf[js.Any], removeScriptElement.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    inline def renderTextLayer(renderParameters: TextLayerRenderParameters): TextLayerRenderTask = ^.asInstanceOf[js.Dynamic].applyDynamic("renderTextLayer")(renderParameters.asInstanceOf[js.Any]).asInstanceOf[TextLayerRenderTask]
+    inline def normalizeUnicode(str: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeUnicode")(str.asInstanceOf[js.Any]).asInstanceOf[Any]
+    
+    inline def renderTextLayer(params: TextLayerRenderParameters): TextLayerRenderTask = ^.asInstanceOf[js.Dynamic].applyDynamic("renderTextLayer")(params.asInstanceOf[js.Any]).asInstanceOf[TextLayerRenderTask]
+    
+    inline def setLayerDimensions(div: HTMLDivElement, viewport: PageViewport): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLayerDimensions")(div.asInstanceOf[js.Any], viewport.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setLayerDimensions(div: HTMLDivElement, viewport: PageViewport, mustFlip: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLayerDimensions")(div.asInstanceOf[js.Any], viewport.asInstanceOf[js.Any], mustFlip.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setLayerDimensions(div: HTMLDivElement, viewport: PageViewport, mustFlip: Boolean, mustRotate: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLayerDimensions")(div.asInstanceOf[js.Any], viewport.asInstanceOf[js.Any], mustFlip.asInstanceOf[js.Any], mustRotate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setLayerDimensions(div: HTMLDivElement, viewport: PageViewport, mustFlip: Unit, mustRotate: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLayerDimensions")(div.asInstanceOf[js.Any], viewport.asInstanceOf[js.Any], mustFlip.asInstanceOf[js.Any], mustRotate.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def shadow(obj: Any, prop: Any, value: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("shadow")(obj.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def shadow(obj: Any, prop: Any, value: Any, nonSerializable: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("shadow")(obj.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any], nonSerializable.asInstanceOf[js.Any])).asInstanceOf[Any]
+    
+    inline def updateTextLayer(param0: TextLayerUpdateParameters): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateTextLayer")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("react-pdf/dist/esm/entry.webpack5", "pdfjs.version")
     @js.native

@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.FlexDirection
+import typings.csstype.mod.Property.Color
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `118` extends StObject {
   
   var value: js.UndefOr[
-    FlexDirection | (js.Array[
-      (Extract[
-        js.UndefOr[FlexDirection | js.Array[NonNullable[js.UndefOr[FlexDirection]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[FlexDirection]]
+    Color | (js.Array[
+      (Extract[js.UndefOr[Color | js.Array[NonNullable[js.UndefOr[Color]]]], String]) | NonNullable[js.UndefOr[Color]]
     ])
   ] = js.native
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ftps
 
-Typings are for version 1.1
+Typings are for version 1.2
 
 ## Library description:
 FTP, FTPS and SFTP client for node.js, mainly a lftp wrapper.

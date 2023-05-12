@@ -197,14 +197,14 @@ object libEsmComponentsSliderMultiSliderMod {
     var labelValues: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
-      * Maximum value of the slider.
+      * Maximum value of the slider. Value must be a finite number.
       *
       * @default 10
       */
     var max: js.UndefOr[Double] = js.undefined
     
     /**
-      * Minimum value of the slider.
+      * Minimum value of the slider. Value must be a finite number.
       *
       * @default 0
       */

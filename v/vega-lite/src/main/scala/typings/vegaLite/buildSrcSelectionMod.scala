@@ -671,7 +671,7 @@ object buildSrcSelectionMod {
       * By default, top-level selections are applied to every view in the visualization.
       * If this property is specified, selections will only be applied to views with the given names.
       */
-    var views: js.UndefOr[js.Array[String | js.Array[String]]] = js.undefined
+    var views: js.UndefOr[js.Array[String]] = js.undefined
   }
   object TopLevelSelectionParameter {
     
@@ -686,11 +686,11 @@ object buildSrcSelectionMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: TopLevelSelectionParameter] (val x: Self) extends AnyVal {
       
-      inline def setViews(value: js.Array[String | js.Array[String]]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+      inline def setViews(value: js.Array[String]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
       
       inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
       
-      inline def setViewsVarargs(value: (String | js.Array[String])*): Self = StObject.set(x, "views", js.Array(value*))
+      inline def setViewsVarargs(value: String*): Self = StObject.set(x, "views", js.Array(value*))
     }
   }
 }

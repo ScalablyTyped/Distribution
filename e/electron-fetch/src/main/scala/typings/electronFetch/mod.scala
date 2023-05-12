@@ -1,7 +1,10 @@
 package typings.electronFetch
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.electron.Electron.CrossProcessExports.AuthInfo
 import typings.electron.Electron.CrossProcessExports.Session_
+import typings.electronFetch.anon.Code
+import typings.electronFetch.anon.Password
 import typings.node.bufferMod.global.Buffer
 import typings.node.httpsMod.Agent
 import typings.node.streamMod.Readable
@@ -28,9 +31,13 @@ object mod {
   
   @JSImport("electron-fetch", "FetchError")
   @js.native
-  open class FetchError ()
+  open class FetchError protected ()
     extends StObject
        with Error {
+    def this(message: String, `type`: FetchErrorType) = this()
+    def this(message: String, `type`: FetchErrorType, systemError: Code) = this()
+    
+    var code: js.UndefOr[String] = js.native
     
     /* standard es5 */
     /* CompleteClass */
@@ -39,6 +46,72 @@ object mod {
     /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
+    
+    var `type`: String = js.native
+  }
+  
+  @js.native
+  sealed trait FetchErrorType extends StObject
+  @JSImport("electron-fetch", "FetchErrorType")
+  @js.native
+  object FetchErrorType extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[FetchErrorType & String] = js.native
+    
+    @js.native
+    sealed trait Abort
+      extends StObject
+         with FetchErrorType
+    /* "abort" */ val Abort: typings.electronFetch.mod.FetchErrorType.Abort & String = js.native
+    
+    @js.native
+    sealed trait BodyTimeout
+      extends StObject
+         with FetchErrorType
+    /* "body-timeout" */ val BodyTimeout: typings.electronFetch.mod.FetchErrorType.BodyTimeout & String = js.native
+    
+    @js.native
+    sealed trait InvalidRedirect
+      extends StObject
+         with FetchErrorType
+    /* "invalid-redirect" */ val InvalidRedirect: typings.electronFetch.mod.FetchErrorType.InvalidRedirect & String = js.native
+    
+    @js.native
+    sealed trait MaxRedirect
+      extends StObject
+         with FetchErrorType
+    /* "max-redirect" */ val MaxRedirect: typings.electronFetch.mod.FetchErrorType.MaxRedirect & String = js.native
+    
+    @js.native
+    sealed trait MaxSize
+      extends StObject
+         with FetchErrorType
+    /* "max-size" */ val MaxSize: typings.electronFetch.mod.FetchErrorType.MaxSize & String = js.native
+    
+    @js.native
+    sealed trait NoRedirect
+      extends StObject
+         with FetchErrorType
+    /* "no-redirect" */ val NoRedirect: typings.electronFetch.mod.FetchErrorType.NoRedirect & String = js.native
+    
+    @js.native
+    sealed trait Proxy
+      extends StObject
+         with FetchErrorType
+    /* "proxy" */ val Proxy: typings.electronFetch.mod.FetchErrorType.Proxy & String = js.native
+    
+    @js.native
+    sealed trait RequestTimeout
+      extends StObject
+         with FetchErrorType
+    /* "request-timeout" */ val RequestTimeout: typings.electronFetch.mod.FetchErrorType.RequestTimeout & String = js.native
+    
+    @js.native
+    sealed trait System
+      extends StObject
+         with FetchErrorType
+    /* "system" */ val System: typings.electronFetch.mod.FetchErrorType.System & String = js.native
   }
   
   @JSImport("electron-fetch", "Headers")
@@ -246,6 +319,12 @@ object mod {
     // These properties are part of the Fetch Standard
     var method: js.UndefOr[String] = js.undefined
     
+    /**
+      * When running on Electron behind an authenticated HTTP proxy, handler of `electron.ClientRequest`'s `login` event.
+      * Can be used for acquiring proxy credentials in an async manner (e.g. prompting the user).
+      */
+    var onLogin: js.UndefOr[js.Function1[/* authInfo */ AuthInfo, js.Promise[js.UndefOr[Password]]]] = js.undefined
+    
     // When running on Electron behind an authenticated HTTP proxy, password to use to authenticate
     var password: js.UndefOr[String] = js.undefined
     
@@ -302,6 +381,10 @@ object mod {
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
       inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      
+      inline def setOnLogin(value: /* authInfo */ AuthInfo => js.Promise[js.UndefOr[Password]]): Self = StObject.set(x, "onLogin", js.Any.fromFunction1(value))
+      
+      inline def setOnLoginUndefined: Self = StObject.set(x, "onLogin", js.undefined)
       
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       

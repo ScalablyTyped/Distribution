@@ -23,7 +23,15 @@ trait Typeofpanels extends StObject {
   
   var elements: ElementsPanel = js.native
   
+  def openResource(url: String, lineNumber: Double): Unit = js.native
   def openResource(url: String, lineNumber: Double, callback: js.Function0[Unit]): Unit = js.native
+  def openResource(url: String, lineNumber: Double, columnNumber: Double): Unit = js.native
+  def openResource(
+    url: String,
+    lineNumber: Double,
+    columnNumber: Double,
+    callback: js.Function1[/* response */ Any, Any]
+  ): Unit = js.native
   
   def setOpenResourceHandler(): Unit = js.native
   def setOpenResourceHandler(callback: js.Function1[/* resource */ Resource, Unit]): Unit = js.native

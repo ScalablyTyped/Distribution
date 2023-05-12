@@ -16,13 +16,14 @@ import typings.react.mod.ComponentType
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
+import typings.reactSpringCore.mod.SpringConfig
 import typings.std.SVGLineElement
 import typings.std.SVGRectElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Omit<@nivo/bullet.@nivo/bullet/dist/types/types.CommonBulletProps, 'outerWidth' | 'outerHeight' | 'margin' | 'spacing' | 'role' | 'minValue' | 'maxValue' | 'measureSize' | 'markerSize' | 'theme' | 'isInteractive'> & @nivo/bullet.@nivo/bullet/dist/types/types.BulletHandlers & @nivo/bullet.@nivo/bullet/dist/types/types.EnhancedDatum & @nivo/core.@nivo/core.ModernMotionProps & @nivo/bullet.@nivo/bullet/dist/types/types.Point & {  measureHeight :number,   markerHeight :number} */
+/* Inlined std.Omit<@nivo/bullet.@nivo/bullet/dist/types/types.CommonBulletProps, 'outerWidth' | 'outerHeight' | 'margin' | 'spacing' | 'role' | 'minValue' | 'maxValue' | 'measureSize' | 'markerSize' | 'theme' | 'isInteractive'> & @nivo/bullet.@nivo/bullet/dist/types/types.BulletHandlers & @nivo/bullet.@nivo/bullet/dist/types/types.EnhancedDatum & @nivo/core.@nivo/core.MotionProps & @nivo/bullet.@nivo/bullet/dist/types/types.Point & {  measureHeight :number,   markerHeight :number} */
 trait BulletItemProps extends StObject {
   
   var animate: js.UndefOr[Boolean] = js.undefined
@@ -55,9 +56,7 @@ trait BulletItemProps extends StObject {
   
   var measures: js.Array[Double]
   
-  var motionConfig: js.UndefOr[
-    String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-  ] = js.undefined
+  var motionConfig: js.UndefOr[String | SpringConfig] = js.undefined
   
   var onMarkerClick: js.UndefOr[MouseEventHandler[WithDatumIdComputedMarker, SVGLineElement]] = js.undefined
   
@@ -181,9 +180,7 @@ object BulletItemProps {
     
     inline def setMeasuresVarargs(value: Double*): Self = StObject.set(x, "measures", js.Array(value*))
     
-    inline def setMotionConfig(
-      value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-    ): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
+    inline def setMotionConfig(value: String | SpringConfig): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
     
     inline def setMotionConfigUndefined: Self = StObject.set(x, "motionConfig", js.undefined)
     

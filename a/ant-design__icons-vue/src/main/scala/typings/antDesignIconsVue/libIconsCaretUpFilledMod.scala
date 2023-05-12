@@ -16,7 +16,7 @@ object libIconsCaretUpFilledMod extends Shortcut {
   @js.native
   trait CaretUpFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_CaretUpFilledIconType: String = js.native

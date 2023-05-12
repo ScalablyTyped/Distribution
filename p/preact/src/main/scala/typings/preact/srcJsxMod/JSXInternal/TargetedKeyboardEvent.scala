@@ -1,5 +1,13 @@
 package typings.preact.srcJsxMod.JSXInternal
 
+import typings.preact.preactInts.`0`
+import typings.preact.preactInts.`0x00`
+import typings.preact.preactInts.`0x01`
+import typings.preact.preactInts.`0x02`
+import typings.preact.preactInts.`0x03`
+import typings.preact.preactInts.`1`
+import typings.preact.preactInts.`2`
+import typings.preact.preactInts.`3`
 import typings.std.DOMHighResTimeStamp
 import typings.std.EventTarget
 import typings.std.Window
@@ -10,21 +18,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined preact.preact/src/jsx.JSXInternal.TargetedEvent<Target, std.KeyboardEvent> */
 trait TargetedKeyboardEvent[Target /* <: EventTarget */] extends StObject {
   
-  var AT_TARGET: Double
+  var AT_TARGET: `2`
   
-  var BUBBLING_PHASE: Double
+  var BUBBLING_PHASE: `3`
   
-  var CAPTURING_PHASE: Double
+  var CAPTURING_PHASE: `1`
   
-  var DOM_KEY_LOCATION_LEFT: Double
+  var DOM_KEY_LOCATION_LEFT: `0x01`
   
-  var DOM_KEY_LOCATION_NUMPAD: Double
+  var DOM_KEY_LOCATION_NUMPAD: `0x03`
   
-  var DOM_KEY_LOCATION_RIGHT: Double
+  var DOM_KEY_LOCATION_RIGHT: `0x02`
   
-  var DOM_KEY_LOCATION_STANDARD: Double
+  var DOM_KEY_LOCATION_STANDARD: `0x00`
   
-  var NONE: Double
+  var NONE: `0`
   
   var altKey: Boolean
   
@@ -138,14 +146,6 @@ trait TargetedKeyboardEvent[Target /* <: EventTarget */] extends StObject {
 object TargetedKeyboardEvent {
   
   inline def apply[Target /* <: EventTarget */](
-    AT_TARGET: Double,
-    BUBBLING_PHASE: Double,
-    CAPTURING_PHASE: Double,
-    DOM_KEY_LOCATION_LEFT: Double,
-    DOM_KEY_LOCATION_NUMPAD: Double,
-    DOM_KEY_LOCATION_RIGHT: Double,
-    DOM_KEY_LOCATION_STANDARD: Double,
-    NONE: Double,
     altKey: Boolean,
     bubbles: Boolean,
     cancelBubble: Boolean,
@@ -179,7 +179,7 @@ object TargetedKeyboardEvent {
     `type`: String,
     which: Double
   ): TargetedKeyboardEvent[Target] = {
-    val __obj = js.Dynamic.literal(AT_TARGET = AT_TARGET.asInstanceOf[js.Any], BUBBLING_PHASE = BUBBLING_PHASE.asInstanceOf[js.Any], CAPTURING_PHASE = CAPTURING_PHASE.asInstanceOf[js.Any], DOM_KEY_LOCATION_LEFT = DOM_KEY_LOCATION_LEFT.asInstanceOf[js.Any], DOM_KEY_LOCATION_NUMPAD = DOM_KEY_LOCATION_NUMPAD.asInstanceOf[js.Any], DOM_KEY_LOCATION_RIGHT = DOM_KEY_LOCATION_RIGHT.asInstanceOf[js.Any], DOM_KEY_LOCATION_STANDARD = DOM_KEY_LOCATION_STANDARD.asInstanceOf[js.Any], NONE = NONE.asInstanceOf[js.Any], altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelBubble = cancelBubble.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], composed = composed.asInstanceOf[js.Any], composedPath = js.Any.fromFunction0(composedPath), ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], getModifierState = js.Any.fromFunction1(getModifierState), initEvent = js.Any.fromFunction1(initEvent), initKeyboardEvent = js.Any.fromFunction10(initKeyboardEvent), initUIEvent = js.Any.fromFunction1(initUIEvent), isComposing = isComposing.asInstanceOf[js.Any], isTrusted = isTrusted.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), repeat = repeat.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), timeStamp = timeStamp.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AT_TARGET = 2, BUBBLING_PHASE = 3, CAPTURING_PHASE = 1, DOM_KEY_LOCATION_LEFT = 0x01, DOM_KEY_LOCATION_NUMPAD = 0x03, DOM_KEY_LOCATION_RIGHT = 0x02, DOM_KEY_LOCATION_STANDARD = 0x00, NONE = 0, altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelBubble = cancelBubble.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], composed = composed.asInstanceOf[js.Any], composedPath = js.Any.fromFunction0(composedPath), ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], getModifierState = js.Any.fromFunction1(getModifierState), initEvent = js.Any.fromFunction1(initEvent), initKeyboardEvent = js.Any.fromFunction10(initKeyboardEvent), initUIEvent = js.Any.fromFunction1(initUIEvent), isComposing = isComposing.asInstanceOf[js.Any], isTrusted = isTrusted.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), repeat = repeat.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), timeStamp = timeStamp.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetedKeyboardEvent[Target]]
   }
@@ -187,15 +187,15 @@ object TargetedKeyboardEvent {
   @scala.inline
   implicit open class MutableBuilder[Self <: TargetedKeyboardEvent[?], Target /* <: EventTarget */] (val x: Self & TargetedKeyboardEvent[Target]) extends AnyVal {
     
-    inline def setAT_TARGET(value: Double): Self = StObject.set(x, "AT_TARGET", value.asInstanceOf[js.Any])
+    inline def setAT_TARGET(value: `2`): Self = StObject.set(x, "AT_TARGET", value.asInstanceOf[js.Any])
     
     inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
     
-    inline def setBUBBLING_PHASE(value: Double): Self = StObject.set(x, "BUBBLING_PHASE", value.asInstanceOf[js.Any])
+    inline def setBUBBLING_PHASE(value: `3`): Self = StObject.set(x, "BUBBLING_PHASE", value.asInstanceOf[js.Any])
     
     inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
     
-    inline def setCAPTURING_PHASE(value: Double): Self = StObject.set(x, "CAPTURING_PHASE", value.asInstanceOf[js.Any])
+    inline def setCAPTURING_PHASE(value: `1`): Self = StObject.set(x, "CAPTURING_PHASE", value.asInstanceOf[js.Any])
     
     inline def setCancelBubble(value: Boolean): Self = StObject.set(x, "cancelBubble", value.asInstanceOf[js.Any])
     
@@ -213,13 +213,13 @@ object TargetedKeyboardEvent {
     
     inline def setCurrentTarget(value: Target): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
     
-    inline def setDOM_KEY_LOCATION_LEFT(value: Double): Self = StObject.set(x, "DOM_KEY_LOCATION_LEFT", value.asInstanceOf[js.Any])
+    inline def setDOM_KEY_LOCATION_LEFT(value: `0x01`): Self = StObject.set(x, "DOM_KEY_LOCATION_LEFT", value.asInstanceOf[js.Any])
     
-    inline def setDOM_KEY_LOCATION_NUMPAD(value: Double): Self = StObject.set(x, "DOM_KEY_LOCATION_NUMPAD", value.asInstanceOf[js.Any])
+    inline def setDOM_KEY_LOCATION_NUMPAD(value: `0x03`): Self = StObject.set(x, "DOM_KEY_LOCATION_NUMPAD", value.asInstanceOf[js.Any])
     
-    inline def setDOM_KEY_LOCATION_RIGHT(value: Double): Self = StObject.set(x, "DOM_KEY_LOCATION_RIGHT", value.asInstanceOf[js.Any])
+    inline def setDOM_KEY_LOCATION_RIGHT(value: `0x02`): Self = StObject.set(x, "DOM_KEY_LOCATION_RIGHT", value.asInstanceOf[js.Any])
     
-    inline def setDOM_KEY_LOCATION_STANDARD(value: Double): Self = StObject.set(x, "DOM_KEY_LOCATION_STANDARD", value.asInstanceOf[js.Any])
+    inline def setDOM_KEY_LOCATION_STANDARD(value: `0x00`): Self = StObject.set(x, "DOM_KEY_LOCATION_STANDARD", value.asInstanceOf[js.Any])
     
     inline def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
     
@@ -249,7 +249,7 @@ object TargetedKeyboardEvent {
     
     inline def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
     
-    inline def setNONE(value: Double): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
+    inline def setNONE(value: `0`): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
     
     inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
     

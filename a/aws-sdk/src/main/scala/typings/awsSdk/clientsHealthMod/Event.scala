@@ -22,7 +22,7 @@ trait Event extends StObject {
   var endTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * This parameter specifies if the Health event is a public Amazon Web Services service event or an account-specific event.   If the eventScopeCode value is PUBLIC, then the affectedAccounts value is always empty.   If the eventScopeCode value is ACCOUNT_SPECIFIC, then the affectedAccounts value lists the affected Amazon Web Services accounts in your organization. For example, if an event affects a service such as Amazon Elastic Compute Cloud and you have Amazon Web Services accounts that use that service, those account IDs appear in the response.   If the eventScopeCode value is NONE, then the eventArn that you specified in the request is invalid or doesn't exist.  
+    * This parameter specifies if the Health event is a public Amazon Web Service event or an account-specific event.   If the eventScopeCode value is PUBLIC, then the affectedAccounts value is always empty.   If the eventScopeCode value is ACCOUNT_SPECIFIC, then the affectedAccounts value lists the affected Amazon Web Services accounts in your organization. For example, if an event affects a service such as Amazon Elastic Compute Cloud and you have Amazon Web Services accounts that use that service, those account IDs appear in the response.   If the eventScopeCode value is NONE, then the eventArn that you specified in the request is invalid or doesn't exist.  
     */
   var eventScopeCode: js.UndefOr[typings.awsSdk.clientsHealthMod.eventScopeCode] = js.undefined
   
@@ -47,7 +47,7 @@ trait Event extends StObject {
   var region: js.UndefOr[typings.awsSdk.clientsHealthMod.region] = js.undefined
   
   /**
-    * The Amazon Web Services service that is affected by the event. For example, EC2, RDS.
+    * The Amazon Web Service that is affected by the event. For example, EC2, RDS.
     */
   var service: js.UndefOr[typings.awsSdk.clientsHealthMod.service] = js.undefined
   

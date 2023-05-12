@@ -2,10 +2,11 @@ package typings.firebaseFirestore
 
 import typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreSnapshotVersionMod.SnapshotVersion
 import typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreTypesMod.TargetId
+import typings.firebaseFirestore.distLitePackagesFirestoreSrcLocalTargetDataMod.TargetPurpose
 import typings.firebaseFirestore.distLitePackagesFirestoreSrcModelCollectionsMod.DocumentKeySet_
 import typings.firebaseFirestore.distLitePackagesFirestoreSrcModelCollectionsMod.MutableDocumentMap_
 import typings.firebaseFirestore.distLitePackagesFirestoreSrcUtilByteStringMod.ByteString
-import typings.firebaseFirestore.distLitePackagesFirestoreSrcUtilSortedSetMod.SortedSet
+import typings.firebaseFirestore.distLitePackagesFirestoreSrcUtilSortedMapMod.SortedMap
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,10 +27,11 @@ object distLitePackagesFirestoreSrcRemoteRemoteEventMod {
       */
     targetChanges: Map[TargetId, TargetChange],
       /**
-      * A set of targets that is known to be inconsistent. Listens for these
-      * targets should be re-established without resume tokens.
+      * A map of targets that is known to be inconsistent, and the purpose for
+      * re-listening. Listens for these targets should be re-established without
+      * resume tokens.
       */
-    targetMismatches: SortedSet[TargetId],
+    targetMismatches: SortedMap[TargetId, TargetPurpose],
       /**
       * A set of which documents have changed or been deleted, along with the
       * doc's new values (if not deleted).
@@ -63,10 +65,11 @@ object distLitePackagesFirestoreSrcRemoteRemoteEventMod {
     val targetChanges: Map[TargetId, TargetChange] = js.native
     
     /**
-      * A set of targets that is known to be inconsistent. Listens for these
-      * targets should be re-established without resume tokens.
+      * A map of targets that is known to be inconsistent, and the purpose for
+      * re-listening. Listens for these targets should be re-established without
+      * resume tokens.
       */
-    val targetMismatches: SortedSet[TargetId] = js.native
+    val targetMismatches: SortedMap[TargetId, TargetPurpose] = js.native
   }
   /* static members */
   object RemoteEvent {

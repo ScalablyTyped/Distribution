@@ -1,8 +1,7 @@
 package typings.nginstackEngine
 
 import typings.nginstackEngine.anon.CopyMode
-import typings.nginstackEngine.anon.Resources
-import typings.std.Record
+import typings.nginstackEngine.anon.IgnoredKeys
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,8 +49,7 @@ object libSecurityPermissionManagerMod {
     def fixClasses(): Unit = js.native
     
     def fixInheritance(): Double | Null = js.native
-    def fixInheritance(opt_options: Resources): Double | Null = js.native
-    def fixInheritance(opt_options: Record[Any, Any]): Double | Null = js.native
+    def fixInheritance(options: IgnoredKeys): Double | Null = js.native
     
     def getOrphans(): typings.nginstackEngine.libDatasetDataSetMod.^ = js.native
     

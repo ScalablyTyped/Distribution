@@ -10,6 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LibraryOptions extends StObject {
   
   /**
+  	 * Add a container for define/require functions in the AMD module.
+  	 */
+  var amdContainer: js.UndefOr[String] = js.undefined
+  
+  /**
   	 * Add a comment in the UMD wrapper.
   	 */
   var auxiliaryComment: js.UndefOr[String | LibraryCustomUmdCommentObject] = js.undefined
@@ -44,6 +49,10 @@ object LibraryOptions {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: LibraryOptions] (val x: Self) extends AnyVal {
+    
+    inline def setAmdContainer(value: String): Self = StObject.set(x, "amdContainer", value.asInstanceOf[js.Any])
+    
+    inline def setAmdContainerUndefined: Self = StObject.set(x, "amdContainer", js.undefined)
     
     inline def setAuxiliaryComment(value: String | LibraryCustomUmdCommentObject): Self = StObject.set(x, "auxiliaryComment", value.asInstanceOf[js.Any])
     

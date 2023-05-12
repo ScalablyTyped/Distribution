@@ -37,12 +37,12 @@ trait PackageDetails extends StObject {
   var PackageID: js.UndefOr[typings.awsSdk.clientsOpensearchMod.PackageID] = js.undefined
   
   /**
-    * User-specified name of the package.
+    * The user-specified name of the package.
     */
   var PackageName: js.UndefOr[typings.awsSdk.clientsOpensearchMod.PackageName] = js.undefined
   
   /**
-    * Current status of the package.
+    * The current status of the package. The available options are AVAILABLE, COPYING, COPY_FAILED, VALIDATNG, VALIDATION_FAILED, DELETING, and DELETE_FAILED.
     */
   var PackageStatus: js.UndefOr[typings.awsSdk.clientsOpensearchMod.PackageStatus] = js.undefined
   

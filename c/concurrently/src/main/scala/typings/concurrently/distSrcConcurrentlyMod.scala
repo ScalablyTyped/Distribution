@@ -1,7 +1,7 @@
 package typings.concurrently
 
-import typings.concurrently.anon.PartialCommandInfo
 import typings.concurrently.anon.PartialConcurrentlyOption
+import typings.concurrently.anon.commandstringPartialComma
 import typings.concurrently.distSrcCommandMod.ChildProcess
 import typings.concurrently.distSrcCommandMod.CloseEvent
 import typings.concurrently.distSrcCommandMod.Command
@@ -25,7 +25,7 @@ object distSrcConcurrentlyMod {
   inline def concurrently(baseCommands: js.Array[ConcurrentlyCommandInput]): ConcurrentlyResult = ^.asInstanceOf[js.Dynamic].applyDynamic("concurrently")(baseCommands.asInstanceOf[js.Any]).asInstanceOf[ConcurrentlyResult]
   inline def concurrently(baseCommands: js.Array[ConcurrentlyCommandInput], baseOptions: PartialConcurrentlyOption): ConcurrentlyResult = (^.asInstanceOf[js.Dynamic].applyDynamic("concurrently")(baseCommands.asInstanceOf[js.Any], baseOptions.asInstanceOf[js.Any])).asInstanceOf[ConcurrentlyResult]
   
-  type ConcurrentlyCommandInput = String | PartialCommandInfo
+  type ConcurrentlyCommandInput = String | commandstringPartialComma
   
   trait ConcurrentlyOptions extends StObject {
     
@@ -60,6 +60,12 @@ object distSrcConcurrentlyMod {
       */
     def kill(pid: Double): Unit
     def kill(pid: Double, signal: String): Unit
+    
+    /**
+      * Signal to send to killed processes.
+      */
+    var killSignal: js.UndefOr[String] = js.undefined
+    
     /**
       * A function that will kill processes.
       * Defaults to the `tree-kill` module.
@@ -71,11 +77,12 @@ object distSrcConcurrentlyMod {
     
     /**
       * Maximum number of commands to run at once.
+      * Exact number or a percent of CPUs available (for example "50%").
       *
       * If undefined, then all processes will start in parallel.
       * Setting this value to 1 will achieve sequential running.
       */
-    var maxProcesses: js.UndefOr[Double] = js.undefined
+    var maxProcesses: js.UndefOr[Double | String] = js.undefined
     
     /**
       * Which stream should the commands output be written to.
@@ -144,11 +151,15 @@ object distSrcConcurrentlyMod {
       
       inline def setKill(value: (/* pid */ Double, /* signal */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "kill", js.Any.fromFunction2(value))
       
+      inline def setKillSignal(value: String): Self = StObject.set(x, "killSignal", value.asInstanceOf[js.Any])
+      
+      inline def setKillSignalUndefined: Self = StObject.set(x, "killSignal", js.undefined)
+      
       inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
       inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      inline def setMaxProcesses(value: Double): Self = StObject.set(x, "maxProcesses", value.asInstanceOf[js.Any])
+      inline def setMaxProcesses(value: Double | String): Self = StObject.set(x, "maxProcesses", value.asInstanceOf[js.Any])
       
       inline def setMaxProcessesUndefined: Self = StObject.set(x, "maxProcesses", js.undefined)
       

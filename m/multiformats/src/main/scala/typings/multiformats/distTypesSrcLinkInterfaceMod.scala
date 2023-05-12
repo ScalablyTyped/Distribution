@@ -36,13 +36,31 @@ object distTypesSrcLinkInterfaceMod {
     
     val multihash: MultihashDigest[Alg] = js.native
     
-    def toJSON(): typings.multiformats.anon.Version[V, Format] = js.native
-    
     def toString[Prefix /* <: String */](base: MultibaseEncoder[Prefix]): ToString[Link[Data, Format, Alg, Version], Prefix] = js.native
     
     def toV1(): Link[Data, Format, Alg, `1`] = js.native
     
     val version: V = js.native
+  }
+  
+  trait LinkJSON[T /* <: UnknownLink */] extends StObject {
+    
+    @JSName("/")
+    var Slash: ToString[T, String]
+  }
+  object LinkJSON {
+    
+    inline def apply[T /* <: UnknownLink */](Slash: ToString[T, String]): LinkJSON[T] = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("/")(Slash.asInstanceOf[js.Any])
+      __obj.asInstanceOf[LinkJSON[T]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkJSON[?], T /* <: UnknownLink */] (val x: Self & LinkJSON[T]) extends AnyVal {
+      
+      inline def setSlash(value: ToString[T, String]): Self = StObject.set(x, "/", value.asInstanceOf[js.Any])
+    }
   }
   
   type SHA_256 = `0x12`

@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PaginationOptions extends StObject {
   
-  var limit: Double
+  var limit: js.UndefOr[Double] = js.undefined
   
-  var offset: Double
+  var offset: js.UndefOr[Double] = js.undefined
 }
 object PaginationOptions {
   
-  inline def apply(limit: Double, offset: Double): PaginationOptions = {
-    val __obj = js.Dynamic.literal(limit = limit.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
+  inline def apply(): PaginationOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PaginationOptions]
   }
   
@@ -22,6 +22,10 @@ object PaginationOptions {
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
   }
 }

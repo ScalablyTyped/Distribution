@@ -1,10 +1,12 @@
 package typings.awsSdkSmithyClient
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.awsSdkSmithyClient.distTypesClientMod.SmithyResolvedConfiguration
 import typings.awsSdkSmithyClient.distTypesDefaultsModeMod.DefaultsModeConfigs
 import typings.awsSdkSmithyClient.distTypesDefaultsModeMod.ResolvedDefaultsMode
 import typings.awsSdkSmithyClient.distTypesExceptionsMod.ServiceExceptionOptions
-import typings.awsSdkSmithyClient.distTypesObjectMappingMod.ObjectMappingInstruction
+import typings.awsSdkSmithyClient.distTypesObjectMappingMod.ObjectMappingInstructions
+import typings.awsSdkSmithyClient.distTypesObjectMappingMod.SourceMappingInstructions
 import typings.awsSdkSmithyClient.distTypesObjectMappingMod.Value
 import typings.awsSdkSmithyClient.distTypesObjectMappingMod.ValueSupplier
 import typings.awsSdkTypes.distTypesResponseMod.MetadataBearer
@@ -76,6 +78,14 @@ object mod {
   
   inline def convertMap(target: Any): Record[String, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertMap")(target.asInstanceOf[js.Any]).asInstanceOf[Record[String, Any]]
   
+  inline def createAggregatedClient(
+    commands: Record[String, Any],
+    Client: Instantiable1[
+      /* args */ Any, 
+      typings.awsSdkSmithyClient.distTypesClientMod.Client[Any, Any, Any, Any]
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAggregatedClient")(commands.asInstanceOf[js.Any], Client.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   inline def dateToUtcString(date: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dateToUtcString")(date.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def decorateServiceException[E /* <: typings.awsSdkSmithyClient.distTypesExceptionsMod.ServiceException */](exception: E): E = ^.asInstanceOf[js.Dynamic].applyDynamic("decorateServiceException")(exception.asInstanceOf[js.Any]).asInstanceOf[E]
@@ -120,6 +130,8 @@ object mod {
   inline def handleFloat(value: String): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("handleFloat")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
   inline def handleFloat(value: Double): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("handleFloat")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
   
+  inline def json(obj: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_json")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
   inline def limitedParseDouble(value: String): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("limitedParseDouble")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
   inline def limitedParseDouble(value: Double): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("limitedParseDouble")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
   
@@ -142,19 +154,21 @@ object mod {
     inline def warn(message: Unit, optionalParams: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(scala.List(message.asInstanceOf[js.Any]).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   }
   
-  inline def map(instructions: Record[String, ObjectMappingInstruction]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(instructions.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def map(instructions: ObjectMappingInstructions): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(instructions.asInstanceOf[js.Any]).asInstanceOf[Any]
   inline def map(
     target: Any,
     filter: js.Function1[/* value */ Any, Boolean],
     instructions: Record[String, ValueSupplier | Value]
   ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(target.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], instructions.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def map(target: Any, instructions: Record[String, ObjectMappingInstruction]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(target.asInstanceOf[js.Any], instructions.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def map(target: Any, instructions: ObjectMappingInstructions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(target.asInstanceOf[js.Any], instructions.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def parseBoolean(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("parseBoolean")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def parseEpochTimestamp(value: Any): js.UndefOr[js.Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseEpochTimestamp")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Date]]
   
   inline def parseRfc3339DateTime(value: Any): js.UndefOr[js.Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRfc3339DateTime")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Date]]
+  
+  inline def parseRfc3339DateTimeWithOffset(value: Any): js.UndefOr[js.Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRfc3339DateTimeWithOffset")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Date]]
   
   inline def parseRfc7231DateTime(value: Any): js.UndefOr[js.Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRfc7231DateTime")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Date]]
   
@@ -195,5 +209,9 @@ object mod {
   inline def strictParseShort(value: String): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("strictParseShort")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
   inline def strictParseShort(value: Double): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("strictParseShort")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
   
+  inline def take(source: Any, instructions: SourceMappingInstructions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("take")(source.asInstanceOf[js.Any], instructions.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
   inline def throwDefaultError(param0: Any): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("throwDefaultError")(param0.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+  
+  inline def withBaseException(ExceptionCtor: Instantiable1[/* args */ Any, Any]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withBaseException")(ExceptionCtor.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

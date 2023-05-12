@@ -33,6 +33,8 @@ object distStringifyStringifyMod {
     
     var doc: Document[Node[Any]]
     
+    var flowCollectionPadding: String
+    
     var forceBlockIndent: js.UndefOr[Boolean] = js.undefined
     
     var implicitKey: js.UndefOr[Boolean] = js.undefined
@@ -56,11 +58,12 @@ object distStringifyStringifyMod {
     inline def apply(
       anchors: Set[String],
       doc: Document[Node[Any]],
+      flowCollectionPadding: String,
       indent: String,
       indentStep: String,
       options: ReadonlyRequiredOmitToStr
     ): StringifyContext = {
-      val __obj = js.Dynamic.literal(anchors = anchors.asInstanceOf[js.Any], doc = doc.asInstanceOf[js.Any], indent = indent.asInstanceOf[js.Any], indentStep = indentStep.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], inFlow = null)
+      val __obj = js.Dynamic.literal(anchors = anchors.asInstanceOf[js.Any], doc = doc.asInstanceOf[js.Any], flowCollectionPadding = flowCollectionPadding.asInstanceOf[js.Any], indent = indent.asInstanceOf[js.Any], indentStep = indentStep.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], inFlow = null)
       __obj.asInstanceOf[StringifyContext]
     }
     
@@ -78,6 +81,8 @@ object distStringifyStringifyMod {
       inline def setAnchors(value: Set[String]): Self = StObject.set(x, "anchors", value.asInstanceOf[js.Any])
       
       inline def setDoc(value: Document[Node[Any]]): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
+      
+      inline def setFlowCollectionPadding(value: String): Self = StObject.set(x, "flowCollectionPadding", value.asInstanceOf[js.Any])
       
       inline def setForceBlockIndent(value: Boolean): Self = StObject.set(x, "forceBlockIndent", value.asInstanceOf[js.Any])
       

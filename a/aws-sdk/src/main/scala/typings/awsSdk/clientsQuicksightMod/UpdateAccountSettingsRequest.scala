@@ -12,7 +12,7 @@ trait UpdateAccountSettingsRequest extends StObject {
   var AwsAccountId: typings.awsSdk.clientsQuicksightMod.AwsAccountId
   
   /**
-    * The default namespace for this Amazon Web Services account. Currently, the default is default. Identity and Access Management (IAM) users that register for the first time with Amazon QuickSight provide an email address that becomes associated with the default namespace. 
+    * The default namespace for this Amazon Web Services account. Currently, the default is default. IAM users that register for the first time with Amazon QuickSight provide an email address that becomes associated with the default namespace. 
     */
   var DefaultNamespace: Namespace
   
@@ -20,6 +20,11 @@ trait UpdateAccountSettingsRequest extends StObject {
     * The email address that you want Amazon QuickSight to send notifications to regarding your Amazon Web Services account or Amazon QuickSight subscription.
     */
   var NotificationEmail: js.UndefOr[String] = js.undefined
+  
+  /**
+    * A boolean value that determines whether or not an Amazon QuickSight account can be deleted. A True value doesn't allow the account to be deleted and results in an error message if a user tries to make a DeleteAccountSubscription request. A False value will allow the account to be deleted.
+    */
+  var TerminationProtectionEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object UpdateAccountSettingsRequest {
   
@@ -38,5 +43,9 @@ object UpdateAccountSettingsRequest {
     inline def setNotificationEmail(value: String): Self = StObject.set(x, "NotificationEmail", value.asInstanceOf[js.Any])
     
     inline def setNotificationEmailUndefined: Self = StObject.set(x, "NotificationEmail", js.undefined)
+    
+    inline def setTerminationProtectionEnabled(value: Boolean): Self = StObject.set(x, "TerminationProtectionEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setTerminationProtectionEnabledUndefined: Self = StObject.set(x, "TerminationProtectionEnabled", js.undefined)
   }
 }

@@ -8,8 +8,12 @@ object anon {
   
   trait Estree extends StObject {
     
+    /**
+      * Program node from estree.
+      */
+    // eslint-disable-next-line @typescript-eslint/ban-types
     var estree: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Program */ Any
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Program */ Any) | Null
       ] = js.undefined
   }
   object Estree {
@@ -25,6 +29,8 @@ object anon {
       inline def setEstree(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Program */ Any
       ): Self = StObject.set(x, "estree", value.asInstanceOf[js.Any])
+      
+      inline def setEstreeNull: Self = StObject.set(x, "estree", null)
       
       inline def setEstreeUndefined: Self = StObject.set(x, "estree", js.undefined)
     }

@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Rewritten from type alias, can be one of: 
   - typings.maplibreGl.anon.LayoutSize
-  - typings.maplibreGl.anon.`0`
+  - typings.maplibreGl.anon.`3`
   - typings.maplibreGl.anon.InterpolationType
   - typings.maplibreGl.anon.MaxZoom_
 */
 trait SizeData extends StObject
 object SizeData {
   
-  inline def `0`(): typings.maplibreGl.anon.`0` = {
+  inline def `3`(): typings.maplibreGl.anon.`3` = {
     val __obj = js.Dynamic.literal(kind = "source")
-    __obj.asInstanceOf[typings.maplibreGl.anon.`0`]
+    __obj.asInstanceOf[typings.maplibreGl.anon.`3`]
   }
   
   inline def InterpolationType(

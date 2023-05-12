@@ -10,11 +10,13 @@ import typings.babylonjs.materialsTexturesRawTextureMod.RawTexture
 import typings.babylonjs.mathsMathDotcolorMod.Color4
 import typings.babylonjs.mathsMathDotvectorMod.Vector2
 import typings.babylonjs.mathsMathDotvectorMod.Vector3
+import typings.babylonjs.mathsMathMod.Plane
 import typings.babylonjs.meshesAbstractMeshMod.AbstractMesh
 import typings.babylonjs.miscGradientsMod.Color3Gradient
 import typings.babylonjs.miscGradientsMod.ColorGradient
 import typings.babylonjs.miscGradientsMod.FactorGradient
 import typings.babylonjs.miscGradientsMod.IValueGradient
+import typings.babylonjs.miscInterfacesIClipPlanesHolderMod.IClipPlanesHolder
 import typings.babylonjs.particlesEmitterTypesIndexMod.BoxParticleEmitter
 import typings.babylonjs.particlesEmitterTypesIndexMod.ConeParticleEmitter
 import typings.babylonjs.particlesEmitterTypesIndexMod.CylinderDirectedParticleEmitter
@@ -34,7 +36,9 @@ object particlesBaseParticleSystemMod {
   
   @JSImport("babylonjs/Particles/baseParticleSystem", "BaseParticleSystem")
   @js.native
-  open class BaseParticleSystem protected () extends StObject {
+  open class BaseParticleSystem protected ()
+    extends StObject
+       with IClipPlanesHolder {
     /**
       * Instantiates a particle system.
       * Particles are often small sprites used to simulate hard-to-reproduce phenomena like fire, smoke, water, or abstract visual effects like magic glitter and faery dust.
@@ -159,6 +163,73 @@ object particlesBaseParticleSystemMod {
       * Blend mode use to render the particle, it can be either ParticleSystem.BLENDMODE_ONEONE or ParticleSystem.BLENDMODE_STANDARD.
       */
     var blendMode: Double = js.native
+    
+    /**
+      * Gets or sets the active clipplane 1
+      */
+    /* CompleteClass */
+    var clipPlane: Nullable[Plane] = js.native
+    
+    /**
+      * Gets or sets the active clipplane 2
+      */
+    /* CompleteClass */
+    var clipPlane2: Nullable[Plane] = js.native
+    /**
+      * Gets or sets the active clipplane 2
+      */
+    @JSName("clipPlane2")
+    var clipPlane2_BaseParticleSystem: Nullable[typings.babylonjs.mathsMathDotplaneMod.Plane] = js.native
+    
+    /**
+      * Gets or sets the active clipplane 3
+      */
+    /* CompleteClass */
+    var clipPlane3: Nullable[Plane] = js.native
+    /**
+      * Gets or sets the active clipplane 3
+      */
+    @JSName("clipPlane3")
+    var clipPlane3_BaseParticleSystem: Nullable[typings.babylonjs.mathsMathDotplaneMod.Plane] = js.native
+    
+    /**
+      * Gets or sets the active clipplane 4
+      */
+    /* CompleteClass */
+    var clipPlane4: Nullable[Plane] = js.native
+    /**
+      * Gets or sets the active clipplane 4
+      */
+    @JSName("clipPlane4")
+    var clipPlane4_BaseParticleSystem: Nullable[typings.babylonjs.mathsMathDotplaneMod.Plane] = js.native
+    
+    /**
+      * Gets or sets the active clipplane 5
+      */
+    /* CompleteClass */
+    var clipPlane5: Nullable[Plane] = js.native
+    /**
+      * Gets or sets the active clipplane 5
+      */
+    @JSName("clipPlane5")
+    var clipPlane5_BaseParticleSystem: Nullable[typings.babylonjs.mathsMathDotplaneMod.Plane] = js.native
+    
+    /**
+      * Gets or sets the active clipplane 6
+      */
+    /* CompleteClass */
+    var clipPlane6: Nullable[Plane] = js.native
+    /**
+      * Gets or sets the active clipplane 6
+      */
+    @JSName("clipPlane6")
+    var clipPlane6_BaseParticleSystem: Nullable[typings.babylonjs.mathsMathDotplaneMod.Plane] = js.native
+    
+    /**
+      * Gets or sets the active clipplane 1
+      */
+    @JSName("clipPlane")
+    var clipPlane_BaseParticleSystem: Nullable[typings.babylonjs.mathsMathDotplaneMod.Plane] = js.native
     
     /**
       * Random color of each particle after it has been emitted, between color1 and color2 vectors

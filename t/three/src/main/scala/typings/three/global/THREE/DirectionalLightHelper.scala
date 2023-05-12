@@ -1,6 +1,6 @@
 package typings.three.global.THREE
 
-import typings.three.srcUtilsMod.ColorRepresentation
+import typings.three.srcMathColorMod.ColorRepresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class DirectionalLightHelper protected ()
   extends typings.three.mod.DirectionalLightHelper {
   /**
-    * @param light
-    * @param [size=1]
-    * @param color
+    * Create a new instance of {@link DirectionalLightHelper}
+    * @param light The light to be visualized.
+    * @param size Dimensions of the plane. Default `1`
+    * @param color If this is not the set the helper will take the color of the light. Default `light.color`
     */
   def this(light: typings.three.srcLightsDirectionalLightMod.DirectionalLight) = this()
   def this(light: typings.three.srcLightsDirectionalLightMod.DirectionalLight, size: Double) = this()

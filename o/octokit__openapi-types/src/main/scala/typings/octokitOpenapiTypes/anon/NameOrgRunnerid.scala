@@ -6,14 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NameOrgRunnerid extends StObject {
   
-  /** The name of a self-hosted runner's custom label. */
   var name: String
   
-  /** The organization name. The name is not case sensitive. */
   @JSName("org")
   var org_ : String
   
-  /** Unique identifier of the self-hosted runner. */
   var runner_id: Double
 }
 object NameOrgRunnerid {

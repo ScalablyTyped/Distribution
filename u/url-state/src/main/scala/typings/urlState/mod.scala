@@ -18,6 +18,66 @@ object mod extends Shortcut {
   @js.native
   val default: UrlState = js.native
   
+  trait PushHref
+    extends StObject
+       with ReplaceHref {
+    
+    var replace: js.UndefOr[Boolean] = js.undefined
+  }
+  object PushHref {
+    
+    inline def apply(): PushHref = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PushHref]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PushHref] (val x: Self) extends AnyVal {
+      
+      inline def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+      
+      inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+    }
+  }
+  
+  trait ReplaceHref extends StObject {
+    
+    var hash: js.UndefOr[String] = js.undefined
+    
+    var params: js.UndefOr[String] = js.undefined
+    
+    var pathname: js.UndefOr[String] = js.undefined
+    
+    var query: js.UndefOr[String] = js.undefined
+  }
+  object ReplaceHref {
+    
+    inline def apply(): ReplaceHref = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ReplaceHref]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplaceHref] (val x: Self) extends AnyVal {
+      
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      
+      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+      
+      inline def setParams(value: String): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      
+      inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      
+      inline def setPathnameUndefined: Self = StObject.set(x, "pathname", js.undefined)
+      
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    }
+  }
+  
   /* Inlined parent std.EventTarget */
   /* Inlined parent std.Pick<std.URL, 'href' | 'protocol' | 'hostname' | 'port' | 'pathname' | 'search' | 'hash' | 'host' | 'origin'> */
   @js.native
@@ -74,6 +134,8 @@ object mod extends Shortcut {
     
     def push(href: String): Unit = js.native
     def push(href: String, replace: Boolean): Unit = js.native
+    def push(href: PushHref): Unit = js.native
+    def push(href: PushHref, replace: Boolean): Unit = js.native
     
     def query(params: Record[String, String | Null]): Unit = js.native
     def query(params: Record[String, String | Null], replace: Boolean): Unit = js.native
@@ -88,6 +150,7 @@ object mod extends Shortcut {
     def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
     
     def replace(href: String): Unit = js.native
+    def replace(href: ReplaceHref): Unit = js.native
     
     var search: String = js.native
   }

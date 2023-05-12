@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait InvitationidOrg extends StObject {
   
-  /** The unique identifier of the invitation. */
   var invitation_id: Double
   
-  /** The organization name. The name is not case sensitive. */
   @JSName("org")
   var org_ : String
 }

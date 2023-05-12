@@ -12,7 +12,7 @@ trait TagResourceInput extends StObject {
   var ResourceArn: EnvironmentArn
   
   /**
-    * The key-value tag pairs you want to associate to your environment. For example, "Environment": "Staging". To learn more, see Tagging Amazon Web Services resources.
+    * The key-value tag pairs you want to associate to your environment. For example, "Environment": "Staging". For more information, see Tagging Amazon Web Services resources.
     */
   var Tags: TagMap
 }

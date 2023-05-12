@@ -1,7 +1,7 @@
 
 # Scala.js typings for connect-history-api-fallback
 
-Typings are for version 1.3
+Typings are for version 1.5
 
 ## Library description:
 Provides a fallback for non-existing directories so that the HTML 5 history API can be used.

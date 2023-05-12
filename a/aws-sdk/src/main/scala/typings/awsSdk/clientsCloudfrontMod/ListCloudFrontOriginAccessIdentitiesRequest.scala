@@ -12,7 +12,7 @@ trait ListCloudFrontOriginAccessIdentitiesRequest extends StObject {
   var Marker: js.UndefOr[String] = js.undefined
   
   /**
-    * The maximum number of origin access identities you want in the response body. 
+    * The maximum number of origin access identities you want in the response body.
     */
   var MaxItems: js.UndefOr[String] = js.undefined
 }

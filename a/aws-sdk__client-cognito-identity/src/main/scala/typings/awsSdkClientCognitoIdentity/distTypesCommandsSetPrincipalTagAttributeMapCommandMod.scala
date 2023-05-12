@@ -28,8 +28,14 @@ object distTypesCommandsSetPrincipalTagAttributeMapCommandMod {
           Any, 
           Any
         ] {
+    /**
+      * @public
+      */
     def this(input: SetPrincipalTagAttributeMapCommandInput) = this()
     
+    /**
+      * @internal
+      */
     /* private */ var deserialize: Any = js.native
     
     /**
@@ -45,6 +51,9 @@ object distTypesCommandsSetPrincipalTagAttributeMapCommandMod {
       options: HttpHandlerOptions
     ): Handler[SetPrincipalTagAttributeMapCommandInput, SetPrincipalTagAttributeMapCommandOutput] = js.native
     
+    /**
+      * @internal
+      */
     /* private */ var serialize: Any = js.native
   }
   /* static members */

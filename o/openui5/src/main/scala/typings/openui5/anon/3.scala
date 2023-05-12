@@ -1,6 +1,6 @@
 package typings.openui5.anon
 
-import typings.openui5.sapUiTableColumnMod.default
+import typings.openui5.sapUiCoreControlMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `3` extends StObject {
   
   /**
-    * grouped column.
+    * The card the changes are fired from.
     */
-  var column: js.UndefOr[default] = js.undefined
+  var card: js.UndefOr[default] = js.undefined
 }
 object `3` {
   
@@ -22,8 +22,8 @@ object `3` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `3`] (val x: Self) extends AnyVal {
     
-    inline def setColumn(value: default): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setCard(value: default): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     
-    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+    inline def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
   }
 }

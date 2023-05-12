@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FileCreateEvent extends StObject {
   
   /**
-    * The files that got created.
-    */
+  		 * The files that got created.
+  		 */
   val files: js.Array[Uri]
 }
 object FileCreateEvent {

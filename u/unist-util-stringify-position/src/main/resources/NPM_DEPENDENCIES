@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "unist-util-stringify-position" : "3.0.2"
+      "unist-util-stringify-position" : "3.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "unist-util-stringify-position" : "3.0.2"
+      "unist-util-stringify-position" : "3.0.3"
     }
   ],
   "compile-devDependencies" : [

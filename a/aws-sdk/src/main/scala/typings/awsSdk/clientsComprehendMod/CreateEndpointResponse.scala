@@ -10,6 +10,11 @@ trait CreateEndpointResponse extends StObject {
     * The Amazon Resource Number (ARN) of the endpoint being created.
     */
   var EndpointArn: js.UndefOr[ComprehendEndpointArn] = js.undefined
+  
+  /**
+    * The Amazon Resource Number (ARN) of the model to which the endpoint is attached.
+    */
+  var ModelArn: js.UndefOr[ComprehendModelArn] = js.undefined
 }
 object CreateEndpointResponse {
   
@@ -24,5 +29,9 @@ object CreateEndpointResponse {
     inline def setEndpointArn(value: ComprehendEndpointArn): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
     
     inline def setEndpointArnUndefined: Self = StObject.set(x, "EndpointArn", js.undefined)
+    
+    inline def setModelArn(value: ComprehendModelArn): Self = StObject.set(x, "ModelArn", value.asInstanceOf[js.Any])
+    
+    inline def setModelArnUndefined: Self = StObject.set(x, "ModelArn", js.undefined)
   }
 }

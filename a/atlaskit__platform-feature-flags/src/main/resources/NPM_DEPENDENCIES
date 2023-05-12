@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@atlaskit/platform-feature-flags" : "0.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@atlaskit/platform-feature-flags" : "0.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

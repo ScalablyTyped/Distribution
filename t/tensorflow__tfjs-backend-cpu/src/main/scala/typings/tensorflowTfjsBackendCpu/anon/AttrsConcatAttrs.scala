@@ -3,7 +3,7 @@ package typings.tensorflowTfjsBackendCpu.anon
 import typings.tensorflowTfjsBackendCpu.distBackendCpuMod.MathBackendCPU
 import typings.tensorflowTfjsCore.distKernelNamesMod.ConcatAttrs
 import typings.tensorflowTfjsCore.distKernelNamesMod.ConcatInputs
-import typings.tensorflowTfjsCore.distKernelRegistryMod.TensorInfo
+import typings.tensorflowTfjsCore.distTensorInfoMod.TensorInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

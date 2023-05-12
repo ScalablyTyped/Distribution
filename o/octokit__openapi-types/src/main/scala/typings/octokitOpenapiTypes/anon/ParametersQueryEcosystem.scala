@@ -8,11 +8,11 @@ trait ParametersQueryEcosystem extends StObject {
   
   var parameters: QueryEcosystem
   
-  var responses: `304403404422`
+  var responses: `200304400`
 }
 object ParametersQueryEcosystem {
   
-  inline def apply(parameters: QueryEcosystem, responses: `304403404422`): ParametersQueryEcosystem = {
+  inline def apply(parameters: QueryEcosystem, responses: `200304400`): ParametersQueryEcosystem = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryEcosystem]
   }
@@ -22,6 +22,6 @@ object ParametersQueryEcosystem {
     
     inline def setParameters(value: QueryEcosystem): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `304403404422`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200304400`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

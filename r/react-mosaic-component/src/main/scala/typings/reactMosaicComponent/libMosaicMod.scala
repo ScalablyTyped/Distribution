@@ -23,7 +23,7 @@ object libMosaicMod {
     def this(props: MosaicProps[T]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: MosaicProps[T], context: Any) = this()
   }
@@ -34,7 +34,7 @@ object libMosaicMod {
     def this(props: MosaicProps[T]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: MosaicProps[T], context: Any) = this()
     

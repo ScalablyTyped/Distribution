@@ -1,7 +1,7 @@
 
 # Scala.js typings for meshoptimizer
 
-Typings are for version 0.18.1
+Typings are for version 0.19.0
 
 ## Library description:
 Mesh optimizaiton library that makes meshes smaller and faster to render

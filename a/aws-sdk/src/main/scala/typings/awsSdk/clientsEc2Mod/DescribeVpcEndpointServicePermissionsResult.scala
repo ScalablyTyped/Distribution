@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeVpcEndpointServicePermissionsResult extends StObject {
   
   /**
-    * Information about one or more allowed principals.
+    * Information about the allowed principals.
     */
   var AllowedPrincipals: js.UndefOr[AllowedPrincipalSet] = js.undefined
   

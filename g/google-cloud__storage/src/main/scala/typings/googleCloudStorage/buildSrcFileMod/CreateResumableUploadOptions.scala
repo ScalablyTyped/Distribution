@@ -10,6 +10,8 @@ trait CreateResumableUploadOptions extends StObject {
   
   var chunkSize: js.UndefOr[Double] = js.undefined
   
+  var highWaterMark: js.UndefOr[Double] = js.undefined
+  
   var metadata: js.UndefOr[Metadata] = js.undefined
   
   var offset: js.UndefOr[Double] = js.undefined
@@ -41,6 +43,10 @@ object CreateResumableUploadOptions {
     inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
     
     inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
+    
+    inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+    
+    inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
     
     inline def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

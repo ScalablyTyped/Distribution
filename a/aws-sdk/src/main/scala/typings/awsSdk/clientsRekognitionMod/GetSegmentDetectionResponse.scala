@@ -12,9 +12,19 @@ trait GetSegmentDetectionResponse extends StObject {
   var AudioMetadata: js.UndefOr[AudioMetadataList] = js.undefined
   
   /**
+    * Job identifier for the segment detection operation for which you want to obtain results. The job identifer is returned by an initial call to StartSegmentDetection.
+    */
+  var JobId: js.UndefOr[typings.awsSdk.clientsRekognitionMod.JobId] = js.undefined
+  
+  /**
     * Current status of the segment detection job.
     */
   var JobStatus: js.UndefOr[VideoJobStatus] = js.undefined
+  
+  /**
+    * A job identifier specified in the call to StartSegmentDetection and returned in the job completion notification sent to your Amazon Simple Notification Service topic.
+    */
+  var JobTag: js.UndefOr[typings.awsSdk.clientsRekognitionMod.JobTag] = js.undefined
   
   /**
     * If the previous response was incomplete (because there are more labels to retrieve), Amazon Rekognition Video returns a pagination token in the response. You can use this pagination token to retrieve the next set of text.
@@ -35,6 +45,8 @@ trait GetSegmentDetectionResponse extends StObject {
     * If the job fails, StatusMessage provides a descriptive error message.
     */
   var StatusMessage: js.UndefOr[typings.awsSdk.clientsRekognitionMod.StatusMessage] = js.undefined
+  
+  var Video: js.UndefOr[typings.awsSdk.clientsRekognitionMod.Video] = js.undefined
   
   /**
     * Currently, Amazon Rekognition Video returns a single object in the VideoMetadata array. The object contains information about the video stream in the input file that Amazon Rekognition Video chose to analyze. The VideoMetadata object includes the video codec, video format and other information. Video metadata is returned in each page of information returned by GetSegmentDetection.
@@ -57,9 +69,17 @@ object GetSegmentDetectionResponse {
     
     inline def setAudioMetadataVarargs(value: AudioMetadata*): Self = StObject.set(x, "AudioMetadata", js.Array(value*))
     
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    
+    inline def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
+    
     inline def setJobStatus(value: VideoJobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
     
     inline def setJobStatusUndefined: Self = StObject.set(x, "JobStatus", js.undefined)
+    
+    inline def setJobTag(value: JobTag): Self = StObject.set(x, "JobTag", value.asInstanceOf[js.Any])
+    
+    inline def setJobTagUndefined: Self = StObject.set(x, "JobTag", js.undefined)
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
@@ -81,10 +101,14 @@ object GetSegmentDetectionResponse {
     
     inline def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
+    inline def setVideo(value: Video): Self = StObject.set(x, "Video", value.asInstanceOf[js.Any])
+    
     inline def setVideoMetadata(value: VideoMetadataList): Self = StObject.set(x, "VideoMetadata", value.asInstanceOf[js.Any])
     
     inline def setVideoMetadataUndefined: Self = StObject.set(x, "VideoMetadata", js.undefined)
     
     inline def setVideoMetadataVarargs(value: VideoMetadata*): Self = StObject.set(x, "VideoMetadata", js.Array(value*))
+    
+    inline def setVideoUndefined: Self = StObject.set(x, "Video", js.undefined)
   }
 }

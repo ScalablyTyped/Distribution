@@ -23,12 +23,12 @@ object ArrowStyle {
   
   /**
     * An object type to specify the style of arrows to render along a polyline
-    * @property fillColor {string=} - The CSS color value used to fill the arrow shapes. If omitted or the value evaluates to false it defaults to "rgba(255, 255, 255, 0.75)"
-    * @property width {number=} - The width of the arrow shape. The value is taken as a factor of the width of the line, where the arrow description is applied.
+    * fillColor {string=} - The CSS color value used to fill the arrow shapes. If omitted or the value evaluates to false it defaults to "rgba(255, 255, 255, 0.75)"
+    * width {number=} - The width of the arrow shape. The value is taken as a factor of the width of the line, where the arrow description is applied.
     * If omitted or the value is <= 0 it defaults to 1.2
-    * @property length {number=} - The length of the arrow shapes. The value is taken as a factor of the width of the line at the end of which the arrow is drawn.
+    * length {number=} - The length of the arrow shapes. The value is taken as a factor of the width of the line at the end of which the arrow is drawn.
     * If omitted or the value is <= 0 it defaults to 1.6
-    * @property frequency {number=} - The frequency of arrow shapes. The value is taken as factor of the length of the arrow. A value of 1 results in gapless arrows.
+    * frequency {number=} - The frequency of arrow shapes. The value is taken as factor of the length of the arrow. A value of 1 results in gapless arrows.
     * If omitted or the value is false it defaults to 5
     */
   trait Options extends StObject {

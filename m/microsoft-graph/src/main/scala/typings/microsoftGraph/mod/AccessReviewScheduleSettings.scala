@@ -16,7 +16,9 @@ trait AccessReviewScheduleSettings extends StObject {
   /**
     * Indicates whether decisions are automatically applied. When set to false, an admin must apply the decisions manually
     * once the reviewer completes the access review. When set to true, decisions are applied automatically after the access
-    * review instance duration ends, whether or not the reviewers have responded. Default value is false.
+    * review instance duration ends, whether or not the reviewers have responded. Default value is false. CAUTION: If both
+    * autoApplyDecisionsEnabled and defaultDecisionEnabled are true, all access for the principals to the resource risks
+    * being revoked if the reviewers fail to respond.
     */
   var autoApplyDecisionsEnabled: js.UndefOr[Boolean] = js.undefined
   
@@ -29,7 +31,11 @@ trait AccessReviewScheduleSettings extends StObject {
   // Decision chosen if defaultDecisionEnabled is enabled. Can be one of Approve, Deny, or Recommendation.
   var defaultDecision: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Indicates whether the default decision is enabled or disabled when reviewers do not respond. Default value is false.
+  /**
+    * Indicates whether the default decision is enabled or disabled when reviewers do not respond. Default value is false.
+    * CAUTION: If both autoApplyDecisionsEnabled and defaultDecisionEnabled are true, all access for the principals to the
+    * resource risks being revoked if the reviewers fail to respond.
+    */
   var defaultDecisionEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**

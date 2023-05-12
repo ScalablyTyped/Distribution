@@ -87,6 +87,7 @@ type CloudWatchLogsLogGroupArn = String
   - typings.awsSdk.awsSdkStrings.`me-south-1`
   - typings.awsSdk.awsSdkStrings.`me-central-1`
   - typings.awsSdk.awsSdkStrings.`ap-south-1`
+  - typings.awsSdk.awsSdkStrings.`ap-south-2`
   - typings.awsSdk.awsSdkStrings.`ap-southeast-1`
   - typings.awsSdk.awsSdkStrings.`ap-southeast-2`
   - typings.awsSdk.awsSdkStrings.`ap-southeast-3`
@@ -105,6 +106,7 @@ type CloudWatchLogsLogGroupArn = String
   - typings.awsSdk.awsSdkStrings.`us-iso-east-1`
   - typings.awsSdk.awsSdkStrings.`us-iso-west-1`
   - typings.awsSdk.awsSdkStrings.`us-isob-east-1`
+  - typings.awsSdk.awsSdkStrings.`ap-southeast-4`
   - java.lang.String
 */
 type CloudWatchRegion = _CloudWatchRegion | String
@@ -352,9 +354,11 @@ type ResourceRecordSetMultiValueAnswer = Boolean
   - typings.awsSdk.awsSdkStrings.`me-south-1`
   - typings.awsSdk.awsSdkStrings.`me-central-1`
   - typings.awsSdk.awsSdkStrings.`ap-south-1`
+  - typings.awsSdk.awsSdkStrings.`ap-south-2`
   - typings.awsSdk.awsSdkStrings.`af-south-1`
   - typings.awsSdk.awsSdkStrings.`eu-south-1`
   - typings.awsSdk.awsSdkStrings.`eu-south-2`
+  - typings.awsSdk.awsSdkStrings.`ap-southeast-4`
   - java.lang.String
 */
 type ResourceRecordSetRegion = _ResourceRecordSetRegion | String
@@ -484,6 +488,7 @@ type VPCId = String
   - typings.awsSdk.awsSdkStrings.`ap-southeast-2`
   - typings.awsSdk.awsSdkStrings.`ap-southeast-3`
   - typings.awsSdk.awsSdkStrings.`ap-south-1`
+  - typings.awsSdk.awsSdkStrings.`ap-south-2`
   - typings.awsSdk.awsSdkStrings.`ap-northeast-1`
   - typings.awsSdk.awsSdkStrings.`ap-northeast-2`
   - typings.awsSdk.awsSdkStrings.`ap-northeast-3`
@@ -494,6 +499,7 @@ type VPCId = String
   - typings.awsSdk.awsSdkStrings.`af-south-1`
   - typings.awsSdk.awsSdkStrings.`eu-south-1`
   - typings.awsSdk.awsSdkStrings.`eu-south-2`
+  - typings.awsSdk.awsSdkStrings.`ap-southeast-4`
   - java.lang.String
 */
 type VPCRegion = _VPCRegion | String

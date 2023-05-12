@@ -1,7 +1,7 @@
 
 # Scala.js typings for workbox-cacheable-response
 
-Typings are for version 4.3
+Typings are for version 6.5.4
 
 ## Library description:
 This library takes a Response object and determines whether it's cacheable based on a specific configuration.
@@ -24,7 +24,7 @@ This library takes a Response object and determines whether it's cacheable based
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

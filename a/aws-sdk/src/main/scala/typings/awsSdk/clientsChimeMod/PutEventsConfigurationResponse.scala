@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PutEventsConfigurationResponse extends StObject {
   
+  /**
+    * The configuration that allows a bot to receive outgoing events. Can be an HTTPS endpoint or an AWS Lambda function ARN.
+    */
   var EventsConfiguration: js.UndefOr[typings.awsSdk.clientsChimeMod.EventsConfiguration] = js.undefined
 }
 object PutEventsConfigurationResponse {

@@ -2,7 +2,6 @@ package typings.octokitOpenapiTypes.anon
 
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.all
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.selected
-import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +14,7 @@ trait Contactemail extends StObject {
     */
   var access_tokens_url: String
   
-  var account: (Partial[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
-  ]) | Null
+  var account: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any) | Null
   
   /** @example 1 */
   var app_id: Double
@@ -115,9 +112,7 @@ object Contactemail {
     inline def setAccess_tokens_url(value: String): Self = StObject.set(x, "access_tokens_url", value.asInstanceOf[js.Any])
     
     inline def setAccount(
-      value: Partial[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
     ): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
     inline def setAccountNull: Self = StObject.set(x, "account", null)

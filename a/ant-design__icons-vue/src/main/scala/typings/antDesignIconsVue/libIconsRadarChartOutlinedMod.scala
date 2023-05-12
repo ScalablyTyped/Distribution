@@ -16,7 +16,7 @@ object libIconsRadarChartOutlinedMod extends Shortcut {
   @js.native
   trait RadarChartOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_RadarChartOutlinedIconType: String = js.native

@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `188` extends StObject {
   
-  var data: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.ExtractOctokitResponse<@octokit/openapi-types.@octokit/openapi-types.paths['/repositories/{repository_id}/environments/{environment_name}/secrets']['get']>['data']['secrets'] */ js.Any
+  var data: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.ExtractOctokitResponse<@octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/topics']['get']>['data']['names'] */ js.Any
 }
 object `188` {
   
   inline def apply(
-    data: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.ExtractOctokitResponse<@octokit/openapi-types.@octokit/openapi-types.paths['/repositories/{repository_id}/environments/{environment_name}/secrets']['get']>['data']['secrets'] */ js.Any
+    data: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.ExtractOctokitResponse<@octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/topics']['get']>['data']['names'] */ js.Any
   ): `188` = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[`188`]
@@ -21,7 +21,7 @@ object `188` {
   implicit open class MutableBuilder[Self <: `188`] (val x: Self) extends AnyVal {
     
     inline def setData(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.ExtractOctokitResponse<@octokit/openapi-types.@octokit/openapi-types.paths['/repositories/{repository_id}/environments/{environment_name}/secrets']['get']>['data']['secrets'] */ js.Any
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.ExtractOctokitResponse<@octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/topics']['get']>['data']['names'] */ js.Any
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

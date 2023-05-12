@@ -1,5 +1,6 @@
 package typings.shexj
 
+import typings.shexj.mod.nodeKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -91,7 +92,9 @@ object shexjStrings {
   inline def Wildcard: Wildcard = "Wildcard".asInstanceOf[Wildcard]
   
   @js.native
-  sealed trait bnode extends StObject
+  sealed trait bnode
+    extends StObject
+       with nodeKind
   inline def bnode: bnode = "bnode".asInstanceOf[bnode]
   
   @js.native
@@ -99,14 +102,20 @@ object shexjStrings {
   inline def httpColonSlashSlashwwwDotw3DotorgSlashnsSlashshexDotjsonld: httpColonSlashSlashwwwDotw3DotorgSlashnsSlashshexDotjsonld = "http://www.w3.org/ns/shex.jsonld".asInstanceOf[httpColonSlashSlashwwwDotw3DotorgSlashnsSlashshexDotjsonld]
   
   @js.native
-  sealed trait iri extends StObject
+  sealed trait iri
+    extends StObject
+       with nodeKind
   inline def iri: iri = "iri".asInstanceOf[iri]
   
   @js.native
-  sealed trait literal extends StObject
+  sealed trait literal
+    extends StObject
+       with nodeKind
   inline def literal: literal = "literal".asInstanceOf[literal]
   
   @js.native
-  sealed trait nonliteral extends StObject
+  sealed trait nonliteral
+    extends StObject
+       with nodeKind
   inline def nonliteral: nonliteral = "nonliteral".asInstanceOf[nonliteral]
 }

@@ -13,4 +13,6 @@ object mod {
   
   inline def default[T](source: js.Iterable[T]): js.Promise[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[T]]]
   inline def default[T](source: AsyncIterable[T]): js.Promise[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[T]]]
+  
+  inline def default_T_Array[T](source: js.Iterable[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
 }

@@ -34,6 +34,7 @@ object distTypesJweGeneralEncryptMod {
       * Adds an additional recipient for the General JWE object.
       *
       * @param key Public Key or Secret to encrypt the Content Encryption Key for the recipient with.
+      *   See {@link https://github.com/panva/jose/issues/210#jwe-alg Algorithm Key Requirements}.
       * @param options JWE Encryption options.
       */
     def addRecipient(key: KeyLike): Recipient = js.native

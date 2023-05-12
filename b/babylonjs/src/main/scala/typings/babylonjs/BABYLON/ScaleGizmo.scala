@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.babylonjs.BABYLON.IDisposable because Already inherited
 - typings.babylonjs.BABYLON.IGizmo because Already inherited
-- typings.babylonjs.BABYLON.IScaleGizmo because var conflicts: _rootMesh, attachedMesh, attachedNode, customRotationQuaternion, gizmoLayer, isHovered, scaleRatio, updateGizmoPositionToMatchAttachedMesh, updateGizmoRotationToMatchAttachedMesh, updateScale. Inlined xGizmo, yGizmo, zGizmo, uniformScaleGizmo, onDragStartObservable, onDragEndObservable, snapDistance, sensitivity, addToAxisCache */ @js.native
+- typings.babylonjs.BABYLON.IScaleGizmo because var conflicts: _rootMesh, attachedMesh, attachedNode, customRotationQuaternion, gizmoLayer, isHovered, scaleRatio, updateGizmoPositionToMatchAttachedMesh, updateGizmoRotationToMatchAttachedMesh, updateScale. Inlined xGizmo, yGizmo, zGizmo, uniformScaleGizmo, onDragStartObservable, onDragEndObservable, snapDistance, sensitivity, addToAxisCache, coloredMaterial, hoverMaterial, disableMaterial */ @js.native
 trait ScaleGizmo
   extends StObject
      with Gizmo {
@@ -52,6 +52,24 @@ trait ScaleGizmo
   @JSName("attachedNode")
   def attachedNode_MScaleGizmo: Nullable[Node] = js.native
   
+  /** Default material used to render when gizmo is not disabled or hovered */
+  def coloredMaterial: StandardMaterial = js.native
+  /** Default material used to render when gizmo is not disabled or hovered */
+  @JSName("coloredMaterial")
+  var coloredMaterial_FScaleGizmo: StandardMaterial = js.native
+  
+  /** Material used to render when gizmo is disabled. typically grey.*/
+  def disableMaterial: StandardMaterial = js.native
+  /** Material used to render when gizmo is disabled. typically grey.*/
+  @JSName("disableMaterial")
+  var disableMaterial_FScaleGizmo: StandardMaterial = js.native
+  
+  /** Material used to render when gizmo is hovered with mouse*/
+  def hoverMaterial: StandardMaterial = js.native
+  /** Material used to render when gizmo is hovered with mouse*/
+  @JSName("hoverMaterial")
+  var hoverMaterial_FScaleGizmo: StandardMaterial = js.native
+  
   /**
     * True when the mouse pointer is hovering a gizmo mesh
     */
@@ -92,6 +110,9 @@ trait ScaleGizmo
   
   @JSName("updateGizmoRotationToMatchAttachedMesh")
   def updateGizmoRotationToMatchAttachedMesh_MScaleGizmo: Boolean = js.native
+  
+  @JSName("updateScale")
+  def updateScale_MScaleGizmo: Boolean = js.native
   
   /**
     * Internal gizmo used for interactions on the x axis

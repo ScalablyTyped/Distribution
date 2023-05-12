@@ -6,6 +6,7 @@ import typings.std.Iterable
 import typings.std.IteratorResult
 import typings.std.Map
 import typings.std.Node
+import typings.std.Window
 import typings.yjs.distSrcStructsItemMod.Item
 import typings.yjs.distSrcTypesAbstractTypeMod.AbstractType
 import typings.yjs.distSrcTypesYxmlelementMod.YXmlElement
@@ -64,14 +65,21 @@ object distSrcTypesYxmlfragmentMod {
     /**
       * @type {YXmlElement|YXmlText|null}
       */
-    def firstChild: YXmlElement | YXmlText | Null = js.native
+    def firstChild: YXmlElement[StringDictionary[String]] | YXmlText | Null = js.native
     
     /**
       * Executes a provided function on once on overy child element.
       *
-      * @param {function(YXmlElement|YXmlText,number, typeof this):void} f A function to execute on every element of this YArray.
+      * @param {function(YXmlElement|YXmlText,number, typeof self):void} f A function to execute on every element of this YArray.
       */
-    def forEach(f: js.Function3[/* arg0 */ YXmlElement | YXmlText, /* arg1 */ Double, /* arg2 */ this.type, Unit]): Unit = js.native
+    def forEach(
+      f: js.Function3[
+          /* arg0 */ YXmlElement[StringDictionary[String]] | YXmlText, 
+          /* arg1 */ Double, 
+          /* arg2 */ Window & (/* globalThis */ Any), 
+          Unit
+        ]
+    ): Unit = js.native
     
     /**
       * Returns the i-th element from a YArray.
@@ -79,7 +87,7 @@ object distSrcTypesYxmlfragmentMod {
       * @param {number} index The index of the element to return from the YArray
       * @return {YXmlElement|YXmlText}
       */
-    def get(index: Double): YXmlElement | YXmlText = js.native
+    def get(index: Double): YXmlElement[StringDictionary[String]] | YXmlText = js.native
     
     /**
       * Inserts new content at an index.
@@ -91,7 +99,7 @@ object distSrcTypesYxmlfragmentMod {
       * @param {number} index The index to insert content at
       * @param {Array<YXmlElement|YXmlText>} content The array of content
       */
-    def insert(index: Double, content: js.Array[YXmlElement | YXmlText]): Unit = js.native
+    def insert(index: Double, content: js.Array[YXmlElement[StringDictionary[String]] | YXmlText]): Unit = js.native
     
     /**
       * Inserts new content at an index.
@@ -103,10 +111,13 @@ object distSrcTypesYxmlfragmentMod {
       * @param {null|Item|YXmlElement|YXmlText} ref The index to insert content at
       * @param {Array<YXmlElement|YXmlText>} content The array of content
       */
-    def insertAfter(ref: Null, content: js.Array[YXmlElement | YXmlText]): Unit = js.native
-    def insertAfter(ref: Item, content: js.Array[YXmlElement | YXmlText]): Unit = js.native
-    def insertAfter(ref: YXmlElement, content: js.Array[YXmlElement | YXmlText]): Unit = js.native
-    def insertAfter(ref: YXmlText, content: js.Array[YXmlElement | YXmlText]): Unit = js.native
+    def insertAfter(ref: Null, content: js.Array[YXmlElement[StringDictionary[String]] | YXmlText]): Unit = js.native
+    def insertAfter(ref: Item, content: js.Array[YXmlElement[StringDictionary[String]] | YXmlText]): Unit = js.native
+    def insertAfter(
+      ref: YXmlElement[StringDictionary[String]],
+      content: js.Array[YXmlElement[StringDictionary[String]] | YXmlText]
+    ): Unit = js.native
+    def insertAfter(ref: YXmlText, content: js.Array[YXmlElement[StringDictionary[String]] | YXmlText]): Unit = js.native
     
     def length: Double = js.native
     
@@ -115,7 +126,7 @@ object distSrcTypesYxmlfragmentMod {
       *
       * @param {Array<YXmlElement|YXmlText>} content Array of content to append.
       */
-    def push(content: js.Array[YXmlElement | YXmlText]): Unit = js.native
+    def push(content: js.Array[YXmlElement[StringDictionary[String]] | YXmlText]): Unit = js.native
     
     /**
       * Returns the first YXmlElement that matches the query.
@@ -132,7 +143,7 @@ object distSrcTypesYxmlfragmentMod {
       *
       * @public
       */
-    def querySelector(query: CSSSelector): YXmlElement | YXmlText | YXmlHook | Null = js.native
+    def querySelector(query: CSSSelector): YXmlElement[StringDictionary[String]] | YXmlText | YXmlHook | Null = js.native
     
     /**
       * Returns all YXmlElements that match the query.
@@ -145,7 +156,7 @@ object distSrcTypesYxmlfragmentMod {
       *
       * @public
       */
-    def querySelectorAll(query: CSSSelector): js.Array[YXmlElement | YXmlText | YXmlHook | Null] = js.native
+    def querySelectorAll(query: CSSSelector): js.Array[YXmlElement[StringDictionary[String]] | YXmlText | YXmlHook | Null] = js.native
     
     /**
       * Transforms this YArray to a JavaScript Array.
@@ -154,17 +165,17 @@ object distSrcTypesYxmlfragmentMod {
       * @param {number} [end]
       * @return {Array<YXmlElement|YXmlText>}
       */
-    def slice(): js.Array[YXmlElement | YXmlText] = js.native
-    def slice(start: Double): js.Array[YXmlElement | YXmlText] = js.native
-    def slice(start: Double, end: Double): js.Array[YXmlElement | YXmlText] = js.native
-    def slice(start: Unit, end: Double): js.Array[YXmlElement | YXmlText] = js.native
+    def slice(): js.Array[YXmlElement[StringDictionary[String]] | YXmlText] = js.native
+    def slice(start: Double): js.Array[YXmlElement[StringDictionary[String]] | YXmlText] = js.native
+    def slice(start: Double, end: Double): js.Array[YXmlElement[StringDictionary[String]] | YXmlText] = js.native
+    def slice(start: Unit, end: Double): js.Array[YXmlElement[StringDictionary[String]] | YXmlText] = js.native
     
     /**
       * Transforms this YArray to a JavaScript Array.
       *
       * @return {Array<YXmlElement|YXmlText|YXmlHook>}
       */
-    def toArray(): js.Array[YXmlElement | YXmlText | YXmlHook] = js.native
+    def toArray(): js.Array[YXmlElement[StringDictionary[String]] | YXmlText | YXmlHook] = js.native
     
     /**
       * Creates a Dom Element that mirrors this YXmlElement.
@@ -195,21 +206,24 @@ object distSrcTypesYxmlfragmentMod {
       *
       * @param {Array<YXmlElement|YXmlText>} content Array of content to preppend.
       */
-    def unshift(content: js.Array[YXmlElement | YXmlText]): Unit = js.native
+    def unshift(content: js.Array[YXmlElement[StringDictionary[String]] | YXmlText]): Unit = js.native
   }
   
   @JSImport("yjs/dist/src/types/YXmlFragment", "YXmlTreeWalker")
   @js.native
   open class YXmlTreeWalker protected ()
     extends StObject
-       with Iterable[YXmlElement | YXmlText | YXmlHook] {
-    def this(root: YXmlElement) = this()
+       with Iterable[YXmlElement[StringDictionary[String]] | YXmlText | YXmlHook] {
+    def this(root: YXmlElement[StringDictionary[String]]) = this()
     /**
       * @param {YXmlFragment | YXmlElement} root
       * @param {function(AbstractType<any>):boolean} [f]
       */
     def this(root: YXmlFragment) = this()
-    def this(root: YXmlElement, f: js.Function1[/* arg0 */ AbstractType[Any], Boolean]) = this()
+    def this(
+      root: YXmlElement[StringDictionary[String]],
+      f: js.Function1[/* arg0 */ AbstractType[Any], Boolean]
+    ) = this()
     def this(root: YXmlFragment, f: js.Function1[/* arg0 */ AbstractType[Any], Boolean]) = this()
     
     /**
@@ -221,7 +235,7 @@ object distSrcTypesYxmlfragmentMod {
     
     var _firstCall: Boolean = js.native
     
-    var _root: YXmlFragment | YXmlElement = js.native
+    var _root: YXmlFragment | YXmlElement[StringDictionary[String]] = js.native
     
     @JSName(js.Symbol.iterator)
     var iterator_YXmlTreeWalker: js.Function0[this.type] = js.native
@@ -233,11 +247,11 @@ object distSrcTypesYxmlfragmentMod {
       *
       * @public
       */
-    def next(): IteratorResult[YXmlElement | YXmlText | YXmlHook, Any] = js.native
+    def next(): IteratorResult[YXmlElement[StringDictionary[String]] | YXmlText | YXmlHook, Any] = js.native
   }
   
-  inline def readYXmlFragment(decoder: UpdateDecoderV1): YXmlFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("readYXmlFragment")(decoder.asInstanceOf[js.Any]).asInstanceOf[YXmlFragment]
-  inline def readYXmlFragment(decoder: UpdateDecoderV2): YXmlFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("readYXmlFragment")(decoder.asInstanceOf[js.Any]).asInstanceOf[YXmlFragment]
+  inline def readYXmlFragment(_decoder: UpdateDecoderV1): YXmlFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("readYXmlFragment")(_decoder.asInstanceOf[js.Any]).asInstanceOf[YXmlFragment]
+  inline def readYXmlFragment(_decoder: UpdateDecoderV2): YXmlFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("readYXmlFragment")(_decoder.asInstanceOf[js.Any]).asInstanceOf[YXmlFragment]
   
   type CSSSelector = String
   

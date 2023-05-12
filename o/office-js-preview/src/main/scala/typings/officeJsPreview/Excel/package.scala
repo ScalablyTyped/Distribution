@@ -6,20 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 
 /**
-  * Represents the layout of a card in card view.
-  *
-  * @remarks
-  * [Api set: ExcelApi 1.16]
-  */
-type CardLayout = EntityCardLayout
-
-/**
   * Represents the value in a cell.
   *
   * @remarks
   * [Api set: ExcelApi 1.16]
   */
-type CellValue = (ArrayCellValue & CellValueExtraProperties) | (BooleanCellValue & CellValueExtraProperties) | (DoubleCellValue & CellValueExtraProperties) | (EntityCellValue & CellValueExtraProperties) | (EmptyCellValue & CellValueExtraProperties) | (ErrorCellValue & CellValueExtraProperties) | (FormattedNumberCellValue & CellValueExtraProperties) | (LinkedEntityCellValue & CellValueExtraProperties) | (ReferenceCellValue & CellValueExtraProperties) | (StringCellValue & CellValueExtraProperties) | (ValueTypeNotAvailableCellValue & CellValueExtraProperties) | (WebImageCellValue & CellValueExtraProperties)
+type CellValue = (ArrayCellValue & CellValueExtraProperties) | (BooleanCellValue & CellValueExtraProperties) | (DoubleCellValue & CellValueExtraProperties) | (EntityCellValue & CellValueExtraProperties) | (EmptyCellValue & CellValueExtraProperties) | (ErrorCellValue & CellValueExtraProperties) | (FormattedNumberCellValue & CellValueExtraProperties) | (LinkedEntityCellValue & CellValueExtraProperties) | (LocalImageCellValue & CellValueExtraProperties) | (ReferenceCellValue & CellValueExtraProperties) | (StringCellValue & CellValueExtraProperties) | (ValueTypeNotAvailableCellValue & CellValueExtraProperties) | (WebImageCellValue & CellValueExtraProperties)
 
 /**
   * Represents the value and metadata of a property. The metadata applies to the property (and not the value), but it is combined with the value in this type.

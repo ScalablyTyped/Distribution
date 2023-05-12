@@ -9,21 +9,17 @@ object geom {
   @JSGlobal("jsts.geom.Coordinate")
   @js.native
   /**
-    * @constructor
     */
   open class Coordinate ()
     extends StObject
        with typings.jsts.jsts.geom.Coordinate {
     /**
-      * @constructor
       */
     def this(c: typings.jsts.jsts.geom.Coordinate) = this()
     /**
-      * @constructor
       */
     def this(x: Double, y: Double) = this()
     /**
-      * @constructor
       */
     def this(x: Double, y: Double, z: Double) = this()
     
@@ -319,7 +315,6 @@ object geom {
     extends StObject
        with typings.jsts.jsts.geom.LineString {
     /**
-      * @constructor
       */
     def this(points: js.Array[typings.jsts.jsts.geom.Coordinate]) = this()
     def this(points: js.Array[typings.jsts.jsts.geom.Coordinate], factory: Any) = this()
@@ -344,8 +339,6 @@ object geom {
       factory: typings.jsts.jsts.geom.GeometryFactory
     ) = this()
     /**
-      * @constructor
-      *
       * @deprecated Use GeometryFactory instead
       */
     def this(
@@ -361,12 +354,9 @@ object geom {
     extends StObject
        with typings.jsts.jsts.geom.MultiPoint {
     /**
-      * @constructor
       */
     def this(points: js.Array[typings.jsts.jsts.geom.Point], factory: typings.jsts.jsts.geom.GeometryFactory) = this()
     /**
-      * @constructor
-      *
       * @deprecated Use GeometryFactory instead
       */
     def this(
@@ -400,7 +390,6 @@ object geom {
     extends StObject
        with typings.jsts.jsts.geom.Point {
     /**
-      * @constructor
       */
     def this(coordinate: typings.jsts.jsts.geom.Coordinate) = this()
     def this(coordinate: typings.jsts.jsts.geom.Coordinate, factory: Any) = this()
@@ -412,7 +401,6 @@ object geom {
     extends StObject
        with typings.jsts.jsts.geom.Polygon {
     /**
-      * @constructor
       */
     def this(shell: typings.jsts.jsts.geom.LinearRing) = this()
     def this(shell: typings.jsts.jsts.geom.LinearRing, holes: js.Array[typings.jsts.jsts.geom.LinearRing]) = this()

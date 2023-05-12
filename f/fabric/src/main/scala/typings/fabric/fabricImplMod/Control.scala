@@ -132,7 +132,6 @@ open class Control () extends StObject {
   /**
     * Sets the length of the control. If null, defaults to object's cornerSize.
     * Expects both sizeX and sizeY to be set when set.
-    * @type {?Number}
     */
   var sizeX: js.UndefOr[Double] = js.native
   
@@ -145,7 +144,6 @@ open class Control () extends StObject {
   /**
     * Sets the length of the touch area of the control. If null, defaults to object's touchCornerSize.
     * Expects both touchSizeX and touchSizeY to be set when set.
-    * @type {?Number}
     * @default null
     */
   var touchSizeX: js.UndefOr[Double] = js.native
@@ -153,7 +151,6 @@ open class Control () extends StObject {
   /**
     * Sets the height of the touch area of the control. If null, defaults to object's touchCornerSize.
     * Expects both touchSizeX and touchSizeY to be set when set.
-    * @type {?Number}
     * @default null
     */
   var touchSizeY: js.UndefOr[Double] = js.native
@@ -163,7 +160,6 @@ open class Control () extends StObject {
     * mainly for backward compatibility.
     * if you do not want to see a control, you can remove it
     * from the controlset.
-    * @type {Boolean}
     * @default true
     */
   var visible: Boolean = js.native

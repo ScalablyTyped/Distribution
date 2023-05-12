@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.anon.Granularity
+import typings.cesium.anon.ExtrudedHeight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("cesium", "CorridorOutlineGeometry")
 @js.native
 open class CorridorOutlineGeometry protected () extends StObject {
-  def this(options: Granularity) = this()
+  def this(options: ExtrudedHeight) = this()
   
   /**
     * The number of elements used to pack the object into an array.

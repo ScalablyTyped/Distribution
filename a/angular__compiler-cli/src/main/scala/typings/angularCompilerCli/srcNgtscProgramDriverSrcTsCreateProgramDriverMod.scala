@@ -10,17 +10,19 @@ import typings.typescript.mod.CompilerHost
 import typings.typescript.mod.CompilerOptions
 import typings.typescript.mod.CreateSourceFileOptions
 import typings.typescript.mod.FileReference
-import typings.typescript.mod.ModuleKind.CommonJS
-import typings.typescript.mod.ModuleKind.ESNext
 import typings.typescript.mod.ModuleResolutionCache
 import typings.typescript.mod.ParsedCommandLine
 import typings.typescript.mod.Path
 import typings.typescript.mod.Program
+import typings.typescript.mod.ResolutionMode
 import typings.typescript.mod.ResolvedModule
+import typings.typescript.mod.ResolvedModuleWithFailedLookupLocations
 import typings.typescript.mod.ResolvedProjectReference
 import typings.typescript.mod.ResolvedTypeReferenceDirective
+import typings.typescript.mod.ResolvedTypeReferenceDirectiveWithFailedLookupLocations
 import typings.typescript.mod.ScriptTarget
 import typings.typescript.mod.SourceFile
+import typings.typescript.mod.StringLiteralLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,6 +74,8 @@ object srcNgtscProgramDriverSrcTsCreateProgramDriverMod {
         ]
       ] = js.native
     
+    var hasInvalidatedResolutions: js.UndefOr[js.Function1[/* filePath */ Path, Boolean]] = js.native
+    
     var readDirectory: js.UndefOr[
         js.Function5[
           /* rootDir */ String, 
@@ -87,6 +91,18 @@ object srcNgtscProgramDriverSrcTsCreateProgramDriverMod {
     
     var realpath: js.UndefOr[js.Function1[/* path */ String, String]] = js.native
     
+    var resolveModuleNameLiterals: js.UndefOr[
+        js.Function6[
+          /* moduleLiterals */ js.Array[StringLiteralLike], 
+          /* containingFile */ String, 
+          /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
+          /* options */ CompilerOptions, 
+          /* containingSourceFile */ SourceFile, 
+          /* reusedNames */ js.UndefOr[js.Array[StringLiteralLike]], 
+          js.Array[ResolvedModuleWithFailedLookupLocations]
+        ]
+      ] = js.native
+    
     var resolveModuleNames: js.UndefOr[
         js.Function6[
           /* moduleNames */ js.Array[String], 
@@ -99,13 +115,25 @@ object srcNgtscProgramDriverSrcTsCreateProgramDriverMod {
         ]
       ] = js.native
     
+    var resolveTypeReferenceDirectiveReferences: js.UndefOr[
+        js.Function6[
+          /* typeDirectiveReferences */ js.Array[String | FileReference], 
+          /* containingFile */ String, 
+          /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
+          /* options */ CompilerOptions, 
+          /* containingSourceFile */ js.UndefOr[SourceFile], 
+          /* reusedNames */ js.UndefOr[js.Array[String | FileReference]], 
+          js.Array[ResolvedTypeReferenceDirectiveWithFailedLookupLocations]
+        ]
+      ] = js.native
+    
     var resolveTypeReferenceDirectives: js.UndefOr[
         js.Function5[
           /* typeReferenceDirectiveNames */ js.Array[FileReference | String], 
           /* containingFile */ String, 
           /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
           /* options */ CompilerOptions, 
-          /* containingFileMode */ js.UndefOr[CommonJS | ESNext], 
+          /* containingFileMode */ js.UndefOr[ResolutionMode], 
           js.Array[js.UndefOr[ResolvedTypeReferenceDirective]]
         ]
       ] = js.native

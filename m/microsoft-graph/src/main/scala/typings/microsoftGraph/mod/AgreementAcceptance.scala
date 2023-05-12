@@ -17,7 +17,7 @@ trait AgreementAcceptance
   // The display name of the device used for accepting the agreement.
   var deviceDisplayName: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The unique identifier of the device used for accepting the agreement.
+  // The unique identifier of the device used for accepting the agreement. Supports $filter (eq) and eq for null values.
   var deviceId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The operating system used to accept the agreement.
@@ -28,7 +28,8 @@ trait AgreementAcceptance
   
   /**
     * The expiration date time of the acceptance. The Timestamp type represents date and time information using ISO 8601
-    * format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    * format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Supports $filter
+    * (eq, ge, le) and eq for null values.
     */
   var expirationDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
@@ -47,7 +48,7 @@ trait AgreementAcceptance
   // Email of the user when the acceptance was recorded.
   var userEmail: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The identifier of the user who accepted the agreement.
+  // The identifier of the user who accepted the agreement. Supports $filter (eq).
   var userId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // UPN of the user when the acceptance was recorded.

@@ -1,6 +1,6 @@
 package typings.enhancedResolve.mod
 
-import typings.enhancedResolve.anon.ForceRelative
+import typings.enhancedResolve.anon.Name
 import typings.enhancedResolve.enhancedResolveBooleans.`false`
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
@@ -40,7 +40,7 @@ trait ResolveOptions extends StObject {
   
   var importsFields: Set[String | js.Array[String]]
   
-  var mainFields: js.Array[ForceRelative]
+  var mainFields: js.Array[Name]
   
   var mainFiles: Set[String]
   
@@ -83,7 +83,7 @@ object ResolveOptions {
     fileSystem: typings.std.FileSystem,
     fullySpecified: Boolean,
     importsFields: Set[String | js.Array[String]],
-    mainFields: js.Array[ForceRelative],
+    mainFields: js.Array[Name],
     mainFiles: Set[String],
     modules: js.Array[String | js.Array[String]],
     plugins: js.Array[typings.std.Plugin],
@@ -138,9 +138,9 @@ object ResolveOptions {
     
     inline def setImportsFields(value: Set[String | js.Array[String]]): Self = StObject.set(x, "importsFields", value.asInstanceOf[js.Any])
     
-    inline def setMainFields(value: js.Array[ForceRelative]): Self = StObject.set(x, "mainFields", value.asInstanceOf[js.Any])
+    inline def setMainFields(value: js.Array[Name]): Self = StObject.set(x, "mainFields", value.asInstanceOf[js.Any])
     
-    inline def setMainFieldsVarargs(value: ForceRelative*): Self = StObject.set(x, "mainFields", js.Array(value*))
+    inline def setMainFieldsVarargs(value: Name*): Self = StObject.set(x, "mainFields", js.Array(value*))
     
     inline def setMainFiles(value: Set[String]): Self = StObject.set(x, "mainFiles", value.asInstanceOf[js.Any])
     

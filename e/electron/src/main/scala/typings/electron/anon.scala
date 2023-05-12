@@ -37,11 +37,13 @@ import typings.electron.Electron.CrossProcessExports.SystemPreferences
 import typings.electron.Electron.CrossProcessExports.TouchBar
 import typings.electron.Electron.CrossProcessExports.Tray
 import typings.electron.Electron.CrossProcessExports.WebFrame
+import typings.electron.Electron.ForkOptions
 import typings.electron.Electron.FromPartitionOptions
 import typings.electron.Electron.MenuItemConstructorOptions
 import typings.electron.Electron.NativeImage_
 import typings.electron.Electron.Session_
 import typings.electron.Electron.Size
+import typings.electron.Electron.UtilityProcess_
 import typings.electron.Electron.WebContents_
 import typings.electron.Electron.WebFrameMain_
 import typings.electron.electronStrings.allow
@@ -71,23 +73,29 @@ object anon {
     }
   }
   
-  trait OverrideBrowserWindowOptions extends StObject {
+  trait OutlivesOpener extends StObject {
     
     var action: allow
     
+    var outlivesOpener: js.UndefOr[Boolean] = js.undefined
+    
     var overrideBrowserWindowOptions: js.UndefOr[BrowserWindowConstructorOptions] = js.undefined
   }
-  object OverrideBrowserWindowOptions {
+  object OutlivesOpener {
     
-    inline def apply(): OverrideBrowserWindowOptions = {
+    inline def apply(): OutlivesOpener = {
       val __obj = js.Dynamic.literal(action = "allow")
-      __obj.asInstanceOf[OverrideBrowserWindowOptions]
+      __obj.asInstanceOf[OutlivesOpener]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: OverrideBrowserWindowOptions] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: OutlivesOpener] (val x: Self) extends AnyVal {
       
       inline def setAction(value: allow): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      
+      inline def setOutlivesOpener(value: Boolean): Self = StObject.set(x, "outlivesOpener", value.asInstanceOf[js.Any])
+      
+      inline def setOutlivesOpenerUndefined: Self = StObject.set(x, "outlivesOpener", js.undefined)
       
       inline def setOverrideBrowserWindowOptions(value: BrowserWindowConstructorOptions): Self = StObject.set(x, "overrideBrowserWindowOptions", value.asInstanceOf[js.Any])
       
@@ -689,10 +697,13 @@ object anon {
     /**
       * fulfilled with the file's thumbnail preview image, which is a NativeImage.
       *
+      * Note: The Windows implementation will ignore `size.height` and scale the height
+      * according to `size.width`.
+      *
       * @platform darwin,win32
       */
     /* static member */
-    def createThumbnailFromPath(path: String, maxSize: Size): js.Promise[NativeImage_] = js.native
+    def createThumbnailFromPath(path: String, size: Size): js.Promise[NativeImage_] = js.native
   }
   
   trait TypeofNotification extends StObject {
@@ -778,32 +789,43 @@ object anon {
   
   trait TypeofTouchBar extends StObject
   
+  @js.native
+  trait TypeofUtilityProcess extends StObject {
+    
+    // Docs: https://electronjs.org/docs/api/utility-process
+    /* static member */
+    def fork(modulePath: String): UtilityProcess_ = js.native
+    def fork(modulePath: String, args: js.Array[String]): UtilityProcess_ = js.native
+    def fork(modulePath: String, args: js.Array[String], options: ForkOptions): UtilityProcess_ = js.native
+    def fork(modulePath: String, args: Unit, options: ForkOptions): UtilityProcess_ = js.native
+  }
+  
   trait TypeofWebContents extends StObject {
     
     // Docs: https://electronjs.org/docs/api/web-contents
     /**
-      * | undefined - A WebContents instance with the given TargetID, or `undefined` if
-      * there is no WebContents associated with the given TargetID.
+      * A WebContents instance with the given TargetID, or `undefined` if there is no
+      * WebContents associated with the given TargetID.
       *
       * When communicating with the Chrome DevTools Protocol, it can be useful to lookup
       * a WebContents instance based on its assigned TargetID.
       */
     /* static member */
-    def fromDevToolsTargetId(targetId: String): WebContents_
+    def fromDevToolsTargetId(targetId: String): js.UndefOr[WebContents_]
     
     /**
-      * | undefined - A WebContents instance with the given WebFrameMain, or `undefined`
-      * if there is no WebContents associated with the given WebFrameMain.
+      * A WebContents instance with the given WebFrameMain, or `undefined` if there is
+      * no WebContents associated with the given WebFrameMain.
       */
     /* static member */
-    def fromFrame(frame: WebFrameMain_): WebContents_
+    def fromFrame(frame: WebFrameMain_): js.UndefOr[WebContents_]
     
     /**
-      * | undefined - A WebContents instance with the given ID, or `undefined` if there
-      * is no WebContents associated with the given ID.
+      * A WebContents instance with the given ID, or `undefined` if there is no
+      * WebContents associated with the given ID.
       */
     /* static member */
-    def fromId(id: Double): WebContents_
+    def fromId(id: Double): js.UndefOr[WebContents_]
     
     /**
       * An array of all `WebContents` instances. This will contain web contents for all
@@ -813,20 +835,19 @@ object anon {
     def getAllWebContents(): js.Array[WebContents_]
     
     /**
-      * | null - The web contents that is focused in this application, otherwise returns
-      * `null`.
+      * The web contents that is focused in this application, otherwise returns `null`.
       */
     /* static member */
-    def getFocusedWebContents(): WebContents_
+    def getFocusedWebContents(): WebContents_ | Null
   }
   object TypeofWebContents {
     
     inline def apply(
-      fromDevToolsTargetId: String => WebContents_,
-      fromFrame: WebFrameMain_ => WebContents_,
-      fromId: Double => WebContents_,
+      fromDevToolsTargetId: String => js.UndefOr[WebContents_],
+      fromFrame: WebFrameMain_ => js.UndefOr[WebContents_],
+      fromId: Double => js.UndefOr[WebContents_],
       getAllWebContents: () => js.Array[WebContents_],
-      getFocusedWebContents: () => WebContents_
+      getFocusedWebContents: () => WebContents_ | Null
     ): TypeofWebContents = {
       val __obj = js.Dynamic.literal(fromDevToolsTargetId = js.Any.fromFunction1(fromDevToolsTargetId), fromFrame = js.Any.fromFunction1(fromFrame), fromId = js.Any.fromFunction1(fromId), getAllWebContents = js.Any.fromFunction0(getAllWebContents), getFocusedWebContents = js.Any.fromFunction0(getFocusedWebContents))
       __obj.asInstanceOf[TypeofWebContents]
@@ -835,15 +856,15 @@ object anon {
     @scala.inline
     implicit open class MutableBuilder[Self <: TypeofWebContents] (val x: Self) extends AnyVal {
       
-      inline def setFromDevToolsTargetId(value: String => WebContents_): Self = StObject.set(x, "fromDevToolsTargetId", js.Any.fromFunction1(value))
+      inline def setFromDevToolsTargetId(value: String => js.UndefOr[WebContents_]): Self = StObject.set(x, "fromDevToolsTargetId", js.Any.fromFunction1(value))
       
-      inline def setFromFrame(value: WebFrameMain_ => WebContents_): Self = StObject.set(x, "fromFrame", js.Any.fromFunction1(value))
+      inline def setFromFrame(value: WebFrameMain_ => js.UndefOr[WebContents_]): Self = StObject.set(x, "fromFrame", js.Any.fromFunction1(value))
       
-      inline def setFromId(value: Double => WebContents_): Self = StObject.set(x, "fromId", js.Any.fromFunction1(value))
+      inline def setFromId(value: Double => js.UndefOr[WebContents_]): Self = StObject.set(x, "fromId", js.Any.fromFunction1(value))
       
       inline def setGetAllWebContents(value: () => js.Array[WebContents_]): Self = StObject.set(x, "getAllWebContents", js.Any.fromFunction0(value))
       
-      inline def setGetFocusedWebContents(value: () => WebContents_): Self = StObject.set(x, "getFocusedWebContents", js.Any.fromFunction0(value))
+      inline def setGetFocusedWebContents(value: () => WebContents_ | Null): Self = StObject.set(x, "getFocusedWebContents", js.Any.fromFunction0(value))
     }
   }
   

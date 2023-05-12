@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This class is used to specify options when creating a
-  * <code>StyledMapType</code>. These options cannot be changed after the
-  * <code>StyledMapType</code> is instantiated.
-  */
 trait StyledMapTypeOptions extends StObject {
   
   /**

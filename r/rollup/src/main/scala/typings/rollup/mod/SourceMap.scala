@@ -14,7 +14,7 @@ trait SourceMap extends StObject {
   
   var sources: js.Array[String]
   
-  var sourcesContent: js.Array[String]
+  var sourcesContent: js.Array[String | Null]
   
   def toUrl(): String
   
@@ -27,7 +27,7 @@ object SourceMap {
     mappings: String,
     names: js.Array[String],
     sources: js.Array[String],
-    sourcesContent: js.Array[String],
+    sourcesContent: js.Array[String | Null],
     toUrl: () => String,
     version: Double
   ): SourceMap = {
@@ -48,9 +48,9 @@ object SourceMap {
     
     inline def setSources(value: js.Array[String]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
-    inline def setSourcesContent(value: js.Array[String]): Self = StObject.set(x, "sourcesContent", value.asInstanceOf[js.Any])
+    inline def setSourcesContent(value: js.Array[String | Null]): Self = StObject.set(x, "sourcesContent", value.asInstanceOf[js.Any])
     
-    inline def setSourcesContentVarargs(value: String*): Self = StObject.set(x, "sourcesContent", js.Array(value*))
+    inline def setSourcesContentVarargs(value: (String | Null)*): Self = StObject.set(x, "sourcesContent", js.Array(value*))
     
     inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value*))
     

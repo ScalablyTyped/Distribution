@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An Autocomplete response returned by the call to {@link
-  * google.maps.places.AutocompleteService.getPlacePredictions} containing a
-  * list of {@link google.maps.places.AutocompletePrediction}s.
-  */
 trait AutocompleteResponse extends StObject {
   
   /**

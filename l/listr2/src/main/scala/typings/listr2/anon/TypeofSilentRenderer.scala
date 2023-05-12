@@ -1,19 +1,30 @@
 package typings.listr2.anon
 
+import typings.listr2.mod.ListrSilentRendererOptions
+import typings.listr2.mod.ListrSilentRendererTaskOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TypeofSilentRenderer extends StObject {
   
-  /** designates whether this renderer can output to a non-tty console */
   /* static member */
   var nonTTY: Boolean
+  
+  /* static member */
+  var rendererOptions: ListrSilentRendererOptions
+  
+  /* static member */
+  var rendererTaskOptions: ListrSilentRendererTaskOptions
 }
 object TypeofSilentRenderer {
   
-  inline def apply(nonTTY: Boolean): TypeofSilentRenderer = {
-    val __obj = js.Dynamic.literal(nonTTY = nonTTY.asInstanceOf[js.Any])
+  inline def apply(
+    nonTTY: Boolean,
+    rendererOptions: ListrSilentRendererOptions,
+    rendererTaskOptions: ListrSilentRendererTaskOptions
+  ): TypeofSilentRenderer = {
+    val __obj = js.Dynamic.literal(nonTTY = nonTTY.asInstanceOf[js.Any], rendererOptions = rendererOptions.asInstanceOf[js.Any], rendererTaskOptions = rendererTaskOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofSilentRenderer]
   }
   
@@ -21,5 +32,9 @@ object TypeofSilentRenderer {
   implicit open class MutableBuilder[Self <: TypeofSilentRenderer] (val x: Self) extends AnyVal {
     
     inline def setNonTTY(value: Boolean): Self = StObject.set(x, "nonTTY", value.asInstanceOf[js.Any])
+    
+    inline def setRendererOptions(value: ListrSilentRendererOptions): Self = StObject.set(x, "rendererOptions", value.asInstanceOf[js.Any])
+    
+    inline def setRendererTaskOptions(value: ListrSilentRendererTaskOptions): Self = StObject.set(x, "rendererTaskOptions", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,12 @@
 package typings.reactChartjs2
 
+import typings.chartJs.distTypesIndexMod.ChartData
+import typings.chartJs.distTypesIndexMod.ChartDataset
+import typings.chartJs.distTypesIndexMod.ChartOptions
+import typings.chartJs.distTypesIndexMod.ChartType
+import typings.chartJs.distTypesIndexMod.DefaultDataPoint
+import typings.chartJs.distTypesIndexMod.InteractionItem
 import typings.chartJs.mod.Chart
-import typings.chartJs.mod.ChartData
-import typings.chartJs.mod.ChartDataset
-import typings.chartJs.mod.ChartOptions
-import typings.chartJs.mod.ChartType
-import typings.chartJs.mod.DefaultDataPoint
-import typings.chartJs.mod.InteractionItem
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.reactChartjs2.distTypesMod.ForwardedRef

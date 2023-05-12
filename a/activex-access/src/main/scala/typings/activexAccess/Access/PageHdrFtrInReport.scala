@@ -34,7 +34,7 @@ trait PageHdrFtrInReport extends StObject {
   var CanShrink: Boolean
   
   def Controls[T](Index: String): T
-  // tslint:disable-next-line:no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   def Controls[T](Index: Double): T
   @JSName("Controls")
   val Controls_Original: Children

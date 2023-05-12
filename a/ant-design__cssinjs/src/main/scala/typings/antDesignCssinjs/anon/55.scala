@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.VerticalAlign
+import typings.csstype.mod.Property.BackgroundSize
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `55` extends StObject {
   
   var value: js.UndefOr[
-    (VerticalAlign[Double | String]) | (js.Array[
+    (BackgroundSize[Double | String]) | (js.Array[
       (Extract[
         js.UndefOr[
-          (VerticalAlign[Double | String]) | (js.Array[NonNullable[js.UndefOr[VerticalAlign[Double | String]]]])
+          (BackgroundSize[Double | String]) | (js.Array[NonNullable[js.UndefOr[BackgroundSize[Double | String]]]])
         ], 
         String
-      ]) | (NonNullable[js.UndefOr[VerticalAlign[Double | String]]])
+      ]) | (NonNullable[js.UndefOr[BackgroundSize[Double | String]]])
     ])
   ] = js.native
 }

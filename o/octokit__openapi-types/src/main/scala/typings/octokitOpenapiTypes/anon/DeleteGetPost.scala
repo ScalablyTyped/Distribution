@@ -7,42 +7,50 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteGetPost extends StObject {
   
   /**
-    * Remove all custom labels from a self-hosted runner configured in an
-    * organization. Returns the remaining read-only labels from the runner.
+    * Remove all custom labels from a self-hosted runner for a repository
+    * @description Remove all custom labels from a self-hosted runner configured in a
+    * repository. Returns the remaining read-only labels from the runner.
     *
-    * You must authenticate using an access token with the `admin:org` scope to use this endpoint.
+    * You must authenticate using an access token with the `repo` scope to use this
+    * endpoint.
     */
-  var delete: Responses66
+  var delete: ParametersPathRepoRunneridResponses65
   
   /**
-    * Lists all labels for a self-hosted runner configured in an organization.
+    * List labels for a self-hosted runner for a repository
+    * @description Lists all labels for a self-hosted runner configured in a repository.
     *
-    * You must authenticate using an access token with the `admin:org` scope to use this endpoint.
+    * You must authenticate using an access token with the `repo` scope to use this
+    * endpoint.
     */
-  var get: ParametersPathOrgRunneridResponses23
+  var get: ParametersPathRepoRunneridResponses64
   
   /**
-    * Add custom labels to a self-hosted runner configured in an organization.
+    * Add custom labels to a self-hosted runner for a repository
+    * @description Add custom labels to a self-hosted runner configured in a repository.
     *
-    * You must authenticate using an access token with the `admin:org` scope to use this endpoint.
+    * You must authenticate using an access token with the `repo` scope to use this
+    * endpoint.
     */
-  var post: Responses404422
+  var post: Responses200404422
   
   /**
-    * Remove all previous custom labels and set the new custom labels for a specific
-    * self-hosted runner configured in an organization.
+    * Set custom labels for a self-hosted runner for a repository
+    * @description Remove all previous custom labels and set the new custom labels for a specific
+    * self-hosted runner configured in a repository.
     *
-    * You must authenticate using an access token with the `admin:org` scope to use this endpoint.
+    * You must authenticate using an access token with the `repo` scope to use this
+    * endpoint.
     */
-  var put: Responses404422
+  var put: Responses200404422
 }
 object DeleteGetPost {
   
   inline def apply(
-    delete: Responses66,
-    get: ParametersPathOrgRunneridResponses23,
-    post: Responses404422,
-    put: Responses404422
+    delete: ParametersPathRepoRunneridResponses65,
+    get: ParametersPathRepoRunneridResponses64,
+    post: Responses200404422,
+    put: Responses200404422
   ): DeleteGetPost = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteGetPost]
@@ -51,12 +59,12 @@ object DeleteGetPost {
   @scala.inline
   implicit open class MutableBuilder[Self <: DeleteGetPost] (val x: Self) extends AnyVal {
     
-    inline def setDelete(value: Responses66): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: ParametersPathRepoRunneridResponses65): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    inline def setGet(value: ParametersPathOrgRunneridResponses23): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: ParametersPathRepoRunneridResponses64): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPost(value: Responses404422): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+    inline def setPost(value: Responses200404422): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
     
-    inline def setPut(value: Responses404422): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setPut(value: Responses200404422): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

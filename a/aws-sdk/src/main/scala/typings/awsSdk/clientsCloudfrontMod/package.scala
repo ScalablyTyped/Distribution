@@ -2,7 +2,6 @@ package typings.awsSdk.clientsCloudfrontMod
 
 import typings.awsSdk.awsSdkStrings.URLEncoded
 import typings.awsSdk.awsSdkStrings.`cloudfront-js-1Dot0`
-import typings.awsSdk.awsSdkStrings.s3_
 import typings.awsSdk.awsSdkStrings.sigv4_
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
@@ -75,6 +74,15 @@ type CommentType = String
 type ConflictingAliases = js.Array[ConflictingAlias]
 
 type ContentTypeProfileList = js.Array[ContentTypeProfile]
+
+type ContinuousDeploymentPolicySummaryList = js.Array[ContinuousDeploymentPolicySummary]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SingleWeight
+  - typings.awsSdk.awsSdkStrings.SingleHeader
+  - java.lang.String
+*/
+type ContinuousDeploymentPolicyType = _ContinuousDeploymentPolicyType | String
 
 type CookieNameList = js.Array[String]
 
@@ -149,7 +157,7 @@ type HeaderList = js.Array[String]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.http1Dot1
-  - typings.awsSdk.awsSdkStrings.http2
+  - typings.awsSdk.awsSdkStrings.http2_
   - typings.awsSdk.awsSdkStrings.http3
   - typings.awsSdk.awsSdkStrings.http2and3
   - java.lang.String
@@ -212,7 +220,12 @@ type MethodsList = js.Array[Method]
 */
 type MinimumProtocolVersion = _MinimumProtocolVersion | String
 
-type OriginAccessControlOriginTypes = s3_ | String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.s3_
+  - typings.awsSdk.awsSdkStrings.mediastore
+  - java.lang.String
+*/
+type OriginAccessControlOriginTypes = _OriginAccessControlOriginTypes | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.never__
@@ -246,6 +259,7 @@ type OriginProtocolPolicy = _OriginProtocolPolicy | String
   - typings.awsSdk.awsSdkStrings.none__
   - typings.awsSdk.awsSdkStrings.whitelist
   - typings.awsSdk.awsSdkStrings.all__
+  - typings.awsSdk.awsSdkStrings.allExcept
   - java.lang.String
 */
 type OriginRequestPolicyCookieBehavior = _OriginRequestPolicyCookieBehavior | String
@@ -255,6 +269,7 @@ type OriginRequestPolicyCookieBehavior = _OriginRequestPolicyCookieBehavior | St
   - typings.awsSdk.awsSdkStrings.whitelist
   - typings.awsSdk.awsSdkStrings.allViewer
   - typings.awsSdk.awsSdkStrings.allViewerAndWhitelistCloudFront
+  - typings.awsSdk.awsSdkStrings.allExcept
   - java.lang.String
 */
 type OriginRequestPolicyHeaderBehavior = _OriginRequestPolicyHeaderBehavior | String
@@ -263,6 +278,7 @@ type OriginRequestPolicyHeaderBehavior = _OriginRequestPolicyHeaderBehavior | St
   - typings.awsSdk.awsSdkStrings.none__
   - typings.awsSdk.awsSdkStrings.whitelist
   - typings.awsSdk.awsSdkStrings.all__
+  - typings.awsSdk.awsSdkStrings.allExcept
   - java.lang.String
 */
 type OriginRequestPolicyQueryStringBehavior = _OriginRequestPolicyQueryStringBehavior | String
@@ -337,6 +353,8 @@ type ResponseHeadersPolicyAccessControlAllowMethodsValues = _ResponseHeadersPoli
 
 type ResponseHeadersPolicyCustomHeaderList = js.Array[ResponseHeadersPolicyCustomHeader]
 
+type ResponseHeadersPolicyRemoveHeaderList = js.Array[ResponseHeadersPolicyRemoveHeader]
+
 type ResponseHeadersPolicySummaryList = js.Array[ResponseHeadersPolicySummary]
 
 /* Rewritten from type alias, can be one of: 
@@ -368,6 +386,8 @@ type SignerList = js.Array[_Signer]
 type SslProtocol = _SslProtocol | String
 
 type SslProtocolsList = js.Array[SslProtocol]
+
+type StagingDistributionDnsNameList = js.Array[String]
 
 type StatusCodeList = js.Array[integer]
 
@@ -421,6 +441,8 @@ type aliasString = String
 type apiVersion = _apiVersion | String
 
 type distributionIdString = String
+
+type float = Double
 
 type integer = Double
 

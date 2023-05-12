@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NetworkInsightsAnalysis extends StObject {
   
   /**
+    * The member accounts that contain resources that the path can traverse.
+    */
+  var AdditionalAccounts: js.UndefOr[ValueStringList] = js.undefined
+  
+  /**
     * Potential intermediate components.
     */
   var AlternatePathHints: js.UndefOr[AlternatePathHintList] = js.undefined
@@ -17,7 +22,7 @@ trait NetworkInsightsAnalysis extends StObject {
   var Explanations: js.UndefOr[ExplanationList] = js.undefined
   
   /**
-    * The Amazon Resource Names (ARN) of the Amazon Web Services resources that the path must traverse.
+    * The Amazon Resource Names (ARN) of the resources that the path must traverse.
     */
   var FilterInArns: js.UndefOr[ArnList] = js.undefined
   
@@ -67,6 +72,11 @@ trait NetworkInsightsAnalysis extends StObject {
   var StatusMessage: js.UndefOr[String] = js.undefined
   
   /**
+    * Potential intermediate accounts.
+    */
+  var SuggestedAccounts: js.UndefOr[ValueStringList] = js.undefined
+  
+  /**
     * The tags.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
@@ -85,6 +95,12 @@ object NetworkInsightsAnalysis {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: NetworkInsightsAnalysis] (val x: Self) extends AnyVal {
+    
+    inline def setAdditionalAccounts(value: ValueStringList): Self = StObject.set(x, "AdditionalAccounts", value.asInstanceOf[js.Any])
+    
+    inline def setAdditionalAccountsUndefined: Self = StObject.set(x, "AdditionalAccounts", js.undefined)
+    
+    inline def setAdditionalAccountsVarargs(value: String*): Self = StObject.set(x, "AdditionalAccounts", js.Array(value*))
     
     inline def setAlternatePathHints(value: AlternatePathHintList): Self = StObject.set(x, "AlternatePathHints", value.asInstanceOf[js.Any])
     
@@ -143,6 +159,12 @@ object NetworkInsightsAnalysis {
     inline def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    
+    inline def setSuggestedAccounts(value: ValueStringList): Self = StObject.set(x, "SuggestedAccounts", value.asInstanceOf[js.Any])
+    
+    inline def setSuggestedAccountsUndefined: Self = StObject.set(x, "SuggestedAccounts", js.undefined)
+    
+    inline def setSuggestedAccountsVarargs(value: String*): Self = StObject.set(x, "SuggestedAccounts", js.Array(value*))
     
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

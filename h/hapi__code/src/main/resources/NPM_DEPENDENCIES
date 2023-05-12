@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@hapi/code" : "9.0.1"
+      "@hapi/code" : "9.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@hapi/code" : "9.0.1"
+      "@hapi/code" : "9.0.3"
     }
   ],
   "compile-devDependencies" : [

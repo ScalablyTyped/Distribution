@@ -5,15 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Object literals are accepted in place of <code>LatLng</code> objects, as a
-  * convenience, in many places. These are converted to <code>LatLng</code>
-  * objects when the Maps API encounters them. <p> Examples: <pre>
-  * map.setCenter({lat: -34, lng: 151});<br> new
-  * google.maps.Marker({position: {lat: -34, lng: 151}, map: map}); </pre> <p
-  * class="note">LatLng object literals are not supported in the Geometry
-  * library.</p>
-  */
 trait LatLngLiteral
   extends StObject
      with _LocationBias {

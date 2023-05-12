@@ -13,6 +13,8 @@ trait LightBlock
   
   /* private */ var _lightId: Any = js.native
   
+  /* private */ var _setTarget: Any = js.native
+  
   /**
     * Gets the camera (or eye) position component
     */
@@ -27,6 +29,9 @@ trait LightBlock
     * Gets the diffuse output component
     */
   def diffuseOutput: NodeMaterialConnectionPoint = js.native
+  
+  /** Indicates that no code should be generated in the vertex shader. Can be useful in some specific circumstances (like when doing ray marching for eg) */
+  var generateOnlyFragmentCode: Boolean = js.native
   
   /**
     * Gets the glossiness power component

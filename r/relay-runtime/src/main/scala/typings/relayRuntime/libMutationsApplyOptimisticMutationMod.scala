@@ -6,6 +6,7 @@ import typings.relayRuntime.libStoreRelayStoreTypesMod.Environment
 import typings.relayRuntime.libStoreRelayStoreTypesMod.RecordSourceSelectorProxy
 import typings.relayRuntime.libStoreRelayStoreTypesMod.SelectorStoreUpdater
 import typings.relayRuntime.libUtilReaderNodeMod.ReaderFragment
+import typings.relayRuntime.libUtilReaderNodeMod.ReaderInlineDataFragment
 import typings.relayRuntime.libUtilRelayConcreteNodeMod.ConcreteRequest
 import typings.relayRuntime.libUtilRelayRuntimeTypesMod.Disposable
 import typings.relayRuntime.libUtilRelayRuntimeTypesMod.Variables
@@ -53,7 +54,7 @@ object libMutationsApplyOptimisticMutationMod {
       
       inline def setMutation(value: GraphQLTaggedNode): Self = StObject.set(x, "mutation", value.asInstanceOf[js.Any])
       
-      inline def setMutationFunction0(value: () => ReaderFragment | ConcreteRequest): Self = StObject.set(x, "mutation", js.Any.fromFunction0(value))
+      inline def setMutationFunction0(value: () => ReaderFragment | ConcreteRequest | ReaderInlineDataFragment): Self = StObject.set(x, "mutation", js.Any.fromFunction0(value))
       
       inline def setOptimisticResponse(value: js.Object): Self = StObject.set(x, "optimisticResponse", value.asInstanceOf[js.Any])
       

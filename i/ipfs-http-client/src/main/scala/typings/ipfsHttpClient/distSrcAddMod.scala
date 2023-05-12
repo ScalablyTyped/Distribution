@@ -12,7 +12,7 @@ object distSrcAddMod {
   val ^ : js.Any = js.native
   
   inline def createAdd(options: Options): js.Function2[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.ImportCandidate */ /* input */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.ImportCandidate */ /* entry */ Any, 
     /* options */ js.UndefOr[
       (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_root.AddOptions */ Any) & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions
     ], 
@@ -20,7 +20,7 @@ object distSrcAddMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_root.AddResult */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAdd")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.ImportCandidate */ /* input */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.ImportCandidate */ /* entry */ Any, 
     /* options */ js.UndefOr[
       (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_root.AddOptions */ Any) & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions
     ], 

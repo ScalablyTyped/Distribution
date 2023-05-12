@@ -11,17 +11,13 @@ object typesSrcDisplayAnnotationStorageMod {
   @js.native
   open class AnnotationStorage () extends StObject {
     
-    var _modified: Boolean = js.native
-    
-    var _storage: Map[Any, Any] = js.native
-    
-    def getAll(): Any = js.native
+    /**
+      * @returns {Object | null}
+      */
+    def getAll(): js.Object | Null = js.native
     
     /**
       * Get the value for a given key.
-      *
-      * @public
-      * @memberof AnnotationStorage
       * @param {string} key
       * @returns {Object}
       */
@@ -29,9 +25,6 @@ object typesSrcDisplayAnnotationStorageMod {
     
     /**
       * Get the value for a given key if it exists, or return the default value.
-      *
-      * @public
-      * @memberof AnnotationStorage
       * @param {string} key
       * @param {Object} defaultValue
       * @returns {Object}
@@ -73,10 +66,12 @@ object typesSrcDisplayAnnotationStorageMod {
     def serializable: (Map[Any, Any]) | Null = js.native
     
     /**
+      * @param {Object} obj
+      */
+    def setAll(obj: js.Object): Unit = js.native
+    
+    /**
       * Set the value for a given key
-      *
-      * @public
-      * @memberof AnnotationStorage
       * @param {string} key
       * @param {Object} value
       */

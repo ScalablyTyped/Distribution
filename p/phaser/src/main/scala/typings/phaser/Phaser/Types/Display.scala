@@ -19,6 +19,11 @@ object Display {
     var b: Double
     
     /**
+      * The combined color value.
+      */
+    var color: Double
+    
+    /**
       * The green color value in the range 0 to 255.
       */
     var g: Double
@@ -30,8 +35,8 @@ object Display {
   }
   object ColorObject {
     
-    inline def apply(a: Double, b: Double, g: Double, r: Double): ColorObject = {
-      val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
+    inline def apply(a: Double, b: Double, color: Double, g: Double, r: Double): ColorObject = {
+      val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
       __obj.asInstanceOf[ColorObject]
     }
     
@@ -41,6 +46,8 @@ object Display {
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
       inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      
+      inline def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
       

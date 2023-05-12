@@ -6,12 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AttachmentInfo extends StObject {
   
+  // The type of the attachment. The possible values are: file, item, reference. Required.
   var attachmentType: js.UndefOr[NullableOption[AttachmentType]] = js.undefined
   
+  // The nature of the data in the attachment. Optional.
   var contentType: js.UndefOr[NullableOption[String]] = js.undefined
   
+  /**
+    * The display name of the attachment. This can be a descriptive string and does not have to be the actual file name.
+    * Required.
+    */
   var name: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // The length of the attachment in bytes. Required.
   var size: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object AttachmentInfo {

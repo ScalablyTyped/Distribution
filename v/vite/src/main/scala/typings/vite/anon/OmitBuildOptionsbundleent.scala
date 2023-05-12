@@ -28,6 +28,8 @@ trait OmitBuildOptionsbundleent extends StObject {
   
   var absWorkingDir: js.UndefOr[String] = js.undefined
   
+  var alias: js.UndefOr[Record[String, String]] = js.undefined
+  
   var allowOverwrite: js.UndefOr[Boolean] = js.undefined
   
   var assetNames: js.UndefOr[String] = js.undefined
@@ -55,8 +57,6 @@ trait OmitBuildOptionsbundleent extends StObject {
   var globalName: js.UndefOr[String] = js.undefined
   
   var ignoreAnnotations: js.UndefOr[Boolean] = js.undefined
-  
-  var incremental: js.UndefOr[Boolean] = js.undefined
   
   var inject: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -101,6 +101,8 @@ trait OmitBuildOptionsbundleent extends StObject {
   var minifyWhitespace: js.UndefOr[Boolean] = js.undefined
   
   var nodePaths: js.UndefOr[js.Array[String]] = js.undefined
+  
+  var packages: js.UndefOr[external] = js.undefined
   
   var platform: js.UndefOr[Platform] = js.undefined
   
@@ -147,6 +149,10 @@ object OmitBuildOptionsbundleent {
     inline def setAbsWorkingDir(value: String): Self = StObject.set(x, "absWorkingDir", value.asInstanceOf[js.Any])
     
     inline def setAbsWorkingDirUndefined: Self = StObject.set(x, "absWorkingDir", js.undefined)
+    
+    inline def setAlias(value: Record[String, String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    
+    inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
     inline def setAllowOverwrite(value: Boolean): Self = StObject.set(x, "allowOverwrite", value.asInstanceOf[js.Any])
     
@@ -207,10 +213,6 @@ object OmitBuildOptionsbundleent {
     inline def setIgnoreAnnotations(value: Boolean): Self = StObject.set(x, "ignoreAnnotations", value.asInstanceOf[js.Any])
     
     inline def setIgnoreAnnotationsUndefined: Self = StObject.set(x, "ignoreAnnotations", js.undefined)
-    
-    inline def setIncremental(value: Boolean): Self = StObject.set(x, "incremental", value.asInstanceOf[js.Any])
-    
-    inline def setIncrementalUndefined: Self = StObject.set(x, "incremental", js.undefined)
     
     inline def setInject(value: js.Array[String]): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
     
@@ -305,6 +307,10 @@ object OmitBuildOptionsbundleent {
     inline def setNodePathsUndefined: Self = StObject.set(x, "nodePaths", js.undefined)
     
     inline def setNodePathsVarargs(value: String*): Self = StObject.set(x, "nodePaths", js.Array(value*))
+    
+    inline def setPackages(value: external): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
+    
+    inline def setPackagesUndefined: Self = StObject.set(x, "packages", js.undefined)
     
     inline def setPlatform(value: Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     

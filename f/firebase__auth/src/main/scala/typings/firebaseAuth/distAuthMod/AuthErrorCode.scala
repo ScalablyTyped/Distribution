@@ -42,7 +42,11 @@ import typings.firebaseAuth.firebaseAuthStrings.`invalid-oauth-provider`
 import typings.firebaseAuth.firebaseAuthStrings.`invalid-persistence-type`
 import typings.firebaseAuth.firebaseAuthStrings.`invalid-phone-number`
 import typings.firebaseAuth.firebaseAuthStrings.`invalid-provider-id`
+import typings.firebaseAuth.firebaseAuthStrings.`invalid-recaptcha-action`
+import typings.firebaseAuth.firebaseAuthStrings.`invalid-recaptcha-token`
+import typings.firebaseAuth.firebaseAuthStrings.`invalid-recaptcha-version`
 import typings.firebaseAuth.firebaseAuthStrings.`invalid-recipient-email`
+import typings.firebaseAuth.firebaseAuthStrings.`invalid-req-type`
 import typings.firebaseAuth.firebaseAuthStrings.`invalid-sender`
 import typings.firebaseAuth.firebaseAuthStrings.`invalid-tenant-id`
 import typings.firebaseAuth.firebaseAuthStrings.`invalid-user-token`
@@ -52,13 +56,17 @@ import typings.firebaseAuth.firebaseAuthStrings.`login-blocked`
 import typings.firebaseAuth.firebaseAuthStrings.`maximum-second-factor-count-exceeded`
 import typings.firebaseAuth.firebaseAuthStrings.`missing-android-pkg-name`
 import typings.firebaseAuth.firebaseAuthStrings.`missing-app-credential`
+import typings.firebaseAuth.firebaseAuthStrings.`missing-client-type`
 import typings.firebaseAuth.firebaseAuthStrings.`missing-continue-uri`
 import typings.firebaseAuth.firebaseAuthStrings.`missing-iframe-start`
 import typings.firebaseAuth.firebaseAuthStrings.`missing-ios-bundle-id`
 import typings.firebaseAuth.firebaseAuthStrings.`missing-multi-factor-info`
 import typings.firebaseAuth.firebaseAuthStrings.`missing-multi-factor-session`
 import typings.firebaseAuth.firebaseAuthStrings.`missing-or-invalid-nonce`
+import typings.firebaseAuth.firebaseAuthStrings.`missing-password`
 import typings.firebaseAuth.firebaseAuthStrings.`missing-phone-number`
+import typings.firebaseAuth.firebaseAuthStrings.`missing-recaptcha-token`
+import typings.firebaseAuth.firebaseAuthStrings.`missing-recaptcha-version`
 import typings.firebaseAuth.firebaseAuthStrings.`missing-verification-code`
 import typings.firebaseAuth.firebaseAuthStrings.`missing-verification-id`
 import typings.firebaseAuth.firebaseAuthStrings.`multi-factor-auth-required`
@@ -73,6 +81,7 @@ import typings.firebaseAuth.firebaseAuthStrings.`popup-blocked`
 import typings.firebaseAuth.firebaseAuthStrings.`popup-closed-by-user`
 import typings.firebaseAuth.firebaseAuthStrings.`provider-already-linked`
 import typings.firebaseAuth.firebaseAuthStrings.`quota-exceeded`
+import typings.firebaseAuth.firebaseAuthStrings.`recaptcha-not-enabled`
 import typings.firebaseAuth.firebaseAuthStrings.`redirect-cancelled-by-user`
 import typings.firebaseAuth.firebaseAuthStrings.`redirect-operation-pending`
 import typings.firebaseAuth.firebaseAuthStrings.`rejected-credential`
@@ -167,6 +176,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.firebaseAuth.firebaseAuthStrings.`missing-multi-factor-info`
   - typings.firebaseAuth.firebaseAuthStrings.`missing-multi-factor-session`
   - typings.firebaseAuth.firebaseAuthStrings.`missing-phone-number`
+  - typings.firebaseAuth.firebaseAuthStrings.`missing-password`
   - typings.firebaseAuth.firebaseAuthStrings.`missing-verification-id`
   - typings.firebaseAuth.firebaseAuthStrings.`app-deleted`
   - typings.firebaseAuth.firebaseAuthStrings.`account-exists-with-different-credential`
@@ -202,6 +212,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.firebaseAuth.firebaseAuthStrings.`weak-password`
   - typings.firebaseAuth.firebaseAuthStrings.`web-storage-unsupported`
   - typings.firebaseAuth.firebaseAuthStrings.`already-initialized`
+  - typings.firebaseAuth.firebaseAuthStrings.`recaptcha-not-enabled`
+  - typings.firebaseAuth.firebaseAuthStrings.`missing-recaptcha-token`
+  - typings.firebaseAuth.firebaseAuthStrings.`invalid-recaptcha-token`
+  - typings.firebaseAuth.firebaseAuthStrings.`invalid-recaptcha-action`
+  - typings.firebaseAuth.firebaseAuthStrings.`missing-client-type`
+  - typings.firebaseAuth.firebaseAuthStrings.`missing-recaptcha-version`
+  - typings.firebaseAuth.firebaseAuthStrings.`invalid-recaptcha-version`
+  - typings.firebaseAuth.firebaseAuthStrings.`invalid-req-type`
 */
 trait AuthErrorCode extends StObject
 object AuthErrorCode {
@@ -294,7 +312,15 @@ object AuthErrorCode {
   
   inline def INVALID_PROVIDER_ID: `invalid-provider-id` = "invalid-provider-id".asInstanceOf[`invalid-provider-id`]
   
+  inline def INVALID_RECAPTCHA_ACTION: `invalid-recaptcha-action` = "invalid-recaptcha-action".asInstanceOf[`invalid-recaptcha-action`]
+  
+  inline def INVALID_RECAPTCHA_TOKEN: `invalid-recaptcha-token` = "invalid-recaptcha-token".asInstanceOf[`invalid-recaptcha-token`]
+  
+  inline def INVALID_RECAPTCHA_VERSION: `invalid-recaptcha-version` = "invalid-recaptcha-version".asInstanceOf[`invalid-recaptcha-version`]
+  
   inline def INVALID_RECIPIENT_EMAIL: `invalid-recipient-email` = "invalid-recipient-email".asInstanceOf[`invalid-recipient-email`]
+  
+  inline def INVALID_REQ_TYPE: `invalid-req-type` = "invalid-req-type".asInstanceOf[`invalid-req-type`]
   
   inline def INVALID_SENDER: `invalid-sender` = "invalid-sender".asInstanceOf[`invalid-sender`]
   
@@ -314,6 +340,8 @@ object AuthErrorCode {
   
   inline def MISSING_AUTH_DOMAIN: `auth-domain-config-required` = "auth-domain-config-required".asInstanceOf[`auth-domain-config-required`]
   
+  inline def MISSING_CLIENT_TYPE: `missing-client-type` = "missing-client-type".asInstanceOf[`missing-client-type`]
+  
   inline def MISSING_CODE: `missing-verification-code` = "missing-verification-code".asInstanceOf[`missing-verification-code`]
   
   inline def MISSING_CONTINUE_URI: `missing-continue-uri` = "missing-continue-uri".asInstanceOf[`missing-continue-uri`]
@@ -328,7 +356,13 @@ object AuthErrorCode {
   
   inline def MISSING_OR_INVALID_NONCE: `missing-or-invalid-nonce` = "missing-or-invalid-nonce".asInstanceOf[`missing-or-invalid-nonce`]
   
+  inline def MISSING_PASSWORD: `missing-password` = "missing-password".asInstanceOf[`missing-password`]
+  
   inline def MISSING_PHONE_NUMBER: `missing-phone-number` = "missing-phone-number".asInstanceOf[`missing-phone-number`]
+  
+  inline def MISSING_RECAPTCHA_TOKEN: `missing-recaptcha-token` = "missing-recaptcha-token".asInstanceOf[`missing-recaptcha-token`]
+  
+  inline def MISSING_RECAPTCHA_VERSION: `missing-recaptcha-version` = "missing-recaptcha-version".asInstanceOf[`missing-recaptcha-version`]
   
   inline def MISSING_SESSION_INFO: `missing-verification-id` = "missing-verification-id".asInstanceOf[`missing-verification-id`]
   
@@ -355,6 +389,8 @@ object AuthErrorCode {
   inline def PROVIDER_ALREADY_LINKED: `provider-already-linked` = "provider-already-linked".asInstanceOf[`provider-already-linked`]
   
   inline def QUOTA_EXCEEDED: `quota-exceeded` = "quota-exceeded".asInstanceOf[`quota-exceeded`]
+  
+  inline def RECAPTCHA_NOT_ENABLED: `recaptcha-not-enabled` = "recaptcha-not-enabled".asInstanceOf[`recaptcha-not-enabled`]
   
   inline def REDIRECT_CANCELLED_BY_USER: `redirect-cancelled-by-user` = "redirect-cancelled-by-user".asInstanceOf[`redirect-cancelled-by-user`]
   

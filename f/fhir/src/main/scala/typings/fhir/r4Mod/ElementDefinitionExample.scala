@@ -93,11 +93,6 @@ trait ElementDefinitionExample
   /**
     * The actual value for the element, which must be one of the types allowed for this element.
     */
-  var valueCodeableReference: js.UndefOr[CodeableReference] = js.undefined
-  
-  /**
-    * The actual value for the element, which must be one of the types allowed for this element.
-    */
   var valueCoding: js.UndefOr[Coding] = js.undefined
   
   /**
@@ -238,11 +233,6 @@ trait ElementDefinitionExample
   /**
     * The actual value for the element, which must be one of the types allowed for this element.
     */
-  var valueRatioRange: js.UndefOr[RatioRange] = js.undefined
-  
-  /**
-    * The actual value for the element, which must be one of the types allowed for this element.
-    */
   var valueReference: js.UndefOr[Reference] = js.undefined
   
   /**
@@ -353,10 +343,6 @@ object ElementDefinitionExample {
     
     inline def setValueCodeableConceptUndefined: Self = StObject.set(x, "valueCodeableConcept", js.undefined)
     
-    inline def setValueCodeableReference(value: CodeableReference): Self = StObject.set(x, "valueCodeableReference", value.asInstanceOf[js.Any])
-    
-    inline def setValueCodeableReferenceUndefined: Self = StObject.set(x, "valueCodeableReference", js.undefined)
-    
     inline def setValueCoding(value: Coding): Self = StObject.set(x, "valueCoding", value.asInstanceOf[js.Any])
     
     inline def setValueCodingUndefined: Self = StObject.set(x, "valueCoding", js.undefined)
@@ -466,10 +452,6 @@ object ElementDefinitionExample {
     inline def setValueRangeUndefined: Self = StObject.set(x, "valueRange", js.undefined)
     
     inline def setValueRatio(value: Ratio): Self = StObject.set(x, "valueRatio", value.asInstanceOf[js.Any])
-    
-    inline def setValueRatioRange(value: RatioRange): Self = StObject.set(x, "valueRatioRange", value.asInstanceOf[js.Any])
-    
-    inline def setValueRatioRangeUndefined: Self = StObject.set(x, "valueRatioRange", js.undefined)
     
     inline def setValueRatioUndefined: Self = StObject.set(x, "valueRatio", js.undefined)
     

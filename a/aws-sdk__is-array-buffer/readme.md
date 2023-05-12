@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__is-array-buffer
 
-Typings are for version 3.201.0
+Typings are for version 3.310.0
 
 ## Library description:
 Provides a function for detecting if an argument is an ArrayBuffer

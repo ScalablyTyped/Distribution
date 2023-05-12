@@ -10,6 +10,7 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.CanvasTextAlign
 import typings.std.CanvasTextBaseline
 import typings.std.Element
+import typings.std.GlobalCompositeOperation
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
@@ -161,22 +162,27 @@ object typesGraphicscontextMod {
     
     def fillRect(x: Double, y: Double, w: Double, h: Double): Unit = js.native
     
-    var fillStyle: String | CanvasGradient | CanvasPattern = js.native
+    def fillStyle: String | CanvasGradient | CanvasPattern = js.native
+    def fillStyle_=(value: String | CanvasGradient | CanvasPattern): Unit = js.native
     
     def fillText(text: String, x: Double, y: Double): Unit = js.native
     def fillText(text: String, x: Double, y: Double, maxWidth: Double): Unit = js.native
     
-    var font: String = js.native
+    def font: String = js.native
+    def font_=(value: String): Unit = js.native
     
     def getImageData(sx: Double, sy: Double, sw: Double, sh: Double): ImageData = js.native
     
     def getLineDash(): js.Array[Double] = js.native
     
-    var globalAlpha: Double = js.native
+    def globalAlpha: Double = js.native
+    def globalAlpha_=(value: Double): Unit = js.native
     
-    var globalCompositeOperation: String = js.native
+    def globalCompositeOperation: GlobalCompositeOperation = js.native
+    def globalCompositeOperation_=(value: GlobalCompositeOperation): Unit = js.native
     
-    var imageSmoothingEnabled: Boolean = js.native
+    def imageSmoothingEnabled: Boolean = js.native
+    def imageSmoothingEnabled_=(value: Boolean): Unit = js.native
     
     /**
       * Test whether the object has been disposed.
@@ -186,23 +192,30 @@ object typesGraphicscontextMod {
       */
     /* CompleteClass */
     override val isDisposed: Boolean = js.native
+    @JSName("isDisposed")
+    def isDisposed_MGraphicsContext: Boolean = js.native
     
     def isPointInPath(x: Double, y: Double): Boolean = js.native
     def isPointInPath(x: Double, y: Double, fillRule: CanvasFillRule): Boolean = js.native
     
-    var lineCap: CanvasLineCap = js.native
+    def lineCap: CanvasLineCap = js.native
+    def lineCap_=(value: CanvasLineCap): Unit = js.native
     
-    var lineDashOffset: Double = js.native
+    def lineDashOffset: Double = js.native
+    def lineDashOffset_=(value: Double): Unit = js.native
     
-    var lineJoin: CanvasLineJoin = js.native
+    def lineJoin: CanvasLineJoin = js.native
+    def lineJoin_=(value: CanvasLineJoin): Unit = js.native
     
     def lineTo(x: Double, y: Double): Unit = js.native
     
-    var lineWidth: Double = js.native
+    def lineWidth: Double = js.native
+    def lineWidth_=(value: Double): Unit = js.native
     
     def measureText(text: String): TextMetrics = js.native
     
-    var miterLimit: Double = js.native
+    def miterLimit: Double = js.native
+    def miterLimit_=(value: Double): Unit = js.native
     
     def moveTo(x: Double, y: Double): Unit = js.native
     
@@ -233,26 +246,33 @@ object typesGraphicscontextMod {
     
     def setTransform(m11: Double, m12: Double, m21: Double, m22: Double, dx: Double, dy: Double): Unit = js.native
     
-    var shadowBlur: Double = js.native
+    def shadowBlur: Double = js.native
+    def shadowBlur_=(value: Double): Unit = js.native
     
-    var shadowColor: String = js.native
+    def shadowColor: String = js.native
+    def shadowColor_=(value: String): Unit = js.native
     
-    var shadowOffsetX: Double = js.native
+    def shadowOffsetX: Double = js.native
+    def shadowOffsetX_=(value: Double): Unit = js.native
     
-    var shadowOffsetY: Double = js.native
+    def shadowOffsetY: Double = js.native
+    def shadowOffsetY_=(value: Double): Unit = js.native
     
     def stroke(): Unit = js.native
     
     def strokeRect(x: Double, y: Double, w: Double, h: Double): Unit = js.native
     
-    var strokeStyle: String | CanvasGradient | CanvasPattern = js.native
+    def strokeStyle: String | CanvasGradient | CanvasPattern = js.native
+    def strokeStyle_=(value: String | CanvasGradient | CanvasPattern): Unit = js.native
     
     def strokeText(text: String, x: Double, y: Double): Unit = js.native
     def strokeText(text: String, x: Double, y: Double, maxWidth: Double): Unit = js.native
     
-    var textAlign: CanvasTextAlign = js.native
+    def textAlign: CanvasTextAlign = js.native
+    def textAlign_=(value: CanvasTextAlign): Unit = js.native
     
-    var textBaseline: CanvasTextBaseline = js.native
+    def textBaseline: CanvasTextBaseline = js.native
+    def textBaseline_=(value: CanvasTextBaseline): Unit = js.native
     
     def transform(m11: Double, m12: Double, m21: Double, m22: Double, dx: Double, dy: Double): Unit = js.native
     

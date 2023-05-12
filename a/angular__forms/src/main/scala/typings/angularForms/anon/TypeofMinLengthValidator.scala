@@ -22,7 +22,8 @@ trait TypeofMinLengthValidator
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    `false`, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[MinLengthValidator, scala.Nothing] = js.native

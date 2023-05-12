@@ -12,7 +12,7 @@ trait DeleteGameServerGroupInput extends StObject {
   var DeleteOption: js.UndefOr[GameServerGroupDeleteOption] = js.undefined
   
   /**
-    * A unique identifier for the game server group. Use either the GameServerGroup name or ARN value.
+    * A unique identifier for the game server group. Use either the name or ARN value.
     */
   var GameServerGroupName: GameServerGroupNameOrArn
 }

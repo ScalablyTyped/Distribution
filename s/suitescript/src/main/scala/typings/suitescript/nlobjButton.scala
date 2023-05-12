@@ -10,8 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @classDescription buttons used for triggering custom behaviors on pages.
   * @return {nlobjButton}
-  * @constructor
-  *
   * @since 2009.2
   */
 @js.native

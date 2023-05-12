@@ -30,10 +30,10 @@ trait Annotationlevel extends StObject {
   /** @description Details about this annotation. The maximum size is 64 KB. */
   var raw_details: js.UndefOr[String] = js.undefined
   
-  /** @description The start column of the annotation. Annotations only support `start_column` and `end_column` on the same line. Omit this parameter if `start_line` and `end_line` have different values. */
+  /** @description The start column of the annotation. Annotations only support `start_column` and `end_column` on the same line. Omit this parameter if `start_line` and `end_line` have different values. Column numbers start at 1. */
   var start_column: js.UndefOr[Double] = js.undefined
   
-  /** @description The start line of the annotation. */
+  /** @description The start line of the annotation. Line numbers start at 1. */
   var start_line: Double
   
   /** @description The title that represents the annotation. The maximum size is 255 characters. */

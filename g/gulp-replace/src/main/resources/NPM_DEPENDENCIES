@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "gulp-replace" : "1.1.3"
+      "gulp-replace" : "1.1.4"
     }
   ],
   "test-dependencies" : [
     {
-      "gulp-replace" : "1.1.3"
+      "gulp-replace" : "1.1.4"
     }
   ],
   "compile-devDependencies" : [

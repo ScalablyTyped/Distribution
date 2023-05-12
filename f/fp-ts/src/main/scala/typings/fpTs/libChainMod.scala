@@ -169,7 +169,7 @@ object libChainMod {
   inline def chainFirst[M](M: Chain[M]): js.Function1[
     /* f */ js.Function1[
       /* a */ Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, B> */ Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, _> */ Any
     ], 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, A> */ /* first */ Any, 
@@ -178,7 +178,7 @@ object libChainMod {
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirst")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* f */ js.Function1[
       /* a */ Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, B> */ Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, _> */ Any
     ], 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, A> */ /* first */ Any, 
@@ -188,7 +188,7 @@ object libChainMod {
   inline def chainFirst[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](M: Chain1[M]): js.Function1[
     /* f */ js.Function1[
       /* a */ Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, B> */ Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, _> */ Any
     ], 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, A> */ /* first */ Any, 
@@ -197,7 +197,7 @@ object libChainMod {
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirst")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* f */ js.Function1[
       /* a */ Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, B> */ Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, _> */ Any
     ], 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, A> */ /* first */ Any, 
@@ -207,7 +207,7 @@ object libChainMod {
   inline def chainFirst[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](M: Chain2[M]): js.Function1[
     /* f */ js.Function1[
       /* a */ Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, B> */ Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, _> */ Any
     ], 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ /* first */ Any, 
@@ -216,7 +216,7 @@ object libChainMod {
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirst")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* f */ js.Function1[
       /* a */ Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, B> */ Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, _> */ Any
     ], 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ /* first */ Any, 
@@ -226,7 +226,7 @@ object libChainMod {
   inline def chainFirst[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](M: Chain3[M]): js.Function1[
     /* f */ js.Function1[
       /* a */ Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, B> */ Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, _> */ Any
     ], 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, A> */ /* first */ Any, 
@@ -235,7 +235,7 @@ object libChainMod {
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirst")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* f */ js.Function1[
       /* a */ Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, B> */ Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, _> */ Any
     ], 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, A> */ /* first */ Any, 
@@ -245,7 +245,7 @@ object libChainMod {
   inline def chainFirst[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](M: Chain4[M]): js.Function1[
     /* f */ js.Function1[
       /* a */ Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<M, S, R, E, B> */ Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<M, S, R, E, _> */ Any
     ], 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<M, S, R, E, A> */ /* first */ Any, 
@@ -254,7 +254,7 @@ object libChainMod {
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirst")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* f */ js.Function1[
       /* a */ Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<M, S, R, E, B> */ Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<M, S, R, E, _> */ Any
     ], 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<M, S, R, E, A> */ /* first */ Any, 
@@ -264,7 +264,7 @@ object libChainMod {
   inline def chainFirst[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](M: Chain2C[M, E]): js.Function1[
     /* f */ js.Function1[
       /* a */ Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, B> */ Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, _> */ Any
     ], 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ /* first */ Any, 
@@ -273,7 +273,7 @@ object libChainMod {
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirst")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* f */ js.Function1[
       /* a */ Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, B> */ Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, _> */ Any
     ], 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ /* first */ Any, 
@@ -283,7 +283,7 @@ object libChainMod {
   inline def chainFirst[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](M: Chain3C[M, E]): js.Function1[
     /* f */ js.Function1[
       /* a */ Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, B> */ Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, _> */ Any
     ], 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, A> */ /* first */ Any, 
@@ -292,7 +292,7 @@ object libChainMod {
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirst")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* f */ js.Function1[
       /* a */ Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, B> */ Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, _> */ Any
     ], 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, A> */ /* first */ Any, 

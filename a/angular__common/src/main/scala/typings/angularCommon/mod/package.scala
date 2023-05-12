@@ -4,7 +4,6 @@ import typings.angularCommon.angularCommonStrings.ltr
 import typings.angularCommon.angularCommonStrings.narrow
 import typings.angularCommon.angularCommonStrings.rtl
 import typings.angularCommon.angularCommonStrings.wide
-import typings.angularCommon.anon.EnsurePreconnect
 import typings.angularCommon.mod.^
 import typings.angularCore.mod.InjectionToken
 import typings.angularCore.mod.Provider
@@ -17,9 +16,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 inline def APP_BASE_HREF: InjectionToken[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("APP_BASE_HREF").asInstanceOf[InjectionToken[String]]
 
+inline def DATE_PIPE_DEFAULT_OPTIONS: InjectionToken[DatePipeConfig] = ^.asInstanceOf[js.Dynamic].selectDynamic("DATE_PIPE_DEFAULT_OPTIONS").asInstanceOf[InjectionToken[DatePipeConfig]]
+
 inline def DATE_PIPE_DEFAULT_TIMEZONE: InjectionToken[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("DATE_PIPE_DEFAULT_TIMEZONE").asInstanceOf[InjectionToken[String]]
 
 inline def DOCUMENT: InjectionToken[Document] = ^.asInstanceOf[js.Dynamic].selectDynamic("DOCUMENT").asInstanceOf[InjectionToken[Document]]
+
+inline def IMAGE_CONFIG: InjectionToken[ImageConfig] = ^.asInstanceOf[js.Dynamic].selectDynamic("IMAGE_CONFIG").asInstanceOf[InjectionToken[ImageConfig]]
 
 inline def IMAGE_LOADER: InjectionToken[ImageLoader] = ^.asInstanceOf[js.Dynamic].selectDynamic("IMAGE_LOADER").asInstanceOf[InjectionToken[ImageLoader]]
 
@@ -99,16 +102,12 @@ inline def isPlatformWorkerApp(platformId: js.Object): Boolean = ^.asInstanceOf[
 inline def isPlatformWorkerUi(platformId: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlatformWorkerUi")(platformId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
 inline def provideCloudflareLoader(path: String): js.Array[Provider] = ^.asInstanceOf[js.Dynamic].applyDynamic("provideCloudflareLoader")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[Provider]]
-inline def provideCloudflareLoader(path: String, options: EnsurePreconnect): js.Array[Provider] = (^.asInstanceOf[js.Dynamic].applyDynamic("provideCloudflareLoader")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Provider]]
 
 inline def provideCloudinaryLoader(path: String): js.Array[Provider] = ^.asInstanceOf[js.Dynamic].applyDynamic("provideCloudinaryLoader")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[Provider]]
-inline def provideCloudinaryLoader(path: String, options: EnsurePreconnect): js.Array[Provider] = (^.asInstanceOf[js.Dynamic].applyDynamic("provideCloudinaryLoader")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Provider]]
 
 inline def provideImageKitLoader(path: String): js.Array[Provider] = ^.asInstanceOf[js.Dynamic].applyDynamic("provideImageKitLoader")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[Provider]]
-inline def provideImageKitLoader(path: String, options: EnsurePreconnect): js.Array[Provider] = (^.asInstanceOf[js.Dynamic].applyDynamic("provideImageKitLoader")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Provider]]
 
 inline def provideImgixLoader(path: String): js.Array[Provider] = ^.asInstanceOf[js.Dynamic].applyDynamic("provideImgixLoader")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[Provider]]
-inline def provideImgixLoader(path: String, options: EnsurePreconnect): js.Array[Provider] = (^.asInstanceOf[js.Dynamic].applyDynamic("provideImgixLoader")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Provider]]
 
 inline def registerLocaleData(data: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerLocaleData")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
 inline def registerLocaleData(data: Any, localeId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLocaleData")(data.asInstanceOf[js.Any], localeId.asInstanceOf[js.Any])).asInstanceOf[Unit]

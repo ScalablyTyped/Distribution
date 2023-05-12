@@ -11,14 +11,6 @@ object cssnanoPresetDefaultStrings {
   inline def double: double = "double".asInstanceOf[double]
   
   @js.native
-  sealed trait http extends StObject
-  inline def http: http = "http".asInstanceOf[http]
-  
-  @js.native
-  sealed trait https extends StObject
-  inline def https: https = "https".asInstanceOf[https]
-  
-  @js.native
   sealed trait single extends StObject
   inline def single: single = "single".asInstanceOf[single]
 }

@@ -1,5 +1,6 @@
 package typings.tensorflowTfjsConverter
 
+import typings.std.Map
 import typings.std.Set
 import typings.tensorflowTfjsConverter.distDataTypesMod.NamedTensorsMap
 import typings.tensorflowTfjsConverter.distOperationsTypesMod.Graph
@@ -23,7 +24,9 @@ object distExecutorModelAnalysisMod {
     initNodes: js.Array[Node]
   ): ExecutionInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getExecutionSubgraph")(inputs.asInstanceOf[js.Any], outputs.asInstanceOf[js.Any], weightMap.asInstanceOf[js.Any], initNodes.asInstanceOf[js.Any])).asInstanceOf[ExecutionInfo]
   
-  inline def getNodesInTopologicalOrder(graph: Graph, weightMap: NamedTensorsMap, executionInfo: ExecutionInfo): js.Array[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNodesInTopologicalOrder")(graph.asInstanceOf[js.Any], weightMap.asInstanceOf[js.Any], executionInfo.asInstanceOf[js.Any])).asInstanceOf[js.Array[Node]]
+  inline def getNodeLiveUntilMap(orderedNodes: js.Array[Node]): Map[String, js.Array[Node]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeLiveUntilMap")(orderedNodes.asInstanceOf[js.Any]).asInstanceOf[Map[String, js.Array[Node]]]
+  
+  inline def getNodesInTopologicalOrder(graph: Graph, executionInfo: ExecutionInfo): js.Array[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNodesInTopologicalOrder")(graph.asInstanceOf[js.Any], executionInfo.asInstanceOf[js.Any])).asInstanceOf[js.Array[Node]]
   
   inline def isControlFlow(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isControlFlow")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   

@@ -35,6 +35,7 @@ trait CallFunctionOnRequest extends StObject {
   var generatePreview: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Deprecated. Use `serializationOptions: {serialization:"deep"}` instead.
     * Whether the result should contain `webDriverValue`, serialized according to
     * https://w3c.github.io/webdriver-bidi. This is mutually exclusive with `returnByValue`, but
     * resulting `objectId` is still provided.
@@ -55,8 +56,15 @@ trait CallFunctionOnRequest extends StObject {
   
   /**
     * Whether the result is expected to be a JSON object which should be sent by value.
+    * Can be overriden by `serializationOptions`.
     */
   var returnByValue: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Specifies the result serialization. If provided, overrides
+    * `returnByValue` and `generateWebDriverValue`.
+    */
+  var serializationOptions: js.UndefOr[SerializationOptions] = js.undefined
   
   /**
     * In silent mode exceptions thrown during evaluation are not reported and do not pause
@@ -68,6 +76,16 @@ trait CallFunctionOnRequest extends StObject {
     * Whether to throw an exception if side effect cannot be ruled out during evaluation.
     */
   var throwOnSideEffect: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * An alternative way to specify the execution context to call function on.
+    * Compared to contextId that may be reused across processes, this is guaranteed to be
+    * system-unique, so it can be used to prevent accidental function call
+    * in context different than intended (e.g. as a result of navigation across process
+    * boundaries).
+    * This is mutually exclusive with `executionContextId`.
+    */
+  var uniqueContextId: js.UndefOr[String] = js.undefined
   
   /**
     * Whether execution should be treated as initiated by user in the UI.
@@ -120,6 +138,10 @@ object CallFunctionOnRequest {
     
     inline def setReturnByValueUndefined: Self = StObject.set(x, "returnByValue", js.undefined)
     
+    inline def setSerializationOptions(value: SerializationOptions): Self = StObject.set(x, "serializationOptions", value.asInstanceOf[js.Any])
+    
+    inline def setSerializationOptionsUndefined: Self = StObject.set(x, "serializationOptions", js.undefined)
+    
     inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
     inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
@@ -127,6 +149,10 @@ object CallFunctionOnRequest {
     inline def setThrowOnSideEffect(value: Boolean): Self = StObject.set(x, "throwOnSideEffect", value.asInstanceOf[js.Any])
     
     inline def setThrowOnSideEffectUndefined: Self = StObject.set(x, "throwOnSideEffect", js.undefined)
+    
+    inline def setUniqueContextId(value: String): Self = StObject.set(x, "uniqueContextId", value.asInstanceOf[js.Any])
+    
+    inline def setUniqueContextIdUndefined: Self = StObject.set(x, "uniqueContextId", js.undefined)
     
     inline def setUserGesture(value: Boolean): Self = StObject.set(x, "userGesture", value.asInstanceOf[js.Any])
     

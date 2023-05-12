@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MeasureValue extends StObject {
   
   /**
-    *  Name of the MeasureValue.   For constraints on MeasureValue names, refer to  Naming Constraints in the Timestream developer guide.
+    *  The name of the MeasureValue.   For constraints on MeasureValue names, see  Naming Constraints in the Amazon Timestream Developer Guide.
     */
   var Name: SchemaName
   
   /**
-    * Contains the data type of the MeasureValue for the time series data point.
+    * Contains the data type of the MeasureValue for the time-series data point.
     */
   var Type: MeasureValueType
   
   /**
-    *  Value for the MeasureValue. 
+    *  The value for the MeasureValue. 
     */
   var Value: StringValue2048
 }

@@ -258,11 +258,24 @@ trait Atomics extends StObject {
   def wait(typedArray: BigInt64Array, index: Double, value: js.BigInt): ok | `not-equal` | `timed-out` = js.native
   def wait(typedArray: BigInt64Array, index: Double, value: js.BigInt, timeout: Double): ok | `not-equal` | `timed-out` = js.native
   
-  def waitAsync(typedArray: js.typedarray.Int32Array, index: Double, value: js.BigInt): Async | Value = js.native
-  def waitAsync(typedArray: js.typedarray.Int32Array, index: Double, value: js.BigInt, timeout: Double): Async | Value = js.native
   /**
     * A non-blocking, asynchronous version of wait which is usable on the main thread.
     * Waits asynchronously on a shared memory location and returns a Promise
+    * @param typedArray A shared Int32Array or BigInt64Array.
+    * @param index The position in the typedArray to wait on.
+    * @param value The expected value to test.
+    * @param [timeout] The expected value to test.
+    */
+  /* standard es2022.sharedmemory */
+  def waitAsync(typedArray: js.typedarray.Int32Array, index: Double, value: Double): Async | Value = js.native
+  def waitAsync(typedArray: js.typedarray.Int32Array, index: Double, value: Double, timeout: Double): Async | Value = js.native
+  /**
+    * A non-blocking, asynchronous version of wait which is usable on the main thread.
+    * Waits asynchronously on a shared memory location and returns a Promise
+    * @param typedArray A shared Int32Array or BigInt64Array.
+    * @param index The position in the typedArray to wait on.
+    * @param value The expected value to test.
+    * @param [timeout] The expected value to test.
     */
   /* standard es2022.sharedmemory */
   def waitAsync(typedArray: BigInt64Array, index: Double, value: js.BigInt): Async | Value = js.native

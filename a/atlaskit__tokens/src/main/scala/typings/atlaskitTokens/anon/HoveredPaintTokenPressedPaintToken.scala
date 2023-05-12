@@ -1,12 +1,11 @@
 package typings.atlaskitTokens.anon
 
-import typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.BaseToken
 import typings.atlaskitTokens.distTypesTypesMod.PaintToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HoveredPaintTokenPressedPaintToken extends StObject {
+trait HoveredPaintTokenPressedPaintToken[BaseToken] extends StObject {
   
   var hovered: PaintToken[BaseToken]
   
@@ -14,13 +13,13 @@ trait HoveredPaintTokenPressedPaintToken extends StObject {
 }
 object HoveredPaintTokenPressedPaintToken {
   
-  inline def apply(hovered: PaintToken[BaseToken], pressed: PaintToken[BaseToken]): HoveredPaintTokenPressedPaintToken = {
+  inline def apply[BaseToken](hovered: PaintToken[BaseToken], pressed: PaintToken[BaseToken]): HoveredPaintTokenPressedPaintToken[BaseToken] = {
     val __obj = js.Dynamic.literal(hovered = hovered.asInstanceOf[js.Any], pressed = pressed.asInstanceOf[js.Any])
-    __obj.asInstanceOf[HoveredPaintTokenPressedPaintToken]
+    __obj.asInstanceOf[HoveredPaintTokenPressedPaintToken[BaseToken]]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: HoveredPaintTokenPressedPaintToken] (val x: Self) extends AnyVal {
+  implicit open class MutableBuilder[Self <: HoveredPaintTokenPressedPaintToken[?], BaseToken] (val x: Self & HoveredPaintTokenPressedPaintToken[BaseToken]) extends AnyVal {
     
     inline def setHovered(value: PaintToken[BaseToken]): Self = StObject.set(x, "hovered", value.asInstanceOf[js.Any])
     

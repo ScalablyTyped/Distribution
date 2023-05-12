@@ -20,6 +20,11 @@ trait ResourceScanMetadata extends StObject {
     * An object that contains details about the repository an Amazon ECR image resides in.
     */
   var ecrRepository: js.UndefOr[EcrRepositoryMetadata] = js.undefined
+  
+  /**
+    * An object that contains metadata details for an AWS Lambda function.
+    */
+  var lambdaFunction: js.UndefOr[LambdaFunctionMetadata] = js.undefined
 }
 object ResourceScanMetadata {
   
@@ -42,5 +47,9 @@ object ResourceScanMetadata {
     inline def setEcrRepository(value: EcrRepositoryMetadata): Self = StObject.set(x, "ecrRepository", value.asInstanceOf[js.Any])
     
     inline def setEcrRepositoryUndefined: Self = StObject.set(x, "ecrRepository", js.undefined)
+    
+    inline def setLambdaFunction(value: LambdaFunctionMetadata): Self = StObject.set(x, "lambdaFunction", value.asInstanceOf[js.Any])
+    
+    inline def setLambdaFunctionUndefined: Self = StObject.set(x, "lambdaFunction", js.undefined)
   }
 }

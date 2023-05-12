@@ -21,5 +21,11 @@ trait GPUBuffer
   def mapAsync(mode: GPUMapModeFlags, offset: GPUSize64): js.Promise[Unit] = js.native
   def mapAsync(mode: GPUMapModeFlags, offset: GPUSize64, size: GPUSize64): js.Promise[Unit] = js.native
   
+  val mapState: GPUBufferMapState = js.native
+  
+  val size: GPUSize64 = js.native
+  
   def unmap(): Unit = js.native
+  
+  val usage: GPUBufferUsageFlags = js.native
 }

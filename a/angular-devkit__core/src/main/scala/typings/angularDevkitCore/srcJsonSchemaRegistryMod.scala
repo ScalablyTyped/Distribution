@@ -35,8 +35,6 @@ object srcJsonSchemaRegistryMod {
     
     /* private */ var _fetch: Any = js.native
     
-    /* private */ var _flatten: Any = js.native
-    
     /* private */ var _post: Any = js.native
     
     /* private */ var _pre: Any = js.native
@@ -59,9 +57,8 @@ object srcJsonSchemaRegistryMod {
       *
       * @param schema The schema to validate. If a string, will fetch the schema before compiling it
       * (using schema as a URI).
-      * @returns An Observable of the Validation function.
       */
-    def compile(schema: JsonSchema): Observable_[SchemaValidator] = js.native
+    def compile(schema: JsonSchema): js.Promise[SchemaValidator] = js.native
     
     /* private */ var normalizeDataPathArr: Any = js.native
     

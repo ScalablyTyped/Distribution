@@ -14,6 +14,14 @@ trait OpenExternalOptions extends StObject {
   var activate: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Indicates a user initiated launch that enables tracking of frequently used
+    * programs and other behaviors. The default is `false`.
+    *
+    * @platform win32
+    */
+  var logUsage: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * The working directory.
     *
     * @platform win32
@@ -33,6 +41,10 @@ object OpenExternalOptions {
     inline def setActivate(value: Boolean): Self = StObject.set(x, "activate", value.asInstanceOf[js.Any])
     
     inline def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
+    
+    inline def setLogUsage(value: Boolean): Self = StObject.set(x, "logUsage", value.asInstanceOf[js.Any])
+    
+    inline def setLogUsageUndefined: Self = StObject.set(x, "logUsage", js.undefined)
     
     inline def setWorkingDirectory(value: String): Self = StObject.set(x, "workingDirectory", value.asInstanceOf[js.Any])
     

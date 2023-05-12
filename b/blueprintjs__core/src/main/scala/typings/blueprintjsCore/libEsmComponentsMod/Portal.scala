@@ -14,7 +14,7 @@ open class Portal protected ()
   def this(props: PortalProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: PortalProps, context: Any) = this()
 }

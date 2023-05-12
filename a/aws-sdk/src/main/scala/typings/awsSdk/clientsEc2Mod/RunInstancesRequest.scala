@@ -62,7 +62,7 @@ trait RunInstancesRequest extends StObject {
   var ElasticGpuSpecification: js.UndefOr[ElasticGpuSpecifications] = js.undefined
   
   /**
-    * An elastic inference accelerator to associate with the instance. Elastic inference accelerators are a resource you can attach to your Amazon EC2 instances to accelerate your Deep Learning (DL) inference workloads. You cannot specify accelerators from different generations in the same request.
+    * An elastic inference accelerator to associate with the instance. Elastic inference accelerators are a resource you can attach to your Amazon EC2 instances to accelerate your Deep Learning (DL) inference workloads. You cannot specify accelerators from different generations in the same request.  Starting April 15, 2023, Amazon Web Services will not onboard new customers to Amazon Elastic Inference (EI), and will help current customers migrate their workloads to options that offer better price and performance. After April 15, 2023, new customers will not be able to launch instances with Amazon EI accelerators in Amazon SageMaker, Amazon ECS, or Amazon EC2. However, customers who have used Amazon EI at least once during the past 30-day period are considered current customers and will be able to continue using the service. 
     */
   var ElasticInferenceAccelerators: js.UndefOr[typings.awsSdk.clientsEc2Mod.ElasticInferenceAccelerators] = js.undefined
   
@@ -102,12 +102,12 @@ trait RunInstancesRequest extends StObject {
   var InstanceType: js.UndefOr[typings.awsSdk.clientsEc2Mod.InstanceType] = js.undefined
   
   /**
-    * [EC2-VPC] The number of IPv6 addresses to associate with the primary network interface. Amazon EC2 chooses the IPv6 addresses from the range of your subnet. You cannot specify this option and the option to assign specific IPv6 addresses in the same request. You can specify this option if you've specified a minimum number of instances to launch. You cannot specify this option and the network interfaces option in the same request.
+    * The number of IPv6 addresses to associate with the primary network interface. Amazon EC2 chooses the IPv6 addresses from the range of your subnet. You cannot specify this option and the option to assign specific IPv6 addresses in the same request. You can specify this option if you've specified a minimum number of instances to launch. You cannot specify this option and the network interfaces option in the same request.
     */
   var Ipv6AddressCount: js.UndefOr[Integer] = js.undefined
   
   /**
-    * [EC2-VPC] The IPv6 addresses from the range of the subnet to associate with the primary network interface. You cannot specify this option and the option to assign a number of IPv6 addresses in the same request. You cannot specify this option if you've specified a minimum number of instances to launch. You cannot specify this option and the network interfaces option in the same request.
+    * The IPv6 addresses from the range of the subnet to associate with the primary network interface. You cannot specify this option and the option to assign a number of IPv6 addresses in the same request. You cannot specify this option if you've specified a minimum number of instances to launch. You cannot specify this option and the network interfaces option in the same request.
     */
   var Ipv6Addresses: js.UndefOr[InstanceIpv6AddressList] = js.undefined
   
@@ -172,7 +172,7 @@ trait RunInstancesRequest extends StObject {
   var PrivateDnsNameOptions: js.UndefOr[PrivateDnsNameOptionsRequest] = js.undefined
   
   /**
-    * [EC2-VPC] The primary IPv4 address. You must specify a value from the IPv4 address range of the subnet. Only one private IP address can be designated as primary. You can't specify this option if you've specified the option to designate a private IP address as the primary IP address in a network interface specification. You cannot specify this option if you're launching more than one instance in the request. You cannot specify this option and the network interfaces option in the same request.
+    * The primary IPv4 address. You must specify a value from the IPv4 address range of the subnet. Only one private IP address can be designated as primary. You can't specify this option if you've specified the option to designate a private IP address as the primary IP address in a network interface specification. You cannot specify this option if you're launching more than one instance in the request. You cannot specify this option and the network interfaces option in the same request.
     */
   var PrivateIpAddress: js.UndefOr[String] = js.undefined
   
@@ -187,12 +187,12 @@ trait RunInstancesRequest extends StObject {
   var SecurityGroupIds: js.UndefOr[SecurityGroupIdStringList] = js.undefined
   
   /**
-    * [EC2-Classic, default VPC] The names of the security groups. For a nondefault VPC, you must use security group IDs instead. If you specify a network interface, you must specify any security groups as part of the network interface. Default: Amazon EC2 uses the default security group.
+    * [Default VPC] The names of the security groups. If you specify a network interface, you must specify any security groups as part of the network interface. Default: Amazon EC2 uses the default security group.
     */
   var SecurityGroups: js.UndefOr[SecurityGroupStringList] = js.undefined
   
   /**
-    * [EC2-VPC] The ID of the subnet to launch the instance into. If you specify a network interface, you must specify any subnets as part of the network interface.
+    * The ID of the subnet to launch the instance into. If you specify a network interface, you must specify any subnets as part of the network interface.
     */
   var SubnetId: js.UndefOr[typings.awsSdk.clientsEc2Mod.SubnetId] = js.undefined
   

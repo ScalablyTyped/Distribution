@@ -1,7 +1,7 @@
 
 # Scala.js typings for lmdb
 
-Typings are for version 2.6.9
+Typings are for version 2.8.0
 
 ## Library description:
 Simple, efficient, scalable, high-performance LMDB interface

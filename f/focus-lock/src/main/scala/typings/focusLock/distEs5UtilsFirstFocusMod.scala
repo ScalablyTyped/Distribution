@@ -11,7 +11,7 @@ object distEs5UtilsFirstFocusMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def pickFirstFocus(nodes: js.Array[HTMLElement]): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("pickFirstFocus")(nodes.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  inline def pickFirstFocus(nodes: js.Array[HTMLElement]): js.UndefOr[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("pickFirstFocus")(nodes.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[HTMLElement]]
   
   inline def pickFocusable(nodes: js.Array[HTMLElement], index: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("pickFocusable")(nodes.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

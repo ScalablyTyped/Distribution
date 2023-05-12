@@ -56,6 +56,10 @@ object distCommonjsCollectionsFormFormMod extends Shortcut {
     extends StObject
        with FormHTMLAttributes[HTMLFormElement] {
     
+    /** The HTML form action */
+    @JSName("action")
+    var action_StrictFormProps: js.UndefOr[String] = js.undefined
+    
     /** An element type to render as (string or function). */
     var as: js.UndefOr[Any] = js.undefined
     
@@ -99,6 +103,10 @@ object distCommonjsCollectionsFormFormMod extends Shortcut {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: StrictFormProps] (val x: Self) extends AnyVal {
+      
+      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

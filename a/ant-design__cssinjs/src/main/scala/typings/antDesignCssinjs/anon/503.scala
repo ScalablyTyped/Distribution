@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.PageBreakBefore
+import typings.csstype.mod.Property.FontVariantEmoji
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `503` extends StObject {
   
   var value: js.UndefOr[
-    PageBreakBefore | (js.Array[
+    FontVariantEmoji | (js.Array[
       (Extract[
-        js.UndefOr[PageBreakBefore | js.Array[NonNullable[js.UndefOr[PageBreakBefore]]]], 
+        js.UndefOr[FontVariantEmoji | js.Array[NonNullable[js.UndefOr[FontVariantEmoji]]]], 
         String
-      ]) | NonNullable[js.UndefOr[PageBreakBefore]]
+      ]) | NonNullable[js.UndefOr[FontVariantEmoji]]
     ])
   ] = js.native
 }

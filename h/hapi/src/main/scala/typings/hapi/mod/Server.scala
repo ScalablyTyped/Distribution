@@ -543,10 +543,10 @@ open class Server () extends StObject {
     * @return Return value: none.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-await-serverregisterplugins-options)
     */
-  /* tslint:disable-next-line:no-unnecessary-generics */
+  /* eslint-disable-next-line no-unnecessary-generics */
   def register[T](plugin: ServerRegisterPluginObject[T]): js.Promise[Unit] = js.native
   def register[T](plugin: ServerRegisterPluginObject[T], options: ServerRegisterOptions): js.Promise[Unit] = js.native
-  /* tslint:disable-next-line:no-unnecessary-generics */
+  /* eslint-disable-next-line no-unnecessary-generics */
   def register[T, U, V, W, X, Y, Z](plugins: ServerRegisterPluginObjectArray[T, U, V, W, X, Y, Z]): js.Promise[Unit] = js.native
   def register[T, U, V, W, X, Y, Z](plugins: ServerRegisterPluginObjectArray[T, U, V, W, X, Y, Z], options: ServerRegisterOptions): js.Promise[Unit] = js.native
   

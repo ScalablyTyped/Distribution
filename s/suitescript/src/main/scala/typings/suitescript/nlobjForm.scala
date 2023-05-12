@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @classDescription UI Object page type used for building basic data entry forms.
   * @return {nlobjForm}
-  * @constructor
   */
 @js.native
 trait nlobjForm

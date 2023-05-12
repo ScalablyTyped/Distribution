@@ -22,7 +22,7 @@ trait Attribute extends StObject {
   var targetType: js.UndefOr[TargetType] = js.undefined
   
   /**
-    * The value of the attribute. The value must contain between 1 and 128 characters. It can contain letters (uppercase and lowercase), numbers, hyphens (-), underscores (_), periods (.), at signs (@), forward slashes (/), back slashes (\), colons (:), or spaces. The value can't can't start or end with a space.
+    * The value of the attribute. The value must contain between 1 and 128 characters. It can contain letters (uppercase and lowercase), numbers, hyphens (-), underscores (_), periods (.), at signs (@), forward slashes (/), back slashes (\), colons (:), or spaces. The value can't start or end with a space.
     */
   var value: js.UndefOr[String] = js.undefined
 }

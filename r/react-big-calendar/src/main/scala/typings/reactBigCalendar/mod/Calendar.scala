@@ -12,7 +12,7 @@ open class Calendar[TEvent /* <: js.Object */, TResource /* <: js.Object */] pro
   def this(props: CalendarProps[TEvent, TResource]) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: CalendarProps[TEvent, TResource], context: Any) = this()
 }

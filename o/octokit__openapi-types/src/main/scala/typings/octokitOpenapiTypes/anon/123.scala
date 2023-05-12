@@ -1,5 +1,7 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.maintainer
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.member_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,10 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `123` extends StObject {
   
   /**
-    * @description The permission to grant the collaborator. **Only valid on organization-owned repositories.** We accept the following permissions to be set: `pull`, `triage`, `push`, `maintain`, `admin` and you can also specify a custom repository role name, if the owning organization has defined any.
-    * @default push
+    * @description The role that this user should have in the team.
+    * @default member
+    * @enum {string}
     */
-  var permission: js.UndefOr[String] = js.undefined
+  var role: js.UndefOr[member_ | maintainer] = js.undefined
 }
 object `123` {
   
@@ -22,8 +25,8 @@ object `123` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `123`] (val x: Self) extends AnyVal {
     
-    inline def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+    inline def setRole(value: member_ | maintainer): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    inline def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
   }
 }

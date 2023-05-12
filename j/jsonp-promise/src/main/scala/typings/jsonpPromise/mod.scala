@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  // tslint:disable-next-line no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   inline def apply[R](url: String): JsonpResult[R] = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[JsonpResult[R]]
   inline def apply[R](url: String, options: JsonpOptions): JsonpResult[R] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JsonpResult[R]]
   

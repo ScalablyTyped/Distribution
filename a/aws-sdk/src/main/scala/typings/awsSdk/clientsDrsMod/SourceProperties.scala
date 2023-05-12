@@ -45,6 +45,11 @@ trait SourceProperties extends StObject {
     * The recommended EC2 instance type that will be used when recovering the Source Server.
     */
   var recommendedInstanceType: js.UndefOr[EC2InstanceType] = js.undefined
+  
+  /**
+    * Are EC2 nitro instance types supported when recovering the Source Server.
+    */
+  var supportsNitroInstances: js.UndefOr[Boolean] = js.undefined
 }
 object SourceProperties {
   
@@ -93,5 +98,9 @@ object SourceProperties {
     inline def setRecommendedInstanceType(value: EC2InstanceType): Self = StObject.set(x, "recommendedInstanceType", value.asInstanceOf[js.Any])
     
     inline def setRecommendedInstanceTypeUndefined: Self = StObject.set(x, "recommendedInstanceType", js.undefined)
+    
+    inline def setSupportsNitroInstances(value: Boolean): Self = StObject.set(x, "supportsNitroInstances", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsNitroInstancesUndefined: Self = StObject.set(x, "supportsNitroInstances", js.undefined)
   }
 }

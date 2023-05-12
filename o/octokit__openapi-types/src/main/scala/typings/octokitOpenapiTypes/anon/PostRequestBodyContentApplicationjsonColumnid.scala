@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PostRequestBodyContentApplicationjsonColumnid extends StObject {
   
+  /** Move a project card */
   var post: RequestBodyContentApplicationjsonColumnid
 }
 object PostRequestBodyContentApplicationjsonColumnid {

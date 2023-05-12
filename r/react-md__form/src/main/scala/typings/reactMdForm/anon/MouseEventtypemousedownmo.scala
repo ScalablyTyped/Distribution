@@ -1,5 +1,8 @@
 package typings.reactMdForm.anon
 
+import typings.reactMdForm.reactMdFormInts.`1`
+import typings.reactMdForm.reactMdFormInts.`2`
+import typings.reactMdForm.reactMdFormInts.`3`
 import typings.std.DOMHighResTimeStamp
 import typings.std.EventTarget
 import typings.std.Window
@@ -12,16 +15,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MouseEventtypemousedownmo extends StObject {
   
   /* standard dom */
-  val AT_TARGET: Double = js.native
+  val AT_TARGET: `2` = js.native
   
   /* standard dom */
-  val BUBBLING_PHASE: Double = js.native
+  val BUBBLING_PHASE: `3` = js.native
   
   /* standard dom */
-  val CAPTURING_PHASE: Double = js.native
+  val CAPTURING_PHASE: `1` = js.native
   
   /* standard dom */
-  val NONE: Double = js.native
+  val NONE: typings.reactMdForm.reactMdFormInts.`0` = js.native
   
   /* standard dom */
   val altKey: Boolean = js.native

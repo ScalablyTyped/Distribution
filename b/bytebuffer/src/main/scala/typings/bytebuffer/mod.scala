@@ -169,12 +169,14 @@ object mod {
   /* static member */
   inline def calculateVarint32(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateVarint32")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
+  inline def calculateVarint64(
+    value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any
+  ): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateVarint64")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   /**
     * Calculates the actual number of bytes required to store a 64bit base 128 variable-length integer.
     */
   /* static member */
   inline def calculateVarint64(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateVarint64")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def calculateVarint64(value: typings.long.mod.^): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateVarint64")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Concatenates multiple ByteBuffers into one.
@@ -339,12 +341,14 @@ object mod {
   /* static member */
   inline def zigZagDecode32(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagDecode32")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
   
+  inline def zigZagDecode64(
+    n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any
+  ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagDecode64")(n.asInstanceOf[js.Any]).asInstanceOf[Any]
   /**
     * Decodes a zigzag encoded signed 64bit integer.
     */
   /* static member */
-  inline def zigZagDecode64(n: Double): typings.long.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagDecode64")(n.asInstanceOf[js.Any]).asInstanceOf[typings.long.mod.^]
-  inline def zigZagDecode64(n: typings.long.mod.^): typings.long.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagDecode64")(n.asInstanceOf[js.Any]).asInstanceOf[typings.long.mod.^]
+  inline def zigZagDecode64(n: Double): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagDecode64")(n.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /**
     * Zigzag encodes a signed 32bit integer so that it can be effectively used with varint encoding.
@@ -352,12 +356,14 @@ object mod {
   /* static member */
   inline def zigZagEncode32(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagEncode32")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
   
+  inline def zigZagEncode64(
+    n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any
+  ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagEncode64")(n.asInstanceOf[js.Any]).asInstanceOf[Any]
   /**
     * Zigzag encodes a signed 64bit integer so that it can be effectively used with varint encoding.
     */
   /* static member */
-  inline def zigZagEncode64(n: Double): typings.long.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagEncode64")(n.asInstanceOf[js.Any]).asInstanceOf[typings.long.mod.^]
-  inline def zigZagEncode64(n: typings.long.mod.^): typings.long.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagEncode64")(n.asInstanceOf[js.Any]).asInstanceOf[typings.long.mod.^]
+  inline def zigZagEncode64(n: Double): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagEncode64")(n.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @js.native
   trait ByteBuffer extends StObject {
@@ -632,8 +638,8 @@ object mod {
     /**
       * Reads a 64bit signed integer.
       */
-    def readInt64(): typings.long.mod.^ = js.native
-    def readInt64(offset: Double): typings.long.mod.^ = js.native
+    def readInt64(): Any = js.native
+    def readInt64(offset: Double): Any = js.native
     
     /**
       * Reads an 8bit signed integer.
@@ -644,8 +650,8 @@ object mod {
     /**
       * Reads a 64bit signed integer. This is an alias of ByteBuffer#readInt64.
       */
-    def readLong(): typings.long.mod.^ = js.native
-    def readLong(offset: Double): typings.long.mod.^ = js.native
+    def readLong(): Any = js.native
+    def readLong(offset: Double): Any = js.native
     
     /**
       * Reads a 16bit signed integer. This is an alias of ByteBuffer#readInt16.
@@ -682,8 +688,8 @@ object mod {
     /**
       * Reads a 64bit unsigned integer.
       */
-    def readUint64(): typings.long.mod.^ = js.native
-    def readUint64(offset: Double): typings.long.mod.^ = js.native
+    def readUint64(): Any = js.native
+    def readUint64(offset: Double): Any = js.native
     
     /**
       * Reads an 8bit unsigned integer.
@@ -712,13 +718,13 @@ object mod {
     /**
       * Reads a 64bit base 128 variable-length integer. Requires Long.js.
       */
-    def readVarint64(): typings.long.mod.^ = js.native
+    def readVarint64(): Any = js.native
     def readVarint64(offset: Double): LengthValue = js.native
     
     /**
       * Reads a zig-zag encoded 64bit base 128 variable-length integer. Requires Long.js.
       */
-    def readVarint64ZigZag(): typings.long.mod.^ = js.native
+    def readVarint64ZigZag(): Any = js.native
     def readVarint64ZigZag(offset: Double): LengthValue = js.native
     
     /**
@@ -912,13 +918,18 @@ object mod {
     def writeInt32(value: Double): this.type = js.native
     def writeInt32(value: Double, offset: Double): this.type = js.native
     
+    def writeInt64(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any
+    ): this.type = js.native
+    def writeInt64(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any,
+      offset: Double
+    ): this.type = js.native
     /**
       * Writes a 64bit signed integer.
       */
     def writeInt64(value: Double): this.type = js.native
     def writeInt64(value: Double, offset: Double): this.type = js.native
-    def writeInt64(value: typings.long.mod.^): this.type = js.native
-    def writeInt64(value: typings.long.mod.^, offset: Double): this.type = js.native
     
     /**
       * Writes an 8bit signed integer.
@@ -926,13 +937,18 @@ object mod {
     def writeInt8(value: Double): this.type = js.native
     def writeInt8(value: Double, offset: Double): this.type = js.native
     
+    def writeLong(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any
+    ): this.type = js.native
+    def writeLong(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any,
+      offset: Double
+    ): this.type = js.native
     /**
       * Write a 64bit signed integer. This is an alias of ByteBuffer#writeInt64.
       */
     def writeLong(value: Double): this.type = js.native
     def writeLong(value: Double, offset: Double): this.type = js.native
-    def writeLong(value: typings.long.mod.^): this.type = js.native
-    def writeLong(value: typings.long.mod.^, offset: Double): this.type = js.native
     
     /**
       * Writes a 16bit signed integer. This is an alias of ByteBuffer#writeInt16.
@@ -966,13 +982,18 @@ object mod {
     def writeUint32(value: Double): this.type = js.native
     def writeUint32(value: Double, offset: Double): this.type = js.native
     
+    def writeUint64(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any
+    ): this.type = js.native
+    def writeUint64(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any,
+      offset: Double
+    ): this.type = js.native
     /**
       * Writes a 64bit unsigned integer.
       */
     def writeUint64(value: Double): this.type = js.native
     def writeUint64(value: Double, offset: Double): this.type = js.native
-    def writeUint64(value: typings.long.mod.^): this.type = js.native
-    def writeUint64(value: typings.long.mod.^, offset: Double): this.type = js.native
     
     /**
       * Writes an 8bit unsigned integer.
@@ -998,20 +1019,30 @@ object mod {
     def writeVarint32ZigZag(value: Double): this.type = js.native
     def writeVarint32ZigZag(value: Double, offset: Double): Double = js.native
     
+    def writeVarint64(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any
+    ): this.type = js.native
+    def writeVarint64(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any,
+      offset: Double
+    ): Double = js.native
     /**
       * Writes a 64bit base 128 variable-length integer.
       */
     def writeVarint64(value: Double): this.type = js.native
     def writeVarint64(value: Double, offset: Double): Double = js.native
-    def writeVarint64(value: typings.long.mod.^): this.type = js.native
-    def writeVarint64(value: typings.long.mod.^, offset: Double): Double = js.native
     
+    def writeVarint64ZigZag(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any
+    ): this.type = js.native
+    def writeVarint64ZigZag(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any,
+      offset: Double
+    ): Double = js.native
     /**
       * Writes a zig-zag encoded 64bit base 128 variable-length integer.
       */
     def writeVarint64ZigZag(value: Double): this.type = js.native
     def writeVarint64ZigZag(value: Double, offset: Double): Double = js.native
-    def writeVarint64ZigZag(value: typings.long.mod.^): this.type = js.native
-    def writeVarint64ZigZag(value: typings.long.mod.^, offset: Double): Double = js.native
   }
 }

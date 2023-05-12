@@ -22,7 +22,7 @@ trait GetDatabasesRequest extends StObject {
   var NextToken: js.UndefOr[Token] = js.undefined
   
   /**
-    * Allows you to specify that you want to list the databases shared with your account. The allowable values are FOREIGN or ALL.    If set to FOREIGN, will list the databases shared with your account.    If set to ALL, will list the databases shared with your account, as well as the databases in yor local account.   
+    * Allows you to specify that you want to list the databases shared with your account. The allowable values are FEDERATED, FOREIGN or ALL.    If set to FEDERATED, will list the federated databases (referencing an external entity) shared with your account.   If set to FOREIGN, will list the databases shared with your account.    If set to ALL, will list the databases shared with your account, as well as the databases in yor local account.   
     */
   var ResourceShareType: js.UndefOr[typings.awsSdk.clientsGlueMod.ResourceShareType] = js.undefined
 }

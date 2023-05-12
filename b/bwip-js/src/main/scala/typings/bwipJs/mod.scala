@@ -1,5 +1,15 @@
 package typings.bwipJs
 
+import typings.bwipJs.anon.Advance
+import typings.bwipJs.anon.Ascent
+import typings.bwipJs.anon.Bbs
+import typings.bwipJs.anon.Cx
+import typings.bwipJs.anon.Cx1
+import typings.bwipJs.anon.Dx
+import typings.bwipJs.anon.Height
+import typings.bwipJs.anon.Pixs
+import typings.bwipJs.anon.Type
+import typings.bwipJs.anon.X
 import typings.bwipJs.bwipJsStrings.I
 import typings.bwipJs.bwipJsStrings.L
 import typings.bwipJs.bwipJsStrings.N
@@ -15,6 +25,7 @@ import typings.bwipJs.bwipJsStrings.right
 import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
+import typings.std.Array
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -47,21 +58,71 @@ object mod {
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(req: IncomingMessage, res: ServerResponse[IncomingMessage]): Unit = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(req: IncomingMessage, res: ServerResponse[IncomingMessage], opts: ToBufferOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(req: IncomingMessage, res: ServerResponse[IncomingMessage], opts: RenderOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("bwip-js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
+  object FontLib {
+    
+    @JSImport("bwip-js", "FontLib")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def getglyph(fontid: Double, charcode: Double, width: Double, height: Double): Advance = (^.asInstanceOf[js.Dynamic].applyDynamic("getglyph")(fontid.asInstanceOf[js.Any], charcode.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Advance]
+    
+    inline def getpaths(fontid: Double, charcode: Double, width: Double, height: Double): PathData = (^.asInstanceOf[js.Dynamic].applyDynamic("getpaths")(fontid.asInstanceOf[js.Any], charcode.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[PathData]
+    
+    inline def loadFont(name: String, data: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFont")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def loadFont(name: String, data: js.typedarray.Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFont")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def loadFont(name: String, mult: Double, data: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFont")(name.asInstanceOf[js.Any], mult.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def loadFont(name: String, mult: Double, data: js.typedarray.Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFont")(name.asInstanceOf[js.Any], mult.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def loadFont(name: String, multy: Double, multx: Double, data: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFont")(name.asInstanceOf[js.Any], multy.asInstanceOf[js.Any], multx.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def loadFont(name: String, multy: Double, multx: Double, data: js.typedarray.Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFont")(name.asInstanceOf[js.Any], multy.asInstanceOf[js.Any], multx.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def lookup(font: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(font.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    inline def monochrome(mono: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("monochrome")(mono.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @js.native
+    trait PathData
+      extends StObject
+         with Array[Type | X | Cx | Cx1] {
+      
+      var advance: Double = js.native
+      
+      var ascent: Double = js.native
+      
+      var descent: Double = js.native
+    }
+  }
+  
+  inline def fixupOptions(opts: RenderOptions): RenderOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("fixupOptions")(opts.asInstanceOf[js.Any]).asInstanceOf[RenderOptions]
+  
   inline def loadFont(fontName: String, sizeMulti: Double, fontFile: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFont")(fontName.asInstanceOf[js.Any], sizeMulti.asInstanceOf[js.Any], fontFile.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def loadFont(fontName: String, sizeMulti: Double, fontFile: js.typedarray.Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFont")(fontName.asInstanceOf[js.Any], sizeMulti.asInstanceOf[js.Any], fontFile.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def toBuffer(opts: ToBufferOptions): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
-  inline def toBuffer(opts: ToBufferOptions, callback: js.Function2[/* err */ String | js.Error, /* png */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def raw(bcid: String, text: String): js.Array[Bbs | Pixs] = (^.asInstanceOf[js.Dynamic].applyDynamic("raw")(bcid.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.Array[Bbs | Pixs]]
+  inline def raw(bcid: String, text: String, opts: String): js.Array[Bbs | Pixs] = (^.asInstanceOf[js.Dynamic].applyDynamic("raw")(bcid.asInstanceOf[js.Any], text.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[Bbs | Pixs]]
+  inline def raw(bcid: String, text: String, opts: BwippOptions): js.Array[Bbs | Pixs] = (^.asInstanceOf[js.Dynamic].applyDynamic("raw")(bcid.asInstanceOf[js.Any], text.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[Bbs | Pixs]]
+  inline def raw(options: RawOptions): js.Array[Bbs | Pixs] = ^.asInstanceOf[js.Dynamic].applyDynamic("raw")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[Bbs | Pixs]]
   
-  inline def toCanvas(canvas: String, opts: ToBufferOptions): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("toCanvas")(canvas.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
-  inline def toCanvas(canvas: HTMLCanvasElement, opts: ToBufferOptions): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("toCanvas")(canvas.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+  inline def render[T](params: RenderOptions, drawing: DrawingOption[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(params.asInstanceOf[js.Any], drawing.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  trait ToBufferOptions extends StObject {
+  inline def request(req: IncomingMessage, res: ServerResponse[IncomingMessage]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def request(req: IncomingMessage, res: ServerResponse[IncomingMessage], opts: RenderOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def toBuffer(opts: RenderOptions): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  inline def toBuffer(opts: RenderOptions, callback: js.Function2[/* err */ String | js.Error, /* png */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def toCanvas(canvas: String, opts: RenderOptions): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("toCanvas")(canvas.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+  inline def toCanvas(canvas: HTMLCanvasElement, opts: RenderOptions): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("toCanvas")(canvas.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+  
+  inline def toDataURL(opts: RenderOptions): js.Promise[Height] = ^.asInstanceOf[js.Dynamic].applyDynamic("toDataURL")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Height]]
+  inline def toDataURL(opts: RenderOptions, callback: js.Function2[/* err */ String | js.Error, /* png */ Height, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toDataURL")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  trait BwippOptions extends StObject {
     
     var addontextfont: js.UndefOr[String] = js.undefined
     
@@ -77,8 +138,6 @@ object mod {
     
     var barcolor: js.UndefOr[String] = js.undefined
     
-    var bcid: String
-    
     var boraderbottom: js.UndefOr[Double] = js.undefined
     
     var bordercolor: js.UndefOr[String] = js.undefined
@@ -90,6 +149,8 @@ object mod {
     var bordertop: js.UndefOr[Double] = js.undefined
     
     var borderwidth: js.UndefOr[Double] = js.undefined
+    
+    var dotty: js.UndefOr[Boolean] = js.undefined
     
     var guardheight: js.UndefOr[Double] = js.undefined
     
@@ -119,29 +180,11 @@ object mod {
     
     var inkspreadv: js.UndefOr[Double] = js.undefined
     
-    var monochrome: js.UndefOr[Boolean] = js.undefined
-    
-    var paddingheight: js.UndefOr[Double] = js.undefined
-    
-    var paddingwidth: js.UndefOr[Double] = js.undefined
-    
     var parse: js.UndefOr[Boolean] = js.undefined
     
     var parsefnc: js.UndefOr[Boolean] = js.undefined
     
-    var rotate: js.UndefOr[N | R | L | I] = js.undefined
-    
-    var scale: js.UndefOr[Double] = js.undefined
-    
-    var scaleX: js.UndefOr[Double] = js.undefined
-    
-    var scaleY: js.UndefOr[Double] = js.undefined
-    
     var showborder: js.UndefOr[Boolean] = js.undefined
-    
-    var sizelimit: js.UndefOr[Double] = js.undefined
-    
-    var text: String
     
     var textcolor: js.UndefOr[String] = js.undefined
     
@@ -161,15 +204,15 @@ object mod {
     
     var width: js.UndefOr[Double] = js.undefined
   }
-  object ToBufferOptions {
+  object BwippOptions {
     
-    inline def apply(bcid: String, text: String): ToBufferOptions = {
-      val __obj = js.Dynamic.literal(bcid = bcid.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ToBufferOptions]
+    inline def apply(): BwippOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[BwippOptions]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: ToBufferOptions] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: BwippOptions] (val x: Self) extends AnyVal {
       
       inline def setAddontextfont(value: String): Self = StObject.set(x, "addontextfont", value.asInstanceOf[js.Any])
       
@@ -199,8 +242,6 @@ object mod {
       
       inline def setBarcolorUndefined: Self = StObject.set(x, "barcolor", js.undefined)
       
-      inline def setBcid(value: String): Self = StObject.set(x, "bcid", value.asInstanceOf[js.Any])
-      
       inline def setBoraderbottom(value: Double): Self = StObject.set(x, "boraderbottom", value.asInstanceOf[js.Any])
       
       inline def setBoraderbottomUndefined: Self = StObject.set(x, "boraderbottom", js.undefined)
@@ -224,6 +265,10 @@ object mod {
       inline def setBorderwidth(value: Double): Self = StObject.set(x, "borderwidth", value.asInstanceOf[js.Any])
       
       inline def setBorderwidthUndefined: Self = StObject.set(x, "borderwidth", js.undefined)
+      
+      inline def setDotty(value: Boolean): Self = StObject.set(x, "dotty", value.asInstanceOf[js.Any])
+      
+      inline def setDottyUndefined: Self = StObject.set(x, "dotty", js.undefined)
       
       inline def setGuardheight(value: Double): Self = StObject.set(x, "guardheight", value.asInstanceOf[js.Any])
       
@@ -281,18 +326,6 @@ object mod {
       
       inline def setInkspreadvUndefined: Self = StObject.set(x, "inkspreadv", js.undefined)
       
-      inline def setMonochrome(value: Boolean): Self = StObject.set(x, "monochrome", value.asInstanceOf[js.Any])
-      
-      inline def setMonochromeUndefined: Self = StObject.set(x, "monochrome", js.undefined)
-      
-      inline def setPaddingheight(value: Double): Self = StObject.set(x, "paddingheight", value.asInstanceOf[js.Any])
-      
-      inline def setPaddingheightUndefined: Self = StObject.set(x, "paddingheight", js.undefined)
-      
-      inline def setPaddingwidth(value: Double): Self = StObject.set(x, "paddingwidth", value.asInstanceOf[js.Any])
-      
-      inline def setPaddingwidthUndefined: Self = StObject.set(x, "paddingwidth", js.undefined)
-      
       inline def setParse(value: Boolean): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
       
       inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
@@ -301,31 +334,9 @@ object mod {
       
       inline def setParsefncUndefined: Self = StObject.set(x, "parsefnc", js.undefined)
       
-      inline def setRotate(value: N | R | L | I): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
-      
-      inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
-      
-      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
-      
-      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
-      
-      inline def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
-      
-      inline def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
-      
-      inline def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
-      
-      inline def setScaleYUndefined: Self = StObject.set(x, "scaleY", js.undefined)
-      
       inline def setShowborder(value: Boolean): Self = StObject.set(x, "showborder", value.asInstanceOf[js.Any])
       
       inline def setShowborderUndefined: Self = StObject.set(x, "showborder", js.undefined)
-      
-      inline def setSizelimit(value: Double): Self = StObject.set(x, "sizelimit", value.asInstanceOf[js.Any])
-      
-      inline def setSizelimitUndefined: Self = StObject.set(x, "sizelimit", js.undefined)
-      
-      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
       inline def setTextcolor(value: String): Self = StObject.set(x, "textcolor", value.asInstanceOf[js.Any])
       
@@ -364,4 +375,213 @@ object mod {
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
+  
+  trait DrawingOption[T] extends StObject {
+    
+    def ellipse(x: Double, y: Double, rx: Double, ry: Double, ccw: Boolean): Unit
+    
+    def end(): T
+    
+    def fill(rgb: String): Unit
+    
+    def hexagon(
+      pts: js.Tuple5[
+          js.Tuple2[Double, Double], 
+          js.Tuple2[Double, Double], 
+          js.Tuple2[Double, Double], 
+          js.Tuple2[Double, Double], 
+          js.Tuple2[Double, Double]
+        ]
+    ): Unit
+    
+    def init(width: Double, height: Double): Unit
+    
+    def line(x0: Double, y0: Double, x1: Double, y1: Double, lw: Double, rgb: String): Unit
+    
+    def measure(str: String, font: String, fwidth: Double, fheight: Double): Ascent
+    
+    def polygon(pts: js.Array[js.Tuple2[Double, Double]]): Unit
+    
+    def scale(sx: Double, sy: Double): (js.Tuple2[Double, Double]) | Null
+    
+    def text(x: Double, y: Double, str: String, rgb: String, font: Dx): Unit
+  }
+  object DrawingOption {
+    
+    inline def apply[T](
+      ellipse: (Double, Double, Double, Double, Boolean) => Unit,
+      end: () => T,
+      fill: String => Unit,
+      hexagon: js.Tuple5[
+          js.Tuple2[Double, Double], 
+          js.Tuple2[Double, Double], 
+          js.Tuple2[Double, Double], 
+          js.Tuple2[Double, Double], 
+          js.Tuple2[Double, Double]
+        ] => Unit,
+      init: (Double, Double) => Unit,
+      line: (Double, Double, Double, Double, Double, String) => Unit,
+      measure: (String, String, Double, Double) => Ascent,
+      polygon: js.Array[js.Tuple2[Double, Double]] => Unit,
+      scale: (Double, Double) => (js.Tuple2[Double, Double]) | Null,
+      text: (Double, Double, String, String, Dx) => Unit
+    ): DrawingOption[T] = {
+      val __obj = js.Dynamic.literal(ellipse = js.Any.fromFunction5(ellipse), end = js.Any.fromFunction0(end), fill = js.Any.fromFunction1(fill), hexagon = js.Any.fromFunction1(hexagon), init = js.Any.fromFunction2(init), line = js.Any.fromFunction6(line), measure = js.Any.fromFunction4(measure), polygon = js.Any.fromFunction1(polygon), scale = js.Any.fromFunction2(scale), text = js.Any.fromFunction5(text))
+      __obj.asInstanceOf[DrawingOption[T]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawingOption[?], T] (val x: Self & DrawingOption[T]) extends AnyVal {
+      
+      inline def setEllipse(value: (Double, Double, Double, Double, Boolean) => Unit): Self = StObject.set(x, "ellipse", js.Any.fromFunction5(value))
+      
+      inline def setEnd(value: () => T): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+      
+      inline def setFill(value: String => Unit): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
+      
+      inline def setHexagon(
+        value: js.Tuple5[
+              js.Tuple2[Double, Double], 
+              js.Tuple2[Double, Double], 
+              js.Tuple2[Double, Double], 
+              js.Tuple2[Double, Double], 
+              js.Tuple2[Double, Double]
+            ] => Unit
+      ): Self = StObject.set(x, "hexagon", js.Any.fromFunction1(value))
+      
+      inline def setInit(value: (Double, Double) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
+      
+      inline def setLine(value: (Double, Double, Double, Double, Double, String) => Unit): Self = StObject.set(x, "line", js.Any.fromFunction6(value))
+      
+      inline def setMeasure(value: (String, String, Double, Double) => Ascent): Self = StObject.set(x, "measure", js.Any.fromFunction4(value))
+      
+      inline def setPolygon(value: js.Array[js.Tuple2[Double, Double]] => Unit): Self = StObject.set(x, "polygon", js.Any.fromFunction1(value))
+      
+      inline def setScale(value: (Double, Double) => (js.Tuple2[Double, Double]) | Null): Self = StObject.set(x, "scale", js.Any.fromFunction2(value))
+      
+      inline def setText(value: (Double, Double, String, String, Dx) => Unit): Self = StObject.set(x, "text", js.Any.fromFunction5(value))
+    }
+  }
+  
+  trait RawOptions
+    extends StObject
+       with BwippOptions {
+    
+    var bcid: String
+    
+    var text: String
+  }
+  object RawOptions {
+    
+    inline def apply(bcid: String, text: String): RawOptions = {
+      val __obj = js.Dynamic.literal(bcid = bcid.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RawOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawOptions] (val x: Self) extends AnyVal {
+      
+      inline def setBcid(value: String): Self = StObject.set(x, "bcid", value.asInstanceOf[js.Any])
+      
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait RenderOptions
+    extends StObject
+       with BwippOptions {
+    
+    var bcid: String
+    
+    var monochrome: js.UndefOr[Boolean] = js.undefined
+    
+    var paddingbottom: js.UndefOr[Double] = js.undefined
+    
+    var paddingheight: js.UndefOr[Double] = js.undefined
+    
+    var paddingleft: js.UndefOr[Double] = js.undefined
+    
+    var paddingright: js.UndefOr[Double] = js.undefined
+    
+    var paddingtop: js.UndefOr[Double] = js.undefined
+    
+    var paddingwidth: js.UndefOr[Double] = js.undefined
+    
+    var rotate: js.UndefOr[N | R | L | I] = js.undefined
+    
+    var scale: js.UndefOr[Double] = js.undefined
+    
+    var scaleX: js.UndefOr[Double] = js.undefined
+    
+    var scaleY: js.UndefOr[Double] = js.undefined
+    
+    var sizelimit: js.UndefOr[Double] = js.undefined
+    
+    var text: String
+  }
+  object RenderOptions {
+    
+    inline def apply(bcid: String, text: String): RenderOptions = {
+      val __obj = js.Dynamic.literal(bcid = bcid.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RenderOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
+      
+      inline def setBcid(value: String): Self = StObject.set(x, "bcid", value.asInstanceOf[js.Any])
+      
+      inline def setMonochrome(value: Boolean): Self = StObject.set(x, "monochrome", value.asInstanceOf[js.Any])
+      
+      inline def setMonochromeUndefined: Self = StObject.set(x, "monochrome", js.undefined)
+      
+      inline def setPaddingbottom(value: Double): Self = StObject.set(x, "paddingbottom", value.asInstanceOf[js.Any])
+      
+      inline def setPaddingbottomUndefined: Self = StObject.set(x, "paddingbottom", js.undefined)
+      
+      inline def setPaddingheight(value: Double): Self = StObject.set(x, "paddingheight", value.asInstanceOf[js.Any])
+      
+      inline def setPaddingheightUndefined: Self = StObject.set(x, "paddingheight", js.undefined)
+      
+      inline def setPaddingleft(value: Double): Self = StObject.set(x, "paddingleft", value.asInstanceOf[js.Any])
+      
+      inline def setPaddingleftUndefined: Self = StObject.set(x, "paddingleft", js.undefined)
+      
+      inline def setPaddingright(value: Double): Self = StObject.set(x, "paddingright", value.asInstanceOf[js.Any])
+      
+      inline def setPaddingrightUndefined: Self = StObject.set(x, "paddingright", js.undefined)
+      
+      inline def setPaddingtop(value: Double): Self = StObject.set(x, "paddingtop", value.asInstanceOf[js.Any])
+      
+      inline def setPaddingtopUndefined: Self = StObject.set(x, "paddingtop", js.undefined)
+      
+      inline def setPaddingwidth(value: Double): Self = StObject.set(x, "paddingwidth", value.asInstanceOf[js.Any])
+      
+      inline def setPaddingwidthUndefined: Self = StObject.set(x, "paddingwidth", js.undefined)
+      
+      inline def setRotate(value: N | R | L | I): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+      
+      inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+      
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      
+      inline def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
+      
+      inline def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
+      
+      inline def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
+      
+      inline def setScaleYUndefined: Self = StObject.set(x, "scaleY", js.undefined)
+      
+      inline def setSizelimit(value: Double): Self = StObject.set(x, "sizelimit", value.asInstanceOf[js.Any])
+      
+      inline def setSizelimitUndefined: Self = StObject.set(x, "sizelimit", js.undefined)
+      
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type ToBufferOptions = RenderOptions
 }

@@ -6,20 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `393` extends StObject {
   
-  var contexts: js.Array[Octicon]
+  var exclude: js.UndefOr[js.Array[String]] = js.undefined
 }
 object `393` {
   
-  inline def apply(contexts: js.Array[Octicon]): `393` = {
-    val __obj = js.Dynamic.literal(contexts = contexts.asInstanceOf[js.Any])
+  inline def apply(): `393` = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`393`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `393`] (val x: Self) extends AnyVal {
     
-    inline def setContexts(value: js.Array[Octicon]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
+    inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
-    inline def setContextsVarargs(value: Octicon*): Self = StObject.set(x, "contexts", js.Array(value*))
+    inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+    
+    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
   }
 }

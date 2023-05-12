@@ -43,6 +43,10 @@ object centraStrings {
   inline def headers: headers = "headers".asInstanceOf[headers]
   
   @js.native
+  sealed trait hints extends StObject
+  inline def hints: hints = "hints".asInstanceOf[hints]
+  
+  @js.native
   sealed trait host extends StObject
   inline def host: host = "host".asInstanceOf[host]
   
@@ -51,12 +55,24 @@ object centraStrings {
   inline def hostname: hostname = "hostname".asInstanceOf[hostname]
   
   @js.native
+  sealed trait insecureHTTPParser extends StObject
+  inline def insecureHTTPParser: insecureHTTPParser = "insecureHTTPParser".asInstanceOf[insecureHTTPParser]
+  
+  @js.native
+  sealed trait joinDuplicateHeaders extends StObject
+  inline def joinDuplicateHeaders: joinDuplicateHeaders = "joinDuplicateHeaders".asInstanceOf[joinDuplicateHeaders]
+  
+  @js.native
   sealed trait json extends StObject
   inline def json: json = "json".asInstanceOf[json]
   
   @js.native
   sealed trait localAddress extends StObject
   inline def localAddress: localAddress = "localAddress".asInstanceOf[localAddress]
+  
+  @js.native
+  sealed trait localPort extends StObject
+  inline def localPort: localPort = "localPort".asInstanceOf[localPort]
   
   @js.native
   sealed trait lookup extends StObject
@@ -97,4 +113,8 @@ object centraStrings {
   @js.native
   sealed trait timeout extends StObject
   inline def timeout: timeout = "timeout".asInstanceOf[timeout]
+  
+  @js.native
+  sealed trait uniqueHeaders extends StObject
+  inline def uniqueHeaders: uniqueHeaders = "uniqueHeaders".asInstanceOf[uniqueHeaders]
 }

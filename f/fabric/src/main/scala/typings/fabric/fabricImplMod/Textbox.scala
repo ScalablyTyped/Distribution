@@ -23,7 +23,6 @@ open class Textbox protected () extends IText {
   /**
     * Helper function to measure a string of text, given its lineIndex and charIndex offset
     * it gets called when charBounds are not available yet.
-    * @private
     * @param {Array} text characters
     * @param {number} lineIndex
     * @param {number} charOffset
@@ -37,15 +36,12 @@ open class Textbox protected () extends IText {
     * broken up by visual lines (new lines and automatic wrapping).
     * The original text styles object is broken up by actual lines (new lines only),
     * which is only sufficient for Text / IText
-    * @private
-    * @type {Array} Line style { line: number, offset: number }
+    * Line style { line: number, offset: number }
     */
   var _styleMap: js.UndefOr[NumberDictionary[typings.fabric.anon.Line]] = js.native
   
   /**
     * Use this regular expression to split strings in breakable lines
-    * @private
-    * @type RegExp
     */
   var _wordJoiners: js.RegExp = js.native
   
@@ -64,7 +60,6 @@ open class Textbox protected () extends IText {
     * Minimum calculated width of a textbox, in pixels.
     * fixed to 2 so that an empty textbox cannot go to 0
     * and is still selectable without text.
-    * @type Number
     */
   var dynamicMinWidth: js.UndefOr[Double] = js.native
   
@@ -76,20 +71,17 @@ open class Textbox protected () extends IText {
   
   /**
     * Is the text wrapping
-    * @type Boolean
     */
   var isWrapping: js.UndefOr[Boolean] = js.native
   
   /**
     * Minimum width of textbox, in pixels.
-    * @type Number
     */
   var minWidth: js.UndefOr[Double] = js.native
   
   /**
     * Use this boolean property in order to split strings that have no white space concept.
     * this is a cheap way to help with chinese/japaense
-    * @type Boolean
     * @since 2.6.0
     */
   var splitByGrapheme: js.UndefOr[Boolean] = js.native

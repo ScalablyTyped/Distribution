@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ThisExpression
   extends StObject
      with PrimaryExpression
+     with FlowContainer
      with JsxTagNameExpression {
   
   @JSName("kind")

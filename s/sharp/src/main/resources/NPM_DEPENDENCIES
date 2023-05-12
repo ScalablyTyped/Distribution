@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "sharp" : "0.32.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "sharp" : "0.32.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

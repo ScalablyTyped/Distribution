@@ -39,8 +39,9 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLButtonElement
-import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModules@emotionSerializeTypesIndexMod`.Interpolation
+import typings.storybookTheming.distCreateC2b2ce6dMod.Interpolation
 import typings.storybookTheming.storybookThemingStrings.`additions removals`
 import typings.storybookTheming.storybookThemingStrings.`additions text`
 import typings.storybookTheming.storybookThemingStrings.`inline`
@@ -98,7 +99,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react.react.DetailedHTMLProps<react.react.ButtonHTMLAttributes<std.HTMLButtonElement>, std.HTMLButtonElement> & {  css :@storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-react-node_modules-@emotion-serialize-types-index.Interpolation<@storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-react-types-index.Theme> | undefined} */
+/* Inlined react.react.DetailedHTMLProps<react.react.ButtonHTMLAttributes<std.HTMLButtonElement>, std.HTMLButtonElement> & {  css :@storybook/theming.@storybook/theming/dist/create-c2b2ce6d.I<@storybook/theming.@storybook/theming.Theme> | undefined} */
 trait DetailedHTMLPropsButtonHT extends StObject {
   
   // RDFa Attributes
@@ -356,13 +357,13 @@ trait DetailedHTMLPropsButtonHT extends StObject {
   
   var color: js.UndefOr[String] = js.undefined
   
+  var content: js.UndefOr[String] = js.undefined
+  
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   
   var contextMenu: js.UndefOr[String] = js.undefined
   
-  var css: js.UndefOr[
-    Interpolation[typings.storybookTheming.`distTs3Dot9Modules@emotionReactTypesIndexMod`.Theme]
-  ] = js.undefined
+  var css: js.UndefOr[Interpolation[typings.storybookTheming.mod.Theme]] = js.undefined
   
   var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
   
@@ -381,7 +382,7 @@ trait DetailedHTMLPropsButtonHT extends StObject {
   
   var form: js.UndefOr[String] = js.undefined
   
-  var formAction: js.UndefOr[String] = js.undefined
+  var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
   
   var formEncType: js.UndefOr[String] = js.undefined
   
@@ -614,11 +615,20 @@ trait DetailedHTMLPropsButtonHT extends StObject {
   // Unknown
   var radioGroup: js.UndefOr[String] = js.undefined
   
+  /**
+    * Allows getting a ref to the component instance.
+    * Once the component unmounts, React will set `ref.current` to `null` (or call the ref with `null` if you passed a callback ref).
+    * @see https://react.dev/learn/referencing-values-with-refs#refs-and-the-dom
+    */
   var ref: js.UndefOr[LegacyRef[HTMLButtonElement]] = js.undefined
+  
+  var rel: js.UndefOr[String] = js.undefined
   
   var resource: js.UndefOr[String] = js.undefined
   
   var results: js.UndefOr[Double] = js.undefined
+  
+  var rev: js.UndefOr[String] = js.undefined
   
   // <command>, <menuitem>
   // WAI-ARIA
@@ -892,17 +902,19 @@ object DetailedHTMLPropsButtonHT {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
     inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
     inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
     
-    inline def setCss(
-      value: Interpolation[typings.storybookTheming.`distTs3Dot9Modules@emotionReactTypesIndexMod`.Theme]
-    ): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: Interpolation[typings.storybookTheming.mod.Theme]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssNull: Self = StObject.set(x, "css", null)
     
@@ -940,7 +952,9 @@ object DetailedHTMLPropsButtonHT {
     
     inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
-    inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+    inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+    
+    inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
     
     inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
     
@@ -1364,6 +1378,10 @@ object DetailedHTMLPropsButtonHT {
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1371,6 +1389,10 @@ object DetailedHTMLPropsButtonHT {
     inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     

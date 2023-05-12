@@ -24,8 +24,8 @@ object MapSettingsControl {
   
   /**
     * The map type entry is an object containing a display name and a map type object to which it refers.
-    * @property name {string} - label which describes the map type
-    * @property mapType {H.service.MapType} - reference to map type
+    * name {string} - label which describes the map type
+    * mapType {H.service.MapType} - reference to map type
     */
   trait Entry extends StObject {
     
@@ -51,9 +51,9 @@ object MapSettingsControl {
   
   /**
     * {@link https://developer.here.com/documentation/maps/api_reference/H.ui.MapSettingsControl.html#.Options}
-    * @property alignment {H.ui.LayoutAlignment=} - the layout alignment which should be applied to this control, default is H.ui.LayoutAlignment.BOTTOM_RIGHT
-    * @property entries {Array<H.ui.MapSettingsControl.MapTypeEntry>=} - the map type entries to be shown in this map settings control
-    * @property incidents {H.map.layer.Layer} - the traffic incidents layer to be activated by the map settings control
+    * alignment {H.ui.LayoutAlignment=} - the layout alignment which should be applied to this control, default is H.ui.LayoutAlignment.BOTTOM_RIGHT
+    * entries {Array<H.ui.MapSettingsControl.MapTypeEntry>=} - the map type entries to be shown in this map settings control
+    * incidents {H.map.layer.Layer} - the traffic incidents layer to be activated by the map settings control
     */
   trait Options extends StObject {
     

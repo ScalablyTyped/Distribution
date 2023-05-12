@@ -23,13 +23,13 @@ import typings.octokitPluginRestEndpointMethods.anon.CreateRepositorySnapshot
 import typings.octokitPluginRestEndpointMethods.anon.DeleteAnalysis
 import typings.octokitPluginRestEndpointMethods.anon.DeletePackageForAuthenticatedUser
 import typings.octokitPluginRestEndpointMethods.anon.Get
-import typings.octokitPluginRestEndpointMethods.anon.Get508
+import typings.octokitPluginRestEndpointMethods.anon.Get525
 import typings.octokitPluginRestEndpointMethods.anon.GetAlert
 import typings.octokitPluginRestEndpointMethods.anon.GetAllCodesOfConduct
 import typings.octokitPluginRestEndpointMethods.anon.GetAllCommonlyUsed
 import typings.octokitPluginRestEndpointMethods.anon.GetAllTemplates
+import typings.octokitPluginRestEndpointMethods.anon.GetAllVersions
 import typings.octokitPluginRestEndpointMethods.anon.GetGithubActionsBillingOrg
-import typings.octokitPluginRestEndpointMethods.anon.GetOctocat
 import typings.octokitPluginRestEndpointMethods.anon.GetRestrictionsForAuthenticatedUser
 import typings.octokitPluginRestEndpointMethods.anon.Render
 import org.scalablytyped.runtime.StObject
@@ -78,7 +78,7 @@ object distTypesGeneratedMethodTypesMod {
     
     var markdown: Render
     
-    var meta: GetOctocat
+    var meta: GetAllVersions
     
     var migrations: CancelImport
     
@@ -90,7 +90,7 @@ object distTypesGeneratedMethodTypesMod {
     
     var pulls: CheckIfMerged
     
-    var rateLimit: Get508
+    var rateLimit: Get525
     
     var reactions: CreateForCommitComment
     
@@ -126,13 +126,13 @@ object distTypesGeneratedMethodTypesMod {
       issues: AddAssignees,
       licenses: GetAllCommonlyUsed,
       markdown: Render,
-      meta: GetOctocat,
+      meta: GetAllVersions,
       migrations: CancelImport,
       orgs: AddSecurityManagerTeam,
       packages: DeletePackageForAuthenticatedUser,
       projects: AddCollaborator,
       pulls: CheckIfMerged,
-      rateLimit: Get508,
+      rateLimit: Get525,
       reactions: CreateForCommitComment,
       repos: AcceptInvitation,
       search: Code,
@@ -185,7 +185,7 @@ object distTypesGeneratedMethodTypesMod {
       
       inline def setMarkdown(value: Render): Self = StObject.set(x, "markdown", value.asInstanceOf[js.Any])
       
-      inline def setMeta(value: GetOctocat): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: GetAllVersions): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
       inline def setMigrations(value: CancelImport): Self = StObject.set(x, "migrations", value.asInstanceOf[js.Any])
       
@@ -197,7 +197,7 @@ object distTypesGeneratedMethodTypesMod {
       
       inline def setPulls(value: CheckIfMerged): Self = StObject.set(x, "pulls", value.asInstanceOf[js.Any])
       
-      inline def setRateLimit(value: Get508): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
+      inline def setRateLimit(value: Get525): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
       
       inline def setReactions(value: CreateForCommitComment): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
       

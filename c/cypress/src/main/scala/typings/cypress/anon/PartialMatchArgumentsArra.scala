@@ -45,14 +45,8 @@ trait PartialMatchArgumentsArra extends StObject {
   ] = js.undefined
   
   var find: js.UndefOr[
-    SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: <S extends any>(predicate : (this : void, value : any, index : number, obj : std.Array<any>): value is S): S | undefined extends object ? cypress.cypress/types/sinon.MatchArguments<<S extends any>(predicate : (this : void, value : any, index : number, obj : std.Array<any>): value is S): S | undefined> : never */ js.Any) | (js.Function1[
-      /* predicate */ js.ThisFunction3[
-        /* this */ Unit, 
-        /* value */ Any, 
-        /* index */ Double, 
-        /* obj */ js.Array[Any], 
-        /* is any */ Boolean
-      ], 
+    SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: <S extends any>(predicate : (value : any, index : number, obj : std.Array<any>): value is S): S | undefined extends object ? cypress.cypress/types/sinon.MatchArguments<<S extends any>(predicate : (value : any, index : number, obj : std.Array<any>): value is S): S | undefined> : never */ js.Any) | (js.Function1[
+      /* predicate */ js.Function3[/* value */ Any, /* index */ Double, /* obj */ js.Array[Any], /* is any */ Boolean], 
       js.UndefOr[Any]
     ])
   ] = js.undefined
@@ -60,6 +54,20 @@ trait PartialMatchArgumentsArra extends StObject {
   var findIndex: js.UndefOr[
     SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: (predicate : (value : any, index : number, obj : std.Array<any>): unknown): number extends object ? cypress.cypress/types/sinon.MatchArguments<(predicate : (value : any, index : number, obj : std.Array<any>): unknown): number> : never */ js.Any) | (js.Function1[
       /* predicate */ js.Function3[/* value */ Any, /* index */ Double, /* obj */ js.Array[Any], Any], 
+      Double
+    ])
+  ] = js.undefined
+  
+  var findLast: js.UndefOr[
+    SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: <S extends any>(predicate : (value : any, index : number, array : std.Array<any>): value is S): S | undefined extends object ? cypress.cypress/types/sinon.MatchArguments<<S extends any>(predicate : (value : any, index : number, array : std.Array<any>): value is S): S | undefined> : never */ js.Any) | (js.Function1[
+      /* predicate */ js.Function3[/* value */ Any, /* index */ Double, /* array */ js.Array[Any], /* is any */ Boolean], 
+      js.UndefOr[Any]
+    ])
+  ] = js.undefined
+  
+  var findLastIndex: js.UndefOr[
+    SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: (predicate : (value : any, index : number, array : std.Array<any>): unknown): number extends object ? cypress.cypress/types/sinon.MatchArguments<(predicate : (value : any, index : number, array : std.Array<any>): unknown): number> : never */ js.Any) | (js.Function1[
+      /* predicate */ js.Function3[/* value */ Any, /* index */ Double, /* array */ js.Array[Any], Any], 
       Double
     ])
   ] = js.undefined
@@ -275,26 +283,14 @@ object PartialMatchArgumentsArra {
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     inline def setFind(
-      value: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: <S extends any>(predicate : (this : void, value : any, index : number, obj : std.Array<any>): value is S): S | undefined extends object ? cypress.cypress/types/sinon.MatchArguments<<S extends any>(predicate : (this : void, value : any, index : number, obj : std.Array<any>): value is S): S | undefined> : never */ js.Any) | (js.Function1[
-          /* predicate */ js.ThisFunction3[
-            /* this */ Unit, 
-            /* value */ Any, 
-            /* index */ Double, 
-            /* obj */ js.Array[Any], 
-            /* is any */ Boolean
-          ], 
+      value: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: <S extends any>(predicate : (value : any, index : number, obj : std.Array<any>): value is S): S | undefined extends object ? cypress.cypress/types/sinon.MatchArguments<<S extends any>(predicate : (value : any, index : number, obj : std.Array<any>): value is S): S | undefined> : never */ js.Any) | (js.Function1[
+          /* predicate */ js.Function3[/* value */ Any, /* index */ Double, /* obj */ js.Array[Any], /* is any */ Boolean], 
           js.UndefOr[Any]
         ])
     ): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
     
     inline def setFindFunction1(
-      value: /* predicate */ js.ThisFunction3[
-          /* this */ Unit, 
-          /* value */ Any, 
-          /* index */ Double, 
-          /* obj */ js.Array[Any], 
-          /* is any */ Boolean
-        ] => js.UndefOr[Any]
+      value: /* predicate */ js.Function3[/* value */ Any, /* index */ Double, /* obj */ js.Array[Any], /* is any */ Boolean] => js.UndefOr[Any]
     ): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
     
     inline def setFindIndex(
@@ -309,6 +305,32 @@ object PartialMatchArgumentsArra {
     ): Self = StObject.set(x, "findIndex", js.Any.fromFunction1(value))
     
     inline def setFindIndexUndefined: Self = StObject.set(x, "findIndex", js.undefined)
+    
+    inline def setFindLast(
+      value: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: <S extends any>(predicate : (value : any, index : number, array : std.Array<any>): value is S): S | undefined extends object ? cypress.cypress/types/sinon.MatchArguments<<S extends any>(predicate : (value : any, index : number, array : std.Array<any>): value is S): S | undefined> : never */ js.Any) | (js.Function1[
+          /* predicate */ js.Function3[/* value */ Any, /* index */ Double, /* array */ js.Array[Any], /* is any */ Boolean], 
+          js.UndefOr[Any]
+        ])
+    ): Self = StObject.set(x, "findLast", value.asInstanceOf[js.Any])
+    
+    inline def setFindLastFunction1(
+      value: /* predicate */ js.Function3[/* value */ Any, /* index */ Double, /* array */ js.Array[Any], /* is any */ Boolean] => js.UndefOr[Any]
+    ): Self = StObject.set(x, "findLast", js.Any.fromFunction1(value))
+    
+    inline def setFindLastIndex(
+      value: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: (predicate : (value : any, index : number, array : std.Array<any>): unknown): number extends object ? cypress.cypress/types/sinon.MatchArguments<(predicate : (value : any, index : number, array : std.Array<any>): unknown): number> : never */ js.Any) | (js.Function1[
+          /* predicate */ js.Function3[/* value */ Any, /* index */ Double, /* array */ js.Array[Any], Any], 
+          Double
+        ])
+    ): Self = StObject.set(x, "findLastIndex", value.asInstanceOf[js.Any])
+    
+    inline def setFindLastIndexFunction1(
+      value: /* predicate */ js.Function3[/* value */ Any, /* index */ Double, /* array */ js.Array[Any], Any] => Double
+    ): Self = StObject.set(x, "findLastIndex", js.Any.fromFunction1(value))
+    
+    inline def setFindLastIndexUndefined: Self = StObject.set(x, "findLastIndex", js.undefined)
+    
+    inline def setFindLastUndefined: Self = StObject.set(x, "findLast", js.undefined)
     
     inline def setFindUndefined: Self = StObject.set(x, "find", js.undefined)
     

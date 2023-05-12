@@ -1,39 +1,27 @@
 package typings.hlsJs.mod
 
+import typings.hlsJs.hlsJsStrings.audioTrack
+import typings.hlsJs.hlsJsStrings.level
+import typings.hlsJs.hlsJsStrings.manifest
+import typings.hlsJs.hlsJsStrings.subtitleTrack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait PlaylistContextType extends StObject
-@JSImport("hls.js", "PlaylistContextType")
-@js.native
-object PlaylistContextType extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.hlsJs.hlsJsStrings.manifest
+  - typings.hlsJs.hlsJsStrings.level
+  - typings.hlsJs.hlsJsStrings.audioTrack
+  - typings.hlsJs.hlsJsStrings.subtitleTrack
+*/
+trait PlaylistContextType extends StObject
+object PlaylistContextType {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[PlaylistContextType & String] = js.native
+  inline def AUDIO_TRACK: audioTrack = "audioTrack".asInstanceOf[audioTrack]
   
-  @js.native
-  sealed trait AUDIO_TRACK
-    extends StObject
-       with PlaylistContextType
-  /* "audioTrack" */ val AUDIO_TRACK: typings.hlsJs.mod.PlaylistContextType.AUDIO_TRACK & String = js.native
+  inline def LEVEL: level = "level".asInstanceOf[level]
   
-  @js.native
-  sealed trait LEVEL
-    extends StObject
-       with PlaylistContextType
-  /* "level" */ val LEVEL: typings.hlsJs.mod.PlaylistContextType.LEVEL & String = js.native
+  inline def MANIFEST: manifest = "manifest".asInstanceOf[manifest]
   
-  @js.native
-  sealed trait MANIFEST
-    extends StObject
-       with PlaylistContextType
-  /* "manifest" */ val MANIFEST: typings.hlsJs.mod.PlaylistContextType.MANIFEST & String = js.native
-  
-  @js.native
-  sealed trait SUBTITLE_TRACK
-    extends StObject
-       with PlaylistContextType
-  /* "subtitleTrack" */ val SUBTITLE_TRACK: typings.hlsJs.mod.PlaylistContextType.SUBTITLE_TRACK & String = js.native
+  inline def SUBTITLE_TRACK: subtitleTrack = "subtitleTrack".asInstanceOf[subtitleTrack]
 }

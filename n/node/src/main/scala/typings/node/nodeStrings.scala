@@ -35,11 +35,16 @@ import typings.node.processMod.global.NodeJS.UncaughtExceptionOrigin
 import typings.node.tlsMod.SecureVersion
 import typings.node.utilMod.Style
 import typings.node.vmMod.MeasureMemoryMode
+import typings.node.vmMod.ModuleStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeStrings {
+  
+  @js.native
+  sealed trait default extends StObject
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
   sealed trait A extends StObject
@@ -1136,10 +1141,18 @@ object nodeStrings {
   inline def drop: drop = "drop".asInstanceOf[drop]
   
   @js.native
+  sealed trait dropRequest extends StObject
+  inline def dropRequest: dropRequest = "dropRequest".asInstanceOf[dropRequest]
+  
+  @js.native
   sealed trait dsa
     extends StObject
        with KeyType
   inline def dsa: dsa = "dsa".asInstanceOf[dsa]
+  
+  @js.native
+  sealed trait eager extends StObject
+  inline def eager: eager = "eager".asInstanceOf[eager]
   
   @js.native
   sealed trait ec
@@ -1182,6 +1195,24 @@ object nodeStrings {
   @js.native
   sealed trait error extends StObject
   inline def error: error = "error".asInstanceOf[error]
+  
+  @js.native
+  sealed trait errored
+    extends StObject
+       with ModuleStatus
+  inline def errored: errored = "errored".asInstanceOf[errored]
+  
+  @js.native
+  sealed trait evaluated
+    extends StObject
+       with ModuleStatus
+  inline def evaluated: evaluated = "evaluated".asInstanceOf[evaluated]
+  
+  @js.native
+  sealed trait evaluating
+    extends StObject
+       with ModuleStatus
+  inline def evaluating: evaluating = "evaluating".asInstanceOf[evaluating]
   
   @js.native
   sealed trait exit extends StObject
@@ -1366,6 +1397,7 @@ object nodeStrings {
   @js.native
   sealed trait jwk
     extends StObject
+       with KeyFormat
        with typings.node.cryptoMod.webcrypto.KeyFormat
   inline def jwk: jwk = "jwk".asInstanceOf[jwk]
   
@@ -1389,6 +1421,18 @@ object nodeStrings {
   @js.native
   sealed trait line extends StObject
   inline def line: line = "line".asInstanceOf[line]
+  
+  @js.native
+  sealed trait linked
+    extends StObject
+       with ModuleStatus
+  inline def linked: linked = "linked".asInstanceOf[linked]
+  
+  @js.native
+  sealed trait linking
+    extends StObject
+       with ModuleStatus
+  inline def linking: linking = "linking".asInstanceOf[linking]
   
   @js.native
   sealed trait linux
@@ -1449,6 +1493,10 @@ object nodeStrings {
   @js.native
   sealed trait multipleResolves extends StObject
   inline def multipleResolves: multipleResolves = "multipleResolves".asInstanceOf[multipleResolves]
+  
+  @js.native
+  sealed trait native extends StObject
+  inline def native: native = "native".asInstanceOf[native]
   
   @js.native
   sealed trait netbsd
@@ -1828,6 +1876,14 @@ object nodeStrings {
   inline def testColonpass: testColonpass = "test:pass".asInstanceOf[testColonpass]
   
   @js.native
+  sealed trait testColonplan extends StObject
+  inline def testColonplan: testColonplan = "test:plan".asInstanceOf[testColonplan]
+  
+  @js.native
+  sealed trait testColonstart extends StObject
+  inline def testColonstart: testColonstart = "test:start".asInstanceOf[testColonstart]
+  
+  @js.native
   sealed trait timeout extends StObject
   inline def timeout: timeout = "timeout".asInstanceOf[timeout]
   
@@ -1838,6 +1894,10 @@ object nodeStrings {
   @js.native
   sealed trait trailers extends StObject
   inline def trailers: trailers = "trailers".asInstanceOf[trailers]
+  
+  @js.native
+  sealed trait transparent extends StObject
+  inline def transparent: transparent = "transparent".asInstanceOf[transparent]
   
   @js.native
   sealed trait `ucs-2`
@@ -1899,6 +1959,12 @@ object nodeStrings {
   @js.native
   sealed trait unknownProtocol extends StObject
   inline def unknownProtocol: unknownProtocol = "unknownProtocol".asInstanceOf[unknownProtocol]
+  
+  @js.native
+  sealed trait unlinked
+    extends StObject
+       with ModuleStatus
+  inline def unlinked: unlinked = "unlinked".asInstanceOf[unlinked]
   
   @js.native
   sealed trait unpipe extends StObject

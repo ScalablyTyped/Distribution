@@ -41,8 +41,10 @@ import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.`removals 
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.`removals text`
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.`text additions`
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.`text removals`
+import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.`use-credentials`
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.additions
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.all
+import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.anonymous
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.ascending
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.assertive
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.both
@@ -90,6 +92,7 @@ import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.vertical
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.yes
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -226,11 +229,13 @@ trait TypeaheadMulitInputWithHocProps[T /* <: TypeaheadModel */] extends StObjec
   
   var color: js.UndefOr[String] = js.undefined
   
+  var content: js.UndefOr[String] = js.undefined
+  
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   
   var contextMenu: js.UndefOr[String] = js.undefined
   
-  var crossOrigin: js.UndefOr[String] = js.undefined
+  var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
   
   var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
   
@@ -250,7 +255,7 @@ trait TypeaheadMulitInputWithHocProps[T /* <: TypeaheadModel */] extends StObjec
   
   var form: js.UndefOr[String] = js.undefined
   
-  var formAction: js.UndefOr[String] = js.undefined
+  var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
   
   var formEncType: js.UndefOr[String] = js.undefined
   
@@ -486,6 +491,8 @@ trait TypeaheadMulitInputWithHocProps[T /* <: TypeaheadModel */] extends StObjec
   
   var readOnly: js.UndefOr[Boolean] = js.undefined
   
+  var rel: js.UndefOr[String] = js.undefined
+  
   def renderToken(selectedItem: T, props: TypeaheadMenuProps[T], index: Double): ReactNode
   
   var required: js.UndefOr[Boolean] = js.undefined
@@ -493,6 +500,8 @@ trait TypeaheadMulitInputWithHocProps[T /* <: TypeaheadModel */] extends StObjec
   var resource: js.UndefOr[String] = js.undefined
   
   var results: js.UndefOr[Double] = js.undefined
+  
+  var rev: js.UndefOr[String] = js.undefined
   
   var role: _empty
   
@@ -809,15 +818,19 @@ object TypeaheadMulitInputWithHocProps {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
     inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
     inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
     
-    inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+    inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
@@ -855,7 +868,9 @@ object TypeaheadMulitInputWithHocProps {
     
     inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
-    inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+    inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+    
+    inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
     
     inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
     
@@ -1317,6 +1332,10 @@ object TypeaheadMulitInputWithHocProps {
     
     inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    
     inline def setRenderToken(value: (T, TypeaheadMenuProps[T], Double) => ReactNode): Self = StObject.set(x, "renderToken", js.Any.fromFunction3(value))
     
     inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
@@ -1330,6 +1349,10 @@ object TypeaheadMulitInputWithHocProps {
     inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     inline def setRole(value: _empty): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     

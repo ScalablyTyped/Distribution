@@ -31,27 +31,33 @@ trait CompartmentDefinition
   
   var _status: js.UndefOr[Element] = js.undefined
   
+  var _title: js.UndefOr[Element] = js.undefined
+  
   var _url: js.UndefOr[Element] = js.undefined
   
   var _version: js.UndefOr[Element] = js.undefined
   
+  var _versionAlgorithmString: js.UndefOr[Element] = js.undefined
+  
   /**
     * Only the specification can define the compartments that can exist. Servers can choose to support them.
     */
-  var code: typings.fhir.fhirStrings.Patient | typings.fhir.fhirStrings.Encounter | typings.fhir.fhirStrings.RelatedPerson | typings.fhir.fhirStrings.Practitioner | typings.fhir.fhirStrings.Device
+  var code: typings.fhir.fhirStrings.Patient | typings.fhir.fhirStrings.Encounter | typings.fhir.fhirStrings.RelatedPerson | typings.fhir.fhirStrings.Practitioner | typings.fhir.fhirStrings.Device | typings.fhir.fhirStrings.EpisodeOfCare
   
   /**
     * May be a web site, an email address, a telephone number, etc.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var contact: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
   /**
-    * Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the compartment definition. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
+    * The date is often not tracked until the resource is published, but may be present on draft content. Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the compartment definition. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var date: js.UndefOr[String] = js.undefined
   
   /**
-    * This description can be used to capture details such as why the compartment definition was built, comments about misuse, instructions for clinical use and interpretation, literature references, examples from the paper world, etc. It is not a rendering of the compartment definition as conveyed in the 'text' field of the resource itself. This item SHOULD be populated unless the information is available from context (e.g. the language of the compartment definition is presumed to be the predominant language in the place the compartment definition was created).
+    * This description can be used to capture details such as comments about misuse, instructions for clinical use and interpretation, literature references, examples from the paper world, etc. It is not a rendering of the compartment definition as conveyed in the 'text' field of the resource itself. This item SHOULD be populated unless the information is available from context (e.g. the language of the compartment definition is presumed to be the predominant language in the place the compartment definition was created).
     */
   var description: js.UndefOr[String] = js.undefined
   
@@ -91,8 +97,14 @@ trait CompartmentDefinition
   
   /**
     * Allows filtering of compartment definitions that are appropriate for use versus not.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var status: draft | active | retired | unknown
+  
+  /**
+    * This name does not need to be machine-processing friendly and may contain punctuation, white-space, etc.
+    */
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Can be a urn:uuid: or a urn:oid: but real http: addresses are preferred.  Multiple instances may share the same URL if they have a distinct version.
@@ -107,14 +119,24 @@ trait CompartmentDefinition
   var useContext: js.UndefOr[js.Array[UsageContext]] = js.undefined
   
   /**
-    * There may be different compartment definition instances that have the same identifier but different versions.  The version can be appended to the url in a reference to allow a reference to a particular business version of the compartment definition with the format [url]|[version].
+    * There may be different compartment definition instances that have the same identifier but different versions.  The version can be appended to the url in a reference to allow a reference to a particular business version of the compartment definition with the format [url]|[version]. The version SHOULD NOT contain a '#' - see [Business Version](resource.html#bv-format).
     */
   var version: js.UndefOr[String] = js.undefined
+  
+  /**
+    * If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 and a 0 if the version ordering can't be successfully be determined.
+    */
+  var versionAlgorithmCoding: js.UndefOr[Coding] = js.undefined
+  
+  /**
+    * If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 and a 0 if the version ordering can't be successfully be determined.
+    */
+  var versionAlgorithmString: js.UndefOr[String] = js.undefined
 }
 object CompartmentDefinition {
   
   inline def apply(
-    code: typings.fhir.fhirStrings.Patient | typings.fhir.fhirStrings.Encounter | typings.fhir.fhirStrings.RelatedPerson | typings.fhir.fhirStrings.Practitioner | typings.fhir.fhirStrings.Device,
+    code: typings.fhir.fhirStrings.Patient | typings.fhir.fhirStrings.Encounter | typings.fhir.fhirStrings.RelatedPerson | typings.fhir.fhirStrings.Practitioner | typings.fhir.fhirStrings.Device | typings.fhir.fhirStrings.EpisodeOfCare,
     name: String,
     search: Boolean,
     status: draft | active | retired | unknown,
@@ -128,7 +150,7 @@ object CompartmentDefinition {
   implicit open class MutableBuilder[Self <: CompartmentDefinition] (val x: Self) extends AnyVal {
     
     inline def setCode(
-      value: typings.fhir.fhirStrings.Patient | typings.fhir.fhirStrings.Encounter | typings.fhir.fhirStrings.RelatedPerson | typings.fhir.fhirStrings.Practitioner | typings.fhir.fhirStrings.Device
+      value: typings.fhir.fhirStrings.Patient | typings.fhir.fhirStrings.Encounter | typings.fhir.fhirStrings.RelatedPerson | typings.fhir.fhirStrings.Practitioner | typings.fhir.fhirStrings.Device | typings.fhir.fhirStrings.EpisodeOfCare
     ): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     inline def setContact(value: js.Array[ContactDetail]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
@@ -171,6 +193,10 @@ object CompartmentDefinition {
     
     inline def setStatus(value: draft | active | retired | unknown): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUseContext(value: js.Array[UsageContext]): Self = StObject.set(x, "useContext", value.asInstanceOf[js.Any])
@@ -180,6 +206,14 @@ object CompartmentDefinition {
     inline def setUseContextVarargs(value: UsageContext*): Self = StObject.set(x, "useContext", js.Array(value*))
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmCoding(value: Coding): Self = StObject.set(x, "versionAlgorithmCoding", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmCodingUndefined: Self = StObject.set(x, "versionAlgorithmCoding", js.undefined)
+    
+    inline def setVersionAlgorithmString(value: String): Self = StObject.set(x, "versionAlgorithmString", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmStringUndefined: Self = StObject.set(x, "versionAlgorithmString", js.undefined)
     
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
@@ -219,11 +253,19 @@ object CompartmentDefinition {
     
     inline def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
     
+    inline def set_title(value: Element): Self = StObject.set(x, "_title", value.asInstanceOf[js.Any])
+    
+    inline def set_titleUndefined: Self = StObject.set(x, "_title", js.undefined)
+    
     inline def set_url(value: Element): Self = StObject.set(x, "_url", value.asInstanceOf[js.Any])
     
     inline def set_urlUndefined: Self = StObject.set(x, "_url", js.undefined)
     
     inline def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
+    
+    inline def set_versionAlgorithmString(value: Element): Self = StObject.set(x, "_versionAlgorithmString", value.asInstanceOf[js.Any])
+    
+    inline def set_versionAlgorithmStringUndefined: Self = StObject.set(x, "_versionAlgorithmString", js.undefined)
     
     inline def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
   }

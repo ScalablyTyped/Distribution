@@ -122,6 +122,8 @@ object mod {
     
     var attribs: StringDictionary[String]
     
+    var mediaChildren: js.Array[String]
+    
     var tag: String
     
     var tagPosition: Double
@@ -130,8 +132,14 @@ object mod {
   }
   object IFrame {
     
-    inline def apply(attribs: StringDictionary[String], tag: String, tagPosition: Double, text: String): IFrame = {
-      val __obj = js.Dynamic.literal(attribs = attribs.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], tagPosition = tagPosition.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    inline def apply(
+      attribs: StringDictionary[String],
+      mediaChildren: js.Array[String],
+      tag: String,
+      tagPosition: Double,
+      text: String
+    ): IFrame = {
+      val __obj = js.Dynamic.literal(attribs = attribs.asInstanceOf[js.Any], mediaChildren = mediaChildren.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], tagPosition = tagPosition.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[IFrame]
     }
     
@@ -139,6 +147,10 @@ object mod {
     implicit open class MutableBuilder[Self <: IFrame] (val x: Self) extends AnyVal {
       
       inline def setAttribs(value: StringDictionary[String]): Self = StObject.set(x, "attribs", value.asInstanceOf[js.Any])
+      
+      inline def setMediaChildren(value: js.Array[String]): Self = StObject.set(x, "mediaChildren", value.asInstanceOf[js.Any])
+      
+      inline def setMediaChildrenVarargs(value: String*): Self = StObject.set(x, "mediaChildren", js.Array(value*))
       
       inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
@@ -194,6 +206,9 @@ object mod {
     var nestingLimit: js.UndefOr[Double] = js.undefined
     
     var nonTextTags: js.UndefOr[js.Array[String]] = js.undefined
+    
+    /** @default true */
+    var parseStyleAttributes: js.UndefOr[Boolean] = js.undefined
     
     var parser: js.UndefOr[ParserOptions] = js.undefined
     
@@ -304,6 +319,10 @@ object mod {
       inline def setNonTextTagsUndefined: Self = StObject.set(x, "nonTextTags", js.undefined)
       
       inline def setNonTextTagsVarargs(value: String*): Self = StObject.set(x, "nonTextTags", js.Array(value*))
+      
+      inline def setParseStyleAttributes(value: Boolean): Self = StObject.set(x, "parseStyleAttributes", value.asInstanceOf[js.Any])
+      
+      inline def setParseStyleAttributesUndefined: Self = StObject.set(x, "parseStyleAttributes", js.undefined)
       
       inline def setParser(value: ParserOptions): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
       

@@ -5,9 +5,11 @@ import typings.fhir.fhirStrings.`busy-tentative`
 import typings.fhir.fhirStrings.`busy-unavailable`
 import typings.fhir.fhirStrings.`checked-in`
 import typings.fhir.fhirStrings.`complex-type`
-import typings.fhir.fhirStrings.`data-collection`
+import typings.fhir.fhirStrings.`data-exchange`
 import typings.fhir.fhirStrings.`data-requested`
 import typings.fhir.fhirStrings.`data-required`
+import typings.fhir.fhirStrings.`deny-overrides`
+import typings.fhir.fhirStrings.`deny-unless-permit`
 import typings.fhir.fhirStrings.`entered-in-error`
 import typings.fhir.fhirStrings.`event-notification`
 import typings.fhir.fhirStrings.`filler-order`
@@ -21,13 +23,18 @@ import typings.fhir.fhirStrings.`not-billable`
 import typings.fhir.fhirStrings.`not-done`
 import typings.fhir.fhirStrings.`not-present`
 import typings.fhir.fhirStrings.`on-hold`
+import typings.fhir.fhirStrings.`ordered-deny-overrides`
+import typings.fhir.fhirStrings.`ordered-permit-overrides`
 import typings.fhir.fhirStrings.`original-order`
+import typings.fhir.fhirStrings.`permit-overrides`
+import typings.fhir.fhirStrings.`permit-unless-deny`
 import typings.fhir.fhirStrings.`primitive-type`
 import typings.fhir.fhirStrings.`query-event`
 import typings.fhir.fhirStrings.`query-status`
 import typings.fhir.fhirStrings.`reflex-order`
 import typings.fhir.fhirStrings.`req-revalid`
 import typings.fhir.fhirStrings.`reval-fail`
+import typings.fhir.fhirStrings.`self-pay`
 import typings.fhir.fhirStrings.`subject-list`
 import typings.fhir.fhirStrings.`undesirable-effect`
 import typings.fhir.fhirStrings.`val-fail`
@@ -35,6 +42,7 @@ import typings.fhir.fhirStrings.aborted
 import typings.fhir.fhirStrings.accepted
 import typings.fhir.fhirStrings.active
 import typings.fhir.fhirStrings.actual
+import typings.fhir.fhirStrings.allocated
 import typings.fhir.fhirStrings.amended
 import typings.fhir.fhirStrings.animal
 import typings.fhir.fhirStrings.appended
@@ -50,6 +58,7 @@ import typings.fhir.fhirStrings.busy
 import typings.fhir.fhirStrings.calculation
 import typings.fhir.fhirStrings.cancelled
 import typings.fhir.fhirStrings.capability
+import typings.fhir.fhirStrings.careteam_
 import typings.fhir.fhirStrings.changes
 import typings.fhir.fhirStrings.claim_
 import typings.fhir.fhirStrings.codesystem_
@@ -61,13 +70,17 @@ import typings.fhir.fhirStrings.corrected
 import typings.fhir.fhirStrings.current
 import typings.fhir.fhirStrings.date
 import typings.fhir.fhirStrings.declined
+import typings.fhir.fhirStrings.definitional
 import typings.fhir.fhirStrings.deprecated
 import typings.fhir.fhirStrings.device_
 import typings.fhir.fhirStrings.difference
 import typings.fhir.fhirStrings.directive
+import typings.fhir.fhirStrings.discharged
+import typings.fhir.fhirStrings.discontinued
 import typings.fhir.fhirStrings.discovery
 import typings.fhir.fhirStrings.draft
 import typings.fhir.fhirStrings.ended
+import typings.fhir.fhirStrings.enumerated
 import typings.fhir.fhirStrings.error
 import typings.fhir.fhirStrings.example
 import typings.fhir.fhirStrings.fail
@@ -78,18 +91,22 @@ import typings.fhir.fhirStrings.fragment
 import typings.fhir.fhirStrings.free
 import typings.fhir.fhirStrings.fulfilled
 import typings.fhir.fhirStrings.handshake
+import typings.fhir.fhirStrings.healthcareservice_
 import typings.fhir.fhirStrings.heartbeat
 import typings.fhir.fhirStrings.identifier
 import typings.fhir.fhirStrings.inactive
 import typings.fhir.fhirStrings.indication
 import typings.fhir.fhirStrings.individual
 import typings.fhir.fhirStrings.instance
+import typings.fhir.fhirStrings.insurance
 import typings.fhir.fhirStrings.intended
 import typings.fhir.fhirStrings.interaction
 import typings.fhir.fhirStrings.issued
+import typings.fhir.fhirStrings.location_
 import typings.fhir.fhirStrings.logical
 import typings.fhir.fhirStrings.measurement
-import typings.fhir.fhirStrings.medication_
+import typings.fhir.fhirStrings.mitigated
+import typings.fhir.fhirStrings.modified
 import typings.fhir.fhirStrings.noshow
 import typings.fhir.fhirStrings.number
 import typings.fhir.fhirStrings.off
@@ -97,6 +114,8 @@ import typings.fhir.fhirStrings.onhold
 import typings.fhir.fhirStrings.operation
 import typings.fhir.fhirStrings.option
 import typings.fhir.fhirStrings.order_
+import typings.fhir.fhirStrings.organization_
+import typings.fhir.fhirStrings.other
 import typings.fhir.fhirStrings.partial
 import typings.fhir.fhirStrings.pass
 import typings.fhir.fhirStrings.pending
@@ -120,26 +139,29 @@ import typings.fhir.fhirStrings.recorded
 import typings.fhir.fhirStrings.reference
 import typings.fhir.fhirStrings.registered
 import typings.fhir.fhirStrings.rejected
+import typings.fhir.fhirStrings.relatedperson_
 import typings.fhir.fhirStrings.requested
-import typings.fhir.fhirStrings.requirements
+import typings.fhir.fhirStrings.requirements_
 import typings.fhir.fhirStrings.resource
 import typings.fhir.fhirStrings.retired
+import typings.fhir.fhirStrings.returned
 import typings.fhir.fhirStrings.revoked
 import typings.fhir.fhirStrings.root
 import typings.fhir.fhirStrings.setting
 import typings.fhir.fhirStrings.snapshot
 import typings.fhir.fhirStrings.special
+import typings.fhir.fhirStrings.specimen_
 import typings.fhir.fhirStrings.stopped
 import typings.fhir.fhirStrings.string
-import typings.fhir.fhirStrings.substance_
 import typings.fhir.fhirStrings.success
 import typings.fhir.fhirStrings.summary
 import typings.fhir.fhirStrings.superseded
 import typings.fhir.fhirStrings.supplement
 import typings.fhir.fhirStrings.suspended
+import typings.fhir.fhirStrings.system
 import typings.fhir.fhirStrings.tentative
-import typings.fhir.fhirStrings.test
 import typings.fhir.fhirStrings.token
+import typings.fhir.fhirStrings.unfulfilled
 import typings.fhir.fhirStrings.unknown
 import typings.fhir.fhirStrings.unspecified
 import typings.fhir.fhirStrings.uri
@@ -164,6 +186,12 @@ object _FhirResource {
   inline def ActivityDefinition(status: draft | active | retired | unknown): typings.fhir.r5Mod.ActivityDefinition = {
     val __obj = js.Dynamic.literal(resourceType = "ActivityDefinition", status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r5Mod.ActivityDefinition]
+  }
+  
+  inline def ActorDefinition(status: draft | active | retired | unknown, `type`: person_ | system): typings.fhir.r5Mod.ActorDefinition = {
+    val __obj = js.Dynamic.literal(resourceType = "ActorDefinition", status = status.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.fhir.r5Mod.ActorDefinition]
   }
   
   inline def AdministrableProductDefinition(
@@ -196,7 +224,10 @@ object _FhirResource {
     __obj.asInstanceOf[typings.fhir.r5Mod.Appointment]
   }
   
-  inline def AppointmentResponse(appointment: Reference, participantStatus: accepted | declined | tentative | `needs-action`): typings.fhir.r5Mod.AppointmentResponse = {
+  inline def AppointmentResponse(
+    appointment: Reference,
+    participantStatus: accepted | declined | tentative | `needs-action` | `entered-in-error`
+  ): typings.fhir.r5Mod.AppointmentResponse = {
     val __obj = js.Dynamic.literal(appointment = appointment.asInstanceOf[js.Any], participantStatus = participantStatus.asInstanceOf[js.Any], resourceType = "AppointmentResponse")
     __obj.asInstanceOf[typings.fhir.r5Mod.AppointmentResponse]
   }
@@ -231,6 +262,15 @@ object _FhirResource {
     __obj.asInstanceOf[typings.fhir.r5Mod.BiologicallyDerivedProduct]
   }
   
+  inline def BiologicallyDerivedProductDispense(
+    patient: Reference,
+    product: Reference,
+    status: preparation | `in-progress` | allocated | issued | unfulfilled | returned | `entered-in-error` | unknown
+  ): typings.fhir.r5Mod.BiologicallyDerivedProductDispense = {
+    val __obj = js.Dynamic.literal(patient = patient.asInstanceOf[js.Any], product = product.asInstanceOf[js.Any], resourceType = "BiologicallyDerivedProductDispense", status = status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.fhir.r5Mod.BiologicallyDerivedProductDispense]
+  }
+  
   inline def BodyStructure(includedStructure: js.Array[BodyStructureIncludedStructure], patient: Reference): typings.fhir.r5Mod.BodyStructure = {
     val __obj = js.Dynamic.literal(includedStructure = includedStructure.asInstanceOf[js.Any], patient = patient.asInstanceOf[js.Any], resourceType = "BodyStructure")
     __obj.asInstanceOf[typings.fhir.r5Mod.BodyStructure]
@@ -240,22 +280,11 @@ object _FhirResource {
     date: String,
     fhirVersion: String,
     format: js.Array[String],
-    kind: instance | capability | requirements,
+    kind: instance | capability | requirements_,
     status: draft | active | retired | unknown
   ): typings.fhir.r5Mod.CapabilityStatement = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], fhirVersion = fhirVersion.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], resourceType = "CapabilityStatement", status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r5Mod.CapabilityStatement]
-  }
-  
-  inline def CapabilityStatement2(
-    date: String,
-    fhirVersion: String,
-    format: js.Array[String],
-    kind: instance | capability | requirements,
-    status: draft | active | retired | unknown
-  ): typings.fhir.r5Mod.CapabilityStatement2 = {
-    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], fhirVersion = fhirVersion.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], resourceType = "CapabilityStatement2", status = status.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.fhir.r5Mod.CapabilityStatement2]
   }
   
   inline def CarePlan(
@@ -281,8 +310,8 @@ object _FhirResource {
     __obj.asInstanceOf[typings.fhir.r5Mod.ChargeItem]
   }
   
-  inline def ChargeItemDefinition(status: draft | active | retired | unknown, url: String): typings.fhir.r5Mod.ChargeItemDefinition = {
-    val __obj = js.Dynamic.literal(resourceType = "ChargeItemDefinition", status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  inline def ChargeItemDefinition(status: draft | active | retired | unknown): typings.fhir.r5Mod.ChargeItemDefinition = {
+    val __obj = js.Dynamic.literal(resourceType = "ChargeItemDefinition", status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r5Mod.ChargeItemDefinition]
   }
   
@@ -293,29 +322,25 @@ object _FhirResource {
   
   inline def Claim(
     created: String,
-    insurance: js.Array[ClaimInsurance],
     patient: Reference,
-    priority: CodeableConcept,
-    provider: Reference,
     status: active | cancelled | draft | `entered-in-error`,
     `type`: CodeableConcept,
     use: claim_ | preauthorization | predetermination
   ): typings.fhir.r5Mod.Claim = {
-    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], insurance = insurance.asInstanceOf[js.Any], patient = patient.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], resourceType = "Claim", status = status.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], patient = patient.asInstanceOf[js.Any], resourceType = "Claim", status = status.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r5Mod.Claim]
   }
   
   inline def ClaimResponse(
     created: String,
-    insurer: Reference,
     outcome: queued | complete | error | partial,
     patient: Reference,
     status: active | cancelled | draft | `entered-in-error`,
     `type`: CodeableConcept,
     use: claim_ | preauthorization | predetermination
   ): typings.fhir.r5Mod.ClaimResponse = {
-    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], insurer = insurer.asInstanceOf[js.Any], outcome = outcome.asInstanceOf[js.Any], patient = patient.asInstanceOf[js.Any], resourceType = "ClaimResponse", status = status.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], outcome = outcome.asInstanceOf[js.Any], patient = patient.asInstanceOf[js.Any], resourceType = "ClaimResponse", status = status.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r5Mod.ClaimResponse]
   }
@@ -332,12 +357,6 @@ object _FhirResource {
     val __obj = js.Dynamic.literal(resourceType = "ClinicalUseDefinition")
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r5Mod.ClinicalUseDefinition]
-  }
-  
-  inline def ClinicalUseIssue(`type`: indication | contraindication | interaction | `undesirable-effect` | warning): typings.fhir.r5Mod.ClinicalUseIssue = {
-    val __obj = js.Dynamic.literal(resourceType = "ClinicalUseIssue")
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.fhir.r5Mod.ClinicalUseIssue]
   }
   
   inline def CodeSystem(
@@ -364,7 +383,7 @@ object _FhirResource {
   }
   
   inline def CompartmentDefinition(
-    code: typings.fhir.fhirStrings.Patient | typings.fhir.fhirStrings.Encounter | typings.fhir.fhirStrings.RelatedPerson | typings.fhir.fhirStrings.Practitioner | typings.fhir.fhirStrings.Device,
+    code: typings.fhir.fhirStrings.Patient | typings.fhir.fhirStrings.Encounter | typings.fhir.fhirStrings.RelatedPerson | typings.fhir.fhirStrings.Practitioner | typings.fhir.fhirStrings.Device | typings.fhir.fhirStrings.EpisodeOfCare,
     name: String,
     search: Boolean,
     status: draft | active | retired | unknown,
@@ -377,7 +396,7 @@ object _FhirResource {
   inline def Composition(
     author: js.Array[Reference],
     date: String,
-    status: preliminary | `final` | amended | `entered-in-error` | deprecated,
+    status: registered | partial | preliminary | `final` | amended | corrected | appended | cancelled | `entered-in-error` | deprecated | unknown,
     title: String,
     `type`: CodeableConcept
   ): typings.fhir.r5Mod.Composition = {
@@ -391,11 +410,6 @@ object _FhirResource {
     __obj.asInstanceOf[typings.fhir.r5Mod.ConceptMap]
   }
   
-  inline def ConceptMap2(status: draft | active | retired | unknown): typings.fhir.r5Mod.ConceptMap2 = {
-    val __obj = js.Dynamic.literal(resourceType = "ConceptMap2", status = status.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.fhir.r5Mod.ConceptMap2]
-  }
-  
   inline def Condition(clinicalStatus: CodeableConcept, subject: Reference): typings.fhir.r5Mod.Condition = {
     val __obj = js.Dynamic.literal(clinicalStatus = clinicalStatus.asInstanceOf[js.Any], resourceType = "Condition", subject = subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r5Mod.Condition]
@@ -406,7 +420,7 @@ object _FhirResource {
     __obj.asInstanceOf[typings.fhir.r5Mod.ConditionDefinition]
   }
   
-  inline def Consent(status: draft | active | inactive | `entered-in-error` | unknown): typings.fhir.r5Mod.Consent = {
+  inline def Consent(status: draft | active | inactive | `not-done` | `entered-in-error` | unknown): typings.fhir.r5Mod.Consent = {
     val __obj = js.Dynamic.literal(resourceType = "Consent", status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r5Mod.Consent]
   }
@@ -418,10 +432,10 @@ object _FhirResource {
   
   inline def Coverage(
     beneficiary: Reference,
-    payor: js.Array[Reference],
+    kind: insurance | `self-pay` | other,
     status: active | cancelled | draft | `entered-in-error`
   ): typings.fhir.r5Mod.Coverage = {
-    val __obj = js.Dynamic.literal(beneficiary = beneficiary.asInstanceOf[js.Any], payor = payor.asInstanceOf[js.Any], resourceType = "Coverage", status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(beneficiary = beneficiary.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], resourceType = "Coverage", status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r5Mod.Coverage]
   }
   
@@ -449,9 +463,7 @@ object _FhirResource {
     __obj.asInstanceOf[typings.fhir.r5Mod.CoverageEligibilityResponse]
   }
   
-  inline def DetectedIssue(
-    status: registered | preliminary | `final` | amended | corrected | cancelled | `entered-in-error` | unknown
-  ): typings.fhir.r5Mod.DetectedIssue = {
+  inline def DetectedIssue(status: preliminary | `final` | `entered-in-error` | mitigated): typings.fhir.r5Mod.DetectedIssue = {
     val __obj = js.Dynamic.literal(resourceType = "DetectedIssue", status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r5Mod.DetectedIssue]
   }
@@ -459,6 +471,11 @@ object _FhirResource {
   inline def Device(): typings.fhir.r5Mod.Device = {
     val __obj = js.Dynamic.literal(resourceType = "Device")
     __obj.asInstanceOf[typings.fhir.r5Mod.Device]
+  }
+  
+  inline def DeviceAssociation(device: Reference, status: CodeableConcept): typings.fhir.r5Mod.DeviceAssociation = {
+    val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any], resourceType = "DeviceAssociation", status = status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.fhir.r5Mod.DeviceAssociation]
   }
   
   inline def DeviceDefinition(): typings.fhir.r5Mod.DeviceDefinition = {
@@ -475,8 +492,12 @@ object _FhirResource {
     __obj.asInstanceOf[typings.fhir.r5Mod.DeviceDispense]
   }
   
-  inline def DeviceMetric(category: measurement | setting | calculation | unspecified, `type`: CodeableConcept): typings.fhir.r5Mod.DeviceMetric = {
-    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], resourceType = "DeviceMetric")
+  inline def DeviceMetric(
+    category: measurement | setting | calculation | unspecified,
+    device: Reference,
+    `type`: CodeableConcept
+  ): typings.fhir.r5Mod.DeviceMetric = {
+    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], device = device.asInstanceOf[js.Any], resourceType = "DeviceMetric")
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r5Mod.DeviceMetric]
   }
@@ -501,15 +522,10 @@ object _FhirResource {
   
   inline def DiagnosticReport(
     code: CodeableConcept,
-    status: registered | partial | preliminary | `final` | amended | corrected | appended | cancelled | `entered-in-error` | unknown
+    status: registered | partial | preliminary | modified | `final` | amended | corrected | appended | cancelled | `entered-in-error` | unknown
   ): typings.fhir.r5Mod.DiagnosticReport = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], resourceType = "DiagnosticReport", status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r5Mod.DiagnosticReport]
-  }
-  
-  inline def DocumentManifest(content: js.Array[Reference], status: current | superseded | `entered-in-error`): typings.fhir.r5Mod.DocumentManifest = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], resourceType = "DocumentManifest", status = status.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.fhir.r5Mod.DocumentManifest]
   }
   
   inline def DocumentReference(content: js.Array[DocumentReferenceContent], status: current | superseded | `entered-in-error`): typings.fhir.r5Mod.DocumentReference = {
@@ -518,21 +534,27 @@ object _FhirResource {
   }
   
   inline def Encounter(
-    `class`: Coding,
-    status: planned | `in-progress` | onhold | completed | cancelled | `entered-in-error` | unknown
+    status: planned | `in-progress` | `on-hold` | discharged | completed | cancelled | discontinued | `entered-in-error` | unknown
   ): typings.fhir.r5Mod.Encounter = {
     val __obj = js.Dynamic.literal(resourceType = "Encounter", status = status.asInstanceOf[js.Any])
-    __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r5Mod.Encounter]
+  }
+  
+  inline def EncounterHistory(
+    `class`: CodeableConcept,
+    status: planned | `in-progress` | `on-hold` | discharged | completed | cancelled | discontinued | `entered-in-error` | unknown
+  ): typings.fhir.r5Mod.EncounterHistory = {
+    val __obj = js.Dynamic.literal(resourceType = "EncounterHistory", status = status.asInstanceOf[js.Any])
+    __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.fhir.r5Mod.EncounterHistory]
   }
   
   inline def Endpoint(
     address: String,
-    connectionType: Coding,
-    payloadType: js.Array[CodeableConcept],
-    status: active | suspended | error | off | `entered-in-error` | test
+    connectionType: js.Array[CodeableConcept],
+    status: active | suspended | error | off | `entered-in-error`
   ): typings.fhir.r5Mod.Endpoint = {
-    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], connectionType = connectionType.asInstanceOf[js.Any], payloadType = payloadType.asInstanceOf[js.Any], resourceType = "Endpoint", status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], connectionType = connectionType.asInstanceOf[js.Any], resourceType = "Endpoint", status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r5Mod.Endpoint]
   }
   
@@ -584,16 +606,13 @@ object _FhirResource {
   
   inline def ExplanationOfBenefit(
     created: String,
-    insurance: js.Array[ExplanationOfBenefitInsurance],
-    insurer: Reference,
     outcome: queued | complete | error | partial,
     patient: Reference,
-    provider: Reference,
     status: active | cancelled | draft | `entered-in-error`,
     `type`: CodeableConcept,
     use: claim_ | preauthorization | predetermination
   ): typings.fhir.r5Mod.ExplanationOfBenefit = {
-    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], insurance = insurance.asInstanceOf[js.Any], insurer = insurer.asInstanceOf[js.Any], outcome = outcome.asInstanceOf[js.Any], patient = patient.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], resourceType = "ExplanationOfBenefit", status = status.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], outcome = outcome.asInstanceOf[js.Any], patient = patient.asInstanceOf[js.Any], resourceType = "ExplanationOfBenefit", status = status.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r5Mod.ExplanationOfBenefit]
   }
@@ -612,6 +631,16 @@ object _FhirResource {
     __obj.asInstanceOf[typings.fhir.r5Mod.Flag]
   }
   
+  inline def FormularyItem(): typings.fhir.r5Mod.FormularyItem = {
+    val __obj = js.Dynamic.literal(resourceType = "FormularyItem")
+    __obj.asInstanceOf[typings.fhir.r5Mod.FormularyItem]
+  }
+  
+  inline def GenomicStudy(status: registered | available | cancelled | `entered-in-error` | unknown, subject: Reference): typings.fhir.r5Mod.GenomicStudy = {
+    val __obj = js.Dynamic.literal(resourceType = "GenomicStudy", status = status.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.fhir.r5Mod.GenomicStudy]
+  }
+  
   inline def Goal(
     description: CodeableConcept,
     lifecycleStatus: proposed | planned | accepted | active | `on-hold` | completed | cancelled | `entered-in-error` | rejected,
@@ -621,13 +650,16 @@ object _FhirResource {
     __obj.asInstanceOf[typings.fhir.r5Mod.Goal]
   }
   
-  inline def GraphDefinition(name: String, start: String, status: draft | active | retired | unknown): typings.fhir.r5Mod.GraphDefinition = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resourceType = "GraphDefinition", start = start.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+  inline def GraphDefinition(name: String, status: draft | active | retired | unknown): typings.fhir.r5Mod.GraphDefinition = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resourceType = "GraphDefinition", status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r5Mod.GraphDefinition]
   }
   
-  inline def Group(actual: Boolean, `type`: person_ | animal | practitioner_ | device_ | medication_ | substance_): typings.fhir.r5Mod.Group = {
-    val __obj = js.Dynamic.literal(actual = actual.asInstanceOf[js.Any], resourceType = "Group")
+  inline def Group(
+    membership: definitional | enumerated,
+    `type`: person_ | animal | practitioner_ | device_ | careteam_ | healthcareservice_ | location_ | organization_ | relatedperson_ | specimen_
+  ): typings.fhir.r5Mod.Group = {
+    val __obj = js.Dynamic.literal(membership = membership.asInstanceOf[js.Any], resourceType = "Group")
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r5Mod.Group]
   }
@@ -644,8 +676,8 @@ object _FhirResource {
     __obj.asInstanceOf[typings.fhir.r5Mod.HealthcareService]
   }
   
-  inline def ImagingSelection(code: CodeableConcept): typings.fhir.r5Mod.ImagingSelection = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], resourceType = "ImagingSelection")
+  inline def ImagingSelection(code: CodeableConcept, status: available | `entered-in-error` | unknown): typings.fhir.r5Mod.ImagingSelection = {
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], resourceType = "ImagingSelection", status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r5Mod.ImagingSelection]
   }
   
@@ -704,6 +736,11 @@ object _FhirResource {
     __obj.asInstanceOf[typings.fhir.r5Mod.InsurancePlan]
   }
   
+  inline def InventoryItem(status: active | inactive | `entered-in-error` | unknown): typings.fhir.r5Mod.InventoryItem = {
+    val __obj = js.Dynamic.literal(resourceType = "InventoryItem", status = status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.fhir.r5Mod.InventoryItem]
+  }
+  
   inline def InventoryReport(
     countType: snapshot | difference,
     reportedDateTime: String,
@@ -750,12 +787,11 @@ object _FhirResource {
   }
   
   inline def MeasureReport(
-    measure: String,
     period: Period,
     status: complete | pending | error,
-    `type`: individual | `subject-list` | summary | `data-collection`
+    `type`: individual | `subject-list` | summary | `data-exchange`
   ): typings.fhir.r5Mod.MeasureReport = {
-    val __obj = js.Dynamic.literal(measure = measure.asInstanceOf[js.Any], period = period.asInstanceOf[js.Any], resourceType = "MeasureReport", status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(period = period.asInstanceOf[js.Any], resourceType = "MeasureReport", status = status.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r5Mod.MeasureReport]
   }
@@ -798,9 +834,9 @@ object _FhirResource {
     __obj.asInstanceOf[typings.fhir.r5Mod.MedicationRequest]
   }
   
-  inline def MedicationUsage(medication: CodeableReference, status: recorded | `entered-in-error` | draft, subject: Reference): typings.fhir.r5Mod.MedicationUsage = {
-    val __obj = js.Dynamic.literal(medication = medication.asInstanceOf[js.Any], resourceType = "MedicationUsage", status = status.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.fhir.r5Mod.MedicationUsage]
+  inline def MedicationStatement(medication: CodeableReference, status: recorded | `entered-in-error` | draft, subject: Reference): typings.fhir.r5Mod.MedicationStatement = {
+    val __obj = js.Dynamic.literal(medication = medication.asInstanceOf[js.Any], resourceType = "MedicationStatement", status = status.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.fhir.r5Mod.MedicationStatement]
   }
   
   inline def MedicinalProductDefinition(name: js.Array[MedicinalProductDefinitionName]): typings.fhir.r5Mod.MedicinalProductDefinition = {
@@ -818,8 +854,8 @@ object _FhirResource {
     __obj.asInstanceOf[typings.fhir.r5Mod.MessageHeader]
   }
   
-  inline def MolecularSequence(coordinateSystem: Double): typings.fhir.r5Mod.MolecularSequence = {
-    val __obj = js.Dynamic.literal(coordinateSystem = coordinateSystem.asInstanceOf[js.Any], resourceType = "MolecularSequence")
+  inline def MolecularSequence(): typings.fhir.r5Mod.MolecularSequence = {
+    val __obj = js.Dynamic.literal(resourceType = "MolecularSequence")
     __obj.asInstanceOf[typings.fhir.r5Mod.MolecularSequence]
   }
   
@@ -846,10 +882,10 @@ object _FhirResource {
   inline def NutritionOrder(
     dateTime: String,
     intent: proposal | plan | directive | order_ | `original-order` | `reflex-order` | `filler-order` | `instance-order` | option,
-    patient: Reference,
-    status: draft | active | `on-hold` | revoked | completed | `entered-in-error` | unknown
+    status: draft | active | `on-hold` | revoked | completed | `entered-in-error` | unknown,
+    subject: Reference
   ): typings.fhir.r5Mod.NutritionOrder = {
-    val __obj = js.Dynamic.literal(dateTime = dateTime.asInstanceOf[js.Any], intent = intent.asInstanceOf[js.Any], patient = patient.asInstanceOf[js.Any], resourceType = "NutritionOrder", status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dateTime = dateTime.asInstanceOf[js.Any], intent = intent.asInstanceOf[js.Any], resourceType = "NutritionOrder", status = status.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r5Mod.NutritionOrder]
   }
   
@@ -918,26 +954,30 @@ object _FhirResource {
   inline def PaymentNotice(
     amount: Money,
     created: String,
-    payment: Reference,
     recipient: Reference,
     status: active | cancelled | draft | `entered-in-error`
   ): typings.fhir.r5Mod.PaymentNotice = {
-    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], payment = payment.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], resourceType = "PaymentNotice", status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], resourceType = "PaymentNotice", status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r5Mod.PaymentNotice]
   }
   
   inline def PaymentReconciliation(
+    amount: Money,
     created: String,
-    paymentAmount: Money,
-    paymentDate: String,
-    status: active | cancelled | draft | `entered-in-error`
+    date: String,
+    status: active | cancelled | draft | `entered-in-error`,
+    `type`: CodeableConcept
   ): typings.fhir.r5Mod.PaymentReconciliation = {
-    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], paymentAmount = paymentAmount.asInstanceOf[js.Any], paymentDate = paymentDate.asInstanceOf[js.Any], resourceType = "PaymentReconciliation", status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], resourceType = "PaymentReconciliation", status = status.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r5Mod.PaymentReconciliation]
   }
   
-  inline def Permission(status: active | `entered-in-error` | draft | rejected): typings.fhir.r5Mod.Permission = {
-    val __obj = js.Dynamic.literal(resourceType = "Permission", status = status.asInstanceOf[js.Any])
+  inline def Permission(
+    combining: `deny-overrides` | `permit-overrides` | `ordered-deny-overrides` | `ordered-permit-overrides` | `deny-unless-permit` | `permit-unless-deny`,
+    status: active | `entered-in-error` | draft | rejected
+  ): typings.fhir.r5Mod.Permission = {
+    val __obj = js.Dynamic.literal(combining = combining.asInstanceOf[js.Any], resourceType = "Permission", status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r5Mod.Permission]
   }
   
@@ -979,8 +1019,8 @@ object _FhirResource {
     __obj.asInstanceOf[typings.fhir.r5Mod.Questionnaire]
   }
   
-  inline def QuestionnaireResponse(status: `in-progress` | completed | amended | `entered-in-error` | stopped): typings.fhir.r5Mod.QuestionnaireResponse = {
-    val __obj = js.Dynamic.literal(resourceType = "QuestionnaireResponse", status = status.asInstanceOf[js.Any])
+  inline def QuestionnaireResponse(questionnaire: String, status: `in-progress` | completed | amended | `entered-in-error` | stopped): typings.fhir.r5Mod.QuestionnaireResponse = {
+    val __obj = js.Dynamic.literal(questionnaire = questionnaire.asInstanceOf[js.Any], resourceType = "QuestionnaireResponse", status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r5Mod.QuestionnaireResponse]
   }
   
@@ -994,12 +1034,17 @@ object _FhirResource {
     __obj.asInstanceOf[typings.fhir.r5Mod.RelatedPerson]
   }
   
-  inline def RequestGroup(
+  inline def RequestOrchestration(
     intent: proposal | plan | directive | order_ | `original-order` | `reflex-order` | `filler-order` | `instance-order` | option,
     status: draft | active | `on-hold` | revoked | completed | `entered-in-error` | unknown
-  ): typings.fhir.r5Mod.RequestGroup = {
-    val __obj = js.Dynamic.literal(intent = intent.asInstanceOf[js.Any], resourceType = "RequestGroup", status = status.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.fhir.r5Mod.RequestGroup]
+  ): typings.fhir.r5Mod.RequestOrchestration = {
+    val __obj = js.Dynamic.literal(intent = intent.asInstanceOf[js.Any], resourceType = "RequestOrchestration", status = status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.fhir.r5Mod.RequestOrchestration]
+  }
+  
+  inline def Requirements(status: draft | active | retired | unknown): typings.fhir.r5Mod.Requirements = {
+    val __obj = js.Dynamic.literal(resourceType = "Requirements", status = status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.fhir.r5Mod.Requirements]
   }
   
   inline def ResearchStudy(status: draft | active | retired | unknown): typings.fhir.r5Mod.ResearchStudy = {
@@ -1166,17 +1211,22 @@ object _FhirResource {
   
   inline def TerminologyCapabilities(
     date: String,
-    kind: instance | capability | requirements,
+    kind: instance | capability | requirements_,
     status: draft | active | retired | unknown
   ): typings.fhir.r5Mod.TerminologyCapabilities = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], resourceType = "TerminologyCapabilities", status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r5Mod.TerminologyCapabilities]
   }
   
+  inline def TestPlan(status: draft | active | retired | unknown): typings.fhir.r5Mod.TestPlan = {
+    val __obj = js.Dynamic.literal(resourceType = "TestPlan", status = status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.fhir.r5Mod.TestPlan]
+  }
+  
   inline def TestReport(
     result: pass | fail | pending,
     status: completed | `in-progress` | waiting | stopped | `entered-in-error`,
-    testScript: Reference
+    testScript: String
   ): typings.fhir.r5Mod.TestReport = {
     val __obj = js.Dynamic.literal(resourceType = "TestReport", result = result.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], testScript = testScript.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r5Mod.TestReport]
@@ -1187,12 +1237,23 @@ object _FhirResource {
     __obj.asInstanceOf[typings.fhir.r5Mod.TestScript]
   }
   
+  inline def Transport(
+    currentLocation: Reference,
+    intent: unknown | proposal | plan | order_ | `original-order` | `reflex-order` | `filler-order` | `instance-order` | option,
+    requestedLocation: Reference
+  ): typings.fhir.r5Mod.Transport = {
+    val __obj = js.Dynamic.literal(currentLocation = currentLocation.asInstanceOf[js.Any], intent = intent.asInstanceOf[js.Any], requestedLocation = requestedLocation.asInstanceOf[js.Any], resourceType = "Transport")
+    __obj.asInstanceOf[typings.fhir.r5Mod.Transport]
+  }
+  
   inline def ValueSet(status: draft | active | retired | unknown): typings.fhir.r5Mod.ValueSet = {
     val __obj = js.Dynamic.literal(resourceType = "ValueSet", status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r5Mod.ValueSet]
   }
   
-  inline def VerificationResult(status: attested | validated | `in-process` | `req-revalid` | `val-fail` | `reval-fail`): typings.fhir.r5Mod.VerificationResult = {
+  inline def VerificationResult(
+    status: attested | validated | `in-process` | `req-revalid` | `val-fail` | `reval-fail` | `entered-in-error`
+  ): typings.fhir.r5Mod.VerificationResult = {
     val __obj = js.Dynamic.literal(resourceType = "VerificationResult", status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r5Mod.VerificationResult]
   }

@@ -1,192 +1,135 @@
 package typings.twilio
 
+import typings.twilio.anon.FieldType
 import typings.twilio.libBasePageMod.TwilioResponsePayload
-import typings.twilio.libInterfacesMod.SerializableClass
+import typings.twilio.libRestPreviewUnderstandMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libRestPreviewUnderstandAssistantTaskFieldMod {
   
-  @JSImport("twilio/lib/rest/preview/understand/assistant/task/field", JSImport.Namespace)
+  @JSImport("twilio/lib/rest/preview/understand/assistant/task/field", "FieldContextImpl")
   @js.native
-  val ^ : js.Any = js.native
-  
-  @JSImport("twilio/lib/rest/preview/understand/assistant/task/field", "FieldContext")
-  @js.native
-  open class FieldContext protected () extends StObject {
-    /**
-      * Initialize the FieldContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param assistantSid - The unique ID of the Assistant.
-      * @param taskSid - The unique ID of the Task associated with this Field.
-      * @param sid - A 34 character string that uniquely identifies this resource.
-      */
-    def this(
-      version: typings.twilio.libRestPreviewUnderstandMod.^,
-      assistantSid: String,
-      taskSid: String,
-      sid: String
-    ) = this()
+  open class FieldContextImpl protected ()
+    extends StObject
+       with FieldContext {
+    def this(_version: default, assistantSid: String, taskSid: String, sid: String) = this()
     
-    /**
-      * fetch a FieldInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def fetch(): js.Promise[FieldInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ FieldInstance, Any]): js.Promise[FieldInstance] = js.native
+    /* protected */ var _solution: FieldContextSolution = js.native
     
-    /**
-      * remove a FieldInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def remove(): js.Promise[Boolean] = js.native
-    def remove(callback: js.Function2[/* error */ js.Error | Null, /* items */ FieldInstance, Any]): js.Promise[Boolean] = js.native
+    /* protected */ var _uri: String = js.native
     
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
+    /* protected */ var _version: default = js.native
   }
   
   @JSImport("twilio/lib/rest/preview/understand/assistant/task/field", "FieldInstance")
   @js.native
-  open class FieldInstance protected () extends SerializableClass {
+  open class FieldInstance protected () extends StObject {
+    def this(_version: default, payload: FieldResource, assistantSid: String, taskSid: String) = this()
+    def this(_version: default, payload: FieldResource, assistantSid: String, taskSid: String, sid: String) = this()
+    
+    /* protected */ var _context: js.UndefOr[FieldContext] = js.native
+    
+    /* private */ def _proxy: Any = js.native
+    
+    /* protected */ var _solution: FieldContextSolution = js.native
+    
+    /* protected */ var _version: default = js.native
+    
     /**
-      * Initialize the FieldContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param payload - The instance payload
-      * @param assistantSid - The unique ID of the parent Assistant.
-      * @param taskSid - The unique ID of the Task associated with this Field.
-      * @param sid - A 34 character string that uniquely identifies this resource.
+      * The unique ID of the Account that created this Field.
       */
-    def this(
-      version: typings.twilio.libRestPreviewUnderstandMod.^,
-      payload: FieldPayload,
-      assistantSid: String,
-      taskSid: String,
-      sid: String
-    ) = this()
-    
-    /* private */ var _proxy: FieldContext = js.native
-    
     var accountSid: String = js.native
     
+    /**
+      * The unique ID of the parent Assistant.
+      */
     var assistantSid: String = js.native
     
+    /**
+      * The date that this resource was created
+      */
     var dateCreated: js.Date = js.native
     
+    /**
+      * The date that this resource was last updated
+      */
     var dateUpdated: js.Date = js.native
     
     /**
-      * fetch a FieldInstance
+      * Fetch a FieldInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed FieldInstance
       */
     def fetch(): js.Promise[FieldInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[FieldInstance] = js.native
+    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]): js.Promise[FieldInstance] = js.native
     
+    /**
+      * The Field Type of this field. It can be any [Built-in Field Type](https://www.twilio.com/docs/assistant/api/built-in-field-types) or the unique_name or sid of a custom Field Type.
+      */
     var fieldType: String = js.native
     
     /**
-      * remove a FieldInstance
+      * Remove a FieldInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed boolean
       */
     def remove(): js.Promise[Boolean] = js.native
-    def remove(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[Boolean] = js.native
+    def remove(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any]): js.Promise[Boolean] = js.native
     
+    /**
+      * A 34 character string that uniquely identifies this resource.
+      */
     var sid: String = js.native
     
+    /**
+      * The unique ID of the Task associated with this Field.
+      */
     var taskSid: String = js.native
     
+    /**
+      * Provide a user-friendly representation
+      *
+      * @returns Object
+      */
+    def toJSON(): FieldType = js.native
+    
+    /**
+      * A user-provided string that uniquely identifies this resource as an alternative to the sid. Unique up to 64 characters long.
+      */
     var uniqueName: String = js.native
     
     var url: String = js.native
   }
   
-  /**
-    * Initialize the FieldList
-    *
-    * PLEASE NOTE that this class contains preview products that are subject to
-    * change. Use them with caution. If you currently do not have developer preview
-    * access, please contact help@twilio.com.
-    *
-    * @param version - Version of the resource
-    * @param assistantSid - The unique ID of the parent Assistant.
-    * @param taskSid - The unique ID of the Task associated with this Field.
-    */
-  inline def FieldList(version: typings.twilio.libRestPreviewUnderstandMod.^, assistantSid: String, taskSid: String): FieldListInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("FieldList")(version.asInstanceOf[js.Any], assistantSid.asInstanceOf[js.Any], taskSid.asInstanceOf[js.Any])).asInstanceOf[FieldListInstance]
-  
-  @JSImport("twilio/lib/rest/preview/understand/assistant/task/field", "FieldPage")
-  @js.native
-  open class FieldPage protected ()
-    extends typings.twilio.libBasePageMod.^[
-          typings.twilio.libRestPreviewUnderstandMod.^, 
-          FieldPayload, 
-          FieldResource, 
-          FieldInstance
-        ] {
-    /**
-      * Initialize the FieldPage
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param response - Response from the API
-      * @param solution - Path solution
-      */
-    def this(
-      version: typings.twilio.libRestPreviewUnderstandMod.^,
-      response: typings.twilio.libHttpResponseMod.^[String],
-      solution: FieldSolution
-    ) = this()
-    
-    /**
-      * Build an instance of FieldInstance
-      *
-      * @param payload - Payload response from the API
-      */
-    def getInstance(payload: FieldPayload): FieldInstance = js.native
-    
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
-  }
-  
   @js.native
   trait FieldListInstance extends StObject {
     
-    /**
-      * @param sid - sid of instance
-      */
     def apply(sid: String): FieldContext = js.native
     
+    var _solution: FieldSolution = js.native
+    
+    var _uri: String = js.native
+    
+    var _version: default = js.native
+    
     /**
-      * create a FieldInstance
+      * Create a FieldInstance
       *
-      * @param opts - Options for request
+      * @param params - Parameter for request
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed FieldInstance
       */
-    def create(opts: FieldListInstanceCreateOptions): js.Promise[FieldInstance] = js.native
+    def create(params: FieldListInstanceCreateOptions): js.Promise[FieldInstance] = js.native
     def create(
-      opts: FieldListInstanceCreateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* item */ FieldInstance, Any]
+      params: FieldListInstanceCreateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[FieldInstance], Any]
     ): js.Promise[FieldInstance] = js.native
     
     /**
@@ -201,7 +144,8 @@ object libRestPreviewUnderstandAssistantTaskFieldMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Function to process each record
+      * @param { FieldListInstanceEachOptions } [params] - Options for request
+      * @param { function } [callback] - Function to process each record
       */
     def each(): Unit = js.native
     def each(
@@ -211,17 +155,9 @@ object libRestPreviewUnderstandAssistantTaskFieldMod {
           Unit
         ]
     ): Unit = js.native
+    def each(params: FieldListInstanceEachOptions): Unit = js.native
     def each(
-      opts: Unit,
-      callback: js.Function2[
-          /* item */ FieldInstance, 
-          /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
-          Unit
-        ]
-    ): Unit = js.native
-    def each(opts: FieldListInstanceEachOptions): Unit = js.native
-    def each(
-      opts: FieldListInstanceEachOptions,
+      params: FieldListInstanceEachOptions,
       callback: js.Function2[
           /* item */ FieldInstance, 
           /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
@@ -229,11 +165,6 @@ object libRestPreviewUnderstandAssistantTaskFieldMod {
         ]
     ): Unit = js.native
     
-    /**
-      * Constructs a field
-      *
-      * @param sid - A 34 character string that uniquely identifies this resource.
-      */
     def get(sid: String): FieldContext = js.native
     
     /**
@@ -241,16 +172,11 @@ object libRestPreviewUnderstandAssistantTaskFieldMod {
       *
       * The request is executed immediately.
       *
-      * If a function is passed as the first argument, it will be used as the callback
-      * function.
-      *
-      * @param callback - Callback to handle list of records
+      * @param { string } [targetUrl] - API-generated URL for the requested results page
+      * @param { function } [callback] - Callback to handle list of records
       */
-    def getPage(): js.Promise[FieldPage] = js.native
-    def getPage(callback: js.Function2[/* error */ js.Error | Null, /* items */ FieldPage, Any]): js.Promise[FieldPage] = js.native
     def getPage(targetUrl: String): js.Promise[FieldPage] = js.native
     def getPage(targetUrl: String, callback: js.Function2[/* error */ js.Error | Null, /* items */ FieldPage, Any]): js.Promise[FieldPage] = js.native
-    def getPage(targetUrl: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ FieldPage, Any]): js.Promise[FieldPage] = js.native
     
     /**
       * Lists FieldInstance records from the API as a list.
@@ -258,17 +184,14 @@ object libRestPreviewUnderstandAssistantTaskFieldMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { FieldListInstanceOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def list(): js.Promise[js.Array[FieldInstance]] = js.native
     def list(callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[FieldInstance], Any]): js.Promise[js.Array[FieldInstance]] = js.native
+    def list(params: FieldListInstanceOptions): js.Promise[js.Array[FieldInstance]] = js.native
     def list(
-      opts: Unit,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[FieldInstance], Any]
-    ): js.Promise[js.Array[FieldInstance]] = js.native
-    def list(opts: FieldListInstanceOptions): js.Promise[js.Array[FieldInstance]] = js.native
-    def list(
-      opts: FieldListInstanceOptions,
+      params: FieldListInstanceOptions,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[FieldInstance], Any]
     ): js.Promise[js.Array[FieldInstance]] = js.native
     
@@ -280,14 +203,14 @@ object libRestPreviewUnderstandAssistantTaskFieldMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { FieldListInstancePageOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def page(): js.Promise[FieldPage] = js.native
     def page(callback: js.Function2[/* error */ js.Error | Null, /* items */ FieldPage, Any]): js.Promise[FieldPage] = js.native
-    def page(opts: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ FieldPage, Any]): js.Promise[FieldPage] = js.native
-    def page(opts: FieldListInstancePageOptions): js.Promise[FieldPage] = js.native
+    def page(params: FieldListInstancePageOptions): js.Promise[FieldPage] = js.native
     def page(
-      opts: FieldListInstancePageOptions,
+      params: FieldListInstancePageOptions,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ FieldPage, Any]
     ): js.Promise[FieldPage] = js.native
     
@@ -296,17 +219,99 @@ object libRestPreviewUnderstandAssistantTaskFieldMod {
       */
     def toJSON(): Any = js.native
   }
+  object FieldListInstance {
+    
+    @JSImport("twilio/lib/rest/preview/understand/assistant/task/field", "FieldListInstance")
+    @js.native
+    def apply(version: default, assistantSid: String, taskSid: String): FieldListInstance = js.native
+  }
   
-  /**
-    * Options to pass to create
-    *
-    * @property fieldType - The unique name or sid of the FieldType. It can be any Built-in Field Type or the unique_name or sid of a custom Field Type.
-    * @property uniqueName - A user-provided string that uniquely identifies this resource as an alternative to the sid. Unique up to 64 characters long.
-    */
+  @JSImport("twilio/lib/rest/preview/understand/assistant/task/field", "FieldPage")
+  @js.native
+  open class FieldPage protected ()
+    extends typings.twilio.libBasePageMod.default[default, FieldPayload, FieldResource, FieldInstance] {
+    /**
+      * Initialize the FieldPage
+      *
+      * @param version - Version of the resource
+      * @param response - Response from the API
+      * @param solution - Path solution
+      */
+    def this(
+      version: default,
+      response: typings.twilio.libHttpResponseMod.default[String],
+      solution: FieldSolution
+    ) = this()
+    
+    /**
+      * Build an instance of FieldInstance
+      *
+      * @param payload - Payload response from the API
+      */
+    def getInstance(payload: FieldResource): FieldInstance = js.native
+  }
+  
+  @js.native
+  trait FieldContext extends StObject {
+    
+    /**
+      * Fetch a FieldInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed FieldInstance
+      */
+    def fetch(): js.Promise[FieldInstance] = js.native
+    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[FieldInstance], Any]): js.Promise[FieldInstance] = js.native
+    
+    /**
+      * Remove a FieldInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed boolean
+      */
+    def remove(): js.Promise[Boolean] = js.native
+    def remove(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any]): js.Promise[Boolean] = js.native
+    
+    /**
+      * Provide a user-friendly representation
+      */
+    def toJSON(): Any = js.native
+  }
+  
+  trait FieldContextSolution extends StObject {
+    
+    var assistantSid: String
+    
+    var sid: String
+    
+    var taskSid: String
+  }
+  object FieldContextSolution {
+    
+    inline def apply(assistantSid: String, sid: String, taskSid: String): FieldContextSolution = {
+      val __obj = js.Dynamic.literal(assistantSid = assistantSid.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any], taskSid = taskSid.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FieldContextSolution]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldContextSolution] (val x: Self) extends AnyVal {
+      
+      inline def setAssistantSid(value: String): Self = StObject.set(x, "assistantSid", value.asInstanceOf[js.Any])
+      
+      inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
+      
+      inline def setTaskSid(value: String): Self = StObject.set(x, "taskSid", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait FieldListInstanceCreateOptions extends StObject {
     
+    /** The unique name or sid of the FieldType. It can be any [Built-in Field Type](https://www.twilio.com/docs/assistant/api/built-in-field-types) or the unique_name or the Field Type sid of a custom Field Type. */
     var fieldType: String
     
+    /** A user-provided string that uniquely identifies this resource as an alternative to the sid. Unique up to 64 characters long. */
     var uniqueName: String
   }
   object FieldListInstanceCreateOptions {
@@ -325,26 +330,9 @@ object libRestPreviewUnderstandAssistantTaskFieldMod {
     }
   }
   
-  /**
-    * Options to pass to each
-    *
-    * @property callback -
-    *                         Function to process each record. If this and a positional
-    *                         callback are passed, this one will be used
-    * @property done - Function to be called upon completion of streaming
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         each() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no pageSize is defined but a limit is defined,
-    *                         each() will attempt to read the limit with the most efficient
-    *                         page size, i.e. min(limit, 1000)
-    */
   trait FieldListInstanceEachOptions extends StObject {
     
+    /** Function to process each record. If this and a positional callback are passed, this one will be used */
     var callback: js.UndefOr[
         js.Function2[
           /* item */ FieldInstance, 
@@ -353,10 +341,13 @@ object libRestPreviewUnderstandAssistantTaskFieldMod {
         ]
       ] = js.undefined
     
+    /** Function to be called upon completion of streaming */
     var done: js.UndefOr[js.Function] = js.undefined
     
+    /** Upper limit for the number of records to return. each() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
   }
   object FieldListInstanceEachOptions {
@@ -389,24 +380,12 @@ object libRestPreviewUnderstandAssistantTaskFieldMod {
     }
   }
   
-  /**
-    * Options to pass to list
-    *
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         list() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no page_size is defined but a limit is defined,
-    *                         list() will attempt to read the limit with the most
-    *                         efficient page size, i.e. min(limit, 1000)
-    */
   trait FieldListInstanceOptions extends StObject {
     
+    /** Upper limit for the number of records to return. list() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
   }
   object FieldListInstanceOptions {
@@ -429,19 +408,15 @@ object libRestPreviewUnderstandAssistantTaskFieldMod {
     }
   }
   
-  /**
-    * Options to pass to page
-    *
-    * @property pageNumber - Page Number, this value is simply for client state
-    * @property pageSize - Number of records to return, defaults to 50
-    * @property pageToken - PageToken provided by the API
-    */
   trait FieldListInstancePageOptions extends StObject {
     
+    /** Page Number, this value is simply for client state */
     var pageNumber: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
     
+    /** PageToken provided by the API */
     var pageToken: js.UndefOr[String] = js.undefined
   }
   object FieldListInstancePageOptions {
@@ -470,29 +445,31 @@ object libRestPreviewUnderstandAssistantTaskFieldMod {
   
   trait FieldPayload
     extends StObject
-       with FieldResource
-       with TwilioResponsePayload
+       with TwilioResponsePayload {
+    
+    var fields: js.Array[FieldResource]
+  }
   object FieldPayload {
     
     inline def apply(
-      account_sid: String,
-      assistant_sid: String,
-      date_created: js.Date,
-      date_updated: js.Date,
-      field_type: String,
+      fields: js.Array[FieldResource],
       first_page_uri: String,
       next_page_uri: String,
       page: Double,
       page_size: Double,
       previous_page_uri: String,
-      sid: String,
-      task_sid: String,
-      unique_name: String,
-      uri: String,
-      url: String
+      uri: String
     ): FieldPayload = {
-      val __obj = js.Dynamic.literal(account_sid = account_sid.asInstanceOf[js.Any], assistant_sid = assistant_sid.asInstanceOf[js.Any], date_created = date_created.asInstanceOf[js.Any], date_updated = date_updated.asInstanceOf[js.Any], field_type = field_type.asInstanceOf[js.Any], first_page_uri = first_page_uri.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any], task_sid = task_sid.asInstanceOf[js.Any], unique_name = unique_name.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], first_page_uri = first_page_uri.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[FieldPayload]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldPayload] (val x: Self) extends AnyVal {
+      
+      inline def setFields(value: js.Array[FieldResource]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      
+      inline def setFieldsVarargs(value: FieldResource*): Self = StObject.set(x, "fields", js.Array(value*))
     }
   }
   
@@ -558,14 +535,14 @@ object libRestPreviewUnderstandAssistantTaskFieldMod {
   
   trait FieldSolution extends StObject {
     
-    var assistantSid: js.UndefOr[String] = js.undefined
+    var assistantSid: String
     
-    var taskSid: js.UndefOr[String] = js.undefined
+    var taskSid: String
   }
   object FieldSolution {
     
-    inline def apply(): FieldSolution = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(assistantSid: String, taskSid: String): FieldSolution = {
+      val __obj = js.Dynamic.literal(assistantSid = assistantSid.asInstanceOf[js.Any], taskSid = taskSid.asInstanceOf[js.Any])
       __obj.asInstanceOf[FieldSolution]
     }
     
@@ -574,11 +551,7 @@ object libRestPreviewUnderstandAssistantTaskFieldMod {
       
       inline def setAssistantSid(value: String): Self = StObject.set(x, "assistantSid", value.asInstanceOf[js.Any])
       
-      inline def setAssistantSidUndefined: Self = StObject.set(x, "assistantSid", js.undefined)
-      
       inline def setTaskSid(value: String): Self = StObject.set(x, "taskSid", value.asInstanceOf[js.Any])
-      
-      inline def setTaskSidUndefined: Self = StObject.set(x, "taskSid", js.undefined)
     }
   }
 }

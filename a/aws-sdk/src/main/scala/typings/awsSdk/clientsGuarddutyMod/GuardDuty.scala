@@ -57,12 +57,12 @@ trait GuardDuty
   var config: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Creates a single Amazon GuardDuty detector. A detector is a resource that represents the GuardDuty service. To start using GuardDuty, you must create a detector in each Region where you enable the service. You can have only one detector per account per Region. All data sources are enabled in a new detector by default.
+    * Creates a single Amazon GuardDuty detector. A detector is a resource that represents the GuardDuty service. To start using GuardDuty, you must create a detector in each Region where you enable the service. You can have only one detector per account per Region. All data sources are enabled in a new detector by default. There might be regional differences because some data sources might not be available in all the Amazon Web Services Regions where GuardDuty is presently supported. For more information, see Regions and endpoints.
     */
   def createDetector(): Request[CreateDetectorResponse, AWSError] = js.native
   def createDetector(callback: js.Function2[/* err */ AWSError, /* data */ CreateDetectorResponse, Unit]): Request[CreateDetectorResponse, AWSError] = js.native
   /**
-    * Creates a single Amazon GuardDuty detector. A detector is a resource that represents the GuardDuty service. To start using GuardDuty, you must create a detector in each Region where you enable the service. You can have only one detector per account per Region. All data sources are enabled in a new detector by default.
+    * Creates a single Amazon GuardDuty detector. A detector is a resource that represents the GuardDuty service. To start using GuardDuty, you must create a detector in each Region where you enable the service. You can have only one detector per account per Region. All data sources are enabled in a new detector by default. There might be regional differences because some data sources might not be available in all the Amazon Web Services Regions where GuardDuty is presently supported. For more information, see Regions and endpoints.
     */
   def createDetector(params: CreateDetectorRequest): Request[CreateDetectorResponse, AWSError] = js.native
   def createDetector(
@@ -71,12 +71,12 @@ trait GuardDuty
   ): Request[CreateDetectorResponse, AWSError] = js.native
   
   /**
-    * Creates a filter using the specified finding criteria.
+    * Creates a filter using the specified finding criteria. The maximum number of saved filters per Amazon Web Services account per Region is 100. For more information, see Quotas for GuardDuty.
     */
   def createFilter(): Request[CreateFilterResponse, AWSError] = js.native
   def createFilter(callback: js.Function2[/* err */ AWSError, /* data */ CreateFilterResponse, Unit]): Request[CreateFilterResponse, AWSError] = js.native
   /**
-    * Creates a filter using the specified finding criteria.
+    * Creates a filter using the specified finding criteria. The maximum number of saved filters per Amazon Web Services account per Region is 100. For more information, see Quotas for GuardDuty.
     */
   def createFilter(params: CreateFilterRequest): Request[CreateFilterResponse, AWSError] = js.native
   def createFilter(
@@ -99,12 +99,12 @@ trait GuardDuty
   ): Request[CreateIPSetResponse, AWSError] = js.native
   
   /**
-    * Creates member accounts of the current Amazon Web Services account by specifying a list of Amazon Web Services account IDs. This step is a prerequisite for managing the associated member accounts either by invitation or through an organization. When using Create Members as an organizations delegated administrator this action will enable GuardDuty in the added member accounts, with the exception of the organization delegated administrator account, which must enable GuardDuty prior to being added as a member. If you are adding accounts by invitation use this action after GuardDuty has been enabled in potential member accounts and before using  Invite Members .
+    * Creates member accounts of the current Amazon Web Services account by specifying a list of Amazon Web Services account IDs. This step is a prerequisite for managing the associated member accounts either by invitation or through an organization. When using Create Members as an organizations delegated administrator this action will enable GuardDuty in the added member accounts, with the exception of the organization delegated administrator account, which must enable GuardDuty prior to being added as a member. If you are adding accounts by invitation, use this action after GuardDuty has bee enabled in potential member accounts and before using InviteMembers.
     */
   def createMembers(): Request[CreateMembersResponse, AWSError] = js.native
   def createMembers(callback: js.Function2[/* err */ AWSError, /* data */ CreateMembersResponse, Unit]): Request[CreateMembersResponse, AWSError] = js.native
   /**
-    * Creates member accounts of the current Amazon Web Services account by specifying a list of Amazon Web Services account IDs. This step is a prerequisite for managing the associated member accounts either by invitation or through an organization. When using Create Members as an organizations delegated administrator this action will enable GuardDuty in the added member accounts, with the exception of the organization delegated administrator account, which must enable GuardDuty prior to being added as a member. If you are adding accounts by invitation use this action after GuardDuty has been enabled in potential member accounts and before using  Invite Members .
+    * Creates member accounts of the current Amazon Web Services account by specifying a list of Amazon Web Services account IDs. This step is a prerequisite for managing the associated member accounts either by invitation or through an organization. When using Create Members as an organizations delegated administrator this action will enable GuardDuty in the added member accounts, with the exception of the organization delegated administrator account, which must enable GuardDuty prior to being added as a member. If you are adding accounts by invitation, use this action after GuardDuty has bee enabled in potential member accounts and before using InviteMembers.
     */
   def createMembers(params: CreateMembersRequest): Request[CreateMembersResponse, AWSError] = js.native
   def createMembers(
@@ -127,12 +127,12 @@ trait GuardDuty
   ): Request[CreatePublishingDestinationResponse, AWSError] = js.native
   
   /**
-    * Generates example findings of types specified by the list of finding types. If 'NULL' is specified for findingTypes, the API generates example findings of all supported finding types.
+    * Generates sample findings of types specified by the list of finding types. If 'NULL' is specified for findingTypes, the API generates sample findings of all supported finding types.
     */
   def createSampleFindings(): Request[CreateSampleFindingsResponse, AWSError] = js.native
   def createSampleFindings(callback: js.Function2[/* err */ AWSError, /* data */ CreateSampleFindingsResponse, Unit]): Request[CreateSampleFindingsResponse, AWSError] = js.native
   /**
-    * Generates example findings of types specified by the list of finding types. If 'NULL' is specified for findingTypes, the API generates example findings of all supported finding types.
+    * Generates sample findings of types specified by the list of finding types. If 'NULL' is specified for findingTypes, the API generates sample findings of all supported finding types.
     */
   def createSampleFindings(params: CreateSampleFindingsRequest): Request[CreateSampleFindingsResponse, AWSError] = js.native
   def createSampleFindings(
@@ -225,12 +225,12 @@ trait GuardDuty
   ): Request[DeleteInvitationsResponse, AWSError] = js.native
   
   /**
-    * Deletes GuardDuty member accounts (to the current GuardDuty administrator account) specified by the account IDs.
+    * Deletes GuardDuty member accounts (to the current GuardDuty administrator account) specified by the account IDs. With autoEnableOrganizationMembers configuration for your organization set to ALL, you'll receive an error if you attempt to disable GuardDuty for a member account in your organization.
     */
   def deleteMembers(): Request[DeleteMembersResponse, AWSError] = js.native
   def deleteMembers(callback: js.Function2[/* err */ AWSError, /* data */ DeleteMembersResponse, Unit]): Request[DeleteMembersResponse, AWSError] = js.native
   /**
-    * Deletes GuardDuty member accounts (to the current GuardDuty administrator account) specified by the account IDs.
+    * Deletes GuardDuty member accounts (to the current GuardDuty administrator account) specified by the account IDs. With autoEnableOrganizationMembers configuration for your organization set to ALL, you'll receive an error if you attempt to disable GuardDuty for a member account in your organization.
     */
   def deleteMembers(params: DeleteMembersRequest): Request[DeleteMembersResponse, AWSError] = js.native
   def deleteMembers(
@@ -267,12 +267,12 @@ trait GuardDuty
   ): Request[DeleteThreatIntelSetResponse, AWSError] = js.native
   
   /**
-    * Returns a list of malware scans. Each member account can view the malware scans for their own accounts. An administrator can view the malware scans for all the member accounts.
+    * Returns a list of malware scans. Each member account can view the malware scans for their own accounts. An administrator can view the malware scans for all the member accounts. There might be regional differences because some data sources might not be available in all the Amazon Web Services Regions where GuardDuty is presently supported. For more information, see Regions and endpoints.
     */
   def describeMalwareScans(): Request[DescribeMalwareScansResponse, AWSError] = js.native
   def describeMalwareScans(callback: js.Function2[/* err */ AWSError, /* data */ DescribeMalwareScansResponse, Unit]): Request[DescribeMalwareScansResponse, AWSError] = js.native
   /**
-    * Returns a list of malware scans. Each member account can view the malware scans for their own accounts. An administrator can view the malware scans for all the member accounts.
+    * Returns a list of malware scans. Each member account can view the malware scans for their own accounts. An administrator can view the malware scans for all the member accounts. There might be regional differences because some data sources might not be available in all the Amazon Web Services Regions where GuardDuty is presently supported. For more information, see Regions and endpoints.
     */
   def describeMalwareScans(params: DescribeMalwareScansRequest): Request[DescribeMalwareScansResponse, AWSError] = js.native
   def describeMalwareScans(
@@ -281,14 +281,14 @@ trait GuardDuty
   ): Request[DescribeMalwareScansResponse, AWSError] = js.native
   
   /**
-    * Returns information about the account selected as the delegated administrator for GuardDuty.
+    * Returns information about the account selected as the delegated administrator for GuardDuty. There might be regional differences because some data sources might not be available in all the Amazon Web Services Regions where GuardDuty is presently supported. For more information, see Regions and endpoints.
     */
   def describeOrganizationConfiguration(): Request[DescribeOrganizationConfigurationResponse, AWSError] = js.native
   def describeOrganizationConfiguration(
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeOrganizationConfigurationResponse, Unit]
   ): Request[DescribeOrganizationConfigurationResponse, AWSError] = js.native
   /**
-    * Returns information about the account selected as the delegated administrator for GuardDuty.
+    * Returns information about the account selected as the delegated administrator for GuardDuty. There might be regional differences because some data sources might not be available in all the Amazon Web Services Regions where GuardDuty is presently supported. For more information, see Regions and endpoints.
     */
   def describeOrganizationConfiguration(params: DescribeOrganizationConfigurationRequest): Request[DescribeOrganizationConfigurationResponse, AWSError] = js.native
   def describeOrganizationConfiguration(
@@ -327,14 +327,14 @@ trait GuardDuty
   ): Request[DisableOrganizationAdminAccountResponse, AWSError] = js.native
   
   /**
-    * Disassociates the current GuardDuty member account from its administrator account.
+    * Disassociates the current GuardDuty member account from its administrator account. With autoEnableOrganizationMembers configuration for your organization set to ALL, you'll receive an error if you attempt to disable GuardDuty in a member account.
     */
   def disassociateFromAdministratorAccount(): Request[DisassociateFromAdministratorAccountResponse, AWSError] = js.native
   def disassociateFromAdministratorAccount(
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateFromAdministratorAccountResponse, Unit]
   ): Request[DisassociateFromAdministratorAccountResponse, AWSError] = js.native
   /**
-    * Disassociates the current GuardDuty member account from its administrator account.
+    * Disassociates the current GuardDuty member account from its administrator account. With autoEnableOrganizationMembers configuration for your organization set to ALL, you'll receive an error if you attempt to disable GuardDuty in a member account.
     */
   def disassociateFromAdministratorAccount(params: DisassociateFromAdministratorAccountRequest): Request[DisassociateFromAdministratorAccountResponse, AWSError] = js.native
   def disassociateFromAdministratorAccount(
@@ -357,12 +357,12 @@ trait GuardDuty
   ): Request[DisassociateFromMasterAccountResponse, AWSError] = js.native
   
   /**
-    * Disassociates GuardDuty member accounts (to the current administrator account) specified by the account IDs.
+    * Disassociates GuardDuty member accounts (to the current administrator account) specified by the account IDs. With autoEnableOrganizationMembers configuration for your organization set to ALL, you'll receive an error if you attempt to disassociate a member account before removing them from your Amazon Web Services organization.
     */
   def disassociateMembers(): Request[DisassociateMembersResponse, AWSError] = js.native
   def disassociateMembers(callback: js.Function2[/* err */ AWSError, /* data */ DisassociateMembersResponse, Unit]): Request[DisassociateMembersResponse, AWSError] = js.native
   /**
-    * Disassociates GuardDuty member accounts (to the current administrator account) specified by the account IDs.
+    * Disassociates GuardDuty member accounts (to the current administrator account) specified by the account IDs. With autoEnableOrganizationMembers configuration for your organization set to ALL, you'll receive an error if you attempt to disassociate a member account before removing them from your Amazon Web Services organization.
     */
   def disassociateMembers(params: DisassociateMembersRequest): Request[DisassociateMembersResponse, AWSError] = js.native
   def disassociateMembers(
@@ -401,12 +401,26 @@ trait GuardDuty
   ): Request[GetAdministratorAccountResponse, AWSError] = js.native
   
   /**
-    * Retrieves an Amazon GuardDuty detector specified by the detectorId.
+    * Retrieves aggregated statistics for your account. If you are a GuardDuty administrator, you can retrieve the statistics for all the resources associated with the active member accounts in your organization who have enabled EKS Runtime Monitoring and have the GuardDuty agent running on their EKS nodes.
+    */
+  def getCoverageStatistics(): Request[GetCoverageStatisticsResponse, AWSError] = js.native
+  def getCoverageStatistics(callback: js.Function2[/* err */ AWSError, /* data */ GetCoverageStatisticsResponse, Unit]): Request[GetCoverageStatisticsResponse, AWSError] = js.native
+  /**
+    * Retrieves aggregated statistics for your account. If you are a GuardDuty administrator, you can retrieve the statistics for all the resources associated with the active member accounts in your organization who have enabled EKS Runtime Monitoring and have the GuardDuty agent running on their EKS nodes.
+    */
+  def getCoverageStatistics(params: GetCoverageStatisticsRequest): Request[GetCoverageStatisticsResponse, AWSError] = js.native
+  def getCoverageStatistics(
+    params: GetCoverageStatisticsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetCoverageStatisticsResponse, Unit]
+  ): Request[GetCoverageStatisticsResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves an Amazon GuardDuty detector specified by the detectorId. There might be regional differences because some data sources might not be available in all the Amazon Web Services Regions where GuardDuty is presently supported. For more information, see Regions and endpoints.
     */
   def getDetector(): Request[GetDetectorResponse, AWSError] = js.native
   def getDetector(callback: js.Function2[/* err */ AWSError, /* data */ GetDetectorResponse, Unit]): Request[GetDetectorResponse, AWSError] = js.native
   /**
-    * Retrieves an Amazon GuardDuty detector specified by the detectorId.
+    * Retrieves an Amazon GuardDuty detector specified by the detectorId. There might be regional differences because some data sources might not be available in all the Amazon Web Services Regions where GuardDuty is presently supported. For more information, see Regions and endpoints.
     */
   def getDetector(params: GetDetectorRequest): Request[GetDetectorResponse, AWSError] = js.native
   def getDetector(
@@ -485,12 +499,12 @@ trait GuardDuty
   ): Request[GetInvitationsCountResponse, AWSError] = js.native
   
   /**
-    * Returns the details of the malware scan settings.
+    * Returns the details of the malware scan settings. There might be regional differences because some data sources might not be available in all the Amazon Web Services Regions where GuardDuty is presently supported. For more information, see Regions and endpoints.
     */
   def getMalwareScanSettings(): Request[GetMalwareScanSettingsResponse, AWSError] = js.native
   def getMalwareScanSettings(callback: js.Function2[/* err */ AWSError, /* data */ GetMalwareScanSettingsResponse, Unit]): Request[GetMalwareScanSettingsResponse, AWSError] = js.native
   /**
-    * Returns the details of the malware scan settings.
+    * Returns the details of the malware scan settings. There might be regional differences because some data sources might not be available in all the Amazon Web Services Regions where GuardDuty is presently supported. For more information, see Regions and endpoints.
     */
   def getMalwareScanSettings(params: GetMalwareScanSettingsRequest): Request[GetMalwareScanSettingsResponse, AWSError] = js.native
   def getMalwareScanSettings(
@@ -513,12 +527,12 @@ trait GuardDuty
   ): Request[GetMasterAccountResponse, AWSError] = js.native
   
   /**
-    * Describes which data sources are enabled for the member account's detector.
+    * Describes which data sources are enabled for the member account's detector. There might be regional differences because some data sources might not be available in all the Amazon Web Services Regions where GuardDuty is presently supported. For more information, see Regions and endpoints.
     */
   def getMemberDetectors(): Request[GetMemberDetectorsResponse, AWSError] = js.native
   def getMemberDetectors(callback: js.Function2[/* err */ AWSError, /* data */ GetMemberDetectorsResponse, Unit]): Request[GetMemberDetectorsResponse, AWSError] = js.native
   /**
-    * Describes which data sources are enabled for the member account's detector.
+    * Describes which data sources are enabled for the member account's detector. There might be regional differences because some data sources might not be available in all the Amazon Web Services Regions where GuardDuty is presently supported. For more information, see Regions and endpoints.
     */
   def getMemberDetectors(params: GetMemberDetectorsRequest): Request[GetMemberDetectorsResponse, AWSError] = js.native
   def getMemberDetectors(
@@ -595,6 +609,20 @@ trait GuardDuty
     params: InviteMembersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ InviteMembersResponse, Unit]
   ): Request[InviteMembersResponse, AWSError] = js.native
+  
+  /**
+    * Lists coverage details for your GuardDuty account. If you're a GuardDuty administrator, you can retrieve all resources associated with the active member accounts in your organization. Make sure the accounts have EKS Runtime Monitoring enabled and GuardDuty agent running on their EKS nodes.
+    */
+  def listCoverage(): Request[ListCoverageResponse, AWSError] = js.native
+  def listCoverage(callback: js.Function2[/* err */ AWSError, /* data */ ListCoverageResponse, Unit]): Request[ListCoverageResponse, AWSError] = js.native
+  /**
+    * Lists coverage details for your GuardDuty account. If you're a GuardDuty administrator, you can retrieve all resources associated with the active member accounts in your organization. Make sure the accounts have EKS Runtime Monitoring enabled and GuardDuty agent running on their EKS nodes.
+    */
+  def listCoverage(params: ListCoverageRequest): Request[ListCoverageResponse, AWSError] = js.native
+  def listCoverage(
+    params: ListCoverageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListCoverageResponse, Unit]
+  ): Request[ListCoverageResponse, AWSError] = js.native
   
   /**
     * Lists detectorIds of all the existing Amazon GuardDuty detector resources.
@@ -737,6 +765,20 @@ trait GuardDuty
   ): Request[ListThreatIntelSetsResponse, AWSError] = js.native
   
   /**
+    * Initiates the malware scan. Invoking this API will automatically create the Service-linked role  in the corresponding account.
+    */
+  def startMalwareScan(): Request[StartMalwareScanResponse, AWSError] = js.native
+  def startMalwareScan(callback: js.Function2[/* err */ AWSError, /* data */ StartMalwareScanResponse, Unit]): Request[StartMalwareScanResponse, AWSError] = js.native
+  /**
+    * Initiates the malware scan. Invoking this API will automatically create the Service-linked role  in the corresponding account.
+    */
+  def startMalwareScan(params: StartMalwareScanRequest): Request[StartMalwareScanResponse, AWSError] = js.native
+  def startMalwareScan(
+    params: StartMalwareScanRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartMalwareScanResponse, Unit]
+  ): Request[StartMalwareScanResponse, AWSError] = js.native
+  
+  /**
     * Turns on GuardDuty monitoring of the specified member accounts. Use this operation to restart monitoring of accounts that you stopped monitoring with the StopMonitoringMembers operation.
     */
   def startMonitoringMembers(): Request[StartMonitoringMembersResponse, AWSError] = js.native
@@ -751,12 +793,12 @@ trait GuardDuty
   ): Request[StartMonitoringMembersResponse, AWSError] = js.native
   
   /**
-    * Stops GuardDuty monitoring for the specified member accounts. Use the StartMonitoringMembers operation to restart monitoring for those accounts.
+    * Stops GuardDuty monitoring for the specified member accounts. Use the StartMonitoringMembers operation to restart monitoring for those accounts. With autoEnableOrganizationMembers configuration for your organization set to ALL, you'll receive an error if you attempt to stop monitoring the member accounts in your organization.
     */
   def stopMonitoringMembers(): Request[StopMonitoringMembersResponse, AWSError] = js.native
   def stopMonitoringMembers(callback: js.Function2[/* err */ AWSError, /* data */ StopMonitoringMembersResponse, Unit]): Request[StopMonitoringMembersResponse, AWSError] = js.native
   /**
-    * Stops GuardDuty monitoring for the specified member accounts. Use the StartMonitoringMembers operation to restart monitoring for those accounts.
+    * Stops GuardDuty monitoring for the specified member accounts. Use the StartMonitoringMembers operation to restart monitoring for those accounts. With autoEnableOrganizationMembers configuration for your organization set to ALL, you'll receive an error if you attempt to stop monitoring the member accounts in your organization.
     */
   def stopMonitoringMembers(params: StopMonitoringMembersRequest): Request[StopMonitoringMembersResponse, AWSError] = js.native
   def stopMonitoringMembers(
@@ -807,12 +849,12 @@ trait GuardDuty
   ): Request[UntagResourceResponse, AWSError] = js.native
   
   /**
-    * Updates the Amazon GuardDuty detector specified by the detectorId.
+    * Updates the Amazon GuardDuty detector specified by the detectorId. There might be regional differences because some data sources might not be available in all the Amazon Web Services Regions where GuardDuty is presently supported. For more information, see Regions and endpoints.
     */
   def updateDetector(): Request[UpdateDetectorResponse, AWSError] = js.native
   def updateDetector(callback: js.Function2[/* err */ AWSError, /* data */ UpdateDetectorResponse, Unit]): Request[UpdateDetectorResponse, AWSError] = js.native
   /**
-    * Updates the Amazon GuardDuty detector specified by the detectorId.
+    * Updates the Amazon GuardDuty detector specified by the detectorId. There might be regional differences because some data sources might not be available in all the Amazon Web Services Regions where GuardDuty is presently supported. For more information, see Regions and endpoints.
     */
   def updateDetector(params: UpdateDetectorRequest): Request[UpdateDetectorResponse, AWSError] = js.native
   def updateDetector(
@@ -863,12 +905,12 @@ trait GuardDuty
   ): Request[UpdateIPSetResponse, AWSError] = js.native
   
   /**
-    * Updates the malware scan settings.
+    * Updates the malware scan settings. There might be regional differences because some data sources might not be available in all the Amazon Web Services Regions where GuardDuty is presently supported. For more information, see Regions and endpoints.
     */
   def updateMalwareScanSettings(): Request[UpdateMalwareScanSettingsResponse, AWSError] = js.native
   def updateMalwareScanSettings(callback: js.Function2[/* err */ AWSError, /* data */ UpdateMalwareScanSettingsResponse, Unit]): Request[UpdateMalwareScanSettingsResponse, AWSError] = js.native
   /**
-    * Updates the malware scan settings.
+    * Updates the malware scan settings. There might be regional differences because some data sources might not be available in all the Amazon Web Services Regions where GuardDuty is presently supported. For more information, see Regions and endpoints.
     */
   def updateMalwareScanSettings(params: UpdateMalwareScanSettingsRequest): Request[UpdateMalwareScanSettingsResponse, AWSError] = js.native
   def updateMalwareScanSettings(
@@ -877,12 +919,12 @@ trait GuardDuty
   ): Request[UpdateMalwareScanSettingsResponse, AWSError] = js.native
   
   /**
-    * Contains information on member accounts to be updated.
+    * Contains information on member accounts to be updated. There might be regional differences because some data sources might not be available in all the Amazon Web Services Regions where GuardDuty is presently supported. For more information, see Regions and endpoints.
     */
   def updateMemberDetectors(): Request[UpdateMemberDetectorsResponse, AWSError] = js.native
   def updateMemberDetectors(callback: js.Function2[/* err */ AWSError, /* data */ UpdateMemberDetectorsResponse, Unit]): Request[UpdateMemberDetectorsResponse, AWSError] = js.native
   /**
-    * Contains information on member accounts to be updated.
+    * Contains information on member accounts to be updated. There might be regional differences because some data sources might not be available in all the Amazon Web Services Regions where GuardDuty is presently supported. For more information, see Regions and endpoints.
     */
   def updateMemberDetectors(params: UpdateMemberDetectorsRequest): Request[UpdateMemberDetectorsResponse, AWSError] = js.native
   def updateMemberDetectors(
@@ -891,14 +933,14 @@ trait GuardDuty
   ): Request[UpdateMemberDetectorsResponse, AWSError] = js.native
   
   /**
-    * Updates the delegated administrator account with the values provided.
+    * Configures the delegated administrator account with the provided values. You must provide the value for either autoEnableOrganizationMembers or autoEnable.  There might be regional differences because some data sources might not be available in all the Amazon Web Services Regions where GuardDuty is presently supported. For more information, see Regions and endpoints.
     */
   def updateOrganizationConfiguration(): Request[UpdateOrganizationConfigurationResponse, AWSError] = js.native
   def updateOrganizationConfiguration(
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateOrganizationConfigurationResponse, Unit]
   ): Request[UpdateOrganizationConfigurationResponse, AWSError] = js.native
   /**
-    * Updates the delegated administrator account with the values provided.
+    * Configures the delegated administrator account with the provided values. You must provide the value for either autoEnableOrganizationMembers or autoEnable.  There might be regional differences because some data sources might not be available in all the Amazon Web Services Regions where GuardDuty is presently supported. For more information, see Regions and endpoints.
     */
   def updateOrganizationConfiguration(params: UpdateOrganizationConfigurationRequest): Request[UpdateOrganizationConfigurationResponse, AWSError] = js.native
   def updateOrganizationConfiguration(

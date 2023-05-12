@@ -12,7 +12,7 @@ trait Eula extends StObject {
   var content: js.UndefOr[String] = js.undefined
   
   /**
-    * The Unix epoch timestamp in seconds for when the resource was created.
+    * The ISO timestamp in seconds for when the resource was created.
     */
   var createdAt: js.UndefOr[js.Date] = js.undefined
   
@@ -27,7 +27,7 @@ trait Eula extends StObject {
   var name: js.UndefOr[EulaName] = js.undefined
   
   /**
-    * The Unix epoch timestamp in seconds for when the resource was updated.
+    * The ISO timestamp in seconds for when the resource was updated.
     */
   var updatedAt: js.UndefOr[js.Date] = js.undefined
 }

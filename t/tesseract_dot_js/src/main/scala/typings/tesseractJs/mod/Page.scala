@@ -6,13 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Page extends StObject {
   
-  var blocks: js.Array[Block]
+  var blocks: js.Array[Block] | Null
   
   var box: String | Null
   
   var confidence: Double
   
   var hocr: String | Null
+  
+  var imageBinary: String | Null
+  
+  var imageColor: String | Null
+  
+  var imageGrey: String | Null
   
   var lines: js.Array[Line]
   
@@ -22,7 +28,11 @@ trait Page extends StObject {
   
   var paragraphs: js.Array[Paragraph]
   
+  var pdf: js.Array[Double] | Null
+  
   var psm: String
+  
+  var rotateRadians: Double | Null
   
   var sd: String | Null
   
@@ -41,7 +51,6 @@ trait Page extends StObject {
 object Page {
   
   inline def apply(
-    blocks: js.Array[Block],
     confidence: Double,
     lines: js.Array[Line],
     oem: String,
@@ -53,7 +62,7 @@ object Page {
     version: String,
     words: js.Array[Word]
   ): Page = {
-    val __obj = js.Dynamic.literal(blocks = blocks.asInstanceOf[js.Any], confidence = confidence.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any], oem = oem.asInstanceOf[js.Any], osd = osd.asInstanceOf[js.Any], paragraphs = paragraphs.asInstanceOf[js.Any], psm = psm.asInstanceOf[js.Any], symbols = symbols.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], words = words.asInstanceOf[js.Any], box = null, hocr = null, sd = null, tsv = null, unlv = null)
+    val __obj = js.Dynamic.literal(confidence = confidence.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any], oem = oem.asInstanceOf[js.Any], osd = osd.asInstanceOf[js.Any], paragraphs = paragraphs.asInstanceOf[js.Any], psm = psm.asInstanceOf[js.Any], symbols = symbols.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], words = words.asInstanceOf[js.Any], blocks = null, box = null, hocr = null, imageBinary = null, imageColor = null, imageGrey = null, pdf = null, rotateRadians = null, sd = null, tsv = null, unlv = null)
     __obj.asInstanceOf[Page]
   }
   
@@ -61,6 +70,8 @@ object Page {
   implicit open class MutableBuilder[Self <: Page] (val x: Self) extends AnyVal {
     
     inline def setBlocks(value: js.Array[Block]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
+    
+    inline def setBlocksNull: Self = StObject.set(x, "blocks", null)
     
     inline def setBlocksVarargs(value: Block*): Self = StObject.set(x, "blocks", js.Array(value*))
     
@@ -74,6 +85,18 @@ object Page {
     
     inline def setHocrNull: Self = StObject.set(x, "hocr", null)
     
+    inline def setImageBinary(value: String): Self = StObject.set(x, "imageBinary", value.asInstanceOf[js.Any])
+    
+    inline def setImageBinaryNull: Self = StObject.set(x, "imageBinary", null)
+    
+    inline def setImageColor(value: String): Self = StObject.set(x, "imageColor", value.asInstanceOf[js.Any])
+    
+    inline def setImageColorNull: Self = StObject.set(x, "imageColor", null)
+    
+    inline def setImageGrey(value: String): Self = StObject.set(x, "imageGrey", value.asInstanceOf[js.Any])
+    
+    inline def setImageGreyNull: Self = StObject.set(x, "imageGrey", null)
+    
     inline def setLines(value: js.Array[Line]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
     inline def setLinesVarargs(value: Line*): Self = StObject.set(x, "lines", js.Array(value*))
@@ -86,7 +109,17 @@ object Page {
     
     inline def setParagraphsVarargs(value: Paragraph*): Self = StObject.set(x, "paragraphs", js.Array(value*))
     
+    inline def setPdf(value: js.Array[Double]): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
+    
+    inline def setPdfNull: Self = StObject.set(x, "pdf", null)
+    
+    inline def setPdfVarargs(value: Double*): Self = StObject.set(x, "pdf", js.Array(value*))
+    
     inline def setPsm(value: String): Self = StObject.set(x, "psm", value.asInstanceOf[js.Any])
+    
+    inline def setRotateRadians(value: Double): Self = StObject.set(x, "rotateRadians", value.asInstanceOf[js.Any])
+    
+    inline def setRotateRadiansNull: Self = StObject.set(x, "rotateRadians", null)
     
     inline def setSd(value: String): Self = StObject.set(x, "sd", value.asInstanceOf[js.Any])
     

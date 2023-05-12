@@ -1,27 +1,39 @@
 package typings.photoshop.domConstantsMod
 
-import typings.photoshop.photoshopStrings.bitDepth1
-import typings.photoshop.photoshopStrings.bitDepth16
-import typings.photoshop.photoshopStrings.bitDepth32
-import typings.photoshop.photoshopStrings.bitDepth8
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.photoshop.photoshopStrings.bitDepth1
-  - typings.photoshop.photoshopStrings.bitDepth8
-  - typings.photoshop.photoshopStrings.bitDepth16
-  - typings.photoshop.photoshopStrings.bitDepth32
-*/
-trait BitsPerChannelType extends StObject
-object BitsPerChannelType {
+@js.native
+sealed trait BitsPerChannelType extends StObject
+@JSImport("photoshop/dom/Constants", "BitsPerChannelType")
+@js.native
+object BitsPerChannelType extends StObject {
   
-  inline def EIGHT: bitDepth8 = "bitDepth8".asInstanceOf[bitDepth8]
+  @JSBracketAccess
+  def apply(value: String): js.UndefOr[BitsPerChannelType & String] = js.native
   
-  inline def ONE: bitDepth1 = "bitDepth1".asInstanceOf[bitDepth1]
+  @js.native
+  sealed trait EIGHT
+    extends StObject
+       with BitsPerChannelType
+  /* "bitDepth8" */ val EIGHT: typings.photoshop.domConstantsMod.BitsPerChannelType.EIGHT & String = js.native
   
-  inline def SIXTEEN: bitDepth16 = "bitDepth16".asInstanceOf[bitDepth16]
+  @js.native
+  sealed trait ONE
+    extends StObject
+       with BitsPerChannelType
+  /* "bitDepth1" */ val ONE: typings.photoshop.domConstantsMod.BitsPerChannelType.ONE & String = js.native
   
-  inline def THIRTYTWO: bitDepth32 = "bitDepth32".asInstanceOf[bitDepth32]
+  @js.native
+  sealed trait SIXTEEN
+    extends StObject
+       with BitsPerChannelType
+  /* "bitDepth16" */ val SIXTEEN: typings.photoshop.domConstantsMod.BitsPerChannelType.SIXTEEN & String = js.native
+  
+  @js.native
+  sealed trait THIRTYTWO
+    extends StObject
+       with BitsPerChannelType
+  /* "bitDepth32" */ val THIRTYTWO: typings.photoshop.domConstantsMod.BitsPerChannelType.THIRTYTWO & String = js.native
 }

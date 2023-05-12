@@ -27,7 +27,7 @@ trait DescribeGameSessionDetailsInput extends StObject {
   var Limit: js.UndefOr[PositiveInteger] = js.undefined
   
   /**
-    * A fleet location to get game sessions for. You can specify a fleet's home Region or a remote location. Use the Amazon Web Services Region code format, such as us-west-2. 
+    * A fleet location to get game session details for. You can specify a fleet's home Region or a remote location. Use the Amazon Web Services Region code format, such as us-west-2. 
     */
   var Location: js.UndefOr[LocationStringModel] = js.undefined
   

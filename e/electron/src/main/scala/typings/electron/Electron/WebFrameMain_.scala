@@ -116,7 +116,7 @@ trait WebFrameMain_ extends EventEmitter {
   
   /**
     * Send a message to the renderer process, optionally transferring ownership of
-    * zero or more [`MessagePortMain`][] objects.
+    * zero or more `MessagePortMain` objects.
     *
     * The transferred `MessagePortMain` objects will be available in the renderer
     * process by accessing the `ports` property of the emitted event. When they arrive

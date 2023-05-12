@@ -1,7 +1,7 @@
 
 # Scala.js typings for fullcalendar__core
 
-Typings are for version 5.11.3
+Typings are for version 6.1.7
 
 ## Library description:
 FullCalendar core package for rendering a calendar

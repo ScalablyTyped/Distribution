@@ -16,11 +16,11 @@ trait TUint8Array
   extends StObject
      with TSchema {
   
+  var instanceOf: Uint8Array = js.native
+  
   var maxByteLength: js.UndefOr[Double] = js.native
   
   var minByteLength: js.UndefOr[Double] = js.native
-  
-  var specialized: Uint8Array = js.native
   
   @JSName("static")
   var static_TUint8Array: js.typedarray.Uint8Array = js.native

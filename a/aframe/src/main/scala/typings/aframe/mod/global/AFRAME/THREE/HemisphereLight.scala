@@ -8,9 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("AFRAME.THREE.HemisphereLight")
 @js.native
 /**
-  * @param skyColor
-  * @param groundColor
-  * @param [intensity=1]
+  * Creates a new {@link HemisphereLight}.
+  * @param skyColor Hexadecimal color of the sky. Expects a `Integer`. Default `0xffffff` _(white)_.
+  * @param groundColor Hexadecimal color of the ground. Expects a `Integer`. Default `0xffffff` _(white)_.
+  * @param intensity Numeric value of the light's strength/intensity. Expects a `Float`. Default `1`.
   */
 open class HemisphereLight ()
   extends typings.three.mod.HemisphereLight

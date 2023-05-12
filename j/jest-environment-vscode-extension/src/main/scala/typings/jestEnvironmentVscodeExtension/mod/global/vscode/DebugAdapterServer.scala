@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class DebugAdapterServer protected ()
   extends typings.vscode.mod.DebugAdapterServer {
   /**
-    * Create a description for a debug adapter running as a socket based server.
-    */
+  		 * Create a description for a debug adapter running as a socket based server.
+  		 */
   def this(port: Double) = this()
   def this(port: Double, host: String) = this()
 }

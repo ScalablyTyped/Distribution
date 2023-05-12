@@ -50,7 +50,7 @@ trait Dock extends StObject {
   def getBadge(): String = js.native
   
   /**
-    * The application's [dock menu][dock-menu].
+    * The application's dock menu.
     *
     * @platform darwin
     */
@@ -86,7 +86,7 @@ trait Dock extends StObject {
   def setIcon(image: NativeImage_): Unit = js.native
   
   /**
-    * Sets the application's [dock menu][dock-menu].
+    * Sets the application's dock menu.
     *
     * @platform darwin
     */

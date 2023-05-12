@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ApplicationSummary extends StObject {
   
   /**
-    * 
+    * The Amazon Resource Name (ARN) of the application.
     */
   var Arn: js.UndefOr[SsmSapArn] = js.undefined
   
   /**
-    * 
+    * The ID of the application.
     */
   var Id: js.UndefOr[ApplicationId] = js.undefined
   
   /**
-    * 
+    * The tags on the application.
     */
   var Tags: js.UndefOr[TagMap] = js.undefined
   
   /**
-    * 
+    * The type of the application.
     */
   var Type: js.UndefOr[ApplicationType] = js.undefined
 }

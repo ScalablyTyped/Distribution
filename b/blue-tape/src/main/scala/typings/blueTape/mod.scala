@@ -1,7 +1,9 @@
 package typings.blueTape
 
 import typings.node.NodeJS.ReadableStream
+import typings.tape.anon.Autoclose
 import typings.tape.anon.FnCall
+import typings.tape.anon.noOnlybooleanundefinedexi
 import typings.tape.mod.StreamOptions
 import typings.tape.mod.TestCase
 import typings.tape.mod.TestOptions
@@ -26,9 +28,13 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def createHarness(): FnCall = ^.asInstanceOf[js.Dynamic].applyDynamic("createHarness")().asInstanceOf[FnCall]
+  inline def createHarness(opts: Autoclose): FnCall = ^.asInstanceOf[js.Dynamic].applyDynamic("createHarness")(opts.asInstanceOf[js.Any]).asInstanceOf[FnCall]
   
   inline def createStream(): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")().asInstanceOf[ReadableStream]
   inline def createStream(opts: StreamOptions): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(opts.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+  
+  inline def getHarness(): FnCall = ^.asInstanceOf[js.Dynamic].applyDynamic("getHarness")().asInstanceOf[FnCall]
+  inline def getHarness(opts: noOnlybooleanundefinedexi): FnCall = ^.asInstanceOf[js.Dynamic].applyDynamic("getHarness")(opts.asInstanceOf[js.Any]).asInstanceOf[FnCall]
   
   inline def onFailure(cb: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onFailure")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

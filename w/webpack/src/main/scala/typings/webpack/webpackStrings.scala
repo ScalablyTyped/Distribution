@@ -252,6 +252,10 @@ object webpackStrings {
   inline def __webpack_require__Doty: __webpack_require__Doty = "__webpack_require__.y".asInstanceOf[__webpack_require__Doty]
   
   @js.native
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @js.native
   sealed trait abort
     extends StObject
        with HotUpdateStatus
@@ -300,6 +304,30 @@ object webpackStrings {
   inline def arrow: arrow = "arrow".asInstanceOf[arrow]
   
   @js.native
+  sealed trait ascii extends StObject
+  inline def ascii: ascii = "ascii".asInstanceOf[ascii]
+  
+  @js.native
+  sealed trait asset extends StObject
+  inline def asset: asset = "asset".asInstanceOf[asset]
+  
+  @js.native
+  sealed trait assetSlashinline extends StObject
+  inline def assetSlashinline: assetSlashinline = "asset/inline".asInstanceOf[assetSlashinline]
+  
+  @js.native
+  sealed trait `assetSlashraw-data-url` extends StObject
+  inline def `assetSlashraw-data-url`: `assetSlashraw-data-url` = "asset/raw-data-url".asInstanceOf[`assetSlashraw-data-url`]
+  
+  @js.native
+  sealed trait assetSlashresource extends StObject
+  inline def assetSlashresource: assetSlashresource = "asset/resource".asInstanceOf[assetSlashresource]
+  
+  @js.native
+  sealed trait assetSlashsource extends StObject
+  inline def assetSlashsource: assetSlashsource = "asset/source".asInstanceOf[assetSlashsource]
+  
+  @js.native
   sealed trait assign
     extends StObject
        with ExternalsType
@@ -324,12 +352,20 @@ object webpackStrings {
   inline def base64: base64 = "base64".asInstanceOf[base64]
   
   @js.native
+  sealed trait binary extends StObject
+  inline def binary: binary = "binary".asInstanceOf[binary]
+  
+  @js.native
   sealed trait boolean extends StObject
   inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
   sealed trait brotli extends StObject
   inline def brotli: brotli = "brotli".asInstanceOf[brotli]
+  
+  @js.native
+  sealed trait buffer extends StObject
+  inline def buffer: buffer = "buffer".asInstanceOf[buffer]
   
   @js.native
   sealed trait call extends StObject
@@ -372,6 +408,30 @@ object webpackStrings {
     extends StObject
        with ExternalsType
   inline def commonjs2: commonjs2 = "commonjs2".asInstanceOf[commonjs2]
+  
+  @js.native
+  sealed trait `consume-shared-module` extends StObject
+  inline def `consume-shared-module`: `consume-shared-module` = "consume-shared-module".asInstanceOf[`consume-shared-module`]
+  
+  @js.native
+  sealed trait continue extends StObject
+  inline def continue: continue = "continue".asInstanceOf[continue]
+  
+  @js.native
+  sealed trait cooked extends StObject
+  inline def cooked: cooked = "cooked".asInstanceOf[cooked]
+  
+  @js.native
+  sealed trait css extends StObject
+  inline def css: css = "css".asInstanceOf[css]
+  
+  @js.native
+  sealed trait cssSlashglobal extends StObject
+  inline def cssSlashglobal: cssSlashglobal = "css/global".asInstanceOf[cssSlashglobal]
+  
+  @js.native
+  sealed trait cssSlashmodule extends StObject
+  inline def cssSlashmodule: cssSlashmodule = "css/module".asInstanceOf[cssSlashmodule]
   
   @js.native
   sealed trait declined extends StObject
@@ -462,6 +522,10 @@ object webpackStrings {
   inline def fail: fail = "fail".asInstanceOf[fail]
   
   @js.native
+  sealed trait `fallback-module` extends StObject
+  inline def `fallback-module`: `fallback-module` = "fallback-module".asInstanceOf[`fallback-module`]
+  
+  @js.native
   sealed trait filesystem extends StObject
   inline def filesystem: filesystem = "filesystem".asInstanceOf[filesystem]
   
@@ -534,6 +598,22 @@ object webpackStrings {
   inline def `invalid-value`: `invalid-value` = "invalid-value".asInstanceOf[`invalid-value`]
   
   @js.native
+  sealed trait javascriptSlashauto extends StObject
+  inline def javascriptSlashauto: javascriptSlashauto = "javascript/auto".asInstanceOf[javascriptSlashauto]
+  
+  @js.native
+  sealed trait javascriptSlashdynamic extends StObject
+  inline def javascriptSlashdynamic: javascriptSlashdynamic = "javascript/dynamic".asInstanceOf[javascriptSlashdynamic]
+  
+  @js.native
+  sealed trait javascriptSlashesm extends StObject
+  inline def javascriptSlashesm: javascriptSlashesm = "javascript/esm".asInstanceOf[javascriptSlashesm]
+  
+  @js.native
+  sealed trait json extends StObject
+  inline def json: json = "json".asInstanceOf[json]
+  
+  @js.native
   sealed trait jsonp
     extends StObject
        with ExternalsType
@@ -548,6 +628,10 @@ object webpackStrings {
     extends StObject
        with ContextMode
   inline def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
+  
+  @js.native
+  sealed trait `lazy-compilation-proxy` extends StObject
+  inline def `lazy-compilation-proxy`: `lazy-compilation-proxy` = "lazy-compilation-proxy".asInstanceOf[`lazy-compilation-proxy`]
   
   @js.native
   sealed trait `lazy-once`
@@ -688,8 +772,16 @@ object webpackStrings {
   inline def promise: promise = "promise".asInstanceOf[promise]
   
   @js.native
+  sealed trait `provide-module` extends StObject
+  inline def `provide-module`: `provide-module` = "provide-module".asInstanceOf[`provide-module`]
+  
+  @js.native
   sealed trait provided extends StObject
   inline def provided: provided = "provided".asInstanceOf[provided]
+  
+  @js.native
+  sealed trait raw extends StObject
+  inline def raw: raw = "raw".asInstanceOf[raw]
   
   @js.native
   sealed trait ready
@@ -710,6 +802,10 @@ object webpackStrings {
   inline def relative: relative = "relative".asInstanceOf[relative]
   
   @js.native
+  sealed trait `remote-module` extends StObject
+  inline def `remote-module`: `remote-module` = "remote-module".asInstanceOf[`remote-module`]
+  
+  @js.native
   sealed trait require extends StObject
   inline def require: require = "require".asInstanceOf[require]
   
@@ -724,6 +820,10 @@ object webpackStrings {
   @js.native
   sealed trait `root-of-chunk` extends StObject
   inline def `root-of-chunk`: `root-of-chunk` = "root-of-chunk".asInstanceOf[`root-of-chunk`]
+  
+  @js.native
+  sealed trait runtime extends StObject
+  inline def runtime: runtime = "runtime".asInstanceOf[runtime]
   
   @js.native
   sealed trait script
@@ -764,6 +864,10 @@ object webpackStrings {
   @js.native
   sealed trait statements extends StObject
   inline def statements: statements = "statements".asInstanceOf[statements]
+  
+  @js.native
+  sealed trait stop extends StObject
+  inline def stop: stop = "stop".asInstanceOf[stop]
   
   @js.native
   sealed trait strict extends StObject
@@ -814,6 +918,14 @@ object webpackStrings {
   inline def `type`: `type` = "type".asInstanceOf[`type`]
   
   @js.native
+  sealed trait `ucs-2` extends StObject
+  inline def `ucs-2`: `ucs-2` = "ucs-2".asInstanceOf[`ucs-2`]
+  
+  @js.native
+  sealed trait ucs2 extends StObject
+  inline def ucs2: ucs2 = "ucs2".asInstanceOf[ucs2]
+  
+  @js.native
   sealed trait umd
     extends StObject
        with ExternalsType
@@ -852,6 +964,18 @@ object webpackStrings {
   inline def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
   
   @js.native
+  sealed trait `utf-8` extends StObject
+  inline def `utf-8`: `utf-8` = "utf-8".asInstanceOf[`utf-8`]
+  
+  @js.native
+  sealed trait utf16le extends StObject
+  inline def utf16le: utf16le = "utf16le".asInstanceOf[utf16le]
+  
+  @js.native
+  sealed trait utf8 extends StObject
+  inline def utf8: utf8 = "utf8".asInstanceOf[utf8]
+  
+  @js.native
   sealed trait `var`
     extends StObject
        with ExternalsType
@@ -880,6 +1004,14 @@ object webpackStrings {
     extends StObject
        with ContextMode
   inline def weak: weak = "weak".asInstanceOf[weak]
+  
+  @js.native
+  sealed trait webassemblySlashasync extends StObject
+  inline def webassemblySlashasync: webassemblySlashasync = "webassembly/async".asInstanceOf[webassemblySlashasync]
+  
+  @js.native
+  sealed trait webassemblySlashsync extends StObject
+  inline def webassemblySlashsync: webassemblySlashsync = "webassembly/sync".asInstanceOf[webassemblySlashsync]
   
   @js.native
   sealed trait webpackChunk extends StObject

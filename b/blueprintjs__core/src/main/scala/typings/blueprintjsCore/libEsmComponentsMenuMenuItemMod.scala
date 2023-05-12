@@ -2,14 +2,19 @@ package typings.blueprintjsCore
 
 import typings.blueprintjsCore.anon.PartialIPopoverProps
 import typings.blueprintjsCore.anon.PartialMenuProps
+import typings.blueprintjsCore.blueprintjsCoreStrings.listitem
 import typings.blueprintjsCore.blueprintjsCoreStrings.listoption
 import typings.blueprintjsCore.blueprintjsCoreStrings.menuitem
+import typings.blueprintjsCore.blueprintjsCoreStrings.none
 import typings.blueprintjsCore.libEsmCommonMod.AbstractPureComponent2
-import typings.blueprintjsCore.libEsmCommonPropsMod.IActionProps
+import typings.blueprintjsCore.libEsmCommonPropsMod.ActionProps
+import typings.blueprintjsCore.libEsmCommonPropsMod.IElementRefProps
 import typings.blueprintjsCore.libEsmCommonPropsMod.ILinkProps
 import typings.react.mod.AnchorHTMLAttributes
 import typings.react.mod.ReactNode
 import typings.std.HTMLAnchorElement
+import typings.std.HTMLElement
+import typings.std.HTMLLIElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,10 +50,13 @@ object libEsmComponentsMenuMenuItemMod {
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  trait IMenuItemProps
+  type IMenuItemProps = MenuItemProps
+  
+  trait MenuItemProps
     extends StObject
-       with IActionProps
-       with ILinkProps {
+       with ActionProps[HTMLElement]
+       with ILinkProps
+       with IElementRefProps[HTMLLIElement] {
     
     /**
       * Whether this item should render with an active appearance. Used to indicate keyboard focus.
@@ -117,11 +125,25 @@ object libEsmComponentsMenuMenuItemMod {
       * `<li role="option"`
       *     `<a role=undefined`
       *
-      *  which is proper role structure for a `<ul role="listbox"` parent, or a `<select>` parent.
+      * which is proper role structure for a `<ul role="listbox"` parent, or a `<select>` parent.
+      *
+      * If `listitem`, role structure becomes:
+      *
+      * `<li role=undefined`
+      *     `<a role=undefined`
+      *
+      * which can be used if this item is within a basic `<ul/>` (or `role="list"`) parent.
+      *
+      * If `none`, role structure becomes:
+      *
+      * `<li role="none"`
+      *     `<a role=undefined`
+      *
+      * which can be used if wrapping this item in a custom `<li>` parent.
       *
       * @default "menuitem"
       */
-    var roleStructure: js.UndefOr[menuitem | listoption] = js.undefined
+    var roleStructure: js.UndefOr[menuitem | listoption | listitem | none] = js.undefined
     
     /**
       * Whether this item is selected. This will set the `aria-selected` attribute.
@@ -146,7 +168,7 @@ object libEsmComponentsMenuMenuItemMod {
       * @default "a"
       */
     var tagName: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
       ] = js.undefined
     
     /**
@@ -156,17 +178,17 @@ object libEsmComponentsMenuMenuItemMod {
     
     /** Item text, required for usability. */
     @JSName("text")
-    var text_IMenuItemProps: ReactNode
+    var text_MenuItemProps: ReactNode
   }
-  object IMenuItemProps {
+  object MenuItemProps {
     
-    inline def apply(): IMenuItemProps = {
+    inline def apply(): MenuItemProps = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[IMenuItemProps]
+      __obj.asInstanceOf[MenuItemProps]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: IMenuItemProps] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: MenuItemProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -200,7 +222,7 @@ object libEsmComponentsMenuMenuItemMod {
       
       inline def setPopoverPropsUndefined: Self = StObject.set(x, "popoverProps", js.undefined)
       
-      inline def setRoleStructure(value: menuitem | listoption): Self = StObject.set(x, "roleStructure", value.asInstanceOf[js.Any])
+      inline def setRoleStructure(value: menuitem | listoption | listitem | none): Self = StObject.set(x, "roleStructure", value.asInstanceOf[js.Any])
       
       inline def setRoleStructureUndefined: Self = StObject.set(x, "roleStructure", js.undefined)
       
@@ -217,7 +239,7 @@ object libEsmComponentsMenuMenuItemMod {
       inline def setSubmenuPropsUndefined: Self = StObject.set(x, "submenuProps", js.undefined)
       
       inline def setTagName(
-        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
       ): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       
       inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
@@ -231,6 +253,4 @@ object libEsmComponentsMenuMenuItemMod {
       inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
-  
-  type MenuItemProps = IMenuItemProps
 }

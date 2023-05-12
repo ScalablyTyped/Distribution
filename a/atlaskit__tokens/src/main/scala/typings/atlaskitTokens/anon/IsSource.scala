@@ -18,7 +18,7 @@ trait IsSource extends StObject {
   
   var path: js.Array[String]
   
-  var value: String
+  var value: Double
 }
 object IsSource {
   
@@ -29,7 +29,7 @@ object IsSource {
     name: String,
     original: Value,
     path: js.Array[String],
-    value: String
+    value: Double
   ): IsSource = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], isSource = isSource.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], original = original.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsSource]
@@ -52,6 +52,6 @@ object IsSource {
     
     inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value*))
     
-    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.pixiTextBitmap
 
+import typings.pixiColor.libColorMod.ColorSource
 import typings.pixiText.libConstMod.TEXT_GRADIENT
 import typings.pixiText.libTextStyleMod.TextStyleAlign
 import typings.pixiText.libTextStyleMod.TextStyleFill
@@ -216,7 +217,7 @@ object anon {
     
     var maxWidth: js.UndefOr[Double] = js.undefined
     
-    var tint: js.UndefOr[Double] = js.undefined
+    var tint: js.UndefOr[ColorSource] = js.undefined
   }
   object PartialIBitmapTextStyle {
     
@@ -248,9 +249,11 @@ object anon {
       
       inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      inline def setTint(value: Double): Self = StObject.set(x, "tint", value.asInstanceOf[js.Any])
+      inline def setTint(value: ColorSource): Self = StObject.set(x, "tint", value.asInstanceOf[js.Any])
       
       inline def setTintUndefined: Self = StObject.set(x, "tint", js.undefined)
+      
+      inline def setTintVarargs(value: Double*): Self = StObject.set(x, "tint", js.Array(value*))
     }
   }
   

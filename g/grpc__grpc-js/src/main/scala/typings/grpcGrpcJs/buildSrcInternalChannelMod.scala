@@ -16,6 +16,7 @@ import typings.grpcGrpcJs.buildSrcResolverMod.CallConfig
 import typings.grpcGrpcJs.buildSrcResolvingCallMod.ResolvingCall
 import typings.grpcGrpcJs.buildSrcRetryingCallMod.RetryingCall
 import typings.grpcGrpcJs.buildSrcServerCallMod.ServerSurfaceCall
+import typings.grpcGrpcJs.buildSrcSubchannelInterfaceMod.BaseSubchannelWrapper
 import typings.grpcGrpcJs.grpcGrpcJsStrings.ERROR
 import typings.grpcGrpcJs.grpcGrpcJsStrings.NONE
 import typings.grpcGrpcJs.grpcGrpcJsStrings.SUCCESS
@@ -185,6 +186,8 @@ object buildSrcInternalChannelMod {
     
     def getTarget(): String = js.native
     
+    /* private */ var keepaliveTime: Any = js.native
+    
     /* private */ val options: Any = js.native
     
     /* private */ var originalTarget: Any = js.native
@@ -197,6 +200,8 @@ object buildSrcInternalChannelMod {
     
     /* private */ var removeConnectivityStateWatcher: Any = js.native
     
+    def removeWrappedSubchannel(wrappedSubchannel: ChannelSubchannelWrapper): Unit = js.native
+    
     /* private */ var resolvingLoadBalancer: Any = js.native
     
     /* private */ var retryBufferTracker: Any = js.native
@@ -204,6 +209,8 @@ object buildSrcInternalChannelMod {
     /* private */ var subchannelPool: Any = js.native
     
     /* private */ var target: Any = js.native
+    
+    def throttleKeepalive(newKeepaliveTime: Double): Unit = js.native
     
     /* private */ var trace: Any = js.native
     
@@ -219,6 +226,18 @@ object buildSrcInternalChannelMod {
       deadline: Double,
       callback: js.Function1[/* error */ js.UndefOr[js.Error], Unit]
     ): Unit = js.native
+    
+    /* private */ var wrappedSubchannels: Any = js.native
+  }
+  
+  @js.native
+  trait ChannelSubchannelWrapper extends BaseSubchannelWrapper {
+    
+    /* private */ var channel: Any = js.native
+    
+    /* private */ var refCount: Any = js.native
+    
+    /* private */ var subchannelStateListener: Any = js.native
   }
   
   trait ErrorConfigResult

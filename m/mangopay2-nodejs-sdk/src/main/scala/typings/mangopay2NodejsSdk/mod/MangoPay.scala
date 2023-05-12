@@ -24,6 +24,8 @@ trait MangoPay extends StObject {
   
   var Clients: typings.mangopay2NodejsSdk.typingsServicesClientsMod.Clients = js.native
   
+  var Deposits: typings.mangopay2NodejsSdk.typingsServicesDepositsMod.Deposits = js.native
+  
   var DisputeDocuments: typings.mangopay2NodejsSdk.typingsServicesDisputeDocumentsMod.DisputeDocuments = js.native
   
   var Disputes: typings.mangopay2NodejsSdk.typingsServicesDisputesMod.Disputes = js.native

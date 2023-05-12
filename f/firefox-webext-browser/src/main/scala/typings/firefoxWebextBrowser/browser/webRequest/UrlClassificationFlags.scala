@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.fingerprinting_content
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.cryptomining
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.cryptomining_content
+  - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.emailtracking
+  - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.emailtracking_content
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tracking
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tracking_ad
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tracking_analytics
@@ -31,6 +33,10 @@ object UrlClassificationFlags {
   inline def cryptomining: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.cryptomining = "cryptomining".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.cryptomining]
   
   inline def cryptomining_content: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.cryptomining_content = "cryptomining_content".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.cryptomining_content]
+  
+  inline def emailtracking: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.emailtracking = "emailtracking".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.emailtracking]
+  
+  inline def emailtracking_content: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.emailtracking_content = "emailtracking_content".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.emailtracking_content]
   
   inline def fingerprinting: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.fingerprinting = "fingerprinting".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.fingerprinting]
   

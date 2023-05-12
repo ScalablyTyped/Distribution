@@ -418,6 +418,8 @@ object sapMP13nDialogMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:cancel cancel} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -429,6 +431,8 @@ object sapMP13nDialogMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:ok ok} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -440,6 +444,8 @@ object sapMP13nDialogMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:reset reset} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

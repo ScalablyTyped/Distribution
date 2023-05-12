@@ -1,6 +1,6 @@
 package typings.awsSdkCredentialProviderImds
 
-import typings.awsSdkTypes.distTypesCredentialsMod.Credentials
+import typings.awsSdkTypes.distTypesIdentityAwsCredentialIdentityMod.AwsCredentialIdentity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ object distTypesTypesMod {
   
   trait InstanceMetadataCredentials
     extends StObject
-       with Credentials {
+       with AwsCredentialIdentity {
     
     val originalExpiration: js.UndefOr[js.Date] = js.undefined
   }

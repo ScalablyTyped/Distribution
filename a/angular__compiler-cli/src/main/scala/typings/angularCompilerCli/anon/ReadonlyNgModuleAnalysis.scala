@@ -7,8 +7,6 @@ import typings.angularCompiler.mod.R3NgModuleMetadata
 import typings.angularCompiler.mod.SchemaMetadata
 import typings.angularCompilerCli.srcNgtscAnnotationsNgModuleSrcHandlerMod.TopLevelImportedExpression
 import typings.angularCompilerCli.srcNgtscImportsMod.Reference
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,11 +17,11 @@ trait ReadonlyNgModuleAnalysis extends StObject {
   
   val classMetadata: js.UndefOr[R3ClassMetadata | Null] = js.undefined
   
-  val declarations: js.Array[Reference[ClassDeclaration[DeclarationNode]]]
+  val declarations: js.Array[Reference[ClassDeclarationDeclarati]]
   
   val decorator: js.UndefOr[typings.typescript.mod.Decorator | Null] = js.undefined
   
-  val exports: js.Array[Reference[ClassDeclaration[DeclarationNode]]]
+  val exports: js.Array[Reference[ClassDeclarationDeclarati]]
   
   val fac: R3FactoryMetadata
   
@@ -31,7 +29,7 @@ trait ReadonlyNgModuleAnalysis extends StObject {
   
   val id: js.UndefOr[Expression | Null] = js.undefined
   
-  val importRefs: js.Array[Reference[ClassDeclaration[DeclarationNode]]]
+  val importRefs: js.Array[Reference[ClassDeclarationDeclarati]]
   
   val imports: js.Array[TopLevelImportedExpression]
   
@@ -41,7 +39,7 @@ trait ReadonlyNgModuleAnalysis extends StObject {
   
   val providers: js.UndefOr[typings.typescript.mod.Expression | Null] = js.undefined
   
-  val providersRequiringFactory: js.UndefOr[Set[Reference[ClassDeclaration[DeclarationNode]]] | Null] = js.undefined
+  val providersRequiringFactory: js.UndefOr[Set[Reference[ClassDeclarationDeclarati]] | Null] = js.undefined
   
   val rawDeclarations: js.UndefOr[typings.typescript.mod.Expression | Null] = js.undefined
   
@@ -56,11 +54,11 @@ trait ReadonlyNgModuleAnalysis extends StObject {
 object ReadonlyNgModuleAnalysis {
   
   inline def apply(
-    declarations: js.Array[Reference[ClassDeclaration[DeclarationNode]]],
-    exports: js.Array[Reference[ClassDeclaration[DeclarationNode]]],
+    declarations: js.Array[Reference[ClassDeclarationDeclarati]],
+    exports: js.Array[Reference[ClassDeclarationDeclarati]],
     fac: R3FactoryMetadata,
     factorySymbolName: String,
-    importRefs: js.Array[Reference[ClassDeclaration[DeclarationNode]]],
+    importRefs: js.Array[Reference[ClassDeclarationDeclarati]],
     imports: js.Array[TopLevelImportedExpression],
     inj: OmitR3InjectorMetadataimp,
     mod: R3NgModuleMetadata,
@@ -80,9 +78,9 @@ object ReadonlyNgModuleAnalysis {
     
     inline def setClassMetadataUndefined: Self = StObject.set(x, "classMetadata", js.undefined)
     
-    inline def setDeclarations(value: js.Array[Reference[ClassDeclaration[DeclarationNode]]]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
+    inline def setDeclarations(value: js.Array[Reference[ClassDeclarationDeclarati]]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
     
-    inline def setDeclarationsVarargs(value: Reference[ClassDeclaration[DeclarationNode]]*): Self = StObject.set(x, "declarations", js.Array(value*))
+    inline def setDeclarationsVarargs(value: Reference[ClassDeclarationDeclarati]*): Self = StObject.set(x, "declarations", js.Array(value*))
     
     inline def setDecorator(value: typings.typescript.mod.Decorator): Self = StObject.set(x, "decorator", value.asInstanceOf[js.Any])
     
@@ -90,9 +88,9 @@ object ReadonlyNgModuleAnalysis {
     
     inline def setDecoratorUndefined: Self = StObject.set(x, "decorator", js.undefined)
     
-    inline def setExports(value: js.Array[Reference[ClassDeclaration[DeclarationNode]]]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
+    inline def setExports(value: js.Array[Reference[ClassDeclarationDeclarati]]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
     
-    inline def setExportsVarargs(value: Reference[ClassDeclaration[DeclarationNode]]*): Self = StObject.set(x, "exports", js.Array(value*))
+    inline def setExportsVarargs(value: Reference[ClassDeclarationDeclarati]*): Self = StObject.set(x, "exports", js.Array(value*))
     
     inline def setFac(value: R3FactoryMetadata): Self = StObject.set(x, "fac", value.asInstanceOf[js.Any])
     
@@ -104,9 +102,9 @@ object ReadonlyNgModuleAnalysis {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setImportRefs(value: js.Array[Reference[ClassDeclaration[DeclarationNode]]]): Self = StObject.set(x, "importRefs", value.asInstanceOf[js.Any])
+    inline def setImportRefs(value: js.Array[Reference[ClassDeclarationDeclarati]]): Self = StObject.set(x, "importRefs", value.asInstanceOf[js.Any])
     
-    inline def setImportRefsVarargs(value: Reference[ClassDeclaration[DeclarationNode]]*): Self = StObject.set(x, "importRefs", js.Array(value*))
+    inline def setImportRefsVarargs(value: Reference[ClassDeclarationDeclarati]*): Self = StObject.set(x, "importRefs", js.Array(value*))
     
     inline def setImports(value: js.Array[TopLevelImportedExpression]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
@@ -120,7 +118,7 @@ object ReadonlyNgModuleAnalysis {
     
     inline def setProvidersNull: Self = StObject.set(x, "providers", null)
     
-    inline def setProvidersRequiringFactory(value: Set[Reference[ClassDeclaration[DeclarationNode]]]): Self = StObject.set(x, "providersRequiringFactory", value.asInstanceOf[js.Any])
+    inline def setProvidersRequiringFactory(value: Set[Reference[ClassDeclarationDeclarati]]): Self = StObject.set(x, "providersRequiringFactory", value.asInstanceOf[js.Any])
     
     inline def setProvidersRequiringFactoryNull: Self = StObject.set(x, "providersRequiringFactory", null)
     

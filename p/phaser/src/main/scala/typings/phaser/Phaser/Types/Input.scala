@@ -83,7 +83,7 @@ object Input {
     }
   }
   
-  type HitAreaCallback = js.Function4[/* hitArea */ Any, /* x */ Double, /* y */ Double, /* gameObject */ GameObject, Unit]
+  type HitAreaCallback = js.Function4[/* hitArea */ Any, /* x */ Double, /* y */ Double, /* gameObject */ GameObject, Boolean]
   
   trait InputConfiguration extends StObject {
     
@@ -155,7 +155,7 @@ object Input {
       
       inline def setHitArea(value: Any): Self = StObject.set(x, "hitArea", value.asInstanceOf[js.Any])
       
-      inline def setHitAreaCallback(value: (/* hitArea */ Any, /* x */ Double, /* y */ Double, /* gameObject */ GameObject) => Unit): Self = StObject.set(x, "hitAreaCallback", js.Any.fromFunction4(value))
+      inline def setHitAreaCallback(value: (/* hitArea */ Any, /* x */ Double, /* y */ Double, /* gameObject */ GameObject) => Boolean): Self = StObject.set(x, "hitAreaCallback", js.Any.fromFunction4(value))
       
       inline def setHitAreaCallbackUndefined: Self = StObject.set(x, "hitAreaCallback", js.undefined)
       
@@ -209,11 +209,6 @@ object Input {
   }
   
   trait InteractiveObject extends StObject {
-    
-    /**
-      * An Interactive Object that is 'always enabled' will receive input even if the parent object is invisible or won't render.
-      */
-    var alwaysEnabled: Boolean
     
     /**
       * The most recent Camera to be tested against this Interactive Object.
@@ -293,7 +288,7 @@ object Input {
     /**
       * The 'contains' check callback that the hit area shape will use for all hit tests.
       */
-    def hitAreaCallback(hitArea: Any, x: Double, y: Double, gameObject: GameObject): Unit
+    def hitAreaCallback(hitArea: Any, x: Double, y: Double, gameObject: GameObject): Boolean
     /**
       * The 'contains' check callback that the hit area shape will use for all hit tests.
       */
@@ -318,12 +313,11 @@ object Input {
     /**
       * An optional drop target for a draggable Interactive Object.
       */
-    var target: GameObject
+    var target: GameObject | Null
   }
   object InteractiveObject {
     
     inline def apply(
-      alwaysEnabled: Boolean,
       camera: Camera,
       cursor: Boolean | String,
       customHitArea: Boolean,
@@ -339,20 +333,17 @@ object Input {
       enabled: Boolean,
       gameObject: GameObject,
       hitArea: Any,
-      hitAreaCallback: (/* hitArea */ Any, /* x */ Double, /* y */ Double, /* gameObject */ GameObject) => Unit,
+      hitAreaCallback: (/* hitArea */ Any, /* x */ Double, /* y */ Double, /* gameObject */ GameObject) => Boolean,
       hitAreaDebug: Shape,
       localX: Double,
-      localY: Double,
-      target: GameObject
+      localY: Double
     ): InteractiveObject = {
-      val __obj = js.Dynamic.literal(alwaysEnabled = alwaysEnabled.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], cursor = cursor.asInstanceOf[js.Any], customHitArea = customHitArea.asInstanceOf[js.Any], dragStartX = dragStartX.asInstanceOf[js.Any], dragStartXGlobal = dragStartXGlobal.asInstanceOf[js.Any], dragStartY = dragStartY.asInstanceOf[js.Any], dragStartYGlobal = dragStartYGlobal.asInstanceOf[js.Any], dragState = dragState.asInstanceOf[js.Any], dragX = dragX.asInstanceOf[js.Any], dragY = dragY.asInstanceOf[js.Any], draggable = draggable.asInstanceOf[js.Any], dropZone = dropZone.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], gameObject = gameObject.asInstanceOf[js.Any], hitArea = hitArea.asInstanceOf[js.Any], hitAreaCallback = js.Any.fromFunction4(hitAreaCallback), hitAreaDebug = hitAreaDebug.asInstanceOf[js.Any], localX = localX.asInstanceOf[js.Any], localY = localY.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(camera = camera.asInstanceOf[js.Any], cursor = cursor.asInstanceOf[js.Any], customHitArea = customHitArea.asInstanceOf[js.Any], dragStartX = dragStartX.asInstanceOf[js.Any], dragStartXGlobal = dragStartXGlobal.asInstanceOf[js.Any], dragStartY = dragStartY.asInstanceOf[js.Any], dragStartYGlobal = dragStartYGlobal.asInstanceOf[js.Any], dragState = dragState.asInstanceOf[js.Any], dragX = dragX.asInstanceOf[js.Any], dragY = dragY.asInstanceOf[js.Any], draggable = draggable.asInstanceOf[js.Any], dropZone = dropZone.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], gameObject = gameObject.asInstanceOf[js.Any], hitArea = hitArea.asInstanceOf[js.Any], hitAreaCallback = js.Any.fromFunction4(hitAreaCallback), hitAreaDebug = hitAreaDebug.asInstanceOf[js.Any], localX = localX.asInstanceOf[js.Any], localY = localY.asInstanceOf[js.Any], target = null)
       __obj.asInstanceOf[InteractiveObject]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: InteractiveObject] (val x: Self) extends AnyVal {
-      
-      inline def setAlwaysEnabled(value: Boolean): Self = StObject.set(x, "alwaysEnabled", value.asInstanceOf[js.Any])
       
       inline def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
       
@@ -384,7 +375,7 @@ object Input {
       
       inline def setHitArea(value: Any): Self = StObject.set(x, "hitArea", value.asInstanceOf[js.Any])
       
-      inline def setHitAreaCallback(value: (/* hitArea */ Any, /* x */ Double, /* y */ Double, /* gameObject */ GameObject) => Unit): Self = StObject.set(x, "hitAreaCallback", js.Any.fromFunction4(value))
+      inline def setHitAreaCallback(value: (/* hitArea */ Any, /* x */ Double, /* y */ Double, /* gameObject */ GameObject) => Boolean): Self = StObject.set(x, "hitAreaCallback", js.Any.fromFunction4(value))
       
       inline def setHitAreaDebug(value: Shape): Self = StObject.set(x, "hitAreaDebug", value.asInstanceOf[js.Any])
       
@@ -393,6 +384,8 @@ object Input {
       inline def setLocalY(value: Double): Self = StObject.set(x, "localY", value.asInstanceOf[js.Any])
       
       inline def setTarget(value: GameObject): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      
+      inline def setTargetNull: Self = StObject.set(x, "target", null)
     }
   }
   

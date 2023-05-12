@@ -58,6 +58,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @since v0.1.92
     */
   def verify(`object`: KeyLike, signature: ArrayBufferView): Boolean = js.native
+  def verify(`object`: VerifyJsonWebKeyInput, signature: String): Boolean = js.native
+  def verify(`object`: VerifyJsonWebKeyInput, signature: String, signature_format: BinaryToTextEncoding): Boolean = js.native
+  def verify(`object`: VerifyJsonWebKeyInput, signature: ArrayBufferView): Boolean = js.native
   def verify(`object`: VerifyKeyObjectInput, signature: String): Boolean = js.native
   def verify(`object`: VerifyKeyObjectInput, signature: String, signature_format: BinaryToTextEncoding): Boolean = js.native
   def verify(`object`: VerifyKeyObjectInput, signature: ArrayBufferView): Boolean = js.native

@@ -27,6 +27,8 @@ import typings.chromaJs.chromaJsStrings.lighten
 import typings.chromaJs.chromaJsStrings.luminance
 import typings.chromaJs.chromaJsStrings.multiply
 import typings.chromaJs.chromaJsStrings.name
+import typings.chromaJs.chromaJsStrings.oklab
+import typings.chromaJs.chromaJsStrings.oklch
 import typings.chromaJs.chromaJsStrings.overlay
 import typings.chromaJs.chromaJsStrings.q
 import typings.chromaJs.chromaJsStrings.rgb
@@ -58,7 +60,7 @@ object mod extends Shortcut {
       a: Double,
       b: Double,
       c: Double,
-      colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
+      colorSpace: rgb | rgba | hsl | hsv | hsi | lab | oklab | lch | oklch | hcl | cmyk | gl
     ): Color = js.native
     def apply(a: Double, b: Double, c: Double, d: Double): Color = js.native
     def apply(
@@ -66,7 +68,7 @@ object mod extends Shortcut {
       b: Double,
       c: Double,
       d: Double,
-      colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
+      colorSpace: rgb | rgba | hsl | hsv | hsi | lab | oklab | lch | oklch | hcl | cmyk | gl
     ): Color = js.native
     /**
       * Creates a color from a string representation (as supported in CSS).
@@ -86,7 +88,10 @@ object mod extends Shortcut {
       * @return the color object.
       */
     def apply(values: js.Array[Double]): Color = js.native
-    def apply(values: js.Array[Double], colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl): Color = js.native
+    def apply(
+      values: js.Array[Double],
+      colorSpace: rgb | rgba | hsl | hsv | hsi | lab | oklab | lch | oklch | hcl | cmyk | gl
+    ): Color = js.native
     
     /**
       * Similar to {@link mix}, but accepts more than two colors. Simple averaging of R,G,B components and the alpha
@@ -183,25 +188,25 @@ object mod extends Shortcut {
     def distance(
       color1: String,
       color2: String,
-      colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
+      colorSpace: rgb | rgba | hsl | hsv | hsi | lab | oklab | lch | oklch | hcl | cmyk | gl
     ): Double = js.native
     def distance(color1: String, color2: Color): Double = js.native
     def distance(
       color1: String,
       color2: Color,
-      colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
+      colorSpace: rgb | rgba | hsl | hsv | hsi | lab | oklab | lch | oklch | hcl | cmyk | gl
     ): Double = js.native
     def distance(color1: Color, color2: String): Double = js.native
     def distance(
       color1: Color,
       color2: String,
-      colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
+      colorSpace: rgb | rgba | hsl | hsv | hsi | lab | oklab | lch | oklch | hcl | cmyk | gl
     ): Double = js.native
     def distance(color1: Color, color2: Color): Double = js.native
     def distance(
       color1: Color,
       color2: Color,
-      colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
+      colorSpace: rgb | rgba | hsl | hsv | hsi | lab | oklab | lch | oklch | hcl | cmyk | gl
     ): Double = js.native
     
     /**
@@ -214,6 +219,7 @@ object mod extends Shortcut {
       * Same meaning as lch(), but in different order.
       */
     def hcl(h: Double, c: Double, l: Double): Color = js.native
+    def hcl(h: Double, c: Double, l: Double, alpha: Double): Color = js.native
     
     /**
       * Create a color from a hex or string representation (as supported in CSS).
@@ -226,8 +232,10 @@ object mod extends Shortcut {
     def hex(color: String): Color = js.native
     
     def hsl(h: Double, s: Double, l: Double): Color = js.native
+    def hsl(h: Double, s: Double, l: Double, alpha: Double): Color = js.native
     
     def hsv(h: Double, s: Double, v: Double): Color = js.native
+    def hsv(h: Double, s: Double, v: Double, alpha: Double): Color = js.native
     
     /**
       * Alias for {@see mix}.
@@ -253,6 +261,7 @@ object mod extends Shortcut {
     def lab(lightness: Double, a: Double, b: Double, alpha: Double): Color = js.native
     
     def lch(l: Double, c: Double, h: Double): Color = js.native
+    def lch(l: Double, c: Double, h: Double, alpha: Double): Color = js.native
     
     /**
       * Helper function that computes class breaks based on data.
@@ -290,12 +299,19 @@ object mod extends Shortcut {
     def mix(color1: Color, color2: Color, f: Double, colorSpace: InterpolationMode): Color = js.native
     def mix(color1: Color, color2: Color, f: Unit, colorSpace: InterpolationMode): Color = js.native
     
+    def oklab(lightness: Double, a: Double, b: Double): Color = js.native
+    def oklab(lightness: Double, a: Double, b: Double, alpha: Double): Color = js.native
+    
+    def oklch(l: Double, c: Double, h: Double): Color = js.native
+    def oklch(l: Double, c: Double, h: Double, alpha: Double): Color = js.native
+    
     /**
       * Returns a random color.
       */
     def random(): Color = js.native
     
     def rgb(r: Double, g: Double, b: Double): Color = js.native
+    def rgb(r: Double, g: Double, b: Double, alpha: Double): Color = js.native
     
     def scale(): Scale[Color] = js.native
     def scale(colors: js.Array[String | Color]): Scale[Color] = js.native
@@ -482,24 +498,24 @@ object mod extends Shortcut {
     def mix(
       targetColor: String,
       f: Double,
-      colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
+      colorSpace: rgb | rgba | hsl | hsv | hsi | lab | oklab | lch | oklch | hcl | cmyk | gl
     ): Color = js.native
     def mix(
       targetColor: String,
       f: Unit,
-      colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
+      colorSpace: rgb | rgba | hsl | hsv | hsi | lab | oklab | lch | oklch | hcl | cmyk | gl
     ): Color = js.native
     def mix(targetColor: Color): Color = js.native
     def mix(targetColor: Color, f: Double): Color = js.native
     def mix(
       targetColor: Color,
       f: Double,
-      colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
+      colorSpace: rgb | rgba | hsl | hsv | hsi | lab | oklab | lch | oklch | hcl | cmyk | gl
     ): Color = js.native
     def mix(
       targetColor: Color,
       f: Unit,
-      colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
+      colorSpace: rgb | rgba | hsl | hsv | hsi | lab | oklab | lch | oklch | hcl | cmyk | gl
     ): Color = js.native
     
     /**
@@ -517,6 +533,23 @@ object mod extends Shortcut {
       * chroma('#ff0000').num() === 16711680
       */
     def num(): Double = js.native
+    
+    /**
+      * Returns an array with the **L**, **a**, and **b** components.
+      *
+      * @example
+      * chroma('orange').oklab() === [0.7927,0.0566,0.1614]
+      */
+    def oklab(): js.Tuple3[Double, Double, Double] = js.native
+    
+    /**
+      * Returns an array with the **Lightness**, **chroma**, and **hue**
+      * components.
+      *
+      * @example
+      * chroma('skyblue').oklch() === [0.8148,0.0819,225.8]
+      */
+    def oklch(): js.Tuple3[Double, Double, Double] = js.native
     
     /**
       * Returns an array with the red, green, and blue component, each as
@@ -585,6 +618,10 @@ object mod extends Shortcut {
     
     var lch: js.Tuple3[Double, Double, Double]
     
+    var oklab: js.Tuple3[Double, Double, Double]
+    
+    var oklch: js.Tuple3[Double, Double, Double]
+    
     var rgb: js.Tuple3[Double, Double, Double]
     
     var rgba: js.Tuple4[Double, Double, Double, Double]
@@ -600,10 +637,12 @@ object mod extends Shortcut {
       hsv: js.Tuple3[Double, Double, Double],
       lab: js.Tuple3[Double, Double, Double],
       lch: js.Tuple3[Double, Double, Double],
+      oklab: js.Tuple3[Double, Double, Double],
+      oklch: js.Tuple3[Double, Double, Double],
       rgb: js.Tuple3[Double, Double, Double],
       rgba: js.Tuple4[Double, Double, Double, Double]
     ): ColorSpaces = {
-      val __obj = js.Dynamic.literal(cmyk = cmyk.asInstanceOf[js.Any], gl = gl.asInstanceOf[js.Any], hcl = hcl.asInstanceOf[js.Any], hsi = hsi.asInstanceOf[js.Any], hsl = hsl.asInstanceOf[js.Any], hsv = hsv.asInstanceOf[js.Any], lab = lab.asInstanceOf[js.Any], lch = lch.asInstanceOf[js.Any], rgb = rgb.asInstanceOf[js.Any], rgba = rgba.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(cmyk = cmyk.asInstanceOf[js.Any], gl = gl.asInstanceOf[js.Any], hcl = hcl.asInstanceOf[js.Any], hsi = hsi.asInstanceOf[js.Any], hsl = hsl.asInstanceOf[js.Any], hsv = hsv.asInstanceOf[js.Any], lab = lab.asInstanceOf[js.Any], lch = lch.asInstanceOf[js.Any], oklab = oklab.asInstanceOf[js.Any], oklch = oklch.asInstanceOf[js.Any], rgb = rgb.asInstanceOf[js.Any], rgba = rgba.asInstanceOf[js.Any])
       __obj.asInstanceOf[ColorSpaces]
     }
     
@@ -625,6 +664,10 @@ object mod extends Shortcut {
       inline def setLab(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "lab", value.asInstanceOf[js.Any])
       
       inline def setLch(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "lch", value.asInstanceOf[js.Any])
+      
+      inline def setOklab(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "oklab", value.asInstanceOf[js.Any])
+      
+      inline def setOklch(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "oklch", value.asInstanceOf[js.Any])
       
       inline def setRgb(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "rgb", value.asInstanceOf[js.Any])
       
@@ -693,7 +736,9 @@ object mod extends Shortcut {
     - typings.chromaJs.chromaJsStrings.hsv
     - typings.chromaJs.chromaJsStrings.hsi
     - typings.chromaJs.chromaJsStrings.lab
+    - typings.chromaJs.chromaJsStrings.oklab
     - typings.chromaJs.chromaJsStrings.lch
+    - typings.chromaJs.chromaJsStrings.oklch
     - typings.chromaJs.chromaJsStrings.hcl
     - typings.chromaJs.chromaJsStrings.lrgb
   */
@@ -713,6 +758,10 @@ object mod extends Shortcut {
     inline def lch: typings.chromaJs.chromaJsStrings.lch = "lch".asInstanceOf[typings.chromaJs.chromaJsStrings.lch]
     
     inline def lrgb: typings.chromaJs.chromaJsStrings.lrgb = "lrgb".asInstanceOf[typings.chromaJs.chromaJsStrings.lrgb]
+    
+    inline def oklab: typings.chromaJs.chromaJsStrings.oklab = "oklab".asInstanceOf[typings.chromaJs.chromaJsStrings.oklab]
+    
+    inline def oklch: typings.chromaJs.chromaJsStrings.oklch = "oklch".asInstanceOf[typings.chromaJs.chromaJsStrings.oklch]
     
     inline def rgb: typings.chromaJs.chromaJsStrings.rgb = "rgb".asInstanceOf[typings.chromaJs.chromaJsStrings.rgb]
   }
@@ -781,6 +830,14 @@ object mod extends Shortcut {
     @JSName("colors")
     def colors_lch(c: Unit, format: lch): js.Array[js.Tuple3[Double, Double, Double]] = js.native
     @JSName("colors")
+    def colors_oklab(c: Double, format: oklab): js.Array[js.Tuple3[Double, Double, Double]] = js.native
+    @JSName("colors")
+    def colors_oklab(c: Unit, format: oklab): js.Array[js.Tuple3[Double, Double, Double]] = js.native
+    @JSName("colors")
+    def colors_oklch(c: Double, format: oklch): js.Array[js.Tuple3[Double, Double, Double]] = js.native
+    @JSName("colors")
+    def colors_oklch(c: Unit, format: oklch): js.Array[js.Tuple3[Double, Double, Double]] = js.native
+    @JSName("colors")
     def colors_rgb(c: Double, format: rgb): js.Array[js.Tuple3[Double, Double, Double]] = js.native
     @JSName("colors")
     def colors_rgb(c: Unit, format: rgb): js.Array[js.Tuple3[Double, Double, Double]] = js.native
@@ -827,6 +884,10 @@ object mod extends Shortcut {
     def out_lab(format: lab): Scale[js.Tuple3[Double, Double, Double]] = js.native
     @JSName("out")
     def out_lch(format: lch): Scale[js.Tuple3[Double, Double, Double]] = js.native
+    @JSName("out")
+    def out_oklab(format: oklab): Scale[js.Tuple3[Double, Double, Double]] = js.native
+    @JSName("out")
+    def out_oklch(format: oklch): Scale[js.Tuple3[Double, Double, Double]] = js.native
     @JSName("out")
     def out_rgb(format: rgb): Scale[js.Tuple3[Double, Double, Double]] = js.native
     @JSName("out")

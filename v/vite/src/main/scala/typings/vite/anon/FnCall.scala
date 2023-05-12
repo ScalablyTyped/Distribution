@@ -16,6 +16,7 @@ import typings.vite.viteStrings.close
 import typings.vite.viteStrings.connect
 import typings.vite.viteStrings.connection
 import typings.vite.viteStrings.drop
+import typings.vite.viteStrings.dropRequest
 import typings.vite.viteStrings.error
 import typings.vite.viteStrings.listening
 import typings.vite.viteStrings.request
@@ -61,6 +62,14 @@ trait FnCall extends StObject {
       /* req */ InstanceType[Instantiable1[/* socket */ Socket, IncomingMessage]], 
       /* socket */ Duplex, 
       /* head */ Buffer, 
+      Unit
+    ]
+  ): this.type = js.native
+  def apply(
+    event: dropRequest,
+    listener: js.Function2[
+      /* req */ InstanceType[Instantiable1[/* socket */ Socket, IncomingMessage]], 
+      /* socket */ Duplex, 
       Unit
     ]
   ): this.type = js.native

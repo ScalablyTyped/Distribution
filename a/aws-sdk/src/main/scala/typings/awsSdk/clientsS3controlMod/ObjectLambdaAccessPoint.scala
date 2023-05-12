@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ObjectLambdaAccessPoint extends StObject {
   
   /**
+    * The alias of the Object Lambda Access Point.
+    */
+  var Alias: js.UndefOr[ObjectLambdaAccessPointAlias] = js.undefined
+  
+  /**
     * The name of the Object Lambda Access Point.
     */
   var Name: ObjectLambdaAccessPointName
@@ -25,6 +30,10 @@ object ObjectLambdaAccessPoint {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: ObjectLambdaAccessPoint] (val x: Self) extends AnyVal {
+    
+    inline def setAlias(value: ObjectLambdaAccessPointAlias): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
+    
+    inline def setAliasUndefined: Self = StObject.set(x, "Alias", js.undefined)
     
     inline def setName(value: ObjectLambdaAccessPointName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

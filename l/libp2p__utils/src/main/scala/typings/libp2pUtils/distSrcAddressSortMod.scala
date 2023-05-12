@@ -15,4 +15,6 @@ object distSrcAddressSortMod {
   val ^ : js.Any = js.native
   
   inline def publicAddressesFirst(a: Address, b: Address): `-1` | `0` | `1` = (^.asInstanceOf[js.Dynamic].applyDynamic("publicAddressesFirst")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[`-1` | `0` | `1`]
+  
+  inline def something(): js.Promise[js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("something")().asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
 }

@@ -49,8 +49,8 @@ object builtUtilsMod {
   
   inline def toArg(arg: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toArg")(arg.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def wrapMultiResult(): js.Array[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapMultiResult")().asInstanceOf[js.Array[js.Array[Any]]]
-  inline def wrapMultiResult(arr: js.Array[Any]): js.Array[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapMultiResult")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[Any]]]
+  inline def wrapMultiResult(): js.Array[js.Array[Any]] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapMultiResult")().asInstanceOf[js.Array[js.Array[Any]] | Null]
+  inline def wrapMultiResult(arr: js.Array[Any]): js.Array[js.Array[Any]] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapMultiResult")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[Any]] | Null]
   
   inline def zipMap[K, V](keys: js.Array[K], values: js.Array[V]): Map[K, V] = (^.asInstanceOf[js.Dynamic].applyDynamic("zipMap")(keys.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Map[K, V]]
   

@@ -9,6 +9,9 @@ trait FileSystemUploadResult
   extends StObject
      with FileSystemHttpResult {
   
+  /**
+    * The body of the server response.
+    */
   var body: String
 }
 object FileSystemUploadResult {

@@ -1,7 +1,7 @@
 
 # Scala.js typings for vega-themes
 
-Typings are for version 2.12.0
+Typings are for version 2.13.0
 
 ## Library description:
 Themes for stylized Vega and Vega-Lite visualizations.

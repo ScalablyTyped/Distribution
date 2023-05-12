@@ -1,6 +1,5 @@
 package typings.std.global
 
-import typings.std.CSSNumberish
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,5 +14,5 @@ open class AnimationTimeline ()
   
   /* standard dom */
   /* CompleteClass */
-  override val currentTime: CSSNumberish | Null = js.native
+  override val currentTime: Double | Null = js.native
 }

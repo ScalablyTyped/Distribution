@@ -8,11 +8,11 @@ trait ParametersPathCommitsha extends StObject {
   
   var parameters: PathCommitsha
   
-  var responses: `200Content198`
+  var responses: `200Content215`
 }
 object ParametersPathCommitsha {
   
-  inline def apply(parameters: PathCommitsha, responses: `200Content198`): ParametersPathCommitsha = {
+  inline def apply(parameters: PathCommitsha, responses: `200Content215`): ParametersPathCommitsha = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathCommitsha]
   }
@@ -22,6 +22,6 @@ object ParametersPathCommitsha {
     
     inline def setParameters(value: PathCommitsha): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content198`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content215`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

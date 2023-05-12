@@ -10,8 +10,6 @@ trait SelectHTMLAttributes[T]
   
   var autoComplete: js.UndefOr[String] = js.undefined
   
-  var autoFocus: js.UndefOr[Boolean] = js.undefined
-  
   var disabled: js.UndefOr[Boolean] = js.undefined
   
   var form: js.UndefOr[String] = js.undefined
@@ -42,10 +40,6 @@ object SelectHTMLAttributes {
     inline def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
     
     inline def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
-    
-    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
-    
-    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ColumnRuleWidth
+import typings.csstype.mod.Property.PaddingRight
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `93` extends StObject {
   
   var value: js.UndefOr[
-    (ColumnRuleWidth[Double | String]) | (js.Array[
+    (PaddingRight[Double | String]) | (js.Array[
       (Extract[
         js.UndefOr[
-          (ColumnRuleWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[ColumnRuleWidth[Double | String]]]])
+          (PaddingRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingRight[Double | String]]]])
         ], 
         String
-      ]) | (NonNullable[js.UndefOr[ColumnRuleWidth[Double | String]]])
+      ]) | (NonNullable[js.UndefOr[PaddingRight[Double | String]]])
     ])
   ] = js.native
 }

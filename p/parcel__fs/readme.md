@@ -1,7 +1,7 @@
 
 # Scala.js typings for parcel__fs
 
-Typings are for version 2.8.0
+Typings are for version 2.8.3
 
 ## Library description:
 Blazing fast, zero configuration web application bundler

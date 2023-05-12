@@ -56,7 +56,7 @@ object typesFocustrackerMod {
     /**
       * A signal emitted when the active widget has changed.
       */
-    val activeChanged: ISignal[this.type, IChangedArgs[T]] = js.native
+    def activeChanged: ISignal[this.type, IChangedArgs[T]] = js.native
     
     /**
       * The active widget in the tracker.
@@ -65,7 +65,7 @@ object typesFocustrackerMod {
       * The active widget is the widget among the tracked widgets which
       * has the *descendant node* which is currently focused.
       */
-    val activeWidget: T | Null = js.native
+    def activeWidget: T | Null = js.native
     
     /**
       * Add a widget to the focus tracker.
@@ -83,7 +83,7 @@ object typesFocustrackerMod {
     /**
       * A signal emitted when the current widget has changed.
       */
-    val currentChanged: ISignal[this.type, IChangedArgs[T]] = js.native
+    def currentChanged: ISignal[this.type, IChangedArgs[T]] = js.native
     
     /**
       * The current widget in the tracker.
@@ -103,7 +103,7 @@ object typesFocustrackerMod {
       * to be interacted with is the "current instance of X", regardless
       * of whether that instance still has focus.
       */
-    val currentWidget: T | Null = js.native
+    def currentWidget: T | Null = js.native
     
     /**
       * Dispose of the resources held by the object.
@@ -169,6 +169,11 @@ object typesFocustrackerMod {
       */
     /* CompleteClass */
     override val isDisposed: Boolean = js.native
+    /**
+      * A flag indicating whether the tracker is disposed.
+      */
+    @JSName("isDisposed")
+    def isDisposed_MFocusTracker: Boolean = js.native
     
     /**
       * Remove a widget from the focus tracker.
@@ -187,7 +192,7 @@ object typesFocustrackerMod {
     /**
       * A read only array of the widgets being tracked.
       */
-    val widgets: js.Array[T] = js.native
+    def widgets: js.Array[T] = js.native
   }
   object FocusTracker {
     

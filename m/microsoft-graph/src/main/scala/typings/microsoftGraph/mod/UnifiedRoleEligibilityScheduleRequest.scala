@@ -60,7 +60,10 @@ trait UnifiedRoleEligibilityScheduleRequest
   // The principal that's getting a role eligibility through the request. Supports $expand.
   var principal: js.UndefOr[NullableOption[DirectoryObject]] = js.undefined
   
-  // Identifier of the principal that has been granted the role eligibility. Supports $filter (eq, ne).
+  /**
+    * Identifier of the principal that has been granted the role eligibility. Can be a user or a role-assignable group. You
+    * can grant only active assignments service principals.Supports $filter (eq, ne).
+    */
   var principalId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**

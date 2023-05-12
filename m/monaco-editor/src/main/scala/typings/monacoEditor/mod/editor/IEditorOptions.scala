@@ -19,20 +19,25 @@ import typings.monacoEditor.monacoEditorStrings.copy
 import typings.monacoEditor.monacoEditorStrings.ctrlCmd
 import typings.monacoEditor.monacoEditorStrings.deepIndent
 import typings.monacoEditor.monacoEditorStrings.default
+import typings.monacoEditor.monacoEditorStrings.dimmed
 import typings.monacoEditor.monacoEditorStrings.editable
 import typings.monacoEditor.monacoEditorStrings.expand
+import typings.monacoEditor.monacoEditorStrings.explicit
 import typings.monacoEditor.monacoEditorStrings.first
+import typings.monacoEditor.monacoEditorStrings.font
 import typings.monacoEditor.monacoEditorStrings.full
 import typings.monacoEditor.monacoEditorStrings.gutter
 import typings.monacoEditor.monacoEditorStrings.indent
 import typings.monacoEditor.monacoEditorStrings.indentation
 import typings.monacoEditor.monacoEditorStrings.inherit
 import typings.monacoEditor.monacoEditorStrings.keep
+import typings.monacoEditor.monacoEditorStrings.keepAll
 import typings.monacoEditor.monacoEditorStrings.line
 import typings.monacoEditor.monacoEditorStrings.mouseover
 import typings.monacoEditor.monacoEditorStrings.near
 import typings.monacoEditor.monacoEditorStrings.never
 import typings.monacoEditor.monacoEditorStrings.none
+import typings.monacoEditor.monacoEditorStrings.normal
 import typings.monacoEditor.monacoEditorStrings.off
 import typings.monacoEditor.monacoEditorStrings.on
 import typings.monacoEditor.monacoEditorStrings.onlySnippets
@@ -47,6 +52,7 @@ import typings.monacoEditor.monacoEditorStrings.smart
 import typings.monacoEditor.monacoEditorStrings.smooth
 import typings.monacoEditor.monacoEditorStrings.solid
 import typings.monacoEditor.monacoEditorStrings.spread
+import typings.monacoEditor.monacoEditorStrings.svg
 import typings.monacoEditor.monacoEditorStrings.text
 import typings.monacoEditor.monacoEditorStrings.top
 import typings.monacoEditor.monacoEditorStrings.trailing
@@ -122,8 +128,7 @@ trait IEditorOptions extends StObject {
   var autoSurround: js.UndefOr[EditorAutoSurroundStrategy] = js.undefined
   
   /**
-    * Enable that the editor will install an interval to check if its container dom node size has changed.
-    * Enabling this might have a severe performance impact.
+    * Enable that the editor will install a ResizeObserver to check if its container dom node size has changed.
     * Defaults to false.
     */
   var automaticLayout: js.UndefOr[Boolean] = js.undefined
@@ -160,6 +165,11 @@ trait IEditorOptions extends StObject {
   var colorDecorators: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Controls the max number of color decorators that can be rendered in an editor at once.
+    */
+  var colorDecoratorsLimit: js.UndefOr[Double] = js.undefined
+  
+  /**
     * Enable that the selection with the mouse and keys is doing column selection.
     * Defaults to false.
     */
@@ -189,9 +199,9 @@ trait IEditorOptions extends StObject {
   
   /**
     * Enable smooth caret animation.
-    * Defaults to false.
+    * Defaults to 'off'.
     */
-  var cursorSmoothCaretAnimation: js.UndefOr[Boolean] = js.undefined
+  var cursorSmoothCaretAnimation: js.UndefOr[off | explicit | on] = js.undefined
   
   /**
     * Control the cursor style, either 'block' or 'line'.
@@ -216,6 +226,11 @@ trait IEditorOptions extends StObject {
     * Control the width of the cursor when cursorStyle is set to 'line'
     */
   var cursorWidth: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Controls whether to use default color decorations or not using the default document color provider
+    */
+  var defaultColorDecorators: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Controls whether the definition link opens element in the peek widget.
@@ -261,9 +276,10 @@ trait IEditorOptions extends StObject {
   var emptySelectionClipboard: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Control the behavior of experimental options
+    * Enable experimental whitespace rendering.
+    * Defaults to 'svg'.
     */
-  var experimental: js.UndefOr[IEditorExperimentalOptions] = js.undefined
+  var experimentalWhitespaceRendering: js.UndefOr[svg | font | off] = js.undefined
   
   /**
     * Class name to be added to the editor.
@@ -332,6 +348,12 @@ trait IEditorOptions extends StObject {
     * The font size
     */
   var fontSize: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Enable font variations.
+    * Defaults to false.
+    */
+  var fontVariations: js.UndefOr[Boolean | String] = js.undefined
   
   /**
     * The font weight
@@ -446,6 +468,11 @@ trait IEditorOptions extends StObject {
   var matchBrackets: js.UndefOr[never | near | always] = js.undefined
   
   /**
+    * Controls whether suggestions allow matches in the middle of the word instead of only at the beginning
+    */
+  var matchOnWordStartOnly: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Control the behavior and rendering of the minimap.
     */
   var minimap: js.UndefOr[IEditorMinimapOptions] = js.undefined
@@ -467,6 +494,11 @@ trait IEditorOptions extends StObject {
     * Defaults to false.
     */
   var mouseWheelZoom: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Controls the max number of text cursors that can be in an active editor at once.
+    */
+  var multiCursorLimit: js.UndefOr[Double] = js.undefined
   
   /**
     * Merge overlapping selections.
@@ -551,9 +583,9 @@ trait IEditorOptions extends StObject {
   
   /**
     * Render last line number when the file ends with a newline.
-    * Defaults to true.
+    * Defaults to 'on' for Windows and macOS and 'dimmed' for Linux.
     */
-  var renderFinalNewline: js.UndefOr[Boolean] = js.undefined
+  var renderFinalNewline: js.UndefOr[on | off | dimmed] = js.undefined
   
   /**
     * Enable rendering of current line highlight.
@@ -597,6 +629,11 @@ trait IEditorOptions extends StObject {
     * Defaults to empty array.
     */
   var rulers: js.UndefOr[js.Array[Double | IRulerOption]] = js.undefined
+  
+  /**
+    * Control whether a screen reader announces inline suggestion content immediately.
+    */
+  var screenReaderAnnounceInlineSuggestion: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable that scrolling can go beyond the last column by a number of columns.
@@ -672,6 +709,11 @@ trait IEditorOptions extends StObject {
   var snippetSuggestions: js.UndefOr[top | bottom | `inline` | none] = js.undefined
   
   /**
+    * Control the behavior of sticky scroll options
+    */
+  var stickyScroll: js.UndefOr[IEditorStickyScrollOptions] = js.undefined
+  
+  /**
     * Emulate selection behaviour of tab characters when using spaces for indentation.
     * This means selection will stick to tab stops.
     */
@@ -718,6 +760,11 @@ trait IEditorOptions extends StObject {
   var tabCompletion: js.UndefOr[on | off | onlySnippets] = js.undefined
   
   /**
+    * Controls whether the editor receives tabs or defers them to the workbench for navigation.
+    */
+  var tabFocusMode: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * The `tabindex` property of the editor's textarea
     */
   var tabIndex: js.UndefOr[Double] = js.undefined
@@ -749,6 +796,13 @@ trait IEditorOptions extends StObject {
     * Inserting and deleting whitespace follows tab stops.
     */
   var useTabStops: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Sets whether line breaks appear wherever the text would otherwise overflow its content box.
+    * When wordBreak = 'normal', Use the default line break rule.
+    * When wordBreak = 'keepAll', Word breaks should not be used for Chinese/Japanese/Korean (CJK) text. Non-CJK text behavior is the same as for normal.
+    */
+  var wordBreak: js.UndefOr[normal | keepAll] = js.undefined
   
   /**
     * A string containing the word separators used when doing word navigation.
@@ -888,6 +942,10 @@ object IEditorOptions {
     
     inline def setColorDecorators(value: Boolean): Self = StObject.set(x, "colorDecorators", value.asInstanceOf[js.Any])
     
+    inline def setColorDecoratorsLimit(value: Double): Self = StObject.set(x, "colorDecoratorsLimit", value.asInstanceOf[js.Any])
+    
+    inline def setColorDecoratorsLimitUndefined: Self = StObject.set(x, "colorDecoratorsLimit", js.undefined)
+    
     inline def setColorDecoratorsUndefined: Self = StObject.set(x, "colorDecorators", js.undefined)
     
     inline def setColumnSelection(value: Boolean): Self = StObject.set(x, "columnSelection", value.asInstanceOf[js.Any])
@@ -910,7 +968,7 @@ object IEditorOptions {
     
     inline def setCursorBlinkingUndefined: Self = StObject.set(x, "cursorBlinking", js.undefined)
     
-    inline def setCursorSmoothCaretAnimation(value: Boolean): Self = StObject.set(x, "cursorSmoothCaretAnimation", value.asInstanceOf[js.Any])
+    inline def setCursorSmoothCaretAnimation(value: off | explicit | on): Self = StObject.set(x, "cursorSmoothCaretAnimation", value.asInstanceOf[js.Any])
     
     inline def setCursorSmoothCaretAnimationUndefined: Self = StObject.set(x, "cursorSmoothCaretAnimation", js.undefined)
     
@@ -929,6 +987,10 @@ object IEditorOptions {
     inline def setCursorWidth(value: Double): Self = StObject.set(x, "cursorWidth", value.asInstanceOf[js.Any])
     
     inline def setCursorWidthUndefined: Self = StObject.set(x, "cursorWidth", js.undefined)
+    
+    inline def setDefaultColorDecorators(value: Boolean): Self = StObject.set(x, "defaultColorDecorators", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultColorDecoratorsUndefined: Self = StObject.set(x, "defaultColorDecorators", js.undefined)
     
     inline def setDefinitionLinkOpensInPeek(value: Boolean): Self = StObject.set(x, "definitionLinkOpensInPeek", value.asInstanceOf[js.Any])
     
@@ -958,9 +1020,9 @@ object IEditorOptions {
     
     inline def setEmptySelectionClipboardUndefined: Self = StObject.set(x, "emptySelectionClipboard", js.undefined)
     
-    inline def setExperimental(value: IEditorExperimentalOptions): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
+    inline def setExperimentalWhitespaceRendering(value: svg | font | off): Self = StObject.set(x, "experimentalWhitespaceRendering", value.asInstanceOf[js.Any])
     
-    inline def setExperimentalUndefined: Self = StObject.set(x, "experimental", js.undefined)
+    inline def setExperimentalWhitespaceRenderingUndefined: Self = StObject.set(x, "experimentalWhitespaceRendering", js.undefined)
     
     inline def setExtraEditorClassName(value: String): Self = StObject.set(x, "extraEditorClassName", value.asInstanceOf[js.Any])
     
@@ -1009,6 +1071,10 @@ object IEditorOptions {
     inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+    
+    inline def setFontVariations(value: Boolean | String): Self = StObject.set(x, "fontVariations", value.asInstanceOf[js.Any])
+    
+    inline def setFontVariationsUndefined: Self = StObject.set(x, "fontVariations", js.undefined)
     
     inline def setFontWeight(value: String): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
@@ -1092,6 +1158,10 @@ object IEditorOptions {
     
     inline def setMatchBracketsUndefined: Self = StObject.set(x, "matchBrackets", js.undefined)
     
+    inline def setMatchOnWordStartOnly(value: Boolean): Self = StObject.set(x, "matchOnWordStartOnly", value.asInstanceOf[js.Any])
+    
+    inline def setMatchOnWordStartOnlyUndefined: Self = StObject.set(x, "matchOnWordStartOnly", js.undefined)
+    
     inline def setMinimap(value: IEditorMinimapOptions): Self = StObject.set(x, "minimap", value.asInstanceOf[js.Any])
     
     inline def setMinimapUndefined: Self = StObject.set(x, "minimap", js.undefined)
@@ -1107,6 +1177,10 @@ object IEditorOptions {
     inline def setMouseWheelZoom(value: Boolean): Self = StObject.set(x, "mouseWheelZoom", value.asInstanceOf[js.Any])
     
     inline def setMouseWheelZoomUndefined: Self = StObject.set(x, "mouseWheelZoom", js.undefined)
+    
+    inline def setMultiCursorLimit(value: Double): Self = StObject.set(x, "multiCursorLimit", value.asInstanceOf[js.Any])
+    
+    inline def setMultiCursorLimitUndefined: Self = StObject.set(x, "multiCursorLimit", js.undefined)
     
     inline def setMultiCursorMergeOverlapping(value: Boolean): Self = StObject.set(x, "multiCursorMergeOverlapping", value.asInstanceOf[js.Any])
     
@@ -1164,7 +1238,7 @@ object IEditorOptions {
     
     inline def setRenderControlCharactersUndefined: Self = StObject.set(x, "renderControlCharacters", js.undefined)
     
-    inline def setRenderFinalNewline(value: Boolean): Self = StObject.set(x, "renderFinalNewline", value.asInstanceOf[js.Any])
+    inline def setRenderFinalNewline(value: on | off | dimmed): Self = StObject.set(x, "renderFinalNewline", value.asInstanceOf[js.Any])
     
     inline def setRenderFinalNewlineUndefined: Self = StObject.set(x, "renderFinalNewline", js.undefined)
     
@@ -1197,6 +1271,10 @@ object IEditorOptions {
     inline def setRulersUndefined: Self = StObject.set(x, "rulers", js.undefined)
     
     inline def setRulersVarargs(value: (Double | IRulerOption)*): Self = StObject.set(x, "rulers", js.Array(value*))
+    
+    inline def setScreenReaderAnnounceInlineSuggestion(value: Boolean): Self = StObject.set(x, "screenReaderAnnounceInlineSuggestion", value.asInstanceOf[js.Any])
+    
+    inline def setScreenReaderAnnounceInlineSuggestionUndefined: Self = StObject.set(x, "screenReaderAnnounceInlineSuggestion", js.undefined)
     
     inline def setScrollBeyondLastColumn(value: Double): Self = StObject.set(x, "scrollBeyondLastColumn", value.asInstanceOf[js.Any])
     
@@ -1250,6 +1328,10 @@ object IEditorOptions {
     
     inline def setSnippetSuggestionsUndefined: Self = StObject.set(x, "snippetSuggestions", js.undefined)
     
+    inline def setStickyScroll(value: IEditorStickyScrollOptions): Self = StObject.set(x, "stickyScroll", value.asInstanceOf[js.Any])
+    
+    inline def setStickyScrollUndefined: Self = StObject.set(x, "stickyScroll", js.undefined)
+    
     inline def setStickyTabStops(value: Boolean): Self = StObject.set(x, "stickyTabStops", value.asInstanceOf[js.Any])
     
     inline def setStickyTabStopsUndefined: Self = StObject.set(x, "stickyTabStops", js.undefined)
@@ -1282,6 +1364,10 @@ object IEditorOptions {
     
     inline def setTabCompletionUndefined: Self = StObject.set(x, "tabCompletion", js.undefined)
     
+    inline def setTabFocusMode(value: Boolean): Self = StObject.set(x, "tabFocusMode", value.asInstanceOf[js.Any])
+    
+    inline def setTabFocusModeUndefined: Self = StObject.set(x, "tabFocusMode", js.undefined)
+    
     inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
     
     inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
@@ -1305,6 +1391,10 @@ object IEditorOptions {
     inline def setUseTabStops(value: Boolean): Self = StObject.set(x, "useTabStops", value.asInstanceOf[js.Any])
     
     inline def setUseTabStopsUndefined: Self = StObject.set(x, "useTabStops", js.undefined)
+    
+    inline def setWordBreak(value: normal | keepAll): Self = StObject.set(x, "wordBreak", value.asInstanceOf[js.Any])
+    
+    inline def setWordBreakUndefined: Self = StObject.set(x, "wordBreak", js.undefined)
     
     inline def setWordSeparators(value: String): Self = StObject.set(x, "wordSeparators", value.asInstanceOf[js.Any])
     

@@ -14,7 +14,7 @@ object mod {
     def this(props: MarginLoaderProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: MarginLoaderProps, context: Any) = this()
   }
@@ -26,7 +26,7 @@ object mod {
     def this(props: SizeLoaderProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SizeLoaderProps, context: Any) = this()
   }
@@ -38,7 +38,7 @@ object mod {
     def this(props: SizeLoaderProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SizeLoaderProps, context: Any) = this()
   }
@@ -50,7 +50,7 @@ object mod {
     def this(props: SizeLoaderProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SizeLoaderProps, context: Any) = this()
   }
@@ -62,7 +62,7 @@ object mod {
     def this(props: RadiusLoaderProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: RadiusLoaderProps, context: Any) = this()
   }
@@ -74,7 +74,7 @@ object mod {
     def this(props: MarginLoaderProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: MarginLoaderProps, context: Any) = this()
   }
@@ -86,7 +86,7 @@ object mod {
     def this(props: SizeLoaderProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SizeLoaderProps, context: Any) = this()
   }
@@ -98,7 +98,7 @@ object mod {
     def this(props: MarginLoaderProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: MarginLoaderProps, context: Any) = this()
   }
@@ -110,7 +110,7 @@ object mod {
     def this(props: MarginLoaderProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: MarginLoaderProps, context: Any) = this()
   }
@@ -122,7 +122,7 @@ object mod {
     def this(props: SizeLoaderProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SizeLoaderProps, context: Any) = this()
   }
@@ -134,7 +134,7 @@ object mod {
     def this(props: MarginLoaderProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: MarginLoaderProps, context: Any) = this()
   }
@@ -146,7 +146,7 @@ object mod {
     def this(props: MarginLoaderProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: MarginLoaderProps, context: Any) = this()
   }
@@ -158,7 +158,7 @@ object mod {
     def this(props: RadiusLoaderProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: RadiusLoaderProps, context: Any) = this()
   }
@@ -170,7 +170,7 @@ object mod {
     def this(props: SizeLoaderProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SizeLoaderProps, context: Any) = this()
   }
@@ -182,7 +182,7 @@ object mod {
     def this(props: SizeLoaderProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SizeLoaderProps, context: Any) = this()
   }
@@ -194,7 +194,7 @@ object mod {
     def this(props: MarginLoaderProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: MarginLoaderProps, context: Any) = this()
   }

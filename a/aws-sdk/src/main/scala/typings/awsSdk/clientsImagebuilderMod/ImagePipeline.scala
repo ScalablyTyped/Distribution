@@ -22,12 +22,12 @@ trait ImagePipeline extends StObject {
   var dateCreated: js.UndefOr[DateTime] = js.undefined
   
   /**
-    * The date on which this image pipeline was last run.
+    * This is no longer supported, and does not return a value.
     */
   var dateLastRun: js.UndefOr[DateTime] = js.undefined
   
   /**
-    * The date on which this image pipeline will next be run.
+    * This is no longer supported, and does not return a value.
     */
   var dateNextRun: js.UndefOr[DateTime] = js.undefined
   
@@ -47,7 +47,7 @@ trait ImagePipeline extends StObject {
   var distributionConfigurationArn: js.UndefOr[Arn] = js.undefined
   
   /**
-    *  Collects additional information about the image being created, including the operating system (OS) version and package list. This information is used to enhance the overall experience of using EC2 Image Builder. Enabled by default.
+    * Collects additional information about the image being created, including the operating system (OS) version and package list. This information is used to enhance the overall experience of using EC2 Image Builder. Enabled by default.
     */
   var enhancedImageMetadataEnabled: js.UndefOr[NullableBoolean] = js.undefined
   
@@ -55,6 +55,11 @@ trait ImagePipeline extends StObject {
     * The Amazon Resource Name (ARN) of the image recipe associated with this image pipeline.
     */
   var imageRecipeArn: js.UndefOr[Arn] = js.undefined
+  
+  /**
+    * Contains settings for vulnerability scans.
+    */
+  var imageScanningConfiguration: js.UndefOr[ImageScanningConfiguration] = js.undefined
   
   /**
     * The image tests configuration of the image pipeline.
@@ -140,6 +145,10 @@ object ImagePipeline {
     inline def setImageRecipeArn(value: Arn): Self = StObject.set(x, "imageRecipeArn", value.asInstanceOf[js.Any])
     
     inline def setImageRecipeArnUndefined: Self = StObject.set(x, "imageRecipeArn", js.undefined)
+    
+    inline def setImageScanningConfiguration(value: ImageScanningConfiguration): Self = StObject.set(x, "imageScanningConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setImageScanningConfigurationUndefined: Self = StObject.set(x, "imageScanningConfiguration", js.undefined)
     
     inline def setImageTestsConfiguration(value: ImageTestsConfiguration): Self = StObject.set(x, "imageTestsConfiguration", value.asInstanceOf[js.Any])
     

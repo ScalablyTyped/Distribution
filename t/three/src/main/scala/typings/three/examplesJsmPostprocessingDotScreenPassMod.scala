@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.examplesJsmPostprocessingPassMod.FullScreenQuad
 import typings.three.examplesJsmPostprocessingPassMod.Pass
 import typings.three.srcThreeMod.ShaderMaterial
 import typings.three.srcThreeMod.Vector2
@@ -20,7 +21,7 @@ object examplesJsmPostprocessingDotScreenPassMod {
     def this(center: Vector2, angle: Double, scale: Double) = this()
     def this(center: Vector2, angle: Unit, scale: Double) = this()
     
-    var fsQuad: js.Object = js.native
+    var fsQuad: FullScreenQuad = js.native
     
     var material: ShaderMaterial = js.native
     

@@ -25,7 +25,9 @@ import typings.reachUtils.reachUtilsStrings.compositionend
 import typings.reachUtils.reachUtilsStrings.compositionstart
 import typings.reachUtils.reachUtilsStrings.compositionupdate
 import typings.reachUtils.reachUtilsStrings.contextmenu
+import typings.reachUtils.reachUtilsStrings.copy
 import typings.reachUtils.reachUtilsStrings.cuechange
+import typings.reachUtils.reachUtilsStrings.cut
 import typings.reachUtils.reachUtilsStrings.dblclick
 import typings.reachUtils.reachUtilsStrings.devicemotion
 import typings.reachUtils.reachUtilsStrings.deviceorientation
@@ -73,6 +75,7 @@ import typings.reachUtils.reachUtilsStrings.online
 import typings.reachUtils.reachUtilsStrings.orientationchange
 import typings.reachUtils.reachUtilsStrings.pagehide
 import typings.reachUtils.reachUtilsStrings.pageshow
+import typings.reachUtils.reachUtilsStrings.paste
 import typings.reachUtils.reachUtilsStrings.pause
 import typings.reachUtils.reachUtilsStrings.play
 import typings.reachUtils.reachUtilsStrings.playing
@@ -137,6 +140,7 @@ import typings.react.mod.SyntheticEvent
 import typings.std.AnimationEvent
 import typings.std.BeforeUnloadEvent
 import typings.std.CSSStyleDeclaration
+import typings.std.ClipboardEvent
 import typings.std.CompositionEvent
 import typings.std.DeviceMotionEvent
 import typings.std.DeviceOrientationEvent
@@ -760,11 +764,23 @@ object mod {
   inline def useEventListener_contextmenu(eventName: contextmenu, listener: js.Function1[/* event */ MouseEvent, Any], element: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useEventListener_contextmenu(eventName: contextmenu, listener: js.Function1[/* event */ MouseEvent, Any], element: Window): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def useEventListener_copy(eventName: copy, listener: js.Function1[/* event */ ClipboardEvent, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_copy(eventName: copy, listener: js.Function1[/* event */ ClipboardEvent, Any], element: Document): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_copy(eventName: copy, listener: js.Function1[/* event */ ClipboardEvent, Any], element: EventTarget): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_copy(eventName: copy, listener: js.Function1[/* event */ ClipboardEvent, Any], element: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_copy(eventName: copy, listener: js.Function1[/* event */ ClipboardEvent, Any], element: Window): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   inline def useEventListener_cuechange(eventName: cuechange, listener: js.Function1[/* event */ Event, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useEventListener_cuechange(eventName: cuechange, listener: js.Function1[/* event */ Event, Any], element: Document): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useEventListener_cuechange(eventName: cuechange, listener: js.Function1[/* event */ Event, Any], element: EventTarget): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useEventListener_cuechange(eventName: cuechange, listener: js.Function1[/* event */ Event, Any], element: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useEventListener_cuechange(eventName: cuechange, listener: js.Function1[/* event */ Event, Any], element: Window): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def useEventListener_cut(eventName: cut, listener: js.Function1[/* event */ ClipboardEvent, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_cut(eventName: cut, listener: js.Function1[/* event */ ClipboardEvent, Any], element: Document): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_cut(eventName: cut, listener: js.Function1[/* event */ ClipboardEvent, Any], element: EventTarget): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_cut(eventName: cut, listener: js.Function1[/* event */ ClipboardEvent, Any], element: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_cut(eventName: cut, listener: js.Function1[/* event */ ClipboardEvent, Any], element: Window): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useEventListener_dblclick(eventName: dblclick, listener: js.Function1[/* event */ MouseEvent, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useEventListener_dblclick(eventName: dblclick, listener: js.Function1[/* event */ MouseEvent, Any], element: Document): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -1199,6 +1215,12 @@ object mod {
     element: HTMLElement
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useEventListener_pageshow(eventName: pageshow, listener: js.Function1[/* event */ PageTransitionEvent, Any], element: Window): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def useEventListener_paste(eventName: paste, listener: js.Function1[/* event */ ClipboardEvent, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_paste(eventName: paste, listener: js.Function1[/* event */ ClipboardEvent, Any], element: Document): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_paste(eventName: paste, listener: js.Function1[/* event */ ClipboardEvent, Any], element: EventTarget): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_paste(eventName: paste, listener: js.Function1[/* event */ ClipboardEvent, Any], element: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_paste(eventName: paste, listener: js.Function1[/* event */ ClipboardEvent, Any], element: Window): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useEventListener_pause(eventName: pause, listener: js.Function1[/* event */ Event, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useEventListener_pause(eventName: pause, listener: js.Function1[/* event */ Event, Any], element: Document): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -1768,7 +1790,7 @@ object mod {
     * @param deps If present, effect will only activate if the values in the list change.
     *
     * @version 16.8.0
-    * @see https://reactjs.org/docs/hooks-reference.html#useeffect
+    * @see https://react.dev/reference/react/useEffect
     */
   /* was `typeof useEffect` */
   inline def useIsomorphicLayoutEffect(effect: EffectCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useIsomorphicLayoutEffect")(effect.asInstanceOf[js.Any]).asInstanceOf[Unit]

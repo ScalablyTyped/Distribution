@@ -10,8 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @classDescription object used for grouping fields on pages (currently only supported on assistant pages).
   * @return {nlobjFieldGroup}
-  * @constructor
-  *
   * @since 2009.2
   */
 @js.native

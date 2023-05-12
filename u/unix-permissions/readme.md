@@ -1,7 +1,7 @@
 
 # Scala.js typings for unix-permissions
 
-Typings are for version 4.7.0
+Typings are for version 4.8.0
 
 ## Library description:
 Swiss Army knife for Unix permissions

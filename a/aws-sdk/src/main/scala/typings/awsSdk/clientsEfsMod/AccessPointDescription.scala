@@ -37,7 +37,7 @@ trait AccessPointDescription extends StObject {
   var Name: js.UndefOr[typings.awsSdk.clientsEfsMod.Name] = js.undefined
   
   /**
-    * Identified the Amazon Web Services account that owns the access point resource.
+    * Identifies the Amazon Web Services account that owns the access point resource.
     */
   var OwnerId: js.UndefOr[AwsAccountId] = js.undefined
   

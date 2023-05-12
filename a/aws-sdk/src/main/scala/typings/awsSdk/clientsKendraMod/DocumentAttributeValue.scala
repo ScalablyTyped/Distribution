@@ -17,7 +17,7 @@ trait DocumentAttributeValue extends StObject {
   var LongValue: js.UndefOr[Long] = js.undefined
   
   /**
-    * A list of strings. 
+    * A list of strings. The default maximum length or number of strings is 10.
     */
   var StringListValue: js.UndefOr[DocumentAttributeStringListValue] = js.undefined
   

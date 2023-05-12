@@ -8,6 +8,9 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.ClassAttributes
 import typings.react.mod.ComponentType
 import typings.react.mod.DOMAttributes
+import typings.react.reactStrings._empty
+import typings.react.reactStrings.`use-credentials`
+import typings.react.reactStrings.anonymous
 import typings.react.reactStrings.decimal
 import typings.react.reactStrings.email
 import typings.react.reactStrings.environment
@@ -23,6 +26,7 @@ import typings.react.reactStrings.text
 import typings.react.reactStrings.url
 import typings.react.reactStrings.user
 import typings.react.reactStrings.yes
+import typings.std.FormData
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLButtonElement
 import typings.wordpressComponents.buttonMod.Button.Props
@@ -51,8 +55,8 @@ object buttonMod {
   object Button {
     
     /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-    - typings.react.mod.HTMLAttributes because var conflicts: className. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, nonce, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, placeholder, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, unselectable, role, datatype, itemProp, title, autoCorrect, results
-    - typings.react.mod.AllHTMLAttributes because var conflicts: className, disabled, label. Inlined formAction, srcDoc, alt, coords, src, max, marginWidth, keyParams, required, selected, kind, charSet, srcLang, sizes, dateTime, multiple, height, rowSpan, as, method, content, start, httpEquiv, default, optimum, target, scope, sandbox, seamless, classID, noValidate, autoPlay, min, cols, capture, encType, wmode, wrap, keyType, frameBorder, media, preload, useMap, size, scoped, rel, maxLength, manifest, colSpan, data, formEncType, pattern, form, open, accept, step, defer, shape, value, cite, minLength, cellSpacing, readOnly, challenge, poster, name, formMethod, playsInline, marginHeight, htmlFor, allowTransparency, headers, width, summary, formTarget, rows, href, action, scrolling, low, acceptCharset, reversed, autoFocus, controls, loop, mediaGroup, download, crossOrigin, muted, async, integrity, high, `type`, checked, srcSet, formNoValidate, allowFullScreen, list, cellPadding, autoComplete, hrefLang, span
+    - typings.react.mod.HTMLAttributes because var conflicts: className. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, content, nonce, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, rev, placeholder, rel, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, autoFocus, unselectable, role, datatype, itemProp, title, autoCorrect, results
+    - typings.react.mod.AllHTMLAttributes because var conflicts: className, disabled, label. Inlined formAction, srcDoc, alt, coords, src, max, marginWidth, keyParams, required, selected, kind, charSet, srcLang, sizes, dateTime, multiple, height, rowSpan, as, method, start, httpEquiv, default, optimum, target, scope, sandbox, seamless, classID, noValidate, autoPlay, min, cols, capture, encType, wmode, wrap, keyType, frameBorder, media, preload, useMap, size, scoped, maxLength, manifest, colSpan, data, formEncType, pattern, form, open, accept, step, defer, shape, value, cite, minLength, cellSpacing, readOnly, challenge, poster, name, formMethod, playsInline, marginHeight, htmlFor, allowTransparency, headers, width, summary, formTarget, rows, href, action, scrolling, low, acceptCharset, reversed, controls, loop, mediaGroup, download, crossOrigin, muted, async, integrity, high, `type`, checked, srcSet, formNoValidate, allowFullScreen, list, cellPadding, autoComplete, hrefLang, span
     - typings.react.mod.HTMLProps because var conflicts: className, disabled, label. Inlined  */ trait AnchorProps
       extends StObject
          with BaseProps
@@ -74,7 +78,7 @@ object buttonMod {
       // Standard HTML Attributes
       var accessKey: js.UndefOr[String] = js.undefined
       
-      var action: js.UndefOr[String] = js.undefined
+      var action: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
       
       var allowFullScreen: js.UndefOr[Boolean] = js.undefined
       
@@ -131,7 +135,7 @@ object buttonMod {
       
       var coords: js.UndefOr[String] = js.undefined
       
-      var crossOrigin: js.UndefOr[String] = js.undefined
+      var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
       
       var data: js.UndefOr[String] = js.undefined
       
@@ -156,7 +160,7 @@ object buttonMod {
       
       var form: js.UndefOr[String] = js.undefined
       
-      var formAction: js.UndefOr[String] = js.undefined
+      var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
       
       var formEncType: js.UndefOr[String] = js.undefined
       
@@ -288,6 +292,8 @@ object buttonMod {
       
       var results: js.UndefOr[Double] = js.undefined
       
+      var rev: js.UndefOr[String] = js.undefined
+      
       var reversed: js.UndefOr[Boolean] = js.undefined
       
       // <command>, <menuitem>
@@ -396,7 +402,9 @@ object buttonMod {
         
         inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
         
-        inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+        inline def setAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+        
+        inline def setActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
         
         inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
         
@@ -508,7 +516,7 @@ object buttonMod {
         
         inline def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
         
-        inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+        inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
         
         inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
         
@@ -560,7 +568,9 @@ object buttonMod {
         
         inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
         
-        inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+        inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+        
+        inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
         
         inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
         
@@ -805,6 +815,10 @@ object buttonMod {
         inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
         
         inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+        
+        inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+        
+        inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
         
         inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
         
@@ -1196,8 +1210,8 @@ object buttonMod {
     }
     
     /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-    - typings.react.mod.HTMLAttributes because var conflicts: className. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, nonce, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, placeholder, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, unselectable, role, datatype, itemProp, title, autoCorrect, results
-    - typings.react.mod.AllHTMLAttributes because var conflicts: className, disabled, label. Inlined formAction, srcDoc, alt, coords, src, max, marginWidth, keyParams, required, selected, kind, charSet, srcLang, sizes, dateTime, multiple, height, rowSpan, as, method, content, start, httpEquiv, default, optimum, target, scope, sandbox, seamless, classID, noValidate, autoPlay, min, cols, capture, encType, wmode, wrap, keyType, frameBorder, media, preload, useMap, size, scoped, rel, maxLength, manifest, colSpan, data, formEncType, pattern, form, open, accept, step, defer, shape, value, cite, minLength, cellSpacing, readOnly, challenge, poster, name, formMethod, playsInline, marginHeight, htmlFor, allowTransparency, headers, width, summary, formTarget, rows, href, action, scrolling, low, acceptCharset, reversed, autoFocus, controls, loop, mediaGroup, download, crossOrigin, muted, async, integrity, high, `type`, checked, srcSet, formNoValidate, allowFullScreen, list, cellPadding, autoComplete, hrefLang, span
+    - typings.react.mod.HTMLAttributes because var conflicts: className. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, content, nonce, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, rev, placeholder, rel, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, autoFocus, unselectable, role, datatype, itemProp, title, autoCorrect, results
+    - typings.react.mod.AllHTMLAttributes because var conflicts: className, disabled, label. Inlined formAction, srcDoc, alt, coords, src, max, marginWidth, keyParams, required, selected, kind, charSet, srcLang, sizes, dateTime, multiple, height, rowSpan, as, method, start, httpEquiv, default, optimum, target, scope, sandbox, seamless, classID, noValidate, autoPlay, min, cols, capture, encType, wmode, wrap, keyType, frameBorder, media, preload, useMap, size, scoped, maxLength, manifest, colSpan, data, formEncType, pattern, form, open, accept, step, defer, shape, value, cite, minLength, cellSpacing, readOnly, challenge, poster, name, formMethod, playsInline, marginHeight, htmlFor, allowTransparency, headers, width, summary, formTarget, rows, href, action, scrolling, low, acceptCharset, reversed, controls, loop, mediaGroup, download, crossOrigin, muted, async, integrity, high, `type`, checked, srcSet, formNoValidate, allowFullScreen, list, cellPadding, autoComplete, hrefLang, span
     - typings.react.mod.HTMLProps because var conflicts: className, disabled, label. Inlined  */ trait ButtonProps
       extends StObject
          with BaseProps
@@ -1219,7 +1233,7 @@ object buttonMod {
       // Standard HTML Attributes
       var accessKey: js.UndefOr[String] = js.undefined
       
-      var action: js.UndefOr[String] = js.undefined
+      var action: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
       
       var allowFullScreen: js.UndefOr[Boolean] = js.undefined
       
@@ -1276,7 +1290,7 @@ object buttonMod {
       
       var coords: js.UndefOr[String] = js.undefined
       
-      var crossOrigin: js.UndefOr[String] = js.undefined
+      var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
       
       var data: js.UndefOr[String] = js.undefined
       
@@ -1301,7 +1315,7 @@ object buttonMod {
       
       var form: js.UndefOr[String] = js.undefined
       
-      var formAction: js.UndefOr[String] = js.undefined
+      var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
       
       var formEncType: js.UndefOr[String] = js.undefined
       
@@ -1433,6 +1447,8 @@ object buttonMod {
       
       var results: js.UndefOr[Double] = js.undefined
       
+      var rev: js.UndefOr[String] = js.undefined
+      
       var reversed: js.UndefOr[Boolean] = js.undefined
       
       // <command>, <menuitem>
@@ -1541,7 +1557,9 @@ object buttonMod {
         
         inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
         
-        inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+        inline def setAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+        
+        inline def setActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
         
         inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
         
@@ -1653,7 +1671,7 @@ object buttonMod {
         
         inline def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
         
-        inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+        inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
         
         inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
         
@@ -1705,7 +1723,9 @@ object buttonMod {
         
         inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
         
-        inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+        inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+        
+        inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
         
         inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
         
@@ -1950,6 +1970,10 @@ object buttonMod {
         inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
         
         inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+        
+        inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+        
+        inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
         
         inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
         

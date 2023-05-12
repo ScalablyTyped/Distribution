@@ -11,7 +11,10 @@ trait PlannerPlan
   // Read-only. Nullable. Collection of buckets in the plan.
   var buckets: js.UndefOr[NullableOption[js.Array[PlannerBucket]]] = js.undefined
   
-  // Identifies the container of the plan. After it is set, this property can’t be updated. Required.
+  /**
+    * Identifies the container of the plan. Specify only the url, the containerId and type, or all properties. After it is
+    * set, this property can’t be updated. Required.
+    */
   var container: js.UndefOr[NullableOption[PlannerPlanContainer]] = js.undefined
   
   // Read-only. The user who created the plan.

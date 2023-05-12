@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("johnny-five", "Fn")
-@js.native
-open class Fn () extends StObject
-/* static members */
 object Fn {
   
   @JSImport("johnny-five", "Fn")
@@ -40,7 +36,7 @@ object Fn {
   
   inline def sum(values: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(values.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def toFixed(number: Double, digits: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("toFixed")(number.asInstanceOf[js.Any], digits.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def toFixed(number: Double, digits: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toFixed")(number.asInstanceOf[js.Any], digits.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def uid(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[String]
   

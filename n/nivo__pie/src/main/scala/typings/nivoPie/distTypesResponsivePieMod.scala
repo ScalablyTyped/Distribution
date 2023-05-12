@@ -1,5 +1,6 @@
 package typings.nivoPie
 
+import typings.nivoPie.distTypesTypesMod.MayHaveLabel
 import typings.nivoPie.distTypesTypesMod.PieSvgProps
 import typings.nivoPie.nivoPieStrings.height
 import typings.nivoPie.nivoPieStrings.width
@@ -15,5 +16,5 @@ object distTypesResponsivePieMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ResponsivePie[RawDatum](props: Omit[PieSvgProps[RawDatum], width | height]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ResponsivePie")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ResponsivePie[RawDatum /* <: MayHaveLabel */](props: Omit[PieSvgProps[RawDatum], width | height]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ResponsivePie")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

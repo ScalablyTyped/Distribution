@@ -16,7 +16,7 @@ object libIconsCopyrightOutlinedMod extends Shortcut {
   @js.native
   trait CopyrightOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_CopyrightOutlinedIconType: String = js.native

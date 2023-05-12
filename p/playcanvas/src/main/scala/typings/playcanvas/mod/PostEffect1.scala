@@ -12,14 +12,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PostEffect1 extends StObject {
   
-  var depthMap: Any = js.native
-  
   /**
     * The graphics device of the application.
     *
-    * @type {GraphicsDevice}
+    * @type {import('../../platform/graphics/graphics-device.js').GraphicsDevice}
     */
   var device: GraphicsDevice = js.native
+  
+  /**
+    * Draw a screen-space rectangle in a render target, using a specified shader.
+    *
+    * @param {import('../../platform/graphics/render-target.js').RenderTarget} target - The output
+    * render target.
+    * @param {import('../../platform/graphics/shader.js').Shader} shader - The shader to be used for
+    * drawing the rectangle.
+    * @param {import('../../core/math/vec4.js').Vec4} [rect] - The normalized screen-space position
+    * (rect.x, rect.y) and size (rect.z, rect.w) of the rectangle. Default is [0, 0, 1, 1].
+    */
+  def drawQuad(target: RenderTarget, shader: Shader): Unit = js.native
+  def drawQuad(target: RenderTarget, shader: Shader, rect: Vec4): Unit = js.native
   
   /**
     * The property that should to be set to `true` (by the custom post effect) if a depth map
@@ -32,27 +43,13 @@ trait PostEffect1 extends StObject {
   /**
     * Render the post effect using the specified inputTarget to the specified outputTarget.
     *
-    * @param {RenderTarget} inputTarget - The input render target.
-    * @param {RenderTarget} outputTarget - The output render target. If null then this will be the
-    * screen.
-    * @param {Vec4} [rect] - The rect of the current camera. If not specified, it will default to
-    * [0, 0, 1, 1].
+    * @param {import('../../platform/graphics/render-target.js').RenderTarget} inputTarget - The
+    * input render target.
+    * @param {import('../../platform/graphics/render-target.js').RenderTarget} outputTarget - The
+    * output render target. If null then this will be the screen.
+    * @param {import('../../core/math/vec4.js').Vec4} [rect] - The rect of the current camera. If
+    * not specified, it will default to [0, 0, 1, 1].
     */
   def render(inputTarget: RenderTarget, outputTarget: RenderTarget): Unit = js.native
   def render(inputTarget: RenderTarget, outputTarget: RenderTarget, rect: Vec4): Unit = js.native
-  
-  /**
-    * The shader definition for the fullscreen quad. Needs to be set by the custom post effect
-    * (default is null). Used when calling {@link drawFullscreenQuad}.
-    *
-    * @type {Shader|null}
-    */
-  var shader: Shader | Null = js.native
-  
-  /**
-    * The vertex buffer for the fullscreen quad. Used when calling {@link drawFullscreenQuad}.
-    *
-    * @type {VertexBuffer}
-    */
-  var vertexBuffer: VertexBuffer = js.native
 }

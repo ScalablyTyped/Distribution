@@ -5,6 +5,8 @@ import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.AbsoluteFsPath
 import typings.angularCompilerCli.srcNgtscImportsMod.ReferenceEmitter
 import typings.angularCompilerCli.srcNgtscIncrementalApiMod.IncrementalBuild
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.MetadataReader
+import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.MetadataReaderWithIndex
+import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.NgModuleIndex
 import typings.angularCompilerCli.srcNgtscPerfSrcApiMod.PerfRecorder
 import typings.angularCompilerCli.srcNgtscProgramDriverSrcApiMod.ProgramDriver
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ReflectionHost
@@ -40,6 +42,8 @@ object srcNgtscTypecheckMod {
       compilerHost: PickCompilerHostgetCanoni,
       priorBuild: IncrementalBuild[Any, FileTypeCheckingData],
       metaReader: MetadataReader,
+      localMetaReader: MetadataReaderWithIndex,
+      ngModuleIndex: NgModuleIndex,
       componentScopeReader: ComponentScopeReader,
       typeCheckScopeRegistry: TypeCheckScopeRegistry,
       perf: PerfRecorder

@@ -418,6 +418,11 @@ object mod {
     var urlSuffix: js.UndefOr[String] = js.undefined
     
     /**
+      * Use new Artifact Bundles upload, that enables use of Debug ID for Source Maps discovery.
+      */
+    var useArtifactBundle: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * This attempts sourcemap validation before upload when rewriting is not enabled.
       * It will spot a variety of issues with source maps and cancel the upload if any are found.
       * This is not enabled by default as this can cause false positives.
@@ -486,6 +491,10 @@ object mod {
       
       inline def setUrlSuffixUndefined: Self = StObject.set(x, "urlSuffix", js.undefined)
       
+      inline def setUseArtifactBundle(value: Boolean): Self = StObject.set(x, "useArtifactBundle", value.asInstanceOf[js.Any])
+      
+      inline def setUseArtifactBundleUndefined: Self = StObject.set(x, "useArtifactBundle", js.undefined)
+      
       inline def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       
       inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
@@ -516,6 +525,8 @@ object mod {
     var urlPrefix: js.UndefOr[String] = js.undefined
     
     var urlSuffix: js.UndefOr[String] = js.undefined
+    
+    var useArtifactBundle: js.UndefOr[Boolean] = js.undefined
     
     var validate: js.UndefOr[Boolean] = js.undefined
   }
@@ -580,6 +591,10 @@ object mod {
       inline def setUrlSuffix(value: String): Self = StObject.set(x, "urlSuffix", value.asInstanceOf[js.Any])
       
       inline def setUrlSuffixUndefined: Self = StObject.set(x, "urlSuffix", js.undefined)
+      
+      inline def setUseArtifactBundle(value: Boolean): Self = StObject.set(x, "useArtifactBundle", value.asInstanceOf[js.Any])
+      
+      inline def setUseArtifactBundleUndefined: Self = StObject.set(x, "useArtifactBundle", js.undefined)
       
       inline def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       

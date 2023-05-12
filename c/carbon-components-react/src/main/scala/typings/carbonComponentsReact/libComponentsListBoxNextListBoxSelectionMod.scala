@@ -75,6 +75,7 @@ import typings.react.mod.TouchEventHandler
 import typings.react.mod.TransitionEventHandler
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEventHandler
+import typings.std.FormData
 import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
 import typings.std.Record
@@ -235,6 +236,8 @@ object libComponentsListBoxNextListBoxSelectionMod extends Shortcut {
     
     var color: js.UndefOr[String] = js.native
     
+    var content: js.UndefOr[String] = js.native
+    
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
     
     var contextMenu: js.UndefOr[String] = js.native
@@ -255,7 +258,7 @@ object libComponentsListBoxNextListBoxSelectionMod extends Shortcut {
     
     var form: js.UndefOr[String] = js.native
     
-    var formAction: js.UndefOr[String] = js.native
+    var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.native
     
     var formEncType: js.UndefOr[String] = js.native
     
@@ -462,9 +465,13 @@ object libComponentsListBoxNextListBoxSelectionMod extends Shortcut {
     
     var radioGroup: js.UndefOr[String] = js.native
     
+    var rel: js.UndefOr[String] = js.native
+    
     var resource: js.UndefOr[String] = js.native
     
     var results: js.UndefOr[Double] = js.native
+    
+    var rev: js.UndefOr[String] = js.native
     
     var role: js.UndefOr[AriaRole] = js.native
     

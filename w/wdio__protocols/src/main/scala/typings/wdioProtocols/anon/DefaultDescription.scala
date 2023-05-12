@@ -1,0 +1,40 @@
+package typings.wdioProtocols.anon
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait DefaultDescription extends StObject {
+  
+  var default: Unit
+  
+  var description: String
+  
+  var name: String
+  
+  var required: Boolean
+  
+  var `type`: String
+}
+object DefaultDescription {
+  
+  inline def apply(default: Unit, description: String, name: String, required: Boolean, `type`: String): DefaultDescription = {
+    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DefaultDescription]
+  }
+  
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultDescription] (val x: Self) extends AnyVal {
+    
+    inline def setDefault(value: Unit): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
+}

@@ -62,6 +62,12 @@ object TemporaryCacheKeys extends StObject {
   /* "request.origin" */ val ORIGIN_URI: typings.azureMsalBrowser.distUtilsBrowserConstantsMod.TemporaryCacheKeys.ORIGIN_URI & String = js.native
   
   @js.native
+  sealed trait REDIRECT_CONTEXT
+    extends StObject
+       with TemporaryCacheKeys
+  /* "request.redirect.context" */ val REDIRECT_CONTEXT: typings.azureMsalBrowser.distUtilsBrowserConstantsMod.TemporaryCacheKeys.REDIRECT_CONTEXT & String = js.native
+  
+  @js.native
   sealed trait RENEW_STATUS
     extends StObject
        with TemporaryCacheKeys

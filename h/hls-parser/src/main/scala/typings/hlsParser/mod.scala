@@ -454,19 +454,33 @@ object mod {
   
   trait Options extends StObject {
     
-    var strictMode: Boolean
+    var allowClosedCaptionsNone: js.UndefOr[Boolean] = js.undefined
+    
+    var silent: js.UndefOr[Boolean] = js.undefined
+    
+    var strictMode: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
-    inline def apply(strictMode: Boolean): Options = {
-      val __obj = js.Dynamic.literal(strictMode = strictMode.asInstanceOf[js.Any])
+    inline def apply(): Options = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
+      inline def setAllowClosedCaptionsNone(value: Boolean): Self = StObject.set(x, "allowClosedCaptionsNone", value.asInstanceOf[js.Any])
+      
+      inline def setAllowClosedCaptionsNoneUndefined: Self = StObject.set(x, "allowClosedCaptionsNone", js.undefined)
+      
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      
+      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+      
       inline def setStrictMode(value: Boolean): Self = StObject.set(x, "strictMode", value.asInstanceOf[js.Any])
+      
+      inline def setStrictModeUndefined: Self = StObject.set(x, "strictMode", js.undefined)
     }
   }
 }

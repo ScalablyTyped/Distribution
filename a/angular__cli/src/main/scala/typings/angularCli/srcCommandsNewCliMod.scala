@@ -1,6 +1,5 @@
 package typings.angularCli
 
-import typings.angularCli.srcCommandBuilderCommandModuleMod.CommandContext
 import typings.angularCli.srcCommandBuilderSchematicsCommandModuleMod.SchematicsCommandArgs
 import typings.angularCli.srcCommandBuilderSchematicsCommandModuleMod.SchematicsCommandModule
 import org.scalablytyped.runtime.StObject
@@ -9,22 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object srcCommandsNewCliMod {
   
-  @JSImport("@angular/cli/src/commands/new/cli", "NewCommandModule")
+  @JSImport("@angular/cli/src/commands/new/cli", JSImport.Default)
   @js.native
-  open class NewCommandModule protected () extends SchematicsCommandModule {
-    def this(context: CommandContext) = this()
-    
-    @JSName("aliases")
-    var aliases_NewCommandModule: String = js.native
-    
-    @JSName("describe")
-    var describe_NewCommandModule: String = js.native
-    
-    /** Find a collection from config that has an `ng-new` schematic. */
-    /* private */ var getCollectionFromConfig: Any = js.native
-    
-    /* private */ val schematicName: Any = js.native
-  }
+  open class default () extends NewCommandModule
   
   trait NewCommandArgs
     extends StObject
@@ -47,5 +33,22 @@ object srcCommandsNewCliMod {
       
       inline def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
     }
+  }
+  
+  @js.native
+  trait NewCommandModule extends SchematicsCommandModule {
+    
+    var aliases: js.UndefOr[js.Array[String]] = js.native
+    
+    @JSName("describe")
+    var describe_NewCommandModule: String = js.native
+    
+    /** Find a collection from config that has an `ng-new` schematic. */
+    /* private */ var getCollectionFromConfig: Any = js.native
+    
+    @JSName("longDescriptionPath")
+    var longDescriptionPath_NewCommandModule: String = js.native
+    
+    /* private */ val schematicName: Any = js.native
   }
 }

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MathMLElement
   extends StObject
      with Element
-     with DocumentAndElementEventHandlers
      with ElementCSSInlineStyle
      with GlobalEventHandlers
      with HTMLOrSVGElement {

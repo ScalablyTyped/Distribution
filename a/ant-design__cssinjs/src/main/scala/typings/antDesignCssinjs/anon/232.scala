@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.WebkitMaskPosition
+import typings.csstype.mod.Property.ScrollSnapCoordinate
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `232` extends StObject {
   
   var value: js.UndefOr[
-    (WebkitMaskPosition[Double | String]) | (js.Array[
+    (ScrollSnapCoordinate[Double | String]) | (js.Array[
       (Extract[
         js.UndefOr[
-          (WebkitMaskPosition[Double | String]) | (js.Array[NonNullable[js.UndefOr[WebkitMaskPosition[Double | String]]]])
+          (ScrollSnapCoordinate[Double | String]) | (js.Array[NonNullable[js.UndefOr[ScrollSnapCoordinate[Double | String]]]])
         ], 
         String
-      ]) | (NonNullable[js.UndefOr[WebkitMaskPosition[Double | String]]])
+      ]) | (NonNullable[js.UndefOr[ScrollSnapCoordinate[Double | String]]])
     ])
   ] = js.native
 }

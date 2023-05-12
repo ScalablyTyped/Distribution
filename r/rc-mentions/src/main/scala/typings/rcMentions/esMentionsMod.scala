@@ -54,8 +54,11 @@ import typings.rcMentions.rcMentionsStrings.tree
 import typings.rcMentions.rcMentionsStrings.url
 import typings.rcMentions.rcMentionsStrings.vertical
 import typings.rcMentions.rcMentionsStrings.yes
+import typings.rcTextarea.anon.AffixWrapper
+import typings.rcTextarea.anon.Count
 import typings.rcTextarea.anon.Height
-import typings.rcTextarea.esResizableTextAreaMod.AutoSizeType
+import typings.rcTextarea.anon.Textarea
+import typings.rcTextarea.esInterfaceMod.AutoSizeType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -142,7 +145,7 @@ object esMentionsMod {
     val typeof: js.Symbol = js.native
   }
   
-  /* Inlined std.Omit<rc-textarea.rc-textarea.TextAreaProps, 'prefix' | 'onChange' | 'onSelect'> */
+  /* Inlined std.Omit<rc-textarea.rc-textarea.TextAreaProps, 'prefix' | 'onChange' | 'onSelect' | 'allowClear' | 'showCount'> */
   trait BaseTextareaAttrs extends StObject {
     
     var about: js.UndefOr[String] = js.undefined
@@ -263,9 +266,15 @@ object esMentionsMod {
     
     var className: js.UndefOr[String] = js.undefined
     
+    var classNames: js.UndefOr[Count] = js.undefined
+    
+    var classes: js.UndefOr[AffixWrapper] = js.undefined
+    
     var color: js.UndefOr[String] = js.undefined
     
     var cols: js.UndefOr[Double] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -487,11 +496,15 @@ object esMentionsMod {
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var required: js.UndefOr[Boolean] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -504,6 +517,10 @@ object esMentionsMod {
     var spellCheck: js.UndefOr[Booleanish] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
+    
+    var styles: js.UndefOr[Textarea] = js.undefined
+    
+    var suffix: js.UndefOr[ReactNode] = js.undefined
     
     var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
     
@@ -769,6 +786,14 @@ object esMentionsMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
+      inline def setClassNames(value: Count): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
+      
+      inline def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
+      
+      inline def setClasses(value: AffixWrapper): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      
+      inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+      
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
@@ -777,9 +802,13 @@ object esMentionsMod {
       
       inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -1219,6 +1248,10 @@ object esMentionsMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -1230,6 +1263,10 @@ object esMentionsMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1254,6 +1291,14 @@ object esMentionsMod {
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      
+      inline def setStyles(value: Textarea): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      
+      inline def setSuffix(value: ReactNode): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+      
+      inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
       
       inline def setSuppressContentEditableWarning(value: Boolean): Self = StObject.set(x, "suppressContentEditableWarning", value.asInstanceOf[js.Any])
       
@@ -1299,6 +1344,57 @@ object esMentionsMod {
     }
   }
   
+  /* Inlined parent std.Omit<rc-mentions.rc-mentions/es/Option.OptionProps, 'children'> */
+  trait DataDrivenOptionProps extends StObject {
+    
+    var className: js.UndefOr[String] = js.undefined
+    
+    var disabled: js.UndefOr[Boolean] = js.undefined
+    
+    var key: js.UndefOr[String] = js.undefined
+    
+    var label: js.UndefOr[ReactNode] = js.undefined
+    
+    var style: js.UndefOr[CSSProperties] = js.undefined
+    
+    var value: js.UndefOr[String] = js.undefined
+  }
+  object DataDrivenOptionProps {
+    
+    inline def apply(): DataDrivenOptionProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DataDrivenOptionProps]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataDrivenOptionProps] (val x: Self) extends AnyVal {
+      
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      
+      inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
   /* Rewritten from type alias, can be one of: 
     - typings.rcMentions.rcMentionsStrings.ltr
     - typings.rcMentions.rcMentionsStrings.rtl
@@ -1337,6 +1433,8 @@ object esMentionsMod {
     /** @private Testing usage. Do not use in prod. It will not work as your expect. */
     var open: js.UndefOr[Boolean] = js.undefined
     
+    var options: js.UndefOr[js.Array[DataDrivenOptionProps]] = js.undefined
+    
     var placement: js.UndefOr[Placement] = js.undefined
     
     var prefix: js.UndefOr[String | js.Array[String]] = js.undefined
@@ -1345,7 +1443,7 @@ object esMentionsMod {
     
     var transitionName: js.UndefOr[String] = js.undefined
     
-    var validateSearch: js.UndefOr[js.Function2[/* text */ String, /* props */ this.type, Boolean]] = js.undefined
+    var validateSearch: js.UndefOr[js.Function2[/* text */ String, /* split */ js.UndefOr[String], Boolean]] = js.undefined
     
     @JSName("value")
     var value_MentionsProps: js.UndefOr[String] = js.undefined
@@ -1402,6 +1500,12 @@ object esMentionsMod {
       
       inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
+      inline def setOptions(value: js.Array[DataDrivenOptionProps]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      
+      inline def setOptionsVarargs(value: DataDrivenOptionProps*): Self = StObject.set(x, "options", js.Array(value*))
+      
       inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
       inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
@@ -1420,7 +1524,7 @@ object esMentionsMod {
       
       inline def setTransitionNameUndefined: Self = StObject.set(x, "transitionName", js.undefined)
       
-      inline def setValidateSearch(value: (/* text */ String, MentionsProps) => Boolean): Self = StObject.set(x, "validateSearch", js.Any.fromFunction2(value))
+      inline def setValidateSearch(value: (/* text */ String, /* split */ js.UndefOr[String]) => Boolean): Self = StObject.set(x, "validateSearch", js.Any.fromFunction2(value))
       
       inline def setValidateSearchUndefined: Self = StObject.set(x, "validateSearch", js.undefined)
       

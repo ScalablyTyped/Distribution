@@ -9,12 +9,12 @@ trait EnableDomainTransferLockResponse extends StObject {
   /**
     * Identifier for tracking the progress of the request. To use this ID to query the operation status, use GetOperationDetail.
     */
-  var OperationId: typings.awsSdk.clientsRoute53domainsMod.OperationId
+  var OperationId: js.UndefOr[typings.awsSdk.clientsRoute53domainsMod.OperationId] = js.undefined
 }
 object EnableDomainTransferLockResponse {
   
-  inline def apply(OperationId: OperationId): EnableDomainTransferLockResponse = {
-    val __obj = js.Dynamic.literal(OperationId = OperationId.asInstanceOf[js.Any])
+  inline def apply(): EnableDomainTransferLockResponse = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnableDomainTransferLockResponse]
   }
   
@@ -22,5 +22,7 @@ object EnableDomainTransferLockResponse {
   implicit open class MutableBuilder[Self <: EnableDomainTransferLockResponse] (val x: Self) extends AnyVal {
     
     inline def setOperationId(value: OperationId): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
+    
+    inline def setOperationIdUndefined: Self = StObject.set(x, "OperationId", js.undefined)
   }
 }

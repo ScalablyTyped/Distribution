@@ -114,6 +114,11 @@ object pluginsMod {
   trait MultiDragOptions extends StObject {
     
     /**
+      * If you don't want to deselect items on outside click
+      */
+    var avoidImplicitDeselect: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Enable the plugin
       */
     var multiDrag: js.UndefOr[Boolean] = js.undefined
@@ -149,6 +154,10 @@ object pluginsMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: MultiDragOptions] (val x: Self) extends AnyVal {
+      
+      inline def setAvoidImplicitDeselect(value: Boolean): Self = StObject.set(x, "avoidImplicitDeselect", value.asInstanceOf[js.Any])
+      
+      inline def setAvoidImplicitDeselectUndefined: Self = StObject.set(x, "avoidImplicitDeselect", js.undefined)
       
       inline def setMultiDrag(value: Boolean): Self = StObject.set(x, "multiDrag", value.asInstanceOf[js.Any])
       

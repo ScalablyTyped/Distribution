@@ -1,14 +1,14 @@
 package typings.atlaskitAnalyticsNext
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atlaskitAnalyticsNext.anon.OmitAnalyticsErrorBoundar
 import typings.atlaskitAnalyticsNext.atlaskitAnalyticsNextStrings.createAnalyticsEvent
 import typings.atlaskitAnalyticsNext.atlaskitAnalyticsNextStrings.ref
 import typings.atlaskitAnalyticsNext.distTypesComponentsAnalyticsContextTypesMod.AnalyticsContextFunction
+import typings.atlaskitAnalyticsNext.distTypesComponentsAnalyticsErrorBoundaryMod.AnalyticsErrorBoundaryProps
+import typings.atlaskitAnalyticsNext.distTypesComponentsAnalyticsErrorBoundaryMod.default
 import typings.atlaskitAnalyticsNext.distTypesComponentsAnalyticsListenerTypesMod.AnalyticsListenerFunction
 import typings.atlaskitAnalyticsNext.distTypesEventsAnalyticsEventMod.AnalyticsEventPayload
 import typings.atlaskitAnalyticsNext.distTypesEventsAnalyticsEventMod.AnalyticsEventProps
-import typings.atlaskitAnalyticsNext.distTypesEventsAnalyticsEventMod.default
 import typings.atlaskitAnalyticsNext.distTypesEventsUianalyticseventMod.UIAnalyticsEventProps
 import typings.atlaskitAnalyticsNext.distTypesHocsWithAnalyticsContextMod.WithContextProps
 import typings.atlaskitAnalyticsNext.distTypesHocsWithAnalyticsEventsMod.WithAnalyticsEventsProps
@@ -44,11 +44,14 @@ object mod {
   
   @JSImport("@atlaskit/analytics-next", "AnalyticsErrorBoundary")
   @js.native
-  val AnalyticsErrorBoundary: ForwardRefExoticComponent[OmitAnalyticsErrorBoundar] = js.native
+  open class AnalyticsErrorBoundary protected () extends default {
+    def this(props: AnalyticsErrorBoundaryProps) = this()
+  }
   
   @JSImport("@atlaskit/analytics-next", "AnalyticsEvent")
   @js.native
-  open class AnalyticsEvent protected () extends default {
+  open class AnalyticsEvent protected ()
+    extends typings.atlaskitAnalyticsNext.distTypesEventsAnalyticsEventMod.default {
     def this(props: AnalyticsEventProps) = this()
   }
   

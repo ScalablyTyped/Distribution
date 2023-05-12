@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_area120tables-v1alpha1"
-version := "0.0-dt-20220912Z-b1f14e"
+version := "0.0-dt-20230214Z-b1f14e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

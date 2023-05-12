@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetMapGlyphsResponse extends StObject {
   
   /**
-    * The blob's content type.
+    * The glyph, as binary blob.
     */
   var Blob: js.UndefOr[_Blob] = js.undefined
+  
+  /**
+    * The HTTP Cache-Control directive for the value.
+    */
+  var CacheControl: js.UndefOr[String] = js.undefined
   
   /**
     * The map glyph content type. For example, application/octet-stream.
@@ -29,6 +34,10 @@ object GetMapGlyphsResponse {
     inline def setBlob(value: _Blob): Self = StObject.set(x, "Blob", value.asInstanceOf[js.Any])
     
     inline def setBlobUndefined: Self = StObject.set(x, "Blob", js.undefined)
+    
+    inline def setCacheControl(value: String): Self = StObject.set(x, "CacheControl", value.asInstanceOf[js.Any])
+    
+    inline def setCacheControlUndefined: Self = StObject.set(x, "CacheControl", js.undefined)
     
     inline def setContentType(value: String): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     

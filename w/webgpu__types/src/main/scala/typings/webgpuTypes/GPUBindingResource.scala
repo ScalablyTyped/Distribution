@@ -21,8 +21,8 @@ object GPUBindingResource {
     __obj.asInstanceOf[typings.webgpuTypes.GPUBufferBinding]
   }
   
-  inline def GPUExternalTexture(expired: Boolean, label: String): typings.webgpuTypes.GPUExternalTexture = {
-    val __obj = js.Dynamic.literal(__brand = "GPUExternalTexture", expired = expired.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
+  inline def GPUExternalTexture(label: String): typings.webgpuTypes.GPUExternalTexture = {
+    val __obj = js.Dynamic.literal(__brand = "GPUExternalTexture", label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.webgpuTypes.GPUExternalTexture]
   }
   

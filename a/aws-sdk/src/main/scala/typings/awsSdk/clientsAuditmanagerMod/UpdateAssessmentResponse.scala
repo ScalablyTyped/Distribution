@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateAssessmentResponse extends StObject {
   
   /**
-    *  The response object for the UpdateAssessmentRequest API. This is the name of the updated assessment.
+    *  The response object for the UpdateAssessment API. This is the name of the updated assessment.
     */
   var assessment: js.UndefOr[Assessment] = js.undefined
 }

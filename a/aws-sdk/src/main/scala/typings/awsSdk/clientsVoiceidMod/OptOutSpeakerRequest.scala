@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OptOutSpeakerRequest extends StObject {
   
   /**
-    * The identifier of the domain containing the speaker.
+    * The identifier of the domain that contains the speaker.
     */
   var DomainId: typings.awsSdk.clientsVoiceidMod.DomainId
   

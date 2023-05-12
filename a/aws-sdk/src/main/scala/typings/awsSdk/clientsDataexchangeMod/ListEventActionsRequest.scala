@@ -9,7 +9,7 @@ trait ListEventActionsRequest extends StObject {
   /**
     * The unique identifier for the event source.
     */
-  var EventSourceId: js.UndefOr[string] = js.undefined
+  var EventSourceId: js.UndefOr[_String] = js.undefined
   
   /**
     * The maximum number of results returned by a single call.
@@ -19,7 +19,7 @@ trait ListEventActionsRequest extends StObject {
   /**
     * The token value retrieved from a previous call to access the next page of results.
     */
-  var NextToken: js.UndefOr[string] = js.undefined
+  var NextToken: js.UndefOr[_String] = js.undefined
 }
 object ListEventActionsRequest {
   
@@ -31,7 +31,7 @@ object ListEventActionsRequest {
   @scala.inline
   implicit open class MutableBuilder[Self <: ListEventActionsRequest] (val x: Self) extends AnyVal {
     
-    inline def setEventSourceId(value: string): Self = StObject.set(x, "EventSourceId", value.asInstanceOf[js.Any])
+    inline def setEventSourceId(value: _String): Self = StObject.set(x, "EventSourceId", value.asInstanceOf[js.Any])
     
     inline def setEventSourceIdUndefined: Self = StObject.set(x, "EventSourceId", js.undefined)
     
@@ -39,7 +39,7 @@ object ListEventActionsRequest {
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: _String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }

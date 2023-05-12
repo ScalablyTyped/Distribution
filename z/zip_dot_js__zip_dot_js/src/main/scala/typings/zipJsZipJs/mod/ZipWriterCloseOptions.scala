@@ -13,14 +13,14 @@ trait ZipWriterCloseOptions
   
   /**
     * `true` to prevent closing of {@link WritableWriter#writable}.
-    * 
+    *
     * @defaultValue false
     */
   var preventClose: js.UndefOr[Boolean] = js.undefined
   
   /**
     * `true` to use Zip64 to write the entries directory.
-    * 
+    *
     * @defaultValue false
     */
   var zip64: js.UndefOr[Boolean] = js.undefined

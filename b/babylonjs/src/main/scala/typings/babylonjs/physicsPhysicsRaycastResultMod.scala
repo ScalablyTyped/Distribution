@@ -1,6 +1,7 @@
 package typings.babylonjs
 
 import typings.babylonjs.mathsMathDotvectorMod.Vector3
+import typings.babylonjs.physicsV2PhysicsBodyMod.PhysicsBody
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,6 +23,16 @@ object physicsPhysicsRaycastResultMod {
     /* private */ var _rayFromWorld: Any = js.native
     
     /* private */ var _rayToWorld: Any = js.native
+    
+    /**
+      * The Physics body that the ray hit
+      */
+    var body: js.UndefOr[PhysicsBody] = js.native
+    
+    /**
+      * The body Index in case the Physics body is using instances
+      */
+    var bodyIndex: js.UndefOr[Double] = js.native
     
     /**
       * Calculates the distance manually

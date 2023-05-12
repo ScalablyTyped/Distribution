@@ -22,6 +22,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object declarationConstMod {
   
+  @JSImport("@egjs/axes/declaration/const", "ALT")
+  @js.native
+  val ALT: /* "alt" */ String = js.native
+  
+  @JSImport("@egjs/axes/declaration/const", "ANY")
+  @js.native
+  val ANY: /* "any" */ String = js.native
+  
   @JSImport("@egjs/axes/declaration/const", "AXES_EVENTS")
   @js.native
   val AXES_EVENTS: js.Tuple6[hold, release, change, animationStart, animationEnd, finish] = js.native
@@ -40,6 +48,10 @@ object declarationConstMod {
     updateAnimation, 
     isBounceArea
   ] = js.native
+  
+  @JSImport("@egjs/axes/declaration/const", "CTRL")
+  @js.native
+  val CTRL: /* "ctrl" */ String = js.native
   
   @JSImport("@egjs/axes/declaration/const", "DIRECTION_ALL")
   @js.native
@@ -81,6 +93,10 @@ object declarationConstMod {
   @js.native
   val IS_IOS_SAFARI: Boolean = js.native
   
+  @JSImport("@egjs/axes/declaration/const", "META")
+  @js.native
+  val META: /* "meta" */ String = js.native
+  
   @JSImport("@egjs/axes/declaration/const", "MOUSE_LEFT")
   @js.native
   val MOUSE_LEFT: /* "left" */ String = js.native
@@ -93,11 +109,27 @@ object declarationConstMod {
   @js.native
   val MOUSE_RIGHT: /* "right" */ String = js.native
   
+  @JSImport("@egjs/axes/declaration/const", "NONE")
+  @js.native
+  val NONE: /* "none" */ String = js.native
+  
   object PREVENT_DRAG_CSSPROPS {
     
     @JSImport("@egjs/axes/declaration/const", "PREVENT_DRAG_CSSPROPS")
     @js.native
     val ^ : js.Any = js.native
+    
+    @JSImport("@egjs/axes/declaration/const", "PREVENT_DRAG_CSSPROPS.-moz-user-select")
+    @js.native
+    def mozUserSelect: String = js.native
+    
+    inline def mozUserSelect_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("-moz-user-select")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@egjs/axes/declaration/const", "PREVENT_DRAG_CSSPROPS.-ms-user-select")
+    @js.native
+    def msUserSelect: String = js.native
+    
+    inline def msUserSelect_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("-ms-user-select")(x.asInstanceOf[js.Any])
     
     @JSImport("@egjs/axes/declaration/const", "PREVENT_DRAG_CSSPROPS.user-select")
     @js.native
@@ -110,7 +142,17 @@ object declarationConstMod {
     def webkitUserDrag: String = js.native
     
     inline def webkitUserDrag_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("-webkit-user-drag")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@egjs/axes/declaration/const", "PREVENT_DRAG_CSSPROPS.-webkit-user-select")
+    @js.native
+    def webkitUserSelect: String = js.native
+    
+    inline def webkitUserSelect_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("-webkit-user-select")(x.asInstanceOf[js.Any])
   }
+  
+  @JSImport("@egjs/axes/declaration/const", "SHIFT")
+  @js.native
+  val SHIFT: /* "shift" */ String = js.native
   
   @JSImport("@egjs/axes/declaration/const", "TRANSFORM")
   @js.native

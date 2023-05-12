@@ -11,6 +11,10 @@ trait CopyTextureToTexture extends StObject {
   
   /* private */ var _effectWrapper: Any = js.native
   
+  /* private */ var _engine: Any = js.native
+  
+  /* private */ var _isDepthTexture: Any = js.native
+  
   /* private */ var _renderer: Any = js.native
   
   /* private */ var _source: Any = js.native
@@ -32,6 +36,11 @@ trait CopyTextureToTexture extends StObject {
   def copy(source: ThinTexture, destination: IRenderTargetTexture, conversion: ConversionMode): Boolean = js.native
   def copy(source: ThinTexture, destination: RenderTargetWrapper): Boolean = js.native
   def copy(source: ThinTexture, destination: RenderTargetWrapper, conversion: ConversionMode): Boolean = js.native
+  
+  /**
+    * Releases all the resources used by the class
+    */
+  def dispose(): Unit = js.native
   
   /**
     * Indicates if the effect is ready to be used for the copy

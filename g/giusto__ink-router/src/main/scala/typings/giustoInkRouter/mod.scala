@@ -29,7 +29,7 @@ object mod {
     def this(props: CommandLineRouterProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: CommandLineRouterProps, context: Any) = this()
   }
@@ -41,7 +41,7 @@ object mod {
     def this(props: RouteProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: RouteProps, context: Any) = this()
   }
@@ -53,7 +53,7 @@ object mod {
     def this(props: RouterProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: RouterProps, context: Any) = this()
   }
@@ -65,7 +65,7 @@ object mod {
     def this(props: SwitchProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SwitchProps, context: Any) = this()
   }

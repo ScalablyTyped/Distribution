@@ -2,6 +2,7 @@ package typings.forkTsCheckerWebpackPlugin
 
 import typings.forkTsCheckerWebpackPlugin.libFormatterFormatterConfigMod.FormatterConfig
 import typings.forkTsCheckerWebpackPlugin.libFormatterFormatterMod.Formatter
+import typings.forkTsCheckerWebpackPlugin.libFormatterFormatterMod.FormatterPathType
 import typings.forkTsCheckerWebpackPlugin.libFormatterFormatterOptionsMod.FormatterOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,5 +24,5 @@ object libFormatterMod {
   inline def createFormatterConfig(): FormatterConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormatterConfig")().asInstanceOf[FormatterConfig]
   inline def createFormatterConfig(options: FormatterOptions): FormatterConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormatterConfig")(options.asInstanceOf[js.Any]).asInstanceOf[FormatterConfig]
   
-  inline def createWebpackFormatter(formatter: Formatter): Formatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createWebpackFormatter")(formatter.asInstanceOf[js.Any]).asInstanceOf[Formatter]
+  inline def createWebpackFormatter(formatter: Formatter, pathType: FormatterPathType): Formatter = (^.asInstanceOf[js.Dynamic].applyDynamic("createWebpackFormatter")(formatter.asInstanceOf[js.Any], pathType.asInstanceOf[js.Any])).asInstanceOf[Formatter]
 }

@@ -67,88 +67,36 @@ object typesUtilMod {
   
   type Styles = StringDictionary[String]
   
+  @js.native
   trait WaveSurferUtil extends StObject {
     
-    var Observer: Instantiable0[typings.wavesurferJs.srcUtilMod.Observer]
+    var Observer: Instantiable0[typings.wavesurferJs.srcUtilMod.Observer] = js.native
     
-    def absMax(values: js.Array[Double]): Double
+    def absMax(values: js.Array[Double]): Double = js.native
     
-    def clamp(`val`: Double, min: Double, max: Double): Double
+    def clamp(`val`: Double, min: Double, max: Double): Double = js.native
     
-    val debounce: Typeofdebounce
+    val debounce: Typeofdebounce = js.native
     
-    def fetchFile(options: XHROptions): Observer
+    def fetchFile(options: XHROptions): Observer = js.native
     
-    def frame[T](fn: js.Function1[/* arg */ T, Unit]): js.Function1[/* arg */ T, Unit]
+    def frame[T](fn: js.Function1[/* arg */ T, Unit]): js.Function1[/* arg */ T, Unit] = js.native
     
-    def getId(prefix: String): String
+    def getId(): String = js.native
+    def getId(prefix: String): String = js.native
     
-    def ignoreSilenceMode(): Unit
+    def ignoreSilenceMode(): Unit = js.native
     
-    def max(values: js.Array[Double]): Double
+    def max(values: js.Array[Double]): Double = js.native
     
-    def min(values: js.Array[Double]): Double
+    def min(values: js.Array[Double]): Double = js.native
     
-    def preventClick(): Unit
+    def preventClick(): Unit = js.native
     
-    def requestAnimationFrame(): js.Function1[/* fn */ js.Function1[/* t */ Double, Unit], Double]
+    def requestAnimationFrame(): js.Function1[/* fn */ js.Function1[/* t */ Double, Unit], Double] = js.native
     
-    def style[T /* <: HTMLElement */](el: T, styles: Styles): T
+    def style[T /* <: HTMLElement */](el: T, styles: Styles): T = js.native
     
-    def withOrientation(target: HTMLElement, vertical: Boolean): HTMLElement
-  }
-  object WaveSurferUtil {
-    
-    inline def apply(
-      Observer: Instantiable0[Observer],
-      absMax: js.Array[Double] => Double,
-      clamp: (Double, Double, Double) => Double,
-      debounce: Typeofdebounce,
-      fetchFile: XHROptions => Observer,
-      frame: js.Function1[Any, Unit] => js.Function1[Any, Unit],
-      getId: String => String,
-      ignoreSilenceMode: () => Unit,
-      max: js.Array[Double] => Double,
-      min: js.Array[Double] => Double,
-      preventClick: () => Unit,
-      requestAnimationFrame: () => js.Function1[/* fn */ js.Function1[/* t */ Double, Unit], Double],
-      style: (Any, Styles) => Any,
-      withOrientation: (HTMLElement, Boolean) => HTMLElement
-    ): WaveSurferUtil = {
-      val __obj = js.Dynamic.literal(Observer = Observer.asInstanceOf[js.Any], absMax = js.Any.fromFunction1(absMax), clamp = js.Any.fromFunction3(clamp), debounce = debounce.asInstanceOf[js.Any], fetchFile = js.Any.fromFunction1(fetchFile), frame = js.Any.fromFunction1(frame), getId = js.Any.fromFunction1(getId), ignoreSilenceMode = js.Any.fromFunction0(ignoreSilenceMode), max = js.Any.fromFunction1(max), min = js.Any.fromFunction1(min), preventClick = js.Any.fromFunction0(preventClick), requestAnimationFrame = js.Any.fromFunction0(requestAnimationFrame), style = js.Any.fromFunction2(style), withOrientation = js.Any.fromFunction2(withOrientation))
-      __obj.asInstanceOf[WaveSurferUtil]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: WaveSurferUtil] (val x: Self) extends AnyVal {
-      
-      inline def setAbsMax(value: js.Array[Double] => Double): Self = StObject.set(x, "absMax", js.Any.fromFunction1(value))
-      
-      inline def setClamp(value: (Double, Double, Double) => Double): Self = StObject.set(x, "clamp", js.Any.fromFunction3(value))
-      
-      inline def setDebounce(value: Typeofdebounce): Self = StObject.set(x, "debounce", value.asInstanceOf[js.Any])
-      
-      inline def setFetchFile(value: XHROptions => Observer): Self = StObject.set(x, "fetchFile", js.Any.fromFunction1(value))
-      
-      inline def setFrame(value: js.Function1[Any, Unit] => js.Function1[Any, Unit]): Self = StObject.set(x, "frame", js.Any.fromFunction1(value))
-      
-      inline def setGetId(value: String => String): Self = StObject.set(x, "getId", js.Any.fromFunction1(value))
-      
-      inline def setIgnoreSilenceMode(value: () => Unit): Self = StObject.set(x, "ignoreSilenceMode", js.Any.fromFunction0(value))
-      
-      inline def setMax(value: js.Array[Double] => Double): Self = StObject.set(x, "max", js.Any.fromFunction1(value))
-      
-      inline def setMin(value: js.Array[Double] => Double): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
-      
-      inline def setObserver(value: Instantiable0[Observer]): Self = StObject.set(x, "Observer", value.asInstanceOf[js.Any])
-      
-      inline def setPreventClick(value: () => Unit): Self = StObject.set(x, "preventClick", js.Any.fromFunction0(value))
-      
-      inline def setRequestAnimationFrame(value: () => js.Function1[/* fn */ js.Function1[/* t */ Double, Unit], Double]): Self = StObject.set(x, "requestAnimationFrame", js.Any.fromFunction0(value))
-      
-      inline def setStyle(value: (Any, Styles) => Any): Self = StObject.set(x, "style", js.Any.fromFunction2(value))
-      
-      inline def setWithOrientation(value: (HTMLElement, Boolean) => HTMLElement): Self = StObject.set(x, "withOrientation", js.Any.fromFunction2(value))
-    }
+    def withOrientation(target: HTMLElement, vertical: Boolean): HTMLElement = js.native
   }
 }

@@ -62,6 +62,7 @@ import typings.csstype.mod.Property.MaskBorderSource
 import typings.csstype.mod.Property.MaskBorderWidth
 import typings.csstype.mod.Property.MaxInlineSize
 import typings.csstype.mod.Property.MozAppearance
+import typings.csstype.mod.Property.MozBinding
 import typings.csstype.mod.Property.MozBorderBottomColors
 import typings.csstype.mod.Property.MozBorderLeftColors
 import typings.csstype.mod.Property.MozBorderRightColors
@@ -230,7 +231,7 @@ trait VendorLonghandProperties[TLength, TTime] extends StObject {
   var MozAnimationIterationCount: js.UndefOr[AnimationIterationCount] = js.undefined
   
   /**
-    * The **`animation-name`** CSS property specifies the names of one or more `@keyframes` at-rules describing the animation or animations to apply to the element.
+    * The **`animation-name`** CSS property specifies the names of one or more `@keyframes` at-rules that describe the animation to apply to an element. Multiple `@keyframe` at-rules are specified as a comma-separated list of names. If the specified name does not match any `@keyframe` at-rule, no properties are animated.
     *
     * **Syntax**: `[ none | <keyframes-name> ]#`
     *
@@ -257,7 +258,7 @@ trait VendorLonghandProperties[TLength, TTime] extends StObject {
   var MozAnimationTimingFunction: js.UndefOr[AnimationTimingFunction] = js.undefined
   
   /**
-    * The **`appearance`** CSS property is used to display an element using platform-native styling, based on the operating system's theme. The **`-moz-appearance`** and **`-webkit-appearance`** properties are non-standard versions of this property, used (respectively) by Gecko (Firefox) and by WebKit-based (e.g., Safari) and Blink-based (e.g., Chrome, Opera) browsers to achieve the same thing. Note that Firefox and Edge also support **`-webkit-appearance`**, for compatibility reasons.
+    * The **`appearance`** CSS property is used to control native appearance of UI controls, that are based on operating system's theme.
     *
     * **Syntax**: `none | button | button-arrow-down | button-arrow-next | button-arrow-previous | button-arrow-up | button-bevel | button-focus | caret | checkbox | checkbox-container | checkbox-label | checkmenuitem | dualbutton | groupbox | listbox | listitem | menuarrow | menubar | menucheckbox | menuimage | menuitem | menuitemtext | menulist | menulist-button | menulist-text | menulist-textfield | menupopup | menuradio | menuseparator | meterbar | meterchunk | progressbar | progressbar-vertical | progresschunk | progresschunk-vertical | radio | radio-container | radio-label | radiomenuitem | range | range-thumb | resizer | resizerpanel | scale-horizontal | scalethumbend | scalethumb-horizontal | scalethumbstart | scalethumbtick | scalethumb-vertical | scale-vertical | scrollbarbutton-down | scrollbarbutton-left | scrollbarbutton-right | scrollbarbutton-up | scrollbarthumb-horizontal | scrollbarthumb-vertical | scrollbartrack-horizontal | scrollbartrack-vertical | searchfield | separator | sheet | spinner | spinner-downbutton | spinner-textfield | spinner-upbutton | splitter | statusbar | statusbarpanel | tab | tabpanel | tabpanels | tab-scroll-arrow-back | tab-scroll-arrow-forward | textfield | textfield-multiline | toolbar | toolbarbutton | toolbarbutton-dropdown | toolbargripper | toolbox | tooltip | treeheader | treeheadercell | treeheadersortarrow | treeitem | treeline | treetwisty | treetwistyopen | treeview | -moz-mac-unified-toolbar | -moz-win-borderless-glass | -moz-win-browsertabbar-toolbox | -moz-win-communicationstext | -moz-win-communications-toolbox | -moz-win-exclude-glass | -moz-win-glass | -moz-win-mediatext | -moz-win-media-toolbox | -moz-window-button-box | -moz-window-button-box-maximized | -moz-window-button-close | -moz-window-button-maximize | -moz-window-button-minimize | -moz-window-button-restore | -moz-window-frame-bottom | -moz-window-frame-left | -moz-window-frame-right | -moz-window-titlebar | -moz-window-titlebar-maximized`
     *
@@ -273,6 +274,15 @@ trait VendorLonghandProperties[TLength, TTime] extends StObject {
     * **Initial value**: `visible`
     */
   var MozBackfaceVisibility: js.UndefOr[BackfaceVisibility] = js.undefined
+  
+  /**
+    * The **`-moz-binding`** CSS property is used by Mozilla-based applications to attach an XBL binding to a DOM element.
+    *
+    * **Syntax**: `<url> | none`
+    *
+    * **Initial value**: `none`
+    */
+  var MozBinding: js.UndefOr[typings.csstype.mod.Property.MozBinding] = js.undefined
   
   /**
     * In Mozilla applications like Firefox, the **`-moz-border-bottom-colors`** CSS property sets a list of colors for the bottom border.
@@ -743,7 +753,7 @@ trait VendorLonghandProperties[TLength, TTime] extends StObject {
   var WebkitAnimationIterationCount: js.UndefOr[AnimationIterationCount] = js.undefined
   
   /**
-    * The **`animation-name`** CSS property specifies the names of one or more `@keyframes` at-rules describing the animation or animations to apply to the element.
+    * The **`animation-name`** CSS property specifies the names of one or more `@keyframes` at-rules that describe the animation to apply to an element. Multiple `@keyframe` at-rules are specified as a comma-separated list of names. If the specified name does not match any `@keyframe` at-rule, no properties are animated.
     *
     * **Syntax**: `[ none | <keyframes-name> ]#`
     *
@@ -770,7 +780,7 @@ trait VendorLonghandProperties[TLength, TTime] extends StObject {
   var WebkitAnimationTimingFunction: js.UndefOr[AnimationTimingFunction] = js.undefined
   
   /**
-    * The **`appearance`** CSS property is used to display an element using platform-native styling, based on the operating system's theme. The **`-moz-appearance`** and **`-webkit-appearance`** properties are non-standard versions of this property, used (respectively) by Gecko (Firefox) and by WebKit-based (e.g., Safari) and Blink-based (e.g., Chrome, Opera) browsers to achieve the same thing. Note that Firefox and Edge also support **`-webkit-appearance`**, for compatibility reasons.
+    * The **`appearance`** CSS property is used to control native appearance of UI controls, that are based on operating system's theme.
     *
     * **Syntax**: `none | button | button-bevel | caret | checkbox | default-button | inner-spin-button | listbox | listitem | media-controls-background | media-controls-fullscreen-background | media-current-time-display | media-enter-fullscreen-button | media-exit-fullscreen-button | media-fullscreen-button | media-mute-button | media-overlay-play-button | media-play-button | media-seek-back-button | media-seek-forward-button | media-slider | media-sliderthumb | media-time-remaining-display | media-toggle-closed-captions-button | media-volume-slider | media-volume-slider-container | media-volume-sliderthumb | menulist | menulist-button | menulist-text | menulist-textfield | meter | progress-bar | progress-bar-value | push-button | radio | searchfield | searchfield-cancel-button | searchfield-decoration | searchfield-results-button | searchfield-results-decoration | slider-horizontal | slider-vertical | sliderthumb-horizontal | sliderthumb-vertical | square-button | textarea | textfield | -apple-pay-button`
     *
@@ -1133,7 +1143,7 @@ trait VendorLonghandProperties[TLength, TTime] extends StObject {
   var WebkitLineBreak: js.UndefOr[LineBreak] = js.undefined
   
   /**
-    * The **`-webkit-line-clamp`** CSS property allows limiting of the contents of a block container to the specified number of lines.
+    * The **`-webkit-line-clamp`** CSS property allows limiting of the contents of a block to the specified number of lines.
     *
     * **Syntax**: `none | <integer>`
     *
@@ -1160,7 +1170,7 @@ trait VendorLonghandProperties[TLength, TTime] extends StObject {
   var WebkitMarginStart: js.UndefOr[MarginInlineStart[TLength]] = js.undefined
   
   /**
-    * If a `-webkit-mask-image` is specified, `-webkit-mask-attachment` determines whether the mask image's position is fixed within the viewport, or scrolls along with its containing block.
+    * If a `mask-image` is specified, `-webkit-mask-attachment` determines whether the mask image's position is fixed within the viewport, or scrolls along with its containing block.
     *
     * **Syntax**: `<attachment>#`
     *
@@ -2139,7 +2149,7 @@ trait VendorLonghandProperties[TLength, TTime] extends StObject {
   var msTransitionTimingFunction: js.UndefOr[TransitionTimingFunction] = js.undefined
   
   /**
-    * The `**user-select**` CSS property controls whether the user can select text. This doesn't have any effect on content loaded as chrome, except in textboxes.
+    * The **`user-select`** CSS property controls whether the user can select text. This doesn't have any effect on content loaded as part of a browser's user interface (its chrome), except in textboxes.
     *
     * **Syntax**: `none | element | text`
     *
@@ -2241,6 +2251,10 @@ object VendorLonghandProperties {
     inline def setMozBackfaceVisibility(value: BackfaceVisibility): Self = StObject.set(x, "MozBackfaceVisibility", value.asInstanceOf[js.Any])
     
     inline def setMozBackfaceVisibilityUndefined: Self = StObject.set(x, "MozBackfaceVisibility", js.undefined)
+    
+    inline def setMozBinding(value: MozBinding): Self = StObject.set(x, "MozBinding", value.asInstanceOf[js.Any])
+    
+    inline def setMozBindingUndefined: Self = StObject.set(x, "MozBinding", js.undefined)
     
     inline def setMozBorderBottomColors(value: MozBorderBottomColors): Self = StObject.set(x, "MozBorderBottomColors", value.asInstanceOf[js.Any])
     

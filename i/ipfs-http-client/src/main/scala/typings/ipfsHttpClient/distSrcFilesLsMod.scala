@@ -13,7 +13,7 @@ object distSrcFilesLsMod {
   @js.native
   val createLs: Factory[
     js.Function2[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.IPFSPath */ /* path */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.IPFSPath */ /* ipfsPath */ Any, 
       /* options */ js.UndefOr[AbortOptions & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions], 
       AsyncIterable[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_files.MFSEntry */ Any

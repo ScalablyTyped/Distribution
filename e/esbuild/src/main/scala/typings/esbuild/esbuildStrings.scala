@@ -100,6 +100,12 @@ object esbuildStrings {
   inline def `dynamic-import`: `dynamic-import` = "dynamic-import".asInstanceOf[`dynamic-import`]
   
   @js.native
+  sealed trait empty
+    extends StObject
+       with Loader
+  inline def empty: empty = "empty".asInstanceOf[empty]
+  
+  @js.native
   sealed trait `entry-point`
     extends StObject
        with ImportKind
@@ -130,6 +136,10 @@ object esbuildStrings {
     extends StObject
        with Loader
   inline def file: file = "file".asInstanceOf[file]
+  
+  @js.native
+  sealed trait `file-loader` extends StObject
+  inline def `file-loader`: `file-loader` = "file-loader".asInstanceOf[`file-loader`]
   
   @js.native
   sealed trait iife

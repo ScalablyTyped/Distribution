@@ -6,11 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersQueryEnvironment extends StObject {
   
-  /** Simple filtering of deployments is available via query parameters: */
+  /**
+    * List deployments
+    * @description Simple filtering of deployments is available via query parameters:
+    */
   var get: ParametersQueryEnvironment
   
   /**
-    * Deployments offer a few configurable parameters with certain defaults.
+    * Create a deployment
+    * @description Deployments offer a few configurable parameters with certain defaults.
     *
     * The `ref` parameter can be any named branch, tag, or SHA. At GitHub we often deploy branches and verify them
     * before we merge a pull request.

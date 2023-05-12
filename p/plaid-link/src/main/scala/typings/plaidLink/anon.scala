@@ -30,23 +30,19 @@ object anon {
     }
   }
   
-  trait Institutionid extends StObject {
-    
-    var institution_id: String
+  trait Name extends StObject {
     
     var name: String
   }
-  object Institutionid {
+  object Name {
     
-    inline def apply(institution_id: String, name: String): Institutionid = {
-      val __obj = js.Dynamic.literal(institution_id = institution_id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Institutionid]
+    inline def apply(name: String): Name = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Name]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Institutionid] (val x: Self) extends AnyVal {
-      
-      inline def setInstitution_id(value: String): Self = StObject.set(x, "institution_id", value.asInstanceOf[js.Any])
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

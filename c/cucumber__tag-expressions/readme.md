@@ -1,7 +1,7 @@
 
 # Scala.js typings for cucumber__tag-expressions
 
-Typings are for version 4.1.0
+Typings are for version 5.0.1
 
 ## Library description:
 Cucumber Tag Expression parser

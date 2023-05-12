@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Defines information about an aspect of the place that users have reviewed.
-  * @deprecated This interface is no longer used.
-  */
 trait PlaceAspectRating extends StObject {
   
   /**

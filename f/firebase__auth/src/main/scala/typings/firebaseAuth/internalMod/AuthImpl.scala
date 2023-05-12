@@ -1,6 +1,7 @@
 package typings.firebaseAuth.internalMod
 
 import typings.firebaseApp.mod.FirebaseApp
+import typings.firebaseAppCheckInteropTypes.mod.AppCheckInternalComponentName
 import typings.firebaseAuth.distSrcModelAuthMod.ConfigInternal
 import typings.firebaseAuth.firebaseAuthStrings.heartbeat
 import typings.firebaseComponent.mod.Provider
@@ -12,5 +13,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class AuthImpl protected ()
   extends typings.firebaseAuth.distInternalMod.AuthImpl {
-  def this(app: FirebaseApp, heartbeatServiceProvider: Provider[heartbeat], config: ConfigInternal) = this()
+  def this(
+    app: FirebaseApp,
+    heartbeatServiceProvider: Provider[heartbeat],
+    appCheckServiceProvider: Provider[AppCheckInternalComponentName],
+    config: ConfigInternal
+  ) = this()
 }

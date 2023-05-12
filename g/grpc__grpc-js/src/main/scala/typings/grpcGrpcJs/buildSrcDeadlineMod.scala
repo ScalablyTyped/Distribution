@@ -10,6 +10,8 @@ object buildSrcDeadlineMod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def deadlineToString(deadline: Deadline): String = ^.asInstanceOf[js.Dynamic].applyDynamic("deadlineToString")(deadline.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   inline def getDeadlineTimeoutString(deadline: Deadline): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeadlineTimeoutString")(deadline.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def getRelativeTimeout(deadline: Deadline): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getRelativeTimeout")(deadline.asInstanceOf[js.Any]).asInstanceOf[Double]

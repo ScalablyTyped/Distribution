@@ -17,7 +17,7 @@ trait CreateWorkflowRequest extends StObject {
   var OnExceptionSteps: js.UndefOr[WorkflowSteps] = js.undefined
   
   /**
-    * Specifies the details for the steps that are in the specified workflow.  The TYPE specifies which of the following actions is being taken for this step.     COPY: Copy the file to another location.    CUSTOM: Perform a custom step with an Lambda function target.    DELETE: Delete the file.    TAG: Add a tag to the file.     Currently, copying and tagging are supported only on S3.    For file location, you specify either the S3 bucket and key, or the EFS file system ID and path. 
+    * Specifies the details for the steps that are in the specified workflow.  The TYPE specifies which of the following actions is being taken for this step.      COPY  - Copy the file to another location.     CUSTOM  - Perform a custom step with an Lambda function target.     DECRYPT  - Decrypt a file that was encrypted before it was uploaded.     DELETE  - Delete the file.     TAG  - Add a tag to the file.     Currently, copying and tagging are supported only on S3.    For file location, you specify either the Amazon S3 bucket and key, or the Amazon EFS file system ID and path. 
     */
   var Steps: WorkflowSteps
   

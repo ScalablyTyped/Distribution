@@ -325,6 +325,8 @@ object sapUiCommonsInPlaceEditMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -337,6 +339,7 @@ object sapUiCommonsInPlaceEditMod {
     
     /**
       * @SINCE 1.16.5
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:liveChange liveChange} to attached listeners.
       *

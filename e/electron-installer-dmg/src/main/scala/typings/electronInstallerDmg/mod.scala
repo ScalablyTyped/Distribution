@@ -52,6 +52,89 @@ object mod {
     }
   }
   
+  /**
+    * Options passed to the `contents` function.
+    */
+  // Note: In the actual implementation, the entire `CreateOptions` object is
+  // passed to the `contents` function, but in the type we omit the `contents`
+  // field to avoid recursion.
+  /* Inlined std.Omit<electron-installer-dmg.electron-installer-dmg.CreateOptions, 'contents'> */
+  trait ContentsOptions extends StObject {
+    
+    var additionalDMGOptions: js.UndefOr[PartialSpecification] = js.undefined
+    
+    var appPath: String
+    
+    var background: js.UndefOr[String] = js.undefined
+    
+    var debug: js.UndefOr[Boolean] = js.undefined
+    
+    var format: js.UndefOr[UDRW | UDRO | UDCO | UDZO | UDBZ | ULFO] = js.undefined
+    
+    var icon: js.UndefOr[String] = js.undefined
+    
+    var iconSize: js.UndefOr[Double] = js.undefined
+    
+    var name: String
+    
+    var out: js.UndefOr[String] = js.undefined
+    
+    var overwrite: js.UndefOr[Boolean] = js.undefined
+    
+    var title: js.UndefOr[String] = js.undefined
+  }
+  object ContentsOptions {
+    
+    inline def apply(appPath: String, name: String): ContentsOptions = {
+      val __obj = js.Dynamic.literal(appPath = appPath.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ContentsOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentsOptions] (val x: Self) extends AnyVal {
+      
+      inline def setAdditionalDMGOptions(value: PartialSpecification): Self = StObject.set(x, "additionalDMGOptions", value.asInstanceOf[js.Any])
+      
+      inline def setAdditionalDMGOptionsUndefined: Self = StObject.set(x, "additionalDMGOptions", js.undefined)
+      
+      inline def setAppPath(value: String): Self = StObject.set(x, "appPath", value.asInstanceOf[js.Any])
+      
+      inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      
+      inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+      
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      
+      inline def setFormat(value: UDRW | UDRO | UDCO | UDZO | UDBZ | ULFO): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      
+      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      
+      inline def setIconSize(value: Double): Self = StObject.set(x, "iconSize", value.asInstanceOf[js.Any])
+      
+      inline def setIconSizeUndefined: Self = StObject.set(x, "iconSize", js.undefined)
+      
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setOut(value: String): Self = StObject.set(x, "out", value.asInstanceOf[js.Any])
+      
+      inline def setOutUndefined: Self = StObject.set(x, "out", js.undefined)
+      
+      inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+      
+      inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+      
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    }
+  }
+  
   trait CreateOptions extends StObject {
     
     /**
@@ -74,7 +157,9 @@ object mod {
       * The content that will appear in the window when user opens the .dmg file.
       * [Default: Array of two icons, application and application destination folder].
       */
-    var contents: js.UndefOr[js.Array[Content] | js.Function0[js.Array[Content]]] = js.undefined
+    var contents: js.UndefOr[
+        js.Array[Content] | (js.Function1[/* opts */ ContentsOptions, js.Array[Content]])
+      ] = js.undefined
     
     /** Enable debug message output. */
     var debug: js.UndefOr[Boolean] = js.undefined
@@ -120,9 +205,9 @@ object mod {
       
       inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
-      inline def setContents(value: js.Array[Content] | js.Function0[js.Array[Content]]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: js.Array[Content] | (js.Function1[/* opts */ ContentsOptions, js.Array[Content]])): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
-      inline def setContentsFunction0(value: () => js.Array[Content]): Self = StObject.set(x, "contents", js.Any.fromFunction0(value))
+      inline def setContentsFunction1(value: /* opts */ ContentsOptions => js.Array[Content]): Self = StObject.set(x, "contents", js.Any.fromFunction1(value))
       
       inline def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
       

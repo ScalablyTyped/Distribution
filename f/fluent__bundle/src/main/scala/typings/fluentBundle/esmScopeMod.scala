@@ -34,8 +34,11 @@ object esmScopeMod {
     /** The bundle for which the given resolution is happening. */
     var bundle: FluentBundle = js.native
     
-    /** The Set of patterns already encountered during this resolution.
-      * Used to detect and prevent cyclic resolutions. */
+    /**
+      * The Set of patterns already encountered during this resolution.
+      * Used to detect and prevent cyclic resolutions.
+      * @ignore
+      */
     var dirty: WeakSet[ComplexPattern] = js.native
     
     /** The list of errors collected while resolving. */
@@ -48,8 +51,11 @@ object esmScopeMod {
     /** A dict of parameters passed to a TermReference. */
     var params: (Record[String, FluentVariable]) | Null = js.native
     
-    /** The running count of placeables resolved so far. Used to detect the
-      * Billion Laughs and Quadratic Blowup attacks. */
+    /**
+      * The running count of placeables resolved so far.
+      * Used to detect the Billion Laughs and Quadratic Blowup attacks.
+      * @ignore
+      */
     var placeables: Double = js.native
     
     def reportError(error: Any): Unit = js.native

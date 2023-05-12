@@ -1,5 +1,6 @@
 package typings.fastXmlParser
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.fastXmlParser.anon.Code
 import typings.fastXmlParser.fastXmlParserBooleans.`false`
 import typings.fastXmlParser.fastXmlParserBooleans.`true`
@@ -12,7 +13,7 @@ object mod {
   
   @JSImport("fast-xml-parser", "XMLBuilder")
   @js.native
-  open class XMLBuilder protected () extends StObject {
+  open class XMLBuilder () extends StObject {
     def this(options: XmlBuilderOptionsOptional) = this()
     
     def build(jObj: Any): Any = js.native
@@ -80,7 +81,7 @@ object mod {
     
     var attributeNamePrefix: String
     
-    def attributeValueProcessor(attrName: String, attrValue: String, jPath: String): String
+    def attributeValueProcessor(attrName: String, attrValue: String, jPath: String): Any
     
     var attributesGroupName: `false` | String
     
@@ -123,11 +124,21 @@ object mod {
     
     var textNodeName: String
     
+    var transformAttributeName: (js.Function1[/* attributeName */ String, String]) | `false`
+    
     var transformTagName: (js.Function1[/* tagName */ String, String]) | `false`
     
     var trimValues: Boolean
     
     var unpairedTags: js.Array[String]
+    
+    /**
+    Change the tag name when a different name is returned. Skip the tag from parsed result when false is returned. 
+    Modify `attrs` object to control attributes for the given tag.
+    @returns {string} new tag name.
+    @returns false to skip the tag
+      */
+    def updateTag(tagName: String, jPath: String, attrs: StringDictionary[String]): String | Boolean
   }
   object X2jOptions {
     
@@ -135,7 +146,7 @@ object mod {
       allowBooleanAttributes: Boolean,
       alwaysCreateTextNode: Boolean,
       attributeNamePrefix: String,
-      attributeValueProcessor: (String, String, String) => String,
+      attributeValueProcessor: (String, String, String) => Any,
       attributesGroupName: `false` | String,
       cdataPropName: `false` | String,
       commentPropName: `false` | String,
@@ -153,11 +164,13 @@ object mod {
       stopNodes: js.Array[String],
       tagValueProcessor: (String, String, String, Boolean, Boolean) => Any,
       textNodeName: String,
+      transformAttributeName: (js.Function1[/* attributeName */ String, String]) | `false`,
       transformTagName: (js.Function1[/* tagName */ String, String]) | `false`,
       trimValues: Boolean,
-      unpairedTags: js.Array[String]
+      unpairedTags: js.Array[String],
+      updateTag: (String, String, StringDictionary[String]) => String | Boolean
     ): X2jOptions = {
-      val __obj = js.Dynamic.literal(allowBooleanAttributes = allowBooleanAttributes.asInstanceOf[js.Any], alwaysCreateTextNode = alwaysCreateTextNode.asInstanceOf[js.Any], attributeNamePrefix = attributeNamePrefix.asInstanceOf[js.Any], attributeValueProcessor = js.Any.fromFunction3(attributeValueProcessor), attributesGroupName = attributesGroupName.asInstanceOf[js.Any], cdataPropName = cdataPropName.asInstanceOf[js.Any], commentPropName = commentPropName.asInstanceOf[js.Any], htmlEntities = htmlEntities.asInstanceOf[js.Any], ignoreAttributes = ignoreAttributes.asInstanceOf[js.Any], ignoreDeclaration = ignoreDeclaration.asInstanceOf[js.Any], ignorePiTags = ignorePiTags.asInstanceOf[js.Any], isArray = js.Any.fromFunction4(isArray), numberParseOptions = numberParseOptions.asInstanceOf[js.Any], parseAttributeValue = parseAttributeValue.asInstanceOf[js.Any], parseTagValue = parseTagValue.asInstanceOf[js.Any], preserveOrder = preserveOrder.asInstanceOf[js.Any], processEntities = processEntities.asInstanceOf[js.Any], removeNSPrefix = removeNSPrefix.asInstanceOf[js.Any], stopNodes = stopNodes.asInstanceOf[js.Any], tagValueProcessor = js.Any.fromFunction5(tagValueProcessor), textNodeName = textNodeName.asInstanceOf[js.Any], transformTagName = transformTagName.asInstanceOf[js.Any], trimValues = trimValues.asInstanceOf[js.Any], unpairedTags = unpairedTags.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(allowBooleanAttributes = allowBooleanAttributes.asInstanceOf[js.Any], alwaysCreateTextNode = alwaysCreateTextNode.asInstanceOf[js.Any], attributeNamePrefix = attributeNamePrefix.asInstanceOf[js.Any], attributeValueProcessor = js.Any.fromFunction3(attributeValueProcessor), attributesGroupName = attributesGroupName.asInstanceOf[js.Any], cdataPropName = cdataPropName.asInstanceOf[js.Any], commentPropName = commentPropName.asInstanceOf[js.Any], htmlEntities = htmlEntities.asInstanceOf[js.Any], ignoreAttributes = ignoreAttributes.asInstanceOf[js.Any], ignoreDeclaration = ignoreDeclaration.asInstanceOf[js.Any], ignorePiTags = ignorePiTags.asInstanceOf[js.Any], isArray = js.Any.fromFunction4(isArray), numberParseOptions = numberParseOptions.asInstanceOf[js.Any], parseAttributeValue = parseAttributeValue.asInstanceOf[js.Any], parseTagValue = parseTagValue.asInstanceOf[js.Any], preserveOrder = preserveOrder.asInstanceOf[js.Any], processEntities = processEntities.asInstanceOf[js.Any], removeNSPrefix = removeNSPrefix.asInstanceOf[js.Any], stopNodes = stopNodes.asInstanceOf[js.Any], tagValueProcessor = js.Any.fromFunction5(tagValueProcessor), textNodeName = textNodeName.asInstanceOf[js.Any], transformAttributeName = transformAttributeName.asInstanceOf[js.Any], transformTagName = transformTagName.asInstanceOf[js.Any], trimValues = trimValues.asInstanceOf[js.Any], unpairedTags = unpairedTags.asInstanceOf[js.Any], updateTag = js.Any.fromFunction3(updateTag))
       __obj.asInstanceOf[X2jOptions]
     }
     
@@ -170,7 +183,7 @@ object mod {
       
       inline def setAttributeNamePrefix(value: String): Self = StObject.set(x, "attributeNamePrefix", value.asInstanceOf[js.Any])
       
-      inline def setAttributeValueProcessor(value: (String, String, String) => String): Self = StObject.set(x, "attributeValueProcessor", js.Any.fromFunction3(value))
+      inline def setAttributeValueProcessor(value: (String, String, String) => Any): Self = StObject.set(x, "attributeValueProcessor", js.Any.fromFunction3(value))
       
       inline def setAttributesGroupName(value: `false` | String): Self = StObject.set(x, "attributesGroupName", value.asInstanceOf[js.Any])
       
@@ -208,6 +221,10 @@ object mod {
       
       inline def setTextNodeName(value: String): Self = StObject.set(x, "textNodeName", value.asInstanceOf[js.Any])
       
+      inline def setTransformAttributeName(value: (js.Function1[/* attributeName */ String, String]) | `false`): Self = StObject.set(x, "transformAttributeName", value.asInstanceOf[js.Any])
+      
+      inline def setTransformAttributeNameFunction1(value: /* attributeName */ String => String): Self = StObject.set(x, "transformAttributeName", js.Any.fromFunction1(value))
+      
       inline def setTransformTagName(value: (js.Function1[/* tagName */ String, String]) | `false`): Self = StObject.set(x, "transformTagName", value.asInstanceOf[js.Any])
       
       inline def setTransformTagNameFunction1(value: /* tagName */ String => String): Self = StObject.set(x, "transformTagName", js.Any.fromFunction1(value))
@@ -217,6 +234,8 @@ object mod {
       inline def setUnpairedTags(value: js.Array[String]): Self = StObject.set(x, "unpairedTags", value.asInstanceOf[js.Any])
       
       inline def setUnpairedTagsVarargs(value: String*): Self = StObject.set(x, "unpairedTags", js.Array(value*))
+      
+      inline def setUpdateTag(value: (String, String, StringDictionary[String]) => String | Boolean): Self = StObject.set(x, "updateTag", js.Any.fromFunction3(value))
     }
   }
   
@@ -230,7 +249,7 @@ object mod {
     var attributeNamePrefix: js.UndefOr[String] = js.undefined
     
     var attributeValueProcessor: js.UndefOr[
-        js.Function3[/* attrName */ String, /* attrValue */ String, /* jPath */ String, String]
+        js.Function3[/* attrName */ String, /* attrValue */ String, /* jPath */ String, Any]
       ] = js.undefined
     
     var attributesGroupName: js.UndefOr[`false` | String] = js.undefined
@@ -284,11 +303,22 @@ object mod {
     
     var textNodeName: js.UndefOr[String] = js.undefined
     
+    var transformAttributeName: js.UndefOr[(js.Function1[/* attributeName */ String, String]) | `false`] = js.undefined
+    
     var transformTagName: js.UndefOr[(js.Function1[/* tagName */ String, String]) | `false`] = js.undefined
     
     var trimValues: js.UndefOr[Boolean] = js.undefined
     
     var unpairedTags: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var updateTag: js.UndefOr[
+        js.Function3[
+          /* tagName */ String, 
+          /* jPath */ String, 
+          /* attrs */ StringDictionary[String], 
+          String | Boolean
+        ]
+      ] = js.undefined
   }
   object X2jOptionsOptional {
     
@@ -312,7 +342,7 @@ object mod {
       
       inline def setAttributeNamePrefixUndefined: Self = StObject.set(x, "attributeNamePrefix", js.undefined)
       
-      inline def setAttributeValueProcessor(value: (/* attrName */ String, /* attrValue */ String, /* jPath */ String) => String): Self = StObject.set(x, "attributeValueProcessor", js.Any.fromFunction3(value))
+      inline def setAttributeValueProcessor(value: (/* attrName */ String, /* attrValue */ String, /* jPath */ String) => Any): Self = StObject.set(x, "attributeValueProcessor", js.Any.fromFunction3(value))
       
       inline def setAttributeValueProcessorUndefined: Self = StObject.set(x, "attributeValueProcessor", js.undefined)
       
@@ -390,6 +420,12 @@ object mod {
       
       inline def setTextNodeNameUndefined: Self = StObject.set(x, "textNodeName", js.undefined)
       
+      inline def setTransformAttributeName(value: (js.Function1[/* attributeName */ String, String]) | `false`): Self = StObject.set(x, "transformAttributeName", value.asInstanceOf[js.Any])
+      
+      inline def setTransformAttributeNameFunction1(value: /* attributeName */ String => String): Self = StObject.set(x, "transformAttributeName", js.Any.fromFunction1(value))
+      
+      inline def setTransformAttributeNameUndefined: Self = StObject.set(x, "transformAttributeName", js.undefined)
+      
       inline def setTransformTagName(value: (js.Function1[/* tagName */ String, String]) | `false`): Self = StObject.set(x, "transformTagName", value.asInstanceOf[js.Any])
       
       inline def setTransformTagNameFunction1(value: /* tagName */ String => String): Self = StObject.set(x, "transformTagName", js.Any.fromFunction1(value))
@@ -405,6 +441,12 @@ object mod {
       inline def setUnpairedTagsUndefined: Self = StObject.set(x, "unpairedTags", js.undefined)
       
       inline def setUnpairedTagsVarargs(value: String*): Self = StObject.set(x, "unpairedTags", js.Array(value*))
+      
+      inline def setUpdateTag(
+        value: (/* tagName */ String, /* jPath */ String, /* attrs */ StringDictionary[String]) => String | Boolean
+      ): Self = StObject.set(x, "updateTag", js.Any.fromFunction3(value))
+      
+      inline def setUpdateTagUndefined: Self = StObject.set(x, "updateTag", js.undefined)
     }
   }
   
@@ -414,7 +456,7 @@ object mod {
     
     var attributeNamePrefix: String
     
-    def attributeValueProcessor(name: String, value: String): String
+    def attributeValueProcessor(name: String, value: Any): String
     
     var attributesGroupName: `false` | String
     
@@ -428,6 +470,8 @@ object mod {
     
     var indentBy: String
     
+    var oneListGroup: Boolean
+    
     var preserveOrder: Boolean
     
     var processEntities: Boolean
@@ -440,7 +484,7 @@ object mod {
     
     var suppressUnpairedNode: Boolean
     
-    def tagValueProcessor(name: String, value: String): String
+    def tagValueProcessor(name: String, value: Any): String
     
     var textNodeName: String
     
@@ -451,24 +495,25 @@ object mod {
     inline def apply(
       arrayNodeName: String,
       attributeNamePrefix: String,
-      attributeValueProcessor: (String, String) => String,
+      attributeValueProcessor: (String, Any) => String,
       attributesGroupName: `false` | String,
       cdataPropName: `false` | String,
       commentPropName: `false` | String,
       format: Boolean,
       ignoreAttributes: Boolean,
       indentBy: String,
+      oneListGroup: Boolean,
       preserveOrder: Boolean,
       processEntities: Boolean,
       stopNodes: js.Array[String],
       suppressBooleanAttributes: Boolean,
       suppressEmptyNode: Boolean,
       suppressUnpairedNode: Boolean,
-      tagValueProcessor: (String, String) => String,
+      tagValueProcessor: (String, Any) => String,
       textNodeName: String,
       unpairedTags: js.Array[String]
     ): XmlBuilderOptions = {
-      val __obj = js.Dynamic.literal(arrayNodeName = arrayNodeName.asInstanceOf[js.Any], attributeNamePrefix = attributeNamePrefix.asInstanceOf[js.Any], attributeValueProcessor = js.Any.fromFunction2(attributeValueProcessor), attributesGroupName = attributesGroupName.asInstanceOf[js.Any], cdataPropName = cdataPropName.asInstanceOf[js.Any], commentPropName = commentPropName.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], ignoreAttributes = ignoreAttributes.asInstanceOf[js.Any], indentBy = indentBy.asInstanceOf[js.Any], preserveOrder = preserveOrder.asInstanceOf[js.Any], processEntities = processEntities.asInstanceOf[js.Any], stopNodes = stopNodes.asInstanceOf[js.Any], suppressBooleanAttributes = suppressBooleanAttributes.asInstanceOf[js.Any], suppressEmptyNode = suppressEmptyNode.asInstanceOf[js.Any], suppressUnpairedNode = suppressUnpairedNode.asInstanceOf[js.Any], tagValueProcessor = js.Any.fromFunction2(tagValueProcessor), textNodeName = textNodeName.asInstanceOf[js.Any], unpairedTags = unpairedTags.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(arrayNodeName = arrayNodeName.asInstanceOf[js.Any], attributeNamePrefix = attributeNamePrefix.asInstanceOf[js.Any], attributeValueProcessor = js.Any.fromFunction2(attributeValueProcessor), attributesGroupName = attributesGroupName.asInstanceOf[js.Any], cdataPropName = cdataPropName.asInstanceOf[js.Any], commentPropName = commentPropName.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], ignoreAttributes = ignoreAttributes.asInstanceOf[js.Any], indentBy = indentBy.asInstanceOf[js.Any], oneListGroup = oneListGroup.asInstanceOf[js.Any], preserveOrder = preserveOrder.asInstanceOf[js.Any], processEntities = processEntities.asInstanceOf[js.Any], stopNodes = stopNodes.asInstanceOf[js.Any], suppressBooleanAttributes = suppressBooleanAttributes.asInstanceOf[js.Any], suppressEmptyNode = suppressEmptyNode.asInstanceOf[js.Any], suppressUnpairedNode = suppressUnpairedNode.asInstanceOf[js.Any], tagValueProcessor = js.Any.fromFunction2(tagValueProcessor), textNodeName = textNodeName.asInstanceOf[js.Any], unpairedTags = unpairedTags.asInstanceOf[js.Any])
       __obj.asInstanceOf[XmlBuilderOptions]
     }
     
@@ -479,7 +524,7 @@ object mod {
       
       inline def setAttributeNamePrefix(value: String): Self = StObject.set(x, "attributeNamePrefix", value.asInstanceOf[js.Any])
       
-      inline def setAttributeValueProcessor(value: (String, String) => String): Self = StObject.set(x, "attributeValueProcessor", js.Any.fromFunction2(value))
+      inline def setAttributeValueProcessor(value: (String, Any) => String): Self = StObject.set(x, "attributeValueProcessor", js.Any.fromFunction2(value))
       
       inline def setAttributesGroupName(value: `false` | String): Self = StObject.set(x, "attributesGroupName", value.asInstanceOf[js.Any])
       
@@ -492,6 +537,8 @@ object mod {
       inline def setIgnoreAttributes(value: Boolean): Self = StObject.set(x, "ignoreAttributes", value.asInstanceOf[js.Any])
       
       inline def setIndentBy(value: String): Self = StObject.set(x, "indentBy", value.asInstanceOf[js.Any])
+      
+      inline def setOneListGroup(value: Boolean): Self = StObject.set(x, "oneListGroup", value.asInstanceOf[js.Any])
       
       inline def setPreserveOrder(value: Boolean): Self = StObject.set(x, "preserveOrder", value.asInstanceOf[js.Any])
       
@@ -507,7 +554,7 @@ object mod {
       
       inline def setSuppressUnpairedNode(value: Boolean): Self = StObject.set(x, "suppressUnpairedNode", value.asInstanceOf[js.Any])
       
-      inline def setTagValueProcessor(value: (String, String) => String): Self = StObject.set(x, "tagValueProcessor", js.Any.fromFunction2(value))
+      inline def setTagValueProcessor(value: (String, Any) => String): Self = StObject.set(x, "tagValueProcessor", js.Any.fromFunction2(value))
       
       inline def setTextNodeName(value: String): Self = StObject.set(x, "textNodeName", value.asInstanceOf[js.Any])
       
@@ -524,7 +571,7 @@ object mod {
     
     var attributeNamePrefix: js.UndefOr[String] = js.undefined
     
-    var attributeValueProcessor: js.UndefOr[js.Function2[/* name */ String, /* value */ String, String]] = js.undefined
+    var attributeValueProcessor: js.UndefOr[js.Function2[/* name */ String, /* value */ Any, String]] = js.undefined
     
     var attributesGroupName: js.UndefOr[`false` | String] = js.undefined
     
@@ -538,6 +585,8 @@ object mod {
     
     var indentBy: js.UndefOr[String] = js.undefined
     
+    var oneListGroup: js.UndefOr[Boolean] = js.undefined
+    
     var preserveOrder: js.UndefOr[Boolean] = js.undefined
     
     var processEntities: js.UndefOr[Boolean] = js.undefined
@@ -550,7 +599,7 @@ object mod {
     
     var suppressUnpairedNode: js.UndefOr[Boolean] = js.undefined
     
-    var tagValueProcessor: js.UndefOr[js.Function2[/* name */ String, /* value */ String, String]] = js.undefined
+    var tagValueProcessor: js.UndefOr[js.Function2[/* name */ String, /* value */ Any, String]] = js.undefined
     
     var textNodeName: js.UndefOr[String] = js.undefined
     
@@ -574,7 +623,7 @@ object mod {
       
       inline def setAttributeNamePrefixUndefined: Self = StObject.set(x, "attributeNamePrefix", js.undefined)
       
-      inline def setAttributeValueProcessor(value: (/* name */ String, /* value */ String) => String): Self = StObject.set(x, "attributeValueProcessor", js.Any.fromFunction2(value))
+      inline def setAttributeValueProcessor(value: (/* name */ String, /* value */ Any) => String): Self = StObject.set(x, "attributeValueProcessor", js.Any.fromFunction2(value))
       
       inline def setAttributeValueProcessorUndefined: Self = StObject.set(x, "attributeValueProcessor", js.undefined)
       
@@ -602,6 +651,10 @@ object mod {
       
       inline def setIndentByUndefined: Self = StObject.set(x, "indentBy", js.undefined)
       
+      inline def setOneListGroup(value: Boolean): Self = StObject.set(x, "oneListGroup", value.asInstanceOf[js.Any])
+      
+      inline def setOneListGroupUndefined: Self = StObject.set(x, "oneListGroup", js.undefined)
+      
       inline def setPreserveOrder(value: Boolean): Self = StObject.set(x, "preserveOrder", value.asInstanceOf[js.Any])
       
       inline def setPreserveOrderUndefined: Self = StObject.set(x, "preserveOrder", js.undefined)
@@ -628,7 +681,7 @@ object mod {
       
       inline def setSuppressUnpairedNodeUndefined: Self = StObject.set(x, "suppressUnpairedNode", js.undefined)
       
-      inline def setTagValueProcessor(value: (/* name */ String, /* value */ String) => String): Self = StObject.set(x, "tagValueProcessor", js.Any.fromFunction2(value))
+      inline def setTagValueProcessor(value: (/* name */ String, /* value */ Any) => String): Self = StObject.set(x, "tagValueProcessor", js.Any.fromFunction2(value))
       
       inline def setTagValueProcessorUndefined: Self = StObject.set(x, "tagValueProcessor", js.undefined)
       
@@ -646,6 +699,8 @@ object mod {
   
   trait strnumOptions extends StObject {
     
+    var eNotation: js.UndefOr[Boolean] = js.undefined
+    
     var hex: Boolean
     
     var leadingZeros: Boolean
@@ -661,6 +716,10 @@ object mod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: strnumOptions] (val x: Self) extends AnyVal {
+      
+      inline def setENotation(value: Boolean): Self = StObject.set(x, "eNotation", value.asInstanceOf[js.Any])
+      
+      inline def setENotationUndefined: Self = StObject.set(x, "eNotation", js.undefined)
       
       inline def setHex(value: Boolean): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
       

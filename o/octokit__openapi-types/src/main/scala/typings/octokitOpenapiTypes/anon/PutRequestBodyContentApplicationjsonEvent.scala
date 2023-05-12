@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PutRequestBodyContentApplicationjsonEvent extends StObject {
   
-  /** **Note:** To dismiss a pull request review on a [protected branch](https://docs.github.com/rest/reference/repos#branches), you must be a repository administrator or be included in the list of people or teams who can dismiss pull request reviews. */
+  /**
+    * Dismiss a review for a pull request
+    * @description **Note:** To dismiss a pull request review on a [protected branch](https://docs.github.com/rest/reference/repos#branches), you must be a repository administrator or be included in the list of people or teams who can dismiss pull request reviews.
+    */
   var put: RequestBodyContentApplicationjsonEvent
 }
 object PutRequestBodyContentApplicationjsonEvent {

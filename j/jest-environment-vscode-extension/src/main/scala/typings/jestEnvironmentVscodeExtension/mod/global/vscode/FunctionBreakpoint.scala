@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class FunctionBreakpoint protected ()
   extends typings.vscode.mod.FunctionBreakpoint {
   /**
-    * Create a new function breakpoint.
-    */
+  		 * Create a new function breakpoint.
+  		 */
   def this(functionName: String) = this()
   def this(functionName: String, enabled: Boolean) = this()
   def this(functionName: String, enabled: Boolean, condition: String) = this()

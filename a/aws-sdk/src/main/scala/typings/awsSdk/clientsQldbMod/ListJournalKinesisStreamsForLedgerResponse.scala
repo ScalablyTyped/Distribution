@@ -12,7 +12,7 @@ trait ListJournalKinesisStreamsForLedgerResponse extends StObject {
   var NextToken: js.UndefOr[typings.awsSdk.clientsQldbMod.NextToken] = js.undefined
   
   /**
-    * The array of QLDB journal stream descriptors that are associated with the given ledger.
+    * The QLDB journal streams that are currently associated with the given ledger.
     */
   var Streams: js.UndefOr[JournalKinesisStreamDescriptionList] = js.undefined
 }

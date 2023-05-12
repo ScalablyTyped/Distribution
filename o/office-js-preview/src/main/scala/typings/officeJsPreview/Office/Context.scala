@@ -46,20 +46,17 @@ trait Context extends StObject {
     *
     * **Support details**
     *
-    * A capital Y in the following matrix indicates that this property is supported in the corresponding Office application.
-    * An empty cell indicates that the Office application doesn't support this property.
-    *
     * For more information about Office application and server requirements, see
     * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
     *
     * *Supported applications, by platform*
     *  <table>
     *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
-    *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
-    *   <tr><td><strong> Outlook    </strong></td><td> Y                 </td><td> Y                     </td><td>                </td><td> Y                         </td><td> Y             </td></tr>
-    *   <tr><td><strong> PowerPoint </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
-    *   <tr><td><strong> Project    </strong></td><td> Y                 </td><td>                       </td><td>                </td><td>                           </td><td>               </td></tr>
-    *   <tr><td><strong> Word       </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
+    *   <tr><td><strong> Excel      </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td>               </td></tr>
+    *   <tr><td><strong> Outlook    </strong></td><td> Supported         </td><td> Supported             </td><td>                </td><td> Supported                 </td><td> Supported     </td></tr>
+    *   <tr><td><strong> PowerPoint </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td>               </td></tr>
+    *   <tr><td><strong> Project    </strong></td><td> Supported         </td><td>                       </td><td>                </td><td>                           </td><td>               </td></tr>
+    *   <tr><td><strong> Word       </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td>               </td></tr>
     *  </table>
     */
   var contentLanguage: String
@@ -89,20 +86,17 @@ trait Context extends StObject {
     *
     * **Support details**
     *
-    * A capital Y in the following matrix indicates that this property is supported in the corresponding Office application.
-    * An empty cell indicates that the Office application doesn't support this property.
-    *
     * For more information about Office application and server requirements, see
     * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
     *
     * *Supported applications, by platform*
     *  <table>
     *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
-    *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td> Y             </td></tr>
-    *   <tr><td><strong> Outlook    </strong></td><td> Y                 </td><td> Y                     </td><td>                </td><td> Y                         </td><td> Y             </td></tr>
-    *   <tr><td><strong> PowerPoint </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td> Y             </td></tr>
-    *   <tr><td><strong> Project    </strong></td><td> Y                 </td><td>                       </td><td>                </td><td>                           </td><td> Y             </td></tr>
-    *   <tr><td><strong> Word       </strong></td><td> Y                 </td><td>                       </td><td> Y              </td><td>                           </td><td> Y             </td></tr>
+    *   <tr><td><strong> Excel      </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td> Supported     </td></tr>
+    *   <tr><td><strong> Outlook    </strong></td><td> Supported         </td><td> Supported             </td><td>                </td><td> Supported                 </td><td> Supported     </td></tr>
+    *   <tr><td><strong> PowerPoint </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td> Supported     </td></tr>
+    *   <tr><td><strong> Project    </strong></td><td> Supported         </td><td>                       </td><td>                </td><td>                           </td><td> Supported     </td></tr>
+    *   <tr><td><strong> Word       </strong></td><td> Supported         </td><td>                       </td><td> Supported      </td><td>                           </td><td> Supported     </td></tr>
     *  </table>
     */
   var displayLanguage: String
@@ -134,7 +128,7 @@ trait Context extends StObject {
     *
     * @remarks
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
@@ -178,11 +172,25 @@ trait Context extends StObject {
     *
     * @remarks
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   var roamingSettings: RoamingSettings
+  
+  /**
+    * Gets the object to check the status of the catalog of sensitivity labels in Outlook and retrieve all available
+    * sensitivity labels if the catalog is enabled.
+    * 
+    * @remarks
+    * 
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+    * 
+    * @beta
+    */
+  var sensitivityLabelsCatalog: SensitivityLabelsCatalog
   
   /**
     * Specifies whether the platform and device allows touch interaction.
@@ -220,10 +228,11 @@ object Context {
     platform: PlatformType,
     requirements: RequirementSetSupport,
     roamingSettings: RoamingSettings,
+    sensitivityLabelsCatalog: SensitivityLabelsCatalog,
     touchEnabled: Boolean,
     ui: UI
   ): Context = {
-    val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], commerceAllowed = commerceAllowed.asInstanceOf[js.Any], contentLanguage = contentLanguage.asInstanceOf[js.Any], diagnostics = diagnostics.asInstanceOf[js.Any], displayLanguage = displayLanguage.asInstanceOf[js.Any], document = document.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], license = license.asInstanceOf[js.Any], mailbox = mailbox.asInstanceOf[js.Any], officeTheme = officeTheme.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], requirements = requirements.asInstanceOf[js.Any], roamingSettings = roamingSettings.asInstanceOf[js.Any], touchEnabled = touchEnabled.asInstanceOf[js.Any], ui = ui.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], commerceAllowed = commerceAllowed.asInstanceOf[js.Any], contentLanguage = contentLanguage.asInstanceOf[js.Any], diagnostics = diagnostics.asInstanceOf[js.Any], displayLanguage = displayLanguage.asInstanceOf[js.Any], document = document.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], license = license.asInstanceOf[js.Any], mailbox = mailbox.asInstanceOf[js.Any], officeTheme = officeTheme.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], requirements = requirements.asInstanceOf[js.Any], roamingSettings = roamingSettings.asInstanceOf[js.Any], sensitivityLabelsCatalog = sensitivityLabelsCatalog.asInstanceOf[js.Any], touchEnabled = touchEnabled.asInstanceOf[js.Any], ui = ui.asInstanceOf[js.Any])
     __obj.asInstanceOf[Context]
   }
   
@@ -255,6 +264,8 @@ object Context {
     inline def setRequirements(value: RequirementSetSupport): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
     
     inline def setRoamingSettings(value: RoamingSettings): Self = StObject.set(x, "roamingSettings", value.asInstanceOf[js.Any])
+    
+    inline def setSensitivityLabelsCatalog(value: SensitivityLabelsCatalog): Self = StObject.set(x, "sensitivityLabelsCatalog", value.asInstanceOf[js.Any])
     
     inline def setTouchEnabled(value: Boolean): Self = StObject.set(x, "touchEnabled", value.asInstanceOf[js.Any])
     

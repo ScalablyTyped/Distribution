@@ -73,7 +73,7 @@ inline def createConnection(port: Double, host: Unit, connectionListener: js.Fun
   * on port 8124:
   *
   * ```js
-  * const net = require('net');
+  * const net = require('node:net');
   * const server = net.createServer((c) => {
   *   // 'connection' listener.
   *   console.log('client connected');

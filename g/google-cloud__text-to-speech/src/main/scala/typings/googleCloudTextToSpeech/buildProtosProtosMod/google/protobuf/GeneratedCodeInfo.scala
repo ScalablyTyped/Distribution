@@ -30,7 +30,7 @@ open class GeneratedCodeInfo ()
     * Converts this GeneratedCodeInfo to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[Any] = js.native
+  def toJSON(): StringDictionary[scala.Any] = js.native
 }
 object GeneratedCodeInfo {
   
@@ -74,7 +74,7 @@ object GeneratedCodeInfo {
       * Converts this Annotation to JSON.
       * @returns JSON object
       */
-    def toJSON(): StringDictionary[Any] = js.native
+    def toJSON(): StringDictionary[scala.Any] = js.native
   }
   object Annotation {
     
@@ -171,7 +171,7 @@ object GeneratedCodeInfo {
       * @returns Annotation
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[Any]): Annotation = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Annotation]
+    inline def fromObject(`object`: StringDictionary[scala.Any]): Annotation = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Annotation]
     
     /**
       * Gets the default type url for Annotation
@@ -189,8 +189,8 @@ object GeneratedCodeInfo {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: Annotation): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
-    inline def toObject(message: Annotation, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: Annotation): StringDictionary[scala.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[scala.Any]]
+    inline def toObject(message: Annotation, options: IConversionOptions): StringDictionary[scala.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[scala.Any]]
     
     /**
       * Verifies an Annotation message.
@@ -198,7 +198,7 @@ object GeneratedCodeInfo {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[scala.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /**
@@ -261,7 +261,7 @@ object GeneratedCodeInfo {
     * @returns GeneratedCodeInfo
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[Any]): GeneratedCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[GeneratedCodeInfo]
+  inline def fromObject(`object`: StringDictionary[scala.Any]): GeneratedCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[GeneratedCodeInfo]
   
   /**
     * Gets the default type url for GeneratedCodeInfo
@@ -279,8 +279,8 @@ object GeneratedCodeInfo {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: GeneratedCodeInfo): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
-  inline def toObject(message: GeneratedCodeInfo, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: GeneratedCodeInfo): StringDictionary[scala.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[scala.Any]]
+  inline def toObject(message: GeneratedCodeInfo, options: IConversionOptions): StringDictionary[scala.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[scala.Any]]
   
   /**
     * Verifies a GeneratedCodeInfo message.
@@ -288,7 +288,7 @@ object GeneratedCodeInfo {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[scala.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of an Annotation. */
   trait IAnnotation extends StObject {

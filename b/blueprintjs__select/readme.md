@@ -1,7 +1,7 @@
 
 # Scala.js typings for blueprintjs__select
 
-Typings are for version 4.8.11
+Typings are for version 4.9.14
 
 ## Library description:
 Components related to selecting items from a list

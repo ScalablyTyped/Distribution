@@ -161,6 +161,8 @@ object sapUiCommonsRichTooltipMod {
     def getValueStateText(): String = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Calculates the height of the RichTooltip to set a proper min-height. Additionally the ARIA attributes
       * are set to the corresponding elements.
       */

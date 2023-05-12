@@ -16,6 +16,8 @@ object anon {
     var message: js.UndefOr[String] = js.undefined
     
     var result: Boolean
+    
+    var source: js.UndefOr[String] = js.undefined
   }
   object Actual {
     
@@ -36,6 +38,10 @@ object anon {
       inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
       inline def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     }
   }
   

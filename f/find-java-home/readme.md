@@ -1,7 +1,7 @@
 
 # Scala.js typings for find-java-home
 
-Typings are for version 1.2.2
+Typings are for version 2.0.0
 
 ## Library description:
 Find JAVA_HOME on any system

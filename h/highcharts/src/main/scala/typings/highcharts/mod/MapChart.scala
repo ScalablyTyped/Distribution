@@ -29,4 +29,10 @@ trait MapChart
     */
   def init(userOptions: Options): Unit = js.native
   def init(userOptions: Options, callback: js.Function): Unit = js.native
+  
+  /**
+    * The map view handles zooming and centering on the map, and various
+    * client-side projection capabilities.
+    */
+  var mapView: js.UndefOr[typings.highcharts.modulesMapMod.highchartsAugmentingMod.MapView] = js.native
 }

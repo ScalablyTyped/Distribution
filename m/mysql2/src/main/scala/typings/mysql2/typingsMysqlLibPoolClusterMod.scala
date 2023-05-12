@@ -2,6 +2,7 @@ package typings.mysql2
 
 import typings.mysql2.mysql2Strings.connection
 import typings.mysql2.mysql2Strings.remove
+import typings.mysql2.typingsMysqlLibPoolMod.PoolOptions
 import typings.node.NodeJS.ErrnoException
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
@@ -17,8 +18,8 @@ object typingsMysqlLibPoolClusterMod {
   @js.native
   trait PoolCluster extends EventEmitter {
     
-    def add(config: PoolClusterOptions): Unit = js.native
-    def add(group: String, config: PoolClusterOptions): Unit = js.native
+    def add(config: PoolOptions): Unit = js.native
+    def add(group: String, config: PoolOptions): Unit = js.native
     
     var config: PoolClusterOptions = js.native
     

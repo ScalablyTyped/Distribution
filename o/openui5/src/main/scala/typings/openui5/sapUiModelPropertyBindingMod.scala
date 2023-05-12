@@ -167,6 +167,8 @@ object sapUiModelPropertyBindingMod {
     sBindingMode: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BindingMode * / any */ String
     ): Unit = js.native
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets the binding mode.
       */
     def setBindingMode(/**

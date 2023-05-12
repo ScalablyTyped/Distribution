@@ -44,5 +44,8 @@ object PublicKeyCredential {
   val ^ : js.Any = js.native
   
   /* standard dom */
+  inline def isConditionalMediationAvailable(): js.Promise[scala.Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isConditionalMediationAvailable")().asInstanceOf[js.Promise[scala.Boolean]]
+  
+  /* standard dom */
   inline def isUserVerifyingPlatformAuthenticatorAvailable(): js.Promise[scala.Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isUserVerifyingPlatformAuthenticatorAvailable")().asInstanceOf[js.Promise[scala.Boolean]]
 }

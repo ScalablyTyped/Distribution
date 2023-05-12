@@ -519,6 +519,41 @@ object Vector3 {
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("ProjectToRef")(vector.asInstanceOf[js.Any], world.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], viewport.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /**
+    * Returns a new Vector3 with random values between min and max
+    * @param min the minimum random value
+    * @param max the maximum random value
+    * @returns a Vector3 with random values between min and max
+    */
+  inline def Random(): typings.babylonjs.mathsMathDotvectorMod.Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Random")().asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Vector3]
+  inline def Random(min: Double): typings.babylonjs.mathsMathDotvectorMod.Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Random")(min.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Vector3]
+  inline def Random(min: Double, max: Double): typings.babylonjs.mathsMathDotvectorMod.Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("Random")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Vector3]
+  inline def Random(min: Unit, max: Double): typings.babylonjs.mathsMathDotvectorMod.Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("Random")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Vector3]
+  
+  /**
+    * Reflects a vector off the plane defined by a normalized normal
+    * @param inDirection defines the vector direction
+    * @param normal defines the normal - Must be normalized
+    * @returns the resulting vector
+    */
+  inline def Reflect[T /* <: typings.babylonjs.mathsMathDotvectorMod.Vector3 */](
+    inDirection: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    normal: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3]
+  ): typings.babylonjs.mathsMathDotvectorMod.Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("Reflect")(inDirection.asInstanceOf[js.Any], normal.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotvectorMod.Vector3]
+  
+  /**
+    * Reflects a vector off the plane defined by a normalized normal to reference
+    * @param inDirection defines the vector direction
+    * @param normal defines the normal - Must be normalized
+    * @param result defines the Vector3 where to store the result
+    * @returns the resulting vector
+    */
+  inline def ReflectToRef[T /* <: typings.babylonjs.mathsMathDotvectorMod.Vector3 */](
+    inDirection: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    normal: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector3],
+    ref: T
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("ReflectToRef")(inDirection.asInstanceOf[js.Any], normal.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  /**
     * Returns a new Vector3 set to (1.0, 0.0, 0.0)
     * Example Playground https://playground.babylonjs.com/#R1F8YU#71
     * @returns a new right Vector3
@@ -535,7 +570,7 @@ object Vector3 {
     * @param axis2 defines the second axis
     * @param axis3 defines the third axis
     * @returns a new Vector3
-    * @see https://doc.babylonjs.com/divingDeeper/mesh/transforms/center_origin/target_align
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/transforms/center_origin/target_align
     */
   inline def RotationFromAxis[T /* <: typings.babylonjs.mathsMathDotvectorMod.Vector3 */](
     axis1: DeepImmutable[T],
@@ -792,6 +827,11 @@ object Vector3 {
   def _DownReadOnly: Any = js.native
   inline def _DownReadOnly_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DownReadOnly")(x.asInstanceOf[js.Any])
   
+  @JSImport("babylonjs/Maths/math", "Vector3._LeftHandedBackwardReadOnly")
+  @js.native
+  def _LeftHandedBackwardReadOnly: Any = js.native
+  inline def _LeftHandedBackwardReadOnly_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LeftHandedBackwardReadOnly")(x.asInstanceOf[js.Any])
+  
   @JSImport("babylonjs/Maths/math", "Vector3._LeftHandedForwardReadOnly")
   @js.native
   def _LeftHandedForwardReadOnly: Any = js.native
@@ -801,6 +841,11 @@ object Vector3 {
   @js.native
   def _LeftReadOnly: Any = js.native
   inline def _LeftReadOnly_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LeftReadOnly")(x.asInstanceOf[js.Any])
+  
+  @JSImport("babylonjs/Maths/math", "Vector3._RightHandedBackwardReadOnly")
+  @js.native
+  def _RightHandedBackwardReadOnly: Any = js.native
+  inline def _RightHandedBackwardReadOnly_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RightHandedBackwardReadOnly")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs/Maths/math", "Vector3._RightHandedForwardReadOnly")
   @js.native

@@ -116,8 +116,8 @@ trait Root extends StObject {
   /**
     * Creates a custom validation schema.
     */
-  def custom(fn: CustomValidator[Any]): Schema[Any] = js.native
-  def custom(fn: CustomValidator[Any], description: String): Schema[Any] = js.native
+  def custom(fn: CustomValidator[Any, Any]): Schema[Any] = js.native
+  def custom(fn: CustomValidator[Any, Any], description: String): Schema[Any] = js.native
   
   /**
     * Generates a schema object that matches a date type (as well as a JavaScript date string or number of milliseconds).

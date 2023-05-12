@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@blueprintjs/table" : "4.7.9"
+      "@blueprintjs/table" : "4.10.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@blueprintjs/table" : "4.7.9"
+      "@blueprintjs/table" : "4.10.1"
     }
   ],
   "compile-devDependencies" : [

@@ -11,7 +11,7 @@ trait UrlCreationOptions extends StObject {
     *
     * ```
     * // Navigate to /results#top
-    * this.router.navigate(['/results'], { fragment: 'top' });
+    * router.navigate(['/results'], { fragment: 'top' });
     * ```
     */
   var fragment: js.UndefOr[String] = js.undefined
@@ -21,7 +21,7 @@ trait UrlCreationOptions extends StObject {
     *
     * ```
     * // Preserve fragment from /results#top to /view#top
-    * this.router.navigate(['/view'], { preserveFragment: true });
+    * router.navigate(['/view'], { preserveFragment: true });
     * ```
     */
   var preserveFragment: js.UndefOr[Boolean] = js.undefined
@@ -31,7 +31,7 @@ trait UrlCreationOptions extends StObject {
     *
     * ```
     * // Navigate to /results?page=1
-    * this.router.navigate(['/results'], { queryParams: { page: 1 } });
+    * router.navigate(['/results'], { queryParams: { page: 1 } });
     * ```
     */
   var queryParams: js.UndefOr[Params | Null] = js.undefined
@@ -45,13 +45,13 @@ trait UrlCreationOptions extends StObject {
     * The "preserve" option discards any new query params:
     * ```
     * // from /view1?page=1 to/view2?page=1
-    * this.router.navigate(['/view2'], { queryParams: { page: 2 },  queryParamsHandling: "preserve"
+    * router.navigate(['/view2'], { queryParams: { page: 2 },  queryParamsHandling: "preserve"
     * });
     * ```
     * The "merge" option appends new query params to the params from the current URL:
     * ```
     * // from /view1?page=1 to/view2?page=1&otherKey=2
-    * this.router.navigate(['/view2'], { queryParams: { otherKey: 2 },  queryParamsHandling: "merge"
+    * router.navigate(['/view2'], { queryParams: { otherKey: 2 },  queryParamsHandling: "merge"
     * });
     * ```
     * In case of a key collision between current parameters and those in the `queryParams` object,
@@ -89,7 +89,7 @@ trait UrlCreationOptions extends StObject {
     *    constructor(private router: Router, private route: ActivatedRoute) {}
     *
     *    go() {
-    *      this.router.navigate(['../list'], { relativeTo: this.route });
+    *      router.navigate(['../list'], { relativeTo: this.route });
     *    }
     *  }
     * ```

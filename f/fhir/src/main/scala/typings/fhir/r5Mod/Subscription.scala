@@ -2,14 +2,10 @@ package typings.fhir.r5Mod
 
 import typings.fhir.fhirStrings.`entered-in-error`
 import typings.fhir.fhirStrings.`full-resource`
-import typings.fhir.fhirStrings.`full-url`
 import typings.fhir.fhirStrings.`id-only`
-import typings.fhir.fhirStrings.`request-response`
 import typings.fhir.fhirStrings.active
-import typings.fhir.fhirStrings.all
 import typings.fhir.fhirStrings.empty
 import typings.fhir.fhirStrings.error
-import typings.fhir.fhirStrings.none
 import typings.fhir.fhirStrings.off
 import typings.fhir.fhirStrings.requested
 import org.scalablytyped.runtime.StObject
@@ -29,11 +25,7 @@ trait Subscription
   
   var _endpoint: js.UndefOr[Element] = js.undefined
   
-  var _header: js.UndefOr[js.Array[Element]] = js.undefined
-  
   var _name: js.UndefOr[Element] = js.undefined
-  
-  var _notificationUrlLocation: js.UndefOr[Element] = js.undefined
   
   var _reason: js.UndefOr[Element] = js.undefined
   
@@ -57,7 +49,9 @@ trait Subscription
   var content: js.UndefOr[empty | `id-only` | `full-resource`] = js.undefined
   
   /**
-    * The mime type to send the payload in - either application/fhir+xml, or application/fhir+json. The MIME types "text/plain" and "text/html" may also be used for Email subscriptions.
+    * The MIME type to send the payload in - e.g., `application/fhir+xml` or `application/fhir+json`. Note that:
+    * * clients may request notifications in a specific FHIR version by using the [FHIR Version Parameter](http.html#version-parameter) - e.g., `application/fhir+json; fhirVersion=4.0`.
+    * * additional MIME types can be allowed by channels - e.g., `text/plain` and `text/html` are defined by the Email channel.
     */
   var contentType: js.UndefOr[String] = js.undefined
   
@@ -67,22 +61,17 @@ trait Subscription
   var end: js.UndefOr[String] = js.undefined
   
   /**
-    * For rest-hook the end-point must be an http: or https: URL; for websocket ws: or wss:; for email, a mailto: url; and for message the endpoint can be in any form of url the server understands (usually, http/s: or mllp:). The URI is allowed to be relative; in which case, it is relative to the server end-point (since there may be more than one, clients should avoid using relative URIs).
+    * For rest-hook the end-point must be an `http:` or `https:` URL; for websockets, `ws:` or `wss:`; for email, a `mailto:` url; and for message the endpoint can be in any form of url the server understands (usually, `http/s`: or `mllp:`). The URI is allowed to be relative; in which case, it is relative to the server end-point (since there may be more than one, clients should avoid using relative URIs).
     */
   var endpoint: js.UndefOr[String] = js.undefined
   
   /**
-    * The filter properties to be applied to narrow the subscription topic stream.  When multiple filters are applied, evaluates to true if all the conditions are met; otherwise it returns false.   (i.e., logical AND).
+    * The filter properties to be applied to narrow the subscription topic stream.  When multiple filters are applied, evaluates to true if all the conditions applicable to that resource are met; otherwise it returns false (i.e., logical AND).
     */
   var filterBy: js.UndefOr[js.Array[SubscriptionFilterBy]] = js.undefined
   
   /**
-    * Exactly what these mean depend on the channel type. They can convey additional information to the recipient and/or meet security requirements; for example, support of multiple headers in the outgoing notifications for rest-hook type subscriptions.
-    */
-  var header: js.UndefOr[js.Array[String]] = js.undefined
-  
-  /**
-    * If present,  a 'hearbeat" notification (keepalive) is sent via this channel with an the interval period equal to this elements integer value in seconds.    If not present, a heartbeat notification is not sent.
+    * If present, a 'heartbeat' notification (keep-alive) is sent via this channel with an interval period equal to this elements integer value in seconds.  If not present, a heartbeat notification is not sent.
     */
   var heartbeatPeriod: js.UndefOr[Double] = js.undefined
   
@@ -92,7 +81,12 @@ trait Subscription
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
-    * If present, the maximum number of triggering resources that will be included in a notification bundle (e.g., a server will not include more than this number of trigger resources in a single notification).  Note that this is not a strict limit on the number of entries in a bundle, as dependent resources can be included.
+    * Entity with authorization to make subsequent revisions to the Subscription and also determines what data the subscription is authorized to disclose.
+    */
+  var managingEntity: js.UndefOr[Reference] = js.undefined
+  
+  /**
+    * If present, the maximum number of events that will be included in a notification bundle. Note that this is not a strict limit on the number of entries in a bundle, as dependent resources can be included.
     */
   var maxCount: js.UndefOr[Double] = js.undefined
   
@@ -102,9 +96,9 @@ trait Subscription
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * If present, where to place URLs of resources in notifications.
+    * Exactly what these mean depend on the channel type. They can convey additional information to the server or recipient and/or meet security requirements; for example, support of multiple headers in the outgoing notifications for rest-hook type subscriptions. Note that names are not required to be unique, but channel definitions can impose restrictions.
     */
-  var notificationUrlLocation: js.UndefOr[none | `full-url` | `request-response` | all] = js.undefined
+  var parameter: js.UndefOr[js.Array[SubscriptionParameter]] = js.undefined
   
   /**
     * A description of why this subscription is defined.
@@ -171,12 +165,6 @@ object Subscription {
     
     inline def setFilterByVarargs(value: SubscriptionFilterBy*): Self = StObject.set(x, "filterBy", js.Array(value*))
     
-    inline def setHeader(value: js.Array[String]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
-    
-    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
-    
-    inline def setHeaderVarargs(value: String*): Self = StObject.set(x, "header", js.Array(value*))
-    
     inline def setHeartbeatPeriod(value: Double): Self = StObject.set(x, "heartbeatPeriod", value.asInstanceOf[js.Any])
     
     inline def setHeartbeatPeriodUndefined: Self = StObject.set(x, "heartbeatPeriod", js.undefined)
@@ -187,6 +175,10 @@ object Subscription {
     
     inline def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value*))
     
+    inline def setManagingEntity(value: Reference): Self = StObject.set(x, "managingEntity", value.asInstanceOf[js.Any])
+    
+    inline def setManagingEntityUndefined: Self = StObject.set(x, "managingEntity", js.undefined)
+    
     inline def setMaxCount(value: Double): Self = StObject.set(x, "maxCount", value.asInstanceOf[js.Any])
     
     inline def setMaxCountUndefined: Self = StObject.set(x, "maxCount", js.undefined)
@@ -195,9 +187,11 @@ object Subscription {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setNotificationUrlLocation(value: none | `full-url` | `request-response` | all): Self = StObject.set(x, "notificationUrlLocation", value.asInstanceOf[js.Any])
+    inline def setParameter(value: js.Array[SubscriptionParameter]): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     
-    inline def setNotificationUrlLocationUndefined: Self = StObject.set(x, "notificationUrlLocation", js.undefined)
+    inline def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
+    
+    inline def setParameterVarargs(value: SubscriptionParameter*): Self = StObject.set(x, "parameter", js.Array(value*))
     
     inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
@@ -229,19 +223,9 @@ object Subscription {
     
     inline def set_endpointUndefined: Self = StObject.set(x, "_endpoint", js.undefined)
     
-    inline def set_header(value: js.Array[Element]): Self = StObject.set(x, "_header", value.asInstanceOf[js.Any])
-    
-    inline def set_headerUndefined: Self = StObject.set(x, "_header", js.undefined)
-    
-    inline def set_headerVarargs(value: Element*): Self = StObject.set(x, "_header", js.Array(value*))
-    
     inline def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
     inline def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
-    
-    inline def set_notificationUrlLocation(value: Element): Self = StObject.set(x, "_notificationUrlLocation", value.asInstanceOf[js.Any])
-    
-    inline def set_notificationUrlLocationUndefined: Self = StObject.set(x, "_notificationUrlLocation", js.undefined)
     
     inline def set_reason(value: Element): Self = StObject.set(x, "_reason", value.asInstanceOf[js.Any])
     

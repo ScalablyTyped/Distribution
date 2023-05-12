@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeDocumentClassificationJobRequest extends StObject {
   
   /**
-    * The identifier that Amazon Comprehend generated for the job. The operation returns this identifier in its response.
+    * The identifier that Amazon Comprehend generated for the job. The StartDocumentClassificationJob operation returns this identifier in its response.
     */
   var JobId: typings.awsSdk.clientsComprehendMod.JobId
 }

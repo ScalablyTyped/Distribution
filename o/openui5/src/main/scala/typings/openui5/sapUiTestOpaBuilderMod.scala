@@ -1,5 +1,18 @@
 package typings.openui5
 
+import typings.openui5.anon.AggregationLengthEquals
+import typings.openui5.anon.Ancestor
+import typings.openui5.anon.BindingPath
+import typings.openui5.anon.Descendant
+import typings.openui5.anon.I18NText
+import typings.openui5.anon.LabelFor
+import typings.openui5.anon.Properties
+import typings.openui5.sapUiTestOpa5Mod.Action
+import typings.openui5.sapUiTestOpa5Mod.Chain
+import typings.openui5.sapUiTestOpa5Mod.Matcher
+import typings.openui5.sapUiTestOpa5Mod.MultiControlSelector
+import typings.openui5.sapUiTestOpa5Mod.SingleControlSelector
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +39,17 @@ object sapUiTestOpaBuilderMod {
       /**
       * the initial {@link sap.ui.test.Opa5#waitFor} options
       */
-    oOptions: js.Object
+    oOptions: MultiControlSelector
+    ) = this()
+    def this(
+      /**
+      * the Opa5 instance to operate on
+      */
+    oOpaInstance: Unit,
+      /**
+      * the initial {@link sap.ui.test.Opa5#waitFor} options
+      */
+    oOptions: SingleControlSelector
     ) = this()
     def this(
       /**
@@ -36,7 +59,17 @@ object sapUiTestOpaBuilderMod {
       /**
       * the initial {@link sap.ui.test.Opa5#waitFor} options
       */
-    oOptions: js.Object
+    oOptions: MultiControlSelector
+    ) = this()
+    def this(
+      /**
+      * the Opa5 instance to operate on
+      */
+    oOpaInstance: typings.openui5.sapUiTestOpa5Mod.default,
+      /**
+      * the initial {@link sap.ui.test.Opa5#waitFor} options
+      */
+    oOptions: SingleControlSelector
     ) = this()
   }
   /* static members */
@@ -71,17 +104,15 @@ object sapUiTestOpaBuilderMod {
       /**
       * additional matchers to filter target control(s)
       */
-    vMatchers: js.UndefOr[
-          typings.openui5.sapUiTestMatchersMatcherMod.default | js.Function | js.Array[Any] | js.Object
-        ],
+    vMatchers: js.UndefOr[Matcher | js.Array[Matcher]],
       /**
       * the actions to be performed on target control(s)
       */
-    vActions: js.UndefOr[typings.openui5.sapUiTestActionsActionMod.default | js.Function | js.Array[Any]],
+    vActions: js.UndefOr[Action | js.Array[Action]],
       /**
       * oOptions the {@link sap.ui.test.Opa5#waitFor} options to apply
       */
-    oOptions: js.UndefOr[js.Object]
+    oOptions: js.UndefOr[SingleControlSelector | MultiControlSelector]
     ): OpaBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(oOpaInstance.asInstanceOf[js.Any], vId.asInstanceOf[js.Any], sControlType.asInstanceOf[js.Any], bDialogElement.asInstanceOf[js.Any], vMatchers.asInstanceOf[js.Any], vActions.asInstanceOf[js.Any], oOptions.asInstanceOf[js.Any])).asInstanceOf[OpaBuilder]
     
     /**
@@ -90,16 +121,384 @@ object sapUiTestOpaBuilderMod {
       *
       * @returns the default {@link sap.ui.test.Opa5#waitFor} options
       */
-    inline def defaultOptions(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultOptions")().asInstanceOf[js.Object]
+    inline def defaultOptions(): SingleControlSelector | MultiControlSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultOptions")().asInstanceOf[SingleControlSelector | MultiControlSelector]
     inline def defaultOptions(/**
       * the new default options to be used
       */
-    oOptions: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultOptions")(oOptions.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    oOptions: MultiControlSelector): SingleControlSelector | MultiControlSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultOptions")(oOptions.asInstanceOf[js.Any]).asInstanceOf[SingleControlSelector | MultiControlSelector]
+    inline def defaultOptions(/**
+      * the new default options to be used
+      */
+    oOptions: SingleControlSelector): SingleControlSelector | MultiControlSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultOptions")(oOptions.asInstanceOf[js.Any]).asInstanceOf[SingleControlSelector | MultiControlSelector]
   }
   
   @js.native
   trait Actions extends StObject {
     
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: js.Array[Matcher],
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: js.Array[Action]
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: js.Array[Matcher],
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: js.Array[Action],
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseBuilderOptions: js.Array[Action]
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: js.Array[Matcher],
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: js.Array[Action],
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseBuilderOptions: Action
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: js.Array[Matcher],
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: js.Array[Action],
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseBuilderOptions: OpaBuilder
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: js.Array[Matcher],
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: Action
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: js.Array[Matcher],
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: Action,
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseBuilderOptions: js.Array[Action]
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: js.Array[Matcher],
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: Action,
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseBuilderOptions: Action
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: js.Array[Matcher],
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: Action,
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseBuilderOptions: OpaBuilder
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: js.Array[Matcher],
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: OpaBuilder
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: js.Array[Matcher],
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: OpaBuilder,
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseBuilderOptions: js.Array[Action]
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: js.Array[Matcher],
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: OpaBuilder,
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseBuilderOptions: Action
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: js.Array[Matcher],
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: OpaBuilder,
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseBuilderOptions: OpaBuilder
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Boolean,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: js.Array[Action]
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Boolean,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: js.Array[Action],
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseBuilderOptions: js.Array[Action]
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Boolean,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: js.Array[Action],
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseBuilderOptions: Action
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Boolean,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: js.Array[Action],
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseBuilderOptions: OpaBuilder
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Boolean,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: Action
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Boolean,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: Action,
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseBuilderOptions: js.Array[Action]
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Boolean,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: Action,
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseBuilderOptions: Action
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Boolean,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: Action,
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseBuilderOptions: OpaBuilder
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Boolean,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: OpaBuilder
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Boolean,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: OpaBuilder,
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseBuilderOptions: js.Array[Action]
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Boolean,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: OpaBuilder,
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseBuilderOptions: Action
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Boolean,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: OpaBuilder,
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseBuilderOptions: OpaBuilder
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Matcher,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: js.Array[Action]
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Matcher,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: js.Array[Action],
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseBuilderOptions: js.Array[Action]
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Matcher,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: js.Array[Action],
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseBuilderOptions: Action
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Matcher,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: js.Array[Action],
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseBuilderOptions: OpaBuilder
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
     /**
       * Creates an action that is only performed if target control fulfills the conditions.
       *
@@ -109,18 +508,106 @@ object sapUiTestOpaBuilderMod {
       /**
       * target control is checked against these given conditions
       */
-    vConditions: typings.openui5.sapUiTestMatchersMatcherMod.default | js.Function | js.Array[Any] | js.Object | Boolean,
+    vConditions: Matcher,
       /**
       * the actions to be performed when conditions are fulfilled
       */
-    vSuccessBuilderOrOptions: typings.openui5.sapUiTestActionsActionMod.default | js.Function | js.Array[Any] | OpaBuilder,
+    vSuccessBuilderOrOptions: Action
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Matcher,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: Action,
       /**
       * the action(s) to be performed when conditions are not fulfilled
       */
-    vElseBuilderOptions: js.UndefOr[
-          typings.openui5.sapUiTestActionsActionMod.default | js.Function | js.Array[Any] | OpaBuilder
-        ]
-    ): js.Function = js.native
+    vElseBuilderOptions: js.Array[Action]
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Matcher,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: Action,
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseBuilderOptions: Action
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Matcher,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: Action,
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseBuilderOptions: OpaBuilder
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Matcher,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: OpaBuilder
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Matcher,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: OpaBuilder,
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseBuilderOptions: js.Array[Action]
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Matcher,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: OpaBuilder,
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseBuilderOptions: Action
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Matcher,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessBuilderOrOptions: OpaBuilder,
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseBuilderOptions: OpaBuilder
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
     
     /**
       * Creates a {@link sap.ui.test.actions.EnterText} action.
@@ -421,23 +908,23 @@ object sapUiTestOpaBuilderMod {
     def executor(/**
       * the actions to be executed
       */
-    vActions: js.Array[Any]): js.Function = js.native
-    def executor(/**
-      * the actions to be executed
-      */
-    vActions: js.Function): js.Function = js.native
+    vActions: js.Array[Action]): js.Function1[
+        /* p1 */ typings.openui5.sapUiCoreElementMod.default | js.Array[typings.openui5.sapUiCoreElementMod.default], 
+        Unit
+      ] = js.native
     /**
       * Creates an action function that executes all given actions on a single or an array of controls. This
       * method can be used as a helper for handling the different kinds of action definitions and inputs.
       *
       * @returns an action function
       */
-    def executor(
-      /**
+    def executor(/**
       * the actions to be executed
       */
-    vActions: typings.openui5.sapUiTestActionsActionMod.default
-    ): js.Function = js.native
+    vActions: Action): js.Function1[
+        /* p1 */ typings.openui5.sapUiCoreElementMod.default | js.Array[typings.openui5.sapUiCoreElementMod.default], 
+        Unit
+      ] = js.native
     
     /**
       * Creates a {@link sap.ui.test.actions.Press} action.
@@ -488,7 +975,10 @@ object sapUiTestOpaBuilderMod {
     def aggregation(/**
       * the aggregation name
       */
-    sAggregationName: String): js.Function = js.native
+    sAggregationName: String): js.Function1[
+        /* p1 */ typings.openui5.sapUiCoreElementMod.default, 
+        js.Array[typings.openui5.sapUiCoreElementMod.default]
+      ] = js.native
     def aggregation(
       /**
       * the aggregation name
@@ -497,8 +987,11 @@ object sapUiTestOpaBuilderMod {
       /**
       * the matchers to filter aggregation items
       */
-    vMatchers: js.Array[Any]
-    ): js.Function = js.native
+    vMatchers: js.Array[Matcher]
+    ): js.Function1[
+        /* p1 */ typings.openui5.sapUiCoreElementMod.default, 
+        js.Array[typings.openui5.sapUiCoreElementMod.default]
+      ] = js.native
     def aggregation(
       /**
       * the aggregation name
@@ -507,28 +1000,11 @@ object sapUiTestOpaBuilderMod {
       /**
       * the matchers to filter aggregation items
       */
-    vMatchers: js.Function
-    ): js.Function = js.native
-    def aggregation(
-      /**
-      * the aggregation name
-      */
-    sAggregationName: String,
-      /**
-      * the matchers to filter aggregation items
-      */
-    vMatchers: js.Object
-    ): js.Function = js.native
-    def aggregation(
-      /**
-      * the aggregation name
-      */
-    sAggregationName: String,
-      /**
-      * the matchers to filter aggregation items
-      */
-    vMatchers: typings.openui5.sapUiTestMatchersMatcherMod.default
-    ): js.Function = js.native
+    vMatchers: Matcher
+    ): js.Function1[
+        /* p1 */ typings.openui5.sapUiCoreElementMod.default, 
+        js.Array[typings.openui5.sapUiCoreElementMod.default]
+      ] = js.native
     
     /**
       * Creates a matcher function that returns an aggregation element of a control at a given index.
@@ -564,7 +1040,7 @@ object sapUiTestOpaBuilderMod {
       * the length that aggregation name should have
       */
     iLength: int
-    ): js.Object = js.native
+    ): AggregationLengthEquals = js.native
     
     /**
       * Checks whether at least one aggregation item fulfills given matcher(s).
@@ -574,7 +1050,7 @@ object sapUiTestOpaBuilderMod {
     def aggregationMatcher(/**
       * the aggregation name
       */
-    sAggregationName: String): js.Function = js.native
+    sAggregationName: String): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Boolean] = js.native
     def aggregationMatcher(
       /**
       * the aggregation name
@@ -583,8 +1059,8 @@ object sapUiTestOpaBuilderMod {
       /**
       * the matchers to filter aggregation items
       */
-    vMatchers: js.Array[Any]
-    ): js.Function = js.native
+    vMatchers: js.Array[Matcher]
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Boolean] = js.native
     def aggregationMatcher(
       /**
       * the aggregation name
@@ -593,28 +1069,8 @@ object sapUiTestOpaBuilderMod {
       /**
       * the matchers to filter aggregation items
       */
-    vMatchers: js.Function
-    ): js.Function = js.native
-    def aggregationMatcher(
-      /**
-      * the aggregation name
-      */
-    sAggregationName: String,
-      /**
-      * the matchers to filter aggregation items
-      */
-    vMatchers: js.Object
-    ): js.Function = js.native
-    def aggregationMatcher(
-      /**
-      * the aggregation name
-      */
-    sAggregationName: String,
-      /**
-      * the matchers to filter aggregation items
-      */
-    vMatchers: typings.openui5.sapUiTestMatchersMatcherMod.default
-    ): js.Function = js.native
+    vMatchers: Matcher
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Boolean] = js.native
     
     def ancestor(
       /**
@@ -622,7 +1078,7 @@ object sapUiTestOpaBuilderMod {
       * ID
       */
     vAncestor: String
-    ): js.Object = js.native
+    ): Ancestor = js.native
     def ancestor(
       /**
       * the ancestor control to check, if undefined, validates every control to true. Can be a control or a control
@@ -633,7 +1089,7 @@ object sapUiTestOpaBuilderMod {
       * specifies if the ancestor should be a direct ancestor (parent)
       */
     bDirect: Boolean
-    ): js.Object = js.native
+    ): Ancestor = js.native
     /**
       * Creates a declarative matcher definition for {@link sap.ui.test.matchers.Ancestor}.
       *
@@ -645,7 +1101,7 @@ object sapUiTestOpaBuilderMod {
       * ID
       */
     vAncestor: js.Object
-    ): js.Object = js.native
+    ): Ancestor = js.native
     def ancestor(
       /**
       * the ancestor control to check, if undefined, validates every control to true. Can be a control or a control
@@ -656,7 +1112,7 @@ object sapUiTestOpaBuilderMod {
       * specifies if the ancestor should be a direct ancestor (parent)
       */
     bDirect: Boolean
-    ): js.Object = js.native
+    ): Ancestor = js.native
     
     /**
       * Creates a {@link sap.ui.test.matchers.BindingPath} matcher.
@@ -673,7 +1129,7 @@ object sapUiTestOpaBuilderMod {
       * be assumed to be relative to the binding context path
       */
     sPropertyPath: String
-    ): js.Object = js.native
+    ): BindingPath = js.native
     
     /**
       * Creates a matcher that checks whether the bound context or model has the given properties.
@@ -683,7 +1139,7 @@ object sapUiTestOpaBuilderMod {
     def bindingProperties(/**
       * the property-path map with expected values
       */
-    oProperties: js.Object): js.Function = js.native
+    oProperties: Record[String, Any]): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Boolean] = js.native
     /**
       * Creates a matcher that checks whether the bound context or model has the given properties.
       *
@@ -697,8 +1153,8 @@ object sapUiTestOpaBuilderMod {
       /**
       * the property-path map with expected values
       */
-    oProperties: js.Object
-    ): js.Function = js.native
+    oProperties: Record[String, Any]
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Boolean] = js.native
     
     /**
       * Creates a matcher function that returns all children fulfilling given matcher(s). The result will always
@@ -706,49 +1162,30 @@ object sapUiTestOpaBuilderMod {
       *
       * @returns matcher function returning all matching children
       */
-    def children(): js.Function = js.native
+    def children(): js.Function1[
+        /* p1 */ typings.openui5.sapUiCoreElementMod.default, 
+        js.Array[typings.openui5.sapUiCoreElementMod.default]
+      ] = js.native
     def children(/**
       * the matchers to filter child items
       */
-    vBuilderOrMatcher: js.Array[Any]): js.Function = js.native
+    vBuilderOrMatcher: js.Array[Matcher]): js.Function1[
+        /* p1 */ typings.openui5.sapUiCoreElementMod.default, 
+        js.Array[typings.openui5.sapUiCoreElementMod.default]
+      ] = js.native
     def children(
       /**
       * the matchers to filter child items
       */
-    vBuilderOrMatcher: js.Array[Any],
+    vBuilderOrMatcher: js.Array[Matcher],
       /**
       * specifies if the ancestor should be a direct ancestor (parent)
       */
     bDirect: Boolean
-    ): js.Function = js.native
-    def children(/**
-      * the matchers to filter child items
-      */
-    vBuilderOrMatcher: js.Function): js.Function = js.native
-    def children(
-      /**
-      * the matchers to filter child items
-      */
-    vBuilderOrMatcher: js.Function,
-      /**
-      * specifies if the ancestor should be a direct ancestor (parent)
-      */
-    bDirect: Boolean
-    ): js.Function = js.native
-    def children(/**
-      * the matchers to filter child items
-      */
-    vBuilderOrMatcher: js.Object): js.Function = js.native
-    def children(
-      /**
-      * the matchers to filter child items
-      */
-    vBuilderOrMatcher: js.Object,
-      /**
-      * specifies if the ancestor should be a direct ancestor (parent)
-      */
-    bDirect: Boolean
-    ): js.Function = js.native
+    ): js.Function1[
+        /* p1 */ typings.openui5.sapUiCoreElementMod.default, 
+        js.Array[typings.openui5.sapUiCoreElementMod.default]
+      ] = js.native
     def children(
       /**
       * the matchers to filter child items
@@ -758,27 +1195,37 @@ object sapUiTestOpaBuilderMod {
       * specifies if the ancestor should be a direct ancestor (parent)
       */
     bDirect: Boolean
-    ): js.Function = js.native
+    ): js.Function1[
+        /* p1 */ typings.openui5.sapUiCoreElementMod.default, 
+        js.Array[typings.openui5.sapUiCoreElementMod.default]
+      ] = js.native
+    def children(/**
+      * the matchers to filter child items
+      */
+    vBuilderOrMatcher: Matcher): js.Function1[
+        /* p1 */ typings.openui5.sapUiCoreElementMod.default, 
+        js.Array[typings.openui5.sapUiCoreElementMod.default]
+      ] = js.native
     def children(
       /**
       * the matchers to filter child items
       */
-    vBuilderOrMatcher: typings.openui5.sapUiTestMatchersMatcherMod.default
-    ): js.Function = js.native
-    def children(
-      /**
-      * the matchers to filter child items
-      */
-    vBuilderOrMatcher: typings.openui5.sapUiTestMatchersMatcherMod.default,
+    vBuilderOrMatcher: Matcher,
       /**
       * specifies if the ancestor should be a direct ancestor (parent)
       */
     bDirect: Boolean
-    ): js.Function = js.native
+    ): js.Function1[
+        /* p1 */ typings.openui5.sapUiCoreElementMod.default, 
+        js.Array[typings.openui5.sapUiCoreElementMod.default]
+      ] = js.native
     def children(/**
       * the matchers to filter child items
       */
-    vBuilderOrMatcher: OpaBuilder): js.Function = js.native
+    vBuilderOrMatcher: OpaBuilder): js.Function1[
+        /* p1 */ typings.openui5.sapUiCoreElementMod.default, 
+        js.Array[typings.openui5.sapUiCoreElementMod.default]
+      ] = js.native
     def children(
       /**
       * the matchers to filter child items
@@ -788,56 +1235,31 @@ object sapUiTestOpaBuilderMod {
       * specifies if the ancestor should be a direct ancestor (parent)
       */
     bDirect: Boolean
-    ): js.Function = js.native
+    ): js.Function1[
+        /* p1 */ typings.openui5.sapUiCoreElementMod.default, 
+        js.Array[typings.openui5.sapUiCoreElementMod.default]
+      ] = js.native
     
     /**
       * Creates a matcher function that checks whether one children fulfilling given matcher(s).
       *
       * @returns matcher function
       */
-    def childrenMatcher(): js.Function = js.native
+    def childrenMatcher(): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Boolean] = js.native
     def childrenMatcher(/**
       * the matchers to filter child items
       */
-    vBuilderOrMatcher: js.Array[Any]): js.Function = js.native
+    vBuilderOrMatcher: js.Array[Matcher]): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Boolean] = js.native
     def childrenMatcher(
       /**
       * the matchers to filter child items
       */
-    vBuilderOrMatcher: js.Array[Any],
+    vBuilderOrMatcher: js.Array[Matcher],
       /**
       * specifies if the ancestor should be a direct ancestor (parent)
       */
     bDirect: Boolean
-    ): js.Function = js.native
-    def childrenMatcher(/**
-      * the matchers to filter child items
-      */
-    vBuilderOrMatcher: js.Function): js.Function = js.native
-    def childrenMatcher(
-      /**
-      * the matchers to filter child items
-      */
-    vBuilderOrMatcher: js.Function,
-      /**
-      * specifies if the ancestor should be a direct ancestor (parent)
-      */
-    bDirect: Boolean
-    ): js.Function = js.native
-    def childrenMatcher(/**
-      * the matchers to filter child items
-      */
-    vBuilderOrMatcher: js.Object): js.Function = js.native
-    def childrenMatcher(
-      /**
-      * the matchers to filter child items
-      */
-    vBuilderOrMatcher: js.Object,
-      /**
-      * specifies if the ancestor should be a direct ancestor (parent)
-      */
-    bDirect: Boolean
-    ): js.Function = js.native
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Boolean] = js.native
     def childrenMatcher(
       /**
       * the matchers to filter child items
@@ -847,27 +1269,25 @@ object sapUiTestOpaBuilderMod {
       * specifies if the ancestor should be a direct ancestor (parent)
       */
     bDirect: Boolean
-    ): js.Function = js.native
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Boolean] = js.native
+    def childrenMatcher(/**
+      * the matchers to filter child items
+      */
+    vBuilderOrMatcher: Matcher): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Boolean] = js.native
     def childrenMatcher(
       /**
       * the matchers to filter child items
       */
-    vBuilderOrMatcher: typings.openui5.sapUiTestMatchersMatcherMod.default
-    ): js.Function = js.native
-    def childrenMatcher(
-      /**
-      * the matchers to filter child items
-      */
-    vBuilderOrMatcher: typings.openui5.sapUiTestMatchersMatcherMod.default,
+    vBuilderOrMatcher: Matcher,
       /**
       * specifies if the ancestor should be a direct ancestor (parent)
       */
     bDirect: Boolean
-    ): js.Function = js.native
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Boolean] = js.native
     def childrenMatcher(/**
       * the matchers to filter child items
       */
-    vBuilderOrMatcher: OpaBuilder): js.Function = js.native
+    vBuilderOrMatcher: OpaBuilder): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Boolean] = js.native
     def childrenMatcher(
       /**
       * the matchers to filter child items
@@ -877,8 +1297,198 @@ object sapUiTestOpaBuilderMod {
       * specifies if the ancestor should be a direct ancestor (parent)
       */
     bDirect: Boolean
-    ): js.Function = js.native
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Boolean] = js.native
     
+    def conditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: js.Array[Matcher],
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: js.Array[Matcher]
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: js.Array[Matcher],
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: js.Array[Matcher],
+      /**
+      * actual matcher that is executed if conditions are not met
+      */
+    vElseMatcher: js.Array[Matcher]
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: js.Array[Matcher],
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: js.Array[Matcher],
+      /**
+      * actual matcher that is executed if conditions are not met
+      */
+    vElseMatcher: Matcher
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: js.Array[Matcher],
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: Matcher
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: js.Array[Matcher],
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: Matcher,
+      /**
+      * actual matcher that is executed if conditions are not met
+      */
+    vElseMatcher: js.Array[Matcher]
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: js.Array[Matcher],
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: Matcher,
+      /**
+      * actual matcher that is executed if conditions are not met
+      */
+    vElseMatcher: Matcher
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: Boolean,
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: js.Array[Matcher]
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: Boolean,
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: js.Array[Matcher],
+      /**
+      * actual matcher that is executed if conditions are not met
+      */
+    vElseMatcher: js.Array[Matcher]
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: Boolean,
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: js.Array[Matcher],
+      /**
+      * actual matcher that is executed if conditions are not met
+      */
+    vElseMatcher: Matcher
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: Boolean,
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: Matcher
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: Boolean,
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: Matcher,
+      /**
+      * actual matcher that is executed if conditions are not met
+      */
+    vElseMatcher: js.Array[Matcher]
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: Boolean,
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: Matcher,
+      /**
+      * actual matcher that is executed if conditions are not met
+      */
+    vElseMatcher: Matcher
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: Matcher,
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: js.Array[Matcher]
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: Matcher,
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: js.Array[Matcher],
+      /**
+      * actual matcher that is executed if conditions are not met
+      */
+    vElseMatcher: js.Array[Matcher]
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: Matcher,
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: js.Array[Matcher],
+      /**
+      * actual matcher that is executed if conditions are not met
+      */
+    vElseMatcher: Matcher
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
     /**
       * Creates a matcher that checks states for given conditions.
       *
@@ -888,28 +1498,53 @@ object sapUiTestOpaBuilderMod {
       /**
       * conditions to pre-check
       */
-    vConditions: typings.openui5.sapUiTestMatchersMatcherMod.default | js.Function | js.Array[Any] | js.Object | Boolean,
+    vConditions: Matcher,
       /**
       * actual matcher that is executed if conditions are met
       */
-    vSuccessMatcher: typings.openui5.sapUiTestMatchersMatcherMod.default | js.Function | js.Array[Any] | js.Object,
+    vSuccessMatcher: Matcher
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: Matcher,
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: Matcher,
       /**
       * actual matcher that is executed if conditions are not met
       */
-    vElseMatcher: js.UndefOr[
-          typings.openui5.sapUiTestMatchersMatcherMod.default | js.Function | js.Array[Any] | js.Object
-        ]
-    ): js.Function = js.native
+    vElseMatcher: js.Array[Matcher]
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
+    def conditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: Matcher,
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: Matcher,
+      /**
+      * actual matcher that is executed if conditions are not met
+      */
+    vElseMatcher: Matcher
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
     
     /**
       * Creates a matcher that checks whether a control has all given custom data.
       *
       * @returns the matcher function checks for defined custom data
       */
-    def customData(/**
+    def customData(): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Boolean] = js.native
+    def customData(
+      /**
       * the map of custom data keys and their values to check against
       */
-    oCustomData: js.Object): js.Function = js.native
+    oCustomData: Record[String, Any]
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Boolean] = js.native
     
     def descendant(
       /**
@@ -917,7 +1552,7 @@ object sapUiTestOpaBuilderMod {
       * a control ID
       */
     vDescendent: String
-    ): js.Object = js.native
+    ): Descendant = js.native
     def descendant(
       /**
       * the descendant control to check. If undefined, it validates every control to true. Can be a control or
@@ -928,7 +1563,7 @@ object sapUiTestOpaBuilderMod {
       * specifies if the descendant should be a direct child
       */
     bDirect: Boolean
-    ): js.Object = js.native
+    ): Descendant = js.native
     /**
       * Creates a declarative matcher definition for {@link sap.ui.test.matchers.Descendant}.
       *
@@ -940,7 +1575,7 @@ object sapUiTestOpaBuilderMod {
       * a control ID
       */
     vDescendent: js.Object
-    ): js.Object = js.native
+    ): Descendant = js.native
     def descendant(
       /**
       * the descendant control to check. If undefined, it validates every control to true. Can be a control or
@@ -951,7 +1586,7 @@ object sapUiTestOpaBuilderMod {
       * specifies if the descendant should be a direct child
       */
     bDirect: Boolean
-    ): js.Object = js.native
+    ): Descendant = js.native
     
     /**
       * Creates a matcher that checks all inputs against given matchers. The input can be an array or a single
@@ -960,38 +1595,37 @@ object sapUiTestOpaBuilderMod {
       *
       * @returns the matcher function returns an array with all matching items
       */
-    def filter(): js.Function = js.native
+    def filter(): js.Function1[
+        /* p1 */ typings.openui5.sapUiCoreElementMod.default | js.Array[typings.openui5.sapUiCoreElementMod.default], 
+        js.Array[typings.openui5.sapUiCoreElementMod.default]
+      ] = js.native
     def filter(/**
       * the matchers to check all items against
       */
-    vMatchers: js.Array[Any]): js.Function = js.native
+    vMatchers: js.Array[Matcher]): js.Function1[
+        /* p1 */ typings.openui5.sapUiCoreElementMod.default | js.Array[typings.openui5.sapUiCoreElementMod.default], 
+        js.Array[typings.openui5.sapUiCoreElementMod.default]
+      ] = js.native
     def filter(/**
       * the matchers to check all items against
       */
-    vMatchers: js.Function): js.Function = js.native
-    def filter(/**
-      * the matchers to check all items against
-      */
-    vMatchers: js.Object): js.Function = js.native
-    def filter(
-      /**
-      * the matchers to check all items against
-      */
-    vMatchers: typings.openui5.sapUiTestMatchersMatcherMod.default
-    ): js.Function = js.native
+    vMatchers: Matcher): js.Function1[
+        /* p1 */ typings.openui5.sapUiCoreElementMod.default | js.Array[typings.openui5.sapUiCoreElementMod.default], 
+        js.Array[typings.openui5.sapUiCoreElementMod.default]
+      ] = js.native
     
     /**
       * Creates a matcher that checks whether a control has the focus.
       *
       * @returns a matcher function
       */
-    def focused(): js.Function = js.native
+    def focused(): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Boolean] = js.native
     def focused(
       /**
       * set true to check additionally for the focus on any child element
       */
     bCheckChildren: Boolean
-    ): js.Function = js.native
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Boolean] = js.native
     
     /**
       * Creates a {@link sap.ui.test.matchers.I18NText} matcher.
@@ -1007,7 +1641,7 @@ object sapUiTestOpaBuilderMod {
       * the path to the I18N text. If model is omitted, `i18n` is used as model name.
       */
     sModelTokenPath: String
-    ): js.Object = js.native
+    ): I18NText = js.native
     def i18n(
       /**
       * the name of the control property to match the I18N text with
@@ -1021,7 +1655,7 @@ object sapUiTestOpaBuilderMod {
       * the values to be used instead of the placeholders
       */
     aParameters: js.Array[String]
-    ): js.Object = js.native
+    ): I18NText = js.native
     
     /**
       * Creates a {@link sap.ui.test.matchers.LabelFor} matcher.
@@ -1042,7 +1676,7 @@ object sapUiTestOpaBuilderMod {
       * check against
       */
     sModelTokenPathOrText: String
-    ): js.Object = js.native
+    ): LabelFor = js.native
     def labelFor(
       /**
       * the name of the control property to match the I18N text with
@@ -1061,7 +1695,7 @@ object sapUiTestOpaBuilderMod {
       * the values to be used instead of the placeholders in case of I18N texts
       */
     aParameters: js.Array[Any]
-    ): js.Object = js.native
+    ): LabelFor = js.native
     /**
       * Creates a {@link sap.ui.test.matchers.LabelFor} matcher.
       *
@@ -1077,7 +1711,7 @@ object sapUiTestOpaBuilderMod {
       * check against
       */
     sModelTokenPathOrText: String
-    ): js.Object = js.native
+    ): LabelFor = js.native
     def labelFor(
       /**
       * the name of the control property to match the I18N text with
@@ -1092,32 +1726,31 @@ object sapUiTestOpaBuilderMod {
       * the values to be used instead of the placeholders in case of I18N texts
       */
     aParameters: js.Array[Any]
-    ): js.Object = js.native
+    ): LabelFor = js.native
     
     /**
       * Creates a matcher that checks a single input against all defined matchers.
       *
       * @returns the matcher function returns the result of the matcher chain
       */
-    def `match`(): js.Function = js.native
+    def `match`(): js.Function1[
+        /* p1 */ typings.openui5.sapUiCoreElementMod.default | js.Array[typings.openui5.sapUiCoreElementMod.default], 
+        Boolean
+      ] = js.native
     def `match`(/**
       * the matchers to check all items against
       */
-    vMatchers: js.Array[Any]): js.Function = js.native
+    vMatchers: js.Array[Matcher]): js.Function1[
+        /* p1 */ typings.openui5.sapUiCoreElementMod.default | js.Array[typings.openui5.sapUiCoreElementMod.default], 
+        Boolean
+      ] = js.native
     def `match`(/**
       * the matchers to check all items against
       */
-    vMatchers: js.Function): js.Function = js.native
-    def `match`(/**
-      * the matchers to check all items against
-      */
-    vMatchers: js.Object): js.Function = js.native
-    def `match`(
-      /**
-      * the matchers to check all items against
-      */
-    vMatchers: typings.openui5.sapUiTestMatchersMatcherMod.default
-    ): js.Function = js.native
+    vMatchers: Matcher): js.Function1[
+        /* p1 */ typings.openui5.sapUiCoreElementMod.default | js.Array[typings.openui5.sapUiCoreElementMod.default], 
+        Boolean
+      ] = js.native
     
     /**
       * Creates a matcher function which is negating the result of provided matchers. The matcher function returns
@@ -1135,25 +1768,15 @@ object sapUiTestOpaBuilderMod {
       *
       * @returns the matcher function returns the negated result of the matcher chain
       */
-    def not(): js.Function = js.native
+    def not(): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Boolean] = js.native
     def not(/**
       * the matchers that will actually be executed
       */
-    vMatchers: js.Array[Any]): js.Function = js.native
+    vMatchers: js.Array[Matcher]): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Boolean] = js.native
     def not(/**
       * the matchers that will actually be executed
       */
-    vMatchers: js.Function): js.Function = js.native
-    def not(/**
-      * the matchers that will actually be executed
-      */
-    vMatchers: js.Object): js.Function = js.native
-    def not(
-      /**
-      * the matchers that will actually be executed
-      */
-    vMatchers: typings.openui5.sapUiTestMatchersMatcherMod.default
-    ): js.Function = js.native
+    vMatchers: Matcher): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Boolean] = js.native
     
     /**
       * Creates a {@link sap.ui.test.matchers.Properties} matcher.
@@ -1163,7 +1786,7 @@ object sapUiTestOpaBuilderMod {
     def properties(/**
       * the object with the properties to be checked
       */
-    oProperties: js.Object): js.Object = js.native
+    oProperties: Record[String, Any]): Properties = js.native
     
     /**
       * Creates a matcher that validates the given property against a token text of a library message bundle.
@@ -1183,7 +1806,7 @@ object sapUiTestOpaBuilderMod {
       * the text token to validate against
       */
     sToken: String
-    ): js.Function = js.native
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
     def resourceBundle(
       /**
       * the name of the control property to match the I18N text with
@@ -1201,36 +1824,108 @@ object sapUiTestOpaBuilderMod {
       * the values to be used instead of the placeholders
       */
     aParameters: js.Array[String]
-    ): js.Function = js.native
+    ): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit] = js.native
     
     /**
       * Creates a matcher that checks for at least one successful match from a group of matchers.
       *
       * @returns a matcher function
       */
-    def some(): js.Function = js.native
+    def some(): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Boolean | Any] = js.native
     def some(/**
       * aMatchers list of matchers were one must be met
       */
-    aMatchers: js.Array[Any]): js.Function = js.native
+    aMatchers: js.Array[Matcher]): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Boolean | Any] = js.native
     def some(/**
       * aMatchers list of matchers were one must be met
       */
-    aMatchers: js.Function): js.Function = js.native
-    def some(/**
-      * aMatchers list of matchers were one must be met
-      */
-    aMatchers: js.Object): js.Function = js.native
-    def some(
-      /**
-      * aMatchers list of matchers were one must be met
-      */
-    aMatchers: typings.openui5.sapUiTestMatchersMatcherMod.default
-    ): js.Function = js.native
+    aMatchers: Matcher): js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Boolean | Any] = js.native
   }
   @JSImport("sap/ui/test/OpaBuilder", "Matchers")
   @js.native
   val Matchers: typings.openui5.sapUiTestOpaBuilderMod.Matchers = js.native
+  
+  type AncestorDefinition = js.Array[js.Object | String | Boolean]
+  
+  type DescendantDefinition = js.Array[js.Object | String | Boolean]
+  
+  trait I18NTextDefinition extends StObject {
+    
+    var key: String
+    
+    var modelName: String
+    
+    var parameters: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var propertyName: String
+  }
+  object I18NTextDefinition {
+    
+    inline def apply(key: String, modelName: String, propertyName: String): I18NTextDefinition = {
+      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], modelName = modelName.asInstanceOf[js.Any], propertyName = propertyName.asInstanceOf[js.Any])
+      __obj.asInstanceOf[I18NTextDefinition]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: I18NTextDefinition] (val x: Self) extends AnyVal {
+      
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
+      
+      inline def setParameters(value: js.Array[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      
+      inline def setParametersVarargs(value: String*): Self = StObject.set(x, "parameters", js.Array(value*))
+      
+      inline def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait LabelForDefinition extends StObject {
+    
+    var key: js.UndefOr[String] = js.undefined
+    
+    var modelName: js.UndefOr[String] = js.undefined
+    
+    var parameters: js.UndefOr[js.Array[Any]] = js.undefined
+    
+    var propertyName: String
+    
+    var text: js.UndefOr[String] = js.undefined
+  }
+  object LabelForDefinition {
+    
+    inline def apply(propertyName: String): LabelForDefinition = {
+      val __obj = js.Dynamic.literal(propertyName = propertyName.asInstanceOf[js.Any])
+      __obj.asInstanceOf[LabelForDefinition]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelForDefinition] (val x: Self) extends AnyVal {
+      
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      
+      inline def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
+      
+      inline def setModelNameUndefined: Self = StObject.set(x, "modelName", js.undefined)
+      
+      inline def setParameters(value: js.Array[Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      
+      inline def setParametersVarargs(value: Any*): Self = StObject.set(x, "parameters", js.Array(value*))
+      
+      inline def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
+      
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    }
+  }
   
   @js.native
   trait OpaBuilder extends StObject {
@@ -1240,22 +1935,30 @@ object sapUiTestOpaBuilderMod {
       *
       * @returns the final options object
       */
-    def build(): js.Object = js.native
+    def build(): SingleControlSelector | MultiControlSelector = js.native
     
     /**
       * Add a check function. If another check function already exists, the functions are chained.
       *
       * @returns this OpaBuilder instance
       */
-    def check(/**
-      * the check that is executed on matched controls
-      */
-    fnCheck: js.Function): this.type = js.native
     def check(
       /**
       * the check that is executed on matched controls
       */
-    fnCheck: js.Function,
+    fnCheck: js.Function1[
+          /* p1 */ typings.openui5.sapUiCoreElementMod.default | js.Array[typings.openui5.sapUiCoreElementMod.default], 
+          Boolean
+        ]
+    ): this.type = js.native
+    def check(
+      /**
+      * the check that is executed on matched controls
+      */
+    fnCheck: js.Function1[
+          /* p1 */ typings.openui5.sapUiCoreElementMod.default | js.Array[typings.openui5.sapUiCoreElementMod.default], 
+          Boolean
+        ],
       /**
       * true to replace all previous defined matchers, false to add it (default)
       */
@@ -1295,26 +1998,12 @@ object sapUiTestOpaBuilderMod {
     def `do`(/**
       * the action(s) to be performed on matched controls
       */
-    vActions: js.Array[Any]): this.type = js.native
+    vActions: js.Array[Action]): this.type = js.native
     def `do`(
       /**
       * the action(s) to be performed on matched controls
       */
-    vActions: js.Array[Any],
-      /**
-      * true to replace all previous defined actions, false to add it (default)
-      */
-    bReplace: Boolean
-    ): this.type = js.native
-    def `do`(/**
-      * the action(s) to be performed on matched controls
-      */
-    vActions: js.Function): this.type = js.native
-    def `do`(
-      /**
-      * the action(s) to be performed on matched controls
-      */
-    vActions: js.Function,
+    vActions: js.Array[Action],
       /**
       * true to replace all previous defined actions, false to add it (default)
       */
@@ -1325,23 +2014,211 @@ object sapUiTestOpaBuilderMod {
       *
       * @returns this OpaBuilder instance
       */
+    def `do`(/**
+      * the action(s) to be performed on matched controls
+      */
+    vActions: Action): this.type = js.native
     def `do`(
       /**
       * the action(s) to be performed on matched controls
       */
-    vActions: typings.openui5.sapUiTestActionsActionMod.default
-    ): this.type = js.native
-    def `do`(
-      /**
-      * the action(s) to be performed on matched controls
-      */
-    vActions: typings.openui5.sapUiTestActionsActionMod.default,
+    vActions: Action,
       /**
       * true to replace all previous defined actions, false to add it (default)
       */
     bReplace: Boolean
     ): this.type = js.native
     
+    def doConditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: js.Array[Matcher],
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessActions: js.Array[Action]
+    ): this.type = js.native
+    def doConditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: js.Array[Matcher],
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessActions: js.Array[Action],
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseActions: js.Array[Action]
+    ): this.type = js.native
+    def doConditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: js.Array[Matcher],
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessActions: js.Array[Action],
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseActions: Action
+    ): this.type = js.native
+    def doConditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: js.Array[Matcher],
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessActions: Action
+    ): this.type = js.native
+    def doConditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: js.Array[Matcher],
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessActions: Action,
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseActions: js.Array[Action]
+    ): this.type = js.native
+    def doConditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: js.Array[Matcher],
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessActions: Action,
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseActions: Action
+    ): this.type = js.native
+    def doConditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Boolean,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessActions: js.Array[Action]
+    ): this.type = js.native
+    def doConditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Boolean,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessActions: js.Array[Action],
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseActions: js.Array[Action]
+    ): this.type = js.native
+    def doConditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Boolean,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessActions: js.Array[Action],
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseActions: Action
+    ): this.type = js.native
+    def doConditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Boolean,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessActions: Action
+    ): this.type = js.native
+    def doConditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Boolean,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessActions: Action,
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseActions: js.Array[Action]
+    ): this.type = js.native
+    def doConditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Boolean,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessActions: Action,
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseActions: Action
+    ): this.type = js.native
+    def doConditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Matcher,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessActions: js.Array[Action]
+    ): this.type = js.native
+    def doConditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Matcher,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessActions: js.Array[Action],
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseActions: js.Array[Action]
+    ): this.type = js.native
+    def doConditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Matcher,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessActions: js.Array[Action],
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseActions: Action
+    ): this.type = js.native
     /**
       * Add an action that is only performed if target control fulfills the conditions. It is internally using
       * {@link sap.ui.test.OpaBuilder.Actions.conditional}.
@@ -1352,15 +2229,39 @@ object sapUiTestOpaBuilderMod {
       /**
       * target control is checked against these given conditions
       */
-    vConditions: typings.openui5.sapUiTestMatchersMatcherMod.default | js.Function | js.Array[Any] | js.Object | Boolean,
+    vConditions: Matcher,
       /**
       * the actions to be performed when conditions are fulfilled
       */
-    vSuccessActions: typings.openui5.sapUiTestActionsActionMod.default | js.Function | js.Array[Any],
+    vSuccessActions: Action
+    ): this.type = js.native
+    def doConditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Matcher,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessActions: Action,
       /**
       * the action(s) to be performed when conditions are not fulfilled
       */
-    vElseActions: js.UndefOr[typings.openui5.sapUiTestActionsActionMod.default | js.Function | js.Array[Any]]
+    vElseActions: js.Array[Action]
+    ): this.type = js.native
+    def doConditional(
+      /**
+      * target control is checked against these given conditions
+      */
+    vConditions: Matcher,
+      /**
+      * the actions to be performed when conditions are fulfilled
+      */
+    vSuccessActions: Action,
+      /**
+      * the action(s) to be performed when conditions are not fulfilled
+      */
+    vElseActions: Action
     ): this.type = js.native
     
     /**
@@ -1667,17 +2568,7 @@ object sapUiTestOpaBuilderMod {
       /**
       * the actions to be performed on matching aggregation items
       */
-    vActions: js.Array[Any]
-    ): this.type = js.native
-    def doOnAggregation(
-      /**
-      * the aggregation name
-      */
-    sAggregationName: String,
-      /**
-      * the actions to be performed on matching aggregation items
-      */
-    vActions: js.Function
+    vActions: js.Array[Action]
     ): this.type = js.native
     /**
       * Performs given actions on all items of an aggregation fulfilling the matchers.
@@ -1692,7 +2583,7 @@ object sapUiTestOpaBuilderMod {
       /**
       * the actions to be performed on matching aggregation items
       */
-    vActions: typings.openui5.sapUiTestActionsActionMod.default
+    vActions: Action
     ): this.type = js.native
     def doOnAggregation(
       /**
@@ -1702,11 +2593,11 @@ object sapUiTestOpaBuilderMod {
       /**
       * the matchers to filter aggregation items
       */
-    vMatchers: js.Array[Any],
+    vMatchers: js.Array[Matcher],
       /**
       * the actions to be performed on matching aggregation items
       */
-    vActions: js.Array[Any]
+    vActions: js.Array[Action]
     ): this.type = js.native
     def doOnAggregation(
       /**
@@ -1716,11 +2607,11 @@ object sapUiTestOpaBuilderMod {
       /**
       * the matchers to filter aggregation items
       */
-    vMatchers: js.Array[Any],
+    vMatchers: js.Array[Matcher],
       /**
       * the actions to be performed on matching aggregation items
       */
-    vActions: js.Function
+    vActions: Action
     ): this.type = js.native
     def doOnAggregation(
       /**
@@ -1730,123 +2621,11 @@ object sapUiTestOpaBuilderMod {
       /**
       * the matchers to filter aggregation items
       */
-    vMatchers: js.Array[Any],
+    vMatchers: Matcher,
       /**
       * the actions to be performed on matching aggregation items
       */
-    vActions: typings.openui5.sapUiTestActionsActionMod.default
-    ): this.type = js.native
-    def doOnAggregation(
-      /**
-      * the aggregation name
-      */
-    sAggregationName: String,
-      /**
-      * the matchers to filter aggregation items
-      */
-    vMatchers: js.Function,
-      /**
-      * the actions to be performed on matching aggregation items
-      */
-    vActions: js.Array[Any]
-    ): this.type = js.native
-    def doOnAggregation(
-      /**
-      * the aggregation name
-      */
-    sAggregationName: String,
-      /**
-      * the matchers to filter aggregation items
-      */
-    vMatchers: js.Function,
-      /**
-      * the actions to be performed on matching aggregation items
-      */
-    vActions: js.Function
-    ): this.type = js.native
-    def doOnAggregation(
-      /**
-      * the aggregation name
-      */
-    sAggregationName: String,
-      /**
-      * the matchers to filter aggregation items
-      */
-    vMatchers: js.Function,
-      /**
-      * the actions to be performed on matching aggregation items
-      */
-    vActions: typings.openui5.sapUiTestActionsActionMod.default
-    ): this.type = js.native
-    def doOnAggregation(
-      /**
-      * the aggregation name
-      */
-    sAggregationName: String,
-      /**
-      * the matchers to filter aggregation items
-      */
-    vMatchers: js.Object,
-      /**
-      * the actions to be performed on matching aggregation items
-      */
-    vActions: js.Array[Any]
-    ): this.type = js.native
-    def doOnAggregation(
-      /**
-      * the aggregation name
-      */
-    sAggregationName: String,
-      /**
-      * the matchers to filter aggregation items
-      */
-    vMatchers: js.Object,
-      /**
-      * the actions to be performed on matching aggregation items
-      */
-    vActions: js.Function
-    ): this.type = js.native
-    def doOnAggregation(
-      /**
-      * the aggregation name
-      */
-    sAggregationName: String,
-      /**
-      * the matchers to filter aggregation items
-      */
-    vMatchers: js.Object,
-      /**
-      * the actions to be performed on matching aggregation items
-      */
-    vActions: typings.openui5.sapUiTestActionsActionMod.default
-    ): this.type = js.native
-    def doOnAggregation(
-      /**
-      * the aggregation name
-      */
-    sAggregationName: String,
-      /**
-      * the matchers to filter aggregation items
-      */
-    vMatchers: typings.openui5.sapUiTestMatchersMatcherMod.default,
-      /**
-      * the actions to be performed on matching aggregation items
-      */
-    vActions: js.Array[Any]
-    ): this.type = js.native
-    def doOnAggregation(
-      /**
-      * the aggregation name
-      */
-    sAggregationName: String,
-      /**
-      * the matchers to filter aggregation items
-      */
-    vMatchers: typings.openui5.sapUiTestMatchersMatcherMod.default,
-      /**
-      * the actions to be performed on matching aggregation items
-      */
-    vActions: js.Function
+    vActions: js.Array[Action]
     ): this.type = js.native
     /**
       * Performs given actions on all items of an aggregation fulfilling the matchers.
@@ -1861,11 +2640,11 @@ object sapUiTestOpaBuilderMod {
       /**
       * the matchers to filter aggregation items
       */
-    vMatchers: typings.openui5.sapUiTestMatchersMatcherMod.default,
+    vMatchers: Matcher,
       /**
       * the actions to be performed on matching aggregation items
       */
-    vActions: typings.openui5.sapUiTestActionsActionMod.default
+    vActions: Action
     ): this.type = js.native
     
     /**
@@ -1878,26 +2657,26 @@ object sapUiTestOpaBuilderMod {
     def doOnChildren(/**
       * the child builder or child matcher
       */
-    vChildBuilderOrMatcher: js.Array[Any]): this.type = js.native
+    vChildBuilderOrMatcher: js.Array[Matcher]): this.type = js.native
     def doOnChildren(
       /**
       * the child builder or child matcher
       */
-    vChildBuilderOrMatcher: js.Array[Any],
+    vChildBuilderOrMatcher: js.Array[Matcher],
       /**
       * the actions to be performed on matching child items
       */
-    vActions: js.Array[Any]
+    vActions: js.Array[Action]
     ): this.type = js.native
     def doOnChildren(
       /**
       * the child builder or child matcher
       */
-    vChildBuilderOrMatcher: js.Array[Any],
+    vChildBuilderOrMatcher: js.Array[Matcher],
       /**
       * the actions to be performed on matching child items
       */
-    vActions: js.Array[Any],
+    vActions: js.Array[Action],
       /**
       * specifies if the ancestor should be a direct ancestor (parent)
       */
@@ -1907,31 +2686,7 @@ object sapUiTestOpaBuilderMod {
       /**
       * the child builder or child matcher
       */
-    vChildBuilderOrMatcher: js.Array[Any],
-      /**
-      * the actions to be performed on matching child items
-      */
-    vActions: js.Function
-    ): this.type = js.native
-    def doOnChildren(
-      /**
-      * the child builder or child matcher
-      */
-    vChildBuilderOrMatcher: js.Array[Any],
-      /**
-      * the actions to be performed on matching child items
-      */
-    vActions: js.Function,
-      /**
-      * specifies if the ancestor should be a direct ancestor (parent)
-      */
-    bDirect: Boolean
-    ): this.type = js.native
-    def doOnChildren(
-      /**
-      * the child builder or child matcher
-      */
-    vChildBuilderOrMatcher: js.Array[Any],
+    vChildBuilderOrMatcher: js.Array[Matcher],
       /**
       * the actions to be performed on matching child items
       */
@@ -1945,21 +2700,83 @@ object sapUiTestOpaBuilderMod {
       /**
       * the child builder or child matcher
       */
-    vChildBuilderOrMatcher: js.Array[Any],
+    vChildBuilderOrMatcher: js.Array[Matcher],
       /**
       * the actions to be performed on matching child items
       */
-    vActions: typings.openui5.sapUiTestActionsActionMod.default
+    vActions: Action
     ): this.type = js.native
     def doOnChildren(
       /**
       * the child builder or child matcher
       */
-    vChildBuilderOrMatcher: js.Array[Any],
+    vChildBuilderOrMatcher: js.Array[Matcher],
       /**
       * the actions to be performed on matching child items
       */
-    vActions: typings.openui5.sapUiTestActionsActionMod.default,
+    vActions: Action,
+      /**
+      * specifies if the ancestor should be a direct ancestor (parent)
+      */
+    bDirect: Boolean
+    ): this.type = js.native
+    def doOnChildren(
+      /**
+      * the child builder or child matcher
+      */
+    vChildBuilderOrMatcher: Unit,
+      /**
+      * the actions to be performed on matching child items
+      */
+    vActions: js.Array[Action]
+    ): this.type = js.native
+    def doOnChildren(
+      /**
+      * the child builder or child matcher
+      */
+    vChildBuilderOrMatcher: Unit,
+      /**
+      * the actions to be performed on matching child items
+      */
+    vActions: js.Array[Action],
+      /**
+      * specifies if the ancestor should be a direct ancestor (parent)
+      */
+    bDirect: Boolean
+    ): this.type = js.native
+    def doOnChildren(
+      /**
+      * the child builder or child matcher
+      */
+    vChildBuilderOrMatcher: Unit,
+      /**
+      * the actions to be performed on matching child items
+      */
+    vActions: Unit,
+      /**
+      * specifies if the ancestor should be a direct ancestor (parent)
+      */
+    bDirect: Boolean
+    ): this.type = js.native
+    def doOnChildren(
+      /**
+      * the child builder or child matcher
+      */
+    vChildBuilderOrMatcher: Unit,
+      /**
+      * the actions to be performed on matching child items
+      */
+    vActions: Action
+    ): this.type = js.native
+    def doOnChildren(
+      /**
+      * the child builder or child matcher
+      */
+    vChildBuilderOrMatcher: Unit,
+      /**
+      * the actions to be performed on matching child items
+      */
+    vActions: Action,
       /**
       * specifies if the ancestor should be a direct ancestor (parent)
       */
@@ -1968,26 +2785,26 @@ object sapUiTestOpaBuilderMod {
     def doOnChildren(/**
       * the child builder or child matcher
       */
-    vChildBuilderOrMatcher: js.Function): this.type = js.native
+    vChildBuilderOrMatcher: Matcher): this.type = js.native
     def doOnChildren(
       /**
       * the child builder or child matcher
       */
-    vChildBuilderOrMatcher: js.Function,
+    vChildBuilderOrMatcher: Matcher,
       /**
       * the actions to be performed on matching child items
       */
-    vActions: js.Array[Any]
+    vActions: js.Array[Action]
     ): this.type = js.native
     def doOnChildren(
       /**
       * the child builder or child matcher
       */
-    vChildBuilderOrMatcher: js.Function,
+    vChildBuilderOrMatcher: Matcher,
       /**
       * the actions to be performed on matching child items
       */
-    vActions: js.Array[Any],
+    vActions: js.Array[Action],
       /**
       * specifies if the ancestor should be a direct ancestor (parent)
       */
@@ -1997,31 +2814,7 @@ object sapUiTestOpaBuilderMod {
       /**
       * the child builder or child matcher
       */
-    vChildBuilderOrMatcher: js.Function,
-      /**
-      * the actions to be performed on matching child items
-      */
-    vActions: js.Function
-    ): this.type = js.native
-    def doOnChildren(
-      /**
-      * the child builder or child matcher
-      */
-    vChildBuilderOrMatcher: js.Function,
-      /**
-      * the actions to be performed on matching child items
-      */
-    vActions: js.Function,
-      /**
-      * specifies if the ancestor should be a direct ancestor (parent)
-      */
-    bDirect: Boolean
-    ): this.type = js.native
-    def doOnChildren(
-      /**
-      * the child builder or child matcher
-      */
-    vChildBuilderOrMatcher: js.Function,
+    vChildBuilderOrMatcher: Matcher,
       /**
       * the actions to be performed on matching child items
       */
@@ -2035,289 +2828,21 @@ object sapUiTestOpaBuilderMod {
       /**
       * the child builder or child matcher
       */
-    vChildBuilderOrMatcher: js.Function,
+    vChildBuilderOrMatcher: Matcher,
       /**
       * the actions to be performed on matching child items
       */
-    vActions: typings.openui5.sapUiTestActionsActionMod.default
+    vActions: Action
     ): this.type = js.native
     def doOnChildren(
       /**
       * the child builder or child matcher
       */
-    vChildBuilderOrMatcher: js.Function,
+    vChildBuilderOrMatcher: Matcher,
       /**
       * the actions to be performed on matching child items
       */
-    vActions: typings.openui5.sapUiTestActionsActionMod.default,
-      /**
-      * specifies if the ancestor should be a direct ancestor (parent)
-      */
-    bDirect: Boolean
-    ): this.type = js.native
-    def doOnChildren(/**
-      * the child builder or child matcher
-      */
-    vChildBuilderOrMatcher: js.Object): this.type = js.native
-    def doOnChildren(
-      /**
-      * the child builder or child matcher
-      */
-    vChildBuilderOrMatcher: js.Object,
-      /**
-      * the actions to be performed on matching child items
-      */
-    vActions: js.Array[Any]
-    ): this.type = js.native
-    def doOnChildren(
-      /**
-      * the child builder or child matcher
-      */
-    vChildBuilderOrMatcher: js.Object,
-      /**
-      * the actions to be performed on matching child items
-      */
-    vActions: js.Array[Any],
-      /**
-      * specifies if the ancestor should be a direct ancestor (parent)
-      */
-    bDirect: Boolean
-    ): this.type = js.native
-    def doOnChildren(
-      /**
-      * the child builder or child matcher
-      */
-    vChildBuilderOrMatcher: js.Object,
-      /**
-      * the actions to be performed on matching child items
-      */
-    vActions: js.Function
-    ): this.type = js.native
-    def doOnChildren(
-      /**
-      * the child builder or child matcher
-      */
-    vChildBuilderOrMatcher: js.Object,
-      /**
-      * the actions to be performed on matching child items
-      */
-    vActions: js.Function,
-      /**
-      * specifies if the ancestor should be a direct ancestor (parent)
-      */
-    bDirect: Boolean
-    ): this.type = js.native
-    def doOnChildren(
-      /**
-      * the child builder or child matcher
-      */
-    vChildBuilderOrMatcher: js.Object,
-      /**
-      * the actions to be performed on matching child items
-      */
-    vActions: Unit,
-      /**
-      * specifies if the ancestor should be a direct ancestor (parent)
-      */
-    bDirect: Boolean
-    ): this.type = js.native
-    def doOnChildren(
-      /**
-      * the child builder or child matcher
-      */
-    vChildBuilderOrMatcher: js.Object,
-      /**
-      * the actions to be performed on matching child items
-      */
-    vActions: typings.openui5.sapUiTestActionsActionMod.default
-    ): this.type = js.native
-    def doOnChildren(
-      /**
-      * the child builder or child matcher
-      */
-    vChildBuilderOrMatcher: js.Object,
-      /**
-      * the actions to be performed on matching child items
-      */
-    vActions: typings.openui5.sapUiTestActionsActionMod.default,
-      /**
-      * specifies if the ancestor should be a direct ancestor (parent)
-      */
-    bDirect: Boolean
-    ): this.type = js.native
-    def doOnChildren(
-      /**
-      * the child builder or child matcher
-      */
-    vChildBuilderOrMatcher: Unit,
-      /**
-      * the actions to be performed on matching child items
-      */
-    vActions: js.Array[Any]
-    ): this.type = js.native
-    def doOnChildren(
-      /**
-      * the child builder or child matcher
-      */
-    vChildBuilderOrMatcher: Unit,
-      /**
-      * the actions to be performed on matching child items
-      */
-    vActions: js.Array[Any],
-      /**
-      * specifies if the ancestor should be a direct ancestor (parent)
-      */
-    bDirect: Boolean
-    ): this.type = js.native
-    def doOnChildren(
-      /**
-      * the child builder or child matcher
-      */
-    vChildBuilderOrMatcher: Unit,
-      /**
-      * the actions to be performed on matching child items
-      */
-    vActions: js.Function
-    ): this.type = js.native
-    def doOnChildren(
-      /**
-      * the child builder or child matcher
-      */
-    vChildBuilderOrMatcher: Unit,
-      /**
-      * the actions to be performed on matching child items
-      */
-    vActions: js.Function,
-      /**
-      * specifies if the ancestor should be a direct ancestor (parent)
-      */
-    bDirect: Boolean
-    ): this.type = js.native
-    def doOnChildren(
-      /**
-      * the child builder or child matcher
-      */
-    vChildBuilderOrMatcher: Unit,
-      /**
-      * the actions to be performed on matching child items
-      */
-    vActions: Unit,
-      /**
-      * specifies if the ancestor should be a direct ancestor (parent)
-      */
-    bDirect: Boolean
-    ): this.type = js.native
-    def doOnChildren(
-      /**
-      * the child builder or child matcher
-      */
-    vChildBuilderOrMatcher: Unit,
-      /**
-      * the actions to be performed on matching child items
-      */
-    vActions: typings.openui5.sapUiTestActionsActionMod.default
-    ): this.type = js.native
-    def doOnChildren(
-      /**
-      * the child builder or child matcher
-      */
-    vChildBuilderOrMatcher: Unit,
-      /**
-      * the actions to be performed on matching child items
-      */
-    vActions: typings.openui5.sapUiTestActionsActionMod.default,
-      /**
-      * specifies if the ancestor should be a direct ancestor (parent)
-      */
-    bDirect: Boolean
-    ): this.type = js.native
-    def doOnChildren(
-      /**
-      * the child builder or child matcher
-      */
-    vChildBuilderOrMatcher: typings.openui5.sapUiTestMatchersMatcherMod.default
-    ): this.type = js.native
-    def doOnChildren(
-      /**
-      * the child builder or child matcher
-      */
-    vChildBuilderOrMatcher: typings.openui5.sapUiTestMatchersMatcherMod.default,
-      /**
-      * the actions to be performed on matching child items
-      */
-    vActions: js.Array[Any]
-    ): this.type = js.native
-    def doOnChildren(
-      /**
-      * the child builder or child matcher
-      */
-    vChildBuilderOrMatcher: typings.openui5.sapUiTestMatchersMatcherMod.default,
-      /**
-      * the actions to be performed on matching child items
-      */
-    vActions: js.Array[Any],
-      /**
-      * specifies if the ancestor should be a direct ancestor (parent)
-      */
-    bDirect: Boolean
-    ): this.type = js.native
-    def doOnChildren(
-      /**
-      * the child builder or child matcher
-      */
-    vChildBuilderOrMatcher: typings.openui5.sapUiTestMatchersMatcherMod.default,
-      /**
-      * the actions to be performed on matching child items
-      */
-    vActions: js.Function
-    ): this.type = js.native
-    def doOnChildren(
-      /**
-      * the child builder or child matcher
-      */
-    vChildBuilderOrMatcher: typings.openui5.sapUiTestMatchersMatcherMod.default,
-      /**
-      * the actions to be performed on matching child items
-      */
-    vActions: js.Function,
-      /**
-      * specifies if the ancestor should be a direct ancestor (parent)
-      */
-    bDirect: Boolean
-    ): this.type = js.native
-    def doOnChildren(
-      /**
-      * the child builder or child matcher
-      */
-    vChildBuilderOrMatcher: typings.openui5.sapUiTestMatchersMatcherMod.default,
-      /**
-      * the actions to be performed on matching child items
-      */
-    vActions: Unit,
-      /**
-      * specifies if the ancestor should be a direct ancestor (parent)
-      */
-    bDirect: Boolean
-    ): this.type = js.native
-    def doOnChildren(
-      /**
-      * the child builder or child matcher
-      */
-    vChildBuilderOrMatcher: typings.openui5.sapUiTestMatchersMatcherMod.default,
-      /**
-      * the actions to be performed on matching child items
-      */
-    vActions: typings.openui5.sapUiTestActionsActionMod.default
-    ): this.type = js.native
-    def doOnChildren(
-      /**
-      * the child builder or child matcher
-      */
-    vChildBuilderOrMatcher: typings.openui5.sapUiTestMatchersMatcherMod.default,
-      /**
-      * the actions to be performed on matching child items
-      */
-    vActions: typings.openui5.sapUiTestActionsActionMod.default,
+    vActions: Action,
       /**
       * specifies if the ancestor should be a direct ancestor (parent)
       */
@@ -2335,7 +2860,7 @@ object sapUiTestOpaBuilderMod {
       /**
       * the actions to be performed on matching child items
       */
-    vActions: js.Array[Any]
+    vActions: js.Array[Action]
     ): this.type = js.native
     def doOnChildren(
       /**
@@ -2345,31 +2870,7 @@ object sapUiTestOpaBuilderMod {
       /**
       * the actions to be performed on matching child items
       */
-    vActions: js.Array[Any],
-      /**
-      * specifies if the ancestor should be a direct ancestor (parent)
-      */
-    bDirect: Boolean
-    ): this.type = js.native
-    def doOnChildren(
-      /**
-      * the child builder or child matcher
-      */
-    vChildBuilderOrMatcher: OpaBuilder,
-      /**
-      * the actions to be performed on matching child items
-      */
-    vActions: js.Function
-    ): this.type = js.native
-    def doOnChildren(
-      /**
-      * the child builder or child matcher
-      */
-    vChildBuilderOrMatcher: OpaBuilder,
-      /**
-      * the actions to be performed on matching child items
-      */
-    vActions: js.Function,
+    vActions: js.Array[Action],
       /**
       * specifies if the ancestor should be a direct ancestor (parent)
       */
@@ -2397,7 +2898,7 @@ object sapUiTestOpaBuilderMod {
       /**
       * the actions to be performed on matching child items
       */
-    vActions: typings.openui5.sapUiTestActionsActionMod.default
+    vActions: Action
     ): this.type = js.native
     def doOnChildren(
       /**
@@ -2407,7 +2908,7 @@ object sapUiTestOpaBuilderMod {
       /**
       * the actions to be performed on matching child items
       */
-    vActions: typings.openui5.sapUiTestActionsActionMod.default,
+    vActions: Action,
       /**
       * specifies if the ancestor should be a direct ancestor (parent)
       */
@@ -2466,13 +2967,13 @@ object sapUiTestOpaBuilderMod {
       *
       * @returns an object extending a jQuery promise, corresponding to the result of {@link sap.ui.test.Opa5#waitFor}
       */
-    def execute(): js.Object = js.native
+    def execute(): Chain = js.native
     def execute(
       /**
       * the Opa5 instance to call {@link sap.ui.test.Opa5#waitFor} on
       */
     oOpaInstance: typings.openui5.sapUiTestOpa5Mod.default
-    ): js.Object = js.native
+    ): Chain = js.native
     
     /**
       * Sets the `fragmentId` parameter.
@@ -2495,40 +2996,12 @@ object sapUiTestOpaBuilderMod {
     def has(/**
       * additional matchers to filter target control(s)
       */
-    vMatchers: js.Array[Any]): this.type = js.native
+    vMatchers: js.Array[Matcher]): this.type = js.native
     def has(
       /**
       * additional matchers to filter target control(s)
       */
-    vMatchers: js.Array[Any],
-      /**
-      * true to replace all previous defined matchers, false to add it (default)
-      */
-    bReplace: Boolean
-    ): this.type = js.native
-    def has(/**
-      * additional matchers to filter target control(s)
-      */
-    vMatchers: js.Function): this.type = js.native
-    def has(
-      /**
-      * additional matchers to filter target control(s)
-      */
-    vMatchers: js.Function,
-      /**
-      * true to replace all previous defined matchers, false to add it (default)
-      */
-    bReplace: Boolean
-    ): this.type = js.native
-    def has(/**
-      * additional matchers to filter target control(s)
-      */
-    vMatchers: js.Object): this.type = js.native
-    def has(
-      /**
-      * additional matchers to filter target control(s)
-      */
-    vMatchers: js.Object,
+    vMatchers: js.Array[Matcher],
       /**
       * true to replace all previous defined matchers, false to add it (default)
       */
@@ -2539,17 +3012,15 @@ object sapUiTestOpaBuilderMod {
       *
       * @returns this OpaBuilder instance
       */
+    def has(/**
+      * additional matchers to filter target control(s)
+      */
+    vMatchers: Matcher): this.type = js.native
     def has(
       /**
       * additional matchers to filter target control(s)
       */
-    vMatchers: typings.openui5.sapUiTestMatchersMatcherMod.default
-    ): this.type = js.native
-    def has(
-      /**
-      * additional matchers to filter target control(s)
-      */
-    vMatchers: typings.openui5.sapUiTestMatchersMatcherMod.default,
+    vMatchers: Matcher,
       /**
       * true to replace all previous defined matchers, false to add it (default)
       */
@@ -2573,7 +3044,7 @@ object sapUiTestOpaBuilderMod {
       /**
       * matchers to filter aggregation items
       */
-    vMatchers: js.Array[Any]
+    vMatchers: js.Array[Matcher]
     ): this.type = js.native
     def hasAggregation(
       /**
@@ -2583,27 +3054,7 @@ object sapUiTestOpaBuilderMod {
       /**
       * matchers to filter aggregation items
       */
-    vMatchers: js.Function
-    ): this.type = js.native
-    def hasAggregation(
-      /**
-      * the aggregation name
-      */
-    sAggregationName: String,
-      /**
-      * matchers to filter aggregation items
-      */
-    vMatchers: js.Object
-    ): this.type = js.native
-    def hasAggregation(
-      /**
-      * the aggregation name
-      */
-    sAggregationName: String,
-      /**
-      * matchers to filter aggregation items
-      */
-    vMatchers: typings.openui5.sapUiTestMatchersMatcherMod.default
+    vMatchers: Matcher
     ): this.type = js.native
     
     /**
@@ -2636,7 +3087,7 @@ object sapUiTestOpaBuilderMod {
       /**
       * map of properties that aggregation item must match
       */
-    oProperties: js.Object
+    oProperties: Record[String, Any]
     ): this.type = js.native
     
     /**
@@ -2648,40 +3099,12 @@ object sapUiTestOpaBuilderMod {
     def hasChildren(/**
       * the matchers to filter child items
       */
-    vBuilderOrMatcher: js.Array[Any]): this.type = js.native
+    vBuilderOrMatcher: js.Array[Matcher]): this.type = js.native
     def hasChildren(
       /**
       * the matchers to filter child items
       */
-    vBuilderOrMatcher: js.Array[Any],
-      /**
-      * specifies if the ancestor should be a direct ancestor (parent)
-      */
-    bDirect: Boolean
-    ): this.type = js.native
-    def hasChildren(/**
-      * the matchers to filter child items
-      */
-    vBuilderOrMatcher: js.Function): this.type = js.native
-    def hasChildren(
-      /**
-      * the matchers to filter child items
-      */
-    vBuilderOrMatcher: js.Function,
-      /**
-      * specifies if the ancestor should be a direct ancestor (parent)
-      */
-    bDirect: Boolean
-    ): this.type = js.native
-    def hasChildren(/**
-      * the matchers to filter child items
-      */
-    vBuilderOrMatcher: js.Object): this.type = js.native
-    def hasChildren(
-      /**
-      * the matchers to filter child items
-      */
-    vBuilderOrMatcher: js.Object,
+    vBuilderOrMatcher: js.Array[Matcher],
       /**
       * specifies if the ancestor should be a direct ancestor (parent)
       */
@@ -2697,17 +3120,15 @@ object sapUiTestOpaBuilderMod {
       */
     bDirect: Boolean
     ): this.type = js.native
+    def hasChildren(/**
+      * the matchers to filter child items
+      */
+    vBuilderOrMatcher: Matcher): this.type = js.native
     def hasChildren(
       /**
       * the matchers to filter child items
       */
-    vBuilderOrMatcher: typings.openui5.sapUiTestMatchersMatcherMod.default
-    ): this.type = js.native
-    def hasChildren(
-      /**
-      * the matchers to filter child items
-      */
-    vBuilderOrMatcher: typings.openui5.sapUiTestMatchersMatcherMod.default,
+    vBuilderOrMatcher: Matcher,
       /**
       * specifies if the ancestor should be a direct ancestor (parent)
       */
@@ -2728,6 +3149,158 @@ object sapUiTestOpaBuilderMod {
     bDirect: Boolean
     ): this.type = js.native
     
+    def hasConditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: js.Array[Matcher],
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: Matcher | js.Object
+    ): this.type = js.native
+    def hasConditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: js.Array[Matcher],
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: Matcher | js.Object,
+      /**
+      * actual matcher that is executed if conditions are not met
+      */
+    vElseMatcher: Matcher | js.Object
+    ): this.type = js.native
+    def hasConditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: js.Array[Matcher],
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: Matcher | js.Object,
+      /**
+      * actual matcher that is executed if conditions are not met
+      */
+    vElseMatcher: js.Array[Matcher]
+    ): this.type = js.native
+    def hasConditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: js.Array[Matcher],
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: js.Array[Matcher]
+    ): this.type = js.native
+    def hasConditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: js.Array[Matcher],
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: js.Array[Matcher],
+      /**
+      * actual matcher that is executed if conditions are not met
+      */
+    vElseMatcher: Matcher | js.Object
+    ): this.type = js.native
+    def hasConditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: js.Array[Matcher],
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: js.Array[Matcher],
+      /**
+      * actual matcher that is executed if conditions are not met
+      */
+    vElseMatcher: js.Array[Matcher]
+    ): this.type = js.native
+    def hasConditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: Boolean,
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: Matcher | js.Object
+    ): this.type = js.native
+    def hasConditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: Boolean,
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: Matcher | js.Object,
+      /**
+      * actual matcher that is executed if conditions are not met
+      */
+    vElseMatcher: Matcher | js.Object
+    ): this.type = js.native
+    def hasConditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: Boolean,
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: Matcher | js.Object,
+      /**
+      * actual matcher that is executed if conditions are not met
+      */
+    vElseMatcher: js.Array[Matcher]
+    ): this.type = js.native
+    def hasConditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: Boolean,
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: js.Array[Matcher]
+    ): this.type = js.native
+    def hasConditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: Boolean,
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: js.Array[Matcher],
+      /**
+      * actual matcher that is executed if conditions are not met
+      */
+    vElseMatcher: Matcher | js.Object
+    ): this.type = js.native
+    def hasConditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: Boolean,
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: js.Array[Matcher],
+      /**
+      * actual matcher that is executed if conditions are not met
+      */
+    vElseMatcher: js.Array[Matcher]
+    ): this.type = js.native
     /**
       * Adds a matcher that checks states for given conditions. It is internally using {@link sap.ui.test.OpaBuilder.Matchers.conditional}.
       *
@@ -2737,17 +3310,77 @@ object sapUiTestOpaBuilderMod {
       /**
       * conditions to pre-check
       */
-    vConditions: typings.openui5.sapUiTestMatchersMatcherMod.default | js.Function | js.Array[Any] | js.Object | Boolean,
+    vConditions: Matcher,
       /**
       * actual matcher that is executed if conditions are met
       */
-    vSuccessMatcher: typings.openui5.sapUiTestMatchersMatcherMod.default | js.Function | js.Array[Any] | js.Object,
+    vSuccessMatcher: Matcher | js.Object
+    ): this.type = js.native
+    def hasConditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: Matcher,
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: Matcher | js.Object,
       /**
       * actual matcher that is executed if conditions are not met
       */
-    vElseMatcher: js.UndefOr[
-          typings.openui5.sapUiTestMatchersMatcherMod.default | js.Function | js.Array[Any] | js.Object
-        ]
+    vElseMatcher: Matcher | js.Object
+    ): this.type = js.native
+    def hasConditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: Matcher,
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: Matcher | js.Object,
+      /**
+      * actual matcher that is executed if conditions are not met
+      */
+    vElseMatcher: js.Array[Matcher]
+    ): this.type = js.native
+    def hasConditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: Matcher,
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: js.Array[Matcher]
+    ): this.type = js.native
+    def hasConditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: Matcher,
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: js.Array[Matcher],
+      /**
+      * actual matcher that is executed if conditions are not met
+      */
+    vElseMatcher: Matcher | js.Object
+    ): this.type = js.native
+    def hasConditional(
+      /**
+      * conditions to pre-check
+      */
+    vConditions: Matcher,
+      /**
+      * actual matcher that is executed if conditions are met
+      */
+    vSuccessMatcher: js.Array[Matcher],
+      /**
+      * actual matcher that is executed if conditions are not met
+      */
+    vElseMatcher: js.Array[Matcher]
     ): this.type = js.native
     
     /**
@@ -2802,7 +3435,7 @@ object sapUiTestOpaBuilderMod {
     def hasProperties(/**
       * map of properties that target control(s) must match
       */
-    oProperties: js.Object): this.type = js.native
+    oProperties: Record[String, Any]): this.type = js.native
     
     /**
       * Adds a group of matchers that requires only one of them to actually match. It is internally using {@link
@@ -2812,23 +3445,13 @@ object sapUiTestOpaBuilderMod {
       */
     def hasSome(): this.type = js.native
     def hasSome(/**
-      * aMatchers list of matchers were one must be met
+      * aMatchers list of matchers where one must be met
       */
-    aMatchers: js.Array[Any]): this.type = js.native
+    aMatchers: js.Array[Matcher]): this.type = js.native
     def hasSome(/**
-      * aMatchers list of matchers were one must be met
+      * aMatchers list of matchers where one must be met
       */
-    aMatchers: js.Function): this.type = js.native
-    def hasSome(/**
-      * aMatchers list of matchers were one must be met
-      */
-    aMatchers: js.Object): this.type = js.native
-    def hasSome(
-      /**
-      * aMatchers list of matchers were one must be met
-      */
-    aMatchers: typings.openui5.sapUiTestMatchersMatcherMod.default
-    ): this.type = js.native
+    aMatchers: Matcher): this.type = js.native
     
     /**
       * Defines the control type of the target control(s).
@@ -2895,10 +3518,15 @@ object sapUiTestOpaBuilderMod {
       *
       * @returns this OpaBuilder instance
       */
+    def options(): this.type = js.native
     def options(/**
       * the {@link sap.ui.test.Opa5#waitFor} options to apply
       */
-    oOptions: js.Object): this.type = js.native
+    oOptions: MultiControlSelector): this.type = js.native
+    def options(/**
+      * the {@link sap.ui.test.Opa5#waitFor} options to apply
+      */
+    oOptions: SingleControlSelector): this.type = js.native
     
     /**
       * Sets the `pollingInterval` parameter.

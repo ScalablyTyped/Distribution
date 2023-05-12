@@ -10,7 +10,7 @@ trait IRuleConfig[T] extends StObject {
     * The function which will be invoked to produce the returned value for a production that have not been
     * successfully executed and the parser recovered from.
     */
-  var recoveryValueFunc: js.UndefOr[js.Function0[T]] = js.undefined
+  var recoveryValueFunc: js.UndefOr[js.Function1[/* e */ IRecognitionException, T]] = js.undefined
   
   /**
     * Enable/Disable re-sync error recovery for this specific production.
@@ -27,7 +27,7 @@ object IRuleConfig {
   @scala.inline
   implicit open class MutableBuilder[Self <: IRuleConfig[?], T] (val x: Self & IRuleConfig[T]) extends AnyVal {
     
-    inline def setRecoveryValueFunc(value: () => T): Self = StObject.set(x, "recoveryValueFunc", js.Any.fromFunction0(value))
+    inline def setRecoveryValueFunc(value: /* e */ IRecognitionException => T): Self = StObject.set(x, "recoveryValueFunc", js.Any.fromFunction1(value))
     
     inline def setRecoveryValueFuncUndefined: Self = StObject.set(x, "recoveryValueFunc", js.undefined)
     

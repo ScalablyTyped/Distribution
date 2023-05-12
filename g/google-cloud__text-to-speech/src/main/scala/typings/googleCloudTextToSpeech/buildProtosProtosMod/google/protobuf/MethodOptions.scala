@@ -33,7 +33,7 @@ open class MethodOptions ()
     * Converts this MethodOptions to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[Any] = js.native
+  def toJSON(): StringDictionary[scala.Any] = js.native
   
   /** MethodOptions uninterpretedOption. */
   @JSName("uninterpretedOption")
@@ -134,7 +134,7 @@ object MethodOptions {
     * @returns MethodOptions
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[Any]): MethodOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[MethodOptions]
+  inline def fromObject(`object`: StringDictionary[scala.Any]): MethodOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[MethodOptions]
   
   /**
     * Gets the default type url for MethodOptions
@@ -152,8 +152,8 @@ object MethodOptions {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: MethodOptions): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
-  inline def toObject(message: MethodOptions, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: MethodOptions): StringDictionary[scala.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[scala.Any]]
+  inline def toObject(message: MethodOptions, options: IConversionOptions): StringDictionary[scala.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[scala.Any]]
   
   /**
     * Verifies a MethodOptions message.
@@ -161,5 +161,5 @@ object MethodOptions {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[scala.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

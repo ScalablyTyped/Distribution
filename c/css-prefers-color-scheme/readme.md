@@ -1,7 +1,7 @@
 
 # Scala.js typings for css-prefers-color-scheme
 
-Typings are for version 7.0.1
+Typings are for version 8.0.2
 
 ## Library description:
 Use light and dark color schemes in all browsers

@@ -12,7 +12,9 @@ object buildSrcTransportersMod {
   
   @JSImport("google-auth-library/build/src/transporters", "DefaultTransporter")
   @js.native
-  open class DefaultTransporter () extends StObject {
+  open class DefaultTransporter ()
+    extends StObject
+       with Transporter {
     
     /**
       * Configures request options before making a request.
@@ -26,17 +28,6 @@ object buildSrcTransportersMod {
       * Changes the error to include details from the body.
       */
     /* private */ var processError: Any = js.native
-    
-    /**
-      * Makes a request using Gaxios with given options.
-      * @param opts GaxiosOptions options.
-      * @param callback optional callback that contains GaxiosResponse object.
-      * @return GaxiosPromise, assuming no callback is passed.
-      */
-    def request[T](opts: GaxiosOptions): GaxiosPromise[T] = js.native
-    def request[T](opts: GaxiosOptions, callback: BodyResponseCallback[T]): Unit = js.native
-    @JSName("request")
-    def request_T_Unit[T](opts: GaxiosOptions): Unit = js.native
   }
   /* static members */
   object DefaultTransporter {

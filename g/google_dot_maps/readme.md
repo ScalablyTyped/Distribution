@@ -1,7 +1,7 @@
 
 # Scala.js typings for google_dot_maps
 
-Typings are for version 3.50
+Typings are for version 3.53
 
 
 

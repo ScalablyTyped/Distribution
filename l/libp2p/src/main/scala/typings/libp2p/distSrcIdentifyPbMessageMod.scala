@@ -1,5 +1,6 @@
 package typings.libp2p
 
+import typings.libp2p.anon.PartialIdentify
 import typings.protonsRuntime.distSrcCodecMod.Codec
 import typings.uint8arraylist.mod.Uint8ArrayList
 import org.scalablytyped.runtime.StObject
@@ -40,7 +41,7 @@ object distSrcIdentifyPbMessageMod {
     inline def decode(buf: js.typedarray.Uint8Array): Identify = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[Identify]
     inline def decode(buf: Uint8ArrayList): Identify = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[Identify]
     
-    inline def encode(obj: Identify): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def encode(obj: PartialIdentify): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     @scala.inline
     implicit open class MutableBuilder[Self <: Identify] (val x: Self) extends AnyVal {

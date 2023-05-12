@@ -62,7 +62,7 @@ object esComponentsAvatarAvatarMod {
   @js.native
   val Avatar: FC[AvatarProps] = js.native
   
-  /* Inlined {  src :string,   fallback :react.react.ReactNode | undefined,   fit :'contain' | 'cover' | 'fill' | 'none' | 'scale-down' | undefined} & std.Pick<antd-mobile.antd-mobile/es/components/image.ImageProps, 'alt' | 'lazy' | 'onClick' | 'onError'> & antd-mobile.antd-mobile/es/utils/native-props.NativeProps<'--size' | '--border-radius'> */
+  /* Inlined {  src :string,   fallback :react.react.ReactNode | undefined,   fit :'contain' | 'cover' | 'fill' | 'none' | 'scale-down' | undefined} & std.Pick<antd-mobile.antd-mobile/es/components/image.ImageProps, 'alt' | 'lazy' | 'onClick' | 'onError' | 'onLoad'> & antd-mobile.antd-mobile/es/utils/native-props.NativeProps<'--size' | '--border-radius'> */
   trait AvatarProps extends StObject {
     
     var alt: js.UndefOr[String] = js.undefined
@@ -313,6 +313,8 @@ object esComponentsAvatarAvatarMod {
     
     var onError: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLImageElement, Event], Unit]] = js.undefined
     
+    var onLoad: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLImageElement, Event], Unit]] = js.undefined
+    
     var src: String
     
     var style: js.UndefOr[CSSPropertiesPartialRecor] = js.undefined
@@ -550,6 +552,10 @@ object esComponentsAvatarAvatarMod {
       inline def setOnError(value: /* event */ SyntheticEvent[HTMLImageElement, Event] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      
+      inline def setOnLoad(value: /* event */ SyntheticEvent[HTMLImageElement, Event] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
+      
+      inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       
       inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       

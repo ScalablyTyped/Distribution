@@ -219,14 +219,6 @@ object srcNgtscCoreSrcCompilerMod {
     
     val incrementalCompilation: IncrementalCompilation = js.native
     
-    /**
-      * Exposes the `IncrementalCompilation` under an old property name that the CLI uses, avoiding a
-      * chicken-and-egg problem with the rename to `incrementalCompilation`.
-      *
-      * TODO(alxhub): remove when the CLI uses the new name.
-      */
-    def incrementalDriver: IncrementalCompilation = js.native
-    
     val incrementalStrategy: IncrementalBuildStrategy = js.native
     
     /* private */ var inputProgram: Any = js.native

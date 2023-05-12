@@ -40,6 +40,12 @@ open class TextArea protected () extends TextWidget {
   def counterMessage: Text = js.native
   def counterMessage_=(newValue: Text): Unit = js.native
   
+  /**
+    * In version 9.24.0: introduced
+    */
+  def nativeAccessibilitySettings: AccessibilitySettings | Null = js.native
+  def nativeAccessibilitySettings_=(newValue: AccessibilitySettings | Null): Unit = js.native
+  
   def numberOfLines: Double = js.native
   def numberOfLines_=(newValue: Double): Unit = js.native
   

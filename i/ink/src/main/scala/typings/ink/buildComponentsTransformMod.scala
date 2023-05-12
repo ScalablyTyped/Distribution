@@ -1,23 +1,18 @@
 package typings.ink
 
-import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.FC
 import typings.react.mod.ReactNode
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object buildComponentsTransformMod extends Shortcut {
+object buildComponentsTransformMod {
   
-  /**
-    * Transform a string representation of React components before they are written to output.
-    * For example, you might want to apply a gradient to text, add a clickable link or create some text effects.
-    * These use cases can't accept React nodes as input, they are expecting a string.
-    * That's what <Transform> component does, it gives you an output string of its child components and lets you transform it in any way.
-    */
-  @JSImport("ink/build/components/Transform", JSImport.Default)
+  @JSImport("ink/build/components/Transform", JSImport.Namespace)
   @js.native
-  val default: FC[Props] = js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(param0: Props): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
   trait Props extends StObject {
     
@@ -45,9 +40,4 @@ object buildComponentsTransformMod extends Shortcut {
       inline def setTransform(value: String => String): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
     }
   }
-  
-  type _To = FC[Props]
-  
-  /* This means you don't have to write `default`, but can instead just say `buildComponentsTransformMod.foo` */
-  override def _to: FC[Props] = default
 }

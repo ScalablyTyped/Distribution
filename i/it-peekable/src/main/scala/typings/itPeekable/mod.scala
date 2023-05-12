@@ -15,7 +15,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[I](iterable: I): /* import warning: importer.ImportType#apply Failed type conversion: I extends std.Iterable<infer T> ? it-peekable.it-peekable.Peekable<T> : I extends std.AsyncIterable<infer T> ? it-peekable.it-peekable.AsyncPeekable<T> : never */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(iterable.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: I extends std.Iterable<infer T> ? it-peekable.it-peekable.Peekable<T> : I extends std.AsyncIterable<infer T> ? it-peekable.it-peekable.AsyncPeekable<T> : never */ js.Any]
+  inline def default[T](iterable: js.Iterable[T]): Peekable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(iterable.asInstanceOf[js.Any]).asInstanceOf[Peekable[T]]
+  inline def default[T](iterable: AsyncIterable[T]): AsyncPeekable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(iterable.asInstanceOf[js.Any]).asInstanceOf[AsyncPeekable[T]]
   
   trait AsyncPeek[T] extends StObject {
     

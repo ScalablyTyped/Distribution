@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetParametersQueryEcosystem extends StObject {
   
   /**
-    * You must use an access token with the `security_events` scope to use this endpoint with private repositories.
+    * List Dependabot alerts for a repository
+    * @description You must use an access token with the `security_events` scope to use this endpoint with private repositories.
     * You can also use tokens with the `public_repo` scope for public repositories only.
     * GitHub Apps must have **Dependabot alerts** read permission to use this endpoint.
     */

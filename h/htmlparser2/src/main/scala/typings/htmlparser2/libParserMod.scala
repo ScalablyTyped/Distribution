@@ -64,12 +64,20 @@ object libParserMod {
     /** Indicates whether the parser has finished running / `.end` has been called. */
     /* private */ var ended: Any = js.native
     
+    /** Determines whether self-closing tags are recognized. */
     /* private */ val foreignContext: Any = js.native
     
     /* private */ var getInstructionName: Any = js.native
     
     /* private */ var getSlice: Any = js.native
     
+    /** We are parsing HTML. Inverse of the `xmlMode` option. */
+    /* private */ val htmlMode: Any = js.native
+    
+    /**
+      * Checks if the current tag is a void element. Override this if you want
+      * to specify your own additional void elements.
+      */
     /* protected */ def isVoidElement(name: String): Boolean = js.native
     
     /* private */ val lowerCaseAttributeNames: Any = js.native
@@ -119,7 +127,7 @@ object libParserMod {
     override def ontext(start: Double, endIndex: Double): Unit = js.native
     
     /* CompleteClass */
-    override def ontextentity(codepoint: Double): Unit = js.native
+    override def ontextentity(codepoint: Double, endIndex: Double): Unit = js.native
     
     /**
       * Store the start index of the current open tag,
@@ -162,7 +170,7 @@ object libParserMod {
     
     /* private */ var shiftBuffer: Any = js.native
     
-    /* private */ var stack: Any = js.native
+    /* private */ val stack: Any = js.native
     
     /** The start index of the last event. */
     var startIndex: Double = js.native

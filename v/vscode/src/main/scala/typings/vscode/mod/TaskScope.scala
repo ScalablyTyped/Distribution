@@ -14,8 +14,8 @@ object TaskScope extends StObject {
   def apply(value: Double): js.UndefOr[TaskScope & Double] = js.native
   
   /**
-    * The task is a global task. Global tasks are currently not supported.
-    */
+  		 * The task is a global task. Global tasks are currently not supported.
+  		 */
   @js.native
   sealed trait Global
     extends StObject
@@ -23,8 +23,8 @@ object TaskScope extends StObject {
   /* 1 */ val Global: typings.vscode.mod.TaskScope.Global & Double = js.native
   
   /**
-    * The task is a workspace task
-    */
+  		 * The task is a workspace task
+  		 */
   @js.native
   sealed trait Workspace
     extends StObject

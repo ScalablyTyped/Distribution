@@ -1,5 +1,6 @@
 package typings.polygonLookup
 
+import typings.geojson.mod.Feature
 import typings.geojson.mod.FeatureCollection
 import typings.geojson.mod.GeoJsonProperties
 import typings.geojson.mod.Geometry
@@ -74,11 +75,11 @@ object mod {
       * @param y The y-coordinate of the point.
       * @param limit Number of results to return (`-1` to return all the results).
       * @return  If one or more bounding box intersections are
-      * found and limit is `undefined`, return the first polygon that intersects
+      * found and limit is `undefined`, return the first feature that intersects
       * (`x`, `y`); otherwise, `undefined`. If a limit is passed in, return
       * intersecting polygons as a GeoJSON `FeatureCollection`.
       */
-    def search(x: Double, y: Double): js.UndefOr[Polygon] = js.native
-    def search(x: Double, y: Double, limit: Double): js.UndefOr[FeatureCollection[Geometry, GeoJsonProperties]] = js.native
+    def search(x: Double, y: Double): js.UndefOr[Feature[Polygon, GeoJsonProperties]] = js.native
+    def search(x: Double, y: Double, limit: Double): js.UndefOr[FeatureCollection[Polygon, GeoJsonProperties]] = js.native
   }
 }

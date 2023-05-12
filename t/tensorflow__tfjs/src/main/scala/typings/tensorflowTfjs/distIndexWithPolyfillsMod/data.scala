@@ -134,7 +134,7 @@ object data {
   
   @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "data.version_data")
   @js.native
-  val versionData: /* "4.0.0" */ String = js.native
+  val versionData: /* "4.5.0" */ String = js.native
   
   inline def webcam(): js.Promise[WebcamIterator] = ^.asInstanceOf[js.Dynamic].applyDynamic("webcam")().asInstanceOf[js.Promise[WebcamIterator]]
   inline def webcam(webcamVideoElement: Unit, webcamConfig: WebcamConfig): js.Promise[WebcamIterator] = (^.asInstanceOf[js.Dynamic].applyDynamic("webcam")(webcamVideoElement.asInstanceOf[js.Any], webcamConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WebcamIterator]]

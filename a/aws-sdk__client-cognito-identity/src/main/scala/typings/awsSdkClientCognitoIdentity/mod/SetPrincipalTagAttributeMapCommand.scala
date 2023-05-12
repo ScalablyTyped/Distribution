@@ -10,6 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class SetPrincipalTagAttributeMapCommand protected ()
   extends typings.awsSdkClientCognitoIdentity.distTypesCommandsMod.SetPrincipalTagAttributeMapCommand {
+  /**
+    * @public
+    */
   def this(input: SetPrincipalTagAttributeMapCommandInput) = this()
 }
 /* static members */

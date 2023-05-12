@@ -51,7 +51,10 @@ object distWrapperFactoryMod {
   inline def registerFactory(`type`: DOMWrapper, fn: DOMWrapperFactory): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFactory")(`type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def registerFactory(`type`: VueWrapper, fn: VueWrapperFactory): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFactory")(`type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  type DOMWrapperFactory = js.Function1[/* element */ Node, typings.vueTestUtils.distDomWrapperMod.DOMWrapper[Node]]
+  type DOMWrapperFactory = js.Function1[
+    /* element */ js.UndefOr[Node | Null], 
+    typings.vueTestUtils.distDomWrapperMod.DOMWrapper[Node]
+  ]
   
   type VueWrapperFactory = js.Function3[
     /* app */ App[Any] | Null, 
@@ -65,7 +68,8 @@ object distWrapperFactoryMod {
       js.Object, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+      js.Object, 
       js.Object
     ], 
     /* setProps */ js.UndefOr[js.Function1[/* props */ Record[String, Any], js.Promise[Unit]]], 
@@ -80,7 +84,8 @@ object distWrapperFactoryMod {
         js.Object, 
         js.Object, 
         `false`, 
-        ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+        ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+        js.Object, 
         js.Object
       ]
     ]

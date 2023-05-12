@@ -1,8 +1,9 @@
 package typings.unistUtilVisit
 
 import typings.unist.mod.Data
-import typings.unist.mod.NodeData
-import typings.unistUtilVisit.complexTypesMod.BuildVisitor
+import typings.unist.mod.Node
+import typings.unistUtilIs.libMod.Test
+import typings.unistUtilVisit.libMod.BuildVisitor
 import typings.unistUtilVisit.unistUtilVisitBooleans.`false`
 import typings.unistUtilVisit.unistUtilVisitBooleans.`true`
 import typings.unistUtilVisit.unistUtilVisitStrings.skip
@@ -27,28 +28,15 @@ object mod {
   @JSImport("unist-util-visit", "visit")
   @js.native
   val visit: (js.Function4[
-    /* tree */ typings.unist.mod.Node[Data], 
-    /* test */ typings.unistUtilIs.mod.Test, 
-    /* visitor */ BuildVisitor[typings.unist.mod.Node[Data], typings.unistUtilIs.mod.Test], 
-    /* reverse */ js.UndefOr[Boolean], 
+    /* tree */ Node[Data], 
+    /* test */ Test, 
+    /* visitor */ BuildVisitor[Node[Data], Test], 
+    /* reverse */ js.UndefOr[Boolean | Null], 
     Unit
   ]) & (js.Function3[
-    /* tree */ typings.unist.mod.Node[Data], 
-    /* visitor */ BuildVisitor[typings.unist.mod.Node[Data], String], 
-    /* reverse */ js.UndefOr[Boolean], 
+    /* tree */ Node[Data], 
+    /* visitor */ BuildVisitor[Node[Data], String], 
+    /* reverse */ js.UndefOr[Boolean | Null], 
     Unit
   ]) = js.native
-  
-  type Node = typings.unist.mod.Node[Data]
-  
-  type Parent = typings.unist.mod.Parent[typings.unist.mod.Node[Data], NodeData[typings.unist.mod.Node[Data]]]
-  
-  type Test = typings.unistUtilIs.mod.Test
-  
-  type Visitor = typings.unistUtilVisit.complexTypesMod.Visitor[
-    typings.unist.mod.Node[Data], 
-    typings.unist.mod.Parent[typings.unist.mod.Node[Data], NodeData[typings.unist.mod.Node[Data]]]
-  ]
-  
-  type VisitorResult = typings.unistUtilVisitParents.mod.VisitorResult
 }

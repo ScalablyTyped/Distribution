@@ -27,6 +27,7 @@ import typings.electron.Electron.CrossProcessExports.Screen
 import typings.electron.Electron.CrossProcessExports.Shell
 import typings.electron.Electron.CrossProcessExports.SystemPreferences
 import typings.electron.Electron.CrossProcessExports.WebFrame
+import typings.electron.Electron.ForkOptions
 import typings.electron.Electron.FromPartitionOptions
 import typings.electron.Electron.Rectangle
 import typings.electron.Electron.SharingItem
@@ -417,10 +418,13 @@ object CrossProcessExports {
     /**
       * fulfilled with the file's thumbnail preview image, which is a NativeImage.
       *
+      * Note: The Windows implementation will ignore `size.height` and scale the height
+      * according to `size.width`.
+      *
       * @platform darwin,win32
       */
     /* static member */
-    inline def createThumbnailFromPath(path: String, maxSize: Size): js.Promise[typings.electron.Electron.NativeImage_] = (^.asInstanceOf[js.Dynamic].applyDynamic("createThumbnailFromPath")(path.asInstanceOf[js.Any], maxSize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.electron.Electron.NativeImage_]]
+    inline def createThumbnailFromPath(path: String, size: Size): js.Promise[typings.electron.Electron.NativeImage_] = (^.asInstanceOf[js.Dynamic].applyDynamic("createThumbnailFromPath")(path.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.electron.Electron.NativeImage_]]
   }
   
   @JSGlobal("Electron.CrossProcessExports.nativeTheme")
@@ -508,6 +512,26 @@ object CrossProcessExports {
   @js.native
   val systemPreferences: SystemPreferences = js.native
   
+  /* was `typeof UtilityProcess` */
+  @JSGlobal("Electron.CrossProcessExports.utilityProcess")
+  @js.native
+  open class utilityProcess ()
+    extends typings.electron.Electron.UtilityProcess_
+  /* was `typeof UtilityProcess` */
+  object utilityProcess {
+    
+    @JSGlobal("Electron.CrossProcessExports.utilityProcess")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    // Docs: https://electronjs.org/docs/api/utility-process
+    /* static member */
+    inline def fork(modulePath: String): typings.electron.Electron.UtilityProcess_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fork")(modulePath.asInstanceOf[js.Any]).asInstanceOf[typings.electron.Electron.UtilityProcess_]
+    inline def fork(modulePath: String, args: js.Array[String]): typings.electron.Electron.UtilityProcess_ = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(modulePath.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[typings.electron.Electron.UtilityProcess_]
+    inline def fork(modulePath: String, args: js.Array[String], options: ForkOptions): typings.electron.Electron.UtilityProcess_ = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(modulePath.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.electron.Electron.UtilityProcess_]
+    inline def fork(modulePath: String, args: Unit, options: ForkOptions): typings.electron.Electron.UtilityProcess_ = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(modulePath.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.electron.Electron.UtilityProcess_]
+  }
+  
   /* was `typeof WebContents` */
   @JSGlobal("Electron.CrossProcessExports.webContents")
   @js.native
@@ -522,28 +546,28 @@ object CrossProcessExports {
     
     // Docs: https://electronjs.org/docs/api/web-contents
     /**
-      * | undefined - A WebContents instance with the given TargetID, or `undefined` if
-      * there is no WebContents associated with the given TargetID.
+      * A WebContents instance with the given TargetID, or `undefined` if there is no
+      * WebContents associated with the given TargetID.
       *
       * When communicating with the Chrome DevTools Protocol, it can be useful to lookup
       * a WebContents instance based on its assigned TargetID.
       */
     /* static member */
-    inline def fromDevToolsTargetId(targetId: String): typings.electron.Electron.WebContents_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDevToolsTargetId")(targetId.asInstanceOf[js.Any]).asInstanceOf[typings.electron.Electron.WebContents_]
+    inline def fromDevToolsTargetId(targetId: String): js.UndefOr[typings.electron.Electron.WebContents_] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDevToolsTargetId")(targetId.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.electron.Electron.WebContents_]]
     
     /**
-      * | undefined - A WebContents instance with the given WebFrameMain, or `undefined`
-      * if there is no WebContents associated with the given WebFrameMain.
+      * A WebContents instance with the given WebFrameMain, or `undefined` if there is
+      * no WebContents associated with the given WebFrameMain.
       */
     /* static member */
-    inline def fromFrame(frame: typings.electron.Electron.WebFrameMain_): typings.electron.Electron.WebContents_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFrame")(frame.asInstanceOf[js.Any]).asInstanceOf[typings.electron.Electron.WebContents_]
+    inline def fromFrame(frame: typings.electron.Electron.WebFrameMain_): js.UndefOr[typings.electron.Electron.WebContents_] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFrame")(frame.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.electron.Electron.WebContents_]]
     
     /**
-      * | undefined - A WebContents instance with the given ID, or `undefined` if there
-      * is no WebContents associated with the given ID.
+      * A WebContents instance with the given ID, or `undefined` if there is no
+      * WebContents associated with the given ID.
       */
     /* static member */
-    inline def fromId(id: Double): typings.electron.Electron.WebContents_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromId")(id.asInstanceOf[js.Any]).asInstanceOf[typings.electron.Electron.WebContents_]
+    inline def fromId(id: Double): js.UndefOr[typings.electron.Electron.WebContents_] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromId")(id.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.electron.Electron.WebContents_]]
     
     /**
       * An array of all `WebContents` instances. This will contain web contents for all
@@ -553,11 +577,10 @@ object CrossProcessExports {
     inline def getAllWebContents(): js.Array[typings.electron.Electron.WebContents_] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllWebContents")().asInstanceOf[js.Array[typings.electron.Electron.WebContents_]]
     
     /**
-      * | null - The web contents that is focused in this application, otherwise returns
-      * `null`.
+      * The web contents that is focused in this application, otherwise returns `null`.
       */
     /* static member */
-    inline def getFocusedWebContents(): typings.electron.Electron.WebContents_ = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusedWebContents")().asInstanceOf[typings.electron.Electron.WebContents_]
+    inline def getFocusedWebContents(): typings.electron.Electron.WebContents_ | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusedWebContents")().asInstanceOf[typings.electron.Electron.WebContents_ | Null]
   }
   
   @JSGlobal("Electron.CrossProcessExports.webFrame")

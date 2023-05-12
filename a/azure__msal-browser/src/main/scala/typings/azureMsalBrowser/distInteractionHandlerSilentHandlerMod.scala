@@ -1,8 +1,10 @@
 package typings.azureMsalBrowser
 
+import typings.azureMsalBrowser.anon.RequiredPickBrowserSystem
 import typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager
 import typings.azureMsalBrowser.distInteractionHandlerInteractionHandlerMod.InteractionHandler
 import typings.azureMsalCommon.distRequestCommonAuthorizationCodeRequestMod.CommonAuthorizationCodeRequest
+import typings.azureMsalCommon.distTelemetryPerformanceIperformanceclientMod.IPerformanceClient
 import typings.azureMsalCommon.mod.AuthorizationCodeClient
 import typings.azureMsalCommon.mod.Logger
 import typings.std.HTMLIFrameElement
@@ -20,7 +22,8 @@ object distInteractionHandlerSilentHandlerMod {
       storageImpl: BrowserCacheManager,
       authCodeRequest: CommonAuthorizationCodeRequest,
       logger: Logger,
-      navigateFrameWait: Double
+      systemOptions: RequiredPickBrowserSystem,
+      performanceClient: IPerformanceClient
     ) = this()
     
     /**
@@ -61,6 +64,8 @@ object distInteractionHandlerSilentHandlerMod {
     def monitorIframeForHash(iframe: HTMLIFrameElement, timeout: Double): js.Promise[String] = js.native
     
     /* private */ var navigateFrameWait: Any = js.native
+    
+    /* private */ var pollIntervalMilliseconds: Any = js.native
     
     /**
       * @hidden

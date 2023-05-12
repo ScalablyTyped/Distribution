@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PlayAttributes extends StObject {
   
+  /** digits - Play DTMF tones for digits */
   var digits: js.UndefOr[String] = js.undefined
   
+  /** loop - Times to loop media */
   var loop: js.UndefOr[Double] = js.undefined
 }
 object PlayAttributes {

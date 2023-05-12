@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "svg-path-bbox" : "1.2.2"
+      "svg-path-bbox" : "1.2.4"
     }
   ],
   "test-dependencies" : [
     {
-      "svg-path-bbox" : "1.2.2"
+      "svg-path-bbox" : "1.2.4"
     }
   ],
   "compile-devDependencies" : [

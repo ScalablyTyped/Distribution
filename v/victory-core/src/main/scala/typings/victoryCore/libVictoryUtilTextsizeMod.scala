@@ -23,9 +23,13 @@ object libVictoryUtilTextsizeMod {
     val ^ : js.Any = js.native
     
     inline def impl(text: String): Width = ^.asInstanceOf[js.Dynamic].applyDynamic("impl")(text.asInstanceOf[js.Any]).asInstanceOf[Width]
+    inline def impl(text: String, style: Unit, __debugForceApproximate: Boolean): Width = (^.asInstanceOf[js.Dynamic].applyDynamic("impl")(text.asInstanceOf[js.Any], style.asInstanceOf[js.Any], __debugForceApproximate.asInstanceOf[js.Any])).asInstanceOf[Width]
     inline def impl(text: String, style: TextSizeStyleInterface): Width = (^.asInstanceOf[js.Dynamic].applyDynamic("impl")(text.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Width]
+    inline def impl(text: String, style: TextSizeStyleInterface, __debugForceApproximate: Boolean): Width = (^.asInstanceOf[js.Dynamic].applyDynamic("impl")(text.asInstanceOf[js.Any], style.asInstanceOf[js.Any], __debugForceApproximate.asInstanceOf[js.Any])).asInstanceOf[Width]
     inline def impl(text: js.Array[String]): Width = ^.asInstanceOf[js.Dynamic].applyDynamic("impl")(text.asInstanceOf[js.Any]).asInstanceOf[Width]
+    inline def impl(text: js.Array[String], style: Unit, __debugForceApproximate: Boolean): Width = (^.asInstanceOf[js.Dynamic].applyDynamic("impl")(text.asInstanceOf[js.Any], style.asInstanceOf[js.Any], __debugForceApproximate.asInstanceOf[js.Any])).asInstanceOf[Width]
     inline def impl(text: js.Array[String], style: TextSizeStyleInterface): Width = (^.asInstanceOf[js.Dynamic].applyDynamic("impl")(text.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Width]
+    inline def impl(text: js.Array[String], style: TextSizeStyleInterface, __debugForceApproximate: Boolean): Width = (^.asInstanceOf[js.Dynamic].applyDynamic("impl")(text.asInstanceOf[js.Any], style.asInstanceOf[js.Any], __debugForceApproximate.asInstanceOf[js.Any])).asInstanceOf[Width]
   }
   
   inline def convertLengthToPixels(length: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("convertLengthToPixels")(length.asInstanceOf[js.Any]).asInstanceOf[Double]
@@ -34,8 +38,6 @@ object libVictoryUtilTextsizeMod {
   trait TextSizeStyleInterface extends StObject {
     
     var angle: js.UndefOr[Double] = js.undefined
-    
-    var characterConstant: js.UndefOr[String] = js.undefined
     
     var fontFamily: js.UndefOr[String] = js.undefined
     
@@ -58,10 +60,6 @@ object libVictoryUtilTextsizeMod {
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
       inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
-      
-      inline def setCharacterConstant(value: String): Self = StObject.set(x, "characterConstant", value.asInstanceOf[js.Any])
-      
-      inline def setCharacterConstantUndefined: Self = StObject.set(x, "characterConstant", js.undefined)
       
       inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       

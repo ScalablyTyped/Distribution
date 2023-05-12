@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListCustomVocabularyItemsResponse extends StObject {
   
   /**
-    * The unique identifier of the bot to the list custom vocabulary response.
+    * The identifier of the bot associated with this custom vocabulary.
     */
   var botId: js.UndefOr[Id] = js.undefined
   
   /**
-    * The bot version of the bot to the list custom vocabulary response.
+    * The identifier of the version of the bot associated with this custom vocabulary.
     */
   var botVersion: js.UndefOr[BotVersion] = js.undefined
   
@@ -22,7 +22,7 @@ trait ListCustomVocabularyItemsResponse extends StObject {
   var customVocabularyItems: js.UndefOr[CustomVocabularyItems] = js.undefined
   
   /**
-    * The locale identifier of the bot to the list custom vocabulary response.
+    * The identifier of the language and locale where this custom vocabulary is used. The string must match one of the supported locales. For more information, see  Supported Languages .
     */
   var localeId: js.UndefOr[LocaleId] = js.undefined
   

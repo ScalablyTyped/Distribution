@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "it-map" : "2.0.0"
+      "it-map" : "3.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "it-map" : "2.0.0"
+      "it-map" : "3.0.3"
     }
   ],
   "compile-devDependencies" : [

@@ -37,4 +37,25 @@ object anon {
       inline def setSizeCalculationUndefined: Self = StObject.set(x, "sizeCalculation", js.undefined)
     }
   }
+  
+  /* Inlined std.Partial<std.Pick<cache-manager.cache-manager/dist/stores/memory.Pre, 'ttlAutopurge'>> */
+  trait PartialPickPrettlAutopurg extends StObject {
+    
+    var ttlAutopurge: js.UndefOr[Any] = js.undefined
+  }
+  object PartialPickPrettlAutopurg {
+    
+    inline def apply(): PartialPickPrettlAutopurg = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialPickPrettlAutopurg]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPickPrettlAutopurg] (val x: Self) extends AnyVal {
+      
+      inline def setTtlAutopurge(value: Any): Self = StObject.set(x, "ttlAutopurge", value.asInstanceOf[js.Any])
+      
+      inline def setTtlAutopurgeUndefined: Self = StObject.set(x, "ttlAutopurge", js.undefined)
+    }
+  }
 }

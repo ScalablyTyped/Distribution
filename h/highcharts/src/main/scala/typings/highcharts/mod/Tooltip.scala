@@ -44,6 +44,14 @@ open class Tooltip protected () extends StObject {
   def destroy(): Unit = js.native
   
   /**
+    * Get the CSS class names for the tooltip's label. Styles the label by
+    * `colorIndex` or user-defined CSS.
+    *
+    * @return The class names.
+    */
+  def getClassName(): String = js.native
+  
+  /**
     * Creates the Tooltip label element if it does not exist, then returns it.
     *
     * @return Tooltip label

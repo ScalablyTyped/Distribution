@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.AnimationPlayState
+import typings.csstype.mod.Property.MathShift
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `155` extends StObject {
   
   var value: js.UndefOr[
-    AnimationPlayState | (js.Array[
-      (Extract[
-        js.UndefOr[AnimationPlayState | js.Array[NonNullable[js.UndefOr[AnimationPlayState]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[AnimationPlayState]]
+    MathShift | (js.Array[
+      (Extract[js.UndefOr[MathShift | js.Array[NonNullable[js.UndefOr[MathShift]]]], String]) | NonNullable[js.UndefOr[MathShift]]
     ])
   ] = js.native
 }

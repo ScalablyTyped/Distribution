@@ -102,10 +102,14 @@ object tabmenuTabmenuMod {
     def this(props: TabMenuProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: TabMenuProps, context: Any) = this()
     
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
   }
   
@@ -116,6 +120,10 @@ object tabmenuTabmenuMod {
     
     var accessKey: js.UndefOr[String] = js.undefined
     
+    /**
+      * Active index of menuitem.
+      * @defaultValue 0
+      */
     var activeIndex: js.UndefOr[Double] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
@@ -220,13 +228,21 @@ object tabmenuTabmenuMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -268,6 +284,9 @@ object tabmenuTabmenuMod {
     
     var lang: js.UndefOr[String] = js.undefined
     
+    /**
+      * An array of menuitems.
+      */
     var model: js.UndefOr[
         js.Array[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuItem */ Any
@@ -418,7 +437,11 @@ object tabmenuTabmenuMod {
     
     var onSuspend: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onTabChange: js.UndefOr[js.Function1[/* e */ TabMenuTabChangeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when active tab changes.
+      * @param {TabMenuTabChangeEvent} event - Custom tab change event.
+      */
+    var onTabChange: js.UndefOr[js.Function1[/* event */ TabMenuTabChangeEvent, Unit]] = js.undefined
     
     var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
@@ -446,9 +469,13 @@ object tabmenuTabmenuMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -700,6 +727,10 @@ object tabmenuTabmenuMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -716,9 +747,13 @@ object tabmenuTabmenuMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -1100,7 +1135,7 @@ object tabmenuTabmenuMod {
       
       inline def setOnSuspendUndefined: Self = StObject.set(x, "onSuspend", js.undefined)
       
-      inline def setOnTabChange(value: /* e */ TabMenuTabChangeParams => Unit): Self = StObject.set(x, "onTabChange", js.Any.fromFunction1(value))
+      inline def setOnTabChange(value: /* event */ TabMenuTabChangeEvent => Unit): Self = StObject.set(x, "onTabChange", js.Any.fromFunction1(value))
       
       inline def setOnTabChangeUndefined: Self = StObject.set(x, "onTabChange", js.undefined)
       
@@ -1156,6 +1191,10 @@ object tabmenuTabmenuMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1163,6 +1202,10 @@ object tabmenuTabmenuMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1218,27 +1261,41 @@ object tabmenuTabmenuMod {
     }
   }
   
-  trait TabMenuTabChangeParams extends StObject {
+  /**
+    * Custom tab change event.
+    * @see {@link TabMenuProps.onTabChange}
+    * @event
+    */
+  trait TabMenuTabChangeEvent extends StObject {
     
+    /**
+      * Index of the selected tab
+      */
     var index: Double
     
+    /**
+      * Browser event
+      */
     var originalEvent: SyntheticEvent[Element, Event]
     
+    /**
+      * Selected menuitem
+      */
     var value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuItem */ Any
   }
-  object TabMenuTabChangeParams {
+  object TabMenuTabChangeEvent {
     
     inline def apply(
       index: Double,
       originalEvent: SyntheticEvent[Element, Event],
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuItem */ Any
-    ): TabMenuTabChangeParams = {
+    ): TabMenuTabChangeEvent = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[TabMenuTabChangeParams]
+      __obj.asInstanceOf[TabMenuTabChangeEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: TabMenuTabChangeParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: TabMenuTabChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

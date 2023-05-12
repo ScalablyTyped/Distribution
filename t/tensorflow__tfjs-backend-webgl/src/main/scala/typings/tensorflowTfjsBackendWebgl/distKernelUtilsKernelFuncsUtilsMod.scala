@@ -1,11 +1,13 @@
 package typings.tensorflowTfjsBackendWebgl
 
+import typings.std.ArrayLike
 import typings.tensorflowTfjsBackendWebgl.distKernelUtilsSharedMod.SimpleBinaryKernelImplCPU
 import typings.tensorflowTfjsBackendWebgl.distKernelUtilsSharedMod.SimpleUnaryKernelImplCPU
 import typings.tensorflowTfjsCore.distKernelRegistryMod.KernelFunc
 import typings.tensorflowTfjsCore.distKernelRegistryMod.NamedAttrMap
 import typings.tensorflowTfjsCore.distOpsFusedTypesMod.Activation
 import typings.tensorflowTfjsCore.distTypesMod.DataType
+import typings.tensorflowTfjsCore.distTypesMod.DataTypeFor
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -99,7 +101,7 @@ object distKernelUtilsKernelFuncsUtilsMod {
     implicit open class MutableBuilder[Self <: UnaryKernelFuncConfig] (val x: Self) extends AnyVal {
       
       inline def setCpuKernelImpl(
-        value: (/* values */ TypedArray, /* dtype */ DataType, /* attrs */ js.UndefOr[NamedAttrMap]) => TypedArray
+        value: (/* values */ ArrayLike[Double | String], /* dtype */ DataTypeFor[Double | String], /* attrs */ js.UndefOr[NamedAttrMap]) => /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.DataTypeMap[@tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.DataTypeFor<O>] */ js.Any
       ): Self = StObject.set(x, "cpuKernelImpl", js.Any.fromFunction3(value))
       
       inline def setCpuKernelImplUndefined: Self = StObject.set(x, "cpuKernelImpl", js.undefined)

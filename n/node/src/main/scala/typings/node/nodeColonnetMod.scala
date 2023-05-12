@@ -141,7 +141,7 @@ object nodeColonnetMod {
     * on port 8124:
     *
     * ```js
-    * const net = require('net');
+    * const net = require('node:net');
     * const server = net.createServer((c) => {
     *   // 'connection' listener.
     *   console.log('client connected');

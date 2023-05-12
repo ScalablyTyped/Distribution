@@ -1,7 +1,7 @@
 package typings.opentelemetrySdkTraceBase
 
 import typings.opentelemetryCore.buildSrcCommonTypesMod.InstrumentationLibrary
-import typings.opentelemetryResources.mod.Resource
+import typings.opentelemetryResources.buildSrcIresourceMod.IResource
 import typings.opentelemetrySdkTraceBase.buildSrcBasicTracerProviderMod.BasicTracerProvider
 import typings.opentelemetrySdkTraceBase.buildSrcSpanProcessorMod.SpanProcessor
 import typings.opentelemetrySdkTraceBase.buildSrcTypesMod.GeneralLimits
@@ -47,6 +47,6 @@ object buildSrcTracerMod {
     
     val instrumentationLibrary: InstrumentationLibrary = js.native
     
-    val resource: Resource = js.native
+    val resource: IResource = js.native
   }
 }

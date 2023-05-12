@@ -9,7 +9,7 @@ object mockErrors {
   @JSImport("undici", "mockErrors.MockNotMatchedError")
   @js.native
   open class MockNotMatchedError ()
-    extends typings.undici.typesMockErrorsMod.MockNotMatchedError {
+    extends typings.undici.typesMockErrorsMod.default.MockNotMatchedError {
     def this(message: String) = this()
   }
 }

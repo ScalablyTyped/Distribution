@@ -1,5 +1,7 @@
 package typings.pixiCore
 
+import typings.pixiColor.libColorMod.ColorSource
+import typings.pixiColor.mod.Color
 import typings.pixiCore.libFramebufferFramebufferMod.Framebuffer
 import typings.pixiCore.libMaskMaskDataMod.MaskData
 import typings.pixiCore.libTexturesBaseTextureMod.BaseTexture
@@ -19,7 +21,7 @@ object libRenderTextureBaseRenderTextureMod {
     * @param options
     * @param {number} [options.width=100] - The width of the base render texture.
     * @param {number} [options.height=100] - The height of the base render texture.
-    * @param {PIXI.SCALE_MODES} [options.scaleMode=PIXI.settings.SCALE_MODE] - See {@link PIXI.SCALE_MODES}
+    * @param {PIXI.SCALE_MODES} [options.scaleMode=PIXI.BaseTexture.defaultOptions.scaleMode] - See {@link PIXI.SCALE_MODES}
     *   for possible values.
     * @param {number} [options.resolution=PIXI.settings.RESOLUTION] - The resolution / device pixel ratio
     *   of the texture being generated.
@@ -28,7 +30,18 @@ object libRenderTextureBaseRenderTextureMod {
   open class BaseRenderTexture () extends BaseTexture[Resource, IAutoDetectOptions] {
     def this(options: IBaseTextureOptions[Any]) = this()
     
-    var clearColor: js.Array[Double] = js.native
+    var _clear: Color = js.native
+    
+    /**
+      * Color object when clearning the texture.
+      * @readonly
+      * @since 7.2.0
+      */
+    def clear: Color = js.native
+    
+    def clearColor: ColorSource = js.native
+    /** Color when clearning the texture. */
+    def clearColor_=(value: ColorSource): Unit = js.native
     
     /** The data structure for the filters. */
     var filterStack: js.Array[Any] = js.native

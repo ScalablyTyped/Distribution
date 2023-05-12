@@ -2,8 +2,10 @@ package typings.firebaseFirestore
 
 import typings.firebaseFirestore.distLiteFirestoreSrcCoreDatabaseInfoMod.DatabaseId
 import typings.firebaseFirestore.distLiteFirestoreSrcModelDocumentKeyMod.DocumentKey
+import typings.firebaseFirestore.distLiteFirestoreSrcProtosFirestoreProtoApiMod.ApiClientObjectMap
 import typings.firebaseFirestore.distLiteFirestoreSrcProtosFirestoreProtoApiMod.Value
 import typings.firebaseFirestore.distLiteFirestoreSrcUtilByteStringMod.ByteString
+import typings.firebaseFirestoreTypes.mod.DocumentData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,6 +25,14 @@ object distLiteFirestoreSrcLiteApiUserDataWriterMod {
     /* private */ var convertGeoPoint: Any = js.native
     
     /* private */ var convertObject: Any = js.native
+    
+    /**
+      * @internal
+      */
+    def convertObjectMap(): DocumentData = js.native
+    def convertObjectMap(fields: Unit, serverTimestampBehavior: ServerTimestampBehavior): DocumentData = js.native
+    def convertObjectMap(fields: ApiClientObjectMap[Value]): DocumentData = js.native
+    def convertObjectMap(fields: ApiClientObjectMap[Value], serverTimestampBehavior: ServerTimestampBehavior): DocumentData = js.native
     
     /* protected */ def convertReference(name: String): Any = js.native
     

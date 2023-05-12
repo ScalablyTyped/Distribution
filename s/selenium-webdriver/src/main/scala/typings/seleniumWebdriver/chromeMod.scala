@@ -63,7 +63,6 @@ object chromeMod {
   @JSImport("selenium-webdriver/chrome", "Options")
   @js.native
   /**
-    * @constructor
     */
   open class Options () extends Capabilities {
     
@@ -327,7 +326,6 @@ object chromeMod {
     *     PATH.
     * @throws {Error} If provided executable does not exist, or the chromedriver
     *     cannot be found on the PATH.
-    * @constructor
     */
   open class ServiceBuilder () extends Builder {
     def this(opt_exe: String) = this()

@@ -32,6 +32,11 @@ trait InputDeviceHdSettings extends StObject {
   var Height: js.UndefOr[integer] = js.undefined
   
   /**
+    * The Link device's buffer size (latency) in milliseconds (ms). You can specify this value.
+    */
+  var LatencyMs: js.UndefOr[integer] = js.undefined
+  
+  /**
     * The current maximum bitrate for ingesting this source, in bits per second. You can specify this maximum.
     */
   var MaxBitrate: js.UndefOr[integer] = js.undefined
@@ -75,6 +80,10 @@ object InputDeviceHdSettings {
     inline def setHeight(value: integer): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "Height", js.undefined)
+    
+    inline def setLatencyMs(value: integer): Self = StObject.set(x, "LatencyMs", value.asInstanceOf[js.Any])
+    
+    inline def setLatencyMsUndefined: Self = StObject.set(x, "LatencyMs", js.undefined)
     
     inline def setMaxBitrate(value: integer): Self = StObject.set(x, "MaxBitrate", value.asInstanceOf[js.Any])
     

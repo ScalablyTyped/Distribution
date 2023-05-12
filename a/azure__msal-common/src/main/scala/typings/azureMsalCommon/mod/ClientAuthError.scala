@@ -30,6 +30,12 @@ object ClientAuthError {
     */
   inline def createAppendScopeSetError(appendError: String): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createAppendScopeSetError")(appendError.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
   
+  /**
+    * Creates an error thrown when max_age was provided in the request, but auth_time is not in the token claims
+    * @param missingNonce
+    */
+  inline def createAuthTimeNotFoundError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createAuthTimeNotFoundError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
+  
   inline def createBindingKeyNotRemovedError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createBindingKeyNotRemovedError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
   
   /**
@@ -119,6 +125,11 @@ object ClientAuthError {
   inline def createLogoutNotSupportedError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createLogoutNotSupportedError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
   
   /**
+    * Creates an error thrown when too much time has elapsed since the last end-user authentication
+    */
+  inline def createMaxAgeTranspiredError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createMaxAgeTranspiredError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
+  
+  /**
     * Throws error when multiple accounts are in cache for the given params
     */
   inline def createMultipleMatchingAccountsInCacheError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createMultipleMatchingAccountsInCacheError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
@@ -158,6 +169,11 @@ object ClientAuthError {
     * @param operationName
     */
   inline def createNoCryptoObjectError(operationName: String): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createNoCryptoObjectError")(operationName.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
+  
+  /**
+    * Create an error when the client does not have network connectivity
+    */
+  inline def createNoNetworkConnectivityError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createNoNetworkConnectivityError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
   
   /**
     * Creates an error thrown when the nonce does not match.
@@ -230,6 +246,11 @@ object ClientAuthError {
     * Throws error if unexpected credential type.
     */
   inline def createUnexpectedCredentialTypeError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createUnexpectedCredentialTypeError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
+  
+  /**
+    * Create an error when the user cancels the flow
+    */
+  inline def createUserCanceledError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createUserCanceledError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
   
   /**
     * Throws error if the user defined timeout is reached.

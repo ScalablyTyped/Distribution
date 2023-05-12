@@ -83,6 +83,10 @@ object reactStickyElStrings {
   inline def caption: caption = "caption".asInstanceOf[caption]
   
   @js.native
+  sealed trait center extends StObject
+  inline def center: center = "center".asInstanceOf[center]
+  
+  @js.native
   sealed trait cite extends StObject
   inline def cite: cite = "cite".asInstanceOf[cite]
   

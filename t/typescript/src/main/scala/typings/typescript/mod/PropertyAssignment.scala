@@ -15,9 +15,6 @@ trait PropertyAssignment
      with ObjectLiteralElementLike
      with VariableLikeDeclaration {
   
-  /** @deprecated A property assignment cannot have an exclamation token */
-  val exclamationToken: js.UndefOr[ExclamationToken] = js.native
-  
   val initializer: Expression = js.native
   
   @JSName("kind")
@@ -28,7 +25,4 @@ trait PropertyAssignment
   
   @JSName("parent")
   val parent_PropertyAssignment: ObjectLiteralExpression = js.native
-  
-  /** @deprecated A property assignment cannot have a question token */
-  val questionToken: js.UndefOr[QuestionToken] = js.native
 }

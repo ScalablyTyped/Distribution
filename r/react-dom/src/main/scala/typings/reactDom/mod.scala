@@ -10,9 +10,12 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactInstance
 import typings.react.mod.ReactNode
 import typings.react.mod.ReactPortal
+import typings.reactDom.reactDomBooleans.`false`
+import typings.reactDom.reactDomBooleans.`true`
 import typings.std.Document
 import typings.std.DocumentFragment
 import typings.std.Element
+import typings.std.FormData
 import typings.std.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -46,9 +49,8 @@ object mod {
   inline def unmountComponentAtNode(container: DocumentFragment): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("unmountComponentAtNode")(container.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def unmountComponentAtNode(container: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("unmountComponentAtNode")(container.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def unstableBatchedUpdates(callback: js.Function0[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def unstableBatchedUpdates[A](callback: js.Function1[/* a */ A, Any], a: A): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def unstableBatchedUpdates[A, B](callback: js.Function2[/* a */ A, /* b */ B, Any], a: A, b: B): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unstableBatchedUpdates[R](callback: js.Function0[R]): R = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any]).asInstanceOf[R]
+  inline def unstableBatchedUpdates[A, R](callback: js.Function1[/* a */ A, R], a: A): R = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[R]
   
   inline def unstableRenderSubtreeIntoContainer[T /* <: Element */](
     parentComponent: Component[Any, js.Object, Any],
@@ -83,6 +85,94 @@ object mod {
   type Container = Element | Document | DocumentFragment
   
   /* Rewritten from type alias, can be one of: 
+    - typings.reactDom.experimentalMod.reactDomAugmentingMod.FormStatusPending
+    - typings.reactDom.experimentalMod.reactDomAugmentingMod.FormStatusNotPending
+  */
+  trait FormStatus extends StObject
+  object FormStatus {
+    
+    inline def FormStatusNotPending(action: Null, data: Null, method: Null): typings.reactDom.experimentalMod.reactDomAugmentingMod.FormStatusNotPending = {
+      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], pending = false)
+      __obj.asInstanceOf[typings.reactDom.experimentalMod.reactDomAugmentingMod.FormStatusNotPending]
+    }
+    
+    inline def FormStatusPending(
+      action: String | (js.Function1[/* formData */ FormData, Unit | js.Promise[Unit]]),
+      data: FormData,
+      method: String
+    ): typings.reactDom.experimentalMod.reactDomAugmentingMod.FormStatusPending = {
+      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], pending = true)
+      __obj.asInstanceOf[typings.reactDom.experimentalMod.reactDomAugmentingMod.FormStatusPending]
+    }
+  }
+  
+  trait FormStatusNotPending extends StObject {
+    
+    var action: Null
+    
+    var data: Null
+    
+    var method: Null
+    
+    var pending: `false`
+  }
+  object FormStatusNotPending {
+    
+    inline def apply(action: Null, data: Null, method: Null): FormStatusNotPending = {
+      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], pending = false)
+      __obj.asInstanceOf[FormStatusNotPending]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormStatusNotPending] (val x: Self) extends AnyVal {
+      
+      inline def setAction(value: Null): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      
+      inline def setData(value: Null): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setMethod(value: Null): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      
+      inline def setPending(value: `false`): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait FormStatusPending extends StObject {
+    
+    var action: String | (js.Function1[/* formData */ FormData, Unit | js.Promise[Unit]])
+    
+    var data: FormData
+    
+    var method: String
+    
+    var pending: `true`
+  }
+  object FormStatusPending {
+    
+    inline def apply(
+      action: String | (js.Function1[/* formData */ FormData, Unit | js.Promise[Unit]]),
+      data: FormData,
+      method: String
+    ): FormStatusPending = {
+      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], pending = true)
+      __obj.asInstanceOf[FormStatusPending]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormStatusPending] (val x: Self) extends AnyVal {
+      
+      inline def setAction(value: String | (js.Function1[/* formData */ FormData, Unit | js.Promise[Unit]])): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      
+      inline def setActionFunction1(value: /* formData */ FormData => Unit | js.Promise[Unit]): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
+      
+      inline def setData(value: FormData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      
+      inline def setPending(value: `true`): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
     - typings.reactDom.reactDomStrings.script
     - typings.reactDom.reactDomStrings.style
   */
@@ -101,6 +191,8 @@ object mod {
     var crossOrigin: js.UndefOr[String] = js.undefined
     
     var integrity: js.UndefOr[String] = js.undefined
+    
+    var nonce: js.UndefOr[String] = js.undefined
     
     var precedence: js.UndefOr[String] = js.undefined
   }
@@ -123,6 +215,10 @@ object mod {
       inline def setIntegrity(value: String): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
       
       inline def setIntegrityUndefined: Self = StObject.set(x, "integrity", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setPrecedence(value: String): Self = StObject.set(x, "precedence", value.asInstanceOf[js.Any])
       

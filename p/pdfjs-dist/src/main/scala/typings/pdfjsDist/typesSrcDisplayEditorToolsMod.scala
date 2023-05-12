@@ -2,6 +2,9 @@ package typings.pdfjsDist
 
 import typings.pdfjsDist.anon.Cmd
 import typings.pdfjsDist.anon.PageNumber
+import typings.pdfjsDist.anon.PagesRotation
+import typings.pdfjsDist.anon.RealScale
+import typings.pdfjsDist.anon.Scale
 import typings.std.ClipboardEvent
 import typings.std.KeyboardEvent
 import typings.std.Map
@@ -19,7 +22,7 @@ object typesSrcDisplayEditorToolsMod {
   @JSImport("pdfjs-dist/types/src/display/editor/tools", "AnnotationEditorUIManager")
   @js.native
   open class AnnotationEditorUIManager protected () extends StObject {
-    def this(container: Any, eventBus: Any) = this()
+    def this(container: Any, eventBus: Any, annotationStorage: Any) = this()
     
     /**
       * Add a command to execute (cmd) and another one to undo it.
@@ -39,6 +42,14 @@ object typesSrcDisplayEditorToolsMod {
       */
     def addLayer(layer: AnnotationEditorLayer): Unit = js.native
     
+    def addShouldRescale(editor: Any): Unit = js.native
+    
+    /**
+      * Add an editor in the annotation storage.
+      * @param {AnnotationEditor} editor
+      */
+    def addToAnnotationStorage(editor: AnnotationEditor): Unit = js.native
+    
     def commitOrRemove(): Unit = js.native
     
     /**
@@ -46,6 +57,10 @@ object typesSrcDisplayEditorToolsMod {
       * @param {ClipboardEvent} event
       */
     def copy(event: ClipboardEvent): Unit = js.native
+    
+    def currentLayer: Any = js.native
+    
+    def currentPageIndex: Double = js.native
     
     /**
       * Cut callback.
@@ -125,6 +140,10 @@ object typesSrcDisplayEditorToolsMod {
     
     def onPageChanging(param0: PageNumber): Unit = js.native
     
+    def onRotationChanging(param0: PagesRotation): Unit = js.native
+    
+    def onScaleChanging(param0: Scale): Unit = js.native
+    
     /**
       * Paste callback.
       * @param {ClipboardEvent} event
@@ -151,6 +170,8 @@ object typesSrcDisplayEditorToolsMod {
       * @param {AnnotationEditorLayer} layer
       */
     def removeLayer(layer: AnnotationEditorLayer): Unit = js.native
+    
+    def removeShouldRescale(editor: Any): Unit = js.native
     
     /**
       * Select all the editors.
@@ -218,6 +239,8 @@ object typesSrcDisplayEditorToolsMod {
       * @returns {undefined}
       */
     def updateToolbar(mode: Double): Unit = js.native
+    
+    var viewParameters: RealScale = js.native
   }
   /* static members */
   object AnnotationEditorUIManager {

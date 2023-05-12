@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-json-to-csv
 
-Typings are for version 1.0
+Typings are for version 1.2
 
 ## Library description:
 A react button component to easily generate csv downloads of your json data.

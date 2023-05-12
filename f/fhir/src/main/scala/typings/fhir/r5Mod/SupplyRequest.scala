@@ -44,6 +44,11 @@ trait SupplyRequest
   var category: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
+    * The patient to whom the supply will be given or for whom they will be used.
+    */
+  var deliverFor: js.UndefOr[Reference] = js.undefined
+  
+  /**
     * Where the supply is expected to come from.
     */
   var deliverFrom: js.UndefOr[Reference] = js.undefined
@@ -142,6 +147,10 @@ object SupplyRequest {
     inline def setCategory(value: CodeableConcept): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    
+    inline def setDeliverFor(value: Reference): Self = StObject.set(x, "deliverFor", value.asInstanceOf[js.Any])
+    
+    inline def setDeliverForUndefined: Self = StObject.set(x, "deliverFor", js.undefined)
     
     inline def setDeliverFrom(value: Reference): Self = StObject.set(x, "deliverFrom", value.asInstanceOf[js.Any])
     

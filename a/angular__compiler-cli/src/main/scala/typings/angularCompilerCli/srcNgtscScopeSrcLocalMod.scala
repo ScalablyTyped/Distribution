@@ -1,5 +1,6 @@
 package typings.angularCompilerCli
 
+import typings.angularCompilerCli.anon.ClassDeclarationDeclarati
 import typings.angularCompilerCli.srcNgtscImportsMod.Reference
 import typings.angularCompilerCli.srcNgtscImportsMod.ReferenceEmitter
 import typings.angularCompilerCli.srcNgtscImportsSrcAliasMod.AliasingHost
@@ -8,8 +9,6 @@ import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.MetadataReader
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.MetadataRegistry
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.NgModuleMeta
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.PipeMeta
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
 import typings.angularCompilerCli.srcNgtscScopeSrcApiMod.ComponentScope
 import typings.angularCompilerCli.srcNgtscScopeSrcApiMod.ComponentScopeReader
 import typings.angularCompilerCli.srcNgtscScopeSrcApiMod.LocalModuleScope
@@ -77,7 +76,7 @@ object srcNgtscScopeSrcLocalMod {
       * Retrieves any `ts.Diagnostic`s produced during the calculation of the `LocalModuleScope` for
       * the given NgModule, or `null` if no errors were present.
       */
-    def getDiagnosticsOfModule(clazz: ClassDeclaration[DeclarationNode]): js.Array[Diagnostic] | Null = js.native
+    def getDiagnosticsOfModule(clazz: ClassDeclarationDeclarati): js.Array[Diagnostic] | Null = js.native
     
     /**
       * If `node` is declared in more than one NgModule (duplicate declaration), then get the
@@ -86,7 +85,7 @@ object srcNgtscScopeSrcLocalMod {
       * Ordinarily a class is only declared in one NgModule, in which case this function returns
       * `null`.
       */
-    def getDuplicateDeclarations(node: ClassDeclaration[DeclarationNode]): js.Array[DeclarationData] | Null = js.native
+    def getDuplicateDeclarations(node: ClassDeclarationDeclarati): js.Array[DeclarationData] | Null = js.native
     
     /**
       * Look up the `ExportScope` of a given `Reference` to an NgModule.
@@ -111,10 +110,10 @@ object srcNgtscScopeSrcLocalMod {
       * that component. If remote scoping is not required (the common case), returns `null`.
       */
     /* CompleteClass */
-    override def getRemoteScope(clazz: ClassDeclaration[DeclarationNode]): RemoteScope | Null = js.native
+    override def getRemoteScope(clazz: ClassDeclarationDeclarati): RemoteScope | Null = js.native
     
     /* CompleteClass */
-    override def getScopeForComponent(clazz: ClassDeclaration[DeclarationNode]): ComponentScope | Null = js.native
+    override def getScopeForComponent(clazz: ClassDeclarationDeclarati): ComponentScope | Null = js.native
     
     /**
       * Collects registered data for a module and its directives/pipes and convert it into a full
@@ -124,7 +123,7 @@ object srcNgtscScopeSrcLocalMod {
       * `LocalModuleScope` for the given NgModule if one can be produced, `null` if no scope was ever
       * defined, or the string `'error'` if the scope contained errors.
       */
-    def getScopeOfModule(clazz: ClassDeclaration[DeclarationNode]): LocalModuleScope | Null = js.native
+    def getScopeOfModule(clazz: ClassDeclarationDeclarati): LocalModuleScope | Null = js.native
     
     /**
       * Implementation of `getScopeOfModule` which accepts a reference to a class.
@@ -180,7 +179,7 @@ object srcNgtscScopeSrcLocalMod {
       * registered remotely.
       */
     def setComponentRemoteScope(
-      node: ClassDeclaration[DeclarationNode],
+      node: ClassDeclarationDeclarati,
       directives: js.Array[Reference[Node]],
       pipes: js.Array[Reference[Node]]
     ): Unit = js.native
@@ -188,7 +187,7 @@ object srcNgtscScopeSrcLocalMod {
   
   trait DeclarationData extends StObject {
     
-    var ngModule: ClassDeclaration[DeclarationNode]
+    var ngModule: ClassDeclarationDeclarati
     
     var rawDeclarations: Expression | Null
     
@@ -196,7 +195,7 @@ object srcNgtscScopeSrcLocalMod {
   }
   object DeclarationData {
     
-    inline def apply(ngModule: ClassDeclaration[DeclarationNode], ref: Reference[Node]): DeclarationData = {
+    inline def apply(ngModule: ClassDeclarationDeclarati, ref: Reference[Node]): DeclarationData = {
       val __obj = js.Dynamic.literal(ngModule = ngModule.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], rawDeclarations = null)
       __obj.asInstanceOf[DeclarationData]
     }
@@ -204,7 +203,7 @@ object srcNgtscScopeSrcLocalMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: DeclarationData] (val x: Self) extends AnyVal {
       
-      inline def setNgModule(value: ClassDeclaration[DeclarationNode]): Self = StObject.set(x, "ngModule", value.asInstanceOf[js.Any])
+      inline def setNgModule(value: ClassDeclarationDeclarati): Self = StObject.set(x, "ngModule", value.asInstanceOf[js.Any])
       
       inline def setRawDeclarations(value: Expression): Self = StObject.set(x, "rawDeclarations", value.asInstanceOf[js.Any])
       
@@ -216,18 +215,18 @@ object srcNgtscScopeSrcLocalMod {
   
   trait LocalNgModuleData extends StObject {
     
-    var declarations: js.Array[Reference[ClassDeclaration[DeclarationNode]]]
+    var declarations: js.Array[Reference[ClassDeclarationDeclarati]]
     
-    var exports: js.Array[Reference[ClassDeclaration[DeclarationNode]]]
+    var exports: js.Array[Reference[ClassDeclarationDeclarati]]
     
-    var imports: js.Array[Reference[ClassDeclaration[DeclarationNode]]]
+    var imports: js.Array[Reference[ClassDeclarationDeclarati]]
   }
   object LocalNgModuleData {
     
     inline def apply(
-      declarations: js.Array[Reference[ClassDeclaration[DeclarationNode]]],
-      exports: js.Array[Reference[ClassDeclaration[DeclarationNode]]],
-      imports: js.Array[Reference[ClassDeclaration[DeclarationNode]]]
+      declarations: js.Array[Reference[ClassDeclarationDeclarati]],
+      exports: js.Array[Reference[ClassDeclarationDeclarati]],
+      imports: js.Array[Reference[ClassDeclarationDeclarati]]
     ): LocalNgModuleData = {
       val __obj = js.Dynamic.literal(declarations = declarations.asInstanceOf[js.Any], exports = exports.asInstanceOf[js.Any], imports = imports.asInstanceOf[js.Any])
       __obj.asInstanceOf[LocalNgModuleData]
@@ -236,17 +235,17 @@ object srcNgtscScopeSrcLocalMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: LocalNgModuleData] (val x: Self) extends AnyVal {
       
-      inline def setDeclarations(value: js.Array[Reference[ClassDeclaration[DeclarationNode]]]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
+      inline def setDeclarations(value: js.Array[Reference[ClassDeclarationDeclarati]]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
       
-      inline def setDeclarationsVarargs(value: Reference[ClassDeclaration[DeclarationNode]]*): Self = StObject.set(x, "declarations", js.Array(value*))
+      inline def setDeclarationsVarargs(value: Reference[ClassDeclarationDeclarati]*): Self = StObject.set(x, "declarations", js.Array(value*))
       
-      inline def setExports(value: js.Array[Reference[ClassDeclaration[DeclarationNode]]]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
+      inline def setExports(value: js.Array[Reference[ClassDeclarationDeclarati]]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
       
-      inline def setExportsVarargs(value: Reference[ClassDeclaration[DeclarationNode]]*): Self = StObject.set(x, "exports", js.Array(value*))
+      inline def setExportsVarargs(value: Reference[ClassDeclarationDeclarati]*): Self = StObject.set(x, "exports", js.Array(value*))
       
-      inline def setImports(value: js.Array[Reference[ClassDeclaration[DeclarationNode]]]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
+      inline def setImports(value: js.Array[Reference[ClassDeclarationDeclarati]]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
       
-      inline def setImportsVarargs(value: Reference[ClassDeclaration[DeclarationNode]]*): Self = StObject.set(x, "imports", js.Array(value*))
+      inline def setImportsVarargs(value: Reference[ClassDeclarationDeclarati]*): Self = StObject.set(x, "imports", js.Array(value*))
     }
   }
 }

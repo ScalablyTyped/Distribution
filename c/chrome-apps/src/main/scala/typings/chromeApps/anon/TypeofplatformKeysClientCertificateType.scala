@@ -13,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeofplatformKeysClientCertificateType extends StObject {
   
   /**
-    * @enum
     */
   val ClientCertificateType: ECDSASIGN
   

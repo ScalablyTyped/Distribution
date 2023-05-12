@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-select" : "14.1.13"
+      "rc-select" : "14.4.3"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-select" : "14.1.13"
+      "rc-select" : "14.4.3"
     }
   ],
   "compile-devDependencies" : [

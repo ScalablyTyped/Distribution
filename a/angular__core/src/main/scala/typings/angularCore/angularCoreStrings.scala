@@ -3,7 +3,6 @@ package typings.angularCore
 import typings.angularCore.mod.GlobalTargetName
 import typings.angularCore.mod.InjectorScope
 import typings.angularCore.mod.ɵBypassType
-import typings.angularCore.schematicsUtilsTypescriptPropertyNameMod.PropertyNameWithText
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,6 +20,10 @@ object angularCoreStrings {
   @js.native
   sealed trait BrowserAnimations extends StObject
   inline def BrowserAnimations: BrowserAnimations = "BrowserAnimations".asInstanceOf[BrowserAnimations]
+  
+  @js.native
+  sealed trait EnvironmentProviders extends StObject
+  inline def EnvironmentProviders: EnvironmentProviders = "EnvironmentProviders".asInstanceOf[EnvironmentProviders]
   
   @js.native
   sealed trait HTML
@@ -135,20 +138,8 @@ object angularCoreStrings {
   inline def environment: environment = "environment".asInstanceOf[environment]
   
   @js.native
-  sealed trait escapedText
-    extends StObject
-       with PropertyNameWithText
-  inline def escapedText: escapedText = "escapedText".asInstanceOf[escapedText]
-  
-  @js.native
   sealed trait invalid extends StObject
   inline def invalid: invalid = "invalid".asInstanceOf[invalid]
-  
-  @js.native
-  sealed trait isInJSDocNamespace
-    extends StObject
-       with PropertyNameWithText
-  inline def isInJSDocNamespace: isInJSDocNamespace = "isInJSDocNamespace".asInstanceOf[isInJSDocNamespace]
   
   @js.native
   sealed trait ngmodule extends StObject
@@ -157,12 +148,6 @@ object angularCoreStrings {
   @js.native
   sealed trait noop extends StObject
   inline def noop: noop = "noop".asInstanceOf[noop]
-  
-  @js.native
-  sealed trait originalKeywordKind
-    extends StObject
-       with PropertyNameWithText
-  inline def originalKeywordKind: originalKeywordKind = "originalKeywordKind".asInstanceOf[originalKeywordKind]
   
   @js.native
   sealed trait pipe extends StObject
@@ -179,12 +164,6 @@ object angularCoreStrings {
     extends StObject
        with InjectorScope
   inline def root: root = "root".asInstanceOf[root]
-  
-  @js.native
-  sealed trait text
-    extends StObject
-       with PropertyNameWithText
-  inline def text: text = "text".asInstanceOf[text]
   
   @js.native
   sealed trait window

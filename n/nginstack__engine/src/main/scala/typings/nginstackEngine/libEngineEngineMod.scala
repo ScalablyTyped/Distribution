@@ -26,6 +26,8 @@ object libEngineEngineMod {
     
     var arch: String = js.native
     
+    var args: js.Array[String] = js.native
+    
     var dataDir: String = js.native
     
     def discardEndpointInfoCache(): Unit = js.native

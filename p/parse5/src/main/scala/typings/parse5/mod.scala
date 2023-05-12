@@ -1,5 +1,6 @@
 package typings.parse5
 
+import typings.parse5.distCommonErrorCodesMod.ERR
 import typings.parse5.distCommonHtmlMod.NS
 import typings.parse5.distCommonHtmlMod.TAG_ID
 import typings.parse5.distCommonTokenMod.Attribute
@@ -29,6 +30,134 @@ object mod {
   @JSImport("parse5", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  @JSImport("parse5", "ErrorCodes")
+  @js.native
+  object ErrorCodes extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[ERR & String] = js.native
+    
+    /* "abandoned-head-element-child" */ val abandonedHeadElementChild: typings.parse5.distCommonErrorCodesMod.ERR.abandonedHeadElementChild & String = js.native
+    
+    /* "abrupt-closing-of-empty-comment" */ val abruptClosingOfEmptyComment: typings.parse5.distCommonErrorCodesMod.ERR.abruptClosingOfEmptyComment & String = js.native
+    
+    /* "abrupt-doctype-public-identifier" */ val abruptDoctypePublicIdentifier: typings.parse5.distCommonErrorCodesMod.ERR.abruptDoctypePublicIdentifier & String = js.native
+    
+    /* "abrupt-doctype-system-identifier" */ val abruptDoctypeSystemIdentifier: typings.parse5.distCommonErrorCodesMod.ERR.abruptDoctypeSystemIdentifier & String = js.native
+    
+    /* "absence-of-digits-in-numeric-character-reference" */ val absenceOfDigitsInNumericCharacterReference: typings.parse5.distCommonErrorCodesMod.ERR.absenceOfDigitsInNumericCharacterReference & String = js.native
+    
+    /* "cdata-in-html-content" */ val cdataInHtmlContent: typings.parse5.distCommonErrorCodesMod.ERR.cdataInHtmlContent & String = js.native
+    
+    /* "character-reference-outside-unicode-range" */ val characterReferenceOutsideUnicodeRange: typings.parse5.distCommonErrorCodesMod.ERR.characterReferenceOutsideUnicodeRange & String = js.native
+    
+    /* "closing-of-element-with-open-child-elements" */ val closingOfElementWithOpenChildElements: typings.parse5.distCommonErrorCodesMod.ERR.closingOfElementWithOpenChildElements & String = js.native
+    
+    /* "control-character-in-input-stream" */ val controlCharacterInInputStream: typings.parse5.distCommonErrorCodesMod.ERR.controlCharacterInInputStream & String = js.native
+    
+    /* "control-character-reference" */ val controlCharacterReference: typings.parse5.distCommonErrorCodesMod.ERR.controlCharacterReference & String = js.native
+    
+    /* "disallowed-content-in-noscript-in-head" */ val disallowedContentInNoscriptInHead: typings.parse5.distCommonErrorCodesMod.ERR.disallowedContentInNoscriptInHead & String = js.native
+    
+    /* "duplicate-attribute" */ val duplicateAttribute: typings.parse5.distCommonErrorCodesMod.ERR.duplicateAttribute & String = js.native
+    
+    /* "end-tag-with-attributes" */ val endTagWithAttributes: typings.parse5.distCommonErrorCodesMod.ERR.endTagWithAttributes & String = js.native
+    
+    /* "end-tag-with-trailing-solidus" */ val endTagWithTrailingSolidus: typings.parse5.distCommonErrorCodesMod.ERR.endTagWithTrailingSolidus & String = js.native
+    
+    /* "end-tag-without-matching-open-element" */ val endTagWithoutMatchingOpenElement: typings.parse5.distCommonErrorCodesMod.ERR.endTagWithoutMatchingOpenElement & String = js.native
+    
+    /* "eof-before-tag-name" */ val eofBeforeTagName: typings.parse5.distCommonErrorCodesMod.ERR.eofBeforeTagName & String = js.native
+    
+    /* "eof-in-cdata" */ val eofInCdata: typings.parse5.distCommonErrorCodesMod.ERR.eofInCdata & String = js.native
+    
+    /* "eof-in-comment" */ val eofInComment: typings.parse5.distCommonErrorCodesMod.ERR.eofInComment & String = js.native
+    
+    /* "eof-in-doctype" */ val eofInDoctype: typings.parse5.distCommonErrorCodesMod.ERR.eofInDoctype & String = js.native
+    
+    /* "eof-in-element-that-can-contain-only-text" */ val eofInElementThatCanContainOnlyText: typings.parse5.distCommonErrorCodesMod.ERR.eofInElementThatCanContainOnlyText & String = js.native
+    
+    /* "eof-in-script-html-comment-like-text" */ val eofInScriptHtmlCommentLikeText: typings.parse5.distCommonErrorCodesMod.ERR.eofInScriptHtmlCommentLikeText & String = js.native
+    
+    /* "eof-in-tag" */ val eofInTag: typings.parse5.distCommonErrorCodesMod.ERR.eofInTag & String = js.native
+    
+    /* "incorrectly-closed-comment" */ val incorrectlyClosedComment: typings.parse5.distCommonErrorCodesMod.ERR.incorrectlyClosedComment & String = js.native
+    
+    /* "incorrectly-opened-comment" */ val incorrectlyOpenedComment: typings.parse5.distCommonErrorCodesMod.ERR.incorrectlyOpenedComment & String = js.native
+    
+    /* "invalid-character-sequence-after-doctype-name" */ val invalidCharacterSequenceAfterDoctypeName: typings.parse5.distCommonErrorCodesMod.ERR.invalidCharacterSequenceAfterDoctypeName & String = js.native
+    
+    /* "invalid-first-character-of-tag-name" */ val invalidFirstCharacterOfTagName: typings.parse5.distCommonErrorCodesMod.ERR.invalidFirstCharacterOfTagName & String = js.native
+    
+    /* "misplaced-doctype" */ val misplacedDoctype: typings.parse5.distCommonErrorCodesMod.ERR.misplacedDoctype & String = js.native
+    
+    /* "misplaced-start-tag-for-head-element" */ val misplacedStartTagForHeadElement: typings.parse5.distCommonErrorCodesMod.ERR.misplacedStartTagForHeadElement & String = js.native
+    
+    /* "missing-attribute-value" */ val missingAttributeValue: typings.parse5.distCommonErrorCodesMod.ERR.missingAttributeValue & String = js.native
+    
+    /* "missing-doctype" */ val missingDoctype: typings.parse5.distCommonErrorCodesMod.ERR.missingDoctype & String = js.native
+    
+    /* "missing-doctype-name" */ val missingDoctypeName: typings.parse5.distCommonErrorCodesMod.ERR.missingDoctypeName & String = js.native
+    
+    /* "missing-doctype-public-identifier" */ val missingDoctypePublicIdentifier: typings.parse5.distCommonErrorCodesMod.ERR.missingDoctypePublicIdentifier & String = js.native
+    
+    /* "missing-doctype-system-identifier" */ val missingDoctypeSystemIdentifier: typings.parse5.distCommonErrorCodesMod.ERR.missingDoctypeSystemIdentifier & String = js.native
+    
+    /* "missing-end-tag-name" */ val missingEndTagName: typings.parse5.distCommonErrorCodesMod.ERR.missingEndTagName & String = js.native
+    
+    /* "missing-quote-before-doctype-public-identifier" */ val missingQuoteBeforeDoctypePublicIdentifier: typings.parse5.distCommonErrorCodesMod.ERR.missingQuoteBeforeDoctypePublicIdentifier & String = js.native
+    
+    /* "missing-quote-before-doctype-system-identifier" */ val missingQuoteBeforeDoctypeSystemIdentifier: typings.parse5.distCommonErrorCodesMod.ERR.missingQuoteBeforeDoctypeSystemIdentifier & String = js.native
+    
+    /* "missing-semicolon-after-character-reference" */ val missingSemicolonAfterCharacterReference: typings.parse5.distCommonErrorCodesMod.ERR.missingSemicolonAfterCharacterReference & String = js.native
+    
+    /* "missing-whitespace-after-doctype-public-keyword" */ val missingWhitespaceAfterDoctypePublicKeyword: typings.parse5.distCommonErrorCodesMod.ERR.missingWhitespaceAfterDoctypePublicKeyword & String = js.native
+    
+    /* "missing-whitespace-after-doctype-system-keyword" */ val missingWhitespaceAfterDoctypeSystemKeyword: typings.parse5.distCommonErrorCodesMod.ERR.missingWhitespaceAfterDoctypeSystemKeyword & String = js.native
+    
+    /* "missing-whitespace-before-doctype-name" */ val missingWhitespaceBeforeDoctypeName: typings.parse5.distCommonErrorCodesMod.ERR.missingWhitespaceBeforeDoctypeName & String = js.native
+    
+    /* "missing-whitespace-between-attributes" */ val missingWhitespaceBetweenAttributes: typings.parse5.distCommonErrorCodesMod.ERR.missingWhitespaceBetweenAttributes & String = js.native
+    
+    /* "missing-whitespace-between-doctype-public-and-system-identifiers" */ val missingWhitespaceBetweenDoctypePublicAndSystemIdentifiers: typings.parse5.distCommonErrorCodesMod.ERR.missingWhitespaceBetweenDoctypePublicAndSystemIdentifiers & String = js.native
+    
+    /* "nested-comment" */ val nestedComment: typings.parse5.distCommonErrorCodesMod.ERR.nestedComment & String = js.native
+    
+    /* "nested-noscript-in-head" */ val nestedNoscriptInHead: typings.parse5.distCommonErrorCodesMod.ERR.nestedNoscriptInHead & String = js.native
+    
+    /* "non-conforming-doctype" */ val nonConformingDoctype: typings.parse5.distCommonErrorCodesMod.ERR.nonConformingDoctype & String = js.native
+    
+    /* "non-void-html-element-start-tag-with-trailing-solidus" */ val nonVoidHtmlElementStartTagWithTrailingSolidus: typings.parse5.distCommonErrorCodesMod.ERR.nonVoidHtmlElementStartTagWithTrailingSolidus & String = js.native
+    
+    /* "noncharacter-character-reference" */ val noncharacterCharacterReference: typings.parse5.distCommonErrorCodesMod.ERR.noncharacterCharacterReference & String = js.native
+    
+    /* "noncharacter-in-input-stream" */ val noncharacterInInputStream: typings.parse5.distCommonErrorCodesMod.ERR.noncharacterInInputStream & String = js.native
+    
+    /* "null-character-reference" */ val nullCharacterReference: typings.parse5.distCommonErrorCodesMod.ERR.nullCharacterReference & String = js.native
+    
+    /* "open-elements-left-after-eof" */ val openElementsLeftAfterEof: typings.parse5.distCommonErrorCodesMod.ERR.openElementsLeftAfterEof & String = js.native
+    
+    /* "surrogate-character-reference" */ val surrogateCharacterReference: typings.parse5.distCommonErrorCodesMod.ERR.surrogateCharacterReference & String = js.native
+    
+    /* "surrogate-in-input-stream" */ val surrogateInInputStream: typings.parse5.distCommonErrorCodesMod.ERR.surrogateInInputStream & String = js.native
+    
+    /* "unexpected-character-after-doctype-system-identifier" */ val unexpectedCharacterAfterDoctypeSystemIdentifier: typings.parse5.distCommonErrorCodesMod.ERR.unexpectedCharacterAfterDoctypeSystemIdentifier & String = js.native
+    
+    /* "unexpected-character-in-attribute-name" */ val unexpectedCharacterInAttributeName: typings.parse5.distCommonErrorCodesMod.ERR.unexpectedCharacterInAttributeName & String = js.native
+    
+    /* "unexpected-character-in-unquoted-attribute-value" */ val unexpectedCharacterInUnquotedAttributeValue: typings.parse5.distCommonErrorCodesMod.ERR.unexpectedCharacterInUnquotedAttributeValue & String = js.native
+    
+    /* "unexpected-equals-sign-before-attribute-name" */ val unexpectedEqualsSignBeforeAttributeName: typings.parse5.distCommonErrorCodesMod.ERR.unexpectedEqualsSignBeforeAttributeName & String = js.native
+    
+    /* "unexpected-null-character" */ val unexpectedNullCharacter: typings.parse5.distCommonErrorCodesMod.ERR.unexpectedNullCharacter & String = js.native
+    
+    /* "unexpected-question-mark-instead-of-tag-name" */ val unexpectedQuestionMarkInsteadOfTagName: typings.parse5.distCommonErrorCodesMod.ERR.unexpectedQuestionMarkInsteadOfTagName & String = js.native
+    
+    /* "unexpected-solidus-in-tag" */ val unexpectedSolidusInTag: typings.parse5.distCommonErrorCodesMod.ERR.unexpectedSolidusInTag & String = js.native
+    
+    /* "unknown-named-character-reference" */ val unknownNamedCharacterReference: typings.parse5.distCommonErrorCodesMod.ERR.unknownNamedCharacterReference & String = js.native
+  }
   
   @JSImport("parse5", "Parser")
   @js.native

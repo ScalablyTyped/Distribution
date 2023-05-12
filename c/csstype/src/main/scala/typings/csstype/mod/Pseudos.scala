@@ -126,6 +126,16 @@ object Pseudos {
   
   inline def `ColonColontarget-text`: typings.csstype.csstypeStrings.`ColonColontarget-text` = "::target-text".asInstanceOf[typings.csstype.csstypeStrings.`ColonColontarget-text`]
   
+  inline def `ColonColonview-transition`: typings.csstype.csstypeStrings.`ColonColonview-transition` = "::view-transition".asInstanceOf[typings.csstype.csstypeStrings.`ColonColonview-transition`]
+  
+  inline def `ColonColonview-transition-group`: typings.csstype.csstypeStrings.`ColonColonview-transition-group` = "::view-transition-group".asInstanceOf[typings.csstype.csstypeStrings.`ColonColonview-transition-group`]
+  
+  inline def `ColonColonview-transition-image-pair`: typings.csstype.csstypeStrings.`ColonColonview-transition-image-pair` = "::view-transition-image-pair".asInstanceOf[typings.csstype.csstypeStrings.`ColonColonview-transition-image-pair`]
+  
+  inline def `ColonColonview-transition-new`: typings.csstype.csstypeStrings.`ColonColonview-transition-new` = "::view-transition-new".asInstanceOf[typings.csstype.csstypeStrings.`ColonColonview-transition-new`]
+  
+  inline def `ColonColonview-transition-old`: typings.csstype.csstypeStrings.`ColonColonview-transition-old` = "::view-transition-old".asInstanceOf[typings.csstype.csstypeStrings.`ColonColonview-transition-old`]
+  
   inline def Colonactive: typings.csstype.csstypeStrings.Colonactive = ":active".asInstanceOf[typings.csstype.csstypeStrings.Colonactive]
   
   inline def Colonafter: typings.csstype.csstypeStrings.Colonafter = ":after".asInstanceOf[typings.csstype.csstypeStrings.Colonafter]

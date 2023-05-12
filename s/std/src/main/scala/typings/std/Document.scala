@@ -5,6 +5,7 @@ import typings.std.stdStrings.Events
 import typings.std.stdStrings.MouseEvents
 import typings.std.stdStrings.MutationEvents
 import typings.std.stdStrings.UIEvents
+import typings.std.stdStrings.`annotation-xml`
 import typings.std.stdStrings.`object`
 import typings.std.stdStrings.`var`
 import typings.std.stdStrings.a
@@ -14,6 +15,7 @@ import typings.std.stdStrings.address
 import typings.std.stdStrings.animate
 import typings.std.stdStrings.animateMotion
 import typings.std.stdStrings.animateTransform
+import typings.std.stdStrings.annotation
 import typings.std.stdStrings.applet
 import typings.std.stdStrings.area
 import typings.std.stdStrings.article
@@ -104,6 +106,7 @@ import typings.std.stdStrings.header
 import typings.std.stdStrings.hgroup
 import typings.std.stdStrings.hr
 import typings.std.stdStrings.html
+import typings.std.stdStrings.httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML
 import typings.std.stdStrings.httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml
 import typings.std.stdStrings.httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg
 import typings.std.stdStrings.i
@@ -122,19 +125,46 @@ import typings.std.stdStrings.line
 import typings.std.stdStrings.linearGradient
 import typings.std.stdStrings.link
 import typings.std.stdStrings.listing
+import typings.std.stdStrings.maction
 import typings.std.stdStrings.main
 import typings.std.stdStrings.map
 import typings.std.stdStrings.mark
 import typings.std.stdStrings.marker
 import typings.std.stdStrings.marquee
 import typings.std.stdStrings.mask
+import typings.std.stdStrings.math
 import typings.std.stdStrings.menu
 import typings.std.stdStrings.menuitem
+import typings.std.stdStrings.merror
 import typings.std.stdStrings.meta
 import typings.std.stdStrings.metadata
 import typings.std.stdStrings.meter
+import typings.std.stdStrings.mfrac
+import typings.std.stdStrings.mi
+import typings.std.stdStrings.mmultiscripts
+import typings.std.stdStrings.mn
+import typings.std.stdStrings.mo
+import typings.std.stdStrings.mover
+import typings.std.stdStrings.mpadded
 import typings.std.stdStrings.mpath
+import typings.std.stdStrings.mphantom
+import typings.std.stdStrings.mprescripts
+import typings.std.stdStrings.mroot
+import typings.std.stdStrings.mrow
+import typings.std.stdStrings.ms
+import typings.std.stdStrings.mspace
+import typings.std.stdStrings.msqrt
+import typings.std.stdStrings.mstyle
+import typings.std.stdStrings.msub
+import typings.std.stdStrings.msubsup
+import typings.std.stdStrings.msup
+import typings.std.stdStrings.mtable
+import typings.std.stdStrings.mtd
+import typings.std.stdStrings.mtext
+import typings.std.stdStrings.mtr
 import typings.std.stdStrings.multicol
+import typings.std.stdStrings.munder
+import typings.std.stdStrings.munderover
 import typings.std.stdStrings.nav
 import typings.std.stdStrings.nextid
 import typings.std.stdStrings.nobr
@@ -171,6 +201,7 @@ import typings.std.stdStrings.samp
 import typings.std.stdStrings.script
 import typings.std.stdStrings.section
 import typings.std.stdStrings.select
+import typings.std.stdStrings.semantics
 import typings.std.stdStrings.set
 import typings.std.stdStrings.slot
 import typings.std.stdStrings.small
@@ -219,7 +250,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Document
   extends StObject
-     with DocumentAndElementEventHandlers
      with DocumentOrShadowRoot
      with FontFaceSource
      with GlobalEventHandlers
@@ -468,6 +498,82 @@ trait Document
   def createElementNS(namespaceURI: java.lang.String, qualifiedName: java.lang.String, options: ElementCreationOptions): Element = js.native
   def createElementNS(namespaceURI: Null, qualifiedName: java.lang.String): Element = js.native
   def createElementNS(namespaceURI: Null, qualifiedName: java.lang.String, options: ElementCreationOptions): Element = js.native
+  def createElementNS(
+    namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML,
+    qualifiedName: `annotation-xml`
+  ): MathMLElement = js.native
+  /* standard dom */
+  def createElementNS(
+    namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML,
+    qualifiedName: annotation
+  ): MathMLElement = js.native
+  def createElementNS(
+    namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML,
+    qualifiedName: maction
+  ): MathMLElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML, qualifiedName: math): MathMLElement = js.native
+  def createElementNS(
+    namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML,
+    qualifiedName: merror
+  ): MathMLElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML, qualifiedName: mfrac): MathMLElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML, qualifiedName: mi): MathMLElement = js.native
+  def createElementNS(
+    namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML,
+    qualifiedName: mmultiscripts
+  ): MathMLElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML, qualifiedName: mn): MathMLElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML, qualifiedName: mo): MathMLElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML, qualifiedName: mover): MathMLElement = js.native
+  def createElementNS(
+    namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML,
+    qualifiedName: mpadded
+  ): MathMLElement = js.native
+  def createElementNS(
+    namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML,
+    qualifiedName: mphantom
+  ): MathMLElement = js.native
+  def createElementNS(
+    namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML,
+    qualifiedName: mprescripts
+  ): MathMLElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML, qualifiedName: mroot): MathMLElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML, qualifiedName: mrow): MathMLElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML, qualifiedName: ms): MathMLElement = js.native
+  def createElementNS(
+    namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML,
+    qualifiedName: mspace
+  ): MathMLElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML, qualifiedName: msqrt): MathMLElement = js.native
+  def createElementNS(
+    namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML,
+    qualifiedName: mstyle
+  ): MathMLElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML, qualifiedName: msub): MathMLElement = js.native
+  def createElementNS(
+    namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML,
+    qualifiedName: msubsup
+  ): MathMLElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML, qualifiedName: msup): MathMLElement = js.native
+  def createElementNS(
+    namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML,
+    qualifiedName: mtable
+  ): MathMLElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML, qualifiedName: mtd): MathMLElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML, qualifiedName: mtext): MathMLElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML, qualifiedName: mtr): MathMLElement = js.native
+  def createElementNS(
+    namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML,
+    qualifiedName: munder
+  ): MathMLElement = js.native
+  def createElementNS(
+    namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML,
+    qualifiedName: munderover
+  ): MathMLElement = js.native
+  def createElementNS(
+    namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML,
+    qualifiedName: semantics
+  ): MathMLElement = js.native
   /* standard dom */
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: a): SVGAElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: animate): SVGAnimateElement = js.native
@@ -540,6 +646,12 @@ trait Document
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: view): SVGViewElement = js.native
   def createElementNS(namespace: java.lang.String, qualifiedName: java.lang.String, options: java.lang.String): Element = js.native
   def createElementNS(namespace: Null, qualifiedName: java.lang.String, options: java.lang.String): Element = js.native
+  /* standard dom */
+  @JSName("createElementNS")
+  def createElementNS_httpwwww3org1998MathMathML(
+    namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML,
+    qualifiedName: java.lang.String
+  ): MathMLElement = js.native
   /**
     * Returns an element with namespace namespace. Its namespace prefix will be everything before ":" (U+003E) in qualifiedName or null. Its local name will be everything after ":" (U+003E) in qualifiedName or qualifiedName.
     *
@@ -1206,6 +1318,12 @@ trait Document
   def createEvent_KeyboardEvent(eventInterface: typings.std.stdStrings.KeyboardEvent): KeyboardEvent = js.native
   /* standard dom */
   @JSName("createEvent")
+  def createEvent_MIDIConnectionEvent(eventInterface: typings.std.stdStrings.MIDIConnectionEvent): MIDIConnectionEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  def createEvent_MIDIMessageEvent(eventInterface: typings.std.stdStrings.MIDIMessageEvent): MIDIMessageEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
   def createEvent_MediaEncryptedEvent(eventInterface: typings.std.stdStrings.MediaEncryptedEvent): MediaEncryptedEvent = js.native
   /* standard dom */
   @JSName("createEvent")
@@ -1454,6 +1572,12 @@ trait Document
   /* standard dom */
   def getElementsByTagNameNS(namespace: java.lang.String, localName: java.lang.String): HTMLCollectionOf[Element] = js.native
   def getElementsByTagNameNS(namespace: Null, localName: java.lang.String): HTMLCollectionOf[Element] = js.native
+  /* standard dom */
+  @JSName("getElementsByTagNameNS")
+  def getElementsByTagNameNS_httpwwww3org1998MathMathML(
+    namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML,
+    localName: java.lang.String
+  ): HTMLCollectionOf[MathMLElement] = js.native
   /**
     * If namespace and localName are "*" returns a HTMLCollection of all descendant elements.
     *
@@ -1479,6 +1603,10 @@ trait Document
   def getElementsByTagName_a(qualifiedName: a): HTMLCollectionOf[HTMLAnchorElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_abbr(qualifiedName: abbr): HTMLCollectionOf[HTMLElement] = js.native
+  /** @deprecated */
+  /* standard dom */
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_acronym(qualifiedName: acronym): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_address(qualifiedName: address): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
@@ -1487,6 +1615,13 @@ trait Document
   def getElementsByTagName_animateMotion(qualifiedName: animateMotion): HTMLCollectionOf[SVGAnimateMotionElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_animateTransform(qualifiedName: animateTransform): HTMLCollectionOf[SVGAnimateTransformElement] = js.native
+  /* standard dom */
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_annotation(qualifiedName: annotation): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_annotationxml(qualifiedName: `annotation-xml`): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_applet(qualifiedName: applet): HTMLCollectionOf[HTMLUnknownElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_area(qualifiedName: area): HTMLCollectionOf[HTMLAreaElement] = js.native
   @JSName("getElementsByTagName")
@@ -1500,9 +1635,17 @@ trait Document
   @JSName("getElementsByTagName")
   def getElementsByTagName_base(qualifiedName: base): HTMLCollectionOf[HTMLBaseElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_basefont(qualifiedName: basefont): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_bdi(qualifiedName: bdi): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_bdo(qualifiedName: bdo): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_bgsound(qualifiedName: bgsound): HTMLCollectionOf[HTMLUnknownElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_big(qualifiedName: big): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_blink(qualifiedName: blink): HTMLCollectionOf[HTMLUnknownElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_blockquote(qualifiedName: blockquote): HTMLCollectionOf[HTMLQuoteElement] = js.native
   @JSName("getElementsByTagName")
@@ -1515,6 +1658,8 @@ trait Document
   def getElementsByTagName_canvas(qualifiedName: canvas): HTMLCollectionOf[HTMLCanvasElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_caption(qualifiedName: caption): HTMLCollectionOf[HTMLTableCaptionElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_center(qualifiedName: center): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_circle(qualifiedName: circle): HTMLCollectionOf[SVGCircleElement] = js.native
   @JSName("getElementsByTagName")
@@ -1545,6 +1690,8 @@ trait Document
   def getElementsByTagName_dfn(qualifiedName: dfn): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_dialog(qualifiedName: dialog): HTMLCollectionOf[HTMLDialogElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_dir(qualifiedName: dir): HTMLCollectionOf[HTMLDirectoryElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_div(qualifiedName: div): HTMLCollectionOf[HTMLDivElement] = js.native
   @JSName("getElementsByTagName")
@@ -1616,11 +1763,17 @@ trait Document
   @JSName("getElementsByTagName")
   def getElementsByTagName_filter(qualifiedName: filter): HTMLCollectionOf[SVGFilterElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_font(qualifiedName: font): HTMLCollectionOf[HTMLFontElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_footer(qualifiedName: footer): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_foreignObject(qualifiedName: foreignObject): HTMLCollectionOf[SVGForeignObjectElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_form(qualifiedName: form): HTMLCollectionOf[HTMLFormElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_frame(qualifiedName: frame): HTMLCollectionOf[HTMLFrameElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_frameset(qualifiedName: frameset): HTMLCollectionOf[HTMLFrameSetElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_g(qualifiedName: g): HTMLCollectionOf[SVGGElement] = js.native
   @JSName("getElementsByTagName")
@@ -1658,7 +1811,11 @@ trait Document
   @JSName("getElementsByTagName")
   def getElementsByTagName_ins(qualifiedName: ins): HTMLCollectionOf[HTMLModElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_isindex(qualifiedName: isindex): HTMLCollectionOf[HTMLUnknownElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_kbd(qualifiedName: kbd): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_keygen(qualifiedName: keygen): HTMLCollectionOf[HTMLUnknownElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_label(qualifiedName: label): HTMLCollectionOf[HTMLLabelElement] = js.native
   @JSName("getElementsByTagName")
@@ -1672,6 +1829,10 @@ trait Document
   @JSName("getElementsByTagName")
   def getElementsByTagName_link(qualifiedName: link): HTMLCollectionOf[HTMLLinkElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_listing(qualifiedName: listing): HTMLCollectionOf[HTMLPreElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_maction(qualifiedName: maction): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_main(qualifiedName: main): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_map(qualifiedName: map): HTMLCollectionOf[HTMLMapElement] = js.native
@@ -1680,9 +1841,17 @@ trait Document
   @JSName("getElementsByTagName")
   def getElementsByTagName_marker(qualifiedName: marker): HTMLCollectionOf[SVGMarkerElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_marquee(qualifiedName: marquee): HTMLCollectionOf[HTMLMarqueeElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_mask(qualifiedName: mask): HTMLCollectionOf[SVGMaskElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_math(qualifiedName: math): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_menu(qualifiedName: menu): HTMLCollectionOf[HTMLMenuElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_menuitem(qualifiedName: menuitem): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_merror(qualifiedName: merror): HTMLCollectionOf[MathMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_meta(qualifiedName: meta): HTMLCollectionOf[HTMLMetaElement] = js.native
   @JSName("getElementsByTagName")
@@ -1690,9 +1859,67 @@ trait Document
   @JSName("getElementsByTagName")
   def getElementsByTagName_meter(qualifiedName: meter): HTMLCollectionOf[HTMLMeterElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_mfrac(qualifiedName: mfrac): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_mi(qualifiedName: mi): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_mmultiscripts(qualifiedName: mmultiscripts): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_mn(qualifiedName: mn): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_mo(qualifiedName: mo): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_mover(qualifiedName: mover): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_mpadded(qualifiedName: mpadded): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_mpath(qualifiedName: mpath): HTMLCollectionOf[SVGMPathElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_mphantom(qualifiedName: mphantom): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_mprescripts(qualifiedName: mprescripts): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_mroot(qualifiedName: mroot): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_mrow(qualifiedName: mrow): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_ms(qualifiedName: ms): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_mspace(qualifiedName: mspace): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_msqrt(qualifiedName: msqrt): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_mstyle(qualifiedName: mstyle): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_msub(qualifiedName: msub): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_msubsup(qualifiedName: msubsup): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_msup(qualifiedName: msup): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_mtable(qualifiedName: mtable): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_mtd(qualifiedName: mtd): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_mtext(qualifiedName: mtext): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_mtr(qualifiedName: mtr): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_multicol(qualifiedName: multicol): HTMLCollectionOf[HTMLUnknownElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_munder(qualifiedName: munder): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_munderover(qualifiedName: munderover): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_nav(qualifiedName: nav): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_nextid(qualifiedName: nextid): HTMLCollectionOf[HTMLUnknownElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_nobr(qualifiedName: nobr): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_noembed(qualifiedName: noembed): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_noframes(qualifiedName: noframes): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_noscript(qualifiedName: noscript): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
@@ -1708,11 +1935,15 @@ trait Document
   @JSName("getElementsByTagName")
   def getElementsByTagName_p(qualifiedName: p): HTMLCollectionOf[HTMLParagraphElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_param(qualifiedName: param): HTMLCollectionOf[HTMLParamElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_path(qualifiedName: path): HTMLCollectionOf[SVGPathElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_pattern(qualifiedName: pattern): HTMLCollectionOf[SVGPatternElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_picture(qualifiedName: picture): HTMLCollectionOf[HTMLPictureElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_plaintext(qualifiedName: plaintext): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_polygon(qualifiedName: polygon): HTMLCollectionOf[SVGPolygonElement] = js.native
   @JSName("getElementsByTagName")
@@ -1726,11 +1957,15 @@ trait Document
   @JSName("getElementsByTagName")
   def getElementsByTagName_radialGradient(qualifiedName: radialGradient): HTMLCollectionOf[SVGRadialGradientElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_rb(qualifiedName: rb): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_rect(qualifiedName: rect): HTMLCollectionOf[SVGRectElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_rp(qualifiedName: rp): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_rt(qualifiedName: rt): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_rtc(qualifiedName: rtc): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_ruby(qualifiedName: ruby): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
@@ -1744,6 +1979,8 @@ trait Document
   @JSName("getElementsByTagName")
   def getElementsByTagName_select(qualifiedName: select): HTMLCollectionOf[HTMLSelectElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_semantics(qualifiedName: semantics): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_set(qualifiedName: set): HTMLCollectionOf[SVGSetElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_slot(qualifiedName: slot): HTMLCollectionOf[HTMLSlotElement] = js.native
@@ -1752,9 +1989,13 @@ trait Document
   @JSName("getElementsByTagName")
   def getElementsByTagName_source(qualifiedName: source): HTMLCollectionOf[HTMLSourceElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_spacer(qualifiedName: spacer): HTMLCollectionOf[HTMLUnknownElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_span(qualifiedName: span): HTMLCollectionOf[HTMLSpanElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_stop(qualifiedName: stop): HTMLCollectionOf[SVGStopElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_strike(qualifiedName: strike): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_strong(qualifiedName: strong): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
@@ -1802,6 +2043,8 @@ trait Document
   @JSName("getElementsByTagName")
   def getElementsByTagName_tspan(qualifiedName: tspan): HTMLCollectionOf[SVGTSpanElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_tt(qualifiedName: tt): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_u(qualifiedName: u): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_ul(qualifiedName: ul): HTMLCollectionOf[HTMLUListElement] = js.native
@@ -1815,6 +2058,8 @@ trait Document
   def getElementsByTagName_view(qualifiedName: view): HTMLCollectionOf[SVGViewElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_wbr(qualifiedName: wbr): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_xmp(qualifiedName: xmp): HTMLCollectionOf[HTMLPreElement] = js.native
   
   /** Returns an object representing the current selection of the document that is loaded into the object displaying a webpage. */
   /* standard dom */

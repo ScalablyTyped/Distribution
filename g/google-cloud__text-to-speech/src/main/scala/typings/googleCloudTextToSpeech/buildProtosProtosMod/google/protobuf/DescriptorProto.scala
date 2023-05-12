@@ -62,7 +62,7 @@ open class DescriptorProto ()
     * Converts this DescriptorProto to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[Any] = js.native
+  def toJSON(): StringDictionary[scala.Any] = js.native
 }
 object DescriptorProto {
   
@@ -94,7 +94,7 @@ object DescriptorProto {
       * Converts this ExtensionRange to JSON.
       * @returns JSON object
       */
-    def toJSON(): StringDictionary[Any] = js.native
+    def toJSON(): StringDictionary[scala.Any] = js.native
   }
   object ExtensionRange {
     
@@ -162,7 +162,7 @@ object DescriptorProto {
       * @returns ExtensionRange
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[Any]): ExtensionRange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ExtensionRange]
+    inline def fromObject(`object`: StringDictionary[scala.Any]): ExtensionRange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ExtensionRange]
     
     /**
       * Gets the default type url for ExtensionRange
@@ -180,8 +180,8 @@ object DescriptorProto {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: ExtensionRange): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
-    inline def toObject(message: ExtensionRange, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: ExtensionRange): StringDictionary[scala.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[scala.Any]]
+    inline def toObject(message: ExtensionRange, options: IConversionOptions): StringDictionary[scala.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[scala.Any]]
     
     /**
       * Verifies an ExtensionRange message.
@@ -189,7 +189,7 @@ object DescriptorProto {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[scala.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a ReservedRange. */
@@ -216,7 +216,7 @@ object DescriptorProto {
       * Converts this ReservedRange to JSON.
       * @returns JSON object
       */
-    def toJSON(): StringDictionary[Any] = js.native
+    def toJSON(): StringDictionary[scala.Any] = js.native
   }
   object ReservedRange {
     
@@ -284,7 +284,7 @@ object DescriptorProto {
       * @returns ReservedRange
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[Any]): ReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ReservedRange]
+    inline def fromObject(`object`: StringDictionary[scala.Any]): ReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ReservedRange]
     
     /**
       * Gets the default type url for ReservedRange
@@ -302,8 +302,8 @@ object DescriptorProto {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: ReservedRange): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
-    inline def toObject(message: ReservedRange, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: ReservedRange): StringDictionary[scala.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[scala.Any]]
+    inline def toObject(message: ReservedRange, options: IConversionOptions): StringDictionary[scala.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[scala.Any]]
     
     /**
       * Verifies a ReservedRange message.
@@ -311,7 +311,7 @@ object DescriptorProto {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[scala.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /**
@@ -374,7 +374,7 @@ object DescriptorProto {
     * @returns DescriptorProto
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[Any]): DescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[DescriptorProto]
+  inline def fromObject(`object`: StringDictionary[scala.Any]): DescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[DescriptorProto]
   
   /**
     * Gets the default type url for DescriptorProto
@@ -392,8 +392,8 @@ object DescriptorProto {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: DescriptorProto): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
-  inline def toObject(message: DescriptorProto, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: DescriptorProto): StringDictionary[scala.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[scala.Any]]
+  inline def toObject(message: DescriptorProto, options: IConversionOptions): StringDictionary[scala.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[scala.Any]]
   
   /**
     * Verifies a DescriptorProto message.
@@ -401,7 +401,7 @@ object DescriptorProto {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[scala.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of an ExtensionRange. */
   trait IExtensionRange extends StObject {

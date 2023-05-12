@@ -68,8 +68,8 @@ object AST {
     */
   @JSImport("highcharts", "AST.allowedAttributes")
   @js.native
-  def allowedAttributes: Any = js.native
-  inline def allowedAttributes_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allowedAttributes")(x.asInstanceOf[js.Any])
+  def allowedAttributes: js.Array[String] = js.native
+  inline def allowedAttributes_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allowedAttributes")(x.asInstanceOf[js.Any])
   
   /**
     * The list of allowed references for referring attributes like `href` and
@@ -78,8 +78,8 @@ object AST {
     */
   @JSImport("highcharts", "AST.allowedReferences")
   @js.native
-  def allowedReferences: Any = js.native
-  inline def allowedReferences_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allowedReferences")(x.asInstanceOf[js.Any])
+  def allowedReferences: js.Array[String] = js.native
+  inline def allowedReferences_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allowedReferences")(x.asInstanceOf[js.Any])
   
   /**
     * The list of allowed SVG or HTML tags, used for sanitizing potentially
@@ -87,8 +87,8 @@ object AST {
     */
   @JSImport("highcharts", "AST.allowedTags")
   @js.native
-  def allowedTags: Any = js.native
-  inline def allowedTags_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allowedTags")(x.asInstanceOf[js.Any])
+  def allowedTags: js.Array[String] = js.native
+  inline def allowedTags_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allowedTags")(x.asInstanceOf[js.Any])
   
   /**
     * Allow all custom SVG and HTML attributes, references and tags (together

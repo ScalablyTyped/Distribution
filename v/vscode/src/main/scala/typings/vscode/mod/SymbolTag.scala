@@ -14,8 +14,8 @@ object SymbolTag extends StObject {
   def apply(value: Double): js.UndefOr[SymbolTag & Double] = js.native
   
   /**
-    * Render a symbol as obsolete, usually using a strike-out.
-    */
+  		 * Render a symbol as obsolete, usually using a strike-out.
+  		 */
   @js.native
   sealed trait Deprecated
     extends StObject

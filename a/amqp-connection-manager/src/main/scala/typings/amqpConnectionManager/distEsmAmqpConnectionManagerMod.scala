@@ -127,6 +127,7 @@ object distEsmAmqpConnectionManagerMod {
       * event listener to the beginning of the listeners array.
       *
       * ```js
+      * import { EventEmitter } from 'node:events';
       * const myEE = new EventEmitter();
       * myEE.on('foo', () => console.log('a'));
       * myEE.prependListener('foo', () => console.log('b'));
@@ -158,6 +159,7 @@ object distEsmAmqpConnectionManagerMod {
       * event listener to the beginning of the listeners array.
       *
       * ```js
+      * import { EventEmitter } from 'node:events';
       * const myEE = new EventEmitter();
       * myEE.once('foo', () => console.log('a'));
       * myEE.prependOnceListener('foo', () => console.log('b'));
@@ -233,6 +235,8 @@ object distEsmAmqpConnectionManagerMod {
       * will not remove them from`emit()` in progress. Subsequent events behave as expected.
       *
       * ```js
+      * import { EventEmitter } from 'node:events';
+      * class MyEmitter extends EventEmitter {}
       * const myEmitter = new MyEmitter();
       *
       * const callbackA = () => {
@@ -273,6 +277,7 @@ object distEsmAmqpConnectionManagerMod {
       * recently added instance. In the example the `once('ping')`listener is removed:
       *
       * ```js
+      * import { EventEmitter } from 'node:events';
       * const ee = new EventEmitter();
       *
       * function pong() {

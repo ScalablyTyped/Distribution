@@ -1,34 +1,31 @@
 package typings.angularForms.anon
 
-import typings.angularForms.angularFormsStrings.disabled_
-import typings.angularForms.angularFormsStrings.formControlName
-import typings.angularForms.angularFormsStrings.ngModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IsDisabled extends StObject {
   
-  var isDisabled: disabled_
+  var isDisabled: `1`
   
-  var model: ngModel
+  var model: `2`
   
-  var name: formControlName
+  var name: `3`
 }
 object IsDisabled {
   
-  inline def apply(): IsDisabled = {
-    val __obj = js.Dynamic.literal(isDisabled = "disabled", model = "ngModel", name = "formControlName")
+  inline def apply(isDisabled: `1`, model: `2`, name: `3`): IsDisabled = {
+    val __obj = js.Dynamic.literal(isDisabled = isDisabled.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsDisabled]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: IsDisabled] (val x: Self) extends AnyVal {
     
-    inline def setIsDisabled(value: disabled_): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
+    inline def setIsDisabled(value: `1`): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
     
-    inline def setModel(value: ngModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: `2`): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    inline def setName(value: formControlName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: `3`): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

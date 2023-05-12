@@ -20,7 +20,9 @@ import typings.delegatedEvents.delegatedEventsStrings.compositionend
 import typings.delegatedEvents.delegatedEventsStrings.compositionstart
 import typings.delegatedEvents.delegatedEventsStrings.compositionupdate
 import typings.delegatedEvents.delegatedEventsStrings.contextmenu
+import typings.delegatedEvents.delegatedEventsStrings.copy
 import typings.delegatedEvents.delegatedEventsStrings.cuechange
+import typings.delegatedEvents.delegatedEventsStrings.cut
 import typings.delegatedEvents.delegatedEventsStrings.dblclick
 import typings.delegatedEvents.delegatedEventsStrings.drag
 import typings.delegatedEvents.delegatedEventsStrings.dragend
@@ -55,6 +57,7 @@ import typings.delegatedEvents.delegatedEventsStrings.mousemove
 import typings.delegatedEvents.delegatedEventsStrings.mouseout
 import typings.delegatedEvents.delegatedEventsStrings.mouseover
 import typings.delegatedEvents.delegatedEventsStrings.mouseup
+import typings.delegatedEvents.delegatedEventsStrings.paste
 import typings.delegatedEvents.delegatedEventsStrings.pause
 import typings.delegatedEvents.delegatedEventsStrings.play
 import typings.delegatedEvents.delegatedEventsStrings.playing
@@ -99,6 +102,7 @@ import typings.delegatedEvents.delegatedEventsStrings.webkitanimationstart
 import typings.delegatedEvents.delegatedEventsStrings.webkittransitionend
 import typings.delegatedEvents.delegatedEventsStrings.wheel
 import typings.std.AnimationEvent
+import typings.std.ClipboardEvent
 import typings.std.CompositionEvent
 import typings.std.DragEvent
 import typings.std.Element
@@ -411,6 +415,26 @@ object mod {
     options: EventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def on_copy(
+    name: copy,
+    selector: String,
+    listener: js.ThisFunction1[
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ ClipboardEvent & CurrentTarget, 
+      Any
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_copy(
+    name: copy,
+    selector: String,
+    listener: js.ThisFunction1[
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ ClipboardEvent & CurrentTarget, 
+      Any
+    ],
+    options: EventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   inline def on_cuechange(
     name: cuechange,
     selector: String,
@@ -420,6 +444,26 @@ object mod {
     name: cuechange,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
+    options: EventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_cut(
+    name: cut,
+    selector: String,
+    listener: js.ThisFunction1[
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ ClipboardEvent & CurrentTarget, 
+      Any
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_cut(
+    name: cut,
+    selector: String,
+    listener: js.ThisFunction1[
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ ClipboardEvent & CurrentTarget, 
+      Any
+    ],
     options: EventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -860,6 +904,26 @@ object mod {
     name: mouseup,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ MouseEvent & CurrentTarget, Any],
+    options: EventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_paste(
+    name: paste,
+    selector: String,
+    listener: js.ThisFunction1[
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ ClipboardEvent & CurrentTarget, 
+      Any
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_paste(
+    name: paste,
+    selector: String,
+    listener: js.ThisFunction1[
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ ClipboardEvent & CurrentTarget, 
+      Any
+    ],
     options: EventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

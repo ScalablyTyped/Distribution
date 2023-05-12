@@ -187,6 +187,8 @@ object sapUiCommonsComboBoxMod {
     def getDisplaySecondaryValues(): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns the DOM element which represents the icon for value help. Could be overwritten in child-classes.
       *
       * @returns The F4-element's DOM reference or `null`
@@ -275,6 +277,8 @@ object sapUiCommonsComboBoxMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Handle sapescape pseudo events on the control
       */
     def onsapescape(/**
@@ -283,6 +287,8 @@ object sapUiCommonsComboBoxMod {
     oEvent: Event): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Handle saphide pseudo events on the control
       */
     def onsaphide(/**
@@ -291,6 +297,8 @@ object sapUiCommonsComboBoxMod {
     oEvent: Event): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Handle sapnextmodifiers pseudo events on the control if in toolbar prevent item navigation if popup is
       * opened.
       */
@@ -300,6 +308,8 @@ object sapUiCommonsComboBoxMod {
     oEvent: Event): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Handle sapshow pseudo events on the control
       */
     def onsapshow(/**

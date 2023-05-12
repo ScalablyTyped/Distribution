@@ -1,7 +1,9 @@
 package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.bson.mod.DeserializeOptions
 import typings.bson.mod.Document
+import typings.bson.mod.SerializeOptions
 import typings.mongodb.anon.Id
 import typings.mongodb.anon.IdInferIdType
 import typings.mongodb.anon.Meta
@@ -36,11 +38,8 @@ import typings.mongodb.mongodbStrings.ecdhCurve
 import typings.mongodb.mongodbStrings.error
 import typings.mongodb.mongodbStrings.exhaust
 import typings.mongodb.mongodbStrings.family
-import typings.mongodb.mongodbStrings.generation
 import typings.mongodb.mongodbStrings.hints
 import typings.mongodb.mongodbStrings.host
-import typings.mongodb.mongodbStrings.hostAddress
-import typings.mongodb.mongodbStrings.id
 import typings.mongodb.mongodbStrings.isServer
 import typings.mongodb.mongodbStrings.key
 import typings.mongodb.mongodbStrings.localAddress
@@ -81,7 +80,7 @@ import typings.node.tlsMod.TLSSocket
 import typings.node.tlsMod.TLSSocketOptions
 import typings.std.Exclude
 import typings.std.Extract
-import typings.std.MapConstructor
+import typings.std.Map
 import typings.std.Omit
 import typings.std.Partial
 import typings.std.Pick
@@ -133,9 +132,13 @@ session]]
 
 inline def MONGO_CLIENT_EVENTS: js.Array[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("MONGO_CLIENT_EVENTS").asInstanceOf[js.Array[Any]]
 
-inline def Map_=(x: MapConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Map")(x.asInstanceOf[js.Any])
-
 type ServerApiVersion = `1`
+
+inline def deserialize(buffer: js.typedarray.Uint8Array): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(buffer.asInstanceOf[js.Any]).asInstanceOf[Document]
+inline def deserialize(buffer: js.typedarray.Uint8Array, options: DeserializeOptions): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Document]
+
+inline def serialize(`object`: Document): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+inline def serialize(`object`: Document, options: SerializeOptions): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
 
 /** NOTE: Conditional type definitions are impossible to translate to Scala.
   * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
@@ -175,7 +178,7 @@ type EventsDescription = Record[String, GenericListener]
 
 type ExplainVerbosityLike = ExplainVerbosity | Boolean
 
-type Filter[TSchema] = Partial[TSchema] | ((/* import warning: importer.ImportType#apply Failed type conversion: {[ Property in mongodb.mongodb.Join<mongodb.mongodb.NestedPaths<mongodb.mongodb.WithId<TSchema>, []>, '.'> ]:? mongodb.mongodb.Condition<mongodb.mongodb.PropertyType<mongodb.mongodb.WithId<TSchema>, Property>>} */ js.Any) & RootFilterOperators[WithId[TSchema]])
+type Filter[TSchema] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof mongodb.mongodb.WithId<TSchema> ]:? mongodb.mongodb.Condition<mongodb.mongodb.WithId<TSchema>[P]>} */ js.Any) & RootFilterOperators[WithId[TSchema]]
 
 /** NOTE: Conditional type definitions are impossible to translate to Scala.
   * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
@@ -185,8 +188,6 @@ type Filter[TSchema] = Partial[TSchema] | ((/* import warning: importer.ImportTy
   }}}
   */
 type FilterOperations[T] = FilterOperators[T]
-
-type FinalizeFunction[TKey, TValue] = js.Function2[/* key */ TKey, /* reducedValue */ TValue, TValue]
 
 /** NOTE: Conditional type definitions are impossible to translate to Scala.
   * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
@@ -212,7 +213,7 @@ type Hint = String | Document
 type IndexDirection = _IndexDirection | scala.Double
 
 type IndexSpecification = OneOrMore[
-String | (js.Tuple2[String, IndexDirection]) | StringDictionary[IndexDirection] | (typings.std.Map[String, IndexDirection])]
+String | (js.Tuple2[String, IndexDirection]) | StringDictionary[IndexDirection] | (Map[String, IndexDirection])]
 
 /** NOTE: Conditional type definitions are impossible to translate to Scala.
   * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
@@ -223,7 +224,7 @@ String | (js.Tuple2[String, IndexDirection]) | StringDictionary[IndexDirection] 
   */
 type InferIdType[TSchema] = typings.bson.mod.ObjectId
 
-type IntegerType = scala.Double | typings.bson.mod.Int32 | typings.bson.mod.Long
+type IntegerType = scala.Double | typings.bson.mod.Int32 | typings.bson.mod.Long | js.BigInt
 
 /** NOTE: Conditional type definitions are impossible to translate to Scala.
   * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
@@ -247,9 +248,7 @@ type KeysOfAType[TSchema, Type] = /* import warning: importer.ImportType#apply F
 
 type KeysOfOtherType[TSchema, Type] = /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof TSchema ]: std.NonNullable<TSchema[key]> extends Type? never : key}[keyof TSchema] */ js.Any
 
-type MapFunction[TSchema] = js.ThisFunction0[/* this */ TSchema, Unit]
-
-type MatchKeysAndValues[TSchema] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ Property in mongodb.mongodb.Join<mongodb.mongodb.NestedPaths<TSchema, []>, '.'> ]:? mongodb.mongodb.PropertyType<TSchema, Property>} */ js.Any) & Document
+type MatchKeysAndValues[TSchema] = Partial[TSchema] & (Record[String, Any])
 
 type MongoClientEvents = (Pick[
 TopologyEvents, 
@@ -259,7 +258,7 @@ connectionPoolCreated | connectionPoolReady | connectionPoolCleared | connection
   * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
   * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
   * TS definition: {{{
-  Depth['length'] extends 8 ? [] : Type extends string | number | boolean | std.Date | std.RegExp | node.buffer.<global>.Buffer | std.Uint8Array | (args : ...any): any | {  _bsontype :string} ? [] : Type extends std.ReadonlyArray<infer ArrayType> ? [] | [number, ...mongodb.mongodb.NestedPaths<ArrayType, [...Depth, 1]>] : Type extends std.Map<string, any> ? [string] : Type extends object ? {[ Key in std.Extract<keyof Type, string> ]: Type[Key] extends Type? [Key] : Type extends Type[Key]? [Key] : Type[Key] extends std.ReadonlyArray<infer ArrayType>? Type extends ArrayType? [Key] : ArrayType extends Type? [Key] : [Key, ...mongodb.mongodb.NestedPaths<Type[Key], [...Depth, 1]>] : [Key, ...mongodb.mongodb.NestedPaths<Type[Key], [...Depth, 1]>] | [Key]}[std.Extract<keyof Type, string>] : []
+  Depth['length'] extends 8 ? [] : Type extends string | number | bigint | boolean | std.Date | std.RegExp | node.buffer.<global>.Buffer | std.Uint8Array | (args : ...any): any | {  _bsontype :string} ? [] : Type extends std.ReadonlyArray<infer ArrayType> ? [] | [number, ...mongodb.mongodb.NestedPaths<ArrayType, [...Depth, 1]>] : Type extends std.Map<string, any> ? [string] : Type extends object ? {[ Key in std.Extract<keyof Type, string> ]: Type[Key] extends Type? [Key] : Type extends Type[Key]? [Key] : Type[Key] extends std.ReadonlyArray<infer ArrayType>? Type extends ArrayType? [Key] : ArrayType extends Type? [Key] : [Key, ...mongodb.mongodb.NestedPaths<Type[Key], [...Depth, 1]>] : [Key, ...mongodb.mongodb.NestedPaths<Type[Key], [...Depth, 1]>] | [Key]}[std.Extract<keyof Type, string>] : []
   }}}
   */
 type NestedPaths[Type, Depth /* <: js.Array[scala.Double] */] = js.Array[Any]
@@ -272,6 +271,16 @@ Type]
 type NonObjectIdLikeDocument = StringDictionary[Any]
 
 type NumericType = IntegerType | typings.bson.mod.Decimal128 | typings.bson.mod.Double
+
+type OIDCRefreshFunction = js.Function2[
+/* info */ IdPServerInfo, 
+/* context */ OIDCCallbackContext, 
+js.Promise[IdPServerResponse]]
+
+type OIDCRequestFunction = js.Function2[
+/* info */ IdPServerInfo, 
+/* context */ OIDCCallbackContext, 
+js.Promise[IdPServerResponse]]
 
 type OneOrMore[T] = T | js.Array[T]
 
@@ -295,17 +304,11 @@ type OptionalUnlessRequiredId[TSchema] = TSchema
 
 type ProfilingLevelOptions = CommandOperationOptions
 
-type Projection[TSchema /* <: Document */] = Document
-
-type ProjectionOperators = Document
-
 type PullAllOperator[TSchema] = (/* import warning: importer.ImportType#apply Failed type conversion: {readonly [ key in mongodb.mongodb.KeysOfAType<TSchema, std.ReadonlyArray<any>> ]:? TSchema[key]} */ js.Any) & (NotAcceptedFields[TSchema, js.Array[Any]]) & StringDictionary[js.Array[Any]]
 
 type PullOperator[TSchema] = (/* import warning: importer.ImportType#apply Failed type conversion: {readonly [ key in mongodb.mongodb.KeysOfAType<TSchema, std.ReadonlyArray<any>> ]:? std.Partial<mongodb.mongodb.Flatten<TSchema[key]>> | mongodb.mongodb.FilterOperations<mongodb.mongodb.Flatten<TSchema[key]>>} */ js.Any) & (NotAcceptedFields[TSchema, js.Array[Any]]) & (StringDictionary[FilterOperators[Any] | Any])
 
 type PushOperator[TSchema] = (/* import warning: importer.ImportType#apply Failed type conversion: {readonly [ key in mongodb.mongodb.KeysOfAType<TSchema, std.ReadonlyArray<any>> ]:? mongodb.mongodb.Flatten<TSchema[key]> | mongodb.mongodb.ArrayOperator<std.Array<mongodb.mongodb.Flatten<TSchema[key]>>>} */ js.Any) & (NotAcceptedFields[TSchema, js.Array[Any]]) & (StringDictionary[ArrayOperator[Any] | Any])
-
-type ReduceFunction[TKey, TValue] = js.Function2[/* key */ TKey, /* values */ js.Array[TValue], TValue]
 
 /** NOTE: Conditional type definitions are impossible to translate to Scala.
   * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
@@ -320,24 +323,19 @@ type RemoveUserOptions = CommandOperationOptions
 
 type ResumeToken = Any
 
-type RunCommandOptions = CommandOperationOptions
-
 type SchemaMember[T, V] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]:? V} */ js.Any) | StringDictionary[V]
-
-type ServerOptions = (Omit[ConnectionPoolOptions, id | generation | hostAddress]) & MonitorOptions
-
-type ServerSelector = js.Function2[
-/* topologyDescription */ TopologyDescription, 
-/* servers */ js.Array[ServerDescription], 
-js.Array[ServerDescription]]
 
 type SetFields[TSchema] = (/* import warning: importer.ImportType#apply Failed type conversion: {readonly [ key in mongodb.mongodb.KeysOfAType<TSchema, std.ReadonlyArray<any> | undefined> ]:? mongodb.mongodb.OptionalId<mongodb.mongodb.Flatten<TSchema[key]>> | mongodb.mongodb.AddToSetOperators<std.Array<mongodb.mongodb.OptionalId<mongodb.mongodb.Flatten<TSchema[key]>>>>} */ js.Any) & (NotAcceptedFields[TSchema, js.UndefOr[js.Array[Any]]]) & (StringDictionary[AddToSetOperators[Any] | Any])
 
 type SetProfilingLevelOptions = CommandOperationOptions
 
-type Sort = String | (Exclude[SortDirection, Meta]) | (js.Array[String | (js.Tuple2[String, SortDirection])]) | StringDictionary[SortDirection] | (typings.std.Map[String, SortDirection]) | (js.Tuple2[String, SortDirection])
+type Sort = String | (Exclude[SortDirection, Meta]) | (js.Array[String | (js.Tuple2[String, SortDirection])]) | StringDictionary[SortDirection] | (Map[String, SortDirection]) | (js.Tuple2[String, SortDirection])
 
 type Stream = Socket | TLSSocket
+
+type StrictFilter[TSchema] = Partial[TSchema] | ((/* import warning: importer.ImportType#apply Failed type conversion: {[ Property in mongodb.mongodb.Join<mongodb.mongodb.NestedPaths<mongodb.mongodb.WithId<TSchema>, []>, '.'> ]:? mongodb.mongodb.Condition<mongodb.mongodb.PropertyType<mongodb.mongodb.WithId<TSchema>, Property>>} */ js.Any) & RootFilterOperators[WithId[TSchema]])
+
+type StrictMatchKeysAndValues[TSchema] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ Property in mongodb.mongodb.Join<mongodb.mongodb.NestedPaths<TSchema, []>, '.'> ]:? mongodb.mongodb.PropertyType<TSchema, Property>} */ js.Any) & Document
 
 type SupportedNodeConnectionOptions = SupportedTLSConnectionOptions & SupportedTLSSocketOptions & SupportedSocketOptions
 

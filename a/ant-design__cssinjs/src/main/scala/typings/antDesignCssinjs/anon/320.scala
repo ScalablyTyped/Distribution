@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MsFilter
+import typings.csstype.mod.Property.Display
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `320` extends StObject {
   
   var value: js.UndefOr[
-    MsFilter | (js.Array[
-      (Extract[js.UndefOr[MsFilter | js.Array[NonNullable[js.UndefOr[MsFilter]]]], String]) | NonNullable[js.UndefOr[MsFilter]]
+    Display | (js.Array[
+      (Extract[js.UndefOr[Display | js.Array[NonNullable[js.UndefOr[Display]]]], String]) | NonNullable[js.UndefOr[Display]]
     ])
   ] = js.native
 }

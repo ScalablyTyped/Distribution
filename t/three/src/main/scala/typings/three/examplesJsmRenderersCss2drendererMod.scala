@@ -6,6 +6,7 @@ import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcThreeMod.Camera
 import typings.three.srcThreeMod.Object3D
 import typings.three.srcThreeMod.Scene
+import typings.three.srcThreeMod.Vector2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,6 +17,8 @@ object examplesJsmRenderersCss2drendererMod {
   @js.native
   open class CSS2DObject protected () extends Object3D[Event] {
     def this(element: HTMLElement) = this()
+    
+    var center: Vector2 = js.native
     
     var element: HTMLElement = js.native
     

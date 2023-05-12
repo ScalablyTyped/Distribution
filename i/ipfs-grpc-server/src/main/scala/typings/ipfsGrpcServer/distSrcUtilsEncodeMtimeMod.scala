@@ -12,5 +12,7 @@ object distSrcUtilsEncodeMtimeMod {
   val ^ : js.Any = js.native
   
   inline def encodeMtime(): Mtime = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeMtime")().asInstanceOf[Mtime]
-  inline def encodeMtime(mtime: typings.ipfsUnixfs.distSrcTypesMod.Mtime): Mtime = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeMtime")(mtime.asInstanceOf[js.Any]).asInstanceOf[Mtime]
+  inline def encodeMtime(
+    mtime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_types.Mtime */ Any
+  ): Mtime = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeMtime")(mtime.asInstanceOf[js.Any]).asInstanceOf[Mtime]
 }

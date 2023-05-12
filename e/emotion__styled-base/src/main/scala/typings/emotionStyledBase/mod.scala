@@ -27,6 +27,7 @@ import typings.emotionStyledBase.emotionStyledBaseStrings.br
 import typings.emotionStyledBase.emotionStyledBaseStrings.button
 import typings.emotionStyledBase.emotionStyledBaseStrings.canvas
 import typings.emotionStyledBase.emotionStyledBaseStrings.caption
+import typings.emotionStyledBase.emotionStyledBaseStrings.center
 import typings.emotionStyledBase.emotionStyledBaseStrings.circle
 import typings.emotionStyledBase.emotionStyledBaseStrings.cite
 import typings.emotionStyledBase.emotionStyledBaseStrings.clipPath
@@ -225,7 +226,9 @@ import typings.react.mod.OutputHTMLAttributes
 import typings.react.mod.ParamHTMLAttributes
 import typings.react.mod.ProgressHTMLAttributes
 import typings.react.mod.QuoteHTMLAttributes
+import typings.react.mod.SVGLineElementAttributes
 import typings.react.mod.SVGProps
+import typings.react.mod.SVGTextElementAttributes
 import typings.react.mod.ScriptHTMLAttributes
 import typings.react.mod.SelectHTMLAttributes
 import typings.react.mod.SlotHTMLAttributes
@@ -417,6 +420,8 @@ object mod extends Shortcut {
     def apply[ExtraProps](tag: canvas, options: StyledOptions): CreateStyledComponentIntrinsic[canvas, ExtraProps, Theme] = js.native
     def apply[ExtraProps](tag: caption): CreateStyledComponentIntrinsic[caption, ExtraProps, Theme] = js.native
     def apply[ExtraProps](tag: caption, options: StyledOptions): CreateStyledComponentIntrinsic[caption, ExtraProps, Theme] = js.native
+    def apply[ExtraProps](tag: center): CreateStyledComponentIntrinsic[center, ExtraProps, Theme] = js.native
+    def apply[ExtraProps](tag: center, options: StyledOptions): CreateStyledComponentIntrinsic[center, ExtraProps, Theme] = js.native
     def apply[ExtraProps](tag: circle): CreateStyledComponentIntrinsic[circle, ExtraProps, Theme] = js.native
     def apply[ExtraProps](tag: circle, options: StyledOptions): CreateStyledComponentIntrinsic[circle, ExtraProps, Theme] = js.native
     def apply[ExtraProps](tag: cite): CreateStyledComponentIntrinsic[cite, ExtraProps, Theme] = js.native
@@ -754,7 +759,7 @@ object mod extends Shortcut {
   
   type CreateStyledComponentExtrinsic[Tag /* <: ComponentType[Any] */, ExtraProps, Theme /* <: js.Object */] = CreateStyledComponentBase[PropsOf[Tag], ExtraProps, Theme]
   
-  type CreateStyledComponentIntrinsic[Tag /* <: /* keyof @emotion/styled-base.@emotion/styled-base.JSXInEl */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.emotionStyledBase.emotionStyledBaseStrings.a, typings.emotionStyledBase.emotionStyledBaseStrings.abbr, typings.emotionStyledBase.emotionStyledBaseStrings.address */ Any */, ExtraProps, Theme /* <: js.Object */] = CreateStyledComponentBase[
+  type CreateStyledComponentIntrinsic[Tag /* <: /* keyof @emotion/styled-base.@emotion/styled-base.JSXInEl */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.emotionStyledBase.emotionStyledBaseStrings.a, typings.emotionStyledBase.emotionStyledBaseStrings.abbr, typings.emotionStyledBase.emotionStyledBaseStrings.address */ Any */, ExtraProps, Theme /* <: js.Object */] = CreateStyledComponentBase[
     /* import warning: importer.ImportType#apply Failed type conversion: @emotion/styled-base.@emotion/styled-base.JSXInEl[Tag] */ js.Any, 
     ExtraProps, 
     Theme
@@ -852,6 +857,8 @@ object mod extends Shortcut {
       ] = js.native
     @JSName("withComponent")
     def withComponent_caption(tag: caption): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+    @JSName("withComponent")
+    def withComponent_center(tag: center): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
     @JSName("withComponent")
     def withComponent_circle(tag: circle): StyledComponent[SVGProps[SVGCircleElement], StyleProps, Theme] = js.native
     @JSName("withComponent")
@@ -1105,7 +1112,7 @@ object mod extends Shortcut {
     @JSName("withComponent")
     def withComponent_li(tag: li): StyledComponent[DetailedHTMLProps[LiHTMLAttributes[HTMLLIElement], HTMLLIElement], StyleProps, Theme] = js.native
     @JSName("withComponent")
-    def withComponent_line(tag: line): StyledComponent[SVGProps[SVGLineElement], StyleProps, Theme] = js.native
+    def withComponent_line(tag: line): StyledComponent[SVGLineElementAttributes[SVGLineElement], StyleProps, Theme] = js.native
     @JSName("withComponent")
     def withComponent_linearGradient(tag: linearGradient): StyledComponent[SVGProps[SVGLinearGradientElement], StyleProps, Theme] = js.native
     @JSName("withComponent")
@@ -1315,7 +1322,7 @@ object mod extends Shortcut {
         Theme
       ] = js.native
     @JSName("withComponent")
-    def withComponent_text(tag: text): StyledComponent[SVGProps[SVGTextElement], StyleProps, Theme] = js.native
+    def withComponent_text(tag: text): StyledComponent[SVGTextElementAttributes[SVGTextElement], StyleProps, Theme] = js.native
     @JSName("withComponent")
     def withComponent_textPath(tag: textPath): StyledComponent[SVGProps[SVGTextPathElement], StyleProps, Theme] = js.native
     @JSName("withComponent")

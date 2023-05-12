@@ -12,7 +12,7 @@ open class Input protected () extends Component[InputHTMLAttributesminmax, Any] 
   def this(props: HTMLAttributesidclassName & InputHTMLAttributesminmax) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: HTMLAttributesidclassName & InputHTMLAttributesminmax, context: Any) = this()
 }

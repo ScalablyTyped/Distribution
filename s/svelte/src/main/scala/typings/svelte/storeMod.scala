@@ -44,6 +44,8 @@ object storeMod {
   inline def readable[T](value: T, start: StartStopNotifier[T]): Readable_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("readable")(value.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Readable_[T]]
   inline def readable[T](value: Unit, start: StartStopNotifier[T]): Readable_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("readable")(value.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Readable_[T]]
   
+  inline def readonly[T](store: Readable_[T]): Readable_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("readonly")(store.asInstanceOf[js.Any]).asInstanceOf[Readable_[T]]
+  
   inline def writable[T](): Writable_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("writable")().asInstanceOf[Writable_[T]]
   inline def writable[T](value: T): Writable_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("writable")(value.asInstanceOf[js.Any]).asInstanceOf[Writable_[T]]
   inline def writable[T](value: T, start: StartStopNotifier[T]): Writable_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("writable")(value.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Writable_[T]]

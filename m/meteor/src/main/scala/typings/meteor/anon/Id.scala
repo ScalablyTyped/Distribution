@@ -6,20 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Id extends StObject {
   
-  var _id: js.UndefOr[Any] = js.undefined
+  var id: String
 }
 object Id {
   
-  inline def apply(): Id = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(id: String): Id = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Id]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
     
-    inline def set_id(value: Any): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
-    
-    inline def set_idUndefined: Self = StObject.set(x, "_id", js.undefined)
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

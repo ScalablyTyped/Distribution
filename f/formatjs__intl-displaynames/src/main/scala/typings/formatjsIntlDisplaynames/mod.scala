@@ -4,8 +4,11 @@ import typings.formatjsEcma402Abstract.typesDisplaynamesMod.DisplayNamesData
 import typings.formatjsEcma402Abstract.typesDisplaynamesMod.DisplayNamesLocaleData
 import typings.formatjsIntlDisplaynames.anon.PickDisplayNamesOptionslo
 import typings.formatjsIntlDisplaynames.formatjsIntlDisplaynamesStrings.`best fit`
+import typings.formatjsIntlDisplaynames.formatjsIntlDisplaynamesStrings.calendar
 import typings.formatjsIntlDisplaynames.formatjsIntlDisplaynamesStrings.code
 import typings.formatjsIntlDisplaynames.formatjsIntlDisplaynamesStrings.currency
+import typings.formatjsIntlDisplaynames.formatjsIntlDisplaynamesStrings.dateTimeField
+import typings.formatjsIntlDisplaynames.formatjsIntlDisplaynamesStrings.dialect
 import typings.formatjsIntlDisplaynames.formatjsIntlDisplaynamesStrings.language
 import typings.formatjsIntlDisplaynames.formatjsIntlDisplaynamesStrings.long
 import typings.formatjsIntlDisplaynames.formatjsIntlDisplaynamesStrings.lookup
@@ -14,6 +17,7 @@ import typings.formatjsIntlDisplaynames.formatjsIntlDisplaynamesStrings.none
 import typings.formatjsIntlDisplaynames.formatjsIntlDisplaynamesStrings.region
 import typings.formatjsIntlDisplaynames.formatjsIntlDisplaynamesStrings.script
 import typings.formatjsIntlDisplaynames.formatjsIntlDisplaynamesStrings.short
+import typings.formatjsIntlDisplaynames.formatjsIntlDisplaynamesStrings.standard
 import typings.std.NonNullable
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -80,15 +84,17 @@ object mod {
     
     var fallback: js.UndefOr[code | none] = js.undefined
     
+    var languageDisplay: js.UndefOr[dialect | standard] = js.undefined
+    
     var localeMatcher: js.UndefOr[lookup | (`best fit`)] = js.undefined
     
     var style: js.UndefOr[narrow | short | long] = js.undefined
     
-    var `type`: language | region | script | currency
+    var `type`: language | region | script | currency | calendar | dateTimeField
   }
   object DisplayNamesOptions {
     
-    inline def apply(`type`: language | region | script | currency): DisplayNamesOptions = {
+    inline def apply(`type`: language | region | script | currency | calendar | dateTimeField): DisplayNamesOptions = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DisplayNamesOptions]
@@ -101,6 +107,10 @@ object mod {
       
       inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
+      inline def setLanguageDisplay(value: dialect | standard): Self = StObject.set(x, "languageDisplay", value.asInstanceOf[js.Any])
+      
+      inline def setLanguageDisplayUndefined: Self = StObject.set(x, "languageDisplay", js.undefined)
+      
       inline def setLocaleMatcher(value: lookup | (`best fit`)): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
       
       inline def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
@@ -109,7 +119,7 @@ object mod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setType(value: language | region | script | currency): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: language | region | script | currency | calendar | dateTimeField): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -117,15 +127,20 @@ object mod {
     
     var fallback: NonNullable[js.UndefOr[code | none]]
     
+    var languageDisplay: NonNullable[js.UndefOr[dialect | standard]]
+    
     var locale: String
     
     var style: NonNullable[js.UndefOr[narrow | short | long]]
     
-    var `type`: NonNullable[language | region | script | currency]
+    var `type`: NonNullable[language | region | script | currency | calendar | dateTimeField]
   }
   object DisplayNamesResolvedOptions {
     
-    inline def apply(locale: String, `type`: NonNullable[language | region | script | currency]): DisplayNamesResolvedOptions = {
+    inline def apply(
+      locale: String,
+      `type`: NonNullable[language | region | script | currency | calendar | dateTimeField]
+    ): DisplayNamesResolvedOptions = {
       val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DisplayNamesResolvedOptions]
@@ -138,13 +153,17 @@ object mod {
       
       inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
+      inline def setLanguageDisplay(value: NonNullable[js.UndefOr[dialect | standard]]): Self = StObject.set(x, "languageDisplay", value.asInstanceOf[js.Any])
+      
+      inline def setLanguageDisplayUndefined: Self = StObject.set(x, "languageDisplay", js.undefined)
+      
       inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
       inline def setStyle(value: NonNullable[js.UndefOr[narrow | short | long]]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setType(value: NonNullable[language | region | script | currency]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: NonNullable[language | region | script | currency | calendar | dateTimeField]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

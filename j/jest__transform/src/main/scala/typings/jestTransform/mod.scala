@@ -35,6 +35,12 @@ object mod {
   inline def handlePotentialSyntaxError(e: ErrorWithCodeFrame): ErrorWithCodeFrame = ^.asInstanceOf[js.Dynamic].applyDynamic("handlePotentialSyntaxError")(e.asInstanceOf[js.Any]).asInstanceOf[ErrorWithCodeFrame]
   
   inline def shouldInstrument(filename: String, options: ShouldInstrumentOptions, config: ProjectConfig): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldInstrument")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def shouldInstrument(
+    filename: String,
+    options: ShouldInstrumentOptions,
+    config: ProjectConfig,
+    loadedFilenames: js.Array[String]
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldInstrument")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], config.asInstanceOf[js.Any], loadedFilenames.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   trait AsyncTransformer[TransformerConfig]
     extends StObject
@@ -289,6 +295,8 @@ object mod {
     
     /* private */ var _buildCacheKeyFromFileInfo: Any = js.native
     
+    /* private */ var _buildTransformCacheKey: Any = js.native
+    
     /* private */ var _buildTransformResult: Any = js.native
     
     /* private */ val _cache: Any = js.native
@@ -308,6 +316,8 @@ object mod {
     /* private */ var _getFileCachePathAsync: Any = js.native
     
     /* private */ var _getTransformPath: Any = js.native
+    
+    /* private */ var _getTransformPatternAndPath: Any = js.native
     
     /* private */ var _getTransformer: Any = js.native
     
@@ -604,18 +614,18 @@ object mod {
     }
   }
   
-  type TransformerCreator[X /* <: Transformer2[TransformerConfig] */, TransformerConfig] = js.Function1[/* transformerConfig */ js.UndefOr[TransformerConfig], X]
+  type TransformerCreator[X /* <: Transformer2[TransformerConfig] */, TransformerConfig] = js.Function1[/* transformerConfig */ js.UndefOr[TransformerConfig], X | js.Promise[X]]
   
   trait TransformerFactory[X /* <: Transformer2[Any] */] extends StObject {
     
-    def createTransformer(): X
-    def createTransformer(transformerConfig: Any): X
+    def createTransformer(): X | js.Promise[X]
+    def createTransformer(transformerConfig: Any): X | js.Promise[X]
     @JSName("createTransformer")
     var createTransformer_Original: TransformerCreator[X, Any]
   }
   object TransformerFactory {
     
-    inline def apply[X /* <: Transformer2[Any] */](createTransformer: /* transformerConfig */ js.UndefOr[Any] => X): TransformerFactory[X] = {
+    inline def apply[X /* <: Transformer2[Any] */](createTransformer: /* transformerConfig */ js.UndefOr[Any] => X | js.Promise[X]): TransformerFactory[X] = {
       val __obj = js.Dynamic.literal(createTransformer = js.Any.fromFunction1(createTransformer))
       __obj.asInstanceOf[TransformerFactory[X]]
     }
@@ -623,7 +633,7 @@ object mod {
     @scala.inline
     implicit open class MutableBuilder[Self <: TransformerFactory[?], X /* <: Transformer2[Any] */] (val x: Self & TransformerFactory[X]) extends AnyVal {
       
-      inline def setCreateTransformer(value: /* transformerConfig */ js.UndefOr[Any] => X): Self = StObject.set(x, "createTransformer", js.Any.fromFunction1(value))
+      inline def setCreateTransformer(value: /* transformerConfig */ js.UndefOr[Any] => X | js.Promise[X]): Self = StObject.set(x, "createTransformer", js.Any.fromFunction1(value))
     }
   }
 }

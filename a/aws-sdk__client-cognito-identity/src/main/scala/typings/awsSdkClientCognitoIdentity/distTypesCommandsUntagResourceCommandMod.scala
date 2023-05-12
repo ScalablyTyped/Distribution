@@ -28,8 +28,14 @@ object distTypesCommandsUntagResourceCommandMod {
           Any, 
           Any
         ] {
+    /**
+      * @public
+      */
     def this(input: UntagResourceCommandInput) = this()
     
+    /**
+      * @internal
+      */
     /* private */ var deserialize: Any = js.native
     
     /**
@@ -45,6 +51,9 @@ object distTypesCommandsUntagResourceCommandMod {
       options: HttpHandlerOptions
     ): Handler[UntagResourceCommandInput, UntagResourceCommandOutput] = js.native
     
+    /**
+      * @internal
+      */
     /* private */ var serialize: Any = js.native
   }
   /* static members */

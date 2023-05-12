@@ -4,8 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../binder/anim-binder.js').AnimBinder} AnimBinder */
-/** @typedef {import('./anim-clip.js').AnimClip} AnimClip */
 /**
   * AnimEvaluator blends multiple sets of animation clips together.
   *
@@ -18,7 +16,8 @@ open class AnimEvaluator protected ()
   /**
     * Create a new animation evaluator.
     *
-    * @param {AnimBinder} binder - interface resolves curve paths to instances of {@link AnimTarget}.
+    * @param {import('../binder/anim-binder.js').AnimBinder} binder - interface resolves curve
+    * paths to instances of {@link AnimTarget}.
     */
   def this(binder: typings.playcanvas.mod.AnimBinder) = this()
 }

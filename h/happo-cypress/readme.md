@@ -1,7 +1,7 @@
 
 # Scala.js typings for happo-cypress
 
-Typings are for version 3.0
+Typings are for version 4.1
 
 ## Library description:
 A Happo integration with Cypress.io

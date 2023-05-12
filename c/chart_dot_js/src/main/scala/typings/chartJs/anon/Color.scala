@@ -3,10 +3,10 @@ package typings.chartJs.anon
 import typings.chartJs.chartJsStrings.center
 import typings.chartJs.chartJsStrings.end
 import typings.chartJs.chartJsStrings.start
-import typings.chartJs.mod.ScriptableAndScriptableOptions
-import typings.chartJs.mod.ScriptableChartContext
-import typings.chartJs.typesBasicMod.AnyObject
-import typings.chartJs.typesGeometricMod.ChartArea
+import typings.chartJs.distTypesBasicMod.AnyObject
+import typings.chartJs.distTypesGeometricMod.ChartArea
+import typings.chartJs.distTypesIndexMod.ScriptableAndScriptableOptions
+import typings.chartJs.distTypesIndexMod.ScriptableChartContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ trait Color extends StObject {
     * Color of title
     * @see Defaults.color
     */
-  var color: typings.chartJs.typesColorMod.Color
+  var color: typings.chartJs.distTypesColorMod.Color
   
   /**
     * Is the legend title displayed.
@@ -42,7 +42,7 @@ trait Color extends StObject {
 object Color {
   
   inline def apply(
-    color: typings.chartJs.typesColorMod.Color,
+    color: typings.chartJs.distTypesColorMod.Color,
     display: Boolean,
     font: ScriptableAndScriptableOptions[PartialFontSpec, ScriptableChartContext],
     position: center | start | end,
@@ -55,7 +55,7 @@ object Color {
   @scala.inline
   implicit open class MutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
     
-    inline def setColor(value: typings.chartJs.typesColorMod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: typings.chartJs.distTypesColorMod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     

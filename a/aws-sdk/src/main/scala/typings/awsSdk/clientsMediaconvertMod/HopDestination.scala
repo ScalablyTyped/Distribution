@@ -17,7 +17,7 @@ trait HopDestination extends StObject {
   var Queue: js.UndefOr[string] = js.undefined
   
   /**
-    * Required for setting up a job to use queue hopping. Minimum wait time in minutes until the job can hop to the destination queue. Valid range is 1 to 1440 minutes, inclusive.
+    * Required for setting up a job to use queue hopping. Minimum wait time in minutes until the job can hop to the destination queue. Valid range is 1 to 4320 minutes, inclusive.
     */
   var WaitMinutes: js.UndefOr[integer] = js.undefined
 }

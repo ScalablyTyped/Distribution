@@ -5,6 +5,8 @@ import typings.openui5.sapMLibraryMod.PopinDisplay
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreElementMod.ElementSettings
 import typings.openui5.sapUiCoreLibraryMod.CSSSize
+import typings.openui5.sapUiCoreLibraryMod.IColumnHeaderMenu
+import typings.openui5.sapUiCoreLibraryMod.ID
 import typings.openui5.sapUiCoreLibraryMod.Priority
 import typings.openui5.sapUiCoreLibraryMod.SortOrder
 import typings.openui5.sapUiCoreLibraryMod.TextAlign
@@ -130,6 +132,7 @@ object sapMColumnMod {
     
     /**
       * @SINCE 1.20.4
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Clears the last value of the column if mergeDuplicates property is true
       */
@@ -168,6 +171,8 @@ object sapMColumnMod {
     def getAutoPopinWidth(): float = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns CSS alignment according to column hAlign setting or given parameter for Begin/End values checks
       * the locale settings
       *
@@ -220,6 +225,14 @@ object sapMColumnMod {
     def getHeader(): typings.openui5.sapUiCoreControlMod.default = js.native
     
     /**
+      * @SINCE 1.98.0
+      *
+      * ID of the element which is the current target of the association {@link #getHeaderMenu headerMenu}, or
+      * `null`.
+      */
+    def getHeaderMenu(): ID = js.native
+    
+    /**
       * @SINCE 1.76
       *
       * Gets current value of property {@link #getImportance importance}.
@@ -237,11 +250,15 @@ object sapMColumnMod {
     def getImportance(): Priority | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Priority * / any */ String) = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Gets the rendering index of the column
       */
     def getIndex(): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Gets the initial order of the column
       *
       * @returns initial order of the column
@@ -250,6 +267,7 @@ object sapMColumnMod {
     
     /**
       * @SINCE 1.16
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Gets the last value of the column
       */
@@ -266,8 +284,8 @@ object sapMColumnMod {
       * **Note:** Merging only happens when rendering the `sap.m.Table` control, subsequent changes on the cell
       * or item do not have any effect on the merged state of the cells, therefore this feature should not be
       * used together with two-way binding. This property is ignored if any column is configured to be shown
-      * as a pop-in. Merging is not supported if the `items` aggregation of the `sap.m.Table` control is bound
-      * to an {@link sap.ui.model.odata.v4.ODataModel OData V4 model}.
+      * as a pop-in. Don't set this property for cells for which the content provides a user interaction, such
+      * as `sap.m.Link`.
       *
       * Default value is `false`.
       *
@@ -308,6 +326,8 @@ object sapMColumnMod {
     def getMinScreenWidth(): String = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Gets the order of the column
       *
       * @returns nOrder order of the column
@@ -407,17 +427,22 @@ object sapMColumnMod {
     def getWidth(): CSSSize = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Determines whether the column will be hidden via media queries or not
       */
     def isHidden(): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Determines whether the column will be shown as pop-in or not
       */
     def isPopin(): Unit = js.native
     
     /**
       * @SINCE 1.16
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Gets called from the Table when the all items are removed
       */
@@ -467,6 +492,8 @@ object sapMColumnMod {
     bDemandPopin: Boolean): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Display or hide the column from given table This does not set the visibility property of the column
       */
     def setDisplay(/**
@@ -529,6 +556,28 @@ object sapMColumnMod {
       */
     oHeader: typings.openui5.sapUiCoreControlMod.default): this.type = js.native
     
+    def setHeaderMenu(
+      /**
+      * ID of an element which becomes the new target of this headerMenu association; alternatively, an element
+      * instance may be given
+      */
+    oHeaderMenu: IColumnHeaderMenu
+    ): this.type = js.native
+    /**
+      * @SINCE 1.98.0
+      *
+      * Sets the associated {@link #getHeaderMenu headerMenu}.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setHeaderMenu(
+      /**
+      * ID of an element which becomes the new target of this headerMenu association; alternatively, an element
+      * instance may be given
+      */
+    oHeaderMenu: ID
+    ): this.type = js.native
+    
     /**
       * @SINCE 1.76
       *
@@ -559,6 +608,8 @@ object sapMColumnMod {
     sImportance: Priority): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets the visible column index Negative index values can be used to clear
       */
     def setIndex(/**
@@ -567,6 +618,8 @@ object sapMColumnMod {
     nIndex: int): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets the initial order of the column
       */
     def setInitialOrder(/**
@@ -576,6 +629,7 @@ object sapMColumnMod {
     
     /**
       * @SINCE 1.16
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Sets the last value of the column if mergeDuplicates property is true
       */
@@ -595,8 +649,8 @@ object sapMColumnMod {
       * **Note:** Merging only happens when rendering the `sap.m.Table` control, subsequent changes on the cell
       * or item do not have any effect on the merged state of the cells, therefore this feature should not be
       * used together with two-way binding. This property is ignored if any column is configured to be shown
-      * as a pop-in. Merging is not supported if the `items` aggregation of the `sap.m.Table` control is bound
-      * to an {@link sap.ui.model.odata.v4.ODataModel OData V4 model}.
+      * as a pop-in. Don't set this property for cells for which the content provides a user interaction, such
+      * as `sap.m.Link`.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -655,6 +709,8 @@ object sapMColumnMod {
     sMinScreenWidth: String): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets the order of the column Does not do the visual effect Table should be invalidate to re-render
       */
     def setOrder(/**
@@ -868,6 +924,14 @@ object sapMColumnMod {
     var header: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
     
     /**
+      * @SINCE 1.98.0
+      *
+      * Provides a menu that is used by the column. The given menu has to follow the same pattern as the `sap.ui.core.IColumnHeaderMenu`
+      * interface.
+      */
+    var headerMenu: js.UndefOr[IColumnHeaderMenu | String] = js.undefined
+    
+    /**
       * @SINCE 1.76
       *
       * Defines the column importance.
@@ -889,8 +953,8 @@ object sapMColumnMod {
       * **Note:** Merging only happens when rendering the `sap.m.Table` control, subsequent changes on the cell
       * or item do not have any effect on the merged state of the cells, therefore this feature should not be
       * used together with two-way binding. This property is ignored if any column is configured to be shown
-      * as a pop-in. Merging is not supported if the `items` aggregation of the `sap.m.Table` control is bound
-      * to an {@link sap.ui.model.odata.v4.ODataModel OData V4 model}.
+      * as a pop-in. Don't set this property for cells for which the content provides a user interaction, such
+      * as `sap.m.Link`.
       */
     var mergeDuplicates: js.UndefOr[
         Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
@@ -1013,6 +1077,10 @@ object sapMColumnMod {
       inline def setHAlignUndefined: Self = StObject.set(x, "hAlign", js.undefined)
       
       inline def setHeader(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderMenu(value: IColumnHeaderMenu | String): Self = StObject.set(x, "headerMenu", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderMenuUndefined: Self = StObject.set(x, "headerMenu", js.undefined)
       
       inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       

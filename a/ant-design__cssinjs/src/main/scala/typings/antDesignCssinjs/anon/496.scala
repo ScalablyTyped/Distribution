@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.WebkitLineClamp
+import typings.csstype.mod.Property.MsContentZoomSnapPoints
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `496` extends StObject {
   
   var value: js.UndefOr[
-    WebkitLineClamp | (js.Array[
+    MsContentZoomSnapPoints | (js.Array[
       (Extract[
-        js.UndefOr[WebkitLineClamp | js.Array[NonNullable[js.UndefOr[WebkitLineClamp]]]], 
+        js.UndefOr[
+          MsContentZoomSnapPoints | js.Array[NonNullable[js.UndefOr[MsContentZoomSnapPoints]]]
+        ], 
         String
-      ]) | NonNullable[js.UndefOr[WebkitLineClamp]]
+      ]) | NonNullable[js.UndefOr[MsContentZoomSnapPoints]]
     ])
   ] = js.native
 }

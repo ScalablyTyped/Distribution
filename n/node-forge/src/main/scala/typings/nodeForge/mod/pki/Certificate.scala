@@ -1,10 +1,13 @@
 package typings.nodeForge.mod.pki
 
 import typings.nodeForge.anon.AddField
+import typings.nodeForge.anon.AlgorithmOid
 import typings.nodeForge.anon.Id
 import typings.nodeForge.anon.Name
 import typings.nodeForge.anon.NotAfter
+import typings.nodeForge.mod.asn1.Asn1
 import typings.nodeForge.mod.md.MessageDigest
+import typings.nodeForge.mod.util.ByteStringBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,6 +16,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Certificate extends StObject {
   
   var extensions: js.Array[Any] = js.native
+  
+  /**
+    * Generates the subjectKeyIdentifier for this certificate as byte buffer.
+    *
+    * @return the subjectKeyIdentifier for this certificate as byte buffer.
+    */
+  def generateSubjectKeyIdentifier(): ByteStringBuffer = js.native
   
   /**
     * Gets an extension by its name or id.
@@ -51,7 +61,7 @@ trait Certificate extends StObject {
   
   var issuer: AddField = js.native
   
-  var md: Any = js.native
+  var md: MessageDigest = js.native
   
   var privateKey: PrivateKey = js.native
   
@@ -84,7 +94,7 @@ trait Certificate extends StObject {
   def setSubject(attrs: js.Array[CertificateField]): Unit = js.native
   def setSubject(attrs: js.Array[CertificateField], uniqueId: String): Unit = js.native
   
-  var siginfo: Any = js.native
+  var siginfo: AlgorithmOid = js.native
   
   /**
     * Signs this certificate using the given private key.
@@ -97,7 +107,13 @@ trait Certificate extends StObject {
   
   var signature: Any = js.native
   
+  var signatureOid: String = js.native
+  
+  var signatureParameters: Any = js.native
+  
   var subject: AddField = js.native
+  
+  var tbsCertificate: Asn1 = js.native
   
   var validity: NotAfter = js.native
   
@@ -110,6 +126,15 @@ trait Certificate extends StObject {
     * @return true if verified, false if not.
     */
   def verify(child: Certificate): Boolean = js.native
+  
+  /**
+    * Verifies the subjectKeyIdentifier extension value for this certificate
+    * against its public key. If no extension is found, false will be
+    * returned.
+    *
+    * @return true if verified, false if not.
+    */
+  def verifySubjectKeyIdentifier(): Boolean = js.native
   
   var version: Double = js.native
 }

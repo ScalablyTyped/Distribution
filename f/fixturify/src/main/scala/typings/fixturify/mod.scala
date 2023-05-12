@@ -1,7 +1,6 @@
 package typings.fixturify
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.minimatch.mod.IMinimatch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,15 +58,31 @@ object mod {
     
     var directories: js.UndefOr[Boolean] = js.undefined
     
-    var exclude: js.UndefOr[js.Array[IMinimatch | String]] = js.undefined
+    var exclude: js.UndefOr[
+        js.Array[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IMinimatch */ Any) | String
+        ]
+      ] = js.undefined
     
-    var globs: js.UndefOr[js.Array[String | IMinimatch]] = js.undefined
+    var globs: js.UndefOr[
+        js.Array[
+          String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IMinimatch */ Any)
+        ]
+      ] = js.undefined
     
-    var ignore: js.UndefOr[js.Array[String | IMinimatch]] = js.undefined
+    var ignore: js.UndefOr[
+        js.Array[
+          String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IMinimatch */ Any)
+        ]
+      ] = js.undefined
     
     var ignoreEmptyDirs: js.UndefOr[Boolean] = js.undefined
     
-    var include: js.UndefOr[js.Array[IMinimatch | String]] = js.undefined
+    var include: js.UndefOr[
+        js.Array[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IMinimatch */ Any) | String
+        ]
+      ] = js.undefined
   }
   object Options {
     
@@ -83,19 +98,35 @@ object mod {
       
       inline def setDirectoriesUndefined: Self = StObject.set(x, "directories", js.undefined)
       
-      inline def setExclude(value: js.Array[IMinimatch | String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(
+        value: js.Array[
+              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IMinimatch */ Any) | String
+            ]
+      ): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: (IMinimatch | String)*): Self = StObject.set(x, "exclude", js.Array(value*))
+      inline def setExcludeVarargs(
+        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IMinimatch */ Any) | String)*
+      ): Self = StObject.set(x, "exclude", js.Array(value*))
       
-      inline def setGlobs(value: js.Array[String | IMinimatch]): Self = StObject.set(x, "globs", value.asInstanceOf[js.Any])
+      inline def setGlobs(
+        value: js.Array[
+              String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IMinimatch */ Any)
+            ]
+      ): Self = StObject.set(x, "globs", value.asInstanceOf[js.Any])
       
       inline def setGlobsUndefined: Self = StObject.set(x, "globs", js.undefined)
       
-      inline def setGlobsVarargs(value: (String | IMinimatch)*): Self = StObject.set(x, "globs", js.Array(value*))
+      inline def setGlobsVarargs(
+        value: (String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IMinimatch */ Any))*
+      ): Self = StObject.set(x, "globs", js.Array(value*))
       
-      inline def setIgnore(value: js.Array[String | IMinimatch]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(
+        value: js.Array[
+              String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IMinimatch */ Any)
+            ]
+      ): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
       inline def setIgnoreEmptyDirs(value: Boolean): Self = StObject.set(x, "ignoreEmptyDirs", value.asInstanceOf[js.Any])
       
@@ -103,13 +134,21 @@ object mod {
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setIgnoreVarargs(value: (String | IMinimatch)*): Self = StObject.set(x, "ignore", js.Array(value*))
+      inline def setIgnoreVarargs(
+        value: (String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IMinimatch */ Any))*
+      ): Self = StObject.set(x, "ignore", js.Array(value*))
       
-      inline def setInclude(value: js.Array[IMinimatch | String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(
+        value: js.Array[
+              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IMinimatch */ Any) | String
+            ]
+      ): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
       inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      inline def setIncludeVarargs(value: (IMinimatch | String)*): Self = StObject.set(x, "include", js.Array(value*))
+      inline def setIncludeVarargs(
+        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IMinimatch */ Any) | String)*
+      ): Self = StObject.set(x, "include", js.Array(value*))
     }
   }
 }

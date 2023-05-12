@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.LightingColor
+import typings.csstype.mod.Property.AnimationPlayState
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `159` extends StObject {
   
   var value: js.UndefOr[
-    LightingColor | (js.Array[
+    AnimationPlayState | (js.Array[
       (Extract[
-        js.UndefOr[LightingColor | js.Array[NonNullable[js.UndefOr[LightingColor]]]], 
+        js.UndefOr[AnimationPlayState | js.Array[NonNullable[js.UndefOr[AnimationPlayState]]]], 
         String
-      ]) | NonNullable[js.UndefOr[LightingColor]]
+      ]) | NonNullable[js.UndefOr[AnimationPlayState]]
     ])
   ] = js.native
 }

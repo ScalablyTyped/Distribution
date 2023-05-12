@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "lambda-tester"
-version := "3.6-dt-20211202Z-f1fcc5"
+version := "3.6-dt-20230124Z-e3928c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "aws-lambda" % "8.10-dt-20221018Z-b9cdef",
-  "org.scalablytyped" %%% "std" % "4.9-ecb5eb")
+  "org.scalablytyped" %%% "aws-lambda" % "8.10-dt-20230503Z-bf5d0d",
+  "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

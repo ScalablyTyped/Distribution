@@ -10,7 +10,7 @@ open class Chip protected () extends _MDLComponent[ChipProps] {
   def this(props: ChipProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: ChipProps, context: Any) = this()
 }

@@ -47,6 +47,11 @@ trait DatasetImportJob extends StObject {
   var lastUpdatedDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
+    * Whether the job publishes metrics to Amazon S3 for a metric attribution.
+    */
+  var publishAttributionMetricsToS3: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * The ARN of the IAM role that has permissions to read from the Amazon S3 data source.
     */
   var roleArn: js.UndefOr[Arn] = js.undefined
@@ -97,6 +102,10 @@ object DatasetImportJob {
     inline def setLastUpdatedDateTime(value: js.Date): Self = StObject.set(x, "lastUpdatedDateTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "lastUpdatedDateTime", js.undefined)
+    
+    inline def setPublishAttributionMetricsToS3(value: Boolean): Self = StObject.set(x, "publishAttributionMetricsToS3", value.asInstanceOf[js.Any])
+    
+    inline def setPublishAttributionMetricsToS3Undefined: Self = StObject.set(x, "publishAttributionMetricsToS3", js.undefined)
     
     inline def setRoleArn(value: Arn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     

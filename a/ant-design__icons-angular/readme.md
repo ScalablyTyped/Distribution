@@ -1,7 +1,7 @@
 
 # Scala.js typings for ant-design__icons-angular
 
-Typings are for version 14.1.0
+Typings are for version 15.0.0
 
 ## Library description:
 <h1 align="center"> Ant Design Icons for Angular </h1>

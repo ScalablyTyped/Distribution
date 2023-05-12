@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListJournalS3ExportsResponse extends StObject {
   
   /**
-    * The array of journal export job descriptions for all ledgers that are associated with the current Amazon Web Services account and Region.
+    * The journal export jobs for all ledgers that are associated with the current Amazon Web Services account and Region.
     */
   var JournalS3Exports: js.UndefOr[JournalS3ExportList] = js.undefined
   

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "aws-crt" : "1.14.7"
+      "aws-crt" : "1.15.16"
     }
   ],
   "test-dependencies" : [
     {
-      "aws-crt" : "1.14.7"
+      "aws-crt" : "1.15.16"
     }
   ],
   "compile-devDependencies" : [

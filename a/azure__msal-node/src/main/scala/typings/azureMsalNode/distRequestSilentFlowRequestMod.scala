@@ -27,6 +27,8 @@ object distRequestSilentFlowRequestMod {
     
     var forceRefresh: js.UndefOr[Boolean] = js.undefined
     
+    var maxAge: js.UndefOr[Double] = js.undefined
+    
     var scopes: js.Array[String]
     
     var shrClaims: js.UndefOr[String] = js.undefined
@@ -74,6 +76,10 @@ object distRequestSilentFlowRequestMod {
       inline def setForceRefresh(value: Boolean): Self = StObject.set(x, "forceRefresh", value.asInstanceOf[js.Any])
       
       inline def setForceRefreshUndefined: Self = StObject.set(x, "forceRefresh", js.undefined)
+      
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
       inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       

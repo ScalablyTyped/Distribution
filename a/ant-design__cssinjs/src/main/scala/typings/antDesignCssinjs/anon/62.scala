@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MozBorderTopColors
+import typings.csstype.mod.Property.LineHeight
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `62` extends StObject {
   
   var value: js.UndefOr[
-    MozBorderTopColors | (js.Array[
+    (LineHeight[Double | String]) | (js.Array[
       (Extract[
-        js.UndefOr[MozBorderTopColors | js.Array[NonNullable[js.UndefOr[MozBorderTopColors]]]], 
+        js.UndefOr[
+          (LineHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[LineHeight[Double | String]]]])
+        ], 
         String
-      ]) | NonNullable[js.UndefOr[MozBorderTopColors]]
+      ]) | (NonNullable[js.UndefOr[LineHeight[Double | String]]])
     ])
   ] = js.native
 }

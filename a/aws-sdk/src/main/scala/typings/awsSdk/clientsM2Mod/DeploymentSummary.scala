@@ -27,7 +27,7 @@ trait DeploymentSummary extends StObject {
   var deploymentId: Identifier
   
   /**
-    * The unique identifier of the environment.
+    * The unique identifier of the runtime environment.
     */
   var environmentId: Identifier
   

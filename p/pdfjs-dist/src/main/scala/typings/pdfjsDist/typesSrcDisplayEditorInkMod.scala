@@ -50,6 +50,8 @@ object typesSrcDisplayEditorInkMod {
     
     var currentPath: js.Array[Any] = js.native
     
+    def onScaleChanging(): Unit = js.native
+    
     var opacity: Any = js.native
     
     var paths: js.Array[Any] = js.native
@@ -86,9 +88,9 @@ object typesSrcDisplayEditorInkMod {
       * @param {Arra<Array<number>} bezier
       * @returns {Path2D}
       */
-    inline def `__Numbersign2@NumbersignbuildPath2D`(
+    inline def `__Numbersign4@NumbersignbuildPath2D`(
       bezier: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Arra<Array<number>> */ Any
-    ): Path2D = ^.asInstanceOf[js.Dynamic].applyDynamic("__#2@#buildPath2D")(bezier.asInstanceOf[js.Any]).asInstanceOf[Path2D]
+    ): Path2D = ^.asInstanceOf[js.Dynamic].applyDynamic("__#4@#buildPath2D")(bezier.asInstanceOf[js.Any]).asInstanceOf[Path2D]
     
     @JSImport("pdfjs-dist/types/src/display/editor/ink", "InkEditor._defaultColor")
     @js.native
@@ -116,7 +118,7 @@ object typesSrcDisplayEditorInkMod {
     inline def _type_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_type")(x.asInstanceOf[js.Any])
     
     /** @inheritdoc */
-    inline def deserialize(data: Any, parent: Any): AnnotationEditor = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(data.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[AnnotationEditor]
+    inline def deserialize(data: Any, parent: Any, uiManager: Any): AnnotationEditor = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(data.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], uiManager.asInstanceOf[js.Any])).asInstanceOf[AnnotationEditor]
     
     inline def initialize(l10n: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(l10n.asInstanceOf[js.Any]).asInstanceOf[Unit]
     

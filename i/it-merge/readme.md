@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-merge
 
-Typings are for version 2.0.0
+Typings are for version 3.0.1
 
 ## Library description:
 Treat one or more iterables as a single iterable

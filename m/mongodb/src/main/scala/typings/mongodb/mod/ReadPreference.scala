@@ -52,16 +52,9 @@ open class ReadPreference protected ()
   
   /**
     * Indicates that this readPreference needs the "SecondaryOk" bit when sent over the wire
-    * @see https://docs.mongodb.com/manual/reference/mongodb-wire-protocol/#op-query
+    * @see https://www.mongodb.com/docs/manual/reference/mongodb-wire-protocol/#op-query
     */
   def secondaryOk(): Boolean = js.native
-  
-  /**
-    * Indicates that this readPreference needs the "secondaryOk" bit when sent over the wire
-    * @deprecated Use secondaryOk instead
-    * @see https://docs.mongodb.com/manual/reference/mongodb-wire-protocol/#op-query
-    */
-  def slaveOk(): Boolean = js.native
   
   var tags: js.UndefOr[js.Array[TagSet]] = js.native
   

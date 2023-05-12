@@ -3,6 +3,7 @@ package typings.fhir.r5Mod
 import typings.fhir.fhirStrings.error
 import typings.fhir.fhirStrings.fatal
 import typings.fhir.fhirStrings.information
+import typings.fhir.fhirStrings.success
 import typings.fhir.fhirStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,7 +24,7 @@ trait OperationOutcomeIssue
   var _severity: js.UndefOr[Element] = js.undefined
   
   /**
-    * Describes the type of the issue. The system that creates an OperationOutcome SHALL choose the most applicable code from the IssueType value set, and may additional provide its own code for the error in the details element.
+    * Code values should align with the severity.  For example, a code of ```forbidden``` generally wouldn't make sense with a severity of ```information``` or ```warning```.  Similarly, a code of ```informational``` would generally not make sense with a severity of ```fatal``` or ```error```.  However, there are no strict rules about what severities must be used with which codes.  For example, ```code-invalid``` might be a ```warning``` or ```error```, depending on the context
     */
   var code: String
   
@@ -48,13 +49,13 @@ trait OperationOutcomeIssue
   var location: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * This is labeled as "Is Modifier" because applications should not confuse hints and warnings with errors.
+    * Indicates whether the issue indicates a variation from successful processing.
     */
-  var severity: fatal | error | warning | information
+  var severity: fatal | error | warning | information | success
 }
 object OperationOutcomeIssue {
   
-  inline def apply(code: String, severity: fatal | error | warning | information): OperationOutcomeIssue = {
+  inline def apply(code: String, severity: fatal | error | warning | information | success): OperationOutcomeIssue = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], severity = severity.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationOutcomeIssue]
   }
@@ -84,7 +85,7 @@ object OperationOutcomeIssue {
     
     inline def setLocationVarargs(value: String*): Self = StObject.set(x, "location", js.Array(value*))
     
-    inline def setSeverity(value: fatal | error | warning | information): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: fatal | error | warning | information | success): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
     inline def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
     

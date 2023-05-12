@@ -17,9 +17,17 @@ type InstanceUserSummaryList = js.Array[InstanceUserSummary]
 
 type ProductUserSummaryList = js.Array[ProductUserSummary]
 
+type SecurityGroup = java.lang.String
+
+type SettingsSubnetsList = js.Array[Subnet]
+
 type String = java.lang.String
 
 type StringList = js.Array[String]
+
+type Subnet = java.lang.String
+
+type Subnets = js.Array[Subnet]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2018-05-10`

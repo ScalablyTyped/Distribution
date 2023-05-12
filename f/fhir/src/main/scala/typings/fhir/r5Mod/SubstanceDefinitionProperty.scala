@@ -13,32 +13,32 @@ trait SubstanceDefinitionProperty
   var _valueDate: js.UndefOr[Element] = js.undefined
   
   /**
-    * A code expressing the type of characteristic.
+    * A code expressing the type of property.
     */
   var `type`: CodeableConcept
   
   /**
-    * A value for the characteristic.
+    * A value for the property.
     */
   var valueAttachment: js.UndefOr[Attachment] = js.undefined
   
   /**
-    * A value for the characteristic.
+    * A value for the property.
     */
   var valueBoolean: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A value for the characteristic.
+    * A value for the property.
     */
   var valueCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * A value for the characteristic.
+    * A value for the property.
     */
   var valueDate: js.UndefOr[String] = js.undefined
   
   /**
-    * A value for the characteristic.
+    * A value for the property.
     */
   var valueQuantity: js.UndefOr[Quantity] = js.undefined
 }

@@ -83,7 +83,7 @@ object typesScrollbarMod {
       * #### Notes
       * Modifying this node directly can lead to undefined behavior.
       */
-    val decrementNode: HTMLDivElement = js.native
+    def decrementNode: HTMLDivElement = js.native
     
     /**
       * Handle the DOM events for the scroll bar.
@@ -104,26 +104,28 @@ object typesScrollbarMod {
       * #### Notes
       * Modifying this node directly can lead to undefined behavior.
       */
-    val incrementNode: HTMLDivElement = js.native
+    def incrementNode: HTMLDivElement = js.native
     
     /**
       * Get the maximum value of the scroll bar.
       */
+    def maximum: Double = js.native
     /**
       * Set the maximum value of the scroll bar.
       *
       * #### Notes
       * The max size will be clamped to the range `[0, Infinity]`.
       */
-    var maximum: Double = js.native
+    def maximum_=(value: Double): Unit = js.native
     
     /**
       * Get the orientation of the scroll bar.
       */
+    def orientation: Orientation = js.native
     /**
       * Set the orientation of the scroll bar.
       */
-    var orientation: Orientation = js.native
+    def orientation_=(value: Orientation): Unit = js.native
     
     /**
       * Get the page size of the scroll bar.
@@ -133,13 +135,7 @@ object typesScrollbarMod {
       * region, expressed in data units. It determines the size of the
       * scroll bar thumb.
       */
-    /**
-      * Set the page size of the scroll bar.
-      *
-      * #### Notes
-      * The page size will be clamped to the range `[0, Infinity]`.
-      */
-    var page: Double = js.native
+    def page: Double = js.native
     
     /**
       * A signal emitted when the user clicks the scroll track.
@@ -147,7 +143,15 @@ object typesScrollbarMod {
       * #### Notes
       * The payload is whether a decrease or increase is requested.
       */
-    val pageRequested: ISignal[this.type, decrement | increment] = js.native
+    def pageRequested: ISignal[this.type, decrement | increment] = js.native
+    
+    /**
+      * Set the page size of the scroll bar.
+      *
+      * #### Notes
+      * The page size will be clamped to the range `[0, Infinity]`.
+      */
+    def page_=(value: Double): Unit = js.native
     
     /**
       * A signal emitted when the user clicks a step button.
@@ -155,7 +159,7 @@ object typesScrollbarMod {
       * #### Notes
       * The payload is whether a decrease or increase is requested.
       */
-    val stepRequested: ISignal[this.type, decrement | increment] = js.native
+    def stepRequested: ISignal[this.type, decrement | increment] = js.native
     
     /**
       * A signal emitted when the user moves the scroll thumb.
@@ -163,7 +167,7 @@ object typesScrollbarMod {
       * #### Notes
       * The payload is the current value of the scroll bar.
       */
-    val thumbMoved: ISignal[this.type, Double] = js.native
+    def thumbMoved: ISignal[this.type, Double] = js.native
     
     /**
       * The scroll bar thumb node.
@@ -171,7 +175,7 @@ object typesScrollbarMod {
       * #### Notes
       * Modifying this node directly can lead to undefined behavior.
       */
-    val thumbNode: HTMLDivElement = js.native
+    def thumbNode: HTMLDivElement = js.native
     
     /**
       * The scroll bar track node.
@@ -179,18 +183,19 @@ object typesScrollbarMod {
       * #### Notes
       * Modifying this node directly can lead to undefined behavior.
       */
-    val trackNode: HTMLDivElement = js.native
+    def trackNode: HTMLDivElement = js.native
     
     /**
       * Get the current value of the scroll bar.
       */
+    def value: Double = js.native
     /**
       * Set the current value of the scroll bar.
       *
       * #### Notes
       * The value will be clamped to the range `[0, maximum]`.
       */
-    var value: Double = js.native
+    def value_=(value: Double): Unit = js.native
   }
   object ScrollBar {
     

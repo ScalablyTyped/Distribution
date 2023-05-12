@@ -36,43 +36,32 @@ open class Text protected () extends Object {
   
   /**
     * use this size when measuring text. To avoid IE11 rounding errors
-    * @type {Number}
     * @default
-    * @readonly
-    * @private
     */
   var CACHE_FONT_SIZE: Double = js.native
   
   /**
     * Contains characters bounding boxes for each line and char
-    * @private
-    * @type Array of char grapheme bounding boxes
+    * Array of char grapheme bounding boxes
     */
   var __charBounds: js.UndefOr[js.Array[js.Array[DeltaY]]] = js.native
   
   /**
     * List of line heights
-    * @private
-    * @type Array<Number>
     */
   var __lineHeights: js.Array[Double] = js.native
   
   /**
     * List of line widths
-    * @private
-    * @type Array<Number>
     */
   var __lineWidths: js.Array[Double] = js.native
   
   /**
-    * @private
-    * @type boolean
     */
   var __skipDimension: Boolean = js.native
   
   /**
     * apply all the character style to canvas for rendering
-    * @private
     * @param {String} _char
     * @param {CanvasRenderingContext2D} ctx Context to render on
     * @param {Number} lineIndex
@@ -88,27 +77,20 @@ open class Text protected () extends Object {
   ): Unit = js.native
   
   /**
-    * @private
     */
   def _clearCache(): Unit = js.native
   
   /**
     * Properties which when set cause object to change dimensions
-    * @type Object
-    * @private
     */
   var _dimensionAffectingProps: js.Array[String] = js.native
   
   /**
-    * @private
-    * @type Number
     */
   var _fontSizeFraction: Double = js.native
   
   /**
     * Text Line proportion to font Size (in pixels)
-    * @private
-    * @type Number
     */
   var _fontSizeMult: Double = js.native
   
@@ -117,12 +99,10 @@ open class Text protected () extends Object {
     * broken up by visual lines (new lines and automatic wrapping).
     * The original text styles object is broken up by actual lines (new lines only),
     * which is only sufficient for Text / IText
-    * @private
     */
   def _generateStyleMap(textInfo: GraphemeLines): NumberDictionary[typings.fabric.anon.Line] = js.native
   
   /**
-    * @private
     * @param {Number} lineIndex index text line
     * @return {Number} Line left offset
     */
@@ -137,13 +117,11 @@ open class Text protected () extends Object {
   def _getStyleDeclaration(lineIndex: Double, charIndex: Double): Any = js.native
   
   /**
-    * @private
     * Gets the width of character spacing
     */
   def _getWidthOfCharSpacing(): Double = js.native
   
   /**
-    * @private
     * @param {Object} prevStyle
     * @param {Object} thisStyle
     */
@@ -153,7 +131,6 @@ open class Text protected () extends Object {
     * measure and return the width of a single character.
     * possibly overridden to accommodate different measure logic or
     * to hook some external lib for character measurement
-    * @private
     * @param {String} char to be measured
     * @param {Object} charStyle style of char to be measured
     * @param {String} [previousChar] previous char
@@ -165,21 +142,16 @@ open class Text protected () extends Object {
   /**
     * Use this regular expression to filter for whitespace that is not a new line.
     * Mostly used when text is 'justify' aligned.
-    * @private
-    * @type RegExp
     */
   var _reSpaceAndTab: js.RegExp = js.native
   
   /**
     * Use this regular expression to filter for whitespaces that is not a new line.
     * Mostly used when text is 'justify' aligned.
-    * @private
-    * @type RegExp
     */
   var _reSpacesAndTabs: js.RegExp = js.native
   
   /**
-    * @private
     * @param {String} method
     * @param {CanvasRenderingContext2D} ctx Context to render on
     * @param {Number} lineIndex
@@ -200,7 +172,6 @@ open class Text protected () extends Object {
   ): Unit = js.native
   
   /**
-    * @private
     * @param {String} method
     * @param {CanvasRenderingContext2D} ctx Context to render on
     * @param {String} line Content of the line
@@ -219,13 +190,11 @@ open class Text protected () extends Object {
   ): Unit = js.native
   
   /**
-    * @private
     * @param {CanvasRenderingContext2D} ctx Context to render on
     */
   def _renderText(ctx: CanvasRenderingContext2D): Unit = js.native
   
   /**
-    * @private
     * @param {String} method Method name ("fillText" or "strokeText")
     * @param {CanvasRenderingContext2D} ctx Context to render on
     * @param {String} line Text to render
@@ -242,7 +211,6 @@ open class Text protected () extends Object {
     lineIndex: Double
   ): Unit = js.native
   /**
-    * @private
     * @param {String} method Method name ("fillText" or "strokeText")
     * @param {CanvasRenderingContext2D} ctx Context to render on
     * @param {Array} line Text to render
@@ -261,7 +229,6 @@ open class Text protected () extends Object {
   
   /**
     * Set the font parameter of the context with the object properties or with charStyle
-    * @private
     * @param {CanvasRenderingContext2D} ctx Context to render on
     * @param {Object} [charStyle] object with font style properties
     * @param {String} [charStyle.fontFamily] Font Family
@@ -275,13 +242,11 @@ open class Text protected () extends Object {
   def _setTextStyles(ctx: CanvasRenderingContext2D, charStyle: FontFamily, forMeasuring: Boolean): Unit = js.native
   
   /**
-    * @private
     */
   def _shouldClearDimensionCache(): Boolean = js.native
   
   /**
     * Divides text into lines of text and lines of graphemes.
-    * @private
     * @returns {Object} Lines and text in the text
     */
   def _splitText(): GraphemeLines = js.native
@@ -290,15 +255,11 @@ open class Text protected () extends Object {
   
   /**
     * List of grapheme lines in text object
-    * @private
-    * @type Array<string>
     */
   var _textLines: js.Array[js.Array[String]] = js.native
   
   /**
     * List of unwrapped grapheme lines in text object
-    * @private
-    * @type Array<string>
     */
   var _unwrappedTextLines: js.Array[js.Array[String]] = js.native
   
@@ -310,7 +271,6 @@ open class Text protected () extends Object {
   /**
     * additional space between characters
     * expressed in thousands of em unit
-    * @type Number
     */
   var charSpacing: js.UndefOr[Double] = js.native
   
@@ -330,7 +290,6 @@ open class Text protected () extends Object {
   
   /**
     * Baseline shift, stlyes only, keep at 0 for the main text object
-    * @type {Number}
     */
   var deltaY: js.UndefOr[Double] = js.native
   
@@ -346,25 +305,21 @@ open class Text protected () extends Object {
   
   /**
     * Font family
-    * @type String
     */
   var fontFamily: js.UndefOr[String] = js.native
   
   /**
     * Font size (in pixels)
-    * @type Number
     */
   var fontSize: js.UndefOr[Double] = js.native
   
   /**
     * Font style . Possible values: "", "normal", "italic" or "oblique".
-    * @type String
     */
   var fontStyle: js.UndefOr[_empty | normal | italic | oblique] = js.native
   
   /**
     * Font weight (e.g. bold, normal, 400, 600, 800)
-    * @type {(Number|String)}
     */
   var fontWeight: js.UndefOr[String | Double] = js.native
   
@@ -405,7 +360,6 @@ open class Text protected () extends Object {
   /**
     * Measure a single line given its index. Used to calculate the initial
     * text bounding box. The values are calculated and stored in __lineWidths cache.
-    * @private
     * @param {Number} lineIndex line number
     * @return {Number} Line width
     */
@@ -467,13 +421,11 @@ open class Text protected () extends Object {
   
   /**
     * Line height
-    * @type Number
     */
   var lineHeight: js.UndefOr[Double] = js.native
   
   /**
     * Text decoration linethrough.
-    * @type Boolean
     */
   var linethrough: js.UndefOr[Boolean] = js.native
   
@@ -487,7 +439,6 @@ open class Text protected () extends Object {
   
   /**
     * Text decoration overline.
-    * @type Boolean
     */
   var overline: js.UndefOr[Boolean] = js.native
   
@@ -542,19 +493,16 @@ open class Text protected () extends Object {
   /**
     * Object containing character styles - top-level properties -> line numbers,
     * 2nd-level properties - charater numbers
-    * @type Object
     */
   var styles: js.UndefOr[Any] = js.native
   
   /**
     * Subscript schema object (minimum overlap)
-    * @type {Object}
     */
   var subscript: js.UndefOr[Baseline] = js.native
   
   /**
     * Superscript schema object (minimum overlap)
-    * @type {Object}
     */
   var superscript: js.UndefOr[Baseline] = js.native
   
@@ -563,25 +511,21 @@ open class Text protected () extends Object {
   /**
     * Text alignment. Possible values: "left", "center", "right", "justify",
     * "justify-left", "justify-center" or "justify-right".
-    * @type String
     */
   var textAlign: js.UndefOr[String] = js.native
   
   /**
     * Background color of text lines
-    * @type String
     */
   var textBackgroundColor: js.UndefOr[String] = js.native
   
   /**
     * List of lines in text object
-    * @type Array<string>
     */
   var textLines: js.Array[String] = js.native
   
   /**
     * Text decoration underline.
-    * @type Boolean
     */
   var underline: js.UndefOr[Boolean] = js.native
 }

@@ -18,8 +18,8 @@ object mod {
     * ```js
     * // Asynchronous
     * const {
-    *   randomBytes
-    * } = await import('crypto');
+    *   randomBytes,
+    * } = await import('node:crypto');
     *
     * randomBytes(256, (err, buf) => {
     *   if (err) throw err;
@@ -34,8 +34,8 @@ object mod {
     * ```js
     * // Synchronous
     * const {
-    *   randomBytes
-    * } = await import('crypto');
+    *   randomBytes,
+    * } = await import('node:crypto');
     *
     * const buf = randomBytes(256);
     * console.log(

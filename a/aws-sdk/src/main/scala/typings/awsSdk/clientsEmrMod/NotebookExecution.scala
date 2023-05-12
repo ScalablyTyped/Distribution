@@ -12,7 +12,7 @@ trait NotebookExecution extends StObject {
   var Arn: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
-    * The unique identifier of the EMR Notebook that is used for the notebook execution.
+    * The unique identifier of the Amazon EMR Notebook that is used for the notebook execution.
     */
   var EditorId: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
@@ -22,7 +22,12 @@ trait NotebookExecution extends StObject {
   var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The execution engine, such as an EMR cluster, used to run the EMR notebook and perform the notebook execution.
+    * The environment variables associated with the notebook execution.
+    */
+  var EnvironmentVariables: js.UndefOr[EnvironmentVariablesMap] = js.undefined
+  
+  /**
+    * The execution engine, such as an Amazon EMR cluster, used to run the Amazon EMR notebook and perform the notebook execution.
     */
   var ExecutionEngine: js.UndefOr[ExecutionEngineConfig] = js.undefined
   
@@ -42,14 +47,29 @@ trait NotebookExecution extends StObject {
   var NotebookExecutionName: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
-    * The unique identifier of the EC2 security group associated with the EMR Notebook instance. For more information see Specifying EC2 Security Groups for EMR Notebooks in the EMR Management Guide.
+    * The unique identifier of the Amazon EC2 security group associated with the Amazon EMR Notebook instance. For more information see Specifying Amazon EC2 Security Groups for Amazon EMR Notebooks in the Amazon EMR Management Guide.
     */
   var NotebookInstanceSecurityGroupId: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
-    * Input parameters in JSON format passed to the EMR Notebook at runtime for execution.
+    * Input parameters in JSON format passed to the Amazon EMR Notebook at runtime for execution.
     */
   var NotebookParams: js.UndefOr[XmlString] = js.undefined
+  
+  /**
+    * The Amazon S3 location that stores the notebook execution input.
+    */
+  var NotebookS3Location: js.UndefOr[NotebookS3LocationForOutput] = js.undefined
+  
+  /**
+    * The output format for the notebook execution.
+    */
+  var OutputNotebookFormat: js.UndefOr[typings.awsSdk.clientsEmrMod.OutputNotebookFormat] = js.undefined
+  
+  /**
+    * The Amazon S3 location for the notebook execution output.
+    */
+  var OutputNotebookS3Location: js.UndefOr[OutputNotebookS3LocationForOutput] = js.undefined
   
   /**
     * The location of the notebook execution's output file in Amazon S3.
@@ -93,6 +113,10 @@ object NotebookExecution {
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
+    inline def setEnvironmentVariables(value: EnvironmentVariablesMap): Self = StObject.set(x, "EnvironmentVariables", value.asInstanceOf[js.Any])
+    
+    inline def setEnvironmentVariablesUndefined: Self = StObject.set(x, "EnvironmentVariables", js.undefined)
+    
     inline def setExecutionEngine(value: ExecutionEngineConfig): Self = StObject.set(x, "ExecutionEngine", value.asInstanceOf[js.Any])
     
     inline def setExecutionEngineUndefined: Self = StObject.set(x, "ExecutionEngine", js.undefined)
@@ -116,6 +140,18 @@ object NotebookExecution {
     inline def setNotebookParams(value: XmlString): Self = StObject.set(x, "NotebookParams", value.asInstanceOf[js.Any])
     
     inline def setNotebookParamsUndefined: Self = StObject.set(x, "NotebookParams", js.undefined)
+    
+    inline def setNotebookS3Location(value: NotebookS3LocationForOutput): Self = StObject.set(x, "NotebookS3Location", value.asInstanceOf[js.Any])
+    
+    inline def setNotebookS3LocationUndefined: Self = StObject.set(x, "NotebookS3Location", js.undefined)
+    
+    inline def setOutputNotebookFormat(value: OutputNotebookFormat): Self = StObject.set(x, "OutputNotebookFormat", value.asInstanceOf[js.Any])
+    
+    inline def setOutputNotebookFormatUndefined: Self = StObject.set(x, "OutputNotebookFormat", js.undefined)
+    
+    inline def setOutputNotebookS3Location(value: OutputNotebookS3LocationForOutput): Self = StObject.set(x, "OutputNotebookS3Location", value.asInstanceOf[js.Any])
+    
+    inline def setOutputNotebookS3LocationUndefined: Self = StObject.set(x, "OutputNotebookS3Location", js.undefined)
     
     inline def setOutputNotebookURI(value: XmlString): Self = StObject.set(x, "OutputNotebookURI", value.asInstanceOf[js.Any])
     

@@ -174,8 +174,7 @@ object sapMMessageBoxMod extends Shortcut {
     * Provides easier methods to create sap.m.Dialog with type sap.m.DialogType.Message, such as standard alerts,
     * confirmation dialogs, or arbitrary message dialogs.
     *
-    * Because the `MessageBox` is a static class, a `sap.ui.require("sap/m/MessageBox");` statement must be
-    * explicitly executed prior using the class. MessageBox provides several functions:
+    * MessageBox provides several functions:
     * 	 - `show()` - This is the generic way to open a message dialog. You can customize its contents through
     * 			the `mOptions` parameter described below.
     * 	 - `alert()`, `confirm()`, `error()`, `information()`, `success()` and `warning()` - predefined templates
@@ -183,10 +182,10 @@ object sapMMessageBoxMod extends Shortcut {
     * 			to its semantic. Although the full set of `mOptions` (applicable to `show()`) are available to them,
     * 			it is recommended to only use the documented options.
     *
-    * **NOTE:** All options of show() are available for the other template functions as well, but it is recommended
-    * to use show() only in more specific scenarios. **NOTE:** Due to the static nature of the `MessageBox`
+    * **Note:** All options of show() are available for the other template functions as well, but it is recommended
+    * to use show() only in more specific scenarios. **Note:** Due to the static nature of the `MessageBox`
     * class, you cannot expect data binding support from its helper functions. If this is required you can
-    * use the `sap.m.Dialog` instead. **NOTE:** When using the `MessageBox.Error` method, there is no
+    * use the `sap.m.Dialog` instead. **Note:** When using the `MessageBox.Error` method, there is no
     * emphasized action by design.
     *
     * Example:
@@ -432,8 +431,7 @@ object sapMMessageBoxMod extends Shortcut {
       * and optionally other parts. After the user has tapped a button, the `onClose` function is invoked when
       * given.
       *
-      * The only mandatory parameter is `vMessage`. Either a string with the corresponding text or even a layout
-      * control could be provided.
+      * The only mandatory parameter is `vMessage`.
       *
       *
       * ```javascript

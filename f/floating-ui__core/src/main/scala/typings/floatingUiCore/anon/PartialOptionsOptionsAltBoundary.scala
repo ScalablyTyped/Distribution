@@ -1,7 +1,10 @@
 package typings.floatingUiCore.anon
 
 import typings.floatingUiCore.floatingUiCoreStrings.bestFit
+import typings.floatingUiCore.floatingUiCoreStrings.end
 import typings.floatingUiCore.floatingUiCoreStrings.initialPlacement
+import typings.floatingUiCore.floatingUiCoreStrings.none
+import typings.floatingUiCore.floatingUiCoreStrings.start
 import typings.floatingUiCore.srcTypesMod.ElementContext
 import typings.floatingUiCore.srcTypesMod.Padding
 import typings.floatingUiCore.srcTypesMod.RootBoundary
@@ -19,6 +22,8 @@ trait PartialOptionsOptionsAltBoundary extends StObject {
   var crossAxis: js.UndefOr[Boolean] = js.undefined
   
   var elementContext: js.UndefOr[ElementContext] = js.undefined
+  
+  var fallbackAxisSideDirection: js.UndefOr[none | start | end] = js.undefined
   
   var fallbackPlacements: js.UndefOr[js.Array[typings.floatingUiCore.srcTypesMod.Placement]] = js.undefined
   
@@ -57,6 +62,10 @@ object PartialOptionsOptionsAltBoundary {
     inline def setElementContext(value: ElementContext): Self = StObject.set(x, "elementContext", value.asInstanceOf[js.Any])
     
     inline def setElementContextUndefined: Self = StObject.set(x, "elementContext", js.undefined)
+    
+    inline def setFallbackAxisSideDirection(value: none | start | end): Self = StObject.set(x, "fallbackAxisSideDirection", value.asInstanceOf[js.Any])
+    
+    inline def setFallbackAxisSideDirectionUndefined: Self = StObject.set(x, "fallbackAxisSideDirection", js.undefined)
     
     inline def setFallbackPlacements(value: js.Array[typings.floatingUiCore.srcTypesMod.Placement]): Self = StObject.set(x, "fallbackPlacements", value.asInstanceOf[js.Any])
     

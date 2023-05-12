@@ -168,6 +168,7 @@ trait DOMApi extends StObject {
   
   /**
     * Returns the root DOM node (and optionally the subtree) to the caller.
+    * Implicitly enables the DOM domain events for the current target.
     */
   def getDocument(params: GetDocumentRequest): js.Promise[GetDocumentResponse] = js.native
   

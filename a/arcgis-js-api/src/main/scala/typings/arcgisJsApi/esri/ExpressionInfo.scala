@@ -15,7 +15,7 @@ trait ExpressionInfo
      with JSONSupport {
   
   /**
-    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Constraint](https://developers.arcgis.com/javascript/latest/arcade/#forms) or [Form Calculation](https://developers.arcgis.com/javascript/latest/arcade/#form-calculation) profiles.
+    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Form Constraint](https://developers.arcgis.com/javascript/latest/arcade/#forms) or [Form Calculation](https://developers.arcgis.com/javascript/latest/arcade/#form-calculation) profiles.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-ExpressionInfo.html#expression)
     */

@@ -1,7 +1,7 @@
 
 # Scala.js typings for blueprintjs__colors
 
-Typings are for version 4.1.9
+Typings are for version 4.1.22
 
 ## Library description:
 Blueprint color definitions

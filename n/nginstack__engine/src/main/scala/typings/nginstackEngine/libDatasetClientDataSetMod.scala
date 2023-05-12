@@ -22,7 +22,7 @@ object libDatasetClientDataSetMod {
     var bof: Boolean = js.native
     
     /* CompleteClass */
-    var bookmark: String = js.native
+    var bookmark: Any = js.native
     
     /* CompleteClass */
     override def cancel(): Unit = js.native
@@ -118,7 +118,7 @@ object libDatasetClientDataSetMod {
     
     var bof: Boolean
     
-    var bookmark: String
+    var bookmark: Any
     
     def cancel(): Unit
     
@@ -181,7 +181,7 @@ object libDatasetClientDataSetMod {
     inline def apply(
       append: () => Unit,
       bof: Boolean,
-      bookmark: String,
+      bookmark: Any,
       cancel: () => Unit,
       del: () => Unit,
       deleteRecord: Any,
@@ -222,7 +222,7 @@ object libDatasetClientDataSetMod {
       
       inline def setBof(value: Boolean): Self = StObject.set(x, "bof", value.asInstanceOf[js.Any])
       
-      inline def setBookmark(value: String): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
+      inline def setBookmark(value: Any): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       

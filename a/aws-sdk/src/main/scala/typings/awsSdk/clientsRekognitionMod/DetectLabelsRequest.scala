@@ -27,7 +27,7 @@ trait DetectLabelsRequest extends StObject {
   var MinConfidence: js.UndefOr[Percent] = js.undefined
   
   /**
-    * A list of the filters to be applied to returned detected labels and image properties. Specified filters can be inclusive, exclusive, or a combination of both. Filters can be used for individual labels or label categories. The exact label names or label categories must be supplied. For a full list of labels and label categories, see LINK HERE.
+    * A list of the filters to be applied to returned detected labels and image properties. Specified filters can be inclusive, exclusive, or a combination of both. Filters can be used for individual labels or label categories. The exact label names or label categories must be supplied. For a full list of labels and label categories, see Detecting labels.
     */
   var Settings: js.UndefOr[DetectLabelsSettings] = js.undefined
 }

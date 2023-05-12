@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Output extends StObject {
   
-  var bindingPropertyName: js.UndefOr[String] = js.undefined
+  var alias: js.UndefOr[String] = js.undefined
 }
 object Output {
   
@@ -18,8 +18,8 @@ object Output {
   @scala.inline
   implicit open class MutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
     
-    inline def setBindingPropertyName(value: String): Self = StObject.set(x, "bindingPropertyName", value.asInstanceOf[js.Any])
+    inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
-    inline def setBindingPropertyNameUndefined: Self = StObject.set(x, "bindingPropertyName", js.undefined)
+    inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
   }
 }

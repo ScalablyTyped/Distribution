@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcThreeMod.BufferGeometry
 import typings.three.srcThreeMod.Vector3
 import org.scalablytyped.runtime.StObject
@@ -10,7 +11,7 @@ object examplesJsmGeometriesConvexGeometryMod {
   
   @JSImport("three/examples/jsm/geometries/ConvexGeometry", "ConvexGeometry")
   @js.native
-  open class ConvexGeometry () extends BufferGeometry {
+  open class ConvexGeometry () extends BufferGeometry[NormalBufferAttributes] {
     def this(points: js.Array[Vector3]) = this()
   }
 }

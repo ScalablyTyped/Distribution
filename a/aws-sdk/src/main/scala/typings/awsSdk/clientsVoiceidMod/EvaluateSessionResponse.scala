@@ -12,7 +12,7 @@ trait EvaluateSessionResponse extends StObject {
   var AuthenticationResult: js.UndefOr[typings.awsSdk.clientsVoiceidMod.AuthenticationResult] = js.undefined
   
   /**
-    * The identifier of the domain containing the session.
+    * The identifier of the domain that contains the session.
     */
   var DomainId: js.UndefOr[typings.awsSdk.clientsVoiceidMod.DomainId] = js.undefined
   

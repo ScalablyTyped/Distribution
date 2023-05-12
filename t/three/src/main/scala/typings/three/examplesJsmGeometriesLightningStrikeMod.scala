@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcThreeMod.BufferGeometry
 import typings.three.srcThreeMod.Vector3
 import org.scalablytyped.runtime.StObject
@@ -10,7 +11,7 @@ object examplesJsmGeometriesLightningStrikeMod {
   
   @JSImport("three/examples/jsm/geometries/LightningStrike", "LightningStrike")
   @js.native
-  open class LightningStrike () extends BufferGeometry {
+  open class LightningStrike () extends BufferGeometry[NormalBufferAttributes] {
     def this(rayParameters: RayParameters) = this()
     
     def copy(source: LightningStrike): this.type = js.native

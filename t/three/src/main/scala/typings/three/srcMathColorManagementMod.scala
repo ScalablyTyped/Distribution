@@ -1,9 +1,9 @@
 package typings.three
 
 import typings.three.srcConstantsMod.ColorSpace
-import typings.three.srcConstantsMod.LinearSRGBColorSpace
-import typings.three.srcConstantsMod.SRGBColorSpace
 import typings.three.srcMathColorMod.Color
+import typings.three.threeStrings.`srgb-linear`
+import typings.three.threeStrings.srgb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,24 +20,28 @@ object srcMathColorManagementMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def convert(color: Color, sourceColorSpace: LinearSRGBColorSpace, targetColorSpace: LinearSRGBColorSpace): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(color.asInstanceOf[js.Any], sourceColorSpace.asInstanceOf[js.Any], targetColorSpace.asInstanceOf[js.Any])).asInstanceOf[Color]
-    inline def convert(color: Color, sourceColorSpace: LinearSRGBColorSpace, targetColorSpace: SRGBColorSpace): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(color.asInstanceOf[js.Any], sourceColorSpace.asInstanceOf[js.Any], targetColorSpace.asInstanceOf[js.Any])).asInstanceOf[Color]
-    inline def convert(color: Color, sourceColorSpace: SRGBColorSpace, targetColorSpace: LinearSRGBColorSpace): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(color.asInstanceOf[js.Any], sourceColorSpace.asInstanceOf[js.Any], targetColorSpace.asInstanceOf[js.Any])).asInstanceOf[Color]
-    inline def convert(color: Color, sourceColorSpace: SRGBColorSpace, targetColorSpace: SRGBColorSpace): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(color.asInstanceOf[js.Any], sourceColorSpace.asInstanceOf[js.Any], targetColorSpace.asInstanceOf[js.Any])).asInstanceOf[Color]
-    
-    inline def fromWorkingColorSpace(color: Color, targetColorSpace: LinearSRGBColorSpace): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWorkingColorSpace")(color.asInstanceOf[js.Any], targetColorSpace.asInstanceOf[js.Any])).asInstanceOf[Color]
-    inline def fromWorkingColorSpace(color: Color, targetColorSpace: SRGBColorSpace): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWorkingColorSpace")(color.asInstanceOf[js.Any], targetColorSpace.asInstanceOf[js.Any])).asInstanceOf[Color]
+    inline def convert(color: Color, sourceColorSpace: srgb | `srgb-linear`, targetColorSpace: srgb | `srgb-linear`): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(color.asInstanceOf[js.Any], sourceColorSpace.asInstanceOf[js.Any], targetColorSpace.asInstanceOf[js.Any])).asInstanceOf[Color]
+    inline def convert(color: Color, sourceColorSpace: srgb | `srgb-linear`, targetColorSpace: /* "display-p3" */ String): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(color.asInstanceOf[js.Any], sourceColorSpace.asInstanceOf[js.Any], targetColorSpace.asInstanceOf[js.Any])).asInstanceOf[Color]
+    inline def convert(color: Color, sourceColorSpace: /* "display-p3" */ String, targetColorSpace: srgb | `srgb-linear`): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(color.asInstanceOf[js.Any], sourceColorSpace.asInstanceOf[js.Any], targetColorSpace.asInstanceOf[js.Any])).asInstanceOf[Color]
+    inline def convert(
+      color: Color,
+      sourceColorSpace: /* "display-p3" */ String,
+      targetColorSpace: /* "display-p3" */ String
+    ): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(color.asInstanceOf[js.Any], sourceColorSpace.asInstanceOf[js.Any], targetColorSpace.asInstanceOf[js.Any])).asInstanceOf[Color]
     
     /**
-      * @default true
+      * @default false
       */
-    @JSImport("three/src/math/ColorManagement", "ColorManagement.legacyMode")
+    @JSImport("three/src/math/ColorManagement", "ColorManagement.enabled")
     @js.native
-    def legacyMode: Boolean = js.native
-    inline def legacyMode_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("legacyMode")(x.asInstanceOf[js.Any])
+    def enabled: Boolean = js.native
+    inline def enabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enabled")(x.asInstanceOf[js.Any])
     
-    inline def toWorkingColorSpace(color: Color, sourceColorSpace: LinearSRGBColorSpace): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("toWorkingColorSpace")(color.asInstanceOf[js.Any], sourceColorSpace.asInstanceOf[js.Any])).asInstanceOf[Color]
-    inline def toWorkingColorSpace(color: Color, sourceColorSpace: SRGBColorSpace): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("toWorkingColorSpace")(color.asInstanceOf[js.Any], sourceColorSpace.asInstanceOf[js.Any])).asInstanceOf[Color]
+    inline def fromWorkingColorSpace(color: Color, targetColorSpace: srgb | `srgb-linear`): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWorkingColorSpace")(color.asInstanceOf[js.Any], targetColorSpace.asInstanceOf[js.Any])).asInstanceOf[Color]
+    inline def fromWorkingColorSpace(color: Color, targetColorSpace: /* "display-p3" */ String): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWorkingColorSpace")(color.asInstanceOf[js.Any], targetColorSpace.asInstanceOf[js.Any])).asInstanceOf[Color]
+    
+    inline def toWorkingColorSpace(color: Color, sourceColorSpace: srgb | `srgb-linear`): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("toWorkingColorSpace")(color.asInstanceOf[js.Any], sourceColorSpace.asInstanceOf[js.Any])).asInstanceOf[Color]
+    inline def toWorkingColorSpace(color: Color, sourceColorSpace: /* "display-p3" */ String): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("toWorkingColorSpace")(color.asInstanceOf[js.Any], sourceColorSpace.asInstanceOf[js.Any])).asInstanceOf[Color]
     
     /**
       * @default LinearSRGBColorSpace

@@ -11,7 +11,7 @@ trait CitationCitedArtifactWebLocation
   var _url: js.UndefOr[Element] = js.undefined
   
   /**
-    * Code the reason for different URLs, e.g. abstract and full-text.
+    * Categories that may be frequently used for study citations may include abstract, full-text, supplement, webpage, and doi-based.
     */
   var classifier: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   

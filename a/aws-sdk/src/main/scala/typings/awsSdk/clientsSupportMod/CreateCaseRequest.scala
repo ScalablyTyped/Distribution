@@ -32,7 +32,7 @@ trait CreateCaseRequest extends StObject {
   var issueType: js.UndefOr[IssueType] = js.undefined
   
   /**
-    * The language in which Amazon Web Services Support handles the case. You must specify the ISO 639-1 code for the language parameter if you want support in that language. Currently, English ("en") and Japanese ("ja") are supported.
+    * The language in which Amazon Web Services Support handles the case. Amazon Web Services Support currently supports Chinese (“zh”), English ("en"), Japanese ("ja") and Korean (“ko”). You must specify the ISO 639-1 code for the language parameter if you want support in that language.
     */
   var language: js.UndefOr[Language] = js.undefined
   

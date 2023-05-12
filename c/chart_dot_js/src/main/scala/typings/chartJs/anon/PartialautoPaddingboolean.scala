@@ -1,19 +1,19 @@
 package typings.chartJs.anon
 
 import typings.chartJs.chartJsStrings.bar
-import typings.chartJs.mod.Scriptable
-import typings.chartJs.mod.ScriptableContext
-import typings.chartJs.typesBasicMod.AnyObject
+import typings.chartJs.distTypesBasicMod.AnyObject
+import typings.chartJs.distTypesGeometricMod.Padding
+import typings.chartJs.distTypesIndexMod.ScriptableContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<{  autoPadding :boolean,   padding :chart.js.chart.js.Scriptable<number | std.Partial<chart.js.chart.js/types/geometric.ChartArea>, chart.js.chart.js.ScriptableContext<'bar'>>}> */
+/* Inlined std.Partial<{  autoPadding :boolean,   padding :chart.js.chart.js/dist/types/index.Scriptable<chart.js.chart.js/dist/types/geometric.Padding, chart.js.chart.js/dist/types/index.ScriptableContext<'bar'>>}> */
 trait PartialautoPaddingboolean extends StObject {
   
   var autoPadding: js.UndefOr[Boolean] = js.undefined
   
-  var padding: js.UndefOr[Scriptable[Double | PartialChartArea, ScriptableContext[bar]]] = js.undefined
+  var padding: js.UndefOr[typings.chartJs.distTypesIndexMod.Scriptable[Padding, ScriptableContext[bar]]] = js.undefined
 }
 object PartialautoPaddingboolean {
   
@@ -29,9 +29,9 @@ object PartialautoPaddingboolean {
     
     inline def setAutoPaddingUndefined: Self = StObject.set(x, "autoPadding", js.undefined)
     
-    inline def setPadding(value: Scriptable[Double | PartialChartArea, ScriptableContext[bar]]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: typings.chartJs.distTypesIndexMod.Scriptable[Padding, ScriptableContext[bar]]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    inline def setPaddingFunction2(value: (ScriptableContext[bar], /* options */ AnyObject) => js.UndefOr[Double | PartialChartArea]): Self = StObject.set(x, "padding", js.Any.fromFunction2(value))
+    inline def setPaddingFunction2(value: (ScriptableContext[bar], /* options */ AnyObject) => js.UndefOr[Padding]): Self = StObject.set(x, "padding", js.Any.fromFunction2(value))
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
   }

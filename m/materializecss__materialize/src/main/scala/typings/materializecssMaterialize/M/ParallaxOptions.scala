@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParallaxOptions extends StObject {
   
   /**
-    * The minimum width of the screen, in pixels, where the parallax functionality starts working
+    * The minimum width of the screen, in pixels, where the parallax functionality starts working.
     * @default 0
     */
   var responsiveThreshold: Double

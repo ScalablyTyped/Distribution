@@ -57,7 +57,7 @@ object Mouse {
     * @param {MouseEvent} event - The MouseEvent object.
     */
   /**
-    * Check if the mouse pointer has been locked, using {@link Mouse#enabledPointerLock}.
+    * Check if the mouse pointer has been locked, using {@link Mouse#enablePointerLock}.
     *
     * @returns {boolean} True if locked.
     */

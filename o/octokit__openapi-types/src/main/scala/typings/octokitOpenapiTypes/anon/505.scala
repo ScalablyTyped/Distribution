@@ -6,18 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `505` extends StObject {
   
-  var path: OwnerPathRepo
+  var secrets: js.Array[CreatedatName]
+  
+  var total_count: Double
 }
 object `505` {
   
-  inline def apply(path: OwnerPathRepo): `505` = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+  inline def apply(secrets: js.Array[CreatedatName], total_count: Double): `505` = {
+    val __obj = js.Dynamic.literal(secrets = secrets.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[`505`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `505`] (val x: Self) extends AnyVal {
     
-    inline def setPath(value: OwnerPathRepo): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setSecrets(value: js.Array[CreatedatName]): Self = StObject.set(x, "secrets", value.asInstanceOf[js.Any])
+    
+    inline def setSecretsVarargs(value: CreatedatName*): Self = StObject.set(x, "secrets", js.Array(value*))
+    
+    inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
   }
 }

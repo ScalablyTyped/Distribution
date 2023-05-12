@@ -58,4 +58,10 @@ open class Dirent () extends StObject {
     * @since v10.10.0
     */
   var name: String = js.native
+  
+  /**
+    * The base path that this `fs.Dirent` object refers to.
+    * @since v20.1.0
+    */
+  var path: String = js.native
 }

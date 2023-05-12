@@ -75,7 +75,7 @@ trait DataOptions extends StObject {
     * dates. Valid options include: `YYYY/mm/dd`, `dd/mm/YYYY`, `mm/dd/YYYY`,
     * `dd/mm/YY`, `mm/dd/YY`.
     */
-  var dateFormat: js.UndefOr[String] = js.undefined
+  var dateFormat: js.UndefOr[OptionsDateFormatValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The decimal point used for
@@ -259,7 +259,7 @@ object DataOptions {
     
     inline def setDataRefreshRateUndefined: Self = StObject.set(x, "dataRefreshRate", js.undefined)
     
-    inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
+    inline def setDateFormat(value: OptionsDateFormatValue): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
     inline def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
     

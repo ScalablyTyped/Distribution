@@ -11,7 +11,7 @@ open class ResponsiveContainer protected () extends Component[ResponsiveContaine
   def this(props: ResponsiveContainerProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: ResponsiveContainerProps, context: Any) = this()
 }

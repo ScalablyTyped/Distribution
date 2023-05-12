@@ -12,7 +12,7 @@ trait MMORoom
   extends StObject
      with SFSRoom {
   
-  /** @type {Data.Vec3D} Returns the default Area of Interest (AoI) of this MMORoom. */
+  /** Returns the default Area of Interest (AoI) of this MMORoom. */
   var defaultAOI: Vec3D
   
   /**
@@ -28,10 +28,10 @@ trait MMORoom
     */
   def getMMOItems(): js.Array[MMOItem]
   
-  /** @type {Requests.MMO.MapLimits} Returns the higher coordinates limit of the virtual environment represented by the MMORoom along the X,Y,Z axes. If null is returned, no limits were set at Room creation time. */
+  /** Returns the higher coordinates limit of the virtual environment represented by the MMORoom along the X,Y,Z axes. If null is returned, no limits were set at Room creation time. */
   var higherMapLimit: MapLimits
   
-  /** @type {Requests.MMO.MapLimits} Returns the lower coordinates limit of the virtual environment represented by the MMORoom along the X,Y,Z axes. If null is returned, no limits were set at Room creation time. */
+  /** Returns the lower coordinates limit of the virtual environment represented by the MMORoom along the X,Y,Z axes. If null is returned, no limits were set at Room creation time. */
   var lowerMapLimit: MapLimits
 }
 object MMORoom {

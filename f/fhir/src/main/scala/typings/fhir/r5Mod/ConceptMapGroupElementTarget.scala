@@ -21,6 +21,8 @@ trait ConceptMapGroupElementTarget
   
   var _relationship: js.UndefOr[Element] = js.undefined
   
+  var _valueSet: js.UndefOr[Element] = js.undefined
+  
   /**
     * Identity (code or path) or the element/item that the map refers to.
     */
@@ -32,7 +34,7 @@ trait ConceptMapGroupElementTarget
   var comment: js.UndefOr[String] = js.undefined
   
   /**
-    * A set of additional dependencies for this mapping to hold. This mapping is only applicable if the specified element can be resolved, and it has the specified value.
+    * A set of additional dependencies for this mapping to hold. This mapping is only applicable if the specified data attribute can be resolved, and it has the specified value.
     */
   var dependsOn: js.UndefOr[js.Array[ConceptMapGroupElementTargetDependsOn]] = js.undefined
   
@@ -42,14 +44,24 @@ trait ConceptMapGroupElementTarget
   var display: js.UndefOr[String] = js.undefined
   
   /**
-    * A set of additional outcomes from this mapping to other elements. To properly execute this mapping, the specified element must be mapped to some data element or source that is in context. The mapping may still be useful without a place for the additional data elements, but the relationship (e.g., equivalent) cannot be relied on.
+    * Product is the output of a ConceptMap that provides additional values that go in other attributes / data elemnts of the target data.
     */
   var product: js.UndefOr[js.Array[ConceptMapGroupElementTargetDependsOn]] = js.undefined
+  
+  /**
+    * A property value for this source -> target mapping.
+    */
+  var property: js.UndefOr[js.Array[ConceptMapGroupElementTargetProperty]] = js.undefined
   
   /**
     * This element is labeled as a modifier because it may indicate that there is no mapping.
     */
   var relationship: `related-to` | equivalent | `source-is-narrower-than-target` | `source-is-broader-than-target` | `not-related-to`
+  
+  /**
+    * If the the value set expansion is empty then the source concept(s) are unmapped and the behavior of ConceptMap.group.unmapped (if present) applies.
+    */
+  var valueSet: js.UndefOr[String] = js.undefined
 }
 object ConceptMapGroupElementTarget {
   
@@ -87,9 +99,19 @@ object ConceptMapGroupElementTarget {
     
     inline def setProductVarargs(value: ConceptMapGroupElementTargetDependsOn*): Self = StObject.set(x, "product", js.Array(value*))
     
+    inline def setProperty(value: js.Array[ConceptMapGroupElementTargetProperty]): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    
+    inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+    
+    inline def setPropertyVarargs(value: ConceptMapGroupElementTargetProperty*): Self = StObject.set(x, "property", js.Array(value*))
+    
     inline def setRelationship(
       value: `related-to` | equivalent | `source-is-narrower-than-target` | `source-is-broader-than-target` | `not-related-to`
     ): Self = StObject.set(x, "relationship", value.asInstanceOf[js.Any])
+    
+    inline def setValueSet(value: String): Self = StObject.set(x, "valueSet", value.asInstanceOf[js.Any])
+    
+    inline def setValueSetUndefined: Self = StObject.set(x, "valueSet", js.undefined)
     
     inline def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
     
@@ -106,5 +128,9 @@ object ConceptMapGroupElementTarget {
     inline def set_relationship(value: Element): Self = StObject.set(x, "_relationship", value.asInstanceOf[js.Any])
     
     inline def set_relationshipUndefined: Self = StObject.set(x, "_relationship", js.undefined)
+    
+    inline def set_valueSet(value: Element): Self = StObject.set(x, "_valueSet", value.asInstanceOf[js.Any])
+    
+    inline def set_valueSetUndefined: Self = StObject.set(x, "_valueSet", js.undefined)
   }
 }

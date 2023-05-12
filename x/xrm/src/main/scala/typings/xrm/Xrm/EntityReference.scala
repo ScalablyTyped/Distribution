@@ -10,10 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * SelectedControlAllItemReferences
   * SelectedControlUnselectedItemReferences
   *
-  * Not to be confused with the more commonly used LookupValue.
+  * Not to be confused with the more commonly used {@link Xrm.LookupValue LookupValue }.
   *
-  * @see LookupValue
-  * @see {@link https://docs.microsoft.com/en-us/previous-versions/dynamicscrm-2016/developers-guide/gg309332(v=crm.8)#remarks}
+  * @see {@link https://learn.microsoft.com/en-us/previous-versions/dynamicscrm-2016/developers-guide/gg309332(v=crm.8)#remarks External Link: CrmParameter Remarks}
   */
 trait EntityReference extends StObject {
   

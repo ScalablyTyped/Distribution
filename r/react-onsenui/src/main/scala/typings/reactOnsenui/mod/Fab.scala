@@ -12,7 +12,7 @@ open class Fab protected () extends Component[Name, Any] {
   def this(props: HTMLAttributesidclassName & Name) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: HTMLAttributesidclassName & Name, context: Any) = this()
 }

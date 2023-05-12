@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateDomainRequest extends StObject {
   
   /**
-    * The idempotency token for creating a new domain. If not provided, Amazon Web Services SDK populates this field.
+    * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request. If not provided, the Amazon Web Services SDK populates this field. For more information about idempotency, see Making retries safe with idempotent APIs.
     */
   var ClientToken: js.UndefOr[ClientTokenString] = js.undefined
   
   /**
-    * A brief description of the domain.
+    * A brief description of this domain.
     */
   var Description: js.UndefOr[typings.awsSdk.clientsVoiceidMod.Description] = js.undefined
   

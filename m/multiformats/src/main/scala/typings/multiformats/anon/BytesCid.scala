@@ -3,11 +3,12 @@ package typings.multiformats.anon
 import typings.multiformats.distTypesSrcBlockInterfaceMod.ByteView
 import typings.multiformats.distTypesSrcCodecsInterfaceMod.BlockDecoder
 import typings.multiformats.distTypesSrcLinkInterfaceMod.Link
+import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BytesCid[T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: typings.multiformats.distTypesSrcLinkInterfaceMod.Version */] extends StObject {
+trait BytesCid[T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: Version */] extends StObject {
   
   var bytes: ByteView[T]
   
@@ -19,13 +20,13 @@ trait BytesCid[T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <
 }
 object BytesCid {
   
-  inline def apply[T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: typings.multiformats.distTypesSrcLinkInterfaceMod.Version */](bytes: ByteView[T], cid: Link[T, Code, Alg, V], codec: BlockDecoder[Code, T]): BytesCid[T, Code, Alg, V] = {
+  inline def apply[T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: Version */](bytes: ByteView[T], cid: Link[T, Code, Alg, V], codec: BlockDecoder[Code, T]): BytesCid[T, Code, Alg, V] = {
     val __obj = js.Dynamic.literal(bytes = bytes.asInstanceOf[js.Any], cid = cid.asInstanceOf[js.Any], codec = codec.asInstanceOf[js.Any])
     __obj.asInstanceOf[BytesCid[T, Code, Alg, V]]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: BytesCid[?, ?, ?, ?], T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: typings.multiformats.distTypesSrcLinkInterfaceMod.Version */] (val x: Self & (BytesCid[T, Code, Alg, V])) extends AnyVal {
+  implicit open class MutableBuilder[Self <: BytesCid[?, ?, ?, ?], T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: Version */] (val x: Self & (BytesCid[T, Code, Alg, V])) extends AnyVal {
     
     inline def setBytes(value: ByteView[T]): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     

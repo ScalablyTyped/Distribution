@@ -7,27 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PostLaunchActions extends StObject {
   
   /**
-    * Server participating in Job.
+    * AWS Systems Manager Command's CloudWatch log group name.
     */
   var cloudWatchLogGroupName: js.UndefOr[CloudWatchLogGroupName] = js.undefined
   
   /**
-    * Server participating in Job.
+    * Deployment type in which AWS Systems Manager Documents will be executed.
     */
   var deployment: js.UndefOr[PostLaunchActionsDeploymentType] = js.undefined
   
   /**
-    * Server participating in Job.
+    * AWS Systems Manager Command's logs S3 log bucket.
     */
   var s3LogBucket: js.UndefOr[S3LogBucketName] = js.undefined
   
   /**
-    * Server participating in Job.
+    * AWS Systems Manager Command's logs S3 output key prefix.
     */
   var s3OutputKeyPrefix: js.UndefOr[BoundedString] = js.undefined
   
   /**
-    * Server participating in Job.
+    * AWS Systems Manager Documents.
     */
   var ssmDocuments: js.UndefOr[SsmDocuments] = js.undefined
 }

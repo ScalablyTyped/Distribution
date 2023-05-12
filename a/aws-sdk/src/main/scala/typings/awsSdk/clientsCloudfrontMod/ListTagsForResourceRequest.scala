@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListTagsForResourceRequest extends StObject {
   
   /**
-    *  An ARN of a CloudFront resource.
+    * An ARN of a CloudFront resource.
     */
   var Resource: ResourceARN
 }

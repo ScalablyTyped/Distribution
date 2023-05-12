@@ -2,19 +2,26 @@ package typings.phaser.Phaser.GameObjects
 
 import typings.phaser.Phaser.Curves.Path
 import typings.phaser.Phaser.Display.BaseShader
+import typings.phaser.Phaser.Display.Masks.BitmapMask
 import typings.phaser.Phaser.Events.EventEmitter
-import typings.phaser.Phaser.GameObjects.Particles.ParticleEmitterManager
+import typings.phaser.Phaser.GameObjects.Particles.ParticleEmitter
 import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Scenes.Systems
+import typings.phaser.Phaser.Textures.DynamicTexture
+import typings.phaser.Phaser.Textures.Frame
 import typings.phaser.Phaser.Textures.Texture
 import typings.phaser.Phaser.Tilemaps.Tilemap
+import typings.phaser.Phaser.Time.Timeline
 import typings.phaser.Phaser.Tweens.Tween
+import typings.phaser.Phaser.Tweens.TweenChain
 import typings.phaser.Phaser.Types.GameObjects.Graphics.Options
 import typings.phaser.Phaser.Types.GameObjects.Group.GroupConfig
 import typings.phaser.Phaser.Types.GameObjects.Group.GroupCreateConfig
 import typings.phaser.Phaser.Types.GameObjects.Particles.ParticleEmitterConfig
 import typings.phaser.Phaser.Types.Math.Vector2Like
+import typings.phaser.Phaser.Types.Time.TimelineEventConfig
 import typings.phaser.Phaser.Types.Tweens.TweenBuilderConfig
+import typings.phaser.Phaser.Types.Tweens.TweenChainBuilderConfig
 import typings.phaser.SpineContainer
 import typings.phaser.SpineGameObject
 import typings.std.HTMLElement
@@ -69,6 +76,48 @@ trait GameObjectFactory extends StObject {
   ): Arc = js.native
   
   /**
+    * A Bitmap Mask combines the alpha (opacity) of a masked pixel with the alpha of another pixel.
+    * Unlike the Geometry Mask, which is a clipping path, a Bitmap Mask behaves like an alpha mask,
+    * not a clipping path. It is only available when using the WebGL Renderer.
+    * 
+    * A Bitmap Mask can use any Game Object, or Dynamic Texture, to determine the alpha of each pixel of the masked Game Object(s).
+    * For any given point of a masked Game Object's texture, the pixel's alpha will be multiplied by the alpha
+    * of the pixel at the same position in the Bitmap Mask's Game Object. The color of the pixel from the
+    * Bitmap Mask doesn't matter.
+    * 
+    * For example, if a pure blue pixel with an alpha of 0.95 is masked with a pure red pixel with an
+    * alpha of 0.5, the resulting pixel will be pure blue with an alpha of 0.475. Naturally, this means
+    * that a pixel in the mask with an alpha of 0 will hide the corresponding pixel in all masked Game Objects
+    *  A pixel with an alpha of 1 in the masked Game Object will receive the same alpha as the
+    * corresponding pixel in the mask.
+    * 
+    * Note: You cannot combine Bitmap Masks and Blend Modes on the same Game Object. You can, however,
+    * combine Geometry Masks and Blend Modes together.
+    * 
+    * The Bitmap Mask's location matches the location of its Game Object, not the location of the
+    * masked objects. Moving or transforming the underlying Game Object will change the mask
+    * (and affect the visibility of any masked objects), whereas moving or transforming a masked object
+    * will not affect the mask.
+    * 
+    * The Bitmap Mask will not render its Game Object by itself. If the Game Object is not in a
+    * Scene's display list, it will only be used for the mask and its full texture will not be directly
+    * visible. Adding the underlying Game Object to a Scene will not cause any problems - it will
+    * render as a normal Game Object and will also serve as a mask.
+    * @param maskObject The Game Object or Texture that will be used as the mask. If `null` it will generate an Image Game Object using the rest of the arguments.
+    * @param x If creating a Game Object, the horizontal position in the world.
+    * @param y If creating a Game Object, the vertical position in the world.
+    * @param texture If creating a Game Object, the key, or instance of the Texture it will use to render with, as stored in the Texture Manager.
+    * @param frame If creating a Game Object, an optional frame from the Texture this Game Object is rendering with.
+    */
+  def bitmapMask(
+    maskObject: js.UndefOr[GameObject | DynamicTexture],
+    x: js.UndefOr[Double],
+    y: js.UndefOr[Double],
+    texture: js.UndefOr[String | Texture],
+    frame: js.UndefOr[String | Double | Frame]
+  ): BitmapMask = js.native
+  
+  /**
     * Creates a new Bitmap Text Game Object and adds it to the Scene.
     * 
     * BitmapText objects work by taking a texture file and an XML or JSON file that describes the font structure.
@@ -118,12 +167,15 @@ trait GameObjectFactory extends StObject {
     * Note: This method will only be available if the Blitter Game Object has been built into Phaser.
     * @param x The x position of the Game Object.
     * @param y The y position of the Game Object.
-    * @param key The key of the Texture the Blitter object will use.
+    * @param texture The key, or instance of the Texture this Game Object will use to render with, as stored in the Texture Manager.
     * @param frame The default Frame children of the Blitter will use.
     */
-  def blitter(x: Double, y: Double, key: String): Blitter = js.native
-  def blitter(x: Double, y: Double, key: String, frame: String): Blitter = js.native
-  def blitter(x: Double, y: Double, key: String, frame: Double): Blitter = js.native
+  def blitter(x: Double, y: Double, texture: String): Blitter = js.native
+  def blitter(x: Double, y: Double, texture: String, frame: String): Blitter = js.native
+  def blitter(x: Double, y: Double, texture: String, frame: Double): Blitter = js.native
+  def blitter(x: Double, y: Double, texture: Texture): Blitter = js.native
+  def blitter(x: Double, y: Double, texture: Texture, frame: String): Blitter = js.native
+  def blitter(x: Double, y: Double, texture: Texture, frame: Double): Blitter = js.native
   
   /**
     * Creates a new Circle Shape Game Object and adds it to the Scene.
@@ -544,6 +596,9 @@ trait GameObjectFactory extends StObject {
   def group(children: GroupConfig): Group = js.native
   def group(children: GroupConfig, config: GroupConfig): Group = js.native
   def group(children: GroupConfig, config: GroupCreateConfig): Group = js.native
+  def group(children: GroupCreateConfig): Group = js.native
+  def group(children: GroupCreateConfig, config: GroupConfig): Group = js.native
+  def group(children: GroupCreateConfig, config: GroupCreateConfig): Group = js.native
   
   /**
     * Creates a new Image Game Object and adds it to the Scene.
@@ -714,37 +769,137 @@ trait GameObjectFactory extends StObject {
   ): Mesh = js.native
   
   /**
-    * Creates a new Particle Emitter Manager Game Object and adds it to the Scene.
+    * A Nine Slice Game Object allows you to display a texture-based object that
+    * can be stretched both horizontally and vertically, but that retains
+    * fixed-sized corners. The dimensions of the corners are set via the
+    * parameters to this class.
     * 
-    * Note: This method will only be available if the Particles Game Object has been built into Phaser.
+    * This is extremely useful for UI and button like elements, where you need
+    * them to expand to accommodate the content without distorting the texture.
+    * 
+    * The texture you provide for this Game Object should be based on the
+    * following layout structure:
+    * 
+    * ```
+    *      A                          B
+    *    +---+----------------------+---+
+    *  C | 1 |          2           | 3 |
+    *    +---+----------------------+---+
+    *    |   |                      |   |
+    *    | 4 |          5           | 6 |
+    *    |   |                      |   |
+    *    +---+----------------------+---+
+    *  D | 7 |          8           | 9 |
+    *    +---+----------------------+---+
+    * ```
+    * 
+    * When changing this objects width and / or height:
+    * 
+    *     areas 1, 3, 7 and 9 (the corners) will remain unscaled
+    *     areas 2 and 8 will be stretched horizontally only
+    *     areas 4 and 6 will be stretched vertically only
+    *     area 5 will be stretched both horizontally and vertically
+    * 
+    * You can also create a 3 slice Game Object:
+    * 
+    * This works in a similar way, except you can only stretch it horizontally.
+    * Therefore, it requires less configuration:
+    * 
+    * ```
+    *      A                          B
+    *    +---+----------------------+---+
+    *    |   |                      |   |
+    *  C | 1 |          2           | 3 |
+    *    |   |                      |   |
+    *    +---+----------------------+---+
+    * ```
+    * 
+    * When changing this objects width (you cannot change its height)
+    * 
+    *     areas 1 and 3 will remain unscaled
+    *     area 2 will be stretched horizontally
+    * 
+    * The above configuration concept is adapted from the Pixi NineSlicePlane.
+    * 
+    * To specify a 3 slice object instead of a 9 slice you should only
+    * provide the `leftWidth` and `rightWidth` parameters. To create a 9 slice
+    * you must supply all parameters.
+    * 
+    * The _minimum_ width this Game Object can be is the total of
+    * `leftWidth` + `rightWidth`.  The _minimum_ height this Game Object
+    * can be is the total of `topHeight` + `bottomHeight`.
+    * If you need to display this object at a smaller size, you can scale it.
+    * 
+    * In terms of performance, using a 3 slice Game Object is the equivalent of
+    * having 3 Sprites in a row. Using a 9 slice Game Object is the equivalent
+    * of having 9 Sprites in a row. The vertices of this object are all batched
+    * together and can co-exist with other Sprites and graphics on the display
+    * list, without incurring any additional overhead.
+    * 
+    * As of Phaser 3.60 this Game Object is WebGL only.
+    * @param x The horizontal position of the center of this Game Object in the world.
+    * @param y The vertical position of the center of this Game Object in the world.
     * @param texture The key, or instance of the Texture this Game Object will use to render with, as stored in the Texture Manager.
     * @param frame An optional frame from the Texture this Game Object is rendering with.
-    * @param emitters Configuration settings for one or more emitters to create.
+    * @param width The width of the Nine Slice Game Object. You can adjust the width post-creation. Default 256.
+    * @param height The height of the Nine Slice Game Object. If this is a 3 slice object the height will be fixed to the height of the texture and cannot be changed. Default 256.
+    * @param leftWidth The size of the left vertical column (A). Default 10.
+    * @param rightWidth The size of the right vertical column (B). Default 10.
+    * @param topHeight The size of the top horiztonal row (C). Set to zero or undefined to create a 3 slice object. Default 0.
+    * @param bottomHeight The size of the bottom horiztonal row (D). Set to zero or undefined to create a 3 slice object. Default 0.
     */
-  def particles(texture: String): ParticleEmitterManager = js.native
-  def particles(texture: String, frame: String): ParticleEmitterManager = js.native
-  def particles(texture: String, frame: String, emitters: js.Array[ParticleEmitterConfig]): ParticleEmitterManager = js.native
-  def particles(texture: String, frame: String, emitters: ParticleEmitterConfig): ParticleEmitterManager = js.native
-  def particles(texture: String, frame: js.Object): ParticleEmitterManager = js.native
-  def particles(texture: String, frame: js.Object, emitters: js.Array[ParticleEmitterConfig]): ParticleEmitterManager = js.native
-  def particles(texture: String, frame: js.Object, emitters: ParticleEmitterConfig): ParticleEmitterManager = js.native
-  def particles(texture: String, frame: Double): ParticleEmitterManager = js.native
-  def particles(texture: String, frame: Double, emitters: js.Array[ParticleEmitterConfig]): ParticleEmitterManager = js.native
-  def particles(texture: String, frame: Double, emitters: ParticleEmitterConfig): ParticleEmitterManager = js.native
-  def particles(texture: String, frame: Unit, emitters: js.Array[ParticleEmitterConfig]): ParticleEmitterManager = js.native
-  def particles(texture: String, frame: Unit, emitters: ParticleEmitterConfig): ParticleEmitterManager = js.native
-  def particles(texture: Texture): ParticleEmitterManager = js.native
-  def particles(texture: Texture, frame: String): ParticleEmitterManager = js.native
-  def particles(texture: Texture, frame: String, emitters: js.Array[ParticleEmitterConfig]): ParticleEmitterManager = js.native
-  def particles(texture: Texture, frame: String, emitters: ParticleEmitterConfig): ParticleEmitterManager = js.native
-  def particles(texture: Texture, frame: js.Object): ParticleEmitterManager = js.native
-  def particles(texture: Texture, frame: js.Object, emitters: js.Array[ParticleEmitterConfig]): ParticleEmitterManager = js.native
-  def particles(texture: Texture, frame: js.Object, emitters: ParticleEmitterConfig): ParticleEmitterManager = js.native
-  def particles(texture: Texture, frame: Double): ParticleEmitterManager = js.native
-  def particles(texture: Texture, frame: Double, emitters: js.Array[ParticleEmitterConfig]): ParticleEmitterManager = js.native
-  def particles(texture: Texture, frame: Double, emitters: ParticleEmitterConfig): ParticleEmitterManager = js.native
-  def particles(texture: Texture, frame: Unit, emitters: js.Array[ParticleEmitterConfig]): ParticleEmitterManager = js.native
-  def particles(texture: Texture, frame: Unit, emitters: ParticleEmitterConfig): ParticleEmitterManager = js.native
+  def nineslice(
+    x: Double,
+    y: Double,
+    texture: String | Texture,
+    frame: js.UndefOr[String | Double],
+    width: js.UndefOr[Double],
+    height: js.UndefOr[Double],
+    leftWidth: js.UndefOr[Double],
+    rightWidth: js.UndefOr[Double],
+    topHeight: js.UndefOr[Double],
+    bottomHeight: js.UndefOr[Double]
+  ): NineSlice = js.native
+  
+  /**
+    * Creates a new Particle Emitter Game Object and adds it to the Scene.
+    * 
+    * If you wish to configure the Emitter after creating it, use the `ParticleEmitter.setConfig` method.
+    * 
+    * Prior to Phaser v3.60 this function would create a `ParticleEmitterManager`. These were removed
+    * in v3.60 and replaced with creating a `ParticleEmitter` instance directly. Please see the
+    * updated function parameters and class documentation for more details.
+    * 
+    * Note: This method will only be available if the Particles Game Object has been built into Phaser.
+    * @param x The horizontal position of this Game Object in the world.
+    * @param y The vertical position of this Game Object in the world.
+    * @param texture The key, or instance of the Texture this Game Object will use to render with, as stored in the Texture Manager.
+    * @param config Configuration settings for the Particle Emitter.
+    */
+  def particles(): ParticleEmitter = js.native
+  def particles(x: Double): ParticleEmitter = js.native
+  def particles(x: Double, y: Double): ParticleEmitter = js.native
+  def particles(x: Double, y: Double, texture: String): ParticleEmitter = js.native
+  def particles(x: Double, y: Double, texture: String, config: ParticleEmitterConfig): ParticleEmitter = js.native
+  def particles(x: Double, y: Double, texture: Unit, config: ParticleEmitterConfig): ParticleEmitter = js.native
+  def particles(x: Double, y: Double, texture: Texture): ParticleEmitter = js.native
+  def particles(x: Double, y: Double, texture: Texture, config: ParticleEmitterConfig): ParticleEmitter = js.native
+  def particles(x: Double, y: Unit, texture: String): ParticleEmitter = js.native
+  def particles(x: Double, y: Unit, texture: String, config: ParticleEmitterConfig): ParticleEmitter = js.native
+  def particles(x: Double, y: Unit, texture: Unit, config: ParticleEmitterConfig): ParticleEmitter = js.native
+  def particles(x: Double, y: Unit, texture: Texture): ParticleEmitter = js.native
+  def particles(x: Double, y: Unit, texture: Texture, config: ParticleEmitterConfig): ParticleEmitter = js.native
+  def particles(x: Unit, y: Double): ParticleEmitter = js.native
+  def particles(x: Unit, y: Double, texture: String): ParticleEmitter = js.native
+  def particles(x: Unit, y: Double, texture: String, config: ParticleEmitterConfig): ParticleEmitter = js.native
+  def particles(x: Unit, y: Double, texture: Unit, config: ParticleEmitterConfig): ParticleEmitter = js.native
+  def particles(x: Unit, y: Double, texture: Texture): ParticleEmitter = js.native
+  def particles(x: Unit, y: Double, texture: Texture, config: ParticleEmitterConfig): ParticleEmitter = js.native
+  def particles(x: Unit, y: Unit, texture: String): ParticleEmitter = js.native
+  def particles(x: Unit, y: Unit, texture: String, config: ParticleEmitterConfig): ParticleEmitter = js.native
+  def particles(x: Unit, y: Unit, texture: Unit, config: ParticleEmitterConfig): ParticleEmitter = js.native
+  def particles(x: Unit, y: Unit, texture: Texture): ParticleEmitter = js.native
+  def particles(x: Unit, y: Unit, texture: Texture, config: ParticleEmitterConfig): ParticleEmitter = js.native
   
   /**
     * Creates a new Path Object.
@@ -752,6 +907,28 @@ trait GameObjectFactory extends StObject {
     * @param y The vertical position of this Path.
     */
   def path(x: Double, y: Double): Path = js.native
+  
+  /**
+    * Creates a new Plane Game Object and adds it to the Scene.
+    * 
+    * Note: This method will only be available if the Plane Game Object has been built into Phaser.
+    * @param x The horizontal position of this Plane in the world.
+    * @param y The vertical position of this Plane in the world.
+    * @param texture The key, or instance of the Texture this Plane will use to render with, as stored in the Texture Manager.
+    * @param frame An optional frame from the Texture this Plane is rendering with.
+    * @param width The width of this Plane, in cells, not pixels. Default 8.
+    * @param height The height of this Plane, in cells, not pixels. Default 8.
+    * @param tile Is the texture tiled? I.e. repeated across each cell. Default false.
+    */
+  def plane(
+    x: js.UndefOr[Double],
+    y: js.UndefOr[Double],
+    texture: js.UndefOr[String | Texture],
+    frame: js.UndefOr[String | Double],
+    width: js.UndefOr[Double],
+    height: js.UndefOr[Double],
+    tile: js.UndefOr[Boolean]
+  ): Plane = js.native
   
   /**
     * Creates a new Point Light Game Object and adds it to the Scene.
@@ -785,7 +962,7 @@ trait GameObjectFactory extends StObject {
     * @param y The vertical position of this Point Light in the world.
     * @param color The color of the Point Light, given as a hex value. Default 0xffffff.
     * @param radius The radius of the Point Light. Default 128.
-    * @param intensity The intensity, or colr blend, of the Point Light. Default 1.
+    * @param intensity The intensity, or color blend, of the Point Light. Default 1.
     * @param attenuation The attenuation  of the Point Light. This is the reduction of light from the center point. Default 0.1.
     */
   def pointlight(x: Double, y: Double): PointLight = js.native
@@ -900,9 +1077,18 @@ trait GameObjectFactory extends StObject {
     * 
     * Note: This method will only be available if the Render Texture Game Object has been built into Phaser.
     * 
-    * A Render Texture is a special texture that allows any number of Game Objects to be drawn to it. You can take many complex objects and
-    * draw them all to this one texture, which can they be used as the texture for other Game Object's. It's a way to generate dynamic
-    * textures at run-time that are WebGL friendly and don't invoke expensive GPU uploads.
+    * A Render Texture is a combination of Dynamic Texture and an Image Game Object, that uses the
+    * Dynamic Texture to display itself with.
+    * 
+    * A Dynamic Texture is a special texture that allows you to draw textures, frames and most kind of
+    * Game Objects directly to it.
+    * 
+    * You can take many complex objects and draw them to this one texture, which can then be used as the
+    * base texture for other Game Objects, such as Sprites. Should you then update this texture, all
+    * Game Objects using it will instantly be updated as well, reflecting the changes immediately.
+    * 
+    * It's a powerful way to generate dynamic textures at run-time that are WebGL friendly and don't invoke
+    * expensive GPU uploads on each change.
     * @param x The horizontal position of this Game Object in the world.
     * @param y The vertical position of this Game Object in the world.
     * @param width The width of the Render Texture. Default 32.
@@ -1085,7 +1271,7 @@ trait GameObjectFactory extends StObject {
     * @param y The vertical position of this Game Object in the world.
     * @param width The width of the Game Object. If zero it will use the size of the texture frame.
     * @param height The height of the Game Object. If zero it will use the size of the texture frame.
-    * @param texture The key, or instance of the Texture this Game Object will use to render with, as stored in the Texture Manager.
+    * @param texture The key, or instance of the Texture this Game Object will use to render with, as stored in the Texture Manager. Cannot be a DynamicTexture.
     * @param frame An optional frame from the Texture this Game Object is rendering with.
     */
   def tileSprite(x: Double, y: Double, width: Double, height: Double, texture: String): TileSprite = js.native
@@ -1128,6 +1314,78 @@ trait GameObjectFactory extends StObject {
     insertNull: js.UndefOr[Boolean]
   ): Tilemap = js.native
   
+  def timeline(config: js.Array[TimelineEventConfig]): Timeline = js.native
+  /**
+    * A Timeline is a way to schedule events to happen at specific times in the future.
+    * 
+    * You can think of it as an event sequencer for your game, allowing you to schedule the
+    * running of callbacks, events and other actions at specific times in the future.
+    * 
+    * A Timeline is a Scene level system, meaning you can have as many Timelines as you like, each
+    * belonging to a different Scene. You can also have multiple Timelines running at the same time.
+    * 
+    * If the Scene is paused, the Timeline will also pause. If the Scene is destroyed, the Timeline
+    * will be automatically destroyed. However, you can control the Timeline directly, pausing,
+    * resuming and stopping it at any time.
+    * 
+    * Create an instance of a Timeline via the Game Object Factory:
+    * 
+    * ```js
+    * const timeline = this.add.timeline();
+    * ```
+    * 
+    * The Timeline always starts paused. You must call `play` on it to start it running.
+    * 
+    * You can also pass in a configuration object on creation, or an array of them:
+    * 
+    * ```js
+    * const timeline = this.add.timeline({
+    *     at: 1000,
+    *     run: () => {
+    *         this.add.sprite(400, 300, 'logo');
+    *     }
+    * });
+    * 
+    * timeline.play();
+    * ```
+    * 
+    * In this example we sequence a few different events:
+    * 
+    * ```js
+    * const timeline = this.add.timeline([
+    *     {
+    *         at: 1000,
+    *         run: () => { this.logo = this.add.sprite(400, 300, 'logo'); },
+    *         sound: 'TitleMusic'
+    *     },
+    *     {
+    *         at: 2500,
+    *         tween: {
+    *             targets: this.logo,
+    *             y: 600,
+    *             yoyo: true
+    *         },
+    *         sound: 'Explode'
+    *     },
+    *     {
+    *         at: 8000,
+    *         event: 'HURRY_PLAYER',
+    *         target: this.background,
+    *         set: {
+    *             tint: 0xff0000
+    *         }
+    *     }
+    * ]);
+    * 
+    * timeline.play();
+    * ```
+    * 
+    * There are lots of options available to you via the configuration object. See the
+    * {@link Phaser.Types.Time.TimelineEventConfig} typedef for more details.
+    * @param config The configuration object for this Timeline Event, or an array of them.
+    */
+  def timeline(config: TimelineEventConfig): Timeline = js.native
+  
   /**
     * Creates a new Triangle Shape Game Object and adds it to the Scene.
     * 
@@ -1167,14 +1425,25 @@ trait GameObjectFactory extends StObject {
     fillAlpha: js.UndefOr[Double]
   ): Triangle = js.native
   
-  def tween(config: js.Object): Tween = js.native
+  def tween(config: Tween): Tween = js.native
+  def tween(config: TweenChain): Tween = js.native
   /**
     * Creates a new Tween object.
     * 
     * Note: This method will only be available if Tweens have been built into Phaser.
-    * @param config The Tween configuration.
+    * @param config A Tween Configuration object, or a Tween or TweenChain instance.
     */
   def tween(config: TweenBuilderConfig): Tween = js.native
+  def tween(config: TweenChainBuilderConfig): Tween = js.native
+  
+  def tweenchain(config: js.Object): TweenChain = js.native
+  /**
+    * Creates a new TweenChain object and adds it to the Tween Manager.
+    * 
+    * Note: This method will only be available if Tweens have been built into Phaser.
+    * @param config The TweenChain configuration.
+    */
+  def tweenchain(config: TweenBuilderConfig): TweenChain = js.native
   
   /**
     * A reference to the Scene Update List.
@@ -1183,6 +1452,73 @@ trait GameObjectFactory extends StObject {
   
   /**
     * Creates a new Video Game Object and adds it to the Scene.
+    * 
+    * This Game Object is capable of handling playback of a video file, video stream or media stream.
+    * 
+    * You can optionally 'preload' the video into the Phaser Video Cache:
+    * 
+    * ```javascript
+    * preload () {
+    *   this.load.video('ripley', 'assets/aliens.mp4');
+    * }
+    * 
+    * create () {
+    *   this.add.video(400, 300, 'ripley');
+    * }
+    * ```
+    * 
+    * You don't have to 'preload' the video. You can also play it directly from a URL:
+    * 
+    * ```javascript
+    * create () {
+    *   this.add.video(400, 300).loadURL('assets/aliens.mp4');
+    * }
+    * ```
+    * 
+    * To all intents and purposes, a video is a standard Game Object, just like a Sprite. And as such, you can do
+    * all the usual things to it, such as scaling, rotating, cropping, tinting, making interactive, giving a
+    * physics body, etc.
+    * 
+    * Transparent videos are also possible via the WebM file format. Providing the video file has was encoded with
+    * an alpha channel, and providing the browser supports WebM playback (not all of them do), then it will render
+    * in-game with full transparency.
+    * 
+    * ### Autoplaying Videos
+    * 
+    * Videos can only autoplay if the browser has been unlocked with an interaction, or satisfies the MEI settings.
+    * The policies that control autoplaying are vast and vary between browser. You can, and should, read more about
+    * it here: https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide
+    * 
+    * If your video doesn't contain any audio, then set the `noAudio` parameter to `true` when the video is _loaded_,
+    * and it will often allow the video to play immediately:
+    * 
+    * ```javascript
+    * preload () {
+    *   this.load.video('pixar', 'nemo.mp4', true);
+    * }
+    * ```
+    * 
+    * The 3rd parameter in the load call tells Phaser that the video doesn't contain any audio tracks. Video without
+    * audio can autoplay without requiring a user interaction. Video with audio cannot do this unless it satisfies
+    * the browsers MEI settings. See the MDN Autoplay Guide for further details.
+    * 
+    * Or:
+    * 
+    * ```javascript
+    * create () {
+    *   this.add.video(400, 300).loadURL('assets/aliens.mp4', true);
+    * }
+    * ```
+    * 
+    * You can set the `noAudio` parameter to `true` even if the video does contain audio. It will still allow the video
+    * to play immediately, but the audio will not start.
+    * 
+    * Note that due to a bug in IE11 you cannot play a video texture to a Sprite in WebGL. For IE11 force Canvas mode.
+    * 
+    * More details about video playback and the supported media formats can be found on MDN:
+    * 
+    * https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement
+    * https://developer.mozilla.org/en-US/docs/Web/Media/Formats
     * 
     * Note: This method will only be available if the Video Game Object has been built into Phaser.
     * @param x The horizontal position of this Game Object in the world.

@@ -258,6 +258,16 @@ object mod {
     
     var contain: js.UndefOr[StyleValue] = js.undefined
     
+    var containIntrinsicBlockSize: js.UndefOr[StyleValue] = js.undefined
+    
+    var containIntrinsicHeight: js.UndefOr[StyleValue] = js.undefined
+    
+    var containIntrinsicInlineSize: js.UndefOr[StyleValue] = js.undefined
+    
+    var containIntrinsicSize: js.UndefOr[StyleValue] = js.undefined
+    
+    var containIntrinsicWidth: js.UndefOr[StyleValue] = js.undefined
+    
     var container: js.UndefOr[StyleValue] = js.undefined
     
     var containerName: js.UndefOr[StyleValue] = js.undefined
@@ -265,6 +275,8 @@ object mod {
     var containerType: js.UndefOr[StyleValue] = js.undefined
     
     var content: js.UndefOr[StyleValue] = js.undefined
+    
+    var contentVisibility: js.UndefOr[StyleValue] = js.undefined
     
     var counterIncrement: js.UndefOr[StyleValue] = js.undefined
     
@@ -501,6 +513,8 @@ object mod {
     var maskSize: js.UndefOr[StyleValue] = js.undefined
     
     var maskType: js.UndefOr[StyleValue] = js.undefined
+    
+    var mathStyle: js.UndefOr[StyleValue] = js.undefined
     
     var maxBlockSize: js.UndefOr[StyleValue] = js.undefined
     
@@ -1688,6 +1702,36 @@ object mod {
       
       inline def setContain(value: StyleValue): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
       
+      inline def setContainIntrinsicBlockSize(value: StyleValue): Self = StObject.set(x, "containIntrinsicBlockSize", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicBlockSizeNull: Self = StObject.set(x, "containIntrinsicBlockSize", null)
+      
+      inline def setContainIntrinsicBlockSizeUndefined: Self = StObject.set(x, "containIntrinsicBlockSize", js.undefined)
+      
+      inline def setContainIntrinsicHeight(value: StyleValue): Self = StObject.set(x, "containIntrinsicHeight", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicHeightNull: Self = StObject.set(x, "containIntrinsicHeight", null)
+      
+      inline def setContainIntrinsicHeightUndefined: Self = StObject.set(x, "containIntrinsicHeight", js.undefined)
+      
+      inline def setContainIntrinsicInlineSize(value: StyleValue): Self = StObject.set(x, "containIntrinsicInlineSize", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicInlineSizeNull: Self = StObject.set(x, "containIntrinsicInlineSize", null)
+      
+      inline def setContainIntrinsicInlineSizeUndefined: Self = StObject.set(x, "containIntrinsicInlineSize", js.undefined)
+      
+      inline def setContainIntrinsicSize(value: StyleValue): Self = StObject.set(x, "containIntrinsicSize", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicSizeNull: Self = StObject.set(x, "containIntrinsicSize", null)
+      
+      inline def setContainIntrinsicSizeUndefined: Self = StObject.set(x, "containIntrinsicSize", js.undefined)
+      
+      inline def setContainIntrinsicWidth(value: StyleValue): Self = StObject.set(x, "containIntrinsicWidth", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicWidthNull: Self = StObject.set(x, "containIntrinsicWidth", null)
+      
+      inline def setContainIntrinsicWidthUndefined: Self = StObject.set(x, "containIntrinsicWidth", js.undefined)
+      
       inline def setContainNull: Self = StObject.set(x, "contain", null)
       
       inline def setContainUndefined: Self = StObject.set(x, "contain", js.undefined)
@@ -1715,6 +1759,12 @@ object mod {
       inline def setContentNull: Self = StObject.set(x, "content", null)
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
+      inline def setContentVisibility(value: StyleValue): Self = StObject.set(x, "contentVisibility", value.asInstanceOf[js.Any])
+      
+      inline def setContentVisibilityNull: Self = StObject.set(x, "contentVisibility", null)
+      
+      inline def setContentVisibilityUndefined: Self = StObject.set(x, "contentVisibility", js.undefined)
       
       inline def setCounterIncrement(value: StyleValue): Self = StObject.set(x, "counterIncrement", value.asInstanceOf[js.Any])
       
@@ -2423,6 +2473,12 @@ object mod {
       inline def setMaskTypeUndefined: Self = StObject.set(x, "maskType", js.undefined)
       
       inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+      
+      inline def setMathStyle(value: StyleValue): Self = StObject.set(x, "mathStyle", value.asInstanceOf[js.Any])
+      
+      inline def setMathStyleNull: Self = StObject.set(x, "mathStyle", null)
+      
+      inline def setMathStyleUndefined: Self = StObject.set(x, "mathStyle", js.undefined)
       
       inline def setMaxBlockSize(value: StyleValue): Self = StObject.set(x, "maxBlockSize", value.asInstanceOf[js.Any])
       

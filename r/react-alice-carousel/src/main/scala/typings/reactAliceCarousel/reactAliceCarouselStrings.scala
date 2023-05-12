@@ -23,8 +23,16 @@ object reactAliceCarouselStrings {
   inline def alternate: alternate = "alternate".asInstanceOf[alternate]
   
   @js.native
+  sealed trait contain extends StObject
+  inline def contain: contain = "contain".asInstanceOf[contain]
+  
+  @js.native
   sealed trait fadeout extends StObject
   inline def fadeout: fadeout = "fadeout".asInstanceOf[fadeout]
+  
+  @js.native
+  sealed trait fill extends StObject
+  inline def fill: fill = "fill".asInstanceOf[fill]
   
   @js.native
   sealed trait ltr extends StObject

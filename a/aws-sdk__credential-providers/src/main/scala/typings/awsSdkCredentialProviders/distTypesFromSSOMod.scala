@@ -2,7 +2,7 @@ package typings.awsSdkCredentialProviders
 
 import typings.awsSdkClientSso.distTypesSsoclientMod.SSOClientConfig
 import typings.awsSdkClientSso.mod.SSOClient
-import typings.awsSdkTypes.distTypesCredentialsMod.CredentialProvider
+import typings.awsSdkTypes.distTypesIdentityAwsCredentialIdentityMod.AwsCredentialIdentityProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,8 +13,8 @@ object distTypesFromSSOMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromSSO(): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSSO")().asInstanceOf[CredentialProvider]
-  inline def fromSSO(init: FromSSOInit): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSSO")(init.asInstanceOf[js.Any]).asInstanceOf[CredentialProvider]
+  inline def fromSSO(): AwsCredentialIdentityProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSSO")().asInstanceOf[AwsCredentialIdentityProvider]
+  inline def fromSSO(init: FromSSOInit): AwsCredentialIdentityProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSSO")(init.asInstanceOf[js.Any]).asInstanceOf[AwsCredentialIdentityProvider]
   
   /* Inlined parent std.Omit<@aws-sdk/credential-provider-sso.@aws-sdk/credential-provider-sso.FromSSOInit, 'client'> */
   trait FromSSOInit extends StObject {
@@ -24,6 +24,8 @@ object distTypesFromSSOMod {
     var configFilepath: js.UndefOr[String] = js.undefined
     
     var filepath: js.UndefOr[String] = js.undefined
+    
+    var ignoreCache: js.UndefOr[Boolean] = js.undefined
     
     var profile: js.UndefOr[String] = js.undefined
     
@@ -50,6 +52,10 @@ object distTypesFromSSOMod {
       inline def setFilepath(value: String): Self = StObject.set(x, "filepath", value.asInstanceOf[js.Any])
       
       inline def setFilepathUndefined: Self = StObject.set(x, "filepath", js.undefined)
+      
+      inline def setIgnoreCache(value: Boolean): Self = StObject.set(x, "ignoreCache", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreCacheUndefined: Self = StObject.set(x, "ignoreCache", js.undefined)
       
       inline def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       

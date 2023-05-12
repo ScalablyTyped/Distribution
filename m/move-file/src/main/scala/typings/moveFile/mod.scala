@@ -16,7 +16,20 @@ object mod {
   inline def moveFileSync(sourcePath: String, destinationPath: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("moveFileSync")(sourcePath.asInstanceOf[js.Any], destinationPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def moveFileSync(sourcePath: String, destinationPath: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("moveFileSync")(sourcePath.asInstanceOf[js.Any], destinationPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def renameFile(source: String, destination: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("renameFile")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def renameFile(source: String, destination: String, options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("renameFile")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  inline def renameFileSync(source: String, destination: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renameFileSync")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def renameFileSync(source: String, destination: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renameFileSync")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait Options extends StObject {
+    
+    /**
+    	The working directory to find source files.
+    	The source and destination path are relative to this.
+    	@default process.cwd()
+    	*/
+    val cwd: js.UndefOr[String] = js.undefined
     
     /**
     	[Permissions](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation) for created directories.
@@ -40,6 +53,10 @@ object mod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
       inline def setDirectoryMode(value: Double): Self = StObject.set(x, "directoryMode", value.asInstanceOf[js.Any])
       

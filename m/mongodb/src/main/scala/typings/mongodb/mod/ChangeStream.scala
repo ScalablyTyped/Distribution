@@ -1,6 +1,7 @@
 package typings.mongodb.mod
 
 import typings.bson.mod.Document
+import typings.mongodb.anon.ChangeStreamOptionswriteC
 import typings.mongodb.mongodbStrings.change
 import typings.mongodb.mongodbStrings.close
 import typings.mongodb.mongodbStrings.end
@@ -23,25 +24,26 @@ open class ChangeStream[TSchema /* <: Document */, TChange /* <: Document */] ()
   
   /** Close the Change Stream */
   def close(): js.Promise[Unit] = js.native
-  /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  def close(callback: Callback[Any]): Unit = js.native
   
   /** Is the cursor closed */
   def closed: Boolean = js.native
   
   /** Check if there is any document still available in the Change Stream */
   def hasNext(): js.Promise[Boolean] = js.native
-  /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  def hasNext(callback: Callback[Boolean]): Unit = js.native
   
   var namespace: MongoDBNamespace = js.native
   
   /** Get the next available document from the Change Stream. */
   def next(): js.Promise[TChange] = js.native
-  /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  def next(callback: Callback[TChange]): Unit = js.native
   
-  var options: ChangeStreamOptions = js.native
+  /**
+    * @remarks WriteConcern can still be present on the options because
+    * we inherit options from the client/db/collection.  The
+    * key must be present on the options in order to delete it.
+    * This allows typescript to delete the key but will
+    * not allow a writeConcern to be assigned as a property on options.
+    */
+  var options: ChangeStreamOptionswriteC = js.native
   
   var parent: MongoClient | Db | Collection[Document] = js.native
   
@@ -69,9 +71,7 @@ open class ChangeStream[TSchema /* <: Document */, TChange /* <: Document */] ()
   /**
     * Try to get the next available document from the Change Stream's cursor or `null` if an empty batch is returned
     */
-  def tryNext(): js.Promise[Document | Null] = js.native
-  /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  def tryNext(callback: Callback[Document | Null]): Unit = js.native
+  def tryNext(): js.Promise[TChange | Null] = js.native
   
   var `type`: js.Symbol = js.native
 }

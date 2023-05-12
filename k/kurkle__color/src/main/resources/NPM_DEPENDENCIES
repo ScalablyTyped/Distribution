@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@kurkle/color" : "0.3.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@kurkle/color" : "0.3.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

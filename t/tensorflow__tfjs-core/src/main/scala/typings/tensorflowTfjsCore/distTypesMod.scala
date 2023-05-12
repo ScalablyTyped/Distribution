@@ -2,6 +2,7 @@ package typings.tensorflowTfjsCore
 
 import org.scalablytyped.runtime.NumberDictionary
 import typings.std.WebGLTexture
+import typings.webgpuTypes.GPUBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,6 +64,10 @@ object distTypesMod {
          with Rank
     /* "R6" */ val R6: typings.tensorflowTfjsCore.distTypesMod.Rank.R6 & String = js.native
   }
+  
+  inline def isWebGLData(values: Any): /* is @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.WebGLData */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebGLData")(values.asInstanceOf[js.Any]).asInstanceOf[/* is @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.WebGLData */ Boolean]
+  
+  inline def isWebGPUData(values: Any): /* is @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.WebGPUData */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebGPUData")(values.asInstanceOf[js.Any]).asInstanceOf[/* is @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.WebGPUData */ Boolean]
   
   inline def sumOutType(`type`: DataType): DataType = ^.asInstanceOf[js.Dynamic].applyDynamic("sumOutType")(`type`.asInstanceOf[js.Any]).asInstanceOf[DataType]
   
@@ -141,6 +146,15 @@ object distTypesMod {
   */
   trait DataType extends StObject
   
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+    * TS definition: {{{
+    T extends number | boolean ? @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.NumericDataType : T extends string ? 'string' : never
+    }}}
+    */
+  type DataTypeFor[T /* <: Double | String | Boolean */] = NumericDataType
+  
   trait DataTypeMap extends StObject {
     
     var bool: js.typedarray.Uint8Array
@@ -189,6 +203,7 @@ object distTypesMod {
     - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.length
     - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.entries
     - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.pop
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.findLast
     - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.set
     - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.fill
     - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.join
@@ -211,6 +226,7 @@ object distTypesMod {
     - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.at
     - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.unshift
     - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.filter
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.findLastIndex
     - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.subarray
     - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.toString
     - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.indexOf
@@ -254,6 +270,10 @@ object distTypesMod {
     inline def find: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.find = "find".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.find]
     
     inline def findIndex: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.findIndex = "findIndex".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.findIndex]
+    
+    inline def findLast: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.findLast = "findLast".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.findLast]
+    
+    inline def findLastIndex: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.findLastIndex = "findLastIndex".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.findLastIndex]
     
     inline def flat: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.flat = "flat".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.flat]
     
@@ -723,6 +743,30 @@ object distTypesMod {
       inline def setTexture(value: WebGLTexture): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait WebGPUData extends StObject {
+    
+    var buffer: GPUBuffer
+    
+    var zeroCopy: js.UndefOr[Boolean] = js.undefined
+  }
+  object WebGPUData {
+    
+    inline def apply(buffer: GPUBuffer): WebGPUData = {
+      val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any])
+      __obj.asInstanceOf[WebGPUData]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebGPUData] (val x: Self) extends AnyVal {
+      
+      inline def setBuffer(value: GPUBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      
+      inline def setZeroCopy(value: Boolean): Self = StObject.set(x, "zeroCopy", value.asInstanceOf[js.Any])
+      
+      inline def setZeroCopyUndefined: Self = StObject.set(x, "zeroCopy", js.undefined)
     }
   }
 }

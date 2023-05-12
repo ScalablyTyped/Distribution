@@ -2,6 +2,7 @@ package typings.reactDom
 
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
+import typings.reactDom.clientMod.ErrorInfo
 import typings.reactDom.serverMod.global.NodeJS.ReadableStream
 import typings.reactDom.serverMod.global.NodeJS.WritableStream
 import typings.std.AbortSignal
@@ -35,8 +36,10 @@ object serverMod {
   
   trait PipeableStream extends StObject {
     
+    // tslint:disable-next-line:void-return
     def abort(): Unit
     
+    // tslint:disable-next-line:void-return
     def pipe[Writable /* <: WritableStream */](destination: Writable): Writable
   }
   object PipeableStream {
@@ -79,7 +82,7 @@ object serverMod {
     
     var onAllReady: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* error */ Any, Unit]] = js.undefined
+    var onError: js.UndefOr[js.Function2[/* error */ Any, /* errorInfo */ ErrorInfo, String | Unit]] = js.undefined
     
     var onShellError: js.UndefOr[js.Function1[/* error */ Any, Unit]] = js.undefined
     
@@ -129,7 +132,7 @@ object serverMod {
       
       inline def setOnAllReadyUndefined: Self = StObject.set(x, "onAllReady", js.undefined)
       
-      inline def setOnError(value: /* error */ Any => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: (/* error */ Any, /* errorInfo */ ErrorInfo) => String | Unit): Self = StObject.set(x, "onError", js.Any.fromFunction2(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
@@ -161,7 +164,7 @@ object serverMod {
     
     var nonce: js.UndefOr[String] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* error */ Any, Unit]] = js.undefined
+    var onError: js.UndefOr[js.Function2[/* error */ Any, /* errorInfo */ ErrorInfo, String | Unit]] = js.undefined
     
     var progressiveChunkSize: js.UndefOr[Double] = js.undefined
     
@@ -205,7 +208,7 @@ object serverMod {
       
       inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
-      inline def setOnError(value: /* error */ Any => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: (/* error */ Any, /* errorInfo */ ErrorInfo) => String | Unit): Self = StObject.set(x, "onError", js.Any.fromFunction2(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       

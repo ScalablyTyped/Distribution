@@ -17,10 +17,14 @@ trait WebDriverProtocolMobileRelated extends StObject {
     *
     * Used by Appium when testing hybrid mobile web apps. More info here: https://github.com/appium/appium/blob/master/docs/en/advanced-concepts/hybrid.md.
     */
-  def contexts(): this.type = js.native
+  def contexts(): Awaitable[this.type, js.Array[String]] = js.native
   def contexts(
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Any], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[js.Array[String]], 
+      Unit
+    ]
+  ): Awaitable[this.type, js.Array[String]] = js.native
   
   /**
     * Get current context.
@@ -28,10 +32,10 @@ trait WebDriverProtocolMobileRelated extends StObject {
     * @example
     * browser.currentContext();
     */
-  def currentContext(): this.type = js.native
+  def currentContext(): Awaitable[this.type, String | Null] = js.native
   def currentContext(
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Any], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String | Null], Unit]
+  ): Awaitable[this.type, String | Null] = js.native
   
   /**
     * Get the current browser orientation.
@@ -39,14 +43,14 @@ trait WebDriverProtocolMobileRelated extends StObject {
     * @example
     * browser.getOrientation()
     */
-  def getOrientation(): this.type = js.native
+  def getOrientation(): Awaitable[this.type, LANDSCAPE | PORTRAIT] = js.native
   def getOrientation(
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
       /* result */ NightwatchCallbackResult[LANDSCAPE | PORTRAIT], 
       Unit
     ]
-  ): this.type = js.native
+  ): Awaitable[this.type, LANDSCAPE | PORTRAIT] = js.native
   
   /**
     * Sets the context.
@@ -54,8 +58,11 @@ trait WebDriverProtocolMobileRelated extends StObject {
     * @example
     * browser.setContext(context);
     */
-  def setContext(context: String): this.type = js.native
-  def setContext(context: String, callback: js.Function0[Unit]): this.type = js.native
+  def setContext(context: String): Awaitable[this.type, Null] = js.native
+  def setContext(
+    context: String,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   
   /**
     * Sets the browser orientation.
@@ -63,9 +70,13 @@ trait WebDriverProtocolMobileRelated extends StObject {
     * @example
     * browser.setOrientation(orientation)
     */
-  def setOrientation(orientation: LANDSCAPE | PORTRAIT): this.type = js.native
+  def setOrientation(orientation: LANDSCAPE | PORTRAIT): Awaitable[this.type, LANDSCAPE | PORTRAIT] = js.native
   def setOrientation(
     orientation: LANDSCAPE | PORTRAIT,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[LANDSCAPE | PORTRAIT], 
+      Unit
+    ]
+  ): Awaitable[this.type, LANDSCAPE | PORTRAIT] = js.native
 }

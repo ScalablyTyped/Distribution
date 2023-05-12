@@ -10,5 +10,11 @@ object cleanupOutdatedCachesMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    * Adds an `activate` event listener which will clean up incompatible
+    * precaches that were created by older versions of Workbox.
+    *
+    * @memberof workbox-precaching
+    */
   inline def cleanupOutdatedCaches(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanupOutdatedCaches")().asInstanceOf[Unit]
 }

@@ -7,14 +7,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `37` extends StObject {
   
   /**
-    * Additional set of options used to create a second `DateFormat` object for conversions between string
-    * values in the data source (e.g. model) and `Date`. This second format object is used to convert both
-    * of the interval parts from a model `string` to `Date` before converting both of the `Date`(s) to `string`
-    * with the primary format object. Vice versa, this 'source' format is also used to format the already parsed
-    * external value (e.g. user input) into the string format that is expected by the data source. For a list
-    * of all available options, see {@link sap.ui.core.format.DateFormat.getTimeInstance DateFormat}.
+    * Since 1.28. One or multiple names of targets that will be displayed, if no route of the router is matched.
+    *  A typical use case is a not found page.
+    *  The current hash will be passed to the display event of the target.
+    *  **Example:**
+    * ```javascript
+    *
+    *     new Router(
+    *     // Routes
+    *     [
+    *         // Any route here
+    *     ],
+    *     {
+    *         bypassed: {
+    *             // you will find this name in the target config
+    *             target: "notFound"
+    *         }
+    *     },
+    *     // You should only use this constructor when you are not using a router with a component. Please use the metadata of a component to define your routes and targets. The documentation can be found here: {@link sap.ui.core.UIComponent.extend}.
+    *     null,
+    *     // Target config
+    *     {
+    *          //same name as in the config.bypassed.target
+    *          notFound: {
+    *              type: "View"
+    *              name: "notFound",
+    *              ...
+    *              // more properties to place the view in the correct container
+    *          }
+    *     });
+    * ```
     */
-  var source: js.UndefOr[js.Object] = js.undefined
+  var target: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object `37` {
   
@@ -26,8 +50,10 @@ object `37` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `37`] (val x: Self) extends AnyVal {
     
-    inline def setSource(value: js.Object): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String | js.Array[String]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    
+    inline def setTargetVarargs(value: String*): Self = StObject.set(x, "target", js.Array(value*))
   }
 }

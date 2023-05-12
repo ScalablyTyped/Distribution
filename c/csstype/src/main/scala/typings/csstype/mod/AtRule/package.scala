@@ -12,6 +12,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type AscentOverride = normal | String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.csstype.csstypeStrings.dark
+  - typings.csstype.csstypeStrings.light
+  - scala.Double
+  - java.lang.String
+*/
+type BasePalette = _BasePalette | Double | String
+
 type Bleed[TLength] = TLength | auto
 
 type DescentOverride = normal | String

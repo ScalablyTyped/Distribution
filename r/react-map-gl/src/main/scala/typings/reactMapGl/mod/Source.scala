@@ -12,7 +12,7 @@ open class Source protected ()
   def this(props: SourceProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: SourceProps, context: Any) = this()
 }

@@ -27,6 +27,7 @@ object mod {
     */
   object global {
     
+    /* eslint-enable no-unnecessary-generics */
     /**
       * @see FileHelpers
       */
@@ -72,14 +73,15 @@ object mod {
       * @deprecated The Patcher used in this call contains deprecated option types
       * @see LegacyPatcher
       */
-    // tslint:disable-next-line no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     inline def registerPatcher[L /* <: js.Object */, S /* <: js.Object */](patcher: LegacyPatcher[S, L]): Unit = js.Dynamic.global.applyDynamic("registerPatcher")(patcher.asInstanceOf[js.Any]).asInstanceOf[Unit]
     /**
       * Function for registering a patcher with UPF
       *
       * Generics are needed for inference within Patcher interface to work
       */
-    // tslint:disable-next-line no-unnecessary-generics unified-signatures
+    /* eslint-disable no-unnecessary-generics */
+    // tslint:disable-next-line:unified-signatures
     inline def registerPatcher[L /* <: js.Object */, S /* <: js.Object */](patcher: Patcher[S, L]): Unit = js.Dynamic.global.applyDynamic("registerPatcher")(patcher.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**

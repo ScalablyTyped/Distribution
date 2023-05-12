@@ -21,18 +21,18 @@ open class Registry () extends StObject {
   /**
   	 * Get all metrics as objects
   	 */
-  def getMetricsAsArray(): js.Array[metric] = js.native
+  def getMetricsAsArray(): js.Array[MetricObject] = js.native
   
   /**
   	 * Get all metrics as objects
   	 */
-  def getMetricsAsJSON(): js.Promise[js.Array[metric]] = js.native
+  def getMetricsAsJSON(): js.Promise[js.Array[MetricObjectWithValues[MetricValue[String]]]] = js.native
   
   /**
   	 * Get a single metric
   	 * @param name The name of the metric
   	 */
-  def getSingleMetric[T /* <: String */](name: String): js.UndefOr[Metric_[T]] = js.native
+  def getSingleMetric[T /* <: String */](name: String): js.UndefOr[Metric[T]] = js.native
   
   /**
   	 * Get a string representation of a single metric by name
@@ -49,7 +49,7 @@ open class Registry () extends StObject {
   	 * Register metric to register
   	 * @param metric Metric to add to register
   	 */
-  def registerMetric[T /* <: String */](metric: Metric_[T]): Unit = js.native
+  def registerMetric[T /* <: String */](metric: Metric[T]): Unit = js.native
   
   /**
   	 * Remove a single metric

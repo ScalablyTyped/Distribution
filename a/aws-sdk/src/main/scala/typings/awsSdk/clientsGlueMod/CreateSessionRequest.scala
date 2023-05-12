@@ -37,7 +37,7 @@ trait CreateSessionRequest extends StObject {
   var Id: NameString
   
   /**
-    * The number of seconds when idle before request times out. 
+    *  The number of minutes when idle before session times out. Default for Spark ETL jobs is value of Timeout. Consult the documentation for other job types. 
     */
   var IdleTimeout: js.UndefOr[Timeout] = js.undefined
   
@@ -72,7 +72,7 @@ trait CreateSessionRequest extends StObject {
   var Tags: js.UndefOr[TagsMap] = js.undefined
   
   /**
-    * The number of seconds before request times out. 
+    *  The number of minutes before session times out. Default for Spark ETL jobs is 48 hours (2880 minutes), the maximum session lifetime for this job type. Consult the documentation for other job types. 
     */
   var Timeout: js.UndefOr[typings.awsSdk.clientsGlueMod.Timeout] = js.undefined
   

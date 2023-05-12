@@ -18,7 +18,7 @@ trait SubscriptionStatusNotificationEvent
   var additionalContext: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * The sequential number of this event in this subscription context.
+    * In subscriptions where delivery of notifications IS NOT guaranteed (e.g., REST-Hook), this number is a unique and monotonically-increasing event number for a subscription. In channels where delivery of notifications IS guaranteed, this number is a relative index for the events present in the notification (e.g., 1, 2, etc.).
     */
   var eventNumber: String
   
@@ -28,7 +28,7 @@ trait SubscriptionStatusNotificationEvent
   var focus: js.UndefOr[Reference] = js.undefined
   
   /**
-    * The actual time this event occured on the server.
+    * The actual time this event occurred on the server.
     */
   var timestamp: js.UndefOr[String] = js.undefined
 }

@@ -46,6 +46,9 @@ trait AccessPackageAssignmentPolicy
     */
   var modifiedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // Questions that are posed to the requestor.
+  var questions: js.UndefOr[NullableOption[js.Array[AccessPackageQuestion]]] = js.undefined
+  
   /**
     * Specifies the settings for approval of requests for an access package assignment through this policy. For example, if
     * approval is required for new requests.
@@ -127,6 +130,14 @@ object AccessPackageAssignmentPolicy {
     inline def setModifiedDateTimeNull: Self = StObject.set(x, "modifiedDateTime", null)
     
     inline def setModifiedDateTimeUndefined: Self = StObject.set(x, "modifiedDateTime", js.undefined)
+    
+    inline def setQuestions(value: NullableOption[js.Array[AccessPackageQuestion]]): Self = StObject.set(x, "questions", value.asInstanceOf[js.Any])
+    
+    inline def setQuestionsNull: Self = StObject.set(x, "questions", null)
+    
+    inline def setQuestionsUndefined: Self = StObject.set(x, "questions", js.undefined)
+    
+    inline def setQuestionsVarargs(value: AccessPackageQuestion*): Self = StObject.set(x, "questions", js.Array(value*))
     
     inline def setRequestApprovalSettings(value: NullableOption[AccessPackageAssignmentApprovalSettings]): Self = StObject.set(x, "requestApprovalSettings", value.asInstanceOf[js.Any])
     

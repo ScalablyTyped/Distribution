@@ -2,6 +2,7 @@ package typings.mnemonist
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.mnemonist.utilsTypesMod.IArrayLikeConstructor
+import typings.mnemonist.utilsTypesMod.TypedArray
 import typings.std.Iterable
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
@@ -61,7 +62,7 @@ object fixedStackMod {
     
     var size: Double = js.native
     
-    def toArray(): js.Iterable[T] = js.native
+    def toArray(): js.Array[T] | TypedArray = js.native
     
     def toJSON(): js.Iterable[T] = js.native
     

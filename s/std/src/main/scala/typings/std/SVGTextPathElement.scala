@@ -1,5 +1,8 @@
 package typings.std
 
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,22 +15,22 @@ trait SVGTextPathElement
      with SVGURIReference {
   
   /* standard dom */
-  val TEXTPATH_METHODTYPE_ALIGN: Double = js.native
+  val TEXTPATH_METHODTYPE_ALIGN: `1` = js.native
   
   /* standard dom */
-  val TEXTPATH_METHODTYPE_STRETCH: Double = js.native
+  val TEXTPATH_METHODTYPE_STRETCH: `2` = js.native
   
   /* standard dom */
-  val TEXTPATH_METHODTYPE_UNKNOWN: Double = js.native
+  val TEXTPATH_METHODTYPE_UNKNOWN: `0` = js.native
   
   /* standard dom */
-  val TEXTPATH_SPACINGTYPE_AUTO: Double = js.native
+  val TEXTPATH_SPACINGTYPE_AUTO: `1` = js.native
   
   /* standard dom */
-  val TEXTPATH_SPACINGTYPE_EXACT: Double = js.native
+  val TEXTPATH_SPACINGTYPE_EXACT: `2` = js.native
   
   /* standard dom */
-  val TEXTPATH_SPACINGTYPE_UNKNOWN: Double = js.native
+  val TEXTPATH_SPACINGTYPE_UNKNOWN: `0` = js.native
   
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native

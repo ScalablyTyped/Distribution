@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SourceMapOptions extends StObject {
   
+  var asObject: js.UndefOr[Boolean] = js.undefined
+  
   /** Source map object, 'inline' or source map file content */
   var content: js.UndefOr[SectionedSourceMapInput | String] = js.undefined
   
@@ -28,6 +30,10 @@ object SourceMapOptions {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: SourceMapOptions] (val x: Self) extends AnyVal {
+    
+    inline def setAsObject(value: Boolean): Self = StObject.set(x, "asObject", value.asInstanceOf[js.Any])
+    
+    inline def setAsObjectUndefined: Self = StObject.set(x, "asObject", js.undefined)
     
     inline def setContent(value: SectionedSourceMapInput | String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

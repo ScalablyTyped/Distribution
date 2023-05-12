@@ -32,6 +32,8 @@ object distPlatformsPlatformMod {
     def fetch(path: String, requestInits: RequestInit): js.Promise[Response] = js.native
     def fetch(path: String, requestInits: RequestInit, options: RequestDetails): js.Promise[Response] = js.native
     
+    def isTypedArray(a: Any): Boolean = js.native
+    
     /**
       * Returns the current high-resolution time in milliseconds relative to an
       * arbitrary time in the past. It works across different platforms (node.js,

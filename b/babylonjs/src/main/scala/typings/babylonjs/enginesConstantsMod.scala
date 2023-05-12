@@ -18,7 +18,7 @@ object enginesConstantsMod {
     
     /**
       * Nothing
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Engines/constants", "Constants.ACTION_NothingTrigger")
     @js.native
@@ -26,7 +26,7 @@ object enginesConstantsMod {
     
     /**
       * On center pick
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Engines/constants", "Constants.ACTION_OnCenterPickTrigger")
     @js.native
@@ -34,7 +34,7 @@ object enginesConstantsMod {
     
     /**
       * On double pick
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Engines/constants", "Constants.ACTION_OnDoublePickTrigger")
     @js.native
@@ -42,7 +42,7 @@ object enginesConstantsMod {
     
     /**
       * On every frame
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Engines/constants", "Constants.ACTION_OnEveryFrameTrigger")
     @js.native
@@ -50,7 +50,7 @@ object enginesConstantsMod {
     
     /**
       * On intersection enter
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Engines/constants", "Constants.ACTION_OnIntersectionEnterTrigger")
     @js.native
@@ -58,7 +58,7 @@ object enginesConstantsMod {
     
     /**
       * On intersection exit
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Engines/constants", "Constants.ACTION_OnIntersectionExitTrigger")
     @js.native
@@ -66,7 +66,7 @@ object enginesConstantsMod {
     
     /**
       * On key down
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Engines/constants", "Constants.ACTION_OnKeyDownTrigger")
     @js.native
@@ -74,7 +74,7 @@ object enginesConstantsMod {
     
     /**
       * On key up
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Engines/constants", "Constants.ACTION_OnKeyUpTrigger")
     @js.native
@@ -82,7 +82,7 @@ object enginesConstantsMod {
     
     /**
       * On left pick
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Engines/constants", "Constants.ACTION_OnLeftPickTrigger")
     @js.native
@@ -90,7 +90,7 @@ object enginesConstantsMod {
     
     /**
       * On long press
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Engines/constants", "Constants.ACTION_OnLongPressTrigger")
     @js.native
@@ -98,7 +98,7 @@ object enginesConstantsMod {
     
     /**
       * On pick down
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Engines/constants", "Constants.ACTION_OnPickDownTrigger")
     @js.native
@@ -107,7 +107,7 @@ object enginesConstantsMod {
     /**
       * On pick out.
       * This trigger will only be raised if you also declared a OnPickDown
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Engines/constants", "Constants.ACTION_OnPickOutTrigger")
     @js.native
@@ -115,7 +115,7 @@ object enginesConstantsMod {
     
     /**
       * On pick
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Engines/constants", "Constants.ACTION_OnPickTrigger")
     @js.native
@@ -123,7 +123,7 @@ object enginesConstantsMod {
     
     /**
       * On pick up
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Engines/constants", "Constants.ACTION_OnPickUpTrigger")
     @js.native
@@ -131,7 +131,7 @@ object enginesConstantsMod {
     
     /**
       * On pointer out
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Engines/constants", "Constants.ACTION_OnPointerOutTrigger")
     @js.native
@@ -139,7 +139,7 @@ object enginesConstantsMod {
     
     /**
       * On pointer over
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Engines/constants", "Constants.ACTION_OnPointerOverTrigger")
     @js.native
@@ -147,7 +147,7 @@ object enginesConstantsMod {
     
     /**
       * On right pick
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Engines/constants", "Constants.ACTION_OnRightPickTrigger")
     @js.native
@@ -1207,6 +1207,11 @@ object enginesConstantsMod {
     @js.native
     val TEXTUREFORMAT_R_INTEGER: Double = js.native
     
+    /** Stencil 8 bits */
+    @JSImport("babylonjs/Engines/constants", "Constants.TEXTUREFORMAT_STENCIL8")
+    @js.native
+    val TEXTUREFORMAT_STENCIL8: Double = js.native
+    
     /** BYTE */
     @JSImport("babylonjs/Engines/constants", "Constants.TEXTURETYPE_BYTE")
     @js.native
@@ -1297,6 +1302,21 @@ object enginesConstantsMod {
     @js.native
     val TEXTURETYPE_UNSIGNED_SHORT_5_6_5: Double = js.native
     
+    /** 2D Texture target*/
+    @JSImport("babylonjs/Engines/constants", "Constants.TEXTURE_2D")
+    @js.native
+    val TEXTURE_2D: Double = js.native
+    
+    /** 2D Array Texture target */
+    @JSImport("babylonjs/Engines/constants", "Constants.TEXTURE_2D_ARRAY")
+    @js.native
+    val TEXTURE_2D_ARRAY: Double = js.native
+    
+    /** 3D Texture target */
+    @JSImport("babylonjs/Engines/constants", "Constants.TEXTURE_3D")
+    @js.native
+    val TEXTURE_3D: Double = js.native
+    
     /** Bilinear is mag = linear and min = linear and no mip */
     @JSImport("babylonjs/Engines/constants", "Constants.TEXTURE_BILINEAR_SAMPLINGMODE")
     @js.native
@@ -1311,6 +1331,16 @@ object enginesConstantsMod {
     @JSImport("babylonjs/Engines/constants", "Constants.TEXTURE_CREATIONFLAG_STORAGE")
     @js.native
     val TEXTURE_CREATIONFLAG_STORAGE: Double = js.native
+    
+    /** Cube Map Texture target */
+    @JSImport("babylonjs/Engines/constants", "Constants.TEXTURE_CUBE_MAP")
+    @js.native
+    val TEXTURE_CUBE_MAP: Double = js.native
+    
+    /** Cube Map Array Texture target */
+    @JSImport("babylonjs/Engines/constants", "Constants.TEXTURE_CUBE_MAP_ARRAY")
+    @js.native
+    val TEXTURE_CUBE_MAP_ARRAY: Double = js.native
     
     /** Cubic coordinates mode */
     @JSImport("babylonjs/Engines/constants", "Constants.TEXTURE_CUBIC_MODE")

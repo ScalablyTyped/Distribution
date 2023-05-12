@@ -11,6 +11,8 @@ object distResponseServerAuthorizationTokenResponseMod {
     
     var access_token: js.UndefOr[String] = js.undefined
     
+    var claims: js.UndefOr[String] = js.undefined
+    
     var client_info: js.UndefOr[String] = js.undefined
     
     var correlation_id: js.UndefOr[String] = js.undefined
@@ -37,6 +39,8 @@ object distResponseServerAuthorizationTokenResponseMod {
     
     var scope: js.UndefOr[String] = js.undefined
     
+    var spa_accountid: js.UndefOr[String] = js.undefined
+    
     var spa_code: js.UndefOr[String] = js.undefined
     
     var suberror: js.UndefOr[String] = js.undefined
@@ -60,6 +64,10 @@ object distResponseServerAuthorizationTokenResponseMod {
       inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       
       inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+      
+      inline def setClaims(value: String): Self = StObject.set(x, "claims", value.asInstanceOf[js.Any])
+      
+      inline def setClaimsUndefined: Self = StObject.set(x, "claims", js.undefined)
       
       inline def setClient_info(value: String): Self = StObject.set(x, "client_info", value.asInstanceOf[js.Any])
       
@@ -114,6 +122,10 @@ object distResponseServerAuthorizationTokenResponseMod {
       inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      
+      inline def setSpa_accountid(value: String): Self = StObject.set(x, "spa_accountid", value.asInstanceOf[js.Any])
+      
+      inline def setSpa_accountidUndefined: Self = StObject.set(x, "spa_accountid", js.undefined)
       
       inline def setSpa_code(value: String): Self = StObject.set(x, "spa_code", value.asInstanceOf[js.Any])
       

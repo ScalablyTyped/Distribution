@@ -1,107 +1,56 @@
 package typings.twilio
 
+import typings.twilio.anon.Data
 import typings.twilio.libBasePageMod.TwilioResponsePayload
-import typings.twilio.libInterfacesMod.SerializableClass
+import typings.twilio.libRestPreviewSyncMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libRestPreviewSyncServiceSyncListSyncListItemMod {
   
-  @JSImport("twilio/lib/rest/preview/sync/service/syncList/syncListItem", JSImport.Namespace)
+  @JSImport("twilio/lib/rest/preview/sync/service/syncList/syncListItem", "SyncListItemContextImpl")
   @js.native
-  val ^ : js.Any = js.native
-  
-  @JSImport("twilio/lib/rest/preview/sync/service/syncList/syncListItem", "SyncListItemContext")
-  @js.native
-  open class SyncListItemContext protected () extends StObject {
-    /**
-      * Initialize the SyncListItemContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param serviceSid - The service_sid
-      * @param listSid - The list_sid
-      * @param index - The index
-      */
-    def this(
-      version: typings.twilio.libRestPreviewSyncMod.^,
-      serviceSid: String,
-      listSid: String,
-      index: Double
-    ) = this()
+  open class SyncListItemContextImpl protected ()
+    extends StObject
+       with SyncListItemContext {
+    def this(_version: default, serviceSid: String, listSid: String, index: Double) = this()
     
-    /**
-      * fetch a SyncListItemInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def fetch(): js.Promise[SyncListItemInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ SyncListItemInstance, Any]): js.Promise[SyncListItemInstance] = js.native
+    /* protected */ var _solution: SyncListItemContextSolution = js.native
     
-    /**
-      * remove a SyncListItemInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def remove(): js.Promise[Boolean] = js.native
-    def remove(callback: js.Function2[/* error */ js.Error | Null, /* items */ SyncListItemInstance, Any]): js.Promise[Boolean] = js.native
+    /* protected */ var _uri: String = js.native
+    
+    /* protected */ var _version: default = js.native
+    
     def remove(
-      opts: Unit,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ SyncListItemInstance, Any]
+      params: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any],
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any]
     ): js.Promise[Boolean] = js.native
-    def remove(opts: SyncListItemInstanceRemoveOptions): js.Promise[Boolean] = js.native
     def remove(
-      opts: SyncListItemInstanceRemoveOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ SyncListItemInstance, Any]
+      params: Unit,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any]
     ): js.Promise[Boolean] = js.native
-    
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
-    
-    /**
-      * update a SyncListItemInstance
-      *
-      * @param opts - Options for request
-      * @param callback - Callback to handle processed record
-      */
-    def update(opts: SyncListItemInstanceUpdateOptions): js.Promise[SyncListItemInstance] = js.native
-    def update(
-      opts: SyncListItemInstanceUpdateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ SyncListItemInstance, Any]
-    ): js.Promise[SyncListItemInstance] = js.native
   }
   
   @JSImport("twilio/lib/rest/preview/sync/service/syncList/syncListItem", "SyncListItemInstance")
   @js.native
-  open class SyncListItemInstance protected () extends SerializableClass {
-    /**
-      * Initialize the SyncListItemContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param payload - The instance payload
-      * @param serviceSid - The service_sid
-      * @param listSid - The list_sid
-      * @param index - The index
-      */
+  open class SyncListItemInstance protected () extends StObject {
+    def this(_version: default, payload: SyncListItemResource, serviceSid: String, listSid: String) = this()
     def this(
-      version: typings.twilio.libRestPreviewSyncMod.^,
-      payload: SyncListItemPayload,
+      _version: default,
+      payload: SyncListItemResource,
       serviceSid: String,
       listSid: String,
       index: Double
     ) = this()
     
-    /* private */ var _proxy: SyncListItemContext = js.native
+    /* protected */ var _context: js.UndefOr[SyncListItemContext] = js.native
+    
+    /* private */ def _proxy: Any = js.native
+    
+    /* protected */ var _solution: SyncListItemContextSolution = js.native
+    
+    /* protected */ var _version: default = js.native
     
     var accountSid: String = js.native
     
@@ -114,29 +63,40 @@ object libRestPreviewSyncServiceSyncListSyncListItemMod {
     var dateUpdated: js.Date = js.native
     
     /**
-      * fetch a SyncListItemInstance
+      * Fetch a SyncListItemInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed SyncListItemInstance
       */
     def fetch(): js.Promise[SyncListItemInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[SyncListItemInstance] = js.native
+    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]): js.Promise[SyncListItemInstance] = js.native
     
     var index: Double = js.native
     
     var listSid: String = js.native
     
     /**
-      * remove a SyncListItemInstance
+      * Remove a SyncListItemInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed boolean
       */
     def remove(): js.Promise[Boolean] = js.native
-    def remove(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[Boolean] = js.native
-    def remove(opts: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[Boolean] = js.native
-    def remove(opts: SyncListItemInstanceRemoveOptions): js.Promise[Boolean] = js.native
+    def remove(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any]): js.Promise[Boolean] = js.native
+    /**
+      * Remove a SyncListItemInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed SyncListItemInstance
+      */
+    def remove(params: SyncListItemContextRemoveOptions): js.Promise[Boolean] = js.native
     def remove(
-      opts: SyncListItemInstanceRemoveOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]
+      params: SyncListItemContextRemoveOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any]
     ): js.Promise[Boolean] = js.native
     
     var revision: String = js.native
@@ -144,145 +104,52 @@ object libRestPreviewSyncServiceSyncListSyncListItemMod {
     var serviceSid: String = js.native
     
     /**
-      * update a SyncListItemInstance
+      * Provide a user-friendly representation
       *
-      * @param opts - Options for request
-      * @param callback - Callback to handle processed record
+      * @returns Object
       */
-    def update(opts: SyncListItemInstanceUpdateOptions): js.Promise[SyncListItemInstance] = js.native
+    def toJSON(): Data = js.native
+    
+    /**
+      * Update a SyncListItemInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed SyncListItemInstance
+      */
+    def update(params: SyncListItemContextUpdateOptions): js.Promise[SyncListItemInstance] = js.native
     def update(
-      opts: SyncListItemInstanceUpdateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]
+      params: SyncListItemContextUpdateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]
     ): js.Promise[SyncListItemInstance] = js.native
     
     var url: String = js.native
   }
   
-  /**
-    * Initialize the SyncListItemList
-    *
-    * PLEASE NOTE that this class contains preview products that are subject to
-    * change. Use them with caution. If you currently do not have developer preview
-    * access, please contact help@twilio.com.
-    *
-    * @param version - Version of the resource
-    * @param serviceSid - The service_sid
-    * @param listSid - The list_sid
-    */
-  inline def SyncListItemList(version: typings.twilio.libRestPreviewSyncMod.^, serviceSid: String, listSid: String): SyncListItemListInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("SyncListItemList")(version.asInstanceOf[js.Any], serviceSid.asInstanceOf[js.Any], listSid.asInstanceOf[js.Any])).asInstanceOf[SyncListItemListInstance]
-  
-  @JSImport("twilio/lib/rest/preview/sync/service/syncList/syncListItem", "SyncListItemPage")
-  @js.native
-  open class SyncListItemPage protected ()
-    extends typings.twilio.libBasePageMod.^[
-          typings.twilio.libRestPreviewSyncMod.^, 
-          SyncListItemPayload, 
-          SyncListItemResource, 
-          SyncListItemInstance
-        ] {
-    /**
-      * Initialize the SyncListItemPage
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param response - Response from the API
-      * @param solution - Path solution
-      */
-    def this(
-      version: typings.twilio.libRestPreviewSyncMod.^,
-      response: typings.twilio.libHttpResponseMod.^[String],
-      solution: SyncListItemSolution
-    ) = this()
-    
-    /**
-      * Build an instance of SyncListItemInstance
-      *
-      * @param payload - Payload response from the API
-      */
-    def getInstance(payload: SyncListItemPayload): SyncListItemInstance = js.native
-    
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
-  }
-  
-  /**
-    * Options to pass to remove
-    *
-    * @property ifMatch - The If-Match HTTP request header
-    */
-  trait SyncListItemInstanceRemoveOptions extends StObject {
-    
-    var ifMatch: js.UndefOr[String] = js.undefined
-  }
-  object SyncListItemInstanceRemoveOptions {
-    
-    inline def apply(): SyncListItemInstanceRemoveOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[SyncListItemInstanceRemoveOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: SyncListItemInstanceRemoveOptions] (val x: Self) extends AnyVal {
-      
-      inline def setIfMatch(value: String): Self = StObject.set(x, "ifMatch", value.asInstanceOf[js.Any])
-      
-      inline def setIfMatchUndefined: Self = StObject.set(x, "ifMatch", js.undefined)
-    }
-  }
-  
-  /**
-    * Options to pass to update
-    *
-    * @property data - The data
-    * @property ifMatch - The If-Match HTTP request header
-    */
-  trait SyncListItemInstanceUpdateOptions extends StObject {
-    
-    var data: js.Object
-    
-    var ifMatch: js.UndefOr[String] = js.undefined
-  }
-  object SyncListItemInstanceUpdateOptions {
-    
-    inline def apply(data: js.Object): SyncListItemInstanceUpdateOptions = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SyncListItemInstanceUpdateOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: SyncListItemInstanceUpdateOptions] (val x: Self) extends AnyVal {
-      
-      inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-      
-      inline def setIfMatch(value: String): Self = StObject.set(x, "ifMatch", value.asInstanceOf[js.Any])
-      
-      inline def setIfMatchUndefined: Self = StObject.set(x, "ifMatch", js.undefined)
-    }
-  }
-  
   @js.native
   trait SyncListItemListInstance extends StObject {
     
-    /**
-      * @param sid - sid of instance
-      */
-    def apply(sid: String): SyncListItemContext = js.native
+    def apply(index: Double): SyncListItemContext = js.native
+    
+    var _solution: SyncListItemSolution = js.native
+    
+    var _uri: String = js.native
+    
+    var _version: default = js.native
     
     /**
-      * create a SyncListItemInstance
+      * Create a SyncListItemInstance
       *
-      * @param opts - Options for request
+      * @param params - Parameter for request
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed SyncListItemInstance
       */
-    def create(opts: SyncListItemListInstanceCreateOptions): js.Promise[SyncListItemInstance] = js.native
+    def create(params: SyncListItemListInstanceCreateOptions): js.Promise[SyncListItemInstance] = js.native
     def create(
-      opts: SyncListItemListInstanceCreateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* item */ SyncListItemInstance, Any]
+      params: SyncListItemListInstanceCreateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[SyncListItemInstance], Any]
     ): js.Promise[SyncListItemInstance] = js.native
     
     /**
@@ -297,7 +164,8 @@ object libRestPreviewSyncServiceSyncListSyncListItemMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Function to process each record
+      * @param { SyncListItemListInstanceEachOptions } [params] - Options for request
+      * @param { function } [callback] - Function to process each record
       */
     def each(): Unit = js.native
     def each(
@@ -307,17 +175,9 @@ object libRestPreviewSyncServiceSyncListSyncListItemMod {
           Unit
         ]
     ): Unit = js.native
+    def each(params: SyncListItemListInstanceEachOptions): Unit = js.native
     def each(
-      opts: Unit,
-      callback: js.Function2[
-          /* item */ SyncListItemInstance, 
-          /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
-          Unit
-        ]
-    ): Unit = js.native
-    def each(opts: SyncListItemListInstanceEachOptions): Unit = js.native
-    def each(
-      opts: SyncListItemListInstanceEachOptions,
+      params: SyncListItemListInstanceEachOptions,
       callback: js.Function2[
           /* item */ SyncListItemInstance, 
           /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
@@ -325,32 +185,19 @@ object libRestPreviewSyncServiceSyncListSyncListItemMod {
         ]
     ): Unit = js.native
     
-    /**
-      * Constructs a sync_list_item
-      *
-      * @param index - The index
-      */
-    def get(index: String): SyncListItemContext = js.native
+    def get(index: Double): SyncListItemContext = js.native
     
     /**
       * Retrieve a single target page of SyncListItemInstance records from the API.
       *
       * The request is executed immediately.
       *
-      * If a function is passed as the first argument, it will be used as the callback
-      * function.
-      *
-      * @param callback - Callback to handle list of records
+      * @param { string } [targetUrl] - API-generated URL for the requested results page
+      * @param { function } [callback] - Callback to handle list of records
       */
-    def getPage(): js.Promise[SyncListItemPage] = js.native
-    def getPage(callback: js.Function2[/* error */ js.Error | Null, /* items */ SyncListItemPage, Any]): js.Promise[SyncListItemPage] = js.native
     def getPage(targetUrl: String): js.Promise[SyncListItemPage] = js.native
     def getPage(
       targetUrl: String,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ SyncListItemPage, Any]
-    ): js.Promise[SyncListItemPage] = js.native
-    def getPage(
-      targetUrl: Unit,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ SyncListItemPage, Any]
     ): js.Promise[SyncListItemPage] = js.native
     
@@ -360,19 +207,16 @@ object libRestPreviewSyncServiceSyncListSyncListItemMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { SyncListItemListInstanceOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def list(): js.Promise[js.Array[SyncListItemInstance]] = js.native
     def list(
       callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[SyncListItemInstance], Any]
     ): js.Promise[js.Array[SyncListItemInstance]] = js.native
+    def list(params: SyncListItemListInstanceOptions): js.Promise[js.Array[SyncListItemInstance]] = js.native
     def list(
-      opts: Unit,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[SyncListItemInstance], Any]
-    ): js.Promise[js.Array[SyncListItemInstance]] = js.native
-    def list(opts: SyncListItemListInstanceOptions): js.Promise[js.Array[SyncListItemInstance]] = js.native
-    def list(
-      opts: SyncListItemListInstanceOptions,
+      params: SyncListItemListInstanceOptions,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[SyncListItemInstance], Any]
     ): js.Promise[js.Array[SyncListItemInstance]] = js.native
     
@@ -384,14 +228,14 @@ object libRestPreviewSyncServiceSyncListSyncListItemMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { SyncListItemListInstancePageOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def page(): js.Promise[SyncListItemPage] = js.native
     def page(callback: js.Function2[/* error */ js.Error | Null, /* items */ SyncListItemPage, Any]): js.Promise[SyncListItemPage] = js.native
-    def page(opts: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ SyncListItemPage, Any]): js.Promise[SyncListItemPage] = js.native
-    def page(opts: SyncListItemListInstancePageOptions): js.Promise[SyncListItemPage] = js.native
+    def page(params: SyncListItemListInstancePageOptions): js.Promise[SyncListItemPage] = js.native
     def page(
-      opts: SyncListItemListInstancePageOptions,
+      params: SyncListItemListInstancePageOptions,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ SyncListItemPage, Any]
     ): js.Promise[SyncListItemPage] = js.native
     
@@ -400,19 +244,177 @@ object libRestPreviewSyncServiceSyncListSyncListItemMod {
       */
     def toJSON(): Any = js.native
   }
+  object SyncListItemListInstance {
+    
+    @JSImport("twilio/lib/rest/preview/sync/service/syncList/syncListItem", "SyncListItemListInstance")
+    @js.native
+    def apply(version: default, serviceSid: String, listSid: String): SyncListItemListInstance = js.native
+  }
   
-  /**
-    * Options to pass to create
-    *
-    * @property data - The data
-    */
+  @JSImport("twilio/lib/rest/preview/sync/service/syncList/syncListItem", "SyncListItemPage")
+  @js.native
+  open class SyncListItemPage protected ()
+    extends typings.twilio.libBasePageMod.default[default, SyncListItemPayload, SyncListItemResource, SyncListItemInstance] {
+    /**
+      * Initialize the SyncListItemPage
+      *
+      * @param version - Version of the resource
+      * @param response - Response from the API
+      * @param solution - Path solution
+      */
+    def this(
+      version: default,
+      response: typings.twilio.libHttpResponseMod.default[String],
+      solution: SyncListItemSolution
+    ) = this()
+    
+    /**
+      * Build an instance of SyncListItemInstance
+      *
+      * @param payload - Payload response from the API
+      */
+    def getInstance(payload: SyncListItemResource): SyncListItemInstance = js.native
+  }
+  
+  @js.native
+  trait SyncListItemContext extends StObject {
+    
+    /**
+      * Fetch a SyncListItemInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed SyncListItemInstance
+      */
+    def fetch(): js.Promise[SyncListItemInstance] = js.native
+    def fetch(
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[SyncListItemInstance], Any]
+    ): js.Promise[SyncListItemInstance] = js.native
+    
+    /**
+      * Remove a SyncListItemInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed boolean
+      */
+    def remove(): js.Promise[Boolean] = js.native
+    def remove(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any]): js.Promise[Boolean] = js.native
+    /**
+      * Remove a SyncListItemInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed SyncListItemInstance
+      */
+    def remove(params: SyncListItemContextRemoveOptions): js.Promise[Boolean] = js.native
+    def remove(
+      params: SyncListItemContextRemoveOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any]
+    ): js.Promise[Boolean] = js.native
+    
+    /**
+      * Provide a user-friendly representation
+      */
+    def toJSON(): Any = js.native
+    
+    /**
+      * Update a SyncListItemInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed SyncListItemInstance
+      */
+    def update(params: SyncListItemContextUpdateOptions): js.Promise[SyncListItemInstance] = js.native
+    def update(
+      params: SyncListItemContextUpdateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[SyncListItemInstance], Any]
+    ): js.Promise[SyncListItemInstance] = js.native
+  }
+  
+  trait SyncListItemContextRemoveOptions extends StObject {
+    
+    /** The If-Match HTTP request header */
+    var ifMatch: js.UndefOr[String] = js.undefined
+  }
+  object SyncListItemContextRemoveOptions {
+    
+    inline def apply(): SyncListItemContextRemoveOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SyncListItemContextRemoveOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncListItemContextRemoveOptions] (val x: Self) extends AnyVal {
+      
+      inline def setIfMatch(value: String): Self = StObject.set(x, "ifMatch", value.asInstanceOf[js.Any])
+      
+      inline def setIfMatchUndefined: Self = StObject.set(x, "ifMatch", js.undefined)
+    }
+  }
+  
+  trait SyncListItemContextSolution extends StObject {
+    
+    var index: Double
+    
+    var listSid: String
+    
+    var serviceSid: String
+  }
+  object SyncListItemContextSolution {
+    
+    inline def apply(index: Double, listSid: String, serviceSid: String): SyncListItemContextSolution = {
+      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], listSid = listSid.asInstanceOf[js.Any], serviceSid = serviceSid.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SyncListItemContextSolution]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncListItemContextSolution] (val x: Self) extends AnyVal {
+      
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      
+      inline def setListSid(value: String): Self = StObject.set(x, "listSid", value.asInstanceOf[js.Any])
+      
+      inline def setServiceSid(value: String): Self = StObject.set(x, "serviceSid", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait SyncListItemContextUpdateOptions extends StObject {
+    
+    /**  */
+    var data: Any
+    
+    /** The If-Match HTTP request header */
+    var ifMatch: js.UndefOr[String] = js.undefined
+  }
+  object SyncListItemContextUpdateOptions {
+    
+    inline def apply(data: Any): SyncListItemContextUpdateOptions = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SyncListItemContextUpdateOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncListItemContextUpdateOptions] (val x: Self) extends AnyVal {
+      
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setIfMatch(value: String): Self = StObject.set(x, "ifMatch", value.asInstanceOf[js.Any])
+      
+      inline def setIfMatchUndefined: Self = StObject.set(x, "ifMatch", js.undefined)
+    }
+  }
+  
   trait SyncListItemListInstanceCreateOptions extends StObject {
     
-    var data: js.Object
+    /**  */
+    var data: Any
   }
   object SyncListItemListInstanceCreateOptions {
     
-    inline def apply(data: js.Object): SyncListItemListInstanceCreateOptions = {
+    inline def apply(data: Any): SyncListItemListInstanceCreateOptions = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[SyncListItemListInstanceCreateOptions]
     }
@@ -420,35 +422,16 @@ object libRestPreviewSyncServiceSyncListSyncListItemMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: SyncListItemListInstanceCreateOptions] (val x: Self) extends AnyVal {
       
-      inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
   }
   
-  /**
-    * Options to pass to each
-    *
-    * @property bounds - The bounds
-    * @property callback -
-    *                         Function to process each record. If this and a positional
-    *                         callback are passed, this one will be used
-    * @property done - Function to be called upon completion of streaming
-    * @property from - The from
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         each() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property order - The order
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no pageSize is defined but a limit is defined,
-    *                         each() will attempt to read the limit with the most efficient
-    *                         page size, i.e. min(limit, 1000)
-    */
   trait SyncListItemListInstanceEachOptions extends StObject {
     
+    /**  */
     var bounds: js.UndefOr[SyncListItemQueryFromBoundType] = js.undefined
     
+    /** Function to process each record. If this and a positional callback are passed, this one will be used */
     var callback: js.UndefOr[
         js.Function2[
           /* item */ SyncListItemInstance, 
@@ -457,14 +440,19 @@ object libRestPreviewSyncServiceSyncListSyncListItemMod {
         ]
       ] = js.undefined
     
+    /** Function to be called upon completion of streaming */
     var done: js.UndefOr[js.Function] = js.undefined
     
+    /**  */
     var from: js.UndefOr[String] = js.undefined
     
+    /** Upper limit for the number of records to return. each() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /**  */
     var order: js.UndefOr[SyncListItemQueryResultOrder] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
   }
   object SyncListItemListInstanceEachOptions {
@@ -509,33 +497,21 @@ object libRestPreviewSyncServiceSyncListSyncListItemMod {
     }
   }
   
-  /**
-    * Options to pass to list
-    *
-    * @property bounds - The bounds
-    * @property from - The from
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         list() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property order - The order
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no page_size is defined but a limit is defined,
-    *                         list() will attempt to read the limit with the most
-    *                         efficient page size, i.e. min(limit, 1000)
-    */
   trait SyncListItemListInstanceOptions extends StObject {
     
+    /**  */
     var bounds: js.UndefOr[SyncListItemQueryFromBoundType] = js.undefined
     
+    /**  */
     var from: js.UndefOr[String] = js.undefined
     
+    /** Upper limit for the number of records to return. list() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /**  */
     var order: js.UndefOr[SyncListItemQueryResultOrder] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
   }
   object SyncListItemListInstanceOptions {
@@ -570,28 +546,24 @@ object libRestPreviewSyncServiceSyncListSyncListItemMod {
     }
   }
   
-  /**
-    * Options to pass to page
-    *
-    * @property bounds - The bounds
-    * @property from - The from
-    * @property order - The order
-    * @property pageNumber - Page Number, this value is simply for client state
-    * @property pageSize - Number of records to return, defaults to 50
-    * @property pageToken - PageToken provided by the API
-    */
   trait SyncListItemListInstancePageOptions extends StObject {
     
+    /**  */
     var bounds: js.UndefOr[SyncListItemQueryFromBoundType] = js.undefined
     
+    /**  */
     var from: js.UndefOr[String] = js.undefined
     
+    /**  */
     var order: js.UndefOr[SyncListItemQueryResultOrder] = js.undefined
     
+    /** Page Number, this value is simply for client state */
     var pageNumber: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
     
+    /** PageToken provided by the API */
     var pageToken: js.UndefOr[String] = js.undefined
   }
   object SyncListItemListInstancePageOptions {
@@ -632,30 +604,31 @@ object libRestPreviewSyncServiceSyncListSyncListItemMod {
   
   trait SyncListItemPayload
     extends StObject
-       with SyncListItemResource
-       with TwilioResponsePayload
+       with TwilioResponsePayload {
+    
+    var items: js.Array[SyncListItemResource]
+  }
   object SyncListItemPayload {
     
     inline def apply(
-      account_sid: String,
-      created_by: String,
-      data: js.Object,
-      date_created: js.Date,
-      date_updated: js.Date,
       first_page_uri: String,
-      index: Double,
-      list_sid: String,
+      items: js.Array[SyncListItemResource],
       next_page_uri: String,
       page: Double,
       page_size: Double,
       previous_page_uri: String,
-      revision: String,
-      service_sid: String,
-      uri: String,
-      url: String
+      uri: String
     ): SyncListItemPayload = {
-      val __obj = js.Dynamic.literal(account_sid = account_sid.asInstanceOf[js.Any], created_by = created_by.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], date_created = date_created.asInstanceOf[js.Any], date_updated = date_updated.asInstanceOf[js.Any], first_page_uri = first_page_uri.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], list_sid = list_sid.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any], service_sid = service_sid.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(first_page_uri = first_page_uri.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[SyncListItemPayload]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncListItemPayload] (val x: Self) extends AnyVal {
+      
+      inline def setItems(value: js.Array[SyncListItemResource]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      
+      inline def setItemsVarargs(value: SyncListItemResource*): Self = StObject.set(x, "items", js.Array(value*))
     }
   }
   
@@ -689,7 +662,7 @@ object libRestPreviewSyncServiceSyncListSyncListItemMod {
     
     var created_by: String
     
-    var data: js.Object
+    var data: Any
     
     var date_created: js.Date
     
@@ -710,7 +683,7 @@ object libRestPreviewSyncServiceSyncListSyncListItemMod {
     inline def apply(
       account_sid: String,
       created_by: String,
-      data: js.Object,
+      data: Any,
       date_created: js.Date,
       date_updated: js.Date,
       index: Double,
@@ -730,7 +703,7 @@ object libRestPreviewSyncServiceSyncListSyncListItemMod {
       
       inline def setCreated_by(value: String): Self = StObject.set(x, "created_by", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDate_created(value: js.Date): Self = StObject.set(x, "date_created", value.asInstanceOf[js.Any])
       
@@ -750,14 +723,14 @@ object libRestPreviewSyncServiceSyncListSyncListItemMod {
   
   trait SyncListItemSolution extends StObject {
     
-    var listSid: js.UndefOr[String] = js.undefined
+    var listSid: String
     
-    var serviceSid: js.UndefOr[String] = js.undefined
+    var serviceSid: String
   }
   object SyncListItemSolution {
     
-    inline def apply(): SyncListItemSolution = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(listSid: String, serviceSid: String): SyncListItemSolution = {
+      val __obj = js.Dynamic.literal(listSid = listSid.asInstanceOf[js.Any], serviceSid = serviceSid.asInstanceOf[js.Any])
       __obj.asInstanceOf[SyncListItemSolution]
     }
     
@@ -766,11 +739,7 @@ object libRestPreviewSyncServiceSyncListSyncListItemMod {
       
       inline def setListSid(value: String): Self = StObject.set(x, "listSid", value.asInstanceOf[js.Any])
       
-      inline def setListSidUndefined: Self = StObject.set(x, "listSid", js.undefined)
-      
       inline def setServiceSid(value: String): Self = StObject.set(x, "serviceSid", value.asInstanceOf[js.Any])
-      
-      inline def setServiceSidUndefined: Self = StObject.set(x, "serviceSid", js.undefined)
     }
   }
 }

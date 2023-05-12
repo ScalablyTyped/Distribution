@@ -41,7 +41,7 @@ object libComponentsIconBaseMod extends Shortcut {
   trait IconBaseType
     extends StObject
        with Color
-       with FunctionalComponent[IconProps, js.Object] {
+       with FunctionalComponent[IconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_IconBaseType: String = js.native

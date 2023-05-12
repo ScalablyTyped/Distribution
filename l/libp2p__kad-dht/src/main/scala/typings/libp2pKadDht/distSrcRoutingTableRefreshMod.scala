@@ -35,7 +35,7 @@ object distSrcRoutingTableRefreshMod {
     /**
       * Yields the common prefix length of every peer in the table
       */
-    def _prefixLengths(): Generator[Double, Unit, Any] = js.native
+    def _prefixLengths(): Generator[Double, Any, Any] = js.native
     
     def _refreshCommonPrefixLength(cpl: Double, lastRefresh: js.Date, force: Boolean): js.Promise[Unit] = js.native
     

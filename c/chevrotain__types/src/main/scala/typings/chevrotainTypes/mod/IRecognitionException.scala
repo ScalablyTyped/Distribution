@@ -1,16 +1,15 @@
 package typings.chevrotainTypes.mod
 
+import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IRecognitionException extends StObject {
+trait IRecognitionException
+  extends StObject
+     with Error {
   
   var context: IRecognizerContext
-  
-  var message: String
-  
-  var name: String
   
   /**
     * Additional tokens which have been re-synced in error recovery due to the original error.
@@ -41,10 +40,6 @@ object IRecognitionException {
   implicit open class MutableBuilder[Self <: IRecognitionException] (val x: Self) extends AnyVal {
     
     inline def setContext(value: IRecognizerContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
-    
-    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
-    
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setResyncedTokens(value: js.Array[IToken]): Self = StObject.set(x, "resyncedTokens", value.asInstanceOf[js.Any])
     

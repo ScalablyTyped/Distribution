@@ -144,8 +144,8 @@ object layer {
     
     /**
       * This type represents a response object returned by the H.map.layer.IMarkerLayer#requestMarkers function.
-      * @property total {number} - The total number of markers, inclusive markers with not ready icons
-      * @property markers {Array<H.map.AbstractMarker>} - The marker objects for the bounding rectangle (only ready)
+      * total {number} - The total number of markers, inclusive markers with not ready icons
+      * markers {Array<H.map.AbstractMarker>} - The marker objects for the bounding rectangle (only ready)
       */
     trait Response extends StObject {
       
@@ -173,9 +173,9 @@ object layer {
     
     /**
       * This type represents a response object returned by the H.map.layer.IMarkerLayer#requestMarkers function.
-      * @property number {number} - of returned tiles
-      * @property requested {number} - number of requested tiles
-      * @property objects {Array<H.map.AbstractMarker>} - the marker objects within requested tiled area
+      * number {number} - of returned tiles
+      * requested {number} - number of requested tiles
+      * objects {Array<H.map.AbstractMarker>} - the marker objects within requested tiled area
       */
     trait TiledResponse extends StObject {
       
@@ -268,8 +268,8 @@ object layer {
     
     /**
       * Options which are used to initialize a TileLayer object.
-      * @property projection {H.geo.IProjection=} - an optional projection to be used for this layer, default is H.geo.mercator
-      * @property opacity {number=} - tile layer opacity, default is 1
+      * projection {H.geo.IProjection=} - an optional projection to be used for this layer, default is H.geo.mercator
+      * opacity {number=} - tile layer opacity, default is 1
       */
     trait Options extends StObject {
       
@@ -299,8 +299,8 @@ object layer {
     
     /**
       * A response object for a tile request. Contains total number of elements requested and an array of currently available Tiles
-      * @property total {number} - the total number of requested tiles
-      * @property tiles {Array<H.map.provider.Tile>} - the tiles which this provider can currently return synchronously
+      * total {number} - the total number of requested tiles
+      * tiles {Array<H.map.provider.Tile>} - the tiles which this provider can currently return synchronously
       */
     trait Response extends StObject {
       
@@ -371,11 +371,11 @@ object layer {
     
     /**
       * Options which can be used when creating new layer object.
-      * @property min {number=} - The minimum zoom level for which the layer can provide data, default is 0
-      * @property max {number=} - The maximum zoom level for which the layer can provide data, default is 22
-      * @property dark {boolean=} - Indicates whether the content of this layer is mainly dark, default is false See also H.Map.Options#autoColor
-      * @property projection {H.geo.IProjection=} - The projection to be used for this layer, default is H.geo.mercator
-      * @property minWorldSize {number=} - The minimal world size at zoom level 0, default is 256
+      * min {number=} - The minimum zoom level for which the layer can provide data, default is 0
+      * max {number=} - The maximum zoom level for which the layer can provide data, default is 22
+      * dark {boolean=} - Indicates whether the content of this layer is mainly dark, default is false See also H.Map.Options#autoColor
+      * projection {H.geo.IProjection=} - The projection to be used for this layer, default is H.geo.mercator
+      * minWorldSize {number=} - The minimal world size at zoom level 0, default is 256
       */
     trait Options extends StObject {
       
@@ -491,10 +491,10 @@ object layer {
     
     /**
       * Configuration object which can be use to initialize the ObjectLayer.
-      * @property tileSize {number=} - the size of the tiles rendered by this layer for polylines and polygons (must be power of 2, default is 256)
-      * @property tileCacheSize {number=} - the number of fully rendered spatial tiles that are cached for immediate reuse, default is 32
-      * @property dataCacheSize {number=} - the number of tiles to cache which have render data only, default is 512
-      * @property pixelRatio {number=} - The pixelRatio to use for over-sampling in cases of high-resolution displays
+      * tileSize {number=} - the size of the tiles rendered by this layer for polylines and polygons (must be power of 2, default is 256)
+      * tileCacheSize {number=} - the number of fully rendered spatial tiles that are cached for immediate reuse, default is 32
+      * dataCacheSize {number=} - the number of tiles to cache which have render data only, default is 512
+      * pixelRatio {number=} - The pixelRatio to use for over-sampling in cases of high-resolution displays
       */
     trait Options extends StObject {
       
@@ -536,8 +536,8 @@ object layer {
     
     /**
       * A response object returned by the H.map.layer.ObjectLayer#requestOverlays function.
-      * @property total {number} - The total number of overlays within the requested bounds, inclusive overlays which are not ready loaded yet
-      * @property overlays {Array<H.map.Overlay>} - A list all overlays which are ready to render
+      * total {number} - The total number of overlays within the requested bounds, inclusive overlays which are not ready loaded yet
+      * overlays {Array<H.map.Overlay>} - A list all overlays which are ready to render
       */
     trait OverlaysResponse extends StObject {
       

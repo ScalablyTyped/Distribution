@@ -16,7 +16,7 @@ object libIconsRobotFilledMod extends Shortcut {
   @js.native
   trait RobotFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_RobotFilledIconType: String = js.native

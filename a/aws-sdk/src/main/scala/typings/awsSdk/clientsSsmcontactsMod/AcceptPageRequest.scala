@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcceptPageRequest extends StObject {
   
   /**
-    * The accept code is a 6-digit code used to acknowledge the page.
+    * A 6-digit code used to acknowledge the page.
     */
   var AcceptCode: typings.awsSdk.clientsSsmcontactsMod.AcceptCode
   

@@ -7,25 +7,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FileDecorationProvider extends StObject {
   
   /**
-    * An optional event to signal that decorations for one or many files have changed.
-    *
-    * *Note* that this event should be used to propagate information about children.
-    *
-    * @see {@link EventEmitter}
-    */
+  		 * An optional event to signal that decorations for one or many files have changed.
+  		 *
+  		 * *Note* that this event should be used to propagate information about children.
+  		 *
+  		 * @see {@link EventEmitter}
+  		 */
   var onDidChangeFileDecorations: js.UndefOr[Event[js.UndefOr[Uri | js.Array[Uri]]]] = js.undefined
   
   /**
-    * Provide decorations for a given uri.
-    *
-    * *Note* that this function is only called when a file gets rendered in the UI.
-    * This means a decoration from a descendent that propagates upwards must be signaled
-    * to the editor via the {@link FileDecorationProvider.onDidChangeFileDecorations onDidChangeFileDecorations}-event.
-    *
-    * @param uri The uri of the file to provide a decoration for.
-    * @param token A cancellation token.
-    * @returns A decoration or a thenable that resolves to such.
-    */
+  		 * Provide decorations for a given uri.
+  		 *
+  		 * *Note* that this function is only called when a file gets rendered in the UI.
+  		 * This means a decoration from a descendent that propagates upwards must be signaled
+  		 * to the editor via the {@link FileDecorationProvider.onDidChangeFileDecorations onDidChangeFileDecorations}-event.
+  		 *
+  		 * @param uri The uri of the file to provide a decoration for.
+  		 * @param token A cancellation token.
+  		 * @returns A decoration or a thenable that resolves to such.
+  		 */
   def provideFileDecoration(uri: Uri, token: CancellationToken): ProviderResult[FileDecoration]
 }
 object FileDecorationProvider {

@@ -36,6 +36,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.meters_
 import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.millimeters
 import typings.arcgisJsApi.arcgisJsApiStrings.quantile
+import typings.arcgisJsApi.arcgisJsApiStrings.relationship_
 import typings.arcgisJsApi.arcgisJsApiStrings.square_
 import typings.arcgisJsApi.arcgisJsApiStrings.thumb
 import typings.arcgisJsApi.arcgisJsApiStrings.triangle_
@@ -163,7 +164,7 @@ trait AuthoringInfoProperties extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#type)
     */
   var `type`: js.UndefOr[
-    `class-breaks-size` | `class-breaks-color` | `classed-color` | `classed-size` | typings.arcgisJsApi.arcgisJsApiStrings.flow | typings.arcgisJsApi.arcgisJsApiStrings.predominance | typings.arcgisJsApi.arcgisJsApiStrings.relationship | `univariate-color-size`
+    `class-breaks-size` | `class-breaks-color` | `classed-color` | `classed-size` | typings.arcgisJsApi.arcgisJsApiStrings.flow | typings.arcgisJsApi.arcgisJsApiStrings.predominance | relationship_ | `univariate-color-size`
   ] = js.undefined
   
   /**
@@ -266,7 +267,7 @@ object AuthoringInfoProperties {
     inline def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
     
     inline def setType(
-      value: `class-breaks-size` | `class-breaks-color` | `classed-color` | `classed-size` | typings.arcgisJsApi.arcgisJsApiStrings.flow | typings.arcgisJsApi.arcgisJsApiStrings.predominance | typings.arcgisJsApi.arcgisJsApiStrings.relationship | `univariate-color-size`
+      value: `class-breaks-size` | `class-breaks-color` | `classed-color` | `classed-size` | typings.arcgisJsApi.arcgisJsApiStrings.flow | typings.arcgisJsApi.arcgisJsApiStrings.predominance | relationship_ | `univariate-color-size`
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)

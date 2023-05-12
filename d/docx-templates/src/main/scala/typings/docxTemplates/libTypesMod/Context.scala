@@ -1,6 +1,7 @@
 package typings.docxTemplates.libTypesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.docxTemplates.anon.Caption
 import typings.docxTemplates.anon.Wp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,6 +18,8 @@ trait Context extends StObject {
   var fJump: Boolean
   
   var fSeekQuery: Boolean
+  
+  var gCntEndIf: Double
   
   var gCntIf: Double
   
@@ -42,7 +45,7 @@ trait Context extends StObject {
   
   var pendingHtmlNode: js.UndefOr[TextNode | NonTextNode] = js.undefined
   
-  var pendingImageNode: js.UndefOr[NonTextNode] = js.undefined
+  var pendingImageNode: js.UndefOr[Caption] = js.undefined
   
   var pendingLinkNode: js.UndefOr[NonTextNode] = js.undefined
   
@@ -62,6 +65,7 @@ object Context {
     fCmd: Boolean,
     fJump: Boolean,
     fSeekQuery: Boolean,
+    gCntEndIf: Double,
     gCntIf: Double,
     htmlId: Double,
     htmls: Htmls,
@@ -75,7 +79,7 @@ object Context {
     shorthands: StringDictionary[String],
     vars: StringDictionary[VarValue]
   ): Context = {
-    val __obj = js.Dynamic.literal(buffers = buffers.asInstanceOf[js.Any], cmd = cmd.asInstanceOf[js.Any], fCmd = fCmd.asInstanceOf[js.Any], fJump = fJump.asInstanceOf[js.Any], fSeekQuery = fSeekQuery.asInstanceOf[js.Any], gCntIf = gCntIf.asInstanceOf[js.Any], htmlId = htmlId.asInstanceOf[js.Any], htmls = htmls.asInstanceOf[js.Any], imageId = imageId.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], linkId = linkId.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], loops = loops.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], shorthands = shorthands.asInstanceOf[js.Any], vars = vars.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(buffers = buffers.asInstanceOf[js.Any], cmd = cmd.asInstanceOf[js.Any], fCmd = fCmd.asInstanceOf[js.Any], fJump = fJump.asInstanceOf[js.Any], fSeekQuery = fSeekQuery.asInstanceOf[js.Any], gCntEndIf = gCntEndIf.asInstanceOf[js.Any], gCntIf = gCntIf.asInstanceOf[js.Any], htmlId = htmlId.asInstanceOf[js.Any], htmls = htmls.asInstanceOf[js.Any], imageId = imageId.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], linkId = linkId.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], loops = loops.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], shorthands = shorthands.asInstanceOf[js.Any], vars = vars.asInstanceOf[js.Any])
     __obj.asInstanceOf[Context]
   }
   
@@ -91,6 +95,8 @@ object Context {
     inline def setFJump(value: Boolean): Self = StObject.set(x, "fJump", value.asInstanceOf[js.Any])
     
     inline def setFSeekQuery(value: Boolean): Self = StObject.set(x, "fSeekQuery", value.asInstanceOf[js.Any])
+    
+    inline def setGCntEndIf(value: Double): Self = StObject.set(x, "gCntEndIf", value.asInstanceOf[js.Any])
     
     inline def setGCntIf(value: Double): Self = StObject.set(x, "gCntIf", value.asInstanceOf[js.Any])
     
@@ -122,7 +128,7 @@ object Context {
     
     inline def setPendingHtmlNodeUndefined: Self = StObject.set(x, "pendingHtmlNode", js.undefined)
     
-    inline def setPendingImageNode(value: NonTextNode): Self = StObject.set(x, "pendingImageNode", value.asInstanceOf[js.Any])
+    inline def setPendingImageNode(value: Caption): Self = StObject.set(x, "pendingImageNode", value.asInstanceOf[js.Any])
     
     inline def setPendingImageNodeUndefined: Self = StObject.set(x, "pendingImageNode", js.undefined)
     

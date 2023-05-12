@@ -12,9 +12,14 @@ trait InstantiatedEntries extends StObject {
   var animationGroups: js.Array[AnimationGroup]
   
   /**
+    * Disposes the instantiated entries from the scene
+    */
+  def dispose(): Unit
+  
+  /**
     * List of new root nodes (eg. nodes with no parent)
     */
-  var rootNodes: js.Array[TransformNode]
+  var rootNodes: js.Array[Node]
   
   /**
     * List of new skeletons
@@ -25,10 +30,11 @@ object InstantiatedEntries {
   
   inline def apply(
     animationGroups: js.Array[AnimationGroup],
-    rootNodes: js.Array[TransformNode],
+    dispose: () => Unit,
+    rootNodes: js.Array[Node],
     skeletons: js.Array[Skeleton]
   ): InstantiatedEntries = {
-    val __obj = js.Dynamic.literal(animationGroups = animationGroups.asInstanceOf[js.Any], rootNodes = rootNodes.asInstanceOf[js.Any], skeletons = skeletons.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(animationGroups = animationGroups.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), rootNodes = rootNodes.asInstanceOf[js.Any], skeletons = skeletons.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstantiatedEntries]
   }
   
@@ -39,9 +45,11 @@ object InstantiatedEntries {
     
     inline def setAnimationGroupsVarargs(value: AnimationGroup*): Self = StObject.set(x, "animationGroups", js.Array(value*))
     
-    inline def setRootNodes(value: js.Array[TransformNode]): Self = StObject.set(x, "rootNodes", value.asInstanceOf[js.Any])
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
-    inline def setRootNodesVarargs(value: TransformNode*): Self = StObject.set(x, "rootNodes", js.Array(value*))
+    inline def setRootNodes(value: js.Array[Node]): Self = StObject.set(x, "rootNodes", value.asInstanceOf[js.Any])
+    
+    inline def setRootNodesVarargs(value: Node*): Self = StObject.set(x, "rootNodes", js.Array(value*))
     
     inline def setSkeletons(value: js.Array[Skeleton]): Self = StObject.set(x, "skeletons", value.asInstanceOf[js.Any])
     

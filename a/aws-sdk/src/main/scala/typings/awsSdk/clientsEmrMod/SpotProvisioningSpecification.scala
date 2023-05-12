@@ -22,7 +22,7 @@ trait SpotProvisioningSpecification extends StObject {
   var TimeoutAction: SpotProvisioningTimeoutAction
   
   /**
-    * The spot provisioning timeout period in minutes. If Spot Instances are not provisioned within this time period, the TimeOutAction is taken. Minimum value is 5 and maximum value is 1440. The timeout applies only during initial provisioning, when the cluster is first created.
+    * The Spot provisioning timeout period in minutes. If Spot Instances are not provisioned within this time period, the TimeOutAction is taken. Minimum value is 5 and maximum value is 1440. The timeout applies only during initial provisioning, when the cluster is first created.
     */
   var TimeoutDurationMinutes: WholeNumber
 }

@@ -16,7 +16,7 @@ object libIconsCodeSandboxSquareFilledMod extends Shortcut {
   @js.native
   trait CodeSandboxSquareFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_CodeSandboxSquareFilledIconType: String = js.native

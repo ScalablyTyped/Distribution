@@ -1,28 +1,23 @@
 package typings.gestalt.mod
 
 import typings.gestalt.gestaltStrings.auto
-import typings.gestalt.gestaltStrings.baseline
-import typings.gestalt.gestaltStrings.center
-import typings.gestalt.gestaltStrings.end
-import typings.gestalt.gestaltStrings.grow
-import typings.gestalt.gestaltStrings.none
-import typings.gestalt.gestaltStrings.shrink
-import typings.gestalt.gestaltStrings.start
-import typings.gestalt.gestaltStrings.stretch
-import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait FlexItemProps extends StObject {
   
-  var alignSelf: js.UndefOr[auto | start | end | center | baseline | stretch] = js.undefined
+  var alignSelf: js.UndefOr[auto | AlignItemsType] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.undefined
+  var children: js.UndefOr[Node] = js.undefined
   
-  var flex: js.UndefOr[grow | shrink | none] = js.undefined
+  var dataTestId: js.UndefOr[String] = js.undefined
+  
+  var flex: js.UndefOr[FlexType] = js.undefined
   
   var flexBasis: js.UndefOr[String | Double] = js.undefined
+  
+  var maxWidth: js.UndefOr[Double | String] = js.undefined
   
   var minWidth: js.UndefOr[Double | String] = js.undefined
 }
@@ -36,21 +31,29 @@ object FlexItemProps {
   @scala.inline
   implicit open class MutableBuilder[Self <: FlexItemProps] (val x: Self) extends AnyVal {
     
-    inline def setAlignSelf(value: auto | start | end | center | baseline | stretch): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
+    inline def setAlignSelf(value: auto | AlignItemsType): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
     
     inline def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
     
-    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Node): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setFlex(value: grow | shrink | none): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
+    inline def setDataTestId(value: String): Self = StObject.set(x, "dataTestId", value.asInstanceOf[js.Any])
+    
+    inline def setDataTestIdUndefined: Self = StObject.set(x, "dataTestId", js.undefined)
+    
+    inline def setFlex(value: FlexType): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
     
     inline def setFlexBasis(value: String | Double): Self = StObject.set(x, "flexBasis", value.asInstanceOf[js.Any])
     
     inline def setFlexBasisUndefined: Self = StObject.set(x, "flexBasis", js.undefined)
     
     inline def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
+    
+    inline def setMaxWidth(value: Double | String): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
     inline def setMinWidth(value: Double | String): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     

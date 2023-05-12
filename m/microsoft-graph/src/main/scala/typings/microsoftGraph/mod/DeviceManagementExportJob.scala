@@ -14,7 +14,7 @@ trait DeviceManagementExportJob
   // Filters applied on the report
   var filter: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Format of the exported report. Possible values are: csv, json.
+  // Format of the exported report. Possible values are: csv, pdf, json, unknownFutureValue.
   var format: js.UndefOr[DeviceManagementReportFileFormat] = js.undefined
   
   /**

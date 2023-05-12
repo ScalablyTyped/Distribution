@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../evaluator/anim-target.js').AnimTarget} AnimTarget */
 /**
   * This interface is used by {@link AnimEvaluator} to resolve unique animation target path strings
   * into instances of {@link AnimTarget}.

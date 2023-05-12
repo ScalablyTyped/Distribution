@@ -1,6 +1,7 @@
 package typings.openui5
 
 import typings.openui5.anon.EditorEvent
+import typings.openui5.anon.GetCompletions
 import typings.openui5.anon.OldValue
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -134,7 +135,7 @@ object sapUiCodeeditorCodeEditorMod {
     def addCustomCompleter(/**
       * Object with getCompletions method
       */
-    oCustomCompleter: js.Object): Unit = js.native
+    oCustomCompleter: GetCompletions): Unit = js.native
     
     /**
       * Attaches event handler `fnFunction` to the {@link #event:change change} event of this `sap.ui.codeeditor.CodeEditor`.
@@ -311,6 +312,8 @@ object sapUiCodeeditorCodeEditorMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -322,6 +325,8 @@ object sapUiCodeeditorCodeEditorMod {
     mParameters: OldValue): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:liveChange liveChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

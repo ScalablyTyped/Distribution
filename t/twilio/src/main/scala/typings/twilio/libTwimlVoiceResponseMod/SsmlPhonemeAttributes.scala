@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SsmlPhonemeAttributes extends StObject {
   
+  /** alphabet - Specify the phonetic alphabet */
   var alphabet: js.UndefOr[SsmlPhonemeAlphabet] = js.undefined
   
+  /** ph - Specifiy the phonetic symbols for pronunciation */
   var ph: js.UndefOr[String] = js.undefined
 }
 object SsmlPhonemeAttributes {

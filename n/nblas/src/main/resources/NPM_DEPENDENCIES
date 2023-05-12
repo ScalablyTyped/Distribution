@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "nblas" : "2.1.9"
+      "nblas" : "2.1.12"
     }
   ],
   "test-dependencies" : [
     {
-      "nblas" : "2.1.9"
+      "nblas" : "2.1.12"
     }
   ],
   "compile-devDependencies" : [

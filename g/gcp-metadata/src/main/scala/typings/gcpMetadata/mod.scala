@@ -17,6 +17,23 @@ object mod {
   @js.native
   val BASE_PATH: /* "/computeMetadata/v1" */ String = js.native
   
+  object GCE_LINUX_BIOS_PATHS {
+    
+    @JSImport("gcp-metadata", "GCE_LINUX_BIOS_PATHS")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("gcp-metadata", "GCE_LINUX_BIOS_PATHS.BIOS_DATE")
+    @js.native
+    def BIOS_DATE: String = js.native
+    inline def BIOS_DATE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BIOS_DATE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("gcp-metadata", "GCE_LINUX_BIOS_PATHS.BIOS_VENDOR")
+    @js.native
+    def BIOS_VENDOR: String = js.native
+    inline def BIOS_VENDOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BIOS_VENDOR")(x.asInstanceOf[js.Any])
+  }
+  
   /* Inlined std.Readonly<{  Metadata-Flavor :'Google'}> */
   object HEADERS {
     
@@ -41,11 +58,26 @@ object mod {
   @js.native
   val SECONDARY_HOST_ADDRESS: /* "http://metadata.google.internal." */ String = js.native
   
+  inline def detectGCPResidency(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("detectGCPResidency")().asInstanceOf[Boolean]
+  
+  @JSImport("gcp-metadata", "gcpResidencyCache")
+  @js.native
+  def gcpResidencyCache: Boolean | Null = js.native
+  inline def gcpResidencyCache_=(x: Boolean | Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gcpResidencyCache")(x.asInstanceOf[js.Any])
+  
   inline def instance[T](): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")().asInstanceOf[js.Promise[T]]
   inline def instance[T](options: String): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   inline def instance[T](options: Options): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   
   inline def isAvailable(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[js.Promise[Boolean]]
+  
+  inline def isGoogleCloudServerless(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGoogleCloudServerless")().asInstanceOf[Boolean]
+  
+  inline def isGoogleComputeEngine(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGoogleComputeEngine")().asInstanceOf[Boolean]
+  
+  inline def isGoogleComputeEngineLinux(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGoogleComputeEngineLinux")().asInstanceOf[Boolean]
+  
+  inline def isGoogleComputeEngineMACAddress(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGoogleComputeEngineMACAddress")().asInstanceOf[Boolean]
   
   inline def project[T](): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("project")().asInstanceOf[js.Promise[T]]
   inline def project[T](options: String): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("project")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
@@ -54,6 +86,9 @@ object mod {
   inline def requestTimeout(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("requestTimeout")().asInstanceOf[Double]
   
   inline def resetIsAvailableCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetIsAvailableCache")().asInstanceOf[Unit]
+  
+  inline def setGCPResidency(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGCPResidency")().asInstanceOf[Unit]
+  inline def setGCPResidency(value: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGCPResidency")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Options extends StObject {
     

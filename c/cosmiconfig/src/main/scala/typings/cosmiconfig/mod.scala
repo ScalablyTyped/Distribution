@@ -1,7 +1,5 @@
 package typings.cosmiconfig
 
-import typings.cosmiconfig.anon.ClearCaches
-import typings.cosmiconfig.anon.ClearLoadCache
 import typings.cosmiconfig.distTypesMod.Config
 import typings.cosmiconfig.distTypesMod.CosmiconfigResult
 import typings.cosmiconfig.distTypesMod.Loaders
@@ -16,11 +14,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def cosmiconfig(moduleName: String): ClearCaches = ^.asInstanceOf[js.Dynamic].applyDynamic("cosmiconfig")(moduleName.asInstanceOf[js.Any]).asInstanceOf[ClearCaches]
-  inline def cosmiconfig(moduleName: String, options: Options): ClearCaches = (^.asInstanceOf[js.Dynamic].applyDynamic("cosmiconfig")(moduleName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClearCaches]
+  inline def cosmiconfig(moduleName: String): PublicExplorer = ^.asInstanceOf[js.Dynamic].applyDynamic("cosmiconfig")(moduleName.asInstanceOf[js.Any]).asInstanceOf[PublicExplorer]
+  inline def cosmiconfig(moduleName: String, options: Options): PublicExplorer = (^.asInstanceOf[js.Dynamic].applyDynamic("cosmiconfig")(moduleName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PublicExplorer]
   
-  inline def cosmiconfigSync(moduleName: String): ClearLoadCache = ^.asInstanceOf[js.Dynamic].applyDynamic("cosmiconfigSync")(moduleName.asInstanceOf[js.Any]).asInstanceOf[ClearLoadCache]
-  inline def cosmiconfigSync(moduleName: String, options: OptionsSync): ClearLoadCache = (^.asInstanceOf[js.Dynamic].applyDynamic("cosmiconfigSync")(moduleName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClearLoadCache]
+  inline def cosmiconfigSync(moduleName: String): PublicExplorerSync = ^.asInstanceOf[js.Dynamic].applyDynamic("cosmiconfigSync")(moduleName.asInstanceOf[js.Any]).asInstanceOf[PublicExplorerSync]
+  inline def cosmiconfigSync(moduleName: String, options: OptionsSync): PublicExplorerSync = (^.asInstanceOf[js.Dynamic].applyDynamic("cosmiconfigSync")(moduleName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PublicExplorerSync]
   
   /* Inlined std.Readonly<{ readonly .cjs :cosmiconfig.cosmiconfig.LoaderSync,  readonly .js :cosmiconfig.cosmiconfig.LoaderSync,  readonly .json :cosmiconfig.cosmiconfig.LoaderSync,  readonly .yaml :cosmiconfig.cosmiconfig.LoaderSync,  readonly .yml :cosmiconfig.cosmiconfig.LoaderSync,  readonly noExt :cosmiconfig.cosmiconfig.LoaderSync}> */
   object defaultLoaders {
@@ -41,6 +39,10 @@ object mod {
     
     inline def yml(filepath: String, content: String): LoaderResult = (^.asInstanceOf[js.Dynamic].applyDynamic(".yml")(filepath.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[LoaderResult]
   }
+  
+  @JSImport("cosmiconfig", "metaSearchPlaces")
+  @js.native
+  val metaSearchPlaces: js.Array[String] = js.native
   
   type Loader = (js.Function2[/* filepath */ String, /* content */ String, js.Promise[LoaderResult]]) | LoaderSync
   
@@ -152,6 +154,54 @@ object mod {
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
+  }
+  
+  @js.native
+  trait PublicExplorer
+    extends StObject
+       with PublicExplorerBase {
+    
+    def load(filepath: String): js.Promise[CosmiconfigResult] = js.native
+    
+    def search(): js.Promise[CosmiconfigResult] = js.native
+    def search(searchFrom: String): js.Promise[CosmiconfigResult] = js.native
+  }
+  
+  trait PublicExplorerBase extends StObject {
+    
+    def clearCaches(): Unit
+    
+    def clearLoadCache(): Unit
+    
+    def clearSearchCache(): Unit
+  }
+  object PublicExplorerBase {
+    
+    inline def apply(clearCaches: () => Unit, clearLoadCache: () => Unit, clearSearchCache: () => Unit): PublicExplorerBase = {
+      val __obj = js.Dynamic.literal(clearCaches = js.Any.fromFunction0(clearCaches), clearLoadCache = js.Any.fromFunction0(clearLoadCache), clearSearchCache = js.Any.fromFunction0(clearSearchCache))
+      __obj.asInstanceOf[PublicExplorerBase]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PublicExplorerBase] (val x: Self) extends AnyVal {
+      
+      inline def setClearCaches(value: () => Unit): Self = StObject.set(x, "clearCaches", js.Any.fromFunction0(value))
+      
+      inline def setClearLoadCache(value: () => Unit): Self = StObject.set(x, "clearLoadCache", js.Any.fromFunction0(value))
+      
+      inline def setClearSearchCache(value: () => Unit): Self = StObject.set(x, "clearSearchCache", js.Any.fromFunction0(value))
+    }
+  }
+  
+  @js.native
+  trait PublicExplorerSync
+    extends StObject
+       with PublicExplorerBase {
+    
+    def load(filepath: String): CosmiconfigResult = js.native
+    
+    def search(): CosmiconfigResult = js.native
+    def search(searchFrom: String): CosmiconfigResult = js.native
   }
   
   type Transform = (js.Function1[/* CosmiconfigResult */ CosmiconfigResult, js.Promise[CosmiconfigResult]]) | TransformSync

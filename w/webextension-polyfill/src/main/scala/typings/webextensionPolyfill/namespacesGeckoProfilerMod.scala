@@ -13,7 +13,6 @@ object namespacesGeckoProfilerMod {
     /* Rewritten from type alias, can be one of: 
       - typings.webextensionPolyfill.webextensionPolyfillStrings.java_
       - typings.webextensionPolyfill.webextensionPolyfillStrings.js_
-      - typings.webextensionPolyfill.webextensionPolyfillStrings.leaf
       - typings.webextensionPolyfill.webextensionPolyfillStrings.mainthreadio
       - typings.webextensionPolyfill.webextensionPolyfillStrings.fileio
       - typings.webextensionPolyfill.webextensionPolyfillStrings.fileioall
@@ -21,7 +20,6 @@ object namespacesGeckoProfilerMod {
       - typings.webextensionPolyfill.webextensionPolyfillStrings.screenshots
       - typings.webextensionPolyfill.webextensionPolyfillStrings.seqstyle
       - typings.webextensionPolyfill.webextensionPolyfillStrings.stackwalk
-      - typings.webextensionPolyfill.webextensionPolyfillStrings.jstracer
       - typings.webextensionPolyfill.webextensionPolyfillStrings.jsallocations
       - typings.webextensionPolyfill.webextensionPolyfillStrings.nostacksampling
       - typings.webextensionPolyfill.webextensionPolyfillStrings.preferencereads
@@ -35,6 +33,7 @@ object namespacesGeckoProfilerMod {
       - typings.webextensionPolyfill.webextensionPolyfillStrings.markersallthreads
       - typings.webextensionPolyfill.webextensionPolyfillStrings.unregisteredthreads
       - typings.webextensionPolyfill.webextensionPolyfillStrings.processcpu
+      - typings.webextensionPolyfill.webextensionPolyfillStrings.power
       - typings.webextensionPolyfill.webextensionPolyfillStrings.responsiveness
     */
     trait ProfilerFeature extends StObject
@@ -58,10 +57,6 @@ object namespacesGeckoProfilerMod {
       
       inline def jsallocations: typings.webextensionPolyfill.webextensionPolyfillStrings.jsallocations = "jsallocations".asInstanceOf[typings.webextensionPolyfill.webextensionPolyfillStrings.jsallocations]
       
-      inline def jstracer: typings.webextensionPolyfill.webextensionPolyfillStrings.jstracer = "jstracer".asInstanceOf[typings.webextensionPolyfill.webextensionPolyfillStrings.jstracer]
-      
-      inline def leaf: typings.webextensionPolyfill.webextensionPolyfillStrings.leaf = "leaf".asInstanceOf[typings.webextensionPolyfill.webextensionPolyfillStrings.leaf]
-      
       inline def mainthreadio: typings.webextensionPolyfill.webextensionPolyfillStrings.mainthreadio = "mainthreadio".asInstanceOf[typings.webextensionPolyfill.webextensionPolyfillStrings.mainthreadio]
       
       inline def markersallthreads: typings.webextensionPolyfill.webextensionPolyfillStrings.markersallthreads = "markersallthreads".asInstanceOf[typings.webextensionPolyfill.webextensionPolyfillStrings.markersallthreads]
@@ -73,6 +68,8 @@ object namespacesGeckoProfilerMod {
       inline def nostacksampling: typings.webextensionPolyfill.webextensionPolyfillStrings.nostacksampling = "nostacksampling".asInstanceOf[typings.webextensionPolyfill.webextensionPolyfillStrings.nostacksampling]
       
       inline def notimerresolutionchange: typings.webextensionPolyfill.webextensionPolyfillStrings.notimerresolutionchange = "notimerresolutionchange".asInstanceOf[typings.webextensionPolyfill.webextensionPolyfillStrings.notimerresolutionchange]
+      
+      inline def power: typings.webextensionPolyfill.webextensionPolyfillStrings.power = "power".asInstanceOf[typings.webextensionPolyfill.webextensionPolyfillStrings.power]
       
       inline def preferencereads: typings.webextensionPolyfill.webextensionPolyfillStrings.preferencereads = "preferencereads".asInstanceOf[typings.webextensionPolyfill.webextensionPolyfillStrings.preferencereads]
       

@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Configuration object for privacy settings.
   *
-  * **See also**
-  * - [Configure privacy settings](https://developers.google.com/publisher-tag/samples/configure-privacy)
+  * @see [Configure privacy settings](https://developers.google.com/publisher-tag/samples/configure-privacy)
   */
 trait PrivacySettingsConfig extends StObject {
   
@@ -23,8 +22,7 @@ trait PrivacySettingsConfig extends StObject {
     * When enabled, the GPT library itself may optionally be requested from a cookie-less,
     * [limited ads URL](https://developers.google.com/publisher-tag/guides/general-best-practices#load_from_an_official_source).
     *
-    * **See also**
-    * - [Display a limited ad](https://developers.google.com/publisher-tag/samples/display-limited-ad)
+    * @see [Display a limited ad](https://developers.google.com/publisher-tag/samples/display-limited-ad)
     */
   var limitedAds: js.UndefOr[Boolean] = js.undefined
   
@@ -43,17 +41,15 @@ trait PrivacySettingsConfig extends StObject {
     * This value populates the [Traffic source](https://support.google.com/admanager/answer/11233407) dimension in Ad Manager reporting.
     * If not set, traffic source defaults to `undefined` in reporting.
     *
-    * **Example**
-    * ```
-    * // Indicate requests represent organic traffic.
-    * googletag.pubads().setPrivacySettings({
-    *   trafficSource: googletag.enums.TrafficSource.ORGANIC
-    * });
-    * // Indicate requests represent purchased traffic.
-    * googletag.pubads().setPrivacySettings({
-    *   trafficSource: googletag.enums.TrafficSource.PURCHASED
-    * });
-    * ```
+    * @example
+    *   // Indicate requests represent organic traffic.
+    *   googletag.pubads().setPrivacySettings({
+    *     trafficSource: googletag.enums.TrafficSource.ORGANIC
+    *   });
+    *   // Indicate requests represent purchased traffic.
+    *   googletag.pubads().setPrivacySettings({
+    *     trafficSource: googletag.enums.TrafficSource.PURCHASED
+    *   });
     */
   var trafficSource: js.UndefOr[TrafficSource] = js.undefined
   

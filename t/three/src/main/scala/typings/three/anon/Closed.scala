@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Closed extends StObject {
   
-  var closed: Boolean
+  val closed: Boolean
   
-  var path: Curve[Vector3]
+  val path: Curve[Vector3]
   
-  var radialSegments: Double
+  val radialSegments: Double
   
-  var radius: Double
+  val radius: Double
   
-  var tubularSegments: Double
+  val tubularSegments: Double
 }
 object Closed {
   

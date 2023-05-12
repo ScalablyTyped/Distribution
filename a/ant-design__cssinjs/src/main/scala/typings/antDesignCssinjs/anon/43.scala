@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.GridAutoColumns
+import typings.csstype.mod.Property.TextAlign
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `43` extends StObject {
   
   var value: js.UndefOr[
-    (GridAutoColumns[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (GridAutoColumns[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridAutoColumns[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[GridAutoColumns[Double | String]]])
+    TextAlign | (js.Array[
+      (Extract[js.UndefOr[TextAlign | js.Array[NonNullable[js.UndefOr[TextAlign]]]], String]) | NonNullable[js.UndefOr[TextAlign]]
     ])
   ] = js.native
 }

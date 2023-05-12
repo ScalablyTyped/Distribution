@@ -1,6 +1,5 @@
 package typings.angularCli
 
-import typings.angularCli.srcCommandBuilderCommandModuleMod.CommandContext
 import typings.angularCli.srcCommandBuilderCommandModuleMod.CommandModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,11 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object srcCommandsCacheCliMod {
   
-  @JSImport("@angular/cli/src/commands/cache/cli", "CacheCommandModule")
+  @JSImport("@angular/cli/src/commands/cache/cli", JSImport.Default)
   @js.native
-  open class CacheCommandModule protected ()
+  open class default () extends CacheCommandModule
+  
+  @js.native
+  trait CacheCommandModule
     extends CommandModule[js.Object] {
-    def this(context: CommandContext) = this()
     
     @JSName("describe")
     var describe_CacheCommandModule: String = js.native

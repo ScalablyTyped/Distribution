@@ -41,19 +41,28 @@ object distEsmSrcRecaptchaMod {
   
   trait GreCAPTCHARenderOption extends StObject {
     
+    def callback(): Unit
+    
+    def `error-callback`(): Unit
+    
     var sitekey: String
     
     var size: invisible
   }
   object GreCAPTCHARenderOption {
     
-    inline def apply(sitekey: String): GreCAPTCHARenderOption = {
-      val __obj = js.Dynamic.literal(sitekey = sitekey.asInstanceOf[js.Any], size = "invisible")
+    inline def apply(callback: () => Unit, `error-callback`: () => Unit, sitekey: String): GreCAPTCHARenderOption = {
+      val __obj = js.Dynamic.literal(callback = js.Any.fromFunction0(callback), sitekey = sitekey.asInstanceOf[js.Any], size = "invisible")
+      __obj.updateDynamic("error-callback")(js.Any.fromFunction0(`error-callback`))
       __obj.asInstanceOf[GreCAPTCHARenderOption]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: GreCAPTCHARenderOption] (val x: Self) extends AnyVal {
+      
+      inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+      
+      inline def `setError-callback`(value: () => Unit): Self = StObject.set(x, "error-callback", js.Any.fromFunction0(value))
       
       inline def setSitekey(value: String): Self = StObject.set(x, "sitekey", value.asInstanceOf[js.Any])
       

@@ -8,11 +8,11 @@ trait ParametersPathOrgString extends StObject {
   
   var parameters: PathOrgString
   
-  var responses: `200ContentApplicationjson432`
+  var responses: `404422500`
 }
 object ParametersPathOrgString {
   
-  inline def apply(parameters: PathOrgString, responses: `200ContentApplicationjson432`): ParametersPathOrgString = {
+  inline def apply(parameters: PathOrgString, responses: `404422500`): ParametersPathOrgString = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathOrgString]
   }
@@ -22,6 +22,6 @@ object ParametersPathOrgString {
     
     inline def setParameters(value: PathOrgString): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200ContentApplicationjson432`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `404422500`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

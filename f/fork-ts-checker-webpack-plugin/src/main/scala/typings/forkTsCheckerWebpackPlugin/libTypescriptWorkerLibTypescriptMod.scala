@@ -6,292 +6,124 @@ import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginBooleans.`fa
 import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.dts
 import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.js_
 import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.quit
+import typings.std.Map
+import typings.std.NonNullable
 import typings.typescript.anon.Config
 import typings.typescript.anon.Errors
-import typings.typescript.anon.ExpressionWithTypeArgumen
 import typings.typescript.anon.FileExists
 import typings.typescript.anon.FnCall
 import typings.typescript.anon.ImpliedNodeFormat
 import typings.typescript.anon.Options
 import typings.typescript.mod.AccessExpression
 import typings.typescript.mod.ArrayBindingElement
-import typings.typescript.mod.ArrayBindingPattern
-import typings.typescript.mod.ArrayLiteralExpression
-import typings.typescript.mod.ArrayTypeNode
-import typings.typescript.mod.ArrowFunction
-import typings.typescript.mod.AsExpression
-import typings.typescript.mod.AssertClause
-import typings.typescript.mod.AssertsKeyword
-import typings.typescript.mod.AsteriskToken
-import typings.typescript.mod.AwaitExpression
-import typings.typescript.mod.AwaitKeyword
-import typings.typescript.mod.BigIntLiteral
-import typings.typescript.mod.BinaryExpression
-import typings.typescript.mod.BinaryOperator
-import typings.typescript.mod.BinaryOperatorToken
 import typings.typescript.mod.BindingElement
 import typings.typescript.mod.BindingName
-import typings.typescript.mod.Block
-import typings.typescript.mod.BooleanLiteral
-import typings.typescript.mod.BreakStatement
 import typings.typescript.mod.BuildOptions
 import typings.typescript.mod.BuilderProgram
 import typings.typescript.mod.BuilderProgramHost
-import typings.typescript.mod.Bundle
-import typings.typescript.mod.CallChain
-import typings.typescript.mod.CallExpression
-import typings.typescript.mod.CallSignatureDeclaration
 import typings.typescript.mod.CancellationToken
-import typings.typescript.mod.CaseBlock
-import typings.typescript.mod.CaseClause
-import typings.typescript.mod.CaseOrDefaultClause
-import typings.typescript.mod.CatchClause
-import typings.typescript.mod.ClassDeclaration
-import typings.typescript.mod.ClassElement
-import typings.typescript.mod.ClassExpression
 import typings.typescript.mod.Classifier
-import typings.typescript.mod.ColonToken
-import typings.typescript.mod.CommaListExpression
 import typings.typescript.mod.CommentKind
 import typings.typescript.mod.CommentRange
 import typings.typescript.mod.CompilerHost
 import typings.typescript.mod.CompilerOptions
-import typings.typescript.mod.ComputedPropertyName
 import typings.typescript.mod.ConciseBody
-import typings.typescript.mod.ConditionalExpression
-import typings.typescript.mod.ConditionalTypeNode
-import typings.typescript.mod.ConstructSignatureDeclaration
-import typings.typescript.mod.ConstructorDeclaration
-import typings.typescript.mod.ConstructorTypeNode
-import typings.typescript.mod.ContinueStatement
 import typings.typescript.mod.CreateProgramOptions
 import typings.typescript.mod.CreateProgram_
 import typings.typescript.mod.CreateSourceFileOptions
-import typings.typescript.mod.DebuggerStatement
 import typings.typescript.mod.Declaration
 import typings.typescript.mod.DeclarationName
 import typings.typescript.mod.DeclarationWithTypeParameters
 import typings.typescript.mod.Decorator
-import typings.typescript.mod.DefaultClause
-import typings.typescript.mod.DeleteExpression
 import typings.typescript.mod.Diagnostic
 import typings.typescript.mod.DiagnosticMessageChain
 import typings.typescript.mod.DiagnosticReporter
-import typings.typescript.mod.DoStatement
 import typings.typescript.mod.DocumentRegistry
-import typings.typescript.mod.DotDotDotToken
 import typings.typescript.mod.EditorOptions
 import typings.typescript.mod.EditorSettings
-import typings.typescript.mod.ElementAccessChain
-import typings.typescript.mod.ElementAccessExpression
 import typings.typescript.mod.EmitAndSemanticDiagnosticsBuilderProgram
 import typings.typescript.mod.EmitFlags
 import typings.typescript.mod.EmitHelper
-import typings.typescript.mod.EmptyStatement
 import typings.typescript.mod.EntityName
-import typings.typescript.mod.EnumDeclaration
-import typings.typescript.mod.EnumMember
-import typings.typescript.mod.EqualsGreaterThanToken
 import typings.typescript.mod.ErrorCallback
-import typings.typescript.mod.ExclamationToken
-import typings.typescript.mod.ExportAssignment
-import typings.typescript.mod.ExportDeclaration
-import typings.typescript.mod.ExportSpecifier
 import typings.typescript.mod.Expression
-import typings.typescript.mod.ExpressionStatement
-import typings.typescript.mod.ExpressionWithTypeArguments
 import typings.typescript.mod.ExtendedConfigCacheEntry
-import typings.typescript.mod.ExternalModuleReference
-import typings.typescript.mod.FalseLiteral
 import typings.typescript.mod.FileExtensionInfo
 import typings.typescript.mod.FileReference
-import typings.typescript.mod.ForInStatement
-import typings.typescript.mod.ForInitializer
-import typings.typescript.mod.ForOfStatement
-import typings.typescript.mod.ForStatement
 import typings.typescript.mod.FormatCodeSettings
 import typings.typescript.mod.FormatDiagnosticsHost
 import typings.typescript.mod.FunctionBody
-import typings.typescript.mod.FunctionDeclaration
-import typings.typescript.mod.FunctionExpression
 import typings.typescript.mod.FunctionLikeDeclaration
-import typings.typescript.mod.FunctionTypeNode
-import typings.typescript.mod.GeneratedIdentifierFlags
-import typings.typescript.mod.GetAccessorDeclaration
 import typings.typescript.mod.GetEffectiveTypeRootsHost
 import typings.typescript.mod.HasDecorators
 import typings.typescript.mod.HasModifiers
-import typings.typescript.mod.HeritageClause
 import typings.typescript.mod.IScriptSnapshot
 import typings.typescript.mod.Identifier
-import typings.typescript.mod.IfStatement
-import typings.typescript.mod.ImportClause
-import typings.typescript.mod.ImportDeclaration
-import typings.typescript.mod.ImportEqualsDeclaration
-import typings.typescript.mod.ImportSpecifier
-import typings.typescript.mod.ImportTypeAssertionContainer
-import typings.typescript.mod.ImportTypeNode
 import typings.typescript.mod.IncrementalProgramOptions
-import typings.typescript.mod.IndexSignatureDeclaration
-import typings.typescript.mod.IndexedAccessTypeNode
-import typings.typescript.mod.InferTypeNode
 import typings.typescript.mod.InputFiles
-import typings.typescript.mod.InterfaceDeclaration
-import typings.typescript.mod.IntersectionTypeNode
-import typings.typescript.mod.JSDoc
 import typings.typescript.mod.JSDocAugmentsTag
-import typings.typescript.mod.JSDocAuthorTag
-import typings.typescript.mod.JSDocCallbackTag
 import typings.typescript.mod.JSDocClassTag
 import typings.typescript.mod.JSDocComment
 import typings.typescript.mod.JSDocDeprecatedTag
 import typings.typescript.mod.JSDocEnumTag
 import typings.typescript.mod.JSDocImplementsTag
-import typings.typescript.mod.JSDocNamespaceDeclaration
 import typings.typescript.mod.JSDocOverrideTag
 import typings.typescript.mod.JSDocParameterTag
 import typings.typescript.mod.JSDocPrivateTag
-import typings.typescript.mod.JSDocPropertyLikeTag
-import typings.typescript.mod.JSDocPropertyTag
 import typings.typescript.mod.JSDocProtectedTag
 import typings.typescript.mod.JSDocPublicTag
 import typings.typescript.mod.JSDocReadonlyTag
 import typings.typescript.mod.JSDocReturnTag
+import typings.typescript.mod.JSDocSatisfiesTag
 import typings.typescript.mod.JSDocSignature
 import typings.typescript.mod.JSDocTag
 import typings.typescript.mod.JSDocTemplateTag
 import typings.typescript.mod.JSDocThisTag
-import typings.typescript.mod.JSDocTypeExpression
-import typings.typescript.mod.JSDocTypeLiteral
 import typings.typescript.mod.JSDocTypeTag
 import typings.typescript.mod.JSDocTypedefTag
-import typings.typescript.mod.JSDocUnknownTag
 import typings.typescript.mod.JsonSourceFile
-import typings.typescript.mod.JsxAttribute
-import typings.typescript.mod.JsxAttributeLike
-import typings.typescript.mod.JsxAttributeValue
-import typings.typescript.mod.JsxAttributes
-import typings.typescript.mod.JsxChild
-import typings.typescript.mod.JsxClosingElement
-import typings.typescript.mod.JsxClosingFragment
-import typings.typescript.mod.JsxElement
-import typings.typescript.mod.JsxExpression
-import typings.typescript.mod.JsxFragment
-import typings.typescript.mod.JsxOpeningElement
-import typings.typescript.mod.JsxOpeningFragment
-import typings.typescript.mod.JsxSelfClosingElement
-import typings.typescript.mod.JsxSpreadAttribute
-import typings.typescript.mod.JsxTagNameExpression
-import typings.typescript.mod.JsxText
-import typings.typescript.mod.KeywordTypeNode
-import typings.typescript.mod.KeywordTypeSyntaxKind
-import typings.typescript.mod.LabeledStatement
+import typings.typescript.mod.KeywordSyntaxKind
 import typings.typescript.mod.LanguageService
 import typings.typescript.mod.LanguageServiceHost
 import typings.typescript.mod.LanguageServiceMode
 import typings.typescript.mod.LanguageVariant
 import typings.typescript.mod.LineAndCharacter
-import typings.typescript.mod.LiteralExpression
-import typings.typescript.mod.LiteralTypeNode
-import typings.typescript.mod.Map
-import typings.typescript.mod.MappedTypeNode
-import typings.typescript.mod.MemberName
-import typings.typescript.mod.MetaProperty
-import typings.typescript.mod.MethodDeclaration
-import typings.typescript.mod.MethodSignature
-import typings.typescript.mod.MinusToken
 import typings.typescript.mod.Modifier
 import typings.typescript.mod.ModifierFlags
-import typings.typescript.mod.ModifierLike
-import typings.typescript.mod.ModifierSyntaxKind
-import typings.typescript.mod.ModifierToken
-import typings.typescript.mod.ModuleBlock
-import typings.typescript.mod.ModuleBody
-import typings.typescript.mod.ModuleDeclaration
 import typings.typescript.mod.ModuleKind.CommonJS
 import typings.typescript.mod.ModuleKind.ESNext
-import typings.typescript.mod.ModuleName
-import typings.typescript.mod.ModuleReference
 import typings.typescript.mod.ModuleResolutionCache
 import typings.typescript.mod.ModuleResolutionHost
-import typings.typescript.mod.NamedExportBindings
-import typings.typescript.mod.NamedExports
-import typings.typescript.mod.NamedImportBindings
-import typings.typescript.mod.NamedImports
-import typings.typescript.mod.NamedTupleMember
-import typings.typescript.mod.NamespaceExport
-import typings.typescript.mod.NamespaceExportDeclaration
-import typings.typescript.mod.NamespaceImport
-import typings.typescript.mod.NewExpression
-import typings.typescript.mod.NoSubstitutionTemplateLiteral
 import typings.typescript.mod.Node
 import typings.typescript.mod.NodeArray
 import typings.typescript.mod.NodeFactory
 import typings.typescript.mod.NodeFlags
 import typings.typescript.mod.NodesVisitor
-import typings.typescript.mod.NonNullChain
-import typings.typescript.mod.NonNullExpression
 import typings.typescript.mod.NonRelativeModuleNameResolutionCache
-import typings.typescript.mod.NotEmittedStatement
-import typings.typescript.mod.NullLiteral
-import typings.typescript.mod.NumericLiteral
-import typings.typescript.mod.ObjectBindingPattern
-import typings.typescript.mod.ObjectLiteralElementLike
-import typings.typescript.mod.ObjectLiteralExpression
-import typings.typescript.mod.OmittedExpression
-import typings.typescript.mod.OptionalTypeNode
 import typings.typescript.mod.PackageJsonInfoCache
 import typings.typescript.mod.ParameterDeclaration
-import typings.typescript.mod.ParenthesizedExpression
-import typings.typescript.mod.ParenthesizedTypeNode
 import typings.typescript.mod.ParseConfigFileHost
 import typings.typescript.mod.ParseConfigHost
 import typings.typescript.mod.ParsedCommandLine
-import typings.typescript.mod.PartiallyEmittedExpression
 import typings.typescript.mod.Path
-import typings.typescript.mod.PlusToken
-import typings.typescript.mod.PostfixUnaryExpression
-import typings.typescript.mod.PostfixUnaryOperator
 import typings.typescript.mod.PreProcessedFileInfo
-import typings.typescript.mod.PrefixUnaryExpression
-import typings.typescript.mod.PrefixUnaryOperator
-import typings.typescript.mod.PrimaryExpression
 import typings.typescript.mod.PrintHandlers
 import typings.typescript.mod.Printer
 import typings.typescript.mod.PrinterOptions
 import typings.typescript.mod.PrivateIdentifier
 import typings.typescript.mod.Program
 import typings.typescript.mod.ProjectReference
-import typings.typescript.mod.PropertyAccessChain
-import typings.typescript.mod.PropertyAccessExpression
-import typings.typescript.mod.PropertyAssignment
-import typings.typescript.mod.PropertyDeclaration
-import typings.typescript.mod.PropertyName
-import typings.typescript.mod.PropertyNameLiteral
-import typings.typescript.mod.PropertySignature
-import typings.typescript.mod.PseudoBigInt
-import typings.typescript.mod.Push
-import typings.typescript.mod.QualifiedName
-import typings.typescript.mod.QuestionDotToken
-import typings.typescript.mod.QuestionToken
 import typings.typescript.mod.ReadBuildProgramHost
-import typings.typescript.mod.ReadonlyKeyword
-import typings.typescript.mod.RegularExpressionLiteral
 import typings.typescript.mod.ReportEmitErrorSummary
-import typings.typescript.mod.ResolveProjectReferencePathHost
+import typings.typescript.mod.ResolutionMode
 import typings.typescript.mod.ResolvedConfigFileName
 import typings.typescript.mod.ResolvedModuleWithFailedLookupLocations
 import typings.typescript.mod.ResolvedProjectReference
 import typings.typescript.mod.ResolvedTypeReferenceDirectiveWithFailedLookupLocations
-import typings.typescript.mod.RestTypeNode
-import typings.typescript.mod.ReturnStatement
 import typings.typescript.mod.Scanner
 import typings.typescript.mod.ScriptKind
 import typings.typescript.mod.ScriptTarget
 import typings.typescript.mod.SemanticDiagnosticsBuilderProgram
-import typings.typescript.mod.SemicolonClassElement
-import typings.typescript.mod.SetAccessorDeclaration
-import typings.typescript.mod.ShorthandPropertyAssignment
 import typings.typescript.mod.SignatureDeclaration
 import typings.typescript.mod.SolutionBuilder
 import typings.typescript.mod.SolutionBuilderHost
@@ -301,78 +133,36 @@ import typings.typescript.mod.SourceFile
 import typings.typescript.mod.SourceFileLike
 import typings.typescript.mod.SourceMapRange
 import typings.typescript.mod.SourceMapSource
-import typings.typescript.mod.SpreadAssignment
-import typings.typescript.mod.SpreadElement
 import typings.typescript.mod.Statement
-import typings.typescript.mod.StringLiteral
 import typings.typescript.mod.StringLiteralLike
-import typings.typescript.mod.SuperExpression
-import typings.typescript.mod.SwitchStatement
 import typings.typescript.mod.Symbol
 import typings.typescript.mod.SymbolDisplayPart
 import typings.typescript.mod.SyntaxKind
-import typings.typescript.mod.SyntaxKind.ExtendsKeyword
-import typings.typescript.mod.SyntaxKind.ImplementsKeyword
-import typings.typescript.mod.SyntaxKind.ImportKeyword
-import typings.typescript.mod.SyntaxKind.KeyOfKeyword
 import typings.typescript.mod.SyntaxKind.MultiLineCommentTrivia
-import typings.typescript.mod.SyntaxKind.NewKeyword
 import typings.typescript.mod.SyntaxKind.SingleLineCommentTrivia
-import typings.typescript.mod.SyntaxKind.UniqueKeyword
 import typings.typescript.mod.SynthesizedComment
 import typings.typescript.mod.System
-import typings.typescript.mod.TaggedTemplateExpression
-import typings.typescript.mod.TemplateExpression
-import typings.typescript.mod.TemplateHead
-import typings.typescript.mod.TemplateLiteral
-import typings.typescript.mod.TemplateMiddle
-import typings.typescript.mod.TemplateSpan
-import typings.typescript.mod.TemplateTail
 import typings.typescript.mod.TextChangeRange
 import typings.typescript.mod.TextRange
 import typings.typescript.mod.TextSpan
-import typings.typescript.mod.ThisExpression
-import typings.typescript.mod.ThisTypeNode
-import typings.typescript.mod.ThrowStatement
-import typings.typescript.mod.Token
-import typings.typescript.mod.TokenFlags
 import typings.typescript.mod.TransformationContext
 import typings.typescript.mod.TransformationResult
 import typings.typescript.mod.TransformerFactory
 import typings.typescript.mod.TranspileOptions
 import typings.typescript.mod.TranspileOutput
-import typings.typescript.mod.TrueLiteral
-import typings.typescript.mod.TryStatement
 import typings.typescript.mod.TsConfigSourceFile
-import typings.typescript.mod.TupleTypeNode
-import typings.typescript.mod.TypeAliasDeclaration
-import typings.typescript.mod.TypeAssertion
-import typings.typescript.mod.TypeElement
-import typings.typescript.mod.TypeLiteralNode
 import typings.typescript.mod.TypeNode
-import typings.typescript.mod.TypeOfExpression
-import typings.typescript.mod.TypeOperatorNode
 import typings.typescript.mod.TypeParameterDeclaration
-import typings.typescript.mod.TypePredicateNode
-import typings.typescript.mod.TypeQueryNode
 import typings.typescript.mod.TypeReferenceDirectiveResolutionCache
-import typings.typescript.mod.TypeReferenceNode
-import typings.typescript.mod.UnionTypeNode
 import typings.typescript.mod.UnparsedSource
 import typings.typescript.mod.VariableDeclaration
-import typings.typescript.mod.VariableDeclarationList
-import typings.typescript.mod.VariableStatement
 import typings.typescript.mod.Visitor
-import typings.typescript.mod.VoidExpression
 import typings.typescript.mod.WatchCompilerHostOfConfigFile
 import typings.typescript.mod.WatchCompilerHostOfFilesAndCompilerOptions
 import typings.typescript.mod.WatchOfConfigFile
 import typings.typescript.mod.WatchOfFilesAndCompilerOptions
 import typings.typescript.mod.WatchOptions
 import typings.typescript.mod.WatchStatusReporter
-import typings.typescript.mod.WhileStatement
-import typings.typescript.mod.WithStatement
-import typings.typescript.mod.YieldExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -419,6 +209,36 @@ object libTypescriptWorkerLibTypescriptMod {
     inline def addSyntheticTrailingComment[T /* <: Node */](node: T, kind: MultiLineCommentTrivia, text: String, hasTrailingNewLine: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("addSyntheticTrailingComment")(node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], text.asInstanceOf[js.Any], hasTrailingNewLine.asInstanceOf[js.Any])).asInstanceOf[T]
     inline def addSyntheticTrailingComment[T /* <: Node */](node: T, kind: SingleLineCommentTrivia, text: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("addSyntheticTrailingComment")(node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[T]
     inline def addSyntheticTrailingComment[T /* <: Node */](node: T, kind: SingleLineCommentTrivia, text: String, hasTrailingNewLine: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("addSyntheticTrailingComment")(node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], text.asInstanceOf[js.Any], hasTrailingNewLine.asInstanceOf[js.Any])).asInstanceOf[T]
+    
+    inline def bundlerModuleNameResolver(
+      moduleName: String,
+      containingFile: String,
+      compilerOptions: CompilerOptions,
+      host: ModuleResolutionHost
+    ): ResolvedModuleWithFailedLookupLocations = (^.asInstanceOf[js.Dynamic].applyDynamic("bundlerModuleNameResolver")(moduleName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], compilerOptions.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[ResolvedModuleWithFailedLookupLocations]
+    inline def bundlerModuleNameResolver(
+      moduleName: String,
+      containingFile: String,
+      compilerOptions: CompilerOptions,
+      host: ModuleResolutionHost,
+      cache: Unit,
+      redirectedReference: ResolvedProjectReference
+    ): ResolvedModuleWithFailedLookupLocations = (^.asInstanceOf[js.Dynamic].applyDynamic("bundlerModuleNameResolver")(moduleName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], compilerOptions.asInstanceOf[js.Any], host.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], redirectedReference.asInstanceOf[js.Any])).asInstanceOf[ResolvedModuleWithFailedLookupLocations]
+    inline def bundlerModuleNameResolver(
+      moduleName: String,
+      containingFile: String,
+      compilerOptions: CompilerOptions,
+      host: ModuleResolutionHost,
+      cache: ModuleResolutionCache
+    ): ResolvedModuleWithFailedLookupLocations = (^.asInstanceOf[js.Dynamic].applyDynamic("bundlerModuleNameResolver")(moduleName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], compilerOptions.asInstanceOf[js.Any], host.asInstanceOf[js.Any], cache.asInstanceOf[js.Any])).asInstanceOf[ResolvedModuleWithFailedLookupLocations]
+    inline def bundlerModuleNameResolver(
+      moduleName: String,
+      containingFile: String,
+      compilerOptions: CompilerOptions,
+      host: ModuleResolutionHost,
+      cache: ModuleResolutionCache,
+      redirectedReference: ResolvedProjectReference
+    ): ResolvedModuleWithFailedLookupLocations = (^.asInstanceOf[js.Dynamic].applyDynamic("bundlerModuleNameResolver")(moduleName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], compilerOptions.asInstanceOf[js.Any], host.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], redirectedReference.asInstanceOf[js.Any])).asInstanceOf[ResolvedModuleWithFailedLookupLocations]
     
     inline def canHaveDecorators(node: Node): /* is typescript.typescript.HasDecorators */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canHaveDecorators")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.HasDecorators */ Boolean]
     
@@ -467,7 +287,10 @@ object libTypescriptWorkerLibTypescriptMod {
     inline def convertCompilerOptionsFromJson(jsonOptions: Any, basePath: String): Errors = (^.asInstanceOf[js.Dynamic].applyDynamic("convertCompilerOptionsFromJson")(jsonOptions.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[Errors]
     inline def convertCompilerOptionsFromJson(jsonOptions: Any, basePath: String, configFileName: String): Errors = (^.asInstanceOf[js.Dynamic].applyDynamic("convertCompilerOptionsFromJson")(jsonOptions.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any], configFileName.asInstanceOf[js.Any])).asInstanceOf[Errors]
     
-    inline def convertToObject(sourceFile: JsonSourceFile, errors: Push[Diagnostic]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToObject")(sourceFile.asInstanceOf[js.Any], errors.asInstanceOf[js.Any])).asInstanceOf[Any]
+    /**
+      * Convert the json syntax tree into the json value
+      */
+    inline def convertToObject(sourceFile: JsonSourceFile, errors: js.Array[Diagnostic]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToObject")(sourceFile.asInstanceOf[js.Any], errors.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     inline def convertTypeAcquisitionFromJson(jsonOptions: Any, basePath: String): Options = (^.asInstanceOf[js.Dynamic].applyDynamic("convertTypeAcquisitionFromJson")(jsonOptions.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[Options]
     inline def convertTypeAcquisitionFromJson(jsonOptions: Any, basePath: String, configFileName: String): Options = (^.asInstanceOf[js.Dynamic].applyDynamic("convertTypeAcquisitionFromJson")(jsonOptions.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any], configFileName.asInstanceOf[js.Any])).asInstanceOf[Options]
@@ -500,1173 +323,22 @@ object libTypescriptWorkerLibTypescriptMod {
       projectReferences: js.UndefOr[js.Array[ProjectReference]]
     ): BuilderProgram = (^.asInstanceOf[js.Dynamic].applyDynamic("createAbstractBuilder")(rootNames.asInstanceOf[js.Any], options.asInstanceOf[js.Any], host.asInstanceOf[js.Any], oldProgram.asInstanceOf[js.Any], configFileParsingDiagnostics.asInstanceOf[js.Any], projectReferences.asInstanceOf[js.Any])).asInstanceOf[BuilderProgram]
     
-    /** @deprecated Use `factory.createAdd` or the factory supplied by your transformation context instead. */
-    inline def createAdd(left: Expression, right: Expression): BinaryExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createAdd")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression]
-    
-    /** @deprecated Use `factory.createArrayBindingPattern` or the factory supplied by your transformation context instead. */
-    inline def createArrayBindingPattern(elements: js.Array[ArrayBindingElement]): ArrayBindingPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("createArrayBindingPattern")(elements.asInstanceOf[js.Any]).asInstanceOf[ArrayBindingPattern]
-    
-    /** @deprecated Use `factory.createArrayLiteralExpression` or the factory supplied by your transformation context instead. */
-    inline def createArrayLiteral(): ArrayLiteralExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createArrayLiteral")().asInstanceOf[ArrayLiteralExpression]
-    inline def createArrayLiteral(elements: js.Array[Expression]): ArrayLiteralExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createArrayLiteral")(elements.asInstanceOf[js.Any]).asInstanceOf[ArrayLiteralExpression]
-    inline def createArrayLiteral(elements: js.Array[Expression], multiLine: Boolean): ArrayLiteralExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrayLiteral")(elements.asInstanceOf[js.Any], multiLine.asInstanceOf[js.Any])).asInstanceOf[ArrayLiteralExpression]
-    inline def createArrayLiteral(elements: Unit, multiLine: Boolean): ArrayLiteralExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrayLiteral")(elements.asInstanceOf[js.Any], multiLine.asInstanceOf[js.Any])).asInstanceOf[ArrayLiteralExpression]
-    
-    /** @deprecated Use `factory.createArrayTypeNode` or the factory supplied by your transformation context instead. */
-    inline def createArrayTypeNode(elementType: TypeNode): ArrayTypeNode = ^.asInstanceOf[js.Dynamic].applyDynamic("createArrayTypeNode")(elementType.asInstanceOf[js.Any]).asInstanceOf[ArrayTypeNode]
-    
-    inline def createArrowFunction(
-      modifiers: js.Array[Modifier],
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrowFunction")(modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def createArrowFunction(
-      modifiers: js.Array[Modifier],
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      equalsGreaterThanToken: Unit,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrowFunction")(modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], equalsGreaterThanToken.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def createArrowFunction(
-      modifiers: js.Array[Modifier],
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      equalsGreaterThanToken: EqualsGreaterThanToken,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrowFunction")(modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], equalsGreaterThanToken.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    /** @deprecated Use `factory.createArrowFunction` or the factory supplied by your transformation context instead. */
-    inline def createArrowFunction(
-      modifiers: js.Array[Modifier],
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrowFunction")(modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def createArrowFunction(
-      modifiers: js.Array[Modifier],
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      equalsGreaterThanToken: Unit,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrowFunction")(modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], equalsGreaterThanToken.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    /** @deprecated Use `factory.createArrowFunction` or the factory supplied by your transformation context instead. */
-    inline def createArrowFunction(
-      modifiers: js.Array[Modifier],
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      equalsGreaterThanToken: EqualsGreaterThanToken,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrowFunction")(modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], equalsGreaterThanToken.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def createArrowFunction(
-      modifiers: js.Array[Modifier],
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrowFunction")(modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def createArrowFunction(
-      modifiers: js.Array[Modifier],
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      equalsGreaterThanToken: Unit,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrowFunction")(modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], equalsGreaterThanToken.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def createArrowFunction(
-      modifiers: js.Array[Modifier],
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      equalsGreaterThanToken: EqualsGreaterThanToken,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrowFunction")(modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], equalsGreaterThanToken.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def createArrowFunction(
-      modifiers: js.Array[Modifier],
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrowFunction")(modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def createArrowFunction(
-      modifiers: js.Array[Modifier],
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      equalsGreaterThanToken: Unit,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrowFunction")(modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], equalsGreaterThanToken.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def createArrowFunction(
-      modifiers: js.Array[Modifier],
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      equalsGreaterThanToken: EqualsGreaterThanToken,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrowFunction")(modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], equalsGreaterThanToken.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def createArrowFunction(
-      modifiers: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrowFunction")(modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def createArrowFunction(
-      modifiers: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      equalsGreaterThanToken: Unit,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrowFunction")(modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], equalsGreaterThanToken.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def createArrowFunction(
-      modifiers: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      equalsGreaterThanToken: EqualsGreaterThanToken,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrowFunction")(modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], equalsGreaterThanToken.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def createArrowFunction(
-      modifiers: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrowFunction")(modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def createArrowFunction(
-      modifiers: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      equalsGreaterThanToken: Unit,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrowFunction")(modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], equalsGreaterThanToken.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def createArrowFunction(
-      modifiers: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      equalsGreaterThanToken: EqualsGreaterThanToken,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrowFunction")(modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], equalsGreaterThanToken.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def createArrowFunction(
-      modifiers: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrowFunction")(modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def createArrowFunction(
-      modifiers: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      equalsGreaterThanToken: Unit,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrowFunction")(modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], equalsGreaterThanToken.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def createArrowFunction(
-      modifiers: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      equalsGreaterThanToken: EqualsGreaterThanToken,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrowFunction")(modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], equalsGreaterThanToken.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def createArrowFunction(
-      modifiers: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrowFunction")(modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def createArrowFunction(
-      modifiers: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      equalsGreaterThanToken: Unit,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrowFunction")(modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], equalsGreaterThanToken.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def createArrowFunction(
-      modifiers: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      equalsGreaterThanToken: EqualsGreaterThanToken,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrowFunction")(modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], equalsGreaterThanToken.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    
-    /** @deprecated Use `factory.createAsExpression` or the factory supplied by your transformation context instead. */
-    inline def createAsExpression(expression: Expression, `type`: TypeNode): AsExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createAsExpression")(expression.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[AsExpression]
-    
-    /** @deprecated Use `factory.createAssignment` or the factory supplied by your transformation context instead. */
-    inline def createAssignment(left: Expression, right: Expression): BinaryExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createAssignment")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression]
-    
-    /** @deprecated Use `factory.createAwaitExpression` or the factory supplied by your transformation context instead. */
-    inline def createAwait(expression: Expression): AwaitExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createAwait")(expression.asInstanceOf[js.Any]).asInstanceOf[AwaitExpression]
-    
-    /** @deprecated Use `factory.createBigIntLiteral` or the factory supplied by your transformation context instead. */
-    inline def createBigIntLiteral(value: String): BigIntLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createBigIntLiteral")(value.asInstanceOf[js.Any]).asInstanceOf[BigIntLiteral]
-    inline def createBigIntLiteral(value: PseudoBigInt): BigIntLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createBigIntLiteral")(value.asInstanceOf[js.Any]).asInstanceOf[BigIntLiteral]
-    
-    inline def createBinary(left: Expression, operator: BinaryOperatorToken, right: Expression): BinaryExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createBinary")(left.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression]
-    /** @deprecated Use `factory.createBinaryExpression` or the factory supplied by your transformation context instead. */
-    inline def createBinary(left: Expression, operator: BinaryOperator, right: Expression): BinaryExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createBinary")(left.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression]
-    
-    inline def createBindingElement(dotDotDotToken: Unit, propertyName: String, name: String): BindingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createBindingElement")(dotDotDotToken.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[BindingElement]
-    inline def createBindingElement(dotDotDotToken: Unit, propertyName: String, name: String, initializer: Expression): BindingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createBindingElement")(dotDotDotToken.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[BindingElement]
-    inline def createBindingElement(dotDotDotToken: Unit, propertyName: String, name: BindingName): BindingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createBindingElement")(dotDotDotToken.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[BindingElement]
-    inline def createBindingElement(dotDotDotToken: Unit, propertyName: String, name: BindingName, initializer: Expression): BindingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createBindingElement")(dotDotDotToken.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[BindingElement]
-    inline def createBindingElement(dotDotDotToken: Unit, propertyName: Unit, name: String): BindingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createBindingElement")(dotDotDotToken.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[BindingElement]
-    inline def createBindingElement(dotDotDotToken: Unit, propertyName: Unit, name: String, initializer: Expression): BindingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createBindingElement")(dotDotDotToken.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[BindingElement]
-    inline def createBindingElement(dotDotDotToken: Unit, propertyName: Unit, name: BindingName): BindingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createBindingElement")(dotDotDotToken.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[BindingElement]
-    inline def createBindingElement(dotDotDotToken: Unit, propertyName: Unit, name: BindingName, initializer: Expression): BindingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createBindingElement")(dotDotDotToken.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[BindingElement]
-    inline def createBindingElement(dotDotDotToken: Unit, propertyName: PropertyName, name: String): BindingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createBindingElement")(dotDotDotToken.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[BindingElement]
-    inline def createBindingElement(dotDotDotToken: Unit, propertyName: PropertyName, name: String, initializer: Expression): BindingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createBindingElement")(dotDotDotToken.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[BindingElement]
-    inline def createBindingElement(dotDotDotToken: Unit, propertyName: PropertyName, name: BindingName): BindingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createBindingElement")(dotDotDotToken.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[BindingElement]
-    inline def createBindingElement(dotDotDotToken: Unit, propertyName: PropertyName, name: BindingName, initializer: Expression): BindingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createBindingElement")(dotDotDotToken.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[BindingElement]
-    /** @deprecated Use `factory.createBindingElement` or the factory supplied by your transformation context instead. */
-    inline def createBindingElement(dotDotDotToken: DotDotDotToken, propertyName: String, name: String): BindingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createBindingElement")(dotDotDotToken.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[BindingElement]
-    inline def createBindingElement(dotDotDotToken: DotDotDotToken, propertyName: String, name: String, initializer: Expression): BindingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createBindingElement")(dotDotDotToken.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[BindingElement]
-    inline def createBindingElement(dotDotDotToken: DotDotDotToken, propertyName: String, name: BindingName): BindingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createBindingElement")(dotDotDotToken.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[BindingElement]
-    inline def createBindingElement(dotDotDotToken: DotDotDotToken, propertyName: String, name: BindingName, initializer: Expression): BindingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createBindingElement")(dotDotDotToken.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[BindingElement]
-    inline def createBindingElement(dotDotDotToken: DotDotDotToken, propertyName: Unit, name: String): BindingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createBindingElement")(dotDotDotToken.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[BindingElement]
-    inline def createBindingElement(dotDotDotToken: DotDotDotToken, propertyName: Unit, name: String, initializer: Expression): BindingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createBindingElement")(dotDotDotToken.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[BindingElement]
-    inline def createBindingElement(dotDotDotToken: DotDotDotToken, propertyName: Unit, name: BindingName): BindingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createBindingElement")(dotDotDotToken.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[BindingElement]
-    inline def createBindingElement(dotDotDotToken: DotDotDotToken, propertyName: Unit, name: BindingName, initializer: Expression): BindingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createBindingElement")(dotDotDotToken.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[BindingElement]
-    inline def createBindingElement(dotDotDotToken: DotDotDotToken, propertyName: PropertyName, name: String): BindingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createBindingElement")(dotDotDotToken.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[BindingElement]
-    inline def createBindingElement(dotDotDotToken: DotDotDotToken, propertyName: PropertyName, name: String, initializer: Expression): BindingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createBindingElement")(dotDotDotToken.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[BindingElement]
-    inline def createBindingElement(dotDotDotToken: DotDotDotToken, propertyName: PropertyName, name: BindingName): BindingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createBindingElement")(dotDotDotToken.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[BindingElement]
-    inline def createBindingElement(
-      dotDotDotToken: DotDotDotToken,
-      propertyName: PropertyName,
-      name: BindingName,
-      initializer: Expression
-    ): BindingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createBindingElement")(dotDotDotToken.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[BindingElement]
-    
-    /** @deprecated Use `factory.createBlock` or the factory supplied by your transformation context instead. */
-    inline def createBlock(statements: js.Array[Statement]): Block = ^.asInstanceOf[js.Dynamic].applyDynamic("createBlock")(statements.asInstanceOf[js.Any]).asInstanceOf[Block]
-    inline def createBlock(statements: js.Array[Statement], multiLine: Boolean): Block = (^.asInstanceOf[js.Dynamic].applyDynamic("createBlock")(statements.asInstanceOf[js.Any], multiLine.asInstanceOf[js.Any])).asInstanceOf[Block]
-    
-    /** @deprecated Use `factory.createBreakStatement` or the factory supplied by your transformation context instead. */
-    inline def createBreak(): BreakStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("createBreak")().asInstanceOf[BreakStatement]
-    inline def createBreak(label: String): BreakStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("createBreak")(label.asInstanceOf[js.Any]).asInstanceOf[BreakStatement]
-    inline def createBreak(label: Identifier): BreakStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("createBreak")(label.asInstanceOf[js.Any]).asInstanceOf[BreakStatement]
-    
     /**
       * Create a function that reports watch status by writing to the system and handles the formating of the diagnostic
       */
     inline def createBuilderStatusReporter(system: System): DiagnosticReporter = ^.asInstanceOf[js.Dynamic].applyDynamic("createBuilderStatusReporter")(system.asInstanceOf[js.Any]).asInstanceOf[DiagnosticReporter]
     inline def createBuilderStatusReporter(system: System, pretty: Boolean): DiagnosticReporter = (^.asInstanceOf[js.Dynamic].applyDynamic("createBuilderStatusReporter")(system.asInstanceOf[js.Any], pretty.asInstanceOf[js.Any])).asInstanceOf[DiagnosticReporter]
     
-    /** @deprecated Use `factory.createBundle` or the factory supplied by your transformation context instead. */
-    inline def createBundle(sourceFiles: js.Array[SourceFile]): Bundle = ^.asInstanceOf[js.Dynamic].applyDynamic("createBundle")(sourceFiles.asInstanceOf[js.Any]).asInstanceOf[Bundle]
-    inline def createBundle(sourceFiles: js.Array[SourceFile], prepends: js.Array[UnparsedSource | InputFiles]): Bundle = (^.asInstanceOf[js.Dynamic].applyDynamic("createBundle")(sourceFiles.asInstanceOf[js.Any], prepends.asInstanceOf[js.Any])).asInstanceOf[Bundle]
-    
-    /** @deprecated Use `factory.createCallExpression` or the factory supplied by your transformation context instead. */
-    inline def createCall(expression: Expression): CallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createCall")(expression.asInstanceOf[js.Any]).asInstanceOf[CallExpression]
-    inline def createCall(expression: Expression, typeArguments: js.Array[TypeNode]): CallExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createCall")(expression.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any])).asInstanceOf[CallExpression]
-    inline def createCall(expression: Expression, typeArguments: js.Array[TypeNode], argumentsArray: js.Array[Expression]): CallExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createCall")(expression.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], argumentsArray.asInstanceOf[js.Any])).asInstanceOf[CallExpression]
-    inline def createCall(expression: Expression, typeArguments: Unit, argumentsArray: js.Array[Expression]): CallExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createCall")(expression.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], argumentsArray.asInstanceOf[js.Any])).asInstanceOf[CallExpression]
-    
-    /** @deprecated Use `factory.createCallChain` or the factory supplied by your transformation context instead. */
-    inline def createCallChain(expression: Expression): CallChain = ^.asInstanceOf[js.Dynamic].applyDynamic("createCallChain")(expression.asInstanceOf[js.Any]).asInstanceOf[CallChain]
-    inline def createCallChain(expression: Expression, questionDotToken: Unit, typeArguments: js.Array[TypeNode]): CallChain = (^.asInstanceOf[js.Dynamic].applyDynamic("createCallChain")(expression.asInstanceOf[js.Any], questionDotToken.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any])).asInstanceOf[CallChain]
-    inline def createCallChain(
-      expression: Expression,
-      questionDotToken: Unit,
-      typeArguments: js.Array[TypeNode],
-      argumentsArray: js.Array[Expression]
-    ): CallChain = (^.asInstanceOf[js.Dynamic].applyDynamic("createCallChain")(expression.asInstanceOf[js.Any], questionDotToken.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], argumentsArray.asInstanceOf[js.Any])).asInstanceOf[CallChain]
-    inline def createCallChain(
-      expression: Expression,
-      questionDotToken: Unit,
-      typeArguments: Unit,
-      argumentsArray: js.Array[Expression]
-    ): CallChain = (^.asInstanceOf[js.Dynamic].applyDynamic("createCallChain")(expression.asInstanceOf[js.Any], questionDotToken.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], argumentsArray.asInstanceOf[js.Any])).asInstanceOf[CallChain]
-    inline def createCallChain(expression: Expression, questionDotToken: QuestionDotToken): CallChain = (^.asInstanceOf[js.Dynamic].applyDynamic("createCallChain")(expression.asInstanceOf[js.Any], questionDotToken.asInstanceOf[js.Any])).asInstanceOf[CallChain]
-    inline def createCallChain(expression: Expression, questionDotToken: QuestionDotToken, typeArguments: js.Array[TypeNode]): CallChain = (^.asInstanceOf[js.Dynamic].applyDynamic("createCallChain")(expression.asInstanceOf[js.Any], questionDotToken.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any])).asInstanceOf[CallChain]
-    inline def createCallChain(
-      expression: Expression,
-      questionDotToken: QuestionDotToken,
-      typeArguments: js.Array[TypeNode],
-      argumentsArray: js.Array[Expression]
-    ): CallChain = (^.asInstanceOf[js.Dynamic].applyDynamic("createCallChain")(expression.asInstanceOf[js.Any], questionDotToken.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], argumentsArray.asInstanceOf[js.Any])).asInstanceOf[CallChain]
-    inline def createCallChain(
-      expression: Expression,
-      questionDotToken: QuestionDotToken,
-      typeArguments: Unit,
-      argumentsArray: js.Array[Expression]
-    ): CallChain = (^.asInstanceOf[js.Dynamic].applyDynamic("createCallChain")(expression.asInstanceOf[js.Any], questionDotToken.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], argumentsArray.asInstanceOf[js.Any])).asInstanceOf[CallChain]
-    
-    /** @deprecated Use `factory.createCallSignature` or the factory supplied by your transformation context instead. */
-    inline def createCallSignature(typeParameters: js.Array[TypeParameterDeclaration], parameters: js.Array[ParameterDeclaration]): CallSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createCallSignature")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[CallSignatureDeclaration]
-    inline def createCallSignature(
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): CallSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createCallSignature")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[CallSignatureDeclaration]
-    inline def createCallSignature(typeParameters: Unit, parameters: js.Array[ParameterDeclaration]): CallSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createCallSignature")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[CallSignatureDeclaration]
-    inline def createCallSignature(typeParameters: Unit, parameters: js.Array[ParameterDeclaration], `type`: TypeNode): CallSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createCallSignature")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[CallSignatureDeclaration]
-    
-    /** @deprecated Use `factory.createCaseBlock` or the factory supplied by your transformation context instead. */
-    inline def createCaseBlock(clauses: js.Array[CaseOrDefaultClause]): CaseBlock = ^.asInstanceOf[js.Dynamic].applyDynamic("createCaseBlock")(clauses.asInstanceOf[js.Any]).asInstanceOf[CaseBlock]
-    
-    /** @deprecated Use `factory.createCaseClause` or the factory supplied by your transformation context instead. */
-    inline def createCaseClause(expression: Expression, statements: js.Array[Statement]): CaseClause = (^.asInstanceOf[js.Dynamic].applyDynamic("createCaseClause")(expression.asInstanceOf[js.Any], statements.asInstanceOf[js.Any])).asInstanceOf[CaseClause]
-    
-    /** @deprecated Use `factory.createCatchClause` or the factory supplied by your transformation context instead. */
-    inline def createCatchClause(variableDeclaration: String, block: Block): CatchClause = (^.asInstanceOf[js.Dynamic].applyDynamic("createCatchClause")(variableDeclaration.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[CatchClause]
-    inline def createCatchClause(variableDeclaration: Unit, block: Block): CatchClause = (^.asInstanceOf[js.Dynamic].applyDynamic("createCatchClause")(variableDeclaration.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[CatchClause]
-    inline def createCatchClause(variableDeclaration: BindingName, block: Block): CatchClause = (^.asInstanceOf[js.Dynamic].applyDynamic("createCatchClause")(variableDeclaration.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[CatchClause]
-    inline def createCatchClause(variableDeclaration: VariableDeclaration, block: Block): CatchClause = (^.asInstanceOf[js.Dynamic].applyDynamic("createCatchClause")(variableDeclaration.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[CatchClause]
-    
-    /** @deprecated Use `factory.createClassDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    /** @deprecated Use `factory.createClassDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createClassDeclaration(
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      modifiers: js.Array[ModifierLike],
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      modifiers: js.Array[ModifierLike],
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      modifiers: js.Array[ModifierLike],
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      modifiers: js.Array[ModifierLike],
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      modifiers: js.Array[ModifierLike],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      modifiers: js.Array[ModifierLike],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      modifiers: js.Array[ModifierLike],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      modifiers: js.Array[ModifierLike],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      modifiers: Unit,
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      modifiers: Unit,
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def createClassDeclaration(
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    
-    /** @deprecated Use `factory.createClassExpression` or the factory supplied by your transformation context instead. */
-    inline def createClassExpression(
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassExpression")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def createClassExpression(
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassExpression")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def createClassExpression(
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassExpression")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def createClassExpression(
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassExpression")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def createClassExpression(
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassExpression")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def createClassExpression(
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassExpression")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def createClassExpression(
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassExpression")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def createClassExpression(
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassExpression")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def createClassExpression(
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassExpression")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def createClassExpression(
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassExpression")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def createClassExpression(
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassExpression")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def createClassExpression(
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassExpression")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def createClassExpression(
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassExpression")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def createClassExpression(
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassExpression")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def createClassExpression(
-      modifiers: Unit,
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassExpression")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def createClassExpression(
-      modifiers: Unit,
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassExpression")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def createClassExpression(
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassExpression")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def createClassExpression(
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassExpression")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def createClassExpression(
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassExpression")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def createClassExpression(
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassExpression")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def createClassExpression(
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassExpression")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def createClassExpression(
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassExpression")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def createClassExpression(
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassExpression")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def createClassExpression(
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createClassExpression")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    
     /** The classifier is used for syntactic highlighting in editors via the TSServer */
     inline def createClassifier(): Classifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createClassifier")().asInstanceOf[Classifier]
     
-    /** @deprecated Use `factory.createComma` or the factory supplied by your transformation context instead. */
-    inline def createComma(left: Expression, right: Expression): Expression = (^.asInstanceOf[js.Dynamic].applyDynamic("createComma")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Expression]
-    
-    /** @deprecated Use `factory.createCommaListExpression` or the factory supplied by your transformation context instead. */
-    inline def createCommaList(elements: js.Array[Expression]): CommaListExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createCommaList")(elements.asInstanceOf[js.Any]).asInstanceOf[CommaListExpression]
-    
     inline def createCompilerHost(options: CompilerOptions): CompilerHost = ^.asInstanceOf[js.Dynamic].applyDynamic("createCompilerHost")(options.asInstanceOf[js.Any]).asInstanceOf[CompilerHost]
     inline def createCompilerHost(options: CompilerOptions, setParentNodes: Boolean): CompilerHost = (^.asInstanceOf[js.Dynamic].applyDynamic("createCompilerHost")(options.asInstanceOf[js.Any], setParentNodes.asInstanceOf[js.Any])).asInstanceOf[CompilerHost]
-    
-    /** @deprecated Use `factory.createComputedPropertyName` or the factory supplied by your transformation context instead. */
-    inline def createComputedPropertyName(expression: Expression): ComputedPropertyName = ^.asInstanceOf[js.Dynamic].applyDynamic("createComputedPropertyName")(expression.asInstanceOf[js.Any]).asInstanceOf[ComputedPropertyName]
-    
-    /** @deprecated Use `factory.createConditional` or the factory supplied by your transformation context instead. */
-    inline def createConditional(
-      condition: Expression,
-      questionToken: QuestionToken,
-      whenTrue: Expression,
-      colonToken: ColonToken,
-      whenFalse: Expression
-    ): ConditionalExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createConditional")(condition.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], whenTrue.asInstanceOf[js.Any], colonToken.asInstanceOf[js.Any], whenFalse.asInstanceOf[js.Any])).asInstanceOf[ConditionalExpression]
-    /** @deprecated Use `factory.createConditional` or the factory supplied by your transformation context instead. */
-    inline def createConditional(condition: Expression, whenTrue: Expression, whenFalse: Expression): ConditionalExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createConditional")(condition.asInstanceOf[js.Any], whenTrue.asInstanceOf[js.Any], whenFalse.asInstanceOf[js.Any])).asInstanceOf[ConditionalExpression]
-    
-    /** @deprecated Use `factory.createConditionalTypeNode` or the factory supplied by your transformation context instead. */
-    inline def createConditionalTypeNode(checkType: TypeNode, extendsType: TypeNode, trueType: TypeNode, falseType: TypeNode): ConditionalTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createConditionalTypeNode")(checkType.asInstanceOf[js.Any], extendsType.asInstanceOf[js.Any], trueType.asInstanceOf[js.Any], falseType.asInstanceOf[js.Any])).asInstanceOf[ConditionalTypeNode]
-    
-    /** @deprecated Use `factory.createConstructSignature` or the factory supplied by your transformation context instead. */
-    inline def createConstructSignature(typeParameters: js.Array[TypeParameterDeclaration], parameters: js.Array[ParameterDeclaration]): ConstructSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createConstructSignature")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[ConstructSignatureDeclaration]
-    inline def createConstructSignature(
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): ConstructSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createConstructSignature")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[ConstructSignatureDeclaration]
-    inline def createConstructSignature(typeParameters: Unit, parameters: js.Array[ParameterDeclaration]): ConstructSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createConstructSignature")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[ConstructSignatureDeclaration]
-    inline def createConstructSignature(typeParameters: Unit, parameters: js.Array[ParameterDeclaration], `type`: TypeNode): ConstructSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createConstructSignature")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[ConstructSignatureDeclaration]
-    
-    /** @deprecated Use `factory.createConstructorDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createConstructor(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      parameters: js.Array[ParameterDeclaration]
-    ): ConstructorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createConstructor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[ConstructorDeclaration]
-    inline def createConstructor(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): ConstructorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createConstructor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ConstructorDeclaration]
-    inline def createConstructor(decorators: js.Array[Decorator], modifiers: Unit, parameters: js.Array[ParameterDeclaration]): ConstructorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createConstructor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[ConstructorDeclaration]
-    inline def createConstructor(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): ConstructorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createConstructor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ConstructorDeclaration]
-    inline def createConstructor(decorators: Unit, modifiers: js.Array[Modifier], parameters: js.Array[ParameterDeclaration]): ConstructorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createConstructor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[ConstructorDeclaration]
-    inline def createConstructor(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): ConstructorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createConstructor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ConstructorDeclaration]
-    inline def createConstructor(decorators: Unit, modifiers: Unit, parameters: js.Array[ParameterDeclaration]): ConstructorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createConstructor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[ConstructorDeclaration]
-    inline def createConstructor(decorators: Unit, modifiers: Unit, parameters: js.Array[ParameterDeclaration], body: Block): ConstructorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createConstructor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ConstructorDeclaration]
-    /** @deprecated Use `factory.createConstructorDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createConstructor(modifiers: js.Array[Modifier], parameters: js.Array[ParameterDeclaration]): ConstructorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createConstructor")(modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[ConstructorDeclaration]
-    inline def createConstructor(modifiers: js.Array[Modifier], parameters: js.Array[ParameterDeclaration], body: Block): ConstructorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createConstructor")(modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ConstructorDeclaration]
-    inline def createConstructor(modifiers: Unit, parameters: js.Array[ParameterDeclaration]): ConstructorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createConstructor")(modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[ConstructorDeclaration]
-    inline def createConstructor(modifiers: Unit, parameters: js.Array[ParameterDeclaration], body: Block): ConstructorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createConstructor")(modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ConstructorDeclaration]
-    
-    /** @deprecated Use `factory.createConstructorTypeNode` or the factory supplied by your transformation context instead. */
-    inline def createConstructorTypeNode(
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): ConstructorTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createConstructorTypeNode")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[ConstructorTypeNode]
-    inline def createConstructorTypeNode(typeParameters: Unit, parameters: js.Array[ParameterDeclaration], `type`: TypeNode): ConstructorTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createConstructorTypeNode")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[ConstructorTypeNode]
-    
-    /** @deprecated Use `factory.createContinueStatement` or the factory supplied by your transformation context instead. */
-    inline def createContinue(): ContinueStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("createContinue")().asInstanceOf[ContinueStatement]
-    inline def createContinue(label: String): ContinueStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("createContinue")(label.asInstanceOf[js.Any]).asInstanceOf[ContinueStatement]
-    inline def createContinue(label: Identifier): ContinueStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("createContinue")(label.asInstanceOf[js.Any]).asInstanceOf[ContinueStatement]
-    
-    /** @deprecated Use `factory.createDebuggerStatement` or the factory supplied by your transformation context instead. */
-    inline def createDebuggerStatement(): DebuggerStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("createDebuggerStatement")().asInstanceOf[DebuggerStatement]
-    
-    /** @deprecated Use `factory.createDecorator` or the factory supplied by your transformation context instead. */
-    inline def createDecorator(expression: Expression): Decorator = ^.asInstanceOf[js.Dynamic].applyDynamic("createDecorator")(expression.asInstanceOf[js.Any]).asInstanceOf[Decorator]
-    
-    /** @deprecated Use `factory.createDefaultClause` or the factory supplied by your transformation context instead. */
-    inline def createDefaultClause(statements: js.Array[Statement]): DefaultClause = ^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultClause")(statements.asInstanceOf[js.Any]).asInstanceOf[DefaultClause]
-    
-    /** @deprecated Use `factory.createDeleteExpression` or the factory supplied by your transformation context instead. */
-    inline def createDelete(expression: Expression): DeleteExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createDelete")(expression.asInstanceOf[js.Any]).asInstanceOf[DeleteExpression]
-    
-    /** @deprecated Use `factory.createDoStatement` or the factory supplied by your transformation context instead. */
-    inline def createDo(statement: Statement, expression: Expression): DoStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("createDo")(statement.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[DoStatement]
     
     inline def createDocumentRegistry(): DocumentRegistry = ^.asInstanceOf[js.Dynamic].applyDynamic("createDocumentRegistry")().asInstanceOf[DocumentRegistry]
     inline def createDocumentRegistry(useCaseSensitiveFileNames: Boolean): DocumentRegistry = ^.asInstanceOf[js.Dynamic].applyDynamic("createDocumentRegistry")(useCaseSensitiveFileNames.asInstanceOf[js.Any]).asInstanceOf[DocumentRegistry]
     inline def createDocumentRegistry(useCaseSensitiveFileNames: Boolean, currentDirectory: String): DocumentRegistry = (^.asInstanceOf[js.Dynamic].applyDynamic("createDocumentRegistry")(useCaseSensitiveFileNames.asInstanceOf[js.Any], currentDirectory.asInstanceOf[js.Any])).asInstanceOf[DocumentRegistry]
     inline def createDocumentRegistry(useCaseSensitiveFileNames: Unit, currentDirectory: String): DocumentRegistry = (^.asInstanceOf[js.Dynamic].applyDynamic("createDocumentRegistry")(useCaseSensitiveFileNames.asInstanceOf[js.Any], currentDirectory.asInstanceOf[js.Any])).asInstanceOf[DocumentRegistry]
-    
-    /** @deprecated Use `factory.createElementAccessExpression` or the factory supplied by your transformation context instead. */
-    inline def createElementAccess(expression: Expression, index: Double): ElementAccessExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createElementAccess")(expression.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[ElementAccessExpression]
-    inline def createElementAccess(expression: Expression, index: Expression): ElementAccessExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createElementAccess")(expression.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[ElementAccessExpression]
-    
-    inline def createElementAccessChain(expression: Expression, questionDotToken: Unit, index: Double): ElementAccessChain = (^.asInstanceOf[js.Dynamic].applyDynamic("createElementAccessChain")(expression.asInstanceOf[js.Any], questionDotToken.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[ElementAccessChain]
-    inline def createElementAccessChain(expression: Expression, questionDotToken: Unit, index: Expression): ElementAccessChain = (^.asInstanceOf[js.Dynamic].applyDynamic("createElementAccessChain")(expression.asInstanceOf[js.Any], questionDotToken.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[ElementAccessChain]
-    /** @deprecated Use `factory.createElementAccessChain` or the factory supplied by your transformation context instead. */
-    inline def createElementAccessChain(expression: Expression, questionDotToken: QuestionDotToken, index: Double): ElementAccessChain = (^.asInstanceOf[js.Dynamic].applyDynamic("createElementAccessChain")(expression.asInstanceOf[js.Any], questionDotToken.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[ElementAccessChain]
-    inline def createElementAccessChain(expression: Expression, questionDotToken: QuestionDotToken, index: Expression): ElementAccessChain = (^.asInstanceOf[js.Dynamic].applyDynamic("createElementAccessChain")(expression.asInstanceOf[js.Any], questionDotToken.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[ElementAccessChain]
     
     /**
       * Create the builder that can handle the changes in program and iterate through changed files
@@ -1699,923 +371,12 @@ object libTypescriptWorkerLibTypescriptMod {
       projectReferences: js.UndefOr[js.Array[ProjectReference]]
     ): EmitAndSemanticDiagnosticsBuilderProgram = (^.asInstanceOf[js.Dynamic].applyDynamic("createEmitAndSemanticDiagnosticsBuilderProgram")(rootNames.asInstanceOf[js.Any], options.asInstanceOf[js.Any], host.asInstanceOf[js.Any], oldProgram.asInstanceOf[js.Any], configFileParsingDiagnostics.asInstanceOf[js.Any], projectReferences.asInstanceOf[js.Any])).asInstanceOf[EmitAndSemanticDiagnosticsBuilderProgram]
     
-    /** @deprecated Use `factory.createEmptyStatement` or the factory supplied by your transformation context instead. */
-    inline def createEmptyStatement(): EmptyStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmptyStatement")().asInstanceOf[EmptyStatement]
-    
-    /** @deprecated Use `factory.createEnumDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createEnumDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      members: js.Array[EnumMember]
-    ): EnumDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnumDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[EnumDeclaration]
-    inline def createEnumDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      members: js.Array[EnumMember]
-    ): EnumDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnumDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[EnumDeclaration]
-    inline def createEnumDeclaration(decorators: js.Array[Decorator], modifiers: Unit, name: String, members: js.Array[EnumMember]): EnumDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnumDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[EnumDeclaration]
-    inline def createEnumDeclaration(decorators: js.Array[Decorator], modifiers: Unit, name: Identifier, members: js.Array[EnumMember]): EnumDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnumDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[EnumDeclaration]
-    inline def createEnumDeclaration(decorators: Unit, modifiers: js.Array[Modifier], name: String, members: js.Array[EnumMember]): EnumDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnumDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[EnumDeclaration]
-    inline def createEnumDeclaration(decorators: Unit, modifiers: js.Array[Modifier], name: Identifier, members: js.Array[EnumMember]): EnumDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnumDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[EnumDeclaration]
-    inline def createEnumDeclaration(decorators: Unit, modifiers: Unit, name: String, members: js.Array[EnumMember]): EnumDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnumDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[EnumDeclaration]
-    inline def createEnumDeclaration(decorators: Unit, modifiers: Unit, name: Identifier, members: js.Array[EnumMember]): EnumDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnumDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[EnumDeclaration]
-    /** @deprecated Use `factory.createEnumDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createEnumDeclaration(modifiers: js.Array[Modifier], name: String, members: js.Array[EnumMember]): EnumDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnumDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[EnumDeclaration]
-    inline def createEnumDeclaration(modifiers: js.Array[Modifier], name: Identifier, members: js.Array[EnumMember]): EnumDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnumDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[EnumDeclaration]
-    inline def createEnumDeclaration(modifiers: Unit, name: String, members: js.Array[EnumMember]): EnumDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnumDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[EnumDeclaration]
-    inline def createEnumDeclaration(modifiers: Unit, name: Identifier, members: js.Array[EnumMember]): EnumDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnumDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[EnumDeclaration]
-    
-    /** @deprecated Use `factory.createEnumMember` or the factory supplied by your transformation context instead. */
-    inline def createEnumMember(name: String): EnumMember = ^.asInstanceOf[js.Dynamic].applyDynamic("createEnumMember")(name.asInstanceOf[js.Any]).asInstanceOf[EnumMember]
-    inline def createEnumMember(name: String, initializer: Expression): EnumMember = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnumMember")(name.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[EnumMember]
-    inline def createEnumMember(name: PropertyName): EnumMember = ^.asInstanceOf[js.Dynamic].applyDynamic("createEnumMember")(name.asInstanceOf[js.Any]).asInstanceOf[EnumMember]
-    inline def createEnumMember(name: PropertyName, initializer: Expression): EnumMember = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnumMember")(name.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[EnumMember]
-    
-    /** @deprecated Use `factory.createExportAssignment` or the factory supplied by your transformation context instead. */
-    inline def createExportAssignment(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      isExportEquals: Boolean,
-      expression: Expression
-    ): ExportAssignment = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportAssignment")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], isExportEquals.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[ExportAssignment]
-    inline def createExportAssignment(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      isExportEquals: Unit,
-      expression: Expression
-    ): ExportAssignment = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportAssignment")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], isExportEquals.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[ExportAssignment]
-    inline def createExportAssignment(decorators: js.Array[Decorator], modifiers: Unit, isExportEquals: Boolean, expression: Expression): ExportAssignment = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportAssignment")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], isExportEquals.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[ExportAssignment]
-    inline def createExportAssignment(decorators: js.Array[Decorator], modifiers: Unit, isExportEquals: Unit, expression: Expression): ExportAssignment = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportAssignment")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], isExportEquals.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[ExportAssignment]
-    inline def createExportAssignment(decorators: Unit, modifiers: js.Array[Modifier], isExportEquals: Boolean, expression: Expression): ExportAssignment = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportAssignment")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], isExportEquals.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[ExportAssignment]
-    inline def createExportAssignment(decorators: Unit, modifiers: js.Array[Modifier], isExportEquals: Unit, expression: Expression): ExportAssignment = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportAssignment")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], isExportEquals.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[ExportAssignment]
-    inline def createExportAssignment(decorators: Unit, modifiers: Unit, isExportEquals: Boolean, expression: Expression): ExportAssignment = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportAssignment")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], isExportEquals.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[ExportAssignment]
-    inline def createExportAssignment(decorators: Unit, modifiers: Unit, isExportEquals: Unit, expression: Expression): ExportAssignment = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportAssignment")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], isExportEquals.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[ExportAssignment]
-    /** @deprecated Use `factory.createExportAssignment` or the factory supplied by your transformation context instead. */
-    inline def createExportAssignment(modifiers: js.Array[Modifier], isExportEquals: Boolean, expression: Expression): ExportAssignment = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportAssignment")(modifiers.asInstanceOf[js.Any], isExportEquals.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[ExportAssignment]
-    inline def createExportAssignment(modifiers: js.Array[Modifier], isExportEquals: Unit, expression: Expression): ExportAssignment = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportAssignment")(modifiers.asInstanceOf[js.Any], isExportEquals.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[ExportAssignment]
-    inline def createExportAssignment(modifiers: Unit, isExportEquals: Boolean, expression: Expression): ExportAssignment = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportAssignment")(modifiers.asInstanceOf[js.Any], isExportEquals.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[ExportAssignment]
-    inline def createExportAssignment(modifiers: Unit, isExportEquals: Unit, expression: Expression): ExportAssignment = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportAssignment")(modifiers.asInstanceOf[js.Any], isExportEquals.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[ExportAssignment]
-    
-    /** @deprecated Use `factory.createExportDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createExportDeclaration(): ExportDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("createExportDeclaration")().asInstanceOf[ExportDeclaration]
-    inline def createExportDeclaration(decorators: js.Array[Decorator]): ExportDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("createExportDeclaration")(decorators.asInstanceOf[js.Any]).asInstanceOf[ExportDeclaration]
-    inline def createExportDeclaration(decorators: js.Array[Decorator], modifiers: js.Array[Modifier]): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def createExportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      exportClause: Unit,
-      moduleSpecifier: Unit,
-      isTypeOnly: Any
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def createExportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      exportClause: Unit,
-      moduleSpecifier: Expression
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def createExportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      exportClause: Unit,
-      moduleSpecifier: Expression,
-      isTypeOnly: Any
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def createExportDeclaration(decorators: js.Array[Decorator], modifiers: js.Array[Modifier], exportClause: NamedExportBindings): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def createExportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Unit,
-      isTypeOnly: Any
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def createExportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Expression
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def createExportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Expression,
-      isTypeOnly: Any
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def createExportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      exportClause: Unit,
-      moduleSpecifier: Unit,
-      isTypeOnly: Any
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def createExportDeclaration(decorators: js.Array[Decorator], modifiers: Unit, exportClause: Unit, moduleSpecifier: Expression): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def createExportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      exportClause: Unit,
-      moduleSpecifier: Expression,
-      isTypeOnly: Any
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def createExportDeclaration(decorators: js.Array[Decorator], modifiers: Unit, exportClause: NamedExportBindings): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def createExportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Unit,
-      isTypeOnly: Any
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def createExportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Expression
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def createExportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Expression,
-      isTypeOnly: Any
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def createExportDeclaration(decorators: Unit, modifiers: js.Array[Modifier]): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def createExportDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      exportClause: Unit,
-      moduleSpecifier: Unit,
-      isTypeOnly: Any
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def createExportDeclaration(decorators: Unit, modifiers: js.Array[Modifier], exportClause: Unit, moduleSpecifier: Expression): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def createExportDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      exportClause: Unit,
-      moduleSpecifier: Expression,
-      isTypeOnly: Any
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def createExportDeclaration(decorators: Unit, modifiers: js.Array[Modifier], exportClause: NamedExportBindings): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def createExportDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Unit,
-      isTypeOnly: Any
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def createExportDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Expression
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def createExportDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Expression,
-      isTypeOnly: Any
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def createExportDeclaration(decorators: Unit, modifiers: Unit, exportClause: Unit, moduleSpecifier: Unit, isTypeOnly: Any): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def createExportDeclaration(decorators: Unit, modifiers: Unit, exportClause: Unit, moduleSpecifier: Expression): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def createExportDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      exportClause: Unit,
-      moduleSpecifier: Expression,
-      isTypeOnly: Any
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def createExportDeclaration(decorators: Unit, modifiers: Unit, exportClause: NamedExportBindings): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def createExportDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Unit,
-      isTypeOnly: Any
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def createExportDeclaration(decorators: Unit, modifiers: Unit, exportClause: NamedExportBindings, moduleSpecifier: Expression): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def createExportDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Expression,
-      isTypeOnly: Any
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    
-    /** @deprecated Use `factory.createExportDefault` or the factory supplied by your transformation context instead. */
-    inline def createExportDefault(expression: Expression): ExportAssignment = ^.asInstanceOf[js.Dynamic].applyDynamic("createExportDefault")(expression.asInstanceOf[js.Any]).asInstanceOf[ExportAssignment]
-    
-    /** @deprecated Use `factory.createExportSpecifier` or the factory supplied by your transformation context instead. */
-    inline def createExportSpecifier(isTypeOnly: Boolean, propertyName: String, name: String): ExportSpecifier = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportSpecifier")(isTypeOnly.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ExportSpecifier]
-    inline def createExportSpecifier(isTypeOnly: Boolean, propertyName: String, name: Identifier): ExportSpecifier = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportSpecifier")(isTypeOnly.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ExportSpecifier]
-    inline def createExportSpecifier(isTypeOnly: Boolean, propertyName: Unit, name: String): ExportSpecifier = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportSpecifier")(isTypeOnly.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ExportSpecifier]
-    inline def createExportSpecifier(isTypeOnly: Boolean, propertyName: Unit, name: Identifier): ExportSpecifier = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportSpecifier")(isTypeOnly.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ExportSpecifier]
-    inline def createExportSpecifier(isTypeOnly: Boolean, propertyName: Identifier, name: String): ExportSpecifier = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportSpecifier")(isTypeOnly.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ExportSpecifier]
-    inline def createExportSpecifier(isTypeOnly: Boolean, propertyName: Identifier, name: Identifier): ExportSpecifier = (^.asInstanceOf[js.Dynamic].applyDynamic("createExportSpecifier")(isTypeOnly.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ExportSpecifier]
-    
-    /** @deprecated Use `factory.createExpressionStatement` or the factory supplied by your transformation context instead. */
-    inline def createExpressionStatement(expression: Expression): ExpressionStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("createExpressionStatement")(expression.asInstanceOf[js.Any]).asInstanceOf[ExpressionStatement]
-    
-    /** @deprecated Use `factory.createExpressionWithTypeArguments` or the factory supplied by your transformation context instead. */
-    inline def createExpressionWithTypeArguments(typeArguments: js.Array[TypeNode], expression: Expression): ExpressionWithTypeArguments = (^.asInstanceOf[js.Dynamic].applyDynamic("createExpressionWithTypeArguments")(typeArguments.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[ExpressionWithTypeArguments]
-    inline def createExpressionWithTypeArguments(typeArguments: Unit, expression: Expression): ExpressionWithTypeArguments = (^.asInstanceOf[js.Dynamic].applyDynamic("createExpressionWithTypeArguments")(typeArguments.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[ExpressionWithTypeArguments]
-    
-    /** @deprecated Use `factory.createExternalModuleExport` or the factory supplied by your transformation context instead. */
-    inline def createExternalModuleExport(exportName: Identifier): ExportDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("createExternalModuleExport")(exportName.asInstanceOf[js.Any]).asInstanceOf[ExportDeclaration]
-    
-    /** @deprecated Use `factory.createExternalModuleReference` or the factory supplied by your transformation context instead. */
-    inline def createExternalModuleReference(expression: Expression): ExternalModuleReference = ^.asInstanceOf[js.Dynamic].applyDynamic("createExternalModuleReference")(expression.asInstanceOf[js.Any]).asInstanceOf[ExternalModuleReference]
-    
-    /** @deprecated Use `factory.createFalse` or the factory supplied by your transformation context instead. */
-    inline def createFalse(): FalseLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createFalse")().asInstanceOf[FalseLiteral]
-    
-    /** @deprecated Use `factory.createUniqueName(text, GeneratedIdentifierFlags.Optimistic | GeneratedIdentifierFlags.FileLevel)` or the factory supplied by your transformation context instead. */
-    inline def createFileLevelUniqueName(text: String): Identifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createFileLevelUniqueName")(text.asInstanceOf[js.Any]).asInstanceOf[Identifier]
-    
-    inline def createFor(initializer: Unit, condition: Unit, incrementor: Unit, statement: Statement): ForStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("createFor")(initializer.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], incrementor.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[ForStatement]
-    inline def createFor(initializer: Unit, condition: Unit, incrementor: Expression, statement: Statement): ForStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("createFor")(initializer.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], incrementor.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[ForStatement]
-    inline def createFor(initializer: Unit, condition: Expression, incrementor: Unit, statement: Statement): ForStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("createFor")(initializer.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], incrementor.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[ForStatement]
-    inline def createFor(initializer: Unit, condition: Expression, incrementor: Expression, statement: Statement): ForStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("createFor")(initializer.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], incrementor.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[ForStatement]
-    inline def createFor(initializer: ForInitializer, condition: Unit, incrementor: Unit, statement: Statement): ForStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("createFor")(initializer.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], incrementor.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[ForStatement]
-    inline def createFor(initializer: ForInitializer, condition: Unit, incrementor: Expression, statement: Statement): ForStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("createFor")(initializer.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], incrementor.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[ForStatement]
-    inline def createFor(initializer: ForInitializer, condition: Expression, incrementor: Unit, statement: Statement): ForStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("createFor")(initializer.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], incrementor.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[ForStatement]
-    /** @deprecated Use `factory.createForStatement` or the factory supplied by your transformation context instead. */
-    inline def createFor(initializer: ForInitializer, condition: Expression, incrementor: Expression, statement: Statement): ForStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("createFor")(initializer.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], incrementor.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[ForStatement]
-    
-    /** @deprecated Use `factory.createForInStatement` or the factory supplied by your transformation context instead. */
-    inline def createForIn(initializer: ForInitializer, expression: Expression, statement: Statement): ForInStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("createForIn")(initializer.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[ForInStatement]
-    
-    inline def createForOf(awaitModifier: Unit, initializer: ForInitializer, expression: Expression, statement: Statement): ForOfStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("createForOf")(awaitModifier.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[ForOfStatement]
-    /** @deprecated Use `factory.createForOfStatement` or the factory supplied by your transformation context instead. */
-    inline def createForOf(
-      awaitModifier: AwaitKeyword,
-      initializer: ForInitializer,
-      expression: Expression,
-      statement: Statement
-    ): ForOfStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("createForOf")(awaitModifier.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[ForOfStatement]
-    
-    /** @deprecated Use `factory.createFunctionDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createFunctionDeclaration(
-      decorators: js.UndefOr[js.Array[Decorator]],
-      modifiers: js.UndefOr[js.Array[Modifier]],
-      asteriskToken: js.UndefOr[AsteriskToken],
-      name: js.UndefOr[String | Identifier],
-      typeParameters: js.UndefOr[js.Array[TypeParameterDeclaration]],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: js.UndefOr[TypeNode],
-      body: js.UndefOr[Block]
-    ): FunctionDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createFunctionDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionDeclaration]
-    /** @deprecated Use `factory.createFunctionDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createFunctionDeclaration(
-      modifiers: js.UndefOr[js.Array[ModifierLike]],
-      asteriskToken: js.UndefOr[AsteriskToken],
-      name: js.UndefOr[String | Identifier],
-      typeParameters: js.UndefOr[js.Array[TypeParameterDeclaration]],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: js.UndefOr[TypeNode],
-      body: js.UndefOr[Block]
-    ): FunctionDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createFunctionDeclaration")(modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionDeclaration]
-    
-    /** @deprecated Use `factory.createFunctionExpression` or the factory supplied by your transformation context instead. */
-    inline def createFunctionExpression(
-      modifiers: js.UndefOr[js.Array[Modifier]],
-      asteriskToken: js.UndefOr[AsteriskToken],
-      name: js.UndefOr[String | Identifier],
-      typeParameters: js.UndefOr[js.Array[TypeParameterDeclaration]],
-      parameters: js.UndefOr[js.Array[ParameterDeclaration]],
-      `type`: js.UndefOr[TypeNode],
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createFunctionExpression")(modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    
-    /** @deprecated Use `factory.createFunctionTypeNode` or the factory supplied by your transformation context instead. */
-    inline def createFunctionTypeNode(
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): FunctionTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createFunctionTypeNode")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[FunctionTypeNode]
-    inline def createFunctionTypeNode(typeParameters: Unit, parameters: js.Array[ParameterDeclaration], `type`: TypeNode): FunctionTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createFunctionTypeNode")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[FunctionTypeNode]
-    
-    /** @deprecated Use `factory.createGetAccessorDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createGetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      parameters: js.Array[ParameterDeclaration]
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: String,
-      parameters: js.Array[ParameterDeclaration]
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: String,
-      parameters: js.Array[ParameterDeclaration]
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(decorators: Unit, modifiers: Unit, name: String, parameters: js.Array[ParameterDeclaration]): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      decorators: Unit,
-      modifiers: Unit,
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      decorators: Unit,
-      modifiers: Unit,
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      decorators: Unit,
-      modifiers: Unit,
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(decorators: Unit, modifiers: Unit, name: PropertyName, parameters: js.Array[ParameterDeclaration]): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      decorators: Unit,
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      decorators: Unit,
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      decorators: Unit,
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    /** @deprecated Use `factory.createGetAccessorDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createGetAccessor(modifiers: js.Array[ModifierLike], name: String, parameters: js.Array[ParameterDeclaration]): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(modifiers: js.Array[ModifierLike], name: PropertyName, parameters: js.Array[ParameterDeclaration]): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(modifiers: Unit, name: String, parameters: js.Array[ParameterDeclaration]): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      modifiers: Unit,
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(modifiers: Unit, name: String, parameters: js.Array[ParameterDeclaration], `type`: TypeNode): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      modifiers: Unit,
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(modifiers: Unit, name: PropertyName, parameters: js.Array[ParameterDeclaration]): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(modifiers: Unit, name: PropertyName, parameters: js.Array[ParameterDeclaration], `type`: TypeNode): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def createGetAccessor(
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createGetAccessor")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    
-    /** @deprecated Use `factory.createHeritageClause` or the factory supplied by your transformation context instead. */
-    inline def createHeritageClause(token: ExtendsKeyword, types: js.Array[ExpressionWithTypeArguments]): HeritageClause = (^.asInstanceOf[js.Dynamic].applyDynamic("createHeritageClause")(token.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[HeritageClause]
-    inline def createHeritageClause(token: ImplementsKeyword, types: js.Array[ExpressionWithTypeArguments]): HeritageClause = (^.asInstanceOf[js.Dynamic].applyDynamic("createHeritageClause")(token.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[HeritageClause]
-    
-    /** @deprecated Use `factory.createIdentifier` or the factory supplied by your transformation context instead. */
-    inline def createIdentifier(text: String): Identifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createIdentifier")(text.asInstanceOf[js.Any]).asInstanceOf[Identifier]
-    
-    /** @deprecated Use `factory.createIfStatement` or the factory supplied by your transformation context instead. */
-    inline def createIf(expression: Expression, thenStatement: Statement): IfStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("createIf")(expression.asInstanceOf[js.Any], thenStatement.asInstanceOf[js.Any])).asInstanceOf[IfStatement]
-    inline def createIf(expression: Expression, thenStatement: Statement, elseStatement: Statement): IfStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("createIf")(expression.asInstanceOf[js.Any], thenStatement.asInstanceOf[js.Any], elseStatement.asInstanceOf[js.Any])).asInstanceOf[IfStatement]
-    
-    /** @deprecated Use `factory.createImmediatelyInvokedArrowFunction` or the factory supplied by your transformation context instead. */
-    inline def createImmediatelyInvokedArrowFunction(statements: js.Array[Statement]): CallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createImmediatelyInvokedArrowFunction")(statements.asInstanceOf[js.Any]).asInstanceOf[CallExpression]
-    /** @deprecated Use `factory.createImmediatelyInvokedArrowFunction` or the factory supplied by your transformation context instead. */
-    inline def createImmediatelyInvokedArrowFunction(statements: js.Array[Statement], param: ParameterDeclaration, paramValue: Expression): CallExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createImmediatelyInvokedArrowFunction")(statements.asInstanceOf[js.Any], param.asInstanceOf[js.Any], paramValue.asInstanceOf[js.Any])).asInstanceOf[CallExpression]
-    
-    /** @deprecated Use `factory.createImmediatelyInvokedFunctionExpression` or the factory supplied by your transformation context instead. */
-    inline def createImmediatelyInvokedFunctionExpression(statements: js.Array[Statement]): CallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createImmediatelyInvokedFunctionExpression")(statements.asInstanceOf[js.Any]).asInstanceOf[CallExpression]
-    /** @deprecated Use `factory.createImmediatelyInvokedFunctionExpression` or the factory supplied by your transformation context instead. */
-    inline def createImmediatelyInvokedFunctionExpression(statements: js.Array[Statement], param: ParameterDeclaration, paramValue: Expression): CallExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createImmediatelyInvokedFunctionExpression")(statements.asInstanceOf[js.Any], param.asInstanceOf[js.Any], paramValue.asInstanceOf[js.Any])).asInstanceOf[CallExpression]
-    
-    /** @deprecated Use `factory.createImportClause` or the factory supplied by your transformation context instead. */
-    inline def createImportClause(): ImportClause = ^.asInstanceOf[js.Dynamic].applyDynamic("createImportClause")().asInstanceOf[ImportClause]
-    inline def createImportClause(name: Unit, namedBindings: Unit, isTypeOnly: Any): ImportClause = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportClause")(name.asInstanceOf[js.Any], namedBindings.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ImportClause]
-    inline def createImportClause(name: Unit, namedBindings: NamedImportBindings): ImportClause = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportClause")(name.asInstanceOf[js.Any], namedBindings.asInstanceOf[js.Any])).asInstanceOf[ImportClause]
-    inline def createImportClause(name: Unit, namedBindings: NamedImportBindings, isTypeOnly: Any): ImportClause = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportClause")(name.asInstanceOf[js.Any], namedBindings.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ImportClause]
-    inline def createImportClause(name: Identifier): ImportClause = ^.asInstanceOf[js.Dynamic].applyDynamic("createImportClause")(name.asInstanceOf[js.Any]).asInstanceOf[ImportClause]
-    inline def createImportClause(name: Identifier, namedBindings: Unit, isTypeOnly: Any): ImportClause = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportClause")(name.asInstanceOf[js.Any], namedBindings.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ImportClause]
-    inline def createImportClause(name: Identifier, namedBindings: NamedImportBindings): ImportClause = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportClause")(name.asInstanceOf[js.Any], namedBindings.asInstanceOf[js.Any])).asInstanceOf[ImportClause]
-    inline def createImportClause(name: Identifier, namedBindings: NamedImportBindings, isTypeOnly: Any): ImportClause = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportClause")(name.asInstanceOf[js.Any], namedBindings.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ImportClause]
-    
-    inline def createImportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      importClause: Unit,
-      moduleSpecifier: Expression
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def createImportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      importClause: Unit,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], assertClause.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    /** @deprecated Use `factory.createImportDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createImportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      importClause: ImportClause,
-      moduleSpecifier: Expression
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def createImportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      importClause: ImportClause,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], assertClause.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def createImportDeclaration(decorators: js.Array[Decorator], modifiers: Unit, importClause: Unit, moduleSpecifier: Expression): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def createImportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      importClause: Unit,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], assertClause.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def createImportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      importClause: ImportClause,
-      moduleSpecifier: Expression
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def createImportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      importClause: ImportClause,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], assertClause.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def createImportDeclaration(decorators: Unit, modifiers: js.Array[Modifier], importClause: Unit, moduleSpecifier: Expression): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def createImportDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      importClause: Unit,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], assertClause.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def createImportDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      importClause: ImportClause,
-      moduleSpecifier: Expression
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def createImportDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      importClause: ImportClause,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], assertClause.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def createImportDeclaration(decorators: Unit, modifiers: Unit, importClause: Unit, moduleSpecifier: Expression): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def createImportDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      importClause: Unit,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], assertClause.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def createImportDeclaration(decorators: Unit, modifiers: Unit, importClause: ImportClause, moduleSpecifier: Expression): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def createImportDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      importClause: ImportClause,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], assertClause.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def createImportDeclaration(modifiers: js.Array[Modifier], importClause: Unit, moduleSpecifier: Expression): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportDeclaration")(modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def createImportDeclaration(
-      modifiers: js.Array[Modifier],
-      importClause: Unit,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportDeclaration")(modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], assertClause.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    /** @deprecated Use `factory.createImportDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createImportDeclaration(modifiers: js.Array[Modifier], importClause: ImportClause, moduleSpecifier: Expression): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportDeclaration")(modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def createImportDeclaration(
-      modifiers: js.Array[Modifier],
-      importClause: ImportClause,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportDeclaration")(modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], assertClause.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def createImportDeclaration(modifiers: Unit, importClause: Unit, moduleSpecifier: Expression): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportDeclaration")(modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def createImportDeclaration(modifiers: Unit, importClause: Unit, moduleSpecifier: Expression, assertClause: AssertClause): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportDeclaration")(modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], assertClause.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def createImportDeclaration(modifiers: Unit, importClause: ImportClause, moduleSpecifier: Expression): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportDeclaration")(modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def createImportDeclaration(
-      modifiers: Unit,
-      importClause: ImportClause,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportDeclaration")(modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], assertClause.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    
-    /** @deprecated Use `factory.createImportEqualsDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createImportEqualsDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      isTypeOnly: Boolean,
-      name: String,
-      moduleReference: ModuleReference
-    ): ImportEqualsDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportEqualsDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any], name.asInstanceOf[js.Any], moduleReference.asInstanceOf[js.Any])).asInstanceOf[ImportEqualsDeclaration]
-    inline def createImportEqualsDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      isTypeOnly: Boolean,
-      name: Identifier,
-      moduleReference: ModuleReference
-    ): ImportEqualsDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportEqualsDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any], name.asInstanceOf[js.Any], moduleReference.asInstanceOf[js.Any])).asInstanceOf[ImportEqualsDeclaration]
-    inline def createImportEqualsDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      isTypeOnly: Boolean,
-      name: String,
-      moduleReference: ModuleReference
-    ): ImportEqualsDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportEqualsDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any], name.asInstanceOf[js.Any], moduleReference.asInstanceOf[js.Any])).asInstanceOf[ImportEqualsDeclaration]
-    inline def createImportEqualsDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      isTypeOnly: Boolean,
-      name: Identifier,
-      moduleReference: ModuleReference
-    ): ImportEqualsDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportEqualsDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any], name.asInstanceOf[js.Any], moduleReference.asInstanceOf[js.Any])).asInstanceOf[ImportEqualsDeclaration]
-    inline def createImportEqualsDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      isTypeOnly: Boolean,
-      name: String,
-      moduleReference: ModuleReference
-    ): ImportEqualsDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportEqualsDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any], name.asInstanceOf[js.Any], moduleReference.asInstanceOf[js.Any])).asInstanceOf[ImportEqualsDeclaration]
-    inline def createImportEqualsDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      isTypeOnly: Boolean,
-      name: Identifier,
-      moduleReference: ModuleReference
-    ): ImportEqualsDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportEqualsDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any], name.asInstanceOf[js.Any], moduleReference.asInstanceOf[js.Any])).asInstanceOf[ImportEqualsDeclaration]
-    inline def createImportEqualsDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      isTypeOnly: Boolean,
-      name: String,
-      moduleReference: ModuleReference
-    ): ImportEqualsDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportEqualsDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any], name.asInstanceOf[js.Any], moduleReference.asInstanceOf[js.Any])).asInstanceOf[ImportEqualsDeclaration]
-    inline def createImportEqualsDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      isTypeOnly: Boolean,
-      name: Identifier,
-      moduleReference: ModuleReference
-    ): ImportEqualsDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportEqualsDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any], name.asInstanceOf[js.Any], moduleReference.asInstanceOf[js.Any])).asInstanceOf[ImportEqualsDeclaration]
-    /** @deprecated Use `factory.createImportEqualsDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createImportEqualsDeclaration(modifiers: js.Array[Modifier], isTypeOnly: Boolean, name: String, moduleReference: ModuleReference): ImportEqualsDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportEqualsDeclaration")(modifiers.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any], name.asInstanceOf[js.Any], moduleReference.asInstanceOf[js.Any])).asInstanceOf[ImportEqualsDeclaration]
-    inline def createImportEqualsDeclaration(
-      modifiers: js.Array[Modifier],
-      isTypeOnly: Boolean,
-      name: Identifier,
-      moduleReference: ModuleReference
-    ): ImportEqualsDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportEqualsDeclaration")(modifiers.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any], name.asInstanceOf[js.Any], moduleReference.asInstanceOf[js.Any])).asInstanceOf[ImportEqualsDeclaration]
-    inline def createImportEqualsDeclaration(modifiers: Unit, isTypeOnly: Boolean, name: String, moduleReference: ModuleReference): ImportEqualsDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportEqualsDeclaration")(modifiers.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any], name.asInstanceOf[js.Any], moduleReference.asInstanceOf[js.Any])).asInstanceOf[ImportEqualsDeclaration]
-    inline def createImportEqualsDeclaration(modifiers: Unit, isTypeOnly: Boolean, name: Identifier, moduleReference: ModuleReference): ImportEqualsDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportEqualsDeclaration")(modifiers.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any], name.asInstanceOf[js.Any], moduleReference.asInstanceOf[js.Any])).asInstanceOf[ImportEqualsDeclaration]
-    
-    inline def createImportSpecifier(isTypeOnly: Boolean, propertyName: Unit, name: Identifier): ImportSpecifier = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportSpecifier")(isTypeOnly.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ImportSpecifier]
-    /** @deprecated Use `factory.createImportSpecifier` or the factory supplied by your transformation context instead. */
-    inline def createImportSpecifier(isTypeOnly: Boolean, propertyName: Identifier, name: Identifier): ImportSpecifier = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportSpecifier")(isTypeOnly.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ImportSpecifier]
-    
-    /** @deprecated Use `factory.createImportTypeNode` or the factory supplied by your transformation context instead. */
-    inline def createImportTypeNode(argument: TypeNode): ImportTypeNode = ^.asInstanceOf[js.Dynamic].applyDynamic("createImportTypeNode")(argument.asInstanceOf[js.Any]).asInstanceOf[ImportTypeNode]
-    inline def createImportTypeNode(argument: TypeNode, assertions: Unit, qualifier: Unit, typeArguments: js.Array[TypeNode]): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportTypeNode")(argument.asInstanceOf[js.Any], assertions.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def createImportTypeNode(
-      argument: TypeNode,
-      assertions: Unit,
-      qualifier: Unit,
-      typeArguments: js.Array[TypeNode],
-      isTypeOf: Boolean
-    ): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportTypeNode")(argument.asInstanceOf[js.Any], assertions.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], isTypeOf.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def createImportTypeNode(argument: TypeNode, assertions: Unit, qualifier: Unit, typeArguments: Unit, isTypeOf: Boolean): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportTypeNode")(argument.asInstanceOf[js.Any], assertions.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], isTypeOf.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def createImportTypeNode(argument: TypeNode, assertions: Unit, qualifier: EntityName): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportTypeNode")(argument.asInstanceOf[js.Any], assertions.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def createImportTypeNode(argument: TypeNode, assertions: Unit, qualifier: EntityName, typeArguments: js.Array[TypeNode]): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportTypeNode")(argument.asInstanceOf[js.Any], assertions.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def createImportTypeNode(
-      argument: TypeNode,
-      assertions: Unit,
-      qualifier: EntityName,
-      typeArguments: js.Array[TypeNode],
-      isTypeOf: Boolean
-    ): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportTypeNode")(argument.asInstanceOf[js.Any], assertions.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], isTypeOf.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def createImportTypeNode(
-      argument: TypeNode,
-      assertions: Unit,
-      qualifier: EntityName,
-      typeArguments: Unit,
-      isTypeOf: Boolean
-    ): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportTypeNode")(argument.asInstanceOf[js.Any], assertions.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], isTypeOf.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def createImportTypeNode(argument: TypeNode, assertions: ImportTypeAssertionContainer): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportTypeNode")(argument.asInstanceOf[js.Any], assertions.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def createImportTypeNode(
-      argument: TypeNode,
-      assertions: ImportTypeAssertionContainer,
-      qualifier: Unit,
-      typeArguments: js.Array[TypeNode]
-    ): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportTypeNode")(argument.asInstanceOf[js.Any], assertions.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def createImportTypeNode(
-      argument: TypeNode,
-      assertions: ImportTypeAssertionContainer,
-      qualifier: Unit,
-      typeArguments: js.Array[TypeNode],
-      isTypeOf: Boolean
-    ): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportTypeNode")(argument.asInstanceOf[js.Any], assertions.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], isTypeOf.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def createImportTypeNode(
-      argument: TypeNode,
-      assertions: ImportTypeAssertionContainer,
-      qualifier: Unit,
-      typeArguments: Unit,
-      isTypeOf: Boolean
-    ): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportTypeNode")(argument.asInstanceOf[js.Any], assertions.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], isTypeOf.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def createImportTypeNode(argument: TypeNode, assertions: ImportTypeAssertionContainer, qualifier: EntityName): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportTypeNode")(argument.asInstanceOf[js.Any], assertions.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def createImportTypeNode(
-      argument: TypeNode,
-      assertions: ImportTypeAssertionContainer,
-      qualifier: EntityName,
-      typeArguments: js.Array[TypeNode]
-    ): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportTypeNode")(argument.asInstanceOf[js.Any], assertions.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def createImportTypeNode(
-      argument: TypeNode,
-      assertions: ImportTypeAssertionContainer,
-      qualifier: EntityName,
-      typeArguments: js.Array[TypeNode],
-      isTypeOf: Boolean
-    ): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportTypeNode")(argument.asInstanceOf[js.Any], assertions.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], isTypeOf.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def createImportTypeNode(
-      argument: TypeNode,
-      assertions: ImportTypeAssertionContainer,
-      qualifier: EntityName,
-      typeArguments: Unit,
-      isTypeOf: Boolean
-    ): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportTypeNode")(argument.asInstanceOf[js.Any], assertions.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], isTypeOf.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def createImportTypeNode(argument: TypeNode, qualifier: Unit, typeArguments: js.Array[TypeNode]): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportTypeNode")(argument.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def createImportTypeNode(argument: TypeNode, qualifier: Unit, typeArguments: js.Array[TypeNode], isTypeOf: Boolean): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportTypeNode")(argument.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], isTypeOf.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def createImportTypeNode(argument: TypeNode, qualifier: Unit, typeArguments: Unit, isTypeOf: Boolean): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportTypeNode")(argument.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], isTypeOf.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def createImportTypeNode(argument: TypeNode, qualifier: EntityName): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportTypeNode")(argument.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def createImportTypeNode(argument: TypeNode, qualifier: EntityName, typeArguments: js.Array[TypeNode]): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportTypeNode")(argument.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def createImportTypeNode(argument: TypeNode, qualifier: EntityName, typeArguments: js.Array[TypeNode], isTypeOf: Boolean): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportTypeNode")(argument.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], isTypeOf.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def createImportTypeNode(argument: TypeNode, qualifier: EntityName, typeArguments: Unit, isTypeOf: Boolean): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createImportTypeNode")(argument.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], isTypeOf.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    
     inline def createIncrementalCompilerHost(options: CompilerOptions): CompilerHost = ^.asInstanceOf[js.Dynamic].applyDynamic("createIncrementalCompilerHost")(options.asInstanceOf[js.Any]).asInstanceOf[CompilerHost]
     inline def createIncrementalCompilerHost(options: CompilerOptions, system: System): CompilerHost = (^.asInstanceOf[js.Dynamic].applyDynamic("createIncrementalCompilerHost")(options.asInstanceOf[js.Any], system.asInstanceOf[js.Any])).asInstanceOf[CompilerHost]
     
     inline def createIncrementalProgram[T /* <: BuilderProgram */](param0: IncrementalProgramOptions[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("createIncrementalProgram")(param0.asInstanceOf[js.Any]).asInstanceOf[T]
     
-    /** @deprecated Use `factory.createIndexSignature` or the factory supplied by your transformation context instead. */
-    inline def createIndexSignature(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): IndexSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createIndexSignature")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[IndexSignatureDeclaration]
-    inline def createIndexSignature(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): IndexSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createIndexSignature")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[IndexSignatureDeclaration]
-    inline def createIndexSignature(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): IndexSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createIndexSignature")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[IndexSignatureDeclaration]
-    inline def createIndexSignature(decorators: Unit, modifiers: Unit, parameters: js.Array[ParameterDeclaration], `type`: TypeNode): IndexSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createIndexSignature")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[IndexSignatureDeclaration]
-    
-    /** @deprecated Use `factory.createIndexedAccessTypeNode` or the factory supplied by your transformation context instead. */
-    inline def createIndexedAccessTypeNode(objectType: TypeNode, indexType: TypeNode): IndexedAccessTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createIndexedAccessTypeNode")(objectType.asInstanceOf[js.Any], indexType.asInstanceOf[js.Any])).asInstanceOf[IndexedAccessTypeNode]
-    
-    /** @deprecated Use `factory.createInferTypeNode` or the factory supplied by your transformation context instead. */
-    inline def createInferTypeNode(typeParameter: TypeParameterDeclaration): InferTypeNode = ^.asInstanceOf[js.Dynamic].applyDynamic("createInferTypeNode")(typeParameter.asInstanceOf[js.Any]).asInstanceOf[InferTypeNode]
-    
+    /** @deprecated */
     inline def createInputFiles(javascriptText: String, declarationText: String): InputFiles = (^.asInstanceOf[js.Dynamic].applyDynamic("createInputFiles")(javascriptText.asInstanceOf[js.Any], declarationText.asInstanceOf[js.Any])).asInstanceOf[InputFiles]
     inline def createInputFiles(javascriptText: String, declarationText: String, javascriptMapPath: String): InputFiles = (^.asInstanceOf[js.Dynamic].applyDynamic("createInputFiles")(javascriptText.asInstanceOf[js.Any], declarationText.asInstanceOf[js.Any], javascriptMapPath.asInstanceOf[js.Any])).asInstanceOf[InputFiles]
     inline def createInputFiles(
@@ -2722,6 +483,7 @@ object libTypescriptWorkerLibTypescriptMod {
       declarationMapPath: Unit,
       declarationMapText: String
     ): InputFiles = (^.asInstanceOf[js.Dynamic].applyDynamic("createInputFiles")(javascriptText.asInstanceOf[js.Any], declarationText.asInstanceOf[js.Any], javascriptMapPath.asInstanceOf[js.Any], javascriptMapText.asInstanceOf[js.Any], declarationMapPath.asInstanceOf[js.Any], declarationMapText.asInstanceOf[js.Any])).asInstanceOf[InputFiles]
+    /** @deprecated */
     inline def createInputFiles(
       readFileText: js.Function1[/* path */ String, js.UndefOr[String]],
       javascriptPath: String,
@@ -2780,1007 +542,6 @@ object libTypescriptWorkerLibTypescriptMod {
       declarationMapPath: Unit,
       buildInfoPath: String
     ): InputFiles = (^.asInstanceOf[js.Dynamic].applyDynamic("createInputFiles")(readFileText.asInstanceOf[js.Any], javascriptPath.asInstanceOf[js.Any], javascriptMapPath.asInstanceOf[js.Any], declarationPath.asInstanceOf[js.Any], declarationMapPath.asInstanceOf[js.Any], buildInfoPath.asInstanceOf[js.Any])).asInstanceOf[InputFiles]
-    
-    /** @deprecated Use `factory.createInterfaceDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createInterfaceDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    /** @deprecated Use `factory.createInterfaceDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createInterfaceDeclaration(
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      modifiers: Unit,
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      modifiers: Unit,
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def createInterfaceDeclaration(
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterfaceDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    
-    /** @deprecated Use `factory.createIntersectionTypeNode` or the factory supplied by your transformation context instead. */
-    inline def createIntersectionTypeNode(types: js.Array[TypeNode]): IntersectionTypeNode = ^.asInstanceOf[js.Dynamic].applyDynamic("createIntersectionTypeNode")(types.asInstanceOf[js.Any]).asInstanceOf[IntersectionTypeNode]
-    
-    inline def createJSDocAugmentsTag(tagName: Unit, className: ExpressionWithTypeArgumen): JSDocAugmentsTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocAugmentsTag")(tagName.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[JSDocAugmentsTag]
-    inline def createJSDocAugmentsTag(tagName: Unit, className: ExpressionWithTypeArgumen, comment: String): JSDocAugmentsTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocAugmentsTag")(tagName.asInstanceOf[js.Any], className.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocAugmentsTag]
-    inline def createJSDocAugmentsTag(tagName: Unit, className: ExpressionWithTypeArgumen, comment: NodeArray[JSDocComment]): JSDocAugmentsTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocAugmentsTag")(tagName.asInstanceOf[js.Any], className.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocAugmentsTag]
-    /** @deprecated Use `factory.createJSDocAugmentsTag` or the factory supplied by your transformation context instead. */
-    inline def createJSDocAugmentsTag(tagName: Identifier, className: ExpressionWithTypeArgumen): JSDocAugmentsTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocAugmentsTag")(tagName.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[JSDocAugmentsTag]
-    inline def createJSDocAugmentsTag(tagName: Identifier, className: ExpressionWithTypeArgumen, comment: String): JSDocAugmentsTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocAugmentsTag")(tagName.asInstanceOf[js.Any], className.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocAugmentsTag]
-    inline def createJSDocAugmentsTag(tagName: Identifier, className: ExpressionWithTypeArgumen, comment: NodeArray[JSDocComment]): JSDocAugmentsTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocAugmentsTag")(tagName.asInstanceOf[js.Any], className.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocAugmentsTag]
-    
-    /** @deprecated Use `factory.createJSDocAuthorTag` or the factory supplied by your transformation context instead. */
-    inline def createJSDocAuthorTag(): JSDocAuthorTag = ^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocAuthorTag")().asInstanceOf[JSDocAuthorTag]
-    inline def createJSDocAuthorTag(tagName: Unit, comment: String): JSDocAuthorTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocAuthorTag")(tagName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocAuthorTag]
-    inline def createJSDocAuthorTag(tagName: Unit, comment: NodeArray[JSDocComment]): JSDocAuthorTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocAuthorTag")(tagName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocAuthorTag]
-    inline def createJSDocAuthorTag(tagName: Identifier): JSDocAuthorTag = ^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocAuthorTag")(tagName.asInstanceOf[js.Any]).asInstanceOf[JSDocAuthorTag]
-    inline def createJSDocAuthorTag(tagName: Identifier, comment: String): JSDocAuthorTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocAuthorTag")(tagName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocAuthorTag]
-    inline def createJSDocAuthorTag(tagName: Identifier, comment: NodeArray[JSDocComment]): JSDocAuthorTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocAuthorTag")(tagName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocAuthorTag]
-    
-    inline def createJSDocCallbackTag(tagName: Unit, typeExpression: JSDocSignature): JSDocCallbackTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocCallbackTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any])).asInstanceOf[JSDocCallbackTag]
-    inline def createJSDocCallbackTag(tagName: Unit, typeExpression: JSDocSignature, fullName: Unit, comment: String): JSDocCallbackTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocCallbackTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], fullName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocCallbackTag]
-    inline def createJSDocCallbackTag(tagName: Unit, typeExpression: JSDocSignature, fullName: Unit, comment: NodeArray[JSDocComment]): JSDocCallbackTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocCallbackTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], fullName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocCallbackTag]
-    inline def createJSDocCallbackTag(tagName: Unit, typeExpression: JSDocSignature, fullName: Identifier): JSDocCallbackTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocCallbackTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], fullName.asInstanceOf[js.Any])).asInstanceOf[JSDocCallbackTag]
-    inline def createJSDocCallbackTag(tagName: Unit, typeExpression: JSDocSignature, fullName: Identifier, comment: String): JSDocCallbackTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocCallbackTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], fullName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocCallbackTag]
-    inline def createJSDocCallbackTag(
-      tagName: Unit,
-      typeExpression: JSDocSignature,
-      fullName: Identifier,
-      comment: NodeArray[JSDocComment]
-    ): JSDocCallbackTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocCallbackTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], fullName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocCallbackTag]
-    inline def createJSDocCallbackTag(tagName: Unit, typeExpression: JSDocSignature, fullName: JSDocNamespaceDeclaration): JSDocCallbackTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocCallbackTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], fullName.asInstanceOf[js.Any])).asInstanceOf[JSDocCallbackTag]
-    inline def createJSDocCallbackTag(
-      tagName: Unit,
-      typeExpression: JSDocSignature,
-      fullName: JSDocNamespaceDeclaration,
-      comment: String
-    ): JSDocCallbackTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocCallbackTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], fullName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocCallbackTag]
-    inline def createJSDocCallbackTag(
-      tagName: Unit,
-      typeExpression: JSDocSignature,
-      fullName: JSDocNamespaceDeclaration,
-      comment: NodeArray[JSDocComment]
-    ): JSDocCallbackTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocCallbackTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], fullName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocCallbackTag]
-    /** @deprecated Use `factory.createJSDocCallbackTag` or the factory supplied by your transformation context instead. */
-    inline def createJSDocCallbackTag(tagName: Identifier, typeExpression: JSDocSignature): JSDocCallbackTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocCallbackTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any])).asInstanceOf[JSDocCallbackTag]
-    inline def createJSDocCallbackTag(tagName: Identifier, typeExpression: JSDocSignature, fullName: Unit, comment: String): JSDocCallbackTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocCallbackTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], fullName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocCallbackTag]
-    inline def createJSDocCallbackTag(
-      tagName: Identifier,
-      typeExpression: JSDocSignature,
-      fullName: Unit,
-      comment: NodeArray[JSDocComment]
-    ): JSDocCallbackTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocCallbackTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], fullName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocCallbackTag]
-    inline def createJSDocCallbackTag(tagName: Identifier, typeExpression: JSDocSignature, fullName: Identifier): JSDocCallbackTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocCallbackTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], fullName.asInstanceOf[js.Any])).asInstanceOf[JSDocCallbackTag]
-    inline def createJSDocCallbackTag(tagName: Identifier, typeExpression: JSDocSignature, fullName: Identifier, comment: String): JSDocCallbackTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocCallbackTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], fullName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocCallbackTag]
-    inline def createJSDocCallbackTag(
-      tagName: Identifier,
-      typeExpression: JSDocSignature,
-      fullName: Identifier,
-      comment: NodeArray[JSDocComment]
-    ): JSDocCallbackTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocCallbackTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], fullName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocCallbackTag]
-    inline def createJSDocCallbackTag(tagName: Identifier, typeExpression: JSDocSignature, fullName: JSDocNamespaceDeclaration): JSDocCallbackTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocCallbackTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], fullName.asInstanceOf[js.Any])).asInstanceOf[JSDocCallbackTag]
-    inline def createJSDocCallbackTag(
-      tagName: Identifier,
-      typeExpression: JSDocSignature,
-      fullName: JSDocNamespaceDeclaration,
-      comment: String
-    ): JSDocCallbackTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocCallbackTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], fullName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocCallbackTag]
-    inline def createJSDocCallbackTag(
-      tagName: Identifier,
-      typeExpression: JSDocSignature,
-      fullName: JSDocNamespaceDeclaration,
-      comment: NodeArray[JSDocComment]
-    ): JSDocCallbackTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocCallbackTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], fullName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocCallbackTag]
-    
-    /** @deprecated Use `factory.createJSDocClassTag` or the factory supplied by your transformation context instead. */
-    inline def createJSDocClassTag(): JSDocClassTag = ^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocClassTag")().asInstanceOf[JSDocClassTag]
-    inline def createJSDocClassTag(tagName: Unit, comment: String): JSDocClassTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocClassTag")(tagName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocClassTag]
-    inline def createJSDocClassTag(tagName: Unit, comment: NodeArray[JSDocComment]): JSDocClassTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocClassTag")(tagName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocClassTag]
-    inline def createJSDocClassTag(tagName: Identifier): JSDocClassTag = ^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocClassTag")(tagName.asInstanceOf[js.Any]).asInstanceOf[JSDocClassTag]
-    inline def createJSDocClassTag(tagName: Identifier, comment: String): JSDocClassTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocClassTag")(tagName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocClassTag]
-    inline def createJSDocClassTag(tagName: Identifier, comment: NodeArray[JSDocComment]): JSDocClassTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocClassTag")(tagName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocClassTag]
-    
-    /** @deprecated Use `factory.createJSDocComment` or the factory supplied by your transformation context instead. */
-    inline def createJSDocComment(): JSDoc = ^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocComment")().asInstanceOf[JSDoc]
-    inline def createJSDocComment(comment: String): JSDoc = ^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocComment")(comment.asInstanceOf[js.Any]).asInstanceOf[JSDoc]
-    inline def createJSDocComment(comment: String, tags: js.Array[JSDocTag]): JSDoc = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocComment")(comment.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[JSDoc]
-    inline def createJSDocComment(comment: Unit, tags: js.Array[JSDocTag]): JSDoc = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocComment")(comment.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[JSDoc]
-    inline def createJSDocComment(comment: NodeArray[JSDocComment]): JSDoc = ^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocComment")(comment.asInstanceOf[js.Any]).asInstanceOf[JSDoc]
-    inline def createJSDocComment(comment: NodeArray[JSDocComment], tags: js.Array[JSDocTag]): JSDoc = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocComment")(comment.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[JSDoc]
-    
-    inline def createJSDocEnumTag(tagName: Unit, typeExpression: JSDocTypeExpression): JSDocEnumTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocEnumTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any])).asInstanceOf[JSDocEnumTag]
-    inline def createJSDocEnumTag(tagName: Unit, typeExpression: JSDocTypeExpression, comment: String): JSDocEnumTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocEnumTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocEnumTag]
-    inline def createJSDocEnumTag(tagName: Unit, typeExpression: JSDocTypeExpression, comment: NodeArray[JSDocComment]): JSDocEnumTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocEnumTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocEnumTag]
-    /** @deprecated Use `factory.createJSDocEnumTag` or the factory supplied by your transformation context instead. */
-    inline def createJSDocEnumTag(tagName: Identifier, typeExpression: JSDocTypeExpression): JSDocEnumTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocEnumTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any])).asInstanceOf[JSDocEnumTag]
-    inline def createJSDocEnumTag(tagName: Identifier, typeExpression: JSDocTypeExpression, comment: String): JSDocEnumTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocEnumTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocEnumTag]
-    inline def createJSDocEnumTag(tagName: Identifier, typeExpression: JSDocTypeExpression, comment: NodeArray[JSDocComment]): JSDocEnumTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocEnumTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocEnumTag]
-    
-    inline def createJSDocImplementsTag(tagName: Unit, className: ExpressionWithTypeArgumen): JSDocImplementsTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocImplementsTag")(tagName.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[JSDocImplementsTag]
-    inline def createJSDocImplementsTag(tagName: Unit, className: ExpressionWithTypeArgumen, comment: String): JSDocImplementsTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocImplementsTag")(tagName.asInstanceOf[js.Any], className.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocImplementsTag]
-    inline def createJSDocImplementsTag(tagName: Unit, className: ExpressionWithTypeArgumen, comment: NodeArray[JSDocComment]): JSDocImplementsTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocImplementsTag")(tagName.asInstanceOf[js.Any], className.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocImplementsTag]
-    /** @deprecated Use `factory.createJSDocImplementsTag` or the factory supplied by your transformation context instead. */
-    inline def createJSDocImplementsTag(tagName: Identifier, className: ExpressionWithTypeArgumen): JSDocImplementsTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocImplementsTag")(tagName.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[JSDocImplementsTag]
-    inline def createJSDocImplementsTag(tagName: Identifier, className: ExpressionWithTypeArgumen, comment: String): JSDocImplementsTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocImplementsTag")(tagName.asInstanceOf[js.Any], className.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocImplementsTag]
-    inline def createJSDocImplementsTag(tagName: Identifier, className: ExpressionWithTypeArgumen, comment: NodeArray[JSDocComment]): JSDocImplementsTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocImplementsTag")(tagName.asInstanceOf[js.Any], className.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocImplementsTag]
-    
-    /** @deprecated Use `factory.createJSDocParameterTag` or the factory supplied by your transformation context instead. */
-    inline def createJSDocParamTag(name: EntityName, isBracketed: Boolean): JSDocParameterTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocParamTag")(name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any])).asInstanceOf[JSDocParameterTag]
-    inline def createJSDocParamTag(name: EntityName, isBracketed: Boolean, typeExpression: Unit, comment: String): JSDocParameterTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocParamTag")(name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocParameterTag]
-    inline def createJSDocParamTag(name: EntityName, isBracketed: Boolean, typeExpression: JSDocTypeExpression): JSDocParameterTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocParamTag")(name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any])).asInstanceOf[JSDocParameterTag]
-    inline def createJSDocParamTag(name: EntityName, isBracketed: Boolean, typeExpression: JSDocTypeExpression, comment: String): JSDocParameterTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocParamTag")(name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocParameterTag]
-    
-    inline def createJSDocParameterTag(tagName: Unit, name: EntityName, isBracketed: Boolean): JSDocParameterTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocParameterTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any])).asInstanceOf[JSDocParameterTag]
-    inline def createJSDocParameterTag(tagName: Unit, name: EntityName, isBracketed: Boolean, typeExpression: Unit, isNameFirst: Boolean): JSDocParameterTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocParameterTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any])).asInstanceOf[JSDocParameterTag]
-    inline def createJSDocParameterTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Boolean,
-      comment: String
-    ): JSDocParameterTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocParameterTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocParameterTag]
-    inline def createJSDocParameterTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Boolean,
-      comment: NodeArray[JSDocComment]
-    ): JSDocParameterTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocParameterTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocParameterTag]
-    inline def createJSDocParameterTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Unit,
-      comment: String
-    ): JSDocParameterTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocParameterTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocParameterTag]
-    inline def createJSDocParameterTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Unit,
-      comment: NodeArray[JSDocComment]
-    ): JSDocParameterTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocParameterTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocParameterTag]
-    inline def createJSDocParameterTag(tagName: Unit, name: EntityName, isBracketed: Boolean, typeExpression: JSDocTypeExpression): JSDocParameterTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocParameterTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any])).asInstanceOf[JSDocParameterTag]
-    inline def createJSDocParameterTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Boolean
-    ): JSDocParameterTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocParameterTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any])).asInstanceOf[JSDocParameterTag]
-    inline def createJSDocParameterTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Boolean,
-      comment: String
-    ): JSDocParameterTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocParameterTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocParameterTag]
-    inline def createJSDocParameterTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Boolean,
-      comment: NodeArray[JSDocComment]
-    ): JSDocParameterTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocParameterTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocParameterTag]
-    inline def createJSDocParameterTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Unit,
-      comment: String
-    ): JSDocParameterTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocParameterTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocParameterTag]
-    inline def createJSDocParameterTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Unit,
-      comment: NodeArray[JSDocComment]
-    ): JSDocParameterTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocParameterTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocParameterTag]
-    /** @deprecated Use `factory.createJSDocParameterTag` or the factory supplied by your transformation context instead. */
-    inline def createJSDocParameterTag(tagName: Identifier, name: EntityName, isBracketed: Boolean): JSDocParameterTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocParameterTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any])).asInstanceOf[JSDocParameterTag]
-    inline def createJSDocParameterTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Boolean
-    ): JSDocParameterTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocParameterTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any])).asInstanceOf[JSDocParameterTag]
-    inline def createJSDocParameterTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Boolean,
-      comment: String
-    ): JSDocParameterTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocParameterTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocParameterTag]
-    inline def createJSDocParameterTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Boolean,
-      comment: NodeArray[JSDocComment]
-    ): JSDocParameterTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocParameterTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocParameterTag]
-    inline def createJSDocParameterTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Unit,
-      comment: String
-    ): JSDocParameterTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocParameterTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocParameterTag]
-    inline def createJSDocParameterTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Unit,
-      comment: NodeArray[JSDocComment]
-    ): JSDocParameterTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocParameterTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocParameterTag]
-    inline def createJSDocParameterTag(tagName: Identifier, name: EntityName, isBracketed: Boolean, typeExpression: JSDocTypeExpression): JSDocParameterTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocParameterTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any])).asInstanceOf[JSDocParameterTag]
-    inline def createJSDocParameterTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Boolean
-    ): JSDocParameterTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocParameterTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any])).asInstanceOf[JSDocParameterTag]
-    inline def createJSDocParameterTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Boolean,
-      comment: String
-    ): JSDocParameterTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocParameterTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocParameterTag]
-    inline def createJSDocParameterTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Boolean,
-      comment: NodeArray[JSDocComment]
-    ): JSDocParameterTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocParameterTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocParameterTag]
-    inline def createJSDocParameterTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Unit,
-      comment: String
-    ): JSDocParameterTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocParameterTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocParameterTag]
-    inline def createJSDocParameterTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Unit,
-      comment: NodeArray[JSDocComment]
-    ): JSDocParameterTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocParameterTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocParameterTag]
-    
-    /** @deprecated Use `factory.createJSDocPrivateTag` or the factory supplied by your transformation context instead. */
-    inline def createJSDocPrivateTag(): JSDocPrivateTag = ^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPrivateTag")().asInstanceOf[JSDocPrivateTag]
-    inline def createJSDocPrivateTag(tagName: Unit, comment: String): JSDocPrivateTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPrivateTag")(tagName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocPrivateTag]
-    inline def createJSDocPrivateTag(tagName: Unit, comment: NodeArray[JSDocComment]): JSDocPrivateTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPrivateTag")(tagName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocPrivateTag]
-    inline def createJSDocPrivateTag(tagName: Identifier): JSDocPrivateTag = ^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPrivateTag")(tagName.asInstanceOf[js.Any]).asInstanceOf[JSDocPrivateTag]
-    inline def createJSDocPrivateTag(tagName: Identifier, comment: String): JSDocPrivateTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPrivateTag")(tagName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocPrivateTag]
-    inline def createJSDocPrivateTag(tagName: Identifier, comment: NodeArray[JSDocComment]): JSDocPrivateTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPrivateTag")(tagName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocPrivateTag]
-    
-    inline def createJSDocPropertyTag(tagName: Unit, name: EntityName, isBracketed: Boolean): JSDocPropertyTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPropertyTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any])).asInstanceOf[JSDocPropertyTag]
-    inline def createJSDocPropertyTag(tagName: Unit, name: EntityName, isBracketed: Boolean, typeExpression: Unit, isNameFirst: Boolean): JSDocPropertyTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPropertyTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any])).asInstanceOf[JSDocPropertyTag]
-    inline def createJSDocPropertyTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Boolean,
-      comment: String
-    ): JSDocPropertyTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPropertyTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocPropertyTag]
-    inline def createJSDocPropertyTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Boolean,
-      comment: NodeArray[JSDocComment]
-    ): JSDocPropertyTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPropertyTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocPropertyTag]
-    inline def createJSDocPropertyTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Unit,
-      comment: String
-    ): JSDocPropertyTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPropertyTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocPropertyTag]
-    inline def createJSDocPropertyTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Unit,
-      comment: NodeArray[JSDocComment]
-    ): JSDocPropertyTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPropertyTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocPropertyTag]
-    inline def createJSDocPropertyTag(tagName: Unit, name: EntityName, isBracketed: Boolean, typeExpression: JSDocTypeExpression): JSDocPropertyTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPropertyTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any])).asInstanceOf[JSDocPropertyTag]
-    inline def createJSDocPropertyTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Boolean
-    ): JSDocPropertyTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPropertyTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any])).asInstanceOf[JSDocPropertyTag]
-    inline def createJSDocPropertyTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Boolean,
-      comment: String
-    ): JSDocPropertyTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPropertyTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocPropertyTag]
-    inline def createJSDocPropertyTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Boolean,
-      comment: NodeArray[JSDocComment]
-    ): JSDocPropertyTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPropertyTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocPropertyTag]
-    inline def createJSDocPropertyTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Unit,
-      comment: String
-    ): JSDocPropertyTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPropertyTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocPropertyTag]
-    inline def createJSDocPropertyTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Unit,
-      comment: NodeArray[JSDocComment]
-    ): JSDocPropertyTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPropertyTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocPropertyTag]
-    /** @deprecated Use `factory.createJSDocPropertyTag` or the factory supplied by your transformation context instead. */
-    inline def createJSDocPropertyTag(tagName: Identifier, name: EntityName, isBracketed: Boolean): JSDocPropertyTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPropertyTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any])).asInstanceOf[JSDocPropertyTag]
-    inline def createJSDocPropertyTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Boolean
-    ): JSDocPropertyTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPropertyTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any])).asInstanceOf[JSDocPropertyTag]
-    inline def createJSDocPropertyTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Boolean,
-      comment: String
-    ): JSDocPropertyTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPropertyTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocPropertyTag]
-    inline def createJSDocPropertyTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Boolean,
-      comment: NodeArray[JSDocComment]
-    ): JSDocPropertyTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPropertyTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocPropertyTag]
-    inline def createJSDocPropertyTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Unit,
-      comment: String
-    ): JSDocPropertyTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPropertyTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocPropertyTag]
-    inline def createJSDocPropertyTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Unit,
-      comment: NodeArray[JSDocComment]
-    ): JSDocPropertyTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPropertyTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocPropertyTag]
-    inline def createJSDocPropertyTag(tagName: Identifier, name: EntityName, isBracketed: Boolean, typeExpression: JSDocTypeExpression): JSDocPropertyTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPropertyTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any])).asInstanceOf[JSDocPropertyTag]
-    inline def createJSDocPropertyTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Boolean
-    ): JSDocPropertyTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPropertyTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any])).asInstanceOf[JSDocPropertyTag]
-    inline def createJSDocPropertyTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Boolean,
-      comment: String
-    ): JSDocPropertyTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPropertyTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocPropertyTag]
-    inline def createJSDocPropertyTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Boolean,
-      comment: NodeArray[JSDocComment]
-    ): JSDocPropertyTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPropertyTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocPropertyTag]
-    inline def createJSDocPropertyTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Unit,
-      comment: String
-    ): JSDocPropertyTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPropertyTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocPropertyTag]
-    inline def createJSDocPropertyTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Unit,
-      comment: NodeArray[JSDocComment]
-    ): JSDocPropertyTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPropertyTag")(tagName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], isBracketed.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], isNameFirst.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocPropertyTag]
-    
-    /** @deprecated Use `factory.createJSDocProtectedTag` or the factory supplied by your transformation context instead. */
-    inline def createJSDocProtectedTag(): JSDocProtectedTag = ^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocProtectedTag")().asInstanceOf[JSDocProtectedTag]
-    inline def createJSDocProtectedTag(tagName: Unit, comment: String): JSDocProtectedTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocProtectedTag")(tagName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocProtectedTag]
-    inline def createJSDocProtectedTag(tagName: Unit, comment: NodeArray[JSDocComment]): JSDocProtectedTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocProtectedTag")(tagName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocProtectedTag]
-    inline def createJSDocProtectedTag(tagName: Identifier): JSDocProtectedTag = ^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocProtectedTag")(tagName.asInstanceOf[js.Any]).asInstanceOf[JSDocProtectedTag]
-    inline def createJSDocProtectedTag(tagName: Identifier, comment: String): JSDocProtectedTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocProtectedTag")(tagName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocProtectedTag]
-    inline def createJSDocProtectedTag(tagName: Identifier, comment: NodeArray[JSDocComment]): JSDocProtectedTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocProtectedTag")(tagName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocProtectedTag]
-    
-    /** @deprecated Use `factory.createJSDocPublicTag` or the factory supplied by your transformation context instead. */
-    inline def createJSDocPublicTag(): JSDocPublicTag = ^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPublicTag")().asInstanceOf[JSDocPublicTag]
-    inline def createJSDocPublicTag(tagName: Unit, comment: String): JSDocPublicTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPublicTag")(tagName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocPublicTag]
-    inline def createJSDocPublicTag(tagName: Unit, comment: NodeArray[JSDocComment]): JSDocPublicTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPublicTag")(tagName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocPublicTag]
-    inline def createJSDocPublicTag(tagName: Identifier): JSDocPublicTag = ^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPublicTag")(tagName.asInstanceOf[js.Any]).asInstanceOf[JSDocPublicTag]
-    inline def createJSDocPublicTag(tagName: Identifier, comment: String): JSDocPublicTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPublicTag")(tagName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocPublicTag]
-    inline def createJSDocPublicTag(tagName: Identifier, comment: NodeArray[JSDocComment]): JSDocPublicTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocPublicTag")(tagName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocPublicTag]
-    
-    /** @deprecated Use `factory.createJSDocReadonlyTag` or the factory supplied by your transformation context instead. */
-    inline def createJSDocReadonlyTag(): JSDocReadonlyTag = ^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocReadonlyTag")().asInstanceOf[JSDocReadonlyTag]
-    inline def createJSDocReadonlyTag(tagName: Unit, comment: String): JSDocReadonlyTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocReadonlyTag")(tagName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocReadonlyTag]
-    inline def createJSDocReadonlyTag(tagName: Unit, comment: NodeArray[JSDocComment]): JSDocReadonlyTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocReadonlyTag")(tagName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocReadonlyTag]
-    inline def createJSDocReadonlyTag(tagName: Identifier): JSDocReadonlyTag = ^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocReadonlyTag")(tagName.asInstanceOf[js.Any]).asInstanceOf[JSDocReadonlyTag]
-    inline def createJSDocReadonlyTag(tagName: Identifier, comment: String): JSDocReadonlyTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocReadonlyTag")(tagName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocReadonlyTag]
-    inline def createJSDocReadonlyTag(tagName: Identifier, comment: NodeArray[JSDocComment]): JSDocReadonlyTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocReadonlyTag")(tagName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocReadonlyTag]
-    
-    /** @deprecated Use `factory.createJSDocReturnTag` or the factory supplied by your transformation context instead. */
-    inline def createJSDocReturnTag(): JSDocReturnTag = ^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocReturnTag")().asInstanceOf[JSDocReturnTag]
-    inline def createJSDocReturnTag(tagName: Unit, typeExpression: Unit, comment: String): JSDocReturnTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocReturnTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocReturnTag]
-    inline def createJSDocReturnTag(tagName: Unit, typeExpression: Unit, comment: NodeArray[JSDocComment]): JSDocReturnTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocReturnTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocReturnTag]
-    inline def createJSDocReturnTag(tagName: Unit, typeExpression: JSDocTypeExpression): JSDocReturnTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocReturnTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any])).asInstanceOf[JSDocReturnTag]
-    inline def createJSDocReturnTag(tagName: Unit, typeExpression: JSDocTypeExpression, comment: String): JSDocReturnTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocReturnTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocReturnTag]
-    inline def createJSDocReturnTag(tagName: Unit, typeExpression: JSDocTypeExpression, comment: NodeArray[JSDocComment]): JSDocReturnTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocReturnTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocReturnTag]
-    inline def createJSDocReturnTag(tagName: Identifier): JSDocReturnTag = ^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocReturnTag")(tagName.asInstanceOf[js.Any]).asInstanceOf[JSDocReturnTag]
-    inline def createJSDocReturnTag(tagName: Identifier, typeExpression: Unit, comment: String): JSDocReturnTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocReturnTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocReturnTag]
-    inline def createJSDocReturnTag(tagName: Identifier, typeExpression: Unit, comment: NodeArray[JSDocComment]): JSDocReturnTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocReturnTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocReturnTag]
-    inline def createJSDocReturnTag(tagName: Identifier, typeExpression: JSDocTypeExpression): JSDocReturnTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocReturnTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any])).asInstanceOf[JSDocReturnTag]
-    inline def createJSDocReturnTag(tagName: Identifier, typeExpression: JSDocTypeExpression, comment: String): JSDocReturnTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocReturnTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocReturnTag]
-    inline def createJSDocReturnTag(tagName: Identifier, typeExpression: JSDocTypeExpression, comment: NodeArray[JSDocComment]): JSDocReturnTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocReturnTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocReturnTag]
-    
-    /** @deprecated Use `factory.createJSDocSignature` or the factory supplied by your transformation context instead. */
-    inline def createJSDocSignature(typeParameters: js.Array[JSDocTemplateTag], parameters: js.Array[JSDocParameterTag]): JSDocSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocSignature")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[JSDocSignature]
-    inline def createJSDocSignature(
-      typeParameters: js.Array[JSDocTemplateTag],
-      parameters: js.Array[JSDocParameterTag],
-      `type`: JSDocReturnTag
-    ): JSDocSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocSignature")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[JSDocSignature]
-    inline def createJSDocSignature(typeParameters: Unit, parameters: js.Array[JSDocParameterTag]): JSDocSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocSignature")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[JSDocSignature]
-    inline def createJSDocSignature(typeParameters: Unit, parameters: js.Array[JSDocParameterTag], `type`: JSDocReturnTag): JSDocSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocSignature")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[JSDocSignature]
-    
-    /** @deprecated Use `factory.createJSDocUnknownTag` or the factory supplied by your transformation context instead. */
-    inline def createJSDocTag(tagName: Identifier): JSDocUnknownTag = ^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocTag")(tagName.asInstanceOf[js.Any]).asInstanceOf[JSDocUnknownTag]
-    inline def createJSDocTag(tagName: Identifier, comment: String): JSDocUnknownTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocTag")(tagName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocUnknownTag]
-    inline def createJSDocTag(tagName: Identifier, comment: NodeArray[JSDocComment]): JSDocUnknownTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocTag")(tagName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocUnknownTag]
-    
-    inline def createJSDocTemplateTag(tagName: Unit, constraint: Unit, typeParameters: js.Array[TypeParameterDeclaration]): JSDocTemplateTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocTemplateTag")(tagName.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[JSDocTemplateTag]
-    inline def createJSDocTemplateTag(
-      tagName: Unit,
-      constraint: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      comment: String
-    ): JSDocTemplateTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocTemplateTag")(tagName.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocTemplateTag]
-    inline def createJSDocTemplateTag(
-      tagName: Unit,
-      constraint: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      comment: NodeArray[JSDocComment]
-    ): JSDocTemplateTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocTemplateTag")(tagName.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocTemplateTag]
-    inline def createJSDocTemplateTag(tagName: Unit, constraint: JSDocTypeExpression, typeParameters: js.Array[TypeParameterDeclaration]): JSDocTemplateTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocTemplateTag")(tagName.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[JSDocTemplateTag]
-    inline def createJSDocTemplateTag(
-      tagName: Unit,
-      constraint: JSDocTypeExpression,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      comment: String
-    ): JSDocTemplateTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocTemplateTag")(tagName.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocTemplateTag]
-    inline def createJSDocTemplateTag(
-      tagName: Unit,
-      constraint: JSDocTypeExpression,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      comment: NodeArray[JSDocComment]
-    ): JSDocTemplateTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocTemplateTag")(tagName.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocTemplateTag]
-    inline def createJSDocTemplateTag(tagName: Identifier, constraint: Unit, typeParameters: js.Array[TypeParameterDeclaration]): JSDocTemplateTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocTemplateTag")(tagName.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[JSDocTemplateTag]
-    inline def createJSDocTemplateTag(
-      tagName: Identifier,
-      constraint: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      comment: String
-    ): JSDocTemplateTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocTemplateTag")(tagName.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocTemplateTag]
-    inline def createJSDocTemplateTag(
-      tagName: Identifier,
-      constraint: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      comment: NodeArray[JSDocComment]
-    ): JSDocTemplateTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocTemplateTag")(tagName.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocTemplateTag]
-    /** @deprecated Use `factory.createJSDocTemplateTag` or the factory supplied by your transformation context instead. */
-    inline def createJSDocTemplateTag(
-      tagName: Identifier,
-      constraint: JSDocTypeExpression,
-      typeParameters: js.Array[TypeParameterDeclaration]
-    ): JSDocTemplateTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocTemplateTag")(tagName.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[JSDocTemplateTag]
-    inline def createJSDocTemplateTag(
-      tagName: Identifier,
-      constraint: JSDocTypeExpression,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      comment: String
-    ): JSDocTemplateTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocTemplateTag")(tagName.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocTemplateTag]
-    inline def createJSDocTemplateTag(
-      tagName: Identifier,
-      constraint: JSDocTypeExpression,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      comment: NodeArray[JSDocComment]
-    ): JSDocTemplateTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocTemplateTag")(tagName.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocTemplateTag]
-    
-    inline def createJSDocThisTag(tagName: Unit, typeExpression: JSDocTypeExpression): JSDocThisTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocThisTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any])).asInstanceOf[JSDocThisTag]
-    inline def createJSDocThisTag(tagName: Unit, typeExpression: JSDocTypeExpression, comment: String): JSDocThisTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocThisTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocThisTag]
-    inline def createJSDocThisTag(tagName: Unit, typeExpression: JSDocTypeExpression, comment: NodeArray[JSDocComment]): JSDocThisTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocThisTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocThisTag]
-    /** @deprecated Use `factory.createJSDocThisTag` or the factory supplied by your transformation context instead. */
-    inline def createJSDocThisTag(tagName: Identifier, typeExpression: JSDocTypeExpression): JSDocThisTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocThisTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any])).asInstanceOf[JSDocThisTag]
-    inline def createJSDocThisTag(tagName: Identifier, typeExpression: JSDocTypeExpression, comment: String): JSDocThisTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocThisTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocThisTag]
-    inline def createJSDocThisTag(tagName: Identifier, typeExpression: JSDocTypeExpression, comment: NodeArray[JSDocComment]): JSDocThisTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocThisTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocThisTag]
-    
-    /** @deprecated Use `factory.createJSDocTypeExpression` or the factory supplied by your transformation context instead. */
-    inline def createJSDocTypeExpression(`type`: TypeNode): JSDocTypeExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocTypeExpression")(`type`.asInstanceOf[js.Any]).asInstanceOf[JSDocTypeExpression]
-    
-    /** @deprecated Use `factory.createJSDocTypeLiteral` or the factory supplied by your transformation context instead. */
-    inline def createJSDocTypeLiteral(): JSDocTypeLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocTypeLiteral")().asInstanceOf[JSDocTypeLiteral]
-    inline def createJSDocTypeLiteral(jsDocPropertyTags: js.Array[JSDocPropertyLikeTag]): JSDocTypeLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocTypeLiteral")(jsDocPropertyTags.asInstanceOf[js.Any]).asInstanceOf[JSDocTypeLiteral]
-    inline def createJSDocTypeLiteral(jsDocPropertyTags: js.Array[JSDocPropertyLikeTag], isArrayType: Boolean): JSDocTypeLiteral = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocTypeLiteral")(jsDocPropertyTags.asInstanceOf[js.Any], isArrayType.asInstanceOf[js.Any])).asInstanceOf[JSDocTypeLiteral]
-    inline def createJSDocTypeLiteral(jsDocPropertyTags: Unit, isArrayType: Boolean): JSDocTypeLiteral = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocTypeLiteral")(jsDocPropertyTags.asInstanceOf[js.Any], isArrayType.asInstanceOf[js.Any])).asInstanceOf[JSDocTypeLiteral]
-    
-    inline def createJSDocTypeTag(tagName: Unit, typeExpression: JSDocTypeExpression): JSDocTypeTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocTypeTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any])).asInstanceOf[JSDocTypeTag]
-    inline def createJSDocTypeTag(tagName: Unit, typeExpression: JSDocTypeExpression, comment: String): JSDocTypeTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocTypeTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocTypeTag]
-    inline def createJSDocTypeTag(tagName: Unit, typeExpression: JSDocTypeExpression, comment: NodeArray[JSDocComment]): JSDocTypeTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocTypeTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocTypeTag]
-    /** @deprecated Use `factory.createJSDocTypeTag` or the factory supplied by your transformation context instead. */
-    inline def createJSDocTypeTag(tagName: Identifier, typeExpression: JSDocTypeExpression): JSDocTypeTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocTypeTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any])).asInstanceOf[JSDocTypeTag]
-    inline def createJSDocTypeTag(tagName: Identifier, typeExpression: JSDocTypeExpression, comment: String): JSDocTypeTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocTypeTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocTypeTag]
-    inline def createJSDocTypeTag(tagName: Identifier, typeExpression: JSDocTypeExpression, comment: NodeArray[JSDocComment]): JSDocTypeTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocTypeTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocTypeTag]
-    
-    /** @deprecated Use `factory.createJSDocTypedefTag` or the factory supplied by your transformation context instead. */
-    inline def createJSDocTypedefTag(
-      tagName: js.UndefOr[Identifier],
-      typeExpression: js.UndefOr[JSDocTypeLiteral | JSDocTypeExpression],
-      fullName: js.UndefOr[Identifier | JSDocNamespaceDeclaration],
-      comment: js.UndefOr[String | NodeArray[JSDocComment]]
-    ): JSDocTypedefTag = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSDocTypedefTag")(tagName.asInstanceOf[js.Any], typeExpression.asInstanceOf[js.Any], fullName.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[JSDocTypedefTag]
-    
-    /** @deprecated Use `factory.createJsxAttribute` or the factory supplied by your transformation context instead. */
-    inline def createJsxAttribute(name: Identifier): JsxAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("createJsxAttribute")(name.asInstanceOf[js.Any]).asInstanceOf[JsxAttribute]
-    inline def createJsxAttribute(name: Identifier, initializer: JsxAttributeValue): JsxAttribute = (^.asInstanceOf[js.Dynamic].applyDynamic("createJsxAttribute")(name.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[JsxAttribute]
-    
-    /** @deprecated Use `factory.createJsxAttributes` or the factory supplied by your transformation context instead. */
-    inline def createJsxAttributes(properties: js.Array[JsxAttributeLike]): JsxAttributes = ^.asInstanceOf[js.Dynamic].applyDynamic("createJsxAttributes")(properties.asInstanceOf[js.Any]).asInstanceOf[JsxAttributes]
-    
-    /** @deprecated Use `factory.createJsxClosingElement` or the factory supplied by your transformation context instead. */
-    inline def createJsxClosingElement(tagName: JsxTagNameExpression): JsxClosingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createJsxClosingElement")(tagName.asInstanceOf[js.Any]).asInstanceOf[JsxClosingElement]
-    
-    /** @deprecated Use `factory.createJsxElement` or the factory supplied by your transformation context instead. */
-    inline def createJsxElement(openingElement: JsxOpeningElement, children: js.Array[JsxChild], closingElement: JsxClosingElement): JsxElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createJsxElement")(openingElement.asInstanceOf[js.Any], children.asInstanceOf[js.Any], closingElement.asInstanceOf[js.Any])).asInstanceOf[JsxElement]
-    
-    /** @deprecated Use `factory.createJsxExpression` or the factory supplied by your transformation context instead. */
-    inline def createJsxExpression(): JsxExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createJsxExpression")().asInstanceOf[JsxExpression]
-    inline def createJsxExpression(dotDotDotToken: Unit, expression: Expression): JsxExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createJsxExpression")(dotDotDotToken.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[JsxExpression]
-    inline def createJsxExpression(dotDotDotToken: DotDotDotToken): JsxExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createJsxExpression")(dotDotDotToken.asInstanceOf[js.Any]).asInstanceOf[JsxExpression]
-    inline def createJsxExpression(dotDotDotToken: DotDotDotToken, expression: Expression): JsxExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createJsxExpression")(dotDotDotToken.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[JsxExpression]
-    
-    /** @deprecated Use `factory.createJsxFragment` or the factory supplied by your transformation context instead. */
-    inline def createJsxFragment(
-      openingFragment: JsxOpeningFragment,
-      children: js.Array[JsxChild],
-      closingFragment: JsxClosingFragment
-    ): JsxFragment = (^.asInstanceOf[js.Dynamic].applyDynamic("createJsxFragment")(openingFragment.asInstanceOf[js.Any], children.asInstanceOf[js.Any], closingFragment.asInstanceOf[js.Any])).asInstanceOf[JsxFragment]
-    
-    /** @deprecated Use `factory.createJsxJsxClosingFragment` or the factory supplied by your transformation context instead. */
-    inline def createJsxJsxClosingFragment(): JsxClosingFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("createJsxJsxClosingFragment")().asInstanceOf[JsxClosingFragment]
-    
-    /** @deprecated Use `factory.createJsxOpeningElement` or the factory supplied by your transformation context instead. */
-    inline def createJsxOpeningElement(tagName: JsxTagNameExpression, typeArguments: js.Array[TypeNode], attributes: JsxAttributes): JsxOpeningElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createJsxOpeningElement")(tagName.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[JsxOpeningElement]
-    inline def createJsxOpeningElement(tagName: JsxTagNameExpression, typeArguments: Unit, attributes: JsxAttributes): JsxOpeningElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createJsxOpeningElement")(tagName.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[JsxOpeningElement]
-    
-    /** @deprecated Use `factory.createJsxOpeningFragment` or the factory supplied by your transformation context instead. */
-    inline def createJsxOpeningFragment(): JsxOpeningFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("createJsxOpeningFragment")().asInstanceOf[JsxOpeningFragment]
-    
-    /** @deprecated Use `factory.createJsxSelfClosingElement` or the factory supplied by your transformation context instead. */
-    inline def createJsxSelfClosingElement(tagName: JsxTagNameExpression, typeArguments: js.Array[TypeNode], attributes: JsxAttributes): JsxSelfClosingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createJsxSelfClosingElement")(tagName.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[JsxSelfClosingElement]
-    inline def createJsxSelfClosingElement(tagName: JsxTagNameExpression, typeArguments: Unit, attributes: JsxAttributes): JsxSelfClosingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createJsxSelfClosingElement")(tagName.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[JsxSelfClosingElement]
-    
-    /** @deprecated Use `factory.createJsxSpreadAttribute` or the factory supplied by your transformation context instead. */
-    inline def createJsxSpreadAttribute(expression: Expression): JsxSpreadAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("createJsxSpreadAttribute")(expression.asInstanceOf[js.Any]).asInstanceOf[JsxSpreadAttribute]
-    
-    /** @deprecated Use `factory.createJsxText` or the factory supplied by your transformation context instead. */
-    inline def createJsxText(text: String): JsxText = ^.asInstanceOf[js.Dynamic].applyDynamic("createJsxText")(text.asInstanceOf[js.Any]).asInstanceOf[JsxText]
-    inline def createJsxText(text: String, containsOnlyTriviaWhiteSpaces: Boolean): JsxText = (^.asInstanceOf[js.Dynamic].applyDynamic("createJsxText")(text.asInstanceOf[js.Any], containsOnlyTriviaWhiteSpaces.asInstanceOf[js.Any])).asInstanceOf[JsxText]
-    
-    /** @deprecated Use `factory.createKeywordTypeNode` or the factory supplied by your transformation context instead. */
-    inline def createKeywordTypeNode[TKind /* <: KeywordTypeSyntaxKind */](kind: TKind): KeywordTypeNode[TKind] = ^.asInstanceOf[js.Dynamic].applyDynamic("createKeywordTypeNode")(kind.asInstanceOf[js.Any]).asInstanceOf[KeywordTypeNode[TKind]]
-    
-    /** @deprecated Use `factory.createLabelStatement` or the factory supplied by your transformation context instead. */
-    inline def createLabel(label: String, statement: Statement): LabeledStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("createLabel")(label.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[LabeledStatement]
-    inline def createLabel(label: Identifier, statement: Statement): LabeledStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("createLabel")(label.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[LabeledStatement]
     
     inline def createLanguageService(host: LanguageServiceHost): LanguageService = ^.asInstanceOf[js.Dynamic].applyDynamic("createLanguageService")(host.asInstanceOf[js.Any]).asInstanceOf[LanguageService]
     inline def createLanguageService(host: LanguageServiceHost, documentRegistry: Unit, syntaxOnlyOrLanguageServiceMode: Boolean): LanguageService = (^.asInstanceOf[js.Dynamic].applyDynamic("createLanguageService")(host.asInstanceOf[js.Any], documentRegistry.asInstanceOf[js.Any], syntaxOnlyOrLanguageServiceMode.asInstanceOf[js.Any])).asInstanceOf[LanguageService]
@@ -3832,235 +593,6 @@ object libTypescriptWorkerLibTypescriptMod {
       scriptKind: ScriptKind
     ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("createLanguageServiceSourceFile")(fileName.asInstanceOf[js.Any], scriptSnapshot.asInstanceOf[js.Any], scriptTargetOrOptions.asInstanceOf[js.Any], version.asInstanceOf[js.Any], setNodeParents.asInstanceOf[js.Any], scriptKind.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
     
-    /** @deprecated Use `factory.createLessThan` or the factory supplied by your transformation context instead. */
-    inline def createLessThan(left: Expression, right: Expression): Expression = (^.asInstanceOf[js.Dynamic].applyDynamic("createLessThan")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Expression]
-    
-    /** @deprecated Use `factory.createStringLiteral`, `factory.createStringLiteralFromNode`, `factory.createNumericLiteral`, `factory.createBigIntLiteral`, `factory.createTrue`, `factory.createFalse`, or the factory supplied by your transformation context instead. */
-    inline def createLiteral(value: String): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createLiteral")(value.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
-    /** @deprecated Use `factory.createStringLiteral`, `factory.createStringLiteralFromNode`, `factory.createNumericLiteral`, `factory.createBigIntLiteral`, `factory.createTrue`, `factory.createFalse`, or the factory supplied by your transformation context instead. */
-    inline def createLiteral(value: Boolean): BooleanLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createLiteral")(value.asInstanceOf[js.Any]).asInstanceOf[BooleanLiteral]
-    /** @deprecated Use `factory.createStringLiteral`, `factory.createStringLiteralFromNode`, `factory.createNumericLiteral`, `factory.createBigIntLiteral`, `factory.createTrue`, `factory.createFalse`, or the factory supplied by your transformation context instead. */
-    inline def createLiteral(value: Double): NumericLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createLiteral")(value.asInstanceOf[js.Any]).asInstanceOf[NumericLiteral]
-    inline def createLiteral(value: Identifier): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createLiteral")(value.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
-    inline def createLiteral(value: NoSubstitutionTemplateLiteral): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createLiteral")(value.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
-    inline def createLiteral(value: NumericLiteral): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createLiteral")(value.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
-    inline def createLiteral(value: PseudoBigInt): NumericLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createLiteral")(value.asInstanceOf[js.Any]).asInstanceOf[NumericLiteral]
-    inline def createLiteral(value: StringLiteral): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createLiteral")(value.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
-    
-    inline def createLiteralTypeNode(literal: BooleanLiteral): LiteralTypeNode = ^.asInstanceOf[js.Dynamic].applyDynamic("createLiteralTypeNode")(literal.asInstanceOf[js.Any]).asInstanceOf[LiteralTypeNode]
-    /** @deprecated Use `factory.createLiteralTypeNode` or the factory supplied by your transformation context instead. */
-    inline def createLiteralTypeNode(literal: LiteralExpression): LiteralTypeNode = ^.asInstanceOf[js.Dynamic].applyDynamic("createLiteralTypeNode")(literal.asInstanceOf[js.Any]).asInstanceOf[LiteralTypeNode]
-    inline def createLiteralTypeNode(literal: NullLiteral): LiteralTypeNode = ^.asInstanceOf[js.Dynamic].applyDynamic("createLiteralTypeNode")(literal.asInstanceOf[js.Any]).asInstanceOf[LiteralTypeNode]
-    inline def createLiteralTypeNode(literal: PrefixUnaryExpression): LiteralTypeNode = ^.asInstanceOf[js.Dynamic].applyDynamic("createLiteralTypeNode")(literal.asInstanceOf[js.Any]).asInstanceOf[LiteralTypeNode]
-    
-    /** @deprecated Use `factory.createStringLiteral`, `factory.createStringLiteralFromNode`, `factory.createNumericLiteral`, `factory.createBigIntLiteral`, `factory.createTrue`, `factory.createFalse`, or the factory supplied by your transformation context instead. */
-    inline def createLiteral_PrimaryExpression(value: String): PrimaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createLiteral")(value.asInstanceOf[js.Any]).asInstanceOf[PrimaryExpression]
-    inline def createLiteral_PrimaryExpression(value: Boolean): PrimaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createLiteral")(value.asInstanceOf[js.Any]).asInstanceOf[PrimaryExpression]
-    inline def createLiteral_PrimaryExpression(value: Double): PrimaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createLiteral")(value.asInstanceOf[js.Any]).asInstanceOf[PrimaryExpression]
-    inline def createLiteral_PrimaryExpression(value: PseudoBigInt): PrimaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createLiteral")(value.asInstanceOf[js.Any]).asInstanceOf[PrimaryExpression]
-    
-    /** @deprecated Use `factory.createLogicalAnd` or the factory supplied by your transformation context instead. */
-    inline def createLogicalAnd(left: Expression, right: Expression): BinaryExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createLogicalAnd")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression]
-    
-    /** @deprecated Use `factory.createLogicalNot` or the factory supplied by your transformation context instead. */
-    inline def createLogicalNot(operand: Expression): PrefixUnaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createLogicalNot")(operand.asInstanceOf[js.Any]).asInstanceOf[PrefixUnaryExpression]
-    
-    /** @deprecated Use `factory.createLogicalOr` or the factory supplied by your transformation context instead. */
-    inline def createLogicalOr(left: Expression, right: Expression): BinaryExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createLogicalOr")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression]
-    
-    /** @deprecated Use `factory.createLoopVariable` or the factory supplied by your transformation context instead. */
-    inline def createLoopVariable(): Identifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createLoopVariable")().asInstanceOf[Identifier]
-    inline def createLoopVariable(reservedInNestedScopes: Boolean): Identifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createLoopVariable")(reservedInNestedScopes.asInstanceOf[js.Any]).asInstanceOf[Identifier]
-    
-    /** @deprecated Use `factory.createMappedTypeNode` or the factory supplied by your transformation context instead. */
-    inline def createMappedTypeNode(
-      readonlyToken: js.UndefOr[ReadonlyKeyword | PlusToken | MinusToken],
-      typeParameter: TypeParameterDeclaration,
-      nameType: js.UndefOr[TypeNode],
-      questionToken: js.UndefOr[QuestionToken | PlusToken | MinusToken],
-      `type`: js.UndefOr[TypeNode],
-      members: js.UndefOr[NodeArray[TypeElement]]
-    ): MappedTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createMappedTypeNode")(readonlyToken.asInstanceOf[js.Any], typeParameter.asInstanceOf[js.Any], nameType.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[MappedTypeNode]
-    
-    /** @deprecated Use `factory.createMetaProperty` or the factory supplied by your transformation context instead. */
-    inline def createMetaProperty(keywordToken: ImportKeyword, name: Identifier): MetaProperty = (^.asInstanceOf[js.Dynamic].applyDynamic("createMetaProperty")(keywordToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[MetaProperty]
-    inline def createMetaProperty(keywordToken: NewKeyword, name: Identifier): MetaProperty = (^.asInstanceOf[js.Dynamic].applyDynamic("createMetaProperty")(keywordToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[MetaProperty]
-    
-    /** @deprecated Use `factory.createMethodDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createMethod(
-      decorators: js.UndefOr[js.Array[Decorator]],
-      modifiers: js.UndefOr[js.Array[Modifier]],
-      asteriskToken: js.UndefOr[AsteriskToken],
-      name: String | PropertyName,
-      questionToken: js.UndefOr[QuestionToken],
-      typeParameters: js.UndefOr[js.Array[TypeParameterDeclaration]],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: js.UndefOr[TypeNode],
-      body: js.UndefOr[Block]
-    ): MethodDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createMethod")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[MethodDeclaration]
-    /** @deprecated Use `factory.createMethodDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createMethod(
-      modifiers: js.UndefOr[js.Array[ModifierLike]],
-      asteriskToken: js.UndefOr[AsteriskToken],
-      name: String | PropertyName,
-      questionToken: js.UndefOr[QuestionToken],
-      typeParameters: js.UndefOr[js.Array[TypeParameterDeclaration]],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: js.UndefOr[TypeNode],
-      body: js.UndefOr[Block]
-    ): MethodDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createMethod")(modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[MethodDeclaration]
-    
-    inline def createMethodSignature(
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      name: String
-    ): MethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createMethodSignature")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[MethodSignature]
-    inline def createMethodSignature(
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      name: String,
-      questionToken: QuestionToken
-    ): MethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createMethodSignature")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any])).asInstanceOf[MethodSignature]
-    inline def createMethodSignature(
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      name: PropertyName
-    ): MethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createMethodSignature")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[MethodSignature]
-    inline def createMethodSignature(
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      name: PropertyName,
-      questionToken: QuestionToken
-    ): MethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createMethodSignature")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any])).asInstanceOf[MethodSignature]
-    /** @deprecated Use `factory.createMethodSignature` or the factory supplied by your transformation context instead. */
-    inline def createMethodSignature(
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      name: String
-    ): MethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createMethodSignature")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[MethodSignature]
-    inline def createMethodSignature(
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      name: String,
-      questionToken: QuestionToken
-    ): MethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createMethodSignature")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any])).asInstanceOf[MethodSignature]
-    inline def createMethodSignature(
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      name: PropertyName
-    ): MethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createMethodSignature")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[MethodSignature]
-    inline def createMethodSignature(
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      name: PropertyName,
-      questionToken: QuestionToken
-    ): MethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createMethodSignature")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any])).asInstanceOf[MethodSignature]
-    inline def createMethodSignature(typeParameters: Unit, parameters: js.Array[ParameterDeclaration], `type`: Unit, name: String): MethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createMethodSignature")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[MethodSignature]
-    inline def createMethodSignature(
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      name: String,
-      questionToken: QuestionToken
-    ): MethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createMethodSignature")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any])).asInstanceOf[MethodSignature]
-    inline def createMethodSignature(typeParameters: Unit, parameters: js.Array[ParameterDeclaration], `type`: Unit, name: PropertyName): MethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createMethodSignature")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[MethodSignature]
-    inline def createMethodSignature(
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      name: PropertyName,
-      questionToken: QuestionToken
-    ): MethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createMethodSignature")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any])).asInstanceOf[MethodSignature]
-    inline def createMethodSignature(typeParameters: Unit, parameters: js.Array[ParameterDeclaration], `type`: TypeNode, name: String): MethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createMethodSignature")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[MethodSignature]
-    inline def createMethodSignature(
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      name: String,
-      questionToken: QuestionToken
-    ): MethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createMethodSignature")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any])).asInstanceOf[MethodSignature]
-    inline def createMethodSignature(
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      name: PropertyName
-    ): MethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createMethodSignature")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[MethodSignature]
-    inline def createMethodSignature(
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      name: PropertyName,
-      questionToken: QuestionToken
-    ): MethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createMethodSignature")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any])).asInstanceOf[MethodSignature]
-    
-    /** @deprecated Use `factory.createModifier` or the factory supplied by your transformation context instead. */
-    inline def createModifier[T /* <: ModifierSyntaxKind */](kind: T): ModifierToken[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createModifier")(kind.asInstanceOf[js.Any]).asInstanceOf[ModifierToken[T]]
-    
-    /** @deprecated Use `factory.createModifiersFromModifierFlags` or the factory supplied by your transformation context instead. */
-    inline def createModifiersFromModifierFlags(flags: ModifierFlags): js.UndefOr[js.Array[Modifier]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createModifiersFromModifierFlags")(flags.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[Modifier]]]
-    
-    /** @deprecated Use `factory.createModuleBlock` or the factory supplied by your transformation context instead. */
-    inline def createModuleBlock(statements: js.Array[Statement]): ModuleBlock = ^.asInstanceOf[js.Dynamic].applyDynamic("createModuleBlock")(statements.asInstanceOf[js.Any]).asInstanceOf[ModuleBlock]
-    
-    /** @deprecated Use `factory.createModuleDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createModuleDeclaration(decorators: js.Array[Decorator], modifiers: js.Array[Modifier], name: ModuleName): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    inline def createModuleDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: ModuleName,
-      body: Unit,
-      flags: NodeFlags
-    ): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], body.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    inline def createModuleDeclaration(decorators: js.Array[Decorator], modifiers: js.Array[Modifier], name: ModuleName, body: ModuleBody): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    inline def createModuleDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: ModuleName,
-      body: ModuleBody,
-      flags: NodeFlags
-    ): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], body.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    inline def createModuleDeclaration(decorators: js.Array[Decorator], modifiers: Unit, name: ModuleName): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    inline def createModuleDeclaration(decorators: js.Array[Decorator], modifiers: Unit, name: ModuleName, body: Unit, flags: NodeFlags): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], body.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    inline def createModuleDeclaration(decorators: js.Array[Decorator], modifiers: Unit, name: ModuleName, body: ModuleBody): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    inline def createModuleDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: ModuleName,
-      body: ModuleBody,
-      flags: NodeFlags
-    ): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], body.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    inline def createModuleDeclaration(decorators: Unit, modifiers: js.Array[Modifier], name: ModuleName): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    inline def createModuleDeclaration(decorators: Unit, modifiers: js.Array[Modifier], name: ModuleName, body: Unit, flags: NodeFlags): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], body.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    inline def createModuleDeclaration(decorators: Unit, modifiers: js.Array[Modifier], name: ModuleName, body: ModuleBody): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    inline def createModuleDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: ModuleName,
-      body: ModuleBody,
-      flags: NodeFlags
-    ): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], body.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    inline def createModuleDeclaration(decorators: Unit, modifiers: Unit, name: ModuleName): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    inline def createModuleDeclaration(decorators: Unit, modifiers: Unit, name: ModuleName, body: Unit, flags: NodeFlags): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], body.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    inline def createModuleDeclaration(decorators: Unit, modifiers: Unit, name: ModuleName, body: ModuleBody): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    inline def createModuleDeclaration(decorators: Unit, modifiers: Unit, name: ModuleName, body: ModuleBody, flags: NodeFlags): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], body.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    /** @deprecated Use `factory.createModuleDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createModuleDeclaration(modifiers: js.Array[Modifier], name: ModuleName): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    inline def createModuleDeclaration(modifiers: js.Array[Modifier], name: ModuleName, body: Unit, flags: NodeFlags): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], body.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    inline def createModuleDeclaration(modifiers: js.Array[Modifier], name: ModuleName, body: ModuleBody): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    inline def createModuleDeclaration(modifiers: js.Array[Modifier], name: ModuleName, body: ModuleBody, flags: NodeFlags): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], body.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    inline def createModuleDeclaration(modifiers: Unit, name: ModuleName): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    inline def createModuleDeclaration(modifiers: Unit, name: ModuleName, body: Unit, flags: NodeFlags): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], body.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    inline def createModuleDeclaration(modifiers: Unit, name: ModuleName, body: ModuleBody): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    inline def createModuleDeclaration(modifiers: Unit, name: ModuleName, body: ModuleBody, flags: NodeFlags): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], body.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    
     inline def createModuleResolutionCache(currentDirectory: String, getCanonicalFileName: js.Function1[/* s */ String, String]): ModuleResolutionCache = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleResolutionCache")(currentDirectory.asInstanceOf[js.Any], getCanonicalFileName.asInstanceOf[js.Any])).asInstanceOf[ModuleResolutionCache]
     inline def createModuleResolutionCache(
       currentDirectory: String,
@@ -4068,130 +600,36 @@ object libTypescriptWorkerLibTypescriptMod {
       options: CompilerOptions
     ): ModuleResolutionCache = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleResolutionCache")(currentDirectory.asInstanceOf[js.Any], getCanonicalFileName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ModuleResolutionCache]
     
-    /** @deprecated Use `factory.createNamedExports` or the factory supplied by your transformation context instead. */
-    inline def createNamedExports(elements: js.Array[ExportSpecifier]): NamedExports = ^.asInstanceOf[js.Dynamic].applyDynamic("createNamedExports")(elements.asInstanceOf[js.Any]).asInstanceOf[NamedExports]
-    
-    /** @deprecated Use `factory.createNamedImports` or the factory supplied by your transformation context instead. */
-    inline def createNamedImports(elements: js.Array[ImportSpecifier]): NamedImports = ^.asInstanceOf[js.Dynamic].applyDynamic("createNamedImports")(elements.asInstanceOf[js.Any]).asInstanceOf[NamedImports]
-    
-    /** @deprecated Use `factory.createNamespaceExport` or the factory supplied by your transformation context instead. */
-    inline def createNamespaceExport(name: Identifier): NamespaceExport = ^.asInstanceOf[js.Dynamic].applyDynamic("createNamespaceExport")(name.asInstanceOf[js.Any]).asInstanceOf[NamespaceExport]
-    
-    /** @deprecated Use `factory.createNamespaceExportDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createNamespaceExportDeclaration(name: String): NamespaceExportDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("createNamespaceExportDeclaration")(name.asInstanceOf[js.Any]).asInstanceOf[NamespaceExportDeclaration]
-    inline def createNamespaceExportDeclaration(name: Identifier): NamespaceExportDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("createNamespaceExportDeclaration")(name.asInstanceOf[js.Any]).asInstanceOf[NamespaceExportDeclaration]
-    
-    /** @deprecated Use `factory.createNamespaceImport` or the factory supplied by your transformation context instead. */
-    inline def createNamespaceImport(name: Identifier): NamespaceImport = ^.asInstanceOf[js.Dynamic].applyDynamic("createNamespaceImport")(name.asInstanceOf[js.Any]).asInstanceOf[NamespaceImport]
-    
-    /** @deprecated Use `factory.createNewExpression` or the factory supplied by your transformation context instead. */
-    inline def createNew(expression: Expression): NewExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createNew")(expression.asInstanceOf[js.Any]).asInstanceOf[NewExpression]
-    inline def createNew(expression: Expression, typeArguments: js.Array[TypeNode]): NewExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createNew")(expression.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any])).asInstanceOf[NewExpression]
-    inline def createNew(expression: Expression, typeArguments: js.Array[TypeNode], argumentsArray: js.Array[Expression]): NewExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createNew")(expression.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], argumentsArray.asInstanceOf[js.Any])).asInstanceOf[NewExpression]
-    inline def createNew(expression: Expression, typeArguments: Unit, argumentsArray: js.Array[Expression]): NewExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createNew")(expression.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], argumentsArray.asInstanceOf[js.Any])).asInstanceOf[NewExpression]
-    
-    /** @deprecated Use `factory.createNoSubstitutionTemplateLiteral` or the factory supplied by your transformation context instead. */
-    inline def createNoSubstitutionTemplateLiteral(text: String): NoSubstitutionTemplateLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createNoSubstitutionTemplateLiteral")(text.asInstanceOf[js.Any]).asInstanceOf[NoSubstitutionTemplateLiteral]
-    /** @deprecated Use `factory.createNoSubstitutionTemplateLiteral` or the factory supplied by your transformation context instead. */
-    inline def createNoSubstitutionTemplateLiteral(text: String, rawText: String): NoSubstitutionTemplateLiteral = (^.asInstanceOf[js.Dynamic].applyDynamic("createNoSubstitutionTemplateLiteral")(text.asInstanceOf[js.Any], rawText.asInstanceOf[js.Any])).asInstanceOf[NoSubstitutionTemplateLiteral]
-    inline def createNoSubstitutionTemplateLiteral(text: Unit, rawText: String): NoSubstitutionTemplateLiteral = (^.asInstanceOf[js.Dynamic].applyDynamic("createNoSubstitutionTemplateLiteral")(text.asInstanceOf[js.Any], rawText.asInstanceOf[js.Any])).asInstanceOf[NoSubstitutionTemplateLiteral]
-    
-    /** @deprecated Use an appropriate `factory` method instead. */
-    inline def createNode(kind: SyntaxKind): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(kind.asInstanceOf[js.Any]).asInstanceOf[Node]
-    inline def createNode(kind: SyntaxKind, pos: Any): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(kind.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Node]
-    inline def createNode(kind: SyntaxKind, pos: Any, end: Any): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(kind.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Node]
-    inline def createNode(kind: SyntaxKind, pos: Unit, end: Any): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(kind.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Node]
-    
-    /** @deprecated Use `factory.createNodeArray` or the factory supplied by your transformation context instead. */
-    inline def createNodeArray[T /* <: Node */](): NodeArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNodeArray")().asInstanceOf[NodeArray[T]]
-    inline def createNodeArray[T /* <: Node */](elements: js.Array[T]): NodeArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNodeArray")(elements.asInstanceOf[js.Any]).asInstanceOf[NodeArray[T]]
-    inline def createNodeArray[T /* <: Node */](elements: js.Array[T], hasTrailingComma: Boolean): NodeArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createNodeArray")(elements.asInstanceOf[js.Any], hasTrailingComma.asInstanceOf[js.Any])).asInstanceOf[NodeArray[T]]
-    inline def createNodeArray[T /* <: Node */](elements: Unit, hasTrailingComma: Boolean): NodeArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createNodeArray")(elements.asInstanceOf[js.Any], hasTrailingComma.asInstanceOf[js.Any])).asInstanceOf[NodeArray[T]]
-    
-    /** @deprecated Use `factory.createNonNullChain` or the factory supplied by your transformation context instead. */
-    inline def createNonNullChain(expression: Expression): NonNullChain = ^.asInstanceOf[js.Dynamic].applyDynamic("createNonNullChain")(expression.asInstanceOf[js.Any]).asInstanceOf[NonNullChain]
-    
-    /** @deprecated Use `factory.createNonNullExpression` or the factory supplied by your transformation context instead. */
-    inline def createNonNullExpression(expression: Expression): NonNullExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createNonNullExpression")(expression.asInstanceOf[js.Any]).asInstanceOf[NonNullExpression]
-    
-    /** @deprecated Use `factory.createNotEmittedStatement` or the factory supplied by your transformation context instead. */
-    inline def createNotEmittedStatement(original: Node): NotEmittedStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("createNotEmittedStatement")(original.asInstanceOf[js.Any]).asInstanceOf[NotEmittedStatement]
-    
-    /** @deprecated Use `factory.createNull` or the factory supplied by your transformation context instead. */
-    inline def createNull(): NullLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createNull")().asInstanceOf[NullLiteral]
-    
-    /** @deprecated Use `factory.createNumericLiteral` or the factory supplied by your transformation context instead. */
-    inline def createNumericLiteral(value: String): NumericLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createNumericLiteral")(value.asInstanceOf[js.Any]).asInstanceOf[NumericLiteral]
-    inline def createNumericLiteral(value: String, numericLiteralFlags: TokenFlags): NumericLiteral = (^.asInstanceOf[js.Dynamic].applyDynamic("createNumericLiteral")(value.asInstanceOf[js.Any], numericLiteralFlags.asInstanceOf[js.Any])).asInstanceOf[NumericLiteral]
-    inline def createNumericLiteral(value: Double): NumericLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createNumericLiteral")(value.asInstanceOf[js.Any]).asInstanceOf[NumericLiteral]
-    inline def createNumericLiteral(value: Double, numericLiteralFlags: TokenFlags): NumericLiteral = (^.asInstanceOf[js.Dynamic].applyDynamic("createNumericLiteral")(value.asInstanceOf[js.Any], numericLiteralFlags.asInstanceOf[js.Any])).asInstanceOf[NumericLiteral]
-    
-    /** @deprecated Use `factory.createObjectBindingPattern` or the factory supplied by your transformation context instead. */
-    inline def createObjectBindingPattern(elements: js.Array[BindingElement]): ObjectBindingPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("createObjectBindingPattern")(elements.asInstanceOf[js.Any]).asInstanceOf[ObjectBindingPattern]
-    
-    /** @deprecated Use `factory.createObjectLiteralExpression` or the factory supplied by your transformation context instead. */
-    inline def createObjectLiteral(): ObjectLiteralExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createObjectLiteral")().asInstanceOf[ObjectLiteralExpression]
-    inline def createObjectLiteral(properties: js.Array[ObjectLiteralElementLike]): ObjectLiteralExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createObjectLiteral")(properties.asInstanceOf[js.Any]).asInstanceOf[ObjectLiteralExpression]
-    inline def createObjectLiteral(properties: js.Array[ObjectLiteralElementLike], multiLine: Boolean): ObjectLiteralExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createObjectLiteral")(properties.asInstanceOf[js.Any], multiLine.asInstanceOf[js.Any])).asInstanceOf[ObjectLiteralExpression]
-    inline def createObjectLiteral(properties: Unit, multiLine: Boolean): ObjectLiteralExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createObjectLiteral")(properties.asInstanceOf[js.Any], multiLine.asInstanceOf[js.Any])).asInstanceOf[ObjectLiteralExpression]
-    
-    /** @deprecated Use `factory.createOmittedExpression` or the factory supplied by your transformation context instead. */
-    inline def createOmittedExpression(): OmittedExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createOmittedExpression")().asInstanceOf[OmittedExpression]
-    
-    /** @deprecated Use `factory.createUniqueName(text, GeneratedIdentifierFlags.Optimistic)` or the factory supplied by your transformation context instead. */
-    inline def createOptimisticUniqueName(text: String): Identifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createOptimisticUniqueName")(text.asInstanceOf[js.Any]).asInstanceOf[Identifier]
-    
-    /** @deprecated Use `factory.createOptionalTypeNode` or the factory supplied by your transformation context instead. */
-    inline def createOptionalTypeNode(`type`: TypeNode): OptionalTypeNode = ^.asInstanceOf[js.Dynamic].applyDynamic("createOptionalTypeNode")(`type`.asInstanceOf[js.Any]).asInstanceOf[OptionalTypeNode]
-    
-    /** @deprecated Use `factory.createParameterDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createParameter(
-      decorators: js.UndefOr[js.Array[Decorator]],
-      modifiers: js.UndefOr[js.Array[Modifier]],
-      dotDotDotToken: js.UndefOr[DotDotDotToken],
-      name: String | BindingName,
-      questionToken: js.UndefOr[QuestionToken],
-      `type`: js.UndefOr[TypeNode],
-      initializer: js.UndefOr[Expression]
-    ): ParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createParameter")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], dotDotDotToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[ParameterDeclaration]
-    /** @deprecated Use `factory.createParameterDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createParameter(
-      modifiers: js.UndefOr[js.Array[ModifierLike]],
-      dotDotDotToken: js.UndefOr[DotDotDotToken],
-      name: String | BindingName,
-      questionToken: js.UndefOr[QuestionToken],
-      `type`: js.UndefOr[TypeNode],
-      initializer: js.UndefOr[Expression]
-    ): ParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createParameter")(modifiers.asInstanceOf[js.Any], dotDotDotToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[ParameterDeclaration]
-    
-    /** @deprecated Use `factory.createParenthesizedExpression` or the factory supplied by your transformation context instead. */
-    inline def createParen(expression: Expression): ParenthesizedExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createParen")(expression.asInstanceOf[js.Any]).asInstanceOf[ParenthesizedExpression]
-    
-    /** @deprecated Use `factory.createParenthesizedType` or the factory supplied by your transformation context instead. */
-    inline def createParenthesizedType(`type`: TypeNode): ParenthesizedTypeNode = ^.asInstanceOf[js.Dynamic].applyDynamic("createParenthesizedType")(`type`.asInstanceOf[js.Any]).asInstanceOf[ParenthesizedTypeNode]
-    
-    /** @deprecated Use `factory.createPartiallyEmittedExpression` or the factory supplied by your transformation context instead. */
-    inline def createPartiallyEmittedExpression(expression: Expression): PartiallyEmittedExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createPartiallyEmittedExpression")(expression.asInstanceOf[js.Any]).asInstanceOf[PartiallyEmittedExpression]
-    inline def createPartiallyEmittedExpression(expression: Expression, original: Node): PartiallyEmittedExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createPartiallyEmittedExpression")(expression.asInstanceOf[js.Any], original.asInstanceOf[js.Any])).asInstanceOf[PartiallyEmittedExpression]
-    
-    /** @deprecated Use `factory.createPostfixUnaryExpression` or the factory supplied by your transformation context instead. */
-    inline def createPostfix(operand: Expression, operator: PostfixUnaryOperator): PostfixUnaryExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createPostfix")(operand.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[PostfixUnaryExpression]
-    
-    /** @deprecated Use `factory.createPostfixIncrement` or the factory supplied by your transformation context instead. */
-    inline def createPostfixIncrement(operand: Expression): PostfixUnaryExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createPostfixIncrement")(operand.asInstanceOf[js.Any]).asInstanceOf[PostfixUnaryExpression]
-    
-    /** @deprecated Use `factory.createPrefixExpression` or the factory supplied by your transformation context instead. */
-    inline def createPrefix(operator: PrefixUnaryOperator, operand: Expression): PrefixUnaryExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createPrefix")(operator.asInstanceOf[js.Any], operand.asInstanceOf[js.Any])).asInstanceOf[PrefixUnaryExpression]
-    
     inline def createPrinter(): Printer = ^.asInstanceOf[js.Dynamic].applyDynamic("createPrinter")().asInstanceOf[Printer]
     inline def createPrinter(printerOptions: Unit, handlers: PrintHandlers): Printer = (^.asInstanceOf[js.Dynamic].applyDynamic("createPrinter")(printerOptions.asInstanceOf[js.Any], handlers.asInstanceOf[js.Any])).asInstanceOf[Printer]
     inline def createPrinter(printerOptions: PrinterOptions): Printer = ^.asInstanceOf[js.Dynamic].applyDynamic("createPrinter")(printerOptions.asInstanceOf[js.Any]).asInstanceOf[Printer]
     inline def createPrinter(printerOptions: PrinterOptions, handlers: PrintHandlers): Printer = (^.asInstanceOf[js.Dynamic].applyDynamic("createPrinter")(printerOptions.asInstanceOf[js.Any], handlers.asInstanceOf[js.Any])).asInstanceOf[Printer]
     
-    /** @deprecated Use `factory.createPrivateIdentifier` or the factory supplied by your transformation context instead. */
-    inline def createPrivateIdentifier(text: String): PrivateIdentifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createPrivateIdentifier")(text.asInstanceOf[js.Any]).asInstanceOf[PrivateIdentifier]
-    
+    /**
+      * Create a new 'Program' instance. A Program is an immutable collection of 'SourceFile's and a 'CompilerOptions'
+      * that represent a compilation unit.
+      *
+      * Creating a program proceeds from a set of root files, expanding the set of inputs by following imports and
+      * triple-slash-reference-path directives transitively. '@types' and triple-slash-reference-types are also pulled in.
+      *
+      * @param createProgramOptions - The options for creating a program.
+      * @returns A 'Program' object.
+      */
     inline def createProgram(createProgramOptions: CreateProgramOptions): Program = ^.asInstanceOf[js.Dynamic].applyDynamic("createProgram")(createProgramOptions.asInstanceOf[js.Any]).asInstanceOf[Program]
+    /**
+      * Create a new 'Program' instance. A Program is an immutable collection of 'SourceFile's and a 'CompilerOptions'
+      * that represent a compilation unit.
+      *
+      * Creating a program proceeds from a set of root files, expanding the set of inputs by following imports and
+      * triple-slash-reference-path directives transitively. '@types' and triple-slash-reference-types are also pulled in.
+      *
+      * @param rootNames - A set of root files.
+      * @param options - The compiler options which should be used.
+      * @param host - The host interacts with the underlying file system.
+      * @param oldProgram - Reuses an old program structure.
+      * @param configFileParsingDiagnostics - error during config file parsing
+      * @returns A 'Program' object.
+      */
     inline def createProgram(rootNames: js.Array[String], options: CompilerOptions): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("createProgram")(rootNames.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Program]
     inline def createProgram(
       rootNames: js.Array[String],
@@ -4224,317 +662,6 @@ object libTypescriptWorkerLibTypescriptMod {
       oldProgram: Program,
       configFileParsingDiagnostics: js.Array[Diagnostic]
     ): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("createProgram")(rootNames.asInstanceOf[js.Any], options.asInstanceOf[js.Any], host.asInstanceOf[js.Any], oldProgram.asInstanceOf[js.Any], configFileParsingDiagnostics.asInstanceOf[js.Any])).asInstanceOf[Program]
-    
-    /** @deprecated Use `factory.createPropertyDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createProperty(
-      decorators: js.UndefOr[js.Array[Decorator]],
-      modifiers: js.UndefOr[js.Array[Modifier]],
-      name: String | PropertyName,
-      questionOrExclamationToken: js.UndefOr[QuestionToken | ExclamationToken],
-      `type`: js.UndefOr[TypeNode],
-      initializer: js.UndefOr[Expression]
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    /** @deprecated Use `factory.createPropertyDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createProperty(modifiers: js.Array[ModifierLike], name: String): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def createProperty(
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      questionOrExclamationToken: ExclamationToken | QuestionToken
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def createProperty(
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def createProperty(
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: TypeNode
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def createProperty(
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def createProperty(
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      questionOrExclamationToken: Unit,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def createProperty(
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      questionOrExclamationToken: Unit,
-      `type`: TypeNode
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def createProperty(
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      questionOrExclamationToken: Unit,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def createProperty(modifiers: js.Array[ModifierLike], name: PropertyName): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def createProperty(
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      questionOrExclamationToken: ExclamationToken | QuestionToken
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def createProperty(
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def createProperty(
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: TypeNode
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def createProperty(
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def createProperty(
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      questionOrExclamationToken: Unit,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def createProperty(
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      questionOrExclamationToken: Unit,
-      `type`: TypeNode
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def createProperty(
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      questionOrExclamationToken: Unit,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def createProperty(modifiers: Unit, name: String): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def createProperty(modifiers: Unit, name: String, questionOrExclamationToken: ExclamationToken | QuestionToken): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def createProperty(
-      modifiers: Unit,
-      name: String,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def createProperty(
-      modifiers: Unit,
-      name: String,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: TypeNode
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def createProperty(
-      modifiers: Unit,
-      name: String,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def createProperty(
-      modifiers: Unit,
-      name: String,
-      questionOrExclamationToken: Unit,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def createProperty(modifiers: Unit, name: String, questionOrExclamationToken: Unit, `type`: TypeNode): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def createProperty(
-      modifiers: Unit,
-      name: String,
-      questionOrExclamationToken: Unit,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def createProperty(modifiers: Unit, name: PropertyName): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def createProperty(modifiers: Unit, name: PropertyName, questionOrExclamationToken: ExclamationToken | QuestionToken): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def createProperty(
-      modifiers: Unit,
-      name: PropertyName,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def createProperty(
-      modifiers: Unit,
-      name: PropertyName,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: TypeNode
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def createProperty(
-      modifiers: Unit,
-      name: PropertyName,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def createProperty(
-      modifiers: Unit,
-      name: PropertyName,
-      questionOrExclamationToken: Unit,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def createProperty(modifiers: Unit, name: PropertyName, questionOrExclamationToken: Unit, `type`: TypeNode): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def createProperty(
-      modifiers: Unit,
-      name: PropertyName,
-      questionOrExclamationToken: Unit,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createProperty")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    
-    /** @deprecated Use `factory.createPropertyAccessExpression` or the factory supplied by your transformation context instead. */
-    inline def createPropertyAccess(expression: Expression, name: String): PropertyAccessExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertyAccess")(expression.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[PropertyAccessExpression]
-    inline def createPropertyAccess(expression: Expression, name: MemberName): PropertyAccessExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertyAccess")(expression.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[PropertyAccessExpression]
-    
-    inline def createPropertyAccessChain(expression: Expression, questionDotToken: Unit, name: String): PropertyAccessChain = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertyAccessChain")(expression.asInstanceOf[js.Any], questionDotToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[PropertyAccessChain]
-    inline def createPropertyAccessChain(expression: Expression, questionDotToken: Unit, name: MemberName): PropertyAccessChain = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertyAccessChain")(expression.asInstanceOf[js.Any], questionDotToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[PropertyAccessChain]
-    /** @deprecated Use `factory.createPropertyAccessChain` or the factory supplied by your transformation context instead. */
-    inline def createPropertyAccessChain(expression: Expression, questionDotToken: QuestionDotToken, name: String): PropertyAccessChain = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertyAccessChain")(expression.asInstanceOf[js.Any], questionDotToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[PropertyAccessChain]
-    inline def createPropertyAccessChain(expression: Expression, questionDotToken: QuestionDotToken, name: MemberName): PropertyAccessChain = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertyAccessChain")(expression.asInstanceOf[js.Any], questionDotToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[PropertyAccessChain]
-    
-    /** @deprecated Use `factory.createPropertyAssignment` or the factory supplied by your transformation context instead. */
-    inline def createPropertyAssignment(name: String, initializer: Expression): PropertyAssignment = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertyAssignment")(name.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyAssignment]
-    inline def createPropertyAssignment(name: PropertyName, initializer: Expression): PropertyAssignment = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertyAssignment")(name.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyAssignment]
-    
-    inline def createPropertySignature(modifiers: js.Array[Modifier], name: String): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySignature")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def createPropertySignature(
-      modifiers: js.Array[Modifier],
-      name: String,
-      questionToken: Unit,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySignature")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def createPropertySignature(modifiers: js.Array[Modifier], name: String, questionToken: Unit, `type`: TypeNode): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySignature")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def createPropertySignature(
-      modifiers: js.Array[Modifier],
-      name: String,
-      questionToken: Unit,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySignature")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def createPropertySignature(modifiers: js.Array[Modifier], name: String, questionToken: QuestionToken): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySignature")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def createPropertySignature(
-      modifiers: js.Array[Modifier],
-      name: String,
-      questionToken: QuestionToken,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySignature")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def createPropertySignature(modifiers: js.Array[Modifier], name: String, questionToken: QuestionToken, `type`: TypeNode): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySignature")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def createPropertySignature(
-      modifiers: js.Array[Modifier],
-      name: String,
-      questionToken: QuestionToken,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySignature")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    /** @deprecated Use `factory.createPropertySignature` or the factory supplied by your transformation context instead. */
-    inline def createPropertySignature(modifiers: js.Array[Modifier], name: PropertyName): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySignature")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def createPropertySignature(
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      questionToken: Unit,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySignature")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def createPropertySignature(modifiers: js.Array[Modifier], name: PropertyName, questionToken: Unit, `type`: TypeNode): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySignature")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def createPropertySignature(
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      questionToken: Unit,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySignature")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def createPropertySignature(modifiers: js.Array[Modifier], name: PropertyName, questionToken: QuestionToken): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySignature")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def createPropertySignature(
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      questionToken: QuestionToken,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySignature")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def createPropertySignature(modifiers: js.Array[Modifier], name: PropertyName, questionToken: QuestionToken, `type`: TypeNode): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySignature")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def createPropertySignature(
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      questionToken: QuestionToken,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySignature")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def createPropertySignature(modifiers: Unit, name: String): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySignature")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def createPropertySignature(modifiers: Unit, name: String, questionToken: Unit, `type`: Unit, initializer: Expression): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySignature")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def createPropertySignature(modifiers: Unit, name: String, questionToken: Unit, `type`: TypeNode): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySignature")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def createPropertySignature(modifiers: Unit, name: String, questionToken: Unit, `type`: TypeNode, initializer: Expression): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySignature")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def createPropertySignature(modifiers: Unit, name: String, questionToken: QuestionToken): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySignature")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def createPropertySignature(modifiers: Unit, name: String, questionToken: QuestionToken, `type`: Unit, initializer: Expression): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySignature")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def createPropertySignature(modifiers: Unit, name: String, questionToken: QuestionToken, `type`: TypeNode): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySignature")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def createPropertySignature(
-      modifiers: Unit,
-      name: String,
-      questionToken: QuestionToken,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySignature")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def createPropertySignature(modifiers: Unit, name: PropertyName): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySignature")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def createPropertySignature(modifiers: Unit, name: PropertyName, questionToken: Unit, `type`: Unit, initializer: Expression): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySignature")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def createPropertySignature(modifiers: Unit, name: PropertyName, questionToken: Unit, `type`: TypeNode): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySignature")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def createPropertySignature(
-      modifiers: Unit,
-      name: PropertyName,
-      questionToken: Unit,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySignature")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def createPropertySignature(modifiers: Unit, name: PropertyName, questionToken: QuestionToken): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySignature")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def createPropertySignature(
-      modifiers: Unit,
-      name: PropertyName,
-      questionToken: QuestionToken,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySignature")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def createPropertySignature(modifiers: Unit, name: PropertyName, questionToken: QuestionToken, `type`: TypeNode): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySignature")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def createPropertySignature(
-      modifiers: Unit,
-      name: PropertyName,
-      questionToken: QuestionToken,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySignature")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    
-    /** @deprecated Use `factory.createQualifiedName` or the factory supplied by your transformation context instead. */
-    inline def createQualifiedName(left: EntityName, right: String): QualifiedName = (^.asInstanceOf[js.Dynamic].applyDynamic("createQualifiedName")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[QualifiedName]
-    inline def createQualifiedName(left: EntityName, right: Identifier): QualifiedName = (^.asInstanceOf[js.Dynamic].applyDynamic("createQualifiedName")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[QualifiedName]
-    
-    /** @deprecated Use `factory.createRegularExpressionLiteral` or the factory supplied by your transformation context instead. */
-    inline def createRegularExpressionLiteral(text: String): RegularExpressionLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createRegularExpressionLiteral")(text.asInstanceOf[js.Any]).asInstanceOf[RegularExpressionLiteral]
-    
-    /** @deprecated Use `factory.createRestTypeNode` or the factory supplied by your transformation context instead. */
-    inline def createRestTypeNode(`type`: TypeNode): RestTypeNode = ^.asInstanceOf[js.Dynamic].applyDynamic("createRestTypeNode")(`type`.asInstanceOf[js.Any]).asInstanceOf[RestTypeNode]
-    
-    /** @deprecated Use `factory.createReturnStatement` or the factory supplied by your transformation context instead. */
-    inline def createReturn(): ReturnStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("createReturn")().asInstanceOf[ReturnStatement]
-    inline def createReturn(expression: Expression): ReturnStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("createReturn")(expression.asInstanceOf[js.Any]).asInstanceOf[ReturnStatement]
     
     inline def createScanner(languageVersion: ScriptTarget, skipTrivia: Boolean): Scanner = (^.asInstanceOf[js.Dynamic].applyDynamic("createScanner")(languageVersion.asInstanceOf[js.Any], skipTrivia.asInstanceOf[js.Any])).asInstanceOf[Scanner]
     inline def createScanner(languageVersion: ScriptTarget, skipTrivia: Boolean, languageVariant: Unit, textInitial: String): Scanner = (^.asInstanceOf[js.Dynamic].applyDynamic("createScanner")(languageVersion.asInstanceOf[js.Any], skipTrivia.asInstanceOf[js.Any], languageVariant.asInstanceOf[js.Any], textInitial.asInstanceOf[js.Any])).asInstanceOf[Scanner]
@@ -4807,130 +934,6 @@ object libTypescriptWorkerLibTypescriptMod {
       configFileParsingDiagnostics: js.UndefOr[js.Array[Diagnostic]],
       projectReferences: js.UndefOr[js.Array[ProjectReference]]
     ): SemanticDiagnosticsBuilderProgram = (^.asInstanceOf[js.Dynamic].applyDynamic("createSemanticDiagnosticsBuilderProgram")(rootNames.asInstanceOf[js.Any], options.asInstanceOf[js.Any], host.asInstanceOf[js.Any], oldProgram.asInstanceOf[js.Any], configFileParsingDiagnostics.asInstanceOf[js.Any], projectReferences.asInstanceOf[js.Any])).asInstanceOf[SemanticDiagnosticsBuilderProgram]
-    
-    /** @deprecated Use `factory.createSemicolonClassElement` or the factory supplied by your transformation context instead. */
-    inline def createSemicolonClassElement(): SemicolonClassElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createSemicolonClassElement")().asInstanceOf[SemicolonClassElement]
-    
-    /** @deprecated Use `factory.createSetAccessorDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createSetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      parameters: js.Array[ParameterDeclaration]
-    ): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createSetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    inline def createSetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createSetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    inline def createSetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createSetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    inline def createSetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createSetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    inline def createSetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: String,
-      parameters: js.Array[ParameterDeclaration]
-    ): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createSetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    inline def createSetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createSetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    inline def createSetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createSetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    inline def createSetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createSetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    inline def createSetAccessor(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: String,
-      parameters: js.Array[ParameterDeclaration]
-    ): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createSetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    inline def createSetAccessor(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createSetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    inline def createSetAccessor(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createSetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    inline def createSetAccessor(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createSetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    inline def createSetAccessor(decorators: Unit, modifiers: Unit, name: String, parameters: js.Array[ParameterDeclaration]): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createSetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    inline def createSetAccessor(
-      decorators: Unit,
-      modifiers: Unit,
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createSetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    inline def createSetAccessor(decorators: Unit, modifiers: Unit, name: PropertyName, parameters: js.Array[ParameterDeclaration]): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createSetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    inline def createSetAccessor(
-      decorators: Unit,
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createSetAccessor")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    /** @deprecated Use `factory.createSetAccessorDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createSetAccessor(modifiers: js.Array[ModifierLike], name: String, parameters: js.Array[ParameterDeclaration]): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createSetAccessor")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    inline def createSetAccessor(
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createSetAccessor")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    inline def createSetAccessor(modifiers: js.Array[ModifierLike], name: PropertyName, parameters: js.Array[ParameterDeclaration]): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createSetAccessor")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    inline def createSetAccessor(
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createSetAccessor")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    inline def createSetAccessor(modifiers: Unit, name: String, parameters: js.Array[ParameterDeclaration]): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createSetAccessor")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    inline def createSetAccessor(modifiers: Unit, name: String, parameters: js.Array[ParameterDeclaration], body: Block): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createSetAccessor")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    inline def createSetAccessor(modifiers: Unit, name: PropertyName, parameters: js.Array[ParameterDeclaration]): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createSetAccessor")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    inline def createSetAccessor(modifiers: Unit, name: PropertyName, parameters: js.Array[ParameterDeclaration], body: Block): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createSetAccessor")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    
-    /** @deprecated Use `factory.createShorthandPropertyAssignment` or the factory supplied by your transformation context instead. */
-    inline def createShorthandPropertyAssignment(name: String): ShorthandPropertyAssignment = ^.asInstanceOf[js.Dynamic].applyDynamic("createShorthandPropertyAssignment")(name.asInstanceOf[js.Any]).asInstanceOf[ShorthandPropertyAssignment]
-    inline def createShorthandPropertyAssignment(name: String, objectAssignmentInitializer: Expression): ShorthandPropertyAssignment = (^.asInstanceOf[js.Dynamic].applyDynamic("createShorthandPropertyAssignment")(name.asInstanceOf[js.Any], objectAssignmentInitializer.asInstanceOf[js.Any])).asInstanceOf[ShorthandPropertyAssignment]
-    inline def createShorthandPropertyAssignment(name: Identifier): ShorthandPropertyAssignment = ^.asInstanceOf[js.Dynamic].applyDynamic("createShorthandPropertyAssignment")(name.asInstanceOf[js.Any]).asInstanceOf[ShorthandPropertyAssignment]
-    inline def createShorthandPropertyAssignment(name: Identifier, objectAssignmentInitializer: Expression): ShorthandPropertyAssignment = (^.asInstanceOf[js.Dynamic].applyDynamic("createShorthandPropertyAssignment")(name.asInstanceOf[js.Any], objectAssignmentInitializer.asInstanceOf[js.Any])).asInstanceOf[ShorthandPropertyAssignment]
     
     inline def createSolutionBuilder[T /* <: BuilderProgram */](host: SolutionBuilderHost[T], rootNames: js.Array[String], defaultOptions: BuildOptions): SolutionBuilder[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSolutionBuilder")(host.asInstanceOf[js.Any], rootNames.asInstanceOf[js.Any], defaultOptions.asInstanceOf[js.Any])).asInstanceOf[SolutionBuilder[T]]
     
@@ -5329,313 +1332,11 @@ object libTypescriptWorkerLibTypescriptMod {
     inline def createSourceMapSource(fileName: String, text: String): SourceMapSource = (^.asInstanceOf[js.Dynamic].applyDynamic("createSourceMapSource")(fileName.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[SourceMapSource]
     inline def createSourceMapSource(fileName: String, text: String, skipTrivia: js.Function1[/* pos */ Double, Double]): SourceMapSource = (^.asInstanceOf[js.Dynamic].applyDynamic("createSourceMapSource")(fileName.asInstanceOf[js.Any], text.asInstanceOf[js.Any], skipTrivia.asInstanceOf[js.Any])).asInstanceOf[SourceMapSource]
     
-    /** @deprecated Use `factory.createSpreadExpression` or the factory supplied by your transformation context instead. */
-    inline def createSpread(expression: Expression): SpreadElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createSpread")(expression.asInstanceOf[js.Any]).asInstanceOf[SpreadElement]
-    
-    /** @deprecated Use `factory.createSpreadAssignment` or the factory supplied by your transformation context instead. */
-    inline def createSpreadAssignment(expression: Expression): SpreadAssignment = ^.asInstanceOf[js.Dynamic].applyDynamic("createSpreadAssignment")(expression.asInstanceOf[js.Any]).asInstanceOf[SpreadAssignment]
-    
-    /** @deprecated Use `factory.createExpressionStatement` or the factory supplied by your transformation context instead. */
-    inline def createStatement(expression: Expression): ExpressionStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("createStatement")(expression.asInstanceOf[js.Any]).asInstanceOf[ExpressionStatement]
-    
-    /** @deprecated Use `factory.createStrictEquality` or the factory supplied by your transformation context instead. */
-    inline def createStrictEquality(left: Expression, right: Expression): BinaryExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createStrictEquality")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression]
-    
-    /** @deprecated Use `factory.createStrictInequality` or the factory supplied by your transformation context instead. */
-    inline def createStrictInequality(left: Expression, right: Expression): BinaryExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createStrictInequality")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression]
-    
-    /** @deprecated Use `factory.createStringLiteral` or the factory supplied by your transformation context instead. */
-    inline def createStringLiteral(text: String): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createStringLiteral")(text.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
-    inline def createStringLiteral(text: String, isSingleQuote: Boolean): StringLiteral = (^.asInstanceOf[js.Dynamic].applyDynamic("createStringLiteral")(text.asInstanceOf[js.Any], isSingleQuote.asInstanceOf[js.Any])).asInstanceOf[StringLiteral]
-    inline def createStringLiteral(text: String, isSingleQuote: Boolean, hasExtendedUnicodeEscape: Boolean): StringLiteral = (^.asInstanceOf[js.Dynamic].applyDynamic("createStringLiteral")(text.asInstanceOf[js.Any], isSingleQuote.asInstanceOf[js.Any], hasExtendedUnicodeEscape.asInstanceOf[js.Any])).asInstanceOf[StringLiteral]
-    inline def createStringLiteral(text: String, isSingleQuote: Unit, hasExtendedUnicodeEscape: Boolean): StringLiteral = (^.asInstanceOf[js.Dynamic].applyDynamic("createStringLiteral")(text.asInstanceOf[js.Any], isSingleQuote.asInstanceOf[js.Any], hasExtendedUnicodeEscape.asInstanceOf[js.Any])).asInstanceOf[StringLiteral]
-    
-    /** @deprecated Use `factory.createStringLiteralFromNode` or the factory supplied by your transformation context instead. */
-    inline def createStringLiteralFromNode(sourceNode: PrivateIdentifier): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createStringLiteralFromNode")(sourceNode.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
-    inline def createStringLiteralFromNode(sourceNode: PrivateIdentifier, isSingleQuote: Boolean): StringLiteral = (^.asInstanceOf[js.Dynamic].applyDynamic("createStringLiteralFromNode")(sourceNode.asInstanceOf[js.Any], isSingleQuote.asInstanceOf[js.Any])).asInstanceOf[StringLiteral]
-    inline def createStringLiteralFromNode(sourceNode: PropertyNameLiteral): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createStringLiteralFromNode")(sourceNode.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
-    inline def createStringLiteralFromNode(sourceNode: PropertyNameLiteral, isSingleQuote: Boolean): StringLiteral = (^.asInstanceOf[js.Dynamic].applyDynamic("createStringLiteralFromNode")(sourceNode.asInstanceOf[js.Any], isSingleQuote.asInstanceOf[js.Any])).asInstanceOf[StringLiteral]
-    
-    /** @deprecated Use `factory.createSubtract` or the factory supplied by your transformation context instead. */
-    inline def createSubtract(left: Expression, right: Expression): BinaryExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createSubtract")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression]
-    
-    /** @deprecated Use `factory.createSuper` or the factory supplied by your transformation context instead. */
-    inline def createSuper(): SuperExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createSuper")().asInstanceOf[SuperExpression]
-    
-    /** @deprecated Use `factory.createSwitchStatement` or the factory supplied by your transformation context instead. */
-    inline def createSwitch(expression: Expression, caseBlock: CaseBlock): SwitchStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("createSwitch")(expression.asInstanceOf[js.Any], caseBlock.asInstanceOf[js.Any])).asInstanceOf[SwitchStatement]
-    
-    /** @deprecated Use `factory.createTaggedTemplate` or the factory supplied by your transformation context instead. */
-    inline def createTaggedTemplate(tag: Expression, template: TemplateLiteral): TaggedTemplateExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createTaggedTemplate")(tag.asInstanceOf[js.Any], template.asInstanceOf[js.Any])).asInstanceOf[TaggedTemplateExpression]
-    /** @deprecated Use `factory.createTaggedTemplate` or the factory supplied by your transformation context instead. */
-    inline def createTaggedTemplate(tag: Expression, typeArguments: js.Array[TypeNode], template: TemplateLiteral): TaggedTemplateExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createTaggedTemplate")(tag.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], template.asInstanceOf[js.Any])).asInstanceOf[TaggedTemplateExpression]
-    inline def createTaggedTemplate(tag: Expression, typeArguments: Unit, template: TemplateLiteral): TaggedTemplateExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createTaggedTemplate")(tag.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], template.asInstanceOf[js.Any])).asInstanceOf[TaggedTemplateExpression]
-    
-    /** @deprecated Use `factory.createTempVariable` or the factory supplied by your transformation context instead. */
-    inline def createTempVariable(): Identifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createTempVariable")().asInstanceOf[Identifier]
-    inline def createTempVariable(recordTempVariable: js.Function1[/* node */ Identifier, Unit]): Identifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createTempVariable")(recordTempVariable.asInstanceOf[js.Any]).asInstanceOf[Identifier]
-    
-    /** @deprecated Use `factory.createTemplateExpression` or the factory supplied by your transformation context instead. */
-    inline def createTemplateExpression(head: TemplateHead, templateSpans: js.Array[TemplateSpan]): TemplateExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createTemplateExpression")(head.asInstanceOf[js.Any], templateSpans.asInstanceOf[js.Any])).asInstanceOf[TemplateExpression]
-    
-    /** @deprecated Use `factory.createTemplateHead` or the factory supplied by your transformation context instead. */
-    inline def createTemplateHead(text: String): TemplateHead = ^.asInstanceOf[js.Dynamic].applyDynamic("createTemplateHead")(text.asInstanceOf[js.Any]).asInstanceOf[TemplateHead]
-    /** @deprecated Use `factory.createTemplateHead` or the factory supplied by your transformation context instead. */
-    inline def createTemplateHead(text: String, rawText: String): TemplateHead = (^.asInstanceOf[js.Dynamic].applyDynamic("createTemplateHead")(text.asInstanceOf[js.Any], rawText.asInstanceOf[js.Any])).asInstanceOf[TemplateHead]
-    inline def createTemplateHead(text: String, rawText: String, templateFlags: TokenFlags): TemplateHead = (^.asInstanceOf[js.Dynamic].applyDynamic("createTemplateHead")(text.asInstanceOf[js.Any], rawText.asInstanceOf[js.Any], templateFlags.asInstanceOf[js.Any])).asInstanceOf[TemplateHead]
-    inline def createTemplateHead(text: String, rawText: Unit, templateFlags: TokenFlags): TemplateHead = (^.asInstanceOf[js.Dynamic].applyDynamic("createTemplateHead")(text.asInstanceOf[js.Any], rawText.asInstanceOf[js.Any], templateFlags.asInstanceOf[js.Any])).asInstanceOf[TemplateHead]
-    inline def createTemplateHead(text: Unit, rawText: String): TemplateHead = (^.asInstanceOf[js.Dynamic].applyDynamic("createTemplateHead")(text.asInstanceOf[js.Any], rawText.asInstanceOf[js.Any])).asInstanceOf[TemplateHead]
-    inline def createTemplateHead(text: Unit, rawText: String, templateFlags: TokenFlags): TemplateHead = (^.asInstanceOf[js.Dynamic].applyDynamic("createTemplateHead")(text.asInstanceOf[js.Any], rawText.asInstanceOf[js.Any], templateFlags.asInstanceOf[js.Any])).asInstanceOf[TemplateHead]
-    
-    /** @deprecated Use `factory.createTemplateMiddle` or the factory supplied by your transformation context instead. */
-    inline def createTemplateMiddle(text: String): TemplateMiddle = ^.asInstanceOf[js.Dynamic].applyDynamic("createTemplateMiddle")(text.asInstanceOf[js.Any]).asInstanceOf[TemplateMiddle]
-    /** @deprecated Use `factory.createTemplateMiddle` or the factory supplied by your transformation context instead. */
-    inline def createTemplateMiddle(text: String, rawText: String): TemplateMiddle = (^.asInstanceOf[js.Dynamic].applyDynamic("createTemplateMiddle")(text.asInstanceOf[js.Any], rawText.asInstanceOf[js.Any])).asInstanceOf[TemplateMiddle]
-    inline def createTemplateMiddle(text: String, rawText: String, templateFlags: TokenFlags): TemplateMiddle = (^.asInstanceOf[js.Dynamic].applyDynamic("createTemplateMiddle")(text.asInstanceOf[js.Any], rawText.asInstanceOf[js.Any], templateFlags.asInstanceOf[js.Any])).asInstanceOf[TemplateMiddle]
-    inline def createTemplateMiddle(text: String, rawText: Unit, templateFlags: TokenFlags): TemplateMiddle = (^.asInstanceOf[js.Dynamic].applyDynamic("createTemplateMiddle")(text.asInstanceOf[js.Any], rawText.asInstanceOf[js.Any], templateFlags.asInstanceOf[js.Any])).asInstanceOf[TemplateMiddle]
-    inline def createTemplateMiddle(text: Unit, rawText: String): TemplateMiddle = (^.asInstanceOf[js.Dynamic].applyDynamic("createTemplateMiddle")(text.asInstanceOf[js.Any], rawText.asInstanceOf[js.Any])).asInstanceOf[TemplateMiddle]
-    inline def createTemplateMiddle(text: Unit, rawText: String, templateFlags: TokenFlags): TemplateMiddle = (^.asInstanceOf[js.Dynamic].applyDynamic("createTemplateMiddle")(text.asInstanceOf[js.Any], rawText.asInstanceOf[js.Any], templateFlags.asInstanceOf[js.Any])).asInstanceOf[TemplateMiddle]
-    
-    /** @deprecated Use `factory.createTemplateSpan` or the factory supplied by your transformation context instead. */
-    inline def createTemplateSpan(expression: Expression, literal: TemplateMiddle): TemplateSpan = (^.asInstanceOf[js.Dynamic].applyDynamic("createTemplateSpan")(expression.asInstanceOf[js.Any], literal.asInstanceOf[js.Any])).asInstanceOf[TemplateSpan]
-    inline def createTemplateSpan(expression: Expression, literal: TemplateTail): TemplateSpan = (^.asInstanceOf[js.Dynamic].applyDynamic("createTemplateSpan")(expression.asInstanceOf[js.Any], literal.asInstanceOf[js.Any])).asInstanceOf[TemplateSpan]
-    
-    /** @deprecated Use `factory.createTemplateTail` or the factory supplied by your transformation context instead. */
-    inline def createTemplateTail(text: String): TemplateTail = ^.asInstanceOf[js.Dynamic].applyDynamic("createTemplateTail")(text.asInstanceOf[js.Any]).asInstanceOf[TemplateTail]
-    /** @deprecated Use `factory.createTemplateTail` or the factory supplied by your transformation context instead. */
-    inline def createTemplateTail(text: String, rawText: String): TemplateTail = (^.asInstanceOf[js.Dynamic].applyDynamic("createTemplateTail")(text.asInstanceOf[js.Any], rawText.asInstanceOf[js.Any])).asInstanceOf[TemplateTail]
-    inline def createTemplateTail(text: String, rawText: String, templateFlags: TokenFlags): TemplateTail = (^.asInstanceOf[js.Dynamic].applyDynamic("createTemplateTail")(text.asInstanceOf[js.Any], rawText.asInstanceOf[js.Any], templateFlags.asInstanceOf[js.Any])).asInstanceOf[TemplateTail]
-    inline def createTemplateTail(text: String, rawText: Unit, templateFlags: TokenFlags): TemplateTail = (^.asInstanceOf[js.Dynamic].applyDynamic("createTemplateTail")(text.asInstanceOf[js.Any], rawText.asInstanceOf[js.Any], templateFlags.asInstanceOf[js.Any])).asInstanceOf[TemplateTail]
-    inline def createTemplateTail(text: Unit, rawText: String): TemplateTail = (^.asInstanceOf[js.Dynamic].applyDynamic("createTemplateTail")(text.asInstanceOf[js.Any], rawText.asInstanceOf[js.Any])).asInstanceOf[TemplateTail]
-    inline def createTemplateTail(text: Unit, rawText: String, templateFlags: TokenFlags): TemplateTail = (^.asInstanceOf[js.Dynamic].applyDynamic("createTemplateTail")(text.asInstanceOf[js.Any], rawText.asInstanceOf[js.Any], templateFlags.asInstanceOf[js.Any])).asInstanceOf[TemplateTail]
-    
     inline def createTextChangeRange(span: TextSpan, newLength: Double): TextChangeRange = (^.asInstanceOf[js.Dynamic].applyDynamic("createTextChangeRange")(span.asInstanceOf[js.Any], newLength.asInstanceOf[js.Any])).asInstanceOf[TextChangeRange]
     
     inline def createTextSpan(start: Double, length: Double): TextSpan = (^.asInstanceOf[js.Dynamic].applyDynamic("createTextSpan")(start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TextSpan]
     
     inline def createTextSpanFromBounds(start: Double, end: Double): TextSpan = (^.asInstanceOf[js.Dynamic].applyDynamic("createTextSpanFromBounds")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[TextSpan]
-    
-    /** @deprecated Use `factory.createThis` or the factory supplied by your transformation context instead. */
-    inline def createThis(): ThisExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createThis")().asInstanceOf[ThisExpression]
-    
-    /** @deprecated Use `factory.createThisTypeNode` or the factory supplied by your transformation context instead. */
-    inline def createThisTypeNode(): ThisTypeNode = ^.asInstanceOf[js.Dynamic].applyDynamic("createThisTypeNode")().asInstanceOf[ThisTypeNode]
-    
-    /** @deprecated Use `factory.createThrowStatement` or the factory supplied by your transformation context instead. */
-    inline def createThrow(expression: Expression): ThrowStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("createThrow")(expression.asInstanceOf[js.Any]).asInstanceOf[ThrowStatement]
-    
-    /** @deprecated Use `factory.createToken` or the factory supplied by your transformation context instead. */
-    inline def createToken[TKind /* <: SyntaxKind */](kind: TKind): Token[TKind] = ^.asInstanceOf[js.Dynamic].applyDynamic("createToken")(kind.asInstanceOf[js.Any]).asInstanceOf[Token[TKind]]
-    
-    /** @deprecated Use `factory.createTrue` or the factory supplied by your transformation context instead. */
-    inline def createTrue(): TrueLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createTrue")().asInstanceOf[TrueLiteral]
-    
-    /** @deprecated Use `factory.createTryStatement` or the factory supplied by your transformation context instead. */
-    inline def createTry(tryBlock: Block): TryStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("createTry")(tryBlock.asInstanceOf[js.Any]).asInstanceOf[TryStatement]
-    inline def createTry(tryBlock: Block, catchClause: Unit, finallyBlock: Block): TryStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("createTry")(tryBlock.asInstanceOf[js.Any], catchClause.asInstanceOf[js.Any], finallyBlock.asInstanceOf[js.Any])).asInstanceOf[TryStatement]
-    inline def createTry(tryBlock: Block, catchClause: CatchClause): TryStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("createTry")(tryBlock.asInstanceOf[js.Any], catchClause.asInstanceOf[js.Any])).asInstanceOf[TryStatement]
-    inline def createTry(tryBlock: Block, catchClause: CatchClause, finallyBlock: Block): TryStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("createTry")(tryBlock.asInstanceOf[js.Any], catchClause.asInstanceOf[js.Any], finallyBlock.asInstanceOf[js.Any])).asInstanceOf[TryStatement]
-    
-    /** @deprecated Use `factory.createTupleTypeNode` or the factory supplied by your transformation context instead. */
-    inline def createTupleTypeNode(elements: js.Array[TypeNode | NamedTupleMember]): TupleTypeNode = ^.asInstanceOf[js.Dynamic].applyDynamic("createTupleTypeNode")(elements.asInstanceOf[js.Any]).asInstanceOf[TupleTypeNode]
-    
-    /** @deprecated Use `factory.createTypeAliasDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createTypeAliasDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAliasDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    inline def createTypeAliasDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: Unit,
-      `type`: TypeNode
-    ): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAliasDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    inline def createTypeAliasDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAliasDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    inline def createTypeAliasDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      `type`: TypeNode
-    ): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAliasDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    inline def createTypeAliasDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAliasDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    inline def createTypeAliasDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: String,
-      typeParameters: Unit,
-      `type`: TypeNode
-    ): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAliasDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    inline def createTypeAliasDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAliasDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    inline def createTypeAliasDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      `type`: TypeNode
-    ): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAliasDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    inline def createTypeAliasDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAliasDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    inline def createTypeAliasDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: Unit,
-      `type`: TypeNode
-    ): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAliasDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    inline def createTypeAliasDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAliasDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    inline def createTypeAliasDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      `type`: TypeNode
-    ): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAliasDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    inline def createTypeAliasDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAliasDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    inline def createTypeAliasDeclaration(decorators: Unit, modifiers: Unit, name: String, typeParameters: Unit, `type`: TypeNode): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAliasDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    inline def createTypeAliasDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAliasDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    inline def createTypeAliasDeclaration(decorators: Unit, modifiers: Unit, name: Identifier, typeParameters: Unit, `type`: TypeNode): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAliasDeclaration")(decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    /** @deprecated Use `factory.createTypeAliasDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createTypeAliasDeclaration(
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAliasDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    inline def createTypeAliasDeclaration(modifiers: js.Array[Modifier], name: String, typeParameters: Unit, `type`: TypeNode): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAliasDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    inline def createTypeAliasDeclaration(
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAliasDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    inline def createTypeAliasDeclaration(modifiers: js.Array[Modifier], name: Identifier, typeParameters: Unit, `type`: TypeNode): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAliasDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    inline def createTypeAliasDeclaration(
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAliasDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    inline def createTypeAliasDeclaration(modifiers: Unit, name: String, typeParameters: Unit, `type`: TypeNode): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAliasDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    inline def createTypeAliasDeclaration(
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAliasDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    inline def createTypeAliasDeclaration(modifiers: Unit, name: Identifier, typeParameters: Unit, `type`: TypeNode): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAliasDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    
-    /** @deprecated Use `factory.createTypeAssertion` or the factory supplied by your transformation context instead. */
-    inline def createTypeAssertion(`type`: TypeNode, expression: Expression): TypeAssertion = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAssertion")(`type`.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[TypeAssertion]
-    
-    /** @deprecated Use `factory.createTypeLiteralNode` or the factory supplied by your transformation context instead. */
-    inline def createTypeLiteralNode(): TypeLiteralNode = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeLiteralNode")().asInstanceOf[TypeLiteralNode]
-    inline def createTypeLiteralNode(members: js.Array[TypeElement]): TypeLiteralNode = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeLiteralNode")(members.asInstanceOf[js.Any]).asInstanceOf[TypeLiteralNode]
-    
-    /** @deprecated Use `factory.createTypeOfExpression` or the factory supplied by your transformation context instead. */
-    inline def createTypeOf(expression: Expression): TypeOfExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeOf")(expression.asInstanceOf[js.Any]).asInstanceOf[TypeOfExpression]
-    
-    /** @deprecated Use `factory.createTypeOperatorNode` or the factory supplied by your transformation context instead. */
-    inline def createTypeOperatorNode(operator: KeyOfKeyword, `type`: TypeNode): TypeOperatorNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeOperatorNode")(operator.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeOperatorNode]
-    inline def createTypeOperatorNode(operator: typings.typescript.mod.SyntaxKind.ReadonlyKeyword, `type`: TypeNode): TypeOperatorNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeOperatorNode")(operator.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeOperatorNode]
-    inline def createTypeOperatorNode(operator: UniqueKeyword, `type`: TypeNode): TypeOperatorNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeOperatorNode")(operator.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeOperatorNode]
-    /** @deprecated Use `factory.createTypeOperatorNode` or the factory supplied by your transformation context instead. */
-    inline def createTypeOperatorNode(`type`: TypeNode): TypeOperatorNode = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeOperatorNode")(`type`.asInstanceOf[js.Any]).asInstanceOf[TypeOperatorNode]
-    
-    /** @deprecated Use `factory.createTypeParameterDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createTypeParameterDeclaration(modifiers: js.Array[Modifier], name: String): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeParameterDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    inline def createTypeParameterDeclaration(modifiers: js.Array[Modifier], name: String, constraint: Unit, defaultType: TypeNode): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeParameterDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], defaultType.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    inline def createTypeParameterDeclaration(modifiers: js.Array[Modifier], name: String, constraint: TypeNode): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeParameterDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    inline def createTypeParameterDeclaration(modifiers: js.Array[Modifier], name: String, constraint: TypeNode, defaultType: TypeNode): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeParameterDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], defaultType.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    inline def createTypeParameterDeclaration(modifiers: js.Array[Modifier], name: Identifier): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeParameterDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    inline def createTypeParameterDeclaration(modifiers: js.Array[Modifier], name: Identifier, constraint: Unit, defaultType: TypeNode): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeParameterDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], defaultType.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    inline def createTypeParameterDeclaration(modifiers: js.Array[Modifier], name: Identifier, constraint: TypeNode): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeParameterDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    inline def createTypeParameterDeclaration(modifiers: js.Array[Modifier], name: Identifier, constraint: TypeNode, defaultType: TypeNode): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeParameterDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], defaultType.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    inline def createTypeParameterDeclaration(modifiers: Unit, name: String): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeParameterDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    inline def createTypeParameterDeclaration(modifiers: Unit, name: String, constraint: Unit, defaultType: TypeNode): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeParameterDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], defaultType.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    inline def createTypeParameterDeclaration(modifiers: Unit, name: String, constraint: TypeNode): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeParameterDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    inline def createTypeParameterDeclaration(modifiers: Unit, name: String, constraint: TypeNode, defaultType: TypeNode): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeParameterDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], defaultType.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    inline def createTypeParameterDeclaration(modifiers: Unit, name: Identifier): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeParameterDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    inline def createTypeParameterDeclaration(modifiers: Unit, name: Identifier, constraint: Unit, defaultType: TypeNode): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeParameterDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], defaultType.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    inline def createTypeParameterDeclaration(modifiers: Unit, name: Identifier, constraint: TypeNode): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeParameterDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    inline def createTypeParameterDeclaration(modifiers: Unit, name: Identifier, constraint: TypeNode, defaultType: TypeNode): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeParameterDeclaration")(modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], defaultType.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    /** @deprecated Use `factory.createTypeParameterDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createTypeParameterDeclaration(name: String): TypeParameterDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeParameterDeclaration")(name.asInstanceOf[js.Any]).asInstanceOf[TypeParameterDeclaration]
-    inline def createTypeParameterDeclaration(name: String, constraint: Unit, defaultType: TypeNode): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeParameterDeclaration")(name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], defaultType.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    inline def createTypeParameterDeclaration(name: String, constraint: TypeNode): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeParameterDeclaration")(name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    inline def createTypeParameterDeclaration(name: String, constraint: TypeNode, defaultType: TypeNode): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeParameterDeclaration")(name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], defaultType.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    inline def createTypeParameterDeclaration(name: Identifier): TypeParameterDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeParameterDeclaration")(name.asInstanceOf[js.Any]).asInstanceOf[TypeParameterDeclaration]
-    inline def createTypeParameterDeclaration(name: Identifier, constraint: Unit, defaultType: TypeNode): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeParameterDeclaration")(name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], defaultType.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    inline def createTypeParameterDeclaration(name: Identifier, constraint: TypeNode): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeParameterDeclaration")(name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    inline def createTypeParameterDeclaration(name: Identifier, constraint: TypeNode, defaultType: TypeNode): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeParameterDeclaration")(name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], defaultType.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    
-    inline def createTypePredicateNode(parameterName: String, `type`: TypeNode): TypePredicateNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypePredicateNode")(parameterName.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypePredicateNode]
-    /** @deprecated Use `factory.createTypePredicateNode` or the factory supplied by your transformation context instead. */
-    inline def createTypePredicateNode(parameterName: Identifier, `type`: TypeNode): TypePredicateNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypePredicateNode")(parameterName.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypePredicateNode]
-    inline def createTypePredicateNode(parameterName: ThisTypeNode, `type`: TypeNode): TypePredicateNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypePredicateNode")(parameterName.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypePredicateNode]
-    
-    inline def createTypePredicateNodeWithModifier(assertsModifier: Unit, parameterName: String): TypePredicateNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypePredicateNodeWithModifier")(assertsModifier.asInstanceOf[js.Any], parameterName.asInstanceOf[js.Any])).asInstanceOf[TypePredicateNode]
-    inline def createTypePredicateNodeWithModifier(assertsModifier: Unit, parameterName: String, `type`: TypeNode): TypePredicateNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypePredicateNodeWithModifier")(assertsModifier.asInstanceOf[js.Any], parameterName.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypePredicateNode]
-    inline def createTypePredicateNodeWithModifier(assertsModifier: Unit, parameterName: Identifier): TypePredicateNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypePredicateNodeWithModifier")(assertsModifier.asInstanceOf[js.Any], parameterName.asInstanceOf[js.Any])).asInstanceOf[TypePredicateNode]
-    inline def createTypePredicateNodeWithModifier(assertsModifier: Unit, parameterName: Identifier, `type`: TypeNode): TypePredicateNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypePredicateNodeWithModifier")(assertsModifier.asInstanceOf[js.Any], parameterName.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypePredicateNode]
-    inline def createTypePredicateNodeWithModifier(assertsModifier: Unit, parameterName: ThisTypeNode): TypePredicateNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypePredicateNodeWithModifier")(assertsModifier.asInstanceOf[js.Any], parameterName.asInstanceOf[js.Any])).asInstanceOf[TypePredicateNode]
-    inline def createTypePredicateNodeWithModifier(assertsModifier: Unit, parameterName: ThisTypeNode, `type`: TypeNode): TypePredicateNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypePredicateNodeWithModifier")(assertsModifier.asInstanceOf[js.Any], parameterName.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypePredicateNode]
-    /** @deprecated Use `factory.createTypePredicateNode` or the factory supplied by your transformation context instead. */
-    inline def createTypePredicateNodeWithModifier(assertsModifier: AssertsKeyword, parameterName: String): TypePredicateNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypePredicateNodeWithModifier")(assertsModifier.asInstanceOf[js.Any], parameterName.asInstanceOf[js.Any])).asInstanceOf[TypePredicateNode]
-    inline def createTypePredicateNodeWithModifier(assertsModifier: AssertsKeyword, parameterName: String, `type`: TypeNode): TypePredicateNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypePredicateNodeWithModifier")(assertsModifier.asInstanceOf[js.Any], parameterName.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypePredicateNode]
-    inline def createTypePredicateNodeWithModifier(assertsModifier: AssertsKeyword, parameterName: Identifier): TypePredicateNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypePredicateNodeWithModifier")(assertsModifier.asInstanceOf[js.Any], parameterName.asInstanceOf[js.Any])).asInstanceOf[TypePredicateNode]
-    inline def createTypePredicateNodeWithModifier(assertsModifier: AssertsKeyword, parameterName: Identifier, `type`: TypeNode): TypePredicateNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypePredicateNodeWithModifier")(assertsModifier.asInstanceOf[js.Any], parameterName.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypePredicateNode]
-    inline def createTypePredicateNodeWithModifier(assertsModifier: AssertsKeyword, parameterName: ThisTypeNode): TypePredicateNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypePredicateNodeWithModifier")(assertsModifier.asInstanceOf[js.Any], parameterName.asInstanceOf[js.Any])).asInstanceOf[TypePredicateNode]
-    inline def createTypePredicateNodeWithModifier(assertsModifier: AssertsKeyword, parameterName: ThisTypeNode, `type`: TypeNode): TypePredicateNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypePredicateNodeWithModifier")(assertsModifier.asInstanceOf[js.Any], parameterName.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypePredicateNode]
-    
-    /** @deprecated Use `factory.createTypeQueryNode` or the factory supplied by your transformation context instead. */
-    inline def createTypeQueryNode(exprName: EntityName): TypeQueryNode = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeQueryNode")(exprName.asInstanceOf[js.Any]).asInstanceOf[TypeQueryNode]
-    inline def createTypeQueryNode(exprName: EntityName, typeArguments: js.Array[TypeNode]): TypeQueryNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeQueryNode")(exprName.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any])).asInstanceOf[TypeQueryNode]
     
     inline def createTypeReferenceDirectiveResolutionCache(currentDirectory: String, getCanonicalFileName: js.Function1[/* s */ String, String]): TypeReferenceDirectiveResolutionCache = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeReferenceDirectiveResolutionCache")(currentDirectory.asInstanceOf[js.Any], getCanonicalFileName.asInstanceOf[js.Any])).asInstanceOf[TypeReferenceDirectiveResolutionCache]
     inline def createTypeReferenceDirectiveResolutionCache(
@@ -5656,65 +1357,14 @@ object libTypescriptWorkerLibTypescriptMod {
       packageJsonInfoCache: PackageJsonInfoCache
     ): TypeReferenceDirectiveResolutionCache = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeReferenceDirectiveResolutionCache")(currentDirectory.asInstanceOf[js.Any], getCanonicalFileName.asInstanceOf[js.Any], options.asInstanceOf[js.Any], packageJsonInfoCache.asInstanceOf[js.Any])).asInstanceOf[TypeReferenceDirectiveResolutionCache]
     
-    /** @deprecated Use `factory.createTypeReferenceNode` or the factory supplied by your transformation context instead. */
-    inline def createTypeReferenceNode(typeName: String): TypeReferenceNode = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeReferenceNode")(typeName.asInstanceOf[js.Any]).asInstanceOf[TypeReferenceNode]
-    inline def createTypeReferenceNode(typeName: String, typeArguments: js.Array[TypeNode]): TypeReferenceNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeReferenceNode")(typeName.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any])).asInstanceOf[TypeReferenceNode]
-    inline def createTypeReferenceNode(typeName: EntityName): TypeReferenceNode = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeReferenceNode")(typeName.asInstanceOf[js.Any]).asInstanceOf[TypeReferenceNode]
-    inline def createTypeReferenceNode(typeName: EntityName, typeArguments: js.Array[TypeNode]): TypeReferenceNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeReferenceNode")(typeName.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any])).asInstanceOf[TypeReferenceNode]
-    
-    /** @deprecated Use `factory.createUnionTypeNode` or the factory supplied by your transformation context instead. */
-    inline def createUnionTypeNode(types: js.Array[TypeNode]): UnionTypeNode = ^.asInstanceOf[js.Dynamic].applyDynamic("createUnionTypeNode")(types.asInstanceOf[js.Any]).asInstanceOf[UnionTypeNode]
-    
-    /** @deprecated Use `factory.createUniqueName` or the factory supplied by your transformation context instead. */
-    inline def createUniqueName(text: String): Identifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createUniqueName")(text.asInstanceOf[js.Any]).asInstanceOf[Identifier]
-    inline def createUniqueName(text: String, flags: GeneratedIdentifierFlags): Identifier = (^.asInstanceOf[js.Dynamic].applyDynamic("createUniqueName")(text.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Identifier]
-    
+    /** @deprecated */
     inline def createUnparsedSourceFile(inputFile: InputFiles, `type`: js_ | dts): UnparsedSource = (^.asInstanceOf[js.Dynamic].applyDynamic("createUnparsedSourceFile")(inputFile.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[UnparsedSource]
     inline def createUnparsedSourceFile(inputFile: InputFiles, `type`: js_ | dts, stripInternal: Boolean): UnparsedSource = (^.asInstanceOf[js.Dynamic].applyDynamic("createUnparsedSourceFile")(inputFile.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], stripInternal.asInstanceOf[js.Any])).asInstanceOf[UnparsedSource]
+    /** @deprecated */
     inline def createUnparsedSourceFile(text: String): UnparsedSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createUnparsedSourceFile")(text.asInstanceOf[js.Any]).asInstanceOf[UnparsedSource]
     inline def createUnparsedSourceFile(text: String, mapPath: String): UnparsedSource = (^.asInstanceOf[js.Dynamic].applyDynamic("createUnparsedSourceFile")(text.asInstanceOf[js.Any], mapPath.asInstanceOf[js.Any])).asInstanceOf[UnparsedSource]
     inline def createUnparsedSourceFile(text: String, mapPath: String, map: String): UnparsedSource = (^.asInstanceOf[js.Dynamic].applyDynamic("createUnparsedSourceFile")(text.asInstanceOf[js.Any], mapPath.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[UnparsedSource]
     inline def createUnparsedSourceFile(text: String, mapPath: Unit, map: String): UnparsedSource = (^.asInstanceOf[js.Dynamic].applyDynamic("createUnparsedSourceFile")(text.asInstanceOf[js.Any], mapPath.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[UnparsedSource]
-    
-    /** @deprecated Use `factory.createVariableDeclaration` or the factory supplied by your transformation context instead. */
-    inline def createVariableDeclaration(name: String): VariableDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("createVariableDeclaration")(name.asInstanceOf[js.Any]).asInstanceOf[VariableDeclaration]
-    inline def createVariableDeclaration(name: String, exclamationToken: Unit, `type`: Unit, initializer: Expression): VariableDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createVariableDeclaration")(name.asInstanceOf[js.Any], exclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration]
-    inline def createVariableDeclaration(name: String, exclamationToken: Unit, `type`: TypeNode): VariableDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createVariableDeclaration")(name.asInstanceOf[js.Any], exclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration]
-    inline def createVariableDeclaration(name: String, exclamationToken: Unit, `type`: TypeNode, initializer: Expression): VariableDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createVariableDeclaration")(name.asInstanceOf[js.Any], exclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration]
-    inline def createVariableDeclaration(name: String, exclamationToken: ExclamationToken): VariableDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createVariableDeclaration")(name.asInstanceOf[js.Any], exclamationToken.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration]
-    inline def createVariableDeclaration(name: String, exclamationToken: ExclamationToken, `type`: Unit, initializer: Expression): VariableDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createVariableDeclaration")(name.asInstanceOf[js.Any], exclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration]
-    inline def createVariableDeclaration(name: String, exclamationToken: ExclamationToken, `type`: TypeNode): VariableDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createVariableDeclaration")(name.asInstanceOf[js.Any], exclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration]
-    inline def createVariableDeclaration(name: String, exclamationToken: ExclamationToken, `type`: TypeNode, initializer: Expression): VariableDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createVariableDeclaration")(name.asInstanceOf[js.Any], exclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration]
-    inline def createVariableDeclaration(name: String, `type`: Unit, initializer: Expression): VariableDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createVariableDeclaration")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration]
-    inline def createVariableDeclaration(name: String, `type`: TypeNode): VariableDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createVariableDeclaration")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration]
-    inline def createVariableDeclaration(name: String, `type`: TypeNode, initializer: Expression): VariableDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createVariableDeclaration")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration]
-    inline def createVariableDeclaration(name: BindingName): VariableDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("createVariableDeclaration")(name.asInstanceOf[js.Any]).asInstanceOf[VariableDeclaration]
-    inline def createVariableDeclaration(name: BindingName, exclamationToken: Unit, `type`: Unit, initializer: Expression): VariableDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createVariableDeclaration")(name.asInstanceOf[js.Any], exclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration]
-    inline def createVariableDeclaration(name: BindingName, exclamationToken: Unit, `type`: TypeNode): VariableDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createVariableDeclaration")(name.asInstanceOf[js.Any], exclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration]
-    inline def createVariableDeclaration(name: BindingName, exclamationToken: Unit, `type`: TypeNode, initializer: Expression): VariableDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createVariableDeclaration")(name.asInstanceOf[js.Any], exclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration]
-    inline def createVariableDeclaration(name: BindingName, exclamationToken: ExclamationToken): VariableDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createVariableDeclaration")(name.asInstanceOf[js.Any], exclamationToken.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration]
-    inline def createVariableDeclaration(name: BindingName, exclamationToken: ExclamationToken, `type`: Unit, initializer: Expression): VariableDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createVariableDeclaration")(name.asInstanceOf[js.Any], exclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration]
-    inline def createVariableDeclaration(name: BindingName, exclamationToken: ExclamationToken, `type`: TypeNode): VariableDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createVariableDeclaration")(name.asInstanceOf[js.Any], exclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration]
-    inline def createVariableDeclaration(name: BindingName, exclamationToken: ExclamationToken, `type`: TypeNode, initializer: Expression): VariableDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createVariableDeclaration")(name.asInstanceOf[js.Any], exclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration]
-    inline def createVariableDeclaration(name: BindingName, `type`: Unit, initializer: Expression): VariableDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createVariableDeclaration")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration]
-    inline def createVariableDeclaration(name: BindingName, `type`: TypeNode): VariableDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createVariableDeclaration")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration]
-    inline def createVariableDeclaration(name: BindingName, `type`: TypeNode, initializer: Expression): VariableDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("createVariableDeclaration")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration]
-    
-    /** @deprecated Use `factory.createVariableDeclarationList` or the factory supplied by your transformation context instead. */
-    inline def createVariableDeclarationList(declarations: js.Array[VariableDeclaration]): VariableDeclarationList = ^.asInstanceOf[js.Dynamic].applyDynamic("createVariableDeclarationList")(declarations.asInstanceOf[js.Any]).asInstanceOf[VariableDeclarationList]
-    inline def createVariableDeclarationList(declarations: js.Array[VariableDeclaration], flags: NodeFlags): VariableDeclarationList = (^.asInstanceOf[js.Dynamic].applyDynamic("createVariableDeclarationList")(declarations.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[VariableDeclarationList]
-    
-    inline def createVariableStatement(modifiers: js.Array[Modifier], declarationList: js.Array[VariableDeclaration]): VariableStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("createVariableStatement")(modifiers.asInstanceOf[js.Any], declarationList.asInstanceOf[js.Any])).asInstanceOf[VariableStatement]
-    /** @deprecated Use `factory.createVariableStatement` or the factory supplied by your transformation context instead. */
-    inline def createVariableStatement(modifiers: js.Array[Modifier], declarationList: VariableDeclarationList): VariableStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("createVariableStatement")(modifiers.asInstanceOf[js.Any], declarationList.asInstanceOf[js.Any])).asInstanceOf[VariableStatement]
-    inline def createVariableStatement(modifiers: Unit, declarationList: js.Array[VariableDeclaration]): VariableStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("createVariableStatement")(modifiers.asInstanceOf[js.Any], declarationList.asInstanceOf[js.Any])).asInstanceOf[VariableStatement]
-    inline def createVariableStatement(modifiers: Unit, declarationList: VariableDeclarationList): VariableStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("createVariableStatement")(modifiers.asInstanceOf[js.Any], declarationList.asInstanceOf[js.Any])).asInstanceOf[VariableStatement]
-    
-    /** @deprecated Use `factory.createVoidExpression` or the factory supplied by your transformation context instead. */
-    inline def createVoid(expression: Expression): VoidExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createVoid")(expression.asInstanceOf[js.Any]).asInstanceOf[VoidExpression]
-    
-    /** @deprecated Use `factory.createVoidZero` or the factory supplied by your transformation context instead. */
-    inline def createVoidZero(): VoidExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createVoidZero")().asInstanceOf[VoidExpression]
     
     /**
       * Create the watch compiler host for either configFile or fileNames and its options
@@ -6024,19 +1674,6 @@ object libTypescriptWorkerLibTypescriptMod {
       */
     inline def createWatchProgram[T /* <: BuilderProgram */](host: WatchCompilerHostOfFilesAndCompilerOptions[T]): WatchOfFilesAndCompilerOptions[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWatchProgram")(host.asInstanceOf[js.Any]).asInstanceOf[WatchOfFilesAndCompilerOptions[T]]
     
-    /** @deprecated Use `factory.createWhileStatement` or the factory supplied by your transformation context instead. */
-    inline def createWhile(expression: Expression, statement: Statement): WhileStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("createWhile")(expression.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[WhileStatement]
-    
-    /** @deprecated Use `factory.createWithStatement` or the factory supplied by your transformation context instead. */
-    inline def createWith(expression: Expression, statement: Statement): WithStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("createWith")(expression.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[WithStatement]
-    
-    /** @deprecated Use `factory.createYield` or the factory supplied by your transformation context instead. */
-    inline def createYield(): YieldExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createYield")().asInstanceOf[YieldExpression]
-    inline def createYield(asteriskToken: Unit, expression: Expression): YieldExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createYield")(asteriskToken.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[YieldExpression]
-    /** @deprecated Use `factory.createYield` or the factory supplied by your transformation context instead. */
-    inline def createYield(asteriskToken: AsteriskToken, expression: Expression): YieldExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createYield")(asteriskToken.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[YieldExpression]
-    inline def createYield(expression: Expression): YieldExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createYield")(expression.asInstanceOf[js.Any]).asInstanceOf[YieldExpression]
-    
     inline def decodedTextSpanIntersectsWith(start1: Double, length1: Double, start2: Double, length2: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("decodedTextSpanIntersectsWith")(start1.asInstanceOf[js.Any], length1.asInstanceOf[js.Any], start2.asInstanceOf[js.Any], length2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     inline def displayPartsToString(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("displayPartsToString")().asInstanceOf[String]
@@ -6078,6 +1715,19 @@ object libTypescriptWorkerLibTypescriptMod {
     inline def flattenDiagnosticMessageText(diag: DiagnosticMessageChain, newLine: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("flattenDiagnosticMessageText")(diag.asInstanceOf[js.Any], newLine.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def flattenDiagnosticMessageText(diag: DiagnosticMessageChain, newLine: String, indent: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("flattenDiagnosticMessageText")(diag.asInstanceOf[js.Any], newLine.asInstanceOf[js.Any], indent.asInstanceOf[js.Any])).asInstanceOf[String]
     
+    /**
+      * Invokes a callback for each child of the given node. The 'cbNode' callback is invoked for all child nodes
+      * stored in properties. If a 'cbNodes' callback is specified, it is invoked for embedded arrays; otherwise,
+      * embedded arrays are flattened and the 'cbNode' callback is invoked for each element. If a callback returns
+      * a truthy value, iteration stops and that value is returned. Otherwise, undefined is returned.
+      *
+      * @param node a given node to visit its children
+      * @param cbNode a callback to be invoked for all child nodes
+      * @param cbNodes a callback to be invoked for embedded array
+      *
+      * @remarks `forEachChild` must visit the children of a node in the order
+      * that they appear in the source code. The language service depends on this property to locate nodes by position.
+      */
     inline def forEachChild[T](node: Node, cbNode: js.Function1[/* node */ Node, js.UndefOr[T]]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachChild")(node.asInstanceOf[js.Any], cbNode.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
     inline def forEachChild[T](
       node: Node,
@@ -6147,6 +1797,14 @@ object libTypescriptWorkerLibTypescriptMod {
     /** Gets all JSDoc tags of a specified kind */
     inline def getAllJSDocTagsOfKind(node: Node, kind: SyntaxKind): js.Array[JSDocTag] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllJSDocTagsOfKind")(node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[js.Array[JSDocTag]]
     
+    /**
+      * Given a set of options, returns the set of type directive names
+      *   that should be included for this program automatically.
+      * This list could either come from the config file,
+      *   or from enumerating the types root + initial secondary types lookup location.
+      * More type directives might appear in the program later as a result of loading actual source files;
+      *   this list is only the set of defaults that are implicitly included.
+      */
     inline def getAutomaticTypeDirectiveNames(options: CompilerOptions, host: ModuleResolutionHost): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAutomaticTypeDirectiveNames")(options.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     inline def getCombinedModifierFlags(node: Declaration): ModifierFlags = ^.asInstanceOf[js.Dynamic].applyDynamic("getCombinedModifierFlags")(node.asInstanceOf[js.Any]).asInstanceOf[ModifierFlags]
@@ -6202,17 +1860,23 @@ object libTypescriptWorkerLibTypescriptMod {
       */
     inline def getEmitHelpers(node: Node): js.UndefOr[js.Array[EmitHelper]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEmitHelpers")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[EmitHelper]]]
     
-    /** @deprecated Use `factory.getGeneratedNameForNode` or the factory supplied by your transformation context instead. */
-    inline def getGeneratedNameForNode(): Identifier = ^.asInstanceOf[js.Dynamic].applyDynamic("getGeneratedNameForNode")().asInstanceOf[Identifier]
-    inline def getGeneratedNameForNode(node: Node): Identifier = ^.asInstanceOf[js.Dynamic].applyDynamic("getGeneratedNameForNode")(node.asInstanceOf[js.Any]).asInstanceOf[Identifier]
-    
-    inline def getImpliedNodeFormatForFile(fileName: Path, packageJsonInfoCache: Unit, host: ModuleResolutionHost, options: CompilerOptions): js.UndefOr[ESNext | CommonJS] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImpliedNodeFormatForFile")(fileName.asInstanceOf[js.Any], packageJsonInfoCache.asInstanceOf[js.Any], host.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ESNext | CommonJS]]
+    inline def getImpliedNodeFormatForFile(fileName: Path, packageJsonInfoCache: Unit, host: ModuleResolutionHost, options: CompilerOptions): ResolutionMode = (^.asInstanceOf[js.Dynamic].applyDynamic("getImpliedNodeFormatForFile")(fileName.asInstanceOf[js.Any], packageJsonInfoCache.asInstanceOf[js.Any], host.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ResolutionMode]
+    /**
+      * A function for determining if a given file is esm or cjs format, assuming modern node module resolution rules, as configured by the
+      * `options` parameter.
+      *
+      * @param fileName The normalized absolute path to check the format of (it need not exist on disk)
+      * @param [packageJsonInfoCache] A cache for package file lookups - it's best to have a cache when this function is called often
+      * @param host The ModuleResolutionHost which can perform the filesystem lookups for package json data
+      * @param options The compiler options to perform the analysis under - relevant options are `moduleResolution` and `traceResolution`
+      * @returns `undefined` if the path has no relevant implied format, `ModuleKind.ESNext` for esm format, and `ModuleKind.CommonJS` for cjs format
+      */
     inline def getImpliedNodeFormatForFile(
       fileName: Path,
       packageJsonInfoCache: PackageJsonInfoCache,
       host: ModuleResolutionHost,
       options: CompilerOptions
-    ): js.UndefOr[ESNext | CommonJS] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImpliedNodeFormatForFile")(fileName.asInstanceOf[js.Any], packageJsonInfoCache.asInstanceOf[js.Any], host.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ESNext | CommonJS]]
+    ): ResolutionMode = (^.asInstanceOf[js.Dynamic].applyDynamic("getImpliedNodeFormatForFile")(fileName.asInstanceOf[js.Any], packageJsonInfoCache.asInstanceOf[js.Any], host.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ResolutionMode]
     
     /** Gets the JSDoc augments tag for the node if present */
     inline def getJSDocAugmentsTag(node: Node): js.UndefOr[JSDocAugmentsTag] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJSDocAugmentsTag")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[JSDocAugmentsTag]]
@@ -6268,6 +1932,8 @@ object libTypescriptWorkerLibTypescriptMod {
       */
     inline def getJSDocReturnType(node: Node): js.UndefOr[TypeNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJSDocReturnType")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[TypeNode]]
     
+    inline def getJSDocSatisfiesTag(node: Node): js.UndefOr[JSDocSatisfiesTag] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJSDocSatisfiesTag")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[JSDocSatisfiesTag]]
+    
     /** Get all JSDoc tags related to a node, including those on parent nodes. */
     inline def getJSDocTags(node: Node): js.Array[JSDocTag] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJSDocTags")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[JSDocTag]]
     
@@ -6309,28 +1975,34 @@ object libTypescriptWorkerLibTypescriptMod {
     
     inline def getLineAndCharacterOfPosition(sourceFile: SourceFileLike, position: Double): LineAndCharacter = (^.asInstanceOf[js.Dynamic].applyDynamic("getLineAndCharacterOfPosition")(sourceFile.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[LineAndCharacter]
     
-    inline def getModeForFileReference(ref: String): js.UndefOr[CommonJS | ESNext] = ^.asInstanceOf[js.Dynamic].applyDynamic("getModeForFileReference")(ref.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[CommonJS | ESNext]]
-    inline def getModeForFileReference(ref: String, containingFileMode: CommonJS): js.UndefOr[CommonJS | ESNext] = (^.asInstanceOf[js.Dynamic].applyDynamic("getModeForFileReference")(ref.asInstanceOf[js.Any], containingFileMode.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[CommonJS | ESNext]]
-    inline def getModeForFileReference(ref: String, containingFileMode: ESNext): js.UndefOr[CommonJS | ESNext] = (^.asInstanceOf[js.Dynamic].applyDynamic("getModeForFileReference")(ref.asInstanceOf[js.Any], containingFileMode.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[CommonJS | ESNext]]
-    inline def getModeForFileReference(ref: FileReference): js.UndefOr[CommonJS | ESNext] = ^.asInstanceOf[js.Dynamic].applyDynamic("getModeForFileReference")(ref.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[CommonJS | ESNext]]
-    inline def getModeForFileReference(ref: FileReference, containingFileMode: CommonJS): js.UndefOr[CommonJS | ESNext] = (^.asInstanceOf[js.Dynamic].applyDynamic("getModeForFileReference")(ref.asInstanceOf[js.Any], containingFileMode.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[CommonJS | ESNext]]
-    inline def getModeForFileReference(ref: FileReference, containingFileMode: ESNext): js.UndefOr[CommonJS | ESNext] = (^.asInstanceOf[js.Dynamic].applyDynamic("getModeForFileReference")(ref.asInstanceOf[js.Any], containingFileMode.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[CommonJS | ESNext]]
+    inline def getModeForFileReference(ref: String, containingFileMode: ResolutionMode): ResolutionMode = (^.asInstanceOf[js.Dynamic].applyDynamic("getModeForFileReference")(ref.asInstanceOf[js.Any], containingFileMode.asInstanceOf[js.Any])).asInstanceOf[ResolutionMode]
+    /**
+      * Calculates the resulting resolution mode for some reference in some file - this is generally the explicitly
+      * provided resolution mode in the reference, unless one is not present, in which case it is the mode of the containing file.
+      */
+    inline def getModeForFileReference(ref: FileReference, containingFileMode: ResolutionMode): ResolutionMode = (^.asInstanceOf[js.Dynamic].applyDynamic("getModeForFileReference")(ref.asInstanceOf[js.Any], containingFileMode.asInstanceOf[js.Any])).asInstanceOf[ResolutionMode]
     
-    inline def getModeForResolutionAtIndex(file: SourceFile, index: Double): js.UndefOr[CommonJS | ESNext] = (^.asInstanceOf[js.Dynamic].applyDynamic("getModeForResolutionAtIndex")(file.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[CommonJS | ESNext]]
+    /**
+      * Calculates the final resolution mode for an import at some index within a file's imports list. This is generally the explicitly
+      * defined mode of the import if provided, or, if not, the mode of the containing file (with some exceptions: import=require is always commonjs, dynamic import is always esm).
+      * If you have an actual import node, prefer using getModeForUsageLocation on the reference string node.
+      * @param file File to fetch the resolution mode within
+      * @param index Index into the file's complete resolution list to get the resolution of - this is a concatenation of the file's imports and module augmentations
+      */
+    inline def getModeForResolutionAtIndex(file: SourceFile, index: Double): ResolutionMode = (^.asInstanceOf[js.Dynamic].applyDynamic("getModeForResolutionAtIndex")(file.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[ResolutionMode]
     
+    /**
+      * Calculates the final resolution mode for a given module reference node. This is generally the explicitly provided resolution mode, if
+      * one exists, or the mode of the containing source file. (Excepting import=require, which is always commonjs, and dynamic import, which is always esm).
+      * Notably, this function always returns `undefined` if the containing file has an `undefined` `impliedNodeFormat` - this field is only set when
+      * `moduleResolution` is `node16`+.
+      * @param file The file the import or import-like reference is contained within
+      * @param usage The module reference string
+      * @returns The final resolution mode of the import
+      */
     inline def getModeForUsageLocation(file: ImpliedNodeFormat, usage: StringLiteralLike): js.UndefOr[CommonJS | ESNext] = (^.asInstanceOf[js.Dynamic].applyDynamic("getModeForUsageLocation")(file.asInstanceOf[js.Any], usage.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[CommonJS | ESNext]]
     
     inline def getModifiers(node: HasModifiers): js.UndefOr[js.Array[Modifier]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getModifiers")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[Modifier]]]
-    
-    /**
-      * Creates a shallow, memberwise clone of a node ~for mutation~ with its `pos`, `end`, and `parent` set.
-      *
-      * NOTE: It is unsafe to change any properties of a `Node` that relate to its AST children, as those changes won't be
-      * captured with respect to transformations.
-      *
-      * @deprecated Use an appropriate `factory.update...` method instead, use `setCommentRange` or `setSourceMapRange`, and avoid setting `parent`.
-      */
-    inline def getMutableClone[T /* <: Node */](node: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("getMutableClone")(node.asInstanceOf[js.Any]).asInstanceOf[T]
     
     inline def getNameOfDeclaration(): js.UndefOr[DeclarationName] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNameOfDeclaration")().asInstanceOf[js.UndefOr[DeclarationName]]
     inline def getNameOfDeclaration(declaration: Declaration): js.UndefOr[DeclarationName] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNameOfDeclaration")(declaration.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[DeclarationName]]
@@ -6338,12 +2010,10 @@ object libTypescriptWorkerLibTypescriptMod {
     
     inline def getNameOfJSDocTypedef(declaration: JSDocTypedefTag): js.UndefOr[Identifier | PrivateIdentifier] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNameOfJSDocTypedef")(declaration.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Identifier | PrivateIdentifier]]
     
-    inline def getNodeMajorVersion(): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeMajorVersion")().asInstanceOf[js.UndefOr[Double]]
-    
     inline def getOriginalNode(): js.UndefOr[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOriginalNode")().asInstanceOf[js.UndefOr[Node]]
     inline def getOriginalNode(node: Node): js.UndefOr[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOriginalNode")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Node]]
-    inline def getOriginalNode[T /* <: Node */](node: Unit, nodeTest: js.Function1[/* node */ js.UndefOr[Node], /* is T */ Boolean]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOriginalNode")(node.asInstanceOf[js.Any], nodeTest.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-    inline def getOriginalNode[T /* <: Node */](node: Node, nodeTest: js.Function1[/* node */ js.UndefOr[Node], /* is T */ Boolean]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOriginalNode")(node.asInstanceOf[js.Any], nodeTest.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+    inline def getOriginalNode[T /* <: Node */](node: Unit, nodeTest: js.Function1[/* node */ Node, /* is T */ Boolean]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOriginalNode")(node.asInstanceOf[js.Any], nodeTest.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+    inline def getOriginalNode[T /* <: Node */](node: Node, nodeTest: js.Function1[/* node */ Node, /* is T */ Boolean]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOriginalNode")(node.asInstanceOf[js.Any], nodeTest.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
     
     inline def getOriginalNode_Node(node: Node): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("getOriginalNode")(node.asInstanceOf[js.Any]).asInstanceOf[Node]
     
@@ -6400,13 +2070,13 @@ object libTypescriptWorkerLibTypescriptMod {
       configFileName: String,
       optionsToExtend: Unit,
       host: ParseConfigFileHost,
-      extendedConfigCache: Map[ExtendedConfigCacheEntry]
+      extendedConfigCache: Map[String, ExtendedConfigCacheEntry]
     ): js.UndefOr[ParsedCommandLine] = (^.asInstanceOf[js.Dynamic].applyDynamic("getParsedCommandLineOfConfigFile")(configFileName.asInstanceOf[js.Any], optionsToExtend.asInstanceOf[js.Any], host.asInstanceOf[js.Any], extendedConfigCache.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ParsedCommandLine]]
     inline def getParsedCommandLineOfConfigFile(
       configFileName: String,
       optionsToExtend: Unit,
       host: ParseConfigFileHost,
-      extendedConfigCache: Map[ExtendedConfigCacheEntry],
+      extendedConfigCache: Map[String, ExtendedConfigCacheEntry],
       watchOptionsToExtend: Unit,
       extraFileExtensions: js.Array[FileExtensionInfo]
     ): js.UndefOr[ParsedCommandLine] = (^.asInstanceOf[js.Dynamic].applyDynamic("getParsedCommandLineOfConfigFile")(configFileName.asInstanceOf[js.Any], optionsToExtend.asInstanceOf[js.Any], host.asInstanceOf[js.Any], extendedConfigCache.asInstanceOf[js.Any], watchOptionsToExtend.asInstanceOf[js.Any], extraFileExtensions.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ParsedCommandLine]]
@@ -6414,17 +2084,20 @@ object libTypescriptWorkerLibTypescriptMod {
       configFileName: String,
       optionsToExtend: Unit,
       host: ParseConfigFileHost,
-      extendedConfigCache: Map[ExtendedConfigCacheEntry],
+      extendedConfigCache: Map[String, ExtendedConfigCacheEntry],
       watchOptionsToExtend: WatchOptions
     ): js.UndefOr[ParsedCommandLine] = (^.asInstanceOf[js.Dynamic].applyDynamic("getParsedCommandLineOfConfigFile")(configFileName.asInstanceOf[js.Any], optionsToExtend.asInstanceOf[js.Any], host.asInstanceOf[js.Any], extendedConfigCache.asInstanceOf[js.Any], watchOptionsToExtend.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ParsedCommandLine]]
     inline def getParsedCommandLineOfConfigFile(
       configFileName: String,
       optionsToExtend: Unit,
       host: ParseConfigFileHost,
-      extendedConfigCache: Map[ExtendedConfigCacheEntry],
+      extendedConfigCache: Map[String, ExtendedConfigCacheEntry],
       watchOptionsToExtend: WatchOptions,
       extraFileExtensions: js.Array[FileExtensionInfo]
     ): js.UndefOr[ParsedCommandLine] = (^.asInstanceOf[js.Dynamic].applyDynamic("getParsedCommandLineOfConfigFile")(configFileName.asInstanceOf[js.Any], optionsToExtend.asInstanceOf[js.Any], host.asInstanceOf[js.Any], extendedConfigCache.asInstanceOf[js.Any], watchOptionsToExtend.asInstanceOf[js.Any], extraFileExtensions.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ParsedCommandLine]]
+    /**
+      * Reads the config file, reports errors if any and exits if the config file cannot be found
+      */
     inline def getParsedCommandLineOfConfigFile(configFileName: String, optionsToExtend: CompilerOptions, host: ParseConfigFileHost): js.UndefOr[ParsedCommandLine] = (^.asInstanceOf[js.Dynamic].applyDynamic("getParsedCommandLineOfConfigFile")(configFileName.asInstanceOf[js.Any], optionsToExtend.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ParsedCommandLine]]
     inline def getParsedCommandLineOfConfigFile(
       configFileName: String,
@@ -6453,13 +2126,13 @@ object libTypescriptWorkerLibTypescriptMod {
       configFileName: String,
       optionsToExtend: CompilerOptions,
       host: ParseConfigFileHost,
-      extendedConfigCache: Map[ExtendedConfigCacheEntry]
+      extendedConfigCache: Map[String, ExtendedConfigCacheEntry]
     ): js.UndefOr[ParsedCommandLine] = (^.asInstanceOf[js.Dynamic].applyDynamic("getParsedCommandLineOfConfigFile")(configFileName.asInstanceOf[js.Any], optionsToExtend.asInstanceOf[js.Any], host.asInstanceOf[js.Any], extendedConfigCache.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ParsedCommandLine]]
     inline def getParsedCommandLineOfConfigFile(
       configFileName: String,
       optionsToExtend: CompilerOptions,
       host: ParseConfigFileHost,
-      extendedConfigCache: Map[ExtendedConfigCacheEntry],
+      extendedConfigCache: Map[String, ExtendedConfigCacheEntry],
       watchOptionsToExtend: Unit,
       extraFileExtensions: js.Array[FileExtensionInfo]
     ): js.UndefOr[ParsedCommandLine] = (^.asInstanceOf[js.Dynamic].applyDynamic("getParsedCommandLineOfConfigFile")(configFileName.asInstanceOf[js.Any], optionsToExtend.asInstanceOf[js.Any], host.asInstanceOf[js.Any], extendedConfigCache.asInstanceOf[js.Any], watchOptionsToExtend.asInstanceOf[js.Any], extraFileExtensions.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ParsedCommandLine]]
@@ -6467,14 +2140,14 @@ object libTypescriptWorkerLibTypescriptMod {
       configFileName: String,
       optionsToExtend: CompilerOptions,
       host: ParseConfigFileHost,
-      extendedConfigCache: Map[ExtendedConfigCacheEntry],
+      extendedConfigCache: Map[String, ExtendedConfigCacheEntry],
       watchOptionsToExtend: WatchOptions
     ): js.UndefOr[ParsedCommandLine] = (^.asInstanceOf[js.Dynamic].applyDynamic("getParsedCommandLineOfConfigFile")(configFileName.asInstanceOf[js.Any], optionsToExtend.asInstanceOf[js.Any], host.asInstanceOf[js.Any], extendedConfigCache.asInstanceOf[js.Any], watchOptionsToExtend.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ParsedCommandLine]]
     inline def getParsedCommandLineOfConfigFile(
       configFileName: String,
       optionsToExtend: CompilerOptions,
       host: ParseConfigFileHost,
-      extendedConfigCache: Map[ExtendedConfigCacheEntry],
+      extendedConfigCache: Map[String, ExtendedConfigCacheEntry],
       watchOptionsToExtend: WatchOptions,
       extraFileExtensions: js.Array[FileExtensionInfo]
     ): js.UndefOr[ParsedCommandLine] = (^.asInstanceOf[js.Dynamic].applyDynamic("getParsedCommandLineOfConfigFile")(configFileName.asInstanceOf[js.Any], optionsToExtend.asInstanceOf[js.Any], host.asInstanceOf[js.Any], extendedConfigCache.asInstanceOf[js.Any], watchOptionsToExtend.asInstanceOf[js.Any], extraFileExtensions.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ParsedCommandLine]]
@@ -6534,7 +2207,15 @@ object libTypescriptWorkerLibTypescriptMod {
     inline def idText(identifierOrPrivateName: Identifier): String = ^.asInstanceOf[js.Dynamic].applyDynamic("idText")(identifierOrPrivateName.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def idText(identifierOrPrivateName: PrivateIdentifier): String = ^.asInstanceOf[js.Dynamic].applyDynamic("idText")(identifierOrPrivateName.asInstanceOf[js.Any]).asInstanceOf[String]
     
+    /**
+      * If the text of an Identifier matches a keyword (including contextual and TypeScript-specific keywords), returns the
+      * SyntaxKind for the matching keyword.
+      */
+    inline def identifierToKeywordKind(node: Identifier): js.UndefOr[KeywordSyntaxKind] = ^.asInstanceOf[js.Dynamic].applyDynamic("identifierToKeywordKind")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[KeywordSyntaxKind]]
+    
     inline def isAccessor(node: Node): /* is typescript.typescript.AccessorDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAccessor")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.AccessorDeclaration */ Boolean]
+    
+    inline def isArrayBindingElement(node: Node): /* is typescript.typescript.ArrayBindingElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArrayBindingElement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ArrayBindingElement */ Boolean]
     
     inline def isArrayBindingPattern(node: Node): /* is typescript.typescript.ArrayBindingPattern */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArrayBindingPattern")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ArrayBindingPattern */ Boolean]
     
@@ -6554,15 +2235,21 @@ object libTypescriptWorkerLibTypescriptMod {
     
     inline def isAssertionKey(node: Node): /* is typescript.typescript.AssertionKey */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAssertionKey")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.AssertionKey */ Boolean]
     
+    inline def isAssertsKeyword(node: Node): /* is typescript.typescript.AssertsKeyword */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAssertsKeyword")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.AssertsKeyword */ Boolean]
+    
     inline def isAsteriskToken(node: Node): /* is typescript.typescript.AsteriskToken */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAsteriskToken")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.AsteriskToken */ Boolean]
     
     inline def isAutoAccessorPropertyDeclaration(node: Node): /* is typescript.typescript.AutoAccessorPropertyDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAutoAccessorPropertyDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.AutoAccessorPropertyDeclaration */ Boolean]
     
     inline def isAwaitExpression(node: Node): /* is typescript.typescript.AwaitExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAwaitExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.AwaitExpression */ Boolean]
     
+    inline def isAwaitKeyword(node: Node): /* is typescript.typescript.AwaitKeyword */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAwaitKeyword")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.AwaitKeyword */ Boolean]
+    
     inline def isBigIntLiteral(node: Node): /* is typescript.typescript.BigIntLiteral */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBigIntLiteral")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.BigIntLiteral */ Boolean]
     
     inline def isBinaryExpression(node: Node): /* is typescript.typescript.BinaryExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinaryExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.BinaryExpression */ Boolean]
+    
+    inline def isBinaryOperatorToken(node: Node): /* is typescript.typescript.BinaryOperatorToken */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinaryOperatorToken")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.BinaryOperatorToken */ Boolean]
     
     inline def isBindingElement(node: Node): /* is typescript.typescript.BindingElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBindingElement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.BindingElement */ Boolean]
     
@@ -6606,9 +2293,13 @@ object libTypescriptWorkerLibTypescriptMod {
     
     inline def isClassStaticBlockDeclaration(node: Node): /* is typescript.typescript.ClassStaticBlockDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isClassStaticBlockDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ClassStaticBlockDeclaration */ Boolean]
     
+    inline def isColonToken(node: Node): /* is typescript.typescript.ColonToken */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isColonToken")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ColonToken */ Boolean]
+    
     inline def isCommaListExpression(node: Node): /* is typescript.typescript.CommaListExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCommaListExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.CommaListExpression */ Boolean]
     
     inline def isComputedPropertyName(node: Node): /* is typescript.typescript.ComputedPropertyName */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isComputedPropertyName")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ComputedPropertyName */ Boolean]
+    
+    inline def isConciseBody(node: Node): /* is typescript.typescript.ConciseBody */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConciseBody")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ConciseBody */ Boolean]
     
     inline def isConditionalExpression(node: Node): /* is typescript.typescript.ConditionalExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConditionalExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ConditionalExpression */ Boolean]
     
@@ -6640,6 +2331,7 @@ object libTypescriptWorkerLibTypescriptMod {
     
     inline def isElementAccessExpression(node: Node): /* is typescript.typescript.ElementAccessExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElementAccessExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ElementAccessExpression */ Boolean]
     
+    inline def isEmptyBindingElement(node: ArrayBindingElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyBindingElement")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     inline def isEmptyBindingElement(node: BindingElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyBindingElement")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     inline def isEmptyBindingPattern(node: BindingName): /* is typescript.typescript.BindingPattern */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyBindingPattern")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.BindingPattern */ Boolean]
@@ -6652,11 +2344,20 @@ object libTypescriptWorkerLibTypescriptMod {
     
     inline def isEnumMember(node: Node): /* is typescript.typescript.EnumMember */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnumMember")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.EnumMember */ Boolean]
     
+    inline def isEqualsGreaterThanToken(node: Node): /* is typescript.typescript.EqualsGreaterThanToken */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEqualsGreaterThanToken")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.EqualsGreaterThanToken */ Boolean]
+    
+    inline def isExclamationToken(node: Node): /* is typescript.typescript.ExclamationToken */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExclamationToken")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ExclamationToken */ Boolean]
+    
     inline def isExportAssignment(node: Node): /* is typescript.typescript.ExportAssignment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExportAssignment")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ExportAssignment */ Boolean]
     
     inline def isExportDeclaration(node: Node): /* is typescript.typescript.ExportDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExportDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ExportDeclaration */ Boolean]
     
     inline def isExportSpecifier(node: Node): /* is typescript.typescript.ExportSpecifier */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExportSpecifier")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ExportSpecifier */ Boolean]
+    
+    /**
+      * Determines whether a node is an expression based only on its kind.
+      */
+    inline def isExpression(node: Node): /* is typescript.typescript.Expression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.Expression */ Boolean]
     
     inline def isExpressionStatement(node: Node): /* is typescript.typescript.ExpressionStatement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExpressionStatement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ExpressionStatement */ Boolean]
     
@@ -6669,6 +2370,8 @@ object libTypescriptWorkerLibTypescriptMod {
     inline def isExternalModuleReference(node: Node): /* is typescript.typescript.ExternalModuleReference */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExternalModuleReference")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ExternalModuleReference */ Boolean]
     
     inline def isForInStatement(node: Node): /* is typescript.typescript.ForInStatement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isForInStatement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ForInStatement */ Boolean]
+    
+    inline def isForInitializer(node: Node): /* is typescript.typescript.ForInitializer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isForInitializer")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ForInitializer */ Boolean]
     
     inline def isForOfStatement(node: Node): /* is typescript.typescript.ForOfStatement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isForOfStatement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ForOfStatement */ Boolean]
     
@@ -6693,10 +2396,7 @@ object libTypescriptWorkerLibTypescriptMod {
     
     inline def isIdentifier(node: Node): /* is typescript.typescript.Identifier */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIdentifier")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.Identifier */ Boolean]
     
-    /**
-      * @deprecated Use `isMemberName` instead.
-      */
-    inline def isIdentifierOrPrivateIdentifier(node: Node): /* is typescript.typescript.MemberName */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIdentifierOrPrivateIdentifier")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.MemberName */ Boolean]
+    inline def isIdentifierOrThisTypeNode(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIdentifierOrThisTypeNode")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     inline def isIdentifierPart(ch: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIdentifierPart")(ch.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     inline def isIdentifierPart(ch: Double, languageVersion: Unit, identifierVariant: LanguageVariant): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIdentifierPart")(ch.asInstanceOf[js.Any], languageVersion.asInstanceOf[js.Any], identifierVariant.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -6779,6 +2479,8 @@ object libTypescriptWorkerLibTypescriptMod {
     
     inline def isJSDocOptionalType(node: Node): /* is typescript.typescript.JSDocOptionalType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJSDocOptionalType")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JSDocOptionalType */ Boolean]
     
+    inline def isJSDocOverloadTag(node: Node): /* is typescript.typescript.JSDocOverloadTag */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJSDocOverloadTag")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JSDocOverloadTag */ Boolean]
+    
     inline def isJSDocOverrideTag(node: Node): /* is typescript.typescript.JSDocOverrideTag */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJSDocOverrideTag")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JSDocOverrideTag */ Boolean]
     
     inline def isJSDocParameterTag(node: Node): /* is typescript.typescript.JSDocParameterTag */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJSDocParameterTag")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JSDocParameterTag */ Boolean]
@@ -6797,6 +2499,8 @@ object libTypescriptWorkerLibTypescriptMod {
     
     inline def isJSDocReturnTag(node: Node): /* is typescript.typescript.JSDocReturnTag */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJSDocReturnTag")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JSDocReturnTag */ Boolean]
     
+    inline def isJSDocSatisfiesTag(node: Node): /* is typescript.typescript.JSDocSatisfiesTag */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJSDocSatisfiesTag")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JSDocSatisfiesTag */ Boolean]
+    
     inline def isJSDocSeeTag(node: Node): /* is typescript.typescript.JSDocSeeTag */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJSDocSeeTag")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JSDocSeeTag */ Boolean]
     
     inline def isJSDocSignature(node: Node): /* is typescript.typescript.JSDocSignature */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJSDocSignature")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JSDocSignature */ Boolean]
@@ -6804,6 +2508,8 @@ object libTypescriptWorkerLibTypescriptMod {
     inline def isJSDocTemplateTag(node: Node): /* is typescript.typescript.JSDocTemplateTag */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJSDocTemplateTag")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JSDocTemplateTag */ Boolean]
     
     inline def isJSDocThisTag(node: Node): /* is typescript.typescript.JSDocThisTag */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJSDocThisTag")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JSDocThisTag */ Boolean]
+    
+    inline def isJSDocThrowsTag(node: Node): /* is typescript.typescript.JSDocThrowsTag */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJSDocThrowsTag")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JSDocThrowsTag */ Boolean]
     
     inline def isJSDocTypeExpression(node: Node): /* is typescript.typescript.JSDocTypeExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJSDocTypeExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JSDocTypeExpression */ Boolean]
     
@@ -6821,7 +2527,11 @@ object libTypescriptWorkerLibTypescriptMod {
     
     inline def isJsxAttribute(node: Node): /* is typescript.typescript.JsxAttribute */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJsxAttribute")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JsxAttribute */ Boolean]
     
+    inline def isJsxAttributeLike(node: Node): /* is typescript.typescript.JsxAttributeLike */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJsxAttributeLike")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JsxAttributeLike */ Boolean]
+    
     inline def isJsxAttributes(node: Node): /* is typescript.typescript.JsxAttributes */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJsxAttributes")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JsxAttributes */ Boolean]
+    
+    inline def isJsxChild(node: Node): /* is typescript.typescript.JsxChild */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJsxChild")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JsxChild */ Boolean]
     
     inline def isJsxClosingElement(node: Node): /* is typescript.typescript.JsxClosingElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJsxClosingElement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JsxClosingElement */ Boolean]
     
@@ -6843,13 +2553,19 @@ object libTypescriptWorkerLibTypescriptMod {
     
     inline def isJsxSpreadAttribute(node: Node): /* is typescript.typescript.JsxSpreadAttribute */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJsxSpreadAttribute")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JsxSpreadAttribute */ Boolean]
     
+    inline def isJsxTagNameExpression(node: Node): /* is typescript.typescript.JsxTagNameExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJsxTagNameExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JsxTagNameExpression */ Boolean]
+    
     inline def isJsxText(node: Node): /* is typescript.typescript.JsxText */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJsxText")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JsxText */ Boolean]
     
     inline def isLabeledStatement(node: Node): /* is typescript.typescript.LabeledStatement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLabeledStatement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.LabeledStatement */ Boolean]
     
+    inline def isLeftHandSideExpression(node: Node): /* is typescript.typescript.LeftHandSideExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLeftHandSideExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.LeftHandSideExpression */ Boolean]
+    
     inline def isLineBreak(ch: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLineBreak")(ch.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     inline def isLiteralExpression(node: Node): /* is typescript.typescript.LiteralExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLiteralExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.LiteralExpression */ Boolean]
+    
+    inline def isLiteralTypeLiteral(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLiteralTypeLiteral")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     inline def isLiteralTypeNode(node: Node): /* is typescript.typescript.LiteralTypeNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLiteralTypeNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.LiteralTypeNode */ Boolean]
     
@@ -6873,11 +2589,19 @@ object libTypescriptWorkerLibTypescriptMod {
     
     inline def isModuleBlock(node: Node): /* is typescript.typescript.ModuleBlock */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isModuleBlock")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ModuleBlock */ Boolean]
     
+    inline def isModuleBody(node: Node): /* is typescript.typescript.ModuleBody */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isModuleBody")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ModuleBody */ Boolean]
+    
     inline def isModuleDeclaration(node: Node): /* is typescript.typescript.ModuleDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isModuleDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ModuleDeclaration */ Boolean]
+    
+    inline def isModuleName(node: Node): /* is typescript.typescript.ModuleName */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isModuleName")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ModuleName */ Boolean]
+    
+    inline def isModuleReference(node: Node): /* is typescript.typescript.ModuleReference */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isModuleReference")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ModuleReference */ Boolean]
     
     inline def isNamedExportBindings(node: Node): /* is typescript.typescript.NamedExportBindings */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNamedExportBindings")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.NamedExportBindings */ Boolean]
     
     inline def isNamedExports(node: Node): /* is typescript.typescript.NamedExports */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNamedExports")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.NamedExports */ Boolean]
+    
+    inline def isNamedImportBindings(node: Node): /* is typescript.typescript.NamedImportBindings */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNamedImportBindings")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.NamedImportBindings */ Boolean]
     
     inline def isNamedImports(node: Node): /* is typescript.typescript.NamedImports */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNamedImports")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.NamedImports */ Boolean]
     
@@ -6958,6 +2682,16 @@ object libTypescriptWorkerLibTypescriptMod {
     
     inline def isQualifiedName(node: Node): /* is typescript.typescript.QualifiedName */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isQualifiedName")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.QualifiedName */ Boolean]
     
+    inline def isQuestionDotToken(node: Node): /* is typescript.typescript.QuestionDotToken */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isQuestionDotToken")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.QuestionDotToken */ Boolean]
+    
+    inline def isQuestionOrExclamationToken(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isQuestionOrExclamationToken")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    inline def isQuestionOrPlusOrMinusToken(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isQuestionOrPlusOrMinusToken")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    inline def isQuestionToken(node: Node): /* is typescript.typescript.QuestionToken */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isQuestionToken")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.QuestionToken */ Boolean]
+    
+    inline def isReadonlyKeywordOrPlusOrMinusToken(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReadonlyKeywordOrPlusOrMinusToken")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
     inline def isRegularExpressionLiteral(node: Node): /* is typescript.typescript.RegularExpressionLiteral */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRegularExpressionLiteral")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.RegularExpressionLiteral */ Boolean]
     
     inline def isRestParameter(node: JSDocParameterTag): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRestParameter")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
@@ -6983,9 +2717,14 @@ object libTypescriptWorkerLibTypescriptMod {
     
     inline def isSpreadElement(node: Node): /* is typescript.typescript.SpreadElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSpreadElement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.SpreadElement */ Boolean]
     
+    inline def isStatement(node: Node): /* is typescript.typescript.Statement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStatement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.Statement */ Boolean]
+    
     inline def isStringLiteral(node: Node): /* is typescript.typescript.StringLiteral */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStringLiteral")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.StringLiteral */ Boolean]
     
+    inline def isStringLiteralLike(node: FileReference): /* is typescript.typescript.StringLiteralLike */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStringLiteralLike")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.StringLiteralLike */ Boolean]
     inline def isStringLiteralLike(node: Node): /* is typescript.typescript.StringLiteralLike */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStringLiteralLike")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.StringLiteralLike */ Boolean]
+    
+    inline def isStringLiteralOrJsxExpression(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStringLiteralOrJsxExpression")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     inline def isStringTextContainingNode(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStringTextContainingNode")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
@@ -7039,9 +2778,6 @@ object libTypescriptWorkerLibTypescriptMod {
     
     inline def isTypeAliasDeclaration(node: Node): /* is typescript.typescript.TypeAliasDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeAliasDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.TypeAliasDeclaration */ Boolean]
     
-    /** @deprecated Use `isTypeAssertionExpression` instead. */
-    inline def isTypeAssertion(node: Node): /* is typescript.typescript.TypeAssertion */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeAssertion")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.TypeAssertion */ Boolean]
-    
     inline def isTypeAssertionExpression(node: Node): /* is typescript.typescript.TypeAssertion */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeAssertionExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.TypeAssertion */ Boolean]
     
     inline def isTypeElement(node: Node): /* is typescript.typescript.TypeElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeElement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.TypeElement */ Boolean]
@@ -7057,6 +2793,10 @@ object libTypescriptWorkerLibTypescriptMod {
     
     inline def isTypeOfExpression(node: Node): /* is typescript.typescript.TypeOfExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeOfExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.TypeOfExpression */ Boolean]
     
+    inline def isTypeOnlyExportDeclaration(node: Node): /* is typescript.typescript.TypeOnlyExportDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeOnlyExportDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.TypeOnlyExportDeclaration */ Boolean]
+    
+    inline def isTypeOnlyImportDeclaration(node: Node): /* is typescript.typescript.TypeOnlyImportDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeOnlyImportDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.TypeOnlyImportDeclaration */ Boolean]
+    
     inline def isTypeOnlyImportOrExportDeclaration(node: Node): /* is typescript.typescript.TypeOnlyAliasDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeOnlyImportOrExportDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.TypeOnlyAliasDeclaration */ Boolean]
     
     inline def isTypeOperatorNode(node: Node): /* is typescript.typescript.TypeOperatorNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeOperatorNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.TypeOperatorNode */ Boolean]
@@ -7071,12 +2811,16 @@ object libTypescriptWorkerLibTypescriptMod {
     
     inline def isUnionTypeNode(node: Node): /* is typescript.typescript.UnionTypeNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUnionTypeNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.UnionTypeNode */ Boolean]
     
+    /** @deprecated */
     inline def isUnparsedNode(node: Node): /* is typescript.typescript.UnparsedNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUnparsedNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.UnparsedNode */ Boolean]
     
+    /** @deprecated */
     inline def isUnparsedPrepend(node: Node): /* is typescript.typescript.UnparsedPrepend */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUnparsedPrepend")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.UnparsedPrepend */ Boolean]
     
+    /** @deprecated */
     inline def isUnparsedSource(node: Node): /* is typescript.typescript.UnparsedSource */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUnparsedSource")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.UnparsedSource */ Boolean]
     
+    /** @deprecated */
     inline def isUnparsedTextLike(node: Node): /* is typescript.typescript.UnparsedTextLike */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUnparsedTextLike")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.UnparsedTextLike */ Boolean]
     
     inline def isVariableDeclaration(node: Node): /* is typescript.typescript.VariableDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVariableDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.VariableDeclaration */ Boolean]
@@ -7138,10 +2882,22 @@ object libTypescriptWorkerLibTypescriptMod {
     inline def parseCommandLine(commandLine: js.Array[String]): ParsedCommandLine = ^.asInstanceOf[js.Dynamic].applyDynamic("parseCommandLine")(commandLine.asInstanceOf[js.Any]).asInstanceOf[ParsedCommandLine]
     inline def parseCommandLine(commandLine: js.Array[String], readFile: js.Function1[/* path */ String, js.UndefOr[String]]): ParsedCommandLine = (^.asInstanceOf[js.Dynamic].applyDynamic("parseCommandLine")(commandLine.asInstanceOf[js.Any], readFile.asInstanceOf[js.Any])).asInstanceOf[ParsedCommandLine]
     
+    /**
+      * Parse the text of the tsconfig.json file
+      * @param fileName The path to the config file
+      * @param jsonText The text of the config file
+      */
     inline def parseConfigFileTextToJson(fileName: String, jsonText: String): Config = (^.asInstanceOf[js.Dynamic].applyDynamic("parseConfigFileTextToJson")(fileName.asInstanceOf[js.Any], jsonText.asInstanceOf[js.Any])).asInstanceOf[Config]
     
     inline def parseIsolatedEntityName(text: String, languageVersion: ScriptTarget): js.UndefOr[EntityName] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseIsolatedEntityName")(text.asInstanceOf[js.Any], languageVersion.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[EntityName]]
     
+    /**
+      * Parse the contents of a config file (tsconfig.json).
+      * @param json The contents of the config file to parse
+      * @param host Instance of ParseConfigHost used to enumerate files in folder.
+      * @param basePath A root directory to resolve relative path entries in the config
+      *    file to. e.g. outDir
+      */
     inline def parseJsonConfigFileContent(
       json: Any,
       host: ParseConfigHost,
@@ -7150,10 +2906,17 @@ object libTypescriptWorkerLibTypescriptMod {
       configFileName: js.UndefOr[String],
       resolutionStack: js.UndefOr[js.Array[Path]],
       extraFileExtensions: js.UndefOr[js.Array[FileExtensionInfo]],
-      extendedConfigCache: js.UndefOr[Map[ExtendedConfigCacheEntry]],
+      extendedConfigCache: js.UndefOr[Map[String, ExtendedConfigCacheEntry]],
       existingWatchOptions: js.UndefOr[WatchOptions]
     ): ParsedCommandLine = (^.asInstanceOf[js.Dynamic].applyDynamic("parseJsonConfigFileContent")(json.asInstanceOf[js.Any], host.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any], existingOptions.asInstanceOf[js.Any], configFileName.asInstanceOf[js.Any], resolutionStack.asInstanceOf[js.Any], extraFileExtensions.asInstanceOf[js.Any], extendedConfigCache.asInstanceOf[js.Any], existingWatchOptions.asInstanceOf[js.Any])).asInstanceOf[ParsedCommandLine]
     
+    /**
+      * Parse the contents of a config file (tsconfig.json).
+      * @param jsonNode The contents of the config file to parse
+      * @param host Instance of ParseConfigHost used to enumerate files in folder.
+      * @param basePath A root directory to resolve relative path entries in the config
+      *    file to. e.g. outDir
+      */
     inline def parseJsonSourceFileConfigFileContent(
       sourceFile: TsConfigSourceFile,
       host: ParseConfigHost,
@@ -7162,10 +2925,15 @@ object libTypescriptWorkerLibTypescriptMod {
       configFileName: js.UndefOr[String],
       resolutionStack: js.UndefOr[js.Array[Path]],
       extraFileExtensions: js.UndefOr[js.Array[FileExtensionInfo]],
-      extendedConfigCache: js.UndefOr[Map[ExtendedConfigCacheEntry]],
+      extendedConfigCache: js.UndefOr[Map[String, ExtendedConfigCacheEntry]],
       existingWatchOptions: js.UndefOr[WatchOptions]
     ): ParsedCommandLine = (^.asInstanceOf[js.Dynamic].applyDynamic("parseJsonSourceFileConfigFileContent")(sourceFile.asInstanceOf[js.Any], host.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any], existingOptions.asInstanceOf[js.Any], configFileName.asInstanceOf[js.Any], resolutionStack.asInstanceOf[js.Any], extraFileExtensions.asInstanceOf[js.Any], extendedConfigCache.asInstanceOf[js.Any], existingWatchOptions.asInstanceOf[js.Any])).asInstanceOf[ParsedCommandLine]
     
+    /**
+      * Parse json text into SyntaxTree and return node and parse errors if any
+      * @param fileName
+      * @param sourceText
+      */
     inline def parseJsonText(fileName: String, sourceText: String): JsonSourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("parseJsonText")(fileName.asInstanceOf[js.Any], sourceText.asInstanceOf[js.Any])).asInstanceOf[JsonSourceFile]
     
     inline def preProcessFile(sourceText: String): PreProcessedFileInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("preProcessFile")(sourceText.asInstanceOf[js.Any]).asInstanceOf[PreProcessedFileInfo]
@@ -7175,20 +2943,27 @@ object libTypescriptWorkerLibTypescriptMod {
     
     inline def readBuilderProgram(compilerOptions: CompilerOptions, host: ReadBuildProgramHost): js.UndefOr[EmitAndSemanticDiagnosticsBuilderProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("readBuilderProgram")(compilerOptions.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[EmitAndSemanticDiagnosticsBuilderProgram]]
     
+    /**
+      * Read tsconfig.json file
+      * @param fileName The path to the config file
+      */
     inline def readConfigFile(fileName: String, readFile: js.Function1[/* path */ String, js.UndefOr[String]]): Config = (^.asInstanceOf[js.Dynamic].applyDynamic("readConfigFile")(fileName.asInstanceOf[js.Any], readFile.asInstanceOf[js.Any])).asInstanceOf[Config]
     
+    /**
+      * Read tsconfig.json file
+      * @param fileName The path to the config file
+      */
     inline def readJsonConfigFile(fileName: String, readFile: js.Function1[/* path */ String, js.UndefOr[String]]): TsConfigSourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("readJsonConfigFile")(fileName.asInstanceOf[js.Any], readFile.asInstanceOf[js.Any])).asInstanceOf[TsConfigSourceFile]
     
     inline def reduceEachLeadingCommentRange[T, U](
       text: String,
       pos: Double,
-      cb: js.Function6[
+      cb: js.Function5[
           /* pos */ Double, 
           /* end */ Double, 
           /* kind */ CommentKind, 
           /* hasTrailingNewLine */ Boolean, 
           /* state */ T, 
-          /* memo */ U, 
           U
         ],
       state: T,
@@ -7198,13 +2973,12 @@ object libTypescriptWorkerLibTypescriptMod {
     inline def reduceEachTrailingCommentRange[T, U](
       text: String,
       pos: Double,
-      cb: js.Function6[
+      cb: js.Function5[
           /* pos */ Double, 
           /* end */ Double, 
           /* kind */ CommentKind, 
           /* hasTrailingNewLine */ Boolean, 
           /* state */ T, 
-          /* memo */ U, 
           U
         ],
       state: T,
@@ -7229,16 +3003,7 @@ object libTypescriptWorkerLibTypescriptMod {
       host: ModuleResolutionHost,
       cache: Unit,
       redirectedReference: Unit,
-      resolutionMode: CommonJS
-    ): ResolvedModuleWithFailedLookupLocations = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveModuleName")(moduleName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], compilerOptions.asInstanceOf[js.Any], host.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], redirectedReference.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ResolvedModuleWithFailedLookupLocations]
-    inline def resolveModuleName(
-      moduleName: String,
-      containingFile: String,
-      compilerOptions: CompilerOptions,
-      host: ModuleResolutionHost,
-      cache: Unit,
-      redirectedReference: Unit,
-      resolutionMode: ESNext
+      resolutionMode: ResolutionMode
     ): ResolvedModuleWithFailedLookupLocations = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveModuleName")(moduleName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], compilerOptions.asInstanceOf[js.Any], host.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], redirectedReference.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ResolvedModuleWithFailedLookupLocations]
     inline def resolveModuleName(
       moduleName: String,
@@ -7255,16 +3020,7 @@ object libTypescriptWorkerLibTypescriptMod {
       host: ModuleResolutionHost,
       cache: Unit,
       redirectedReference: ResolvedProjectReference,
-      resolutionMode: CommonJS
-    ): ResolvedModuleWithFailedLookupLocations = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveModuleName")(moduleName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], compilerOptions.asInstanceOf[js.Any], host.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], redirectedReference.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ResolvedModuleWithFailedLookupLocations]
-    inline def resolveModuleName(
-      moduleName: String,
-      containingFile: String,
-      compilerOptions: CompilerOptions,
-      host: ModuleResolutionHost,
-      cache: Unit,
-      redirectedReference: ResolvedProjectReference,
-      resolutionMode: ESNext
+      resolutionMode: ResolutionMode
     ): ResolvedModuleWithFailedLookupLocations = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveModuleName")(moduleName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], compilerOptions.asInstanceOf[js.Any], host.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], redirectedReference.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ResolvedModuleWithFailedLookupLocations]
     inline def resolveModuleName(
       moduleName: String,
@@ -7280,16 +3036,7 @@ object libTypescriptWorkerLibTypescriptMod {
       host: ModuleResolutionHost,
       cache: ModuleResolutionCache,
       redirectedReference: Unit,
-      resolutionMode: CommonJS
-    ): ResolvedModuleWithFailedLookupLocations = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveModuleName")(moduleName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], compilerOptions.asInstanceOf[js.Any], host.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], redirectedReference.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ResolvedModuleWithFailedLookupLocations]
-    inline def resolveModuleName(
-      moduleName: String,
-      containingFile: String,
-      compilerOptions: CompilerOptions,
-      host: ModuleResolutionHost,
-      cache: ModuleResolutionCache,
-      redirectedReference: Unit,
-      resolutionMode: ESNext
+      resolutionMode: ResolutionMode
     ): ResolvedModuleWithFailedLookupLocations = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveModuleName")(moduleName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], compilerOptions.asInstanceOf[js.Any], host.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], redirectedReference.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ResolvedModuleWithFailedLookupLocations]
     inline def resolveModuleName(
       moduleName: String,
@@ -7306,27 +3053,25 @@ object libTypescriptWorkerLibTypescriptMod {
       host: ModuleResolutionHost,
       cache: ModuleResolutionCache,
       redirectedReference: ResolvedProjectReference,
-      resolutionMode: CommonJS
-    ): ResolvedModuleWithFailedLookupLocations = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveModuleName")(moduleName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], compilerOptions.asInstanceOf[js.Any], host.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], redirectedReference.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ResolvedModuleWithFailedLookupLocations]
-    inline def resolveModuleName(
-      moduleName: String,
-      containingFile: String,
-      compilerOptions: CompilerOptions,
-      host: ModuleResolutionHost,
-      cache: ModuleResolutionCache,
-      redirectedReference: ResolvedProjectReference,
-      resolutionMode: ESNext
+      resolutionMode: ResolutionMode
     ): ResolvedModuleWithFailedLookupLocations = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveModuleName")(moduleName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], compilerOptions.asInstanceOf[js.Any], host.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], redirectedReference.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ResolvedModuleWithFailedLookupLocations]
     
     inline def resolveModuleNameFromCache(moduleName: String, containingFile: String, cache: ModuleResolutionCache): js.UndefOr[ResolvedModuleWithFailedLookupLocations] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveModuleNameFromCache")(moduleName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], cache.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ResolvedModuleWithFailedLookupLocations]]
-    inline def resolveModuleNameFromCache(moduleName: String, containingFile: String, cache: ModuleResolutionCache, mode: CommonJS): js.UndefOr[ResolvedModuleWithFailedLookupLocations] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveModuleNameFromCache")(moduleName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ResolvedModuleWithFailedLookupLocations]]
-    inline def resolveModuleNameFromCache(moduleName: String, containingFile: String, cache: ModuleResolutionCache, mode: ESNext): js.UndefOr[ResolvedModuleWithFailedLookupLocations] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveModuleNameFromCache")(moduleName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ResolvedModuleWithFailedLookupLocations]]
+    inline def resolveModuleNameFromCache(moduleName: String, containingFile: String, cache: ModuleResolutionCache, mode: ResolutionMode): js.UndefOr[ResolvedModuleWithFailedLookupLocations] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveModuleNameFromCache")(moduleName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ResolvedModuleWithFailedLookupLocations]]
     
-    inline def resolveProjectReferencePath(host: ResolveProjectReferencePathHost, ref: ProjectReference): ResolvedConfigFileName = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveProjectReferencePath")(host.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[ResolvedConfigFileName]
+    /**
+      * Returns the target config filename of a project reference.
+      * Note: The file might not exist.
+      */
     inline def resolveProjectReferencePath(ref: ProjectReference): ResolvedConfigFileName = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveProjectReferencePath")(ref.asInstanceOf[js.Any]).asInstanceOf[ResolvedConfigFileName]
     
     inline def resolveTripleslashReference(moduleName: String, containingFile: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveTripleslashReference")(moduleName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any])).asInstanceOf[String]
     
+    /**
+      * @param {string | undefined} containingFile - file that contains type reference directive, can be undefined if containing file is unknown.
+      * This is possible in case if resolution is performed for directives specified via 'types' parameter. In this case initial path for secondary lookups
+      * is assumed to be the same as root directory of the project.
+      */
     inline def resolveTypeReferenceDirective(
       typeReferenceDirectiveName: String,
       containingFile: String,
@@ -7340,16 +3085,7 @@ object libTypescriptWorkerLibTypescriptMod {
       host: ModuleResolutionHost,
       redirectedReference: Unit,
       cache: Unit,
-      resolutionMode: CommonJS
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveTypeReferenceDirective")(typeReferenceDirectiveName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], options.asInstanceOf[js.Any], host.asInstanceOf[js.Any], redirectedReference.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ResolvedTypeReferenceDirectiveWithFailedLookupLocations]
-    inline def resolveTypeReferenceDirective(
-      typeReferenceDirectiveName: String,
-      containingFile: String,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: Unit,
-      cache: Unit,
-      resolutionMode: ESNext
+      resolutionMode: ResolutionMode
     ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveTypeReferenceDirective")(typeReferenceDirectiveName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], options.asInstanceOf[js.Any], host.asInstanceOf[js.Any], redirectedReference.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ResolvedTypeReferenceDirectiveWithFailedLookupLocations]
     inline def resolveTypeReferenceDirective(
       typeReferenceDirectiveName: String,
@@ -7366,16 +3102,7 @@ object libTypescriptWorkerLibTypescriptMod {
       host: ModuleResolutionHost,
       redirectedReference: Unit,
       cache: TypeReferenceDirectiveResolutionCache,
-      resolutionMode: CommonJS
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveTypeReferenceDirective")(typeReferenceDirectiveName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], options.asInstanceOf[js.Any], host.asInstanceOf[js.Any], redirectedReference.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ResolvedTypeReferenceDirectiveWithFailedLookupLocations]
-    inline def resolveTypeReferenceDirective(
-      typeReferenceDirectiveName: String,
-      containingFile: String,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: Unit,
-      cache: TypeReferenceDirectiveResolutionCache,
-      resolutionMode: ESNext
+      resolutionMode: ResolutionMode
     ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveTypeReferenceDirective")(typeReferenceDirectiveName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], options.asInstanceOf[js.Any], host.asInstanceOf[js.Any], redirectedReference.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ResolvedTypeReferenceDirectiveWithFailedLookupLocations]
     inline def resolveTypeReferenceDirective(
       typeReferenceDirectiveName: String,
@@ -7391,16 +3118,7 @@ object libTypescriptWorkerLibTypescriptMod {
       host: ModuleResolutionHost,
       redirectedReference: ResolvedProjectReference,
       cache: Unit,
-      resolutionMode: CommonJS
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveTypeReferenceDirective")(typeReferenceDirectiveName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], options.asInstanceOf[js.Any], host.asInstanceOf[js.Any], redirectedReference.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ResolvedTypeReferenceDirectiveWithFailedLookupLocations]
-    inline def resolveTypeReferenceDirective(
-      typeReferenceDirectiveName: String,
-      containingFile: String,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: ResolvedProjectReference,
-      cache: Unit,
-      resolutionMode: ESNext
+      resolutionMode: ResolutionMode
     ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveTypeReferenceDirective")(typeReferenceDirectiveName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], options.asInstanceOf[js.Any], host.asInstanceOf[js.Any], redirectedReference.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ResolvedTypeReferenceDirectiveWithFailedLookupLocations]
     inline def resolveTypeReferenceDirective(
       typeReferenceDirectiveName: String,
@@ -7417,16 +3135,7 @@ object libTypescriptWorkerLibTypescriptMod {
       host: ModuleResolutionHost,
       redirectedReference: ResolvedProjectReference,
       cache: TypeReferenceDirectiveResolutionCache,
-      resolutionMode: CommonJS
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveTypeReferenceDirective")(typeReferenceDirectiveName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], options.asInstanceOf[js.Any], host.asInstanceOf[js.Any], redirectedReference.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ResolvedTypeReferenceDirectiveWithFailedLookupLocations]
-    inline def resolveTypeReferenceDirective(
-      typeReferenceDirectiveName: String,
-      containingFile: String,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: ResolvedProjectReference,
-      cache: TypeReferenceDirectiveResolutionCache,
-      resolutionMode: ESNext
+      resolutionMode: ResolutionMode
     ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveTypeReferenceDirective")(typeReferenceDirectiveName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], options.asInstanceOf[js.Any], host.asInstanceOf[js.Any], redirectedReference.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ResolvedTypeReferenceDirectiveWithFailedLookupLocations]
     inline def resolveTypeReferenceDirective(
       typeReferenceDirectiveName: String,
@@ -7441,16 +3150,7 @@ object libTypescriptWorkerLibTypescriptMod {
       host: ModuleResolutionHost,
       redirectedReference: Unit,
       cache: Unit,
-      resolutionMode: CommonJS
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveTypeReferenceDirective")(typeReferenceDirectiveName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], options.asInstanceOf[js.Any], host.asInstanceOf[js.Any], redirectedReference.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ResolvedTypeReferenceDirectiveWithFailedLookupLocations]
-    inline def resolveTypeReferenceDirective(
-      typeReferenceDirectiveName: String,
-      containingFile: Unit,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: Unit,
-      cache: Unit,
-      resolutionMode: ESNext
+      resolutionMode: ResolutionMode
     ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveTypeReferenceDirective")(typeReferenceDirectiveName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], options.asInstanceOf[js.Any], host.asInstanceOf[js.Any], redirectedReference.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ResolvedTypeReferenceDirectiveWithFailedLookupLocations]
     inline def resolveTypeReferenceDirective(
       typeReferenceDirectiveName: String,
@@ -7467,16 +3167,7 @@ object libTypescriptWorkerLibTypescriptMod {
       host: ModuleResolutionHost,
       redirectedReference: Unit,
       cache: TypeReferenceDirectiveResolutionCache,
-      resolutionMode: CommonJS
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveTypeReferenceDirective")(typeReferenceDirectiveName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], options.asInstanceOf[js.Any], host.asInstanceOf[js.Any], redirectedReference.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ResolvedTypeReferenceDirectiveWithFailedLookupLocations]
-    inline def resolveTypeReferenceDirective(
-      typeReferenceDirectiveName: String,
-      containingFile: Unit,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: Unit,
-      cache: TypeReferenceDirectiveResolutionCache,
-      resolutionMode: ESNext
+      resolutionMode: ResolutionMode
     ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveTypeReferenceDirective")(typeReferenceDirectiveName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], options.asInstanceOf[js.Any], host.asInstanceOf[js.Any], redirectedReference.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ResolvedTypeReferenceDirectiveWithFailedLookupLocations]
     inline def resolveTypeReferenceDirective(
       typeReferenceDirectiveName: String,
@@ -7492,16 +3183,7 @@ object libTypescriptWorkerLibTypescriptMod {
       host: ModuleResolutionHost,
       redirectedReference: ResolvedProjectReference,
       cache: Unit,
-      resolutionMode: CommonJS
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveTypeReferenceDirective")(typeReferenceDirectiveName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], options.asInstanceOf[js.Any], host.asInstanceOf[js.Any], redirectedReference.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ResolvedTypeReferenceDirectiveWithFailedLookupLocations]
-    inline def resolveTypeReferenceDirective(
-      typeReferenceDirectiveName: String,
-      containingFile: Unit,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: ResolvedProjectReference,
-      cache: Unit,
-      resolutionMode: ESNext
+      resolutionMode: ResolutionMode
     ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveTypeReferenceDirective")(typeReferenceDirectiveName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], options.asInstanceOf[js.Any], host.asInstanceOf[js.Any], redirectedReference.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ResolvedTypeReferenceDirectiveWithFailedLookupLocations]
     inline def resolveTypeReferenceDirective(
       typeReferenceDirectiveName: String,
@@ -7518,16 +3200,7 @@ object libTypescriptWorkerLibTypescriptMod {
       host: ModuleResolutionHost,
       redirectedReference: ResolvedProjectReference,
       cache: TypeReferenceDirectiveResolutionCache,
-      resolutionMode: CommonJS
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveTypeReferenceDirective")(typeReferenceDirectiveName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], options.asInstanceOf[js.Any], host.asInstanceOf[js.Any], redirectedReference.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ResolvedTypeReferenceDirectiveWithFailedLookupLocations]
-    inline def resolveTypeReferenceDirective(
-      typeReferenceDirectiveName: String,
-      containingFile: Unit,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: ResolvedProjectReference,
-      cache: TypeReferenceDirectiveResolutionCache,
-      resolutionMode: ESNext
+      resolutionMode: ResolutionMode
     ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveTypeReferenceDirective")(typeReferenceDirectiveName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], options.asInstanceOf[js.Any], host.asInstanceOf[js.Any], redirectedReference.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], resolutionMode.asInstanceOf[js.Any])).asInstanceOf[ResolvedTypeReferenceDirectiveWithFailedLookupLocations]
     
     @JSImport("fork-ts-checker-webpack-plugin/lib/typescript/worker/lib/typescript", "typescript.server")
@@ -7708,2521 +3381,6 @@ object libTypescriptWorkerLibTypescriptMod {
       */
     inline def unescapeLeadingUnderscores(identifier: typings.typescript.mod.String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeLeadingUnderscores")(identifier.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    /** @deprecated Use `factory.updateArrayBindingPattern` or the factory supplied by your transformation context instead. */
-    inline def updateArrayBindingPattern(node: ArrayBindingPattern, elements: js.Array[ArrayBindingElement]): ArrayBindingPattern = (^.asInstanceOf[js.Dynamic].applyDynamic("updateArrayBindingPattern")(node.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[ArrayBindingPattern]
-    
-    /** @deprecated Use `factory.updateArrayLiteralExpression` or the factory supplied by your transformation context instead. */
-    inline def updateArrayLiteral(node: ArrayLiteralExpression, elements: js.Array[Expression]): ArrayLiteralExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateArrayLiteral")(node.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[ArrayLiteralExpression]
-    
-    /** @deprecated Use `factory.updateArrayTypeNode` or the factory supplied by your transformation context instead. */
-    inline def updateArrayTypeNode(node: ArrayTypeNode, elementType: TypeNode): ArrayTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateArrayTypeNode")(node.asInstanceOf[js.Any], elementType.asInstanceOf[js.Any])).asInstanceOf[ArrayTypeNode]
-    
-    inline def updateArrowFunction(
-      node: ArrowFunction,
-      modifiers: js.Array[Modifier],
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("updateArrowFunction")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def updateArrowFunction(
-      node: ArrowFunction,
-      modifiers: js.Array[Modifier],
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      equalsGreaterThanToken: EqualsGreaterThanToken,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("updateArrowFunction")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], equalsGreaterThanToken.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    /** @deprecated Use `factory.updateArrowFunction` or the factory supplied by your transformation context instead. */
-    inline def updateArrowFunction(
-      node: ArrowFunction,
-      modifiers: js.Array[Modifier],
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("updateArrowFunction")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    /** @deprecated Use `factory.updateArrowFunction` or the factory supplied by your transformation context instead. */
-    inline def updateArrowFunction(
-      node: ArrowFunction,
-      modifiers: js.Array[Modifier],
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      equalsGreaterThanToken: EqualsGreaterThanToken,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("updateArrowFunction")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], equalsGreaterThanToken.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def updateArrowFunction(
-      node: ArrowFunction,
-      modifiers: js.Array[Modifier],
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("updateArrowFunction")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def updateArrowFunction(
-      node: ArrowFunction,
-      modifiers: js.Array[Modifier],
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      equalsGreaterThanToken: EqualsGreaterThanToken,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("updateArrowFunction")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], equalsGreaterThanToken.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def updateArrowFunction(
-      node: ArrowFunction,
-      modifiers: js.Array[Modifier],
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("updateArrowFunction")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def updateArrowFunction(
-      node: ArrowFunction,
-      modifiers: js.Array[Modifier],
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      equalsGreaterThanToken: EqualsGreaterThanToken,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("updateArrowFunction")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], equalsGreaterThanToken.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def updateArrowFunction(
-      node: ArrowFunction,
-      modifiers: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("updateArrowFunction")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def updateArrowFunction(
-      node: ArrowFunction,
-      modifiers: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      equalsGreaterThanToken: EqualsGreaterThanToken,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("updateArrowFunction")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], equalsGreaterThanToken.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def updateArrowFunction(
-      node: ArrowFunction,
-      modifiers: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("updateArrowFunction")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def updateArrowFunction(
-      node: ArrowFunction,
-      modifiers: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      equalsGreaterThanToken: EqualsGreaterThanToken,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("updateArrowFunction")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], equalsGreaterThanToken.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def updateArrowFunction(
-      node: ArrowFunction,
-      modifiers: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("updateArrowFunction")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def updateArrowFunction(
-      node: ArrowFunction,
-      modifiers: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      equalsGreaterThanToken: EqualsGreaterThanToken,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("updateArrowFunction")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], equalsGreaterThanToken.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def updateArrowFunction(
-      node: ArrowFunction,
-      modifiers: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("updateArrowFunction")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    inline def updateArrowFunction(
-      node: ArrowFunction,
-      modifiers: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      equalsGreaterThanToken: EqualsGreaterThanToken,
-      body: ConciseBody
-    ): ArrowFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("updateArrowFunction")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], equalsGreaterThanToken.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ArrowFunction]
-    
-    /** @deprecated Use `factory.updateAsExpression` or the factory supplied by your transformation context instead. */
-    inline def updateAsExpression(node: AsExpression, expression: Expression, `type`: TypeNode): AsExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateAsExpression")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[AsExpression]
-    
-    /** @deprecated Use `factory.updateAwaitExpression` or the factory supplied by your transformation context instead. */
-    inline def updateAwait(node: AwaitExpression, expression: Expression): AwaitExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateAwait")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[AwaitExpression]
-    
-    /** @deprecated Use `factory.updateBinary` or the factory supplied by your transformation context instead. */
-    inline def updateBinary(node: BinaryExpression, left: Expression, right: Expression): BinaryExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateBinary")(node.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression]
-    inline def updateBinary(node: BinaryExpression, left: Expression, right: Expression, operator: BinaryOperator): BinaryExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateBinary")(node.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression]
-    inline def updateBinary(node: BinaryExpression, left: Expression, right: Expression, operator: BinaryOperatorToken): BinaryExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateBinary")(node.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[BinaryExpression]
-    
-    inline def updateBindingElement(node: BindingElement, dotDotDotToken: Unit, propertyName: Unit, name: BindingName): BindingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateBindingElement")(node.asInstanceOf[js.Any], dotDotDotToken.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[BindingElement]
-    inline def updateBindingElement(
-      node: BindingElement,
-      dotDotDotToken: Unit,
-      propertyName: Unit,
-      name: BindingName,
-      initializer: Expression
-    ): BindingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateBindingElement")(node.asInstanceOf[js.Any], dotDotDotToken.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[BindingElement]
-    inline def updateBindingElement(node: BindingElement, dotDotDotToken: Unit, propertyName: PropertyName, name: BindingName): BindingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateBindingElement")(node.asInstanceOf[js.Any], dotDotDotToken.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[BindingElement]
-    inline def updateBindingElement(
-      node: BindingElement,
-      dotDotDotToken: Unit,
-      propertyName: PropertyName,
-      name: BindingName,
-      initializer: Expression
-    ): BindingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateBindingElement")(node.asInstanceOf[js.Any], dotDotDotToken.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[BindingElement]
-    inline def updateBindingElement(node: BindingElement, dotDotDotToken: DotDotDotToken, propertyName: Unit, name: BindingName): BindingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateBindingElement")(node.asInstanceOf[js.Any], dotDotDotToken.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[BindingElement]
-    inline def updateBindingElement(
-      node: BindingElement,
-      dotDotDotToken: DotDotDotToken,
-      propertyName: Unit,
-      name: BindingName,
-      initializer: Expression
-    ): BindingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateBindingElement")(node.asInstanceOf[js.Any], dotDotDotToken.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[BindingElement]
-    /** @deprecated Use `factory.updateBindingElement` or the factory supplied by your transformation context instead. */
-    inline def updateBindingElement(
-      node: BindingElement,
-      dotDotDotToken: DotDotDotToken,
-      propertyName: PropertyName,
-      name: BindingName
-    ): BindingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateBindingElement")(node.asInstanceOf[js.Any], dotDotDotToken.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[BindingElement]
-    inline def updateBindingElement(
-      node: BindingElement,
-      dotDotDotToken: DotDotDotToken,
-      propertyName: PropertyName,
-      name: BindingName,
-      initializer: Expression
-    ): BindingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateBindingElement")(node.asInstanceOf[js.Any], dotDotDotToken.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[BindingElement]
-    
-    /** @deprecated Use `factory.updateBlock` or the factory supplied by your transformation context instead. */
-    inline def updateBlock(node: Block, statements: js.Array[Statement]): Block = (^.asInstanceOf[js.Dynamic].applyDynamic("updateBlock")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any])).asInstanceOf[Block]
-    
-    /** @deprecated Use `factory.updateBreakStatement` or the factory supplied by your transformation context instead. */
-    inline def updateBreak(node: BreakStatement): BreakStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("updateBreak")(node.asInstanceOf[js.Any]).asInstanceOf[BreakStatement]
-    inline def updateBreak(node: BreakStatement, label: Identifier): BreakStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateBreak")(node.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[BreakStatement]
-    
-    /** @deprecated Use `factory.updateBundle` or the factory supplied by your transformation context instead. */
-    inline def updateBundle(node: Bundle, sourceFiles: js.Array[SourceFile]): Bundle = (^.asInstanceOf[js.Dynamic].applyDynamic("updateBundle")(node.asInstanceOf[js.Any], sourceFiles.asInstanceOf[js.Any])).asInstanceOf[Bundle]
-    inline def updateBundle(node: Bundle, sourceFiles: js.Array[SourceFile], prepends: js.Array[UnparsedSource | InputFiles]): Bundle = (^.asInstanceOf[js.Dynamic].applyDynamic("updateBundle")(node.asInstanceOf[js.Any], sourceFiles.asInstanceOf[js.Any], prepends.asInstanceOf[js.Any])).asInstanceOf[Bundle]
-    
-    /** @deprecated Use `factory.updateCallExpression` or the factory supplied by your transformation context instead. */
-    inline def updateCall(
-      node: CallExpression,
-      expression: Expression,
-      typeArguments: js.Array[TypeNode],
-      argumentsArray: js.Array[Expression]
-    ): CallExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCall")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], argumentsArray.asInstanceOf[js.Any])).asInstanceOf[CallExpression]
-    inline def updateCall(
-      node: CallExpression,
-      expression: Expression,
-      typeArguments: Unit,
-      argumentsArray: js.Array[Expression]
-    ): CallExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCall")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], argumentsArray.asInstanceOf[js.Any])).asInstanceOf[CallExpression]
-    
-    inline def updateCallChain(
-      node: CallChain,
-      expression: Expression,
-      questionDotToken: Unit,
-      typeArguments: js.Array[TypeNode],
-      argumentsArray: js.Array[Expression]
-    ): CallChain = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCallChain")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], questionDotToken.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], argumentsArray.asInstanceOf[js.Any])).asInstanceOf[CallChain]
-    inline def updateCallChain(
-      node: CallChain,
-      expression: Expression,
-      questionDotToken: Unit,
-      typeArguments: Unit,
-      argumentsArray: js.Array[Expression]
-    ): CallChain = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCallChain")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], questionDotToken.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], argumentsArray.asInstanceOf[js.Any])).asInstanceOf[CallChain]
-    /** @deprecated Use `factory.updateCallChain` or the factory supplied by your transformation context instead. */
-    inline def updateCallChain(
-      node: CallChain,
-      expression: Expression,
-      questionDotToken: QuestionDotToken,
-      typeArguments: js.Array[TypeNode],
-      argumentsArray: js.Array[Expression]
-    ): CallChain = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCallChain")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], questionDotToken.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], argumentsArray.asInstanceOf[js.Any])).asInstanceOf[CallChain]
-    inline def updateCallChain(
-      node: CallChain,
-      expression: Expression,
-      questionDotToken: QuestionDotToken,
-      typeArguments: Unit,
-      argumentsArray: js.Array[Expression]
-    ): CallChain = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCallChain")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], questionDotToken.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], argumentsArray.asInstanceOf[js.Any])).asInstanceOf[CallChain]
-    
-    inline def updateCallSignature(node: CallSignatureDeclaration, typeParameters: Unit, parameters: NodeArray[ParameterDeclaration]): CallSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCallSignature")(node.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[CallSignatureDeclaration]
-    inline def updateCallSignature(
-      node: CallSignatureDeclaration,
-      typeParameters: Unit,
-      parameters: NodeArray[ParameterDeclaration],
-      `type`: TypeNode
-    ): CallSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCallSignature")(node.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[CallSignatureDeclaration]
-    /** @deprecated Use `factory.updateCallSignature` or the factory supplied by your transformation context instead. */
-    inline def updateCallSignature(
-      node: CallSignatureDeclaration,
-      typeParameters: NodeArray[TypeParameterDeclaration],
-      parameters: NodeArray[ParameterDeclaration]
-    ): CallSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCallSignature")(node.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[CallSignatureDeclaration]
-    inline def updateCallSignature(
-      node: CallSignatureDeclaration,
-      typeParameters: NodeArray[TypeParameterDeclaration],
-      parameters: NodeArray[ParameterDeclaration],
-      `type`: TypeNode
-    ): CallSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCallSignature")(node.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[CallSignatureDeclaration]
-    
-    /** @deprecated Use `factory.updateCaseBlock` or the factory supplied by your transformation context instead. */
-    inline def updateCaseBlock(node: CaseBlock, clauses: js.Array[CaseOrDefaultClause]): CaseBlock = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCaseBlock")(node.asInstanceOf[js.Any], clauses.asInstanceOf[js.Any])).asInstanceOf[CaseBlock]
-    
-    /** @deprecated Use `factory.updateCaseClause` or the factory supplied by your transformation context instead. */
-    inline def updateCaseClause(node: CaseClause, expression: Expression, statements: js.Array[Statement]): CaseClause = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCaseClause")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], statements.asInstanceOf[js.Any])).asInstanceOf[CaseClause]
-    
-    inline def updateCatchClause(node: CatchClause, variableDeclaration: Unit, block: Block): CatchClause = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCatchClause")(node.asInstanceOf[js.Any], variableDeclaration.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[CatchClause]
-    /** @deprecated Use `factory.updateCatchClause` or the factory supplied by your transformation context instead. */
-    inline def updateCatchClause(node: CatchClause, variableDeclaration: VariableDeclaration, block: Block): CatchClause = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCatchClause")(node.asInstanceOf[js.Any], variableDeclaration.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[CatchClause]
-    
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    /** @deprecated Use `factory.updateClassDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    /** @deprecated Use `factory.updateClassDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    inline def updateClassDeclaration(
-      node: ClassDeclaration,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassDeclaration]
-    
-    inline def updateClassExpression(
-      node: ClassExpression,
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def updateClassExpression(
-      node: ClassExpression,
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def updateClassExpression(
-      node: ClassExpression,
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def updateClassExpression(
-      node: ClassExpression,
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    /** @deprecated Use `factory.updateClassExpression` or the factory supplied by your transformation context instead. */
-    inline def updateClassExpression(
-      node: ClassExpression,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def updateClassExpression(
-      node: ClassExpression,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def updateClassExpression(
-      node: ClassExpression,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def updateClassExpression(
-      node: ClassExpression,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def updateClassExpression(
-      node: ClassExpression,
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def updateClassExpression(
-      node: ClassExpression,
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def updateClassExpression(
-      node: ClassExpression,
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def updateClassExpression(
-      node: ClassExpression,
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def updateClassExpression(
-      node: ClassExpression,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def updateClassExpression(
-      node: ClassExpression,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def updateClassExpression(
-      node: ClassExpression,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    inline def updateClassExpression(
-      node: ClassExpression,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClassExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[ClassExpression]
-    
-    /** @deprecated Use `factory.updateCommaListExpression` or the factory supplied by your transformation context instead. */
-    inline def updateCommaList(node: CommaListExpression, elements: js.Array[Expression]): CommaListExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCommaList")(node.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[CommaListExpression]
-    
-    /** @deprecated Use `factory.updateComputedPropertyName` or the factory supplied by your transformation context instead. */
-    inline def updateComputedPropertyName(node: ComputedPropertyName, expression: Expression): ComputedPropertyName = (^.asInstanceOf[js.Dynamic].applyDynamic("updateComputedPropertyName")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[ComputedPropertyName]
-    
-    /** @deprecated Use `factory.updateConditionalExpression` or the factory supplied by your transformation context instead. */
-    inline def updateConditional(
-      node: ConditionalExpression,
-      condition: Expression,
-      questionToken: QuestionToken,
-      whenTrue: Expression,
-      colonToken: ColonToken,
-      whenFalse: Expression
-    ): ConditionalExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateConditional")(node.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], whenTrue.asInstanceOf[js.Any], colonToken.asInstanceOf[js.Any], whenFalse.asInstanceOf[js.Any])).asInstanceOf[ConditionalExpression]
-    
-    /** @deprecated Use `factory.updateConditionalTypeNode` or the factory supplied by your transformation context instead. */
-    inline def updateConditionalTypeNode(
-      node: ConditionalTypeNode,
-      checkType: TypeNode,
-      extendsType: TypeNode,
-      trueType: TypeNode,
-      falseType: TypeNode
-    ): ConditionalTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateConditionalTypeNode")(node.asInstanceOf[js.Any], checkType.asInstanceOf[js.Any], extendsType.asInstanceOf[js.Any], trueType.asInstanceOf[js.Any], falseType.asInstanceOf[js.Any])).asInstanceOf[ConditionalTypeNode]
-    
-    inline def updateConstructSignature(
-      node: ConstructSignatureDeclaration,
-      typeParameters: Unit,
-      parameters: NodeArray[ParameterDeclaration]
-    ): ConstructSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateConstructSignature")(node.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[ConstructSignatureDeclaration]
-    inline def updateConstructSignature(
-      node: ConstructSignatureDeclaration,
-      typeParameters: Unit,
-      parameters: NodeArray[ParameterDeclaration],
-      `type`: TypeNode
-    ): ConstructSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateConstructSignature")(node.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[ConstructSignatureDeclaration]
-    /** @deprecated Use `factory.updateConstructSignature` or the factory supplied by your transformation context instead. */
-    inline def updateConstructSignature(
-      node: ConstructSignatureDeclaration,
-      typeParameters: NodeArray[TypeParameterDeclaration],
-      parameters: NodeArray[ParameterDeclaration]
-    ): ConstructSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateConstructSignature")(node.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[ConstructSignatureDeclaration]
-    inline def updateConstructSignature(
-      node: ConstructSignatureDeclaration,
-      typeParameters: NodeArray[TypeParameterDeclaration],
-      parameters: NodeArray[ParameterDeclaration],
-      `type`: TypeNode
-    ): ConstructSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateConstructSignature")(node.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[ConstructSignatureDeclaration]
-    
-    /** @deprecated Use `factory.updateConstructorDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateConstructor(
-      node: ConstructorDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      parameters: js.Array[ParameterDeclaration]
-    ): ConstructorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateConstructor")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[ConstructorDeclaration]
-    inline def updateConstructor(
-      node: ConstructorDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): ConstructorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateConstructor")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ConstructorDeclaration]
-    inline def updateConstructor(
-      node: ConstructorDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      parameters: js.Array[ParameterDeclaration]
-    ): ConstructorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateConstructor")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[ConstructorDeclaration]
-    inline def updateConstructor(
-      node: ConstructorDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): ConstructorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateConstructor")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ConstructorDeclaration]
-    inline def updateConstructor(
-      node: ConstructorDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      parameters: js.Array[ParameterDeclaration]
-    ): ConstructorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateConstructor")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[ConstructorDeclaration]
-    inline def updateConstructor(
-      node: ConstructorDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): ConstructorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateConstructor")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ConstructorDeclaration]
-    inline def updateConstructor(
-      node: ConstructorDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      parameters: js.Array[ParameterDeclaration]
-    ): ConstructorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateConstructor")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[ConstructorDeclaration]
-    inline def updateConstructor(
-      node: ConstructorDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): ConstructorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateConstructor")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ConstructorDeclaration]
-    /** @deprecated Use `factory.updateConstructorDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateConstructor(
-      node: ConstructorDeclaration,
-      modifiers: js.Array[Modifier],
-      parameters: js.Array[ParameterDeclaration]
-    ): ConstructorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateConstructor")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[ConstructorDeclaration]
-    inline def updateConstructor(
-      node: ConstructorDeclaration,
-      modifiers: js.Array[Modifier],
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): ConstructorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateConstructor")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ConstructorDeclaration]
-    inline def updateConstructor(node: ConstructorDeclaration, modifiers: Unit, parameters: js.Array[ParameterDeclaration]): ConstructorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateConstructor")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[ConstructorDeclaration]
-    inline def updateConstructor(
-      node: ConstructorDeclaration,
-      modifiers: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): ConstructorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateConstructor")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ConstructorDeclaration]
-    
-    inline def updateConstructorTypeNode(
-      node: ConstructorTypeNode,
-      typeParameters: Unit,
-      parameters: NodeArray[ParameterDeclaration],
-      `type`: TypeNode
-    ): ConstructorTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateConstructorTypeNode")(node.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[ConstructorTypeNode]
-    /** @deprecated Use `factory.updateConstructorTypeNode` or the factory supplied by your transformation context instead. */
-    inline def updateConstructorTypeNode(
-      node: ConstructorTypeNode,
-      typeParameters: NodeArray[TypeParameterDeclaration],
-      parameters: NodeArray[ParameterDeclaration],
-      `type`: TypeNode
-    ): ConstructorTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateConstructorTypeNode")(node.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[ConstructorTypeNode]
-    
-    /** @deprecated Use `factory.updateContinueStatement` or the factory supplied by your transformation context instead. */
-    inline def updateContinue(node: ContinueStatement): ContinueStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("updateContinue")(node.asInstanceOf[js.Any]).asInstanceOf[ContinueStatement]
-    inline def updateContinue(node: ContinueStatement, label: Identifier): ContinueStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateContinue")(node.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[ContinueStatement]
-    
-    /** @deprecated Use `factory.updateDecorator` or the factory supplied by your transformation context instead. */
-    inline def updateDecorator(node: Decorator, expression: Expression): Decorator = (^.asInstanceOf[js.Dynamic].applyDynamic("updateDecorator")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[Decorator]
-    
-    /** @deprecated Use `factory.updateDefaultClause` or the factory supplied by your transformation context instead. */
-    inline def updateDefaultClause(node: DefaultClause, statements: js.Array[Statement]): DefaultClause = (^.asInstanceOf[js.Dynamic].applyDynamic("updateDefaultClause")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any])).asInstanceOf[DefaultClause]
-    
-    /** @deprecated Use `factory.updateDeleteExpression` or the factory supplied by your transformation context instead. */
-    inline def updateDelete(node: DeleteExpression, expression: Expression): DeleteExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateDelete")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[DeleteExpression]
-    
-    /** @deprecated Use `factory.updateDoStatement` or the factory supplied by your transformation context instead. */
-    inline def updateDo(node: DoStatement, statement: Statement, expression: Expression): DoStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateDo")(node.asInstanceOf[js.Any], statement.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[DoStatement]
-    
-    /** @deprecated Use `factory.updateElementAccessExpression` or the factory supplied by your transformation context instead. */
-    inline def updateElementAccess(node: ElementAccessExpression, expression: Expression, argumentExpression: Expression): ElementAccessExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateElementAccess")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], argumentExpression.asInstanceOf[js.Any])).asInstanceOf[ElementAccessExpression]
-    
-    inline def updateElementAccessChain(
-      node: ElementAccessChain,
-      expression: Expression,
-      questionDotToken: Unit,
-      argumentExpression: Expression
-    ): ElementAccessChain = (^.asInstanceOf[js.Dynamic].applyDynamic("updateElementAccessChain")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], questionDotToken.asInstanceOf[js.Any], argumentExpression.asInstanceOf[js.Any])).asInstanceOf[ElementAccessChain]
-    /** @deprecated Use `factory.updateElementAccessChain` or the factory supplied by your transformation context instead. */
-    inline def updateElementAccessChain(
-      node: ElementAccessChain,
-      expression: Expression,
-      questionDotToken: QuestionDotToken,
-      argumentExpression: Expression
-    ): ElementAccessChain = (^.asInstanceOf[js.Dynamic].applyDynamic("updateElementAccessChain")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], questionDotToken.asInstanceOf[js.Any], argumentExpression.asInstanceOf[js.Any])).asInstanceOf[ElementAccessChain]
-    
-    /** @deprecated Use `factory.updateEnumDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateEnumDeclaration(
-      node: EnumDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      members: js.Array[EnumMember]
-    ): EnumDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateEnumDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[EnumDeclaration]
-    inline def updateEnumDeclaration(
-      node: EnumDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      members: js.Array[EnumMember]
-    ): EnumDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateEnumDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[EnumDeclaration]
-    inline def updateEnumDeclaration(
-      node: EnumDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      members: js.Array[EnumMember]
-    ): EnumDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateEnumDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[EnumDeclaration]
-    inline def updateEnumDeclaration(
-      node: EnumDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      members: js.Array[EnumMember]
-    ): EnumDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateEnumDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[EnumDeclaration]
-    /** @deprecated Use `factory.updateEnumDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateEnumDeclaration(
-      node: EnumDeclaration,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      members: js.Array[EnumMember]
-    ): EnumDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateEnumDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[EnumDeclaration]
-    inline def updateEnumDeclaration(node: EnumDeclaration, modifiers: Unit, name: Identifier, members: js.Array[EnumMember]): EnumDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateEnumDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[EnumDeclaration]
-    
-    /** @deprecated Use `factory.updateEnumMember` or the factory supplied by your transformation context instead. */
-    inline def updateEnumMember(node: EnumMember, name: PropertyName): EnumMember = (^.asInstanceOf[js.Dynamic].applyDynamic("updateEnumMember")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[EnumMember]
-    inline def updateEnumMember(node: EnumMember, name: PropertyName, initializer: Expression): EnumMember = (^.asInstanceOf[js.Dynamic].applyDynamic("updateEnumMember")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[EnumMember]
-    
-    /** @deprecated Use `factory.updateExportAssignment` or the factory supplied by your transformation context instead. */
-    inline def updateExportAssignment(
-      node: ExportAssignment,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      expression: Expression
-    ): ExportAssignment = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExportAssignment")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[ExportAssignment]
-    inline def updateExportAssignment(node: ExportAssignment, decorators: js.Array[Decorator], modifiers: Unit, expression: Expression): ExportAssignment = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExportAssignment")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[ExportAssignment]
-    inline def updateExportAssignment(node: ExportAssignment, decorators: Unit, modifiers: js.Array[Modifier], expression: Expression): ExportAssignment = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExportAssignment")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[ExportAssignment]
-    inline def updateExportAssignment(node: ExportAssignment, decorators: Unit, modifiers: Unit, expression: Expression): ExportAssignment = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExportAssignment")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[ExportAssignment]
-    /** @deprecated Use `factory.updateExportAssignment` or the factory supplied by your transformation context instead. */
-    inline def updateExportAssignment(node: ExportAssignment, modifiers: js.Array[Modifier], expression: Expression): ExportAssignment = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExportAssignment")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[ExportAssignment]
-    inline def updateExportAssignment(node: ExportAssignment, modifiers: Unit, expression: Expression): ExportAssignment = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExportAssignment")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[ExportAssignment]
-    
-    inline def updateExportDeclaration(
-      node: ExportDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      exportClause: Unit,
-      moduleSpecifier: Unit,
-      isTypeOnly: Boolean
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExportDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def updateExportDeclaration(
-      node: ExportDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      exportClause: Unit,
-      moduleSpecifier: Expression,
-      isTypeOnly: Boolean
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExportDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def updateExportDeclaration(
-      node: ExportDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Unit,
-      isTypeOnly: Boolean
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExportDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    /** @deprecated Use `factory.updateExportDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateExportDeclaration(
-      node: ExportDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Expression,
-      isTypeOnly: Boolean
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExportDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def updateExportDeclaration(
-      node: ExportDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      exportClause: Unit,
-      moduleSpecifier: Unit,
-      isTypeOnly: Boolean
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExportDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def updateExportDeclaration(
-      node: ExportDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      exportClause: Unit,
-      moduleSpecifier: Expression,
-      isTypeOnly: Boolean
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExportDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def updateExportDeclaration(
-      node: ExportDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Unit,
-      isTypeOnly: Boolean
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExportDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def updateExportDeclaration(
-      node: ExportDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Expression,
-      isTypeOnly: Boolean
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExportDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def updateExportDeclaration(
-      node: ExportDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      exportClause: Unit,
-      moduleSpecifier: Unit,
-      isTypeOnly: Boolean
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExportDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def updateExportDeclaration(
-      node: ExportDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      exportClause: Unit,
-      moduleSpecifier: Expression,
-      isTypeOnly: Boolean
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExportDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def updateExportDeclaration(
-      node: ExportDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Unit,
-      isTypeOnly: Boolean
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExportDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def updateExportDeclaration(
-      node: ExportDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Expression,
-      isTypeOnly: Boolean
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExportDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def updateExportDeclaration(
-      node: ExportDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      exportClause: Unit,
-      moduleSpecifier: Unit,
-      isTypeOnly: Boolean
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExportDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def updateExportDeclaration(
-      node: ExportDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      exportClause: Unit,
-      moduleSpecifier: Expression,
-      isTypeOnly: Boolean
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExportDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def updateExportDeclaration(
-      node: ExportDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Unit,
-      isTypeOnly: Boolean
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExportDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    inline def updateExportDeclaration(
-      node: ExportDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Expression,
-      isTypeOnly: Boolean
-    ): ExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExportDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], exportClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ExportDeclaration]
-    
-    inline def updateExportSpecifier(node: ExportSpecifier, isTypeOnly: Boolean, propertyName: Unit, name: Identifier): ExportSpecifier = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExportSpecifier")(node.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ExportSpecifier]
-    /** @deprecated Use `factory.updateExportSpecifier` or the factory supplied by your transformation context instead. */
-    inline def updateExportSpecifier(node: ExportSpecifier, isTypeOnly: Boolean, propertyName: Identifier, name: Identifier): ExportSpecifier = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExportSpecifier")(node.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ExportSpecifier]
-    
-    /** @deprecated Use `factory.updateExpressionStatement` or the factory supplied by your transformation context instead. */
-    inline def updateExpressionStatement(node: ExpressionStatement, expression: Expression): ExpressionStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExpressionStatement")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[ExpressionStatement]
-    
-    /** @deprecated Use `factory.updateExpressionWithTypeArguments` or the factory supplied by your transformation context instead. */
-    inline def updateExpressionWithTypeArguments(node: ExpressionWithTypeArguments, typeArguments: js.Array[TypeNode], expression: Expression): ExpressionWithTypeArguments = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExpressionWithTypeArguments")(node.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[ExpressionWithTypeArguments]
-    inline def updateExpressionWithTypeArguments(node: ExpressionWithTypeArguments, typeArguments: Unit, expression: Expression): ExpressionWithTypeArguments = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExpressionWithTypeArguments")(node.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[ExpressionWithTypeArguments]
-    
-    /** @deprecated Use `factory.updateExternalModuleReference` or the factory supplied by your transformation context instead. */
-    inline def updateExternalModuleReference(node: ExternalModuleReference, expression: Expression): ExternalModuleReference = (^.asInstanceOf[js.Dynamic].applyDynamic("updateExternalModuleReference")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[ExternalModuleReference]
-    
-    inline def updateFor(node: ForStatement, initializer: Unit, condition: Unit, incrementor: Unit, statement: Statement): ForStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFor")(node.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], incrementor.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[ForStatement]
-    inline def updateFor(
-      node: ForStatement,
-      initializer: Unit,
-      condition: Unit,
-      incrementor: Expression,
-      statement: Statement
-    ): ForStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFor")(node.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], incrementor.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[ForStatement]
-    inline def updateFor(
-      node: ForStatement,
-      initializer: Unit,
-      condition: Expression,
-      incrementor: Unit,
-      statement: Statement
-    ): ForStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFor")(node.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], incrementor.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[ForStatement]
-    inline def updateFor(
-      node: ForStatement,
-      initializer: Unit,
-      condition: Expression,
-      incrementor: Expression,
-      statement: Statement
-    ): ForStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFor")(node.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], incrementor.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[ForStatement]
-    inline def updateFor(
-      node: ForStatement,
-      initializer: ForInitializer,
-      condition: Unit,
-      incrementor: Unit,
-      statement: Statement
-    ): ForStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFor")(node.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], incrementor.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[ForStatement]
-    inline def updateFor(
-      node: ForStatement,
-      initializer: ForInitializer,
-      condition: Unit,
-      incrementor: Expression,
-      statement: Statement
-    ): ForStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFor")(node.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], incrementor.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[ForStatement]
-    inline def updateFor(
-      node: ForStatement,
-      initializer: ForInitializer,
-      condition: Expression,
-      incrementor: Unit,
-      statement: Statement
-    ): ForStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFor")(node.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], incrementor.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[ForStatement]
-    /** @deprecated Use `factory.updateForStatement` or the factory supplied by your transformation context instead. */
-    inline def updateFor(
-      node: ForStatement,
-      initializer: ForInitializer,
-      condition: Expression,
-      incrementor: Expression,
-      statement: Statement
-    ): ForStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFor")(node.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], incrementor.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[ForStatement]
-    
-    /** @deprecated Use `factory.updateForInStatement` or the factory supplied by your transformation context instead. */
-    inline def updateForIn(node: ForInStatement, initializer: ForInitializer, expression: Expression, statement: Statement): ForInStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateForIn")(node.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[ForInStatement]
-    
-    inline def updateForOf(
-      node: ForOfStatement,
-      awaitModifier: Unit,
-      initializer: ForInitializer,
-      expression: Expression,
-      statement: Statement
-    ): ForOfStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateForOf")(node.asInstanceOf[js.Any], awaitModifier.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[ForOfStatement]
-    /** @deprecated Use `factory.updateForOfStatement` or the factory supplied by your transformation context instead. */
-    inline def updateForOf(
-      node: ForOfStatement,
-      awaitModifier: AwaitKeyword,
-      initializer: ForInitializer,
-      expression: Expression,
-      statement: Statement
-    ): ForOfStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateForOf")(node.asInstanceOf[js.Any], awaitModifier.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[ForOfStatement]
-    
-    /** @deprecated Use `factory.updateFunctionDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateFunctionDeclaration(
-      node: FunctionDeclaration,
-      decorators: js.UndefOr[js.Array[Decorator]],
-      modifiers: js.UndefOr[js.Array[Modifier]],
-      asteriskToken: js.UndefOr[AsteriskToken],
-      name: js.UndefOr[Identifier],
-      typeParameters: js.UndefOr[js.Array[TypeParameterDeclaration]],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: js.UndefOr[TypeNode],
-      body: js.UndefOr[Block]
-    ): FunctionDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionDeclaration]
-    /** @deprecated Use `factory.updateFunctionDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateFunctionDeclaration(
-      node: FunctionDeclaration,
-      modifiers: js.UndefOr[js.Array[ModifierLike]],
-      asteriskToken: js.UndefOr[AsteriskToken],
-      name: js.UndefOr[Identifier],
-      typeParameters: js.UndefOr[js.Array[TypeParameterDeclaration]],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: js.UndefOr[TypeNode],
-      body: js.UndefOr[Block]
-    ): FunctionDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionDeclaration]
-    
-    inline def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: js.Array[Modifier],
-      asteriskToken: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    inline def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: js.Array[Modifier],
-      asteriskToken: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    inline def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: js.Array[Modifier],
-      asteriskToken: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    inline def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: js.Array[Modifier],
-      asteriskToken: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    inline def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: js.Array[Modifier],
-      asteriskToken: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    inline def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: js.Array[Modifier],
-      asteriskToken: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    inline def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: js.Array[Modifier],
-      asteriskToken: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    inline def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: js.Array[Modifier],
-      asteriskToken: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    inline def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: js.Array[Modifier],
-      asteriskToken: AsteriskToken,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    inline def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: js.Array[Modifier],
-      asteriskToken: AsteriskToken,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    inline def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: js.Array[Modifier],
-      asteriskToken: AsteriskToken,
-      name: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    inline def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: js.Array[Modifier],
-      asteriskToken: AsteriskToken,
-      name: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    inline def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: js.Array[Modifier],
-      asteriskToken: AsteriskToken,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    /** @deprecated Use `factory.updateFunctionExpression` or the factory supplied by your transformation context instead. */
-    inline def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: js.Array[Modifier],
-      asteriskToken: AsteriskToken,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    inline def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: js.Array[Modifier],
-      asteriskToken: AsteriskToken,
-      name: Identifier,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    inline def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: js.Array[Modifier],
-      asteriskToken: AsteriskToken,
-      name: Identifier,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    inline def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: Unit,
-      asteriskToken: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    inline def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: Unit,
-      asteriskToken: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    inline def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: Unit,
-      asteriskToken: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    inline def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: Unit,
-      asteriskToken: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    inline def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: Unit,
-      asteriskToken: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    inline def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: Unit,
-      asteriskToken: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    inline def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: Unit,
-      asteriskToken: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    inline def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: Unit,
-      asteriskToken: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    inline def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: Unit,
-      asteriskToken: AsteriskToken,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    inline def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: Unit,
-      asteriskToken: AsteriskToken,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    inline def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: Unit,
-      asteriskToken: AsteriskToken,
-      name: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    inline def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: Unit,
-      asteriskToken: AsteriskToken,
-      name: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    inline def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: Unit,
-      asteriskToken: AsteriskToken,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    inline def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: Unit,
-      asteriskToken: AsteriskToken,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    inline def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: Unit,
-      asteriskToken: AsteriskToken,
-      name: Identifier,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    inline def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: Unit,
-      asteriskToken: AsteriskToken,
-      name: Identifier,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): FunctionExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionExpression")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[FunctionExpression]
-    
-    inline def updateFunctionTypeNode(
-      node: FunctionTypeNode,
-      typeParameters: Unit,
-      parameters: NodeArray[ParameterDeclaration],
-      `type`: TypeNode
-    ): FunctionTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionTypeNode")(node.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[FunctionTypeNode]
-    /** @deprecated Use `factory.updateFunctionTypeNode` or the factory supplied by your transformation context instead. */
-    inline def updateFunctionTypeNode(
-      node: FunctionTypeNode,
-      typeParameters: NodeArray[TypeParameterDeclaration],
-      parameters: NodeArray[ParameterDeclaration],
-      `type`: TypeNode
-    ): FunctionTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFunctionTypeNode")(node.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[FunctionTypeNode]
-    
-    /** @deprecated Use `factory.updateGetAccessorDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateGetAccessor")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateGetAccessor")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateGetAccessor")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateGetAccessor")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateGetAccessor")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateGetAccessor")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateGetAccessor")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateGetAccessor")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateGetAccessor")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateGetAccessor")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateGetAccessor")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateGetAccessor")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateGetAccessor")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateGetAccessor")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateGetAccessor")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateGetAccessor")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    /** @deprecated Use `factory.updateGetAccessorDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateGetAccessor")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateGetAccessor")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateGetAccessor")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateGetAccessor")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateGetAccessor")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateGetAccessor")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateGetAccessor")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    inline def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateGetAccessor")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAccessorDeclaration]
-    
-    /** @deprecated Use `factory.updateHeritageClause` or the factory supplied by your transformation context instead. */
-    inline def updateHeritageClause(node: HeritageClause, types: js.Array[ExpressionWithTypeArguments]): HeritageClause = (^.asInstanceOf[js.Dynamic].applyDynamic("updateHeritageClause")(node.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[HeritageClause]
-    
-    /** @deprecated Use `factory.updateIfStatement` or the factory supplied by your transformation context instead. */
-    inline def updateIf(node: IfStatement, expression: Expression, thenStatement: Statement): IfStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateIf")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], thenStatement.asInstanceOf[js.Any])).asInstanceOf[IfStatement]
-    inline def updateIf(node: IfStatement, expression: Expression, thenStatement: Statement, elseStatement: Statement): IfStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateIf")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], thenStatement.asInstanceOf[js.Any], elseStatement.asInstanceOf[js.Any])).asInstanceOf[IfStatement]
-    
-    inline def updateImportClause(node: ImportClause, name: Unit, namedBindings: Unit, isTypeOnly: Boolean): ImportClause = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportClause")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], namedBindings.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ImportClause]
-    inline def updateImportClause(node: ImportClause, name: Unit, namedBindings: NamedImportBindings, isTypeOnly: Boolean): ImportClause = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportClause")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], namedBindings.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ImportClause]
-    inline def updateImportClause(node: ImportClause, name: Identifier, namedBindings: Unit, isTypeOnly: Boolean): ImportClause = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportClause")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], namedBindings.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ImportClause]
-    /** @deprecated Use `factory.updateImportClause` or the factory supplied by your transformation context instead. */
-    inline def updateImportClause(node: ImportClause, name: Identifier, namedBindings: NamedImportBindings, isTypeOnly: Boolean): ImportClause = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportClause")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], namedBindings.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any])).asInstanceOf[ImportClause]
-    
-    inline def updateImportDeclaration(
-      node: ImportDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      importClause: Unit,
-      moduleSpecifier: Expression
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def updateImportDeclaration(
-      node: ImportDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      importClause: Unit,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], assertClause.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    /** @deprecated Use `factory.updateImportDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateImportDeclaration(
-      node: ImportDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      importClause: ImportClause,
-      moduleSpecifier: Expression
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def updateImportDeclaration(
-      node: ImportDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      importClause: ImportClause,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], assertClause.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def updateImportDeclaration(
-      node: ImportDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      importClause: Unit,
-      moduleSpecifier: Expression
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def updateImportDeclaration(
-      node: ImportDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      importClause: Unit,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], assertClause.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def updateImportDeclaration(
-      node: ImportDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      importClause: ImportClause,
-      moduleSpecifier: Expression
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def updateImportDeclaration(
-      node: ImportDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      importClause: ImportClause,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], assertClause.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def updateImportDeclaration(
-      node: ImportDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      importClause: Unit,
-      moduleSpecifier: Expression
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def updateImportDeclaration(
-      node: ImportDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      importClause: Unit,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], assertClause.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def updateImportDeclaration(
-      node: ImportDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      importClause: ImportClause,
-      moduleSpecifier: Expression
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def updateImportDeclaration(
-      node: ImportDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      importClause: ImportClause,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], assertClause.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def updateImportDeclaration(
-      node: ImportDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      importClause: Unit,
-      moduleSpecifier: Expression
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def updateImportDeclaration(
-      node: ImportDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      importClause: Unit,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], assertClause.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def updateImportDeclaration(
-      node: ImportDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      importClause: ImportClause,
-      moduleSpecifier: Expression
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def updateImportDeclaration(
-      node: ImportDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      importClause: ImportClause,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], assertClause.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def updateImportDeclaration(
-      node: ImportDeclaration,
-      modifiers: js.Array[Modifier],
-      importClause: Unit,
-      moduleSpecifier: Expression
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def updateImportDeclaration(
-      node: ImportDeclaration,
-      modifiers: js.Array[Modifier],
-      importClause: Unit,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], assertClause.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    /** @deprecated Use `factory.updateImportDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateImportDeclaration(
-      node: ImportDeclaration,
-      modifiers: js.Array[Modifier],
-      importClause: ImportClause,
-      moduleSpecifier: Expression
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def updateImportDeclaration(
-      node: ImportDeclaration,
-      modifiers: js.Array[Modifier],
-      importClause: ImportClause,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], assertClause.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def updateImportDeclaration(node: ImportDeclaration, modifiers: Unit, importClause: Unit, moduleSpecifier: Expression): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def updateImportDeclaration(
-      node: ImportDeclaration,
-      modifiers: Unit,
-      importClause: Unit,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], assertClause.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def updateImportDeclaration(node: ImportDeclaration, modifiers: Unit, importClause: ImportClause, moduleSpecifier: Expression): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    inline def updateImportDeclaration(
-      node: ImportDeclaration,
-      modifiers: Unit,
-      importClause: ImportClause,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], importClause.asInstanceOf[js.Any], moduleSpecifier.asInstanceOf[js.Any], assertClause.asInstanceOf[js.Any])).asInstanceOf[ImportDeclaration]
-    
-    /** @deprecated Use `factory.updateImportEqualsDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateImportEqualsDeclaration(
-      node: ImportEqualsDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      isTypeOnly: Boolean,
-      name: Identifier,
-      moduleReference: ModuleReference
-    ): ImportEqualsDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportEqualsDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any], name.asInstanceOf[js.Any], moduleReference.asInstanceOf[js.Any])).asInstanceOf[ImportEqualsDeclaration]
-    inline def updateImportEqualsDeclaration(
-      node: ImportEqualsDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      isTypeOnly: Boolean,
-      name: Identifier,
-      moduleReference: ModuleReference
-    ): ImportEqualsDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportEqualsDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any], name.asInstanceOf[js.Any], moduleReference.asInstanceOf[js.Any])).asInstanceOf[ImportEqualsDeclaration]
-    inline def updateImportEqualsDeclaration(
-      node: ImportEqualsDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      isTypeOnly: Boolean,
-      name: Identifier,
-      moduleReference: ModuleReference
-    ): ImportEqualsDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportEqualsDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any], name.asInstanceOf[js.Any], moduleReference.asInstanceOf[js.Any])).asInstanceOf[ImportEqualsDeclaration]
-    inline def updateImportEqualsDeclaration(
-      node: ImportEqualsDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      isTypeOnly: Boolean,
-      name: Identifier,
-      moduleReference: ModuleReference
-    ): ImportEqualsDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportEqualsDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any], name.asInstanceOf[js.Any], moduleReference.asInstanceOf[js.Any])).asInstanceOf[ImportEqualsDeclaration]
-    /** @deprecated Use `factory.updateImportEqualsDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateImportEqualsDeclaration(
-      node: ImportEqualsDeclaration,
-      modifiers: js.Array[Modifier],
-      isTypeOnly: Boolean,
-      name: Identifier,
-      moduleReference: ModuleReference
-    ): ImportEqualsDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportEqualsDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any], name.asInstanceOf[js.Any], moduleReference.asInstanceOf[js.Any])).asInstanceOf[ImportEqualsDeclaration]
-    inline def updateImportEqualsDeclaration(
-      node: ImportEqualsDeclaration,
-      modifiers: Unit,
-      isTypeOnly: Boolean,
-      name: Identifier,
-      moduleReference: ModuleReference
-    ): ImportEqualsDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportEqualsDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any], name.asInstanceOf[js.Any], moduleReference.asInstanceOf[js.Any])).asInstanceOf[ImportEqualsDeclaration]
-    
-    inline def updateImportSpecifier(node: ImportSpecifier, isTypeOnly: Boolean, propertyName: Unit, name: Identifier): ImportSpecifier = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportSpecifier")(node.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ImportSpecifier]
-    /** @deprecated Use `factory.updateImportSpecifier` or the factory supplied by your transformation context instead. */
-    inline def updateImportSpecifier(node: ImportSpecifier, isTypeOnly: Boolean, propertyName: Identifier, name: Identifier): ImportSpecifier = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportSpecifier")(node.asInstanceOf[js.Any], isTypeOnly.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ImportSpecifier]
-    
-    /** @deprecated Use `factory.updateImportTypeNode` or the factory supplied by your transformation context instead. */
-    inline def updateImportTypeNode(node: ImportTypeNode, argument: TypeNode): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportTypeNode")(node.asInstanceOf[js.Any], argument.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def updateImportTypeNode(
-      node: ImportTypeNode,
-      argument: TypeNode,
-      assertions: Unit,
-      qualifier: Unit,
-      typeArguments: js.Array[TypeNode]
-    ): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportTypeNode")(node.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], assertions.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def updateImportTypeNode(
-      node: ImportTypeNode,
-      argument: TypeNode,
-      assertions: Unit,
-      qualifier: Unit,
-      typeArguments: js.Array[TypeNode],
-      isTypeOf: Boolean
-    ): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportTypeNode")(node.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], assertions.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], isTypeOf.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def updateImportTypeNode(
-      node: ImportTypeNode,
-      argument: TypeNode,
-      assertions: Unit,
-      qualifier: Unit,
-      typeArguments: Unit,
-      isTypeOf: Boolean
-    ): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportTypeNode")(node.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], assertions.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], isTypeOf.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def updateImportTypeNode(node: ImportTypeNode, argument: TypeNode, assertions: Unit, qualifier: EntityName): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportTypeNode")(node.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], assertions.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def updateImportTypeNode(
-      node: ImportTypeNode,
-      argument: TypeNode,
-      assertions: Unit,
-      qualifier: EntityName,
-      typeArguments: js.Array[TypeNode]
-    ): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportTypeNode")(node.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], assertions.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def updateImportTypeNode(
-      node: ImportTypeNode,
-      argument: TypeNode,
-      assertions: Unit,
-      qualifier: EntityName,
-      typeArguments: js.Array[TypeNode],
-      isTypeOf: Boolean
-    ): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportTypeNode")(node.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], assertions.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], isTypeOf.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def updateImportTypeNode(
-      node: ImportTypeNode,
-      argument: TypeNode,
-      assertions: Unit,
-      qualifier: EntityName,
-      typeArguments: Unit,
-      isTypeOf: Boolean
-    ): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportTypeNode")(node.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], assertions.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], isTypeOf.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def updateImportTypeNode(node: ImportTypeNode, argument: TypeNode, assertions: ImportTypeAssertionContainer): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportTypeNode")(node.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], assertions.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def updateImportTypeNode(
-      node: ImportTypeNode,
-      argument: TypeNode,
-      assertions: ImportTypeAssertionContainer,
-      qualifier: Unit,
-      typeArguments: js.Array[TypeNode]
-    ): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportTypeNode")(node.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], assertions.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def updateImportTypeNode(
-      node: ImportTypeNode,
-      argument: TypeNode,
-      assertions: ImportTypeAssertionContainer,
-      qualifier: Unit,
-      typeArguments: js.Array[TypeNode],
-      isTypeOf: Boolean
-    ): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportTypeNode")(node.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], assertions.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], isTypeOf.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def updateImportTypeNode(
-      node: ImportTypeNode,
-      argument: TypeNode,
-      assertions: ImportTypeAssertionContainer,
-      qualifier: Unit,
-      typeArguments: Unit,
-      isTypeOf: Boolean
-    ): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportTypeNode")(node.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], assertions.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], isTypeOf.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def updateImportTypeNode(
-      node: ImportTypeNode,
-      argument: TypeNode,
-      assertions: ImportTypeAssertionContainer,
-      qualifier: EntityName
-    ): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportTypeNode")(node.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], assertions.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def updateImportTypeNode(
-      node: ImportTypeNode,
-      argument: TypeNode,
-      assertions: ImportTypeAssertionContainer,
-      qualifier: EntityName,
-      typeArguments: js.Array[TypeNode]
-    ): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportTypeNode")(node.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], assertions.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def updateImportTypeNode(
-      node: ImportTypeNode,
-      argument: TypeNode,
-      assertions: ImportTypeAssertionContainer,
-      qualifier: EntityName,
-      typeArguments: js.Array[TypeNode],
-      isTypeOf: Boolean
-    ): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportTypeNode")(node.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], assertions.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], isTypeOf.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def updateImportTypeNode(
-      node: ImportTypeNode,
-      argument: TypeNode,
-      assertions: ImportTypeAssertionContainer,
-      qualifier: EntityName,
-      typeArguments: Unit,
-      isTypeOf: Boolean
-    ): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportTypeNode")(node.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], assertions.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], isTypeOf.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def updateImportTypeNode(node: ImportTypeNode, argument: TypeNode, qualifier: Unit, typeArguments: js.Array[TypeNode]): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportTypeNode")(node.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def updateImportTypeNode(
-      node: ImportTypeNode,
-      argument: TypeNode,
-      qualifier: Unit,
-      typeArguments: js.Array[TypeNode],
-      isTypeOf: Boolean
-    ): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportTypeNode")(node.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], isTypeOf.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def updateImportTypeNode(node: ImportTypeNode, argument: TypeNode, qualifier: Unit, typeArguments: Unit, isTypeOf: Boolean): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportTypeNode")(node.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], isTypeOf.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def updateImportTypeNode(node: ImportTypeNode, argument: TypeNode, qualifier: EntityName): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportTypeNode")(node.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def updateImportTypeNode(node: ImportTypeNode, argument: TypeNode, qualifier: EntityName, typeArguments: js.Array[TypeNode]): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportTypeNode")(node.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def updateImportTypeNode(
-      node: ImportTypeNode,
-      argument: TypeNode,
-      qualifier: EntityName,
-      typeArguments: js.Array[TypeNode],
-      isTypeOf: Boolean
-    ): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportTypeNode")(node.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], isTypeOf.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    inline def updateImportTypeNode(
-      node: ImportTypeNode,
-      argument: TypeNode,
-      qualifier: EntityName,
-      typeArguments: Unit,
-      isTypeOf: Boolean
-    ): ImportTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateImportTypeNode")(node.asInstanceOf[js.Any], argument.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], isTypeOf.asInstanceOf[js.Any])).asInstanceOf[ImportTypeNode]
-    
-    /** @deprecated Use `factory.updateIndexSignature` or the factory supplied by your transformation context instead. */
-    inline def updateIndexSignature(
-      node: IndexSignatureDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): IndexSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateIndexSignature")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[IndexSignatureDeclaration]
-    inline def updateIndexSignature(
-      node: IndexSignatureDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): IndexSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateIndexSignature")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[IndexSignatureDeclaration]
-    inline def updateIndexSignature(
-      node: IndexSignatureDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): IndexSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateIndexSignature")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[IndexSignatureDeclaration]
-    inline def updateIndexSignature(
-      node: IndexSignatureDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): IndexSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateIndexSignature")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[IndexSignatureDeclaration]
-    /** @deprecated Use `factory.updateIndexSignature` or the factory supplied by your transformation context instead. */
-    inline def updateIndexSignature(
-      node: IndexSignatureDeclaration,
-      modifiers: js.Array[Modifier],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): IndexSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateIndexSignature")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[IndexSignatureDeclaration]
-    inline def updateIndexSignature(
-      node: IndexSignatureDeclaration,
-      modifiers: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): IndexSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateIndexSignature")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[IndexSignatureDeclaration]
-    
-    /** @deprecated Use `factory.updateIndexedAccessTypeNode` or the factory supplied by your transformation context instead. */
-    inline def updateIndexedAccessTypeNode(node: IndexedAccessTypeNode, objectType: TypeNode, indexType: TypeNode): IndexedAccessTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateIndexedAccessTypeNode")(node.asInstanceOf[js.Any], objectType.asInstanceOf[js.Any], indexType.asInstanceOf[js.Any])).asInstanceOf[IndexedAccessTypeNode]
-    
-    /** @deprecated Use `factory.updateInferTypeNode` or the factory supplied by your transformation context instead. */
-    inline def updateInferTypeNode(node: InferTypeNode, typeParameter: TypeParameterDeclaration): InferTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateInferTypeNode")(node.asInstanceOf[js.Any], typeParameter.asInstanceOf[js.Any])).asInstanceOf[InferTypeNode]
-    
-    /** @deprecated Use `factory.updateInterfaceDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateInterfaceDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateInterfaceDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateInterfaceDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateInterfaceDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateInterfaceDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateInterfaceDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateInterfaceDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateInterfaceDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateInterfaceDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateInterfaceDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateInterfaceDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateInterfaceDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateInterfaceDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateInterfaceDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateInterfaceDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateInterfaceDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    /** @deprecated Use `factory.updateInterfaceDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateInterfaceDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateInterfaceDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateInterfaceDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateInterfaceDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateInterfaceDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateInterfaceDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateInterfaceDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    inline def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateInterfaceDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], heritageClauses.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[InterfaceDeclaration]
-    
-    /** @deprecated Use `factory.updateIntersectionTypeNode` or the factory supplied by your transformation context instead. */
-    inline def updateIntersectionTypeNode(node: IntersectionTypeNode, types: NodeArray[TypeNode]): IntersectionTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateIntersectionTypeNode")(node.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[IntersectionTypeNode]
-    
-    /** @deprecated Use `factory.updateJsxAttribute` or the factory supplied by your transformation context instead. */
-    inline def updateJsxAttribute(node: JsxAttribute, name: Identifier): JsxAttribute = (^.asInstanceOf[js.Dynamic].applyDynamic("updateJsxAttribute")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[JsxAttribute]
-    inline def updateJsxAttribute(node: JsxAttribute, name: Identifier, initializer: JsxAttributeValue): JsxAttribute = (^.asInstanceOf[js.Dynamic].applyDynamic("updateJsxAttribute")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[JsxAttribute]
-    
-    /** @deprecated Use `factory.updateJsxAttributes` or the factory supplied by your transformation context instead. */
-    inline def updateJsxAttributes(node: JsxAttributes, properties: js.Array[JsxAttributeLike]): JsxAttributes = (^.asInstanceOf[js.Dynamic].applyDynamic("updateJsxAttributes")(node.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[JsxAttributes]
-    
-    /** @deprecated Use `factory.updateJsxClosingElement` or the factory supplied by your transformation context instead. */
-    inline def updateJsxClosingElement(node: JsxClosingElement, tagName: JsxTagNameExpression): JsxClosingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateJsxClosingElement")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[JsxClosingElement]
-    
-    /** @deprecated Use `factory.updateJsxElement` or the factory supplied by your transformation context instead. */
-    inline def updateJsxElement(
-      node: JsxElement,
-      openingElement: JsxOpeningElement,
-      children: js.Array[JsxChild],
-      closingElement: JsxClosingElement
-    ): JsxElement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateJsxElement")(node.asInstanceOf[js.Any], openingElement.asInstanceOf[js.Any], children.asInstanceOf[js.Any], closingElement.asInstanceOf[js.Any])).asInstanceOf[JsxElement]
-    
-    /** @deprecated Use `factory.updateJsxExpression` or the factory supplied by your transformation context instead. */
-    inline def updateJsxExpression(node: JsxExpression): JsxExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("updateJsxExpression")(node.asInstanceOf[js.Any]).asInstanceOf[JsxExpression]
-    inline def updateJsxExpression(node: JsxExpression, expression: Expression): JsxExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateJsxExpression")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[JsxExpression]
-    
-    /** @deprecated Use `factory.updateJsxFragment` or the factory supplied by your transformation context instead. */
-    inline def updateJsxFragment(
-      node: JsxFragment,
-      openingFragment: JsxOpeningFragment,
-      children: js.Array[JsxChild],
-      closingFragment: JsxClosingFragment
-    ): JsxFragment = (^.asInstanceOf[js.Dynamic].applyDynamic("updateJsxFragment")(node.asInstanceOf[js.Any], openingFragment.asInstanceOf[js.Any], children.asInstanceOf[js.Any], closingFragment.asInstanceOf[js.Any])).asInstanceOf[JsxFragment]
-    
-    /** @deprecated Use `factory.updateJsxOpeningElement` or the factory supplied by your transformation context instead. */
-    inline def updateJsxOpeningElement(
-      node: JsxOpeningElement,
-      tagName: JsxTagNameExpression,
-      typeArguments: js.Array[TypeNode],
-      attributes: JsxAttributes
-    ): JsxOpeningElement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateJsxOpeningElement")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[JsxOpeningElement]
-    inline def updateJsxOpeningElement(
-      node: JsxOpeningElement,
-      tagName: JsxTagNameExpression,
-      typeArguments: Unit,
-      attributes: JsxAttributes
-    ): JsxOpeningElement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateJsxOpeningElement")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[JsxOpeningElement]
-    
-    /** @deprecated Use `factory.updateJsxSelfClosingElement` or the factory supplied by your transformation context instead. */
-    inline def updateJsxSelfClosingElement(
-      node: JsxSelfClosingElement,
-      tagName: JsxTagNameExpression,
-      typeArguments: js.Array[TypeNode],
-      attributes: JsxAttributes
-    ): JsxSelfClosingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateJsxSelfClosingElement")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[JsxSelfClosingElement]
-    inline def updateJsxSelfClosingElement(
-      node: JsxSelfClosingElement,
-      tagName: JsxTagNameExpression,
-      typeArguments: Unit,
-      attributes: JsxAttributes
-    ): JsxSelfClosingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateJsxSelfClosingElement")(node.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[JsxSelfClosingElement]
-    
-    /** @deprecated Use `factory.updateJsxSpreadAttribute` or the factory supplied by your transformation context instead. */
-    inline def updateJsxSpreadAttribute(node: JsxSpreadAttribute, expression: Expression): JsxSpreadAttribute = (^.asInstanceOf[js.Dynamic].applyDynamic("updateJsxSpreadAttribute")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[JsxSpreadAttribute]
-    
-    /** @deprecated Use `factory.updateJsxText` or the factory supplied by your transformation context instead. */
-    inline def updateJsxText(node: JsxText, text: String): JsxText = (^.asInstanceOf[js.Dynamic].applyDynamic("updateJsxText")(node.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[JsxText]
-    inline def updateJsxText(node: JsxText, text: String, containsOnlyTriviaWhiteSpaces: Boolean): JsxText = (^.asInstanceOf[js.Dynamic].applyDynamic("updateJsxText")(node.asInstanceOf[js.Any], text.asInstanceOf[js.Any], containsOnlyTriviaWhiteSpaces.asInstanceOf[js.Any])).asInstanceOf[JsxText]
-    
-    /** @deprecated Use `factory.updateLabelStatement` or the factory supplied by your transformation context instead. */
-    inline def updateLabel(node: LabeledStatement, label: Identifier, statement: Statement): LabeledStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateLabel")(node.asInstanceOf[js.Any], label.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[LabeledStatement]
-    
     inline def updateLanguageServiceSourceFile(sourceFile: SourceFile, scriptSnapshot: IScriptSnapshot, version: String): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateLanguageServiceSourceFile")(sourceFile.asInstanceOf[js.Any], scriptSnapshot.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
     inline def updateLanguageServiceSourceFile(
       sourceFile: SourceFile,
@@ -10245,683 +3403,6 @@ object libTypescriptWorkerLibTypescriptMod {
       aggressiveChecks: Boolean
     ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateLanguageServiceSourceFile")(sourceFile.asInstanceOf[js.Any], scriptSnapshot.asInstanceOf[js.Any], version.asInstanceOf[js.Any], textChangeRange.asInstanceOf[js.Any], aggressiveChecks.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
     
-    inline def updateLiteralTypeNode(node: LiteralTypeNode, literal: BooleanLiteral): LiteralTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateLiteralTypeNode")(node.asInstanceOf[js.Any], literal.asInstanceOf[js.Any])).asInstanceOf[LiteralTypeNode]
-    /** @deprecated Use `factory.updateLiteralTypeNode` or the factory supplied by your transformation context instead. */
-    inline def updateLiteralTypeNode(node: LiteralTypeNode, literal: LiteralExpression): LiteralTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateLiteralTypeNode")(node.asInstanceOf[js.Any], literal.asInstanceOf[js.Any])).asInstanceOf[LiteralTypeNode]
-    inline def updateLiteralTypeNode(node: LiteralTypeNode, literal: NullLiteral): LiteralTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateLiteralTypeNode")(node.asInstanceOf[js.Any], literal.asInstanceOf[js.Any])).asInstanceOf[LiteralTypeNode]
-    inline def updateLiteralTypeNode(node: LiteralTypeNode, literal: PrefixUnaryExpression): LiteralTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateLiteralTypeNode")(node.asInstanceOf[js.Any], literal.asInstanceOf[js.Any])).asInstanceOf[LiteralTypeNode]
-    
-    /** @deprecated Use `factory.updateMappedTypeNode` or the factory supplied by your transformation context instead. */
-    inline def updateMappedTypeNode(
-      node: MappedTypeNode,
-      readonlyToken: js.UndefOr[ReadonlyKeyword | PlusToken | MinusToken],
-      typeParameter: TypeParameterDeclaration,
-      nameType: js.UndefOr[TypeNode],
-      questionToken: js.UndefOr[QuestionToken | PlusToken | MinusToken],
-      `type`: js.UndefOr[TypeNode],
-      members: js.UndefOr[NodeArray[TypeElement]]
-    ): MappedTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateMappedTypeNode")(node.asInstanceOf[js.Any], readonlyToken.asInstanceOf[js.Any], typeParameter.asInstanceOf[js.Any], nameType.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[MappedTypeNode]
-    
-    /** @deprecated Use `factory.updateMetaProperty` or the factory supplied by your transformation context instead. */
-    inline def updateMetaProperty(node: MetaProperty, name: Identifier): MetaProperty = (^.asInstanceOf[js.Dynamic].applyDynamic("updateMetaProperty")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[MetaProperty]
-    
-    /** @deprecated Use `factory.updateMethodDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateMethod(
-      node: MethodDeclaration,
-      decorators: js.UndefOr[js.Array[Decorator]],
-      modifiers: js.UndefOr[js.Array[Modifier]],
-      asteriskToken: js.UndefOr[AsteriskToken],
-      name: PropertyName,
-      questionToken: js.UndefOr[QuestionToken],
-      typeParameters: js.UndefOr[js.Array[TypeParameterDeclaration]],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: js.UndefOr[TypeNode],
-      body: js.UndefOr[Block]
-    ): MethodDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateMethod")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[MethodDeclaration]
-    /** @deprecated Use `factory.updateMethodDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateMethod(
-      node: MethodDeclaration,
-      modifiers: js.UndefOr[js.Array[ModifierLike]],
-      asteriskToken: js.UndefOr[AsteriskToken],
-      name: PropertyName,
-      questionToken: js.UndefOr[QuestionToken],
-      typeParameters: js.UndefOr[js.Array[TypeParameterDeclaration]],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: js.UndefOr[TypeNode],
-      body: js.UndefOr[Block]
-    ): MethodDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateMethod")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[MethodDeclaration]
-    
-    inline def updateMethodSignature(
-      node: MethodSignature,
-      typeParameters: Unit,
-      parameters: NodeArray[ParameterDeclaration],
-      `type`: Unit,
-      name: PropertyName
-    ): MethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("updateMethodSignature")(node.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[MethodSignature]
-    inline def updateMethodSignature(
-      node: MethodSignature,
-      typeParameters: Unit,
-      parameters: NodeArray[ParameterDeclaration],
-      `type`: Unit,
-      name: PropertyName,
-      questionToken: QuestionToken
-    ): MethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("updateMethodSignature")(node.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any])).asInstanceOf[MethodSignature]
-    inline def updateMethodSignature(
-      node: MethodSignature,
-      typeParameters: Unit,
-      parameters: NodeArray[ParameterDeclaration],
-      `type`: TypeNode,
-      name: PropertyName
-    ): MethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("updateMethodSignature")(node.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[MethodSignature]
-    inline def updateMethodSignature(
-      node: MethodSignature,
-      typeParameters: Unit,
-      parameters: NodeArray[ParameterDeclaration],
-      `type`: TypeNode,
-      name: PropertyName,
-      questionToken: QuestionToken
-    ): MethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("updateMethodSignature")(node.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any])).asInstanceOf[MethodSignature]
-    inline def updateMethodSignature(
-      node: MethodSignature,
-      typeParameters: NodeArray[TypeParameterDeclaration],
-      parameters: NodeArray[ParameterDeclaration],
-      `type`: Unit,
-      name: PropertyName
-    ): MethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("updateMethodSignature")(node.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[MethodSignature]
-    inline def updateMethodSignature(
-      node: MethodSignature,
-      typeParameters: NodeArray[TypeParameterDeclaration],
-      parameters: NodeArray[ParameterDeclaration],
-      `type`: Unit,
-      name: PropertyName,
-      questionToken: QuestionToken
-    ): MethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("updateMethodSignature")(node.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any])).asInstanceOf[MethodSignature]
-    /** @deprecated Use `factory.updateMethodSignature` or the factory supplied by your transformation context instead. */
-    inline def updateMethodSignature(
-      node: MethodSignature,
-      typeParameters: NodeArray[TypeParameterDeclaration],
-      parameters: NodeArray[ParameterDeclaration],
-      `type`: TypeNode,
-      name: PropertyName
-    ): MethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("updateMethodSignature")(node.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[MethodSignature]
-    inline def updateMethodSignature(
-      node: MethodSignature,
-      typeParameters: NodeArray[TypeParameterDeclaration],
-      parameters: NodeArray[ParameterDeclaration],
-      `type`: TypeNode,
-      name: PropertyName,
-      questionToken: QuestionToken
-    ): MethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("updateMethodSignature")(node.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any])).asInstanceOf[MethodSignature]
-    
-    /** @deprecated Use `factory.updateModuleBlock` or the factory supplied by your transformation context instead. */
-    inline def updateModuleBlock(node: ModuleBlock, statements: js.Array[Statement]): ModuleBlock = (^.asInstanceOf[js.Dynamic].applyDynamic("updateModuleBlock")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any])).asInstanceOf[ModuleBlock]
-    
-    /** @deprecated Use `factory.updateModuleDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateModuleDeclaration(
-      node: ModuleDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: ModuleName
-    ): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateModuleDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    inline def updateModuleDeclaration(
-      node: ModuleDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: ModuleName,
-      body: ModuleBody
-    ): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateModuleDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    inline def updateModuleDeclaration(node: ModuleDeclaration, decorators: js.Array[Decorator], modifiers: Unit, name: ModuleName): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateModuleDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    inline def updateModuleDeclaration(
-      node: ModuleDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: ModuleName,
-      body: ModuleBody
-    ): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateModuleDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    inline def updateModuleDeclaration(node: ModuleDeclaration, decorators: Unit, modifiers: js.Array[Modifier], name: ModuleName): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateModuleDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    inline def updateModuleDeclaration(
-      node: ModuleDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: ModuleName,
-      body: ModuleBody
-    ): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateModuleDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    inline def updateModuleDeclaration(node: ModuleDeclaration, decorators: Unit, modifiers: Unit, name: ModuleName): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateModuleDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    inline def updateModuleDeclaration(node: ModuleDeclaration, decorators: Unit, modifiers: Unit, name: ModuleName, body: ModuleBody): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateModuleDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    /** @deprecated Use `factory.updateModuleDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateModuleDeclaration(node: ModuleDeclaration, modifiers: js.Array[Modifier], name: ModuleName): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateModuleDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    inline def updateModuleDeclaration(node: ModuleDeclaration, modifiers: js.Array[Modifier], name: ModuleName, body: ModuleBody): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateModuleDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    inline def updateModuleDeclaration(node: ModuleDeclaration, modifiers: Unit, name: ModuleName): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateModuleDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    inline def updateModuleDeclaration(node: ModuleDeclaration, modifiers: Unit, name: ModuleName, body: ModuleBody): ModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateModuleDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ModuleDeclaration]
-    
-    /** @deprecated Use `factory.updateNamedExports` or the factory supplied by your transformation context instead. */
-    inline def updateNamedExports(node: NamedExports, elements: js.Array[ExportSpecifier]): NamedExports = (^.asInstanceOf[js.Dynamic].applyDynamic("updateNamedExports")(node.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[NamedExports]
-    
-    /** @deprecated Use `factory.updateNamedImports` or the factory supplied by your transformation context instead. */
-    inline def updateNamedImports(node: NamedImports, elements: js.Array[ImportSpecifier]): NamedImports = (^.asInstanceOf[js.Dynamic].applyDynamic("updateNamedImports")(node.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[NamedImports]
-    
-    /** @deprecated Use `factory.updateNamespaceExport` or the factory supplied by your transformation context instead. */
-    inline def updateNamespaceExport(node: NamespaceExport, name: Identifier): NamespaceExport = (^.asInstanceOf[js.Dynamic].applyDynamic("updateNamespaceExport")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[NamespaceExport]
-    
-    /** @deprecated Use `factory.updateNamespaceExportDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateNamespaceExportDeclaration(node: NamespaceExportDeclaration, name: Identifier): NamespaceExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateNamespaceExportDeclaration")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[NamespaceExportDeclaration]
-    
-    /** @deprecated Use `factory.updateNamespaceImport` or the factory supplied by your transformation context instead. */
-    inline def updateNamespaceImport(node: NamespaceImport, name: Identifier): NamespaceImport = (^.asInstanceOf[js.Dynamic].applyDynamic("updateNamespaceImport")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[NamespaceImport]
-    
-    /** @deprecated Use `factory.updateNewExpression` or the factory supplied by your transformation context instead. */
-    inline def updateNew(node: NewExpression, expression: Expression): NewExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateNew")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[NewExpression]
-    inline def updateNew(node: NewExpression, expression: Expression, typeArguments: js.Array[TypeNode]): NewExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateNew")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any])).asInstanceOf[NewExpression]
-    inline def updateNew(
-      node: NewExpression,
-      expression: Expression,
-      typeArguments: js.Array[TypeNode],
-      argumentsArray: js.Array[Expression]
-    ): NewExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateNew")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], argumentsArray.asInstanceOf[js.Any])).asInstanceOf[NewExpression]
-    inline def updateNew(
-      node: NewExpression,
-      expression: Expression,
-      typeArguments: Unit,
-      argumentsArray: js.Array[Expression]
-    ): NewExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateNew")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], argumentsArray.asInstanceOf[js.Any])).asInstanceOf[NewExpression]
-    
-    /** @deprecated Use `factory.updateNonNullChain` or the factory supplied by your transformation context instead. */
-    inline def updateNonNullChain(node: NonNullChain, expression: Expression): NonNullChain = (^.asInstanceOf[js.Dynamic].applyDynamic("updateNonNullChain")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[NonNullChain]
-    
-    /** @deprecated Use `factory.updateNonNullExpression` or the factory supplied by your transformation context instead. */
-    inline def updateNonNullExpression(node: NonNullExpression, expression: Expression): NonNullExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateNonNullExpression")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[NonNullExpression]
-    
-    /** @deprecated Use `factory.updateObjectBindingPattern` or the factory supplied by your transformation context instead. */
-    inline def updateObjectBindingPattern(node: ObjectBindingPattern, elements: js.Array[BindingElement]): ObjectBindingPattern = (^.asInstanceOf[js.Dynamic].applyDynamic("updateObjectBindingPattern")(node.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[ObjectBindingPattern]
-    
-    /** @deprecated Use `factory.updateObjectLiteralExpression` or the factory supplied by your transformation context instead. */
-    inline def updateObjectLiteral(node: ObjectLiteralExpression, properties: js.Array[ObjectLiteralElementLike]): ObjectLiteralExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateObjectLiteral")(node.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[ObjectLiteralExpression]
-    
-    /** @deprecated Use `factory.updateOptionalTypeNode` or the factory supplied by your transformation context instead. */
-    inline def updateOptionalTypeNode(node: OptionalTypeNode, `type`: TypeNode): OptionalTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateOptionalTypeNode")(node.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[OptionalTypeNode]
-    
-    /** @deprecated Use `factory.updateParameterDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateParameter(
-      node: ParameterDeclaration,
-      decorators: js.UndefOr[js.Array[Decorator]],
-      modifiers: js.UndefOr[js.Array[Modifier]],
-      dotDotDotToken: js.UndefOr[DotDotDotToken],
-      name: String | BindingName,
-      questionToken: js.UndefOr[QuestionToken],
-      `type`: js.UndefOr[TypeNode],
-      initializer: js.UndefOr[Expression]
-    ): ParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateParameter")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], dotDotDotToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[ParameterDeclaration]
-    /** @deprecated Use `factory.updateParameterDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateParameter(
-      node: ParameterDeclaration,
-      modifiers: js.UndefOr[js.Array[ModifierLike]],
-      dotDotDotToken: js.UndefOr[DotDotDotToken],
-      name: String | BindingName,
-      questionToken: js.UndefOr[QuestionToken],
-      `type`: js.UndefOr[TypeNode],
-      initializer: js.UndefOr[Expression]
-    ): ParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateParameter")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], dotDotDotToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[ParameterDeclaration]
-    
-    /** @deprecated Use `factory.updateParenthesizedExpression` or the factory supplied by your transformation context instead. */
-    inline def updateParen(node: ParenthesizedExpression, expression: Expression): ParenthesizedExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateParen")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[ParenthesizedExpression]
-    
-    /** @deprecated Use `factory.updateParenthesizedType` or the factory supplied by your transformation context instead. */
-    inline def updateParenthesizedType(node: ParenthesizedTypeNode, `type`: TypeNode): ParenthesizedTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateParenthesizedType")(node.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[ParenthesizedTypeNode]
-    
-    /** @deprecated Use `factory.updatePartiallyEmittedExpression` or the factory supplied by your transformation context instead. */
-    inline def updatePartiallyEmittedExpression(node: PartiallyEmittedExpression, expression: Expression): PartiallyEmittedExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updatePartiallyEmittedExpression")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[PartiallyEmittedExpression]
-    
-    /** @deprecated Use `factory.updatePostfixUnaryExpression` or the factory supplied by your transformation context instead. */
-    inline def updatePostfix(node: PostfixUnaryExpression, operand: Expression): PostfixUnaryExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updatePostfix")(node.asInstanceOf[js.Any], operand.asInstanceOf[js.Any])).asInstanceOf[PostfixUnaryExpression]
-    
-    /** @deprecated Use `factory.updatePrefixExpression` or the factory supplied by your transformation context instead. */
-    inline def updatePrefix(node: PrefixUnaryExpression, operand: Expression): PrefixUnaryExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updatePrefix")(node.asInstanceOf[js.Any], operand.asInstanceOf[js.Any])).asInstanceOf[PrefixUnaryExpression]
-    
-    /** @deprecated Use `factory.updatePropertyDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateProperty(
-      node: PropertyDeclaration,
-      decorators: js.UndefOr[js.Array[Decorator]],
-      modifiers: js.UndefOr[js.Array[Modifier]],
-      name: String | PropertyName,
-      questionOrExclamationToken: js.UndefOr[QuestionToken | ExclamationToken],
-      `type`: js.UndefOr[TypeNode],
-      initializer: js.UndefOr[Expression]
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    /** @deprecated Use `factory.updatePropertyDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateProperty(node: PropertyDeclaration, modifiers: js.Array[ModifierLike], name: String): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      questionOrExclamationToken: ExclamationToken | QuestionToken
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: TypeNode
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      questionOrExclamationToken: Unit,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      questionOrExclamationToken: Unit,
-      `type`: TypeNode
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      questionOrExclamationToken: Unit,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def updateProperty(node: PropertyDeclaration, modifiers: js.Array[ModifierLike], name: PropertyName): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      questionOrExclamationToken: ExclamationToken | QuestionToken
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: TypeNode
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      questionOrExclamationToken: Unit,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      questionOrExclamationToken: Unit,
-      `type`: TypeNode
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      questionOrExclamationToken: Unit,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def updateProperty(node: PropertyDeclaration, modifiers: Unit, name: String): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: Unit,
-      name: String,
-      questionOrExclamationToken: ExclamationToken | QuestionToken
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: Unit,
-      name: String,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: Unit,
-      name: String,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: TypeNode
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: Unit,
-      name: String,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: Unit,
-      name: String,
-      questionOrExclamationToken: Unit,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: Unit,
-      name: String,
-      questionOrExclamationToken: Unit,
-      `type`: TypeNode
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: Unit,
-      name: String,
-      questionOrExclamationToken: Unit,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def updateProperty(node: PropertyDeclaration, modifiers: Unit, name: PropertyName): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: Unit,
-      name: PropertyName,
-      questionOrExclamationToken: ExclamationToken | QuestionToken
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: Unit,
-      name: PropertyName,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: Unit,
-      name: PropertyName,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: TypeNode
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: Unit,
-      name: PropertyName,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: Unit,
-      name: PropertyName,
-      questionOrExclamationToken: Unit,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: Unit,
-      name: PropertyName,
-      questionOrExclamationToken: Unit,
-      `type`: TypeNode
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    inline def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: Unit,
-      name: PropertyName,
-      questionOrExclamationToken: Unit,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertyDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionOrExclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyDeclaration]
-    
-    /** @deprecated Use `factory.updatePropertyAccessExpression` or the factory supplied by your transformation context instead. */
-    inline def updatePropertyAccess(node: PropertyAccessExpression, expression: Expression, name: MemberName): PropertyAccessExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updatePropertyAccess")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[PropertyAccessExpression]
-    
-    inline def updatePropertyAccessChain(node: PropertyAccessChain, expression: Expression, questionDotToken: Unit, name: MemberName): PropertyAccessChain = (^.asInstanceOf[js.Dynamic].applyDynamic("updatePropertyAccessChain")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], questionDotToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[PropertyAccessChain]
-    /** @deprecated Use `factory.updatePropertyAccessChain` or the factory supplied by your transformation context instead. */
-    inline def updatePropertyAccessChain(
-      node: PropertyAccessChain,
-      expression: Expression,
-      questionDotToken: QuestionDotToken,
-      name: MemberName
-    ): PropertyAccessChain = (^.asInstanceOf[js.Dynamic].applyDynamic("updatePropertyAccessChain")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], questionDotToken.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[PropertyAccessChain]
-    
-    /** @deprecated Use `factory.updatePropertyAssignment` or the factory supplied by your transformation context instead. */
-    inline def updatePropertyAssignment(node: PropertyAssignment, name: PropertyName, initializer: Expression): PropertyAssignment = (^.asInstanceOf[js.Dynamic].applyDynamic("updatePropertyAssignment")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertyAssignment]
-    
-    /** @deprecated Use `factory.updatePropertySignature` or the factory supplied by your transformation context instead. */
-    inline def updatePropertySignature(node: PropertySignature, modifiers: js.Array[Modifier], name: PropertyName): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("updatePropertySignature")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def updatePropertySignature(
-      node: PropertySignature,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      questionToken: Unit,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("updatePropertySignature")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def updatePropertySignature(
-      node: PropertySignature,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      questionToken: Unit,
-      `type`: TypeNode
-    ): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("updatePropertySignature")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def updatePropertySignature(
-      node: PropertySignature,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      questionToken: Unit,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("updatePropertySignature")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def updatePropertySignature(
-      node: PropertySignature,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      questionToken: QuestionToken
-    ): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("updatePropertySignature")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def updatePropertySignature(
-      node: PropertySignature,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      questionToken: QuestionToken,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("updatePropertySignature")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def updatePropertySignature(
-      node: PropertySignature,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      questionToken: QuestionToken,
-      `type`: TypeNode
-    ): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("updatePropertySignature")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def updatePropertySignature(
-      node: PropertySignature,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      questionToken: QuestionToken,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("updatePropertySignature")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def updatePropertySignature(node: PropertySignature, modifiers: Unit, name: PropertyName): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("updatePropertySignature")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def updatePropertySignature(
-      node: PropertySignature,
-      modifiers: Unit,
-      name: PropertyName,
-      questionToken: Unit,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("updatePropertySignature")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def updatePropertySignature(
-      node: PropertySignature,
-      modifiers: Unit,
-      name: PropertyName,
-      questionToken: Unit,
-      `type`: TypeNode
-    ): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("updatePropertySignature")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def updatePropertySignature(
-      node: PropertySignature,
-      modifiers: Unit,
-      name: PropertyName,
-      questionToken: Unit,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("updatePropertySignature")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def updatePropertySignature(node: PropertySignature, modifiers: Unit, name: PropertyName, questionToken: QuestionToken): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("updatePropertySignature")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def updatePropertySignature(
-      node: PropertySignature,
-      modifiers: Unit,
-      name: PropertyName,
-      questionToken: QuestionToken,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("updatePropertySignature")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def updatePropertySignature(
-      node: PropertySignature,
-      modifiers: Unit,
-      name: PropertyName,
-      questionToken: QuestionToken,
-      `type`: TypeNode
-    ): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("updatePropertySignature")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    inline def updatePropertySignature(
-      node: PropertySignature,
-      modifiers: Unit,
-      name: PropertyName,
-      questionToken: QuestionToken,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("updatePropertySignature")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], questionToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[PropertySignature]
-    
-    /** @deprecated Use `factory.updateQualifiedName` or the factory supplied by your transformation context instead. */
-    inline def updateQualifiedName(node: QualifiedName, left: EntityName, right: Identifier): QualifiedName = (^.asInstanceOf[js.Dynamic].applyDynamic("updateQualifiedName")(node.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[QualifiedName]
-    
-    /** @deprecated Use `factory.updateRestTypeNode` or the factory supplied by your transformation context instead. */
-    inline def updateRestTypeNode(node: RestTypeNode, `type`: TypeNode): RestTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRestTypeNode")(node.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[RestTypeNode]
-    
-    /** @deprecated Use `factory.updateReturnStatement` or the factory supplied by your transformation context instead. */
-    inline def updateReturn(node: ReturnStatement): ReturnStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("updateReturn")(node.asInstanceOf[js.Any]).asInstanceOf[ReturnStatement]
-    inline def updateReturn(node: ReturnStatement, expression: Expression): ReturnStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateReturn")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[ReturnStatement]
-    
-    /** @deprecated Use `factory.updateSetAccessorDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateSetAccessor(
-      node: SetAccessorDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSetAccessor")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    inline def updateSetAccessor(
-      node: SetAccessorDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSetAccessor")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    inline def updateSetAccessor(
-      node: SetAccessorDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSetAccessor")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    inline def updateSetAccessor(
-      node: SetAccessorDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSetAccessor")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    inline def updateSetAccessor(
-      node: SetAccessorDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSetAccessor")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    inline def updateSetAccessor(
-      node: SetAccessorDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSetAccessor")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    inline def updateSetAccessor(
-      node: SetAccessorDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSetAccessor")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    inline def updateSetAccessor(
-      node: SetAccessorDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSetAccessor")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    /** @deprecated Use `factory.updateSetAccessorDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateSetAccessor(
-      node: SetAccessorDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSetAccessor")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    inline def updateSetAccessor(
-      node: SetAccessorDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSetAccessor")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    inline def updateSetAccessor(
-      node: SetAccessorDeclaration,
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSetAccessor")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    inline def updateSetAccessor(
-      node: SetAccessorDeclaration,
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): SetAccessorDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSetAccessor")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[SetAccessorDeclaration]
-    
-    /** @deprecated Use `factory.updateShorthandPropertyAssignment` or the factory supplied by your transformation context instead. */
-    inline def updateShorthandPropertyAssignment(node: ShorthandPropertyAssignment, name: Identifier): ShorthandPropertyAssignment = (^.asInstanceOf[js.Dynamic].applyDynamic("updateShorthandPropertyAssignment")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ShorthandPropertyAssignment]
-    inline def updateShorthandPropertyAssignment(node: ShorthandPropertyAssignment, name: Identifier, objectAssignmentInitializer: Expression): ShorthandPropertyAssignment = (^.asInstanceOf[js.Dynamic].applyDynamic("updateShorthandPropertyAssignment")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], objectAssignmentInitializer.asInstanceOf[js.Any])).asInstanceOf[ShorthandPropertyAssignment]
-    
     inline def updateSourceFile(sourceFile: SourceFile, newText: String, textChangeRange: TextChangeRange): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFile")(sourceFile.asInstanceOf[js.Any], newText.asInstanceOf[js.Any], textChangeRange.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
     inline def updateSourceFile(
       sourceFile: SourceFile,
@@ -10930,551 +3411,12 @@ object libTypescriptWorkerLibTypescriptMod {
       aggressiveChecks: Boolean
     ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFile")(sourceFile.asInstanceOf[js.Any], newText.asInstanceOf[js.Any], textChangeRange.asInstanceOf[js.Any], aggressiveChecks.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
     
-    /** @deprecated Use `factory.updateSourceFile` or the factory supplied by your transformation context instead. */
-    inline def updateSourceFileNode(node: SourceFile, statements: js.Array[Statement]): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFileNode")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-    inline def updateSourceFileNode(node: SourceFile, statements: js.Array[Statement], isDeclarationFile: Boolean): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFileNode")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any], isDeclarationFile.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-    inline def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Boolean,
-      referencedFiles: js.Array[FileReference]
-    ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFileNode")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any], isDeclarationFile.asInstanceOf[js.Any], referencedFiles.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-    inline def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Boolean,
-      referencedFiles: js.Array[FileReference],
-      typeReferences: js.Array[FileReference]
-    ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFileNode")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any], isDeclarationFile.asInstanceOf[js.Any], referencedFiles.asInstanceOf[js.Any], typeReferences.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-    inline def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Boolean,
-      referencedFiles: js.Array[FileReference],
-      typeReferences: js.Array[FileReference],
-      hasNoDefaultLib: Boolean
-    ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFileNode")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any], isDeclarationFile.asInstanceOf[js.Any], referencedFiles.asInstanceOf[js.Any], typeReferences.asInstanceOf[js.Any], hasNoDefaultLib.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-    inline def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Boolean,
-      referencedFiles: js.Array[FileReference],
-      typeReferences: js.Array[FileReference],
-      hasNoDefaultLib: Boolean,
-      libReferences: js.Array[FileReference]
-    ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFileNode")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any], isDeclarationFile.asInstanceOf[js.Any], referencedFiles.asInstanceOf[js.Any], typeReferences.asInstanceOf[js.Any], hasNoDefaultLib.asInstanceOf[js.Any], libReferences.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-    inline def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Boolean,
-      referencedFiles: js.Array[FileReference],
-      typeReferences: js.Array[FileReference],
-      hasNoDefaultLib: Unit,
-      libReferences: js.Array[FileReference]
-    ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFileNode")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any], isDeclarationFile.asInstanceOf[js.Any], referencedFiles.asInstanceOf[js.Any], typeReferences.asInstanceOf[js.Any], hasNoDefaultLib.asInstanceOf[js.Any], libReferences.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-    inline def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Boolean,
-      referencedFiles: js.Array[FileReference],
-      typeReferences: Unit,
-      hasNoDefaultLib: Boolean
-    ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFileNode")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any], isDeclarationFile.asInstanceOf[js.Any], referencedFiles.asInstanceOf[js.Any], typeReferences.asInstanceOf[js.Any], hasNoDefaultLib.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-    inline def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Boolean,
-      referencedFiles: js.Array[FileReference],
-      typeReferences: Unit,
-      hasNoDefaultLib: Boolean,
-      libReferences: js.Array[FileReference]
-    ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFileNode")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any], isDeclarationFile.asInstanceOf[js.Any], referencedFiles.asInstanceOf[js.Any], typeReferences.asInstanceOf[js.Any], hasNoDefaultLib.asInstanceOf[js.Any], libReferences.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-    inline def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Boolean,
-      referencedFiles: js.Array[FileReference],
-      typeReferences: Unit,
-      hasNoDefaultLib: Unit,
-      libReferences: js.Array[FileReference]
-    ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFileNode")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any], isDeclarationFile.asInstanceOf[js.Any], referencedFiles.asInstanceOf[js.Any], typeReferences.asInstanceOf[js.Any], hasNoDefaultLib.asInstanceOf[js.Any], libReferences.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-    inline def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Boolean,
-      referencedFiles: Unit,
-      typeReferences: js.Array[FileReference]
-    ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFileNode")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any], isDeclarationFile.asInstanceOf[js.Any], referencedFiles.asInstanceOf[js.Any], typeReferences.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-    inline def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Boolean,
-      referencedFiles: Unit,
-      typeReferences: js.Array[FileReference],
-      hasNoDefaultLib: Boolean
-    ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFileNode")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any], isDeclarationFile.asInstanceOf[js.Any], referencedFiles.asInstanceOf[js.Any], typeReferences.asInstanceOf[js.Any], hasNoDefaultLib.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-    inline def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Boolean,
-      referencedFiles: Unit,
-      typeReferences: js.Array[FileReference],
-      hasNoDefaultLib: Boolean,
-      libReferences: js.Array[FileReference]
-    ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFileNode")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any], isDeclarationFile.asInstanceOf[js.Any], referencedFiles.asInstanceOf[js.Any], typeReferences.asInstanceOf[js.Any], hasNoDefaultLib.asInstanceOf[js.Any], libReferences.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-    inline def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Boolean,
-      referencedFiles: Unit,
-      typeReferences: js.Array[FileReference],
-      hasNoDefaultLib: Unit,
-      libReferences: js.Array[FileReference]
-    ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFileNode")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any], isDeclarationFile.asInstanceOf[js.Any], referencedFiles.asInstanceOf[js.Any], typeReferences.asInstanceOf[js.Any], hasNoDefaultLib.asInstanceOf[js.Any], libReferences.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-    inline def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Boolean,
-      referencedFiles: Unit,
-      typeReferences: Unit,
-      hasNoDefaultLib: Boolean
-    ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFileNode")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any], isDeclarationFile.asInstanceOf[js.Any], referencedFiles.asInstanceOf[js.Any], typeReferences.asInstanceOf[js.Any], hasNoDefaultLib.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-    inline def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Boolean,
-      referencedFiles: Unit,
-      typeReferences: Unit,
-      hasNoDefaultLib: Boolean,
-      libReferences: js.Array[FileReference]
-    ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFileNode")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any], isDeclarationFile.asInstanceOf[js.Any], referencedFiles.asInstanceOf[js.Any], typeReferences.asInstanceOf[js.Any], hasNoDefaultLib.asInstanceOf[js.Any], libReferences.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-    inline def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Boolean,
-      referencedFiles: Unit,
-      typeReferences: Unit,
-      hasNoDefaultLib: Unit,
-      libReferences: js.Array[FileReference]
-    ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFileNode")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any], isDeclarationFile.asInstanceOf[js.Any], referencedFiles.asInstanceOf[js.Any], typeReferences.asInstanceOf[js.Any], hasNoDefaultLib.asInstanceOf[js.Any], libReferences.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-    inline def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Unit,
-      referencedFiles: js.Array[FileReference]
-    ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFileNode")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any], isDeclarationFile.asInstanceOf[js.Any], referencedFiles.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-    inline def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Unit,
-      referencedFiles: js.Array[FileReference],
-      typeReferences: js.Array[FileReference]
-    ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFileNode")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any], isDeclarationFile.asInstanceOf[js.Any], referencedFiles.asInstanceOf[js.Any], typeReferences.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-    inline def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Unit,
-      referencedFiles: js.Array[FileReference],
-      typeReferences: js.Array[FileReference],
-      hasNoDefaultLib: Boolean
-    ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFileNode")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any], isDeclarationFile.asInstanceOf[js.Any], referencedFiles.asInstanceOf[js.Any], typeReferences.asInstanceOf[js.Any], hasNoDefaultLib.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-    inline def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Unit,
-      referencedFiles: js.Array[FileReference],
-      typeReferences: js.Array[FileReference],
-      hasNoDefaultLib: Boolean,
-      libReferences: js.Array[FileReference]
-    ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFileNode")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any], isDeclarationFile.asInstanceOf[js.Any], referencedFiles.asInstanceOf[js.Any], typeReferences.asInstanceOf[js.Any], hasNoDefaultLib.asInstanceOf[js.Any], libReferences.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-    inline def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Unit,
-      referencedFiles: js.Array[FileReference],
-      typeReferences: js.Array[FileReference],
-      hasNoDefaultLib: Unit,
-      libReferences: js.Array[FileReference]
-    ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFileNode")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any], isDeclarationFile.asInstanceOf[js.Any], referencedFiles.asInstanceOf[js.Any], typeReferences.asInstanceOf[js.Any], hasNoDefaultLib.asInstanceOf[js.Any], libReferences.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-    inline def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Unit,
-      referencedFiles: js.Array[FileReference],
-      typeReferences: Unit,
-      hasNoDefaultLib: Boolean
-    ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFileNode")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any], isDeclarationFile.asInstanceOf[js.Any], referencedFiles.asInstanceOf[js.Any], typeReferences.asInstanceOf[js.Any], hasNoDefaultLib.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-    inline def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Unit,
-      referencedFiles: js.Array[FileReference],
-      typeReferences: Unit,
-      hasNoDefaultLib: Boolean,
-      libReferences: js.Array[FileReference]
-    ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFileNode")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any], isDeclarationFile.asInstanceOf[js.Any], referencedFiles.asInstanceOf[js.Any], typeReferences.asInstanceOf[js.Any], hasNoDefaultLib.asInstanceOf[js.Any], libReferences.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-    inline def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Unit,
-      referencedFiles: js.Array[FileReference],
-      typeReferences: Unit,
-      hasNoDefaultLib: Unit,
-      libReferences: js.Array[FileReference]
-    ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFileNode")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any], isDeclarationFile.asInstanceOf[js.Any], referencedFiles.asInstanceOf[js.Any], typeReferences.asInstanceOf[js.Any], hasNoDefaultLib.asInstanceOf[js.Any], libReferences.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-    inline def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Unit,
-      referencedFiles: Unit,
-      typeReferences: js.Array[FileReference]
-    ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFileNode")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any], isDeclarationFile.asInstanceOf[js.Any], referencedFiles.asInstanceOf[js.Any], typeReferences.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-    inline def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Unit,
-      referencedFiles: Unit,
-      typeReferences: js.Array[FileReference],
-      hasNoDefaultLib: Boolean
-    ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFileNode")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any], isDeclarationFile.asInstanceOf[js.Any], referencedFiles.asInstanceOf[js.Any], typeReferences.asInstanceOf[js.Any], hasNoDefaultLib.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-    inline def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Unit,
-      referencedFiles: Unit,
-      typeReferences: js.Array[FileReference],
-      hasNoDefaultLib: Boolean,
-      libReferences: js.Array[FileReference]
-    ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFileNode")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any], isDeclarationFile.asInstanceOf[js.Any], referencedFiles.asInstanceOf[js.Any], typeReferences.asInstanceOf[js.Any], hasNoDefaultLib.asInstanceOf[js.Any], libReferences.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-    inline def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Unit,
-      referencedFiles: Unit,
-      typeReferences: js.Array[FileReference],
-      hasNoDefaultLib: Unit,
-      libReferences: js.Array[FileReference]
-    ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFileNode")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any], isDeclarationFile.asInstanceOf[js.Any], referencedFiles.asInstanceOf[js.Any], typeReferences.asInstanceOf[js.Any], hasNoDefaultLib.asInstanceOf[js.Any], libReferences.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-    inline def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Unit,
-      referencedFiles: Unit,
-      typeReferences: Unit,
-      hasNoDefaultLib: Boolean
-    ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFileNode")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any], isDeclarationFile.asInstanceOf[js.Any], referencedFiles.asInstanceOf[js.Any], typeReferences.asInstanceOf[js.Any], hasNoDefaultLib.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-    inline def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Unit,
-      referencedFiles: Unit,
-      typeReferences: Unit,
-      hasNoDefaultLib: Boolean,
-      libReferences: js.Array[FileReference]
-    ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFileNode")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any], isDeclarationFile.asInstanceOf[js.Any], referencedFiles.asInstanceOf[js.Any], typeReferences.asInstanceOf[js.Any], hasNoDefaultLib.asInstanceOf[js.Any], libReferences.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-    inline def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Unit,
-      referencedFiles: Unit,
-      typeReferences: Unit,
-      hasNoDefaultLib: Unit,
-      libReferences: js.Array[FileReference]
-    ): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSourceFileNode")(node.asInstanceOf[js.Any], statements.asInstanceOf[js.Any], isDeclarationFile.asInstanceOf[js.Any], referencedFiles.asInstanceOf[js.Any], typeReferences.asInstanceOf[js.Any], hasNoDefaultLib.asInstanceOf[js.Any], libReferences.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-    
-    /** @deprecated Use `factory.updateSpreadExpression` or the factory supplied by your transformation context instead. */
-    inline def updateSpread(node: SpreadElement, expression: Expression): SpreadElement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSpread")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[SpreadElement]
-    
-    /** @deprecated Use `factory.updateSpreadAssignment` or the factory supplied by your transformation context instead. */
-    inline def updateSpreadAssignment(node: SpreadAssignment, expression: Expression): SpreadAssignment = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSpreadAssignment")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[SpreadAssignment]
-    
-    /** @deprecated Use `factory.updateExpressionStatement` or the factory supplied by your transformation context instead. */
-    inline def updateStatement(node: ExpressionStatement, expression: Expression): ExpressionStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateStatement")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[ExpressionStatement]
-    
-    /** @deprecated Use `factory.updateSwitchStatement` or the factory supplied by your transformation context instead. */
-    inline def updateSwitch(node: SwitchStatement, expression: Expression, caseBlock: CaseBlock): SwitchStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSwitch")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], caseBlock.asInstanceOf[js.Any])).asInstanceOf[SwitchStatement]
-    
-    /** @deprecated Use `factory.updateTaggedTemplate` or the factory supplied by your transformation context instead. */
-    inline def updateTaggedTemplate(node: TaggedTemplateExpression, tag: Expression, template: TemplateLiteral): TaggedTemplateExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTaggedTemplate")(node.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], template.asInstanceOf[js.Any])).asInstanceOf[TaggedTemplateExpression]
-    /** @deprecated Use `factory.updateTaggedTemplate` or the factory supplied by your transformation context instead. */
-    inline def updateTaggedTemplate(
-      node: TaggedTemplateExpression,
-      tag: Expression,
-      typeArguments: js.Array[TypeNode],
-      template: TemplateLiteral
-    ): TaggedTemplateExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTaggedTemplate")(node.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], template.asInstanceOf[js.Any])).asInstanceOf[TaggedTemplateExpression]
-    inline def updateTaggedTemplate(node: TaggedTemplateExpression, tag: Expression, typeArguments: Unit, template: TemplateLiteral): TaggedTemplateExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTaggedTemplate")(node.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any], template.asInstanceOf[js.Any])).asInstanceOf[TaggedTemplateExpression]
-    
-    /** @deprecated Use `factory.updateTemplateExpression` or the factory supplied by your transformation context instead. */
-    inline def updateTemplateExpression(node: TemplateExpression, head: TemplateHead, templateSpans: js.Array[TemplateSpan]): TemplateExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTemplateExpression")(node.asInstanceOf[js.Any], head.asInstanceOf[js.Any], templateSpans.asInstanceOf[js.Any])).asInstanceOf[TemplateExpression]
-    
-    /** @deprecated Use `factory.updateTemplateSpan` or the factory supplied by your transformation context instead. */
-    inline def updateTemplateSpan(node: TemplateSpan, expression: Expression, literal: TemplateMiddle): TemplateSpan = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTemplateSpan")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], literal.asInstanceOf[js.Any])).asInstanceOf[TemplateSpan]
-    inline def updateTemplateSpan(node: TemplateSpan, expression: Expression, literal: TemplateTail): TemplateSpan = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTemplateSpan")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], literal.asInstanceOf[js.Any])).asInstanceOf[TemplateSpan]
-    
-    /** @deprecated Use `factory.updateThrowStatement` or the factory supplied by your transformation context instead. */
-    inline def updateThrow(node: ThrowStatement, expression: Expression): ThrowStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateThrow")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[ThrowStatement]
-    
-    /** @deprecated Use `factory.updateTryStatement` or the factory supplied by your transformation context instead. */
-    inline def updateTry(node: TryStatement, tryBlock: Block): TryStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTry")(node.asInstanceOf[js.Any], tryBlock.asInstanceOf[js.Any])).asInstanceOf[TryStatement]
-    inline def updateTry(node: TryStatement, tryBlock: Block, catchClause: Unit, finallyBlock: Block): TryStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTry")(node.asInstanceOf[js.Any], tryBlock.asInstanceOf[js.Any], catchClause.asInstanceOf[js.Any], finallyBlock.asInstanceOf[js.Any])).asInstanceOf[TryStatement]
-    inline def updateTry(node: TryStatement, tryBlock: Block, catchClause: CatchClause): TryStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTry")(node.asInstanceOf[js.Any], tryBlock.asInstanceOf[js.Any], catchClause.asInstanceOf[js.Any])).asInstanceOf[TryStatement]
-    inline def updateTry(node: TryStatement, tryBlock: Block, catchClause: CatchClause, finallyBlock: Block): TryStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTry")(node.asInstanceOf[js.Any], tryBlock.asInstanceOf[js.Any], catchClause.asInstanceOf[js.Any], finallyBlock.asInstanceOf[js.Any])).asInstanceOf[TryStatement]
-    
-    /** @deprecated Use `factory.updateTupleTypeNode` or the factory supplied by your transformation context instead. */
-    inline def updateTupleTypeNode(node: TupleTypeNode, elements: js.Array[TypeNode | NamedTupleMember]): TupleTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTupleTypeNode")(node.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[TupleTypeNode]
-    
-    /** @deprecated Use `factory.updateTypeAliasDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateTypeAliasDeclaration(
-      node: TypeAliasDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypeAliasDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    inline def updateTypeAliasDeclaration(
-      node: TypeAliasDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      `type`: TypeNode
-    ): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypeAliasDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    inline def updateTypeAliasDeclaration(
-      node: TypeAliasDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypeAliasDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    inline def updateTypeAliasDeclaration(
-      node: TypeAliasDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      `type`: TypeNode
-    ): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypeAliasDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    inline def updateTypeAliasDeclaration(
-      node: TypeAliasDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypeAliasDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    inline def updateTypeAliasDeclaration(
-      node: TypeAliasDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      `type`: TypeNode
-    ): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypeAliasDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    inline def updateTypeAliasDeclaration(
-      node: TypeAliasDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypeAliasDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    inline def updateTypeAliasDeclaration(
-      node: TypeAliasDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      `type`: TypeNode
-    ): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypeAliasDeclaration")(node.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    /** @deprecated Use `factory.updateTypeAliasDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateTypeAliasDeclaration(
-      node: TypeAliasDeclaration,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypeAliasDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    inline def updateTypeAliasDeclaration(
-      node: TypeAliasDeclaration,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      `type`: TypeNode
-    ): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypeAliasDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    inline def updateTypeAliasDeclaration(
-      node: TypeAliasDeclaration,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypeAliasDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    inline def updateTypeAliasDeclaration(
-      node: TypeAliasDeclaration,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      `type`: TypeNode
-    ): TypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypeAliasDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeAliasDeclaration]
-    
-    /** @deprecated Use `factory.updateTypeAssertion` or the factory supplied by your transformation context instead. */
-    inline def updateTypeAssertion(node: TypeAssertion, `type`: TypeNode, expression: Expression): TypeAssertion = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypeAssertion")(node.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[TypeAssertion]
-    
-    /** @deprecated Use `factory.updateTypeLiteralNode` or the factory supplied by your transformation context instead. */
-    inline def updateTypeLiteralNode(node: TypeLiteralNode, members: NodeArray[TypeElement]): TypeLiteralNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypeLiteralNode")(node.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[TypeLiteralNode]
-    
-    /** @deprecated Use `factory.updateTypeOfExpression` or the factory supplied by your transformation context instead. */
-    inline def updateTypeOf(node: TypeOfExpression, expression: Expression): TypeOfExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypeOf")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[TypeOfExpression]
-    
-    /** @deprecated Use `factory.updateTypeOperatorNode` or the factory supplied by your transformation context instead. */
-    inline def updateTypeOperatorNode(node: TypeOperatorNode, `type`: TypeNode): TypeOperatorNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypeOperatorNode")(node.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypeOperatorNode]
-    
-    /** @deprecated Use `factory.updateTypeParameterDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateTypeParameterDeclaration(node: TypeParameterDeclaration, modifiers: js.Array[Modifier], name: Identifier): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypeParameterDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    inline def updateTypeParameterDeclaration(
-      node: TypeParameterDeclaration,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      constraint: Unit,
-      defaultType: TypeNode
-    ): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypeParameterDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], defaultType.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    inline def updateTypeParameterDeclaration(
-      node: TypeParameterDeclaration,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      constraint: TypeNode
-    ): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypeParameterDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    inline def updateTypeParameterDeclaration(
-      node: TypeParameterDeclaration,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      constraint: TypeNode,
-      defaultType: TypeNode
-    ): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypeParameterDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], defaultType.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    inline def updateTypeParameterDeclaration(node: TypeParameterDeclaration, modifiers: Unit, name: Identifier): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypeParameterDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    inline def updateTypeParameterDeclaration(
-      node: TypeParameterDeclaration,
-      modifiers: Unit,
-      name: Identifier,
-      constraint: Unit,
-      defaultType: TypeNode
-    ): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypeParameterDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], defaultType.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    inline def updateTypeParameterDeclaration(node: TypeParameterDeclaration, modifiers: Unit, name: Identifier, constraint: TypeNode): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypeParameterDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    inline def updateTypeParameterDeclaration(
-      node: TypeParameterDeclaration,
-      modifiers: Unit,
-      name: Identifier,
-      constraint: TypeNode,
-      defaultType: TypeNode
-    ): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypeParameterDeclaration")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], defaultType.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    /** @deprecated Use `factory.updateTypeParameterDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateTypeParameterDeclaration(node: TypeParameterDeclaration, name: Identifier): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypeParameterDeclaration")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    inline def updateTypeParameterDeclaration(node: TypeParameterDeclaration, name: Identifier, constraint: Unit, defaultType: TypeNode): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypeParameterDeclaration")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], defaultType.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    inline def updateTypeParameterDeclaration(node: TypeParameterDeclaration, name: Identifier, constraint: TypeNode): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypeParameterDeclaration")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    inline def updateTypeParameterDeclaration(node: TypeParameterDeclaration, name: Identifier, constraint: TypeNode, defaultType: TypeNode): TypeParameterDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypeParameterDeclaration")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any], defaultType.asInstanceOf[js.Any])).asInstanceOf[TypeParameterDeclaration]
-    
-    /** @deprecated Use `factory.updateTypePredicateNode` or the factory supplied by your transformation context instead. */
-    inline def updateTypePredicateNode(node: TypePredicateNode, parameterName: Identifier, `type`: TypeNode): TypePredicateNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypePredicateNode")(node.asInstanceOf[js.Any], parameterName.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypePredicateNode]
-    inline def updateTypePredicateNode(node: TypePredicateNode, parameterName: ThisTypeNode, `type`: TypeNode): TypePredicateNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypePredicateNode")(node.asInstanceOf[js.Any], parameterName.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypePredicateNode]
-    
-    inline def updateTypePredicateNodeWithModifier(node: TypePredicateNode, assertsModifier: Unit, parameterName: Identifier): TypePredicateNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypePredicateNodeWithModifier")(node.asInstanceOf[js.Any], assertsModifier.asInstanceOf[js.Any], parameterName.asInstanceOf[js.Any])).asInstanceOf[TypePredicateNode]
-    inline def updateTypePredicateNodeWithModifier(node: TypePredicateNode, assertsModifier: Unit, parameterName: Identifier, `type`: TypeNode): TypePredicateNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypePredicateNodeWithModifier")(node.asInstanceOf[js.Any], assertsModifier.asInstanceOf[js.Any], parameterName.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypePredicateNode]
-    inline def updateTypePredicateNodeWithModifier(node: TypePredicateNode, assertsModifier: Unit, parameterName: ThisTypeNode): TypePredicateNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypePredicateNodeWithModifier")(node.asInstanceOf[js.Any], assertsModifier.asInstanceOf[js.Any], parameterName.asInstanceOf[js.Any])).asInstanceOf[TypePredicateNode]
-    inline def updateTypePredicateNodeWithModifier(node: TypePredicateNode, assertsModifier: Unit, parameterName: ThisTypeNode, `type`: TypeNode): TypePredicateNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypePredicateNodeWithModifier")(node.asInstanceOf[js.Any], assertsModifier.asInstanceOf[js.Any], parameterName.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypePredicateNode]
-    /** @deprecated Use `factory.updateTypePredicateNode` or the factory supplied by your transformation context instead. */
-    inline def updateTypePredicateNodeWithModifier(node: TypePredicateNode, assertsModifier: AssertsKeyword, parameterName: Identifier): TypePredicateNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypePredicateNodeWithModifier")(node.asInstanceOf[js.Any], assertsModifier.asInstanceOf[js.Any], parameterName.asInstanceOf[js.Any])).asInstanceOf[TypePredicateNode]
-    inline def updateTypePredicateNodeWithModifier(
-      node: TypePredicateNode,
-      assertsModifier: AssertsKeyword,
-      parameterName: Identifier,
-      `type`: TypeNode
-    ): TypePredicateNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypePredicateNodeWithModifier")(node.asInstanceOf[js.Any], assertsModifier.asInstanceOf[js.Any], parameterName.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypePredicateNode]
-    inline def updateTypePredicateNodeWithModifier(node: TypePredicateNode, assertsModifier: AssertsKeyword, parameterName: ThisTypeNode): TypePredicateNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypePredicateNodeWithModifier")(node.asInstanceOf[js.Any], assertsModifier.asInstanceOf[js.Any], parameterName.asInstanceOf[js.Any])).asInstanceOf[TypePredicateNode]
-    inline def updateTypePredicateNodeWithModifier(
-      node: TypePredicateNode,
-      assertsModifier: AssertsKeyword,
-      parameterName: ThisTypeNode,
-      `type`: TypeNode
-    ): TypePredicateNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypePredicateNodeWithModifier")(node.asInstanceOf[js.Any], assertsModifier.asInstanceOf[js.Any], parameterName.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[TypePredicateNode]
-    
-    /** @deprecated Use `factory.updateTypeQueryNode` or the factory supplied by your transformation context instead. */
-    inline def updateTypeQueryNode(node: TypeQueryNode, exprName: EntityName): TypeQueryNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypeQueryNode")(node.asInstanceOf[js.Any], exprName.asInstanceOf[js.Any])).asInstanceOf[TypeQueryNode]
-    inline def updateTypeQueryNode(node: TypeQueryNode, exprName: EntityName, typeArguments: js.Array[TypeNode]): TypeQueryNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypeQueryNode")(node.asInstanceOf[js.Any], exprName.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any])).asInstanceOf[TypeQueryNode]
-    
-    /** @deprecated Use `factory.updateTypeReferenceNode` or the factory supplied by your transformation context instead. */
-    inline def updateTypeReferenceNode(node: TypeReferenceNode, typeName: EntityName): TypeReferenceNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypeReferenceNode")(node.asInstanceOf[js.Any], typeName.asInstanceOf[js.Any])).asInstanceOf[TypeReferenceNode]
-    inline def updateTypeReferenceNode(node: TypeReferenceNode, typeName: EntityName, typeArguments: NodeArray[TypeNode]): TypeReferenceNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTypeReferenceNode")(node.asInstanceOf[js.Any], typeName.asInstanceOf[js.Any], typeArguments.asInstanceOf[js.Any])).asInstanceOf[TypeReferenceNode]
-    
-    /** @deprecated Use `factory.updateUnionTypeNode` or the factory supplied by your transformation context instead. */
-    inline def updateUnionTypeNode(node: UnionTypeNode, types: NodeArray[TypeNode]): UnionTypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("updateUnionTypeNode")(node.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[UnionTypeNode]
-    
-    /** @deprecated Use `factory.updateVariableDeclaration` or the factory supplied by your transformation context instead. */
-    inline def updateVariableDeclaration(node: VariableDeclaration, name: BindingName): VariableDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateVariableDeclaration")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration]
-    inline def updateVariableDeclaration(
-      node: VariableDeclaration,
-      name: BindingName,
-      exclamationToken: Unit,
-      `type`: Unit,
-      initializer: Expression
-    ): VariableDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateVariableDeclaration")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], exclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration]
-    inline def updateVariableDeclaration(node: VariableDeclaration, name: BindingName, exclamationToken: Unit, `type`: TypeNode): VariableDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateVariableDeclaration")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], exclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration]
-    inline def updateVariableDeclaration(
-      node: VariableDeclaration,
-      name: BindingName,
-      exclamationToken: Unit,
-      `type`: TypeNode,
-      initializer: Expression
-    ): VariableDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateVariableDeclaration")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], exclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration]
-    inline def updateVariableDeclaration(node: VariableDeclaration, name: BindingName, exclamationToken: ExclamationToken): VariableDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateVariableDeclaration")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], exclamationToken.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration]
-    inline def updateVariableDeclaration(
-      node: VariableDeclaration,
-      name: BindingName,
-      exclamationToken: ExclamationToken,
-      `type`: Unit,
-      initializer: Expression
-    ): VariableDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateVariableDeclaration")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], exclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration]
-    inline def updateVariableDeclaration(node: VariableDeclaration, name: BindingName, exclamationToken: ExclamationToken, `type`: TypeNode): VariableDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateVariableDeclaration")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], exclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration]
-    inline def updateVariableDeclaration(
-      node: VariableDeclaration,
-      name: BindingName,
-      exclamationToken: ExclamationToken,
-      `type`: TypeNode,
-      initializer: Expression
-    ): VariableDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateVariableDeclaration")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], exclamationToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration]
-    inline def updateVariableDeclaration(node: VariableDeclaration, name: BindingName, `type`: Unit, initializer: Expression): VariableDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateVariableDeclaration")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration]
-    inline def updateVariableDeclaration(node: VariableDeclaration, name: BindingName, `type`: TypeNode): VariableDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateVariableDeclaration")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration]
-    inline def updateVariableDeclaration(node: VariableDeclaration, name: BindingName, `type`: TypeNode, initializer: Expression): VariableDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("updateVariableDeclaration")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration]
-    
-    /** @deprecated Use `factory.updateVariableDeclarationList` or the factory supplied by your transformation context instead. */
-    inline def updateVariableDeclarationList(node: VariableDeclarationList, declarations: js.Array[VariableDeclaration]): VariableDeclarationList = (^.asInstanceOf[js.Dynamic].applyDynamic("updateVariableDeclarationList")(node.asInstanceOf[js.Any], declarations.asInstanceOf[js.Any])).asInstanceOf[VariableDeclarationList]
-    
-    /** @deprecated Use `factory.updateVariableStatement` or the factory supplied by your transformation context instead. */
-    inline def updateVariableStatement(node: VariableStatement, modifiers: js.Array[Modifier], declarationList: VariableDeclarationList): VariableStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateVariableStatement")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], declarationList.asInstanceOf[js.Any])).asInstanceOf[VariableStatement]
-    inline def updateVariableStatement(node: VariableStatement, modifiers: Unit, declarationList: VariableDeclarationList): VariableStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateVariableStatement")(node.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any], declarationList.asInstanceOf[js.Any])).asInstanceOf[VariableStatement]
-    
-    /** @deprecated Use `factory.updateVoidExpression` or the factory supplied by your transformation context instead. */
-    inline def updateVoid(node: VoidExpression, expression: Expression): VoidExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateVoid")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[VoidExpression]
-    
-    /** @deprecated Use `factory.updateWhileStatement` or the factory supplied by your transformation context instead. */
-    inline def updateWhile(node: WhileStatement, expression: Expression, statement: Statement): WhileStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateWhile")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[WhileStatement]
-    
-    /** @deprecated Use `factory.updateWithStatement` or the factory supplied by your transformation context instead. */
-    inline def updateWith(node: WithStatement, expression: Expression, statement: Statement): WithStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("updateWith")(node.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[WithStatement]
-    
-    /** @deprecated Use `factory.updateYieldExpression` or the factory supplied by your transformation context instead. */
-    inline def updateYield(node: YieldExpression): YieldExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("updateYield")(node.asInstanceOf[js.Any]).asInstanceOf[YieldExpression]
-    inline def updateYield(node: YieldExpression, asteriskToken: Unit, expression: Expression): YieldExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateYield")(node.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[YieldExpression]
-    inline def updateYield(node: YieldExpression, asteriskToken: AsteriskToken): YieldExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateYield")(node.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any])).asInstanceOf[YieldExpression]
-    inline def updateYield(node: YieldExpression, asteriskToken: AsteriskToken, expression: Expression): YieldExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("updateYield")(node.asInstanceOf[js.Any], asteriskToken.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[YieldExpression]
-    
     /**
       * Checks to see if the locale is in the appropriate format,
       * and if it is, attempts to set the appropriate language.
       */
     inline def validateLocaleAndSetLanguage(locale: String, sys: FileExists): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateLocaleAndSetLanguage")(locale.asInstanceOf[js.Any], sys.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def validateLocaleAndSetLanguage(locale: String, sys: FileExists, errors: Push[Diagnostic]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateLocaleAndSetLanguage")(locale.asInstanceOf[js.Any], sys.asInstanceOf[js.Any], errors.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def validateLocaleAndSetLanguage(locale: String, sys: FileExists, errors: js.Array[Diagnostic]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateLocaleAndSetLanguage")(locale.asInstanceOf[js.Any], sys.asInstanceOf[js.Any], errors.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** The version of the TypeScript compiler release */
     @JSImport("fork-ts-checker-webpack-plugin/lib/typescript/worker/lib/typescript", "typescript.version")
@@ -11483,7 +3425,19 @@ object libTypescriptWorkerLibTypescriptMod {
     
     @JSImport("fork-ts-checker-webpack-plugin/lib/typescript/worker/lib/typescript", "typescript.versionMajorMinor")
     @js.native
-    val versionMajorMinor: /* "4.9" */ String = js.native
+    val versionMajorMinor: /* "5.0" */ String = js.native
+    
+    /**
+      * Visits the elements of a {@link CommaListExpression}.
+      * @param visitor The visitor to use when visiting expressions whose result will not be discarded at runtime.
+      * @param discardVisitor The visitor to use when visiting expressions whose result will be discarded at runtime. Defaults to {@link visitor}.
+      */
+    inline def visitCommaListElements(elements: NodeArray[Expression], visitor: Visitor[Node, js.UndefOr[Node]]): NodeArray[Expression] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitCommaListElements")(elements.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[NodeArray[Expression]]
+    inline def visitCommaListElements(
+      elements: NodeArray[Expression],
+      visitor: Visitor[Node, js.UndefOr[Node]],
+      discardVisitor: Visitor[Node, js.UndefOr[Node]]
+    ): NodeArray[Expression] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitCommaListElements")(elements.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], discardVisitor.asInstanceOf[js.Any])).asInstanceOf[NodeArray[Expression]]
     
     /**
       * Visits each child of a Node using the supplied visitor, possibly returning a new Node of the same kind in its place.
@@ -11492,37 +3446,47 @@ object libTypescriptWorkerLibTypescriptMod {
       * @param visitor The callback used to visit each child.
       * @param context A lexical environment context for the visitor.
       */
-    inline def visitEachChild[T /* <: Node */](node: T, visitor: Visitor, context: TransformationContext): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitEachChild")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+    inline def visitEachChild[T /* <: Node */](node: T, visitor: Visitor[Node, js.UndefOr[Node]], context: TransformationContext): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitEachChild")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
     inline def visitEachChild[T /* <: Node */](
       node: T,
-      visitor: Visitor,
+      visitor: Visitor[Node, js.UndefOr[Node]],
       context: TransformationContext,
       nodesVisitor: Unit,
-      tokenVisitor: Visitor
+      tokenVisitor: Visitor[Node, js.UndefOr[Node]]
     ): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitEachChild")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any], nodesVisitor.asInstanceOf[js.Any], tokenVisitor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-    inline def visitEachChild[T /* <: Node */](node: T, visitor: Visitor, context: TransformationContext, nodesVisitor: FnCall): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitEachChild")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any], nodesVisitor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
     inline def visitEachChild[T /* <: Node */](
       node: T,
-      visitor: Visitor,
+      visitor: Visitor[Node, js.UndefOr[Node]],
+      context: TransformationContext,
+      nodesVisitor: FnCall
+    ): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitEachChild")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any], nodesVisitor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+    inline def visitEachChild[T /* <: Node */](
+      node: T,
+      visitor: Visitor[Node, js.UndefOr[Node]],
       context: TransformationContext,
       nodesVisitor: FnCall,
-      tokenVisitor: Visitor
+      tokenVisitor: Visitor[Node, js.UndefOr[Node]]
     ): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitEachChild")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any], nodesVisitor.asInstanceOf[js.Any], tokenVisitor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-    inline def visitEachChild[T /* <: Node */](node: Unit, visitor: Visitor, context: TransformationContext): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitEachChild")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+    inline def visitEachChild[T /* <: Node */](node: Unit, visitor: Visitor[Node, js.UndefOr[Node]], context: TransformationContext): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitEachChild")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
     inline def visitEachChild[T /* <: Node */](
       node: Unit,
-      visitor: Visitor,
+      visitor: Visitor[Node, js.UndefOr[Node]],
       context: TransformationContext,
       nodesVisitor: Unit,
-      tokenVisitor: Visitor
+      tokenVisitor: Visitor[Node, js.UndefOr[Node]]
     ): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitEachChild")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any], nodesVisitor.asInstanceOf[js.Any], tokenVisitor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-    inline def visitEachChild[T /* <: Node */](node: Unit, visitor: Visitor, context: TransformationContext, nodesVisitor: FnCall): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitEachChild")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any], nodesVisitor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
     inline def visitEachChild[T /* <: Node */](
       node: Unit,
-      visitor: Visitor,
+      visitor: Visitor[Node, js.UndefOr[Node]],
+      context: TransformationContext,
+      nodesVisitor: FnCall
+    ): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitEachChild")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any], nodesVisitor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+    inline def visitEachChild[T /* <: Node */](
+      node: Unit,
+      visitor: Visitor[Node, js.UndefOr[Node]],
       context: TransformationContext,
       nodesVisitor: FnCall,
-      tokenVisitor: Visitor
+      tokenVisitor: Visitor[Node, js.UndefOr[Node]]
     ): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitEachChild")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any], nodesVisitor.asInstanceOf[js.Any], tokenVisitor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
     
     /**
@@ -11532,47 +3496,56 @@ object libTypescriptWorkerLibTypescriptMod {
       * @param visitor The callback used to visit each child.
       * @param context A lexical environment context for the visitor.
       */
-    inline def visitEachChild_T_T[T /* <: Node */](node: T, visitor: Visitor, context: TransformationContext): T = (^.asInstanceOf[js.Dynamic].applyDynamic("visitEachChild")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def visitEachChild_T_T[T /* <: Node */](node: T, visitor: Visitor[Node, js.UndefOr[Node]], context: TransformationContext): T = (^.asInstanceOf[js.Dynamic].applyDynamic("visitEachChild")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[T]
     
-    inline def visitFunctionBody(node: Unit, visitor: Visitor, context: TransformationContext): js.UndefOr[FunctionBody] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitFunctionBody")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[FunctionBody]]
+    inline def visitFunctionBody(node: Unit, visitor: Visitor[Node, js.UndefOr[Node]], context: TransformationContext): js.UndefOr[FunctionBody] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitFunctionBody")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[FunctionBody]]
     /**
       * Resumes a suspended lexical environment and visits a concise body, ending the lexical
       * environment and merging hoisted declarations upon completion.
       */
-    inline def visitFunctionBody(node: ConciseBody, visitor: Visitor, context: TransformationContext): ConciseBody = (^.asInstanceOf[js.Dynamic].applyDynamic("visitFunctionBody")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ConciseBody]
+    inline def visitFunctionBody(node: ConciseBody, visitor: Visitor[Node, js.UndefOr[Node]], context: TransformationContext): ConciseBody = (^.asInstanceOf[js.Dynamic].applyDynamic("visitFunctionBody")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ConciseBody]
     /**
       * Resumes a suspended lexical environment and visits a function body, ending the lexical
       * environment and merging hoisted declarations upon completion.
       */
-    inline def visitFunctionBody(node: FunctionBody, visitor: Visitor, context: TransformationContext): js.UndefOr[FunctionBody] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitFunctionBody")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[FunctionBody]]
+    inline def visitFunctionBody(node: FunctionBody, visitor: Visitor[Node, js.UndefOr[Node]], context: TransformationContext): js.UndefOr[FunctionBody] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitFunctionBody")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[FunctionBody]]
     
     /**
       * Resumes a suspended lexical environment and visits a function body, ending the lexical
       * environment and merging hoisted declarations upon completion.
       */
-    inline def visitFunctionBody_FunctionBody(node: FunctionBody, visitor: Visitor, context: TransformationContext): FunctionBody = (^.asInstanceOf[js.Dynamic].applyDynamic("visitFunctionBody")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[FunctionBody]
+    inline def visitFunctionBody_FunctionBody(node: FunctionBody, visitor: Visitor[Node, js.UndefOr[Node]], context: TransformationContext): FunctionBody = (^.asInstanceOf[js.Dynamic].applyDynamic("visitFunctionBody")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[FunctionBody]
     
     /**
       * Visits an iteration body, adding any block-scoped variables required by the transformation.
       */
-    inline def visitIterationBody(body: Statement, visitor: Visitor, context: TransformationContext): Statement = (^.asInstanceOf[js.Dynamic].applyDynamic("visitIterationBody")(body.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Statement]
+    inline def visitIterationBody(body: Statement, visitor: Visitor[Node, js.UndefOr[Node]], context: TransformationContext): Statement = (^.asInstanceOf[js.Dynamic].applyDynamic("visitIterationBody")(body.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Statement]
     
     /**
       * Starts a new lexical environment and visits a statement list, ending the lexical environment
       * and merging hoisted declarations upon completion.
       */
-    inline def visitLexicalEnvironment(statements: NodeArray[Statement], visitor: Visitor, context: TransformationContext): NodeArray[Statement] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitLexicalEnvironment")(statements.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[NodeArray[Statement]]
-    inline def visitLexicalEnvironment(statements: NodeArray[Statement], visitor: Visitor, context: TransformationContext, start: Double): NodeArray[Statement] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitLexicalEnvironment")(statements.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[NodeArray[Statement]]
     inline def visitLexicalEnvironment(
       statements: NodeArray[Statement],
-      visitor: Visitor,
+      visitor: Visitor[Node, js.UndefOr[Node]],
+      context: TransformationContext
+    ): NodeArray[Statement] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitLexicalEnvironment")(statements.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[NodeArray[Statement]]
+    inline def visitLexicalEnvironment(
+      statements: NodeArray[Statement],
+      visitor: Visitor[Node, js.UndefOr[Node]],
+      context: TransformationContext,
+      start: Double
+    ): NodeArray[Statement] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitLexicalEnvironment")(statements.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[NodeArray[Statement]]
+    inline def visitLexicalEnvironment(
+      statements: NodeArray[Statement],
+      visitor: Visitor[Node, js.UndefOr[Node]],
       context: TransformationContext,
       start: Double,
       ensureUseStrict: Boolean
     ): NodeArray[Statement] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitLexicalEnvironment")(statements.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any], start.asInstanceOf[js.Any], ensureUseStrict.asInstanceOf[js.Any])).asInstanceOf[NodeArray[Statement]]
     inline def visitLexicalEnvironment(
       statements: NodeArray[Statement],
-      visitor: Visitor,
+      visitor: Visitor[Node, js.UndefOr[Node]],
       context: TransformationContext,
       start: Double,
       ensureUseStrict: Boolean,
@@ -11580,7 +3553,7 @@ object libTypescriptWorkerLibTypescriptMod {
     ): NodeArray[Statement] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitLexicalEnvironment")(statements.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any], start.asInstanceOf[js.Any], ensureUseStrict.asInstanceOf[js.Any], nodesVisitor.asInstanceOf[js.Any])).asInstanceOf[NodeArray[Statement]]
     inline def visitLexicalEnvironment(
       statements: NodeArray[Statement],
-      visitor: Visitor,
+      visitor: Visitor[Node, js.UndefOr[Node]],
       context: TransformationContext,
       start: Double,
       ensureUseStrict: Unit,
@@ -11588,14 +3561,14 @@ object libTypescriptWorkerLibTypescriptMod {
     ): NodeArray[Statement] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitLexicalEnvironment")(statements.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any], start.asInstanceOf[js.Any], ensureUseStrict.asInstanceOf[js.Any], nodesVisitor.asInstanceOf[js.Any])).asInstanceOf[NodeArray[Statement]]
     inline def visitLexicalEnvironment(
       statements: NodeArray[Statement],
-      visitor: Visitor,
+      visitor: Visitor[Node, js.UndefOr[Node]],
       context: TransformationContext,
       start: Unit,
       ensureUseStrict: Boolean
     ): NodeArray[Statement] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitLexicalEnvironment")(statements.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any], start.asInstanceOf[js.Any], ensureUseStrict.asInstanceOf[js.Any])).asInstanceOf[NodeArray[Statement]]
     inline def visitLexicalEnvironment(
       statements: NodeArray[Statement],
-      visitor: Visitor,
+      visitor: Visitor[Node, js.UndefOr[Node]],
       context: TransformationContext,
       start: Unit,
       ensureUseStrict: Boolean,
@@ -11603,7 +3576,7 @@ object libTypescriptWorkerLibTypescriptMod {
     ): NodeArray[Statement] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitLexicalEnvironment")(statements.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any], start.asInstanceOf[js.Any], ensureUseStrict.asInstanceOf[js.Any], nodesVisitor.asInstanceOf[js.Any])).asInstanceOf[NodeArray[Statement]]
     inline def visitLexicalEnvironment(
       statements: NodeArray[Statement],
-      visitor: Visitor,
+      visitor: Visitor[Node, js.UndefOr[Node]],
       context: TransformationContext,
       start: Unit,
       ensureUseStrict: Unit,
@@ -11613,77 +3586,70 @@ object libTypescriptWorkerLibTypescriptMod {
     /**
       * Visits a Node using the supplied visitor, possibly returning a new Node in its place.
       *
+      * - If the input node is undefined, then the output is undefined.
+      * - If the visitor returns undefined, then the output is undefined.
+      * - If the output node is not undefined, then it will satisfy the test function.
+      * - In order to obtain a return type that is more specific than `Node`, a test
+      *   function _must_ be provided, and that function must be a type predicate.
+      *
       * @param node The Node to visit.
       * @param visitor The callback used to visit the Node.
       * @param test A callback to execute to verify the Node is valid.
       * @param lift An optional callback to execute to lift a NodeArray into a valid Node.
       */
-    inline def visitNode[T /* <: Node */](): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")().asInstanceOf[js.UndefOr[T]]
-    inline def visitNode[T /* <: Node */](node: T): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
-    inline def visitNode[T /* <: Node */](node: T, visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-    inline def visitNode[T /* <: Node */](
-      node: T,
-      visitor: Unit,
+    inline def visitNode[TIn /* <: js.UndefOr[Node] */, TVisited /* <: js.UndefOr[Node] */](node: TIn, visitor: Visitor[NonNullable[TIn], TVisited]): Node | (TIn & Unit) | (TVisited & Unit) = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Node | (TIn & Unit) | (TVisited & Unit)]
+    inline def visitNode[TIn /* <: js.UndefOr[Node] */, TVisited /* <: js.UndefOr[Node] */](
+      node: TIn,
+      visitor: Visitor[NonNullable[TIn], TVisited],
+      test: js.Function1[/* node */ Node, Boolean]
+    ): Node | (TIn & Unit) | (TVisited & Unit) = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[Node | (TIn & Unit) | (TVisited & Unit)]
+    inline def visitNode[TIn /* <: js.UndefOr[Node] */, TVisited /* <: js.UndefOr[Node] */](
+      node: TIn,
+      visitor: Visitor[NonNullable[TIn], TVisited],
       test: js.Function1[/* node */ Node, Boolean],
-      lift: js.Function1[/* node */ js.Array[Node], T]
-    ): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-    inline def visitNode[T /* <: Node */](node: T, visitor: Unit, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-    inline def visitNode[T /* <: Node */](node: T, visitor: Visitor): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-    inline def visitNode[T /* <: Node */](node: T, visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-    inline def visitNode[T /* <: Node */](
-      node: T,
-      visitor: Visitor,
-      test: js.Function1[/* node */ Node, Boolean],
-      lift: js.Function1[/* node */ js.Array[Node], T]
-    ): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-    inline def visitNode[T /* <: Node */](node: T, visitor: Visitor, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-    inline def visitNode[T /* <: Node */](node: Unit, visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-    inline def visitNode[T /* <: Node */](
-      node: Unit,
-      visitor: Unit,
-      test: js.Function1[/* node */ Node, Boolean],
-      lift: js.Function1[/* node */ js.Array[Node], T]
-    ): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-    inline def visitNode[T /* <: Node */](node: Unit, visitor: Unit, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-    inline def visitNode[T /* <: Node */](node: Unit, visitor: Visitor): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-    inline def visitNode[T /* <: Node */](node: Unit, visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-    inline def visitNode[T /* <: Node */](
-      node: Unit,
-      visitor: Visitor,
-      test: js.Function1[/* node */ Node, Boolean],
-      lift: js.Function1[/* node */ js.Array[Node], T]
-    ): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-    inline def visitNode[T /* <: Node */](node: Unit, visitor: Visitor, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+      lift: js.Function1[/* node */ js.Array[Node], Node]
+    ): Node | (TIn & Unit) | (TVisited & Unit) = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[Node | (TIn & Unit) | (TVisited & Unit)]
+    inline def visitNode[TIn /* <: js.UndefOr[Node] */, TVisited /* <: js.UndefOr[Node] */](
+      node: TIn,
+      visitor: Visitor[NonNullable[TIn], TVisited],
+      test: Unit,
+      lift: js.Function1[/* node */ js.Array[Node], Node]
+    ): Node | (TIn & Unit) | (TVisited & Unit) = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[Node | (TIn & Unit) | (TVisited & Unit)]
     
     /**
       * Visits a Node using the supplied visitor, possibly returning a new Node in its place.
       *
+      * - If the input node is undefined, then the output is undefined.
+      * - If the visitor returns undefined, then the output is undefined.
+      * - If the output node is not undefined, then it will satisfy the test function.
+      * - In order to obtain a return type that is more specific than `Node`, a test
+      *   function _must_ be provided, and that function must be a type predicate.
+      *
       * @param node The Node to visit.
       * @param visitor The callback used to visit the Node.
       * @param test A callback to execute to verify the Node is valid.
       * @param lift An optional callback to execute to lift a NodeArray into a valid Node.
       */
-    inline def visitNode_T_T[T /* <: Node */](node: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any]).asInstanceOf[T]
-    inline def visitNode_T_T[T /* <: Node */](node: T, visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[T]
-    inline def visitNode_T_T[T /* <: Node */](
-      node: T,
-      visitor: Unit,
-      test: js.Function1[/* node */ Node, Boolean],
-      lift: js.Function1[/* node */ js.Array[Node], T]
-    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[T]
-    inline def visitNode_T_T[T /* <: Node */](node: T, visitor: Unit, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[T]
-    inline def visitNode_T_T[T /* <: Node */](node: T, visitor: Visitor): T = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[T]
-    inline def visitNode_T_T[T /* <: Node */](node: T, visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[T]
-    inline def visitNode_T_T[T /* <: Node */](
-      node: T,
-      visitor: Visitor,
-      test: js.Function1[/* node */ Node, Boolean],
-      lift: js.Function1[/* node */ js.Array[Node], T]
-    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[T]
-    inline def visitNode_T_T[T /* <: Node */](node: T, visitor: Visitor, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def visitNode_TInTVisitedTOut[TIn /* <: js.UndefOr[Node] */, TVisited /* <: js.UndefOr[Node] */, TOut /* <: Node */](
+      node: TIn,
+      visitor: Visitor[NonNullable[TIn], TVisited],
+      test: js.Function1[/* node */ Node, /* is TOut */ Boolean]
+    ): TOut | (TIn & Unit) | (TVisited & Unit) = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[TOut | (TIn & Unit) | (TVisited & Unit)]
+    inline def visitNode_TInTVisitedTOut[TIn /* <: js.UndefOr[Node] */, TVisited /* <: js.UndefOr[Node] */, TOut /* <: Node */](
+      node: TIn,
+      visitor: Visitor[NonNullable[TIn], TVisited],
+      test: js.Function1[/* node */ Node, /* is TOut */ Boolean],
+      lift: js.Function1[/* node */ js.Array[Node], Node]
+    ): TOut | (TIn & Unit) | (TVisited & Unit) = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[TOut | (TIn & Unit) | (TVisited & Unit)]
     
     /**
       * Visits a NodeArray using the supplied visitor, possibly returning a new NodeArray in its place.
+      *
+      * - If the input node array is undefined, the output is undefined.
+      * - If the visitor can return undefined, the node it visits in the array will be reused.
+      * - If the output node array is not undefined, then its contents will satisfy the test.
+      * - In order to obtain a return type that is more specific than `NodeArray<Node>`, a test
+      *   function _must_ be provided, and that function must be a type predicate.
       *
       * @param nodes The NodeArray to visit.
       * @param visitor The callback used to visit a Node.
@@ -11691,89 +3657,44 @@ object libTypescriptWorkerLibTypescriptMod {
       * @param start An optional value indicating the starting offset at which to start visiting.
       * @param count An optional value indicating the maximum number of nodes to visit.
       */
-    inline def visitNodes[T /* <: Node */](): js.UndefOr[NodeArray[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")().asInstanceOf[js.UndefOr[NodeArray[T]]]
-    inline def visitNodes[T /* <: Node */](nodes: Unit, visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-    inline def visitNodes[T /* <: Node */](nodes: Unit, visitor: Unit, test: js.Function1[/* node */ Node, Boolean], start: Double): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-    inline def visitNodes[T /* <: Node */](
-      nodes: Unit,
-      visitor: Unit,
+    inline def visitNodes[TIn /* <: Node */, TInArray /* <: js.UndefOr[NodeArray[TIn]] */](nodes: TInArray, visitor: Visitor[TIn, js.UndefOr[Node]]): NodeArray[Node] | (TInArray & Unit) = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[NodeArray[Node] | (TInArray & Unit)]
+    inline def visitNodes[TIn /* <: Node */, TInArray /* <: js.UndefOr[NodeArray[TIn]] */](
+      nodes: TInArray,
+      visitor: Visitor[TIn, js.UndefOr[Node]],
+      test: js.Function1[/* node */ Node, Boolean]
+    ): NodeArray[Node] | (TInArray & Unit) = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[NodeArray[Node] | (TInArray & Unit)]
+    inline def visitNodes[TIn /* <: Node */, TInArray /* <: js.UndefOr[NodeArray[TIn]] */](
+      nodes: TInArray,
+      visitor: Visitor[TIn, js.UndefOr[Node]],
+      test: js.Function1[/* node */ Node, Boolean],
+      start: Double
+    ): NodeArray[Node] | (TInArray & Unit) = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[NodeArray[Node] | (TInArray & Unit)]
+    inline def visitNodes[TIn /* <: Node */, TInArray /* <: js.UndefOr[NodeArray[TIn]] */](
+      nodes: TInArray,
+      visitor: Visitor[TIn, js.UndefOr[Node]],
       test: js.Function1[/* node */ Node, Boolean],
       start: Double,
       count: Double
-    ): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-    inline def visitNodes[T /* <: Node */](
-      nodes: Unit,
-      visitor: Unit,
+    ): NodeArray[Node] | (TInArray & Unit) = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[NodeArray[Node] | (TInArray & Unit)]
+    inline def visitNodes[TIn /* <: Node */, TInArray /* <: js.UndefOr[NodeArray[TIn]] */](
+      nodes: TInArray,
+      visitor: Visitor[TIn, js.UndefOr[Node]],
       test: js.Function1[/* node */ Node, Boolean],
       start: Unit,
       count: Double
-    ): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-    inline def visitNodes[T /* <: Node */](nodes: Unit, visitor: Unit, test: Unit, start: Double): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-    inline def visitNodes[T /* <: Node */](nodes: Unit, visitor: Unit, test: Unit, start: Double, count: Double): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-    inline def visitNodes[T /* <: Node */](nodes: Unit, visitor: Unit, test: Unit, start: Unit, count: Double): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-    inline def visitNodes[T /* <: Node */](nodes: Unit, visitor: Visitor): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-    inline def visitNodes[T /* <: Node */](nodes: Unit, visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-    inline def visitNodes[T /* <: Node */](nodes: Unit, visitor: Visitor, test: js.Function1[/* node */ Node, Boolean], start: Double): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-    inline def visitNodes[T /* <: Node */](
-      nodes: Unit,
-      visitor: Visitor,
-      test: js.Function1[/* node */ Node, Boolean],
-      start: Double,
-      count: Double
-    ): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-    inline def visitNodes[T /* <: Node */](
-      nodes: Unit,
-      visitor: Visitor,
-      test: js.Function1[/* node */ Node, Boolean],
-      start: Unit,
-      count: Double
-    ): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-    inline def visitNodes[T /* <: Node */](nodes: Unit, visitor: Visitor, test: Unit, start: Double): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-    inline def visitNodes[T /* <: Node */](nodes: Unit, visitor: Visitor, test: Unit, start: Double, count: Double): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-    inline def visitNodes[T /* <: Node */](nodes: Unit, visitor: Visitor, test: Unit, start: Unit, count: Double): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-    inline def visitNodes[T /* <: Node */](nodes: NodeArray[T]): js.UndefOr[NodeArray[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NodeArray[T]]]
-    inline def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-    inline def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: js.Function1[/* node */ Node, Boolean], start: Double): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-    inline def visitNodes[T /* <: Node */](
-      nodes: NodeArray[T],
-      visitor: Unit,
-      test: js.Function1[/* node */ Node, Boolean],
-      start: Double,
-      count: Double
-    ): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-    inline def visitNodes[T /* <: Node */](
-      nodes: NodeArray[T],
-      visitor: Unit,
-      test: js.Function1[/* node */ Node, Boolean],
-      start: Unit,
-      count: Double
-    ): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-    inline def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Double): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-    inline def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Double, count: Double): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-    inline def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Unit, count: Double): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-    inline def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-    inline def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-    inline def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean], start: Double): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-    inline def visitNodes[T /* <: Node */](
-      nodes: NodeArray[T],
-      visitor: Visitor,
-      test: js.Function1[/* node */ Node, Boolean],
-      start: Double,
-      count: Double
-    ): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-    inline def visitNodes[T /* <: Node */](
-      nodes: NodeArray[T],
-      visitor: Visitor,
-      test: js.Function1[/* node */ Node, Boolean],
-      start: Unit,
-      count: Double
-    ): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-    inline def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Double): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-    inline def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Double, count: Double): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-    inline def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Unit, count: Double): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
+    ): NodeArray[Node] | (TInArray & Unit) = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[NodeArray[Node] | (TInArray & Unit)]
+    inline def visitNodes[TIn /* <: Node */, TInArray /* <: js.UndefOr[NodeArray[TIn]] */](nodes: TInArray, visitor: Visitor[TIn, js.UndefOr[Node]], test: Unit, start: Double): NodeArray[Node] | (TInArray & Unit) = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[NodeArray[Node] | (TInArray & Unit)]
+    inline def visitNodes[TIn /* <: Node */, TInArray /* <: js.UndefOr[NodeArray[TIn]] */](nodes: TInArray, visitor: Visitor[TIn, js.UndefOr[Node]], test: Unit, start: Double, count: Double): NodeArray[Node] | (TInArray & Unit) = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[NodeArray[Node] | (TInArray & Unit)]
+    inline def visitNodes[TIn /* <: Node */, TInArray /* <: js.UndefOr[NodeArray[TIn]] */](nodes: TInArray, visitor: Visitor[TIn, js.UndefOr[Node]], test: Unit, start: Unit, count: Double): NodeArray[Node] | (TInArray & Unit) = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[NodeArray[Node] | (TInArray & Unit)]
     
     /**
       * Visits a NodeArray using the supplied visitor, possibly returning a new NodeArray in its place.
+      *
+      * - If the input node array is undefined, the output is undefined.
+      * - If the visitor can return undefined, the node it visits in the array will be reused.
+      * - If the output node array is not undefined, then its contents will satisfy the test.
+      * - In order to obtain a return type that is more specific than `NodeArray<Node>`, a test
+      *   function _must_ be provided, and that function must be a type predicate.
       *
       * @param nodes The NodeArray to visit.
       * @param visitor The callback used to visit a Node.
@@ -11781,53 +3702,47 @@ object libTypescriptWorkerLibTypescriptMod {
       * @param start An optional value indicating the starting offset at which to start visiting.
       * @param count An optional value indicating the maximum number of nodes to visit.
       */
-    inline def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T]): NodeArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any]).asInstanceOf[NodeArray[T]]
-    inline def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): NodeArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[NodeArray[T]]
-    inline def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: js.Function1[/* node */ Node, Boolean], start: Double): NodeArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[NodeArray[T]]
-    inline def visitNodes_T_NodeArray[T /* <: Node */](
-      nodes: NodeArray[T],
-      visitor: Unit,
-      test: js.Function1[/* node */ Node, Boolean],
+    inline def visitNodes_TInTInArrayTOut[TIn /* <: Node */, TInArray /* <: js.UndefOr[NodeArray[TIn]] */, TOut /* <: Node */](
+      nodes: TInArray,
+      visitor: Visitor[TIn, js.UndefOr[Node]],
+      test: js.Function1[/* node */ Node, /* is TOut */ Boolean]
+    ): NodeArray[TOut] | (TInArray & Unit) = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[NodeArray[TOut] | (TInArray & Unit)]
+    inline def visitNodes_TInTInArrayTOut[TIn /* <: Node */, TInArray /* <: js.UndefOr[NodeArray[TIn]] */, TOut /* <: Node */](
+      nodes: TInArray,
+      visitor: Visitor[TIn, js.UndefOr[Node]],
+      test: js.Function1[/* node */ Node, /* is TOut */ Boolean],
+      start: Double
+    ): NodeArray[TOut] | (TInArray & Unit) = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[NodeArray[TOut] | (TInArray & Unit)]
+    inline def visitNodes_TInTInArrayTOut[TIn /* <: Node */, TInArray /* <: js.UndefOr[NodeArray[TIn]] */, TOut /* <: Node */](
+      nodes: TInArray,
+      visitor: Visitor[TIn, js.UndefOr[Node]],
+      test: js.Function1[/* node */ Node, /* is TOut */ Boolean],
       start: Double,
       count: Double
-    ): NodeArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[NodeArray[T]]
-    inline def visitNodes_T_NodeArray[T /* <: Node */](
-      nodes: NodeArray[T],
-      visitor: Unit,
-      test: js.Function1[/* node */ Node, Boolean],
+    ): NodeArray[TOut] | (TInArray & Unit) = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[NodeArray[TOut] | (TInArray & Unit)]
+    inline def visitNodes_TInTInArrayTOut[TIn /* <: Node */, TInArray /* <: js.UndefOr[NodeArray[TIn]] */, TOut /* <: Node */](
+      nodes: TInArray,
+      visitor: Visitor[TIn, js.UndefOr[Node]],
+      test: js.Function1[/* node */ Node, /* is TOut */ Boolean],
       start: Unit,
       count: Double
-    ): NodeArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[NodeArray[T]]
-    inline def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Double): NodeArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[NodeArray[T]]
-    inline def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Double, count: Double): NodeArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[NodeArray[T]]
-    inline def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Unit, count: Double): NodeArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[NodeArray[T]]
-    inline def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor): NodeArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[NodeArray[T]]
-    inline def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): NodeArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[NodeArray[T]]
-    inline def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean], start: Double): NodeArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[NodeArray[T]]
-    inline def visitNodes_T_NodeArray[T /* <: Node */](
-      nodes: NodeArray[T],
-      visitor: Visitor,
-      test: js.Function1[/* node */ Node, Boolean],
-      start: Double,
-      count: Double
-    ): NodeArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[NodeArray[T]]
-    inline def visitNodes_T_NodeArray[T /* <: Node */](
-      nodes: NodeArray[T],
-      visitor: Visitor,
-      test: js.Function1[/* node */ Node, Boolean],
-      start: Unit,
-      count: Double
-    ): NodeArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[NodeArray[T]]
-    inline def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Double): NodeArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[NodeArray[T]]
-    inline def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Double, count: Double): NodeArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[NodeArray[T]]
-    inline def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Unit, count: Double): NodeArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[NodeArray[T]]
+    ): NodeArray[TOut] | (TInArray & Unit) = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[NodeArray[TOut] | (TInArray & Unit)]
     
-    inline def visitParameterList(nodes: Unit, visitor: Visitor, context: TransformationContext): js.UndefOr[NodeArray[ParameterDeclaration]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitParameterList")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[ParameterDeclaration]]]
-    inline def visitParameterList(nodes: Unit, visitor: Visitor, context: TransformationContext, nodesVisitor: NodesVisitor): js.UndefOr[NodeArray[ParameterDeclaration]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitParameterList")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any], nodesVisitor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[ParameterDeclaration]]]
-    inline def visitParameterList(nodes: NodeArray[ParameterDeclaration], visitor: Visitor, context: TransformationContext): js.UndefOr[NodeArray[ParameterDeclaration]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitParameterList")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[ParameterDeclaration]]]
+    inline def visitParameterList(nodes: Unit, visitor: Visitor[Node, js.UndefOr[Node]], context: TransformationContext): js.UndefOr[NodeArray[ParameterDeclaration]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitParameterList")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[ParameterDeclaration]]]
+    inline def visitParameterList(
+      nodes: Unit,
+      visitor: Visitor[Node, js.UndefOr[Node]],
+      context: TransformationContext,
+      nodesVisitor: NodesVisitor
+    ): js.UndefOr[NodeArray[ParameterDeclaration]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitParameterList")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any], nodesVisitor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[ParameterDeclaration]]]
     inline def visitParameterList(
       nodes: NodeArray[ParameterDeclaration],
-      visitor: Visitor,
+      visitor: Visitor[Node, js.UndefOr[Node]],
+      context: TransformationContext
+    ): js.UndefOr[NodeArray[ParameterDeclaration]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitParameterList")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[ParameterDeclaration]]]
+    inline def visitParameterList(
+      nodes: NodeArray[ParameterDeclaration],
+      visitor: Visitor[Node, js.UndefOr[Node]],
       context: TransformationContext,
       nodesVisitor: NodesVisitor
     ): js.UndefOr[NodeArray[ParameterDeclaration]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitParameterList")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any], nodesVisitor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[ParameterDeclaration]]]
@@ -11836,10 +3751,14 @@ object libTypescriptWorkerLibTypescriptMod {
       * Starts a new lexical environment and visits a parameter list, suspending the lexical
       * environment upon completion.
       */
-    inline def visitParameterList_NodeArray(nodes: NodeArray[ParameterDeclaration], visitor: Visitor, context: TransformationContext): NodeArray[ParameterDeclaration] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitParameterList")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[NodeArray[ParameterDeclaration]]
     inline def visitParameterList_NodeArray(
       nodes: NodeArray[ParameterDeclaration],
-      visitor: Visitor,
+      visitor: Visitor[Node, js.UndefOr[Node]],
+      context: TransformationContext
+    ): NodeArray[ParameterDeclaration] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitParameterList")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[NodeArray[ParameterDeclaration]]
+    inline def visitParameterList_NodeArray(
+      nodes: NodeArray[ParameterDeclaration],
+      visitor: Visitor[Node, js.UndefOr[Node]],
       context: TransformationContext,
       nodesVisitor: NodesVisitor
     ): NodeArray[ParameterDeclaration] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitParameterList")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any], nodesVisitor.asInstanceOf[js.Any])).asInstanceOf[NodeArray[ParameterDeclaration]]

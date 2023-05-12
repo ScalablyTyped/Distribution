@@ -65,7 +65,7 @@ trait DataRepositoryTask extends StObject {
   var TaskId: typings.awsSdk.clientsFsxMod.TaskId
   
   /**
-    * The type of data repository task.    EXPORT_TO_REPOSITORY tasks export from your Amazon FSx for Lustre file system to a linked data repository.    IMPORT_METADATA_FROM_REPOSITORY tasks import metadata changes from a linked S3 bucket to your Amazon FSx for Lustre file system.    AUTO_RELEASE_DATA tasks automatically release files from an Amazon File Cache resource.  
+    * The type of data repository task.    EXPORT_TO_REPOSITORY tasks export from your Amazon FSx for Lustre file system to a linked data repository.    IMPORT_METADATA_FROM_REPOSITORY tasks import metadata changes from a linked S3 bucket to your Amazon FSx for Lustre file system.    AUTO_RELEASE_DATA tasks automatically release files from an Amazon File Cache resource.    RELEASE_DATA_FROM_FILESYSTEM tasks are not supported.  
     */
   var Type: DataRepositoryTaskType
 }

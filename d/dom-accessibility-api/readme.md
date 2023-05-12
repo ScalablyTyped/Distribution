@@ -1,7 +1,7 @@
 
 # Scala.js typings for dom-accessibility-api
 
-Typings are for version 0.5.14
+Typings are for version 0.6.0
 
 ## Library description:
 Implements https://w3c.github.io/accname/

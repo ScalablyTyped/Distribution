@@ -1,7 +1,7 @@
 
 # Scala.js typings for cpy
 
-Typings are for version 9.0.1
+Typings are for version 10.1.0
 
 ## Library description:
 Copy files

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "unsplash-js" : "7.0.15"
+      "unsplash-js" : "7.0.18"
     }
   ],
   "test-dependencies" : [
     {
-      "unsplash-js" : "7.0.15"
+      "unsplash-js" : "7.0.18"
     }
   ],
   "compile-devDependencies" : [

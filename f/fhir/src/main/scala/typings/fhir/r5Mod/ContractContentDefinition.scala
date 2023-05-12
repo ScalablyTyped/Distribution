@@ -35,7 +35,7 @@ trait ContractContentDefinition
   var copyright: js.UndefOr[String] = js.undefined
   
   /**
-    * The date (and optionally time) when the contract was published. The date must change when the business version changes and it must change if the status code changes. In addition, it should change when the substantive content of the contract changes.
+    * The date (and optionally time) when the contract was last significantly changed. The date must change when the business version changes and it must change if the status code changes. In addition, it should change when the substantive content of the contract changes.
     */
   var publicationDate: js.UndefOr[String] = js.undefined
   

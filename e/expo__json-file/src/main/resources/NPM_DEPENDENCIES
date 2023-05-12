@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@expo/json-file" : "8.2.36"
+      "@expo/json-file" : "8.2.37"
     }
   ],
   "test-dependencies" : [
     {
-      "@expo/json-file" : "8.2.36"
+      "@expo/json-file" : "8.2.37"
     }
   ],
   "compile-devDependencies" : [

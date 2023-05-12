@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "socket.io" : "4.5.3"
+      "socket.io" : "4.6.1"
     }
   ],
   "test-dependencies" : [
     {
-      "socket.io" : "4.5.3"
+      "socket.io" : "4.6.1"
     }
   ],
   "compile-devDependencies" : [

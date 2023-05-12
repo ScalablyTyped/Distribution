@@ -95,6 +95,16 @@ trait SFTPWrapper extends EventEmitter {
   def data(reqId: Double, data: Buffer, encoding: BufferEncoding): Unit = js.native
   
   /**
+    * Closes the channel.
+    */
+  def destroy(): Unit = js.native
+  
+  /**
+    * Closes the channel.
+    */
+  def end(): Unit = js.native
+  
+  /**
     * (Client-only)
     * `path` exists.
     */

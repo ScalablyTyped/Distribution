@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutResourcePolicyRequest extends StObject {
   
   /**
-    * Specifies whether to block resource-based policies that allow broad access to the secret, for example those that use a wildcard for the principal.
+    * Specifies whether to block resource-based policies that allow broad access to the secret, for example those that use a wildcard for the principal. By default, public policies aren't blocked.
     */
   var BlockPublicPolicy: js.UndefOr[BooleanType] = js.undefined
   

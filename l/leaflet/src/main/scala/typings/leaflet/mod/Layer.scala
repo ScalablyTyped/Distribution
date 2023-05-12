@@ -66,6 +66,8 @@ open class Layer () extends Evented {
   def openTooltip(): this.type = js.native
   def openTooltip(latlng: LatLngExpression): this.type = js.native
   
+  var options: LayerOptions = js.native
+  
   def remove(): this.type = js.native
   
   def removeFrom(map: Map_): this.type = js.native

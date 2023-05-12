@@ -96,6 +96,8 @@ trait ResourceDetails extends StObject {
     */
   var AwsEc2Instance: js.UndefOr[AwsEc2InstanceDetails] = js.undefined
   
+  var AwsEc2LaunchTemplate: js.UndefOr[AwsEc2LaunchTemplateDetails] = js.undefined
+  
   /**
     * Details about an EC2 network access control list (ACL).
     */
@@ -105,6 +107,11 @@ trait ResourceDetails extends StObject {
     * Details for an EC2 network interface.
     */
   var AwsEc2NetworkInterface: js.UndefOr[AwsEc2NetworkInterfaceDetails] = js.undefined
+  
+  /**
+    *  Provides details about a route table. A route table contains a set of rules, called routes, that determine where to direct network traffic from your subnet or gateway. 
+    */
+  var AwsEc2RouteTable: js.UndefOr[AwsEc2RouteTableDetails] = js.undefined
   
   /**
     * Details for an EC2 security group.
@@ -326,6 +333,8 @@ trait ResourceDetails extends StObject {
     */
   var AwsS3Object: js.UndefOr[AwsS3ObjectDetails] = js.undefined
   
+  var AwsSageMakerNotebookInstance: js.UndefOr[AwsSageMakerNotebookInstanceDetails] = js.undefined
+  
   /**
     * Details about a Secrets Manager secret.
     */
@@ -385,6 +394,10 @@ trait ResourceDetails extends StObject {
     * Details for an WAF web ACL.
     */
   var AwsWafWebAcl: js.UndefOr[AwsWafWebAclDetails] = js.undefined
+  
+  var AwsWafv2RuleGroup: js.UndefOr[AwsWafv2RuleGroupDetails] = js.undefined
+  
+  var AwsWafv2WebAcl: js.UndefOr[AwsWafv2WebAclDetails] = js.undefined
   
   /**
     * Information about the encryption configuration for X-Ray.
@@ -483,6 +496,10 @@ object ResourceDetails {
     
     inline def setAwsEc2InstanceUndefined: Self = StObject.set(x, "AwsEc2Instance", js.undefined)
     
+    inline def setAwsEc2LaunchTemplate(value: AwsEc2LaunchTemplateDetails): Self = StObject.set(x, "AwsEc2LaunchTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setAwsEc2LaunchTemplateUndefined: Self = StObject.set(x, "AwsEc2LaunchTemplate", js.undefined)
+    
     inline def setAwsEc2NetworkAcl(value: AwsEc2NetworkAclDetails): Self = StObject.set(x, "AwsEc2NetworkAcl", value.asInstanceOf[js.Any])
     
     inline def setAwsEc2NetworkAclUndefined: Self = StObject.set(x, "AwsEc2NetworkAcl", js.undefined)
@@ -490,6 +507,10 @@ object ResourceDetails {
     inline def setAwsEc2NetworkInterface(value: AwsEc2NetworkInterfaceDetails): Self = StObject.set(x, "AwsEc2NetworkInterface", value.asInstanceOf[js.Any])
     
     inline def setAwsEc2NetworkInterfaceUndefined: Self = StObject.set(x, "AwsEc2NetworkInterface", js.undefined)
+    
+    inline def setAwsEc2RouteTable(value: AwsEc2RouteTableDetails): Self = StObject.set(x, "AwsEc2RouteTable", value.asInstanceOf[js.Any])
+    
+    inline def setAwsEc2RouteTableUndefined: Self = StObject.set(x, "AwsEc2RouteTable", js.undefined)
     
     inline def setAwsEc2SecurityGroup(value: AwsEc2SecurityGroupDetails): Self = StObject.set(x, "AwsEc2SecurityGroup", value.asInstanceOf[js.Any])
     
@@ -667,6 +688,10 @@ object ResourceDetails {
     
     inline def setAwsS3ObjectUndefined: Self = StObject.set(x, "AwsS3Object", js.undefined)
     
+    inline def setAwsSageMakerNotebookInstance(value: AwsSageMakerNotebookInstanceDetails): Self = StObject.set(x, "AwsSageMakerNotebookInstance", value.asInstanceOf[js.Any])
+    
+    inline def setAwsSageMakerNotebookInstanceUndefined: Self = StObject.set(x, "AwsSageMakerNotebookInstance", js.undefined)
+    
     inline def setAwsSecretsManagerSecret(value: AwsSecretsManagerSecretDetails): Self = StObject.set(x, "AwsSecretsManagerSecret", value.asInstanceOf[js.Any])
     
     inline def setAwsSecretsManagerSecretUndefined: Self = StObject.set(x, "AwsSecretsManagerSecret", js.undefined)
@@ -714,6 +739,14 @@ object ResourceDetails {
     inline def setAwsWafWebAcl(value: AwsWafWebAclDetails): Self = StObject.set(x, "AwsWafWebAcl", value.asInstanceOf[js.Any])
     
     inline def setAwsWafWebAclUndefined: Self = StObject.set(x, "AwsWafWebAcl", js.undefined)
+    
+    inline def setAwsWafv2RuleGroup(value: AwsWafv2RuleGroupDetails): Self = StObject.set(x, "AwsWafv2RuleGroup", value.asInstanceOf[js.Any])
+    
+    inline def setAwsWafv2RuleGroupUndefined: Self = StObject.set(x, "AwsWafv2RuleGroup", js.undefined)
+    
+    inline def setAwsWafv2WebAcl(value: AwsWafv2WebAclDetails): Self = StObject.set(x, "AwsWafv2WebAcl", value.asInstanceOf[js.Any])
+    
+    inline def setAwsWafv2WebAclUndefined: Self = StObject.set(x, "AwsWafv2WebAcl", js.undefined)
     
     inline def setAwsXrayEncryptionConfig(value: AwsXrayEncryptionConfigDetails): Self = StObject.set(x, "AwsXrayEncryptionConfig", value.asInstanceOf[js.Any])
     

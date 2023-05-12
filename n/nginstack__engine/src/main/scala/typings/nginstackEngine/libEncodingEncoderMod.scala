@@ -37,21 +37,13 @@ object libEncodingEncoderMod {
   @js.native
   val WINDOWS_1252: String = js.native
   
-  inline def convert(sourceEncoding: String, targetEncoding: String, source: String): String | js.typedarray.ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(sourceEncoding.asInstanceOf[js.Any], targetEncoding.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[String | js.typedarray.ArrayBuffer]
-  inline def convert(sourceEncoding: String, targetEncoding: String, source: String, encodeFmt: String): String | js.typedarray.ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(sourceEncoding.asInstanceOf[js.Any], targetEncoding.asInstanceOf[js.Any], source.asInstanceOf[js.Any], encodeFmt.asInstanceOf[js.Any])).asInstanceOf[String | js.typedarray.ArrayBuffer]
-  inline def convert(sourceEncoding: String, targetEncoding: String, source: js.typedarray.ArrayBuffer): String | js.typedarray.ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(sourceEncoding.asInstanceOf[js.Any], targetEncoding.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[String | js.typedarray.ArrayBuffer]
-  inline def convert(
-    sourceEncoding: String,
-    targetEncoding: String,
-    source: js.typedarray.ArrayBuffer,
-    encodeFmt: String
-  ): String | js.typedarray.ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(sourceEncoding.asInstanceOf[js.Any], targetEncoding.asInstanceOf[js.Any], source.asInstanceOf[js.Any], encodeFmt.asInstanceOf[js.Any])).asInstanceOf[String | js.typedarray.ArrayBuffer]
+  inline def convert(sourceEncoding: String, targetEncoding: String, source: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(sourceEncoding.asInstanceOf[js.Any], targetEncoding.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def convert(sourceEncoding: String, targetEncoding: String, source: Any, encodeFmt: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(sourceEncoding.asInstanceOf[js.Any], targetEncoding.asInstanceOf[js.Any], source.asInstanceOf[js.Any], encodeFmt.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def convertFromString(targetEncoding: String, source: String): String | js.typedarray.ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("convertFromString")(targetEncoding.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[String | js.typedarray.ArrayBuffer]
-  inline def convertFromString(targetEncoding: String, source: String, encodeFmt: String): String | js.typedarray.ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("convertFromString")(targetEncoding.asInstanceOf[js.Any], source.asInstanceOf[js.Any], encodeFmt.asInstanceOf[js.Any])).asInstanceOf[String | js.typedarray.ArrayBuffer]
+  inline def convertFromString(targetEncoding: String, source: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("convertFromString")(targetEncoding.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def convertFromString(targetEncoding: String, source: String, encodeFmt: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("convertFromString")(targetEncoding.asInstanceOf[js.Any], source.asInstanceOf[js.Any], encodeFmt.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def convertToString(sourceEncoding: String, source: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToString")(sourceEncoding.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def convertToString(sourceEncoding: String, source: js.typedarray.ArrayBuffer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToString")(sourceEncoding.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def convertToString(sourceEncoding: String, source: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToString")(sourceEncoding.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def listEncodings(): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("listEncodings")().asInstanceOf[js.Array[Any]]
   

@@ -1031,12 +1031,12 @@ trait NetworkManager extends Service {
   ): Request[PutResourcePolicyResponse, AWSError] = js.native
   
   /**
-    * Registers a transit gateway in your global network. The transit gateway can be in any Amazon Web Services Region, but it must be owned by the same Amazon Web Services account that owns the global network. You cannot register a transit gateway in more than one global network.
+    * Registers a transit gateway in your global network. Not all Regions support transit gateways for global networks. For a list of the supported Regions, see Region Availability in the Amazon Web Services Transit Gateways for Global Networks User Guide. The transit gateway can be in any of the supported Amazon Web Services Regions, but it must be owned by the same Amazon Web Services account that owns the global network. You cannot register a transit gateway in more than one global network.
     */
   def registerTransitGateway(): Request[RegisterTransitGatewayResponse, AWSError] = js.native
   def registerTransitGateway(callback: js.Function2[/* err */ AWSError, /* data */ RegisterTransitGatewayResponse, Unit]): Request[RegisterTransitGatewayResponse, AWSError] = js.native
   /**
-    * Registers a transit gateway in your global network. The transit gateway can be in any Amazon Web Services Region, but it must be owned by the same Amazon Web Services account that owns the global network. You cannot register a transit gateway in more than one global network.
+    * Registers a transit gateway in your global network. Not all Regions support transit gateways for global networks. For a list of the supported Regions, see Region Availability in the Amazon Web Services Transit Gateways for Global Networks User Guide. The transit gateway can be in any of the supported Amazon Web Services Regions, but it must be owned by the same Amazon Web Services account that owns the global network. You cannot register a transit gateway in more than one global network.
     */
   def registerTransitGateway(params: RegisterTransitGatewayRequest): Request[RegisterTransitGatewayResponse, AWSError] = js.native
   def registerTransitGateway(
@@ -1075,14 +1075,14 @@ trait NetworkManager extends Service {
   ): Request[RestoreCoreNetworkPolicyVersionResponse, AWSError] = js.native
   
   /**
-    * Enables for the Network Manager service for an Amazon Web Services Organization. This can only be called by a management account within the organization. 
+    * Enables the Network Manager service for an Amazon Web Services Organization. This can only be called by a management account within the organization. 
     */
   def startOrganizationServiceAccessUpdate(): Request[StartOrganizationServiceAccessUpdateResponse, AWSError] = js.native
   def startOrganizationServiceAccessUpdate(
     callback: js.Function2[/* err */ AWSError, /* data */ StartOrganizationServiceAccessUpdateResponse, Unit]
   ): Request[StartOrganizationServiceAccessUpdateResponse, AWSError] = js.native
   /**
-    * Enables for the Network Manager service for an Amazon Web Services Organization. This can only be called by a management account within the organization. 
+    * Enables the Network Manager service for an Amazon Web Services Organization. This can only be called by a management account within the organization. 
     */
   def startOrganizationServiceAccessUpdate(params: StartOrganizationServiceAccessUpdateRequest): Request[StartOrganizationServiceAccessUpdateResponse, AWSError] = js.native
   def startOrganizationServiceAccessUpdate(

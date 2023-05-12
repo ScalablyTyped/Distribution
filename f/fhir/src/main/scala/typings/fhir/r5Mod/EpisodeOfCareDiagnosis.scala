@@ -9,38 +9,33 @@ trait EpisodeOfCareDiagnosis
      with BackboneElement {
   
   /**
-    * A list of conditions/problems/diagnoses that this episode of care is intended to be providing care for.
+    * The medical condition that was addressed during the episode of care, expressed as a text, code or a reference to another resource.
     */
-  var condition: Reference
-  
-  /**
-    * Ranking of the diagnosis (for each role type).
-    */
-  var rank: js.UndefOr[Double] = js.undefined
+  var condition: js.UndefOr[js.Array[CodeableReference]] = js.undefined
   
   /**
     * Role that this diagnosis has within the episode of care (e.g. admission, billing, discharge …).
     */
-  var role: js.UndefOr[CodeableConcept] = js.undefined
+  var use: js.UndefOr[CodeableConcept] = js.undefined
 }
 object EpisodeOfCareDiagnosis {
   
-  inline def apply(condition: Reference): EpisodeOfCareDiagnosis = {
-    val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any])
+  inline def apply(): EpisodeOfCareDiagnosis = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EpisodeOfCareDiagnosis]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: EpisodeOfCareDiagnosis] (val x: Self) extends AnyVal {
     
-    inline def setCondition(value: Reference): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: js.Array[CodeableReference]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    inline def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
+    inline def setConditionVarargs(value: CodeableReference*): Self = StObject.set(x, "condition", js.Array(value*))
     
-    inline def setRole(value: CodeableConcept): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setUse(value: CodeableConcept): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
     
-    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
   }
 }

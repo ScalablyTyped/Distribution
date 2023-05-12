@@ -16,7 +16,7 @@ trait typeUniqueValueInfo extends StObject {
   /**
     * The label describing the value or category in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#UniqueValueInfo)
+    * [Read more...](global.html)
     */
   var label: String
   

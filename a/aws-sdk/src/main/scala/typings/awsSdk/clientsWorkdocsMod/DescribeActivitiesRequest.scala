@@ -12,7 +12,7 @@ trait DescribeActivitiesRequest extends StObject {
   var ActivityTypes: js.UndefOr[ActivityNamesFilterType] = js.undefined
   
   /**
-    * Amazon WorkDocs authentication token. Not required when using AWS administrator credentials to access the API.
+    * Amazon WorkDocs authentication token. Not required when using Amazon Web Services administrator credentials to access the API.
     */
   var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.undefined
   

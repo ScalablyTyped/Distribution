@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateApplicationSettingsInput extends StObject {
   
   /**
-    * 
+    * The ID of the application.
     */
   var ApplicationId: typings.awsSdk.clientsSsmsapMod.ApplicationId
   
   /**
-    * 
+    * The credentials to be added or updated.
     */
   var CredentialsToAddOrUpdate: js.UndefOr[ApplicationCredentialList] = js.undefined
   
   /**
-    * 
+    * The credentials to be removed.
     */
   var CredentialsToRemove: js.UndefOr[ApplicationCredentialList] = js.undefined
 }

@@ -1,7 +1,6 @@
 package typings.phaser.mod.GameObjects
 
 import typings.phaser.Phaser.Scene
-import typings.phaser.Phaser.Textures.Frame
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,16 +8,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * A Video Game Object.
   * 
-  * This Game Object is capable of handling playback of a previously loaded video from the Phaser Video Cache,
-  * or playing a video based on a given URL. Videos can be either local, or streamed.
+  * This Game Object is capable of handling playback of a video file, video stream or media stream.
+  * 
+  * You can optionally 'preload' the video into the Phaser Video Cache:
   * 
   * ```javascript
   * preload () {
-  *   this.load.video('pixar', 'nemo.mp4');
+  *   this.load.video('ripley', 'assets/aliens.mp4');
   * }
   * 
   * create () {
-  *   this.add.video(400, 300, 'pixar');
+  *   this.add.video(400, 300, 'ripley');
+  * }
+  * ```
+  * 
+  * You don't have to 'preload' the video. You can also play it directly from a URL:
+  * 
+  * ```javascript
+  * create () {
+  *   this.add.video(400, 300).loadURL('assets/aliens.mp4');
   * }
   * ```
   * 
@@ -30,24 +38,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * an alpha channel, and providing the browser supports WebM playback (not all of them do), then it will render
   * in-game with full transparency.
   * 
+  * Playback is handled entirely via the Request Video Frame API, which is supported by most modern browsers.
+  * A polyfill is provided for older browsers.
+  * 
   * ### Autoplaying Videos
   * 
   * Videos can only autoplay if the browser has been unlocked with an interaction, or satisfies the MEI settings.
-  * The policies that control autoplaying are vast and vary between browser.
-  * You can, and should, read more about it here: https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide
+  * The policies that control autoplaying are vast and vary between browser. You can, and should, read more about
+  * it here: https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide
   * 
   * If your video doesn't contain any audio, then set the `noAudio` parameter to `true` when the video is _loaded_,
   * and it will often allow the video to play immediately:
   * 
   * ```javascript
   * preload () {
-  *   this.load.video('pixar', 'nemo.mp4', 'loadeddata', false, true);
+  *   this.load.video('pixar', 'nemo.mp4', true);
   * }
   * ```
   * 
-  * The 5th parameter in the load call tells Phaser that the video doesn't contain any audio tracks. Video without
+  * The 3rd parameter in the load call tells Phaser that the video doesn't contain any audio tracks. Video without
   * audio can autoplay without requiring a user interaction. Video with audio cannot do this unless it satisfies
   * the browsers MEI settings. See the MDN Autoplay Guide for further details.
+  * 
+  * Or:
+  * 
+  * ```javascript
+  * create () {
+  *   this.add.video(400, 300).loadURL('assets/aliens.mp4', true);
+  * }
+  * ```
+  * 
+  * You can set the `noAudio` parameter to `true` even if the video does contain audio. It will still allow the video
+  * to play immediately, but the audio will not start.
   * 
   * Note that due to a bug in IE11 you cannot play a video texture to a Sprite in WebGL. For IE11 force Canvas mode.
   * 
@@ -72,7 +94,7 @@ open class Video protected ()
   def this(scene: Scene, x: Double, y: Double, key: String) = this()
   
   /**
-    * The depth of this Game Object within the Scene.
+    * The depth of this Game Object within the Scene. Ensure this value is only ever set to a number data-type.
     * 
     * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
     * of Game Objects, without actually moving their position in the display list.
@@ -84,26 +106,6 @@ open class Video protected ()
     */
   /* CompleteClass */
   var depth: Double = js.native
-  
-  /**
-    * The displayed height of this Game Object.
-    * 
-    * This value takes into account the scale factor.
-    * 
-    * Setting this value will adjust the Game Object's scale property.
-    */
-  /* CompleteClass */
-  var displayHeight: Double = js.native
-  
-  /**
-    * The displayed width of this Game Object.
-    * 
-    * This value takes into account the scale factor.
-    * 
-    * Setting this value will adjust the Game Object's scale property.
-    */
-  /* CompleteClass */
-  var displayWidth: Double = js.native
   
   /**
     * The horizontally flipped state of the Game Object.
@@ -126,16 +128,6 @@ open class Video protected ()
   var flipY: Boolean = js.native
   
   /**
-    * The native (un-scaled) height of this Game Object.
-    * 
-    * Changing this value will not change the size that the Game Object is rendered in-game.
-    * For that you need to either set the scale of the Game Object (`setScale`) or use
-    * the `displayHeight` property.
-    */
-  /* CompleteClass */
-  var height: Double = js.native
-  
-  /**
     * Resets the horizontal and vertical flipped state of this Game Object back to their default un-flipped state.
     */
   /* CompleteClass */
@@ -151,20 +143,10 @@ open class Video protected ()
     * value will always render in front of one with a lower value.
     * 
     * Setting the depth will queue a depth sort event within the Scene.
-    * @param value The depth of this Game Object.
+    * @param value The depth of this Game Object. Ensure this value is only ever a number data-type.
     */
   /* CompleteClass */
   override def setDepth(value: Double): this.type = js.native
-  
-  /**
-    * Sets the display size of this Game Object.
-    * 
-    * Calling this will adjust the scale.
-    * @param width The width of this Game Object.
-    * @param height The height of this Game Object.
-    */
-  /* CompleteClass */
-  override def setDisplaySize(width: Double, height: Double): this.type = js.native
   
   /**
     * Sets the horizontal and vertical flipped state of this Game Object.
@@ -195,37 +177,6 @@ open class Video protected ()
     */
   /* CompleteClass */
   override def setFlipY(value: Boolean): this.type = js.native
-  
-  /**
-    * Sets the internal size of this Game Object, as used for frame or physics body creation.
-    * 
-    * This will not change the size that the Game Object is rendered in-game.
-    * For that you need to either set the scale of the Game Object (`setScale`) or call the
-    * `setDisplaySize` method, which is the same thing as changing the scale but allows you
-    * to do so by giving pixel values.
-    * 
-    * If you have enabled this Game Object for input, changing the size will _not_ change the
-    * size of the hit area. To do this you should adjust the `input.hitArea` object directly.
-    * @param width The width of this Game Object.
-    * @param height The height of this Game Object.
-    */
-  /* CompleteClass */
-  override def setSize(width: Double, height: Double): this.type = js.native
-  
-  /**
-    * Sets the size of this Game Object to be that of the given Frame.
-    * 
-    * This will not change the size that the Game Object is rendered in-game.
-    * For that you need to either set the scale of the Game Object (`setScale`) or call the
-    * `setDisplaySize` method, which is the same thing as changing the scale but allows you
-    * to do so by giving pixel values.
-    * 
-    * If you have enabled this Game Object for input, changing the size will _not_ change the
-    * size of the hit area. To do this you should adjust the `input.hitArea` object directly.
-    * @param frame The frame to base the size of this Game Object on.
-    */
-  /* CompleteClass */
-  override def setSizeToFrame(frame: Frame): this.type = js.native
   
   /**
     * Sets the visibility of this Game Object.
@@ -259,14 +210,4 @@ open class Video protected ()
     */
   /* CompleteClass */
   var visible: Boolean = js.native
-  
-  /**
-    * The native (un-scaled) width of this Game Object.
-    * 
-    * Changing this value will not change the size that the Game Object is rendered in-game.
-    * For that you need to either set the scale of the Game Object (`setScale`) or use
-    * the `displayWidth` property.
-    */
-  /* CompleteClass */
-  var width: Double = js.native
 }

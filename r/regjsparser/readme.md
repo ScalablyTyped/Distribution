@@ -1,7 +1,7 @@
 
 # Scala.js typings for regjsparser
 
-Typings are for version 0.9.1
+Typings are for version 0.10.0
 
 ## Library description:
 Parsing the JavaScript's RegExp in JavaScript.

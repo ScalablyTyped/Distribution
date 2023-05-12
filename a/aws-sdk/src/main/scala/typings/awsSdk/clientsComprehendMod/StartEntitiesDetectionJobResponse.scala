@@ -7,7 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StartEntitiesDetectionJobResponse extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the entities detection job. It is a unique, fully qualified identifier for the job. It includes the AWS account, Region, and the job ID. The format of the ARN is as follows:  arn:&lt;partition&gt;:comprehend:&lt;region&gt;:&lt;account-id&gt;:entities-detection-job/&lt;job-id&gt;  The following is an example job ARN:  arn:aws:comprehend:us-west-2:111122223333:entities-detection-job/1234abcd12ab34cd56ef1234567890ab 
+    * The ARN of the custom entity recognition model.
+    */
+  var EntityRecognizerArn: js.UndefOr[typings.awsSdk.clientsComprehendMod.EntityRecognizerArn] = js.undefined
+  
+  /**
+    * The Amazon Resource Name (ARN) of the entities detection job. It is a unique, fully qualified identifier for the job. It includes the Amazon Web Services account, Amazon Web Services Region, and the job ID. The format of the ARN is as follows:  arn:&lt;partition&gt;:comprehend:&lt;region&gt;:&lt;account-id&gt;:entities-detection-job/&lt;job-id&gt;  The following is an example job ARN:  arn:aws:comprehend:us-west-2:111122223333:entities-detection-job/1234abcd12ab34cd56ef1234567890ab 
     */
   var JobArn: js.UndefOr[ComprehendArn] = js.undefined
   
@@ -30,6 +35,10 @@ object StartEntitiesDetectionJobResponse {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: StartEntitiesDetectionJobResponse] (val x: Self) extends AnyVal {
+    
+    inline def setEntityRecognizerArn(value: EntityRecognizerArn): Self = StObject.set(x, "EntityRecognizerArn", value.asInstanceOf[js.Any])
+    
+    inline def setEntityRecognizerArnUndefined: Self = StObject.set(x, "EntityRecognizerArn", js.undefined)
     
     inline def setJobArn(value: ComprehendArn): Self = StObject.set(x, "JobArn", value.asInstanceOf[js.Any])
     

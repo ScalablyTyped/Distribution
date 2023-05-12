@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PreAuthorizedApplication extends StObject {
   
-  // The unique identifier for the client application.
+  // The unique identifier for the application.
   var appId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The unique identifier for the oauth2PermissionScopes the application requires.

@@ -1,7 +1,7 @@
 
 # Scala.js typings for inflection
 
-Typings are for version 1.13.0
+Typings are for version 2.0.1
 
 ## Library description:
 A port of inflection-js to node.js module
@@ -24,7 +24,7 @@ A port of inflection-js to node.js module
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

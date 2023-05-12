@@ -1,7 +1,7 @@
 
 # Scala.js typings for canvas-color-tracker
 
-Typings are for version 1.1.6
+Typings are for version 1.2.1
 
 ## Library description:
 A utility to track objects on a canvas by unique px color

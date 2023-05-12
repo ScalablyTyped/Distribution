@@ -9,17 +9,17 @@ trait SupplyDeliverySuppliedItem
      with BackboneElement {
   
   /**
-    * Identifies the medication, substance or device being dispensed. This is either a link to a resource representing the details of the item or a code that identifies the item from a known list.
+    * Identifies the medication, substance, device or biologically derived product being supplied. This is either a link to a resource representing the details of the item or a code that identifies the item from a known list.
     */
   var itemCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * Identifies the medication, substance or device being dispensed. This is either a link to a resource representing the details of the item or a code that identifies the item from a known list.
+    * Identifies the medication, substance, device or biologically derived product being supplied. This is either a link to a resource representing the details of the item or a code that identifies the item from a known list.
     */
   var itemReference: js.UndefOr[Reference] = js.undefined
   
   /**
-    * The amount of supply that has been dispensed. Includes unit of measure.
+    * The amount of the item that has been supplied.  Unit of measure may be included.
     */
   var quantity: js.UndefOr[Quantity] = js.undefined
 }

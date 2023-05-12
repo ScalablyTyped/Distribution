@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetComplianceDetailsByResourceRequest extends StObject {
   
   /**
-    * Filters the results by compliance. The allowed values are COMPLIANT, NON_COMPLIANT, and NOT_APPLICABLE.
+    * Filters the results by compliance.  INSUFFICIENT_DATA is a valid ComplianceType that is returned when an Config rule cannot be evaluated. However, INSUFFICIENT_DATA cannot be used as a ComplianceType for filtering results.
     */
   var ComplianceTypes: js.UndefOr[typings.awsSdk.clientsConfigserviceMod.ComplianceTypes] = js.undefined
   
@@ -17,19 +17,24 @@ trait GetComplianceDetailsByResourceRequest extends StObject {
   var NextToken: js.UndefOr[String] = js.undefined
   
   /**
+    * The unique ID of Amazon Web Services resource execution for which you want to retrieve evaluation results.   You need to only provide either a ResourceEvaluationID or a ResourceID and ResourceType. 
+    */
+  var ResourceEvaluationId: js.UndefOr[typings.awsSdk.clientsConfigserviceMod.ResourceEvaluationId] = js.undefined
+  
+  /**
     * The ID of the Amazon Web Services resource for which you want compliance information.
     */
-  var ResourceId: BaseResourceId
+  var ResourceId: js.UndefOr[BaseResourceId] = js.undefined
   
   /**
     * The type of the Amazon Web Services resource for which you want compliance information.
     */
-  var ResourceType: StringWithCharLimit256
+  var ResourceType: js.UndefOr[StringWithCharLimit256] = js.undefined
 }
 object GetComplianceDetailsByResourceRequest {
   
-  inline def apply(ResourceId: BaseResourceId, ResourceType: StringWithCharLimit256): GetComplianceDetailsByResourceRequest = {
-    val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any])
+  inline def apply(): GetComplianceDetailsByResourceRequest = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetComplianceDetailsByResourceRequest]
   }
   
@@ -46,8 +51,16 @@ object GetComplianceDetailsByResourceRequest {
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
+    inline def setResourceEvaluationId(value: ResourceEvaluationId): Self = StObject.set(x, "ResourceEvaluationId", value.asInstanceOf[js.Any])
+    
+    inline def setResourceEvaluationIdUndefined: Self = StObject.set(x, "ResourceEvaluationId", js.undefined)
+    
     inline def setResourceId(value: BaseResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
+    inline def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
+    
     inline def setResourceType(value: StringWithCharLimit256): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
   }
 }

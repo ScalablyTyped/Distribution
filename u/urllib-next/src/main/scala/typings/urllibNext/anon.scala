@@ -1,6 +1,9 @@
 package typings.urllibNext
 
 import typings.node.bufferMod.global.Buffer
+import typings.urllibNext.srcEsmRequestMod.RequestOptions
+import typings.urllibNext.srcEsmRequestMod.RequestURL
+import typings.urllibNext.srcEsmResponseMod.HttpClientResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,5 +59,12 @@ object anon {
       
       inline def setSocketPathUndefined: Self = StObject.set(x, "socketPath", js.undefined)
     }
+  }
+  
+  @js.native
+  trait FnCall extends StObject {
+    
+    def apply[T](url: RequestURL): js.Promise[HttpClientResponse[T]] = js.native
+    def apply[T](url: RequestURL, options: RequestOptions): js.Promise[HttpClientResponse[T]] = js.native
   }
 }

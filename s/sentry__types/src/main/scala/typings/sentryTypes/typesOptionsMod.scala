@@ -4,8 +4,10 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.sentryTypes.sentryTypesBooleans.`false`
 import typings.sentryTypes.typesBreadcrumbMod.Breadcrumb
 import typings.sentryTypes.typesBreadcrumbMod.BreadcrumbHint
+import typings.sentryTypes.typesEventMod.ErrorEvent
 import typings.sentryTypes.typesEventMod.Event
 import typings.sentryTypes.typesEventMod.EventHint
+import typings.sentryTypes.typesEventMod.TransactionEvent
 import typings.sentryTypes.typesInstrumenterMod.Instrumenter
 import typings.sentryTypes.typesIntegrationMod.Integration
 import typings.sentryTypes.typesScopeMod.CaptureContext
@@ -37,6 +39,15 @@ object typesOptionsMod {
       * and provide additional data about every request.
       */
     var _metadata: js.UndefOr[SdkMetadata] = js.undefined
+    
+    /**
+      * A pattern for error URLs which should exclusively be sent to Sentry.
+      * This is the opposite of {@link Options.denyUrls}.
+      * By default, all errors will be sent.
+      *
+      * Requires the use of the `InboundFilters` integration.
+      */
+    var allowUrls: js.UndefOr[js.Array[String | js.RegExp]] = js.undefined
     
     /** Attaches stacktraces to pure capture message / log integrations */
     var attachStacktrace: js.UndefOr[Boolean] = js.undefined
@@ -78,7 +89,11 @@ object typesOptionsMod {
       * @returns A new event that will be sent | null.
       */
     var beforeSend: js.UndefOr[
-        js.Function2[/* event */ Event, /* hint */ EventHint, (PromiseLike[Event | Null]) | Event | Null]
+        js.Function2[
+          /* event */ ErrorEvent, 
+          /* hint */ EventHint, 
+          (PromiseLike[Event | Null]) | Event | Null
+        ]
       ] = js.undefined
     
     /**
@@ -93,13 +108,26 @@ object typesOptionsMod {
       * @returns A new event that will be sent | null.
       */
     var beforeSendTransaction: js.UndefOr[
-        js.Function2[/* event */ Event, /* hint */ EventHint, (PromiseLike[Event | Null]) | Event | Null]
+        js.Function2[
+          /* event */ TransactionEvent, 
+          /* hint */ EventHint, 
+          (PromiseLike[Event | Null]) | Event | Null
+        ]
       ] = js.undefined
     
     /**
       * Enable debug functionality in the SDK itself
       */
     var debug: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * A pattern for error URLs which should not be sent to Sentry.
+      * To allow certain errors instead, use {@link Options.allowUrls}.
+      * By default, all errors will be sent.
+      *
+      * Requires the use of the `InboundFilters` integration.
+      */
+    var denyUrls: js.UndefOr[js.Array[String | js.RegExp]] = js.undefined
     
     /** Sets the distribution for all events */
     var dist: js.UndefOr[String] = js.undefined
@@ -109,6 +137,13 @@ object typesOptionsMod {
       * SDK will not send any data to Sentry.
       */
     var dsn: js.UndefOr[String] = js.undefined
+    
+    /**
+      * If this is enabled, transactions and trace data will be generated and captured.
+      * This will set the `tracesSampleRate` to the recommended default of `1.0` if `tracesSampleRate` is undefined.
+      * Note that `tracesSampleRate` and `tracesSampler` take precedence over this option.
+      */
+    var enableTracing: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specifies whether this SDK should send events to Sentry.
@@ -124,6 +159,12 @@ object typesOptionsMod {
       * By default, all errors will be sent.
       */
     var ignoreErrors: js.UndefOr[js.Array[String | js.RegExp]] = js.undefined
+    
+    /**
+      * A pattern for transaction names which should not be sent to Sentry.
+      * By default, all transactions will be sent.
+      */
+    var ignoreTransactions: js.UndefOr[js.Array[String | js.RegExp]] = js.undefined
     
     /**
       * Initial data to populate scope.
@@ -290,6 +331,12 @@ object typesOptionsMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: ClientOptions[?], TO /* <: BaseTransportOptions */] (val x: Self & ClientOptions[TO]) extends AnyVal {
       
+      inline def setAllowUrls(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "allowUrls", value.asInstanceOf[js.Any])
+      
+      inline def setAllowUrlsUndefined: Self = StObject.set(x, "allowUrls", js.undefined)
+      
+      inline def setAllowUrlsVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "allowUrls", js.Array(value*))
+      
       inline def setAttachStacktrace(value: Boolean): Self = StObject.set(x, "attachStacktrace", value.asInstanceOf[js.Any])
       
       inline def setAttachStacktraceUndefined: Self = StObject.set(x, "attachStacktrace", js.undefined)
@@ -302,9 +349,13 @@ object typesOptionsMod {
       
       inline def setBeforeBreadcrumbUndefined: Self = StObject.set(x, "beforeBreadcrumb", js.undefined)
       
-      inline def setBeforeSend(value: (/* event */ Event, /* hint */ EventHint) => (PromiseLike[Event | Null]) | Event | Null): Self = StObject.set(x, "beforeSend", js.Any.fromFunction2(value))
+      inline def setBeforeSend(
+        value: (/* event */ ErrorEvent, /* hint */ EventHint) => (PromiseLike[Event | Null]) | Event | Null
+      ): Self = StObject.set(x, "beforeSend", js.Any.fromFunction2(value))
       
-      inline def setBeforeSendTransaction(value: (/* event */ Event, /* hint */ EventHint) => (PromiseLike[Event | Null]) | Event | Null): Self = StObject.set(x, "beforeSendTransaction", js.Any.fromFunction2(value))
+      inline def setBeforeSendTransaction(
+        value: (/* event */ TransactionEvent, /* hint */ EventHint) => (PromiseLike[Event | Null]) | Event | Null
+      ): Self = StObject.set(x, "beforeSendTransaction", js.Any.fromFunction2(value))
       
       inline def setBeforeSendTransactionUndefined: Self = StObject.set(x, "beforeSendTransaction", js.undefined)
       
@@ -314,6 +365,12 @@ object typesOptionsMod {
       
       inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
+      inline def setDenyUrls(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "denyUrls", value.asInstanceOf[js.Any])
+      
+      inline def setDenyUrlsUndefined: Self = StObject.set(x, "denyUrls", js.undefined)
+      
+      inline def setDenyUrlsVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "denyUrls", js.Array(value*))
+      
       inline def setDist(value: String): Self = StObject.set(x, "dist", value.asInstanceOf[js.Any])
       
       inline def setDistUndefined: Self = StObject.set(x, "dist", js.undefined)
@@ -321,6 +378,10 @@ object typesOptionsMod {
       inline def setDsn(value: String): Self = StObject.set(x, "dsn", value.asInstanceOf[js.Any])
       
       inline def setDsnUndefined: Self = StObject.set(x, "dsn", js.undefined)
+      
+      inline def setEnableTracing(value: Boolean): Self = StObject.set(x, "enableTracing", value.asInstanceOf[js.Any])
+      
+      inline def setEnableTracingUndefined: Self = StObject.set(x, "enableTracing", js.undefined)
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -335,6 +396,12 @@ object typesOptionsMod {
       inline def setIgnoreErrorsUndefined: Self = StObject.set(x, "ignoreErrors", js.undefined)
       
       inline def setIgnoreErrorsVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "ignoreErrors", js.Array(value*))
+      
+      inline def setIgnoreTransactions(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "ignoreTransactions", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreTransactionsUndefined: Self = StObject.set(x, "ignoreTransactions", js.undefined)
+      
+      inline def setIgnoreTransactionsVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "ignoreTransactions", js.Array(value*))
       
       inline def setInitialScope(value: CaptureContext): Self = StObject.set(x, "initialScope", value.asInstanceOf[js.Any])
       
@@ -423,6 +490,8 @@ object typesOptionsMod {
     
     var _metadata: js.UndefOr[SdkMetadata] = js.undefined
     
+    var allowUrls: js.UndefOr[js.Array[String | js.RegExp]] = js.undefined
+    
     var attachStacktrace: js.UndefOr[Boolean] = js.undefined
     
     var autoSessionTracking: js.UndefOr[Boolean] = js.undefined
@@ -436,11 +505,19 @@ object typesOptionsMod {
       ] = js.undefined
     
     var beforeSend: js.UndefOr[
-        js.Function2[/* event */ Event, /* hint */ EventHint, (PromiseLike[Event | Null]) | Event | Null]
+        js.Function2[
+          /* event */ ErrorEvent, 
+          /* hint */ EventHint, 
+          (PromiseLike[Event | Null]) | Event | Null
+        ]
       ] = js.undefined
     
     var beforeSendTransaction: js.UndefOr[
-        js.Function2[/* event */ Event, /* hint */ EventHint, (PromiseLike[Event | Null]) | Event | Null]
+        js.Function2[
+          /* event */ TransactionEvent, 
+          /* hint */ EventHint, 
+          (PromiseLike[Event | Null]) | Event | Null
+        ]
       ] = js.undefined
     
     var debug: js.UndefOr[Boolean] = js.undefined
@@ -451,15 +528,21 @@ object typesOptionsMod {
       */
     var defaultIntegrations: js.UndefOr[`false` | js.Array[Integration]] = js.undefined
     
+    var denyUrls: js.UndefOr[js.Array[String | js.RegExp]] = js.undefined
+    
     var dist: js.UndefOr[String] = js.undefined
     
     var dsn: js.UndefOr[String] = js.undefined
+    
+    var enableTracing: js.UndefOr[Boolean] = js.undefined
     
     var enabled: js.UndefOr[Boolean] = js.undefined
     
     var environment: js.UndefOr[String] = js.undefined
     
     var ignoreErrors: js.UndefOr[js.Array[String | js.RegExp]] = js.undefined
+    
+    var ignoreTransactions: js.UndefOr[js.Array[String | js.RegExp]] = js.undefined
     
     var initialScope: js.UndefOr[CaptureContext] = js.undefined
     
@@ -523,6 +606,12 @@ object typesOptionsMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: Options[?], TO /* <: BaseTransportOptions */] (val x: Self & Options[TO]) extends AnyVal {
       
+      inline def setAllowUrls(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "allowUrls", value.asInstanceOf[js.Any])
+      
+      inline def setAllowUrlsUndefined: Self = StObject.set(x, "allowUrls", js.undefined)
+      
+      inline def setAllowUrlsVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "allowUrls", js.Array(value*))
+      
       inline def setAttachStacktrace(value: Boolean): Self = StObject.set(x, "attachStacktrace", value.asInstanceOf[js.Any])
       
       inline def setAttachStacktraceUndefined: Self = StObject.set(x, "attachStacktrace", js.undefined)
@@ -535,9 +624,13 @@ object typesOptionsMod {
       
       inline def setBeforeBreadcrumbUndefined: Self = StObject.set(x, "beforeBreadcrumb", js.undefined)
       
-      inline def setBeforeSend(value: (/* event */ Event, /* hint */ EventHint) => (PromiseLike[Event | Null]) | Event | Null): Self = StObject.set(x, "beforeSend", js.Any.fromFunction2(value))
+      inline def setBeforeSend(
+        value: (/* event */ ErrorEvent, /* hint */ EventHint) => (PromiseLike[Event | Null]) | Event | Null
+      ): Self = StObject.set(x, "beforeSend", js.Any.fromFunction2(value))
       
-      inline def setBeforeSendTransaction(value: (/* event */ Event, /* hint */ EventHint) => (PromiseLike[Event | Null]) | Event | Null): Self = StObject.set(x, "beforeSendTransaction", js.Any.fromFunction2(value))
+      inline def setBeforeSendTransaction(
+        value: (/* event */ TransactionEvent, /* hint */ EventHint) => (PromiseLike[Event | Null]) | Event | Null
+      ): Self = StObject.set(x, "beforeSendTransaction", js.Any.fromFunction2(value))
       
       inline def setBeforeSendTransactionUndefined: Self = StObject.set(x, "beforeSendTransaction", js.undefined)
       
@@ -553,6 +646,12 @@ object typesOptionsMod {
       
       inline def setDefaultIntegrationsVarargs(value: Integration*): Self = StObject.set(x, "defaultIntegrations", js.Array(value*))
       
+      inline def setDenyUrls(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "denyUrls", value.asInstanceOf[js.Any])
+      
+      inline def setDenyUrlsUndefined: Self = StObject.set(x, "denyUrls", js.undefined)
+      
+      inline def setDenyUrlsVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "denyUrls", js.Array(value*))
+      
       inline def setDist(value: String): Self = StObject.set(x, "dist", value.asInstanceOf[js.Any])
       
       inline def setDistUndefined: Self = StObject.set(x, "dist", js.undefined)
@@ -560,6 +659,10 @@ object typesOptionsMod {
       inline def setDsn(value: String): Self = StObject.set(x, "dsn", value.asInstanceOf[js.Any])
       
       inline def setDsnUndefined: Self = StObject.set(x, "dsn", js.undefined)
+      
+      inline def setEnableTracing(value: Boolean): Self = StObject.set(x, "enableTracing", value.asInstanceOf[js.Any])
+      
+      inline def setEnableTracingUndefined: Self = StObject.set(x, "enableTracing", js.undefined)
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -574,6 +677,12 @@ object typesOptionsMod {
       inline def setIgnoreErrorsUndefined: Self = StObject.set(x, "ignoreErrors", js.undefined)
       
       inline def setIgnoreErrorsVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "ignoreErrors", js.Array(value*))
+      
+      inline def setIgnoreTransactions(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "ignoreTransactions", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreTransactionsUndefined: Self = StObject.set(x, "ignoreTransactions", js.undefined)
+      
+      inline def setIgnoreTransactionsVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "ignoreTransactions", js.Array(value*))
       
       inline def setInitialScope(value: CaptureContext): Self = StObject.set(x, "initialScope", value.asInstanceOf[js.Any])
       

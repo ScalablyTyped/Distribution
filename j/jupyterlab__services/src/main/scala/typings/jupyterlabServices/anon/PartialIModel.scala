@@ -27,6 +27,8 @@ trait PartialIModel extends StObject {
   
   var path: js.UndefOr[String] = js.undefined
   
+  var serverPath: js.UndefOr[String] = js.undefined
+  
   var size: js.UndefOr[Double] = js.undefined
   
   var `type`: js.UndefOr[ContentType] = js.undefined
@@ -84,6 +86,10 @@ object PartialIModel {
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    
+    inline def setServerPath(value: String): Self = StObject.set(x, "serverPath", value.asInstanceOf[js.Any])
+    
+    inline def setServerPathUndefined: Self = StObject.set(x, "serverPath", js.undefined)
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

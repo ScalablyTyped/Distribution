@@ -51,6 +51,8 @@ import typings.primereact.primereactStrings.tree
 import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.yes
+import typings.primereact.utilsUtilsMod.IconOptions
+import typings.primereact.utilsUtilsMod.IconType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -104,40 +106,72 @@ object slidemenuSlidemenuMod {
     def this(props: SlideMenuProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SlideMenuProps, context: Any) = this()
     
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
     
+    /**
+      * Hides the popup menu.
+      * @param {React.SyntheticEvent} event - Browser event
+      */
     def hide(event: SyntheticEvent[Element, Event]): Unit = js.native
     
+    /**
+      * Navigates the slide menu backwards.
+      */
     def navigateBack(): Unit = js.native
     
+    /**
+      * Navigates the slide menu forward.
+      */
     def navigateForward(): Unit = js.native
     
+    /**
+      * Navigates the slide menu to this specific level.
+      * @param {number} level - Number of the menu to set
+      */
     def setLevelState(level: Double): Unit = js.native
     
+    /**
+      * Displays the popup menu.
+      * @param {React.SyntheticEvent} event - Browser event
+      */
     def show(event: SyntheticEvent[Element, Event]): Unit = js.native
     
+    /**
+      * Toggles the visibility of the popup menu.
+      * @param {React.SyntheticEvent} event - Browser event
+      */
     def toggle(event: SyntheticEvent[Element, Event]): Unit = js.native
   }
   
-  type SlideMenuAppendToType = js.UndefOr[self | HTMLElement | Null]
-  
-  trait SlideMenuNavigateParams extends StObject {
+  /**
+    * Custom navigate event
+    * @see {@link SlideMenuProps.onNavigate}
+    * @event
+    */
+  trait SlideMenuNavigateEvent extends StObject {
     
+    /**
+      * Level of current displayed menu
+      */
     var level: Double
   }
-  object SlideMenuNavigateParams {
+  object SlideMenuNavigateEvent {
     
-    inline def apply(level: Double): SlideMenuNavigateParams = {
+    inline def apply(level: Double): SlideMenuNavigateEvent = {
       val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SlideMenuNavigateParams]
+      __obj.asInstanceOf[SlideMenuNavigateEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: SlideMenuNavigateParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: SlideMenuNavigateEvent] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     }
@@ -150,7 +184,11 @@ object slidemenuSlidemenuMod {
     
     var accessKey: js.UndefOr[String] = js.undefined
     
-    var appendTo: js.UndefOr[SlideMenuAppendToType] = js.undefined
+    /**
+      * DOM element instance where the overlay panel should be mounted. Valid values are any DOM Element and 'self'. The self value is used to render a component where it is located.
+      * @defaultValue document.body
+      */
+    var appendTo: js.UndefOr[self | HTMLElement | Null] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
@@ -254,19 +292,44 @@ object slidemenuSlidemenuMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Whether to automatically manage layering.
+      * @defaultValue true
+      */
     var autoZIndex: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Defines the backward icon.
+      */
+    var backIcon: js.UndefOr[IconType[SlideMenuProps]] = js.undefined
+    
+    /**
+      * Label of element to navigate back.
+      * @defaultValue Back
+      */
     var backLabel: js.UndefOr[String] = js.undefined
     
+    /**
+      * Base zIndex value to use in layering.
+      * @defaultValue 0
+      */
     var baseZIndex: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -284,8 +347,16 @@ object slidemenuSlidemenuMod {
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
+    /**
+      * Easing animation to use for sliding.
+      * @defaultValue ease-out
+      */
     var easing: js.UndefOr[String] = js.undefined
     
+    /**
+      * Duration of the sliding animation in milliseconds.
+      * @defaultValue 250
+      */
     var effectDuration: js.UndefOr[Double] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
@@ -312,8 +383,15 @@ object slidemenuSlidemenuMod {
     
     var lang: js.UndefOr[String] = js.undefined
     
+    /**
+      * Width of the submenus.
+      * @defaultValue 190
+      */
     var menuWidth: js.UndefOr[Double] = js.undefined
     
+    /**
+      * An array of menuitems.
+      */
     var model: js.UndefOr[
         js.Array[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuItem */ Any
@@ -386,7 +464,11 @@ object slidemenuSlidemenuMod {
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
     
-    var onHide: js.UndefOr[js.Function1[/* e */ SyntheticEvent[Element, Event], Unit]] = js.undefined
+    /**
+      * Callback to invoke when a popup menu is hidden.
+      * @param {React.SyntheticEvent} event - Browser event.
+      */
+    var onHide: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.undefined
     
     var onInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
@@ -420,7 +502,11 @@ object slidemenuSlidemenuMod {
     
     var onMouseUp: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onNavigate: js.UndefOr[js.Function1[/* e */ SlideMenuNavigateParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when a menu is navigated to.
+      * @param {SlideMenuNavigateEvent} event - Navigate event.
+      */
+    var onNavigate: js.UndefOr[js.Function1[/* event */ SlideMenuNavigateEvent, Unit]] = js.undefined
     
     var onPaste: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
     
@@ -462,7 +548,11 @@ object slidemenuSlidemenuMod {
     
     var onSelect: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onShow: js.UndefOr[js.Function1[/* e */ SyntheticEvent[Element, Event], Unit]] = js.undefined
+    /**
+      * Callback to invoke when a popup menu is shown.
+      * @param {React.SyntheticEvent} event - Browser event.
+      */
+    var onShow: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.undefined
     
     var onStalled: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
@@ -490,6 +580,10 @@ object slidemenuSlidemenuMod {
     
     var placeholder: js.UndefOr[String] = js.undefined
     
+    /**
+      * Defines if menu would displayed as a popup.
+      * @defaultValue false
+      */
     var popup: js.UndefOr[Boolean] = js.undefined
     
     var prefix: js.UndefOr[String] = js.undefined
@@ -498,9 +592,13 @@ object slidemenuSlidemenuMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -512,6 +610,11 @@ object slidemenuSlidemenuMod {
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
+    /**
+      * Icon of the submenu.
+      */
+    var submenuIcon: js.UndefOr[IconType[SlideMenuProps]] = js.undefined
+    
     var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
     
     var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
@@ -520,6 +623,9 @@ object slidemenuSlidemenuMod {
     
     var title: js.UndefOr[String] = js.undefined
     
+    /**
+      * The properties of CSSTransition can be customized, except for "nodeRef" and "in" properties.
+      */
     var transitionOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSTransitionProps */ Any
       ] = js.undefined
@@ -530,6 +636,10 @@ object slidemenuSlidemenuMod {
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
+    /**
+      * Height of the scrollable area, a scrollbar appears if a menu height is longer than this value.
+      * @defaultValue 175
+      */
     var viewportHeight: js.UndefOr[Double] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
@@ -552,7 +662,7 @@ object slidemenuSlidemenuMod {
       
       inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      inline def setAppendTo(value: SlideMenuAppendToType): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+      inline def setAppendTo(value: self | HTMLElement): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
       
       inline def setAppendToNull: Self = StObject.set(x, "appendTo", null)
       
@@ -760,6 +870,10 @@ object slidemenuSlidemenuMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -767,6 +881,12 @@ object slidemenuSlidemenuMod {
       inline def setAutoZIndex(value: Boolean): Self = StObject.set(x, "autoZIndex", value.asInstanceOf[js.Any])
       
       inline def setAutoZIndexUndefined: Self = StObject.set(x, "autoZIndex", js.undefined)
+      
+      inline def setBackIcon(value: IconType[SlideMenuProps]): Self = StObject.set(x, "backIcon", value.asInstanceOf[js.Any])
+      
+      inline def setBackIconFunction1(value: /* options */ IconOptions[SlideMenuProps] => ReactNode): Self = StObject.set(x, "backIcon", js.Any.fromFunction1(value))
+      
+      inline def setBackIconUndefined: Self = StObject.set(x, "backIcon", js.undefined)
       
       inline def setBackLabel(value: String): Self = StObject.set(x, "backLabel", value.asInstanceOf[js.Any])
       
@@ -788,9 +908,13 @@ object slidemenuSlidemenuMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -1028,7 +1152,7 @@ object slidemenuSlidemenuMod {
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      inline def setOnHide(value: /* e */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction1(value))
+      inline def setOnHide(value: /* event */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction1(value))
       
       inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
       
@@ -1096,7 +1220,7 @@ object slidemenuSlidemenuMod {
       
       inline def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
       
-      inline def setOnNavigate(value: /* e */ SlideMenuNavigateParams => Unit): Self = StObject.set(x, "onNavigate", js.Any.fromFunction1(value))
+      inline def setOnNavigate(value: /* event */ SlideMenuNavigateEvent => Unit): Self = StObject.set(x, "onNavigate", js.Any.fromFunction1(value))
       
       inline def setOnNavigateUndefined: Self = StObject.set(x, "onNavigate", js.undefined)
       
@@ -1180,7 +1304,7 @@ object slidemenuSlidemenuMod {
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      inline def setOnShow(value: /* e */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
+      inline def setOnShow(value: /* event */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
       
       inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
       
@@ -1252,6 +1376,10 @@ object slidemenuSlidemenuMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1259,6 +1387,10 @@ object slidemenuSlidemenuMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1279,6 +1411,12 @@ object slidemenuSlidemenuMod {
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      
+      inline def setSubmenuIcon(value: IconType[SlideMenuProps]): Self = StObject.set(x, "submenuIcon", value.asInstanceOf[js.Any])
+      
+      inline def setSubmenuIconFunction1(value: /* options */ IconOptions[SlideMenuProps] => ReactNode): Self = StObject.set(x, "submenuIcon", js.Any.fromFunction1(value))
+      
+      inline def setSubmenuIconUndefined: Self = StObject.set(x, "submenuIcon", js.undefined)
       
       inline def setSuppressContentEditableWarning(value: Boolean): Self = StObject.set(x, "suppressContentEditableWarning", value.asInstanceOf[js.Any])
       

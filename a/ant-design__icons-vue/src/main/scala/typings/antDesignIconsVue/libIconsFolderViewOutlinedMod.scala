@@ -16,7 +16,7 @@ object libIconsFolderViewOutlinedMod extends Shortcut {
   @js.native
   trait FolderViewOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_FolderViewOutlinedIconType: String = js.native

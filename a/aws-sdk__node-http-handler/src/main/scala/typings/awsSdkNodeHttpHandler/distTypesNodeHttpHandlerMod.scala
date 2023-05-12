@@ -14,6 +14,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesNodeHttpHandlerMod {
   
+  @JSImport("@aws-sdk/node-http-handler/dist-types/node-http-handler", "DEFAULT_REQUEST_TIMEOUT")
+  @js.native
+  val DEFAULT_REQUEST_TIMEOUT: /* 0 */ Double = js.native
+  
   @JSImport("@aws-sdk/node-http-handler/dist-types/node-http-handler", "NodeHttpHandler")
   @js.native
   open class NodeHttpHandler ()
@@ -43,6 +47,8 @@ object distTypesNodeHttpHandlerMod {
     /**
       * The maximum time in milliseconds that the connection phase of a request
       * may take before the connection attempt is abandoned.
+      *
+      * Defaults to 0, which disables the timeout.
       */
     var connectionTimeout: js.UndefOr[Double] = js.undefined
     
@@ -51,6 +57,14 @@ object distTypesNodeHttpHandlerMod {
     var httpsAgent: js.UndefOr[typings.node.httpsMod.Agent] = js.undefined
     
     /**
+      * The number of milliseconds a request can take before automatically being terminated.
+      * Defaults to 0, which disables the timeout.
+      */
+    var requestTimeout: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * @deprecated Use {@link requestTimeout}
+      *
       * The maximum time in milliseconds that a socket may remain idle before it
       * is closed.
       */
@@ -77,6 +91,10 @@ object distTypesNodeHttpHandlerMod {
       inline def setHttpsAgent(value: typings.node.httpsMod.Agent): Self = StObject.set(x, "httpsAgent", value.asInstanceOf[js.Any])
       
       inline def setHttpsAgentUndefined: Self = StObject.set(x, "httpsAgent", js.undefined)
+      
+      inline def setRequestTimeout(value: Double): Self = StObject.set(x, "requestTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setRequestTimeoutUndefined: Self = StObject.set(x, "requestTimeout", js.undefined)
       
       inline def setSocketTimeout(value: Double): Self = StObject.set(x, "socketTimeout", value.asInstanceOf[js.Any])
       

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetParametersQuerySarifid extends StObject {
   
   /**
-    * Lists the details of all code scanning analyses for a repository,
+    * List code scanning analyses for a repository
+    * @description Lists the details of all code scanning analyses for a repository,
     * starting with the most recent.
     * The response is paginated and you can use the `page` and `per_page` parameters
     * to list the analyses you're interested in.

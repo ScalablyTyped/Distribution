@@ -7,9 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetParametersQueryPerpageSince extends StObject {
   
   /**
-    * Lists all organizations, in the order that they were created on GitHub.
+    * List issue comments for a repository
+    * @description You can use the REST API to list comments on issues and pull requests for a repository. Every pull request is an issue, but not every issue is a pull request.
     *
-    * **Note:** Pagination is powered exclusively by the `since` parameter. Use the [Link header](https://docs.github.com/rest/overview/resources-in-the-rest-api#link-header) to get the URL for the next page of organizations.
+    * By default, issue comments are ordered by ascending ID.
     */
   var get: ParametersQueryPerpageSince
 }

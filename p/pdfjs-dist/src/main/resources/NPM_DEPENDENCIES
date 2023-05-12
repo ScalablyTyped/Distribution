@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "pdfjs-dist" : "3.0.279"
+      "pdfjs-dist" : "3.6.172"
     }
   ],
   "test-dependencies" : [
     {
-      "pdfjs-dist" : "3.0.279"
+      "pdfjs-dist" : "3.6.172"
     }
   ],
   "compile-devDependencies" : [

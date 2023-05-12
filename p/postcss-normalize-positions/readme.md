@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-normalize-positions
 
-Typings are for version 5.1.1
+Typings are for version 6.0.0
 
 ## Library description:
 Normalize keyword values for position into length values.

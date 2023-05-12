@@ -14,6 +14,8 @@ object distExplorerMod {
   open class Explorer protected () extends ExplorerBase[ExplorerOptions] {
     def this(options: ExplorerOptions) = this()
     
+    /* private */ var _loadFile: Any = js.native
+    
     /* private */ var createCosmiconfigResult: Any = js.native
     
     def load(filepath: String): js.Promise[CosmiconfigResult] = js.native

@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
 import typings.wordpressBlocks.blockContentProviderMod.BlockContentProvider.Props
-import typings.wordpressBlocks.mod.BlockInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +27,7 @@ object blockContentProviderMod {
     override def _to: ComponentType[Props] = ^
   }
   
-  inline def withBlockContentContext[T /* <: ComponentType[Any] */](wrapped: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends react.react.ComponentType<infer U> ? react.react.ComponentType<std.Omit<U, 'BlockContent'>> : never */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withBlockContentContext")(wrapped.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends react.react.ComponentType<infer U> ? react.react.ComponentType<std.Omit<U, 'BlockContent'>> : never */ js.Any]
+  inline def withBlockContentContext[T /* <: ComponentType[Any] */](OriginalComponent: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("withBlockContentContext")(OriginalComponent.asInstanceOf[js.Any]).asInstanceOf[T]
   
   object BlockContentProvider {
     

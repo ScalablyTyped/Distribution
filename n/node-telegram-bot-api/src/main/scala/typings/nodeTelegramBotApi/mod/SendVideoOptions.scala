@@ -12,6 +12,8 @@ trait SendVideoOptions
   
   var duration: js.UndefOr[Double] = js.undefined
   
+  var has_spoiler: js.UndefOr[Boolean] = js.undefined
+  
   var height: js.UndefOr[Double] = js.undefined
   
   var parse_mode: js.UndefOr[ParseMode] = js.undefined
@@ -35,6 +37,10 @@ object SendVideoOptions {
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    
+    inline def setHas_spoiler(value: Boolean): Self = StObject.set(x, "has_spoiler", value.asInstanceOf[js.Any])
+    
+    inline def setHas_spoilerUndefined: Self = StObject.set(x, "has_spoiler", js.undefined)
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

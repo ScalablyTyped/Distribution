@@ -1,6 +1,6 @@
 package typings.openui5
 
-import typings.openui5.anon.TargetAggregation
+import typings.openui5.anon.GetKeyForItem
 import typings.openui5.sap.ClassInfo
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -28,7 +28,7 @@ object sapMP13nSelectionControllerMod {
       /**
       * Initial settings for the new control
       */
-    mSettings: TargetAggregation
+    mSettings: GetKeyForItem
     ) = this()
     def this(
       /**
@@ -38,7 +38,7 @@ object sapMP13nSelectionControllerMod {
       /**
       * Initial settings for the new control
       */
-    mSettings: TargetAggregation
+    mSettings: GetKeyForItem
     ) = this()
   }
   /* static members */

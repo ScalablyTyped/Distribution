@@ -16,7 +16,7 @@ object libIconsWechatOutlinedMod extends Shortcut {
   @js.native
   trait WechatOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_WechatOutlinedIconType: String = js.native

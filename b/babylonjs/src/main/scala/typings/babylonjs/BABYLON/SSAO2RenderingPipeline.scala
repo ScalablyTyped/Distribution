@@ -45,6 +45,10 @@ trait SSAO2RenderingPipeline
   
   /* private */ var _blurVPostProcess: Any = js.native
   
+  /* private */ var _bypassBlur: Any = js.native
+  
+  /* private */ var _createBlurFilter: Any = js.native
+  
   /* private */ var _createBlurPostProcess: Any = js.native
   
   /* private */ var _createRandomTexture: Any = js.native
@@ -53,10 +57,12 @@ trait SSAO2RenderingPipeline
   
   /* private */ var _createSSAOPostProcess: Any = js.native
   
+  /* private */ var _epsilon: Any = js.native
+  
   /* private */ var _expensiveBlur: Any = js.native
   
   /**
-    * Force rendering the geometry through geometry buffer
+    * Force rendering the geometry through geometry buffer.
     */
   /* private */ var _forceGeometryBuffer: Any = js.native
   
@@ -64,7 +70,11 @@ trait SSAO2RenderingPipeline
   
   /* private */ def _geometryBufferRenderer: Any = js.native
   
+  /* private */ var _getDefinesForBlur: Any = js.native
+  
   /* private */ var _getDefinesForSSAO: Any = js.native
+  
+  /* private */ var _getSamplersForBlur: Any = js.native
   
   /* private */ var _hammersley: Any = js.native
   
@@ -88,11 +98,6 @@ trait SSAO2RenderingPipeline
     */
   /* private */ var _sampleSphere: Any = js.native
   
-  /**
-    * Blur filter offsets
-    */
-  /* private */ var _samplerOffsets: Any = js.native
-  
   /* private */ var _samples: Any = js.native
   
   /* private */ var _scene: Any = js.native
@@ -103,17 +108,68 @@ trait SSAO2RenderingPipeline
   
   /* private */ var _textureSamples: Any = js.native
   
+  /* private */ var _textureType: Any = js.native
+  
   /**
     * The base color of the SSAO post-process
     * The final result is "base + ssao" between [0, 1]
     */
   var base: Double = js.native
   
+  /**
+    * The number of samples the bilateral filter uses in both dimensions when denoising the SSAO calculations. Default value is 16.
+    *
+    * A higher value should result in smoother shadows but will use more processing time in the shaders.
+    *
+    * A high value can cause the shadows to get to blurry or create visible artifacts (bands) near sharp details in the geometry. The artifacts can sometimes be mitigated by increasing the bilateralSoften setting.
+    */
+  var bilateralSamples: Double = js.native
+  
+  /**
+    * Controls the shape of the denoising kernel used by the bilateral filter. Default value is 0.
+    *
+    * By default the bilateral filter acts like a box-filter, treating all samples on the same depth with equal weights. This is effective to maximize the denoising effect given a limited set of samples. However, it also often results in visible ghosting around sharp shadow regions and can spread out lines over large areas so they are no longer visible.
+    *
+    * Increasing this setting will make the filter pay less attention to samples further away from the center sample, reducing many artifacts but at the same time increasing noise.
+    *
+    * Useful value range is [0..1].
+    */
+  var bilateralSoften: Double = js.native
+  
+  /**
+    * How forgiving the bilateral denoiser should be when rejecting samples. Default value is 0.
+    *
+    * A higher value results in the bilateral filter being more forgiving and thus doing a better job at denoising slanted and curved surfaces, but can lead to shadows spreading out around corners or between objects that are close to each other depth wise.
+    *
+    * Useful value range is normally [0..1], but higher values are allowed.
+    */
+  var bilateralTolerance: Double = js.native
+  
+  def bypassBlur: Boolean = js.native
+  /**
+    * Skips the denoising (blur) stage of the SSAO calculations.
+    *
+    * Useful to temporarily set while experimenting with the other SSAO2 settings.
+    */
+  def bypassBlur_=(b: Boolean): Unit = js.native
+  
   def dispose(disableGeometryBufferRenderer: Boolean): Unit = js.native
+  
+  def epsilon: Double = js.native
+  /**
+    * Used in SSAO calculations to compensate for accuracy issues with depth values. Default 0.02.
+    *
+    * Normally you do not need to change this value, but you can experiment with it if you get a lot of in false self-occlusion on flat surfaces when using fewer than 16 samples. Useful range is normally [0..0.1] but higher values is allowed.
+    */
+  def epsilon_=(n: Double): Unit = js.native
   
   def expensiveBlur: Boolean = js.native
   /**
-    * If bilateral blur should be used
+    * Enables the configurable bilateral denoising (blurring) filter. Default is true.
+    * Set to false to instead use a legacy bilateral filter that can't be configured.
+    *
+    * The denoising filter runs after the SSAO calculations and is a very important step. Both options results in a so called bilateral being used, but the "expensive" one can be
+    * configured in several ways to fit your scene.
     */
   def expensiveBlur_=(b: Boolean): Unit = js.native
   
@@ -123,7 +179,7 @@ trait SSAO2RenderingPipeline
   var maxZ: Double = js.native
   
   /**
-    * In order to save performances, SSAO radius is clamped on close geometry. This ratio changes by how much
+    * In order to save performances, SSAO radius is clamped on close geometry. This ratio changes by how much.
     */
   var minZAspect: Double = js.native
   
@@ -134,7 +190,7 @@ trait SSAO2RenderingPipeline
   
   def samples: Double = js.native
   /**
-    * Number of samples used for the SSAO calculations. Default value is 8
+    * Number of samples used for the SSAO calculations. Default value is 8.
     */
   def samples_=(n: Double): Unit = js.native
   
@@ -151,7 +207,7 @@ trait SSAO2RenderingPipeline
   
   def textureSamples: Double = js.native
   /**
-    * Number of samples to use for antialiasing
+    * Number of samples to use for antialiasing.
     */
   def textureSamples_=(n: Double): Unit = js.native
   

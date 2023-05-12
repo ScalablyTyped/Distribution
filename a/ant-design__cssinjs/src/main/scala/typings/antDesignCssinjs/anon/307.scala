@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.Right
+import typings.csstype.mod.Property.ShapeImageThreshold
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `307` extends StObject {
   
   var value: js.UndefOr[
-    (Right[Double | String]) | (js.Array[
+    ShapeImageThreshold | (js.Array[
       (Extract[
-        js.UndefOr[
-          (Right[Double | String]) | (js.Array[NonNullable[js.UndefOr[Right[Double | String]]]])
-        ], 
+        js.UndefOr[ShapeImageThreshold | js.Array[NonNullable[js.UndefOr[ShapeImageThreshold]]]], 
         String
-      ]) | (NonNullable[js.UndefOr[Right[Double | String]]])
+      ]) | NonNullable[js.UndefOr[ShapeImageThreshold]]
     ])
   ] = js.native
 }

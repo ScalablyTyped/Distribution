@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@fluentui/theme" : "2.6.17"
+      "@fluentui/theme" : "2.6.29"
     }
   ],
   "test-dependencies" : [
     {
-      "@fluentui/theme" : "2.6.17"
+      "@fluentui/theme" : "2.6.29"
     }
   ],
   "compile-devDependencies" : [

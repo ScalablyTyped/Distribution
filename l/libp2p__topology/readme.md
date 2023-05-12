@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__topology
 
-Typings are for version 3.0.1
+Typings are for version 4.0.1
 
 ## Library description:
 libp2p network topology

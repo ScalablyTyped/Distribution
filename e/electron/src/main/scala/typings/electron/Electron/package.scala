@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 type Accelerator = String
 
 /**
-  * The `EventEmitter` class is defined and exposed by the `events` module:
+  * The `EventEmitter` class is defined and exposed by the `node:events` module:
   *
   * ```js
-  * const EventEmitter = require('events');
+  * import { EventEmitter } from 'node:events';
   * ```
   *
   * All `EventEmitter`s emit the event `'newListener'` when new listeners are
@@ -33,6 +33,9 @@ type nativeImage = NativeImage_
 
 /* was `typeof Session` */
 type session = Session_
+
+/* was `typeof UtilityProcess` */
+type utilityProcess = UtilityProcess_
 
 /* was `typeof WebContents` */
 type webContents = WebContents_

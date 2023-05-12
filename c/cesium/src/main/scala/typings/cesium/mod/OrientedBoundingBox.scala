@@ -68,7 +68,9 @@ open class OrientedBoundingBox () extends StObject {
   def equals(right: OrientedBoundingBox): Boolean = js.native
   
   /**
-    * The transformation matrix, to rotate the box to the right position.
+    * The three orthogonal half-axes of the bounding box. Equivalently, the
+    * transformation matrix, to rotate and scale a 2x2x2 cube centered at the
+    * origin.
     */
   var halfAxes: Matrix3 = js.native
   

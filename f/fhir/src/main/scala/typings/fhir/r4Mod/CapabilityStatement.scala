@@ -4,7 +4,7 @@ import typings.fhir.fhirStrings.active
 import typings.fhir.fhirStrings.capability
 import typings.fhir.fhirStrings.draft
 import typings.fhir.fhirStrings.instance
-import typings.fhir.fhirStrings.requirements
+import typings.fhir.fhirStrings.requirements_
 import typings.fhir.fhirStrings.retired
 import typings.fhir.fhirStrings.unknown
 import org.scalablytyped.runtime.StObject
@@ -122,7 +122,7 @@ trait CapabilityStatement
   /**
     * The way that this statement is intended to be used, to describe an actual running instance of software, a particular product (kind, not instance of software) or a class of implementation (e.g. a desired purchase).
     */
-  var kind: instance | capability | requirements
+  var kind: instance | capability | requirements_
   
   /**
     * Multiple repetitions allow the documentation of multiple endpoints per solution.
@@ -196,7 +196,7 @@ object CapabilityStatement {
     date: String,
     fhirVersion: String,
     format: js.Array[String],
-    kind: instance | capability | requirements,
+    kind: instance | capability | requirements_,
     status: draft | active | retired | unknown
   ): CapabilityStatement = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], fhirVersion = fhirVersion.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], resourceType = "CapabilityStatement", status = status.asInstanceOf[js.Any])
@@ -266,7 +266,7 @@ object CapabilityStatement {
     
     inline def setJurisdictionVarargs(value: CodeableConcept*): Self = StObject.set(x, "jurisdiction", js.Array(value*))
     
-    inline def setKind(value: instance | capability | requirements): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: instance | capability | requirements_): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setMessaging(value: js.Array[CapabilityStatementMessaging]): Self = StObject.set(x, "messaging", value.asInstanceOf[js.Any])
     

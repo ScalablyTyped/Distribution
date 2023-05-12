@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersQueryCursor extends StObject {
   
-  /** Returns a list of webhook deliveries for a webhook configured in an organization. */
+  /**
+    * List deliveries for an organization webhook
+    * @description Returns a list of webhook deliveries for a webhook configured in an organization.
+    */
   var get: ParametersQueryCursor
 }
 object GetParametersQueryCursor {

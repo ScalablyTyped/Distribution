@@ -1,6 +1,5 @@
 package typings.grpcGrpcJs
 
-import typings.grpcGrpcJs.buildSrcCallStreamMod.Call
 import typings.grpcGrpcJs.buildSrcChannelOptionsMod.ChannelOptions
 import typings.grpcGrpcJs.buildSrcFilterMod.BaseFilter
 import typings.grpcGrpcJs.buildSrcFilterMod.FilterFactory
@@ -13,9 +12,7 @@ object buildSrcMaxMessageSizeFilterMod {
   @JSImport("@grpc/grpc-js/build/src/max-message-size-filter", "MaxMessageSizeFilter")
   @js.native
   open class MaxMessageSizeFilter protected () extends BaseFilter {
-    def this(options: ChannelOptions, callStream: Call) = this()
-    
-    /* private */ val callStream: Any = js.native
+    def this(options: ChannelOptions) = this()
     
     /* private */ var maxReceiveMessageSize: Any = js.native
     
@@ -32,7 +29,7 @@ object buildSrcMaxMessageSizeFilterMod {
     def this(options: ChannelOptions) = this()
     
     /* CompleteClass */
-    override def createFilter(callStream: Call): MaxMessageSizeFilter = js.native
+    override def createFilter(): MaxMessageSizeFilter = js.native
     
     /* private */ val options: Any = js.native
   }

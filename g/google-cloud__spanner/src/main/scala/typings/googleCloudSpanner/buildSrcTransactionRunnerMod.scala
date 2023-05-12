@@ -13,6 +13,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object buildSrcTransactionRunnerMod {
   
+  @JSImport("@google-cloud/spanner/build/src/transaction-runner", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@google-cloud/spanner/build/src/transaction-runner", "AsyncTransactionRunner")
   @js.native
   open class AsyncTransactionRunner[T] protected () extends Runner[T] {
@@ -155,11 +159,15 @@ object buildSrcTransactionRunnerMod {
     var runFn_Original: RunTransactionCallback = js.native
   }
   
+  inline def isRetryableInternalError(err: ServiceError): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRetryableInternalError")(err.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   type AsyncRunTransactionCallback[T] = js.Function1[/* transaction */ Transaction, js.Promise[T]]
   
   type RunTransactionCallback = NormalCallback[Transaction]
   
   trait RunTransactionOptions extends StObject {
+    
+    var optimisticLock: js.UndefOr[Boolean] = js.undefined
     
     var requestOptions: js.UndefOr[PickanytransactionTag] = js.undefined
     
@@ -174,6 +182,10 @@ object buildSrcTransactionRunnerMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: RunTransactionOptions] (val x: Self) extends AnyVal {
+      
+      inline def setOptimisticLock(value: Boolean): Self = StObject.set(x, "optimisticLock", value.asInstanceOf[js.Any])
+      
+      inline def setOptimisticLockUndefined: Self = StObject.set(x, "optimisticLock", js.undefined)
       
       inline def setRequestOptions(value: PickanytransactionTag): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
       

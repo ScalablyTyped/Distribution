@@ -2,7 +2,6 @@ package typings.dialogflow.protosProtosMod.google.protobuf
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.dialogflow.protosProtosMod.google.protobuf.UninterpretedOption.INamePart
-import typings.long.mod.^
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
@@ -40,11 +39,11 @@ open class UninterpretedOption ()
   
   /** UninterpretedOption negativeIntValue. */
   @JSName("negativeIntValue")
-  var negativeIntValue_UninterpretedOption: Double | ^ | String = js.native
+  var negativeIntValue_UninterpretedOption: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ scala.Any) | String = js.native
   
   /** UninterpretedOption positiveIntValue. */
   @JSName("positiveIntValue")
-  var positiveIntValue_UninterpretedOption: Double | ^ | String = js.native
+  var positiveIntValue_UninterpretedOption: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ scala.Any) | String = js.native
   
   /** UninterpretedOption stringValue. */
   @JSName("stringValue")

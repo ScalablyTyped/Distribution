@@ -160,7 +160,7 @@ trait HlsGroupSettings extends StObject {
   var ManifestDurationFormat: js.UndefOr[HlsManifestDurationFormat] = js.undefined
   
   /**
-    * When set, minimumSegmentLength is enforced by looking ahead and back within the specified range for a nearby avail and extending the segment size if needed.
+    * Minimum length of MPEG-2 Transport Stream segments in seconds. When set, minimum segment length is enforced by looking ahead and back within the specified range for a nearby avail and extending the segment size if needed.
     */
   var MinSegmentLength: js.UndefOr[integerMin0] = js.undefined
   
@@ -202,7 +202,7 @@ trait HlsGroupSettings extends StObject {
   var RedundantManifest: js.UndefOr[HlsRedundantManifest] = js.undefined
   
   /**
-    * Length of MPEG-2 Transport Stream segments to create (in seconds). Note that segments will end on the next keyframe after this number of seconds, so actual segment length may be longer.
+    * Length of MPEG-2 Transport Stream segments to create in seconds. Note that segments will end on the next keyframe after this duration, so actual segment length may be longer.
     */
   var SegmentLength: js.UndefOr[integerMin1] = js.undefined
   

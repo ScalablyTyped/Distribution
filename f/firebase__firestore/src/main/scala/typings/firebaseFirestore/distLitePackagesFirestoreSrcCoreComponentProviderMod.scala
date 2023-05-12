@@ -39,6 +39,14 @@ object distLitePackagesFirestoreSrcCoreComponentProviderMod {
     var persistence_IndexedDbOfflineComponentProvider: IndexedDbPersistence = js.native
   }
   
+  @JSImport("@firebase/firestore/dist/lite/packages/firestore/src/core/component_provider", "LruGcMemoryOfflineComponentProvider")
+  @js.native
+  open class LruGcMemoryOfflineComponentProvider () extends MemoryOfflineComponentProvider {
+    def this(cacheSizeBytes: Double) = this()
+    
+    /* protected */ val cacheSizeBytes: js.UndefOr[Double] = js.native
+  }
+  
   @JSImport("@firebase/firestore/dist/lite/packages/firestore/src/core/component_provider", "MemoryOfflineComponentProvider")
   @js.native
   open class MemoryOfflineComponentProvider ()

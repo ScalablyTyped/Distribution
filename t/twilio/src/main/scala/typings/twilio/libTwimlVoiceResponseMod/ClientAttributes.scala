@@ -6,14 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ClientAttributes extends StObject {
   
+  /** method - Client URL Method */
   var method: js.UndefOr[String] = js.undefined
   
+  /** statusCallback - Status Callback URL */
   var statusCallback: js.UndefOr[String] = js.undefined
   
+  /** statusCallbackEvent - Events to trigger status callback */
   var statusCallbackEvent: js.UndefOr[js.Array[ClientEvent]] = js.undefined
   
+  /** statusCallbackMethod - Status Callback URL Method */
   var statusCallbackMethod: js.UndefOr[String] = js.undefined
   
+  /** url - Client URL */
   var url: js.UndefOr[String] = js.undefined
 }
 object ClientAttributes {

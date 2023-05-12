@@ -1,11 +1,12 @@
 package typings.ipfsCli
 
+import typings.ipfsCli.anon.Api
 import typings.ipfsCli.anon.Cleanup
-import typings.ipfsCli.anon.Migrate
 import typings.ipfsCli.anon.Nsecs
 import typings.ipfsCli.distSrcTypesMod.Print
 import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.multiformats.cidMod.CID
+import typings.multiformats.distTypesSrcBasesInterfaceMod.MultibaseCodec
 import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
 import typings.multiformatsMultiaddr.mod.Multiaddr_
 import org.scalablytyped.runtime.StObject
@@ -52,7 +53,7 @@ object distSrcUtilsMod {
   
   inline def escapeControlCharacters(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeControlCharacters")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def getIpfs(argv: Migrate): js.Promise[Cleanup] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIpfs")(argv.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Cleanup]]
+  inline def getIpfs(argv: Api): js.Promise[Cleanup] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIpfs")(argv.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Cleanup]]
   
   inline def getRepoPath(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRepoPath")().asInstanceOf[String]
   
@@ -62,10 +63,7 @@ object distSrcUtilsMod {
   
   inline def isDaemonOn(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDaemonOn")().asInstanceOf[Boolean]
   
-  inline def makeEntriesPrintable(
-    obj: Any,
-    cidBase: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.MultibaseCodec<any> */ Any
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEntriesPrintable")(obj.asInstanceOf[js.Any], cidBase.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def makeEntriesPrintable(obj: Any, cidBase: MultibaseCodec[Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEntriesPrintable")(obj.asInstanceOf[js.Any], cidBase.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("ipfs-cli/dist/src/utils", "print")
   @js.native

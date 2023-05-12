@@ -24,12 +24,14 @@ trait ListEntitiesRequest extends StObject {
   /**
     * Specifies the upper limit of the elements on a single page. If a value isn't provided, the default value is 20.
     */
-  var MaxResults: js.UndefOr[MaxResultInteger] = js.undefined
+  var MaxResults: js.UndefOr[ListEntitiesMaxResultInteger] = js.undefined
   
   /**
     * The value of the next token, if it exists. Null if there are no more results.
     */
   var NextToken: js.UndefOr[typings.awsSdk.clientsMarketplacecatalogMod.NextToken] = js.undefined
+  
+  var OwnershipType: js.UndefOr[typings.awsSdk.clientsMarketplacecatalogMod.OwnershipType] = js.undefined
   
   /**
     * An object that contains two attributes, SortBy and SortOrder.
@@ -56,13 +58,17 @@ object ListEntitiesRequest {
     
     inline def setFilterListVarargs(value: Filter*): Self = StObject.set(x, "FilterList", js.Array(value*))
     
-    inline def setMaxResults(value: MaxResultInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: ListEntitiesMaxResultInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    
+    inline def setOwnershipType(value: OwnershipType): Self = StObject.set(x, "OwnershipType", value.asInstanceOf[js.Any])
+    
+    inline def setOwnershipTypeUndefined: Self = StObject.set(x, "OwnershipType", js.undefined)
     
     inline def setSort(value: Sort): Self = StObject.set(x, "Sort", value.asInstanceOf[js.Any])
     

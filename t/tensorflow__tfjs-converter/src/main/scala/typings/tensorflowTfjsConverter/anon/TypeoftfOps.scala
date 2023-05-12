@@ -35,6 +35,7 @@ import typings.tensorflowTfjsCore.distTypesMod.TensorLike4D
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike5D
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike6D
 import typings.tensorflowTfjsCore.distTypesMod.WebGLData
+import typings.tensorflowTfjsCore.distTypesMod.WebGPUData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -117,6 +118,8 @@ trait TypeoftfOps extends StObject {
   val batchToSpaceND: TypeofbatchToSpaceND = js.native
   
   val bincount: Typeofbincount = js.native
+  
+  val bitwiseAnd: TypeofbitwiseAnd = js.native
   
   def booleanMaskAsync(
     tensor: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank],
@@ -326,6 +329,8 @@ trait TypeoftfOps extends StObject {
   
   def enclosingPowerOfTwo(value: Double): Double = js.native
   
+  val ensureShape: TypeofensureShape = js.native
+  
   val equal: Typeofequal = js.native
   
   val erf: Typeoferf = js.native
@@ -410,7 +415,7 @@ trait TypeoftfOps extends StObject {
     * @param shape An array of integers defining the output tensor shape.
     * @param value The scalar value to fill the tensor with.
     * @param dtype The type of an element in the resulting tensor. Defaults to
-    * 'float'.
+    *     'float32' if the given param value is a number, otherwise 'string'.
     *
     * @doc {heading: 'Tensors', subheading: 'Creation'}
     */
@@ -945,6 +950,8 @@ trait TypeoftfOps extends StObject {
   
   val randomUniform: TypeofrandomUniform = js.native
   
+  val randomUniformInt: TypeofrandomUniformInt = js.native
+  
   def range(start: Double, stop: Double): Tensor1D = js.native
   def range(start: Double, stop: Double, step: Double): Tensor1D = js.native
   def range(start: Double, stop: Double, step: Double, dtype: float32 | int32): Tensor1D = js.native
@@ -1162,6 +1169,17 @@ trait TypeoftfOps extends StObject {
     dtype: DataType
   ): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = js.native
   def tensor[R /* <: Rank */](values: WebGLData, shape: Unit, dtype: DataType): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = js.native
+  def tensor[R /* <: Rank */](values: WebGPUData): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = js.native
+  def tensor[R /* <: Rank */](
+    values: WebGPUData,
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
+  ): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = js.native
+  def tensor[R /* <: Rank */](
+    values: WebGPUData,
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    dtype: DataType
+  ): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = js.native
+  def tensor[R /* <: Rank */](values: WebGPUData, shape: Unit, dtype: DataType): typings.tensorflowTfjsCore.distTensorMod.Tensor[R] = js.native
   
   def tensor1d(values: TensorLike1D): Tensor1D = js.native
   def tensor1d(values: TensorLike1D, dtype: DataType): Tensor1D = js.native
@@ -1194,6 +1212,8 @@ trait TypeoftfOps extends StObject {
     dtype: DataType
   ): Tensor6D = js.native
   def tensor6d(values: TensorLike6D, shape: Unit, dtype: DataType): Tensor6D = js.native
+  
+  val tensorScatterUpdate: TypeoftensorScatterUpdate = js.native
   
   val tile: Typeoftile = js.native
   

@@ -35,5 +35,8 @@ open class IFCLoader () extends Loader {
     onError: js.Function1[/* event */ ErrorEvent, Unit]
   ): Unit = js.native
   
+  def loadAsync(url: String): js.Promise[IFCModel_] = js.native
+  def loadAsync(url: String, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[IFCModel_] = js.native
+  
   def parse(buffer: js.typedarray.ArrayBuffer): js.Promise[IFCModel_] = js.native
 }

@@ -1,7 +1,6 @@
 package typings.angularCli
 
 import typings.angularCli.anon.OptionsDocCommandArgs
-import typings.angularCli.srcCommandBuilderCommandModuleMod.CommandContext
 import typings.angularCli.srcCommandBuilderCommandModuleMod.CommandModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,19 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object srcCommandsDocCliMod {
   
-  @JSImport("@angular/cli/src/commands/doc/cli", "DocCommandModule")
+  @JSImport("@angular/cli/src/commands/doc/cli", JSImport.Default)
   @js.native
-  open class DocCommandModule protected () extends CommandModule[DocCommandArgs] {
-    def this(context: CommandContext) = this()
-    
-    @JSName("aliases")
-    var aliases_DocCommandModule: js.Array[String] = js.native
-    
-    @JSName("describe")
-    var describe_DocCommandModule: String = js.native
-    
-    def run(options: OptionsDocCommandArgs): js.Promise[Double | Unit] = js.native
-  }
+  open class default () extends DocCommandModule
   
   trait DocCommandArgs extends StObject {
     
@@ -51,5 +40,16 @@ object srcCommandsDocCliMod {
       
       inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
+  }
+  
+  @js.native
+  trait DocCommandModule extends CommandModule[DocCommandArgs] {
+    
+    var aliases: js.UndefOr[js.Array[String]] = js.native
+    
+    @JSName("describe")
+    var describe_DocCommandModule: String = js.native
+    
+    def run(options: OptionsDocCommandArgs): js.Promise[Double | Unit] = js.native
   }
 }

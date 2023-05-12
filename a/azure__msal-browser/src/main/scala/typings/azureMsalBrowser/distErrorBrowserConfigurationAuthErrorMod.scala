@@ -21,6 +21,11 @@ object distErrorBrowserConfigurationAuthErrorMod {
     @js.native
     val ^ : js.Any = js.native
     
+    /**
+      * Creates an error thrown when a crypto interface that requires entropy is initialized without entropy
+      */
+    inline def createEntropyNotProvided(): BrowserConfigurationAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createEntropyNotProvided")().asInstanceOf[BrowserConfigurationAuthError]
+    
     inline def createInMemoryRedirectUnavailableError(): BrowserConfigurationAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMemoryRedirectUnavailableError")().asInstanceOf[BrowserConfigurationAuthError]
     
     /**
@@ -55,6 +60,11 @@ object distErrorBrowserConfigurationAuthErrorMod {
     @JSImport("@azure/msal-browser/dist/error/BrowserConfigurationAuthError", "BrowserConfigurationAuthErrorMessage")
     @js.native
     val ^ : js.Any = js.native
+    
+    @JSImport("@azure/msal-browser/dist/error/BrowserConfigurationAuthError", "BrowserConfigurationAuthErrorMessage.entropyNotProvided")
+    @js.native
+    def entropyNotProvided: Code = js.native
+    inline def entropyNotProvided_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("entropyNotProvided")(x.asInstanceOf[js.Any])
     
     @JSImport("@azure/msal-browser/dist/error/BrowserConfigurationAuthError", "BrowserConfigurationAuthErrorMessage.inMemRedirectUnavailable")
     @js.native

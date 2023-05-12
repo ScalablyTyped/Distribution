@@ -1,6 +1,7 @@
 package typings.three
 
 import typings.std.HTMLCanvasElement
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcThreeMod.BufferGeometry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,5 +13,5 @@ object examplesJsmUtilsUvsdebugMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def UVsDebug(geometry: BufferGeometry, size: Double): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("UVsDebug")(geometry.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+  inline def UVsDebug(geometry: BufferGeometry[NormalBufferAttributes], size: Double): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("UVsDebug")(geometry.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
 }

@@ -23,11 +23,6 @@ trait SubstanceDefinitionRelationship
   var amountRatio: js.UndefOr[Ratio] = js.undefined
   
   /**
-    * For use when the numeric has an uncertain range.
-    */
-  var amountRatioHighLimit: js.UndefOr[Ratio] = js.undefined
-  
-  /**
     * A numeric factor for the relationship, for instance to express that the salt of a substance has some percentage of the active substance in relation to some other.
     */
   var amountString: js.UndefOr[String] = js.undefined
@@ -35,12 +30,17 @@ trait SubstanceDefinitionRelationship
   /**
     * An operator for the amount, for example "average", "approximately", "less than".
     */
-  var amountType: js.UndefOr[CodeableConcept] = js.undefined
+  var comparator: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * For example where an enzyme strongly bonds with a particular substance, this is a defining relationship for that enzyme, out of several possible substance relationships.
     */
   var isDefining: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * For use when the numeric has an uncertain range.
+    */
+  var ratioHighLimitAmount: js.UndefOr[Ratio] = js.undefined
   
   /**
     * Supporting literature.
@@ -79,23 +79,23 @@ object SubstanceDefinitionRelationship {
     
     inline def setAmountRatio(value: Ratio): Self = StObject.set(x, "amountRatio", value.asInstanceOf[js.Any])
     
-    inline def setAmountRatioHighLimit(value: Ratio): Self = StObject.set(x, "amountRatioHighLimit", value.asInstanceOf[js.Any])
-    
-    inline def setAmountRatioHighLimitUndefined: Self = StObject.set(x, "amountRatioHighLimit", js.undefined)
-    
     inline def setAmountRatioUndefined: Self = StObject.set(x, "amountRatio", js.undefined)
     
     inline def setAmountString(value: String): Self = StObject.set(x, "amountString", value.asInstanceOf[js.Any])
     
     inline def setAmountStringUndefined: Self = StObject.set(x, "amountString", js.undefined)
     
-    inline def setAmountType(value: CodeableConcept): Self = StObject.set(x, "amountType", value.asInstanceOf[js.Any])
+    inline def setComparator(value: CodeableConcept): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
     
-    inline def setAmountTypeUndefined: Self = StObject.set(x, "amountType", js.undefined)
+    inline def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
     
     inline def setIsDefining(value: Boolean): Self = StObject.set(x, "isDefining", value.asInstanceOf[js.Any])
     
     inline def setIsDefiningUndefined: Self = StObject.set(x, "isDefining", js.undefined)
+    
+    inline def setRatioHighLimitAmount(value: Ratio): Self = StObject.set(x, "ratioHighLimitAmount", value.asInstanceOf[js.Any])
+    
+    inline def setRatioHighLimitAmountUndefined: Self = StObject.set(x, "ratioHighLimitAmount", js.undefined)
     
     inline def setSource(value: js.Array[Reference]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for engine_dot_io-parser
 
-Typings are for version 5.0.4
+Typings are for version 5.0.6
 
 ## Library description:
 Parser for the client for the realtime Engine

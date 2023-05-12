@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * TrafficLayerOptions object used to define the properties that can be set on
-  * a TrafficLayer.
-  */
 trait TrafficLayerOptions extends StObject {
   
   /**

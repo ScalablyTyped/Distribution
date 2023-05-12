@@ -4,10 +4,7 @@ import typings.luminoDatagrid.luminoDatagridStrings.`column-resize`
 import typings.luminoDatagrid.luminoDatagridStrings.`row-resize`
 import typings.luminoDatagrid.luminoDatagridStrings.select
 import typings.luminoDatagrid.typesBasicmousehandlerMod.PressData.PressData
-import typings.luminoDatagrid.typesBasicmousehandlerMod.PressData.SelectData
-import typings.luminoDatagrid.typesCellrendererMod.CellRenderer.CellConfig
 import typings.luminoDatagrid.typesDatagridMod.DataGrid
-import typings.luminoDatagrid.typesDatagridMod.DataGrid.HitTestResult
 import typings.luminoDatagrid.typesDatagridMod.DataGrid.IMouseHandler
 import typings.luminoDatagrid.typesDatamodelMod.DataModel.CellRegion
 import typings.luminoDatagrid.typesDatamodelMod.DataModel.ColumnRegion
@@ -58,6 +55,11 @@ object typesBasicmousehandlerMod {
       */
     /* CompleteClass */
     override val isDisposed: Boolean = js.native
+    /**
+      * Whether the mouse handler is disposed.
+      */
+    @JSName("isDisposed")
+    def isDisposed_MBasicMouseHandler: Boolean = js.native
     
     /**
       * Handle the context menu event for the data grid.
@@ -142,7 +144,7 @@ object typesBasicmousehandlerMod {
     /**
       * Get the current pressData
       */
-    val pressData: PressData | Null = js.native
+    def pressData: PressData | Null = js.native
     
     /**
       * Release any resources acquired during a mouse press.
@@ -153,81 +155,6 @@ object typesBasicmousehandlerMod {
       */
     /* CompleteClass */
     override def release(): Unit = js.native
-  }
-  
-  object Private {
-    
-    @JSImport("@lumino/datagrid/types/basicmousehandler", "Private")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      * A timer callback for the autoselect loop.
-      *
-      * @param grid - The datagrid of interest.
-      *
-      * @param data - The select data of interest.
-      */
-    inline def autoselect(grid: DataGrid, data: SelectData): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("autoselect")(grid.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    /**
-      * Compute the scroll timeout for the given delta distance.
-      *
-      * @param delta - The delta pixels from the origin.
-      *
-      * @returns The scaled timeout in milliseconds.
-      */
-    inline def computeTimeout(delta: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("computeTimeout")(delta.asInstanceOf[js.Any]).asInstanceOf[Double]
-    
-    /**
-      * Creates a CellConfig object from a hit region.
-      */
-    inline def createCellConfigObject(grid: DataGrid, hit: HitTestResult): js.UndefOr[CellConfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCellConfigObject")(grid.asInstanceOf[js.Any], hit.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[CellConfig]]
-    
-    /**
-      * A mapping of resize handle to cursor.
-      */
-    object cursorMap {
-      
-      @JSImport("@lumino/datagrid/types/basicmousehandler", "Private.cursorMap")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("@lumino/datagrid/types/basicmousehandler", "Private.cursorMap.bottom")
-      @js.native
-      def bottom: String = js.native
-      inline def bottom_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottom")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@lumino/datagrid/types/basicmousehandler", "Private.cursorMap.hyperlink")
-      @js.native
-      def hyperlink: String = js.native
-      inline def hyperlink_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hyperlink")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@lumino/datagrid/types/basicmousehandler", "Private.cursorMap.left")
-      @js.native
-      def left: String = js.native
-      inline def left_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("left")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@lumino/datagrid/types/basicmousehandler", "Private.cursorMap.none")
-      @js.native
-      def none: String = js.native
-      inline def none_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@lumino/datagrid/types/basicmousehandler", "Private.cursorMap.right")
-      @js.native
-      def right: String = js.native
-      inline def right_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("right")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@lumino/datagrid/types/basicmousehandler", "Private.cursorMap.top")
-      @js.native
-      def top: String = js.native
-      inline def top_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("top")(x.asInstanceOf[js.Any])
-    }
-    
-    /**
-      * Get the resize handle for a grid hit test.
-      */
-    inline def resizeHandleForHitTest(hit: HitTestResult): ResizeHandle = ^.asInstanceOf[js.Dynamic].applyDynamic("resizeHandleForHitTest")(hit.asInstanceOf[js.Any]).asInstanceOf[ResizeHandle]
   }
   
   object PressData {

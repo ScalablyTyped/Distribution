@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-pipe
 
-Typings are for version 2.0.4
+Typings are for version 3.0.1
 
 ## Library description:
 Utility to "pipe" async iterables together

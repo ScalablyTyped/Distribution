@@ -102,6 +102,11 @@ object babylonjsEnginesEngineAugmentingMod {
     /** @internal */
     var _onVrDisplayPresentChange: Nullable[js.Function0[Unit]] = js.native
     
+    /**
+      * @internal
+      */
+    def _renderViewStep(view: typings.babylonjs.enginesExtensionsEngineDotviewsMod.EngineView): Boolean = js.native
+    
     /** @internal */
     var _textureFormatInUse: String = js.native
     
@@ -119,7 +124,7 @@ object babylonjsEnginesEngineAugmentingMod {
     
     /**
       * Gets the current engine view
-      * @see https://doc.babylonjs.com/how_to/multi_canvases
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/multiCanvas
       */
     var activeView: Nullable[typings.babylonjs.enginesExtensionsEngineDotviewsMod.EngineView] = js.native
     
@@ -128,7 +133,7 @@ object babylonjsEnginesEngineAugmentingMod {
       * @param algorithmType defines the algorithm to use
       * @param query defines the query to use
       * @returns the current engine
-      * @see https://doc.babylonjs.com/features/occlusionquery
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/occlusionQueries
       */
     def beginOcclusionQuery(algorithmType: Double, query: OcclusionQuery): Boolean = js.native
     
@@ -355,13 +360,13 @@ object babylonjsEnginesEngineAugmentingMod {
       * Call this function to switch to webVR mode
       * Will do nothing if webVR is not supported or if there is no webVR device
       * @param options the webvr options provided to the camera. mainly used for multiview
-      * @see https://doc.babylonjs.com/how_to/webvr_camera
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/cameras/webVRCamera
       */
     def enableVR(options: WebVROptions): Unit = js.native
     
     /**
       * Ends an occlusion query
-      * @see https://doc.babylonjs.com/features/occlusionquery
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/occlusionQueries
       * @param algorithmType defines the algorithm to use
       * @returns the current engine
       */

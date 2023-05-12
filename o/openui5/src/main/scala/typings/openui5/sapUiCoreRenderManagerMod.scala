@@ -1,5 +1,6 @@
 package typings.openui5
 
+import typings.openui5.sapUiCoreConfigurationMod.Configuration
 import typings.openui5.sapUiCoreLibraryMod.ID
 import typings.openui5.sapUiCoreLibraryMod.URI
 import typings.std.Element
@@ -57,6 +58,8 @@ object sapUiCoreRenderManagerMod {
     val ^ : js.Any = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Creates the ID to be used for the invisible Placeholder DOM element. This method can be used to get direct
       * access to the placeholder DOM element. Also statically available as RenderManager.createInvisiblePlaceholderId()
       *
@@ -220,6 +223,10 @@ object sapUiCoreRenderManagerMod {
       * @returns Reference to `this` in order to allow method chaining
       */
     def accessibilityState(): this.type = js.native
+    def accessibilityState(/**
+      * A map of additional properties that should be added or changed.
+      */
+    mProps: js.Object): this.type = js.native
     def accessibilityState(
       /**
       * The `Element` whose accessibility state should be rendered
@@ -381,7 +388,7 @@ object sapUiCoreRenderManagerMod {
       *
       * **Note:**: the functionality of this method is different from the default handling for invisible controls
       * (controls with `visible == false`). The standard rendering for invisible controls still renders a placeholder
-      * DOM. This allows re-rendering of the invisible control once it becomes visible again without a need to
+      * DOM. This allows rerendering of the invisible control once it becomes visible again without a need to
       * render its parent, too. Children that are cleaned up with this method here, are supposed to have no more
       * DOM at all. Rendering them later on therefore requires an involvement (typically: a rendering) of their
       * parent.
@@ -479,7 +486,7 @@ object sapUiCoreRenderManagerMod {
       *
       * @returns the configuration object
       */
-    def getConfiguration(): typings.openui5.sapUiCoreConfigurationMod.default = js.native
+    def getConfiguration(): Configuration = js.native
     
     /**
       * @deprecated (since 0.15.0) - Use `flush()` instead render content outside the rendering phase.
@@ -676,6 +683,16 @@ object sapUiCoreRenderManagerMod {
     oControl: typings.openui5.sapUiCoreControlMod.default
     ): this.type = js.native
     
+    def style(
+      /**
+      * Name of the style property
+      */
+    sName: String,
+      /**
+      * Value of the style property
+      */
+    vValue: float | int
+    ): this.type = js.native
     /**
       * @SINCE 1.67
       *
@@ -696,7 +713,7 @@ object sapUiCoreRenderManagerMod {
       /**
       * Value of the style property
       */
-    sValue: String
+    vValue: String
     ): this.type = js.native
     
     /**

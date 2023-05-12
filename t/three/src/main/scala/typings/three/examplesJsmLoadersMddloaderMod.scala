@@ -37,6 +37,9 @@ object examplesJsmLoadersMddloaderMod {
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): Unit = js.native
     
+    def loadAsync(url: String): js.Promise[MDD] = js.native
+    def loadAsync(url: String, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[MDD] = js.native
+    
     def parse(data: js.typedarray.ArrayBuffer): MDD = js.native
   }
   

@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** module Or Internal Object */
 /**
   * @brief Smtp对象
-  * @detail 
+  * @detail
   */
 @JSGlobal("Class_Smtp")
 @js.native
 /**
-  * 
+  *
   * @brief Smtp 对象构造函数
-  * 
-  * 
+  *
+  *
   */
 open class ClassSmtp ()
   extends StObject

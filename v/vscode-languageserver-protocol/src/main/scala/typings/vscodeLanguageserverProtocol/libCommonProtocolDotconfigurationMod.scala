@@ -5,7 +5,6 @@ import typings.vscodeJsonrpc.libCommonConnectionMod.HandlerResult
 import typings.vscodeJsonrpc.libCommonConnectionMod.RequestHandler
 import typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection
 import typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType
-import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.PartialResultParams
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.workspaceSlashconfiguration
 import typings.vscodeLanguageserverTypes.mod.LSPAny
 import org.scalablytyped.runtime.StObject
@@ -26,7 +25,7 @@ object libCommonProtocolDotconfigurationMod {
     
     @JSImport("vscode-languageserver-protocol/lib/common/protocol.configuration", "ConfigurationRequest.type")
     @js.native
-    val `type`: ProtocolRequestType[ConfigurationParams & PartialResultParams, js.Array[Any], scala.Nothing, Unit, Unit] = js.native
+    val `type`: ProtocolRequestType[ConfigurationParams, js.Array[Any], scala.Nothing, Unit, Unit] = js.native
     
     type HandlerSignature = RequestHandler[ConfigurationParams, js.Array[LSPAny], Unit]
     

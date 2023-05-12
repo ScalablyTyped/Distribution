@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@nivo/scales" : "0.80.0"
+      "@nivo/scales" : "0.83.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@nivo/scales" : "0.80.0"
+      "@nivo/scales" : "0.83.0"
     }
   ],
   "compile-devDependencies" : [

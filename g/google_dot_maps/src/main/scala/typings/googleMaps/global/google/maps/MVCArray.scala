@@ -6,6 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.maps.MVCArray")
 @js.native
+/**
+  * Access by calling `const {MVCArray} = await
+  * google.maps.importLibrary("core")`. See
+  * https://developers.google.com/maps/documentation/javascript/libraries.
+  */
 open class MVCArray[T] ()
   extends StObject
      with typings.googleMaps.google.maps.MVCArray[T] {

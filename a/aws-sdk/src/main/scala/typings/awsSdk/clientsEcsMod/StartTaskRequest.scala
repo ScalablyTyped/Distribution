@@ -22,7 +22,7 @@ trait StartTaskRequest extends StObject {
   var enableECSManagedTags: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Whether or not the execute command functionality is enabled for the task. If true, this enables execute command functionality on all containers in the task.
+    * Whether or not the execute command functionality is turned on for the task. If true, this turns on the execute command functionality on all containers in the task.
     */
   var enableExecuteCommand: js.UndefOr[Boolean] = js.undefined
   

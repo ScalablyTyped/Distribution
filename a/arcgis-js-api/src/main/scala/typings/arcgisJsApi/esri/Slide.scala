@@ -15,7 +15,7 @@ trait Slide
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#applyTo)
     */
   def applyTo(view: SceneView): js.Promise[Slide] = js.native
-  def applyTo(view: SceneView, options: SlideApplyToOptions): js.Promise[Slide] = js.native
+  def applyTo(view: SceneView, optionsWithDefaults: Any): js.Promise[Slide] = js.native
   
   /**
     * The basemap of the scene.

@@ -1,6 +1,11 @@
 package typings.firebaseAuth
 
 import typings.firebaseAuth.distAuthMod.ProviderId2
+import typings.firebaseAuth.distBrowserCjsSrcModelEnumsMod.OperationType
+import typings.firebaseAuth.distBrowserCjsSrcModelEnumsMod.ProviderId
+import typings.firebaseAuth.distBrowserCjsSrcModelEnumsMod.SignInMethod
+import typings.firebaseAuth.distBrowserCjsSrcModelPublicTypesMod.ActionCodeOperation
+import typings.firebaseAuth.distBrowserCjsSrcModelPublicTypesMod.FactorId
 import typings.firebaseAuth.distEsm2017SrcApiErrorsMod.ServerError
 import typings.firebaseAuth.distEsm2017SrcCoreUtilBrowserMod.BrowserName
 import typings.firebaseAuth.distEsm5SrcMfaMfaSessionMod.MultiFactorSessionType
@@ -10,16 +15,14 @@ import typings.firebaseAuth.distEsm5SrcPlatformBrowserMessagechannelMod.Status
 import typings.firebaseAuth.distNodeEsmSrcApiMod.Endpoint
 import typings.firebaseAuth.distNodeEsmSrcApiMod.HttpHeader
 import typings.firebaseAuth.distNodeEsmSrcApiMod.HttpMethod
+import typings.firebaseAuth.distNodeEsmSrcApiMod.RecaptchaActionName
+import typings.firebaseAuth.distNodeEsmSrcApiMod.RecaptchaClientType
 import typings.firebaseAuth.distNodeEsmSrcCoreErrorsMod.AuthErrorCode
 import typings.firebaseAuth.distNodeEsmSrcCoreUtilVersionMod.ClientPlatform
-import typings.firebaseAuth.distNodeEsmSrcModelPublicTypesMod.ActionCodeOperation
 import typings.firebaseAuth.distNodeSrcCoreAuthAuthImplMod.DefaultConfig
 import typings.firebaseAuth.distNodeSrcCoreAuthRegisterMod.ComponentName
 import typings.firebaseAuth.distNodeSrcCorePersistenceMod.PersistenceType
 import typings.firebaseAuth.distNodeSrcModelIdTokenMod.IdTokenResponseKind
-import typings.firebaseAuth.distRnSrcModelEnumsMod.OperationType
-import typings.firebaseAuth.distRnSrcModelEnumsMod.ProviderId
-import typings.firebaseAuth.distRnSrcModelEnumsMod.SignInMethod
 import typings.firebaseAuth.distSrcCorePersistencePersistenceUserManagerMod.KeyName
 import typings.firebaseAuth.distSrcModelPopupRedirectMod.AuthEventType
 import typings.firebaseAuth.distSrcModelPopupRedirectMod.GapiOutcome
@@ -33,6 +36,7 @@ object firebaseAuthStrings {
   sealed trait ACK
     extends StObject
        with GapiOutcome
+       with typings.firebaseAuth.distBrowserCjsSrcModelPopupRedirectMod.GapiOutcome
        with typings.firebaseAuth.distNodeEsmSrcModelPopupRedirectMod.GapiOutcome
        with typings.firebaseAuth.distNodeSrcModelPopupRedirectMod.GapiOutcome
        with typings.firebaseAuth.distEsm5SrcModelPopupRedirectMod.GapiOutcome
@@ -46,6 +50,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -59,6 +64,7 @@ object firebaseAuthStrings {
        with BrowserName
        with typings.firebaseAuth.distRnSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distCordovaSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distBrowserCjsSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distNodeSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distNodeEsmSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distSrcCoreUtilBrowserMod.BrowserName
@@ -70,6 +76,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -83,6 +90,7 @@ object firebaseAuthStrings {
        with BrowserName
        with typings.firebaseAuth.distRnSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distCordovaSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distBrowserCjsSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distNodeSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distNodeEsmSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distSrcCoreUtilBrowserMod.BrowserName
@@ -95,6 +103,7 @@ object firebaseAuthStrings {
        with ClientPlatform
        with typings.firebaseAuth.distRnSrcCoreUtilVersionMod.ClientPlatform
        with typings.firebaseAuth.distCordovaSrcCoreUtilVersionMod.ClientPlatform
+       with typings.firebaseAuth.distBrowserCjsSrcCoreUtilVersionMod.ClientPlatform
        with typings.firebaseAuth.distSrcCoreUtilVersionMod.ClientPlatform
        with typings.firebaseAuth.distEsm5SrcCoreUtilVersionMod.ClientPlatform
        with typings.firebaseAuth.distEsm2017SrcCoreUtilVersionMod.ClientPlatform
@@ -107,6 +116,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -115,10 +125,50 @@ object firebaseAuthStrings {
   inline def CAPTCHA_CHECK_FAILED: CAPTCHA_CHECK_FAILED = "CAPTCHA_CHECK_FAILED".asInstanceOf[CAPTCHA_CHECK_FAILED]
   
   @js.native
+  sealed trait CLIENT_TYPE_ANDROID
+    extends StObject
+       with RecaptchaClientType
+       with typings.firebaseAuth.distSrcApiMod.RecaptchaClientType
+       with typings.firebaseAuth.distCordovaSrcApiMod.RecaptchaClientType
+       with typings.firebaseAuth.distEsm5SrcApiMod.RecaptchaClientType
+       with typings.firebaseAuth.distRnSrcApiMod.RecaptchaClientType
+       with typings.firebaseAuth.distEsm2017SrcApiMod.RecaptchaClientType
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.RecaptchaClientType
+       with typings.firebaseAuth.distNodeSrcApiMod.RecaptchaClientType
+  inline def CLIENT_TYPE_ANDROID: CLIENT_TYPE_ANDROID = "CLIENT_TYPE_ANDROID".asInstanceOf[CLIENT_TYPE_ANDROID]
+  
+  @js.native
+  sealed trait CLIENT_TYPE_IOS
+    extends StObject
+       with RecaptchaClientType
+       with typings.firebaseAuth.distSrcApiMod.RecaptchaClientType
+       with typings.firebaseAuth.distCordovaSrcApiMod.RecaptchaClientType
+       with typings.firebaseAuth.distEsm5SrcApiMod.RecaptchaClientType
+       with typings.firebaseAuth.distRnSrcApiMod.RecaptchaClientType
+       with typings.firebaseAuth.distEsm2017SrcApiMod.RecaptchaClientType
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.RecaptchaClientType
+       with typings.firebaseAuth.distNodeSrcApiMod.RecaptchaClientType
+  inline def CLIENT_TYPE_IOS: CLIENT_TYPE_IOS = "CLIENT_TYPE_IOS".asInstanceOf[CLIENT_TYPE_IOS]
+  
+  @js.native
+  sealed trait CLIENT_TYPE_WEB
+    extends StObject
+       with RecaptchaClientType
+       with typings.firebaseAuth.distSrcApiMod.RecaptchaClientType
+       with typings.firebaseAuth.distCordovaSrcApiMod.RecaptchaClientType
+       with typings.firebaseAuth.distEsm5SrcApiMod.RecaptchaClientType
+       with typings.firebaseAuth.distRnSrcApiMod.RecaptchaClientType
+       with typings.firebaseAuth.distEsm2017SrcApiMod.RecaptchaClientType
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.RecaptchaClientType
+       with typings.firebaseAuth.distNodeSrcApiMod.RecaptchaClientType
+  inline def CLIENT_TYPE_WEB: CLIENT_TYPE_WEB = "CLIENT_TYPE_WEB".asInstanceOf[CLIENT_TYPE_WEB]
+  
+  @js.native
   sealed trait CORS_UNSUPPORTED
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -131,6 +181,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -143,6 +194,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -156,6 +208,7 @@ object firebaseAuthStrings {
        with BrowserName
        with typings.firebaseAuth.distRnSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distCordovaSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distBrowserCjsSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distNodeSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distNodeEsmSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distSrcCoreUtilBrowserMod.BrowserName
@@ -171,6 +224,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcApiMod.HttpHeader
        with typings.firebaseAuth.distRnSrcApiMod.HttpHeader
        with typings.firebaseAuth.distEsm2017SrcApiMod.HttpHeader
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.HttpHeader
        with typings.firebaseAuth.distNodeSrcApiMod.HttpHeader
   inline def `Content-Type`: `Content-Type` = "Content-Type".asInstanceOf[`Content-Type`]
   
@@ -180,6 +234,7 @@ object firebaseAuthStrings {
        with ClientPlatform
        with typings.firebaseAuth.distRnSrcCoreUtilVersionMod.ClientPlatform
        with typings.firebaseAuth.distCordovaSrcCoreUtilVersionMod.ClientPlatform
+       with typings.firebaseAuth.distBrowserCjsSrcCoreUtilVersionMod.ClientPlatform
        with typings.firebaseAuth.distSrcCoreUtilVersionMod.ClientPlatform
        with typings.firebaseAuth.distEsm5SrcCoreUtilVersionMod.ClientPlatform
        with typings.firebaseAuth.distEsm2017SrcCoreUtilVersionMod.ClientPlatform
@@ -188,14 +243,11 @@ object firebaseAuthStrings {
   inline def Cordova: Cordova = "Cordova".asInstanceOf[Cordova]
   
   @js.native
-  sealed trait DOMContentLoaded extends StObject
-  inline def DOMContentLoaded: DOMContentLoaded = "DOMContentLoaded".asInstanceOf[DOMContentLoaded]
-  
-  @js.native
   sealed trait DYNAMIC_LINK_NOT_ACTIVATED
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -208,6 +260,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -220,6 +273,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -232,6 +286,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -243,6 +298,7 @@ object firebaseAuthStrings {
   sealed trait EMAIL_SIGNIN
     extends StObject
        with ActionCodeOperation
+       with typings.firebaseAuth.distNodeEsmSrcModelPublicTypesMod.ActionCodeOperation
        with typings.firebaseAuth.distSrcModelPublicTypesMod.ActionCodeOperation
        with typings.firebaseAuth.distNodeSrcModelPublicTypesMod.ActionCodeOperation
        with typings.firebaseAuth.distEsm2017SrcModelPublicTypesMod.ActionCodeOperation
@@ -255,6 +311,7 @@ object firebaseAuthStrings {
   sealed trait ERROR
     extends StObject
        with GapiOutcome
+       with typings.firebaseAuth.distBrowserCjsSrcModelPopupRedirectMod.GapiOutcome
        with typings.firebaseAuth.distNodeEsmSrcModelPopupRedirectMod.GapiOutcome
        with typings.firebaseAuth.distNodeSrcModelPopupRedirectMod.GapiOutcome
        with typings.firebaseAuth.distEsm5SrcModelPopupRedirectMod.GapiOutcome
@@ -268,6 +325,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -281,6 +339,7 @@ object firebaseAuthStrings {
        with BrowserName
        with typings.firebaseAuth.distRnSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distCordovaSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distBrowserCjsSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distNodeSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distNodeEsmSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distSrcCoreUtilBrowserMod.BrowserName
@@ -292,6 +351,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -305,6 +365,7 @@ object firebaseAuthStrings {
        with BrowserName
        with typings.firebaseAuth.distRnSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distCordovaSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distBrowserCjsSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distNodeSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distNodeEsmSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distSrcCoreUtilBrowserMod.BrowserName
@@ -320,6 +381,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcApiMod.HttpMethod
        with typings.firebaseAuth.distRnSrcApiMod.HttpMethod
        with typings.firebaseAuth.distEsm2017SrcApiMod.HttpMethod
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.HttpMethod
        with typings.firebaseAuth.distNodeSrcApiMod.HttpMethod
   inline def GET: GET = "GET".asInstanceOf[GET]
   
@@ -329,6 +391,7 @@ object firebaseAuthStrings {
        with BrowserName
        with typings.firebaseAuth.distRnSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distCordovaSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distBrowserCjsSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distNodeSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distNodeEsmSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distSrcCoreUtilBrowserMod.BrowserName
@@ -341,6 +404,7 @@ object firebaseAuthStrings {
        with BrowserName
        with typings.firebaseAuth.distRnSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distCordovaSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distBrowserCjsSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distNodeSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distNodeEsmSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distSrcCoreUtilBrowserMod.BrowserName
@@ -352,6 +416,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -364,6 +429,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -376,6 +442,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -388,6 +455,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -400,6 +468,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -412,6 +481,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -424,6 +494,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -436,6 +507,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -448,6 +520,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -460,6 +533,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -472,6 +546,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -484,6 +559,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -496,6 +572,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -508,6 +585,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -520,6 +598,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -532,6 +611,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -544,6 +624,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -556,6 +637,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -568,6 +650,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -576,10 +659,50 @@ object firebaseAuthStrings {
   inline def INVALID_PROVIDER_ID: INVALID_PROVIDER_ID = "INVALID_PROVIDER_ID".asInstanceOf[INVALID_PROVIDER_ID]
   
   @js.native
+  sealed trait INVALID_RECAPTCHA_ACTION
+    extends StObject
+       with ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
+  inline def INVALID_RECAPTCHA_ACTION: INVALID_RECAPTCHA_ACTION = "INVALID_RECAPTCHA_ACTION".asInstanceOf[INVALID_RECAPTCHA_ACTION]
+  
+  @js.native
+  sealed trait INVALID_RECAPTCHA_TOKEN
+    extends StObject
+       with ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
+  inline def INVALID_RECAPTCHA_TOKEN: INVALID_RECAPTCHA_TOKEN = "INVALID_RECAPTCHA_TOKEN".asInstanceOf[INVALID_RECAPTCHA_TOKEN]
+  
+  @js.native
+  sealed trait INVALID_RECAPTCHA_VERSION
+    extends StObject
+       with ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
+  inline def INVALID_RECAPTCHA_VERSION: INVALID_RECAPTCHA_VERSION = "INVALID_RECAPTCHA_VERSION".asInstanceOf[INVALID_RECAPTCHA_VERSION]
+  
+  @js.native
   sealed trait INVALID_RECIPIENT_EMAIL
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -588,10 +711,24 @@ object firebaseAuthStrings {
   inline def INVALID_RECIPIENT_EMAIL: INVALID_RECIPIENT_EMAIL = "INVALID_RECIPIENT_EMAIL".asInstanceOf[INVALID_RECIPIENT_EMAIL]
   
   @js.native
+  sealed trait INVALID_REQ_TYPE
+    extends StObject
+       with ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
+  inline def INVALID_REQ_TYPE: INVALID_REQ_TYPE = "INVALID_REQ_TYPE".asInstanceOf[INVALID_REQ_TYPE]
+  
+  @js.native
   sealed trait INVALID_SENDER
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -604,6 +741,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -616,6 +754,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -628,6 +767,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -644,6 +784,7 @@ object firebaseAuthStrings {
     extends StObject
        with PersistenceType
        with typings.firebaseAuth.distCordovaSrcCorePersistenceMod.PersistenceType
+       with typings.firebaseAuth.distBrowserCjsSrcCorePersistenceMod.PersistenceType
        with typings.firebaseAuth.distRnSrcCorePersistenceMod.PersistenceType
        with typings.firebaseAuth.distEsm2017SrcCorePersistenceMod.PersistenceType
        with typings.firebaseAuth.distSrcCorePersistenceMod.PersistenceType
@@ -656,6 +797,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -668,6 +810,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -680,6 +823,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -688,10 +832,24 @@ object firebaseAuthStrings {
   inline def MISSING_APP_CREDENTIAL: MISSING_APP_CREDENTIAL = "MISSING_APP_CREDENTIAL".asInstanceOf[MISSING_APP_CREDENTIAL]
   
   @js.native
+  sealed trait MISSING_CLIENT_TYPE
+    extends StObject
+       with ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
+  inline def MISSING_CLIENT_TYPE: MISSING_CLIENT_TYPE = "MISSING_CLIENT_TYPE".asInstanceOf[MISSING_CLIENT_TYPE]
+  
+  @js.native
   sealed trait MISSING_CODE
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -704,6 +862,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -716,6 +875,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -728,6 +888,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -740,6 +901,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -752,6 +914,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -764,6 +927,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -776,6 +940,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -788,6 +953,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -800,6 +966,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -808,10 +975,37 @@ object firebaseAuthStrings {
   inline def MISSING_PHONE_NUMBER: MISSING_PHONE_NUMBER = "MISSING_PHONE_NUMBER".asInstanceOf[MISSING_PHONE_NUMBER]
   
   @js.native
+  sealed trait MISSING_RECAPTCHA_TOKEN
+    extends StObject
+       with ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
+  inline def MISSING_RECAPTCHA_TOKEN: MISSING_RECAPTCHA_TOKEN = "MISSING_RECAPTCHA_TOKEN".asInstanceOf[MISSING_RECAPTCHA_TOKEN]
+  
+  @js.native
+  sealed trait MISSING_RECAPTCHA_VERSION
+    extends StObject
+       with ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
+  inline def MISSING_RECAPTCHA_VERSION: MISSING_RECAPTCHA_VERSION = "MISSING_RECAPTCHA_VERSION".asInstanceOf[MISSING_RECAPTCHA_VERSION]
+  
+  @js.native
   sealed trait MISSING_REQ_TYPE
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -824,6 +1018,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -836,6 +1031,7 @@ object firebaseAuthStrings {
     extends StObject
        with PersistenceType
        with typings.firebaseAuth.distCordovaSrcCorePersistenceMod.PersistenceType
+       with typings.firebaseAuth.distBrowserCjsSrcCorePersistenceMod.PersistenceType
        with typings.firebaseAuth.distRnSrcCorePersistenceMod.PersistenceType
        with typings.firebaseAuth.distEsm2017SrcCorePersistenceMod.PersistenceType
        with typings.firebaseAuth.distSrcCorePersistenceMod.PersistenceType
@@ -849,6 +1045,7 @@ object firebaseAuthStrings {
        with ClientPlatform
        with typings.firebaseAuth.distRnSrcCoreUtilVersionMod.ClientPlatform
        with typings.firebaseAuth.distCordovaSrcCoreUtilVersionMod.ClientPlatform
+       with typings.firebaseAuth.distBrowserCjsSrcCoreUtilVersionMod.ClientPlatform
        with typings.firebaseAuth.distSrcCoreUtilVersionMod.ClientPlatform
        with typings.firebaseAuth.distEsm5SrcCoreUtilVersionMod.ClientPlatform
        with typings.firebaseAuth.distEsm2017SrcCoreUtilVersionMod.ClientPlatform
@@ -861,6 +1058,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -874,6 +1072,7 @@ object firebaseAuthStrings {
        with BrowserName
        with typings.firebaseAuth.distRnSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distCordovaSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distBrowserCjsSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distNodeSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distNodeEsmSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distSrcCoreUtilBrowserMod.BrowserName
@@ -886,6 +1085,7 @@ object firebaseAuthStrings {
        with BrowserName
        with typings.firebaseAuth.distRnSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distCordovaSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distBrowserCjsSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distNodeSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distNodeEsmSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distSrcCoreUtilBrowserMod.BrowserName
@@ -897,6 +1097,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -908,6 +1109,7 @@ object firebaseAuthStrings {
   sealed trait PASSWORD_RESET
     extends StObject
        with ActionCodeOperation
+       with typings.firebaseAuth.distNodeEsmSrcModelPublicTypesMod.ActionCodeOperation
        with typings.firebaseAuth.distSrcModelPublicTypesMod.ActionCodeOperation
        with typings.firebaseAuth.distNodeSrcModelPublicTypesMod.ActionCodeOperation
        with typings.firebaseAuth.distEsm2017SrcModelPublicTypesMod.ActionCodeOperation
@@ -925,6 +1127,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcApiMod.HttpMethod
        with typings.firebaseAuth.distRnSrcApiMod.HttpMethod
        with typings.firebaseAuth.distEsm2017SrcApiMod.HttpMethod
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.HttpMethod
        with typings.firebaseAuth.distNodeSrcApiMod.HttpMethod
   inline def POST: POST = "POST".asInstanceOf[POST]
   
@@ -933,6 +1136,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -941,9 +1145,27 @@ object firebaseAuthStrings {
   inline def QUOTA_EXCEEDED: QUOTA_EXCEEDED = "QUOTA_EXCEEDED".asInstanceOf[QUOTA_EXCEEDED]
   
   @js.native
+  sealed trait RECAPTCHA_ENTERPRISE extends StObject
+  inline def RECAPTCHA_ENTERPRISE: RECAPTCHA_ENTERPRISE = "RECAPTCHA_ENTERPRISE".asInstanceOf[RECAPTCHA_ENTERPRISE]
+  
+  @js.native
+  sealed trait RECAPTCHA_NOT_ENABLED
+    extends StObject
+       with ServerError
+       with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distNodeSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distSrcApiErrorsMod.ServerError
+  inline def RECAPTCHA_NOT_ENABLED: RECAPTCHA_NOT_ENABLED = "RECAPTCHA_NOT_ENABLED".asInstanceOf[RECAPTCHA_NOT_ENABLED]
+  
+  @js.native
   sealed trait RECOVER_EMAIL
     extends StObject
        with ActionCodeOperation
+       with typings.firebaseAuth.distNodeEsmSrcModelPublicTypesMod.ActionCodeOperation
        with typings.firebaseAuth.distSrcModelPublicTypesMod.ActionCodeOperation
        with typings.firebaseAuth.distNodeSrcModelPublicTypesMod.ActionCodeOperation
        with typings.firebaseAuth.distEsm2017SrcModelPublicTypesMod.ActionCodeOperation
@@ -957,6 +1179,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -969,6 +1192,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -980,6 +1204,7 @@ object firebaseAuthStrings {
   sealed trait REVERT_SECOND_FACTOR_ADDITION
     extends StObject
        with ActionCodeOperation
+       with typings.firebaseAuth.distNodeEsmSrcModelPublicTypesMod.ActionCodeOperation
        with typings.firebaseAuth.distSrcModelPublicTypesMod.ActionCodeOperation
        with typings.firebaseAuth.distNodeSrcModelPublicTypesMod.ActionCodeOperation
        with typings.firebaseAuth.distEsm2017SrcModelPublicTypesMod.ActionCodeOperation
@@ -994,6 +1219,7 @@ object firebaseAuthStrings {
        with ClientPlatform
        with typings.firebaseAuth.distRnSrcCoreUtilVersionMod.ClientPlatform
        with typings.firebaseAuth.distCordovaSrcCoreUtilVersionMod.ClientPlatform
+       with typings.firebaseAuth.distBrowserCjsSrcCoreUtilVersionMod.ClientPlatform
        with typings.firebaseAuth.distSrcCoreUtilVersionMod.ClientPlatform
        with typings.firebaseAuth.distEsm5SrcCoreUtilVersionMod.ClientPlatform
        with typings.firebaseAuth.distEsm2017SrcCoreUtilVersionMod.ClientPlatform
@@ -1006,6 +1232,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -1018,6 +1245,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -1030,6 +1258,7 @@ object firebaseAuthStrings {
     extends StObject
        with PersistenceType
        with typings.firebaseAuth.distCordovaSrcCorePersistenceMod.PersistenceType
+       with typings.firebaseAuth.distBrowserCjsSrcCorePersistenceMod.PersistenceType
        with typings.firebaseAuth.distRnSrcCorePersistenceMod.PersistenceType
        with typings.firebaseAuth.distEsm2017SrcCorePersistenceMod.PersistenceType
        with typings.firebaseAuth.distSrcCorePersistenceMod.PersistenceType
@@ -1042,6 +1271,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -1055,6 +1285,7 @@ object firebaseAuthStrings {
        with BrowserName
        with typings.firebaseAuth.distRnSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distCordovaSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distBrowserCjsSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distNodeSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distNodeEsmSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distSrcCoreUtilBrowserMod.BrowserName
@@ -1067,6 +1298,7 @@ object firebaseAuthStrings {
        with BrowserName
        with typings.firebaseAuth.distRnSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distCordovaSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distBrowserCjsSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distNodeSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distNodeEsmSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distSrcCoreUtilBrowserMod.BrowserName
@@ -1082,6 +1314,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
        with typings.firebaseAuth.distRnSrcApiMod.Endpoint
        with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.Endpoint
        with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv1SlashaccountsColoncreateAuthUri: Slashv1SlashaccountsColoncreateAuthUri = "/v1/accounts:createAuthUri".asInstanceOf[Slashv1SlashaccountsColoncreateAuthUri]
   
@@ -1094,6 +1327,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
        with typings.firebaseAuth.distRnSrcApiMod.Endpoint
        with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.Endpoint
        with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv1SlashaccountsColondelete: Slashv1SlashaccountsColondelete = "/v1/accounts:delete".asInstanceOf[Slashv1SlashaccountsColondelete]
   
@@ -1106,6 +1340,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
        with typings.firebaseAuth.distRnSrcApiMod.Endpoint
        with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.Endpoint
        with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv1SlashaccountsColonlookup: Slashv1SlashaccountsColonlookup = "/v1/accounts:lookup".asInstanceOf[Slashv1SlashaccountsColonlookup]
   
@@ -1118,6 +1353,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
        with typings.firebaseAuth.distRnSrcApiMod.Endpoint
        with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.Endpoint
        with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv1SlashaccountsColonresetPassword: Slashv1SlashaccountsColonresetPassword = "/v1/accounts:resetPassword".asInstanceOf[Slashv1SlashaccountsColonresetPassword]
   
@@ -1130,6 +1366,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
        with typings.firebaseAuth.distRnSrcApiMod.Endpoint
        with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.Endpoint
        with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv1SlashaccountsColonsendOobCode: Slashv1SlashaccountsColonsendOobCode = "/v1/accounts:sendOobCode".asInstanceOf[Slashv1SlashaccountsColonsendOobCode]
   
@@ -1142,6 +1379,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
        with typings.firebaseAuth.distRnSrcApiMod.Endpoint
        with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.Endpoint
        with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv1SlashaccountsColonsendVerificationCode: Slashv1SlashaccountsColonsendVerificationCode = "/v1/accounts:sendVerificationCode".asInstanceOf[Slashv1SlashaccountsColonsendVerificationCode]
   
@@ -1154,6 +1392,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
        with typings.firebaseAuth.distRnSrcApiMod.Endpoint
        with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.Endpoint
        with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv1SlashaccountsColonsignInWithCustomToken: Slashv1SlashaccountsColonsignInWithCustomToken = "/v1/accounts:signInWithCustomToken".asInstanceOf[Slashv1SlashaccountsColonsignInWithCustomToken]
   
@@ -1166,6 +1405,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
        with typings.firebaseAuth.distRnSrcApiMod.Endpoint
        with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.Endpoint
        with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv1SlashaccountsColonsignInWithEmailLink: Slashv1SlashaccountsColonsignInWithEmailLink = "/v1/accounts:signInWithEmailLink".asInstanceOf[Slashv1SlashaccountsColonsignInWithEmailLink]
   
@@ -1178,6 +1418,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
        with typings.firebaseAuth.distRnSrcApiMod.Endpoint
        with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.Endpoint
        with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv1SlashaccountsColonsignInWithIdp: Slashv1SlashaccountsColonsignInWithIdp = "/v1/accounts:signInWithIdp".asInstanceOf[Slashv1SlashaccountsColonsignInWithIdp]
   
@@ -1190,6 +1431,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
        with typings.firebaseAuth.distRnSrcApiMod.Endpoint
        with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.Endpoint
        with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv1SlashaccountsColonsignInWithPassword: Slashv1SlashaccountsColonsignInWithPassword = "/v1/accounts:signInWithPassword".asInstanceOf[Slashv1SlashaccountsColonsignInWithPassword]
   
@@ -1202,6 +1444,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
        with typings.firebaseAuth.distRnSrcApiMod.Endpoint
        with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.Endpoint
        with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv1SlashaccountsColonsignInWithPhoneNumber: Slashv1SlashaccountsColonsignInWithPhoneNumber = "/v1/accounts:signInWithPhoneNumber".asInstanceOf[Slashv1SlashaccountsColonsignInWithPhoneNumber]
   
@@ -1214,6 +1457,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
        with typings.firebaseAuth.distRnSrcApiMod.Endpoint
        with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.Endpoint
        with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv1SlashaccountsColonsignUp: Slashv1SlashaccountsColonsignUp = "/v1/accounts:signUp".asInstanceOf[Slashv1SlashaccountsColonsignUp]
   
@@ -1226,6 +1470,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
        with typings.firebaseAuth.distRnSrcApiMod.Endpoint
        with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.Endpoint
        with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv1SlashaccountsColonupdate: Slashv1SlashaccountsColonupdate = "/v1/accounts:update".asInstanceOf[Slashv1SlashaccountsColonupdate]
   
@@ -1238,6 +1483,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
        with typings.firebaseAuth.distRnSrcApiMod.Endpoint
        with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.Endpoint
        with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv1Slashprojects: Slashv1Slashprojects = "/v1/projects".asInstanceOf[Slashv1Slashprojects]
   
@@ -1250,6 +1496,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
        with typings.firebaseAuth.distRnSrcApiMod.Endpoint
        with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.Endpoint
        with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv1SlashrecaptchaParams: Slashv1SlashrecaptchaParams = "/v1/recaptchaParams".asInstanceOf[Slashv1SlashrecaptchaParams]
   
@@ -1266,6 +1513,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
        with typings.firebaseAuth.distRnSrcApiMod.Endpoint
        with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.Endpoint
        with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv2SlashaccountsSlashmfaEnrollmentColonfinalize: Slashv2SlashaccountsSlashmfaEnrollmentColonfinalize = "/v2/accounts/mfaEnrollment:finalize".asInstanceOf[Slashv2SlashaccountsSlashmfaEnrollmentColonfinalize]
   
@@ -1278,6 +1526,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
        with typings.firebaseAuth.distRnSrcApiMod.Endpoint
        with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.Endpoint
        with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv2SlashaccountsSlashmfaEnrollmentColonstart: Slashv2SlashaccountsSlashmfaEnrollmentColonstart = "/v2/accounts/mfaEnrollment:start".asInstanceOf[Slashv2SlashaccountsSlashmfaEnrollmentColonstart]
   
@@ -1290,6 +1539,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
        with typings.firebaseAuth.distRnSrcApiMod.Endpoint
        with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.Endpoint
        with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv2SlashaccountsSlashmfaEnrollmentColonwithdraw: Slashv2SlashaccountsSlashmfaEnrollmentColonwithdraw = "/v2/accounts/mfaEnrollment:withdraw".asInstanceOf[Slashv2SlashaccountsSlashmfaEnrollmentColonwithdraw]
   
@@ -1302,6 +1552,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
        with typings.firebaseAuth.distRnSrcApiMod.Endpoint
        with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.Endpoint
        with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv2SlashaccountsSlashmfaSignInColonfinalize: Slashv2SlashaccountsSlashmfaSignInColonfinalize = "/v2/accounts/mfaSignIn:finalize".asInstanceOf[Slashv2SlashaccountsSlashmfaSignInColonfinalize]
   
@@ -1314,14 +1565,29 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
        with typings.firebaseAuth.distRnSrcApiMod.Endpoint
        with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.Endpoint
        with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
   inline def Slashv2SlashaccountsSlashmfaSignInColonstart: Slashv2SlashaccountsSlashmfaSignInColonstart = "/v2/accounts/mfaSignIn:start".asInstanceOf[Slashv2SlashaccountsSlashmfaSignInColonstart]
+  
+  @js.native
+  sealed trait Slashv2SlashrecaptchaConfig
+    extends StObject
+       with Endpoint
+       with typings.firebaseAuth.distSrcApiMod.Endpoint
+       with typings.firebaseAuth.distCordovaSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm5SrcApiMod.Endpoint
+       with typings.firebaseAuth.distRnSrcApiMod.Endpoint
+       with typings.firebaseAuth.distEsm2017SrcApiMod.Endpoint
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.Endpoint
+       with typings.firebaseAuth.distNodeSrcApiMod.Endpoint
+  inline def Slashv2SlashrecaptchaConfig: Slashv2SlashrecaptchaConfig = "/v2/recaptchaConfig".asInstanceOf[Slashv2SlashrecaptchaConfig]
   
   @js.native
   sealed trait TENANT_ID_MISMATCH
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -1334,6 +1600,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -1346,6 +1613,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -1358,6 +1626,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -1370,6 +1639,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -1382,6 +1652,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -1394,6 +1665,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -1406,6 +1678,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -1418,6 +1691,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -1430,6 +1704,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -1441,6 +1716,7 @@ object firebaseAuthStrings {
   sealed trait VERIFY_AND_CHANGE_EMAIL
     extends StObject
        with ActionCodeOperation
+       with typings.firebaseAuth.distNodeEsmSrcModelPublicTypesMod.ActionCodeOperation
        with typings.firebaseAuth.distSrcModelPublicTypesMod.ActionCodeOperation
        with typings.firebaseAuth.distNodeSrcModelPublicTypesMod.ActionCodeOperation
        with typings.firebaseAuth.distEsm2017SrcModelPublicTypesMod.ActionCodeOperation
@@ -1453,6 +1729,7 @@ object firebaseAuthStrings {
   sealed trait VERIFY_EMAIL
     extends StObject
        with ActionCodeOperation
+       with typings.firebaseAuth.distNodeEsmSrcModelPublicTypesMod.ActionCodeOperation
        with typings.firebaseAuth.distSrcModelPublicTypesMod.ActionCodeOperation
        with typings.firebaseAuth.distNodeSrcModelPublicTypesMod.ActionCodeOperation
        with typings.firebaseAuth.distEsm2017SrcModelPublicTypesMod.ActionCodeOperation
@@ -1466,6 +1743,7 @@ object firebaseAuthStrings {
     extends StObject
        with ServerError
        with typings.firebaseAuth.distCordovaSrcApiErrorsMod.ServerError
+       with typings.firebaseAuth.distBrowserCjsSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distNodeEsmSrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distEsm5SrcApiErrorsMod.ServerError
        with typings.firebaseAuth.distRnSrcApiErrorsMod.ServerError
@@ -1479,6 +1757,7 @@ object firebaseAuthStrings {
        with BrowserName
        with typings.firebaseAuth.distRnSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distCordovaSrcCoreUtilBrowserMod.BrowserName
+       with typings.firebaseAuth.distBrowserCjsSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distNodeSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distNodeEsmSrcCoreUtilBrowserMod.BrowserName
        with typings.firebaseAuth.distSrcCoreUtilBrowserMod.BrowserName
@@ -1491,6 +1770,7 @@ object firebaseAuthStrings {
        with ClientPlatform
        with typings.firebaseAuth.distRnSrcCoreUtilVersionMod.ClientPlatform
        with typings.firebaseAuth.distCordovaSrcCoreUtilVersionMod.ClientPlatform
+       with typings.firebaseAuth.distBrowserCjsSrcCoreUtilVersionMod.ClientPlatform
        with typings.firebaseAuth.distSrcCoreUtilVersionMod.ClientPlatform
        with typings.firebaseAuth.distEsm5SrcCoreUtilVersionMod.ClientPlatform
        with typings.firebaseAuth.distEsm2017SrcCoreUtilVersionMod.ClientPlatform
@@ -1507,8 +1787,22 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcApiMod.HttpHeader
        with typings.firebaseAuth.distRnSrcApiMod.HttpHeader
        with typings.firebaseAuth.distEsm2017SrcApiMod.HttpHeader
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.HttpHeader
        with typings.firebaseAuth.distNodeSrcApiMod.HttpHeader
   inline def `X-Client-Version`: `X-Client-Version` = "X-Client-Version".asInstanceOf[`X-Client-Version`]
+  
+  @js.native
+  sealed trait `X-Firebase-AppCheck`
+    extends StObject
+       with HttpHeader
+       with typings.firebaseAuth.distSrcApiMod.HttpHeader
+       with typings.firebaseAuth.distCordovaSrcApiMod.HttpHeader
+       with typings.firebaseAuth.distEsm5SrcApiMod.HttpHeader
+       with typings.firebaseAuth.distRnSrcApiMod.HttpHeader
+       with typings.firebaseAuth.distEsm2017SrcApiMod.HttpHeader
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.HttpHeader
+       with typings.firebaseAuth.distNodeSrcApiMod.HttpHeader
+  inline def `X-Firebase-AppCheck`: `X-Firebase-AppCheck` = "X-Firebase-AppCheck".asInstanceOf[`X-Firebase-AppCheck`]
   
   @js.native
   sealed trait `X-Firebase-Client`
@@ -1519,6 +1813,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcApiMod.HttpHeader
        with typings.firebaseAuth.distRnSrcApiMod.HttpHeader
        with typings.firebaseAuth.distEsm2017SrcApiMod.HttpHeader
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.HttpHeader
        with typings.firebaseAuth.distNodeSrcApiMod.HttpHeader
   inline def `X-Firebase-Client`: `X-Firebase-Client` = "X-Firebase-Client".asInstanceOf[`X-Firebase-Client`]
   
@@ -1531,6 +1826,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcApiMod.HttpHeader
        with typings.firebaseAuth.distRnSrcApiMod.HttpHeader
        with typings.firebaseAuth.distEsm2017SrcApiMod.HttpHeader
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.HttpHeader
        with typings.firebaseAuth.distNodeSrcApiMod.HttpHeader
   inline def `X-Firebase-Locale`: `X-Firebase-Locale` = "X-Firebase-Locale".asInstanceOf[`X-Firebase-Locale`]
   
@@ -1543,6 +1839,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcApiMod.HttpHeader
        with typings.firebaseAuth.distRnSrcApiMod.HttpHeader
        with typings.firebaseAuth.distEsm2017SrcApiMod.HttpHeader
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.HttpHeader
        with typings.firebaseAuth.distNodeSrcApiMod.HttpHeader
   inline def `X-Firebase-gmpid`: `X-Firebase-gmpid` = "X-Firebase-gmpid".asInstanceOf[`X-Firebase-gmpid`]
   
@@ -1557,6 +1854,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `account-exists-with-different-credential`: `account-exists-with-different-credential` = "account-exists-with-different-credential".asInstanceOf[`account-exists-with-different-credential`]
   
   @js.native
@@ -1564,6 +1862,7 @@ object firebaseAuthStrings {
     extends StObject
        with Status
        with typings.firebaseAuth.distRnSrcPlatformBrowserMessagechannelMod.Status
+       with typings.firebaseAuth.distBrowserCjsSrcPlatformBrowserMessagechannelMod.Status
        with typings.firebaseAuth.distCordovaSrcPlatformBrowserMessagechannelMod.Status
        with typings.firebaseAuth.distNodeSrcPlatformBrowserMessagechannelMod.Status
        with typings.firebaseAuth.distSrcPlatformBrowserMessagechannelMod.Status
@@ -1582,6 +1881,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `admin-restricted-operation`: `admin-restricted-operation` = "admin-restricted-operation".asInstanceOf[`admin-restricted-operation`]
   
   @js.native
@@ -1595,12 +1895,14 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `already-initialized`: `already-initialized` = "already-initialized".asInstanceOf[`already-initialized`]
   
   @js.native
   sealed trait anonymous
     extends StObject
        with ProviderId
+       with typings.firebaseAuth.distRnSrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distEsm5SrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distSrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distCordovaSrcModelEnumsMod.ProviderId
@@ -1609,6 +1911,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcModelEnumsMod.ProviderId
        with ProviderId2
        with SignInMethod
+       with typings.firebaseAuth.distRnSrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distEsm5SrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distSrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distCordovaSrcModelEnumsMod.SignInMethod
@@ -1616,6 +1919,10 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distNodeSrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distEsm2017SrcModelEnumsMod.SignInMethod
   inline def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
+  
+  @js.native
+  sealed trait `app-check-internal` extends StObject
+  inline def `app-check-internal`: `app-check-internal` = "app-check-internal".asInstanceOf[`app-check-internal`]
   
   @js.native
   sealed trait `app-deleted`
@@ -1628,6 +1935,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `app-deleted`: `app-deleted` = "app-deleted".asInstanceOf[`app-deleted`]
   
   @js.native
@@ -1641,6 +1949,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `app-not-authorized`: `app-not-authorized` = "app-not-authorized".asInstanceOf[`app-not-authorized`]
   
   @js.native
@@ -1654,6 +1963,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `app-not-installed`: `app-not-installed` = "app-not-installed".asInstanceOf[`app-not-installed`]
   
   @js.native
@@ -1671,6 +1981,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `argument-error`: `argument-error` = "argument-error".asInstanceOf[`argument-error`]
   
   @js.native
@@ -1683,6 +1994,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distSrcCoreAuthRegisterMod.ComponentName
        with typings.firebaseAuth.distRnSrcCoreAuthRegisterMod.ComponentName
        with typings.firebaseAuth.distEsm5SrcCoreAuthRegisterMod.ComponentName
+       with typings.firebaseAuth.distBrowserCjsSrcCoreAuthRegisterMod.ComponentName
   inline def auth: auth = "auth".asInstanceOf[auth]
   
   @js.native
@@ -1696,6 +2008,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `auth-domain-config-required`: `auth-domain-config-required` = "auth-domain-config-required".asInstanceOf[`auth-domain-config-required`]
   
   @js.native
@@ -1708,6 +2021,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distSrcCoreAuthRegisterMod.ComponentName
        with typings.firebaseAuth.distRnSrcCoreAuthRegisterMod.ComponentName
        with typings.firebaseAuth.distEsm5SrcCoreAuthRegisterMod.ComponentName
+       with typings.firebaseAuth.distBrowserCjsSrcCoreAuthRegisterMod.ComponentName
   inline def `auth-internal`: `auth-internal` = "auth-internal".asInstanceOf[`auth-internal`]
   
   @js.native
@@ -1717,6 +2031,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distRnSrcCorePersistencePersistenceUserManagerMod.KeyName
        with typings.firebaseAuth.distEsm5SrcCorePersistencePersistenceUserManagerMod.KeyName
        with typings.firebaseAuth.distNodeEsmSrcCorePersistencePersistenceUserManagerMod.KeyName
+       with typings.firebaseAuth.distBrowserCjsSrcCorePersistencePersistenceUserManagerMod.KeyName
        with typings.firebaseAuth.distEsm2017SrcCorePersistencePersistenceUserManagerMod.KeyName
        with typings.firebaseAuth.distCordovaSrcCorePersistencePersistenceUserManagerMod.KeyName
        with typings.firebaseAuth.distNodeSrcCorePersistencePersistenceUserManagerMod.KeyName
@@ -1891,8 +2206,24 @@ object firebaseAuthStrings {
   inline def `authSlashinvalid-provider-id`: `authSlashinvalid-provider-id` = "auth/invalid-provider-id".asInstanceOf[`authSlashinvalid-provider-id`]
   
   @js.native
+  sealed trait `authSlashinvalid-recaptcha-action` extends StObject
+  inline def `authSlashinvalid-recaptcha-action`: `authSlashinvalid-recaptcha-action` = "auth/invalid-recaptcha-action".asInstanceOf[`authSlashinvalid-recaptcha-action`]
+  
+  @js.native
+  sealed trait `authSlashinvalid-recaptcha-token` extends StObject
+  inline def `authSlashinvalid-recaptcha-token`: `authSlashinvalid-recaptcha-token` = "auth/invalid-recaptcha-token".asInstanceOf[`authSlashinvalid-recaptcha-token`]
+  
+  @js.native
+  sealed trait `authSlashinvalid-recaptcha-version` extends StObject
+  inline def `authSlashinvalid-recaptcha-version`: `authSlashinvalid-recaptcha-version` = "auth/invalid-recaptcha-version".asInstanceOf[`authSlashinvalid-recaptcha-version`]
+  
+  @js.native
   sealed trait `authSlashinvalid-recipient-email` extends StObject
   inline def `authSlashinvalid-recipient-email`: `authSlashinvalid-recipient-email` = "auth/invalid-recipient-email".asInstanceOf[`authSlashinvalid-recipient-email`]
+  
+  @js.native
+  sealed trait `authSlashinvalid-req-type` extends StObject
+  inline def `authSlashinvalid-req-type`: `authSlashinvalid-req-type` = "auth/invalid-req-type".asInstanceOf[`authSlashinvalid-req-type`]
   
   @js.native
   sealed trait `authSlashinvalid-sender` extends StObject
@@ -1927,6 +2258,10 @@ object firebaseAuthStrings {
   inline def `authSlashmissing-app-credential`: `authSlashmissing-app-credential` = "auth/missing-app-credential".asInstanceOf[`authSlashmissing-app-credential`]
   
   @js.native
+  sealed trait `authSlashmissing-client-type` extends StObject
+  inline def `authSlashmissing-client-type`: `authSlashmissing-client-type` = "auth/missing-client-type".asInstanceOf[`authSlashmissing-client-type`]
+  
+  @js.native
   sealed trait `authSlashmissing-continue-uri` extends StObject
   inline def `authSlashmissing-continue-uri`: `authSlashmissing-continue-uri` = "auth/missing-continue-uri".asInstanceOf[`authSlashmissing-continue-uri`]
   
@@ -1953,6 +2288,14 @@ object firebaseAuthStrings {
   @js.native
   sealed trait `authSlashmissing-phone-number` extends StObject
   inline def `authSlashmissing-phone-number`: `authSlashmissing-phone-number` = "auth/missing-phone-number".asInstanceOf[`authSlashmissing-phone-number`]
+  
+  @js.native
+  sealed trait `authSlashmissing-recaptcha-token` extends StObject
+  inline def `authSlashmissing-recaptcha-token`: `authSlashmissing-recaptcha-token` = "auth/missing-recaptcha-token".asInstanceOf[`authSlashmissing-recaptcha-token`]
+  
+  @js.native
+  sealed trait `authSlashmissing-recaptcha-version` extends StObject
+  inline def `authSlashmissing-recaptcha-version`: `authSlashmissing-recaptcha-version` = "auth/missing-recaptcha-version".asInstanceOf[`authSlashmissing-recaptcha-version`]
   
   @js.native
   sealed trait `authSlashmissing-verification-code` extends StObject
@@ -2009,6 +2352,10 @@ object firebaseAuthStrings {
   @js.native
   sealed trait `authSlashquota-exceeded` extends StObject
   inline def `authSlashquota-exceeded`: `authSlashquota-exceeded` = "auth/quota-exceeded".asInstanceOf[`authSlashquota-exceeded`]
+  
+  @js.native
+  sealed trait `authSlashrecaptcha-not-enabled` extends StObject
+  inline def `authSlashrecaptcha-not-enabled`: `authSlashrecaptcha-not-enabled` = "auth/recaptcha-not-enabled".asInstanceOf[`authSlashrecaptcha-not-enabled`]
   
   @js.native
   sealed trait `authSlashredirect-cancelled-by-user` extends StObject
@@ -2109,6 +2456,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distRnSrcCorePersistencePersistenceUserManagerMod.KeyName
        with typings.firebaseAuth.distEsm5SrcCorePersistencePersistenceUserManagerMod.KeyName
        with typings.firebaseAuth.distNodeEsmSrcCorePersistencePersistenceUserManagerMod.KeyName
+       with typings.firebaseAuth.distBrowserCjsSrcCorePersistencePersistenceUserManagerMod.KeyName
        with typings.firebaseAuth.distEsm2017SrcCorePersistencePersistenceUserManagerMod.KeyName
        with typings.firebaseAuth.distCordovaSrcCorePersistencePersistenceUserManagerMod.KeyName
        with typings.firebaseAuth.distNodeSrcCorePersistencePersistenceUserManagerMod.KeyName
@@ -2125,6 +2473,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `cancelled-popup-request`: `cancelled-popup-request` = "cancelled-popup-request".asInstanceOf[`cancelled-popup-request`]
   
   @js.native
@@ -2138,6 +2487,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `captcha-check-failed`: `captcha-check-failed` = "captcha-check-failed".asInstanceOf[`captcha-check-failed`]
   
   @js.native
@@ -2151,6 +2501,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `code-expired`: `code-expired` = "code-expired".asInstanceOf[`code-expired`]
   
   @js.native
@@ -2158,6 +2509,7 @@ object firebaseAuthStrings {
     extends StObject
        with MessageError
        with typings.firebaseAuth.distRnSrcPlatformBrowserMessagechannelMod.MessageError
+       with typings.firebaseAuth.distBrowserCjsSrcPlatformBrowserMessagechannelMod.MessageError
        with typings.firebaseAuth.distCordovaSrcPlatformBrowserMessagechannelMod.MessageError
        with typings.firebaseAuth.distNodeSrcPlatformBrowserMessagechannelMod.MessageError
        with typings.firebaseAuth.distSrcPlatformBrowserMessagechannelMod.MessageError
@@ -2170,6 +2522,7 @@ object firebaseAuthStrings {
     extends StObject
        with MessageError
        with typings.firebaseAuth.distRnSrcPlatformBrowserMessagechannelMod.MessageError
+       with typings.firebaseAuth.distBrowserCjsSrcPlatformBrowserMessagechannelMod.MessageError
        with typings.firebaseAuth.distCordovaSrcPlatformBrowserMessagechannelMod.MessageError
        with typings.firebaseAuth.distNodeSrcPlatformBrowserMessagechannelMod.MessageError
        with typings.firebaseAuth.distSrcPlatformBrowserMessagechannelMod.MessageError
@@ -2188,6 +2541,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `cordova-not-ready`: `cordova-not-ready` = "cordova-not-ready".asInstanceOf[`cordova-not-ready`]
   
   @js.native
@@ -2201,6 +2555,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `cors-unsupported`: `cors-unsupported` = "cors-unsupported".asInstanceOf[`cors-unsupported`]
   
   @js.native
@@ -2214,12 +2569,14 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `credential-already-in-use`: `credential-already-in-use` = "credential-already-in-use".asInstanceOf[`credential-already-in-use`]
   
   @js.native
   sealed trait custom
     extends StObject
        with ProviderId
+       with typings.firebaseAuth.distRnSrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distEsm5SrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distSrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distCordovaSrcModelEnumsMod.ProviderId
@@ -2240,6 +2597,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `custom-token-mismatch`: `custom-token-mismatch` = "custom-token-mismatch".asInstanceOf[`custom-token-mismatch`]
   
   @js.native
@@ -2253,6 +2611,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `dependent-sdk-initialized-before-auth`: `dependent-sdk-initialized-before-auth` = "dependent-sdk-initialized-before-auth".asInstanceOf[`dependent-sdk-initialized-before-auth`]
   
   @js.native
@@ -2260,6 +2619,7 @@ object firebaseAuthStrings {
     extends StObject
        with Status
        with typings.firebaseAuth.distRnSrcPlatformBrowserMessagechannelMod.Status
+       with typings.firebaseAuth.distBrowserCjsSrcPlatformBrowserMessagechannelMod.Status
        with typings.firebaseAuth.distCordovaSrcPlatformBrowserMessagechannelMod.Status
        with typings.firebaseAuth.distNodeSrcPlatformBrowserMessagechannelMod.Status
        with typings.firebaseAuth.distSrcPlatformBrowserMessagechannelMod.Status
@@ -2278,6 +2638,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `dynamic-link-not-activated`: `dynamic-link-not-activated` = "dynamic-link-not-activated".asInstanceOf[`dynamic-link-not-activated`]
   
   @js.native
@@ -2291,6 +2652,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `email-already-in-use`: `email-already-in-use` = "email-already-in-use".asInstanceOf[`email-already-in-use`]
   
   @js.native
@@ -2304,12 +2666,14 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `email-change-needs-verification`: `email-change-needs-verification` = "email-change-needs-verification".asInstanceOf[`email-change-needs-verification`]
   
   @js.native
   sealed trait emailLink
     extends StObject
        with SignInMethod
+       with typings.firebaseAuth.distRnSrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distEsm5SrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distSrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distCordovaSrcModelEnumsMod.SignInMethod
@@ -2329,6 +2693,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `emulator-config-failed`: `emulator-config-failed` = "emulator-config-failed".asInstanceOf[`emulator-config-failed`]
   
   @js.native
@@ -2337,6 +2702,7 @@ object firebaseAuthStrings {
        with MultiFactorSessionType
        with typings.firebaseAuth.distNodeSrcMfaMfaSessionMod.MultiFactorSessionType
        with typings.firebaseAuth.distSrcMfaMfaSessionMod.MultiFactorSessionType
+       with typings.firebaseAuth.distBrowserCjsSrcMfaMfaSessionMod.MultiFactorSessionType
        with typings.firebaseAuth.distRnSrcMfaMfaSessionMod.MultiFactorSessionType
        with typings.firebaseAuth.distEsm2017SrcMfaMfaSessionMod.MultiFactorSessionType
        with typings.firebaseAuth.distNodeEsmSrcMfaMfaSessionMod.MultiFactorSessionType
@@ -2354,12 +2720,14 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `expired-action-code`: `expired-action-code` = "expired-action-code".asInstanceOf[`expired-action-code`]
   
   @js.native
   sealed trait facebookDotcom
     extends StObject
        with ProviderId
+       with typings.firebaseAuth.distRnSrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distEsm5SrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distSrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distCordovaSrcModelEnumsMod.ProviderId
@@ -2368,6 +2736,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcModelEnumsMod.ProviderId
        with ProviderId2
        with SignInMethod
+       with typings.firebaseAuth.distRnSrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distEsm5SrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distSrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distCordovaSrcModelEnumsMod.SignInMethod
@@ -2380,6 +2749,7 @@ object firebaseAuthStrings {
   sealed trait firebase
     extends StObject
        with ProviderId
+       with typings.firebaseAuth.distRnSrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distEsm5SrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distSrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distCordovaSrcModelEnumsMod.ProviderId
@@ -2394,9 +2764,23 @@ object firebaseAuthStrings {
   inline def gapiDotiframes: gapiDotiframes = "gapi.iframes".asInstanceOf[gapiDotiframes]
   
   @js.native
+  sealed trait getOobCode
+    extends StObject
+       with RecaptchaActionName
+       with typings.firebaseAuth.distSrcApiMod.RecaptchaActionName
+       with typings.firebaseAuth.distCordovaSrcApiMod.RecaptchaActionName
+       with typings.firebaseAuth.distEsm5SrcApiMod.RecaptchaActionName
+       with typings.firebaseAuth.distRnSrcApiMod.RecaptchaActionName
+       with typings.firebaseAuth.distEsm2017SrcApiMod.RecaptchaActionName
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.RecaptchaActionName
+       with typings.firebaseAuth.distNodeSrcApiMod.RecaptchaActionName
+  inline def getOobCode: getOobCode = "getOobCode".asInstanceOf[getOobCode]
+  
+  @js.native
   sealed trait githubDotcom
     extends StObject
        with ProviderId
+       with typings.firebaseAuth.distRnSrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distEsm5SrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distSrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distCordovaSrcModelEnumsMod.ProviderId
@@ -2405,6 +2789,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcModelEnumsMod.ProviderId
        with ProviderId2
        with SignInMethod
+       with typings.firebaseAuth.distRnSrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distEsm5SrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distSrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distCordovaSrcModelEnumsMod.SignInMethod
@@ -2417,6 +2802,7 @@ object firebaseAuthStrings {
   sealed trait googleDotcom
     extends StObject
        with ProviderId
+       with typings.firebaseAuth.distRnSrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distEsm5SrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distSrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distCordovaSrcModelEnumsMod.ProviderId
@@ -2425,6 +2811,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcModelEnumsMod.ProviderId
        with ProviderId2
        with SignInMethod
+       with typings.firebaseAuth.distRnSrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distEsm5SrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distSrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distCordovaSrcModelEnumsMod.SignInMethod
@@ -2444,6 +2831,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreAuthAuthImplMod.DefaultConfig
        with typings.firebaseAuth.distCordovaSrcCoreAuthAuthImplMod.DefaultConfig
        with typings.firebaseAuth.distRnSrcCoreAuthAuthImplMod.DefaultConfig
+       with typings.firebaseAuth.distBrowserCjsSrcCoreAuthAuthImplMod.DefaultConfig
        with typings.firebaseAuth.distEsm5SrcCoreAuthAuthImplMod.DefaultConfig
        with typings.firebaseAuth.distSrcCoreAuthAuthImplMod.DefaultConfig
        with typings.firebaseAuth.distNodeEsmSrcCoreAuthAuthImplMod.DefaultConfig
@@ -2456,6 +2844,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreAuthAuthImplMod.DefaultConfig
        with typings.firebaseAuth.distCordovaSrcCoreAuthAuthImplMod.DefaultConfig
        with typings.firebaseAuth.distRnSrcCoreAuthAuthImplMod.DefaultConfig
+       with typings.firebaseAuth.distBrowserCjsSrcCoreAuthAuthImplMod.DefaultConfig
        with typings.firebaseAuth.distEsm5SrcCoreAuthAuthImplMod.DefaultConfig
        with typings.firebaseAuth.distSrcCoreAuthAuthImplMod.DefaultConfig
        with typings.firebaseAuth.distNodeEsmSrcCoreAuthAuthImplMod.DefaultConfig
@@ -2470,6 +2859,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distCordovaSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distBrowserCjsSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distAuthMod.IdTokenResponseKind
        with typings.firebaseAuth.distNodeEsmSrcModelIdTokenMod.IdTokenResponseKind
   inline def identitytoolkitNumbersignCreateAuthUriResponse: identitytoolkitNumbersignCreateAuthUriResponse = "identitytoolkit#CreateAuthUriResponse".asInstanceOf[identitytoolkitNumbersignCreateAuthUriResponse]
@@ -2483,6 +2873,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distCordovaSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distBrowserCjsSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distAuthMod.IdTokenResponseKind
        with typings.firebaseAuth.distNodeEsmSrcModelIdTokenMod.IdTokenResponseKind
   inline def identitytoolkitNumbersignDeleteAccountResponse: identitytoolkitNumbersignDeleteAccountResponse = "identitytoolkit#DeleteAccountResponse".asInstanceOf[identitytoolkitNumbersignDeleteAccountResponse]
@@ -2496,6 +2887,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distCordovaSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distBrowserCjsSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distAuthMod.IdTokenResponseKind
        with typings.firebaseAuth.distNodeEsmSrcModelIdTokenMod.IdTokenResponseKind
   inline def identitytoolkitNumbersignDownloadAccountResponse: identitytoolkitNumbersignDownloadAccountResponse = "identitytoolkit#DownloadAccountResponse".asInstanceOf[identitytoolkitNumbersignDownloadAccountResponse]
@@ -2509,6 +2901,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distCordovaSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distBrowserCjsSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distAuthMod.IdTokenResponseKind
        with typings.firebaseAuth.distNodeEsmSrcModelIdTokenMod.IdTokenResponseKind
   inline def identitytoolkitNumbersignEmailLinkSigninResponse: identitytoolkitNumbersignEmailLinkSigninResponse = "identitytoolkit#EmailLinkSigninResponse".asInstanceOf[identitytoolkitNumbersignEmailLinkSigninResponse]
@@ -2522,6 +2915,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distCordovaSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distBrowserCjsSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distAuthMod.IdTokenResponseKind
        with typings.firebaseAuth.distNodeEsmSrcModelIdTokenMod.IdTokenResponseKind
   inline def identitytoolkitNumbersignGetAccountInfoResponse: identitytoolkitNumbersignGetAccountInfoResponse = "identitytoolkit#GetAccountInfoResponse".asInstanceOf[identitytoolkitNumbersignGetAccountInfoResponse]
@@ -2535,6 +2929,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distCordovaSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distBrowserCjsSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distAuthMod.IdTokenResponseKind
        with typings.firebaseAuth.distNodeEsmSrcModelIdTokenMod.IdTokenResponseKind
   inline def identitytoolkitNumbersignGetOobConfirmationCodeResponse: identitytoolkitNumbersignGetOobConfirmationCodeResponse = "identitytoolkit#GetOobConfirmationCodeResponse".asInstanceOf[identitytoolkitNumbersignGetOobConfirmationCodeResponse]
@@ -2548,6 +2943,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distCordovaSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distBrowserCjsSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distAuthMod.IdTokenResponseKind
        with typings.firebaseAuth.distNodeEsmSrcModelIdTokenMod.IdTokenResponseKind
   inline def identitytoolkitNumbersignGetRecaptchaParamResponse: identitytoolkitNumbersignGetRecaptchaParamResponse = "identitytoolkit#GetRecaptchaParamResponse".asInstanceOf[identitytoolkitNumbersignGetRecaptchaParamResponse]
@@ -2561,6 +2957,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distCordovaSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distBrowserCjsSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distAuthMod.IdTokenResponseKind
        with typings.firebaseAuth.distNodeEsmSrcModelIdTokenMod.IdTokenResponseKind
   inline def identitytoolkitNumbersignResetPasswordResponse: identitytoolkitNumbersignResetPasswordResponse = "identitytoolkit#ResetPasswordResponse".asInstanceOf[identitytoolkitNumbersignResetPasswordResponse]
@@ -2574,6 +2971,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distCordovaSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distBrowserCjsSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distAuthMod.IdTokenResponseKind
        with typings.firebaseAuth.distNodeEsmSrcModelIdTokenMod.IdTokenResponseKind
   inline def identitytoolkitNumbersignSetAccountInfoResponse: identitytoolkitNumbersignSetAccountInfoResponse = "identitytoolkit#SetAccountInfoResponse".asInstanceOf[identitytoolkitNumbersignSetAccountInfoResponse]
@@ -2587,6 +2985,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distCordovaSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distBrowserCjsSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distAuthMod.IdTokenResponseKind
        with typings.firebaseAuth.distNodeEsmSrcModelIdTokenMod.IdTokenResponseKind
   inline def identitytoolkitNumbersignSignupNewUserResponse: identitytoolkitNumbersignSignupNewUserResponse = "identitytoolkit#SignupNewUserResponse".asInstanceOf[identitytoolkitNumbersignSignupNewUserResponse]
@@ -2600,6 +2999,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distCordovaSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distBrowserCjsSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distAuthMod.IdTokenResponseKind
        with typings.firebaseAuth.distNodeEsmSrcModelIdTokenMod.IdTokenResponseKind
   inline def identitytoolkitNumbersignUploadAccountResponse: identitytoolkitNumbersignUploadAccountResponse = "identitytoolkit#UploadAccountResponse".asInstanceOf[identitytoolkitNumbersignUploadAccountResponse]
@@ -2613,6 +3013,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distCordovaSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distBrowserCjsSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distAuthMod.IdTokenResponseKind
        with typings.firebaseAuth.distNodeEsmSrcModelIdTokenMod.IdTokenResponseKind
   inline def identitytoolkitNumbersignVerifyAssertionResponse: identitytoolkitNumbersignVerifyAssertionResponse = "identitytoolkit#VerifyAssertionResponse".asInstanceOf[identitytoolkitNumbersignVerifyAssertionResponse]
@@ -2626,6 +3027,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distCordovaSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distBrowserCjsSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distAuthMod.IdTokenResponseKind
        with typings.firebaseAuth.distNodeEsmSrcModelIdTokenMod.IdTokenResponseKind
   inline def identitytoolkitNumbersignVerifyCustomTokenResponse: identitytoolkitNumbersignVerifyCustomTokenResponse = "identitytoolkit#VerifyCustomTokenResponse".asInstanceOf[identitytoolkitNumbersignVerifyCustomTokenResponse]
@@ -2639,6 +3041,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm5SrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distCordovaSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distSrcModelIdTokenMod.IdTokenResponseKind
+       with typings.firebaseAuth.distBrowserCjsSrcModelIdTokenMod.IdTokenResponseKind
        with typings.firebaseAuth.distAuthMod.IdTokenResponseKind
        with typings.firebaseAuth.distNodeEsmSrcModelIdTokenMod.IdTokenResponseKind
   inline def identitytoolkitNumbersignVerifyPasswordResponse: identitytoolkitNumbersignVerifyPasswordResponse = "identitytoolkit#VerifyPasswordResponse".asInstanceOf[identitytoolkitNumbersignVerifyPasswordResponse]
@@ -2654,6 +3057,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `internal-error`: `internal-error` = "internal-error".asInstanceOf[`internal-error`]
   
   @js.native
@@ -2667,6 +3071,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `invalid-action-code`: `invalid-action-code` = "invalid-action-code".asInstanceOf[`invalid-action-code`]
   
   @js.native
@@ -2680,6 +3085,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `invalid-api-key`: `invalid-api-key` = "invalid-api-key".asInstanceOf[`invalid-api-key`]
   
   @js.native
@@ -2693,6 +3099,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `invalid-app-credential`: `invalid-app-credential` = "invalid-app-credential".asInstanceOf[`invalid-app-credential`]
   
   @js.native
@@ -2706,6 +3113,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `invalid-app-id`: `invalid-app-id` = "invalid-app-id".asInstanceOf[`invalid-app-id`]
   
   @js.native
@@ -2719,6 +3127,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `invalid-auth-event`: `invalid-auth-event` = "invalid-auth-event".asInstanceOf[`invalid-auth-event`]
   
   @js.native
@@ -2732,6 +3141,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `invalid-cert-hash`: `invalid-cert-hash` = "invalid-cert-hash".asInstanceOf[`invalid-cert-hash`]
   
   @js.native
@@ -2745,6 +3155,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `invalid-continue-uri`: `invalid-continue-uri` = "invalid-continue-uri".asInstanceOf[`invalid-continue-uri`]
   
   @js.native
@@ -2758,6 +3169,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `invalid-cordova-configuration`: `invalid-cordova-configuration` = "invalid-cordova-configuration".asInstanceOf[`invalid-cordova-configuration`]
   
   @js.native
@@ -2771,6 +3183,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `invalid-credential`: `invalid-credential` = "invalid-credential".asInstanceOf[`invalid-credential`]
   
   @js.native
@@ -2784,6 +3197,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `invalid-custom-token`: `invalid-custom-token` = "invalid-custom-token".asInstanceOf[`invalid-custom-token`]
   
   @js.native
@@ -2797,6 +3211,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `invalid-dynamic-link-domain`: `invalid-dynamic-link-domain` = "invalid-dynamic-link-domain".asInstanceOf[`invalid-dynamic-link-domain`]
   
   @js.native
@@ -2810,6 +3225,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `invalid-email`: `invalid-email` = "invalid-email".asInstanceOf[`invalid-email`]
   
   @js.native
@@ -2823,6 +3239,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `invalid-emulator-scheme`: `invalid-emulator-scheme` = "invalid-emulator-scheme".asInstanceOf[`invalid-emulator-scheme`]
   
   @js.native
@@ -2836,6 +3253,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `invalid-message-payload`: `invalid-message-payload` = "invalid-message-payload".asInstanceOf[`invalid-message-payload`]
   
   @js.native
@@ -2849,6 +3267,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `invalid-multi-factor-session`: `invalid-multi-factor-session` = "invalid-multi-factor-session".asInstanceOf[`invalid-multi-factor-session`]
   
   @js.native
@@ -2862,6 +3281,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `invalid-oauth-client-id`: `invalid-oauth-client-id` = "invalid-oauth-client-id".asInstanceOf[`invalid-oauth-client-id`]
   
   @js.native
@@ -2875,6 +3295,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `invalid-oauth-provider`: `invalid-oauth-provider` = "invalid-oauth-provider".asInstanceOf[`invalid-oauth-provider`]
   
   @js.native
@@ -2888,6 +3309,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `invalid-persistence-type`: `invalid-persistence-type` = "invalid-persistence-type".asInstanceOf[`invalid-persistence-type`]
   
   @js.native
@@ -2901,6 +3323,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `invalid-phone-number`: `invalid-phone-number` = "invalid-phone-number".asInstanceOf[`invalid-phone-number`]
   
   @js.native
@@ -2914,7 +3337,50 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `invalid-provider-id`: `invalid-provider-id` = "invalid-provider-id".asInstanceOf[`invalid-provider-id`]
+  
+  @js.native
+  sealed trait `invalid-recaptcha-action`
+    extends StObject
+       with AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
+  inline def `invalid-recaptcha-action`: `invalid-recaptcha-action` = "invalid-recaptcha-action".asInstanceOf[`invalid-recaptcha-action`]
+  
+  @js.native
+  sealed trait `invalid-recaptcha-token`
+    extends StObject
+       with AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
+  inline def `invalid-recaptcha-token`: `invalid-recaptcha-token` = "invalid-recaptcha-token".asInstanceOf[`invalid-recaptcha-token`]
+  
+  @js.native
+  sealed trait `invalid-recaptcha-version`
+    extends StObject
+       with AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
+  inline def `invalid-recaptcha-version`: `invalid-recaptcha-version` = "invalid-recaptcha-version".asInstanceOf[`invalid-recaptcha-version`]
   
   @js.native
   sealed trait `invalid-recipient-email`
@@ -2927,7 +3393,22 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `invalid-recipient-email`: `invalid-recipient-email` = "invalid-recipient-email".asInstanceOf[`invalid-recipient-email`]
+  
+  @js.native
+  sealed trait `invalid-req-type`
+    extends StObject
+       with AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
+  inline def `invalid-req-type`: `invalid-req-type` = "invalid-req-type".asInstanceOf[`invalid-req-type`]
   
   @js.native
   sealed trait `invalid-sender`
@@ -2940,6 +3421,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `invalid-sender`: `invalid-sender` = "invalid-sender".asInstanceOf[`invalid-sender`]
   
   @js.native
@@ -2953,6 +3435,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `invalid-tenant-id`: `invalid-tenant-id` = "invalid-tenant-id".asInstanceOf[`invalid-tenant-id`]
   
   @js.native
@@ -2966,6 +3449,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `invalid-user-token`: `invalid-user-token` = "invalid-user-token".asInstanceOf[`invalid-user-token`]
   
   @js.native
@@ -2979,6 +3463,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `invalid-verification-code`: `invalid-verification-code` = "invalid-verification-code".asInstanceOf[`invalid-verification-code`]
   
   @js.native
@@ -2992,6 +3477,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `invalid-verification-id`: `invalid-verification-id` = "invalid-verification-id".asInstanceOf[`invalid-verification-id`]
   
   @js.native
@@ -2999,6 +3485,7 @@ object firebaseAuthStrings {
     extends StObject
        with MessageError
        with typings.firebaseAuth.distRnSrcPlatformBrowserMessagechannelMod.MessageError
+       with typings.firebaseAuth.distBrowserCjsSrcPlatformBrowserMessagechannelMod.MessageError
        with typings.firebaseAuth.distCordovaSrcPlatformBrowserMessagechannelMod.MessageError
        with typings.firebaseAuth.distNodeSrcPlatformBrowserMessagechannelMod.MessageError
        with typings.firebaseAuth.distSrcPlatformBrowserMessagechannelMod.MessageError
@@ -3007,10 +3494,15 @@ object firebaseAuthStrings {
   inline def invalid_response: invalid_response = "invalid_response".asInstanceOf[invalid_response]
   
   @js.native
+  sealed trait invisible extends StObject
+  inline def invisible: invisible = "invisible".asInstanceOf[invisible]
+  
+  @js.native
   sealed trait keyChanged
     extends StObject
        with EventType
        with typings.firebaseAuth.distRnSrcPlatformBrowserMessagechannelMod.EventType
+       with typings.firebaseAuth.distBrowserCjsSrcPlatformBrowserMessagechannelMod.EventType
        with typings.firebaseAuth.distCordovaSrcPlatformBrowserMessagechannelMod.EventType
        with typings.firebaseAuth.distNodeSrcPlatformBrowserMessagechannelMod.EventType
        with typings.firebaseAuth.distSrcPlatformBrowserMessagechannelMod.EventType
@@ -3022,6 +3514,7 @@ object firebaseAuthStrings {
   sealed trait link
     extends StObject
        with OperationType
+       with typings.firebaseAuth.distRnSrcModelEnumsMod.OperationType
        with typings.firebaseAuth.distEsm5SrcModelEnumsMod.OperationType
        with typings.firebaseAuth.distSrcModelEnumsMod.OperationType
        with typings.firebaseAuth.distCordovaSrcModelEnumsMod.OperationType
@@ -3034,6 +3527,7 @@ object firebaseAuthStrings {
   sealed trait linkViaPopup
     extends StObject
        with AuthEventType
+       with typings.firebaseAuth.distBrowserCjsSrcModelPopupRedirectMod.AuthEventType
        with typings.firebaseAuth.distNodeEsmSrcModelPopupRedirectMod.AuthEventType
        with typings.firebaseAuth.distNodeSrcModelPopupRedirectMod.AuthEventType
        with typings.firebaseAuth.distEsm5SrcModelPopupRedirectMod.AuthEventType
@@ -3047,6 +3541,7 @@ object firebaseAuthStrings {
   sealed trait linkViaRedirect
     extends StObject
        with AuthEventType
+       with typings.firebaseAuth.distBrowserCjsSrcModelPopupRedirectMod.AuthEventType
        with typings.firebaseAuth.distNodeEsmSrcModelPopupRedirectMod.AuthEventType
        with typings.firebaseAuth.distNodeSrcModelPopupRedirectMod.AuthEventType
        with typings.firebaseAuth.distEsm5SrcModelPopupRedirectMod.AuthEventType
@@ -3067,6 +3562,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `login-blocked`: `login-blocked` = "login-blocked".asInstanceOf[`login-blocked`]
   
   @js.native
@@ -3080,6 +3576,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `maximum-second-factor-count-exceeded`: `maximum-second-factor-count-exceeded` = "maximum-second-factor-count-exceeded".asInstanceOf[`maximum-second-factor-count-exceeded`]
   
   @js.native
@@ -3093,6 +3590,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `missing-android-pkg-name`: `missing-android-pkg-name` = "missing-android-pkg-name".asInstanceOf[`missing-android-pkg-name`]
   
   @js.native
@@ -3106,7 +3604,22 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `missing-app-credential`: `missing-app-credential` = "missing-app-credential".asInstanceOf[`missing-app-credential`]
+  
+  @js.native
+  sealed trait `missing-client-type`
+    extends StObject
+       with AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
+  inline def `missing-client-type`: `missing-client-type` = "missing-client-type".asInstanceOf[`missing-client-type`]
   
   @js.native
   sealed trait `missing-continue-uri`
@@ -3119,6 +3632,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `missing-continue-uri`: `missing-continue-uri` = "missing-continue-uri".asInstanceOf[`missing-continue-uri`]
   
   @js.native
@@ -3132,6 +3646,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `missing-iframe-start`: `missing-iframe-start` = "missing-iframe-start".asInstanceOf[`missing-iframe-start`]
   
   @js.native
@@ -3145,6 +3660,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `missing-ios-bundle-id`: `missing-ios-bundle-id` = "missing-ios-bundle-id".asInstanceOf[`missing-ios-bundle-id`]
   
   @js.native
@@ -3158,6 +3674,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `missing-multi-factor-info`: `missing-multi-factor-info` = "missing-multi-factor-info".asInstanceOf[`missing-multi-factor-info`]
   
   @js.native
@@ -3171,6 +3688,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `missing-multi-factor-session`: `missing-multi-factor-session` = "missing-multi-factor-session".asInstanceOf[`missing-multi-factor-session`]
   
   @js.native
@@ -3184,7 +3702,22 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `missing-or-invalid-nonce`: `missing-or-invalid-nonce` = "missing-or-invalid-nonce".asInstanceOf[`missing-or-invalid-nonce`]
+  
+  @js.native
+  sealed trait `missing-password`
+    extends StObject
+       with AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
+  inline def `missing-password`: `missing-password` = "missing-password".asInstanceOf[`missing-password`]
   
   @js.native
   sealed trait `missing-phone-number`
@@ -3197,7 +3730,36 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `missing-phone-number`: `missing-phone-number` = "missing-phone-number".asInstanceOf[`missing-phone-number`]
+  
+  @js.native
+  sealed trait `missing-recaptcha-token`
+    extends StObject
+       with AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
+  inline def `missing-recaptcha-token`: `missing-recaptcha-token` = "missing-recaptcha-token".asInstanceOf[`missing-recaptcha-token`]
+  
+  @js.native
+  sealed trait `missing-recaptcha-version`
+    extends StObject
+       with AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
+  inline def `missing-recaptcha-version`: `missing-recaptcha-version` = "missing-recaptcha-version".asInstanceOf[`missing-recaptcha-version`]
   
   @js.native
   sealed trait `missing-verification-code`
@@ -3210,6 +3772,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `missing-verification-code`: `missing-verification-code` = "missing-verification-code".asInstanceOf[`missing-verification-code`]
   
   @js.native
@@ -3223,6 +3786,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `missing-verification-id`: `missing-verification-id` = "missing-verification-id".asInstanceOf[`missing-verification-id`]
   
   @js.native
@@ -3236,6 +3800,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `multi-factor-auth-required`: `multi-factor-auth-required` = "multi-factor-auth-required".asInstanceOf[`multi-factor-auth-required`]
   
   @js.native
@@ -3249,6 +3814,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `multi-factor-info-not-found`: `multi-factor-info-not-found` = "multi-factor-info-not-found".asInstanceOf[`multi-factor-info-not-found`]
   
   @js.native
@@ -3262,6 +3828,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `network-request-failed`: `network-request-failed` = "network-request-failed".asInstanceOf[`network-request-failed`]
   
   @js.native
@@ -3275,6 +3842,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `no-auth-event`: `no-auth-event` = "no-auth-event".asInstanceOf[`no-auth-event`]
   
   @js.native
@@ -3288,6 +3856,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `no-such-provider`: `no-such-provider` = "no-such-provider".asInstanceOf[`no-such-provider`]
   
   @js.native
@@ -3301,6 +3870,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `null-user`: `null-user` = "null-user".asInstanceOf[`null-user`]
   
   @js.native
@@ -3314,6 +3884,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `operation-not-allowed`: `operation-not-allowed` = "operation-not-allowed".asInstanceOf[`operation-not-allowed`]
   
   @js.native
@@ -3327,12 +3898,14 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `operation-not-supported-in-this-environment`: `operation-not-supported-in-this-environment` = "operation-not-supported-in-this-environment".asInstanceOf[`operation-not-supported-in-this-environment`]
   
   @js.native
   sealed trait password
     extends StObject
        with ProviderId
+       with typings.firebaseAuth.distRnSrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distEsm5SrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distSrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distCordovaSrcModelEnumsMod.ProviderId
@@ -3341,6 +3914,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcModelEnumsMod.ProviderId
        with ProviderId2
        with SignInMethod
+       with typings.firebaseAuth.distRnSrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distEsm5SrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distSrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distCordovaSrcModelEnumsMod.SignInMethod
@@ -3356,6 +3930,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distRnSrcCorePersistencePersistenceUserManagerMod.KeyName
        with typings.firebaseAuth.distEsm5SrcCorePersistencePersistenceUserManagerMod.KeyName
        with typings.firebaseAuth.distNodeEsmSrcCorePersistencePersistenceUserManagerMod.KeyName
+       with typings.firebaseAuth.distBrowserCjsSrcCorePersistencePersistenceUserManagerMod.KeyName
        with typings.firebaseAuth.distEsm2017SrcCorePersistencePersistenceUserManagerMod.KeyName
        with typings.firebaseAuth.distCordovaSrcCorePersistencePersistenceUserManagerMod.KeyName
        with typings.firebaseAuth.distNodeSrcCorePersistencePersistenceUserManagerMod.KeyName
@@ -3364,7 +3939,16 @@ object firebaseAuthStrings {
   @js.native
   sealed trait phone
     extends StObject
+       with FactorId
+       with typings.firebaseAuth.distNodeEsmSrcModelPublicTypesMod.FactorId
+       with typings.firebaseAuth.distSrcModelPublicTypesMod.FactorId
+       with typings.firebaseAuth.distNodeSrcModelPublicTypesMod.FactorId
+       with typings.firebaseAuth.distEsm2017SrcModelPublicTypesMod.FactorId
+       with typings.firebaseAuth.distEsm5SrcModelPublicTypesMod.FactorId
+       with typings.firebaseAuth.distCordovaSrcModelPublicTypesMod.FactorId
+       with typings.firebaseAuth.distRnSrcModelPublicTypesMod.FactorId
        with ProviderId
+       with typings.firebaseAuth.distRnSrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distEsm5SrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distSrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distCordovaSrcModelEnumsMod.ProviderId
@@ -3373,6 +3957,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcModelEnumsMod.ProviderId
        with ProviderId2
        with SignInMethod
+       with typings.firebaseAuth.distRnSrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distEsm5SrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distSrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distCordovaSrcModelEnumsMod.SignInMethod
@@ -3386,6 +3971,7 @@ object firebaseAuthStrings {
     extends StObject
        with EventType
        with typings.firebaseAuth.distRnSrcPlatformBrowserMessagechannelMod.EventType
+       with typings.firebaseAuth.distBrowserCjsSrcPlatformBrowserMessagechannelMod.EventType
        with typings.firebaseAuth.distCordovaSrcPlatformBrowserMessagechannelMod.EventType
        with typings.firebaseAuth.distNodeSrcPlatformBrowserMessagechannelMod.EventType
        with typings.firebaseAuth.distSrcPlatformBrowserMessagechannelMod.EventType
@@ -3404,6 +3990,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `popup-blocked`: `popup-blocked` = "popup-blocked".asInstanceOf[`popup-blocked`]
   
   @js.native
@@ -3417,6 +4004,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `popup-closed-by-user`: `popup-closed-by-user` = "popup-closed-by-user".asInstanceOf[`popup-closed-by-user`]
   
   @js.native
@@ -3430,6 +4018,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `provider-already-linked`: `provider-already-linked` = "provider-already-linked".asInstanceOf[`provider-already-linked`]
   
   @js.native
@@ -3443,12 +4032,14 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `quota-exceeded`: `quota-exceeded` = "quota-exceeded".asInstanceOf[`quota-exceeded`]
   
   @js.native
   sealed trait reauthViaPopup
     extends StObject
        with AuthEventType
+       with typings.firebaseAuth.distBrowserCjsSrcModelPopupRedirectMod.AuthEventType
        with typings.firebaseAuth.distNodeEsmSrcModelPopupRedirectMod.AuthEventType
        with typings.firebaseAuth.distNodeSrcModelPopupRedirectMod.AuthEventType
        with typings.firebaseAuth.distEsm5SrcModelPopupRedirectMod.AuthEventType
@@ -3462,6 +4053,7 @@ object firebaseAuthStrings {
   sealed trait reauthViaRedirect
     extends StObject
        with AuthEventType
+       with typings.firebaseAuth.distBrowserCjsSrcModelPopupRedirectMod.AuthEventType
        with typings.firebaseAuth.distNodeEsmSrcModelPopupRedirectMod.AuthEventType
        with typings.firebaseAuth.distNodeSrcModelPopupRedirectMod.AuthEventType
        with typings.firebaseAuth.distEsm5SrcModelPopupRedirectMod.AuthEventType
@@ -3475,6 +4067,7 @@ object firebaseAuthStrings {
   sealed trait reauthenticate
     extends StObject
        with OperationType
+       with typings.firebaseAuth.distRnSrcModelEnumsMod.OperationType
        with typings.firebaseAuth.distEsm5SrcModelEnumsMod.OperationType
        with typings.firebaseAuth.distSrcModelEnumsMod.OperationType
        with typings.firebaseAuth.distCordovaSrcModelEnumsMod.OperationType
@@ -3482,6 +4075,20 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distNodeSrcModelEnumsMod.OperationType
        with typings.firebaseAuth.distEsm2017SrcModelEnumsMod.OperationType
   inline def reauthenticate: reauthenticate = "reauthenticate".asInstanceOf[reauthenticate]
+  
+  @js.native
+  sealed trait `recaptcha-not-enabled`
+    extends StObject
+       with AuthErrorCode
+       with typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm5SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distRnSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distCordovaSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
+       with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
+  inline def `recaptcha-not-enabled`: `recaptcha-not-enabled` = "recaptcha-not-enabled".asInstanceOf[`recaptcha-not-enabled`]
   
   @js.native
   sealed trait `redirect-cancelled-by-user`
@@ -3494,6 +4101,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `redirect-cancelled-by-user`: `redirect-cancelled-by-user` = "redirect-cancelled-by-user".asInstanceOf[`redirect-cancelled-by-user`]
   
   @js.native
@@ -3507,6 +4115,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `redirect-operation-pending`: `redirect-operation-pending` = "redirect-operation-pending".asInstanceOf[`redirect-operation-pending`]
   
   @js.native
@@ -3516,6 +4125,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distRnSrcCorePersistencePersistenceUserManagerMod.KeyName
        with typings.firebaseAuth.distEsm5SrcCorePersistencePersistenceUserManagerMod.KeyName
        with typings.firebaseAuth.distNodeEsmSrcCorePersistencePersistenceUserManagerMod.KeyName
+       with typings.firebaseAuth.distBrowserCjsSrcCorePersistencePersistenceUserManagerMod.KeyName
        with typings.firebaseAuth.distEsm2017SrcCorePersistencePersistenceUserManagerMod.KeyName
        with typings.firebaseAuth.distCordovaSrcCorePersistencePersistenceUserManagerMod.KeyName
        with typings.firebaseAuth.distNodeSrcCorePersistencePersistenceUserManagerMod.KeyName
@@ -3532,6 +4142,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `rejected-credential`: `rejected-credential` = "rejected-credential".asInstanceOf[`rejected-credential`]
   
   @js.native
@@ -3545,6 +4156,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `requires-recent-login`: `requires-recent-login` = "requires-recent-login".asInstanceOf[`requires-recent-login`]
   
   @js.native
@@ -3558,6 +4170,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `second-factor-already-in-use`: `second-factor-already-in-use` = "second-factor-already-in-use".asInstanceOf[`second-factor-already-in-use`]
   
   @js.native
@@ -3567,6 +4180,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreAuthAuthImplMod.DefaultConfig
        with typings.firebaseAuth.distCordovaSrcCoreAuthAuthImplMod.DefaultConfig
        with typings.firebaseAuth.distRnSrcCoreAuthAuthImplMod.DefaultConfig
+       with typings.firebaseAuth.distBrowserCjsSrcCoreAuthAuthImplMod.DefaultConfig
        with typings.firebaseAuth.distEsm5SrcCoreAuthAuthImplMod.DefaultConfig
        with typings.firebaseAuth.distSrcCoreAuthAuthImplMod.DefaultConfig
        with typings.firebaseAuth.distNodeEsmSrcCoreAuthAuthImplMod.DefaultConfig
@@ -3576,6 +4190,7 @@ object firebaseAuthStrings {
   sealed trait signIn
     extends StObject
        with OperationType
+       with typings.firebaseAuth.distRnSrcModelEnumsMod.OperationType
        with typings.firebaseAuth.distEsm5SrcModelEnumsMod.OperationType
        with typings.firebaseAuth.distSrcModelEnumsMod.OperationType
        with typings.firebaseAuth.distCordovaSrcModelEnumsMod.OperationType
@@ -3588,6 +4203,7 @@ object firebaseAuthStrings {
   sealed trait signInViaPopup
     extends StObject
        with AuthEventType
+       with typings.firebaseAuth.distBrowserCjsSrcModelPopupRedirectMod.AuthEventType
        with typings.firebaseAuth.distNodeEsmSrcModelPopupRedirectMod.AuthEventType
        with typings.firebaseAuth.distNodeSrcModelPopupRedirectMod.AuthEventType
        with typings.firebaseAuth.distEsm5SrcModelPopupRedirectMod.AuthEventType
@@ -3601,6 +4217,7 @@ object firebaseAuthStrings {
   sealed trait signInViaRedirect
     extends StObject
        with AuthEventType
+       with typings.firebaseAuth.distBrowserCjsSrcModelPopupRedirectMod.AuthEventType
        with typings.firebaseAuth.distNodeEsmSrcModelPopupRedirectMod.AuthEventType
        with typings.firebaseAuth.distNodeSrcModelPopupRedirectMod.AuthEventType
        with typings.firebaseAuth.distEsm5SrcModelPopupRedirectMod.AuthEventType
@@ -3611,11 +4228,38 @@ object firebaseAuthStrings {
   inline def signInViaRedirect: signInViaRedirect = "signInViaRedirect".asInstanceOf[signInViaRedirect]
   
   @js.native
+  sealed trait signInWithPassword
+    extends StObject
+       with RecaptchaActionName
+       with typings.firebaseAuth.distSrcApiMod.RecaptchaActionName
+       with typings.firebaseAuth.distCordovaSrcApiMod.RecaptchaActionName
+       with typings.firebaseAuth.distEsm5SrcApiMod.RecaptchaActionName
+       with typings.firebaseAuth.distRnSrcApiMod.RecaptchaActionName
+       with typings.firebaseAuth.distEsm2017SrcApiMod.RecaptchaActionName
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.RecaptchaActionName
+       with typings.firebaseAuth.distNodeSrcApiMod.RecaptchaActionName
+  inline def signInWithPassword: signInWithPassword = "signInWithPassword".asInstanceOf[signInWithPassword]
+  
+  @js.native
+  sealed trait signUpPassword
+    extends StObject
+       with RecaptchaActionName
+       with typings.firebaseAuth.distSrcApiMod.RecaptchaActionName
+       with typings.firebaseAuth.distCordovaSrcApiMod.RecaptchaActionName
+       with typings.firebaseAuth.distEsm5SrcApiMod.RecaptchaActionName
+       with typings.firebaseAuth.distRnSrcApiMod.RecaptchaActionName
+       with typings.firebaseAuth.distEsm2017SrcApiMod.RecaptchaActionName
+       with typings.firebaseAuth.distBrowserCjsSrcApiMod.RecaptchaActionName
+       with typings.firebaseAuth.distNodeSrcApiMod.RecaptchaActionName
+  inline def signUpPassword: signUpPassword = "signUpPassword".asInstanceOf[signUpPassword]
+  
+  @js.native
   sealed trait signin_
     extends StObject
        with MultiFactorSessionType
        with typings.firebaseAuth.distNodeSrcMfaMfaSessionMod.MultiFactorSessionType
        with typings.firebaseAuth.distSrcMfaMfaSessionMod.MultiFactorSessionType
+       with typings.firebaseAuth.distBrowserCjsSrcMfaMfaSessionMod.MultiFactorSessionType
        with typings.firebaseAuth.distRnSrcMfaMfaSessionMod.MultiFactorSessionType
        with typings.firebaseAuth.distEsm2017SrcMfaMfaSessionMod.MultiFactorSessionType
        with typings.firebaseAuth.distNodeEsmSrcMfaMfaSessionMod.MultiFactorSessionType
@@ -3633,6 +4277,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `tenant-id-mismatch`: `tenant-id-mismatch` = "tenant-id-mismatch".asInstanceOf[`tenant-id-mismatch`]
   
   @js.native
@@ -3646,8 +4291,10 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
        with MessageError
        with typings.firebaseAuth.distRnSrcPlatformBrowserMessagechannelMod.MessageError
+       with typings.firebaseAuth.distBrowserCjsSrcPlatformBrowserMessagechannelMod.MessageError
        with typings.firebaseAuth.distCordovaSrcPlatformBrowserMessagechannelMod.MessageError
        with typings.firebaseAuth.distNodeSrcPlatformBrowserMessagechannelMod.MessageError
        with typings.firebaseAuth.distSrcPlatformBrowserMessagechannelMod.MessageError
@@ -3666,12 +4313,27 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `too-many-requests`: `too-many-requests` = "too-many-requests".asInstanceOf[`too-many-requests`]
+  
+  @js.native
+  sealed trait totp
+    extends StObject
+       with FactorId
+       with typings.firebaseAuth.distNodeEsmSrcModelPublicTypesMod.FactorId
+       with typings.firebaseAuth.distSrcModelPublicTypesMod.FactorId
+       with typings.firebaseAuth.distNodeSrcModelPublicTypesMod.FactorId
+       with typings.firebaseAuth.distEsm2017SrcModelPublicTypesMod.FactorId
+       with typings.firebaseAuth.distEsm5SrcModelPublicTypesMod.FactorId
+       with typings.firebaseAuth.distCordovaSrcModelPublicTypesMod.FactorId
+       with typings.firebaseAuth.distRnSrcModelPublicTypesMod.FactorId
+  inline def totp: totp = "totp".asInstanceOf[totp]
   
   @js.native
   sealed trait twitterDotcom
     extends StObject
        with ProviderId
+       with typings.firebaseAuth.distRnSrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distEsm5SrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distSrcModelEnumsMod.ProviderId
        with typings.firebaseAuth.distCordovaSrcModelEnumsMod.ProviderId
@@ -3680,6 +4342,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcModelEnumsMod.ProviderId
        with ProviderId2
        with SignInMethod
+       with typings.firebaseAuth.distRnSrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distEsm5SrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distSrcModelEnumsMod.SignInMethod
        with typings.firebaseAuth.distCordovaSrcModelEnumsMod.SignInMethod
@@ -3699,6 +4362,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `unauthorized-continue-uri`: `unauthorized-continue-uri` = "unauthorized-continue-uri".asInstanceOf[`unauthorized-continue-uri`]
   
   @js.native
@@ -3712,12 +4376,14 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `unauthorized-domain`: `unauthorized-domain` = "unauthorized-domain".asInstanceOf[`unauthorized-domain`]
   
   @js.native
   sealed trait unknown
     extends StObject
        with AuthEventType
+       with typings.firebaseAuth.distBrowserCjsSrcModelPopupRedirectMod.AuthEventType
        with typings.firebaseAuth.distNodeEsmSrcModelPopupRedirectMod.AuthEventType
        with typings.firebaseAuth.distNodeSrcModelPopupRedirectMod.AuthEventType
        with typings.firebaseAuth.distEsm5SrcModelPopupRedirectMod.AuthEventType
@@ -3732,6 +4398,7 @@ object firebaseAuthStrings {
     extends StObject
        with MessageError
        with typings.firebaseAuth.distRnSrcPlatformBrowserMessagechannelMod.MessageError
+       with typings.firebaseAuth.distBrowserCjsSrcPlatformBrowserMessagechannelMod.MessageError
        with typings.firebaseAuth.distCordovaSrcPlatformBrowserMessagechannelMod.MessageError
        with typings.firebaseAuth.distNodeSrcPlatformBrowserMessagechannelMod.MessageError
        with typings.firebaseAuth.distSrcPlatformBrowserMessagechannelMod.MessageError
@@ -3750,6 +4417,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `unsupported-first-factor`: `unsupported-first-factor` = "unsupported-first-factor".asInstanceOf[`unsupported-first-factor`]
   
   @js.native
@@ -3763,6 +4431,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `unsupported-persistence-type`: `unsupported-persistence-type` = "unsupported-persistence-type".asInstanceOf[`unsupported-persistence-type`]
   
   @js.native
@@ -3776,6 +4445,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `unsupported-tenant-operation`: `unsupported-tenant-operation` = "unsupported-tenant-operation".asInstanceOf[`unsupported-tenant-operation`]
   
   @js.native
@@ -3783,6 +4453,7 @@ object firebaseAuthStrings {
     extends StObject
        with MessageError
        with typings.firebaseAuth.distRnSrcPlatformBrowserMessagechannelMod.MessageError
+       with typings.firebaseAuth.distBrowserCjsSrcPlatformBrowserMessagechannelMod.MessageError
        with typings.firebaseAuth.distCordovaSrcPlatformBrowserMessagechannelMod.MessageError
        with typings.firebaseAuth.distNodeSrcPlatformBrowserMessagechannelMod.MessageError
        with typings.firebaseAuth.distSrcPlatformBrowserMessagechannelMod.MessageError
@@ -3801,6 +4472,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `unverified-email`: `unverified-email` = "unverified-email".asInstanceOf[`unverified-email`]
   
   @js.native
@@ -3814,6 +4486,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `user-cancelled`: `user-cancelled` = "user-cancelled".asInstanceOf[`user-cancelled`]
   
   @js.native
@@ -3827,6 +4500,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `user-disabled`: `user-disabled` = "user-disabled".asInstanceOf[`user-disabled`]
   
   @js.native
@@ -3840,6 +4514,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `user-mismatch`: `user-mismatch` = "user-mismatch".asInstanceOf[`user-mismatch`]
   
   @js.native
@@ -3853,6 +4528,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `user-not-found`: `user-not-found` = "user-not-found".asInstanceOf[`user-not-found`]
   
   @js.native
@@ -3866,6 +4542,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `user-signed-out`: `user-signed-out` = "user-signed-out".asInstanceOf[`user-signed-out`]
   
   @js.native
@@ -3879,12 +4556,14 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `user-token-expired`: `user-token-expired` = "user-token-expired".asInstanceOf[`user-token-expired`]
   
   @js.native
   sealed trait verifyApp
     extends StObject
        with AuthEventType
+       with typings.firebaseAuth.distBrowserCjsSrcModelPopupRedirectMod.AuthEventType
        with typings.firebaseAuth.distNodeEsmSrcModelPopupRedirectMod.AuthEventType
        with typings.firebaseAuth.distNodeSrcModelPopupRedirectMod.AuthEventType
        with typings.firebaseAuth.distEsm5SrcModelPopupRedirectMod.AuthEventType
@@ -3905,6 +4584,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `weak-password`: `weak-password` = "weak-password".asInstanceOf[`weak-password`]
   
   @js.native
@@ -3918,6 +4598,7 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `web-storage-unsupported`: `web-storage-unsupported` = "web-storage-unsupported".asInstanceOf[`web-storage-unsupported`]
   
   @js.native
@@ -3931,5 +4612,6 @@ object firebaseAuthStrings {
        with typings.firebaseAuth.distEsm2017SrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
        with typings.firebaseAuth.distAuthMod.AuthErrorCode
+       with typings.firebaseAuth.distBrowserCjsSrcCoreErrorsMod.AuthErrorCode
   inline def `wrong-password`: `wrong-password` = "wrong-password".asInstanceOf[`wrong-password`]
 }

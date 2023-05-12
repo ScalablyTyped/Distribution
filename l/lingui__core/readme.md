@@ -1,7 +1,7 @@
 
 # Scala.js typings for lingui__core
 
-Typings are for version 3.15.0
+Typings are for version 4.0.0
 
 ## Library description:
 I18n tools for javascript

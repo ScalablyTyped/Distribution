@@ -15,7 +15,7 @@ open class ShaderMaterial protected ()
     * Instantiate a new shader material.
     * The ShaderMaterial object has the necessary methods to pass data from your scene to the Vertex and Fragment Shaders and returns a material that can be applied to any mesh.
     * This returned material effects how the mesh will look based on the code in the shaders.
-    * @see https://doc.babylonjs.com/how_to/shader_material
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/shaders/shaderMaterial
     * @param name Define the name of the material in the scene
     * @param scene Define the scene the material belongs to
     * @param shaderPath Defines  the route to the shader code in one of three ways:
@@ -53,6 +53,42 @@ open class ShaderMaterial protected ()
     */
   /* CompleteClass */
   var animations: Nullable[js.Array[typings.babylonjs.BABYLON.Animation]] = js.native
+  
+  /**
+    * Gets or sets the active clipplane 1
+    */
+  /* CompleteClass */
+  var clipPlane: Nullable[typings.babylonjs.BABYLON.Plane] = js.native
+  
+  /**
+    * Gets or sets the active clipplane 2
+    */
+  /* CompleteClass */
+  var clipPlane2: Nullable[typings.babylonjs.BABYLON.Plane] = js.native
+  
+  /**
+    * Gets or sets the active clipplane 3
+    */
+  /* CompleteClass */
+  var clipPlane3: Nullable[typings.babylonjs.BABYLON.Plane] = js.native
+  
+  /**
+    * Gets or sets the active clipplane 4
+    */
+  /* CompleteClass */
+  var clipPlane4: Nullable[typings.babylonjs.BABYLON.Plane] = js.native
+  
+  /**
+    * Gets or sets the active clipplane 5
+    */
+  /* CompleteClass */
+  var clipPlane5: Nullable[typings.babylonjs.BABYLON.Plane] = js.native
+  
+  /**
+    * Gets or sets the active clipplane 6
+    */
+  /* CompleteClass */
+  var clipPlane6: Nullable[typings.babylonjs.BABYLON.Plane] = js.native
 }
 /* static members */
 object ShaderMaterial {

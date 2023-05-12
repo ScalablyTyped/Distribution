@@ -12,6 +12,11 @@ trait OptionGroup extends StObject {
   var AllowsVpcAndNonVpcInstanceMemberships: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Indicates when the option group was copied.
+    */
+  var CopyTimestamp: js.UndefOr[js.Date] = js.undefined
+  
+  /**
     * Indicates the name of the engine that this option group can be applied to.
     */
   var EngineName: js.UndefOr[String] = js.undefined
@@ -22,7 +27,7 @@ trait OptionGroup extends StObject {
   var MajorEngineVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) for the option group.
+    * Specifies the Amazon Resource Name (ARN) for the option group.
     */
   var OptionGroupArn: js.UndefOr[String] = js.undefined
   
@@ -42,6 +47,16 @@ trait OptionGroup extends StObject {
   var Options: js.UndefOr[OptionsList] = js.undefined
   
   /**
+    * Specifies the Amazon Web Services account ID for the option group from which this option group is copied.
+    */
+  var SourceAccountId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Specifies the name of the option group from which this option group is copied.
+    */
+  var SourceOptionGroup: js.UndefOr[String] = js.undefined
+  
+  /**
     * If AllowsVpcAndNonVpcInstanceMemberships is false, this field is blank. If AllowsVpcAndNonVpcInstanceMemberships is true and this field is blank, then this option group can be applied to both VPC and non-VPC instances. If this field contains a value, then this option group can only be applied to instances that are in the VPC indicated by this field.
     */
   var VpcId: js.UndefOr[String] = js.undefined
@@ -59,6 +74,10 @@ object OptionGroup {
     inline def setAllowsVpcAndNonVpcInstanceMemberships(value: Boolean): Self = StObject.set(x, "AllowsVpcAndNonVpcInstanceMemberships", value.asInstanceOf[js.Any])
     
     inline def setAllowsVpcAndNonVpcInstanceMembershipsUndefined: Self = StObject.set(x, "AllowsVpcAndNonVpcInstanceMemberships", js.undefined)
+    
+    inline def setCopyTimestamp(value: js.Date): Self = StObject.set(x, "CopyTimestamp", value.asInstanceOf[js.Any])
+    
+    inline def setCopyTimestampUndefined: Self = StObject.set(x, "CopyTimestamp", js.undefined)
     
     inline def setEngineName(value: String): Self = StObject.set(x, "EngineName", value.asInstanceOf[js.Any])
     
@@ -85,6 +104,14 @@ object OptionGroup {
     inline def setOptionsUndefined: Self = StObject.set(x, "Options", js.undefined)
     
     inline def setOptionsVarargs(value: Option*): Self = StObject.set(x, "Options", js.Array(value*))
+    
+    inline def setSourceAccountId(value: String): Self = StObject.set(x, "SourceAccountId", value.asInstanceOf[js.Any])
+    
+    inline def setSourceAccountIdUndefined: Self = StObject.set(x, "SourceAccountId", js.undefined)
+    
+    inline def setSourceOptionGroup(value: String): Self = StObject.set(x, "SourceOptionGroup", value.asInstanceOf[js.Any])
+    
+    inline def setSourceOptionGroupUndefined: Self = StObject.set(x, "SourceOptionGroup", js.undefined)
     
     inline def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     

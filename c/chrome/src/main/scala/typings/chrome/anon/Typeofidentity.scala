@@ -1,6 +1,7 @@
 package typings.chrome.anon
 
 import typings.chrome.chrome.identity.AccountInfo
+import typings.chrome.chrome.identity.GetAuthTokenResult
 import typings.chrome.chrome.identity.ProfileDetails
 import typings.chrome.chrome.identity.SignInChangeEvent
 import typings.chrome.chrome.identity.TokenDetails
@@ -14,14 +15,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Typeofidentity extends StObject {
   
+  def clearAllCachedAuthTokens(): js.Promise[Unit] = js.native
   def clearAllCachedAuthTokens(callback: js.Function0[Unit]): Unit = js.native
   
+  def getAccounts(): js.Promise[js.Array[AccountInfo]] = js.native
   def getAccounts(callback: js.Function1[/* accounts */ js.Array[AccountInfo], Unit]): Unit = js.native
   
-  def getAuthToken(details: TokenDetails): Unit = js.native
-  def getAuthToken(details: TokenDetails, callback: js.Function1[/* token */ String, Unit]): Unit = js.native
+  def getAuthToken(details: TokenDetails): js.Promise[GetAuthTokenResult] = js.native
+  def getAuthToken(
+    details: TokenDetails,
+    callback: js.Function2[
+      /* token */ js.UndefOr[String], 
+      /* grantedScopes */ js.UndefOr[js.Array[String]], 
+      Unit
+    ]
+  ): Unit = js.native
   
   def getProfileUserInfo(callback: js.Function1[/* userInfo */ UserInfo, Unit]): Unit = js.native
+  def getProfileUserInfo(details: ProfileDetails): js.Promise[UserInfo] = js.native
   def getProfileUserInfo(details: ProfileDetails, callback: js.Function1[/* userInfo */ UserInfo, Unit]): Unit = js.native
   
   def getRedirectURL(): String = js.native
@@ -32,6 +43,6 @@ trait Typeofidentity extends StObject {
   
   var onSignInChanged: SignInChangeEvent = js.native
   
-  def removeCachedAuthToken(details: TokenInformation): Unit = js.native
+  def removeCachedAuthToken(details: TokenInformation): js.Promise[Unit] = js.native
   def removeCachedAuthToken(details: TokenInformation, callback: js.Function0[Unit]): Unit = js.native
 }

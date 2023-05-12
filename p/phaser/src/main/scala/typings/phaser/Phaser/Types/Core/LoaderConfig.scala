@@ -22,6 +22,11 @@ trait LoaderConfig extends StObject {
   var crossOrigin: js.UndefOr[String] = js.undefined
   
   /**
+    * An optional array of schemes that the Loader considers as being 'local' files. Defaults to: `[ 'file://', 'capacitor://' ]` if not specified.
+    */
+  var localScheme: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /**
     * The maximum number of resources the loader will start loading at once.
     */
   var maxParallelDownloads: js.UndefOr[Double] = js.undefined
@@ -72,6 +77,12 @@ object LoaderConfig {
     inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
+    
+    inline def setLocalScheme(value: js.Array[String]): Self = StObject.set(x, "localScheme", value.asInstanceOf[js.Any])
+    
+    inline def setLocalSchemeUndefined: Self = StObject.set(x, "localScheme", js.undefined)
+    
+    inline def setLocalSchemeVarargs(value: String*): Self = StObject.set(x, "localScheme", js.Array(value*))
     
     inline def setMaxParallelDownloads(value: Double): Self = StObject.set(x, "maxParallelDownloads", value.asInstanceOf[js.Any])
     

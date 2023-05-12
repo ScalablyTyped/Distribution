@@ -7,35 +7,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DebugAdapterTracker extends StObject {
   
   /**
-    * The debug adapter has sent a Debug Adapter Protocol message to the editor.
-    */
+  		 * The debug adapter has sent a Debug Adapter Protocol message to the editor.
+  		 */
   var onDidSendMessage: js.UndefOr[js.Function1[/* message */ Any, Unit]] = js.undefined
   
   /**
-    * An error with the debug adapter has occurred.
-    */
+  		 * An error with the debug adapter has occurred.
+  		 */
   var onError: js.UndefOr[js.Function1[/* error */ js.Error, Unit]] = js.undefined
   
   /**
-    * The debug adapter has exited with the given exit code or signal.
-    */
+  		 * The debug adapter has exited with the given exit code or signal.
+  		 */
   var onExit: js.UndefOr[
     js.Function2[/* code */ js.UndefOr[Double], /* signal */ js.UndefOr[String], Unit]
   ] = js.undefined
   
   /**
-    * The debug adapter is about to receive a Debug Adapter Protocol message from the editor.
-    */
+  		 * The debug adapter is about to receive a Debug Adapter Protocol message from the editor.
+  		 */
   var onWillReceiveMessage: js.UndefOr[js.Function1[/* message */ Any, Unit]] = js.undefined
   
   /**
-    * A session with the debug adapter is about to be started.
-    */
+  		 * A session with the debug adapter is about to be started.
+  		 */
   var onWillStartSession: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
-    * The debug adapter session is about to be stopped.
-    */
+  		 * The debug adapter session is about to be stopped.
+  		 */
   var onWillStopSession: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object DebugAdapterTracker {

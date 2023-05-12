@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersPathTag extends StObject {
   
-  /** Get a published release with the specified tag. */
+  /**
+    * Get a release by tag name
+    * @description Get a published release with the specified tag.
+    */
   var get: ParametersPathTag
 }
 object GetParametersPathTag {

@@ -16,7 +16,7 @@ object libIconsZhihuCircleFilledMod extends Shortcut {
   @js.native
   trait ZhihuCircleFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_ZhihuCircleFilledIconType: String = js.native

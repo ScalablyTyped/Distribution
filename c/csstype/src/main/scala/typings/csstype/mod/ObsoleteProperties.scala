@@ -41,7 +41,6 @@ import typings.csstype.mod.Property.InsetInline
 import typings.csstype.mod.Property.InsetInlineEnd
 import typings.csstype.mod.Property.InsetInlineStart
 import typings.csstype.mod.Property.LineBreak
-import typings.csstype.mod.Property.MozBinding
 import typings.csstype.mod.Property.MozFloatEdge
 import typings.csstype.mod.Property.MozForceBrokenImageIcon
 import typings.csstype.mod.Property.MozOutlineRadius
@@ -249,17 +248,6 @@ trait ObsoleteProperties[TLength, TTime] extends StObject {
   var MozBackgroundSize: js.UndefOr[BackgroundSize[TLength]] = js.undefined
   
   /**
-    * The **`-moz-binding`** CSS property is used by Mozilla-based applications to attach an XBL binding to a DOM element.
-    *
-    * **Syntax**: `<url> | none`
-    *
-    * **Initial value**: `none`
-    *
-    * @deprecated
-    */
-  var MozBinding: js.UndefOr[typings.csstype.mod.Property.MozBinding] = js.undefined
-  
-  /**
     * The **`border-radius`** CSS property rounds the corners of an element's outer border edge. You can set a single radius to make circular corners, or two radii to make elliptical corners.
     *
     * **Syntax**: `<length-percentage>{1,4} [ / <length-percentage>{1,4} ]?`
@@ -423,7 +411,7 @@ trait ObsoleteProperties[TLength, TTime] extends StObject {
   var MozOpacity: js.UndefOr[Opacity] = js.undefined
   
   /**
-    * The **`outline`** CSS shorthand property set all the outline properties in a single declaration.
+    * The **`outline`** CSS shorthand property sets most of the outline properties in a single declaration.
     *
     * **Syntax**: `[ <'outline-color'> || <'outline-style'> || <'outline-width'> ]`
     *
@@ -637,7 +625,7 @@ trait ObsoleteProperties[TLength, TTime] extends StObject {
   var OAnimationIterationCount: js.UndefOr[AnimationIterationCount] = js.undefined
   
   /**
-    * The **`animation-name`** CSS property specifies the names of one or more `@keyframes` at-rules describing the animation or animations to apply to the element.
+    * The **`animation-name`** CSS property specifies the names of one or more `@keyframes` at-rules that describe the animation to apply to an element. Multiple `@keyframe` at-rules are specified as a comma-separated list of names. If the specified name does not match any `@keyframe` at-rule, no properties are animated.
     *
     * **Syntax**: `[ none | <keyframes-name> ]#`
     *
@@ -1049,7 +1037,7 @@ trait ObsoleteProperties[TLength, TTime] extends StObject {
   var gridGap: js.UndefOr[GridGap[TLength]] = js.undefined
   
   /**
-    * The **`row-gap`** CSS property sets the size of the gap (gutter) between an element's grid rows.
+    * The **`row-gap`** CSS property sets the size of the gap (gutter) between an element's rows.
     *
     * **Syntax**: `<length-percentage>`
     *
@@ -1086,8 +1074,6 @@ trait ObsoleteProperties[TLength, TTime] extends StObject {
     *
     * **Syntax**: `<'top'>{1,2}`
     *
-    * **Initial value**: `auto`
-    *
     * @deprecated
     */
   var offsetBlock: js.UndefOr[InsetBlock[TLength]] = js.undefined
@@ -1118,8 +1104,6 @@ trait ObsoleteProperties[TLength, TTime] extends StObject {
     * The **`inset-inline`** CSS property defines the logical start and end offsets of an element in the inline direction, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top` and `bottom`, or `right` and `left` properties depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Syntax**: `<'top'>{1,2}`
-    *
-    * **Initial value**: `auto`
     *
     * @deprecated
     */
@@ -1338,10 +1322,6 @@ object ObsoleteProperties {
     inline def setMozBackgroundSize(value: BackgroundSize[TLength]): Self = StObject.set(x, "MozBackgroundSize", value.asInstanceOf[js.Any])
     
     inline def setMozBackgroundSizeUndefined: Self = StObject.set(x, "MozBackgroundSize", js.undefined)
-    
-    inline def setMozBinding(value: MozBinding): Self = StObject.set(x, "MozBinding", value.asInstanceOf[js.Any])
-    
-    inline def setMozBindingUndefined: Self = StObject.set(x, "MozBinding", js.undefined)
     
     inline def setMozBorderRadius(value: BorderRadius[TLength]): Self = StObject.set(x, "MozBorderRadius", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for just-pick
 
-Typings are for version 4.1.1
+Typings are for version 4.2.0
 
 ## Library description:
 copy an object but with only the specified keys

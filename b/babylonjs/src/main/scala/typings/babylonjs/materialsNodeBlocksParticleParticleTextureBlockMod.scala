@@ -2,6 +2,7 @@ package typings.babylonjs
 
 import typings.babylonjs.materialsNodeNodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPoint
 import typings.babylonjs.materialsNodeNodeMaterialBlockMod.NodeMaterialBlock
+import typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterialTextureBlocks
 import typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
@@ -12,7 +13,9 @@ object materialsNodeBlocksParticleParticleTextureBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Particle/particleTextureBlock", "ParticleTextureBlock")
   @js.native
-  open class ParticleTextureBlock protected () extends NodeMaterialBlock {
+  open class ParticleTextureBlock protected ()
+    extends NodeMaterialBlock
+       with NodeMaterialTextureBlocks {
     /**
       * Create a new ParticleTextureBlock
       * @param name defines the block name

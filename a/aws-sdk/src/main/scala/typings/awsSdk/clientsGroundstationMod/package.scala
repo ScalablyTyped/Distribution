@@ -9,6 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type AWSRegion = java.lang.String
 
+type AgentCpuCoresList = js.Array[Integer]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SUCCESS
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - typings.awsSdk.awsSdkStrings.INACTIVE
+  - java.lang.String
+*/
+type AgentStatus = _AgentStatus | java.lang.String
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DEGREE_ANGLE
   - typings.awsSdk.awsSdkStrings.RADIAN
@@ -17,6 +28,13 @@ type AWSRegion = java.lang.String
 type AngleUnits = _AngleUnits | java.lang.String
 
 type AnyArn = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.HEALTHY
+  - typings.awsSdk.awsSdkStrings.UNHEALTHY
+  - java.lang.String
+*/
+type AuditResults = _AuditResults | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.GHz
@@ -29,6 +47,37 @@ type BandwidthUnits = _BandwidthUnits | java.lang.String
 type Boolean = scala.Boolean
 
 type BucketArn = java.lang.String
+
+type CapabilityArn = java.lang.String
+
+type CapabilityArnList = js.Array[CapabilityArn]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.UNHEALTHY
+  - typings.awsSdk.awsSdkStrings.HEALTHY
+  - java.lang.String
+*/
+type CapabilityHealth = _CapabilityHealth | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NO_REGISTERED_AGENT
+  - typings.awsSdk.awsSdkStrings.INVALID_IP_OWNERSHIP
+  - typings.awsSdk.awsSdkStrings.NOT_AUTHORIZED_TO_CREATE_SLR
+  - typings.awsSdk.awsSdkStrings.UNVERIFIED_IP_OWNERSHIP
+  - typings.awsSdk.awsSdkStrings.INITIALIZING_DATAPLANE
+  - typings.awsSdk.awsSdkStrings.DATAPLANE_FAILURE
+  - typings.awsSdk.awsSdkStrings.HEALTHY
+  - java.lang.String
+*/
+type CapabilityHealthReason = _CapabilityHealthReason | java.lang.String
+
+type CapabilityHealthReasonList = js.Array[CapabilityHealthReason]
+
+type ComponentStatusList = js.Array[ComponentStatusData]
+
+type ComponentTypeString = java.lang.String
+
+type ComponentVersionList = js.Array[ComponentVersion]
 
 type ConfigArn = java.lang.String
 
@@ -81,6 +130,8 @@ type DataflowEdge = js.Array[ConfigArn]
 type DataflowEdgeList = js.Array[DataflowEdge]
 
 type DataflowEndpointGroupArn = java.lang.String
+
+type DataflowEndpointGroupDurationInSeconds = scala.Double
 
 type DataflowEndpointGroupList = js.Array[DataflowEndpointListItem]
 
@@ -154,11 +205,23 @@ type GroundStationList = js.Array[GroundStationData]
 
 type GroundStationName = java.lang.String
 
+type InstanceId = java.lang.String
+
+type InstanceType = java.lang.String
+
 type Integer = scala.Double
+
+type IpAddressList = js.Array[IpV4Address]
+
+type IpV4Address = java.lang.String
 
 type JsonString = java.lang.String
 
+type KeyAliasArn = java.lang.String
+
 type KeyArn = java.lang.String
+
+type Long = scala.Double
 
 type MissionProfileArn = java.lang.String
 
@@ -180,6 +243,8 @@ type Polarization = _Polarization | java.lang.String
 
 type PositiveDurationInSeconds = scala.Double
 
+type RangedConnectionDetailsMtuInteger = scala.Double
+
 type RoleArn = java.lang.String
 
 type S3BucketName = java.lang.String
@@ -195,6 +260,8 @@ type SafeName = java.lang.String
 type SatelliteList = js.Array[SatelliteListItem]
 
 type SecurityGroupIdList = js.Array[String]
+
+type SignatureMap = StringDictionary[Boolean]
 
 type StatusList = js.Array[ContactStatus]
 
@@ -217,6 +284,10 @@ type TleLineTwo = java.lang.String
 type UnboundedString = java.lang.String
 
 type Uuid = java.lang.String
+
+type VersionString = java.lang.String
+
+type VersionStringList = js.Array[VersionString]
 
 type Year = scala.Double
 

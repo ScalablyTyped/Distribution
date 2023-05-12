@@ -11,6 +11,12 @@ sealed trait ConnectionStateType extends StObject
 @js.native
 object ConnectionStateType extends StObject {
   
+  /** The connection is in barge mode */
+  @js.native
+  sealed trait BARGE
+    extends StObject
+       with ConnectionStateType
+  
   /** The connection is connected to the contact. */
   @js.native
   sealed trait CONNECTED
@@ -38,6 +44,12 @@ object ConnectionStateType extends StObject {
   /** The connection has not yet been initialized. */
   @js.native
   sealed trait INIT
+    extends StObject
+       with ConnectionStateType
+  
+  /** The connection is in silent monitor mode */
+  @js.native
+  sealed trait SILENT_MONITOR
     extends StObject
        with ConnectionStateType
 }

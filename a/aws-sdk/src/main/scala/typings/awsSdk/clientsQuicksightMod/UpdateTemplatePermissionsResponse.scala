@@ -29,7 +29,7 @@ trait UpdateTemplatePermissionsResponse extends StObject {
   /**
     * The ID for the template.
     */
-  var TemplateId: js.UndefOr[RestrictiveResourceId] = js.undefined
+  var TemplateId: js.UndefOr[ShortRestrictiveResourceId] = js.undefined
 }
 object UpdateTemplatePermissionsResponse {
   
@@ -59,7 +59,7 @@ object UpdateTemplatePermissionsResponse {
     
     inline def setTemplateArnUndefined: Self = StObject.set(x, "TemplateArn", js.undefined)
     
-    inline def setTemplateId(value: RestrictiveResourceId): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
+    inline def setTemplateId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
     
     inline def setTemplateIdUndefined: Self = StObject.set(x, "TemplateId", js.undefined)
   }

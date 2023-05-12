@@ -1,9 +1,15 @@
 package typings.ipfsUnixfsImporter
 
-import typings.ipfsUnixfs.distSrcTypesMod.Mtime
+import typings.ipfsUnixfs.mod.Mtime
 import typings.ipfsUnixfs.mod.UnixFS
-import typings.ipfsUnixfsImporter.anon.Key
+import typings.ipfsUnixfsImporter.anon.Child
+import typings.ipfsUnixfsImporter.distSrcUtilsPersistMod.PersistOptions
+import typings.ipfsUnixfsImporter.mod.ImportResult
+import typings.ipfsUnixfsImporter.mod.InProgressImportResult
+import typings.ipfsUnixfsImporter.mod.WritableStorage
+import typings.multiformats.cidMod.CID
 import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
+import typings.std.AsyncGenerator
 import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,94 +17,44 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distSrcDirMod {
   
-  /**
-    * @typedef {import('./types').ImporterOptions} ImporterOptions
-    * @typedef {import('./types').ImportResult} ImportResult
-    * @typedef {import('./types').InProgressImportResult} InProgressImportResult
-    * @typedef {import('interface-blockstore').Blockstore} Blockstore
-    * @typedef {import('multiformats/cid').CID} CID
-    *
-    * @typedef {object} DirProps
-    * @property {boolean} root
-    * @property {boolean} dir
-    * @property {string} path
-    * @property {boolean} dirty
-    * @property {boolean} flat
-    * @property {Dir} [parent]
-    * @property {string} [parentKey]
-    * @property {import('ipfs-unixfs').UnixFS} [unixfs]
-    * @property {number} [mode]
-    * @property {import('ipfs-unixfs').Mtime} [mtime]
-    */
-  @JSImport("ipfs-unixfs-importer/dist/src/dir", JSImport.Default)
+  @JSImport("ipfs-unixfs-importer/dist/src/dir", "CID_V0")
   @js.native
-  open class default protected ()
-    extends StObject
-       with Dir {
-    /**
-      * @param {DirProps} props
-      * @param {ImporterOptions} options
-      */
-    def this(props: DirProps, options: ImporterOptions) = this()
-  }
+  val CID_V0: CID[Any, Double, Double, Version] = js.native
   
-  type Blockstore = typings.interfaceBlockstore.mod.Blockstore
-  
-  type CID = typings.multiformats.cidMod.CID[Any, Double, Double, Version]
-  
-  /**
-    * @typedef {import('./types').ImporterOptions} ImporterOptions
-    * @typedef {import('./types').ImportResult} ImportResult
-    * @typedef {import('./types').InProgressImportResult} InProgressImportResult
-    * @typedef {import('interface-blockstore').Blockstore} Blockstore
-    * @typedef {import('multiformats/cid').CID} CID
-    *
-    * @typedef {object} DirProps
-    * @property {boolean} root
-    * @property {boolean} dir
-    * @property {string} path
-    * @property {boolean} dirty
-    * @property {boolean} flat
-    * @property {Dir} [parent]
-    * @property {string} [parentKey]
-    * @property {import('ipfs-unixfs').UnixFS} [unixfs]
-    * @property {number} [mode]
-    * @property {import('ipfs-unixfs').Mtime} [mtime]
-    */
+  @JSImport("ipfs-unixfs-importer/dist/src/dir", "CID_V1")
   @js.native
-  trait Dir extends StObject {
+  val CID_V1: CID[Any, Double, Double, Version] = js.native
+  
+  /* note: abstract class */ @JSImport("ipfs-unixfs-importer/dist/src/dir", "Dir")
+  @js.native
+  open class Dir protected () extends StObject {
+    def this(props: DirProps, options: PersistOptions) = this()
     
-    /** @type {CID | undefined} */
-    var cid: js.UndefOr[CID] = js.native
+    def childCount(): Double = js.native
+    
+    var cid: js.UndefOr[CID[Any, Double, Double, Version]] = js.native
     
     var dir: Boolean = js.native
     
     var dirty: Boolean = js.native
     
-    /**
-      * @returns {AsyncIterable<{ key: string, child: InProgressImportResult | Dir}>}
-      */
-    def eachChildSeries(): AsyncIterable[Key] = js.native
+    def eachChildSeries(): AsyncIterable[Child] = js.native
+    
+    def estimateNodeSize(): Double = js.native
     
     var flat: Boolean = js.native
     
-    /**
-      * @param {Blockstore} blockstore
-      * @returns {AsyncIterable<ImportResult>}
-      */
-    def flush(blockstore: Blockstore): AsyncIterable[ImportResult] = js.native
+    def flush(blockstore: WritableStorage): AsyncGenerator[ImportResult, Any, Any] = js.native
     
-    /**
-      * @param {string} name
-      * @returns {Promise<InProgressImportResult | Dir | undefined>}
-      */
     def get(name: String): js.Promise[js.UndefOr[InProgressImportResult | Dir]] = js.native
     
     var mode: js.UndefOr[Double] = js.native
     
     var mtime: js.UndefOr[Mtime] = js.native
     
-    var options: typings.ipfsUnixfsImporter.distSrcTypesMod.ImporterOptions = js.native
+    var nodeSize: js.UndefOr[Double] = js.native
+    
+    var options: PersistOptions = js.native
     
     var parent: js.UndefOr[Dir] = js.native
     
@@ -107,15 +63,10 @@ object distSrcDirMod {
     var path: String = js.native
     
     def put(name: String, value: Dir): js.Promise[Unit] = js.native
-    /**
-      * @param {string} name
-      * @param {InProgressImportResult | Dir} value
-      */
     def put(name: String, value: InProgressImportResult): js.Promise[Unit] = js.native
     
     var root: Boolean = js.native
     
-    /** @type {number | undefined} */
     var size: js.UndefOr[Double] = js.native
     
     var unixfs: js.UndefOr[UnixFS] = js.native
@@ -184,10 +135,4 @@ object distSrcDirMod {
       inline def setUnixfsUndefined: Self = StObject.set(x, "unixfs", js.undefined)
     }
   }
-  
-  type ImportResult = typings.ipfsUnixfsImporter.distSrcTypesMod.ImportResult
-  
-  type ImporterOptions = typings.ipfsUnixfsImporter.distSrcTypesMod.ImporterOptions
-  
-  type InProgressImportResult = typings.ipfsUnixfsImporter.distSrcTypesMod.InProgressImportResult
 }

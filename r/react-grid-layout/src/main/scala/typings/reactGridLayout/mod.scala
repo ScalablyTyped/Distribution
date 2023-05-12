@@ -39,7 +39,7 @@ object mod {
     def this(props: ResponsiveProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ResponsiveProps, context: Any) = this()
   }

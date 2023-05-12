@@ -27,7 +27,7 @@ trait GPUQueue
     * values, as copying into the corresponding non-`-srgb` format.
     * Thus, after a copy operation, sampling the destination texture has
     * different results depending on whether its format is `-srgb`, all else unchanged.
-    * Issue: If an srgb-linear color space is added, explain here how it interacts.
+    * <!-- POSTV1(srgb-linear): If added, explain here how it interacts. -->
     * @param source - source image and origin to copy to `destination`.
     * @param destination - The texture subresource and origin to write to, and its encoding metadata.
     * @param copySize - Extents of the content to write from `source` to `destination`.

@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__peer-collections
 
-Typings are for version 2.2.0
+Typings are for version 3.0.1
 
 ## Library description:
 Stores values against a peer id

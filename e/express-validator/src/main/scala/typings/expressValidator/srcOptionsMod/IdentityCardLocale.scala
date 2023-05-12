@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.expressValidator.expressValidatorStrings.ES
   - typings.expressValidator.expressValidatorStrings.FI
   - typings.expressValidator.expressValidatorStrings.`he-IL`
+  - typings.expressValidator.expressValidatorStrings.`hk-HK`
   - typings.expressValidator.expressValidatorStrings.IN
   - typings.expressValidator.expressValidatorStrings.IT
   - typings.expressValidator.expressValidatorStrings.IR
@@ -49,6 +50,8 @@ object IdentityCardLocale {
   inline def `ar-TN`: typings.expressValidator.expressValidatorStrings.`ar-TN` = "ar-TN".asInstanceOf[typings.expressValidator.expressValidatorStrings.`ar-TN`]
   
   inline def `he-IL`: typings.expressValidator.expressValidatorStrings.`he-IL` = "he-IL".asInstanceOf[typings.expressValidator.expressValidatorStrings.`he-IL`]
+  
+  inline def `hk-HK`: typings.expressValidator.expressValidatorStrings.`hk-HK` = "hk-HK".asInstanceOf[typings.expressValidator.expressValidatorStrings.`hk-HK`]
   
   inline def `zh-CN`: typings.expressValidator.expressValidatorStrings.`zh-CN` = "zh-CN".asInstanceOf[typings.expressValidator.expressValidatorStrings.`zh-CN`]
   

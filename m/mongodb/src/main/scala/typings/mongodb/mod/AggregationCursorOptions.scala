@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.mongodb.mod.BSONSerializeOptions because Already inherited
-- typings.mongodb.mod.OperationOptions because var conflicts: bsonRegExp, checkKeys, enableUtf8Validation, fieldsAsRaw, ignoreUndefined, promoteBuffers, promoteLongs, promoteValues, raw, readPreference, serializeFunctions, session. Inlined willRetryWrite, omitReadPreference
-- typings.mongodb.mod.CommandOperationOptions because var conflicts: bsonRegExp, checkKeys, collation, comment, enableUtf8Validation, fieldsAsRaw, ignoreUndefined, maxTimeMS, promoteBuffers, promoteLongs, promoteValues, raw, readConcern, readPreference, serializeFunctions, session. Inlined fullResponse, retryWrites, dbName, authdb, noResponse
-- typings.mongodb.mod.AggregateOptions because var conflicts: batchSize, bsonRegExp, checkKeys, comment, enableUtf8Validation, fieldsAsRaw, ignoreUndefined, maxAwaitTimeMS, maxTimeMS, promoteBuffers, promoteLongs, promoteValues, raw, readConcern, readPreference, serializeFunctions, session. Inlined allowDiskUse, bypassDocumentValidation, cursor, collation, hint, let, out */ trait AggregationCursorOptions
+- typings.mongodb.mod.OperationOptions because var conflicts: bsonRegExp, checkKeys, enableUtf8Validation, fieldsAsRaw, ignoreUndefined, promoteBuffers, promoteLongs, promoteValues, raw, readPreference, serializeFunctions, session, useBigInt64. Inlined willRetryWrite, omitReadPreference
+- typings.mongodb.mod.CommandOperationOptions because var conflicts: bsonRegExp, checkKeys, collation, comment, enableUtf8Validation, fieldsAsRaw, ignoreUndefined, maxTimeMS, promoteBuffers, promoteLongs, promoteValues, raw, readConcern, readPreference, serializeFunctions, session, useBigInt64. Inlined retryWrites, dbName, authdb, noResponse
+- typings.mongodb.mod.AggregateOptions because var conflicts: batchSize, bsonRegExp, checkKeys, comment, enableUtf8Validation, fieldsAsRaw, ignoreUndefined, maxAwaitTimeMS, maxTimeMS, promoteBuffers, promoteLongs, promoteValues, raw, readConcern, readPreference, serializeFunctions, session, useBigInt64. Inlined allowDiskUse, bypassDocumentValidation, cursor, collation, hint, let, out */ trait AggregationCursorOptions
   extends StObject
      with AbstractCursorOptions
      with WriteConcernOptions
@@ -30,9 +30,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var cursor: js.UndefOr[Document] = js.undefined
   
   var dbName: js.UndefOr[String] = js.undefined
-  
-  /** @deprecated This option does nothing */
-  var fullResponse: js.UndefOr[Boolean] = js.undefined
   
   /** Add an index selection hint to an aggregation command */
   var hint: js.UndefOr[Hint] = js.undefined
@@ -85,10 +82,6 @@ object AggregationCursorOptions {
     inline def setDbName(value: String): Self = StObject.set(x, "dbName", value.asInstanceOf[js.Any])
     
     inline def setDbNameUndefined: Self = StObject.set(x, "dbName", js.undefined)
-    
-    inline def setFullResponse(value: Boolean): Self = StObject.set(x, "fullResponse", value.asInstanceOf[js.Any])
-    
-    inline def setFullResponseUndefined: Self = StObject.set(x, "fullResponse", js.undefined)
     
     inline def setHint(value: Hint): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.TextAlignLast
+import typings.csstype.mod.Property.FontSynthesis
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `259` extends StObject {
   
   var value: js.UndefOr[
-    TextAlignLast | (js.Array[
+    FontSynthesis | (js.Array[
       (Extract[
-        js.UndefOr[TextAlignLast | js.Array[NonNullable[js.UndefOr[TextAlignLast]]]], 
+        js.UndefOr[FontSynthesis | js.Array[NonNullable[js.UndefOr[FontSynthesis]]]], 
         String
-      ]) | NonNullable[js.UndefOr[TextAlignLast]]
+      ]) | NonNullable[js.UndefOr[FontSynthesis]]
     ])
   ] = js.native
 }

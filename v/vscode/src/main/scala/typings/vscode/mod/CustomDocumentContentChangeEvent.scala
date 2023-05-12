@@ -5,16 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Event triggered by extensions to signal to the editor that the content of a {@linkcode CustomDocument}
-  * has changed.
-  *
-  * @see {@linkcode CustomEditorProvider.onDidChangeCustomDocument}.
-  */
+	 * Event triggered by extensions to signal to the editor that the content of a {@linkcode CustomDocument}
+	 * has changed.
+	 *
+	 * @see {@linkcode CustomEditorProvider.onDidChangeCustomDocument}.
+	 */
 trait CustomDocumentContentChangeEvent[T /* <: CustomDocument */] extends StObject {
   
   /**
-    * The document that the change is for.
-    */
+  		 * The document that the change is for.
+  		 */
   val document: T
 }
 object CustomDocumentContentChangeEvent {

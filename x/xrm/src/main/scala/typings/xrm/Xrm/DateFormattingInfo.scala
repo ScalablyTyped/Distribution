@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Interface for UserSettings.dateFormattingInfo response
+  * Interface for {@link UserSettings UserSettings.dateFormattingInfo} response
   */
 trait DateFormattingInfo extends StObject {
   

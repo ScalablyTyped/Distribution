@@ -12,17 +12,17 @@ trait CreateEnvironmentRequest extends StObject {
   var clientToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The description of the environment.
+    * The description of the runtime environment.
     */
   var description: js.UndefOr[EntityDescription] = js.undefined
   
   /**
-    * The engine type for the environment.
+    * The engine type for the runtime environment.
     */
   var engineType: EngineType
   
   /**
-    * The version of the engine type for the environment.
+    * The version of the engine type for the runtime environment.
     */
   var engineVersion: js.UndefOr[EngineVersion] = js.undefined
   
@@ -32,42 +32,47 @@ trait CreateEnvironmentRequest extends StObject {
   var highAvailabilityConfig: js.UndefOr[HighAvailabilityConfig] = js.undefined
   
   /**
-    * The type of instance for the environment.
+    * The type of instance for the runtime environment.
     */
   var instanceType: String20
   
   /**
-    * The unique identifier of the environment.
+    * The identifier of a customer managed key.
+    */
+  var kmsKeyId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The name of the runtime environment. Must be unique within the account.
     */
   var name: EntityName
   
   /**
-    * Configures a desired maintenance window for the environment. If you do not provide a value, a random system-generated value will be assigned.
+    * Configures the maintenance window you want for the runtime environment. If you do not provide a value, a random system-generated value will be assigned.
     */
   var preferredMaintenanceWindow: js.UndefOr[String50] = js.undefined
   
   /**
-    * Specifies whether the environment is publicly accessible.
+    * Specifies whether the runtime environment is publicly accessible.
     */
   var publiclyAccessible: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The list of security groups for the VPC associated with this environment.
+    * The list of security groups for the VPC associated with this runtime environment.
     */
   var securityGroupIds: js.UndefOr[String50List] = js.undefined
   
   /**
-    * Optional. The storage configurations for this environment.
+    * Optional. The storage configurations for this runtime environment.
     */
   var storageConfigurations: js.UndefOr[StorageConfigurationList] = js.undefined
   
   /**
-    * The list of subnets associated with the VPC for this environment.
+    * The list of subnets associated with the VPC for this runtime environment.
     */
   var subnetIds: js.UndefOr[String50List] = js.undefined
   
   /**
-    * The tags for the environment.
+    * The tags for the runtime environment.
     */
   var tags: js.UndefOr[TagMap] = js.undefined
 }
@@ -100,6 +105,10 @@ object CreateEnvironmentRequest {
     inline def setHighAvailabilityConfigUndefined: Self = StObject.set(x, "highAvailabilityConfig", js.undefined)
     
     inline def setInstanceType(value: String20): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+    
+    inline def setKmsKeyId(value: String): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+    
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
     
     inline def setName(value: EntityName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

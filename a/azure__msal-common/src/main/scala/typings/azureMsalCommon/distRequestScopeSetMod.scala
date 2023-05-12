@@ -102,6 +102,13 @@ object distRequestScopeSetMod {
     val ^ : js.Any = js.native
     
     /**
+      * Creates the set of scopes to search for in cache lookups
+      * @param inputScopeString
+      * @returns
+      */
+    inline def createSearchScopes(inputScopeString: js.Array[String]): ScopeSet = ^.asInstanceOf[js.Dynamic].applyDynamic("createSearchScopes")(inputScopeString.asInstanceOf[js.Any]).asInstanceOf[ScopeSet]
+    
+    /**
       * Factory method to create ScopeSet from space-delimited string
       * @param inputScopeString
       * @param appClientId

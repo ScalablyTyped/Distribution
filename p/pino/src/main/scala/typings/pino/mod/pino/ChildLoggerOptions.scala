@@ -15,6 +15,8 @@ trait ChildLoggerOptions extends StObject {
   
   var level: js.UndefOr[Level | String] = js.undefined
   
+  var msgPrefix: js.UndefOr[String] = js.undefined
+  
   var redact: js.UndefOr[js.Array[String] | redactOptions] = js.undefined
   
   var serializers: js.UndefOr[StringDictionary[SerializerFn]] = js.undefined
@@ -40,6 +42,10 @@ object ChildLoggerOptions {
     inline def setLevel(value: Level | String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    
+    inline def setMsgPrefix(value: String): Self = StObject.set(x, "msgPrefix", value.asInstanceOf[js.Any])
+    
+    inline def setMsgPrefixUndefined: Self = StObject.set(x, "msgPrefix", js.undefined)
     
     inline def setRedact(value: js.Array[String] | redactOptions): Self = StObject.set(x, "redact", value.asInstanceOf[js.Any])
     

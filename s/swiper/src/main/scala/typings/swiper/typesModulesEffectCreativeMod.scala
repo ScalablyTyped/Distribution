@@ -1,6 +1,5 @@
 package typings.swiper
 
-import typings.swiper.typesSharedMod.CSSSelector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -88,13 +87,6 @@ object typesModulesEffectCreativeMod {
       * @default false
       */
     var shadowPerProgress: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * CSS selector of the element inside of the slide to transform instead of the slide itself. Useful to use with cssMode
-      *
-      * @default null
-      */
-    var transformEl: js.UndefOr[CSSSelector] = js.undefined
   }
   object CreativeEffectOptions {
     
@@ -129,10 +121,6 @@ object typesModulesEffectCreativeMod {
       inline def setShadowPerProgress(value: Boolean): Self = StObject.set(x, "shadowPerProgress", value.asInstanceOf[js.Any])
       
       inline def setShadowPerProgressUndefined: Self = StObject.set(x, "shadowPerProgress", js.undefined)
-      
-      inline def setTransformEl(value: CSSSelector): Self = StObject.set(x, "transformEl", value.asInstanceOf[js.Any])
-      
-      inline def setTransformElUndefined: Self = StObject.set(x, "transformEl", js.undefined)
     }
   }
   

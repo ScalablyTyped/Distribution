@@ -35,7 +35,7 @@ type AcceleratorNames = js.Array[AcceleratorName]
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.gpu_
   - typings.awsSdk.awsSdkStrings.fpga
-  - typings.awsSdk.awsSdkStrings.inference
+  - typings.awsSdk.awsSdkStrings.inference_
   - java.lang.String
 */
 type AcceleratorType = _AcceleratorType | String
@@ -57,6 +57,8 @@ type AllowedInstanceTypes = js.Array[AllowedInstanceType]
 type AsciiStringMaxLen255 = String
 
 type AssociatePublicIpAddress = Boolean
+
+type AutoRollback = Boolean
 
 type AutoScalingGroupDesiredCapacity = Double
 
@@ -198,6 +200,9 @@ type InstanceRefreshIds = js.Array[XmlStringMaxLen255]
   - typings.awsSdk.awsSdkStrings.Failed_
   - typings.awsSdk.awsSdkStrings.Cancelling_
   - typings.awsSdk.awsSdkStrings.Cancelled_
+  - typings.awsSdk.awsSdkStrings.RollbackInProgress
+  - typings.awsSdk.awsSdkStrings.RollbackFailed
+  - typings.awsSdk.awsSdkStrings.RollbackSuccessful
   - java.lang.String
 */
 type InstanceRefreshStatus = _InstanceRefreshStatus | String
@@ -239,7 +244,7 @@ type LifecycleHooks = js.Array[LifecycleHook]
   - typings.awsSdk.awsSdkStrings.Detaching_
   - typings.awsSdk.awsSdkStrings.Detached_
   - typings.awsSdk.awsSdkStrings.EnteringStandby
-  - typings.awsSdk.awsSdkStrings.Standby_
+  - typings.awsSdk.awsSdkStrings.Standby__
   - typings.awsSdk.awsSdkStrings.WarmedColonPending
   - typings.awsSdk.awsSdkStrings.WarmedColonPendingColonWait
   - typings.awsSdk.awsSdkStrings.WarmedColonPendingColonProceed
@@ -442,6 +447,14 @@ type ReturnData = Boolean
 type ReuseOnScaleIn = Boolean
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Refresh
+  - typings.awsSdk.awsSdkStrings.Ignore_
+  - typings.awsSdk.awsSdkStrings.Wait_
+  - java.lang.String
+*/
+type ScaleInProtectedInstances = _ScaleInProtectedInstances | String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PendingSpotBidPlacement
   - typings.awsSdk.awsSdkStrings.WaitingForSpotInstanceRequestId
   - typings.awsSdk.awsSdkStrings.WaitingForSpotInstanceId
@@ -454,6 +467,7 @@ type ReuseOnScaleIn = Boolean
   - typings.awsSdk.awsSdkStrings.Successful_
   - typings.awsSdk.awsSdkStrings.Failed_
   - typings.awsSdk.awsSdkStrings.Cancelled_
+  - typings.awsSdk.awsSdkStrings.WaitingForConnectionDraining
   - java.lang.String
 */
 type ScalingActivityStatusCode = _ScalingActivityStatusCode | String
@@ -480,6 +494,14 @@ type SpotInstancePools = Double
 
 type SpotPrice = String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Terminate_
+  - typings.awsSdk.awsSdkStrings.Ignore_
+  - typings.awsSdk.awsSdkStrings.Wait_
+  - java.lang.String
+*/
+type StandbyInstances = _StandbyInstances | String
+
 type StepAdjustments = js.Array[StepAdjustment]
 
 type SuspendedProcesses = js.Array[SuspendedProcess]
@@ -494,9 +516,15 @@ type Tags = js.Array[Tag]
 
 type TargetGroupARNs = js.Array[XmlStringMaxLen511]
 
+type TargetTrackingMetricDataQueries = js.Array[TargetTrackingMetricDataQuery]
+
 type TerminationPolicies = js.Array[XmlStringMaxLen1600]
 
 type TimestampType = js.Date
+
+type TrafficSourceStates = js.Array[TrafficSourceState]
+
+type TrafficSources = js.Array[TrafficSourceIdentifier]
 
 type Values = js.Array[XmlString]
 

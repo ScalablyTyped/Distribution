@@ -17,7 +17,7 @@ trait ExecutionStartedEventDetails extends StObject {
   var inputDetails: js.UndefOr[HistoryEventExecutionDataDetails] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the IAM role used for executing AWS Lambda tasks.
+    * The Amazon Resource Name (ARN) of the IAM role used for executing Lambda tasks.
     */
   var roleArn: js.UndefOr[Arn] = js.undefined
 }

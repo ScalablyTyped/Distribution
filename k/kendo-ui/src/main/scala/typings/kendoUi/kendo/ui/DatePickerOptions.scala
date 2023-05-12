@@ -34,6 +34,8 @@ trait DatePickerOptions
   
   var format: js.UndefOr[String] = js.undefined
   
+  var label: js.UndefOr[String | js.Function | BaseLabel] = js.undefined
+  
   var max: js.UndefOr[js.Date] = js.undefined
   
   var messages: js.UndefOr[DatePickerMessages] = js.undefined
@@ -119,6 +121,10 @@ object DatePickerOptions {
     inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setLabel(value: String | js.Function | BaseLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     inline def setMax(value: js.Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

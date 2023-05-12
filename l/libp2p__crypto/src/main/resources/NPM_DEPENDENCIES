@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@libp2p/crypto" : "1.0.7"
+      "@libp2p/crypto" : "1.0.17"
     }
   ],
   "test-dependencies" : [
     {
-      "@libp2p/crypto" : "1.0.7"
+      "@libp2p/crypto" : "1.0.17"
     }
   ],
   "compile-devDependencies" : [

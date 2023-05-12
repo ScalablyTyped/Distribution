@@ -1,16 +1,17 @@
 package typings.firebaseFirestore
 
 import typings.firebaseFirestore.anon.TrackRemovals
+import typings.firebaseFirestore.distFirestoreSrcCoreQueryMod.Query
 import typings.firebaseFirestore.distFirestoreSrcLocalIndexManagerMod.IndexManager
 import typings.firebaseFirestore.distFirestoreSrcLocalPersistencePromiseMod.PersistencePromise
 import typings.firebaseFirestore.distFirestoreSrcLocalPersistenceTransactionMod.PersistenceTransaction
 import typings.firebaseFirestore.distFirestoreSrcLocalRemoteDocumentChangeBufferMod.RemoteDocumentChangeBuffer
 import typings.firebaseFirestore.distFirestoreSrcModelCollectionsMod.DocumentKeySet_
 import typings.firebaseFirestore.distFirestoreSrcModelCollectionsMod.MutableDocumentMap_
+import typings.firebaseFirestore.distFirestoreSrcModelCollectionsMod.OverlayMap
 import typings.firebaseFirestore.distFirestoreSrcModelDocumentKeyMod.DocumentKey
 import typings.firebaseFirestore.distFirestoreSrcModelDocumentMod.MutableDocument
 import typings.firebaseFirestore.distFirestoreSrcModelFieldIndexMod.IndexOffset
-import typings.firebaseFirestore.distFirestoreSrcModelPathMod.ResourcePath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,15 +20,6 @@ object distFirestoreSrcLocalRemoteDocumentCacheMod {
   
   @js.native
   trait RemoteDocumentCache extends StObject {
-    
-    /**
-      * Returns the documents from the provided collection.
-      *
-      * @param collection - The collection to read.
-      * @param offset - The offset to start the scan at (exclusive).
-      * @returns The set of matching documents.
-      */
-    def getAllFromCollection(transaction: PersistenceTransaction, collection: ResourcePath, offset: IndexOffset): PersistencePromise[MutableDocumentMap_] = js.native
     
     /**
       * Looks up the next `limit` documents for a collection group based on the
@@ -39,6 +31,15 @@ object distFirestoreSrcLocalRemoteDocumentCacheMod {
       * @returns The set of matching documents.
       */
     def getAllFromCollectionGroup(transaction: PersistenceTransaction, collectionGroup: String, offset: IndexOffset, limit: Double): PersistencePromise[MutableDocumentMap_] = js.native
+    
+    /**
+      * Returns the documents matching the given query
+      *
+      * @param query - The query to match documents against.
+      * @param offset - The offset to start the scan at (exclusive).
+      * @returns The set of matching documents.
+      */
+    def getDocumentsMatchingQuery(transaction: PersistenceTransaction, query: Query, offset: IndexOffset, mutatedDocs: OverlayMap): PersistencePromise[MutableDocumentMap_] = js.native
     
     /**
       * Looks up a set of entries in the cache.

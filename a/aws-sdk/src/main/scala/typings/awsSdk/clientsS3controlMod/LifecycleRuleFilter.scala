@@ -22,7 +22,7 @@ trait LifecycleRuleFilter extends StObject {
   var ObjectSizeLessThan: js.UndefOr[ObjectSizeLessThanBytes] = js.undefined
   
   /**
-    * Prefix identifying one or more objects to which the rule applies.  Replacement must be made for object keys containing special characters (such as carriage returns) when using XML requests. For more information, see  XML related object key constraints. 
+    * Prefix identifying one or more objects to which the rule applies.  When you're using XML requests, you must replace special characters (such as carriage returns) in object keys with their equivalent XML entity codes. For more information, see  XML-related object key constraints in the Amazon S3 User Guide. 
     */
   var Prefix: js.UndefOr[typings.awsSdk.clientsS3controlMod.Prefix] = js.undefined
   

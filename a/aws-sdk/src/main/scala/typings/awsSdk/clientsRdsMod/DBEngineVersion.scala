@@ -12,9 +12,19 @@ trait DBEngineVersion extends StObject {
   var CreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
+    * JSON string that lists the installation files and parameters that RDS Custom uses to create a custom engine version (CEV). RDS Custom applies the patches in the order in which they're listed in the manifest. You can set the Oracle home, Oracle base, and UNIX/Linux user and group using the installation parameters. For more information, see JSON fields in the CEV manifest in the Amazon RDS User Guide. 
+    */
+  var CustomDBEngineVersionManifest: js.UndefOr[typings.awsSdk.clientsRdsMod.CustomDBEngineVersionManifest] = js.undefined
+  
+  /**
     * The description of the database engine.
     */
   var DBEngineDescription: js.UndefOr[String] = js.undefined
+  
+  /**
+    * A value that indicates the source media provider of the AMI based on the usage operation. Applicable for RDS Custom for SQL Server.
+    */
+  var DBEngineMediaType: js.UndefOr[String] = js.undefined
   
   /**
     * The ARN of the custom engine version.
@@ -62,6 +72,11 @@ trait DBEngineVersion extends StObject {
   var ExportableLogTypes: js.UndefOr[LogTypeList] = js.undefined
   
   /**
+    * The EC2 image
+    */
+  var Image: js.UndefOr[CustomDBEngineVersionAMI] = js.undefined
+  
+  /**
     * The Amazon Web Services KMS key identifier for an encrypted CEV. This parameter is required for RDS Custom, but optional for Amazon RDS.
     */
   var KMSKeyId: js.UndefOr[String] = js.undefined
@@ -75,6 +90,11 @@ trait DBEngineVersion extends StObject {
     * The status of the DB engine version, either available or deprecated.
     */
   var Status: js.UndefOr[String] = js.undefined
+  
+  /**
+    * A list of the supported CA certificate identifiers. For more information, see Using SSL/TLS to encrypt a connection to a DB instance in the Amazon RDS User Guide and  Using SSL/TLS to encrypt a connection to a DB cluster in the Amazon Aurora User Guide.
+    */
+  var SupportedCACertificateIdentifiers: js.UndefOr[CACertificateIdentifiersList] = js.undefined
   
   /**
     * A list of the character sets supported by this engine for the CharacterSetName parameter of the CreateDBInstance operation.
@@ -105,6 +125,11 @@ trait DBEngineVersion extends StObject {
     * A value that indicates whether the engine version supports Babelfish for Aurora PostgreSQL.
     */
   var SupportsBabelfish: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * A value that indicates whether the engine version supports rotating the server certificate without rebooting the DB instance.
+    */
+  var SupportsCertificateRotationWithoutRestart: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * A value that indicates whether you can use Aurora global databases with a specific DB engine version.
@@ -147,9 +172,17 @@ object DBEngineVersion {
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
     
+    inline def setCustomDBEngineVersionManifest(value: CustomDBEngineVersionManifest): Self = StObject.set(x, "CustomDBEngineVersionManifest", value.asInstanceOf[js.Any])
+    
+    inline def setCustomDBEngineVersionManifestUndefined: Self = StObject.set(x, "CustomDBEngineVersionManifest", js.undefined)
+    
     inline def setDBEngineDescription(value: String): Self = StObject.set(x, "DBEngineDescription", value.asInstanceOf[js.Any])
     
     inline def setDBEngineDescriptionUndefined: Self = StObject.set(x, "DBEngineDescription", js.undefined)
+    
+    inline def setDBEngineMediaType(value: String): Self = StObject.set(x, "DBEngineMediaType", value.asInstanceOf[js.Any])
+    
+    inline def setDBEngineMediaTypeUndefined: Self = StObject.set(x, "DBEngineMediaType", js.undefined)
     
     inline def setDBEngineVersionArn(value: String): Self = StObject.set(x, "DBEngineVersionArn", value.asInstanceOf[js.Any])
     
@@ -189,6 +222,10 @@ object DBEngineVersion {
     
     inline def setExportableLogTypesVarargs(value: String*): Self = StObject.set(x, "ExportableLogTypes", js.Array(value*))
     
+    inline def setImage(value: CustomDBEngineVersionAMI): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
+    
+    inline def setImageUndefined: Self = StObject.set(x, "Image", js.undefined)
+    
     inline def setKMSKeyId(value: String): Self = StObject.set(x, "KMSKeyId", value.asInstanceOf[js.Any])
     
     inline def setKMSKeyIdUndefined: Self = StObject.set(x, "KMSKeyId", js.undefined)
@@ -200,6 +237,12 @@ object DBEngineVersion {
     inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    
+    inline def setSupportedCACertificateIdentifiers(value: CACertificateIdentifiersList): Self = StObject.set(x, "SupportedCACertificateIdentifiers", value.asInstanceOf[js.Any])
+    
+    inline def setSupportedCACertificateIdentifiersUndefined: Self = StObject.set(x, "SupportedCACertificateIdentifiers", js.undefined)
+    
+    inline def setSupportedCACertificateIdentifiersVarargs(value: String*): Self = StObject.set(x, "SupportedCACertificateIdentifiers", js.Array(value*))
     
     inline def setSupportedCharacterSets(value: SupportedCharacterSetsList): Self = StObject.set(x, "SupportedCharacterSets", value.asInstanceOf[js.Any])
     
@@ -234,6 +277,10 @@ object DBEngineVersion {
     inline def setSupportsBabelfish(value: Boolean): Self = StObject.set(x, "SupportsBabelfish", value.asInstanceOf[js.Any])
     
     inline def setSupportsBabelfishUndefined: Self = StObject.set(x, "SupportsBabelfish", js.undefined)
+    
+    inline def setSupportsCertificateRotationWithoutRestart(value: BooleanOptional): Self = StObject.set(x, "SupportsCertificateRotationWithoutRestart", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsCertificateRotationWithoutRestartUndefined: Self = StObject.set(x, "SupportsCertificateRotationWithoutRestart", js.undefined)
     
     inline def setSupportsGlobalDatabases(value: Boolean): Self = StObject.set(x, "SupportsGlobalDatabases", value.asInstanceOf[js.Any])
     

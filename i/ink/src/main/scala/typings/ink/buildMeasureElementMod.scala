@@ -11,6 +11,9 @@ object buildMeasureElementMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    * Measure the dimensions of a particular `<Box>` element.
+    */
   inline def default(node: DOMElement): Output = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[Output]
   
   trait Output extends StObject {

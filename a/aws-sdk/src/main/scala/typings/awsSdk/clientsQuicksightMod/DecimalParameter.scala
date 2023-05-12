@@ -14,11 +14,11 @@ trait DecimalParameter extends StObject {
   /**
     * The values for the decimal parameter.
     */
-  var Values: DoubleList
+  var Values: SensitiveDoubleList
 }
 object DecimalParameter {
   
-  inline def apply(Name: NonEmptyString, Values: DoubleList): DecimalParameter = {
+  inline def apply(Name: NonEmptyString, Values: SensitiveDoubleList): DecimalParameter = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecimalParameter]
   }
@@ -28,8 +28,8 @@ object DecimalParameter {
     
     inline def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setValues(value: DoubleList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: SensitiveDoubleList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "Values", js.Array(value*))
+    inline def setValuesVarargs(value: SensitiveDouble*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

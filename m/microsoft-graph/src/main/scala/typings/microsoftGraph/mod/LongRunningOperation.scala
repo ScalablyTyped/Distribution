@@ -8,10 +8,16 @@ trait LongRunningOperation
   extends StObject
      with Entity {
   
-  // The start time of the operation.
+  /**
+    * The start time of the operation. The Timestamp type represents date and time information using ISO 8601 format and is
+    * always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    */
   var createdDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The time of the last action in the operation.
+  /**
+    * The time of the last action in the operation. The Timestamp type represents date and time information using ISO 8601
+    * format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    */
   var lastActionDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // URI of the resource that the operation is performed on.

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vega-canvas" : "1.2.6"
+      "vega-canvas" : "1.2.7"
     }
   ],
   "test-dependencies" : [
     {
-      "vega-canvas" : "1.2.6"
+      "vega-canvas" : "1.2.7"
     }
   ],
   "compile-devDependencies" : [

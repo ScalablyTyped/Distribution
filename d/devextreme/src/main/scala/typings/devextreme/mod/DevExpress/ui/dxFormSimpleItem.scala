@@ -81,7 +81,7 @@ trait dxFormSimpleItem extends StObject {
     */
   var validationRules: js.UndefOr[
     js.Array[
-      RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
+      typings.devextreme.mod.DevExpress.common.RequiredRule | typings.devextreme.mod.DevExpress.common.NumericRule | typings.devextreme.mod.DevExpress.common.RangeRule | typings.devextreme.mod.DevExpress.common.StringLengthRule | typings.devextreme.mod.DevExpress.common.CustomRule | typings.devextreme.mod.DevExpress.common.CompareRule | typings.devextreme.mod.DevExpress.common.PatternRule | typings.devextreme.mod.DevExpress.common.EmailRule | typings.devextreme.mod.DevExpress.common.AsyncRule
     ]
   ] = js.undefined
   
@@ -161,14 +161,14 @@ object dxFormSimpleItem {
     
     inline def setValidationRules(
       value: js.Array[
-          RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
+          typings.devextreme.mod.DevExpress.common.RequiredRule | typings.devextreme.mod.DevExpress.common.NumericRule | typings.devextreme.mod.DevExpress.common.RangeRule | typings.devextreme.mod.DevExpress.common.StringLengthRule | typings.devextreme.mod.DevExpress.common.CustomRule | typings.devextreme.mod.DevExpress.common.CompareRule | typings.devextreme.mod.DevExpress.common.PatternRule | typings.devextreme.mod.DevExpress.common.EmailRule | typings.devextreme.mod.DevExpress.common.AsyncRule
         ]
     ): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
     
     inline def setValidationRulesUndefined: Self = StObject.set(x, "validationRules", js.undefined)
     
     inline def setValidationRulesVarargs(
-      value: (RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule)*
+      value: (typings.devextreme.mod.DevExpress.common.RequiredRule | typings.devextreme.mod.DevExpress.common.NumericRule | typings.devextreme.mod.DevExpress.common.RangeRule | typings.devextreme.mod.DevExpress.common.StringLengthRule | typings.devextreme.mod.DevExpress.common.CustomRule | typings.devextreme.mod.DevExpress.common.CompareRule | typings.devextreme.mod.DevExpress.common.PatternRule | typings.devextreme.mod.DevExpress.common.EmailRule | typings.devextreme.mod.DevExpress.common.AsyncRule)*
     ): Self = StObject.set(x, "validationRules", js.Array(value*))
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])

@@ -344,7 +344,7 @@ object mod {
     /**
       * Returns an object with properties entering and node. Returns null when we have finished walking the tree.
       */
-    def next(): NodeWalkingStep = js.native
+    def next(): NodeWalkingStep | Null = js.native
     
     /**
       * Resets the iterator to resume at the specified node and setting for entering. (Normally this isn't needed unless you do destructive updates to the Node tree.)

@@ -1,137 +1,87 @@
 package typings.atlaskitTokens.anon
 
-import typings.atlaskitTokens.distTypesPalettesPaletteMod.BaseToken
 import typings.atlaskitTokens.distTypesTypesMod.PaintToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BoldBrand extends StObject {
+trait BoldBrand[BaseToken] extends StObject {
   
-  var default: PaintToken[BaseToken]
+  var `[default]`: PaintToken[BaseToken]
   
-  var accent: Magenta
+  var bold: PaintToken[BaseToken]
   
-  var blanket: PaintToken[BaseToken]
+  var brand: PaintToken[BaseToken]
   
-  var boldBrand: Resting
+  var danger: PaintToken[BaseToken]
   
-  var boldDanger: Resting
+  var disabled: PaintToken[BaseToken]
   
-  var boldDiscovery: Resting
+  var discovery: PaintToken[BaseToken]
   
-  var boldNeutral: Resting
+  var focused: PaintToken[BaseToken]
   
-  var boldSuccess: Resting
+  var information: PaintToken[BaseToken]
   
-  var boldWarning: Resting
+  var input: PaintToken[BaseToken]
   
-  var brand: `1`
+  var inverse: PaintToken[BaseToken]
   
-  var card: PaintToken[BaseToken]
+  var selected: PaintToken[BaseToken]
   
-  var inverse: DefaultPaintToken
+  var success: PaintToken[BaseToken]
   
-  var overlay: PaintToken[BaseToken]
-  
-  var selected: Hover
-  
-  var subtleBorderedNeutral: PressedResting
-  
-  var subtleBrand: Resting
-  
-  var subtleDanger: Resting
-  
-  var subtleDiscovery: Resting
-  
-  var subtleNeutral: Resting
-  
-  var subtleSuccess: Resting
-  
-  var subtleWarning: Resting
-  
-  var sunken: PaintToken[BaseToken]
-  
-  var transparentNeutral: HoverPressed
+  var warning: PaintToken[BaseToken]
 }
 object BoldBrand {
   
-  inline def apply(
-    accent: Magenta,
-    blanket: PaintToken[BaseToken],
-    boldBrand: Resting,
-    boldDanger: Resting,
-    boldDiscovery: Resting,
-    boldNeutral: Resting,
-    boldSuccess: Resting,
-    boldWarning: Resting,
-    brand: `1`,
-    card: PaintToken[BaseToken],
-    default: PaintToken[BaseToken],
-    inverse: DefaultPaintToken,
-    overlay: PaintToken[BaseToken],
-    selected: Hover,
-    subtleBorderedNeutral: PressedResting,
-    subtleBrand: Resting,
-    subtleDanger: Resting,
-    subtleDiscovery: Resting,
-    subtleNeutral: Resting,
-    subtleSuccess: Resting,
-    subtleWarning: Resting,
-    sunken: PaintToken[BaseToken],
-    transparentNeutral: HoverPressed
-  ): BoldBrand = {
-    val __obj = js.Dynamic.literal(accent = accent.asInstanceOf[js.Any], blanket = blanket.asInstanceOf[js.Any], boldBrand = boldBrand.asInstanceOf[js.Any], boldDanger = boldDanger.asInstanceOf[js.Any], boldDiscovery = boldDiscovery.asInstanceOf[js.Any], boldNeutral = boldNeutral.asInstanceOf[js.Any], boldSuccess = boldSuccess.asInstanceOf[js.Any], boldWarning = boldWarning.asInstanceOf[js.Any], brand = brand.asInstanceOf[js.Any], card = card.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], inverse = inverse.asInstanceOf[js.Any], overlay = overlay.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], subtleBorderedNeutral = subtleBorderedNeutral.asInstanceOf[js.Any], subtleBrand = subtleBrand.asInstanceOf[js.Any], subtleDanger = subtleDanger.asInstanceOf[js.Any], subtleDiscovery = subtleDiscovery.asInstanceOf[js.Any], subtleNeutral = subtleNeutral.asInstanceOf[js.Any], subtleSuccess = subtleSuccess.asInstanceOf[js.Any], subtleWarning = subtleWarning.asInstanceOf[js.Any], sunken = sunken.asInstanceOf[js.Any], transparentNeutral = transparentNeutral.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BoldBrand]
+  inline def apply[BaseToken](
+    `[default]`: PaintToken[BaseToken],
+    bold: PaintToken[BaseToken],
+    brand: PaintToken[BaseToken],
+    danger: PaintToken[BaseToken],
+    disabled: PaintToken[BaseToken],
+    discovery: PaintToken[BaseToken],
+    focused: PaintToken[BaseToken],
+    information: PaintToken[BaseToken],
+    input: PaintToken[BaseToken],
+    inverse: PaintToken[BaseToken],
+    selected: PaintToken[BaseToken],
+    success: PaintToken[BaseToken],
+    warning: PaintToken[BaseToken]
+  ): BoldBrand[BaseToken] = {
+    val __obj = js.Dynamic.literal(bold = bold.asInstanceOf[js.Any], brand = brand.asInstanceOf[js.Any], danger = danger.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], discovery = discovery.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any], information = information.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], inverse = inverse.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], warning = warning.asInstanceOf[js.Any])
+    __obj.updateDynamic("[default]")(`[default]`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BoldBrand[BaseToken]]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: BoldBrand] (val x: Self) extends AnyVal {
+  implicit open class MutableBuilder[Self <: BoldBrand[?], BaseToken] (val x: Self & BoldBrand[BaseToken]) extends AnyVal {
     
-    inline def setAccent(value: Magenta): Self = StObject.set(x, "accent", value.asInstanceOf[js.Any])
+    inline def setBold(value: PaintToken[BaseToken]): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     
-    inline def setBlanket(value: PaintToken[BaseToken]): Self = StObject.set(x, "blanket", value.asInstanceOf[js.Any])
+    inline def setBrand(value: PaintToken[BaseToken]): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     
-    inline def setBoldBrand(value: Resting): Self = StObject.set(x, "boldBrand", value.asInstanceOf[js.Any])
+    inline def setDanger(value: PaintToken[BaseToken]): Self = StObject.set(x, "danger", value.asInstanceOf[js.Any])
     
-    inline def setBoldDanger(value: Resting): Self = StObject.set(x, "boldDanger", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: PaintToken[BaseToken]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    inline def setBoldDiscovery(value: Resting): Self = StObject.set(x, "boldDiscovery", value.asInstanceOf[js.Any])
+    inline def setDiscovery(value: PaintToken[BaseToken]): Self = StObject.set(x, "discovery", value.asInstanceOf[js.Any])
     
-    inline def setBoldNeutral(value: Resting): Self = StObject.set(x, "boldNeutral", value.asInstanceOf[js.Any])
+    inline def setFocused(value: PaintToken[BaseToken]): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
     
-    inline def setBoldSuccess(value: Resting): Self = StObject.set(x, "boldSuccess", value.asInstanceOf[js.Any])
+    inline def setInformation(value: PaintToken[BaseToken]): Self = StObject.set(x, "information", value.asInstanceOf[js.Any])
     
-    inline def setBoldWarning(value: Resting): Self = StObject.set(x, "boldWarning", value.asInstanceOf[js.Any])
+    inline def setInput(value: PaintToken[BaseToken]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    inline def setBrand(value: `1`): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
+    inline def setInverse(value: PaintToken[BaseToken]): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
     
-    inline def setCard(value: PaintToken[BaseToken]): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+    inline def setSelected(value: PaintToken[BaseToken]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    inline def setDefault(value: PaintToken[BaseToken]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: PaintToken[BaseToken]): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
-    inline def setInverse(value: DefaultPaintToken): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
+    inline def setWarning(value: PaintToken[BaseToken]): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
-    inline def setOverlay(value: PaintToken[BaseToken]): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
-    
-    inline def setSelected(value: Hover): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
-    
-    inline def setSubtleBorderedNeutral(value: PressedResting): Self = StObject.set(x, "subtleBorderedNeutral", value.asInstanceOf[js.Any])
-    
-    inline def setSubtleBrand(value: Resting): Self = StObject.set(x, "subtleBrand", value.asInstanceOf[js.Any])
-    
-    inline def setSubtleDanger(value: Resting): Self = StObject.set(x, "subtleDanger", value.asInstanceOf[js.Any])
-    
-    inline def setSubtleDiscovery(value: Resting): Self = StObject.set(x, "subtleDiscovery", value.asInstanceOf[js.Any])
-    
-    inline def setSubtleNeutral(value: Resting): Self = StObject.set(x, "subtleNeutral", value.asInstanceOf[js.Any])
-    
-    inline def setSubtleSuccess(value: Resting): Self = StObject.set(x, "subtleSuccess", value.asInstanceOf[js.Any])
-    
-    inline def setSubtleWarning(value: Resting): Self = StObject.set(x, "subtleWarning", value.asInstanceOf[js.Any])
-    
-    inline def setSunken(value: PaintToken[BaseToken]): Self = StObject.set(x, "sunken", value.asInstanceOf[js.Any])
-    
-    inline def setTransparentNeutral(value: HoverPressed): Self = StObject.set(x, "transparentNeutral", value.asInstanceOf[js.Any])
+    inline def `set[default]`(value: PaintToken[BaseToken]): Self = StObject.set(x, "[default]", value.asInstanceOf[js.Any])
   }
 }

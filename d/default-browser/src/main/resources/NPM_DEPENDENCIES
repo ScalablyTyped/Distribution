@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "default-browser" : "4.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "default-browser" : "4.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

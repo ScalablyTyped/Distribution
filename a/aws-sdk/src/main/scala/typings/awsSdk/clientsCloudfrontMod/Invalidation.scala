@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Invalidation extends StObject {
   
   /**
-    * The date and time the invalidation request was first made. 
+    * The date and time the invalidation request was first made.
     */
   var CreateTime: js.Date
   
@@ -17,7 +17,7 @@ trait Invalidation extends StObject {
   var Id: String
   
   /**
-    * The current invalidation information for the batch request. 
+    * The current invalidation information for the batch request.
     */
   var InvalidationBatch: typings.awsSdk.clientsCloudfrontMod.InvalidationBatch
   

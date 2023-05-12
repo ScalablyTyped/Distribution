@@ -10,20 +10,19 @@ object distOptionsMod {
   
   trait pluginOptions extends StObject {
     
-    var onConditionalRulesChangingLayerOrder: warn | `false`
+    /** Emit a warning when conditional rules could change the layer order. default: "warn" */
+    var onConditionalRulesChangingLayerOrder: js.UndefOr[warn | `false`] = js.undefined
     
-    var onImportLayerRule: warn | `false`
+    /** Emit a warning when "layer" is used in "@import". default: "warn" */
+    var onImportLayerRule: js.UndefOr[warn | `false`] = js.undefined
     
-    var onRevertLayerKeyword: warn | `false`
+    /** Emit a warning when the "revert" keyword is found in your CSS. default: "warn" */
+    var onRevertLayerKeyword: js.UndefOr[warn | `false`] = js.undefined
   }
   object pluginOptions {
     
-    inline def apply(
-      onConditionalRulesChangingLayerOrder: warn | `false`,
-      onImportLayerRule: warn | `false`,
-      onRevertLayerKeyword: warn | `false`
-    ): pluginOptions = {
-      val __obj = js.Dynamic.literal(onConditionalRulesChangingLayerOrder = onConditionalRulesChangingLayerOrder.asInstanceOf[js.Any], onImportLayerRule = onImportLayerRule.asInstanceOf[js.Any], onRevertLayerKeyword = onRevertLayerKeyword.asInstanceOf[js.Any])
+    inline def apply(): pluginOptions = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[pluginOptions]
     }
     
@@ -32,9 +31,15 @@ object distOptionsMod {
       
       inline def setOnConditionalRulesChangingLayerOrder(value: warn | `false`): Self = StObject.set(x, "onConditionalRulesChangingLayerOrder", value.asInstanceOf[js.Any])
       
+      inline def setOnConditionalRulesChangingLayerOrderUndefined: Self = StObject.set(x, "onConditionalRulesChangingLayerOrder", js.undefined)
+      
       inline def setOnImportLayerRule(value: warn | `false`): Self = StObject.set(x, "onImportLayerRule", value.asInstanceOf[js.Any])
       
+      inline def setOnImportLayerRuleUndefined: Self = StObject.set(x, "onImportLayerRule", js.undefined)
+      
       inline def setOnRevertLayerKeyword(value: warn | `false`): Self = StObject.set(x, "onRevertLayerKeyword", value.asInstanceOf[js.Any])
+      
+      inline def setOnRevertLayerKeywordUndefined: Self = StObject.set(x, "onRevertLayerKeyword", js.undefined)
     }
   }
 }

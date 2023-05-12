@@ -7,6 +7,7 @@ import typings.unsplashJs.distMethodsSearchTypesRequestMod.ContentFilter
 import typings.unsplashJs.distMethodsSearchTypesRequestMod.SearchOrderBy
 import typings.unsplashJs.distMethodsTopicsMod.TopicOrderBy
 import typings.unsplashJs.distTypesRequestMod.Orientation
+import typings.unsplashJs.distTypesRequestMod.Plus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,6 +53,12 @@ object unsplashJsStrings {
     extends StObject
        with ErrorSource
   inline def decoding: decoding = "decoding".asInstanceOf[decoding]
+  
+  @js.native
+  sealed trait editorial
+    extends StObject
+       with SearchOrderBy
+  inline def editorial: editorial = "editorial".asInstanceOf[editorial]
   
   @js.native
   sealed trait error extends StObject
@@ -101,10 +108,28 @@ object unsplashJsStrings {
   inline def magenta: magenta = "magenta".asInstanceOf[magenta]
   
   @js.native
+  sealed trait mixed
+    extends StObject
+       with Plus
+  inline def mixed: mixed = "mixed".asInstanceOf[mixed]
+  
+  @js.native
+  sealed trait none
+    extends StObject
+       with Plus
+  inline def none: none = "none".asInstanceOf[none]
+  
+  @js.native
   sealed trait oldest
     extends StObject
        with TopicOrderBy
   inline def oldest: oldest = "oldest".asInstanceOf[oldest]
+  
+  @js.native
+  sealed trait only
+    extends StObject
+       with Plus
+  inline def only: only = "only".asInstanceOf[only]
   
   @js.native
   sealed trait open extends StObject

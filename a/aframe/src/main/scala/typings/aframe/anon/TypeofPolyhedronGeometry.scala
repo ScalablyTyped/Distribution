@@ -11,5 +11,6 @@ trait TypeofPolyhedronGeometry
   extends StObject
      with Instantiable0[PolyhedronGeometry] {
   
-  def fromJSON(data: Any): typings.three.srcGeometriesPolyhedronGeometryMod.PolyhedronGeometry = js.native
+  /** @internal */
+  def fromJSON(data: js.Object): typings.three.srcGeometriesPolyhedronGeometryMod.PolyhedronGeometry = js.native
 }

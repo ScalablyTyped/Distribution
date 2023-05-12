@@ -1,7 +1,7 @@
 
 # Scala.js typings for rdfjs__parser-jsonld
 
-Typings are for version 1.2
+Typings are for version 2.1
 
 ## Library description:
 JSON-LD parser that implements the RDFJS Sink interface using jsonld.js

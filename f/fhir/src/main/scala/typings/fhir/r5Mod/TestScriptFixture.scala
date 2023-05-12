@@ -23,7 +23,7 @@ trait TestScriptFixture
   var autodelete: Boolean
   
   /**
-    * See http://build.fhir.org/resourcelist.html for complete list of resource types.
+    * See the [Resource List](resourcelist.html) for complete list of resource types.
     */
   var resource: js.UndefOr[Reference] = js.undefined
 }

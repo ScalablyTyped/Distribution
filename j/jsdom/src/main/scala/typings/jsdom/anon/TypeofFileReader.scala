@@ -1,5 +1,8 @@
 package typings.jsdom.anon
 
+import typings.jsdom.jsdomInts.`0`
+import typings.jsdom.jsdomInts.`1`
+import typings.jsdom.jsdomInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,28 +10,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeofFileReader extends StObject {
   
   /* standard dom */
-  val DONE: Double
+  val DONE: `2`
   
   /* standard dom */
-  val EMPTY: Double
+  val EMPTY: `0`
   
   /* standard dom */
-  val LOADING: Double
+  val LOADING: `1`
 }
 object TypeofFileReader {
   
-  inline def apply(DONE: Double, EMPTY: Double, LOADING: Double): TypeofFileReader = {
-    val __obj = js.Dynamic.literal(DONE = DONE.asInstanceOf[js.Any], EMPTY = EMPTY.asInstanceOf[js.Any], LOADING = LOADING.asInstanceOf[js.Any])
+  inline def apply(): TypeofFileReader = {
+    val __obj = js.Dynamic.literal(DONE = 2, EMPTY = 0, LOADING = 1)
     __obj.asInstanceOf[TypeofFileReader]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: TypeofFileReader] (val x: Self) extends AnyVal {
     
-    inline def setDONE(value: Double): Self = StObject.set(x, "DONE", value.asInstanceOf[js.Any])
+    inline def setDONE(value: `2`): Self = StObject.set(x, "DONE", value.asInstanceOf[js.Any])
     
-    inline def setEMPTY(value: Double): Self = StObject.set(x, "EMPTY", value.asInstanceOf[js.Any])
+    inline def setEMPTY(value: `0`): Self = StObject.set(x, "EMPTY", value.asInstanceOf[js.Any])
     
-    inline def setLOADING(value: Double): Self = StObject.set(x, "LOADING", value.asInstanceOf[js.Any])
+    inline def setLOADING(value: `1`): Self = StObject.set(x, "LOADING", value.asInstanceOf[js.Any])
   }
 }

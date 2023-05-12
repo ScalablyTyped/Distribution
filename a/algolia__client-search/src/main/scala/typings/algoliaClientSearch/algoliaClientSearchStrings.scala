@@ -153,6 +153,10 @@ object algoliaClientSearchStrings {
   inline def is: is = "is".asInstanceOf[is]
   
   @js.native
+  sealed trait keywordSearch extends StObject
+  inline def keywordSearch: keywordSearch = "keywordSearch".asInstanceOf[keywordSearch]
+  
+  @js.native
   sealed trait lastWords extends StObject
   inline def lastWords: lastWords = "lastWords".asInstanceOf[lastWords]
   
@@ -175,6 +179,10 @@ object algoliaClientSearchStrings {
   @js.native
   sealed trait multiWordsSynonym extends StObject
   inline def multiWordsSynonym: multiWordsSynonym = "multiWordsSynonym".asInstanceOf[multiWordsSynonym]
+  
+  @js.native
+  sealed trait neuralSearch extends StObject
+  inline def neuralSearch: neuralSearch = "neuralSearch".asInstanceOf[neuralSearch]
   
   @js.native
   sealed trait none

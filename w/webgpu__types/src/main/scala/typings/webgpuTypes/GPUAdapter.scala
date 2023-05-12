@@ -29,9 +29,6 @@ trait GPUAdapter extends StObject {
     */
   val limits: GPUSupportedLimits = js.native
   
-  /** @deprecated use requestAdapterInfo instead */
-  val name: String = js.native
-  
   /**
     * Requests the {@link GPUAdapterInfo} for this {@link GPUAdapter}.
     * Note: Adapter info values are returned with a Promise to give user agents an
@@ -46,6 +43,8 @@ trait GPUAdapter extends StObject {
   
   /**
     * Requests a device from the adapter.
+    * This is a one-time action: if a device is returned successfully,
+    * the adapter becomes invalid.
     * @param descriptor - Description of the {@link GPUDevice} to request.
     */
   def requestDevice(): js.Promise[GPUDevice] = js.native

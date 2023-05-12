@@ -16,7 +16,7 @@ object libIconsCompressOutlinedMod extends Shortcut {
   @js.native
   trait CompressOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_CompressOutlinedIconType: String = js.native

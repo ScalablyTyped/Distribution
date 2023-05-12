@@ -47,5 +47,9 @@ object Intersection {
   /**
     * Checks if polygon intersects rectangle
     */
-  inline def intersectPolygonRectangle(points: js.Array[typings.fabric.fabricImplMod.Point], r1: Double, r2: Double): typings.fabric.fabricImplMod.Intersection = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectPolygonRectangle")(points.asInstanceOf[js.Any], r1.asInstanceOf[js.Any], r2.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Intersection]
+  inline def intersectPolygonRectangle(
+    points: js.Array[typings.fabric.fabricImplMod.Point],
+    r1: typings.fabric.fabricImplMod.Point,
+    r2: typings.fabric.fabricImplMod.Point
+  ): typings.fabric.fabricImplMod.Intersection = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectPolygonRectangle")(points.asInstanceOf[js.Any], r1.asInstanceOf[js.Any], r2.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Intersection]
 }

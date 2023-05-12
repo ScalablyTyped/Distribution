@@ -4,10 +4,19 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Custom paginator view options
+  */
 trait PaginatorViewOptions extends StObject {
   
+  /**
+    * Ending page number for the paginator view.
+    */
   var endPage: Double
   
+  /**
+    * Starting page number for the paginator view.
+    */
   var startPage: Double
 }
 object PaginatorViewOptions {

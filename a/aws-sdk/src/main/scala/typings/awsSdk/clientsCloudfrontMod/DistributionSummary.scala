@@ -52,7 +52,7 @@ trait DistributionSummary extends StObject {
   var Enabled: Boolean
   
   /**
-    *  Specify the maximum HTTP version that you want viewers to use to communicate with CloudFront. The default value for new web distributions is http2. Viewers that don't support HTTP/2 will automatically use an earlier version.
+    * Specify the maximum HTTP version that you want viewers to use to communicate with CloudFront. The default value for new web distributions is http2. Viewers that don't support HTTP/2 will automatically use an earlier version.
     */
   var HttpVersion: typings.awsSdk.clientsCloudfrontMod.HttpVersion
   
@@ -72,7 +72,7 @@ trait DistributionSummary extends StObject {
   var LastModifiedTime: js.Date
   
   /**
-    *  A complex type that contains information about origin groups for this distribution.
+    * A complex type that contains information about origin groups for this distribution.
     */
   var OriginGroups: js.UndefOr[typings.awsSdk.clientsCloudfrontMod.OriginGroups] = js.undefined
   
@@ -82,7 +82,7 @@ trait DistributionSummary extends StObject {
   var Origins: typings.awsSdk.clientsCloudfrontMod.Origins
   
   /**
-    * A complex type that contains information about price class for this streaming distribution. 
+    * A complex type that contains information about price class for this streaming distribution.
     */
   var PriceClass: typings.awsSdk.clientsCloudfrontMod.PriceClass
   
@@ -92,12 +92,17 @@ trait DistributionSummary extends StObject {
   var Restrictions: typings.awsSdk.clientsCloudfrontMod.Restrictions
   
   /**
+    * Whether the primary distribution has a staging distribution enabled.
+    */
+  var Staging: Boolean
+  
+  /**
     * The current status of the distribution. When the status is Deployed, the distribution's information is propagated to all CloudFront edge locations.
     */
   var Status: String
   
   /**
-    * A complex type that determines the distribution’s SSL/TLS configuration for communicating with viewers.
+    * A complex type that determines the distribution's SSL/TLS configuration for communicating with viewers.
     */
   var ViewerCertificate: typings.awsSdk.clientsCloudfrontMod.ViewerCertificate
   
@@ -124,11 +129,12 @@ object DistributionSummary {
     Origins: Origins,
     PriceClass: PriceClass,
     Restrictions: Restrictions,
+    Staging: Boolean,
     Status: String,
     ViewerCertificate: ViewerCertificate,
     WebACLId: String
   ): DistributionSummary = {
-    val __obj = js.Dynamic.literal(ARN = ARN.asInstanceOf[js.Any], Aliases = Aliases.asInstanceOf[js.Any], CacheBehaviors = CacheBehaviors.asInstanceOf[js.Any], Comment = Comment.asInstanceOf[js.Any], CustomErrorResponses = CustomErrorResponses.asInstanceOf[js.Any], DefaultCacheBehavior = DefaultCacheBehavior.asInstanceOf[js.Any], DomainName = DomainName.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], HttpVersion = HttpVersion.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], IsIPV6Enabled = IsIPV6Enabled.asInstanceOf[js.Any], LastModifiedTime = LastModifiedTime.asInstanceOf[js.Any], Origins = Origins.asInstanceOf[js.Any], PriceClass = PriceClass.asInstanceOf[js.Any], Restrictions = Restrictions.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], ViewerCertificate = ViewerCertificate.asInstanceOf[js.Any], WebACLId = WebACLId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ARN = ARN.asInstanceOf[js.Any], Aliases = Aliases.asInstanceOf[js.Any], CacheBehaviors = CacheBehaviors.asInstanceOf[js.Any], Comment = Comment.asInstanceOf[js.Any], CustomErrorResponses = CustomErrorResponses.asInstanceOf[js.Any], DefaultCacheBehavior = DefaultCacheBehavior.asInstanceOf[js.Any], DomainName = DomainName.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], HttpVersion = HttpVersion.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], IsIPV6Enabled = IsIPV6Enabled.asInstanceOf[js.Any], LastModifiedTime = LastModifiedTime.asInstanceOf[js.Any], Origins = Origins.asInstanceOf[js.Any], PriceClass = PriceClass.asInstanceOf[js.Any], Restrictions = Restrictions.asInstanceOf[js.Any], Staging = Staging.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], ViewerCertificate = ViewerCertificate.asInstanceOf[js.Any], WebACLId = WebACLId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionSummary]
   }
   
@@ -174,6 +180,8 @@ object DistributionSummary {
     inline def setPriceClass(value: PriceClass): Self = StObject.set(x, "PriceClass", value.asInstanceOf[js.Any])
     
     inline def setRestrictions(value: Restrictions): Self = StObject.set(x, "Restrictions", value.asInstanceOf[js.Any])
+    
+    inline def setStaging(value: Boolean): Self = StObject.set(x, "Staging", value.asInstanceOf[js.Any])
     
     inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

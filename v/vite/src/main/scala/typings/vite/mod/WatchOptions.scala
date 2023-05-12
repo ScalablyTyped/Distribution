@@ -94,7 +94,7 @@ trait WatchOptions extends StObject {
   
   /**
     * Whether to use the `fsevents` watching interface if available. When set to `true` explicitly
-    * and `fsevents` is available this supercedes the `usePolling` setting. When set to `false` on
+    * and `fsevents` is available this supersedes the `usePolling` setting. When set to `false` on
     * OS X, `usePolling: true` becomes the default.
     */
   var useFsEvents: js.UndefOr[Boolean] = js.undefined

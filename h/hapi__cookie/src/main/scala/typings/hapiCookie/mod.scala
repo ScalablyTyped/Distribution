@@ -1,25 +1,28 @@
 package typings.hapiCookie
 
-import org.scalablytyped.runtime.Shortcut
 import typings.hapiCookie.anon.Clear
 import typings.hapiCookie.anon.RedirectTo
 import typings.hapiCookie.anon.ServerStateCookieOptionsn
 import typings.hapiCookie.hapiCookieStrings.cookie
-import typings.hapiHapi.mod.AppCredentials
-import typings.hapiHapi.mod.AuthCredentials
-import typings.hapiHapi.mod.Plugin
-import typings.hapiHapi.mod.ReqRefDefaults
-import typings.hapiHapi.mod.Request
-import typings.hapiHapi.mod.UserCredentials
+import typings.hapiCookie.mod.hapiHapiAugmentingMod.Request
+import typings.hapiHapi.libTypesPluginMod.Plugin
+import typings.hapiHapi.libTypesRequestMod.AppCredentials
+import typings.hapiHapi.libTypesRequestMod.AuthCredentials
+import typings.hapiHapi.libTypesRequestMod.UserCredentials
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
   
   @JSImport("@hapi/cookie", JSImport.Namespace)
   @js.native
-  val ^ : Plugin[Unit] = js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@hapi/cookie", "plugin")
+  @js.native
+  def plugin: Plugin[Unit, Unit] = js.native
+  inline def plugin_=(x: Plugin[Unit, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plugin")(x.asInstanceOf[js.Any])
   
   /**
     * Options passed to 'hapi.auth.strategy' when this plugin is used
@@ -92,7 +95,7 @@ object mod extends Shortcut {
       
       inline def setRedirectTo(value: String | RedirectToFunction): Self = StObject.set(x, "redirectTo", value.asInstanceOf[js.Any])
       
-      inline def setRedirectToFunction1(value: /* request */ js.UndefOr[Request[ReqRefDefaults]] => String): Self = StObject.set(x, "redirectTo", js.Any.fromFunction1(value))
+      inline def setRedirectToFunction1(value: /* request */ js.UndefOr[Request] => String): Self = StObject.set(x, "redirectTo", js.Any.fromFunction1(value))
       
       inline def setRedirectToUndefined: Self = StObject.set(x, "redirectTo", js.undefined)
       
@@ -101,17 +104,17 @@ object mod extends Shortcut {
       inline def setRequestDecoratorNameUndefined: Self = StObject.set(x, "requestDecoratorName", js.undefined)
       
       inline def setValidate(
-        value: (/* request */ js.UndefOr[Request[ReqRefDefaults]], /* session */ js.UndefOr[js.Object]) => js.Promise[ValidateResponse]
+        value: (/* request */ js.UndefOr[Request], /* session */ js.UndefOr[js.Object]) => js.Promise[ValidateResponse]
       ): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
       
       inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     }
   }
   
-  type RedirectToFunction = js.Function1[/* request */ js.UndefOr[Request[ReqRefDefaults]], String]
+  type RedirectToFunction = js.Function1[/* request */ js.UndefOr[Request], String]
   
   type ValidateFunction = js.Function2[
-    /* request */ js.UndefOr[Request[ReqRefDefaults]], 
+    /* request */ js.UndefOr[Request], 
     /* session */ js.UndefOr[js.Object], 
     js.Promise[ValidateResponse]
   ]
@@ -139,11 +142,6 @@ object mod extends Shortcut {
       inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     }
   }
-  
-  type _To = Plugin[Unit]
-  
-  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Plugin[Unit] = ^
   
   /* augmented module */
   object hapiHapiAugmentingMod {
@@ -174,13 +172,13 @@ object mod extends Shortcut {
     }
     object Request {
       
-      inline def apply(cookieAuth: Clear): typings.hapiCookie.mod.hapiHapiAugmentingMod.Request = {
+      inline def apply(cookieAuth: Clear): Request = {
         val __obj = js.Dynamic.literal(cookieAuth = cookieAuth.asInstanceOf[js.Any])
-        __obj.asInstanceOf[typings.hapiCookie.mod.hapiHapiAugmentingMod.Request]
+        __obj.asInstanceOf[Request]
       }
       
       @scala.inline
-      implicit open class MutableBuilder[Self <: typings.hapiCookie.mod.hapiHapiAugmentingMod.Request] (val x: Self) extends AnyVal {
+      implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
         
         inline def setCookieAuth(value: Clear): Self = StObject.set(x, "cookieAuth", value.asInstanceOf[js.Any])
       }

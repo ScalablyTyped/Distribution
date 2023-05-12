@@ -20,8 +20,11 @@ import typings.csstype.mod.Property.BorderRight
 import typings.csstype.mod.Property.BorderStyle
 import typings.csstype.mod.Property.BorderTop
 import typings.csstype.mod.Property.BorderWidth
+import typings.csstype.mod.Property.Caret
 import typings.csstype.mod.Property.ColumnRule
 import typings.csstype.mod.Property.Columns
+import typings.csstype.mod.Property.ContainIntrinsicSize
+import typings.csstype.mod.Property.Container
 import typings.csstype.mod.Property.Flex
 import typings.csstype.mod.Property.FlexFlow
 import typings.csstype.mod.Property.Font
@@ -31,9 +34,14 @@ import typings.csstype.mod.Property.GridArea
 import typings.csstype.mod.Property.GridColumn
 import typings.csstype.mod.Property.GridRow
 import typings.csstype.mod.Property.GridTemplate
+import typings.csstype.mod.Property.Inset
+import typings.csstype.mod.Property.InsetBlock
+import typings.csstype.mod.Property.InsetInline
 import typings.csstype.mod.Property.LineClamp
 import typings.csstype.mod.Property.ListStyle
 import typings.csstype.mod.Property.Margin
+import typings.csstype.mod.Property.MarginBlock
+import typings.csstype.mod.Property.MarginInline
 import typings.csstype.mod.Property.Mask
 import typings.csstype.mod.Property.MaskBorder
 import typings.csstype.mod.Property.Offset
@@ -41,8 +49,18 @@ import typings.csstype.mod.Property.Outline
 import typings.csstype.mod.Property.Overflow
 import typings.csstype.mod.Property.OverscrollBehavior
 import typings.csstype.mod.Property.Padding
+import typings.csstype.mod.Property.PaddingBlock
+import typings.csstype.mod.Property.PaddingInline
+import typings.csstype.mod.Property.PlaceContent
 import typings.csstype.mod.Property.PlaceItems
 import typings.csstype.mod.Property.PlaceSelf
+import typings.csstype.mod.Property.ScrollMargin
+import typings.csstype.mod.Property.ScrollMarginBlock
+import typings.csstype.mod.Property.ScrollMarginInline
+import typings.csstype.mod.Property.ScrollPadding
+import typings.csstype.mod.Property.ScrollPaddingBlock
+import typings.csstype.mod.Property.ScrollPaddingInline
+import typings.csstype.mod.Property.ScrollTimeline
 import typings.csstype.mod.Property.TextDecoration
 import typings.csstype.mod.Property.TextEmphasis
 import typings.csstype.mod.Property.Transition
@@ -104,9 +122,17 @@ trait StandardShorthandPropertiesHyphenFallback[TLength, TTime] extends StObject
   
   var `border-width`: js.UndefOr[BorderWidth[TLength] | js.Array[NonNullable[js.UndefOr[BorderWidth[TLength]]]]] = js.undefined
   
+  var caret: js.UndefOr[Caret | js.Array[NonNullable[js.UndefOr[Caret]]]] = js.undefined
+  
   var `column-rule`: js.UndefOr[ColumnRule[TLength] | js.Array[NonNullable[js.UndefOr[ColumnRule[TLength]]]]] = js.undefined
   
   var columns: js.UndefOr[Columns[TLength] | js.Array[NonNullable[js.UndefOr[Columns[TLength]]]]] = js.undefined
+  
+  var `contain-intrinsic-size`: js.UndefOr[
+    ContainIntrinsicSize[TLength] | js.Array[NonNullable[js.UndefOr[ContainIntrinsicSize[TLength]]]]
+  ] = js.undefined
+  
+  var container: js.UndefOr[Container | js.Array[NonNullable[js.UndefOr[Container]]]] = js.undefined
   
   var flex: js.UndefOr[Flex[TLength] | js.Array[NonNullable[js.UndefOr[Flex[TLength]]]]] = js.undefined
   
@@ -126,11 +152,21 @@ trait StandardShorthandPropertiesHyphenFallback[TLength, TTime] extends StObject
   
   var `grid-template`: js.UndefOr[GridTemplate | js.Array[NonNullable[js.UndefOr[GridTemplate]]]] = js.undefined
   
+  var inset: js.UndefOr[Inset[TLength] | js.Array[NonNullable[js.UndefOr[Inset[TLength]]]]] = js.undefined
+  
+  var `inset-block`: js.UndefOr[InsetBlock[TLength] | js.Array[NonNullable[js.UndefOr[InsetBlock[TLength]]]]] = js.undefined
+  
+  var `inset-inline`: js.UndefOr[InsetInline[TLength] | js.Array[NonNullable[js.UndefOr[InsetInline[TLength]]]]] = js.undefined
+  
   var `line-clamp`: js.UndefOr[LineClamp | js.Array[NonNullable[js.UndefOr[LineClamp]]]] = js.undefined
   
   var `list-style`: js.UndefOr[ListStyle | js.Array[NonNullable[js.UndefOr[ListStyle]]]] = js.undefined
   
   var margin: js.UndefOr[Margin[TLength] | js.Array[NonNullable[js.UndefOr[Margin[TLength]]]]] = js.undefined
+  
+  var `margin-block`: js.UndefOr[MarginBlock[TLength] | js.Array[NonNullable[js.UndefOr[MarginBlock[TLength]]]]] = js.undefined
+  
+  var `margin-inline`: js.UndefOr[MarginInline[TLength] | js.Array[NonNullable[js.UndefOr[MarginInline[TLength]]]]] = js.undefined
   
   var mask: js.UndefOr[Mask[TLength] | js.Array[NonNullable[js.UndefOr[Mask[TLength]]]]] = js.undefined
   
@@ -148,9 +184,43 @@ trait StandardShorthandPropertiesHyphenFallback[TLength, TTime] extends StObject
   
   var padding: js.UndefOr[Padding[TLength] | js.Array[NonNullable[js.UndefOr[Padding[TLength]]]]] = js.undefined
   
+  var `padding-block`: js.UndefOr[PaddingBlock[TLength] | js.Array[NonNullable[js.UndefOr[PaddingBlock[TLength]]]]] = js.undefined
+  
+  var `padding-inline`: js.UndefOr[
+    PaddingInline[TLength] | js.Array[NonNullable[js.UndefOr[PaddingInline[TLength]]]]
+  ] = js.undefined
+  
+  var `place-content`: js.UndefOr[PlaceContent | js.Array[NonNullable[js.UndefOr[PlaceContent]]]] = js.undefined
+  
   var `place-items`: js.UndefOr[PlaceItems | js.Array[NonNullable[js.UndefOr[PlaceItems]]]] = js.undefined
   
   var `place-self`: js.UndefOr[PlaceSelf | js.Array[NonNullable[js.UndefOr[PlaceSelf]]]] = js.undefined
+  
+  var `scroll-margin`: js.UndefOr[ScrollMargin[TLength] | js.Array[NonNullable[js.UndefOr[ScrollMargin[TLength]]]]] = js.undefined
+  
+  var `scroll-margin-block`: js.UndefOr[
+    ScrollMarginBlock[TLength] | js.Array[NonNullable[js.UndefOr[ScrollMarginBlock[TLength]]]]
+  ] = js.undefined
+  
+  var `scroll-margin-inline`: js.UndefOr[
+    ScrollMarginInline[TLength] | js.Array[NonNullable[js.UndefOr[ScrollMarginInline[TLength]]]]
+  ] = js.undefined
+  
+  var `scroll-padding`: js.UndefOr[
+    ScrollPadding[TLength] | js.Array[NonNullable[js.UndefOr[ScrollPadding[TLength]]]]
+  ] = js.undefined
+  
+  var `scroll-padding-block`: js.UndefOr[
+    ScrollPaddingBlock[TLength] | js.Array[NonNullable[js.UndefOr[ScrollPaddingBlock[TLength]]]]
+  ] = js.undefined
+  
+  var `scroll-padding-inline`: js.UndefOr[
+    ScrollPaddingInline[TLength] | js.Array[NonNullable[js.UndefOr[ScrollPaddingInline[TLength]]]]
+  ] = js.undefined
+  
+  var `scroll-snap-margin`: js.UndefOr[ScrollMargin[TLength] | js.Array[NonNullable[js.UndefOr[ScrollMargin[TLength]]]]] = js.undefined
+  
+  var `scroll-timeline`: js.UndefOr[ScrollTimeline | js.Array[NonNullable[js.UndefOr[ScrollTimeline]]]] = js.undefined
   
   var `text-decoration`: js.UndefOr[
     TextDecoration[TLength] | js.Array[NonNullable[js.UndefOr[TextDecoration[TLength]]]]
@@ -292,6 +362,12 @@ object StandardShorthandPropertiesHyphenFallback {
     
     inline def setBorderVarargs(value: NonNullable[js.UndefOr[Border[TLength]]]*): Self = StObject.set(x, "border", js.Array(value*))
     
+    inline def setCaret(value: Caret | js.Array[NonNullable[js.UndefOr[Caret]]]): Self = StObject.set(x, "caret", value.asInstanceOf[js.Any])
+    
+    inline def setCaretUndefined: Self = StObject.set(x, "caret", js.undefined)
+    
+    inline def setCaretVarargs(value: NonNullable[js.UndefOr[Caret]]*): Self = StObject.set(x, "caret", js.Array(value*))
+    
     inline def `setColumn-rule`(value: ColumnRule[TLength] | js.Array[NonNullable[js.UndefOr[ColumnRule[TLength]]]]): Self = StObject.set(x, "column-rule", value.asInstanceOf[js.Any])
     
     inline def `setColumn-ruleUndefined`: Self = StObject.set(x, "column-rule", js.undefined)
@@ -303,6 +379,20 @@ object StandardShorthandPropertiesHyphenFallback {
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     inline def setColumnsVarargs(value: NonNullable[js.UndefOr[Columns[TLength]]]*): Self = StObject.set(x, "columns", js.Array(value*))
+    
+    inline def `setContain-intrinsic-size`(
+      value: ContainIntrinsicSize[TLength] | js.Array[NonNullable[js.UndefOr[ContainIntrinsicSize[TLength]]]]
+    ): Self = StObject.set(x, "contain-intrinsic-size", value.asInstanceOf[js.Any])
+    
+    inline def `setContain-intrinsic-sizeUndefined`: Self = StObject.set(x, "contain-intrinsic-size", js.undefined)
+    
+    inline def `setContain-intrinsic-sizeVarargs`(value: NonNullable[js.UndefOr[ContainIntrinsicSize[TLength]]]*): Self = StObject.set(x, "contain-intrinsic-size", js.Array(value*))
+    
+    inline def setContainer(value: Container | js.Array[NonNullable[js.UndefOr[Container]]]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    
+    inline def setContainerVarargs(value: NonNullable[js.UndefOr[Container]]*): Self = StObject.set(x, "container", js.Array(value*))
     
     inline def setFlex(value: Flex[TLength] | js.Array[NonNullable[js.UndefOr[Flex[TLength]]]]): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
     
@@ -358,6 +448,24 @@ object StandardShorthandPropertiesHyphenFallback {
     
     inline def setGridVarargs(value: NonNullable[js.UndefOr[Grid]]*): Self = StObject.set(x, "grid", js.Array(value*))
     
+    inline def setInset(value: Inset[TLength] | js.Array[NonNullable[js.UndefOr[Inset[TLength]]]]): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
+    
+    inline def `setInset-block`(value: InsetBlock[TLength] | js.Array[NonNullable[js.UndefOr[InsetBlock[TLength]]]]): Self = StObject.set(x, "inset-block", value.asInstanceOf[js.Any])
+    
+    inline def `setInset-blockUndefined`: Self = StObject.set(x, "inset-block", js.undefined)
+    
+    inline def `setInset-blockVarargs`(value: NonNullable[js.UndefOr[InsetBlock[TLength]]]*): Self = StObject.set(x, "inset-block", js.Array(value*))
+    
+    inline def `setInset-inline`(value: InsetInline[TLength] | js.Array[NonNullable[js.UndefOr[InsetInline[TLength]]]]): Self = StObject.set(x, "inset-inline", value.asInstanceOf[js.Any])
+    
+    inline def `setInset-inlineUndefined`: Self = StObject.set(x, "inset-inline", js.undefined)
+    
+    inline def `setInset-inlineVarargs`(value: NonNullable[js.UndefOr[InsetInline[TLength]]]*): Self = StObject.set(x, "inset-inline", js.Array(value*))
+    
+    inline def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
+    
+    inline def setInsetVarargs(value: NonNullable[js.UndefOr[Inset[TLength]]]*): Self = StObject.set(x, "inset", js.Array(value*))
+    
     inline def `setLine-clamp`(value: LineClamp | js.Array[NonNullable[js.UndefOr[LineClamp]]]): Self = StObject.set(x, "line-clamp", value.asInstanceOf[js.Any])
     
     inline def `setLine-clampUndefined`: Self = StObject.set(x, "line-clamp", js.undefined)
@@ -371,6 +479,18 @@ object StandardShorthandPropertiesHyphenFallback {
     inline def `setList-styleVarargs`(value: NonNullable[js.UndefOr[ListStyle]]*): Self = StObject.set(x, "list-style", js.Array(value*))
     
     inline def setMargin(value: Margin[TLength] | js.Array[NonNullable[js.UndefOr[Margin[TLength]]]]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    
+    inline def `setMargin-block`(value: MarginBlock[TLength] | js.Array[NonNullable[js.UndefOr[MarginBlock[TLength]]]]): Self = StObject.set(x, "margin-block", value.asInstanceOf[js.Any])
+    
+    inline def `setMargin-blockUndefined`: Self = StObject.set(x, "margin-block", js.undefined)
+    
+    inline def `setMargin-blockVarargs`(value: NonNullable[js.UndefOr[MarginBlock[TLength]]]*): Self = StObject.set(x, "margin-block", js.Array(value*))
+    
+    inline def `setMargin-inline`(value: MarginInline[TLength] | js.Array[NonNullable[js.UndefOr[MarginInline[TLength]]]]): Self = StObject.set(x, "margin-inline", value.asInstanceOf[js.Any])
+    
+    inline def `setMargin-inlineUndefined`: Self = StObject.set(x, "margin-inline", js.undefined)
+    
+    inline def `setMargin-inlineVarargs`(value: NonNullable[js.UndefOr[MarginInline[TLength]]]*): Self = StObject.set(x, "margin-inline", js.Array(value*))
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
@@ -420,9 +540,27 @@ object StandardShorthandPropertiesHyphenFallback {
     
     inline def setPadding(value: Padding[TLength] | js.Array[NonNullable[js.UndefOr[Padding[TLength]]]]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
+    inline def `setPadding-block`(value: PaddingBlock[TLength] | js.Array[NonNullable[js.UndefOr[PaddingBlock[TLength]]]]): Self = StObject.set(x, "padding-block", value.asInstanceOf[js.Any])
+    
+    inline def `setPadding-blockUndefined`: Self = StObject.set(x, "padding-block", js.undefined)
+    
+    inline def `setPadding-blockVarargs`(value: NonNullable[js.UndefOr[PaddingBlock[TLength]]]*): Self = StObject.set(x, "padding-block", js.Array(value*))
+    
+    inline def `setPadding-inline`(value: PaddingInline[TLength] | js.Array[NonNullable[js.UndefOr[PaddingInline[TLength]]]]): Self = StObject.set(x, "padding-inline", value.asInstanceOf[js.Any])
+    
+    inline def `setPadding-inlineUndefined`: Self = StObject.set(x, "padding-inline", js.undefined)
+    
+    inline def `setPadding-inlineVarargs`(value: NonNullable[js.UndefOr[PaddingInline[TLength]]]*): Self = StObject.set(x, "padding-inline", js.Array(value*))
+    
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     inline def setPaddingVarargs(value: NonNullable[js.UndefOr[Padding[TLength]]]*): Self = StObject.set(x, "padding", js.Array(value*))
+    
+    inline def `setPlace-content`(value: PlaceContent | js.Array[NonNullable[js.UndefOr[PlaceContent]]]): Self = StObject.set(x, "place-content", value.asInstanceOf[js.Any])
+    
+    inline def `setPlace-contentUndefined`: Self = StObject.set(x, "place-content", js.undefined)
+    
+    inline def `setPlace-contentVarargs`(value: NonNullable[js.UndefOr[PlaceContent]]*): Self = StObject.set(x, "place-content", js.Array(value*))
     
     inline def `setPlace-items`(value: PlaceItems | js.Array[NonNullable[js.UndefOr[PlaceItems]]]): Self = StObject.set(x, "place-items", value.asInstanceOf[js.Any])
     
@@ -435,6 +573,60 @@ object StandardShorthandPropertiesHyphenFallback {
     inline def `setPlace-selfUndefined`: Self = StObject.set(x, "place-self", js.undefined)
     
     inline def `setPlace-selfVarargs`(value: NonNullable[js.UndefOr[PlaceSelf]]*): Self = StObject.set(x, "place-self", js.Array(value*))
+    
+    inline def `setScroll-margin`(value: ScrollMargin[TLength] | js.Array[NonNullable[js.UndefOr[ScrollMargin[TLength]]]]): Self = StObject.set(x, "scroll-margin", value.asInstanceOf[js.Any])
+    
+    inline def `setScroll-margin-block`(value: ScrollMarginBlock[TLength] | js.Array[NonNullable[js.UndefOr[ScrollMarginBlock[TLength]]]]): Self = StObject.set(x, "scroll-margin-block", value.asInstanceOf[js.Any])
+    
+    inline def `setScroll-margin-blockUndefined`: Self = StObject.set(x, "scroll-margin-block", js.undefined)
+    
+    inline def `setScroll-margin-blockVarargs`(value: NonNullable[js.UndefOr[ScrollMarginBlock[TLength]]]*): Self = StObject.set(x, "scroll-margin-block", js.Array(value*))
+    
+    inline def `setScroll-margin-inline`(
+      value: ScrollMarginInline[TLength] | js.Array[NonNullable[js.UndefOr[ScrollMarginInline[TLength]]]]
+    ): Self = StObject.set(x, "scroll-margin-inline", value.asInstanceOf[js.Any])
+    
+    inline def `setScroll-margin-inlineUndefined`: Self = StObject.set(x, "scroll-margin-inline", js.undefined)
+    
+    inline def `setScroll-margin-inlineVarargs`(value: NonNullable[js.UndefOr[ScrollMarginInline[TLength]]]*): Self = StObject.set(x, "scroll-margin-inline", js.Array(value*))
+    
+    inline def `setScroll-marginUndefined`: Self = StObject.set(x, "scroll-margin", js.undefined)
+    
+    inline def `setScroll-marginVarargs`(value: NonNullable[js.UndefOr[ScrollMargin[TLength]]]*): Self = StObject.set(x, "scroll-margin", js.Array(value*))
+    
+    inline def `setScroll-padding`(value: ScrollPadding[TLength] | js.Array[NonNullable[js.UndefOr[ScrollPadding[TLength]]]]): Self = StObject.set(x, "scroll-padding", value.asInstanceOf[js.Any])
+    
+    inline def `setScroll-padding-block`(
+      value: ScrollPaddingBlock[TLength] | js.Array[NonNullable[js.UndefOr[ScrollPaddingBlock[TLength]]]]
+    ): Self = StObject.set(x, "scroll-padding-block", value.asInstanceOf[js.Any])
+    
+    inline def `setScroll-padding-blockUndefined`: Self = StObject.set(x, "scroll-padding-block", js.undefined)
+    
+    inline def `setScroll-padding-blockVarargs`(value: NonNullable[js.UndefOr[ScrollPaddingBlock[TLength]]]*): Self = StObject.set(x, "scroll-padding-block", js.Array(value*))
+    
+    inline def `setScroll-padding-inline`(
+      value: ScrollPaddingInline[TLength] | js.Array[NonNullable[js.UndefOr[ScrollPaddingInline[TLength]]]]
+    ): Self = StObject.set(x, "scroll-padding-inline", value.asInstanceOf[js.Any])
+    
+    inline def `setScroll-padding-inlineUndefined`: Self = StObject.set(x, "scroll-padding-inline", js.undefined)
+    
+    inline def `setScroll-padding-inlineVarargs`(value: NonNullable[js.UndefOr[ScrollPaddingInline[TLength]]]*): Self = StObject.set(x, "scroll-padding-inline", js.Array(value*))
+    
+    inline def `setScroll-paddingUndefined`: Self = StObject.set(x, "scroll-padding", js.undefined)
+    
+    inline def `setScroll-paddingVarargs`(value: NonNullable[js.UndefOr[ScrollPadding[TLength]]]*): Self = StObject.set(x, "scroll-padding", js.Array(value*))
+    
+    inline def `setScroll-snap-margin`(value: ScrollMargin[TLength] | js.Array[NonNullable[js.UndefOr[ScrollMargin[TLength]]]]): Self = StObject.set(x, "scroll-snap-margin", value.asInstanceOf[js.Any])
+    
+    inline def `setScroll-snap-marginUndefined`: Self = StObject.set(x, "scroll-snap-margin", js.undefined)
+    
+    inline def `setScroll-snap-marginVarargs`(value: NonNullable[js.UndefOr[ScrollMargin[TLength]]]*): Self = StObject.set(x, "scroll-snap-margin", js.Array(value*))
+    
+    inline def `setScroll-timeline`(value: ScrollTimeline | js.Array[NonNullable[js.UndefOr[ScrollTimeline]]]): Self = StObject.set(x, "scroll-timeline", value.asInstanceOf[js.Any])
+    
+    inline def `setScroll-timelineUndefined`: Self = StObject.set(x, "scroll-timeline", js.undefined)
+    
+    inline def `setScroll-timelineVarargs`(value: NonNullable[js.UndefOr[ScrollTimeline]]*): Self = StObject.set(x, "scroll-timeline", js.Array(value*))
     
     inline def `setText-decoration`(value: TextDecoration[TLength] | js.Array[NonNullable[js.UndefOr[TextDecoration[TLength]]]]): Self = StObject.set(x, "text-decoration", value.asInstanceOf[js.Any])
     

@@ -10,7 +10,7 @@ open class CustomSVGSeries protected () extends AbstractSeries[CustomSVGSeriesPr
   def this(props: CustomSVGSeriesProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: CustomSVGSeriesProps, context: Any) = this()
 }

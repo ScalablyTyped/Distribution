@@ -22,6 +22,11 @@ trait CommentMetadata extends StObject {
   var Contributor: js.UndefOr[User] = js.undefined
   
   /**
+    * The ID of the user who made the comment.
+    */
+  var ContributorId: js.UndefOr[IdType] = js.undefined
+  
+  /**
     * The timestamp that the comment was created.
     */
   var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
@@ -50,6 +55,10 @@ object CommentMetadata {
     inline def setCommentStatusUndefined: Self = StObject.set(x, "CommentStatus", js.undefined)
     
     inline def setContributor(value: User): Self = StObject.set(x, "Contributor", value.asInstanceOf[js.Any])
+    
+    inline def setContributorId(value: IdType): Self = StObject.set(x, "ContributorId", value.asInstanceOf[js.Any])
+    
+    inline def setContributorIdUndefined: Self = StObject.set(x, "ContributorId", js.undefined)
     
     inline def setContributorUndefined: Self = StObject.set(x, "Contributor", js.undefined)
     

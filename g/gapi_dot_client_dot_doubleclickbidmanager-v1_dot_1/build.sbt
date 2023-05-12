@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_doubleclickbidmanager-v1_dot_1"
-version := "0.0-dt-20220912Z-e975e6"
+version := "0.0-dt-20230214Z-e975e6"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

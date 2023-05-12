@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "prettier-package-json" : "2.7.0"
+      "prettier-package-json" : "2.8.0"
     }
   ],
   "test-dependencies" : [
     {
-      "prettier-package-json" : "2.7.0"
+      "prettier-package-json" : "2.8.0"
     }
   ],
   "compile-devDependencies" : [

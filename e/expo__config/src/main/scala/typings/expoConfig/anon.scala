@@ -14,7 +14,6 @@ import typings.expoConfig.expoConfigStrings.bigint
 import typings.expoConfig.expoConfigStrings.boolean
 import typings.expoConfig.expoConfigStrings.dark
 import typings.expoConfig.expoConfigStrings.default
-import typings.expoConfig.expoConfigStrings.expo
 import typings.expoConfig.expoConfigStrings.fail
 import typings.expoConfig.expoConfigStrings.function
 import typings.expoConfig.expoConfigStrings.hermes
@@ -174,32 +173,6 @@ object anon {
     }
   }
   
-  trait ConfigName extends StObject {
-    
-    var configName: String
-    
-    var configNamespace: expo
-    
-    var configPath: String
-  }
-  object ConfigName {
-    
-    inline def apply(configName: String, configPath: String): ConfigName = {
-      val __obj = js.Dynamic.literal(configName = configName.asInstanceOf[js.Any], configNamespace = "expo", configPath = configPath.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ConfigName]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: ConfigName] (val x: Self) extends AnyVal {
-      
-      inline def setConfigName(value: String): Self = StObject.set(x, "configName", value.asInstanceOf[js.Any])
-      
-      inline def setConfigNamespace(value: expo): Self = StObject.set(x, "configNamespace", value.asInstanceOf[js.Any])
-      
-      inline def setConfigPath(value: String): Self = StObject.set(x, "configPath", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait ExportedObjectType extends StObject {
     
     var config: Any
@@ -238,8 +211,6 @@ object anon {
     
     var androidStatusBar: js.UndefOr[BackgroundColor] = js.undefined
     
-    var appKey: js.UndefOr[String] = js.undefined
-    
     var assetBundlePatterns: js.UndefOr[js.Array[String]] = js.undefined
     
     var backgroundColor: js.UndefOr[String] = js.undefined
@@ -257,18 +228,6 @@ object anon {
     var experiments: js.UndefOr[TurboModules] = js.undefined
     
     var extra: js.UndefOr[StringDictionary[Any]] = js.undefined
-    
-    var facebookAdvertiserIDCollectionEnabled: js.UndefOr[Boolean] = js.undefined
-    
-    var facebookAppId: js.UndefOr[String] = js.undefined
-    
-    var facebookAutoInitEnabled: js.UndefOr[Boolean] = js.undefined
-    
-    var facebookAutoLogAppEventsEnabled: js.UndefOr[Boolean] = js.undefined
-    
-    var facebookDisplayName: js.UndefOr[String] = js.undefined
-    
-    var facebookScheme: js.UndefOr[String] = js.undefined
     
     var githubUrl: js.UndefOr[String] = js.undefined
     
@@ -344,10 +303,6 @@ object anon {
       
       inline def setAndroidUndefined: Self = StObject.set(x, "android", js.undefined)
       
-      inline def setAppKey(value: String): Self = StObject.set(x, "appKey", value.asInstanceOf[js.Any])
-      
-      inline def setAppKeyUndefined: Self = StObject.set(x, "appKey", js.undefined)
-      
       inline def setAssetBundlePatterns(value: js.Array[String]): Self = StObject.set(x, "assetBundlePatterns", value.asInstanceOf[js.Any])
       
       inline def setAssetBundlePatternsUndefined: Self = StObject.set(x, "assetBundlePatterns", js.undefined)
@@ -385,30 +340,6 @@ object anon {
       inline def setExtra(value: StringDictionary[Any]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
       inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
-      
-      inline def setFacebookAdvertiserIDCollectionEnabled(value: Boolean): Self = StObject.set(x, "facebookAdvertiserIDCollectionEnabled", value.asInstanceOf[js.Any])
-      
-      inline def setFacebookAdvertiserIDCollectionEnabledUndefined: Self = StObject.set(x, "facebookAdvertiserIDCollectionEnabled", js.undefined)
-      
-      inline def setFacebookAppId(value: String): Self = StObject.set(x, "facebookAppId", value.asInstanceOf[js.Any])
-      
-      inline def setFacebookAppIdUndefined: Self = StObject.set(x, "facebookAppId", js.undefined)
-      
-      inline def setFacebookAutoInitEnabled(value: Boolean): Self = StObject.set(x, "facebookAutoInitEnabled", value.asInstanceOf[js.Any])
-      
-      inline def setFacebookAutoInitEnabledUndefined: Self = StObject.set(x, "facebookAutoInitEnabled", js.undefined)
-      
-      inline def setFacebookAutoLogAppEventsEnabled(value: Boolean): Self = StObject.set(x, "facebookAutoLogAppEventsEnabled", value.asInstanceOf[js.Any])
-      
-      inline def setFacebookAutoLogAppEventsEnabledUndefined: Self = StObject.set(x, "facebookAutoLogAppEventsEnabled", js.undefined)
-      
-      inline def setFacebookDisplayName(value: String): Self = StObject.set(x, "facebookDisplayName", value.asInstanceOf[js.Any])
-      
-      inline def setFacebookDisplayNameUndefined: Self = StObject.set(x, "facebookDisplayName", js.undefined)
-      
-      inline def setFacebookScheme(value: String): Self = StObject.set(x, "facebookScheme", value.asInstanceOf[js.Any])
-      
-      inline def setFacebookSchemeUndefined: Self = StObject.set(x, "facebookScheme", js.undefined)
       
       inline def setGithubUrl(value: String): Self = StObject.set(x, "githubUrl", value.asInstanceOf[js.Any])
       
@@ -542,31 +473,6 @@ object anon {
       inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
       inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
-    }
-  }
-  
-  /* Inlined std.Pick<@expo/config-types.@expo/config-types.ExpoConfig, 'owner' | 'slug'> */
-  trait PickExpoConfigownerslug extends StObject {
-    
-    var owner: js.UndefOr[String] = js.undefined
-    
-    var slug: String
-  }
-  object PickExpoConfigownerslug {
-    
-    inline def apply(slug: String): PickExpoConfigownerslug = {
-      val __obj = js.Dynamic.literal(slug = slug.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PickExpoConfigownerslug]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: PickExpoConfigownerslug] (val x: Self) extends AnyVal {
-      
-      inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
-      
-      inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
-      
-      inline def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
     }
   }
   

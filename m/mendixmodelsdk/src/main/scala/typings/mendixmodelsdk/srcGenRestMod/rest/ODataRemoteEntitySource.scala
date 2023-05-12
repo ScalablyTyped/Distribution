@@ -108,6 +108,12 @@ open class ODataRemoteEntitySource protected () extends QueryBasedRemoteEntitySo
   def remoteName_=(newValue: String): Unit = js.native
   
   /**
+    * In version 9.21.0: introduced
+    */
+  def skipSupported: Boolean = js.native
+  def skipSupported_=(newValue: Boolean): Unit = js.native
+  
+  /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * @ignore
@@ -117,6 +123,12 @@ open class ODataRemoteEntitySource protected () extends QueryBasedRemoteEntitySo
   def sourceDocumentQualifiedName: String | Null = js.native
   
   def sourceDocument_=(newValue: IConsumedODataService | Null): Unit = js.native
+  
+  /**
+    * In version 9.21.0: introduced
+    */
+  def topSupported: Boolean = js.native
+  def topSupported_=(newValue: Boolean): Unit = js.native
 }
 object ODataRemoteEntitySource {
   

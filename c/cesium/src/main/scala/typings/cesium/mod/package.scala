@@ -9,6 +9,7 @@ import typings.cesium.anon.Layers
 import typings.cesium.anon.RequestVertexNormals
 import typings.cesium.anon.Style
 import typings.cesium.anon.`0`
+import typings.cesium.mod.Cesium3DTileset.ConstructorOptions
 import typings.cesium.mod.^
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
@@ -73,18 +74,32 @@ inline def createCommand(func: js.Function1[/* repeated */ Any, Any], canExecute
 
 inline def createElevationBandMaterial(options: Layers): Material = ^.asInstanceOf[js.Dynamic].applyDynamic("createElevationBandMaterial")(options.asInstanceOf[js.Any]).asInstanceOf[Material]
 
+inline def createGooglePhotorealistic3DTileset(): js.Promise[Cesium3DTileset] = ^.asInstanceOf[js.Dynamic].applyDynamic("createGooglePhotorealistic3DTileset")().asInstanceOf[js.Promise[Cesium3DTileset]]
+inline def createGooglePhotorealistic3DTileset(key: String): js.Promise[Cesium3DTileset] = ^.asInstanceOf[js.Dynamic].applyDynamic("createGooglePhotorealistic3DTileset")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Cesium3DTileset]]
+inline def createGooglePhotorealistic3DTileset(key: String, options: ConstructorOptions): js.Promise[Cesium3DTileset] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGooglePhotorealistic3DTileset")(key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Cesium3DTileset]]
+inline def createGooglePhotorealistic3DTileset(key: Unit, options: ConstructorOptions): js.Promise[Cesium3DTileset] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGooglePhotorealistic3DTileset")(key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Cesium3DTileset]]
+
 inline def createGuid(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createGuid")().asInstanceOf[String]
 
 inline def createOsmBuildings(): Cesium3DTileset = ^.asInstanceOf[js.Dynamic].applyDynamic("createOsmBuildings")().asInstanceOf[Cesium3DTileset]
 inline def createOsmBuildings(options: DefaultColor): Cesium3DTileset = ^.asInstanceOf[js.Dynamic].applyDynamic("createOsmBuildings")(options.asInstanceOf[js.Any]).asInstanceOf[Cesium3DTileset]
+
+inline def createOsmBuildingsAsync(): js.Promise[Cesium3DTileset] = ^.asInstanceOf[js.Dynamic].applyDynamic("createOsmBuildingsAsync")().asInstanceOf[js.Promise[Cesium3DTileset]]
+inline def createOsmBuildingsAsync(options: DefaultColor): js.Promise[Cesium3DTileset] = ^.asInstanceOf[js.Dynamic].applyDynamic("createOsmBuildingsAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Cesium3DTileset]]
 
 inline def createTangentSpaceDebugPrimitive(options: GeometryLength): Primitive = ^.asInstanceOf[js.Dynamic].applyDynamic("createTangentSpaceDebugPrimitive")(options.asInstanceOf[js.Any]).asInstanceOf[Primitive]
 
 inline def createWorldImagery(): IonImageryProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("createWorldImagery")().asInstanceOf[IonImageryProvider]
 inline def createWorldImagery(options: Style): IonImageryProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("createWorldImagery")(options.asInstanceOf[js.Any]).asInstanceOf[IonImageryProvider]
 
+inline def createWorldImageryAsync(): js.Promise[IonImageryProvider] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWorldImageryAsync")().asInstanceOf[js.Promise[IonImageryProvider]]
+inline def createWorldImageryAsync(options: Style): js.Promise[IonImageryProvider] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWorldImageryAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IonImageryProvider]]
+
 inline def createWorldTerrain(): CesiumTerrainProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("createWorldTerrain")().asInstanceOf[CesiumTerrainProvider]
 inline def createWorldTerrain(options: RequestVertexNormals): CesiumTerrainProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("createWorldTerrain")(options.asInstanceOf[js.Any]).asInstanceOf[CesiumTerrainProvider]
+
+inline def createWorldTerrainAsync(): js.Promise[CesiumTerrainProvider] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWorldTerrainAsync")().asInstanceOf[js.Promise[CesiumTerrainProvider]]
+inline def createWorldTerrainAsync(options: RequestVertexNormals): js.Promise[CesiumTerrainProvider] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWorldTerrainAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CesiumTerrainProvider]]
 
 inline def defaultValue(a: Any, b: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultValue")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Any]
 
@@ -118,6 +133,8 @@ inline def includesReverseAxis: js.Array[Double] = ^.asInstanceOf[js.Dynamic].se
 
 inline def isLeapYear(year: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLeapYear")(year.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
+inline def loadGltfJson(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadGltfJson")().asInstanceOf[Unit]
+
 inline def mergeSort(array: js.Array[Any], comparator: mergeSortComparator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeSort")(array.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def mergeSort(array: js.Array[Any], comparator: mergeSortComparator, userDefinedObject: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeSort")(array.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any], userDefinedObject.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
@@ -148,6 +165,8 @@ inline def sampleTerrain(terrainProvider: TerrainProvider, level: Double, positi
 
 inline def sampleTerrainMostDetailed(terrainProvider: TerrainProvider, positions: js.Array[Cartographic]): js.Promise[js.Array[Cartographic]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sampleTerrainMostDetailed")(terrainProvider.asInstanceOf[js.Any], positions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Cartographic]]]
 
+inline def shaderMaximumIntersectionsLength: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("shaderMaximumIntersectionsLength").asInstanceOf[Double]
+
 inline def subdivideArray(array: js.Array[Any], numberOfArrays: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("subdivideArray")(array.asInstanceOf[js.Any], numberOfArrays.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def viewerCesium3DTilesInspectorMixin(viewer: Viewer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("viewerCesium3DTilesInspectorMixin")(viewer.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -159,6 +178,8 @@ inline def viewerDragDropMixin(viewer: Viewer, options: ClearOnDrop): Unit = (^.
 
 inline def viewerPerformanceWatchdogMixin(viewer: Viewer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("viewerPerformanceWatchdogMixin")(viewer.asInstanceOf[js.Any]).asInstanceOf[Unit]
 inline def viewerPerformanceWatchdogMixin(viewer: Viewer, options: `0`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("viewerPerformanceWatchdogMixin")(viewer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def viewerVoxelInspectorMixin(viewer: Viewer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("viewerVoxelInspectorMixin")(viewer.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
 inline def writeTextToCanvas(text: String): js.UndefOr[HTMLCanvasElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("writeTextToCanvas")(text.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[HTMLCanvasElement]]
 inline def writeTextToCanvas(text: String, options: BackgroundColor): js.UndefOr[HTMLCanvasElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeTextToCanvas")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[HTMLCanvasElement]]

@@ -79,6 +79,8 @@ trait PostProcess extends StObject {
   
   /* protected */ var _scene: Scene = js.native
   
+  /* private */ var _shaderLanguage: Any = js.native
+  
   /* private */ var _shareOutputWithPostProcess: Any = js.native
   
   /* private */ var _texelSize: Any = js.native
@@ -183,6 +185,12 @@ trait PostProcess extends StObject {
   var externalTextureSamplerBinding: Boolean = js.native
   
   /**
+    * If clearing the buffer should be forced in autoClear mode, even when alpha mode is enabled (default: false).
+    * By default, the buffer will only be cleared if alpha mode is disabled (and autoClear is true).
+    */
+  var forceAutoClearInAlphaMode: Boolean = js.native
+  
+  /**
     * Force the postprocess to be applied without taking in account viewport
     */
   var forceFullscreenViewport: Boolean = js.native
@@ -231,7 +239,7 @@ trait PostProcess extends StObject {
   
   /**
     * List of inspectable custom properties (used by the Inspector)
-    * @see https://doc.babylonjs.com/how_to/debug_layer#extensibility
+    * @see https://doc.babylonjs.com/toolsAndResources/inspector#extensibility
     */
   var inspectableCustomProperties: js.Array[IInspectable] = js.native
   

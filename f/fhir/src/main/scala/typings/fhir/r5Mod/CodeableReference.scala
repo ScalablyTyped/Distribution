@@ -9,7 +9,7 @@ trait CodeableReference
      with Element {
   
   /**
-    * A reference to a concept - e.g. the information is identified by it's general classto the degree of precision found in the terminology.
+    * A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.
     */
   var concept: js.UndefOr[CodeableConcept] = js.undefined
   

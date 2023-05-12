@@ -16,7 +16,7 @@ object libIconsLockFilledMod extends Shortcut {
   @js.native
   trait LockFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_LockFilledIconType: String = js.native

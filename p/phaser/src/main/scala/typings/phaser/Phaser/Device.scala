@@ -15,6 +15,11 @@ object Device {
   trait Audio extends StObject {
     
     /**
+      * Can this device can play aac files.
+      */
+    var aac: Boolean
+    
+    /**
       * Can this device play HTML Audio tags?
       */
     var audioData: Boolean
@@ -23,6 +28,11 @@ object Device {
       * Can this device play EC-3 Dolby Digital Plus files?
       */
     var dolby: Boolean
+    
+    /**
+      * Can this device can play flac files.
+      */
+    var flac: Boolean
     
     /**
       * Can this device can play m4a files.
@@ -62,8 +72,10 @@ object Device {
   object Audio {
     
     inline def apply(
+      aac: Boolean,
       audioData: Boolean,
       dolby: Boolean,
+      flac: Boolean,
       m4a: Boolean,
       mp3: Boolean,
       ogg: Boolean,
@@ -72,16 +84,20 @@ object Device {
       webAudio: Boolean,
       webm: Boolean
     ): Audio = {
-      val __obj = js.Dynamic.literal(audioData = audioData.asInstanceOf[js.Any], dolby = dolby.asInstanceOf[js.Any], m4a = m4a.asInstanceOf[js.Any], mp3 = mp3.asInstanceOf[js.Any], ogg = ogg.asInstanceOf[js.Any], opus = opus.asInstanceOf[js.Any], wav = wav.asInstanceOf[js.Any], webAudio = webAudio.asInstanceOf[js.Any], webm = webm.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(aac = aac.asInstanceOf[js.Any], audioData = audioData.asInstanceOf[js.Any], dolby = dolby.asInstanceOf[js.Any], flac = flac.asInstanceOf[js.Any], m4a = m4a.asInstanceOf[js.Any], mp3 = mp3.asInstanceOf[js.Any], ogg = ogg.asInstanceOf[js.Any], opus = opus.asInstanceOf[js.Any], wav = wav.asInstanceOf[js.Any], webAudio = webAudio.asInstanceOf[js.Any], webm = webm.asInstanceOf[js.Any])
       __obj.asInstanceOf[Audio]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: Audio] (val x: Self) extends AnyVal {
       
+      inline def setAac(value: Boolean): Self = StObject.set(x, "aac", value.asInstanceOf[js.Any])
+      
       inline def setAudioData(value: Boolean): Self = StObject.set(x, "audioData", value.asInstanceOf[js.Any])
       
       inline def setDolby(value: Boolean): Self = StObject.set(x, "dolby", value.asInstanceOf[js.Any])
+      
+      inline def setFlac(value: Boolean): Self = StObject.set(x, "flac", value.asInstanceOf[js.Any])
       
       inline def setM4a(value: Boolean): Self = StObject.set(x, "m4a", value.asInstanceOf[js.Any])
       
@@ -282,7 +298,7 @@ object Device {
     /**
       * True if canvas supports a 'copy' bitblt onto itself when the source and destination regions overlap.
       */
-    var canvasBitBltShift: Boolean
+    var canvasBitBltShift: Boolean | Null
     
     /**
       * Is file available?
@@ -315,6 +331,11 @@ object Device {
     var pointerLock: Boolean
     
     /**
+      * Is Array.sort stable?
+      */
+    var stableSort: Boolean
+    
+    /**
       * Does the device context support 32bit pixel manipulation using array buffer views?
       */
     var support32bit: Boolean
@@ -338,19 +359,19 @@ object Device {
     
     inline def apply(
       canvas: Boolean,
-      canvasBitBltShift: Boolean,
       file: Boolean,
       fileSystem: Boolean,
       getUserMedia: Boolean,
       littleEndian: Boolean,
       localStorage: Boolean,
       pointerLock: Boolean,
+      stableSort: Boolean,
       support32bit: Boolean,
       vibration: Boolean,
       webGL: Boolean,
       worker: Boolean
     ): Features = {
-      val __obj = js.Dynamic.literal(canvas = canvas.asInstanceOf[js.Any], canvasBitBltShift = canvasBitBltShift.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], fileSystem = fileSystem.asInstanceOf[js.Any], getUserMedia = getUserMedia.asInstanceOf[js.Any], littleEndian = littleEndian.asInstanceOf[js.Any], localStorage = localStorage.asInstanceOf[js.Any], pointerLock = pointerLock.asInstanceOf[js.Any], support32bit = support32bit.asInstanceOf[js.Any], vibration = vibration.asInstanceOf[js.Any], webGL = webGL.asInstanceOf[js.Any], worker = worker.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(canvas = canvas.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], fileSystem = fileSystem.asInstanceOf[js.Any], getUserMedia = getUserMedia.asInstanceOf[js.Any], littleEndian = littleEndian.asInstanceOf[js.Any], localStorage = localStorage.asInstanceOf[js.Any], pointerLock = pointerLock.asInstanceOf[js.Any], stableSort = stableSort.asInstanceOf[js.Any], support32bit = support32bit.asInstanceOf[js.Any], vibration = vibration.asInstanceOf[js.Any], webGL = webGL.asInstanceOf[js.Any], worker = worker.asInstanceOf[js.Any], canvasBitBltShift = null)
       __obj.asInstanceOf[Features]
     }
     
@@ -360,6 +381,8 @@ object Device {
       inline def setCanvas(value: Boolean): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
       
       inline def setCanvasBitBltShift(value: Boolean): Self = StObject.set(x, "canvasBitBltShift", value.asInstanceOf[js.Any])
+      
+      inline def setCanvasBitBltShiftNull: Self = StObject.set(x, "canvasBitBltShift", null)
       
       inline def setFile(value: Boolean): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -372,6 +395,8 @@ object Device {
       inline def setLocalStorage(value: Boolean): Self = StObject.set(x, "localStorage", value.asInstanceOf[js.Any])
       
       inline def setPointerLock(value: Boolean): Self = StObject.set(x, "pointerLock", value.asInstanceOf[js.Any])
+      
+      inline def setStableSort(value: Boolean): Self = StObject.set(x, "stableSort", value.asInstanceOf[js.Any])
       
       inline def setSupport32bit(value: Boolean): Self = StObject.set(x, "support32bit", value.asInstanceOf[js.Any])
       
@@ -457,12 +482,12 @@ object Device {
     /**
       * The newest type of Wheel/Scroll event supported: 'wheel', 'mousewheel', 'DOMMouseScroll'
       */
-    var wheelType: String
+    var wheelType: String | Null
   }
   object Input {
     
-    inline def apply(gamepads: Boolean, mspointer: Boolean, touch: Boolean, wheelType: String): typings.phaser.Phaser.Device.Input = {
-      val __obj = js.Dynamic.literal(gamepads = gamepads.asInstanceOf[js.Any], mspointer = mspointer.asInstanceOf[js.Any], touch = touch.asInstanceOf[js.Any], wheelType = wheelType.asInstanceOf[js.Any])
+    inline def apply(gamepads: Boolean, mspointer: Boolean, touch: Boolean): typings.phaser.Phaser.Device.Input = {
+      val __obj = js.Dynamic.literal(gamepads = gamepads.asInstanceOf[js.Any], mspointer = mspointer.asInstanceOf[js.Any], touch = touch.asInstanceOf[js.Any], wheelType = null)
       __obj.asInstanceOf[typings.phaser.Phaser.Device.Input]
     }
     
@@ -476,6 +501,8 @@ object Device {
       inline def setTouch(value: Boolean): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
       
       inline def setWheelType(value: String): Self = StObject.set(x, "wheelType", value.asInstanceOf[js.Any])
+      
+      inline def setWheelTypeNull: Self = StObject.set(x, "wheelType", null)
     }
   }
   
@@ -662,13 +689,20 @@ object Device {
   
   /**
     * Determines the video support of the browser running this Phaser Game instance.
+    * 
     * These values are read-only and populated during the boot sequence of the game.
+    * 
     * They are then referenced by internal game systems and are available for you to access
     * via `this.sys.game.device.video` from within any Scene.
     * 
     * In Phaser 3.20 the properties were renamed to drop the 'Video' suffix.
     */
   trait Video extends StObject {
+    
+    /**
+      * Returns the first video URL that can be played by this browser.
+      */
+    var getVideoURL: js.Function
     
     /**
       * Can this device play h264 mp4 video files?
@@ -679,6 +713,11 @@ object Device {
       * Can this device play hls video files?
       */
     var hls: Boolean
+    
+    /**
+      * Can this device play m4v (typically mp4) video files?
+      */
+    var m4v: Boolean
     
     /**
       * Can this device play h264 mp4 video files?
@@ -702,17 +741,30 @@ object Device {
   }
   object Video {
     
-    inline def apply(h264: Boolean, hls: Boolean, mp4: Boolean, ogg: Boolean, vp9: Boolean, webm: Boolean): Video = {
-      val __obj = js.Dynamic.literal(h264 = h264.asInstanceOf[js.Any], hls = hls.asInstanceOf[js.Any], mp4 = mp4.asInstanceOf[js.Any], ogg = ogg.asInstanceOf[js.Any], vp9 = vp9.asInstanceOf[js.Any], webm = webm.asInstanceOf[js.Any])
+    inline def apply(
+      getVideoURL: js.Function,
+      h264: Boolean,
+      hls: Boolean,
+      m4v: Boolean,
+      mp4: Boolean,
+      ogg: Boolean,
+      vp9: Boolean,
+      webm: Boolean
+    ): Video = {
+      val __obj = js.Dynamic.literal(getVideoURL = getVideoURL.asInstanceOf[js.Any], h264 = h264.asInstanceOf[js.Any], hls = hls.asInstanceOf[js.Any], m4v = m4v.asInstanceOf[js.Any], mp4 = mp4.asInstanceOf[js.Any], ogg = ogg.asInstanceOf[js.Any], vp9 = vp9.asInstanceOf[js.Any], webm = webm.asInstanceOf[js.Any])
       __obj.asInstanceOf[Video]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: Video] (val x: Self) extends AnyVal {
       
+      inline def setGetVideoURL(value: js.Function): Self = StObject.set(x, "getVideoURL", value.asInstanceOf[js.Any])
+      
       inline def setH264(value: Boolean): Self = StObject.set(x, "h264", value.asInstanceOf[js.Any])
       
       inline def setHls(value: Boolean): Self = StObject.set(x, "hls", value.asInstanceOf[js.Any])
+      
+      inline def setM4v(value: Boolean): Self = StObject.set(x, "m4v", value.asInstanceOf[js.Any])
       
       inline def setMp4(value: Boolean): Self = StObject.set(x, "mp4", value.asInstanceOf[js.Any])
       

@@ -1,11 +1,17 @@
 package typings.consumerDataStandards
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.consumerDataStandards.consumerDataStandardsStrings.A256GCM
 import typings.consumerDataStandards.consumerDataStandardsStrings.ES256
 import typings.consumerDataStandards.consumerDataStandardsStrings.PS256
+import typings.consumerDataStandards.consumerDataStandardsStrings.`A128CBC-HS256`
+import typings.consumerDataStandards.consumerDataStandardsStrings.`RSA-OAEP-256`
+import typings.consumerDataStandards.consumerDataStandardsStrings.`RSA-OAEP`
 import typings.consumerDataStandards.consumerDataStandardsStrings.`code id_token`
+import typings.consumerDataStandards.consumerDataStandardsStrings.`data-recipient-software-product`
 import typings.consumerDataStandards.consumerDataStandardsStrings.authorization_code
 import typings.consumerDataStandards.consumerDataStandardsStrings.client_credentials
+import typings.consumerDataStandards.consumerDataStandardsStrings.code
 import typings.consumerDataStandards.consumerDataStandardsStrings.invalid_client_metadata
 import typings.consumerDataStandards.consumerDataStandardsStrings.invalid_redirect_uri
 import typings.consumerDataStandards.consumerDataStandardsStrings.invalid_software_statement
@@ -404,6 +410,21 @@ object dcrMod {
     var application_type: js.UndefOr[web | Null] = js.undefined
     
     /**
+      * The JWE `alg` algorithm required for encrypting authorization responses. If unspecified, the default is that no encryption is performed.<br><br>Required if “authorization_encrypted_response_enc” is included.
+      */
+    var authorization_encrypted_response_alg: js.UndefOr[`RSA-OAEP` | `RSA-OAEP-256` | Null] = js.undefined
+    
+    /**
+      * The JWE `enc` algorithm required for encrypting authorization responses. If “authorization_encrypted_response_alg” is specified, the default for this value is “A128CBC-HS256”.
+      */
+    var authorization_encrypted_response_enc: js.UndefOr[A256GCM | `A128CBC-HS256` | Null] = js.undefined
+    
+    /**
+      * The JWS `alg` algorithm required for signing authorization responses. If this is specified, the response will be signed using JWS and the configured algorithm. The algorithm “none” is not allowed.<br><br>Required if response_type of “code” is registered by the client.
+      */
+    var authorization_signed_response_alg: js.UndefOr[PS256 | ES256 | Null] = js.undefined
+    
+    /**
       * Human-readable string name of the software product description to be presented to the end user during authorization
       */
     var client_description: String
@@ -446,7 +467,7 @@ object dcrMod {
     /**
       * Algorithm with which an id_token is to be signed
       */
-    var id_token_signed_response_alg: js.UndefOr[PS256 | ES256 | Null] = js.undefined
+    var id_token_signed_response_alg: PS256 | ES256
     
     /**
       * URL string referencing the client JSON Web Key (JWK) Set **[[RFC7517]](#nref-RFC7517)** document, which contains the client public keys
@@ -499,9 +520,9 @@ object dcrMod {
     var request_object_signing_alg: PS256 | ES256
     
     /**
-      * Array of the OAuth 2.0 response type strings that the client can use at the authorization endpoint.
+      * Array of the OAuth 2.0 response type strings that the client can use at the authorization endpoint.<br><br>Response type value `code` is required for Authorization Code Flow. Response type value `code id_token` is required for OIDC Hybrid Flow.
       */
-    var response_types: js.Array[`code id_token`]
+    var response_types: js.Array[code | (`code id_token`)]
     
     /**
       * URI string that references the location of the Software Product consent revocation endpoint
@@ -526,7 +547,7 @@ object dcrMod {
     /**
       * String containing a role of the software in the CDR Regime. Initially the only value used with be `data-recipient-software-product`
       */
-    var software_roles: js.UndefOr[String | Null] = js.undefined
+    var software_roles: js.UndefOr[`data-recipient-software-product` | Null] = js.undefined
     
     /**
       * The Software Statement Assertion, as defined in CDR standards
@@ -558,19 +579,20 @@ object dcrMod {
       grant_types: js.Array[client_credentials | authorization_code | refresh_token],
       id_token_encrypted_response_alg: String,
       id_token_encrypted_response_enc: String,
+      id_token_signed_response_alg: PS256 | ES256,
       jwks_uri: String,
       logo_uri: String,
       org_id: String,
       org_name: String,
       redirect_uris: js.Array[String],
       request_object_signing_alg: PS256 | ES256,
-      response_types: js.Array[`code id_token`],
+      response_types: js.Array[code | (`code id_token`)],
       scope: String,
       software_id: String,
       software_statement: String,
       token_endpoint_auth_signing_alg: PS256 | ES256
     ): RegistrationProperties = {
-      val __obj = js.Dynamic.literal(client_description = client_description.asInstanceOf[js.Any], client_id = client_id.asInstanceOf[js.Any], client_name = client_name.asInstanceOf[js.Any], client_uri = client_uri.asInstanceOf[js.Any], grant_types = grant_types.asInstanceOf[js.Any], id_token_encrypted_response_alg = id_token_encrypted_response_alg.asInstanceOf[js.Any], id_token_encrypted_response_enc = id_token_encrypted_response_enc.asInstanceOf[js.Any], jwks_uri = jwks_uri.asInstanceOf[js.Any], logo_uri = logo_uri.asInstanceOf[js.Any], org_id = org_id.asInstanceOf[js.Any], org_name = org_name.asInstanceOf[js.Any], redirect_uris = redirect_uris.asInstanceOf[js.Any], request_object_signing_alg = request_object_signing_alg.asInstanceOf[js.Any], response_types = response_types.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], software_id = software_id.asInstanceOf[js.Any], software_statement = software_statement.asInstanceOf[js.Any], token_endpoint_auth_method = "private_key_jwt", token_endpoint_auth_signing_alg = token_endpoint_auth_signing_alg.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(client_description = client_description.asInstanceOf[js.Any], client_id = client_id.asInstanceOf[js.Any], client_name = client_name.asInstanceOf[js.Any], client_uri = client_uri.asInstanceOf[js.Any], grant_types = grant_types.asInstanceOf[js.Any], id_token_encrypted_response_alg = id_token_encrypted_response_alg.asInstanceOf[js.Any], id_token_encrypted_response_enc = id_token_encrypted_response_enc.asInstanceOf[js.Any], id_token_signed_response_alg = id_token_signed_response_alg.asInstanceOf[js.Any], jwks_uri = jwks_uri.asInstanceOf[js.Any], logo_uri = logo_uri.asInstanceOf[js.Any], org_id = org_id.asInstanceOf[js.Any], org_name = org_name.asInstanceOf[js.Any], redirect_uris = redirect_uris.asInstanceOf[js.Any], request_object_signing_alg = request_object_signing_alg.asInstanceOf[js.Any], response_types = response_types.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], software_id = software_id.asInstanceOf[js.Any], software_statement = software_statement.asInstanceOf[js.Any], token_endpoint_auth_method = "private_key_jwt", token_endpoint_auth_signing_alg = token_endpoint_auth_signing_alg.asInstanceOf[js.Any])
       __obj.asInstanceOf[RegistrationProperties]
     }
     
@@ -582,6 +604,24 @@ object dcrMod {
       inline def setApplication_typeNull: Self = StObject.set(x, "application_type", null)
       
       inline def setApplication_typeUndefined: Self = StObject.set(x, "application_type", js.undefined)
+      
+      inline def setAuthorization_encrypted_response_alg(value: `RSA-OAEP` | `RSA-OAEP-256`): Self = StObject.set(x, "authorization_encrypted_response_alg", value.asInstanceOf[js.Any])
+      
+      inline def setAuthorization_encrypted_response_algNull: Self = StObject.set(x, "authorization_encrypted_response_alg", null)
+      
+      inline def setAuthorization_encrypted_response_algUndefined: Self = StObject.set(x, "authorization_encrypted_response_alg", js.undefined)
+      
+      inline def setAuthorization_encrypted_response_enc(value: A256GCM | `A128CBC-HS256`): Self = StObject.set(x, "authorization_encrypted_response_enc", value.asInstanceOf[js.Any])
+      
+      inline def setAuthorization_encrypted_response_encNull: Self = StObject.set(x, "authorization_encrypted_response_enc", null)
+      
+      inline def setAuthorization_encrypted_response_encUndefined: Self = StObject.set(x, "authorization_encrypted_response_enc", js.undefined)
+      
+      inline def setAuthorization_signed_response_alg(value: PS256 | ES256): Self = StObject.set(x, "authorization_signed_response_alg", value.asInstanceOf[js.Any])
+      
+      inline def setAuthorization_signed_response_algNull: Self = StObject.set(x, "authorization_signed_response_alg", null)
+      
+      inline def setAuthorization_signed_response_algUndefined: Self = StObject.set(x, "authorization_signed_response_alg", js.undefined)
       
       inline def setClient_description(value: String): Self = StObject.set(x, "client_description", value.asInstanceOf[js.Any])
       
@@ -606,10 +646,6 @@ object dcrMod {
       inline def setId_token_encrypted_response_enc(value: String): Self = StObject.set(x, "id_token_encrypted_response_enc", value.asInstanceOf[js.Any])
       
       inline def setId_token_signed_response_alg(value: PS256 | ES256): Self = StObject.set(x, "id_token_signed_response_alg", value.asInstanceOf[js.Any])
-      
-      inline def setId_token_signed_response_algNull: Self = StObject.set(x, "id_token_signed_response_alg", null)
-      
-      inline def setId_token_signed_response_algUndefined: Self = StObject.set(x, "id_token_signed_response_alg", js.undefined)
       
       inline def setJwks_uri(value: String): Self = StObject.set(x, "jwks_uri", value.asInstanceOf[js.Any])
       
@@ -649,9 +685,9 @@ object dcrMod {
       
       inline def setRequest_object_signing_alg(value: PS256 | ES256): Self = StObject.set(x, "request_object_signing_alg", value.asInstanceOf[js.Any])
       
-      inline def setResponse_types(value: js.Array[`code id_token`]): Self = StObject.set(x, "response_types", value.asInstanceOf[js.Any])
+      inline def setResponse_types(value: js.Array[code | (`code id_token`)]): Self = StObject.set(x, "response_types", value.asInstanceOf[js.Any])
       
-      inline def setResponse_typesVarargs(value: (`code id_token`)*): Self = StObject.set(x, "response_types", js.Array(value*))
+      inline def setResponse_typesVarargs(value: (code | (`code id_token`))*): Self = StObject.set(x, "response_types", js.Array(value*))
       
       inline def setRevocation_uri(value: String): Self = StObject.set(x, "revocation_uri", value.asInstanceOf[js.Any])
       
@@ -669,7 +705,7 @@ object dcrMod {
       
       inline def setSoftware_id(value: String): Self = StObject.set(x, "software_id", value.asInstanceOf[js.Any])
       
-      inline def setSoftware_roles(value: String): Self = StObject.set(x, "software_roles", value.asInstanceOf[js.Any])
+      inline def setSoftware_roles(value: `data-recipient-software-product`): Self = StObject.set(x, "software_roles", value.asInstanceOf[js.Any])
       
       inline def setSoftware_rolesNull: Self = StObject.set(x, "software_roles", null)
       

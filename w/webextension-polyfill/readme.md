@@ -1,7 +1,7 @@
 
 # Scala.js typings for webextension-polyfill
 
-Typings are for version 0.9
+Typings are for version 0.10
 
 ## Library description:
 A lightweight polyfill library for Promise-based WebExtension APIs in Chrome.

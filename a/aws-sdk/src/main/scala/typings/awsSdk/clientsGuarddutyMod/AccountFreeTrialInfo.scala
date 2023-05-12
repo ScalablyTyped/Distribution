@@ -15,6 +15,11 @@ trait AccountFreeTrialInfo extends StObject {
     * Describes the data source enabled for the GuardDuty member account.
     */
   var DataSources: js.UndefOr[DataSourcesFreeTrial] = js.undefined
+  
+  /**
+    * A list of features enabled for the GuardDuty account.
+    */
+  var Features: js.UndefOr[FreeTrialFeatureConfigurationsResults] = js.undefined
 }
 object AccountFreeTrialInfo {
   
@@ -33,5 +38,11 @@ object AccountFreeTrialInfo {
     inline def setDataSources(value: DataSourcesFreeTrial): Self = StObject.set(x, "DataSources", value.asInstanceOf[js.Any])
     
     inline def setDataSourcesUndefined: Self = StObject.set(x, "DataSources", js.undefined)
+    
+    inline def setFeatures(value: FreeTrialFeatureConfigurationsResults): Self = StObject.set(x, "Features", value.asInstanceOf[js.Any])
+    
+    inline def setFeaturesUndefined: Self = StObject.set(x, "Features", js.undefined)
+    
+    inline def setFeaturesVarargs(value: FreeTrialFeatureConfigurationResult*): Self = StObject.set(x, "Features", js.Array(value*))
   }
 }

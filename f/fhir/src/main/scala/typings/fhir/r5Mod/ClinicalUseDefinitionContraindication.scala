@@ -9,12 +9,17 @@ trait ClinicalUseDefinitionContraindication
      with BackboneElement {
   
   /**
+    * The expression may be inlined or may be a reference to a named expression within a logic library referenced by the library element.
+    */
+  var applicability: js.UndefOr[Expression] = js.undefined
+  
+  /**
     * A comorbidity (concurrent condition) or coinfection.
     */
   var comorbidity: js.UndefOr[js.Array[CodeableReference]] = js.undefined
   
   /**
-    * The status of the disease or symptom for the contraindication.
+    * The status of the disease or symptom for the contraindication, for example "chronic" or "metastatic".
     */
   var diseaseStatus: js.UndefOr[CodeableReference] = js.undefined
   
@@ -42,6 +47,10 @@ object ClinicalUseDefinitionContraindication {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: ClinicalUseDefinitionContraindication] (val x: Self) extends AnyVal {
+    
+    inline def setApplicability(value: Expression): Self = StObject.set(x, "applicability", value.asInstanceOf[js.Any])
+    
+    inline def setApplicabilityUndefined: Self = StObject.set(x, "applicability", js.undefined)
     
     inline def setComorbidity(value: js.Array[CodeableReference]): Self = StObject.set(x, "comorbidity", value.asInstanceOf[js.Any])
     

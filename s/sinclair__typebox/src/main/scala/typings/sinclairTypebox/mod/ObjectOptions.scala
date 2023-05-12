@@ -8,7 +8,7 @@ trait ObjectOptions
   extends StObject
      with SchemaOptions {
   
-  var additionalProperties: js.UndefOr[Boolean] = js.undefined
+  var additionalProperties: js.UndefOr[TAdditionalProperties] = js.undefined
   
   var maxProperties: js.UndefOr[Double] = js.undefined
   
@@ -24,7 +24,7 @@ object ObjectOptions {
   @scala.inline
   implicit open class MutableBuilder[Self <: ObjectOptions] (val x: Self) extends AnyVal {
     
-    inline def setAdditionalProperties(value: Boolean): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
+    inline def setAdditionalProperties(value: TAdditionalProperties): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
     
     inline def setAdditionalPropertiesUndefined: Self = StObject.set(x, "additionalProperties", js.undefined)
     

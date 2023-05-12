@@ -777,6 +777,7 @@ object sapMSplitContainerMod {
     /**
       * Navigates back to the previous detail page found in the history.
       */
+    def backDetail(): Unit = js.native
     def backDetail(
       /**
       * This optional object can carry any payload data which should be made available to the target page of
@@ -791,7 +792,23 @@ object sapMSplitContainerMod {
       * When the transitionParameters object is used, this data object must also be given (either as object or
       * as null) in order to have a proper parameter order.
       */
-    oBackData: js.Object,
+    backData: js.Object
+    ): Unit = js.native
+    def backDetail(
+      /**
+      * This optional object can carry any payload data which should be made available to the target page of
+      * the back navigation. The event on the target page will contain this data object as backData property.
+      * (The original data from the to() navigation will still be available as data property.)
+      *
+      * In scenarios where the entity triggering the navigation can or should not directly initialize the target
+      * page, it can fill this object and the target page itself (or a listener on it) can take over the initialization,
+      * using the given data. For back navigation this can be used, for example, when returning from a detail
+      * page to transfer any settings done there.
+      *
+      * When the transitionParameters object is used, this data object must also be given (either as object or
+      * as null) in order to have a proper parameter order.
+      */
+    backData: js.Object,
       /**
       * This optional object can give additional information to the transition function, like the DOM element,
       * which triggered the transition or the desired transition duration. The animation type can NOT be selected
@@ -803,12 +820,41 @@ object sapMSplitContainerMod {
       * NOTE: it depends on the transition function how the object should be structured and which parameters
       * are actually used to influence the transition.
       */
-    oTransitionParameters: js.Object
+    transitionParameters: js.Object
+    ): Unit = js.native
+    def backDetail(
+      /**
+      * This optional object can carry any payload data which should be made available to the target page of
+      * the back navigation. The event on the target page will contain this data object as backData property.
+      * (The original data from the to() navigation will still be available as data property.)
+      *
+      * In scenarios where the entity triggering the navigation can or should not directly initialize the target
+      * page, it can fill this object and the target page itself (or a listener on it) can take over the initialization,
+      * using the given data. For back navigation this can be used, for example, when returning from a detail
+      * page to transfer any settings done there.
+      *
+      * When the transitionParameters object is used, this data object must also be given (either as object or
+      * as null) in order to have a proper parameter order.
+      */
+    backData: Unit,
+      /**
+      * This optional object can give additional information to the transition function, like the DOM element,
+      * which triggered the transition or the desired transition duration. The animation type can NOT be selected
+      * here - it is always the inverse of the "to" navigation.
+      *
+      * In order to use the transitionParameters property, the data property must be used (at least "null" must
+      * be given) for a proper parameter order.
+      *
+      * NOTE: it depends on the transition function how the object should be structured and which parameters
+      * are actually used to influence the transition.
+      */
+    transitionParameters: js.Object
     ): Unit = js.native
     
     /**
       * Navigates back to the previous master page which is found in the history.
       */
+    def backMaster(): Unit = js.native
     def backMaster(
       /**
       * This optional object can carry any payload data which should be made available to the target page of
@@ -823,7 +869,23 @@ object sapMSplitContainerMod {
       * When the transitionParameters object is used, this data object must also be given (either as object or
       * as null) in order to have a proper parameter order.
       */
-    oBackData: js.Object,
+    backData: js.Object
+    ): Unit = js.native
+    def backMaster(
+      /**
+      * This optional object can carry any payload data which should be made available to the target page of
+      * the back navigation. The event on the target page will contain this data object as backData property
+      * (the original data from the to() navigation will still be available as data property).
+      *
+      * In scenarios where the entity triggering the navigation can or should not directly initialize the target
+      * page, it can fill this object and the target page itself (or a listener on it) can take over the initialization,
+      * using the given data. For back navigation this can be used, for example, when returning from a detail
+      * page to transfer any settings done there.
+      *
+      * When the transitionParameters object is used, this data object must also be given (either as object or
+      * as null) in order to have a proper parameter order.
+      */
+    backData: js.Object,
       /**
       * This optional object can give additional information to the transition function, like the DOM element,
       * which triggered the transition or the desired transition duration. The animation type can NOT be selected
@@ -835,7 +897,35 @@ object sapMSplitContainerMod {
       * NOTE: it depends on the transition function how the object should be structured and which parameters
       * are actually used to influence the transition.
       */
-    oTransitionParameters: js.Object
+    transitionParameters: js.Object
+    ): Unit = js.native
+    def backMaster(
+      /**
+      * This optional object can carry any payload data which should be made available to the target page of
+      * the back navigation. The event on the target page will contain this data object as backData property
+      * (the original data from the to() navigation will still be available as data property).
+      *
+      * In scenarios where the entity triggering the navigation can or should not directly initialize the target
+      * page, it can fill this object and the target page itself (or a listener on it) can take over the initialization,
+      * using the given data. For back navigation this can be used, for example, when returning from a detail
+      * page to transfer any settings done there.
+      *
+      * When the transitionParameters object is used, this data object must also be given (either as object or
+      * as null) in order to have a proper parameter order.
+      */
+    backData: Unit,
+      /**
+      * This optional object can give additional information to the transition function, like the DOM element,
+      * which triggered the transition or the desired transition duration. The animation type can NOT be selected
+      * here - it is always the inverse of the "to" navigation.
+      *
+      * In order to use the transitionParameters property, the data property must be used (at least "null" must
+      * be given) for a proper parameter order.
+      *
+      * NOTE: it depends on the transition function how the object should be structured and which parameters
+      * are actually used to influence the transition.
+      */
+    transitionParameters: js.Object
     ): Unit = js.native
     
     /**
@@ -856,7 +946,13 @@ object sapMSplitContainerMod {
       /**
       * The screen to which is being navigated to. The ID or the control itself can be given.
       */
-    sPageId: String,
+    pageId: String
+    ): Unit = js.native
+    def backToPage(
+      /**
+      * The screen to which is being navigated to. The ID or the control itself can be given.
+      */
+    pageId: String,
       /**
       * This optional object can carry any payload data which should be made available to the target page of
       * the back navigation. The event on the target page will contain this data object as backData property.
@@ -870,7 +966,27 @@ object sapMSplitContainerMod {
       * When the transitionParameters object is used, this data object must also be given (either as object or
       * as null) in order to have a proper parameter order.
       */
-    oBackData: js.Object,
+    backData: js.Object
+    ): Unit = js.native
+    def backToPage(
+      /**
+      * The screen to which is being navigated to. The ID or the control itself can be given.
+      */
+    pageId: String,
+      /**
+      * This optional object can carry any payload data which should be made available to the target page of
+      * the back navigation. The event on the target page will contain this data object as backData property.
+      * (the original data from the to() navigation will still be available as data property).
+      *
+      * In scenarios, where the entity triggering the navigation can't or shouldn't directly initialize the target
+      * page, it can fill this object and the target page itself (or a listener on it) can take over the initialization,
+      * using the given data. For back navigation this can be used, for example, when returning from a detail
+      * page to transfer any settings done there.
+      *
+      * When the transitionParameters object is used, this data object must also be given (either as object or
+      * as null) in order to have a proper parameter order.
+      */
+    backData: js.Object,
       /**
       * This optional object can give additional information to the transition function, like the DOM element,
       * which triggered the transition or the desired transition duration. The animation type can NOT be selected
@@ -882,7 +998,39 @@ object sapMSplitContainerMod {
       * NOTE: it depends on the transition function how the object should be structured and which parameters
       * are actually used to influence the transition.
       */
-    oTransitionParameters: js.Object
+    transitionParameters: js.Object
+    ): Unit = js.native
+    def backToPage(
+      /**
+      * The screen to which is being navigated to. The ID or the control itself can be given.
+      */
+    pageId: String,
+      /**
+      * This optional object can carry any payload data which should be made available to the target page of
+      * the back navigation. The event on the target page will contain this data object as backData property.
+      * (the original data from the to() navigation will still be available as data property).
+      *
+      * In scenarios, where the entity triggering the navigation can't or shouldn't directly initialize the target
+      * page, it can fill this object and the target page itself (or a listener on it) can take over the initialization,
+      * using the given data. For back navigation this can be used, for example, when returning from a detail
+      * page to transfer any settings done there.
+      *
+      * When the transitionParameters object is used, this data object must also be given (either as object or
+      * as null) in order to have a proper parameter order.
+      */
+    backData: Unit,
+      /**
+      * This optional object can give additional information to the transition function, like the DOM element,
+      * which triggered the transition or the desired transition duration. The animation type can NOT be selected
+      * here - it is always the inverse of the "to" navigation.
+      *
+      * In order to use the transitionParameters property, the data property must be used (at least "null" must
+      * be given) for a proper parameter order.
+      *
+      * NOTE: it depends on the transition function how the object should be structured and which parameters
+      * are actually used to influence the transition.
+      */
+    transitionParameters: js.Object
     ): Unit = js.native
     
     /**
@@ -890,6 +1038,7 @@ object sapMSplitContainerMod {
       * the first added element). NOTE: If already on the initial page, nothing happens. The transition effect
       * which had been used to get to the current page is inverted and used for this navigation.
       */
+    def backToTopDetail(): Unit = js.native
     def backToTopDetail(
       /**
       * This optional object can carry any payload data which should be made available to the target page of
@@ -904,7 +1053,23 @@ object sapMSplitContainerMod {
       * When the transitionParameters object is used, this data object must also be given (either as object or
       * as null) in order to have a proper parameter order.
       */
-    oBackData: js.Object,
+    backData: js.Object
+    ): Unit = js.native
+    def backToTopDetail(
+      /**
+      * This optional object can carry any payload data which should be made available to the target page of
+      * the back navigation. The event on the target page will contain this data object as backData property
+      * (the original data from the to() navigation will still be available as data property).
+      *
+      * In scenarios where the entity triggering the navigation can or should not directly initialize the target
+      * page, it can fill this object and the target page itself (or a listener on it) can take over the initialization,
+      * using the given data. For back navigation this can be used, for example, when returning from a detail
+      * page to transfer any settings done there.
+      *
+      * When the transitionParameters object is used, this data object must also be given (either as object or
+      * as null) in order to have a proper parameter order.
+      */
+    backData: js.Object,
       /**
       * This optional object can give additional information to the transition function, like the DOM element,
       * which triggered the transition or the desired transition duration. The animation type can NOT be selected
@@ -916,7 +1081,35 @@ object sapMSplitContainerMod {
       * NOTE: it depends on the transition function how the object should be structured and which parameters
       * are actually used to influence the transition.
       */
-    oTransitionParameters: js.Object
+    transitionParameters: js.Object
+    ): Unit = js.native
+    def backToTopDetail(
+      /**
+      * This optional object can carry any payload data which should be made available to the target page of
+      * the back navigation. The event on the target page will contain this data object as backData property
+      * (the original data from the to() navigation will still be available as data property).
+      *
+      * In scenarios where the entity triggering the navigation can or should not directly initialize the target
+      * page, it can fill this object and the target page itself (or a listener on it) can take over the initialization,
+      * using the given data. For back navigation this can be used, for example, when returning from a detail
+      * page to transfer any settings done there.
+      *
+      * When the transitionParameters object is used, this data object must also be given (either as object or
+      * as null) in order to have a proper parameter order.
+      */
+    backData: Unit,
+      /**
+      * This optional object can give additional information to the transition function, like the DOM element,
+      * which triggered the transition or the desired transition duration. The animation type can NOT be selected
+      * here - it is always the inverse of the "to" navigation.
+      *
+      * In order to use the transitionParameters property, the data property must be used (at least "null" must
+      * be given) for a proper parameter order.
+      *
+      * NOTE: it depends on the transition function how the object should be structured and which parameters
+      * are actually used to influence the transition.
+      */
+    transitionParameters: js.Object
     ): Unit = js.native
     
     /**
@@ -924,6 +1117,7 @@ object sapMSplitContainerMod {
       * the first added element). NOTE: If already on the initial page, nothing happens. The transition effect
       * which had been used to get to the current page is inverted and used for this navigation.
       */
+    def backToTopMaster(): Unit = js.native
     def backToTopMaster(
       /**
       * This optional object can carry any payload data which should be made available to the target page of
@@ -938,7 +1132,23 @@ object sapMSplitContainerMod {
       * When the "transitionParameters" object is used, this "data" object must also be given (either as object
       * or as null) in order to have a proper parameter order.
       */
-    oBackData: js.Object,
+    backData: js.Object
+    ): Unit = js.native
+    def backToTopMaster(
+      /**
+      * This optional object can carry any payload data which should be made available to the target page of
+      * the back navigation. The event on the target page will contain this data object as "backData" property.
+      * (The original data from the "to()" navigation will still be available as "data" property.)
+      *
+      * In scenarios where the entity triggering the navigation can or should not directly initialize the target
+      * page, it can fill this object and the target page itself (or a listener on it) can take over the initialization,
+      * using the given data. For back navigation this can be used e.g. when returning from a detail page to
+      * transfer any settings done there.
+      *
+      * When the "transitionParameters" object is used, this "data" object must also be given (either as object
+      * or as null) in order to have a proper parameter order.
+      */
+    backData: js.Object,
       /**
       * This optional object can give additional information to the transition function, like the DOM element
       * which triggered the transition or the desired transition duration. The animation type can NOT be selected
@@ -950,7 +1160,35 @@ object sapMSplitContainerMod {
       * NOTE: it depends on the transition function how the object should be structured and which parameters
       * are actually used to influence the transition.
       */
-    oTransitionParameters: js.Object
+    transitionParameters: js.Object
+    ): Unit = js.native
+    def backToTopMaster(
+      /**
+      * This optional object can carry any payload data which should be made available to the target page of
+      * the back navigation. The event on the target page will contain this data object as "backData" property.
+      * (The original data from the "to()" navigation will still be available as "data" property.)
+      *
+      * In scenarios where the entity triggering the navigation can or should not directly initialize the target
+      * page, it can fill this object and the target page itself (or a listener on it) can take over the initialization,
+      * using the given data. For back navigation this can be used e.g. when returning from a detail page to
+      * transfer any settings done there.
+      *
+      * When the "transitionParameters" object is used, this "data" object must also be given (either as object
+      * or as null) in order to have a proper parameter order.
+      */
+    backData: Unit,
+      /**
+      * This optional object can give additional information to the transition function, like the DOM element
+      * which triggered the transition or the desired transition duration. The animation type can NOT be selected
+      * here - it is always the inverse of the "to" navigation.
+      *
+      * In order to use the transitionParameters property, the data property must be used (at least "null" must
+      * be given) for a proper parameter order.
+      *
+      * NOTE: it depends on the transition function how the object should be structured and which parameters
+      * are actually used to influence the transition.
+      */
+    transitionParameters: js.Object
     ): Unit = js.native
     
     /**
@@ -1192,6 +1430,8 @@ object sapMSplitContainerMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:afterDetailNavigate afterDetailNavigate} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1203,6 +1443,8 @@ object sapMSplitContainerMod {
     mParameters: Direction): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:afterMasterClose afterMasterClose} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1214,6 +1456,8 @@ object sapMSplitContainerMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:afterMasterNavigate afterMasterNavigate} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1225,6 +1469,8 @@ object sapMSplitContainerMod {
     mParameters: Direction): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:afterMasterOpen afterMasterOpen} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1236,6 +1482,8 @@ object sapMSplitContainerMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:beforeMasterClose beforeMasterClose} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1247,6 +1495,8 @@ object sapMSplitContainerMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:beforeMasterOpen beforeMasterOpen} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1258,6 +1508,8 @@ object sapMSplitContainerMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:detailNavigate detailNavigate} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -1272,6 +1524,8 @@ object sapMSplitContainerMod {
     mParameters: Direction): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:masterButton masterButton} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1283,6 +1537,8 @@ object sapMSplitContainerMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:masterNavigate masterNavigate} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -1961,43 +2217,26 @@ object sapMSplitContainerMod {
       /**
       * The screen to which we are navigating to. The ID or the control itself can be given.
       */
-    sPageId: String,
-      /**
-      * This optional object can carry any payload data which should be made available to the target page. The
-      * BeforeShow event on the target page will contain this data object as data property.
-      *
-      * Use case: in scenarios where the entity triggering the navigation can or should not directly initialize
-      * the target page, it can fill this object and the target page itself (or a listener on it) can take over
-      * the initialization, using the given data.
-      *
-      * When the transitionParameters object is used, this "data" object must also be given (either as object
-      * or as null) in order to have a proper parameter order.
-      */
-    oData: js.Object,
-      /**
-      * This optional object can contain additional information for the transition function, like the DOM element
-      * which triggered the transition or the desired transition duration.
-      *
-      * For a proper parameter order, the "data" parameter must be given when the transitionParameters parameter
-      * is used (it can be given as "null").
-      *
-      * NOTE: It depends on the transition function how the object should be structured and which parameters
-      * are actually used to influence the transition. The "show", "slide" and "fade" transitions do not use
-      * any parameter.
-      */
-    oTransitionParameters: js.Object
+    pageId: String
     ): Unit = js.native
-    /**
-      * @SINCE 1.10.0
-      *
-      * Navigates to the given page inside the SplitContainer. The navigation is done inside the master area
-      * if the page has been added, otherwise, it tries to do the page navigation in the detail area.
-      */
     def to(
       /**
       * The screen to which we are navigating to. The ID or the control itself can be given.
       */
-    sPageId: String,
+    pageId: String,
+      /**
+      * The type of the transition/animation to apply. Options are "slide" (horizontal movement from the right),
+      * "baseSlide", "fade", "flip", and "show" and the names of any registered custom transitions.
+      *
+      * None of the standard transitions is currently making use of any given transition parameters.
+      */
+    transitionName: String
+    ): Unit = js.native
+    def to(
+      /**
+      * The screen to which we are navigating to. The ID or the control itself can be given.
+      */
+    pageId: String,
       /**
       * The type of the transition/animation to apply. Options are "slide" (horizontal movement from the right),
       * "baseSlide", "fade", "flip", and "show" and the names of any registered custom transitions.
@@ -2016,7 +2255,32 @@ object sapMSplitContainerMod {
       * When the transitionParameters object is used, this "data" object must also be given (either as object
       * or as null) in order to have a proper parameter order.
       */
-    oData: js.Object,
+    data: js.Object
+    ): Unit = js.native
+    def to(
+      /**
+      * The screen to which we are navigating to. The ID or the control itself can be given.
+      */
+    pageId: String,
+      /**
+      * The type of the transition/animation to apply. Options are "slide" (horizontal movement from the right),
+      * "baseSlide", "fade", "flip", and "show" and the names of any registered custom transitions.
+      *
+      * None of the standard transitions is currently making use of any given transition parameters.
+      */
+    transitionName: String,
+      /**
+      * This optional object can carry any payload data which should be made available to the target page. The
+      * BeforeShow event on the target page will contain this data object as data property.
+      *
+      * Use case: in scenarios where the entity triggering the navigation can or should not directly initialize
+      * the target page, it can fill this object and the target page itself (or a listener on it) can take over
+      * the initialization, using the given data.
+      *
+      * When the transitionParameters object is used, this "data" object must also be given (either as object
+      * or as null) in order to have a proper parameter order.
+      */
+    data: js.Object,
       /**
       * This optional object can contain additional information for the transition function, like the DOM element
       * which triggered the transition or the desired transition duration.
@@ -2028,21 +2292,173 @@ object sapMSplitContainerMod {
       * are actually used to influence the transition. The "show", "slide" and "fade" transitions do not use
       * any parameter.
       */
-    oTransitionParameters: js.Object
+    transitionParameters: js.Object
     ): Unit = js.native
-    
-    /**
-      * Navigates to a given detail page.
+    def to(
+      /**
+      * The screen to which we are navigating to. The ID or the control itself can be given.
       */
-    def toDetail(
-      sPageId: String,
+    pageId: String,
       /**
       * The type of the transition/animation to apply. Options are "slide" (horizontal movement from the right),
       * "baseSlide", "fade", "flip", and "show" and the names of any registered custom transitions.
       *
       * None of the standard transitions is currently making use of any given transition parameters.
       */
-    sTransitionName: String,
+    transitionName: String,
+      /**
+      * This optional object can carry any payload data which should be made available to the target page. The
+      * BeforeShow event on the target page will contain this data object as data property.
+      *
+      * Use case: in scenarios where the entity triggering the navigation can or should not directly initialize
+      * the target page, it can fill this object and the target page itself (or a listener on it) can take over
+      * the initialization, using the given data.
+      *
+      * When the transitionParameters object is used, this "data" object must also be given (either as object
+      * or as null) in order to have a proper parameter order.
+      */
+    data: Unit,
+      /**
+      * This optional object can contain additional information for the transition function, like the DOM element
+      * which triggered the transition or the desired transition duration.
+      *
+      * For a proper parameter order, the "data" parameter must be given when the transitionParameters parameter
+      * is used (it can be given as "null").
+      *
+      * NOTE: It depends on the transition function how the object should be structured and which parameters
+      * are actually used to influence the transition. The "show", "slide" and "fade" transitions do not use
+      * any parameter.
+      */
+    transitionParameters: js.Object
+    ): Unit = js.native
+    def to(
+      /**
+      * The screen to which we are navigating to. The ID or the control itself can be given.
+      */
+    pageId: String,
+      /**
+      * The type of the transition/animation to apply. Options are "slide" (horizontal movement from the right),
+      * "baseSlide", "fade", "flip", and "show" and the names of any registered custom transitions.
+      *
+      * None of the standard transitions is currently making use of any given transition parameters.
+      */
+    transitionName: Unit,
+      /**
+      * This optional object can carry any payload data which should be made available to the target page. The
+      * BeforeShow event on the target page will contain this data object as data property.
+      *
+      * Use case: in scenarios where the entity triggering the navigation can or should not directly initialize
+      * the target page, it can fill this object and the target page itself (or a listener on it) can take over
+      * the initialization, using the given data.
+      *
+      * When the transitionParameters object is used, this "data" object must also be given (either as object
+      * or as null) in order to have a proper parameter order.
+      */
+    data: js.Object
+    ): Unit = js.native
+    def to(
+      /**
+      * The screen to which we are navigating to. The ID or the control itself can be given.
+      */
+    pageId: String,
+      /**
+      * The type of the transition/animation to apply. Options are "slide" (horizontal movement from the right),
+      * "baseSlide", "fade", "flip", and "show" and the names of any registered custom transitions.
+      *
+      * None of the standard transitions is currently making use of any given transition parameters.
+      */
+    transitionName: Unit,
+      /**
+      * This optional object can carry any payload data which should be made available to the target page. The
+      * BeforeShow event on the target page will contain this data object as data property.
+      *
+      * Use case: in scenarios where the entity triggering the navigation can or should not directly initialize
+      * the target page, it can fill this object and the target page itself (or a listener on it) can take over
+      * the initialization, using the given data.
+      *
+      * When the transitionParameters object is used, this "data" object must also be given (either as object
+      * or as null) in order to have a proper parameter order.
+      */
+    data: js.Object,
+      /**
+      * This optional object can contain additional information for the transition function, like the DOM element
+      * which triggered the transition or the desired transition duration.
+      *
+      * For a proper parameter order, the "data" parameter must be given when the transitionParameters parameter
+      * is used (it can be given as "null").
+      *
+      * NOTE: It depends on the transition function how the object should be structured and which parameters
+      * are actually used to influence the transition. The "show", "slide" and "fade" transitions do not use
+      * any parameter.
+      */
+    transitionParameters: js.Object
+    ): Unit = js.native
+    def to(
+      /**
+      * The screen to which we are navigating to. The ID or the control itself can be given.
+      */
+    pageId: String,
+      /**
+      * The type of the transition/animation to apply. Options are "slide" (horizontal movement from the right),
+      * "baseSlide", "fade", "flip", and "show" and the names of any registered custom transitions.
+      *
+      * None of the standard transitions is currently making use of any given transition parameters.
+      */
+    transitionName: Unit,
+      /**
+      * This optional object can carry any payload data which should be made available to the target page. The
+      * BeforeShow event on the target page will contain this data object as data property.
+      *
+      * Use case: in scenarios where the entity triggering the navigation can or should not directly initialize
+      * the target page, it can fill this object and the target page itself (or a listener on it) can take over
+      * the initialization, using the given data.
+      *
+      * When the transitionParameters object is used, this "data" object must also be given (either as object
+      * or as null) in order to have a proper parameter order.
+      */
+    data: Unit,
+      /**
+      * This optional object can contain additional information for the transition function, like the DOM element
+      * which triggered the transition or the desired transition duration.
+      *
+      * For a proper parameter order, the "data" parameter must be given when the transitionParameters parameter
+      * is used (it can be given as "null").
+      *
+      * NOTE: It depends on the transition function how the object should be structured and which parameters
+      * are actually used to influence the transition. The "show", "slide" and "fade" transitions do not use
+      * any parameter.
+      */
+    transitionParameters: js.Object
+    ): Unit = js.native
+    
+    /**
+      * Navigates to a given detail page.
+      */
+    def toDetail(
+      /**
+      * Id of the page
+      */
+    pageId: String,
+      /**
+      * The type of the transition/animation to apply. Options are "slide" (horizontal movement from the right),
+      * "baseSlide", "fade", "flip", and "show" and the names of any registered custom transitions.
+      *
+      * None of the standard transitions is currently making use of any given transition parameters.
+      */
+    transitionName: String
+    ): Unit = js.native
+    def toDetail(
+      /**
+      * Id of the page
+      */
+    pageId: String,
+      /**
+      * The type of the transition/animation to apply. Options are "slide" (horizontal movement from the right),
+      * "baseSlide", "fade", "flip", and "show" and the names of any registered custom transitions.
+      *
+      * None of the standard transitions is currently making use of any given transition parameters.
+      */
+    transitionName: String,
       /**
       * This optional object can carry any payload data which should be made available to the target page. The
       * BeforeShow event on the target page will contain this data object as data property.
@@ -2054,7 +2470,32 @@ object sapMSplitContainerMod {
       * When the transitionParameters object is used, this data object must also be given (either as object or
       * as null) in order to have a proper parameter order.
       */
-    oData: js.Object,
+    data: js.Object
+    ): Unit = js.native
+    def toDetail(
+      /**
+      * Id of the page
+      */
+    pageId: String,
+      /**
+      * The type of the transition/animation to apply. Options are "slide" (horizontal movement from the right),
+      * "baseSlide", "fade", "flip", and "show" and the names of any registered custom transitions.
+      *
+      * None of the standard transitions is currently making use of any given transition parameters.
+      */
+    transitionName: String,
+      /**
+      * This optional object can carry any payload data which should be made available to the target page. The
+      * BeforeShow event on the target page will contain this data object as data property.
+      *
+      * Use case: in scenarios where the entity triggering the navigation can or should not directly initialize
+      * the target page, it can fill this object and the target page itself (or a listener on it) can take over
+      * the initialization, using the given data.
+      *
+      * When the transitionParameters object is used, this data object must also be given (either as object or
+      * as null) in order to have a proper parameter order.
+      */
+    data: js.Object,
       /**
       * This optional object can contain additional information for the transition function, like the DOM element,
       * which triggered the transition or the desired transition duration.
@@ -2066,7 +2507,44 @@ object sapMSplitContainerMod {
       * are actually used to influence the transition. The "show", "slide" and "fade" transitions do not use
       * any parameter.
       */
-    oTransitionParameters: js.Object
+    transitionParameters: js.Object
+    ): Unit = js.native
+    def toDetail(
+      /**
+      * Id of the page
+      */
+    pageId: String,
+      /**
+      * The type of the transition/animation to apply. Options are "slide" (horizontal movement from the right),
+      * "baseSlide", "fade", "flip", and "show" and the names of any registered custom transitions.
+      *
+      * None of the standard transitions is currently making use of any given transition parameters.
+      */
+    transitionName: String,
+      /**
+      * This optional object can carry any payload data which should be made available to the target page. The
+      * BeforeShow event on the target page will contain this data object as data property.
+      *
+      * Use case: in scenarios where the entity triggering the navigation can or should not directly initialize
+      * the target page, it can fill this object and the target page itself (or a listener on it) can take over
+      * the initialization, using the given data.
+      *
+      * When the transitionParameters object is used, this data object must also be given (either as object or
+      * as null) in order to have a proper parameter order.
+      */
+    data: Unit,
+      /**
+      * This optional object can contain additional information for the transition function, like the DOM element,
+      * which triggered the transition or the desired transition duration.
+      *
+      * For a proper parameter order, the data parameter must be given when the transitionParameters parameter
+      * is used (it can be given as "null").
+      *
+      * NOTE: it depends on the transition function how the object should be structured and which parameters
+      * are actually used to influence the transition. The "show", "slide" and "fade" transitions do not use
+      * any parameter.
+      */
+    transitionParameters: js.Object
     ): Unit = js.native
     
     /**
@@ -2076,14 +2554,27 @@ object sapMSplitContainerMod {
       /**
       * The screen to which drilldown should happen. The ID or the control itself can be given.
       */
-    sPageId: String,
+    pageId: String,
       /**
       * The type of the transition/animation to apply. Options are "slide" (horizontal movement from the right),
       * "baseSlide", "fade", "flip", and "show" and the names of any registered custom transitions.
       *
       * None of the standard transitions is currently making use of any given transition parameters.
       */
-    sTransitionName: String,
+    transitionName: String
+    ): Unit = js.native
+    def toMaster(
+      /**
+      * The screen to which drilldown should happen. The ID or the control itself can be given.
+      */
+    pageId: String,
+      /**
+      * The type of the transition/animation to apply. Options are "slide" (horizontal movement from the right),
+      * "baseSlide", "fade", "flip", and "show" and the names of any registered custom transitions.
+      *
+      * None of the standard transitions is currently making use of any given transition parameters.
+      */
+    transitionName: String,
       /**
       * Since version 1.7.1. This optional object can carry any payload data which should be made available to
       * the target page. The BeforeShow event on the target page will contain this data object as data property.
@@ -2095,7 +2586,32 @@ object sapMSplitContainerMod {
       * When the transitionParameters object is used, this data object must also be given (either as object or
       * as null) in order to have a proper parameter order.
       */
-    oData: js.Object,
+    data: js.Object
+    ): Unit = js.native
+    def toMaster(
+      /**
+      * The screen to which drilldown should happen. The ID or the control itself can be given.
+      */
+    pageId: String,
+      /**
+      * The type of the transition/animation to apply. Options are "slide" (horizontal movement from the right),
+      * "baseSlide", "fade", "flip", and "show" and the names of any registered custom transitions.
+      *
+      * None of the standard transitions is currently making use of any given transition parameters.
+      */
+    transitionName: String,
+      /**
+      * Since version 1.7.1. This optional object can carry any payload data which should be made available to
+      * the target page. The BeforeShow event on the target page will contain this data object as data property.
+      *
+      * Use case: in scenarios where the entity triggering the navigation can't or shouldn't directly initialize
+      * the target page, it can fill this object and the target page itself (or a listener on it) can take over
+      * the initialization, using the given data.
+      *
+      * When the transitionParameters object is used, this data object must also be given (either as object or
+      * as null) in order to have a proper parameter order.
+      */
+    data: js.Object,
       /**
       * Since version 1.7.1. This optional object can contain additional information for the transition function,
       * like the DOM element, which triggered the transition or the desired transition duration.
@@ -2107,7 +2623,44 @@ object sapMSplitContainerMod {
       * are actually used to influence the transition. The "show", "slide" and "fade" transitions do not use
       * any parameter.
       */
-    oTransitionParameters: js.Object
+    transitionParameters: js.Object
+    ): Unit = js.native
+    def toMaster(
+      /**
+      * The screen to which drilldown should happen. The ID or the control itself can be given.
+      */
+    pageId: String,
+      /**
+      * The type of the transition/animation to apply. Options are "slide" (horizontal movement from the right),
+      * "baseSlide", "fade", "flip", and "show" and the names of any registered custom transitions.
+      *
+      * None of the standard transitions is currently making use of any given transition parameters.
+      */
+    transitionName: String,
+      /**
+      * Since version 1.7.1. This optional object can carry any payload data which should be made available to
+      * the target page. The BeforeShow event on the target page will contain this data object as data property.
+      *
+      * Use case: in scenarios where the entity triggering the navigation can't or shouldn't directly initialize
+      * the target page, it can fill this object and the target page itself (or a listener on it) can take over
+      * the initialization, using the given data.
+      *
+      * When the transitionParameters object is used, this data object must also be given (either as object or
+      * as null) in order to have a proper parameter order.
+      */
+    data: Unit,
+      /**
+      * Since version 1.7.1. This optional object can contain additional information for the transition function,
+      * like the DOM element, which triggered the transition or the desired transition duration.
+      *
+      * For a proper parameter order, the data parameter must be given when the transitionParameters parameter
+      * is used (it can be given as "null").
+      *
+      * NOTE: it depends on the transition function how the object should be structured and which parameters
+      * are actually used to influence the transition. The "show", "slide" and "fade" transitions do not use
+      * any parameter.
+      */
+    transitionParameters: js.Object
     ): Unit = js.native
   }
   

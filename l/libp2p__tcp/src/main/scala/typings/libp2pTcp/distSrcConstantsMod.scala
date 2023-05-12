@@ -24,5 +24,5 @@ object distSrcConstantsMod {
   
   @JSImport("@libp2p/tcp/dist/src/constants", "SOCKET_TIMEOUT")
   @js.native
-  val SOCKET_TIMEOUT: /* 30000 */ Double = js.native
+  val SOCKET_TIMEOUT: Double = js.native
 }

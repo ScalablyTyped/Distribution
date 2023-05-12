@@ -1,7 +1,7 @@
 
 # Scala.js typings for bind-event-listener
 
-Typings are for version 2.1.1
+Typings are for version 3.0.0
 
 ## Library description:
 Making binding and unbinding DOM events easier

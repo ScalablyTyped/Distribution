@@ -13,7 +13,6 @@ import typings.highcharts.mod.AxisPlotLinesOptions
 import typings.highcharts.mod.CSSObject
 import typings.highcharts.mod.ChartCallbackFunction
 import typings.highcharts.mod.Class
-import typings.highcharts.mod.ColorAxisOptions
 import typings.highcharts.mod.ColorType
 import typings.highcharts.mod.Dictionary
 import typings.highcharts.mod.EventCallbackFunction
@@ -75,8 +74,8 @@ object highchartsGanttMod {
       */
     @JSImport("highcharts/highcharts-gantt", "AST.allowedAttributes")
     @js.native
-    def allowedAttributes: Any = js.native
-    inline def allowedAttributes_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allowedAttributes")(x.asInstanceOf[js.Any])
+    def allowedAttributes: js.Array[String] = js.native
+    inline def allowedAttributes_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allowedAttributes")(x.asInstanceOf[js.Any])
     
     /**
       * The list of allowed references for referring attributes like `href` and
@@ -85,8 +84,8 @@ object highchartsGanttMod {
       */
     @JSImport("highcharts/highcharts-gantt", "AST.allowedReferences")
     @js.native
-    def allowedReferences: Any = js.native
-    inline def allowedReferences_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allowedReferences")(x.asInstanceOf[js.Any])
+    def allowedReferences: js.Array[String] = js.native
+    inline def allowedReferences_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allowedReferences")(x.asInstanceOf[js.Any])
     
     /**
       * The list of allowed SVG or HTML tags, used for sanitizing potentially
@@ -94,8 +93,8 @@ object highchartsGanttMod {
       */
     @JSImport("highcharts/highcharts-gantt", "AST.allowedTags")
     @js.native
-    def allowedTags: Any = js.native
-    inline def allowedTags_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allowedTags")(x.asInstanceOf[js.Any])
+    def allowedTags: js.Array[String] = js.native
+    inline def allowedTags_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allowedTags")(x.asInstanceOf[js.Any])
     
     /**
       * Allow all custom SVG and HTML attributes, references and tags (together
@@ -244,22 +243,6 @@ object highchartsGanttMod {
     def this(renderTo: HTMLDOMElement, options: Options, callback: ChartCallbackFunction) = this()
   }
   
-  @JSImport("highcharts/highcharts-gantt", "ColorAxis")
-  @js.native
-  open class ColorAxis protected ()
-    extends typings.highcharts.mod.ColorAxis {
-    /**
-      * The ColorAxis object for inclusion in gradient legends.
-      *
-      * @param chart
-      *        The related chart of the color axis.
-      *
-      * @param userOptions
-      *        The color axis options for initialization.
-      */
-    def this(chart: typings.highcharts.mod.Chart_, userOptions: ColorAxisOptions) = this()
-  }
-  
   @JSImport("highcharts/highcharts-gantt", "Color")
   @js.native
   open class Color_ protected ()
@@ -363,8 +346,7 @@ object highchartsGanttMod {
       * Allows direct access to the Highcharts rendering layer in order to draw
       * primitive shapes like circles, rectangles, paths or text directly on a
       * chart, or independent from any chart. The SVGRenderer represents a
-      * wrapper object for SVG in modern browsers. Through the VMLRenderer, part
-      * of the `oldie.js` module, it also brings vector graphics to IE <= 8.
+      * wrapper object for SVG in modern browsers.
       *
       * An existing chart's renderer can be accessed through Chart.renderer. The
       * renderer can also be used completely decoupled from a chart.
@@ -731,6 +713,8 @@ object highchartsGanttMod {
   
   inline def callout(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callout")().asInstanceOf[Unit]
   
+  inline def centerImage(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("centerImage")().asInstanceOf[Unit]
+  
   inline def chart(options: Options): typings.highcharts.mod.Chart_ = ^.asInstanceOf[js.Dynamic].applyDynamic("chart")(options.asInstanceOf[js.Any]).asInstanceOf[typings.highcharts.mod.Chart_]
   inline def chart(options: Options, callback: ChartCallbackFunction): typings.highcharts.mod.Chart_ = (^.asInstanceOf[js.Dynamic].applyDynamic("chart")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Chart_]
   inline def chart(renderTo: String, options: Options): typings.highcharts.mod.Chart_ = (^.asInstanceOf[js.Dynamic].applyDynamic("chart")(renderTo.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.highcharts.mod.Chart_]
@@ -943,6 +927,8 @@ object highchartsGanttMod {
   inline def pad(number: Double, length: Unit, padder: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(number.asInstanceOf[js.Any], length.asInstanceOf[js.Any], padder.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def pick[T](items: (js.UndefOr[T | Null])*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("pick")(items.asInstanceOf[Seq[js.Any]]*).asInstanceOf[T]
+  
+  inline def pushUnique(array: js.Array[Any], item: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("pushUnique")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def reduce(arr: js.Array[Any], fn: js.Function, initialValue: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[Any]
   

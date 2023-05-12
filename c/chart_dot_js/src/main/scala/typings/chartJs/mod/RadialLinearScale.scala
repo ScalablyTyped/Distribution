@@ -1,33 +1,12 @@
 package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.chartJs.anon.AngleX
-import typings.chartJs.typesBasicMod.AnyObject
-import typings.chartJs.typesGeometricMod.ChartArea
+import typings.chartJs.distTypesBasicMod.AnyObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RadialLinearScale[O /* <: RadialLinearScaleOptions */] extends Scale[O] {
-  
-  def getBasePosition(index: Double): AngleX = js.native
-  
-  def getDistanceFromCenterForValue(value: Double): Double = js.native
-  
-  def getIndexAngle(index: Double): Double = js.native
-  
-  def getPointLabelPosition(index: Double): ChartArea = js.native
-  
-  def getPointPosition(index: Double, distanceFromCenter: Double): AngleX = js.native
-  
-  def getPointPositionForValue(index: Double, value: Double): AngleX = js.native
-  
-  def getValueForDistanceFromCenter(distance: Double): Double = js.native
-  
-  def setCenterPoint(leftMovement: Double, rightMovement: Double, topMovement: Double, bottomMovement: Double): Unit = js.native
-}
-/* Inlined chart.js.chart.js.ChartComponent & {  prototype :chart.js.chart.js.RadialLinearScale<chart.js.chart.js.RadialLinearScaleOptions>, new <O extends chart.js.chart.js.RadialLinearScaleOptions = chart.js.chart.js.RadialLinearScaleOptions>(cfg : chart.js.chart.js/types/basic.AnyObject): chart.js.chart.js.RadialLinearScale<O>} */
+/* Inlined chart.js.chart.js/dist/types/index.ChartComponent & {  prototype :chart.js.chart.js/dist/types/index.RadialLinearScale<chart.js.chart.js/dist/types/index.RadialLinearScaleOptions>, new <O extends chart.js.chart.js/dist/types/index.RadialLinearScaleOptions = chart.js.chart.js/dist/types/index.RadialLinearScaleOptions>(cfg : chart.js.chart.js/dist/types/basic.AnyObject): chart.js.chart.js/dist/types/index.RadialLinearScale<O>} */
 object RadialLinearScale {
   
   @JSImport("chart.js", "RadialLinearScale")

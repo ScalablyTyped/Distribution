@@ -7,12 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object domMediacaptureRecordStrings {
   
   @js.native
-  sealed trait cbr
-    extends StObject
-       with BitrateMode
-  inline def cbr: cbr = "cbr".asInstanceOf[cbr]
-  
-  @js.native
   sealed trait dataavailable extends StObject
   inline def dataavailable: dataavailable = "dataavailable".asInstanceOf[dataavailable]
   
@@ -47,10 +41,4 @@ object domMediacaptureRecordStrings {
   @js.native
   sealed trait stop extends StObject
   inline def stop: stop = "stop".asInstanceOf[stop]
-  
-  @js.native
-  sealed trait vbr
-    extends StObject
-       with BitrateMode
-  inline def vbr: vbr = "vbr".asInstanceOf[vbr]
 }

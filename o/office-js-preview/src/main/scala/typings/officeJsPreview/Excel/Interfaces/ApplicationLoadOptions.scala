@@ -59,6 +59,16 @@ trait ApplicationLoadOptions extends StObject {
   var decimalSeparator: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies whether the Format Stale Values option within Calculation Options is enabled or disabled.
+    The stale formulas are rendered with stale formatting if the option is enabled.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var formatStaleValues: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Returns the iterative calculation settings.
     In Excel on Windows and Mac, the settings will apply to the Excel Application.
     In Excel on the web and other platforms, the settings will apply to the active workbook.
@@ -118,6 +128,10 @@ object ApplicationLoadOptions {
     inline def setDecimalSeparator(value: Boolean): Self = StObject.set(x, "decimalSeparator", value.asInstanceOf[js.Any])
     
     inline def setDecimalSeparatorUndefined: Self = StObject.set(x, "decimalSeparator", js.undefined)
+    
+    inline def setFormatStaleValues(value: Boolean): Self = StObject.set(x, "formatStaleValues", value.asInstanceOf[js.Any])
+    
+    inline def setFormatStaleValuesUndefined: Self = StObject.set(x, "formatStaleValues", js.undefined)
     
     inline def setIterativeCalculation(value: IterativeCalculationLoadOptions): Self = StObject.set(x, "iterativeCalculation", value.asInstanceOf[js.Any])
     

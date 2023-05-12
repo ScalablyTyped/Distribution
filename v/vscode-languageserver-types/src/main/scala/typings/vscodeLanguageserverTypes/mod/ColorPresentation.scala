@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ColorPresentation extends StObject {
   
   /**
-    * An optional array of additional [text edits](#TextEdit) that are applied when
-    * selecting this color presentation. Edits must not overlap with the main [edit](#ColorPresentation.textEdit) nor with themselves.
+    * An optional array of additional {@link TextEdit text edits} that are applied when
+    * selecting this color presentation. Edits must not overlap with the main {@link ColorPresentation.textEdit edit} nor with themselves.
     */
   var additionalTextEdits: js.UndefOr[js.Array[TextEdit]] = js.undefined
   
@@ -20,8 +20,8 @@ trait ColorPresentation extends StObject {
   var label: String
   
   /**
-    * An [edit](#TextEdit) which is applied to a document when selecting
-    * this presentation for the color.  When `falsy` the [label](#ColorPresentation.label)
+    * An {@link TextEdit edit} which is applied to a document when selecting
+    * this presentation for the color.  When `falsy` the {@link ColorPresentation.label label}
     * is used.
     */
   var textEdit: js.UndefOr[TextEdit] = js.undefined
@@ -46,7 +46,7 @@ object ColorPresentation {
   inline def create(label: String, textEdit: TextEdit, additionalTextEdits: js.Array[TextEdit]): ColorPresentation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any], textEdit.asInstanceOf[js.Any], additionalTextEdits.asInstanceOf[js.Any])).asInstanceOf[ColorPresentation]
   
   /**
-    * Checks whether the given literal conforms to the [ColorInformation](#ColorInformation) interface.
+    * Checks whether the given literal conforms to the {@link ColorInformation} interface.
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.ColorPresentation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.ColorPresentation */ Boolean]
   

@@ -6,7 +6,6 @@ import typings.std.KeyboardEvent
 import typings.xterm.anon.Cols
 import typings.xterm.anon.DomEvent
 import typings.xterm.anon.End
-import typings.xterm.anon.RequiredITerminalOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,6 +30,24 @@ open class Terminal ()
     * This is a function that takes a KeyboardEvent, allowing consumers to stop
     * propagation and/or prevent the default action. The function returns
     * whether the event should be processed by xterm.js.
+    *
+    * @example A custom keymap that overrides the backspace key
+    * ```ts
+    * const keymap = [
+    *   { "key": "Backspace", "shiftKey": false, "mapCode": 8 },
+    *   { "key": "Backspace", "shiftKey": true, "mapCode": 127 }
+    * ];
+    * term.attachCustomKeyEventHandler(ev => {
+    *   if (ev.type === 'keydown') {
+    *     for (let i in keymap) {
+    *       if (keymap[i].key == ev.key && keymap[i].shiftKey == ev.shiftKey) {
+    *         socket.send(String.fromCharCode(keymap[i].mapCode));
+    *         return false;
+    *       }
+    *     }
+    *   }
+    * });
+    * ```
     */
   def attachCustomKeyEventHandler(customKeyEventHandler: js.Function1[/* event */ KeyboardEvent, Boolean]): Unit = js.native
   
@@ -315,31 +332,40 @@ open class Terminal ()
   def open(parent: HTMLElement): Unit = js.native
   
   /**
-    * Gets or sets the terminal options. This supports setting multiple options.
+    * Gets or sets the terminal options. This supports setting multiple
+    * options.
     *
     * @example Get a single option
-    * ```typescript
+    * ```ts
     * console.log(terminal.options.fontSize);
     * ```
-    */
-  def options: RequiredITerminalOptions = js.native
-  /**
-    * Gets or sets the terminal options. This supports setting multiple options.
     *
-    * @example Set a single option
-    * ```typescript
+    * @example Set a single option:
+    * ```ts
     * terminal.options.fontSize = 12;
+    * ```
+    * Note that for options that are object, a new object must be used in order
+    * to take effect as a reference comparison will be done:
+    * ```ts
+    * const newValue = terminal.options.theme;
+    * newValue.background = '#000000';
+    *
+    * // This won't work
+    * terminal.options.theme = newValue;
+    *
+    * // This will work
+    * terminal.options.theme = { ...newValue };
     * ```
     *
     * @example Set multiple options
-    * ```typescript
+    * ```ts
     * terminal.options = {
     *   fontSize: 12,
-    *   fontFamily: 'Arial',
+    *   fontFamily: 'Courier New'
     * };
     * ```
     */
-  def options_=(options: ITerminalOptions): Unit = js.native
+  var options: ITerminalOptions = js.native
   
   /**
     * Get the parser interface to register custom escape sequence handlers.
@@ -387,7 +413,7 @@ open class Terminal ()
     * with a string of text that is eligible for joining and returns an array
     * where each entry is an array containing the start (inclusive) and end
     * (exclusive) indexes of ranges that should be rendered as a single unit.
-    * @return The ID of the new joiner, this can be used to deregister
+    * @returns The ID of the new joiner, this can be used to deregister
     */
   def registerCharacterJoiner(handler: js.Function1[/* text */ String, js.Array[js.Tuple2[Double, Double]]]): Double = js.native
   

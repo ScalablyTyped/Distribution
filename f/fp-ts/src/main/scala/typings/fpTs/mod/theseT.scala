@@ -12,7 +12,7 @@ import typings.fpTs.libChainMod.Chain2
 import typings.fpTs.libChainMod.Chain2C
 import typings.fpTs.libChainMod.Chain3
 import typings.fpTs.libChainMod.Chain3C
-import typings.fpTs.libFunctionMod.Lazy
+import typings.fpTs.libFunctionMod.LazyArg
 import typings.fpTs.libFunctorMod.Functor
 import typings.fpTs.libFunctorMod.Functor1
 import typings.fpTs.libFunctorMod.Functor2
@@ -1089,90 +1089,90 @@ object theseT {
   ]]
   
   inline def toTuple2[F](F: Functor[F]): js.Function2[
-    /* e */ Lazy[Any], 
-    /* a */ Lazy[Any], 
+    /* e */ LazyArg[Any], 
+    /* a */ LazyArg[Any], 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, These<E, A>> */ /* fa */ Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, [E, A]> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("toTuple2")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* e */ Lazy[Any], 
-    /* a */ Lazy[Any], 
+    /* e */ LazyArg[Any], 
+    /* a */ LazyArg[Any], 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, These<E, A>> */ /* fa */ Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, [E, A]> */ Any
     ]
   ]]
   inline def toTuple2[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](F: Functor1[F]): js.Function2[
-    /* e */ Lazy[Any], 
-    /* a */ Lazy[Any], 
+    /* e */ LazyArg[Any], 
+    /* a */ LazyArg[Any], 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, These<E, A>> */ /* fa */ Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, [E, A]> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("toTuple2")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* e */ Lazy[Any], 
-    /* a */ Lazy[Any], 
+    /* e */ LazyArg[Any], 
+    /* a */ LazyArg[Any], 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, These<E, A>> */ /* fa */ Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, [E, A]> */ Any
     ]
   ]]
   inline def toTuple2[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](F: Functor2[F]): js.Function2[
-    /* e */ Lazy[Any], 
-    /* a */ Lazy[Any], 
+    /* e */ LazyArg[Any], 
+    /* a */ LazyArg[Any], 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, These<E, A>> */ /* fa */ Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, [E, A]> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("toTuple2")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* e */ Lazy[Any], 
-    /* a */ Lazy[Any], 
+    /* e */ LazyArg[Any], 
+    /* a */ LazyArg[Any], 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, These<E, A>> */ /* fa */ Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, [E, A]> */ Any
     ]
   ]]
   inline def toTuple2[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](F: Functor3[F]): js.Function2[
-    /* e */ Lazy[Any], 
-    /* a */ Lazy[Any], 
+    /* e */ LazyArg[Any], 
+    /* a */ LazyArg[Any], 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, FE, These<E, A>> */ /* fa */ Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, FE, [E, A]> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("toTuple2")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* e */ Lazy[Any], 
-    /* a */ Lazy[Any], 
+    /* e */ LazyArg[Any], 
+    /* a */ LazyArg[Any], 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, FE, These<E, A>> */ /* fa */ Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, FE, [E, A]> */ Any
     ]
   ]]
   inline def toTuple2[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, FE](F: Functor2C[F, FE]): js.Function2[
-    /* e */ Lazy[Any], 
-    /* a */ Lazy[Any], 
+    /* e */ LazyArg[Any], 
+    /* a */ LazyArg[Any], 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, These<E, A>> */ /* fa */ Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, [E, A]> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("toTuple2")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* e */ Lazy[Any], 
-    /* a */ Lazy[Any], 
+    /* e */ LazyArg[Any], 
+    /* a */ LazyArg[Any], 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, These<E, A>> */ /* fa */ Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, [E, A]> */ Any
     ]
   ]]
   inline def toTuple2[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, FE](F: Functor3C[F, FE]): js.Function2[
-    /* e */ Lazy[Any], 
-    /* a */ Lazy[Any], 
+    /* e */ LazyArg[Any], 
+    /* a */ LazyArg[Any], 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, FE, These<E, A>> */ /* fa */ Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, FE, [E, A]> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("toTuple2")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* e */ Lazy[Any], 
-    /* a */ Lazy[Any], 
+    /* e */ LazyArg[Any], 
+    /* a */ LazyArg[Any], 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, FE, These<E, A>> */ /* fa */ Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, FE, [E, A]> */ Any

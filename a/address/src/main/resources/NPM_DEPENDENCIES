@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "address" : "1.2.1"
+      "address" : "1.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "address" : "1.2.1"
+      "address" : "1.2.2"
     }
   ],
   "compile-devDependencies" : [

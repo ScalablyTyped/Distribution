@@ -19,11 +19,15 @@ trait Appointment
      with DomainResource
      with _FhirResource {
   
+  var _cancellationDate: js.UndefOr[Element] = js.undefined
+  
   var _created: js.UndefOr[Element] = js.undefined
   
   var _description: js.UndefOr[Element] = js.undefined
   
   var _end: js.UndefOr[Element] = js.undefined
+  
+  var _occurrenceChanged: js.UndefOr[Element] = js.undefined
   
   var _start: js.UndefOr[Element] = js.undefined
   
@@ -40,9 +44,14 @@ trait Appointment
   var appointmentType: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * The service request this appointment is allocated to assess (e.g. incoming referral or procedure request).
+    * The request this appointment is allocated to assess (e.g. incoming referral or procedure request).
     */
   var basedOn: js.UndefOr[js.Array[Reference]] = js.undefined
+  
+  /**
+    * If the appointment was cancelled multiple times, this would reflect the most recent cancellation.
+    */
+  var cancellationDate: js.UndefOr[String] = js.undefined
   
   /**
     * The coded reason for the appointment being cancelled. This is often used in reporting/billing/futher processing to determine if further actions are required, or specific fees apply.
@@ -50,17 +59,22 @@ trait Appointment
   var cancellationReason: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
+    * Concepts representing classification of patient encounter such as ambulatory (outpatient), inpatient, emergency, home health or others due to local variations.
+    */
+  var `class`: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  
+  /**
     * This property is required for many use cases where the age of an appointment is considered in processing workflows for scheduling and billing of appointments.
     */
   var created: js.UndefOr[String] = js.undefined
   
   /**
-    * The brief description of the appointment as would be shown on a subject line in a meeting request, or appointment list. Detailed or expanded information should be put in the comment field.
+    * The brief description of the appointment as would be shown on a subject line in a meeting request, or appointment list. Detailed or expanded information should be put in the note field.
     */
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * Date/Time that the appointment is to conclude.
+    * If actual start/end times are not known then the requested period start/end can be used.
     */
   var end: js.UndefOr[String] = js.undefined
   
@@ -82,6 +96,17 @@ trait Appointment
   var note: js.UndefOr[js.Array[Annotation]] = js.undefined
   
   /**
+    * For example, if a patient has physical therapy appointments every Tuesday and Thursday, but due to a national holiday, a single occurrence was rescheduled to a different day, while the rest of the recurring series remained on Tuesday / Thursday.
+    */
+  var occurrenceChanged: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * This property is intended for use when representing a recurring set of related appointments.
+    * For example, a patient undergoing physical therapy may have a recurring appointment every Tuesday and Thursday.  Each occurrence of the set will refer to the originating appointment, which contains the recurring template information.  For representing appointment series, see the guidance on recurring vs. series appointments.
+    */
+  var originatingAppointment: js.UndefOr[Reference] = js.undefined
+  
+  /**
     * List of participants involved in the appointment.
     */
   var participant: js.Array[AppointmentParticipant]
@@ -90,6 +115,11 @@ trait Appointment
     * While Appointment.note contains information for internal use, Appointment.patientInstructions is used to capture patient facing information about the Appointment (e.g. please bring your referral or fast from 8pm night before).
     */
   var patientInstruction: js.UndefOr[js.Array[CodeableReference]] = js.undefined
+  
+  /**
+    * This property is intended for use when representing a series of related appointments.  For example, in a nuclear medicine procedure, where there is an appointment for the injection of the isotopes, and then a subsequent appointment for the scan, the scan appointment would refer to the injection appointment via Appointment.previousAppointment.  For representing recurring appointments, see the guidance on recurring vs. series appointments.
+    */
+  var previousAppointment: js.UndefOr[Reference] = js.undefined
   
   /**
     * Seeking implementer feedback on this property and how interoperable it is.
@@ -101,6 +131,16 @@ trait Appointment
     * The reason that this appointment is being scheduled. This is more clinical than administrative. This can be coded, or as specified using information from another resource. When the patient arrives and the encounter begins it may be used as the admission diagnosis. The indication will typically be a Condition (with other resources referenced in the evidence.detail), or a Procedure.
     */
   var reason: js.UndefOr[js.Array[CodeableReference]] = js.undefined
+  
+  /**
+    * The sequence number that identifies a specific appointment in a recurring pattern.
+    */
+  var recurrenceId: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * The details of the recurrence pattern or template that is used to generate recurring appointments.
+    */
+  var recurrenceTemplate: js.UndefOr[js.Array[AppointmentRecurrenceTemplate]] = js.undefined
   
   /**
     * Appointment replaced by this Appointment in cases where there is a cancellation, the details of the cancellation can be found in the cancellationReason property (on the referenced resource).
@@ -124,7 +164,7 @@ trait Appointment
   /**
     * For a provider to provider appointment the code "FOLLOWUP" may be appropriate, as this is expected to be discussing some patient that was seen in the past.
     */
-  var serviceType: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var serviceType: js.UndefOr[js.Array[CodeableReference]] = js.undefined
   
   /**
     * The slots from the participants' schedules that will be filled by the appointment.
@@ -137,7 +177,7 @@ trait Appointment
   var specialty: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
-    * Date/Time that the appointment is to take place.
+    * If actual start/end times are not known then the requested period start/end can be used.
     */
   var start: js.UndefOr[String] = js.undefined
   
@@ -156,6 +196,15 @@ trait Appointment
     * Additional information to support the appointment provided when making the appointment.
     */
   var supportingInformation: js.UndefOr[js.Array[Reference]] = js.undefined
+  
+  /**
+    * There are two types of virtual meetings that often exist:
+    * * a persistent, virtual meeting room that can only be used for a single purpose at a time,
+    * * and a dynamic virtual meeting room that is generated on demand for a specific purpose.
+    * Implementers may consider using Location.virtualService for persistent meeting rooms.
+    * If each participant would have a different meeting link, an extension using the VirtualServiceContactDetail  can be applied to the Appointment.participant BackboneElement.
+    */
+  var virtualService: js.UndefOr[js.Array[VirtualServiceDetail]] = js.undefined
 }
 object Appointment {
   
@@ -186,9 +235,19 @@ object Appointment {
     
     inline def setBasedOnVarargs(value: Reference*): Self = StObject.set(x, "basedOn", js.Array(value*))
     
+    inline def setCancellationDate(value: String): Self = StObject.set(x, "cancellationDate", value.asInstanceOf[js.Any])
+    
+    inline def setCancellationDateUndefined: Self = StObject.set(x, "cancellationDate", js.undefined)
+    
     inline def setCancellationReason(value: CodeableConcept): Self = StObject.set(x, "cancellationReason", value.asInstanceOf[js.Any])
     
     inline def setCancellationReasonUndefined: Self = StObject.set(x, "cancellationReason", js.undefined)
+    
+    inline def setClass(value: js.Array[CodeableConcept]): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+    
+    inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
+    
+    inline def setClassVarargs(value: CodeableConcept*): Self = StObject.set(x, "class", js.Array(value*))
     
     inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
@@ -218,6 +277,14 @@ object Appointment {
     
     inline def setNoteVarargs(value: Annotation*): Self = StObject.set(x, "note", js.Array(value*))
     
+    inline def setOccurrenceChanged(value: Boolean): Self = StObject.set(x, "occurrenceChanged", value.asInstanceOf[js.Any])
+    
+    inline def setOccurrenceChangedUndefined: Self = StObject.set(x, "occurrenceChanged", js.undefined)
+    
+    inline def setOriginatingAppointment(value: Reference): Self = StObject.set(x, "originatingAppointment", value.asInstanceOf[js.Any])
+    
+    inline def setOriginatingAppointmentUndefined: Self = StObject.set(x, "originatingAppointment", js.undefined)
+    
     inline def setParticipant(value: js.Array[AppointmentParticipant]): Self = StObject.set(x, "participant", value.asInstanceOf[js.Any])
     
     inline def setParticipantVarargs(value: AppointmentParticipant*): Self = StObject.set(x, "participant", js.Array(value*))
@@ -228,6 +295,10 @@ object Appointment {
     
     inline def setPatientInstructionVarargs(value: CodeableReference*): Self = StObject.set(x, "patientInstruction", js.Array(value*))
     
+    inline def setPreviousAppointment(value: Reference): Self = StObject.set(x, "previousAppointment", value.asInstanceOf[js.Any])
+    
+    inline def setPreviousAppointmentUndefined: Self = StObject.set(x, "previousAppointment", js.undefined)
+    
     inline def setPriority(value: CodeableConcept): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
@@ -237,6 +308,16 @@ object Appointment {
     inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
     inline def setReasonVarargs(value: CodeableReference*): Self = StObject.set(x, "reason", js.Array(value*))
+    
+    inline def setRecurrenceId(value: Double): Self = StObject.set(x, "recurrenceId", value.asInstanceOf[js.Any])
+    
+    inline def setRecurrenceIdUndefined: Self = StObject.set(x, "recurrenceId", js.undefined)
+    
+    inline def setRecurrenceTemplate(value: js.Array[AppointmentRecurrenceTemplate]): Self = StObject.set(x, "recurrenceTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setRecurrenceTemplateUndefined: Self = StObject.set(x, "recurrenceTemplate", js.undefined)
+    
+    inline def setRecurrenceTemplateVarargs(value: AppointmentRecurrenceTemplate*): Self = StObject.set(x, "recurrenceTemplate", js.Array(value*))
     
     inline def setReplaces(value: js.Array[Reference]): Self = StObject.set(x, "replaces", value.asInstanceOf[js.Any])
     
@@ -258,11 +339,11 @@ object Appointment {
     
     inline def setServiceCategoryVarargs(value: CodeableConcept*): Self = StObject.set(x, "serviceCategory", js.Array(value*))
     
-    inline def setServiceType(value: js.Array[CodeableConcept]): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
+    inline def setServiceType(value: js.Array[CodeableReference]): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
     
     inline def setServiceTypeUndefined: Self = StObject.set(x, "serviceType", js.undefined)
     
-    inline def setServiceTypeVarargs(value: CodeableConcept*): Self = StObject.set(x, "serviceType", js.Array(value*))
+    inline def setServiceTypeVarargs(value: CodeableReference*): Self = StObject.set(x, "serviceType", js.Array(value*))
     
     inline def setSlot(value: js.Array[Reference]): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
     
@@ -294,6 +375,16 @@ object Appointment {
     
     inline def setSupportingInformationVarargs(value: Reference*): Self = StObject.set(x, "supportingInformation", js.Array(value*))
     
+    inline def setVirtualService(value: js.Array[VirtualServiceDetail]): Self = StObject.set(x, "virtualService", value.asInstanceOf[js.Any])
+    
+    inline def setVirtualServiceUndefined: Self = StObject.set(x, "virtualService", js.undefined)
+    
+    inline def setVirtualServiceVarargs(value: VirtualServiceDetail*): Self = StObject.set(x, "virtualService", js.Array(value*))
+    
+    inline def set_cancellationDate(value: Element): Self = StObject.set(x, "_cancellationDate", value.asInstanceOf[js.Any])
+    
+    inline def set_cancellationDateUndefined: Self = StObject.set(x, "_cancellationDate", js.undefined)
+    
     inline def set_created(value: Element): Self = StObject.set(x, "_created", value.asInstanceOf[js.Any])
     
     inline def set_createdUndefined: Self = StObject.set(x, "_created", js.undefined)
@@ -305,6 +396,10 @@ object Appointment {
     inline def set_end(value: Element): Self = StObject.set(x, "_end", value.asInstanceOf[js.Any])
     
     inline def set_endUndefined: Self = StObject.set(x, "_end", js.undefined)
+    
+    inline def set_occurrenceChanged(value: Element): Self = StObject.set(x, "_occurrenceChanged", value.asInstanceOf[js.Any])
+    
+    inline def set_occurrenceChangedUndefined: Self = StObject.set(x, "_occurrenceChanged", js.undefined)
     
     inline def set_start(value: Element): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
     

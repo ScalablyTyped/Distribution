@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MinBlockSize
+import typings.csstype.mod.Property.ScrollPaddingInlineEnd
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `380` extends StObject {
   
   var value: js.UndefOr[
-    (MinBlockSize[Double | String]) | (js.Array[
+    (ScrollPaddingInlineEnd[Double | String]) | (js.Array[
       (Extract[
         js.UndefOr[
-          (MinBlockSize[Double | String]) | (js.Array[NonNullable[js.UndefOr[MinBlockSize[Double | String]]]])
+          (ScrollPaddingInlineEnd[Double | String]) | (js.Array[NonNullable[js.UndefOr[ScrollPaddingInlineEnd[Double | String]]]])
         ], 
         String
-      ]) | (NonNullable[js.UndefOr[MinBlockSize[Double | String]]])
+      ]) | (NonNullable[js.UndefOr[ScrollPaddingInlineEnd[Double | String]]])
     ])
   ] = js.native
 }

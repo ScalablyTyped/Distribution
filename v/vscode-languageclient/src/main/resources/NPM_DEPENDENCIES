@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vscode-languageclient" : "8.0.2"
+      "vscode-languageclient" : "8.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "vscode-languageclient" : "8.0.2"
+      "vscode-languageclient" : "8.1.0"
     }
   ],
   "compile-devDependencies" : [

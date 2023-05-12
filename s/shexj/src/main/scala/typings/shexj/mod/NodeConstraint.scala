@@ -1,9 +1,5 @@
 package typings.shexj.mod
 
-import typings.shexj.shexjStrings.bnode
-import typings.shexj.shexjStrings.iri
-import typings.shexj.shexjStrings.literal
-import typings.shexj.shexjStrings.nonliteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +20,7 @@ trait NodeConstraint
     * Type of <a href="https://www.w3.org/TR/rdf11-concepts/#dfn-node">RDF Term</a> expected for a conformant RDF node.
     * @see <a href="http://shex.io/shex-semantics/#nodeKind">ShEx nodeKind definition</a>
     */
-  var nodeKind: js.UndefOr[iri | bnode | nonliteral | literal] = js.undefined
+  var nodeKind: js.UndefOr[typings.shexj.mod.nodeKind] = js.undefined
   
   /**
     * Mandatory type "NodeConstraint".
@@ -52,7 +48,7 @@ object NodeConstraint {
     
     inline def setDatatypeUndefined: Self = StObject.set(x, "datatype", js.undefined)
     
-    inline def setNodeKind(value: iri | bnode | nonliteral | literal): Self = StObject.set(x, "nodeKind", value.asInstanceOf[js.Any])
+    inline def setNodeKind(value: nodeKind): Self = StObject.set(x, "nodeKind", value.asInstanceOf[js.Any])
     
     inline def setNodeKindUndefined: Self = StObject.set(x, "nodeKind", js.undefined)
     

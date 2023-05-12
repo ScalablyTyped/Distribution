@@ -24,7 +24,11 @@ trait State extends StObject {
   
   var parentProcess: Process | Null
   
+  var randomize: js.UndefOr[Boolean] = js.undefined
+  
   var rootDescribeBlock: DescribeBlock
+  
+  var seed: Double
   
   var testNamePattern: js.UndefOr[js.RegExp | Null] = js.undefined
   
@@ -41,10 +45,11 @@ object State {
     includeTestLocationInResult: Boolean,
     maxConcurrency: Double,
     rootDescribeBlock: DescribeBlock,
+    seed: Double,
     testTimeout: Double,
     unhandledErrors: js.Array[Exception]
   ): State = {
-    val __obj = js.Dynamic.literal(currentDescribeBlock = currentDescribeBlock.asInstanceOf[js.Any], hasFocusedTests = hasFocusedTests.asInstanceOf[js.Any], hasStarted = hasStarted.asInstanceOf[js.Any], includeTestLocationInResult = includeTestLocationInResult.asInstanceOf[js.Any], maxConcurrency = maxConcurrency.asInstanceOf[js.Any], rootDescribeBlock = rootDescribeBlock.asInstanceOf[js.Any], testTimeout = testTimeout.asInstanceOf[js.Any], unhandledErrors = unhandledErrors.asInstanceOf[js.Any], parentProcess = null)
+    val __obj = js.Dynamic.literal(currentDescribeBlock = currentDescribeBlock.asInstanceOf[js.Any], hasFocusedTests = hasFocusedTests.asInstanceOf[js.Any], hasStarted = hasStarted.asInstanceOf[js.Any], includeTestLocationInResult = includeTestLocationInResult.asInstanceOf[js.Any], maxConcurrency = maxConcurrency.asInstanceOf[js.Any], rootDescribeBlock = rootDescribeBlock.asInstanceOf[js.Any], seed = seed.asInstanceOf[js.Any], testTimeout = testTimeout.asInstanceOf[js.Any], unhandledErrors = unhandledErrors.asInstanceOf[js.Any], parentProcess = null)
     __obj.asInstanceOf[State]
   }
   
@@ -79,7 +84,13 @@ object State {
     
     inline def setParentProcessNull: Self = StObject.set(x, "parentProcess", null)
     
+    inline def setRandomize(value: Boolean): Self = StObject.set(x, "randomize", value.asInstanceOf[js.Any])
+    
+    inline def setRandomizeUndefined: Self = StObject.set(x, "randomize", js.undefined)
+    
     inline def setRootDescribeBlock(value: DescribeBlock): Self = StObject.set(x, "rootDescribeBlock", value.asInstanceOf[js.Any])
+    
+    inline def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     
     inline def setTestNamePattern(value: js.RegExp): Self = StObject.set(x, "testNamePattern", value.asInstanceOf[js.Any])
     

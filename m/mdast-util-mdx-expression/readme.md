@@ -1,7 +1,7 @@
 
 # Scala.js typings for mdast-util-mdx-expression
 
-Typings are for version 1.3.0
+Typings are for version 1.3.2
 
 ## Library description:
 mdast extension to parse and serialize MDX (or MDX.js) expressions

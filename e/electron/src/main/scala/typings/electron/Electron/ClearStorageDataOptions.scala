@@ -12,15 +12,15 @@ trait ClearStorageDataOptions extends StObject {
   var origin: js.UndefOr[String] = js.undefined
   
   /**
-    * The types of quotas to clear, can contain: `temporary`, `persistent`,
-    * `syncable`. If not specified, clear all quotas.
+    * The types of quotas to clear, can contain: `temporary`, `syncable`. If not
+    * specified, clear all quotas.
     */
   var quotas: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * The types of storages to clear, can contain: `appcache`, `cookies`,
-    * `filesystem`, `indexdb`, `localstorage`, `shadercache`, `websql`,
-    * `serviceworkers`, `cachestorage`. If not specified, clear all storage types.
+    * The types of storages to clear, can contain: `cookies`, `filesystem`, `indexdb`,
+    * `localstorage`, `shadercache`, `websql`, `serviceworkers`, `cachestorage`. If
+    * not specified, clear all storage types.
     */
   var storages: js.UndefOr[js.Array[String]] = js.undefined
 }

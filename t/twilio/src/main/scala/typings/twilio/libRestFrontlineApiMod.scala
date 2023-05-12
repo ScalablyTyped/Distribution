@@ -8,21 +8,15 @@ object libRestFrontlineApiMod {
   
   @JSImport("twilio/lib/rest/FrontlineApi", JSImport.Namespace)
   @js.native
-  open class ^ protected () extends FrontlineApi {
-    /**
-      * Initialize frontline_api domain
-      *
-      * @param twilio - The twilio client
-      */
-    def this(twilio: typings.twilio.libRestTwilioMod.^) = this()
-  }
+  open class ^ () extends FrontlineApi
   
   @js.native
   trait FrontlineApi
-    extends typings.twilio.libBaseDomainMod.^ {
+    extends typings.twilio.libRestFrontlineApiBaseMod.^ {
     
-    val users: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UserListInstance */ Any = js.native
-    
-    val v1: typings.twilio.libRestFrontlineApiV1Mod.^ = js.native
+    /**
+      * @deprecated - Use v1.users instead
+      */
+    def users: Any = js.native
   }
 }

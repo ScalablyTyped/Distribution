@@ -5,6 +5,7 @@ import typings.materializecssMaterialize.MElements
 import typings.materializecssMaterialize.anon.PartialFormSelectOptions
 import typings.std.Element
 import typings.std.HTMLInputElement
+import typings.std.HTMLLabelElement
 import typings.std.HTMLUListElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,55 +18,62 @@ open class FormSelect ()
      with typings.materializecssMaterialize.M.FormSelect {
   
   /**
-    * Destroy plugin instance and teardown
+    * Destroy plugin instance and teardown.
     */
   /* CompleteClass */
   override def destroy(): Unit = js.native
   
   /**
-    * Instance of the dropdown plugin for this select
+    * Instance of the dropdown plugin for this select.
     */
   /* CompleteClass */
   var dropdown: typings.materializecssMaterialize.M.Dropdown = js.native
   
   /**
-    * Dropdown UL element
+    * Dropdown UL element.
     */
   /* CompleteClass */
   var dropdownOptions: HTMLUListElement = js.native
   
   /**
-    * The DOM element the plugin was initialized with
+    * The DOM element the plugin was initialized with.
     */
   /* CompleteClass */
   var el: Element = js.native
   
   /**
-    * Get selected values in an array
+    * Get selected values in an array.
     */
   /* CompleteClass */
   override def getSelectedValues(): js.Array[String] = js.native
   
   /**
-    * Text input that shows current selected option
+    * Text input that shows current selected option.
     */
   /* CompleteClass */
   var input: HTMLInputElement = js.native
   
   /**
-    * If this is a multiple select
+    * If this is a multiple select.
     */
   /* CompleteClass */
   var isMultiple: Boolean = js.native
   
   /**
-    * The options the instance was initialized with
+    * Label associated with the current select element.
+    * Is "null", if not detected.
+    */
+  /* CompleteClass */
+  var labelEl: HTMLLabelElement = js.native
+  
+  /**
+    * The options the instance was initialized with.
     */
   /* CompleteClass */
   var options: FormSelectOptions = js.native
   
   /**
-    * The select wrapper element
+    * The select wrapper element.
     */
   /* CompleteClass */
   var wrapper: Element = js.native
@@ -77,19 +85,19 @@ object FormSelect {
   val ^ : js.Any = js.native
   
   /**
-    * Get Instance
+    * Get Instance.
     */
   /* static member */
   inline def getInstance(elem: Element): typings.materializecssMaterialize.M.FormSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(elem.asInstanceOf[js.Any]).asInstanceOf[typings.materializecssMaterialize.M.FormSelect]
   
   /**
-    * Init FormSelects
+    * Init FormSelects.
     */
   /* static member */
   inline def init(els: MElements): js.Array[typings.materializecssMaterialize.M.FormSelect] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializecssMaterialize.M.FormSelect]]
   inline def init(els: MElements, options: PartialFormSelectOptions): js.Array[typings.materializecssMaterialize.M.FormSelect] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializecssMaterialize.M.FormSelect]]
   /**
-    * Init FormSelect
+    * Init FormSelect.
     */
   /* static member */
   inline def init(els: Element): typings.materializecssMaterialize.M.FormSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[typings.materializecssMaterialize.M.FormSelect]

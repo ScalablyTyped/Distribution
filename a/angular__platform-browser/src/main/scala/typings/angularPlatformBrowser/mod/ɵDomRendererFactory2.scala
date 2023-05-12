@@ -1,32 +1,70 @@
 package typings.angularPlatformBrowser.mod
 
+import typings.angularCore.mod.NgZone
+import typings.angularCore.mod.OnDestroy
 import typings.angularCore.mod.RendererFactory2
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵInjectableDeclaration
+import typings.std.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/platform-browser", "\u0275DomRendererFactory2")
 @js.native
-open class ɵDomRendererFactory2 protected () extends RendererFactory2 {
-  def this(eventManager: EventManager, sharedStylesHost: ɵDomSharedStylesHost, appId: String) = this()
+open class ɵDomRendererFactory2 protected ()
+  extends RendererFactory2
+     with OnDestroy {
+  def this(
+    eventManager: EventManager,
+    sharedStylesHost: ɵSharedStylesHost,
+    appId: String,
+    removeStylesOnCompDestory: Boolean,
+    doc: Document,
+    platformId: js.Object,
+    ngZone: NgZone
+  ) = this()
+  def this(
+    eventManager: EventManager,
+    sharedStylesHost: ɵSharedStylesHost,
+    appId: String,
+    removeStylesOnCompDestory: Boolean,
+    doc: Document,
+    platformId: js.Object,
+    ngZone: NgZone,
+    nonce: String
+  ) = this()
   
-  /* private */ var appId: Any = js.native
+  /* private */ val appId: Any = js.native
   
-  @JSName("begin")
-  def begin_MɵDomRendererFactory2(): Unit = js.native
+  /* private */ val defaultRenderer: Any = js.native
   
-  /* private */ var defaultRenderer: Any = js.native
+  /* private */ val doc: Any = js.native
   
-  @JSName("end")
-  def end_MɵDomRendererFactory2(): Unit = js.native
+  /* private */ val eventManager: Any = js.native
   
-  /* private */ var eventManager: Any = js.native
+  /* private */ var getOrCreateRenderer: Any = js.native
   
-  /* private */ var rendererByCompId: Any = js.native
+  /**
+    * A callback method that performs custom clean-up, invoked immediately
+    * before a directive, pipe, or service instance is destroyed.
+    */
+  /* CompleteClass */
+  override def ngOnDestroy(): Unit = js.native
   
-  /* private */ var sharedStylesHost: Any = js.native
+  val ngZone: NgZone = js.native
+  
+  /* private */ val nonce: Any = js.native
+  
+  val platformId: js.Object = js.native
+  
+  /* private */ val platformIsServer: Any = js.native
+  
+  /* private */ var removeStylesOnCompDestory: Any = js.native
+  
+  /* private */ val rendererByCompId: Any = js.native
+  
+  /* private */ val sharedStylesHost: Any = js.native
 }
 /* static members */
 object ɵDomRendererFactory2 {

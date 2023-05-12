@@ -10,9 +10,8 @@ object enginesWebGPUWebgpuTintWASMMod {
   @js.native
   open class WebGPUTintWASM () extends StObject {
     
-    /* private */ var _twgsl: Any = js.native
-    
     def convertSpirV2WGSL(code: js.typedarray.Uint32Array): String = js.native
+    def convertSpirV2WGSL(code: js.typedarray.Uint32Array, disableUniformityAnalysis: Boolean): String = js.native
     
     def initTwgsl(): js.Promise[Unit] = js.native
     def initTwgsl(twgslOptions: TwgslOptions): js.Promise[Unit] = js.native
@@ -24,6 +23,11 @@ object enginesWebGPUWebgpuTintWASMMod {
     @js.native
     val ^ : js.Any = js.native
     
+    @JSImport("babylonjs/Engines/WebGPU/webgpuTintWASM", "WebGPUTintWASM.DisableUniformityAnalysis")
+    @js.native
+    def DisableUniformityAnalysis: Boolean = js.native
+    inline def DisableUniformityAnalysis_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DisableUniformityAnalysis")(x.asInstanceOf[js.Any])
+    
     @JSImport("babylonjs/Engines/WebGPU/webgpuTintWASM", "WebGPUTintWASM.ShowWGSLShaderCode")
     @js.native
     def ShowWGSLShaderCode: Boolean = js.native
@@ -32,6 +36,11 @@ object enginesWebGPUWebgpuTintWASMMod {
     @JSImport("babylonjs/Engines/WebGPU/webgpuTintWASM", "WebGPUTintWASM._TWgslDefaultOptions")
     @js.native
     val _TWgslDefaultOptions: Any = js.native
+    
+    @JSImport("babylonjs/Engines/WebGPU/webgpuTintWASM", "WebGPUTintWASM._twgsl")
+    @js.native
+    def _twgsl: Any = js.native
+    inline def _twgsl_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_twgsl")(x.asInstanceOf[js.Any])
   }
   
   trait TwgslOptions extends StObject {

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ExternalLink extends StObject {
   
-  // The url of the link.
+  // The URL of the link.
   var href: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ExternalLink {

@@ -17,4 +17,6 @@ object filtersMod {
   inline def dnsWsOrWss(multiaddrs: js.Array[Multiaddr_]): js.Array[Multiaddr_] = ^.asInstanceOf[js.Dynamic].applyDynamic("dnsWsOrWss")(multiaddrs.asInstanceOf[js.Any]).asInstanceOf[js.Array[Multiaddr_]]
   
   inline def dnsWss(multiaddrs: js.Array[Multiaddr_]): js.Array[Multiaddr_] = ^.asInstanceOf[js.Dynamic].applyDynamic("dnsWss")(multiaddrs.asInstanceOf[js.Any]).asInstanceOf[js.Array[Multiaddr_]]
+  
+  inline def wss(multiaddrs: js.Array[Multiaddr_]): js.Array[Multiaddr_] = ^.asInstanceOf[js.Dynamic].applyDynamic("wss")(multiaddrs.asInstanceOf[js.Any]).asInstanceOf[js.Array[Multiaddr_]]
 }

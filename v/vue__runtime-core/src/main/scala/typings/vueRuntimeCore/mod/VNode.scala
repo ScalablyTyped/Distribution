@@ -8,11 +8,11 @@ trait VNode[HostNode, HostElement, ExtraProps] extends StObject {
   
   var anchor: HostNode | Null
   
-  /* Excluded from this release type: dynamicProps */
-  /* Excluded from this release type: dynamicChildren */
+  /* removed internal: dynamicProps */
+  /* removed internal: dynamicChildren */
   var appContext: AppContext | Null
   
-  /* Excluded from this release type: slotScopeIds */
+  /* removed internal: slotScopeIds */
   var children: VNodeNormalizedChildren
   
   var component: ComponentInternalInstance | Null
@@ -35,11 +35,11 @@ trait VNode[HostNode, HostElement, ExtraProps] extends StObject {
     */
   var scopeId: String | Null
   
-  /* Excluded from this release type: ssContent */
-  /* Excluded from this release type: ssFallback */
+  /* removed internal: ssContent */
+  /* removed internal: ssFallback */
   var shapeFlag: Double
   
-  /* Excluded from this release type: staticCount */
+  /* removed internal: staticCount */
   var suspense: SuspenseBoundary | Null
   
   var target: HostElement | Null
@@ -48,8 +48,7 @@ trait VNode[HostNode, HostElement, ExtraProps] extends StObject {
   
   var transition: TransitionHooks[HostElement] | Null
   
-  /* Excluded from this release type: __v_isVNode */
-  /* Excluded from this release type: __v_skip */
+  /* removed internal: __v_isVNode */
   var `type`: VNodeTypes
 }
 object VNode {

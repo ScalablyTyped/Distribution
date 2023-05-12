@@ -1,5 +1,7 @@
 package typings.entities
 
+import typings.entities.libEsmDecodeMod.DecodingMode
+import typings.entities.libEsmDecodeMod.EntityErrorProducer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,28 +12,18 @@ object libEsmMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @js.native
-  sealed trait DecodingMode extends StObject
   @JSImport("entities/lib/esm", "DecodingMode")
   @js.native
   object DecodingMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[DecodingMode & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.entities.libEsmDecodeMod.DecodingMode & Double] = js.native
     
-    /** Support legacy HTML entities. */
-    @js.native
-    sealed trait Legacy
-      extends StObject
-         with DecodingMode
-    /* 0 */ val Legacy: typings.entities.libEsmMod.DecodingMode.Legacy & Double = js.native
+    /* 2 */ val Attribute: typings.entities.libEsmDecodeMod.DecodingMode.Attribute & Double = js.native
     
-    /** Do not support legacy HTML entities. */
-    @js.native
-    sealed trait Strict
-      extends StObject
-         with DecodingMode
-    /* 1 */ val Strict: typings.entities.libEsmMod.DecodingMode.Strict & Double = js.native
+    /* 0 */ val Legacy: typings.entities.libEsmDecodeMod.DecodingMode.Legacy & Double = js.native
+    
+    /* 1 */ val Strict: typings.entities.libEsmDecodeMod.DecodingMode.Strict & Double = js.native
   }
   
   @js.native
@@ -95,6 +87,42 @@ object libEsmMod {
     /* 0 */ val UTF8: typings.entities.libEsmMod.EncodingMode.UTF8 & Double = js.native
   }
   
+  @JSImport("entities/lib/esm", "EntityDecoder")
+  @js.native
+  open class EntityDecoder protected ()
+    extends typings.entities.libEsmDecodeMod.EntityDecoder {
+    def this(
+      /** The tree used to decode entities. */
+    decodeTree: js.typedarray.Uint16Array,
+      /**
+      * The function that is called when a codepoint is decoded.
+      *
+      * For multi-byte named entities, this will be called multiple times,
+      * with the second codepoint, and the same `consumed` value.
+      *
+      * @param codepoint The decoded codepoint.
+      * @param consumed The number of bytes consumed by the decoder.
+      */
+    emitCodePoint: js.Function2[/* cp */ Double, /* consumed */ Double, Unit]
+    ) = this()
+    def this(
+      /** The tree used to decode entities. */
+    decodeTree: js.typedarray.Uint16Array,
+      /**
+      * The function that is called when a codepoint is decoded.
+      *
+      * For multi-byte named entities, this will be called multiple times,
+      * with the second codepoint, and the same `consumed` value.
+      *
+      * @param codepoint The decoded codepoint.
+      * @param consumed The number of bytes consumed by the decoder.
+      */
+    emitCodePoint: js.Function2[/* cp */ Double, /* consumed */ Double, Unit],
+      /** An object that is used to produce errors. */
+    errors: EntityErrorProducer
+    ) = this()
+  }
+  
   @js.native
   sealed trait EntityLevel extends StObject
   @JSImport("entities/lib/esm", "EntityLevel")
@@ -124,14 +152,19 @@ object libEsmMod {
   inline def decode(data: String, options: EntityLevel): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def decodeHTML(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeHTML")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def decodeHTML(str: String, mode: DecodingMode): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeHTML")(str.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def decodeHTML4(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeHTML4")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def decodeHTML4(str: String, mode: DecodingMode): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeHTML4")(str.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def decodeHTML4Strict(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeHTML4Strict")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def decodeHTML5(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeHTML5")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def decodeHTML5(str: String, mode: DecodingMode): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeHTML5")(str.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def decodeHTML5Strict(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeHTML5Strict")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def decodeHTMLAttribute(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeHTMLAttribute")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def decodeHTMLStrict(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeHTMLStrict")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   

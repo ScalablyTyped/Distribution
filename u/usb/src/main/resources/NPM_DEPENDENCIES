@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "usb" : "2.5.2"
+      "usb" : "2.9.0"
     }
   ],
   "test-dependencies" : [
     {
-      "usb" : "2.5.2"
+      "usb" : "2.9.0"
     }
   ],
   "compile-devDependencies" : [

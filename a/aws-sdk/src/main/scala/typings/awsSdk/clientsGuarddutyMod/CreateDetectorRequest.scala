@@ -12,7 +12,7 @@ trait CreateDetectorRequest extends StObject {
   var ClientToken: js.UndefOr[typings.awsSdk.clientsGuarddutyMod.ClientToken] = js.undefined
   
   /**
-    * Describes which data sources will be enabled for the detector.
+    * Describes which data sources will be enabled for the detector. There might be regional differences because some data sources might not be available in all the Amazon Web Services Regions where GuardDuty is presently supported. For more information, see Regions and endpoints.
     */
   var DataSources: js.UndefOr[DataSourceConfigurations] = js.undefined
   
@@ -20,6 +20,11 @@ trait CreateDetectorRequest extends StObject {
     * A Boolean value that specifies whether the detector is to be enabled.
     */
   var Enable: Boolean
+  
+  /**
+    * A list of features that will be configured for the detector.
+    */
+  var Features: js.UndefOr[DetectorFeatureConfigurations] = js.undefined
   
   /**
     * A value that specifies how frequently updated findings are exported.
@@ -50,6 +55,12 @@ object CreateDetectorRequest {
     inline def setDataSourcesUndefined: Self = StObject.set(x, "DataSources", js.undefined)
     
     inline def setEnable(value: Boolean): Self = StObject.set(x, "Enable", value.asInstanceOf[js.Any])
+    
+    inline def setFeatures(value: DetectorFeatureConfigurations): Self = StObject.set(x, "Features", value.asInstanceOf[js.Any])
+    
+    inline def setFeaturesUndefined: Self = StObject.set(x, "Features", js.undefined)
+    
+    inline def setFeaturesVarargs(value: DetectorFeatureConfiguration*): Self = StObject.set(x, "Features", js.Array(value*))
     
     inline def setFindingPublishingFrequency(value: FindingPublishingFrequency): Self = StObject.set(x, "FindingPublishingFrequency", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,8 @@
 package typings.ipfsBitswap
 
+import typings.ipfsBitswap.distSrcMessageMessageMod.Message.Wantlist.WantType
+import typings.multiformats.cidMod.CID
 import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
-import typings.multiformats.mod.CID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,18 +12,9 @@ object distSrcWantlistEntryMod {
   @JSImport("ipfs-bitswap/dist/src/wantlist/entry", "WantListEntry")
   @js.native
   open class WantListEntry protected () extends StObject {
-    /**
-      * @param {import('multiformats').CID} cid
-      * @param {number} priority
-      * @param {import('../message/message').Message.Wantlist.WantType} wantType
-      */
-    def this(
-      cid: CID[Any, Double, Double, Version],
-      priority: Double,
-      wantType: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_message.Message.Wantlist.WantType */ Any
-    ) = this()
+    def this(cid: CID[Any, Double, Double, Version], priority: Double, wantType: WantType) = this()
     
-    var _refCounter: Double = js.native
+    /* private */ var _refCounter: Any = js.native
     
     var cid: CID[Any, Double, Double, Version] = js.native
     
@@ -39,6 +31,6 @@ object distSrcWantlistEntryMod {
     @JSName(js.Symbol.toStringTag)
     var toStringTag: js.Function0[String] = js.native
     
-    var wantType: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_message.Message.Wantlist.WantType */ Any = js.native
+    var wantType: WantType = js.native
   }
 }

@@ -8,11 +8,11 @@ trait ParametersPathBaseHead_ extends StObject {
   
   var parameters: PathBaseHead_
   
-  var responses: `200404500`
+  var responses: `200Content221`
 }
 object ParametersPathBaseHead_ {
   
-  inline def apply(parameters: PathBaseHead_, responses: `200404500`): ParametersPathBaseHead_ = {
+  inline def apply(parameters: PathBaseHead_, responses: `200Content221`): ParametersPathBaseHead_ = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathBaseHead_]
   }
@@ -22,6 +22,6 @@ object ParametersPathBaseHead_ {
     
     inline def setParameters(value: PathBaseHead_): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200404500`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content221`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

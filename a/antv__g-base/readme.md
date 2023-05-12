@@ -1,7 +1,7 @@
 
 # Scala.js typings for antv__g-base
 
-Typings are for version 0.5.11
+Typings are for version 0.5.15
 
 ## Library description:
 A common util collection for antv projects

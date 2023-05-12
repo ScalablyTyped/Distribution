@@ -20,20 +20,27 @@ open class Shader protected ()
   /**
     * Creates a new Shader instance.
     *
-    * @param {GraphicsDevice} graphicsDevice - The graphics device used to manage this shader.
+    * Consider {@link createShaderFromCode} as a simpler and more powerful way to create
+    * a shader.
+    *
+    * @param {import('./graphics-device.js').GraphicsDevice} graphicsDevice - The graphics device
+    * used to manage this shader.
     * @param {object} definition - The shader definition from which to build the shader.
     * @param {string} [definition.name] - The name of the shader.
-    * @param {Object<string, string>} definition.attributes - Object detailing the mapping of
+    * @param {Object<string, string>} [definition.attributes] - Object detailing the mapping of
     * vertex shader attribute names to semantics SEMANTIC_*. This enables the engine to match
-    * vertex buffer data as inputs to the shader.
+    * vertex buffer data as inputs to the shader. When not specified, rendering without
+    * verex buffer is assumed.
     * @param {string} definition.vshader - Vertex shader source (GLSL code).
     * @param {string} [definition.fshader] - Fragment shader source (GLSL code). Optional when
     * useTransformFeedback is specified.
     * @param {boolean} [definition.useTransformFeedback] - Specifies that this shader outputs
     * post-VS data to a buffer.
+    * @param {string} [definition.shaderLanguage] - Specifies the shader language of vertex and
+    * fragment shaders. Defaults to {@link SHADERLANGUAGE_GLSL}.
     * @example
     * // Create a shader that renders primitives with a solid red color
-    * var shaderDefinition = {
+    * const shaderDefinition = {
     *     attributes: {
     *         aPosition: pc.SEMANTIC_POSITION
     *     },
@@ -55,7 +62,7 @@ open class Shader protected ()
     *     ].join("\n")
     * };
     *
-    * var shader = new pc.Shader(graphicsDevice, shaderDefinition);
+    * const shader = new pc.Shader(graphicsDevice, shaderDefinition);
     */
   def this(graphicsDevice: typings.playcanvas.mod.GraphicsDevice, definition: Attributes) = this()
 }

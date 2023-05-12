@@ -2,6 +2,7 @@ package typings.vscodeLanguageclient
 
 import typings.std.IterableIterator
 import typings.std.Map
+import typings.std.Set
 import typings.vscode.Thenable
 import typings.vscode.mod.Disposable
 import typings.vscode.mod.Event
@@ -25,8 +26,10 @@ import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.DidSaveTextDocu
 import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.TextDocumentChangeRegistrationOptions
 import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.TextDocumentRegistrationOptions
 import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.TextDocumentSaveRegistrationOptions
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.TextDocumentSyncKind
 import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.TextDocumentSyncOptions
 import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.WillSaveTextDocumentParams
+import typings.vscodeLanguageserverProtocol.mod.ProtocolNotificationType
 import typings.vscodeLanguageserverProtocol.mod.RegistrationType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -45,22 +48,27 @@ object libCommonTextSynchronizationMod {
           js.Object
         ]
        with TextDocumentSendFeature[js.Function1[/* event */ TextDocumentChangeEvent, js.Promise[Unit]]]
-       with NotifyingFeature[TextDocumentChangeEvent, DidChangeTextDocumentParams] {
-    def this(client: FeatureClient[TextDocumentSynchronizationMiddleware, js.Object]) = this()
+       with NotifyingFeature[DidChangeTextDocumentParams] {
+    def this(
+      client: FeatureClient[TextDocumentSynchronizationMiddleware, js.Object],
+      pendingTextDocumentChanges: Map[String, TextDocument]
+    ) = this()
     
     /* private */ val _changeData: Any = js.native
-    
-    /* private */ var _changeDelayer: Any = js.native
-    
-    /* private */ var _forcingDelivery: Any = js.native
     
     /* private */ var _listener: Any = js.native
     
     /* private */ val _onNotificationSent: Any = js.native
     
+    /* private */ val _onPendingChangeAdded: Any = js.native
+    
+    /* private */ val _pendingTextDocumentChanges: Any = js.native
+    
+    /* private */ var _syncKind: Any = js.native
+    
     /* private */ var callback: Any = js.native
     
-    def forceDelivery(): js.Promise[Unit] = js.native
+    def getPendingDocumentChanges(excludes: Set[String]): js.Array[TextDocument] = js.native
     
     /**
       * Returns a provider for the given text document.
@@ -68,48 +76,44 @@ object libCommonTextSynchronizationMod {
     /* CompleteClass */
     override def getProvider(document: TextDocument): js.UndefOr[Send[js.Function1[/* event */ TextDocumentChangeEvent, js.Promise[Unit]]]] = js.native
     
-    /* private */ var notificationSent: Any = js.native
+    def notificationSent(
+      textDocument: TextDocument,
+      `type`: ProtocolNotificationType[DidChangeTextDocumentParams, TextDocumentRegistrationOptions],
+      params: DidChangeTextDocumentParams
+    ): Unit = js.native
     
-    def onNotificationSent: Event[NotificationSendEvent[TextDocumentChangeEvent, DidChangeTextDocumentParams]] = js.native
+    def onNotificationSent: Event[NotificationSendEvent[DidChangeTextDocumentParams]] = js.native
+    /* CompleteClass */
+    override def onNotificationSent(listener: js.Function1[/* e */ NotificationSendEvent[DidChangeTextDocumentParams], Any]): Disposable = js.native
     /* CompleteClass */
     override def onNotificationSent(
-      listener: js.Function1[
-          /* e */ NotificationSendEvent[TextDocumentChangeEvent, DidChangeTextDocumentParams], 
-          Any
-        ]
-    ): Disposable = js.native
-    /* CompleteClass */
-    override def onNotificationSent(
-      listener: js.Function1[
-          /* e */ NotificationSendEvent[TextDocumentChangeEvent, DidChangeTextDocumentParams], 
-          Any
-        ],
+      listener: js.Function1[/* e */ NotificationSendEvent[DidChangeTextDocumentParams], Any],
       thisArgs: Any
     ): Disposable = js.native
     /* CompleteClass */
     override def onNotificationSent(
-      listener: js.Function1[
-          /* e */ NotificationSendEvent[TextDocumentChangeEvent, DidChangeTextDocumentParams], 
-          Any
-        ],
+      listener: js.Function1[/* e */ NotificationSendEvent[DidChangeTextDocumentParams], Any],
       thisArgs: Any,
       disposables: js.Array[Disposable]
     ): Disposable = js.native
     /* CompleteClass */
     override def onNotificationSent(
-      listener: js.Function1[
-          /* e */ NotificationSendEvent[TextDocumentChangeEvent, DidChangeTextDocumentParams], 
-          Any
-        ],
+      listener: js.Function1[/* e */ NotificationSendEvent[DidChangeTextDocumentParams], Any],
       thisArgs: Unit,
       disposables: js.Array[Disposable]
     ): Disposable = js.native
     /* CompleteClass */
     @JSName("onNotificationSent")
-    var onNotificationSent_Original: Event[NotificationSendEvent[TextDocumentChangeEvent, DidChangeTextDocumentParams]] = js.native
+    var onNotificationSent_Original: Event[NotificationSendEvent[DidChangeTextDocumentParams]] = js.native
+    
+    def onPendingChangeAdded: Event[Unit] = js.native
     
     @JSName("registrationType")
     def registrationType_MDidChangeTextDocumentFeature: RegistrationType[TextDocumentChangeRegistrationOptions] = js.native
+    
+    def syncKind: TextDocumentSyncKind = js.native
+    
+    /* private */ var updateSyncKind: Any = js.native
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -121,8 +125,11 @@ object libCommonTextSynchronizationMod {
   open class DidCloseTextDocumentFeature protected () extends TextDocumentEventFeature[DidCloseTextDocumentParams, TextDocument, TextDocumentSynchronizationMiddleware] {
     def this(
       client: FeatureClient[TextDocumentSynchronizationMiddleware, js.Object],
-      syncedDocuments: Map[String, TextDocument]
+      syncedDocuments: Map[String, TextDocument],
+      pendingTextDocumentChanges: Map[String, TextDocument]
     ) = this()
+    
+    /* private */ val _pendingTextDocumentChanges: Any = js.native
     
     /* private */ val _syncedDocuments: Any = js.native
     
@@ -201,21 +208,21 @@ object libCommonTextSynchronizationMod {
     extends StObject
        with DynamicFeature[TextDocumentChangeRegistrationOptions]
        with TextDocumentSendFeature[js.Function1[/* event */ TextDocumentChangeEvent, js.Promise[Unit]]]
-       with NotifyingFeature[TextDocumentChangeEvent, DidChangeTextDocumentParams]
+       with NotifyingFeature[DidChangeTextDocumentParams]
   
   @js.native
   trait DidCloseTextDocumentFeatureShape
     extends StObject
        with DynamicFeature[TextDocumentRegistrationOptions]
        with TextDocumentSendFeature[js.Function1[/* textDocument */ TextDocument, js.Promise[Unit]]]
-       with NotifyingFeature[TextDocument, DidCloseTextDocumentParams]
+       with NotifyingFeature[DidCloseTextDocumentParams]
   
   @js.native
   trait DidOpenTextDocumentFeatureShape
     extends StObject
        with DynamicFeature[TextDocumentRegistrationOptions]
        with TextDocumentSendFeature[js.Function1[/* textDocument */ TextDocument, js.Promise[Unit]]]
-       with NotifyingFeature[TextDocument, DidOpenTextDocumentParams] {
+       with NotifyingFeature[DidOpenTextDocumentParams] {
     
     var openDocuments: js.Iterable[TextDocument] = js.native
   }
@@ -225,7 +232,7 @@ object libCommonTextSynchronizationMod {
     extends StObject
        with DynamicFeature[TextDocumentRegistrationOptions]
        with TextDocumentSendFeature[js.Function1[/* textDocument */ TextDocument, js.Promise[Unit]]]
-       with NotifyingFeature[TextDocument, DidSaveTextDocumentParams]
+       with NotifyingFeature[DidSaveTextDocumentParams]
   
   trait ResolvedTextDocumentSyncCapabilities extends StObject {
     

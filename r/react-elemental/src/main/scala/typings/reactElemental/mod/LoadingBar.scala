@@ -11,7 +11,7 @@ open class LoadingBar protected () extends Component[LoadingBarProps, LoadingBar
   def this(props: LoadingBarProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: LoadingBarProps, context: Any) = this()
 }

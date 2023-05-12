@@ -47,7 +47,7 @@ object ProcessFlow {
     /**
       * Returns an collection of stages in the process.
       * @returns The stages.
-      * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
+      * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/collections External Link: Collections (Client API reference)}
       */
     def getStages(): ItemCollection[Stage]
     
@@ -101,7 +101,7 @@ object ProcessFlow {
   
   /**
     * Interface for the formContext.data.process API.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-data-process External Link: formContext.data.process (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/formcontext-data-process External Link: formContext.data.process (Client API reference)}
     */
   @js.native
   trait ProcessManager extends StObject {
@@ -174,7 +174,7 @@ object ProcessFlow {
       *          based on satisfied conditions in the branching rule. This may be a subset of the stages returned with
       *          formContext.data.process.getActiveProcess because it will only include those stages which represent a valid
       *          transition from the current stage based on branching that has occurred in the process.
-      * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
+      * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/collections External Link: Collections (Client API reference)}
       */
     def getActivePath(): ItemCollection[Stage] = js.native
     

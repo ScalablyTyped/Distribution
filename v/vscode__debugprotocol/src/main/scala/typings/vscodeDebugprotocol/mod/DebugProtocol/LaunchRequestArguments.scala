@@ -13,7 +13,7 @@ trait LaunchRequestArguments extends StObject {
   		*/
   var __restart: js.UndefOr[Any] = js.undefined
   
-  /** If noDebug is true, the launch request should launch the program without enabling debugging. */
+  /** If true, the launch request should launch the program without enabling debugging. */
   var noDebug: js.UndefOr[Boolean] = js.undefined
 }
 object LaunchRequestArguments {

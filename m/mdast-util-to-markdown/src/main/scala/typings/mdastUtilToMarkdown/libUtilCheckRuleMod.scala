@@ -14,9 +14,9 @@ object libUtilCheckRuleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def checkRule(context: Context): Exclude[js.UndefOr[`-_` | Asterisk | _underscore], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkRule")(context.asInstanceOf[js.Any]).asInstanceOf[Exclude[js.UndefOr[`-_` | Asterisk | _underscore], Unit]]
-  
-  type Context = typings.mdastUtilToMarkdown.libTypesMod.Context
+  inline def checkRule(state: State): Exclude[js.UndefOr[`-_` | _underscore | Asterisk | Null], js.UndefOr[Null]] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkRule")(state.asInstanceOf[js.Any]).asInstanceOf[Exclude[js.UndefOr[`-_` | _underscore | Asterisk | Null], js.UndefOr[Null]]]
   
   type Options = typings.mdastUtilToMarkdown.libTypesMod.Options
+  
+  type State = typings.mdastUtilToMarkdown.libTypesMod.State
 }

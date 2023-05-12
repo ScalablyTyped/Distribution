@@ -35,6 +35,8 @@ object distRequestAuthorizationCodeRequestMod {
     
     var correlationId: js.UndefOr[String] = js.undefined
     
+    var maxAge: js.UndefOr[Double] = js.undefined
+    
     var msGraphHost: js.UndefOr[String] = js.undefined
     
     var nativeAccountId: js.UndefOr[String] = js.undefined
@@ -112,6 +114,10 @@ object distRequestAuthorizationCodeRequestMod {
       inline def setCorrelationId(value: String): Self = StObject.set(x, "correlationId", value.asInstanceOf[js.Any])
       
       inline def setCorrelationIdUndefined: Self = StObject.set(x, "correlationId", js.undefined)
+      
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
       inline def setMsGraphHost(value: String): Self = StObject.set(x, "msGraphHost", value.asInstanceOf[js.Any])
       

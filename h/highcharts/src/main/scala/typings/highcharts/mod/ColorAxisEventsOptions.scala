@@ -7,11 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ColorAxisEventsOptions extends StObject {
   
   /**
-    * (Highcharts, Gantt) An event fired after the breaks have rendered.
-    */
-  var afterBreaks: js.UndefOr[AxisEventCallbackFunction] = js.undefined
-  
-  /**
     * (Highcharts, Highstock, Highmaps) As opposed to the `setExtremes` event,
     * this event fires after the final min and max values are computed and
     * corrected for `minRange`.
@@ -34,18 +29,6 @@ trait ColorAxisEventsOptions extends StObject {
     * function.
     */
   var legendItemClick: js.UndefOr[js.Function] = js.undefined
-  
-  /**
-    * (Highcharts, Gantt) An event fired when a break from this axis occurs on
-    * a point.
-    */
-  var pointBreak: js.UndefOr[AxisPointBreakEventCallbackFunction] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock, Gantt) An event fired when a point falls inside a
-    * break from this axis.
-    */
-  var pointInBreak: js.UndefOr[AxisPointBreakEventCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) Fires when the minimum and maximum is
@@ -71,10 +54,6 @@ object ColorAxisEventsOptions {
   @scala.inline
   implicit open class MutableBuilder[Self <: ColorAxisEventsOptions] (val x: Self) extends AnyVal {
     
-    inline def setAfterBreaks(value: AxisEventCallbackFunction): Self = StObject.set(x, "afterBreaks", value.asInstanceOf[js.Any])
-    
-    inline def setAfterBreaksUndefined: Self = StObject.set(x, "afterBreaks", js.undefined)
-    
     inline def setAfterSetExtremes(value: AxisSetExtremesEventCallbackFunction): Self = StObject.set(x, "afterSetExtremes", value.asInstanceOf[js.Any])
     
     inline def setAfterSetExtremesUndefined: Self = StObject.set(x, "afterSetExtremes", js.undefined)
@@ -82,14 +61,6 @@ object ColorAxisEventsOptions {
     inline def setLegendItemClick(value: js.Function): Self = StObject.set(x, "legendItemClick", value.asInstanceOf[js.Any])
     
     inline def setLegendItemClickUndefined: Self = StObject.set(x, "legendItemClick", js.undefined)
-    
-    inline def setPointBreak(value: AxisPointBreakEventCallbackFunction): Self = StObject.set(x, "pointBreak", value.asInstanceOf[js.Any])
-    
-    inline def setPointBreakUndefined: Self = StObject.set(x, "pointBreak", js.undefined)
-    
-    inline def setPointInBreak(value: AxisPointBreakEventCallbackFunction): Self = StObject.set(x, "pointInBreak", value.asInstanceOf[js.Any])
-    
-    inline def setPointInBreakUndefined: Self = StObject.set(x, "pointInBreak", js.undefined)
     
     inline def setSetExtremes(value: AxisSetExtremesEventCallbackFunction): Self = StObject.set(x, "setExtremes", value.asInstanceOf[js.Any])
     

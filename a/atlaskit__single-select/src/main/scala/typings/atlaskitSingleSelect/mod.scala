@@ -25,7 +25,7 @@ object mod {
     def this(props: StatelessProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: StatelessProps, context: Any) = this()
   }

@@ -4,42 +4,38 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * PolygonOptions object used to define the properties that can be set on a
-  * Polygon.
-  */
 trait PolygonOptions extends StObject {
   
   /**
     * Indicates whether this <code>Polygon</code> handles mouse events.
     * @defaultValue <code>true</code>
     */
-  var clickable: js.UndefOr[Boolean | Null] = js.undefined
+  var clickable: js.UndefOr[Null | Boolean] = js.undefined
   
   /**
     * If set to <code>true</code>, the user can drag this shape over the map.
     * The <code>geodesic</code> property defines the mode of dragging.
     * @defaultValue <code>false</code>
     */
-  var draggable: js.UndefOr[Boolean | Null] = js.undefined
+  var draggable: js.UndefOr[Null | Boolean] = js.undefined
   
   /**
     * If set to <code>true</code>, the user can edit this shape by dragging the
     * control points shown at the vertices and on each segment.
     * @defaultValue <code>false</code>
     */
-  var editable: js.UndefOr[Boolean | Null] = js.undefined
+  var editable: js.UndefOr[Null | Boolean] = js.undefined
   
   /**
     * The fill color. All CSS3 colors are supported except for extended named
     * colors.
     */
-  var fillColor: js.UndefOr[String | Null] = js.undefined
+  var fillColor: js.UndefOr[Null | String] = js.undefined
   
   /**
     * The fill opacity between 0.0 and 1.0
     */
-  var fillOpacity: js.UndefOr[Double | Null] = js.undefined
+  var fillOpacity: js.UndefOr[Null | Double] = js.undefined
   
   /**
     * When <code>true</code>, edges of the polygon are interpreted as geodesic
@@ -49,12 +45,12 @@ trait PolygonOptions extends StObject {
     * as the dimensions are maintained relative to the surface of the earth.
     * @defaultValue <code>false</code>
     */
-  var geodesic: js.UndefOr[Boolean | Null] = js.undefined
+  var geodesic: js.UndefOr[Null | Boolean] = js.undefined
   
   /**
     * Map on which to display Polygon.
     */
-  var map: js.UndefOr[Map | Null] = js.undefined
+  var map: js.UndefOr[Null | Map] = js.undefined
   
   /**
     * The ordered sequence of coordinates that designates a closed loop. Unlike
@@ -74,34 +70,34 @@ trait PolygonOptions extends StObject {
     * The stroke color. All CSS3 colors are supported except for extended named
     * colors.
     */
-  var strokeColor: js.UndefOr[String | Null] = js.undefined
+  var strokeColor: js.UndefOr[Null | String] = js.undefined
   
   /**
     * The stroke opacity between 0.0 and 1.0
     */
-  var strokeOpacity: js.UndefOr[Double | Null] = js.undefined
+  var strokeOpacity: js.UndefOr[Null | Double] = js.undefined
   
   /**
     * The stroke position.
     * @defaultValue {@link google.maps.StrokePosition.CENTER}
     */
-  var strokePosition: js.UndefOr[StrokePosition | Null] = js.undefined
+  var strokePosition: js.UndefOr[Null | StrokePosition] = js.undefined
   
   /**
     * The stroke width in pixels.
     */
-  var strokeWeight: js.UndefOr[Double | Null] = js.undefined
+  var strokeWeight: js.UndefOr[Null | Double] = js.undefined
   
   /**
     * Whether this polygon is visible on the map.
     * @defaultValue <code>true</code>
     */
-  var visible: js.UndefOr[Boolean | Null] = js.undefined
+  var visible: js.UndefOr[Null | Boolean] = js.undefined
   
   /**
     * The zIndex compared to other polys.
     */
-  var zIndex: js.UndefOr[Double | Null] = js.undefined
+  var zIndex: js.UndefOr[Null | Double] = js.undefined
 }
 object PolygonOptions {
   

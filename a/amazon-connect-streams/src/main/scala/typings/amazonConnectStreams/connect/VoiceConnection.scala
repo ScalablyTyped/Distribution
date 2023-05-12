@@ -21,9 +21,11 @@ trait VoiceConnection
   
   /** Enroll speaker into VoiceId */
   def enrollSpeakerInVoiceId(): js.Promise[Any] = js.native
+  def enrollSpeakerInVoiceId(callbackOnAudioCollectionComplete: js.Function): js.Promise[Any] = js.native
   
   /** Returns VoiceId speaker authentication status */
   def evaluateSpeakerWithVoiceId(): js.Promise[Any] = js.native
+  def evaluateSpeakerWithVoiceId(startNewSession: Boolean): js.Promise[Any] = js.native
   
   /** Gets a `Promise` with the media controller associated with this connection. */
   def getMediaController(): js.Promise[Any] = js.native
@@ -34,6 +36,15 @@ trait VoiceConnection
   /** Returns the `MediaType` enum value: `"softphone"`. */
   def getMediaType(): SOFTPHONE = js.native
   
+  /** Returns the array of enabled monitor states of this connection. The array will consist of MonitoringMode enum values. */
+  def getMonitorCapabilities(): js.Array[MonitoringMode] = js.native
+  
+  /**
+    * Returns the current monitoring state of this connection.
+    * This value can be one of MonitoringMode enum values if the agent is supervisor, otherwise the monitorStatus will be undefined for the agent.
+    */
+  def getMonitorStatus(): MonitoringMode = js.native
+  
   /** Returns the quick connect name of the third-party call participant with which the connection is associated. */
   def getQuickConnectName(): String | Null = js.native
   
@@ -43,8 +54,29 @@ trait VoiceConnection
   /** Returns the `VoiceId speaker status` associated to this Voice Connection */
   def getVoiceIdSpeakerStatus(): js.Promise[Any] = js.native
   
+  /**
+    * Returns true if monitorStatus is MonitoringMode.BARGE. 
+    * This means the connection is in barge-in state. Regular agent will see the supervisor's connection in the list of connections in the snapshot.
+    */
+  def isBarge(): Boolean = js.native
+  
+  /** Returns true if agent's monitoringCapabilities contain MonitoringMode.BARGE state type. */
+  def isBargeEnabled(): Boolean = js.native
+  
+  /** Returns true if the connection was forced muted by the manager. */
+  def isForcedMute(): Boolean = js.native
+  
   /** Determine whether the connection is mute server side. */
   def isMute(): Boolean = js.native
+  
+  /**
+    * Returns true if monitorStatus is MonitoringMode.SILENT_MONITOR. This means the supervisor connection is in silent monitoring state. 
+    * Regular agent will not see supervisor's connection in the snapshot while it is in silent monitor state.
+    */
+  def isSilentMonitor(): Boolean = js.native
+  
+  /** Returns true if agent's monitoringCapabilities contain MonitoringMode.SILENT_MONITOR type. */
+  def isSilentMonitorEnabled(): Boolean = js.native
   
   /**
     * Mute the connection server side
@@ -66,5 +98,5 @@ trait VoiceConnection
   def unmuteParticipant(callbacks: SuccessFailOptions): Unit = js.native
   
   /** Update speaker id */
-  def updateVoiceIdSpeakerId(): js.Promise[Any] = js.native
+  def updateVoiceIdSpeakerId(speakerId: String): js.Promise[Any] = js.native
 }

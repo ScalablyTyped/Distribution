@@ -8,71 +8,134 @@ object libRestApiMod {
   
   @JSImport("twilio/lib/rest/Api", JSImport.Namespace)
   @js.native
-  open class ^ protected () extends Api {
-    /**
-      * Initialize api domain
-      *
-      * @param twilio - The twilio client
-      */
-    def this(twilio: typings.twilio.libRestTwilioMod.^) = this()
-  }
+  open class ^ () extends Api
   
   @js.native
   trait Api
-    extends typings.twilio.libBaseDomainMod.^ {
+    extends typings.twilio.libRestApiBaseMod.^ {
     
-    val account: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AccountContext */ Any = js.native
+    def account: Any = js.native
     
-    val accounts: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AccountListInstance */ Any = js.native
+    def accounts: Any = js.native
     
-    val addresses: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AddressListInstance */ Any = js.native
+    /**
+      * @deprecated - Use account.addresses instead
+      */
+    def addresses: Any = js.native
     
-    val applications: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ApplicationListInstance */ Any = js.native
+    /**
+      * @deprecated - Use account.applications instead
+      */
+    def applications: Any = js.native
     
-    val authorizedConnectApps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AuthorizedConnectAppListInstance */ Any = js.native
+    /**
+      * @deprecated - Use account.authorizedConnectApps instead
+      */
+    def authorizedConnectApps: Any = js.native
     
-    val availablePhoneNumbers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AvailablePhoneNumberCountryListInstance */ Any = js.native
+    /**
+      * @deprecated - Use account.availablePhoneNumbers instead
+      */
+    def availablePhoneNumbers: Any = js.native
     
-    val balance: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BalanceListInstance */ Any = js.native
+    /**
+      * @deprecated - Use account.balance instead
+      */
+    def balance: Any = js.native
     
-    val calls: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CallListInstance */ Any = js.native
+    /**
+      * @deprecated - Use account.calls instead
+      */
+    def calls: Any = js.native
     
-    val conferences: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ConferenceListInstance */ Any = js.native
+    /**
+      * @deprecated - Use account.conferences instead
+      */
+    def conferences: Any = js.native
     
-    val connectApps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ConnectAppListInstance */ Any = js.native
+    /**
+      * @deprecated - Use account.connectApps instead
+      */
+    def connectApps: Any = js.native
     
-    val incomingPhoneNumbers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IncomingPhoneNumberListInstance */ Any = js.native
+    /**
+      * @deprecated - Use account.incomingPhoneNumbers instead
+      */
+    def incomingPhoneNumbers: Any = js.native
     
-    val keys: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KeyListInstance */ Any = js.native
+    /**
+      * @deprecated - Use account.keys instead
+      */
+    def keys: Any = js.native
     
-    val messages: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MessageListInstance */ Any = js.native
+    /**
+      * @deprecated - Use account.messages instead
+      */
+    def messages: Any = js.native
     
-    val newKeys: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NewKeyListInstance */ Any = js.native
+    /**
+      * @deprecated - Use account.newKeys instead
+      */
+    def newKeys: Any = js.native
     
-    val newSigningKeys: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NewSigningKeyListInstance */ Any = js.native
+    /**
+      * @deprecated - Use account.newSigningKeys instead
+      */
+    def newSigningKeys: Any = js.native
     
-    val notifications: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NotificationListInstance */ Any = js.native
+    /**
+      * @deprecated - Use account.notifications instead
+      */
+    def notifications: Any = js.native
     
-    val outgoingCallerIds: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OutgoingCallerIdListInstance */ Any = js.native
+    /**
+      * @deprecated - Use account.outgoingCallerIds instead
+      */
+    def outgoingCallerIds: Any = js.native
     
-    val queues: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify QueueListInstance */ Any = js.native
+    /**
+      * @deprecated - Use account.queues instead
+      */
+    def queues: Any = js.native
     
-    val recordings: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RecordingListInstance */ Any = js.native
+    /**
+      * @deprecated - Use account.recordings instead
+      */
+    def recordings: Any = js.native
     
-    val shortCodes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ShortCodeListInstance */ Any = js.native
+    /**
+      * @deprecated - Use account.shortCodes instead
+      */
+    def shortCodes: Any = js.native
     
-    val signingKeys: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SigningKeyListInstance */ Any = js.native
+    /**
+      * @deprecated - Use account.signingKeys instead
+      */
+    def signingKeys: Any = js.native
     
-    val sip: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SipListInstance */ Any = js.native
+    /**
+      * @deprecated - Use account.sip instead
+      */
+    def sip: Any = js.native
     
-    val tokens: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TokenListInstance */ Any = js.native
+    /**
+      * @deprecated - Use account.tokens instead
+      */
+    def tokens: Any = js.native
     
-    val transcriptions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TranscriptionListInstance */ Any = js.native
+    /**
+      * @deprecated - Use account.transcriptions instead
+      */
+    def transcriptions: Any = js.native
     
-    val usage: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UsageListInstance */ Any = js.native
+    /**
+      * @deprecated - Use account.usage instead
+      */
+    def usage: Any = js.native
     
-    val v2010: typings.twilio.libRestApiV2010Mod.^ = js.native
-    
-    val validationRequests: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ValidationRequestListInstance */ Any = js.native
+    /**
+      * @deprecated - Use account.validationRequests instead
+      */
+    def validationRequests: Any = js.native
   }
 }

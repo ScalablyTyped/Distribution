@@ -22,7 +22,7 @@ trait UpdateRuleRequest extends StObject {
   var ResourceTags: js.UndefOr[typings.awsSdk.clientsRbinMod.ResourceTags] = js.undefined
   
   /**
-    * The resource type to be retained by the retention rule. Currently, only Amazon EBS snapshots and EBS-backed AMIs are supported. To retain snapshots, specify EBS_SNAPSHOT. To retain EBS-backed AMIs, specify EC2_IMAGE.
+    *  This parameter is currently not supported. You can't update a retention rule's resource type after creation. 
     */
   var ResourceType: js.UndefOr[typings.awsSdk.clientsRbinMod.ResourceType] = js.undefined
   

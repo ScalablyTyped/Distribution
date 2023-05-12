@@ -1,7 +1,7 @@
 
 # Scala.js typings for webpack-subresource-integrity
 
-Typings are for version 5.1.0
+Typings are for version 5.2.0-rc.1
 
 ## Library description:
 Webpack plugin for enabling Subresource Integrity

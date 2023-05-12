@@ -9,9 +9,11 @@ import typings.primereact.primereactStrings.`text additions`
 import typings.primereact.primereactStrings.`text removals`
 import typings.primereact.primereactStrings.additions
 import typings.primereact.primereactStrings.all
+import typings.primereact.primereactStrings.alternate
 import typings.primereact.primereactStrings.ascending
 import typings.primereact.primereactStrings.assertive
 import typings.primereact.primereactStrings.both
+import typings.primereact.primereactStrings.bottom
 import typings.primereact.primereactStrings.copy
 import typings.primereact.primereactStrings.date
 import typings.primereact.primereactStrings.decimal
@@ -23,6 +25,7 @@ import typings.primereact.primereactStrings.grammar
 import typings.primereact.primereactStrings.grid
 import typings.primereact.primereactStrings.horizontal
 import typings.primereact.primereactStrings.inherit
+import typings.primereact.primereactStrings.left
 import typings.primereact.primereactStrings.link
 import typings.primereact.primereactStrings.list
 import typings.primereact.primereactStrings.listbox
@@ -40,12 +43,14 @@ import typings.primereact.primereactStrings.page
 import typings.primereact.primereactStrings.polite
 import typings.primereact.primereactStrings.popup
 import typings.primereact.primereactStrings.removals
+import typings.primereact.primereactStrings.right
 import typings.primereact.primereactStrings.search
 import typings.primereact.primereactStrings.spelling
 import typings.primereact.primereactStrings.step
 import typings.primereact.primereactStrings.tel
 import typings.primereact.primereactStrings.text
 import typings.primereact.primereactStrings.time
+import typings.primereact.primereactStrings.top
 import typings.primereact.primereactStrings.tree
 import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.vertical
@@ -102,44 +107,15 @@ object timelineTimelineMod {
     def this(props: TimelineProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: TimelineProps, context: Any) = this()
     
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.left
-    - typings.primereact.primereactStrings.right
-    - typings.primereact.primereactStrings.top
-    - typings.primereact.primereactStrings.bottom
-    - typings.primereact.primereactStrings.alternate
-  */
-  trait TimelineAlignType extends StObject
-  object TimelineAlignType {
-    
-    inline def alternate: typings.primereact.primereactStrings.alternate = "alternate".asInstanceOf[typings.primereact.primereactStrings.alternate]
-    
-    inline def bottom: typings.primereact.primereactStrings.bottom = "bottom".asInstanceOf[typings.primereact.primereactStrings.bottom]
-    
-    inline def left: typings.primereact.primereactStrings.left = "left".asInstanceOf[typings.primereact.primereactStrings.left]
-    
-    inline def right: typings.primereact.primereactStrings.right = "right".asInstanceOf[typings.primereact.primereactStrings.right]
-    
-    inline def top: typings.primereact.primereactStrings.top = "top".asInstanceOf[typings.primereact.primereactStrings.top]
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.vertical
-    - typings.primereact.primereactStrings.horizontal
-  */
-  trait TimelineLayoutType extends StObject
-  object TimelineLayoutType {
-    
-    inline def horizontal: typings.primereact.primereactStrings.horizontal = "horizontal".asInstanceOf[typings.primereact.primereactStrings.horizontal]
-    
-    inline def vertical: typings.primereact.primereactStrings.vertical = "vertical".asInstanceOf[typings.primereact.primereactStrings.vertical]
   }
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
@@ -149,7 +125,11 @@ object timelineTimelineMod {
     
     var accessKey: js.UndefOr[String] = js.undefined
     
-    var align: js.UndefOr[TimelineAlignType] = js.undefined
+    /**
+      * Position of the timeline bar relative to the content. Valid values are "left", "right for vertical layout and "top", "bottom" for horizontal layout.
+      * @defaultValue left
+      */
+    var align: js.UndefOr[left | right | top | bottom | alternate] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
@@ -253,15 +233,24 @@ object timelineTimelineMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
     
-    var content: js.UndefOr[TimelineTemplateType] = js.undefined
+    /**
+      * Template of the content.
+      */
+    var content: js.UndefOr[ReactNode | (js.Function2[/* item */ Any, /* index */ Double, ReactNode])] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -269,6 +258,9 @@ object timelineTimelineMod {
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
+    /**
+      * Name of the field that uniquely identifies a record in the data. Should be a unique business key to prevent re-rendering.
+      */
     var dataKey: js.UndefOr[String] = js.undefined
     
     var datatype: js.UndefOr[String] = js.undefined
@@ -305,9 +297,16 @@ object timelineTimelineMod {
     
     var lang: js.UndefOr[String] = js.undefined
     
-    var layout: js.UndefOr[TimelineLayoutType] = js.undefined
+    /**
+      * Orientation of the timeline, valid values are "vertical" and "horizontal".
+      * @defaultValue vertical
+      */
+    var layout: js.UndefOr[vertical | horizontal] = js.undefined
     
-    var marker: js.UndefOr[TimelineTemplateType] = js.undefined
+    /**
+      * Template content allows placing a custom event marker instead of the default one.
+      */
+    var marker: js.UndefOr[ReactNode | (js.Function2[/* item */ Any, /* index */ Double, ReactNode])] = js.undefined
     
     var nonce: js.UndefOr[String] = js.undefined
     
@@ -471,7 +470,10 @@ object timelineTimelineMod {
     
     var onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.undefined
     
-    var opposite: js.UndefOr[TimelineTemplateType] = js.undefined
+    /**
+      * Template content to be placed at the other side of the bar.
+      */
+    var opposite: js.UndefOr[ReactNode | (js.Function2[/* item */ Any, /* index */ Double, ReactNode])] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
     
@@ -481,9 +483,13 @@ object timelineTimelineMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -509,6 +515,9 @@ object timelineTimelineMod {
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
+    /**
+      * An array of events to display.
+      */
     var value: js.UndefOr[js.Array[Any]] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
@@ -531,7 +540,7 @@ object timelineTimelineMod {
       
       inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      inline def setAlign(value: TimelineAlignType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: left | right | top | bottom | alternate): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
       inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
@@ -737,6 +746,10 @@ object timelineTimelineMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -753,7 +766,7 @@ object timelineTimelineMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setContent(value: TimelineTemplateType): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: ReactNode | (js.Function2[/* item */ Any, /* index */ Double, ReactNode])): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
@@ -847,11 +860,11 @@ object timelineTimelineMod {
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      inline def setLayout(value: TimelineLayoutType): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: vertical | horizontal): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
       inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
-      inline def setMarker(value: TimelineTemplateType): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+      inline def setMarker(value: ReactNode | (js.Function2[/* item */ Any, /* index */ Double, ReactNode])): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
       
       inline def setMarkerFunction2(value: (/* item */ Any, /* index */ Double) => ReactNode): Self = StObject.set(x, "marker", js.Any.fromFunction2(value))
       
@@ -1181,7 +1194,7 @@ object timelineTimelineMod {
       
       inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
       
-      inline def setOpposite(value: TimelineTemplateType): Self = StObject.set(x, "opposite", value.asInstanceOf[js.Any])
+      inline def setOpposite(value: ReactNode | (js.Function2[/* item */ Any, /* index */ Double, ReactNode])): Self = StObject.set(x, "opposite", value.asInstanceOf[js.Any])
       
       inline def setOppositeFunction2(value: (/* item */ Any, /* index */ Double) => ReactNode): Self = StObject.set(x, "opposite", js.Any.fromFunction2(value))
       
@@ -1203,6 +1216,10 @@ object timelineTimelineMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1210,6 +1227,10 @@ object timelineTimelineMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1270,6 +1291,4 @@ object timelineTimelineMod {
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
     }
   }
-  
-  type TimelineTemplateType = ReactNode | (js.Function2[/* item */ Any, /* index */ Double, ReactNode])
 }

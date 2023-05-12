@@ -1,6 +1,7 @@
 package typings.three
 
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.Mesh
 import org.scalablytyped.runtime.StObject
@@ -13,5 +14,5 @@ object examplesJsmWebxrText2DMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createText(message: String, height: Double): Mesh[BufferGeometry, Material | js.Array[Material]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createText")(message.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Mesh[BufferGeometry, Material | js.Array[Material]]]
+  inline def createText(message: String, height: Double): Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createText")(message.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]]
 }

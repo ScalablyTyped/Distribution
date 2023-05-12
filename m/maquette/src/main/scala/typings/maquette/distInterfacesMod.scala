@@ -265,7 +265,7 @@ object distInterfacesMod {
     /**
       * May be used to intercept registration of event-handlers.
       *
-      * Used by the [[Projector]] to wrap eventHandler-calls to call [[scheduleRender]] as well.
+      * Used by the [[Projector]] to wrap eventHandler-calls to call {@link Projector#scheduleRender} as well.
       *
       * @param propertyName             The name of the property to be assigned, for example onclick
       * @param eventHandler             The function that was registered on the [[VNode]]
@@ -407,7 +407,7 @@ object distInterfacesMod {
     
     /**
       * May be used to add vendor prefixes when applying inline styles when needed.
-      * This function is called when [[styles]] is used.
+      * This function is called when {@link VNodeProperties#styles} is used.
       * This function should execute `domNode.style[styleName] = value` or do something smarter.
       *
       * @param domNode   The DOM Node that needs to receive the style
@@ -702,6 +702,11 @@ object distInterfacesMod {
     val innerHTML: js.UndefOr[String] = js.undefined
     
     /**
+      * For custom elements
+      */
+    val is: js.UndefOr[String] = js.undefined
+    
+    /**
       * Used to uniquely identify a DOM node among siblings.
       * A key is required when there are more children with the same selector and these children are added or removed dynamically.
       * NOTE: this does not have to be a string or number, a [[MaquetteComponent]] Object for instance is also common.
@@ -919,6 +924,10 @@ object distInterfacesMod {
       inline def setInnerHTML(value: String): Self = StObject.set(x, "innerHTML", value.asInstanceOf[js.Any])
       
       inline def setInnerHTMLUndefined: Self = StObject.set(x, "innerHTML", js.undefined)
+      
+      inline def setIs(value: String): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
+      
+      inline def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
       
       inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

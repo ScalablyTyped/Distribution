@@ -1,5 +1,6 @@
 package typings.relayRuntime.libUtilReaderNodeMod
 
+import typings.relayRuntime.libQueryRelayModernGraphQLTagMod._GraphQLTaggedNode
 import typings.relayRuntime.libUtilRelayConcreteNodeMod.GeneratedNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -7,7 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ReaderInlineDataFragment
   extends StObject
-     with GeneratedNode {
+     with GeneratedNode
+     with _GraphQLTaggedNode {
   
   val kind: String
   

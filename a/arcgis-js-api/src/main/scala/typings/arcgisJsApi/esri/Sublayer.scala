@@ -179,6 +179,16 @@ trait Sublayer
   var popupTemplate: PopupTemplate = js.native
   
   /**
+    * TODO Documentation
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#queryAttachments)
+    */
+  def queryAttachments(attachmentQuery: AttachmentQuery): scala.Unit = js.native
+  def queryAttachments(attachmentQuery: AttachmentQueryProperties): scala.Unit = js.native
+  def queryAttachments(attachmentQuery: AttachmentQueryProperties, options: SublayerQueryAttachmentsOptions): scala.Unit = js.native
+  def queryAttachments(attachmentQuery: AttachmentQuery, options: SublayerQueryAttachmentsOptions): scala.Unit = js.native
+  
+  /**
     * Executes a [query](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query.html) against features in the sublayer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#queryFeatures)

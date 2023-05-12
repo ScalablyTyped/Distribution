@@ -1,7 +1,7 @@
 
 # Scala.js typings for tensorflow-models__face-detection
 
-Typings are for version 1.0.1
+Typings are for version 1.0.2
 
 ## Library description:
 Pretrained face detection model

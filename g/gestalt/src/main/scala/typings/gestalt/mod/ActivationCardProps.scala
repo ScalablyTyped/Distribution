@@ -1,7 +1,5 @@
 package typings.gestalt.mod
 
-import typings.gestalt.anon.AccessibilityLabel
-import typings.gestalt.anon.Href
 import typings.gestalt.gestaltStrings.complete
 import typings.gestalt.gestaltStrings.needsAttention
 import typings.gestalt.gestaltStrings.notStarted
@@ -10,11 +8,16 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * =========================================================
+  * =============== COMPONENT API INTERFACES  ===============
+  * =========================================================
+  */
 trait ActivationCardProps extends StObject {
   
-  var dismissButton: js.UndefOr[AccessibilityLabel] = js.undefined
+  var dismissButton: js.UndefOr[OnDismissButtonObject] = js.undefined
   
-  var link: js.UndefOr[Href] = js.undefined
+  var link: js.UndefOr[typings.gestalt.anon.Label] = js.undefined
   
   var message: String
   
@@ -39,11 +42,11 @@ object ActivationCardProps {
   @scala.inline
   implicit open class MutableBuilder[Self <: ActivationCardProps] (val x: Self) extends AnyVal {
     
-    inline def setDismissButton(value: AccessibilityLabel): Self = StObject.set(x, "dismissButton", value.asInstanceOf[js.Any])
+    inline def setDismissButton(value: OnDismissButtonObject): Self = StObject.set(x, "dismissButton", value.asInstanceOf[js.Any])
     
     inline def setDismissButtonUndefined: Self = StObject.set(x, "dismissButton", js.undefined)
     
-    inline def setLink(value: Href): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: typings.gestalt.anon.Label): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     

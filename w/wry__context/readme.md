@@ -1,7 +1,7 @@
 
 # Scala.js typings for wry__context
 
-Typings are for version 0.7.0
+Typings are for version 0.7.2
 
 ## Library description:
 Manage contextual information needed by (a)synchronous tasks without explicitly passing objects around

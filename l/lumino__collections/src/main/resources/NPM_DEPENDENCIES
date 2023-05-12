@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@lumino/collections" : "1.9.3"
+      "@lumino/collections" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@lumino/collections" : "1.9.3"
+      "@lumino/collections" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

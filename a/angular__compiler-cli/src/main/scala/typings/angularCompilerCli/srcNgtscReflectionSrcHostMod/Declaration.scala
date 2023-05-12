@@ -1,24 +1,37 @@
 package typings.angularCompilerCli.srcNgtscReflectionSrcHostMod
 
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ConcreteDeclaration[T]
-  - typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.InlineDeclaration
-*/
-trait Declaration[T /* <: typings.typescript.mod.Declaration */] extends StObject
+trait Declaration[T /* <: typings.typescript.mod.Declaration */] extends StObject {
+  
+  /**
+    * TypeScript reference to the declaration itself, if one exists.
+    */
+  var node: T
+  
+  /**
+    * The absolute module path from which the symbol was imported into the application, if the symbol
+    * was imported via an absolute module (even through a chain of re-exports). If the symbol is part
+    * of the application and was not imported from an absolute path, this will be `null`.
+    */
+  var viaModule: String | Null
+}
 object Declaration {
   
-  inline def ConcreteDeclaration[T /* <: typings.typescript.mod.Declaration */](node: T): typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ConcreteDeclaration[T] = {
-    val __obj = js.Dynamic.literal(kind = 0, node = node.asInstanceOf[js.Any], identity = null, known = null, viaModule = null)
-    __obj.asInstanceOf[typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ConcreteDeclaration[T]]
+  inline def apply[T /* <: typings.typescript.mod.Declaration */](node: T): Declaration[T] = {
+    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], viaModule = null)
+    __obj.asInstanceOf[Declaration[T]]
   }
   
-  inline def InlineDeclaration(node: Exclude[DeclarationNode, typings.typescript.mod.Declaration]): typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.InlineDeclaration = {
-    val __obj = js.Dynamic.literal(kind = 1, node = node.asInstanceOf[js.Any], known = null, viaModule = null)
-    __obj.asInstanceOf[typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.InlineDeclaration]
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Declaration[?], T /* <: typings.typescript.mod.Declaration */] (val x: Self & Declaration[T]) extends AnyVal {
+    
+    inline def setNode(value: T): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    
+    inline def setViaModule(value: String): Self = StObject.set(x, "viaModule", value.asInstanceOf[js.Any])
+    
+    inline def setViaModuleNull: Self = StObject.set(x, "viaModule", null)
   }
 }

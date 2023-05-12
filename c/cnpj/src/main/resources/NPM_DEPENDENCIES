@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cnpj" : "4.0.1"
+      "cnpj" : "4.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "cnpj" : "4.0.1"
+      "cnpj" : "4.0.3"
     }
   ],
   "compile-devDependencies" : [

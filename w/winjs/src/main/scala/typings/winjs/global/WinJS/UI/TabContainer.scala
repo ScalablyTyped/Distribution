@@ -16,7 +16,6 @@ open class TabContainer protected ()
   //#region Constructors
   /**
     * Creates a new TabContainer.
-    * @constructor
     * @param element The DOM element that hosts the TabContainer control.
     * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties.
     **/

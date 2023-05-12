@@ -16,7 +16,7 @@ object libIconsSoundFilledMod extends Shortcut {
   @js.native
   trait SoundFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_SoundFilledIconType: String = js.native

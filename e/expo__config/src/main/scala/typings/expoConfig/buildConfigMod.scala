@@ -3,11 +3,9 @@ package typings.expoConfig
 import org.scalablytyped.runtime.StringDictionary
 import typings.expoConfig.anon.AppName
 import typings.expoConfig.anon.Config
-import typings.expoConfig.anon.ConfigName
 import typings.expoConfig.anon.PartialExpoConfig
 import typings.expoConfig.anon.PickExpoConfigsdkVersion
 import typings.expoConfig.buildConfigDottypesMod.ConfigFilePaths
-import typings.expoConfig.buildConfigDottypesMod.ExpRc
 import typings.expoConfig.buildConfigDottypesMod.GetConfigOptions
 import typings.expoConfig.buildConfigDottypesMod.PackageJSONConfig
 import typings.expoConfig.buildConfigDottypesMod.ProjectConfig
@@ -36,10 +34,6 @@ object buildConfigMod {
     /* "unlisted" */ val UNLISTED: typings.expoConfig.buildConfigDottypesMod.ProjectPrivacy.UNLISTED & String = js.native
   }
   
-  inline def configFilename(projectRoot: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("configFilename")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[String]
-  
-  inline def findConfigFile(projectRoot: String): ConfigName = ^.asInstanceOf[js.Dynamic].applyDynamic("findConfigFile")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[ConfigName]
-  
   inline def getConfig(projectRoot: String): ProjectConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[ProjectConfig]
   inline def getConfig(projectRoot: String, options: GetConfigOptions): ProjectConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")(projectRoot.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ProjectConfig]
   
@@ -60,8 +54,6 @@ object buildConfigMod {
   inline def getWebOutputPath(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getWebOutputPath")().asInstanceOf[String]
   inline def getWebOutputPath(config: StringDictionary[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getWebOutputPath")(config.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def isLegacyImportsEnabled(exp: PickExpoConfigsdkVersion): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLegacyImportsEnabled")(exp.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
   inline def modifyConfigAsync(projectRoot: String, modifications: PartialExpoConfig): js.Promise[Config] = (^.asInstanceOf[js.Dynamic].applyDynamic("modifyConfigAsync")(projectRoot.asInstanceOf[js.Any], modifications.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Config]]
   inline def modifyConfigAsync(
     projectRoot: String,
@@ -76,17 +68,4 @@ object buildConfigMod {
     readOptions: GetConfigOptions,
     writeOptions: WriteConfigOptions
   ): js.Promise[Config] = (^.asInstanceOf[js.Dynamic].applyDynamic("modifyConfigAsync")(projectRoot.asInstanceOf[js.Any], modifications.asInstanceOf[js.Any], readOptions.asInstanceOf[js.Any], writeOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Config]]
-  
-  inline def readConfigJson(projectRoot: String): ProjectConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("readConfigJson")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[ProjectConfig]
-  inline def readConfigJson(projectRoot: String, skipValidation: Boolean): ProjectConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("readConfigJson")(projectRoot.asInstanceOf[js.Any], skipValidation.asInstanceOf[js.Any])).asInstanceOf[ProjectConfig]
-  inline def readConfigJson(projectRoot: String, skipValidation: Boolean, skipSDKVersionRequirement: Boolean): ProjectConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("readConfigJson")(projectRoot.asInstanceOf[js.Any], skipValidation.asInstanceOf[js.Any], skipSDKVersionRequirement.asInstanceOf[js.Any])).asInstanceOf[ProjectConfig]
-  inline def readConfigJson(projectRoot: String, skipValidation: Unit, skipSDKVersionRequirement: Boolean): ProjectConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("readConfigJson")(projectRoot.asInstanceOf[js.Any], skipValidation.asInstanceOf[js.Any], skipSDKVersionRequirement.asInstanceOf[js.Any])).asInstanceOf[ProjectConfig]
-  
-  inline def readExpRcAsync(projectRoot: String): js.Promise[ExpRc] = ^.asInstanceOf[js.Dynamic].applyDynamic("readExpRcAsync")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ExpRc]]
-  
-  inline def resetCustomConfigPaths(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetCustomConfigPaths")().asInstanceOf[Unit]
-  
-  inline def setCustomConfigPath(projectRoot: String, configPath: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCustomConfigPath")(projectRoot.asInstanceOf[js.Any], configPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def writeConfigJsonAsync(projectRoot: String, options: js.Object): js.Promise[ProjectConfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeConfigJsonAsync")(projectRoot.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ProjectConfig]]
 }

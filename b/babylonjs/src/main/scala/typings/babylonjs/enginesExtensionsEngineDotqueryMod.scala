@@ -83,7 +83,7 @@ object enginesExtensionsEngineDotqueryMod {
         * @param algorithmType defines the algorithm to use
         * @param query defines the query to use
         * @returns the current engine
-        * @see https://doc.babylonjs.com/features/occlusionquery
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/occlusionQueries
         */
       def beginOcclusionQuery(algorithmType: Double, query: OcclusionQuery): Boolean
       
@@ -108,7 +108,7 @@ object enginesExtensionsEngineDotqueryMod {
       
       /**
         * Ends an occlusion query
-        * @see https://doc.babylonjs.com/features/occlusionquery
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/occlusionQueries
         * @param algorithmType defines the algorithm to use
         * @returns the current engine
         */
@@ -248,19 +248,19 @@ object enginesExtensionsEngineDotqueryMod {
       
       /**
         * Flag to force rendering the mesh even if occluded
-        * @see https://doc.babylonjs.com/features/occlusionquery
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/occlusionQueries
         */
       var forceRenderingWhenOccluded: Boolean
       
       /**
         * Gets or sets whether the mesh is occluded or not, it is used also to set the initial state of the mesh to be occluded or not
-        * @see https://doc.babylonjs.com/features/occlusionquery
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/occlusionQueries
         */
       var isOccluded: Boolean
       
       /**
         * Flag to check the progress status of the query
-        * @see https://doc.babylonjs.com/features/occlusionquery
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/occlusionQueries
         */
       var isOcclusionQueryInProgress: Boolean
       
@@ -268,14 +268,14 @@ object enginesExtensionsEngineDotqueryMod {
         * This property determines the type of occlusion query algorithm to run in WebGl, you can use:
         * * AbstractMesh.OCCLUSION_ALGORITHM_TYPE_ACCURATE which is mapped to GL_ANY_SAMPLES_PASSED.
         * * AbstractMesh.OCCLUSION_ALGORITHM_TYPE_CONSERVATIVE (Default Value) which is mapped to GL_ANY_SAMPLES_PASSED_CONSERVATIVE which is a false positive algorithm that is faster than GL_ANY_SAMPLES_PASSED but less accurate.
-        * @see https://doc.babylonjs.com/features/occlusionquery
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/occlusionQueries
         */
       var occlusionQueryAlgorithmType: Double
       
       /**
         * This number indicates the number of allowed retries before stop the occlusion query, this is useful if the occlusion query is taking long time before to the query result is retrieved, the query result indicates if the object is visible within the scene or not and based on that Babylon.Js engine decides to show or hide the object.
         * The default value is -1 which means don't break the query and wait till the result
-        * @see https://doc.babylonjs.com/features/occlusionquery
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/occlusionQueries
         */
       var occlusionRetryCount: Double
       
@@ -284,7 +284,7 @@ object enginesExtensionsEngineDotqueryMod {
         * * OCCLUSION_TYPE_NONE (Default Value): this option means no occlusion query within the Mesh.
         * * OCCLUSION_TYPE_OPTIMISTIC: this option is means use occlusion query and if occlusionRetryCount is reached and the query is broken show the mesh.
         * * OCCLUSION_TYPE_STRICT: this option is means use occlusion query and if occlusionRetryCount is reached and the query is broken restore the last state of the mesh occlusion if the mesh was visible then show the mesh if was hidden then hide don't show.
-        * @see https://doc.babylonjs.com/features/occlusionquery
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/occlusionQueries
         */
       var occlusionType: Double
     }

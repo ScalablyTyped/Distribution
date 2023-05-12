@@ -29,7 +29,8 @@ open class VideoOverlay_ protected () extends Layer {
   /** Get the video element that represents the VideoOverlay on the map */
   def getElement(): js.UndefOr[HTMLVideoElement] = js.native
   
-  var options: VideoOverlayOptions = js.native
+  @JSName("options")
+  var options_VideoOverlay_ : VideoOverlayOptions = js.native
   
   /** Update the bounds that this VideoOverlay covers */
   def setBounds(bounds: LatLngBounds_): this.type = js.native

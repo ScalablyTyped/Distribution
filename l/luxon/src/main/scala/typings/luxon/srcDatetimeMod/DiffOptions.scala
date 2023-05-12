@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DiffOptions extends StObject {
   
+  /**
+    * @default 'casual'
+    */
   var conversionAccuracy: js.UndefOr[ConversionAccuracy] = js.undefined
 }
 object DiffOptions {

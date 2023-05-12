@@ -21,18 +21,18 @@ trait IPromiseFactory extends StObject {
     * Combines multiple promises into a single promise that is resolved when all of the input promises are resolved.
     * Does not resolve until all promises finish (success or failure).
     */
-  // tslint:disable-next-line:no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   def allSettled[T](promises: js.Array[IPromise2[Any, Any]]): IPromise[js.Array[IPromiseResult[T]]] = js.native
   
   /**
     * Creates a Deferred object which represents a task which will finish in the future.
     */
-  // tslint:disable-next-line:no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   def defer[T](): IDeferred[T] = js.native
   /**
     * Creates a Deferred object which represents a task which will finish in the future.
     */
-  // tslint:disable-next-line:no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   @JSName("defer")
   def defer_TSuccessTError_IDeferred2[TSuccess, TError](): IDeferred2[TSuccess, TError] = js.native
   

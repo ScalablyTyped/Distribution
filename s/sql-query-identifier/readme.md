@@ -1,7 +1,7 @@
 
 # Scala.js typings for sql-query-identifier
 
-Typings are for version 2.4.4
+Typings are for version 2.5.0
 
 ## Library description:
 A SQL query identifier

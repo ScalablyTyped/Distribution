@@ -8,10 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Callback used by {@link StandardMaterial#onUpdateShader}.
   *
   * @callback UpdateShaderCallback
-  * @param {*} options - An object with shader generator settings (based on current material and
-  * scene properties), that you can change and then return. Properties of the object passed into
-  * this function are documented in {@link StandardMaterial#onUpdateShader}.
-  * @returns {*} Returned settings will be used by the shader.
+  * @param {import('./standard-material-options.js').StandardMaterialOptions} options - An object with shader generator settings (based on current
+  * material and scene properties), that you can change and then return. Properties of the object passed
+  * into this function are documented in {@link StandardMaterial}. Also contains a member named litOptions
+  * which holds some of the options only used by the lit shader backend {@link LitOptions}.
+  * @returns {import('./standard-material-options.js').StandardMaterialOptions} Returned settings will be used by the shader.
   */
 /**
   * A Standard material is the main, general purpose material that is most often used for rendering.
@@ -25,8 +26,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * (RGB), where each component is between 0 and 1. Defines basic surface color (aka albedo).
   * @property {boolean} diffuseTint Multiply main (primary) diffuse map and/or diffuse vertex color
   * by the constant diffuse value.
-  * @property {Texture|null} diffuseMap The main (primary) diffuse map of the material (default is
-  * null).
+  * @property {import('../../platform/graphics/texture.js').Texture|null} diffuseMap The main
+  * (primary) diffuse map of the material (default is null).
   * @property {number} diffuseMapUv Main (primary) diffuse map UV channel.
   * @property {Vec2} diffuseMapTiling Controls the 2D tiling of the main (primary) diffuse map.
   * @property {Vec2} diffuseMapOffset Controls the 2D offset of the main (primary) diffuse map. Each
@@ -39,8 +40,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * diffuseTint are set, they'll be multiplied by vertex colors.
   * @property {string} diffuseVertexColorChannel Vertex color channels to use for diffuse. Can be
   * "r", "g", "b", "a", "rgb" or any swizzled combination.
-  * @property {Texture|null} diffuseDetailMap The detail (secondary) diffuse map of the material
-  * (default is null). Will only be used if main (primary) diffuse map is non-null.
+  * @property {import('../../platform/graphics/texture.js').Texture|null} diffuseDetailMap The
+  * detail (secondary) diffuse map of the material (default is null). Will only be used if main
+  * (primary) diffuse map is non-null.
   * @property {number} diffuseDetailMapUv Detail (secondary) diffuse map UV channel.
   * @property {Vec2} diffuseDetailMapTiling Controls the 2D tiling of the detail (secondary) diffuse
   * map.
@@ -68,7 +70,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Affects specular intensity and tint.
   * @property {boolean} specularTint Multiply specular map and/or specular vertex color by the
   * constant specular value.
-  * @property {Texture|null} specularMap The specular map of the material (default is null).
+  * @property {import('../../platform/graphics/texture.js').Texture|null} specularMap The specular
+  * map of the material (default is null).
   * @property {number} specularMapUv Specular map UV channel.
   * @property {Vec2} specularMapTiling Controls the 2D tiling of the specular map.
   * @property {Vec2} specularMapOffset Controls the 2D offset of the specular map. Each component is
@@ -83,7 +86,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * constant specular value.
   * "r", "g", "b", "a", "rgb" or any swizzled combination.
   * @property {number} specularityFactor The factor of specular intensity, used to weight the fresnel and specularity. Default is 1.0.
-  * @property {Texture|null} specularityFactorMap The factor of specularity as a texture (default is null).
+  * @property {import('../../platform/graphics/texture.js').Texture|null} specularityFactorMap The
+  * factor of specularity as a texture (default is null).
   * @property {number} specularityFactorMapUv Specularity factor map UV channel.
   * @property {Vec2} specularityFactorMapTiling Controls the 2D tiling of the specularity factor map.
   * @property {Vec2} specularityFactorMapOffset Controls the 2D offset of the specularity factor map. Each component is
@@ -105,54 +109,58 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * - When anisotropy > 0, anisotropy direction aligns with the bi-normal, and specular anisotropy
   * increases as anisotropy value increases to maximum of 1.
   *
-  * @property {number} clearCoat Defines intensity of clear coat layer from 0 to 1. Clear coat layer
+  * @property {number} clearCoat Defines intensity of clearcoat layer from 0 to 1. Clearcoat layer
   * is disabled when clearCoat == 0. Default value is 0 (disabled).
-  * @property {Texture|null} clearCoatMap Monochrome clear coat intensity map (default is null). If
-  * specified, will be multiplied by normalized 'clearCoat' value and/or vertex colors.
-  * @property {number} clearCoatMapUv Clear coat intensity map UV channel.
-  * @property {Vec2} clearCoatMapTiling Controls the 2D tiling of the clear coat intensity map.
-  * @property {Vec2} clearCoatMapOffset Controls the 2D offset of the clear coat intensity map. Each
+  * @property {import('../../platform/graphics/texture.js').Texture|null} clearCoatMap Monochrome
+  * clearcoat intensity map (default is null). If specified, will be multiplied by normalized
+  * 'clearCoat' value and/or vertex colors.
+  * @property {number} clearCoatMapUv Clearcoat intensity map UV channel.
+  * @property {Vec2} clearCoatMapTiling Controls the 2D tiling of the clearcoat intensity map.
+  * @property {Vec2} clearCoatMapOffset Controls the 2D offset of the clearcoat intensity map. Each
   * component is between 0 and 1.
-  * @property {number} clearCoatMapRotation Controls the 2D rotation (in degrees) of the clear coat
+  * @property {number} clearCoatMapRotation Controls the 2D rotation (in degrees) of the clearcoat
   * intensity map.
-  * @property {string} clearCoatMapChannel Color channel of the clear coat intensity map to use. Can
+  * @property {string} clearCoatMapChannel Color channel of the clearcoat intensity map to use. Can
   * be "r", "g", "b" or "a".
-  * @property {boolean} clearCoatVertexColor Use mesh vertex colors for clear coat intensity. If
+  * @property {boolean} clearCoatVertexColor Use mesh vertex colors for clearcoat intensity. If
   * clearCoatMap is set, it'll be multiplied by vertex colors.
-  * @property {string} clearCoatVertexColorChannel Vertex color channel to use for clear coat
+  * @property {string} clearCoatVertexColorChannel Vertex color channel to use for clearcoat
   * intensity. Can be "r", "g", "b" or "a".
-  * @property {number} clearCoatGlossiness Defines the clear coat glossiness of the clear coat layer
+  * @property {number} clearCoatGloss Defines the clearcoat glossiness of the clearcoat layer
   * from 0 (rough) to 1 (mirror).
-  * @property {Texture|null} clearCoatGlossMap Monochrome clear coat glossiness map (default is
-  * null). If specified, will be multiplied by normalized 'clearCoatGlossiness' value and/or vertex
-  * colors.
-  * @property {number} clearCoatGlossMapUv Clear coat gloss map UV channel.
-  * @property {Vec2} clearCoatGlossMapTiling Controls the 2D tiling of the clear coat gloss map.
-  * @property {Vec2} clearCoatGlossMapOffset Controls the 2D offset of the clear coat gloss map.
+  * @property {boolean} clearCoatGlossInvert Invert the clearcoat gloss component (default is false).
+  * Enabling this flag results in material treating the clear coat gloss members as roughness.
+  * @property {import('../../platform/graphics/texture.js').Texture|null} clearCoatGlossMap Monochrome
+  * clearcoat glossiness map (default is null). If specified, will be multiplied by normalized
+  * 'clearCoatGloss' value and/or vertex colors.
+  * @property {number} clearCoatGlossMapUv Clearcoat gloss map UV channel.
+  * @property {Vec2} clearCoatGlossMapTiling Controls the 2D tiling of the clearcoat gloss map.
+  * @property {Vec2} clearCoatGlossMapOffset Controls the 2D offset of the clearcoat gloss map.
   * Each component is between 0 and 1.
   * @property {number} clearCoatGlossMapRotation Controls the 2D rotation (in degrees) of the clear
   * coat gloss map.
-  * @property {string} clearCoatGlossMapChannel Color channel of the clear coat gloss map to use.
+  * @property {string} clearCoatGlossMapChannel Color channel of the clearcoat gloss map to use.
   * Can be "r", "g", "b" or "a".
-  * @property {boolean} clearCoatGlossVertexColor Use mesh vertex colors for clear coat glossiness.
+  * @property {boolean} clearCoatGlossVertexColor Use mesh vertex colors for clearcoat glossiness.
   * If clearCoatGlossMap is set, it'll be multiplied by vertex colors.
-  * @property {string} clearCoatGlossVertexColorChannel Vertex color channel to use for clear coat
+  * @property {string} clearCoatGlossVertexColorChannel Vertex color channel to use for clearcoat
   * glossiness. Can be "r", "g", "b" or "a".
-  * @property {Texture|null} clearCoatNormalMap The clear coat normal map of the material (default
-  * is null). The texture must contains normalized, tangent space normals.
-  * @property {number} clearCoatNormalMapUv Clear coat normal map UV channel.
-  * @property {Vec2} clearCoatNormalMapTiling Controls the 2D tiling of the main clear coat normal
+  * @property {import('../../platform/graphics/texture.js').Texture|null} clearCoatNormalMap The
+  * clearcoat normal map of the material (default is null). The texture must contains normalized,
+  * tangent space normals.
+  * @property {number} clearCoatNormalMapUv Clearcoat normal map UV channel.
+  * @property {Vec2} clearCoatNormalMapTiling Controls the 2D tiling of the main clearcoat normal
   * map.
-  * @property {Vec2} clearCoatNormalMapOffset Controls the 2D offset of the main clear coat normal
+  * @property {Vec2} clearCoatNormalMapOffset Controls the 2D offset of the main clearcoat normal
   * map. Each component is between 0 and 1.
   * @property {number} clearCoatNormalMapRotation Controls the 2D rotation (in degrees) of the main
-  * clear coat map.
-  * @property {number} clearCoatBumpiness The bumpiness of the clear coat layer. This value scales
-  * the assigned main clear coat normal map. It should be normally between 0 (no bump mapping) and 1
+  * clearcoat map.
+  * @property {number} clearCoatBumpiness The bumpiness of the clearcoat layer. This value scales
+  * the assigned main clearcoat normal map. It should be normally between 0 (no bump mapping) and 1
   * (full bump mapping), but can be set to e.g. 2 to give even more pronounced bump effect.
   * @property {boolean} useIridescence Enable thin-film iridescence.
-  * @property {Texture|null} iridescenceMap The per-pixel iridescence intensity. Only used when
-  * useIridescence is enabled.
+  * @property {import('../../platform/graphics/texture.js').Texture|null} iridescenceMap The
+  * per-pixel iridescence intensity. Only used when useIridescence is enabled.
   * @property {number} iridescenceMapUv Iridescence map UV channel.
   * @property {Vec2} iridescenceMapTiling Controls the 2D tiling of the iridescence map.
   * @property {Vec2} iridescenceMapOffset Controls the 2D offset of the iridescence map. Each component is
@@ -161,9 +169,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * map.
   * @property {string} iridescenceMapChannel Color channels of the iridescence map to use. Can be "r",
   * "g", "b" or "a".
-  * @property {Texture|null} iridescenceThicknessMap The per-pixel iridescence thickness. Defines a
-  * gradient weight between iridescenceThicknessMin and iridescenceThicknessMax. Only used when
-  * useIridescence is enabled.
+  * @property {import('../../platform/graphics/texture.js').Texture|null} iridescenceThicknessMap The
+  * per-pixel iridescence thickness. Defines a gradient weight between iridescenceThicknessMin and
+  * iridescenceThicknessMax. Only used when useIridescence is enabled.
   * @property {number} iridescenceThicknessMapUv Iridescence thickness map UV channel.
   * @property {Vec2} iridescenceThicknessMapTiling Controls the 2D tiling of the iridescence
   * thickness map.
@@ -182,15 +190,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_materials_iridescence
   * @property {boolean} useMetalness Use metalness properties instead of specular. When enabled,
   * diffuse colors also affect specular instead of the dedicated specular map. This can be used as
-  * alternative to specular color to save space. With metaless == 0, the pixel is assumed to be
-  * dielectric, and diffuse color is used as normal. With metaless == 1, the pixel is fully
+  * alternative to specular color to save space. With metalness == 0, the pixel is assumed to be
+  * dielectric, and diffuse color is used as normal. With metalness == 1, the pixel is fully
   * metallic, and diffuse color is used as specular color instead.
   * @property {boolean} useMetalnessSpecularColor When metalness is enabled, use the
   * specular map to apply color tint to specular reflections.
   * at direct angles.
   * @property {number} metalness Defines how much the surface is metallic. From 0 (dielectric) to 1
   * (metal).
-  * @property {Texture|null} metalnessMap Monochrome metalness map (default is null).
+  * @property {import('../../platform/graphics/texture.js').Texture|null} metalnessMap Monochrome
+  * metalness map (default is null).
   * @property {number} metalnessMapUv Metalness map UV channel.
   * @property {Vec2} metalnessMapTiling Controls the 2D tiling of the metalness map.
   * @property {Vec2} metalnessMapOffset Controls the 2D offset of the metalness map. Each component
@@ -203,12 +212,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * is set, it'll be multiplied by vertex colors.
   * @property {string} metalnessVertexColorChannel Vertex color channel to use for metalness. Can be
   * "r", "g", "b" or "a".
-  * @property {number} shininess Defines glossiness of the material from 0 (rough) to 100 (shiny
-  * mirror). A higher shininess value results in a more focused specular highlight. Glossiness map/
-  * vertex colors are always multiplied by this value (normalized to 0 - 1 range), or it is used
-  * directly as constant output.
-  * @property {Texture|null} glossMap Glossiness map (default is null). If specified, will be
-  * multiplied by normalized 'shininess' value and/or vertex colors.
+  * @property {number} gloss Defines the glossiness of the material from 0 (rough) to 1 (shiny).
+  * @property {import('../../platform/graphics/texture.js').Texture|null} glossMap Gloss map
+  * (default is null). If specified, will be multiplied by normalized gloss value and/or vertex
+  * colors.
+  * @property {boolean} glossInvert Invert the gloss component (default is false). Enabling this
+  * flag results in material treating the gloss members as roughness.
   * @property {number} glossMapUv Gloss map UV channel.
   * @property {string} glossMapChannel Color channel of the gloss map to use. Can be "r", "g", "b"
   * or "a".
@@ -222,7 +231,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * "r", "g", "b" or "a".
   * @property {number} refraction Defines the visibility of refraction. Material can refract the
   * same cube map as used for reflections.
-  * @property {Texture|null} refractionMap The map of the refraction visibility.
+  * @property {import('../../platform/graphics/texture.js').Texture|null} refractionMap The map of
+  * the refraction visibility.
   * @property {number} refractionMapUv Refraction map UV channel.
   * @property {Vec2} refractionMapTiling Controls the 2D tiling of the refraction map.
   * @property {Vec2} refractionMapOffset Controls the 2D offset of the refraction map. Each component
@@ -244,8 +254,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * instead of pre-computed cube maps for refractions.
   * @property {number} thickness The thickness of the medium, only used when useDynamicRefraction
   * is enabled. The unit is in base units, and scales with the size of the object.
-  * @property {Texture|null} thicknessMap The per-pixel thickness of the medium, only used when
-  * useDynamicRefraction is enabled.
+  * @property {import('../../platform/graphics/texture.js').Texture|null} thicknessMap The
+  * per-pixel thickness of the medium, only used when useDynamicRefraction is enabled.
   * @property {number} thicknessMapUv Thickness map UV channel.
   * @property {Vec2} thicknessMapTiling Controls the 2D tiling of the thickness map.
   * @property {Vec2} thicknessMapOffset Controls the 2D offset of the thickness map. Each component is
@@ -264,8 +274,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * (RGB), where each component is between 0 and 1.
   * @property {boolean} emissiveTint Multiply emissive map and/or emissive vertex color by the
   * constant emissive value.
-  * @property {Texture|null} emissiveMap The emissive map of the material (default is null). Can be
-  * HDR.
+  * @property {import('../../platform/graphics/texture.js').Texture|null} emissiveMap The emissive
+  * map of the material (default is null). Can be HDR.
   * @property {number} emissiveIntensity Emissive color multiplier.
   * @property {number} emissiveMapUv Emissive map UV channel.
   * @property {Vec2} emissiveMapTiling Controls the 2D tiling of the emissive map.
@@ -284,8 +294,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This color value is 3-component (RGB), where each component is between 0 and 1.
   * @property {boolean} sheenTint Multiply sheen map and/or sheen vertex color by the constant
   * sheen value.
-  * @property {Texture|null} sheenMap The sheen microstructure color map of the material
-  * (default is null).
+  * @property {import('../../platform/graphics/texture.js').Texture|null} sheenMap The sheen
+  * microstructure color map of the material (default is null).
   * @property {number} sheenMapUv Sheen map UV channel.
   * @property {Vec2} sheenMapTiling Controls the 2D tiling of the sheen map.
   * @property {Vec2} sheenMapOffset Controls the 2D offset of the sheen map. Each component is
@@ -297,11 +307,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property {boolean} sheenVertexColor Use mesh vertex colors for sheen. If sheen map or
   * sheen tint are set, they'll be multiplied by vertex colors.
   * @property {number} sheenGloss The glossiness of the sheen (fabric) microfiber structure.
-  * This color value is 3-component (RGB), where each component is between 0 and 1.
+  * This color value is a single value between 0 and 1.
+  * @property {boolean} sheenGlossInvert Invert the sheen gloss component (default is false).
+  * Enabling this flag results in material treating the sheen gloss members as roughness.
   * @property {boolean} sheenGlossTint Multiply sheen glossiness map and/or sheen glossiness vertex
   * value by the scalar sheen glossiness value.
-  * @property {Texture|null} sheenGlossMap The sheen glossiness microstructure color map of the
-  * material (default is null).
+  * @property {import('../../platform/graphics/texture.js').Texture|null} sheenGlossMap The sheen
+  * glossiness microstructure color map of the material (default is null).
   * @property {number} sheenGlossMapUv Sheen map UV channel.
   * @property {Vec2} sheenGlossMapTiling Controls the 2D tiling of the sheen glossiness map.
   * @property {Vec2} sheenGlossMapOffset Controls the 2D offset of the sheen glossiness map.
@@ -311,7 +323,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property {string} sheenGlossMapChannel Color channels of the sheen glossiness map to use.
   * Can be "r", "g", "b", "a", "rgb" or any swizzled combination.
   * @property {boolean} sheenGlossVertexColor Use mesh vertex colors for sheen glossiness.
-  * If sheen glossiness map or sheen glosiness tint are set, they'll be multiplied by vertex colors.
+  * If sheen glossiness map or sheen glossiness tint are set, they'll be multiplied by vertex colors.
   * @property {string} sheenGlossVertexColorChannel Vertex color channels to use for sheen glossiness.
   * Can be "r", "g", "b" or "a".
   * @property {number} opacity The opacity of the material. This value can be between 0 and 1, where
@@ -320,7 +332,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {@link BLEND_ADDITIVE} or any other mode. Also note that for most semi-transparent objects you
   * want {@link Material#depthWrite} to be false, otherwise they can fully occlude objects behind
   * them.
-  * @property {Texture|null} opacityMap The opacity map of the material (default is null).
+  * @property {import('../../platform/graphics/texture.js').Texture|null} opacityMap The opacity map
+  * of the material (default is null).
   * @property {number} opacityMapUv Opacity map UV channel.
   * @property {string} opacityMapChannel Color channel of the opacity map to use. Can be "r", "g",
   * "b" or "a".
@@ -337,8 +350,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {@link Material#alphaFade} to fade out materials.
   * @property {number} alphaFade used to fade out materials when
   * {@link StandardMaterial#opacityFadesSpecular} is set to false.
-  * @property {Texture|null} normalMap The main (primary) normal map of the material (default is
-  * null). The texture must contains normalized, tangent space normals.
+  * @property {import('../../platform/graphics/texture.js').Texture|null} normalMap The main
+  * (primary) normal map of the material (default is null). The texture must contains normalized,
+  * tangent space normals.
   * @property {number} normalMapUv Main (primary) normal map UV channel.
   * @property {Vec2} normalMapTiling Controls the 2D tiling of the main (primary) normal map.
   * @property {Vec2} normalMapOffset Controls the 2D offset of the main (primary) normal map. Each
@@ -348,8 +362,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property {number} bumpiness The bumpiness of the material. This value scales the assigned main
   * (primary) normal map. It should be normally between 0 (no bump mapping) and 1 (full bump
   * mapping), but can be set to e.g. 2 to give even more pronounced bump effect.
-  * @property {Texture|null} normalDetailMap The detail (secondary) normal map of the material
-  * (default is null). Will only be used if main (primary) normal map is non-null.
+  * @property {import('../../platform/graphics/texture.js').Texture|null} normalDetailMap The detail
+  * (secondary) normal map of the material (default is null). Will only be used if main (primary)
+  * normal map is non-null.
   * @property {number} normalDetailMapUv Detail (secondary) normal map UV channel.
   * @property {Vec2} normalDetailMapTiling Controls the 2D tiling of the detail (secondary) normal
   * map.
@@ -360,10 +375,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property {number} normalDetailMapBumpiness The bumpiness of the material. This value scales the
   * assigned detail (secondary) normal map. It should be normally between 0 (no bump mapping) and 1
   * (full bump mapping), but can be set to e.g. 2 to give even more pronounced bump effect.
-  * @property {Texture|null} heightMap The height map of the material (default is null). Used for a
-  * view-dependent parallax effect. The texture must represent the height of the surface where
-  * darker pixels are lower and lighter pixels are higher. It is recommended to use it together with
-  * a normal map.
+  * @property {import('../../platform/graphics/texture.js').Texture|null} heightMap The height map
+  * of the material (default is null). Used for a view-dependent parallax effect. The texture must
+  * represent the height of the surface where darker pixels are lower and lighter pixels are higher.
+  * It is recommended to use it together with a normal map.
   * @property {number} heightMapUv Height map UV channel.
   * @property {string} heightMapChannel Color channel of the height map to use. Can be "r", "g", "b"
   * or "a".
@@ -373,22 +388,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property {number} heightMapRotation Controls the 2D rotation (in degrees) of the height map.
   * @property {number} heightMapFactor Height map multiplier. Affects the strength of the parallax
   * effect.
-  * @property {Texture|null} envAtlas The prefiltered environment lighting atlas (default is null).
-  * This setting overrides cubeMap and sphereMap and will replace the scene lighting environment.
-  * @property {Texture|null} cubeMap The cubic environment map of the material (default is null).
-  * This setting overrides sphereMap and will replace the scene lighting environment.
-  * @property {Texture|null} sphereMap The spherical environment map of the material (default is
-  * null). This will replace the scene lighting environment.
+  * @property {import('../../platform/graphics/texture.js').Texture|null} envAtlas The prefiltered
+  * environment lighting atlas (default is null). This setting overrides cubeMap and sphereMap and
+  * will replace the scene lighting environment.
+  * @property {import('../../platform/graphics/texture.js').Texture|null} cubeMap The cubic
+  * environment map of the material (default is null). This setting overrides sphereMap and will
+  * replace the scene lighting environment.
+  * @property {import('../../platform/graphics/texture.js').Texture|null} sphereMap The spherical
+  * environment map of the material (default is null). This will replace the scene lighting
+  * environment.
   * @property {number} cubeMapProjection The type of projection applied to the cubeMap property:
   * - {@link CUBEPROJ_NONE}: The cube map is treated as if it is infinitely far away.
   * - {@link CUBEPROJ_BOX}: Box-projection based on a world space axis-aligned bounding box.
   * Defaults to {@link CUBEPROJ_NONE}.
-  * @property {BoundingBox} cubeMapProjectionBox The world space axis-aligned bounding box defining
-  * the box-projection used for the cubeMap property. Only used when cubeMapProjection is set to
-  * {@link CUBEPROJ_BOX}.
+  * @property {import('../../core/shape/bounding-box.js').BoundingBox} cubeMapProjectionBox The
+  * world space axis-aligned bounding box defining the box-projection used for the cubeMap property.
+  * Only used when cubeMapProjection is set to {@link CUBEPROJ_BOX}.
   * @property {number} reflectivity Environment map intensity.
-  * @property {Texture|null} lightMap A custom lightmap of the material (default is null). Lightmaps
-  * are textures that contain pre-rendered lighting. Can be HDR.
+  * @property {import('../../platform/graphics/texture.js').Texture|null} lightMap A custom lightmap
+  * of the material (default is null). Lightmaps are textures that contain pre-rendered lighting.
+  * Can be HDR.
   * @property {number} lightMapUv Lightmap UV channel
   * @property {string} lightMapChannel Color channels of the lightmap to use. Can be "r", "g", "b",
   * "a", "rgb" or any swizzled combination.
@@ -401,8 +420,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property {string} lightVertexColorChannel Vertex color channels to use for baked lighting. Can
   * be "r", "g", "b", "a", "rgb" or any swizzled combination.
   * @property {boolean} ambientTint Enables scene ambient multiplication by material ambient color.
-  * @property {Texture|null} aoMap Baked ambient occlusion (AO) map (default is null). Modulates
-  * ambient color.
+  * @property {import('../../platform/graphics/texture.js').Texture|null} aoMap Baked ambient
+  * occlusion (AO) map (default is null). Modulates ambient color.
   * @property {number} aoMapUv AO map UV channel
   * @property {string} aoMapChannel Color channel of the AO map to use. Can be "r", "g", "b" or "a".
   * @property {Vec2} aoMapTiling Controls the 2D tiling of the AO map.
@@ -456,70 +475,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * properties), that you can change and then return. Returned value will be used instead. This is
   * mostly useful when rendering the same set of objects, but with different shader variations based
   * on the same material. For example, you may wish to render a depth or normal pass using textures
-  * assigned to the material, a reflection pass with simpler shaders and so on. Properties of the
-  * object passed into this function are:
-  *
-  * - pass: value of {@link Layer#shaderPass} of the Layer being rendered.
-  * - chunks: Object containing custom shader chunks that will replace default ones.
-  * - customFragmentShader: Completely replace fragment shader with this code.
-  * - forceUv1: if UV1 (second set of texture coordinates) is required in the shader. Will be
-  * declared as "vUv1" and passed to the fragment shader.
-  * - fog: the type of fog being applied in the shader. See {@link Scene#fog} for the list of
-  * possible values.
-  * - gamma: the type of gamma correction being applied in the shader. See
-  * {@link Scene#gammaCorrection} for the list of possible values.
-  * - toneMap: the type of tone mapping being applied in the shader. See {@link Scene#toneMapping}
-  * for the list of possible values.
-  * - ambientTint: the value of {@link StandardMaterial#ambientTint}.
-  * - conserveEnergy: the value of {@link StandardMaterial#conserveEnergy}.
-  * - occludeSpecular: the value of {@link StandardMaterial#occludeSpecular}.
-  * - occludeDirect: the value of {@link StandardMaterial#occludeDirect}.
-  * - shadingModel: the value of {@link StandardMaterial#shadingModel}.
-  * - fresnelModel: the value of {@link StandardMaterial#fresnelModel}.
-  * - cubeMapProjection: the value of {@link StandardMaterial#cubeMapProjection}.
-  * - useMetalness: the value of {@link StandardMaterial#useMetalness}.
-  * - blendType: the value of {@link Material#blendType}.
-  * - twoSidedLighting: the value of {@link Material#twoSidedLighting}.
-  * - diffuseTint: defines if {@link StandardMaterial#diffuse} constant should affect diffuse color.
-  * - specularTint: defines if {@link StandardMaterial#specular} constant should affect specular
-  * color.
-  * - metalnessTint: defines if {@link StandardMaterial#metalness} constant should affect metalness
-  * value.
-  * - glossTint: defines if {@link StandardMaterial#shininess} constant should affect glossiness
-  * value.
-  * - emissiveTint: defines if {@link StandardMaterial#emissive} constant should affect emission
-  * value.
-  * - opacityTint: defines if {@link StandardMaterial#opacity} constant should affect opacity value.
-  * - occludeSpecularFloat: defines if {@link StandardMaterial#occludeSpecularIntensity} constant
-  * should affect specular occlusion.
-  * - alphaTest: enable alpha testing. See {@link Material#alphaTest}.
-  * - alphaToCoverage: enable alpha to coverage. See {@link Material#alphaToCoverage}.
-  * - opacityFadesSpecular: enable specular fade. See {@link Material#opacityFadesSpecular}.
-  * - alphaFade: fade value. See {@link Material#alphaFade}.
-  * - sphereMap: if {@link StandardMaterial#sphereMap} is used.
-  * - cubeMap: if {@link StandardMaterial#cubeMap} is used.
-  * - ambientSH: if ambient spherical harmonics are used. Ambient SH replace prefiltered cubemap
-  * ambient on certain platform (mostly Android) for performance reasons.
-  * - useSpecular: if any specular or reflections are needed at all.
-  * - fixSeams: if cubemaps require seam fixing (see {@link Texture#options.fixCubemapSeams}).
-  * - emissiveEncoding: how emissiveMap is encoded. This value is based on Texture#encoding.
-  * - lightMapEncoding: how lightMap is encoded. This value is based on on Texture#encoding.
-  * - packedNormal: if normal map contains X in RGB, Y in Alpha, and Z must be reconstructed.
-  * - forceFragmentPrecision: Override fragment shader numeric precision. Can be "lowp", "mediump",
-  * "highp" or null to use default.
-  * - fastTbn: Use slightly cheaper normal mapping code (skip tangent space normalization). Can look
-  * buggy sometimes.
-  * - refraction: if refraction is used.
-  * - skyboxIntensity: if reflected skybox intensity should be modulated.
-  * - useCubeMapRotation: if cube map rotation is enabled.
-  * - useInstancing: if hardware instancing compatible shader should be generated. Transform is read
-  * from per-instance {@link VertexBuffer} instead of shader's uniforms.
-  * - useMorphPosition: if morphing code should be generated to morph positions.
-  * - useMorphNormal: if morphing code should be generated to morph normals.
-  * - reflectionSource: one of "envAtlasHQ", "envAtlas", "cubeMap", "sphereMap"
-  * - reflectionEncoding: one of null, "rgbm", "rgbe", "linear", "srgb"
-  * - ambientSource: one of "ambientSH", "envAtlas", "constant"
-  * - ambientEncoding: one of null, "rgbm", "rgbe", "linear", "srgb"
+  * assigned to the material, a reflection pass with simpler shaders and so on. These properties are
+  * split into two sections, generic standard material options and lit options. Properties of the
+  * standard material options are {@link StandardMaterialOptions} and the options for the lit options
+  * are {@link LitOptions}.
   * @augments Material
   */
 @JSGlobal("pc.StandardMaterial")

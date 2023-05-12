@@ -12,7 +12,7 @@ trait UpdateContactFlowContentRequest extends StObject {
   var ContactFlowId: typings.awsSdk.clientsConnectMod.ContactFlowId
   
   /**
-    * The JSON string that represents flow's content. For an example, see Example contact flow in Amazon Connect Flow language in the Amazon Connect Administrator Guide. 
+    * The JSON string that represents flow's content. For an example, see Example contact flow in Amazon Connect Flow language. 
     */
   var Content: ContactFlowContent
   

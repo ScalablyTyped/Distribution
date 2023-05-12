@@ -1147,6 +1147,8 @@ object sapMUploadCollectionMod {
     ): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:beforeUploadStarts beforeUploadStarts} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1158,6 +1160,8 @@ object sapMUploadCollectionMod {
     mParameters: AddHeaderParameter): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1169,6 +1173,8 @@ object sapMUploadCollectionMod {
     mParameters: DocumentId): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:fileDeleted fileDeleted} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1180,6 +1186,8 @@ object sapMUploadCollectionMod {
     mParameters: DocumentIdItem): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:fileRenamed fileRenamed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1191,6 +1199,8 @@ object sapMUploadCollectionMod {
     mParameters: DocumentIdFileName): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:fileSizeExceed fileSizeExceed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1202,6 +1212,8 @@ object sapMUploadCollectionMod {
     mParameters: DocumentIdFileSize): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:filenameLengthExceed filenameLengthExceed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1214,6 +1226,7 @@ object sapMUploadCollectionMod {
     
     /**
       * @SINCE 1.36.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:selectionChange selectionChange} to attached listeners.
       *
@@ -1226,6 +1239,8 @@ object sapMUploadCollectionMod {
     mParameters: SelectedSelectedItem): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:typeMissmatch typeMissmatch} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1237,6 +1252,8 @@ object sapMUploadCollectionMod {
     mParameters: MimeType): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:uploadComplete uploadComplete} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1248,6 +1265,8 @@ object sapMUploadCollectionMod {
     mParameters: Response): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:uploadTerminated uploadTerminated} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

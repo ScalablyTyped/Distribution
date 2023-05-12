@@ -30,7 +30,7 @@ object mod {
     def this(props: SharedRenderProps[DeviceMotionProps]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SharedRenderProps[DeviceMotionProps], context: Any) = this()
   }
@@ -42,7 +42,7 @@ object mod {
     def this(props: SharedRenderProps[DeviceOrientationProps]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SharedRenderProps[DeviceOrientationProps], context: Any) = this()
   }
@@ -54,7 +54,7 @@ object mod {
     def this(props: SharedRenderProps[GeoPositionProps]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SharedRenderProps[GeoPositionProps], context: Any) = this()
   }
@@ -66,7 +66,7 @@ object mod {
     def this(props: SharedRenderProps[LocalesProps]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SharedRenderProps[LocalesProps], context: Any) = this()
   }
@@ -82,7 +82,7 @@ object mod {
     def this(props: SharedRenderProps[NetworkProps]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SharedRenderProps[NetworkProps], context: Any) = this()
   }
@@ -94,7 +94,7 @@ object mod {
     def this(props: ScrollConfig & SharedRenderProps[ScrollProps]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ScrollConfig & SharedRenderProps[ScrollProps], context: Any) = this()
   }
@@ -118,7 +118,7 @@ object mod {
     def this(props: WindowSizeConfig & SharedRenderProps[WindowSizeProps]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: WindowSizeConfig & SharedRenderProps[WindowSizeProps], context: Any) = this()
   }

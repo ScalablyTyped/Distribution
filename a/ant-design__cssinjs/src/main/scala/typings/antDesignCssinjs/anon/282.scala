@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ColumnGap
+import typings.csstype.mod.Property.MaskSize
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `282` extends StObject {
   
   var value: js.UndefOr[
-    (ColumnGap[Double | String]) | (js.Array[
+    (MaskSize[Double | String]) | (js.Array[
       (Extract[
         js.UndefOr[
-          (ColumnGap[Double | String]) | (js.Array[NonNullable[js.UndefOr[ColumnGap[Double | String]]]])
+          (MaskSize[Double | String]) | (js.Array[NonNullable[js.UndefOr[MaskSize[Double | String]]]])
         ], 
         String
-      ]) | (NonNullable[js.UndefOr[ColumnGap[Double | String]]])
+      ]) | (NonNullable[js.UndefOr[MaskSize[Double | String]]])
     ])
   ] = js.native
 }

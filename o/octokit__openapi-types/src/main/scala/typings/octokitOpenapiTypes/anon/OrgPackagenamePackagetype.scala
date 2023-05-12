@@ -12,17 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OrgPackagenamePackagetype extends StObject {
   
-  /** The organization name. The name is not case sensitive. */
   @JSName("org")
   var org_ : String
   
-  /** The name of the package. */
   var package_name: String
   
-  /** The type of supported package. Packages in GitHub's Gradle registry have the type `maven`. Docker images pushed to GitHub's Container registry (`ghcr.io`) have the type `container`. You can use the type `docker` to find images that were pushed to GitHub's Docker registry (`docker.pkg.github.com`), even if these have now been migrated to the Container registry. */
   var package_type: npm | maven | rubygems | docker | nuget | container
   
-  /** Unique identifier of the package version. */
   var package_version_id: Double
 }
 object OrgPackagenamePackagetype {

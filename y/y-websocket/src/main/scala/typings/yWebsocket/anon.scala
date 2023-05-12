@@ -3,6 +3,7 @@ package typings.yWebsocket
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.URL
 import typings.std.WebSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +13,7 @@ object anon {
   
   trait Awareness extends StObject {
     
-    var WebSocketPolyfill: js.UndefOr[TypeofWebSocket] = js.undefined
+    var WebSocketPolyfill: js.UndefOr[Instantiable] = js.undefined
     
     var awareness: js.UndefOr[typings.yProtocols.awarenessMod.Awareness] = js.undefined
     
@@ -60,7 +61,7 @@ object anon {
       
       inline def setResyncIntervalUndefined: Self = StObject.set(x, "resyncInterval", js.undefined)
       
-      inline def setWebSocketPolyfill(value: TypeofWebSocket): Self = StObject.set(x, "WebSocketPolyfill", value.asInstanceOf[js.Any])
+      inline def setWebSocketPolyfill(value: Instantiable): Self = StObject.set(x, "WebSocketPolyfill", value.asInstanceOf[js.Any])
       
       inline def setWebSocketPolyfillUndefined: Self = StObject.set(x, "WebSocketPolyfill", js.undefined)
     }
@@ -69,9 +70,9 @@ object anon {
   @js.native
   trait Instantiable
     extends StObject
-       with Instantiable1[/* url */ String, WebSocket]
+       with Instantiable1[(/* url */ String) | (/* url */ URL), WebSocket]
        with Instantiable2[
-          /* url */ String, 
+          (/* url */ String) | (/* url */ URL), 
           (/* protocols */ js.Array[String]) | (/* protocols */ String), 
           WebSocket
         ] {
@@ -83,39 +84,5 @@ object anon {
     val CONNECTING: Double = js.native
     
     val OPEN: Double = js.native
-  }
-  
-  trait TypeofWebSocket extends StObject {
-    
-    /* standard dom */
-    val CLOSED: Double
-    
-    /* standard dom */
-    val CLOSING: Double
-    
-    /* standard dom */
-    val CONNECTING: Double
-    
-    /* standard dom */
-    val OPEN: Double
-  }
-  object TypeofWebSocket {
-    
-    inline def apply(CLOSED: Double, CLOSING: Double, CONNECTING: Double, OPEN: Double): TypeofWebSocket = {
-      val __obj = js.Dynamic.literal(CLOSED = CLOSED.asInstanceOf[js.Any], CLOSING = CLOSING.asInstanceOf[js.Any], CONNECTING = CONNECTING.asInstanceOf[js.Any], OPEN = OPEN.asInstanceOf[js.Any])
-      __obj.asInstanceOf[TypeofWebSocket]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: TypeofWebSocket] (val x: Self) extends AnyVal {
-      
-      inline def setCLOSED(value: Double): Self = StObject.set(x, "CLOSED", value.asInstanceOf[js.Any])
-      
-      inline def setCLOSING(value: Double): Self = StObject.set(x, "CLOSING", value.asInstanceOf[js.Any])
-      
-      inline def setCONNECTING(value: Double): Self = StObject.set(x, "CONNECTING", value.asInstanceOf[js.Any])
-      
-      inline def setOPEN(value: Double): Self = StObject.set(x, "OPEN", value.asInstanceOf[js.Any])
-    }
   }
 }

@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RoomExtension extends StObject {
   
-  /** @type {string} Returns the fully qualified name of the main class of the Extension. */
+  /** Returns the fully qualified name of the main class of the Extension. */
   var className: String
   
-  /** @type {string} Returns the name of the Extension to be attached to the Room. */
+  /** Returns the name of the Extension to be attached to the Room. */
   var id: String
   
-  /** @type {string} Sets the name of an optional properties file that should be loaded on the server-side during the Extension initialization. */
+  /** Sets the name of an optional properties file that should be loaded on the server-side during the Extension initialization. */
   var propertiesFile: String
 }
 object RoomExtension {

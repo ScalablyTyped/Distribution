@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.GlyphOrientationVertical
+import typings.csstype.mod.Property.Margin
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `313` extends StObject {
   
   var value: js.UndefOr[
-    GlyphOrientationVertical | (js.Array[
+    (Margin[Double | String]) | (js.Array[
       (Extract[
         js.UndefOr[
-          GlyphOrientationVertical | js.Array[NonNullable[js.UndefOr[GlyphOrientationVertical]]]
+          (Margin[Double | String]) | (js.Array[NonNullable[js.UndefOr[Margin[Double | String]]]])
         ], 
         String
-      ]) | NonNullable[js.UndefOr[GlyphOrientationVertical]]
+      ]) | (NonNullable[js.UndefOr[Margin[Double | String]]])
     ])
   ] = js.native
 }

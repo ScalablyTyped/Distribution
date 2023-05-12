@@ -30,7 +30,7 @@ trait First
   var prev: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Fully qualified link to this API call
+    * Fully qualified link that generated the current response document
     */
   var self: String
 }

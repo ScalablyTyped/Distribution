@@ -101,7 +101,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.InjectedJavascript
   - typings.devtoolsProtocol.devtoolsProtocolStrings.InjectedStyleSheet
   - typings.devtoolsProtocol.devtoolsProtocolStrings.KeepaliveRequest
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.IndexedDBEvent
   - typings.devtoolsProtocol.devtoolsProtocolStrings.Dummy
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.AuthorizationHeader
   - typings.devtoolsProtocol.devtoolsProtocolStrings.ContentSecurityHandler
   - typings.devtoolsProtocol.devtoolsProtocolStrings.ContentWebAuthenticationAPI
   - typings.devtoolsProtocol.devtoolsProtocolStrings.ContentFileChooser
@@ -134,6 +136,8 @@ object BackForwardCacheNotRestoredReason {
   inline def ActivationNavigationsDisallowedForBug1234857: typings.devtoolsProtocol.devtoolsProtocolStrings.ActivationNavigationsDisallowedForBug1234857 = "ActivationNavigationsDisallowedForBug1234857".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ActivationNavigationsDisallowedForBug1234857]
   
   inline def AppBanner: typings.devtoolsProtocol.devtoolsProtocolStrings.AppBanner = "AppBanner".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.AppBanner]
+  
+  inline def AuthorizationHeader: typings.devtoolsProtocol.devtoolsProtocolStrings.AuthorizationHeader = "AuthorizationHeader".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.AuthorizationHeader]
   
   inline def BackForwardCacheDisabled: typings.devtoolsProtocol.devtoolsProtocolStrings.BackForwardCacheDisabled = "BackForwardCacheDisabled".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.BackForwardCacheDisabled]
   
@@ -242,6 +246,8 @@ object BackForwardCacheNotRestoredReason {
   inline def IgnoreEventAndEvict: typings.devtoolsProtocol.devtoolsProtocolStrings.IgnoreEventAndEvict = "IgnoreEventAndEvict".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.IgnoreEventAndEvict]
   
   inline def IndexedDBConnection: typings.devtoolsProtocol.devtoolsProtocolStrings.IndexedDBConnection = "IndexedDBConnection".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.IndexedDBConnection]
+  
+  inline def IndexedDBEvent: typings.devtoolsProtocol.devtoolsProtocolStrings.IndexedDBEvent = "IndexedDBEvent".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.IndexedDBEvent]
   
   inline def InjectedJavascript: typings.devtoolsProtocol.devtoolsProtocolStrings.InjectedJavascript = "InjectedJavascript".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.InjectedJavascript]
   

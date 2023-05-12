@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "rollup-plugin-buble"
-version := "0.19-dt-20211202Z-b8ebd7"
+version := "0.19-dt-20211202Z-4bdb4a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "buble" % "0.20-dt-20211202Z-1892a7",
-  "org.scalablytyped" %%% "magic-string" % "0.26.7-dba250",
-  "org.scalablytyped" %%% "rollup" % "3.3.0-76f060",
-  "org.scalablytyped" %%% "std" % "4.9-ecb5eb")
+  "org.scalablytyped" %%% "buble" % "0.20-dt-20211202Z-98af69",
+  "org.scalablytyped" %%% "magic-string" % "0.30.0-c7f539",
+  "org.scalablytyped" %%% "rollup" % "3.21.6-dbf5a5",
+  "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "it-all" : "2.0.0"
+      "it-all" : "3.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "it-all" : "2.0.0"
+      "it-all" : "3.0.2"
     }
   ],
   "compile-devDependencies" : [

@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `200304403422503` extends StObject {
   
-  /** Response */
+  /** @description Response */
   var `200`: ContentApplicationjsonIncompleteresultsBooleanItemsArrayTotalcountNumber
   
-  var `304`: Any
+  var `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabelsreadonly['not_modified'] */ js.Any
   
-  var `403`: Content48
+  var `403`: Content36
   
-  var `422`: Content397
+  var `422`: Content346
   
   var `503`: ContentApplicationjsonCodeDocumentationurlMessage
 }
@@ -21,9 +21,9 @@ object `200304403422503` {
   
   inline def apply(
     `200`: ContentApplicationjsonIncompleteresultsBooleanItemsArrayTotalcountNumber,
-    `304`: Any,
-    `403`: Content48,
-    `422`: Content397,
+    `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabelsreadonly['not_modified'] */ js.Any,
+    `403`: Content36,
+    `422`: Content346,
     `503`: ContentApplicationjsonCodeDocumentationurlMessage
   ): `200304403422503` = {
     val __obj = js.Dynamic.literal()
@@ -40,11 +40,13 @@ object `200304403422503` {
     
     inline def set200(value: ContentApplicationjsonIncompleteresultsBooleanItemsArrayTotalcountNumber): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set304(value: Any): Self = StObject.set(x, "304", value.asInstanceOf[js.Any])
+    inline def set304(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabelsreadonly['not_modified'] */ js.Any
+    ): Self = StObject.set(x, "304", value.asInstanceOf[js.Any])
     
-    inline def set403(value: Content48): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+    inline def set403(value: Content36): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
     
-    inline def set422(value: Content397): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
+    inline def set422(value: Content346): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
     
     inline def set503(value: ContentApplicationjsonCodeDocumentationurlMessage): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
   }

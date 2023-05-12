@@ -12,17 +12,17 @@ trait GetCurrentMetricDataRequest extends StObject {
   var CurrentMetrics: typings.awsSdk.clientsConnectMod.CurrentMetrics
   
   /**
-    * The queues, up to 100, or channels, to use to filter the metrics returned. Metric data is retrieved only for the resources associated with the queues or channels included in the filter. You can include both queue IDs and queue ARNs in the same request. VOICE, CHAT, and TASK channels are supported.
+    * The filters to apply to returned metrics. You can filter up to the following limits:   Queues: 100   Routing profiles: 100   Channels: 3 (VOICE, CHAT, and TASK channels are supported.)   Metric data is retrieved only for the resources associated with the queues or routing profiles, and by any channels included in the filter. (You cannot filter by both queue AND routing profile.) You can include both resource IDs and resource ARNs in the same request.  Currently tagging is only supported on the resources that are passed in the filter.
     */
   var Filters: typings.awsSdk.clientsConnectMod.Filters
   
   /**
-    * The grouping applied to the metrics returned. For example, when grouped by QUEUE, the metrics returned apply to each queue rather than aggregated for all queues. If you group by CHANNEL, you should include a Channels filter. VOICE, CHAT, and TASK channels are supported. If no Grouping is included in the request, a summary of metrics is returned.
+    * The grouping applied to the metrics returned. For example, when grouped by QUEUE, the metrics returned apply to each queue rather than aggregated for all queues.    If you group by CHANNEL, you should include a Channels filter. VOICE, CHAT, and TASK channels are supported.   If you group by ROUTING_PROFILE, you must include either a queue or routing profile filter. In addition, a routing profile filter is required for metrics CONTACTS_SCHEDULED, CONTACTS_IN_QUEUE, and  OLDEST_CONTACT_AGE.   If no Grouping is included in the request, a summary of metrics is returned.  
     */
   var Groupings: js.UndefOr[typings.awsSdk.clientsConnectMod.Groupings] = js.undefined
   
   /**
-    * The identifier of the Amazon Connect instance. You can find the instanceId in the ARN of the instance.
+    * The identifier of the Amazon Connect instance. You can find the instance ID in the Amazon Resource Name (ARN) of the instance.
     */
   var InstanceId: typings.awsSdk.clientsConnectMod.InstanceId
   
@@ -35,6 +35,11 @@ trait GetCurrentMetricDataRequest extends StObject {
     * The token for the next set of results. Use the value returned in the previous response in the next request to retrieve the next set of results. The token expires after 5 minutes from the time it is created. Subsequent requests that use the token must use the same request parameters as the request that generated the token.
     */
   var NextToken: js.UndefOr[typings.awsSdk.clientsConnectMod.NextToken] = js.undefined
+  
+  /**
+    * The way to sort the resulting response based on metrics. You can enter one sort criteria. By default resources are sorted based on AGENTS_ONLINE, DESCENDING. The metric collection is sorted based on the input metrics. Note the following:   Sorting on SLOTS_ACTIVE and SLOTS_AVAILABLE is not supported.  
+    */
+  var SortCriteria: js.UndefOr[CurrentMetricSortCriteriaMaxOne] = js.undefined
 }
 object GetCurrentMetricDataRequest {
   
@@ -67,5 +72,11 @@ object GetCurrentMetricDataRequest {
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    
+    inline def setSortCriteria(value: CurrentMetricSortCriteriaMaxOne): Self = StObject.set(x, "SortCriteria", value.asInstanceOf[js.Any])
+    
+    inline def setSortCriteriaUndefined: Self = StObject.set(x, "SortCriteria", js.undefined)
+    
+    inline def setSortCriteriaVarargs(value: CurrentMetricSortCriteria*): Self = StObject.set(x, "SortCriteria", js.Array(value*))
   }
 }

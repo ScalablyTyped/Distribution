@@ -322,6 +322,35 @@ object buildSrcCallInterfaceMod {
     }
   }
   
+  /* Inlined std.Pick<@grpc/grpc-js.@grpc/grpc-js/build/src/call-interface.StatusObject, 'code' | 'details'> & {  metadata :@grpc/grpc-js.@grpc/grpc-js/build/src/metadata.Metadata | null} */
+  trait PartialStatusObject extends StObject {
+    
+    var code: Status
+    
+    var details: String
+    
+    var metadata: Metadata | Null
+  }
+  object PartialStatusObject {
+    
+    inline def apply(code: Status, details: String): PartialStatusObject = {
+      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], metadata = null)
+      __obj.asInstanceOf[PartialStatusObject]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialStatusObject] (val x: Self) extends AnyVal {
+      
+      inline def setCode(value: Status): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      
+      inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      
+      inline def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      
+      inline def setMetadataNull: Self = StObject.set(x, "metadata", null)
+    }
+  }
+  
   type StatusListener = js.Function2[
     /* status */ StatusObject, 
     /* next */ js.Function1[/* status */ StatusObject, Unit], 

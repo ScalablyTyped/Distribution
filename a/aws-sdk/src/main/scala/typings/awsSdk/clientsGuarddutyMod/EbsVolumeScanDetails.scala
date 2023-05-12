@@ -27,6 +27,11 @@ trait EbsVolumeScanDetails extends StObject {
   var ScanStartedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
+    * Specifies the scan type that invoked the malware scan.
+    */
+  var ScanType: js.UndefOr[typings.awsSdk.clientsGuarddutyMod.ScanType] = js.undefined
+  
+  /**
     * Contains list of threat intelligence sources used to detect threats.
     */
   var Sources: js.UndefOr[typings.awsSdk.clientsGuarddutyMod.Sources] = js.undefined
@@ -61,6 +66,10 @@ object EbsVolumeScanDetails {
     inline def setScanStartedAt(value: js.Date): Self = StObject.set(x, "ScanStartedAt", value.asInstanceOf[js.Any])
     
     inline def setScanStartedAtUndefined: Self = StObject.set(x, "ScanStartedAt", js.undefined)
+    
+    inline def setScanType(value: ScanType): Self = StObject.set(x, "ScanType", value.asInstanceOf[js.Any])
+    
+    inline def setScanTypeUndefined: Self = StObject.set(x, "ScanType", js.undefined)
     
     inline def setSources(value: Sources): Self = StObject.set(x, "Sources", value.asInstanceOf[js.Any])
     

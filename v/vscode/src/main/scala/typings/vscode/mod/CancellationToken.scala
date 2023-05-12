@@ -7,20 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CancellationToken extends StObject {
   
   /**
-    * Is `true` when the token has been cancelled, `false` otherwise.
-    */
+  		 * Is `true` when the token has been cancelled, `false` otherwise.
+  		 */
   var isCancellationRequested: Boolean
   
   /**
-    * An {@link Event} which fires upon cancellation.
-    */
+  		 * An {@link Event} which fires upon cancellation.
+  		 */
   def onCancellationRequested(listener: js.Function1[/* e */ Any, Any]): Disposable
   def onCancellationRequested(listener: js.Function1[/* e */ Any, Any], thisArgs: Any): Disposable
   def onCancellationRequested(listener: js.Function1[/* e */ Any, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable
   def onCancellationRequested(listener: js.Function1[/* e */ Any, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable
   /**
-    * An {@link Event} which fires upon cancellation.
-    */
+  		 * An {@link Event} which fires upon cancellation.
+  		 */
   @JSName("onCancellationRequested")
   var onCancellationRequested_Original: Event[Any]
 }

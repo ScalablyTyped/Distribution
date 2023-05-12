@@ -1,6 +1,5 @@
 package typings.pixiAssets
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.pixiAssets.libLoaderParsersLoaderParserMod.LoaderParser
 import typings.pixiAssets.libLoaderTypesMod.LoadAsset
 import typings.pixiAssets.libLoaderTypesMod.PromiseAndParser
@@ -23,7 +22,14 @@ object libLoaderLoaderMod {
       */
     /* private */ var _getLoadPromiseAndParser: Any = js.native
     
+    /* private */ var _parserHash: Any = js.native
+    
     /* private */ var _parsers: Any = js.native
+    
+    /* private */ var _parsersValidated: Any = js.native
+    
+    /** validates our parsers, right now it only checks for name conflicts but we can add more here as required! */
+    /* private */ var _validateParsers: Any = js.native
     
     /**
       * Loads one or more assets using the parsers added to the Loader.
@@ -36,20 +42,23 @@ object libLoaderLoaderMod {
       * const assets = await Loader.load(['cool.png', 'cooler.png']);
       * console.log(assets);
       * @param assetsToLoadIn - urls that you want to load, or a single one!
-      * @param onProgress - a function that gets called when the progress changes
+      * @param onProgress - For multiple asset loading only, an optional function that is called
+      * when progress on asset loading is made. The function is passed a single parameter, `progress`,
+      * which represents the percentage (0.0 - 1.0) of the assets loaded. Do not use this function
+      * to detect when assets are complete and available, instead use the Promise returned by this function.
       */
-    def load(assetsToLoadIn: String): js.Promise[StringDictionary[Any] | Any] = js.native
-    def load(assetsToLoadIn: String, onProgress: js.Function1[/* progress */ Double, Unit]): js.Promise[StringDictionary[Any] | Any] = js.native
-    def load(assetsToLoadIn: js.Array[LoadAsset[Any] | String]): js.Promise[StringDictionary[Any] | Any] = js.native
-    def load(
+    def load[T](assetsToLoadIn: String): js.Promise[T] = js.native
+    def load[T](assetsToLoadIn: String, onProgress: js.Function1[/* progress */ Double, Unit]): js.Promise[T] = js.native
+    def load[T](assetsToLoadIn: js.Array[LoadAsset[Any] | String]): js.Promise[Record[String, T]] = js.native
+    def load[T](
       assetsToLoadIn: js.Array[LoadAsset[Any] | String],
       onProgress: js.Function1[/* progress */ Double, Unit]
-    ): js.Promise[StringDictionary[Any] | Any] = js.native
-    def load(assetsToLoadIn: LoadAsset[Any]): js.Promise[StringDictionary[Any] | Any] = js.native
-    def load(assetsToLoadIn: LoadAsset[Any], onProgress: js.Function1[/* progress */ Double, Unit]): js.Promise[StringDictionary[Any] | Any] = js.native
+    ): js.Promise[Record[String, T]] = js.native
+    def load[T](assetsToLoadIn: LoadAsset[Any]): js.Promise[T] = js.native
+    def load[T](assetsToLoadIn: LoadAsset[Any], onProgress: js.Function1[/* progress */ Double, Unit]): js.Promise[T] = js.native
     
     /** All loader parsers registered */
-    def parsers: js.Array[LoaderParser[Any, Any]] = js.native
+    var parsers: js.Array[LoaderParser[Any, Any, Record[String, Any]]] = js.native
     
     /** Cache loading promises that ae currently active */
     var promiseCache: Record[String, PromiseAndParser] = js.native

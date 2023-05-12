@@ -124,7 +124,8 @@ object distTypesMod {
     extends StObject
        with MenuDataItem {
     
-    var routes: js.UndefOr[js.Array[Route]] = js.undefined
+    @JSName("children")
+    var children_Route: js.UndefOr[js.Array[Route]] = js.undefined
   }
   object Route {
     
@@ -136,11 +137,11 @@ object distTypesMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: Route] (val x: Self) extends AnyVal {
       
-      inline def setRoutes(value: js.Array[Route]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[Route]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setRoutesVarargs(value: Route*): Self = StObject.set(x, "routes", js.Array(value*))
+      inline def setChildrenVarargs(value: Route*): Self = StObject.set(x, "children", js.Array(value*))
     }
   }
 }

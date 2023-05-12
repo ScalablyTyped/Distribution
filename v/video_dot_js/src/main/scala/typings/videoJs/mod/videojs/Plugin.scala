@@ -14,9 +14,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @fires   Player#pluginsetup
   * @fires   Player#pluginsetup:$name
   * @listens Player#dispose
-  * @throws  {Error}
-  *          If attempting to instantiate the base {@link Plugin} class
-  *          directly instead of via a sub-class.
   */
 @js.native
 trait Plugin

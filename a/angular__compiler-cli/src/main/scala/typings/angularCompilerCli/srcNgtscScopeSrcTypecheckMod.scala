@@ -3,11 +3,11 @@ package typings.angularCompilerCli
 import typings.angularCompiler.mod.SchemaMetadata
 import typings.angularCompiler.mod.SelectorMatcher
 import typings.angularCompilerCli.anon.ClassDeclarationClassDecl
+import typings.angularCompilerCli.anon.ClassDeclarationDeclarati
 import typings.angularCompilerCli.srcNgtscImportsMod.Reference
+import typings.angularCompilerCli.srcNgtscMetadataMod.HostDirectivesResolver
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.DirectiveMeta
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.MetadataReader
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
 import typings.angularCompilerCli.srcNgtscScopeSrcApiMod.ComponentScopeReader
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
@@ -19,7 +19,11 @@ object srcNgtscScopeSrcTypecheckMod {
   @JSImport("@angular/compiler-cli/src/ngtsc/scope/src/typecheck", "TypeCheckScopeRegistry")
   @js.native
   open class TypeCheckScopeRegistry protected () extends StObject {
-    def this(scopeReader: ComponentScopeReader, metaReader: MetadataReader) = this()
+    def this(
+      scopeReader: ComponentScopeReader,
+      metaReader: MetadataReader,
+      hostDirectivesResolver: HostDirectivesResolver
+    ) = this()
     
     /**
       * Cache of flattened directive metadata. Because flattened metadata is scope-invariant it's
@@ -27,14 +31,16 @@ object srcNgtscScopeSrcTypecheckMod {
       */
     /* private */ var flattenedDirectiveMetaCache: Any = js.native
     
-    def getTypeCheckDirectiveMetadata(ref: Reference[ClassDeclaration[DeclarationNode]]): DirectiveMeta = js.native
+    def getTypeCheckDirectiveMetadata(ref: Reference[ClassDeclarationDeclarati]): DirectiveMeta | Null = js.native
     
     /**
       * Computes the type-check scope information for the component declaration. If the NgModule
       * contains an error, then 'error' is returned. If the component is not declared in any NgModule,
       * an empty type-check scope is returned.
       */
-    def getTypeCheckScope(node: ClassDeclaration[DeclarationNode]): TypeCheckScope = js.native
+    def getTypeCheckScope(node: ClassDeclarationDeclarati): TypeCheckScope = js.native
+    
+    /* private */ var hostDirectivesResolver: Any = js.native
     
     /* private */ var metaReader: Any = js.native
     
@@ -63,7 +69,7 @@ object srcNgtscScopeSrcTypecheckMod {
       * A `SelectorMatcher` instance that contains the flattened directive metadata of all directives
       * that are in the compilation scope of the declaring NgModule.
       */
-    var matcher: SelectorMatcher[DirectiveMeta]
+    var matcher: SelectorMatcher[js.Array[DirectiveMeta]]
     
     /**
       * The pipes that are available in the compilation scope.
@@ -80,7 +86,7 @@ object srcNgtscScopeSrcTypecheckMod {
     inline def apply(
       directives: js.Array[DirectiveMeta],
       isPoisoned: Boolean,
-      matcher: SelectorMatcher[DirectiveMeta],
+      matcher: SelectorMatcher[js.Array[DirectiveMeta]],
       pipes: Map[String, Reference[ClassDeclarationClassDecl]],
       schemas: js.Array[SchemaMetadata]
     ): TypeCheckScope = {
@@ -97,7 +103,7 @@ object srcNgtscScopeSrcTypecheckMod {
       
       inline def setIsPoisoned(value: Boolean): Self = StObject.set(x, "isPoisoned", value.asInstanceOf[js.Any])
       
-      inline def setMatcher(value: SelectorMatcher[DirectiveMeta]): Self = StObject.set(x, "matcher", value.asInstanceOf[js.Any])
+      inline def setMatcher(value: SelectorMatcher[js.Array[DirectiveMeta]]): Self = StObject.set(x, "matcher", value.asInstanceOf[js.Any])
       
       inline def setPipes(value: Map[String, Reference[ClassDeclarationClassDecl]]): Self = StObject.set(x, "pipes", value.asInstanceOf[js.Any])
       

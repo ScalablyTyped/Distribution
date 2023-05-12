@@ -10,6 +10,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type AWSKMSKeyARN = String
 
+type AmazonOpenSearchServerlessBufferingIntervalInSeconds = Double
+
+type AmazonOpenSearchServerlessBufferingSizeInMBs = Double
+
+type AmazonOpenSearchServerlessCollectionEndpoint = String
+
+type AmazonOpenSearchServerlessIndexName = String
+
+type AmazonOpenSearchServerlessRetryDurationInSeconds = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.FailedDocumentsOnly
+  - typings.awsSdk.awsSdkStrings.AllDocuments
+  - java.lang.String
+*/
+type AmazonOpenSearchServerlessS3BackupMode = _AmazonOpenSearchServerlessS3BackupMode | String
+
 type AmazonopensearchserviceBufferingIntervalInSeconds = Double
 
 type AmazonopensearchserviceBufferingSizeInMBs = Double

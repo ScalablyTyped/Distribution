@@ -1,7 +1,7 @@
 
 # Scala.js typings for lottie-web
 
-Typings are for version 5.9.6
+Typings are for version 5.11.0
 
 ## Library description:
 After Effects plugin for exporting animations to SVG + JavaScript or canvas + JavaScript

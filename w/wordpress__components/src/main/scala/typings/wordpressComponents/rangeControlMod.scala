@@ -23,9 +23,11 @@ import typings.react.mod.TouchEventHandler
 import typings.react.mod.TransitionEventHandler
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEventHandler
+import typings.std.FormData
 import typings.std.HTMLInputElement
 import typings.wordpressComponents.dashiconMod.Dashicon.Icon
 import typings.wordpressComponents.rangeControlMod.RangeControl.Props
+import typings.wordpressComponents.wordpressComponentsStrings._empty
 import typings.wordpressComponents.wordpressComponentsStrings.`additions removals`
 import typings.wordpressComponents.wordpressComponentsStrings.`additions text`
 import typings.wordpressComponents.wordpressComponentsStrings.`inline`
@@ -33,8 +35,10 @@ import typings.wordpressComponents.wordpressComponentsStrings.`removals addition
 import typings.wordpressComponents.wordpressComponentsStrings.`removals text`
 import typings.wordpressComponents.wordpressComponentsStrings.`text additions`
 import typings.wordpressComponents.wordpressComponentsStrings.`text removals`
+import typings.wordpressComponents.wordpressComponentsStrings.`use-credentials`
 import typings.wordpressComponents.wordpressComponentsStrings.additions
 import typings.wordpressComponents.wordpressComponentsStrings.all
+import typings.wordpressComponents.wordpressComponentsStrings.anonymous
 import typings.wordpressComponents.wordpressComponentsStrings.ascending
 import typings.wordpressComponents.wordpressComponentsStrings.assertive
 import typings.wordpressComponents.wordpressComponentsStrings.both
@@ -113,7 +117,7 @@ object rangeControlMod {
       
       var accessKey: js.UndefOr[String] = js.native
       
-      var action: js.UndefOr[String] = js.native
+      var action: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.native
       
       /**
         * If this property is added, a `DashIcon` component will be rendered
@@ -294,7 +298,7 @@ object rangeControlMod {
       
       var coords: js.UndefOr[String] = js.native
       
-      var crossOrigin: js.UndefOr[String] = js.native
+      var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.native
       
       var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
       
@@ -322,7 +326,7 @@ object rangeControlMod {
       
       var form: js.UndefOr[String] = js.native
       
-      var formAction: js.UndefOr[String] = js.native
+      var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.native
       
       var formEncType: js.UndefOr[String] = js.native
       
@@ -645,6 +649,8 @@ object rangeControlMod {
       var resource: js.UndefOr[String] = js.native
       
       var results: js.UndefOr[Double] = js.native
+      
+      var rev: js.UndefOr[String] = js.native
       
       var reversed: js.UndefOr[Boolean] = js.native
       

@@ -4,12 +4,14 @@ import typings.openui5.anon.AppointmentCopy
 import typings.openui5.anon.AppointmentEndDate
 import typings.openui5.anon.Appointments
 import typings.openui5.anon.EndDateStartDate
-import typings.openui5.anon.`21`
+import typings.openui5.anon.`27`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.PlanningCalendarStickyMode
+import typings.openui5.sapMLibraryMod.SinglePlanningCalendarSelectionMode
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
+import typings.openui5.sapUiCoreDateCalendarWeekNumberingMod.CalendarWeekNumbering
 import typings.openui5.sapUiCoreLibraryMod.ID
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -151,6 +153,18 @@ object sapMSinglePlanningCalendarMod {
       * The appointment to add; if empty, nothing is inserted
       */
     oAppointment: typings.openui5.sapUiUnifiedCalendarAppointmentMod.default
+    ): this.type = js.native
+    
+    /**
+      * Adds some selectedDate to the aggregation {@link #getSelectedDates selectedDates}.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def addSelectedDate(
+      /**
+      * The selectedDate to add; if empty, nothing is inserted
+      */
+    oSelectedDate: typings.openui5.sapUiUnifiedDateRangeMod.default
     ): this.type = js.native
     
     /**
@@ -795,6 +809,13 @@ object sapMSinglePlanningCalendarMod {
     def destroyAppointments(): this.type = js.native
     
     /**
+      * Destroys all the selectedDates in the aggregation {@link #getSelectedDates selectedDates}.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def destroySelectedDates(): this.type = js.native
+    
+    /**
       * @SINCE 1.66
       *
       * Destroys all the specialDates in the aggregation {@link #getSpecialDates specialDates}.
@@ -1045,6 +1066,7 @@ object sapMSinglePlanningCalendarMod {
     
     /**
       * @SINCE 1.65
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:appointmentCreate appointmentCreate} to attached listeners.
       *
@@ -1058,6 +1080,7 @@ object sapMSinglePlanningCalendarMod {
     
     /**
       * @SINCE 1.64
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:appointmentDrop appointmentDrop} to attached listeners.
       *
@@ -1071,6 +1094,7 @@ object sapMSinglePlanningCalendarMod {
     
     /**
       * @SINCE 1.65
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:appointmentResize appointmentResize} to attached listeners.
       *
@@ -1083,6 +1107,8 @@ object sapMSinglePlanningCalendarMod {
     mParameters: AppointmentEndDate): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:appointmentSelect appointmentSelect} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1095,6 +1121,7 @@ object sapMSinglePlanningCalendarMod {
     
     /**
       * @SINCE 1.65
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:cellPress cellPress} to attached listeners.
       *
@@ -1107,6 +1134,8 @@ object sapMSinglePlanningCalendarMod {
     mParameters: EndDateStartDate): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:headerDateSelect headerDateSelect} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1115,9 +1144,11 @@ object sapMSinglePlanningCalendarMod {
     def fireHeaderDateSelect(/**
       * Parameters to pass along with the event
       */
-    mParameters: `21`): this.type = js.native
+    mParameters: `27`): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:moreLinkPress moreLinkPress} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1126,9 +1157,11 @@ object sapMSinglePlanningCalendarMod {
     def fireMoreLinkPress(/**
       * Parameters to pass along with the event
       */
-    mParameters: `21`): this.type = js.native
+    mParameters: `27`): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:startDateChange startDateChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1137,10 +1170,11 @@ object sapMSinglePlanningCalendarMod {
     def fireStartDateChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: `21`): this.type = js.native
+    mParameters: `27`): this.type = js.native
     
     /**
       * @SINCE 1.71.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:viewChange viewChange} to attached listeners.
       *
@@ -1170,6 +1204,30 @@ object sapMSinglePlanningCalendarMod {
       * If set, it will not make any effect.
       */
     def getAppointments(): js.Array[typings.openui5.sapUiUnifiedCalendarAppointmentMod.default] = js.native
+    
+    /**
+      * @SINCE 1.110.0
+      *
+      * Gets current value of property {@link #getCalendarWeekNumbering calendarWeekNumbering}.
+      *
+      * If set, the calendar week numbering is used for display. If not set, the calendar week numbering of the
+      * global configuration is used. Note: This property should not be used with firstDayOfWeek property.
+      *
+      * @returns Value of property `calendarWeekNumbering`
+      */
+    def getCalendarWeekNumbering(): CalendarWeekNumbering | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String) = js.native
+    
+    /**
+      * Gets current value of property {@link #getDateSelectionMode dateSelectionMode}.
+      *
+      * Determines whether more than one day will be selectable. **Note:** selecting more than one day is possible
+      * with a combination of `Ctrl + mouse click`
+      *
+      * Default value is `SingleSelect`.
+      *
+      * @returns Value of property `dateSelectionMode`
+      */
+    def getDateSelectionMode(): SinglePlanningCalendarSelectionMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SinglePlanningCalendarSelectionMode * / any */ String) = js.native
     
     /**
       * @SINCE 1.65
@@ -1242,7 +1300,8 @@ object sapMSinglePlanningCalendarMod {
       * If there is no valid value set, the default of the used locale is used.
       *
       * Note: This property will only have effect in Week view and Month view of the SinglePlanningCalendar,
-      * but it wouldn't have effect in WorkWeek view.
+      * but it wouldn't have effect in WorkWeek view. This property should not be used with the calendarWeekNumbering
+      * property.
       *
       * Default value is `-1`.
       *
@@ -1292,6 +1351,16 @@ object sapMSinglePlanningCalendarMod {
       * @returns All selected appointments
       */
     def getSelectedAppointments(): js.Array[typings.openui5.sapUiUnifiedCalendarAppointmentMod.default] = js.native
+    
+    /**
+      * Gets content of aggregation {@link #getSelectedDates selectedDates}.
+      *
+      * Dates or date ranges for selected dates.
+      *
+      * To set a single date (instead of a range), set only the `startDate` property of the {@link sap.ui.unified.DateRange}
+      * class.
+      */
+    def getSelectedDates(): js.Array[typings.openui5.sapUiUnifiedDateRangeMod.default] = js.native
     
     /**
       * ID of the element which is the current target of the association {@link #getSelectedView selectedView},
@@ -1410,6 +1479,19 @@ object sapMSinglePlanningCalendarMod {
     ): int = js.native
     
     /**
+      * Checks for the provided `sap.ui.unified.DateRange` in the aggregation {@link #getSelectedDates selectedDates}.
+      * and returns its index if found or -1 otherwise.
+      *
+      * @returns The index of the provided control in the aggregation if found, or -1 otherwise
+      */
+    def indexOfSelectedDate(
+      /**
+      * The selectedDate whose index is looked for
+      */
+    oSelectedDate: typings.openui5.sapUiUnifiedDateRangeMod.default
+    ): int = js.native
+    
+    /**
       * @SINCE 1.66
       *
       * Checks for the provided `sap.ui.unified.DateTypeRange` in the aggregation {@link #getSpecialDates specialDates}.
@@ -1468,6 +1550,24 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The `0`-based index the appointment should be inserted at; for a negative value of `iIndex`, the appointment
       * is inserted at position 0; for a value greater than the current size of the aggregation, the appointment
+      * is inserted at the last position
+      */
+    iIndex: int
+    ): this.type = js.native
+    
+    /**
+      * Inserts a selectedDate into the aggregation {@link #getSelectedDates selectedDates}.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def insertSelectedDate(
+      /**
+      * The selectedDate to insert; if empty, nothing is inserted
+      */
+    oSelectedDate: typings.openui5.sapUiUnifiedDateRangeMod.default,
+      /**
+      * The `0`-based index the selectedDate should be inserted at; for a negative value of `iIndex`, the selectedDate
+      * is inserted at position 0; for a value greater than the current size of the aggregation, the selectedDate
       * is inserted at the last position
       */
     iIndex: int
@@ -1550,6 +1650,15 @@ object sapMSinglePlanningCalendarMod {
     def removeAllAppointments(): js.Array[typings.openui5.sapUiUnifiedCalendarAppointmentMod.default] = js.native
     
     /**
+      * Removes all the controls from the aggregation {@link #getSelectedDates selectedDates}.
+      *
+      * Additionally, it unregisters them from the hosting UIArea.
+      *
+      * @returns An array of the removed elements (might be empty)
+      */
+    def removeAllSelectedDates(): js.Array[typings.openui5.sapUiUnifiedDateRangeMod.default] = js.native
+    
+    /**
       * @SINCE 1.66
       *
       * Removes all the controls from the aggregation {@link #getSpecialDates specialDates}.
@@ -1588,6 +1697,26 @@ object sapMSinglePlanningCalendarMod {
       */
     vAppointment: typings.openui5.sapUiUnifiedCalendarAppointmentMod.default
     ): typings.openui5.sapUiUnifiedCalendarAppointmentMod.default | Null = js.native
+    
+    def removeSelectedDate(/**
+      * The selectedDate to remove or its index or id
+      */
+    vSelectedDate: String): typings.openui5.sapUiUnifiedDateRangeMod.default | Null = js.native
+    /**
+      * Removes a selectedDate from the aggregation {@link #getSelectedDates selectedDates}.
+      *
+      * @returns The removed selectedDate or `null`
+      */
+    def removeSelectedDate(/**
+      * The selectedDate to remove or its index or id
+      */
+    vSelectedDate: int): typings.openui5.sapUiUnifiedDateRangeMod.default | Null = js.native
+    def removeSelectedDate(
+      /**
+      * The selectedDate to remove or its index or id
+      */
+    vSelectedDate: typings.openui5.sapUiUnifiedDateRangeMod.default
+    ): typings.openui5.sapUiUnifiedDateRangeMod.default | Null = js.native
     
     def removeSpecialDate(/**
       * The specialDate to remove or its index or id
@@ -1630,6 +1759,58 @@ object sapMSinglePlanningCalendarMod {
       */
     vView: typings.openui5.sapMSinglePlanningCalendarViewMod.default
     ): typings.openui5.sapMSinglePlanningCalendarViewMod.default | Null = js.native
+    
+    /**
+      * @SINCE 1.110.0
+      *
+      * Sets a new value for property {@link #getCalendarWeekNumbering calendarWeekNumbering}.
+      *
+      * If set, the calendar week numbering is used for display. If not set, the calendar week numbering of the
+      * global configuration is used. Note: This property should not be used with firstDayOfWeek property.
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setCalendarWeekNumbering(): this.type = js.native
+    def setCalendarWeekNumbering(
+      /**
+      * New value for property `calendarWeekNumbering`
+      */
+    sCalendarWeekNumbering: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String
+    ): this.type = js.native
+    def setCalendarWeekNumbering(
+      /**
+      * New value for property `calendarWeekNumbering`
+      */
+    sCalendarWeekNumbering: CalendarWeekNumbering
+    ): this.type = js.native
+    
+    /**
+      * Sets a new value for property {@link #getDateSelectionMode dateSelectionMode}.
+      *
+      * Determines whether more than one day will be selectable. **Note:** selecting more than one day is possible
+      * with a combination of `Ctrl + mouse click`
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * Default value is `SingleSelect`.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setDateSelectionMode(): this.type = js.native
+    def setDateSelectionMode(
+      /**
+      * New value for property `dateSelectionMode`
+      */
+    sDateSelectionMode: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SinglePlanningCalendarSelectionMode * / any */ String
+    ): this.type = js.native
+    def setDateSelectionMode(
+      /**
+      * New value for property `dateSelectionMode`
+      */
+    sDateSelectionMode: SinglePlanningCalendarSelectionMode
+    ): this.type = js.native
     
     /**
       * @SINCE 1.65
@@ -1728,7 +1909,8 @@ object sapMSinglePlanningCalendarMod {
       * If there is no valid value set, the default of the used locale is used.
       *
       * Note: This property will only have effect in Week view and Month view of the SinglePlanningCalendar,
-      * but it wouldn't have effect in WorkWeek view.
+      * but it wouldn't have effect in WorkWeek view. This property should not be used with the calendarWeekNumbering
+      * property.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -1824,19 +2006,14 @@ object sapMSinglePlanningCalendarMod {
     ): this.type = js.native
     
     /**
-      * Sets a new value for property {@link #getStartDate startDate}.
+      * Sets the start date of the grid.
       *
-      * Determines the start date of the grid, as a JavaScript date object. It is considered as a local date.
-      * The time part will be ignored. The current date is used as default.
-      *
-      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
-      *
-      * @returns Reference to `this` in order to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def setStartDate(/**
-      * New value for property `startDate`
+      * A JavaScript Date
       */
-    oStartDate: js.Object): this.type = js.native
+    oDate: js.Date): this.type = js.native
     
     /**
       * Sets a new value for property {@link #getStartHour startHour}.
@@ -1955,11 +2132,29 @@ object sapMSinglePlanningCalendarMod {
       ] = js.undefined
     
     /**
+      * @SINCE 1.110.0
+      *
+      * If set, the calendar week numbering is used for display. If not set, the calendar week numbering of the
+      * global configuration is used. Note: This property should not be used with firstDayOfWeek property.
+      */
+    var calendarWeekNumbering: js.UndefOr[
+        CalendarWeekNumbering | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String) | PropertyBindingInfo
+      ] = js.undefined
+    
+    /**
       * @SINCE 1.65
       *
       * Fired when a grid cell is pressed.
       */
     var cellPress: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    
+    /**
+      * Determines whether more than one day will be selectable. **Note:** selecting more than one day is possible
+      * with a combination of `Ctrl + mouse click`
+      */
+    var dateSelectionMode: js.UndefOr[
+        SinglePlanningCalendarSelectionMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SinglePlanningCalendarSelectionMode * / any */ String) | PropertyBindingInfo
+      ] = js.undefined
     
     /**
       * @SINCE 1.65
@@ -2012,7 +2207,8 @@ object sapMSinglePlanningCalendarMod {
       * If there is no valid value set, the default of the used locale is used.
       *
       * Note: This property will only have effect in Week view and Month view of the SinglePlanningCalendar,
-      * but it wouldn't have effect in WorkWeek view.
+      * but it wouldn't have effect in WorkWeek view. This property should not be used with the calendarWeekNumbering
+      * property.
       */
     var firstDayOfWeek: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
@@ -2053,6 +2249,16 @@ object sapMSinglePlanningCalendarMod {
       */
     var scaleFactor: js.UndefOr[
         float | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
+      ] = js.undefined
+    
+    /**
+      * Dates or date ranges for selected dates.
+      *
+      * To set a single date (instead of a range), set only the `startDate` property of the {@link sap.ui.unified.DateRange}
+      * class.
+      */
+    var selectedDates: js.UndefOr[
+        js.Array[typings.openui5.sapUiUnifiedDateRangeMod.default] | typings.openui5.sapUiUnifiedDateRangeMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)
       ] = js.undefined
     
     /**
@@ -2168,9 +2374,21 @@ object sapMSinglePlanningCalendarMod {
       
       inline def setAppointmentsVarargs(value: typings.openui5.sapUiUnifiedCalendarAppointmentMod.default*): Self = StObject.set(x, "appointments", js.Array(value*))
       
+      inline def setCalendarWeekNumbering(
+        value: CalendarWeekNumbering | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String) | PropertyBindingInfo
+      ): Self = StObject.set(x, "calendarWeekNumbering", value.asInstanceOf[js.Any])
+      
+      inline def setCalendarWeekNumberingUndefined: Self = StObject.set(x, "calendarWeekNumbering", js.undefined)
+      
       inline def setCellPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "cellPress", js.Any.fromFunction1(value))
       
       inline def setCellPressUndefined: Self = StObject.set(x, "cellPress", js.undefined)
+      
+      inline def setDateSelectionMode(
+        value: SinglePlanningCalendarSelectionMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SinglePlanningCalendarSelectionMode * / any */ String) | PropertyBindingInfo
+      ): Self = StObject.set(x, "dateSelectionMode", value.asInstanceOf[js.Any])
+      
+      inline def setDateSelectionModeUndefined: Self = StObject.set(x, "dateSelectionMode", js.undefined)
       
       inline def setEnableAppointmentsCreate(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "enableAppointmentsCreate", value.asInstanceOf[js.Any])
       
@@ -2211,6 +2429,14 @@ object sapMSinglePlanningCalendarMod {
       inline def setScaleFactor(value: float | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
       
       inline def setScaleFactorUndefined: Self = StObject.set(x, "scaleFactor", js.undefined)
+      
+      inline def setSelectedDates(
+        value: js.Array[typings.openui5.sapUiUnifiedDateRangeMod.default] | typings.openui5.sapUiUnifiedDateRangeMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)
+      ): Self = StObject.set(x, "selectedDates", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedDatesUndefined: Self = StObject.set(x, "selectedDates", js.undefined)
+      
+      inline def setSelectedDatesVarargs(value: typings.openui5.sapUiUnifiedDateRangeMod.default*): Self = StObject.set(x, "selectedDates", js.Array(value*))
       
       inline def setSelectedView(value: typings.openui5.sapMSinglePlanningCalendarViewMod.default | String): Self = StObject.set(x, "selectedView", value.asInstanceOf[js.Any])
       

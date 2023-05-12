@@ -4,10 +4,7 @@ import typings.fluentuiMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
 import typings.fluentuiUtilities.libCustomizationsCustomizationsMod.ICustomizations
 import typings.react.mod.ComponentType
 import typings.react.mod.ElementType
-import typings.react.mod.ReactElement
 import typings.react.mod.RefObject
-import typings.reactTestRenderer.mod.ReactTestRenderer
-import typings.reactTestRenderer.mod.TestRendererOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -122,13 +119,6 @@ object anon {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     }
-  }
-  
-  @js.native
-  trait FnCall extends StObject {
-    
-    def apply(nextElement: ReactElement): ReactTestRenderer = js.native
-    def apply(nextElement: ReactElement, options: TestRendererOptions): ReactTestRenderer = js.native
   }
   
   trait Focus extends StObject {

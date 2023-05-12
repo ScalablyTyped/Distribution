@@ -6,9 +6,9 @@ import typings.asn1js.mod.Enumerated
 import typings.asn1js.mod.GeneralizedTime
 import typings.asn1js.mod.Integer
 import typings.asn1js.mod.ObjectIdentifier
-import typings.asn1js.mod.OctetString
 import typings.asn1js.mod.UTCTime
 import typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnPropTypes
+import typings.peculiarAsn1Schema.buildTypesTypesIndexMod.OctetString
 import typings.peculiarAsn1Schema.buildTypesTypesMod.AnyConverterType
 import typings.peculiarAsn1Schema.buildTypesTypesMod.IAsnConverter
 import typings.peculiarAsn1Schema.buildTypesTypesMod.IntegerConverterType
@@ -41,6 +41,10 @@ object buildTypesConvertersMod {
   @JSImport("@peculiar/asn1-schema/build/types/converters", "AsnCharacterStringConverter")
   @js.native
   val AsnCharacterStringConverter: IAsnConverter[String, AsnType] = js.native
+  
+  @JSImport("@peculiar/asn1-schema/build/types/converters", "AsnConstructedOctetStringConverter")
+  @js.native
+  val AsnConstructedOctetStringConverter: IAsnConverter[OctetString, typings.asn1js.mod.OctetString] = js.native
   
   @JSImport("@peculiar/asn1-schema/build/types/converters", "AsnEnumeratedConverter")
   @js.native
@@ -88,7 +92,7 @@ object buildTypesConvertersMod {
   
   @JSImport("@peculiar/asn1-schema/build/types/converters", "AsnOctetStringConverter")
   @js.native
-  val AsnOctetStringConverter: IAsnConverter[js.typedarray.ArrayBuffer, OctetString] = js.native
+  val AsnOctetStringConverter: IAsnConverter[js.typedarray.ArrayBuffer, typings.asn1js.mod.OctetString] = js.native
   
   @JSImport("@peculiar/asn1-schema/build/types/converters", "AsnPrintableStringConverter")
   @js.native

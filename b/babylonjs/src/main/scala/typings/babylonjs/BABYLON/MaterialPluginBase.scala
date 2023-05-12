@@ -1,7 +1,7 @@
 package typings.babylonjs.BABYLON
 
 import typings.babylonjs.anon.Default
-import typings.babylonjs.anon.Ubo
+import typings.babylonjs.anon.Vertex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -112,7 +112,7 @@ trait MaterialPluginBase extends StObject {
     * Gets the description of the uniforms to add to the ubo (if engine supports ubos) or to inject directly in the vertex/fragment shaders (if engine does not support ubos)
     * @returns the description of the uniforms
     */
-  def getUniforms(): Ubo = js.native
+  def getUniforms(): Vertex = js.native
   
   /**
     * Binds the material data (this function is called even if mustRebind() returns false)

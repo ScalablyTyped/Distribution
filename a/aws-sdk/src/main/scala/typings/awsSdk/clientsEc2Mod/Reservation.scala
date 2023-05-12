@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Reservation extends StObject {
   
   /**
-    * [EC2-Classic only] The security groups.
+    * Not supported.
     */
   var Groups: js.UndefOr[GroupIdentifierList] = js.undefined
   

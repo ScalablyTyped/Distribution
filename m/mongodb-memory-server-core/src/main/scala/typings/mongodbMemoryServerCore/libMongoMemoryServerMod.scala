@@ -15,7 +15,6 @@ import typings.mongodbMemoryServerCore.mongodbMemoryServerCoreStrings.`SCRAM-SHA
 import typings.node.childProcessMod.SpawnOptions
 import typings.node.eventsMod.EventEmitter
 import typings.std.NonNullable
-import typings.tmp.mod.DirResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +24,7 @@ object libMongoMemoryServerMod {
   @JSImport("mongodb-memory-server-core/lib/MongoMemoryServer", JSImport.Default)
   @js.native
   /**
-    * Create an Mongo-Memory-Sever Instance
+    * Create a Mongo-Memory-Sever Instance
     * @param opts Mongo-Memory-Sever Options
     */
   open class default () extends MongoMemoryServer {
@@ -39,7 +38,7 @@ object libMongoMemoryServerMod {
     val ^ : js.Any = js.native
     
     /**
-      * Create an Mongo-Memory-Sever Instance that can be awaited
+      * Create a Mongo-Memory-Sever Instance that can be awaited
       * @param opts Mongo-Memory-Sever Options
       */
     inline def create(): js.Promise[MongoMemoryServer] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Promise[MongoMemoryServer]]
@@ -51,7 +50,7 @@ object libMongoMemoryServerMod {
   - typings.mongodbMemoryServerCore.libUtilUtilsMod.ManagerAdvanced because Inheritance from two classes. Inlined getUri, getUri, getUri, cleanup, cleanup */ @JSImport("mongodb-memory-server-core/lib/MongoMemoryServer", "MongoMemoryServer")
   @js.native
   /**
-    * Create an Mongo-Memory-Sever Instance
+    * Create a Mongo-Memory-Sever Instance
     * @param opts Mongo-Memory-Sever Options
     */
   open class MongoMemoryServer () extends EventEmitter {
@@ -131,8 +130,8 @@ object libMongoMemoryServerMod {
     def ensureInstance(): js.Promise[MongoInstanceData] = js.native
     
     /**
-      * Find an new unlocked port
-      * @param port An User defined default port
+      * Find a new unlocked port
+      * @param port A User defined default port
       */
     /* protected */ def getNewPort(): js.Promise[Double] = js.native
     /* protected */ def getNewPort(port: Double): js.Promise[Double] = js.native
@@ -145,11 +144,11 @@ object libMongoMemoryServerMod {
     
     /**
       * Generate the Connection string used by mongodb
-      * @param otherDb add an database into the uri (in mongodb its the auth database, in mongoose its the default database for models)
+      * @param otherDb add a database into the uri (in mongodb its the auth database, in mongoose its the default database for models)
       * @param otherIp change the ip in the generated uri, default will otherwise always be "127.0.0.1"
       * @throws if state is not "running" (or "starting")
-      * @throws if an server doesnt have "instanceInfo.port" defined
-      * @returns an valid mongo URI, by the definition of https://docs.mongodb.com/manual/reference/connection-string/
+      * @throws if a server doesnt have "instanceInfo.port" defined
+      * @returns a valid mongo URI, by the definition of https://docs.mongodb.com/manual/reference/connection-string/
       */
     def getUri(): String = js.native
     def getUri(otherDB: Boolean): String = js.native
@@ -213,7 +212,7 @@ object libMongoMemoryServerMod {
     val ^ : js.Any = js.native
     
     /**
-      * Create an Mongo-Memory-Sever Instance that can be awaited
+      * Create a Mongo-Memory-Sever Instance that can be awaited
       * @param opts Mongo-Memory-Sever Options
       */
     inline def create(): js.Promise[MongoMemoryServer] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Promise[MongoMemoryServer]]
@@ -578,7 +577,7 @@ object libMongoMemoryServerMod {
     
     var storageEngine: NonNullable[js.UndefOr[StorageEngine]]
     
-    var tmpDir: js.UndefOr[DirResult] = js.undefined
+    var tmpDir: js.UndefOr[String] = js.undefined
   }
   object StartupInstanceData {
     
@@ -622,7 +621,7 @@ object libMongoMemoryServerMod {
       
       inline def setStorageEngineUndefined: Self = StObject.set(x, "storageEngine", js.undefined)
       
-      inline def setTmpDir(value: DirResult): Self = StObject.set(x, "tmpDir", value.asInstanceOf[js.Any])
+      inline def setTmpDir(value: String): Self = StObject.set(x, "tmpDir", value.asInstanceOf[js.Any])
       
       inline def setTmpDirUndefined: Self = StObject.set(x, "tmpDir", js.undefined)
     }

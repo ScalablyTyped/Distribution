@@ -15,7 +15,7 @@ object componentsRadioMod {
     def this(props: RadioButtonProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: RadioButtonProps, context: Any) = this()
   }
@@ -27,7 +27,7 @@ object componentsRadioMod {
     def this(props: RadioButtonProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: RadioButtonProps, context: Any) = this()
   }
@@ -39,7 +39,7 @@ object componentsRadioMod {
     def this(props: RadioGroupProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: RadioGroupProps, context: Any) = this()
   }

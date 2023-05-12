@@ -11,6 +11,8 @@ import typings.mendixmodelsdk.srcGenImportmappingsMod.importmappings.ImportMappi
 import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MicroflowBase
 import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MicroflowParameterBase
 import typings.mendixmodelsdk.srcGenPagesMod.pages.PageParameter
+import typings.mendixmodelsdk.srcGenPagesMod.pages.SnippetParameter
+import typings.mendixmodelsdk.srcGenRestMod.rest.OperationParameter
 import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
@@ -29,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.srcSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.srcSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IDataType because Already inherited
-- typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IEntityType because var conflicts: containerAsAppServiceAction, containerAsAppServiceActionParameter, containerAsConstant, containerAsDataSetParameter, containerAsDocumentTemplateParameter, containerAsImportMapping, containerAsMicroflowBase, containerAsMicroflowParameterBase, containerAsPageParameter, id, isLoaded, model, structureTypeName, unit. Inlined entity, entityQualifiedName */ @JSImport("mendixmodelsdk/src/gen/datatypes", "datatypes.EntityType")
+- typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IEntityType because var conflicts: containerAsAppServiceAction, containerAsAppServiceActionParameter, containerAsConstant, containerAsDataSetParameter, containerAsDocumentTemplateParameter, containerAsImportMapping, containerAsMicroflowBase, containerAsMicroflowParameterBase, containerAsOperationParameter, containerAsPageParameter, containerAsSnippetParameter, id, isLoaded, model, structureTypeName, unit. Inlined entity, entityQualifiedName */ @JSImport("mendixmodelsdk/src/gen/datatypes", "datatypes.EntityType")
 @js.native
 open class EntityType protected () extends DataType {
   def this(
@@ -65,8 +67,14 @@ open class EntityType protected () extends DataType {
   @JSName("containerAsMicroflowParameterBase")
   def containerAsMicroflowParameterBase_MEntityType: MicroflowParameterBase = js.native
   
+  @JSName("containerAsOperationParameter")
+  def containerAsOperationParameter_MEntityType: OperationParameter = js.native
+  
   @JSName("containerAsPageParameter")
   def containerAsPageParameter_MEntityType: PageParameter = js.native
+  
+  @JSName("containerAsSnippetParameter")
+  def containerAsSnippetParameter_MEntityType: SnippetParameter = js.native
   
   def entity: IEntity = js.native
   

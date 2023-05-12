@@ -121,4 +121,19 @@ object distTypesRequestMod {
       inline def setPerPageUndefined: Self = StObject.set(x, "perPage", js.undefined)
     }
   }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.unsplashJs.unsplashJsStrings.mixed
+    - typings.unsplashJs.unsplashJsStrings.only
+    - typings.unsplashJs.unsplashJsStrings.none
+  */
+  trait Plus extends StObject
+  object Plus {
+    
+    inline def mixed: typings.unsplashJs.unsplashJsStrings.mixed = "mixed".asInstanceOf[typings.unsplashJs.unsplashJsStrings.mixed]
+    
+    inline def none: typings.unsplashJs.unsplashJsStrings.none = "none".asInstanceOf[typings.unsplashJs.unsplashJsStrings.none]
+    
+    inline def only: typings.unsplashJs.unsplashJsStrings.only = "only".asInstanceOf[typings.unsplashJs.unsplashJsStrings.only]
+  }
 }

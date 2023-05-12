@@ -16,7 +16,7 @@ open class ElementComponentSystem protected ()
   /**
     * Create a new ComponentSystem instance.
     *
-    * @param {AppBase} app - The application managing this system.
+    * @param {import('../app-base.js').AppBase} app - The application managing this system.
     */
   def this(app: typings.playcanvas.mod.AppBase) = this()
 }

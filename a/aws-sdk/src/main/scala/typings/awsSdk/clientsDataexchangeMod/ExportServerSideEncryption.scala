@@ -9,7 +9,7 @@ trait ExportServerSideEncryption extends StObject {
   /**
     * The Amazon Resource Name (ARN) of the AWS KMS key you want to use to encrypt the Amazon S3 objects. This parameter is required if you choose aws:kms as an encryption type.
     */
-  var KmsKeyArn: js.UndefOr[string] = js.undefined
+  var KmsKeyArn: js.UndefOr[_String] = js.undefined
   
   /**
     * The type of server side encryption used for encrypting the objects in Amazon S3.
@@ -26,7 +26,7 @@ object ExportServerSideEncryption {
   @scala.inline
   implicit open class MutableBuilder[Self <: ExportServerSideEncryption] (val x: Self) extends AnyVal {
     
-    inline def setKmsKeyArn(value: string): Self = StObject.set(x, "KmsKeyArn", value.asInstanceOf[js.Any])
+    inline def setKmsKeyArn(value: _String): Self = StObject.set(x, "KmsKeyArn", value.asInstanceOf[js.Any])
     
     inline def setKmsKeyArnUndefined: Self = StObject.set(x, "KmsKeyArn", js.undefined)
     

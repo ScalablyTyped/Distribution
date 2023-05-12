@@ -7,7 +7,7 @@ import typings.opentelemetryApi.buildSrcTraceSpanContextMod.SpanContext
 import typings.opentelemetryApi.buildSrcTraceSpanKindMod.SpanKind
 import typings.opentelemetryApi.buildSrcTraceStatusMod.SpanStatus
 import typings.opentelemetryCore.buildSrcCommonTypesMod.InstrumentationLibrary
-import typings.opentelemetryResources.mod.Resource
+import typings.opentelemetryResources.buildSrcIresourceMod.IResource
 import typings.opentelemetrySdkTraceBase.buildSrcTimedEventMod.TimedEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,6 +18,12 @@ object buildSrcExportReadableSpanMod {
   trait ReadableSpan extends StObject {
     
     val attributes: SpanAttributes
+    
+    val droppedAttributesCount: Double
+    
+    val droppedEventsCount: Double
+    
+    val droppedLinksCount: Double
     
     val duration: HrTime
     
@@ -37,7 +43,7 @@ object buildSrcExportReadableSpanMod {
     
     val parentSpanId: js.UndefOr[String] = js.undefined
     
-    val resource: Resource
+    val resource: IResource
     
     def spanContext(): SpanContext
     
@@ -49,6 +55,9 @@ object buildSrcExportReadableSpanMod {
     
     inline def apply(
       attributes: SpanAttributes,
+      droppedAttributesCount: Double,
+      droppedEventsCount: Double,
+      droppedLinksCount: Double,
       duration: HrTime,
       endTime: HrTime,
       ended: Boolean,
@@ -57,12 +66,12 @@ object buildSrcExportReadableSpanMod {
       kind: SpanKind,
       links: js.Array[Link],
       name: String,
-      resource: Resource,
+      resource: IResource,
       spanContext: () => SpanContext,
       startTime: HrTime,
       status: SpanStatus
     ): ReadableSpan = {
-      val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], endTime = endTime.asInstanceOf[js.Any], ended = ended.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], instrumentationLibrary = instrumentationLibrary.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], spanContext = js.Any.fromFunction0(spanContext), startTime = startTime.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], droppedAttributesCount = droppedAttributesCount.asInstanceOf[js.Any], droppedEventsCount = droppedEventsCount.asInstanceOf[js.Any], droppedLinksCount = droppedLinksCount.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], endTime = endTime.asInstanceOf[js.Any], ended = ended.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], instrumentationLibrary = instrumentationLibrary.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], spanContext = js.Any.fromFunction0(spanContext), startTime = startTime.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReadableSpan]
     }
     
@@ -70,6 +79,12 @@ object buildSrcExportReadableSpanMod {
     implicit open class MutableBuilder[Self <: ReadableSpan] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: SpanAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      
+      inline def setDroppedAttributesCount(value: Double): Self = StObject.set(x, "droppedAttributesCount", value.asInstanceOf[js.Any])
+      
+      inline def setDroppedEventsCount(value: Double): Self = StObject.set(x, "droppedEventsCount", value.asInstanceOf[js.Any])
+      
+      inline def setDroppedLinksCount(value: Double): Self = StObject.set(x, "droppedLinksCount", value.asInstanceOf[js.Any])
       
       inline def setDuration(value: HrTime): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -95,7 +110,7 @@ object buildSrcExportReadableSpanMod {
       
       inline def setParentSpanIdUndefined: Self = StObject.set(x, "parentSpanId", js.undefined)
       
-      inline def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: IResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setSpanContext(value: () => SpanContext): Self = StObject.set(x, "spanContext", js.Any.fromFunction0(value))
       

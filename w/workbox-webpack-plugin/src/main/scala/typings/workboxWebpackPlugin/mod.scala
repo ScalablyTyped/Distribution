@@ -1,837 +1,152 @@
 package typings.workboxWebpackPlugin
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.workboxWebpackPlugin.anon.ChannelName
-import typings.workboxWebpackPlugin.anon.Headers
-import typings.workboxWebpackPlugin.anon.Integrity
-import typings.workboxWebpackPlugin.anon.Manifest
-import typings.workboxWebpackPlugin.anon.MaxAgeSeconds
-import typings.workboxWebpackPlugin.anon.Name
-import typings.workboxWebpackPlugin.workboxWebpackPluginStrings.production
+import org.scalablytyped.runtime.Instantiable1
+import typings.workboxBuild.buildTypesMod.WebpackInjectManifestOptions
+import typings.workboxWebpackPlugin.buildGenerateSwMod.GenerateSWConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  object default {
+    
+    @JSImport("workbox-webpack-plugin", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("workbox-webpack-plugin", "default.GenerateSW")
+    @js.native
+    def GenerateSW: Instantiable1[
+        /* config */ js.UndefOr[GenerateSWConfig], 
+        typings.workboxWebpackPlugin.buildGenerateSwMod.GenerateSW
+      ] = js.native
+    
+    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+    @JSImport("workbox-webpack-plugin", "default.GenerateSW")
+    @js.native
+    /**
+      * Creates an instance of GenerateSW.
+      */
+    open class GenerateSWCls ()
+      extends typings.workboxWebpackPlugin.buildGenerateSwMod.GenerateSW {
+      def this(config: GenerateSWConfig) = this()
+    }
+    
+    inline def GenerateSW_=(
+      x: Instantiable1[
+          /* config */ js.UndefOr[GenerateSWConfig], 
+          typings.workboxWebpackPlugin.buildGenerateSwMod.GenerateSW
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GenerateSW")(x.asInstanceOf[js.Any])
+    
+    @JSImport("workbox-webpack-plugin", "default.InjectManifest")
+    @js.native
+    def InjectManifest: Instantiable1[
+        /* config */ WebpackInjectManifestOptions, 
+        typings.workboxWebpackPlugin.buildInjectManifestMod.InjectManifest
+      ] = js.native
+    
+    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+    @JSImport("workbox-webpack-plugin", "default.InjectManifest")
+    @js.native
+    open class InjectManifestCls protected ()
+      extends typings.workboxWebpackPlugin.buildInjectManifestMod.InjectManifest {
+      /**
+        * Creates an instance of InjectManifest.
+        */
+      def this(config: WebpackInjectManifestOptions) = this()
+    }
+    
+    inline def InjectManifest_=(
+      x: Instantiable1[
+          /* config */ WebpackInjectManifestOptions, 
+          typings.workboxWebpackPlugin.buildInjectManifestMod.InjectManifest
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InjectManifest")(x.asInstanceOf[js.Any])
+  }
+  
+  /**
+    * This class supports creating a new, ready-to-use service worker file as
+    * part of the webpack compilation process.
+    *
+    * Use an instance of `GenerateSW` in the
+    * [`plugins` array](https://webpack.js.org/concepts/plugins/#usage) of a
+    * webpack config.
+    *
+    * ```
+    * // The following lists some common options; see the rest of the documentation
+    * // for the full set of options and defaults.
+    * new GenerateSW({
+    *   exclude: [/.../, '...'],
+    *   maximumFileSizeToCacheInBytes: ...,
+    *   navigateFallback: '...',
+    *   runtimeCaching: [{
+    *     // Routing via a matchCallback function:
+    *     urlPattern: ({request, url}) => ...,
+    *     handler: '...',
+    *     options: {
+    *       cacheName: '...',
+    *       expiration: {
+    *         maxEntries: ...,
+    *       },
+    *     },
+    *   }, {
+    *     // Routing via a RegExp:
+    *     urlPattern: new RegExp('...'),
+    *     handler: '...',
+    *     options: {
+    *       cacheName: '...',
+    *       plugins: [..., ...],
+    *     },
+    *   }],
+    *   skipWaiting: ...,
+    * });
+    * ```
+    *
+    * @memberof module:workbox-webpack-plugin
+    */
   @JSImport("workbox-webpack-plugin", "GenerateSW")
   @js.native
-  open class GenerateSW () extends StObject {
-    def this(opts: GenerateSWOptions) = this()
-    
-    @JSName("apply")
-    def apply(args: Any*): Unit = js.native
+  /**
+    * Creates an instance of GenerateSW.
+    */
+  open class GenerateSW ()
+    extends typings.workboxWebpackPlugin.buildGenerateSwMod.GenerateSW {
+    def this(config: GenerateSWConfig) = this()
   }
   
+  /**
+    * This class supports compiling a service worker file provided via `swSrc`,
+    * and injecting into that service worker a list of URLs and revision
+    * information for precaching based on the webpack asset pipeline.
+    *
+    * Use an instance of `InjectManifest` in the
+    * [`plugins` array](https://webpack.js.org/concepts/plugins/#usage) of a
+    * webpack config.
+    *
+    * In addition to injecting the manifest, this plugin will perform a compilation
+    * of the `swSrc` file, using the options from the main webpack configuration.
+    *
+    * ```
+    * // The following lists some common options; see the rest of the documentation
+    * // for the full set of options and defaults.
+    * new InjectManifest({
+    *   exclude: [/.../, '...'],
+    *   maximumFileSizeToCacheInBytes: ...,
+    *   swSrc: '...',
+    * });
+    * ```
+    *
+    * @memberof module:workbox-webpack-plugin
+    */
   @JSImport("workbox-webpack-plugin", "InjectManifest")
   @js.native
-  open class InjectManifest () extends StObject {
-    def this(opts: InjectManifestOptions) = this()
-    
-    @JSName("apply")
-    def apply(args: Any*): Unit = js.native
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.workboxWebpackPlugin.workboxWebpackPluginStrings.CacheFirst
-    - typings.workboxWebpackPlugin.workboxWebpackPluginStrings.CacheOnly
-    - typings.workboxWebpackPlugin.workboxWebpackPluginStrings.NetworkFirst
-    - typings.workboxWebpackPlugin.workboxWebpackPluginStrings.NetworkOnly
-    - typings.workboxWebpackPlugin.workboxWebpackPluginStrings.StaleWhileRevalidate
-  */
-  trait CacheStrategy extends StObject
-  object CacheStrategy {
-    
-    inline def CacheFirst: typings.workboxWebpackPlugin.workboxWebpackPluginStrings.CacheFirst = "CacheFirst".asInstanceOf[typings.workboxWebpackPlugin.workboxWebpackPluginStrings.CacheFirst]
-    
-    inline def CacheOnly: typings.workboxWebpackPlugin.workboxWebpackPluginStrings.CacheOnly = "CacheOnly".asInstanceOf[typings.workboxWebpackPlugin.workboxWebpackPluginStrings.CacheOnly]
-    
-    inline def NetworkFirst: typings.workboxWebpackPlugin.workboxWebpackPluginStrings.NetworkFirst = "NetworkFirst".asInstanceOf[typings.workboxWebpackPlugin.workboxWebpackPluginStrings.NetworkFirst]
-    
-    inline def NetworkOnly: typings.workboxWebpackPlugin.workboxWebpackPluginStrings.NetworkOnly = "NetworkOnly".asInstanceOf[typings.workboxWebpackPlugin.workboxWebpackPluginStrings.NetworkOnly]
-    
-    inline def StaleWhileRevalidate: typings.workboxWebpackPlugin.workboxWebpackPluginStrings.StaleWhileRevalidate = "StaleWhileRevalidate".asInstanceOf[typings.workboxWebpackPlugin.workboxWebpackPluginStrings.StaleWhileRevalidate]
-  }
-  
-  trait CommonOptions extends StObject {
-    
+  open class InjectManifest protected ()
+    extends typings.workboxWebpackPlugin.buildInjectManifestMod.InjectManifest {
     /**
-      * A list of entries to be precached, in addition to any entries that are generated as part of the build configuration.
+      * Creates an instance of InjectManifest.
       */
-    var additionalManifestEntries: js.UndefOr[js.Array[Integrity | String]] = js.undefined
-    
-    /**
-      * By default, Workbox will precache assets regardless of which chunk the asset is part of.
-      *
-      * If you would like to override this behavior via a whitelist, specify one or more chunk names. Only assets belonging to those chunks will be precached;
-      * any assets belonging to another chunk or without a chunk association will be skipped.
-      *
-      * @default []
-      * @example chunks: ['chunk-name-1', 'chunk-name-2']
-      */
-    var chunks: js.UndefOr[js.Array[String]] = js.undefined
-    
-    /**
-      * Assets that match this regex will be assumed to be uniquely versioned via their URL, and exempted from the normal HTTP cache-busting that's done when populating the precache.
-      *
-      * While not required, it's recommended that if your existing build process already inserts a `[hash]` value into each filename, you provide a RegExp that will detect those values,
-      * as it will reduce the amount of bandwidth consumed when precaching.
-      *
-      * @default null
-      * @example dontCacheBustURLsMatching: /\.\w{8}\./
-      */
-    var dontCacheBustURLsMatching: js.UndefOr[js.RegExp | Null] = js.undefined
-    
-    /**
-      * This allows you to specifically omit assets matching any of the provided criteria from being included in the precache manifest. It provides a filename-based approach to filtering.
-      *
-      * This filtering takes place after any chunk-based filtering is applied.
-      *
-      * @default [/\.map$/, /^manifest.*\.js(?:on)?$/]
-      * @example exclude: [/\.jpg$/, /\.png$/]
-      */
-    var exclude: js.UndefOr[js.Array[String | js.RegExp]] = js.undefined
-    
-    /**
-      * By default, Workbox will precache all assets generated by the webpack compilation, regardless of which chunk the asset is part of.
-      *
-      * If you would like to override this behavior via a blacklist, specify one or more chunk names. Any assets belonging to those chunks will be skipped.
-      *
-      * @default []
-      * @example excludeChunks: ['chunk-name-1', 'chunk-name-2']
-      */
-    var excludeChunks: js.UndefOr[js.Array[String]] = js.undefined
-    
-    /**
-      * The base directory you wish to match `globPatterns` against, relative to the current working directory.
-      *
-      * If you do set this, make sure to also configure `globPatterns`.
-      *
-      * @default undefined
-      * @example globDirectory: '.'
-      */
-    var globDirectory: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Determines whether or not symlinks are followed when generating the precache manifest.
-      *
-      * For more information, see the definition of `follow` in the `glob` [documentation](https://github.com/isaacs/node-glob#options).
-      *
-      * @default true
-      * @example globFollow: false
-      */
-    var globFollow: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * A set of patterns matching files to always exclude when generating the precache manifest.
-      *
-      * For more information, see the definition of `ignore` in the `glob` [documentation](https://github.com/isaacs/node-glob#options).
-      *
-      * @default ['node_modules/ **\/ *']
-      * @example globIgnores: ['**\/ignored.html']
-      */
-    var globIgnores: js.UndefOr[js.Array[String]] = js.undefined
-    
-    /**
-      * Files matching against any of these patterns will be included in the precache manifest.
-      *
-      * For more information, see the [glob primer](https://github.com/isaacs/node-glob#glob-primer).
-      *
-      * Note: Setting `globPatterns` is often unnecessary when using the `workbox-webpack-plugin`, which will automatically precache files that are part of the webpack build pipeline by default.
-      * When using the webpack plugin, only set it when you need to cache
-      * [non-webpack assets](https://developers.google.com/web/tools/workbox/modules/workbox-webpack-plugin#cache_additional_non-webpack_assets).
-      *
-      * @default []
-      * @example globPatterns: ['dist/ *.{js,png,html,css}']
-      */
-    var globPatterns: js.UndefOr[js.Array[String]] = js.undefined
-    
-    /**
-      * If `true`, an error reading a directory when generating a precache manifest will cause the build to fail. If `false`, the problematic directory will be skipped.
-      *
-      * For more information, see the definition of `strict` in the `glob` [documentation](https://github.com/isaacs/node-glob#options).
-      *
-      * @default true
-      * @example globStrict: false
-      */
-    var globStrict: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * One or more names of webpack chunks.
-      * The content of those chunks will be included in the generated service worker, via a call to importScripts()
-      */
-    var importScriptsViaChunks: js.UndefOr[js.Array[String]] = js.undefined
-    
-    /**
-      * Workbox creates assets as part of your webpack build process: a precache manifest file, and potentially a local copy of the Workbox libraries (if `importWorkboxFrom` is set to `'local'`).
-      *
-      * These assets will, by default, be created at the root of your webpack build directory, i.e. `output.path`. You can set the `importsDirectory` option if you want these assets to be created in
-      * a subdirectory of `output.path` instead of at the top-level.
-      *
-      * Note: This option does not effect where the main service worker JavaScript file is created. That is determined by the `swDest` option.
-      *
-      * @default ''
-      * @example importsDirectory: 'wb-assets'
-      */
-    var importsDirectory: js.UndefOr[String] = js.undefined
-    
-    /**
-      * This allows you to only include assets matching any of the provided criteria when creating the precache manifest. It provides a filename-based approach to filtering.
-      *
-      * This filtering takes place after any chunk-based filtering is applied.
-      *
-      * In keeping with [webpack convention](https://webpack.js.org/configuration/module/#condition), the option `test` can be used as an alias/alternative to `include`.
-      *
-      * @default []
-      * @example include: [/\.html$/, /\.js$/]
-      * @alias test
-      */
-    var include: js.UndefOr[js.Array[String | js.RegExp]] = js.undefined
-    
-    /**
-      * One or more [`ManifestTransform`](https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-build#.ManifestTransform)
-      * functions, which will be applied sequentially against the generated manifest.
-      *
-      * If `modifyURLPrefix` or `dontCacheBustURLsMatching` are also specified, their corresponding transformations will be applied first.
-      */
-    var manifestTransforms: js.UndefOr[
-        (js.Array[js.Function1[/* originalManifest */ js.Array[ManifestEntry], Manifest]]) | Null
-      ] = js.undefined
-    
-    /**
-      * This value can be used to determine the maximum size of files that will be precached. This prevents you from inadvertantly precaching very large files that might have
-      * accidentally matched one of your patterns.
-      *
-      * @default 2097152
-      * @example maximumFileSizeToCacheInBytes: 4 * 1024 * 1024
-      */
-    var maximumFileSizeToCacheInBytes: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * If set to 'production', then an optimized service worker bundle that excludes debugging info will be produced.
-      * If not explicitly configured here, the mode value configured in the current webpack compilation will be used
-      */
-    var mode: js.UndefOr[production | String] = js.undefined
-    
-    /**
-      * A mapping of prefixes that, if present in an entry in the precache manifest, will be replaced with the corresponding value.
-      *
-      * This can be used to, for example, remove or add a path prefix from a manifest entry if your web hosting setup doesn't match your local filesystem setup.
-      *
-      * As an alternative with more flexibility, you can use the `manifestTransforms` option and provide a function that modifies the entries in the manifest using whatever logic you provide.
-      *
-      * @default null
-      * @example modifyURLPrefix: { '/dist': '' }
-      */
-    var modifyURLPrefix: js.UndefOr[StringDictionary[String] | Null] = js.undefined
-    
-    /**
-      * Workbox automatically creates a JavaScript file that contains information about URLs that need to be precached. By default, this file is called `precache-manifest.[manifestHash].js`,
-      * where `[manifestHash]` is automatically replaced by a unique value that identifies the contents of the file.
-      *
-      * `precacheManifestFilename` can be used to override this default filename. You must include the string `[manifestHash]` somewhere as part of the filename.
-      *
-      * If you'd like to change the output directory to which the precache manifest is written, you can configure the `importsDirectory` option.
-      *
-      * @default 'precache-manifest.[manifestHash].js'
-      * @example precacheManifestFilename: 'wb-manifest.[manifestHash].js'
-      */
-    var precacheManifestFilename: js.UndefOr[String] = js.undefined
-    
-    /**
-      * The path and filename of the service worker file that will be created by the build process, relative to the webpack output directory.
-      *
-      * @default 'service-worker.js'
-      * @example swDest: 'custom-sw-name.js'
-      */
-    var swDest: js.UndefOr[String] = js.undefined
-    
-    /**
-      * If a URL is rendered generated based on some server-side logic, its contents may depend on multiple files or on some other unique string value.
-      *
-      * If used with an array of strings, they will be interpreted as glob patterns, and the contents of any files matching the patterns will be used to uniquely version the URL.
-      *
-      * If used with a single string, it will be interpreted as unique versioning information that you've generated out of band for a given URL.
-      *
-      * @default null
-      */
-    var templatedUrls: js.UndefOr[(StringDictionary[String | js.Array[String]]) | Null] = js.undefined
-    
-    var test: js.UndefOr[js.Array[String | js.RegExp]] = js.undefined
-  }
-  object CommonOptions {
-    
-    inline def apply(): CommonOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[CommonOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: CommonOptions] (val x: Self) extends AnyVal {
-      
-      inline def setAdditionalManifestEntries(value: js.Array[Integrity | String]): Self = StObject.set(x, "additionalManifestEntries", value.asInstanceOf[js.Any])
-      
-      inline def setAdditionalManifestEntriesUndefined: Self = StObject.set(x, "additionalManifestEntries", js.undefined)
-      
-      inline def setAdditionalManifestEntriesVarargs(value: (Integrity | String)*): Self = StObject.set(x, "additionalManifestEntries", js.Array(value*))
-      
-      inline def setChunks(value: js.Array[String]): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
-      
-      inline def setChunksUndefined: Self = StObject.set(x, "chunks", js.undefined)
-      
-      inline def setChunksVarargs(value: String*): Self = StObject.set(x, "chunks", js.Array(value*))
-      
-      inline def setDontCacheBustURLsMatching(value: js.RegExp): Self = StObject.set(x, "dontCacheBustURLsMatching", value.asInstanceOf[js.Any])
-      
-      inline def setDontCacheBustURLsMatchingNull: Self = StObject.set(x, "dontCacheBustURLsMatching", null)
-      
-      inline def setDontCacheBustURLsMatchingUndefined: Self = StObject.set(x, "dontCacheBustURLsMatching", js.undefined)
-      
-      inline def setExclude(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
-      
-      inline def setExcludeChunks(value: js.Array[String]): Self = StObject.set(x, "excludeChunks", value.asInstanceOf[js.Any])
-      
-      inline def setExcludeChunksUndefined: Self = StObject.set(x, "excludeChunks", js.undefined)
-      
-      inline def setExcludeChunksVarargs(value: String*): Self = StObject.set(x, "excludeChunks", js.Array(value*))
-      
-      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
-      
-      inline def setExcludeVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "exclude", js.Array(value*))
-      
-      inline def setGlobDirectory(value: String): Self = StObject.set(x, "globDirectory", value.asInstanceOf[js.Any])
-      
-      inline def setGlobDirectoryUndefined: Self = StObject.set(x, "globDirectory", js.undefined)
-      
-      inline def setGlobFollow(value: Boolean): Self = StObject.set(x, "globFollow", value.asInstanceOf[js.Any])
-      
-      inline def setGlobFollowUndefined: Self = StObject.set(x, "globFollow", js.undefined)
-      
-      inline def setGlobIgnores(value: js.Array[String]): Self = StObject.set(x, "globIgnores", value.asInstanceOf[js.Any])
-      
-      inline def setGlobIgnoresUndefined: Self = StObject.set(x, "globIgnores", js.undefined)
-      
-      inline def setGlobIgnoresVarargs(value: String*): Self = StObject.set(x, "globIgnores", js.Array(value*))
-      
-      inline def setGlobPatterns(value: js.Array[String]): Self = StObject.set(x, "globPatterns", value.asInstanceOf[js.Any])
-      
-      inline def setGlobPatternsUndefined: Self = StObject.set(x, "globPatterns", js.undefined)
-      
-      inline def setGlobPatternsVarargs(value: String*): Self = StObject.set(x, "globPatterns", js.Array(value*))
-      
-      inline def setGlobStrict(value: Boolean): Self = StObject.set(x, "globStrict", value.asInstanceOf[js.Any])
-      
-      inline def setGlobStrictUndefined: Self = StObject.set(x, "globStrict", js.undefined)
-      
-      inline def setImportScriptsViaChunks(value: js.Array[String]): Self = StObject.set(x, "importScriptsViaChunks", value.asInstanceOf[js.Any])
-      
-      inline def setImportScriptsViaChunksUndefined: Self = StObject.set(x, "importScriptsViaChunks", js.undefined)
-      
-      inline def setImportScriptsViaChunksVarargs(value: String*): Self = StObject.set(x, "importScriptsViaChunks", js.Array(value*))
-      
-      inline def setImportsDirectory(value: String): Self = StObject.set(x, "importsDirectory", value.asInstanceOf[js.Any])
-      
-      inline def setImportsDirectoryUndefined: Self = StObject.set(x, "importsDirectory", js.undefined)
-      
-      inline def setInclude(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
-      
-      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
-      
-      inline def setIncludeVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "include", js.Array(value*))
-      
-      inline def setManifestTransforms(value: js.Array[js.Function1[/* originalManifest */ js.Array[ManifestEntry], Manifest]]): Self = StObject.set(x, "manifestTransforms", value.asInstanceOf[js.Any])
-      
-      inline def setManifestTransformsNull: Self = StObject.set(x, "manifestTransforms", null)
-      
-      inline def setManifestTransformsUndefined: Self = StObject.set(x, "manifestTransforms", js.undefined)
-      
-      inline def setManifestTransformsVarargs(value: (js.Function1[/* originalManifest */ js.Array[ManifestEntry], Manifest])*): Self = StObject.set(x, "manifestTransforms", js.Array(value*))
-      
-      inline def setMaximumFileSizeToCacheInBytes(value: Double): Self = StObject.set(x, "maximumFileSizeToCacheInBytes", value.asInstanceOf[js.Any])
-      
-      inline def setMaximumFileSizeToCacheInBytesUndefined: Self = StObject.set(x, "maximumFileSizeToCacheInBytes", js.undefined)
-      
-      inline def setMode(value: production | String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
-      
-      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
-      
-      inline def setModifyURLPrefix(value: StringDictionary[String]): Self = StObject.set(x, "modifyURLPrefix", value.asInstanceOf[js.Any])
-      
-      inline def setModifyURLPrefixNull: Self = StObject.set(x, "modifyURLPrefix", null)
-      
-      inline def setModifyURLPrefixUndefined: Self = StObject.set(x, "modifyURLPrefix", js.undefined)
-      
-      inline def setPrecacheManifestFilename(value: String): Self = StObject.set(x, "precacheManifestFilename", value.asInstanceOf[js.Any])
-      
-      inline def setPrecacheManifestFilenameUndefined: Self = StObject.set(x, "precacheManifestFilename", js.undefined)
-      
-      inline def setSwDest(value: String): Self = StObject.set(x, "swDest", value.asInstanceOf[js.Any])
-      
-      inline def setSwDestUndefined: Self = StObject.set(x, "swDest", js.undefined)
-      
-      inline def setTemplatedUrls(value: StringDictionary[String | js.Array[String]]): Self = StObject.set(x, "templatedUrls", value.asInstanceOf[js.Any])
-      
-      inline def setTemplatedUrlsNull: Self = StObject.set(x, "templatedUrls", null)
-      
-      inline def setTemplatedUrlsUndefined: Self = StObject.set(x, "templatedUrls", js.undefined)
-      
-      inline def setTest(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
-      
-      inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
-      
-      inline def setTestVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "test", js.Array(value*))
-    }
-  }
-  
-  trait GenerateSWOptions
-    extends StObject
-       with CommonOptions {
-    
-    /**
-      * The targets to pass to babel-preset-env when transpiling the service worker bundle
-      */
-    var babelPresetEnvTargets: js.UndefOr[js.Array[String]] = js.undefined
-    
-    /**
-      * An optional ID to be prepended to cache names used by Workbox.
-      *
-      * This is primarily useful for local development where multiple sites may be served from the same `http://localhost:port` origin.
-      *
-      * @default null
-      * @example cacheId: 'my-app'
-      */
-    var cacheId: js.UndefOr[String | Null] = js.undefined
-    
-    /**
-      * Whether or not Workbox should attempt to identify an delete any precaches created by older, incompatible versions
-      */
-    var cleanupOutdatedCaches: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Whether or not the service worker should [start controlling](https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle#clientsclaim)
-      * any existing clients as soon as it activates.
-      *
-      * @default false
-      * @example clientsClaim: true
-      */
-    var clientsClaim: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * If a [navigation request](https://developers.google.com/web/fundamentals/primers/service-workers/high-performance-loading#first_what_are_navigation_requests)
-      * for a URL ending in `/` fails to match a precached URL, this value will be appended to the URL and that will be checked for a precache match.
-      *
-      * This should be configured to whatever your web server is using, if anything, for its [directory index](https://httpd.apache.org/docs/2.0/mod/mod_dir.html).
-      *
-      * @default 'index.html'
-      * @example directoryIndex: 'index.html'
-      */
-    var directoryIndex: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Any search parameter names that match against one of the regex's in this array will be removed before looking for a precache match.
-      *
-      * This is useful if your users might request URLs that contain, for example, URL parameters used to track the source of the traffic.
-      * Those URL parameters would normally cause the cache lookup to fail, since the URL strings used as cache keys would not be expected to include them.
-      *
-      * @default [/^utm_/]
-      * @example ignoreURLParametersMatching: [/./]
-      */
-    var ignoreURLParametersMatching: js.UndefOr[js.Array[js.RegExp]] = js.undefined
-    
-    /**
-      * An required list of JavaScript files that should be passed to
-      * [`importScripts()`](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/importScripts) inside the generated service worker file.
-      *
-      * If one of the imported files sets the `self.__precacheManifest` variable to an array of
-      * [`ManifestEntrys`](https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-build#.ManifestEntry),
-      * those entries will be automatically precached in the generated service worker.
-      *
-      * This is also useful when you want to let Workbox create your top-level service worker file, but want to include some additional code, such as a `push` event listener.
-      *
-      * @default []
-      * @example importScripts: ['push-notifications.abcd1234.js']
-      */
-    var importScripts: js.UndefOr[js.Array[String]] = js.undefined
-    
-    /**
-      * Whether the runtime code for the Workbox library should be included in the top-level service worker,
-      * or split into a separate file that needs to be deployed alongside the service worker. Keeping the runtime separate means
-      * that users will not have to re-download the Workbox code each time your top-level service worker changes
-      */
-    var inlineWorkboxRuntime: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * This will be used to create a [`NavigationRoute`](https://developers.google.com/web/tools/workbox/reference-docs/latest/workbox.routing.NavigationRoute)
-      * that will respond to [navigation requests](https://developers.google.com/web/fundamentals/primers/service-workers/high-performance-loading#first_what_are_navigation_requests)
-      * for URLs that aren't precached.
-      *
-      * This is meant to be used in a [Single Page App](https://en.wikipedia.org/wiki/Single-page_application) scenario, in which you want all navigations to use common App Shell HTML.
-      *
-      * It's not intended for use as a fallback that's displayed when the browser is offline.
-      *
-      * @default undefined
-      * @example navigateFallback: '/app-shell'
-      */
-    var navigateFallback: js.UndefOr[String] = js.undefined
-    
-    /**
-      * An optional array of regular expressions that restricts which URLs the configured navigateFallback behavior applies to.
-      *
-      * This is useful if only a subset of your site's URLs should be treated as being part of a Single Page App.
-      *
-      * If both navigateFallbackDenylist and navigateFallbackAllowlist are configured, the blacklist takes precedent.
-      *
-      * @default []
-      * @example navigateFallbackAllowlist: [/^\/pages/]
-      */
-    var navigateFallbackAllowlist: js.UndefOr[js.Array[js.RegExp]] = js.undefined
-    
-    /**
-      * An optional array of regular expressions that restricts which URLs the configured navigateFallback behavior applies to.
-      *
-      * This is useful if only a subset of your site's URLs should be treated as being part of a Single Page App.
-      *
-      * If both navigateFallbackDenylist and navigateFallbackAllowlist are configured, the blacklist takes precedent.
-      *
-      * @default []
-      * @example navigateFallbackDenylist: [/^\/_/, /admin/]
-      */
-    var navigateFallbackDenylist: js.UndefOr[js.Array[js.RegExp]] = js.undefined
-    
-    /**
-      * Whether or not to enable navigation preload in the generated service worker.
-      * When set to true, you must also use runtimeCaching to set up an appropriate response strategy that will match navigation requests, and make use of the preloaded response
-      */
-    var navigationPreload: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Controls whether or not to include support for [offline Google Analytics](https://developers.google.com/web/tools/workbox/guides/enable-offline-analytics).
-      *
-      * When `true`, `workbox.googleAnalytics.initialize()` will be added to your new service worker file.
-      *
-      * @default false
-      * @example offlineGoogleAnalytics: true
-      */
-    var offlineGoogleAnalytics: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Passing in an array of objects containing `urlPatterns`, `handlers`, and potentially `options` will add the appropriate code to the generated service worker to handle runtime caching.
-      *
-      * Requests for precached URLs that are picked up via `globPatterns` are handled by default, and don't need to be accommodated in `runtimeCaching`.
-      *
-      * @default []
-      */
-    var runtimeCaching: js.UndefOr[js.Array[RuntimeCacheRule]] = js.undefined
-    
-    /**
-      * Whether or not the service worker should skip over the waiting lifecycle stage. Normally this is used with `clientsClaim: true`.
-      *
-      * @default false
-      * @example skipWaiting: true
-      */
-    var skipWaiting: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Whether to create a sourcemap for the generated service worker files
-      */
-    var sourcemap: js.UndefOr[Boolean] = js.undefined
-  }
-  object GenerateSWOptions {
-    
-    inline def apply(): GenerateSWOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[GenerateSWOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: GenerateSWOptions] (val x: Self) extends AnyVal {
-      
-      inline def setBabelPresetEnvTargets(value: js.Array[String]): Self = StObject.set(x, "babelPresetEnvTargets", value.asInstanceOf[js.Any])
-      
-      inline def setBabelPresetEnvTargetsUndefined: Self = StObject.set(x, "babelPresetEnvTargets", js.undefined)
-      
-      inline def setBabelPresetEnvTargetsVarargs(value: String*): Self = StObject.set(x, "babelPresetEnvTargets", js.Array(value*))
-      
-      inline def setCacheId(value: String): Self = StObject.set(x, "cacheId", value.asInstanceOf[js.Any])
-      
-      inline def setCacheIdNull: Self = StObject.set(x, "cacheId", null)
-      
-      inline def setCacheIdUndefined: Self = StObject.set(x, "cacheId", js.undefined)
-      
-      inline def setCleanupOutdatedCaches(value: Boolean): Self = StObject.set(x, "cleanupOutdatedCaches", value.asInstanceOf[js.Any])
-      
-      inline def setCleanupOutdatedCachesUndefined: Self = StObject.set(x, "cleanupOutdatedCaches", js.undefined)
-      
-      inline def setClientsClaim(value: Boolean): Self = StObject.set(x, "clientsClaim", value.asInstanceOf[js.Any])
-      
-      inline def setClientsClaimUndefined: Self = StObject.set(x, "clientsClaim", js.undefined)
-      
-      inline def setDirectoryIndex(value: String): Self = StObject.set(x, "directoryIndex", value.asInstanceOf[js.Any])
-      
-      inline def setDirectoryIndexUndefined: Self = StObject.set(x, "directoryIndex", js.undefined)
-      
-      inline def setIgnoreURLParametersMatching(value: js.Array[js.RegExp]): Self = StObject.set(x, "ignoreURLParametersMatching", value.asInstanceOf[js.Any])
-      
-      inline def setIgnoreURLParametersMatchingUndefined: Self = StObject.set(x, "ignoreURLParametersMatching", js.undefined)
-      
-      inline def setIgnoreURLParametersMatchingVarargs(value: js.RegExp*): Self = StObject.set(x, "ignoreURLParametersMatching", js.Array(value*))
-      
-      inline def setImportScripts(value: js.Array[String]): Self = StObject.set(x, "importScripts", value.asInstanceOf[js.Any])
-      
-      inline def setImportScriptsUndefined: Self = StObject.set(x, "importScripts", js.undefined)
-      
-      inline def setImportScriptsVarargs(value: String*): Self = StObject.set(x, "importScripts", js.Array(value*))
-      
-      inline def setInlineWorkboxRuntime(value: Boolean): Self = StObject.set(x, "inlineWorkboxRuntime", value.asInstanceOf[js.Any])
-      
-      inline def setInlineWorkboxRuntimeUndefined: Self = StObject.set(x, "inlineWorkboxRuntime", js.undefined)
-      
-      inline def setNavigateFallback(value: String): Self = StObject.set(x, "navigateFallback", value.asInstanceOf[js.Any])
-      
-      inline def setNavigateFallbackAllowlist(value: js.Array[js.RegExp]): Self = StObject.set(x, "navigateFallbackAllowlist", value.asInstanceOf[js.Any])
-      
-      inline def setNavigateFallbackAllowlistUndefined: Self = StObject.set(x, "navigateFallbackAllowlist", js.undefined)
-      
-      inline def setNavigateFallbackAllowlistVarargs(value: js.RegExp*): Self = StObject.set(x, "navigateFallbackAllowlist", js.Array(value*))
-      
-      inline def setNavigateFallbackDenylist(value: js.Array[js.RegExp]): Self = StObject.set(x, "navigateFallbackDenylist", value.asInstanceOf[js.Any])
-      
-      inline def setNavigateFallbackDenylistUndefined: Self = StObject.set(x, "navigateFallbackDenylist", js.undefined)
-      
-      inline def setNavigateFallbackDenylistVarargs(value: js.RegExp*): Self = StObject.set(x, "navigateFallbackDenylist", js.Array(value*))
-      
-      inline def setNavigateFallbackUndefined: Self = StObject.set(x, "navigateFallback", js.undefined)
-      
-      inline def setNavigationPreload(value: Boolean): Self = StObject.set(x, "navigationPreload", value.asInstanceOf[js.Any])
-      
-      inline def setNavigationPreloadUndefined: Self = StObject.set(x, "navigationPreload", js.undefined)
-      
-      inline def setOfflineGoogleAnalytics(value: Boolean): Self = StObject.set(x, "offlineGoogleAnalytics", value.asInstanceOf[js.Any])
-      
-      inline def setOfflineGoogleAnalyticsUndefined: Self = StObject.set(x, "offlineGoogleAnalytics", js.undefined)
-      
-      inline def setRuntimeCaching(value: js.Array[RuntimeCacheRule]): Self = StObject.set(x, "runtimeCaching", value.asInstanceOf[js.Any])
-      
-      inline def setRuntimeCachingUndefined: Self = StObject.set(x, "runtimeCaching", js.undefined)
-      
-      inline def setRuntimeCachingVarargs(value: RuntimeCacheRule*): Self = StObject.set(x, "runtimeCaching", js.Array(value*))
-      
-      inline def setSkipWaiting(value: Boolean): Self = StObject.set(x, "skipWaiting", value.asInstanceOf[js.Any])
-      
-      inline def setSkipWaitingUndefined: Self = StObject.set(x, "skipWaiting", js.undefined)
-      
-      inline def setSourcemap(value: Boolean): Self = StObject.set(x, "sourcemap", value.asInstanceOf[js.Any])
-      
-      inline def setSourcemapUndefined: Self = StObject.set(x, "sourcemap", js.undefined)
-    }
-  }
-  
-  trait InjectManifestOptions
-    extends StObject
-       with CommonOptions {
-    
-    /**
-      * When true (the default), the swSrc file will be compiled by webpack.
-      * When false, compilation will not occur (and webpackCompilationPlugins can't be used.)
-      * Set to false if you want to inject the manifest into, e.g., a JSON file
-      * @default true
-      */
-    var compileSrc: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * The path to the source service worker file that can contain your own customized code, in addition to containing a match for `injectionPointRegexp`.
-      *
-      * Your service worker file should reference the `self.__precacheManifest` variable to obtain a list of
-      * [`ManifestEntrys`](https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-build#.ManifestEntry) obtained as part of the compilation:
-      * `workbox.precaching.precacheAndRoute(self.__precacheManifest)`.
-      *
-      * @example swSrc: path.join('src', 'sw.js')
-      */
-    var swSrc: String
-    
-    /**
-      * Optional webpack plugins that will be used when compiling the swSrc input file
-      */
-    var webpackCompilationPlugins: js.UndefOr[js.Array[Any]] = js.undefined
-  }
-  object InjectManifestOptions {
-    
-    inline def apply(swSrc: String): InjectManifestOptions = {
-      val __obj = js.Dynamic.literal(swSrc = swSrc.asInstanceOf[js.Any])
-      __obj.asInstanceOf[InjectManifestOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: InjectManifestOptions] (val x: Self) extends AnyVal {
-      
-      inline def setCompileSrc(value: Boolean): Self = StObject.set(x, "compileSrc", value.asInstanceOf[js.Any])
-      
-      inline def setCompileSrcUndefined: Self = StObject.set(x, "compileSrc", js.undefined)
-      
-      inline def setSwSrc(value: String): Self = StObject.set(x, "swSrc", value.asInstanceOf[js.Any])
-      
-      inline def setWebpackCompilationPlugins(value: js.Array[Any]): Self = StObject.set(x, "webpackCompilationPlugins", value.asInstanceOf[js.Any])
-      
-      inline def setWebpackCompilationPluginsUndefined: Self = StObject.set(x, "webpackCompilationPlugins", js.undefined)
-      
-      inline def setWebpackCompilationPluginsVarargs(value: Any*): Self = StObject.set(x, "webpackCompilationPlugins", js.Array(value*))
-    }
-  }
-  
-  trait ManifestEntry extends StObject {
-    
-    var revision: String
-    
-    var url: String
-  }
-  object ManifestEntry {
-    
-    inline def apply(revision: String, url: String): ManifestEntry = {
-      val __obj = js.Dynamic.literal(revision = revision.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ManifestEntry]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: ManifestEntry] (val x: Self) extends AnyVal {
-      
-      inline def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
-      
-      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait RuntimeCacheOptions extends StObject {
-    
-    /**
-      * Configure background sync.
-      */
-    var backgroundSync: js.UndefOr[Name] = js.undefined
-    
-    /**
-      * Configure the broadcast cache update plugin.
-      */
-    var broadcastUpdate: js.UndefOr[ChannelName] = js.undefined
-    
-    /**
-      * A custom cache name for this route.
-      */
-    var cacheName: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Configure which responses are considered cacheable.
-      */
-    var cacheableResponse: js.UndefOr[Headers] = js.undefined
-    
-    /**
-      * Custom cache expiration.
-      */
-    var expiration: js.UndefOr[MaxAgeSeconds] = js.undefined
-    
-    /**
-      * Used to configure the handler.
-      */
-    var fetchOptions: js.UndefOr[Any] = js.undefined
-    
-    /**
-      * Used to configure the handler.
-      */
-    var matchOptions: js.UndefOr[Any] = js.undefined
-    
-    /**
-      * Fall back to the cache after X seconds.
-      */
-    var networkTimeoutSeconds: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Add in any additional plugin logic you need.
-      */
-    var plugins: js.UndefOr[js.Array[Any]] = js.undefined
-  }
-  object RuntimeCacheOptions {
-    
-    inline def apply(): RuntimeCacheOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[RuntimeCacheOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: RuntimeCacheOptions] (val x: Self) extends AnyVal {
-      
-      inline def setBackgroundSync(value: Name): Self = StObject.set(x, "backgroundSync", value.asInstanceOf[js.Any])
-      
-      inline def setBackgroundSyncUndefined: Self = StObject.set(x, "backgroundSync", js.undefined)
-      
-      inline def setBroadcastUpdate(value: ChannelName): Self = StObject.set(x, "broadcastUpdate", value.asInstanceOf[js.Any])
-      
-      inline def setBroadcastUpdateUndefined: Self = StObject.set(x, "broadcastUpdate", js.undefined)
-      
-      inline def setCacheName(value: String): Self = StObject.set(x, "cacheName", value.asInstanceOf[js.Any])
-      
-      inline def setCacheNameUndefined: Self = StObject.set(x, "cacheName", js.undefined)
-      
-      inline def setCacheableResponse(value: Headers): Self = StObject.set(x, "cacheableResponse", value.asInstanceOf[js.Any])
-      
-      inline def setCacheableResponseUndefined: Self = StObject.set(x, "cacheableResponse", js.undefined)
-      
-      inline def setExpiration(value: MaxAgeSeconds): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
-      
-      inline def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
-      
-      inline def setFetchOptions(value: Any): Self = StObject.set(x, "fetchOptions", value.asInstanceOf[js.Any])
-      
-      inline def setFetchOptionsUndefined: Self = StObject.set(x, "fetchOptions", js.undefined)
-      
-      inline def setMatchOptions(value: Any): Self = StObject.set(x, "matchOptions", value.asInstanceOf[js.Any])
-      
-      inline def setMatchOptionsUndefined: Self = StObject.set(x, "matchOptions", js.undefined)
-      
-      inline def setNetworkTimeoutSeconds(value: Double): Self = StObject.set(x, "networkTimeoutSeconds", value.asInstanceOf[js.Any])
-      
-      inline def setNetworkTimeoutSecondsUndefined: Self = StObject.set(x, "networkTimeoutSeconds", js.undefined)
-      
-      inline def setPlugins(value: js.Array[Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
-      
-      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
-      
-      inline def setPluginsVarargs(value: Any*): Self = StObject.set(x, "plugins", js.Array(value*))
-    }
-  }
-  
-  trait RuntimeCacheRule extends StObject {
-    
-    /**
-      * The `handler` values are strings, corresponding to names of the strategies supported by
-      * [`workbox.strategies`](https://developers.google.com/web/tools/workbox/reference-docs/latest/workbox.strategies#methods).
-      */
-    var handler: CacheStrategy
-    
-    /**
-      * The `options` properties can be used to configure instances of the cache expiration, cacheable response, and broadcast cache update plugins to apply to a given route.
-      */
-    var options: js.UndefOr[RuntimeCacheOptions] = js.undefined
-    
-    /**
-      * Cache any same-origin request that matches the pattern.
-      */
-    var urlPattern: String | js.RegExp
-  }
-  object RuntimeCacheRule {
-    
-    inline def apply(handler: CacheStrategy, urlPattern: String | js.RegExp): RuntimeCacheRule = {
-      val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], urlPattern = urlPattern.asInstanceOf[js.Any])
-      __obj.asInstanceOf[RuntimeCacheRule]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: RuntimeCacheRule] (val x: Self) extends AnyVal {
-      
-      inline def setHandler(value: CacheStrategy): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
-      
-      inline def setOptions(value: RuntimeCacheOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
-      
-      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
-      
-      inline def setUrlPattern(value: String | js.RegExp): Self = StObject.set(x, "urlPattern", value.asInstanceOf[js.Any])
-    }
+    def this(config: WebpackInjectManifestOptions) = this()
   }
 }

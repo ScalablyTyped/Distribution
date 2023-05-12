@@ -8,5 +8,5 @@ object distVersionMod {
   
   @JSImport("@tensorflow/tfjs-data/dist/version", "version")
   @js.native
-  val version: /* "4.0.0" */ String = js.native
+  val version: /* "4.5.0" */ String = js.native
 }

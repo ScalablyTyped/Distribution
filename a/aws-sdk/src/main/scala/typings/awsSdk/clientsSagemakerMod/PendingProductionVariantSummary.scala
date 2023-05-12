@@ -32,7 +32,7 @@ trait PendingProductionVariantSummary extends StObject {
   var DeployedImages: js.UndefOr[typings.awsSdk.clientsSagemakerMod.DeployedImages] = js.undefined
   
   /**
-    * The number of instances requested in this deployment, as specified in the endpoint configuration for the endpoint. The value is taken from the request to the  CreateEndpointConfig  operation.
+    * The number of instances requested in this deployment, as specified in the endpoint configuration for the endpoint. The value is taken from the request to the CreateEndpointConfig operation.
     */
   var DesiredInstanceCount: js.UndefOr[TaskCount] = js.undefined
   
@@ -42,7 +42,7 @@ trait PendingProductionVariantSummary extends StObject {
   var DesiredServerlessConfig: js.UndefOr[ProductionVariantServerlessConfig] = js.undefined
   
   /**
-    * The requested weight for the variant in this deployment, as specified in the endpoint configuration for the endpoint. The value is taken from the request to the  CreateEndpointConfig  operation.
+    * The requested weight for the variant in this deployment, as specified in the endpoint configuration for the endpoint. The value is taken from the request to the CreateEndpointConfig operation.
     */
   var DesiredWeight: js.UndefOr[VariantWeight] = js.undefined
   

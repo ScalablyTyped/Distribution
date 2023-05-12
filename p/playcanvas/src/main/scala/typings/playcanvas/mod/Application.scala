@@ -1,16 +1,11 @@
 package typings.playcanvas.mod
 
 import typings.playcanvas.anon.AssetPrefix
-import typings.std.Element
+import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('./input/element-input.js').ElementInput} ElementInput */
-/** @typedef {import('../platform/input/game-pads.js').GamePads} GamePads */
-/** @typedef {import('../platform/input/keyboard.js').Keyboard} Keyboard */
-/** @typedef {import('../platform/input/mouse.js').Mouse} Mouse */
-/** @typedef {import('../platform/input/touch-device.js').TouchDevice} TouchDevice */
 /**
   * An Application represents and manages your PlayCanvas application. If you are developing using
   * the PlayCanvas Editor, the Application is created for you. You can access your Application
@@ -23,12 +18,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * MyScript.prototype.initialize = function() {
   *     // Every script instance has a property 'this.app' accessible in the initialize...
-  *     var app = this.app;
+  *     const app = this.app;
   * };
   *
   * MyScript.prototype.update = function(dt) {
   *     // ...and update functions.
-  *     var app = this.app;
+  *     const app = this.app;
   * };
   * ```
   *
@@ -43,13 +38,18 @@ open class Application protected () extends AppBase {
   /**
     * Create a new Application instance.
     *
-    * @param {Element} canvas - The canvas element.
+    * @param {HTMLCanvasElement} canvas - The canvas element.
     * @param {object} [options] - The options object to configure the Application.
-    * @param {ElementInput} [options.elementInput] - Input handler for {@link ElementComponent}s.
-    * @param {Keyboard} [options.keyboard] - Keyboard handler for input.
-    * @param {Mouse} [options.mouse] - Mouse handler for input.
-    * @param {TouchDevice} [options.touch] - TouchDevice handler for input.
-    * @param {GamePads} [options.gamepads] - Gamepad handler for input.
+    * @param {import('./input/element-input.js').ElementInput} [options.elementInput] - Input
+    * handler for {@link ElementComponent}s.
+    * @param {import('../platform/input/keyboard.js').Keyboard} [options.keyboard] - Keyboard
+    * handler for input.
+    * @param {import('../platform/input/mouse.js').Mouse} [options.mouse] - Mouse handler for
+    * input.
+    * @param {import('../platform/input/touch-device.js').TouchDevice} [options.touch] - TouchDevice
+    * handler for input.
+    * @param {import('../platform/input/game-pads.js').GamePads} [options.gamepads] - Gamepad
+    * handler for input.
     * @param {string} [options.scriptPrefix] - Prefix to apply to script urls before loading.
     * @param {string} [options.assetPrefix] - Prefix to apply to asset urls before loading.
     * @param {object} [options.graphicsDeviceOptions] - Options object that is passed into the
@@ -57,13 +57,13 @@ open class Application protected () extends AppBase {
     * @param {string[]} [options.scriptsOrder] - Scripts in order of loading first.
     * @example
     * // Engine-only example: create the application manually
-    * var app = new pc.Application(canvas, options);
+    * const app = new pc.Application(canvas, options);
     *
     * // Start the application's main loop
     * app.start();
     */
-  def this(canvas: Element) = this()
-  def this(canvas: Element, options: AssetPrefix) = this()
+  def this(canvas: HTMLCanvasElement) = this()
+  def this(canvas: HTMLCanvasElement, options: AssetPrefix) = this()
   
   def addComponentSystems(appOptions: Any): Unit = js.native
   

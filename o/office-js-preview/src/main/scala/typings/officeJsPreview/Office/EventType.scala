@@ -37,7 +37,7 @@ object EventType extends StObject {
   
   /**
     * Occurs when any date or time of the selected appointment or series is changed in Outlook.
-    * **Important**: This event can only be handled in a task pane. It isn't supported in function commands.
+    * **Important**: This event can only be handled in a task pane. It isn't supported by function commands.
     *
     * To add an event handler for the `AppointmentTimeChanged` event, use the `addHandlerAsync` method of the `Item` object.
     * The event handler receives an argument of type
@@ -51,7 +51,7 @@ object EventType extends StObject {
        with EventType
   
   /**
-    * Occurs when an attachment is added to or removed from an item. **Important**: This event can only be handled in a task pane. It isn't supported in function commands.
+    * Occurs when an attachment is added to or removed from an item. **Important**: This event can only be handled in a task pane. It isn't supported by function commands.
     *
     * To add an event handler for the `AttachmentsChanged` event, use the `addHandlerAsync` method of the `Item` object.
     * The event handler receives an argument of type
@@ -128,7 +128,7 @@ object EventType extends StObject {
        with EventType
   
   /**
-    * Occurs when the appointment location is changed in Outlook. **Important**: This event can only be handled in a task pane. It isn't supported in function commands.
+    * Occurs when the appointment location is changed in Outlook. **Important**: This event can only be handled in a task pane. It isn't supported by function commands.
     *
     * To add an event handler for the `EnhancedLocationsChanged` event, use the `addHandlerAsync` method of the `Item` object.
     * The event handler receives an argument of type
@@ -146,7 +146,7 @@ object EventType extends StObject {
     * {@link https://learn.microsoft.com/javascript/api/outlook/office.notificationmessagedetails#actions | custom action}.
     * Currently, "Dismiss" is the only supported action that fires this event.
     *
-    * **Important**: This event can only be handled in a task pane. It isn't supported in function commands.
+    * **Important**: This event can only be handled in a task pane. It isn't supported by function commands.
     *
     * To add an event handler for the `InfobarClicked` event, use the `addHandlerAsync` method of the `Item` object.
     * The event handler receives an argument of type
@@ -161,7 +161,7 @@ object EventType extends StObject {
   
   /**
     * Occurs when a different Outlook item is selected for viewing while the task pane is pinned.
-    * **Important**: This event can only be handled in a task pane. It isn't supported in function commands.
+    * **Important**: This event can only be handled in a task pane. It isn't supported by function commands.
     *
     * To add an event handler for the `ItemChanged` event, use the `addHandlerAsync` method of the `Mailbox` object.
     *
@@ -197,7 +197,7 @@ object EventType extends StObject {
        with EventType
   
   /**
-    * Occurs when the OfficeTheme is changed in Outlook. **Important**: This event can only be handled in a task pane. It isn't supported in function commands.
+    * Occurs when the OfficeTheme is changed in Outlook. **Important**: This event can only be handled in a task pane. It isn't supported by function commands.
     *
     * To add an event handler for the `OfficeThemeChanged` event, use the `addHandlerAsync` method of the `Mailbox` object.
     * The event handler receives an argument of type
@@ -214,7 +214,7 @@ object EventType extends StObject {
   
   /**
     * Occurs when the recipient list of the selected item or the appointment location is changed in Outlook.
-    * **Important**: This event can only be handled in a task pane. It isn't supported in function commands.
+    * **Important**: This event can only be handled in a task pane. It isn't supported by function commands.
     *
     * To add an event handler for the `RecipientsChanged` event, use the `addHandlerAsync` method of the `Item` object.
     * The event handler receives an argument of type
@@ -229,7 +229,7 @@ object EventType extends StObject {
   
   /**
     * Occurs when the recurrence pattern of the selected series is changed in Outlook.
-    * **Important**: This event can only be handled in a task pane. It isn't supported in function commands.
+    * **Important**: This event can only be handled in a task pane. It isn't supported by function commands.
     *
     * To add an event handler for the `RecurrenceChanged` event, use the `addHandlerAsync` method of the `Item` object.
     * The event handler receives an argument of type
@@ -252,7 +252,7 @@ object EventType extends StObject {
   
   /**
     * Occurs in Outlook when one or more messages are selected or deselected.
-    * **Important**: This event can only be handled in a task pane. It isn't supported in function commands.
+    * **Important**: This event can only be handled in a task pane. It isn't supported by function commands.
     * 
     * To add an event handler for the `SelectedItemsChanged` event, use the `addHandlerAsync` method of the `Mailbox` object.
     * 
@@ -260,6 +260,23 @@ object EventType extends StObject {
     */
   @js.native
   sealed trait SelectedItemsChanged
+    extends StObject
+       with EventType
+  
+  /**
+    * Occurs in Outlook when the sensitivity label of a message or appointment changes.
+    * **Important**: This event can only be handled in a task pane. It isn't supported by function commands.
+    * 
+    * To add an event handler for the `SensitivityLabelChanged` event, use the `addHandlerAsync` method of the `Item` object.
+    * The event handler receives an argument of type
+    * {@link https://learn.microsoft.com/javascript/api/outlook/office.sensitivitylabelchangedeventargs?view=outlook-js-preview | Office.SensitivityLabelChangedEventArgs}.
+    * 
+    * [Api set: Mailbox preview]
+    * 
+    * @beta
+    */
+  @js.native
+  sealed trait SensitivityLabelChanged
     extends StObject
        with EventType
   

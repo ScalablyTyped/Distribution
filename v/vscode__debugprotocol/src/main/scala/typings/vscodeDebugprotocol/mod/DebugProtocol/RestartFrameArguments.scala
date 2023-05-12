@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Arguments for `restartFrame` request. */
 trait RestartFrameArguments extends StObject {
   
-  /** Restart this stackframe. */
+  /** Restart the stack frame identified by `frameId`. The `frameId` must have been obtained in the current suspended state. See 'Lifetime of Object References' in the Overview section for details. */
   var frameId: Double
 }
 object RestartFrameArguments {

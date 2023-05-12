@@ -11,5 +11,5 @@ object mapDottestMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def testMap(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testMap")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def testMap(_tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testMap")(_tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -29,7 +29,7 @@ trait ListPipelineExecutionsRequest extends StObject {
   /**
     * The name of the pipeline.
     */
-  var PipelineName: typings.awsSdk.clientsSagemakerMod.PipelineName
+  var PipelineName: PipelineNameOrArn
   
   /**
     * The field by which to sort results. The default is CreatedTime.
@@ -43,7 +43,7 @@ trait ListPipelineExecutionsRequest extends StObject {
 }
 object ListPipelineExecutionsRequest {
   
-  inline def apply(PipelineName: PipelineName): ListPipelineExecutionsRequest = {
+  inline def apply(PipelineName: PipelineNameOrArn): ListPipelineExecutionsRequest = {
     val __obj = js.Dynamic.literal(PipelineName = PipelineName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPipelineExecutionsRequest]
   }
@@ -67,7 +67,7 @@ object ListPipelineExecutionsRequest {
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    inline def setPipelineName(value: PipelineName): Self = StObject.set(x, "PipelineName", value.asInstanceOf[js.Any])
+    inline def setPipelineName(value: PipelineNameOrArn): Self = StObject.set(x, "PipelineName", value.asInstanceOf[js.Any])
     
     inline def setSortBy(value: SortPipelineExecutionsBy): Self = StObject.set(x, "SortBy", value.asInstanceOf[js.Any])
     

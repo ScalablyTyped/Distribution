@@ -3,6 +3,11 @@ package typings.std.global
 import typings.std.AddEventListenerOptions
 import typings.std.EventListenerOptions
 import typings.std.EventListenerOrEventListenerObject
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
+import typings.std.stdInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,10 +54,6 @@ open class SVGFEColorMatrixElement ()
   /* standard dom */
   /* CompleteClass */
   var ariaColIndex: java.lang.String | Null = js.native
-  
-  /* standard dom */
-  /* CompleteClass */
-  var ariaColIndexText: java.lang.String | Null = js.native
   
   /* standard dom */
   /* CompleteClass */
@@ -148,10 +149,6 @@ open class SVGFEColorMatrixElement ()
   
   /* standard dom */
   /* CompleteClass */
-  var ariaRowIndexText: java.lang.String | Null = js.native
-  
-  /* standard dom */
-  /* CompleteClass */
   var ariaRowSpan: java.lang.String | Null = js.native
   
   /* standard dom */
@@ -244,25 +241,25 @@ object SVGFEColorMatrixElement {
   /* standard dom */
   @JSGlobal("SVGFEColorMatrixElement.SVG_FECOLORMATRIX_TYPE_HUEROTATE")
   @js.native
-  val SVG_FECOLORMATRIX_TYPE_HUEROTATE: Double = js.native
+  val SVG_FECOLORMATRIX_TYPE_HUEROTATE: `3` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFEColorMatrixElement.SVG_FECOLORMATRIX_TYPE_LUMINANCETOALPHA")
   @js.native
-  val SVG_FECOLORMATRIX_TYPE_LUMINANCETOALPHA: Double = js.native
+  val SVG_FECOLORMATRIX_TYPE_LUMINANCETOALPHA: `4` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFEColorMatrixElement.SVG_FECOLORMATRIX_TYPE_MATRIX")
   @js.native
-  val SVG_FECOLORMATRIX_TYPE_MATRIX: Double = js.native
+  val SVG_FECOLORMATRIX_TYPE_MATRIX: `1` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFEColorMatrixElement.SVG_FECOLORMATRIX_TYPE_SATURATE")
   @js.native
-  val SVG_FECOLORMATRIX_TYPE_SATURATE: Double = js.native
+  val SVG_FECOLORMATRIX_TYPE_SATURATE: `2` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFEColorMatrixElement.SVG_FECOLORMATRIX_TYPE_UNKNOWN")
   @js.native
-  val SVG_FECOLORMATRIX_TYPE_UNKNOWN: Double = js.native
+  val SVG_FECOLORMATRIX_TYPE_UNKNOWN: `0` = js.native
 }

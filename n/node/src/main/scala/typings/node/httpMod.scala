@@ -22,6 +22,7 @@ import typings.node.nodeStrings.connect
 import typings.node.nodeStrings.connection
 import typings.node.nodeStrings.continue
 import typings.node.nodeStrings.drain
+import typings.node.nodeStrings.dropRequest
 import typings.node.nodeStrings.error
 import typings.node.nodeStrings.fifo
 import typings.node.nodeStrings.finish
@@ -95,7 +96,7 @@ object httpMod {
     *   hostname: 'localhost',
     *   port: 80,
     *   path: '/',
-    *   agent: false  // Create a new agent just for this one request
+    *   agent: false,  // Create a new agent just for this one request
     * }, (res) => {
     *   // Do stuff with response
     * });
@@ -130,7 +131,7 @@ object httpMod {
     val freeSockets: ReadOnlyDict[js.Array[Socket]] = js.native
     
     /**
-      * By default set to 256\. For agents with `keepAlive` enabled, this
+      * By default set to 256. For agents with `keepAlive` enabled, this
       * sets the maximum number of sockets that will be left open in the free
       * state.
       * @since v0.11.7
@@ -190,8 +191,11 @@ object httpMod {
     *
     * For backward compatibility, `res` will only emit `'error'` if there is an`'error'` listener registered.
     *
-    * Node.js does not check whether Content-Length and the length of the
-    * body which has been transmitted are equal or not.
+    * Set `Content-Length` header to limit the response body size.
+    * If `response.strictContentLength` is set to `true`, mismatching the`Content-Length` header value will result in an `Error` being thrown,
+    * identified by `code:``'ERR_HTTP_CONTENT_LENGTH_MISMATCH'`.
+    *
+    * `Content-Length` value should be in bytes, not characters. Use `Buffer.byteLength()` to determine the length of the body in bytes.
     * @since v0.1.17
     */
   @JSImport("http", "ClientRequest")
@@ -473,7 +477,7 @@ object httpMod {
       * may run into a 'ECONNRESET' error.
       *
       * ```js
-      * const http = require('http');
+      * const http = require('node:http');
       *
       * // Server has a 5 seconds keep-alive timeout by default
       * http
@@ -497,7 +501,7 @@ object httpMod {
       * automatic error retry base on it.
       *
       * ```js
-      * const http = require('http');
+      * const http = require('node:http');
       * const agent = new http.Agent({ keepAlive: true });
       *
       * function retriableRequest() {
@@ -548,7 +552,7 @@ object httpMod {
   /**
     * An `IncomingMessage` object is created by {@link Server} or {@link ClientRequest} and passed as the first argument to the `'request'` and `'response'` event respectively. It may be used to
     * access response
-    * status, headers and data.
+    * status, headers, and data.
     *
     * Different from its `socket` value which is a subclass of `stream.Duplex`, the`IncomingMessage` itself extends `stream.Readable` and is created separately to
     * parse and emit the incoming HTTP headers and payload, as the underlying socket
@@ -579,7 +583,7 @@ object httpMod {
       * const req = http.request({
       *   host: '127.0.0.1',
       *   port: 8080,
-      *   method: 'POST'
+      *   method: 'POST',
       * }, (res) => {
       *   res.resume();
       *   res.on('end', () => {
@@ -619,7 +623,7 @@ object httpMod {
       * // { 'user-agent': 'curl/7.22.0',
       * //   host: '127.0.0.1:8000',
       * //   accept: '*' }
-      * console.log(request.getHeaders());
+      * console.log(request.headers);
       * ```
       *
       * Duplicates in raw headers are handled in the following ways, depending on the
@@ -627,12 +631,31 @@ object httpMod {
       *
       * * Duplicates of `age`, `authorization`, `content-length`, `content-type`,`etag`, `expires`, `from`, `host`, `if-modified-since`, `if-unmodified-since`,`last-modified`, `location`,
       * `max-forwards`, `proxy-authorization`, `referer`,`retry-after`, `server`, or `user-agent` are discarded.
+      * To allow duplicate values of the headers listed above to be joined,
+      * use the option `joinDuplicateHeaders` in {@link request} and {@link createServer}. See RFC 9110 Section 5.3 for more
+      * information.
       * * `set-cookie` is always an array. Duplicates are added to the array.
-      * * For duplicate `cookie` headers, the values are joined together with '; '.
-      * * For all other headers, the values are joined together with ', '.
+      * * For duplicate `cookie` headers, the values are joined together with `; `.
+      * * For all other headers, the values are joined together with `, `.
       * @since v0.1.5
       */
     var headers: IncomingHttpHeaders = js.native
+    
+    /**
+      * Similar to `message.headers`, but there is no join logic and the values are
+      * always arrays of strings, even for headers received just once.
+      *
+      * ```js
+      * // Prints something like:
+      * //
+      * // { 'user-agent': ['curl/7.22.0'],
+      * //   host: ['127.0.0.1:8000'],
+      * //   accept: ['*'] }
+      * console.log(request.headersDistinct);
+      * ```
+      * @since v18.3.0, v16.17.0
+      */
+    var headersDistinct: Dict[js.Array[String]] = js.native
     
     /**
       * In case of server request, the HTTP version sent by the client. In the case of
@@ -732,6 +755,14 @@ object httpMod {
     var trailers: Dict[String] = js.native
     
     /**
+      * Similar to `message.trailers`, but there is no join logic and the values are
+      * always arrays of strings, even for headers received just once.
+      * Only populated at the `'end'` event.
+      * @since v18.3.0, v16.17.0
+      */
+    var trailersDistinct: Dict[js.Array[String]] = js.native
+    
+    /**
       * **Only valid for request obtained from {@link Server}.**
       *
       * Request URL string. This contains only the URL that is present in the actual
@@ -745,14 +776,14 @@ object httpMod {
       * To parse the URL into its parts:
       *
       * ```js
-      * new URL(request.url, `http://${request.getHeaders().host}`);
+      * new URL(request.url, `http://${request.headers.host}`);
       * ```
       *
-      * When `request.url` is `'/status?name=ryan'` and`request.getHeaders().host` is `'localhost:3000'`:
+      * When `request.url` is `'/status?name=ryan'` and `request.headers.host` is`'localhost:3000'`:
       *
       * ```console
       * $ node
-      * > new URL(request.url, `http://${request.getHeaders().host}`)
+      * > new URL(request.url, `http://${request.headers.host}`)
       * URL {
       *   href: 'http://localhost:3000/status?name=ryan',
       *   origin: 'http://localhost:3000',
@@ -778,8 +809,8 @@ object httpMod {
   val METHODS: js.Array[String] = js.native
   
   /**
-    * This class serves as the parent class of {@link ClientRequest} and {@link ServerResponse}. It is an abstract of outgoing message from
-    * the perspective of the participants of HTTP transaction.
+    * This class serves as the parent class of {@link ClientRequest} and {@link ServerResponse}. It is an abstract outgoing message from
+    * the perspective of the participants of an HTTP transaction.
     * @since v0.1.17
     */
   @JSImport("http", "OutgoingMessage")
@@ -790,11 +821,11 @@ object httpMod {
     /**
       * Adds HTTP trailers (headers but at the end of the message) to the message.
       *
-      * Trailers are **only** be emitted if the message is chunked encoded. If not,
-      * the trailer will be silently discarded.
+      * Trailers will **only** be emitted if the message is chunked encoded. If not,
+      * the trailers will be silently discarded.
       *
       * HTTP requires the `Trailer` header to be sent to emit trailers,
-      * with a list of header fields in its value, e.g.
+      * with a list of header field names in its value, e.g.
       *
       * ```js
       * message.writeHead(200, { 'Content-Type': 'text/plain',
@@ -810,10 +841,28 @@ object httpMod {
       */
     def addTrailers(headers: OutgoingHttpHeaders): Unit = js.native
     
+    /**
+      * Append a single header value for the header object.
+      *
+      * If the value is an array, this is equivalent of calling this method multiple
+      * times.
+      *
+      * If there were no previous value for the header, this is equivalent of calling `outgoingMessage.setHeader(name, value)`.
+      *
+      * Depending of the value of `options.uniqueHeaders` when the client request or the
+      * server were created, this will end up in the header being sent multiple times or
+      * a single time with values joined using `; `.
+      * @since v18.3.0, v16.17.0
+      * @param name Header name
+      * @param value Header value
+      */
+    def appendHeader(name: String, value: String): this.type = js.native
+    def appendHeader(name: String, value: js.Array[String]): this.type = js.native
+    
     var chunkedEncoding: Boolean = js.native
     
     /**
-      * Aliases of `outgoingMessage.socket`
+      * Alias of `outgoingMessage.socket`.
       * @since v0.3.0
       * @deprecated Since v15.12.0,v14.17.1 - Use `socket` instead.
       */
@@ -825,7 +874,7 @@ object httpMod {
     var finished: Boolean = js.native
     
     /**
-      * Compulsorily flushes the message headers
+      * Flushes the message headers.
       *
       * For efficiency reason, Node.js normally buffers the message headers
       * until `outgoingMessage.end()` is called or the first chunk of message data
@@ -833,22 +882,22 @@ object httpMod {
       * packet.
       *
       * It is usually desired (it saves a TCP round-trip), but not when the first
-      * data is not sent until possibly much later. `outgoingMessage.flushHeaders()`bypasses the optimization and kickstarts the request.
+      * data is not sent until possibly much later. `outgoingMessage.flushHeaders()`bypasses the optimization and kickstarts the message.
       * @since v1.6.0
       */
     def flushHeaders(): Unit = js.native
     
     /**
-      * Gets the value of HTTP header with the given name. If such a name doesn't
-      * exist in message, it will be `undefined`.
+      * Gets the value of the HTTP header with the given name. If that header is not
+      * set, the returned value will be `undefined`.
       * @since v0.4.0
       * @param name Name of header
       */
     def getHeader(name: String): js.UndefOr[Double | String | js.Array[String]] = js.native
     
     /**
-      * Returns an array of names of headers of the outgoing outgoingMessage. All
-      * names are lowercase.
+      * Returns an array containing the unique names of the current outgoing headers.
+      * All names are lowercase.
       * @since v7.7.0
       */
     def getHeaderNames(): js.Array[String] = js.native
@@ -861,8 +910,8 @@ object httpMod {
       * values. All header names are lowercase.
       *
       * The object returned by the `outgoingMessage.getHeaders()` method does
-      * not prototypically inherit from the JavaScript Object. This means that
-      * typical Object methods such as `obj.toString()`, `obj.hasOwnProperty()`,
+      * not prototypically inherit from the JavaScript `Object`. This means that
+      * typical `Object` methods such as `obj.toString()`, `obj.hasOwnProperty()`,
       * and others are not defined and will not work.
       *
       * ```js
@@ -911,7 +960,9 @@ object httpMod {
     def setHeader(name: String, value: String): this.type = js.native
     def setHeader(name: String, value: js.Array[String]): this.type = js.native
     /**
-      * Sets a single header value for the header object.
+      * Sets a single header value. If the header already exists in the to-be-sent
+      * headers, its value will be replaced. Use an array of strings to send multiple
+      * headers with the same name.
       * @since v0.4.0
       * @param name Header name
       * @param value Header value
@@ -970,6 +1021,11 @@ object httpMod {
     @JSName("addListener")
     def addListener_connection(event: connection, listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
     @JSName("addListener")
+    def addListener_dropRequest(
+      event: dropRequest,
+      listener: js.Function2[/* req */ InstanceType[Request], /* socket */ Duplex, Unit]
+    ): this.type = js.native
+    @JSName("addListener")
     def addListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("addListener")
     def addListener_listening(event: listening, listener: js.Function0[Unit]): this.type = js.native
@@ -988,7 +1044,8 @@ object httpMod {
     def closeAllConnections(): Unit = js.native
     
     /**
-      * Closes all connections connected to this server which are not sending a request or waiting for a response.
+      * Closes all connections connected to this server which are not sending a request
+      * or waiting for a response.
       * @since v18.2.0
       */
     def closeIdleConnections(): Unit = js.native
@@ -1006,6 +1063,8 @@ object httpMod {
     def emit_connect(event: connect, req: InstanceType[Request], socket: Duplex, head: Buffer): Boolean = js.native
     @JSName("emit")
     def emit_connection(event: connection, socket: Socket): Boolean = js.native
+    @JSName("emit")
+    def emit_dropRequest(event: dropRequest, req: InstanceType[Request], socket: Duplex): Boolean = js.native
     @JSName("emit")
     def emit_error(event: error, err: js.Error): Boolean = js.native
     @JSName("emit")
@@ -1082,6 +1141,11 @@ object httpMod {
     @JSName("on")
     def on_connection(event: connection, listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
     @JSName("on")
+    def on_dropRequest(
+      event: dropRequest,
+      listener: js.Function2[/* req */ InstanceType[Request], /* socket */ Duplex, Unit]
+    ): this.type = js.native
+    @JSName("on")
     def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("on")
     def on_listening(event: listening, listener: js.Function0[Unit]): this.type = js.native
@@ -1109,6 +1173,11 @@ object httpMod {
     ): this.type = js.native
     @JSName("once")
     def once_connection(event: connection, listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
+    @JSName("once")
+    def once_dropRequest(
+      event: dropRequest,
+      listener: js.Function2[/* req */ InstanceType[Request], /* socket */ Duplex, Unit]
+    ): this.type = js.native
     @JSName("once")
     def once_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("once")
@@ -1138,6 +1207,11 @@ object httpMod {
     @JSName("prependListener")
     def prependListener_connection(event: connection, listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
     @JSName("prependListener")
+    def prependListener_dropRequest(
+      event: dropRequest,
+      listener: js.Function2[/* req */ InstanceType[Request], /* socket */ Duplex, Unit]
+    ): this.type = js.native
+    @JSName("prependListener")
     def prependListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("prependListener")
     def prependListener_listening(event: listening, listener: js.Function0[Unit]): this.type = js.native
@@ -1165,6 +1239,11 @@ object httpMod {
     ): this.type = js.native
     @JSName("prependOnceListener")
     def prependOnceListener_connection(event: connection, listener: js.Function1[/* socket */ Socket, Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    def prependOnceListener_dropRequest(
+      event: dropRequest,
+      listener: js.Function2[/* req */ InstanceType[Request], /* socket */ Duplex, Unit]
+    ): this.type = js.native
     @JSName("prependOnceListener")
     def prependOnceListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("prependOnceListener")
@@ -1270,6 +1349,14 @@ object httpMod {
     var statusMessage: String = js.native
     
     /**
+      * If set to `true`, Node.js will check whether the `Content-Length`header value and the size of the body, in bytes, are equal.
+      * Mismatching the `Content-Length` header value will result
+      * in an `Error` being thrown, identified by `code:``'ERR_HTTP_CONTENT_LENGTH_MISMATCH'`.
+      * @since v18.10.0, v16.18.0
+      */
+    var strictContentLength: Boolean = js.native
+    
+    /**
       * Sends an HTTP/1.1 100 Continue message to the client, indicating that
       * the request body should be sent. See the `'checkContinue'` event on`Server`.
       * @since v0.3.0
@@ -1284,7 +1371,7 @@ object httpMod {
       * early hints message. The optional `callback` argument will be called when
       * the response message has been written.
       *
-      * Example:
+      * **Example**
       *
       * ```js
       * const earlyHintsLink = '</styles.css>; rel=preload; as=style';
@@ -1298,15 +1385,14 @@ object httpMod {
       * ];
       * response.writeEarlyHints({
       *   'link': earlyHintsLinks,
-      *   'x-trace-id': 'id for diagnostics'
+      *   'x-trace-id': 'id for diagnostics',
       * });
       *
       * const earlyHintsCallback = () => console.log('early hints message sent');
       * response.writeEarlyHints({
-      *   'link': earlyHintsLinks
+      *   'link': earlyHintsLinks,
       * }, earlyHintsCallback);
       * ```
-      *
       * @since v18.11.0
       * @param hints An object containing the values of headers
       * @param callback Will be called when the response message has been written
@@ -1332,7 +1418,7 @@ object httpMod {
       * response
       *   .writeHead(200, {
       *     'Content-Length': Buffer.byteLength(body),
-      *     'Content-Type': 'text/plain'
+      *     'Content-Type': 'text/plain',
       *   })
       *   .end(body);
       * ```
@@ -1363,12 +1449,12 @@ object httpMod {
       * });
       * ```
       *
-      * `Content-Length` is given in bytes, not characters. Use `Buffer.byteLength()` to determine the length of the body in bytes. Node.js
-      * does not check whether `Content-Length` and the length of the body which has
+      * `Content-Length` is read in bytes, not characters. Use `Buffer.byteLength()` to determine the length of the body in bytes. Node.js
+      * will check whether `Content-Length` and the length of the body which has
       * been transmitted are equal or not.
       *
       * Attempting to set a header field name or value that contains invalid characters
-      * will result in a `TypeError` being thrown.
+      * will result in a \[`Error`\]\[\] being thrown.
       * @since v0.1.30
       */
     def writeHead(statusCode: Double): this.type = js.native
@@ -1381,7 +1467,7 @@ object httpMod {
     def writeHead(statusCode: Double, statusMessage: Unit, headers: OutgoingHttpHeaders): this.type = js.native
     
     /**
-      * Sends an HTTP/1.1 102 Processing message to the client, indicating that
+      * Sends a HTTP/1.1 102 Processing message to the client, indicating that
       * the request body should be sent.
       * @since v10.0.0
       */
@@ -1465,7 +1551,7 @@ object httpMod {
     * const server = http.createServer((req, res) => {
     *   res.writeHead(200, { 'Content-Type': 'application/json' });
     *   res.end(JSON.stringify({
-    *     data: 'Hello World!'
+    *     data: 'Hello World!',
     *   }));
     * });
     *
@@ -1516,10 +1602,10 @@ object httpMod {
     * upload a file with a POST request, then write to the `ClientRequest` object.
     *
     * ```js
-    * const http = require('http');
+    * const http = require('node:http');
     *
     * const postData = JSON.stringify({
-    *   'msg': 'Hello World!'
+    *   'msg': 'Hello World!',
     * });
     *
     * const options = {
@@ -1529,8 +1615,8 @@ object httpMod {
     *   method: 'POST',
     *   headers: {
     *     'Content-Type': 'application/json',
-    *     'Content-Length': Buffer.byteLength(postData)
-    *   }
+    *     'Content-Length': Buffer.byteLength(postData),
+    *   },
     * };
     *
     * const req = http.request(options, (res) => {
@@ -1617,7 +1703,7 @@ object httpMod {
     *    * `'data'` any number of times, on the `res` object
     * * (connection closed here)
     * * `'aborted'` on the `res` object
-    * * `'error'` on the `res` object with an error with message`'Error: aborted'` and code `'ECONNRESET'`.
+    * * `'error'` on the `res` object with an error with message`'Error: aborted'` and code `'ECONNRESET'`
     * * `'close'`
     * * `'close'` on the `res` object
     *
@@ -1625,7 +1711,7 @@ object httpMod {
     * events will be emitted in the following order:
     *
     * * (`req.destroy()` called here)
-    * * `'error'` with an error with message `'Error: socket hang up'` and code`'ECONNRESET'`
+    * * `'error'` with an error with message `'Error: socket hang up'` and code`'ECONNRESET'`, or the error with which `req.destroy()` was called
     * * `'close'`
     *
     * If `req.destroy()` is called before the connection succeeds, the following
@@ -1633,7 +1719,7 @@ object httpMod {
     *
     * * `'socket'`
     * * (`req.destroy()` called here)
-    * * `'error'` with an error with message `'Error: socket hang up'` and code`'ECONNRESET'`
+    * * `'error'` with an error with message `'Error: socket hang up'` and code`'ECONNRESET'`, or the error with which `req.destroy()` was called
     * * `'close'`
     *
     * If `req.destroy()` is called after the response is received, the following
@@ -1644,7 +1730,7 @@ object httpMod {
     *    * `'data'` any number of times, on the `res` object
     * * (`req.destroy()` called here)
     * * `'aborted'` on the `res` object
-    * * `'error'` on the `res` object with an error with message`'Error: aborted'` and code `'ECONNRESET'`.
+    * * `'error'` on the `res` object with an error with message `'Error: aborted'`and code `'ECONNRESET'`, or the error with which `req.destroy()` was called
     * * `'close'`
     * * `'close'` on the `res` object
     *
@@ -1680,8 +1766,9 @@ object httpMod {
     * Setting the `timeout` option or using the `setTimeout()` function will
     * not abort the request or do anything besides add a `'timeout'` event.
     *
-    * Passing an `AbortSignal` and then calling `abort` on the corresponding`AbortController` will behave the same way as calling `.destroy()` on the
-    * request itself.
+    * Passing an `AbortSignal` and then calling `abort()` on the corresponding`AbortController` will behave the same way as calling `.destroy()` on the
+    * request. Specifically, the `'error'` event will be emitted with an error with
+    * the message `'AbortError: The operation was aborted'`, the code `'ABORT_ERR'`and the `cause`, if one was provided.
     * @since v0.3.6
     */
   inline def request(options: RequestOptions): ClientRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any]).asInstanceOf[ClientRequest]
@@ -1694,33 +1781,84 @@ object httpMod {
   inline def request(url: URL, options: RequestOptions, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ClientRequest]
   
   /**
-    * Set the maximum number of idle HTTP parsers. Default: 1000.
-    * @param count
+    * Set the maximum number of idle HTTP parsers.
     * @since v18.8.0, v16.18.0
+    * @param [max=1000]
     */
-  inline def setMaxIdleHTTPParsers(count: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxIdleHTTPParsers")(count.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setMaxIdleHTTPParsers(max: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxIdleHTTPParsers")(max.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
-    * Performs the low-level validations on the provided name that are done when `res.setHeader(name, value)` is called.
-    * Passing illegal value as name will result in a TypeError being thrown, identified by `code: 'ERR_INVALID_HTTP_TOKEN'`.
-    * @param name Header name
+    * Performs the low-level validations on the provided `name` that are done when`res.setHeader(name, value)` is called.
+    *
+    * Passing illegal value as `name` will result in a `TypeError` being thrown,
+    * identified by `code: 'ERR_INVALID_HTTP_TOKEN'`.
+    *
+    * It is not necessary to use this method before passing headers to an HTTP request
+    * or response. The HTTP module will automatically validate such headers.
+    * Examples:
+    *
+    * Example:
+    *
+    * ```js
+    * const { validateHeaderName } = require('node:http');
+    *
+    * try {
+    *   validateHeaderName('');
+    * } catch (err) {
+    *   console.error(err instanceof TypeError); // --> true
+    *   console.error(err.code); // --> 'ERR_INVALID_HTTP_TOKEN'
+    *   console.error(err.message); // --> 'Header name must be a valid HTTP token [""]'
+    * }
+    * ```
     * @since v14.3.0
+    * @param [label='Header name'] Label for error message.
     */
   inline def validateHeaderName(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateHeaderName")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
-    * Performs the low-level validations on the provided value that are done when `res.setHeader(name, value)` is called.
-    * Passing illegal value as value will result in a TypeError being thrown.
-    * - Undefined value error is identified by `code: 'ERR_HTTP_INVALID_HEADER_VALUE'`.
-    * - Invalid value character error is identified by `code: 'ERR_INVALID_CHAR'`.
+    * Performs the low-level validations on the provided `value` that are done when`res.setHeader(name, value)` is called.
+    *
+    * Passing illegal value as `value` will result in a `TypeError` being thrown.
+    *
+    * * Undefined value error is identified by `code: 'ERR_HTTP_INVALID_HEADER_VALUE'`.
+    * * Invalid value character error is identified by `code: 'ERR_INVALID_CHAR'`.
+    *
+    * It is not necessary to use this method before passing headers to an HTTP request
+    * or response. The HTTP module will automatically validate such headers.
+    *
+    * Examples:
+    *
+    * ```js
+    * const { validateHeaderValue } = require('node:http');
+    *
+    * try {
+    *   validateHeaderValue('x-my-header', undefined);
+    * } catch (err) {
+    *   console.error(err instanceof TypeError); // --> true
+    *   console.error(err.code === 'ERR_HTTP_INVALID_HEADER_VALUE'); // --> true
+    *   console.error(err.message); // --> 'Invalid value "undefined" for header "x-my-header"'
+    * }
+    *
+    * try {
+    *   validateHeaderValue('x-my-header', 'oʊmɪɡə');
+    * } catch (err) {
+    *   console.error(err instanceof TypeError); // --> true
+    *   console.error(err.code === 'ERR_INVALID_CHAR'); // --> true
+    *   console.error(err.message); // --> 'Invalid character in header content ["x-my-header"]'
+    * }
+    * ```
+    * @since v14.3.0
     * @param name Header name
     * @param value Header value
-    * @since v14.3.0
     */
   inline def validateHeaderValue(name: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateHeaderValue")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* Inlined parent std.Partial<node.node:net.TcpSocketConnectOpts> */
   trait AgentOptions extends StObject {
+    
+    var autoSelectFamily: js.UndefOr[Boolean] = js.undefined
+    
+    var autoSelectFamilyAttemptTimeout: js.UndefOr[Double] = js.undefined
     
     var family: js.UndefOr[Double] = js.undefined
     
@@ -1788,6 +1926,14 @@ object httpMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: AgentOptions] (val x: Self) extends AnyVal {
+      
+      inline def setAutoSelectFamily(value: Boolean): Self = StObject.set(x, "autoSelectFamily", value.asInstanceOf[js.Any])
+      
+      inline def setAutoSelectFamilyAttemptTimeout(value: Double): Self = StObject.set(x, "autoSelectFamilyAttemptTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setAutoSelectFamilyAttemptTimeoutUndefined: Self = StObject.set(x, "autoSelectFamilyAttemptTimeout", js.undefined)
+      
+      inline def setAutoSelectFamilyUndefined: Self = StObject.set(x, "autoSelectFamily", js.undefined)
       
       inline def setFamily(value: Double): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
@@ -1884,16 +2030,24 @@ object httpMod {
     
     var headers: js.UndefOr[OutgoingHttpHeaders] = js.undefined
     
+    var hints: js.UndefOr[Double] = js.undefined
+    
     var host: js.UndefOr[String | Null] = js.undefined
     
     var hostname: js.UndefOr[String | Null] = js.undefined
     
+    var insecureHTTPParser: js.UndefOr[Boolean] = js.undefined
+    
+    var joinDuplicateHeaders: js.UndefOr[Boolean] = js.undefined
+    
     var localAddress: js.UndefOr[String] = js.undefined
+    
+    var localPort: js.UndefOr[Double] = js.undefined
     
     var lookup: js.UndefOr[LookupFunction] = js.undefined
     
     /**
-      * @default 8192
+      * @default 16384
       */
     var maxHeaderSize: js.UndefOr[Double] = js.undefined
     
@@ -1912,6 +2066,8 @@ object httpMod {
     var socketPath: js.UndefOr[String] = js.undefined
     
     var timeout: js.UndefOr[Double] = js.undefined
+    
+    var uniqueHeaders: js.UndefOr[js.Array[String | js.Array[String]]] = js.undefined
   }
   object ClientRequestArgs {
     
@@ -1951,6 +2107,10 @@ object httpMod {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
+      inline def setHints(value: Double): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
+      
+      inline def setHintsUndefined: Self = StObject.set(x, "hints", js.undefined)
+      
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
       inline def setHostNull: Self = StObject.set(x, "host", null)
@@ -1963,9 +2123,21 @@ object httpMod {
       
       inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
       
+      inline def setInsecureHTTPParser(value: Boolean): Self = StObject.set(x, "insecureHTTPParser", value.asInstanceOf[js.Any])
+      
+      inline def setInsecureHTTPParserUndefined: Self = StObject.set(x, "insecureHTTPParser", js.undefined)
+      
+      inline def setJoinDuplicateHeaders(value: Boolean): Self = StObject.set(x, "joinDuplicateHeaders", value.asInstanceOf[js.Any])
+      
+      inline def setJoinDuplicateHeadersUndefined: Self = StObject.set(x, "joinDuplicateHeaders", js.undefined)
+      
       inline def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
       
       inline def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
+      
+      inline def setLocalPort(value: Double): Self = StObject.set(x, "localPort", value.asInstanceOf[js.Any])
+      
+      inline def setLocalPortUndefined: Self = StObject.set(x, "localPort", js.undefined)
       
       inline def setLookup(
         value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit
@@ -2014,6 +2186,12 @@ object httpMod {
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
       inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      
+      inline def setUniqueHeaders(value: js.Array[String | js.Array[String]]): Self = StObject.set(x, "uniqueHeaders", value.asInstanceOf[js.Any])
+      
+      inline def setUniqueHeadersUndefined: Self = StObject.set(x, "uniqueHeaders", js.undefined)
+      
+      inline def setUniqueHeadersVarargs(value: (String | js.Array[String])*): Self = StObject.set(x, "uniqueHeaders", js.Array(value*))
       
       inline def set_defaultAgent(value: Agent): Self = StObject.set(x, "_defaultAgent", value.asInstanceOf[js.Any])
       
@@ -2493,17 +2671,44 @@ object httpMod {
     ServerResponse[IncomingMessage]
   ] */] extends StObject {
     
+    /**
+      * Specifies the `IncomingMessage` class to be used. Useful for extending the original `IncomingMessage`.
+      */
     var IncomingMessage: js.UndefOr[Request] = js.undefined
     
+    /**
+      * Specifies the `ServerResponse` class to be used. Useful for extending the original `ServerResponse`.
+      */
     var ServerResponse: js.UndefOr[Response] = js.undefined
     
     /**
-      * Use an insecure HTTP parser that accepts invalid HTTP headers when true.
+      * Sets the interval value in milliseconds to check for request and headers timeout in incomplete requests.
+      * @default 30000
+      */
+    var connectionsCheckingInterval: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Optionally overrides all `socket`s' `readableHighWaterMark` and `writableHighWaterMark`.
+      * This affects `highWaterMark` property of both `IncomingMessage` and `ServerResponse`.
+      * Default: @see stream.getDefaultHighWaterMark().
+      * @since v20.1.0
+      */
+    var highWaterMark: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Use an insecure HTTP parser that accepts invalid HTTP headers when `true`.
       * Using the insecure parser should be avoided.
       * See --insecure-http-parser for more information.
       * @default false
       */
     var insecureHTTPParser: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * It joins the field line values of multiple headers in a request with `, ` instead of discarding the duplicates.
+      * @default false
+      * @since v18.14.0
+      */
+    var joinDuplicateHeaders: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set to `true`, it enables keep-alive functionality on the socket immediately after a new incoming connection is received,
@@ -2521,19 +2726,43 @@ object httpMod {
     var keepAliveInitialDelay: js.UndefOr[Double] = js.undefined
     
     /**
+      * The number of milliseconds of inactivity a server needs to wait for additional incoming data,
+      * after it has finished writing the last response, before a socket will be destroyed.
+      * @see Server.keepAliveTimeout for more information.
+      * @default 5000
+      * @since v18.0.0
+      */
+    var keepAliveTimeout: js.UndefOr[Double] = js.undefined
+    
+    /**
       * Optionally overrides the value of
       * `--max-http-header-size` for requests received by this server, i.e.
       * the maximum length of request headers in bytes.
-      * @default 8192
+      * @default 16384
+      * @since v13.3.0
       */
     var maxHeaderSize: js.UndefOr[Double] = js.undefined
     
     /**
       * If set to `true`, it disables the use of Nagle's algorithm immediately after a new incoming connection is received.
-      * @default false
+      * @default true
       * @since v16.5.0
       */
     var noDelay: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Sets the timeout value in milliseconds for receiving the entire request from the client.
+      * @see Server.requestTimeout for more information.
+      * @default 300000
+      * @since v18.0.0
+      */
+    var requestTimeout: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * A list of response headers that should be sent only once.
+      * If the header's value is an array, the items will be joined using `; `.
+      */
+    var uniqueHeaders: js.UndefOr[js.Array[String | js.Array[String]]] = js.undefined
   }
   object ServerOptions {
     
@@ -2551,6 +2780,14 @@ object httpMod {
         ServerResponse[IncomingMessage]
       ] */] (val x: Self & (ServerOptions[Request, Response])) extends AnyVal {
       
+      inline def setConnectionsCheckingInterval(value: Double): Self = StObject.set(x, "connectionsCheckingInterval", value.asInstanceOf[js.Any])
+      
+      inline def setConnectionsCheckingIntervalUndefined: Self = StObject.set(x, "connectionsCheckingInterval", js.undefined)
+      
+      inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+      
+      inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+      
       inline def setIncomingMessage(value: Request): Self = StObject.set(x, "IncomingMessage", value.asInstanceOf[js.Any])
       
       inline def setIncomingMessageUndefined: Self = StObject.set(x, "IncomingMessage", js.undefined)
@@ -2559,11 +2796,19 @@ object httpMod {
       
       inline def setInsecureHTTPParserUndefined: Self = StObject.set(x, "insecureHTTPParser", js.undefined)
       
+      inline def setJoinDuplicateHeaders(value: Boolean): Self = StObject.set(x, "joinDuplicateHeaders", value.asInstanceOf[js.Any])
+      
+      inline def setJoinDuplicateHeadersUndefined: Self = StObject.set(x, "joinDuplicateHeaders", js.undefined)
+      
       inline def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
       
       inline def setKeepAliveInitialDelay(value: Double): Self = StObject.set(x, "keepAliveInitialDelay", value.asInstanceOf[js.Any])
       
       inline def setKeepAliveInitialDelayUndefined: Self = StObject.set(x, "keepAliveInitialDelay", js.undefined)
+      
+      inline def setKeepAliveTimeout(value: Double): Self = StObject.set(x, "keepAliveTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setKeepAliveTimeoutUndefined: Self = StObject.set(x, "keepAliveTimeout", js.undefined)
       
       inline def setKeepAliveUndefined: Self = StObject.set(x, "keepAlive", js.undefined)
       
@@ -2575,9 +2820,19 @@ object httpMod {
       
       inline def setNoDelayUndefined: Self = StObject.set(x, "noDelay", js.undefined)
       
+      inline def setRequestTimeout(value: Double): Self = StObject.set(x, "requestTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setRequestTimeoutUndefined: Self = StObject.set(x, "requestTimeout", js.undefined)
+      
       inline def setServerResponse(value: Response): Self = StObject.set(x, "ServerResponse", value.asInstanceOf[js.Any])
       
       inline def setServerResponseUndefined: Self = StObject.set(x, "ServerResponse", js.undefined)
+      
+      inline def setUniqueHeaders(value: js.Array[String | js.Array[String]]): Self = StObject.set(x, "uniqueHeaders", value.asInstanceOf[js.Any])
+      
+      inline def setUniqueHeadersUndefined: Self = StObject.set(x, "uniqueHeaders", js.undefined)
+      
+      inline def setUniqueHeadersVarargs(value: (String | js.Array[String])*): Self = StObject.set(x, "uniqueHeaders", js.Array(value*))
     }
   }
 }

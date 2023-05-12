@@ -16,7 +16,7 @@ object libIconsWindowsOutlinedMod extends Shortcut {
   @js.native
   trait WindowsOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_WindowsOutlinedIconType: String = js.native

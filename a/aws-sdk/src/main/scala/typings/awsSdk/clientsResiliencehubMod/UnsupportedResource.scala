@@ -20,6 +20,11 @@ trait UnsupportedResource extends StObject {
     * The type of resource.
     */
   var resourceType: String255
+  
+  /**
+    * The status of the unsupported resource.
+    */
+  var unsupportedResourceStatus: js.UndefOr[String255] = js.undefined
 }
 object UnsupportedResource {
   
@@ -40,5 +45,9 @@ object UnsupportedResource {
     inline def setPhysicalResourceId(value: PhysicalResourceId): Self = StObject.set(x, "physicalResourceId", value.asInstanceOf[js.Any])
     
     inline def setResourceType(value: String255): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    
+    inline def setUnsupportedResourceStatus(value: String255): Self = StObject.set(x, "unsupportedResourceStatus", value.asInstanceOf[js.Any])
+    
+    inline def setUnsupportedResourceStatusUndefined: Self = StObject.set(x, "unsupportedResourceStatus", js.undefined)
   }
 }

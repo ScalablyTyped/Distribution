@@ -115,8 +115,11 @@ open class GoogleSpreadsheet ()
   /**
     * @description
     * load basic Spreadsheet document properties and child worksheets
+    *
+    * @param includeCells whether to also load grid data.
     */
   def loadInfo(): js.Promise[Unit] = js.native
+  def loadInfo(includeCells: Boolean): js.Promise[Unit] = js.native
   
   /**
     * @description

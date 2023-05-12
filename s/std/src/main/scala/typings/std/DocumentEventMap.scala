@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DocumentEventMap
   extends StObject
-     with DocumentAndElementEventHandlersEventMap
      with GlobalEventHandlersEventMap {
   
   /* standard dom */

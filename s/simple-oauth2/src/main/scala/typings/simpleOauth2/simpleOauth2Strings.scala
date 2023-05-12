@@ -34,6 +34,10 @@ object simpleOauth2Strings {
   inline def json: json = "json".asInstanceOf[json]
   
   @js.native
+  sealed trait loose extends StObject
+  inline def loose: loose = "loose".asInstanceOf[loose]
+  
+  @js.native
   sealed trait refresh_token
     extends StObject
        with TokenType

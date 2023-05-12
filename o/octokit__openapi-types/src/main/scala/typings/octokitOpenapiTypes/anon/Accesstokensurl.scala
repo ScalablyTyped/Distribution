@@ -2,7 +2,6 @@ package typings.octokitOpenapiTypes.anon
 
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.all
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.selected
-import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ trait Accesstokensurl extends StObject {
     */
   var access_tokens_url: String
   
-  var account: (Partial[Avatarurl] & Partial[Htmlurl]) | Null
+  var account: Avatarurl | Htmlurl | Null
   
   /** @example 1 */
   var app_id: Double
@@ -111,7 +110,7 @@ object Accesstokensurl {
     
     inline def setAccess_tokens_url(value: String): Self = StObject.set(x, "access_tokens_url", value.asInstanceOf[js.Any])
     
-    inline def setAccount(value: Partial[Avatarurl] & Partial[Htmlurl]): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: Avatarurl | Htmlurl): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
     inline def setAccountNull: Self = StObject.set(x, "account", null)
     

@@ -36,6 +36,18 @@ import typings.wixWixUiIconsCommon.distTypesResponsiveEditorSystemDistComponents
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorSystemDistComponentsInspectorMod.InspectorProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorSystemDistComponentsInteractionsMod.InteractionsProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorSystemDistComponentsInteractiveMod.InteractiveProps
+import typings.wixWixUiIconsCommon.distTypesResponsiveEditorSystemDistComponentsJustifyHorizontalCenterBoldMod.JustifyHorizontalCenterBoldProps
+import typings.wixWixUiIconsCommon.distTypesResponsiveEditorSystemDistComponentsJustifyHorizontalLeftBoldMod.JustifyHorizontalLeftBoldProps
+import typings.wixWixUiIconsCommon.distTypesResponsiveEditorSystemDistComponentsJustifyHorizontalRightBoldMod.JustifyHorizontalRightBoldProps
+import typings.wixWixUiIconsCommon.distTypesResponsiveEditorSystemDistComponentsJustifyHorizontalSpaceAroundBoldMod.JustifyHorizontalSpaceAroundBoldProps
+import typings.wixWixUiIconsCommon.distTypesResponsiveEditorSystemDistComponentsJustifyHorizontalSpaceBetweenBoldMod.JustifyHorizontalSpaceBetweenBoldProps
+import typings.wixWixUiIconsCommon.distTypesResponsiveEditorSystemDistComponentsJustifyHorizontalSpaceEvenlyBoldMod.JustifyHorizontalSpaceEvenlyBoldProps
+import typings.wixWixUiIconsCommon.distTypesResponsiveEditorSystemDistComponentsJustifyVerticalBottomBoldMod.JustifyVerticalBottomBoldProps
+import typings.wixWixUiIconsCommon.distTypesResponsiveEditorSystemDistComponentsJustifyVerticalCenterBoldMod.JustifyVerticalCenterBoldProps
+import typings.wixWixUiIconsCommon.distTypesResponsiveEditorSystemDistComponentsJustifyVerticalSpaceAroundBoldMod.JustifyVerticalSpaceAroundBoldProps
+import typings.wixWixUiIconsCommon.distTypesResponsiveEditorSystemDistComponentsJustifyVerticalSpaceBetweenBoldMod.JustifyVerticalSpaceBetweenBoldProps
+import typings.wixWixUiIconsCommon.distTypesResponsiveEditorSystemDistComponentsJustifyVerticalSpaceEvenlyBoldMod.JustifyVerticalSpaceEvenlyBoldProps
+import typings.wixWixUiIconsCommon.distTypesResponsiveEditorSystemDistComponentsJustifyVerticalTopBoldMod.JustifyVerticalTopBoldProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorSystemDistComponentsLayersMod.LayersProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorSystemDistComponentsLayoutMod.LayoutProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorSystemDistComponentsLightBulbMod.LightBulbProps
@@ -43,6 +55,10 @@ import typings.wixWixUiIconsCommon.distTypesResponsiveEditorSystemDistComponents
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorSystemDistComponentsMasterMod.MasterProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorSystemDistComponentsMinusMod.MinusProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorSystemDistComponentsMobileVerticalMod.MobileVerticalProps
+import typings.wixWixUiIconsCommon.distTypesResponsiveEditorSystemDistComponentsMoveDownMod.MoveDownProps
+import typings.wixWixUiIconsCommon.distTypesResponsiveEditorSystemDistComponentsMoveLeftMod.MoveLeftProps
+import typings.wixWixUiIconsCommon.distTypesResponsiveEditorSystemDistComponentsMoveRightMod.MoveRightProps
+import typings.wixWixUiIconsCommon.distTypesResponsiveEditorSystemDistComponentsMoveUpMod.MoveUpProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorSystemDistComponentsPagesMod.PagesProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorSystemDistComponentsPanelCloseMod.PanelCloseProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorSystemDistComponentsPanelHelpMod.PanelHelpProps
@@ -204,6 +220,54 @@ object distTypesResponsiveEditorSystemDistMod {
   @js.native
   val Interactive: FC[InteractiveProps] = js.native
   
+  @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor/system/dist", "JustifyHorizontalCenterBold")
+  @js.native
+  val JustifyHorizontalCenterBold: FC[JustifyHorizontalCenterBoldProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor/system/dist", "JustifyHorizontalLeftBold")
+  @js.native
+  val JustifyHorizontalLeftBold: FC[JustifyHorizontalLeftBoldProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor/system/dist", "JustifyHorizontalRightBold")
+  @js.native
+  val JustifyHorizontalRightBold: FC[JustifyHorizontalRightBoldProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor/system/dist", "JustifyHorizontalSpaceAroundBold")
+  @js.native
+  val JustifyHorizontalSpaceAroundBold: FC[JustifyHorizontalSpaceAroundBoldProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor/system/dist", "JustifyHorizontalSpaceBetweenBold")
+  @js.native
+  val JustifyHorizontalSpaceBetweenBold: FC[JustifyHorizontalSpaceBetweenBoldProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor/system/dist", "JustifyHorizontalSpaceEvenlyBold")
+  @js.native
+  val JustifyHorizontalSpaceEvenlyBold: FC[JustifyHorizontalSpaceEvenlyBoldProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor/system/dist", "JustifyVerticalBottomBold")
+  @js.native
+  val JustifyVerticalBottomBold: FC[JustifyVerticalBottomBoldProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor/system/dist", "JustifyVerticalCenterBold")
+  @js.native
+  val JustifyVerticalCenterBold: FC[JustifyVerticalCenterBoldProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor/system/dist", "JustifyVerticalSpaceAroundBold")
+  @js.native
+  val JustifyVerticalSpaceAroundBold: FC[JustifyVerticalSpaceAroundBoldProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor/system/dist", "JustifyVerticalSpaceBetweenBold")
+  @js.native
+  val JustifyVerticalSpaceBetweenBold: FC[JustifyVerticalSpaceBetweenBoldProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor/system/dist", "JustifyVerticalSpaceEvenlyBold")
+  @js.native
+  val JustifyVerticalSpaceEvenlyBold: FC[JustifyVerticalSpaceEvenlyBoldProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor/system/dist", "JustifyVerticalTopBold")
+  @js.native
+  val JustifyVerticalTopBold: FC[JustifyVerticalTopBoldProps] = js.native
+  
   @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor/system/dist", "Layers")
   @js.native
   val Layers: FC[LayersProps] = js.native
@@ -231,6 +295,22 @@ object distTypesResponsiveEditorSystemDistMod {
   @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor/system/dist", "MobileVertical")
   @js.native
   val MobileVertical: FC[MobileVerticalProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor/system/dist", "MoveDown")
+  @js.native
+  val MoveDown: FC[MoveDownProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor/system/dist", "MoveLeft")
+  @js.native
+  val MoveLeft: FC[MoveLeftProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor/system/dist", "MoveRight")
+  @js.native
+  val MoveRight: FC[MoveRightProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor/system/dist", "MoveUp")
+  @js.native
+  val MoveUp: FC[MoveUpProps] = js.native
   
   @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor/system/dist", "Pages")
   @js.native

@@ -17,12 +17,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EMR extends Service {
   
   /**
-    * Adds an instance fleet to a running cluster.  The instance fleet configuration is available only in Amazon EMR versions 4.8.0 and later, excluding 5.0.x. 
+    * Adds an instance fleet to a running cluster.  The instance fleet configuration is available only in Amazon EMR releases 4.8.0 and later, excluding 5.0.x. 
     */
   def addInstanceFleet(): Request[AddInstanceFleetOutput, AWSError] = js.native
   def addInstanceFleet(callback: js.Function2[/* err */ AWSError, /* data */ AddInstanceFleetOutput, scala.Unit]): Request[AddInstanceFleetOutput, AWSError] = js.native
   /**
-    * Adds an instance fleet to a running cluster.  The instance fleet configuration is available only in Amazon EMR versions 4.8.0 and later, excluding 5.0.x. 
+    * Adds an instance fleet to a running cluster.  The instance fleet configuration is available only in Amazon EMR releases 4.8.0 and later, excluding 5.0.x. 
     */
   def addInstanceFleet(params: AddInstanceFleetInput): Request[AddInstanceFleetOutput, AWSError] = js.native
   def addInstanceFleet(
@@ -45,12 +45,12 @@ trait EMR extends Service {
   ): Request[AddInstanceGroupsOutput, AWSError] = js.native
   
   /**
-    * AddJobFlowSteps adds new steps to a running cluster. A maximum of 256 steps are allowed in each job flow. If your cluster is long-running (such as a Hive data warehouse) or complex, you may require more than 256 steps to process your data. You can bypass the 256-step limitation in various ways, including using SSH to connect to the master node and submitting queries directly to the software running on the master node, such as Hive and Hadoop. For more information on how to do this, see Add More than 256 Steps to a Cluster in the Amazon EMR Management Guide. A step specifies the location of a JAR file stored either on the master node of the cluster or in Amazon S3. Each step is performed by the main function of the main class of the JAR file. The main class can be specified either in the manifest of the JAR or by using the MainFunction parameter of the step. Amazon EMR executes each step in the order listed. For a step to be considered complete, the main function must exit with a zero exit code and all Hadoop jobs started while the step was running must have completed and run successfully. You can only add steps to a cluster that is in one of the following states: STARTING, BOOTSTRAPPING, RUNNING, or WAITING.  The string values passed into HadoopJarStep object cannot exceed a total of 10240 characters. 
+    * AddJobFlowSteps adds new steps to a running cluster. A maximum of 256 steps are allowed in each job flow. If your cluster is long-running (such as a Hive data warehouse) or complex, you may require more than 256 steps to process your data. You can bypass the 256-step limitation in various ways, including using SSH to connect to the master node and submitting queries directly to the software running on the master node, such as Hive and Hadoop. A step specifies the location of a JAR file stored either on the master node of the cluster or in Amazon S3. Each step is performed by the main function of the main class of the JAR file. The main class can be specified either in the manifest of the JAR or by using the MainFunction parameter of the step. Amazon EMR executes each step in the order listed. For a step to be considered complete, the main function must exit with a zero exit code and all Hadoop jobs started while the step was running must have completed and run successfully. You can only add steps to a cluster that is in one of the following states: STARTING, BOOTSTRAPPING, RUNNING, or WAITING.  The string values passed into HadoopJarStep object cannot exceed a total of 10240 characters. 
     */
   def addJobFlowSteps(): Request[AddJobFlowStepsOutput, AWSError] = js.native
   def addJobFlowSteps(callback: js.Function2[/* err */ AWSError, /* data */ AddJobFlowStepsOutput, scala.Unit]): Request[AddJobFlowStepsOutput, AWSError] = js.native
   /**
-    * AddJobFlowSteps adds new steps to a running cluster. A maximum of 256 steps are allowed in each job flow. If your cluster is long-running (such as a Hive data warehouse) or complex, you may require more than 256 steps to process your data. You can bypass the 256-step limitation in various ways, including using SSH to connect to the master node and submitting queries directly to the software running on the master node, such as Hive and Hadoop. For more information on how to do this, see Add More than 256 Steps to a Cluster in the Amazon EMR Management Guide. A step specifies the location of a JAR file stored either on the master node of the cluster or in Amazon S3. Each step is performed by the main function of the main class of the JAR file. The main class can be specified either in the manifest of the JAR or by using the MainFunction parameter of the step. Amazon EMR executes each step in the order listed. For a step to be considered complete, the main function must exit with a zero exit code and all Hadoop jobs started while the step was running must have completed and run successfully. You can only add steps to a cluster that is in one of the following states: STARTING, BOOTSTRAPPING, RUNNING, or WAITING.  The string values passed into HadoopJarStep object cannot exceed a total of 10240 characters. 
+    * AddJobFlowSteps adds new steps to a running cluster. A maximum of 256 steps are allowed in each job flow. If your cluster is long-running (such as a Hive data warehouse) or complex, you may require more than 256 steps to process your data. You can bypass the 256-step limitation in various ways, including using SSH to connect to the master node and submitting queries directly to the software running on the master node, such as Hive and Hadoop. A step specifies the location of a JAR file stored either on the master node of the cluster or in Amazon S3. Each step is performed by the main function of the main class of the JAR file. The main class can be specified either in the manifest of the JAR or by using the MainFunction parameter of the step. Amazon EMR executes each step in the order listed. For a step to be considered complete, the main function must exit with a zero exit code and all Hadoop jobs started while the step was running must have completed and run successfully. You can only add steps to a cluster that is in one of the following states: STARTING, BOOTSTRAPPING, RUNNING, or WAITING.  The string values passed into HadoopJarStep object cannot exceed a total of 10240 characters. 
     */
   def addJobFlowSteps(params: AddJobFlowStepsInput): Request[AddJobFlowStepsOutput, AWSError] = js.native
   def addJobFlowSteps(
@@ -73,12 +73,12 @@ trait EMR extends Service {
   ): Request[AddTagsOutput, AWSError] = js.native
   
   /**
-    * Cancels a pending step or steps in a running cluster. Available only in Amazon EMR versions 4.8.0 and later, excluding version 5.0.0. A maximum of 256 steps are allowed in each CancelSteps request. CancelSteps is idempotent but asynchronous; it does not guarantee that a step will be canceled, even if the request is successfully submitted. When you use Amazon EMR versions 5.28.0 and later, you can cancel steps that are in a PENDING or RUNNING state. In earlier versions of Amazon EMR, you can only cancel steps that are in a PENDING state. 
+    * Cancels a pending step or steps in a running cluster. Available only in Amazon EMR versions 4.8.0 and later, excluding version 5.0.0. A maximum of 256 steps are allowed in each CancelSteps request. CancelSteps is idempotent but asynchronous; it does not guarantee that a step will be canceled, even if the request is successfully submitted. When you use Amazon EMR releases 5.28.0 and later, you can cancel steps that are in a PENDING or RUNNING state. In earlier versions of Amazon EMR, you can only cancel steps that are in a PENDING state. 
     */
   def cancelSteps(): Request[CancelStepsOutput, AWSError] = js.native
   def cancelSteps(callback: js.Function2[/* err */ AWSError, /* data */ CancelStepsOutput, scala.Unit]): Request[CancelStepsOutput, AWSError] = js.native
   /**
-    * Cancels a pending step or steps in a running cluster. Available only in Amazon EMR versions 4.8.0 and later, excluding version 5.0.0. A maximum of 256 steps are allowed in each CancelSteps request. CancelSteps is idempotent but asynchronous; it does not guarantee that a step will be canceled, even if the request is successfully submitted. When you use Amazon EMR versions 5.28.0 and later, you can cancel steps that are in a PENDING or RUNNING state. In earlier versions of Amazon EMR, you can only cancel steps that are in a PENDING state. 
+    * Cancels a pending step or steps in a running cluster. Available only in Amazon EMR versions 4.8.0 and later, excluding version 5.0.0. A maximum of 256 steps are allowed in each CancelSteps request. CancelSteps is idempotent but asynchronous; it does not guarantee that a step will be canceled, even if the request is successfully submitted. When you use Amazon EMR releases 5.28.0 and later, you can cancel steps that are in a PENDING or RUNNING state. In earlier versions of Amazon EMR, you can only cancel steps that are in a PENDING state. 
     */
   def cancelSteps(params: CancelStepsInput): Request[CancelStepsOutput, AWSError] = js.native
   def cancelSteps(
@@ -120,12 +120,12 @@ trait EMR extends Service {
   ): Request[CreateStudioOutput, AWSError] = js.native
   
   /**
-    * Maps a user or group to the Amazon EMR Studio specified by StudioId, and applies a session policy to refine Studio permissions for that user or group. Use CreateStudioSessionMapping to assign users to a Studio when you use Amazon Web Services SSO authentication. For instructions on how to assign users to a Studio when you use IAM authentication, see Assign a user or group to your EMR Studio.
+    * Maps a user or group to the Amazon EMR Studio specified by StudioId, and applies a session policy to refine Studio permissions for that user or group. Use CreateStudioSessionMapping to assign users to a Studio when you use IAM Identity Center authentication. For instructions on how to assign users to a Studio when you use IAM authentication, see Assign a user or group to your EMR Studio.
     */
   def createStudioSessionMapping(): Request[js.Object, AWSError] = js.native
   def createStudioSessionMapping(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Maps a user or group to the Amazon EMR Studio specified by StudioId, and applies a session policy to refine Studio permissions for that user or group. Use CreateStudioSessionMapping to assign users to a Studio when you use Amazon Web Services SSO authentication. For instructions on how to assign users to a Studio when you use IAM authentication, see Assign a user or group to your EMR Studio.
+    * Maps a user or group to the Amazon EMR Studio specified by StudioId, and applies a session policy to refine Studio permissions for that user or group. Use CreateStudioSessionMapping to assign users to a Studio when you use IAM Identity Center authentication. For instructions on how to assign users to a Studio when you use IAM authentication, see Assign a user or group to your EMR Studio.
     */
   def createStudioSessionMapping(params: CreateStudioSessionMappingInput): Request[js.Object, AWSError] = js.native
   def createStudioSessionMapping(
@@ -220,12 +220,12 @@ trait EMR extends Service {
   ): Request[DescribeNotebookExecutionOutput, AWSError] = js.native
   
   /**
-    * Provides EMR release label details, such as releases available the region where the API request is run, and the available applications for a specific EMR release label. Can also list EMR release versions that support a specified version of Spark.
+    * Provides Amazon EMR release label details, such as the releases available the Region where the API request is run, and the available applications for a specific Amazon EMR release label. Can also list Amazon EMR releases that support a specified version of Spark.
     */
   def describeReleaseLabel(): Request[DescribeReleaseLabelOutput, AWSError] = js.native
   def describeReleaseLabel(callback: js.Function2[/* err */ AWSError, /* data */ DescribeReleaseLabelOutput, scala.Unit]): Request[DescribeReleaseLabelOutput, AWSError] = js.native
   /**
-    * Provides EMR release label details, such as releases available the region where the API request is run, and the available applications for a specific EMR release label. Can also list EMR release versions that support a specified version of Spark.
+    * Provides Amazon EMR release label details, such as the releases available the Region where the API request is run, and the available applications for a specific Amazon EMR release label. Can also list Amazon EMR releases that support a specified version of Spark.
     */
   def describeReleaseLabel(params: DescribeReleaseLabelInput): Request[DescribeReleaseLabelOutput, AWSError] = js.native
   def describeReleaseLabel(
@@ -308,6 +308,22 @@ trait EMR extends Service {
   ): Request[GetBlockPublicAccessConfigurationOutput, AWSError] = js.native
   
   /**
+    * Provides temporary, HTTP basic credentials that are associated with a given runtime IAM role and used by a cluster with fine-grained access control activated. You can use these credentials to connect to cluster endpoints that support username and password authentication.
+    */
+  def getClusterSessionCredentials(): Request[GetClusterSessionCredentialsOutput, AWSError] = js.native
+  def getClusterSessionCredentials(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetClusterSessionCredentialsOutput, scala.Unit]
+  ): Request[GetClusterSessionCredentialsOutput, AWSError] = js.native
+  /**
+    * Provides temporary, HTTP basic credentials that are associated with a given runtime IAM role and used by a cluster with fine-grained access control activated. You can use these credentials to connect to cluster endpoints that support username and password authentication.
+    */
+  def getClusterSessionCredentials(params: GetClusterSessionCredentialsInput): Request[GetClusterSessionCredentialsOutput, AWSError] = js.native
+  def getClusterSessionCredentials(
+    params: GetClusterSessionCredentialsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetClusterSessionCredentialsOutput, scala.Unit]
+  ): Request[GetClusterSessionCredentialsOutput, AWSError] = js.native
+  
+  /**
     * Fetches the attached managed scaling policy for an Amazon EMR cluster. 
     */
   def getManagedScalingPolicy(): Request[GetManagedScalingPolicyOutput, AWSError] = js.native
@@ -364,12 +380,12 @@ trait EMR extends Service {
   ): Request[ListClustersOutput, AWSError] = js.native
   
   /**
-    * Lists all available details about the instance fleets in a cluster.  The instance fleet configuration is available only in Amazon EMR versions 4.8.0 and later, excluding 5.0.x versions. 
+    * Lists all available details about the instance fleets in a cluster.  The instance fleet configuration is available only in Amazon EMR releases 4.8.0 and later, excluding 5.0.x versions. 
     */
   def listInstanceFleets(): Request[ListInstanceFleetsOutput, AWSError] = js.native
   def listInstanceFleets(callback: js.Function2[/* err */ AWSError, /* data */ ListInstanceFleetsOutput, scala.Unit]): Request[ListInstanceFleetsOutput, AWSError] = js.native
   /**
-    * Lists all available details about the instance fleets in a cluster.  The instance fleet configuration is available only in Amazon EMR versions 4.8.0 and later, excluding 5.0.x versions. 
+    * Lists all available details about the instance fleets in a cluster.  The instance fleet configuration is available only in Amazon EMR releases 4.8.0 and later, excluding 5.0.x versions. 
     */
   def listInstanceFleets(params: ListInstanceFleetsInput): Request[ListInstanceFleetsOutput, AWSError] = js.native
   def listInstanceFleets(
@@ -392,12 +408,12 @@ trait EMR extends Service {
   ): Request[ListInstanceGroupsOutput, AWSError] = js.native
   
   /**
-    * Provides information for all active EC2 instances and EC2 instances terminated in the last 30 days, up to a maximum of 2,000. EC2 instances in any of the following states are considered active: AWAITING_FULFILLMENT, PROVISIONING, BOOTSTRAPPING, RUNNING.
+    * Provides information for all active Amazon EC2 instances and Amazon EC2 instances terminated in the last 30 days, up to a maximum of 2,000. Amazon EC2 instances in any of the following states are considered active: AWAITING_FULFILLMENT, PROVISIONING, BOOTSTRAPPING, RUNNING.
     */
   def listInstances(): Request[ListInstancesOutput, AWSError] = js.native
   def listInstances(callback: js.Function2[/* err */ AWSError, /* data */ ListInstancesOutput, scala.Unit]): Request[ListInstancesOutput, AWSError] = js.native
   /**
-    * Provides information for all active EC2 instances and EC2 instances terminated in the last 30 days, up to a maximum of 2,000. EC2 instances in any of the following states are considered active: AWAITING_FULFILLMENT, PROVISIONING, BOOTSTRAPPING, RUNNING.
+    * Provides information for all active Amazon EC2 instances and Amazon EC2 instances terminated in the last 30 days, up to a maximum of 2,000. Amazon EC2 instances in any of the following states are considered active: AWAITING_FULFILLMENT, PROVISIONING, BOOTSTRAPPING, RUNNING.
     */
   def listInstances(params: ListInstancesInput): Request[ListInstancesOutput, AWSError] = js.native
   def listInstances(
@@ -406,12 +422,12 @@ trait EMR extends Service {
   ): Request[ListInstancesOutput, AWSError] = js.native
   
   /**
-    * Provides summaries of all notebook executions. You can filter the list based on multiple criteria such as status, time range, and editor id. Returns a maximum of 50 notebook executions and a marker to track the paging of a longer notebook execution list across multiple ListNotebookExecution calls.
+    * Provides summaries of all notebook executions. You can filter the list based on multiple criteria such as status, time range, and editor id. Returns a maximum of 50 notebook executions and a marker to track the paging of a longer notebook execution list across multiple ListNotebookExecutions calls.
     */
   def listNotebookExecutions(): Request[ListNotebookExecutionsOutput, AWSError] = js.native
   def listNotebookExecutions(callback: js.Function2[/* err */ AWSError, /* data */ ListNotebookExecutionsOutput, scala.Unit]): Request[ListNotebookExecutionsOutput, AWSError] = js.native
   /**
-    * Provides summaries of all notebook executions. You can filter the list based on multiple criteria such as status, time range, and editor id. Returns a maximum of 50 notebook executions and a marker to track the paging of a longer notebook execution list across multiple ListNotebookExecution calls.
+    * Provides summaries of all notebook executions. You can filter the list based on multiple criteria such as status, time range, and editor id. Returns a maximum of 50 notebook executions and a marker to track the paging of a longer notebook execution list across multiple ListNotebookExecutions calls.
     */
   def listNotebookExecutions(params: ListNotebookExecutionsInput): Request[ListNotebookExecutionsOutput, AWSError] = js.native
   def listNotebookExecutions(
@@ -420,12 +436,12 @@ trait EMR extends Service {
   ): Request[ListNotebookExecutionsOutput, AWSError] = js.native
   
   /**
-    * Retrieves release labels of EMR services in the region where the API is called.
+    * Retrieves release labels of Amazon EMR services in the Region where the API is called.
     */
   def listReleaseLabels(): Request[ListReleaseLabelsOutput, AWSError] = js.native
   def listReleaseLabels(callback: js.Function2[/* err */ AWSError, /* data */ ListReleaseLabelsOutput, scala.Unit]): Request[ListReleaseLabelsOutput, AWSError] = js.native
   /**
-    * Retrieves release labels of EMR services in the region where the API is called.
+    * Retrieves release labels of Amazon EMR services in the Region where the API is called.
     */
   def listReleaseLabels(params: ListReleaseLabelsInput): Request[ListReleaseLabelsOutput, AWSError] = js.native
   def listReleaseLabels(
@@ -506,12 +522,12 @@ trait EMR extends Service {
   ): Request[ModifyClusterOutput, AWSError] = js.native
   
   /**
-    * Modifies the target On-Demand and target Spot capacities for the instance fleet with the specified InstanceFleetID within the cluster specified using ClusterID. The call either succeeds or fails atomically.  The instance fleet configuration is available only in Amazon EMR versions 4.8.0 and later, excluding 5.0.x versions. 
+    * Modifies the target On-Demand and target Spot capacities for the instance fleet with the specified InstanceFleetID within the cluster specified using ClusterID. The call either succeeds or fails atomically.  The instance fleet configuration is available only in Amazon EMR releases 4.8.0 and later, excluding 5.0.x versions. 
     */
   def modifyInstanceFleet(): Request[js.Object, AWSError] = js.native
   def modifyInstanceFleet(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Modifies the target On-Demand and target Spot capacities for the instance fleet with the specified InstanceFleetID within the cluster specified using ClusterID. The call either succeeds or fails atomically.  The instance fleet configuration is available only in Amazon EMR versions 4.8.0 and later, excluding 5.0.x versions. 
+    * Modifies the target On-Demand and target Spot capacities for the instance fleet with the specified InstanceFleetID within the cluster specified using ClusterID. The call either succeeds or fails atomically.  The instance fleet configuration is available only in Amazon EMR releases 4.8.0 and later, excluding 5.0.x versions. 
     */
   def modifyInstanceFleet(params: ModifyInstanceFleetInput): Request[js.Object, AWSError] = js.native
   def modifyInstanceFleet(
@@ -534,12 +550,12 @@ trait EMR extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Creates or updates an automatic scaling policy for a core instance group or task instance group in an Amazon EMR cluster. The automatic scaling policy defines how an instance group dynamically adds and terminates EC2 instances in response to the value of a CloudWatch metric.
+    * Creates or updates an automatic scaling policy for a core instance group or task instance group in an Amazon EMR cluster. The automatic scaling policy defines how an instance group dynamically adds and terminates Amazon EC2 instances in response to the value of a CloudWatch metric.
     */
   def putAutoScalingPolicy(): Request[PutAutoScalingPolicyOutput, AWSError] = js.native
   def putAutoScalingPolicy(callback: js.Function2[/* err */ AWSError, /* data */ PutAutoScalingPolicyOutput, scala.Unit]): Request[PutAutoScalingPolicyOutput, AWSError] = js.native
   /**
-    * Creates or updates an automatic scaling policy for a core instance group or task instance group in an Amazon EMR cluster. The automatic scaling policy defines how an instance group dynamically adds and terminates EC2 instances in response to the value of a CloudWatch metric.
+    * Creates or updates an automatic scaling policy for a core instance group or task instance group in an Amazon EMR cluster. The automatic scaling policy defines how an instance group dynamically adds and terminates Amazon EC2 instances in response to the value of a CloudWatch metric.
     */
   def putAutoScalingPolicy(params: PutAutoScalingPolicyInput): Request[PutAutoScalingPolicyOutput, AWSError] = js.native
   def putAutoScalingPolicy(
@@ -548,12 +564,12 @@ trait EMR extends Service {
   ): Request[PutAutoScalingPolicyOutput, AWSError] = js.native
   
   /**
-    *  Auto-termination is supported in Amazon EMR versions 5.30.0 and 6.1.0 and later. For more information, see Using an auto-termination policy.  Creates or updates an auto-termination policy for an Amazon EMR cluster. An auto-termination policy defines the amount of idle time in seconds after which a cluster automatically terminates. For alternative cluster termination options, see Control cluster termination.
+    *  Auto-termination is supported in Amazon EMR releases 5.30.0 and 6.1.0 and later. For more information, see Using an auto-termination policy.  Creates or updates an auto-termination policy for an Amazon EMR cluster. An auto-termination policy defines the amount of idle time in seconds after which a cluster automatically terminates. For alternative cluster termination options, see Control cluster termination.
     */
   def putAutoTerminationPolicy(): Request[PutAutoTerminationPolicyOutput, AWSError] = js.native
   def putAutoTerminationPolicy(callback: js.Function2[/* err */ AWSError, /* data */ PutAutoTerminationPolicyOutput, scala.Unit]): Request[PutAutoTerminationPolicyOutput, AWSError] = js.native
   /**
-    *  Auto-termination is supported in Amazon EMR versions 5.30.0 and 6.1.0 and later. For more information, see Using an auto-termination policy.  Creates or updates an auto-termination policy for an Amazon EMR cluster. An auto-termination policy defines the amount of idle time in seconds after which a cluster automatically terminates. For alternative cluster termination options, see Control cluster termination.
+    *  Auto-termination is supported in Amazon EMR releases 5.30.0 and 6.1.0 and later. For more information, see Using an auto-termination policy.  Creates or updates an auto-termination policy for an Amazon EMR cluster. An auto-termination policy defines the amount of idle time in seconds after which a cluster automatically terminates. For alternative cluster termination options, see Control cluster termination.
     */
   def putAutoTerminationPolicy(params: PutAutoTerminationPolicyInput): Request[PutAutoTerminationPolicyOutput, AWSError] = js.native
   def putAutoTerminationPolicy(
@@ -578,12 +594,12 @@ trait EMR extends Service {
   ): Request[PutBlockPublicAccessConfigurationOutput, AWSError] = js.native
   
   /**
-    * Creates or updates a managed scaling policy for an Amazon EMR cluster. The managed scaling policy defines the limits for resources, such as EC2 instances that can be added or terminated from a cluster. The policy only applies to the core and task nodes. The master node cannot be scaled after initial configuration. 
+    * Creates or updates a managed scaling policy for an Amazon EMR cluster. The managed scaling policy defines the limits for resources, such as Amazon EC2 instances that can be added or terminated from a cluster. The policy only applies to the core and task nodes. The master node cannot be scaled after initial configuration. 
     */
   def putManagedScalingPolicy(): Request[PutManagedScalingPolicyOutput, AWSError] = js.native
   def putManagedScalingPolicy(callback: js.Function2[/* err */ AWSError, /* data */ PutManagedScalingPolicyOutput, scala.Unit]): Request[PutManagedScalingPolicyOutput, AWSError] = js.native
   /**
-    * Creates or updates a managed scaling policy for an Amazon EMR cluster. The managed scaling policy defines the limits for resources, such as EC2 instances that can be added or terminated from a cluster. The policy only applies to the core and task nodes. The master node cannot be scaled after initial configuration. 
+    * Creates or updates a managed scaling policy for an Amazon EMR cluster. The managed scaling policy defines the limits for resources, such as Amazon EC2 instances that can be added or terminated from a cluster. The policy only applies to the core and task nodes. The master node cannot be scaled after initial configuration. 
     */
   def putManagedScalingPolicy(params: PutManagedScalingPolicyInput): Request[PutManagedScalingPolicyOutput, AWSError] = js.native
   def putManagedScalingPolicy(
@@ -592,12 +608,12 @@ trait EMR extends Service {
   ): Request[PutManagedScalingPolicyOutput, AWSError] = js.native
   
   /**
-    * Removes an automatic scaling policy from a specified instance group within an EMR cluster.
+    * Removes an automatic scaling policy from a specified instance group within an Amazon EMR cluster.
     */
   def removeAutoScalingPolicy(): Request[RemoveAutoScalingPolicyOutput, AWSError] = js.native
   def removeAutoScalingPolicy(callback: js.Function2[/* err */ AWSError, /* data */ RemoveAutoScalingPolicyOutput, scala.Unit]): Request[RemoveAutoScalingPolicyOutput, AWSError] = js.native
   /**
-    * Removes an automatic scaling policy from a specified instance group within an EMR cluster.
+    * Removes an automatic scaling policy from a specified instance group within an Amazon EMR cluster.
     */
   def removeAutoScalingPolicy(params: RemoveAutoScalingPolicyInput): Request[RemoveAutoScalingPolicyOutput, AWSError] = js.native
   def removeAutoScalingPolicy(
@@ -622,14 +638,14 @@ trait EMR extends Service {
   ): Request[RemoveAutoTerminationPolicyOutput, AWSError] = js.native
   
   /**
-    *  Removes a managed scaling policy from a specified EMR cluster. 
+    *  Removes a managed scaling policy from a specified Amazon EMR cluster. 
     */
   def removeManagedScalingPolicy(): Request[RemoveManagedScalingPolicyOutput, AWSError] = js.native
   def removeManagedScalingPolicy(
     callback: js.Function2[/* err */ AWSError, /* data */ RemoveManagedScalingPolicyOutput, scala.Unit]
   ): Request[RemoveManagedScalingPolicyOutput, AWSError] = js.native
   /**
-    *  Removes a managed scaling policy from a specified EMR cluster. 
+    *  Removes a managed scaling policy from a specified Amazon EMR cluster. 
     */
   def removeManagedScalingPolicy(params: RemoveManagedScalingPolicyInput): Request[RemoveManagedScalingPolicyOutput, AWSError] = js.native
   def removeManagedScalingPolicy(
@@ -652,12 +668,12 @@ trait EMR extends Service {
   ): Request[RemoveTagsOutput, AWSError] = js.native
   
   /**
-    * RunJobFlow creates and starts running a new cluster (job flow). The cluster runs the steps specified. After the steps complete, the cluster stops and the HDFS partition is lost. To prevent loss of data, configure the last step of the job flow to store results in Amazon S3. If the JobFlowInstancesConfig KeepJobFlowAliveWhenNoSteps parameter is set to TRUE, the cluster transitions to the WAITING state rather than shutting down after the steps have completed.  For additional protection, you can set the JobFlowInstancesConfig TerminationProtected parameter to TRUE to lock the cluster and prevent it from being terminated by API call, user intervention, or in the event of a job flow error. A maximum of 256 steps are allowed in each job flow. If your cluster is long-running (such as a Hive data warehouse) or complex, you may require more than 256 steps to process your data. You can bypass the 256-step limitation in various ways, including using the SSH shell to connect to the master node and submitting queries directly to the software running on the master node, such as Hive and Hadoop. For more information on how to do this, see Add More than 256 Steps to a Cluster in the Amazon EMR Management Guide. For long running clusters, we recommend that you periodically store your results.  The instance fleets configuration is available only in Amazon EMR versions 4.8.0 and later, excluding 5.0.x versions. The RunJobFlow request can contain InstanceFleets parameters or InstanceGroups parameters, but not both. 
+    * RunJobFlow creates and starts running a new cluster (job flow). The cluster runs the steps specified. After the steps complete, the cluster stops and the HDFS partition is lost. To prevent loss of data, configure the last step of the job flow to store results in Amazon S3. If the JobFlowInstancesConfig KeepJobFlowAliveWhenNoSteps parameter is set to TRUE, the cluster transitions to the WAITING state rather than shutting down after the steps have completed.  For additional protection, you can set the JobFlowInstancesConfig TerminationProtected parameter to TRUE to lock the cluster and prevent it from being terminated by API call, user intervention, or in the event of a job flow error. A maximum of 256 steps are allowed in each job flow. If your cluster is long-running (such as a Hive data warehouse) or complex, you may require more than 256 steps to process your data. You can bypass the 256-step limitation in various ways, including using the SSH shell to connect to the master node and submitting queries directly to the software running on the master node, such as Hive and Hadoop. For long-running clusters, we recommend that you periodically store your results.  The instance fleets configuration is available only in Amazon EMR releases 4.8.0 and later, excluding 5.0.x versions. The RunJobFlow request can contain InstanceFleets parameters or InstanceGroups parameters, but not both. 
     */
   def runJobFlow(): Request[RunJobFlowOutput, AWSError] = js.native
   def runJobFlow(callback: js.Function2[/* err */ AWSError, /* data */ RunJobFlowOutput, scala.Unit]): Request[RunJobFlowOutput, AWSError] = js.native
   /**
-    * RunJobFlow creates and starts running a new cluster (job flow). The cluster runs the steps specified. After the steps complete, the cluster stops and the HDFS partition is lost. To prevent loss of data, configure the last step of the job flow to store results in Amazon S3. If the JobFlowInstancesConfig KeepJobFlowAliveWhenNoSteps parameter is set to TRUE, the cluster transitions to the WAITING state rather than shutting down after the steps have completed.  For additional protection, you can set the JobFlowInstancesConfig TerminationProtected parameter to TRUE to lock the cluster and prevent it from being terminated by API call, user intervention, or in the event of a job flow error. A maximum of 256 steps are allowed in each job flow. If your cluster is long-running (such as a Hive data warehouse) or complex, you may require more than 256 steps to process your data. You can bypass the 256-step limitation in various ways, including using the SSH shell to connect to the master node and submitting queries directly to the software running on the master node, such as Hive and Hadoop. For more information on how to do this, see Add More than 256 Steps to a Cluster in the Amazon EMR Management Guide. For long running clusters, we recommend that you periodically store your results.  The instance fleets configuration is available only in Amazon EMR versions 4.8.0 and later, excluding 5.0.x versions. The RunJobFlow request can contain InstanceFleets parameters or InstanceGroups parameters, but not both. 
+    * RunJobFlow creates and starts running a new cluster (job flow). The cluster runs the steps specified. After the steps complete, the cluster stops and the HDFS partition is lost. To prevent loss of data, configure the last step of the job flow to store results in Amazon S3. If the JobFlowInstancesConfig KeepJobFlowAliveWhenNoSteps parameter is set to TRUE, the cluster transitions to the WAITING state rather than shutting down after the steps have completed.  For additional protection, you can set the JobFlowInstancesConfig TerminationProtected parameter to TRUE to lock the cluster and prevent it from being terminated by API call, user intervention, or in the event of a job flow error. A maximum of 256 steps are allowed in each job flow. If your cluster is long-running (such as a Hive data warehouse) or complex, you may require more than 256 steps to process your data. You can bypass the 256-step limitation in various ways, including using the SSH shell to connect to the master node and submitting queries directly to the software running on the master node, such as Hive and Hadoop. For long-running clusters, we recommend that you periodically store your results.  The instance fleets configuration is available only in Amazon EMR releases 4.8.0 and later, excluding 5.0.x versions. The RunJobFlow request can contain InstanceFleets parameters or InstanceGroups parameters, but not both. 
     */
   def runJobFlow(params: RunJobFlowInput): Request[RunJobFlowOutput, AWSError] = js.native
   def runJobFlow(
@@ -666,12 +682,12 @@ trait EMR extends Service {
   ): Request[RunJobFlowOutput, AWSError] = js.native
   
   /**
-    * SetTerminationProtection locks a cluster (job flow) so the EC2 instances in the cluster cannot be terminated by user intervention, an API call, or in the event of a job-flow error. The cluster still terminates upon successful completion of the job flow. Calling SetTerminationProtection on a cluster is similar to calling the Amazon EC2 DisableAPITermination API on all EC2 instances in a cluster.  SetTerminationProtection is used to prevent accidental termination of a cluster and to ensure that in the event of an error, the instances persist so that you can recover any data stored in their ephemeral instance storage.  To terminate a cluster that has been locked by setting SetTerminationProtection to true, you must first unlock the job flow by a subsequent call to SetTerminationProtection in which you set the value to false.   For more information, seeManaging Cluster Termination in the Amazon EMR Management Guide. 
+    * SetTerminationProtection locks a cluster (job flow) so the Amazon EC2 instances in the cluster cannot be terminated by user intervention, an API call, or in the event of a job-flow error. The cluster still terminates upon successful completion of the job flow. Calling SetTerminationProtection on a cluster is similar to calling the Amazon EC2 DisableAPITermination API on all Amazon EC2 instances in a cluster.  SetTerminationProtection is used to prevent accidental termination of a cluster and to ensure that in the event of an error, the instances persist so that you can recover any data stored in their ephemeral instance storage.  To terminate a cluster that has been locked by setting SetTerminationProtection to true, you must first unlock the job flow by a subsequent call to SetTerminationProtection in which you set the value to false.   For more information, seeManaging Cluster Termination in the Amazon EMR Management Guide. 
     */
   def setTerminationProtection(): Request[js.Object, AWSError] = js.native
   def setTerminationProtection(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * SetTerminationProtection locks a cluster (job flow) so the EC2 instances in the cluster cannot be terminated by user intervention, an API call, or in the event of a job-flow error. The cluster still terminates upon successful completion of the job flow. Calling SetTerminationProtection on a cluster is similar to calling the Amazon EC2 DisableAPITermination API on all EC2 instances in a cluster.  SetTerminationProtection is used to prevent accidental termination of a cluster and to ensure that in the event of an error, the instances persist so that you can recover any data stored in their ephemeral instance storage.  To terminate a cluster that has been locked by setting SetTerminationProtection to true, you must first unlock the job flow by a subsequent call to SetTerminationProtection in which you set the value to false.   For more information, seeManaging Cluster Termination in the Amazon EMR Management Guide. 
+    * SetTerminationProtection locks a cluster (job flow) so the Amazon EC2 instances in the cluster cannot be terminated by user intervention, an API call, or in the event of a job-flow error. The cluster still terminates upon successful completion of the job flow. Calling SetTerminationProtection on a cluster is similar to calling the Amazon EC2 DisableAPITermination API on all Amazon EC2 instances in a cluster.  SetTerminationProtection is used to prevent accidental termination of a cluster and to ensure that in the event of an error, the instances persist so that you can recover any data stored in their ephemeral instance storage.  To terminate a cluster that has been locked by setting SetTerminationProtection to true, you must first unlock the job flow by a subsequent call to SetTerminationProtection in which you set the value to false.   For more information, seeManaging Cluster Termination in the Amazon EMR Management Guide. 
     */
   def setTerminationProtection(params: SetTerminationProtectionInput): Request[js.Object, AWSError] = js.native
   def setTerminationProtection(
@@ -680,12 +696,12 @@ trait EMR extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    *  The SetVisibleToAllUsers parameter is no longer supported. Your cluster may be visible to all users in your account. To restrict cluster access using an IAM policy, see Identity and Access Management for EMR.   Sets the Cluster$VisibleToAllUsers value for an EMR cluster. When true, IAM principals in the Amazon Web Services account can perform EMR cluster actions that their IAM policies allow. When false, only the IAM principal that created the cluster and the Amazon Web Services account root user can perform EMR actions on the cluster, regardless of IAM permissions policies attached to other IAM principals. This action works on running clusters. When you create a cluster, use the RunJobFlowInput$VisibleToAllUsers parameter. For more information, see Understanding the EMR Cluster VisibleToAllUsers Setting in the Amazon EMRManagement Guide.
+    *  The SetVisibleToAllUsers parameter is no longer supported. Your cluster may be visible to all users in your account. To restrict cluster access using an IAM policy, see Identity and Access Management for Amazon EMR.   Sets the Cluster$VisibleToAllUsers value for an Amazon EMR cluster. When true, IAM principals in the Amazon Web Services account can perform Amazon EMR cluster actions that their IAM policies allow. When false, only the IAM principal that created the cluster and the Amazon Web Services account root user can perform Amazon EMR actions on the cluster, regardless of IAM permissions policies attached to other IAM principals. This action works on running clusters. When you create a cluster, use the RunJobFlowInput$VisibleToAllUsers parameter. For more information, see Understanding the Amazon EMR Cluster VisibleToAllUsers Setting in the Amazon EMR Management Guide.
     */
   def setVisibleToAllUsers(): Request[js.Object, AWSError] = js.native
   def setVisibleToAllUsers(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]): Request[js.Object, AWSError] = js.native
   /**
-    *  The SetVisibleToAllUsers parameter is no longer supported. Your cluster may be visible to all users in your account. To restrict cluster access using an IAM policy, see Identity and Access Management for EMR.   Sets the Cluster$VisibleToAllUsers value for an EMR cluster. When true, IAM principals in the Amazon Web Services account can perform EMR cluster actions that their IAM policies allow. When false, only the IAM principal that created the cluster and the Amazon Web Services account root user can perform EMR actions on the cluster, regardless of IAM permissions policies attached to other IAM principals. This action works on running clusters. When you create a cluster, use the RunJobFlowInput$VisibleToAllUsers parameter. For more information, see Understanding the EMR Cluster VisibleToAllUsers Setting in the Amazon EMRManagement Guide.
+    *  The SetVisibleToAllUsers parameter is no longer supported. Your cluster may be visible to all users in your account. To restrict cluster access using an IAM policy, see Identity and Access Management for Amazon EMR.   Sets the Cluster$VisibleToAllUsers value for an Amazon EMR cluster. When true, IAM principals in the Amazon Web Services account can perform Amazon EMR cluster actions that their IAM policies allow. When false, only the IAM principal that created the cluster and the Amazon Web Services account root user can perform Amazon EMR actions on the cluster, regardless of IAM permissions policies attached to other IAM principals. This action works on running clusters. When you create a cluster, use the RunJobFlowInput$VisibleToAllUsers parameter. For more information, see Understanding the Amazon EMR Cluster VisibleToAllUsers Setting in the Amazon EMR Management Guide.
     */
   def setVisibleToAllUsers(params: SetVisibleToAllUsersInput): Request[js.Object, AWSError] = js.native
   def setVisibleToAllUsers(
@@ -722,12 +738,12 @@ trait EMR extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * TerminateJobFlows shuts a list of clusters (job flows) down. When a job flow is shut down, any step not yet completed is canceled and the EC2 instances on which the cluster is running are stopped. Any log files not already saved are uploaded to Amazon S3 if a LogUri was specified when the cluster was created. The maximum number of clusters allowed is 10. The call to TerminateJobFlows is asynchronous. Depending on the configuration of the cluster, it may take up to 1-5 minutes for the cluster to completely terminate and release allocated resources, such as Amazon EC2 instances.
+    * TerminateJobFlows shuts a list of clusters (job flows) down. When a job flow is shut down, any step not yet completed is canceled and the Amazon EC2 instances on which the cluster is running are stopped. Any log files not already saved are uploaded to Amazon S3 if a LogUri was specified when the cluster was created. The maximum number of clusters allowed is 10. The call to TerminateJobFlows is asynchronous. Depending on the configuration of the cluster, it may take up to 1-5 minutes for the cluster to completely terminate and release allocated resources, such as Amazon EC2 instances.
     */
   def terminateJobFlows(): Request[js.Object, AWSError] = js.native
   def terminateJobFlows(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * TerminateJobFlows shuts a list of clusters (job flows) down. When a job flow is shut down, any step not yet completed is canceled and the EC2 instances on which the cluster is running are stopped. Any log files not already saved are uploaded to Amazon S3 if a LogUri was specified when the cluster was created. The maximum number of clusters allowed is 10. The call to TerminateJobFlows is asynchronous. Depending on the configuration of the cluster, it may take up to 1-5 minutes for the cluster to completely terminate and release allocated resources, such as Amazon EC2 instances.
+    * TerminateJobFlows shuts a list of clusters (job flows) down. When a job flow is shut down, any step not yet completed is canceled and the Amazon EC2 instances on which the cluster is running are stopped. Any log files not already saved are uploaded to Amazon S3 if a LogUri was specified when the cluster was created. The maximum number of clusters allowed is 10. The call to TerminateJobFlows is asynchronous. Depending on the configuration of the cluster, it may take up to 1-5 minutes for the cluster to completely terminate and release allocated resources, such as Amazon EC2 instances.
     */
   def terminateJobFlows(params: TerminateJobFlowsInput): Request[js.Object, AWSError] = js.native
   def terminateJobFlows(

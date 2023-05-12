@@ -6,6 +6,7 @@ import typings.konva.libShapeMod.ShapeConfig
 import typings.konva.libTypesMod.GetSet
 import typings.konva.libTypesMod.IRect
 import typings.std.CanvasImageSource
+import typings.std.OnErrorEventHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,11 +18,17 @@ object libShapesImageMod {
   open class Image protected () extends Shape[ImageConfig] {
     def this(attrs: ImageConfig) = this()
     
-    def _hitFunc(context: Any): Unit = js.native
+    def _hitFunc(context: Context): Unit = js.native
     
     def _sceneFunc(context: Context): Unit = js.native
     
     def _setImageLoad(): Unit = js.native
+    
+    def cornerRadius(): Double | js.Array[Double] = js.native
+    def cornerRadius(v: js.Array[Double]): this.type = js.native
+    def cornerRadius(v: Double): this.type = js.native
+    @JSName("cornerRadius")
+    var cornerRadius_Original: GetSet[Double | js.Array[Double], this.type] = js.native
     
     def crop(): IRect = js.native
     def crop(v: IRect): this.type = js.native
@@ -67,13 +74,15 @@ object libShapesImageMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def fromURL(url: Any, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def fromURL(url: Any, callback: Any, onError: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def fromURL(url: String, callback: js.Function1[/* img */ this.type, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def fromURL(url: String, callback: js.Function1[/* img */ this.type, Unit], onError: OnErrorEventHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   trait ImageConfig
     extends StObject
        with ShapeConfig {
+    
+    var cornerRadius: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
     var crop: js.UndefOr[IRect] = js.undefined
     
@@ -88,6 +97,12 @@ object libShapesImageMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: ImageConfig] (val x: Self) extends AnyVal {
+      
+      inline def setCornerRadius(value: Double | js.Array[Double]): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
+      
+      inline def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
+      
+      inline def setCornerRadiusVarargs(value: Double*): Self = StObject.set(x, "cornerRadius", js.Array(value*))
       
       inline def setCrop(value: IRect): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
       

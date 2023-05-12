@@ -26,9 +26,9 @@ object config {
       *
       * @example
       *
-      * var componentAuctionConfig = {
-      *   seller: 'https://testSeller.com', // should be https and the same as
-      *                                     // decisionLogicUrl's origin
+      * const componentAuctionConfig = {
+      *   // Seller URL should be https and the same as decisionLogicUrl's origin
+      *   seller: 'https://testSeller.com',
       *   decisionLogicUrl: 'https://testSeller.com/ssp/decision-logic.js',
       *   interestGroupBuyers: [
       *     'https://example-buyer.com',
@@ -43,7 +43,7 @@ object config {
       *   },
       * };
       *
-      * var auctionSlot = googletag.defineSlot('/1234567/example', [160, 600]);
+      * const auctionSlot = googletag.defineSlot('/1234567/example', [160, 600])!;
       *
       * // To add configKey to the component auction:
       * auctionSlot.setConfig({

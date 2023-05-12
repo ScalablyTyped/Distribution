@@ -1,7 +1,6 @@
 package typings.phaser.global.Phaser.GameObjects
 
 import typings.phaser.Phaser.Scene
-import typings.phaser.Phaser.Textures.Frame
 import typings.phaser.Phaser.Textures.Texture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -76,7 +75,7 @@ open class Mesh protected ()
   ) = this()
   
   /**
-    * The depth of this Game Object within the Scene.
+    * The depth of this Game Object within the Scene. Ensure this value is only ever set to a number data-type.
     * 
     * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
     * of Game Objects, without actually moving their position in the display list.
@@ -90,36 +89,6 @@ open class Mesh protected ()
   var depth: Double = js.native
   
   /**
-    * The displayed height of this Game Object.
-    * 
-    * This value takes into account the scale factor.
-    * 
-    * Setting this value will adjust the Game Object's scale property.
-    */
-  /* CompleteClass */
-  var displayHeight: Double = js.native
-  
-  /**
-    * The displayed width of this Game Object.
-    * 
-    * This value takes into account the scale factor.
-    * 
-    * Setting this value will adjust the Game Object's scale property.
-    */
-  /* CompleteClass */
-  var displayWidth: Double = js.native
-  
-  /**
-    * The native (un-scaled) height of this Game Object.
-    * 
-    * Changing this value will not change the size that the Game Object is rendered in-game.
-    * For that you need to either set the scale of the Game Object (`setScale`) or use
-    * the `displayHeight` property.
-    */
-  /* CompleteClass */
-  var height: Double = js.native
-  
-  /**
     * The depth of this Game Object within the Scene.
     * 
     * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
@@ -129,51 +98,10 @@ open class Mesh protected ()
     * value will always render in front of one with a lower value.
     * 
     * Setting the depth will queue a depth sort event within the Scene.
-    * @param value The depth of this Game Object.
+    * @param value The depth of this Game Object. Ensure this value is only ever a number data-type.
     */
   /* CompleteClass */
   override def setDepth(value: Double): this.type = js.native
-  
-  /**
-    * Sets the display size of this Game Object.
-    * 
-    * Calling this will adjust the scale.
-    * @param width The width of this Game Object.
-    * @param height The height of this Game Object.
-    */
-  /* CompleteClass */
-  override def setDisplaySize(width: Double, height: Double): this.type = js.native
-  
-  /**
-    * Sets the internal size of this Game Object, as used for frame or physics body creation.
-    * 
-    * This will not change the size that the Game Object is rendered in-game.
-    * For that you need to either set the scale of the Game Object (`setScale`) or call the
-    * `setDisplaySize` method, which is the same thing as changing the scale but allows you
-    * to do so by giving pixel values.
-    * 
-    * If you have enabled this Game Object for input, changing the size will _not_ change the
-    * size of the hit area. To do this you should adjust the `input.hitArea` object directly.
-    * @param width The width of this Game Object.
-    * @param height The height of this Game Object.
-    */
-  /* CompleteClass */
-  override def setSize(width: Double, height: Double): this.type = js.native
-  
-  /**
-    * Sets the size of this Game Object to be that of the given Frame.
-    * 
-    * This will not change the size that the Game Object is rendered in-game.
-    * For that you need to either set the scale of the Game Object (`setScale`) or call the
-    * `setDisplaySize` method, which is the same thing as changing the scale but allows you
-    * to do so by giving pixel values.
-    * 
-    * If you have enabled this Game Object for input, changing the size will _not_ change the
-    * size of the hit area. To do this you should adjust the `input.hitArea` object directly.
-    * @param frame The frame to base the size of this Game Object on.
-    */
-  /* CompleteClass */
-  override def setSizeToFrame(frame: Frame): this.type = js.native
   
   /**
     * Sets the visibility of this Game Object.
@@ -191,14 +119,4 @@ open class Mesh protected ()
     */
   /* CompleteClass */
   var visible: Boolean = js.native
-  
-  /**
-    * The native (un-scaled) width of this Game Object.
-    * 
-    * Changing this value will not change the size that the Game Object is rendered in-game.
-    * For that you need to either set the scale of the Game Object (`setScale`) or use
-    * the `displayWidth` property.
-    */
-  /* CompleteClass */
-  var width: Double = js.native
 }

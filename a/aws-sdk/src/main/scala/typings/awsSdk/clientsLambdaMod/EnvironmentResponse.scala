@@ -12,7 +12,7 @@ trait EnvironmentResponse extends StObject {
   var Error: js.UndefOr[EnvironmentError] = js.undefined
   
   /**
-    * Environment variable key-value pairs.
+    * Environment variable key-value pairs. Omitted from CloudTrail logs.
     */
   var Variables: js.UndefOr[EnvironmentVariables] = js.undefined
 }

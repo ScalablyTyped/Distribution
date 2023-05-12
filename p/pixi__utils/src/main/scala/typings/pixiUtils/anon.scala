@@ -53,7 +53,7 @@ object anon {
   
   trait Data extends StObject {
     
-    var data: js.UndefOr[ImageData] = js.undefined
+    var data: ImageData | Null
     
     var height: Double
     
@@ -62,7 +62,7 @@ object anon {
   object Data {
     
     inline def apply(height: Double, width: Double): Data = {
-      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], data = null)
       __obj.asInstanceOf[Data]
     }
     
@@ -71,7 +71,7 @@ object anon {
       
       inline def setData(value: ImageData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataNull: Self = StObject.set(x, "data", null)
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

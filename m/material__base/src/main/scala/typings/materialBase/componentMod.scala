@@ -19,7 +19,9 @@ import typings.materialBase.materialBaseStrings.compositionend
 import typings.materialBase.materialBaseStrings.compositionstart
 import typings.materialBase.materialBaseStrings.compositionupdate
 import typings.materialBase.materialBaseStrings.contextmenu
+import typings.materialBase.materialBaseStrings.copy
 import typings.materialBase.materialBaseStrings.cuechange
+import typings.materialBase.materialBaseStrings.cut
 import typings.materialBase.materialBaseStrings.dblclick
 import typings.materialBase.materialBaseStrings.drag
 import typings.materialBase.materialBaseStrings.dragend
@@ -54,6 +56,7 @@ import typings.materialBase.materialBaseStrings.mousemove
 import typings.materialBase.materialBaseStrings.mouseout
 import typings.materialBase.materialBaseStrings.mouseover
 import typings.materialBase.materialBaseStrings.mouseup
+import typings.materialBase.materialBaseStrings.paste
 import typings.materialBase.materialBaseStrings.pause
 import typings.materialBase.materialBaseStrings.play
 import typings.materialBase.materialBaseStrings.playing
@@ -301,11 +304,23 @@ object componentMod {
       options: AddEventListenerOptions
     ): Unit = js.native
     @JSName("listen")
+    def listen_copy(evtType: copy, handler: SpecificEventListener[copy]): Unit = js.native
+    @JSName("listen")
+    def listen_copy(evtType: copy, handler: SpecificEventListener[copy], options: Boolean): Unit = js.native
+    @JSName("listen")
+    def listen_copy(evtType: copy, handler: SpecificEventListener[copy], options: AddEventListenerOptions): Unit = js.native
+    @JSName("listen")
     def listen_cuechange(evtType: cuechange, handler: SpecificEventListener[cuechange]): Unit = js.native
     @JSName("listen")
     def listen_cuechange(evtType: cuechange, handler: SpecificEventListener[cuechange], options: Boolean): Unit = js.native
     @JSName("listen")
     def listen_cuechange(evtType: cuechange, handler: SpecificEventListener[cuechange], options: AddEventListenerOptions): Unit = js.native
+    @JSName("listen")
+    def listen_cut(evtType: cut, handler: SpecificEventListener[cut]): Unit = js.native
+    @JSName("listen")
+    def listen_cut(evtType: cut, handler: SpecificEventListener[cut], options: Boolean): Unit = js.native
+    @JSName("listen")
+    def listen_cut(evtType: cut, handler: SpecificEventListener[cut], options: AddEventListenerOptions): Unit = js.native
     @JSName("listen")
     def listen_dblclick(evtType: dblclick, handler: SpecificEventListener[dblclick]): Unit = js.native
     @JSName("listen")
@@ -526,6 +541,12 @@ object componentMod {
     def listen_mouseup(evtType: mouseup, handler: SpecificEventListener[mouseup], options: Boolean): Unit = js.native
     @JSName("listen")
     def listen_mouseup(evtType: mouseup, handler: SpecificEventListener[mouseup], options: AddEventListenerOptions): Unit = js.native
+    @JSName("listen")
+    def listen_paste(evtType: paste, handler: SpecificEventListener[paste]): Unit = js.native
+    @JSName("listen")
+    def listen_paste(evtType: paste, handler: SpecificEventListener[paste], options: Boolean): Unit = js.native
+    @JSName("listen")
+    def listen_paste(evtType: paste, handler: SpecificEventListener[paste], options: AddEventListenerOptions): Unit = js.native
     @JSName("listen")
     def listen_pause(evtType: pause, handler: SpecificEventListener[pause]): Unit = js.native
     @JSName("listen")
@@ -1035,11 +1056,23 @@ object componentMod {
       options: AddEventListenerOptions
     ): Unit = js.native
     @JSName("unlisten")
+    def unlisten_copy(evtType: copy, handler: SpecificEventListener[copy]): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_copy(evtType: copy, handler: SpecificEventListener[copy], options: Boolean): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_copy(evtType: copy, handler: SpecificEventListener[copy], options: AddEventListenerOptions): Unit = js.native
+    @JSName("unlisten")
     def unlisten_cuechange(evtType: cuechange, handler: SpecificEventListener[cuechange]): Unit = js.native
     @JSName("unlisten")
     def unlisten_cuechange(evtType: cuechange, handler: SpecificEventListener[cuechange], options: Boolean): Unit = js.native
     @JSName("unlisten")
     def unlisten_cuechange(evtType: cuechange, handler: SpecificEventListener[cuechange], options: AddEventListenerOptions): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_cut(evtType: cut, handler: SpecificEventListener[cut]): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_cut(evtType: cut, handler: SpecificEventListener[cut], options: Boolean): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_cut(evtType: cut, handler: SpecificEventListener[cut], options: AddEventListenerOptions): Unit = js.native
     @JSName("unlisten")
     def unlisten_dblclick(evtType: dblclick, handler: SpecificEventListener[dblclick]): Unit = js.native
     @JSName("unlisten")
@@ -1260,6 +1293,12 @@ object componentMod {
     def unlisten_mouseup(evtType: mouseup, handler: SpecificEventListener[mouseup], options: Boolean): Unit = js.native
     @JSName("unlisten")
     def unlisten_mouseup(evtType: mouseup, handler: SpecificEventListener[mouseup], options: AddEventListenerOptions): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_paste(evtType: paste, handler: SpecificEventListener[paste]): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_paste(evtType: paste, handler: SpecificEventListener[paste], options: Boolean): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_paste(evtType: paste, handler: SpecificEventListener[paste], options: AddEventListenerOptions): Unit = js.native
     @JSName("unlisten")
     def unlisten_pause(evtType: pause, handler: SpecificEventListener[pause]): Unit = js.native
     @JSName("unlisten")

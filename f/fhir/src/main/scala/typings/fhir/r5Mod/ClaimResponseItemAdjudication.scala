@@ -19,14 +19,14 @@ trait ClaimResponseItemAdjudication
   var category: CodeableConcept
   
   /**
+    * For example: eligible percentage or co-payment percentage.
+    */
+  var quantity: js.UndefOr[Quantity] = js.undefined
+  
+  /**
     * For example may indicate that the funds for this benefit type have been exhausted.
     */
   var reason: js.UndefOr[CodeableConcept] = js.undefined
-  
-  /**
-    * For example: eligible percentage or co-payment percentage.
-    */
-  var value: js.UndefOr[Double] = js.undefined
 }
 object ClaimResponseItemAdjudication {
   
@@ -44,12 +44,12 @@ object ClaimResponseItemAdjudication {
     
     inline def setCategory(value: CodeableConcept): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
+    inline def setQuantity(value: Quantity): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    
+    inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+    
     inline def setReason(value: CodeableConcept): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
-    
-    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-    
-    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

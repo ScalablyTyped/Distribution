@@ -1,7 +1,7 @@
 
 # Scala.js typings for json5
 
-Typings are for version 2.2.1
+Typings are for version 2.2.3
 
 ## Library description:
 JSON for Humans

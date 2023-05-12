@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TracingConfiguration extends StObject {
   
   /**
-    * When set to true, AWS X-Ray tracing is enabled.
+    * When set to true, X-Ray tracing is enabled.
     */
   var enabled: js.UndefOr[Enabled] = js.undefined
 }

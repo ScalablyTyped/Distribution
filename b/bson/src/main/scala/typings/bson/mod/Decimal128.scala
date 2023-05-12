@@ -1,27 +1,20 @@
 package typings.bson.mod
 
-import typings.buffer.mod.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("bson", "Decimal128")
 @js.native
-open class Decimal128 protected () extends StObject {
+open class Decimal128 protected () extends BSONValue {
   def this(bytes: String) = this()
   /**
     * @param bytes - a buffer containing the raw Decimal128 bytes in little endian order,
     *                or a string representation as returned by .toString()
     */
-  def this(bytes: Buffer) = this()
+  def this(bytes: js.typedarray.Uint8Array) = this()
   
-  var _bsontype: typings.bson.bsonStrings.Decimal128 = js.native
-  
-  val bytes: Buffer = js.native
-  
-  /* Excluded from this release type: toExtendedJSON */
-  /* Excluded from this release type: fromExtendedJSON */
-  def inspect(): String = js.native
+  val bytes: js.typedarray.Uint8Array = js.native
   
   def toJSON(): Decimal128Extended = js.native
 }

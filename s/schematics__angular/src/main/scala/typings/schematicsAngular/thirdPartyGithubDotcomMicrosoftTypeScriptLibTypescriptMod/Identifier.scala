@@ -9,12 +9,15 @@ trait Identifier
   extends StObject
      with PrimaryExpression
      with Declaration
+     with JSDocContainer
+     with FlowContainer
      with AssertionKey
      with BindingName
      with BindingOrAssignmentElementTarget
      with DeclarationName
      with EntityName
      with EntityNameExpression
+     with HasJSDoc
      with JSDocNamespaceBody
      with JsxTagNameExpression
      with MemberName
@@ -29,11 +32,13 @@ trait Identifier
     */
   val escapedText: String = js.native
   
-  var isInJSDocNamespace: js.UndefOr[Boolean] = js.native
+  /** @deprecated Use `.parent` or the surrounding context to determine this instead. */
+  val isInJSDocNamespace: js.UndefOr[Boolean] = js.native
   
   @JSName("kind")
   val kind_Identifier: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.SyntaxKind.Identifier = js.native
   
+  /** @deprecated Use `idKeyword(identifier)` instead. */
   val originalKeywordKind: js.UndefOr[SyntaxKind] = js.native
   
   val text: java.lang.String = js.native

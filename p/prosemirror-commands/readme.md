@@ -1,7 +1,7 @@
 
 # Scala.js typings for prosemirror-commands
 
-Typings are for version 1.3.1
+Typings are for version 1.5.1
 
 ## Library description:
 Editing commands for ProseMirror

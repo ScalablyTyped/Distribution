@@ -3,7 +3,7 @@ package typings.tensorflowTfjsBackendWasm
 import typings.tensorflowTfjsBackendWasm.anon.InputsSparseFillEmptyRowsInputs
 import typings.tensorflowTfjsBackendWasm.distBackendWasmMod.BackendWasm
 import typings.tensorflowTfjsCore.distKernelRegistryMod.KernelConfig
-import typings.tensorflowTfjsCore.distKernelRegistryMod.TensorInfo
+import typings.tensorflowTfjsCore.distTensorInfoMod.TensorInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

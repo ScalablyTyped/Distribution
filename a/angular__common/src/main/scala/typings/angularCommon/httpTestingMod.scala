@@ -7,6 +7,7 @@ import typings.angularCommon.anon.TypeofHttpClientModule
 import typings.angularCommon.httpMod.HttpEvent
 import typings.angularCommon.httpMod.HttpHeaders
 import typings.angularCommon.httpMod.HttpRequest
+import typings.angularCore.mod.Provider
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵInjectorDeclaration
 import typings.angularCore.mod.ɵɵNgModuleDeclaration
@@ -20,6 +21,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httpTestingMod {
+  
+  @JSImport("@angular/common/http/testing", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/common/http/testing", "HttpClientTestingModule")
   @js.native
@@ -206,6 +211,8 @@ object httpTestingMod {
     
     var request: HttpRequest[Any] = js.native
   }
+  
+  inline def provideHttpClientTesting(): js.Array[Provider] = ^.asInstanceOf[js.Dynamic].applyDynamic("provideHttpClientTesting")().asInstanceOf[js.Array[Provider]]
   
   trait RequestMatch extends StObject {
     

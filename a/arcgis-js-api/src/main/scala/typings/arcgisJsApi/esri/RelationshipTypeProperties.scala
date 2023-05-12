@@ -9,32 +9,11 @@ trait RelationshipTypeProperties
      with GraphObjectTypeProperties {
   
   /**
-    * Specifies the [entity types](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-EntityType.html) can be the destination of this relationship type.
+    * Specifies valid origin and destination [entity type](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-EntityType.html) pairs for this relationship.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-RelationshipType.html#destinationEntityTypes)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-RelationshipType.html#endPoints)
     */
-  var destinationEntityTypes: js.UndefOr[js.Array[String]] = js.undefined
-  
-  /**
-    * Specifies the [entity types](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-EntityType.html) that can be the origin of this relationship type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-RelationshipType.html#originEntityTypes)
-    */
-  var originEntityTypes: js.UndefOr[js.Array[String]] = js.undefined
-  
-  /**
-    * Indicates whether the destination [entity types](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-EntityType.html) for the relationship can be changed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-RelationshipType.html#strictDestination)
-    */
-  var strictDestination: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Indicates whether the origin [entity types](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-EntityType.html) for the relationship can be changed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-RelationshipType.html#strictOrigin)
-    */
-  var strictOrigin: js.UndefOr[Boolean] = js.undefined
+  var endPoints: js.UndefOr[js.Array[RelationshipTypeEndPoints]] = js.undefined
 }
 object RelationshipTypeProperties {
   
@@ -46,24 +25,10 @@ object RelationshipTypeProperties {
   @scala.inline
   implicit open class MutableBuilder[Self <: RelationshipTypeProperties] (val x: Self) extends AnyVal {
     
-    inline def setDestinationEntityTypes(value: js.Array[String]): Self = StObject.set(x, "destinationEntityTypes", value.asInstanceOf[js.Any])
+    inline def setEndPoints(value: js.Array[RelationshipTypeEndPoints]): Self = StObject.set(x, "endPoints", value.asInstanceOf[js.Any])
     
-    inline def setDestinationEntityTypesUndefined: Self = StObject.set(x, "destinationEntityTypes", js.undefined)
+    inline def setEndPointsUndefined: Self = StObject.set(x, "endPoints", js.undefined)
     
-    inline def setDestinationEntityTypesVarargs(value: String*): Self = StObject.set(x, "destinationEntityTypes", js.Array(value*))
-    
-    inline def setOriginEntityTypes(value: js.Array[String]): Self = StObject.set(x, "originEntityTypes", value.asInstanceOf[js.Any])
-    
-    inline def setOriginEntityTypesUndefined: Self = StObject.set(x, "originEntityTypes", js.undefined)
-    
-    inline def setOriginEntityTypesVarargs(value: String*): Self = StObject.set(x, "originEntityTypes", js.Array(value*))
-    
-    inline def setStrictDestination(value: Boolean): Self = StObject.set(x, "strictDestination", value.asInstanceOf[js.Any])
-    
-    inline def setStrictDestinationUndefined: Self = StObject.set(x, "strictDestination", js.undefined)
-    
-    inline def setStrictOrigin(value: Boolean): Self = StObject.set(x, "strictOrigin", value.asInstanceOf[js.Any])
-    
-    inline def setStrictOriginUndefined: Self = StObject.set(x, "strictOrigin", js.undefined)
+    inline def setEndPointsVarargs(value: RelationshipTypeEndPoints*): Self = StObject.set(x, "endPoints", js.Array(value*))
   }
 }

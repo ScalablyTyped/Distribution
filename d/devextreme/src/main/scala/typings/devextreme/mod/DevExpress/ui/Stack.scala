@@ -1,6 +1,6 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.anon.Right
+import typings.devextreme.anon.BottomLeft
 import typings.devextreme.devextremeStrings.`bottom center`
 import typings.devextreme.devextremeStrings.`bottom left`
 import typings.devextreme.devextremeStrings.`bottom right`
@@ -35,7 +35,7 @@ trait Stack extends StObject {
     * 
     */
   var position: js.UndefOr[
-    (`top left`) | (`top right`) | (`bottom left`) | (`bottom right`) | (`top center`) | (`bottom center`) | (`left center`) | (`right center`) | center | Right
+    (`top left`) | (`top right`) | (`bottom left`) | (`bottom right`) | (`top center`) | (`bottom center`) | (`left center`) | (`right center`) | center | BottomLeft
   ] = js.undefined
 }
 object Stack {
@@ -55,7 +55,7 @@ object Stack {
     inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     inline def setPosition(
-      value: (`top left`) | (`top right`) | (`bottom left`) | (`bottom right`) | (`top center`) | (`bottom center`) | (`left center`) | (`right center`) | center | Right
+      value: (`top left`) | (`top right`) | (`bottom left`) | (`bottom right`) | (`top center`) | (`bottom center`) | (`left center`) | (`right center`) | center | BottomLeft
     ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)

@@ -12,9 +12,11 @@ import typings.primereact.primereactStrings.all
 import typings.primereact.primereactStrings.ascending
 import typings.primereact.primereactStrings.assertive
 import typings.primereact.primereactStrings.both
+import typings.primereact.primereactStrings.circle
 import typings.primereact.primereactStrings.copy
 import typings.primereact.primereactStrings.date
 import typings.primereact.primereactStrings.decimal
+import typings.primereact.primereactStrings.default
 import typings.primereact.primereactStrings.descending
 import typings.primereact.primereactStrings.dialog
 import typings.primereact.primereactStrings.email
@@ -23,6 +25,7 @@ import typings.primereact.primereactStrings.grammar
 import typings.primereact.primereactStrings.grid
 import typings.primereact.primereactStrings.horizontal
 import typings.primereact.primereactStrings.inherit
+import typings.primereact.primereactStrings.large
 import typings.primereact.primereactStrings.link
 import typings.primereact.primereactStrings.list
 import typings.primereact.primereactStrings.listbox
@@ -32,6 +35,7 @@ import typings.primereact.primereactStrings.mixed
 import typings.primereact.primereactStrings.move
 import typings.primereact.primereactStrings.no
 import typings.primereact.primereactStrings.none
+import typings.primereact.primereactStrings.normal
 import typings.primereact.primereactStrings.numeric
 import typings.primereact.primereactStrings.off
 import typings.primereact.primereactStrings.on
@@ -42,6 +46,7 @@ import typings.primereact.primereactStrings.popup
 import typings.primereact.primereactStrings.removals
 import typings.primereact.primereactStrings.search
 import typings.primereact.primereactStrings.spelling
+import typings.primereact.primereactStrings.square
 import typings.primereact.primereactStrings.step
 import typings.primereact.primereactStrings.tel
 import typings.primereact.primereactStrings.text
@@ -49,6 +54,7 @@ import typings.primereact.primereactStrings.time
 import typings.primereact.primereactStrings.tree
 import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.vertical
+import typings.primereact.primereactStrings.xlarge
 import typings.primereact.primereactStrings.yes
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
@@ -103,10 +109,14 @@ object avatarAvatarMod {
     def this(props: AvatarProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: AvatarProps, context: Any) = this()
     
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
   }
   
@@ -219,13 +229,21 @@ object avatarAvatarMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -245,15 +263,31 @@ object avatarAvatarMod {
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Defines the icon to display.
+      */
     var icon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<AvatarProps> */ Any
       ] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
+    /**
+      * Defines the image to display.
+      */
     var image: js.UndefOr[String] = js.undefined
     
+    /**
+      * It specifies an alternate text for an image, if the image cannot be displayed.
+      * @defaultValue avatar
+      */
     var imageAlt: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Defines a fallback image or URL if the main image fails to load. If "default" will fallback to label then icon.
+      * @defaultValue default
+      */
+    var imageFallback: js.UndefOr[default | String] = js.undefined
     
     var inlist: js.UndefOr[Any] = js.undefined
     
@@ -273,6 +307,9 @@ object avatarAvatarMod {
     
     var key: js.UndefOr[Key | Null] = js.undefined
     
+    /**
+      * Defines the text to display.
+      */
     var label: js.UndefOr[String] = js.undefined
     
     var lang: js.UndefOr[String] = js.undefined
@@ -299,6 +336,10 @@ object avatarAvatarMod {
     
     var onChange: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke on click.
+      * @param {React.MouseEvent<HTMLElement>} event - Browser event.
+      */
     var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
     
     var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
@@ -343,6 +384,10 @@ object avatarAvatarMod {
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * This event is triggered if an error occurs while loading an image file.
+      * @param {React.SyntheticEvent}  event - Browser event.
+      */
     var onImageError: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.undefined
     
     var onInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
@@ -449,17 +494,29 @@ object avatarAvatarMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
-    var shape: js.UndefOr[AvatarShapeType] = js.undefined
+    /**
+      * Shape of the element.
+      * @defaultValue square
+      */
+    var shape: js.UndefOr[square | circle] = js.undefined
     
-    var size: js.UndefOr[AvatarSizeType] = js.undefined
+    /**
+      * Size of the element.
+      * @defaultValue normal
+      */
+    var size: js.UndefOr[normal | large | xlarge] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
     
@@ -473,7 +530,10 @@ object avatarAvatarMod {
     
     var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var template: js.UndefOr[AvatarTemplateType] = js.undefined
+    /**
+      * Template of the content.
+      */
+    var template: js.UndefOr[ReactNode | (js.Function1[/* props */ this.type, ReactNode])] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
     
@@ -705,6 +765,10 @@ object avatarAvatarMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -721,9 +785,13 @@ object avatarAvatarMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -774,6 +842,10 @@ object avatarAvatarMod {
       inline def setImageAlt(value: String): Self = StObject.set(x, "imageAlt", value.asInstanceOf[js.Any])
       
       inline def setImageAltUndefined: Self = StObject.set(x, "imageAlt", js.undefined)
+      
+      inline def setImageFallback(value: default | String): Self = StObject.set(x, "imageFallback", value.asInstanceOf[js.Any])
+      
+      inline def setImageFallbackUndefined: Self = StObject.set(x, "imageFallback", js.undefined)
       
       inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
@@ -1167,6 +1239,10 @@ object avatarAvatarMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1174,6 +1250,10 @@ object avatarAvatarMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1183,11 +1263,11 @@ object avatarAvatarMod {
       
       inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
       
-      inline def setShape(value: AvatarShapeType): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: square | circle): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
       inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
       
-      inline def setSize(value: AvatarSizeType): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: normal | large | xlarge): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
@@ -1215,9 +1295,9 @@ object avatarAvatarMod {
       
       inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
       
-      inline def setTemplate(value: AvatarTemplateType): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: ReactNode | (js.Function1[AvatarProps, ReactNode])): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      inline def setTemplateFunction1(value: /* props */ AvatarProps => ReactNode): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
+      inline def setTemplateFunction1(value: AvatarProps => ReactNode): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
       
       inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
       
@@ -1242,33 +1322,4 @@ object avatarAvatarMod {
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
     }
   }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.square
-    - typings.primereact.primereactStrings.circle
-  */
-  trait AvatarShapeType extends StObject
-  object AvatarShapeType {
-    
-    inline def circle: typings.primereact.primereactStrings.circle = "circle".asInstanceOf[typings.primereact.primereactStrings.circle]
-    
-    inline def square: typings.primereact.primereactStrings.square = "square".asInstanceOf[typings.primereact.primereactStrings.square]
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.normal
-    - typings.primereact.primereactStrings.large
-    - typings.primereact.primereactStrings.xlarge
-  */
-  trait AvatarSizeType extends StObject
-  object AvatarSizeType {
-    
-    inline def large: typings.primereact.primereactStrings.large = "large".asInstanceOf[typings.primereact.primereactStrings.large]
-    
-    inline def normal: typings.primereact.primereactStrings.normal = "normal".asInstanceOf[typings.primereact.primereactStrings.normal]
-    
-    inline def xlarge: typings.primereact.primereactStrings.xlarge = "xlarge".asInstanceOf[typings.primereact.primereactStrings.xlarge]
-  }
-  
-  type AvatarTemplateType = ReactNode | (js.Function1[/* props */ AvatarProps, ReactNode])
 }

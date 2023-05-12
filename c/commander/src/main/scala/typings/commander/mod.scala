@@ -1,11 +1,11 @@
 package typings.commander
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.commander.commanderBooleans.`true`
 import typings.commander.commanderStrings.electron
 import typings.commander.commanderStrings.node
 import typings.commander.commanderStrings.user
 import typings.std.Error
+import typings.std.Record
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -286,7 +286,7 @@ object mod {
         /* import warning: importer.ImportType#apply Failed type conversion: this['createCommand'] */ js.Any
       ] = js.native
     
-    var commands: js.Array[Command] = js.native
+    val commands: js.Array[Command] = js.native
     
     /** Get configuration */
     def configureHelp(): HelpConfiguration = js.native
@@ -367,7 +367,7 @@ object mod {
       */
     def description(str: String): this.type = js.native
     /** @deprecated since v8, instead use .argument to add command argument with description */
-    def description(str: String, argsDescription: StringDictionary[String]): this.type = js.native
+    def description(str: String, argsDescription: Record[String, String]): this.type = js.native
     
     /**
       * Enable positional options. Positional means global options are specified before subcommands which lets
@@ -416,9 +416,14 @@ object mod {
     def getOptionValue(key: String): Any = js.native
     
     /**
-      * Retrieve option value source.
+      * Get source of option value.
       */
     def getOptionValueSource(key: String): js.UndefOr[OptionValueSource] = js.native
+    
+    /**
+      * Get source of option value. See also .optsWithGlobals().
+      */
+    def getOptionValueSourceWithGlobals(key: String): js.UndefOr[OptionValueSource] = js.native
     
     /**
       * Output help information and exit.
@@ -551,6 +556,8 @@ object mod {
       fn: js.Function2[/* value */ String, /* previous */ T, T],
       defaultValue: T
     ): this.type = js.native
+    
+    val options: js.Array[Option] = js.native
     
     /**
       * Return an object containing local option values as key-value pairs
@@ -795,6 +802,9 @@ object mod {
     /** Get the longest argument term length. */
     def longestArgumentTermLength(cmd: Command, helper: Help): Double = js.native
     
+    /** Get the longest global option term length. */
+    def longestGlobalOptionTermLength(cmd: Command, helper: Help): Double = js.native
+    
     /** Get the longest option term length. */
     def longestOptionTermLength(cmd: Command, helper: Help): Double = js.native
     
@@ -809,6 +819,8 @@ object mod {
     
     /** Calculate the pad width from the maximum term length. */
     def padWidth(cmd: Command, helper: Help): Double = js.native
+    
+    var showGlobalOptions: Boolean = js.native
     
     var sortOptions: Boolean = js.native
     
@@ -825,6 +837,9 @@ object mod {
     
     /** Get an array of the visible subcommands. Includes a placeholder for the implicit help command, if there is one. */
     def visibleCommands(cmd: Command): js.Array[Command] = js.native
+    
+    /** Get an array of the visible global options. (Not including help.) */
+    def visibleGlobalOptions(cmd: Command): js.Array[Option] = js.native
     
     /** Get an array of the visible options. Includes a placeholder for the implicit help option, if there is one. */
     def visibleOptions(cmd: Command): js.Array[Option] = js.native
@@ -967,9 +982,6 @@ object mod {
     
     var negate: Boolean = js.native
     
-    // The option must have a value after parsing, which usually means it must be specified on command line.
-    var optionFlags: String = js.native
-    
     // A value must be supplied when the option is specified.
     var optional: Boolean = js.native
     
@@ -989,6 +1001,7 @@ object mod {
     
     var required: Boolean = js.native
     
+    // The option must have a value after parsing, which usually means it must be specified on command line.
     var short: js.UndefOr[String] = js.native
     
     // A value is optional when the option is specified.
@@ -1152,6 +1165,8 @@ object mod {
     
     var longestArgumentTermLength: js.UndefOr[js.Function2[/* cmd */ Command, /* helper */ Help, Double]] = js.undefined
     
+    var longestGlobalOptionTermLength: js.UndefOr[js.Function2[/* cmd */ Command, /* helper */ Help, Double]] = js.undefined
+    
     var longestOptionTermLength: js.UndefOr[js.Function2[/* cmd */ Command, /* helper */ Help, Double]] = js.undefined
     
     var longestSubcommandTermLength: js.UndefOr[js.Function2[/* cmd */ Command, /* helper */ Help, Double]] = js.undefined
@@ -1161,6 +1176,8 @@ object mod {
     var optionTerm: js.UndefOr[js.Function1[/* option */ Option, String]] = js.undefined
     
     var padWidth: js.UndefOr[js.Function2[/* cmd */ Command, /* helper */ Help, Double]] = js.undefined
+    
+    var showGlobalOptions: js.UndefOr[Boolean] = js.undefined
     
     var sortOptions: js.UndefOr[Boolean] = js.undefined
     
@@ -1173,6 +1190,8 @@ object mod {
     var visibleArguments: js.UndefOr[js.Function1[/* cmd */ Command, js.Array[Argument]]] = js.undefined
     
     var visibleCommands: js.UndefOr[js.Function1[/* cmd */ Command, js.Array[Command]]] = js.undefined
+    
+    var visibleGlobalOptions: js.UndefOr[js.Function1[/* cmd */ Command, js.Array[Option]]] = js.undefined
     
     var visibleOptions: js.UndefOr[js.Function1[/* cmd */ Command, js.Array[Option]]] = js.undefined
     
@@ -1228,6 +1247,10 @@ object mod {
       
       inline def setLongestArgumentTermLengthUndefined: Self = StObject.set(x, "longestArgumentTermLength", js.undefined)
       
+      inline def setLongestGlobalOptionTermLength(value: (/* cmd */ Command, /* helper */ Help) => Double): Self = StObject.set(x, "longestGlobalOptionTermLength", js.Any.fromFunction2(value))
+      
+      inline def setLongestGlobalOptionTermLengthUndefined: Self = StObject.set(x, "longestGlobalOptionTermLength", js.undefined)
+      
       inline def setLongestOptionTermLength(value: (/* cmd */ Command, /* helper */ Help) => Double): Self = StObject.set(x, "longestOptionTermLength", js.Any.fromFunction2(value))
       
       inline def setLongestOptionTermLengthUndefined: Self = StObject.set(x, "longestOptionTermLength", js.undefined)
@@ -1247,6 +1270,10 @@ object mod {
       inline def setPadWidth(value: (/* cmd */ Command, /* helper */ Help) => Double): Self = StObject.set(x, "padWidth", js.Any.fromFunction2(value))
       
       inline def setPadWidthUndefined: Self = StObject.set(x, "padWidth", js.undefined)
+      
+      inline def setShowGlobalOptions(value: Boolean): Self = StObject.set(x, "showGlobalOptions", value.asInstanceOf[js.Any])
+      
+      inline def setShowGlobalOptionsUndefined: Self = StObject.set(x, "showGlobalOptions", js.undefined)
       
       inline def setSortOptions(value: Boolean): Self = StObject.set(x, "sortOptions", value.asInstanceOf[js.Any])
       
@@ -1271,6 +1298,10 @@ object mod {
       inline def setVisibleCommands(value: /* cmd */ Command => js.Array[Command]): Self = StObject.set(x, "visibleCommands", js.Any.fromFunction1(value))
       
       inline def setVisibleCommandsUndefined: Self = StObject.set(x, "visibleCommands", js.undefined)
+      
+      inline def setVisibleGlobalOptions(value: /* cmd */ Command => js.Array[Option]): Self = StObject.set(x, "visibleGlobalOptions", js.Any.fromFunction1(value))
+      
+      inline def setVisibleGlobalOptionsUndefined: Self = StObject.set(x, "visibleGlobalOptions", js.undefined)
       
       inline def setVisibleOptions(value: /* cmd */ Command => js.Array[Option]): Self = StObject.set(x, "visibleOptions", js.Any.fromFunction1(value))
       
@@ -1339,7 +1370,7 @@ object mod {
     inline def implied: typings.commander.commanderStrings.implied = "implied".asInstanceOf[typings.commander.commanderStrings.implied]
   }
   
-  type OptionValues = StringDictionary[Any]
+  type OptionValues = Record[String, Any]
   
   trait OutputConfiguration extends StObject {
     

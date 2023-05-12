@@ -1,7 +1,7 @@
 
 # Scala.js typings for deep-extend
 
-Typings are for version 0.4
+Typings are for version 0.6
 
 ## Library description:
 Recursive object extending

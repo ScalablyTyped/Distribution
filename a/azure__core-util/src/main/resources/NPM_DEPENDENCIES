@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@azure/core-util" : "1.1.0"
+      "@azure/core-util" : "1.3.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@azure/core-util" : "1.1.0"
+      "@azure/core-util" : "1.3.2"
     }
   ],
   "compile-devDependencies" : [

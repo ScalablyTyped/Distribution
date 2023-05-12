@@ -2,6 +2,7 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.angularCore.angularCoreBooleans.`true`
+import typings.angularCore.anon.Alias
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,16 +58,34 @@ trait Directive extends StObject {
   var host: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
+    * Standalone directives that should be applied to the host whenever the directive is matched.
+    * By default, none of the inputs or outputs of the host directives will be available on the host,
+    * unless they are specified in the `inputs` or `outputs` properties.
+    *
+    * You can additionally alias inputs and outputs by putting a colon and the alias after the
+    * original input or output name. For example, if a directive applied via `hostDirectives`
+    * defines an input named `menuDisabled`, you can alias this to `disabled` by adding
+    * `'menuDisabled: disabled'` as an entry to `inputs`.
+    */
+  var hostDirectives: js.UndefOr[js.Array[Type[Any] | typings.angularCore.anon.Directive]] = js.undefined
+  
+  /**
     * Enumerates the set of data-bound input properties for a directive
     *
     * Angular automatically updates input properties during change detection.
-    * The `inputs` property defines a set of `directiveProperty` to `bindingProperty`
-    * configuration:
+    * The `inputs` property accepts either strings or object literals that configure the directive
+    * properties that should be exposed as inputs.
     *
-    * - `directiveProperty` specifies the component property where the value is written.
-    * - `bindingProperty` specifies the DOM property where the value is read from.
+    * When an object literal is passed in, the `name` property indicates which property on the
+    * class the input should write to, while the `alias` determines the name under
+    * which the input will be available in template bindings. The `required` property indicates that
+    * the input is required which will trigger a compile-time error if it isn't passed in when the
+    * directive is used.
     *
-    * When `bindingProperty` is not provided, it is assumed to be equal to `directiveProperty`.
+    * When a string is passed into the `inputs` array, it can have a format of `'name'` or
+    * `'name: alias'` where `name` is the property on the class that the directive should write
+    * to, while the `alias` determines the name under which the input will be available in
+    * template bindings. String-based input definitions are assumed to be optional.
     *
     * @usageNotes
     *
@@ -75,7 +94,7 @@ trait Directive extends StObject {
     * ```typescript
     * @Component({
     *   selector: 'bank-account',
-    *   inputs: ['bankName', 'id: account-id'],
+    *   inputs: ['bankName', {name: 'id', alias: 'account-id'}],
     *   template: `
     *     Bank Name: {{bankName}}
     *     Account Id: {{id}}
@@ -88,7 +107,7 @@ trait Directive extends StObject {
     * ```
     *
     */
-  var inputs: js.UndefOr[js.Array[String]] = js.undefined
+  var inputs: js.UndefOr[js.Array[Alias | String]] = js.undefined
   
   /**
     * When present, this directive/component is ignored by the AOT compiler.
@@ -104,18 +123,18 @@ trait Directive extends StObject {
     * When an output property emits an event, an event handler attached to that event
     * in the template is invoked.
     *
-    * The `outputs` property defines a set of `directiveProperty` to `bindingProperty`
+    * The `outputs` property defines a set of `directiveProperty` to `alias`
     * configuration:
     *
     * - `directiveProperty` specifies the component property that emits events.
-    * - `bindingProperty` specifies the DOM property the event handler is attached to.
+    * - `alias` specifies the DOM property the event handler is attached to.
     *
     * @usageNotes
     *
     * ```typescript
     * @Component({
     *   selector: 'child-dir',
-    *   outputs: [ 'bankNameChange' ]
+    *   outputs: [ 'bankNameChange' ],
     *   template: `<input (input)="bankNameChange.emit($event.target.value)" />`
     * })
     * class ChildDir {
@@ -221,8 +240,6 @@ trait Directive extends StObject {
     *
     * More information about standalone components, directives, and pipes can be found in [this
     * guide](guide/standalone-components).
-    *
-    * @developerPreview
     */
   var standalone: js.UndefOr[Boolean] = js.undefined
 }
@@ -241,13 +258,19 @@ object Directive {
     
     inline def setHost(value: StringDictionary[String]): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
+    inline def setHostDirectives(value: js.Array[Type[Any] | typings.angularCore.anon.Directive]): Self = StObject.set(x, "hostDirectives", value.asInstanceOf[js.Any])
+    
+    inline def setHostDirectivesUndefined: Self = StObject.set(x, "hostDirectives", js.undefined)
+    
+    inline def setHostDirectivesVarargs(value: (Type[Any] | typings.angularCore.anon.Directive)*): Self = StObject.set(x, "hostDirectives", js.Array(value*))
+    
     inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    inline def setInputs(value: js.Array[String]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: js.Array[Alias | String]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
-    inline def setInputsVarargs(value: String*): Self = StObject.set(x, "inputs", js.Array(value*))
+    inline def setInputsVarargs(value: (Alias | String)*): Self = StObject.set(x, "inputs", js.Array(value*))
     
     inline def setJit(value: `true`): Self = StObject.set(x, "jit", value.asInstanceOf[js.Any])
     

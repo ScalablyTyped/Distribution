@@ -6,10 +6,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-  * Options for delivery fleet location provider.
-  */
 trait FleetEngineDeliveryFleetLocationProviderOptions extends StObject {
   
   /**
@@ -19,14 +15,34 @@ trait FleetEngineDeliveryFleetLocationProviderOptions extends StObject {
   
   /**
     * A filter query to apply when fetching delivery vehicles. This filter is
-    * passed directly to Fleet Engine. <p>See <a
+    * passed directly to Fleet Engine. <br><br>See <a
     * href="https://goo.gle/3wT0Dlt">ListDeliveryVehiclesRequest.filter</a> for
-    * supported formats. <p>Note that valid filters for attributes must have
-    * the &quot;attributes&quot; prefix. For example, <code>attributes.x =
+    * supported formats.<br><br>Note that valid filters for attributes must
+    * have the &quot;attributes&quot; prefix. For example, <code>attributes.x =
     * &quot;y&quot;</code> or <code>attributes.&quot;x y&quot; =
     * &quot;z&quot;</code>.
     */
   var deliveryVehicleFilter: String | Null
+  
+  /**
+    * Customization applied to a delivery vehicle marker. <br><br>Use this
+    * field to specify custom styling (such as marker icon) and interactivity
+    * (such as click handling).<ul><li>If a {@link google.maps.MarkerOptions}
+    * object is specified, the changes specified in it are applied to the
+    * marker after the marker has been created, overwriting its default options
+    * if they exist.</li><li> If a function is specified, it is invoked once
+    * when the marker is created, before it is added to the map view. (On this
+    * invocation, the <code>isNew</code> parameter in the function parameters
+    * object is set to <code>true</code>.) Additionally, this function is
+    * invoked when the location provider receives data from Fleet Engine,
+    * regardless of whether the data corresponding to this marker have
+    * changed.<br><br>See {@link
+    * google.maps.journeySharing.DeliveryVehicleMarkerCustomizationFunctionParams}
+    * for a list of supplied parameters and their uses.</li></ul>
+    */
+  var deliveryVehicleMarkerCustomization: js.UndefOr[
+    (js.Function1[/* a */ DeliveryVehicleMarkerCustomizationFunctionParams, Unit]) | Null
+  ] = js.undefined
   
   /**
     * The latitude/longitude bounds within which to track vehicles immediately
@@ -67,6 +83,12 @@ object FleetEngineDeliveryFleetLocationProviderOptions {
     inline def setDeliveryVehicleFilter(value: String): Self = StObject.set(x, "deliveryVehicleFilter", value.asInstanceOf[js.Any])
     
     inline def setDeliveryVehicleFilterNull: Self = StObject.set(x, "deliveryVehicleFilter", null)
+    
+    inline def setDeliveryVehicleMarkerCustomization(value: /* a */ DeliveryVehicleMarkerCustomizationFunctionParams => Unit): Self = StObject.set(x, "deliveryVehicleMarkerCustomization", js.Any.fromFunction1(value))
+    
+    inline def setDeliveryVehicleMarkerCustomizationNull: Self = StObject.set(x, "deliveryVehicleMarkerCustomization", null)
+    
+    inline def setDeliveryVehicleMarkerCustomizationUndefined: Self = StObject.set(x, "deliveryVehicleMarkerCustomization", js.undefined)
     
     inline def setLocationRestriction(value: LatLngBounds | LatLngBoundsLiteral): Self = StObject.set(x, "locationRestriction", value.asInstanceOf[js.Any])
     

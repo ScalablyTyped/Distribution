@@ -698,7 +698,7 @@ object mod {
       *
       * Use the generic to cast the return type of the rendering context, if it is known for a specific application.
       */
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     @JSName("context")
     def context_C_C[C /* <: GeoContext | Null */](): C = js.native
     
@@ -742,7 +742,7 @@ object mod {
       *
       * Use the generic to cast the return type of the projection, if it is known for a specific application.
       */
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     @JSName("projection")
     def projection_P_P[P /* <: GeoConicProjection | GeoProjection_ | GeoStreamWrapper | Null */](): P = js.native
   }

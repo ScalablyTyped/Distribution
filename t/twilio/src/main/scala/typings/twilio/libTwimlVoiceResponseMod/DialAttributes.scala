@@ -6,38 +6,55 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DialAttributes extends StObject {
   
+  /** action - Action URL */
   var action: js.UndefOr[String] = js.undefined
   
+  /** answerOnBridge - Preserve the ringing behavior of the inbound call until the Dialed call picks up */
   var answerOnBridge: js.UndefOr[Boolean] = js.undefined
   
+  /** callerId - Caller ID to display */
   var callerId: js.UndefOr[String] = js.undefined
   
+  /** hangupOnStar - Hangup call on star press */
   var hangupOnStar: js.UndefOr[Boolean] = js.undefined
   
+  /** method - Action URL method */
   var method: js.UndefOr[String] = js.undefined
   
+  /** record - Record the call */
   var record: js.UndefOr[DialRecord] = js.undefined
   
+  /** recordingStatusCallback - Recording status callback URL */
   var recordingStatusCallback: js.UndefOr[String] = js.undefined
   
+  /** recordingStatusCallbackEvent - Recording status callback events */
   var recordingStatusCallbackEvent: js.UndefOr[js.Array[DialRecordingEvent]] = js.undefined
   
+  /** recordingStatusCallbackMethod - Recording status callback URL method */
   var recordingStatusCallbackMethod: js.UndefOr[String] = js.undefined
   
+  /** recordingTrack - To indicate which audio track should be recorded */
   var recordingTrack: js.UndefOr[DialRecordingTrack] = js.undefined
   
+  /** referMethod - The HTTP method to use for the refer Webhook */
   var referMethod: js.UndefOr[String] = js.undefined
   
+  /** referUrl - Webhook that will receive future SIP REFER requests */
   var referUrl: js.UndefOr[String] = js.undefined
   
+  /** ringTone - Ringtone allows you to override the ringback tone that Twilio will play back to the caller while executing the Dial */
   var ringTone: js.UndefOr[DialRingTone] = js.undefined
   
+  /** sequential - Used to determine if child TwiML nouns should be dialed in order, one after the other (sequential) or dial all at once (parallel). Default is false, parallel */
   var sequential: js.UndefOr[Boolean] = js.undefined
   
+  /** timeLimit - Max time length */
   var timeLimit: js.UndefOr[Double] = js.undefined
   
+  /** timeout - Time to wait for answer */
   var timeout: js.UndefOr[Double] = js.undefined
   
+  /** trim - Trim the recording */
   var trim: js.UndefOr[DialTrim] = js.undefined
 }
 object DialAttributes {

@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * Generates a v4 UUID using a cryptographically secure random number generator
     * @returns UUID v4 string
     */
-  def randomUUID(): String
+  def randomUUID(): /* template literal string: ${string}-${string}-${string}-${string}-${string} */ String
   
   /**
     * Returns a SubtleCrypto object providing access to common cryptographic primitives,
@@ -28,7 +28,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object Crypto1 {
   
-  inline def apply(getRandomValues: Any => Any, randomUUID: () => String, subtle: SubtleCrypto1): Crypto1 = {
+  inline def apply(
+    getRandomValues: Any => Any,
+    randomUUID: () => /* template literal string: ${string}-${string}-${string}-${string}-${string} */ String,
+    subtle: SubtleCrypto1
+  ): Crypto1 = {
     val __obj = js.Dynamic.literal(getRandomValues = js.Any.fromFunction1(getRandomValues), randomUUID = js.Any.fromFunction0(randomUUID), subtle = subtle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Crypto1]
   }
@@ -38,7 +42,9 @@ object Crypto1 {
     
     inline def setGetRandomValues(value: Any => Any): Self = StObject.set(x, "getRandomValues", js.Any.fromFunction1(value))
     
-    inline def setRandomUUID(value: () => String): Self = StObject.set(x, "randomUUID", js.Any.fromFunction0(value))
+    inline def setRandomUUID(
+      value: () => /* template literal string: ${string}-${string}-${string}-${string}-${string} */ String
+    ): Self = StObject.set(x, "randomUUID", js.Any.fromFunction0(value))
     
     inline def setSubtle(value: SubtleCrypto1): Self = StObject.set(x, "subtle", value.asInstanceOf[js.Any])
   }

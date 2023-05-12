@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InputDecorator
   extends StObject
      with Instantiable0[Any]
-     with Instantiable1[/* bindingPropertyName */ String, Any] {
+     with Instantiable1[(/* arg */ Input) | (/* arg */ String), Any] {
   
   /**
     * Decorator that marks a class field as an input property and supplies configuration metadata.
@@ -58,5 +58,6 @@ trait InputDecorator
     * @see [Input and Output properties](guide/inputs-outputs)
     */
   def apply(): Any = js.native
-  def apply(bindingPropertyName: String): Any = js.native
+  def apply(arg: String): Any = js.native
+  def apply(arg: Input): Any = js.native
 }

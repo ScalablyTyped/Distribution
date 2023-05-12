@@ -65,6 +65,11 @@ trait UpdateResponsePlanInput extends StObject {
     * The short format name of the incident. The title can't contain spaces.
     */
   var incidentTemplateTitle: js.UndefOr[IncidentTitle] = js.undefined
+  
+  /**
+    * Information about third-party services integrated into the response plan.
+    */
+  var integrations: js.UndefOr[Integrations] = js.undefined
 }
 object UpdateResponsePlanInput {
   
@@ -127,5 +132,11 @@ object UpdateResponsePlanInput {
     inline def setIncidentTemplateTitle(value: IncidentTitle): Self = StObject.set(x, "incidentTemplateTitle", value.asInstanceOf[js.Any])
     
     inline def setIncidentTemplateTitleUndefined: Self = StObject.set(x, "incidentTemplateTitle", js.undefined)
+    
+    inline def setIntegrations(value: Integrations): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
+    
+    inline def setIntegrationsUndefined: Self = StObject.set(x, "integrations", js.undefined)
+    
+    inline def setIntegrationsVarargs(value: Integration*): Self = StObject.set(x, "integrations", js.Array(value*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.convertSourceMap
 
+import typings.convertSourceMap.anon.Encoding
 import typings.convertSourceMap.anon.Multiline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,13 +22,19 @@ object mod {
   
   inline def fromJSON(json: String): SourceMapConverter = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[SourceMapConverter]
   
-  inline def fromMapFileComment(comment: String, commentFileDir: String): SourceMapConverter = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMapFileComment")(comment.asInstanceOf[js.Any], commentFileDir.asInstanceOf[js.Any])).asInstanceOf[SourceMapConverter]
+  inline def fromMapFileComment(comment: String, readMap: js.Function1[/* filename */ String, String]): SourceMapConverter = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMapFileComment")(comment.asInstanceOf[js.Any], readMap.asInstanceOf[js.Any])).asInstanceOf[SourceMapConverter]
   
-  inline def fromMapFileSource(content: String, commentFileDir: String): SourceMapConverter | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMapFileSource")(content.asInstanceOf[js.Any], commentFileDir.asInstanceOf[js.Any])).asInstanceOf[SourceMapConverter | Null]
+  inline def fromMapFileComment_Promise(comment: String, readMap: js.Function1[/* filename */ String, js.Promise[String]]): js.Promise[SourceMapConverter] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMapFileComment")(comment.asInstanceOf[js.Any], readMap.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SourceMapConverter]]
+  
+  inline def fromMapFileSource(content: String, readMap: js.Function1[/* filename */ String, String]): SourceMapConverter | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMapFileSource")(content.asInstanceOf[js.Any], readMap.asInstanceOf[js.Any])).asInstanceOf[SourceMapConverter | Null]
+  
+  inline def fromMapFileSource_Promise(content: String, readMap: js.Function1[/* filename */ String, js.Promise[String]]): js.Promise[SourceMapConverter | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMapFileSource")(content.asInstanceOf[js.Any], readMap.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SourceMapConverter | Null]]
   
   inline def fromObject(obj: Any): SourceMapConverter = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[SourceMapConverter]
   
   inline def fromSource(content: String): SourceMapConverter | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSource")(content.asInstanceOf[js.Any]).asInstanceOf[SourceMapConverter | Null]
+  
+  inline def fromURI(uri: String): SourceMapConverter = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURI")(uri.asInstanceOf[js.Any]).asInstanceOf[SourceMapConverter]
   
   inline def generateMapFileComment(file: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateMapFileComment")(file.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def generateMapFileComment(file: String, options: Multiline): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateMapFileComment")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -61,10 +68,11 @@ object mod {
     /**
       * Converts source map to an inline comment that can be appended to the source-file.
       * By default, the comment is formatted like: //# sourceMappingURL=..., which you would normally see in a JS source file.
-      * When options.multiline == true, the comment is formatted like: / *# sourceMappingURL=... *\/, which you would find in a CSS source file
+      * When `options.encoding == 'uri'`, the data will be uri encoded, otherwise they will be base64 encoded.
+      * When `options.multiline == true`, the comment is formatted like: / *# sourceMappingURL=... *\/, which you would find in a CSS source file
       */
     def toComment(): String = js.native
-    def toComment(options: Multiline): String = js.native
+    def toComment(options: Encoding): String = js.native
     
     /** Converts source map to json string. If space is given (optional), this will be passed to JSON.stringify when the JSON string is generated */
     def toJSON(): String = js.native
@@ -73,5 +81,8 @@ object mod {
     
     /** Returns a copy of the underlying source map */
     def toObject(): Any = js.native
+    
+    /** Converts source map to uri encoded json string */
+    def toURI(): String = js.native
   }
 }

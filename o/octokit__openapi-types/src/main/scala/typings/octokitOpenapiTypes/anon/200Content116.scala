@@ -6,18 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `200Content116` extends StObject {
   
-  /** Response */
+  /** @description Response */
   var `200`: Content116
-  
-  /** if user has no team membership */
-  var `404`: Any
 }
 object `200Content116` {
   
-  inline def apply(`200`: Content116, `404`: Any): `200Content116` = {
+  inline def apply(`200`: Content116): `200Content116` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
-    __obj.updateDynamic("404")(`404`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`200Content116`]
   }
   
@@ -25,7 +21,5 @@ object `200Content116` {
   implicit open class MutableBuilder[Self <: `200Content116`] (val x: Self) extends AnyVal {
     
     inline def set200(value: Content116): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
-    
-    inline def set404(value: Any): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
   }
 }

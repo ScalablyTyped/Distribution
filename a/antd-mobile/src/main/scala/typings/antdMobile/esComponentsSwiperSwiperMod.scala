@@ -57,7 +57,14 @@ object esComponentsSwiperSwiperMod {
   @js.native
   val Swiper: ForwardRefExoticComponent[defaultIndexnumberundefinAllowTouchMove] = js.native
   
-  /* Inlined {  defaultIndex :number | undefined,   allowTouchMove :boolean | undefined,   autoplay :boolean | undefined,   autoplayInterval :number | undefined,   loop :boolean | undefined,   direction :'horizontal' | 'vertical' | undefined,   onIndexChange :(index : number): void | undefined,   indicatorProps :std.Pick<antd-mobile.antd-mobile/es/components/page-indicator.PageIndicatorProps, 'color' | 'style' | 'className'> | undefined,   indicator :(total : number, current : number): react.react.ReactNode | undefined,   slideSize :number | undefined,   trackOffset :number | undefined,   stuckAtBoundary :boolean | undefined,   rubberband :boolean | undefined,   children :react.react.ReactElement | std.Array<react.react.ReactElement> | undefined} & antd-mobile.antd-mobile/es/utils/native-props.NativeProps<'--height' | '--width' | '--border-radius' | '--track-padding'> */
+  /* keyof antd-mobile.anon.Mousedown */ /* Rewritten from type alias, can be one of: 
+    - typings.antdMobile.antdMobileStrings.mousedown
+    - typings.antdMobile.antdMobileStrings.mousemove
+    - typings.antdMobile.antdMobileStrings.mouseup
+  */
+  trait PropagationEvent extends StObject
+  
+  /* Inlined {  defaultIndex :number | undefined,   allowTouchMove :boolean | undefined,   autoplay :boolean | undefined,   autoplayInterval :number | undefined,   loop :boolean | undefined,   direction :'horizontal' | 'vertical' | undefined,   onIndexChange :(index : number): void | undefined,   indicatorProps :std.Pick<antd-mobile.antd-mobile/es/components/page-indicator.PageIndicatorProps, 'color' | 'style' | 'className'> | undefined,   indicator :(total : number, current : number): react.react.ReactNode | undefined,   slideSize :number | undefined,   trackOffset :number | undefined,   stuckAtBoundary :boolean | undefined,   rubberband :boolean | undefined,   stopPropagation :std.Array<antd-mobile.antd-mobile/es/components/swiper/swiper.PropagationEvent> | undefined,   children :react.react.ReactElement | std.Array<react.react.ReactElement> | undefined} & antd-mobile.antd-mobile/es/utils/native-props.NativeProps<'--height' | '--width' | '--border-radius' | '--track-padding'> */
   trait SwiperProps extends StObject {
     
     var allowTouchMove: js.UndefOr[Boolean] = js.undefined
@@ -319,6 +326,8 @@ object esComponentsSwiperSwiperMod {
     var rubberband: js.UndefOr[Boolean] = js.undefined
     
     var slideSize: js.UndefOr[Double] = js.undefined
+    
+    var stopPropagation: js.UndefOr[js.Array[PropagationEvent]] = js.undefined
     
     var stuckAtBoundary: js.UndefOr[Boolean] = js.undefined
     
@@ -585,6 +594,12 @@ object esComponentsSwiperSwiperMod {
       inline def setSlideSize(value: Double): Self = StObject.set(x, "slideSize", value.asInstanceOf[js.Any])
       
       inline def setSlideSizeUndefined: Self = StObject.set(x, "slideSize", js.undefined)
+      
+      inline def setStopPropagation(value: js.Array[PropagationEvent]): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
+      
+      inline def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
+      
+      inline def setStopPropagationVarargs(value: PropagationEvent*): Self = StObject.set(x, "stopPropagation", js.Array(value*))
       
       inline def setStuckAtBoundary(value: Boolean): Self = StObject.set(x, "stuckAtBoundary", value.asInstanceOf[js.Any])
       

@@ -1,8 +1,8 @@
 package typings.workboxStreams
 
 import typings.std.HeadersInit
-import typings.std.Response
-import typings.workboxStreams.typesStreamSourceMod.StreamSource
+import typings.workboxStreams.anon.Response
+import typings.workboxStreams.typesMod.StreamSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,28 +13,22 @@ object concatenateToResponseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def concatenateToResponse(sourcePromises: js.Array[js.Promise[StreamSource]]): ConcatenateToResponseReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenateToResponse")(sourcePromises.asInstanceOf[js.Any]).asInstanceOf[ConcatenateToResponseReturn]
-  inline def concatenateToResponse(sourcePromises: js.Array[js.Promise[StreamSource]], headersInit: HeadersInit): ConcatenateToResponseReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("concatenateToResponse")(sourcePromises.asInstanceOf[js.Any], headersInit.asInstanceOf[js.Any])).asInstanceOf[ConcatenateToResponseReturn]
-  
-  trait ConcatenateToResponseReturn extends StObject {
-    
-    var done: js.Promise[Unit]
-    
-    var response: Response
-  }
-  object ConcatenateToResponseReturn {
-    
-    inline def apply(done: js.Promise[Unit], response: Response): ConcatenateToResponseReturn = {
-      val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ConcatenateToResponseReturn]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: ConcatenateToResponseReturn] (val x: Self) extends AnyVal {
-      
-      inline def setDone(value: js.Promise[Unit]): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
-      
-      inline def setResponse(value: Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
-    }
-  }
+  /**
+    * Takes multiple source Promises, each of which could resolve to a Response, a
+    * ReadableStream, or a [BodyInit](https://fetch.spec.whatwg.org/#bodyinit),
+    * along with a
+    * [HeadersInit](https://fetch.spec.whatwg.org/#typedefdef-headersinit).
+    *
+    * Returns an object exposing a Response whose body consists of each individual
+    * stream's data returned in sequence, along with a Promise which signals when
+    * the stream is finished (useful for passing to a FetchEvent's waitUntil()).
+    *
+    * @param {Array<Promise<workbox-streams.StreamSource>>} sourcePromises
+    * @param {HeadersInit} [headersInit] If there's no `Content-Type` specified,
+    * `'text/html'` will be used by default.
+    * @return {Object<{done: Promise, response: Response}>}
+    *
+    * @memberof workbox-streams
+    */
+  inline def concatenateToResponse(sourcePromises: js.Array[js.Promise[StreamSource]], headersInit: HeadersInit): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("concatenateToResponse")(sourcePromises.asInstanceOf[js.Any], headersInit.asInstanceOf[js.Any])).asInstanceOf[Response]
 }

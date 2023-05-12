@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+// type AlphaOption = "discard" | "keep";
 /* Rewritten from type alias, can be one of: 
   - typings.domWebcodecs.domWebcodecsStrings.f32
   - typings.domWebcodecs.domWebcodecsStrings.`f32-planar`

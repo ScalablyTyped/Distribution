@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LabeledStatement
   extends StObject
      with Statement
+     with FlowContainer
      with HasJSDoc {
   
   @JSName("kind")

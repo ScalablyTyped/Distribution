@@ -329,6 +329,8 @@ object sapUiUx3ExactBrowserMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:attributeSelected attributeSelected} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -340,6 +342,8 @@ object sapUiUx3ExactBrowserMod {
     mParameters: AllAttributes): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:save save} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

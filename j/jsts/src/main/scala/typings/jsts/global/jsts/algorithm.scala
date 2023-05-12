@@ -81,7 +81,6 @@ object algorithm {
   @JSGlobal("jsts.algorithm.LineIntersector")
   @js.native
   /**
-    * @constructor
     */
   open class LineIntersector ()
     extends StObject
@@ -94,7 +93,6 @@ object algorithm {
     val ^ : js.Any = js.native
     
     /**
-      * @type {int}
       */
     @JSGlobal("jsts.algorithm.LineIntersector.COLLINEAR")
     @js.native
@@ -104,7 +102,6 @@ object algorithm {
     /**
       * Indicates that line segments intersect in a line segment
       *
-      * @type {int}
       */
     @JSGlobal("jsts.algorithm.LineIntersector.COLLINEAR_INTERSECTION")
     @js.native
@@ -114,7 +111,6 @@ object algorithm {
     /**
       * These are deprecated, due to ambiguous naming
       *
-      * @type {int}
       */
     @JSGlobal("jsts.algorithm.LineIntersector.DONT_INTERSECT")
     @js.native
@@ -122,7 +118,6 @@ object algorithm {
     inline def DONT_INTERSECT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DONT_INTERSECT")(x.asInstanceOf[js.Any])
     
     /**
-      * @type {int}
       */
     @JSGlobal("jsts.algorithm.LineIntersector.DO_INTERSECT")
     @js.native
@@ -132,7 +127,6 @@ object algorithm {
     /**
       * Indicates that line segments do not intersect
       *
-      * @type {int}
       */
     @JSGlobal("jsts.algorithm.LineIntersector.NO_INTERSECTION")
     @js.native
@@ -142,7 +136,6 @@ object algorithm {
     /**
       * Indicates that line segments intersect in a single point
       *
-      * @type {int}
       */
     @JSGlobal("jsts.algorithm.LineIntersector.POINT_INTERSECTION")
     @js.native
@@ -224,7 +217,6 @@ object algorithm {
   @JSGlobal("jsts.algorithm.RobustLineIntersector")
   @js.native
   /**
-    * @constructor
     */
   open class RobustLineIntersector ()
     extends StObject

@@ -2,6 +2,7 @@ package typings.heremaps.H.ui
 
 import typings.heremaps.H.Map_
 import typings.heremaps.H.ui.i18n.Localization
+import typings.heremaps.H.util.EventTarget
 import typings.heremaps.H.util.ICapturable
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
@@ -14,6 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait UI
   extends StObject
+     with EventTarget
      with ICapturable {
   
   /**
@@ -88,14 +90,14 @@ object UI {
   
   /**
     * Optional parameters to be passed to the UI constructor.
-    * @property unitSystem {H.ui.UnitSystem=} - An optional unit system to be used by the UI, default is H.ui.UnitSystem.METRIC
-    * @property zoom {(H.ui.ZoomControl.Options | boolean)=} -
-    * @property zoomrectangle {(H.ui.ZoomRectangle.Options | boolean)=} -
-    * @property mapsettings {(H.ui.MapSettingsControl.Options | boolean)=} -
-    * @property scalebar {(H.ui.ScaleBar.Options | boolean)=} -
-    * @property panorama {(H.ui.Pano.Options | boolean)=} -
-    * @property distancemeasurement {(H.ui.DistanceMeasurement.Options | boolean)=} -
-    * @property locale {(H.ui.i18n.Localization | string)=} - defines language in which UI can be rendered. It can be predefined H.ui.i18n.Localization object with custom translation map,
+    * unitSystem {H.ui.UnitSystem=} - An optional unit system to be used by the UI, default is H.ui.UnitSystem.METRIC
+    * zoom {(H.ui.ZoomControl.Options | boolean)=} -
+    * zoomrectangle {(H.ui.ZoomRectangle.Options | boolean)=} -
+    * mapsettings {(H.ui.MapSettingsControl.Options | boolean)=} -
+    * scalebar {(H.ui.ScaleBar.Options | boolean)=} -
+    * panorama {(H.ui.Pano.Options | boolean)=} -
+    * distancemeasurement {(H.ui.DistanceMeasurement.Options | boolean)=} -
+    * locale {(H.ui.i18n.Localization | string)=} - defines language in which UI can be rendered. It can be predefined H.ui.i18n.Localization object with custom translation map,
     * or a string one of following 'en-US', 'de-DE', 'es-ES', 'fi-FI', 'fr-FR', 'it-IT', 'nl-NL', 'pl-PL', 'pt-BR', 'pt-PT', 'ru-RU', 'tr-TR', 'zh-CN'. If not defined ui will use 'en-US'
     * by default
     */

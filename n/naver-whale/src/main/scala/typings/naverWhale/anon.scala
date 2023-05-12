@@ -188,12 +188,6 @@ object anon {
       * @param url 삭제할 url
       */
     def _delete(url: String): Unit = js.native
-    /**
-      * 자주 가는 사이트에서 해당 url을 삭제합니다.
-      * @param url 삭제할 url
-      */
-    @JSName("_delete")
-    var _delete_Original: js.Function1[/* url */ String, Unit] = js.native
     
     def add(url: String, title: String): Unit = js.native
     def add(url: String, title: String, callback: js.Function1[/* status */ Boolean, Unit]): Unit = js.native

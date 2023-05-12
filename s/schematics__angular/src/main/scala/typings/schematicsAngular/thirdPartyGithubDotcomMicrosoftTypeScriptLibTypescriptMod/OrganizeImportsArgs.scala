@@ -8,6 +8,9 @@ trait OrganizeImportsArgs
   extends StObject
      with CombinedCodeFixScope {
   
+  var mode: js.UndefOr[OrganizeImportsMode] = js.undefined
+  
+  /** @deprecated Use `mode` instead */
   var skipDestructiveCodeActions: js.UndefOr[Boolean] = js.undefined
 }
 object OrganizeImportsArgs {
@@ -20,6 +23,10 @@ object OrganizeImportsArgs {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: OrganizeImportsArgs] (val x: Self) extends AnyVal {
+    
+    inline def setMode(value: OrganizeImportsMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     inline def setSkipDestructiveCodeActions(value: Boolean): Self = StObject.set(x, "skipDestructiveCodeActions", value.asInstanceOf[js.Any])
     

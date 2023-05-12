@@ -10,6 +10,11 @@ open class Range protected () extends StObject {
   def this(startLineNumber: Double, startColumn: Double, endLineNumber: Double, endColumn: Double) = this()
   
   /**
+    * Create a new empty range using this range's end position.
+    */
+  def collapseToEnd(): Range = js.native
+  
+  /**
     * Create a new empty range using this range's start position.
     */
   def collapseToStart(): Range = js.native
@@ -23,6 +28,11 @@ open class Range protected () extends StObject {
     * Test if range is in this range. If the range is equal to this range, will return true.
     */
   def containsRange(range: IRange): Boolean = js.native
+  
+  /**
+    * Moves the range by the given amount of lines.
+    */
+  def delta(lineCount: Double): Range = js.native
   
   /**
     * Column on which the range ends in line `endLineNumber`.
@@ -111,6 +121,11 @@ object Range {
   inline def areIntersectingOrTouching(a: IRange, b: IRange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areIntersectingOrTouching")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
+    * Create a new empty range using this range's end position.
+    */
+  inline def collapseToEnd(range: IRange): Range = ^.asInstanceOf[js.Dynamic].applyDynamic("collapseToEnd")(range.asInstanceOf[js.Any]).asInstanceOf[Range]
+  
+  /**
     * Create a new empty range using this range's start position.
     */
   inline def collapseToStart(range: IRange): Range = ^.asInstanceOf[js.Dynamic].applyDynamic("collapseToStart")(range.asInstanceOf[js.Any]).asInstanceOf[Range]
@@ -146,6 +161,7 @@ object Range {
     */
   inline def equalsRange(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equalsRange")().asInstanceOf[Boolean]
   inline def equalsRange(a: Null, b: IRange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equalsRange")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equalsRange(a: Unit, b: IRange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equalsRange")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def equalsRange(a: IRange): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equalsRange")(a.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def equalsRange(a: IRange, b: IRange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equalsRange")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   

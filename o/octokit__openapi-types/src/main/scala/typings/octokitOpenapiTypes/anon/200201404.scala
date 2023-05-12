@@ -6,26 +6,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `200201404` extends StObject {
   
-  /** Response */
+  /** @description Response */
   var `200`: ContentApplicationjsonCommitContent
   
-  /** Response */
+  /** @description Response */
   var `201`: ContentApplicationjsonCommitContent
   
-  var `404`: Content48
+  var `404`: Content36
   
-  var `409`: Content48
+  var `409`: Content36
   
-  var `422`: Content397
+  var `422`: Content346
 }
 object `200201404` {
   
   inline def apply(
     `200`: ContentApplicationjsonCommitContent,
     `201`: ContentApplicationjsonCommitContent,
-    `404`: Content48,
-    `409`: Content48,
-    `422`: Content397
+    `404`: Content36,
+    `409`: Content36,
+    `422`: Content346
   ): `200201404` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
@@ -43,10 +43,10 @@ object `200201404` {
     
     inline def set201(value: ContentApplicationjsonCommitContent): Self = StObject.set(x, "201", value.asInstanceOf[js.Any])
     
-    inline def set404(value: Content48): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(value: Content36): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
     
-    inline def set409(value: Content48): Self = StObject.set(x, "409", value.asInstanceOf[js.Any])
+    inline def set409(value: Content36): Self = StObject.set(x, "409", value.asInstanceOf[js.Any])
     
-    inline def set422(value: Content397): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
+    inline def set422(value: Content346): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
   }
 }

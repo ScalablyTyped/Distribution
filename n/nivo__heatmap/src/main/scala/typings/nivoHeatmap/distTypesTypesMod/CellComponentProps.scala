@@ -1,5 +1,6 @@
 package typings.nivoHeatmap.distTypesTypesMod
 
+import typings.nivoHeatmap.anon.AnimatedPropsCellAnimated
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.std.Element
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CellComponentProps[Datum /* <: HeatMapDatum */] extends StObject {
   
-  var animatedProps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnimatedProps<CellAnimatedProps> */ Any
+  var animatedProps: AnimatedPropsCellAnimated
   
   var borderRadius: Double
   
@@ -50,7 +51,7 @@ trait CellComponentProps[Datum /* <: HeatMapDatum */] extends StObject {
 object CellComponentProps {
   
   inline def apply[Datum /* <: HeatMapDatum */](
-    animatedProps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnimatedProps<CellAnimatedProps> */ Any,
+    animatedProps: AnimatedPropsCellAnimated,
     borderRadius: Double,
     borderWidth: Double,
     cell: ComputedCell[Datum],
@@ -63,9 +64,7 @@ object CellComponentProps {
   @scala.inline
   implicit open class MutableBuilder[Self <: CellComponentProps[?], Datum /* <: HeatMapDatum */] (val x: Self & CellComponentProps[Datum]) extends AnyVal {
     
-    inline def setAnimatedProps(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnimatedProps<CellAnimatedProps> */ Any
-    ): Self = StObject.set(x, "animatedProps", value.asInstanceOf[js.Any])
+    inline def setAnimatedProps(value: AnimatedPropsCellAnimated): Self = StObject.set(x, "animatedProps", value.asInstanceOf[js.Any])
     
     inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     

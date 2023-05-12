@@ -55,4 +55,44 @@ object libTickerPluginMod {
     def ticker: Ticker = js.native
     inline def ticker_=(x: Ticker): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ticker")(x.asInstanceOf[js.Any])
   }
+  
+  trait TickerPluginOptions extends StObject {
+    
+    /**
+      * Automatically starts the rendering after the construction.
+      *  **Note**: Setting this parameter to `false` does NOT stop the shared ticker even if you set
+      *  `options.sharedTicker` to `true` in case that it is already started. Stop it by your own.
+      * @memberof PIXI.IApplicationOptions
+      * @default true
+      */
+    var autoStart: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Set`true` to use `Ticker.shared`, `false` to create new ticker.
+      *  If set to `false`, you cannot register a handler to occur before anything that runs on the shared ticker.
+      *  The system ticker will always run before both the shared ticker and the app ticker.
+      * @memberof PIXI.IApplicationOptions
+      * @default false
+      */
+    var sharedTicker: js.UndefOr[Boolean] = js.undefined
+  }
+  object TickerPluginOptions {
+    
+    inline def apply(): TickerPluginOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TickerPluginOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TickerPluginOptions] (val x: Self) extends AnyVal {
+      
+      inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
+      
+      inline def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
+      
+      inline def setSharedTicker(value: Boolean): Self = StObject.set(x, "sharedTicker", value.asInstanceOf[js.Any])
+      
+      inline def setSharedTickerUndefined: Self = StObject.set(x, "sharedTicker", js.undefined)
+    }
+  }
 }

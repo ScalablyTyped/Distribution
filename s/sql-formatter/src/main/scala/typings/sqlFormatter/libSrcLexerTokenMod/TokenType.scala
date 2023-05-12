@@ -68,6 +68,12 @@ object TokenType extends StObject {
   /* "COMMA" */ val COMMA: typings.sqlFormatter.libSrcLexerTokenMod.TokenType.COMMA & String = js.native
   
   @js.native
+  sealed trait CUSTOM_PARAMETER
+    extends StObject
+       with TokenType
+  /* "CUSTOM_PARAMETER" */ val CUSTOM_PARAMETER: typings.sqlFormatter.libSrcLexerTokenMod.TokenType.CUSTOM_PARAMETER & String = js.native
+  
+  @js.native
   sealed trait DELIMITER
     extends StObject
        with TokenType

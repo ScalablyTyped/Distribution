@@ -8,14 +8,14 @@ trait ParametersQueryLabelName extends StObject {
   
   var parameters: QueryLabelName
   
-  var requestBody: `320`
+  var requestBody: js.UndefOr[ContentApplicationoctetstream] = js.undefined
   
-  var responses: `201Content316`
+  var responses: `201Content331`
 }
 object ParametersQueryLabelName {
   
-  inline def apply(parameters: QueryLabelName, requestBody: `320`, responses: `201Content316`): ParametersQueryLabelName = {
-    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
+  inline def apply(parameters: QueryLabelName, responses: `201Content331`): ParametersQueryLabelName = {
+    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryLabelName]
   }
   
@@ -24,8 +24,10 @@ object ParametersQueryLabelName {
     
     inline def setParameters(value: QueryLabelName): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setRequestBody(value: `320`): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: ContentApplicationoctetstream): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `201Content316`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    
+    inline def setResponses(value: `201Content331`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

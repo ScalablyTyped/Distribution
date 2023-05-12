@@ -18,8 +18,8 @@ open class SoundInstance3d protected () extends SoundInstance {
   /**
     * Create a new SoundInstance3d instance.
     *
-    * @param {SoundManager} manager - The sound manager.
-    * @param {Sound} sound - The sound to play.
+    * @param {import('./manager.js').SoundManager} manager - The sound manager.
+    * @param {import('./sound.js').Sound} sound - The sound to play.
     * @param {object} options - Options for the instance.
     * @param {number} [options.volume=1] - The playback volume, between 0 and 1.
     * @param {number} [options.pitch=1] - The relative pitch, default of 1, plays at normal pitch.

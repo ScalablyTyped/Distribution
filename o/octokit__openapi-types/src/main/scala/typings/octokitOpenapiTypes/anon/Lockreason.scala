@@ -12,10 +12,10 @@ trait Lockreason extends StObject {
   
   /**
     * @description The reason for locking the issue or pull request conversation. Lock will fail if you don't use one of these reasons:
-    * \* `off-topic`
-    * \* `too heated`
-    * \* `resolved`
-    * \* `spam`
+    *  * `off-topic`
+    *  * `too heated`
+    *  * `resolved`
+    *  * `spam`
     * @enum {string}
     */
   var lock_reason: js.UndefOr[`off-topic` | (`too heated`) | resolved | spam] = js.undefined

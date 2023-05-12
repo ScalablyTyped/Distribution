@@ -18,10 +18,15 @@ import typings.meteor.Meteor.absoluteUrlOptions
 import typings.meteor.Mongo.Collection
 import typings.meteor.Mongo.Cursor
 import typings.meteor.Subscription
+import typings.meteor.anon.EmailString
 import typings.meteor.anon.Fields
+import typings.meteor.anon.Id
 import typings.meteor.anon.Isauto
 import typings.meteor.anon.LoginStyle
+import typings.meteor.anon.LoginWithExternalServiceO
 import typings.meteor.anon.OnResultReceived
+import typings.meteor.anon.Username
+import typings.std.ThisParameterType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -296,9 +301,9 @@ object Meteor {
   
   inline def loginWithGoogle(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loginWithGoogle")().asInstanceOf[Unit]
   inline def loginWithGoogle(options: Unit, callback: js.Function1[/* error */ js.UndefOr[js.Error | Error | TypedError], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loginWithGoogle")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def loginWithGoogle(options: LoginWithExternalServiceOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loginWithGoogle")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def loginWithGoogle(options: LoginWithExternalServiceO): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loginWithGoogle")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def loginWithGoogle(
-    options: LoginWithExternalServiceOptions,
+    options: LoginWithExternalServiceO,
     callback: js.Function1[/* error */ js.UndefOr[js.Error | Error | TypedError], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loginWithGoogle")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -324,9 +329,21 @@ object Meteor {
     password: String,
     callback: js.Function1[/* error */ js.UndefOr[js.Error | Error | TypedError], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loginWithPassword")(user.asInstanceOf[js.Any], password.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def loginWithPassword(user: js.Object, password: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loginWithPassword")(user.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def loginWithPassword(user: EmailString, password: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loginWithPassword")(user.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def loginWithPassword(
-    user: js.Object,
+    user: EmailString,
+    password: String,
+    callback: js.Function1[/* error */ js.UndefOr[js.Error | Error | TypedError], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loginWithPassword")(user.asInstanceOf[js.Any], password.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def loginWithPassword(user: Id, password: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loginWithPassword")(user.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def loginWithPassword(
+    user: Id,
+    password: String,
+    callback: js.Function1[/* error */ js.UndefOr[js.Error | Error | TypedError], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loginWithPassword")(user.asInstanceOf[js.Any], password.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def loginWithPassword(user: Username, password: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loginWithPassword")(user.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def loginWithPassword(
+    user: Username,
     password: String,
     callback: js.Function1[/* error */ js.UndefOr[js.Error | Error | TypedError], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loginWithPassword")(user.asInstanceOf[js.Any], password.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -479,6 +496,9 @@ object Meteor {
   inline def user(): User | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("user")().asInstanceOf[User | Null]
   inline def user(options: Fields): User | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("user")(options.asInstanceOf[js.Any]).asInstanceOf[User | Null]
   
+  inline def userAsync(): js.Promise[User | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("userAsync")().asInstanceOf[js.Promise[User | Null]]
+  inline def userAsync(options: Fields): js.Promise[User | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("userAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[User | Null]]
+  
   inline def userId(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("userId")().asInstanceOf[String | Null]
   
   @JSGlobal("Meteor.users")
@@ -496,6 +516,6 @@ object Meteor {
     * @param func A function that takes a callback as its final parameter
     * @param context Optional `this` object against which the original function will be invoked
     */
-  inline def wrapAsync(func: js.Function): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapAsync")(func.asInstanceOf[js.Any]).asInstanceOf[Any]
-  inline def wrapAsync(func: js.Function, context: js.Object): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapAsync")(func.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def wrapAsync[T /* <: js.Function */](func: T): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapAsync")(func.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def wrapAsync[T /* <: js.Function */](func: T, context: ThisParameterType[T]): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapAsync")(func.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Function]
 }

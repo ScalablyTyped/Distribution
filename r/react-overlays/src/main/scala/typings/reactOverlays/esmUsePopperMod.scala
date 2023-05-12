@@ -62,6 +62,7 @@ object esmUsePopperMod {
     - typings.reactOverlays.reactOverlaysStrings.length
     - typings.reactOverlays.reactOverlaysStrings.entries
     - typings.reactOverlays.reactOverlaysStrings.pop
+    - typings.reactOverlays.reactOverlaysStrings.findLast
     - typings.reactOverlays.reactOverlaysStrings.fill
     - typings.reactOverlays.reactOverlaysStrings.join
     - typings.reactOverlays.reactOverlaysStrings.copyWithin
@@ -80,6 +81,7 @@ object esmUsePopperMod {
     - typings.reactOverlays.reactOverlaysStrings.at
     - typings.reactOverlays.reactOverlaysStrings.unshift
     - typings.reactOverlays.reactOverlaysStrings.filter
+    - typings.reactOverlays.reactOverlaysStrings.findLastIndex
     - typings.reactOverlays.reactOverlaysStrings.toString
     - typings.reactOverlays.reactOverlaysStrings.indexOf
     - typings.reactOverlays.reactOverlaysStrings.reduceRight
@@ -112,6 +114,10 @@ object esmUsePopperMod {
     inline def find: typings.reactOverlays.reactOverlaysStrings.find = "find".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.find]
     
     inline def findIndex: typings.reactOverlays.reactOverlaysStrings.findIndex = "findIndex".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.findIndex]
+    
+    inline def findLast: typings.reactOverlays.reactOverlaysStrings.findLast = "findLast".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.findLast]
+    
+    inline def findLastIndex: typings.reactOverlays.reactOverlaysStrings.findLastIndex = "findLastIndex".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.findLastIndex]
     
     inline def flat: typings.reactOverlays.reactOverlaysStrings.flat = "flat".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.flat]
     

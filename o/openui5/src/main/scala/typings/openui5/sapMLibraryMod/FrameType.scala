@@ -14,6 +14,8 @@ object FrameType extends StObject {
   def apply(value: String): js.UndefOr[FrameType & String] = js.native
   
   /**
+    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    *
     * The Auto frame type that adjusts the size of the control to the content. Support for this type in sap.m.GenericTile
     * is deprecated since 1.48.0.
     */
@@ -65,6 +67,7 @@ object FrameType extends StObject {
   
   /**
     * @deprecated (since 1.48.0)
+    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * The 2/3 frame type.
     */

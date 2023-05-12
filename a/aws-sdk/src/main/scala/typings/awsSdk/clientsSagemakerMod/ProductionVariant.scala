@@ -22,6 +22,11 @@ trait ProductionVariant extends StObject {
   var CoreDumpConfig: js.UndefOr[ProductionVariantCoreDumpConfig] = js.undefined
   
   /**
+    *  You can use this parameter to turn on native Amazon Web Services Systems Manager (SSM) access for a production variant behind an endpoint. By default, SSM access is disabled for all production variants behind an endpoint. You can turn on or turn off SSM access for a production variant behind an existing endpoint by creating a new endpoint configuration and calling UpdateEndpoint. 
+    */
+  var EnableSSMAccess: js.UndefOr[ProductionVariantSSMAccess] = js.undefined
+  
+  /**
     * Number of instances to launch initially.
     */
   var InitialInstanceCount: js.UndefOr[InitialTaskCount] = js.undefined
@@ -57,7 +62,7 @@ trait ProductionVariant extends StObject {
   var VariantName: typings.awsSdk.clientsSagemakerMod.VariantName
   
   /**
-    * The size, in GB, of the ML storage volume attached to individual inference instance associated with the production variant. Currenly only Amazon EBS gp2 storage volumes are supported.
+    * The size, in GB, of the ML storage volume attached to individual inference instance associated with the production variant. Currently only Amazon EBS gp2 storage volumes are supported.
     */
   var VolumeSizeInGB: js.UndefOr[ProductionVariantVolumeSizeInGB] = js.undefined
 }
@@ -82,6 +87,10 @@ object ProductionVariant {
     inline def setCoreDumpConfig(value: ProductionVariantCoreDumpConfig): Self = StObject.set(x, "CoreDumpConfig", value.asInstanceOf[js.Any])
     
     inline def setCoreDumpConfigUndefined: Self = StObject.set(x, "CoreDumpConfig", js.undefined)
+    
+    inline def setEnableSSMAccess(value: ProductionVariantSSMAccess): Self = StObject.set(x, "EnableSSMAccess", value.asInstanceOf[js.Any])
+    
+    inline def setEnableSSMAccessUndefined: Self = StObject.set(x, "EnableSSMAccess", js.undefined)
     
     inline def setInitialInstanceCount(value: InitialTaskCount): Self = StObject.set(x, "InitialInstanceCount", value.asInstanceOf[js.Any])
     

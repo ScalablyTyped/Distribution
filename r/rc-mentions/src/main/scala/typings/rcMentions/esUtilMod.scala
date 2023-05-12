@@ -1,7 +1,6 @@
 package typings.rcMentions
 
 import typings.rcMentions.anon.SelectionLocation
-import typings.rcMentions.esMentionsMod.MentionsProps
 import typings.rcMentions.esOptionMod.OptionProps
 import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
@@ -24,7 +23,8 @@ object esUtilMod {
   
   inline def setInputSelection(input: HTMLTextAreaElement, location: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setInputSelection")(input.asInstanceOf[js.Any], location.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def validateSearch(text: String, props: MentionsProps): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateSearch")(text.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def validateSearch(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validateSearch")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def validateSearch(text: String, split: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateSearch")(text.asInstanceOf[js.Any], split.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   trait MeasureConfig extends StObject {
     

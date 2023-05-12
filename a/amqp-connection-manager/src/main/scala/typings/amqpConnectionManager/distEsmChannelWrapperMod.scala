@@ -348,6 +348,10 @@ object distEsmChannelWrapperMod {
     def unbindExchange(destination: String, source: String, pattern: String): js.Promise[Empty] = js.native
     def unbindExchange(destination: String, source: String, pattern: String, args: Any): js.Promise[Empty] = js.native
     
+    /** Send a `unbindQueue` to the underlying channel. */
+    def unbindQueue(queue: String, source: String, pattern: String): js.Promise[Unit] = js.native
+    def unbindQueue(queue: String, source: String, pattern: String, args: Any): js.Promise[Unit] = js.native
+    
     /**
       * Returns a Promise which resolves when this channel next connects.
       * (Mainly here for unit testing...)

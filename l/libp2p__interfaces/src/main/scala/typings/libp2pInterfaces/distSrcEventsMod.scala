@@ -1,10 +1,10 @@
 package typings.libp2pInterfaces
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.std.AddEventListenerOptions
 import typings.std.CustomEventInit
 import typings.std.EventListenerOptions
 import typings.std.EventTarget
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +23,7 @@ object distSrcEventsMod {
   
   @JSImport("@libp2p/interfaces/dist/src/events", "EventEmitter")
   @js.native
-  open class EventEmitter[EventMap /* <: StringDictionary[Any] */] ()
+  open class EventEmitter[EventMap /* <: Record[String, Any] */] ()
     extends StObject
        with EventTarget {
     
@@ -80,6 +80,8 @@ object distSrcEventsMod {
         ],
       options: EventListenerOptions
     ): Unit = js.native
+    
+    def safeDispatchEvent[Detail](`type`: /* keyof EventMap */ String, detail: CustomEventInit[Detail]): Boolean = js.native
   }
   
   type EventCallback[EventType] = js.Function1[/* evt */ EventType, Unit]

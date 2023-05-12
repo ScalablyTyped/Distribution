@@ -22,7 +22,7 @@ object distLibServiceTypesMod {
     
     var protocol: js.UndefOr[tcp | udp | String | Null] = js.undefined
     
-    var subtypes: js.UndefOr[js.Array[String]] = js.undefined
+    var subtype: js.UndefOr[String] = js.undefined
   }
   object ServiceType {
     
@@ -44,11 +44,9 @@ object distLibServiceTypesMod {
       
       inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
-      inline def setSubtypes(value: js.Array[String]): Self = StObject.set(x, "subtypes", value.asInstanceOf[js.Any])
+      inline def setSubtype(value: String): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
       
-      inline def setSubtypesUndefined: Self = StObject.set(x, "subtypes", js.undefined)
-      
-      inline def setSubtypesVarargs(value: String*): Self = StObject.set(x, "subtypes", js.Array(value*))
+      inline def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
     }
   }
 }

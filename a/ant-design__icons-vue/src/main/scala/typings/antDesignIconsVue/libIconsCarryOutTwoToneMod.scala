@@ -16,7 +16,7 @@ object libIconsCarryOutTwoToneMod extends Shortcut {
   @js.native
   trait CarryOutTwoToneIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_CarryOutTwoToneIconType: String = js.native

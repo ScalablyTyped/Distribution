@@ -22,7 +22,8 @@ trait TypeofPatternValidator
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    `false`, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[PatternValidator, scala.Nothing] = js.native

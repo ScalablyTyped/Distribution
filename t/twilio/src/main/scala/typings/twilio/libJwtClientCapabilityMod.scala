@@ -1,17 +1,15 @@
 package typings.twilio
 
-import typings.twilio.twilioStrings.scopeColonclientColonincoming
-import typings.twilio.twilioStrings.scopeColonclientColonoutgoing
-import typings.twilio.twilioStrings.scopeColonstreamColonsubscribe
+import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libJwtClientCapabilityMod {
   
-  @JSImport("twilio/lib/jwt/ClientCapability", JSImport.Namespace)
+  @JSImport("twilio/lib/jwt/ClientCapability", JSImport.Default)
   @js.native
-  open class ^ protected ()
+  open class default protected ()
     extends StObject
        with ClientCapability {
     def this(options: ClientCapabilityOptions) = this()
@@ -34,10 +32,41 @@ object libJwtClientCapabilityMod {
     /* CompleteClass */
     var ttl: Double = js.native
   }
+  /* static members */
+  object default {
+    
+    @JSImport("twilio/lib/jwt/ClientCapability", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("twilio/lib/jwt/ClientCapability", "default.EventStreamScope")
+    @js.native
+    def EventStreamScope: Instantiable1[
+        /* filters */ js.UndefOr[js.Object], 
+        typings.twilio.libJwtClientCapabilityMod.EventStreamScope
+      ] = js.native
+    inline def EventStreamScope_=(x: Instantiable1[/* filters */ js.UndefOr[js.Object], EventStreamScope]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EventStreamScope")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twilio/lib/jwt/ClientCapability", "default.IncomingClientScope")
+    @js.native
+    def IncomingClientScope: Instantiable1[
+        /* clientName */ String, 
+        typings.twilio.libJwtClientCapabilityMod.IncomingClientScope
+      ] = js.native
+    inline def IncomingClientScope_=(x: Instantiable1[/* clientName */ String, IncomingClientScope]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IncomingClientScope")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twilio/lib/jwt/ClientCapability", "default.OutgoingClientScope")
+    @js.native
+    def OutgoingClientScope: Instantiable1[
+        /* options */ OutgoingClientScopeOptions, 
+        typings.twilio.libJwtClientCapabilityMod.OutgoingClientScope
+      ] = js.native
+    inline def OutgoingClientScope_=(x: Instantiable1[/* options */ OutgoingClientScopeOptions, OutgoingClientScope]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OutgoingClientScope")(x.asInstanceOf[js.Any])
+  }
   
   @JSImport("twilio/lib/jwt/ClientCapability", "EventStreamScope")
   @js.native
-  open class EventStreamScope protected ()
+  open class EventStreamScope ()
     extends StObject
        with Scope {
     def this(filters: js.Object) = this()
@@ -49,8 +78,6 @@ object libJwtClientCapabilityMod {
     
     /* CompleteClass */
     var scope: String = js.native
-    @JSName("scope")
-    var scope_EventStreamScope: scopeColonstreamColonsubscribe = js.native
   }
   
   @JSImport("twilio/lib/jwt/ClientCapability", "IncomingClientScope")
@@ -67,8 +94,6 @@ object libJwtClientCapabilityMod {
     
     /* CompleteClass */
     var scope: String = js.native
-    @JSName("scope")
-    var scope_IncomingClientScope: scopeColonclientColonincoming = js.native
   }
   
   @JSImport("twilio/lib/jwt/ClientCapability", "OutgoingClientScope")
@@ -76,6 +101,12 @@ object libJwtClientCapabilityMod {
   open class OutgoingClientScope protected ()
     extends StObject
        with Scope {
+    /**
+      * @param options - ...
+      * @param options.applicationSid - the application sid
+      * @param options.clientName - the client name
+      * @param options.params - parameters
+      */
     def this(options: OutgoingClientScopeOptions) = this()
     
     var applicationSid: String = js.native
@@ -89,8 +120,6 @@ object libJwtClientCapabilityMod {
     
     /* CompleteClass */
     var scope: String = js.native
-    @JSName("scope")
-    var scope_OutgoingClientScope: scopeColonclientColonoutgoing = js.native
   }
   
   trait ClientCapability extends StObject {

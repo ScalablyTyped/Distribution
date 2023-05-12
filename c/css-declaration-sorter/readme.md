@@ -1,7 +1,7 @@
 
 # Scala.js typings for css-declaration-sorter
 
-Typings are for version 6.3.1
+Typings are for version 6.4.0
 
 ## Library description:
 Sorts CSS declarations fast and automatically in a certain order.

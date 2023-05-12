@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateContactRequest extends StObject {
   
   /**
-    * The short name to quickly identify a contact or escalation plan. The contact alias must be unique and identifiable. 
+    * The short name to quickly identify a contact or escalation plan. The contact alias must be unique and identifiable.
     */
   var Alias: ContactAlias
   
   /**
-    * The full name of the contact or escalation plan. 
+    * The full name of the contact or escalation plan.
     */
   var DisplayName: js.UndefOr[ContactName] = js.undefined
   
@@ -22,12 +22,12 @@ trait CreateContactRequest extends StObject {
   var IdempotencyToken: js.UndefOr[typings.awsSdk.clientsSsmcontactsMod.IdempotencyToken] = js.undefined
   
   /**
-    * A list of stages. A contact has an engagement plan with stages that contact specified contact channels. An escalation plan uses stages that contact specified contacts. 
+    * A list of stages. A contact has an engagement plan with stages that contact specified contact channels. An escalation plan uses stages that contact specified contacts.
     */
   var Plan: typings.awsSdk.clientsSsmcontactsMod.Plan
   
   /**
-    * Adds a tag to the target. You can only tag resources created in the first Region of your replication set. 
+    * Adds a tag to the target. You can only tag resources created in the first Region of your replication set.
     */
   var Tags: js.UndefOr[TagsList] = js.undefined
   

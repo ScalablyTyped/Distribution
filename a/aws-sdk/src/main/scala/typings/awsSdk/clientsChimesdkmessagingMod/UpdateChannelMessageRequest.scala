@@ -12,14 +12,19 @@ trait UpdateChannelMessageRequest extends StObject {
   var ChannelArn: ChimeArn
   
   /**
-    * The AppInstanceUserArn of the user that makes the API call.
+    * The ARN of the AppInstanceUser or AppInstanceBot that makes the API call.
     */
   var ChimeBearer: ChimeArn
   
   /**
     * The content of the message being updated.
     */
-  var Content: js.UndefOr[typings.awsSdk.clientsChimesdkmessagingMod.Content] = js.undefined
+  var Content: NonEmptyContent
+  
+  /**
+    * The content type of the channel message.
+    */
+  var ContentType: js.UndefOr[typings.awsSdk.clientsChimesdkmessagingMod.ContentType] = js.undefined
   
   /**
     * The ID string of the message being updated.
@@ -38,8 +43,8 @@ trait UpdateChannelMessageRequest extends StObject {
 }
 object UpdateChannelMessageRequest {
   
-  inline def apply(ChannelArn: ChimeArn, ChimeBearer: ChimeArn, MessageId: MessageId): UpdateChannelMessageRequest = {
-    val __obj = js.Dynamic.literal(ChannelArn = ChannelArn.asInstanceOf[js.Any], ChimeBearer = ChimeBearer.asInstanceOf[js.Any], MessageId = MessageId.asInstanceOf[js.Any])
+  inline def apply(ChannelArn: ChimeArn, ChimeBearer: ChimeArn, Content: NonEmptyContent, MessageId: MessageId): UpdateChannelMessageRequest = {
+    val __obj = js.Dynamic.literal(ChannelArn = ChannelArn.asInstanceOf[js.Any], ChimeBearer = ChimeBearer.asInstanceOf[js.Any], Content = Content.asInstanceOf[js.Any], MessageId = MessageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateChannelMessageRequest]
   }
   
@@ -50,9 +55,11 @@ object UpdateChannelMessageRequest {
     
     inline def setChimeBearer(value: ChimeArn): Self = StObject.set(x, "ChimeBearer", value.asInstanceOf[js.Any])
     
-    inline def setContent(value: Content): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: NonEmptyContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    inline def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
+    inline def setContentType(value: ContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
+    
+    inline def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
     
     inline def setMessageId(value: MessageId): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
     

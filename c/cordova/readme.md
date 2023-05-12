@@ -1,6 +1,7 @@
 
 # Scala.js typings for cordova
 
+Typings are for version 11.0
 
 ## Library description:
 Cordova command line interface tool

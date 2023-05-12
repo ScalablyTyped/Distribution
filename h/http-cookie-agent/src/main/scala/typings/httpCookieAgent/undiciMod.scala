@@ -27,7 +27,7 @@ object undiciMod {
     
     trait Options
       extends StObject
-         with typings.undici.typesAgentMod.Options {
+         with typings.undici.typesAgentMod.Agent.Options {
       
       var cookies: js.UndefOr[CookieOptions] = js.undefined
     }
@@ -60,7 +60,7 @@ object undiciMod {
     
     trait Options
       extends StObject
-         with typings.undici.typesClientMod.Options {
+         with typings.undici.typesClientMod.Client.Options {
       
       var cookies: js.UndefOr[CookieOptions] = js.undefined
     }

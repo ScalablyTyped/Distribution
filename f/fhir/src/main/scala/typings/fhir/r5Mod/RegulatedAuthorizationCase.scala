@@ -11,17 +11,17 @@ trait RegulatedAuthorizationCase
   var _dateDateTime: js.UndefOr[Element] = js.undefined
   
   /**
-    * Applications submitted to obtain a marketing authorization. Steps within the longer running case or procedure.
+    * A regulatory submission from an organization to a regulator, as part of an assessing case. Multiple applications may occur over time, with more or different information to support or modify the submission or the authorization. The applications can be considered as steps within the longer running case or procedure for this authorization process.
     */
   var application: js.UndefOr[js.Array[RegulatedAuthorizationCase]] = js.undefined
   
   /**
-    * Relevant date for this of case.
+    * Relevant date for this case.
     */
   var dateDateTime: js.UndefOr[String] = js.undefined
   
   /**
-    * Relevant date for this of case.
+    * Relevant date for this case.
     */
   var datePeriod: js.UndefOr[Period] = js.undefined
   

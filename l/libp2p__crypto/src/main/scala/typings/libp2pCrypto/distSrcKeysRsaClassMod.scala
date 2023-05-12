@@ -1,6 +1,7 @@
 package typings.libp2pCrypto
 
-import typings.node.bufferMod.global.Buffer
+import typings.libp2pCrypto.libp2pCryptoStrings.m
+import typings.multiformats.distTypesSrcBasesInterfaceMod.Multibase
 import typings.std.JsonWebKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,13 +24,13 @@ object distSrcKeysRsaClassMod {
     
     def bytes: js.typedarray.Uint8Array = js.native
     
-    def decrypt(bytes: js.typedarray.Uint8Array): Buffer = js.native
+    def decrypt(bytes: js.typedarray.Uint8Array): js.typedarray.Uint8Array = js.native
     
     /**
       * Exports the key into a password protected PEM format
       */
-    def `export`(password: String): js.Promise[Any] = js.native
-    def `export`(password: String, format: String): js.Promise[Any] = js.native
+    def `export`(password: String): js.Promise[Multibase[m]] = js.native
+    def `export`(password: String, format: String): js.Promise[Multibase[m]] = js.native
     
     def genSecret(): js.typedarray.Uint8Array = js.native
     
@@ -48,7 +49,7 @@ object distSrcKeysRsaClassMod {
     
     def public: RsaPublicKey = js.native
     
-    def sign(message: js.typedarray.Uint8Array): js.Promise[Buffer & String] = js.native
+    def sign(message: js.typedarray.Uint8Array): js.Promise[js.typedarray.Uint8Array] = js.native
   }
   
   @JSImport("@libp2p/crypto/dist/src/keys/rsa-class", "RsaPublicKey")
@@ -60,7 +61,7 @@ object distSrcKeysRsaClassMod {
     
     def bytes: js.typedarray.Uint8Array = js.native
     
-    def encrypt(bytes: js.typedarray.Uint8Array): Buffer = js.native
+    def encrypt(bytes: js.typedarray.Uint8Array): js.typedarray.Uint8Array = js.native
     
     def hash(): js.Promise[js.typedarray.Uint8Array] = js.native
     

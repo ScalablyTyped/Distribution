@@ -10,7 +10,7 @@ open class ListItem protected () extends _MDLComponent[ListItemProps] {
   def this(props: ListItemProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: ListItemProps, context: Any) = this()
 }

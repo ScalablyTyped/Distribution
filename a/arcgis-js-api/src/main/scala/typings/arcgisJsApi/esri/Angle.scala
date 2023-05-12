@@ -17,7 +17,7 @@ trait Angle extends StObject {
   /**
     * Any unit which represents an angle.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-quantity.html#Angle)
+    * [Read more...](global.html#unit)
     */
   var unit: AngleUnit
   

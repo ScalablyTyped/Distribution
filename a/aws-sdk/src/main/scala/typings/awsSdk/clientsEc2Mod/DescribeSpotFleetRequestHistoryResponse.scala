@@ -12,12 +12,12 @@ trait DescribeSpotFleetRequestHistoryResponse extends StObject {
   var HistoryRecords: js.UndefOr[typings.awsSdk.clientsEc2Mod.HistoryRecords] = js.undefined
   
   /**
-    * The last date and time for the events, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ). All records up to this time were retrieved. If nextToken indicates that there are more results, this value is not present.
+    * The last date and time for the events, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ). All records up to this time were retrieved. If nextToken indicates that there are more items, this value is not present.
     */
   var LastEvaluatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The token required to retrieve the next set of results. This value is null when there are no more results to return.
+    * The token to include in another request to get the next page of items. This value is null when there are no more items to return.
     */
   var NextToken: js.UndefOr[String] = js.undefined
   

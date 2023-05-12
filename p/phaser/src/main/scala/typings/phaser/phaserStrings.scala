@@ -1,10 +1,15 @@
 package typings.phaser
 
+import typings.phaser.Phaser.Types.Tweens.TweenCallbackTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object phaserStrings {
+  
+  @js.native
+  sealed trait HRTF extends StObject
+  inline def HRTF: HRTF = "HRTF".asInstanceOf[HRTF]
   
   @js.native
   sealed trait afterAdd extends StObject
@@ -57,6 +62,82 @@ object phaserStrings {
   @js.native
   sealed trait collisionStart extends StObject
   inline def collisionStart: collisionStart = "collisionStart".asInstanceOf[collisionStart]
+  
+  @js.native
+  sealed trait equalpower extends StObject
+  inline def equalpower: equalpower = "equalpower".asInstanceOf[equalpower]
+  
+  @js.native
+  sealed trait exponential extends StObject
+  inline def exponential: exponential = "exponential".asInstanceOf[exponential]
+  
+  @js.native
+  sealed trait inverse extends StObject
+  inline def inverse: inverse = "inverse".asInstanceOf[inverse]
+  
+  @js.native
+  sealed trait linear extends StObject
+  inline def linear: linear = "linear".asInstanceOf[linear]
+  
+  @js.native
+  sealed trait onActive
+    extends StObject
+       with TweenCallbackTypes
+  inline def onActive: onActive = "onActive".asInstanceOf[onActive]
+  
+  @js.native
+  sealed trait onComplete
+    extends StObject
+       with TweenCallbackTypes
+  inline def onComplete: onComplete = "onComplete".asInstanceOf[onComplete]
+  
+  @js.native
+  sealed trait onLoop
+    extends StObject
+       with TweenCallbackTypes
+  inline def onLoop: onLoop = "onLoop".asInstanceOf[onLoop]
+  
+  @js.native
+  sealed trait onPause
+    extends StObject
+       with TweenCallbackTypes
+  inline def onPause: onPause = "onPause".asInstanceOf[onPause]
+  
+  @js.native
+  sealed trait onRepeat
+    extends StObject
+       with TweenCallbackTypes
+  inline def onRepeat: onRepeat = "onRepeat".asInstanceOf[onRepeat]
+  
+  @js.native
+  sealed trait onResume
+    extends StObject
+       with TweenCallbackTypes
+  inline def onResume: onResume = "onResume".asInstanceOf[onResume]
+  
+  @js.native
+  sealed trait onStart
+    extends StObject
+       with TweenCallbackTypes
+  inline def onStart: onStart = "onStart".asInstanceOf[onStart]
+  
+  @js.native
+  sealed trait onStop
+    extends StObject
+       with TweenCallbackTypes
+  inline def onStop: onStop = "onStop".asInstanceOf[onStop]
+  
+  @js.native
+  sealed trait onUpdate
+    extends StObject
+       with TweenCallbackTypes
+  inline def onUpdate: onUpdate = "onUpdate".asInstanceOf[onUpdate]
+  
+  @js.native
+  sealed trait onYoyo
+    extends StObject
+       with TweenCallbackTypes
+  inline def onYoyo: onYoyo = "onYoyo".asInstanceOf[onYoyo]
   
   @js.native
   sealed trait sleepEnd extends StObject

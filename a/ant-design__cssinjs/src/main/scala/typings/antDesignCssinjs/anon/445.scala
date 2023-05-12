@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BackgroundRepeat
+import typings.csstype.mod.Property.ScrollPaddingTop
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `445` extends StObject {
   
   var value: js.UndefOr[
-    BackgroundRepeat | (js.Array[
+    (ScrollPaddingTop[Double | String]) | (js.Array[
       (Extract[
-        js.UndefOr[BackgroundRepeat | js.Array[NonNullable[js.UndefOr[BackgroundRepeat]]]], 
+        js.UndefOr[
+          (ScrollPaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[ScrollPaddingTop[Double | String]]]])
+        ], 
         String
-      ]) | NonNullable[js.UndefOr[BackgroundRepeat]]
+      ]) | (NonNullable[js.UndefOr[ScrollPaddingTop[Double | String]]])
     ])
   ] = js.native
 }

@@ -7,22 +7,50 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Custom paginator page links options
+  */
 trait PaginatorPageLinksOptions extends StObject {
   
+  /**
+    * Style class of the page links.
+    */
   var className: String
   
+  /**
+    * The current page number.
+    */
   var currentPage: Double
   
+  /**
+    * JSX element to be used as the page links.
+    */
   var element: Element
   
+  /**
+    * Callback to invoke on click.
+    * @param {React.SyntheticEvent} event - Browser event.
+    */
   def onClick(event: SyntheticEvent[typings.std.Element, Event]): Unit
   
+  /**
+    * The page number.
+    */
   var page: Double
   
+  /**
+    * The props of Paginator component
+    */
   var props: PaginatorProps
   
+  /**
+    * The total number of pages.
+    */
   var totalPages: Double
   
+  /**
+    * Paginator view options.
+    */
   var view: PaginatorViewOptions
 }
 object PaginatorPageLinksOptions {

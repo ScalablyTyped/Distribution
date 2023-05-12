@@ -31,9 +31,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-/** @deprecated since v10.0.0 */
-inline def DEFAULT_ENCODING: BufferEncoding = ^.asInstanceOf[js.Dynamic].selectDynamic("DEFAULT_ENCODING").asInstanceOf[BufferEncoding]
-
 /**
   * Checks the primality of the `candidate`.
   * @since v15.8.0
@@ -76,6 +73,10 @@ inline def createCipher(algorithm: String, password: BinaryLike, options: Transf
   *
   * The `password` is used to derive the cipher key and initialization vector (IV).
   * The value must be either a `'latin1'` encoded string, a `Buffer`, a`TypedArray`, or a `DataView`.
+  *
+  * **This function is semantically insecure for all**
+  * **supported ciphers and fatally flawed for ciphers in counter mode (such as CTR,**
+  * **GCM, or CCM).**
   *
   * The implementation of `crypto.createCipher()` derives keys using the OpenSSL
   * function [`EVP_BytesToKey`](https://www.openssl.org/docs/man1.1.0/crypto/EVP_BytesToKey.html) with the digest algorithm set to MD5, one
@@ -148,6 +149,10 @@ inline def createDecipher(algorithm: String, password: BinaryLike, options: Tran
   * cipher in CCM or OCB mode (e.g. `'aes-128-ccm'`) is used. In that case, the`authTagLength` option is required and specifies the length of the
   * authentication tag in bytes, see `CCM mode`.
   * For `chacha20-poly1305`, the `authTagLength` option defaults to 16 bytes.
+  *
+  * **This function is semantically insecure for all**
+  * **supported ciphers and fatally flawed for ciphers in counter mode (such as CTR,**
+  * **GCM, or CCM).**
   *
   * The implementation of `crypto.createDecipher()` derives keys using the OpenSSL
   * function [`EVP_BytesToKey`](https://www.openssl.org/docs/man1.1.0/crypto/EVP_BytesToKey.html) with the digest algorithm set to MD5, one
@@ -275,12 +280,12 @@ inline def createECDH(curveName: String): ECDH = ^.asInstanceOf[js.Dynamic].appl
   *
   * ```js
   * import {
-  *   createReadStream
-  * } from 'fs';
-  * import { argv } from 'process';
+  *   createReadStream,
+  * } from 'node:fs';
+  * import { argv } from 'node:process';
   * const {
-  *   createHash
-  * } = await import('crypto');
+  *   createHash,
+  * } = await import('node:crypto');
   *
   * const filename = argv[2];
   *
@@ -320,12 +325,12 @@ inline def createHash(algorithm: String, options: HashOptions): Hash = (^.asInst
   *
   * ```js
   * import {
-  *   createReadStream
-  * } from 'fs';
-  * import { argv } from 'process';
+  *   createReadStream,
+  * } from 'node:fs';
+  * import { argv } from 'node:process';
   * const {
-  *   createHmac
-  * } = await import('crypto');
+  *   createHmac,
+  * } = await import('node:crypto');
   *
   * const filename = argv[2];
   *
@@ -439,8 +444,8 @@ inline def fips: Boolean = ^.asInstanceOf[js.Dynamic].selectDynamic("fips").asIn
   *
   * ```js
   * const {
-  *   generateKey
-  * } = await import('crypto');
+  *   generateKey,
+  * } = await import('node:crypto');
   *
   * generateKey('hmac', { length: 64 }, (err, key) => {
   *   if (err) throw err;
@@ -558,21 +563,21 @@ inline def generateKeyPair(
   *
   * ```js
   * const {
-  *   generateKeyPair
-  * } = await import('crypto');
+  *   generateKeyPair,
+  * } = await import('node:crypto');
   *
   * generateKeyPair('rsa', {
   *   modulusLength: 4096,
   *   publicKeyEncoding: {
   *     type: 'spki',
-  *     format: 'pem'
+  *     format: 'pem',
   *   },
   *   privateKeyEncoding: {
   *     type: 'pkcs8',
   *     format: 'pem',
   *     cipher: 'aes-256-cbc',
-  *     passphrase: 'top secret'
-  *   }
+  *     passphrase: 'top secret',
+  *   },
   * }, (err, publicKey, privateKey) => {
   *   // Handle errors and use the generated key pair.
   * });
@@ -655,8 +660,8 @@ inline def generateKeyPairSync(`type`: ed448, options: ED448KeyPairOptions[der |
   *
   * ```js
   * const {
-  *   generateKeyPairSync
-  * } = await import('crypto');
+  *   generateKeyPairSync,
+  * } = await import('node:crypto');
   *
   * const {
   *   publicKey,
@@ -665,14 +670,14 @@ inline def generateKeyPairSync(`type`: ed448, options: ED448KeyPairOptions[der |
   *   modulusLength: 4096,
   *   publicKeyEncoding: {
   *     type: 'spki',
-  *     format: 'pem'
+  *     format: 'pem',
   *   },
   *   privateKeyEncoding: {
   *     type: 'pkcs8',
   *     format: 'pem',
   *     cipher: 'aes-256-cbc',
-  *     passphrase: 'top secret'
-  *   }
+  *     passphrase: 'top secret',
+  *   },
   * });
   * ```
   *
@@ -711,8 +716,8 @@ inline def generateKeyPairSync_x448(`type`: x448, options: X448KeyPairKeyObjectO
   *
   * ```js
   * const {
-  *   generateKeySync
-  * } = await import('crypto');
+  *   generateKeySync,
+  * } = await import('node:crypto');
   *
   * const key = generateKeySync('hmac', { length: 64 });
   * console.log(key.export().toString('hex'));  // e89..........41e
@@ -820,8 +825,8 @@ inline def getCipherInfo(nameOrNid: Double, options: CipherInfoOptions): js.Unde
 /**
   * ```js
   * const {
-  *   getCiphers
-  * } = await import('crypto');
+  *   getCiphers,
+  * } = await import('node:crypto');
   *
   * console.log(getCiphers()); // ['aes-128-cbc', 'aes-128-ccm', ...]
   * ```
@@ -833,8 +838,8 @@ inline def getCiphers(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDyna
 /**
   * ```js
   * const {
-  *   getCurves
-  * } = await import('crypto');
+  *   getCurves,
+  * } = await import('node:crypto');
   *
   * console.log(getCurves()); // ['Oakley-EC2N-3', 'Oakley-EC2N-4', ...]
   * ```
@@ -845,9 +850,9 @@ inline def getCurves(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynam
 
 /**
   * Creates a predefined `DiffieHellmanGroup` key exchange object. The
-  * supported groups are: `'modp1'`, `'modp2'`, `'modp5'` (defined in [RFC 2412](https://www.rfc-editor.org/rfc/rfc2412.txt), but see `Caveats`) and `'modp14'`, `'modp15'`,`'modp16'`, `'modp17'`,
-  * `'modp18'` (defined in [RFC 3526](https://www.rfc-editor.org/rfc/rfc3526.txt)). The
-  * returned object mimics the interface of objects created by {@link createDiffieHellman}, but will not allow changing
+  * supported groups are listed in the documentation for `DiffieHellmanGroup`.
+  *
+  * The returned object mimics the interface of objects created by {@link createDiffieHellman}, but will not allow changing
   * the keys (with `diffieHellman.setPublicKey()`, for example). The
   * advantage of using this method is that the parties do not have to
   * generate nor exchange a group modulus beforehand, saving both processor
@@ -857,8 +862,8 @@ inline def getCurves(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynam
   *
   * ```js
   * const {
-  *   getDiffieHellman
-  * } = await import('crypto');
+  *   getDiffieHellman,
+  * } = await import('node:crypto');
   * const alice = getDiffieHellman('modp14');
   * const bob = getDiffieHellman('modp14');
   *
@@ -884,8 +889,8 @@ inline def getFips(): `1` | `0` = ^.asInstanceOf[js.Dynamic].applyDynamic("getFi
 /**
   * ```js
   * const {
-  *   getHashes
-  * } = await import('crypto');
+  *   getHashes,
+  * } = await import('node:crypto');
   *
   * console.log(getHashes()); // ['DSA', 'DSA-SHA', 'DSA-SHA1', ...]
   * ```
@@ -896,11 +901,11 @@ inline def getHashes(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynam
 
 inline def getRandomValues(typedArray: js.typedarray.ArrayBuffer): js.typedarray.ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomValues")(typedArray.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.ArrayBuffer]
 /**
-  * A convenient alias for `crypto.webcrypto.getRandomValues()`.
-  * This implementation is not compliant with the Web Crypto spec,
-  * to write web-compatible code use `crypto.webcrypto.getRandomValues()` instead.
+  * A convenient alias for {@link webcrypto.getRandomValues}. This
+  * implementation is not compliant with the Web Crypto spec, to write
+  * web-compatible code use {@link webcrypto.getRandomValues} instead.
   * @since v17.4.0
-  * @returns Returns `typedArray`.
+  * @return Returns `typedArray`.
   */
 inline def getRandomValues(typedArray: js.typedarray.ArrayBufferView): js.typedarray.ArrayBufferView = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomValues")(typedArray.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.ArrayBufferView]
 
@@ -913,10 +918,10 @@ inline def getRandomValues(typedArray: js.typedarray.ArrayBufferView): js.typeda
   * of the input arguments specify invalid values or types.
   *
   * ```js
-  * import { Buffer } from 'buffer';
+  * import { Buffer } from 'node:buffer';
   * const {
-  *   hkdf
-  * } = await import('crypto');
+  *   hkdf,
+  * } = await import('node:crypto');
   *
   * hkdf('sha512', 'key', 'salt', 'info', 64, (err, derivedKey) => {
   *   if (err) throw err;
@@ -925,7 +930,7 @@ inline def getRandomValues(typedArray: js.typedarray.ArrayBufferView): js.typeda
   * ```
   * @since v15.0.0
   * @param digest The digest algorithm to use.
-  * @param ikm The input keying material. It must be at least one byte in length.
+  * @param ikm The input keying material. Must be provided but can be zero-length.
   * @param salt The salt value. Must be provided but can be zero-length.
   * @param info Additional info value. Must be provided but can be zero-length, and cannot be more than 1024 bytes.
   * @param keylen The length of the key to generate. Must be greater than 0. The maximum allowable value is `255` times the number of bytes produced by the selected digest function (e.g. `sha512`
@@ -958,17 +963,17 @@ inline def hkdf(
   * types, or if the derived key cannot be generated.
   *
   * ```js
-  * import { Buffer } from 'buffer';
+  * import { Buffer } from 'node:buffer';
   * const {
-  *   hkdfSync
-  * } = await import('crypto');
+  *   hkdfSync,
+  * } = await import('node:crypto');
   *
   * const derivedKey = hkdfSync('sha512', 'key', 'salt', 'info', 64);
   * console.log(Buffer.from(derivedKey).toString('hex'));  // '24156e2...5391653'
   * ```
   * @since v15.0.0
   * @param digest The digest algorithm to use.
-  * @param ikm The input keying material. It must be at least one byte in length.
+  * @param ikm The input keying material. Must be provided but can be zero-length.
   * @param salt The salt value. Must be provided but can be zero-length.
   * @param info Additional info value. Must be provided but can be zero-length, and cannot be more than 1024 bytes.
   * @param keylen The length of the key to generate. Must be greater than 0. The maximum allowable value is `255` times the number of bytes produced by the selected digest function (e.g. `sha512`
@@ -986,9 +991,6 @@ inline def hkdfSync(digest: String, ikm: KeyObject, salt: BinaryLike, info: Bina
   * otherwise `err` will be `null`. By default, the successfully generated`derivedKey` will be passed to the callback as a `Buffer`. An error will be
   * thrown if any of the input arguments specify invalid values or types.
   *
-  * If `digest` is `null`, `'sha1'` will be used. This behavior is deprecated,
-  * please specify a `digest` explicitly.
-  *
   * The `iterations` argument must be a number set as high as possible. The
   * higher the number of iterations, the more secure the derived key will be,
   * but will take a longer amount of time to complete.
@@ -1000,24 +1002,12 @@ inline def hkdfSync(digest: String, ikm: KeyObject, salt: BinaryLike, info: Bina
   *
   * ```js
   * const {
-  *   pbkdf2
-  * } = await import('crypto');
+  *   pbkdf2,
+  * } = await import('node:crypto');
   *
   * pbkdf2('secret', 'salt', 100000, 64, 'sha512', (err, derivedKey) => {
   *   if (err) throw err;
   *   console.log(derivedKey.toString('hex'));  // '3745e48...08d59ae'
-  * });
-  * ```
-  *
-  * The `crypto.DEFAULT_ENCODING` property can be used to change the way the`derivedKey` is passed to the callback. This property, however, has been
-  * deprecated and use should be avoided.
-  *
-  * ```js
-  * import crypto from 'crypto';
-  * crypto.DEFAULT_ENCODING = 'hex';
-  * crypto.pbkdf2('secret', 'salt', 100000, 512, 'sha512', (err, derivedKey) => {
-  *   if (err) throw err;
-  *   console.log(derivedKey);  // '3745e48...aa39b34'
   * });
   * ```
   *
@@ -1044,9 +1034,6 @@ inline def pbkdf2(
   * If an error occurs an `Error` will be thrown, otherwise the derived key will be
   * returned as a `Buffer`.
   *
-  * If `digest` is `null`, `'sha1'` will be used. This behavior is deprecated,
-  * please specify a `digest` explicitly.
-  *
   * The `iterations` argument must be a number set as high as possible. The
   * higher the number of iterations, the more secure the derived key will be,
   * but will take a longer amount of time to complete.
@@ -1058,21 +1045,11 @@ inline def pbkdf2(
   *
   * ```js
   * const {
-  *   pbkdf2Sync
-  * } = await import('crypto');
+  *   pbkdf2Sync,
+  * } = await import('node:crypto');
   *
   * const key = pbkdf2Sync('secret', 'salt', 100000, 64, 'sha512');
   * console.log(key.toString('hex'));  // '3745e48...08d59ae'
-  * ```
-  *
-  * The `crypto.DEFAULT_ENCODING` property may be used to change the way the`derivedKey` is returned. This property, however, is deprecated and use
-  * should be avoided.
-  *
-  * ```js
-  * import crypto from 'crypto';
-  * crypto.DEFAULT_ENCODING = 'hex';
-  * const key = crypto.pbkdf2Sync('secret', 'salt', 100000, 512, 'sha512');
-  * console.log(key);  // '3745e48...aa39b34'
   * ```
   *
   * An array of supported digest functions can be retrieved using {@link getHashes}.
@@ -1146,8 +1123,8 @@ inline def publicEncrypt(key: RsaPublicKey, buffer: ArrayBufferView): Buffer = (
   * ```js
   * // Asynchronous
   * const {
-  *   randomBytes
-  * } = await import('crypto');
+  *   randomBytes,
+  * } = await import('node:crypto');
   *
   * randomBytes(256, (err, buf) => {
   *   if (err) throw err;
@@ -1162,8 +1139,8 @@ inline def publicEncrypt(key: RsaPublicKey, buffer: ArrayBufferView): Buffer = (
   * ```js
   * // Synchronous
   * const {
-  *   randomBytes
-  * } = await import('crypto');
+  *   randomBytes,
+  * } = await import('node:crypto');
   *
   * const buf = randomBytes(256);
   * console.log(
@@ -1318,8 +1295,8 @@ inline def randomFill(
   * If the `callback` function is not provided, an error will be thrown.
   *
   * ```js
-  * import { Buffer } from 'buffer';
-  * const { randomFill } = await import('crypto');
+  * import { Buffer } from 'node:buffer';
+  * const { randomFill } = await import('node:crypto');
   *
   * const buf = Buffer.alloc(10);
   * randomFill(buf, (err, buf) => {
@@ -1348,8 +1325,8 @@ inline def randomFill(
   * distribution and have no meaningful lower or upper bounds.
   *
   * ```js
-  * import { Buffer } from 'buffer';
-  * const { randomFill } = await import('crypto');
+  * import { Buffer } from 'node:buffer';
+  * const { randomFill } = await import('node:crypto');
   *
   * const a = new Uint32Array(10);
   * randomFill(a, (err, buf) => {
@@ -1482,8 +1459,8 @@ inline def randomFillSync(buffer: js.typedarray.Uint32Array, offset: Unit, size:
   * Synchronous version of {@link randomFill}.
   *
   * ```js
-  * import { Buffer } from 'buffer';
-  * const { randomFillSync } = await import('crypto');
+  * import { Buffer } from 'node:buffer';
+  * const { randomFillSync } = await import('node:crypto');
   *
   * const buf = Buffer.alloc(10);
   * console.log(randomFillSync(buf).toString('hex'));
@@ -1499,8 +1476,8 @@ inline def randomFillSync(buffer: js.typedarray.Uint32Array, offset: Unit, size:
   * Any `ArrayBuffer`, `TypedArray` or `DataView` instance may be passed as`buffer`.
   *
   * ```js
-  * import { Buffer } from 'buffer';
-  * const { randomFillSync } = await import('crypto');
+  * import { Buffer } from 'node:buffer';
+  * const { randomFillSync } = await import('node:crypto');
   *
   * const a = new Uint32Array(10);
   * console.log(Buffer.from(randomFillSync(a).buffer,
@@ -1540,7 +1517,7 @@ inline def randomFillSync(buffer: BigUint64Array, offset: Unit, size: Double): B
   * Return a random integer `n` such that `min <= n < max`.  This
   * implementation avoids [modulo bias](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle#Modulo_bias).
   *
-  * The range (`max - min`) must be less than 2^48. `min` and `max` must
+  * The range (`max - min`) must be less than 248. `min` and `max` must
   * be [safe integers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isSafeInteger).
   *
   * If the `callback` function is not provided, the random integer is
@@ -1549,8 +1526,8 @@ inline def randomFillSync(buffer: BigUint64Array, offset: Unit, size: Double): B
   * ```js
   * // Asynchronous
   * const {
-  *   randomInt
-  * } = await import('crypto');
+  *   randomInt,
+  * } = await import('node:crypto');
   *
   * randomInt(3, (err, n) => {
   *   if (err) throw err;
@@ -1561,8 +1538,8 @@ inline def randomFillSync(buffer: BigUint64Array, offset: Unit, size: Double): B
   * ```js
   * // Synchronous
   * const {
-  *   randomInt
-  * } = await import('crypto');
+  *   randomInt,
+  * } = await import('node:crypto');
   *
   * const n = randomInt(3);
   * console.log(`Random number chosen from (0, 1, 2): ${n}`);
@@ -1571,8 +1548,8 @@ inline def randomFillSync(buffer: BigUint64Array, offset: Unit, size: Double): B
   * ```js
   * // With `min` argument
   * const {
-  *   randomInt
-  * } = await import('crypto');
+  *   randomInt,
+  * } = await import('node:crypto');
   *
   * const n = randomInt(1, 7);
   * console.log(`The dice rolled: ${n}`);
@@ -1596,8 +1573,8 @@ inline def randomInt(
   * cryptographic pseudorandom number generator.
   * @since v15.6.0, v14.17.0
   */
-inline def randomUUID(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomUUID")().asInstanceOf[String]
-inline def randomUUID(options: RandomUUIDOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomUUID")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def randomUUID(): UUID = ^.asInstanceOf[js.Dynamic].applyDynamic("randomUUID")().asInstanceOf[UUID]
+inline def randomUUID(options: RandomUUIDOptions): UUID = ^.asInstanceOf[js.Dynamic].applyDynamic("randomUUID")(options.asInstanceOf[js.Any]).asInstanceOf[UUID]
 
 /**
   * Provides an asynchronous [scrypt](https://en.wikipedia.org/wiki/Scrypt) implementation. Scrypt is a password-based
@@ -1617,8 +1594,8 @@ inline def randomUUID(options: RandomUUIDOptions): String = ^.asInstanceOf[js.Dy
   *
   * ```js
   * const {
-  *   scrypt
-  * } = await import('crypto');
+  *   scrypt,
+  * } = await import('node:crypto');
   *
   * // Using the factory defaults.
   * scrypt('password', 'salt', 64, (err, derivedKey) => {
@@ -1665,8 +1642,8 @@ inline def scrypt(
   *
   * ```js
   * const {
-  *   scryptSync
-  * } = await import('crypto');
+  *   scryptSync,
+  * } = await import('node:crypto');
   * // Using the factory defaults.
   *
   * const key1 = scryptSync('password', 'salt', 64);
@@ -1690,34 +1667,28 @@ inline def secureHeapUsed(): SecureHeapUsage = ^.asInstanceOf[js.Dynamic].applyD
   *
   * `engine` could be either an id or a path to the engine's shared library.
   *
-  * The optional `flags` argument uses `ENGINE_METHOD_ALL` by default.
-  * The `flags` is a bit field taking one of or a mix of the following flags (defined in `crypto.constants`):
+  * The optional `flags` argument uses `ENGINE_METHOD_ALL` by default. The `flags`is a bit field taking one of or a mix of the following flags (defined in`crypto.constants`):
   *
-  * - `crypto.constants.ENGINE_METHOD_RSA`
-  * - `crypto.constants.ENGINE_METHOD_DSA`
-  * - `crypto.constants.ENGINE_METHOD_DH`
-  * - `crypto.constants.ENGINE_METHOD_RAND`
-  * - `crypto.constants.ENGINE_METHOD_EC`
-  * - `crypto.constants.ENGINE_METHOD_CIPHERS`
-  * - `crypto.constants.ENGINE_METHOD_DIGESTS`
-  * - `crypto.constants.ENGINE_METHOD_PKEY_METHS`
-  * - `crypto.constants.ENGINE_METHOD_PKEY_ASN1_METHS`
-  * - `crypto.constants.ENGINE_METHOD_ALL`
-  * - `crypto.constants.ENGINE_METHOD_NONE`
-  *
-  * The flags below are deprecated in OpenSSL-1.1.0.
-  *
-  * - `crypto.constants.ENGINE_METHOD_ECDH`
-  * - `crypto.constants.ENGINE_METHOD_ECDSA`
-  * - `crypto.constants.ENGINE_METHOD_STORE`
+  * * `crypto.constants.ENGINE_METHOD_RSA`
+  * * `crypto.constants.ENGINE_METHOD_DSA`
+  * * `crypto.constants.ENGINE_METHOD_DH`
+  * * `crypto.constants.ENGINE_METHOD_RAND`
+  * * `crypto.constants.ENGINE_METHOD_EC`
+  * * `crypto.constants.ENGINE_METHOD_CIPHERS`
+  * * `crypto.constants.ENGINE_METHOD_DIGESTS`
+  * * `crypto.constants.ENGINE_METHOD_PKEY_METHS`
+  * * `crypto.constants.ENGINE_METHOD_PKEY_ASN1_METHS`
+  * * `crypto.constants.ENGINE_METHOD_ALL`
+  * * `crypto.constants.ENGINE_METHOD_NONE`
   * @since v0.11.11
-  * @param [flags=crypto.constants.ENGINE_METHOD_ALL]
+  * @param flags
   */
 inline def setEngine(engine: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEngine")(engine.asInstanceOf[js.Any]).asInstanceOf[Unit]
 inline def setEngine(engine: String, flags: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setEngine")(engine.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 /**
-  * Enables the FIPS compliant crypto provider in a FIPS-enabled Node.js build. Throws an error if FIPS mode is not available.
+  * Enables the FIPS compliant crypto provider in a FIPS-enabled Node.js build.
+  * Throws an error if FIPS mode is not available.
   * @since v10.0.0
   * @param bool `true` to enable FIPS mode.
   */
@@ -1806,8 +1777,10 @@ inline def sign(
 inline def subtle: SubtleCrypto = ^.asInstanceOf[js.Dynamic].selectDynamic("subtle").asInstanceOf[SubtleCrypto]
 
 /**
-  * This function is based on a constant-time algorithm.
-  * Returns true if `a` is equal to `b`, without leaking timing information that
+  * This function compares the underlying bytes that represent the given`ArrayBuffer`, `TypedArray`, or `DataView` instances using a constant-time
+  * algorithm.
+  *
+  * This function does not leak timing information that
   * would allow an attacker to guess one of the values. This is suitable for
   * comparing HMAC digests or secret values like authentication cookies or [capability urls](https://www.w3.org/TR/capability-urls/).
   *
@@ -1818,6 +1791,10 @@ inline def subtle: SubtleCrypto = ^.asInstanceOf[js.Dynamic].selectDynamic("subt
   * If at least one of `a` and `b` is a `TypedArray` with more than one byte per
   * entry, such as `Uint16Array`, the result will be computed using the platform
   * byte order.
+  *
+  * **When both of the inputs are `Float32Array`s or`Float64Array`s, this function might return unexpected results due to IEEE 754**
+  * **encoding of floating-point numbers. In particular, neither `x === y` nor`Object.is(x, y)` implies that the byte representations of two floating-point**
+  * **numbers `x` and `y` are equal.**
   *
   * Use of `crypto.timingSafeEqual` does not guarantee that the _surrounding_ code
   * is timing-safe. Care should be taken to ensure that the surrounding code does
@@ -1850,6 +1827,14 @@ inline def verify(
   signature: ArrayBufferView,
   callback: js.Function2[/* error */ js.Error | Null, /* result */ Boolean, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(algorithm.asInstanceOf[js.Any], data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def verify(algorithm: String, data: ArrayBufferView, key: VerifyJsonWebKeyInput, signature: ArrayBufferView): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(algorithm.asInstanceOf[js.Any], data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+inline def verify(
+  algorithm: String,
+  data: ArrayBufferView,
+  key: VerifyJsonWebKeyInput,
+  signature: ArrayBufferView,
+  callback: js.Function2[/* error */ js.Error | Null, /* result */ Boolean, Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(algorithm.asInstanceOf[js.Any], data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def verify(algorithm: String, data: ArrayBufferView, key: VerifyKeyObjectInput, signature: ArrayBufferView): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(algorithm.asInstanceOf[js.Any], data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 inline def verify(
   algorithm: String,
@@ -1874,6 +1859,14 @@ inline def verify(
   signature: ArrayBufferView,
   callback: js.Function2[/* error */ js.Error | Null, /* result */ Boolean, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(algorithm.asInstanceOf[js.Any], data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def verify(algorithm: Null, data: ArrayBufferView, key: VerifyJsonWebKeyInput, signature: ArrayBufferView): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(algorithm.asInstanceOf[js.Any], data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+inline def verify(
+  algorithm: Null,
+  data: ArrayBufferView,
+  key: VerifyJsonWebKeyInput,
+  signature: ArrayBufferView,
+  callback: js.Function2[/* error */ js.Error | Null, /* result */ Boolean, Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(algorithm.asInstanceOf[js.Any], data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def verify(algorithm: Null, data: ArrayBufferView, key: VerifyKeyObjectInput, signature: ArrayBufferView): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(algorithm.asInstanceOf[js.Any], data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 inline def verify(
   algorithm: Null,
@@ -1895,6 +1888,14 @@ inline def verify(
   algorithm: Unit,
   data: ArrayBufferView,
   key: KeyLike,
+  signature: ArrayBufferView,
+  callback: js.Function2[/* error */ js.Error | Null, /* result */ Boolean, Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(algorithm.asInstanceOf[js.Any], data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def verify(algorithm: Unit, data: ArrayBufferView, key: VerifyJsonWebKeyInput, signature: ArrayBufferView): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(algorithm.asInstanceOf[js.Any], data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+inline def verify(
+  algorithm: Unit,
+  data: ArrayBufferView,
+  key: VerifyJsonWebKeyInput,
   signature: ArrayBufferView,
   callback: js.Function2[/* error */ js.Error | Null, /* result */ Boolean, Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(algorithm.asInstanceOf[js.Any], data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -1927,3 +1928,5 @@ type CipherKey = BinaryLike | KeyObject
 type KeyLike = _KeyLike | String
 
 type LargeNumberLike = ArrayBufferView | SharedArrayBuffer | js.typedarray.ArrayBuffer | js.BigInt
+
+type UUID = /* template literal string: ${string}-${string}-${string}-${string}-${string} */ String

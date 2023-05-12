@@ -7,6 +7,8 @@ import typings.socketIoClient.buildEsmManagerMod.Manager
 import typings.socketIoClient.buildEsmSocketMod.Socket.DisconnectReason
 import typings.socketIoComponentEmitter.mod.DefaultEventsMap
 import typings.socketIoComponentEmitter.mod.Emitter
+import typings.socketIoComponentEmitter.mod.EventNames
+import typings.socketIoComponentEmitter.mod.EventParams
 import typings.socketIoComponentEmitter.mod.EventsMap
 import typings.socketIoParser.mod.Packet
 import org.scalablytyped.runtime.StObject
@@ -24,14 +26,67 @@ object buildEsmSocketMod {
     def this(io: Manager[DefaultEventsMap, DefaultEventsMap], nsp: String) = this()
     def this(io: Manager[DefaultEventsMap, DefaultEventsMap], nsp: String, opts: PartialSocketOptions) = this()
     
+    /**
+      * Add the packet to the queue.
+      * @param args
+      * @private
+      */
+    /* private */ var _addToQueue: Any = js.native
+    
     /* private */ var _anyListeners: Any = js.native
     
     /* private */ var _anyOutgoingListeners: Any = js.native
     
     /**
+      * Send the first packet of the queue, and wait for an acknowledgement from the server.
+      * @param force - whether to resend a packet that has not been acknowledged yet
+      *
+      * @private
+      */
+    /* private */ var _drainQueue: Any = js.native
+    
+    /**
+      * The offset of the last received packet, which will be sent upon reconnection to allow for the recovery of the connection state.
+      *
+      * @private
+      */
+    /* private */ var _lastOffset: Any = js.native
+    
+    /* private */ val _opts: Any = js.native
+    
+    /**
+      * The session ID used for connection state recovery, which must not be shared (unlike {@link id}).
+      *
+      * @private
+      */
+    /* private */ var _pid: Any = js.native
+    
+    /**
+      * The queue of packets to be sent with retry in case of failure.
+      *
+      * Packets are sent one by one, each waiting for the server acknowledgement, in order to guarantee the delivery order.
+      * @private
+      */
+    /* private */ var _queue: Any = js.native
+    
+    /**
+      * A sequence to generate the ID of the {@link QueuedPacket}.
+      * @private
+      */
+    /* private */ var _queueSeq: Any = js.native
+    
+    /**
       * @private
       */
     /* private */ var _registerAckCallback: Any = js.native
+    
+    /**
+      * Sends a CONNECT packet to initiate the Socket.IO session.
+      *
+      * @param data
+      * @private
+      */
+    /* private */ var _sendConnectPacket: Any = js.native
     
     /**
       * Produces an ack callback to emit with an event.
@@ -177,6 +232,27 @@ object buildEsmSocketMod {
     /* private */ var emitBuffered: Any = js.native
     
     /* private */ var emitEvent: Any = js.native
+    
+    /**
+      * Emits an event and waits for an acknowledgement
+      *
+      * @example
+      * // without timeout
+      * const response = await socket.emitWithAck("hello", "world");
+      *
+      * // with a specific timeout
+      * try {
+      *   const response = await socket.timeout(1000).emitWithAck("hello", "world");
+      * } catch (err) {
+      *   // the server did not acknowledge the event in the given delay
+      * }
+      *
+      * @return a Promise that will be fulfilled when the server acknowledges the event
+      */
+    def emitWithAck[Ev /* <: EventNames[EmitEvents] */](
+      ev: Ev,
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type AllButLast<EventParams<EmitEvents, Ev>> is not an array type */ args: AllButLast[EventParams[EmitEvents, Ev]]
+    ): js.Promise[FirstArg[Last[EventParams[EmitEvents, Ev]]]] = js.native
     
     /* private */ var flags: Any = js.native
     
@@ -400,6 +476,12 @@ object buildEsmSocketMod {
     var receiveBuffer: js.Array[js.Array[Any]] = js.native
     
     /**
+      * Whether the connection state was recovered after a temporary disconnection. In that case, any missed packets will
+      * be transmitted by the server.
+      */
+    var recovered: Boolean = js.native
+    
+    /**
       * Sends a `message` event.
       *
       * This method mimics the WebSocket.send() method.
@@ -443,7 +525,7 @@ object buildEsmSocketMod {
       *
       * @returns self
       */
-    def timeout(timeout: Double): this.type = js.native
+    def timeout(timeout: Double): Socket[ListenEvents, DecorateAcknowledgements[EmitEvents]] = js.native
     
     /**
       * Sets a modifier for a subsequent event emission that the event message will be dropped when this socket is not
@@ -483,32 +565,104 @@ object buildEsmSocketMod {
     }
   }
   
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+    * TS definition: {{{
+    T extends [...infer H, infer L] ? H : std.Array<any>
+    }}}
+    */
+  type AllButLast[T /* <: js.Array[Any] */] = js.Array[Any]
+  
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof E ]: E[K] extends (args : infer Params): infer Result? (args : socket.io-client.socket.io-client/build/esm/socket.PrependTimeoutError<Params>): Result : E[K]}
+    }}}
+    */
+  @js.native
+  trait DecorateAcknowledgements[E] extends StObject
+  
   type DisconnectDescription = js.Error | Context
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately.
+    * TS definition: {{{
+    T extends (arg : infer Param): infer Result ? Param : any
+    }}}
+    */
+  @js.native
+  trait FirstArg[T] extends StObject
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately.
+    * TS definition: {{{
+    T extends [...infer H, infer L] ? L : any
+    }}}
+    */
+  @js.native
+  trait Last[T /* <: js.Array[Any] */] extends StObject
+  
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof T ]: T[K] extends (args : infer Params): infer Result? (err : std.Error, args : Params): Result : T[K]}
+    }}}
+    */
+  @js.native
+  trait PrependTimeoutError[T /* <: js.Array[Any] */] extends StObject
   
   trait SocketOptions extends StObject {
     
     /**
+      * The default timeout in milliseconds used when waiting for an acknowledgement.
+      */
+    var ackTimeout: js.UndefOr[Double] = js.undefined
+    
+    /**
       * the authentication payload sent when connecting to the Namespace
       */
-    var auth: StringDictionary[Any] | (js.Function1[/* cb */ js.Function1[/* data */ js.Object, Unit], Unit])
+    var auth: js.UndefOr[
+        StringDictionary[Any] | (js.Function1[/* cb */ js.Function1[/* data */ js.Object, Unit], Unit])
+      ] = js.undefined
+    
+    /**
+      * The maximum number of retries. Above the limit, the packet will be discarded.
+      *
+      * Using `Infinity` means the delivery guarantee is "at-least-once" (instead of "at-most-once" by default), but a
+      * smaller value like 10 should be sufficient in practice.
+      */
+    var retries: js.UndefOr[Double] = js.undefined
   }
   object SocketOptions {
     
-    inline def apply(
-      auth: StringDictionary[Any] | (js.Function1[/* cb */ js.Function1[/* data */ js.Object, Unit], Unit])
-    ): SocketOptions = {
-      val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any])
+    inline def apply(): SocketOptions = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SocketOptions]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: SocketOptions] (val x: Self) extends AnyVal {
       
+      inline def setAckTimeout(value: Double): Self = StObject.set(x, "ackTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setAckTimeoutUndefined: Self = StObject.set(x, "ackTimeout", js.undefined)
+      
       inline def setAuth(
         value: StringDictionary[Any] | (js.Function1[/* cb */ js.Function1[/* data */ js.Object, Unit], Unit])
       ): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
       inline def setAuthFunction1(value: /* cb */ js.Function1[/* data */ js.Object, Unit] => Unit): Self = StObject.set(x, "auth", js.Any.fromFunction1(value))
+      
+      inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+      
+      inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+      
+      inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
     }
   }
   

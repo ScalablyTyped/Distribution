@@ -18,11 +18,13 @@ import typings.validator.mod.validator.IsAlphaOptions
 import typings.validator.mod.validator.IsAlphanumericOptions
 import typings.validator.mod.validator.IsBase64Options
 import typings.validator.mod.validator.IsByteLengthOptions
+import typings.validator.mod.validator.IsCreditCardOptions
 import typings.validator.mod.validator.IsCurrencyOptions
 import typings.validator.mod.validator.IsDateOptions
 import typings.validator.mod.validator.IsDecimalOptions
 import typings.validator.mod.validator.IsEmptyOptions
 import typings.validator.mod.validator.IsFloatOptions
+import typings.validator.mod.validator.IsIMEIOptions
 import typings.validator.mod.validator.IsISO8601Options
 import typings.validator.mod.validator.IsISSNOptions
 import typings.validator.mod.validator.IsIntOptions
@@ -30,6 +32,7 @@ import typings.validator.mod.validator.IsLengthOptions
 import typings.validator.mod.validator.IsMACAddressOptions
 import typings.validator.mod.validator.IsMobilePhoneOptions
 import typings.validator.mod.validator.IsNumericOptions
+import typings.validator.mod.validator.IsTimeOptions
 import typings.validator.mod.validator.MobilePhoneLocale
 import typings.validator.mod.validator.NormalizeEmailOptions
 import typings.validator.mod.validator.PostalCodeLocale
@@ -178,6 +181,7 @@ object default {
     * Check if the string is a credit card.
     */
   inline def isCreditCard(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCreditCard")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isCreditCard(str: String, options: IsCreditCardOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isCreditCard")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Check if the string is a valid currency amount.
@@ -287,6 +291,16 @@ object default {
   
   /* was `typeof _isIBAN.default` */
   inline def isIBAN(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIBAN")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  /**
+    * Check if the string is a valid IMEI.
+    * Non-hyphenated (`###############`) only is supported by default.
+    * Use the `options` param to enable hyphenated (`##-######-######-#`) support.
+    *
+    * @param [options] - Options
+    */
+  inline def isIMEI(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIMEI")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isIMEI(str: String, options: IsIMEIOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIMEI")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Check if the string is an IP (version 4 or 6).
@@ -537,12 +551,18 @@ object default {
   inline def isTaxID(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTaxID")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def isTaxID(str: String, locale: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTaxID")(str.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
+  /**
+    * Check if the string is a valid time.
+    */
+  inline def isTime(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTime")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isTime(str: String, options: IsTimeOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTime")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   /* was `typeof _isURL.default` */
   inline def isURL(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isURL")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def isURL(str: String, options: IsURLOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isURL")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
-    * Check if the string is a UUID (version 3, 4 or 5).
+    * Check if the string is a UUID (version 1, 2, 3, 4 or 5).
     *
     * @param [version="all"] - UUID version
     */

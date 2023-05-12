@@ -1,6 +1,7 @@
 package typings.openui5
 
 import typings.openui5.sap.ClassInfo
+import typings.openui5.sapMLibraryMod.DynamicDateRangeValue
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreElementMod.ElementSettings
 import typings.std.Record
@@ -135,7 +136,7 @@ object sapMDynamicDateOptionMod {
       /**
       * A callback invoked when any of the created controls updates its value
       */
-    fnControlsUpdated: js.Function
+    fnControlsUpdated: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
     ): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
@@ -151,9 +152,9 @@ object sapMDynamicDateOptionMod {
       * @returns A string representing this option's value
       */
     def format(/**
-      * A DynamicDateRange value
+      * A `sap.m.DynamicDateRangeValue`
       */
-    oValue: js.Object): String = js.native
+    oValue: DynamicDateRangeValue): String = js.native
     
     /**
       * Provides the order index of the option's group. Used for grouping within the options list inside a DynamicDateRange's
@@ -193,14 +194,14 @@ object sapMDynamicDateOptionMod {
     ): String = js.native
     
     /**
-      * Gets the value help controls' output values and converts them to a DynamicDateRange value.
+      * Gets the value help controls' output values and converts them to a `sap.m.DynamicDateRangeValue`.
       *
-      * @returns A DynamicDateRange value
+      * @returns A `sap.m.DynamicDateRangeValue`
       */
     def getValueHelpOutput(/**
       * The control instance
       */
-    oControl: typings.openui5.sapMDynamicDateRangeMod.default): js.Object = js.native
+    oControl: typings.openui5.sapMDynamicDateRangeMod.default): DynamicDateRangeValue = js.native
     
     /**
       * Defines the UI types of the option. They are used to create predefined UI for the DynamicDateRange's
@@ -226,14 +227,14 @@ object sapMDynamicDateOptionMod {
     def getValueTypes(): js.Array[String] = js.native
     
     /**
-      * Parses a string to a DynamicDateRange value.
+      * Parses a string to a `sap.m.DynamicDateRangeValue`.
       *
-      * @returns This option's DynamicDateRange value
+      * @returns This parsed value
       */
     def parse(/**
       * An input string
       */
-    sValue: String): js.Object = js.native
+    sValue: String): DynamicDateRangeValue = js.native
     
     /**
       * Sets a new value for property {@link #getKey key}.
@@ -271,9 +272,9 @@ object sapMDynamicDateOptionMod {
       * @returns A couple of dates marking the start and the end of the range
       */
     def toDates(/**
-      * A DynamicDateRange value
+      * A `sap.m.DynamicDateRangeValue`
       */
-    oValue: js.Object): js.Array[/* was: sap.ui.core.date.UniversalDate */ Any] = js.native
+    oValue: DynamicDateRangeValue): js.Array[/* was: sap.ui.core.date.UniversalDate */ Any] = js.native
     
     /**
       * Validates all input controls in the value help UI related to the current option. If one of the input

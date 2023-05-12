@@ -8,16 +8,7 @@ object mod {
   
   @JSImport("micromark", "micromark")
   @js.native
-  val micromark: (js.Function3[
-    /* value */ Value, 
-    /* encoding */ Encoding, 
-    /* options */ js.UndefOr[typings.micromarkUtilTypes.mod.Options], 
-    String
-  ]) & (js.Function2[
-    /* value */ Value, 
-    /* options */ js.UndefOr[typings.micromarkUtilTypes.mod.Options], 
-    String
-  ]) = js.native
+  val micromark: (js.Function3[/* value */ Value, /* encoding */ Encoding, /* options */ js.UndefOr[Options], String]) & (js.Function2[/* value */ Value, /* options */ js.UndefOr[Options], String]) = js.native
   
   type Encoding = typings.micromarkUtilTypes.mod.Encoding
   

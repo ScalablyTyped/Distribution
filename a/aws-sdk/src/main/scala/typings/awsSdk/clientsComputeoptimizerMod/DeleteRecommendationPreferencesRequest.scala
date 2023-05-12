@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteRecommendationPreferencesRequest extends StObject {
   
   /**
-    * The name of the recommendation preference to delete. Enhanced infrastructure metrics (EnhancedInfrastructureMetrics) is the only feature that can be activated through preferences. Therefore, it is also the only recommendation preference that can be deleted.
+    * The name of the recommendation preference to delete.
     */
   var recommendationPreferenceNames: RecommendationPreferenceNames
   

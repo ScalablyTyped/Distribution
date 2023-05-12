@@ -1,5 +1,10 @@
 package typings.std
 
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
+import typings.std.stdInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,19 +13,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SVGAngle extends StObject {
   
   /* standard dom */
-  val SVG_ANGLETYPE_DEG: Double
+  val SVG_ANGLETYPE_DEG: `2`
   
   /* standard dom */
-  val SVG_ANGLETYPE_GRAD: Double
+  val SVG_ANGLETYPE_GRAD: `4`
   
   /* standard dom */
-  val SVG_ANGLETYPE_RAD: Double
+  val SVG_ANGLETYPE_RAD: `3`
   
   /* standard dom */
-  val SVG_ANGLETYPE_UNKNOWN: Double
+  val SVG_ANGLETYPE_UNKNOWN: `0`
   
   /* standard dom */
-  val SVG_ANGLETYPE_UNSPECIFIED: Double
+  val SVG_ANGLETYPE_UNSPECIFIED: `1`
   
   /* standard dom */
   def convertToSpecifiedUnits(unitType: Double): Unit
@@ -43,11 +48,6 @@ trait SVGAngle extends StObject {
 object SVGAngle {
   
   inline def apply(
-    SVG_ANGLETYPE_DEG: Double,
-    SVG_ANGLETYPE_GRAD: Double,
-    SVG_ANGLETYPE_RAD: Double,
-    SVG_ANGLETYPE_UNKNOWN: Double,
-    SVG_ANGLETYPE_UNSPECIFIED: Double,
     convertToSpecifiedUnits: Double => Unit,
     newValueSpecifiedUnits: (Double, Double) => Unit,
     unitType: Double,
@@ -55,7 +55,7 @@ object SVGAngle {
     valueAsString: java.lang.String,
     valueInSpecifiedUnits: Double
   ): SVGAngle = {
-    val __obj = js.Dynamic.literal(SVG_ANGLETYPE_DEG = SVG_ANGLETYPE_DEG.asInstanceOf[js.Any], SVG_ANGLETYPE_GRAD = SVG_ANGLETYPE_GRAD.asInstanceOf[js.Any], SVG_ANGLETYPE_RAD = SVG_ANGLETYPE_RAD.asInstanceOf[js.Any], SVG_ANGLETYPE_UNKNOWN = SVG_ANGLETYPE_UNKNOWN.asInstanceOf[js.Any], SVG_ANGLETYPE_UNSPECIFIED = SVG_ANGLETYPE_UNSPECIFIED.asInstanceOf[js.Any], convertToSpecifiedUnits = js.Any.fromFunction1(convertToSpecifiedUnits), newValueSpecifiedUnits = js.Any.fromFunction2(newValueSpecifiedUnits), unitType = unitType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueAsString = valueAsString.asInstanceOf[js.Any], valueInSpecifiedUnits = valueInSpecifiedUnits.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(SVG_ANGLETYPE_DEG = 2, SVG_ANGLETYPE_GRAD = 4, SVG_ANGLETYPE_RAD = 3, SVG_ANGLETYPE_UNKNOWN = 0, SVG_ANGLETYPE_UNSPECIFIED = 1, convertToSpecifiedUnits = js.Any.fromFunction1(convertToSpecifiedUnits), newValueSpecifiedUnits = js.Any.fromFunction2(newValueSpecifiedUnits), unitType = unitType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueAsString = valueAsString.asInstanceOf[js.Any], valueInSpecifiedUnits = valueInSpecifiedUnits.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGAngle]
   }
   
@@ -66,15 +66,15 @@ object SVGAngle {
     
     inline def setNewValueSpecifiedUnits(value: (Double, Double) => Unit): Self = StObject.set(x, "newValueSpecifiedUnits", js.Any.fromFunction2(value))
     
-    inline def setSVG_ANGLETYPE_DEG(value: Double): Self = StObject.set(x, "SVG_ANGLETYPE_DEG", value.asInstanceOf[js.Any])
+    inline def setSVG_ANGLETYPE_DEG(value: `2`): Self = StObject.set(x, "SVG_ANGLETYPE_DEG", value.asInstanceOf[js.Any])
     
-    inline def setSVG_ANGLETYPE_GRAD(value: Double): Self = StObject.set(x, "SVG_ANGLETYPE_GRAD", value.asInstanceOf[js.Any])
+    inline def setSVG_ANGLETYPE_GRAD(value: `4`): Self = StObject.set(x, "SVG_ANGLETYPE_GRAD", value.asInstanceOf[js.Any])
     
-    inline def setSVG_ANGLETYPE_RAD(value: Double): Self = StObject.set(x, "SVG_ANGLETYPE_RAD", value.asInstanceOf[js.Any])
+    inline def setSVG_ANGLETYPE_RAD(value: `3`): Self = StObject.set(x, "SVG_ANGLETYPE_RAD", value.asInstanceOf[js.Any])
     
-    inline def setSVG_ANGLETYPE_UNKNOWN(value: Double): Self = StObject.set(x, "SVG_ANGLETYPE_UNKNOWN", value.asInstanceOf[js.Any])
+    inline def setSVG_ANGLETYPE_UNKNOWN(value: `0`): Self = StObject.set(x, "SVG_ANGLETYPE_UNKNOWN", value.asInstanceOf[js.Any])
     
-    inline def setSVG_ANGLETYPE_UNSPECIFIED(value: Double): Self = StObject.set(x, "SVG_ANGLETYPE_UNSPECIFIED", value.asInstanceOf[js.Any])
+    inline def setSVG_ANGLETYPE_UNSPECIFIED(value: `1`): Self = StObject.set(x, "SVG_ANGLETYPE_UNSPECIFIED", value.asInstanceOf[js.Any])
     
     inline def setUnitType(value: Double): Self = StObject.set(x, "unitType", value.asInstanceOf[js.Any])
     

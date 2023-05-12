@@ -46,13 +46,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`[color]`
   - typings.csstype.csstypeStrings.`[cols]`
   - typings.csstype.csstypeStrings.`[colspan]`
-  - typings.csstype.csstypeStrings.`[command]`
   - typings.csstype.csstypeStrings.`[compact]`
   - typings.csstype.csstypeStrings.`[content]`
   - typings.csstype.csstypeStrings.`[contenteditable]`
   - typings.csstype.csstypeStrings.`[contextmenu]`
   - typings.csstype.csstypeStrings.`[controls]`
   - typings.csstype.csstypeStrings.`[coords]`
+  - typings.csstype.csstypeStrings.`[credentialless]`
   - typings.csstype.csstypeStrings.`[crossorigin]`
   - typings.csstype.csstypeStrings.`[data]`
   - typings.csstype.csstypeStrings.`[datafld]`
@@ -90,7 +90,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`[hreflang]`
   - typings.csstype.csstypeStrings.`[hspace]`
   - typings.csstype.csstypeStrings.`[http-equiv]`
-  - typings.csstype.csstypeStrings.`[icon]`
   - typings.csstype.csstypeStrings.`[id]`
   - typings.csstype.csstypeStrings.`[imagesizes]`
   - typings.csstype.csstypeStrings.`[imagesrcset]`
@@ -151,7 +150,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`[prefetch]`
   - typings.csstype.csstypeStrings.`[preload]`
   - typings.csstype.csstypeStrings.`[profile]`
-  - typings.csstype.csstypeStrings.`[radiogroup]`
   - typings.csstype.csstypeStrings.`[readonly]`
   - typings.csstype.csstypeStrings.`[referrerpolicy]`
   - typings.csstype.csstypeStrings.`[rel]`
@@ -177,6 +175,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`[scrolling]`
   - typings.csstype.csstypeStrings.`[selected]`
   - typings.csstype.csstypeStrings.`[shadowroot]`
+  - typings.csstype.csstypeStrings.`[shadowrootmode]`
   - typings.csstype.csstypeStrings.`[shape]`
   - typings.csstype.csstypeStrings.`[size]`
   - typings.csstype.csstypeStrings.`[sizes]`
@@ -205,6 +204,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`[value]`
   - typings.csstype.csstypeStrings.`[valuetype]`
   - typings.csstype.csstypeStrings.`[version]`
+  - typings.csstype.csstypeStrings.`[virtualkeyboardpolicy]`
   - typings.csstype.csstypeStrings.`[vlink]`
   - typings.csstype.csstypeStrings.`[vspace]`
   - typings.csstype.csstypeStrings.`[webkitallowfullscreen]`
@@ -298,8 +298,6 @@ object HtmlAttributes {
   
   inline def `[colspan]`: typings.csstype.csstypeStrings.`[colspan]` = "[colspan]".asInstanceOf[typings.csstype.csstypeStrings.`[colspan]`]
   
-  inline def `[command]`: typings.csstype.csstypeStrings.`[command]` = "[command]".asInstanceOf[typings.csstype.csstypeStrings.`[command]`]
-  
   inline def `[compact]`: typings.csstype.csstypeStrings.`[compact]` = "[compact]".asInstanceOf[typings.csstype.csstypeStrings.`[compact]`]
   
   inline def `[content]`: typings.csstype.csstypeStrings.`[content]` = "[content]".asInstanceOf[typings.csstype.csstypeStrings.`[content]`]
@@ -311,6 +309,8 @@ object HtmlAttributes {
   inline def `[controls]`: typings.csstype.csstypeStrings.`[controls]` = "[controls]".asInstanceOf[typings.csstype.csstypeStrings.`[controls]`]
   
   inline def `[coords]`: typings.csstype.csstypeStrings.`[coords]` = "[coords]".asInstanceOf[typings.csstype.csstypeStrings.`[coords]`]
+  
+  inline def `[credentialless]`: typings.csstype.csstypeStrings.`[credentialless]` = "[credentialless]".asInstanceOf[typings.csstype.csstypeStrings.`[credentialless]`]
   
   inline def `[crossorigin]`: typings.csstype.csstypeStrings.`[crossorigin]` = "[crossorigin]".asInstanceOf[typings.csstype.csstypeStrings.`[crossorigin]`]
   
@@ -385,8 +385,6 @@ object HtmlAttributes {
   inline def `[hspace]`: typings.csstype.csstypeStrings.`[hspace]` = "[hspace]".asInstanceOf[typings.csstype.csstypeStrings.`[hspace]`]
   
   inline def `[http-equiv]`: typings.csstype.csstypeStrings.`[http-equiv]` = "[http-equiv]".asInstanceOf[typings.csstype.csstypeStrings.`[http-equiv]`]
-  
-  inline def `[icon]`: typings.csstype.csstypeStrings.`[icon]` = "[icon]".asInstanceOf[typings.csstype.csstypeStrings.`[icon]`]
   
   inline def `[id]`: typings.csstype.csstypeStrings.`[id]` = "[id]".asInstanceOf[typings.csstype.csstypeStrings.`[id]`]
   
@@ -508,8 +506,6 @@ object HtmlAttributes {
   
   inline def `[profile]`: typings.csstype.csstypeStrings.`[profile]` = "[profile]".asInstanceOf[typings.csstype.csstypeStrings.`[profile]`]
   
-  inline def `[radiogroup]`: typings.csstype.csstypeStrings.`[radiogroup]` = "[radiogroup]".asInstanceOf[typings.csstype.csstypeStrings.`[radiogroup]`]
-  
   inline def `[readonly]`: typings.csstype.csstypeStrings.`[readonly]` = "[readonly]".asInstanceOf[typings.csstype.csstypeStrings.`[readonly]`]
   
   inline def `[referrerpolicy]`: typings.csstype.csstypeStrings.`[referrerpolicy]` = "[referrerpolicy]".asInstanceOf[typings.csstype.csstypeStrings.`[referrerpolicy]`]
@@ -559,6 +555,8 @@ object HtmlAttributes {
   inline def `[selected]`: typings.csstype.csstypeStrings.`[selected]` = "[selected]".asInstanceOf[typings.csstype.csstypeStrings.`[selected]`]
   
   inline def `[shadowroot]`: typings.csstype.csstypeStrings.`[shadowroot]` = "[shadowroot]".asInstanceOf[typings.csstype.csstypeStrings.`[shadowroot]`]
+  
+  inline def `[shadowrootmode]`: typings.csstype.csstypeStrings.`[shadowrootmode]` = "[shadowrootmode]".asInstanceOf[typings.csstype.csstypeStrings.`[shadowrootmode]`]
   
   inline def `[shape]`: typings.csstype.csstypeStrings.`[shape]` = "[shape]".asInstanceOf[typings.csstype.csstypeStrings.`[shape]`]
   
@@ -615,6 +613,8 @@ object HtmlAttributes {
   inline def `[valuetype]`: typings.csstype.csstypeStrings.`[valuetype]` = "[valuetype]".asInstanceOf[typings.csstype.csstypeStrings.`[valuetype]`]
   
   inline def `[version]`: typings.csstype.csstypeStrings.`[version]` = "[version]".asInstanceOf[typings.csstype.csstypeStrings.`[version]`]
+  
+  inline def `[virtualkeyboardpolicy]`: typings.csstype.csstypeStrings.`[virtualkeyboardpolicy]` = "[virtualkeyboardpolicy]".asInstanceOf[typings.csstype.csstypeStrings.`[virtualkeyboardpolicy]`]
   
   inline def `[vlink]`: typings.csstype.csstypeStrings.`[vlink]` = "[vlink]".asInstanceOf[typings.csstype.csstypeStrings.`[vlink]`]
   

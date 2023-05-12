@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteStreamingDistributionRequest extends StObject {
   
   /**
-    * The distribution ID. 
+    * The distribution ID.
     */
   var Id: String
   

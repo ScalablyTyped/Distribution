@@ -1,5 +1,6 @@
 package typings.rdfValidateShacl
 
+import typings.rdfValidateShacl.srcValidationReportMod.ValidationReport
 import typings.rdfjsTypes.dataModelMod.DataFactory
 import typings.rdfjsTypes.dataModelMod.Quad
 import typings.rdfjsTypes.dataModelMod.Term
@@ -29,7 +30,7 @@ object mod {
     override def nodeConformsToShape(focusNode: Term, shapeNode: Term): Boolean = js.native
     
     /* CompleteClass */
-    override def validate(data: DatasetCore[Quad, Quad]): typings.rdfValidateShacl.srcValidationReportMod.^[F] = js.native
+    override def validate(data: DatasetCore[Quad, Quad]): ValidationReport[F] = js.native
   }
   
   @js.native
@@ -72,7 +73,7 @@ object mod {
     
     def nodeConformsToShape(focusNode: Term, shapeNode: Term): Boolean
     
-    def validate(data: DatasetCore[Quad, Quad]): typings.rdfValidateShacl.srcValidationReportMod.^[F]
+    def validate(data: DatasetCore[Quad, Quad]): ValidationReport[F]
   }
   object SHACLValidator {
     
@@ -80,7 +81,7 @@ object mod {
       depth: Double,
       factory: F,
       nodeConformsToShape: (Term, Term) => Boolean,
-      validate: DatasetCore[Quad, Quad] => typings.rdfValidateShacl.srcValidationReportMod.^[F]
+      validate: DatasetCore[Quad, Quad] => ValidationReport[F]
     ): SHACLValidator[F] = {
       val __obj = js.Dynamic.literal(depth = depth.asInstanceOf[js.Any], factory = factory.asInstanceOf[js.Any], nodeConformsToShape = js.Any.fromFunction2(nodeConformsToShape), validate = js.Any.fromFunction1(validate))
       __obj.asInstanceOf[SHACLValidator[F]]
@@ -95,7 +96,7 @@ object mod {
       
       inline def setNodeConformsToShape(value: (Term, Term) => Boolean): Self = StObject.set(x, "nodeConformsToShape", js.Any.fromFunction2(value))
       
-      inline def setValidate(value: DatasetCore[Quad, Quad] => typings.rdfValidateShacl.srcValidationReportMod.^[F]): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+      inline def setValidate(value: DatasetCore[Quad, Quad] => ValidationReport[F]): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
     }
   }
 }

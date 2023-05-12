@@ -27,12 +27,12 @@ trait CreateRoleRequest extends StObject {
   var Path: js.UndefOr[pathType] = js.undefined
   
   /**
-    * The ARN of the policy that is used to set the permissions boundary for the role.
+    * The ARN of the managed policy that is used to set the permissions boundary for the role. A permissions boundary policy defines the maximum permissions that identity-based policies can grant to an entity, but does not grant permissions. Permissions boundaries do not define the maximum permissions that a resource-based policy can grant to an entity. To learn more, see Permissions boundaries for IAM entities in the IAM User Guide. For more information about policy types, see Policy types  in the IAM User Guide.
     */
   var PermissionsBoundary: js.UndefOr[arnType] = js.undefined
   
   /**
-    * The name of the role to create. IAM user, group, role, and policy names must be unique within the account. Names are not distinguished by case. For example, you cannot create resources named both "MyResource" and "myresource".
+    * The name of the role to create. IAM user, group, role, and policy names must be unique within the account. Names are not distinguished by case. For example, you cannot create resources named both "MyResource" and "myresource". This parameter allows (through its regex pattern) a string of characters consisting of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: _+=,.@-
     */
   var RoleName: roleNameType
   

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "markdown-table" : "3.0.2"
+      "markdown-table" : "3.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "markdown-table" : "3.0.2"
+      "markdown-table" : "3.0.3"
     }
   ],
   "compile-devDependencies" : [

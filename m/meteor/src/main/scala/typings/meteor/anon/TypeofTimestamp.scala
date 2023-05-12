@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TypeofTimestamp
   extends StObject
-     with Instantiable1[/* long */ Long, Timestamp] {
+     with Instantiable1[/* int */ js.BigInt, Timestamp] {
   
   val MAX_VALUE: Long = js.native
   

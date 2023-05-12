@@ -10,6 +10,6 @@ object distSrcUtilsToPathComponentsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Array[String]]
-  inline def default(path: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def toPathComponents(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("toPathComponents")().asInstanceOf[js.Array[String]]
+  inline def toPathComponents(path: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("toPathComponents")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 }

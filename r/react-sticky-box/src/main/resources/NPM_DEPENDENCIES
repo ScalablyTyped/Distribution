@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-sticky-box" : "1.0.2"
+      "react-sticky-box" : "2.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "react-sticky-box" : "1.0.2"
+      "react-sticky-box" : "2.0.4"
     }
   ],
   "compile-devDependencies" : [

@@ -6,49 +6,65 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Requiredapprovingreviewcount extends StObject {
   
-  var bypass_pull_request_allowances: js.UndefOr[AppsTeamsArray] = js.undefined
+  var _links: Html
   
-  var dismiss_stale_reviews: js.UndefOr[Boolean] = js.undefined
+  var commit: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['commit'] */ js.Any
   
-  var dismissal_restrictions: js.UndefOr[TeamsurlUrl] = js.undefined
+  var name: String
   
-  var require_code_owner_reviews: js.UndefOr[Boolean] = js.undefined
+  /** @example "mas*" */
+  var pattern: js.UndefOr[String] = js.undefined
   
-  var required_approving_review_count: js.UndefOr[Double] = js.undefined
+  var `protected`: Boolean
+  
+  var protection: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['branch-protection'] */ js.Any
   
   /** Format: uri */
-  var url: String
+  var protection_url: String
+  
+  /** @example 1 */
+  var required_approving_review_count: js.UndefOr[Double] = js.undefined
 }
 object Requiredapprovingreviewcount {
   
-  inline def apply(url: String): Requiredapprovingreviewcount = {
-    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+  inline def apply(
+    _links: Html,
+    commit: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['commit'] */ js.Any,
+    name: String,
+    `protected`: Boolean,
+    protection: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['branch-protection'] */ js.Any,
+    protection_url: String
+  ): Requiredapprovingreviewcount = {
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], protection = protection.asInstanceOf[js.Any], protection_url = protection_url.asInstanceOf[js.Any])
+    __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Requiredapprovingreviewcount]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Requiredapprovingreviewcount] (val x: Self) extends AnyVal {
     
-    inline def setBypass_pull_request_allowances(value: AppsTeamsArray): Self = StObject.set(x, "bypass_pull_request_allowances", value.asInstanceOf[js.Any])
+    inline def setCommit(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['commit'] */ js.Any
+    ): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
-    inline def setBypass_pull_request_allowancesUndefined: Self = StObject.set(x, "bypass_pull_request_allowances", js.undefined)
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setDismiss_stale_reviews(value: Boolean): Self = StObject.set(x, "dismiss_stale_reviews", value.asInstanceOf[js.Any])
+    inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    inline def setDismiss_stale_reviewsUndefined: Self = StObject.set(x, "dismiss_stale_reviews", js.undefined)
+    inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
-    inline def setDismissal_restrictions(value: TeamsurlUrl): Self = StObject.set(x, "dismissal_restrictions", value.asInstanceOf[js.Any])
+    inline def setProtected(value: Boolean): Self = StObject.set(x, "protected", value.asInstanceOf[js.Any])
     
-    inline def setDismissal_restrictionsUndefined: Self = StObject.set(x, "dismissal_restrictions", js.undefined)
+    inline def setProtection(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['branch-protection'] */ js.Any
+    ): Self = StObject.set(x, "protection", value.asInstanceOf[js.Any])
     
-    inline def setRequire_code_owner_reviews(value: Boolean): Self = StObject.set(x, "require_code_owner_reviews", value.asInstanceOf[js.Any])
-    
-    inline def setRequire_code_owner_reviewsUndefined: Self = StObject.set(x, "require_code_owner_reviews", js.undefined)
+    inline def setProtection_url(value: String): Self = StObject.set(x, "protection_url", value.asInstanceOf[js.Any])
     
     inline def setRequired_approving_review_count(value: Double): Self = StObject.set(x, "required_approving_review_count", value.asInstanceOf[js.Any])
     
     inline def setRequired_approving_review_countUndefined: Self = StObject.set(x, "required_approving_review_count", js.undefined)
     
-    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def set_links(value: Html): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

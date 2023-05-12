@@ -7,6 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeExecutionOutput extends StObject {
   
   /**
+    * The cause string if the state machine execution failed.
+    */
+  var cause: js.UndefOr[SensitiveCause] = js.undefined
+  
+  /**
+    * The error string if the state machine execution failed.
+    */
+  var error: js.UndefOr[SensitiveError] = js.undefined
+  
+  /**
     * The Amazon Resource Name (ARN) that identifies the execution.
     */
   var executionArn: Arn
@@ -17,6 +27,11 @@ trait DescribeExecutionOutput extends StObject {
   var input: js.UndefOr[SensitiveData] = js.undefined
   
   var inputDetails: js.UndefOr[CloudWatchEventsExecutionDataDetails] = js.undefined
+  
+  /**
+    * The Amazon Resource Name (ARN) that identifies a Map Run, which dispatched this execution.
+    */
+  var mapRunArn: js.UndefOr[LongArn] = js.undefined
   
   /**
     * The name of the execution. A name must not contain:   white space   brackets &lt; &gt; { } [ ]    wildcard characters ? *    special characters " # % \ ^ | ~ ` $ &amp; , ; : /    control characters (U+0000-001F, U+007F-009F)   To enable logging with CloudWatch Logs, the name should only contain 0-9, A-Z, a-z, - and _.
@@ -51,7 +66,7 @@ trait DescribeExecutionOutput extends StObject {
   var stopDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The AWS X-Ray trace header that was passed to the execution.
+    * The X-Ray trace header that was passed to the execution.
     */
   var traceHeader: js.UndefOr[TraceHeader] = js.undefined
 }
@@ -65,6 +80,14 @@ object DescribeExecutionOutput {
   @scala.inline
   implicit open class MutableBuilder[Self <: DescribeExecutionOutput] (val x: Self) extends AnyVal {
     
+    inline def setCause(value: SensitiveCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+    
+    inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
+    
+    inline def setError(value: SensitiveError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    
     inline def setExecutionArn(value: Arn): Self = StObject.set(x, "executionArn", value.asInstanceOf[js.Any])
     
     inline def setInput(value: SensitiveData): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
@@ -74,6 +97,10 @@ object DescribeExecutionOutput {
     inline def setInputDetailsUndefined: Self = StObject.set(x, "inputDetails", js.undefined)
     
     inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    
+    inline def setMapRunArn(value: LongArn): Self = StObject.set(x, "mapRunArn", value.asInstanceOf[js.Any])
+    
+    inline def setMapRunArnUndefined: Self = StObject.set(x, "mapRunArn", js.undefined)
     
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

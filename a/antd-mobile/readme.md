@@ -1,7 +1,7 @@
 
 # Scala.js typings for antd-mobile
 
-Typings are for version 5.25.1
+Typings are for version 5.30.0
 
 ## Library description:
 <div align="center">

@@ -12,7 +12,7 @@ open class RadialBar protected ()
   def this(props: RadialBarProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: RadialBarProps, context: Any) = this()
 }

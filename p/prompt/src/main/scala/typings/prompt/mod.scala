@@ -75,6 +75,9 @@ object mod {
   inline def start(options: StartOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* static member */
+  inline def stop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[Unit]
+  
+  /* static member */
   @JSImport("prompt", "version")
   @js.native
   def version: String = js.native

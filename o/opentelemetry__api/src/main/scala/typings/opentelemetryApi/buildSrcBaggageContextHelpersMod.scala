@@ -14,6 +14,8 @@ object buildSrcBaggageContextHelpersMod {
   
   inline def deleteBaggage(context: Context): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteBaggage")(context.asInstanceOf[js.Any]).asInstanceOf[Context]
   
+  inline def getActiveBaggage(): js.UndefOr[Baggage] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveBaggage")().asInstanceOf[js.UndefOr[Baggage]]
+  
   inline def getBaggage(context: Context): js.UndefOr[Baggage] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBaggage")(context.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Baggage]]
   
   inline def setBaggage(context: Context, baggage: Baggage): Context = (^.asInstanceOf[js.Dynamic].applyDynamic("setBaggage")(context.asInstanceOf[js.Any], baggage.asInstanceOf[js.Any])).asInstanceOf[Context]

@@ -68,6 +68,8 @@ object compatStorageDistAnalyticsMod {
   inline def getAnalytics(): Analytics = ^.asInstanceOf[js.Dynamic].applyDynamic("getAnalytics")().asInstanceOf[Analytics]
   inline def getAnalytics(app: FirebaseApp): Analytics = ^.asInstanceOf[js.Dynamic].applyDynamic("getAnalytics")(app.asInstanceOf[js.Any]).asInstanceOf[Analytics]
   
+  inline def getGoogleAnalyticsClientId(analyticsInstance: Analytics): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGoogleAnalyticsClientId")(analyticsInstance.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  
   inline def initializeAnalytics(app: FirebaseApp): Analytics = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeAnalytics")(app.asInstanceOf[js.Any]).asInstanceOf[Analytics]
   inline def initializeAnalytics(app: FirebaseApp, options: AnalyticsSettings): Analytics = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeAnalytics")(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Analytics]
   

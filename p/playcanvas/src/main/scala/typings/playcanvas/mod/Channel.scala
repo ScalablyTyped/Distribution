@@ -5,8 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../sound/sound.js').Sound} Sound */
-/** @typedef {import('../sound/manager.js').SoundManager} SoundManager */
 /**
   * A channel is created when the {@link SoundManager} begins playback of a {@link Sound}. Usually
   * created internally by {@link SoundManager#playSound} or {@link SoundManager#playSound3d}.

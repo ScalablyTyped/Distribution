@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SetSourceRequest extends StObject {
   
   /**
-    * The type of encryption that is used on the content ingested from this source.
+    * The type of encryption that is used on the content ingested from this source. Allowable encryption types: static-key.
     */
   var Decryption: js.UndefOr[Encryption] = js.undefined
   
@@ -22,12 +22,17 @@ trait SetSourceRequest extends StObject {
   var EntitlementArn: js.UndefOr[string] = js.undefined
   
   /**
+    * The source configuration for cloud flows receiving a stream from a bridge.
+    */
+  var GatewayBridgeSource: js.UndefOr[SetGatewayBridgeSourceRequest] = js.undefined
+  
+  /**
     * The port that the flow will be listening on for incoming content.
     */
   var IngestPort: js.UndefOr[integer] = js.undefined
   
   /**
-    * The smoothing max bitrate for RIST, RTP, and RTP-FEC streams.
+    * The smoothing max bitrate (in bps) for RIST, RTP, and RTP-FEC streams.
     */
   var MaxBitrate: js.UndefOr[integer] = js.undefined
   
@@ -82,7 +87,7 @@ trait SetSourceRequest extends StObject {
   var SourceListenerPort: js.UndefOr[integer] = js.undefined
   
   /**
-    * The stream ID that you want to use for this transport. This parameter applies only to Zixi-based streams.
+    * The stream ID that you want to use for this transport. This parameter applies only to Zixi and SRT caller-based streams.
     */
   var StreamId: js.UndefOr[string] = js.undefined
   
@@ -117,6 +122,10 @@ object SetSourceRequest {
     inline def setEntitlementArn(value: string): Self = StObject.set(x, "EntitlementArn", value.asInstanceOf[js.Any])
     
     inline def setEntitlementArnUndefined: Self = StObject.set(x, "EntitlementArn", js.undefined)
+    
+    inline def setGatewayBridgeSource(value: SetGatewayBridgeSourceRequest): Self = StObject.set(x, "GatewayBridgeSource", value.asInstanceOf[js.Any])
+    
+    inline def setGatewayBridgeSourceUndefined: Self = StObject.set(x, "GatewayBridgeSource", js.undefined)
     
     inline def setIngestPort(value: integer): Self = StObject.set(x, "IngestPort", value.asInstanceOf[js.Any])
     

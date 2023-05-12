@@ -10,7 +10,7 @@ trait TypeofPaymentMethodOptionBlik extends StObject {
   
   val Blik: TypeofBlikMandateOptions
   
-  val Card: TypeofCard0
+  val Card: TypeofCardMandateOptions
   
   val SepaDebit: Any
   
@@ -21,7 +21,7 @@ object TypeofPaymentMethodOptionBlik {
   inline def apply(
     AcssDebit: TypeofAcssDebit,
     Blik: TypeofBlikMandateOptions,
-    Card: TypeofCard0,
+    Card: TypeofCardMandateOptions,
     SepaDebit: Any,
     UsBankAccount: TypeofUsBankAccount
   ): TypeofPaymentMethodOptionBlik = {
@@ -36,7 +36,7 @@ object TypeofPaymentMethodOptionBlik {
     
     inline def setBlik(value: TypeofBlikMandateOptions): Self = StObject.set(x, "Blik", value.asInstanceOf[js.Any])
     
-    inline def setCard(value: TypeofCard0): Self = StObject.set(x, "Card", value.asInstanceOf[js.Any])
+    inline def setCard(value: TypeofCardMandateOptions): Self = StObject.set(x, "Card", value.asInstanceOf[js.Any])
     
     inline def setSepaDebit(value: Any): Self = StObject.set(x, "SepaDebit", value.asInstanceOf[js.Any])
     

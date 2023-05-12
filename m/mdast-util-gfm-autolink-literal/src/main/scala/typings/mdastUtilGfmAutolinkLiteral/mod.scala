@@ -1,8 +1,8 @@
 package typings.mdastUtilGfmAutolinkLiteral
 
-import typings.mdastUtilFromMarkdown.mod.Extension
-import typings.mdastUtilFromMarkdown.mod.Handle
-import typings.mdastUtilFromMarkdown.mod.Transform
+import typings.mdastUtilFromMarkdown.libMod.Extension
+import typings.mdastUtilFromMarkdown.libMod.Handle
+import typings.mdastUtilFromMarkdown.libMod.Transform
 import typings.mdastUtilToMarkdown.libTypesMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

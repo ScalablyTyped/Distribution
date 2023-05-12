@@ -4,12 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Contains structured information about the place&#39;s description, divided
-  * into a main text and a secondary text, including an array of matched
-  * substrings from the autocomplete input, identified by an offset and a
-  * length, expressed in unicode characters.
-  */
 trait StructuredFormatting extends StObject {
   
   /**

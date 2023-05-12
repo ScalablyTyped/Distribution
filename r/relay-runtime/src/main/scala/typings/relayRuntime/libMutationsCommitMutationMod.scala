@@ -8,6 +8,7 @@ import typings.relayRuntime.libStoreRelayStoreTypesMod.Environment
 import typings.relayRuntime.libStoreRelayStoreTypesMod.RecordSourceSelectorProxy
 import typings.relayRuntime.libStoreRelayStoreTypesMod.SelectorStoreUpdater
 import typings.relayRuntime.libUtilReaderNodeMod.ReaderFragment
+import typings.relayRuntime.libUtilReaderNodeMod.ReaderInlineDataFragment
 import typings.relayRuntime.libUtilRelayConcreteNodeMod.ConcreteRequest
 import typings.relayRuntime.libUtilRelayRuntimeTypesMod.CacheConfig
 import typings.relayRuntime.libUtilRelayRuntimeTypesMod.Disposable
@@ -23,7 +24,7 @@ object libMutationsCommitMutationMod {
   
   inline def commitMutation[TOperation /* <: MutationParameters */](
     environment: Environment,
-    // tslint:disable-next-line no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
   config: MutationConfig[TOperation]
   ): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("commitMutation")(environment.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
@@ -96,7 +97,7 @@ object libMutationsCommitMutationMod {
       
       inline def setMutation(value: GraphQLTaggedNode): Self = StObject.set(x, "mutation", value.asInstanceOf[js.Any])
       
-      inline def setMutationFunction0(value: () => ReaderFragment | ConcreteRequest): Self = StObject.set(x, "mutation", js.Any.fromFunction0(value))
+      inline def setMutationFunction0(value: () => ReaderFragment | ConcreteRequest | ReaderInlineDataFragment): Self = StObject.set(x, "mutation", js.Any.fromFunction0(value))
       
       inline def setOnCompleted(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: TOperation['response'] */ /* response */ js.Any, /* errors */ js.UndefOr[js.Array[PayloadError] | Null]) => Unit

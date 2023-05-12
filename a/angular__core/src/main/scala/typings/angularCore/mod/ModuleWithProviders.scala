@@ -8,7 +8,7 @@ trait ModuleWithProviders[T] extends StObject {
   
   var ngModule: Type[T]
   
-  var providers: js.UndefOr[js.Array[Provider]] = js.undefined
+  var providers: js.UndefOr[js.Array[Provider | EnvironmentProviders]] = js.undefined
 }
 object ModuleWithProviders {
   
@@ -22,10 +22,10 @@ object ModuleWithProviders {
     
     inline def setNgModule(value: Type[T]): Self = StObject.set(x, "ngModule", value.asInstanceOf[js.Any])
     
-    inline def setProviders(value: js.Array[Provider]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
+    inline def setProviders(value: js.Array[Provider | EnvironmentProviders]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
     inline def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
     
-    inline def setProvidersVarargs(value: Provider*): Self = StObject.set(x, "providers", js.Array(value*))
+    inline def setProvidersVarargs(value: (Provider | EnvironmentProviders)*): Self = StObject.set(x, "providers", js.Array(value*))
   }
 }

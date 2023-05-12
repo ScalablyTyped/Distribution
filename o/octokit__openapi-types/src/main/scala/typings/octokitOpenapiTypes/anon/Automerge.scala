@@ -1,6 +1,7 @@
 package typings.octokitOpenapiTypes.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.octokitOpenapiTypes.mod.OneOf
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +26,7 @@ trait Automerge extends StObject {
     */
   var environment: js.UndefOr[String] = js.undefined
   
-  var payload: js.UndefOr[StringDictionary[Any] | String] = js.undefined
+  var payload: js.UndefOr[OneOf[js.Tuple2[StringDictionary[Any], String]]] = js.undefined
   
   /** @description Specifies if the given environment is one that end-users directly interact with. Default: `true` when `environment` is `production` and `false` otherwise. */
   var production_environment: js.UndefOr[Boolean] = js.undefined
@@ -72,7 +73,7 @@ object Automerge {
     
     inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
-    inline def setPayload(value: StringDictionary[Any] | String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: OneOf[js.Tuple2[StringDictionary[Any], String]]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     

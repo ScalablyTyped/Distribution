@@ -88,10 +88,10 @@ object anon {
     var noPax: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * A function that will get called with (message, data)
-      * for any warnings encountered.
+      * A function that will get called with (code, message, data) for any
+      * warnings encountered. (See "Warnings and Errors")
       */
-    var onwarn: js.UndefOr[js.Function2[/* message */ String, /* data */ Buffer, Unit]] = js.undefined
+    var onwarn: js.UndefOr[js.Function3[/* code */ String, /* message */ String, /* data */ Buffer, Unit]] = js.undefined
     
     /**
       * Omit metadata that is system-specific: ctime, atime, uid, gid, uname,
@@ -180,7 +180,7 @@ object anon {
       
       inline def setNoPaxUndefined: Self = StObject.set(x, "noPax", js.undefined)
       
-      inline def setOnwarn(value: (/* message */ String, /* data */ Buffer) => Unit): Self = StObject.set(x, "onwarn", js.Any.fromFunction2(value))
+      inline def setOnwarn(value: (/* code */ String, /* message */ String, /* data */ Buffer) => Unit): Self = StObject.set(x, "onwarn", js.Any.fromFunction3(value))
       
       inline def setOnwarnUndefined: Self = StObject.set(x, "onwarn", js.undefined)
       
@@ -321,10 +321,10 @@ object anon {
     var onentry: js.UndefOr[js.Function1[/* entry */ ReadEntry, Unit]] = js.undefined
     
     /**
-      * A function that will get called with (message, data)
-      * for any warnings encountered.
+      * A function that will get called with (code, message, data) for any
+      * warnings encountered. (See "Warnings and Errors")
       */
-    var onwarn: js.UndefOr[js.Function2[/* message */ String, /* data */ Buffer, Unit]] = js.undefined
+    var onwarn: js.UndefOr[js.Function3[/* code */ String, /* message */ String, /* data */ Buffer, Unit]] = js.undefined
     
     /**
       * Alias for preserveOwner.
@@ -485,7 +485,7 @@ object anon {
       
       inline def setOnentryUndefined: Self = StObject.set(x, "onentry", js.undefined)
       
-      inline def setOnwarn(value: (/* message */ String, /* data */ Buffer) => Unit): Self = StObject.set(x, "onwarn", js.Any.fromFunction2(value))
+      inline def setOnwarn(value: (/* code */ String, /* message */ String, /* data */ Buffer) => Unit): Self = StObject.set(x, "onwarn", js.Any.fromFunction3(value))
       
       inline def setOnwarnUndefined: Self = StObject.set(x, "onwarn", js.undefined)
       

@@ -95,6 +95,8 @@ object sapUiCoreRoutingViewsMod {
     extends typings.openui5.sapUiBaseEventProviderMod.default {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:created created} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

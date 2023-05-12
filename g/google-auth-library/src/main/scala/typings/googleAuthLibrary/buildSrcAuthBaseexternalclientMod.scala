@@ -145,14 +145,6 @@ object buildSrcAuthBaseexternalclientMod {
     
     /* protected */ val subjectTokenType: String = js.native
     
-    /**
-      * Checks whether Google APIs URL is valid.
-      * @param apiName The apiName of url.
-      * @param url The Google API URL to validate.
-      * @return Whether the URL is valid or not.
-      */
-    /* private */ var validateGoogleAPIsUrl: Any = js.native
-    
     /* private */ val workforcePoolUserProject: Any = js.native
   }
   

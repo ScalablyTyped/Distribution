@@ -12,8 +12,8 @@ object distResolversTypeResolverMod {
   open class default protected () extends TypeResolver {
     def this(
       forge: typings.forgeDi.distForgeMod.default,
-      binding: typings.forgeDi.distFrameworkBindingMod.default,
-      `type`: Constructor
+      binding: typings.forgeDi.distFrameworkBindingMod.default[Any],
+      `type`: Constructor[Any]
     ) = this()
   }
   
@@ -21,6 +21,6 @@ object distResolversTypeResolverMod {
   trait TypeResolver
     extends typings.forgeDi.distResolversResolverMod.default {
     
-    var `type`: Constructor = js.native
+    var `type`: Constructor[Any] = js.native
   }
 }

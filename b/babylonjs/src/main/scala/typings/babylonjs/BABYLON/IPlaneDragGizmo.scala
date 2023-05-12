@@ -9,8 +9,17 @@ trait IPlaneDragGizmo
   extends StObject
      with IGizmo {
   
+  /** Default material used to render when gizmo is not disabled or hovered */
+  var coloredMaterial: StandardMaterial
+  
+  /** Material used to render when gizmo is disabled. typically grey.*/
+  var disableMaterial: StandardMaterial
+  
   /** Drag behavior responsible for the gizmos dragging interactions */
   var dragBehavior: PointerDragBehavior
+  
+  /** Material used to render when gizmo is hovered with mouse*/
+  var hoverMaterial: StandardMaterial
   
   /** If the gizmo is enabled */
   var isEnabled: Boolean
@@ -28,9 +37,12 @@ object IPlaneDragGizmo {
   
   inline def apply(
     _rootMesh: Mesh,
+    coloredMaterial: StandardMaterial,
+    disableMaterial: StandardMaterial,
     dispose: () => Unit,
     dragBehavior: PointerDragBehavior,
     gizmoLayer: UtilityLayerRenderer,
+    hoverMaterial: StandardMaterial,
     isEnabled: Boolean,
     isHovered: Boolean,
     onSnapObservable: Observable[SnapDistance],
@@ -41,14 +53,20 @@ object IPlaneDragGizmo {
     updateGizmoRotationToMatchAttachedMesh: Boolean,
     updateScale: Boolean
   ): IPlaneDragGizmo = {
-    val __obj = js.Dynamic.literal(_rootMesh = _rootMesh.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), dragBehavior = dragBehavior.asInstanceOf[js.Any], gizmoLayer = gizmoLayer.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], isHovered = isHovered.asInstanceOf[js.Any], onSnapObservable = onSnapObservable.asInstanceOf[js.Any], scaleRatio = scaleRatio.asInstanceOf[js.Any], setCustomMesh = js.Any.fromFunction1(setCustomMesh), snapDistance = snapDistance.asInstanceOf[js.Any], updateGizmoPositionToMatchAttachedMesh = updateGizmoPositionToMatchAttachedMesh.asInstanceOf[js.Any], updateGizmoRotationToMatchAttachedMesh = updateGizmoRotationToMatchAttachedMesh.asInstanceOf[js.Any], updateScale = updateScale.asInstanceOf[js.Any], attachedMesh = null, attachedNode = null, customRotationQuaternion = null)
+    val __obj = js.Dynamic.literal(_rootMesh = _rootMesh.asInstanceOf[js.Any], coloredMaterial = coloredMaterial.asInstanceOf[js.Any], disableMaterial = disableMaterial.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), dragBehavior = dragBehavior.asInstanceOf[js.Any], gizmoLayer = gizmoLayer.asInstanceOf[js.Any], hoverMaterial = hoverMaterial.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], isHovered = isHovered.asInstanceOf[js.Any], onSnapObservable = onSnapObservable.asInstanceOf[js.Any], scaleRatio = scaleRatio.asInstanceOf[js.Any], setCustomMesh = js.Any.fromFunction1(setCustomMesh), snapDistance = snapDistance.asInstanceOf[js.Any], updateGizmoPositionToMatchAttachedMesh = updateGizmoPositionToMatchAttachedMesh.asInstanceOf[js.Any], updateGizmoRotationToMatchAttachedMesh = updateGizmoRotationToMatchAttachedMesh.asInstanceOf[js.Any], updateScale = updateScale.asInstanceOf[js.Any], attachedMesh = null, attachedNode = null, customRotationQuaternion = null)
     __obj.asInstanceOf[IPlaneDragGizmo]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: IPlaneDragGizmo] (val x: Self) extends AnyVal {
     
+    inline def setColoredMaterial(value: StandardMaterial): Self = StObject.set(x, "coloredMaterial", value.asInstanceOf[js.Any])
+    
+    inline def setDisableMaterial(value: StandardMaterial): Self = StObject.set(x, "disableMaterial", value.asInstanceOf[js.Any])
+    
     inline def setDragBehavior(value: PointerDragBehavior): Self = StObject.set(x, "dragBehavior", value.asInstanceOf[js.Any])
+    
+    inline def setHoverMaterial(value: StandardMaterial): Self = StObject.set(x, "hoverMaterial", value.asInstanceOf[js.Any])
     
     inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     

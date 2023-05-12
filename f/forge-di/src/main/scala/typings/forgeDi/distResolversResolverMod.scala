@@ -15,11 +15,11 @@ object distResolversResolverMod {
        with Resolver {
     def this(
       forge: typings.forgeDi.distForgeMod.default,
-      binding: typings.forgeDi.distFrameworkBindingMod.default
+      binding: typings.forgeDi.distFrameworkBindingMod.default[Any]
     ) = this()
     
     /* protected */ /* CompleteClass */
-    var binding: typings.forgeDi.distFrameworkBindingMod.default = js.native
+    var binding: typings.forgeDi.distFrameworkBindingMod.default[Any] = js.native
     
     /* CompleteClass */
     var dependencies: js.Array[Dependency] = js.native
@@ -40,7 +40,7 @@ object distResolversResolverMod {
   
   trait Resolver extends StObject {
     
-    /* protected */ var binding: typings.forgeDi.distFrameworkBindingMod.default
+    /* protected */ var binding: typings.forgeDi.distFrameworkBindingMod.default[Any]
     
     var dependencies: js.Array[Dependency]
     
@@ -57,7 +57,7 @@ object distResolversResolverMod {
   object Resolver {
     
     inline def apply(
-      binding: typings.forgeDi.distFrameworkBindingMod.default,
+      binding: typings.forgeDi.distFrameworkBindingMod.default[Any],
       dependencies: js.Array[Dependency],
       forge: typings.forgeDi.distForgeMod.default,
       resolve: (typings.forgeDi.distFrameworkContextMod.default, Arguments) => Any,
@@ -70,7 +70,7 @@ object distResolversResolverMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: Resolver] (val x: Self) extends AnyVal {
       
-      inline def setBinding(value: typings.forgeDi.distFrameworkBindingMod.default): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
+      inline def setBinding(value: typings.forgeDi.distFrameworkBindingMod.default[Any]): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
       
       inline def setDependencies(value: js.Array[Dependency]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InstanceGroupConfig extends StObject {
   
   /**
-    * An automatic scaling policy for a core instance group or task instance group in an Amazon EMR cluster. The automatic scaling policy defines how an instance group dynamically adds and terminates EC2 instances in response to the value of a CloudWatch metric. See PutAutoScalingPolicy.
+    * An automatic scaling policy for a core instance group or task instance group in an Amazon EMR cluster. The automatic scaling policy defines how an instance group dynamically adds and terminates Amazon EC2 instances in response to the value of a CloudWatch metric. See PutAutoScalingPolicy.
     */
   var AutoScalingPolicy: js.UndefOr[typings.awsSdk.clientsEmrMod.AutoScalingPolicy] = js.undefined
   
@@ -17,7 +17,7 @@ trait InstanceGroupConfig extends StObject {
   var BidPrice: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
-    *  Amazon EMR releases 4.x or later.  The list of configurations supplied for an EMR cluster instance group. You can specify a separate configuration for each instance group (master, core, and task).
+    *  Amazon EMR releases 4.x or later.  The list of configurations supplied for an Amazon EMR cluster instance group. You can specify a separate configuration for each instance group (master, core, and task).
     */
   var Configurations: js.UndefOr[ConfigurationList] = js.undefined
   
@@ -27,7 +27,7 @@ trait InstanceGroupConfig extends StObject {
   var CustomAmiId: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
-    * EBS configurations that will be attached to each EC2 instance in the instance group.
+    * EBS configurations that will be attached to each Amazon EC2 instance in the instance group.
     */
   var EbsConfiguration: js.UndefOr[typings.awsSdk.clientsEmrMod.EbsConfiguration] = js.undefined
   
@@ -42,12 +42,12 @@ trait InstanceGroupConfig extends StObject {
   var InstanceRole: InstanceRoleType
   
   /**
-    * The EC2 instance type for all instances in the instance group.
+    * The Amazon EC2 instance type for all instances in the instance group.
     */
   var InstanceType: typings.awsSdk.clientsEmrMod.InstanceType
   
   /**
-    * Market type of the EC2 instances used to create a cluster node.
+    * Market type of the Amazon EC2 instances used to create a cluster node.
     */
   var Market: js.UndefOr[MarketType] = js.undefined
   

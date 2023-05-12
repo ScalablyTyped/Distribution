@@ -1,15 +1,12 @@
 package typings.googleMaps.google.maps
 
-import typings.googleMaps.google.maps.marker.AdvancedMarkerView
+import typings.googleMaps.google.maps.marker.AdvancedMarkerElement
 import typings.std.Element
 import typings.std.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An overlay that looks like a bubble and is often connected to a marker.
-  */
 @js.native
 trait InfoWindow
   extends StObject
@@ -55,18 +52,18 @@ trait InfoWindow
     */
   def open(): Unit = js.native
   def open(options: Null, anchor: MVCObject): Unit = js.native
-  def open(options: Null, anchor: AdvancedMarkerView): Unit = js.native
+  def open(options: Null, anchor: AdvancedMarkerElement): Unit = js.native
   def open(options: Unit, anchor: MVCObject): Unit = js.native
-  def open(options: Unit, anchor: AdvancedMarkerView): Unit = js.native
+  def open(options: Unit, anchor: AdvancedMarkerElement): Unit = js.native
   def open(options: InfoWindowOpenOptions): Unit = js.native
   def open(options: InfoWindowOpenOptions, anchor: MVCObject): Unit = js.native
-  def open(options: InfoWindowOpenOptions, anchor: AdvancedMarkerView): Unit = js.native
+  def open(options: InfoWindowOpenOptions, anchor: AdvancedMarkerElement): Unit = js.native
   def open(options: Map): Unit = js.native
   def open(options: Map, anchor: MVCObject): Unit = js.native
-  def open(options: Map, anchor: AdvancedMarkerView): Unit = js.native
+  def open(options: Map, anchor: AdvancedMarkerElement): Unit = js.native
   def open(options: StreetViewPanorama): Unit = js.native
   def open(options: StreetViewPanorama, anchor: MVCObject): Unit = js.native
-  def open(options: StreetViewPanorama, anchor: AdvancedMarkerView): Unit = js.native
+  def open(options: StreetViewPanorama, anchor: AdvancedMarkerElement): Unit = js.native
   
   def setContent(): Unit = js.native
   def setContent(content: String): Unit = js.native

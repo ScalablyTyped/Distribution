@@ -11,7 +11,7 @@ trait DetailedInfernoHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLEleme
 object DetailedInfernoHTMLElement {
   
   inline def apply[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](props: P, ref: /* instance */ T | Null => Any, `type`: String): DetailedInfernoHTMLElement[P, T] = {
-    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], ref = js.Any.fromFunction1(ref), key = null)
+    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], ref = js.Any.fromFunction1(ref))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetailedInfernoHTMLElement[P, T]]
   }

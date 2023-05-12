@@ -1,11 +1,13 @@
 package typings.nivoAxes
 
+import typings.nivoAxes.anon.TextTransform
 import typings.nivoAxes.nivoAxesStrings.after
 import typings.nivoAxes.nivoAxesStrings.before
 import typings.nivoScales.distTypesTypesMod.ScaleValue
 import typings.nivoScales.distTypesTypesMod.TicksSpec
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
+import typings.reactSpringCore.mod.SpringValues
 import typings.std.MouseEvent
 import typings.std.SVGGElement
 import org.scalablytyped.runtime.StObject
@@ -115,7 +117,7 @@ object distTypesTypesMod {
   
   trait AxisTickProps[Value /* <: ScaleValue */] extends StObject {
     
-    var animatedProps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValues<{  opacity :number,   textTransform :string,   transform :string}> */ Any
+    var animatedProps: SpringValues[TextTransform]
     
     var format: js.UndefOr[ValueFormatter[Value]] = js.undefined
     
@@ -154,7 +156,7 @@ object distTypesTypesMod {
   object AxisTickProps {
     
     inline def apply[Value /* <: ScaleValue */](
-      animatedProps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValues<{  opacity :number,   textTransform :string,   transform :string}> */ Any,
+      animatedProps: SpringValues[TextTransform],
       lineX: Double,
       lineY: Double,
       textAnchor: String,
@@ -173,9 +175,7 @@ object distTypesTypesMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: AxisTickProps[?], Value /* <: ScaleValue */] (val x: Self & AxisTickProps[Value]) extends AnyVal {
       
-      inline def setAnimatedProps(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValues<{  opacity :number,   textTransform :string,   transform :string}> */ Any
-      ): Self = StObject.set(x, "animatedProps", value.asInstanceOf[js.Any])
+      inline def setAnimatedProps(value: SpringValues[TextTransform]): Self = StObject.set(x, "animatedProps", value.asInstanceOf[js.Any])
       
       inline def setFormat(value: Value => Value | String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       

@@ -1,7 +1,7 @@
 
 # Scala.js typings for rjsf__utils
 
-Typings are for version 5.0.0-beta.11
+Typings are for version 5.6.2
 
 
 

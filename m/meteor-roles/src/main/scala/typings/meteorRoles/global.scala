@@ -48,8 +48,6 @@ object global {
       *     Roles.userIsInRole(user, 'support-staff') // => true
       *     Roles.userIsInRole(user, 'admin') // => false
       *
-      * @property GLOBAL_GROUP
-      * @type String
       * @static
       * @final
       */
@@ -259,8 +257,6 @@ object global {
       *
       *     `Roles.subscription.ready()` // => `true` if user roles have been loaded
       *
-      * @property subscription
-      * @type Object
       * @for Roles
       */
     @JSGlobal("Roles.subscription")

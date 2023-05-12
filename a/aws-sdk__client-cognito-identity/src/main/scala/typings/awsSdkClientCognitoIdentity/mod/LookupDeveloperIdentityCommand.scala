@@ -10,6 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class LookupDeveloperIdentityCommand protected ()
   extends typings.awsSdkClientCognitoIdentity.distTypesCommandsMod.LookupDeveloperIdentityCommand {
+  /**
+    * @public
+    */
   def this(input: LookupDeveloperIdentityCommandInput) = this()
 }
 /* static members */

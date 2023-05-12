@@ -1,7 +1,7 @@
 
 # Scala.js typings for opentelemetry__context-async-hooks
 
-Typings are for version 1.7.0
+Typings are for version 1.13.0
 
 ## Library description:
 OpenTelemetry AsyncHooks-based Context Manager

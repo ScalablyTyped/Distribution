@@ -14,9 +14,9 @@ object InlineCompletionTriggerKind extends StObject {
   def apply(value: Double): js.UndefOr[InlineCompletionTriggerKind & Double] = js.native
   
   /**
-    * Completion was triggered automatically while editing.
-    * It is sufficient to return a single completion item in this case.
-    */
+  		 * Completion was triggered automatically while editing.
+  		 * It is sufficient to return a single completion item in this case.
+  		 */
   @js.native
   sealed trait Automatic
     extends StObject
@@ -24,9 +24,9 @@ object InlineCompletionTriggerKind extends StObject {
   /* 1 */ val Automatic: typings.vscode.mod.InlineCompletionTriggerKind.Automatic & Double = js.native
   
   /**
-    * Completion was triggered explicitly by a user gesture.
-    * Return multiple completion items to enable cycling through them.
-    */
+  		 * Completion was triggered explicitly by a user gesture.
+  		 * Return multiple completion items to enable cycling through them.
+  		 */
   @js.native
   sealed trait Invoke
     extends StObject

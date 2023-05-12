@@ -17,6 +17,11 @@ trait Match extends StObject {
     * as a JSON object with one field per parameter.
     */
   var params: js.UndefOr[Record[String, Any]] = js.undefined
+  
+  /**
+    * This parameter is for internal use only.
+    */
+  var redirect: js.UndefOr[Index] = js.undefined
 }
 object Match {
   
@@ -34,5 +39,9 @@ object Match {
     inline def setParams(value: Record[String, Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    
+    inline def setRedirect(value: Index): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+    
+    inline def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
   }
 }

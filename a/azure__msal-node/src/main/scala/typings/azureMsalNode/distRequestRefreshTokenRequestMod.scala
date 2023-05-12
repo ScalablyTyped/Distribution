@@ -24,6 +24,8 @@ object distRequestRefreshTokenRequestMod {
     
     var forceCache: js.UndefOr[Boolean] = js.undefined
     
+    var maxAge: js.UndefOr[Double] = js.undefined
+    
     var refreshToken: String
     
     var scopes: js.Array[String]
@@ -71,6 +73,10 @@ object distRequestRefreshTokenRequestMod {
       inline def setForceCache(value: Boolean): Self = StObject.set(x, "forceCache", value.asInstanceOf[js.Any])
       
       inline def setForceCacheUndefined: Self = StObject.set(x, "forceCache", js.undefined)
+      
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
       inline def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
       

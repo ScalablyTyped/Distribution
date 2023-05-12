@@ -18,14 +18,22 @@ object mod {
   open class default protected ()
     extends StObject
        with Backend {
-    def this(services: Services, backendOptions: i18nextFsBackendOptions, i18nextOptions: InitOptions) = this()
+    def this(
+      services: Services,
+      backendOptions: i18nextFsBackendOptions,
+      i18nextOptions: InitOptions[js.Object]
+    ) = this()
     
     /* CompleteClass */
     @JSName("create")
     override def create_MBackend(languages: js.Array[String], namespace: String, key: String, fallbackValue: String): Unit = js.native
     
     /* CompleteClass */
-    override def init(services: Services, backendOptions: i18nextFsBackendOptions, i18nextOptions: InitOptions): Unit = js.native
+    override def init(
+      services: Services,
+      backendOptions: i18nextFsBackendOptions,
+      i18nextOptions: InitOptions[js.Object]
+    ): Unit = js.native
     
     /* CompleteClass */
     override def queue(lng: String, namespace: String, key: String, fallbackValue: String, callback: Any): Unit = js.native
@@ -76,7 +84,7 @@ object mod {
     
     inline def apply(
       create: (js.Array[String], String, String, String) => Unit,
-      init: (Services, i18nextFsBackendOptions, InitOptions) => Unit,
+      init: (Services, i18nextFsBackendOptions, InitOptions[js.Object]) => Unit,
       queue: (String, String, String, String, Any) => Unit,
       read: (String, String, ReadCallback) => Unit,
       write: () => Unit,

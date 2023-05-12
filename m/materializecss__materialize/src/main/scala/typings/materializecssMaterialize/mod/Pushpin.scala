@@ -15,25 +15,25 @@ open class Pushpin ()
      with typings.materializecssMaterialize.M.Pushpin {
   
   /**
-    * Destroy plugin instance and teardown
+    * Destroy plugin instance and teardown.
     */
   /* CompleteClass */
   override def destroy(): Unit = js.native
   
   /**
-    * The DOM element the plugin was initialized with
+    * The DOM element the plugin was initialized with.
     */
   /* CompleteClass */
   var el: Element = js.native
   
   /**
-    * The options the instance was initialized with
+    * The options the instance was initialized with.
     */
   /* CompleteClass */
   var options: PushpinOptions = js.native
   
   /**
-    * Original offsetTop of element
+    * Original offsetTop of element.
     */
   /* CompleteClass */
   var originalOffset: Double = js.native
@@ -45,19 +45,19 @@ object Pushpin {
   val ^ : js.Any = js.native
   
   /**
-    * Get Instance
+    * Get Instance.
     */
   /* static member */
   inline def getInstance(elem: Element): typings.materializecssMaterialize.M.Pushpin = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(elem.asInstanceOf[js.Any]).asInstanceOf[typings.materializecssMaterialize.M.Pushpin]
   
   /**
-    * Init Pushpins
+    * Init Pushpins.
     */
   /* static member */
   inline def init(els: MElements): js.Array[typings.materializecssMaterialize.M.Pushpin] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializecssMaterialize.M.Pushpin]]
   inline def init(els: MElements, options: PartialPushpinOptions): js.Array[typings.materializecssMaterialize.M.Pushpin] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializecssMaterialize.M.Pushpin]]
   /**
-    * Init Pushpin
+    * Init Pushpin.
     */
   /* static member */
   inline def init(els: Element): typings.materializecssMaterialize.M.Pushpin = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[typings.materializecssMaterialize.M.Pushpin]

@@ -128,17 +128,18 @@ object libSrcCoreMod {
     inline def resolveLocale(locales: js.Array[String]): js.UndefOr[typings.std.Intl.Locale] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveLocale")(locales.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.std.Intl.Locale]]
   }
   
+  /* Inlined parent std.Omit<@formatjs/icu-messageformat-parser.@formatjs/icu-messageformat-parser.ParserOptions, 'locale'> */
   trait Options extends StObject {
+    
+    var captureLocation: js.UndefOr[Boolean] = js.undefined
     
     var formatters: js.UndefOr[Formatters] = js.undefined
     
-    /**
-      * Whether to treat HTML/XML tags as string literal
-      * instead of parsing them as tag token.
-      * When this is false we only allow simple tags without
-      * any attributes
-      */
     var ignoreTag: js.UndefOr[Boolean] = js.undefined
+    
+    var requiresOtherClause: js.UndefOr[Boolean] = js.undefined
+    
+    var shouldParseSkeletons: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -150,6 +151,10 @@ object libSrcCoreMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
+      inline def setCaptureLocation(value: Boolean): Self = StObject.set(x, "captureLocation", value.asInstanceOf[js.Any])
+      
+      inline def setCaptureLocationUndefined: Self = StObject.set(x, "captureLocation", js.undefined)
+      
       inline def setFormatters(value: Formatters): Self = StObject.set(x, "formatters", value.asInstanceOf[js.Any])
       
       inline def setFormattersUndefined: Self = StObject.set(x, "formatters", js.undefined)
@@ -157,6 +162,14 @@ object libSrcCoreMod {
       inline def setIgnoreTag(value: Boolean): Self = StObject.set(x, "ignoreTag", value.asInstanceOf[js.Any])
       
       inline def setIgnoreTagUndefined: Self = StObject.set(x, "ignoreTag", js.undefined)
+      
+      inline def setRequiresOtherClause(value: Boolean): Self = StObject.set(x, "requiresOtherClause", value.asInstanceOf[js.Any])
+      
+      inline def setRequiresOtherClauseUndefined: Self = StObject.set(x, "requiresOtherClause", js.undefined)
+      
+      inline def setShouldParseSkeletons(value: Boolean): Self = StObject.set(x, "shouldParseSkeletons", value.asInstanceOf[js.Any])
+      
+      inline def setShouldParseSkeletonsUndefined: Self = StObject.set(x, "shouldParseSkeletons", js.undefined)
     }
   }
 }

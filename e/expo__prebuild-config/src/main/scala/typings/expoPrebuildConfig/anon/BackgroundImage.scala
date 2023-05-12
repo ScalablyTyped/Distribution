@@ -13,11 +13,13 @@ trait BackgroundImage extends StObject {
   var icon: String | Null
   
   var isAdaptive: Boolean
+  
+  var monochromeImage: String | Null
 }
 object BackgroundImage {
   
   inline def apply(isAdaptive: Boolean): BackgroundImage = {
-    val __obj = js.Dynamic.literal(isAdaptive = isAdaptive.asInstanceOf[js.Any], backgroundColor = null, backgroundImage = null, icon = null)
+    val __obj = js.Dynamic.literal(isAdaptive = isAdaptive.asInstanceOf[js.Any], backgroundColor = null, backgroundImage = null, icon = null, monochromeImage = null)
     __obj.asInstanceOf[BackgroundImage]
   }
   
@@ -37,5 +39,9 @@ object BackgroundImage {
     inline def setIconNull: Self = StObject.set(x, "icon", null)
     
     inline def setIsAdaptive(value: Boolean): Self = StObject.set(x, "isAdaptive", value.asInstanceOf[js.Any])
+    
+    inline def setMonochromeImage(value: String): Self = StObject.set(x, "monochromeImage", value.asInstanceOf[js.Any])
+    
+    inline def setMonochromeImageNull: Self = StObject.set(x, "monochromeImage", null)
   }
 }

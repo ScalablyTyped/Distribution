@@ -13,6 +13,8 @@ trait FieldData extends StObject {
   
   var touched: js.UndefOr[Boolean] = js.undefined
   
+  var validated: js.UndefOr[Boolean] = js.undefined
+  
   var validating: js.UndefOr[Boolean] = js.undefined
   
   var value: js.UndefOr[StoreValue] = js.undefined
@@ -42,6 +44,10 @@ object FieldData {
     inline def setTouched(value: Boolean): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
     
     inline def setTouchedUndefined: Self = StObject.set(x, "touched", js.undefined)
+    
+    inline def setValidated(value: Boolean): Self = StObject.set(x, "validated", value.asInstanceOf[js.Any])
+    
+    inline def setValidatedUndefined: Self = StObject.set(x, "validated", js.undefined)
     
     inline def setValidating(value: Boolean): Self = StObject.set(x, "validating", value.asInstanceOf[js.Any])
     

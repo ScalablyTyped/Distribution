@@ -8,11 +8,11 @@ trait ParametersQuerySarifid extends StObject {
   
   var parameters: QuerySarifid
   
-  var responses: `200Content182`
+  var responses: `200Content192`
 }
 object ParametersQuerySarifid {
   
-  inline def apply(parameters: QuerySarifid, responses: `200Content182`): ParametersQuerySarifid = {
+  inline def apply(parameters: QuerySarifid, responses: `200Content192`): ParametersQuerySarifid = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQuerySarifid]
   }
@@ -22,6 +22,6 @@ object ParametersQuerySarifid {
     
     inline def setParameters(value: QuerySarifid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content182`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content192`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

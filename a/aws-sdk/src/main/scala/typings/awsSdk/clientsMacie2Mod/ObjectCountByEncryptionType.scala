@@ -22,7 +22,7 @@ trait ObjectCountByEncryptionType extends StObject {
   var s3Managed: js.UndefOr[long] = js.undefined
   
   /**
-    * The total number of objects that aren't encrypted or use client-side encryption.
+    * The total number of objects that use client-side encryption or aren't encrypted.
     */
   var unencrypted: js.UndefOr[long] = js.undefined
   

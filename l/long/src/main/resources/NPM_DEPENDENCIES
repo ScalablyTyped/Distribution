@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "long" : "5.2.1"
+      "long" : "5.2.3"
     }
   ],
   "test-dependencies" : [
     {
-      "long" : "5.2.1"
+      "long" : "5.2.3"
     }
   ],
   "compile-devDependencies" : [

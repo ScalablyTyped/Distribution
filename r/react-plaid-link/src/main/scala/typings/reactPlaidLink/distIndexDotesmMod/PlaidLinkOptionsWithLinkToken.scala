@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PlaidLinkOptionsWithLinkToken
   extends StObject
-     with CommonPlaidLinkOptions
+     with CommonPlaidLinkOptions[PlaidLinkOnSuccess]
      with PlaidLinkOptions {
   
   // receivedRedirectUri is required on the second-initialization of link when using Link

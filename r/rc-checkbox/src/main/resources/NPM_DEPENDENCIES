@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-checkbox" : "2.3.2"
+      "rc-checkbox" : "3.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-checkbox" : "2.3.2"
+      "rc-checkbox" : "3.0.1"
     }
   ],
   "compile-devDependencies" : [

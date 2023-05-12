@@ -43,8 +43,6 @@ object cookies {
   
   inline def remove_Promise(details: Details): js.Promise[Details] = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Details]]
   
-  inline def set(details: SetDetails): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(details.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def set(details: SetDetails): js.Promise[Cookie | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Cookie | Null]]
   inline def set(details: SetDetails, callback: js.Function1[/* cookie */ Cookie | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def set_Promise(details: SetDetails): js.Promise[Cookie | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Cookie | Null]]
 }

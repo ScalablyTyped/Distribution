@@ -19,8 +19,7 @@ object mod extends Shortcut {
   
   trait pluginOptions extends StObject {
     
-    var color: js.UndefOr[String] = js.undefined
-    
+    /** Preserve the original notation. default: true */
     var preserve: js.UndefOr[Boolean] = js.undefined
   }
   object pluginOptions {
@@ -32,10 +31,6 @@ object mod extends Shortcut {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: pluginOptions] (val x: Self) extends AnyVal {
-      
-      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
-      
-      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
       inline def setPreserve(value: Boolean): Self = StObject.set(x, "preserve", value.asInstanceOf[js.Any])
       

@@ -1,6 +1,5 @@
 package typings.devextreme.anon
 
-import typings.devextreme.mod.DevExpress.ui.dxMap.RouteMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,29 +7,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Color extends StObject {
   
   /**
-    * Specifies the color of the line displaying the route.
+    * Colors the annotation&apos;s border.
     */
   var color: js.UndefOr[String] = js.undefined
   
   /**
-    * Contains an array of objects making up the route.
+    * Makes the annotation&apos;s corners rounded.
     */
-  var locations: js.UndefOr[js.Array[Any]] = js.undefined
+  var cornerRadius: js.UndefOr[Double] = js.undefined
   
   /**
-    * Specifies a transportation mode to be used in the displayed route.
+    * Specifies the dash style of the annotation&apos;s border.
     */
-  var mode: js.UndefOr[RouteMode] = js.undefined
+  var dashStyle: js.UndefOr[typings.devextreme.mod.DevExpress.common.charts.DashStyle] = js.undefined
   
   /**
-    * Specifies the opacity of the line displaying the route.
+    * Specifies the opacity of the annotation&apos;s border.
     */
   var opacity: js.UndefOr[Double] = js.undefined
   
   /**
-    * Specifies the thickness of the line displaying the route in pixels.
+    * Specifies the visibility of the annotation&apos;s border.
     */
-  var weight: js.UndefOr[Double] = js.undefined
+  var visible: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Specifies the width of the annotation&apos;s border in pixels.
+    */
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Color {
   
@@ -46,22 +50,24 @@ object Color {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setLocations(value: js.Array[Any]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setCornerRadius(value: Double): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
     
-    inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
+    inline def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
     
-    inline def setLocationsVarargs(value: Any*): Self = StObject.set(x, "locations", js.Array(value*))
+    inline def setDashStyle(value: typings.devextreme.mod.DevExpress.common.charts.DashStyle): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     
-    inline def setMode(value: RouteMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
-    
-    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
     
     inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

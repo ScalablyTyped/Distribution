@@ -1,7 +1,7 @@
 
 # Scala.js typings for async-lock
 
-Typings are for version 1.3
+Typings are for version 1.4
 
 ## Library description:
 Lock on asynchronous code

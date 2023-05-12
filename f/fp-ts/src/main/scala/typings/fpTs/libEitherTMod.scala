@@ -16,7 +16,7 @@ import typings.fpTs.libChainMod.Chain2C
 import typings.fpTs.libChainMod.Chain3
 import typings.fpTs.libChainMod.Chain3C
 import typings.fpTs.libEitherMod.URI
-import typings.fpTs.libFunctionMod.Lazy
+import typings.fpTs.libFunctionMod.LazyArg
 import typings.fpTs.libFunctorMod.Functor
 import typings.fpTs.libFunctorMod.Functor1
 import typings.fpTs.libFunctorMod.Functor2
@@ -47,7 +47,7 @@ object libEitherTMod {
   val ^ : js.Any = js.native
   
   inline def alt[M](M: Monad[M]): js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, Either<E, A>> */ Any
     ], 
     js.Function1[
@@ -55,7 +55,7 @@ object libEitherTMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, Either<E, A>> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, Either<E, A>> */ Any
     ], 
     js.Function1[
@@ -64,7 +64,7 @@ object libEitherTMod {
     ]
   ]]
   inline def alt[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](M: Monad1[M]): js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, Either<E, A>> */ Any
     ], 
     js.Function1[
@@ -72,7 +72,7 @@ object libEitherTMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, Either<E, A>> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, Either<E, A>> */ Any
     ], 
     js.Function1[
@@ -81,7 +81,7 @@ object libEitherTMod {
     ]
   ]]
   inline def alt[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](M: Monad2[M]): js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, ME, Either<E, A>> */ Any
     ], 
     js.Function1[
@@ -89,7 +89,7 @@ object libEitherTMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, ME, Either<E, A>> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, ME, Either<E, A>> */ Any
     ], 
     js.Function1[
@@ -98,7 +98,7 @@ object libEitherTMod {
     ]
   ]]
   inline def alt[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](M: Monad3[M]): js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, ME, Either<E, A>> */ Any
     ], 
     js.Function1[
@@ -106,7 +106,7 @@ object libEitherTMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, ME, Either<E, A>> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, ME, Either<E, A>> */ Any
     ], 
     js.Function1[
@@ -115,7 +115,7 @@ object libEitherTMod {
     ]
   ]]
   inline def alt[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, ME](M: Monad2C[M, ME]): js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, ME, Either<E, A>> */ Any
     ], 
     js.Function1[
@@ -123,7 +123,7 @@ object libEitherTMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, ME, Either<E, A>> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, ME, Either<E, A>> */ Any
     ], 
     js.Function1[
@@ -132,7 +132,7 @@ object libEitherTMod {
     ]
   ]]
   inline def alt[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, ME](M: Monad3C[M, ME]): js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, ME, Either<E, A>> */ Any
     ], 
     js.Function1[
@@ -140,7 +140,7 @@ object libEitherTMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, ME, Either<E, A>> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, ME, Either<E, A>> */ Any
     ], 
     js.Function1[
@@ -150,7 +150,7 @@ object libEitherTMod {
   ]]
   
   inline def altValidation[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */, E](M: Monad1[M], S: Semigroup[E]): js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, Either<E, A>> */ Any
     ], 
     js.Function1[
@@ -158,7 +158,7 @@ object libEitherTMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, Either<E, A>> */ Any
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("altValidation")(M.asInstanceOf[js.Any], S.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, Either<E, A>> */ Any
     ], 
     js.Function1[
@@ -167,7 +167,7 @@ object libEitherTMod {
     ]
   ]]
   inline def altValidation[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](M: Monad2[M], S: Semigroup[E]): js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, ME, Either<E, A>> */ Any
     ], 
     js.Function1[
@@ -175,7 +175,7 @@ object libEitherTMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, ME, Either<E, A>> */ Any
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("altValidation")(M.asInstanceOf[js.Any], S.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, ME, Either<E, A>> */ Any
     ], 
     js.Function1[
@@ -184,7 +184,7 @@ object libEitherTMod {
     ]
   ]]
   inline def altValidation[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](M: Monad3[M], S: Semigroup[E]): js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, ME, Either<E, A>> */ Any
     ], 
     js.Function1[
@@ -192,7 +192,7 @@ object libEitherTMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, ME, Either<E, A>> */ Any
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("altValidation")(M.asInstanceOf[js.Any], S.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, ME, Either<E, A>> */ Any
     ], 
     js.Function1[
@@ -201,7 +201,7 @@ object libEitherTMod {
     ]
   ]]
   inline def altValidation[M, E](M: Monad[M], S: Semigroup[E]): js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, Either<E, A>> */ Any
     ], 
     js.Function1[
@@ -209,7 +209,7 @@ object libEitherTMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, Either<E, A>> */ Any
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("altValidation")(M.asInstanceOf[js.Any], S.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, Either<E, A>> */ Any
     ], 
     js.Function1[
@@ -218,7 +218,7 @@ object libEitherTMod {
     ]
   ]]
   inline def altValidation[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, ME, E](M: Monad2C[M, ME], S: Semigroup[E]): js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, ME, Either<E, A>> */ Any
     ], 
     js.Function1[
@@ -226,7 +226,7 @@ object libEitherTMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, ME, Either<E, A>> */ Any
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("altValidation")(M.asInstanceOf[js.Any], S.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, ME, Either<E, A>> */ Any
     ], 
     js.Function1[
@@ -235,7 +235,7 @@ object libEitherTMod {
     ]
   ]]
   inline def altValidation[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, ME, E](M: Monad3C[M, ME], S: Semigroup[E]): js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, ME, Either<E, A>> */ Any
     ], 
     js.Function1[
@@ -243,7 +243,7 @@ object libEitherTMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, ME, Either<E, A>> */ Any
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("altValidation")(M.asInstanceOf[js.Any], S.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, ME, Either<E, A>> */ Any
     ], 
     js.Function1[
@@ -1984,7 +1984,7 @@ object libEitherTMod {
     extends StObject
        with ApplicativeCompositionHKT2[M, URI] {
     
-    def alt[E, A](fa: EitherT[M, E, A], that: Lazy[EitherT[M, E, A]]): EitherT[M, E, A]
+    def alt[E, A](fa: EitherT[M, E, A], that: LazyArg[EitherT[M, E, A]]): EitherT[M, E, A]
     
     def bimap[E, A, N, B](ma: EitherT[M, E, A], f: js.Function1[/* e */ E, N], g: js.Function1[/* a */ A, B]): EitherT[M, N, B]
     
@@ -2029,7 +2029,7 @@ object libEitherTMod {
   object EitherM {
     
     inline def apply[M](
-      alt: (EitherT[M, Any, Any], Lazy[EitherT[M, Any, Any]]) => EitherT[M, Any, Any],
+      alt: (EitherT[M, Any, Any], LazyArg[EitherT[M, Any, Any]]) => EitherT[M, Any, Any],
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Kind2<G, E, (a : A): B>> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Kind2<G, E, A>> */ Any) => Any,
       bimap: (EitherT[M, Any, Any], js.Function1[Any, Any], js.Function1[Any, Any]) => EitherT[M, Any, Any],
       chain: (EitherT[M, Any, Any], js.Function1[Any, EitherT[M, Any, Any]]) => EitherT[M, Any, Any],
@@ -2060,7 +2060,7 @@ object libEitherTMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: EitherM[?], M] (val x: Self & EitherM[M]) extends AnyVal {
       
-      inline def setAlt(value: (EitherT[M, Any, Any], Lazy[EitherT[M, Any, Any]]) => EitherT[M, Any, Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
+      inline def setAlt(value: (EitherT[M, Any, Any], LazyArg[EitherT[M, Any, Any]]) => EitherT[M, Any, Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
       
       inline def setBimap(
         value: (EitherT[M, Any, Any], js.Function1[Any, Any], js.Function1[Any, Any]) => EitherT[M, Any, Any]
@@ -2107,7 +2107,7 @@ object libEitherTMod {
     extends StObject
        with ApplicativeComposition12[M, URI] {
     
-    def alt[E, A](fa: EitherT1[M, E, A], that: Lazy[EitherT1[M, E, A]]): EitherT1[M, E, A]
+    def alt[E, A](fa: EitherT1[M, E, A], that: LazyArg[EitherT1[M, E, A]]): EitherT1[M, E, A]
     
     def bimap[E, A, N, B](ma: EitherT1[M, E, A], f: js.Function1[/* e */ E, N], g: js.Function1[/* a */ A, B]): EitherT1[M, N, B]
     
@@ -2152,7 +2152,7 @@ object libEitherTMod {
   object EitherM1 {
     
     inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](
-      alt: (EitherT1[M, Any, Any], Lazy[EitherT1[M, Any, Any]]) => EitherT1[M, Any, Any],
+      alt: (EitherT1[M, Any, Any], LazyArg[EitherT1[M, Any, Any]]) => EitherT1[M, Any, Any],
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, Kind2<G, E, (a : A): B>> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, Kind2<G, E, A>> */ Any) => Any,
       bimap: (EitherT1[M, Any, Any], js.Function1[Any, Any], js.Function1[Any, Any]) => EitherT1[M, Any, Any],
       chain: (EitherT1[M, Any, Any], js.Function1[Any, EitherT1[M, Any, Any]]) => EitherT1[M, Any, Any],
@@ -2183,7 +2183,7 @@ object libEitherTMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: EitherM1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & EitherM1[M]) extends AnyVal {
       
-      inline def setAlt(value: (EitherT1[M, Any, Any], Lazy[EitherT1[M, Any, Any]]) => EitherT1[M, Any, Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
+      inline def setAlt(value: (EitherT1[M, Any, Any], LazyArg[EitherT1[M, Any, Any]]) => EitherT1[M, Any, Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
       
       inline def setBimap(
         value: (EitherT1[M, Any, Any], js.Function1[Any, Any], js.Function1[Any, Any]) => EitherT1[M, Any, Any]
@@ -2230,7 +2230,7 @@ object libEitherTMod {
     extends StObject
        with ApplicativeComposition22[M, URI] {
     
-    def alt[R, E, A](fa: EitherT2[M, R, E, A], that: Lazy[EitherT2[M, R, E, A]]): EitherT2[M, R, E, A]
+    def alt[R, E, A](fa: EitherT2[M, R, E, A], that: LazyArg[EitherT2[M, R, E, A]]): EitherT2[M, R, E, A]
     
     def bimap[R, E, A, N, B](ma: EitherT2[M, R, E, A], f: js.Function1[/* e */ E, N], g: js.Function1[/* a */ A, B]): EitherT2[M, R, N, B]
     
@@ -2275,7 +2275,7 @@ object libEitherTMod {
   object EitherM2 {
     
     inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](
-      alt: (EitherT2[M, Any, Any, Any], Lazy[EitherT2[M, Any, Any, Any]]) => EitherT2[M, Any, Any, Any],
+      alt: (EitherT2[M, Any, Any, Any], LazyArg[EitherT2[M, Any, Any, Any]]) => EitherT2[M, Any, Any, Any],
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, GE, (a : A): B>> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, GE, A>> */ Any) => Any,
       bimap: (EitherT2[M, Any, Any, Any], js.Function1[Any, Any], js.Function1[Any, Any]) => EitherT2[M, Any, Any, Any],
       chain: (EitherT2[M, Any, Any, Any], js.Function1[Any, EitherT2[M, Any, Any, Any]]) => EitherT2[M, Any, Any, Any],
@@ -2307,7 +2307,7 @@ object libEitherTMod {
     implicit open class MutableBuilder[Self <: EitherM2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & EitherM2[M]) extends AnyVal {
       
       inline def setAlt(
-        value: (EitherT2[M, Any, Any, Any], Lazy[EitherT2[M, Any, Any, Any]]) => EitherT2[M, Any, Any, Any]
+        value: (EitherT2[M, Any, Any, Any], LazyArg[EitherT2[M, Any, Any, Any]]) => EitherT2[M, Any, Any, Any]
       ): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
       
       inline def setBimap(

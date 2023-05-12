@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateRelatedItemsInput extends StObject {
   
   /**
-    * A token ensuring that the operation is called only once with the specified details.
+    * A token that ensures that a client calls the operation only once with the specified details.
     */
   var clientToken: js.UndefOr[ClientToken] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the incident record containing the related items you are updating.
+    * The Amazon Resource Name (ARN) of the incident record that contains the related items that you update.
     */
   var incidentRecordArn: Arn
   
   /**
-    * Details about the item you are adding or deleting.
+    * Details about the item that you are add to, or delete from, an incident.
     */
   var relatedItemsUpdate: RelatedItemsUpdate
 }

@@ -5,6 +5,7 @@ import typings.nodeForge.anon.PrivateKeyBinaryBuffer
 import typings.nodeForge.anon.PrivateKeyBytes
 import typings.nodeForge.anon.Seed
 import typings.nodeForge.mod.asn1.Asn1
+import typings.nodeForge.mod.md.MessageDigest
 import typings.nodeForge.mod.util.ByteBuffer
 import typings.nodeForge.nodeForgeStrings.binary
 import typings.nodeForge.nodeForgeStrings.utf8
@@ -63,6 +64,7 @@ object ed25519 {
   type NativeBuffer = Buffer | js.typedarray.Uint8Array
   
   /* Rewritten from type alias, can be one of: 
+    - typings.nodeForge.anon.Md
     - typings.nodeForge.anon.Message
     - typings.nodeForge.anon.Encoding
   */
@@ -72,6 +74,11 @@ object ed25519 {
     inline def Encoding(encoding: binary | utf8, message: String): typings.nodeForge.anon.Encoding = {
       val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.nodeForge.anon.Encoding]
+    }
+    
+    inline def Md(md: MessageDigest): typings.nodeForge.anon.Md = {
+      val __obj = js.Dynamic.literal(md = md.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.nodeForge.anon.Md]
     }
     
     inline def Message(message: NativeBuffer | ByteBuffer): typings.nodeForge.anon.Message = {

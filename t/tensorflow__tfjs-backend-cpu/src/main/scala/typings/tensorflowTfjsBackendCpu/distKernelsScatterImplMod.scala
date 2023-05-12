@@ -28,6 +28,18 @@ object distKernelsScatterImplMod {
     defaultValue: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-backend-cpu.@tensorflow/tfjs-backend-cpu/dist/kernels/Scatter_impl.DefaultValueTypeMap[D] */ js.Any,
     sumDupeIndices: Boolean
   ): TensorBuffer[R, D] = (^.asInstanceOf[js.Dynamic].applyDynamic("scatterImpl")(indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], outputSize.asInstanceOf[js.Any], sliceSize.asInstanceOf[js.Any], numUpdates.asInstanceOf[js.Any], sliceRank.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], sumDupeIndices.asInstanceOf[js.Any])).asInstanceOf[TensorBuffer[R, D]]
+  inline def scatterImpl_int32[R /* <: Rank */, D /* <: float32 | int32 | bool | string */](
+    indices: TensorBuffer[R, int32],
+    updates: TensorBuffer[R, D],
+    shape: js.Array[Double],
+    outputSize: Double,
+    sliceSize: Double,
+    numUpdates: Double,
+    sliceRank: Double,
+    strides: js.Array[Double],
+    defaultValue: TensorBuffer[R, D],
+    sumDupeIndices: Boolean
+  ): TensorBuffer[R, D] = (^.asInstanceOf[js.Dynamic].applyDynamic("scatterImpl")(indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], outputSize.asInstanceOf[js.Any], sliceSize.asInstanceOf[js.Any], numUpdates.asInstanceOf[js.Any], sliceRank.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], sumDupeIndices.asInstanceOf[js.Any])).asInstanceOf[TensorBuffer[R, D]]
   
   trait DefaultValueTypeMap extends StObject {
     

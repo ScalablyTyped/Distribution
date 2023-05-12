@@ -7,14 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteParametersPathRepositoryidNumber extends StObject {
   
   /**
-    * Removes a repository from the selected repositories for a user's codespace secret.
+    * Remove a selected repository from a user secret
+    * @description Removes a repository from the selected repositories for a user's codespace secret.
     * You must authenticate using an access token with the `codespace` or `codespace:secrets` scope to use this endpoint. User must have Codespaces access to use this endpoint.
     * GitHub Apps must have write access to the `codespaces_user_secrets` user permission to use this endpoint.
     */
   var delete: ParametersPathRepositoryidNumber
   
   /**
-    * Adds a repository to the selected repositories for a user's codespace secret.
+    * Add a selected repository to a user secret
+    * @description Adds a repository to the selected repositories for a user's codespace secret.
     * You must authenticate using an access token with the `codespace` or `codespace:secrets` scope to use this endpoint. User must have Codespaces access to use this endpoint.
     * GitHub Apps must have write access to the `codespaces_user_secrets` user permission and write access to the `codespaces_secrets` repository permission on the referenced repository to use this endpoint.
     */

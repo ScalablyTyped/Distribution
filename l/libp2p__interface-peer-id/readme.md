@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__interface-peer-id
 
-Typings are for version 1.0.5
+Typings are for version 2.0.2
 
 ## Library description:
 Peer Identifier interface for libp2p

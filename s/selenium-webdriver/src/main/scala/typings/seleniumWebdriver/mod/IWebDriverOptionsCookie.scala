@@ -22,7 +22,6 @@ trait IWebDriverOptionsCookie extends StObject {
     * The expiry is always returned in seconds since epoch when
     * {@linkplain Options#getCookies() retrieving cookies} from the browser.
     *
-    * @type {(!Date|number|undefined)}
     */
   var expiry: js.UndefOr[Double | js.Date] = js.undefined
   

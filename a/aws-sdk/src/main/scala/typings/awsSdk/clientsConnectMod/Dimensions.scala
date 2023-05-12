@@ -15,6 +15,8 @@ trait Dimensions extends StObject {
     * Information about the queue for which metrics are returned.
     */
   var Queue: js.UndefOr[QueueReference] = js.undefined
+  
+  var RoutingProfile: js.UndefOr[RoutingProfileReference] = js.undefined
 }
 object Dimensions {
   
@@ -33,5 +35,9 @@ object Dimensions {
     inline def setQueue(value: QueueReference): Self = StObject.set(x, "Queue", value.asInstanceOf[js.Any])
     
     inline def setQueueUndefined: Self = StObject.set(x, "Queue", js.undefined)
+    
+    inline def setRoutingProfile(value: RoutingProfileReference): Self = StObject.set(x, "RoutingProfile", value.asInstanceOf[js.Any])
+    
+    inline def setRoutingProfileUndefined: Self = StObject.set(x, "RoutingProfile", js.undefined)
   }
 }

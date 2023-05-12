@@ -27,6 +27,7 @@ object sourceVendorSupportsColorMod {
     inline def stdout_=(x: ColorInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stdout")(x.asInstanceOf[js.Any])
   }
   
+  inline def createSupportsColor(): ColorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createSupportsColor")().asInstanceOf[ColorInfo]
   inline def createSupportsColor(
     stream: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WriteStream */ Any
   ): ColorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createSupportsColor")(stream.asInstanceOf[js.Any]).asInstanceOf[ColorInfo]
@@ -34,6 +35,7 @@ object sourceVendorSupportsColorMod {
     stream: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WriteStream */ Any,
     options: Options
   ): ColorInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("createSupportsColor")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ColorInfo]
+  inline def createSupportsColor(stream: Unit, options: Options): ColorInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("createSupportsColor")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ColorInfo]
   
   /* Rewritten from type alias, can be one of: 
     - typings.chalk.sourceVendorSupportsColorMod.ColorSupport

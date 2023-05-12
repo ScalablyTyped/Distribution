@@ -1,30 +1,25 @@
 package typings.xstate.anon
 
-import typings.xstate.libTypesMod.ActionTypes.NullEvent
 import typings.xstate.libTypesMod.EventObject
-import typings.xstate.xstateStrings.Asterisk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `4`[TEvent /* <: EventObject */] extends StObject {
+trait `4`[TEventType /* <: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any */, TEvent /* <: EventObject */] extends StObject {
   
-  var event: (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | NullEvent | Asterisk
+  var `type`: TEventType
 }
 object `4` {
   
-  inline def apply[TEvent /* <: EventObject */](
-    event: (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | NullEvent | Asterisk
-  ): `4`[TEvent] = {
-    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
-    __obj.asInstanceOf[`4`[TEvent]]
+  inline def apply[TEventType /* <: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any */, TEvent /* <: EventObject */](`type`: TEventType): `4`[TEventType, TEvent] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[`4`[TEventType, TEvent]]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: `4`[?], TEvent /* <: EventObject */] (val x: Self & `4`[TEvent]) extends AnyVal {
+  implicit open class MutableBuilder[Self <: `4`[?, ?], TEventType /* <: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any */, TEvent /* <: EventObject */] (val x: Self & (`4`[TEventType, TEvent])) extends AnyVal {
     
-    inline def setEvent(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | NullEvent | Asterisk
-    ): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setType(value: TEventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

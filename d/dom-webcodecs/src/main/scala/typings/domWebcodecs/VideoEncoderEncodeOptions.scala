@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait VideoEncoderEncodeOptions extends StObject {
   
-  var keyFrame: js.UndefOr[Boolean | Null] = js.undefined
+  var keyFrame: js.UndefOr[Boolean] = js.undefined
 }
 object VideoEncoderEncodeOptions {
   
@@ -19,8 +19,6 @@ object VideoEncoderEncodeOptions {
   implicit open class MutableBuilder[Self <: VideoEncoderEncodeOptions] (val x: Self) extends AnyVal {
     
     inline def setKeyFrame(value: Boolean): Self = StObject.set(x, "keyFrame", value.asInstanceOf[js.Any])
-    
-    inline def setKeyFrameNull: Self = StObject.set(x, "keyFrame", null)
     
     inline def setKeyFrameUndefined: Self = StObject.set(x, "keyFrame", js.undefined)
   }

@@ -27,8 +27,14 @@ object distTypesCommandsUpdateIdentityPoolCommandMod {
           Any, 
           Any
         ] {
+    /**
+      * @public
+      */
     def this(input: UpdateIdentityPoolCommandInput) = this()
     
+    /**
+      * @internal
+      */
     /* private */ var deserialize: Any = js.native
     
     /**
@@ -44,6 +50,9 @@ object distTypesCommandsUpdateIdentityPoolCommandMod {
       options: HttpHandlerOptions
     ): Handler[UpdateIdentityPoolCommandInput, UpdateIdentityPoolCommandOutput] = js.native
     
+    /**
+      * @internal
+      */
     /* private */ var serialize: Any = js.native
   }
   /* static members */

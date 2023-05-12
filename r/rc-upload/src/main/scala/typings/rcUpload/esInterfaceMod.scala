@@ -1,5 +1,10 @@
 package typings.rcUpload
 
+import typings.rcUpload.rcUploadInts.`0`
+import typings.rcUpload.rcUploadInts.`1`
+import typings.rcUpload.rcUploadInts.`2`
+import typings.rcUpload.rcUploadInts.`3`
+import typings.rcUpload.rcUploadStrings._empty
 import typings.rcUpload.rcUploadStrings.`additions removals`
 import typings.rcUpload.rcUploadStrings.`additions text`
 import typings.rcUpload.rcUploadStrings.`inline`
@@ -7,8 +12,10 @@ import typings.rcUpload.rcUploadStrings.`removals additions`
 import typings.rcUpload.rcUploadStrings.`removals text`
 import typings.rcUpload.rcUploadStrings.`text additions`
 import typings.rcUpload.rcUploadStrings.`text removals`
+import typings.rcUpload.rcUploadStrings.`use-credentials`
 import typings.rcUpload.rcUploadStrings.additions
 import typings.rcUpload.rcUploadStrings.all
+import typings.rcUpload.rcUploadStrings.anonymous
 import typings.rcUpload.rcUploadStrings.ascending
 import typings.rcUpload.rcUploadStrings.assertive
 import typings.rcUpload.rcUploadStrings.both
@@ -109,6 +116,7 @@ import typings.std.Event
 import typings.std.EventTarget
 import typings.std.Exclude
 import typings.std.File
+import typings.std.FormData
 import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
 import typings.std.ProgressEvent
@@ -136,13 +144,13 @@ object esInterfaceMod {
   /* Inlined parent std.Partial<std.ProgressEvent<std.EventTarget>> */
   trait UploadProgressEvent extends StObject {
     
-    var AT_TARGET: js.UndefOr[Double] = js.undefined
+    var AT_TARGET: js.UndefOr[`2`] = js.undefined
     
-    var BUBBLING_PHASE: js.UndefOr[Double] = js.undefined
+    var BUBBLING_PHASE: js.UndefOr[`3`] = js.undefined
     
-    var CAPTURING_PHASE: js.UndefOr[Double] = js.undefined
+    var CAPTURING_PHASE: js.UndefOr[`1`] = js.undefined
     
-    var NONE: js.UndefOr[Double] = js.undefined
+    var NONE: js.UndefOr[`0`] = js.undefined
     
     var bubbles: js.UndefOr[Boolean] = js.undefined
     
@@ -198,11 +206,11 @@ object esInterfaceMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: UploadProgressEvent] (val x: Self) extends AnyVal {
       
-      inline def setAT_TARGET(value: Double): Self = StObject.set(x, "AT_TARGET", value.asInstanceOf[js.Any])
+      inline def setAT_TARGET(value: `2`): Self = StObject.set(x, "AT_TARGET", value.asInstanceOf[js.Any])
       
       inline def setAT_TARGETUndefined: Self = StObject.set(x, "AT_TARGET", js.undefined)
       
-      inline def setBUBBLING_PHASE(value: Double): Self = StObject.set(x, "BUBBLING_PHASE", value.asInstanceOf[js.Any])
+      inline def setBUBBLING_PHASE(value: `3`): Self = StObject.set(x, "BUBBLING_PHASE", value.asInstanceOf[js.Any])
       
       inline def setBUBBLING_PHASEUndefined: Self = StObject.set(x, "BUBBLING_PHASE", js.undefined)
       
@@ -210,7 +218,7 @@ object esInterfaceMod {
       
       inline def setBubblesUndefined: Self = StObject.set(x, "bubbles", js.undefined)
       
-      inline def setCAPTURING_PHASE(value: Double): Self = StObject.set(x, "CAPTURING_PHASE", value.asInstanceOf[js.Any])
+      inline def setCAPTURING_PHASE(value: `1`): Self = StObject.set(x, "CAPTURING_PHASE", value.asInstanceOf[js.Any])
       
       inline def setCAPTURING_PHASEUndefined: Self = StObject.set(x, "CAPTURING_PHASE", js.undefined)
       
@@ -260,7 +268,7 @@ object esInterfaceMod {
       
       inline def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
       
-      inline def setNONE(value: Double): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
+      inline def setNONE(value: `0`): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
       
       inline def setNONEUndefined: Self = StObject.set(x, "NONE", js.undefined)
       
@@ -451,11 +459,13 @@ object esInterfaceMod {
     
     var component: js.UndefOr[JSXElementConstructor[Any]] = js.undefined
     
+    var content: js.UndefOr[String] = js.undefined
+    
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
     var customRequest: js.UndefOr[js.Function1[/* option */ UploadRequestOption[Any], Unit]] = js.undefined
     
@@ -483,7 +493,7 @@ object esInterfaceMod {
     
     var form: js.UndefOr[String] = js.undefined
     
-    var formAction: js.UndefOr[String] = js.undefined
+    var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     var formEncType: js.UndefOr[String] = js.undefined
     
@@ -728,11 +738,15 @@ object esInterfaceMod {
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var required: js.UndefOr[Boolean] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -1052,15 +1066,19 @@ object esInterfaceMod {
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -1116,7 +1134,9 @@ object esInterfaceMod {
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      
+      inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
       
       inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
@@ -1592,6 +1612,10 @@ object esInterfaceMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -1603,6 +1627,10 @@ object esInterfaceMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       

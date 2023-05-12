@@ -4,6 +4,7 @@ import typings.csstype.mod.Property._MaskPosition
 import typings.csstype.mod.Property._ObjectPosition
 import typings.csstype.mod.Property._Offset
 import typings.csstype.mod.Property._OffsetAnchor
+import typings.csstype.mod.Property._OffsetPosition
 import typings.csstype.mod.Property._PerspectiveOrigin
 import typings.csstype.mod.Property._ScrollSnapCoordinate
 import typings.csstype.mod.Property._ScrollSnapDestination
@@ -20,6 +21,7 @@ trait _Position[TLength]
      with _ObjectPosition[TLength]
      with _Offset[TLength]
      with _OffsetAnchor[TLength]
+     with _OffsetPosition[TLength]
      with _PerspectiveOrigin[TLength]
      with _ScrollSnapCoordinate[TLength]
      with _ScrollSnapDestination[TLength]

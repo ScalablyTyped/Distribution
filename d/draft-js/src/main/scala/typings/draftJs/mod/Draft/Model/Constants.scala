@@ -12,46 +12,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Constants {
   
   /**
-    * Default entity types.
+    * The list of [default valid block types](https://draftjs.org/docs/advanced-topics-custom-block-render-map#draft-default-block-render-map),
+    * according to the [`DefaultDraftBlockRenderMap`](https://github.com/facebook/draft-js/blob/main/src/model/immutable/DefaultDraftBlockRenderMap.js)
     */
   /* Rewritten from type alias, can be one of: 
-    - typings.draftJs.draftJsStrings.LINK
-    - typings.draftJs.draftJsStrings.TOKEN
-    - typings.draftJs.draftJsStrings.PHOTO
-    - typings.draftJs.draftJsStrings.IMAGE
-  */
-  trait ComposedEntityType extends StObject
-  object ComposedEntityType {
-    
-    inline def IMAGE: typings.draftJs.draftJsStrings.IMAGE = "IMAGE".asInstanceOf[typings.draftJs.draftJsStrings.IMAGE]
-    
-    inline def LINK: typings.draftJs.draftJsStrings.LINK = "LINK".asInstanceOf[typings.draftJs.draftJsStrings.LINK]
-    
-    inline def PHOTO: typings.draftJs.draftJsStrings.PHOTO = "PHOTO".asInstanceOf[typings.draftJs.draftJsStrings.PHOTO]
-    
-    inline def TOKEN: typings.draftJs.draftJsStrings.TOKEN = "TOKEN".asInstanceOf[typings.draftJs.draftJsStrings.TOKEN]
-  }
-  
-  /**
-    * The list of default valid block types.
-    */
-  /* Rewritten from type alias, can be one of: 
-    - typings.draftJs.draftJsStrings.unstyled
-    - typings.draftJs.draftJsStrings.paragraph
     - typings.draftJs.draftJsStrings.`header-one`
     - typings.draftJs.draftJsStrings.`header-two`
     - typings.draftJs.draftJsStrings.`header-three`
     - typings.draftJs.draftJsStrings.`header-four`
     - typings.draftJs.draftJsStrings.`header-five`
     - typings.draftJs.draftJsStrings.`header-six`
+    - typings.draftJs.draftJsStrings.section
+    - typings.draftJs.draftJsStrings.article
     - typings.draftJs.draftJsStrings.`unordered-list-item`
     - typings.draftJs.draftJsStrings.`ordered-list-item`
     - typings.draftJs.draftJsStrings.blockquote
-    - typings.draftJs.draftJsStrings.`code-block`
     - typings.draftJs.draftJsStrings.atomic
+    - typings.draftJs.draftJsStrings.`code-block`
+    - typings.draftJs.draftJsStrings.unstyled
   */
   trait CoreDraftBlockType extends StObject
   object CoreDraftBlockType {
+    
+    inline def article: typings.draftJs.draftJsStrings.article = "article".asInstanceOf[typings.draftJs.draftJsStrings.article]
     
     inline def atomic: typings.draftJs.draftJsStrings.atomic = "atomic".asInstanceOf[typings.draftJs.draftJsStrings.atomic]
     
@@ -73,7 +56,7 @@ object Constants {
     
     inline def `ordered-list-item`: typings.draftJs.draftJsStrings.`ordered-list-item` = "ordered-list-item".asInstanceOf[typings.draftJs.draftJsStrings.`ordered-list-item`]
     
-    inline def paragraph: typings.draftJs.draftJsStrings.paragraph = "paragraph".asInstanceOf[typings.draftJs.draftJsStrings.paragraph]
+    inline def section: typings.draftJs.draftJsStrings.section = "section".asInstanceOf[typings.draftJs.draftJsStrings.section]
     
     inline def `unordered-list-item`: typings.draftJs.draftJsStrings.`unordered-list-item` = "unordered-list-item".asInstanceOf[typings.draftJs.draftJsStrings.`unordered-list-item`]
     
@@ -207,9 +190,9 @@ object Constants {
   }
   
   /**
-    * Possible entity types.
+    * Possible entity types, like 'LINK', 'IMAGE', or custom ones.
     */
-  type DraftEntityType = String | ComposedEntityType
+  type DraftEntityType = String
   
   /**
     * A type that allows us to avoid returning boolean values

@@ -1,7 +1,7 @@
 
 # Scala.js typings for space-separated-tokens
 
-Typings are for version 2.0.1
+Typings are for version 2.0.2
 
 ## Library description:
 Parse and stringify space separated tokens

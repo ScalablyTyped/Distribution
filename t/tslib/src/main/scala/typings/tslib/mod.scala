@@ -66,6 +66,71 @@ object mod {
   inline def decorate(decorators: js.Array[js.Function], target: Any, key: js.Symbol, desc: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("__decorate")(decorators.asInstanceOf[js.Any], target.asInstanceOf[js.Any], key.asInstanceOf[js.Any], desc.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def decorate(decorators: js.Array[js.Function], target: Any, key: Unit, desc: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("__decorate")(decorators.asInstanceOf[js.Any], target.asInstanceOf[js.Any], key.asInstanceOf[js.Any], desc.asInstanceOf[js.Any])).asInstanceOf[Any]
   
+  inline def esDecorate(
+    ctor: js.Function,
+    descriptorIn: js.Object,
+    decorators: js.Array[js.Function],
+    contextIn: js.Object,
+    initializers: js.Array[js.Function],
+    extraInitializers: js.Array[js.Function]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__esDecorate")(ctor.asInstanceOf[js.Any], descriptorIn.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], contextIn.asInstanceOf[js.Any], initializers.asInstanceOf[js.Any], extraInitializers.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def esDecorate(
+    ctor: js.Function,
+    descriptorIn: js.Object,
+    decorators: js.Array[js.Function],
+    contextIn: js.Object,
+    initializers: Null,
+    extraInitializers: js.Array[js.Function]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__esDecorate")(ctor.asInstanceOf[js.Any], descriptorIn.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], contextIn.asInstanceOf[js.Any], initializers.asInstanceOf[js.Any], extraInitializers.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def esDecorate(
+    ctor: js.Function,
+    descriptorIn: Null,
+    decorators: js.Array[js.Function],
+    contextIn: js.Object,
+    initializers: js.Array[js.Function],
+    extraInitializers: js.Array[js.Function]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__esDecorate")(ctor.asInstanceOf[js.Any], descriptorIn.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], contextIn.asInstanceOf[js.Any], initializers.asInstanceOf[js.Any], extraInitializers.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def esDecorate(
+    ctor: js.Function,
+    descriptorIn: Null,
+    decorators: js.Array[js.Function],
+    contextIn: js.Object,
+    initializers: Null,
+    extraInitializers: js.Array[js.Function]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__esDecorate")(ctor.asInstanceOf[js.Any], descriptorIn.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], contextIn.asInstanceOf[js.Any], initializers.asInstanceOf[js.Any], extraInitializers.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def esDecorate(
+    ctor: Null,
+    descriptorIn: js.Object,
+    decorators: js.Array[js.Function],
+    contextIn: js.Object,
+    initializers: js.Array[js.Function],
+    extraInitializers: js.Array[js.Function]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__esDecorate")(ctor.asInstanceOf[js.Any], descriptorIn.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], contextIn.asInstanceOf[js.Any], initializers.asInstanceOf[js.Any], extraInitializers.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def esDecorate(
+    ctor: Null,
+    descriptorIn: js.Object,
+    decorators: js.Array[js.Function],
+    contextIn: js.Object,
+    initializers: Null,
+    extraInitializers: js.Array[js.Function]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__esDecorate")(ctor.asInstanceOf[js.Any], descriptorIn.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], contextIn.asInstanceOf[js.Any], initializers.asInstanceOf[js.Any], extraInitializers.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def esDecorate(
+    ctor: Null,
+    descriptorIn: Null,
+    decorators: js.Array[js.Function],
+    contextIn: js.Object,
+    initializers: js.Array[js.Function],
+    extraInitializers: js.Array[js.Function]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__esDecorate")(ctor.asInstanceOf[js.Any], descriptorIn.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], contextIn.asInstanceOf[js.Any], initializers.asInstanceOf[js.Any], extraInitializers.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def esDecorate(
+    ctor: Null,
+    descriptorIn: Null,
+    decorators: js.Array[js.Function],
+    contextIn: js.Object,
+    initializers: Null,
+    extraInitializers: js.Array[js.Function]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__esDecorate")(ctor.asInstanceOf[js.Any], descriptorIn.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], contextIn.asInstanceOf[js.Any], initializers.asInstanceOf[js.Any], extraInitializers.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   inline def exportStar(m: Any, o: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__exportStar")(m.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def `extends`(d: js.Function, b: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__extends")(d.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -82,10 +147,20 @@ object mod {
   
   inline def param(paramIndex: Double, decorator: js.Function): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("__param")(paramIndex.asInstanceOf[js.Any], decorator.asInstanceOf[js.Any])).asInstanceOf[js.Function]
   
+  inline def propKey(x: Any): String | js.Symbol = ^.asInstanceOf[js.Dynamic].applyDynamic("__propKey")(x.asInstanceOf[js.Any]).asInstanceOf[String | js.Symbol]
+  
   inline def read(o: Any): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("__read")(o.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
   inline def read(o: Any, n: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("__read")(o.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   
   inline def rest(t: Any, propertyNames: js.Array[String | js.Symbol]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("__rest")(t.asInstanceOf[js.Any], propertyNames.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  inline def runInitializers(thisArg: Any, initializers: js.Array[js.Function]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("__runInitializers")(thisArg.asInstanceOf[js.Any], initializers.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def runInitializers(thisArg: Any, initializers: js.Array[js.Function], value: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("__runInitializers")(thisArg.asInstanceOf[js.Any], initializers.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  inline def setFunctionName(f: js.Function, name: String): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("__setFunctionName")(f.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  inline def setFunctionName(f: js.Function, name: String, prefix: String): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("__setFunctionName")(f.asInstanceOf[js.Any], name.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  inline def setFunctionName(f: js.Function, name: js.Symbol): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("__setFunctionName")(f.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  inline def setFunctionName(f: js.Function, name: js.Symbol, prefix: String): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("__setFunctionName")(f.asInstanceOf[js.Any], name.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[js.Function]
   
   inline def spread(args: js.Array[Any]*): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("__spread")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Array[Any]]
   

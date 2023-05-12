@@ -5,17 +5,27 @@ import typings.node.NodeJS.ErrnoException
 import typings.node.dnsMod.LookupOneOptions
 import typings.node.netMod.LookupFunction
 import typings.node.netMod.OnReadOpts
-import typings.undici.typesConnectorMod.BuildOptions
+import typings.undici.typesConnectorMod.buildConnector.BuildOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined node.net.TcpNetConnectOpts & {  maxCachedSessions :number | null | undefined,   socketPath :string | null | undefined,   timeout :number | null | undefined,   port :number | undefined} */
+/* Inlined node.net.TcpNetConnectOpts & {  maxCachedSessions :number | null | undefined,   socketPath :string | null | undefined,   timeout :number | null | undefined,   port :number | undefined,   keepAlive :boolean | null | undefined,   keepAliveInitialDelay :number | null | undefined} */
 trait TcpNetConnectOptsmaxCache
   extends StObject
      with BuildOptions {
   
   var allowHalfOpen: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * @since v18.13.0
+    */
+  var autoSelectFamily: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * @since v18.13.0
+    */
+  var autoSelectFamilyAttemptTimeout: js.UndefOr[Double] = js.undefined
   
   var family: js.UndefOr[Double] = js.undefined
   
@@ -71,6 +81,14 @@ object TcpNetConnectOptsmaxCache {
     inline def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
     
     inline def setAllowHalfOpenUndefined: Self = StObject.set(x, "allowHalfOpen", js.undefined)
+    
+    inline def setAutoSelectFamily(value: Boolean): Self = StObject.set(x, "autoSelectFamily", value.asInstanceOf[js.Any])
+    
+    inline def setAutoSelectFamilyAttemptTimeout(value: Double): Self = StObject.set(x, "autoSelectFamilyAttemptTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setAutoSelectFamilyAttemptTimeoutUndefined: Self = StObject.set(x, "autoSelectFamilyAttemptTimeout", js.undefined)
+    
+    inline def setAutoSelectFamilyUndefined: Self = StObject.set(x, "autoSelectFamily", js.undefined)
     
     inline def setFamily(value: Double): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     

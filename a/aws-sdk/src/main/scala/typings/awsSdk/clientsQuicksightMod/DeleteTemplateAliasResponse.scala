@@ -29,7 +29,7 @@ trait DeleteTemplateAliasResponse extends StObject {
   /**
     * An ID for the template associated with the deletion.
     */
-  var TemplateId: js.UndefOr[RestrictiveResourceId] = js.undefined
+  var TemplateId: js.UndefOr[ShortRestrictiveResourceId] = js.undefined
 }
 object DeleteTemplateAliasResponse {
   
@@ -57,7 +57,7 @@ object DeleteTemplateAliasResponse {
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    inline def setTemplateId(value: RestrictiveResourceId): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
+    inline def setTemplateId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
     
     inline def setTemplateIdUndefined: Self = StObject.set(x, "TemplateId", js.undefined)
   }

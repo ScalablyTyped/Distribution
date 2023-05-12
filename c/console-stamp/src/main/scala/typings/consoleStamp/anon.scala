@@ -20,13 +20,13 @@ object anon {
     
     var level: js.UndefOr[String] = js.undefined
     
+    var preventDefaultMessage: js.UndefOr[Boolean] = js.undefined
+    
     var stderr: js.UndefOr[WriteStream | SpyStream] = js.undefined
     
     var stdout: js.UndefOr[WriteStream | SpyStream] = js.undefined
     
     var tokens: js.UndefOr[Record[String, Token]] = js.undefined
-    
-    var use_custom_message: js.UndefOr[Boolean] = js.undefined
   }
   object Extend {
     
@@ -56,6 +56,10 @@ object anon {
       
       inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
+      inline def setPreventDefaultMessage(value: Boolean): Self = StObject.set(x, "preventDefaultMessage", value.asInstanceOf[js.Any])
+      
+      inline def setPreventDefaultMessageUndefined: Self = StObject.set(x, "preventDefaultMessage", js.undefined)
+      
       inline def setStderr(value: WriteStream | SpyStream): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
       inline def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
@@ -67,10 +71,6 @@ object anon {
       inline def setTokens(value: Record[String, Token]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
       inline def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
-      
-      inline def setUse_custom_message(value: Boolean): Self = StObject.set(x, "use_custom_message", value.asInstanceOf[js.Any])
-      
-      inline def setUse_custom_messageUndefined: Self = StObject.set(x, "use_custom_message", js.undefined)
     }
   }
 }

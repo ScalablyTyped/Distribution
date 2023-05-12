@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CommentRule extends StObject {
   
   /**
-    * The block comment character pair, like `/ * block comment *&#47;`
-    */
+  		 * The block comment character pair, like `/ * block comment *&#47;`
+  		 */
   var blockComment: js.UndefOr[CharacterPair] = js.undefined
   
   /**
-    * The line comment token, like `// this is a comment`
-    */
+  		 * The line comment token, like `// this is a comment`
+  		 */
   var lineComment: js.UndefOr[String] = js.undefined
 }
 object CommentRule {

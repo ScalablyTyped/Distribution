@@ -37,6 +37,16 @@ trait UpdateMissionProfileRequest extends StObject {
   var name: js.UndefOr[SafeName] = js.undefined
   
   /**
+    * KMS key to use for encrypting streams.
+    */
+  var streamsKmsKey: js.UndefOr[KmsKey] = js.undefined
+  
+  /**
+    * Role to use for encrypting streams with KMS key.
+    */
+  var streamsKmsRole: js.UndefOr[RoleArn] = js.undefined
+  
+  /**
     * ARN of a tracking Config.
     */
   var trackingConfigArn: js.UndefOr[ConfigArn] = js.undefined
@@ -74,6 +84,14 @@ object UpdateMissionProfileRequest {
     inline def setName(value: SafeName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setStreamsKmsKey(value: KmsKey): Self = StObject.set(x, "streamsKmsKey", value.asInstanceOf[js.Any])
+    
+    inline def setStreamsKmsKeyUndefined: Self = StObject.set(x, "streamsKmsKey", js.undefined)
+    
+    inline def setStreamsKmsRole(value: RoleArn): Self = StObject.set(x, "streamsKmsRole", value.asInstanceOf[js.Any])
+    
+    inline def setStreamsKmsRoleUndefined: Self = StObject.set(x, "streamsKmsRole", js.undefined)
     
     inline def setTrackingConfigArn(value: ConfigArn): Self = StObject.set(x, "trackingConfigArn", value.asInstanceOf[js.Any])
     

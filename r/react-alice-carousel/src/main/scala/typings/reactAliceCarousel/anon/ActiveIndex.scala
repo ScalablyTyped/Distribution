@@ -44,7 +44,7 @@ trait ActiveIndex extends StObject {
   
   var infinite: Boolean
   
-  var innerWidth: Double
+  var innerWidth: Unit
   
   var items: Unit
   
@@ -100,7 +100,7 @@ object ActiveIndex {
     disableDotsControls: Boolean,
     disableSlideInfo: Boolean,
     infinite: Boolean,
-    innerWidth: Double,
+    innerWidth: Unit,
     items: Unit,
     keyboardNavigation: Boolean,
     mouseTracking: Boolean,
@@ -160,7 +160,7 @@ object ActiveIndex {
     
     inline def setInfinite(value: Boolean): Self = StObject.set(x, "infinite", value.asInstanceOf[js.Any])
     
-    inline def setInnerWidth(value: Double): Self = StObject.set(x, "innerWidth", value.asInstanceOf[js.Any])
+    inline def setInnerWidth(value: Unit): Self = StObject.set(x, "innerWidth", value.asInstanceOf[js.Any])
     
     inline def setItems(value: Unit): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

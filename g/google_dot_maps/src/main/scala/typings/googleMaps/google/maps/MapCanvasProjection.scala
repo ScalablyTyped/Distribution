@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This object is made available to the <code>OverlayView</code> from within
-  * the draw method. It is not guaranteed to be initialized until draw is
-  * called.
-  */
 @js.native
 trait MapCanvasProjection extends StObject {
   

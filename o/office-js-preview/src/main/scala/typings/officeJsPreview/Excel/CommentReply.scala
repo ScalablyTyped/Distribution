@@ -32,7 +32,7 @@ trait CommentReply
     *
     * @param assignee The assignee's user identity information.
     */
-  def assignTask(assignee: Identity): DocumentTask = js.native
+  def assignTask(assignee: EmailIdentity): DocumentTask = js.native
   
   /**
     * Gets the email of the comment reply's author.

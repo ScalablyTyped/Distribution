@@ -1,5 +1,6 @@
 package typings.reactNativeCommunityCliPlatformIos.anon
 
+import typings.reactNativeCommunityCliPlatformIos.buildCommandsRunIOSMod.FlagsT
 import typings.reactNativeCommunityCliTypes.mod.Config
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,20 +12,20 @@ trait Examples extends StObject {
   
   var examples: js.Array[Cmd]
   
-  def func(_underscore: js.Array[String], ctx: Config, args: Configuration): Unit | js.Promise[Unit]
+  def func(_underscore: js.Array[String], ctx: Config, args: FlagsT): js.Promise[Unit]
   
   var name: String
   
-  var options: js.Array[Default | Name | Parse | DefaultDescription]
+  var options: js.Array[Default | Description | Name | Parse]
 }
 object Examples {
   
   inline def apply(
     description: String,
     examples: js.Array[Cmd],
-    func: (js.Array[String], Config, Configuration) => Unit | js.Promise[Unit],
+    func: (js.Array[String], Config, FlagsT) => js.Promise[Unit],
     name: String,
-    options: js.Array[Default | Name | Parse | DefaultDescription]
+    options: js.Array[Default | Description | Name | Parse]
   ): Examples = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], examples = examples.asInstanceOf[js.Any], func = js.Any.fromFunction3(func), name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Examples]
@@ -39,12 +40,12 @@ object Examples {
     
     inline def setExamplesVarargs(value: Cmd*): Self = StObject.set(x, "examples", js.Array(value*))
     
-    inline def setFunc(value: (js.Array[String], Config, Configuration) => Unit | js.Promise[Unit]): Self = StObject.set(x, "func", js.Any.fromFunction3(value))
+    inline def setFunc(value: (js.Array[String], Config, FlagsT) => js.Promise[Unit]): Self = StObject.set(x, "func", js.Any.fromFunction3(value))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setOptions(value: js.Array[Default | Name | Parse | DefaultDescription]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Array[Default | Description | Name | Parse]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    inline def setOptionsVarargs(value: (Default | Name | Parse | DefaultDescription)*): Self = StObject.set(x, "options", js.Array(value*))
+    inline def setOptionsVarargs(value: (Default | Description | Name | Parse)*): Self = StObject.set(x, "options", js.Array(value*))
   }
 }

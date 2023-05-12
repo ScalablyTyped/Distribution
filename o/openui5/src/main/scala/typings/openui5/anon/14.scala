@@ -1,6 +1,6 @@
 package typings.openui5.anon
 
-import typings.openui5.sapMMenuItemMod.default
+import typings.std.FileList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `14` extends StObject {
   
   /**
-    * The `MenuItem` which was selected.
+    * The current files.
     */
-  var item: js.UndefOr[default] = js.undefined
+  var files: js.UndefOr[FileList] = js.undefined
 }
 object `14` {
   
@@ -22,8 +22,8 @@ object `14` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `14`] (val x: Self) extends AnyVal {
     
-    inline def setItem(value: default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setFiles(value: FileList): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
   }
 }

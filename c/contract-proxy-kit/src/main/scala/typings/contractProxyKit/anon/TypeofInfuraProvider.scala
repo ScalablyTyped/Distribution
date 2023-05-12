@@ -1,11 +1,11 @@
 package typings.contractProxyKit.anon
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.ethers.mod.ethers.providers.InfuraProvider
-import typings.ethersprojectNetworks.libTypesMod.Network
-import typings.ethersprojectNetworks.libTypesMod.Networkish
-import typings.ethersprojectProviders.libInfuraProviderMod.InfuraWebSocketProvider
-import typings.ethersprojectWeb.mod.ConnectionInfo
+import typings.ethers.mod.ethers.InfuraProvider
+import typings.ethers.typesProvidersNetworkMod.Network
+import typings.ethers.typesProvidersNetworkMod.Networkish
+import typings.ethers.typesProvidersProviderInfuraMod.InfuraWebSocketProvider
+import typings.ethers.typesUtilsMod.FetchRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,12 +15,21 @@ trait TypeofInfuraProvider
   extends StObject
      with Instantiable0[InfuraProvider] {
   
-  def getApiKey(apiKey: Any): Any = js.native
+  /**
+    *  Returns a prepared request for connecting to %%network%%
+    *  with %%projectId%% and %%projectSecret%%.
+    */
+  def getRequest(network: Network): FetchRequest = js.native
+  def getRequest(network: Network, projectId: String): FetchRequest = js.native
+  def getRequest(network: Network, projectId: String, projectSecret: String): FetchRequest = js.native
+  def getRequest(network: Network, projectId: Null, projectSecret: String): FetchRequest = js.native
+  def getRequest(network: Network, projectId: Unit, projectSecret: String): FetchRequest = js.native
   
-  def getUrl(network: Network, apiKey: Any): ConnectionInfo = js.native
-  
+  /**
+    *  Creates a new **InfuraWebSocketProvider**.
+    */
   def getWebSocketProvider(): InfuraWebSocketProvider = js.native
-  def getWebSocketProvider(network: Unit, apiKey: Any): InfuraWebSocketProvider = js.native
+  def getWebSocketProvider(network: Unit, projectId: String): InfuraWebSocketProvider = js.native
   def getWebSocketProvider(network: Networkish): InfuraWebSocketProvider = js.native
-  def getWebSocketProvider(network: Networkish, apiKey: Any): InfuraWebSocketProvider = js.native
+  def getWebSocketProvider(network: Networkish, projectId: String): InfuraWebSocketProvider = js.native
 }

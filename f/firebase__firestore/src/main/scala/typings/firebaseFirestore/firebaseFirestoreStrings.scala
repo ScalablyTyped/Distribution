@@ -4,17 +4,21 @@ import typings.firebaseFirestore.distFirestoreSrcCoreQueryMod.LimitType
 import typings.firebaseFirestore.distFirestoreSrcCoreTypesMod.MutationBatchState
 import typings.firebaseFirestore.distFirestoreSrcCoreTypesMod.OnlineState
 import typings.firebaseFirestore.distFirestoreSrcUtilInputValidationMod.ValidationType
-import typings.firebaseFirestore.distInternalMod.LimitType2
-import typings.firebaseFirestore.distInternalMod.QueryTargetState
-import typings.firebaseFirestore.distLiteFirestoreSrcCoreTargetMod.Operator
-import typings.firebaseFirestore.distLiteFirestoreSrcLocalPersistenceTransactionMod.PersistenceTransactionMode
 import typings.firebaseFirestore.distLiteFirestoreSrcLocalSimpleDbMod.SimpleDbTransactionMode
 import typings.firebaseFirestore.distLiteFirestoreSrcUtilErrorMod.FirestoreErrorCode
 import typings.firebaseFirestore.distLiteFirestoreTestUnitSpecsSpecTestRunnerMod.PersistenceAction
 import typings.firebaseFirestore.distLiteFirestoreTestUnitSpecsSpecTestRunnerMod.SpecLimitType
+import typings.firebaseFirestore.distLiteInternalMod.AggregateType
+import typings.firebaseFirestore.distLiteInternalMod.CompositeOperator
 import typings.firebaseFirestore.distLiteInternalMod.Direction
+import typings.firebaseFirestore.distLiteInternalMod.IndexState2
+import typings.firebaseFirestore.distLiteInternalMod.LimitType2
+import typings.firebaseFirestore.distLiteInternalMod.Operator
+import typings.firebaseFirestore.distLiteInternalMod.PersistenceTransactionMode
+import typings.firebaseFirestore.distLiteInternalMod.QueryTargetState
 import typings.firebaseFirestore.distLiteInternalMod.ServerTimestampBehavior
 import typings.firebaseFirestore.distLiteInternalMod.TokenType
+import typings.firebaseFirestore.distLitePackagesFirestoreSrcLocalTargetDataMod.TargetPurpose
 import typings.firebaseFirestore.distLitePackagesFirestoreSrcProtosFirestoreProtoApiMod.CompositeFilterOp
 import typings.firebaseFirestore.distLitePackagesFirestoreSrcProtosFirestoreProtoApiMod.FieldFilterOp
 import typings.firebaseFirestore.distLitePackagesFirestoreSrcProtosFirestoreProtoApiMod.FieldTransformSetToServerValue
@@ -188,12 +192,12 @@ object firebaseFirestoreStrings {
     extends StObject
        with IndexState
        with typings.firebaseFirestore.distPackagesFirestoreSrcProtosFirestoreProtoApiMod.IndexState
-       with typings.firebaseFirestore.distLiteInternalMod.IndexState
-       with typings.firebaseFirestore.distInternalMod.IndexState
        with typings.firebaseFirestore.distFirestoreSrcProtosFirestoreProtoApiMod.IndexState
-       with typings.firebaseFirestore.distLitePrivateMod.IndexState
-       with typings.firebaseFirestore.distPrivateMod.IndexState
        with typings.firebaseFirestore.distLiteFirestoreSrcProtosFirestoreProtoApiMod.IndexState
+       with IndexState2
+       with typings.firebaseFirestore.distInternalMod.IndexState2
+       with typings.firebaseFirestore.distLitePrivateMod.IndexState2
+       with typings.firebaseFirestore.distPrivateMod.IndexState2
   inline def CREATING: CREATING = "CREATING".asInstanceOf[CREATING]
   
   @js.native
@@ -270,21 +274,25 @@ object firebaseFirestoreStrings {
     extends StObject
        with IndexState
        with typings.firebaseFirestore.distPackagesFirestoreSrcProtosFirestoreProtoApiMod.IndexState
-       with typings.firebaseFirestore.distLiteInternalMod.IndexState
-       with typings.firebaseFirestore.distInternalMod.IndexState
        with typings.firebaseFirestore.distFirestoreSrcProtosFirestoreProtoApiMod.IndexState
-       with typings.firebaseFirestore.distLitePrivateMod.IndexState
-       with typings.firebaseFirestore.distPrivateMod.IndexState
        with typings.firebaseFirestore.distLiteFirestoreSrcProtosFirestoreProtoApiMod.IndexState
+       with IndexState2
+       with typings.firebaseFirestore.distInternalMod.IndexState2
+       with typings.firebaseFirestore.distLitePrivateMod.IndexState2
+       with typings.firebaseFirestore.distPrivateMod.IndexState2
   inline def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
   
   @js.native
   sealed trait EqualssignEqualssign
     extends StObject
        with Operator
-       with typings.firebaseFirestore.distPackagesFirestoreSrcCoreTargetMod.Operator
-       with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreTargetMod.Operator
-       with typings.firebaseFirestore.distFirestoreSrcCoreTargetMod.Operator
+       with typings.firebaseFirestore.distInternalMod.Operator
+       with typings.firebaseFirestore.distLiteFirestoreSrcCoreFilterMod.Operator
+       with typings.firebaseFirestore.distPackagesFirestoreSrcCoreFilterMod.Operator
+       with typings.firebaseFirestore.distFirestoreSrcCoreFilterMod.Operator
+       with typings.firebaseFirestore.distLitePrivateMod.Operator
+       with typings.firebaseFirestore.distPrivateMod.Operator
+       with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreFilterMod.Operator
        with WhereFilterOp
        with typings.firebaseFirestore.distLiteInternalMod.WhereFilterOp
        with typings.firebaseFirestore.distLiteFirestoreSrcLiteApiQueryMod.WhereFilterOp
@@ -313,9 +321,13 @@ object firebaseFirestoreStrings {
   sealed trait ExclamationmarkEqualssign
     extends StObject
        with Operator
-       with typings.firebaseFirestore.distPackagesFirestoreSrcCoreTargetMod.Operator
-       with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreTargetMod.Operator
-       with typings.firebaseFirestore.distFirestoreSrcCoreTargetMod.Operator
+       with typings.firebaseFirestore.distInternalMod.Operator
+       with typings.firebaseFirestore.distLiteFirestoreSrcCoreFilterMod.Operator
+       with typings.firebaseFirestore.distPackagesFirestoreSrcCoreFilterMod.Operator
+       with typings.firebaseFirestore.distFirestoreSrcCoreFilterMod.Operator
+       with typings.firebaseFirestore.distLitePrivateMod.Operator
+       with typings.firebaseFirestore.distPrivateMod.Operator
+       with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreFilterMod.Operator
        with WhereFilterOp
        with typings.firebaseFirestore.distLiteInternalMod.WhereFilterOp
        with typings.firebaseFirestore.distLiteFirestoreSrcLiteApiQueryMod.WhereFilterOp
@@ -358,6 +370,8 @@ object firebaseFirestoreStrings {
        with typings.firebaseFirestore.distLiteFirestoreSrcProtosFirestoreBundleProtoMod.LimitType
        with typings.firebaseFirestore.distLitePackagesFirestoreSrcProtosFirestoreBundleProtoMod.LimitType
        with LimitType2
+       with typings.firebaseFirestore.distInternalMod.LimitType2
+       with typings.firebaseFirestore.distLitePrivateMod.LimitType2
        with typings.firebaseFirestore.distPrivateMod.LimitType2
   inline def FIRST: FIRST = "FIRST".asInstanceOf[FIRST]
   
@@ -458,9 +472,13 @@ object firebaseFirestoreStrings {
   sealed trait Greaterthansign
     extends StObject
        with Operator
-       with typings.firebaseFirestore.distPackagesFirestoreSrcCoreTargetMod.Operator
-       with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreTargetMod.Operator
-       with typings.firebaseFirestore.distFirestoreSrcCoreTargetMod.Operator
+       with typings.firebaseFirestore.distInternalMod.Operator
+       with typings.firebaseFirestore.distLiteFirestoreSrcCoreFilterMod.Operator
+       with typings.firebaseFirestore.distPackagesFirestoreSrcCoreFilterMod.Operator
+       with typings.firebaseFirestore.distFirestoreSrcCoreFilterMod.Operator
+       with typings.firebaseFirestore.distLitePrivateMod.Operator
+       with typings.firebaseFirestore.distPrivateMod.Operator
+       with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreFilterMod.Operator
        with WhereFilterOp
        with typings.firebaseFirestore.distLiteInternalMod.WhereFilterOp
        with typings.firebaseFirestore.distLiteFirestoreSrcLiteApiQueryMod.WhereFilterOp
@@ -477,9 +495,13 @@ object firebaseFirestoreStrings {
   sealed trait GreaterthansignEqualssign
     extends StObject
        with Operator
-       with typings.firebaseFirestore.distPackagesFirestoreSrcCoreTargetMod.Operator
-       with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreTargetMod.Operator
-       with typings.firebaseFirestore.distFirestoreSrcCoreTargetMod.Operator
+       with typings.firebaseFirestore.distInternalMod.Operator
+       with typings.firebaseFirestore.distLiteFirestoreSrcCoreFilterMod.Operator
+       with typings.firebaseFirestore.distPackagesFirestoreSrcCoreFilterMod.Operator
+       with typings.firebaseFirestore.distFirestoreSrcCoreFilterMod.Operator
+       with typings.firebaseFirestore.distLitePrivateMod.Operator
+       with typings.firebaseFirestore.distPrivateMod.Operator
+       with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreFilterMod.Operator
        with WhereFilterOp
        with typings.firebaseFirestore.distLiteInternalMod.WhereFilterOp
        with typings.firebaseFirestore.distLiteFirestoreSrcLiteApiQueryMod.WhereFilterOp
@@ -587,6 +609,8 @@ object firebaseFirestoreStrings {
        with typings.firebaseFirestore.distLiteFirestoreSrcProtosFirestoreBundleProtoMod.LimitType
        with typings.firebaseFirestore.distLitePackagesFirestoreSrcProtosFirestoreBundleProtoMod.LimitType
        with LimitType2
+       with typings.firebaseFirestore.distInternalMod.LimitType2
+       with typings.firebaseFirestore.distLitePrivateMod.LimitType2
        with typings.firebaseFirestore.distPrivateMod.LimitType2
   inline def LAST: LAST = "LAST".asInstanceOf[LAST]
   
@@ -620,9 +644,13 @@ object firebaseFirestoreStrings {
   sealed trait Lessthansign
     extends StObject
        with Operator
-       with typings.firebaseFirestore.distPackagesFirestoreSrcCoreTargetMod.Operator
-       with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreTargetMod.Operator
-       with typings.firebaseFirestore.distFirestoreSrcCoreTargetMod.Operator
+       with typings.firebaseFirestore.distInternalMod.Operator
+       with typings.firebaseFirestore.distLiteFirestoreSrcCoreFilterMod.Operator
+       with typings.firebaseFirestore.distPackagesFirestoreSrcCoreFilterMod.Operator
+       with typings.firebaseFirestore.distFirestoreSrcCoreFilterMod.Operator
+       with typings.firebaseFirestore.distLitePrivateMod.Operator
+       with typings.firebaseFirestore.distPrivateMod.Operator
+       with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreFilterMod.Operator
        with WhereFilterOp
        with typings.firebaseFirestore.distLiteInternalMod.WhereFilterOp
        with typings.firebaseFirestore.distLiteFirestoreSrcLiteApiQueryMod.WhereFilterOp
@@ -639,9 +667,13 @@ object firebaseFirestoreStrings {
   sealed trait LessthansignEqualssign
     extends StObject
        with Operator
-       with typings.firebaseFirestore.distPackagesFirestoreSrcCoreTargetMod.Operator
-       with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreTargetMod.Operator
-       with typings.firebaseFirestore.distFirestoreSrcCoreTargetMod.Operator
+       with typings.firebaseFirestore.distInternalMod.Operator
+       with typings.firebaseFirestore.distLiteFirestoreSrcCoreFilterMod.Operator
+       with typings.firebaseFirestore.distPackagesFirestoreSrcCoreFilterMod.Operator
+       with typings.firebaseFirestore.distFirestoreSrcCoreFilterMod.Operator
+       with typings.firebaseFirestore.distLitePrivateMod.Operator
+       with typings.firebaseFirestore.distPrivateMod.Operator
+       with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreFilterMod.Operator
        with WhereFilterOp
        with typings.firebaseFirestore.distLiteInternalMod.WhereFilterOp
        with typings.firebaseFirestore.distLiteFirestoreSrcLiteApiQueryMod.WhereFilterOp
@@ -793,11 +825,26 @@ object firebaseFirestoreStrings {
   inline def OPERATOR_UNSPECIFIED: OPERATOR_UNSPECIFIED = "OPERATOR_UNSPECIFIED".asInstanceOf[OPERATOR_UNSPECIFIED]
   
   @js.native
+  sealed trait OR
+    extends StObject
+       with CompositeFilterOp
+       with typings.firebaseFirestore.distPackagesFirestoreSrcProtosFirestoreProtoApiMod.CompositeFilterOp
+       with typings.firebaseFirestore.distLiteInternalMod.CompositeFilterOp
+       with typings.firebaseFirestore.distInternalMod.CompositeFilterOp
+       with typings.firebaseFirestore.distFirestoreSrcProtosFirestoreProtoApiMod.CompositeFilterOp
+       with typings.firebaseFirestore.distLitePrivateMod.CompositeFilterOp
+       with typings.firebaseFirestore.distPrivateMod.CompositeFilterOp
+       with typings.firebaseFirestore.distLiteFirestoreSrcProtosFirestoreProtoApiMod.CompositeFilterOp
+  inline def OR: OR = "OR".asInstanceOf[OR]
+  
+  @js.native
   sealed trait Offline
     extends StObject
        with OnlineState
+       with typings.firebaseFirestore.distLiteInternalMod.OnlineState
        with typings.firebaseFirestore.distInternalMod.OnlineState
        with typings.firebaseFirestore.distLiteFirestoreSrcCoreTypesMod.OnlineState
+       with typings.firebaseFirestore.distLitePrivateMod.OnlineState
        with typings.firebaseFirestore.distPrivateMod.OnlineState
        with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreTypesMod.OnlineState
        with typings.firebaseFirestore.distPackagesFirestoreSrcCoreTypesMod.OnlineState
@@ -807,24 +854,30 @@ object firebaseFirestoreStrings {
   sealed trait Online
     extends StObject
        with OnlineState
+       with typings.firebaseFirestore.distLiteInternalMod.OnlineState
        with typings.firebaseFirestore.distInternalMod.OnlineState
        with typings.firebaseFirestore.distLiteFirestoreSrcCoreTypesMod.OnlineState
+       with typings.firebaseFirestore.distLitePrivateMod.OnlineState
        with typings.firebaseFirestore.distPrivateMod.OnlineState
        with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreTypesMod.OnlineState
        with typings.firebaseFirestore.distPackagesFirestoreSrcCoreTypesMod.OnlineState
   inline def Online: Online = "Online".asInstanceOf[Online]
   
   @js.native
+  sealed trait PersistentMultipleTab extends StObject
+  inline def PersistentMultipleTab: PersistentMultipleTab = "PersistentMultipleTab".asInstanceOf[PersistentMultipleTab]
+  
+  @js.native
   sealed trait READY
     extends StObject
        with IndexState
        with typings.firebaseFirestore.distPackagesFirestoreSrcProtosFirestoreProtoApiMod.IndexState
-       with typings.firebaseFirestore.distLiteInternalMod.IndexState
-       with typings.firebaseFirestore.distInternalMod.IndexState
        with typings.firebaseFirestore.distFirestoreSrcProtosFirestoreProtoApiMod.IndexState
-       with typings.firebaseFirestore.distLitePrivateMod.IndexState
-       with typings.firebaseFirestore.distPrivateMod.IndexState
        with typings.firebaseFirestore.distLiteFirestoreSrcProtosFirestoreProtoApiMod.IndexState
+       with IndexState2
+       with typings.firebaseFirestore.distInternalMod.IndexState2
+       with typings.firebaseFirestore.distLitePrivateMod.IndexState2
+       with typings.firebaseFirestore.distPrivateMod.IndexState2
   inline def READY: READY = "READY".asInstanceOf[READY]
   
   @js.native
@@ -923,12 +976,12 @@ object firebaseFirestoreStrings {
     extends StObject
        with IndexState
        with typings.firebaseFirestore.distPackagesFirestoreSrcProtosFirestoreProtoApiMod.IndexState
-       with typings.firebaseFirestore.distLiteInternalMod.IndexState
-       with typings.firebaseFirestore.distInternalMod.IndexState
        with typings.firebaseFirestore.distFirestoreSrcProtosFirestoreProtoApiMod.IndexState
-       with typings.firebaseFirestore.distLitePrivateMod.IndexState
-       with typings.firebaseFirestore.distPrivateMod.IndexState
        with typings.firebaseFirestore.distLiteFirestoreSrcProtosFirestoreProtoApiMod.IndexState
+       with IndexState2
+       with typings.firebaseFirestore.distInternalMod.IndexState2
+       with typings.firebaseFirestore.distLitePrivateMod.IndexState2
+       with typings.firebaseFirestore.distPrivateMod.IndexState2
   inline def STATE_UNSPECIFIED: STATE_UNSPECIFIED = "STATE_UNSPECIFIED".asInstanceOf[STATE_UNSPECIFIED]
   
   @js.native
@@ -971,11 +1024,65 @@ object firebaseFirestoreStrings {
   inline def `Synchronize last document change read time`: `Synchronize last document change read time` = ("Synchronize last document change read time").asInstanceOf[`Synchronize last document change read time`]
   
   @js.native
+  sealed trait TargetPurposeExistenceFilterMismatch
+    extends StObject
+       with TargetPurpose
+       with typings.firebaseFirestore.distLiteInternalMod.TargetPurpose
+       with typings.firebaseFirestore.distInternalMod.TargetPurpose
+       with typings.firebaseFirestore.distFirestoreSrcLocalTargetDataMod.TargetPurpose
+       with typings.firebaseFirestore.distLitePrivateMod.TargetPurpose
+       with typings.firebaseFirestore.distPackagesFirestoreSrcLocalTargetDataMod.TargetPurpose
+       with typings.firebaseFirestore.distPrivateMod.TargetPurpose
+       with typings.firebaseFirestore.distLiteFirestoreSrcLocalTargetDataMod.TargetPurpose
+  inline def TargetPurposeExistenceFilterMismatch: TargetPurposeExistenceFilterMismatch = "TargetPurposeExistenceFilterMismatch".asInstanceOf[TargetPurposeExistenceFilterMismatch]
+  
+  @js.native
+  sealed trait TargetPurposeExistenceFilterMismatchBloom
+    extends StObject
+       with TargetPurpose
+       with typings.firebaseFirestore.distLiteInternalMod.TargetPurpose
+       with typings.firebaseFirestore.distInternalMod.TargetPurpose
+       with typings.firebaseFirestore.distFirestoreSrcLocalTargetDataMod.TargetPurpose
+       with typings.firebaseFirestore.distLitePrivateMod.TargetPurpose
+       with typings.firebaseFirestore.distPackagesFirestoreSrcLocalTargetDataMod.TargetPurpose
+       with typings.firebaseFirestore.distPrivateMod.TargetPurpose
+       with typings.firebaseFirestore.distLiteFirestoreSrcLocalTargetDataMod.TargetPurpose
+  inline def TargetPurposeExistenceFilterMismatchBloom: TargetPurposeExistenceFilterMismatchBloom = "TargetPurposeExistenceFilterMismatchBloom".asInstanceOf[TargetPurposeExistenceFilterMismatchBloom]
+  
+  @js.native
+  sealed trait TargetPurposeLimboResolution
+    extends StObject
+       with TargetPurpose
+       with typings.firebaseFirestore.distLiteInternalMod.TargetPurpose
+       with typings.firebaseFirestore.distInternalMod.TargetPurpose
+       with typings.firebaseFirestore.distFirestoreSrcLocalTargetDataMod.TargetPurpose
+       with typings.firebaseFirestore.distLitePrivateMod.TargetPurpose
+       with typings.firebaseFirestore.distPackagesFirestoreSrcLocalTargetDataMod.TargetPurpose
+       with typings.firebaseFirestore.distPrivateMod.TargetPurpose
+       with typings.firebaseFirestore.distLiteFirestoreSrcLocalTargetDataMod.TargetPurpose
+  inline def TargetPurposeLimboResolution: TargetPurposeLimboResolution = "TargetPurposeLimboResolution".asInstanceOf[TargetPurposeLimboResolution]
+  
+  @js.native
+  sealed trait TargetPurposeListen
+    extends StObject
+       with TargetPurpose
+       with typings.firebaseFirestore.distLiteInternalMod.TargetPurpose
+       with typings.firebaseFirestore.distInternalMod.TargetPurpose
+       with typings.firebaseFirestore.distFirestoreSrcLocalTargetDataMod.TargetPurpose
+       with typings.firebaseFirestore.distLitePrivateMod.TargetPurpose
+       with typings.firebaseFirestore.distPackagesFirestoreSrcLocalTargetDataMod.TargetPurpose
+       with typings.firebaseFirestore.distPrivateMod.TargetPurpose
+       with typings.firebaseFirestore.distLiteFirestoreSrcLocalTargetDataMod.TargetPurpose
+  inline def TargetPurposeListen: TargetPurposeListen = "TargetPurposeListen".asInstanceOf[TargetPurposeListen]
+  
+  @js.native
   sealed trait Unknown
     extends StObject
        with OnlineState
+       with typings.firebaseFirestore.distLiteInternalMod.OnlineState
        with typings.firebaseFirestore.distInternalMod.OnlineState
        with typings.firebaseFirestore.distLiteFirestoreSrcCoreTypesMod.OnlineState
+       with typings.firebaseFirestore.distLitePrivateMod.OnlineState
        with typings.firebaseFirestore.distPrivateMod.OnlineState
        with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreTypesMod.OnlineState
        with typings.firebaseFirestore.distPackagesFirestoreSrcCoreTypesMod.OnlineState
@@ -1046,12 +1153,29 @@ object firebaseFirestoreStrings {
   inline def `already-exists`: `already-exists` = "already-exists".asInstanceOf[`already-exists`]
   
   @js.native
+  sealed trait and_
+    extends StObject
+       with CompositeOperator
+       with typings.firebaseFirestore.distInternalMod.CompositeOperator
+       with typings.firebaseFirestore.distLiteFirestoreSrcCoreFilterMod.CompositeOperator
+       with typings.firebaseFirestore.distPackagesFirestoreSrcCoreFilterMod.CompositeOperator
+       with typings.firebaseFirestore.distFirestoreSrcCoreFilterMod.CompositeOperator
+       with typings.firebaseFirestore.distLitePrivateMod.CompositeOperator
+       with typings.firebaseFirestore.distPrivateMod.CompositeOperator
+       with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreFilterMod.CompositeOperator
+  inline def and_ : and_ = "and".asInstanceOf[and_]
+  
+  @js.native
   sealed trait `array-contains`
     extends StObject
        with Operator
-       with typings.firebaseFirestore.distPackagesFirestoreSrcCoreTargetMod.Operator
-       with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreTargetMod.Operator
-       with typings.firebaseFirestore.distFirestoreSrcCoreTargetMod.Operator
+       with typings.firebaseFirestore.distInternalMod.Operator
+       with typings.firebaseFirestore.distLiteFirestoreSrcCoreFilterMod.Operator
+       with typings.firebaseFirestore.distPackagesFirestoreSrcCoreFilterMod.Operator
+       with typings.firebaseFirestore.distFirestoreSrcCoreFilterMod.Operator
+       with typings.firebaseFirestore.distLitePrivateMod.Operator
+       with typings.firebaseFirestore.distPrivateMod.Operator
+       with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreFilterMod.Operator
        with WhereFilterOp
        with typings.firebaseFirestore.distLiteInternalMod.WhereFilterOp
        with typings.firebaseFirestore.distLiteFirestoreSrcLiteApiQueryMod.WhereFilterOp
@@ -1068,9 +1192,13 @@ object firebaseFirestoreStrings {
   sealed trait `array-contains-any`
     extends StObject
        with Operator
-       with typings.firebaseFirestore.distPackagesFirestoreSrcCoreTargetMod.Operator
-       with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreTargetMod.Operator
-       with typings.firebaseFirestore.distFirestoreSrcCoreTargetMod.Operator
+       with typings.firebaseFirestore.distInternalMod.Operator
+       with typings.firebaseFirestore.distLiteFirestoreSrcCoreFilterMod.Operator
+       with typings.firebaseFirestore.distPackagesFirestoreSrcCoreFilterMod.Operator
+       with typings.firebaseFirestore.distFirestoreSrcCoreFilterMod.Operator
+       with typings.firebaseFirestore.distLitePrivateMod.Operator
+       with typings.firebaseFirestore.distPrivateMod.Operator
+       with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreFilterMod.Operator
        with WhereFilterOp
        with typings.firebaseFirestore.distLiteInternalMod.WhereFilterOp
        with typings.firebaseFirestore.distLiteFirestoreSrcLiteApiQueryMod.WhereFilterOp
@@ -1087,13 +1215,13 @@ object firebaseFirestoreStrings {
   sealed trait asc
     extends StObject
        with Direction
-       with typings.firebaseFirestore.distLiteFirestoreSrcCoreTargetMod.Direction
+       with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreOrderByMod.Direction
        with typings.firebaseFirestore.distInternalMod.Direction
-       with typings.firebaseFirestore.distPackagesFirestoreSrcCoreTargetMod.Direction
-       with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreTargetMod.Direction
+       with typings.firebaseFirestore.distPackagesFirestoreSrcCoreOrderByMod.Direction
+       with typings.firebaseFirestore.distFirestoreSrcCoreOrderByMod.Direction
+       with typings.firebaseFirestore.distLiteFirestoreSrcCoreOrderByMod.Direction
        with typings.firebaseFirestore.distLitePrivateMod.Direction
        with typings.firebaseFirestore.distPrivateMod.Direction
-       with typings.firebaseFirestore.distFirestoreSrcCoreTargetMod.Direction
        with OrderByDirection
        with typings.firebaseFirestore.distLiteInternalMod.OrderByDirection
        with typings.firebaseFirestore.distLiteFirestoreSrcLiteApiQueryMod.OrderByDirection
@@ -1118,6 +1246,17 @@ object firebaseFirestoreStrings {
        with typings.firebaseFirestore.distLitePrivateMod.TimerId
        with typings.firebaseFirestore.distPrivateMod.TimerId
   inline def async_queue_retry: async_queue_retry = "async_queue_retry".asInstanceOf[async_queue_retry]
+  
+  @js.native
+  sealed trait avg
+    extends StObject
+       with AggregateType
+       with typings.firebaseFirestore.distInternalMod.AggregateType
+       with typings.firebaseFirestore.distPackagesFirestoreSrcCoreAggregateMod.AggregateType
+       with typings.firebaseFirestore.distLiteFirestoreSrcCoreAggregateMod.AggregateType
+       with typings.firebaseFirestore.distFirestoreSrcCoreAggregateMod.AggregateType
+       with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreAggregateMod.AggregateType
+  inline def avg: avg = "avg".asInstanceOf[avg]
   
   @js.native
   sealed trait boolean
@@ -1170,11 +1309,24 @@ object firebaseFirestoreStrings {
   inline def collection: collection = "collection".asInstanceOf[collection]
   
   @js.native
+  sealed trait count
+    extends StObject
+       with AggregateType
+       with typings.firebaseFirestore.distInternalMod.AggregateType
+       with typings.firebaseFirestore.distPackagesFirestoreSrcCoreAggregateMod.AggregateType
+       with typings.firebaseFirestore.distLiteFirestoreSrcCoreAggregateMod.AggregateType
+       with typings.firebaseFirestore.distFirestoreSrcCoreAggregateMod.AggregateType
+       with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreAggregateMod.AggregateType
+  inline def count: count = "count".asInstanceOf[count]
+  
+  @js.native
   sealed trait current_
     extends StObject
        with QueryTargetState
+       with typings.firebaseFirestore.distInternalMod.QueryTargetState
        with typings.firebaseFirestore.distLitePackagesFirestoreSrcLocalSharedClientStateSyncerMod.QueryTargetState
        with typings.firebaseFirestore.distPackagesFirestoreSrcLocalSharedClientStateSyncerMod.QueryTargetState
+       with typings.firebaseFirestore.distLitePrivateMod.QueryTargetState
        with typings.firebaseFirestore.distPrivateMod.QueryTargetState
        with typings.firebaseFirestore.distFirestoreSrcLocalSharedClientStateSyncerMod.QueryTargetState
        with typings.firebaseFirestore.distLiteFirestoreSrcLocalSharedClientStateSyncerMod.QueryTargetState
@@ -1214,13 +1366,13 @@ object firebaseFirestoreStrings {
   sealed trait desc
     extends StObject
        with Direction
-       with typings.firebaseFirestore.distLiteFirestoreSrcCoreTargetMod.Direction
+       with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreOrderByMod.Direction
        with typings.firebaseFirestore.distInternalMod.Direction
-       with typings.firebaseFirestore.distPackagesFirestoreSrcCoreTargetMod.Direction
-       with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreTargetMod.Direction
+       with typings.firebaseFirestore.distPackagesFirestoreSrcCoreOrderByMod.Direction
+       with typings.firebaseFirestore.distFirestoreSrcCoreOrderByMod.Direction
+       with typings.firebaseFirestore.distLiteFirestoreSrcCoreOrderByMod.Direction
        with typings.firebaseFirestore.distLitePrivateMod.Direction
        with typings.firebaseFirestore.distPrivateMod.Direction
-       with typings.firebaseFirestore.distFirestoreSrcCoreTargetMod.Direction
        with OrderByDirection
        with typings.firebaseFirestore.distLiteInternalMod.OrderByDirection
        with typings.firebaseFirestore.distLiteFirestoreSrcLiteApiQueryMod.OrderByDirection
@@ -1300,6 +1452,10 @@ object firebaseFirestoreStrings {
   inline def `firestore-lite`: `firestore-lite` = "firestore-lite".asInstanceOf[`firestore-lite`]
   
   @js.native
+  sealed trait firstParty_ extends StObject
+  inline def firstParty_ : firstParty_ = "firstParty".asInstanceOf[firstParty_]
+  
+  @js.native
   sealed trait function
     extends StObject
        with ValidationType
@@ -1307,10 +1463,6 @@ object firebaseFirestoreStrings {
        with typings.firebaseFirestore.distLiteFirestoreSrcUtilInputValidationMod.ValidationType
        with typings.firebaseFirestore.distLitePackagesFirestoreSrcUtilInputValidationMod.ValidationType
   inline def function: function = "function".asInstanceOf[function]
-  
-  @js.native
-  sealed trait gapi extends StObject
-  inline def gapi: gapi = "gapi".asInstanceOf[gapi]
   
   @js.native
   sealed trait getHighestListenSequenceNumber
@@ -1347,9 +1499,13 @@ object firebaseFirestoreStrings {
   sealed trait in_
     extends StObject
        with Operator
-       with typings.firebaseFirestore.distPackagesFirestoreSrcCoreTargetMod.Operator
-       with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreTargetMod.Operator
-       with typings.firebaseFirestore.distFirestoreSrcCoreTargetMod.Operator
+       with typings.firebaseFirestore.distInternalMod.Operator
+       with typings.firebaseFirestore.distLiteFirestoreSrcCoreFilterMod.Operator
+       with typings.firebaseFirestore.distPackagesFirestoreSrcCoreFilterMod.Operator
+       with typings.firebaseFirestore.distFirestoreSrcCoreFilterMod.Operator
+       with typings.firebaseFirestore.distLitePrivateMod.Operator
+       with typings.firebaseFirestore.distPrivateMod.Operator
+       with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreFilterMod.Operator
        with WhereFilterOp
        with typings.firebaseFirestore.distLiteInternalMod.WhereFilterOp
        with typings.firebaseFirestore.distLiteFirestoreSrcLiteApiQueryMod.WhereFilterOp
@@ -1510,6 +1666,18 @@ object firebaseFirestoreStrings {
   inline def media: media = "media".asInstanceOf[media]
   
   @js.native
+  sealed trait memory extends StObject
+  inline def memory: memory = "memory".asInstanceOf[memory]
+  
+  @js.native
+  sealed trait memoryEager extends StObject
+  inline def memoryEager: memoryEager = "memoryEager".asInstanceOf[memoryEager]
+  
+  @js.native
+  sealed trait memoryLru extends StObject
+  inline def memoryLru: memoryLru = "memoryLru".asInstanceOf[memoryLru]
+  
+  @js.native
   sealed trait modified
     extends StObject
        with DocumentChangeType
@@ -1556,8 +1724,10 @@ object firebaseFirestoreStrings {
   sealed trait `not-current`
     extends StObject
        with QueryTargetState
+       with typings.firebaseFirestore.distInternalMod.QueryTargetState
        with typings.firebaseFirestore.distLitePackagesFirestoreSrcLocalSharedClientStateSyncerMod.QueryTargetState
        with typings.firebaseFirestore.distPackagesFirestoreSrcLocalSharedClientStateSyncerMod.QueryTargetState
+       with typings.firebaseFirestore.distLitePrivateMod.QueryTargetState
        with typings.firebaseFirestore.distPrivateMod.QueryTargetState
        with typings.firebaseFirestore.distFirestoreSrcLocalSharedClientStateSyncerMod.QueryTargetState
        with typings.firebaseFirestore.distLiteFirestoreSrcLocalSharedClientStateSyncerMod.QueryTargetState
@@ -1582,9 +1752,13 @@ object firebaseFirestoreStrings {
   sealed trait `not-in`
     extends StObject
        with Operator
-       with typings.firebaseFirestore.distPackagesFirestoreSrcCoreTargetMod.Operator
-       with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreTargetMod.Operator
-       with typings.firebaseFirestore.distFirestoreSrcCoreTargetMod.Operator
+       with typings.firebaseFirestore.distInternalMod.Operator
+       with typings.firebaseFirestore.distLiteFirestoreSrcCoreFilterMod.Operator
+       with typings.firebaseFirestore.distPackagesFirestoreSrcCoreFilterMod.Operator
+       with typings.firebaseFirestore.distFirestoreSrcCoreFilterMod.Operator
+       with typings.firebaseFirestore.distLitePrivateMod.Operator
+       with typings.firebaseFirestore.distPrivateMod.Operator
+       with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreFilterMod.Operator
        with WhereFilterOp
        with typings.firebaseFirestore.distLiteInternalMod.WhereFilterOp
        with typings.firebaseFirestore.distLiteFirestoreSrcLiteApiQueryMod.WhereFilterOp
@@ -1647,6 +1821,19 @@ object firebaseFirestoreStrings {
   inline def open: open = "open".asInstanceOf[open]
   
   @js.native
+  sealed trait or_
+    extends StObject
+       with CompositeOperator
+       with typings.firebaseFirestore.distInternalMod.CompositeOperator
+       with typings.firebaseFirestore.distLiteFirestoreSrcCoreFilterMod.CompositeOperator
+       with typings.firebaseFirestore.distPackagesFirestoreSrcCoreFilterMod.CompositeOperator
+       with typings.firebaseFirestore.distFirestoreSrcCoreFilterMod.CompositeOperator
+       with typings.firebaseFirestore.distLitePrivateMod.CompositeOperator
+       with typings.firebaseFirestore.distPrivateMod.CompositeOperator
+       with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreFilterMod.CompositeOperator
+  inline def or_ : or_ = "or".asInstanceOf[or_]
+  
+  @js.native
   sealed trait orderBy
     extends StObject
        with QueryConstraintType
@@ -1701,6 +1888,14 @@ object firebaseFirestoreStrings {
   inline def `permission-denied`: `permission-denied` = "permission-denied".asInstanceOf[`permission-denied`]
   
   @js.native
+  sealed trait persistent extends StObject
+  inline def persistent: persistent = "persistent".asInstanceOf[persistent]
+  
+  @js.native
+  sealed trait persistentSingleTab extends StObject
+  inline def persistentSingleTab: persistentSingleTab = "persistentSingleTab".asInstanceOf[persistentSingleTab]
+  
+  @js.native
   sealed trait previous
     extends StObject
        with ServerTimestampBehavior
@@ -1747,8 +1942,10 @@ object firebaseFirestoreStrings {
   sealed trait readonly
     extends StObject
        with PersistenceTransactionMode
+       with typings.firebaseFirestore.distLiteFirestoreSrcLocalPersistenceTransactionMod.PersistenceTransactionMode
        with typings.firebaseFirestore.distInternalMod.PersistenceTransactionMode
        with typings.firebaseFirestore.distPackagesFirestoreSrcLocalPersistenceTransactionMod.PersistenceTransactionMode
+       with typings.firebaseFirestore.distLitePrivateMod.PersistenceTransactionMode
        with typings.firebaseFirestore.distPrivateMod.PersistenceTransactionMode
        with typings.firebaseFirestore.distFirestoreSrcLocalPersistenceTransactionMod.PersistenceTransactionMode
        with typings.firebaseFirestore.distLitePackagesFirestoreSrcLocalPersistenceTransactionMod.PersistenceTransactionMode
@@ -1762,8 +1959,10 @@ object firebaseFirestoreStrings {
   sealed trait readwrite
     extends StObject
        with PersistenceTransactionMode
+       with typings.firebaseFirestore.distLiteFirestoreSrcLocalPersistenceTransactionMod.PersistenceTransactionMode
        with typings.firebaseFirestore.distInternalMod.PersistenceTransactionMode
        with typings.firebaseFirestore.distPackagesFirestoreSrcLocalPersistenceTransactionMod.PersistenceTransactionMode
+       with typings.firebaseFirestore.distLitePrivateMod.PersistenceTransactionMode
        with typings.firebaseFirestore.distPrivateMod.PersistenceTransactionMode
        with typings.firebaseFirestore.distFirestoreSrcLocalPersistenceTransactionMod.PersistenceTransactionMode
        with typings.firebaseFirestore.distLitePackagesFirestoreSrcLocalPersistenceTransactionMod.PersistenceTransactionMode
@@ -1777,8 +1976,10 @@ object firebaseFirestoreStrings {
   sealed trait `readwrite-primary`
     extends StObject
        with PersistenceTransactionMode
+       with typings.firebaseFirestore.distLiteFirestoreSrcLocalPersistenceTransactionMod.PersistenceTransactionMode
        with typings.firebaseFirestore.distInternalMod.PersistenceTransactionMode
        with typings.firebaseFirestore.distPackagesFirestoreSrcLocalPersistenceTransactionMod.PersistenceTransactionMode
+       with typings.firebaseFirestore.distLitePrivateMod.PersistenceTransactionMode
        with typings.firebaseFirestore.distPrivateMod.PersistenceTransactionMode
        with typings.firebaseFirestore.distFirestoreSrcLocalPersistenceTransactionMod.PersistenceTransactionMode
        with typings.firebaseFirestore.distLitePackagesFirestoreSrcLocalPersistenceTransactionMod.PersistenceTransactionMode
@@ -1792,8 +1993,10 @@ object firebaseFirestoreStrings {
        with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreTypesMod.MutationBatchState
        with typings.firebaseFirestore.distPackagesFirestoreSrcCoreTypesMod.MutationBatchState
        with QueryTargetState
+       with typings.firebaseFirestore.distInternalMod.QueryTargetState
        with typings.firebaseFirestore.distLitePackagesFirestoreSrcLocalSharedClientStateSyncerMod.QueryTargetState
        with typings.firebaseFirestore.distPackagesFirestoreSrcLocalSharedClientStateSyncerMod.QueryTargetState
+       with typings.firebaseFirestore.distLitePrivateMod.QueryTargetState
        with typings.firebaseFirestore.distPrivateMod.QueryTargetState
        with typings.firebaseFirestore.distFirestoreSrcLocalSharedClientStateSyncerMod.QueryTargetState
        with typings.firebaseFirestore.distLiteFirestoreSrcLocalSharedClientStateSyncerMod.QueryTargetState
@@ -1864,6 +2067,17 @@ object firebaseFirestoreStrings {
        with typings.firebaseFirestore.distLiteFirestoreSrcUtilInputValidationMod.ValidationType
        with typings.firebaseFirestore.distLitePackagesFirestoreSrcUtilInputValidationMod.ValidationType
   inline def string: string = "string".asInstanceOf[string]
+  
+  @js.native
+  sealed trait sum
+    extends StObject
+       with AggregateType
+       with typings.firebaseFirestore.distInternalMod.AggregateType
+       with typings.firebaseFirestore.distPackagesFirestoreSrcCoreAggregateMod.AggregateType
+       with typings.firebaseFirestore.distLiteFirestoreSrcCoreAggregateMod.AggregateType
+       with typings.firebaseFirestore.distFirestoreSrcCoreAggregateMod.AggregateType
+       with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreAggregateMod.AggregateType
+  inline def sum: sum = "sum".asInstanceOf[sum]
   
   @js.native
   sealed trait transaction_retry

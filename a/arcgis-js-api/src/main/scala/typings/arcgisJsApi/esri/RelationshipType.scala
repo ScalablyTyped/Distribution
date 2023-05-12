@@ -10,30 +10,9 @@ trait RelationshipType
      with GraphObjectType {
   
   /**
-    * Specifies the [entity types](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-EntityType.html) can be the destination of this relationship type.
+    * Specifies valid origin and destination [entity type](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-EntityType.html) pairs for this relationship.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-RelationshipType.html#destinationEntityTypes)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-RelationshipType.html#endPoints)
     */
-  var destinationEntityTypes: js.Array[String] = js.native
-  
-  /**
-    * Specifies the [entity types](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-EntityType.html) that can be the origin of this relationship type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-RelationshipType.html#originEntityTypes)
-    */
-  var originEntityTypes: js.Array[String] = js.native
-  
-  /**
-    * Indicates whether the destination [entity types](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-EntityType.html) for the relationship can be changed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-RelationshipType.html#strictDestination)
-    */
-  var strictDestination: Boolean = js.native
-  
-  /**
-    * Indicates whether the origin [entity types](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-EntityType.html) for the relationship can be changed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-RelationshipType.html#strictOrigin)
-    */
-  var strictOrigin: Boolean = js.native
+  var endPoints: js.Array[RelationshipTypeEndPoints] = js.native
 }

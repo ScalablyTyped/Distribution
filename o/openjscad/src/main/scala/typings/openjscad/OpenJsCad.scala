@@ -1,7 +1,7 @@
 package typings.openjscad
 
 import typings.std.Event
-import typings.three.mod.Object3D
+import typings.three.buildThreeDotmoduleDotminMod.Object3D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

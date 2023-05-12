@@ -1,7 +1,7 @@
 
 # Scala.js typings for google-gax
 
-Typings are for version 3.5.2
+Typings are for version 3.6.0
 
 ## Library description:
 Google API Extensions

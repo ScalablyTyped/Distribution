@@ -12,8 +12,8 @@ trait TimeOffReason
   var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
-    * Supported icon types: none; car; calendar; running; plane; firstAid; doctor; notWorking; clock; juryDuty; globe; cup;
-    * phone; weather; umbrella; piggyBank; dog; cake; trafficCone; pin; sunny. Required.
+    * Supported icon types are: none, car, calendar, running, plane, firstAid, doctor, notWorking, clock, juryDuty, globe,
+    * cup, phone, weather, umbrella, piggyBank, dog, cake, trafficCone, pin, sunny. Required.
     */
   var iconType: js.UndefOr[NullableOption[TimeOffReasonIconType]] = js.undefined
   

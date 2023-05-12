@@ -16,10 +16,10 @@ open class ElementInputEvent protected () extends StObject {
     *
     * @param {MouseEvent|TouchEvent} event - The MouseEvent or TouchEvent that was originally
     * raised.
-    * @param {ElementComponent} element - The ElementComponent that this event was originally
-    * raised on.
-    * @param {CameraComponent} camera - The CameraComponent that this event was originally raised
-    * via.
+    * @param {import('../components/element/component.js').ElementComponent} element - The
+    * ElementComponent that this event was originally raised on.
+    * @param {import('../components/camera/component.js').CameraComponent} camera - The
+    * CameraComponent that this event was originally raised via.
     */
   def this(event: typings.std.MouseEvent, element: ElementComponent, camera: CameraComponent) = this()
   def this(event: typings.std.TouchEvent, element: ElementComponent, camera: CameraComponent) = this()
@@ -29,14 +29,14 @@ open class ElementInputEvent protected () extends StObject {
   /**
     * The CameraComponent that this event was originally raised via.
     *
-    * @type {CameraComponent}
+    * @type {import('../components/camera/component.js').CameraComponent}
     */
   var camera: CameraComponent = js.native
   
   /**
     * The ElementComponent that this event was originally raised on.
     *
-    * @type {ElementComponent}
+    * @type {import('../components/element/component.js').ElementComponent}
     */
   var element: ElementComponent = js.native
   

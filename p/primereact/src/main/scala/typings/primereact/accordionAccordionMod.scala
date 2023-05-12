@@ -103,10 +103,14 @@ object accordionAccordionMod {
     def this(props: AccordionProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: AccordionProps, context: Any) = this()
     
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
   }
   
@@ -116,33 +120,9 @@ object accordionAccordionMod {
     def this(props: AccordionTabProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: AccordionTabProps, context: Any) = this()
-  }
-  
-  type AccordionActiveIndexType = js.UndefOr[Double | js.Array[Double] | Null]
-  
-  trait AccordionEventParams extends StObject {
-    
-    var index: Double
-    
-    var originalEvent: MouseEvent[HTMLElement, NativeMouseEvent]
-  }
-  object AccordionEventParams {
-    
-    inline def apply(index: Double, originalEvent: MouseEvent[HTMLElement, NativeMouseEvent]): AccordionEventParams = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any])
-      __obj.asInstanceOf[AccordionEventParams]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: AccordionEventParams] (val x: Self) extends AnyVal {
-      
-      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
-      
-      inline def setOriginalEvent(value: MouseEvent[HTMLElement, NativeMouseEvent]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
-    }
   }
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
@@ -152,7 +132,11 @@ object accordionAccordionMod {
     
     var accessKey: js.UndefOr[String] = js.undefined
     
-    var activeIndex: js.UndefOr[AccordionActiveIndexType] = js.undefined
+    /**
+      * Active index or indexes of the element. Use an array of numbers for multiple indexes.
+      * The {@link multiple} prop must be set to true in order to specify multiple indexes.
+      */
+    var activeIndex: js.UndefOr[Double | js.Array[Double] | Null] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
@@ -256,17 +240,28 @@ object accordionAccordionMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * Icon of an expanded tab.
+      */
     var collapseIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<AccordionProps> */ Any
       ] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -284,6 +279,9 @@ object accordionAccordionMod {
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
+    /**
+      * Icon of a collapsed tab.
+      */
     var expandIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<AccordionProps> */ Any
       ] = js.undefined
@@ -312,6 +310,10 @@ object accordionAccordionMod {
     
     var lang: js.UndefOr[String] = js.undefined
     
+    /**
+      * When enabled, multiple tabs can be activated at the same time.
+      * @defaultValue false
+      */
     var multiple: js.UndefOr[Boolean] = js.undefined
     
     var nonce: js.UndefOr[String] = js.undefined
@@ -458,11 +460,23 @@ object accordionAccordionMod {
     
     var onSuspend: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onTabChange: js.UndefOr[js.Function1[/* e */ AccordionEventParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when state of the accordion changes.
+      * @param {AccordionTabChangeEvent} event - Custom tab close event.
+      */
+    var onTabChange: js.UndefOr[js.Function1[/* event */ AccordionTabChangeEvent, Unit]] = js.undefined
     
-    var onTabClose: js.UndefOr[js.Function1[/* e */ AccordionEventParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when an active tab is collapsed by clicking on the header.
+      * @param {AccordionTabCloseEvent} event - Custom tab close event.
+      */
+    var onTabClose: js.UndefOr[js.Function1[/* event */ AccordionTabCloseEvent, Unit]] = js.undefined
     
-    var onTabOpen: js.UndefOr[js.Function1[/* e */ AccordionEventParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when a tab gets expanded.
+      * @param {AccordionTabOpenEvent} event - Custom tab open event.
+      */
+    var onTabOpen: js.UndefOr[js.Function1[/* event */ AccordionTabOpenEvent, Unit]] = js.undefined
     
     var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
@@ -490,9 +504,13 @@ object accordionAccordionMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -512,6 +530,10 @@ object accordionAccordionMod {
     
     var title: js.UndefOr[String] = js.undefined
     
+    /**
+      * The properties of CSSTransition can be customized, except for "nodeRef" and "in" properties.
+      * @type {CSSTransitionProps}
+      */
     var transitionOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSTransitionProps */ Any
       ] = js.undefined
@@ -542,7 +564,7 @@ object accordionAccordionMod {
       
       inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      inline def setActiveIndex(value: AccordionActiveIndexType): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
+      inline def setActiveIndex(value: Double | js.Array[Double]): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
       
       inline def setActiveIndexNull: Self = StObject.set(x, "activeIndex", null)
       
@@ -752,6 +774,10 @@ object accordionAccordionMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -774,9 +800,13 @@ object accordionAccordionMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -1156,15 +1186,15 @@ object accordionAccordionMod {
       
       inline def setOnSuspendUndefined: Self = StObject.set(x, "onSuspend", js.undefined)
       
-      inline def setOnTabChange(value: /* e */ AccordionEventParams => Unit): Self = StObject.set(x, "onTabChange", js.Any.fromFunction1(value))
+      inline def setOnTabChange(value: /* event */ AccordionTabChangeEvent => Unit): Self = StObject.set(x, "onTabChange", js.Any.fromFunction1(value))
       
       inline def setOnTabChangeUndefined: Self = StObject.set(x, "onTabChange", js.undefined)
       
-      inline def setOnTabClose(value: /* e */ AccordionEventParams => Unit): Self = StObject.set(x, "onTabClose", js.Any.fromFunction1(value))
+      inline def setOnTabClose(value: /* event */ AccordionTabCloseEvent => Unit): Self = StObject.set(x, "onTabClose", js.Any.fromFunction1(value))
       
       inline def setOnTabCloseUndefined: Self = StObject.set(x, "onTabClose", js.undefined)
       
-      inline def setOnTabOpen(value: /* e */ AccordionEventParams => Unit): Self = StObject.set(x, "onTabOpen", js.Any.fromFunction1(value))
+      inline def setOnTabOpen(value: /* event */ AccordionTabOpenEvent => Unit): Self = StObject.set(x, "onTabOpen", js.Any.fromFunction1(value))
       
       inline def setOnTabOpenUndefined: Self = StObject.set(x, "onTabOpen", js.undefined)
       
@@ -1220,6 +1250,10 @@ object accordionAccordionMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1227,6 +1261,10 @@ object accordionAccordionMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1288,30 +1326,128 @@ object accordionAccordionMod {
     }
   }
   
-  type AccordionTabHeaderTemplateType = ReactNode | (js.Function1[/* props */ AccordionTabProps, ReactNode])
+  trait AccordionTabChangeEvent extends StObject {
+    
+    /**
+      * Opened tab index.
+      */
+    var index: Double | js.Array[Double]
+    
+    /**
+      * Browser mouse event.
+      */
+    var originalEvent: MouseEvent[HTMLElement, NativeMouseEvent]
+  }
+  object AccordionTabChangeEvent {
+    
+    inline def apply(index: Double | js.Array[Double], originalEvent: MouseEvent[HTMLElement, NativeMouseEvent]): AccordionTabChangeEvent = {
+      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AccordionTabChangeEvent]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionTabChangeEvent] (val x: Self) extends AnyVal {
+      
+      inline def setIndex(value: Double | js.Array[Double]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      
+      inline def setIndexVarargs(value: Double*): Self = StObject.set(x, "index", js.Array(value*))
+      
+      inline def setOriginalEvent(value: MouseEvent[HTMLElement, NativeMouseEvent]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    }
+  }
   
+  type AccordionTabCloseEvent = AccordionTabOpenEvent
+  
+  trait AccordionTabOpenEvent extends StObject {
+    
+    /**
+      * Opened tab index.
+      */
+    var index: Double
+    
+    /**
+      * Browser mouse event.
+      */
+    var originalEvent: MouseEvent[HTMLElement, NativeMouseEvent]
+  }
+  object AccordionTabOpenEvent {
+    
+    inline def apply(index: Double, originalEvent: MouseEvent[HTMLElement, NativeMouseEvent]): AccordionTabOpenEvent = {
+      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AccordionTabOpenEvent]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionTabOpenEvent] (val x: Self) extends AnyVal {
+      
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      
+      inline def setOriginalEvent(value: MouseEvent[HTMLElement, NativeMouseEvent]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /**
+    * Defines valid properties in AccordionTab component.
+    * @group Properties
+    */
   trait AccordionTabProps extends StObject {
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * Style class of the tab header and content.
+      */
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * Style class of the tab content.
+      */
     var contentClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Inline style of the tab content.
+      */
     var contentStyle: js.UndefOr[CSSProperties] = js.undefined
     
+    /**
+      * Whether the tab is disabled.
+      * @defaultValue false
+      */
     var disabled: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Used to define the header of the tab.
+      */
     var header: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * Style class of the tab header.
+      */
     var headerClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Inline style of the tab header.
+      */
     var headerStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var headerTemplate: js.UndefOr[AccordionTabHeaderTemplateType] = js.undefined
+    /**
+      * Custom header template of the tab.
+      */
+    var headerTemplate: js.UndefOr[ReactNode | (js.Function1[/* props */ this.type, ReactNode])] = js.undefined
     
+    /**
+      * Inline style of the tab header and content.
+      */
     var style: js.UndefOr[CSSProperties] = js.undefined
     
+    /**
+      * Index of the element in tabbing order.
+      * @defaultValue 0
+      */
     var tabIndex: js.UndefOr[Double] = js.undefined
   }
   object AccordionTabProps {
@@ -1354,9 +1490,9 @@ object accordionAccordionMod {
       
       inline def setHeaderStyleUndefined: Self = StObject.set(x, "headerStyle", js.undefined)
       
-      inline def setHeaderTemplate(value: AccordionTabHeaderTemplateType): Self = StObject.set(x, "headerTemplate", value.asInstanceOf[js.Any])
+      inline def setHeaderTemplate(value: ReactNode | (js.Function1[AccordionTabProps, ReactNode])): Self = StObject.set(x, "headerTemplate", value.asInstanceOf[js.Any])
       
-      inline def setHeaderTemplateFunction1(value: /* props */ AccordionTabProps => ReactNode): Self = StObject.set(x, "headerTemplate", js.Any.fromFunction1(value))
+      inline def setHeaderTemplateFunction1(value: AccordionTabProps => ReactNode): Self = StObject.set(x, "headerTemplate", js.Any.fromFunction1(value))
       
       inline def setHeaderTemplateUndefined: Self = StObject.set(x, "headerTemplate", js.undefined)
       

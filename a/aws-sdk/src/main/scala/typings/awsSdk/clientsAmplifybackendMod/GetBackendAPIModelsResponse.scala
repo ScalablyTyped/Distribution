@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetBackendAPIModelsResponse extends StObject {
   
   /**
+    * Stringified JSON of the model introspection schema for an existing backend API resource.
+    */
+  var ModelIntrospectionSchema: js.UndefOr[string] = js.undefined
+  
+  /**
     * Stringified JSON of the datastore model.
     */
   var Models: js.UndefOr[string] = js.undefined
@@ -25,6 +30,10 @@ object GetBackendAPIModelsResponse {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: GetBackendAPIModelsResponse] (val x: Self) extends AnyVal {
+    
+    inline def setModelIntrospectionSchema(value: string): Self = StObject.set(x, "ModelIntrospectionSchema", value.asInstanceOf[js.Any])
+    
+    inline def setModelIntrospectionSchemaUndefined: Self = StObject.set(x, "ModelIntrospectionSchema", js.undefined)
     
     inline def setModels(value: string): Self = StObject.set(x, "Models", value.asInstanceOf[js.Any])
     

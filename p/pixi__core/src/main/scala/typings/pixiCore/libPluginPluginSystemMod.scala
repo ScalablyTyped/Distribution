@@ -15,7 +15,7 @@ object libPluginPluginSystemMod {
   @js.native
   open class PluginSystem protected ()
     extends StObject
-       with ISystem[IRendererPlugins, Null] {
+       with ISystem[Null, Null] {
     def this(renderer: IRenderer[ICanvas]) = this()
     
     @JSName("destroy")
@@ -24,10 +24,9 @@ object libPluginPluginSystemMod {
     /**
       * Initialize the plugins.
       * @protected
-      * @param {object} staticMap - The dictionary of statically saved plugins.
       */
     @JSName("init")
-    def init_MPluginSystem(staticMap: IRendererPlugins): Unit = js.native
+    def init_MPluginSystem(): Unit = js.native
     
     /**
       * Collection of plugins.
@@ -37,6 +36,9 @@ object libPluginPluginSystemMod {
     val plugins: IRendererPlugins = js.native
     
     /* private */ var renderer: Any = js.native
+    
+    /** @ignore */
+    var rendererPlugins: IRendererPlugins = js.native
   }
   /* static members */
   object PluginSystem {

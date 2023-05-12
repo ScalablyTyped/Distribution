@@ -29,7 +29,7 @@ trait DeleteThemeAliasResponse extends StObject {
   /**
     * An ID for the theme associated with the deletion.
     */
-  var ThemeId: js.UndefOr[RestrictiveResourceId] = js.undefined
+  var ThemeId: js.UndefOr[ShortRestrictiveResourceId] = js.undefined
 }
 object DeleteThemeAliasResponse {
   
@@ -57,7 +57,7 @@ object DeleteThemeAliasResponse {
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    inline def setThemeId(value: RestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
+    inline def setThemeId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
     
     inline def setThemeIdUndefined: Self = StObject.set(x, "ThemeId", js.undefined)
   }

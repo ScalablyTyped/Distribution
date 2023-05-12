@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetResolverConfigResponse extends StObject {
   
   /**
-    * Information about the behavior configuration of Route 53 Resolver behavior for the VPC you specified in the GetResolverConfig request.
+    * Information about the behavior configuration of Route 53 Resolver behavior for the VPC you specified in the GetResolverConfig request.
     */
   var ResolverConfig: js.UndefOr[typings.awsSdk.clientsRoute53resolverMod.ResolverConfig] = js.undefined
 }

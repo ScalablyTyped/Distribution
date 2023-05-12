@@ -17,7 +17,7 @@ trait ToRelativeOptions extends StObject {
   
   /**
     * Padding in milliseconds. This allows you to round up the result if it fits inside the threshold.
-    * Don't use in combination with {round: false} because the decimal output will include the padding.
+    * Do not use this in combination with `{round: false}` because the decimal output will include the padding.
     * @default 0
     */
   var padding: js.UndefOr[Double] = js.undefined

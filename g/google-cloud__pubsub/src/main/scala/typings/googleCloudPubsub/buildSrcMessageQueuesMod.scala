@@ -1,6 +1,7 @@
 package typings.googleCloudPubsub
 
 import typings.googleCloudPubsub.anon.ToError
+import typings.googleCloudPubsub.buildSrcDebugMod.DebugMessage
 import typings.googleCloudPubsub.buildSrcExponentialRetryMod.ExponentialRetry
 import typings.googleCloudPubsub.buildSrcSubscriberMod.Message
 import typings.googleCloudPubsub.buildSrcSubscriberMod.Subscriber
@@ -9,7 +10,6 @@ import typings.googleGax.mod.GoogleError
 import typings.grpcGrpcJs.buildSrcConstantsMod.Status
 import typings.node.timersMod.global.NodeJS.Timer
 import typings.pDefer.mod.DeferredPromise
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,9 +25,7 @@ object buildSrcMessageQueuesMod {
   
   @JSImport("@google-cloud/pubsub/build/src/message-queues", "BatchError")
   @js.native
-  open class BatchError protected ()
-    extends StObject
-       with Error {
+  open class BatchError protected () extends DebugMessage {
     def this(err: GoogleError, ackIds: js.Array[String], rpc: String) = this()
     
     var ackIds: js.Array[String] = js.native
@@ -35,14 +33,6 @@ object buildSrcMessageQueuesMod {
     var code: Status = js.native
     
     var details: String = js.native
-    
-    /* standard es5 */
-    /* CompleteClass */
-    var message: String = js.native
-    
-    /* standard es5 */
-    /* CompleteClass */
-    var name: String = js.native
   }
   
   /* note: abstract class */ @JSImport("@google-cloud/pubsub/build/src/message-queues", "MessageQueue")

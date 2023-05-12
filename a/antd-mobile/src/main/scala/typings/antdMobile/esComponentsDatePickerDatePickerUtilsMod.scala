@@ -1,8 +1,8 @@
 package typings.antdMobile
 
 import typings.antdMobile.anon.Date
+import typings.antdMobile.esComponentsDatePickerViewDatePickerViewMod.RenderLabel
 import typings.antdMobile.esComponentsPickerViewPickerViewMod.PickerColumn
-import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,25 +17,41 @@ object esComponentsDatePickerDatePickerUtilsMod {
   inline def convertDateToStringArray(date: Null, precision: Precision): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertDateToStringArray")(date.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   inline def convertDateToStringArray(date: Unit, precision: Precision): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertDateToStringArray")(date.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  inline def convertStringArrayToDate(value: js.Array[js.UndefOr[String | Null]], precision: Precision): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("convertStringArrayToDate")(value.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[js.Date]
-  
-  inline def defaultRenderLabel(precision: Precision, data: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultRenderLabel")(precision.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def convertStringArrayToDate[T /* <: js.UndefOr[String | Double | Null] */](value: js.Array[T], precision: Precision): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("convertStringArrayToDate")(value.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[js.Date]
   
   inline def generateDatePickerColumns(
     selected: js.Array[String],
     min: js.Date,
     max: js.Date,
     precision: Precision,
-    renderLabel: js.Function2[/* type */ Precision, /* data */ Double, ReactNode]
+    renderLabel: RenderLabel
   ): js.Array[PickerColumn] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateDatePickerColumns")(selected.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], precision.asInstanceOf[js.Any], renderLabel.asInstanceOf[js.Any])).asInstanceOf[js.Array[PickerColumn]]
   inline def generateDatePickerColumns(
     selected: js.Array[String],
     min: js.Date,
     max: js.Date,
     precision: Precision,
-    renderLabel: js.Function2[/* type */ Precision, /* data */ Double, ReactNode],
+    renderLabel: RenderLabel,
+    filter: Unit,
+    tillNow: Boolean
+  ): js.Array[PickerColumn] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateDatePickerColumns")(selected.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], precision.asInstanceOf[js.Any], renderLabel.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], tillNow.asInstanceOf[js.Any])).asInstanceOf[js.Array[PickerColumn]]
+  inline def generateDatePickerColumns(
+    selected: js.Array[String],
+    min: js.Date,
+    max: js.Date,
+    precision: Precision,
+    renderLabel: RenderLabel,
     filter: DatePickerFilter
   ): js.Array[PickerColumn] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateDatePickerColumns")(selected.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], precision.asInstanceOf[js.Any], renderLabel.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Array[PickerColumn]]
+  inline def generateDatePickerColumns(
+    selected: js.Array[String],
+    min: js.Date,
+    max: js.Date,
+    precision: Precision,
+    renderLabel: RenderLabel,
+    filter: DatePickerFilter,
+    tillNow: Boolean
+  ): js.Array[PickerColumn] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateDatePickerColumns")(selected.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], precision.asInstanceOf[js.Any], renderLabel.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], tillNow.asInstanceOf[js.Any])).asInstanceOf[js.Array[PickerColumn]]
   
   /* Inlined std.Partial<std.Record<antd-mobile.antd-mobile/es/components/date-picker/date-picker-utils.Precision, (val : number, extend : {  date :std.Date}): boolean>> */
   trait DatePickerFilter extends StObject {

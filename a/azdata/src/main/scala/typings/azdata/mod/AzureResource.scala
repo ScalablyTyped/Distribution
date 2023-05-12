@@ -59,6 +59,15 @@ object AzureResource extends StObject {
   /* 9 */ val AzureStorage: typings.azdata.mod.AzureResource.AzureStorage & Double = js.native
   
   /**
+    * Represents custom resource URIs as received from server endpoint.
+    */
+  @js.native
+  sealed trait Custom
+    extends StObject
+       with AzureResource
+  /* 12 */ val Custom: typings.azdata.mod.AzureResource.Custom & Double = js.native
+  
+  /**
     * Azure AD Graph
     */
   @js.native

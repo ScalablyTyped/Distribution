@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.TransitionDuration
+import typings.csstype.mod.Property.WebkitMaskOrigin
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `76` extends StObject {
   
   var value: js.UndefOr[
-    TransitionDuration[String] | (js.Array[
+    WebkitMaskOrigin | (js.Array[
       (Extract[
-        js.UndefOr[
-          TransitionDuration[String] | js.Array[NonNullable[js.UndefOr[TransitionDuration[String]]]]
-        ], 
+        js.UndefOr[WebkitMaskOrigin | js.Array[NonNullable[js.UndefOr[WebkitMaskOrigin]]]], 
         String
-      ]) | NonNullable[js.UndefOr[TransitionDuration[String]]]
+      ]) | NonNullable[js.UndefOr[WebkitMaskOrigin]]
     ])
   ] = js.native
 }

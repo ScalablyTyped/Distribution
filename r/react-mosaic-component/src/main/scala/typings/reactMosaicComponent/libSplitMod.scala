@@ -18,7 +18,7 @@ object libSplitMod {
     def this(props: SplitProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SplitProps, context: Any) = this()
     

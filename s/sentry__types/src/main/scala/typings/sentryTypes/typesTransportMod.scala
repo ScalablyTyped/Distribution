@@ -4,6 +4,7 @@ import typings.sentryTypes.anon.Dictkey
 import typings.sentryTypes.typesClientreportMod.EventDropReason
 import typings.sentryTypes.typesDatacategoryMod.DataCategory
 import typings.sentryTypes.typesEnvelopeMod.Envelope
+import typings.sentryTypes.typesEventMod.Event
 import typings.sentryTypes.typesTextencoderMod.TextEncoderInternal
 import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
@@ -20,8 +21,11 @@ object typesTransportMod {
   }
   object BaseTransportOptions {
     
-    inline def apply(recordDroppedEvent: (EventDropReason, DataCategory) => Unit, url: String): BaseTransportOptions = {
-      val __obj = js.Dynamic.literal(recordDroppedEvent = js.Any.fromFunction2(recordDroppedEvent), url = url.asInstanceOf[js.Any])
+    inline def apply(
+      recordDroppedEvent: (/* reason */ EventDropReason, /* dataCategory */ DataCategory, /* event */ js.UndefOr[Event]) => Unit,
+      url: String
+    ): BaseTransportOptions = {
+      val __obj = js.Dynamic.literal(recordDroppedEvent = js.Any.fromFunction3(recordDroppedEvent), url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseTransportOptions]
     }
     
@@ -37,13 +41,23 @@ object typesTransportMod {
     var bufferSize: js.UndefOr[Double] = js.undefined
     
     def recordDroppedEvent(reason: EventDropReason, dataCategory: DataCategory): Unit
+    def recordDroppedEvent(reason: EventDropReason, dataCategory: DataCategory, event: Event): Unit
+    @JSName("recordDroppedEvent")
+    var recordDroppedEvent_Original: js.Function3[
+        /* reason */ EventDropReason, 
+        /* dataCategory */ DataCategory, 
+        /* event */ js.UndefOr[Event], 
+        Unit
+      ]
     
     var textEncoder: js.UndefOr[TextEncoderInternal] = js.undefined
   }
   object InternalBaseTransportOptions {
     
-    inline def apply(recordDroppedEvent: (EventDropReason, DataCategory) => Unit): InternalBaseTransportOptions = {
-      val __obj = js.Dynamic.literal(recordDroppedEvent = js.Any.fromFunction2(recordDroppedEvent))
+    inline def apply(
+      recordDroppedEvent: (/* reason */ EventDropReason, /* dataCategory */ DataCategory, /* event */ js.UndefOr[Event]) => Unit
+    ): InternalBaseTransportOptions = {
+      val __obj = js.Dynamic.literal(recordDroppedEvent = js.Any.fromFunction3(recordDroppedEvent))
       __obj.asInstanceOf[InternalBaseTransportOptions]
     }
     
@@ -54,7 +68,9 @@ object typesTransportMod {
       
       inline def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
       
-      inline def setRecordDroppedEvent(value: (EventDropReason, DataCategory) => Unit): Self = StObject.set(x, "recordDroppedEvent", js.Any.fromFunction2(value))
+      inline def setRecordDroppedEvent(
+        value: (/* reason */ EventDropReason, /* dataCategory */ DataCategory, /* event */ js.UndefOr[Event]) => Unit
+      ): Self = StObject.set(x, "recordDroppedEvent", js.Any.fromFunction3(value))
       
       inline def setTextEncoder(value: TextEncoderInternal): Self = StObject.set(x, "textEncoder", value.asInstanceOf[js.Any])
       
@@ -68,7 +84,7 @@ object typesTransportMod {
     def flush(): PromiseLike[Boolean] = js.native
     def flush(timeout: Double): PromiseLike[Boolean] = js.native
     
-    def send(request: Envelope): PromiseLike[Unit] = js.native
+    def send(request: Envelope): PromiseLike[Unit | TransportMakeRequestResponse] = js.native
   }
   
   trait TransportMakeRequestResponse extends StObject {

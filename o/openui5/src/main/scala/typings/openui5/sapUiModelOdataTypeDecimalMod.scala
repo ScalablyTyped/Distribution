@@ -17,16 +17,16 @@ object sapUiModelOdataTypeDecimalMod {
     */
   open class default () extends Decimal {
     def this(/**
-      * format options as defined in {@link sap.ui.core.format.NumberFormat}. In contrast to NumberFormat `groupingEnabled`
-      * defaults to `true`. Note that `maxFractionDigits` and `minFractionDigits` are set to the value of the
-      * constraint `scale` unless it is "variable". They can however be overwritten.
+      * Format options as defined in {@link sap.ui.core.format.NumberFormat.getFloatInstance}. In contrast to
+      * NumberFormat `groupingEnabled` defaults to `true`. Note that `maxFractionDigits` and `minFractionDigits`
+      * are set to the value of the constraint `scale` unless it is "variable". They can however be overwritten.
       */
     oFormatOptions: PreserveDecimals) = this()
     def this(
       /**
-      * format options as defined in {@link sap.ui.core.format.NumberFormat}. In contrast to NumberFormat `groupingEnabled`
-      * defaults to `true`. Note that `maxFractionDigits` and `minFractionDigits` are set to the value of the
-      * constraint `scale` unless it is "variable". They can however be overwritten.
+      * Format options as defined in {@link sap.ui.core.format.NumberFormat.getFloatInstance}. In contrast to
+      * NumberFormat `groupingEnabled` defaults to `true`. Note that `maxFractionDigits` and `minFractionDigits`
+      * are set to the value of the constraint `scale` unless it is "variable". They can however be overwritten.
       */
     oFormatOptions: Unit,
       /**
@@ -36,9 +36,9 @@ object sapUiModelOdataTypeDecimalMod {
     ) = this()
     def this(
       /**
-      * format options as defined in {@link sap.ui.core.format.NumberFormat}. In contrast to NumberFormat `groupingEnabled`
-      * defaults to `true`. Note that `maxFractionDigits` and `minFractionDigits` are set to the value of the
-      * constraint `scale` unless it is "variable". They can however be overwritten.
+      * Format options as defined in {@link sap.ui.core.format.NumberFormat.getFloatInstance}. In contrast to
+      * NumberFormat `groupingEnabled` defaults to `true`. Note that `maxFractionDigits` and `minFractionDigits`
+      * are set to the value of the constraint `scale` unless it is "variable". They can however be overwritten.
       */
     oFormatOptions: PreserveDecimals,
       /**

@@ -1,9 +1,10 @@
 package typings.hapipalSchmervice
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.hapiHapi.mod.Plugin
-import typings.hapiHapi.mod.ServerMethodOptions
-import typings.hapiHapi.mod.ServerOptionsCache
+import typings.hapiHapi.libTypesPluginMod.Plugin
+import typings.hapiHapi.libTypesServerCacheMod.ServerOptionsCache
+import typings.hapiHapi.libTypesServerMethodsMod.ServerMethodOptions
+import typings.hapiHapi.libTypesServerServerMod.ServerApplicationState
 import typings.hapiHapi.mod.Server_
 import typings.hapipalSchmervice.hapipalSchmerviceStrings.bind
 import typings.std.Exclude
@@ -22,7 +23,7 @@ object mod {
   open class Service protected ()
     extends StObject
        with _RegisterServiceConfiguration {
-    def this(server: Server_, options: ServiceOptions) = this()
+    def this(server: Server_[ServerApplicationState], options: ServiceOptions) = this()
     
     def bind(): this.type = js.native
     
@@ -36,7 +37,7 @@ object mod {
     
     var options: ServiceOptions = js.native
     
-    var server: Server_ = js.native
+    var server: Server_[ServerApplicationState] = js.native
     
     var static: Any = js.native
     
@@ -55,7 +56,7 @@ object mod {
     inline def caching_=(x: ServiceCachingOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("caching")(x.asInstanceOf[js.Any])
   }
   
-  inline def ServiceFactory(server: Server_, options: js.Object): ServiceRegistrationObject = (^.asInstanceOf[js.Dynamic].applyDynamic("ServiceFactory")(server.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ServiceRegistrationObject]
+  inline def ServiceFactory(server: Server_[ServerApplicationState], options: js.Object): ServiceRegistrationObject = (^.asInstanceOf[js.Dynamic].applyDynamic("ServiceFactory")(server.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ServiceRegistrationObject]
   
   @JSImport("@hapipal/schmervice", "name")
   @js.native
@@ -63,7 +64,7 @@ object mod {
   
   @JSImport("@hapipal/schmervice", "plugin")
   @js.native
-  val plugin: Plugin[js.Object] = js.native
+  val plugin: Plugin[js.Object, Unit] = js.native
   
   @JSImport("@hapipal/schmervice", "sandbox")
   @js.native
@@ -73,14 +74,18 @@ object mod {
   
   /* Rewritten from type alias, can be one of: 
     - js.Function2[
-  / * server * / typings.hapiHapi.mod.Server_, 
+  / * server * / typings.hapiHapi.mod.Server_[typings.hapiHapi.libTypesServerServerMod.ServerApplicationState], 
   / * options * / js.Object, 
   typings.hapipalSchmervice.mod.ServiceRegistrationObject]
     - typings.hapipalSchmervice.mod.Service
     - js.Array[typings.hapipalSchmervice.mod.Service]
     - typings.hapipalSchmervice.mod.ServiceRegistrationObject
   */
-  type RegisterServiceConfiguration = _RegisterServiceConfiguration | (js.Function2[/* server */ Server_, /* options */ js.Object, ServiceRegistrationObject]) | js.Array[Service]
+  type RegisterServiceConfiguration = _RegisterServiceConfiguration | (js.Function2[
+    /* server */ Server_[ServerApplicationState], 
+    /* options */ js.Object, 
+    ServiceRegistrationObject
+  ]) | js.Array[Service]
   
   type RegisteredServices = StringDictionary[Service]
   

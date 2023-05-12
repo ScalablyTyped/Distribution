@@ -16,7 +16,7 @@ object libIconsExclamationCircleFilledMod extends Shortcut {
   @js.native
   trait ExclamationCircleFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_ExclamationCircleFilledIconType: String = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jridgewell__trace-mapping
 
-Typings are for version 0.3.17
+Typings are for version 0.3.18
 
 ## Library description:
 Trace the original position through a source map

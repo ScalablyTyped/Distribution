@@ -686,9 +686,9 @@ object global {
     inline def ascending(a: Primitive): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ascending")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
     inline def ascending(a: Primitive, b: Primitive): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ascending")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    inline def autoType[ParsedRow /* <: js.UndefOr[js.Object | Null] */, Columns /* <: String */](// tslint:disable-next-line:no-unnecessary-generics
+    inline def autoType[ParsedRow /* <: js.UndefOr[js.Object | Null] */, Columns /* <: String */](// eslint-disable-next-line no-unnecessary-generics
     `object`: js.Array[String]): ParsedRow = ^.asInstanceOf[js.Dynamic].applyDynamic("autoType")(`object`.asInstanceOf[js.Any]).asInstanceOf[ParsedRow]
-    inline def autoType[ParsedRow /* <: js.UndefOr[js.Object | Null] */, Columns /* <: String */](// tslint:disable-next-line:no-unnecessary-generics
+    inline def autoType[ParsedRow /* <: js.UndefOr[js.Object | Null] */, Columns /* <: String */](// eslint-disable-next-line no-unnecessary-generics
     `object`: DSVRowString[Columns]): ParsedRow = ^.asInstanceOf[js.Dynamic].applyDynamic("autoType")(`object`.asInstanceOf[js.Any]).asInstanceOf[ParsedRow]
     
     inline def axisBottom[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): Axis[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("axisBottom")(scale.asInstanceOf[js.Any]).asInstanceOf[Axis[Domain]]

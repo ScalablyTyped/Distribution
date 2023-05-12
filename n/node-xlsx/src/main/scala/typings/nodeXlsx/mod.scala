@@ -31,8 +31,8 @@ object mod {
     inline def build(worksheets: js.Array[WorkSheet[Any]]): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(worksheets.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     inline def build(worksheets: js.Array[WorkSheet[Any]], param1: BuildOptions): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(worksheets.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Buffer]
     
-    inline def parse(mixed: Any): js.Array[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(mixed.asInstanceOf[js.Any]).asInstanceOf[js.Array[Data]]
-    inline def parse(mixed: Any, options: Sheet2JSONOpts & ParsingOptions): js.Array[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(mixed.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Data]]
+    inline def parse[T](mixed: Any): js.Array[Data[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(mixed.asInstanceOf[js.Any]).asInstanceOf[js.Array[Data[T]]]
+    inline def parse[T](mixed: Any, options: Sheet2JSONOpts & ParsingOptions): js.Array[Data[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(mixed.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Data[T]]]
     
     inline def parseMetadata(mixed: Any): js.Array[Name] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseMetadata")(mixed.asInstanceOf[js.Any]).asInstanceOf[js.Array[Name]]
     inline def parseMetadata(mixed: Any, options: ParsingOptions): js.Array[Name] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMetadata")(mixed.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Name]]
@@ -41,8 +41,8 @@ object mod {
   inline def build(worksheets: js.Array[WorkSheet[Any]]): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(worksheets.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   inline def build(worksheets: js.Array[WorkSheet[Any]], param1: BuildOptions): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(worksheets.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  inline def parse(mixed: Any): js.Array[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(mixed.asInstanceOf[js.Any]).asInstanceOf[js.Array[Data]]
-  inline def parse(mixed: Any, options: Sheet2JSONOpts & ParsingOptions): js.Array[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(mixed.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Data]]
+  inline def parse[T](mixed: Any): js.Array[Data[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(mixed.asInstanceOf[js.Any]).asInstanceOf[js.Array[Data[T]]]
+  inline def parse[T](mixed: Any, options: Sheet2JSONOpts & ParsingOptions): js.Array[Data[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(mixed.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Data[T]]]
   
   inline def parseMetadata(mixed: Any): js.Array[Name] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseMetadata")(mixed.asInstanceOf[js.Any]).asInstanceOf[js.Array[Name]]
   inline def parseMetadata(mixed: Any, options: ParsingOptions): js.Array[Name] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMetadata")(mixed.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Name]]

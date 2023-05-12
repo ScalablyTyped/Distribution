@@ -18,10 +18,12 @@ import typings.primereact.primereactStrings.decimal
 import typings.primereact.primereactStrings.descending
 import typings.primereact.primereactStrings.dialog
 import typings.primereact.primereactStrings.email
+import typings.primereact.primereactStrings.error
 import typings.primereact.primereactStrings.execute
 import typings.primereact.primereactStrings.grammar
 import typings.primereact.primereactStrings.grid
 import typings.primereact.primereactStrings.horizontal
+import typings.primereact.primereactStrings.info
 import typings.primereact.primereactStrings.inherit
 import typings.primereact.primereactStrings.link
 import typings.primereact.primereactStrings.list
@@ -43,12 +45,14 @@ import typings.primereact.primereactStrings.removals
 import typings.primereact.primereactStrings.search
 import typings.primereact.primereactStrings.spelling
 import typings.primereact.primereactStrings.step
+import typings.primereact.primereactStrings.success
 import typings.primereact.primereactStrings.tel
 import typings.primereact.primereactStrings.text
 import typings.primereact.primereactStrings.time
 import typings.primereact.primereactStrings.tree
 import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.vertical
+import typings.primereact.primereactStrings.warn
 import typings.primereact.primereactStrings.yes
 import typings.primereact.utilsUtilsMod.IconOptions
 import typings.primereact.utilsUtilsMod.IconType
@@ -104,16 +108,18 @@ object messageMessageMod {
     def this(props: MessageProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: MessageProps, context: Any) = this()
     
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
   }
   
-  type MessageContentType = ReactNode | (js.Function1[/* props */ MessageProps, ReactNode])
-  
-  /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
+  /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref' | 'content'> */
   trait MessageProps extends StObject {
     
     var about: js.UndefOr[String] = js.undefined
@@ -222,15 +228,24 @@ object messageMessageMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
     
-    var content: js.UndefOr[MessageContentType] = js.undefined
+    /**
+      * Custom template of the message.
+      */
+    var content: js.UndefOr[ReactNode | (js.Function1[/* props */ this.type, ReactNode])] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -250,6 +265,10 @@ object messageMessageMod {
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Icon for the message. If not set it will default to severity icon.
+      * @defaultValue based on severity
+      */
     var icon: js.UndefOr[IconType[MessageProps]] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
@@ -444,15 +463,22 @@ object messageMessageMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
-    var severity: js.UndefOr[MessageSeverityType] = js.undefined
+    /**
+      * Severity level of the message.
+      */
+    var severity: js.UndefOr[success | info | warn | error] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
     
@@ -466,7 +492,10 @@ object messageMessageMod {
     
     var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var text: js.UndefOr[MessageTextType] = js.undefined
+    /**
+      * Text of the message.
+      */
+    var text: js.UndefOr[ReactNode | (js.Function1[/* props */ this.type, ReactNode])] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
     
@@ -698,6 +727,10 @@ object messageMessageMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -714,13 +747,13 @@ object messageMessageMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setContent(value: MessageContentType): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: ReactNode | (js.Function1[MessageProps, ReactNode])): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
       
-      inline def setContentFunction1(value: /* props */ MessageProps => ReactNode): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
+      inline def setContentFunction1(value: MessageProps => ReactNode): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
@@ -1150,6 +1183,10 @@ object messageMessageMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1157,6 +1194,10 @@ object messageMessageMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1166,7 +1207,7 @@ object messageMessageMod {
       
       inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
       
-      inline def setSeverity(value: MessageSeverityType): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+      inline def setSeverity(value: success | info | warn | error): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
       
       inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
       
@@ -1194,9 +1235,9 @@ object messageMessageMod {
       
       inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
       
-      inline def setText(value: MessageTextType): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: ReactNode | (js.Function1[MessageProps, ReactNode])): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      inline def setTextFunction1(value: /* props */ MessageProps => ReactNode): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
+      inline def setTextFunction1(value: MessageProps => ReactNode): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
       
       inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
@@ -1221,24 +1262,4 @@ object messageMessageMod {
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
     }
   }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.success
-    - typings.primereact.primereactStrings.info
-    - typings.primereact.primereactStrings.warn
-    - typings.primereact.primereactStrings.error
-  */
-  trait MessageSeverityType extends StObject
-  object MessageSeverityType {
-    
-    inline def error: typings.primereact.primereactStrings.error = "error".asInstanceOf[typings.primereact.primereactStrings.error]
-    
-    inline def info: typings.primereact.primereactStrings.info = "info".asInstanceOf[typings.primereact.primereactStrings.info]
-    
-    inline def success: typings.primereact.primereactStrings.success = "success".asInstanceOf[typings.primereact.primereactStrings.success]
-    
-    inline def warn: typings.primereact.primereactStrings.warn = "warn".asInstanceOf[typings.primereact.primereactStrings.warn]
-  }
-  
-  type MessageTextType = ReactNode | (js.Function1[/* props */ MessageProps, ReactNode])
 }

@@ -1,5 +1,6 @@
 package typings.babylonjs
 
+import typings.std.PredefinedColorSpace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ trait GPUCanvasConfiguration
   
   var alphaMode: js.UndefOr[GPUCanvasAlphaMode] = js.undefined
   
-  var colorSpace: js.UndefOr[GPUPredefinedColorSpace] = js.undefined
+  var colorSpace: js.UndefOr[PredefinedColorSpace] = js.undefined
   
   var device: GPUDevice
   
@@ -34,7 +35,7 @@ object GPUCanvasConfiguration {
     
     inline def setAlphaModeUndefined: Self = StObject.set(x, "alphaMode", js.undefined)
     
-    inline def setColorSpace(value: GPUPredefinedColorSpace): Self = StObject.set(x, "colorSpace", value.asInstanceOf[js.Any])
+    inline def setColorSpace(value: PredefinedColorSpace): Self = StObject.set(x, "colorSpace", value.asInstanceOf[js.Any])
     
     inline def setColorSpaceUndefined: Self = StObject.set(x, "colorSpace", js.undefined)
     

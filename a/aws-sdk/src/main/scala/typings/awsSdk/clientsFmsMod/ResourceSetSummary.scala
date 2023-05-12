@@ -25,6 +25,11 @@ trait ResourceSetSummary extends StObject {
     * The descriptive name of the resource set. You can't change the name of a resource set after you create it.
     */
   var Name: js.UndefOr[typings.awsSdk.clientsFmsMod.Name] = js.undefined
+  
+  /**
+    * Indicates whether the resource set is in or out of an admin's Region scope.    ACTIVE - The administrator can manage and delete the resource set.    OUT_OF_ADMIN_SCOPE - The administrator can view the resource set, but they can't edit or delete the resource set. Existing protections stay in place. Any new resource that come into scope of the resource set won't be protected.  
+    */
+  var ResourceSetStatus: js.UndefOr[typings.awsSdk.clientsFmsMod.ResourceSetStatus] = js.undefined
 }
 object ResourceSetSummary {
   
@@ -51,5 +56,9 @@ object ResourceSetSummary {
     inline def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    
+    inline def setResourceSetStatus(value: ResourceSetStatus): Self = StObject.set(x, "ResourceSetStatus", value.asInstanceOf[js.Any])
+    
+    inline def setResourceSetStatusUndefined: Self = StObject.set(x, "ResourceSetStatus", js.undefined)
   }
 }

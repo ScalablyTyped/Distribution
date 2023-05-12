@@ -6,13 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RepoTagprotectionid extends StObject {
   
-  /** The account owner of the repository. The name is not case sensitive. */
   var owner: String
   
-  /** The name of the repository. The name is not case sensitive. */
   var repo: String
   
-  /** The unique identifier of the tag protection. */
   var tag_protection_id: Double
 }
 object RepoTagprotectionid {

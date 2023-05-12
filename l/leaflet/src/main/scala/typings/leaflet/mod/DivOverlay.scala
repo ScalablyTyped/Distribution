@@ -30,7 +30,8 @@ open class DivOverlay () extends Layer {
   
   def openOn(map: Map_): this.type = js.native
   
-  var options: DivOverlayOptions = js.native
+  @JSName("options")
+  var options_DivOverlay: DivOverlayOptions = js.native
   
   def setContent(htmlContent: js.Function1[/* source */ Layer, Content]): this.type = js.native
   def setContent(htmlContent: Content): this.type = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for js-base64
 
-Typings are for version 3.7.2
+Typings are for version 3.7.5
 
 ## Library description:
 Yet another Base64 transcoder in pure-JS

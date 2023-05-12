@@ -1,260 +1,176 @@
 package typings.twilio
 
+import typings.std.Record
+import typings.twilio.anon.FriendlyName
 import typings.twilio.libBasePageMod.TwilioResponsePayload
-import typings.twilio.libInterfacesMod.SerializableClass
 import typings.twilio.libRestPreviewUnderstandAssistantFieldTypeFieldValueMod.FieldValueContext
 import typings.twilio.libRestPreviewUnderstandAssistantFieldTypeFieldValueMod.FieldValueListInstance
+import typings.twilio.libRestPreviewUnderstandMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libRestPreviewUnderstandAssistantFieldTypeMod {
   
-  @JSImport("twilio/lib/rest/preview/understand/assistant/fieldType", JSImport.Namespace)
+  @JSImport("twilio/lib/rest/preview/understand/assistant/fieldType", "FieldTypeContextImpl")
   @js.native
-  val ^ : js.Any = js.native
-  
-  @JSImport("twilio/lib/rest/preview/understand/assistant/fieldType", "FieldTypeContext")
-  @js.native
-  open class FieldTypeContext protected () extends StObject {
-    /**
-      * Initialize the FieldTypeContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param assistantSid - The assistant_sid
-      * @param sid - The sid
-      */
-    def this(version: typings.twilio.libRestPreviewUnderstandMod.^, assistantSid: String, sid: String) = this()
+  open class FieldTypeContextImpl protected ()
+    extends StObject
+       with FieldTypeContext {
+    def this(_version: default, assistantSid: String, sid: String) = this()
     
-    /**
-      * fetch a FieldTypeInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def fetch(): js.Promise[FieldTypeInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ FieldTypeInstance, Any]): js.Promise[FieldTypeInstance] = js.native
+    /* protected */ var _fieldValues: js.UndefOr[FieldValueListInstance] = js.native
     
-    /**
-      * @param sid - sid of instance
-      */
-    def fieldValues(sid: String): FieldValueContext = js.native
-    @JSName("fieldValues")
-    var fieldValues_Original: FieldValueListInstance = js.native
+    /* protected */ var _solution: FieldTypeContextSolution = js.native
     
-    /**
-      * remove a FieldTypeInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def remove(): js.Promise[Boolean] = js.native
-    def remove(callback: js.Function2[/* error */ js.Error | Null, /* items */ FieldTypeInstance, Any]): js.Promise[Boolean] = js.native
+    /* protected */ var _uri: String = js.native
     
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
+    /* protected */ var _version: default = js.native
     
-    /**
-      * update a FieldTypeInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def update(): js.Promise[FieldTypeInstance] = js.native
-    def update(callback: js.Function2[/* error */ js.Error | Null, /* items */ FieldTypeInstance, Any]): js.Promise[FieldTypeInstance] = js.native
+    def fieldValues: FieldValueListInstance = js.native
+    
     def update(
-      opts: Unit,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ FieldTypeInstance, Any]
+      params: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[FieldTypeInstance], Any],
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[FieldTypeInstance], Any]
     ): js.Promise[FieldTypeInstance] = js.native
-    def update(opts: FieldTypeInstanceUpdateOptions): js.Promise[FieldTypeInstance] = js.native
     def update(
-      opts: FieldTypeInstanceUpdateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ FieldTypeInstance, Any]
+      params: Unit,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[FieldTypeInstance], Any]
     ): js.Promise[FieldTypeInstance] = js.native
   }
   
   @JSImport("twilio/lib/rest/preview/understand/assistant/fieldType", "FieldTypeInstance")
   @js.native
-  open class FieldTypeInstance protected () extends SerializableClass {
+  open class FieldTypeInstance protected () extends StObject {
+    def this(_version: default, payload: FieldTypeResource, assistantSid: String) = this()
+    def this(_version: default, payload: FieldTypeResource, assistantSid: String, sid: String) = this()
+    
+    /* protected */ var _context: js.UndefOr[FieldTypeContext] = js.native
+    
+    /* private */ def _proxy: Any = js.native
+    
+    /* protected */ var _solution: FieldTypeContextSolution = js.native
+    
+    /* protected */ var _version: default = js.native
+    
     /**
-      * Initialize the FieldTypeContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param payload - The instance payload
-      * @param assistantSid - The unique ID of the Assistant.
-      * @param sid - The sid
+      * The unique ID of the Account that created this Field Type.
       */
-    def this(
-      version: typings.twilio.libRestPreviewUnderstandMod.^,
-      payload: FieldTypePayload,
-      assistantSid: String,
-      sid: String
-    ) = this()
-    
-    /* private */ var _proxy: FieldTypeContext = js.native
-    
     var accountSid: String = js.native
     
+    /**
+      * The unique ID of the Assistant.
+      */
     var assistantSid: String = js.native
     
+    /**
+      * The date that this resource was created
+      */
     var dateCreated: js.Date = js.native
     
+    /**
+      * The date that this resource was last updated
+      */
     var dateUpdated: js.Date = js.native
     
     /**
-      * fetch a FieldTypeInstance
+      * Fetch a FieldTypeInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed FieldTypeInstance
       */
     def fetch(): js.Promise[FieldTypeInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[FieldTypeInstance] = js.native
+    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]): js.Promise[FieldTypeInstance] = js.native
     
     /**
-      * Access the fieldValues
+      * Access the fieldValues.
       */
     def fieldValues(): FieldValueListInstance = js.native
     
+    /**
+      * A user-provided string that identifies this resource. It is non-unique and can up to 255 characters long.
+      */
     var friendlyName: String = js.native
     
-    var links: String = js.native
+    var links: Record[String, String] = js.native
     
     /**
-      * remove a FieldTypeInstance
+      * Remove a FieldTypeInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed boolean
       */
     def remove(): js.Promise[Boolean] = js.native
-    def remove(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[Boolean] = js.native
+    def remove(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any]): js.Promise[Boolean] = js.native
     
+    /**
+      * A 34 character string that uniquely identifies this resource.
+      */
     var sid: String = js.native
     
+    /**
+      * Provide a user-friendly representation
+      *
+      * @returns Object
+      */
+    def toJSON(): FriendlyName = js.native
+    
+    /**
+      * A user-provided string that uniquely identifies this resource as an alternative to the sid. Unique up to 64 characters long.
+      */
     var uniqueName: String = js.native
     
     /**
-      * update a FieldTypeInstance
+      * Update a FieldTypeInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed FieldTypeInstance
       */
     def update(): js.Promise[FieldTypeInstance] = js.native
-    def update(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[FieldTypeInstance] = js.native
-    def update(opts: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[FieldTypeInstance] = js.native
-    def update(opts: FieldTypeInstanceUpdateOptions): js.Promise[FieldTypeInstance] = js.native
+    def update(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]): js.Promise[FieldTypeInstance] = js.native
+    /**
+      * Update a FieldTypeInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed FieldTypeInstance
+      */
+    def update(params: FieldTypeContextUpdateOptions): js.Promise[FieldTypeInstance] = js.native
     def update(
-      opts: FieldTypeInstanceUpdateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]
+      params: FieldTypeContextUpdateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]
     ): js.Promise[FieldTypeInstance] = js.native
     
     var url: String = js.native
   }
   
-  /**
-    * Initialize the FieldTypeList
-    *
-    * PLEASE NOTE that this class contains preview products that are subject to
-    * change. Use them with caution. If you currently do not have developer preview
-    * access, please contact help@twilio.com.
-    *
-    * @param version - Version of the resource
-    * @param assistantSid - The unique ID of the Assistant.
-    */
-  inline def FieldTypeList(version: typings.twilio.libRestPreviewUnderstandMod.^, assistantSid: String): FieldTypeListInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("FieldTypeList")(version.asInstanceOf[js.Any], assistantSid.asInstanceOf[js.Any])).asInstanceOf[FieldTypeListInstance]
-  
-  @JSImport("twilio/lib/rest/preview/understand/assistant/fieldType", "FieldTypePage")
-  @js.native
-  open class FieldTypePage protected ()
-    extends typings.twilio.libBasePageMod.^[
-          typings.twilio.libRestPreviewUnderstandMod.^, 
-          FieldTypePayload, 
-          FieldTypeResource, 
-          FieldTypeInstance
-        ] {
-    /**
-      * Initialize the FieldTypePage
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param response - Response from the API
-      * @param solution - Path solution
-      */
-    def this(
-      version: typings.twilio.libRestPreviewUnderstandMod.^,
-      response: typings.twilio.libHttpResponseMod.^[String],
-      solution: FieldTypeSolution
-    ) = this()
-    
-    /**
-      * Build an instance of FieldTypeInstance
-      *
-      * @param payload - Payload response from the API
-      */
-    def getInstance(payload: FieldTypePayload): FieldTypeInstance = js.native
-    
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
-  }
-  
-  /**
-    * Options to pass to update
-    *
-    * @property friendlyName - A user-provided string that identifies this resource. It is non-unique and can up to 255 characters long.
-    * @property uniqueName - A user-provided string that uniquely identifies this resource as an alternative to the sid. Unique up to 64 characters long.
-    */
-  trait FieldTypeInstanceUpdateOptions extends StObject {
-    
-    var friendlyName: js.UndefOr[String] = js.undefined
-    
-    var uniqueName: js.UndefOr[String] = js.undefined
-  }
-  object FieldTypeInstanceUpdateOptions {
-    
-    inline def apply(): FieldTypeInstanceUpdateOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[FieldTypeInstanceUpdateOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: FieldTypeInstanceUpdateOptions] (val x: Self) extends AnyVal {
-      
-      inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
-      
-      inline def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
-      
-      inline def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
-      
-      inline def setUniqueNameUndefined: Self = StObject.set(x, "uniqueName", js.undefined)
-    }
-  }
-  
   @js.native
   trait FieldTypeListInstance extends StObject {
     
-    /**
-      * @param sid - sid of instance
-      */
     def apply(sid: String): FieldTypeContext = js.native
     
+    var _solution: FieldTypeSolution = js.native
+    
+    var _uri: String = js.native
+    
+    var _version: default = js.native
+    
     /**
-      * create a FieldTypeInstance
+      * Create a FieldTypeInstance
       *
-      * @param opts - Options for request
+      * @param params - Parameter for request
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed FieldTypeInstance
       */
-    def create(opts: FieldTypeListInstanceCreateOptions): js.Promise[FieldTypeInstance] = js.native
+    def create(params: FieldTypeListInstanceCreateOptions): js.Promise[FieldTypeInstance] = js.native
     def create(
-      opts: FieldTypeListInstanceCreateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* item */ FieldTypeInstance, Any]
+      params: FieldTypeListInstanceCreateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[FieldTypeInstance], Any]
     ): js.Promise[FieldTypeInstance] = js.native
     
     /**
@@ -269,7 +185,8 @@ object libRestPreviewUnderstandAssistantFieldTypeMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Function to process each record
+      * @param { FieldTypeListInstanceEachOptions } [params] - Options for request
+      * @param { function } [callback] - Function to process each record
       */
     def each(): Unit = js.native
     def each(
@@ -279,17 +196,9 @@ object libRestPreviewUnderstandAssistantFieldTypeMod {
           Unit
         ]
     ): Unit = js.native
+    def each(params: FieldTypeListInstanceEachOptions): Unit = js.native
     def each(
-      opts: Unit,
-      callback: js.Function2[
-          /* item */ FieldTypeInstance, 
-          /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
-          Unit
-        ]
-    ): Unit = js.native
-    def each(opts: FieldTypeListInstanceEachOptions): Unit = js.native
-    def each(
-      opts: FieldTypeListInstanceEachOptions,
+      params: FieldTypeListInstanceEachOptions,
       callback: js.Function2[
           /* item */ FieldTypeInstance, 
           /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
@@ -297,11 +206,6 @@ object libRestPreviewUnderstandAssistantFieldTypeMod {
         ]
     ): Unit = js.native
     
-    /**
-      * Constructs a field_type
-      *
-      * @param sid - The sid
-      */
     def get(sid: String): FieldTypeContext = js.native
     
     /**
@@ -309,20 +213,12 @@ object libRestPreviewUnderstandAssistantFieldTypeMod {
       *
       * The request is executed immediately.
       *
-      * If a function is passed as the first argument, it will be used as the callback
-      * function.
-      *
-      * @param callback - Callback to handle list of records
+      * @param { string } [targetUrl] - API-generated URL for the requested results page
+      * @param { function } [callback] - Callback to handle list of records
       */
-    def getPage(): js.Promise[FieldTypePage] = js.native
-    def getPage(callback: js.Function2[/* error */ js.Error | Null, /* items */ FieldTypePage, Any]): js.Promise[FieldTypePage] = js.native
     def getPage(targetUrl: String): js.Promise[FieldTypePage] = js.native
     def getPage(
       targetUrl: String,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ FieldTypePage, Any]
-    ): js.Promise[FieldTypePage] = js.native
-    def getPage(
-      targetUrl: Unit,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ FieldTypePage, Any]
     ): js.Promise[FieldTypePage] = js.native
     
@@ -332,17 +228,14 @@ object libRestPreviewUnderstandAssistantFieldTypeMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { FieldTypeListInstanceOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def list(): js.Promise[js.Array[FieldTypeInstance]] = js.native
     def list(callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[FieldTypeInstance], Any]): js.Promise[js.Array[FieldTypeInstance]] = js.native
+    def list(params: FieldTypeListInstanceOptions): js.Promise[js.Array[FieldTypeInstance]] = js.native
     def list(
-      opts: Unit,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[FieldTypeInstance], Any]
-    ): js.Promise[js.Array[FieldTypeInstance]] = js.native
-    def list(opts: FieldTypeListInstanceOptions): js.Promise[js.Array[FieldTypeInstance]] = js.native
-    def list(
-      opts: FieldTypeListInstanceOptions,
+      params: FieldTypeListInstanceOptions,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[FieldTypeInstance], Any]
     ): js.Promise[js.Array[FieldTypeInstance]] = js.native
     
@@ -354,14 +247,14 @@ object libRestPreviewUnderstandAssistantFieldTypeMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { FieldTypeListInstancePageOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def page(): js.Promise[FieldTypePage] = js.native
     def page(callback: js.Function2[/* error */ js.Error | Null, /* items */ FieldTypePage, Any]): js.Promise[FieldTypePage] = js.native
-    def page(opts: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ FieldTypePage, Any]): js.Promise[FieldTypePage] = js.native
-    def page(opts: FieldTypeListInstancePageOptions): js.Promise[FieldTypePage] = js.native
+    def page(params: FieldTypeListInstancePageOptions): js.Promise[FieldTypePage] = js.native
     def page(
-      opts: FieldTypeListInstancePageOptions,
+      params: FieldTypeListInstancePageOptions,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ FieldTypePage, Any]
     ): js.Promise[FieldTypePage] = js.native
     
@@ -370,17 +263,150 @@ object libRestPreviewUnderstandAssistantFieldTypeMod {
       */
     def toJSON(): Any = js.native
   }
-  
-  /**
-    * Options to pass to create
-    *
-    * @property friendlyName - A user-provided string that identifies this resource. It is non-unique and can up to 255 characters long.
-    * @property uniqueName - A user-provided string that uniquely identifies this resource as an alternative to the sid. Unique up to 64 characters long.
-    */
-  trait FieldTypeListInstanceCreateOptions extends StObject {
+  object FieldTypeListInstance {
     
+    @JSImport("twilio/lib/rest/preview/understand/assistant/fieldType", "FieldTypeListInstance")
+    @js.native
+    def apply(version: default, assistantSid: String): FieldTypeListInstance = js.native
+  }
+  
+  @JSImport("twilio/lib/rest/preview/understand/assistant/fieldType", "FieldTypePage")
+  @js.native
+  open class FieldTypePage protected ()
+    extends typings.twilio.libBasePageMod.default[default, FieldTypePayload, FieldTypeResource, FieldTypeInstance] {
+    /**
+      * Initialize the FieldTypePage
+      *
+      * @param version - Version of the resource
+      * @param response - Response from the API
+      * @param solution - Path solution
+      */
+    def this(
+      version: default,
+      response: typings.twilio.libHttpResponseMod.default[String],
+      solution: FieldTypeSolution
+    ) = this()
+    
+    /**
+      * Build an instance of FieldTypeInstance
+      *
+      * @param payload - Payload response from the API
+      */
+    def getInstance(payload: FieldTypeResource): FieldTypeInstance = js.native
+  }
+  
+  @js.native
+  trait FieldTypeContext extends StObject {
+    
+    /**
+      * Fetch a FieldTypeInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed FieldTypeInstance
+      */
+    def fetch(): js.Promise[FieldTypeInstance] = js.native
+    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[FieldTypeInstance], Any]): js.Promise[FieldTypeInstance] = js.native
+    
+    def fieldValues(sid: String): FieldValueContext = js.native
+    @JSName("fieldValues")
+    var fieldValues_Original: FieldValueListInstance = js.native
+    
+    /**
+      * Remove a FieldTypeInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed boolean
+      */
+    def remove(): js.Promise[Boolean] = js.native
+    def remove(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any]): js.Promise[Boolean] = js.native
+    
+    /**
+      * Provide a user-friendly representation
+      */
+    def toJSON(): Any = js.native
+    
+    /**
+      * Update a FieldTypeInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed FieldTypeInstance
+      */
+    def update(): js.Promise[FieldTypeInstance] = js.native
+    def update(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[FieldTypeInstance], Any]): js.Promise[FieldTypeInstance] = js.native
+    /**
+      * Update a FieldTypeInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed FieldTypeInstance
+      */
+    def update(params: FieldTypeContextUpdateOptions): js.Promise[FieldTypeInstance] = js.native
+    def update(
+      params: FieldTypeContextUpdateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[FieldTypeInstance], Any]
+    ): js.Promise[FieldTypeInstance] = js.native
+  }
+  
+  trait FieldTypeContextSolution extends StObject {
+    
+    var assistantSid: String
+    
+    var sid: String
+  }
+  object FieldTypeContextSolution {
+    
+    inline def apply(assistantSid: String, sid: String): FieldTypeContextSolution = {
+      val __obj = js.Dynamic.literal(assistantSid = assistantSid.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FieldTypeContextSolution]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldTypeContextSolution] (val x: Self) extends AnyVal {
+      
+      inline def setAssistantSid(value: String): Self = StObject.set(x, "assistantSid", value.asInstanceOf[js.Any])
+      
+      inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait FieldTypeContextUpdateOptions extends StObject {
+    
+    /** A user-provided string that identifies this resource. It is non-unique and can up to 255 characters long. */
     var friendlyName: js.UndefOr[String] = js.undefined
     
+    /** A user-provided string that uniquely identifies this resource as an alternative to the sid. Unique up to 64 characters long. */
+    var uniqueName: js.UndefOr[String] = js.undefined
+  }
+  object FieldTypeContextUpdateOptions {
+    
+    inline def apply(): FieldTypeContextUpdateOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FieldTypeContextUpdateOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldTypeContextUpdateOptions] (val x: Self) extends AnyVal {
+      
+      inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
+      
+      inline def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
+      
+      inline def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
+      
+      inline def setUniqueNameUndefined: Self = StObject.set(x, "uniqueName", js.undefined)
+    }
+  }
+  
+  trait FieldTypeListInstanceCreateOptions extends StObject {
+    
+    /** A user-provided string that identifies this resource. It is non-unique and can up to 255 characters long. */
+    var friendlyName: js.UndefOr[String] = js.undefined
+    
+    /** A user-provided string that uniquely identifies this resource as an alternative to the sid. Unique up to 64 characters long. */
     var uniqueName: String
   }
   object FieldTypeListInstanceCreateOptions {
@@ -401,26 +427,9 @@ object libRestPreviewUnderstandAssistantFieldTypeMod {
     }
   }
   
-  /**
-    * Options to pass to each
-    *
-    * @property callback -
-    *                         Function to process each record. If this and a positional
-    *                         callback are passed, this one will be used
-    * @property done - Function to be called upon completion of streaming
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         each() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no pageSize is defined but a limit is defined,
-    *                         each() will attempt to read the limit with the most efficient
-    *                         page size, i.e. min(limit, 1000)
-    */
   trait FieldTypeListInstanceEachOptions extends StObject {
     
+    /** Function to process each record. If this and a positional callback are passed, this one will be used */
     var callback: js.UndefOr[
         js.Function2[
           /* item */ FieldTypeInstance, 
@@ -429,10 +438,13 @@ object libRestPreviewUnderstandAssistantFieldTypeMod {
         ]
       ] = js.undefined
     
+    /** Function to be called upon completion of streaming */
     var done: js.UndefOr[js.Function] = js.undefined
     
+    /** Upper limit for the number of records to return. each() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
   }
   object FieldTypeListInstanceEachOptions {
@@ -465,24 +477,12 @@ object libRestPreviewUnderstandAssistantFieldTypeMod {
     }
   }
   
-  /**
-    * Options to pass to list
-    *
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         list() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no page_size is defined but a limit is defined,
-    *                         list() will attempt to read the limit with the most
-    *                         efficient page size, i.e. min(limit, 1000)
-    */
   trait FieldTypeListInstanceOptions extends StObject {
     
+    /** Upper limit for the number of records to return. list() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
   }
   object FieldTypeListInstanceOptions {
@@ -505,19 +505,15 @@ object libRestPreviewUnderstandAssistantFieldTypeMod {
     }
   }
   
-  /**
-    * Options to pass to page
-    *
-    * @property pageNumber - Page Number, this value is simply for client state
-    * @property pageSize - Number of records to return, defaults to 50
-    * @property pageToken - PageToken provided by the API
-    */
   trait FieldTypeListInstancePageOptions extends StObject {
     
+    /** Page Number, this value is simply for client state */
     var pageNumber: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
     
+    /** PageToken provided by the API */
     var pageToken: js.UndefOr[String] = js.undefined
   }
   object FieldTypeListInstancePageOptions {
@@ -546,29 +542,31 @@ object libRestPreviewUnderstandAssistantFieldTypeMod {
   
   trait FieldTypePayload
     extends StObject
-       with FieldTypeResource
-       with TwilioResponsePayload
+       with TwilioResponsePayload {
+    
+    var field_types: js.Array[FieldTypeResource]
+  }
   object FieldTypePayload {
     
     inline def apply(
-      account_sid: String,
-      assistant_sid: String,
-      date_created: js.Date,
-      date_updated: js.Date,
+      field_types: js.Array[FieldTypeResource],
       first_page_uri: String,
-      friendly_name: String,
-      links: String,
       next_page_uri: String,
       page: Double,
       page_size: Double,
       previous_page_uri: String,
-      sid: String,
-      unique_name: String,
-      uri: String,
-      url: String
+      uri: String
     ): FieldTypePayload = {
-      val __obj = js.Dynamic.literal(account_sid = account_sid.asInstanceOf[js.Any], assistant_sid = assistant_sid.asInstanceOf[js.Any], date_created = date_created.asInstanceOf[js.Any], date_updated = date_updated.asInstanceOf[js.Any], first_page_uri = first_page_uri.asInstanceOf[js.Any], friendly_name = friendly_name.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any], unique_name = unique_name.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(field_types = field_types.asInstanceOf[js.Any], first_page_uri = first_page_uri.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[FieldTypePayload]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldTypePayload] (val x: Self) extends AnyVal {
+      
+      inline def setField_types(value: js.Array[FieldTypeResource]): Self = StObject.set(x, "field_types", value.asInstanceOf[js.Any])
+      
+      inline def setField_typesVarargs(value: FieldTypeResource*): Self = StObject.set(x, "field_types", js.Array(value*))
     }
   }
   
@@ -584,7 +582,7 @@ object libRestPreviewUnderstandAssistantFieldTypeMod {
     
     var friendly_name: String
     
-    var links: String
+    var links: Record[String, String]
     
     var sid: String
     
@@ -600,7 +598,7 @@ object libRestPreviewUnderstandAssistantFieldTypeMod {
       date_created: js.Date,
       date_updated: js.Date,
       friendly_name: String,
-      links: String,
+      links: Record[String, String],
       sid: String,
       unique_name: String,
       url: String
@@ -622,7 +620,7 @@ object libRestPreviewUnderstandAssistantFieldTypeMod {
       
       inline def setFriendly_name(value: String): Self = StObject.set(x, "friendly_name", value.asInstanceOf[js.Any])
       
-      inline def setLinks(value: String): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      inline def setLinks(value: Record[String, String]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
       inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
       
@@ -634,12 +632,12 @@ object libRestPreviewUnderstandAssistantFieldTypeMod {
   
   trait FieldTypeSolution extends StObject {
     
-    var assistantSid: js.UndefOr[String] = js.undefined
+    var assistantSid: String
   }
   object FieldTypeSolution {
     
-    inline def apply(): FieldTypeSolution = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(assistantSid: String): FieldTypeSolution = {
+      val __obj = js.Dynamic.literal(assistantSid = assistantSid.asInstanceOf[js.Any])
       __obj.asInstanceOf[FieldTypeSolution]
     }
     
@@ -647,8 +645,6 @@ object libRestPreviewUnderstandAssistantFieldTypeMod {
     implicit open class MutableBuilder[Self <: FieldTypeSolution] (val x: Self) extends AnyVal {
       
       inline def setAssistantSid(value: String): Self = StObject.set(x, "assistantSid", value.asInstanceOf[js.Any])
-      
-      inline def setAssistantSidUndefined: Self = StObject.set(x, "assistantSid", js.undefined)
     }
   }
 }

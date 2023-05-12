@@ -348,7 +348,7 @@ trait Http2Session extends StObject {
     * the delta.
     *
     * ```js
-    * const http2 = require('http2');
+    * const http2 = require('node:http2');
     *
     * const server = http2.createServer();
     * const expectedWindowSize = 2 ** 20;

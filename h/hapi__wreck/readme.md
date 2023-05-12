@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__wreck
 
-Typings are for version 18.0.0
+Typings are for version 18.0.1
 
 ## Library description:
 HTTP Client Utilities

@@ -5613,9 +5613,15 @@ object anon {
     
     var captionSide: js.UndefOr[String] = js.undefined
     
+    var caret: js.UndefOr[String] = js.undefined
+    
     var `caret-color`: js.UndefOr[String] = js.undefined
     
+    var `caret-shape`: js.UndefOr[String] = js.undefined
+    
     var caretColor: js.UndefOr[String] = js.undefined
+    
+    var caretShape: js.UndefOr[String] = js.undefined
     
     var clear: js.UndefOr[String] = js.undefined
     
@@ -5686,6 +5692,36 @@ object anon {
     var columns: js.UndefOr[String] = js.undefined
     
     var contain: js.UndefOr[String] = js.undefined
+    
+    var `contain-intrinsic-block-size`: js.UndefOr[String] = js.undefined
+    
+    var `contain-intrinsic-height`: js.UndefOr[String] = js.undefined
+    
+    var `contain-intrinsic-inline-size`: js.UndefOr[String] = js.undefined
+    
+    var `contain-intrinsic-size`: js.UndefOr[String] = js.undefined
+    
+    var `contain-intrinsic-width`: js.UndefOr[String] = js.undefined
+    
+    var containIntrinsicBlockSize: js.UndefOr[String] = js.undefined
+    
+    var containIntrinsicHeight: js.UndefOr[String] = js.undefined
+    
+    var containIntrinsicInlineSize: js.UndefOr[String] = js.undefined
+    
+    var containIntrinsicSize: js.UndefOr[String] = js.undefined
+    
+    var containIntrinsicWidth: js.UndefOr[String] = js.undefined
+    
+    var container: js.UndefOr[String] = js.undefined
+    
+    var `container-name`: js.UndefOr[String] = js.undefined
+    
+    var `container-type`: js.UndefOr[String] = js.undefined
+    
+    var containerName: js.UndefOr[String] = js.undefined
+    
+    var containerType: js.UndefOr[String] = js.undefined
     
     var content: js.UndefOr[String] = js.undefined
     
@@ -5779,6 +5815,8 @@ object anon {
     
     var `font-optical-sizing`: js.UndefOr[String] = js.undefined
     
+    var `font-palette`: js.UndefOr[String] = js.undefined
+    
     var `font-size`: js.UndefOr[String] = js.undefined
     
     var `font-size-adjust`: js.UndefOr[String] = js.undefined
@@ -5798,6 +5836,8 @@ object anon {
     var `font-variant-caps`: js.UndefOr[String] = js.undefined
     
     var `font-variant-east-asian`: js.UndefOr[String] = js.undefined
+    
+    var `font-variant-emoji`: js.UndefOr[String] = js.undefined
     
     var `font-variant-ligatures`: js.UndefOr[String] = js.undefined
     
@@ -5819,6 +5859,8 @@ object anon {
     
     var fontOpticalSizing: js.UndefOr[String] = js.undefined
     
+    var fontPalette: js.UndefOr[String] = js.undefined
+    
     var fontSize: js.UndefOr[String] = js.undefined
     
     var fontSizeAdjust: js.UndefOr[String] = js.undefined
@@ -5838,6 +5880,8 @@ object anon {
     var fontVariantCaps: js.UndefOr[String] = js.undefined
     
     var fontVariantEastAsian: js.UndefOr[String] = js.undefined
+    
+    var fontVariantEmoji: js.UndefOr[String] = js.undefined
     
     var fontVariantLigatures: js.UndefOr[String] = js.undefined
     
@@ -5937,7 +5981,11 @@ object anon {
     
     var `hyphenate-character`: js.UndefOr[String] = js.undefined
     
+    var `hyphenate-limit-chars`: js.UndefOr[String] = js.undefined
+    
     var hyphenateCharacter: js.UndefOr[String] = js.undefined
+    
+    var hyphenateLimitChars: js.UndefOr[String] = js.undefined
     
     var hyphens: js.UndefOr[String] = js.undefined
     
@@ -6077,6 +6125,8 @@ object anon {
     
     var `margin-top`: js.UndefOr[String] = js.undefined
     
+    var `margin-trim`: js.UndefOr[String] = js.undefined
+    
     var marginBlock: js.UndefOr[String] = js.undefined
     
     var marginBlockEnd: js.UndefOr[String] = js.undefined
@@ -6096,6 +6146,8 @@ object anon {
     var marginRight: js.UndefOr[String] = js.undefined
     
     var marginTop: js.UndefOr[String] = js.undefined
+    
+    var marginTrim: js.UndefOr[String] = js.undefined
     
     var marker: js.UndefOr[String] = js.undefined
     
@@ -6409,6 +6461,8 @@ object anon {
     
     var `offset-path`: js.UndefOr[String] = js.undefined
     
+    var `offset-position`: js.UndefOr[String] = js.undefined
+    
     var `offset-rotate`: js.UndefOr[String] = js.undefined
     
     var `offset-rotation`: js.UndefOr[String] = js.undefined
@@ -6430,6 +6484,8 @@ object anon {
     var offsetInlineStart: js.UndefOr[String] = js.undefined
     
     var offsetPath: js.UndefOr[String] = js.undefined
+    
+    var offsetPosition: js.UndefOr[String] = js.undefined
     
     var offsetRotate: js.UndefOr[String] = js.undefined
     
@@ -6554,6 +6610,8 @@ object anon {
     var paddingRight: js.UndefOr[String] = js.undefined
     
     var paddingTop: js.UndefOr[String] = js.undefined
+    
+    var page: js.UndefOr[String] = js.undefined
     
     var `page-break-after`: js.UndefOr[String] = js.undefined
     
@@ -6699,6 +6757,12 @@ object anon {
     
     var `scroll-snap-type-y`: js.UndefOr[String] = js.undefined
     
+    var `scroll-timeline`: js.UndefOr[String] = js.undefined
+    
+    var `scroll-timeline-axis`: js.UndefOr[String] = js.undefined
+    
+    var `scroll-timeline-name`: js.UndefOr[String] = js.undefined
+    
     var scrollBehavior: js.UndefOr[String] = js.undefined
     
     var scrollMargin: js.UndefOr[String] = js.undefined
@@ -6772,6 +6836,12 @@ object anon {
     var scrollSnapTypeX: js.UndefOr[String] = js.undefined
     
     var scrollSnapTypeY: js.UndefOr[String] = js.undefined
+    
+    var scrollTimeline: js.UndefOr[String] = js.undefined
+    
+    var scrollTimelineAxis: js.UndefOr[String] = js.undefined
+    
+    var scrollTimelineName: js.UndefOr[String] = js.undefined
     
     var `scrollbar-color`: js.UndefOr[String] = js.undefined
     
@@ -7002,6 +7072,10 @@ object anon {
     var `vertical-align`: js.UndefOr[String] = js.undefined
     
     var verticalAlign: js.UndefOr[String] = js.undefined
+    
+    var `view-transition-name`: js.UndefOr[String] = js.undefined
+    
+    var viewTransitionName: js.UndefOr[String] = js.undefined
     
     var visibility: js.UndefOr[String] = js.undefined
     
@@ -9249,13 +9323,25 @@ object anon {
       
       inline def setCaptionSideUndefined: Self = StObject.set(x, "captionSide", js.undefined)
       
+      inline def setCaret(value: String): Self = StObject.set(x, "caret", value.asInstanceOf[js.Any])
+      
       inline def `setCaret-color`(value: String): Self = StObject.set(x, "caret-color", value.asInstanceOf[js.Any])
       
       inline def `setCaret-colorUndefined`: Self = StObject.set(x, "caret-color", js.undefined)
       
+      inline def `setCaret-shape`(value: String): Self = StObject.set(x, "caret-shape", value.asInstanceOf[js.Any])
+      
+      inline def `setCaret-shapeUndefined`: Self = StObject.set(x, "caret-shape", js.undefined)
+      
       inline def setCaretColor(value: String): Self = StObject.set(x, "caretColor", value.asInstanceOf[js.Any])
       
       inline def setCaretColorUndefined: Self = StObject.set(x, "caretColor", js.undefined)
+      
+      inline def setCaretShape(value: String): Self = StObject.set(x, "caretShape", value.asInstanceOf[js.Any])
+      
+      inline def setCaretShapeUndefined: Self = StObject.set(x, "caretShape", js.undefined)
+      
+      inline def setCaretUndefined: Self = StObject.set(x, "caret", js.undefined)
       
       inline def setClear(value: String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       
@@ -9395,7 +9481,67 @@ object anon {
       
       inline def setContain(value: String): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
       
+      inline def `setContain-intrinsic-block-size`(value: String): Self = StObject.set(x, "contain-intrinsic-block-size", value.asInstanceOf[js.Any])
+      
+      inline def `setContain-intrinsic-block-sizeUndefined`: Self = StObject.set(x, "contain-intrinsic-block-size", js.undefined)
+      
+      inline def `setContain-intrinsic-height`(value: String): Self = StObject.set(x, "contain-intrinsic-height", value.asInstanceOf[js.Any])
+      
+      inline def `setContain-intrinsic-heightUndefined`: Self = StObject.set(x, "contain-intrinsic-height", js.undefined)
+      
+      inline def `setContain-intrinsic-inline-size`(value: String): Self = StObject.set(x, "contain-intrinsic-inline-size", value.asInstanceOf[js.Any])
+      
+      inline def `setContain-intrinsic-inline-sizeUndefined`: Self = StObject.set(x, "contain-intrinsic-inline-size", js.undefined)
+      
+      inline def `setContain-intrinsic-size`(value: String): Self = StObject.set(x, "contain-intrinsic-size", value.asInstanceOf[js.Any])
+      
+      inline def `setContain-intrinsic-sizeUndefined`: Self = StObject.set(x, "contain-intrinsic-size", js.undefined)
+      
+      inline def `setContain-intrinsic-width`(value: String): Self = StObject.set(x, "contain-intrinsic-width", value.asInstanceOf[js.Any])
+      
+      inline def `setContain-intrinsic-widthUndefined`: Self = StObject.set(x, "contain-intrinsic-width", js.undefined)
+      
+      inline def setContainIntrinsicBlockSize(value: String): Self = StObject.set(x, "containIntrinsicBlockSize", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicBlockSizeUndefined: Self = StObject.set(x, "containIntrinsicBlockSize", js.undefined)
+      
+      inline def setContainIntrinsicHeight(value: String): Self = StObject.set(x, "containIntrinsicHeight", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicHeightUndefined: Self = StObject.set(x, "containIntrinsicHeight", js.undefined)
+      
+      inline def setContainIntrinsicInlineSize(value: String): Self = StObject.set(x, "containIntrinsicInlineSize", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicInlineSizeUndefined: Self = StObject.set(x, "containIntrinsicInlineSize", js.undefined)
+      
+      inline def setContainIntrinsicSize(value: String): Self = StObject.set(x, "containIntrinsicSize", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicSizeUndefined: Self = StObject.set(x, "containIntrinsicSize", js.undefined)
+      
+      inline def setContainIntrinsicWidth(value: String): Self = StObject.set(x, "containIntrinsicWidth", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicWidthUndefined: Self = StObject.set(x, "containIntrinsicWidth", js.undefined)
+      
       inline def setContainUndefined: Self = StObject.set(x, "contain", js.undefined)
+      
+      inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      
+      inline def `setContainer-name`(value: String): Self = StObject.set(x, "container-name", value.asInstanceOf[js.Any])
+      
+      inline def `setContainer-nameUndefined`: Self = StObject.set(x, "container-name", js.undefined)
+      
+      inline def `setContainer-type`(value: String): Self = StObject.set(x, "container-type", value.asInstanceOf[js.Any])
+      
+      inline def `setContainer-typeUndefined`: Self = StObject.set(x, "container-type", js.undefined)
+      
+      inline def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+      
+      inline def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
+      
+      inline def setContainerType(value: String): Self = StObject.set(x, "containerType", value.asInstanceOf[js.Any])
+      
+      inline def setContainerTypeUndefined: Self = StObject.set(x, "containerType", js.undefined)
+      
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -9579,6 +9725,10 @@ object anon {
       
       inline def `setFont-optical-sizingUndefined`: Self = StObject.set(x, "font-optical-sizing", js.undefined)
       
+      inline def `setFont-palette`(value: String): Self = StObject.set(x, "font-palette", value.asInstanceOf[js.Any])
+      
+      inline def `setFont-paletteUndefined`: Self = StObject.set(x, "font-palette", js.undefined)
+      
       inline def `setFont-size`(value: String): Self = StObject.set(x, "font-size", value.asInstanceOf[js.Any])
       
       inline def `setFont-size-adjust`(value: String): Self = StObject.set(x, "font-size-adjust", value.asInstanceOf[js.Any])
@@ -9616,6 +9766,10 @@ object anon {
       inline def `setFont-variant-east-asian`(value: String): Self = StObject.set(x, "font-variant-east-asian", value.asInstanceOf[js.Any])
       
       inline def `setFont-variant-east-asianUndefined`: Self = StObject.set(x, "font-variant-east-asian", js.undefined)
+      
+      inline def `setFont-variant-emoji`(value: String): Self = StObject.set(x, "font-variant-emoji", value.asInstanceOf[js.Any])
+      
+      inline def `setFont-variant-emojiUndefined`: Self = StObject.set(x, "font-variant-emoji", js.undefined)
       
       inline def `setFont-variant-ligatures`(value: String): Self = StObject.set(x, "font-variant-ligatures", value.asInstanceOf[js.Any])
       
@@ -9659,6 +9813,10 @@ object anon {
       
       inline def setFontOpticalSizingUndefined: Self = StObject.set(x, "fontOpticalSizing", js.undefined)
       
+      inline def setFontPalette(value: String): Self = StObject.set(x, "fontPalette", value.asInstanceOf[js.Any])
+      
+      inline def setFontPaletteUndefined: Self = StObject.set(x, "fontPalette", js.undefined)
+      
       inline def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
       inline def setFontSizeAdjust(value: String): Self = StObject.set(x, "fontSizeAdjust", value.asInstanceOf[js.Any])
@@ -9698,6 +9856,10 @@ object anon {
       inline def setFontVariantEastAsian(value: String): Self = StObject.set(x, "fontVariantEastAsian", value.asInstanceOf[js.Any])
       
       inline def setFontVariantEastAsianUndefined: Self = StObject.set(x, "fontVariantEastAsian", js.undefined)
+      
+      inline def setFontVariantEmoji(value: String): Self = StObject.set(x, "fontVariantEmoji", value.asInstanceOf[js.Any])
+      
+      inline def setFontVariantEmojiUndefined: Self = StObject.set(x, "fontVariantEmoji", js.undefined)
       
       inline def setFontVariantLigatures(value: String): Self = StObject.set(x, "fontVariantLigatures", value.asInstanceOf[js.Any])
       
@@ -9897,9 +10059,17 @@ object anon {
       
       inline def `setHyphenate-characterUndefined`: Self = StObject.set(x, "hyphenate-character", js.undefined)
       
+      inline def `setHyphenate-limit-chars`(value: String): Self = StObject.set(x, "hyphenate-limit-chars", value.asInstanceOf[js.Any])
+      
+      inline def `setHyphenate-limit-charsUndefined`: Self = StObject.set(x, "hyphenate-limit-chars", js.undefined)
+      
       inline def setHyphenateCharacter(value: String): Self = StObject.set(x, "hyphenateCharacter", value.asInstanceOf[js.Any])
       
       inline def setHyphenateCharacterUndefined: Self = StObject.set(x, "hyphenateCharacter", js.undefined)
+      
+      inline def setHyphenateLimitChars(value: String): Self = StObject.set(x, "hyphenateLimitChars", value.asInstanceOf[js.Any])
+      
+      inline def setHyphenateLimitCharsUndefined: Self = StObject.set(x, "hyphenateLimitChars", js.undefined)
       
       inline def setHyphens(value: String): Self = StObject.set(x, "hyphens", value.asInstanceOf[js.Any])
       
@@ -10219,6 +10389,10 @@ object anon {
       
       inline def `setMargin-topUndefined`: Self = StObject.set(x, "margin-top", js.undefined)
       
+      inline def `setMargin-trim`(value: String): Self = StObject.set(x, "margin-trim", value.asInstanceOf[js.Any])
+      
+      inline def `setMargin-trimUndefined`: Self = StObject.set(x, "margin-trim", js.undefined)
+      
       inline def setMarginBlock(value: String): Self = StObject.set(x, "marginBlock", value.asInstanceOf[js.Any])
       
       inline def setMarginBlockEnd(value: String): Self = StObject.set(x, "marginBlockEnd", value.asInstanceOf[js.Any])
@@ -10258,6 +10432,10 @@ object anon {
       inline def setMarginTop(value: String): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
       
       inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
+      
+      inline def setMarginTrim(value: String): Self = StObject.set(x, "marginTrim", value.asInstanceOf[js.Any])
+      
+      inline def setMarginTrimUndefined: Self = StObject.set(x, "marginTrim", js.undefined)
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
@@ -11343,6 +11521,10 @@ object anon {
       
       inline def `setOffset-pathUndefined`: Self = StObject.set(x, "offset-path", js.undefined)
       
+      inline def `setOffset-position`(value: String): Self = StObject.set(x, "offset-position", value.asInstanceOf[js.Any])
+      
+      inline def `setOffset-positionUndefined`: Self = StObject.set(x, "offset-position", js.undefined)
+      
       inline def `setOffset-rotate`(value: String): Self = StObject.set(x, "offset-rotate", value.asInstanceOf[js.Any])
       
       inline def `setOffset-rotateUndefined`: Self = StObject.set(x, "offset-rotate", js.undefined)
@@ -11386,6 +11568,10 @@ object anon {
       inline def setOffsetPath(value: String): Self = StObject.set(x, "offsetPath", value.asInstanceOf[js.Any])
       
       inline def setOffsetPathUndefined: Self = StObject.set(x, "offsetPath", js.undefined)
+      
+      inline def setOffsetPosition(value: String): Self = StObject.set(x, "offsetPosition", value.asInstanceOf[js.Any])
+      
+      inline def setOffsetPositionUndefined: Self = StObject.set(x, "offsetPosition", js.undefined)
       
       inline def setOffsetRotate(value: String): Self = StObject.set(x, "offsetRotate", value.asInstanceOf[js.Any])
       
@@ -11637,6 +11823,8 @@ object anon {
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
+      inline def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      
       inline def `setPage-break-after`(value: String): Self = StObject.set(x, "page-break-after", value.asInstanceOf[js.Any])
       
       inline def `setPage-break-afterUndefined`: Self = StObject.set(x, "page-break-after", js.undefined)
@@ -11660,6 +11848,8 @@ object anon {
       inline def setPageBreakInside(value: String): Self = StObject.set(x, "pageBreakInside", value.asInstanceOf[js.Any])
       
       inline def setPageBreakInsideUndefined: Self = StObject.set(x, "pageBreakInside", js.undefined)
+      
+      inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
       
       inline def `setPaint-order`(value: String): Self = StObject.set(x, "paint-order", value.asInstanceOf[js.Any])
       
@@ -11925,6 +12115,18 @@ object anon {
       
       inline def `setScroll-snap-typeUndefined`: Self = StObject.set(x, "scroll-snap-type", js.undefined)
       
+      inline def `setScroll-timeline`(value: String): Self = StObject.set(x, "scroll-timeline", value.asInstanceOf[js.Any])
+      
+      inline def `setScroll-timeline-axis`(value: String): Self = StObject.set(x, "scroll-timeline-axis", value.asInstanceOf[js.Any])
+      
+      inline def `setScroll-timeline-axisUndefined`: Self = StObject.set(x, "scroll-timeline-axis", js.undefined)
+      
+      inline def `setScroll-timeline-name`(value: String): Self = StObject.set(x, "scroll-timeline-name", value.asInstanceOf[js.Any])
+      
+      inline def `setScroll-timeline-nameUndefined`: Self = StObject.set(x, "scroll-timeline-name", js.undefined)
+      
+      inline def `setScroll-timelineUndefined`: Self = StObject.set(x, "scroll-timeline", js.undefined)
+      
       inline def setScrollBehavior(value: String): Self = StObject.set(x, "scrollBehavior", value.asInstanceOf[js.Any])
       
       inline def setScrollBehaviorUndefined: Self = StObject.set(x, "scrollBehavior", js.undefined)
@@ -12072,6 +12274,18 @@ object anon {
       inline def setScrollSnapTypeY(value: String): Self = StObject.set(x, "scrollSnapTypeY", value.asInstanceOf[js.Any])
       
       inline def setScrollSnapTypeYUndefined: Self = StObject.set(x, "scrollSnapTypeY", js.undefined)
+      
+      inline def setScrollTimeline(value: String): Self = StObject.set(x, "scrollTimeline", value.asInstanceOf[js.Any])
+      
+      inline def setScrollTimelineAxis(value: String): Self = StObject.set(x, "scrollTimelineAxis", value.asInstanceOf[js.Any])
+      
+      inline def setScrollTimelineAxisUndefined: Self = StObject.set(x, "scrollTimelineAxis", js.undefined)
+      
+      inline def setScrollTimelineName(value: String): Self = StObject.set(x, "scrollTimelineName", value.asInstanceOf[js.Any])
+      
+      inline def setScrollTimelineNameUndefined: Self = StObject.set(x, "scrollTimelineName", js.undefined)
+      
+      inline def setScrollTimelineUndefined: Self = StObject.set(x, "scrollTimeline", js.undefined)
       
       inline def `setScrollbar-color`(value: String): Self = StObject.set(x, "scrollbar-color", value.asInstanceOf[js.Any])
       
@@ -12532,6 +12746,14 @@ object anon {
       inline def setVerticalAlign(value: String): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
       
       inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+      
+      inline def `setView-transition-name`(value: String): Self = StObject.set(x, "view-transition-name", value.asInstanceOf[js.Any])
+      
+      inline def `setView-transition-nameUndefined`: Self = StObject.set(x, "view-transition-name", js.undefined)
+      
+      inline def setViewTransitionName(value: String): Self = StObject.set(x, "viewTransitionName", value.asInstanceOf[js.Any])
+      
+      inline def setViewTransitionNameUndefined: Self = StObject.set(x, "viewTransitionName", js.undefined)
       
       inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
       

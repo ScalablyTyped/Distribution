@@ -7,32 +7,92 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object controlZoomMod {
   
+  /**
+    * @typedef {Object} Options
+    * @property {number} [duration=250] Animation duration in milliseconds.
+    * @property {string} [className='ol-zoom'] CSS class name.
+    * @property {string} [zoomInClassName=className + '-in'] CSS class name for the zoom-in button.
+    * @property {string} [zoomOutClassName=className + '-out'] CSS class name for the zoom-out button.
+    * @property {string|HTMLElement} [zoomInLabel='+'] Text label to use for the zoom-in
+    * button. Instead of text, also an element (e.g. a `span` element) can be used.
+    * @property {string|HTMLElement} [zoomOutLabel='–'] Text label to use for the zoom-out button.
+    * Instead of text, also an element (e.g. a `span` element) can be used.
+    * @property {string} [zoomInTipLabel='Zoom in'] Text label to use for the button tip.
+    * @property {string} [zoomOutTipLabel='Zoom out'] Text label to use for the button tip.
+    * @property {number} [delta=1] The zoom delta applied on each click.
+    * @property {HTMLElement|string} [target] Specify a target if you want the control to be
+    * rendered outside of the map's viewport.
+    */
+  /**
+    * @classdesc
+    * A control with 2 buttons, one for zoom in and one for zoom out.
+    * This control is one of the default controls of a map. To style this control
+    * use css selectors `.ol-zoom-in` and `.ol-zoom-out`.
+    *
+    * @api
+    */
   @JSImport("ol/control/Zoom", JSImport.Default)
   @js.native
+  /**
+    * @param {Options} [options] Zoom options.
+    */
   open class default () extends Zoom {
-    def this(opt_options: Options) = this()
+    def this(options: Options) = this()
   }
   
   trait Options extends StObject {
     
+    /**
+      * CSS class name.
+      */
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * The zoom delta applied on each click.
+      */
     var delta: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Animation duration in milliseconds.
+      */
     var duration: js.UndefOr[Double] = js.undefined
     
-    var target: js.UndefOr[HTMLElement | String] = js.undefined
+    /**
+      * Specify a target if you want the control to be
+      * rendered outside of the map's viewport.
+      */
+    var target: js.UndefOr[String | HTMLElement] = js.undefined
     
+    /**
+      * CSS class name for the zoom-in button.
+      */
     var zoomInClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Text label to use for the zoom-in
+      * button. Instead of text, also an element (e.g. a `span` element) can be used.
+      */
     var zoomInLabel: js.UndefOr[String | HTMLElement] = js.undefined
     
+    /**
+      * Text label to use for the button tip.
+      */
     var zoomInTipLabel: js.UndefOr[String] = js.undefined
     
+    /**
+      * CSS class name for the zoom-out button.
+      */
     var zoomOutClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Text label to use for the zoom-out button.
+      * Instead of text, also an element (e.g. a `span` element) can be used.
+      */
     var zoomOutLabel: js.UndefOr[String | HTMLElement] = js.undefined
     
+    /**
+      * Text label to use for the button tip.
+      */
     var zoomOutTipLabel: js.UndefOr[String] = js.undefined
   }
   object Options {
@@ -57,7 +117,7 @@ object controlZoomMod {
       
       inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      inline def setTarget(value: HTMLElement | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String | HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -87,7 +147,51 @@ object controlZoomMod {
     }
   }
   
+  /**
+    * @typedef {Object} Options
+    * @property {number} [duration=250] Animation duration in milliseconds.
+    * @property {string} [className='ol-zoom'] CSS class name.
+    * @property {string} [zoomInClassName=className + '-in'] CSS class name for the zoom-in button.
+    * @property {string} [zoomOutClassName=className + '-out'] CSS class name for the zoom-out button.
+    * @property {string|HTMLElement} [zoomInLabel='+'] Text label to use for the zoom-in
+    * button. Instead of text, also an element (e.g. a `span` element) can be used.
+    * @property {string|HTMLElement} [zoomOutLabel='–'] Text label to use for the zoom-out button.
+    * Instead of text, also an element (e.g. a `span` element) can be used.
+    * @property {string} [zoomInTipLabel='Zoom in'] Text label to use for the button tip.
+    * @property {string} [zoomOutTipLabel='Zoom out'] Text label to use for the button tip.
+    * @property {number} [delta=1] The zoom delta applied on each click.
+    * @property {HTMLElement|string} [target] Specify a target if you want the control to be
+    * rendered outside of the map's viewport.
+    */
+  /**
+    * @classdesc
+    * A control with 2 buttons, one for zoom in and one for zoom out.
+    * This control is one of the default controls of a map. To style this control
+    * use css selectors `.ol-zoom-in` and `.ol-zoom-out`.
+    *
+    * @api
+    */
   @js.native
   trait Zoom
-    extends typings.ol.controlControlMod.default
+    extends typings.ol.controlControlMod.default {
+    
+    /**
+      * @type {number}
+      * @private
+      */
+    /* private */ var duration_ : Any = js.native
+    
+    /**
+      * @param {number} delta Zoom delta.
+      * @param {MouseEvent} event The event to handle
+      * @private
+      */
+    /* private */ var handleClick_ : Any = js.native
+    
+    /**
+      * @param {number} delta Zoom delta.
+      * @private
+      */
+    /* private */ var zoomByDelta_ : Any = js.native
+  }
 }

@@ -30,7 +30,7 @@ trait VoxelIsosurface extends StObject {
   /**
     * The label string for this isosurface.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#VoxelIsosurface)
+    * [Read more...](global.html)
     */
   var label: js.UndefOr[String] = js.undefined
   

@@ -1,7 +1,7 @@
 package typings.openui5
 
 import typings.openui5.anon.ChangedItem
-import typings.openui5.anon.`17`
+import typings.openui5.anon.`20`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMComboBoxBaseMod.ComboBoxBaseSettings
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -333,6 +333,8 @@ object sapMMultiComboBoxMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:selectionChange selectionChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -344,6 +346,8 @@ object sapMMultiComboBoxMod {
     mParameters: ChangedItem): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:selectionFinish selectionFinish} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -352,7 +356,7 @@ object sapMMultiComboBoxMod {
     def fireSelectionFinish(/**
       * Parameters to pass along with the event
       */
-    mParameters: `17`): this.type = js.native
+    mParameters: `20`): this.type = js.native
     
     /**
       * Retrieves the selected item objects from the association named `selectedItems`.
@@ -395,16 +399,22 @@ object sapMMultiComboBoxMod {
     oItem: typings.openui5.sapUiCoreItemMod.default): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * This hook method is called after the MultiComboBox's Pop-up is rendered.
       */
     def onAfterRenderingPicker(): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * This hook method is called before the MultiComboBox is rendered.
       */
     def onBeforeRendering(): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Handles control click event.
       */
     def onclick(oEvent: Unit): Unit = js.native

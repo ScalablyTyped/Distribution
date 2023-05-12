@@ -14,10 +14,14 @@ object buildSrcGrpcJsMod {
     def this(name: String, version: String) = this()
     def this(name: String, version: String, config: GrpcInstrumentationConfig) = this()
     
+    /* private */ var _createMetadataCapture: Any = js.native
+    
     /**
       * Parse initial client call properties and start a span to trace its execution
       */
     /* private */ var _getPatchedClientMethods: Any = js.native
+    
+    /* private */ var _metadataCapture: Any = js.native
     
     /**
       * Entry point for applying client patches to `grpc.makeClientConstructor(...)` equivalents
@@ -44,5 +48,7 @@ object buildSrcGrpcJsMod {
       * client_stream, server_stream, bidi, unary server handler calls.
       */
     /* private */ var _patchServer: Any = js.native
+    
+    def setConfig(config: GrpcInstrumentationConfig): Unit = js.native
   }
 }

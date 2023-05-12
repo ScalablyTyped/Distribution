@@ -43,6 +43,12 @@ open class ReferenceSelector protected () extends AssociationWidget {
   def gotoPageSettings: PageSettings = js.native
   def gotoPageSettings_=(newValue: PageSettings): Unit = js.native
   
+  /**
+    * In version 9.24.0: introduced
+    */
+  def nativeAccessibilitySettings: AccessibilitySettings | Null = js.native
+  def nativeAccessibilitySettings_=(newValue: AccessibilitySettings | Null): Unit = js.native
+  
   def renderMode: ReferenceSelectorRenderModeType = js.native
   def renderMode_=(newValue: ReferenceSelectorRenderModeType): Unit = js.native
   

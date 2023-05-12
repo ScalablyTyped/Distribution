@@ -1,5 +1,6 @@
 package typings.azureMsalNode
 
+import typings.azureMsalCommon.distAccountAccountInfoMod.AccountInfo
 import typings.azureMsalCommon.distResponseAuthenticationResultMod.AuthenticationResult
 import typings.azureMsalCommon.mod.Logger
 import typings.azureMsalNode.distCacheTokenCacheMod.TokenCache
@@ -11,6 +12,7 @@ import typings.azureMsalNode.distRequestAuthorizationUrlRequestMod.Authorization
 import typings.azureMsalNode.distRequestDeviceCodeRequestMod.DeviceCodeRequest
 import typings.azureMsalNode.distRequestInteractiveRequestMod.InteractiveRequest
 import typings.azureMsalNode.distRequestRefreshTokenRequestMod.RefreshTokenRequest
+import typings.azureMsalNode.distRequestSignOutRequestMod.SignOutRequest
 import typings.azureMsalNode.distRequestSilentFlowRequestMod.SilentFlowRequest
 import typings.azureMsalNode.distRequestUsernamePasswordRequestMod.UsernamePasswordRequest
 import org.scalablytyped.runtime.StObject
@@ -102,6 +104,10 @@ object distClientPublicClientApplicationMod {
     /* InferMemberOverrides */
     override def clearCache(): Unit = js.native
     
+    /** Gets all cached accounts */
+    /* CompleteClass */
+    override def getAllAccounts(): js.Promise[js.Array[AccountInfo]] = js.native
+    
     /**
       * Creates the URL of the authorization request, letting the user input credentials and consent to the
       * application. The URL targets the /authorize endpoint of the authority configured in the
@@ -126,11 +132,17 @@ object distClientPublicClientApplicationMod {
     /* InferMemberOverrides */
     override def getTokenCache(): TokenCache = js.native
     
+    /* private */ var nativeBrokerPlugin: Any = js.native
+    
     /**
       * Replaces the default logger set in configurations with new Logger with new configurations
       * @param logger - Logger instance
       */
     /* InferMemberOverrides */
     override def setLogger(logger: Logger): Unit = js.native
+    
+    /** Removes cache artifacts associated with the given account */
+    /* CompleteClass */
+    override def signOut(request: SignOutRequest): js.Promise[Unit] = js.native
   }
 }

@@ -21,7 +21,7 @@ object libFormMod {
     def this(props: FormProps[FormData, P, ErrorType]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: FormProps[FormData, P, ErrorType], context: Any) = this()
   }
@@ -33,7 +33,7 @@ object libFormMod {
     def this(props: FormProps[FormData, P, ErrorType]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: FormProps[FormData, P, ErrorType], context: Any) = this()
   }

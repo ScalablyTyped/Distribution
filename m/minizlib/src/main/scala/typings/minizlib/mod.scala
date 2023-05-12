@@ -535,14 +535,10 @@ object mod {
     inline def BrotliDecompress: typings.minizlib.minizlibStrings.BrotliDecompress = "BrotliDecompress".asInstanceOf[typings.minizlib.minizlibStrings.BrotliDecompress]
   }
   
-  /* Inlined parent std.Omit<minipass.minipass.StringOptions, 'encoding'> */
-  trait MiniPassOptions extends StObject {
-    
-    var async: js.UndefOr[Boolean] = js.undefined
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in std.Exclude<keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MiniPass.StringOptions * / any, 'encoding'> ]: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MiniPass.StringOptions * / any[P]} */ trait MiniPassOptions extends StObject {
     
     var encoding: js.UndefOr[BufferEncoding | buffer | Null] = js.undefined
-    
-    var objectMode: js.UndefOr[Boolean] = js.undefined
   }
   object MiniPassOptions {
     
@@ -554,19 +550,11 @@ object mod {
     @scala.inline
     implicit open class MutableBuilder[Self <: MiniPassOptions] (val x: Self) extends AnyVal {
       
-      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
-      
-      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
-      
       inline def setEncoding(value: BufferEncoding | buffer): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
       inline def setEncodingNull: Self = StObject.set(x, "encoding", null)
       
       inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
-      
-      inline def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
-      
-      inline def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
     }
   }
   

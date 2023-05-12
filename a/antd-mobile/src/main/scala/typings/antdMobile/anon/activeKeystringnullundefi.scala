@@ -41,18 +41,20 @@ import typings.antdMobile.antdMobileStrings.time
 import typings.antdMobile.antdMobileStrings.tree
 import typings.antdMobile.antdMobileStrings.vertical
 import typings.antdMobile.esComponentsDropdownDropdownMod.DropdownRef
+import typings.antdMobile.esUtilsRenderToContainerMod.GetContainer
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.Key
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
+import typings.std.HTMLElement
 import typings.std.Partial
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  activeKey :string | null | undefined,   defaultActiveKey :string | null | undefined,   closeOnMaskClick :boolean | undefined,   closeOnClickAway :boolean | undefined,   onChange :(key : string | null): void | undefined,   arrow :react.react.ReactNode | undefined,   className :string | undefined,   style :react.react.CSSProperties & std.Partial<std.Record<never, string>> | undefined,   tabIndex :number | undefined,   children :react.react.ReactNode | undefined} & react.react.AriaAttributes & react.react.RefAttributes<antd-mobile.antd-mobile/es/components/dropdown/dropdown.DropdownRef> */
+/* Inlined {  activeKey :string | null | undefined,   defaultActiveKey :string | null | undefined,   closeOnMaskClick :boolean | undefined,   closeOnClickAway :boolean | undefined,   onChange :(key : string | null): void | undefined,   arrow :react.react.ReactNode | undefined,   getContainer :antd-mobile.antd-mobile/es/components/popup.PopupProps['getContainer'] | undefined,   className :string | undefined,   style :react.react.CSSProperties & std.Partial<std.Record<never, string>> | undefined,   tabIndex :number | undefined,   children :react.react.ReactNode | undefined} & react.react.AriaAttributes & react.react.RefAttributes<antd-mobile.antd-mobile/es/components/dropdown/dropdown.DropdownRef> */
 trait activeKeystringnullundefi extends StObject {
   
   var activeKey: js.UndefOr[String | Null] = js.undefined
@@ -303,10 +305,17 @@ trait activeKeystringnullundefi extends StObject {
   
   var defaultActiveKey: js.UndefOr[String | Null] = js.undefined
   
+  var getContainer: js.UndefOr[GetContainer] = js.undefined
+  
   var key: js.UndefOr[Key | Null] = js.undefined
   
   var onChange: js.UndefOr[js.Function1[/* key */ String | Null, Unit]] = js.undefined
   
+  /**
+    * Allows getting a ref to the component instance.
+    * Once the component unmounts, React will set `ref.current` to `null` (or call the ref with `null` if you passed a callback ref).
+    * @see https://react.dev/learn/referencing-values-with-refs#refs-and-the-dom
+    */
   var ref: js.UndefOr[Ref[DropdownRef]] = js.undefined
   
   var style: js.UndefOr[CSSProperties & (Partial[Record[scala.Nothing, String]])] = js.undefined
@@ -548,6 +557,14 @@ object activeKeystringnullundefi {
     inline def setDefaultActiveKeyNull: Self = StObject.set(x, "defaultActiveKey", null)
     
     inline def setDefaultActiveKeyUndefined: Self = StObject.set(x, "defaultActiveKey", js.undefined)
+    
+    inline def setGetContainer(value: GetContainer): Self = StObject.set(x, "getContainer", value.asInstanceOf[js.Any])
+    
+    inline def setGetContainerFunction0(value: () => HTMLElement): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
+    
+    inline def setGetContainerNull: Self = StObject.set(x, "getContainer", null)
+    
+    inline def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
     
     inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

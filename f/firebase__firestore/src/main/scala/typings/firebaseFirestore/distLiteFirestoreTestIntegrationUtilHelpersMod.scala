@@ -44,32 +44,36 @@ object distLiteFirestoreTestIntegrationUtilHelpersMod {
     ]
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("withEmptyTestCollection")(persistence.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
+  inline def withEnsuredEagerGcTestDb(fn: js.Function1[/* db */ Firestore, js.Promise[Unit]]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("withEnsuredEagerGcTestDb")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  
+  inline def withEnsuredLruGcTestDb(persistence: Boolean, fn: js.Function1[/* db */ Firestore, js.Promise[Unit]]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("withEnsuredLruGcTestDb")(persistence.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
   inline def withNamedTestDbsOrSkipUnlessUsingEmulator(
     persistence: Boolean,
     dbNames: js.Array[String],
     fn: js.Function1[/* db */ js.Array[Firestore], js.Promise[Unit]]
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("withNamedTestDbsOrSkipUnlessUsingEmulator")(persistence.asInstanceOf[js.Any], dbNames.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  inline def withTestCollection(
+  inline def withTestCollection[T](
     persistence: Boolean,
     docs: StringDictionary[DocumentData],
     fn: js.Function2[
       /* collection */ CollectionReference[DocumentData], 
       /* db */ Firestore, 
-      js.Promise[Unit]
+      js.Promise[T]
     ]
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("withTestCollection")(persistence.asInstanceOf[js.Any], docs.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  ): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("withTestCollection")(persistence.asInstanceOf[js.Any], docs.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
-  inline def withTestCollectionSettings(
+  inline def withTestCollectionSettings[T](
     persistence: Boolean,
     settings: PrivateSettings,
     docs: StringDictionary[DocumentData],
     fn: js.Function2[
       /* collection */ CollectionReference[DocumentData], 
       /* db */ Firestore, 
-      js.Promise[Unit]
+      js.Promise[T]
     ]
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("withTestCollectionSettings")(persistence.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], docs.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  ): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("withTestCollectionSettings")(persistence.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], docs.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
   inline def withTestDb(persistence: Boolean, fn: js.Function1[/* db */ Firestore, js.Promise[Unit]]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("withTestDb")(persistence.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
@@ -79,13 +83,13 @@ object distLiteFirestoreTestIntegrationUtilHelpersMod {
     fn: js.Function1[/* db */ js.Array[Firestore], js.Promise[Unit]]
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("withTestDbs")(persistence.asInstanceOf[js.Any], numDbs.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  inline def withTestDbsSettings(
+  inline def withTestDbsSettings[T](
     persistence: Boolean,
     projectId: String,
     settings: PrivateSettings,
     numDbs: Double,
-    fn: js.Function1[/* db */ js.Array[Firestore], js.Promise[Unit]]
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("withTestDbsSettings")(persistence.asInstanceOf[js.Any], projectId.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], numDbs.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    fn: js.Function1[/* db */ js.Array[Firestore], js.Promise[T]]
+  ): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("withTestDbsSettings")(persistence.asInstanceOf[js.Any], projectId.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], numDbs.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
   inline def withTestDoc(
     persistence: Boolean,

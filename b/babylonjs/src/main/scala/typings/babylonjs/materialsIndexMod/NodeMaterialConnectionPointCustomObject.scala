@@ -16,7 +16,6 @@ open class NodeMaterialConnectionPointCustomObject[T /* <: typings.babylonjs.mat
     * @param direction defines the direction of the connection point
     * @param _blockType
     * @param _blockName
-    * @param _nameForCheking
     */
   def this(
     name: String,
@@ -24,13 +23,5 @@ open class NodeMaterialConnectionPointCustomObject[T /* <: typings.babylonjs.mat
     direction: typings.babylonjs.materialsNodeNodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointDirection,
     _blockType: Instantiable1[/* args (repeated) */ Any, T],
     _blockName: String
-  ) = this()
-  def this(
-    name: String,
-    ownerBlock: typings.babylonjs.materialsNodeNodeMaterialBlockMod.NodeMaterialBlock,
-    direction: typings.babylonjs.materialsNodeNodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointDirection,
-    _blockType: Instantiable1[/* args (repeated) */ Any, T],
-    _blockName: String,
-    _nameForCheking: String
   ) = this()
 }

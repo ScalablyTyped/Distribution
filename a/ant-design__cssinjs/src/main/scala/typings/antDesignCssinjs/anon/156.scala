@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderInlineStartColor
+import typings.csstype.mod.Property.MaxBlockSize
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `156` extends StObject {
   
   var value: js.UndefOr[
-    BorderInlineStartColor | (js.Array[
+    (MaxBlockSize[Double | String]) | (js.Array[
       (Extract[
         js.UndefOr[
-          BorderInlineStartColor | js.Array[NonNullable[js.UndefOr[BorderInlineStartColor]]]
+          (MaxBlockSize[Double | String]) | (js.Array[NonNullable[js.UndefOr[MaxBlockSize[Double | String]]]])
         ], 
         String
-      ]) | NonNullable[js.UndefOr[BorderInlineStartColor]]
+      ]) | (NonNullable[js.UndefOr[MaxBlockSize[Double | String]]])
     ])
   ] = js.native
 }

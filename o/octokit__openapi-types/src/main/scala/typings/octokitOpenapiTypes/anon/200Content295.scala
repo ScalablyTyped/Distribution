@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `200Content295` extends StObject {
   
-  /** Response */
+  /** @description The branch has been successfully synced with the upstream repository */
   var `200`: Content295
 }
 object `200Content295` {

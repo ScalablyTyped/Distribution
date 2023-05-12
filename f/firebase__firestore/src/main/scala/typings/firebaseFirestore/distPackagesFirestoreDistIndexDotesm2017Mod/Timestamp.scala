@@ -42,7 +42,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Timestamp protected ()
   extends StObject
-     with nt {
+     with it {
   /**
     * Creates a new timestamp.
     *
@@ -108,7 +108,7 @@ object Timestamp {
     * @returns A new `Timestamp` representing the same point in time as the given
     *     date.
     */ /* static member */
-  inline def fromDate(t: Any): nt = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(t.asInstanceOf[js.Any]).asInstanceOf[nt]
+  inline def fromDate(t: Any): it = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(t.asInstanceOf[js.Any]).asInstanceOf[it]
   
   /**
     * Creates a new timestamp from the given number of milliseconds.
@@ -118,12 +118,12 @@ object Timestamp {
     * @returns A new `Timestamp` representing the same point in time as the given
     *     number of milliseconds.
     */ /* static member */
-  inline def fromMillis(t: Any): nt = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(t.asInstanceOf[js.Any]).asInstanceOf[nt]
+  inline def fromMillis(t: Any): it = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(t.asInstanceOf[js.Any]).asInstanceOf[it]
   
   /**
     * Creates a new timestamp with the current date, with millisecond precision.
     *
     * @returns a new timestamp representing the current date.
     */ /* static member */
-  inline def now(): nt = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[nt]
+  inline def now(): it = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[it]
 }

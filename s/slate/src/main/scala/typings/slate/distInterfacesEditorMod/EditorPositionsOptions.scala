@@ -1,7 +1,7 @@
 package typings.slate.distInterfacesEditorMod
 
 import typings.slate.distInterfacesLocationMod.Location
-import typings.slate.distInterfacesTypesMod.TextUnitAdjustment
+import typings.slate.distTypesTypesMod.TextUnitAdjustment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EditorPositionsOptions extends StObject {
   
   var at: js.UndefOr[Location] = js.undefined
+  
+  var ignoreNonSelectable: js.UndefOr[Boolean] = js.undefined
   
   var reverse: js.UndefOr[Boolean] = js.undefined
   
@@ -31,6 +33,10 @@ object EditorPositionsOptions {
     inline def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
     
     inline def setAtVarargs(value: Double*): Self = StObject.set(x, "at", js.Array(value*))
+    
+    inline def setIgnoreNonSelectable(value: Boolean): Self = StObject.set(x, "ignoreNonSelectable", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreNonSelectableUndefined: Self = StObject.set(x, "ignoreNonSelectable", js.undefined)
     
     inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     

@@ -12,7 +12,7 @@ trait EncryptionEntities extends StObject {
   var Items: js.UndefOr[EncryptionEntityList] = js.undefined
   
   /**
-    * Number of field pattern items in a field-level encryption content type-profile mapping. 
+    * Number of field pattern items in a field-level encryption content type-profile mapping.
     */
   var Quantity: integer
 }

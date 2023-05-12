@@ -7,10 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GPUProgrammableStage extends StObject {
   
+  /**
+    * Specifies the values of pipeline-overridable constants in the shader module
+    * {@link GPUProgrammableStage#module}.
+    */
   var constants: js.UndefOr[Record[String, GPUPipelineConstantValue]] = js.undefined
   
+  /**
+    * The name of the function in {@link GPUProgrammableStage#module} that this stage will use to
+    * perform its work.
+    */
   var entryPoint: String
   
+  /**
+    * The {@link GPUShaderModule} containing the code that this programmable stage will execute.
+    */
   var module: GPUShaderModule
 }
 object GPUProgrammableStage {

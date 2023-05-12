@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class HttpReader protected () extends Reader[URLString] {
   /**
     * Creates the {@link HttpReader} instance
-    * 
+    *
     * @param url The URL of the data.
     * @param options The options.
     */

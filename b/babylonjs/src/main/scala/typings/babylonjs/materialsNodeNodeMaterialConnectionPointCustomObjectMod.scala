@@ -20,7 +20,6 @@ object materialsNodeNodeMaterialConnectionPointCustomObjectMod {
       * @param direction defines the direction of the connection point
       * @param _blockType
       * @param _blockName
-      * @param _nameForCheking
       */
     def this(
       name: String,
@@ -29,19 +28,9 @@ object materialsNodeNodeMaterialConnectionPointCustomObjectMod {
       _blockType: Instantiable1[/* args (repeated) */ Any, T],
       _blockName: String
     ) = this()
-    def this(
-      name: String,
-      ownerBlock: NodeMaterialBlock,
-      direction: NodeMaterialConnectionPointDirection,
-      _blockType: Instantiable1[/* args (repeated) */ Any, T],
-      _blockName: String,
-      _nameForCheking: String
-    ) = this()
     
     /* private */ var _blockName: Any = js.native
     
-    /* private */ var _blockType: Any = js.native
-    
-    /* private */ var _nameForCheking: Any = js.native
+    var _blockType: Instantiable1[/* args (repeated) */ Any, T] = js.native
   }
 }

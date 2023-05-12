@@ -35,6 +35,15 @@ object mod {
   @js.native
   val AuthProvider: FunctionComponent[AuthProviderProps] = js.native
   
+  /**
+    * Private Route for Components
+    *
+    * @remarks
+    * This Component is based on {@link https://reactrouter.com/web/api/Route | reactrouter.Route}.
+    * So you need to install react-route-dom before use it
+    *
+    * @param props
+    */
   @JSImport("react-auth-kit", "RequireAuth")
   @js.native
   val RequireAuth: FunctionComponent[RequireAuthProps] = js.native

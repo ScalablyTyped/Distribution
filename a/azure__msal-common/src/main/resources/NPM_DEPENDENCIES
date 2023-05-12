@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@azure/msal-common" : "7.4.1"
+      "@azure/msal-common" : "13.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@azure/msal-common" : "7.4.1"
+      "@azure/msal-common" : "13.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -33,7 +33,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined parent devextreme.devextreme.DevExpress.core.Skip<devextreme.devextreme.DevExpress.ui.HierarchicalCollectionWidgetOptions<devextreme.devextreme.DevExpress.ui.dxTreeView<TKey>, devextreme.devextreme.DevExpress.ui.dxTreeViewItem, TKey>, 'dataSource'> */
+/* Inlined parent std.Omit<devextreme.devextreme.DevExpress.ui.HierarchicalCollectionWidgetOptions<devextreme.devextreme.DevExpress.ui.dxTreeView<TKey>, devextreme.devextreme.DevExpress.ui.dxTreeViewItem, TKey>, 'dataSource'> */
 /* Inlined parent devextreme.devextreme.DevExpress.ui.SearchBoxMixinOptions */
 trait dxTreeViewOptions[TKey] extends StObject {
   

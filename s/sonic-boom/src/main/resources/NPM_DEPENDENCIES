@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "sonic-boom" : "3.2.0"
+      "sonic-boom" : "3.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "sonic-boom" : "3.2.0"
+      "sonic-boom" : "3.3.0"
     }
   ],
   "compile-devDependencies" : [

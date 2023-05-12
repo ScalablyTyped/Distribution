@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TypeofFinancialConnection extends StObject {
   
-  val Account: TypeofAccountAccountHolder
+  val Account: TypeofAccount
   
   val AccountListParams: Any
   
@@ -26,7 +26,7 @@ trait TypeofFinancialConnection extends StObject {
 object TypeofFinancialConnection {
   
   inline def apply(
-    Account: TypeofAccountAccountHolder,
+    Account: TypeofAccount,
     AccountListParams: Any,
     AccountRefreshParams: Any,
     AccountsResource: Instantiable0[AccountsResource],
@@ -41,7 +41,7 @@ object TypeofFinancialConnection {
   @scala.inline
   implicit open class MutableBuilder[Self <: TypeofFinancialConnection] (val x: Self) extends AnyVal {
     
-    inline def setAccount(value: TypeofAccountAccountHolder): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: TypeofAccount): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
     
     inline def setAccountListParams(value: Any): Self = StObject.set(x, "AccountListParams", value.asInstanceOf[js.Any])
     

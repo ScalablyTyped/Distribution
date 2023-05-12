@@ -61,6 +61,10 @@ object auth0JsStrings {
   inline def invalid_token: invalid_token = "invalid_token".asInstanceOf[invalid_token]
   
   @js.native
+  sealed trait link extends StObject
+  inline def link: link = "link".asInstanceOf[link]
+  
+  @js.native
   sealed trait login extends StObject
   inline def login: login = "login".asInstanceOf[login]
   

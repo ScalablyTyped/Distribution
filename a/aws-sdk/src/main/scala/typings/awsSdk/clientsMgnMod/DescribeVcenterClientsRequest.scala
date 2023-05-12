@@ -9,7 +9,7 @@ trait DescribeVcenterClientsRequest extends StObject {
   /**
     * Maximum results to be returned in DescribeVcenterClients.
     */
-  var maxResults: js.UndefOr[StrictlyPositiveInteger] = js.undefined
+  var maxResults: js.UndefOr[MaxResultsType] = js.undefined
   
   /**
     * Next pagination token to be provided for DescribeVcenterClients.
@@ -26,7 +26,7 @@ object DescribeVcenterClientsRequest {
   @scala.inline
   implicit open class MutableBuilder[Self <: DescribeVcenterClientsRequest] (val x: Self) extends AnyVal {
     
-    inline def setMaxResults(value: StrictlyPositiveInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResultsType): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     

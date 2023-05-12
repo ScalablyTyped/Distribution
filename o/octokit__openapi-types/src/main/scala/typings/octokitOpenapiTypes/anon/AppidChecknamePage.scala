@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AppidChecknamePage extends StObject {
   
-  /** Filters check suites by GitHub App `id`. */
+  /**
+    * @description Filters check suites by GitHub App `id`.
+    * @example 1
+    */
   var app_id: js.UndefOr[Double] = js.undefined
   
-  /** Returns check runs with the specified `name`. */
   var check_name: js.UndefOr[String] = js.undefined
   
-  /** Page number of the results to fetch. */
   var page: js.UndefOr[Double] = js.undefined
   
-  /** The number of results per page (max 100). */
   var per_page: js.UndefOr[Double] = js.undefined
 }
 object AppidChecknamePage {

@@ -7,17 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HyperParameterTuningJobConfig extends StObject {
   
   /**
-    * The HyperParameterTuningJobObjective object that specifies the objective metric for this tuning job.
+    * The HyperParameterTuningJobObjective specifies the objective metric used to evaluate the performance of training jobs launched by this tuning job.
     */
   var HyperParameterTuningJobObjective: js.UndefOr[typings.awsSdk.clientsSagemakerMod.HyperParameterTuningJobObjective] = js.undefined
   
   /**
-    * The ParameterRanges object that specifies the ranges of hyperparameters that this tuning job searches.
+    * The ParameterRanges object that specifies the ranges of hyperparameters that this tuning job searches over to find the optimal configuration for the highest model performance against your chosen objective metric. 
     */
   var ParameterRanges: js.UndefOr[typings.awsSdk.clientsSagemakerMod.ParameterRanges] = js.undefined
   
   /**
-    * The ResourceLimits object that specifies the maximum number of training jobs and parallel training jobs for this tuning job.
+    * A value used to initialize a pseudo-random number generator. Setting a random seed and using the same seed later for the same tuning job will allow hyperparameter optimization to find more a consistent hyperparameter configuration between the two runs.
+    */
+  var RandomSeed: js.UndefOr[typings.awsSdk.clientsSagemakerMod.RandomSeed] = js.undefined
+  
+  /**
+    * The ResourceLimits object that specifies the maximum number of training and parallel training jobs that can be used for this hyperparameter tuning job.
     */
   var ResourceLimits: typings.awsSdk.clientsSagemakerMod.ResourceLimits
   
@@ -58,6 +63,10 @@ object HyperParameterTuningJobConfig {
     inline def setParameterRanges(value: ParameterRanges): Self = StObject.set(x, "ParameterRanges", value.asInstanceOf[js.Any])
     
     inline def setParameterRangesUndefined: Self = StObject.set(x, "ParameterRanges", js.undefined)
+    
+    inline def setRandomSeed(value: RandomSeed): Self = StObject.set(x, "RandomSeed", value.asInstanceOf[js.Any])
+    
+    inline def setRandomSeedUndefined: Self = StObject.set(x, "RandomSeed", js.undefined)
     
     inline def setResourceLimits(value: ResourceLimits): Self = StObject.set(x, "ResourceLimits", value.asInstanceOf[js.Any])
     

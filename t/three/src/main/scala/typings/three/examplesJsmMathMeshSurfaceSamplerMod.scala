@@ -1,6 +1,7 @@
 package typings.three
 
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.Color
 import typings.three.srcThreeMod.Mesh
@@ -14,7 +15,7 @@ object examplesJsmMathMeshSurfaceSamplerMod {
   @JSImport("three/examples/jsm/math/MeshSurfaceSampler", "MeshSurfaceSampler")
   @js.native
   open class MeshSurfaceSampler protected () extends StObject {
-    def this(mesh: Mesh[BufferGeometry, Material | js.Array[Material]]) = this()
+    def this(mesh: Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) = this()
     
     def binarySearch(x: Double): Double = js.native
     
@@ -22,7 +23,7 @@ object examplesJsmMathMeshSurfaceSamplerMod {
     
     var distribution: js.typedarray.Float32Array | Null = js.native
     
-    var geometry: typings.three.srcThreeMod.BufferGeometry = js.native
+    var geometry: typings.three.srcThreeMod.BufferGeometry[NormalBufferAttributes] = js.native
     
     var positionAttribute: js.typedarray.Float32Array = js.native
     

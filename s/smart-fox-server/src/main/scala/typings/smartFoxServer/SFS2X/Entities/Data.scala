@@ -16,13 +16,13 @@ object Data {
       */
     def isFloat(): Boolean
     
-    /** @type {number} Returns the position along the X axis. */
+    /** Returns the position along the X axis. */
     var px: Double
     
-    /** @type {number} Returns the position along the Y axis. */
+    /** Returns the position along the Y axis. */
     var py: Double
     
-    /** @type {number} Returns the position along the Z axis. */
+    /** Returns the position along the Z axis. */
     var pz: Double
   }
   object Vec3D {

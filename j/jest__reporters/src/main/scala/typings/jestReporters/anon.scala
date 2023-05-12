@@ -29,6 +29,26 @@ object anon {
     }
   }
   
+  trait Silent extends StObject {
+    
+    var silent: js.UndefOr[Boolean] = js.undefined
+  }
+  object Silent {
+    
+    inline def apply(): Silent = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Silent]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Silent] (val x: Self) extends AnyVal {
+      
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      
+      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+    }
+  }
+  
   trait Test extends StObject {
     
     var test: typings.jestTestResult.mod.Test

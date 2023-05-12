@@ -18,7 +18,7 @@ trait AnchorHTMLAttributes
   
   var ping: js.UndefOr[String] = js.undefined
   
-  var referrerpolicy: js.UndefOr[String] = js.undefined
+  var referrerpolicy: js.UndefOr[HTMLAttributeReferrerPolicy] = js.undefined
   
   var rel: js.UndefOr[String] = js.undefined
   
@@ -56,7 +56,7 @@ object AnchorHTMLAttributes {
     
     inline def setPingUndefined: Self = StObject.set(x, "ping", js.undefined)
     
-    inline def setReferrerpolicy(value: String): Self = StObject.set(x, "referrerpolicy", value.asInstanceOf[js.Any])
+    inline def setReferrerpolicy(value: HTMLAttributeReferrerPolicy): Self = StObject.set(x, "referrerpolicy", value.asInstanceOf[js.Any])
     
     inline def setReferrerpolicyUndefined: Self = StObject.set(x, "referrerpolicy", js.undefined)
     

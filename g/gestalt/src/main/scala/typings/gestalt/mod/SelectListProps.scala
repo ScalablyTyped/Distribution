@@ -1,18 +1,20 @@
 package typings.gestalt.mod
 
-import typings.gestalt.anon.ValueString
+import typings.gestalt.anon.Value
 import typings.gestalt.gestaltStrings.hidden
 import typings.gestalt.gestaltStrings.lg
 import typings.gestalt.gestaltStrings.md
 import typings.gestalt.gestaltStrings.visible
-import typings.react.mod.ReactNode
+import typings.react.mod.SyntheticEvent
+import typings.std.Event
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SelectListProps extends StObject {
   
-  var children: ReactNode
+  var children: Node
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
@@ -28,7 +30,7 @@ trait SelectListProps extends StObject {
   
   var name: js.UndefOr[String] = js.undefined
   
-  def onChange(args: ValueString): Unit
+  var onChange: AbstractEventHandler[SyntheticEvent[HTMLElement, Event], Value]
   
   var placeholder: js.UndefOr[String] = js.undefined
   
@@ -38,7 +40,10 @@ trait SelectListProps extends StObject {
 }
 object SelectListProps {
   
-  inline def apply(id: String, onChange: ValueString => Unit): SelectListProps = {
+  inline def apply(
+    id: String,
+    onChange: /* arg */ Value & (typings.gestalt.anon.Event[SyntheticEvent[HTMLElement, Event]]) => Unit
+  ): SelectListProps = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
     __obj.asInstanceOf[SelectListProps]
   }
@@ -46,7 +51,7 @@ object SelectListProps {
   @scala.inline
   implicit open class MutableBuilder[Self <: SelectListProps] (val x: Self) extends AnyVal {
     
-    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Node): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
@@ -76,7 +81,7 @@ object SelectListProps {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setOnChange(value: ValueString => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* arg */ Value & (typings.gestalt.anon.Event[SyntheticEvent[HTMLElement, Event]]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     

@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * END: WebXR DOM Overlays Module
-  * https://immersive-web.github.io/dom-overlays/
+  * END: WebXR Depth Sensing Moudle
+  * https://www.w3.org/TR/webxr-depth-sensing-1/
   */
 // This file contains native only extensions for WebXR. These APIs are not supported in the browser yet.
 // They are intended for use with either Babylon Native https://github.com/BabylonJS/BabylonNative or

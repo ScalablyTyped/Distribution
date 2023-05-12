@@ -106,7 +106,7 @@ trait SceneView
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#highlightOptions)
     */
-  var highlightOptions: SceneViewHighlightOptions = js.native
+  var highlightOptions: HighlightOptions = js.native
   
   /**
     * Returns [hit test results](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#HitTestResult) from each layer that intersects the specified screen coordinates.

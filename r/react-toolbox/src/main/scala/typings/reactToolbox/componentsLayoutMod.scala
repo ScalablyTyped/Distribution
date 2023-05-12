@@ -17,7 +17,7 @@ object componentsLayoutMod {
     def this(props: LayoutProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: LayoutProps, context: Any) = this()
   }
@@ -29,7 +29,7 @@ object componentsLayoutMod {
     def this(props: NavDrawerProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: NavDrawerProps, context: Any) = this()
   }
@@ -41,7 +41,7 @@ object componentsLayoutMod {
     def this(props: PanelProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: PanelProps, context: Any) = this()
   }
@@ -53,7 +53,7 @@ object componentsLayoutMod {
     def this(props: SidebarProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SidebarProps, context: Any) = this()
   }

@@ -9,17 +9,17 @@ trait LocationPosition
      with BackboneElement {
   
   /**
-    * Altitude. The value domain and the interpretation are the same as for the text of the altitude element in KML (see notes below).
+    * Altitude. The value domain and the interpretation are the same as for the text of the altitude element in KML (see notes on Location main page).
     */
   var altitude: js.UndefOr[Double] = js.undefined
   
   /**
-    * Latitude. The value domain and the interpretation are the same as for the text of the latitude element in KML (see notes below).
+    * Latitude. The value domain and the interpretation are the same as for the text of the latitude element in KML (see notes on Location main page).
     */
   var latitude: Double
   
   /**
-    * Longitude. The value domain and the interpretation are the same as for the text of the longitude element in KML (see notes below).
+    * Longitude. The value domain and the interpretation are the same as for the text of the longitude element in KML (see notes on Location main page).
     */
   var longitude: Double
 }

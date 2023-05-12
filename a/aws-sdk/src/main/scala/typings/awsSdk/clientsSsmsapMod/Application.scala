@@ -7,42 +7,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Application extends StObject {
   
   /**
-    * 
+    * The Amazon Resource Name (ARN) of the Application Registry.
     */
   var AppRegistryArn: js.UndefOr[typings.awsSdk.clientsSsmsapMod.AppRegistryArn] = js.undefined
   
   /**
-    * 
+    * The Amazon Resource Name (ARN) of the application.
     */
   var Arn: js.UndefOr[SsmSapArn] = js.undefined
   
   /**
-    * 
+    * The components of the application.
     */
   var Components: js.UndefOr[ComponentIdList] = js.undefined
   
   /**
-    * 
+    * The ID of the application.
     */
   var Id: js.UndefOr[ApplicationId] = js.undefined
   
   /**
-    * 
+    * The time at which the application was last updated.
     */
   var LastUpdated: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * 
+    * The status of the application.
     */
   var Status: js.UndefOr[ApplicationStatus] = js.undefined
   
   /**
-    * 
+    * The status message.
     */
   var StatusMessage: js.UndefOr[String] = js.undefined
   
   /**
-    * 
+    * The type of the application.
     */
   var Type: js.UndefOr[ApplicationType] = js.undefined
 }

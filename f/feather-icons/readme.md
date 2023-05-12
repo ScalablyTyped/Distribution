@@ -1,7 +1,7 @@
 
 # Scala.js typings for feather-icons
 
-Typings are for version 4.7
+Typings are for version 4.29
 
 ## Library description:
 Simply beautiful open source icons

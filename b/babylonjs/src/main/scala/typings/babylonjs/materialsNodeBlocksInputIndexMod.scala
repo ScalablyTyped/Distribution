@@ -19,6 +19,8 @@ object materialsNodeBlocksInputIndexMod {
     
     /* 0 */ val None: typings.babylonjs.materialsNodeBlocksInputAnimatedInputBlockTypesMod.AnimatedInputBlockTypes.None & Double = js.native
     
+    /* 2 */ val RealTime: typings.babylonjs.materialsNodeBlocksInputAnimatedInputBlockTypesMod.AnimatedInputBlockTypes.RealTime & Double = js.native
+    
     /* 1 */ val Time: typings.babylonjs.materialsNodeBlocksInputAnimatedInputBlockTypesMod.AnimatedInputBlockTypes.Time & Double = js.native
   }
   

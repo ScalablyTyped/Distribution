@@ -30,14 +30,14 @@ trait ObservationDefinitionComponent
   ] = js.undefined
   
   /**
+    * Units allowed for the valueQuantity element in the instance observations conforming to this ObservationDefinition.
+    */
+  var permittedUnit: js.UndefOr[js.Array[Coding]] = js.undefined
+  
+  /**
     * A set of qualified values associated with a context and a set of conditions -  provides a range for quantitative and ordinal observations and a collection of value sets for qualitative observations.
     */
   var qualifiedValue: js.UndefOr[js.Array[ObservationDefinitionQualifiedValue]] = js.undefined
-  
-  /**
-    * Characteristics for quantitative results of this observation.
-    */
-  var quantitativeDetails: js.UndefOr[ObservationDefinitionQuantitativeDetails] = js.undefined
 }
 object ObservationDefinitionComponent {
   
@@ -63,15 +63,17 @@ object ObservationDefinitionComponent {
       value: (typings.fhir.fhirStrings.Quantity | typings.fhir.fhirStrings.CodeableConcept | string | boolean | integer | typings.fhir.fhirStrings.Range | typings.fhir.fhirStrings.Ratio | typings.fhir.fhirStrings.SampledData | time | dateTime | typings.fhir.fhirStrings.Period)*
     ): Self = StObject.set(x, "permittedDataType", js.Array(value*))
     
+    inline def setPermittedUnit(value: js.Array[Coding]): Self = StObject.set(x, "permittedUnit", value.asInstanceOf[js.Any])
+    
+    inline def setPermittedUnitUndefined: Self = StObject.set(x, "permittedUnit", js.undefined)
+    
+    inline def setPermittedUnitVarargs(value: Coding*): Self = StObject.set(x, "permittedUnit", js.Array(value*))
+    
     inline def setQualifiedValue(value: js.Array[ObservationDefinitionQualifiedValue]): Self = StObject.set(x, "qualifiedValue", value.asInstanceOf[js.Any])
     
     inline def setQualifiedValueUndefined: Self = StObject.set(x, "qualifiedValue", js.undefined)
     
     inline def setQualifiedValueVarargs(value: ObservationDefinitionQualifiedValue*): Self = StObject.set(x, "qualifiedValue", js.Array(value*))
-    
-    inline def setQuantitativeDetails(value: ObservationDefinitionQuantitativeDetails): Self = StObject.set(x, "quantitativeDetails", value.asInstanceOf[js.Any])
-    
-    inline def setQuantitativeDetailsUndefined: Self = StObject.set(x, "quantitativeDetails", js.undefined)
     
     inline def set_permittedDataType(value: js.Array[Element]): Self = StObject.set(x, "_permittedDataType", value.asInstanceOf[js.Any])
     

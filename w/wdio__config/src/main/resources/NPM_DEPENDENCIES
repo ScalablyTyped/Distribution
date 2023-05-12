@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@wdio/config" : "7.26.0"
+      "@wdio/config" : "8.10.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@wdio/config" : "7.26.0"
+      "@wdio/config" : "8.10.2"
     }
   ],
   "compile-devDependencies" : [

@@ -8,6 +8,7 @@ trait UsernamePasswordCredentialOptions
   extends StObject
      with MultiTenantTokenCredentialOptions
      with CredentialPersistenceOptions
+     with AuthorityValidationOptions
 object UsernamePasswordCredentialOptions {
   
   inline def apply(): UsernamePasswordCredentialOptions = {

@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LocaleConfig extends StObject {
   
+  var direction: js.UndefOr[LocaleDirection] = js.undefined
+  
   var locale: js.UndefOr[SupportedLanguages] = js.undefined
   
   var mobilePhrases: js.UndefOr[Record[String, Any]] = js.undefined
@@ -22,6 +24,10 @@ object LocaleConfig {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: LocaleConfig] (val x: Self) extends AnyVal {
+    
+    inline def setDirection(value: LocaleDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     inline def setLocale(value: SupportedLanguages): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     

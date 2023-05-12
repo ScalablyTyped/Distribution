@@ -19,10 +19,13 @@ object mod extends Shortcut {
   
   trait pluginOptions extends StObject {
     
+    /** Do not inject "js-blank-pseudo" before each selector with "[blank]". default: false */
     var disablePolyfillReadyClass: js.UndefOr[Boolean] = js.undefined
     
+    /** Preserve the original notation. default: true */
     var preserve: js.UndefOr[Boolean] = js.undefined
     
+    /** Replacement for ":blank". default: "[blank]" */
     var replaceWith: js.UndefOr[String] = js.undefined
   }
   object pluginOptions {

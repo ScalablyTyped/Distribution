@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("@rdfjs/serializer-jsonld", JSImport.Namespace)
+  @JSImport("@rdfjs/serializer-jsonld", JSImport.Default)
   @js.native
-  open class ^[Q /* <: BaseQuad */] ()
+  open class default[Q /* <: BaseQuad */] ()
     extends StObject
        with Serializer[Q] {
     def this(options: SerializerOptions) = this()

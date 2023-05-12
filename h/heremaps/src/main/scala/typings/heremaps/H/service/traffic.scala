@@ -57,9 +57,9 @@ object traffic {
   object Service {
     
     /**
-      * @property subDomain {string=} - the sub-domain of the traffic incidents service relative to the platform's base URL, default is 'traffic'
-      * @property path {string=} - the path of the traffic incidents service, default is 'traffic/6.1'
-      * @property baseUrl {H.service.Url=} - an optional base URL if it differs from the platform's default base URL
+      * subDomain {string=} - the sub-domain of the traffic incidents service relative to the platform's base URL, default is 'traffic'
+      * path {string=} - the path of the traffic incidents service, default is 'traffic/6.1'
+      * baseUrl {H.service.Url=} - an optional base URL if it differs from the platform's default base URL
       */
     trait Options extends StObject {
       

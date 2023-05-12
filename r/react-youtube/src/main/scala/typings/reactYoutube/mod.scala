@@ -261,6 +261,7 @@ object mod {
     def updateVideo(): Unit = js.native
   }
   
+  /** @jsxRuntime classic */
   trait YouTubeEvent[T] extends StObject {
     
     var data: T

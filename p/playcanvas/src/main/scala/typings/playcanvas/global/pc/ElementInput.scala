@@ -26,3 +26,18 @@ open class ElementInput protected ()
   def this(domElement: Element) = this()
   def this(domElement: Element, options: UseMouse) = this()
 }
+object ElementInput {
+  
+  @JSGlobal("pc.ElementInput")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  inline def buildHitCorners(element: Any, screenOrWorldCorners: Any, scale: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("buildHitCorners")(element.asInstanceOf[js.Any], screenOrWorldCorners.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  /* static member */
+  inline def calculateScaleToScreen(element: Any): typings.playcanvas.mod.Vec3 = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateScaleToScreen")(element.asInstanceOf[js.Any]).asInstanceOf[typings.playcanvas.mod.Vec3]
+  
+  /* static member */
+  inline def calculateScaleToWorld(element: Any): typings.playcanvas.mod.Vec3 = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateScaleToWorld")(element.asInstanceOf[js.Any]).asInstanceOf[typings.playcanvas.mod.Vec3]
+}

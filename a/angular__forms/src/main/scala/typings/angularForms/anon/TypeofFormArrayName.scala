@@ -33,7 +33,8 @@ trait TypeofFormArrayName
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    `false`, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[FormArrayName, js.Tuple3[Host, Self, Self]] = js.native

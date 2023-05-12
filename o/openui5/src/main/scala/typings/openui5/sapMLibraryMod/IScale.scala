@@ -13,11 +13,8 @@ trait IScale extends StObject {
   var __implements__sap_m_IScale: Boolean
   
   /**
-    * Returns how many tickmarks would be drawn on the screen.
-    *
-    * **Note:** There would always be a tickmark in the beginning and in the end of the slider, regardless
-    * of the value this method returns. The start and the end tickmark are taken into account for the later
-    * calculations.
+    * Returns how many tickmarks would be drawn on the screen. The start and the end tickmark should be specified
+    * in this method.
     *
     * @returns The number of tickmarks
     */
@@ -56,15 +53,9 @@ trait IScale extends StObject {
   /**
     * Returns the number of tickmarks, which should be placed between labels.
     *
-    * **Note:** There would always be a tickmark in the beginning and in the end of the slider, regardless
-    * of the value that this method returns.
-    *
     * @returns The number of tickmarks
     */
-  def getTickmarksBetweenLabels(/**
-    * The option array
-    */
-  mOptions: js.Object): int
+  def getTickmarksBetweenLabels(): int
   
   /**
     * Called, when the slider is getting resized.
@@ -80,9 +71,9 @@ object IScale {
   inline def apply(
     __implements__sap_m_IScale: Boolean,
     calcNumberOfTickmarks: (float, float, int) => int,
-    getTickmarksBetweenLabels: js.Object => int
+    getTickmarksBetweenLabels: () => int
   ): IScale = {
-    val __obj = js.Dynamic.literal(__implements__sap_m_IScale = __implements__sap_m_IScale.asInstanceOf[js.Any], calcNumberOfTickmarks = js.Any.fromFunction3(calcNumberOfTickmarks), getTickmarksBetweenLabels = js.Any.fromFunction1(getTickmarksBetweenLabels))
+    val __obj = js.Dynamic.literal(__implements__sap_m_IScale = __implements__sap_m_IScale.asInstanceOf[js.Any], calcNumberOfTickmarks = js.Any.fromFunction3(calcNumberOfTickmarks), getTickmarksBetweenLabels = js.Any.fromFunction0(getTickmarksBetweenLabels))
     __obj.asInstanceOf[IScale]
   }
   
@@ -97,7 +88,7 @@ object IScale {
     
     inline def setGetLabelUndefined: Self = StObject.set(x, "getLabel", js.undefined)
     
-    inline def setGetTickmarksBetweenLabels(value: js.Object => int): Self = StObject.set(x, "getTickmarksBetweenLabels", js.Any.fromFunction1(value))
+    inline def setGetTickmarksBetweenLabels(value: () => int): Self = StObject.set(x, "getTickmarksBetweenLabels", js.Any.fromFunction0(value))
     
     inline def setHandleResize(value: /* oEvent */ Event => Unit): Self = StObject.set(x, "handleResize", js.Any.fromFunction1(value))
     

@@ -179,6 +179,8 @@ type CoveragesByTime = js.Array[CoverageByTime]
   - typings.awsSdk.awsSdkStrings.AGREEMENT_END_DATE_TIME_AFTER
   - typings.awsSdk.awsSdkStrings.AGREEMENT_END_DATE_TIME_BEFORE
   - typings.awsSdk.awsSdkStrings.INVOICING_ENTITY
+  - typings.awsSdk.awsSdkStrings.ANOMALY_TOTAL_IMPACT_ABSOLUTE
+  - typings.awsSdk.awsSdkStrings.ANOMALY_TOTAL_IMPACT_PERCENTAGE
   - java.lang.String
 */
 type Dimension = _Dimension | String
@@ -217,6 +219,16 @@ type FindingReasonCode = _FindingReasonCode | String
 type FindingReasonCodes = js.Array[FindingReasonCode]
 
 type ForecastResultsByTime = js.Array[ForecastResult]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SUCCEEDED
+  - typings.awsSdk.awsSdkStrings.PROCESSING
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - java.lang.String
+*/
+type GenerationStatus = _GenerationStatus | String
+
+type GenerationSummaryList = js.Array[GenerationSummary]
 
 type GenericBoolean = Boolean
 
@@ -266,6 +278,7 @@ type LookbackPeriodInDays = _LookbackPeriodInDays | String
   - typings.awsSdk.awsSdkStrings.CONTAINS
   - typings.awsSdk.awsSdkStrings.CASE_SENSITIVE
   - typings.awsSdk.awsSdkStrings.CASE_INSENSITIVE
+  - typings.awsSdk.awsSdkStrings.GREATER_THAN_OR_EQUAL
   - java.lang.String
 */
 type MatchOption = _MatchOption | String
@@ -375,6 +388,10 @@ type PurchasedUnits = String
 type RICostForUnusedHours = String
 
 type RealizedSavings = String
+
+type RecommendationId = String
+
+type RecommendationIdList = js.Array[RecommendationId]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SAME_INSTANCE_FAMILY

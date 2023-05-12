@@ -23,7 +23,7 @@ open class Crypto ()
     * @returns UUID v4 string
     */
   /* CompleteClass */
-  override def randomUUID(): String = js.native
+  override def randomUUID(): /* template literal string: ${string}-${string}-${string}-${string}-${string} */ String = js.native
   
   /**
     * Returns a SubtleCrypto object providing access to common cryptographic primitives,

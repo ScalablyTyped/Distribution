@@ -116,7 +116,7 @@ open class _UploadTask protected () extends StObject {
   /**
     * Equivalent to calling `then(null, onRejected)`.
     */
-  def `catch`[T](onRejected: js.Function1[/* p1 */ StorageError2, T | js.Promise[T]]): js.Promise[T] = js.native
+  def `catch`[T](onRejected: js.Function1[/* p1 */ StorageError, T | js.Promise[T]]): js.Promise[T] = js.native
   
   /* private */ var completeTransitions_ : Any = js.native
   
@@ -146,12 +146,12 @@ open class _UploadTask protected () extends StObject {
   def on(
     `type`: _TaskEvent,
     nextOrObserver: js.Function1[/* snapshot */ UploadTaskSnapshot, Any],
-    error: js.Function1[/* a */ StorageError2, Any]
+    error: js.Function1[/* a */ StorageError, Any]
   ): Unsubscribe2 | Subscribe2[UploadTaskSnapshot] = js.native
   def on(
     `type`: _TaskEvent,
     nextOrObserver: js.Function1[/* snapshot */ UploadTaskSnapshot, Any],
-    error: js.Function1[/* a */ StorageError2, Any],
+    error: js.Function1[/* a */ StorageError, Any],
     completed: CompleteFn
   ): Unsubscribe2 | Subscribe2[UploadTaskSnapshot] = js.native
   def on(
@@ -166,20 +166,20 @@ open class _UploadTask protected () extends StObject {
     error: Unit,
     completed: CompleteFn
   ): Unsubscribe2 | Subscribe2[UploadTaskSnapshot] = js.native
-  def on(`type`: _TaskEvent, nextOrObserver: Null, error: js.Function1[/* a */ StorageError2, Any]): Unsubscribe2 | Subscribe2[UploadTaskSnapshot] = js.native
+  def on(`type`: _TaskEvent, nextOrObserver: Null, error: js.Function1[/* a */ StorageError, Any]): Unsubscribe2 | Subscribe2[UploadTaskSnapshot] = js.native
   def on(
     `type`: _TaskEvent,
     nextOrObserver: Null,
-    error: js.Function1[/* a */ StorageError2, Any],
+    error: js.Function1[/* a */ StorageError, Any],
     completed: CompleteFn
   ): Unsubscribe2 | Subscribe2[UploadTaskSnapshot] = js.native
   def on(`type`: _TaskEvent, nextOrObserver: Null, error: Null, completed: CompleteFn): Unsubscribe2 | Subscribe2[UploadTaskSnapshot] = js.native
   def on(`type`: _TaskEvent, nextOrObserver: Null, error: Unit, completed: CompleteFn): Unsubscribe2 | Subscribe2[UploadTaskSnapshot] = js.native
-  def on(`type`: _TaskEvent, nextOrObserver: Unit, error: js.Function1[/* a */ StorageError2, Any]): Unsubscribe2 | Subscribe2[UploadTaskSnapshot] = js.native
+  def on(`type`: _TaskEvent, nextOrObserver: Unit, error: js.Function1[/* a */ StorageError, Any]): Unsubscribe2 | Subscribe2[UploadTaskSnapshot] = js.native
   def on(
     `type`: _TaskEvent,
     nextOrObserver: Unit,
-    error: js.Function1[/* a */ StorageError2, Any],
+    error: js.Function1[/* a */ StorageError, Any],
     completed: CompleteFn
   ): Unsubscribe2 | Subscribe2[UploadTaskSnapshot] = js.native
   def on(`type`: _TaskEvent, nextOrObserver: Unit, error: Null, completed: CompleteFn): Unsubscribe2 | Subscribe2[UploadTaskSnapshot] = js.native
@@ -188,12 +188,12 @@ open class _UploadTask protected () extends StObject {
   def on(
     `type`: _TaskEvent,
     nextOrObserver: StorageObserver[UploadTaskSnapshot],
-    error: js.Function1[/* a */ StorageError2, Any]
+    error: js.Function1[/* a */ StorageError, Any]
   ): Unsubscribe2 | Subscribe2[UploadTaskSnapshot] = js.native
   def on(
     `type`: _TaskEvent,
     nextOrObserver: StorageObserver[UploadTaskSnapshot],
-    error: js.Function1[/* a */ StorageError2, Any],
+    error: js.Function1[/* a */ StorageError, Any],
     completed: CompleteFn
   ): Unsubscribe2 | Subscribe2[UploadTaskSnapshot] = js.native
   def on(
@@ -240,8 +240,8 @@ open class _UploadTask protected () extends StObject {
   def `then`[U](onFulfilled: js.Function1[/* value */ UploadTaskSnapshot, U | js.Promise[U]]): js.Promise[U] = js.native
   def `then`[U](
     onFulfilled: js.Function1[/* value */ UploadTaskSnapshot, U | js.Promise[U]],
-    onRejected: js.Function1[/* error */ StorageError2, U | js.Promise[U]]
+    onRejected: js.Function1[/* error */ StorageError, U | js.Promise[U]]
   ): js.Promise[U] = js.native
-  def `then`[U](onFulfilled: Null, onRejected: js.Function1[/* error */ StorageError2, U | js.Promise[U]]): js.Promise[U] = js.native
-  def `then`[U](onFulfilled: Unit, onRejected: js.Function1[/* error */ StorageError2, U | js.Promise[U]]): js.Promise[U] = js.native
+  def `then`[U](onFulfilled: Null, onRejected: js.Function1[/* error */ StorageError, U | js.Promise[U]]): js.Promise[U] = js.native
+  def `then`[U](onFulfilled: Unit, onRejected: js.Function1[/* error */ StorageError, U | js.Promise[U]]): js.Promise[U] = js.native
 }

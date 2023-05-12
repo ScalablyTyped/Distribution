@@ -3,9 +3,10 @@ package typings.angularLocalize
 import typings.angularCompiler.mod.ParseError
 import typings.angularLocalize.angularLocalizeStrings.error
 import typings.angularLocalize.angularLocalizeStrings.warning
-import typings.angularLocalize.mod.MessageId
-import typings.angularLocalize.mod.ɵParsedTranslation
-import typings.angularLocalize.mod.ɵSourceLocation
+import typings.angularLocalize.localizeMod.MessageId
+import typings.angularLocalize.localizeMod.ɵParsedTranslation
+import typings.angularLocalize.localizeMod.ɵSourceLocation
+import typings.babelTypes.mod.StringLiteral_
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -115,17 +116,11 @@ object anon {
   
   trait Elements extends StObject {
     
-    var elements: js.Array[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify t.StringLiteral */ Any
-      ]
+    var elements: js.Array[StringLiteral_]
   }
   object Elements {
     
-    inline def apply(
-      elements: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify t.StringLiteral */ Any
-        ]
-    ): Elements = {
+    inline def apply(elements: js.Array[StringLiteral_]): Elements = {
       val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
       __obj.asInstanceOf[Elements]
     }
@@ -133,15 +128,9 @@ object anon {
     @scala.inline
     implicit open class MutableBuilder[Self <: Elements] (val x: Self) extends AnyVal {
       
-      inline def setElements(
-        value: js.Array[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify t.StringLiteral */ Any
-            ]
-      ): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+      inline def setElements(value: js.Array[StringLiteral_]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
-      inline def setElementsVarargs(
-        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify t.StringLiteral */ Any)*
-      ): Self = StObject.set(x, "elements", js.Array(value*))
+      inline def setElementsVarargs(value: StringLiteral_ *): Self = StObject.set(x, "elements", js.Array(value*))
     }
   }
   

@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class InlineValueText protected ()
   extends typings.vscode.mod.InlineValueText {
   /**
-    * Creates a new InlineValueText object.
-    *
-    * @param range The document line where to show the inline value.
-    * @param text The value to be shown for the line.
-    */
+  		 * Creates a new InlineValueText object.
+  		 *
+  		 * @param range The document line where to show the inline value.
+  		 * @param text The value to be shown for the line.
+  		 */
   def this(range: typings.vscode.mod.Range, text: String) = this()
 }

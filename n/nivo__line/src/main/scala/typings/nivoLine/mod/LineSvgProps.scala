@@ -1,6 +1,6 @@
 package typings.nivoLine.mod
 
-import typings.nivoCore.mod.ModernMotionProps
+import typings.nivoCore.mod.MotionProps
 import typings.nivoCore.mod.SvgDefsAndFill
 import typings.nivoLine.anon.XFormatted
 import org.scalablytyped.runtime.StObject
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LineSvgProps
   extends StObject
      with LineProps
-     with ModernMotionProps
+     with MotionProps
      with SvgDefsAndFill[Datum] {
   
   var areaBlendMode: js.UndefOr[String] = js.undefined

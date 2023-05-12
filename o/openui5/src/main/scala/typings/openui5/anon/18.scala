@@ -1,5 +1,6 @@
 package typings.openui5.anon
 
+import typings.openui5.sapMMessageItemMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `18` extends StObject {
   
   /**
-    * DOM reference of the object identifier's title.
+    * Refers to the message item that contains the activeTitle.
     */
-  var domRef: js.UndefOr[js.Object] = js.undefined
+  var item: js.UndefOr[default] = js.undefined
 }
 object `18` {
   
@@ -21,8 +22,8 @@ object `18` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `18`] (val x: Self) extends AnyVal {
     
-    inline def setDomRef(value: js.Object): Self = StObject.set(x, "domRef", value.asInstanceOf[js.Any])
+    inline def setItem(value: default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    inline def setDomRefUndefined: Self = StObject.set(x, "domRef", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
   }
 }

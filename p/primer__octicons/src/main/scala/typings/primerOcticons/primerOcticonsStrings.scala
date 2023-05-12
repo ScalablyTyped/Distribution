@@ -62,6 +62,18 @@ object primerOcticonsStrings {
   inline def `arrow-down`: `arrow-down` = "arrow-down".asInstanceOf[`arrow-down`]
   
   @js.native
+  sealed trait `arrow-down-left`
+    extends StObject
+       with IconName
+  inline def `arrow-down-left`: `arrow-down-left` = "arrow-down-left".asInstanceOf[`arrow-down-left`]
+  
+  @js.native
+  sealed trait `arrow-down-right`
+    extends StObject
+       with IconName
+  inline def `arrow-down-right`: `arrow-down-right` = "arrow-down-right".asInstanceOf[`arrow-down-right`]
+  
+  @js.native
   sealed trait `arrow-left`
     extends StObject
        with IconName
@@ -270,6 +282,12 @@ object primerOcticonsStrings {
     extends StObject
        with IconName
   inline def clock: clock = "clock".asInstanceOf[clock]
+  
+  @js.native
+  sealed trait `clock-fill`
+    extends StObject
+       with IconName
+  inline def `clock-fill`: `clock-fill` = "clock-fill".asInstanceOf[`clock-fill`]
   
   @js.native
   sealed trait cloud
@@ -692,6 +710,12 @@ object primerOcticonsStrings {
   inline def filter: filter = "filter".asInstanceOf[filter]
   
   @js.native
+  sealed trait `fiscal-host`
+    extends StObject
+       with IconName
+  inline def `fiscal-host`: `fiscal-host` = "fiscal-host".asInstanceOf[`fiscal-host`]
+  
+  @js.native
   sealed trait flame
     extends StObject
        with IconName
@@ -780,6 +804,12 @@ object primerOcticonsStrings {
     extends StObject
        with IconName
   inline def globe: globe = "globe".asInstanceOf[globe]
+  
+  @js.native
+  sealed trait goal
+    extends StObject
+       with IconName
+  inline def goal: goal = "goal".asInstanceOf[goal]
   
   @js.native
   sealed trait grabber
@@ -900,6 +930,18 @@ object primerOcticonsStrings {
     extends StObject
        with IconName
   inline def `issue-reopened`: `issue-reopened` = "issue-reopened".asInstanceOf[`issue-reopened`]
+  
+  @js.native
+  sealed trait `issue-tracked-by`
+    extends StObject
+       with IconName
+  inline def `issue-tracked-by`: `issue-tracked-by` = "issue-tracked-by".asInstanceOf[`issue-tracked-by`]
+  
+  @js.native
+  sealed trait `issue-tracked-in`
+    extends StObject
+       with IconName
+  inline def `issue-tracked-in`: `issue-tracked-in` = "issue-tracked-in".asInstanceOf[`issue-tracked-in`]
   
   @js.native
   sealed trait italic
@@ -1202,6 +1244,18 @@ object primerOcticonsStrings {
   inline def project: project = "project".asInstanceOf[project]
   
   @js.native
+  sealed trait `project-roadmap`
+    extends StObject
+       with IconName
+  inline def `project-roadmap`: `project-roadmap` = "project-roadmap".asInstanceOf[`project-roadmap`]
+  
+  @js.native
+  sealed trait `project-symlink`
+    extends StObject
+       with IconName
+  inline def `project-symlink`: `project-symlink` = "project-symlink".asInstanceOf[`project-symlink`]
+  
+  @js.native
   sealed trait pulse
     extends StObject
        with IconName
@@ -1218,6 +1272,18 @@ object primerOcticonsStrings {
     extends StObject
        with IconName
   inline def quote: quote = "quote".asInstanceOf[quote]
+  
+  @js.native
+  sealed trait read
+    extends StObject
+       with IconName
+  inline def read: read = "read".asInstanceOf[read]
+  
+  @js.native
+  sealed trait `rel-file-path`
+    extends StObject
+       with IconName
+  inline def `rel-file-path`: `rel-file-path` = "rel-file-path".asInstanceOf[`rel-file-path`]
   
   @js.native
   sealed trait reply
@@ -1406,6 +1472,12 @@ object primerOcticonsStrings {
   inline def skip: skip = "skip".asInstanceOf[skip]
   
   @js.native
+  sealed trait `skip-fill`
+    extends StObject
+       with IconName
+  inline def `skip-fill`: `skip-fill` = "skip-fill".asInstanceOf[`skip-fill`]
+  
+  @js.native
   sealed trait sliders
     extends StObject
        with IconName
@@ -1428,6 +1500,18 @@ object primerOcticonsStrings {
     extends StObject
        with IconName
   inline def `sort-desc`: `sort-desc` = "sort-desc".asInstanceOf[`sort-desc`]
+  
+  @js.native
+  sealed trait `sparkle-fill`
+    extends StObject
+       with IconName
+  inline def `sparkle-fill`: `sparkle-fill` = "sparkle-fill".asInstanceOf[`sparkle-fill`]
+  
+  @js.native
+  sealed trait `sponsor-tiers`
+    extends StObject
+       with IconName
+  inline def `sponsor-tiers`: `sponsor-tiers` = "sponsor-tiers".asInstanceOf[`sponsor-tiers`]
   
   @js.native
   sealed trait square
@@ -1616,6 +1700,12 @@ object primerOcticonsStrings {
   inline def unfold: unfold = "unfold".asInstanceOf[unfold]
   
   @js.native
+  sealed trait unlink
+    extends StObject
+       with IconName
+  inline def unlink: unlink = "unlink".asInstanceOf[unlink]
+  
+  @js.native
   sealed trait unlock
     extends StObject
        with IconName
@@ -1626,6 +1716,12 @@ object primerOcticonsStrings {
     extends StObject
        with IconName
   inline def unmute: unmute = "unmute".asInstanceOf[unmute]
+  
+  @js.native
+  sealed trait unread
+    extends StObject
+       with IconName
+  inline def unread: unread = "unread".asInstanceOf[unread]
   
   @js.native
   sealed trait unverified

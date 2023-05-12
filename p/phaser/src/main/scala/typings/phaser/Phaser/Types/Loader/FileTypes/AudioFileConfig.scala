@@ -21,7 +21,7 @@ trait AudioFileConfig extends StObject {
   /**
     * The absolute or relative URLs to load the audio files from.
     */
-  var url: js.UndefOr[String | js.Array[String]] = js.undefined
+  var url: js.UndefOr[String | (js.Array[AudioFileURLConfig | String]) | AudioFileURLConfig] = js.undefined
   
   /**
     * Extra XHR Settings specifically for this file.
@@ -44,11 +44,11 @@ object AudioFileConfig {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    inline def setUrl(value: String | js.Array[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String | (js.Array[AudioFileURLConfig | String]) | AudioFileURLConfig): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    inline def setUrlVarargs(value: String*): Self = StObject.set(x, "url", js.Array(value*))
+    inline def setUrlVarargs(value: (AudioFileURLConfig | String)*): Self = StObject.set(x, "url", js.Array(value*))
     
     inline def setXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "xhrSettings", value.asInstanceOf[js.Any])
     

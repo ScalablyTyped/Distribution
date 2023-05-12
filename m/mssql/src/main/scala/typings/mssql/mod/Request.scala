@@ -2,6 +2,8 @@ package typings.mssql.mod
 
 import typings.events.mod.EventEmitter
 import typings.node.NodeJS.WritableStream
+import typings.node.streamMod.Readable
+import typings.node.streamMod.ReadableOptions
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -93,6 +95,9 @@ open class Request () extends EventEmitter {
   def resume(): Boolean = js.native
   
   var stream: Any = js.native
+  
+  def toReadableStream(): Readable = js.native
+  def toReadableStream(streamOptions: ReadableOptions): Readable = js.native
   
   var transaction: Transaction = js.native
   

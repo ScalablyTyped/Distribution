@@ -19,7 +19,7 @@ trait ExportRevisionsToS3ResponseDetails extends StObject {
   /**
     * The Amazon Resource Name (ARN) of the event action.
     */
-  var EventActionArn: js.UndefOr[string] = js.undefined
+  var EventActionArn: js.UndefOr[_String] = js.undefined
   
   /**
     * The destination in Amazon S3 where the revision is exported.
@@ -42,7 +42,7 @@ object ExportRevisionsToS3ResponseDetails {
     
     inline def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
     
-    inline def setEventActionArn(value: string): Self = StObject.set(x, "EventActionArn", value.asInstanceOf[js.Any])
+    inline def setEventActionArn(value: _String): Self = StObject.set(x, "EventActionArn", value.asInstanceOf[js.Any])
     
     inline def setEventActionArnUndefined: Self = StObject.set(x, "EventActionArn", js.undefined)
     

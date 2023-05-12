@@ -110,7 +110,7 @@ object mod extends Shortcut {
     /**
       * A function called whenever a retry is attempted.
       */
-    var onRetry: js.UndefOr[js.Function0[Unit]] = js.undefined
+    var onRetry: js.UndefOr[js.Function1[/* cause */ Any, Unit]] = js.undefined
     
     var proxy: js.UndefOr[String | URL_ | URL] = js.undefined
     
@@ -241,7 +241,7 @@ object mod extends Shortcut {
       
       inline def setNoProxyVarargs(value: String*): Self = StObject.set(x, "noProxy", js.Array(value*))
       
-      inline def setOnRetry(value: () => Unit): Self = StObject.set(x, "onRetry", js.Any.fromFunction0(value))
+      inline def setOnRetry(value: /* cause */ Any => Unit): Self = StObject.set(x, "onRetry", js.Any.fromFunction1(value))
       
       inline def setOnRetryUndefined: Self = StObject.set(x, "onRetry", js.undefined)
       
@@ -316,7 +316,7 @@ object mod extends Shortcut {
     /**
       * A function called whenever a retry is attempted.
       */
-    var onRetry: js.UndefOr[js.Function0[Unit]] = js.undefined
+    var onRetry: js.UndefOr[js.Function1[/* cause */ Any, Unit]] = js.undefined
     
     var proxy: js.UndefOr[String | URL_ | URL] = js.undefined
     
@@ -393,7 +393,7 @@ object mod extends Shortcut {
       
       inline def setNoProxyVarargs(value: String*): Self = StObject.set(x, "noProxy", js.Array(value*))
       
-      inline def setOnRetry(value: () => Unit): Self = StObject.set(x, "onRetry", js.Any.fromFunction0(value))
+      inline def setOnRetry(value: /* cause */ Any => Unit): Self = StObject.set(x, "onRetry", js.Any.fromFunction1(value))
       
       inline def setOnRetryUndefined: Self = StObject.set(x, "onRetry", js.undefined)
       

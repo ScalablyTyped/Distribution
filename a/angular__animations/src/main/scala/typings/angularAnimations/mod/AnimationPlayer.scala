@@ -90,7 +90,7 @@ trait AnimationPlayer extends StObject {
     * Sets the position of the animation.
     * @param position A 0-based offset into the duration, in milliseconds.
     */
-  def setPosition(position: Any): Unit
+  def setPosition(position: Double): Unit
   
   /**
     * The total run time of the animation, in milliseconds.
@@ -112,7 +112,7 @@ object AnimationPlayer {
     play: () => Unit,
     reset: () => Unit,
     restart: () => Unit,
-    setPosition: Any => Unit,
+    setPosition: Double => Unit,
     totalTime: Double
   ): AnimationPlayer = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), finish = js.Any.fromFunction0(finish), getPosition = js.Any.fromFunction0(getPosition), hasStarted = js.Any.fromFunction0(hasStarted), init = js.Any.fromFunction0(init), onDestroy = js.Any.fromFunction1(onDestroy), onDone = js.Any.fromFunction1(onDone), onStart = js.Any.fromFunction1(onStart), pause = js.Any.fromFunction0(pause), play = js.Any.fromFunction0(play), reset = js.Any.fromFunction0(reset), restart = js.Any.fromFunction0(restart), setPosition = js.Any.fromFunction1(setPosition), totalTime = totalTime.asInstanceOf[js.Any], parentPlayer = null)
@@ -154,7 +154,7 @@ object AnimationPlayer {
     
     inline def setRestart(value: () => Unit): Self = StObject.set(x, "restart", js.Any.fromFunction0(value))
     
-    inline def setSetPosition(value: Any => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction1(value))
+    inline def setSetPosition(value: Double => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction1(value))
     
     inline def setTotalTime(value: Double): Self = StObject.set(x, "totalTime", value.asInstanceOf[js.Any])
   }

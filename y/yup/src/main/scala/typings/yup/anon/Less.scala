@@ -15,7 +15,8 @@ object Less {
     __obj.asInstanceOf[Less]
   }
   
-  extension [Self <: Less](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Less] (val x: Self) extends AnyVal {
     
     inline def setLess(value: Double): Self = StObject.set(x, "less", value.asInstanceOf[js.Any])
   }

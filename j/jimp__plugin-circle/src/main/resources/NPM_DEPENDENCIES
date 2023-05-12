@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jimp/plugin-circle" : "0.16.2"
+      "@jimp/plugin-circle" : "0.22.8"
     }
   ],
   "test-dependencies" : [
     {
-      "@jimp/plugin-circle" : "0.16.2"
+      "@jimp/plugin-circle" : "0.22.8"
     }
   ],
   "compile-devDependencies" : [

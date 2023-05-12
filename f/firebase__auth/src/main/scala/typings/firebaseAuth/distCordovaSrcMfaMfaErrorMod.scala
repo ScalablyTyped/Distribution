@@ -1,7 +1,7 @@
 package typings.firebaseAuth
 
-import typings.firebaseAuth.anon.ServerResponseIdTokenMfaResponse
 import typings.firebaseAuth.anon.`2`
+import typings.firebaseAuth.anon.`5`
 import typings.firebaseAuth.distCordovaSrcCoreCredentialsMod.AuthCredential
 import typings.firebaseAuth.distCordovaSrcModelAuthMod.AuthInternal
 import typings.firebaseAuth.distCordovaSrcModelEnumsMod.OperationType
@@ -41,5 +41,5 @@ object distCordovaSrcMfaMfaErrorMod {
   inline def processCredentialSavingMfaContextIfNecessary(auth: AuthInternal, operationType: OperationType, credential: AuthCredential): js.Promise[IdTokenResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("_processCredentialSavingMfaContextIfNecessary")(auth.asInstanceOf[js.Any], operationType.asInstanceOf[js.Any], credential.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IdTokenResponse]]
   inline def processCredentialSavingMfaContextIfNecessary(auth: AuthInternal, operationType: OperationType, credential: AuthCredential, user: UserInternal): js.Promise[IdTokenResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("_processCredentialSavingMfaContextIfNecessary")(auth.asInstanceOf[js.Any], operationType.asInstanceOf[js.Any], credential.asInstanceOf[js.Any], user.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IdTokenResponse]]
   
-  type MultiFactorErrorData = (/* import warning: importer.ImportType#apply Failed type conversion: @firebase/auth.@firebase/auth/dist/cordova/src/model/public_types.AuthError['customData'] */ js.Any) & `2` & ServerResponseIdTokenMfaResponse
+  type MultiFactorErrorData = (/* import warning: importer.ImportType#apply Failed type conversion: @firebase/auth.@firebase/auth/dist/cordova/src/model/public_types.AuthError['customData'] */ js.Any) & `2` & `5`
 }

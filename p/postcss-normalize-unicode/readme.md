@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-normalize-unicode
 
-Typings are for version 5.1.1
+Typings are for version 6.0.0
 
 ## Library description:
 Normalize unicode-range descriptors, and can convert to wildcard ranges.

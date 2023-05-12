@@ -16,7 +16,7 @@ object libIconsChromeOutlinedMod extends Shortcut {
   @js.native
   trait ChromeOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_ChromeOutlinedIconType: String = js.native

@@ -21,6 +21,7 @@ import typings.nivoHeatmap.nivoHeatmapStrings.row
 import typings.nivoHeatmap.nivoHeatmapStrings.rowColumn
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.reactSpringCore.mod.SpringConfig
 import typings.std.CanvasRenderingContext2D
 import typings.std.Element
 import typings.std.Omit
@@ -112,9 +113,7 @@ trait HeatMapCanvasProps[Datum /* <: HeatMapDatum */, ExtraProps /* <: js.Object
   
   var margin: js.UndefOr[Box] = js.undefined
   
-  var motionConfig: js.UndefOr[
-    String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-  ] = js.undefined
+  var motionConfig: js.UndefOr[String | SpringConfig] = js.undefined
   
   var onClick: js.UndefOr[
     js.Function2[
@@ -310,9 +309,7 @@ object HeatMapCanvasProps {
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    inline def setMotionConfig(
-      value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-    ): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
+    inline def setMotionConfig(value: String | SpringConfig): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
     
     inline def setMotionConfigUndefined: Self = StObject.set(x, "motionConfig", js.undefined)
     

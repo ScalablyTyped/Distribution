@@ -19,7 +19,7 @@ trait GetDashboardEmbedUrlRequest extends StObject {
   /**
     * The ID for the dashboard, also added to the Identity and Access Management (IAM) policy.
     */
-  var DashboardId: RestrictiveResourceId
+  var DashboardId: ShortRestrictiveResourceId
   
   /**
     * The authentication method that the user uses to sign in.
@@ -60,7 +60,7 @@ object GetDashboardEmbedUrlRequest {
   
   inline def apply(
     AwsAccountId: AwsAccountId,
-    DashboardId: RestrictiveResourceId,
+    DashboardId: ShortRestrictiveResourceId,
     IdentityType: EmbeddingIdentityType
   ): GetDashboardEmbedUrlRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], DashboardId = DashboardId.asInstanceOf[js.Any], IdentityType = IdentityType.asInstanceOf[js.Any])
@@ -74,11 +74,11 @@ object GetDashboardEmbedUrlRequest {
     
     inline def setAdditionalDashboardIdsUndefined: Self = StObject.set(x, "AdditionalDashboardIds", js.undefined)
     
-    inline def setAdditionalDashboardIdsVarargs(value: RestrictiveResourceId*): Self = StObject.set(x, "AdditionalDashboardIds", js.Array(value*))
+    inline def setAdditionalDashboardIdsVarargs(value: ShortRestrictiveResourceId*): Self = StObject.set(x, "AdditionalDashboardIds", js.Array(value*))
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    inline def setDashboardId(value: RestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
+    inline def setDashboardId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
     
     inline def setIdentityType(value: EmbeddingIdentityType): Self = StObject.set(x, "IdentityType", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for npm-packlist
 
-Typings are for version 3.0
+Typings are for version 7.0
 
 ## Library description:
 Get a list of the files to add from a folder into an npm package

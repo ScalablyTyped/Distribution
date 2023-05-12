@@ -16,7 +16,7 @@ object libIconsHtml5TwoToneMod extends Shortcut {
   @js.native
   trait Html5TwoToneIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_Html5TwoToneIconType: String = js.native

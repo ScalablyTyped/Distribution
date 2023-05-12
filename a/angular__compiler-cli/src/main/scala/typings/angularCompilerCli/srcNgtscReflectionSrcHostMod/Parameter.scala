@@ -2,6 +2,7 @@ package typings.angularCompilerCli.srcNgtscReflectionSrcHostMod
 
 import typings.typescript.mod.Expression
 import typings.typescript.mod.ParameterDeclaration
+import typings.typescript.mod.TypeNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,11 +23,17 @@ trait Parameter extends StObject {
     * Declaration which created this parameter.
     */
   var node: ParameterDeclaration
+  
+  /**
+    * Type of the parameter.
+    */
+  var `type`: TypeNode | Null
 }
 object Parameter {
   
   inline def apply(node: ParameterDeclaration): Parameter = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], initializer = null, name = null)
+    __obj.updateDynamic("type")(null)
     __obj.asInstanceOf[Parameter]
   }
   
@@ -42,5 +49,9 @@ object Parameter {
     inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNode(value: ParameterDeclaration): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: TypeNode): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
   }
 }

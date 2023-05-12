@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Reference extends StObject {
   
-  var reference: String
+  var reference: js.UndefOr[String] = js.undefined
   
   var text: String
 }
 object Reference {
   
-  inline def apply(reference: String, text: String): Reference = {
-    val __obj = js.Dynamic.literal(reference = reference.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+  inline def apply(text: String): Reference = {
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reference]
   }
   
@@ -21,6 +21,8 @@ object Reference {
   implicit open class MutableBuilder[Self <: Reference] (val x: Self) extends AnyVal {
     
     inline def setReference(value: String): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+    
+    inline def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }

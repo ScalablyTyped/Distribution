@@ -201,6 +201,12 @@ object rcMotionStrings {
   inline def prepare: prepare = "prepare".asInstanceOf[prepare]
   
   @js.native
+  sealed trait prepared
+    extends StObject
+       with StepStatus
+  inline def prepared: prepared = "prepared".asInstanceOf[prepared]
+  
+  @js.native
   sealed trait removals extends StObject
   inline def removals: removals = "removals".asInstanceOf[removals]
   

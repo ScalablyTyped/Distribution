@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@formatjs/intl-listformat" : "7.1.3"
+      "@formatjs/intl-listformat" : "7.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@formatjs/intl-listformat" : "7.1.3"
+      "@formatjs/intl-listformat" : "7.2.2"
     }
   ],
   "compile-devDependencies" : [

@@ -27,7 +27,7 @@ trait UpdateSuiteDefinitionResponse extends StObject {
   var suiteDefinitionId: js.UndefOr[UUID] = js.undefined
   
   /**
-    * Suite definition name of the updated test suite.
+    * Updates the suite definition name. This is a required parameter.
     */
   var suiteDefinitionName: js.UndefOr[SuiteDefinitionName] = js.undefined
   

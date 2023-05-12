@@ -41,6 +41,7 @@ object typesStackedlayoutMod {
       * If there is only one child widget, `Display` hiding mode will be used
       * regardless of this setting.
       */
+    def hiddenMode: HiddenMode = js.native
     /**
       * Set the method for hiding widgets.
       *
@@ -48,7 +49,7 @@ object typesStackedlayoutMod {
       * If there is only one child widget, `Display` hiding mode will be used
       * regardless of this setting.
       */
-    var hiddenMode: HiddenMode = js.native
+    def hiddenMode_=(v: HiddenMode): Unit = js.native
   }
   object StackedLayout {
     

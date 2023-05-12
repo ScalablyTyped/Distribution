@@ -20,8 +20,7 @@ trait InterfaceDeclaration
   
   val members: NodeArray[TypeElement] = js.native
   
-  @JSName("modifiers")
-  val modifiers_InterfaceDeclaration: js.UndefOr[NodeArray[Modifier]] = js.native
+  val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
   
   @JSName("name")
   val name_InterfaceDeclaration: Identifier = js.native

@@ -342,6 +342,8 @@ object sapUiUx3CollectionMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:propertyChanged propertyChanged} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -353,6 +355,8 @@ object sapUiUx3CollectionMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:selectionChanged selectionChanged} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

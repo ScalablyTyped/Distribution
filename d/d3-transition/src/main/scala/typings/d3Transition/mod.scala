@@ -243,7 +243,7 @@ object mod {
       *
       * @param filter A CSS selector string.
       */
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     @JSName("filter")
     def filter_FilteredElement[FilteredElement /* <: BaseType */](filter: String): Transition_[FilteredElement, Datum, PElement, PDatum] = js.native
     /**
@@ -259,7 +259,7 @@ object mod {
       * the current index (i), and the current group (nodes), with this as the current DOM element (nodes[i]). The filter function returns a boolean indicating,
       * whether the selected element matches.
       */
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     @JSName("filter")
     def filter_FilteredElement[FilteredElement /* <: BaseType */](filter: ValueFn[GElement, Datum, Boolean]): Transition_[FilteredElement, Datum, PElement, PDatum] = js.native
     
@@ -338,7 +338,7 @@ object mod {
       *
       * @param selector CSS selector string
       */
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def select[DescElement /* <: BaseType */](selector: String): Transition_[DescElement, Datum, PElement, PDatum] = js.native
     /**
       * For each selected element, select the descendant element returned by the selector function, if any,
@@ -364,7 +364,7 @@ object mod {
       *
       * @param selector CSS selector string
       */
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def selectAll[DescElement /* <: BaseType */, OldDatum](selector: String): Transition_[DescElement, OldDatum, GElement, Datum] = js.native
     /**
       * For each selected element, select all descendant elements returned by the selector function, if any,
@@ -378,7 +378,7 @@ object mod {
       * the current index (i), and the current group (nodes), with this as the current DOM element (nodes[i]). It must return an array of elements
       * (or a pseudo-array, such as a NodeList), or the empty array if there are no matching elements.
       */
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def selectAll[DescElement /* <: BaseType */, OldDatum](selector: ValueFn[GElement, Datum, js.Array[DescElement] | ArrayLike[DescElement]]): Transition_[DescElement, OldDatum, GElement, Datum] = js.native
     
     /**
@@ -391,7 +391,7 @@ object mod {
       * This method is equivalent to deriving the selection for this transition via transition.selection,
       * creating a subselection via selection.selectChild, and then creating a new transition via selection.transition.
       */
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def selectChild[DescElement /* <: BaseType */, OldDatum](): Transition_[DescElement, OldDatum, GElement, Datum] = js.native
     def selectChild[DescElement /* <: BaseType */, OldDatum](selector: String): Transition_[DescElement, OldDatum, GElement, Datum] = js.native
     def selectChild[DescElement /* <: BaseType */, OldDatum](selector: ValueFn[GElement, Datum, DescElement]): Transition_[DescElement, OldDatum, GElement, Datum] = js.native
@@ -406,7 +406,7 @@ object mod {
       * This method is equivalent to deriving the selection for this transition via transition.selection,
       * creating a subselection via selection.selectChildren, and then creating a new transition via selection.transition.
       */
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def selectChildren[DescElement /* <: BaseType */, OldDatum](): Transition_[DescElement, OldDatum, GElement, Datum] = js.native
     def selectChildren[DescElement /* <: BaseType */, OldDatum](selector: String): Transition_[DescElement, OldDatum, GElement, Datum] = js.native
     def selectChildren[DescElement /* <: BaseType */, OldDatum](selector: ValueFn[GElement, Datum, DescElement]): Transition_[DescElement, OldDatum, GElement, Datum] = js.native

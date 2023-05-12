@@ -8,35 +8,50 @@ object libRestConversationsMod {
   
   @JSImport("twilio/lib/rest/Conversations", JSImport.Namespace)
   @js.native
-  open class ^ protected () extends Conversations {
-    /**
-      * Initialize conversations domain
-      *
-      * @param twilio - The twilio client
-      */
-    def this(twilio: typings.twilio.libRestTwilioMod.^) = this()
-  }
+  open class ^ () extends Conversations
   
   @js.native
   trait Conversations
-    extends typings.twilio.libBaseDomainMod.^ {
+    extends typings.twilio.libRestConversationsBaseMod.^ {
     
-    val addressConfigurations: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AddressConfigurationListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.addressConfigurations instead
+      */
+    def addressConfigurations: Any = js.native
     
-    val configuration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ConfigurationListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.configuration instead
+      */
+    def configuration: Any = js.native
     
-    val conversations: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ConversationListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.conversations instead
+      */
+    def conversations: Any = js.native
     
-    val credentials: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CredentialListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.credentials instead
+      */
+    def credentials: Any = js.native
     
-    val participantConversations: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParticipantConversationListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.participantConversations instead
+      */
+    def participantConversations: Any = js.native
     
-    val roles: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RoleListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.roles instead
+      */
+    def roles: Any = js.native
     
-    val services: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.services instead
+      */
+    def services: Any = js.native
     
-    val users: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UserListInstance */ Any = js.native
-    
-    val v1: typings.twilio.libRestConversationsV1Mod.^ = js.native
+    /**
+      * @deprecated - Use v1.users instead
+      */
+    def users: Any = js.native
   }
 }

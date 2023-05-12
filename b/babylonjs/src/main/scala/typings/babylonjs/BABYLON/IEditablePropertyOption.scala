@@ -1,6 +1,6 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.anon.Rebuild
+import typings.babylonjs.anon.OnValidation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ trait IEditablePropertyOption extends StObject {
   var min: js.UndefOr[Double] = js.undefined
   
   /** notifiers: indicates which actions to take when the property is changed */
-  var notifiers: js.UndefOr[Rebuild] = js.undefined
+  var notifiers: js.UndefOr[OnValidation] = js.undefined
   
   /** list of the options for a variable of type list */
   var options: js.UndefOr[js.Array[IEditablePropertyListOption]] = js.undefined
@@ -37,7 +37,7 @@ object IEditablePropertyOption {
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    inline def setNotifiers(value: Rebuild): Self = StObject.set(x, "notifiers", value.asInstanceOf[js.Any])
+    inline def setNotifiers(value: OnValidation): Self = StObject.set(x, "notifiers", value.asInstanceOf[js.Any])
     
     inline def setNotifiersUndefined: Self = StObject.set(x, "notifiers", js.undefined)
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for openapi-request-validator
 
-Typings are for version 12.0.2
+Typings are for version 12.1.0
 
 ## Library description:
 Validate request properties against an OpenAPI spec.

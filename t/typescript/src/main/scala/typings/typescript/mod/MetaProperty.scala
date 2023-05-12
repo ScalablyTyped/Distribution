@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait MetaProperty
   extends StObject
-     with PrimaryExpression {
+     with PrimaryExpression
+     with FlowContainer {
   
   val keywordToken: NewKeyword | ImportKeyword = js.native
   

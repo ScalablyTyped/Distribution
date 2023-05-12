@@ -1,47 +1,52 @@
 package typings.atlaskitTokens.anon
 
-import typings.atlaskitTokens.distTypesArtifactsTypesInternalMod.InternalTokenIds
-import typings.atlaskitTokens.distTypesTypesMod.ExperimentalReplacement
-import typings.atlaskitTokens.distTypesTypesMod.Groups
-import typings.atlaskitTokens.distTypesTypesMod.TokenState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait State[Group /* <: Groups */] extends StObject {
+trait State extends StObject {
   
-  var description: js.UndefOr[String] = js.undefined
+  var description: String
   
-  var group: Group
+  var group: String
   
-  var replacement: js.UndefOr[typings.atlaskitTokens.distTypesTypesMod.Replacement | ExperimentalReplacement] = js.undefined
+  var introduced: String
   
-  var state: js.UndefOr[TokenState] = js.undefined
+  var pixelValue: String
+  
+  var state: String
+  
+  var suggest: js.Array[String]
 }
 object State {
   
-  inline def apply[Group /* <: Groups */](group: Group): State[Group] = {
-    val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any])
-    __obj.asInstanceOf[State[Group]]
+  inline def apply(
+    description: String,
+    group: String,
+    introduced: String,
+    pixelValue: String,
+    state: String,
+    suggest: js.Array[String]
+  ): State = {
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], introduced = introduced.asInstanceOf[js.Any], pixelValue = pixelValue.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], suggest = suggest.asInstanceOf[js.Any])
+    __obj.asInstanceOf[State]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: State[?], Group /* <: Groups */] (val x: Self & State[Group]) extends AnyVal {
+  implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    inline def setGroup(value: Group): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setIntroduced(value: String): Self = StObject.set(x, "introduced", value.asInstanceOf[js.Any])
     
-    inline def setReplacement(value: typings.atlaskitTokens.distTypesTypesMod.Replacement | ExperimentalReplacement): Self = StObject.set(x, "replacement", value.asInstanceOf[js.Any])
+    inline def setPixelValue(value: String): Self = StObject.set(x, "pixelValue", value.asInstanceOf[js.Any])
     
-    inline def setReplacementUndefined: Self = StObject.set(x, "replacement", js.undefined)
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    inline def setReplacementVarargs(value: InternalTokenIds*): Self = StObject.set(x, "replacement", js.Array(value*))
+    inline def setSuggest(value: js.Array[String]): Self = StObject.set(x, "suggest", value.asInstanceOf[js.Any])
     
-    inline def setState(value: TokenState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
-    
-    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setSuggestVarargs(value: String*): Self = StObject.set(x, "suggest", js.Array(value*))
   }
 }

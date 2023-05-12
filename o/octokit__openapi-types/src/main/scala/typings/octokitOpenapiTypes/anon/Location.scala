@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Location extends StObject {
   
+  /** @example https://api.github.com/repos/octocat/Hello-World */
   var Location: js.UndefOr[String] = js.undefined
 }
 object Location {

@@ -3,6 +3,7 @@ package typings.nightwatch
 import typings.nightwatch.mod.Definition
 import typings.nightwatch.mod.Element
 import typings.nightwatch.mod.Ensure
+import typings.nightwatch.mod.NightwatchAPI
 import typings.nightwatch.mod.NightwatchBrowser
 import typings.seleniumWebdriver.libByMod.RelativeBy
 import typings.seleniumWebdriver.mod.By
@@ -125,6 +126,10 @@ object globalsMod {
         */
       inline def xpath(xpath: String): typings.seleniumWebdriver.libByMod.By = ^.asInstanceOf[js.Dynamic].applyDynamic("xpath")(xpath.asInstanceOf[js.Any]).asInstanceOf[typings.seleniumWebdriver.libByMod.By]
     }
+    
+    @JSGlobal("app")
+    @js.native
+    val app: NightwatchAPI = js.native
     
     @JSGlobal("browser")
     @js.native

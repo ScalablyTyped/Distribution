@@ -19,8 +19,8 @@ trait Card extends StObject {
     * ```javascript
     *
     *  {
-    *  	"/sap.card/configuration/filters/shipper/value": "key3",
-    *  	"/sap.card/configuration/filters/item/value": "key2"
+    *     "/sap.card/configuration/filters/shipper/value": "key3",
+    *     "/sap.card/configuration/filters/item/value": "key2"
     *  }
     * ```
     */

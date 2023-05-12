@@ -951,61 +951,26 @@ object sapUiModelOdataV2OdatalistbindingMod {
       *
       * @returns The context representing the created entity
       */
+    def create(): typings.openui5.sapUiModelOdataV2ContextMod.default = js.native
     def create(
+      /**
+      * The initial data for the created entity; see the `mParameters.properties` parameter of {@link sap.ui.model.odata.v2.ODataModel#createEntry}
+      */
+    oInitialData: js.Object
+    ): typings.openui5.sapUiModelOdataV2ContextMod.default = js.native
+    def create(
+      /**
+      * The initial data for the created entity; see the `mParameters.properties` parameter of {@link sap.ui.model.odata.v2.ODataModel#createEntry}
+      */
+    oInitialData: js.Object,
       /**
       * Whether the entity is inserted at the end of the list. The first insertion determines the overall position
       * of created contexts within the list. Every succeeding insertion is relative to the created contexts within
       * this list. Note: the order of created contexts in the binding does not necessarily correspond to the
       * order of the resulting back end creation requests.
       */
-    bAtEnd: Boolean,
-      /**
-      * A map of parameters as specified for {@link sap.ui.model.odata.v2.ODataModel#createEntry}, where only
-      * the subset given below is supported. In case of deep create, **none** of the parameters in `mParameters`
-      * must be set.
-      */
-    mParameters: GroupId
+    bAtEnd: Boolean
     ): typings.openui5.sapUiModelOdataV2ContextMod.default = js.native
-    /**
-      * @SINCE 1.98.0
-      *
-      * Creates a new entity for this binding's collection via {@link sap.ui.model.odata.v2.ODataModel#createEntry}
-      * using the parameters given in `mParameters` and inserts it at the list position specified by the `bAtEnd`
-      * parameter. See {@link topic:6c47b2b39db9404582994070ec3d57a2#loio4c4cd99af9b14e08bb72470cc7cabff4 Creating
-      * Entities documentation} for comprehensive information on the topic.
-      *
-      * Note: This method requires that the model metadata has been loaded; see {@link sap.ui.model.odata.v2.ODataModel#metadataLoaded}.
-      *
-      * Since 1.108.0, this method supports deep create, which means it may be called if this binding's context
-      * is transient. The restrictions specified for {@link sap.ui.model.odata.v2.ODataModel#createEntry} regarding
-      * deep create apply.
-      *
-      * @returns The context representing the created entity
-      */
-    def create(
-      /**
-      * A map of parameters as specified for {@link sap.ui.model.odata.v2.ODataModel#createEntry}, where only
-      * the subset given below is supported. In case of deep create, **none** of the parameters in `mParameters`
-      * must be set.
-      */
-    mParameters: GroupId
-    ): typings.openui5.sapUiModelOdataV2ContextMod.default = js.native
-    /**
-      * @SINCE 1.98.0
-      *
-      * Creates a new entity for this binding's collection via {@link sap.ui.model.odata.v2.ODataModel#createEntry}
-      * using the parameters given in `mParameters` and inserts it at the list position specified by the `bAtEnd`
-      * parameter. See {@link topic:6c47b2b39db9404582994070ec3d57a2#loio4c4cd99af9b14e08bb72470cc7cabff4 Creating
-      * Entities documentation} for comprehensive information on the topic.
-      *
-      * Note: This method requires that the model metadata has been loaded; see {@link sap.ui.model.odata.v2.ODataModel#metadataLoaded}.
-      *
-      * Since 1.108.0, this method supports deep create, which means it may be called if this binding's context
-      * is transient. The restrictions specified for {@link sap.ui.model.odata.v2.ODataModel#createEntry} regarding
-      * deep create apply.
-      *
-      * @returns The context representing the created entity
-      */
     def create(
       /**
       * The initial data for the created entity; see the `mParameters.properties` parameter of {@link sap.ui.model.odata.v2.ODataModel#createEntry}
@@ -1025,27 +990,69 @@ object sapUiModelOdataV2OdatalistbindingMod {
       */
     mParameters: GroupId
     ): typings.openui5.sapUiModelOdataV2ContextMod.default = js.native
-    /**
-      * @SINCE 1.98.0
-      *
-      * Creates a new entity for this binding's collection via {@link sap.ui.model.odata.v2.ODataModel#createEntry}
-      * using the parameters given in `mParameters` and inserts it at the list position specified by the `bAtEnd`
-      * parameter. See {@link topic:6c47b2b39db9404582994070ec3d57a2#loio4c4cd99af9b14e08bb72470cc7cabff4 Creating
-      * Entities documentation} for comprehensive information on the topic.
-      *
-      * Note: This method requires that the model metadata has been loaded; see {@link sap.ui.model.odata.v2.ODataModel#metadataLoaded}.
-      *
-      * Since 1.108.0, this method supports deep create, which means it may be called if this binding's context
-      * is transient. The restrictions specified for {@link sap.ui.model.odata.v2.ODataModel#createEntry} regarding
-      * deep create apply.
-      *
-      * @returns The context representing the created entity
-      */
     def create(
       /**
       * The initial data for the created entity; see the `mParameters.properties` parameter of {@link sap.ui.model.odata.v2.ODataModel#createEntry}
       */
     oInitialData: js.Object,
+      /**
+      * Whether the entity is inserted at the end of the list. The first insertion determines the overall position
+      * of created contexts within the list. Every succeeding insertion is relative to the created contexts within
+      * this list. Note: the order of created contexts in the binding does not necessarily correspond to the
+      * order of the resulting back end creation requests.
+      */
+    bAtEnd: Unit,
+      /**
+      * A map of parameters as specified for {@link sap.ui.model.odata.v2.ODataModel#createEntry}, where only
+      * the subset given below is supported. In case of deep create, **none** of the parameters in `mParameters`
+      * must be set.
+      */
+    mParameters: GroupId
+    ): typings.openui5.sapUiModelOdataV2ContextMod.default = js.native
+    def create(
+      /**
+      * The initial data for the created entity; see the `mParameters.properties` parameter of {@link sap.ui.model.odata.v2.ODataModel#createEntry}
+      */
+    oInitialData: Unit,
+      /**
+      * Whether the entity is inserted at the end of the list. The first insertion determines the overall position
+      * of created contexts within the list. Every succeeding insertion is relative to the created contexts within
+      * this list. Note: the order of created contexts in the binding does not necessarily correspond to the
+      * order of the resulting back end creation requests.
+      */
+    bAtEnd: Boolean
+    ): typings.openui5.sapUiModelOdataV2ContextMod.default = js.native
+    def create(
+      /**
+      * The initial data for the created entity; see the `mParameters.properties` parameter of {@link sap.ui.model.odata.v2.ODataModel#createEntry}
+      */
+    oInitialData: Unit,
+      /**
+      * Whether the entity is inserted at the end of the list. The first insertion determines the overall position
+      * of created contexts within the list. Every succeeding insertion is relative to the created contexts within
+      * this list. Note: the order of created contexts in the binding does not necessarily correspond to the
+      * order of the resulting back end creation requests.
+      */
+    bAtEnd: Boolean,
+      /**
+      * A map of parameters as specified for {@link sap.ui.model.odata.v2.ODataModel#createEntry}, where only
+      * the subset given below is supported. In case of deep create, **none** of the parameters in `mParameters`
+      * must be set.
+      */
+    mParameters: GroupId
+    ): typings.openui5.sapUiModelOdataV2ContextMod.default = js.native
+    def create(
+      /**
+      * The initial data for the created entity; see the `mParameters.properties` parameter of {@link sap.ui.model.odata.v2.ODataModel#createEntry}
+      */
+    oInitialData: Unit,
+      /**
+      * Whether the entity is inserted at the end of the list. The first insertion determines the overall position
+      * of created contexts within the list. Every succeeding insertion is relative to the created contexts within
+      * this list. Note: the order of created contexts in the binding does not necessarily correspond to the
+      * order of the resulting back end creation requests.
+      */
+    bAtEnd: Unit,
       /**
       * A map of parameters as specified for {@link sap.ui.model.odata.v2.ODataModel#createEntry}, where only
       * the subset given below is supported. In case of deep create, **none** of the parameters in `mParameters`
@@ -1074,6 +1081,21 @@ object sapUiModelOdataV2OdatalistbindingMod {
     oListener: js.Object
     ): Unit = js.native
     
+    /**
+      * Filters the list.
+      *
+      * When using `sap.ui.model.Filter` the filters are first grouped according to their binding path. All filters
+      * belonging to the same group are combined with OR and after that the results of all groups are combined
+      * with AND. Usually this means, all filters applied to a single table column are combined with OR, while
+      * filters on different table columns are combined with AND. Please note that a custom filter function is
+      * only supported with operation mode `sap.ui.model.odata.OperationMode.Client`.
+      *
+      * Entities that have been created via {@link #create} and saved in the back end are removed from the creation
+      * rows area and inserted at the right position based on the current filters and sorters.
+      *
+      * @returns Reference to `this` to facilitate method chaining or a boolean success indicator
+      */
+    def filter(): this.type = js.native
     def filter(
       /**
       * Single filter or array of filter objects
@@ -1107,6 +1129,68 @@ object sapUiModelOdataV2OdatalistbindingMod {
       * Single filter or array of filter objects
       */
     aFilters: js.Array[typings.openui5.sapUiModelFilterMod.default],
+      /**
+      * Type of the filter which should be adjusted. If it is not given, type `Control` is assumed
+      */
+    sFilterType: FilterType,
+      /**
+      * Whether the success indicator should be returned instead of `this`
+      */
+    bReturnSuccess: Boolean
+    ): this.type = js.native
+    def filter(
+      /**
+      * Single filter or array of filter objects
+      */
+    aFilters: Unit,
+      /**
+      * Type of the filter which should be adjusted. If it is not given, type `Control` is assumed
+      */
+    sFilterType: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FilterType * / any */ String
+    ): this.type = js.native
+    def filter(
+      /**
+      * Single filter or array of filter objects
+      */
+    aFilters: Unit,
+      /**
+      * Type of the filter which should be adjusted. If it is not given, type `Control` is assumed
+      */
+    sFilterType: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FilterType * / any */ String,
+      /**
+      * Whether the success indicator should be returned instead of `this`
+      */
+    bReturnSuccess: Boolean
+    ): this.type = js.native
+    def filter(
+      /**
+      * Single filter or array of filter objects
+      */
+    aFilters: Unit,
+      /**
+      * Type of the filter which should be adjusted. If it is not given, type `Control` is assumed
+      */
+    sFilterType: Unit,
+      /**
+      * Whether the success indicator should be returned instead of `this`
+      */
+    bReturnSuccess: Boolean
+    ): this.type = js.native
+    def filter(
+      /**
+      * Single filter or array of filter objects
+      */
+    aFilters: Unit,
+      /**
+      * Type of the filter which should be adjusted. If it is not given, type `Control` is assumed
+      */
+    sFilterType: FilterType
+    ): this.type = js.native
+    def filter(
+      /**
+      * Single filter or array of filter objects
+      */
+    aFilters: Unit,
       /**
       * Type of the filter which should be adjusted. If it is not given, type `Control` is assumed
       */
@@ -1202,6 +1286,10 @@ object sapUiModelOdataV2OdatalistbindingMod {
       */
     sGroupId: String
     ): Unit = js.native
+    def refresh(/**
+      * The group Id for the refresh
+      */
+    sGroupId: String): Unit = js.native
     
     def sort(
       /**

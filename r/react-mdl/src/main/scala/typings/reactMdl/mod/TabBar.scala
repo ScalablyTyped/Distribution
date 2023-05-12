@@ -10,7 +10,7 @@ open class TabBar protected () extends _MDLComponent[TabBarProps] {
   def this(props: TabBarProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: TabBarProps, context: Any) = this()
 }

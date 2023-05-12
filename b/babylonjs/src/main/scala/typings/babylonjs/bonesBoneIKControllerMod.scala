@@ -17,7 +17,7 @@ object bonesBoneIKControllerMod {
     /**
       * Creates a new BoneIKController
       * @param mesh defines the TransformNode to control
-      * @param bone defines the bone to control
+      * @param bone defines the bone to control. The bone needs to have a parent bone. It also needs to have a length greater than 0 or a children we can use to infer its length.
       * @param options defines options to set up the controller
       * @param options.targetMesh
       * @param options.poleTargetMesh
@@ -52,6 +52,8 @@ object bonesBoneIKControllerMod {
     /* private */ var _maxAngle: Any = js.native
     
     /* private */ var _maxReach: Any = js.native
+    
+    /* private */ var _notEnoughInformation: Any = js.native
     
     /* private */ var _rightHandedSystem: Any = js.native
     

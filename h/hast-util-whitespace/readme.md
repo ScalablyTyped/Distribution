@@ -1,7 +1,7 @@
 
 # Scala.js typings for hast-util-whitespace
 
-Typings are for version 2.0.0
+Typings are for version 2.0.1
 
 ## Library description:
 hast utility to check if a node is inter-element whitespace

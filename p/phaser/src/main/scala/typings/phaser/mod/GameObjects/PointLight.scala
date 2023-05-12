@@ -42,7 +42,7 @@ open class PointLight protected ()
     * @param y The vertical position of this Point Light in the world.
     * @param color The color of the Point Light, given as a hex value. Default 0xffffff.
     * @param radius The radius of the Point Light. Default 128.
-    * @param intensity The intensity, or colr blend, of the Point Light. Default 1.
+    * @param intensity The intensity, or color blend, of the Point Light. Default 1.
     * @param attenuation The attenuation  of the Point Light. This is the reduction of light from the center point. Default 0.1.
     */
   def this(scene: Scene, x: Double, y: Double) = this()
@@ -127,7 +127,7 @@ open class PointLight protected ()
   ) = this()
   
   /**
-    * The depth of this Game Object within the Scene.
+    * The depth of this Game Object within the Scene. Ensure this value is only ever set to a number data-type.
     * 
     * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
     * of Game Objects, without actually moving their position in the display list.
@@ -150,7 +150,7 @@ open class PointLight protected ()
     * value will always render in front of one with a lower value.
     * 
     * Setting the depth will queue a depth sort event within the Scene.
-    * @param value The depth of this Game Object.
+    * @param value The depth of this Game Object. Ensure this value is only ever a number data-type.
     */
   /* CompleteClass */
   override def setDepth(value: Double): this.type = js.native

@@ -1,11 +1,12 @@
 package typings.libp2pKadDht
 
-import typings.libp2pInterfaceDht.mod.QueryEvent
 import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pInterfaces.eventsMod.EventEmitter
 import typings.libp2pKadDht.distSrcQueryManagerMod.CleanUpEvents
 import typings.libp2pKadDht.distSrcQueryTypesMod.QueryContext
 import typings.libp2pKadDht.distSrcQueryTypesMod.QueryFunc
+import typings.libp2pKadDht.mod.QueryEvent
+import typings.libp2pKadDht.mod.QueryOptions
 import typings.libp2pLogger.mod.Logger_
 import typings.libp2pPeerCollections.mod.PeerSet
 import typings.std.AbortSignal
@@ -23,7 +24,9 @@ object distSrcQueryQueryPathMod {
   
   inline def queryPath(options: QueryPathOptions): AsyncGenerator[QueryEvent, Unit, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryPath")(options.asInstanceOf[js.Any]).asInstanceOf[AsyncGenerator[QueryEvent, Unit, Unit]]
   
-  trait QueryPathOptions extends StObject {
+  trait QueryPathOptions
+    extends StObject
+       with QueryOptions {
     
     /**
       * How many concurrent node/value lookups to run
@@ -74,12 +77,6 @@ object distSrcQueryQueryPathMod {
       * The query function to run with each peer
       */
     def query(context: QueryContext): AsyncIterable[QueryEvent]
-    
-    /**
-      * A timeout for queryFunc in ms
-      */
-    var queryFuncTimeout: js.UndefOr[Double] = js.undefined
-    
     /**
       * The query function to run with each peer
       */
@@ -89,7 +86,8 @@ object distSrcQueryQueryPathMod {
     /**
       * When to stop querying
       */
-    var signal: AbortSignal
+    @JSName("signal")
+    var signal_QueryPathOptions: AbortSignal
     
     /**
       * Where we start our query
@@ -135,10 +133,6 @@ object distSrcQueryQueryPathMod {
       inline def setPeersSeen(value: PeerSet): Self = StObject.set(x, "peersSeen", value.asInstanceOf[js.Any])
       
       inline def setQuery(value: /* context */ QueryContext => AsyncIterable[QueryEvent]): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
-      
-      inline def setQueryFuncTimeout(value: Double): Self = StObject.set(x, "queryFuncTimeout", value.asInstanceOf[js.Any])
-      
-      inline def setQueryFuncTimeoutUndefined: Self = StObject.set(x, "queryFuncTimeout", js.undefined)
       
       inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       

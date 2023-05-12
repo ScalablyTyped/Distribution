@@ -1,10 +1,7 @@
 package typings.libp2pKadDht
 
 import typings.itStreamTypes.mod.Duplex
-import typings.libp2pInterfaceDht.mod.DialingPeerEvent
-import typings.libp2pInterfaceDht.mod.PeerResponseEvent
-import typings.libp2pInterfaceDht.mod.QueryErrorEvent
-import typings.libp2pInterfaceDht.mod.SendingQueryEvent
+import typings.itStreamTypes.mod.Source
 import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pInterfacePeerInfo.mod.PeerInfo
 import typings.libp2pInterfaces.distSrcStartableMod.Startable
@@ -12,6 +9,8 @@ import typings.libp2pInterfaces.eventsMod.EventEmitter
 import typings.libp2pInterfaces.mod.AbortOptions
 import typings.libp2pKadDht.distSrcMessageMod.Message
 import typings.libp2pKadDht.mod.KadDHTComponents
+import typings.libp2pKadDht.mod.QueryEvent
+import typings.libp2pKadDht.mod.QueryOptions
 import typings.std.AsyncGenerator
 import typings.std.CustomEvent
 import typings.uint8arraylist.mod.Uint8ArrayList
@@ -35,12 +34,20 @@ object distSrcNetworkMod {
       * Write a message to the given stream
       */
     def _writeMessage(
-      stream: Duplex[Uint8ArrayList, Uint8ArrayList | js.typedarray.Uint8Array, js.Promise[Unit]],
+      stream: Duplex[
+          AsyncGenerator[Uint8ArrayList, Any, Any], 
+          Source[Uint8ArrayList | js.typedarray.Uint8Array], 
+          Any
+        ],
       msg: js.typedarray.Uint8Array,
       options: AbortOptions
     ): js.Promise[Unit] = js.native
     def _writeMessage(
-      stream: Duplex[Uint8ArrayList, Uint8ArrayList | js.typedarray.Uint8Array, js.Promise[Unit]],
+      stream: Duplex[
+          AsyncGenerator[Uint8ArrayList, Any, Any], 
+          Source[Uint8ArrayList | js.typedarray.Uint8Array], 
+          Any
+        ],
       msg: Uint8ArrayList,
       options: AbortOptions
     ): js.Promise[Unit] = js.native
@@ -51,12 +58,20 @@ object distSrcNetworkMod {
       * this will error out.
       */
     def _writeReadMessage(
-      stream: Duplex[Uint8ArrayList, Uint8ArrayList | js.typedarray.Uint8Array, js.Promise[Unit]],
+      stream: Duplex[
+          AsyncGenerator[Uint8ArrayList, Any, Any], 
+          Source[Uint8ArrayList | js.typedarray.Uint8Array], 
+          Any
+        ],
       msg: js.typedarray.Uint8Array,
       options: AbortOptions
     ): js.Promise[Message] = js.native
     def _writeReadMessage(
-      stream: Duplex[Uint8ArrayList, Uint8ArrayList | js.typedarray.Uint8Array, js.Promise[Unit]],
+      stream: Duplex[
+          AsyncGenerator[Uint8ArrayList, Any, Any], 
+          Source[Uint8ArrayList | js.typedarray.Uint8Array], 
+          Any
+        ],
       msg: Uint8ArrayList,
       options: AbortOptions
     ): js.Promise[Message] = js.native
@@ -75,30 +90,14 @@ object distSrcNetworkMod {
     /**
       * Sends a message without expecting an answer
       */
-    def sendMessage(to: PeerId, msg: Message): AsyncGenerator[
-        SendingQueryEvent | PeerResponseEvent | QueryErrorEvent | DialingPeerEvent, 
-        Unit, 
-        Any
-      ] = js.native
-    def sendMessage(to: PeerId, msg: Message, options: AbortOptions): AsyncGenerator[
-        SendingQueryEvent | PeerResponseEvent | QueryErrorEvent | DialingPeerEvent, 
-        Unit, 
-        Any
-      ] = js.native
+    def sendMessage(to: PeerId, msg: Message): AsyncGenerator[QueryEvent, Any, Any] = js.native
+    def sendMessage(to: PeerId, msg: Message, options: QueryOptions): AsyncGenerator[QueryEvent, Any, Any] = js.native
     
     /**
       * Send a request and record RTT for latency measurements
       */
-    def sendRequest(to: PeerId, msg: Message): AsyncGenerator[
-        SendingQueryEvent | PeerResponseEvent | QueryErrorEvent | DialingPeerEvent, 
-        Unit, 
-        Any
-      ] = js.native
-    def sendRequest(to: PeerId, msg: Message, options: AbortOptions): AsyncGenerator[
-        SendingQueryEvent | PeerResponseEvent | QueryErrorEvent | DialingPeerEvent, 
-        Unit, 
-        Any
-      ] = js.native
+    def sendRequest(to: PeerId, msg: Message): AsyncGenerator[QueryEvent, Any, Any] = js.native
+    def sendRequest(to: PeerId, msg: Message, options: QueryOptions): AsyncGenerator[QueryEvent, Any, Any] = js.native
     
     /**
       * This method will be invoked to start the component.

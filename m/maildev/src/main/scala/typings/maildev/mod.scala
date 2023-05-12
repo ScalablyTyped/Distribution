@@ -31,6 +31,14 @@ object mod {
   trait MailDev extends StObject {
     
     /**
+      * Stops the SMTP server.
+      *
+      * @param callback The error callback.
+      */
+    def close(): Unit = js.native
+    def close(callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
+    
+    /**
       * Deletes all email and their attachments.
       *
       * @param callback The error callback.
@@ -46,14 +54,6 @@ object mod {
       */
     def deleteEmail(id: String): Unit = js.native
     def deleteEmail(id: String, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
-    
-    /**
-      * Stops the SMTP server.
-      *
-      * @param callback The error callback.
-      */
-    def end(): Unit = js.native
-    def end(callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
     /**
       * Returns array of all e-mail.

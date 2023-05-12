@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetEvidenceResponse extends StObject {
   
   /**
-    *  The evidence that the GetEvidenceResponse API returned. 
+    *  The evidence that the GetEvidence API returned. 
     */
   var evidence: js.UndefOr[Evidence] = js.undefined
 }

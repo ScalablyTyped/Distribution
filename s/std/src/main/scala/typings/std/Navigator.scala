@@ -59,6 +59,11 @@ trait Navigator
   
   /** Available only in secure contexts. */
   /* standard dom */
+  def requestMIDIAccess(): js.Promise[MIDIAccess] = js.native
+  def requestMIDIAccess(options: MIDIOptions): js.Promise[MIDIAccess] = js.native
+  
+  /** Available only in secure contexts. */
+  /* standard dom */
   def requestMediaKeySystemAccess(keySystem: java.lang.String, supportedConfigurations: js.Array[MediaKeySystemConfiguration]): js.Promise[MediaKeySystemAccess] = js.native
   /** Available only in secure contexts. */
   /* standard dom.iterable */

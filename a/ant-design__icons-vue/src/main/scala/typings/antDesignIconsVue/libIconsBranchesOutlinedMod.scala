@@ -16,7 +16,7 @@ object libIconsBranchesOutlinedMod extends Shortcut {
   @js.native
   trait BranchesOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_BranchesOutlinedIconType: String = js.native

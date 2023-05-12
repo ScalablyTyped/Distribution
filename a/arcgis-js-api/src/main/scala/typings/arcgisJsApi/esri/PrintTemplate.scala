@@ -61,6 +61,15 @@ trait PrintTemplate
   var format: pdf | png32 | png8 | jpg | gif | eps | svg | svgz = js.native
   
   /**
+    * When `true`, tables will be included in the printout request.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#includeTables)
+    */
+  var includeTables: Boolean = js.native
+  
+  /**
     * The layout used for the print output.
     *
     * @default map-only

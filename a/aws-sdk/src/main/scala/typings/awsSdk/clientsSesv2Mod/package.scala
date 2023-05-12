@@ -427,6 +427,7 @@ type RecommendationStatus = _RecommendationStatus | String
   - typings.awsSdk.awsSdkStrings.DKIM
   - typings.awsSdk.awsSdkStrings.DMARC
   - typings.awsSdk.awsSdkStrings.SPF
+  - typings.awsSdk.awsSdkStrings.BIMI
   - java.lang.String
 */
 type RecommendationType = _RecommendationType | String

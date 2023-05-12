@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-map
 
-Typings are for version 2.0.0
+Typings are for version 3.0.3
 
 ## Library description:
 Maps the values yielded by an async iterator

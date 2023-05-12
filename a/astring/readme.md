@@ -1,7 +1,7 @@
 
 # Scala.js typings for astring
 
-Typings are for version 1.8.3
+Typings are for version 1.8.4
 
 ## Library description:
 JavaScript code generator from an ESTree-compliant AST.

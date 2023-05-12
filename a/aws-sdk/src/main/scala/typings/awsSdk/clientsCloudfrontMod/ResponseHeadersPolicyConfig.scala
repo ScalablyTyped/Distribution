@@ -27,6 +27,11 @@ trait ResponseHeadersPolicyConfig extends StObject {
   var Name: String
   
   /**
+    * A configuration for a set of HTTP headers to remove from the HTTP response.
+    */
+  var RemoveHeadersConfig: js.UndefOr[ResponseHeadersPolicyRemoveHeadersConfig] = js.undefined
+  
+  /**
     * A configuration for a set of security-related HTTP response headers.
     */
   var SecurityHeadersConfig: js.UndefOr[ResponseHeadersPolicySecurityHeadersConfig] = js.undefined
@@ -59,6 +64,10 @@ object ResponseHeadersPolicyConfig {
     inline def setCustomHeadersConfigUndefined: Self = StObject.set(x, "CustomHeadersConfig", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveHeadersConfig(value: ResponseHeadersPolicyRemoveHeadersConfig): Self = StObject.set(x, "RemoveHeadersConfig", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveHeadersConfigUndefined: Self = StObject.set(x, "RemoveHeadersConfig", js.undefined)
     
     inline def setSecurityHeadersConfig(value: ResponseHeadersPolicySecurityHeadersConfig): Self = StObject.set(x, "SecurityHeadersConfig", value.asInstanceOf[js.Any])
     

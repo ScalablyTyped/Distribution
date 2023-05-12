@@ -8,37 +8,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MaterialboxOptions extends StObject {
   
   /**
-    * Transition in duration in milliseconds
+    * Transition in duration in milliseconds.
     * @default 275
     */
   var inDuration: Double
   
   /**
-    * Callback function called after materialbox is closed
+    * Callback function called after materialbox is closed.
     * @default null
     */
   def onCloseEnd(el: Element): Unit
   
   /**
-    * Callback function called before materialbox is closed
+    * Callback function called before materialbox is closed.
     * @default null
     */
   def onCloseStart(el: Element): Unit
   
   /**
-    * Callback function called after materialbox is opened
+    * Callback function called after materialbox is opened.
     * @default null
     */
   def onOpenEnd(el: Element): Unit
   
   /**
-    * Callback function called before materialbox is opened
+    * Callback function called before materialbox is opened.
     * @default null
     */
   def onOpenStart(el: Element): Unit
   
   /**
-    * Transition out duration in milliseconds
+    * Transition out duration in milliseconds.
     * @default 200
     */
   var outDuration: Double

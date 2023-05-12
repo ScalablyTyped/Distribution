@@ -11,9 +11,9 @@ trait ComponentInternalOptions extends StObject {
     */
   var __file: js.UndefOr[String] = js.undefined
   
-  /* Excluded from this release type: __scopeId */
-  /* Excluded from this release type: __cssModules */
-  /* Excluded from this release type: __hmrId */
+  /* removed internal: __scopeId */
+  /* removed internal: __cssModules */
+  /* removed internal: __hmrId */
   /**
     * Compat build only, for bailing out of certain compatibility behavior
     */

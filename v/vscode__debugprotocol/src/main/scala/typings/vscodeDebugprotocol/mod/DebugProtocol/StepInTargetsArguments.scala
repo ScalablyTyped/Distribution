@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Arguments for `stepInTargets` request. */
 trait StepInTargetsArguments extends StObject {
   
-  /** The stack frame for which to retrieve the possible stepIn targets. */
+  /** The stack frame for which to retrieve the possible step-in targets. */
   var frameId: Double
 }
 object StepInTargetsArguments {

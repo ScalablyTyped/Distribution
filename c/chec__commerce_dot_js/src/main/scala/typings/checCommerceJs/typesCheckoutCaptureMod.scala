@@ -4,7 +4,7 @@ import typings.checCommerceJs.anon.Braintree
 import typings.checCommerceJs.anon.Firstname
 import typings.checCommerceJs.anon.PartialAddress
 import typings.checCommerceJs.anon.Shippingmethod
-import typings.checCommerceJs.typesExtrafieldMod.Extrafield
+import typings.checCommerceJs.typesExtrafieldsMod.Extrafields
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +19,7 @@ object typesCheckoutCaptureMod {
     
     var discount_code: js.UndefOr[String] = js.undefined
     
-    var extra_fields: js.UndefOr[js.Array[Extrafield]] = js.undefined
+    var extra_fields: js.UndefOr[Extrafields] = js.undefined
     
     var fulfillment: js.UndefOr[Shippingmethod] = js.undefined
     
@@ -53,11 +53,9 @@ object typesCheckoutCaptureMod {
       
       inline def setDiscount_codeUndefined: Self = StObject.set(x, "discount_code", js.undefined)
       
-      inline def setExtra_fields(value: js.Array[Extrafield]): Self = StObject.set(x, "extra_fields", value.asInstanceOf[js.Any])
+      inline def setExtra_fields(value: Extrafields): Self = StObject.set(x, "extra_fields", value.asInstanceOf[js.Any])
       
       inline def setExtra_fieldsUndefined: Self = StObject.set(x, "extra_fields", js.undefined)
-      
-      inline def setExtra_fieldsVarargs(value: Extrafield*): Self = StObject.set(x, "extra_fields", js.Array(value*))
       
       inline def setFulfillment(value: Shippingmethod): Self = StObject.set(x, "fulfillment", value.asInstanceOf[js.Any])
       

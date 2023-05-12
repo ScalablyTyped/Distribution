@@ -119,6 +119,8 @@ trait ElementDefinition
   
   var _minValueTime: js.UndefOr[Element] = js.undefined
   
+  var _mustHaveValue: js.UndefOr[Element] = js.undefined
+  
   var _mustSupport: js.UndefOr[Element] = js.undefined
   
   var _orderMeaning: js.UndefOr[Element] = js.undefined
@@ -166,6 +168,8 @@ trait ElementDefinition
   var _sliceIsConstraining: js.UndefOr[Element] = js.undefined
   
   var _sliceName: js.UndefOr[Element] = js.undefined
+  
+  var _valueAlternatives: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * Identifies additional names by which this element might also be known.
@@ -235,6 +239,12 @@ trait ElementDefinition
     * Specifying a default value means that the property can never been unknown - it must always have a value. Further, the default value can never be changed, or changed in constraints on content models. Defining default values creates many difficulties in implementation (e.g. when is a value missing?). For these reasons, default values are (and should be) used extremely sparingly.
     * No default values are ever defined in the FHIR specification, nor can they be defined in constraints ("profiles") on data types or resources. This element only exists so that default values may be defined in logical models.
     */
+  var defaultValueAvailability: js.UndefOr[Availability] = js.undefined
+  
+  /**
+    * Specifying a default value means that the property can never been unknown - it must always have a value. Further, the default value can never be changed, or changed in constraints on content models. Defining default values creates many difficulties in implementation (e.g. when is a value missing?). For these reasons, default values are (and should be) used extremely sparingly.
+    * No default values are ever defined in the FHIR specification, nor can they be defined in constraints ("profiles") on data types or resources. This element only exists so that default values may be defined in logical models.
+    */
   var defaultValueBase64Binary: js.UndefOr[String] = js.undefined
   
   /**
@@ -289,12 +299,6 @@ trait ElementDefinition
     * Specifying a default value means that the property can never been unknown - it must always have a value. Further, the default value can never be changed, or changed in constraints on content models. Defining default values creates many difficulties in implementation (e.g. when is a value missing?). For these reasons, default values are (and should be) used extremely sparingly.
     * No default values are ever defined in the FHIR specification, nor can they be defined in constraints ("profiles") on data types or resources. This element only exists so that default values may be defined in logical models.
     */
-  var defaultValueContributor: js.UndefOr[Contributor] = js.undefined
-  
-  /**
-    * Specifying a default value means that the property can never been unknown - it must always have a value. Further, the default value can never be changed, or changed in constraints on content models. Defining default values creates many difficulties in implementation (e.g. when is a value missing?). For these reasons, default values are (and should be) used extremely sparingly.
-    * No default values are ever defined in the FHIR specification, nor can they be defined in constraints ("profiles") on data types or resources. This element only exists so that default values may be defined in logical models.
-    */
   var defaultValueCount: js.UndefOr[Count] = js.undefined
   
   /**
@@ -344,6 +348,12 @@ trait ElementDefinition
     * No default values are ever defined in the FHIR specification, nor can they be defined in constraints ("profiles") on data types or resources. This element only exists so that default values may be defined in logical models.
     */
   var defaultValueExpression: js.UndefOr[Expression] = js.undefined
+  
+  /**
+    * Specifying a default value means that the property can never been unknown - it must always have a value. Further, the default value can never be changed, or changed in constraints on content models. Defining default values creates many difficulties in implementation (e.g. when is a value missing?). For these reasons, default values are (and should be) used extremely sparingly.
+    * No default values are ever defined in the FHIR specification, nor can they be defined in constraints ("profiles") on data types or resources. This element only exists so that default values may be defined in logical models.
+    */
+  var defaultValueExtendedContactDetail: js.UndefOr[ExtendedContactDetail] = js.undefined
   
   /**
     * Specifying a default value means that the property can never been unknown - it must always have a value. Further, the default value can never be changed, or changed in constraints on content models. Defining default values creates many difficulties in implementation (e.g. when is a value missing?). For these reasons, default values are (and should be) used extremely sparingly.
@@ -558,6 +568,11 @@ trait ElementDefinition
   /**
     * This is not recommended for Coding and CodeableConcept since these often have highly contextual properties such as version or display.
     */
+  var fixedAvailability: js.UndefOr[Availability] = js.undefined
+  
+  /**
+    * This is not recommended for Coding and CodeableConcept since these often have highly contextual properties such as version or display.
+    */
   var fixedBase64Binary: js.UndefOr[String] = js.undefined
   
   /**
@@ -603,11 +618,6 @@ trait ElementDefinition
   /**
     * This is not recommended for Coding and CodeableConcept since these often have highly contextual properties such as version or display.
     */
-  var fixedContributor: js.UndefOr[Contributor] = js.undefined
-  
-  /**
-    * This is not recommended for Coding and CodeableConcept since these often have highly contextual properties such as version or display.
-    */
   var fixedCount: js.UndefOr[Count] = js.undefined
   
   /**
@@ -649,6 +659,11 @@ trait ElementDefinition
     * This is not recommended for Coding and CodeableConcept since these often have highly contextual properties such as version or display.
     */
   var fixedExpression: js.UndefOr[Expression] = js.undefined
+  
+  /**
+    * This is not recommended for Coding and CodeableConcept since these often have highly contextual properties such as version or display.
+    */
+  var fixedExtendedContactDetail: js.UndefOr[ExtendedContactDetail] = js.undefined
   
   /**
     * This is not recommended for Coding and CodeableConcept since these often have highly contextual properties such as version or display.
@@ -801,7 +816,7 @@ trait ElementDefinition
   var fixedUuid: js.UndefOr[String] = js.undefined
   
   /**
-    * Only the definition of an element can set IsModifier true - either the specification itself or where an extension is originally defined. Once set, it cannot be changed in derived profiles. An element/extension that has isModifier=true SHOULD also have a minimum cardinality of 1, so that there is no lack of clarity about what to do if it is missing. If it can be missing, the definition SHALL make the meaning of a missing element clear.
+    * Only the definition of an element can set IsModifier true - either the specification itself or where an extension is originally defined. Once set, it cannot be changed in derived profiles (except in the special case of the defining a new extension). An element/extension that has isModifier=true SHOULD also have a minimum cardinality of 1, so that there is no lack of clarity about what to do if it is missing. If it can be missing, the definition SHALL make the meaning of a missing element clear.
     */
   var isModifier: js.UndefOr[Boolean] = js.undefined
   
@@ -811,12 +826,19 @@ trait ElementDefinition
   var isModifierReason: js.UndefOr[String] = js.undefined
   
   /**
-    * Some resources include a set of simple metadata, and some very large data. This element is used to reduce the quantity of data returned in searches. Note that servers may pre-cache summarized resources for optimal performance, so servers might not support per-profile use of the isSummary flag. When a request is made with _summary=true, serailisers only include elements marked as 'isSummary = true'. Other than Attachment.data, all data type properties are included in the summary form. In resource and data type definitions, if an element is at the root or has a parent that is 'mustSupport' and the minimum cardinality is 1 or the element is a modifier, it must be marked as isSummary=true.
+    * Some resources include a set of simple metadata, and some very large data. This element is used to reduce the quantity of data returned in searches. Note that servers may pre-cache summarized resources for optimal performance. When a request is made with _summary=true, serializers only include elements marked as 'isSummary = true'. With a few exceptions (listed below), all datatype properties are included in the summary form. In resource and datatype definitions, if an element has a descendant marked as isSummary=true or if it satisfies both of the following conditions, it must be marked as isSummary=true:
+    * * is at the root or has a parent that is 'mustSupport'
+    * * has a minimum cardinality of 1 or is a modifier element
+    * The following datatype properties are exceptions, and are not marked as isSummary:
+    * * Attachment.data
+    * * Signature.data, Signature.targetFormat, Signature.sigFormat
+    * * Narrative.status, Narrative.div
+    * * SampledData.data.
     */
   var isSummary: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * See also the extension (http://hl7.org/fhir/StructureDefinition/elementdefinition-question)[extension-elementdefinition-question.html].
+    * See also the extension [http://hl7.org/fhir/StructureDefinition/elementdefinition-question](http://hl7.org/fhir/extensions/StructureDefinition-elementdefinition-question.html).
     */
   var label: js.UndefOr[String] = js.undefined
   
@@ -836,52 +858,52 @@ trait ElementDefinition
   var maxLength: js.UndefOr[Double] = js.undefined
   
   /**
-    * Except for date/date/instant, the type of the maxValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of maxValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is added to the current clock to determine the maximum allowable value.   A maximum value for a Quantity is interpreted as an canonical maximum - e.g. you cannot provide 10g if the maximum value is 50mg.
+    * Except for date/date/instant, the type of the maxValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of maxValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is added to the current clock to determine the maximum allowable value.   A maximum value for a Quantity is interpreted as a canonical maximum - e.g. you cannot provide 10g if the maximum value is 50mg.
     */
   var maxValueDate: js.UndefOr[String] = js.undefined
   
   /**
-    * Except for date/date/instant, the type of the maxValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of maxValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is added to the current clock to determine the maximum allowable value.   A maximum value for a Quantity is interpreted as an canonical maximum - e.g. you cannot provide 10g if the maximum value is 50mg.
+    * Except for date/date/instant, the type of the maxValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of maxValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is added to the current clock to determine the maximum allowable value.   A maximum value for a Quantity is interpreted as a canonical maximum - e.g. you cannot provide 10g if the maximum value is 50mg.
     */
   var maxValueDateTime: js.UndefOr[String] = js.undefined
   
   /**
-    * Except for date/date/instant, the type of the maxValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of maxValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is added to the current clock to determine the maximum allowable value.   A maximum value for a Quantity is interpreted as an canonical maximum - e.g. you cannot provide 10g if the maximum value is 50mg.
+    * Except for date/date/instant, the type of the maxValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of maxValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is added to the current clock to determine the maximum allowable value.   A maximum value for a Quantity is interpreted as a canonical maximum - e.g. you cannot provide 10g if the maximum value is 50mg.
     */
   var maxValueDecimal: js.UndefOr[Double] = js.undefined
   
   /**
-    * Except for date/date/instant, the type of the maxValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of maxValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is added to the current clock to determine the maximum allowable value.   A maximum value for a Quantity is interpreted as an canonical maximum - e.g. you cannot provide 10g if the maximum value is 50mg.
+    * Except for date/date/instant, the type of the maxValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of maxValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is added to the current clock to determine the maximum allowable value.   A maximum value for a Quantity is interpreted as a canonical maximum - e.g. you cannot provide 10g if the maximum value is 50mg.
     */
   var maxValueInstant: js.UndefOr[String] = js.undefined
   
   /**
-    * Except for date/date/instant, the type of the maxValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of maxValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is added to the current clock to determine the maximum allowable value.   A maximum value for a Quantity is interpreted as an canonical maximum - e.g. you cannot provide 10g if the maximum value is 50mg.
+    * Except for date/date/instant, the type of the maxValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of maxValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is added to the current clock to determine the maximum allowable value.   A maximum value for a Quantity is interpreted as a canonical maximum - e.g. you cannot provide 10g if the maximum value is 50mg.
     */
   var maxValueInteger: js.UndefOr[Double] = js.undefined
   
   /**
-    * Except for date/date/instant, the type of the maxValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of maxValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is added to the current clock to determine the maximum allowable value.   A maximum value for a Quantity is interpreted as an canonical maximum - e.g. you cannot provide 10g if the maximum value is 50mg.
+    * Except for date/date/instant, the type of the maxValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of maxValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is added to the current clock to determine the maximum allowable value.   A maximum value for a Quantity is interpreted as a canonical maximum - e.g. you cannot provide 10g if the maximum value is 50mg.
     */
   var maxValueInteger64: js.UndefOr[String] = js.undefined
   
   /**
-    * Except for date/date/instant, the type of the maxValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of maxValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is added to the current clock to determine the maximum allowable value.   A maximum value for a Quantity is interpreted as an canonical maximum - e.g. you cannot provide 10g if the maximum value is 50mg.
+    * Except for date/date/instant, the type of the maxValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of maxValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is added to the current clock to determine the maximum allowable value.   A maximum value for a Quantity is interpreted as a canonical maximum - e.g. you cannot provide 10g if the maximum value is 50mg.
     */
   var maxValuePositiveInt: js.UndefOr[Double] = js.undefined
   
   /**
-    * Except for date/date/instant, the type of the maxValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of maxValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is added to the current clock to determine the maximum allowable value.   A maximum value for a Quantity is interpreted as an canonical maximum - e.g. you cannot provide 10g if the maximum value is 50mg.
+    * Except for date/date/instant, the type of the maxValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of maxValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is added to the current clock to determine the maximum allowable value.   A maximum value for a Quantity is interpreted as a canonical maximum - e.g. you cannot provide 10g if the maximum value is 50mg.
     */
   var maxValueQuantity: js.UndefOr[Quantity] = js.undefined
   
   /**
-    * Except for date/date/instant, the type of the maxValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of maxValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is added to the current clock to determine the maximum allowable value.   A maximum value for a Quantity is interpreted as an canonical maximum - e.g. you cannot provide 10g if the maximum value is 50mg.
+    * Except for date/date/instant, the type of the maxValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of maxValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is added to the current clock to determine the maximum allowable value.   A maximum value for a Quantity is interpreted as a canonical maximum - e.g. you cannot provide 10g if the maximum value is 50mg.
     */
   var maxValueTime: js.UndefOr[String] = js.undefined
   
   /**
-    * Except for date/date/instant, the type of the maxValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of maxValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is added to the current clock to determine the maximum allowable value.   A maximum value for a Quantity is interpreted as an canonical maximum - e.g. you cannot provide 10g if the maximum value is 50mg.
+    * Except for date/date/instant, the type of the maxValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of maxValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is added to the current clock to determine the maximum allowable value.   A maximum value for a Quantity is interpreted as a canonical maximum - e.g. you cannot provide 10g if the maximum value is 50mg.
     */
   var maxValueUnsignedInt: js.UndefOr[Double] = js.undefined
   
@@ -896,57 +918,62 @@ trait ElementDefinition
   var min: js.UndefOr[Double] = js.undefined
   
   /**
-    * Except for date/date/instant, the type of the minValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of minValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is subtracted from the current clock to determine the minimum allowable value.   A minimum value for a Quantity is interpreted as an canonical minimum - e.g. you cannot provide 100mg if the minimum value is 10g.
+    * Except for date/date/instant, the type of the minValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of minValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is subtracted from the current clock to determine the minimum allowable value.   A minimum value for a Quantity is interpreted as a canonical minimum - e.g. you cannot provide 100mg if the minimum value is 10g.
     */
   var minValueDate: js.UndefOr[String] = js.undefined
   
   /**
-    * Except for date/date/instant, the type of the minValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of minValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is subtracted from the current clock to determine the minimum allowable value.   A minimum value for a Quantity is interpreted as an canonical minimum - e.g. you cannot provide 100mg if the minimum value is 10g.
+    * Except for date/date/instant, the type of the minValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of minValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is subtracted from the current clock to determine the minimum allowable value.   A minimum value for a Quantity is interpreted as a canonical minimum - e.g. you cannot provide 100mg if the minimum value is 10g.
     */
   var minValueDateTime: js.UndefOr[String] = js.undefined
   
   /**
-    * Except for date/date/instant, the type of the minValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of minValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is subtracted from the current clock to determine the minimum allowable value.   A minimum value for a Quantity is interpreted as an canonical minimum - e.g. you cannot provide 100mg if the minimum value is 10g.
+    * Except for date/date/instant, the type of the minValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of minValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is subtracted from the current clock to determine the minimum allowable value.   A minimum value for a Quantity is interpreted as a canonical minimum - e.g. you cannot provide 100mg if the minimum value is 10g.
     */
   var minValueDecimal: js.UndefOr[Double] = js.undefined
   
   /**
-    * Except for date/date/instant, the type of the minValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of minValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is subtracted from the current clock to determine the minimum allowable value.   A minimum value for a Quantity is interpreted as an canonical minimum - e.g. you cannot provide 100mg if the minimum value is 10g.
+    * Except for date/date/instant, the type of the minValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of minValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is subtracted from the current clock to determine the minimum allowable value.   A minimum value for a Quantity is interpreted as a canonical minimum - e.g. you cannot provide 100mg if the minimum value is 10g.
     */
   var minValueInstant: js.UndefOr[String] = js.undefined
   
   /**
-    * Except for date/date/instant, the type of the minValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of minValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is subtracted from the current clock to determine the minimum allowable value.   A minimum value for a Quantity is interpreted as an canonical minimum - e.g. you cannot provide 100mg if the minimum value is 10g.
+    * Except for date/date/instant, the type of the minValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of minValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is subtracted from the current clock to determine the minimum allowable value.   A minimum value for a Quantity is interpreted as a canonical minimum - e.g. you cannot provide 100mg if the minimum value is 10g.
     */
   var minValueInteger: js.UndefOr[Double] = js.undefined
   
   /**
-    * Except for date/date/instant, the type of the minValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of minValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is subtracted from the current clock to determine the minimum allowable value.   A minimum value for a Quantity is interpreted as an canonical minimum - e.g. you cannot provide 100mg if the minimum value is 10g.
+    * Except for date/date/instant, the type of the minValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of minValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is subtracted from the current clock to determine the minimum allowable value.   A minimum value for a Quantity is interpreted as a canonical minimum - e.g. you cannot provide 100mg if the minimum value is 10g.
     */
   var minValueInteger64: js.UndefOr[String] = js.undefined
   
   /**
-    * Except for date/date/instant, the type of the minValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of minValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is subtracted from the current clock to determine the minimum allowable value.   A minimum value for a Quantity is interpreted as an canonical minimum - e.g. you cannot provide 100mg if the minimum value is 10g.
+    * Except for date/date/instant, the type of the minValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of minValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is subtracted from the current clock to determine the minimum allowable value.   A minimum value for a Quantity is interpreted as a canonical minimum - e.g. you cannot provide 100mg if the minimum value is 10g.
     */
   var minValuePositiveInt: js.UndefOr[Double] = js.undefined
   
   /**
-    * Except for date/date/instant, the type of the minValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of minValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is subtracted from the current clock to determine the minimum allowable value.   A minimum value for a Quantity is interpreted as an canonical minimum - e.g. you cannot provide 100mg if the minimum value is 10g.
+    * Except for date/date/instant, the type of the minValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of minValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is subtracted from the current clock to determine the minimum allowable value.   A minimum value for a Quantity is interpreted as a canonical minimum - e.g. you cannot provide 100mg if the minimum value is 10g.
     */
   var minValueQuantity: js.UndefOr[Quantity] = js.undefined
   
   /**
-    * Except for date/date/instant, the type of the minValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of minValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is subtracted from the current clock to determine the minimum allowable value.   A minimum value for a Quantity is interpreted as an canonical minimum - e.g. you cannot provide 100mg if the minimum value is 10g.
+    * Except for date/date/instant, the type of the minValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of minValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is subtracted from the current clock to determine the minimum allowable value.   A minimum value for a Quantity is interpreted as a canonical minimum - e.g. you cannot provide 100mg if the minimum value is 10g.
     */
   var minValueTime: js.UndefOr[String] = js.undefined
   
   /**
-    * Except for date/date/instant, the type of the minValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of minValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is subtracted from the current clock to determine the minimum allowable value.   A minimum value for a Quantity is interpreted as an canonical minimum - e.g. you cannot provide 100mg if the minimum value is 10g.
+    * Except for date/date/instant, the type of the minValue[x] SHALL be the same as the specified type of the element. For the date/dateTime/instant values, the type of minValue[x] SHALL be either the same, or a [Duration](datatypes.html#Duration) which specifies a relative time limit to the current time. The duration value is positive, and is subtracted from the current clock to determine the minimum allowable value.   A minimum value for a Quantity is interpreted as a canonical minimum - e.g. you cannot provide 100mg if the minimum value is 10g.
     */
   var minValueUnsignedInt: js.UndefOr[Double] = js.undefined
   
   /**
-    * "Something useful" is context dependent and impossible to describe in the base FHIR specification. For this reason, tue mustSupport flag is never set to true by the FHIR specification itself - it is only set to true in profiles.  A profile on a type can always make musSupport = true if it is false in the base type but cannot make mustSupport = false if it is true in the base type.   This is done in [Resource Profiles](profiling.html#mustsupport), where the profile labels an element as mustSupport=true. When a profile does this, it SHALL also make clear exactly what kind of "support" is required, as this can mean many things.    Note that an element that has the property IsModifier is not necessarily a "key" element (e.g. one of the important elements to make use of the resource), nor is it automatically mustSupport - however both of these things are more likely to be true for IsModifier elements than for other elements.
+    * Typical extensions that can be provided in place of a the value are [http://hl7.org/fhir/StructureDefinition/data-absent-reason](http://hl7.org/fhir/extensions/StructureDefinition-data-absent-reason.html),  [http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor](http://hl7.org/fhir/extensions/StructureDefinition-iso21090-nullFlavor.html),  [http://hl7.org/fhir/StructureDefinition/originalText](http://hl7.org/fhir/extensions/StructureDefinition-originalText.html), and [http://hl7.org/fhir/StructureDefinition/cqf-expression](http://hl7.org/fhir/extensions/StructureDefinition-cqf-expression.html). Note that this element has no meaning when a value is provided, and extensions can be provided in addition to a value.
+    */
+  var mustHaveValue: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * "Something meaningful" is context dependent and impossible to describe in the base FHIR specification. For this reason, the mustSupport flag is never set to true by the FHIR specification itself - it is only set to true in profiles.  A profile on a type can always make mustSupport = true if it is false in the base type but cannot make mustSupport = false if it is true in the base type.   This is done in [Resource Profiles](profiling.html#mustsupport), where the profile labels an element as mustSupport=true. When a profile does this, it SHALL also make clear exactly what kind of "support" is required, as this can mean many things.    Note that an element that has the property IsModifier is not necessarily a "key" element (e.g. one of the important elements to make use of the resource), nor is it automatically mustSupport - however both of these things are more likely to be true for IsModifier elements than for other elements.
     */
   var mustSupport: js.UndefOr[Boolean] = js.undefined
   
@@ -979,6 +1006,11 @@ trait ElementDefinition
     * Mostly used for fixing values of CodeableConcept. In general, pattern[x] is not intended for use with primitive types, where is has the same meaning as fixed[x].
     */
   var patternAttachment: js.UndefOr[Attachment] = js.undefined
+  
+  /**
+    * Mostly used for fixing values of CodeableConcept. In general, pattern[x] is not intended for use with primitive types, where is has the same meaning as fixed[x].
+    */
+  var patternAvailability: js.UndefOr[Availability] = js.undefined
   
   /**
     * Mostly used for fixing values of CodeableConcept. In general, pattern[x] is not intended for use with primitive types, where is has the same meaning as fixed[x].
@@ -1028,11 +1060,6 @@ trait ElementDefinition
   /**
     * Mostly used for fixing values of CodeableConcept. In general, pattern[x] is not intended for use with primitive types, where is has the same meaning as fixed[x].
     */
-  var patternContributor: js.UndefOr[Contributor] = js.undefined
-  
-  /**
-    * Mostly used for fixing values of CodeableConcept. In general, pattern[x] is not intended for use with primitive types, where is has the same meaning as fixed[x].
-    */
   var patternCount: js.UndefOr[Count] = js.undefined
   
   /**
@@ -1074,6 +1101,11 @@ trait ElementDefinition
     * Mostly used for fixing values of CodeableConcept. In general, pattern[x] is not intended for use with primitive types, where is has the same meaning as fixed[x].
     */
   var patternExpression: js.UndefOr[Expression] = js.undefined
+  
+  /**
+    * Mostly used for fixing values of CodeableConcept. In general, pattern[x] is not intended for use with primitive types, where is has the same meaning as fixed[x].
+    */
+  var patternExtendedContactDetail: js.UndefOr[ExtendedContactDetail] = js.undefined
   
   /**
     * Mostly used for fixing values of CodeableConcept. In general, pattern[x] is not intended for use with primitive types, where is has the same meaning as fixed[x].
@@ -1259,6 +1291,11 @@ trait ElementDefinition
     * The Type of the element can be left blank in a differential constraint, in which case the type is inherited from the resource. Abstract types are not permitted to appear as a type when multiple types are listed.  (I.e. Abstract types cannot be part of a choice).
     */
   var `type`: js.UndefOr[js.Array[ElementDefinitionType]] = js.undefined
+  
+  /**
+    * if mustHaveValue is true, then this element should not be present, since no extensions are allowed in place of the value. Note that this element has no impact if the value is present.
+    */
+  var valueAlternatives: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ElementDefinition {
   
@@ -1326,6 +1363,10 @@ object ElementDefinition {
     
     inline def setDefaultValueAttachmentUndefined: Self = StObject.set(x, "defaultValueAttachment", js.undefined)
     
+    inline def setDefaultValueAvailability(value: Availability): Self = StObject.set(x, "defaultValueAvailability", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultValueAvailabilityUndefined: Self = StObject.set(x, "defaultValueAvailability", js.undefined)
+    
     inline def setDefaultValueBase64Binary(value: String): Self = StObject.set(x, "defaultValueBase64Binary", value.asInstanceOf[js.Any])
     
     inline def setDefaultValueBase64BinaryUndefined: Self = StObject.set(x, "defaultValueBase64Binary", js.undefined)
@@ -1362,10 +1403,6 @@ object ElementDefinition {
     
     inline def setDefaultValueContactPointUndefined: Self = StObject.set(x, "defaultValueContactPoint", js.undefined)
     
-    inline def setDefaultValueContributor(value: Contributor): Self = StObject.set(x, "defaultValueContributor", value.asInstanceOf[js.Any])
-    
-    inline def setDefaultValueContributorUndefined: Self = StObject.set(x, "defaultValueContributor", js.undefined)
-    
     inline def setDefaultValueCount(value: Count): Self = StObject.set(x, "defaultValueCount", value.asInstanceOf[js.Any])
     
     inline def setDefaultValueCountUndefined: Self = StObject.set(x, "defaultValueCount", js.undefined)
@@ -1401,6 +1438,10 @@ object ElementDefinition {
     inline def setDefaultValueExpression(value: Expression): Self = StObject.set(x, "defaultValueExpression", value.asInstanceOf[js.Any])
     
     inline def setDefaultValueExpressionUndefined: Self = StObject.set(x, "defaultValueExpression", js.undefined)
+    
+    inline def setDefaultValueExtendedContactDetail(value: ExtendedContactDetail): Self = StObject.set(x, "defaultValueExtendedContactDetail", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultValueExtendedContactDetailUndefined: Self = StObject.set(x, "defaultValueExtendedContactDetail", js.undefined)
     
     inline def setDefaultValueHumanName(value: HumanName): Self = StObject.set(x, "defaultValueHumanName", value.asInstanceOf[js.Any])
     
@@ -1548,6 +1589,10 @@ object ElementDefinition {
     
     inline def setFixedAttachmentUndefined: Self = StObject.set(x, "fixedAttachment", js.undefined)
     
+    inline def setFixedAvailability(value: Availability): Self = StObject.set(x, "fixedAvailability", value.asInstanceOf[js.Any])
+    
+    inline def setFixedAvailabilityUndefined: Self = StObject.set(x, "fixedAvailability", js.undefined)
+    
     inline def setFixedBase64Binary(value: String): Self = StObject.set(x, "fixedBase64Binary", value.asInstanceOf[js.Any])
     
     inline def setFixedBase64BinaryUndefined: Self = StObject.set(x, "fixedBase64Binary", js.undefined)
@@ -1584,10 +1629,6 @@ object ElementDefinition {
     
     inline def setFixedContactPointUndefined: Self = StObject.set(x, "fixedContactPoint", js.undefined)
     
-    inline def setFixedContributor(value: Contributor): Self = StObject.set(x, "fixedContributor", value.asInstanceOf[js.Any])
-    
-    inline def setFixedContributorUndefined: Self = StObject.set(x, "fixedContributor", js.undefined)
-    
     inline def setFixedCount(value: Count): Self = StObject.set(x, "fixedCount", value.asInstanceOf[js.Any])
     
     inline def setFixedCountUndefined: Self = StObject.set(x, "fixedCount", js.undefined)
@@ -1623,6 +1664,10 @@ object ElementDefinition {
     inline def setFixedExpression(value: Expression): Self = StObject.set(x, "fixedExpression", value.asInstanceOf[js.Any])
     
     inline def setFixedExpressionUndefined: Self = StObject.set(x, "fixedExpression", js.undefined)
+    
+    inline def setFixedExtendedContactDetail(value: ExtendedContactDetail): Self = StObject.set(x, "fixedExtendedContactDetail", value.asInstanceOf[js.Any])
+    
+    inline def setFixedExtendedContactDetailUndefined: Self = StObject.set(x, "fixedExtendedContactDetail", js.undefined)
     
     inline def setFixedHumanName(value: HumanName): Self = StObject.set(x, "fixedHumanName", value.asInstanceOf[js.Any])
     
@@ -1862,6 +1907,10 @@ object ElementDefinition {
     
     inline def setMinValueUnsignedIntUndefined: Self = StObject.set(x, "minValueUnsignedInt", js.undefined)
     
+    inline def setMustHaveValue(value: Boolean): Self = StObject.set(x, "mustHaveValue", value.asInstanceOf[js.Any])
+    
+    inline def setMustHaveValueUndefined: Self = StObject.set(x, "mustHaveValue", js.undefined)
+    
     inline def setMustSupport(value: Boolean): Self = StObject.set(x, "mustSupport", value.asInstanceOf[js.Any])
     
     inline def setMustSupportUndefined: Self = StObject.set(x, "mustSupport", js.undefined)
@@ -1887,6 +1936,10 @@ object ElementDefinition {
     inline def setPatternAttachment(value: Attachment): Self = StObject.set(x, "patternAttachment", value.asInstanceOf[js.Any])
     
     inline def setPatternAttachmentUndefined: Self = StObject.set(x, "patternAttachment", js.undefined)
+    
+    inline def setPatternAvailability(value: Availability): Self = StObject.set(x, "patternAvailability", value.asInstanceOf[js.Any])
+    
+    inline def setPatternAvailabilityUndefined: Self = StObject.set(x, "patternAvailability", js.undefined)
     
     inline def setPatternBase64Binary(value: String): Self = StObject.set(x, "patternBase64Binary", value.asInstanceOf[js.Any])
     
@@ -1924,10 +1977,6 @@ object ElementDefinition {
     
     inline def setPatternContactPointUndefined: Self = StObject.set(x, "patternContactPoint", js.undefined)
     
-    inline def setPatternContributor(value: Contributor): Self = StObject.set(x, "patternContributor", value.asInstanceOf[js.Any])
-    
-    inline def setPatternContributorUndefined: Self = StObject.set(x, "patternContributor", js.undefined)
-    
     inline def setPatternCount(value: Count): Self = StObject.set(x, "patternCount", value.asInstanceOf[js.Any])
     
     inline def setPatternCountUndefined: Self = StObject.set(x, "patternCount", js.undefined)
@@ -1963,6 +2012,10 @@ object ElementDefinition {
     inline def setPatternExpression(value: Expression): Self = StObject.set(x, "patternExpression", value.asInstanceOf[js.Any])
     
     inline def setPatternExpressionUndefined: Self = StObject.set(x, "patternExpression", js.undefined)
+    
+    inline def setPatternExtendedContactDetail(value: ExtendedContactDetail): Self = StObject.set(x, "patternExtendedContactDetail", value.asInstanceOf[js.Any])
+    
+    inline def setPatternExtendedContactDetailUndefined: Self = StObject.set(x, "patternExtendedContactDetail", js.undefined)
     
     inline def setPatternHumanName(value: HumanName): Self = StObject.set(x, "patternHumanName", value.asInstanceOf[js.Any])
     
@@ -2115,6 +2168,12 @@ object ElementDefinition {
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def setTypeVarargs(value: ElementDefinitionType*): Self = StObject.set(x, "type", js.Array(value*))
+    
+    inline def setValueAlternatives(value: js.Array[String]): Self = StObject.set(x, "valueAlternatives", value.asInstanceOf[js.Any])
+    
+    inline def setValueAlternativesUndefined: Self = StObject.set(x, "valueAlternatives", js.undefined)
+    
+    inline def setValueAlternativesVarargs(value: String*): Self = StObject.set(x, "valueAlternatives", js.Array(value*))
     
     inline def set_alias(value: js.Array[Element]): Self = StObject.set(x, "_alias", value.asInstanceOf[js.Any])
     
@@ -2332,6 +2391,10 @@ object ElementDefinition {
     
     inline def set_minValueTimeUndefined: Self = StObject.set(x, "_minValueTime", js.undefined)
     
+    inline def set_mustHaveValue(value: Element): Self = StObject.set(x, "_mustHaveValue", value.asInstanceOf[js.Any])
+    
+    inline def set_mustHaveValueUndefined: Self = StObject.set(x, "_mustHaveValue", js.undefined)
+    
     inline def set_mustSupport(value: Element): Self = StObject.set(x, "_mustSupport", value.asInstanceOf[js.Any])
     
     inline def set_mustSupportUndefined: Self = StObject.set(x, "_mustSupport", js.undefined)
@@ -2429,5 +2492,11 @@ object ElementDefinition {
     inline def set_sliceName(value: Element): Self = StObject.set(x, "_sliceName", value.asInstanceOf[js.Any])
     
     inline def set_sliceNameUndefined: Self = StObject.set(x, "_sliceName", js.undefined)
+    
+    inline def set_valueAlternatives(value: js.Array[Element]): Self = StObject.set(x, "_valueAlternatives", value.asInstanceOf[js.Any])
+    
+    inline def set_valueAlternativesUndefined: Self = StObject.set(x, "_valueAlternatives", js.undefined)
+    
+    inline def set_valueAlternativesVarargs(value: Element*): Self = StObject.set(x, "_valueAlternatives", js.Array(value*))
   }
 }

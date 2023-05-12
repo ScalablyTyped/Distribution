@@ -1,7 +1,7 @@
 
 # Scala.js typings for detective-postcss
 
-Typings are for version 6.1.0
+Typings are for version 6.1.3
 
 ## Library description:
 Detective to find dependents of CSS (PostCSS dialect)

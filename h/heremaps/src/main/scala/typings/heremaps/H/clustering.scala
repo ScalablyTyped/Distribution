@@ -26,8 +26,8 @@ object clustering {
   /**
     * The clustering provider serves clusters and noise point representation for the map depending on the provided data set.
     * Levels for clustering as well as custom cluster representation can be set via Options.
-    * @property min {number} - Minimum zoom level at which provider can cluster data
-    * @property max {number} - Maximum zoom level at which provider can cluster data
+    * min {number} - Minimum zoom level at which provider can cluster data
+    * max {number} - Maximum zoom level at which provider can cluster data
     */
   @js.native
   trait Provider
@@ -178,11 +178,11 @@ object clustering {
     
     /**
       * Options which are used within cluster calculations.
-      * @property eps {number=} - epsilon parameter for cluster calculation. For the FASTGRID strategy it must not exceed 256 and must take values that are power of 2.
+      * eps {number=} - epsilon parameter for cluster calculation. For the FASTGRID strategy it must not exceed 256 and must take values that are power of 2.
       * For the GRID and DYNAMICGRID strategies it can take values from 10 to 127. Default is 32.
-      * @property minWeight {number=} - the minimum points weight sum to form a cluster, default is 2
-      * @property projection {H.geo.IProjection=} - projection to use for clustering, default is H.geo.mercator
-      * @property strategy {H.clustering.Provider.Strategy=} - clustering stretegy, defaults to H.clustering.Provider.Strategy.FASTGRID
+      * minWeight {number=} - the minimum points weight sum to form a cluster, default is 2
+      * projection {H.geo.IProjection=} - projection to use for clustering, default is H.geo.mercator
+      * strategy {H.clustering.Provider.Strategy=} - clustering stretegy, defaults to H.clustering.Provider.Strategy.FASTGRID
       */
     trait ClusteringOptions extends StObject {
       
@@ -224,10 +224,10 @@ object clustering {
     
     /**
       * Options which are used to initialize the clustering Provider
-      * @property min {number=} - The minimal supported zoom level, default is 0
-      * @property max {number=} - The maximal supported zoom level, default is 22
-      * @property clusteringOptions {H.clustering.Provider.ClusteringOptions=} - options for clustering algorithm
-      * @property theme {H.clustering.ITheme=} - cluster and noise point graphical representation
+      * min {number=} - The minimal supported zoom level, default is 0
+      * max {number=} - The maximal supported zoom level, default is 22
+      * clusteringOptions {H.clustering.Provider.ClusteringOptions=} - options for clustering algorithm
+      * theme {H.clustering.ITheme=} - cluster and noise point graphical representation
       */
     trait Options extends StObject {
       
@@ -270,10 +270,10 @@ object clustering {
   
   /**
     * This class represents the input data structure for data points to be clustered.
-    * @property lat {H.geo.Latitude} - The latitude coordinate of the data point's position
-    * @property lng {H.geo.Longitude} - The longitude coordinate of the data point's position
-    * @property wt {number} - The weight of the data point
-    * @property data {*} - Data associated with this data point
+    * lat {H.geo.Latitude} - The latitude coordinate of the data point's position
+    * lng {H.geo.Longitude} - The longitude coordinate of the data point's position
+    * wt {number} - The weight of the data point
+    * data {*} - Data associated with this data point
     */
   trait DataPoint
     extends StObject

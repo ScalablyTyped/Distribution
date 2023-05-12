@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../../framework/handlers/loader.js').ResourceLoader} ResourceLoader */
 /**
   * Callback used by {@link AssetRegistry#filter} to filter assets.
   *
@@ -33,7 +32,8 @@ open class AssetRegistry protected ()
   /**
     * Create an instance of an AssetRegistry.
     *
-    * @param {ResourceLoader} loader - The ResourceLoader used to load the asset files.
+    * @param {import('../handlers/loader.js').ResourceLoader} loader - The ResourceLoader used to
+    * load the asset files.
     */
   def this(loader: typings.playcanvas.mod.ResourceLoader) = this()
 }

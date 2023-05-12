@@ -50,8 +50,6 @@ object libNetXmlhttprequestMod {
     
     var certPath: js.UndefOr[String] = js.undefined
     
-    var decodeContentFromLatin1: js.UndefOr[Boolean] = js.undefined
-    
     var ignoreSslErrors: js.UndefOr[Boolean] = js.undefined
     
     var keyPath: js.UndefOr[String] = js.undefined
@@ -73,10 +71,6 @@ object libNetXmlhttprequestMod {
       inline def setCertPath(value: String): Self = StObject.set(x, "certPath", value.asInstanceOf[js.Any])
       
       inline def setCertPathUndefined: Self = StObject.set(x, "certPath", js.undefined)
-      
-      inline def setDecodeContentFromLatin1(value: Boolean): Self = StObject.set(x, "decodeContentFromLatin1", value.asInstanceOf[js.Any])
-      
-      inline def setDecodeContentFromLatin1Undefined: Self = StObject.set(x, "decodeContentFromLatin1", js.undefined)
       
       inline def setIgnoreSslErrors(value: Boolean): Self = StObject.set(x, "ignoreSslErrors", value.asInstanceOf[js.Any])
       
@@ -103,9 +97,9 @@ object libNetXmlhttprequestMod {
     
     def getResponseHeader(header: String): String = js.native
     
-    def getTimeout(): Double = js.native
-    
     def open(method: String, url: String): Unit = js.native
+    
+    def overrideMimeType(mimeType: String): Unit = js.native
     
     var readyState: Double = js.native
     
@@ -121,10 +115,10 @@ object libNetXmlhttprequestMod {
     
     def setRequestHeader(header: String, value: String): Unit = js.native
     
-    def setTimeout(value: Double): Unit = js.native
-    
     var status: Double = js.native
     
     var statusText: String = js.native
+    
+    var timeout: Double = js.native
   }
 }

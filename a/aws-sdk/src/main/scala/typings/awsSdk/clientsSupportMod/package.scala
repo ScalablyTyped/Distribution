@@ -38,15 +38,25 @@ type CcEmailAddress = java.lang.String
 
 type CcEmailAddressList = js.Array[CcEmailAddress]
 
+type Code = java.lang.String
+
 type CommunicationBody = java.lang.String
 
 type CommunicationList = js.Array[Communication]
 
+type CommunicationTypeOptionsList = js.Array[CommunicationTypeOptions]
+
 type Data = Buffer | js.typedarray.Uint8Array | Blob | java.lang.String
+
+type DatesWithoutSupportList = js.Array[DateInterval]
+
+type Display = java.lang.String
 
 type DisplayId = java.lang.String
 
 type Double = scala.Double
+
+type EndTime = java.lang.String
 
 type ExpiryTime = java.lang.String
 
@@ -84,6 +94,8 @@ type SeverityLevelName = java.lang.String
 
 type SeverityLevelsList = js.Array[SeverityLevel]
 
+type StartTime = java.lang.String
+
 type Status = java.lang.String
 
 type String = java.lang.String
@@ -94,6 +106,10 @@ type Subject = java.lang.String
 
 type SubmittedBy = java.lang.String
 
+type SupportedHoursList = js.Array[SupportedHour]
+
+type SupportedLanguagesList = js.Array[SupportedLanguage]
+
 type TimeCreated = java.lang.String
 
 type TrustedAdvisorCheckList = js.Array[TrustedAdvisorCheckDescription]
@@ -103,6 +119,20 @@ type TrustedAdvisorCheckRefreshStatusList = js.Array[TrustedAdvisorCheckRefreshS
 type TrustedAdvisorCheckSummaryList = js.Array[TrustedAdvisorCheckSummary]
 
 type TrustedAdvisorResourceDetailList = js.Array[TrustedAdvisorResourceDetail]
+
+type Type = java.lang.String
+
+type ValidatedCategoryCode = java.lang.String
+
+type ValidatedCommunicationBody = java.lang.String
+
+type ValidatedDateTime = java.lang.String
+
+type ValidatedIssueTypeString = java.lang.String
+
+type ValidatedLanguageAvailability = java.lang.String
+
+type ValidatedServiceCode = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2013-04-15`

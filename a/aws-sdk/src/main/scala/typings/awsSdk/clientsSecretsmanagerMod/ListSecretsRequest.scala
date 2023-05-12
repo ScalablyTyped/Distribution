@@ -12,6 +12,11 @@ trait ListSecretsRequest extends StObject {
   var Filters: js.UndefOr[FiltersListType] = js.undefined
   
   /**
+    * Specifies whether to include secrets scheduled for deletion. By default, secrets scheduled for deletion aren't included.
+    */
+  var IncludePlannedDeletion: js.UndefOr[BooleanType] = js.undefined
+  
+  /**
     * The number of results to include in the response. If there are more results available, in the response, Secrets Manager includes NextToken. To get the next results, call ListSecrets again with the value from NextToken.
     */
   var MaxResults: js.UndefOr[MaxResultsType] = js.undefined
@@ -22,7 +27,7 @@ trait ListSecretsRequest extends StObject {
   var NextToken: js.UndefOr[NextTokenType] = js.undefined
   
   /**
-    * Lists secrets in the requested order. 
+    * Secrets are listed by CreatedDate. 
     */
   var SortOrder: js.UndefOr[SortOrderType] = js.undefined
 }
@@ -41,6 +46,10 @@ object ListSecretsRequest {
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
     inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
+    
+    inline def setIncludePlannedDeletion(value: BooleanType): Self = StObject.set(x, "IncludePlannedDeletion", value.asInstanceOf[js.Any])
+    
+    inline def setIncludePlannedDeletionUndefined: Self = StObject.set(x, "IncludePlannedDeletion", js.undefined)
     
     inline def setMaxResults(value: MaxResultsType): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

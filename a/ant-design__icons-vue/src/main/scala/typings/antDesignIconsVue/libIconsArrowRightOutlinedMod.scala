@@ -16,7 +16,7 @@ object libIconsArrowRightOutlinedMod extends Shortcut {
   @js.native
   trait ArrowRightOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_ArrowRightOutlinedIconType: String = js.native

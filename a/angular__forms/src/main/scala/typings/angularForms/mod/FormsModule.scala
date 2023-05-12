@@ -1,8 +1,10 @@
 package typings.angularForms.mod
 
+import typings.angularCore.mod.ModuleWithProviders
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵInjectorDeclaration
 import typings.angularCore.mod.ɵɵNgModuleDeclaration
+import typings.angularForms.anon.CallSetDisabledState
 import typings.angularForms.anon.TypeofNgForm
 import typings.angularForms.anon.TypeofNgModel
 import typings.angularForms.anon.TypeofNgModelGroup
@@ -20,6 +22,16 @@ object FormsModule {
   @JSImport("@angular/forms", "FormsModule")
   @js.native
   val ^ : js.Any = js.native
+  
+  /**
+    * @description
+    * Provides options for configuring the forms module.
+    *
+    * @param opts An object of configuration options
+    * * `callSetDisabledState` Configures whether to `always` call `setDisabledState`, which is more
+    * correct, or to only call it `whenDisabled`, which is the legacy behavior.
+    */
+  inline def withConfig(opts: CallSetDisabledState): ModuleWithProviders[FormsModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("withConfig")(opts.asInstanceOf[js.Any]).asInstanceOf[ModuleWithProviders[FormsModule]]
   
   @JSImport("@angular/forms", "FormsModule.\u0275fac")
   @js.native

@@ -1,10 +1,10 @@
 package typings.photoshop
 
-import org.scalablytyped.runtime.NumberDictionary
 import typings.photoshop.anon.Get
 import typings.photoshop.domConstantsMod.Direction
+import typings.photoshop.domDocumentMod.Document
 import typings.photoshop.domGuideMod.Guide
-import typings.std.Document
+import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,10 +15,7 @@ object domCollectionsGuidesMod {
   @js.native
   open class Guides protected ()
     extends StObject
-       with /**
-    * Used to access the guides in the collection
-    */
-  /* index */ NumberDictionary[Guide] {
+       with Array[Guide] {
     /**
       * @ignore
       */
@@ -30,9 +27,26 @@ object domCollectionsGuidesMod {
     val _docId: Double = js.native
     
     /**
-      * Adds a guide for the collection at the given coordinate and direction
+      * Ruler origin defines where coordinates [0,0] are located.
+      * Point coordinates are calculated from left top corner of the canvas.
+      * @ignore
       */
-    def add(direction: Direction, coordinate: Double): Unit = js.native
+    /**
+      * Adds a guide for the collection at the given coordinate and direction
+      *
+      *
+      * ***Fixes in Photoshop 24.0:***
+      * - *Correct coordinate when resolution is not 72 PPI*
+      * - *Returns valid instance of guide*
+      *
+      * @param direction Indicates whether the guide is vertical or horizontal
+      * @param coordinate Position of the guide measured from the ruler origin in pixels.
+      * The value can be a decimal number.
+      *
+      * Note: the user can move the ruler origin which will affect the position value of the guides.
+      * @minVersion 23.0
+      */
+    def add(direction: Direction, coordinate: Double): Guide = js.native
     
     /**
       * @ignore
@@ -40,12 +54,15 @@ object domCollectionsGuidesMod {
     def handler(): Get = js.native
     
     /**
-      * Number of [[Guide]] elements in this collection
+      * Number of [[Guide]] elements in this collection.
+      * @minVersion 23.0
       */
-    def length: Double = js.native
+    @JSName("length")
+    def length_MGuides: Double = js.native
     
     /**
-      * The owner document of this Guide collection
+      * The owner document of this Guide collection.
+      * @minVersion 23.0
       */
     def parent: Document = js.native
     
@@ -55,7 +72,8 @@ object domCollectionsGuidesMod {
     /* private */ var proxy: Any = js.native
     
     /**
-      * Clears all guides from this collection
+      * Clears all guides from this collection.
+      * @minVersion 23.0
       */
     def removeAll(): Unit = js.native
   }

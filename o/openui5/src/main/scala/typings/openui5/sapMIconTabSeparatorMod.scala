@@ -164,6 +164,8 @@ object sapMIconTabSeparatorMod {
     def getVisible(): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Renders the item in the IconTabHeader.
       */
     def render(
@@ -174,6 +176,8 @@ object sapMIconTabSeparatorMod {
     ): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Renders this item in the IconTabSelectList.
       */
     def renderInSelectList(

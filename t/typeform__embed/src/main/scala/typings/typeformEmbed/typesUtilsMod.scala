@@ -9,7 +9,8 @@ import typings.typeformEmbed.anon.EmbedId
 import typings.typeformEmbed.typesBaseEmbedTypesMod.EmbedType
 import typings.typeformEmbed.typesUtilsBuildIframeSrcMod.BuildIframeSrcOptions
 import typings.typeformEmbed.typesUtilsCreateCustomLaunchOptionsMod.RemoveHandler
-import typings.typeformEmbed.typesUtilsCreateIframeCreateIframeMod.CreateIframeOptions
+import typings.typeformEmbed.typesUtilsCreateIframeCreateIframeMod.CreateIframe_
+import typings.typeformEmbed.typesUtilsHubspotMod.HubspotFieldsType
 import typings.typeformEmbed.typesUtilsLazyInitMod.fn
 import typings.typeformEmbed.typesUtilsLoadOptionsFromAttributesMod.Transformation
 import typings.typeformEmbed.typesUtilsSetElementSizeMod.ElementSize
@@ -34,9 +35,13 @@ object typesUtilsMod {
   inline def changeColorOpacity(color: String, opacity: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("changeColorOpacity")(color.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def changeColorOpacity(color: Unit, opacity: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("changeColorOpacity")(color.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def createIframe(formId: String, `type`: EmbedType, options: CreateIframeOptions): EmbedId = (^.asInstanceOf[js.Dynamic].applyDynamic("createIframe")(formId.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EmbedId]
+  inline def createIframe(`type`: EmbedType, param1: CreateIframe_): EmbedId = (^.asInstanceOf[js.Dynamic].applyDynamic("createIframe")(`type`.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[EmbedId]
   
   inline def dispatchCustomKeyEventFromIframe(evt: MessageEvent[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatchCustomKeyEventFromIframe")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def getHubspotCookieValue(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHubspotCookieValue")().asInstanceOf[js.UndefOr[String]]
+  
+  inline def getHubspotHiddenFields(): HubspotFieldsType = ^.asInstanceOf[js.Dynamic].applyDynamic("getHubspotHiddenFields")().asInstanceOf[HubspotFieldsType]
   
   inline def getTextColor(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTextColor")().asInstanceOf[String]
   inline def getTextColor(color: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTextColor")(color.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -68,6 +73,7 @@ object typesUtilsMod {
   inline def loadOptionsFromAttributes(element: HTMLElement, transform: Record[String, Transformation]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("loadOptionsFromAttributes")(element.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def makeAutoResize(wrapperElm: HTMLElement): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeAutoResize")(wrapperElm.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  inline def makeAutoResize(wrapperElm: HTMLElement, onAllDevices: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeAutoResize")(wrapperElm.asInstanceOf[js.Any], onAllDevices.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
   inline def removeCustomKeyboardListener(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeCustomKeyboardListener")().asInstanceOf[Unit]
   
@@ -100,4 +106,6 @@ object typesUtilsMod {
   ]]
   
   inline def unmountElement(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unmountElement")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def waitForHubspotCookie(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForHubspotCookie")().asInstanceOf[js.Promise[Unit]]
 }

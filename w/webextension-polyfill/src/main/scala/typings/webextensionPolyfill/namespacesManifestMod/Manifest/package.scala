@@ -3,6 +3,7 @@ package typings.webextensionPolyfill.namespacesManifestMod.Manifest
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.ImageData
 import typings.std.Record
+import typings.webextensionPolyfill.namespacesExperimentsMod.Experiments.ExperimentAPI
 import typings.webextensionPolyfill.webextensionPolyfillStrings.Lessthansignall_urlsGreaterthansign
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -43,6 +44,7 @@ type OptionalPermissionOrOrigin = OptionalPermission | MatchPattern
 /* Rewritten from type alias, can be one of: 
   - typings.webextensionPolyfill.namespacesManifestMod.Manifest.PermissionNoPrompt
   - typings.webextensionPolyfill.namespacesManifestMod.Manifest.OptionalPermission
+  - typings.webextensionPolyfill.webextensionPolyfillStrings.declarativeNetRequest
   - java.lang.String
 */
 type Permission = _Permission | String
@@ -58,3 +60,5 @@ type ThemeExperimentColorsType = StringDictionary[Any]
 type ThemeExperimentImagesType = StringDictionary[Any]
 
 type ThemeExperimentPropertiesType = StringDictionary[Any]
+
+type WebExtensionManifestExperimentApisType = StringDictionary[ExperimentAPI]

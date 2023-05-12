@@ -70,7 +70,8 @@ object libComponentsTooltipTooltipDottypesMod {
     /**
       * Content to be passed to the tooltip
       */
-    var content: js.UndefOr[String | Element | js.Array[Element]] = js.undefined
+    @JSName("content")
+    var content_ITooltipProps: js.UndefOr[String | Element | js.Array[Element]] = js.undefined
     
     /**
       * Length of delay. Set to `TooltipDelay.zero` if you do not want a delay.

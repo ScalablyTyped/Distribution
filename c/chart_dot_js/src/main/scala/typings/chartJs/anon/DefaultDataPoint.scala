@@ -5,10 +5,10 @@ import typings.chartJs.chartJsStrings.linear
 import typings.chartJs.chartJsStrings.logarithmic
 import typings.chartJs.chartJsStrings.time
 import typings.chartJs.chartJsStrings.timeseries
-import typings.chartJs.mod.CartesianParsedData
-import typings.chartJs.mod.ScatterControllerChartOptions
-import typings.chartJs.mod.ScatterControllerDatasetOptions
-import typings.chartJs.mod.ScatterDataPoint
+import typings.chartJs.distTypesIndexMod.CartesianParsedData
+import typings.chartJs.distTypesIndexMod.ScatterControllerChartOptions
+import typings.chartJs.distTypesIndexMod.ScatterControllerDatasetOptions
+import typings.chartJs.distTypesIndexMod.ScatterDataPoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

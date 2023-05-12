@@ -27,7 +27,17 @@ object examplesJsmNodesMaterialsNodeMaterialMod {
   @js.native
   trait NodeMaterial extends ShaderMaterial {
     
+    var alphaTestNode: typings.three.examplesJsmNodesCoreNodeMod.default | Null = js.native
+    
+    var backdropAlphaNode: typings.three.examplesJsmNodesCoreNodeMod.default | Null = js.native
+    
+    var backdropNode: typings.three.examplesJsmNodesCoreNodeMod.default | Null = js.native
+    
     def build(builder: typings.three.examplesJsmNodesCoreNodeBuilderMod.default): Unit = js.native
+    
+    var colorNode: typings.three.examplesJsmNodesCoreNodeMod.default | Null = js.native
+    
+    var envNode: typings.three.examplesJsmNodesCoreNodeMod.default | Null = js.native
     
     def generateDiffuseColor(builder: typings.three.examplesJsmNodesCoreNodeBuilderMod.default): Unit = js.native
     
@@ -39,7 +49,17 @@ object examplesJsmNodesMaterialsNodeMaterialMod {
     
     var isNodeMaterial: `true` = js.native
     
+    var lightsNode: typings.three.examplesJsmNodesCoreNodeMod.default | Null = js.native
+    
     @JSName("lights")
     var lights_NodeMaterial: `true` = js.native
+    
+    var normalNode: typings.three.examplesJsmNodesCoreNodeMod.default | Null = js.native
+    
+    var normals: `true` = js.native
+    
+    var opacityNode: typings.three.examplesJsmNodesCoreNodeMod.default | Null = js.native
+    
+    var positionNode: typings.three.examplesJsmNodesCoreNodeMod.default | Null = js.native
   }
 }

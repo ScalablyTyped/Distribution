@@ -16,7 +16,7 @@ object libIconsStopFilledMod extends Shortcut {
   @js.native
   trait StopFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_StopFilledIconType: String = js.native

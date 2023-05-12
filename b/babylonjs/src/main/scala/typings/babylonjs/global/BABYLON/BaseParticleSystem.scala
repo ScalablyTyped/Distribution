@@ -1,5 +1,6 @@
 package typings.babylonjs.global.BABYLON
 
+import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,6 +16,42 @@ open class BaseParticleSystem protected ()
     * @param name The name of the particle system
     */
   def this(name: String) = this()
+  
+  /**
+    * Gets or sets the active clipplane 1
+    */
+  /* CompleteClass */
+  var clipPlane: Nullable[typings.babylonjs.BABYLON.Plane] = js.native
+  
+  /**
+    * Gets or sets the active clipplane 2
+    */
+  /* CompleteClass */
+  var clipPlane2: Nullable[typings.babylonjs.BABYLON.Plane] = js.native
+  
+  /**
+    * Gets or sets the active clipplane 3
+    */
+  /* CompleteClass */
+  var clipPlane3: Nullable[typings.babylonjs.BABYLON.Plane] = js.native
+  
+  /**
+    * Gets or sets the active clipplane 4
+    */
+  /* CompleteClass */
+  var clipPlane4: Nullable[typings.babylonjs.BABYLON.Plane] = js.native
+  
+  /**
+    * Gets or sets the active clipplane 5
+    */
+  /* CompleteClass */
+  var clipPlane5: Nullable[typings.babylonjs.BABYLON.Plane] = js.native
+  
+  /**
+    * Gets or sets the active clipplane 6
+    */
+  /* CompleteClass */
+  var clipPlane6: Nullable[typings.babylonjs.BABYLON.Plane] = js.native
 }
 /* static members */
 object BaseParticleSystem {

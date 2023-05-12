@@ -11,7 +11,7 @@ open class GeolocateControl protected () extends BaseControl[GeolocateControlPro
   def this(props: GeolocateControlProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: GeolocateControlProps, context: Any) = this()
 }

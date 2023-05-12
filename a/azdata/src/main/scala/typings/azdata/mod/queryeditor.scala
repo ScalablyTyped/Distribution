@@ -6,6 +6,7 @@ import typings.azdata.mod.window.DialogTab
 import typings.std.Map
 import typings.vscode.Thenable
 import typings.vscode.mod.Disposable
+import typings.vscode.mod.Range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -93,8 +94,10 @@ object queryeditor {
   @js.native
   trait QueryEventListener extends StObject {
     
+    def onQueryEvent(`type`: QueryEventType, document: QueryDocument, args: String, queryInfo: QueryInfo): Unit = js.native
+    def onQueryEvent(`type`: QueryEventType, document: QueryDocument, args: Unit, queryInfo: QueryInfo): Unit = js.native
     /**
-      * A callback that is called whenever a query event occurs
+      * An event that is fired for query events
       * @param type The type of query event
       * @param document The document this event was sent by
       * @param args The extra information for the event, if any
@@ -103,10 +106,9 @@ object queryeditor {
       * queryStop: undefined
       * executionPlan: string (the plan itself)
       * visualize: ResultSetSummary (the result set to be visualized)
+      * @param queryInfo The information about the query that triggered this event
       */
-    def onQueryEvent(`type`: QueryEventType, document: QueryDocument): Unit = js.native
-    def onQueryEvent(`type`: QueryEventType, document: QueryDocument, args: String): Unit = js.native
-    def onQueryEvent(`type`: QueryEventType, document: QueryDocument, args: ResultSetSummary): Unit = js.native
+    def onQueryEvent(`type`: QueryEventType, document: QueryDocument, args: ResultSetSummary, queryInfo: QueryInfo): Unit = js.native
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -128,5 +130,74 @@ object queryeditor {
     inline def queryUpdate: typings.azdata.azdataStrings.queryUpdate = "queryUpdate".asInstanceOf[typings.azdata.azdataStrings.queryUpdate]
     
     inline def visualize: typings.azdata.azdataStrings.visualize = "visualize".asInstanceOf[typings.azdata.azdataStrings.visualize]
+  }
+  
+  trait QueryInfo extends StObject {
+    
+    /**
+      * The ranges for each batch that has executed so far
+      */
+    var batchRanges: js.Array[Range]
+    
+    /**
+      * Any messages that have been received from the query provider
+      */
+    var messages: js.Array[QueryMessage]
+  }
+  object QueryInfo {
+    
+    inline def apply(batchRanges: js.Array[Range], messages: js.Array[QueryMessage]): QueryInfo = {
+      val __obj = js.Dynamic.literal(batchRanges = batchRanges.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any])
+      __obj.asInstanceOf[QueryInfo]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryInfo] (val x: Self) extends AnyVal {
+      
+      inline def setBatchRanges(value: js.Array[Range]): Self = StObject.set(x, "batchRanges", value.asInstanceOf[js.Any])
+      
+      inline def setBatchRangesVarargs(value: Range*): Self = StObject.set(x, "batchRanges", js.Array(value*))
+      
+      inline def setMessages(value: js.Array[QueryMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      
+      inline def setMessagesVarargs(value: QueryMessage*): Self = StObject.set(x, "messages", js.Array(value*))
+    }
+  }
+  
+  trait QueryMessage extends StObject {
+    
+    /**
+      * Whether this message is an error message or not
+      */
+    var isError: Boolean
+    
+    /**
+      * The message string
+      */
+    var message: String
+    
+    /**
+      * The timestamp for when this message was sent
+      */
+    var time: js.UndefOr[String] = js.undefined
+  }
+  object QueryMessage {
+    
+    inline def apply(isError: Boolean, message: String): QueryMessage = {
+      val __obj = js.Dynamic.literal(isError = isError.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+      __obj.asInstanceOf[QueryMessage]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryMessage] (val x: Self) extends AnyVal {
+      
+      inline def setIsError(value: Boolean): Self = StObject.set(x, "isError", value.asInstanceOf[js.Any])
+      
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      
+      inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      
+      inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    }
   }
 }

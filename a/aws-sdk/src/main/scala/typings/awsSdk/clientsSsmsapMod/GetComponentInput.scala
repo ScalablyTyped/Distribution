@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetComponentInput extends StObject {
   
   /**
-    * 
+    * The ID of the application.
     */
   var ApplicationId: typings.awsSdk.clientsSsmsapMod.ApplicationId
   
   /**
-    * 
+    * The ID of the component.
     */
   var ComponentId: typings.awsSdk.clientsSsmsapMod.ComponentId
 }

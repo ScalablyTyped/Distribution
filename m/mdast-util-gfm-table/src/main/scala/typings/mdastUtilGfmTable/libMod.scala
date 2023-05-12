@@ -1,7 +1,7 @@
 package typings.mdastUtilGfmTable
 
-import typings.mdastUtilFromMarkdown.mod.Extension
-import typings.mdastUtilFromMarkdown.mod.Handle
+import typings.mdastUtilFromMarkdown.libMod.Extension
+import typings.mdastUtilFromMarkdown.libMod.Handle
 import typings.mdastUtilToMarkdown.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -72,7 +72,7 @@ object libMod {
   
   type ToMarkdownContext = Context
   
-  type ToMarkdownExtension = typings.mdastUtilToMarkdown.mod.Options
+  type ToMarkdownExtension = typings.mdastUtilToMarkdown.libTypesMod.Options
   
-  type ToMarkdownHandle = typings.mdastUtilToMarkdown.mod.Handle
+  type ToMarkdownHandle = typings.mdastUtilToMarkdown.libTypesMod.Handle
 }

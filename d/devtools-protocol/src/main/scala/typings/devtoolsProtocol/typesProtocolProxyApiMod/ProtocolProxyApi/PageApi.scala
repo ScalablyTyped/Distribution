@@ -23,7 +23,6 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.javascriptDialogOpening
 import typings.devtoolsProtocol.devtoolsProtocolStrings.lifecycleEvent
 import typings.devtoolsProtocol.devtoolsProtocolStrings.loadEventFired
 import typings.devtoolsProtocol.devtoolsProtocolStrings.navigatedWithinDocument
-import typings.devtoolsProtocol.devtoolsProtocolStrings.prerenderAttemptCompleted
 import typings.devtoolsProtocol.devtoolsProtocolStrings.screencastFrame
 import typings.devtoolsProtocol.devtoolsProtocolStrings.screencastVisibilityChanged
 import typings.devtoolsProtocol.devtoolsProtocolStrings.windowOpen
@@ -81,7 +80,6 @@ import typings.devtoolsProtocol.mod.Protocol.Page.NavigateRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.NavigateResponse
 import typings.devtoolsProtocol.mod.Protocol.Page.NavigateToHistoryEntryRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.NavigatedWithinDocumentEvent
-import typings.devtoolsProtocol.mod.Protocol.Page.PrerenderAttemptCompletedEvent
 import typings.devtoolsProtocol.mod.Protocol.Page.PrintToPDFRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.PrintToPDFResponse
 import typings.devtoolsProtocol.mod.Protocol.Page.ProduceCompilationCacheRequest
@@ -104,6 +102,7 @@ import typings.devtoolsProtocol.mod.Protocol.Page.SetFontSizesRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.SetGeolocationOverrideRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.SetInterceptFileChooserDialogRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.SetLifecycleEventsEnabledRequest
+import typings.devtoolsProtocol.mod.Protocol.Page.SetRPHRegistrationModeRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.SetSPCTransactionModeRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.SetTouchEmulationEnabledRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.SetWebLifecycleStateRequest
@@ -232,6 +231,9 @@ trait PageApi extends StObject {
     */
   def getLayoutMetrics(): js.Promise[GetLayoutMetricsResponse] = js.native
   
+  /**
+    * Deprecated because it's not guaranteed that the returned icon is in fact the one used for PWA installation.
+    */
   def getManifestIcons(): js.Promise[GetManifestIconsResponse] = js.native
   
   /**
@@ -414,14 +416,6 @@ trait PageApi extends StObject {
     listener: js.Function1[/* params */ NavigatedWithinDocumentEvent, Unit]
   ): Unit = js.native
   /**
-    * Fired when a prerender attempt is completed.
-    */
-  @JSName("on")
-  def on_prerenderAttemptCompleted(
-    event: prerenderAttemptCompleted,
-    listener: js.Function1[/* params */ PrerenderAttemptCompletedEvent, Unit]
-  ): Unit = js.native
-  /**
     * Compressed image data requested by the `startScreencast`.
     */
   @JSName("on")
@@ -545,6 +539,12 @@ trait PageApi extends StObject {
     * Controls whether page will emit lifecycle events.
     */
   def setLifecycleEventsEnabled(params: SetLifecycleEventsEnabledRequest): js.Promise[Unit] = js.native
+  
+  /**
+    * Extensions for Custom Handlers API:
+    * https://html.spec.whatwg.org/multipage/system-state.html#rph-automation
+    */
+  def setRPHRegistrationMode(params: SetRPHRegistrationModeRequest): js.Promise[Unit] = js.native
   
   /**
     * Sets the Secure Payment Confirmation transaction mode.

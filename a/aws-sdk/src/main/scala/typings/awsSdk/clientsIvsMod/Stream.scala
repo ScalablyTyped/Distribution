@@ -27,7 +27,7 @@ trait Stream extends StObject {
   var startTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The stream’s state.
+    * The stream’s state. Do not rely on the OFFLINE state, as the API may not return it; instead, a "NotBroadcasting" error will indicate that the stream is not live.
     */
   var state: js.UndefOr[StreamState] = js.undefined
   

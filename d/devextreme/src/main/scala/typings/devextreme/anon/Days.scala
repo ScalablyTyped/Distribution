@@ -1,13 +1,13 @@
 package typings.devextreme.anon
 
-import typings.devextreme.mod.DevExpress.viz._VizTimeInterval
+import typings.devextreme.mod.DevExpress.common.charts._TimeIntervalConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Days
   extends StObject
-     with _VizTimeInterval {
+     with _TimeIntervalConfig {
   
   /**
     * Specifies the time interval measured in days. Accepts integer values. Available only for an axis/scale that displays date-time values.

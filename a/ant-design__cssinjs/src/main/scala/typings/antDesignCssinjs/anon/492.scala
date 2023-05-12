@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.FloodColor
+import typings.csstype.mod.Property.GridColumnEnd
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `492` extends StObject {
   
   var value: js.UndefOr[
-    FloodColor | (js.Array[
-      (Extract[js.UndefOr[FloodColor | js.Array[NonNullable[js.UndefOr[FloodColor]]]], String]) | NonNullable[js.UndefOr[FloodColor]]
+    GridColumnEnd | (js.Array[
+      (Extract[
+        js.UndefOr[GridColumnEnd | js.Array[NonNullable[js.UndefOr[GridColumnEnd]]]], 
+        String
+      ]) | NonNullable[js.UndefOr[GridColumnEnd]]
     ])
   ] = js.native
 }

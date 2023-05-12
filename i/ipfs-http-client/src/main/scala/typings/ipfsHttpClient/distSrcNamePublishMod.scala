@@ -13,7 +13,7 @@ object distSrcNamePublishMod {
   @js.native
   val createPublish: Factory[
     js.Function2[
-      /* path */ String | (CID[Any, Double, Double, Version]), 
+      /* value */ String | (CID[Any, Double, Double, Version]), 
       /* options */ js.UndefOr[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_name.PublishOptions */ Any) & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions
       ], 

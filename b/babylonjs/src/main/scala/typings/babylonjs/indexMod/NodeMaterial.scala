@@ -205,6 +205,13 @@ object NodeMaterial {
   def SnippetUrl: String = js.native
   inline def SnippetUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SnippetUrl")(x.asInstanceOf[js.Any])
   
+  /**
+    * Checks if a block is a texture block
+    * @param block The block to check
+    * @returns True if the block is a texture block
+    */
+  inline def _BlockIsTextureBlock(block: typings.babylonjs.materialsNodeNodeMaterialBlockMod.NodeMaterialBlock): /* is babylonjs.babylonjs/Materials/Node/nodeMaterial.NodeMaterialTextureBlocks */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_BlockIsTextureBlock")(block.asInstanceOf[js.Any]).asInstanceOf[/* is babylonjs.babylonjs/Materials/Node/nodeMaterial.NodeMaterialTextureBlocks */ Boolean]
+  
   @JSImport("babylonjs/index", "NodeMaterial._BuildIdGenerator")
   @js.native
   def _BuildIdGenerator: Any = js.native

@@ -1,5 +1,6 @@
 package typings.yjs
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.std.Set
 import typings.yjs.distSrcTypesYxmlelementMod.YXmlElement
 import typings.yjs.distSrcTypesYxmlfragmentMod.YXmlFragment
@@ -14,7 +15,7 @@ object distSrcTypesYxmleventMod {
   
   @JSImport("yjs/dist/src/types/YXmlEvent", "YXmlEvent")
   @js.native
-  open class YXmlEvent protected () extends YEvent[YXmlFragment | YXmlElement | YXmlText] {
+  open class YXmlEvent protected () extends YEvent[YXmlFragment | YXmlElement[StringDictionary[String]] | YXmlText] {
     /**
       * @param {YXmlElement|YXmlText|YXmlFragment} target The target on which the event is created.
       * @param {Set<string|null>} subs The set of changed attributes. `null` is included if the
@@ -22,7 +23,7 @@ object distSrcTypesYxmleventMod {
       * @param {Transaction} transaction The transaction instance with wich the
       *                                  change was created.
       */
-    def this(target: YXmlElement, subs: Set[String | Null], transaction: Transaction) = this()
+    def this(target: YXmlElement[StringDictionary[String]], subs: Set[String | Null], transaction: Transaction) = this()
     def this(target: YXmlFragment, subs: Set[String | Null], transaction: Transaction) = this()
     def this(target: YXmlText, subs: Set[String | Null], transaction: Transaction) = this()
     

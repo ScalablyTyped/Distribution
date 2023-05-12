@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExchangeCodeForTokenRequestBody extends StObject {
   
   /**
+    * The ID of the client to request the token from.
+    */
+  var clientId: js.UndefOr[SensitiveString] = js.undefined
+  
+  /**
     * The access code to send in the request.
     */
   var code: SensitiveString
@@ -25,6 +30,10 @@ object ExchangeCodeForTokenRequestBody {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: ExchangeCodeForTokenRequestBody] (val x: Self) extends AnyVal {
+    
+    inline def setClientId(value: SensitiveString): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
     inline def setCode(value: SensitiveString): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

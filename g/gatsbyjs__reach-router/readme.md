@@ -1,7 +1,7 @@
 
 # Scala.js typings for gatsbyjs__reach-router
 
-Typings are for version 1.3
+Typings are for version 2.0
 
 ## Library description:
 Gatsby's fork to modernize reach-router

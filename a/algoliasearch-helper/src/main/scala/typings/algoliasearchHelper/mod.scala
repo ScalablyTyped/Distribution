@@ -193,6 +193,7 @@ object mod {
       * @param {string[]} options.attributesForPrediction - Attributes to use for predictions. If empty, `searchableAttributes` is used instead.
       * @param {string[]} options.queryLanguages - The languages in the query. Currently only supports ['en'].
       * @param {number} options.nbHits - Maximum number of answers to retrieve from the Answers Engine. Cannot be greater than 1000.
+      * @deprecated answers is deprecated and will be replaced with new initiatives
       */
     def findAnswers[TObject](options: AttributesForPrediction): js.Promise[FindAnswersResponse[TObject]] = js.native
     
@@ -1407,6 +1408,20 @@ object mod {
     var _state: SearchParameters = js.native
     
     /**
+      * If a search encounters an index that is being A/B tested, `abTestID` reports the ongoing A/B test ID.
+      *
+      * Returned only if `getRankingInfo` is set to `true`.
+      */
+    var abTestID: js.UndefOr[Double] = js.native
+    
+    /**
+      * In case of AB test, reports the variant ID used. The variant ID is the position in the array of variants (starting at 1).
+      *
+      * Returned only if `getRankingInfo` is set to `true`.
+      */
+    var abTestVariantID: js.UndefOr[Double] = js.native
+    
+    /**
       * the relevancy threshold applied to search in a virtual index
       */
     var appliedRelevancyStrictness: js.UndefOr[Double] = js.native
@@ -1544,6 +1559,11 @@ object mod {
     var index: String = js.native
     
     /**
+      * Used to return warnings about the query.
+      */
+    var message: js.UndefOr[String] = js.native
+    
+    /**
       * total number of hits of this query on the index
       */
     var nbHits: Double = js.native
@@ -1565,8 +1585,10 @@ object mod {
     
     /**
       * The query as parsed by the engine given all the rules.
+      *
+      * Returned only if `getRankingInfo` is set to `true`.
       */
-    var parsedQuery: String = js.native
+    var parsedQuery: js.UndefOr[String] = js.native
     
     /**
       * sum of the processing time of all the queries
@@ -1577,6 +1599,13 @@ object mod {
       * query used to generate the results
       */
     var query: String = js.native
+    
+    /**
+      * A markup text indicating which parts of the original query have been removed in order to retrieve a non-empty result set.
+      *
+      * Returned when `removeWordsIfNoResults` is set to `lastWords` or `firstWords`.
+      */
+    var queryAfterRemoval: js.UndefOr[String] = js.native
     
     /**
       * queryID is the unique identifier of the query used to generate the current search results.

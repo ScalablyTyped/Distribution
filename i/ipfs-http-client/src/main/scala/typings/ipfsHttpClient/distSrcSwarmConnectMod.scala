@@ -14,7 +14,7 @@ object distSrcSwarmConnectMod {
   @js.native
   val createConnect: Factory[
     js.Function2[
-      /* addr */ Multiaddr_ | PeerId, 
+      /* multiaddrOrPeerId */ Multiaddr_ | PeerId, 
       /* options */ js.UndefOr[AbortOptions & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions], 
       js.Promise[Unit]
     ]

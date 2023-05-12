@@ -1,6 +1,7 @@
 package typings.babelPluginTester
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.babelCore.anon.Android
 import typings.babelCore.anon.ReadonlyPartialConfig
 import typings.babelCore.mod.BabelFileResult
 import typings.babelCore.mod.ConfigItem
@@ -493,6 +494,8 @@ object mod {
     
     var sourceType: js.UndefOr[script | module | unambiguous | Null] = js.undefined
     
+    var targets: js.UndefOr[String | js.Array[String] | Android] = js.undefined
+    
     /**
       * If you set up some state, it's quite possible you want to tear it down.
       * You can either define this as its own property, or you can return it from
@@ -870,6 +873,12 @@ object mod {
       inline def setSourceTypeNull: Self = StObject.set(x, "sourceType", null)
       
       inline def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
+      
+      inline def setTargets(value: String | js.Array[String] | Android): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+      
+      inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
+      
+      inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value*))
       
       inline def setTeardown(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "teardown", js.Any.fromFunction0(value))
       

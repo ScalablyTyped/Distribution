@@ -296,13 +296,6 @@ object libUtilMongoInstanceMod {
     var keyfileLocation: js.UndefOr[String] = js.undefined
     
     /**
-      * Define a custom timeout for when out of some reason the binary cannot get started correctly
-      * Time in MS
-      * @default 10000 10 seconds
-      */
-    var launchTimeout: js.UndefOr[Double] = js.undefined
-    
-    /**
       * Set that this instance is part of a replset
       * Adds "--replSet"
       * @default undefined
@@ -335,10 +328,6 @@ object libUtilMongoInstanceMod {
       
       inline def setKeyfileLocationUndefined: Self = StObject.set(x, "keyfileLocation", js.undefined)
       
-      inline def setLaunchTimeout(value: Double): Self = StObject.set(x, "launchTimeout", value.asInstanceOf[js.Any])
-      
-      inline def setLaunchTimeoutUndefined: Self = StObject.set(x, "launchTimeout", js.undefined)
-      
       inline def setReplSet(value: String): Self = StObject.set(x, "replSet", value.asInstanceOf[js.Any])
       
       inline def setReplSetUndefined: Self = StObject.set(x, "replSet", js.undefined)
@@ -358,6 +347,13 @@ object libUtilMongoInstanceMod {
       * @default TmpDir
       */
     var dbPath: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Define a custom timeout for when out of some reason the binary cannot get started correctly
+      * Time in MS
+      * @default 10000 10 seconds
+      */
+    var launchTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Set which port to use
@@ -398,6 +394,10 @@ object libUtilMongoInstanceMod {
       inline def setDbPath(value: String): Self = StObject.set(x, "dbPath", value.asInstanceOf[js.Any])
       
       inline def setDbPathUndefined: Self = StObject.set(x, "dbPath", js.undefined)
+      
+      inline def setLaunchTimeout(value: Double): Self = StObject.set(x, "launchTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setLaunchTimeoutUndefined: Self = StObject.set(x, "launchTimeout", js.undefined)
       
       inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       

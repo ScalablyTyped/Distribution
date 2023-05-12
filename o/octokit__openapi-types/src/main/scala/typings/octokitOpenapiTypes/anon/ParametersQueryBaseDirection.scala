@@ -8,11 +8,11 @@ trait ParametersQueryBaseDirection extends StObject {
   
   var parameters: QueryBaseDirection
   
-  var responses: `200Content502304Unknown`
+  var responses: `200Content570304`
 }
 object ParametersQueryBaseDirection {
   
-  inline def apply(parameters: QueryBaseDirection, responses: `200Content502304Unknown`): ParametersQueryBaseDirection = {
+  inline def apply(parameters: QueryBaseDirection, responses: `200Content570304`): ParametersQueryBaseDirection = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryBaseDirection]
   }
@@ -22,6 +22,6 @@ object ParametersQueryBaseDirection {
     
     inline def setParameters(value: QueryBaseDirection): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content502304Unknown`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content570304`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

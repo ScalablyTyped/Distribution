@@ -10,6 +10,8 @@ trait PageHyphen[TLength, TTime] extends StObject {
   
   var marks: js.UndefOr[Marks] = js.undefined
   
+  var `page-orientation`: js.UndefOr[PageOrientation] = js.undefined
+  
   var size: js.UndefOr[Size[TLength]] = js.undefined
 }
 object PageHyphen {
@@ -29,6 +31,10 @@ object PageHyphen {
     inline def setMarks(value: Marks): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
     
     inline def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
+    
+    inline def `setPage-orientation`(value: PageOrientation): Self = StObject.set(x, "page-orientation", value.asInstanceOf[js.Any])
+    
+    inline def `setPage-orientationUndefined`: Self = StObject.set(x, "page-orientation", js.undefined)
     
     inline def setSize(value: Size[TLength]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

@@ -6,26 +6,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `202401` extends StObject {
   
-  /** Response when the codespace was successfully created */
-  var `201`: Content85
+  /** @description Response when the codespace was successfully created */
+  var `201`: Content89
   
-  /** Response when the codespace creation partially failed but is being retried in the background */
-  var `202`: Content85
+  /** @description Response when the codespace creation partially failed but is being retried in the background */
+  var `202`: Content89
   
   var `401`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['requires_authentication'] */ js.Any
   
   var `403`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['forbidden'] */ js.Any
   
   var `404`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
+  
+  var `503`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['service_unavailable'] */ js.Any
 }
 object `202401` {
   
   inline def apply(
-    `201`: Content85,
-    `202`: Content85,
+    `201`: Content89,
+    `202`: Content89,
     `401`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['requires_authentication'] */ js.Any,
     `403`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['forbidden'] */ js.Any,
-    `404`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
+    `404`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any,
+    `503`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['service_unavailable'] */ js.Any
   ): `202401` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("201")(`201`.asInstanceOf[js.Any])
@@ -33,15 +36,16 @@ object `202401` {
     __obj.updateDynamic("401")(`401`.asInstanceOf[js.Any])
     __obj.updateDynamic("403")(`403`.asInstanceOf[js.Any])
     __obj.updateDynamic("404")(`404`.asInstanceOf[js.Any])
+    __obj.updateDynamic("503")(`503`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`202401`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `202401`] (val x: Self) extends AnyVal {
     
-    inline def set201(value: Content85): Self = StObject.set(x, "201", value.asInstanceOf[js.Any])
+    inline def set201(value: Content89): Self = StObject.set(x, "201", value.asInstanceOf[js.Any])
     
-    inline def set202(value: Content85): Self = StObject.set(x, "202", value.asInstanceOf[js.Any])
+    inline def set202(value: Content89): Self = StObject.set(x, "202", value.asInstanceOf[js.Any])
     
     inline def set401(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['requires_authentication'] */ js.Any
@@ -54,5 +58,9 @@ object `202401` {
     inline def set404(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
     ): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    
+    inline def set503(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['service_unavailable'] */ js.Any
+    ): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
   }
 }

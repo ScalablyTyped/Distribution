@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@vue/server-renderer" : "3.2.45"
+      "@vue/server-renderer" : "3.3.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@vue/server-renderer" : "3.2.45"
+      "@vue/server-renderer" : "3.3.1"
     }
   ],
   "compile-devDependencies" : [

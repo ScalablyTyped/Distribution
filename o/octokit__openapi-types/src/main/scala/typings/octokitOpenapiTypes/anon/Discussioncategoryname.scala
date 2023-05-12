@@ -1,5 +1,8 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.`false`
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.`true`
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.legacy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,6 +27,13 @@ trait Discussioncategoryname extends StObject {
     */
   var generate_release_notes: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @description Specifies whether this release should be set as the latest release for the repository. Drafts and prereleases cannot be set as latest. Defaults to `true` for newly published releases. `legacy` specifies that the latest release should be determined based on the release creation date and higher semantic version.
+    * @default true
+    * @enum {string}
+    */
+  var make_latest: js.UndefOr[`true` | `false` | legacy] = js.undefined
+  
   /** @description The name of the release. */
   var name: js.UndefOr[String] = js.undefined
   
@@ -36,7 +46,7 @@ trait Discussioncategoryname extends StObject {
   /** @description The name of the tag. */
   var tag_name: String
   
-  /** @description Specifies the commitish value that determines where the Git tag is created from. Can be any branch or commit SHA. Unused if the Git tag already exists. Default: the repository's default branch (usually `master`). */
+  /** @description Specifies the commitish value that determines where the Git tag is created from. Can be any branch or commit SHA. Unused if the Git tag already exists. Default: the repository's default branch. */
   var target_commitish: js.UndefOr[String] = js.undefined
 }
 object Discussioncategoryname {
@@ -64,6 +74,10 @@ object Discussioncategoryname {
     inline def setGenerate_release_notes(value: Boolean): Self = StObject.set(x, "generate_release_notes", value.asInstanceOf[js.Any])
     
     inline def setGenerate_release_notesUndefined: Self = StObject.set(x, "generate_release_notes", js.undefined)
+    
+    inline def setMake_latest(value: `true` | `false` | legacy): Self = StObject.set(x, "make_latest", value.asInstanceOf[js.Any])
+    
+    inline def setMake_latestUndefined: Self = StObject.set(x, "make_latest", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class ThemeColor protected ()
   extends typings.vscode.mod.ThemeColor {
   /**
-    * Creates a reference to a theme color.
-    * @param id of the color. The available colors are listed in https://code.visualstudio.com/docs/getstarted/theme-color-reference.
-    */
+  		 * Creates a reference to a theme color.
+  		 * @param id of the color. The available colors are listed in https://code.visualstudio.com/docs/getstarted/theme-color-reference.
+  		 */
   def this(id: String) = this()
 }

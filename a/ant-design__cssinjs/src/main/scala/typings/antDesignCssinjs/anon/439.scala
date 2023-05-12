@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MsScrollLimitXMin
+import typings.csstype.mod.Property.ScrollMarginBlockEnd
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `439` extends StObject {
   
   var value: js.UndefOr[
-    (MsScrollLimitXMin[Double | String]) | (js.Array[
+    (ScrollMarginBlockEnd[Double | String]) | (js.Array[
       (Extract[
         js.UndefOr[
-          (MsScrollLimitXMin[Double | String]) | (js.Array[NonNullable[js.UndefOr[MsScrollLimitXMin[Double | String]]]])
+          (ScrollMarginBlockEnd[Double | String]) | (js.Array[NonNullable[js.UndefOr[ScrollMarginBlockEnd[Double | String]]]])
         ], 
         String
-      ]) | (NonNullable[js.UndefOr[MsScrollLimitXMin[Double | String]]])
+      ]) | (NonNullable[js.UndefOr[ScrollMarginBlockEnd[Double | String]]])
     ])
   ] = js.native
 }

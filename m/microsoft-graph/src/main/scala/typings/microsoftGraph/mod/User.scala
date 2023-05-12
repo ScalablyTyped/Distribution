@@ -33,8 +33,10 @@ trait User
   var appRoleAssignments: js.UndefOr[NullableOption[js.Array[AppRoleAssignment]]] = js.undefined
   
   /**
-    * The licenses that are assigned to the user, including inherited (group-based) licenses. Not nullable. Returned only on
-    * $select. Supports $filter (eq, not, and counting empty collections).
+    * The licenses that are assigned to the user, including inherited (group-based) licenses. This property doesn't
+    * differentiate directly-assigned and inherited licenses. Use the licenseAssignmentStates property to identify the
+    * directly-assigned and inherited licenses. Not nullable. Returned only on $select. Supports $filter (eq, not, /$count eq
+    * 0, /$count ne 0).
     */
   var assignedLicenses: js.UndefOr[js.Array[AssignedLicense]] = js.undefined
   
@@ -46,6 +48,8 @@ trait User
   
   // The authentication methods that are supported for the user.
   var authentication: js.UndefOr[NullableOption[Authentication]] = js.undefined
+  
+  var authorizationInfo: js.UndefOr[NullableOption[AuthorizationInfo]] = js.undefined
   
   /**
     * The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always
@@ -106,7 +110,13 @@ trait User
     */
   var country: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The created date of the user object. Read-only. Returned only on $select. Supports $filter (eq, ne, not , ge, le, in).
+  /**
+    * The date and time the user was created, in ISO 8601 format and in UTC time. The value cannot be modified and is
+    * automatically populated when the entity is created. Nullable. For on-premises users, the value represents when they
+    * were first created in Azure AD. Property is null for some users created before June 2018 and on-premises users that
+    * were synced to Azure AD before June 2018. Read-only. Returned only on $select. Supports $filter (eq, ne, not , ge, le,
+    * in).
+    */
   var createdDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Directory objects that were created by the user. Read-only. Nullable.
@@ -164,6 +174,16 @@ trait User
     * $select. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
     */
   var employeeId: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  /**
+    * The date and time when the user left or will leave the organization. To read this property, the calling app must be
+    * assigned the User-LifeCycleInfo.Read.All permission. To write this property, the calling app must be assigned the
+    * User.Read.All and User-LifeCycleInfo.ReadWrite.All permissions. To read this property in delegated scenarios, the admin
+    * needs one of the following Azure AD roles: Lifecycle Workflows Administrator, Global Reader, or Global Administrator.
+    * To write this property in delegated scenarios, the admin needs the Global Administrator role. Supports $filter (eq, ne,
+    * not , ge, le, in). For more information, see Configure the employeeLeaveDateTime property for a user.
+    */
+  var employeeLeaveDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Represents organization data (e.g. division and costCenter) associated with a user. Returned only on $select. Supports
@@ -269,7 +289,10 @@ trait User
     */
   var legalAgeGroupClassification: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // State of license assignments for this user. Read-only. Returned only on $select.
+  /**
+    * State of license assignments for this user. Also indicates licenses that are directly-assigned and those that the user
+    * has inherited through group memberships. Read-only. Returned only on $select.
+    */
   var licenseAssignmentStates: js.UndefOr[NullableOption[js.Array[LicenseAssignmentState]]] = js.undefined
   
   // A collection of this user's license details. Read-only.
@@ -412,13 +435,16 @@ trait User
   /**
     * A list of additional email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com']. NOTE: This
     * property cannot contain accent characters. Returned only on $select. Supports $filter (eq, not, ge, le, in, startsWith,
-    * endsWith, and counting empty collections).
+    * endsWith, /$count eq 0, /$count ne 0).
     */
   var otherMails: js.UndefOr[js.Array[String]] = js.undefined
   
   var outlook: js.UndefOr[NullableOption[OutlookUser]] = js.undefined
   
-  // Devices that are owned by the user. Read-only. Nullable. Supports $expand.
+  /**
+    * Devices that are owned by the user. Read-only. Nullable. Supports $expand and $filter (/$count eq 0, /$count ne 0,
+    * /$count eq 1, /$count ne 1).
+    */
   var ownedDevices: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
   // Directory objects that are owned by the user. Read-only. Nullable. Supports $expand.
@@ -436,10 +462,8 @@ trait User
   /**
     * Specifies the password profile for the user. The profile contains the user’s password. This property is required when a
     * user is created. The password in the profile must satisfy minimum requirements as specified by the passwordPolicies
-    * property. By default, a strong password is required. NOTE: For Azure B2C tenants, the forceChangePasswordNextSignIn
-    * property should be set to false and instead use custom policies and user flows to force password reset at first logon.
-    * See Force password reset at first logon.Returned only on $select. Supports $filter (eq, ne, not, in, and eq on null
-    * values).
+    * property. By default, a strong password is required. Returned only on $select. Supports $filter (eq, ne, not, in, and
+    * eq on null values).
     */
   var passwordProfile: js.UndefOr[NullableOption[PasswordProfile]] = js.undefined
   
@@ -490,7 +514,7 @@ trait User
     * The proxy address prefixed with SMTP (capitalized) is the primary proxy address while those prefixed with smtp are the
     * secondary proxy addresses. For Azure AD B2C accounts, this property has a limit of ten unique addresses. Read-only in
     * Microsoft Graph; you can update this property only through the Microsoft 365 admin center. Not nullable. Returned only
-    * on $select. Supports $filter (eq, not, ge, le, startsWith, endsWith, and counting empty collections).
+    * on $select. Supports $filter (eq, not, ge, le, startsWith, endsWith, /$count eq 0, /$count ne 0).
     */
   var proxyAddresses: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -505,6 +529,12 @@ trait User
   
   var scopedRoleMemberOf: js.UndefOr[NullableOption[js.Array[ScopedRoleMembership]]] = js.undefined
   
+  /**
+    * Security identifier (SID) of the user, used in Windows scenarios. Read-only. Returned by default. Supports $select and
+    * $filter (eq, not, ge, le, startsWith).
+    */
+  var securityIdentifier: js.UndefOr[NullableOption[String]] = js.undefined
+  
   var settings: js.UndefOr[NullableOption[UserSettings]] = js.undefined
   
   /**
@@ -512,6 +542,16 @@ trait User
     * the user should be included in the Outlook global address list. See Known issue.
     */
   var showInAddressList: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
+  /**
+    * Get the last signed-in date and request ID of the sign-in for a given user. Read-only.Returned only on $select.
+    * Supports $filter (eq, ne, not, ge, le) but not with any other filterable properties. Note: Details for this property
+    * require an Azure AD Premium P1/P2 license and the AuditLog.Read.All permission.When you specify $select=signInActivity
+    * or $filter=signInActivity while listing users, the maximum page size is 120 users. Requests with $top set higher than
+    * 120 will return pages with up to 120 users. This property is not returned for a user who has never signed in or last
+    * signed in before April 2020.
+    */
+  var signInActivity: js.UndefOr[NullableOption[SignInActivity]] = js.undefined
   
   /**
     * Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get
@@ -644,6 +684,12 @@ object User {
     inline def setAuthenticationNull: Self = StObject.set(x, "authentication", null)
     
     inline def setAuthenticationUndefined: Self = StObject.set(x, "authentication", js.undefined)
+    
+    inline def setAuthorizationInfo(value: NullableOption[AuthorizationInfo]): Self = StObject.set(x, "authorizationInfo", value.asInstanceOf[js.Any])
+    
+    inline def setAuthorizationInfoNull: Self = StObject.set(x, "authorizationInfo", null)
+    
+    inline def setAuthorizationInfoUndefined: Self = StObject.set(x, "authorizationInfo", js.undefined)
     
     inline def setBirthday(value: String): Self = StObject.set(x, "birthday", value.asInstanceOf[js.Any])
     
@@ -810,6 +856,12 @@ object User {
     inline def setEmployeeIdNull: Self = StObject.set(x, "employeeId", null)
     
     inline def setEmployeeIdUndefined: Self = StObject.set(x, "employeeId", js.undefined)
+    
+    inline def setEmployeeLeaveDateTime(value: NullableOption[String]): Self = StObject.set(x, "employeeLeaveDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setEmployeeLeaveDateTimeNull: Self = StObject.set(x, "employeeLeaveDateTime", null)
+    
+    inline def setEmployeeLeaveDateTimeUndefined: Self = StObject.set(x, "employeeLeaveDateTime", js.undefined)
     
     inline def setEmployeeOrgData(value: NullableOption[EmployeeOrgData]): Self = StObject.set(x, "employeeOrgData", value.asInstanceOf[js.Any])
     
@@ -1275,6 +1327,12 @@ object User {
     
     inline def setScopedRoleMemberOfVarargs(value: ScopedRoleMembership*): Self = StObject.set(x, "scopedRoleMemberOf", js.Array(value*))
     
+    inline def setSecurityIdentifier(value: NullableOption[String]): Self = StObject.set(x, "securityIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setSecurityIdentifierNull: Self = StObject.set(x, "securityIdentifier", null)
+    
+    inline def setSecurityIdentifierUndefined: Self = StObject.set(x, "securityIdentifier", js.undefined)
+    
     inline def setSettings(value: NullableOption[UserSettings]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
     inline def setSettingsNull: Self = StObject.set(x, "settings", null)
@@ -1286,6 +1344,12 @@ object User {
     inline def setShowInAddressListNull: Self = StObject.set(x, "showInAddressList", null)
     
     inline def setShowInAddressListUndefined: Self = StObject.set(x, "showInAddressList", js.undefined)
+    
+    inline def setSignInActivity(value: NullableOption[SignInActivity]): Self = StObject.set(x, "signInActivity", value.asInstanceOf[js.Any])
+    
+    inline def setSignInActivityNull: Self = StObject.set(x, "signInActivity", null)
+    
+    inline def setSignInActivityUndefined: Self = StObject.set(x, "signInActivity", js.undefined)
     
     inline def setSignInSessionsValidFromDateTime(value: NullableOption[String]): Self = StObject.set(x, "signInSessionsValidFromDateTime", value.asInstanceOf[js.Any])
     

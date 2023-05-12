@@ -17,9 +17,19 @@ trait AccountDisplayInfo extends StObject {
   var contextualDisplayName: String
   
   /**
-    * A display name that identifies the account, such as "User Name".
+    * A display name that identifies the account, such as "User Name". Will include the e-mail address if available.
     */
   var displayName: String
+  
+  /**
+    * The e-mail address associated with this account
+    */
+  var email: js.UndefOr[String] = js.undefined
+  
+  /**
+    * A display name that identifies the account, such as "User Name".
+    */
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Unique user id that identifies the account.
@@ -41,6 +51,14 @@ object AccountDisplayInfo {
     inline def setContextualDisplayName(value: String): Self = StObject.set(x, "contextualDisplayName", value.asInstanceOf[js.Any])
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
   }

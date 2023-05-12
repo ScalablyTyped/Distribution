@@ -22,7 +22,8 @@ trait TypeofSelectMultipleContr
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    `false`, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[SelectMultipleControlValueAccessor, scala.Nothing] = js.native

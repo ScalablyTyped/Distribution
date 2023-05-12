@@ -1,19 +1,19 @@
 package typings.devtoolsProtocol.anon
 
-import typings.devtoolsProtocol.mod.Protocol.Overlay.SetInspectModeRequest
+import typings.devtoolsProtocol.mod.Protocol.Overlay.HighlightSourceOrderRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `146` extends StObject {
   
-  var paramsType: js.Array[SetInspectModeRequest]
+  var paramsType: js.Array[HighlightSourceOrderRequest]
   
   var returnType: Unit
 }
 object `146` {
   
-  inline def apply(paramsType: js.Array[SetInspectModeRequest], returnType: Unit): `146` = {
+  inline def apply(paramsType: js.Array[HighlightSourceOrderRequest], returnType: Unit): `146` = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[`146`]
   }
@@ -21,9 +21,9 @@ object `146` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `146`] (val x: Self) extends AnyVal {
     
-    inline def setParamsType(value: js.Array[SetInspectModeRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[HighlightSourceOrderRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: SetInspectModeRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
+    inline def setParamsTypeVarargs(value: HighlightSourceOrderRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

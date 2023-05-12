@@ -18,6 +18,8 @@ object default extends StObject {
   
   /* "sapIllus-AddColumn" */ val AddColumn: typings.openui5.sapMIllustratedMessageTypeMod.IllustratedMessageType.AddColumn & String = js.native
   
+  /* "sapIllus-AddDimensions" */ val AddDimensions: typings.openui5.sapMIllustratedMessageTypeMod.IllustratedMessageType.AddDimensions & String = js.native
+  
   /* "sapIllus-AddPeople" */ val AddPeople: typings.openui5.sapMIllustratedMessageTypeMod.IllustratedMessageType.AddPeople & String = js.native
   
   /* "sapIllus-BalloonSky" */ val BalloonSky: typings.openui5.sapMIllustratedMessageTypeMod.IllustratedMessageType.BalloonSky & String = js.native
@@ -40,7 +42,11 @@ object default extends StObject {
   
   /* "sapIllus-NoActivities" */ val NoActivities: typings.openui5.sapMIllustratedMessageTypeMod.IllustratedMessageType.NoActivities & String = js.native
   
+  /* "sapIllus-NoColumnsSet" */ val NoColumnsSet: typings.openui5.sapMIllustratedMessageTypeMod.IllustratedMessageType.NoColumnsSet & String = js.native
+  
   /* "sapIllus-NoData" */ val NoData: typings.openui5.sapMIllustratedMessageTypeMod.IllustratedMessageType.NoData & String = js.native
+  
+  /* "sapIllus-NoDimensionsSet" */ val NoDimensionsSet: typings.openui5.sapMIllustratedMessageTypeMod.IllustratedMessageType.NoDimensionsSet & String = js.native
   
   /* "sapIllus-NoEntries" */ val NoEntries: typings.openui5.sapMIllustratedMessageTypeMod.IllustratedMessageType.NoEntries & String = js.native
   
@@ -112,6 +118,8 @@ object default extends StObject {
   
   /* "sapIllus-SuccessScreen" */ val SuccessScreen: typings.openui5.sapMIllustratedMessageTypeMod.IllustratedMessageType.SuccessScreen & String = js.native
   
+  /* "sapIllus-Survey" */ val Survey: typings.openui5.sapMIllustratedMessageTypeMod.IllustratedMessageType.Survey & String = js.native
+  
   /* "sapIllus-Tent" */ val Tent: typings.openui5.sapMIllustratedMessageTypeMod.IllustratedMessageType.Tent & String = js.native
   
   /* "sapIllus-UnableToLoad" */ val UnableToLoad: typings.openui5.sapMIllustratedMessageTypeMod.IllustratedMessageType.UnableToLoad & String = js.native
@@ -121,4 +129,6 @@ object default extends StObject {
   /* "sapIllus-UnableToUpload" */ val UnableToUpload: typings.openui5.sapMIllustratedMessageTypeMod.IllustratedMessageType.UnableToUpload & String = js.native
   
   /* "sapIllus-UploadCollection" */ val UploadCollection: typings.openui5.sapMIllustratedMessageTypeMod.IllustratedMessageType.UploadCollection & String = js.native
+  
+  /* "sapIllus-UploadToCloud" */ val UploadToCloud: typings.openui5.sapMIllustratedMessageTypeMod.IllustratedMessageType.UploadToCloud & String = js.native
 }

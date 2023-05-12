@@ -9,17 +9,17 @@ trait LexBot extends StObject {
   /**
     * The Amazon Web Services Region where the Amazon Lex bot was created.
     */
-  var LexRegion: js.UndefOr[typings.awsSdk.clientsConnectMod.LexRegion] = js.undefined
+  var LexRegion: typings.awsSdk.clientsConnectMod.LexRegion
   
   /**
     * The name of the Amazon Lex bot.
     */
-  var Name: js.UndefOr[BotName] = js.undefined
+  var Name: BotName
 }
 object LexBot {
   
-  inline def apply(): LexBot = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(LexRegion: LexRegion, Name: BotName): LexBot = {
+    val __obj = js.Dynamic.literal(LexRegion = LexRegion.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[LexBot]
   }
   
@@ -28,10 +28,6 @@ object LexBot {
     
     inline def setLexRegion(value: LexRegion): Self = StObject.set(x, "LexRegion", value.asInstanceOf[js.Any])
     
-    inline def setLexRegionUndefined: Self = StObject.set(x, "LexRegion", js.undefined)
-    
     inline def setName(value: BotName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
-    
-    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

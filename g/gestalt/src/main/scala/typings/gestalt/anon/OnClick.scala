@@ -1,23 +1,27 @@
 package typings.gestalt.anon
 
+import typings.gestalt.mod.BareButtonEventHandlerType
+import typings.react.mod.KeyboardEvent
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
+import typings.std.HTMLAnchorElement
+import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait OnClick extends StObject {
   
-  var accessibilityLabel: String
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var href: String
+  var onClick: js.UndefOr[BareButtonEventHandlerType] = js.undefined
   
-  var onClick: js.UndefOr[js.Function1[/* args */ `1`, js.UndefOr[Unit]]] = js.undefined
-  
-  var text: String
+  var text: js.UndefOr[String] = js.undefined
 }
 object OnClick {
   
-  inline def apply(accessibilityLabel: String, href: String, text: String): OnClick = {
-    val __obj = js.Dynamic.literal(accessibilityLabel = accessibilityLabel.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+  inline def apply(): OnClick = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnClick]
   }
   
@@ -26,12 +30,18 @@ object OnClick {
     
     inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     
-    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
-    inline def setOnClick(value: /* args */ `1` => js.UndefOr[Unit]): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(
+      value: /* arg */ js.Object & (Event[
+          (MouseEvent[HTMLAnchorElement | HTMLButtonElement, NativeMouseEvent]) | (KeyboardEvent[HTMLAnchorElement | HTMLButtonElement])
+        ]) => Unit
+    ): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

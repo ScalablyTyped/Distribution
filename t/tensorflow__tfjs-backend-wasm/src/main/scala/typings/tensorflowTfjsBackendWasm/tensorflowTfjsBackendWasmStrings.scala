@@ -8,6 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object tensorflowTfjsBackendWasmStrings {
   
   @js.native
+  sealed trait ArgMax extends StObject
+  inline def ArgMax: ArgMax = "ArgMax".asInstanceOf[ArgMax]
+  
+  @js.native
+  sealed trait ArgMin extends StObject
+  inline def ArgMin: ArgMin = "ArgMin".asInstanceOf[ArgMin]
+  
+  @js.native
   sealed trait bool extends StObject
   inline def bool: bool = "bool".asInstanceOf[bool]
   

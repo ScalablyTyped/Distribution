@@ -1,7 +1,7 @@
 
 # Scala.js typings for copy-text-to-clipboard
 
-Typings are for version 3.0.1
+Typings are for version 3.1.0
 
 ## Library description:
 Copy text to the clipboard in modern browsers (0.2 kB)

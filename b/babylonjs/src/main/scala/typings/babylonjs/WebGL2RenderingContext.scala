@@ -1,5 +1,12 @@
 package typings.babylonjs
 
+import typings.babylonjs.babylonjsInts.`0x8007`
+import typings.babylonjs.babylonjsInts.`0x8008`
+import typings.babylonjs.babylonjsInts.`0x84FA`
+import typings.babylonjs.babylonjsInts.`0x8814`
+import typings.babylonjs.babylonjsInts.`0x881A`
+import typings.babylonjs.babylonjsInts.`0x88F0`
+import typings.babylonjs.babylonjsInts.`0x8CA9`
 import typings.std.WebGL2RenderingContextBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,34 +35,25 @@ trait WebGL2RenderingContext
   var COMPRESSED_SRGB_S3TC_DXT1_EXT: Double = js.native
   
   @JSName("DEPTH24_STENCIL8")
-  var DEPTH24_STENCIL8_WebGL2RenderingContext: Double = js.native
+  var DEPTH24_STENCIL8_WebGL2RenderingContext: `0x88F0` = js.native
   
   @JSName("DRAW_FRAMEBUFFER")
-  var DRAW_FRAMEBUFFER_WebGL2RenderingContext: Double = js.native
+  var DRAW_FRAMEBUFFER_WebGL2RenderingContext: `0x8CA9` = js.native
   
   var HALF_FLOAT_OES: Double = js.native
   
   @JSName("MAX")
-  var MAX_WebGL2RenderingContext: Double = js.native
+  var MAX_WebGL2RenderingContext: `0x8008` = js.native
   
   @JSName("MIN")
-  var MIN_WebGL2RenderingContext: Double = js.native
+  var MIN_WebGL2RenderingContext: `0x8007` = js.native
   
   @JSName("RGBA16F")
-  var RGBA16F_WebGL2RenderingContext: Double = js.native
+  var RGBA16F_WebGL2RenderingContext: `0x881A` = js.native
   
   @JSName("RGBA32F")
-  var RGBA32F_WebGL2RenderingContext: Double = js.native
-  
-  @JSName("SRGB8_ALPHA8")
-  var SRGB8_ALPHA8_WebGL2RenderingContext: Double = js.native
-  
-  @JSName("SRGB8")
-  var SRGB8_WebGL2RenderingContext: Double = js.native
-  
-  @JSName("SRGB")
-  var SRGB_WebGL2RenderingContext: Double = js.native
+  var RGBA32F_WebGL2RenderingContext: `0x8814` = js.native
   
   @JSName("UNSIGNED_INT_24_8")
-  var UNSIGNED_INT_24_8_WebGL2RenderingContext: Double = js.native
+  var UNSIGNED_INT_24_8_WebGL2RenderingContext: `0x84FA` = js.native
 }

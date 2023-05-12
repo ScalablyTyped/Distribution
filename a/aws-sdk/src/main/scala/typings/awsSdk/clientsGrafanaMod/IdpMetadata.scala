@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IdpMetadata extends StObject {
   
   /**
-    * The URL of the location containing the metadata.
+    * The URL of the location containing the IdP metadata.
     */
   var url: js.UndefOr[IdpMetadataUrl] = js.undefined
   
   /**
-    * The actual full metadata file, in XML format.
+    * The full IdP metadata, in XML format.
     */
   var xml: js.UndefOr[String] = js.undefined
 }

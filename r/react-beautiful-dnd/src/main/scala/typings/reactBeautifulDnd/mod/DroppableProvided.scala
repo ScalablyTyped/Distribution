@@ -1,6 +1,6 @@
 package typings.reactBeautifulDnd.mod
 
-import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +11,8 @@ trait DroppableProvided extends StObject {
   
   var droppableProps: DroppableProvidedProps = js.native
   
-  def innerRef(): Any = js.native
-  def innerRef(element: HTMLElement): Any = js.native
+  def innerRef(): Unit = js.native
+  def innerRef(element: HTMLElement): Unit = js.native
   
-  var placeholder: js.UndefOr[ReactElement | Null] = js.native
+  var placeholder: ReactNode = js.native
 }

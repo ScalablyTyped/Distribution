@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@hapi/iron" : "7.0.0"
+      "@hapi/iron" : "7.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@hapi/iron" : "7.0.0"
+      "@hapi/iron" : "7.0.1"
     }
   ],
   "compile-devDependencies" : [

@@ -17,7 +17,7 @@ trait DescribeFastLaunchImagesSuccessItem extends StObject {
   var LaunchTemplate: js.UndefOr[FastLaunchLaunchTemplateSpecificationResponse] = js.undefined
   
   /**
-    * The maximum number of parallel instances that are launched for creating resources.
+    * The maximum number of instances that Amazon EC2 can launch at the same time to create pre-provisioned snapshots for Windows faster launching.
     */
   var MaxParallelLaunches: js.UndefOr[Integer] = js.undefined
   

@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-color-rebeccapurple
 
-Typings are for version 7.1.1
+Typings are for version 8.0.2
 
 ## Library description:
 Use the rebeccapurple color keyword in CSS

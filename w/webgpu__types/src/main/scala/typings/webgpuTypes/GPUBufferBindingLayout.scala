@@ -12,12 +12,13 @@ trait GPUBufferBindingLayout extends StObject {
   var hasDynamicOffset: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates the minimum buffer binding size.
+    * Indicates the minimum {@link GPUBufferBinding#size} of a buffer binding used with this bind point.
     * Bindings are always validated against this size in {@link GPUDevice#createBindGroup}.
     * If this *is not* `0`, pipeline creation additionally [$validating shader binding|validates$]
-    * that this value is large enough for the bindings declared in the shader.
-    * If this *is* `0`, draw/dispatch commands additionally [$Validate encoder bind groups|validate$]
-    * that each binding in the {@link GPUBindGroup} is large enough for the bindings declared in the shader.
+    * that this value &ge; the minimum buffer binding size of the variable.
+    * If this *is* `0`, it is ignored by pipeline creation, and instead draw/dispatch commands
+    * [$Validate encoder bind groups|validate$] that each binding in the {@link GPUBindGroup}
+    * satisfies the minimum buffer binding size of the variable.
     * Note:
     * Similar execution-time validation is theoretically possible for other
     * binding-related fields specified for early validation, like

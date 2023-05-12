@@ -1,5 +1,6 @@
 package typings.cesium.anon
 
+import typings.cesium.mod.ContextOptions
 import typings.cesium.mod.MapMode2D
 import typings.cesium.mod.MapProjection
 import typings.std.Element
@@ -12,11 +13,13 @@ trait Canvas extends StObject {
   
   var canvas: HTMLCanvasElement
   
-  var contextOptions: js.UndefOr[Any] = js.undefined
+  var contextOptions: js.UndefOr[ContextOptions] = js.undefined
   
   var creditContainer: js.UndefOr[Element] = js.undefined
   
   var creditViewport: js.UndefOr[Element] = js.undefined
+  
+  var depthPlaneEllipsoidOffset: js.UndefOr[Double] = js.undefined
   
   var mapMode2D: js.UndefOr[MapMode2D] = js.undefined
   
@@ -46,7 +49,7 @@ object Canvas {
     
     inline def setCanvas(value: HTMLCanvasElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     
-    inline def setContextOptions(value: Any): Self = StObject.set(x, "contextOptions", value.asInstanceOf[js.Any])
+    inline def setContextOptions(value: ContextOptions): Self = StObject.set(x, "contextOptions", value.asInstanceOf[js.Any])
     
     inline def setContextOptionsUndefined: Self = StObject.set(x, "contextOptions", js.undefined)
     
@@ -57,6 +60,10 @@ object Canvas {
     inline def setCreditViewport(value: Element): Self = StObject.set(x, "creditViewport", value.asInstanceOf[js.Any])
     
     inline def setCreditViewportUndefined: Self = StObject.set(x, "creditViewport", js.undefined)
+    
+    inline def setDepthPlaneEllipsoidOffset(value: Double): Self = StObject.set(x, "depthPlaneEllipsoidOffset", value.asInstanceOf[js.Any])
+    
+    inline def setDepthPlaneEllipsoidOffsetUndefined: Self = StObject.set(x, "depthPlaneEllipsoidOffset", js.undefined)
     
     inline def setMapMode2D(value: MapMode2D): Self = StObject.set(x, "mapMode2D", value.asInstanceOf[js.Any])
     

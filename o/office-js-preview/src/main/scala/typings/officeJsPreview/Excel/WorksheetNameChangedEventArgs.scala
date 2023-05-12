@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides information about the worksheet whose name has changed.
   *
   * @remarks
-  * [Api set: ExcelApiOnline 1.1]
+  * [Api set: ExcelApi 1.17]
   */
 trait WorksheetNameChangedEventArgs extends StObject {
   
@@ -18,7 +18,7 @@ trait WorksheetNameChangedEventArgs extends StObject {
     * Gets the new name of the worksheet, after the name change.
     *
     * @remarks
-    * [Api set: ExcelApiOnline 1.1]
+    * [Api set: ExcelApi 1.17]
     */
   var nameAfter: String
   
@@ -26,7 +26,7 @@ trait WorksheetNameChangedEventArgs extends StObject {
     * Gets the previous name of the worksheet, before the name changed.
     *
     * @remarks
-    * [Api set: ExcelApiOnline 1.1]
+    * [Api set: ExcelApi 1.17]
     */
   var nameBefore: String
   
@@ -34,7 +34,7 @@ trait WorksheetNameChangedEventArgs extends StObject {
     * The source of the event. It can be local or remote (through co-authoring).
     *
     * @remarks
-    * [Api set: ExcelApiOnline 1.1]
+    * [Api set: ExcelApi 1.17]
     */
   var source: EventSource | Local | Remote
   
@@ -42,7 +42,7 @@ trait WorksheetNameChangedEventArgs extends StObject {
     * Gets the type of the event.
     *
     * @remarks
-    * [Api set: ExcelApiOnline 1.1]
+    * [Api set: ExcelApi 1.17]
     */
   var `type`: String
   
@@ -50,7 +50,7 @@ trait WorksheetNameChangedEventArgs extends StObject {
     * Gets the ID of the worksheet with the new name.
     *
     * @remarks
-    * [Api set: ExcelApiOnline 1.1]
+    * [Api set: ExcelApi 1.17]
     */
   var worksheetId: String
 }

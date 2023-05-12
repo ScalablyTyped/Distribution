@@ -12,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 /**
   * Creates a new SplitViewPaneToggle.
-  * @constructor
   * @param element The DOM element hosts the new SplitViewPaneToggle.
   * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
   **/

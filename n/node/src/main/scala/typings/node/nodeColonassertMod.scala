@@ -32,8 +32,7 @@ object nodeColonassertMod {
   val ^ : js.Any = js.native
   
   /**
-    * Indicates the failure of an assertion. All errors thrown by the `assert` module
-    * will be instances of the `AssertionError` class.
+    * Indicates the failure of an assertion. All errors thrown by the `node:assert`module will be instances of the `AssertionError` class.
     */
   @JSImport("node:assert", "AssertionError")
   @js.native
@@ -43,9 +42,10 @@ object nodeColonassertMod {
   }
   
   /**
-    * This feature is currently experimental and behavior might still change.
+    * This feature is deprecated and will be removed in a future version.
+    * Please consider using alternatives such as the `mock` helper function.
     * @since v14.2.0, v12.19.0
-    * @experimental
+    * @deprecated Deprecated
     */
   @JSImport("node:assert", "CallTracker")
   @js.native
@@ -87,7 +87,7 @@ object nodeColonassertMod {
     * Expects the `string` input not to match the regular expression.
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * assert.doesNotMatch('I will fail', /fail/);
     * // AssertionError [ERR_ASSERTION]: The input was expected to not match the ...
@@ -125,24 +125,24 @@ object nodeColonassertMod {
     * error messages as expressive as possible.
     *
     * If specified, `error` can be a [`Class`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes),
-    * [`RegExp`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) or a validation
+    * [`RegExp`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions), or a validation
     * function. See {@link throws} for more details.
     *
     * Besides the async nature to await the completion behaves identically to {@link doesNotThrow}.
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * await assert.doesNotReject(
     *   async () => {
     *     throw new TypeError('Wrong value');
     *   },
-    *   SyntaxError
+    *   SyntaxError,
     * );
     * ```
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * assert.doesNotReject(Promise.reject(new TypeError('Wrong value')))
     *   .then(() => {
@@ -179,20 +179,20 @@ object nodeColonassertMod {
     * propagated back to the caller.
     *
     * If specified, `error` can be a [`Class`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes),
-    * [`RegExp`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) or a validation
+    * [`RegExp`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions), or a validation
     * function. See {@link throws} for more details.
     *
     * The following, for instance, will throw the `TypeError` because there is no
     * matching error type in the assertion:
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * assert.doesNotThrow(
     *   () => {
     *     throw new TypeError('Wrong value');
     *   },
-    *   SyntaxError
+    *   SyntaxError,
     * );
     * ```
     *
@@ -200,27 +200,27 @@ object nodeColonassertMod {
     * 'Got unwanted exception...':
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * assert.doesNotThrow(
     *   () => {
     *     throw new TypeError('Wrong value');
     *   },
-    *   TypeError
+    *   TypeError,
     * );
     * ```
     *
     * If an `AssertionError` is thrown and a value is provided for the `message`parameter, the value of `message` will be appended to the `AssertionError` message:
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * assert.doesNotThrow(
     *   () => {
     *     throw new TypeError('Wrong value');
     *   },
     *   /Wrong value/,
-    *   'Whoops'
+    *   'Whoops',
     * );
     * // Throws: AssertionError: Got unwanted exception: Whoops
     * ```
@@ -247,7 +247,7 @@ object nodeColonassertMod {
     * and treated as being identical if both sides are `NaN`.
     *
     * ```js
-    * import assert from 'assert';
+    * import assert from 'node:assert';
     *
     * assert.equal(1, 1);
     * // OK, 1 == 1
@@ -276,7 +276,7 @@ object nodeColonassertMod {
     * it will be thrown instead of the `AssertionError`.
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * assert.fail();
     * // AssertionError [ERR_ASSERTION]: Failed
@@ -358,7 +358,7 @@ object nodeColonassertMod {
     * from the error passed to `ifError()` including the potential new frames for`ifError()` itself.
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * assert.ifError(null);
     * // OK
@@ -390,7 +390,7 @@ object nodeColonassertMod {
     * Expects the `string` input to match the regular expression.
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * assert.match('I will fail', /pass/);
     * // AssertionError [ERR_ASSERTION]: The input did not match the regular ...
@@ -424,24 +424,24 @@ object nodeColonassertMod {
     * Tests for any deep inequality. Opposite of {@link deepEqual}.
     *
     * ```js
-    * import assert from 'assert';
+    * import assert from 'node:assert';
     *
     * const obj1 = {
     *   a: {
-    *     b: 1
-    *   }
+    *     b: 1,
+    *   },
     * };
     * const obj2 = {
     *   a: {
-    *     b: 2
-    *   }
+    *     b: 2,
+    *   },
     * };
     * const obj3 = {
     *   a: {
-    *     b: 1
-    *   }
+    *     b: 1,
+    *   },
     * };
-    * const obj4 = Object.create(obj1);
+    * const obj4 = { __proto__: obj1 };
     *
     * assert.notDeepEqual(obj1, obj1);
     * // AssertionError: { a: { b: 1 } } notDeepEqual { a: { b: 1 } }
@@ -469,7 +469,7 @@ object nodeColonassertMod {
     * Tests for deep strict inequality. Opposite of {@link deepStrictEqual}.
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * assert.notDeepStrictEqual({ a: 1 }, { a: '1' });
     * // OK
@@ -499,7 +499,7 @@ object nodeColonassertMod {
     * specially handled and treated as being identical if both sides are `NaN`.
     *
     * ```js
-    * import assert from 'assert';
+    * import assert from 'node:assert';
     *
     * assert.notEqual(1, 2);
     * // OK
@@ -524,7 +524,7 @@ object nodeColonassertMod {
     * determined by [`Object.is()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is).
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * assert.notStrictEqual(1, 2);
     * // OK
@@ -558,7 +558,7 @@ object nodeColonassertMod {
     * thrown in a file! See below for further details.
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * assert.ok(true);
     * // OK
@@ -593,7 +593,7 @@ object nodeColonassertMod {
     * ```
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * // Using `assert()` works the same:
     * assert(0);
@@ -626,7 +626,7 @@ object nodeColonassertMod {
     * If specified, `message` will be the message provided by the `AssertionError` if the `asyncFn` fails to reject.
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * await assert.rejects(
     *   async () => {
@@ -634,13 +634,13 @@ object nodeColonassertMod {
     *   },
     *   {
     *     name: 'TypeError',
-    *     message: 'Wrong value'
-    *   }
+    *     message: 'Wrong value',
+    *   },
     * );
     * ```
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * await assert.rejects(
     *   async () => {
@@ -650,16 +650,16 @@ object nodeColonassertMod {
     *     assert.strictEqual(err.name, 'TypeError');
     *     assert.strictEqual(err.message, 'Wrong value');
     *     return true;
-    *   }
+    *   },
     * );
     * ```
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * assert.rejects(
     *   Promise.reject(new Error('Wrong value')),
-    *   Error
+    *   Error,
     * ).then(() => {
     *   // ...
     * });
@@ -696,7 +696,7 @@ object nodeColonassertMod {
     * determined by [`Object.is()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is).
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * assert.strictEqual(1, 2);
     * // AssertionError [ERR_ASSERTION]: Expected inputs to be strictly equal:
@@ -749,14 +749,14 @@ object nodeColonassertMod {
     * Custom validation object/error instance:
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * const err = new TypeError('Wrong value');
     * err.code = 404;
     * err.foo = 'bar';
     * err.info = {
     *   nested: true,
-    *   baz: 'text'
+    *   baz: 'text',
     * };
     * err.reg = /abc/i;
     *
@@ -769,16 +769,16 @@ object nodeColonassertMod {
     *     message: 'Wrong value',
     *     info: {
     *       nested: true,
-    *       baz: 'text'
-    *     }
+    *       baz: 'text',
+    *     },
     *     // Only properties on the validation object will be tested for.
     *     // Using nested objects requires all properties to be present. Otherwise
     *     // the validation is going to fail.
-    *   }
+    *   },
     * );
     *
     * // Using regular expressions to validate error properties:
-    * throws(
+    * assert.throws(
     *   () => {
     *     throw err;
     *   },
@@ -792,17 +792,17 @@ object nodeColonassertMod {
     *     info: {
     *       nested: true,
     *       // It is not possible to use regular expressions for nested properties!
-    *       baz: 'text'
+    *       baz: 'text',
     *     },
     *     // The `reg` property contains a regular expression and only if the
     *     // validation object contains an identical regular expression, it is going
     *     // to pass.
-    *     reg: /abc/i
-    *   }
+    *     reg: /abc/i,
+    *   },
     * );
     *
     * // Fails due to the different `message` and `name` properties:
-    * throws(
+    * assert.throws(
     *   () => {
     *     const otherErr = new Error('Not found');
     *     // Copy all enumerable properties from `err` to `otherErr`.
@@ -813,20 +813,20 @@ object nodeColonassertMod {
     *   },
     *   // The error's `message` and `name` properties will also be checked when using
     *   // an error as validation object.
-    *   err
+    *   err,
     * );
     * ```
     *
     * Validate instanceof using constructor:
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * assert.throws(
     *   () => {
     *     throw new Error('Wrong value');
     *   },
-    *   Error
+    *   Error,
     * );
     * ```
     *
@@ -836,13 +836,13 @@ object nodeColonassertMod {
     * therefore also include the error name.
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * assert.throws(
     *   () => {
     *     throw new Error('Wrong value');
     *   },
-    *   /^Error: Wrong value$/
+    *   /^Error: Wrong value$/,
     * );
     * ```
     *
@@ -852,7 +852,7 @@ object nodeColonassertMod {
     * It will otherwise fail with an `AssertionError`.
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * assert.throws(
     *   () => {
@@ -868,7 +868,7 @@ object nodeColonassertMod {
     *     // possible.
     *     return true;
     *   },
-    *   'unexpected error'
+    *   'unexpected error',
     * );
     * ```
     *
@@ -878,7 +878,7 @@ object nodeColonassertMod {
     * a string as the second argument gets considered:
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * function throwingFirst() {
     *   throw new Error('First');

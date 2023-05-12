@@ -9,12 +9,12 @@ trait RetrieveDomainAuthCodeResponse extends StObject {
   /**
     * The authorization code for the domain.
     */
-  var AuthCode: DomainAuthCode
+  var AuthCode: js.UndefOr[DomainAuthCode] = js.undefined
 }
 object RetrieveDomainAuthCodeResponse {
   
-  inline def apply(AuthCode: DomainAuthCode): RetrieveDomainAuthCodeResponse = {
-    val __obj = js.Dynamic.literal(AuthCode = AuthCode.asInstanceOf[js.Any])
+  inline def apply(): RetrieveDomainAuthCodeResponse = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RetrieveDomainAuthCodeResponse]
   }
   
@@ -22,5 +22,7 @@ object RetrieveDomainAuthCodeResponse {
   implicit open class MutableBuilder[Self <: RetrieveDomainAuthCodeResponse] (val x: Self) extends AnyVal {
     
     inline def setAuthCode(value: DomainAuthCode): Self = StObject.set(x, "AuthCode", value.asInstanceOf[js.Any])
+    
+    inline def setAuthCodeUndefined: Self = StObject.set(x, "AuthCode", js.undefined)
   }
 }

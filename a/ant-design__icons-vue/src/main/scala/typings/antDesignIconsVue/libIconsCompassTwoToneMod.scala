@@ -16,7 +16,7 @@ object libIconsCompassTwoToneMod extends Shortcut {
   @js.native
   trait CompassTwoToneIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_CompassTwoToneIconType: String = js.native

@@ -4,12 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A <code>KmlLayer</code> adds geographic markup to the map from a KML, KMZ
-  * or GeoRSS file that is hosted on a publicly accessible web server. A
-  * <code>KmlFeatureData</code> object is provided for each feature when
-  * clicked.
-  */
 @js.native
 trait KmlLayer
   extends StObject

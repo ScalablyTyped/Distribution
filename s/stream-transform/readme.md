@@ -1,7 +1,7 @@
 
 # Scala.js typings for stream-transform
 
-Typings are for version 3.2.0
+Typings are for version 3.2.6
 
 ## Library description:
 Object transformations implementing the Node.js `stream.Transform` API

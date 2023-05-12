@@ -60,6 +60,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.ColonColonselection
   - typings.csstype.csstypeStrings.`ColonColonspelling-error`
   - typings.csstype.csstypeStrings.`ColonColontarget-text`
+  - typings.csstype.csstypeStrings.`ColonColonview-transition`
   - typings.csstype.csstypeStrings.Colonactive
   - typings.csstype.csstypeStrings.Colonafter
   - typings.csstype.csstypeStrings.`Colonany-link`
@@ -227,6 +228,8 @@ object SimplePseudos {
   inline def `ColonColonspelling-error`: typings.csstype.csstypeStrings.`ColonColonspelling-error` = "::spelling-error".asInstanceOf[typings.csstype.csstypeStrings.`ColonColonspelling-error`]
   
   inline def `ColonColontarget-text`: typings.csstype.csstypeStrings.`ColonColontarget-text` = "::target-text".asInstanceOf[typings.csstype.csstypeStrings.`ColonColontarget-text`]
+  
+  inline def `ColonColonview-transition`: typings.csstype.csstypeStrings.`ColonColonview-transition` = "::view-transition".asInstanceOf[typings.csstype.csstypeStrings.`ColonColonview-transition`]
   
   inline def Colonactive: typings.csstype.csstypeStrings.Colonactive = ":active".asInstanceOf[typings.csstype.csstypeStrings.Colonactive]
   

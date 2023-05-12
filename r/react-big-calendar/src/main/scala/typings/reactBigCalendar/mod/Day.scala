@@ -12,7 +12,7 @@ open class Day protected ()
   def this(props: DayProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: DayProps, context: Any) = this()
 }

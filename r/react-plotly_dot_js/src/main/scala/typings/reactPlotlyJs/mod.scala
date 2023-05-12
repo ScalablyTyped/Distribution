@@ -180,6 +180,8 @@ object mod {
         js.Function2[/* figure */ ReadonlyFigure, /* graphDiv */ ReadonlyHTMLElement, Unit]
       ] = js.undefined
     
+    var onWebGlContextLost: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
     /**
       * When provided, causes the plot to update only when the revision is incremented.
       */
@@ -360,6 +362,10 @@ object mod {
       inline def setOnUpdate(value: (/* figure */ ReadonlyFigure, /* graphDiv */ ReadonlyHTMLElement) => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction2(value))
       
       inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
+      
+      inline def setOnWebGlContextLost(value: () => Unit): Self = StObject.set(x, "onWebGlContextLost", js.Any.fromFunction0(value))
+      
+      inline def setOnWebGlContextLostUndefined: Self = StObject.set(x, "onWebGlContextLost", js.undefined)
       
       inline def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
       

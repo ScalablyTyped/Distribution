@@ -23,15 +23,30 @@ object CreateTypeQueryBuilder {
   
   inline def apply[T](
     ascii: Any => TypeMatchedValue[T, Any, String, CreateTypeQueryBuilder[T]],
-    bigint: Any => TypeMatchedValue[T, Any, typings.long.mod.^, CreateTypeQueryBuilder[T]],
+    bigint: Any => TypeMatchedValue[
+      T, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any, 
+      CreateTypeQueryBuilder[T]
+    ],
     bindings: () => js.Array[Any],
     blob: Any => TypeMatchedValue[T, Any, Buffer, CreateTypeQueryBuilder[T]],
     boolean: Any => TypeMatchedValue[T, Any, Boolean, CreateTypeQueryBuilder[T]],
-    counter: Any => TypeMatchedValue[T, Any, typings.long.mod.^, CreateTypeQueryBuilder[T]],
+    counter: Any => TypeMatchedValue[
+      T, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any, 
+      CreateTypeQueryBuilder[T]
+    ],
     cql: () => String,
     date: Any => TypeMatchedValue[T, Any, LocalDate, CreateTypeQueryBuilder[T]],
     decimal: Any => TypeMatchedValue[T, Any, BigDecimal, CreateTypeQueryBuilder[T]],
-    double: Any => TypeMatchedValue[T, Any, typings.long.mod.^, CreateTypeQueryBuilder[T]],
+    double: Any => TypeMatchedValue[
+      T, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any, 
+      CreateTypeQueryBuilder[T]
+    ],
     eachRow: (js.Function2[/* n */ Double, /* row */ Row, Any], js.Function1[/* err */ js.Error, Any]) => Unit,
     exec: ValueCallback[ResultSet] => Unit,
     float: Any => TypeMatchedValue[T, Any, Double, CreateTypeQueryBuilder[T]],

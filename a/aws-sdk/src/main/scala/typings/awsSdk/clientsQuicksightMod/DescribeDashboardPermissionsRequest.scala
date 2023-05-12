@@ -14,11 +14,11 @@ trait DescribeDashboardPermissionsRequest extends StObject {
   /**
     * The ID for the dashboard, also added to the IAM policy.
     */
-  var DashboardId: RestrictiveResourceId
+  var DashboardId: ShortRestrictiveResourceId
 }
 object DescribeDashboardPermissionsRequest {
   
-  inline def apply(AwsAccountId: AwsAccountId, DashboardId: RestrictiveResourceId): DescribeDashboardPermissionsRequest = {
+  inline def apply(AwsAccountId: AwsAccountId, DashboardId: ShortRestrictiveResourceId): DescribeDashboardPermissionsRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], DashboardId = DashboardId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDashboardPermissionsRequest]
   }
@@ -28,6 +28,6 @@ object DescribeDashboardPermissionsRequest {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    inline def setDashboardId(value: RestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
+    inline def setDashboardId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
   }
 }

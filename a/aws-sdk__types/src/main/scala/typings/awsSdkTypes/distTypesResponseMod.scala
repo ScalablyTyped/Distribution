@@ -28,6 +28,24 @@ object distTypesResponseMod {
     }
   }
   
+  trait Response extends StObject {
+    
+    var body: Any
+  }
+  object Response {
+    
+    inline def apply(body: Any): Response = {
+      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Response]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+      
+      inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait ResponseMetadata extends StObject {
     
     /**

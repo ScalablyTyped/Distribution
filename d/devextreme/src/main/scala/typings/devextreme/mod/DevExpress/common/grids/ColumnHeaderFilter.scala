@@ -2,7 +2,6 @@ package typings.devextreme.mod.DevExpress.common.grids
 
 import typings.devextreme.anon.Component
 import typings.devextreme.mod.DevExpress.common.SearchMode
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.HeaderFilterGroupInterval
 import typings.devextreme.mod.DevExpress.ui.dxFilterBuilder.FilterLookupDataSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

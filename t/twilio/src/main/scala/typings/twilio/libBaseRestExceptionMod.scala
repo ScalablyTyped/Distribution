@@ -7,24 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libBaseRestExceptionMod {
   
-  @JSImport("twilio/lib/base/RestException", JSImport.Namespace)
+  @JSImport("twilio/lib/base/RestException", JSImport.Default)
   @js.native
-  open class ^ ()
+  open class default protected ()
     extends StObject
        with RestException {
-    
-    /* CompleteClass */
-    var code: Double = js.native
-    
-    /* CompleteClass */
-    var details: js.Object = js.native
+    def this(response: Any) = this()
     
     /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
-    
-    /* CompleteClass */
-    var moreInfo: String = js.native
     
     /* standard es5 */
     /* CompleteClass */
@@ -34,22 +26,23 @@ object libBaseRestExceptionMod {
     var status: Double = js.native
   }
   
-  trait RestException
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.twilio.libBaseRestExceptionMod.RestExceptionError because var conflicts: message. Inlined status, code, moreInfo, details */ trait RestException
     extends StObject
        with Error {
     
-    var code: Double
+    var code: js.UndefOr[Double] = js.undefined
     
-    var details: js.Object
+    var details: js.UndefOr[js.Object] = js.undefined
     
-    var moreInfo: String
+    var moreInfo: js.UndefOr[String] = js.undefined
     
     var status: Double
   }
   object RestException {
     
-    inline def apply(code: Double, details: js.Object, message: String, moreInfo: String, name: String, status: Double): RestException = {
-      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], moreInfo = moreInfo.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    inline def apply(message: String, name: String, status: Double): RestException = {
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[RestException]
     }
     
@@ -58,9 +51,57 @@ object libBaseRestExceptionMod {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      
       inline def setDetails(value: js.Object): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
+      inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+      
       inline def setMoreInfo(value: String): Self = StObject.set(x, "moreInfo", value.asInstanceOf[js.Any])
+      
+      inline def setMoreInfoUndefined: Self = StObject.set(x, "moreInfo", js.undefined)
+      
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait RestExceptionError extends StObject {
+    
+    var code: js.UndefOr[Double] = js.undefined
+    
+    var details: js.UndefOr[js.Object] = js.undefined
+    
+    var message: js.UndefOr[String] = js.undefined
+    
+    var moreInfo: js.UndefOr[String] = js.undefined
+    
+    var status: Double
+  }
+  object RestExceptionError {
+    
+    inline def apply(status: Double): RestExceptionError = {
+      val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RestExceptionError]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RestExceptionError] (val x: Self) extends AnyVal {
+      
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      
+      inline def setDetails(value: js.Object): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      
+      inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+      
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      
+      inline def setMoreInfo(value: String): Self = StObject.set(x, "moreInfo", value.asInstanceOf[js.Any])
+      
+      inline def setMoreInfoUndefined: Self = StObject.set(x, "moreInfo", js.undefined)
       
       inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }

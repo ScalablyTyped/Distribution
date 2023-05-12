@@ -6,67 +6,61 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object sourceVectorEventTypeMod {
   
-  @JSImport("ol/source/VectorEventType", JSImport.Default)
-  @js.native
-  object default extends StObject {
+  object default {
     
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[VectorEventType & String] = js.native
+    @JSImport("ol/source/VectorEventType", "default.ADDFEATURE")
+    @js.native
+    val ADDFEATURE: String = js.native
     
-    /* "addfeature" */ val ADDFEATURE: typings.ol.sourceVectorEventTypeMod.VectorEventType.ADDFEATURE & String = js.native
+    @JSImport("ol/source/VectorEventType", "default.CHANGEFEATURE")
+    @js.native
+    val CHANGEFEATURE: String = js.native
     
-    /* "changefeature" */ val CHANGEFEATURE: typings.ol.sourceVectorEventTypeMod.VectorEventType.CHANGEFEATURE & String = js.native
+    @JSImport("ol/source/VectorEventType", "default.CLEAR")
+    @js.native
+    val CLEAR: String = js.native
     
-    /* "clear" */ val CLEAR: typings.ol.sourceVectorEventTypeMod.VectorEventType.CLEAR & String = js.native
+    @JSImport("ol/source/VectorEventType", "default.FEATURESLOADEND")
+    @js.native
+    val FEATURESLOADEND: String = js.native
     
-    /* "featuresloadend" */ val FEATURESLOADEND: typings.ol.sourceVectorEventTypeMod.VectorEventType.FEATURESLOADEND & String = js.native
+    @JSImport("ol/source/VectorEventType", "default.FEATURESLOADERROR")
+    @js.native
+    val FEATURESLOADERROR: String = js.native
     
-    /* "featuresloaderror" */ val FEATURESLOADERROR: typings.ol.sourceVectorEventTypeMod.VectorEventType.FEATURESLOADERROR & String = js.native
+    @JSImport("ol/source/VectorEventType", "default.FEATURESLOADSTART")
+    @js.native
+    val FEATURESLOADSTART: String = js.native
     
-    /* "featuresloadstart" */ val FEATURESLOADSTART: typings.ol.sourceVectorEventTypeMod.VectorEventType.FEATURESLOADSTART & String = js.native
-    
-    /* "removefeature" */ val REMOVEFEATURE: typings.ol.sourceVectorEventTypeMod.VectorEventType.REMOVEFEATURE & String = js.native
+    @JSImport("ol/source/VectorEventType", "default.REMOVEFEATURE")
+    @js.native
+    val REMOVEFEATURE: String = js.native
   }
   
-  @js.native
-  sealed trait VectorEventType extends StObject
-  @JSImport("ol/source/VectorEventType", "VectorEventType")
-  @js.native
-  object VectorEventType extends StObject {
+  /* Rewritten from type alias, can be one of: 
+    - typings.ol.olStrings.addfeature
+    - typings.ol.olStrings.changefeature
+    - typings.ol.olStrings.clear
+    - typings.ol.olStrings.removefeature
+    - typings.ol.olStrings.featuresloadstart
+    - typings.ol.olStrings.featuresloadend
+    - typings.ol.olStrings.featuresloaderror
+  */
+  trait VectorSourceEventTypes extends StObject
+  object VectorSourceEventTypes {
     
-    @js.native
-    sealed trait ADDFEATURE
-      extends StObject
-         with VectorEventType
+    inline def addfeature: typings.ol.olStrings.addfeature = "addfeature".asInstanceOf[typings.ol.olStrings.addfeature]
     
-    @js.native
-    sealed trait CHANGEFEATURE
-      extends StObject
-         with VectorEventType
+    inline def changefeature: typings.ol.olStrings.changefeature = "changefeature".asInstanceOf[typings.ol.olStrings.changefeature]
     
-    @js.native
-    sealed trait CLEAR
-      extends StObject
-         with VectorEventType
+    inline def clear: typings.ol.olStrings.clear = "clear".asInstanceOf[typings.ol.olStrings.clear]
     
-    @js.native
-    sealed trait FEATURESLOADEND
-      extends StObject
-         with VectorEventType
+    inline def featuresloadend: typings.ol.olStrings.featuresloadend = "featuresloadend".asInstanceOf[typings.ol.olStrings.featuresloadend]
     
-    @js.native
-    sealed trait FEATURESLOADERROR
-      extends StObject
-         with VectorEventType
+    inline def featuresloaderror: typings.ol.olStrings.featuresloaderror = "featuresloaderror".asInstanceOf[typings.ol.olStrings.featuresloaderror]
     
-    @js.native
-    sealed trait FEATURESLOADSTART
-      extends StObject
-         with VectorEventType
+    inline def featuresloadstart: typings.ol.olStrings.featuresloadstart = "featuresloadstart".asInstanceOf[typings.ol.olStrings.featuresloadstart]
     
-    @js.native
-    sealed trait REMOVEFEATURE
-      extends StObject
-         with VectorEventType
+    inline def removefeature: typings.ol.olStrings.removefeature = "removefeature".asInstanceOf[typings.ol.olStrings.removefeature]
   }
 }

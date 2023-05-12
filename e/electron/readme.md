@@ -1,7 +1,7 @@
 
 # Scala.js typings for electron
 
-Typings are for version 21.2.3
+Typings are for version 24.3.0
 
 ## Library description:
 Build cross platform desktop apps with JavaScript, HTML, and CSS

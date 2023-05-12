@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetInvalidationResult extends StObject {
   
   /**
-    * The invalidation's information. For more information, see Invalidation Complex Type. 
+    * The invalidation's information. For more information, see Invalidation Complex Type.
     */
   var Invalidation: js.UndefOr[typings.awsSdk.clientsCloudfrontMod.Invalidation] = js.undefined
 }

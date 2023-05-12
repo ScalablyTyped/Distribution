@@ -10,11 +10,10 @@ object distSrcUtilsExtractDataFromBlockMod {
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-    * @param {Uint8Array} block
-    * @param {number} blockStart
-    * @param {number} requestedStart
-    * @param {number} requestedEnd
-    */
-  inline def default(block: js.typedarray.Uint8Array, blockStart: Double, requestedStart: Double, requestedEnd: Double): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(block.asInstanceOf[js.Any], blockStart.asInstanceOf[js.Any], requestedStart.asInstanceOf[js.Any], requestedEnd.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def default(
+    block: js.typedarray.Uint8Array,
+    blockStart: js.BigInt,
+    requestedStart: js.BigInt,
+    requestedEnd: js.BigInt
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(block.asInstanceOf[js.Any], blockStart.asInstanceOf[js.Any], requestedStart.asInstanceOf[js.Any], requestedEnd.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
 }

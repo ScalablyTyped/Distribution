@@ -1,7 +1,5 @@
 package typings.webpack.mod
 
-import typings.webpack.anon.Read
-import typings.webpack.anon.Write
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +23,7 @@ trait DependenciesBlock extends StObject {
   
   var dependencies: js.Array[Dependency]
   
-  def deserialize(__0: Read): Unit
+  def deserialize(__0: ObjectDeserializerContext): Unit
   
   def getRootBlock(): DependenciesBlock
   
@@ -33,7 +31,7 @@ trait DependenciesBlock extends StObject {
   
   def removeDependency(dependency: Dependency): Unit
   
-  def serialize(__0: Write): Unit
+  def serialize(__0: ObjectSerializerContext): Unit
   
   def updateHash(hash: Hash, context: UpdateHashContextDependency): Unit
 }
@@ -45,11 +43,11 @@ object DependenciesBlock {
     blocks: js.Array[AsyncDependenciesBlock],
     clearDependenciesAndBlocks: () => Unit,
     dependencies: js.Array[Dependency],
-    deserialize: Read => Unit,
+    deserialize: ObjectDeserializerContext => Unit,
     getRootBlock: () => DependenciesBlock,
     parent: DependenciesBlock,
     removeDependency: Dependency => Unit,
-    serialize: Write => Unit,
+    serialize: ObjectSerializerContext => Unit,
     updateHash: (Hash, UpdateHashContextDependency) => Unit
   ): DependenciesBlock = {
     val __obj = js.Dynamic.literal(addBlock = js.Any.fromFunction1(addBlock), addDependency = js.Any.fromFunction1(addDependency), blocks = blocks.asInstanceOf[js.Any], clearDependenciesAndBlocks = js.Any.fromFunction0(clearDependenciesAndBlocks), dependencies = dependencies.asInstanceOf[js.Any], deserialize = js.Any.fromFunction1(deserialize), getRootBlock = js.Any.fromFunction0(getRootBlock), parent = parent.asInstanceOf[js.Any], removeDependency = js.Any.fromFunction1(removeDependency), serialize = js.Any.fromFunction1(serialize), updateHash = js.Any.fromFunction2(updateHash))
@@ -73,7 +71,7 @@ object DependenciesBlock {
     
     inline def setDependenciesVarargs(value: Dependency*): Self = StObject.set(x, "dependencies", js.Array(value*))
     
-    inline def setDeserialize(value: Read => Unit): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
+    inline def setDeserialize(value: ObjectDeserializerContext => Unit): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
     
     inline def setGetRootBlock(value: () => DependenciesBlock): Self = StObject.set(x, "getRootBlock", js.Any.fromFunction0(value))
     
@@ -81,7 +79,7 @@ object DependenciesBlock {
     
     inline def setRemoveDependency(value: Dependency => Unit): Self = StObject.set(x, "removeDependency", js.Any.fromFunction1(value))
     
-    inline def setSerialize(value: Write => Unit): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
+    inline def setSerialize(value: ObjectSerializerContext => Unit): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
     
     inline def setUpdateHash(value: (Hash, UpdateHashContextDependency) => Unit): Self = StObject.set(x, "updateHash", js.Any.fromFunction2(value))
   }

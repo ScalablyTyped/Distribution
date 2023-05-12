@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderStartStartRadius
+import typings.csstype.mod.Property.AnimationFillMode
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `114` extends StObject {
   
   var value: js.UndefOr[
-    (BorderStartStartRadius[Double | String]) | (js.Array[
+    AnimationFillMode | (js.Array[
       (Extract[
-        js.UndefOr[
-          (BorderStartStartRadius[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderStartStartRadius[Double | String]]]])
-        ], 
+        js.UndefOr[AnimationFillMode | js.Array[NonNullable[js.UndefOr[AnimationFillMode]]]], 
         String
-      ]) | (NonNullable[js.UndefOr[BorderStartStartRadius[Double | String]]])
+      ]) | NonNullable[js.UndefOr[AnimationFillMode]]
     ])
   ] = js.native
 }

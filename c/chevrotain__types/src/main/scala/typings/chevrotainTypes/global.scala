@@ -5,10 +5,12 @@ import typings.chevrotainTypes.anon.DefinitionIdx
 import typings.chevrotainTypes.anon.Idx
 import typings.chevrotainTypes.anon.IgnoreAmbiguities
 import typings.chevrotainTypes.anon.Label
+import typings.chevrotainTypes.anon.MaxLookahead
 import typings.chevrotainTypes.anon.Name
 import typings.chevrotainTypes.anon.Separator
 import typings.chevrotainTypes.mod.GenerateDtsOptions
 import typings.chevrotainTypes.mod.ICreateSyntaxDiagramsConfig
+import typings.chevrotainTypes.mod.ILLkLookaheadStrategyConstructor
 import typings.chevrotainTypes.mod.ILexerConfig
 import typings.chevrotainTypes.mod.ILexerErrorMessageProvider
 import typings.chevrotainTypes.mod.IMultiModeLexerDefinition
@@ -17,6 +19,7 @@ import typings.chevrotainTypes.mod.IProduction
 import typings.chevrotainTypes.mod.ISerializedGast
 import typings.chevrotainTypes.mod.IToken
 import typings.chevrotainTypes.mod.ITokenConfig
+import typings.chevrotainTypes.mod.LookaheadSequence
 import typings.chevrotainTypes.mod.TokenType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -73,6 +76,10 @@ object global {
     @js.native
     open class GAstVisitor ()
       extends typings.chevrotainTypes.mod.GAstVisitor
+    
+    @JSGlobal("chevrotain.LLkLookaheadStrategy")
+    @js.native
+    val LLkLookaheadStrategy: ILLkLookaheadStrategyConstructor = js.native
     
     @JSGlobal("chevrotain.Lexer")
     @js.native
@@ -295,6 +302,8 @@ object global {
     
     inline def generateCstDts(productions: Record[String, typings.chevrotainTypes.mod.Rule]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateCstDts")(productions.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def generateCstDts(productions: Record[String, typings.chevrotainTypes.mod.Rule], options: GenerateDtsOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCstDts")(productions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    inline def getLookaheadPaths(options: MaxLookahead): js.Array[LookaheadSequence] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLookaheadPaths")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[LookaheadSequence]]
     
     inline def isRecognitionException(error: js.Error): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRecognitionException")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     

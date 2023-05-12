@@ -2,6 +2,7 @@ package typings.ioredis
 
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
+import typings.denque.mod.^
 import typings.ioredis.anon.PartialRedisOptions
 import typings.ioredis.anon.TypeofRedis
 import typings.ioredis.anon.`0`
@@ -12,9 +13,12 @@ import typings.ioredis.builtCommandMod.ArgumentTransformer
 import typings.ioredis.builtCommandMod.ArgumentType
 import typings.ioredis.builtCommandMod.CommandOptions
 import typings.ioredis.builtCommandMod.ReplyTransformer
+import typings.ioredis.builtDataHandlerMod.Condition
+import typings.ioredis.builtDataHandlerMod.FlushQueueOptions
 import typings.ioredis.builtRedisRedisOptionsMod.RedisOptions
 import typings.ioredis.builtTransactionMod.Transaction
 import typings.ioredis.builtTypesMod.Callback
+import typings.ioredis.builtTypesMod.CommandItem
 import typings.ioredis.builtTypesMod.NetStream
 import typings.ioredis.builtTypesMod.ScanStreamOptions
 import typings.ioredis.ioredisStrings.ENTER_SUBSCRIBER_MODE
@@ -22,9 +26,15 @@ import typings.ioredis.ioredisStrings.EXIT_SUBSCRIBER_MODE
 import typings.ioredis.ioredisStrings.VALID_IN_MONITOR_MODE
 import typings.ioredis.ioredisStrings.VALID_IN_SUBSCRIBER_MODE
 import typings.ioredis.ioredisStrings.WILL_DISCONNECT
+import typings.ioredis.ioredisStrings.error_
+import typings.ioredis.ioredisStrings.message
+import typings.ioredis.ioredisStrings.messageBuffer
 import typings.ioredis.ioredisStrings.monitor
 import typings.ioredis.ioredisStrings.normal_
+import typings.ioredis.ioredisStrings.pmessage
+import typings.ioredis.ioredisStrings.pmessageBuffer
 import typings.ioredis.ioredisStrings.subscriber
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.ConstructorParameters
 import org.scalablytyped.runtime.StObject
@@ -203,7 +213,8 @@ object builtRedisMod {
     * ```
     */
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.node.eventsMod.EventEmitter because Inheritance from two classes. Inlined  */ @js.native
+  - typings.node.eventsMod.EventEmitter because Inheritance from two classes. Inlined 
+  - typings.ioredis.builtDataHandlerMod.DataHandledable because Inheritance from two classes. Inlined stream, status, condition, commandQueue, disconnect, recoverFromFatalError, handleReconnection */ @js.native
   trait Redis
     extends typings.ioredis.builtUtilsCommanderMod.default[`0`]
        with Transaction
@@ -226,9 +237,15 @@ object builtRedisMod {
     
     def autoPipelineQueueSize: Double = js.native
     
-    /* private */ var commandQueue: Any = js.native
+    /**
+      * @ignore
+      */
+    var commandQueue: ^[CommandItem] = js.native
     
-    /* private */ var condition: Any = js.native
+    /**
+      * @ignore
+      */
+    var condition: Condition | Null = js.native
     
     /**
       * Create a connection to Redis.
@@ -284,7 +301,10 @@ object builtRedisMod {
       */
     /* private */ var flushQueue: Any = js.native
     
-    /* private */ var handleReconnection: Any = js.native
+    /**
+      * @ignore
+      */
+    def handleReconnection(err: js.Error, item: CommandItem): Unit = js.native
     
     def hscanBufferStream(key: String): typings.ioredis.builtScanStreamMod.default = js.native
     def hscanBufferStream(key: String, options: ScanStreamOptions): typings.ioredis.builtScanStreamMod.default = js.native
@@ -338,6 +358,42 @@ object builtRedisMod {
     
     /* private */ var offlineQueue: Any = js.native
     
+    def on(event: RedisStatus, cb: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    def on_error(event: error_, cb: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
+    @JSName("on")
+    def on_message(event: message, cb: js.Function2[/* channel */ String, /* message */ String, Unit]): this.type = js.native
+    @JSName("on")
+    def on_messageBuffer(event: messageBuffer, cb: js.Function2[/* channel */ Buffer, /* message */ Buffer, Unit]): this.type = js.native
+    @JSName("on")
+    def on_pmessage(
+      event: pmessage,
+      cb: js.Function3[/* pattern */ String, /* channel */ String, /* message */ String, Unit]
+    ): this.type = js.native
+    @JSName("on")
+    def on_pmessageBuffer(
+      event: pmessageBuffer,
+      cb: js.Function3[/* pattern */ String, /* channel */ Buffer, /* message */ Buffer, Unit]
+    ): this.type = js.native
+    
+    def once(event: RedisStatus, cb: js.Function0[Unit]): this.type = js.native
+    @JSName("once")
+    def once_error(event: error_, cb: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
+    @JSName("once")
+    def once_message(event: message, cb: js.Function2[/* channel */ String, /* message */ String, Unit]): this.type = js.native
+    @JSName("once")
+    def once_messageBuffer(event: messageBuffer, cb: js.Function2[/* channel */ Buffer, /* message */ Buffer, Unit]): this.type = js.native
+    @JSName("once")
+    def once_pmessage(
+      event: pmessage,
+      cb: js.Function3[/* pattern */ String, /* channel */ String, /* message */ String, Unit]
+    ): this.type = js.native
+    @JSName("once")
+    def once_pmessageBuffer(
+      event: pmessageBuffer,
+      cb: js.Function3[/* pattern */ String, /* channel */ Buffer, /* message */ Buffer, Unit]
+    ): this.type = js.native
+    
     @JSName("options")
     var options_Redis: RedisOptions = js.native
     
@@ -345,7 +401,10 @@ object builtRedisMod {
     
     /* private */ var reconnectTimeout: Any = js.native
     
-    /* private */ var recoverFromFatalError: Any = js.native
+    /**
+      * @ignore
+      */
+    def recoverFromFatalError(_commandError: js.Error, err: js.Error, options: FlushQueueOptions): Unit = js.native
     
     /* private */ var resetCommandQueue: Any = js.native
     
@@ -378,7 +437,7 @@ object builtRedisMod {
     def sscanStream(key: String): typings.ioredis.builtScanStreamMod.default = js.native
     def sscanStream(key: String, options: ScanStreamOptions): typings.ioredis.builtScanStreamMod.default = js.native
     
-    var status: RedisStatus = js.native
+    var status: RedisStatus | String = js.native
     
     /**
       * @ignore

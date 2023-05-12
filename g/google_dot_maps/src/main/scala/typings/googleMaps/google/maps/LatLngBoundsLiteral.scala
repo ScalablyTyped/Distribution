@@ -6,13 +6,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Object literals are accepted in place of <code>LatLngBounds</code> objects
-  * throughout the API. These are automatically converted to
-  * <code>LatLngBounds</code> objects. All <code>south</code>,
-  * <code>west</code>, <code>north</code> and <code>east</code> must be set,
-  * otherwise an exception is thrown.
-  */
 trait LatLngBoundsLiteral
   extends StObject
      with LocationRestriction

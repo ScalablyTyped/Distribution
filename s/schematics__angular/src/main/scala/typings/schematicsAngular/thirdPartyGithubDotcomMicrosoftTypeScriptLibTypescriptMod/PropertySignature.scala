@@ -14,17 +14,16 @@ trait PropertySignature
      with HasType
      with VariableLikeDeclaration {
   
-  /** @deprecated A property signature cannot have an initializer */
-  val initializer: js.UndefOr[Expression] = js.native
-  
   @JSName("kind")
   val kind_PropertySignature: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.SyntaxKind.PropertySignature = js.native
   
-  @JSName("modifiers")
-  val modifiers_PropertySignature: js.UndefOr[NodeArray[Modifier]] = js.native
+  val modifiers: js.UndefOr[NodeArray[Modifier]] = js.native
   
   @JSName("name")
   val name_PropertySignature: PropertyName = js.native
+  
+  @JSName("parent")
+  val parent_PropertySignature: TypeLiteralNode | InterfaceDeclaration = js.native
   
   val `type`: js.UndefOr[TypeNode] = js.native
 }

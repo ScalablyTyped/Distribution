@@ -2,6 +2,7 @@ package typings.materializecssMaterialize.M
 
 import typings.std.Element
 import typings.std.HTMLInputElement
+import typings.std.HTMLLabelElement
 import typings.std.HTMLUListElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,32 +13,38 @@ trait FormSelect
      with Component[FormSelectOptions] {
   
   /**
-    * Instance of the dropdown plugin for this select
+    * Instance of the dropdown plugin for this select.
     */
   var dropdown: Dropdown
   
   /**
-    * Dropdown UL element
+    * Dropdown UL element.
     */
   var dropdownOptions: HTMLUListElement
   
   /**
-    * Get selected values in an array
+    * Get selected values in an array.
     */
   def getSelectedValues(): js.Array[String]
   
   /**
-    * Text input that shows current selected option
+    * Text input that shows current selected option.
     */
   var input: HTMLInputElement
   
   /**
-    * If this is a multiple select
+    * If this is a multiple select.
     */
   var isMultiple: Boolean
   
   /**
-    * The select wrapper element
+    * Label associated with the current select element.
+    * Is "null", if not detected.
+    */
+  var labelEl: HTMLLabelElement
+  
+  /**
+    * The select wrapper element.
     */
   var wrapper: Element
 }
@@ -51,10 +58,11 @@ object FormSelect {
     getSelectedValues: () => js.Array[String],
     input: HTMLInputElement,
     isMultiple: Boolean,
+    labelEl: HTMLLabelElement,
     options: FormSelectOptions,
     wrapper: Element
   ): FormSelect = {
-    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), dropdown = dropdown.asInstanceOf[js.Any], dropdownOptions = dropdownOptions.asInstanceOf[js.Any], el = el.asInstanceOf[js.Any], getSelectedValues = js.Any.fromFunction0(getSelectedValues), input = input.asInstanceOf[js.Any], isMultiple = isMultiple.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), dropdown = dropdown.asInstanceOf[js.Any], dropdownOptions = dropdownOptions.asInstanceOf[js.Any], el = el.asInstanceOf[js.Any], getSelectedValues = js.Any.fromFunction0(getSelectedValues), input = input.asInstanceOf[js.Any], isMultiple = isMultiple.asInstanceOf[js.Any], labelEl = labelEl.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormSelect]
   }
   
@@ -70,6 +78,8 @@ object FormSelect {
     inline def setInput(value: HTMLInputElement): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     inline def setIsMultiple(value: Boolean): Self = StObject.set(x, "isMultiple", value.asInstanceOf[js.Any])
+    
+    inline def setLabelEl(value: HTMLLabelElement): Self = StObject.set(x, "labelEl", value.asInstanceOf[js.Any])
     
     inline def setWrapper(value: Element): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
   }

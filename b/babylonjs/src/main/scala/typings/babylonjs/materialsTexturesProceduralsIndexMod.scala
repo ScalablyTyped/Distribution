@@ -18,7 +18,7 @@ object materialsTexturesProceduralsIndexMod {
       * Instantiates a new Custom Procedural Texture.
       * Procedural texturing is a way to programmatically create a texture. There are 2 types of procedural textures: code-only, and code that references some classic 2D images, sometimes called 'refMaps' or 'sampler' images.
       * Custom Procedural textures are the easiest way to create your own procedural in your application.
-      * @see https://doc.babylonjs.com/how_to/how_to_use_procedural_textures#creating-custom-procedural-textures
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/proceduralTextures#creating-custom-procedural-textures
       * @param name Define the name of the texture
       * @param texturePath Define the folder path containing all the custom texture related files (config, shaders...)
       * @param size Define the size of the texture to create
@@ -154,7 +154,7 @@ object materialsTexturesProceduralsIndexMod {
       * Instantiates a new procedural texture.
       * Procedural texturing is a way to programmatically create a texture. There are 2 types of procedural textures: code-only, and code that references some classic 2D images, sometimes called 'refMaps' or 'sampler' images.
       * This is the base class of any Procedural texture and contains most of the shareable code.
-      * @see https://doc.babylonjs.com/how_to/how_to_use_procedural_textures
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/proceduralTextures
       * @param name  Define the name of the texture
       * @param size Define the size of the texture to create
       * @param fragment Define the fragment shader to use to generate the texture or null if it is defined later
@@ -324,7 +324,7 @@ object materialsTexturesProceduralsIndexMod {
       
       /**
         * The list of procedural textures added to the scene
-        * @see https://doc.babylonjs.com/how_to/how_to_use_procedural_textures
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/proceduralTextures
         */
       var proceduralTextures: js.Array[
             typings.babylonjs.materialsTexturesProceduralsProceduralTextureMod.ProceduralTexture

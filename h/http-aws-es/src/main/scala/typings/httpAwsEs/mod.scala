@@ -1,7 +1,7 @@
 package typings.httpAwsEs
 
 import org.scalablytyped.runtime.Shortcut
-import typings.awsSdk.mod.Config_
+import typings.awsSdk2Types.mod.Config_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -35,6 +35,11 @@ trait AudioNormalizationSettings extends StObject {
     * When you use Audio normalization (AudioNormalizationSettings), optionally use this setting to specify a target loudness. If you don't specify a value here, the encoder chooses a value for you, based on the algorithm that you choose for Algorithm (algorithm). If you choose algorithm 1770-1, the encoder will choose -24 LKFS; otherwise, the encoder will choose -23 LKFS.
     */
   var TargetLkfs: js.UndefOr[doubleMinNegative59Max0] = js.undefined
+  
+  /**
+    * Specify the True-peak limiter threshold in decibels relative to full scale (dBFS). The peak inter-audio sample loudness in your output will be limited to the value that you specify, without affecting the overall target LKFS. Enter a value from 0 to -8. Leave blank to use the default value 0.
+    */
+  var TruePeakLimiterThreshold: js.UndefOr[doubleMinNegative8Max0] = js.undefined
 }
 object AudioNormalizationSettings {
   
@@ -69,5 +74,9 @@ object AudioNormalizationSettings {
     inline def setTargetLkfs(value: doubleMinNegative59Max0): Self = StObject.set(x, "TargetLkfs", value.asInstanceOf[js.Any])
     
     inline def setTargetLkfsUndefined: Self = StObject.set(x, "TargetLkfs", js.undefined)
+    
+    inline def setTruePeakLimiterThreshold(value: doubleMinNegative8Max0): Self = StObject.set(x, "TruePeakLimiterThreshold", value.asInstanceOf[js.Any])
+    
+    inline def setTruePeakLimiterThresholdUndefined: Self = StObject.set(x, "TruePeakLimiterThreshold", js.undefined)
   }
 }

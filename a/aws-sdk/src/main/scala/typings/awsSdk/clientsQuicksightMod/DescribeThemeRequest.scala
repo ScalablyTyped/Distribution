@@ -19,7 +19,7 @@ trait DescribeThemeRequest extends StObject {
   /**
     * The ID for the theme.
     */
-  var ThemeId: RestrictiveResourceId
+  var ThemeId: ShortRestrictiveResourceId
   
   /**
     * The version number for the version to describe. If a VersionNumber parameter value isn't provided, the latest version of the theme is described.
@@ -28,7 +28,7 @@ trait DescribeThemeRequest extends StObject {
 }
 object DescribeThemeRequest {
   
-  inline def apply(AwsAccountId: AwsAndAccountId, ThemeId: RestrictiveResourceId): DescribeThemeRequest = {
+  inline def apply(AwsAccountId: AwsAndAccountId, ThemeId: ShortRestrictiveResourceId): DescribeThemeRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], ThemeId = ThemeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeThemeRequest]
   }
@@ -42,7 +42,7 @@ object DescribeThemeRequest {
     
     inline def setAwsAccountId(value: AwsAndAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    inline def setThemeId(value: RestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
+    inline def setThemeId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
     
     inline def setVersionNumber(value: VersionNumber): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
     

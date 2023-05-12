@@ -5,8 +5,8 @@ import typings.grpcGrpcJs.buildSrcCallInterfaceMod.MessageContext
 import typings.grpcGrpcJs.buildSrcCallInterfaceMod.StatusObject
 import typings.grpcGrpcJs.buildSrcConstantsMod.Status
 import typings.grpcGrpcJs.buildSrcMetadataMod.Metadata
-import typings.grpcGrpcJs.buildSrcSubchannelMod.Subchannel
-import typings.grpcGrpcJs.buildSrcSubchannelMod.SubchannelCallStatsTracker
+import typings.grpcGrpcJs.buildSrcTransportMod.CallEventTracker
+import typings.grpcGrpcJs.buildSrcTransportMod.Transport
 import typings.node.bufferMod.global.Buffer
 import typings.node.http2Mod.ClientHttp2Stream
 import org.scalablytyped.runtime.StObject
@@ -22,15 +22,15 @@ object buildSrcSubchannelCallMod {
        with SubchannelCall {
     def this(
       http2Stream: ClientHttp2Stream,
-      callStatsTracker: SubchannelCallStatsTracker,
+      callEventTracker: CallEventTracker,
       listener: SubchannelCallInterceptingListener,
-      subchannel: Subchannel,
+      transport: Transport,
       callId: Double
     ) = this()
     
-    /* private */ val callId: Any = js.native
+    /* private */ val callEventTracker: Any = js.native
     
-    /* private */ val callStatsTracker: Any = js.native
+    /* private */ val callId: Any = js.native
     
     /* private */ var canPush: Any = js.native
     
@@ -40,8 +40,6 @@ object buildSrcSubchannelCallMod {
     /* private */ var decoder: Any = js.native
     
     /* private */ var destroyHttp2Stream: Any = js.native
-    
-    /* private */ var disconnectListener: Any = js.native
     
     /**
       * On first call, emits a 'status' event with the given StatusObject.
@@ -69,6 +67,8 @@ object buildSrcSubchannelCallMod {
     
     /* private */ var internalError: Any = js.native
     
+    /* private */ var isPushPending: Any = js.native
+    
     /* private */ var isReadFilterPending: Any = js.native
     
     /* private */ val listener: Any = js.native
@@ -76,6 +76,8 @@ object buildSrcSubchannelCallMod {
     /* private */ var mappedStatusCode: Any = js.native
     
     /* private */ var maybeOutputStatus: Any = js.native
+    
+    def onDisconnect(): Unit = js.native
     
     /* private */ var outputStatus: Any = js.native
     
@@ -95,9 +97,9 @@ object buildSrcSubchannelCallMod {
     
     /* private */ var statusOutput: Any = js.native
     
-    /* private */ val subchannel: Any = js.native
-    
     /* private */ var trace: Any = js.native
+    
+    /* private */ val transport: Any = js.native
     
     /* private */ var tryPush: Any = js.native
     

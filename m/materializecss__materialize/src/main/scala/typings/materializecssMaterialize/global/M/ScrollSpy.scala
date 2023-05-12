@@ -15,19 +15,19 @@ open class ScrollSpy ()
      with typings.materializecssMaterialize.M.Component[ScrollSpyOptions] {
   
   /**
-    * Destroy plugin instance and teardown
+    * Destroy plugin instance and teardown.
     */
   /* CompleteClass */
   override def destroy(): Unit = js.native
   
   /**
-    * The DOM element the plugin was initialized with
+    * The DOM element the plugin was initialized with.
     */
   /* CompleteClass */
   var el: Element = js.native
   
   /**
-    * The options the instance was initialized with
+    * The options the instance was initialized with.
     */
   /* CompleteClass */
   var options: ScrollSpyOptions = js.native
@@ -39,19 +39,19 @@ object ScrollSpy {
   val ^ : js.Any = js.native
   
   /**
-    * Get Instance
+    * Get Instance.
     */
   /* static member */
   inline def getInstance(elem: Element): typings.materializecssMaterialize.M.ScrollSpy = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(elem.asInstanceOf[js.Any]).asInstanceOf[typings.materializecssMaterialize.M.ScrollSpy]
   
   /**
-    * Init ScrollSpies
+    * Init ScrollSpies.
     */
   /* static member */
   inline def init(els: MElements): js.Array[typings.materializecssMaterialize.M.ScrollSpy] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializecssMaterialize.M.ScrollSpy]]
   inline def init(els: MElements, options: PartialScrollSpyOptions): js.Array[typings.materializecssMaterialize.M.ScrollSpy] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializecssMaterialize.M.ScrollSpy]]
   /**
-    * Init ScrollSpy
+    * Init ScrollSpy.
     */
   /* static member */
   inline def init(els: Element): typings.materializecssMaterialize.M.ScrollSpy = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[typings.materializecssMaterialize.M.ScrollSpy]

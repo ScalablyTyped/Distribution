@@ -47,6 +47,8 @@ trait NavigatorYAxisPlotLinesOptions extends StObject {
     */
   var label: js.UndefOr[NavigatorYAxisPlotLinesLabelOptions] = js.undefined
   
+  var labels: js.UndefOr[NavigatorYAxisPlotLinesLabelsOptions] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) The position of the line in axis units.
     */
@@ -100,6 +102,10 @@ object NavigatorYAxisPlotLinesOptions {
     inline def setLabel(value: NavigatorYAxisPlotLinesLabelOptions): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setLabels(value: NavigatorYAxisPlotLinesLabelsOptions): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

@@ -12,7 +12,7 @@ trait AssociateAliasRequest extends StObject {
   var Alias: String
   
   /**
-    * The ID of the distribution that you’re associating the alias with.
+    * The ID of the distribution that you're associating the alias with.
     */
   var TargetDistributionId: String
 }

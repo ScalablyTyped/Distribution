@@ -1,7 +1,6 @@
 package typings.chartJs.anon
 
-import typings.chartJs.mod.ChartType
-import typings.chartJs.typesAnimationMod.AnimationEvent
+import typings.chartJs.distTypesAnimationMod.AnimationEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,11 @@ trait OnComplete extends StObject {
     */
   var onComplete: js.UndefOr[
     js.ThisFunction1[
-      /* this */ typings.chartJs.mod.Chart[ChartType, typings.chartJs.mod.DefaultDataPoint[ChartType], Any], 
+      /* this */ typings.chartJs.distTypesIndexMod.Chart[
+        typings.chartJs.distTypesIndexMod.ChartType, 
+        typings.chartJs.distTypesIndexMod.DefaultDataPoint[typings.chartJs.distTypesIndexMod.ChartType], 
+        Any
+      ], 
       /* event */ AnimationEvent, 
       Unit
     ]
@@ -24,7 +27,11 @@ trait OnComplete extends StObject {
     */
   var onProgress: js.UndefOr[
     js.ThisFunction1[
-      /* this */ typings.chartJs.mod.Chart[ChartType, typings.chartJs.mod.DefaultDataPoint[ChartType], Any], 
+      /* this */ typings.chartJs.distTypesIndexMod.Chart[
+        typings.chartJs.distTypesIndexMod.ChartType, 
+        typings.chartJs.distTypesIndexMod.DefaultDataPoint[typings.chartJs.distTypesIndexMod.ChartType], 
+        Any
+      ], 
       /* event */ AnimationEvent, 
       Unit
     ]
@@ -42,7 +49,11 @@ object OnComplete {
     
     inline def setOnComplete(
       value: js.ThisFunction1[
-          /* this */ typings.chartJs.mod.Chart[ChartType, typings.chartJs.mod.DefaultDataPoint[ChartType], Any], 
+          /* this */ typings.chartJs.distTypesIndexMod.Chart[
+            typings.chartJs.distTypesIndexMod.ChartType, 
+            typings.chartJs.distTypesIndexMod.DefaultDataPoint[typings.chartJs.distTypesIndexMod.ChartType], 
+            Any
+          ], 
           /* event */ AnimationEvent, 
           Unit
         ]
@@ -52,7 +63,11 @@ object OnComplete {
     
     inline def setOnProgress(
       value: js.ThisFunction1[
-          /* this */ typings.chartJs.mod.Chart[ChartType, typings.chartJs.mod.DefaultDataPoint[ChartType], Any], 
+          /* this */ typings.chartJs.distTypesIndexMod.Chart[
+            typings.chartJs.distTypesIndexMod.ChartType, 
+            typings.chartJs.distTypesIndexMod.DefaultDataPoint[typings.chartJs.distTypesIndexMod.ChartType], 
+            Any
+          ], 
           /* event */ AnimationEvent, 
           Unit
         ]

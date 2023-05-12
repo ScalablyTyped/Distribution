@@ -2,12 +2,12 @@ package typings.svelteLeafletjs.anon
 
 import typings.leaflet.mod.TileLayerOptions
 import typings.svelteLeafletjs.mod.TileLayerEventKeys
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onload
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onloading
-import typings.svelteLeafletjs.svelteLeafletjsStrings.ontileerror
-import typings.svelteLeafletjs.svelteLeafletjsStrings.ontileload
-import typings.svelteLeafletjs.svelteLeafletjsStrings.ontileloadstart
-import typings.svelteLeafletjs.svelteLeafletjsStrings.ontileunload
+import typings.svelteLeafletjs.svelteLeafletjsStrings.load
+import typings.svelteLeafletjs.svelteLeafletjsStrings.loading
+import typings.svelteLeafletjs.svelteLeafletjsStrings.tileerror
+import typings.svelteLeafletjs.svelteLeafletjsStrings.tileload
+import typings.svelteLeafletjs.svelteLeafletjsStrings.tileloadstart
+import typings.svelteLeafletjs.svelteLeafletjsStrings.tileunload
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,7 +42,7 @@ object GetTileLayer {
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    inline def setEventsVarargs(value: (ontileloadstart | ontileerror | ontileload | onloading | onload | ontileunload)*): Self = StObject.set(x, "events", js.Array(value*))
+    inline def setEventsVarargs(value: (loading | load | tileloadstart | tileload | tileunload | tileerror)*): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setGetTileLayer(value: () => GetTileLayer): Self = StObject.set(x, "getTileLayer", js.Any.fromFunction0(value))
     

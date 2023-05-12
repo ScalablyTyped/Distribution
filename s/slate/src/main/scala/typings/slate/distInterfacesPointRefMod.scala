@@ -2,7 +2,7 @@ package typings.slate
 
 import typings.slate.distInterfacesOperationMod.Operation
 import typings.slate.distInterfacesPointMod.Point
-import typings.slate.distInterfacesTypesMod.TextDirection
+import typings.slate.distTypesTypesMod.TextDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,6 +40,9 @@ object distInterfacesPointRefMod {
   
   trait PointRefInterface extends StObject {
     
+    /**
+      * Transform the point ref's current value by an operation.
+      */
     def transform(ref: PointRef, op: Operation): Unit
   }
   object PointRefInterface {

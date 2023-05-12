@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * @property id {number} - the ID associated internally with this request
-  * @property cancel {function()} - this function cancels the request and invokes the errback function
+  * id {number} - the ID associated internally with this request
+  * cancel {function()} - this function cancels the request and invokes the errback function
   */
 trait JsonpRequestHandle extends StObject {
   

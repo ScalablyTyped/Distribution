@@ -1,6 +1,7 @@
 package typings.vitejsPluginReact
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.babelCore.anon.Android
 import typings.babelCore.mod.MatchPattern
 import typings.babelCore.mod.MatchPatternContext
 import typings.babelCore.mod.PluginItem
@@ -126,6 +127,8 @@ object mod {
     var sourceRoot: js.UndefOr[String | Null] = js.undefined
     
     var sourceType: js.UndefOr[script | module | unambiguous | Null] = js.undefined
+    
+    var targets: js.UndefOr[String | js.Array[String] | Android] = js.undefined
     
     var test: js.UndefOr[MatchPattern | js.Array[MatchPattern]] = js.undefined
     
@@ -385,6 +388,12 @@ object mod {
       inline def setSourceTypeNull: Self = StObject.set(x, "sourceType", null)
       
       inline def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
+      
+      inline def setTargets(value: String | js.Array[String] | Android): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+      
+      inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
+      
+      inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value*))
       
       inline def setTest(value: MatchPattern | js.Array[MatchPattern]): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
       

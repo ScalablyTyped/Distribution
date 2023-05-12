@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "throat" : "6.0.1"
+      "throat" : "6.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "throat" : "6.0.1"
+      "throat" : "6.0.2"
     }
   ],
   "compile-devDependencies" : [

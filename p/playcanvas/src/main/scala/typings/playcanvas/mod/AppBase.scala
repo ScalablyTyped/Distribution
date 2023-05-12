@@ -2,7 +2,7 @@ package typings.playcanvas.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.playcanvas.anon.Physics
-import typings.std.Element
+import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,12 +19,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * MyScript.prototype.initialize = function() {
   *     // Every script instance has a property 'this.app' accessible in the initialize...
-  *     var app = this.app;
+  *     const app = this.app;
   * };
   *
   * MyScript.prototype.update = function(dt) {
   *     // ...and update functions.
-  *     var app = this.app;
+  *     const app = this.app;
   * };
   * ```
   *
@@ -39,11 +39,11 @@ open class AppBase protected () extends EventHandler {
   /**
     * Create a new AppBase instance.
     *
-    * @param {Element} canvas - The canvas element.
+    * @param {HTMLCanvasElement} canvas - The canvas element.
     * @example
     * // Engine-only example: create the application manually
-    * var options = new AppOptions();
-    * var app = new pc.AppBase(canvas);
+    * const options = new AppOptions();
+    * const app = new pc.AppBase(canvas);
     * app.init(options);
     *
     * // Start the application's main loop
@@ -51,16 +51,19 @@ open class AppBase protected () extends EventHandler {
     *
     * @hideconstructor
     */
-  def this(canvas: Element) = this()
+  def this(canvas: HTMLCanvasElement) = this()
   
   var _allowResize: Boolean = js.native
+  
+  var _alreadyStarted: Boolean = js.native
   
   /**
     * The application's batch manager.
     *
-    * @type {BatchManager}
+    * @type {import('../scene/batching/batch-manager.js').BatchManager}
+    * @private
     */
-  var _batcher: BatchManager = js.native
+  /* private */ var _batcher: Any = js.native
   
   /** @private */
   /* private */ var _destroyRequested: Any = js.native
@@ -179,7 +182,7 @@ open class AppBase protected () extends EventHandler {
   /* private */ var _skyboxAsset: Any = js.native
   
   /**
-    * @type {SoundManager}
+    * @type {import('../platform/sound/manager.js').SoundManager}
     * @private
     */
   /* private */ var _soundManager: Any = js.native
@@ -253,7 +256,7 @@ open class AppBase protected () extends EventHandler {
     * @param {boolean} settings.render.ambientBake - Enable baking ambient light into lightmaps.
     * @param {number} settings.render.ambientBakeNumSamples - Number of samples to use when baking ambient light.
     * @param {number} settings.render.ambientBakeSpherePart - How much of the sphere to include when baking ambient light.
-    * @param {number} settings.render.ambientBakeOcclusionBrightness - Brighness of the baked ambient occlusion.
+    * @param {number} settings.render.ambientBakeOcclusionBrightness - Brightness of the baked ambient occlusion.
     * @param {number} settings.render.ambientBakeOcclusionContrast - Contrast of the baked ambient occlusion.
     * @param {number} settings.render.ambientLuminance - Lux (lm/m^2) value for ambient light intensity.
     *
@@ -276,7 +279,7 @@ open class AppBase protected () extends EventHandler {
     * Only lights with bakeDir=true will be used for generating the dominant light direction.
     * @example
     *
-    * var settings = {
+    * const settings = {
     *     physics: {
     *         gravity: [0, -9.8, 0]
     *     },
@@ -309,7 +312,7 @@ open class AppBase protected () extends EventHandler {
     * @type {AssetRegistry}
     * @example
     * // Search the asset registry for all assets with the tag 'vehicle'
-    * var vehicleAssets = this.app.assets.findByTag('vehicle');
+    * const vehicleAssets = this.app.assets.findByTag('vehicle');
     */
   var assets: AssetRegistry = js.native
   
@@ -333,7 +336,7 @@ open class AppBase protected () extends EventHandler {
     * The application's batch manager. The batch manager is used to merge mesh instances in
     * the scene, which reduces the overall number of draw calls, thereby boosting performance.
     *
-    * @type {BatchManager}
+    * @type {import('../scene/batching/batch-manager.js').BatchManager}
     */
   def batcher: BatchManager = js.native
   
@@ -414,19 +417,19 @@ open class AppBase protected () extends EventHandler {
     * @param {Layer} [layer] - The layer to render the line into. Defaults to {@link LAYERID_IMMEDIATE}.
     * @example
     * // Render a 1-unit long white line
-    * var start = new pc.Vec3(0, 0, 0);
-    * var end = new pc.Vec3(1, 0, 0);
+    * const start = new pc.Vec3(0, 0, 0);
+    * const end = new pc.Vec3(1, 0, 0);
     * app.drawLine(start, end);
     * @example
     * // Render a 1-unit long red line which is not depth tested and renders on top of other geometry
-    * var start = new pc.Vec3(0, 0, 0);
-    * var end = new pc.Vec3(1, 0, 0);
+    * const start = new pc.Vec3(0, 0, 0);
+    * const end = new pc.Vec3(1, 0, 0);
     * app.drawLine(start, end, pc.Color.RED, false);
     * @example
     * // Render a 1-unit long white line into the world layer
-    * var start = new pc.Vec3(0, 0, 0);
-    * var end = new pc.Vec3(1, 0, 0);
-    * var worldLayer = app.scene.layers.getLayerById(pc.LAYERID_WORLD);
+    * const start = new pc.Vec3(0, 0, 0);
+    * const end = new pc.Vec3(1, 0, 0);
+    * const worldLayer = app.scene.layers.getLayerById(pc.LAYERID_WORLD);
     * app.drawLine(start, end, pc.Color.WHITE, true, worldLayer);
     */
   def drawLine(start: Vec3, end: Vec3): Unit = js.native
@@ -452,7 +455,7 @@ open class AppBase protected () extends EventHandler {
     * @param {Layer} [layer] - The layer to render the lines into. Defaults to {@link LAYERID_IMMEDIATE}.
     * @example
     * // Render 2 discrete line segments
-    * var points = [
+    * const points = [
     *     // Line 1
     *     0, 0, 0,
     *     1, 0, 0,
@@ -460,7 +463,7 @@ open class AppBase protected () extends EventHandler {
     *     1, 1, 0,
     *     1, 1, 1
     * ];
-    * var colors = [
+    * const colors = [
     *     // Line 1
     *     1, 0, 0, 1,  // red
     *     0, 1, 0, 1,  // green
@@ -491,12 +494,12 @@ open class AppBase protected () extends EventHandler {
     * @param {Layer} [layer] - The layer to render the lines into. Defaults to {@link LAYERID_IMMEDIATE}.
     * @example
     * // Render a single line, with unique colors for each point
-    * var start = new pc.Vec3(0, 0, 0);
-    * var end = new pc.Vec3(1, 0, 0);
+    * const start = new pc.Vec3(0, 0, 0);
+    * const end = new pc.Vec3(1, 0, 0);
     * app.drawLines([start, end], [pc.Color.RED, pc.Color.WHITE]);
     * @example
     * // Render 2 discrete line segments
-    * var points = [
+    * const points = [
     *     // Line 1
     *     new pc.Vec3(0, 0, 0),
     *     new pc.Vec3(1, 0, 0),
@@ -504,7 +507,7 @@ open class AppBase protected () extends EventHandler {
     *     new pc.Vec3(1, 1, 0),
     *     new pc.Vec3(1, 1, 1)
     * ];
-    * var colors = [
+    * const colors = [
     *     // Line 1
     *     pc.Color.RED,
     *     pc.Color.YELLOW,
@@ -522,7 +525,7 @@ open class AppBase protected () extends EventHandler {
   /**
     * Draw mesh at this frame.
     *
-    * @param {Mesh} mesh - The mesh to draw.
+    * @param {import('../scene/mesh.js').Mesh} mesh - The mesh to draw.
     * @param {Material} material - The material to use to render the mesh.
     * @param {Mat4} matrix - The matrix to use to render the mesh.
     * @param {Layer} [layer] - The layer to render the mesh into. Defaults to {@link LAYERID_IMMEDIATE}.
@@ -534,7 +537,8 @@ open class AppBase protected () extends EventHandler {
   /**
     * Draw meshInstance at this frame
     *
-    * @param {MeshInstance} meshInstance - The mesh instance to draw.
+    * @param {import('../scene/mesh-instance.js').MeshInstance} meshInstance - The mesh instance
+    * to draw.
     * @param {Layer} [layer] - The layer to render the mesh instance into. Defaults to
     * {@link LAYERID_IMMEDIATE}.
     * @ignore
@@ -565,9 +569,12 @@ open class AppBase protected () extends EventHandler {
     * range [0, 2].
     * @param {number} height - The height of the rectangle of the rendered texture. Should be in
     * the range [0, 2].
-    * @param {Texture} texture - The texture to render.
+    * @param {import('../platform/graphics/texture.js').Texture} texture - The texture to render.
     * @param {Material} material - The material used when rendering the texture.
     * @param {Layer} [layer] - The layer to render the texture into. Defaults to {@link LAYERID_IMMEDIATE}.
+    * @param {boolean} [filterable] - Indicate if the texture can be sampled using filtering.
+    * Passing false uses unfiltered sampling, allowing a depth texture to be sampled on WebGPU.
+    * Defaults to true.
     * @ignore
     */
   def drawTexture(x: Double, y: Double, width: Double, height: Double, texture: Texture, material: Material): Unit = js.native
@@ -578,7 +585,27 @@ open class AppBase protected () extends EventHandler {
     height: Double,
     texture: Texture,
     material: Material,
+    layer: Unit,
+    filterable: Boolean
+  ): Unit = js.native
+  def drawTexture(
+    x: Double,
+    y: Double,
+    width: Double,
+    height: Double,
+    texture: Texture,
+    material: Material,
     layer: Layer
+  ): Unit = js.native
+  def drawTexture(
+    x: Double,
+    y: Double,
+    width: Double,
+    height: Double,
+    texture: Texture,
+    material: Material,
+    layer: Layer,
+    filterable: Boolean
   ): Unit = js.native
   
   /**
@@ -592,8 +619,8 @@ open class AppBase protected () extends EventHandler {
     * @param {Layer} [layer] - The layer to render the sphere into. Defaults to {@link LAYERID_IMMEDIATE}.
     * @example
     * // Render a red wire aligned box
-    * var min = new pc.Vec3(-1, -1, -1);
-    * var max = new pc.Vec3(1, 1, 1);
+    * const min = new pc.Vec3(-1, -1, -1);
+    * const max = new pc.Vec3(1, 1, 1);
     * app.drawWireAlignedBox(min, max, pc.Color.RED);
     * @ignore
     */
@@ -619,7 +646,7 @@ open class AppBase protected () extends EventHandler {
     * @param {Layer} [layer] - The layer to render the sphere into. Defaults to {@link LAYERID_IMMEDIATE}.
     * @example
     * // Render a red wire sphere with radius of 1
-    * var center = new pc.Vec3(0, 0, 0);
+    * const center = new pc.Vec3(0, 0, 0);
     * app.drawWireSphere(center, 1.0, pc.Color.RED);
     * @ignore
     */
@@ -643,7 +670,7 @@ open class AppBase protected () extends EventHandler {
   /**
     * Used to handle input for {@link ElementComponent}s.
     *
-    * @type {ElementInput}
+    * @type {import('./input/element-input.js').ElementInput}
     */
   var elementInput: ElementInput = js.native
   
@@ -684,10 +711,12 @@ open class AppBase protected () extends EventHandler {
     */
   var frameGraph: FrameGraph = js.native
   
+  def frameStart(): Unit = js.native
+  
   /**
     * Used to access GamePad input.
     *
-    * @type {GamePads}
+    * @type {import('../platform/input/game-pads.js').GamePads}
     */
   var gamepads: GamePads = js.native
   
@@ -703,7 +732,7 @@ open class AppBase protected () extends EventHandler {
   /**
     * The graphics device used by the application.
     *
-    * @type {GraphicsDevice}
+    * @type {import('../platform/graphics/graphics-device.js').GraphicsDevice}
     */
   var graphicsDevice: GraphicsDevice = js.native
   
@@ -717,7 +746,8 @@ open class AppBase protected () extends EventHandler {
   /**
     * Initialize the app.
     *
-    * @param {AppOptions} appOptions - Options specifying the init parameters for the app.
+    * @param {import('./app-options.js').AppOptions} appOptions - Options specifying the init
+    * parameters for the app.
     */
   def init(appOptions: AppOptions): Unit = js.native
   
@@ -739,14 +769,14 @@ open class AppBase protected () extends EventHandler {
   /**
     * The keyboard device.
     *
-    * @type {Keyboard}
+    * @type {import('../platform/input/keyboard.js').Keyboard}
     */
   var keyboard: Keyboard = js.native
   
   /**
     * The run-time lightmapper.
     *
-    * @type {Lightmapper}
+    * @type {import('./lightmapper/lightmapper.js').Lightmapper}
     */
   var lightmapper: Lightmapper = js.native
   
@@ -772,7 +802,7 @@ open class AppBase protected () extends EventHandler {
   /**
     * The mouse device.
     *
-    * @type {Mouse}
+    * @type {import('../platform/input/mouse.js').Mouse}
     */
   var mouse: Mouse = js.native
   
@@ -803,6 +833,8 @@ open class AppBase protected () extends EventHandler {
     * Render the application's scene. More specifically, the scene's {@link LayerComposition} is
     * rendered. This function is called internally in the application's main loop and does not
     * need to be called explicitly.
+    *
+    * @ignore
     */
   def render(): Unit = js.native
   
@@ -865,7 +897,7 @@ open class AppBase protected () extends EventHandler {
     * @type {Entity}
     * @example
     * // Return the first entity called 'Camera' in a depth-first search of the scene hierarchy
-    * var camera = this.app.root.findByName('Camera');
+    * const camera = this.app.root.findByName('Camera');
     */
   var root: Entity = js.native
   
@@ -887,7 +919,7 @@ open class AppBase protected () extends EventHandler {
     * @type {SceneRegistry}
     * @example
     * // Search the scene registry for a item with the name 'racetrack1'
-    * var sceneItem = this.app.scenes.find('racetrack1');
+    * const sceneItem = this.app.scenes.find('racetrack1');
     *
     * // Load the scene using the item's url
     * this.app.scenes.loadScene(sceneItem.url);
@@ -956,7 +988,7 @@ open class AppBase protected () extends EventHandler {
   def setSkybox(asset: Asset_): Unit = js.native
   
   /**
-    * @type {SoundManager}
+    * @type {import('../platform/sound/manager.js').SoundManager}
     * @ignore
     */
   def soundManager: SoundManager = js.native
@@ -1036,7 +1068,7 @@ open class AppBase protected () extends EventHandler {
   /**
     * Used to get touch events input.
     *
-    * @type {TouchDevice}
+    * @type {import('../platform/input/touch-device.js').TouchDevice}
     */
   var touch: TouchDevice = js.native
   
@@ -1069,7 +1101,7 @@ open class AppBase protected () extends EventHandler {
   /**
     * The XR Manager that provides ability to start VR/AR sessions.
     *
-    * @type {XrManager}
+    * @type {import('./xr/xr-manager.js').XrManager}
     * @example
     * // check if VR is available
     * if (app.xr.isAvailable(pc.XRTYPE_VR)) {
@@ -1108,7 +1140,7 @@ object AppBase {
     * this id. Otherwise current application will be returned.
     * @returns {AppBase|undefined} The running application, if any.
     * @example
-    * var app = pc.AppBase.getApplication();
+    * const app = pc.AppBase.getApplication();
     */
   /* static member */
   inline def getApplication(): js.UndefOr[AppBase] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplication")().asInstanceOf[js.UndefOr[AppBase]]

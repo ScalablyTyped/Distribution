@@ -22,6 +22,11 @@ trait PropertyDefinitionRequest extends StObject {
   var defaultValue: js.UndefOr[DataValue] = js.undefined
   
   /**
+    * A friendly name for the property.
+    */
+  var displayName: js.UndefOr[PropertyDisplayName] = js.undefined
+  
+  /**
     * A Boolean value that specifies whether the property ID comes from an external data store.
     */
   var isExternalId: js.UndefOr[Boolean] = js.undefined
@@ -62,6 +67,10 @@ object PropertyDefinitionRequest {
     inline def setDefaultValue(value: DataValue): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    
+    inline def setDisplayName(value: PropertyDisplayName): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     inline def setIsExternalId(value: Boolean): Self = StObject.set(x, "isExternalId", value.asInstanceOf[js.Any])
     

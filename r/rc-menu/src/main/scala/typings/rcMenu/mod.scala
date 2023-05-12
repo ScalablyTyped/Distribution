@@ -10,6 +10,7 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.ReactElement
 import typings.react.mod.RefAttributes
 import typings.react.mod.global.JSX.Element
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,11 +27,15 @@ object mod {
   
   inline def Divider(param0: DividerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Divider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def Item(props: MenuItemProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Item")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  @JSImport("rc-menu", "Item")
+  @js.native
+  val Item: ForwardRefExoticComponent[MenuItemProps & RefAttributes[HTMLElement]] = js.native
   
   inline def ItemGroup(param0: MenuItemGroupProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ItemGroup")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  inline def MenuItem(props: MenuItemProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuItem")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  @JSImport("rc-menu", "MenuItem")
+  @js.native
+  val MenuItem: ForwardRefExoticComponent[MenuItemProps & RefAttributes[HTMLElement]] = js.native
   
   inline def MenuItemGroup(param0: MenuItemGroupProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuItemGroup")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
@@ -46,7 +51,7 @@ object mod {
     
     var Divider: js.Function1[/* param0 */ DividerProps, Element] = js.native
     
-    var Item: js.Function1[/* props */ MenuItemProps, ReactElement] = js.native
+    var Item: ForwardRefExoticComponent[MenuItemProps & RefAttributes[HTMLElement]] = js.native
     
     var ItemGroup: js.Function1[/* param0 */ MenuItemGroupProps, ReactElement] = js.native
     

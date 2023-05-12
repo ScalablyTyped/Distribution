@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.jsonwebtoken.anon.DecodeOptionscompletetrue
 import typings.jsonwebtoken.anon.DecodeOptionsjsontrue
 import typings.jsonwebtoken.anon.Key
+import typings.jsonwebtoken.anon.SignOptionsalgorithmnone
 import typings.jsonwebtoken.anon.VerifyOptionscompletefals
 import typings.jsonwebtoken.anon.VerifyOptionscompletetrue
 import typings.jsonwebtoken.jsonwebtokenStrings.alg
@@ -17,6 +18,7 @@ import typings.jsonwebtoken.jsonwebtokenStrings.x5t
 import typings.jsonwebtoken.jsonwebtokenStrings.x5tNumbersignS256
 import typings.jsonwebtoken.jsonwebtokenStrings.x5u
 import typings.node.bufferMod.global.Buffer
+import typings.node.cryptoMod.KeyObject
 import typings.std.Error
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
@@ -72,14 +74,38 @@ object mod {
   inline def decode(token: String, options: DecodeOptionsjsontrue): Null | JwtPayload = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(token.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Null | JwtPayload]
   inline def decode(token: String, options: DecodeOptions): Null | JwtPayload | String = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(token.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Null | JwtPayload | String]
   
+  inline def sign(payload: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def sign(payload: String, secretOrPrivateKey: Null, options: SignOptionsalgorithmnone): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def sign(
+    payload: String,
+    secretOrPrivateKey: Null,
+    options: SignOptionsalgorithmnone,
+    callback: SignCallback
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def sign(payload: String, secretOrPrivateKey: Secret): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def sign(payload: String, secretOrPrivateKey: Secret, callback: SignCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def sign(payload: String, secretOrPrivateKey: Secret, options: SignOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def sign(payload: String, secretOrPrivateKey: Secret, options: SignOptions, callback: SignCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sign(payload: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def sign(payload: js.Object, secretOrPrivateKey: Null, options: SignOptionsalgorithmnone): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def sign(
+    payload: js.Object,
+    secretOrPrivateKey: Null,
+    options: SignOptionsalgorithmnone,
+    callback: SignCallback
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def sign(payload: js.Object, secretOrPrivateKey: Secret): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def sign(payload: js.Object, secretOrPrivateKey: Secret, callback: SignCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def sign(payload: js.Object, secretOrPrivateKey: Secret, options: SignOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def sign(payload: js.Object, secretOrPrivateKey: Secret, options: SignOptions, callback: SignCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sign(payload: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def sign(payload: Buffer, secretOrPrivateKey: Null, options: SignOptionsalgorithmnone): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def sign(
+    payload: Buffer,
+    secretOrPrivateKey: Null,
+    options: SignOptionsalgorithmnone,
+    callback: SignCallback
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def sign(payload: Buffer, secretOrPrivateKey: Secret): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def sign(payload: Buffer, secretOrPrivateKey: Secret, callback: SignCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def sign(payload: Buffer, secretOrPrivateKey: Secret, options: SignOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -405,7 +431,7 @@ object mod {
     }
   }
   
-  type Secret = String | Buffer | Key
+  type Secret = String | Buffer | KeyObject | Key
   
   type SignCallback = js.Function2[/* error */ js.Error | Null, /* encoded */ js.UndefOr[String], Unit]
   
@@ -425,6 +451,10 @@ object mod {
       * - none:     No digital signature or MAC value included
       */
     var algorithm: js.UndefOr[Algorithm] = js.undefined
+    
+    var allowInsecureKeySizes: js.UndefOr[Boolean] = js.undefined
+    
+    var allowInvalidAsymmetricKeyTypes: js.UndefOr[Boolean] = js.undefined
     
     var audience: js.UndefOr[String | js.Array[String]] = js.undefined
     
@@ -463,6 +493,14 @@ object mod {
       inline def setAlgorithm(value: Algorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
       inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+      
+      inline def setAllowInsecureKeySizes(value: Boolean): Self = StObject.set(x, "allowInsecureKeySizes", value.asInstanceOf[js.Any])
+      
+      inline def setAllowInsecureKeySizesUndefined: Self = StObject.set(x, "allowInsecureKeySizes", js.undefined)
+      
+      inline def setAllowInvalidAsymmetricKeyTypes(value: Boolean): Self = StObject.set(x, "allowInvalidAsymmetricKeyTypes", value.asInstanceOf[js.Any])
+      
+      inline def setAllowInvalidAsymmetricKeyTypesUndefined: Self = StObject.set(x, "allowInvalidAsymmetricKeyTypes", js.undefined)
       
       inline def setAudience(value: String | js.Array[String]): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
@@ -527,6 +565,8 @@ object mod {
     
     var algorithms: js.UndefOr[js.Array[Algorithm]] = js.undefined
     
+    var allowInvalidAsymmetricKeyTypes: js.UndefOr[Boolean] = js.undefined
+    
     var audience: js.UndefOr[String | js.RegExp | (js.Array[String | js.RegExp])] = js.undefined
     
     var clockTimestamp: js.UndefOr[Double] = js.undefined
@@ -569,6 +609,10 @@ object mod {
       inline def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
       
       inline def setAlgorithmsVarargs(value: Algorithm*): Self = StObject.set(x, "algorithms", js.Array(value*))
+      
+      inline def setAllowInvalidAsymmetricKeyTypes(value: Boolean): Self = StObject.set(x, "allowInvalidAsymmetricKeyTypes", value.asInstanceOf[js.Any])
+      
+      inline def setAllowInvalidAsymmetricKeyTypesUndefined: Self = StObject.set(x, "allowInvalidAsymmetricKeyTypes", js.undefined)
       
       inline def setAudience(value: String | js.RegExp | (js.Array[String | js.RegExp])): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       

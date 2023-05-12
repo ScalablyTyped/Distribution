@@ -4,8 +4,8 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.inferno.anon.ReadonlychildrenInfernoNo
 import typings.inferno.distCoreTypesMod.ForwardRef
 import typings.inferno.distCoreTypesMod.Inferno.ComponentClass
-import typings.inferno.distCoreTypesMod.Inferno.InfernoNode
 import typings.inferno.distCoreTypesMod.Inferno.StatelessComponent
+import typings.inferno.distCoreTypesMod.InfernoNode
 import typings.inferno.distCoreTypesMod.LinkedEvent
 import typings.inferno.distCoreTypesMod.Props
 import typings.inferno.distCoreTypesMod.Ref
@@ -307,6 +307,39 @@ object anon {
     
     def apply(input: scala.Any, parentDOM: Element): Unit = js.native
     def apply(input: scala.Any, parentDOM: Element, callback: js.Function): Unit = js.native
+  }
+  
+  @js.native
+  trait FnCallInputParentDOMCallbackContext extends StObject {
+    
+    def apply(input: InfernoNode, parentDOM: Null, callback: js.Function, context: scala.Any): Unit = js.native
+    def apply(input: InfernoNode, parentDOM: Null, callback: Null, context: scala.Any): Unit = js.native
+    def apply(input: InfernoNode, parentDOM: DocumentFragment, callback: js.Function, context: scala.Any): Unit = js.native
+    def apply(input: InfernoNode, parentDOM: DocumentFragment, callback: Null, context: scala.Any): Unit = js.native
+    def apply(input: InfernoNode, parentDOM: Element, callback: js.Function, context: scala.Any): Unit = js.native
+    def apply(input: InfernoNode, parentDOM: Element, callback: Null, context: scala.Any): Unit = js.native
+    def apply(input: InfernoNode, parentDOM: HTMLElement, callback: js.Function, context: scala.Any): Unit = js.native
+    def apply(input: InfernoNode, parentDOM: HTMLElement, callback: Null, context: scala.Any): Unit = js.native
+    def apply(input: InfernoNode, parentDOM: Node, callback: js.Function, context: scala.Any): Unit = js.native
+    def apply(input: InfernoNode, parentDOM: Node, callback: Null, context: scala.Any): Unit = js.native
+    def apply(input: InfernoNode, parentDOM: SVGAElement, callback: js.Function, context: scala.Any): Unit = js.native
+    def apply(input: InfernoNode, parentDOM: SVGAElement, callback: Null, context: scala.Any): Unit = js.native
+    def apply(input: InfernoNode, parentDOM: ShadowRoot, callback: js.Function, context: scala.Any): Unit = js.native
+    def apply(input: InfernoNode, parentDOM: ShadowRoot, callback: Null, context: scala.Any): Unit = js.native
+    def apply(input: VNode, parentDOM: Null, callback: js.Function, context: scala.Any): Unit = js.native
+    def apply(input: VNode, parentDOM: Null, callback: Null, context: scala.Any): Unit = js.native
+    def apply(input: VNode, parentDOM: DocumentFragment, callback: js.Function, context: scala.Any): Unit = js.native
+    def apply(input: VNode, parentDOM: DocumentFragment, callback: Null, context: scala.Any): Unit = js.native
+    def apply(input: VNode, parentDOM: Element, callback: js.Function, context: scala.Any): Unit = js.native
+    def apply(input: VNode, parentDOM: Element, callback: Null, context: scala.Any): Unit = js.native
+    def apply(input: VNode, parentDOM: HTMLElement, callback: js.Function, context: scala.Any): Unit = js.native
+    def apply(input: VNode, parentDOM: HTMLElement, callback: Null, context: scala.Any): Unit = js.native
+    def apply(input: VNode, parentDOM: Node, callback: js.Function, context: scala.Any): Unit = js.native
+    def apply(input: VNode, parentDOM: Node, callback: Null, context: scala.Any): Unit = js.native
+    def apply(input: VNode, parentDOM: SVGAElement, callback: js.Function, context: scala.Any): Unit = js.native
+    def apply(input: VNode, parentDOM: SVGAElement, callback: Null, context: scala.Any): Unit = js.native
+    def apply(input: VNode, parentDOM: ShadowRoot, callback: js.Function, context: scala.Any): Unit = js.native
+    def apply(input: VNode, parentDOM: ShadowRoot, callback: Null, context: scala.Any): Unit = js.native
   }
   
   @js.native

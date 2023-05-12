@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.babelTypes.mod.BlockStatement_
 import typings.babelTypes.mod.Function
 import typings.babelTypes.mod.Identifier_
-import typings.babelTypes.mod.Node
 import typings.babelTypes.mod.Program_
 import typings.std.Record
 import typings.vueCompilerCore.anon.CodegenOptionsonContextCr
@@ -43,7 +42,7 @@ import typings.vueCompilerCore.mod.InferCompilerError
 import typings.vueCompilerCore.mod.InterpolationNode
 import typings.vueCompilerCore.mod.JSChildNode
 import typings.vueCompilerCore.mod.MemoExpression
-import typings.vueCompilerCore.mod.Node2
+import typings.vueCompilerCore.mod.Node
 import typings.vueCompilerCore.mod.NodeTransform
 import typings.vueCompilerCore.mod.ObjectExpression
 import typings.vueCompilerCore.mod.ParserContext
@@ -71,8 +70,6 @@ import typings.vueCompilerCore.mod.TransformContext
 import typings.vueCompilerCore.mod.TransformOptions
 import typings.vueCompilerCore.mod.TransformPreset
 import typings.vueCompilerCore.mod.VNodeCall
-import typings.vueCompilerDom.vueCompilerDomInts.`51`
-import typings.vueCompilerDom.vueCompilerDomInts.`52`
 import typings.vueCompilerDom.vueCompilerDomInts.`53`
 import typings.vueCompilerDom.vueCompilerDomInts.`54`
 import typings.vueCompilerDom.vueCompilerDomInts.`55`
@@ -83,6 +80,8 @@ import typings.vueCompilerDom.vueCompilerDomInts.`59`
 import typings.vueCompilerDom.vueCompilerDomInts.`60`
 import typings.vueCompilerDom.vueCompilerDomInts.`61`
 import typings.vueCompilerDom.vueCompilerDomInts.`62`
+import typings.vueCompilerDom.vueCompilerDomInts.`63`
+import typings.vueCompilerDom.vueCompilerDomInts.`64`
 import typings.vueCompilerDom.vueCompilerDomStrings.component
 import typings.vueCompilerDom.vueCompilerDomStrings.directive
 import typings.vueCompilerDom.vueCompilerDomStrings.filter
@@ -252,6 +251,10 @@ object mod {
   @js.native
   val TRANSITION_GROUP: js.Symbol = js.native
   
+  @JSImport("@vue/compiler-dom", "TS_NODE_TYPES")
+  @js.native
+  val TS_NODE_TYPES: js.Array[String] = js.native
+  
   @JSImport("@vue/compiler-dom", "UNREF")
   @js.native
   val UNREF: js.Symbol = js.native
@@ -361,8 +364,10 @@ object mod {
   inline def compile(template: String): CodegenResult = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(template.asInstanceOf[js.Any]).asInstanceOf[CodegenResult]
   inline def compile(template: String, options: CompilerOptions): CodegenResult = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(template.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CodegenResult]
   
-  inline def createArrayExpression(elements: js.Array[String | Node2]): ArrayExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createArrayExpression")(elements.asInstanceOf[js.Any]).asInstanceOf[ArrayExpression]
-  inline def createArrayExpression(elements: js.Array[String | Node2], loc: SourceLocation): ArrayExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrayExpression")(elements.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).asInstanceOf[ArrayExpression]
+  inline def convertToBlock(node: VNodeCall, param1: TransformContext): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToBlock")(node.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def createArrayExpression(elements: js.Array[String | Node]): ArrayExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createArrayExpression")(elements.asInstanceOf[js.Any]).asInstanceOf[ArrayExpression]
+  inline def createArrayExpression(elements: js.Array[String | Node], loc: SourceLocation): ArrayExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrayExpression")(elements.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).asInstanceOf[ArrayExpression]
   
   inline def createAssignmentExpression(left: SimpleExpressionNode, right: JSChildNode): AssignmentExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createAssignmentExpression")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[AssignmentExpression]
   
@@ -495,8 +500,8 @@ object mod {
     loc: js.UndefOr[SourceLocation]
   ): VNodeCall = (^.asInstanceOf[js.Dynamic].applyDynamic("createVNodeCall")(context.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any], patchFlag.asInstanceOf[js.Any], dynamicProps.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], isBlock.asInstanceOf[js.Any], disableTracking.asInstanceOf[js.Any], isComponent.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).asInstanceOf[VNodeCall]
   
-  inline def extractIdentifiers(param: Node): js.Array[Identifier_] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractIdentifiers")(param.asInstanceOf[js.Any]).asInstanceOf[js.Array[Identifier_]]
-  inline def extractIdentifiers(param: Node, nodes: js.Array[Identifier_]): js.Array[Identifier_] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractIdentifiers")(param.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any])).asInstanceOf[js.Array[Identifier_]]
+  inline def extractIdentifiers(param: typings.babelTypes.mod.Node): js.Array[Identifier_] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractIdentifiers")(param.asInstanceOf[js.Any]).asInstanceOf[js.Array[Identifier_]]
+  inline def extractIdentifiers(param: typings.babelTypes.mod.Node, nodes: js.Array[Identifier_]): js.Array[Identifier_] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractIdentifiers")(param.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any])).asInstanceOf[js.Array[Identifier_]]
   
   inline def findDir(node: ElementNode, name: String): js.UndefOr[DirectiveNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("findDir")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[DirectiveNode]]
   inline def findDir(node: ElementNode, name: String, allowEmpty: Boolean): js.UndefOr[DirectiveNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("findDir")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], allowEmpty.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[DirectiveNode]]
@@ -565,9 +570,9 @@ object mod {
   
   inline def isCoreComponent(tag: String): js.Symbol | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isCoreComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[js.Symbol | Unit]
   
-  inline def isFunctionType(node: Node): /* is @babel/types.@babel/types.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunctionType")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types.Function */ Boolean]
+  inline def isFunctionType(node: typings.babelTypes.mod.Node): /* is @babel/types.@babel/types.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunctionType")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types.Function */ Boolean]
   
-  inline def isInDestructureAssignment(parent: Node, parentStack: js.Array[Node]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInDestructureAssignment")(parent.asInstanceOf[js.Any], parentStack.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isInDestructureAssignment(parent: typings.babelTypes.mod.Node, parentStack: js.Array[typings.babelTypes.mod.Node]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInDestructureAssignment")(parent.asInstanceOf[js.Any], parentStack.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def isMemberExpression(path: String, context: TransformContext): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMemberExpression")(path.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
@@ -575,8 +580,12 @@ object mod {
   
   inline def isMemberExpressionNode(path: String, context: TransformContext): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMemberExpressionNode")(path.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def isReferencedIdentifier(id: Identifier_, parent: Null, parentStack: js.Array[Node]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReferencedIdentifier")(id.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], parentStack.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def isReferencedIdentifier(id: Identifier_, parent: Node, parentStack: js.Array[Node]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReferencedIdentifier")(id.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], parentStack.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isReferencedIdentifier(id: Identifier_, parent: Null, parentStack: js.Array[typings.babelTypes.mod.Node]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReferencedIdentifier")(id.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], parentStack.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isReferencedIdentifier(
+    id: Identifier_,
+    parent: typings.babelTypes.mod.Node,
+    parentStack: js.Array[typings.babelTypes.mod.Node]
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReferencedIdentifier")(id.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], parentStack.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def isSimpleIdentifier(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSimpleIdentifier")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
@@ -588,9 +597,9 @@ object mod {
   
   inline def isStaticExp(p: JSChildNode): /* is @vue/compiler-core.@vue/compiler-core.SimpleExpressionNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStaticExp")(p.asInstanceOf[js.Any]).asInstanceOf[/* is @vue/compiler-core.@vue/compiler-core.SimpleExpressionNode */ Boolean]
   
-  inline def isStaticProperty(node: Node): /* is @babel/types.@babel/types.ObjectProperty */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStaticProperty")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types.ObjectProperty */ Boolean]
+  inline def isStaticProperty(node: typings.babelTypes.mod.Node): /* is @babel/types.@babel/types.ObjectProperty */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStaticProperty")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types.ObjectProperty */ Boolean]
   
-  inline def isStaticPropertyKey(node: Node, parent: Node): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isStaticPropertyKey")(node.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isStaticPropertyKey(node: typings.babelTypes.mod.Node, parent: typings.babelTypes.mod.Node): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isStaticPropertyKey")(node.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def isTemplateNode(node: RootNode): /* is @vue/compiler-core.@vue/compiler-core.TemplateNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTemplateNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @vue/compiler-core.@vue/compiler-core.TemplateNode */ Boolean]
   inline def isTemplateNode(node: TemplateChildNode): /* is @vue/compiler-core.@vue/compiler-core.TemplateNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTemplateNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @vue/compiler-core.@vue/compiler-core.TemplateNode */ Boolean]
@@ -604,8 +613,6 @@ object mod {
   @JSImport("@vue/compiler-dom", "locStub")
   @js.native
   val locStub: SourceLocation = js.native
-  
-  inline def makeBlock(node: VNodeCall, param1: TransformContext): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("makeBlock")(node.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("@vue/compiler-dom", "noopDirectiveTransform")
   @js.native
@@ -727,22 +734,22 @@ object mod {
   inline def walkFunctionParams(node: Function, onIdent: js.Function1[/* id */ Identifier_, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walkFunctionParams")(node.asInstanceOf[js.Any], onIdent.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def walkIdentifiers(
-    root: Node,
+    root: typings.babelTypes.mod.Node,
     onIdentifier: js.Function5[
       /* node */ Identifier_, 
-      /* parent */ Node, 
-      /* parentStack */ js.Array[Node], 
+      /* parent */ typings.babelTypes.mod.Node, 
+      /* parentStack */ js.Array[typings.babelTypes.mod.Node], 
       /* isReference */ Boolean, 
       /* isLocal */ Boolean, 
       Unit
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walkIdentifiers")(root.asInstanceOf[js.Any], onIdentifier.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def walkIdentifiers(
-    root: Node,
+    root: typings.babelTypes.mod.Node,
     onIdentifier: js.Function5[
       /* node */ Identifier_, 
-      /* parent */ Node, 
-      /* parentStack */ js.Array[Node], 
+      /* parent */ typings.babelTypes.mod.Node, 
+      /* parentStack */ js.Array[typings.babelTypes.mod.Node], 
       /* isReference */ Boolean, 
       /* isLocal */ Boolean, 
       Unit
@@ -750,38 +757,38 @@ object mod {
     includeAll: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walkIdentifiers")(root.asInstanceOf[js.Any], onIdentifier.asInstanceOf[js.Any], includeAll.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def walkIdentifiers(
-    root: Node,
+    root: typings.babelTypes.mod.Node,
     onIdentifier: js.Function5[
       /* node */ Identifier_, 
-      /* parent */ Node, 
-      /* parentStack */ js.Array[Node], 
+      /* parent */ typings.babelTypes.mod.Node, 
+      /* parentStack */ js.Array[typings.babelTypes.mod.Node], 
       /* isReference */ Boolean, 
       /* isLocal */ Boolean, 
       Unit
     ],
     includeAll: Boolean,
-    parentStack: js.Array[Node]
+    parentStack: js.Array[typings.babelTypes.mod.Node]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walkIdentifiers")(root.asInstanceOf[js.Any], onIdentifier.asInstanceOf[js.Any], includeAll.asInstanceOf[js.Any], parentStack.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def walkIdentifiers(
-    root: Node,
+    root: typings.babelTypes.mod.Node,
     onIdentifier: js.Function5[
       /* node */ Identifier_, 
-      /* parent */ Node, 
-      /* parentStack */ js.Array[Node], 
+      /* parent */ typings.babelTypes.mod.Node, 
+      /* parentStack */ js.Array[typings.babelTypes.mod.Node], 
       /* isReference */ Boolean, 
       /* isLocal */ Boolean, 
       Unit
     ],
     includeAll: Boolean,
-    parentStack: js.Array[Node],
+    parentStack: js.Array[typings.babelTypes.mod.Node],
     knownIds: Record[String, Double]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walkIdentifiers")(root.asInstanceOf[js.Any], onIdentifier.asInstanceOf[js.Any], includeAll.asInstanceOf[js.Any], parentStack.asInstanceOf[js.Any], knownIds.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def walkIdentifiers(
-    root: Node,
+    root: typings.babelTypes.mod.Node,
     onIdentifier: js.Function5[
       /* node */ Identifier_, 
-      /* parent */ Node, 
-      /* parentStack */ js.Array[Node], 
+      /* parent */ typings.babelTypes.mod.Node, 
+      /* parentStack */ js.Array[typings.babelTypes.mod.Node], 
       /* isReference */ Boolean, 
       /* isLocal */ Boolean, 
       Unit
@@ -791,38 +798,38 @@ object mod {
     knownIds: Record[String, Double]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walkIdentifiers")(root.asInstanceOf[js.Any], onIdentifier.asInstanceOf[js.Any], includeAll.asInstanceOf[js.Any], parentStack.asInstanceOf[js.Any], knownIds.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def walkIdentifiers(
-    root: Node,
+    root: typings.babelTypes.mod.Node,
     onIdentifier: js.Function5[
       /* node */ Identifier_, 
-      /* parent */ Node, 
-      /* parentStack */ js.Array[Node], 
+      /* parent */ typings.babelTypes.mod.Node, 
+      /* parentStack */ js.Array[typings.babelTypes.mod.Node], 
       /* isReference */ Boolean, 
       /* isLocal */ Boolean, 
       Unit
     ],
     includeAll: Unit,
-    parentStack: js.Array[Node]
+    parentStack: js.Array[typings.babelTypes.mod.Node]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walkIdentifiers")(root.asInstanceOf[js.Any], onIdentifier.asInstanceOf[js.Any], includeAll.asInstanceOf[js.Any], parentStack.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def walkIdentifiers(
-    root: Node,
+    root: typings.babelTypes.mod.Node,
     onIdentifier: js.Function5[
       /* node */ Identifier_, 
-      /* parent */ Node, 
-      /* parentStack */ js.Array[Node], 
+      /* parent */ typings.babelTypes.mod.Node, 
+      /* parentStack */ js.Array[typings.babelTypes.mod.Node], 
       /* isReference */ Boolean, 
       /* isLocal */ Boolean, 
       Unit
     ],
     includeAll: Unit,
-    parentStack: js.Array[Node],
+    parentStack: js.Array[typings.babelTypes.mod.Node],
     knownIds: Record[String, Double]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walkIdentifiers")(root.asInstanceOf[js.Any], onIdentifier.asInstanceOf[js.Any], includeAll.asInstanceOf[js.Any], parentStack.asInstanceOf[js.Any], knownIds.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def walkIdentifiers(
-    root: Node,
+    root: typings.babelTypes.mod.Node,
     onIdentifier: js.Function5[
       /* node */ Identifier_, 
-      /* parent */ Node, 
-      /* parentStack */ js.Array[Node], 
+      /* parent */ typings.babelTypes.mod.Node, 
+      /* parentStack */ js.Array[typings.babelTypes.mod.Node], 
       /* isReference */ Boolean, 
       /* isLocal */ Boolean, 
       Unit
@@ -859,8 +866,6 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.vueCompilerDom.vueCompilerDomInts.`51`
-    - typings.vueCompilerDom.vueCompilerDomInts.`52`
     - typings.vueCompilerDom.vueCompilerDomInts.`53`
     - typings.vueCompilerDom.vueCompilerDomInts.`54`
     - typings.vueCompilerDom.vueCompilerDomInts.`55`
@@ -871,32 +876,34 @@ object mod {
     - typings.vueCompilerDom.vueCompilerDomInts.`60`
     - typings.vueCompilerDom.vueCompilerDomInts.`61`
     - typings.vueCompilerDom.vueCompilerDomInts.`62`
+    - typings.vueCompilerDom.vueCompilerDomInts.`63`
+    - typings.vueCompilerDom.vueCompilerDomInts.`64`
   */
   trait DOMErrorCodes extends StObject
   object DOMErrorCodes {
     
-    inline def X_IGNORED_SIDE_EFFECT_TAG: `61` = 61.asInstanceOf[`61`]
+    inline def X_IGNORED_SIDE_EFFECT_TAG: `63` = 63.asInstanceOf[`63`]
     
-    inline def X_TRANSITION_INVALID_CHILDREN: `60` = 60.asInstanceOf[`60`]
+    inline def X_TRANSITION_INVALID_CHILDREN: `62` = 62.asInstanceOf[`62`]
     
-    inline def X_V_HTML_NO_EXPRESSION: `51` = 51.asInstanceOf[`51`]
+    inline def X_V_HTML_NO_EXPRESSION: `53` = 53.asInstanceOf[`53`]
     
-    inline def X_V_HTML_WITH_CHILDREN: `52` = 52.asInstanceOf[`52`]
+    inline def X_V_HTML_WITH_CHILDREN: `54` = 54.asInstanceOf[`54`]
     
-    inline def X_V_MODEL_ARG_ON_ELEMENT: `56` = 56.asInstanceOf[`56`]
+    inline def X_V_MODEL_ARG_ON_ELEMENT: `58` = 58.asInstanceOf[`58`]
     
-    inline def X_V_MODEL_ON_FILE_INPUT_ELEMENT: `57` = 57.asInstanceOf[`57`]
+    inline def X_V_MODEL_ON_FILE_INPUT_ELEMENT: `59` = 59.asInstanceOf[`59`]
     
-    inline def X_V_MODEL_ON_INVALID_ELEMENT: `55` = 55.asInstanceOf[`55`]
+    inline def X_V_MODEL_ON_INVALID_ELEMENT: `57` = 57.asInstanceOf[`57`]
     
-    inline def X_V_MODEL_UNNECESSARY_VALUE: `58` = 58.asInstanceOf[`58`]
+    inline def X_V_MODEL_UNNECESSARY_VALUE: `60` = 60.asInstanceOf[`60`]
     
-    inline def X_V_SHOW_NO_EXPRESSION: `59` = 59.asInstanceOf[`59`]
+    inline def X_V_SHOW_NO_EXPRESSION: `61` = 61.asInstanceOf[`61`]
     
-    inline def X_V_TEXT_NO_EXPRESSION: `53` = 53.asInstanceOf[`53`]
+    inline def X_V_TEXT_NO_EXPRESSION: `55` = 55.asInstanceOf[`55`]
     
-    inline def X_V_TEXT_WITH_CHILDREN: `54` = 54.asInstanceOf[`54`]
+    inline def X_V_TEXT_WITH_CHILDREN: `56` = 56.asInstanceOf[`56`]
     
-    inline def __EXTEND_POINT__ : `62` = 62.asInstanceOf[`62`]
+    inline def __EXTEND_POINT__ : `64` = 64.asInstanceOf[`64`]
   }
 }

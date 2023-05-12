@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CapSegments extends StObject {
   
-  var capSegments: Double
+  val capSegments: Double
   
-  var length: Double
+  val length: Double
   
-  var radialSegments: Double
+  val radialSegments: Double
   
-  var radius: Double
+  val radius: Double
 }
 object CapSegments {
   

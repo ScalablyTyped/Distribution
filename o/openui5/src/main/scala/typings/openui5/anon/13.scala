@@ -1,6 +1,6 @@
 package typings.openui5.anon
 
-import typings.openui5.sapUiCoreItemMod.default
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `13` extends StObject {
   
   /**
-    * The selected item.
+    * the toggled item.
     */
-  var selectedItem: js.UndefOr[default] = js.undefined
+  var item: js.UndefOr[HTMLElement] = js.undefined
 }
 object `13` {
   
@@ -22,8 +22,8 @@ object `13` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `13`] (val x: Self) extends AnyVal {
     
-    inline def setSelectedItem(value: default): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
+    inline def setItem(value: HTMLElement): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    inline def setSelectedItemUndefined: Self = StObject.set(x, "selectedItem", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
   }
 }

@@ -12,7 +12,7 @@ trait StartMatchmakingInput extends StObject {
   var ConfigurationName: MatchmakingConfigurationName
   
   /**
-    * Information on each player to be matched. This information must include a player ID, and may contain player attributes and latency data to be used in the matchmaking process. After a successful match, Player objects contain the name of the team the player is assigned to.
+    * Information on each player to be matched. This information must include a player ID, and may contain player attributes and latency data to be used in the matchmaking process. After a successful match, Player objects contain the name of the team the player is assigned to. You can include up to 10 Players in a StartMatchmaking request.
     */
   var Players: PlayerList
   

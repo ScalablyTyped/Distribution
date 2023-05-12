@@ -1,7 +1,7 @@
 
 # Scala.js typings for mnemonist
 
-Typings are for version 0.39.1
+Typings are for version 0.39.5
 
 ## Library description:
 Curated collection of data structures for the JavaScript/TypeScript.

@@ -97,7 +97,7 @@ object sapUiCoreLocaleMod {
       * The extension always consists of a singleton character (not 'x'), a dash '-' and one or more extension
       * token, each separated again with a dash.
       *
-      * Use {@link #getExtensions} to get the individual extension tokens as an array.
+      * Use {@link #getExtensionSubtags} to get the individual extension tokens as an array.
       *
       * @returns the extension or `null`
       */

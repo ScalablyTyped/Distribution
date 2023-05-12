@@ -7,9 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetContentModerationResponse extends StObject {
   
   /**
+    * Information about the paramters used when getting a response. Includes information on aggregation and sorting methods.
+    */
+  var GetRequestMetadata: js.UndefOr[GetContentModerationRequestMetadata] = js.undefined
+  
+  /**
+    * Job identifier for the content moderation operation for which you want to obtain results. The job identifer is returned by an initial call to StartContentModeration.
+    */
+  var JobId: js.UndefOr[typings.awsSdk.clientsRekognitionMod.JobId] = js.undefined
+  
+  /**
     * The current status of the content moderation analysis job.
     */
   var JobStatus: js.UndefOr[VideoJobStatus] = js.undefined
+  
+  /**
+    * A job identifier specified in the call to StartContentModeration and returned in the job completion notification sent to your Amazon Simple Notification Service topic.
+    */
+  var JobTag: js.UndefOr[typings.awsSdk.clientsRekognitionMod.JobTag] = js.undefined
   
   /**
     * The detected inappropriate, unwanted, or offensive content moderation labels and the time(s) they were detected.
@@ -31,6 +46,8 @@ trait GetContentModerationResponse extends StObject {
     */
   var StatusMessage: js.UndefOr[typings.awsSdk.clientsRekognitionMod.StatusMessage] = js.undefined
   
+  var Video: js.UndefOr[typings.awsSdk.clientsRekognitionMod.Video] = js.undefined
+  
   /**
     * Information about a video that Amazon Rekognition analyzed. Videometadata is returned in every page of paginated responses from GetContentModeration. 
     */
@@ -46,9 +63,21 @@ object GetContentModerationResponse {
   @scala.inline
   implicit open class MutableBuilder[Self <: GetContentModerationResponse] (val x: Self) extends AnyVal {
     
+    inline def setGetRequestMetadata(value: GetContentModerationRequestMetadata): Self = StObject.set(x, "GetRequestMetadata", value.asInstanceOf[js.Any])
+    
+    inline def setGetRequestMetadataUndefined: Self = StObject.set(x, "GetRequestMetadata", js.undefined)
+    
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    
+    inline def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
+    
     inline def setJobStatus(value: VideoJobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
     
     inline def setJobStatusUndefined: Self = StObject.set(x, "JobStatus", js.undefined)
+    
+    inline def setJobTag(value: JobTag): Self = StObject.set(x, "JobTag", value.asInstanceOf[js.Any])
+    
+    inline def setJobTagUndefined: Self = StObject.set(x, "JobTag", js.undefined)
     
     inline def setModerationLabels(value: ContentModerationDetections): Self = StObject.set(x, "ModerationLabels", value.asInstanceOf[js.Any])
     
@@ -68,8 +97,12 @@ object GetContentModerationResponse {
     
     inline def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
+    inline def setVideo(value: Video): Self = StObject.set(x, "Video", value.asInstanceOf[js.Any])
+    
     inline def setVideoMetadata(value: VideoMetadata): Self = StObject.set(x, "VideoMetadata", value.asInstanceOf[js.Any])
     
     inline def setVideoMetadataUndefined: Self = StObject.set(x, "VideoMetadata", js.undefined)
+    
+    inline def setVideoUndefined: Self = StObject.set(x, "Video", js.undefined)
   }
 }

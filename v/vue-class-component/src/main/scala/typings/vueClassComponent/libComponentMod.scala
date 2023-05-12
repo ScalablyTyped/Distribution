@@ -33,6 +33,7 @@ object libComponentMod {
       Any, 
       Any, 
       Any, 
+      Any, 
       Any
     ]
   ): VueClass[

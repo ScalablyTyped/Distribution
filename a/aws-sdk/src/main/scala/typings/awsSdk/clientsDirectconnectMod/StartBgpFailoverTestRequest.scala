@@ -12,7 +12,7 @@ trait StartBgpFailoverTestRequest extends StObject {
   var bgpPeers: js.UndefOr[BGPPeerIdList] = js.undefined
   
   /**
-    * The time in minutes that the virtual interface failover test will last. Maximum value: 180 minutes (3 hours). Default: 180 minutes (3 hours).
+    * The time in minutes that the virtual interface failover test will last. Maximum value: 4,320 minutes (72 hours). Default: 180 minutes (3 hours).
     */
   var testDurationInMinutes: js.UndefOr[TestDuration] = js.undefined
   

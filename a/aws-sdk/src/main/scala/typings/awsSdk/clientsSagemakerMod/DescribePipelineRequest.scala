@@ -9,11 +9,11 @@ trait DescribePipelineRequest extends StObject {
   /**
     * The name of the pipeline to describe.
     */
-  var PipelineName: typings.awsSdk.clientsSagemakerMod.PipelineName
+  var PipelineName: PipelineNameOrArn
 }
 object DescribePipelineRequest {
   
-  inline def apply(PipelineName: PipelineName): DescribePipelineRequest = {
+  inline def apply(PipelineName: PipelineNameOrArn): DescribePipelineRequest = {
     val __obj = js.Dynamic.literal(PipelineName = PipelineName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribePipelineRequest]
   }
@@ -21,6 +21,6 @@ object DescribePipelineRequest {
   @scala.inline
   implicit open class MutableBuilder[Self <: DescribePipelineRequest] (val x: Self) extends AnyVal {
     
-    inline def setPipelineName(value: PipelineName): Self = StObject.set(x, "PipelineName", value.asInstanceOf[js.Any])
+    inline def setPipelineName(value: PipelineNameOrArn): Self = StObject.set(x, "PipelineName", value.asInstanceOf[js.Any])
   }
 }

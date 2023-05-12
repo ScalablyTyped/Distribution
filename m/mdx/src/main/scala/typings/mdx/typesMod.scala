@@ -16,14 +16,14 @@ object typesMod {
   ]
   
   // tslint:disable-next-line: strict-export-declare-modifiers
-  type Component[Props] = FunctionComponent[Props] | ClassComponent[Props]
+  type Component[Props] = FunctionComponent[Props] | ClassComponent[Props] | (/* keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.IntrinsicElements * / any */ String)
   
   type FunctionComponent[Props] = js.Function1[
     /* props */ Props, 
     (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ Any) | Null
   ]
   
-  type MDXComponents = NestedMDXComponents & (/* import warning: importer.ImportType#apply Failed type conversion: {[ Key in keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.IntrinsicElements * / any ]:? mdx.mdx/types.Component</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.IntrinsicElements * / any[Key]> | keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.IntrinsicElements * / any} */ js.Any) & Wrapper
+  type MDXComponents = NestedMDXComponents & (/* import warning: importer.ImportType#apply Failed type conversion: {[ Key in keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.IntrinsicElements * / any ]:? mdx.mdx/types.Component</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.IntrinsicElements * / any[Key]>} */ js.Any) & Wrapper
   
   type MDXContent = js.Function1[
     /* props */ MDXProps, 
@@ -97,7 +97,7 @@ object typesMod {
   /** 
   NOTE: Rewritten from type alias:
   {{{
-  type NestedMDXComponents = {[key: string] : mdx.mdx/types.NestedMDXComponents | mdx.mdx/types.Component<any> | keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.IntrinsicElements * / any}
+  type NestedMDXComponents = {[key: string] : mdx.mdx/types.NestedMDXComponents | mdx.mdx/types.Component<any>}
   }}}
   to avoid circular code involving: 
   - mdx.mdx/types.MDXComponents
@@ -105,9 +105,7 @@ object typesMod {
   */
   trait NestedMDXComponents
     extends StObject
-       with /* key */ StringDictionary[
-          NestedMDXComponents | Component[Any] | (/* keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.IntrinsicElements * / any */ String)
-        ]
+       with /* key */ StringDictionary[NestedMDXComponents | Component[Any]]
   object NestedMDXComponents {
     
     inline def apply(): NestedMDXComponents = {

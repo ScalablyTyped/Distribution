@@ -12,12 +12,12 @@ trait EntityRecognizerDocuments extends StObject {
   var InputFormat: js.UndefOr[typings.awsSdk.clientsComprehendMod.InputFormat] = js.undefined
   
   /**
-    *  Specifies the Amazon S3 location where the training documents for an entity recognizer are located. The URI must be in the same region as the API endpoint that you are calling.
+    *  Specifies the Amazon S3 location where the training documents for an entity recognizer are located. The URI must be in the same Region as the API endpoint that you are calling.
     */
   var S3Uri: typings.awsSdk.clientsComprehendMod.S3Uri
   
   /**
-    *  Specifies the Amazon S3 location where the test documents for an entity recognizer are located. The URI must be in the same AWS Region as the API endpoint that you are calling.
+    *  Specifies the Amazon S3 location where the test documents for an entity recognizer are located. The URI must be in the same Amazon Web Services Region as the API endpoint that you are calling.
     */
   var TestS3Uri: js.UndefOr[S3Uri] = js.undefined
 }

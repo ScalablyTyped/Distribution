@@ -484,6 +484,7 @@ object mod {
     
     def cleanup(connStr: String): Boolean = js.native
     
+    def close(): js.Promise[Boolean] = js.native
     def close(cb: js.Function2[/* foo */ Any, /* bar */ Any, Any]): Unit = js.native
     
     var index: Double = js.native
@@ -492,6 +493,7 @@ object mod {
     
     var odbc: ODBC = js.native
     
+    def open(connStr: String): js.Promise[Database] = js.native
     def open(connStr: String, cb: js.Function2[/* err */ js.Error, /* db */ Database, Unit]): Unit = js.native
     
     def openSync(connStr: String): Database = js.native

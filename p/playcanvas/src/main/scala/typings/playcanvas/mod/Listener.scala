@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('./manager.js').SoundManager} SoundManager */
 /**
   * Represents an audio listener - used internally.
   *
@@ -15,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Listener extends StObject {
   
   /**
-    * @type {SoundManager}
+    * @type {import('./manager.js').SoundManager}
     * @private
     */
   /* private */ var _manager: Any = js.native

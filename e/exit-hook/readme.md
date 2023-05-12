@@ -1,7 +1,7 @@
 
 # Scala.js typings for exit-hook
 
-Typings are for version 3.1.2
+Typings are for version 3.2.0
 
 ## Library description:
 Run some code when the process exits

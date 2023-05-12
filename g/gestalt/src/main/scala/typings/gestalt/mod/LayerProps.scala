@@ -1,13 +1,12 @@
 package typings.gestalt.mod
 
-import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait LayerProps extends StObject {
   
-  var children: ReactNode
+  var children: Node
   
   var zIndex: js.UndefOr[Indexable] = js.undefined
 }
@@ -21,7 +20,7 @@ object LayerProps {
   @scala.inline
   implicit open class MutableBuilder[Self <: LayerProps] (val x: Self) extends AnyVal {
     
-    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Node): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     

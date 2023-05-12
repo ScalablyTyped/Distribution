@@ -1,7 +1,7 @@
 package typings.slate.distInterfacesEditorMod
 
 import typings.slate.distInterfacesLocationMod.Location
-import typings.slate.distInterfacesTypesMod.MaximizeMode
+import typings.slate.distTypesTypesMod.MaximizeMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

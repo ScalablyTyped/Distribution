@@ -35,6 +35,7 @@ import typings.nivoCalendar.distTypesTypesMod.CalendarSvgProps
 import typings.nivoCalendar.distTypesTypesMod.CalendarTooltipProps
 import typings.nivoCalendar.distTypesTypesMod.ColorScale
 import typings.nivoCalendar.distTypesTypesMod.TimeRangeSvgProps
+import typings.nivoCalendar.distTypesTypesMod.Weekday
 import typings.nivoCalendar.nivoCalendarBooleans.`true`
 import typings.nivoCalendar.nivoCalendarInts.`0`
 import typings.nivoCalendar.nivoCalendarInts.`10`
@@ -49,6 +50,7 @@ import typings.nivoCalendar.nivoCalendarStrings.before
 import typings.nivoCalendar.nivoCalendarStrings.center
 import typings.nivoCalendar.nivoCalendarStrings.horizontal
 import typings.nivoCalendar.nivoCalendarStrings.img
+import typings.nivoCalendar.nivoCalendarStrings.sunday
 import typings.react.mod.MemoExoticComponent
 import typings.react.mod.global.JSX.Element
 import typings.std.NonNullable
@@ -61,6 +63,10 @@ object mod {
   @JSImport("@nivo/calendar", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  @JSImport("@nivo/calendar", "ARRAY_OF_WEEKDAYS")
+  @js.native
+  val ARRAY_OF_WEEKDAYS: js.Array[String] = js.native
   
   inline def Calendar(param0: CalendarSvgProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Calendar")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
@@ -288,6 +294,10 @@ object mod {
   
   inline def computeYearLegendPositions(param0: PickRequiredCalendarSvgPrDirection): js.Array[Rotation] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeYearLegendPositions")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[Rotation]]
   
+  inline def getDayIndex(date: js.Date, firstWeekday: Weekday): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDayIndex")(date.asInstanceOf[js.Any], firstWeekday.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def getFirstWeekdayIndex(weekday: Weekday): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstWeekdayIndex")(weekday.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
   object timeRangeDefaultProps {
     
     @JSImport("@nivo/calendar", "timeRangeDefaultProps")
@@ -325,6 +335,10 @@ object mod {
     @JSImport("@nivo/calendar", "timeRangeDefaultProps.emptyColor")
     @js.native
     val emptyColor: Numbersignfff = js.native
+    
+    @JSImport("@nivo/calendar", "timeRangeDefaultProps.firstWeekday")
+    @js.native
+    val firstWeekday: sunday = js.native
     
     @JSImport("@nivo/calendar", "timeRangeDefaultProps.isInteractive")
     @js.native

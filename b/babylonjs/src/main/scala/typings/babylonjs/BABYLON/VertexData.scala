@@ -17,14 +17,14 @@ trait VertexData extends StObject {
   
   def _mergeCoroutine(
     transform: Unit,
-    vertexDatas: js.Array[js.Tuple2[/* vertexData */ VertexData, /* transform */ js.UndefOr[Matrix]]],
+    vertexDatas: js.Array[typings.babylonjs.anon.VertexData],
     use32BitsIndices: Boolean,
     isAsync: Boolean,
     forceCloneIndices: Boolean
   ): Coroutine[VertexData] = js.native
   def _mergeCoroutine(
     transform: Unit,
-    vertexDatas: js.Array[js.Tuple2[/* vertexData */ VertexData, /* transform */ js.UndefOr[Matrix]]],
+    vertexDatas: js.Array[typings.babylonjs.anon.VertexData],
     use32BitsIndices: Unit,
     isAsync: Boolean,
     forceCloneIndices: Boolean
@@ -34,14 +34,14 @@ trait VertexData extends StObject {
     */
   def _mergeCoroutine(
     transform: Matrix,
-    vertexDatas: js.Array[js.Tuple2[/* vertexData */ VertexData, /* transform */ js.UndefOr[Matrix]]],
+    vertexDatas: js.Array[typings.babylonjs.anon.VertexData],
     use32BitsIndices: Boolean,
     isAsync: Boolean,
     forceCloneIndices: Boolean
   ): Coroutine[VertexData] = js.native
   def _mergeCoroutine(
     transform: Matrix,
-    vertexDatas: js.Array[js.Tuple2[/* vertexData */ VertexData, /* transform */ js.UndefOr[Matrix]]],
+    vertexDatas: js.Array[typings.babylonjs.anon.VertexData],
     use32BitsIndices: Unit,
     isAsync: Boolean,
     forceCloneIndices: Boolean

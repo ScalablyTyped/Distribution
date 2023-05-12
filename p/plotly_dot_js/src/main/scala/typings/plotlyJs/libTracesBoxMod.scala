@@ -13,6 +13,7 @@ import typings.plotlyJs.anon.PartialPlotNumberFont
 import typings.plotlyJs.anon.PartialScatterLine
 import typings.plotlyJs.anon.PartialScatterMarkerLine
 import typings.plotlyJs.anon.PartialcolorColorwidthnum
+import typings.plotlyJs.anon.PartialcoloringfillheatmaColoring
 import typings.plotlyJs.anon.Partialrownumbercolumnnum
 import typings.plotlyJs.libTracesScatterMod.ScatterSelectedMarker
 import typings.plotlyJs.mod.Color
@@ -37,6 +38,7 @@ import typings.plotlyJs.plotlyJsStrings.`infer zero`
 import typings.plotlyJs.plotlyJsStrings.`middle center`
 import typings.plotlyJs.plotlyJsStrings.`middle left`
 import typings.plotlyJs.plotlyJsStrings.`middle right`
+import typings.plotlyJs.plotlyJsStrings.`probability density`
 import typings.plotlyJs.plotlyJsStrings.`top center`
 import typings.plotlyJs.plotlyJsStrings.`top left`
 import typings.plotlyJs.plotlyJsStrings.`top right`
@@ -50,6 +52,7 @@ import typings.plotlyJs.plotlyJsStrings.clockwise
 import typings.plotlyJs.plotlyJsStrings.count
 import typings.plotlyJs.plotlyJsStrings.counterclockwise
 import typings.plotlyJs.plotlyJsStrings.delta
+import typings.plotlyJs.plotlyJsStrings.density
 import typings.plotlyJs.plotlyJsStrings.diameter
 import typings.plotlyJs.plotlyJsStrings.exclusive
 import typings.plotlyJs.plotlyJsStrings.fast
@@ -87,6 +90,7 @@ import typings.plotlyJs.plotlyJsStrings.outliers
 import typings.plotlyJs.plotlyJsStrings.outside
 import typings.plotlyJs.plotlyJsStrings.percent
 import typings.plotlyJs.plotlyJsStrings.points
+import typings.plotlyJs.plotlyJsStrings.probability
 import typings.plotlyJs.plotlyJsStrings.remainder
 import typings.plotlyJs.plotlyJsStrings.sd
 import typings.plotlyJs.plotlyJsStrings.skip
@@ -181,6 +185,7 @@ object libTracesBoxMod {
     inline def apply(
       alignmentgroup: String,
       autobinx: Boolean,
+      autocontour: Boolean,
       automargin: Boolean,
       boxmean: Boolean | sd,
       boxpoints: all | outliers | suspectedoutliers | `false`,
@@ -189,6 +194,7 @@ object libTracesBoxMod {
       colorbar: PartialColorBarBgcolor,
       colorscale: ColorScale,
       connectgaps: Boolean,
+      contours: PartialcoloringfillheatmaColoring,
       customdata: js.Array[js.Array[Datum] | Datum],
       delta: PartialDelta,
       direction: clockwise | counterclockwise,
@@ -201,6 +207,7 @@ object libTracesBoxMod {
       gauge: PartialGaugeBgcolor,
       groupnorm: _empty | fraction | percent,
       histfunc: count | sum | avg | min | max,
+      histnorm: _empty | percent | probability | density | (`probability density`),
       hole: Double,
       hoverinfo: all | name | none | skip | text | x | xPlussigntext | xPlussignname | xPlussigny | xPlussignyPlussigntext | xPlussignyPlussignname | xPlussignyPlussignz | xPlussignyPlussignzPlussigntext | xPlussignyPlussignzPlussignname | y | yPlussignname | yPlussignx | yPlussigntext | yPlussignxPlussigntext | yPlussignxPlussignname | yPlussignz | yPlussignzPlussigntext | yPlussignzPlussignname | yPlussignxPlussignz | yPlussignxPlussignzPlussigntext | yPlussignxPlussignzPlussignname | z | zPlussignx | zPlussignxPlussigntext | zPlussignxPlussignname | zPlussignyPlussignx | zPlussignyPlussignxPlussigntext | zPlussignyPlussignxPlussignname | zPlussignxPlussigny | zPlussignxPlussignyPlussigntext | zPlussignxPlussignyPlussignname,
       hoverlabel: PartialHoverLabel,
@@ -247,6 +254,7 @@ object libTracesBoxMod {
       markerDotsymbol: MarkerSymbol | js.Array[MarkerSymbol],
       mode: lines | markers | text | linesPlussignmarkers | textPlussignmarkers | textPlussignlines | textPlussignlinesPlussignmarkers | none | gauge | number | delta | numberPlussigndelta | gaugePlussignnumber | gaugePlussignnumberPlussigndelta | gaugePlussigndelta,
       name: String,
+      ncontours: Double,
       number: PartialPlotNumberFont,
       offset: Double,
       offsetgroup: String,
@@ -291,11 +299,12 @@ object libTracesBoxMod {
       ygap: Double,
       yhoverformat: String,
       z: (js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray,
+      zhoverformat: String,
       zmax: Double,
       zmin: Double,
       zsmooth: fast | best | `false`
     ): BoxPlotData = {
-      val __obj = js.Dynamic.literal(alignmentgroup = alignmentgroup.asInstanceOf[js.Any], autobinx = autobinx.asInstanceOf[js.Any], automargin = automargin.asInstanceOf[js.Any], boxmean = boxmean.asInstanceOf[js.Any], boxpoints = boxpoints.asInstanceOf[js.Any], branchvalues = branchvalues.asInstanceOf[js.Any], cliponaxis = cliponaxis.asInstanceOf[js.Any], colorbar = colorbar.asInstanceOf[js.Any], colorscale = colorscale.asInstanceOf[js.Any], connectgaps = connectgaps.asInstanceOf[js.Any], customdata = customdata.asInstanceOf[js.Any], delta = delta.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], error_x = error_x.asInstanceOf[js.Any], error_y = error_y.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], fillcolor = fillcolor.asInstanceOf[js.Any], fillpattern = fillpattern.asInstanceOf[js.Any], gauge = gauge.asInstanceOf[js.Any], groupnorm = groupnorm.asInstanceOf[js.Any], histfunc = histfunc.asInstanceOf[js.Any], hole = hole.asInstanceOf[js.Any], hoverinfo = hoverinfo.asInstanceOf[js.Any], hoverlabel = hoverlabel.asInstanceOf[js.Any], hoveron = hoveron.asInstanceOf[js.Any], hovertemplate = hovertemplate.asInstanceOf[js.Any], hovertext = hovertext.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], ids = ids.asInstanceOf[js.Any], j = j.asInstanceOf[js.Any], jitter = jitter.asInstanceOf[js.Any], k = k.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], lat = lat.asInstanceOf[js.Any], legendgroup = legendgroup.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], locationmode = locationmode.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any], lon = lon.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], offsetgroup = offsetgroup.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], parents = parents.asInstanceOf[js.Any], pointpos = pointpos.asInstanceOf[js.Any], quartilemethod = quartilemethod.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], reversescale = reversescale.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], selectedpoints = selectedpoints.asInstanceOf[js.Any], showlegend = showlegend.asInstanceOf[js.Any], showscale = showscale.asInstanceOf[js.Any], stackgaps = stackgaps.asInstanceOf[js.Any], stackgroup = stackgroup.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textfont = textfont.asInstanceOf[js.Any], textinfo = textinfo.asInstanceOf[js.Any], textposition = textposition.asInstanceOf[js.Any], texttemplate = texttemplate.asInstanceOf[js.Any], theta = theta.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], transforms = transforms.asInstanceOf[js.Any], transpose = transpose.asInstanceOf[js.Any], unselected = unselected.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], x0 = x0.asInstanceOf[js.Any], xaxis = xaxis.asInstanceOf[js.Any], xbins = xbins.asInstanceOf[js.Any], xgap = xgap.asInstanceOf[js.Any], xhoverformat = xhoverformat.asInstanceOf[js.Any], xy = xy.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], y0 = y0.asInstanceOf[js.Any], yaxis = yaxis.asInstanceOf[js.Any], ygap = ygap.asInstanceOf[js.Any], yhoverformat = yhoverformat.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any], zmax = zmax.asInstanceOf[js.Any], zmin = zmin.asInstanceOf[js.Any], zsmooth = zsmooth.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(alignmentgroup = alignmentgroup.asInstanceOf[js.Any], autobinx = autobinx.asInstanceOf[js.Any], autocontour = autocontour.asInstanceOf[js.Any], automargin = automargin.asInstanceOf[js.Any], boxmean = boxmean.asInstanceOf[js.Any], boxpoints = boxpoints.asInstanceOf[js.Any], branchvalues = branchvalues.asInstanceOf[js.Any], cliponaxis = cliponaxis.asInstanceOf[js.Any], colorbar = colorbar.asInstanceOf[js.Any], colorscale = colorscale.asInstanceOf[js.Any], connectgaps = connectgaps.asInstanceOf[js.Any], contours = contours.asInstanceOf[js.Any], customdata = customdata.asInstanceOf[js.Any], delta = delta.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], error_x = error_x.asInstanceOf[js.Any], error_y = error_y.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], fillcolor = fillcolor.asInstanceOf[js.Any], fillpattern = fillpattern.asInstanceOf[js.Any], gauge = gauge.asInstanceOf[js.Any], groupnorm = groupnorm.asInstanceOf[js.Any], histfunc = histfunc.asInstanceOf[js.Any], histnorm = histnorm.asInstanceOf[js.Any], hole = hole.asInstanceOf[js.Any], hoverinfo = hoverinfo.asInstanceOf[js.Any], hoverlabel = hoverlabel.asInstanceOf[js.Any], hoveron = hoveron.asInstanceOf[js.Any], hovertemplate = hovertemplate.asInstanceOf[js.Any], hovertext = hovertext.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], ids = ids.asInstanceOf[js.Any], j = j.asInstanceOf[js.Any], jitter = jitter.asInstanceOf[js.Any], k = k.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], lat = lat.asInstanceOf[js.Any], legendgroup = legendgroup.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], locationmode = locationmode.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any], lon = lon.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], ncontours = ncontours.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], offsetgroup = offsetgroup.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], parents = parents.asInstanceOf[js.Any], pointpos = pointpos.asInstanceOf[js.Any], quartilemethod = quartilemethod.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], reversescale = reversescale.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], selectedpoints = selectedpoints.asInstanceOf[js.Any], showlegend = showlegend.asInstanceOf[js.Any], showscale = showscale.asInstanceOf[js.Any], stackgaps = stackgaps.asInstanceOf[js.Any], stackgroup = stackgroup.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textfont = textfont.asInstanceOf[js.Any], textinfo = textinfo.asInstanceOf[js.Any], textposition = textposition.asInstanceOf[js.Any], texttemplate = texttemplate.asInstanceOf[js.Any], theta = theta.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], transforms = transforms.asInstanceOf[js.Any], transpose = transpose.asInstanceOf[js.Any], unselected = unselected.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], x0 = x0.asInstanceOf[js.Any], xaxis = xaxis.asInstanceOf[js.Any], xbins = xbins.asInstanceOf[js.Any], xgap = xgap.asInstanceOf[js.Any], xhoverformat = xhoverformat.asInstanceOf[js.Any], xy = xy.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], y0 = y0.asInstanceOf[js.Any], yaxis = yaxis.asInstanceOf[js.Any], ygap = ygap.asInstanceOf[js.Any], yhoverformat = yhoverformat.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any], zhoverformat = zhoverformat.asInstanceOf[js.Any], zmax = zmax.asInstanceOf[js.Any], zmin = zmin.asInstanceOf[js.Any], zsmooth = zsmooth.asInstanceOf[js.Any])
       __obj.updateDynamic("line.color")(lineDotcolor.asInstanceOf[js.Any])
       __obj.updateDynamic("line.dash")(lineDotdash.asInstanceOf[js.Any])
       __obj.updateDynamic("line.shape")(lineDotshape.asInstanceOf[js.Any])

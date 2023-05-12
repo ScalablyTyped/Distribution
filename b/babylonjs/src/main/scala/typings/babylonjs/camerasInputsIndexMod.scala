@@ -69,7 +69,7 @@ object camerasInputsIndexMod {
   @js.native
   /**
     * Listen to mouse events to control the camera.
-    * @see https://doc.babylonjs.com/how_to/customizing_camera_inputs
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/cameras/customizingCameraInputs
     */
   open class FlyCameraMouseInput ()
     extends typings.babylonjs.camerasInputsFlyCameraMouseInputMod.FlyCameraMouseInput
@@ -93,7 +93,7 @@ object camerasInputsIndexMod {
   @js.native
   /**
     * Instantiates a new input
-    * @see https://doc.babylonjs.com/how_to/customizing_camera_inputs
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/cameras/customizingCameraInputs
     */
   open class FreeCameraDeviceOrientationInput ()
     extends typings.babylonjs.camerasInputsFreeCameraDeviceOrientationInputMod.FreeCameraDeviceOrientationInput
@@ -127,7 +127,7 @@ object camerasInputsIndexMod {
   @js.native
   /**
     * Manage the mouse inputs to control the movement of a free camera.
-    * @see https://doc.babylonjs.com/how_to/customizing_camera_inputs
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/cameras/customizingCameraInputs
     * @param touchEnabled Defines if touch is enabled or not
     */
   open class FreeCameraMouseInput ()
@@ -147,7 +147,7 @@ object camerasInputsIndexMod {
   @js.native
   /**
     * Manage the touch inputs to control the movement of a free camera.
-    * @see https://doc.babylonjs.com/how_to/customizing_camera_inputs
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/cameras/customizingCameraInputs
     * @param allowMouse Defines if mouse events can be treated as touch events
     */
   open class FreeCameraTouchInput ()

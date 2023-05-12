@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Canvas extends StObject {
   
-  val canvas: HTMLCanvasElement
+  var canvas: HTMLCanvasElement
 }
 object Canvas {
   

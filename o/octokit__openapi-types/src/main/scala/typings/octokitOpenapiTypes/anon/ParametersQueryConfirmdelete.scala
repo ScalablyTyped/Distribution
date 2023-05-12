@@ -8,11 +8,11 @@ trait ParametersQueryConfirmdelete extends StObject {
   
   var parameters: QueryConfirmdelete
   
-  var responses: `200400`
+  var responses: `400403`
 }
 object ParametersQueryConfirmdelete {
   
-  inline def apply(parameters: QueryConfirmdelete, responses: `200400`): ParametersQueryConfirmdelete = {
+  inline def apply(parameters: QueryConfirmdelete, responses: `400403`): ParametersQueryConfirmdelete = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryConfirmdelete]
   }
@@ -22,6 +22,6 @@ object ParametersQueryConfirmdelete {
     
     inline def setParameters(value: QueryConfirmdelete): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200400`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `400403`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

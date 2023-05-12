@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListPlaceIndexesResponse extends StObject {
   
   /**
-    * Lists the place index resources that exist in your AWS account
+    * Lists the place index resources that exist in your Amazon Web Services account
     */
   var Entries: ListPlaceIndexesResponseEntryList
   

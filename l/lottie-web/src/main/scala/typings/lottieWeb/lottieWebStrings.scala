@@ -51,6 +51,12 @@ object lottieWebStrings {
   inline def destroy: destroy = "destroy".asInstanceOf[destroy]
   
   @js.native
+  sealed trait drawnFrame
+    extends StObject
+       with AnimationEventName
+  inline def drawnFrame: drawnFrame = "drawnFrame".asInstanceOf[drawnFrame]
+  
+  @js.native
   sealed trait enterFrame
     extends StObject
        with AnimationEventName

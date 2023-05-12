@@ -27,7 +27,7 @@ trait CreateEnvironmentResponse extends StObject {
   var EnvironmentId: js.UndefOr[typings.awsSdk.clientsMigrationhubrefactorspacesMod.EnvironmentId] = js.undefined
   
   /**
-    * A timestamp that indicates when the environment was last updated. 
+    * A timestamp that indicates when the environment was last updated.
     */
   var LastUpdatedTime: js.UndefOr[js.Date] = js.undefined
   

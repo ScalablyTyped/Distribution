@@ -1,5 +1,6 @@
 package typings.rcPicker
 
+import typings.rcPicker.esHooksUseRangeOpenMod.SourceType
 import typings.rcPicker.esInterfaceMod.PanelMode
 import typings.rcPicker.esInterfaceMod.PickerMode
 import typings.rcPicker.esPickerTriggerMod.Placement
@@ -35,6 +36,12 @@ object rcPickerStrings {
   inline def assertive: assertive = "assertive".asInstanceOf[assertive]
   
   @js.native
+  sealed trait blur
+    extends StObject
+       with SourceType
+  inline def blur: blur = "blur".asInstanceOf[blur]
+  
+  @js.native
   sealed trait both extends StObject
   inline def both: both = "both".asInstanceOf[both]
   
@@ -49,6 +56,28 @@ object rcPickerStrings {
     extends StObject
        with Placement
   inline def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
+  
+  @js.native
+  sealed trait cancel
+    extends StObject
+       with SourceType
+  inline def cancel: cancel = "cancel".asInstanceOf[cancel]
+  
+  @js.native
+  sealed trait cellRender extends StObject
+  inline def cellRender: cellRender = "cellRender".asInstanceOf[cellRender]
+  
+  @js.native
+  sealed trait clear
+    extends StObject
+       with SourceType
+  inline def clear: clear = "clear".asInstanceOf[clear]
+  
+  @js.native
+  sealed trait confirm
+    extends StObject
+       with SourceType
+  inline def confirm: confirm = "confirm".asInstanceOf[confirm]
   
   @js.native
   sealed trait copy extends StObject
@@ -122,6 +151,10 @@ object rcPickerStrings {
   inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
+  sealed trait hour extends StObject
+  inline def hour: hour = "hour".asInstanceOf[hour]
+  
+  @js.native
   sealed trait `inline` extends StObject
   inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
@@ -158,6 +191,14 @@ object rcPickerStrings {
   inline def menu: menu = "menu".asInstanceOf[menu]
   
   @js.native
+  sealed trait meridiem extends StObject
+  inline def meridiem: meridiem = "meridiem".asInstanceOf[meridiem]
+  
+  @js.native
+  sealed trait minute extends StObject
+  inline def minute: minute = "minute".asInstanceOf[minute]
+  
+  @js.native
   sealed trait mixed extends StObject
   inline def mixed: mixed = "mixed".asInstanceOf[mixed]
   
@@ -171,6 +212,10 @@ object rcPickerStrings {
        with PanelMode
        with PickerMode
   inline def month: month = "month".asInstanceOf[month]
+  
+  @js.native
+  sealed trait monthCellRender extends StObject
+  inline def monthCellRender: monthCellRender = "monthCellRender".asInstanceOf[monthCellRender]
   
   @js.native
   sealed trait mouse extends StObject
@@ -209,6 +254,12 @@ object rcPickerStrings {
   inline def onSelect: onSelect = "onSelect".asInstanceOf[onSelect]
   
   @js.native
+  sealed trait open
+    extends StObject
+       with SourceType
+  inline def open: open = "open".asInstanceOf[open]
+  
+  @js.native
   sealed trait other extends StObject
   inline def other: other = "other".asInstanceOf[other]
   
@@ -231,6 +282,16 @@ object rcPickerStrings {
   @js.native
   sealed trait popup extends StObject
   inline def popup: popup = "popup".asInstanceOf[popup]
+  
+  @js.native
+  sealed trait preset
+    extends StObject
+       with SourceType
+  inline def preset: preset = "preset".asInstanceOf[preset]
+  
+  @js.native
+  sealed trait presets extends StObject
+  inline def presets: presets = "presets".asInstanceOf[presets]
   
   @js.native
   sealed trait quarter
@@ -258,6 +319,10 @@ object rcPickerStrings {
   @js.native
   sealed trait rtl extends StObject
   inline def rtl: rtl = "rtl".asInstanceOf[rtl]
+  
+  @js.native
+  sealed trait second extends StObject
+  inline def second: second = "second".asInstanceOf[second]
   
   @js.native
   sealed trait showTime extends StObject

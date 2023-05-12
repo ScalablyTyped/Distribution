@@ -1,27 +1,36 @@
 package typings.createKeyframeAnimation
 
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.`annotation-xml`
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.`object`
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.`var`
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.a
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.abbr
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.acronym
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.address
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.animate
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.animateMotion
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.animateTransform
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.annotation
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.applet
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.area
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.article
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.aside
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.audio
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.b
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.base
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.basefont
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.bdi
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.bdo
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.bgsound
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.big
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.blink
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.blockquote
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.body
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.br
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.button
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.canvas
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.caption
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.center
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.circle
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.cite
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.clipPath
@@ -37,6 +46,7 @@ import typings.createKeyframeAnimation.createKeyframeAnimationStrings.desc
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.details
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.dfn
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.dialog
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.dir
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.div
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.dl
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.dt
@@ -72,9 +82,12 @@ import typings.createKeyframeAnimation.createKeyframeAnimationStrings.fieldset
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.figcaption
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.figure
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.filter
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.font
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.footer
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.foreignObject
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.form
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.frame
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.frameset
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.g
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.h1
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.h2
@@ -93,54 +106,98 @@ import typings.createKeyframeAnimation.createKeyframeAnimationStrings.image
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.img
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.input
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.ins
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.isindex
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.kbd
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.keygen
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.label
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.legend
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.li
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.line
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.linearGradient
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.link
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.listing
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.maction
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.main
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.map
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.mark
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.marker
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.marquee
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.mask
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.math
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.menu
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.menuitem
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.merror
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.meta
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.metadata
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.meter
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.mfrac
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.mi
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.mmultiscripts
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.mn
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.mo
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.mover
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.mpadded
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.mpath
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.mphantom
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.mprescripts
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.mroot
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.mrow
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.ms
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.mspace
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.msqrt
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.mstyle
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.msub
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.msubsup
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.msup
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.mtable
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.mtd
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.mtext
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.mtr
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.multicol
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.munder
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.munderover
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.nav
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.nextid
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.nobr
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.noembed
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.noframes
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.noscript
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.ol
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.optgroup
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.option
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.output
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.p
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.param
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.path
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.pattern
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.picture
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.plaintext
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.polygon
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.polyline
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.pre
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.progress
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.q
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.radialGradient
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.rb
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.rect
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.rp
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.rt
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.rtc
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.ruby
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.s
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.samp
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.script
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.section
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.select
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.semantics
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.set
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.slot
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.small
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.source
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.spacer
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.span
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.stop
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.strike
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.strong
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.style
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.sub
@@ -164,12 +221,14 @@ import typings.createKeyframeAnimation.createKeyframeAnimationStrings.title
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.tr
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.track
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.tspan
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.tt
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.u
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.ul
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.use
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.video
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.view
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.wbr
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.xmp
 import typings.createKeyframeAnimation.mod.Direction
 import typings.std.Element
 import typings.std.FillMode
@@ -186,11 +245,15 @@ import typings.std.HTMLDataElement
 import typings.std.HTMLDataListElement
 import typings.std.HTMLDetailsElement
 import typings.std.HTMLDialogElement
+import typings.std.HTMLDirectoryElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLEmbedElement
 import typings.std.HTMLFieldSetElement
+import typings.std.HTMLFontElement
 import typings.std.HTMLFormElement
+import typings.std.HTMLFrameElement
+import typings.std.HTMLFrameSetElement
 import typings.std.HTMLHRElement
 import typings.std.HTMLHeadElement
 import typings.std.HTMLHeadingElement
@@ -203,6 +266,7 @@ import typings.std.HTMLLabelElement
 import typings.std.HTMLLegendElement
 import typings.std.HTMLLinkElement
 import typings.std.HTMLMapElement
+import typings.std.HTMLMarqueeElement
 import typings.std.HTMLMenuElement
 import typings.std.HTMLMetaElement
 import typings.std.HTMLMeterElement
@@ -213,6 +277,7 @@ import typings.std.HTMLOptGroupElement
 import typings.std.HTMLOptionElement
 import typings.std.HTMLOutputElement
 import typings.std.HTMLParagraphElement
+import typings.std.HTMLParamElement
 import typings.std.HTMLPictureElement
 import typings.std.HTMLPreElement
 import typings.std.HTMLProgressElement
@@ -235,7 +300,9 @@ import typings.std.HTMLTimeElement
 import typings.std.HTMLTitleElement
 import typings.std.HTMLTrackElement
 import typings.std.HTMLUListElement
+import typings.std.HTMLUnknownElement
 import typings.std.HTMLVideoElement
+import typings.std.MathMLElement
 import typings.std.NodeListOf
 import typings.std.SVGAnimateElement
 import typings.std.SVGAnimateMotionElement
@@ -305,28 +372,37 @@ object anon {
   @js.native
   trait FnCall extends StObject {
     
+    def apply(selectors: `annotation-xml`): NodeListOf[MathMLElement] = js.native
     def apply(selectors: `object`): NodeListOf[HTMLObjectElement] = js.native
     def apply(selectors: `var`): NodeListOf[HTMLElement] = js.native
     def apply(selectors: a): NodeListOf[HTMLAnchorElement] = js.native
     def apply(selectors: abbr): NodeListOf[HTMLElement] = js.native
+    def apply(selectors: acronym): NodeListOf[HTMLElement] = js.native
     def apply(selectors: address): NodeListOf[HTMLElement] = js.native
     def apply(selectors: animate): NodeListOf[SVGAnimateElement] = js.native
     def apply(selectors: animateMotion): NodeListOf[SVGAnimateMotionElement] = js.native
     def apply(selectors: animateTransform): NodeListOf[SVGAnimateTransformElement] = js.native
+    def apply(selectors: annotation): NodeListOf[MathMLElement] = js.native
+    def apply(selectors: applet): NodeListOf[HTMLUnknownElement] = js.native
     def apply(selectors: area): NodeListOf[HTMLAreaElement] = js.native
     def apply(selectors: article): NodeListOf[HTMLElement] = js.native
     def apply(selectors: aside): NodeListOf[HTMLElement] = js.native
     def apply(selectors: audio): NodeListOf[HTMLAudioElement] = js.native
     def apply(selectors: b): NodeListOf[HTMLElement] = js.native
     def apply(selectors: base): NodeListOf[HTMLBaseElement] = js.native
+    def apply(selectors: basefont): NodeListOf[HTMLElement] = js.native
     def apply(selectors: bdi): NodeListOf[HTMLElement] = js.native
     def apply(selectors: bdo): NodeListOf[HTMLElement] = js.native
+    def apply(selectors: bgsound): NodeListOf[HTMLUnknownElement] = js.native
+    def apply(selectors: big): NodeListOf[HTMLElement] = js.native
+    def apply(selectors: blink): NodeListOf[HTMLUnknownElement] = js.native
     def apply(selectors: blockquote): NodeListOf[HTMLQuoteElement] = js.native
     def apply(selectors: body): NodeListOf[HTMLBodyElement] = js.native
     def apply(selectors: br): NodeListOf[HTMLBRElement] = js.native
     def apply(selectors: button): NodeListOf[HTMLButtonElement] = js.native
     def apply(selectors: canvas): NodeListOf[HTMLCanvasElement] = js.native
     def apply(selectors: caption): NodeListOf[HTMLTableCaptionElement] = js.native
+    def apply(selectors: center): NodeListOf[HTMLElement] = js.native
     def apply(selectors: circle): NodeListOf[SVGCircleElement] = js.native
     def apply(selectors: cite): NodeListOf[HTMLElement] = js.native
     def apply(selectors: clipPath): NodeListOf[SVGClipPathElement] = js.native
@@ -342,6 +418,7 @@ object anon {
     def apply(selectors: details): NodeListOf[HTMLDetailsElement] = js.native
     def apply(selectors: dfn): NodeListOf[HTMLElement] = js.native
     def apply(selectors: dialog): NodeListOf[HTMLDialogElement] = js.native
+    def apply(selectors: dir): NodeListOf[HTMLDirectoryElement] = js.native
     def apply(selectors: div): NodeListOf[HTMLDivElement] = js.native
     def apply(selectors: dl): NodeListOf[HTMLDListElement] = js.native
     def apply(selectors: dt): NodeListOf[HTMLElement] = js.native
@@ -377,9 +454,12 @@ object anon {
     def apply(selectors: figcaption): NodeListOf[HTMLElement] = js.native
     def apply(selectors: figure): NodeListOf[HTMLElement] = js.native
     def apply(selectors: filter): NodeListOf[SVGFilterElement] = js.native
+    def apply(selectors: font): NodeListOf[HTMLFontElement] = js.native
     def apply(selectors: footer): NodeListOf[HTMLElement] = js.native
     def apply(selectors: foreignObject): NodeListOf[SVGForeignObjectElement] = js.native
     def apply(selectors: form): NodeListOf[HTMLFormElement] = js.native
+    def apply(selectors: frame): NodeListOf[HTMLFrameElement] = js.native
+    def apply(selectors: frameset): NodeListOf[HTMLFrameSetElement] = js.native
     def apply(selectors: g): NodeListOf[SVGGElement] = js.native
     def apply(selectors: h1): NodeListOf[HTMLHeadingElement] = js.native
     def apply(selectors: h2): NodeListOf[HTMLHeadingElement] = js.native
@@ -398,54 +478,98 @@ object anon {
     def apply(selectors: img): NodeListOf[HTMLImageElement] = js.native
     def apply(selectors: input): NodeListOf[HTMLInputElement] = js.native
     def apply(selectors: ins): NodeListOf[HTMLModElement] = js.native
+    def apply(selectors: isindex): NodeListOf[HTMLUnknownElement] = js.native
     def apply(selectors: kbd): NodeListOf[HTMLElement] = js.native
+    def apply(selectors: keygen): NodeListOf[HTMLUnknownElement] = js.native
     def apply(selectors: label): NodeListOf[HTMLLabelElement] = js.native
     def apply(selectors: legend): NodeListOf[HTMLLegendElement] = js.native
     def apply(selectors: li): NodeListOf[HTMLLIElement] = js.native
     def apply(selectors: line): NodeListOf[SVGLineElement] = js.native
     def apply(selectors: linearGradient): NodeListOf[SVGLinearGradientElement] = js.native
     def apply(selectors: link): NodeListOf[HTMLLinkElement] = js.native
+    def apply(selectors: listing): NodeListOf[HTMLPreElement] = js.native
+    def apply(selectors: maction): NodeListOf[MathMLElement] = js.native
     def apply(selectors: main): NodeListOf[HTMLElement] = js.native
     def apply(selectors: map): NodeListOf[HTMLMapElement] = js.native
     def apply(selectors: mark): NodeListOf[HTMLElement] = js.native
     def apply(selectors: marker): NodeListOf[SVGMarkerElement] = js.native
+    def apply(selectors: marquee): NodeListOf[HTMLMarqueeElement] = js.native
     def apply(selectors: mask): NodeListOf[SVGMaskElement] = js.native
+    def apply(selectors: math): NodeListOf[MathMLElement] = js.native
     def apply(selectors: menu): NodeListOf[HTMLMenuElement] = js.native
+    def apply(selectors: menuitem): NodeListOf[HTMLElement] = js.native
+    def apply(selectors: merror): NodeListOf[MathMLElement] = js.native
     def apply(selectors: meta): NodeListOf[HTMLMetaElement] = js.native
     def apply(selectors: metadata): NodeListOf[SVGMetadataElement] = js.native
     def apply(selectors: meter): NodeListOf[HTMLMeterElement] = js.native
+    def apply(selectors: mfrac): NodeListOf[MathMLElement] = js.native
+    def apply(selectors: mi): NodeListOf[MathMLElement] = js.native
+    def apply(selectors: mmultiscripts): NodeListOf[MathMLElement] = js.native
+    def apply(selectors: mn): NodeListOf[MathMLElement] = js.native
+    def apply(selectors: mo): NodeListOf[MathMLElement] = js.native
+    def apply(selectors: mover): NodeListOf[MathMLElement] = js.native
+    def apply(selectors: mpadded): NodeListOf[MathMLElement] = js.native
     def apply(selectors: mpath): NodeListOf[SVGMPathElement] = js.native
+    def apply(selectors: mphantom): NodeListOf[MathMLElement] = js.native
+    def apply(selectors: mprescripts): NodeListOf[MathMLElement] = js.native
+    def apply(selectors: mroot): NodeListOf[MathMLElement] = js.native
+    def apply(selectors: mrow): NodeListOf[MathMLElement] = js.native
+    def apply(selectors: ms): NodeListOf[MathMLElement] = js.native
+    def apply(selectors: mspace): NodeListOf[MathMLElement] = js.native
+    def apply(selectors: msqrt): NodeListOf[MathMLElement] = js.native
+    def apply(selectors: mstyle): NodeListOf[MathMLElement] = js.native
+    def apply(selectors: msub): NodeListOf[MathMLElement] = js.native
+    def apply(selectors: msubsup): NodeListOf[MathMLElement] = js.native
+    def apply(selectors: msup): NodeListOf[MathMLElement] = js.native
+    def apply(selectors: mtable): NodeListOf[MathMLElement] = js.native
+    def apply(selectors: mtd): NodeListOf[MathMLElement] = js.native
+    def apply(selectors: mtext): NodeListOf[MathMLElement] = js.native
+    def apply(selectors: mtr): NodeListOf[MathMLElement] = js.native
+    def apply(selectors: multicol): NodeListOf[HTMLUnknownElement] = js.native
+    def apply(selectors: munder): NodeListOf[MathMLElement] = js.native
+    def apply(selectors: munderover): NodeListOf[MathMLElement] = js.native
     def apply(selectors: nav): NodeListOf[HTMLElement] = js.native
+    def apply(selectors: nextid): NodeListOf[HTMLUnknownElement] = js.native
+    def apply(selectors: nobr): NodeListOf[HTMLElement] = js.native
+    def apply(selectors: noembed): NodeListOf[HTMLElement] = js.native
+    def apply(selectors: noframes): NodeListOf[HTMLElement] = js.native
     def apply(selectors: noscript): NodeListOf[HTMLElement] = js.native
     def apply(selectors: ol): NodeListOf[HTMLOListElement] = js.native
     def apply(selectors: optgroup): NodeListOf[HTMLOptGroupElement] = js.native
     def apply(selectors: option): NodeListOf[HTMLOptionElement] = js.native
     def apply(selectors: output): NodeListOf[HTMLOutputElement] = js.native
     def apply(selectors: p): NodeListOf[HTMLParagraphElement] = js.native
+    def apply(selectors: param): NodeListOf[HTMLParamElement] = js.native
     def apply(selectors: path): NodeListOf[SVGPathElement] = js.native
     def apply(selectors: pattern): NodeListOf[SVGPatternElement] = js.native
     def apply(selectors: picture): NodeListOf[HTMLPictureElement] = js.native
+    def apply(selectors: plaintext): NodeListOf[HTMLElement] = js.native
     def apply(selectors: polygon): NodeListOf[SVGPolygonElement] = js.native
     def apply(selectors: polyline): NodeListOf[SVGPolylineElement] = js.native
     def apply(selectors: pre): NodeListOf[HTMLPreElement] = js.native
     def apply(selectors: progress): NodeListOf[HTMLProgressElement] = js.native
     def apply(selectors: q): NodeListOf[HTMLQuoteElement] = js.native
     def apply(selectors: radialGradient): NodeListOf[SVGRadialGradientElement] = js.native
+    def apply(selectors: rb): NodeListOf[HTMLElement] = js.native
     def apply(selectors: rect): NodeListOf[SVGRectElement] = js.native
     def apply(selectors: rp): NodeListOf[HTMLElement] = js.native
     def apply(selectors: rt): NodeListOf[HTMLElement] = js.native
+    def apply(selectors: rtc): NodeListOf[HTMLElement] = js.native
     def apply(selectors: ruby): NodeListOf[HTMLElement] = js.native
     def apply(selectors: s): NodeListOf[HTMLElement] = js.native
     def apply(selectors: samp): NodeListOf[HTMLElement] = js.native
     def apply(selectors: script): NodeListOf[HTMLScriptElement] = js.native
     def apply(selectors: section): NodeListOf[HTMLElement] = js.native
     def apply(selectors: select): NodeListOf[HTMLSelectElement] = js.native
+    def apply(selectors: semantics): NodeListOf[MathMLElement] = js.native
     def apply(selectors: set): NodeListOf[SVGSetElement] = js.native
     def apply(selectors: slot): NodeListOf[HTMLSlotElement] = js.native
     def apply(selectors: small): NodeListOf[HTMLElement] = js.native
     def apply(selectors: source): NodeListOf[HTMLSourceElement] = js.native
+    def apply(selectors: spacer): NodeListOf[HTMLUnknownElement] = js.native
     def apply(selectors: span): NodeListOf[HTMLSpanElement] = js.native
     def apply(selectors: stop): NodeListOf[SVGStopElement] = js.native
+    def apply(selectors: strike): NodeListOf[HTMLElement] = js.native
     def apply(selectors: strong): NodeListOf[HTMLElement] = js.native
     def apply(selectors: style): NodeListOf[HTMLStyleElement] = js.native
     def apply(selectors: sub): NodeListOf[HTMLElement] = js.native
@@ -469,12 +593,14 @@ object anon {
     def apply(selectors: tr): NodeListOf[HTMLTableRowElement] = js.native
     def apply(selectors: track): NodeListOf[HTMLTrackElement] = js.native
     def apply(selectors: tspan): NodeListOf[SVGTSpanElement] = js.native
+    def apply(selectors: tt): NodeListOf[HTMLElement] = js.native
     def apply(selectors: u): NodeListOf[HTMLElement] = js.native
     def apply(selectors: ul): NodeListOf[HTMLUListElement] = js.native
     def apply(selectors: use): NodeListOf[SVGUseElement] = js.native
     def apply(selectors: video): NodeListOf[HTMLVideoElement] = js.native
     def apply(selectors: view): NodeListOf[SVGViewElement] = js.native
     def apply(selectors: wbr): NodeListOf[HTMLElement] = js.native
+    def apply(selectors: xmp): NodeListOf[HTMLPreElement] = js.native
     def apply[E /* <: Element */](selectors: String): NodeListOf[E] = js.native
   }
   

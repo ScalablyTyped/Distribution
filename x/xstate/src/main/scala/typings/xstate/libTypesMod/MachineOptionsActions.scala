@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
   * You'll have to cast your way around this structure, unfortunately. 
   * TS definition: {{{
-  {[ K in keyof TEventsCausingActions ]:? xstate.xstate/lib/types.ActionObject<TContext, xstate.xstate/lib/types.Cast<xstate.xstate/lib/types.Prop<TIndexedEvents, TEventsCausingActions[K]>, xstate.xstate/lib/types.EventObject>> | xstate.xstate/lib/types.ActionFunction<TContext, xstate.xstate/lib/types.Cast<xstate.xstate/lib/types.Prop<TIndexedEvents, TEventsCausingActions[K]>, xstate.xstate/lib/types.EventObject>, xstate.xstate/lib/types.Cast<xstate.xstate/lib/types.Prop<TIndexedActions, K>, xstate.xstate/lib/types.BaseActionObject>>}
+  {[ K in keyof TEventsCausingActions ]:? xstate.xstate/lib/types.ActionObject<TContext, xstate.xstate/lib/types.Cast<xstate.xstate/lib/types.Prop<TIndexedEvents, TEventsCausingActions[K]>, xstate.xstate/lib/types.EventObject>, xstate.xstate/lib/types.Cast<xstate.xstate/lib/types.Prop<TIndexedEvents, keyof TIndexedEvents>, xstate.xstate/lib/types.EventObject>, xstate.xstate/lib/types.Cast<xstate.xstate/lib/types.Prop<TIndexedActions, K>, xstate.xstate/lib/types.BaseActionObject>> | xstate.xstate/lib/types.ActionFunction<TContext, xstate.xstate/lib/types.Cast<xstate.xstate/lib/types.Prop<TIndexedEvents, TEventsCausingActions[K]>, xstate.xstate/lib/types.EventObject>, xstate.xstate/lib/types.Cast<xstate.xstate/lib/types.Prop<TIndexedActions, K>, xstate.xstate/lib/types.BaseActionObject>, xstate.xstate/lib/types.Cast<xstate.xstate/lib/types.Prop<TIndexedEvents, keyof TIndexedEvents>, xstate.xstate/lib/types.EventObject>>}
   }}}
   */
 @js.native

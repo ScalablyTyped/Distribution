@@ -1,7 +1,7 @@
 package typings.ckeditorCkeditor5Indent
 
 import typings.ckeditorCkeditor5Indent.anon.Classes
-import typings.ckeditorCkeditor5Indent.srcIndentblockcommandMod.IndentBehavior
+import typings.ckeditorCkeditor5Indent.srcIndentcommandbehaviorIndentbehaviorMod.IndentBehavior
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,28 +13,53 @@ object srcIndentcommandbehaviorIndentusingclassesMod {
   open class default protected ()
     extends StObject
        with IndentUsingClasses {
+    /**
+      * Creates an instance of the indentation behavior.
+      *
+      * @param config.direction The direction of indentation.
+      * @param config.classes A list of classes used for indentation.
+      */
     def this(config: Classes) = this()
     
+    /**
+      * Checks if the command should be enabled.
+      */
     /* CompleteClass */
     override def checkEnabled(indentAttributeValue: String): Boolean = js.native
     
+    /**
+      * A list of classes used for indentation.
+      */
     /* CompleteClass */
-    override val classes: js.Array[String] = js.native
+    var classes: js.Array[String] = js.native
     
+    /**
+      * Returns a new indent attribute value based on the current indent.
+      * This method returns `undefined` when the indentation should be removed.
+      */
     /* CompleteClass */
     override def getNextIndent(indentAttributeValue: String): js.UndefOr[String] = js.native
     
+    /**
+      * The direction of indentation.
+      */
     /* CompleteClass */
-    override val isForward: Boolean = js.native
+    var isForward: Boolean = js.native
   }
   
   trait IndentUsingClasses
     extends StObject
        with IndentBehavior {
     
-    val classes: js.Array[String]
+    /**
+      * A list of classes used for indentation.
+      */
+    var classes: js.Array[String]
     
-    val isForward: Boolean
+    /**
+      * The direction of indentation.
+      */
+    var isForward: Boolean
   }
   object IndentUsingClasses {
     

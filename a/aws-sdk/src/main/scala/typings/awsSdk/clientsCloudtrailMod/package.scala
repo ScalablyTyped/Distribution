@@ -143,6 +143,8 @@ type Long = Double
 */
 type LookupAttributeKey = _LookupAttributeKey | java.lang.String
 
+type LookupAttributeValue = java.lang.String
+
 type LookupAttributesList = js.Array[LookupAttribute]
 
 type MaxQueryResults = Double
@@ -192,9 +194,13 @@ type QueryStatus = _QueryStatus | java.lang.String
 */
 type ReadWriteType = _ReadWriteType | java.lang.String
 
+type ResourceArn = java.lang.String
+
 type ResourceIdList = js.Array[String]
 
 type ResourceList = js.Array[Resource]
+
+type ResourcePolicy = java.lang.String
 
 type ResourceTagList = js.Array[ResourceTag]
 

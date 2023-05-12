@@ -8,11 +8,11 @@ trait Value extends StObject {
   
   var attributes: Category
   
-  var value: String
+  var value: Double
 }
 object Value {
   
-  inline def apply(attributes: Category, value: String): Value = {
+  inline def apply(attributes: Category, value: Double): Value = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Value]
   }
@@ -22,6 +22,6 @@ object Value {
     
     inline def setAttributes(value: Category): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

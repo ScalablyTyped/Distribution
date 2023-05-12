@@ -2,7 +2,7 @@ package typings.forgeApis.mod
 
 import typings.forgeApis.anon.AcceptEncoding
 import typings.forgeApis.anon.Forceget
-import typings.forgeApis.anon.Height
+import typings.forgeApis.anon.Guid
 import typings.forgeApis.anon.IfModifiedSince
 import typings.forgeApis.anon.Objectid
 import typings.forgeApis.anon.XAdsForce
@@ -89,7 +89,7 @@ open class DerivativesApi () extends StObject {
   /**
     * Returns the thumbnail for the source file.
     */
-  def getThumbnail(urn: String, opts: Height, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+  def getThumbnail(urn: String, opts: Guid, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
   
   /**
     * To create references for a composite design in Model Derivative. The description of references is stored in

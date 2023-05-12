@@ -1,6 +1,5 @@
 package typings.pixiText
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.pixiSettings.libIcanvasMod.ICanvas
 import typings.pixiText.libTextStyleMod.TextStyle
 import org.scalablytyped.runtime.StObject
@@ -35,10 +34,7 @@ object libTextMetricsMod {
       fontProperties: IFontMetrics
     ) = this()
     
-    /**
-      * The font properties object from TextMetrics.measureFont.
-      * @type {PIXI.IFontMetrics}
-      */
+    /** The font properties object from TextMetrics.measureFont. */
     var fontProperties: IFontMetrics = js.native
     
     /** The measured height of the text. */
@@ -72,21 +68,28 @@ object libTextMetricsMod {
     @js.native
     val ^ : js.Any = js.native
     
+    /** Baseline multiplier for calculate font metrics. */
     @JSImport("@pixi/text/lib/TextMetrics", "TextMetrics.BASELINE_MULTIPLIER")
     @js.native
     def BASELINE_MULTIPLIER: Double = js.native
     inline def BASELINE_MULTIPLIER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BASELINE_MULTIPLIER")(x.asInstanceOf[js.Any])
     
+    /** Baseline symbol for calculate font metrics. */
     @JSImport("@pixi/text/lib/TextMetrics", "TextMetrics.BASELINE_SYMBOL")
     @js.native
     def BASELINE_SYMBOL: String = js.native
     inline def BASELINE_SYMBOL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BASELINE_SYMBOL")(x.asInstanceOf[js.Any])
     
+    /** Height multiplier for setting height of canvas to calculate font metrics. */
     @JSImport("@pixi/text/lib/TextMetrics", "TextMetrics.HEIGHT_MULTIPLIER")
     @js.native
     def HEIGHT_MULTIPLIER: Double = js.native
     inline def HEIGHT_MULTIPLIER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HEIGHT_MULTIPLIER")(x.asInstanceOf[js.Any])
     
+    /**
+      * String used for calculate font metrics.
+      * These characters are all tall to help calculate the height required for text.
+      */
     @JSImport("@pixi/text/lib/TextMetrics", "TextMetrics.METRICS_STRING")
     @js.native
     def METRICS_STRING: String = js.native
@@ -102,20 +105,33 @@ object libTextMetricsMod {
     def __context: Any = js.native
     inline def __context_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__context")(x.asInstanceOf[js.Any])
     
+    /** Cache of breaking spaces. */
     @JSImport("@pixi/text/lib/TextMetrics", "TextMetrics._breakingSpaces")
     @js.native
-    def _breakingSpaces: js.Array[Double] = js.native
-    inline def _breakingSpaces_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_breakingSpaces")(x.asInstanceOf[js.Any])
+    def _breakingSpaces: Any = js.native
+    inline def _breakingSpaces_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_breakingSpaces")(x.asInstanceOf[js.Any])
     
+    @JSImport("@pixi/text/lib/TextMetrics", "TextMetrics._experimentalLetterSpacingSupported")
+    @js.native
+    def _experimentalLetterSpacingSupported: js.UndefOr[Boolean] = js.native
+    inline def _experimentalLetterSpacingSupported_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_experimentalLetterSpacingSupported")(x.asInstanceOf[js.Any])
+    
+    /** Cache of {@see PIXI.TextMetrics.FontMetrics} objects. */
     @JSImport("@pixi/text/lib/TextMetrics", "TextMetrics._fonts")
     @js.native
-    def _fonts: StringDictionary[IFontMetrics] = js.native
-    inline def _fonts_=(x: StringDictionary[IFontMetrics]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_fonts")(x.asInstanceOf[js.Any])
+    def _fonts: Any = js.native
+    inline def _fonts_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_fonts")(x.asInstanceOf[js.Any])
     
+    @JSImport("@pixi/text/lib/TextMetrics", "TextMetrics._measureText")
+    @js.native
+    def _measureText: Any = js.native
+    inline def _measureText_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_measureText")(x.asInstanceOf[js.Any])
+    
+    /** Cache of new line chars. */
     @JSImport("@pixi/text/lib/TextMetrics", "TextMetrics._newlines")
     @js.native
-    def _newlines: js.Array[Double] = js.native
-    inline def _newlines_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_newlines")(x.asInstanceOf[js.Any])
+    def _newlines: Any = js.native
+    inline def _newlines_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_newlines")(x.asInstanceOf[js.Any])
     
     /**
       * Convienience function for logging each line added during the wordWrap method.
@@ -151,7 +167,7 @@ object libTextMetricsMod {
       * Examples are if the token is CJK or numbers.
       * It must return a boolean.
       * @param _token - The token
-      * @param  breakWords - The style attr break words
+      * @param breakWords - The style attr break words
       * @returns Whether to break word or not
       */
     inline def canBreakWords(_token: String, breakWords: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("canBreakWords")(_token.asInstanceOf[js.Any], breakWords.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -166,7 +182,7 @@ object libTextMetricsMod {
     /**
       * Determines whether we should collapse newLine chars.
       * @param whiteSpace - The white space
-      * @returns  should collapse
+      * @returns should collapse
       */
     @JSImport("@pixi/text/lib/TextMetrics", "TextMetrics.collapseNewlines")
     @js.native
@@ -184,6 +200,17 @@ object libTextMetricsMod {
     inline def collapseSpaces_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("collapseSpaces")(x.asInstanceOf[js.Any])
     
     /**
+      * New rendering behavior for letter-spacing which uses Chrome's new native API. This will
+      * lead to more accurate letter-spacing results because it does not try to manually draw
+      * each character. However, this Chrome API is experimental and may not serve all cases yet.
+      * @see PIXI.TextMetrics.experimentalLetterSpacingSupported
+      */
+    @JSImport("@pixi/text/lib/TextMetrics", "TextMetrics.experimentalLetterSpacing")
+    @js.native
+    def experimentalLetterSpacing: Boolean = js.native
+    inline def experimentalLetterSpacing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("experimentalLetterSpacing")(x.asInstanceOf[js.Any])
+    
+    /**
       * Gets & sets the widths of calculated characters in a cache object
       * @param key            - The key
       * @param letterSpacing  - The letter spacing
@@ -195,6 +222,19 @@ object libTextMetricsMod {
     @js.native
     def getFromCache: Any = js.native
     inline def getFromCache_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getFromCache")(x.asInstanceOf[js.Any])
+    
+    /**
+      * A Unicode "character", or "grapheme cluster", can be composed of multiple Unicode code points,
+      * such as letters with diacritical marks (e.g. `'\\u0065\\u0301'`, letter e with acute)
+      * or emojis with modifiers (e.g. `'\\uD83E\\uDDD1\\u200D\\uD83D\\uDCBB'`, technologist).
+      * The new `Intl.Segmenter` API in ES2022 can split the string into grapheme clusters correctly. If it is not available,
+      * PixiJS will fallback to use the iterator of String, which can only spilt the string into code points.
+      * If you want to get full functionality in environments that don't support `Intl.Segmenter` (such as Firefox),
+      * you can use other libraries such as [grapheme-splitter]{@link https://www.npmjs.com/package/grapheme-splitter}
+      * or [graphemer]{@link https://www.npmjs.com/package/graphemer} to create a polyfill. Since these libraries can be
+      * relatively large in size to handle various Unicode grapheme clusters properly, PixiJS won't use them directly.
+      */
+    inline def graphemeSegmenter(s: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("graphemeSegmenter")(s.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
     /**
       * Determines if char is a breaking whitespace.
@@ -211,7 +251,7 @@ object libTextMetricsMod {
     
     /**
       * Determines if char is a newline.
-      * @param  char - The character
+      * @param char - The character
       * @returns True if newline, False otherwise.
       */
     @JSImport("@pixi/text/lib/TextMetrics", "TextMetrics.isNewline")
@@ -241,8 +281,8 @@ object libTextMetricsMod {
     
     /**
       * Splits a string into words, breaking-spaces and newLine characters
-      * @param  text - The text
-      * @returns  A tokenized array
+      * @param text - The text
+      * @returns A tokenized array
       */
     @JSImport("@pixi/text/lib/TextMetrics", "TextMetrics.tokenize")
     @js.native
@@ -251,7 +291,7 @@ object libTextMetricsMod {
     
     /**
       * Trims breaking whitespaces from string.
-      * @param  text - The text
+      * @param text - The text
       * @returns Trimmed string
       */
     @JSImport("@pixi/text/lib/TextMetrics", "TextMetrics.trimRight")
@@ -277,17 +317,32 @@ object libTextMetricsMod {
       * It is called when a token (usually a word) has to be split into separate pieces
       * in order to determine the point to break a word.
       * It must return an array of characters.
-      * @example
-      * // Correctly splits emojis, eg "🤪🤪" will result in two element array, each with one emoji.
-      * TextMetrics.wordWrapSplit = (token) => [...token];
-      * @param  token - The token to split
+      * @param token - The token to split
       * @returns The characters of the token
+      * @see TextMetrics.graphemeSegmenter
       */
     inline def wordWrapSplit(token: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("wordWrapSplit")(token.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
     inline def wordWrap_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wordWrap")(x.asInstanceOf[js.Any])
   }
   
+  /**
+    * Internal return object for {@link PIXI.TextMetrics.measureFont `TextMetrics.measureFont`}.
+    * @typedef {object} FontMetrics
+    * @property {number} ascent - The ascent distance
+    * @property {number} descent - The descent distance
+    * @property {number} fontSize - Font size from ascent to descent
+    * @memberof PIXI.TextMetrics
+    * @private
+    */
+  /**
+    * A number, or a string containing a number.
+    * @memberof PIXI
+    * @typedef {object} IFontMetrics
+    * @property {number} ascent - Font ascent
+    * @property {number} descent - Font descent
+    * @property {number} fontSize - Font size
+    */
   trait IFontMetrics extends StObject {
     
     var ascent: Double

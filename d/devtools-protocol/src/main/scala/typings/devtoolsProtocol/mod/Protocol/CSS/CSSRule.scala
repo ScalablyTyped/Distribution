@@ -25,6 +25,11 @@ trait CSSRule extends StObject {
   var media: js.UndefOr[js.Array[CSSMedia]] = js.undefined
   
   /**
+    * Array of selectors from ancestor style rules, sorted by distance from the current rule.
+    */
+  var nestingSelectors: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /**
     * Parent stylesheet's origin.
     */
   var origin: StyleSheetOrigin
@@ -84,6 +89,12 @@ object CSSRule {
     inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
     inline def setMediaVarargs(value: CSSMedia*): Self = StObject.set(x, "media", js.Array(value*))
+    
+    inline def setNestingSelectors(value: js.Array[String]): Self = StObject.set(x, "nestingSelectors", value.asInstanceOf[js.Any])
+    
+    inline def setNestingSelectorsUndefined: Self = StObject.set(x, "nestingSelectors", js.undefined)
+    
+    inline def setNestingSelectorsVarargs(value: String*): Self = StObject.set(x, "nestingSelectors", js.Array(value*))
     
     inline def setOrigin(value: StyleSheetOrigin): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     

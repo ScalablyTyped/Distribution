@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libIhtmlslotsMod {
   
-  type IHTMLElementSlot[TElement /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.uifabricFoundation.uifabricFoundationStrings.a, typings.uifabricFoundation.uifabricFoundationStrings.abbr, typings.uifabricFoundation.uifabricFoundationStrings.address */ Any */] = ISlotProp[
+  type IHTMLElementSlot[TElement /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.uifabricFoundation.uifabricFoundationStrings.a, typings.uifabricFoundation.uifabricFoundationStrings.abbr, typings.uifabricFoundation.uifabricFoundationStrings.address */ Any */] = ISlotProp[
     /* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements[TElement] */ js.Any, 
     scala.Nothing
   ]

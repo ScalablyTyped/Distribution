@@ -19,7 +19,7 @@ object InlineValueContext {
   ): typings.vscodeLanguageserverTypes.mod.InlineValueContext = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(frameId.asInstanceOf[js.Any], stoppedLocation.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.InlineValueContext]
   
   /**
-    * Checks whether the given literal conforms to the [InlineValueContext](#InlineValueContext) interface.
+    * Checks whether the given literal conforms to the {@link InlineValueContext} interface.
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.InlineValueContext */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.InlineValueContext */ Boolean]
 }

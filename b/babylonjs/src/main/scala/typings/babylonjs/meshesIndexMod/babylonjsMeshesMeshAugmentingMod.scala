@@ -45,7 +45,7 @@ object babylonjsMeshesMeshAugmentingMod {
     
     /**
       * Register a custom buffer that will be instanced
-      * @see https://doc.babylonjs.com/how_to/how_to_use_instances#custom-buffers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/copies/instances#custom-buffers
       * @param kind defines the buffer kind
       * @param stride defines the stride in floats
       */

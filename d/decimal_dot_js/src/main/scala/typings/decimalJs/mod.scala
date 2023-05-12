@@ -432,8 +432,6 @@ object mod {
     def toSignificantDigits(significantDigits: Double): Decimal = js.native
     def toSignificantDigits(significantDigits: Double, rounding: Rounding): Decimal = js.native
     
-    /* private */ val toStringTag: String = js.native
-    
     def trunc(): Decimal = js.native
     
     def truncated(): Decimal = js.native

@@ -1,6 +1,7 @@
 package typings.octokitOpenapiTypes.anon
 
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.approved
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.pending
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.rejected
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,11 +19,11 @@ trait EnvironmentsState extends StObject {
   var environments: js.Array[CreatedatHtmlurl]
   
   /**
-    * @description Whether deployment to the environment(s) was approved or rejected
+    * @description Whether deployment to the environment(s) was approved or rejected or pending (with comments)
     * @example approved
     * @enum {string}
     */
-  var state: approved | rejected
+  var state: approved | rejected | pending
   
   var user: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
 }
@@ -31,7 +32,7 @@ object EnvironmentsState {
   inline def apply(
     comment: String,
     environments: js.Array[CreatedatHtmlurl],
-    state: approved | rejected,
+    state: approved | rejected | pending,
     user: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
   ): EnvironmentsState = {
     val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], environments = environments.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
@@ -47,7 +48,7 @@ object EnvironmentsState {
     
     inline def setEnvironmentsVarargs(value: CreatedatHtmlurl*): Self = StObject.set(x, "environments", js.Array(value*))
     
-    inline def setState(value: approved | rejected): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: approved | rejected | pending): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setUser(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any

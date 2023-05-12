@@ -41,4 +41,12 @@ trait TypeofBinary
   
   /** Deprecated UUID BSON type @deprecated Please use SUBTYPE_UUID */
   val SUBTYPE_UUID_OLD: /* 3 */ Double = js.native
+  
+  /** Creates an Binary instance from a base64 string */
+  def createFromBase64(base64: String): typings.bson.mod.Binary = js.native
+  def createFromBase64(base64: String, subType: Double): typings.bson.mod.Binary = js.native
+  
+  /** Creates an Binary instance from a hex digit string */
+  def createFromHexString(hex: String): typings.bson.mod.Binary = js.native
+  def createFromHexString(hex: String, subType: Double): typings.bson.mod.Binary = js.native
 }

@@ -3,7 +3,7 @@ package typings.reactCountup
 import typings.react.mod.FC
 import typings.reactCountup.buildCountUpMod.CountUpProps
 import typings.reactCountup.buildTypesMod.CountUpApi
-import typings.reactCountup.buildUseCountUpMod.useCountUpProps
+import typings.reactCountup.buildUseCountUpMod.UseCountUpProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,5 +18,5 @@ object mod {
   @js.native
   val default: FC[CountUpProps] = js.native
   
-  inline def useCountUp(props: useCountUpProps): CountUpApi = ^.asInstanceOf[js.Dynamic].applyDynamic("useCountUp")(props.asInstanceOf[js.Any]).asInstanceOf[CountUpApi]
+  inline def useCountUp(props: UseCountUpProps): CountUpApi = ^.asInstanceOf[js.Dynamic].applyDynamic("useCountUp")(props.asInstanceOf[js.Any]).asInstanceOf[CountUpApi]
 }

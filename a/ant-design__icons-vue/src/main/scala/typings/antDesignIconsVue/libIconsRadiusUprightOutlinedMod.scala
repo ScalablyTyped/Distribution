@@ -16,7 +16,7 @@ object libIconsRadiusUprightOutlinedMod extends Shortcut {
   @js.native
   trait RadiusUprightOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_RadiusUprightOutlinedIconType: String = js.native

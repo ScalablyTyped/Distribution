@@ -25,7 +25,7 @@ object libOsOsapplicationMod {
   
   @JSImport("@nginstack/engine/lib/os/OSApplication", "INFINITE_TIMEOUT")
   @js.native
-  val INFINITE_TIMEOUT: Double = js.native
+  val INFINITE_TIMEOUT: Any = js.native
   
   @JSImport("@nginstack/engine/lib/os/OSApplication", "MAXIMIZE")
   @js.native

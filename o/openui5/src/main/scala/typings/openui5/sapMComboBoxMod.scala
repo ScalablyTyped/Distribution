@@ -1,11 +1,13 @@
 package typings.openui5
 
 import typings.openui5.anon.ItemPressedValue
-import typings.openui5.anon.`13`
+import typings.openui5.anon.`16`
 import typings.openui5.jQuery.Event
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMComboBoxBaseMod.ComboBoxBaseSettings
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
+import typings.std.Object
+import typings.std.PropertyKey
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -53,6 +55,27 @@ object sapMComboBoxMod {
       */
     mSettings: ComboBoxSettings
     ) = this()
+    
+    /** The initial value of Object.prototype.constructor is the standard built-in Object constructor. */
+    /* standard es5 */
+    /* CompleteClass */
+    var constructor: js.Function = js.native
+    
+    /**
+      * Determines whether an object has a property with the specified name.
+      * @param v A property name.
+      */
+    /* standard es5 */
+    /* CompleteClass */
+    override def hasOwnProperty(v: PropertyKey): Boolean = js.native
+    
+    /**
+      * Determines whether a specified property is enumerable.
+      * @param v A property name.
+      */
+    /* standard es5 */
+    /* CompleteClass */
+    override def propertyIsEnumerable(v: PropertyKey): Boolean = js.native
   }
   /* static members */
   object default {
@@ -124,9 +147,14 @@ object sapMComboBoxMod {
   
   @js.native
   trait ComboBox
-    extends typings.openui5.sapMComboBoxBaseMod.default {
+    extends typings.openui5.sapMComboBoxBaseMod.default
+       with /* was: sap.m.IToolbarInteractiveControl */ Object {
+    
+    var __implements__sap_m_IToolbarInteractiveControl: Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Configures the SuggestionsPopover's list.
       */
     def _configureList(/**
@@ -232,6 +260,8 @@ object sapMComboBoxMod {
     mParameters: ItemPressedValue): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:selectionChange selectionChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -240,9 +270,11 @@ object sapMComboBoxMod {
     def fireSelectionChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: `13`): this.type = js.native
+    mParameters: `16`): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Gets the default selected item from the aggregation named `items`.
       *
       * @returns Null, as there is no default selected item
@@ -295,36 +327,50 @@ object sapMComboBoxMod {
     def getSelectedKey(): String = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * This event handler will be called after the ComboBox Picker's List is rendered.
       */
     def onAfterRenderingList(): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * This event handler will be called after the ComboBox's Picker is rendered.
       */
     def onAfterRenderingPicker(): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * This event handler is called before the picker popup is opened.
       */
     def onBeforeOpen(): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * This event handler will be called before the ComboBox is rendered.
       */
     def onBeforeRendering(): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * This event handler will be called before the ComboBox' Picker of type `sap.m.Popover` is rendered.
       */
     def onBeforeRenderingDropdown(): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * This event handler will be called before the ComboBox Picker's List is rendered.
       */
     def onBeforeRenderingList(): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * This event handler will be called before the ComboBox's Picker is rendered.
       */
     def onBeforeRenderingPicker(): Unit = js.native
@@ -415,6 +461,8 @@ object sapMComboBoxMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Synchronizes the `selectedItem` association and the `selectedItemId` property.
       */
     def synchronizeSelection(): Unit = js.native

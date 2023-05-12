@@ -2,6 +2,7 @@ package typings.three
 
 import typings.std.ArrayLike
 import typings.three.srcConstantsMod.InterpolationModes
+import typings.three.srcMathInterpolantMod.Interpolant
 import typings.three.srcMathInterpolantsCubicInterpolantMod.CubicInterpolant
 import typings.three.srcMathInterpolantsDiscreteInterpolantMod.DiscreteInterpolant
 import typings.three.srcMathInterpolantsLinearInterpolantMod.LinearInterpolant
@@ -20,8 +21,8 @@ object srcAnimationKeyframeTrackMod {
       * @param values
       * @param [interpolation=THREE.InterpolateLinear]
       */
-    def this(name: String, times: ArrayLike[Any], values: ArrayLike[Any]) = this()
-    def this(name: String, times: ArrayLike[Any], values: ArrayLike[Any], interpolation: InterpolationModes) = this()
+    def this(name: String, times: ArrayLike[Double], values: ArrayLike[Any]) = this()
+    def this(name: String, times: ArrayLike[Double], values: ArrayLike[Any], interpolation: InterpolationModes) = this()
     
     /**
       * @default THREE.InterpolateLinear
@@ -39,6 +40,8 @@ object srcAnimationKeyframeTrackMod {
     var ValueBufferType: js.typedarray.Float32Array = js.native
     
     var ValueTypeName: String = js.native
+    
+    def createInterpolant(): Interpolant = js.native
     
     def getInterpolation(): InterpolationModes = js.native
     

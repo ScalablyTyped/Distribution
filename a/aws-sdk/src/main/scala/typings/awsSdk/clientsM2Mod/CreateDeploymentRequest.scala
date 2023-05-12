@@ -22,7 +22,7 @@ trait CreateDeploymentRequest extends StObject {
   var clientToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The identifier of the environment where this application will be deployed.
+    * The identifier of the runtime environment where you want to deploy this application.
     */
   var environmentId: Identifier
 }

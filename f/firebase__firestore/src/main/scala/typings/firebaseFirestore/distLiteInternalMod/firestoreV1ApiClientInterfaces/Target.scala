@@ -9,6 +9,8 @@ trait Target extends StObject {
   
   var documents: js.UndefOr[DocumentsTarget] = js.undefined
   
+  var expectedCount: js.UndefOr[Double | typings.firebaseFirestore.anon.Value] = js.undefined
+  
   var once: js.UndefOr[Boolean] = js.undefined
   
   var query: js.UndefOr[QueryTarget] = js.undefined
@@ -32,6 +34,10 @@ object Target {
     inline def setDocuments(value: DocumentsTarget): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
     
     inline def setDocumentsUndefined: Self = StObject.set(x, "documents", js.undefined)
+    
+    inline def setExpectedCount(value: Double | typings.firebaseFirestore.anon.Value): Self = StObject.set(x, "expectedCount", value.asInstanceOf[js.Any])
+    
+    inline def setExpectedCountUndefined: Self = StObject.set(x, "expectedCount", js.undefined)
     
     inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
     

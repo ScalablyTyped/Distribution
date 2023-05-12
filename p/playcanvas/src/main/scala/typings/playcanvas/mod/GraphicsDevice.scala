@@ -1,6 +1,7 @@
 package typings.playcanvas.mod
 
 import typings.playcanvas.anon.CompileTime
+import typings.playcanvas.anon.Depth
 import typings.playcanvas.anon.Ib
 import typings.std.DOMRect
 import typings.std.HTMLCanvasElement
@@ -8,11 +9,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('./render-target.js').RenderTarget} RenderTarget */
-/** @typedef {import('./shader.js').Shader} Shader */
-/** @typedef {import('./texture.js').Texture} Texture */
-/** @typedef {import('./index-buffer.js').IndexBuffer} IndexBuffer */
-/** @typedef {import('./vertex-buffer.js').VertexBuffer} VertexBuffer */
 /**
   * The graphics device manages the underlying graphics context. It is responsible for submitting
   * render state changes and graphics primitives to the hardware. A graphics device is tied to a
@@ -24,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("playcanvas", "GraphicsDevice")
 @js.native
 open class GraphicsDevice protected () extends EventHandler {
-  def this(canvas: Any) = this()
+  def this(canvas: Any, options: Any) = this()
   
   var _drawCallsPerFrame: Double = js.native
   
@@ -42,6 +38,10 @@ open class GraphicsDevice protected () extends EventHandler {
   
   def _isImageBrowserInterface(texture: Any): Boolean = js.native
   
+  def _isImageCanvasInterface(texture: Any): Boolean = js.native
+  
+  def _isImageVideoInterface(texture: Any): Boolean = js.native
+  
   var _maxPixelRatio: Double = js.native
   
   var _primsPerFrame: js.Array[Double] = js.native
@@ -57,11 +57,19 @@ open class GraphicsDevice protected () extends EventHandler {
   var _width: Double = js.native
   
   /**
+    * An object representing current blend state
+    *
+    * @ignore
+    */
+  var blendState: BlendState = js.native
+  
+  /**
     * The maximum number of supported bones using uniform buffers.
     *
     * @type {number}
+    * @readonly
     */
-  var boneLimit: Double = js.native
+  val boneLimit: Double = js.native
   
   var buffers: js.Array[Any] = js.native
   
@@ -69,10 +77,22 @@ open class GraphicsDevice protected () extends EventHandler {
     * The canvas DOM element that provides the underlying WebGL context used by the graphics device.
     *
     * @type {HTMLCanvasElement}
+    * @readonly
     */
-  var canvas: HTMLCanvasElement = js.native
+  val canvas: HTMLCanvasElement = js.native
   
   var clientRect: DOMRect = js.native
+  
+  var cullMode: Double = js.native
+  
+  var defaultClearOptions: Depth = js.native
+  
+  /**
+    * The current depth state.
+    *
+    * @ignore
+    */
+  var depthState: DepthState = js.native
   
   /**
     * Fired when the canvas is resized.
@@ -87,12 +107,19 @@ open class GraphicsDevice protected () extends EventHandler {
   def destroy(): Unit = js.native
   
   /**
-    * The graphics device type, DEVICETYPE_WEBGL or DEVICETYPE_WEBGPU.
+    * The type of the device. Can be one of pc.DEVICETYPE_WEBGL1, pc.DEVICETYPE_WEBGL2 or pc.DEVICETYPE_WEBGPU.
     *
-    * @type {string}
+    * @type {import('./constants.js').DEVICETYPE_WEBGL1 | import('./constants.js').DEVICETYPE_WEBGL2 | import('./constants.js').DEVICETYPE_WEBGPU}
+    */
+  def deviceType: String = js.native
+  
+  /**
+    * Function which executes at the start of the frame. This should not be called manually, as
+    * it is handled by the AppBase instance.
+    *
     * @ignore
     */
-  var deviceType: String = js.native
+  def frameStart(): Unit = js.native
   
   def fullscreen: Boolean = js.native
   /**
@@ -117,10 +144,10 @@ open class GraphicsDevice protected () extends EventHandler {
   /**
     * Queries the currently set render target on the device.
     *
-    * @returns {RenderTarget} The current render target.
+    * @returns {import('./render-target.js').RenderTarget} The current render target.
     * @example
     * // Get the current render target
-    * var renderTarget = device.getRenderTarget();
+    * const renderTarget = device.getRenderTarget();
     */
   def getRenderTarget(): RenderTarget = js.native
   
@@ -133,32 +160,47 @@ open class GraphicsDevice protected () extends EventHandler {
   
   var indexBuffer: IndexBuffer = js.native
   
+  var initOptions: Any = js.native
+  
   /**
     * Initialize render target before it can be used.
     *
-    * @param {RenderTarget} target - The render target to be initialized.
+    * @param {import('./render-target.js').RenderTarget} target - The render target to be
+    * initialized.
     * @ignore
     */
   def initRenderTarget(target: RenderTarget): Unit = js.native
   
   def initializeContextCaches(): Unit = js.native
   
+  def initializeRenderState(): Unit = js.native
+  
   /** @type {boolean} */
   var insideRenderPass: Boolean = js.native
+  
+  /**
+    * True if the deviceType is WebGPU
+    *
+    * @type {boolean}
+    * @readonly
+    */
+  val isWebGPU: Boolean = js.native
   
   /**
     * The maximum supported texture anisotropy setting.
     *
     * @type {number}
+    * @readonly
     */
-  var maxAnisotropy: Double = js.native
+  val maxAnisotropy: Double = js.native
   
   /**
     * The maximum supported dimension of a cube map.
     *
     * @type {number}
+    * @readonly
     */
-  var maxCubeMapSize: Double = js.native
+  val maxCubeMapSize: Double = js.native
   
   def maxPixelRatio: Double = js.native
   /**
@@ -172,32 +214,56 @@ open class GraphicsDevice protected () extends EventHandler {
     * The maximum supported dimension of a texture.
     *
     * @type {number}
+    * @readonly
     */
-  var maxTextureSize: Double = js.native
+  val maxTextureSize: Double = js.native
   
   /**
     * The maximum supported dimension of a 3D texture (any axis).
     *
     * @type {number}
+    * @readonly
     */
-  var maxVolumeSize: Double = js.native
+  val maxVolumeSize: Double = js.native
   
   def onDestroyShader(shader: Any): Unit = js.native
   
   def postDestroy(): Unit = js.native
   
   /**
+    * Function that executes after the device has been created.
+    */
+  def postInit(): Unit = js.native
+  
+  /**
     * The highest shader precision supported by this graphics device. Can be 'hiphp', 'mediump' or
     * 'lowp'.
     *
     * @type {string}
+    * @readonly
     */
-  var precision: String = js.native
+  val precision: String = js.native
+  
+  /**
+    * A vertex buffer representing a quad.
+    *
+    * @type {VertexBuffer}
+    * @ignore
+    */
+  var quadVertexBuffer: VertexBuffer = js.native
+  
+  /**
+    * Index of the currently active render pass.
+    *
+    * @type {number}
+    * @ignore
+    */
+  var renderPassIndex: Double = js.native
   
   /**
     * Currently active render target.
     *
-    * @type {RenderTarget}
+    * @type {import('./render-target.js').RenderTarget}
     * @ignore
     */
   var renderTarget: RenderTarget = js.native
@@ -215,11 +281,27 @@ open class GraphicsDevice protected () extends EventHandler {
   def resizeCanvas(width: Double, height: Double): Unit = js.native
   
   /**
+    * The number of hardware anti-aliasing samples used by the frame buffer.
+    *
+    * @readonly
+    * @type {number}
+    */
+  val samples: Double = js.native
+  
+  /**
     * The scope namespace for shader attributes and variables.
     *
     * @type {ScopeSpace}
+    * @readonly
     */
-  var scope: ScopeSpace = js.native
+  val scope: ScopeSpace = js.native
+  
+  /**
+    * Sets the specified blend state.
+    *
+    * @param {BlendState} blendState - New blend state.
+    */
+  def setBlendState(blendState: BlendState): Unit = js.native
   
   /**
     * Specifies the maximum number of bones that the device can support on the current hardware.
@@ -232,11 +314,31 @@ open class GraphicsDevice protected () extends EventHandler {
   def setBoneLimit(maxBones: Double): Unit = js.native
   
   /**
+    * Controls how triangles are culled based on their face direction. The default cull mode is
+    * {@link CULLFACE_BACK}.
+    *
+    * @param {number} cullMode - The cull mode to set. Can be:
+    *
+    * - {@link CULLFACE_NONE}
+    * - {@link CULLFACE_BACK}
+    * - {@link CULLFACE_FRONT}
+    */
+  def setCullMode(cullMode: Double): Unit = js.native
+  
+  /**
+    * Sets the specified depth state.
+    *
+    * @param {DepthState} depthState - New depth state.
+    */
+  def setDepthState(depthState: DepthState): Unit = js.native
+  
+  /**
     * Sets the current index buffer on the graphics device. On subsequent calls to
     * {@link GraphicsDevice#draw}, the specified index buffer will be used to provide index data
     * for any indexed primitives.
     *
-    * @param {IndexBuffer} indexBuffer - The index buffer to assign to the device.
+    * @param {import('./index-buffer.js').IndexBuffer} indexBuffer - The index buffer to assign to
+    * the device.
     */
   def setIndexBuffer(indexBuffer: IndexBuffer): Unit = js.native
   
@@ -244,7 +346,8 @@ open class GraphicsDevice protected () extends EventHandler {
     * Sets the specified render target on the device. If null is passed as a parameter, the back
     * buffer becomes the current target for all rendering operations.
     *
-    * @param {RenderTarget} renderTarget - The render target to activate.
+    * @param {import('./render-target.js').RenderTarget} renderTarget - The render target to
+    * activate.
     * @example
     * // Set a render target to receive all rendering output
     * device.setRenderTarget(renderTarget);
@@ -265,25 +368,72 @@ open class GraphicsDevice protected () extends EventHandler {
   def setResolution(width: Double, height: Double): Unit = js.native
   
   /**
+    * Sets the specified stencil state. If both stencilFront and stencilBack are null, stencil
+    * operation is disabled.
+    *
+    * @param {StencilParameters} [stencilFront] - The front stencil parameters. Defaults to
+    * {@link StencilParameters#DEFAULT} if not specified.
+    * @param {StencilParameters} [stencilBack] - The back stencil parameters. Defaults to
+    * {@link StencilParameters#DEFAULT} if not specified.
+    */
+  def setStencilState(): Unit = js.native
+  def setStencilState(stencilFront: Unit, stencilBack: StencilParameters): Unit = js.native
+  def setStencilState(stencilFront: StencilParameters): Unit = js.native
+  def setStencilState(stencilFront: StencilParameters, stencilBack: StencilParameters): Unit = js.native
+  
+  /**
     * Sets the current vertex buffer on the graphics device. On subsequent calls to
     * {@link GraphicsDevice#draw}, the specified vertex buffer(s) will be used to provide vertex
     * data for any primitives.
     *
-    * @param {VertexBuffer} vertexBuffer - The vertex buffer to assign to the device.
+    * @param {import('./vertex-buffer.js').VertexBuffer} vertexBuffer - The vertex buffer to
+    * assign to the device.
     */
   def setVertexBuffer(vertexBuffer: VertexBuffer): Unit = js.native
   
+  var sh: Double = js.native
+  
   var shader: Any = js.native
   
-  /** @type {Shader[]} */
+  /** @type {import('./shader.js').Shader[]} */
   var shaders: js.Array[Shader] = js.native
+  
+  /**
+    * The current back stencil parameters.
+    *
+    * @ignore
+    */
+  var stencilBack: StencilParameters = js.native
+  
+  /**
+    * True if stencil is enabled and stencilFront and stencilBack are used
+    *
+    * @ignore
+    */
+  var stencilEnabled: Boolean = js.native
+  
+  /**
+    * The current front stencil parameters.
+    *
+    * @ignore
+    */
+  var stencilFront: StencilParameters = js.native
   
   /**
     * True if hardware instancing is supported.
     *
     * @type {boolean}
+    * @readonly
     */
-  var supportsInstancing: Boolean = js.native
+  val supportsInstancing: Boolean = js.native
+  
+  /**
+    * True if the main framebuffer contains stencil attachment.
+    *
+    * @ignore
+    * @type {boolean}
+    */
+  var supportsStencil: Boolean = js.native
   
   /**
     * True if the device supports uniform buffers.
@@ -293,7 +443,13 @@ open class GraphicsDevice protected () extends EventHandler {
     */
   var supportsUniformBuffers: Boolean = js.native
   
-  /** @type {RenderTarget[]} */
+  var sw: Double = js.native
+  
+  var sx: Double = js.native
+  
+  var sy: Double = js.native
+  
+  /** @type {import('./render-target.js').RenderTarget[]} */
   var targets: js.Array[RenderTarget] = js.native
   
   var textureBias: ScopeId = js.native
@@ -302,17 +458,19 @@ open class GraphicsDevice protected () extends EventHandler {
     * True if 32-bit floating-point textures can be used as a frame buffer.
     *
     * @type {boolean}
+    * @readonly
     */
-  var textureFloatRenderable: Boolean = js.native
+  val textureFloatRenderable: Boolean = js.native
   
   /**
     * True if 16-bit floating-point textures can be used as a frame buffer.
     *
     * @type {boolean}
+    * @readonly
     */
-  var textureHalfFloatRenderable: Boolean = js.native
+  val textureHalfFloatRenderable: Boolean = js.native
   
-  /** @type {Texture[]} */
+  /** @type {import('./texture.js').Texture[]} */
   var textures: js.Array[Texture] = js.native
   
   def toJSON(key: Any): Any = js.native
@@ -321,10 +479,30 @@ open class GraphicsDevice protected () extends EventHandler {
   
   var vertexBuffers: js.Array[Any] = js.native
   
+  var vh: Double = js.native
+  
+  var vw: Double = js.native
+  
+  var vx: Double = js.native
+  
+  var vy: Double = js.native
+  
   /**
     * Width of the back buffer in pixels.
     *
     * @type {number}
     */
   def width: Double = js.native
+}
+object GraphicsDevice {
+  
+  @JSImport("playcanvas", "GraphicsDevice")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("playcanvas", "GraphicsDevice.EVENT_RESIZE")
+  @js.native
+  def EVENT_RESIZE: String = js.native
+  inline def EVENT_RESIZE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_RESIZE")(x.asInstanceOf[js.Any])
 }

@@ -78,6 +78,15 @@ trait UniqueValueRendererProperAuthoringInfo extends StObject {
     */
   var legendOptions: js.UndefOr[UniqueValueRendererLegendOptions] = js.undefined
   
+  /**
+    * Indicates whether the order of the classes or [uniqueValueInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#uniqueValueInfos) in the renderer definition should be used for the feature drawing order of the layer.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#orderByClassesEnabled)
+    */
+  var orderByClassesEnabled: js.UndefOr[Boolean] = js.undefined
+  
   var `type`: `unique-value`
   
   /**
@@ -161,6 +170,10 @@ object UniqueValueRendererProperAuthoringInfo {
     inline def setLegendOptions(value: UniqueValueRendererLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
     
     inline def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
+    
+    inline def setOrderByClassesEnabled(value: Boolean): Self = StObject.set(x, "orderByClassesEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setOrderByClassesEnabledUndefined: Self = StObject.set(x, "orderByClassesEnabled", js.undefined)
     
     inline def setType(value: `unique-value`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

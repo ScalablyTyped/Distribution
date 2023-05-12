@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "peberminta" : "0.8.0"
+      "peberminta" : "0.9.0"
     }
   ],
   "test-dependencies" : [
     {
-      "peberminta" : "0.8.0"
+      "peberminta" : "0.9.0"
     }
   ],
   "compile-devDependencies" : [

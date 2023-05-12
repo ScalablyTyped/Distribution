@@ -12,7 +12,7 @@ trait ImageTestsConfiguration extends StObject {
   var imageTestsEnabled: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
-    * The maximum time in minutes that tests are permitted to run.
+    * The maximum time in minutes that tests are permitted to run.  The timeoutMinutes attribute is not currently active. This value is ignored. 
     */
   var timeoutMinutes: js.UndefOr[ImageTestsTimeoutMinutes] = js.undefined
 }

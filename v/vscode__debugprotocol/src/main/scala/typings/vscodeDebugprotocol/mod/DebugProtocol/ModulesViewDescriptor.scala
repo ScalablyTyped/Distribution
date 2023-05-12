@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** The ModulesViewDescriptor is the container for all declarative configuration options of a ModuleView.
+/** The ModulesViewDescriptor is the container for all declarative configuration options of a module view.
 		For now it only specifies the columns to be shown in the modules view.
 	*/
 trait ModulesViewDescriptor extends StObject {

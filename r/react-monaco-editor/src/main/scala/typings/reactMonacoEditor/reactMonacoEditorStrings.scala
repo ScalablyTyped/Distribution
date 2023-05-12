@@ -59,6 +59,10 @@ object reactMonacoEditorStrings {
   inline def ctrlKey: ctrlKey = "ctrlKey".asInstanceOf[ctrlKey]
   
   @js.native
+  sealed trait dimmed extends StObject
+  inline def dimmed: dimmed = "dimmed".asInstanceOf[dimmed]
+  
+  @js.native
   sealed trait editable extends StObject
   inline def editable: editable = "editable".asInstanceOf[editable]
   
@@ -67,8 +71,16 @@ object reactMonacoEditorStrings {
   inline def editor: editor = "editor".asInstanceOf[editor]
   
   @js.native
+  sealed trait explicit extends StObject
+  inline def explicit: explicit = "explicit".asInstanceOf[explicit]
+  
+  @js.native
   sealed trait first extends StObject
   inline def first: first = "first".asInstanceOf[first]
+  
+  @js.native
+  sealed trait font extends StObject
+  inline def font: font = "font".asInstanceOf[font]
   
   @js.native
   sealed trait full extends StObject
@@ -89,6 +101,10 @@ object reactMonacoEditorStrings {
   @js.native
   sealed trait `inline` extends StObject
   inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
+  
+  @js.native
+  sealed trait keepAll extends StObject
+  inline def keepAll: keepAll = "keepAll".asInstanceOf[keepAll]
   
   @js.native
   sealed trait languageDefined extends StObject
@@ -117,6 +133,10 @@ object reactMonacoEditorStrings {
   @js.native
   sealed trait none extends StObject
   inline def none: none = "none".asInstanceOf[none]
+  
+  @js.native
+  sealed trait normal extends StObject
+  inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
   sealed trait off extends StObject
@@ -161,6 +181,10 @@ object reactMonacoEditorStrings {
   @js.native
   sealed trait spread extends StObject
   inline def spread: spread = "spread".asInstanceOf[spread]
+  
+  @js.native
+  sealed trait svg extends StObject
+  inline def svg: svg = "svg".asInstanceOf[svg]
   
   @js.native
   sealed trait text extends StObject

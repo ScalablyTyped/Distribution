@@ -1,7 +1,11 @@
 package typings.axios
 
+import typings.axios.mod.CommonRequestHeadersList
+import typings.axios.mod.CommonResponseHeadersList
 import typings.axios.mod.Method
 import typings.axios.mod.ResponseType
+import typings.axios.mod._AxiosAdapterName
+import typings.axios.mod._ContentType
 import typings.axios.mod.responseEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,6 +26,18 @@ object axiosStrings {
   inline def ASCII: ASCII = "ASCII".asInstanceOf[ASCII]
   
   @js.native
+  sealed trait Accept
+    extends StObject
+       with CommonRequestHeadersList
+  inline def Accept: Accept = "Accept".asInstanceOf[Accept]
+  
+  @js.native
+  sealed trait Authorization
+    extends StObject
+       with CommonRequestHeadersList
+  inline def Authorization: Authorization = "Authorization".asInstanceOf[Authorization]
+  
+  @js.native
   sealed trait BASE64
     extends StObject
        with responseEncoding
@@ -38,6 +54,32 @@ object axiosStrings {
     extends StObject
        with responseEncoding
   inline def BINARY: BINARY = "BINARY".asInstanceOf[BINARY]
+  
+  @js.native
+  sealed trait `Cache-Control`
+    extends StObject
+       with CommonResponseHeadersList
+  inline def `Cache-Control`: `Cache-Control` = "Cache-Control".asInstanceOf[`Cache-Control`]
+  
+  @js.native
+  sealed trait `Content-Encoding`
+    extends StObject
+       with CommonRequestHeadersList
+       with CommonResponseHeadersList
+  inline def `Content-Encoding`: `Content-Encoding` = "Content-Encoding".asInstanceOf[`Content-Encoding`]
+  
+  @js.native
+  sealed trait `Content-Length`
+    extends StObject
+       with CommonRequestHeadersList
+       with CommonResponseHeadersList
+  inline def `Content-Length`: `Content-Length` = "Content-Length".asInstanceOf[`Content-Length`]
+  
+  @js.native
+  sealed trait `Content-Type`
+    extends StObject
+       with CommonResponseHeadersList
+  inline def `Content-Type`: `Content-Type` = "Content-Type".asInstanceOf[`Content-Type`]
   
   @js.native
   sealed trait DELETE
@@ -106,6 +148,12 @@ object axiosStrings {
   inline def PUT: PUT = "PUT".asInstanceOf[PUT]
   
   @js.native
+  sealed trait Server
+    extends StObject
+       with CommonResponseHeadersList
+  inline def Server: Server = "Server".asInstanceOf[Server]
+  
+  @js.native
   sealed trait `UCS-2`
     extends StObject
        with responseEncoding
@@ -142,10 +190,34 @@ object axiosStrings {
   inline def UTF8: UTF8 = "UTF8".asInstanceOf[UTF8]
   
   @js.native
+  sealed trait `User-Agent`
+    extends StObject
+       with CommonRequestHeadersList
+  inline def `User-Agent`: `User-Agent` = "User-Agent".asInstanceOf[`User-Agent`]
+  
+  @js.native
   sealed trait ansi_
     extends StObject
        with responseEncoding
   inline def ansi_ : ansi_ = "ansi".asInstanceOf[ansi_]
+  
+  @js.native
+  sealed trait applicationSlashjson
+    extends StObject
+       with _ContentType
+  inline def applicationSlashjson: applicationSlashjson = "application/json".asInstanceOf[applicationSlashjson]
+  
+  @js.native
+  sealed trait `applicationSlashoctet-stream`
+    extends StObject
+       with _ContentType
+  inline def `applicationSlashoctet-stream`: `applicationSlashoctet-stream` = "application/octet-stream".asInstanceOf[`applicationSlashoctet-stream`]
+  
+  @js.native
+  sealed trait `applicationSlashx-www-form-urlencoded`
+    extends StObject
+       with _ContentType
+  inline def `applicationSlashx-www-form-urlencoded`: `applicationSlashx-www-form-urlencoded` = "application/x-www-form-urlencoded".asInstanceOf[`applicationSlashx-www-form-urlencoded`]
   
   @js.native
   sealed trait arraybuffer
@@ -214,6 +286,12 @@ object axiosStrings {
   inline def hex_ : hex_ = "hex".asInstanceOf[hex_]
   
   @js.native
+  sealed trait http
+    extends StObject
+       with _AxiosAdapterName
+  inline def http: http = "http".asInstanceOf[http]
+  
+  @js.native
   sealed trait json
     extends StObject
        with ResponseType
@@ -230,6 +308,12 @@ object axiosStrings {
     extends StObject
        with Method
   inline def link_ : link_ = "link".asInstanceOf[link_]
+  
+  @js.native
+  sealed trait `multipartSlashform-data`
+    extends StObject
+       with _ContentType
+  inline def `multipartSlashform-data`: `multipartSlashform-data` = "multipart/form-data".asInstanceOf[`multipartSlashform-data`]
   
   @js.native
   sealed trait options_
@@ -274,6 +358,18 @@ object axiosStrings {
   inline def text: text = "text".asInstanceOf[text]
   
   @js.native
+  sealed trait textSlashhtml
+    extends StObject
+       with _ContentType
+  inline def textSlashhtml: textSlashhtml = "text/html".asInstanceOf[textSlashhtml]
+  
+  @js.native
+  sealed trait textSlashplain
+    extends StObject
+       with _ContentType
+  inline def textSlashplain: textSlashplain = "text/plain".asInstanceOf[textSlashplain]
+  
+  @js.native
   sealed trait `ucs-2_`
     extends StObject
        with responseEncoding
@@ -308,4 +404,10 @@ object axiosStrings {
     extends StObject
        with responseEncoding
   inline def utf8_ : utf8_ = "utf8".asInstanceOf[utf8_]
+  
+  @js.native
+  sealed trait xhr
+    extends StObject
+       with _AxiosAdapterName
+  inline def xhr: xhr = "xhr".asInstanceOf[xhr]
 }

@@ -1,5 +1,6 @@
 package typings.angularCli
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,7 +41,9 @@ object srcCommandsUpdateSchematicSchemaMod {
     /* "yarn" */ val Yarn: typings.angularCli.srcCommandsUpdateSchematicSchemaMod.PackageManager.Yarn & String = js.native
   }
   
-  trait Schema extends StObject {
+  trait Schema
+    extends StObject
+       with /* property */ StringDictionary[Any] {
     
     /**
       * When false (the default), reports an error if installed packages are incompatible with

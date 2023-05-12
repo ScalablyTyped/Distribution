@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__logger
 
-Typings are for version 2.0.2
+Typings are for version 2.0.7
 
 ## Library description:
 A logging component for use in js-libp2p modules

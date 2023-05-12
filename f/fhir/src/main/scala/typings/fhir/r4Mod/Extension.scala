@@ -93,11 +93,6 @@ trait Extension
   /**
     * Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).
     */
-  var valueCodeableReference: js.UndefOr[CodeableReference] = js.undefined
-  
-  /**
-    * Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).
-    */
   var valueCoding: js.UndefOr[Coding] = js.undefined
   
   /**
@@ -238,11 +233,6 @@ trait Extension
   /**
     * Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).
     */
-  var valueRatioRange: js.UndefOr[RatioRange] = js.undefined
-  
-  /**
-    * Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).
-    */
   var valueReference: js.UndefOr[Reference] = js.undefined
   
   /**
@@ -353,10 +343,6 @@ object Extension {
     
     inline def setValueCodeableConceptUndefined: Self = StObject.set(x, "valueCodeableConcept", js.undefined)
     
-    inline def setValueCodeableReference(value: CodeableReference): Self = StObject.set(x, "valueCodeableReference", value.asInstanceOf[js.Any])
-    
-    inline def setValueCodeableReferenceUndefined: Self = StObject.set(x, "valueCodeableReference", js.undefined)
-    
     inline def setValueCoding(value: Coding): Self = StObject.set(x, "valueCoding", value.asInstanceOf[js.Any])
     
     inline def setValueCodingUndefined: Self = StObject.set(x, "valueCoding", js.undefined)
@@ -466,10 +452,6 @@ object Extension {
     inline def setValueRangeUndefined: Self = StObject.set(x, "valueRange", js.undefined)
     
     inline def setValueRatio(value: Ratio): Self = StObject.set(x, "valueRatio", value.asInstanceOf[js.Any])
-    
-    inline def setValueRatioRange(value: RatioRange): Self = StObject.set(x, "valueRatioRange", value.asInstanceOf[js.Any])
-    
-    inline def setValueRatioRangeUndefined: Self = StObject.set(x, "valueRatioRange", js.undefined)
     
     inline def setValueRatioUndefined: Self = StObject.set(x, "valueRatio", js.undefined)
     

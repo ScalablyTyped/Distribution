@@ -14,13 +14,17 @@ object rippleRippleMod {
     def this(props: RippleProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: RippleProps, context: Any) = this()
   }
   
   trait RippleProps extends StObject {
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
   }
   object RippleProps {

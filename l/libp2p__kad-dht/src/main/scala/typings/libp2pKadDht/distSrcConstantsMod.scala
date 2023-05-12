@@ -54,6 +54,10 @@ object distSrcConstantsMod {
   @js.native
   val PROVIDER_KEY_PREFIX: /* "/dht/provider" */ String = js.native
   
+  @JSImport("@libp2p/kad-dht/dist/src/constants", "QUERY_SELF_INITIAL_INTERVAL")
+  @js.native
+  val QUERY_SELF_INITIAL_INTERVAL: Double = js.native
+  
   @JSImport("@libp2p/kad-dht/dist/src/constants", "QUERY_SELF_INTERVAL")
   @js.native
   val QUERY_SELF_INTERVAL: Double = js.native

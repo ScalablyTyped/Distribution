@@ -216,6 +216,20 @@ trait Agent extends StObject {
   def onStateChange(callback: AgentStateChangeCallback): Unit = js.native
   
   /**
+    * Subscribe a method to be called when the agent gains a WebSocket connection.
+    *
+    * @param callback A callback to receive the `Agent` API object instance.
+    */
+  def onWebSocketConnectionGained(callback: AgentCallback): Unit = js.native
+  
+  /**
+    * Subscribe a method to be called when the agent is put into an error state specific to losing a WebSocket connection.
+    *
+    * @param callback A callback to receive the `Agent` API object instance.
+    */
+  def onWebSocketConnectionLost(callback: AgentCallback): Unit = js.native
+  
+  /**
     * Updates the agent's configuration with the given `AgentConfiguration` object.
     * The phone number specified must be in E.164 format or the update fails.
     *

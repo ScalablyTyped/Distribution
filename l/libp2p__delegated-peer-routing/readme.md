@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__delegated-peer-routing
 
-Typings are for version 3.0.0
+Typings are for version 4.0.6
 
 ## Library description:
 Leverage other peers in the libp2p network to perform Peer Routing calls.

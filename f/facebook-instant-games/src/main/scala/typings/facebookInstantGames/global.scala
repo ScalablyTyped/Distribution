@@ -5,13 +5,18 @@ import typings.facebookInstantGames.FBInstant.APIError
 import typings.facebookInstantGames.FBInstant.AdInstance
 import typings.facebookInstantGames.FBInstant.Context
 import typings.facebookInstantGames.FBInstant.CustomUpdatePayload
+import typings.facebookInstantGames.FBInstant.GraphApi
 import typings.facebookInstantGames.FBInstant.InvitePayload
 import typings.facebookInstantGames.FBInstant.Leaderboard
 import typings.facebookInstantGames.FBInstant.LeaderboardUpdatePayload
+import typings.facebookInstantGames.FBInstant.LinkSharePayload
 import typings.facebookInstantGames.FBInstant.Payments
 import typings.facebookInstantGames.FBInstant.Platform
 import typings.facebookInstantGames.FBInstant.Player
+import typings.facebookInstantGames.FBInstant.Room
+import typings.facebookInstantGames.FBInstant.ScreenshotProvider
 import typings.facebookInstantGames.FBInstant.SharePayload
+import typings.facebookInstantGames.FBInstant.Squads
 import typings.facebookInstantGames.FBInstant.Tournament
 import typings.facebookInstantGames.FBInstant.Tournaments
 import org.scalablytyped.runtime.StObject
@@ -37,6 +42,14 @@ object global {
       * @throws INVALID_OPERATION
       */
     inline def canCreateShortcutAsync(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("canCreateShortcutAsync")().asInstanceOf[js.Promise[Boolean]]
+    
+    /**
+      * Utility function to check if the current player can call {@link switchNativeGameAsync()}.
+      *
+      * @returns Whether the player can call {@link switchNativeGameAsync} or not.
+      * @since 7.0
+      */
+    inline def canSwitchNativeGameAsync(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("canSwitchNativeGameAsync")().asInstanceOf[js.Promise[Boolean]]
     
     /**
       * Checks if the current player is eligible for the matchPlayerAsync API.
@@ -117,6 +130,23 @@ object global {
     inline def getPlatform(): Platform | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlatform")().asInstanceOf[Platform | Null]
     
     /**
+      * Attempt to create an instance of rewarded interstitial. This instance can then be preloaded and presented.
+      *
+      * @example
+      * FBInstant.getRewardedInterstitialAsync(
+      *   'my_placement_id'
+      * ).then(function(rewardedInterstitial) {
+      *   rewardedInterstitial.getPlacementID(); // 'my_placement_id'
+      * });
+      * @param placementID The placement ID that's been setup in your Audience Network settings.
+      * @returns A promise that resolves with a {@link AdInstance}, or rejects with a {@link APIError} if it couldn't be created.
+      * @throws ADS_TOO_MANY_INSTANCES
+      * @throws CLIENT_UNSUPPORTED_OPERATION
+      * @since 7.0
+      */
+    inline def getRewardedInterstitialAsync(placementID: String): js.Promise[AdInstance] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRewardedInterstitialAsync")(placementID.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AdInstance]]
+    
+    /**
       * Attempt to create an instance of rewarded video. This instance can then be preloaded and presented.
       * @param placementID The placement ID that's been setup in your Audience Network settings.
       * @returns A promise that resolves with a AdInstance, or rejects with a APIError if it couldn't be created.
@@ -161,6 +191,27 @@ object global {
     inline def getTournamentAsync(): js.Promise[Tournament] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTournamentAsync")().asInstanceOf[js.Promise[Tournament]]
     
     /**
+      * Contains functions and properties related to Graph APIs.
+      *
+      * @since 7.0
+      */
+    @JSGlobal("FBInstant.graphApi")
+    @js.native
+    def graphApi: GraphApi = js.native
+    inline def graphApi_=(x: GraphApi): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("graphApi")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Attempt to hide a banner ad.
+      *
+      * @example
+      * FBInstant.hideBannerAdAsync();
+      * @returns A promise that resolves after the ad is hidden.
+      * @throws CLIENT_UNSUPPORTED_OPERATION
+      * @since 7.0
+      */
+    inline def hideBannerAdAsync(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("hideBannerAdAsync")().asInstanceOf[js.Promise[Unit]]
+    
+    /**
       * Initializes the SDK library. This should be called before any other SDK functions.
       *
       * @returns A promise that resolves when the SDK is ready to use.
@@ -185,6 +236,23 @@ object global {
       * @throws INVALID_OPERATION
       */
     inline def inviteAsync(payload: InvitePayload): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("inviteAsync")(payload.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    
+    /**
+      * Attempt to load or re-load a banner ad.
+      *
+      * @example
+      * FBInstant.loadBannerAdAsync(
+      *   'my_placement_id'
+      * ).then(() => {
+      *   console.log('success');
+      * });
+      * @param placementID The placement ID that's been set up in your Audience Network settings.
+      * @returns A promise that resolves after loading a banner ad, or rejects with a #apierror if it couldn't be created.
+      * @throws RATE_LIMITED
+      * @throws CLIENT_UNSUPPORTED_OPERATION
+      * @since 7.0
+      */
+    inline def loadBannerAdAsync(placementID: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadBannerAdAsync")(placementID.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Log an app event with FB Analytics. See https://developers.facebook.com/docs/javascript/reference/v2.8#app_events for more details about FB Analytics.
@@ -282,6 +350,41 @@ object global {
     inline def quit(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("quit")().asInstanceOf[Unit]
     
     /**
+      * This registers a callback function that will get called when the user attempts to capture a screenshot of the
+      * game. Through the callback, the game can pass an image along with metadata that associates the screenshot. Users
+      * will then have the option to share the screenshot, or save it to their library.
+      *
+      * @example
+      * FBInstant.registerScreenshotProvider(function (submitAsync) {
+      *   submitAsync({
+      *     image: myBase64Image,
+      *     text: 'my awesome screenshot',
+      *     data: { custom_field: 'my awesome data' }
+      *   }).then(function () {
+      *     resumeGame();
+      *   }).catch(function (error) {
+      *     log(error);
+      *   });
+      * });
+      * @param provider A callback function.
+      * @throws INVALID_PARAM
+      * @throws CLIENT_UNSUPPORTED_OPERATION
+      * @throws INVALID_OPERATION
+      * @since 7.1
+      */
+    inline def registerScreenshotProvider(provider: ScreenshotProvider): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerScreenshotProvider")(provider.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    /**
+      * Contains functions and properties related to the messenger rooms environment.
+      *
+      * @since 7.1
+      */
+    @JSGlobal("FBInstant.room")
+    @js.native
+    def room: Room = js.native
+    inline def room_=(x: Room): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("room")(x.asInstanceOf[js.Any])
+    
+    /**
       * Report the game's initial loading progress.
       *
       * @param percentage A number between 0 and 100.
@@ -315,6 +418,43 @@ object global {
     inline def shareAsync(payload: SharePayload): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("shareAsync")(payload.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
     /**
+      * This invokes a dialog that contains a custom game link that users can copy to their clipboard, or share. A blob
+      * of data can be attached to the custom link - game sessions initiated from the link will be able to access the
+      * data through FBInstant.getEntryPointData(). This data should be less than or equal to 1000 characters when
+      * stringified. The provided text and image will be used to generate the link preview, with the game name as the
+      * title of the preview. The text is recommended to be less than 44 characters. The image is recommended to either
+      * be a square or of the aspect ratio 1.91:1. The returned promise will resolve when the dialog is closed regardless
+      * if the user actually shared the link or not.
+      *
+      * @example
+      * FBInstant.shareLinkAsync({
+      *   image: base64Picture,
+      *   text: 'Come check out what Joe has built!',
+      *   data: { customData: '...' },
+      * }).then(function() {
+      *   // continue with the game.
+      * });
+      * @param payload Specify the payload for the custom link. See example for details.
+      * @returns A promise that resolves when the share is completed or cancelled.
+      * @throws INVALID_PARAM
+      * @throws NETWORK_FAILURE
+      * @throws PENDING_REQUEST
+      * @throws INVALID_OPERATION
+      * @since 7.1
+      */
+    inline def shareLinkAsync(payload: LinkSharePayload): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("shareLinkAsync")(payload.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    
+    /**
+      * Contains functions and properties related to gaming squads.
+      *
+      * @since 7.1
+      */
+    @JSGlobal("FBInstant.squads")
+    @js.native
+    def squads: Squads = js.native
+    inline def squads_=(x: Squads): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("squads")(x.asInstanceOf[js.Any])
+    
+    /**
       * This indicates that the game has finished initial loading and is ready to start.
       * Context information will be up-to-date when the returned promise resolves.
       *
@@ -337,6 +477,17 @@ object global {
       */
     inline def switchGameAsync(appID: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("switchGameAsync")(appID.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     inline def switchGameAsync(appID: String, data: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("switchGameAsync")(appID.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    
+    /**
+      * Request that the client switch to its Native (Android/iOS) Game. The API will reject if the switch fails - else,
+      * the client will open the Game or Store.
+      *
+      * @param data An optional data payload. This will be set as the entrypoint data for the game being switched to.
+      * Must be less than or equal to 1000 characters when stringified.
+      * @since 7.0
+      */
+    inline def switchNativeGameAsync(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("switchNativeGameAsync")().asInstanceOf[js.Promise[Unit]]
+    inline def switchNativeGameAsync(data: js.Object): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("switchNativeGameAsync")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Contains functions and properties related to tournaments.

@@ -4,6 +4,7 @@ import typings.traceEventLib.anon.Labels
 import typings.traceEventLib.anon.Name
 import typings.traceEventLib.anon.Sortindex
 import typings.traceEventLib.distSchemaEventsEventMod.Event
+import typings.traceEventLib.distSchemaEventsTraceEventMod.TraceEvent
 import typings.traceEventLib.traceEventLibStrings.M
 import typings.traceEventLib.traceEventLibStrings.process_labels
 import typings.traceEventLib.traceEventLibStrings.process_name
@@ -43,7 +44,8 @@ object distSchemaEventsMetadataEventMod {
   
   trait MetadataProcessLabelsEvent
     extends StObject
-       with MetadataEvent {
+       with MetadataEvent
+       with TraceEvent {
     
     @JSName("args")
     var args_MetadataProcessLabelsEvent: Labels
@@ -69,7 +71,8 @@ object distSchemaEventsMetadataEventMod {
   
   trait MetadataProcessNameEvent
     extends StObject
-       with MetadataEvent {
+       with MetadataEvent
+       with TraceEvent {
     
     @JSName("args")
     var args_MetadataProcessNameEvent: Name
@@ -95,7 +98,8 @@ object distSchemaEventsMetadataEventMod {
   
   trait MetadataProcessSortIndexEvent
     extends StObject
-       with MetadataEvent {
+       with MetadataEvent
+       with TraceEvent {
     
     @JSName("args")
     var args_MetadataProcessSortIndexEvent: Sortindex
@@ -121,7 +125,8 @@ object distSchemaEventsMetadataEventMod {
   
   trait MetadataThreadNameEvent
     extends StObject
-       with MetadataEvent {
+       with MetadataEvent
+       with TraceEvent {
     
     @JSName("args")
     var args_MetadataThreadNameEvent: Name
@@ -147,7 +152,8 @@ object distSchemaEventsMetadataEventMod {
   
   trait MetadataThreadSortIndexEvent
     extends StObject
-       with MetadataEvent {
+       with MetadataEvent
+       with TraceEvent {
     
     @JSName("args")
     var args_MetadataThreadSortIndexEvent: Sortindex

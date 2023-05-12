@@ -1,6 +1,5 @@
 package typings.jwplayer.jwplayer
 
-import typings.jwplayer.anon.Begin
 import typings.jwplayer.jwplayerStrings.adClick
 import typings.jwplayer.jwplayerStrings.adCompanions
 import typings.jwplayer.jwplayerStrings.adComplete
@@ -54,7 +53,11 @@ trait JWPlayer extends StObject {
   def addButton(icon: String, label: String, handler: js.Function0[Unit], id: String): JWPlayer = js.native
   def addButton(icon: String, label: String, handler: js.Function0[Unit], id: String, className: String): JWPlayer = js.native
   
-  def addCues(cues: js.Array[Begin]): JWPlayer = js.native
+  def addCues(cues: js.Array[SliderCue]): JWPlayer = js.native
+  
+  def addPlugin(name: String, pluginInstance: Any): Unit = js.native
+  
+  def getAdBlock(): Boolean = js.native
   
   def getAudioTracks(): js.Array[Any] = js.native
   
@@ -66,6 +69,8 @@ trait JWPlayer extends StObject {
   
   def getControls(): Boolean = js.native
   
+  def getCues(): js.Array[SliderCue] = js.native
+  
   def getCurrentAudioTrack(): Double = js.native
   
   def getCurrentCaptions(): Double = js.native
@@ -75,6 +80,8 @@ trait JWPlayer extends StObject {
   def getDuration(): Double = js.native
   
   def getEnvironment(): Environment = js.native
+  
+  def getFloating(): Boolean = js.native
   
   def getFullscreen(): Boolean = js.native
   
@@ -90,6 +97,8 @@ trait JWPlayer extends StObject {
   
   def getPlaylistItem(): Any = js.native
   def getPlaylistItem(index: Double): Any = js.native
+  
+  def getPlugin(name: String): Any = js.native
   
   def getPosition(): Double = js.native
   
@@ -375,10 +384,13 @@ trait JWPlayer extends StObject {
   def pause(): JWPlayer = js.native
   def pause(state: Boolean): JWPlayer = js.native
   
+  def pauseAd(toggle: Boolean): Unit = js.native
+  
   def play(): JWPlayer = js.native
   def play(state: Boolean): JWPlayer = js.native
   
   def playAd(tag: String): Unit = js.native
+  def playAd(tag: js.Array[String]): Unit = js.native
   
   def playlistItem(index: Double): Unit = js.native
   
@@ -389,6 +401,7 @@ trait JWPlayer extends StObject {
   
   def removeButton(id: String): JWPlayer = js.native
   
+  def resize(width: String, height: Double): JWPlayer = js.native
   def resize(width: Double, height: Double): JWPlayer = js.native
   
   def seek(position: Double): JWPlayer = js.native
@@ -397,11 +410,15 @@ trait JWPlayer extends StObject {
   
   def setControls(controls: Boolean): Unit = js.native
   
+  def setCues(cues: js.Array[SliderCue]): JWPlayer = js.native
+  
   def setCurrentAudioTrack(index: Double): Unit = js.native
   
   def setCurrentCaptions(index: Double): Unit = js.native
   
   def setCurrentQuality(index: Double): Unit = js.native
+  
+  def setFloating(shouldFloat: Boolean): Unit = js.native
   
   def setFullscreen(state: Boolean): Unit = js.native
   
@@ -413,6 +430,8 @@ trait JWPlayer extends StObject {
   def setVolume(volume: Double): JWPlayer = js.native
   
   def setup(options: Any): JWPlayer = js.native
+  
+  def skipAd(): JWPlayer = js.native
   
   def stop(): JWPlayer = js.native
   

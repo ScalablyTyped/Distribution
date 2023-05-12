@@ -2,11 +2,11 @@ package typings.hapiCrumb
 
 import org.scalablytyped.runtime.Shortcut
 import typings.hapiCrumb.anon.Key
-import typings.hapiHapi.mod.Plugin
-import typings.hapiHapi.mod.ReqRefDefaults
-import typings.hapiHapi.mod.Request
-import typings.hapiHapi.mod.ResponseToolkit
-import typings.hapiHapi.mod.ServerStateCookieOptions
+import typings.hapiHapi.libTypesPluginMod.Plugin
+import typings.hapiHapi.libTypesRequestMod.ReqRefDefaults
+import typings.hapiHapi.libTypesRequestMod.Request
+import typings.hapiHapi.libTypesResponseMod.ResponseToolkit
+import typings.hapiHapi.libTypesServerStateMod.ServerStateCookieOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ object mod extends Shortcut {
   
   @JSImport("@hapi/crumb", JSImport.Namespace)
   @js.native
-  val ^ : Plugin[RegisterOptions] = js.native
+  val ^ : Plugin[RegisterOptions, Unit] = js.native
   
   trait RegisterOptions extends StObject {
     
@@ -154,10 +154,10 @@ object mod extends Shortcut {
     Boolean
   ]
   
-  type _To = Plugin[RegisterOptions]
+  type _To = Plugin[RegisterOptions, Unit]
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Plugin[RegisterOptions] = ^
+  override def _to: Plugin[RegisterOptions, Unit] = ^
   
   /* augmented module */
   object hapiHapiAugmentingMod {

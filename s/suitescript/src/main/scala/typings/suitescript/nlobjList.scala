@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @classDescription UI Object page type used for building lists
   * @return {nlobjList}
-  * @constructor
   */
 @js.native
 trait nlobjList

@@ -29,6 +29,8 @@ open class ClientTemplate protected () extends Element[IModel] {
     container: AbstractElement[IAbstractModel, Container]
   ) = this()
   
+  def containerAsAccessibilitySettings: AccessibilitySettings = js.native
+  
   def containerAsButton: Button = js.native
   
   def containerAsControlBarButton: ControlBarButton = js.native
@@ -77,6 +79,28 @@ object ClientTemplate {
     */
   /* static member */
   inline def create(model: IModel): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
+  
+  /**
+    * Creates and returns a new ClientTemplate instance in the SDK and on the server.
+    * The new ClientTemplate will be automatically stored in the 'screenReaderDescription' property
+    * of the parent AccessibilitySettings element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.22.0 and higher
+    */
+  /* static member */
+  inline def createInAccessibilitySettingsUnderScreenReaderDescription(container: AccessibilitySettings): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAccessibilitySettingsUnderScreenReaderDescription")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
+  
+  /**
+    * Creates and returns a new ClientTemplate instance in the SDK and on the server.
+    * The new ClientTemplate will be automatically stored in the 'screenReaderTitle' property
+    * of the parent AccessibilitySettings element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.22.0 and higher
+    */
+  /* static member */
+  inline def createInAccessibilitySettingsUnderScreenReaderTitle(container: AccessibilitySettings): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAccessibilitySettingsUnderScreenReaderTitle")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.

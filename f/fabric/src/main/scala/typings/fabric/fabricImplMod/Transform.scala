@@ -1,5 +1,6 @@
 package typings.fabric.fabricImplMod
 
+import typings.fabric.anon.Angle
 import typings.fabric.fabricStrings.bottom
 import typings.fabric.fabricStrings.left
 import typings.fabric.fabricStrings.right
@@ -37,7 +38,7 @@ trait Transform extends StObject {
   
   var originY: top | bottom
   
-  var original: Any
+  var original: Angle
   
   var scaleX: Double
   
@@ -70,7 +71,7 @@ object Transform {
     offsetY: Double,
     originX: left | right,
     originY: top | bottom,
-    original: Any,
+    original: Angle,
     scaleX: Double,
     scaleY: Double,
     shiftKey: Boolean,
@@ -113,7 +114,7 @@ object Transform {
     
     inline def setOriginY(value: top | bottom): Self = StObject.set(x, "originY", value.asInstanceOf[js.Any])
     
-    inline def setOriginal(value: Any): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
+    inline def setOriginal(value: Angle): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
     
     inline def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
     

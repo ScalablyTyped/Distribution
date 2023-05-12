@@ -22,6 +22,8 @@ object distMod {
   
   inline def getRole(element: Element): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRole")(element.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
+  inline def isDisabled(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDisabled")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   inline def isInaccessible(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInaccessible")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def isInaccessible(element: Element, options: IsInaccessibleOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInaccessible")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   

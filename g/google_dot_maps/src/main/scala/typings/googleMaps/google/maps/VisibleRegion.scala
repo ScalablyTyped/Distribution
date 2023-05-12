@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Contains the four points defining the four-sided polygon that is the
-  * visible region of the map. On a vector map this polygon can be a trapezoid
-  * instead of a rectangle, when a vector map has tilt.
-  */
 trait VisibleRegion extends StObject {
   
   var farLeft: LatLng

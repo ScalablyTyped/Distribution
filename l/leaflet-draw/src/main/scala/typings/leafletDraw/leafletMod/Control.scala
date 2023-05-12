@@ -3,10 +3,10 @@ package typings.leafletDraw.leafletMod
 import typings.leaflet.mod.ControlPosition
 import typings.leaflet.mod.Control_
 import typings.leaflet.mod.FeatureGroup_
+import typings.leafletDraw.anon.OmitEditHandlerOptionsfea
 import typings.leafletDraw.leafletDrawBooleans.`false`
 import typings.leafletDraw.leafletMod.DrawOptions.CircleMarkerOptions
 import typings.leafletDraw.leafletMod.DrawOptions.CircleOptions
-import typings.leafletDraw.leafletMod.DrawOptions.EditHandlerOptions
 import typings.leafletDraw.leafletMod.DrawOptions.MarkerOptions
 import typings.leafletDraw.leafletMod.DrawOptions.PolygonOptions
 import typings.leafletDraw.leafletMod.DrawOptions.PolylineOptions
@@ -163,7 +163,7 @@ object Control {
       *
       * @default null
       */
-    var edit: js.UndefOr[EditHandlerOptions | `false`] = js.undefined
+    var edit: js.UndefOr[OmitEditHandlerOptionsfea | `false`] = js.undefined
     
     /**
       * This is the FeatureGroup that stores all editable shapes.
@@ -190,7 +190,7 @@ object Control {
     @scala.inline
     implicit open class MutableBuilder[Self <: typings.leafletDraw.leafletMod.Control.EditOptions] (val x: Self) extends AnyVal {
       
-      inline def setEdit(value: EditHandlerOptions | `false`): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
+      inline def setEdit(value: OmitEditHandlerOptionsfea | `false`): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
       
       inline def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
       

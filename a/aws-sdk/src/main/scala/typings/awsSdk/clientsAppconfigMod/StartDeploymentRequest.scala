@@ -17,7 +17,7 @@ trait StartDeploymentRequest extends StObject {
   var ConfigurationProfileId: Id
   
   /**
-    * The configuration version to deploy.
+    * The configuration version to deploy. If deploying an AppConfig hosted configuration version, you can specify either the version number or version label.
     */
   var ConfigurationVersion: Version
   
@@ -35,6 +35,11 @@ trait StartDeploymentRequest extends StObject {
     * The environment ID.
     */
   var EnvironmentId: Id
+  
+  /**
+    * The KMS key identifier (key ID, key alias, or key ARN). AppConfig uses this ID to encrypt the configuration data using a customer managed key. 
+    */
+  var KmsKeyIdentifier: js.UndefOr[Identifier] = js.undefined
   
   /**
     * Metadata to assign to the deployment. Tags help organize and categorize your AppConfig resources. Each tag consists of a key and an optional value, both of which you define.
@@ -70,6 +75,10 @@ object StartDeploymentRequest {
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     inline def setEnvironmentId(value: Id): Self = StObject.set(x, "EnvironmentId", value.asInstanceOf[js.Any])
+    
+    inline def setKmsKeyIdentifier(value: Identifier): Self = StObject.set(x, "KmsKeyIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setKmsKeyIdentifierUndefined: Self = StObject.set(x, "KmsKeyIdentifier", js.undefined)
     
     inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

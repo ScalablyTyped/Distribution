@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MozContextProperties
+import typings.csstype.mod.Property.TextRendering
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `381` extends StObject {
   
   var value: js.UndefOr[
-    MozContextProperties | (js.Array[
+    TextRendering | (js.Array[
       (Extract[
-        js.UndefOr[MozContextProperties | js.Array[NonNullable[js.UndefOr[MozContextProperties]]]], 
+        js.UndefOr[TextRendering | js.Array[NonNullable[js.UndefOr[TextRendering]]]], 
         String
-      ]) | NonNullable[js.UndefOr[MozContextProperties]]
+      ]) | NonNullable[js.UndefOr[TextRendering]]
     ])
   ] = js.native
 }

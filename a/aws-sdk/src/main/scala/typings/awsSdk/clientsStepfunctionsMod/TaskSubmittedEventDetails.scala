@@ -17,12 +17,12 @@ trait TaskSubmittedEventDetails extends StObject {
   var outputDetails: js.UndefOr[HistoryEventExecutionDataDetails] = js.undefined
   
   /**
-    * The service name of the resource in a task state.
+    * The action of the resource called by a task state.
     */
   var resource: Name
   
   /**
-    * The action of the resource called by a task state.
+    * The service name of the resource in a task state.
     */
   var resourceType: Name
 }

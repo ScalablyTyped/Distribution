@@ -2,15 +2,18 @@ package typings.pdfjsDist
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.pdfjsDist.anon.BaseUrl
+import typings.pdfjsDist.anon.DocId
 import typings.pdfjsDist.anon.OwnerDocument
 import typings.pdfjsDist.anon.Rotation
 import typings.pdfjsDist.anon.`0`
 import typings.pdfjsDist.pdfjsDistStrings.pdfjs_internal_id_
 import typings.pdfjsDist.typesSrcDisplayBaseFactoryMod.BaseCMapReaderFactory
 import typings.pdfjsDist.typesSrcDisplayBaseFactoryMod.BaseCanvasFactory
+import typings.pdfjsDist.typesSrcDisplayBaseFactoryMod.BaseFilterFactory
 import typings.pdfjsDist.typesSrcDisplayBaseFactoryMod.BaseSVGFactory
 import typings.pdfjsDist.typesSrcDisplayBaseFactoryMod.BaseStandardFontDataFactory
 import typings.std.Document
+import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,6 +40,14 @@ object typesSrcDisplayDisplayUtilsMod {
     def this(param0: OwnerDocument) = this()
     
     var _document: Document = js.native
+  }
+  
+  @JSImport("pdfjs-dist/types/src/display/display_utils", "DOMFilterFactory")
+  @js.native
+  open class DOMFilterFactory () extends BaseFilterFactory {
+    def this(param0: DocId) = this()
+    
+    /* private */ var `private`: Any = js.native
   }
   
   @JSImport("pdfjs-dist/types/src/display/display_utils", "DOMSVGFactory")
@@ -93,23 +104,23 @@ object typesSrcDisplayDisplayUtilsMod {
       * for converting canvas pixel location into PDF one.
       * @param {number} x - The x-coordinate.
       * @param {number} y - The y-coordinate.
-      * @returns {Object} Object containing `x` and `y` properties of the
+      * @returns {Array} Array containing `x`- and `y`-coordinates of the
       *   point in the PDF coordinate space.
       * @see {@link convertToViewportPoint}
       */
-    def convertToPdfPoint(x: Double, y: Double): js.Object = js.native
+    def convertToPdfPoint(x: Double, y: Double): js.Array[Any] = js.native
     
     /**
       * Converts PDF point to the viewport coordinates. For examples, useful for
       * converting PDF location into canvas pixel coordinates.
       * @param {number} x - The x-coordinate.
       * @param {number} y - The y-coordinate.
-      * @returns {Object} Object containing `x` and `y` properties of the
+      * @returns {Array} Array containing `x`- and `y`-coordinates of the
       *   point in the viewport coordinate space.
       * @see {@link convertToPdfPoint}
       * @see {@link convertToViewportRectangle}
       */
-    def convertToViewportPoint(x: Double, y: Double): js.Object = js.native
+    def convertToViewportPoint(x: Double, y: Double): js.Array[Any] = js.native
     
     /**
       * Converts PDF rectangle to the viewport coordinates.
@@ -125,6 +136,12 @@ object typesSrcDisplayDisplayUtilsMod {
     var offsetX: Double = js.native
     
     var offsetY: Double = js.native
+    
+    /**
+      * The original, un-scaled, viewport dimensions.
+      * @type {Object}
+      */
+    def rawDims: js.Object = js.native
     
     var rotation: Double = js.native
     
@@ -170,6 +187,9 @@ object typesSrcDisplayDisplayUtilsMod {
     extends StObject
        with /* x */ StringDictionary[Any] {
     def this(msg: Any, `type`: Any) = this()
+    def this(msg: Any, `type`: Any, extraDelay: Double) = this()
+    
+    var extraDelay: Double = js.native
     
     var `type`: Any = js.native
   }
@@ -196,6 +216,7 @@ object typesSrcDisplayDisplayUtilsMod {
   inline def getCurrentTransformInverse(ctx: Any): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentTransformInverse")(ctx.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
   
   inline def getFilenameFromUrl(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilenameFromUrl")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getFilenameFromUrl(url: String, onlyStripPath: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getFilenameFromUrl")(url.asInstanceOf[js.Any], onlyStripPath.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def getPdfFilenameFromUrl(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPdfFilenameFromUrl")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def getPdfFilenameFromUrl(url: String, defaultFilename: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPdfFilenameFromUrl")(url.asInstanceOf[js.Any], defaultFilename.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -212,6 +233,11 @@ object typesSrcDisplayDisplayUtilsMod {
   
   inline def loadScript(src: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadScript")(src.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   inline def loadScript(src: String, removeScriptElement: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadScript")(src.asInstanceOf[js.Any], removeScriptElement.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  inline def setLayerDimensions(div: HTMLDivElement, viewport: PageViewport): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLayerDimensions")(div.asInstanceOf[js.Any], viewport.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setLayerDimensions(div: HTMLDivElement, viewport: PageViewport, mustFlip: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLayerDimensions")(div.asInstanceOf[js.Any], viewport.asInstanceOf[js.Any], mustFlip.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setLayerDimensions(div: HTMLDivElement, viewport: PageViewport, mustFlip: Boolean, mustRotate: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLayerDimensions")(div.asInstanceOf[js.Any], viewport.asInstanceOf[js.Any], mustFlip.asInstanceOf[js.Any], mustRotate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setLayerDimensions(div: HTMLDivElement, viewport: PageViewport, mustFlip: Unit, mustRotate: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLayerDimensions")(div.asInstanceOf[js.Any], viewport.asInstanceOf[js.Any], mustFlip.asInstanceOf[js.Any], mustRotate.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait PageViewportCloneParameters extends StObject {
     

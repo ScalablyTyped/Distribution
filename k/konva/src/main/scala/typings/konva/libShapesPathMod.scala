@@ -5,6 +5,7 @@ import typings.konva.anon.XY
 import typings.konva.libShapeMod.Shape
 import typings.konva.libShapeMod.ShapeConfig
 import typings.konva.libTypesMod.GetSet
+import typings.konva.libTypesMod.PathSegment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,6 +16,8 @@ object libShapesPathMod {
   @js.native
   open class Path () extends Shape[PathConfig] {
     def this(config: PathConfig) = this()
+    
+    def _readDataAttribute(): Unit = js.native
     
     def _sceneFunc(context: Any): Unit = js.native
     
@@ -45,6 +48,10 @@ object libShapesPathMod {
     
     inline def getLineLength(x1: Any, y1: Any, x2: Any, y2: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getLineLength")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
+    inline def getPathLength(dataArray: js.Array[PathSegment]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getPathLength")(dataArray.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    inline def getPointAtLengthOfDataArray(length: Double, dataArray: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointAtLengthOfDataArray")(length.asInstanceOf[js.Any], dataArray.asInstanceOf[js.Any])).asInstanceOf[Any]
+    
     inline def getPointOnCubicBezier(pct: Any, P1x: Any, P1y: Any, P2x: Any, P2y: Any, P3x: Any, P3y: Any, P4x: Any, P4y: Any): X = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointOnCubicBezier")(pct.asInstanceOf[js.Any], P1x.asInstanceOf[js.Any], P1y.asInstanceOf[js.Any], P2x.asInstanceOf[js.Any], P2y.asInstanceOf[js.Any], P3x.asInstanceOf[js.Any], P3y.asInstanceOf[js.Any], P4x.asInstanceOf[js.Any], P4y.asInstanceOf[js.Any])).asInstanceOf[X]
     
     inline def getPointOnEllipticalArc(cx: Any, cy: Any, rx: Any, ry: Any, theta: Any, psi: Any): XY = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointOnEllipticalArc")(cx.asInstanceOf[js.Any], cy.asInstanceOf[js.Any], rx.asInstanceOf[js.Any], ry.asInstanceOf[js.Any], theta.asInstanceOf[js.Any], psi.asInstanceOf[js.Any])).asInstanceOf[XY]
@@ -56,7 +63,7 @@ object libShapesPathMod {
     
     inline def getPointOnQuadraticBezier(pct: Any, P1x: Any, P1y: Any, P2x: Any, P2y: Any, P3x: Any, P3y: Any): X = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointOnQuadraticBezier")(pct.asInstanceOf[js.Any], P1x.asInstanceOf[js.Any], P1y.asInstanceOf[js.Any], P2x.asInstanceOf[js.Any], P2y.asInstanceOf[js.Any], P3x.asInstanceOf[js.Any], P3y.asInstanceOf[js.Any])).asInstanceOf[X]
     
-    inline def parsePathData(data: Any): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePathData")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
+    inline def parsePathData(data: Any): js.Array[PathSegment] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePathData")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[PathSegment]]
   }
   
   trait PathConfig

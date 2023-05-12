@@ -18,35 +18,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AffiliationBefore extends StObject {
   
   /**
-    * Comma-separated list of values. Can include:
-    * \* `owner`: Repositories that are owned by the authenticated user.
-    * \* `collaborator`: Repositories that the user has been added to as a collaborator.
-    * \* `organization_member`: Repositories that the user has access to through being a member of an organization. This includes every repository on every team that the user is on.
+    * @description Comma-separated list of values. Can include:
+    *  * `owner`: Repositories that are owned by the authenticated user.
+    *  * `collaborator`: Repositories that the user has been added to as a collaborator.
+    *  * `organization_member`: Repositories that the user has access to through being a member of an organization. This includes every repository on every team that the user is on.
     */
   var affiliation: js.UndefOr[String] = js.undefined
   
-  /** Only show notifications updated before the given time. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. */
   var before: js.UndefOr[String] = js.undefined
   
-  /** The order to sort by. Default: `asc` when using `full_name`, otherwise `desc`. */
+  /** @description The order to sort by. Default: `asc` when using `full_name`, otherwise `desc`. */
   var direction: js.UndefOr[asc | desc] = js.undefined
   
-  /** Page number of the results to fetch. */
   var page: js.UndefOr[Double] = js.undefined
   
-  /** The number of results per page (max 100). */
   var per_page: js.UndefOr[Double] = js.undefined
   
-  /** Only show notifications updated after the given time. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. */
   var since: js.UndefOr[String] = js.undefined
   
-  /** The property to sort the results by. */
+  /** @description The property to sort the results by. */
   var sort: js.UndefOr[created_ | updated | pushed | full_name] = js.undefined
   
-  /** Limit results to repositories of the specified type. Will cause a `422` error if used in the same request as **visibility** or **affiliation**. */
+  /** @description Limit results to repositories of the specified type. Will cause a `422` error if used in the same request as **visibility** or **affiliation**. */
   var `type`: js.UndefOr[all | owner_ | public | `private` | member_] = js.undefined
   
-  /** Limit results to repositories with the specified visibility. */
+  /** @description Limit results to repositories with the specified visibility. */
   var visibility: js.UndefOr[all | public | `private`] = js.undefined
 }
 object AffiliationBefore {

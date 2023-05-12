@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Matrix extends StObject {
   
   @JSName("apply")
-  def apply(dim: Double, callback: js.Function1[/* array */ MathCollection, Double]): Matrix | MathArray = js.native
+  def apply(dim: Double, callback: js.Function1[/* array */ MathCollection, Double]): MathCollection = js.native
   
   def create(data: MathArray): scala.Unit = js.native
   def create(data: MathArray, datatype: String): scala.Unit = js.native
@@ -24,11 +24,11 @@ trait Matrix extends StObject {
   
   def forEach(
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  callback: js.Function3[/* a */ Any, /* b */ Double, /* c */ this.type, scala.Unit]
+  callback: js.Function3[/* a */ Any, /* b */ js.Array[Double], /* c */ this.type, scala.Unit]
   ): scala.Unit = js.native
   def forEach(
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  callback: js.Function3[/* a */ Any, /* b */ Double, /* c */ this.type, scala.Unit],
+  callback: js.Function3[/* a */ Any, /* b */ js.Array[Double], /* c */ this.type, scala.Unit],
     skipZeros: Boolean
   ): scala.Unit = js.native
   
@@ -43,11 +43,11 @@ trait Matrix extends StObject {
   
   def map(
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  callback: js.Function3[/* a */ Any, /* b */ Double, /* c */ this.type, Any]
+  callback: js.Function3[/* a */ Any, /* b */ js.Array[Double], /* c */ this.type, Any]
   ): Matrix = js.native
   def map(
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  callback: js.Function3[/* a */ Any, /* b */ Double, /* c */ this.type, Any],
+  callback: js.Function3[/* a */ Any, /* b */ js.Array[Double], /* c */ this.type, Any],
     skipZeros: Boolean
   ): Matrix = js.native
   

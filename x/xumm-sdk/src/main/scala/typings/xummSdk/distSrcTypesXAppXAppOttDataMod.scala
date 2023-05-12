@@ -1,5 +1,6 @@
 package typings.xummSdk
 
+import typings.xummSdk.anon.AccountSlug
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,6 +21,8 @@ object distSrcTypesXAppXAppOttDataMod {
     var name: js.UndefOr[String] = js.undefined
     
     var proSubscription: Boolean
+    
+    var profile: js.UndefOr[AccountSlug] = js.undefined
     
     var source: String
   }
@@ -48,6 +51,10 @@ object distSrcTypesXAppXAppOttDataMod {
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       inline def setProSubscription(value: Boolean): Self = StObject.set(x, "proSubscription", value.asInstanceOf[js.Any])
+      
+      inline def setProfile(value: AccountSlug): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      
+      inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
       
       inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
@@ -118,6 +125,8 @@ object distSrcTypesXAppXAppOttDataMod {
     
     var nodetype: js.UndefOr[String] = js.undefined
     
+    var nodewss: js.UndefOr[String] = js.undefined
+    
     var origin: js.UndefOr[xAppOrigin] = js.undefined
     
     var style: js.UndefOr[String] = js.undefined
@@ -165,6 +174,10 @@ object distSrcTypesXAppXAppOttDataMod {
       inline def setNodetype(value: String): Self = StObject.set(x, "nodetype", value.asInstanceOf[js.Any])
       
       inline def setNodetypeUndefined: Self = StObject.set(x, "nodetype", js.undefined)
+      
+      inline def setNodewss(value: String): Self = StObject.set(x, "nodewss", value.asInstanceOf[js.Any])
+      
+      inline def setNodewssUndefined: Self = StObject.set(x, "nodewss", js.undefined)
       
       inline def setOrigin(value: xAppOrigin): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       

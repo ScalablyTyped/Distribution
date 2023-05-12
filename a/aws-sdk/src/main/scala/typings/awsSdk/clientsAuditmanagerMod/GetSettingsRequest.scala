@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetSettingsRequest extends StObject {
   
   /**
-    *  The list of SettingAttribute enum values. 
+    *  The list of setting attribute enum values. 
     */
   var attribute: SettingAttribute
 }

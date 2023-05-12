@@ -16,7 +16,7 @@ object libIconsFileSyncOutlinedMod extends Shortcut {
   @js.native
   trait FileSyncOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_FileSyncOutlinedIconType: String = js.native

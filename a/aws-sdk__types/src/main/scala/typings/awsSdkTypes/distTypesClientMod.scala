@@ -68,6 +68,8 @@ object distTypesClientMod {
   }
   
   /**
+    * @public
+    *
     * function definition for different overrides of client's 'send' function.
     */
   @js.native

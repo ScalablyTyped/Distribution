@@ -27,30 +27,50 @@ object libConstMod {
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[SHAPES & Double] = js.native
     
+    /**
+      * @property {number} CIRC Circle
+      * @default 2
+      */
     @js.native
     sealed trait CIRC
       extends StObject
          with SHAPES
     /* 2 */ val CIRC: typings.pixiMath.libConstMod.SHAPES.CIRC & Double = js.native
     
+    /**
+      * @property {number} ELIP Ellipse
+      * @default 3
+      */
     @js.native
     sealed trait ELIP
       extends StObject
          with SHAPES
     /* 3 */ val ELIP: typings.pixiMath.libConstMod.SHAPES.ELIP & Double = js.native
     
+    /**
+      * @property {number} RECT Rectangle
+      * @default 0
+      */
     @js.native
     sealed trait POLY
       extends StObject
          with SHAPES
     /* 0 */ val POLY: typings.pixiMath.libConstMod.SHAPES.POLY & Double = js.native
     
+    /**
+      * @property {number} POLY Polygon
+      * @default 1
+      */
     @js.native
     sealed trait RECT
       extends StObject
          with SHAPES
     /* 1 */ val RECT: typings.pixiMath.libConstMod.SHAPES.RECT & Double = js.native
     
+    /**
+      * @property {number} RREC Rounded Rectangle
+      * @default 4
+      */
     @js.native
     sealed trait RREC
       extends StObject

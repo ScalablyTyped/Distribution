@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CancelExportTaskMessage extends StObject {
   
   /**
-    * The identifier of the snapshot export task to cancel.
+    * The identifier of the snapshot or cluster export task to cancel.
     */
   var ExportTaskIdentifier: String
 }

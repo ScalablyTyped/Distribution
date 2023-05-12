@@ -7,18 +7,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DebugSessionCustomEvent extends StObject {
   
   /**
-    * Event specific information.
-    */
+  		 * Event specific information.
+  		 */
   val body: Any
   
   /**
-    * Type of event.
-    */
+  		 * Type of event.
+  		 */
   val event: String
   
   /**
-    * The {@link DebugSession debug session} for which the custom event was received.
-    */
+  		 * The {@link DebugSession debug session} for which the custom event was received.
+  		 */
   val session: DebugSession
 }
 object DebugSessionCustomEvent {

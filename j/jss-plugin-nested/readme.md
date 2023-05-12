@@ -1,7 +1,7 @@
 
 # Scala.js typings for jss-plugin-nested
 
-Typings are for version 10.9.2
+Typings are for version 10.10.0
 
 ## Library description:
 JSS plugin that enables support for nested selectors

@@ -3,12 +3,12 @@ package typings.ipldCar
 import typings.ipldCar.anon.ByteLength
 import typings.ipldCar.anon.Resize
 import typings.ipldCar.anon.Roots
+import typings.ipldCar.distSrcBufferReaderBrowserMod.CarHeader
+import typings.ipldCar.distSrcBufferReaderBrowserMod.CarV2Header
+import typings.ipldCar.distSrcBufferReaderMod.BlockIndex
 import typings.ipldCar.distSrcIndexedReaderMod.RawLocation
-import typings.ipldCar.distSrcIndexerMod.BlockIndex
 import typings.ipldCar.distSrcIteratorMod.Block
 import typings.ipldCar.distSrcIteratorMod.CID
-import typings.ipldCar.distSrcReaderBrowserMod.CarHeader
-import typings.ipldCar.distSrcReaderBrowserMod.CarV2Header
 import typings.ipldCar.distSrcWriterBrowserMod.CarEncoder
 import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
 import typings.node.fsPromisesMod.FileHandle
@@ -67,6 +67,46 @@ object mod {
       * @returns {Promise<CarBlockIterator>}
       */
     inline def fromIterable(asyncIterable: AsyncIterable[js.typedarray.Uint8Array]): js.Promise[typings.ipldCar.distSrcIteratorMod.CarBlockIterator] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIterable")(asyncIterable.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.ipldCar.distSrcIteratorMod.CarBlockIterator]]
+  }
+  
+  @JSImport("@ipld/car", "CarBufferReader")
+  @js.native
+  open class CarBufferReader protected ()
+    extends typings.ipldCar.distSrcBufferReaderMod.CarBufferReader {
+    /**
+      * @constructs CarBufferReader
+      * @param {CarHeader|CarV2Header} header
+      * @param {Block[]} blocks
+      */
+    def this(header: CarHeader, blocks: js.Array[typings.ipldCar.distSrcBufferReaderBrowserMod.Block]) = this()
+    def this(header: CarV2Header, blocks: js.Array[typings.ipldCar.distSrcBufferReaderBrowserMod.Block]) = this()
+  }
+  /* static members */
+  object CarBufferReader {
+    
+    @JSImport("@ipld/car", "CarBufferReader")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Reads a block directly from a file descriptor for an open CAR file. This
+      * function is **only available in Node.js** and not a browser environment.
+      *
+      * This function can be used in connection with {@link CarIndexer} which emits
+      * the `BlockIndex` objects that are required by this function.
+      *
+      * The user is responsible for opening and closing the file used in this call.
+      *
+      * @static
+      * @memberof CarBufferReader
+      * @param {number} fd - A file descriptor from the
+      * Node.js `fs` module. An integer, from `fs.open()`.
+      * @param {BlockIndex} blockIndex - An index pointing to the location of the
+      * Block required. This `BlockIndex` should take the form:
+      * `{cid:CID, blockLength:number, blockOffset:number}`.
+      * @returns {Block} A `{ cid:CID, bytes:Uint8Array }` pair.
+      */
+    inline def readRaw(fd: Double, blockIndex: BlockIndex): typings.ipldCar.distSrcBufferReaderMod.Block = (^.asInstanceOf[js.Dynamic].applyDynamic("readRaw")(fd.asInstanceOf[js.Any], blockIndex.asInstanceOf[js.Any])).asInstanceOf[typings.ipldCar.distSrcBufferReaderMod.Block]
   }
   
   object CarBufferWriter {
@@ -214,7 +254,7 @@ object mod {
     def this(
       version: Double,
       roots: js.Array[typings.ipldCar.distSrcIndexerMod.CID],
-      iterator: AsyncGenerator[BlockIndex, Any, Any]
+      iterator: AsyncGenerator[typings.ipldCar.distSrcIndexerMod.BlockIndex, Any, Any]
     ) = this()
   }
   /* static members */
@@ -261,8 +301,14 @@ object mod {
       * @param {CarHeader|CarV2Header} header
       * @param {Block[]} blocks
       */
-    def this(header: CarHeader, blocks: js.Array[typings.ipldCar.distSrcReaderBrowserMod.Block]) = this()
-    def this(header: CarV2Header, blocks: js.Array[typings.ipldCar.distSrcReaderBrowserMod.Block]) = this()
+    def this(
+      header: typings.ipldCar.distSrcReaderBrowserMod.CarHeader,
+      blocks: js.Array[typings.ipldCar.distSrcReaderBrowserMod.Block]
+    ) = this()
+    def this(
+      header: typings.ipldCar.distSrcReaderBrowserMod.CarV2Header,
+      blocks: js.Array[typings.ipldCar.distSrcReaderBrowserMod.Block]
+    ) = this()
   }
   /* static members */
   object CarReader {

@@ -19,6 +19,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object validatorStrings {
   
   @js.native
+  sealed trait default extends StObject
+  inline def default: default = "default".asInstanceOf[default]
+  
+  @js.native
+  sealed trait `1`
+    extends StObject
+       with UUIDVersion
+  inline def `1`: `1` = "1".asInstanceOf[`1`]
+  
+  @js.native
   sealed trait `10`
     extends StObject
        with ISBNVersion
@@ -29,6 +39,12 @@ object validatorStrings {
     extends StObject
        with ISBNVersion
   inline def `13`: `13` = "13".asInstanceOf[`13`]
+  
+  @js.native
+  sealed trait `2`
+    extends StObject
+       with UUIDVersion
+  inline def `2`: `2` = "2".asInstanceOf[`2`]
   
   @js.native
   sealed trait `3`
@@ -807,7 +823,9 @@ object validatorStrings {
   inline def IQD: IQD = "IQD".asInstanceOf[IQD]
   
   @js.native
-  sealed trait IR extends StObject
+  sealed trait IR
+    extends StObject
+       with PostalCodeLocale
   inline def IR: IR = "IR".asInstanceOf[IR]
   
   @js.native
@@ -911,7 +929,9 @@ object validatorStrings {
   inline def KPW: KPW = "KPW".asInstanceOf[KPW]
   
   @js.native
-  sealed trait KR extends StObject
+  sealed trait KR
+    extends StObject
+       with PostalCodeLocale
   inline def KR: KR = "KR".asInstanceOf[KR]
   
   @js.native
@@ -1879,6 +1899,10 @@ object validatorStrings {
   inline def ZWL: ZWL = "ZWL".asInstanceOf[ZWL]
   
   @js.native
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @js.native
   sealed trait all_
     extends StObject
        with UUIDVersion
@@ -1890,6 +1914,10 @@ object validatorStrings {
        with MobilePhoneLocale
        with PhoneLocale
   inline def `am-AM`: `am-AM` = "am-AM".asInstanceOf[`am-AM`]
+  
+  @js.native
+  sealed trait amex extends StObject
+  inline def amex: amex = "amex".asInstanceOf[amex]
   
   @js.native
   sealed trait any extends StObject
@@ -2179,6 +2207,14 @@ object validatorStrings {
        with MobilePhoneLocale
        with PhoneLocale
   inline def `de-LU`: `de-LU` = "de-LU".asInstanceOf[`de-LU`]
+  
+  @js.native
+  sealed trait dinersclub extends StObject
+  inline def dinersclub: dinersclub = "dinersclub".asInstanceOf[dinersclub]
+  
+  @js.native
+  sealed trait discover extends StObject
+  inline def discover: discover = "discover".asInstanceOf[discover]
   
   @js.native
   sealed trait `el-GR`
@@ -2618,6 +2654,14 @@ object validatorStrings {
   inline def `he-IL`: `he-IL` = "he-IL".asInstanceOf[`he-IL`]
   
   @js.native
+  sealed trait hour12 extends StObject
+  inline def hour12: hour12 = "hour12".asInstanceOf[hour12]
+  
+  @js.native
+  sealed trait hour24 extends StObject
+  inline def hour24: hour24 = "hour24".asInstanceOf[hour24]
+  
+  @js.native
   sealed trait `hu-HU`
     extends StObject
        with AlphaLocale
@@ -2664,6 +2708,10 @@ object validatorStrings {
        with MobilePhoneLocale
        with PhoneLocale
   inline def `ja-JP`: `ja-JP` = "ja-JP".asInstanceOf[`ja-JP`]
+  
+  @js.native
+  sealed trait jcb extends StObject
+  inline def jcb: jcb = "jcb".asInstanceOf[jcb]
   
   @js.native
   sealed trait `ka-GE`
@@ -2714,6 +2762,10 @@ object validatorStrings {
        with MobilePhoneLocale
        with PhoneLocale
   inline def `lv-LV`: `lv-LV` = "lv-LV".asInstanceOf[`lv-LV`]
+  
+  @js.native
+  sealed trait mastercard extends StObject
+  inline def mastercard: mastercard = "mastercard".asInstanceOf[mastercard]
   
   @js.native
   sealed trait md4
@@ -2990,6 +3042,10 @@ object validatorStrings {
   inline def `uk-UA`: `uk-UA` = "uk-UA".asInstanceOf[`uk-UA`]
   
   @js.native
+  sealed trait unionpay extends StObject
+  inline def unionpay: unionpay = "unionpay".asInstanceOf[unionpay]
+  
+  @js.native
   sealed trait `uz-UZ`
     extends StObject
        with MobilePhoneLocale
@@ -3002,6 +3058,14 @@ object validatorStrings {
        with MobilePhoneLocale
        with PhoneLocale
   inline def `vi-VN`: `vi-VN` = "vi-VN".asInstanceOf[`vi-VN`]
+  
+  @js.native
+  sealed trait visa extends StObject
+  inline def visa: visa = "visa".asInstanceOf[visa]
+  
+  @js.native
+  sealed trait withSeconds extends StObject
+  inline def withSeconds: withSeconds = "withSeconds".asInstanceOf[withSeconds]
   
   @js.native
   sealed trait `zh-CN`

@@ -7,20 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DefaultOverlay[BaseToken] extends StObject {
   
-  var `[default]`: DefaultHoveredPressed[BaseToken]
+  var `[default]`: DefaultPaintTokenHoveredPaintToken[BaseToken]
   
-  var overlay: DefaultHoveredPressed[BaseToken]
+  var overlay: DefaultPaintTokenHoveredPaintToken[BaseToken]
   
-  var raised: DefaultHoveredPressed[BaseToken]
+  var raised: DefaultPaintTokenHoveredPaintToken[BaseToken]
   
   var sunken: PaintToken[BaseToken]
 }
 object DefaultOverlay {
   
   inline def apply[BaseToken](
-    `[default]`: DefaultHoveredPressed[BaseToken],
-    overlay: DefaultHoveredPressed[BaseToken],
-    raised: DefaultHoveredPressed[BaseToken],
+    `[default]`: DefaultPaintTokenHoveredPaintToken[BaseToken],
+    overlay: DefaultPaintTokenHoveredPaintToken[BaseToken],
+    raised: DefaultPaintTokenHoveredPaintToken[BaseToken],
     sunken: PaintToken[BaseToken]
   ): DefaultOverlay[BaseToken] = {
     val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any], raised = raised.asInstanceOf[js.Any], sunken = sunken.asInstanceOf[js.Any])
@@ -31,12 +31,12 @@ object DefaultOverlay {
   @scala.inline
   implicit open class MutableBuilder[Self <: DefaultOverlay[?], BaseToken] (val x: Self & DefaultOverlay[BaseToken]) extends AnyVal {
     
-    inline def setOverlay(value: DefaultHoveredPressed[BaseToken]): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+    inline def setOverlay(value: DefaultPaintTokenHoveredPaintToken[BaseToken]): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     
-    inline def setRaised(value: DefaultHoveredPressed[BaseToken]): Self = StObject.set(x, "raised", value.asInstanceOf[js.Any])
+    inline def setRaised(value: DefaultPaintTokenHoveredPaintToken[BaseToken]): Self = StObject.set(x, "raised", value.asInstanceOf[js.Any])
     
     inline def setSunken(value: PaintToken[BaseToken]): Self = StObject.set(x, "sunken", value.asInstanceOf[js.Any])
     
-    inline def `set[default]`(value: DefaultHoveredPressed[BaseToken]): Self = StObject.set(x, "[default]", value.asInstanceOf[js.Any])
+    inline def `set[default]`(value: DefaultPaintTokenHoveredPaintToken[BaseToken]): Self = StObject.set(x, "[default]", value.asInstanceOf[js.Any])
   }
 }

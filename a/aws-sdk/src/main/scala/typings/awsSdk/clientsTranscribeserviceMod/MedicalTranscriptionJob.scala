@@ -12,7 +12,7 @@ trait MedicalTranscriptionJob extends StObject {
   var CompletionTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Labels all personal health information (PHI) identified in your transcript. For more information, see Identifying personal health information (PHI) in a transcription.
+    * Indicates whether content identification was enabled for your transcription request.
     */
   var ContentIdentificationType: js.UndefOr[MedicalContentIdentificationType] = js.undefined
   
@@ -22,7 +22,7 @@ trait MedicalTranscriptionJob extends StObject {
   var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * If TranscriptionJobStatus is FAILED, FailureReason contains information about why the transcription job request failed. The FailureReason field contains one of the following values:    Unsupported media format. The media format specified in MediaFormat isn't valid. Refer to MediaFormat for a list of supported formats.    The media format provided does not match the detected media format. The media format specified in MediaFormat doesn't match the format of the input file. Check the media format of your media file and correct the specified value.    Invalid sample rate for audio file. The sample rate specified in MediaSampleRateHertz isn't valid. The sample rate must be between 16,000 and 48,000 Hertz.    The sample rate provided does not match the detected sample rate. The sample rate specified in MediaSampleRateHertz doesn't match the sample rate detected in your input media file. Check the sample rate of your media file and correct the specified value.    Invalid file size: file size too large. The size of your media file is larger than what Amazon Transcribe can process. For more information, refer to Guidelines and quotas.    Invalid number of channels: number of channels too large. Your audio contains more channels than Amazon Transcribe is able to process. For more information, refer to Guidelines and quotas.  
+    * If TranscriptionJobStatus is FAILED, FailureReason contains information about why the transcription job request failed. The FailureReason field contains one of the following values:    Unsupported media format. The media format specified in MediaFormat isn't valid. Refer to MediaFormat for a list of supported formats.    The media format provided does not match the detected media format. The media format specified in MediaFormat doesn't match the format of the input file. Check the media format of your media file and correct the specified value.    Invalid sample rate for audio file. The sample rate specified in MediaSampleRateHertz isn't valid. The sample rate must be between 16,000 and 48,000 hertz.    The sample rate provided does not match the detected sample rate. The sample rate specified in MediaSampleRateHertz doesn't match the sample rate detected in your input media file. Check the sample rate of your media file and correct the specified value.    Invalid file size: file size too large. The size of your media file is larger than what Amazon Transcribe can process. For more information, refer to Guidelines and quotas.    Invalid number of channels: number of channels too large. Your audio contains more channels than Amazon Transcribe is able to process. For more information, refer to Guidelines and quotas.  
     */
   var FailureReason: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.FailureReason] = js.undefined
   
@@ -39,7 +39,7 @@ trait MedicalTranscriptionJob extends StObject {
   var MediaFormat: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.MediaFormat] = js.undefined
   
   /**
-    * The sample rate, in Hertz, of the audio track in your input media file.
+    * The sample rate, in hertz, of the audio track in your input media file.
     */
   var MediaSampleRateHertz: js.UndefOr[MedicalMediaSampleRateHertz] = js.undefined
   
@@ -49,7 +49,7 @@ trait MedicalTranscriptionJob extends StObject {
   var MedicalTranscriptionJobName: js.UndefOr[TranscriptionJobName] = js.undefined
   
   /**
-    * Specify additional optional settings in your request, including channel identification, alternative transcriptions, and speaker labeling; allows you to apply custom vocabularies to your medical transcription job.
+    * Provides information on any additional settings that were included in your request. Additional settings include channel identification, alternative transcriptions, speaker partitioning, custom vocabularies, and custom vocabulary filters.
     */
   var Settings: js.UndefOr[MedicalTranscriptionSetting] = js.undefined
   

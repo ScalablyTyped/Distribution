@@ -8,8 +8,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object quadstoreStrings {
   
   @js.native
+  sealed trait F extends StObject
+  inline def F: F = "F".asInstanceOf[F]
+  
+  @js.native
   sealed trait Range extends StObject
   inline def Range: Range = "Range".asInstanceOf[Range]
+  
+  @js.native
+  sealed trait T extends StObject
+  inline def T: T = "T".asInstanceOf[T]
   
   @js.native
   sealed trait graph

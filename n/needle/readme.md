@@ -1,7 +1,7 @@
 
 # Scala.js typings for needle
 
-Typings are for version 2.5
+Typings are for version 3.2
 
 ## Library description:
 The leanest and most handsome HTTP client in the Nodelands.

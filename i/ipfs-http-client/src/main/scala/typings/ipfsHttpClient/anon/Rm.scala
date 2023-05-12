@@ -13,23 +13,23 @@ trait Rm extends StObject {
   
   def add(
     cid: CID[Any, Double, Double, Version],
-    param1: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.AddOptions */ Any) & AbortOptions & HTTPClientExtraOptions
+    options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.AddOptions */ Any) & AbortOptions & HTTPClientExtraOptions
   ): js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.Pin */ Any
   ]
   
   def ls(
-    param0: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.Query */ Any) & AbortOptions & HTTPClientExtraOptions
+    query: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.Query */ Any) & AbortOptions & HTTPClientExtraOptions
   ): AsyncIterable[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.Pin */ Any
   ]
   
   def rm(
-    param0: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.Query */ Any) & AbortOptions & HTTPClientExtraOptions
+    query: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.Query */ Any) & AbortOptions & HTTPClientExtraOptions
   ): js.Promise[Unit]
   
   def rmAll(
-    param0: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.Query */ Any) & AbortOptions & HTTPClientExtraOptions
+    query: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.Query */ Any) & AbortOptions & HTTPClientExtraOptions
   ): js.Promise[Unit]
   
   var service: Ls

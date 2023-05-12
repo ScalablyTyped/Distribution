@@ -6,19 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Enablement extends StObject {
   
-  /**
-    * The action to take.
-    *
-    * `enable_all` means to enable the specified security feature for all repositories in the organization.
-    * `disable_all` means to disable the specified security feature for all repositories in the organization.
-    */
   var enablement: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['org-security-product-enablement'] */ js.Any
   
-  /** The organization name. The name is not case sensitive. */
   @JSName("org")
   var org_ : /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['org'] */ js.Any
   
-  /** The security feature to enable or disable. */
   var security_product: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['security-product'] */ js.Any
 }
 object Enablement {

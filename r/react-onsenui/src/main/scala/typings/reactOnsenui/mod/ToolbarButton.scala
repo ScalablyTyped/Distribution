@@ -12,7 +12,7 @@ open class ToolbarButton protected () extends Component[Disabled, Any] {
   def this(props: HTMLAttributesidclassName & Disabled) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: HTMLAttributesidclassName & Disabled, context: Any) = this()
 }

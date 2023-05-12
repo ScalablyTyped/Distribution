@@ -11,9 +11,17 @@ open class Scroll protected ()
      with Event2 {
   def this(/** @docsNotRequired */
   routerEvent: NavigationEnd) = this()
+  def this(/** @docsNotRequired */
+  routerEvent: NavigationSkipped) = this()
   def this(
     /** @docsNotRequired */
   routerEvent: NavigationEnd,
+    /** @docsNotRequired */
+  position: js.Tuple2[Double, Double]
+  ) = this()
+  def this(
+    /** @docsNotRequired */
+  routerEvent: NavigationSkipped,
     /** @docsNotRequired */
   position: js.Tuple2[Double, Double]
   ) = this()
@@ -33,6 +41,22 @@ open class Scroll protected ()
     /** @docsNotRequired */
   anchor: String
   ) = this()
+  def this(
+    /** @docsNotRequired */
+  routerEvent: NavigationSkipped,
+    /** @docsNotRequired */
+  position: js.Tuple2[Double, Double],
+    /** @docsNotRequired */
+  anchor: String
+  ) = this()
+  def this(
+    /** @docsNotRequired */
+  routerEvent: NavigationSkipped,
+    /** @docsNotRequired */
+  position: Null,
+    /** @docsNotRequired */
+  anchor: String
+  ) = this()
   
   /** @docsNotRequired */
   val anchor: String | Null = js.native
@@ -41,7 +65,7 @@ open class Scroll protected ()
   val position: (js.Tuple2[Double, Double]) | Null = js.native
   
   /** @docsNotRequired */
-  val routerEvent: NavigationEnd = js.native
+  val routerEvent: NavigationEnd | NavigationSkipped = js.native
   
   val `type`: String | Double = js.native
 }

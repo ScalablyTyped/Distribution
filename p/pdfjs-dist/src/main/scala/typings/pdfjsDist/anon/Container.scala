@@ -8,11 +8,13 @@ trait Container extends StObject {
   
   var container: Any
   
-  var textContent: Any
+  var isOffscreenCanvasSupported: Any
   
   var textContentItemsStr: Any
   
-  var textContentStream: Any
+  var textContentSource: Any
+  
+  var textDivProperties: Any
   
   var textDivs: Any
   
@@ -22,13 +24,14 @@ object Container {
   
   inline def apply(
     container: Any,
-    textContent: Any,
+    isOffscreenCanvasSupported: Any,
     textContentItemsStr: Any,
-    textContentStream: Any,
+    textContentSource: Any,
+    textDivProperties: Any,
     textDivs: Any,
     viewport: Any
   ): Container = {
-    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], textContent = textContent.asInstanceOf[js.Any], textContentItemsStr = textContentItemsStr.asInstanceOf[js.Any], textContentStream = textContentStream.asInstanceOf[js.Any], textDivs = textDivs.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], isOffscreenCanvasSupported = isOffscreenCanvasSupported.asInstanceOf[js.Any], textContentItemsStr = textContentItemsStr.asInstanceOf[js.Any], textContentSource = textContentSource.asInstanceOf[js.Any], textDivProperties = textDivProperties.asInstanceOf[js.Any], textDivs = textDivs.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
     __obj.asInstanceOf[Container]
   }
   
@@ -37,11 +40,13 @@ object Container {
     
     inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    inline def setTextContent(value: Any): Self = StObject.set(x, "textContent", value.asInstanceOf[js.Any])
+    inline def setIsOffscreenCanvasSupported(value: Any): Self = StObject.set(x, "isOffscreenCanvasSupported", value.asInstanceOf[js.Any])
     
     inline def setTextContentItemsStr(value: Any): Self = StObject.set(x, "textContentItemsStr", value.asInstanceOf[js.Any])
     
-    inline def setTextContentStream(value: Any): Self = StObject.set(x, "textContentStream", value.asInstanceOf[js.Any])
+    inline def setTextContentSource(value: Any): Self = StObject.set(x, "textContentSource", value.asInstanceOf[js.Any])
+    
+    inline def setTextDivProperties(value: Any): Self = StObject.set(x, "textDivProperties", value.asInstanceOf[js.Any])
     
     inline def setTextDivs(value: Any): Self = StObject.set(x, "textDivs", value.asInstanceOf[js.Any])
     

@@ -12,7 +12,7 @@ trait CreateVpcEndpointRequest extends StObject {
   var ClientToken: js.UndefOr[typings.awsSdk.clientsOpensearchMod.ClientToken] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the domain to grant access to.
+    * The Amazon Resource Name (ARN) of the domain to create the endpoint for.
     */
   var DomainArn: typings.awsSdk.clientsOpensearchMod.DomainArn
   

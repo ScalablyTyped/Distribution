@@ -36,7 +36,7 @@ object libEsmInteractionsResizeHandleMod {
     def this(props: IResizeHandleProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: IResizeHandleProps, context: Any) = this()
     

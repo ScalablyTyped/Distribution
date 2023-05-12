@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MozOutlineRadiusBottomleft
+import typings.csstype.mod.Property.ScrollSnapType
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `70` extends StObject {
   
   var value: js.UndefOr[
-    (MozOutlineRadiusBottomleft[Double | String]) | (js.Array[
+    ScrollSnapType | (js.Array[
       (Extract[
-        js.UndefOr[
-          (MozOutlineRadiusBottomleft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MozOutlineRadiusBottomleft[Double | String]]]])
-        ], 
+        js.UndefOr[ScrollSnapType | js.Array[NonNullable[js.UndefOr[ScrollSnapType]]]], 
         String
-      ]) | (NonNullable[js.UndefOr[MozOutlineRadiusBottomleft[Double | String]]])
+      ]) | NonNullable[js.UndefOr[ScrollSnapType]]
     ])
   ] = js.native
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest__schemas
 
-Typings are for version 29.0.0
+Typings are for version 29.4.3
 
 ## Library description:
 Experimental and currently incomplete module for JSON schemas for [Jest's](https://jestjs.io/) configuration.

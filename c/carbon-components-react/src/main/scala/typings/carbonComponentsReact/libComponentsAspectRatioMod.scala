@@ -23,6 +23,7 @@ import typings.carbonComponentsReact.carbonComponentsReactStrings.br
 import typings.carbonComponentsReact.carbonComponentsReactStrings.button
 import typings.carbonComponentsReact.carbonComponentsReactStrings.canvas
 import typings.carbonComponentsReact.carbonComponentsReactStrings.caption
+import typings.carbonComponentsReact.carbonComponentsReactStrings.center
 import typings.carbonComponentsReact.carbonComponentsReactStrings.circle
 import typings.carbonComponentsReact.carbonComponentsReactStrings.cite
 import typings.carbonComponentsReact.carbonComponentsReactStrings.clipPath
@@ -234,6 +235,8 @@ object libComponentsAspectRatioMod {
   inline def AspectRatio_canvas(props: AspectRatioIntrinsicProps[canvas]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def AspectRatio_caption(props: AspectRatioIntrinsicProps[caption]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_center(props: AspectRatioIntrinsicProps[center]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def AspectRatio_circle(props: AspectRatioIntrinsicProps[circle]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   

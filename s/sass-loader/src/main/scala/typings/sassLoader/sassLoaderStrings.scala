@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object sassLoaderStrings {
   
   @js.native
-  sealed trait async extends StObject
-  inline def async: async = "async".asInstanceOf[async]
-  
-  @js.native
   sealed trait sync extends StObject
   inline def sync: sync = "sync".asInstanceOf[sync]
 }

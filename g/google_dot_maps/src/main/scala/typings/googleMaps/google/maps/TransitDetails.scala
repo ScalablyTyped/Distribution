@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Details about the departure, arrival, and mode of transit used in this
-  * step.
-  */
 trait TransitDetails extends StObject {
   
   /**

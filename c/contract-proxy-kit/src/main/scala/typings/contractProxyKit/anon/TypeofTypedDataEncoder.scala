@@ -1,10 +1,10 @@
 package typings.contractProxyKit.anon
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.ethers.mod.ethers.utils.TypedDataEncoder
-import typings.ethersprojectAbstractSigner.mod.TypedDataDomain
-import typings.ethersprojectAbstractSigner.mod.TypedDataField
-import typings.ethersprojectHash.anon.Domain
+import typings.ethers.anon.Domain
+import typings.ethers.mod.ethers.TypedDataEncoder
+import typings.ethers.typesHashTypedDataMod.TypedDataDomain
+import typings.ethers.typesHashTypedDataMod.TypedDataField
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +21,7 @@ trait TypeofTypedDataEncoder
     value: Record[String, Any]
   ): String = js.native
   
-  def from(types: Record[String, js.Array[TypedDataField]]): typings.ethersprojectHash.libTypedDataMod.TypedDataEncoder = js.native
+  def from(types: Record[String, js.Array[TypedDataField]]): typings.ethers.typesHashTypedDataMod.TypedDataEncoder = js.native
   
   def getPayload(
     domain: TypedDataDomain,

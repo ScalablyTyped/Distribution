@@ -12,6 +12,7 @@ import typings.primereact.primereactStrings.all
 import typings.primereact.primereactStrings.ascending
 import typings.primereact.primereactStrings.assertive
 import typings.primereact.primereactStrings.both
+import typings.primereact.primereactStrings.bottom
 import typings.primereact.primereactStrings.copy
 import typings.primereact.primereactStrings.date
 import typings.primereact.primereactStrings.decimal
@@ -23,6 +24,7 @@ import typings.primereact.primereactStrings.grammar
 import typings.primereact.primereactStrings.grid
 import typings.primereact.primereactStrings.horizontal
 import typings.primereact.primereactStrings.inherit
+import typings.primereact.primereactStrings.left
 import typings.primereact.primereactStrings.link
 import typings.primereact.primereactStrings.list
 import typings.primereact.primereactStrings.listbox
@@ -40,6 +42,7 @@ import typings.primereact.primereactStrings.page
 import typings.primereact.primereactStrings.polite
 import typings.primereact.primereactStrings.popup
 import typings.primereact.primereactStrings.removals
+import typings.primereact.primereactStrings.right
 import typings.primereact.primereactStrings.search
 import typings.primereact.primereactStrings.self
 import typings.primereact.primereactStrings.spelling
@@ -47,6 +50,7 @@ import typings.primereact.primereactStrings.step
 import typings.primereact.primereactStrings.tel
 import typings.primereact.primereactStrings.text
 import typings.primereact.primereactStrings.time
+import typings.primereact.primereactStrings.top
 import typings.primereact.primereactStrings.tree
 import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.vertical
@@ -105,35 +109,27 @@ object sidebarSidebarMod {
     def this(props: SidebarProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SidebarProps, context: Any) = this()
     
+    /**
+      * Used to get close icon element.
+      * @return {HTMLButtonElement} Close icon element
+      */
     def getCloseIcon(): HTMLButtonElement = js.native
     
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
     
+    /**
+      * Used to get mask element.
+      * @return {HTMLElement} Mask element
+      */
     def getMask(): HTMLElement = js.native
-  }
-  
-  type SidebarAppendToType = js.UndefOr[self | HTMLElement | Null]
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.top
-    - typings.primereact.primereactStrings.bottom
-    - typings.primereact.primereactStrings.left
-    - typings.primereact.primereactStrings.right
-  */
-  trait SidebarPositionType extends StObject
-  object SidebarPositionType {
-    
-    inline def bottom: typings.primereact.primereactStrings.bottom = "bottom".asInstanceOf[typings.primereact.primereactStrings.bottom]
-    
-    inline def left: typings.primereact.primereactStrings.left = "left".asInstanceOf[typings.primereact.primereactStrings.left]
-    
-    inline def right: typings.primereact.primereactStrings.right = "right".asInstanceOf[typings.primereact.primereactStrings.right]
-    
-    inline def top: typings.primereact.primereactStrings.top = "top".asInstanceOf[typings.primereact.primereactStrings.top]
   }
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
@@ -143,7 +139,11 @@ object sidebarSidebarMod {
     
     var accessKey: js.UndefOr[String] = js.undefined
     
-    var appendTo: js.UndefOr[SidebarAppendToType] = js.undefined
+    /**
+      * DOM element instance where the overlay panel should be mounted. Valid values are any DOM Element and self. The self value is used to render a component where it is located.
+      * @defaultValue document.body
+      */
+    var appendTo: js.UndefOr[self | HTMLElement | Null] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
@@ -243,25 +243,56 @@ object sidebarSidebarMod {
     
     var `aria-valuetext`: js.UndefOr[String] = js.undefined
     
+    /**
+      * Aria label of the close icon.
+      * @defaultValue close
+      */
     var ariaCloseLabel: js.UndefOr[String] = js.undefined
     
     var autoCapitalize: js.UndefOr[String] = js.undefined
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Base zIndex value to use in layering.
+      * @defaultValue 0
+      */
     var baseZIndex: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Whether to block scrolling of the document when sidebar is active.
+      * @defaultValue false
+      */
     var blockScroll: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * Icon of the close button.
+      */
+    var closeIcon: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<SidebarProps> */ Any
+      ] = js.undefined
+    
+    /**
+      * Specifies if pressing escape key should hide the sidebar.
+      * @defaultValue true
+      */
     var closeOnEscape: js.UndefOr[Boolean] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -277,15 +308,27 @@ object sidebarSidebarMod {
     
     var dir: js.UndefOr[String] = js.undefined
     
+    /**
+      * Whether to dismiss sidebar on click of the mask.
+      * @defaultValue true
+      */
     var dismissable: js.UndefOr[Boolean] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
+    /**
+      * Adds a close icon to the header to hide the dialog.
+      * @defaultValue false
+      */
     var fullScreen: js.UndefOr[Boolean] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var icons: js.UndefOr[SidebarTemplateType] = js.undefined
+    /**
+      * Custom icons template for the header.
+      * @defaultValue true
+      */
+    var icons: js.UndefOr[ReactNode | (js.Function1[/* props */ this.type, ReactNode])] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
@@ -309,10 +352,20 @@ object sidebarSidebarMod {
     
     var lang: js.UndefOr[String] = js.undefined
     
+    /**
+      * Style class of the mask.
+      */
     var maskClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Inline style of the mask.
+      */
     var maskStyle: js.UndefOr[CSSProperties] = js.undefined
     
+    /**
+      * Whether to a modal layer behind the sidebar.
+      * @defaultValue true
+      */
     var modal: js.UndefOr[Boolean] = js.undefined
     
     var nonce: js.UndefOr[String] = js.undefined
@@ -381,6 +434,9 @@ object sidebarSidebarMod {
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke when the actions used to close the sidebar are triggered. Exp; close icon, mask and esc key.
+      */
     def onHide(): Unit
     
     var onInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
@@ -455,6 +511,9 @@ object sidebarSidebarMod {
     
     var onSelect: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke when sidebar gets shown.
+      */
     var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onStalled: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
@@ -483,7 +542,11 @@ object sidebarSidebarMod {
     
     var placeholder: js.UndefOr[String] = js.undefined
     
-    var position: js.UndefOr[SidebarPositionType] = js.undefined
+    /**
+      * Specifies the position of the sidebar, valid values are "left" and "right".
+      * @defaultValue left
+      */
+    var position: js.UndefOr[top | bottom | left | right] = js.undefined
     
     var prefix: js.UndefOr[String] = js.undefined
     
@@ -491,14 +554,22 @@ object sidebarSidebarMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
+    /**
+      * Whether to display a close icon inside the panel.
+      * @defaultValue true
+      */
     var showCloseIcon: js.UndefOr[Boolean] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
@@ -515,6 +586,10 @@ object sidebarSidebarMod {
     
     var title: js.UndefOr[String] = js.undefined
     
+    /**
+      * The properties of CSSTransition can be customized, except for "nodeRef" and "in" properties.
+      * @type {CSSTransitionProps}
+      */
     var transitionOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSTransitionProps */ Any
       ] = js.undefined
@@ -525,6 +600,10 @@ object sidebarSidebarMod {
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
+    /**
+      * Specifies the visibility of the dialog.
+      * @defaultValue false
+      */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
@@ -547,7 +626,7 @@ object sidebarSidebarMod {
       
       inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      inline def setAppendTo(value: SidebarAppendToType): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+      inline def setAppendTo(value: self | HTMLElement): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
       
       inline def setAppendToNull: Self = StObject.set(x, "appendTo", null)
       
@@ -759,6 +838,10 @@ object sidebarSidebarMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -779,6 +862,12 @@ object sidebarSidebarMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
+      inline def setCloseIcon(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<SidebarProps> */ Any
+      ): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
+      
+      inline def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
+      
       inline def setCloseOnEscape(value: Boolean): Self = StObject.set(x, "closeOnEscape", value.asInstanceOf[js.Any])
       
       inline def setCloseOnEscapeUndefined: Self = StObject.set(x, "closeOnEscape", js.undefined)
@@ -787,9 +876,13 @@ object sidebarSidebarMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -833,9 +926,9 @@ object sidebarSidebarMod {
       
       inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      inline def setIcons(value: SidebarTemplateType): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+      inline def setIcons(value: ReactNode | (js.Function1[SidebarProps, ReactNode])): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
       
-      inline def setIconsFunction1(value: /* props */ SidebarProps => ReactNode): Self = StObject.set(x, "icons", js.Any.fromFunction1(value))
+      inline def setIconsFunction1(value: SidebarProps => ReactNode): Self = StObject.set(x, "icons", js.Any.fromFunction1(value))
       
       inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
       
@@ -1231,7 +1324,7 @@ object sidebarSidebarMod {
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      inline def setPosition(value: SidebarPositionType): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: top | bottom | left | right): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
@@ -1247,6 +1340,10 @@ object sidebarSidebarMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1254,6 +1351,10 @@ object sidebarSidebarMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1322,6 +1423,4 @@ object sidebarSidebarMod {
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
     }
   }
-  
-  type SidebarTemplateType = ReactNode | (js.Function1[/* props */ SidebarProps, ReactNode])
 }

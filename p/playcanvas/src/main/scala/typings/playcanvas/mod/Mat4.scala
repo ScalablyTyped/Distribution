@@ -17,7 +17,7 @@ open class Mat4 () extends StObject {
     * @param {Mat4} rhs - The 4x4 matrix used as the second operand of the addition.
     * @returns {Mat4} Self for chaining.
     * @example
-    * var m = new pc.Mat4();
+    * const m = new pc.Mat4();
     *
     * m.add(pc.Mat4.ONE);
     *
@@ -32,7 +32,7 @@ open class Mat4 () extends StObject {
     * @param {Mat4} rhs - The 4x4 matrix used as the second operand of the addition.
     * @returns {Mat4} Self for chaining.
     * @example
-    * var m = new pc.Mat4();
+    * const m = new pc.Mat4();
     *
     * m.add2(pc.Mat4.IDENTITY, pc.Mat4.ONE);
     *
@@ -46,8 +46,8 @@ open class Mat4 () extends StObject {
     * @param {Mat4} rhs - A 4x4 matrix to be copied.
     * @returns {Mat4} Self for chaining.
     * @example
-    * var src = new pc.Mat4().setFromEulerAngles(10, 20, 30);
-    * var dst = new pc.Mat4();
+    * const src = new pc.Mat4().setFromEulerAngles(10, 20, 30);
+    * const dst = new pc.Mat4();
     * dst.copy(src);
     * console.log("The two matrices are " + (src.equals(dst) ? "equal" : "different"));
     */
@@ -66,8 +66,8 @@ open class Mat4 () extends StObject {
     * @param {Mat4} rhs - The other matrix.
     * @returns {boolean} True if the matrices are equal and false otherwise.
     * @example
-    * var a = new pc.Mat4().setFromEulerAngles(10, 20, 30);
-    * var b = new pc.Mat4();
+    * const a = new pc.Mat4().setFromEulerAngles(10, 20, 30);
+    * const b = new pc.Mat4();
     * console.log("The two matrices are " + (a.equals(b) ? "equal" : "different"));
     */
   def equals(rhs: Mat4): Boolean = js.native
@@ -80,9 +80,9 @@ open class Mat4 () extends StObject {
     * @returns {Vec3} A 3-d vector containing the Euler angles.
     * @example
     * // Create a 4x4 rotation matrix of 45 degrees around the y-axis
-    * var m = new pc.Mat4().setFromAxisAngle(pc.Vec3.UP, 45);
+    * const m = new pc.Mat4().setFromAxisAngle(pc.Vec3.UP, 45);
     *
-    * var eulers = m.getEulerAngles();
+    * const eulers = m.getEulerAngles();
     */
   def getEulerAngles(): Vec3 = js.native
   def getEulerAngles(eulers: Vec3): Vec3 = js.native
@@ -94,7 +94,7 @@ open class Mat4 () extends StObject {
     * @returns {Vec3} The scale in X, Y and Z of the specified 4x4 matrix.
     * @example
     * // Query the scale component
-    * var scale = m.getScale();
+    * const scale = m.getScale();
     */
   def getScale(): Vec3 = js.native
   def getScale(scale: Vec3): Vec3 = js.native
@@ -106,10 +106,10 @@ open class Mat4 () extends StObject {
     * @returns {Vec3} The translation of the specified 4x4 matrix.
     * @example
     * // Create a 4x4 matrix
-    * var m = new pc.Mat4();
+    * const m = new pc.Mat4();
     *
-    * // Query the z-axis component
-    * var t = new pc.Vec3();
+    * // Query the translation component
+    * const t = new pc.Vec3();
     * m.getTranslation(t);
     */
   def getTranslation(): Vec3 = js.native
@@ -122,10 +122,10 @@ open class Mat4 () extends StObject {
     * @returns {Vec3} The x-axis of the specified 4x4 matrix.
     * @example
     * // Create a 4x4 matrix
-    * var m = new pc.Mat4();
+    * const m = new pc.Mat4();
     *
-    * // Query the z-axis component
-    * var x = new pc.Vec3();
+    * // Query the x-axis component
+    * const x = new pc.Vec3();
     * m.getX(x);
     */
   def getX(): Vec3 = js.native
@@ -138,10 +138,10 @@ open class Mat4 () extends StObject {
     * @returns {Vec3} The y-axis of the specified 4x4 matrix.
     * @example
     * // Create a 4x4 matrix
-    * var m = new pc.Mat4();
+    * const m = new pc.Mat4();
     *
-    * // Query the z-axis component
-    * var y = new pc.Vec3();
+    * // Query the y-axis component
+    * const y = new pc.Vec3();
     * m.getY(y);
     */
   def getY(): Vec3 = js.native
@@ -154,10 +154,10 @@ open class Mat4 () extends StObject {
     * @returns {Vec3} The z-axis of the specified 4x4 matrix.
     * @example
     * // Create a 4x4 matrix
-    * var m = new pc.Mat4();
+    * const m = new pc.Mat4();
     *
     * // Query the z-axis component
-    * var z = new pc.Vec3();
+    * const z = new pc.Vec3();
     * m.getZ(z);
     */
   def getZ(): Vec3 = js.native
@@ -169,7 +169,7 @@ open class Mat4 () extends StObject {
     * @returns {Mat4} Self for chaining.
     * @example
     * // Create a 4x4 rotation matrix of 180 degrees around the y-axis
-    * var rot = new pc.Mat4().setFromAxisAngle(pc.Vec3.UP, 180);
+    * const rot = new pc.Mat4().setFromAxisAngle(pc.Vec3.UP, 180);
     *
     * // Invert in place
     * rot.invert();
@@ -183,7 +183,7 @@ open class Mat4 () extends StObject {
     *
     * @returns {boolean} True if the matrix is identity and false otherwise.
     * @example
-    * var m = new pc.Mat4();
+    * const m = new pc.Mat4();
     * console.log("The matrix is " + (m.isIdentity() ? "identity" : "not identity"));
     */
   def isIdentity(): Boolean = js.native
@@ -194,8 +194,8 @@ open class Mat4 () extends StObject {
     * @param {Mat4} rhs - The 4x4 matrix used as the second multiplicand of the operation.
     * @returns {Mat4} Self for chaining.
     * @example
-    * var a = new pc.Mat4().setFromEulerAngles(10, 20, 30);
-    * var b = new pc.Mat4().setFromAxisAngle(pc.Vec3.UP, 180);
+    * const a = new pc.Mat4().setFromEulerAngles(10, 20, 30);
+    * const b = new pc.Mat4().setFromAxisAngle(pc.Vec3.UP, 180);
     *
     * // a = a * b
     * a.mul(b);
@@ -212,9 +212,9 @@ open class Mat4 () extends StObject {
     * @param {Mat4} rhs - The 4x4 matrix used as the second multiplicand of the operation.
     * @returns {Mat4} Self for chaining.
     * @example
-    * var a = new pc.Mat4().setFromEulerAngles(10, 20, 30);
-    * var b = new pc.Mat4().setFromAxisAngle(pc.Vec3.UP, 180);
-    * var r = new pc.Mat4();
+    * const a = new pc.Mat4().setFromEulerAngles(10, 20, 30);
+    * const b = new pc.Mat4().setFromAxisAngle(pc.Vec3.UP, 180);
+    * const r = new pc.Mat4();
     *
     * // r = a * b
     * r.mul2(a, b);
@@ -240,6 +240,14 @@ open class Mat4 () extends StObject {
   def mulAffine2(lhs: Mat4, rhs: Mat4): Mat4 = js.native
   
   /**
+    * -1 if the the matrix has an odd number of negative scales (mirrored); 1 otherwise.
+    *
+    * @type {number}
+    * @ignore
+    */
+  def scaleSign: Double = js.native
+  
+  /**
     * Sets matrix data from an array.
     *
     * @param {number[]} src - Source array. Must have 16 values.
@@ -256,7 +264,7 @@ open class Mat4 () extends StObject {
     * @returns {Mat4} Self for chaining.
     * @example
     * // Create a 4x4 rotation matrix
-    * var rm = new pc.Mat4().setFromAxisAngle(pc.Vec3.UP, 90);
+    * const rm = new pc.Mat4().setFromAxisAngle(pc.Vec3.UP, 90);
     */
   def setFromAxisAngle(axis: Vec3, angle: Double): Mat4 = js.native
   
@@ -269,7 +277,7 @@ open class Mat4 () extends StObject {
     * @param {number} ez - Angle to rotate around Z axis in degrees.
     * @returns {Mat4} Self for chaining.
     * @example
-    * var m = new pc.Mat4();
+    * const m = new pc.Mat4();
     * m.setFromEulerAngles(45, 90, 180);
     */
   def setFromEulerAngles(ex: Double, ey: Double, ez: Double): Mat4 = js.native
@@ -291,7 +299,7 @@ open class Mat4 () extends StObject {
     * @returns {Mat4} Self for chaining.
     * @example
     * // Create a 4x4 perspective projection matrix
-    * var f = pc.Mat4().setFrustum(-2, 2, -1, 1, 1, 1000);
+    * const f = pc.Mat4().setFrustum(-2, 2, -1, 1, 1, 1000);
     * @ignore
     */
   def setFrustum(left: Double, right: Double, bottom: Double, top: Double, znear: Double, zfar: Double): Mat4 = js.native
@@ -320,10 +328,10 @@ open class Mat4 () extends StObject {
     * @param {Vec3} up - 3-d vector holding the up direction.
     * @returns {Mat4} Self for chaining.
     * @example
-    * var position = new pc.Vec3(10, 10, 10);
-    * var target = new pc.Vec3(0, 0, 0);
-    * var up = new pc.Vec3(0, 1, 0);
-    * var m = new pc.Mat4().setLookAt(position, target, up);
+    * const position = new pc.Vec3(10, 10, 10);
+    * const target = new pc.Vec3(0, 0, 0);
+    * const up = new pc.Vec3(0, 1, 0);
+    * const m = new pc.Mat4().setLookAt(position, target, up);
     */
   def setLookAt(position: Vec3, target: Vec3, up: Vec3): Mat4 = js.native
   
@@ -344,7 +352,7 @@ open class Mat4 () extends StObject {
     * @returns {Mat4} Self for chaining.
     * @example
     * // Create a 4x4 orthographic projection matrix
-    * var ortho = pc.Mat4().ortho(-2, 2, -2, 2, 1, 1000);
+    * const ortho = pc.Mat4().ortho(-2, 2, -2, 2, 1, 1000);
     */
   def setOrtho(left: Double, right: Double, bottom: Double, top: Double, near: Double, far: Double): Mat4 = js.native
   
@@ -364,10 +372,20 @@ open class Mat4 () extends StObject {
     * @returns {Mat4} Self for chaining.
     * @example
     * // Create a 4x4 perspective projection matrix
-    * var persp = pc.Mat4().setPerspective(45, 16 / 9, 1, 1000);
+    * const persp = pc.Mat4().setPerspective(45, 16 / 9, 1, 1000);
     */
   def setPerspective(fov: Double, aspect: Double, znear: Double, zfar: Double): Mat4 = js.native
   def setPerspective(fov: Double, aspect: Double, znear: Double, zfar: Double, fovIsHorizontal: Boolean): Mat4 = js.native
+  
+  /**
+    * Sets the matrix to a reflection matrix, which can be used as a mirror transformation by the
+    * plane.
+    *
+    * @param {Vec3} normal - The normal of the plane to reflect by.
+    * @param {number} distance - The distance of plane to reflect by.
+    * @returns {Mat4} Self for chaining.
+    */
+  def setReflection(normal: Vec3, distance: Double): Mat4 = js.native
   
   /**
     * Sets the specified matrix to a scale matrix.
@@ -378,7 +396,7 @@ open class Mat4 () extends StObject {
     * @returns {Mat4} Self for chaining.
     * @example
     * // Create a 4x4 scale matrix
-    * var sm = new pc.Mat4().setScale(10, 10, 10);
+    * const sm = new pc.Mat4().setScale(10, 10, 10);
     * @ignore
     */
   def setScale(x: Double, y: Double, z: Double): Mat4 = js.native
@@ -388,15 +406,15 @@ open class Mat4 () extends StObject {
     * scale.
     *
     * @param {Vec3} t - A 3-d vector translation.
-    * @param {Quat} r - A quaternion rotation.
+    * @param {import('./quat.js').Quat} r - A quaternion rotation.
     * @param {Vec3} s - A 3-d vector scale.
     * @returns {Mat4} Self for chaining.
     * @example
-    * var t = new pc.Vec3(10, 20, 30);
-    * var r = new pc.Quat();
-    * var s = new pc.Vec3(2, 2, 2);
+    * const t = new pc.Vec3(10, 20, 30);
+    * const r = new pc.Quat();
+    * const s = new pc.Vec3(2, 2, 2);
     *
-    * var m = new pc.Mat4();
+    * const m = new pc.Mat4();
     * m.setTRS(t, r, s);
     */
   def setTRS(t: Vec3, r: Quat, s: Vec3): Mat4 = js.native
@@ -410,7 +428,7 @@ open class Mat4 () extends StObject {
     * @returns {Mat4} Self for chaining.
     * @example
     * // Create a 4x4 translation matrix
-    * var tm = new pc.Mat4().setTranslate(10, 10, 10);
+    * const tm = new pc.Mat4().setTranslate(10, 10, 10);
     * @ignore
     */
   def setTranslate(x: Double, y: Double, z: Double): Mat4 = js.native
@@ -427,7 +445,7 @@ open class Mat4 () extends StObject {
     * @returns {Mat4} Self for chaining.
     * @example
     * // Create a 4x4 viewport matrix which scales normalized view volume to full texture viewport
-    * var vm = new pc.Mat4().setViewport(0, 0, 1, 1);
+    * const vm = new pc.Mat4().setViewport(0, 0, 1, 1);
     * @ignore
     */
   def setViewport(x: Double, y: Double, width: Double, height: Double): Mat4 = js.native
@@ -441,12 +459,12 @@ open class Mat4 () extends StObject {
     * @returns {Vec3} The input point v transformed by the current instance.
     * @example
     * // Create a 3-dimensional point
-    * var v = new pc.Vec3(1, 2, 3);
+    * const v = new pc.Vec3(1, 2, 3);
     *
     * // Create a 4x4 rotation matrix
-    * var m = new pc.Mat4().setFromEulerAngles(10, 20, 30);
+    * const m = new pc.Mat4().setFromEulerAngles(10, 20, 30);
     *
-    * var tv = m.transformPoint(v);
+    * const tv = m.transformPoint(v);
     */
   def transformPoint(vec: Vec3): Vec3 = js.native
   def transformPoint(vec: Vec3, res: Vec3): Vec3 = js.native
@@ -460,13 +478,13 @@ open class Mat4 () extends StObject {
     * @returns {Vec4} The input vector v transformed by the current instance.
     * @example
     * // Create an input 4-dimensional vector
-    * var v = new pc.Vec4(1, 2, 3, 4);
+    * const v = new pc.Vec4(1, 2, 3, 4);
     *
     * // Create an output 4-dimensional vector
-    * var result = new pc.Vec4();
+    * const result = new pc.Vec4();
     *
     * // Create a 4x4 rotation matrix
-    * var m = new pc.Mat4().setFromEulerAngles(10, 20, 30);
+    * const m = new pc.Mat4().setFromEulerAngles(10, 20, 30);
     *
     * m.transformVec4(v, result);
     */
@@ -482,12 +500,12 @@ open class Mat4 () extends StObject {
     * @returns {Vec3} The input vector v transformed by the current instance.
     * @example
     * // Create a 3-dimensional vector
-    * var v = new pc.Vec3(1, 2, 3);
+    * const v = new pc.Vec3(1, 2, 3);
     *
     * // Create a 4x4 rotation matrix
-    * var m = new pc.Mat4().setFromEulerAngles(10, 20, 30);
+    * const m = new pc.Mat4().setFromEulerAngles(10, 20, 30);
     *
-    * var tv = m.transformVector(v);
+    * const tv = m.transformVector(v);
     */
   def transformVector(vec: Vec3): Vec3 = js.native
   def transformVector(vec: Vec3, res: Vec3): Vec3 = js.native
@@ -497,7 +515,7 @@ open class Mat4 () extends StObject {
     *
     * @returns {Mat4} Self for chaining.
     * @example
-    * var m = new pc.Mat4();
+    * const m = new pc.Mat4();
     *
     * // Transpose in place
     * m.transpose();

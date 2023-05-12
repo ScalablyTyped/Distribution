@@ -79,12 +79,12 @@ object System {
   
   type GetFn = GetFnModule | GetFnGeneric
   
-  // tslint:disable-next-line no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   type GetFnGeneric = js.Function1[/* moduleId */ String, Any]
   
   type GetFnModule = js.Function1[/* moduleId */ String, Module]
   
-  // tslint:disable-next-line no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   type ImportFn = js.Function2[/* moduleId */ String, /* parentUrl */ js.UndefOr[String], js.Promise[Module]]
   
   /** The importmap standard is defined here: https://github.com/WICG/import-maps */

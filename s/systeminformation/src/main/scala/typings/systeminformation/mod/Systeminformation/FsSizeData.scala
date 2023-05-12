@@ -13,6 +13,8 @@ trait FsSizeData extends StObject {
   
   var mount: String
   
+  var rw: Boolean | Null
+  
   var size: Double
   
   var `type`: String
@@ -32,7 +34,7 @@ object FsSizeData {
     use: Double,
     used: Double
   ): FsSizeData = {
-    val __obj = js.Dynamic.literal(available = available.asInstanceOf[js.Any], fs = fs.asInstanceOf[js.Any], mount = mount.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any], used = used.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(available = available.asInstanceOf[js.Any], fs = fs.asInstanceOf[js.Any], mount = mount.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any], used = used.asInstanceOf[js.Any], rw = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FsSizeData]
   }
@@ -45,6 +47,10 @@ object FsSizeData {
     inline def setFs(value: String): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
     
     inline def setMount(value: String): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
+    
+    inline def setRw(value: Boolean): Self = StObject.set(x, "rw", value.asInstanceOf[js.Any])
+    
+    inline def setRwNull: Self = StObject.set(x, "rw", null)
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

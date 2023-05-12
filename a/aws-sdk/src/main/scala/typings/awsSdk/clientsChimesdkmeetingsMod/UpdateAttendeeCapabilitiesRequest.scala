@@ -12,7 +12,7 @@ trait UpdateAttendeeCapabilitiesRequest extends StObject {
   var AttendeeId: GuidString
   
   /**
-    * The capabilties that you want to update.
+    * The capabilities that you want to update.
     */
   var Capabilities: AttendeeCapabilities
   

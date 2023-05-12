@@ -12,7 +12,7 @@ trait PutPartnerEventsRequestEntry extends StObject {
   var Detail: js.UndefOr[String] = js.undefined
   
   /**
-    * A free-form string used to decide what fields to expect in the event detail.
+    * A free-form string, with a maximum of 128 characters, used to decide what fields to expect in the event detail.
     */
   var DetailType: js.UndefOr[String] = js.undefined
   

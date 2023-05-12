@@ -1,7 +1,7 @@
 
 # Scala.js typings for import-in-the-middle
 
-Typings are for version 1.3.4
+Typings are for version 1.3.5
 
 ## Library description:
 Intercept imports in Node.js

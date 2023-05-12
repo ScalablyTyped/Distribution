@@ -4,6 +4,7 @@ import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
 import typings.mendixmodelsdk.srcGenMicroflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.srcGenRestMod.rest.ConsumedODataService
 import typings.mendixmodelsdk.srcGenRestMod.rest.InteractiveRest
+import typings.mendixmodelsdk.srcGenRestMod.rest.InteractiveRestOperation
 import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
@@ -65,10 +66,21 @@ object HttpConfiguration {
   /**
     * Creates and returns a new HttpConfiguration instance in the SDK and on the server.
     * The new HttpConfiguration will be automatically stored in the 'httpConfiguration' property
+    * of the parent rest.InteractiveRestOperation element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.22.0 and higher
+    */
+  /* static member */
+  inline def createInInteractiveRestOperationUnderHttpConfiguration(container: InteractiveRestOperation): typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInteractiveRestOperationUnderHttpConfiguration")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.HttpConfiguration]
+  
+  /**
+    * Creates and returns a new HttpConfiguration instance in the SDK and on the server.
+    * The new HttpConfiguration will be automatically stored in the 'httpConfiguration' property
     * of the parent rest.InteractiveRest element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  9.18.0 and higher
+    *  9.18.0 to 9.22.0
     */
   /* static member */
   inline def createInInteractiveRestUnderHttpConfiguration(container: InteractiveRest): typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInteractiveRestUnderHttpConfiguration")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.HttpConfiguration]

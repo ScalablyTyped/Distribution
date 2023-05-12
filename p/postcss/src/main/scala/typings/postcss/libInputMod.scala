@@ -1,6 +1,10 @@
 package typings.postcss
 
 import typings.postcss.anon.Col
+import typings.postcss.anon.Column
+import typings.postcss.anon.Offset
+import typings.postcss.anon.Plugin
+import typings.postcss.mod.CssSyntaxError
 import typings.postcss.mod.ProcessOptions
 import typings.postcss.postcssBooleans.`false`
 import org.scalablytyped.runtime.StObject
@@ -9,11 +13,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libInputMod {
   
+  @JSImport("postcss/lib/input", JSImport.Namespace)
+  @js.native
+  open class ^ ()
+    extends StObject
+       with Input_
+  
+  /**
+    * Represents the source CSS.
+    *
+    * ```js
+    * const root  = postcss.parse(css, { from: file })
+    * const input = root.source.input
+    * ```
+    */
   @JSImport("postcss/lib/input", JSImport.Default)
   @js.native
   open class default protected ()
     extends StObject
-       with Input {
+       with Input_ {
     /**
       * @param css  Input CSS source.
       * @param opts Process options.
@@ -93,8 +111,18 @@ object libInputMod {
     }
   }
   
+  type Input = Input_
+  
+  /**
+    * Represents the source CSS.
+    *
+    * ```js
+    * const root  = postcss.parse(css, { from: file })
+    * const input = root.source.input
+    * ```
+    */
   @js.native
-  trait Input extends StObject {
+  trait Input_ extends StObject {
     
     /**
       * Input CSS source.
@@ -105,6 +133,22 @@ object libInputMod {
       * ```
       */
     var css: String = js.native
+    
+    /**
+      * Returns `CssSyntaxError` with information about the error and its position.
+      */
+    def error(message: String, line: Double, column: Double): CssSyntaxError = js.native
+    def error(message: String, line: Double, column: Double, opts: Plugin): CssSyntaxError = js.native
+    def error(message: String, offset: Double): CssSyntaxError = js.native
+    def error(message: String, offset: Double, opts: Plugin): CssSyntaxError = js.native
+    def error(message: String, start: Column, end: Column): CssSyntaxError = js.native
+    def error(message: String, start: Column, end: Column, opts: Plugin): CssSyntaxError = js.native
+    def error(message: String, start: Column, end: Offset): CssSyntaxError = js.native
+    def error(message: String, start: Column, end: Offset, opts: Plugin): CssSyntaxError = js.native
+    def error(message: String, start: Offset, end: Column): CssSyntaxError = js.native
+    def error(message: String, start: Offset, end: Column, opts: Plugin): CssSyntaxError = js.native
+    def error(message: String, start: Offset, end: Offset): CssSyntaxError = js.native
+    def error(message: String, start: Offset, end: Offset, opts: Plugin): CssSyntaxError = js.native
     
     /**
       * The absolute path to the CSS source file defined

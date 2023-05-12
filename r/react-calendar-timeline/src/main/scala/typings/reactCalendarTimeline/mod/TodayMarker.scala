@@ -12,7 +12,7 @@ open class TodayMarker protected ()
   def this(props: TodayMarkerProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: TodayMarkerProps, context: Any) = this()
 }

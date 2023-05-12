@@ -199,12 +199,12 @@ trait WorkDocs extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Deletes a version of an Amazon WorkDocs document. Use the DeletePriorVersions parameter to delete prior versions.
+    * Deletes a specific version of a document.
     */
   def deleteDocumentVersion(): Request[js.Object, AWSError] = js.native
   def deleteDocumentVersion(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes a version of an Amazon WorkDocs document. Use the DeletePriorVersions parameter to delete prior versions.
+    * Deletes a specific version of a document.
     */
   def deleteDocumentVersion(params: DeleteDocumentVersionRequest): Request[js.Object, AWSError] = js.native
   def deleteDocumentVersion(
@@ -269,12 +269,12 @@ trait WorkDocs extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Deletes the specified user from a Simple AD or Microsoft AD directory.
+    * Deletes the specified user from a Simple AD or Microsoft AD directory.  Deleting a user immediately and permanently deletes all content in that user's folder structure. Site retention policies do NOT apply to this type of deletion. 
     */
   def deleteUser(): Request[js.Object, AWSError] = js.native
   def deleteUser(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes the specified user from a Simple AD or Microsoft AD directory.
+    * Deletes the specified user from a Simple AD or Microsoft AD directory.  Deleting a user immediately and permanently deletes all content in that user's folder structure. Site retention policies do NOT apply to this type of deletion. 
     */
   def deleteUser(params: DeleteUserRequest): Request[js.Object, AWSError] = js.native
   def deleteUser(params: DeleteUserRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
@@ -560,6 +560,20 @@ trait WorkDocs extends Service {
     params: RestoreDocumentVersionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Searches metadata and the content of folders, documents, document versions, and comments.
+    */
+  def searchResources(): Request[SearchResourcesResponse, AWSError] = js.native
+  def searchResources(callback: js.Function2[/* err */ AWSError, /* data */ SearchResourcesResponse, Unit]): Request[SearchResourcesResponse, AWSError] = js.native
+  /**
+    * Searches metadata and the content of folders, documents, document versions, and comments.
+    */
+  def searchResources(params: SearchResourcesRequest): Request[SearchResourcesResponse, AWSError] = js.native
+  def searchResources(
+    params: SearchResourcesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ SearchResourcesResponse, Unit]
+  ): Request[SearchResourcesResponse, AWSError] = js.native
   
   /**
     * Updates the specified attributes of a document. The user must have access to both the document and its parent folder, if applicable.

@@ -1,19 +1,19 @@
 package typings.devtoolsProtocol.anon
 
-import typings.devtoolsProtocol.mod.Protocol.CacheStorage.DeleteEntryRequest
+import typings.devtoolsProtocol.mod.Protocol.CacheStorage.DeleteCacheRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `47` extends StObject {
   
-  var paramsType: js.Array[DeleteEntryRequest]
+  var paramsType: js.Array[DeleteCacheRequest]
   
   var returnType: Unit
 }
 object `47` {
   
-  inline def apply(paramsType: js.Array[DeleteEntryRequest], returnType: Unit): `47` = {
+  inline def apply(paramsType: js.Array[DeleteCacheRequest], returnType: Unit): `47` = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[`47`]
   }
@@ -21,9 +21,9 @@ object `47` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `47`] (val x: Self) extends AnyVal {
     
-    inline def setParamsType(value: js.Array[DeleteEntryRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[DeleteCacheRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: DeleteEntryRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
+    inline def setParamsTypeVarargs(value: DeleteCacheRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

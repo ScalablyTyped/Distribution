@@ -1,7 +1,7 @@
 
 # Scala.js typings for webcrypto-core
 
-Typings are for version 1.7.5
+Typings are for version 1.7.7
 
 ## Library description:
 Common layer to be used by crypto libraries based on WebCrypto API for input validation.

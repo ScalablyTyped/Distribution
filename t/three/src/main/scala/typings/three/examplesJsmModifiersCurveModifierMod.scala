@@ -1,6 +1,7 @@
 package typings.three
 
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcRenderersShadersUniformsLibMod.IUniform
 import typings.three.srcThreeMod.Curve
@@ -21,8 +22,11 @@ object examplesJsmModifiersCurveModifierMod {
   @JSImport("three/examples/jsm/modifiers/CurveModifier", "Flow")
   @js.native
   open class Flow protected () extends StObject {
-    def this(mesh: Mesh[BufferGeometry, Material | js.Array[Material]]) = this()
-    def this(mesh: Mesh[BufferGeometry, Material | js.Array[Material]], numberOfCurves: Double) = this()
+    def this(mesh: Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) = this()
+    def this(
+      mesh: Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]],
+      numberOfCurves: Double
+    ) = this()
     
     var curveArray: js.Array[Double] = js.native
     
@@ -30,7 +34,7 @@ object examplesJsmModifiersCurveModifierMod {
     
     def moveAlongCurve(amount: Double): Unit = js.native
     
-    var object3D: Mesh[BufferGeometry, Material | js.Array[Material]] = js.native
+    var object3D: Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]] = js.native
     
     var splineTexure: DataTexture = js.native
     
@@ -45,14 +49,14 @@ object examplesJsmModifiersCurveModifierMod {
     def this(
       count: Double,
       curveCount: Double,
-      geometry: typings.three.srcThreeMod.BufferGeometry,
+      geometry: typings.three.srcThreeMod.BufferGeometry[NormalBufferAttributes],
       material: typings.three.srcThreeMod.Material
     ) = this()
     
     def moveIndividualAlongCurve(index: Double, offset: Double): Unit = js.native
     
     @JSName("object3D")
-    var object3D_InstancedFlow: InstancedMesh[BufferGeometry, Material | js.Array[Material]] = js.native
+    var object3D_InstancedFlow: InstancedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]] = js.native
     
     var offsets: js.Array[Double] = js.native
     

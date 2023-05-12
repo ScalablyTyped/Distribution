@@ -13,11 +13,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libLazyResultMod {
   
+  @JSImport("postcss/lib/lazy-result", JSImport.Namespace)
+  @js.native
+  open class ^ ()
+    extends StObject
+       with LazyResult_
+  
+  /**
+    * A Promise proxy for the result of PostCSS transformations.
+    *
+    * A `LazyResult` instance is returned by `Processor#process`.
+    *
+    * ```js
+    * const lazy = postcss([autoprefixer]).process(css)
+    * ```
+    */
   @JSImport("postcss/lib/lazy-result", JSImport.Default)
   @js.native
   open class default protected ()
     extends StObject
-       with LazyResult {
+       with LazyResult_ {
     /**
       * @param processor Processor used for this transformation.
       * @param css       CSS to parse and transform.
@@ -26,8 +41,19 @@ object libLazyResultMod {
     def this(processor: typings.postcss.libProcessorMod.default, css: String, opts: ResultOptions) = this()
   }
   
+  type LazyResult = LazyResult_
+  
+  /**
+    * A Promise proxy for the result of PostCSS transformations.
+    *
+    * A `LazyResult` instance is returned by `Processor#process`.
+    *
+    * ```js
+    * const lazy = postcss([autoprefixer]).process(css)
+    * ```
+    */
   @js.native
-  trait LazyResult
+  trait LazyResult_
     extends StObject
        with PromiseLike[typings.postcss.libResultMod.default] {
     

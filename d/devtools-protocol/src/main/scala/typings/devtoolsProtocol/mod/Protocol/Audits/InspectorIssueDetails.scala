@@ -10,6 +10,8 @@ trait InspectorIssueDetails extends StObject {
   
   var blockedByResponseIssueDetails: js.UndefOr[BlockedByResponseIssueDetails] = js.undefined
   
+  var bounceTrackingIssueDetails: js.UndefOr[BounceTrackingIssueDetails] = js.undefined
+  
   var clientHintIssueDetails: js.UndefOr[ClientHintIssueDetails] = js.undefined
   
   var contentSecurityPolicyIssueDetails: js.UndefOr[ContentSecurityPolicyIssueDetails] = js.undefined
@@ -35,8 +37,6 @@ trait InspectorIssueDetails extends StObject {
   var quirksModeIssueDetails: js.UndefOr[QuirksModeIssueDetails] = js.undefined
   
   var sharedArrayBufferIssueDetails: js.UndefOr[SharedArrayBufferIssueDetails] = js.undefined
-  
-  var twaQualityEnforcementDetails: js.UndefOr[TrustedWebActivityIssueDetails] = js.undefined
 }
 object InspectorIssueDetails {
   
@@ -55,6 +55,10 @@ object InspectorIssueDetails {
     inline def setBlockedByResponseIssueDetails(value: BlockedByResponseIssueDetails): Self = StObject.set(x, "blockedByResponseIssueDetails", value.asInstanceOf[js.Any])
     
     inline def setBlockedByResponseIssueDetailsUndefined: Self = StObject.set(x, "blockedByResponseIssueDetails", js.undefined)
+    
+    inline def setBounceTrackingIssueDetails(value: BounceTrackingIssueDetails): Self = StObject.set(x, "bounceTrackingIssueDetails", value.asInstanceOf[js.Any])
+    
+    inline def setBounceTrackingIssueDetailsUndefined: Self = StObject.set(x, "bounceTrackingIssueDetails", js.undefined)
     
     inline def setClientHintIssueDetails(value: ClientHintIssueDetails): Self = StObject.set(x, "clientHintIssueDetails", value.asInstanceOf[js.Any])
     
@@ -107,9 +111,5 @@ object InspectorIssueDetails {
     inline def setSharedArrayBufferIssueDetails(value: SharedArrayBufferIssueDetails): Self = StObject.set(x, "sharedArrayBufferIssueDetails", value.asInstanceOf[js.Any])
     
     inline def setSharedArrayBufferIssueDetailsUndefined: Self = StObject.set(x, "sharedArrayBufferIssueDetails", js.undefined)
-    
-    inline def setTwaQualityEnforcementDetails(value: TrustedWebActivityIssueDetails): Self = StObject.set(x, "twaQualityEnforcementDetails", value.asInstanceOf[js.Any])
-    
-    inline def setTwaQualityEnforcementDetailsUndefined: Self = StObject.set(x, "twaQualityEnforcementDetails", js.undefined)
   }
 }

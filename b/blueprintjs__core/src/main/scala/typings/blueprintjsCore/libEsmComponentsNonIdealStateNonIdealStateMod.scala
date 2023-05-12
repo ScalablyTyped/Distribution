@@ -6,7 +6,7 @@ import typings.blueprintjsCore.blueprintjsCoreStrings.vertical
 import typings.blueprintjsCore.libEsmCommonMod.AbstractPureComponent2
 import typings.blueprintjsCore.libEsmCommonPropsMod.IProps
 import typings.blueprintjsCore.libEsmCommonPropsMod.MaybeElement
-import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsIcons.libEsmGeneratedIcons16pxBlueprintIcons16Mod.BlueprintIcons16Id
 import typings.react.mod.ReactChild
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element

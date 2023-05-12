@@ -20,7 +20,7 @@ trait ContractTermAsset
   var answer: js.UndefOr[js.Array[ContractTermOfferAnswer]] = js.undefined
   
   /**
-    * Description of the quality and completeness of the asset that imay be a factor in its valuation.
+    * Description of the quality and completeness of the asset that may be a factor in its valuation.
     */
   var condition: js.UndefOr[String] = js.undefined
   
@@ -45,7 +45,7 @@ trait ContractTermAsset
   var periodType: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
-    * Specifies the applicability of the term to an asset resource instance, and instances it refers to orinstances that refer to it, and/or are owned by the offeree.
+    * Specifies the applicability of the term to an asset resource instance, and instances it refers to or instances that refer to it, and/or are owned by the offeree.
     */
   var relationship: js.UndefOr[Coding] = js.undefined
   

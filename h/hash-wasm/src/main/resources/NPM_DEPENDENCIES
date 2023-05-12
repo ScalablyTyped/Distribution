@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "hash-wasm" : "4.9.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "hash-wasm" : "4.9.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

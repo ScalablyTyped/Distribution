@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jest-circus" : "29.3.1"
+      "jest-circus" : "29.5.0"
     }
   ],
   "test-dependencies" : [
     {
-      "jest-circus" : "29.3.1"
+      "jest-circus" : "29.5.0"
     }
   ],
   "compile-devDependencies" : [

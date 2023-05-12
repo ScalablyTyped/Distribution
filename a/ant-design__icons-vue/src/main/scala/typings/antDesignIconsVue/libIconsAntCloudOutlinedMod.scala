@@ -16,7 +16,7 @@ object libIconsAntCloudOutlinedMod extends Shortcut {
   @js.native
   trait AntCloudOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_AntCloudOutlinedIconType: String = js.native

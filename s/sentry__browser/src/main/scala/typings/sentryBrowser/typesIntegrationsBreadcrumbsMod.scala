@@ -1,8 +1,9 @@
 package typings.sentryBrowser
 
+import typings.sentryBrowser.anon.MaxStringLength
 import typings.sentryBrowser.anon.PartialBreadcrumbsOptions
 import typings.sentryBrowser.anon.ReadonlyBreadcrumbsOption
-import typings.sentryBrowser.anon.SerializeAttribute
+import typings.sentryTypes.typesEventMod.Event
 import typings.sentryTypes.typesEventprocessorMod.EventProcessor
 import typings.sentryTypes.typesHubMod.Hub
 import typings.sentryTypes.typesIntegrationMod.Integration
@@ -25,6 +26,11 @@ object typesIntegrationsBreadcrumbsMod {
     extends StObject
        with Integration {
     def this(options: PartialBreadcrumbsOptions) = this()
+    
+    /**
+      * Adds a breadcrumb for Sentry events or transactions if this option is enabled.
+      */
+    def addSentryBreadcrumb(event: Event): Unit = js.native
     
     /**
       * Returns {@link IntegrationClass.id}
@@ -77,7 +83,7 @@ object typesIntegrationsBreadcrumbsMod {
     
     var console: Boolean
     
-    var dom: Boolean | SerializeAttribute
+    var dom: Boolean | MaxStringLength
     
     var fetch: Boolean
     
@@ -91,7 +97,7 @@ object typesIntegrationsBreadcrumbsMod {
     
     inline def apply(
       console: Boolean,
-      dom: Boolean | SerializeAttribute,
+      dom: Boolean | MaxStringLength,
       fetch: Boolean,
       history: Boolean,
       sentry: Boolean,
@@ -106,7 +112,7 @@ object typesIntegrationsBreadcrumbsMod {
       
       inline def setConsole(value: Boolean): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
       
-      inline def setDom(value: Boolean | SerializeAttribute): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
+      inline def setDom(value: Boolean | MaxStringLength): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
       
       inline def setFetch(value: Boolean): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
       

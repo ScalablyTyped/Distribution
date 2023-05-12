@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Shortcut
 import typings.atlaskitMotion.anon.ClassName
 import typings.atlaskitMotion.distTypesEnteringTypesMod.MotionProps
 import typings.atlaskitMotion.distTypesEnteringTypesMod.Transition
+import typings.emotionSerialize.mod.CSSObject
 import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
@@ -42,14 +43,12 @@ object distTypesEnteringKeyframesMotionMod extends Shortcut {
     /**
       * CSS keyframes for the entering animation.
       */
-    var enteringAnimation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectInterpolation<undefined> */ Any
+    var enteringAnimation: CSSObject
     
     /**
       * CSS keyframes for the exiting animation.
       */
-    var exitingAnimation: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectInterpolation<undefined> */ Any
-      ] = js.undefined
+    var exitingAnimation: js.UndefOr[CSSObject] = js.undefined
   }
   object InternalKeyframesMotionProps {
     
@@ -57,7 +56,7 @@ object distTypesEnteringKeyframesMotionMod extends Shortcut {
       animationTimingFunction: Transition => String,
       children: (ClassName, Transition) => ReactNode,
       duration: Double,
-      enteringAnimation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectInterpolation<undefined> */ Any
+      enteringAnimation: CSSObject
     ): InternalKeyframesMotionProps = {
       val __obj = js.Dynamic.literal(animationTimingFunction = js.Any.fromFunction1(animationTimingFunction), children = js.Any.fromFunction2(children), duration = duration.asInstanceOf[js.Any], enteringAnimation = enteringAnimation.asInstanceOf[js.Any])
       __obj.asInstanceOf[InternalKeyframesMotionProps]
@@ -70,13 +69,9 @@ object distTypesEnteringKeyframesMotionMod extends Shortcut {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      inline def setEnteringAnimation(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectInterpolation<undefined> */ Any
-      ): Self = StObject.set(x, "enteringAnimation", value.asInstanceOf[js.Any])
+      inline def setEnteringAnimation(value: CSSObject): Self = StObject.set(x, "enteringAnimation", value.asInstanceOf[js.Any])
       
-      inline def setExitingAnimation(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectInterpolation<undefined> */ Any
-      ): Self = StObject.set(x, "exitingAnimation", value.asInstanceOf[js.Any])
+      inline def setExitingAnimation(value: CSSObject): Self = StObject.set(x, "exitingAnimation", value.asInstanceOf[js.Any])
       
       inline def setExitingAnimationUndefined: Self = StObject.set(x, "exitingAnimation", js.undefined)
     }

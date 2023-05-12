@@ -67,5 +67,12 @@ trait Statement extends StObject {
     */
   def getStatus(): StatementStatus = js.native
   
+  /**
+    * Streams the rows in this statement's result. If start and end values are
+    * specified, only rows in the specified range are streamed.
+    *
+    * @param StreamOptions options
+    */
   def streamRows(): Readable = js.native
+  def streamRows(options: StreamOptions): Readable = js.native
 }

@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BackgroundClip
+import typings.csstype.mod.Property.Scale
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `139` extends StObject {
   
   var value: js.UndefOr[
-    BackgroundClip | (js.Array[
-      (Extract[
-        js.UndefOr[BackgroundClip | js.Array[NonNullable[js.UndefOr[BackgroundClip]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[BackgroundClip]]
+    Scale | (js.Array[
+      (Extract[js.UndefOr[Scale | js.Array[NonNullable[js.UndefOr[Scale]]]], String]) | NonNullable[js.UndefOr[Scale]]
     ])
   ] = js.native
 }

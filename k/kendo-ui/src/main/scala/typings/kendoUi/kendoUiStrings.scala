@@ -111,6 +111,14 @@ object kendoUiStrings {
   inline def kendoCheckBoxGroup: kendoCheckBoxGroup = "kendoCheckBoxGroup".asInstanceOf[kendoCheckBoxGroup]
   
   @js.native
+  sealed trait kendoChip extends StObject
+  inline def kendoChip: kendoChip = "kendoChip".asInstanceOf[kendoChip]
+  
+  @js.native
+  sealed trait kendoChipList extends StObject
+  inline def kendoChipList: kendoChipList = "kendoChipList".asInstanceOf[kendoChipList]
+  
+  @js.native
   sealed trait kendoCircularGauge extends StObject
   inline def kendoCircularGauge: kendoCircularGauge = "kendoCircularGauge".asInstanceOf[kendoCircularGauge]
   
@@ -173,6 +181,10 @@ object kendoUiStrings {
   @js.native
   sealed trait kendoDrawer extends StObject
   inline def kendoDrawer: kendoDrawer = "kendoDrawer".asInstanceOf[kendoDrawer]
+  
+  @js.native
+  sealed trait kendoDropDownButton extends StObject
+  inline def kendoDropDownButton: kendoDropDownButton = "kendoDropDownButton".asInstanceOf[kendoDropDownButton]
   
   @js.native
   sealed trait kendoDropDownList extends StObject
@@ -455,6 +467,10 @@ object kendoUiStrings {
   inline def kendoScrollView: kendoScrollView = "kendoScrollView".asInstanceOf[kendoScrollView]
   
   @js.native
+  sealed trait kendoSignature extends StObject
+  inline def kendoSignature: kendoSignature = "kendoSignature".asInstanceOf[kendoSignature]
+  
+  @js.native
   sealed trait kendoSkeletonContainer extends StObject
   inline def kendoSkeletonContainer: kendoSkeletonContainer = "kendoSkeletonContainer".asInstanceOf[kendoSkeletonContainer]
   
@@ -469,6 +485,10 @@ object kendoUiStrings {
   @js.native
   sealed trait kendoSparkline extends StObject
   inline def kendoSparkline: kendoSparkline = "kendoSparkline".asInstanceOf[kendoSparkline]
+  
+  @js.native
+  sealed trait kendoSplitButton extends StObject
+  inline def kendoSplitButton: kendoSplitButton = "kendoSplitButton".asInstanceOf[kendoSplitButton]
   
   @js.native
   sealed trait kendoSplitter extends StObject
@@ -507,12 +527,20 @@ object kendoUiStrings {
   inline def kendoTileLayout: kendoTileLayout = "kendoTileLayout".asInstanceOf[kendoTileLayout]
   
   @js.native
+  sealed trait kendoTimeDurationPicker extends StObject
+  inline def kendoTimeDurationPicker: kendoTimeDurationPicker = "kendoTimeDurationPicker".asInstanceOf[kendoTimeDurationPicker]
+  
+  @js.native
   sealed trait kendoTimePicker extends StObject
   inline def kendoTimePicker: kendoTimePicker = "kendoTimePicker".asInstanceOf[kendoTimePicker]
   
   @js.native
   sealed trait kendoTimeline extends StObject
   inline def kendoTimeline: kendoTimeline = "kendoTimeline".asInstanceOf[kendoTimeline]
+  
+  @js.native
+  sealed trait kendoToggleButton extends StObject
+  inline def kendoToggleButton: kendoToggleButton = "kendoToggleButton".asInstanceOf[kendoToggleButton]
   
   @js.native
   sealed trait kendoToolBar extends StObject

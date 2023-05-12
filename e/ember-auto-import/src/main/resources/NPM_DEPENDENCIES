@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ember-auto-import" : "2.6.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ember-auto-import" : "2.6.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

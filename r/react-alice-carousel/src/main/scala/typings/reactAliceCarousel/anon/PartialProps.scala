@@ -1,5 +1,6 @@
 package typings.reactAliceCarousel.anon
 
+import typings.react.mod.ReactNode
 import typings.reactAliceCarousel.libTypesMod.AnimationType
 import typings.reactAliceCarousel.libTypesMod.AutoPlayStrategy
 import typings.reactAliceCarousel.libTypesMod.AutoplayDirection
@@ -89,17 +90,17 @@ trait PartialProps extends StObject {
   
   var preservePosition: js.UndefOr[Boolean] = js.undefined
   
-  var renderDotsItem: js.UndefOr[js.Function1[/* e */ DotsItem, Any]] = js.undefined
+  var renderDotsItem: js.UndefOr[js.Function1[/* e */ DotsItem, ReactNode]] = js.undefined
   
   var renderKey: js.UndefOr[Double] = js.undefined
   
-  var renderNextButton: js.UndefOr[js.Function1[/* param0 */ IsDisabled, Any]] = js.undefined
+  var renderNextButton: js.UndefOr[js.Function1[/* param0 */ IsDisabled, ReactNode]] = js.undefined
   
-  var renderPlayPauseButton: js.UndefOr[js.Function1[/* param0 */ IsPlaying, Any]] = js.undefined
+  var renderPlayPauseButton: js.UndefOr[js.Function1[/* param0 */ IsPlaying, ReactNode]] = js.undefined
   
-  var renderPrevButton: js.UndefOr[js.Function1[/* param0 */ IsDisabled, Any]] = js.undefined
+  var renderPrevButton: js.UndefOr[js.Function1[/* param0 */ IsDisabled, ReactNode]] = js.undefined
   
-  var renderSlideInfo: js.UndefOr[js.Function1[/* e */ SlideInfo, Any]] = js.undefined
+  var renderSlideInfo: js.UndefOr[js.Function1[/* e */ SlideInfo, ReactNode]] = js.undefined
   
   var responsive: js.UndefOr[Responsive] = js.undefined
   
@@ -245,7 +246,7 @@ object PartialProps {
     
     inline def setPreservePositionUndefined: Self = StObject.set(x, "preservePosition", js.undefined)
     
-    inline def setRenderDotsItem(value: /* e */ DotsItem => Any): Self = StObject.set(x, "renderDotsItem", js.Any.fromFunction1(value))
+    inline def setRenderDotsItem(value: /* e */ DotsItem => ReactNode): Self = StObject.set(x, "renderDotsItem", js.Any.fromFunction1(value))
     
     inline def setRenderDotsItemUndefined: Self = StObject.set(x, "renderDotsItem", js.undefined)
     
@@ -253,19 +254,19 @@ object PartialProps {
     
     inline def setRenderKeyUndefined: Self = StObject.set(x, "renderKey", js.undefined)
     
-    inline def setRenderNextButton(value: /* param0 */ IsDisabled => Any): Self = StObject.set(x, "renderNextButton", js.Any.fromFunction1(value))
+    inline def setRenderNextButton(value: /* param0 */ IsDisabled => ReactNode): Self = StObject.set(x, "renderNextButton", js.Any.fromFunction1(value))
     
     inline def setRenderNextButtonUndefined: Self = StObject.set(x, "renderNextButton", js.undefined)
     
-    inline def setRenderPlayPauseButton(value: /* param0 */ IsPlaying => Any): Self = StObject.set(x, "renderPlayPauseButton", js.Any.fromFunction1(value))
+    inline def setRenderPlayPauseButton(value: /* param0 */ IsPlaying => ReactNode): Self = StObject.set(x, "renderPlayPauseButton", js.Any.fromFunction1(value))
     
     inline def setRenderPlayPauseButtonUndefined: Self = StObject.set(x, "renderPlayPauseButton", js.undefined)
     
-    inline def setRenderPrevButton(value: /* param0 */ IsDisabled => Any): Self = StObject.set(x, "renderPrevButton", js.Any.fromFunction1(value))
+    inline def setRenderPrevButton(value: /* param0 */ IsDisabled => ReactNode): Self = StObject.set(x, "renderPrevButton", js.Any.fromFunction1(value))
     
     inline def setRenderPrevButtonUndefined: Self = StObject.set(x, "renderPrevButton", js.undefined)
     
-    inline def setRenderSlideInfo(value: /* e */ SlideInfo => Any): Self = StObject.set(x, "renderSlideInfo", js.Any.fromFunction1(value))
+    inline def setRenderSlideInfo(value: /* e */ SlideInfo => ReactNode): Self = StObject.set(x, "renderSlideInfo", js.Any.fromFunction1(value))
     
     inline def setRenderSlideInfoUndefined: Self = StObject.set(x, "renderSlideInfo", js.undefined)
     

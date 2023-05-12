@@ -319,7 +319,7 @@ object libServerMod {
   trait HeaderOptions extends StObject {
     
     /** Payload content-type (ignored if hash provided) */
-    var contentType: js.UndefOr[String] = js.undefined
+    var contentType: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** Application specific data sent via the ext attribute */
     var ext: js.UndefOr[String] = js.undefined
@@ -340,9 +340,11 @@ object libServerMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: HeaderOptions] (val x: Self) extends AnyVal {
       
-      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: String | js.Array[String]): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
       inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+      
+      inline def setContentTypeVarargs(value: String*): Self = StObject.set(x, "contentType", js.Array(value*))
       
       inline def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       

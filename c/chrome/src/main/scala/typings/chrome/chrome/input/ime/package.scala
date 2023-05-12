@@ -26,7 +26,8 @@ type InputContextUpdateEvent = Event[js.Function1[/* context */ InputContext, Un
 
 type InputResetEvent = Event[js.Function1[/* engineID */ String, Unit]]
 
-type KeyEventEvent = Event[js.Function2[/* engineID */ String, /* keyData */ KeyboardEvent, Unit]]
+type KeyEventEvent = Event[
+js.Function3[/* engineID */ String, /* keyData */ KeyboardEvent, /* requestId */ String, Unit]]
 
 type MenuItemActivatedEvent = Event[js.Function2[/* engineID */ String, /* name */ String, Unit]]
 

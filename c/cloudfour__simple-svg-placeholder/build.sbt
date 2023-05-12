@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cloudfour__simple-svg-placeholder"
-version := "1.0-dt-20220624Z-5a8857"
+version := "1.1-dt-20230222Z-5a8857"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

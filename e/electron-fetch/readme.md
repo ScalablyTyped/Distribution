@@ -1,7 +1,7 @@
 
 # Scala.js typings for electron-fetch
 
-Typings are for version 1.7.4
+Typings are for version 1.9.1
 
 ## Library description:
 A light-weight module that brings window.fetch to electron's background process

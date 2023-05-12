@@ -1,5 +1,7 @@
 package typings.rcSelect
 
+import typings.rcComponentTrigger.esInterfaceMod.AlignType
+import typings.rcComponentTrigger.esInterfaceMod.BuildInPlacements
 import typings.rcSelect.anon.Source
 import typings.rcSelect.anon.Type
 import typings.rcSelect.libSelectMod._DraftValueType
@@ -48,7 +50,6 @@ import typings.rcSelect.rcSelectStrings.text
 import typings.rcSelect.rcSelectStrings.time
 import typings.rcSelect.rcSelectStrings.tree
 import typings.rcSelect.rcSelectStrings.vertical
-import typings.rcTrigger.esInterfaceMod.AlignType
 import typings.rcVirtualList.esListMod.ScrollConfig
 import typings.rcVirtualList.esListMod.ScrollTo
 import typings.react.mod.AriaAttributes
@@ -101,6 +102,8 @@ object libBaseSelectMod {
     /** Current dropdown list active item string value */
     var activeValue: js.UndefOr[String] = js.undefined
     
+    var autoClearSearchValue: js.UndefOr[Boolean] = js.undefined
+    
     var displayValues: js.Array[DisplayValueType]
     
     /** Tell if provided `options` is empty */
@@ -151,6 +154,10 @@ object libBaseSelectMod {
       
       inline def setActiveValueUndefined: Self = StObject.set(x, "activeValue", js.undefined)
       
+      inline def setAutoClearSearchValue(value: Boolean): Self = StObject.set(x, "autoClearSearchValue", value.asInstanceOf[js.Any])
+      
+      inline def setAutoClearSearchValueUndefined: Self = StObject.set(x, "autoClearSearchValue", js.undefined)
+      
       inline def setDisplayValues(value: js.Array[DisplayValueType]): Self = StObject.set(x, "displayValues", value.asInstanceOf[js.Any])
       
       inline def setDisplayValuesVarargs(value: DisplayValueType*): Self = StObject.set(x, "displayValues", js.Array(value*))
@@ -195,6 +202,8 @@ object libBaseSelectMod {
     var animation: js.UndefOr[String] = js.undefined
     
     var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
+    var builtinPlacements: js.UndefOr[BuildInPlacements] = js.undefined
     
     var choiceTransitionName: js.UndefOr[String] = js.undefined
     
@@ -290,6 +299,8 @@ object libBaseSelectMod {
     
     var tagRender: js.UndefOr[js.Function1[/* props */ CustomTagProps, ReactElement]] = js.undefined
     
+    var title: js.UndefOr[String] = js.undefined
+    
     var tokenSeparators: js.UndefOr[js.Array[String]] = js.undefined
     
     var transitionName: js.UndefOr[String] = js.undefined
@@ -324,6 +335,10 @@ object libBaseSelectMod {
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
       inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
+      inline def setBuiltinPlacements(value: BuildInPlacements): Self = StObject.set(x, "builtinPlacements", value.asInstanceOf[js.Any])
+      
+      inline def setBuiltinPlacementsUndefined: Self = StObject.set(x, "builtinPlacements", js.undefined)
       
       inline def setChoiceTransitionName(value: String): Self = StObject.set(x, "choiceTransitionName", value.asInstanceOf[js.Any])
       
@@ -511,6 +526,10 @@ object libBaseSelectMod {
       
       inline def setTagRenderUndefined: Self = StObject.set(x, "tagRender", js.undefined)
       
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      
       inline def setTokenSeparators(value: js.Array[String]): Self = StObject.set(x, "tokenSeparators", value.asInstanceOf[js.Any])
       
       inline def setTokenSeparatorsUndefined: Self = StObject.set(x, "tokenSeparators", js.undefined)
@@ -630,6 +649,8 @@ object libBaseSelectMod {
     
     var autoFocus: js.UndefOr[Boolean] = js.undefined
     
+    var builtinPlacements: js.UndefOr[BuildInPlacements] = js.undefined
+    
     var choiceTransitionName: js.UndefOr[String] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
@@ -719,6 +740,8 @@ object libBaseSelectMod {
     var tabIndex: js.UndefOr[Double] = js.undefined
     
     var tagRender: js.UndefOr[js.Function1[/* props */ CustomTagProps, ReactElement]] = js.undefined
+    
+    var title: js.UndefOr[String] = js.undefined
     
     var tokenSeparators: js.UndefOr[js.Array[String]] = js.undefined
     
@@ -940,6 +963,10 @@ object libBaseSelectMod {
       
       inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
+      inline def setBuiltinPlacements(value: BuildInPlacements): Self = StObject.set(x, "builtinPlacements", value.asInstanceOf[js.Any])
+      
+      inline def setBuiltinPlacementsUndefined: Self = StObject.set(x, "builtinPlacements", js.undefined)
+      
       inline def setChoiceTransitionName(value: String): Self = StObject.set(x, "choiceTransitionName", value.asInstanceOf[js.Any])
       
       inline def setChoiceTransitionNameUndefined: Self = StObject.set(x, "choiceTransitionName", js.undefined)
@@ -1126,6 +1153,10 @@ object libBaseSelectMod {
       
       inline def setTagRenderUndefined: Self = StObject.set(x, "tagRender", js.undefined)
       
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      
       inline def setTokenSeparators(value: js.Array[String]): Self = StObject.set(x, "tokenSeparators", value.asInstanceOf[js.Any])
       
       inline def setTokenSeparatorsUndefined: Self = StObject.set(x, "tokenSeparators", js.undefined)
@@ -1177,6 +1208,21 @@ object libBaseSelectMod {
     def onClose(event: MouseEvent[HTMLElement, typings.std.MouseEvent]): Unit = js.native
     
     var value: Any = js.native
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.rcSelect.rcSelectStrings.add
+    - typings.rcSelect.rcSelectStrings.remove
+    - typings.rcSelect.rcSelectStrings.clear
+  */
+  trait DisplayInfoType extends StObject
+  object DisplayInfoType {
+    
+    inline def add: typings.rcSelect.rcSelectStrings.add = "add".asInstanceOf[typings.rcSelect.rcSelectStrings.add]
+    
+    inline def clear: typings.rcSelect.rcSelectStrings.clear = "clear".asInstanceOf[typings.rcSelect.rcSelectStrings.clear]
+    
+    inline def remove: typings.rcSelect.rcSelectStrings.remove = "remove".asInstanceOf[typings.rcSelect.rcSelectStrings.remove]
   }
   
   trait DisplayValueType

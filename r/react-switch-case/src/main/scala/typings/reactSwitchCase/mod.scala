@@ -20,7 +20,7 @@ object mod {
     def this(props: CaseProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: CaseProps, context: Any) = this()
   }
@@ -32,7 +32,7 @@ object mod {
     def this(props: js.Object) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: js.Object, context: Any) = this()
   }

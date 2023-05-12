@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FileDeleteEvent extends StObject {
   
   /**
-    * The files that got deleted.
-    */
+  		 * The files that got deleted.
+  		 */
   val files: js.Array[Uri]
 }
 object FileDeleteEvent {

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `200Content550` extends StObject {
   
-  /** The list of reviews returns in chronological order. */
+  /** @description Response */
   var `200`: Content550
 }
 object `200Content550` {

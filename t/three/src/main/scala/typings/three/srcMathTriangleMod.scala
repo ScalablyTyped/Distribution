@@ -6,6 +6,7 @@ import typings.three.srcMathBox3Mod.Box3
 import typings.three.srcMathPlaneMod.Plane
 import typings.three.srcMathVector2Mod.Vector2
 import typings.three.srcMathVector3Mod.Vector3
+import typings.three.srcMathVector4Mod.Vector4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,12 +51,19 @@ object srcMathTriangleMod {
     
     def getBarycoord(point: Vector3, target: Vector3): Vector3 = js.native
     
+    def getInterpolation(point: Vector3, v1: Vector2, v2: Vector2, v3: Vector2, target: Vector2): Vector2 = js.native
+    def getInterpolation(point: Vector3, v1: Vector3, v2: Vector3, v3: Vector3, target: Vector3): Vector3 = js.native
+    def getInterpolation(point: Vector3, v1: Vector4, v2: Vector4, v3: Vector4, target: Vector4): Vector4 = js.native
+    
     def getMidpoint(target: Vector3): Vector3 = js.native
     
     def getNormal(target: Vector3): Vector3 = js.native
     
     def getPlane(target: Plane): Plane = js.native
     
+    /**
+      * @deprecated Triangle.getUV() has been renamed to Triangle.getInterpolation().
+      */
     def getUV(point: Vector3, uv1: Vector2, uv2: Vector2, uv3: Vector2, target: Vector2): Vector2 = js.native
     
     def intersectsBox(box: Box3): Boolean = js.native
@@ -80,8 +88,42 @@ object srcMathTriangleMod {
     
     inline def getBarycoord(point: Vector3, a: Vector3, b: Vector3, c: Vector3, target: Vector3): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("getBarycoord")(point.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Vector3]
     
+    inline def getInterpolation(
+      point: Vector3,
+      p1: Vector3,
+      p2: Vector3,
+      p3: Vector3,
+      v1: Vector2,
+      v2: Vector2,
+      v3: Vector2,
+      target: Vector2
+    ): Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("getInterpolation")(point.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Vector2]
+    inline def getInterpolation(
+      point: Vector3,
+      p1: Vector3,
+      p2: Vector3,
+      p3: Vector3,
+      v1: Vector3,
+      v2: Vector3,
+      v3: Vector3,
+      target: Vector3
+    ): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("getInterpolation")(point.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Vector3]
+    inline def getInterpolation(
+      point: Vector3,
+      p1: Vector3,
+      p2: Vector3,
+      p3: Vector3,
+      v1: Vector4,
+      v2: Vector4,
+      v3: Vector4,
+      target: Vector4
+    ): Vector4 = (^.asInstanceOf[js.Dynamic].applyDynamic("getInterpolation")(point.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Vector4]
+    
     inline def getNormal(a: Vector3, b: Vector3, c: Vector3, target: Vector3): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("getNormal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Vector3]
     
+    /**
+      * @deprecated THREE.Triangle.getUV() has been renamed to THREE.Triangle.getInterpolation().
+      */
     inline def getUV(
       point: Vector3,
       p1: Vector3,

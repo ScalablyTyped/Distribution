@@ -1,6 +1,6 @@
 package typings.devextreme.mod.DevExpress.viz
 
-import typings.devextreme.anon.BottomLeft
+import typings.devextreme.anon.Bottom
 import typings.devextreme.anon.Offset
 import typings.devextreme.mod.DevExpress.common.HorizontalAlignment
 import typings.devextreme.mod.DevExpress.common.VerticalEdge
@@ -25,7 +25,7 @@ trait BaseWidgetTitle extends StObject {
   /**
     * Generates space around the title.
     */
-  var margin: js.UndefOr[Double | BottomLeft] = js.undefined
+  var margin: js.UndefOr[Double | Bottom] = js.undefined
   
   /**
     * Reserves a pixel-measured space for the title.
@@ -75,7 +75,7 @@ object BaseWidgetTitle {
     
     inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
     
-    inline def setMargin(value: Double | BottomLeft): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: Double | Bottom): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     

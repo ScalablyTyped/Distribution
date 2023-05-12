@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersQueryPagePerpageState extends StObject {
   
+  /** List organization memberships for the authenticated user */
   var get: ParametersQueryPagePerpageState
 }
 object GetParametersQueryPagePerpageState {

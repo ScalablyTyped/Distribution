@@ -37,9 +37,9 @@ trait GPURenderPassDescriptor
   var occlusionQuerySet: js.UndefOr[GPUQuerySet] = js.undefined
   
   /**
-    * A sequence of {@link GPURenderPassTimestampWrite} values defines where and when timestamp values will be written for this pass.
+    * Defines which timestamp values will be written for this pass, and where to write them to.
     */
-  var timestampWrites: js.UndefOr[js.Iterable[GPURenderPassTimestampWrite]] = js.undefined
+  var timestampWrites: js.UndefOr[GPURenderPassTimestampWrites] = js.undefined
 }
 object GPURenderPassDescriptor {
   
@@ -65,7 +65,7 @@ object GPURenderPassDescriptor {
     
     inline def setOcclusionQuerySetUndefined: Self = StObject.set(x, "occlusionQuerySet", js.undefined)
     
-    inline def setTimestampWrites(value: js.Iterable[GPURenderPassTimestampWrite]): Self = StObject.set(x, "timestampWrites", value.asInstanceOf[js.Any])
+    inline def setTimestampWrites(value: GPURenderPassTimestampWrites): Self = StObject.set(x, "timestampWrites", value.asInstanceOf[js.Any])
     
     inline def setTimestampWritesUndefined: Self = StObject.set(x, "timestampWrites", js.undefined)
   }

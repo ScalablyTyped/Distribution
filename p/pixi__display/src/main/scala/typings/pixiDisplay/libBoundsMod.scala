@@ -15,7 +15,7 @@ object libBoundsMod {
   open class Bounds () extends StObject {
     
     /**
-      * Adds other {@link Bounds}.
+      * Adds other {@link PIXI.Bounds}.
       * @param bounds - The Bounds to be added
       */
     def addBounds(bounds: Bounds): Unit = js.native

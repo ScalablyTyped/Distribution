@@ -140,7 +140,55 @@ object Accounts {
     }
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.meteor.anon.Error
+    - typings.meteor.anon.StampedLoginToken
+  */
+  trait LoginMethodResult extends StObject
+  object LoginMethodResult {
+    
+    inline def Error(error: js.Error): typings.meteor.anon.Error = {
+      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.meteor.anon.Error]
+    }
+    
+    inline def StampedLoginToken(userId: String): typings.meteor.anon.StampedLoginToken = {
+      val __obj = js.Dynamic.literal(userId = userId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.meteor.anon.StampedLoginToken]
+    }
+  }
+  
   type Password = String | Digest
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.meteor.meteorStrings.USERNAME_AND_EMAIL
+    - typings.meteor.meteorStrings.USERNAME_AND_OPTIONAL_EMAIL
+    - typings.meteor.meteorStrings.USERNAME_ONLY
+    - typings.meteor.meteorStrings.EMAIL_ONLY
+  */
+  trait PasswordSignupField extends StObject
+  object PasswordSignupField {
+    
+    inline def EMAIL_ONLY: typings.meteor.meteorStrings.EMAIL_ONLY = "EMAIL_ONLY".asInstanceOf[typings.meteor.meteorStrings.EMAIL_ONLY]
+    
+    inline def USERNAME_AND_EMAIL: typings.meteor.meteorStrings.USERNAME_AND_EMAIL = "USERNAME_AND_EMAIL".asInstanceOf[typings.meteor.meteorStrings.USERNAME_AND_EMAIL]
+    
+    inline def USERNAME_AND_OPTIONAL_EMAIL: typings.meteor.meteorStrings.USERNAME_AND_OPTIONAL_EMAIL = "USERNAME_AND_OPTIONAL_EMAIL".asInstanceOf[typings.meteor.meteorStrings.USERNAME_AND_OPTIONAL_EMAIL]
+    
+    inline def USERNAME_ONLY: typings.meteor.meteorStrings.USERNAME_ONLY = "USERNAME_ONLY".asInstanceOf[typings.meteor.meteorStrings.USERNAME_ONLY]
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.meteor.meteorStrings.USERNAME_AND_EMAIL
+    - typings.meteor.meteorStrings.EMAIL_ONLY
+  */
+  trait PasswordlessSignupField extends StObject
+  object PasswordlessSignupField {
+    
+    inline def EMAIL_ONLY: typings.meteor.meteorStrings.EMAIL_ONLY = "EMAIL_ONLY".asInstanceOf[typings.meteor.meteorStrings.EMAIL_ONLY]
+    
+    inline def USERNAME_AND_EMAIL: typings.meteor.meteorStrings.USERNAME_AND_EMAIL = "USERNAME_AND_EMAIL".asInstanceOf[typings.meteor.meteorStrings.USERNAME_AND_EMAIL]
+  }
   
   trait StampedLoginToken extends StObject {
     

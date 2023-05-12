@@ -16,7 +16,7 @@ object libIconsPhoneFilledMod extends Shortcut {
   @js.native
   trait PhoneFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_PhoneFilledIconType: String = js.native

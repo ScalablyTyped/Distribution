@@ -12,6 +12,11 @@ trait JdbcTarget extends StObject {
   var ConnectionName: js.UndefOr[typings.awsSdk.clientsGlueMod.ConnectionName] = js.undefined
   
   /**
+    * Specify a value of RAWTYPES or COMMENTS to enable additional metadata in table responses. RAWTYPES provides the native-level datatype. COMMENTS provides comments associated with a column or table in the database. If you do not need additional metadata, keep the field empty.
+    */
+  var EnableAdditionalMetadata: js.UndefOr[typings.awsSdk.clientsGlueMod.EnableAdditionalMetadata] = js.undefined
+  
+  /**
     * A list of glob patterns used to exclude from the crawl. For more information, see Catalog Tables with a Crawler.
     */
   var Exclusions: js.UndefOr[PathList] = js.undefined
@@ -34,6 +39,12 @@ object JdbcTarget {
     inline def setConnectionName(value: ConnectionName): Self = StObject.set(x, "ConnectionName", value.asInstanceOf[js.Any])
     
     inline def setConnectionNameUndefined: Self = StObject.set(x, "ConnectionName", js.undefined)
+    
+    inline def setEnableAdditionalMetadata(value: EnableAdditionalMetadata): Self = StObject.set(x, "EnableAdditionalMetadata", value.asInstanceOf[js.Any])
+    
+    inline def setEnableAdditionalMetadataUndefined: Self = StObject.set(x, "EnableAdditionalMetadata", js.undefined)
+    
+    inline def setEnableAdditionalMetadataVarargs(value: JdbcMetadataEntry*): Self = StObject.set(x, "EnableAdditionalMetadata", js.Array(value*))
     
     inline def setExclusions(value: PathList): Self = StObject.set(x, "Exclusions", value.asInstanceOf[js.Any])
     

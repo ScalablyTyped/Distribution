@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait ExitStatus extends StObject
+/** Return code used by getEmitOutput function to indicate status of the function */
 @JSImport("@schematics/angular/third_party/github.com/Microsoft/TypeScript/lib/typescript", "ExitStatus")
 @js.native
 object ExitStatus extends StObject {
@@ -36,13 +37,6 @@ object ExitStatus extends StObject {
     extends StObject
        with ExitStatus
   /* 4 */ val ProjectReferenceCycle_OutputsSkipped: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ExitStatus.ProjectReferenceCycle_OutputsSkipped & Double = js.native
-  
-  /** @deprecated Use ProjectReferenceCycle_OutputsSkipped instead. */
-  @js.native
-  sealed trait ProjectReferenceCycle_OutputsSkupped
-    extends StObject
-       with ExitStatus
-  /* 4 */ val ProjectReferenceCycle_OutputsSkupped: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ExitStatus.ProjectReferenceCycle_OutputsSkupped & Double = js.native
   
   @js.native
   sealed trait Success

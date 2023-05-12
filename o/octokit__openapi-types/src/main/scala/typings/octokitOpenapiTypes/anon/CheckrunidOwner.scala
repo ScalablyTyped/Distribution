@@ -6,13 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CheckrunidOwner extends StObject {
   
-  /** The unique identifier of the check run. */
   var check_run_id: Double
   
-  /** The account owner of the repository. The name is not case sensitive. */
   var owner: String
   
-  /** The name of the repository. The name is not case sensitive. */
   var repo: String
 }
 object CheckrunidOwner {

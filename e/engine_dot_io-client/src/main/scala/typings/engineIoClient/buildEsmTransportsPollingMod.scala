@@ -3,7 +3,6 @@ package typings.engineIoClient
 import typings.engineIoClient.buildEsmTransportMod.Transport
 import typings.engineIoParser.buildEsmCommonsMod.RawData
 import typings.socketIoComponentEmitter.mod.Emitter
-import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,43 +16,38 @@ object buildEsmTransportsPollingMod {
       * XHR Polling constructor.
       *
       * @param {Object} opts
-      * @api public
+      * @package
       */
     def this(opts: Any) = this()
     
     /**
       * Starts a poll cycle.
       *
-      * @api private
+      * @private
       */
-    def doPoll(): Unit = js.native
+    /* private */ var doPoll: Any = js.native
     
     /**
       * Sends data.
       *
       * @param {String} data to send.
       * @param {Function} called upon flush.
-      * @api private
+      * @private
       */
-    def doWrite(data: Any, fn: Any): Unit = js.native
-    
-    /**
-      * Transport name.
-      */
-    def name: String = js.native
+    /* private */ var doWrite: Any = js.native
     
     /**
       * Pauses polling.
       *
-      * @param {Function} callback upon buffers are flushed and transport is paused
-      * @api private
+      * @param {Function} onPause - callback upon buffers are flushed and transport is paused
+      * @package
       */
     def pause(onPause: Any): Unit = js.native
     
     /**
       * Starts polling cycle.
       *
-      * @api public
+      * @private
       */
     def poll(): Unit = js.native
     
@@ -65,7 +59,7 @@ object buildEsmTransportsPollingMod {
       * Creates a request.
       *
       * @param {String} method
-      * @api private
+      * @private
       */
     def request(): Request = js.native
     def request(opts: js.Object): Request = js.native
@@ -73,9 +67,17 @@ object buildEsmTransportsPollingMod {
     /**
       * Generates uri for connection.
       *
-      * @api private
+      * @private
       */
     def uri(): String = js.native
+    
+    /**
+      * Writes a packets payload.
+      *
+      * @param {Array} packets - data packets
+      * @protected
+      */
+    def write(packets: Any): Unit = js.native
     
     /* private */ val xd: Any = js.native
     
@@ -90,14 +92,14 @@ object buildEsmTransportsPollingMod {
       * Request constructor
       *
       * @param {Object} options
-      * @api public
+      * @package
       */
     def this(uri: Any, opts: Any) = this()
     
     /**
       * Aborts the request.
       *
-      * @api public
+      * @package
       */
     def abort(): Unit = js.native
     
@@ -106,14 +108,14 @@ object buildEsmTransportsPollingMod {
     /**
       * Cleans up house.
       *
-      * @api private
+      * @private
       */
     /* private */ var cleanup: Any = js.native
     
     /**
       * Creates the XHR object and sends the request.
       *
-      * @api private
+      * @private
       */
     /* private */ var create: Any = js.native
     
@@ -126,14 +128,14 @@ object buildEsmTransportsPollingMod {
     /**
       * Called upon error.
       *
-      * @api private
+      * @private
       */
     /* private */ var onError: Any = js.native
     
     /**
       * Called upon load.
       *
-      * @api private
+      * @private
       */
     /* private */ var onLoad: Any = js.native
     
@@ -169,8 +171,8 @@ object buildEsmTransportsPollingMod {
     
     def data(data: RawData): Unit = js.native
     
-    def error(err: js.Error, context: XMLHttpRequest): Unit = js.native
-    def error(err: Double, context: XMLHttpRequest): Unit = js.native
+    def error(err: js.Error, context: Any): Unit = js.native
+    def error(err: Double, context: Any): Unit = js.native
     
     def success(): Unit = js.native
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListTagsForResourceResult extends StObject {
   
   /**
-    *  A complex type that contains zero or more Tag elements.
+    * A complex type that contains zero or more Tag elements.
     */
   var Tags: typings.awsSdk.clientsCloudfrontMod.Tags
 }

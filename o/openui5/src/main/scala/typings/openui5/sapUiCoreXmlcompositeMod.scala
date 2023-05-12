@@ -209,6 +209,8 @@ object sapUiCoreXmlcompositeMod {
     extends typings.openui5.sapUiCoreControlMod.default {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns an element by its ID in the context of the XMLComposite.
       *
       * May only be used by the implementation of a specific XMLComposite, not by an application using a XMLComposite.
@@ -221,6 +223,8 @@ object sapUiCoreXmlcompositeMod {
     sId: String): js.UndefOr[typings.openui5.sapUiCoreElementMod.default] = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * This method is a hook for the RenderManager that gets called during the rendering of child Controls.
       * It allows to add, remove and update existing accessibility attributes (ARIA) of those controls.
       */

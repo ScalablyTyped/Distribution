@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A restriction that can be applied to the Map. The map&#39;s viewport will
-  * not exceed these restrictions.
-  */
 trait MapRestriction extends StObject {
   
   /**

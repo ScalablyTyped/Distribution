@@ -15,78 +15,78 @@ trait ClassCipher
      with ClassObject {
   
   /**
-    * class prop 
+    * class prop
     *
-    * 
+    *
     * @brief 返回当前算法数据块长度，以字节为单位
-    * 
+    *
     * @readonly
-    * @type Integer
+    * @note Assumed to be an integer.
     */
   var blockSize: Double = js.native
   
   /**
-    * 
+    *
     * @brief 使用当前算法密码解密数据
     * @param data 指定要解密的数据
     * @return 返回解密后的数据
-    * 
-    * 
+    *
+    *
     * @async
     */
   def decrypt(data: ClassBuffer): ClassBuffer = js.native
   
   /**
-    * 
+    *
     * @brief 使用当前算法密码加密数据
     * @param data 指定要加密的数据
     * @return 返回加密后的数据
-    * 
-    * 
+    *
+    *
     * @async
     */
   def encrypt(data: ClassBuffer): ClassBuffer = js.native
   
   /**
-    * class prop 
+    * class prop
     *
-    * 
+    *
     * @brief 返回当前算法初始向量长度，以字节为单位
-    * 
+    *
     * @readonly
-    * @type Integer
+    * @note Assumed to be an integer.
     */
   var ivSize: Double = js.native
   
   /**
-    * class prop 
+    * class prop
     *
-    * 
+    *
     * @brief 返回当前算法密码长度，以位为单位
-    * 
+    *
     * @readonly
-    * @type Integer
+    * @note Assumed to be an integer.
     */
   var keySize: Double = js.native
   
   /**
-    * class prop 
+    * class prop
     *
-    * 
+    *
     * @brief 返回当前算法名称
-    * 
+    *
     * @readonly
-    * @type String
+    *
     */
   var name: String = js.native
   
   /**
-    * 
+    *
     * @brief 使用填充模式
     * @param mode 指定填充模式，缺省为 PADDING_PKCS7
-    * 
-    * 
-    * 
+    *
+    *
+    *
     */
   def paddingMode(mode: Double): Unit = js.native
 }

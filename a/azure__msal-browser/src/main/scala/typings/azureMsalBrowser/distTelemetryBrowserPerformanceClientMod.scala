@@ -1,5 +1,6 @@
 package typings.azureMsalBrowser
 
+import typings.azureMsalBrowser.distConfigConfigurationMod.CryptoOptions
 import typings.azureMsalCommon.distConfigClientConfigurationMod.ApplicationTelemetry
 import typings.azureMsalCommon.mod.Logger
 import typings.azureMsalCommon.mod.PerformanceClient
@@ -18,13 +19,18 @@ object distTelemetryBrowserPerformanceClientMod {
       logger: Logger,
       libraryName: String,
       libraryVersion: String,
-      applicationTelemetry: ApplicationTelemetry
+      applicationTelemetry: ApplicationTelemetry,
+      cryptoOptions: CryptoOptions
     ) = this()
     
     /* private */ var browserCrypto: Any = js.native
     
+    /* private */ var deleteIncompleteSubMeasurements: Any = js.native
+    
     /* private */ var getPageVisibility: Any = js.native
     
     /* private */ var guidGenerator: Any = js.native
+    
+    def supportsBrowserPerformanceNow(): Boolean = js.native
   }
 }

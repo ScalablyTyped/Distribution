@@ -33,9 +33,13 @@ object typingsParserParserWithCachingMod {
     
     /* private */ val config: Any = js.native
     
+    /* private */ var convertReversedRangesToRegularRanges: Any = js.native
+    
     def fetchCachedResult(hash: String): ParsingResult = js.native
     
     def fetchCachedResultForAst(ast: Ast): ParsingResult = js.native
+    
+    /* private */ var formulaAddress: Any = js.native
     
     /* private */ var formulaParser: Any = js.native
     
@@ -44,6 +48,12 @@ object typingsParserParserWithCachingMod {
     /* private */ var lexer: Any = js.native
     
     /* private */ val lexerConfig: Any = js.native
+    
+    /* private */ var orderCellRangeEnds: Any = js.native
+    
+    /* private */ var orderColumnRangeEnds: Any = js.native
+    
+    /* private */ var orderRowRangeEnds: Any = js.native
     
     /**
       * Parses a formula.
@@ -60,6 +70,18 @@ object typingsParserParserWithCachingMod {
     var statsCacheUsed: Double = js.native
     
     def tokenizeFormula(text: String): ILexingResult = js.native
+  }
+  /* static members */
+  object ParserWithCaching {
+    
+    @JSImport("hyperformula/typings/parser/ParserWithCaching", "ParserWithCaching")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("hyperformula/typings/parser/ParserWithCaching", "ParserWithCaching.compareSheetIds")
+    @js.native
+    def compareSheetIds: Any = js.native
+    inline def compareSheetIds_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("compareSheetIds")(x.asInstanceOf[js.Any])
   }
   
   trait ParsingResult extends StObject {

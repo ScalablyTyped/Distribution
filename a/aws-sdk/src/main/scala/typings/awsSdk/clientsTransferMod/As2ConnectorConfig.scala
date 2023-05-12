@@ -12,7 +12,7 @@ trait As2ConnectorConfig extends StObject {
   var Compression: js.UndefOr[CompressionEnum] = js.undefined
   
   /**
-    * The algorithm that is used to encrypt the file.
+    * The algorithm that is used to encrypt the file.  You can only specify NONE if the URL for your connector uses HTTPS. This ensures that no traffic is sent in clear text. 
     */
   var EncryptionAlgorithm: js.UndefOr[EncryptionAlg] = js.undefined
   
@@ -27,7 +27,7 @@ trait As2ConnectorConfig extends StObject {
   var MdnResponse: js.UndefOr[typings.awsSdk.clientsTransferMod.MdnResponse] = js.undefined
   
   /**
-    * The signing algorithm for the MDN response.  If set to DEFAULT (or not set at all), the value for SigningAlogorithm is used. 
+    * The signing algorithm for the MDN response.  If set to DEFAULT (or not set at all), the value for SigningAlgorithm is used. 
     */
   var MdnSigningAlgorithm: js.UndefOr[MdnSigningAlg] = js.undefined
   

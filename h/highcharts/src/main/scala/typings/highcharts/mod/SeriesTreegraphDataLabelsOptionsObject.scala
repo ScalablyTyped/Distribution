@@ -27,9 +27,10 @@ trait SeriesTreegraphDataLabelsOptionsObject extends StObject {
     * (Highcharts, Highstock, Highmaps, Gantt) Enable or disable the initial
     * animation when a series is displayed for the `dataLabels`. The animation
     * can also be set as a configuration object. Please note that this option
-    * only applies to the initial animation. For other animations, see
-    * chart.animation and the animation parameter under the API methods. The
-    * following properties are supported:
+    * only applies to the initial animation.
+    *
+    * For other animations, see chart.animation and the animation parameter
+    * under the API methods. The following properties are supported:
     *
     * - `defer`: The animation delay time in milliseconds.
     */
@@ -37,13 +38,14 @@ trait SeriesTreegraphDataLabelsOptionsObject extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The background color or gradient
-    * for the data label.
+    * for the data label. Setting it to `auto` will use the point's color.
     */
   var backgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The border color for the data
-    * label. Defaults to `undefined`.
+    * label. Setting it to `auto` will use the point's color. Defaults to
+    * `undefined`.
     */
   var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
@@ -95,8 +97,7 @@ trait SeriesTreegraphDataLabelsOptionsObject extends StObject {
     * (Highcharts, Highstock, Gantt) Whether to defer displaying the data
     * labels until the initial series animation has finished. Setting to
     * `false` renders the data label immediately. If set to `true` inherits the
-    * defer time set in plotOptions.series.animation. If set to a number, a
-    * defer time is specified in milliseconds.
+    * defer time set in plotOptions.series.animation.
     */
   var defer: js.UndefOr[Boolean] = js.undefined
   
@@ -145,7 +146,7 @@ trait SeriesTreegraphDataLabelsOptionsObject extends StObject {
     * **Note:** Only SVG-based renderer supports this option. Setting `useHTML`
     * to true will disable this option.
     */
-  var linkTextPath: js.UndefOr[js.Object | PlotTreegraphDataLabelsLinkTextPathOptions] = js.undefined
+  var linkTextPath: js.UndefOr[DataLabelsTextPathOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Format for points with the value
@@ -231,7 +232,7 @@ trait SeriesTreegraphDataLabelsOptionsObject extends StObject {
     * `ellipsis`, which will keep the text on one line plus it will break
     * inside long words.
     */
-  var style: js.UndefOr[CSSObject] = js.undefined
+  var style: js.UndefOr[CSSObject | PlotTreegraphDataLabelsStyleOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for a label text which
@@ -352,7 +353,7 @@ object SeriesTreegraphDataLabelsOptionsObject {
     
     inline def setInsideUndefined: Self = StObject.set(x, "inside", js.undefined)
     
-    inline def setLinkTextPath(value: js.Object | PlotTreegraphDataLabelsLinkTextPathOptions): Self = StObject.set(x, "linkTextPath", value.asInstanceOf[js.Any])
+    inline def setLinkTextPath(value: DataLabelsTextPathOptionsObject): Self = StObject.set(x, "linkTextPath", value.asInstanceOf[js.Any])
     
     inline def setLinkTextPathUndefined: Self = StObject.set(x, "linkTextPath", js.undefined)
     
@@ -388,7 +389,7 @@ object SeriesTreegraphDataLabelsOptionsObject {
     
     inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
-    inline def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSObject | PlotTreegraphDataLabelsStyleOptions): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     

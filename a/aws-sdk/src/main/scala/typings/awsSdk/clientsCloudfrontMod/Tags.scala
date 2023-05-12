@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Tags extends StObject {
   
   /**
-    *  A complex type that contains Tag elements.
+    * A complex type that contains Tag elements.
     */
   var Items: js.UndefOr[TagList] = js.undefined
 }

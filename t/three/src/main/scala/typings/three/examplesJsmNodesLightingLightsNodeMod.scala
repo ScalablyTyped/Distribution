@@ -2,6 +2,8 @@ package typings.three
 
 import typings.three.anon.Instantiable
 import typings.three.anon.InstantiableDefault
+import typings.three.srcCamerasCameraMod.Camera
+import typings.three.srcLightsLightShadowMod.LightShadow
 import typings.three.srcThreeMod.Light
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,14 +23,14 @@ object examplesJsmNodesLightingLightsNodeMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def setReference[T /* <: Light */](lightClass: Instantiable[T], lightNodeClass: InstantiableDefault[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setReference")(lightClass.asInstanceOf[js.Any], lightNodeClass.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setReference[T /* <: Light[js.UndefOr[LightShadow[Camera]]] */](lightClass: Instantiable[T], lightNodeClass: InstantiableDefault[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setReference")(lightClass.asInstanceOf[js.Any], lightNodeClass.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @js.native
   trait LightsNode
     extends typings.three.examplesJsmNodesCoreNodeMod.default {
     
-    def fromLights(lights: js.Array[Light]): this.type = js.native
+    def fromLights(lights: js.Array[Light[js.UndefOr[LightShadow[Camera]]]]): this.type = js.native
     
     def getLightNodeByHash(hash: String): typings.three.examplesJsmNodesLightingLightingNodeMod.default | Null = js.native
     

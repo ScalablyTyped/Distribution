@@ -370,6 +370,7 @@ object sapMMultiInputMod {
     
     /**
       * @deprecated (since 1.46) - Please use the new event tokenUpdate.
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:tokenChange tokenChange} to attached listeners.
       *
@@ -383,6 +384,7 @@ object sapMMultiInputMod {
     
     /**
       * @SINCE 1.46
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:tokenUpdate tokenUpdate} to attached listeners.
       *
@@ -398,6 +400,8 @@ object sapMMultiInputMod {
     mParameters: RemovedTokens): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Gets the picker header title.
       *
       * @returns The title instance of the Picker

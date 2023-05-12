@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Data for a single KML feature in JSON format, returned when a KML feature
-  * is clicked. The data contained in this object mirrors that associated with
-  * the feature in the KML or GeoRSS markup in which it is declared.
-  */
 trait KmlFeatureData extends StObject {
   
   /**

@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CredentialsSettings extends StObject
 object CredentialsSettings {
   
-  inline def FirstPartyCredentialsSettings(client: Any, sessionIndex: String): typings.firebaseFirestore.distLiteInternalMod.FirstPartyCredentialsSettings = {
-    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], sessionIndex = sessionIndex.asInstanceOf[js.Any], authTokenFactory = null, iamToken = null)
-    __obj.updateDynamic("type")("gapi")
+  inline def FirstPartyCredentialsSettings(sessionIndex: String): typings.firebaseFirestore.distLiteInternalMod.FirstPartyCredentialsSettings = {
+    val __obj = js.Dynamic.literal(sessionIndex = sessionIndex.asInstanceOf[js.Any], authTokenFactory = null, iamToken = null)
+    __obj.updateDynamic("type")("firstParty")
     __obj.asInstanceOf[typings.firebaseFirestore.distLiteInternalMod.FirstPartyCredentialsSettings]
   }
   

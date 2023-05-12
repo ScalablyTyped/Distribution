@@ -41,8 +41,6 @@ object distLibMultiCommandMod {
     
     def addScript(script: RedisScript, args: js.Array[Any]): RedisCommandArguments = js.native
     
-    def exec(): js.UndefOr[js.Array[RedisMultiQueuedCommand]] = js.native
-    
     def handleExecReplies(rawReplies: js.Array[RedisCommandRawReply]): js.Array[RedisCommandRawReply] = js.native
     
     val queue: js.Array[RedisMultiQueuedCommand] = js.native

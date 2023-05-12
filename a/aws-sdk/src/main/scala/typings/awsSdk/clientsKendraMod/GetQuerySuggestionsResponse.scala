@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetQuerySuggestionsResponse extends StObject {
   
   /**
-    * The unique identifier for a list of query suggestions for an index.
+    * The identifier for a list of query suggestions for an index.
     */
   var QuerySuggestionsId: js.UndefOr[typings.awsSdk.clientsKendraMod.QuerySuggestionsId] = js.undefined
   

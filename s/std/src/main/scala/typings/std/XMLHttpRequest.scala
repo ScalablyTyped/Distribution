@@ -1,5 +1,10 @@
 package typings.std
 
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
+import typings.std.stdInts.`4`
 import typings.std.stdStrings.readystatechange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,19 +17,19 @@ trait XMLHttpRequest
      with XMLHttpRequestEventTarget {
   
   /* standard dom */
-  val DONE: Double = js.native
+  val DONE: `4` = js.native
   
   /* standard dom */
-  val HEADERS_RECEIVED: Double = js.native
+  val HEADERS_RECEIVED: `2` = js.native
   
   /* standard dom */
-  val LOADING: Double = js.native
+  val LOADING: `3` = js.native
   
   /* standard dom */
-  val OPENED: Double = js.native
+  val OPENED: `1` = js.native
   
   /* standard dom */
-  val UNSENT: Double = js.native
+  val UNSENT: `0` = js.native
   
   /** Cancels any network activity. */
   /* standard dom */

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined chart.js.chart.js.DatasetChartOptions<chart.js.chart.js.ChartType> */
+/* Inlined chart.js.chart.js/dist/types/index.DatasetChartOptions<chart.js.chart.js/dist/types/index.ChartType> */
 trait DatasetChartOptionsChartT extends StObject {
   
   var bar: Datasets

@@ -19,12 +19,37 @@ object mod {
   inline def configureAxe(configurationOptions: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureAxe")(configurationOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def injectAxe(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("injectAxe")().asInstanceOf[Unit]
+  inline def injectAxe(injectOptions: InjectOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("injectAxe")(injectOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  trait InjectOptions extends StObject {
+    
+    var axeCorePath: js.UndefOr[String] = js.undefined
+  }
+  object InjectOptions {
+    
+    inline def apply(): InjectOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[InjectOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InjectOptions] (val x: Self) extends AnyVal {
+      
+      inline def setAxeCorePath(value: String): Self = StObject.set(x, "axeCorePath", value.asInstanceOf[js.Any])
+      
+      inline def setAxeCorePathUndefined: Self = StObject.set(x, "axeCorePath", js.undefined)
+    }
+  }
   
   trait Options
     extends StObject
        with RunOptions {
     
     var includedImpacts: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var interval: js.UndefOr[Double] = js.undefined
+    
+    var retries: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -41,6 +66,14 @@ object mod {
       inline def setIncludedImpactsUndefined: Self = StObject.set(x, "includedImpacts", js.undefined)
       
       inline def setIncludedImpactsVarargs(value: String*): Self = StObject.set(x, "includedImpacts", js.Array(value*))
+      
+      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      
+      inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+      
+      inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
     }
   }
   
@@ -169,17 +202,18 @@ object mod {
         var configureAxe_Original: js.Function1[/* configurationOptions */ js.UndefOr[js.Object], Unit]
         
         def injectAxe(): Unit
+        def injectAxe(injectOptions: InjectOptions): Unit
         @JSName("injectAxe")
-        var injectAxe_Original: js.Function0[Unit]
+        var injectAxe_Original: js.Function1[/* injectOptions */ js.UndefOr[InjectOptions], Unit]
       }
       object Chainable {
         
         inline def apply(
           checkA11y: (/* context */ js.UndefOr[String | Node | ContextObject], /* options */ js.UndefOr[Options], /* violationCallback */ js.UndefOr[js.Function1[/* violations */ js.Array[Result], Unit]], /* skipFailures */ js.UndefOr[Boolean]) => Unit,
           configureAxe: /* configurationOptions */ js.UndefOr[js.Object] => Unit,
-          injectAxe: () => Unit
+          injectAxe: /* injectOptions */ js.UndefOr[InjectOptions] => Unit
         ): Chainable = {
-          val __obj = js.Dynamic.literal(checkA11y = js.Any.fromFunction4(checkA11y), configureAxe = js.Any.fromFunction1(configureAxe), injectAxe = js.Any.fromFunction0(injectAxe))
+          val __obj = js.Dynamic.literal(checkA11y = js.Any.fromFunction4(checkA11y), configureAxe = js.Any.fromFunction1(configureAxe), injectAxe = js.Any.fromFunction1(injectAxe))
           __obj.asInstanceOf[Chainable]
         }
         
@@ -192,7 +226,7 @@ object mod {
           
           inline def setConfigureAxe(value: /* configurationOptions */ js.UndefOr[js.Object] => Unit): Self = StObject.set(x, "configureAxe", js.Any.fromFunction1(value))
           
-          inline def setInjectAxe(value: () => Unit): Self = StObject.set(x, "injectAxe", js.Any.fromFunction0(value))
+          inline def setInjectAxe(value: /* injectOptions */ js.UndefOr[InjectOptions] => Unit): Self = StObject.set(x, "injectAxe", js.Any.fromFunction1(value))
         }
       }
     }

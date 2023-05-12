@@ -9,6 +9,7 @@ trait JSDocTypedefTag
   extends StObject
      with JSDocTag
      with NamedDeclaration
+     with LocalsContainer
      with DeclarationWithTypeParameters {
   
   val fullName: js.UndefOr[JSDocNamespaceDeclaration | Identifier] = js.native

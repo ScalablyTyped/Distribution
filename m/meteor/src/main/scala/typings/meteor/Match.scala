@@ -47,7 +47,8 @@ object Match {
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
     * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
-    T extends meteor.Match.Matcher<infer U> ? U : T extends std.StringConstructor ? string : T extends std.NumberConstructor ? number : T extends std.BooleanConstructor ? boolean : T extends std.ObjectConstructor ? object : T extends std.FunctionConstructor ? std.Function : T extends undefined | null | string | number | boolean ? T : T extends new (args : ...any): infer U ? U : T extends [meteor.Match.Pattern] ? std.Array<meteor.Match.PatternMatch<T[0]>> : T extends {[key: string] : meteor.Match.Pattern} ? {[ K in keyof T ]: meteor.Match.PatternMatch<T[K]>} : unknown
+    T extends meteor.Match.Matcher<infer U> ? U : T extends std.StringConstructor ? string : T extends std.NumberConstructor ? number : T extends std.BooleanConstructor ? boolean : T extends std.ObjectConstructor ? object : T extends std.FunctionConstructor ? std.Function : T extends undefined | null | string | number | boolean ? T : T extends new (args : ...any): infer U ? U : // eslint-disable-next-line no-single-element-tuple-type
+  T extends [meteor.Match.Pattern] ? std.Array<meteor.Match.PatternMatch<T[0]>> : T extends {[key: string] : meteor.Match.Pattern} ? {[ K in keyof T ]: meteor.Match.PatternMatch<T[K]>} : unknown
     }}}
     */
   type PatternMatch[T /* <: Pattern */] = String

@@ -24,6 +24,8 @@ object typesRuntimeInternalSchedulerMod {
   
   inline def flush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Unit]
   
+  inline def flushRenderCallbacks(fns: js.Array[js.Function]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush_render_callbacks")(fns.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   object intros {
     
     @JSImport("svelte/types/runtime/internal/scheduler", "intros")

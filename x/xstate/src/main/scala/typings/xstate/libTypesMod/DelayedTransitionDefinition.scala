@@ -18,7 +18,7 @@ trait DelayedTransitionDefinition[TContext, TEvent /* <: EventObject */]
 object DelayedTransitionDefinition {
   
   inline def apply[TContext, TEvent /* <: EventObject */](
-    actions: js.Array[ActionObject[TContext, TEvent]],
+    actions: js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]],
     delay: Double | String | (DelayExpr[TContext, TEvent]),
     eventType: (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | typings.xstate.libTypesMod.ActionTypes.NullEvent | Asterisk,
     source: StateNode[TContext, Any, TEvent, Context[TContext], ServiceMap, TypegenDisabled],

@@ -10,6 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TargetData extends StObject {
   
   /**
+    * The number of documents that last matched the query at the resume token or
+    * read time. Documents are counted only when making a listen request with
+    * resume token or read time, otherwise, keep it null.
+    */
+  val expectedCount: Double | Null
+  
+  /**
     * The maximum snapshot version at which the associated view
     * contained no limbo documents.
     */
@@ -45,6 +52,11 @@ trait TargetData extends StObject {
   val targetId: TargetId
   
   /**
+    * Creates a new target data instance with an updated expected count.
+    */
+  def withExpectedCount(expectedCount: Double): TargetData
+  
+  /**
     * Creates a new target data instance with an updated last limbo free
     * snapshot version number.
     */
@@ -72,16 +84,21 @@ object TargetData {
     snapshotVersion: SnapshotVersion,
     target: Target,
     targetId: TargetId,
+    withExpectedCount: Double => TargetData,
     withLastLimboFreeSnapshotVersion: SnapshotVersion => TargetData,
     withResumeToken: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _ByteString */ Any, SnapshotVersion) => TargetData,
     withSequenceNumber: Double => TargetData
   ): TargetData = {
-    val __obj = js.Dynamic.literal(lastLimboFreeSnapshotVersion = lastLimboFreeSnapshotVersion.asInstanceOf[js.Any], purpose = purpose.asInstanceOf[js.Any], resumeToken = resumeToken.asInstanceOf[js.Any], sequenceNumber = sequenceNumber.asInstanceOf[js.Any], snapshotVersion = snapshotVersion.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], targetId = targetId.asInstanceOf[js.Any], withLastLimboFreeSnapshotVersion = js.Any.fromFunction1(withLastLimboFreeSnapshotVersion), withResumeToken = js.Any.fromFunction2(withResumeToken), withSequenceNumber = js.Any.fromFunction1(withSequenceNumber))
+    val __obj = js.Dynamic.literal(lastLimboFreeSnapshotVersion = lastLimboFreeSnapshotVersion.asInstanceOf[js.Any], purpose = purpose.asInstanceOf[js.Any], resumeToken = resumeToken.asInstanceOf[js.Any], sequenceNumber = sequenceNumber.asInstanceOf[js.Any], snapshotVersion = snapshotVersion.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], targetId = targetId.asInstanceOf[js.Any], withExpectedCount = js.Any.fromFunction1(withExpectedCount), withLastLimboFreeSnapshotVersion = js.Any.fromFunction1(withLastLimboFreeSnapshotVersion), withResumeToken = js.Any.fromFunction2(withResumeToken), withSequenceNumber = js.Any.fromFunction1(withSequenceNumber), expectedCount = null)
     __obj.asInstanceOf[TargetData]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: TargetData] (val x: Self) extends AnyVal {
+    
+    inline def setExpectedCount(value: Double): Self = StObject.set(x, "expectedCount", value.asInstanceOf[js.Any])
+    
+    inline def setExpectedCountNull: Self = StObject.set(x, "expectedCount", null)
     
     inline def setLastLimboFreeSnapshotVersion(value: SnapshotVersion): Self = StObject.set(x, "lastLimboFreeSnapshotVersion", value.asInstanceOf[js.Any])
     
@@ -98,6 +115,8 @@ object TargetData {
     inline def setTarget(value: Target): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setTargetId(value: TargetId): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+    
+    inline def setWithExpectedCount(value: Double => TargetData): Self = StObject.set(x, "withExpectedCount", js.Any.fromFunction1(value))
     
     inline def setWithLastLimboFreeSnapshotVersion(value: SnapshotVersion => TargetData): Self = StObject.set(x, "withLastLimboFreeSnapshotVersion", js.Any.fromFunction1(value))
     

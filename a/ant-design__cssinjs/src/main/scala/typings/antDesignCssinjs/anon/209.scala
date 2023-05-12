@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MaskBorderRepeat
+import typings.csstype.mod.Property.PaddingInline
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `209` extends StObject {
   
   var value: js.UndefOr[
-    MaskBorderRepeat | (js.Array[
+    (PaddingInline[Double | String]) | (js.Array[
       (Extract[
-        js.UndefOr[MaskBorderRepeat | js.Array[NonNullable[js.UndefOr[MaskBorderRepeat]]]], 
+        js.UndefOr[
+          (PaddingInline[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingInline[Double | String]]]])
+        ], 
         String
-      ]) | NonNullable[js.UndefOr[MaskBorderRepeat]]
+      ]) | (NonNullable[js.UndefOr[PaddingInline[Double | String]]])
     ])
   ] = js.native
 }

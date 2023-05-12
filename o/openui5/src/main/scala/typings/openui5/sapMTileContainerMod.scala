@@ -414,6 +414,8 @@ object sapMTileContainerMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:tileAdd tileAdd} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -425,6 +427,8 @@ object sapMTileContainerMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:tileDelete tileDelete} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -436,6 +440,8 @@ object sapMTileContainerMod {
     mParameters: Tile): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:tileMove tileMove} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

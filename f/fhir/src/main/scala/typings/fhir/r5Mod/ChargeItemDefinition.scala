@@ -17,6 +17,8 @@ trait ChargeItemDefinition
   
   var _copyright: js.UndefOr[Element] = js.undefined
   
+  var _copyrightLabel: js.UndefOr[Element] = js.undefined
+  
   var _date: js.UndefOr[Element] = js.undefined
   
   var _derivedFromUri: js.UndefOr[js.Array[Element]] = js.undefined
@@ -27,9 +29,13 @@ trait ChargeItemDefinition
   
   var _lastReviewDate: js.UndefOr[Element] = js.undefined
   
+  var _name: js.UndefOr[Element] = js.undefined
+  
   var _partOf: js.UndefOr[js.Array[Element]] = js.undefined
   
   var _publisher: js.UndefOr[Element] = js.undefined
+  
+  var _purpose: js.UndefOr[Element] = js.undefined
   
   var _replaces: js.UndefOr[js.Array[Element]] = js.undefined
   
@@ -41,6 +47,8 @@ trait ChargeItemDefinition
   
   var _version: js.UndefOr[Element] = js.undefined
   
+  var _versionAlgorithmString: js.UndefOr[Element] = js.undefined
+  
   /**
     * The applicability conditions can be used to ascertain whether a billing item is allowed in a specific context. E.g. some billing codes may only be applicable in out-patient settings, only to male/female patients or only to children.
     */
@@ -48,6 +56,7 @@ trait ChargeItemDefinition
   
   /**
     * The 'date' element may be more recent than the approval date because of minor changes or editorial corrections.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var approvalDate: js.UndefOr[String] = js.undefined
   
@@ -58,6 +67,7 @@ trait ChargeItemDefinition
   
   /**
     * May be a web site, an email address, a telephone number, etc.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var contact: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
@@ -67,7 +77,13 @@ trait ChargeItemDefinition
   var copyright: js.UndefOr[String] = js.undefined
   
   /**
-    * Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the charge item definition. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
+    * The (c) symbol should NOT be included in this string. It will be added by software when rendering the notation. Full details about licensing, restrictions, warrantees, etc. goes in the more general 'copyright' element.
+    */
+  var copyrightLabel: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The date is often not tracked until the resource is published, but may be present on draft content. Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the charge item definition. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var date: js.UndefOr[String] = js.undefined
   
@@ -77,14 +93,9 @@ trait ChargeItemDefinition
   var derivedFromUri: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * This description can be used to capture details such as why the charge item definition was built, comments about misuse, instructions for clinical use and interpretation, literature references, examples from the paper world, etc. It is not a rendering of the charge item definition as conveyed in the 'text' field of the resource itself. This item SHOULD be populated unless the information is available from context (e.g. the language of the charge item definition is presumed to be the predominant language in the place the charge item definition was created).
+    * This description can be used to capture details such as comments about misuse, instructions for clinical use and interpretation, literature references, examples from the paper world, etc. It is not a rendering of the charge item definition as conveyed in the 'text' field of the resource itself. This item SHOULD be populated unless the information is available from context (e.g. the language of the charge item definition is presumed to be the predominant language in the place the charge item definition was created).
     */
   var description: js.UndefOr[String] = js.undefined
-  
-  /**
-    * The effective period for a charge item definition  determines when the content is applicable for usage and is independent of publication and review dates. For example, a measure intended to be used for the year 2016 might be published in 2015.
-    */
-  var effectivePeriod: js.UndefOr[Period] = js.undefined
   
   /**
     * Allows filtering of charge item definitions that are appropriate for use versus not.
@@ -103,13 +114,20 @@ trait ChargeItemDefinition
   
   /**
     * It may be possible for the charge item definition to be used in jurisdictions other than those for which it was originally designed or intended.
+    * DEPRECATION NOTE: For consistency, implementations are encouraged to migrate to using the new 'jurisdiction' code in the useContext element.  (I.e. useContext.code indicating http://terminology.hl7.org/CodeSystem/usage-context-type#jurisdiction and useContext.valueCodeableConcept indicating the jurisdiction.)
     */
   var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * If specified, this date follows the original approval date.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var lastReviewDate: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The name is not expected to be globally unique. The name should be a simple alphanumeric type name to ensure that it is machine-processing friendly.
+    */
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * A larger definition of which this particular definition is a component or step.
@@ -127,6 +145,11 @@ trait ChargeItemDefinition
   var publisher: js.UndefOr[String] = js.undefined
   
   /**
+    * This element does not describe the usage of the charge item definition. Instead, it provides traceability of ''why'' the resource is either needed or ''why'' it is defined as it is.  This may be used to point to source materials or specifications that drove the structure of this charge item definition.
+    */
+  var purpose: js.UndefOr[String] = js.undefined
+  
+  /**
     * As new versions of a protocol or guideline are defined, allows identification of what versions are replaced by a new instance.
     */
   var replaces: js.UndefOr[js.Array[String]] = js.undefined
@@ -137,6 +160,7 @@ trait ChargeItemDefinition
   
   /**
     * Allows filtering of charge item definitions that are appropriate for use versus not.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var status: draft | active | retired | unknown
   
@@ -150,7 +174,7 @@ trait ChargeItemDefinition
     * The determination of when to create a new version of a resource (same url, new version) vs. defining a new artifact is up to the author.  Considerations for making this decision are found in [Technical and Business Versions](resource.html#versions).
     * In some cases, the resource can no longer be found at the stated url, but the url itself cannot change. Implementations can use the [meta.source](resource.html#meta) element to indicate where the current master source of the resource can be found.
     */
-  var url: String
+  var url: js.UndefOr[String] = js.undefined
   
   /**
     * When multiple useContexts are specified, there is no expectation that all or any of the contexts apply.
@@ -158,14 +182,24 @@ trait ChargeItemDefinition
   var useContext: js.UndefOr[js.Array[UsageContext]] = js.undefined
   
   /**
-    * There may be different charge item definition instances that have the same identifier but different versions.  The version can be appended to the url in a reference to allow a reference to a particular business version of the charge item definition with the format [url]|[version].
+    * There may be different charge item definition instances that have the same identifier but different versions.  The version can be appended to the url in a reference to allow a reference to a particular business version of the charge item definition with the format [url]|[version]. The version SHOULD NOT contain a '#' - see [Business Version](resource.html#bv-format).
     */
   var version: js.UndefOr[String] = js.undefined
+  
+  /**
+    * If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 and a 0 if the version ordering can't be successfully be determined.
+    */
+  var versionAlgorithmCoding: js.UndefOr[Coding] = js.undefined
+  
+  /**
+    * If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 and a 0 if the version ordering can't be successfully be determined.
+    */
+  var versionAlgorithmString: js.UndefOr[String] = js.undefined
 }
 object ChargeItemDefinition {
   
-  inline def apply(status: draft | active | retired | unknown, url: String): ChargeItemDefinition = {
-    val __obj = js.Dynamic.literal(resourceType = "ChargeItemDefinition", status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  inline def apply(status: draft | active | retired | unknown): ChargeItemDefinition = {
+    val __obj = js.Dynamic.literal(resourceType = "ChargeItemDefinition", status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChargeItemDefinition]
   }
   
@@ -194,6 +228,10 @@ object ChargeItemDefinition {
     
     inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
+    inline def setCopyrightLabel(value: String): Self = StObject.set(x, "copyrightLabel", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightLabelUndefined: Self = StObject.set(x, "copyrightLabel", js.undefined)
+    
     inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
     inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
@@ -209,10 +247,6 @@ object ChargeItemDefinition {
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
-    
-    inline def setEffectivePeriod(value: Period): Self = StObject.set(x, "effectivePeriod", value.asInstanceOf[js.Any])
-    
-    inline def setEffectivePeriodUndefined: Self = StObject.set(x, "effectivePeriod", js.undefined)
     
     inline def setExperimental(value: Boolean): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
     
@@ -240,6 +274,10 @@ object ChargeItemDefinition {
     
     inline def setLastReviewDateUndefined: Self = StObject.set(x, "lastReviewDate", js.undefined)
     
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
     inline def setPartOf(value: js.Array[String]): Self = StObject.set(x, "partOf", value.asInstanceOf[js.Any])
     
     inline def setPartOfUndefined: Self = StObject.set(x, "partOf", js.undefined)
@@ -255,6 +293,10 @@ object ChargeItemDefinition {
     inline def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     
     inline def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
+    
+    inline def setPurpose(value: String): Self = StObject.set(x, "purpose", value.asInstanceOf[js.Any])
+    
+    inline def setPurposeUndefined: Self = StObject.set(x, "purpose", js.undefined)
     
     inline def setReplaces(value: js.Array[String]): Self = StObject.set(x, "replaces", value.asInstanceOf[js.Any])
     
@@ -272,6 +314,8 @@ object ChargeItemDefinition {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
     inline def setUseContext(value: js.Array[UsageContext]): Self = StObject.set(x, "useContext", value.asInstanceOf[js.Any])
     
     inline def setUseContextUndefined: Self = StObject.set(x, "useContext", js.undefined)
@@ -280,6 +324,14 @@ object ChargeItemDefinition {
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
+    inline def setVersionAlgorithmCoding(value: Coding): Self = StObject.set(x, "versionAlgorithmCoding", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmCodingUndefined: Self = StObject.set(x, "versionAlgorithmCoding", js.undefined)
+    
+    inline def setVersionAlgorithmString(value: String): Self = StObject.set(x, "versionAlgorithmString", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmStringUndefined: Self = StObject.set(x, "versionAlgorithmString", js.undefined)
+    
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     inline def set_approvalDate(value: Element): Self = StObject.set(x, "_approvalDate", value.asInstanceOf[js.Any])
@@ -287,6 +339,10 @@ object ChargeItemDefinition {
     inline def set_approvalDateUndefined: Self = StObject.set(x, "_approvalDate", js.undefined)
     
     inline def set_copyright(value: Element): Self = StObject.set(x, "_copyright", value.asInstanceOf[js.Any])
+    
+    inline def set_copyrightLabel(value: Element): Self = StObject.set(x, "_copyrightLabel", value.asInstanceOf[js.Any])
+    
+    inline def set_copyrightLabelUndefined: Self = StObject.set(x, "_copyrightLabel", js.undefined)
     
     inline def set_copyrightUndefined: Self = StObject.set(x, "_copyright", js.undefined)
     
@@ -312,6 +368,10 @@ object ChargeItemDefinition {
     
     inline def set_lastReviewDateUndefined: Self = StObject.set(x, "_lastReviewDate", js.undefined)
     
+    inline def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
+    
+    inline def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
+    
     inline def set_partOf(value: js.Array[Element]): Self = StObject.set(x, "_partOf", value.asInstanceOf[js.Any])
     
     inline def set_partOfUndefined: Self = StObject.set(x, "_partOf", js.undefined)
@@ -321,6 +381,10 @@ object ChargeItemDefinition {
     inline def set_publisher(value: Element): Self = StObject.set(x, "_publisher", value.asInstanceOf[js.Any])
     
     inline def set_publisherUndefined: Self = StObject.set(x, "_publisher", js.undefined)
+    
+    inline def set_purpose(value: Element): Self = StObject.set(x, "_purpose", value.asInstanceOf[js.Any])
+    
+    inline def set_purposeUndefined: Self = StObject.set(x, "_purpose", js.undefined)
     
     inline def set_replaces(value: js.Array[Element]): Self = StObject.set(x, "_replaces", value.asInstanceOf[js.Any])
     
@@ -341,6 +405,10 @@ object ChargeItemDefinition {
     inline def set_urlUndefined: Self = StObject.set(x, "_url", js.undefined)
     
     inline def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
+    
+    inline def set_versionAlgorithmString(value: Element): Self = StObject.set(x, "_versionAlgorithmString", value.asInstanceOf[js.Any])
+    
+    inline def set_versionAlgorithmStringUndefined: Self = StObject.set(x, "_versionAlgorithmString", js.undefined)
     
     inline def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
   }

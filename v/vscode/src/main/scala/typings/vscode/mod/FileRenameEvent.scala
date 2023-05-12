@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FileRenameEvent extends StObject {
   
   /**
-    * The files that got renamed.
-    */
+  		 * The files that got renamed.
+  		 */
   val files: js.Array[NewUri]
 }
 object FileRenameEvent {

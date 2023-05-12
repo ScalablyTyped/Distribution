@@ -17,7 +17,7 @@ trait CreateGroupRequest extends StObject {
   var GroupName: typings.awsSdk.clientsXrayMod.GroupName
   
   /**
-    * The structure containing configurations related to insights.   The InsightsEnabled boolean can be set to true to enable insights for the new group or false to disable insights for the new group.   The NotifcationsEnabled boolean can be set to true to enable insights notifications for the new group. Notifications may only be enabled on a group with InsightsEnabled set to true.  
+    * The structure containing configurations related to insights.   The InsightsEnabled boolean can be set to true to enable insights for the new group or false to disable insights for the new group.   The NotificationsEnabled boolean can be set to true to enable insights notifications for the new group. Notifications may only be enabled on a group with InsightsEnabled set to true.  
     */
   var InsightsConfiguration: js.UndefOr[typings.awsSdk.clientsXrayMod.InsightsConfiguration] = js.undefined
   

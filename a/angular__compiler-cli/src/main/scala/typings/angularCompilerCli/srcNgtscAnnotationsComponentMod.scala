@@ -1,13 +1,15 @@
 package typings.angularCompilerCli
 
+import typings.angularCompilerCli.srcNgtscAnnotationsCommonMod.InjectableClassRegistry
 import typings.angularCompilerCli.srcNgtscAnnotationsCommonSrcApiMod.ResourceLoader
+import typings.angularCompilerCli.srcNgtscAnnotationsCommonSrcReferencesRegistryMod.ReferencesRegistry
 import typings.angularCompilerCli.srcNgtscCyclesMod.CycleAnalyzer
 import typings.angularCompilerCli.srcNgtscCyclesSrcAnalyzerMod.CycleHandlingStrategy
 import typings.angularCompilerCli.srcNgtscImportsMod.ModuleResolver
 import typings.angularCompilerCli.srcNgtscImportsMod.ReferenceEmitter
 import typings.angularCompilerCli.srcNgtscIncrementalApiMod.DependencyTracker
 import typings.angularCompilerCli.srcNgtscIncrementalSemanticGraphMod.SemanticDepGraphUpdater
-import typings.angularCompilerCli.srcNgtscMetadataMod.InjectableClassRegistry
+import typings.angularCompilerCli.srcNgtscMetadataMod.HostDirectivesResolver
 import typings.angularCompilerCli.srcNgtscMetadataMod.ResourceRegistry
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.MetadataReader
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.MetadataRegistry
@@ -40,6 +42,7 @@ object srcNgtscAnnotationsComponentMod {
       typeCheckScopeRegistry: TypeCheckScopeRegistry,
       resourceRegistry: ResourceRegistry,
       isCore: Boolean,
+      strictCtorDeps: Boolean,
       resourceLoader: ResourceLoader,
       rootDirs: js.Array[String],
       defaultPreserveWhitespaces: Boolean,
@@ -51,11 +54,13 @@ object srcNgtscAnnotationsComponentMod {
       cycleAnalyzer: CycleAnalyzer,
       cycleHandlingStrategy: CycleHandlingStrategy,
       refEmitter: ReferenceEmitter,
+      referencesRegistry: ReferencesRegistry,
       depTracker: DependencyTracker[SourceFile] | Null,
       injectableRegistry: InjectableClassRegistry,
       semanticDepGraphUpdater: SemanticDepGraphUpdater | Null,
       annotateForClosureCompiler: Boolean,
-      perf: PerfRecorder
+      perf: PerfRecorder,
+      hostDirectivesResolver: HostDirectivesResolver
     ) = this()
   }
 }

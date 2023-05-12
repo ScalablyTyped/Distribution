@@ -157,6 +157,182 @@ open class EquiRectangularCubeTexture protected ()
         js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
       ]
   ) = this()
+  def this(
+    url: String,
+    scene: typings.babylonjs.BABYLON.Scene,
+    size: Double,
+    noMipmap: Boolean,
+    gammaSpace: Boolean,
+    onLoad: Unit,
+    onError: Unit,
+    supersample: Boolean
+  ) = this()
+  def this(
+    url: String,
+    scene: typings.babylonjs.BABYLON.Scene,
+    size: Double,
+    noMipmap: Boolean,
+    gammaSpace: Boolean,
+    onLoad: Unit,
+    onError: Nullable[
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
+      ],
+    supersample: Boolean
+  ) = this()
+  def this(
+    url: String,
+    scene: typings.babylonjs.BABYLON.Scene,
+    size: Double,
+    noMipmap: Boolean,
+    gammaSpace: Boolean,
+    onLoad: Nullable[js.Function0[Unit]],
+    onError: Unit,
+    supersample: Boolean
+  ) = this()
+  def this(
+    url: String,
+    scene: typings.babylonjs.BABYLON.Scene,
+    size: Double,
+    noMipmap: Boolean,
+    gammaSpace: Boolean,
+    onLoad: Nullable[js.Function0[Unit]],
+    onError: Nullable[
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
+      ],
+    supersample: Boolean
+  ) = this()
+  def this(
+    url: String,
+    scene: typings.babylonjs.BABYLON.Scene,
+    size: Double,
+    noMipmap: Boolean,
+    gammaSpace: Unit,
+    onLoad: Unit,
+    onError: Unit,
+    supersample: Boolean
+  ) = this()
+  def this(
+    url: String,
+    scene: typings.babylonjs.BABYLON.Scene,
+    size: Double,
+    noMipmap: Boolean,
+    gammaSpace: Unit,
+    onLoad: Unit,
+    onError: Nullable[
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
+      ],
+    supersample: Boolean
+  ) = this()
+  def this(
+    url: String,
+    scene: typings.babylonjs.BABYLON.Scene,
+    size: Double,
+    noMipmap: Boolean,
+    gammaSpace: Unit,
+    onLoad: Nullable[js.Function0[Unit]],
+    onError: Unit,
+    supersample: Boolean
+  ) = this()
+  def this(
+    url: String,
+    scene: typings.babylonjs.BABYLON.Scene,
+    size: Double,
+    noMipmap: Boolean,
+    gammaSpace: Unit,
+    onLoad: Nullable[js.Function0[Unit]],
+    onError: Nullable[
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
+      ],
+    supersample: Boolean
+  ) = this()
+  def this(
+    url: String,
+    scene: typings.babylonjs.BABYLON.Scene,
+    size: Double,
+    noMipmap: Unit,
+    gammaSpace: Boolean,
+    onLoad: Unit,
+    onError: Unit,
+    supersample: Boolean
+  ) = this()
+  def this(
+    url: String,
+    scene: typings.babylonjs.BABYLON.Scene,
+    size: Double,
+    noMipmap: Unit,
+    gammaSpace: Boolean,
+    onLoad: Unit,
+    onError: Nullable[
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
+      ],
+    supersample: Boolean
+  ) = this()
+  def this(
+    url: String,
+    scene: typings.babylonjs.BABYLON.Scene,
+    size: Double,
+    noMipmap: Unit,
+    gammaSpace: Boolean,
+    onLoad: Nullable[js.Function0[Unit]],
+    onError: Unit,
+    supersample: Boolean
+  ) = this()
+  def this(
+    url: String,
+    scene: typings.babylonjs.BABYLON.Scene,
+    size: Double,
+    noMipmap: Unit,
+    gammaSpace: Boolean,
+    onLoad: Nullable[js.Function0[Unit]],
+    onError: Nullable[
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
+      ],
+    supersample: Boolean
+  ) = this()
+  def this(
+    url: String,
+    scene: typings.babylonjs.BABYLON.Scene,
+    size: Double,
+    noMipmap: Unit,
+    gammaSpace: Unit,
+    onLoad: Unit,
+    onError: Unit,
+    supersample: Boolean
+  ) = this()
+  def this(
+    url: String,
+    scene: typings.babylonjs.BABYLON.Scene,
+    size: Double,
+    noMipmap: Unit,
+    gammaSpace: Unit,
+    onLoad: Unit,
+    onError: Nullable[
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
+      ],
+    supersample: Boolean
+  ) = this()
+  def this(
+    url: String,
+    scene: typings.babylonjs.BABYLON.Scene,
+    size: Double,
+    noMipmap: Unit,
+    gammaSpace: Unit,
+    onLoad: Nullable[js.Function0[Unit]],
+    onError: Unit,
+    supersample: Boolean
+  ) = this()
+  def this(
+    url: String,
+    scene: typings.babylonjs.BABYLON.Scene,
+    size: Double,
+    noMipmap: Unit,
+    gammaSpace: Unit,
+    onLoad: Nullable[js.Function0[Unit]],
+    onError: Nullable[
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
+      ],
+    supersample: Boolean
+  ) = this()
   
   /**
     * Array of animations

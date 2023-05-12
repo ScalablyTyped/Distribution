@@ -16,7 +16,7 @@ object libIconsVerticalRightOutlinedMod extends Shortcut {
   @js.native
   trait VerticalRightOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_VerticalRightOutlinedIconType: String = js.native

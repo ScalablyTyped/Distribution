@@ -26,7 +26,7 @@ trait BodyStructure
   /**
     * The anatomical location(s) or region(s) not occupied or represented by the specimen, lesion, or body structure.
     */
-  var excludedStructure: js.UndefOr[js.Array[BodyStructureExcludedStructure]] = js.undefined
+  var excludedStructure: js.UndefOr[js.Array[BodyStructureIncludedStructure]] = js.undefined
   
   /**
     * Identifier for this instance of the anatomical structure.
@@ -42,11 +42,6 @@ trait BodyStructure
     * The anatomical location(s) or region(s) of the specimen, lesion, or body structure.
     */
   var includedStructure: js.Array[BodyStructureIncludedStructure]
-  
-  /**
-    * The anatomical location or region of the specimen, lesion, or body structure.
-    */
-  var location: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * The minimum cardinality of 0 supports the use case of specifying a location without defining a morphology.
@@ -80,11 +75,11 @@ object BodyStructure {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setExcludedStructure(value: js.Array[BodyStructureExcludedStructure]): Self = StObject.set(x, "excludedStructure", value.asInstanceOf[js.Any])
+    inline def setExcludedStructure(value: js.Array[BodyStructureIncludedStructure]): Self = StObject.set(x, "excludedStructure", value.asInstanceOf[js.Any])
     
     inline def setExcludedStructureUndefined: Self = StObject.set(x, "excludedStructure", js.undefined)
     
-    inline def setExcludedStructureVarargs(value: BodyStructureExcludedStructure*): Self = StObject.set(x, "excludedStructure", js.Array(value*))
+    inline def setExcludedStructureVarargs(value: BodyStructureIncludedStructure*): Self = StObject.set(x, "excludedStructure", js.Array(value*))
     
     inline def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
@@ -101,10 +96,6 @@ object BodyStructure {
     inline def setIncludedStructure(value: js.Array[BodyStructureIncludedStructure]): Self = StObject.set(x, "includedStructure", value.asInstanceOf[js.Any])
     
     inline def setIncludedStructureVarargs(value: BodyStructureIncludedStructure*): Self = StObject.set(x, "includedStructure", js.Array(value*))
-    
-    inline def setLocation(value: CodeableConcept): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
-    
-    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     inline def setMorphology(value: CodeableConcept): Self = StObject.set(x, "morphology", value.asInstanceOf[js.Any])
     

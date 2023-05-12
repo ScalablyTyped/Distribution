@@ -42,6 +42,11 @@ trait InstanceFleet extends StObject {
   var ProvisionedSpotCapacity: js.UndefOr[WholeNumber] = js.undefined
   
   /**
+    * The resize specification for the instance fleet.
+    */
+  var ResizeSpecifications: js.UndefOr[InstanceFleetResizingSpecifications] = js.undefined
+  
+  /**
     * The current status of the instance fleet. 
     */
   var Status: js.UndefOr[InstanceFleetStatus] = js.undefined
@@ -95,6 +100,10 @@ object InstanceFleet {
     inline def setProvisionedSpotCapacity(value: WholeNumber): Self = StObject.set(x, "ProvisionedSpotCapacity", value.asInstanceOf[js.Any])
     
     inline def setProvisionedSpotCapacityUndefined: Self = StObject.set(x, "ProvisionedSpotCapacity", js.undefined)
+    
+    inline def setResizeSpecifications(value: InstanceFleetResizingSpecifications): Self = StObject.set(x, "ResizeSpecifications", value.asInstanceOf[js.Any])
+    
+    inline def setResizeSpecificationsUndefined: Self = StObject.set(x, "ResizeSpecifications", js.undefined)
     
     inline def setStatus(value: InstanceFleetStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

@@ -1,0 +1,83 @@
+package typings.awsSdkClientDynamodb
+
+import typings.awsSdkClientDynamodb.distTypesDynamoDBClientMod.DynamoDBClientResolvedConfig
+import typings.awsSdkClientDynamodb.distTypesDynamoDBClientMod.ServiceInputTypes
+import typings.awsSdkClientDynamodb.distTypesDynamoDBClientMod.ServiceOutputTypes
+import typings.awsSdkClientDynamodb.distTypesDynamoDBClientMod._ServiceOutputTypes
+import typings.awsSdkClientDynamodb.distTypesModelsModels0Mod.ExecuteTransactionInput
+import typings.awsSdkClientDynamodb.distTypesModelsModels0Mod.ExecuteTransactionOutput
+import typings.awsSdkMiddlewareEndpoint.distTypesTypesMod.EndpointParameterInstructions
+import typings.awsSdkSmithyClient.mod.Command
+import typings.awsSdkTypes.distTypesHttpMod.HttpHandlerOptions
+import typings.awsSdkTypes.distTypesMiddlewareMod.Handler
+import typings.awsSdkTypes.distTypesMiddlewareMod.MiddlewareStack
+import typings.awsSdkTypes.distTypesResponseMod.MetadataBearer
+import typings.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object distTypesCommandsExecuteTransactionCommandMod {
+  
+  @JSImport("@aws-sdk/client-dynamodb/dist-types/commands/ExecuteTransactionCommand", "ExecuteTransactionCommand")
+  @js.native
+  open class ExecuteTransactionCommand protected () extends Command[
+          ExecuteTransactionCommandInput, 
+          ExecuteTransactionCommandOutput, 
+          DynamoDBClientResolvedConfig, 
+          Any, 
+          Any
+        ] {
+    /**
+      * @public
+      */
+    def this(input: ExecuteTransactionCommandInput) = this()
+    
+    /**
+      * @internal
+      */
+    /* private */ var deserialize: Any = js.native
+    
+    /**
+      * @internal
+      */
+    def resolveMiddleware(
+      clientStack: MiddlewareStack[ServiceInputTypes, ServiceOutputTypes],
+      configuration: DynamoDBClientResolvedConfig
+    ): Handler[ExecuteTransactionCommandInput, ExecuteTransactionCommandOutput] = js.native
+    def resolveMiddleware(
+      clientStack: MiddlewareStack[ServiceInputTypes, ServiceOutputTypes],
+      configuration: DynamoDBClientResolvedConfig,
+      options: HttpHandlerOptions
+    ): Handler[ExecuteTransactionCommandInput, ExecuteTransactionCommandOutput] = js.native
+    
+    /**
+      * @internal
+      */
+    /* private */ var serialize: Any = js.native
+  }
+  /* static members */
+  object ExecuteTransactionCommand {
+    
+    @JSImport("@aws-sdk/client-dynamodb/dist-types/commands/ExecuteTransactionCommand", "ExecuteTransactionCommand")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def getEndpointParameterInstructions(): EndpointParameterInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointParameterInstructions")().asInstanceOf[EndpointParameterInstructions]
+  }
+  
+  type ExecuteTransactionCommandInput = ExecuteTransactionInput
+  
+  trait ExecuteTransactionCommandOutput
+    extends StObject
+       with ExecuteTransactionOutput
+       with MetadataBearer
+       with _ServiceOutputTypes
+  object ExecuteTransactionCommandOutput {
+    
+    inline def apply($metadata: ResponseMetadata): ExecuteTransactionCommandOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ExecuteTransactionCommandOutput]
+    }
+  }
+}

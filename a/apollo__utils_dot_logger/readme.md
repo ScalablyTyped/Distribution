@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollo__utils_dot_logger
 
-Typings are for version 1.0.1
+Typings are for version 3.0.0
 
 ## Library description:
 Generic logger interface

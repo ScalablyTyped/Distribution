@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.CaptionSide
+import typings.csstype.mod.Property.InsetInline
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `217` extends StObject {
   
   var value: js.UndefOr[
-    CaptionSide | (js.Array[
-      (Extract[js.UndefOr[CaptionSide | js.Array[NonNullable[js.UndefOr[CaptionSide]]]], String]) | NonNullable[js.UndefOr[CaptionSide]]
+    (InsetInline[Double | String]) | (js.Array[
+      (Extract[
+        js.UndefOr[
+          (InsetInline[Double | String]) | (js.Array[NonNullable[js.UndefOr[InsetInline[Double | String]]]])
+        ], 
+        String
+      ]) | (NonNullable[js.UndefOr[InsetInline[Double | String]]])
     ])
   ] = js.native
 }

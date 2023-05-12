@@ -12,7 +12,7 @@ trait ListImagePackagesResponse extends StObject {
   var imagePackageList: js.UndefOr[ImagePackageList] = js.undefined
   
   /**
-    * A token to specify where to start paginating. This is the NextToken from a previously truncated response.
+    * The next token used for paginated responses. When this field isn't empty, there are additional elements that the service has'ot included in this request. Use this token with the next request to retrieve additional objects.
     */
   var nextToken: js.UndefOr[PaginationToken] = js.undefined
   

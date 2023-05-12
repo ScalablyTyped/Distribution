@@ -29,7 +29,7 @@ object TextDocumentIdentifier {
   inline def create(uri: DocumentUri): TextDocumentIdentifier = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any]).asInstanceOf[TextDocumentIdentifier]
   
   /**
-    * Checks whether the given literal conforms to the [TextDocumentIdentifier](#TextDocumentIdentifier) interface.
+    * Checks whether the given literal conforms to the {@link TextDocumentIdentifier} interface.
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentIdentifier */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentIdentifier */ Boolean]
   

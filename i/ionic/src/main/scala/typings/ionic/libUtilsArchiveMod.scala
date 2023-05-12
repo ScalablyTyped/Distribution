@@ -1,5 +1,6 @@
 package typings.ionic
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
 import typings.tar.anon.CreateOptionsFileOptionss
@@ -8,9 +9,9 @@ import typings.tar.anon.Sync
 import typings.tar.mod.CreateOptions
 import typings.tar.mod.ExtractOptions
 import typings.tar.mod.FileOptions
-import typings.tar.mod.HeaderProperties
 import typings.tar.mod.ListOptions
-import typings.tar.mod.PackStream
+import typings.tar.mod.PackOptions
+import typings.tar.mod.PackSync
 import typings.tar.mod.Parse
 import typings.tar.mod.ParseStream
 import typings.tar.mod.ReplaceOptions
@@ -30,8 +31,25 @@ object libUtilsArchiveMod {
     inline def Extract_(opts: String): ParseStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Extract")(opts.asInstanceOf[js.Any]).asInstanceOf[ParseStream]
     inline def Extract_(opts: ExtractOptions): ParseStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Extract")(opts.asInstanceOf[js.Any]).asInstanceOf[ParseStream]
     
-    inline def Pack(): PackStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Pack")().asInstanceOf[PackStream]
-    inline def Pack(props: HeaderProperties): PackStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Pack")(props.asInstanceOf[js.Any]).asInstanceOf[PackStream]
+    /* import warning: RemoveDifficultInheritance.summarizeChanges 
+    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MiniPass * / any */ @JSImport("ionic/lib/utils/archive", "tar.Pack")
+    @js.native
+    open class Pack ()
+      extends typings.tar.mod.Pack {
+      def this(opt: PackOptions) = this()
+    }
+    /* static members */
+    object Pack {
+      
+      @JSImport("ionic/lib/utils/archive", "tar.Pack")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSImport("ionic/lib/utils/archive", "tar.Pack.Sync")
+      @js.native
+      def Sync: Instantiable1[/* opt */ PackOptions, PackSync] = js.native
+      inline def Sync_=(x: Instantiable1[/* opt */ PackOptions, PackSync]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sync")(x.asInstanceOf[js.Any])
+    }
     
     @JSImport("ionic/lib/utils/archive", "tar.blockSize")
     @js.native

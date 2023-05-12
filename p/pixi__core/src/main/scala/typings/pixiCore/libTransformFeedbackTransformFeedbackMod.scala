@@ -1,7 +1,7 @@
 package typings.pixiCore
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.pixiCore.mod.Buffer
+import typings.pixiCore.libGeometryBufferMod.Buffer
 import typings.pixiRunner.mod.Runner
 import typings.std.WebGLTransformFeedback
 import org.scalablytyped.runtime.StObject

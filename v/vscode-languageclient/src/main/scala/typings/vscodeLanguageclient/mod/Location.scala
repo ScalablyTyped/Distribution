@@ -21,7 +21,7 @@ object Location {
   ): typings.vscodeLanguageserverTypes.mod.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.Location]
   
   /**
-    * Checks whether the given literal conforms to the [Location](#Location) interface.
+    * Checks whether the given literal conforms to the {@link Location} interface.
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.Location */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Location */ Boolean]
 }

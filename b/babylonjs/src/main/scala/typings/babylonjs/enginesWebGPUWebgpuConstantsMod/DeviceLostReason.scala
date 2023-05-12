@@ -18,4 +18,10 @@ object DeviceLostReason extends StObject {
     extends StObject
        with DeviceLostReason
   /* "destroyed" */ val Destroyed: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.DeviceLostReason.Destroyed & String = js.native
+  
+  @js.native
+  sealed trait Unknown
+    extends StObject
+       with DeviceLostReason
+  /* "unknown" */ val Unknown: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.DeviceLostReason.Unknown & String = js.native
 }

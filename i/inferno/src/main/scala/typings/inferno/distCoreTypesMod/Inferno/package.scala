@@ -1,5 +1,6 @@
 package typings.inferno.distCoreTypesMod.Inferno
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.inferno.distCoreTypesMod.IComponent
 import typings.inferno.distCoreTypesMod.Inferno.^
 import typings.std.HTMLElement
@@ -96,6 +97,8 @@ type ClassicFactory[P] = CFactory[P, ClassicComponent[P, ComponentState]]
 
 type ComponentState = js.Object
 
+type CssVariables = StringDictionary[String]
+
 type DetailedHTMLProps[E /* <: HTMLAttributes[T] */, T] = ClassAttributes[T] & E
 
 type ExoticComponent[P] = js.Function1[/* props */ P, InfernoElement[Any]]
@@ -138,16 +141,6 @@ type HTMLFactory[T /* <: HTMLElement */] = DetailedHTMLFactory[AllHTMLAttributes
 */
 type HTMLInputTypeAttribute = _HTMLInputTypeAttribute | String
 
-type InfernoChild = InfernoElement[Any] | InfernoText
-
-type InfernoFragment = js.Object | InfernoNodeArray
-
 type InfernoHTMLElement[T /* <: HTMLElement */] = DetailedInfernoHTMLElement[AllHTMLAttributes[T], T]
-
-type InfernoNode = js.UndefOr[InfernoChild | InfernoFragment | Boolean | Null]
-
-type InfernoText = String | Double
-
-type Key = String | Double
 
 type SFC[P] = StatelessComponent[P]

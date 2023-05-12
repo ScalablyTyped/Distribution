@@ -35,11 +35,6 @@ trait SymbolOptionsObject extends StObject {
   var r: js.UndefOr[Double] = js.undefined
   
   /**
-    * Whether to draw rounded edges.
-    */
-  var rounded: js.UndefOr[Boolean] = js.undefined
-  
-  /**
     * The start angle of an `arc` symbol.
     */
   var start: js.UndefOr[Double] = js.undefined
@@ -73,10 +68,6 @@ object SymbolOptionsObject {
     inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
     inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
-    
-    inline def setRounded(value: Boolean): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
-    
-    inline def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
     
     inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     

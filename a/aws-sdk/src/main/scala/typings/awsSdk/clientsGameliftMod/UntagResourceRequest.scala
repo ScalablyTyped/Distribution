@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UntagResourceRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) that is assigned to and uniquely identifies the GameLift resource that you want to remove tags from. GameLift resource ARNs are included in the data object for the resource, which can be retrieved by calling a List or Describe operation for the resource type. 
+    * The Amazon Resource Name (ARN) that uniquely identifies the Amazon GameLift resource that you want to remove tags from. Amazon GameLift includes resource ARNs in the data object for the resource. You can retrieve the ARN by calling a List or Describe operation for the resource type. 
     */
   var ResourceARN: AmazonResourceName
   
   /**
-    * A list of one or more tag keys to remove from the specified GameLift resource. An Amazon Web Services resource can have only one tag with a specific tag key, so specifying the tag key identifies which tag to remove. 
+    * A list of one or more tag keys to remove from the specified Amazon GameLift resource. 
     */
   var TagKeys: TagKeyList
 }

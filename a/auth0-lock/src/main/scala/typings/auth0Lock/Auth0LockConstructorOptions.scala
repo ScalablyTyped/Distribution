@@ -86,6 +86,8 @@ trait Auth0LockConstructorOptions extends StObject {
   
   var scrollGlobalMessagesIntoView: js.UndefOr[Boolean] = js.undefined
   
+  var showTerms: js.UndefOr[Boolean] = js.undefined
+  
   var signupLink: js.UndefOr[String] = js.undefined
   
   var socialButtonStyle: js.UndefOr[big | small] = js.undefined
@@ -249,6 +251,10 @@ object Auth0LockConstructorOptions {
     inline def setScrollGlobalMessagesIntoView(value: Boolean): Self = StObject.set(x, "scrollGlobalMessagesIntoView", value.asInstanceOf[js.Any])
     
     inline def setScrollGlobalMessagesIntoViewUndefined: Self = StObject.set(x, "scrollGlobalMessagesIntoView", js.undefined)
+    
+    inline def setShowTerms(value: Boolean): Self = StObject.set(x, "showTerms", value.asInstanceOf[js.Any])
+    
+    inline def setShowTermsUndefined: Self = StObject.set(x, "showTerms", js.undefined)
     
     inline def setSignupLink(value: String): Self = StObject.set(x, "signupLink", value.asInstanceOf[js.Any])
     

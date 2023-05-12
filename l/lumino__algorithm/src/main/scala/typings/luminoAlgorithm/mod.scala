@@ -4,11 +4,10 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.luminoAlgorithm.anon.Index
 import typings.luminoAlgorithm.typesArrayMod.ArrayExt.MutableArrayLike
 import typings.luminoAlgorithm.typesArrayMod.ArrayExt.slice.IOptions
-import typings.luminoAlgorithm.typesIterMod.IIterator
-import typings.luminoAlgorithm.typesIterMod.IterableOrArrayLike
-import typings.luminoAlgorithm.typesRetroMod.RetroableOrArrayLike
+import typings.luminoAlgorithm.typesRetroMod.IRetroable
 import typings.luminoAlgorithm.typesStringMod.StringExt.IMatchResult
 import typings.std.ArrayLike
+import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -1061,176 +1060,6 @@ object mod {
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("upperBound")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
-  @JSImport("@lumino/algorithm", "ArrayIterator")
-  @js.native
-  open class ArrayIterator[T] protected ()
-    extends typings.luminoAlgorithm.typesIterMod.ArrayIterator[T] {
-    /**
-      * Construct a new array iterator.
-      *
-      * @param source - The array-like object of interest.
-      */
-    def this(source: ArrayLike[T]) = this()
-  }
-  
-  @JSImport("@lumino/algorithm", "ChainIterator")
-  @js.native
-  open class ChainIterator[T] protected ()
-    extends typings.luminoAlgorithm.typesChainMod.ChainIterator[T] {
-    /**
-      * Construct a new chain iterator.
-      *
-      * @param source - The iterator of iterators of interest.
-      */
-    def this(source: IIterator[IIterator[T]]) = this()
-  }
-  
-  @JSImport("@lumino/algorithm", "EmptyIterator")
-  @js.native
-  open class EmptyIterator[T] ()
-    extends typings.luminoAlgorithm.typesEmptyMod.EmptyIterator[T]
-  
-  @JSImport("@lumino/algorithm", "EnumerateIterator")
-  @js.native
-  open class EnumerateIterator[T] protected ()
-    extends typings.luminoAlgorithm.typesEnumerateMod.EnumerateIterator[T] {
-    /**
-      * Construct a new enumerate iterator.
-      *
-      * @param source - The iterator of values of interest.
-      *
-      * @param start - The starting enum value.
-      */
-    def this(source: IIterator[T], start: Double) = this()
-  }
-  
-  @JSImport("@lumino/algorithm", "FilterIterator")
-  @js.native
-  open class FilterIterator[T] protected ()
-    extends typings.luminoAlgorithm.typesFilterMod.FilterIterator[T] {
-    /**
-      * Construct a new filter iterator.
-      *
-      * @param source - The iterator of values of interest.
-      *
-      * @param fn - The predicate function to invoke for each value.
-      */
-    def this(source: IIterator[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]) = this()
-  }
-  
-  @JSImport("@lumino/algorithm", "FnIterator")
-  @js.native
-  open class FnIterator[T] protected ()
-    extends typings.luminoAlgorithm.typesIterMod.FnIterator[T] {
-    /**
-      * Construct a new function iterator.
-      *
-      * @param fn - The iterator-like function of interest.
-      */
-    def this(fn: js.Function0[js.UndefOr[T]]) = this()
-  }
-  
-  @JSImport("@lumino/algorithm", "ItemIterator")
-  @js.native
-  open class ItemIterator[T] protected ()
-    extends typings.luminoAlgorithm.typesIterMod.ItemIterator[T] {
-    /**
-      * Construct a new item iterator.
-      *
-      * @param source - The object of interest.
-      *
-      * @param keys - The keys to iterate, if known.
-      */
-    def this(source: StringDictionary[T]) = this()
-    def this(source: StringDictionary[T], keys: js.Array[String]) = this()
-  }
-  
-  @JSImport("@lumino/algorithm", "KeyIterator")
-  @js.native
-  open class KeyIterator protected ()
-    extends typings.luminoAlgorithm.typesIterMod.KeyIterator {
-    /**
-      * Construct a new key iterator.
-      *
-      * @param source - The object of interest.
-      *
-      * @param keys - The keys to iterate, if known.
-      */
-    def this(source: StringDictionary[Any]) = this()
-    def this(source: StringDictionary[Any], keys: js.Array[String]) = this()
-  }
-  
-  @JSImport("@lumino/algorithm", "MapIterator")
-  @js.native
-  open class MapIterator[T, U] protected ()
-    extends typings.luminoAlgorithm.typesMapMod.MapIterator[T, U] {
-    /**
-      * Construct a new map iterator.
-      *
-      * @param source - The iterator of values of interest.
-      *
-      * @param fn - The mapping function to invoke for each value.
-      */
-    def this(source: IIterator[T], fn: js.Function2[/* value */ T, /* index */ Double, U]) = this()
-  }
-  
-  @JSImport("@lumino/algorithm", "RangeIterator")
-  @js.native
-  open class RangeIterator protected ()
-    extends typings.luminoAlgorithm.typesRangeMod.RangeIterator {
-    /**
-      * Construct a new range iterator.
-      *
-      * @param start - The starting value for the range, inclusive.
-      *
-      * @param stop - The stopping value for the range, exclusive.
-      *
-      * @param step - The distance between each value.
-      */
-    def this(start: Double, stop: Double, step: Double) = this()
-  }
-  
-  @JSImport("@lumino/algorithm", "RepeatIterator")
-  @js.native
-  open class RepeatIterator[T] protected ()
-    extends typings.luminoAlgorithm.typesRepeatMod.RepeatIterator[T] {
-    /**
-      * Construct a new repeat iterator.
-      *
-      * @param value - The value to repeat.
-      *
-      * @param count - The number of times to repeat the value.
-      */
-    def this(value: T, count: Double) = this()
-  }
-  
-  @JSImport("@lumino/algorithm", "RetroArrayIterator")
-  @js.native
-  open class RetroArrayIterator[T] protected ()
-    extends typings.luminoAlgorithm.typesRetroMod.RetroArrayIterator[T] {
-    /**
-      * Construct a new retro iterator.
-      *
-      * @param source - The array-like object of interest.
-      */
-    def this(source: ArrayLike[T]) = this()
-  }
-  
-  @JSImport("@lumino/algorithm", "StrideIterator")
-  @js.native
-  open class StrideIterator[T] protected ()
-    extends typings.luminoAlgorithm.typesStrideMod.StrideIterator[T] {
-    /**
-      * Construct a new stride iterator.
-      *
-      * @param source - The iterator of values of interest.
-      *
-      * @param step - The distance to step on each iteration. A value
-      *   of less than `1` will behave the same as a value of `1`.
-      */
-    def this(source: IIterator[T], step: Double) = this()
-  }
-  
   object StringExt {
     
     @JSImport("@lumino/algorithm", "StringExt")
@@ -1338,117 +1167,64 @@ object mod {
     inline def matchSumOfSquares(source: String, query: String, start: Double): IMatchResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchSumOfSquares")(source.asInstanceOf[js.Any], query.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[IMatchResult | Null]
   }
   
-  @JSImport("@lumino/algorithm", "TakeIterator")
-  @js.native
-  open class TakeIterator[T] protected ()
-    extends typings.luminoAlgorithm.typesTakeMod.TakeIterator[T] {
-    /**
-      * Construct a new take iterator.
-      *
-      * @param source - The iterator of interest.
-      *
-      * @param count - The number of items to take from the source.
-      */
-    def this(source: IIterator[T], count: Double) = this()
-  }
+  inline def chain[T](objects: js.Iterable[T]*): IterableIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(objects.asInstanceOf[Seq[js.Any]]*).asInstanceOf[IterableIterator[T]]
   
-  @JSImport("@lumino/algorithm", "ValueIterator")
-  @js.native
-  open class ValueIterator[T] protected ()
-    extends typings.luminoAlgorithm.typesIterMod.ValueIterator[T] {
-    /**
-      * Construct a new value iterator.
-      *
-      * @param source - The object of interest.
-      *
-      * @param keys - The keys to iterate, if known.
-      */
-    def this(source: StringDictionary[T]) = this()
-    def this(source: StringDictionary[T], keys: js.Array[String]) = this()
-  }
+  inline def each[T](`object`: js.Iterable[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean | Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@lumino/algorithm", "ZipIterator")
-  @js.native
-  open class ZipIterator[T] protected ()
-    extends typings.luminoAlgorithm.typesZipMod.ZipIterator[T] {
-    /**
-      * Construct a new zip iterator.
-      *
-      * @param source - The iterators of interest.
-      */
-    def this(source: js.Array[IIterator[T]]) = this()
-  }
+  inline def empty[T](): IterableIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[IterableIterator[T]]
   
-  inline def chain[T](objects: IterableOrArrayLike[T]*): IIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(objects.asInstanceOf[Seq[js.Any]]*).asInstanceOf[IIterator[T]]
+  inline def enumerate[T](`object`: js.Iterable[T]): IterableIterator[js.Tuple2[Double, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerate")(`object`.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[js.Tuple2[Double, T]]]
+  inline def enumerate[T](`object`: js.Iterable[T], start: Double): IterableIterator[js.Tuple2[Double, T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("enumerate")(`object`.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[js.Tuple2[Double, T]]]
   
-  inline def each[T](
-    `object`: IterableOrArrayLike[T],
-    fn: js.Function2[/* value */ T, /* index */ Double, Boolean | Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def every[T](`object`: js.Iterable[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def empty[T](): IIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[IIterator[T]]
+  inline def filter[T](`object`: js.Iterable[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): IterableIterator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[T]]
   
-  inline def enumerate[T](`object`: IterableOrArrayLike[T]): IIterator[js.Tuple2[Double, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerate")(`object`.asInstanceOf[js.Any]).asInstanceOf[IIterator[js.Tuple2[Double, T]]]
-  inline def enumerate[T](`object`: IterableOrArrayLike[T], start: Double): IIterator[js.Tuple2[Double, T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("enumerate")(`object`.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[IIterator[js.Tuple2[Double, T]]]
+  inline def find[T](`object`: js.Iterable[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
   
-  inline def every[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def findIndex[T](`object`: js.Iterable[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndex")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def filter[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): IIterator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[IIterator[T]]
+  inline def map[T, U](`object`: js.Iterable[T], fn: js.Function2[/* value */ T, /* index */ Double, U]): IterableIterator[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[U]]
   
-  inline def find[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+  inline def max[T](`object`: js.Iterable[T], fn: js.Function2[/* first */ T, /* second */ T, Double]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
   
-  inline def findIndex[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndex")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def min[T](`object`: js.Iterable[T], fn: js.Function2[/* first */ T, /* second */ T, Double]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
   
-  inline def iter[T](`object`: IterableOrArrayLike[T]): IIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("iter")(`object`.asInstanceOf[js.Any]).asInstanceOf[IIterator[T]]
+  inline def minmax[T](`object`: js.Iterable[T], fn: js.Function2[/* first */ T, /* second */ T, Double]): js.UndefOr[js.Tuple2[T, T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("minmax")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Tuple2[T, T]]]
   
-  inline def iterFn[T](fn: js.Function0[js.UndefOr[T]]): IIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("iterFn")(fn.asInstanceOf[js.Any]).asInstanceOf[IIterator[T]]
+  inline def once[T](value: T): IterableIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("once")(value.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[T]]
   
-  inline def iterItems[T](`object`: StringDictionary[T]): IIterator[js.Tuple2[String, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("iterItems")(`object`.asInstanceOf[js.Any]).asInstanceOf[IIterator[js.Tuple2[String, T]]]
-  
-  inline def iterKeys[T](`object`: StringDictionary[T]): IIterator[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("iterKeys")(`object`.asInstanceOf[js.Any]).asInstanceOf[IIterator[String]]
-  
-  inline def iterValues[T](`object`: StringDictionary[T]): IIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("iterValues")(`object`.asInstanceOf[js.Any]).asInstanceOf[IIterator[T]]
-  
-  inline def map[T, U](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, U]): IIterator[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[IIterator[U]]
-  
-  inline def max[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* first */ T, /* second */ T, Double]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-  
-  inline def min[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* first */ T, /* second */ T, Double]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-  
-  inline def minmax[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* first */ T, /* second */ T, Double]): js.UndefOr[js.Tuple2[T, T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("minmax")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Tuple2[T, T]]]
-  
-  inline def once[T](value: T): IIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("once")(value.asInstanceOf[js.Any]).asInstanceOf[IIterator[T]]
-  
-  inline def range(start: Double): IIterator[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any]).asInstanceOf[IIterator[Double]]
-  inline def range(start: Double, stop: Double): IIterator[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[IIterator[Double]]
-  inline def range(start: Double, stop: Double, step: Double): IIterator[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[IIterator[Double]]
-  inline def range(start: Double, stop: Unit, step: Double): IIterator[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[IIterator[Double]]
+  inline def range(start: Double): IterableIterator[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[Double]]
+  inline def range(start: Double, stop: Double): IterableIterator[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Double]]
+  inline def range(start: Double, stop: Double, step: Double): IterableIterator[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Double]]
+  inline def range(start: Double, stop: Unit, step: Double): IterableIterator[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Double]]
   
   inline def reduce[T](
-    `object`: IterableOrArrayLike[T],
+    `object`: js.Iterable[T],
     fn: js.Function3[/* accumulator */ T, /* value */ T, /* index */ Double, T]
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def reduce[T, U](
-    `object`: IterableOrArrayLike[T],
+    `object`: js.Iterable[T],
     fn: js.Function3[/* accumulator */ U, /* value */ T, /* index */ Double, U],
     initial: U
   ): U = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], initial.asInstanceOf[js.Any])).asInstanceOf[U]
   
-  inline def repeat[T](value: T, count: Double): IIterator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("repeat")(value.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[IIterator[T]]
+  inline def repeat[T](value: T, count: Double): IterableIterator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("repeat")(value.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[T]]
   
-  inline def retro[T](`object`: RetroableOrArrayLike[T]): IIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("retro")(`object`.asInstanceOf[js.Any]).asInstanceOf[IIterator[T]]
+  inline def retro[T](`object`: IRetroable[T]): IterableIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("retro")(`object`.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[T]]
+  inline def retro[T](`object`: ArrayLike[T]): IterableIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("retro")(`object`.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[T]]
   
-  inline def some[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def some[T](`object`: js.Iterable[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def stride[T](`object`: IterableOrArrayLike[T], step: Double): IIterator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("stride")(`object`.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[IIterator[T]]
+  inline def stride[T](`object`: js.Iterable[T], step: Double): IterableIterator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("stride")(`object`.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[T]]
   
-  inline def take[T](`object`: IterableOrArrayLike[T], count: Double): IIterator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("take")(`object`.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[IIterator[T]]
+  inline def take[T](`object`: js.Iterable[T], count: Double): IterableIterator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("take")(`object`.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[T]]
   
-  inline def toArray[T](`object`: IterableOrArrayLike[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def toArray[T](`object`: js.Iterable[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
-  inline def toObject[T](`object`: IterableOrArrayLike[js.Tuple2[String, T]]): StringDictionary[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[T]]
+  inline def toObject[T](`object`: js.Iterable[js.Tuple2[String, T]]): StringDictionary[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[T]]
   
-  inline def topologicSort[T](edges: IterableOrArrayLike[js.Tuple2[T, T]]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("topologicSort")(edges.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def topologicSort[T](edges: js.Iterable[js.Tuple2[T, T]]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("topologicSort")(edges.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
-  inline def zip[T](objects: IterableOrArrayLike[T]*): IIterator[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(objects.asInstanceOf[Seq[js.Any]]*).asInstanceOf[IIterator[js.Array[T]]]
+  inline def zip[T](objects: js.Iterable[T]*): IterableIterator[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(objects.asInstanceOf[Seq[js.Any]]*).asInstanceOf[IterableIterator[js.Array[T]]]
 }

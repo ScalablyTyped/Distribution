@@ -18,7 +18,7 @@ trait ComponentElement[P, T /* <: IComponent[P, ComponentState] */]
 object ComponentElement {
   
   inline def apply[P, T /* <: IComponent[P, ComponentState] */](props: P, `type`: ComponentClass[P]): ComponentElement[P, T] = {
-    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], key = null)
+    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentElement[P, T]]
   }

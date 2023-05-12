@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.examplesJsmPostprocessingPassMod.FullScreenQuad
 import typings.three.examplesJsmPostprocessingPassMod.Pass
 import typings.three.srcThreeMod.ShaderMaterial
 import typings.three.srcThreeMod.Texture
@@ -15,7 +16,7 @@ object examplesJsmPostprocessingTexturePassMod {
     def this(map: Texture) = this()
     def this(map: Texture, opacity: Double) = this()
     
-    var fsQuad: js.Object = js.native
+    var fsQuad: FullScreenQuad = js.native
     
     var map: Texture = js.native
     

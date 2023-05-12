@@ -11,7 +11,7 @@ trait CitationCitedArtifactContributorship
   var _complete: js.UndefOr[Element] = js.undefined
   
   /**
-    * If list is incomplete "et al" can be appended to Contributorship.summary.value for display purposes.
+    * If list is incomplete, "et al" can be appended to Contributorship.summary.value for display purposes.
     */
   var complete: js.UndefOr[Boolean] = js.undefined
   
@@ -21,7 +21,7 @@ trait CitationCitedArtifactContributorship
   var entry: js.UndefOr[js.Array[CitationCitedArtifactContributorshipEntry]] = js.undefined
   
   /**
-    * Used to record a display of the author/contributor list without separate coding for each list member.
+    * Used to record a display of the author/contributor list without separate data element for each list member.
     */
   var summary: js.UndefOr[js.Array[CitationCitedArtifactContributorshipSummary]] = js.undefined
 }

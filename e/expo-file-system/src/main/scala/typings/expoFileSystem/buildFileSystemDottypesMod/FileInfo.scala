@@ -16,8 +16,8 @@ object FileInfo {
     __obj.asInstanceOf[typings.expoFileSystem.anon.Exists]
   }
   
-  inline def IsDirectory(md5: Unit, modificationTime: Unit, size: Unit, uri: String): typings.expoFileSystem.anon.IsDirectory = {
-    val __obj = js.Dynamic.literal(exists = false, isDirectory = false, md5 = md5.asInstanceOf[js.Any], modificationTime = modificationTime.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+  inline def IsDirectory(uri: String): typings.expoFileSystem.anon.IsDirectory = {
+    val __obj = js.Dynamic.literal(exists = false, isDirectory = false, uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.expoFileSystem.anon.IsDirectory]
   }
 }

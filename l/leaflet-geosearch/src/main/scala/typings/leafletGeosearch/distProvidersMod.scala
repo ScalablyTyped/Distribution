@@ -2,6 +2,7 @@ package typings.leafletGeosearch
 
 import typings.leafletGeosearch.distProvidersAlgoliaProviderMod.default
 import typings.leafletGeosearch.distProvidersGeoApiFrProviderMod.GeoApiFrProviderOptions
+import typings.leafletGeosearch.distProvidersGeoapifyProviderMod.GeoapifyProviderOptions
 import typings.leafletGeosearch.distProvidersGoogleProviderMod.GoogleProviderOptions
 import typings.leafletGeosearch.distProvidersMapBoxProviderMod.MapBoxProviderOptions
 import typings.leafletGeosearch.distProvidersOpenStreetMapProviderMod.OpenStreetMapProviderOptions
@@ -32,6 +33,13 @@ object distProvidersMod {
   open class GeoApiFrProvider ()
     extends typings.leafletGeosearch.distProvidersGeoApiFrProviderMod.default {
     def this(options: GeoApiFrProviderOptions) = this()
+  }
+  
+  @JSImport("leaflet-geosearch/dist/providers", "GeoapifyProvider")
+  @js.native
+  open class GeoapifyProvider ()
+    extends typings.leafletGeosearch.distProvidersGeoapifyProviderMod.default {
+    def this(options: GeoapifyProviderOptions) = this()
   }
   
   @JSImport("leaflet-geosearch/dist/providers", "GeocodeEarthProvider")

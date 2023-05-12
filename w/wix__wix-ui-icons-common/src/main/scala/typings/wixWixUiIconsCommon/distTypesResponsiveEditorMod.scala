@@ -4,7 +4,11 @@ import typings.react.mod.FC
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsAcademyMod.AcademyProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsAddBoldMod.AddBoldProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsAddBoldSmallMod.AddBoldSmallProps
+import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsAddColumnLeftMod.AddColumnLeftProps
+import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsAddColumnRightMod.AddColumnRightProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsAddMod.AddProps
+import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsAddRowBottomMod.AddRowBottomProps
+import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsAddRowTopMod.AddRowTopProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsAddSmallMod.AddSmallProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsAngledArrowsMod.AngledArrowsProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsAngledArrowsSmallMod.AngledArrowsSmallProps
@@ -53,10 +57,12 @@ import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponent
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsChevronUpMod.ChevronUpProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsChevronUpSmallMod.ChevronUpSmallProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsCloneCodeMod.CloneCodeProps
+import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsCodeMod.CodeProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsColorDropDisabledMod.ColorDropDisabledProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsColumnBoldMod.ColumnBoldProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsColumnMod.ColumnProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsConfirmBoldMod.ConfirmBoldProps
+import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsConfirmMod.ConfirmProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsConfirmSmallMod.ConfirmSmallProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsContextMenuMod.ContextMenuProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsCopyMod.CopyProps
@@ -65,7 +71,9 @@ import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponent
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsDismissBoldMod.DismissBoldProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsDocumentFilledMod.DocumentFilledProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsDuplicateMod.DuplicateProps
+import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsEaseInCircMod.EaseInCircProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsEaseInCubicMod.EaseInCubicProps
+import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsEaseInOutCircMod.EaseInOutCircProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsEaseInOutCubicMod.EaseInOutCubicProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsEaseInOutQuadMod.EaseInOutQuadProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsEaseInOutQuartMod.EaseInOutQuartProps
@@ -75,6 +83,8 @@ import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponent
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsEaseInSineMod.EaseInSineProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsEaseInSmallMod.EaseInSmallProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsEaseLinearMod.EaseLinearProps
+import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsEaseOutBackMod.EaseOutBackProps
+import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsEaseOutCircMod.EaseOutCircProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsEaseOutCubicMod.EaseOutCubicProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsEaseOutQuadMod.EaseOutQuadProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsEaseOutQuartMod.EaseOutQuartProps
@@ -131,6 +141,7 @@ import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponent
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsInteractionMod.InteractionProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsInwardAngledArrowsMod.InwardAngledArrowsProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsInwardArrowsMod.InwardArrowsProps
+import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsInwardVerticalArrowsMod.InwardVerticalArrowsProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsItalicMod.ItalicProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsKeyboardMod.KeyboardProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsLayoutAlignCenterMod.LayoutAlignCenterProps
@@ -140,6 +151,7 @@ import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponent
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsLayoutAlignSpacedMod.LayoutAlignSpacedProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsLayoutSliderMod.LayoutSliderProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsLineSpacingMod.LineSpacingProps
+import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsLinkPropertiesMod.LinkPropertiesProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsLockBoldSmallMod.LockBoldSmallProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsLockSquareMod.LockSquareProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsMapPinBoldMod.MapPinBoldProps
@@ -166,6 +178,8 @@ import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponent
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsSettingsMod.SettingsProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsSlideShowVerticalMod.SlideShowVerticalProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsSocialBarMod.SocialBarProps
+import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsSplitHorizontalMod.SplitHorizontalProps
+import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsSplitVerticalMod.SplitVerticalProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsStackMod.StackProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsStartArrowMod.StartArrowProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsStopBoldSmallMod.StopBoldSmallProps
@@ -188,6 +202,7 @@ import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponent
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsTransitionMod.TransitionProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsTypographyDisabledMod.TypographyDisabledProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsUnderlineMod.UnderlineProps
+import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsUnlinkPropertiesMod.UnlinkPropertiesProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsUnlockBoldSmallMod.UnlockBoldSmallProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsUsersBoldSmallMod.UsersBoldSmallProps
 import typings.wixWixUiIconsCommon.distTypesResponsiveEditorGeneralDistComponentsVerticalArrowsMod.VerticalArrowsProps
@@ -214,6 +229,22 @@ object distTypesResponsiveEditorMod {
   @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor", "AddBoldSmall")
   @js.native
   val AddBoldSmall: FC[AddBoldSmallProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor", "AddColumnLeft")
+  @js.native
+  val AddColumnLeft: FC[AddColumnLeftProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor", "AddColumnRight")
+  @js.native
+  val AddColumnRight: FC[AddColumnRightProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor", "AddRowBottom")
+  @js.native
+  val AddRowBottom: FC[AddRowBottomProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor", "AddRowTop")
+  @js.native
+  val AddRowTop: FC[AddRowTopProps] = js.native
   
   @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor", "AddSmall")
   @js.native
@@ -407,6 +438,10 @@ object distTypesResponsiveEditorMod {
   @js.native
   val CloneCode: FC[CloneCodeProps] = js.native
   
+  @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor", "Code")
+  @js.native
+  val Code: FC[CodeProps] = js.native
+  
   @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor", "ColorDropDisabled")
   @js.native
   val ColorDropDisabled: FC[ColorDropDisabledProps] = js.native
@@ -418,6 +453,10 @@ object distTypesResponsiveEditorMod {
   @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor", "ColumnBold")
   @js.native
   val ColumnBold: FC[ColumnBoldProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor", "Confirm")
+  @js.native
+  val Confirm: FC[ConfirmProps] = js.native
   
   @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor", "ConfirmBold")
   @js.native
@@ -455,9 +494,17 @@ object distTypesResponsiveEditorMod {
   @js.native
   val Duplicate: FC[DuplicateProps] = js.native
   
+  @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor", "EaseInCirc")
+  @js.native
+  val EaseInCirc: FC[EaseInCircProps] = js.native
+  
   @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor", "EaseInCubic")
   @js.native
   val EaseInCubic: FC[EaseInCubicProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor", "EaseInOutCirc")
+  @js.native
+  val EaseInOutCirc: FC[EaseInOutCircProps] = js.native
   
   @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor", "EaseInOutCubic")
   @js.native
@@ -494,6 +541,14 @@ object distTypesResponsiveEditorMod {
   @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor", "EaseLinear")
   @js.native
   val EaseLinear: FC[EaseLinearProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor", "EaseOutBack")
+  @js.native
+  val EaseOutBack: FC[EaseOutBackProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor", "EaseOutCirc")
+  @js.native
+  val EaseOutCirc: FC[EaseOutCircProps] = js.native
   
   @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor", "EaseOutCubic")
   @js.native
@@ -715,6 +770,10 @@ object distTypesResponsiveEditorMod {
   @js.native
   val InwardArrows: FC[InwardArrowsProps] = js.native
   
+  @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor", "InwardVerticalArrows")
+  @js.native
+  val InwardVerticalArrows: FC[InwardVerticalArrowsProps] = js.native
+  
   @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor", "Italic")
   @js.native
   val Italic: FC[ItalicProps] = js.native
@@ -750,6 +809,10 @@ object distTypesResponsiveEditorMod {
   @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor", "LineSpacing")
   @js.native
   val LineSpacing: FC[LineSpacingProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor", "LinkProperties")
+  @js.native
+  val LinkProperties: FC[LinkPropertiesProps] = js.native
   
   @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor", "LockBoldSmall")
   @js.native
@@ -855,6 +918,14 @@ object distTypesResponsiveEditorMod {
   @js.native
   val SocialBar: FC[SocialBarProps] = js.native
   
+  @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor", "SplitHorizontal")
+  @js.native
+  val SplitHorizontal: FC[SplitHorizontalProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor", "SplitVertical")
+  @js.native
+  val SplitVertical: FC[SplitVerticalProps] = js.native
+  
   @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor", "Stack")
   @js.native
   val Stack: FC[StackProps] = js.native
@@ -942,6 +1013,10 @@ object distTypesResponsiveEditorMod {
   @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor", "Underline")
   @js.native
   val Underline: FC[UnderlineProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor", "UnlinkProperties")
+  @js.native
+  val UnlinkProperties: FC[UnlinkPropertiesProps] = js.native
   
   @JSImport("@wix/wix-ui-icons-common/dist/types/responsive-editor", "UnlockBoldSmall")
   @js.native

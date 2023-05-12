@@ -25,16 +25,23 @@ object libEsmComponentsHtmlTableHtmlTableMod {
        with TableHTMLAttributes[HTMLTableElement]
        with IElementRefProps[HTMLTableElement] {
     
-    /** Enables borders between rows and cells. */
+    /** Enable borders between rows and cells. */
     var bordered: js.UndefOr[Boolean] = js.undefined
     
-    /** Use small, condensed appearance. */
+    /** Use compact appearance with less padding. */
+    var compact: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Use small, condensed appearance.
+      *
+      * @deprecated use `compact` instead
+      */
     var condensed: js.UndefOr[Boolean] = js.undefined
     
-    /** Enables hover styles on row. */
+    /** Enable hover styles on rows. */
     var interactive: js.UndefOr[Boolean] = js.undefined
     
-    /** Use an alternate background color on odd rows. */
+    /** Use an alternate background color on odd-numbered rows. */
     var striped: js.UndefOr[Boolean] = js.undefined
   }
   object IHTMLTableProps {
@@ -50,6 +57,10 @@ object libEsmComponentsHtmlTableHtmlTableMod {
       inline def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
       
       inline def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
+      
+      inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      
+      inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       
       inline def setCondensed(value: Boolean): Self = StObject.set(x, "condensed", value.asInstanceOf[js.Any])
       

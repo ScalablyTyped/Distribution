@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "videojs-mobile-ui"
-version := "0.5-dt-20211202Z-859bef"
+version := "0.8-dt-20230408Z-3d90f9"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

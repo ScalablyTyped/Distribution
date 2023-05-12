@@ -17,7 +17,6 @@ object global {
     
     /**
       * Export Context
-      * @type {Context}
       */
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("page.Context")
@@ -36,7 +35,6 @@ object global {
     
     /**
       * Expose Route
-      * @type {Route}
       */
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("page.Route")

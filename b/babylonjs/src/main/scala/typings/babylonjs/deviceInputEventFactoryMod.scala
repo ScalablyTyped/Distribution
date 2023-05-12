@@ -46,6 +46,24 @@ object deviceInputEventFactoryMod {
       deviceInputSystem: IDeviceInputSystem,
       elementToAttachTo: Any
     ): IUIEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDeviceEvent")(deviceType.asInstanceOf[js.Any], deviceSlot.asInstanceOf[js.Any], inputIndex.asInstanceOf[js.Any], currentState.asInstanceOf[js.Any], deviceInputSystem.asInstanceOf[js.Any], elementToAttachTo.asInstanceOf[js.Any])).asInstanceOf[IUIEvent]
+    inline def CreateDeviceEvent(
+      deviceType: DeviceType,
+      deviceSlot: Double,
+      inputIndex: Double,
+      currentState: Nullable[Double],
+      deviceInputSystem: IDeviceInputSystem,
+      elementToAttachTo: Any,
+      pointerId: Double
+    ): IUIEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDeviceEvent")(deviceType.asInstanceOf[js.Any], deviceSlot.asInstanceOf[js.Any], inputIndex.asInstanceOf[js.Any], currentState.asInstanceOf[js.Any], deviceInputSystem.asInstanceOf[js.Any], elementToAttachTo.asInstanceOf[js.Any], pointerId.asInstanceOf[js.Any])).asInstanceOf[IUIEvent]
+    inline def CreateDeviceEvent(
+      deviceType: DeviceType,
+      deviceSlot: Double,
+      inputIndex: Double,
+      currentState: Nullable[Double],
+      deviceInputSystem: IDeviceInputSystem,
+      elementToAttachTo: Unit,
+      pointerId: Double
+    ): IUIEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDeviceEvent")(deviceType.asInstanceOf[js.Any], deviceSlot.asInstanceOf[js.Any], inputIndex.asInstanceOf[js.Any], currentState.asInstanceOf[js.Any], deviceInputSystem.asInstanceOf[js.Any], elementToAttachTo.asInstanceOf[js.Any], pointerId.asInstanceOf[js.Any])).asInstanceOf[IUIEvent]
     
     /**
       * Add parameters for non-character keys (Ctrl, Alt, Meta, Shift)

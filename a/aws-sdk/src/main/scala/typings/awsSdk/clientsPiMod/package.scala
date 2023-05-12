@@ -73,6 +73,13 @@ type MetricValuesList = js.Array[Double]
 
 type NextToken = java.lang.String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.END_TIME
+  - typings.awsSdk.awsSdkStrings.START_TIME
+  - java.lang.String
+*/
+type PeriodAlignment = _PeriodAlignment | java.lang.String
+
 type RequestString = java.lang.String
 
 type RequestStringList = js.Array[RequestString]

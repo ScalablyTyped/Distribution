@@ -1,7 +1,7 @@
 
 # Scala.js typings for cli-spinners
 
-Typings are for version 2.7.0
+Typings are for version 2.9.0
 
 ## Library description:
 Spinners for use in the terminal

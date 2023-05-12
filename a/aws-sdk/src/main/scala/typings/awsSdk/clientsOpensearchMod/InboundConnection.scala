@@ -12,6 +12,11 @@ trait InboundConnection extends StObject {
   var ConnectionId: js.UndefOr[typings.awsSdk.clientsOpensearchMod.ConnectionId] = js.undefined
   
   /**
+    * The connection mode.
+    */
+  var ConnectionMode: js.UndefOr[typings.awsSdk.clientsOpensearchMod.ConnectionMode] = js.undefined
+  
+  /**
     * The current status of the connection.
     */
   var ConnectionStatus: js.UndefOr[InboundConnectionStatus] = js.undefined
@@ -39,6 +44,10 @@ object InboundConnection {
     inline def setConnectionId(value: ConnectionId): Self = StObject.set(x, "ConnectionId", value.asInstanceOf[js.Any])
     
     inline def setConnectionIdUndefined: Self = StObject.set(x, "ConnectionId", js.undefined)
+    
+    inline def setConnectionMode(value: ConnectionMode): Self = StObject.set(x, "ConnectionMode", value.asInstanceOf[js.Any])
+    
+    inline def setConnectionModeUndefined: Self = StObject.set(x, "ConnectionMode", js.undefined)
     
     inline def setConnectionStatus(value: InboundConnectionStatus): Self = StObject.set(x, "ConnectionStatus", value.asInstanceOf[js.Any])
     

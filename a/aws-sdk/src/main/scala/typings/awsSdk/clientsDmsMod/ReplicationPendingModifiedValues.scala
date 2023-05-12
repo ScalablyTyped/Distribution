@@ -22,6 +22,11 @@ trait ReplicationPendingModifiedValues extends StObject {
   var MultiAZ: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
+    * The type of IP address protocol used by a replication instance, such as IPv4 only or Dual-stack that supports both IPv4 and IPv6 addressing. IPv6 only is not yet supported.
+    */
+  var NetworkType: js.UndefOr[String] = js.undefined
+  
+  /**
     * The compute and memory capacity of the replication instance as defined for the specified replication instance class. For more information on the settings and capacities for the available replication instance classes, see  Selecting the right DMS replication instance for your migration. 
     */
   var ReplicationInstanceClass: js.UndefOr[String] = js.undefined
@@ -47,6 +52,10 @@ object ReplicationPendingModifiedValues {
     inline def setMultiAZ(value: BooleanOptional): Self = StObject.set(x, "MultiAZ", value.asInstanceOf[js.Any])
     
     inline def setMultiAZUndefined: Self = StObject.set(x, "MultiAZ", js.undefined)
+    
+    inline def setNetworkType(value: String): Self = StObject.set(x, "NetworkType", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkTypeUndefined: Self = StObject.set(x, "NetworkType", js.undefined)
     
     inline def setReplicationInstanceClass(value: String): Self = StObject.set(x, "ReplicationInstanceClass", value.asInstanceOf[js.Any])
     

@@ -6,6 +6,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  *
+  */
 @js.native
 trait AbstractMesh
   extends StObject
@@ -48,7 +51,7 @@ trait AbstractMesh
   def _collideForSubMesh(subMesh: SubMesh, transformMatrix: Matrix, collider: Collider): AbstractMesh = js.native
   
   /** @internal */
-  var _disposePhysicsObserver: Nullable[Observer[Node]] = js.native
+  var _decalMap: Nullable[MeshUVSpaceRenderer] = js.native
   
   /** @internal */
   var _edgesRenderer: Nullable[IEdgesRenderer] = js.native
@@ -220,7 +223,7 @@ trait AbstractMesh
   
   /**
     * Gets or sets the current action manager
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions
     */
   var actionManager: Nullable[AbstractActionManager] = js.native
   
@@ -243,7 +246,7 @@ trait AbstractMesh
   def alignWithNormal(normal: Vector3, upDirection: Vector3): AbstractMesh = js.native
   
   /** Gets or sets the alpha index used to sort transparent meshes
-    * @see https://doc.babylonjs.com/resources/transparency_and_how_meshes_are_rendered#alpha-index
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/advanced/transparent_rendering#alpha-index
     */
   var alphaIndex: Double = js.native
   
@@ -256,17 +259,9 @@ trait AbstractMesh
   def applyFog: Boolean = js.native
   def applyFog_=(value: Boolean): Unit = js.native
   
-  /** Apply a physic impulse to the mesh
-    * @param force defines the force to apply
-    * @param contactPoint defines where to apply the force
-    * @returns the current mesh
-    * @see https://doc.babylonjs.com/how_to/using_the_physics_engine
-    */
-  def applyImpulse(force: Vector3, contactPoint: Vector3): AbstractMesh = js.native
-  
   /**
     * Gets or sets the baked vertex animation manager
-    * @see https://doc.babylonjs.com/divingDeeper/animation/baked_texture_animations
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/animation/baked_texture_animations
     */
   def bakedVertexAnimationManager: Nullable[IBakedVertexAnimationManager] = js.native
   def bakedVertexAnimationManager_=(value: Nullable[IBakedVertexAnimationManager]): Unit = js.native
@@ -288,7 +283,7 @@ trait AbstractMesh
   /**
     * Calculate relative position change from the point of view of behind the front of the mesh.
     * This is performed taking into account the meshes current rotation, so you do not have to care.
-    * Supports definition of mesh facing forward or backward
+    * Supports definition of mesh facing forward or backward {@link definedFacingForwardSearch | See definedFacingForwardSearch }.
     * @param amountRight defines the distance on the right axis
     * @param amountUp defines the distance on the up axis
     * @param amountForward defines the distance on the forward axis
@@ -298,7 +293,7 @@ trait AbstractMesh
   
   /**
     * Calculate relative rotation change from the point of view of behind the front of the mesh.
-    * Supports definition of mesh facing forward or backward.
+    * Supports definition of mesh facing forward or backward {@link definedFacingForwardSearch | See definedFacingForwardSearch }.
     * @param flipBack defines the flip
     * @param twirlClockwise defines the twirl
     * @param tiltRight defines the tilt
@@ -308,14 +303,14 @@ trait AbstractMesh
   
   /**
     * Gets or sets a boolean indicating that this mesh can be used in the collision engine
-    * @see https://doc.babylonjs.com/babylon101/cameras,_mesh_collisions_and_gravity
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/cameras/camera_collisions
     */
   def checkCollisions: Boolean = js.native
   def checkCollisions_=(collisionEnabled: Boolean): Unit = js.native
   
   /**
     * Gets Collider object used to compute collisions (not physics)
-    * @see https://doc.babylonjs.com/babylon101/cameras,_mesh_collisions_and_gravity
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/cameras/camera_collisions
     */
   def collider: Nullable[Collider] = js.native
   
@@ -366,7 +361,7 @@ trait AbstractMesh
     * @param maxDepth defines the maximum depth to use (no more than 2 levels by default)
     * @returns the new octree
     * @see https://www.babylonjs-playground.com/#NA4OQ#12
-    * @see https://doc.babylonjs.com/how_to/optimizing_your_scene_with_octrees
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/optimizeOctrees
     */
   def createOrUpdateSubmeshesOctree(): Octree[SubMesh] = js.native
   def createOrUpdateSubmeshesOctree(maxCapacity: Double): Octree[SubMesh] = js.native
@@ -386,6 +381,11 @@ trait AbstractMesh
   var cullingStrategy: Double = js.native
   
   /**
+    * Gets or sets the decal map for this mesh
+    */
+  var decalMap: Nullable[MeshUVSpaceRenderer] = js.native
+  
+  /**
     * Gets or sets the orientation for POV movement & rotation
     */
   var definedFacingForward: Boolean = js.native
@@ -399,7 +399,7 @@ trait AbstractMesh
   /**
     * Disables the feature FacetData and frees the related memory
     * @returns the current mesh
-    * @see https://doc.babylonjs.com/how_to/how_to_use_facetdata
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/facetData
     */
   def disableFacetData(): AbstractMesh = js.native
   
@@ -433,13 +433,13 @@ trait AbstractMesh
   
   /**
     * Gets or sets the ellipsoid used to impersonate this mesh when using collision engine (default is (0.5, 1, 0.5))
-    * @see https://doc.babylonjs.com/babylon101/cameras,_mesh_collisions_and_gravity
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/cameras/camera_collisions
     */
   var ellipsoid: Vector3 = js.native
   
   /**
     * Gets or sets the ellipsoid offset used to impersonate this mesh when using collision engine (default is (0, 0, 0))
-    * @see https://doc.babylonjs.com/babylon101/cameras,_mesh_collisions_and_gravity
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/cameras/camera_collisions
     */
   var ellipsoidOffset: Vector3 = js.native
   
@@ -474,26 +474,27 @@ trait AbstractMesh
     * The location (Vector3) where the facet depth sort must be computed from.
     * By default, the active camera position.
     * Used only when facet depth sort is enabled
-    * @see https://doc.babylonjs.com/how_to/how_to_use_facetdata#facet-depth-sort
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/facetData#facet-depth-sort
     */
   def facetDepthSortFrom: Vector3 = js.native
   def facetDepthSortFrom_=(location: Vector3): Unit = js.native
   
   /**
     * Gets the number of facets in the mesh
-    * @see https://doc.babylonjs.com/how_to/how_to_use_facetdata#what-is-a-mesh-facet
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/facetData#what-is-a-mesh-facet
     */
   def facetNb: Double = js.native
   
   /**
     * Flag to force rendering the mesh even if occluded
-    * @see https://doc.babylonjs.com/features/occlusionquery
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/occlusionQueries
     */
   var forceRenderingWhenOccluded: Boolean = js.native
   
   /**
     * Returns the mesh BoundingInfo object or creates a new one and returns if it was undefined.
     * Note that it returns a shallow bounding of the mesh (i.e. it does not include children).
+    * However, if the mesh contains thin instances, it will be expanded to include them. If you want the "raw" bounding data instead, then use `getRawBoundingInfo()`.
     * To get the full bounding of all children, call `getHierarchyBoundingVectors` instead.
     * @returns a BoundingInfo
     */
@@ -508,7 +509,7 @@ trait AbstractMesh
     * @param checkFace if true (default false), only the facet "facing" to (x,y,z) or only the ones "turning their backs", according to the parameter "facing" are returned
     * @param facing if facing and checkFace are true, only the facet "facing" to (x, y, z) are returned : positive dot (x, y, z) * facet position. If facing si false and checkFace is true, only the facet "turning their backs" to (x, y, z) are returned : negative dot (x, y, z) * facet position
     * @returns the face index if found (or null instead)
-    * @see https://doc.babylonjs.com/how_to/how_to_use_facetdata
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/facetData
     */
   def getClosestFacetAtCoordinates(x: Double, y: Double, z: Double): Nullable[Double] = js.native
   def getClosestFacetAtCoordinates(x: Double, y: Double, z: Double, projected: Unit, checkFace: Boolean): Nullable[Double] = js.native
@@ -528,7 +529,7 @@ trait AbstractMesh
     * @param checkFace if true (default false), only the facet "facing" to (x,y,z) or only the ones "turning their backs", according to the parameter "facing" are returned
     * @param facing if facing and checkFace are true, only the facet "facing" to (x, y, z) are returned : positive dot (x, y, z) * facet position. If facing si false and checkFace is true, only the facet "turning their backs" to (x, y, z) are returned : negative dot (x, y, z) * facet position
     * @returns the face index if found (or null instead)
-    * @see https://doc.babylonjs.com/how_to/how_to_use_facetdata
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/facetData
     */
   def getClosestFacetAtLocalCoordinates(x: Double, y: Double, z: Double): Nullable[Double] = js.native
   def getClosestFacetAtLocalCoordinates(x: Double, y: Double, z: Double, projected: Unit, checkFace: Boolean): Nullable[Double] = js.native
@@ -548,7 +549,7 @@ trait AbstractMesh
   /**
     * Returns the object "parameter" set with all the expected parameters for facetData computation by ComputeNormals()
     * @returns the parameters
-    * @see https://doc.babylonjs.com/how_to/how_to_use_facetdata
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/facetData
     */
   def getFacetDataParameters(): Any = js.native
   
@@ -556,14 +557,14 @@ trait AbstractMesh
     * Returns the facetLocalNormals array.
     * The normals are expressed in the mesh local spac
     * @returns an array of Vector3
-    * @see https://doc.babylonjs.com/how_to/how_to_use_facetdata
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/facetData
     */
   def getFacetLocalNormals(): js.Array[Vector3] = js.native
   
   /**
     * Returns the facetLocalPartitioning array
     * @returns an array of array of numbers
-    * @see https://doc.babylonjs.com/how_to/how_to_use_facetdata
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/facetData
     */
   def getFacetLocalPartitioning(): js.Array[js.Array[Double]] = js.native
   
@@ -571,7 +572,7 @@ trait AbstractMesh
     * Returns the facetLocalPositions array.
     * The facet positions are expressed in the mesh local space
     * @returns an array of Vector3
-    * @see https://doc.babylonjs.com/how_to/how_to_use_facetdata
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/facetData
     */
   def getFacetLocalPositions(): js.Array[Vector3] = js.native
   
@@ -580,7 +581,7 @@ trait AbstractMesh
     * This method allocates a new Vector3 per call
     * @param i defines the facet index
     * @returns a new Vector3
-    * @see https://doc.babylonjs.com/how_to/how_to_use_facetdata
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/facetData
     */
   def getFacetNormal(i: Double): Vector3 = js.native
   
@@ -589,7 +590,7 @@ trait AbstractMesh
     * @param i defines the facet index
     * @param ref defines the target vector
     * @returns the current mesh
-    * @see https://doc.babylonjs.com/how_to/how_to_use_facetdata
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/facetData
     */
   def getFacetNormalToRef(i: Double, ref: Vector3): this.type = js.native
   
@@ -598,7 +599,7 @@ trait AbstractMesh
     * This method allocates a new Vector3 per call
     * @param i defines the facet index
     * @returns a new Vector3
-    * @see https://doc.babylonjs.com/how_to/how_to_use_facetdata
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/facetData
     */
   def getFacetPosition(i: Double): Vector3 = js.native
   
@@ -607,7 +608,7 @@ trait AbstractMesh
     * @param i defines the facet index
     * @param ref defines the target vector
     * @returns the current mesh
-    * @see https://doc.babylonjs.com/how_to/how_to_use_facetdata
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/facetData
     */
   def getFacetPositionToRef(i: Double, ref: Vector3): AbstractMesh = js.native
   
@@ -617,7 +618,7 @@ trait AbstractMesh
     * @param y defines y coordinate
     * @param z defines z coordinate
     * @returns the array of facet indexes
-    * @see https://doc.babylonjs.com/how_to/how_to_use_facetdata
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/facetData
     */
   def getFacetsAtLocalCoordinates(x: Double, y: Double, z: Double): Nullable[js.Array[Double]] = js.native
   
@@ -654,7 +655,7 @@ trait AbstractMesh
   
   /**
     * Gets the current physics impostor
-    * @see https://doc.babylonjs.com/features/physics_engine
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/physics
     * @returns a physics impostor or null
     */
   def getPhysicsImpostor(): Nullable[PhysicsImpostor] = js.native
@@ -674,6 +675,12 @@ trait AbstractMesh
   def getPositionData(applySkeleton: Unit, applyMorph: Boolean): Nullable[FloatArray] = js.native
   def getPositionData(applySkeleton: Unit, applyMorph: Boolean, data: Nullable[FloatArray]): Nullable[FloatArray] = js.native
   def getPositionData(applySkeleton: Unit, applyMorph: Unit, data: Nullable[FloatArray]): Nullable[FloatArray] = js.native
+  
+  /**
+    * Returns the bounding info unnafected by instance data.
+    * @returns the bounding info of the mesh unaffected by instance data.
+    */
+  def getRawBoundingInfo(): BoundingInfo = js.native
   
   /**
     * Returns a positive integer : the total number of indices in this mesh geometry.
@@ -708,20 +715,20 @@ trait AbstractMesh
   
   /**
     * Object used to store instanced buffers defined by user
-    * @see https://doc.babylonjs.com/how_to/how_to_use_instances#custom-buffers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/copies/instances#custom-buffers
     */
   var instancedBuffers: org.scalablytyped.runtime.StringDictionary[Any] = js.native
   
   /**
     * Checks if the passed Ray intersects with the mesh
-    * @param ray defines the ray to use
+    * @param ray defines the ray to use. It should be in the mesh's LOCAL coordinate space.
     * @param fastCheck defines if fast mode (but less precise) must be used (false by default)
     * @param trianglePredicate defines an optional predicate used to select faces when a mesh intersection is detected
     * @param onlyBoundingInfo defines a boolean indicating if picking should only happen using bounding info (false by default)
     * @param worldToUse defines the world matrix to use to get the world coordinate of the intersection point
     * @param skipBoundingInfo a boolean indicating if we should skip the bounding info check
     * @returns the picking info
-    * @see https://doc.babylonjs.com/babylon101/intersect_collisions_-_mesh
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/interactions/mesh_intersect
     */
   def intersects(ray: Ray): PickingInfo = js.native
   def intersects(ray: Ray, fastCheck: Boolean): PickingInfo = js.native
@@ -937,13 +944,13 @@ trait AbstractMesh
   def isBlocked: Boolean = js.native
   
   /** Gets or sets a boolean indicating if the mesh must be considered as a ray blocker for lens flares (false by default)
-    * @see https://doc.babylonjs.com/how_to/how_to_use_lens_flares
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/environment/lenseFlare
     */
   var isBlocker: Boolean = js.native
   
   /**
     * gets a boolean indicating if facetData is enabled
-    * @see https://doc.babylonjs.com/how_to/how_to_use_facetdata#what-is-a-mesh-facet
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/facetData#what-is-a-mesh-facet
     */
   def isFacetDataEnabled: Boolean = js.native
   
@@ -959,13 +966,13 @@ trait AbstractMesh
   
   /**
     * Gets or sets whether the mesh is occluded or not, it is used also to set the initial state of the mesh to be occluded or not
-    * @see https://doc.babylonjs.com/features/occlusionquery
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/occlusionQueries
     */
   var isOccluded: Boolean = js.native
   
   /**
     * Flag to check the progress status of the query
-    * @see https://doc.babylonjs.com/features/occlusionquery
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/occlusionQueries
     */
   var isOcclusionQueryInProgress: Boolean = js.native
   
@@ -981,7 +988,7 @@ trait AbstractMesh
   
   /**
     * Gets or sets the current layer mask (default is 0x0FFFFFFF)
-    * @see https://doc.babylonjs.com/divingDeeper/cameras/layerMasksAndMultiCam
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/cameras/layerMasksAndMultiCam
     */
   def layerMask: Double = js.native
   def layerMask_=(value: Double): Unit = js.native
@@ -995,7 +1002,7 @@ trait AbstractMesh
   
   /**
     * Gets or sets the morph target manager
-    * @see https://doc.babylonjs.com/how_to/how_to_use_morphtargets
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/morphTargets
     */
   def morphTargetManager: Nullable[MorphTargetManager] = js.native
   def morphTargetManager_=(value: Nullable[MorphTargetManager]): Unit = js.native
@@ -1003,7 +1010,7 @@ trait AbstractMesh
   /**
     * Perform relative position change from the point of view of behind the front of the mesh.
     * This is performed taking into account the meshes current rotation, so you do not have to care.
-    * Supports definition of mesh facing forward or backward
+    * Supports definition of mesh facing forward or backward {@link definedFacingForwardSearch | See definedFacingForwardSearch }.
     * @param amountRight defines the distance on the right axis
     * @param amountUp defines the distance on the up axis
     * @param amountForward defines the distance on the forward axis
@@ -1013,7 +1020,7 @@ trait AbstractMesh
   
   /**
     * Move the mesh using collision engine
-    * @see https://doc.babylonjs.com/babylon101/cameras,_mesh_collisions_and_gravity
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/cameras/camera_collisions
     * @param displacement defines the requested displacement vector
     * @returns the current mesh
     */
@@ -1023,7 +1030,7 @@ trait AbstractMesh
     * Gets or sets a boolean indicating that the facets must be depth sorted on next call to `updateFacetData()`.
     * Works only for updatable meshes.
     * Doesn't work with multi-materials
-    * @see https://doc.babylonjs.com/how_to/how_to_use_facetdata#facet-depth-sort
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/facetData#facet-depth-sort
     */
   def mustDepthSortFacets: Boolean = js.native
   def mustDepthSortFacets_=(sort: Boolean): Unit = js.native
@@ -1036,14 +1043,14 @@ trait AbstractMesh
     * This property determines the type of occlusion query algorithm to run in WebGl, you can use:
     * * AbstractMesh.OCCLUSION_ALGORITHM_TYPE_ACCURATE which is mapped to GL_ANY_SAMPLES_PASSED.
     * * AbstractMesh.OCCLUSION_ALGORITHM_TYPE_CONSERVATIVE (Default Value) which is mapped to GL_ANY_SAMPLES_PASSED_CONSERVATIVE which is a false positive algorithm that is faster than GL_ANY_SAMPLES_PASSED but less accurate.
-    * @see https://doc.babylonjs.com/features/occlusionquery
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/occlusionQueries
     */
   var occlusionQueryAlgorithmType: Double = js.native
   
   /**
     * This number indicates the number of allowed retries before stop the occlusion query, this is useful if the occlusion query is taking long time before to the query result is retrieved, the query result indicates if the object is visible within the scene or not and based on that Babylon.Js engine decides to show or hide the object.
     * The default value is -1 which means don't break the query and wait till the result
-    * @see https://doc.babylonjs.com/features/occlusionquery
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/occlusionQueries
     */
   var occlusionRetryCount: Double = js.native
   
@@ -1052,7 +1059,7 @@ trait AbstractMesh
     * * OCCLUSION_TYPE_NONE (Default Value): this option means no occlusion query within the Mesh.
     * * OCCLUSION_TYPE_OPTIMISTIC: this option is means use occlusion query and if occlusionRetryCount is reached and the query is broken show the mesh.
     * * OCCLUSION_TYPE_STRICT: this option is means use occlusion query and if occlusionRetryCount is reached and the query is broken restore the last state of the mesh occlusion if the mesh was visible then show the mesh if was hidden then hide don't show.
-    * @see https://doc.babylonjs.com/features/occlusionquery
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/occlusionQueries
     */
   var occlusionType: Double = js.native
   
@@ -1097,21 +1104,21 @@ trait AbstractMesh
   /**
     * The ratio (float) to apply to the bounding box size to set to the partitioning space.
     * Ex : 1.01 (default) the partitioning space is 1% bigger than the bounding box
-    * @see https://doc.babylonjs.com/how_to/how_to_use_facetdata#tweaking-the-partitioning
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/facetData#tweaking-the-partitioning
     */
   def partitioningBBoxRatio: Double = js.native
   def partitioningBBoxRatio_=(ratio: Double): Unit = js.native
   
   /**
     * Gets or set the number (integer) of subdivisions per axis in the partitioning space
-    * @see https://doc.babylonjs.com/how_to/how_to_use_facetdata#tweaking-the-partitioning
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/facetData#tweaking-the-partitioning
     */
   def partitioningSubdivisions: Double = js.native
   def partitioningSubdivisions_=(nb: Double): Unit = js.native
   
   /**
     * Gets or sets impostor used for physic simulation
-    * @see https://doc.babylonjs.com/features/physics_engine
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/physics
     */
   var physicsImpostor: Nullable[PhysicsImpostor] = js.native
   
@@ -1123,9 +1130,13 @@ trait AbstractMesh
   def pointerOverDisableMeshTesting: Boolean = js.native
   def pointerOverDisableMeshTesting_=(disable: Boolean): Unit = js.native
   
+  /** @internal */
+  def rawBoundingInfo: Nullable[BoundingInfo] = js.native
+  def rawBoundingInfo_=(boundingInfo: Nullable[BoundingInfo]): Unit = js.native
+  
   /**
     * Gets or sets a boolean indicating that this mesh can receive realtime shadows
-    * @see https://doc.babylonjs.com/babylon101/shadows
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/lights/shadows
     */
   def receiveShadows: Boolean = js.native
   def receiveShadows_=(value: Boolean): Unit = js.native
@@ -1171,7 +1182,7 @@ trait AbstractMesh
   
   /**
     * Specifies the rendering group id for this mesh (0 by default)
-    * @see https://doc.babylonjs.com/resources/transparency_and_how_meshes_are_rendered#rendering-groups
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/advanced/transparent_rendering#rendering-groups
     */
   def renderingGroupId: Double = js.native
   def renderingGroupId_=(value: Double): Unit = js.native
@@ -1185,7 +1196,7 @@ trait AbstractMesh
   
   /**
     * Perform relative rotation change from the point of view of behind the front of the mesh.
-    * Supports definition of mesh facing forward or backward
+    * Supports definition of mesh facing forward or backward {@link definedFacingForwardSearch | See definedFacingForwardSearch }.
     * @param flipBack defines the flip
     * @param twirlClockwise defines the twirl
     * @param tiltRight defines the tilt
@@ -1258,13 +1269,13 @@ trait AbstractMesh
   def skeleton: Nullable[Skeleton] = js.native
   /**
     * Gets or sets a skeleton to apply skinning transformations
-    * @see https://doc.babylonjs.com/how_to/how_to_use_bones_and_skeletons
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/bonesSkeletons
     */
   def skeleton_=(value: Nullable[Skeleton]): Unit = js.native
   
   /**
     * Gets or sets the list of subMeshes
-    * @see https://doc.babylonjs.com/how_to/multi_materials
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/multiMaterials
     */
   var subMeshes: js.Array[SubMesh] = js.native
   
@@ -1293,7 +1304,7 @@ trait AbstractMesh
     * This method can be called within the render loop.
     * You don't need to call this method by yourself in the render loop when you update/morph a mesh with the methods CreateXXX() as they automatically manage this computation
     * @returns the current mesh
-    * @see https://doc.babylonjs.com/how_to/how_to_use_facetdata
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/facetData
     */
   def updateFacetData(): AbstractMesh = js.native
   

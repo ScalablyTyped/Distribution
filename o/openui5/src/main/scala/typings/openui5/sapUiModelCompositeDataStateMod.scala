@@ -84,6 +84,8 @@ object sapUiModelCompositeDataStateMod {
     extends typings.openui5.sapUiModelDataStateMod.default {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns an array of values for the given property in the inner datastates.
       *
       * @returns The array of property values in the inner datastates

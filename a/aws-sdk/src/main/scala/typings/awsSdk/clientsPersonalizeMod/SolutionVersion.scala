@@ -32,6 +32,11 @@ trait SolutionVersion extends StObject {
   var lastUpdatedDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
+    * The name of the solution version.
+    */
+  var name: js.UndefOr[Name] = js.undefined
+  
+  /**
     * When true, Amazon Personalize searches for the most optimal recipe according to the solution configuration. When false (the default), Amazon Personalize uses recipeArn.
     */
   var performAutoML: js.UndefOr[PerformAutoML] = js.undefined
@@ -110,6 +115,10 @@ object SolutionVersion {
     inline def setLastUpdatedDateTime(value: js.Date): Self = StObject.set(x, "lastUpdatedDateTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "lastUpdatedDateTime", js.undefined)
+    
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setPerformAutoML(value: PerformAutoML): Self = StObject.set(x, "performAutoML", value.asInstanceOf[js.Any])
     

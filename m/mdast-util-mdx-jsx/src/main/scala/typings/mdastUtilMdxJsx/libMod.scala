@@ -1,10 +1,10 @@
 package typings.mdastUtilMdxJsx
 
-import typings.mdastUtilFromMarkdown.mod.Extension
-import typings.mdastUtilFromMarkdown.mod.Handle
+import typings.mdastUtilFromMarkdown.libMod.Extension
+import typings.mdastUtilFromMarkdown.libMod.Handle
 import typings.mdastUtilMdxJsx.mdastUtilMdxJsxStrings.Quotationmark
-import typings.mdastUtilToMarkdown.mod.Map
-import typings.mdastUtilToMarkdown.mod.Options
+import typings.mdastUtilToMarkdown.libTypesMod.Map
+import typings.mdastUtilToMarkdown.libTypesMod.Options
 import typings.micromarkUtilTypes.mod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -37,9 +37,9 @@ object libMod {
   
   type MdxJsxTextElement = typings.mdastUtilMdxJsx.libComplexTypesMod.MdxJsxTextElement
   
-  type OnEnterError = typings.mdastUtilFromMarkdown.mod.OnEnterError
+  type OnEnterError = typings.mdastUtilFromMarkdown.libMod.OnEnterError
   
-  type OnExitError = typings.mdastUtilFromMarkdown.mod.OnExitError
+  type OnExitError = typings.mdastUtilFromMarkdown.libMod.OnExitError
   
   type Parent = typings.mdast.mod.Parent
   
@@ -93,7 +93,7 @@ object libMod {
   
   type ToMarkdownExtension = Options
   
-  type ToMarkdownHandle = typings.mdastUtilToMarkdown.mod.Handle
+  type ToMarkdownHandle = typings.mdastUtilToMarkdown.libTypesMod.Handle
   
   type ToMarkdownMap = Map
   
@@ -153,5 +153,5 @@ object libMod {
     }
   }
   
-  type Token = typings.mdastUtilFromMarkdown.mod.Token
+  type Token = typings.mdastUtilFromMarkdown.libMod.Token
 }

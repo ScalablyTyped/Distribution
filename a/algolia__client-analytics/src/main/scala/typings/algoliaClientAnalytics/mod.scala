@@ -339,6 +339,18 @@ object mod {
   trait GetABTestsOptions extends StObject {
     
     /**
+      *  Filters the returned ab tests by any indices starting with the
+      *  provided prefix that are assigned to either variant of an ab test.
+      */
+    val indexPrefix: js.UndefOr[String] = js.undefined
+    
+    /**
+      *  Filters the returned ab tests by any indices ending with the
+      *  provided suffix that are assigned to either variant of an ab test.
+      */
+    val indexSuffix: js.UndefOr[String] = js.undefined
+    
+    /**
       *  The limit of the number of ab tests returned.
       */
     val limit: js.UndefOr[Double] = js.undefined
@@ -357,6 +369,14 @@ object mod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: GetABTestsOptions] (val x: Self) extends AnyVal {
+      
+      inline def setIndexPrefix(value: String): Self = StObject.set(x, "indexPrefix", value.asInstanceOf[js.Any])
+      
+      inline def setIndexPrefixUndefined: Self = StObject.set(x, "indexPrefix", js.undefined)
+      
+      inline def setIndexSuffix(value: String): Self = StObject.set(x, "indexSuffix", value.asInstanceOf[js.Any])
+      
+      inline def setIndexSuffixUndefined: Self = StObject.set(x, "indexSuffix", js.undefined)
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       

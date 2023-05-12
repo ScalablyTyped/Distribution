@@ -1,6 +1,7 @@
 package typings.sentryBrowser
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.sentryBrowser.anon.Dsn
 import typings.sentryBrowser.anon.PartialBreadcrumbsOptions
 import typings.sentryBrowser.anon.PartialLinkedErrorsOption
 import typings.sentryBrowser.anon.PartialTryCatchOptions
@@ -8,6 +9,7 @@ import typings.sentryBrowser.typesClientMod.BrowserClientOptions
 import typings.sentryBrowser.typesClientMod.BrowserOptions
 import typings.sentryBrowser.typesHelpersMod.ReportDialogOptions
 import typings.sentryBrowser.typesIntegrationsGlobalhandlersMod.GlobalHandlersIntegrations
+import typings.sentryBrowser.typesProfilingJsSelfProfilingMod.global.Window
 import typings.sentryBrowser.typesTransportsTypesMod.BrowserTransportOptions
 import typings.sentryBrowser.typesTransportsUtilsMod.FetchImpl
 import typings.sentryCore.anon.FnCall
@@ -22,6 +24,7 @@ import typings.sentryCore.anon.PartialInboundFiltersOpti
 import typings.sentryCore.typesHubMod.Carrier
 import typings.sentryTypes.typesBreadcrumbMod.Breadcrumb
 import typings.sentryTypes.typesClientMod.Client
+import typings.sentryTypes.typesEnvelopeMod.EventEnvelope
 import typings.sentryTypes.typesEventMod.Event
 import typings.sentryTypes.typesEventMod.EventHint
 import typings.sentryTypes.typesEventprocessorMod.EventProcessor
@@ -39,13 +42,14 @@ import typings.sentryTypes.typesTransactionMod.TransactionContext
 import typings.sentryTypes.typesTransportMod.BaseTransportOptions
 import typings.sentryTypes.typesTransportMod.InternalBaseTransportOptions
 import typings.sentryTypes.typesTransportMod.Transport
+import typings.sentryTypes.typesTransportMod.TransportMakeRequestResponse
 import typings.sentryTypes.typesTransportMod.TransportRequestExecutor
 import typings.sentryTypes.typesUserMod.User
+import typings.sentryTypes.typesUserMod.UserFeedback
 import typings.sentryUtils.typesPromisebufferMod.PromiseBuffer
 import typings.sentryUtils.typesWorldwideMod.InternalGlobal
 import typings.std.PromiseLike
 import typings.std.ReturnType
-import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -250,7 +254,7 @@ object typesExportsMod {
   
   @JSImport("@sentry/browser/types/exports", "SDK_VERSION")
   @js.native
-  val SDK_VERSION: /* "7.19.0" */ String = js.native
+  val SDK_VERSION: /* "7.51.2" */ String = js.native
   
   @JSImport("@sentry/browser/types/exports", "Scope")
   @js.native
@@ -330,6 +334,8 @@ object typesExportsMod {
   inline def captureMessage(message: String, captureContext: Severity): ReturnType[FnCallMessageLevelHint] = (^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any], captureContext.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCallMessageLevelHint]]
   inline def captureMessage(message: String, captureContext: SeverityLevel): ReturnType[FnCallMessageLevelHint] = (^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any], captureContext.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCallMessageLevelHint]]
   
+  inline def captureUserFeedback(feedback: UserFeedback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("captureUserFeedback")(feedback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   @JSImport("@sentry/browser/types/exports", "chromeStackLineParser")
   @js.native
   val chromeStackLineParser: StackLineParser = js.native
@@ -343,8 +349,10 @@ object typesExportsMod {
   inline def createTransport(
     options: InternalBaseTransportOptions,
     makeRequest: TransportRequestExecutor,
-    buffer: PromiseBuffer[Unit]
+    buffer: PromiseBuffer[Unit | TransportMakeRequestResponse]
   ): Transport = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(options.asInstanceOf[js.Any], makeRequest.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Transport]
+  
+  inline def createUserFeedbackEnvelope(feedback: UserFeedback, param1: Dsn): EventEnvelope = (^.asInstanceOf[js.Dynamic].applyDynamic("createUserFeedbackEnvelope")(feedback.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[EventEnvelope]
   
   @JSImport("@sentry/browser/types/exports", "defaultIntegrations")
   @js.native
@@ -359,6 +367,42 @@ object typesExportsMod {
   @JSImport("@sentry/browser/types/exports", "defaultStackParser")
   @js.native
   val defaultStackParser: StackParser = js.native
+  
+  inline def eventFromException(stackParser: StackParser, exception: Any): PromiseLike[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromException")(stackParser.asInstanceOf[js.Any], exception.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event]]
+  inline def eventFromException(stackParser: StackParser, exception: Any, hint: Unit, attachStacktrace: Boolean): PromiseLike[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromException")(stackParser.asInstanceOf[js.Any], exception.asInstanceOf[js.Any], hint.asInstanceOf[js.Any], attachStacktrace.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event]]
+  inline def eventFromException(stackParser: StackParser, exception: Any, hint: EventHint): PromiseLike[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromException")(stackParser.asInstanceOf[js.Any], exception.asInstanceOf[js.Any], hint.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event]]
+  inline def eventFromException(stackParser: StackParser, exception: Any, hint: EventHint, attachStacktrace: Boolean): PromiseLike[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromException")(stackParser.asInstanceOf[js.Any], exception.asInstanceOf[js.Any], hint.asInstanceOf[js.Any], attachStacktrace.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event]]
+  
+  inline def eventFromMessage(stackParser: StackParser, message: String): PromiseLike[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(stackParser.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event]]
+  inline def eventFromMessage(stackParser: StackParser, message: String, level: Unit, hint: Unit, attachStacktrace: Boolean): PromiseLike[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(stackParser.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any], hint.asInstanceOf[js.Any], attachStacktrace.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event]]
+  inline def eventFromMessage(stackParser: StackParser, message: String, level: Unit, hint: EventHint): PromiseLike[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(stackParser.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any], hint.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event]]
+  inline def eventFromMessage(stackParser: StackParser, message: String, level: Unit, hint: EventHint, attachStacktrace: Boolean): PromiseLike[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(stackParser.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any], hint.asInstanceOf[js.Any], attachStacktrace.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event]]
+  inline def eventFromMessage(stackParser: StackParser, message: String, level: Severity): PromiseLike[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(stackParser.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event]]
+  inline def eventFromMessage(stackParser: StackParser, message: String, level: SeverityLevel): PromiseLike[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(stackParser.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event]]
+  inline def eventFromMessage(
+    stackParser: StackParser,
+    message: String,
+    level: SeverityLevel,
+    hint: Unit,
+    attachStacktrace: Boolean
+  ): PromiseLike[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(stackParser.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any], hint.asInstanceOf[js.Any], attachStacktrace.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event]]
+  inline def eventFromMessage(stackParser: StackParser, message: String, level: SeverityLevel, hint: EventHint): PromiseLike[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(stackParser.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any], hint.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event]]
+  inline def eventFromMessage(
+    stackParser: StackParser,
+    message: String,
+    level: SeverityLevel,
+    hint: EventHint,
+    attachStacktrace: Boolean
+  ): PromiseLike[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(stackParser.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any], hint.asInstanceOf[js.Any], attachStacktrace.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event]]
+  inline def eventFromMessage(stackParser: StackParser, message: String, level: Severity, hint: Unit, attachStacktrace: Boolean): PromiseLike[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(stackParser.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any], hint.asInstanceOf[js.Any], attachStacktrace.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event]]
+  inline def eventFromMessage(stackParser: StackParser, message: String, level: Severity, hint: EventHint): PromiseLike[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(stackParser.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any], hint.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event]]
+  inline def eventFromMessage(
+    stackParser: StackParser,
+    message: String,
+    level: Severity,
+    hint: EventHint,
+    attachStacktrace: Boolean
+  ): PromiseLike[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(stackParser.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any], hint.asInstanceOf[js.Any], attachStacktrace.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event]]
   
   inline def flush(): PromiseLike[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[PromiseLike[Boolean]]
   inline def flush(timeout: Double): PromiseLike[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")(timeout.asInstanceOf[js.Any]).asInstanceOf[PromiseLike[Boolean]]

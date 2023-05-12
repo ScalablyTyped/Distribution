@@ -16,5 +16,5 @@ object libHtmlFormatImageTagMod {
   @js.native
   val ^ : js.Any = js.native
   
-  type Mail = typings.nginstackEngine.libMailMailMod.^
+  type Email = typings.nginstackEngine.libEmailEmailMod.^
 }

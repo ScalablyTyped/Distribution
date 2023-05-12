@@ -6,7 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Hunk extends StObject {
   
-  var linedelimiters: js.Array[String]
+  // Line Delimiters is only returned by parsePatch()
+  var linedelimiters: js.UndefOr[js.Array[String]] = js.undefined
   
   var lines: js.Array[String]
   
@@ -20,15 +21,8 @@ trait Hunk extends StObject {
 }
 object Hunk {
   
-  inline def apply(
-    linedelimiters: js.Array[String],
-    lines: js.Array[String],
-    newLines: Double,
-    newStart: Double,
-    oldLines: Double,
-    oldStart: Double
-  ): Hunk = {
-    val __obj = js.Dynamic.literal(linedelimiters = linedelimiters.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any], newLines = newLines.asInstanceOf[js.Any], newStart = newStart.asInstanceOf[js.Any], oldLines = oldLines.asInstanceOf[js.Any], oldStart = oldStart.asInstanceOf[js.Any])
+  inline def apply(lines: js.Array[String], newLines: Double, newStart: Double, oldLines: Double, oldStart: Double): Hunk = {
+    val __obj = js.Dynamic.literal(lines = lines.asInstanceOf[js.Any], newLines = newLines.asInstanceOf[js.Any], newStart = newStart.asInstanceOf[js.Any], oldLines = oldLines.asInstanceOf[js.Any], oldStart = oldStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hunk]
   }
   
@@ -36,6 +30,8 @@ object Hunk {
   implicit open class MutableBuilder[Self <: Hunk] (val x: Self) extends AnyVal {
     
     inline def setLinedelimiters(value: js.Array[String]): Self = StObject.set(x, "linedelimiters", value.asInstanceOf[js.Any])
+    
+    inline def setLinedelimitersUndefined: Self = StObject.set(x, "linedelimiters", js.undefined)
     
     inline def setLinedelimitersVarargs(value: String*): Self = StObject.set(x, "linedelimiters", js.Array(value*))
     

@@ -10,9 +10,11 @@ trait SdkConfiguration extends StObject {
   
   var device_intelligence: js.UndefOr[DeviceIntelligence] = js.undefined
   
-  var document_capture: DocumentCapture
+  var document_capture: js.UndefOr[DocumentCapture] = js.undefined
   
   var experimental_features: js.UndefOr[ExperimentalFeatures] = js.undefined
+  
+  var motion_capture: js.UndefOr[MotionCapture] = js.undefined
   
   var sdk_features: js.UndefOr[SdkFeatures] = js.undefined
   
@@ -20,8 +22,8 @@ trait SdkConfiguration extends StObject {
 }
 object SdkConfiguration {
   
-  inline def apply(document_capture: DocumentCapture): SdkConfiguration = {
-    val __obj = js.Dynamic.literal(document_capture = document_capture.asInstanceOf[js.Any])
+  inline def apply(): SdkConfiguration = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SdkConfiguration]
   }
   
@@ -38,9 +40,15 @@ object SdkConfiguration {
     
     inline def setDocument_capture(value: DocumentCapture): Self = StObject.set(x, "document_capture", value.asInstanceOf[js.Any])
     
+    inline def setDocument_captureUndefined: Self = StObject.set(x, "document_capture", js.undefined)
+    
     inline def setExperimental_features(value: ExperimentalFeatures): Self = StObject.set(x, "experimental_features", value.asInstanceOf[js.Any])
     
     inline def setExperimental_featuresUndefined: Self = StObject.set(x, "experimental_features", js.undefined)
+    
+    inline def setMotion_capture(value: MotionCapture): Self = StObject.set(x, "motion_capture", value.asInstanceOf[js.Any])
+    
+    inline def setMotion_captureUndefined: Self = StObject.set(x, "motion_capture", js.undefined)
     
     inline def setSdk_features(value: SdkFeatures): Self = StObject.set(x, "sdk_features", value.asInstanceOf[js.Any])
     

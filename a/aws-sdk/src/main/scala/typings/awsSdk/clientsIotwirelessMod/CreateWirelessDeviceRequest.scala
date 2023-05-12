@@ -32,6 +32,16 @@ trait CreateWirelessDeviceRequest extends StObject {
   var Name: js.UndefOr[WirelessDeviceName] = js.undefined
   
   /**
+    * FPort values for the GNSS, stream, and ClockSync functions of the positioning information.
+    */
+  var Positioning: js.UndefOr[PositioningConfigStatus] = js.undefined
+  
+  /**
+    * The device configuration information to use to create the Sidewalk device.
+    */
+  var Sidewalk: js.UndefOr[SidewalkCreateWirelessDevice] = js.undefined
+  
+  /**
     * The tags to attach to the new wireless device. Tags are metadata that you can use to manage a resource.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
@@ -68,6 +78,14 @@ object CreateWirelessDeviceRequest {
     inline def setName(value: WirelessDeviceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    
+    inline def setPositioning(value: PositioningConfigStatus): Self = StObject.set(x, "Positioning", value.asInstanceOf[js.Any])
+    
+    inline def setPositioningUndefined: Self = StObject.set(x, "Positioning", js.undefined)
+    
+    inline def setSidewalk(value: SidewalkCreateWirelessDevice): Self = StObject.set(x, "Sidewalk", value.asInstanceOf[js.Any])
+    
+    inline def setSidewalkUndefined: Self = StObject.set(x, "Sidewalk", js.undefined)
     
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

@@ -1,9 +1,9 @@
 package typings.hapiServerSession
 
 import org.scalablytyped.runtime.Shortcut
-import typings.hapiHapi.mod.CachePolicyOptions
-import typings.hapiHapi.mod.Plugin
-import typings.hapiHapi.mod.ServerStateCookieOptions
+import typings.hapiHapi.libTypesPluginMod.Plugin
+import typings.hapiHapi.libTypesServerCacheMod.CachePolicyOptions
+import typings.hapiHapi.libTypesServerStateMod.ServerStateCookieOptions
 import typings.node.cryptoMod.BinaryLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,11 +13,11 @@ object mod extends Shortcut {
   
   @JSImport("hapi-server-session", JSImport.Default)
   @js.native
-  val default: Plugin[Options] = js.native
+  val default: Plugin[Options, Unit] = js.native
   
   @JSImport("hapi-server-session", "plugin")
   @js.native
-  val plugin: Plugin[Options] = js.native
+  val plugin: Plugin[Options, Unit] = js.native
   
   trait Options extends StObject {
     
@@ -83,10 +83,10 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = Plugin[Options]
+  type _To = Plugin[Options, Unit]
   
   /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: Plugin[Options] = default
+  override def _to: Plugin[Options, Unit] = default
   
   /* augmented module */
   object hapiHapiAugmentingMod {

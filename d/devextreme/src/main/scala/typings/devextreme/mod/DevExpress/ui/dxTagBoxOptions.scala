@@ -6,6 +6,8 @@ import typings.devextreme.mod.DevExpress.common.ApplyValueMode
 import typings.devextreme.mod.DevExpress.common.EditorStyle
 import typings.devextreme.mod.DevExpress.common.LabelMode
 import typings.devextreme.mod.DevExpress.common.MaskMode
+import typings.devextreme.mod.DevExpress.common.Mode
+import typings.devextreme.mod.DevExpress.common.Position
 import typings.devextreme.mod.DevExpress.common.SelectAllMode
 import typings.devextreme.mod.DevExpress.common.SimplifiedSearchMode
 import typings.devextreme.mod.DevExpress.common.ValidationMessageMode
@@ -57,6 +59,8 @@ trait dxTagBoxOptions extends StObject {
   var bindingOptions: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var buttons: js.UndefOr[js.Array[DropDownPredefinedButton | dxTextEditorButton]] = js.undefined
+  
+  var customItemCreateEvent: js.UndefOr[String] = js.undefined
   
   var dataSource: js.UndefOr[(DataSourceLike[CollectionWidgetItem | Any, Any]) | Null] = js.undefined
   
@@ -309,6 +313,8 @@ trait dxTagBoxOptions extends StObject {
   
   var validationMessageMode: js.UndefOr[ValidationMessageMode] = js.undefined
   
+  var validationMessagePosition: js.UndefOr[Position | Mode] = js.undefined
+  
   var validationStatus: js.UndefOr[ValidationStatus] = js.undefined
   
   /**
@@ -361,6 +367,10 @@ object dxTagBoxOptions {
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
     inline def setButtonsVarargs(value: (DropDownPredefinedButton | dxTextEditorButton)*): Self = StObject.set(x, "buttons", js.Array(value*))
+    
+    inline def setCustomItemCreateEvent(value: String): Self = StObject.set(x, "customItemCreateEvent", value.asInstanceOf[js.Any])
+    
+    inline def setCustomItemCreateEventUndefined: Self = StObject.set(x, "customItemCreateEvent", js.undefined)
     
     inline def setDataSource(value: DataSourceLike[CollectionWidgetItem | Any, Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
@@ -773,6 +783,10 @@ object dxTagBoxOptions {
     inline def setValidationMessageMode(value: ValidationMessageMode): Self = StObject.set(x, "validationMessageMode", value.asInstanceOf[js.Any])
     
     inline def setValidationMessageModeUndefined: Self = StObject.set(x, "validationMessageMode", js.undefined)
+    
+    inline def setValidationMessagePosition(value: Position | Mode): Self = StObject.set(x, "validationMessagePosition", value.asInstanceOf[js.Any])
+    
+    inline def setValidationMessagePositionUndefined: Self = StObject.set(x, "validationMessagePosition", js.undefined)
     
     inline def setValidationStatus(value: ValidationStatus): Self = StObject.set(x, "validationStatus", value.asInstanceOf[js.Any])
     

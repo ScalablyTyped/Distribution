@@ -19,6 +19,10 @@ open class FoldingRangeKind protected () extends StObject {
 /* static members */
 object FoldingRangeKind {
   
+  @JSImport("monaco-editor", "languages.FoldingRangeKind")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Kind for folding range representing a comment. The value of the kind is 'comment'.
     */
@@ -40,4 +44,11 @@ object FoldingRangeKind {
   @JSImport("monaco-editor", "languages.FoldingRangeKind.Region")
   @js.native
   val Region: FoldingRangeKind = js.native
+  
+  /**
+    * Returns a {@link FoldingRangeKind} for the given value.
+    *
+    * @param value of the kind.
+    */
+  inline def fromValue(value: String): FoldingRangeKind = ^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(value.asInstanceOf[js.Any]).asInstanceOf[FoldingRangeKind]
 }

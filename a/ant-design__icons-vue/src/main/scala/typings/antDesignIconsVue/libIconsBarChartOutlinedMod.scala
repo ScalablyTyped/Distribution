@@ -16,7 +16,7 @@ object libIconsBarChartOutlinedMod extends Shortcut {
   @js.native
   trait BarChartOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_BarChartOutlinedIconType: String = js.native

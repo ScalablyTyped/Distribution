@@ -1,7 +1,7 @@
 package typings.babylonjs
 
-import typings.babylonjs.anon.PartialRenderTargetCreati
 import typings.babylonjs.enginesRenderTargetWrapperMod.RenderTargetWrapper
+import typings.babylonjs.materialsTexturesTextureCreationOptionsMod.RenderTargetCreationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +21,7 @@ object enginesExtensionsEngineDotrenderTargetCubeMod {
         * @returns a new render target cube wrapper
         */
       def createRenderTargetCubeTexture(size: Double): RenderTargetWrapper = js.native
-      def createRenderTargetCubeTexture(size: Double, options: PartialRenderTargetCreati): RenderTargetWrapper = js.native
+      def createRenderTargetCubeTexture(size: Double, options: RenderTargetCreationOptions): RenderTargetWrapper = js.native
     }
   }
 }

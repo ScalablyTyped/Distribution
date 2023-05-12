@@ -44,7 +44,7 @@ object distSrcApiMod {
       * a `CID` otherwise returns `null`. If `value` is instanceof `CID`
       * it will return value back. If `value` is not instance of this CID
       * class, but is compatible CID it will return new instance of this
-      * `CID` class. Otherwise returs null.
+      * `CID` class. Otherwise returns null.
       *
       * This allows two different incompatible versions of CID library to
       * co-exist and interop as long as binary interface is compatible.
@@ -182,6 +182,8 @@ object distSrcApiMod {
     inline def parse[Prefix /* <: String */, Data_6 /* <: Any */, Code_2 /* <: Double */, Alg_6 /* <: Double */, Ver_1 /* <: Version */](source: ToString[Link[Data_6, Code_2, Alg_6, Ver_1], Prefix], base: MultibaseDecoder[Prefix]): typings.multiformats.distTypesSrcCidMod.CID[Data_6, Code_2, Alg_6, Ver_1] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[typings.multiformats.distTypesSrcCidMod.CID[Data_6, Code_2, Alg_6, Ver_1]]
   }
   
+  type AwaitIterable[T] = js.Iterable[T] | AsyncIterable[T]
+  
   trait Block extends StObject {
     
     var bytes: js.typedarray.Uint8Array
@@ -204,6 +206,41 @@ object distSrcApiMod {
       inline def setBytes(value: js.typedarray.Uint8Array): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
       
       inline def setCid(value: typings.multiformats.cidMod.CID[Any, Double, Double, Version]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait BlockBufferReader extends StObject {
+    
+    def blocks(): js.Iterable[Block]
+    
+    def cids(): js.Iterable[typings.multiformats.cidMod.CID[Any, Double, Double, Version]]
+    
+    def get(key: typings.multiformats.cidMod.CID[Any, Double, Double, Version]): js.UndefOr[Block]
+    
+    def has(key: typings.multiformats.cidMod.CID[Any, Double, Double, Version]): Boolean
+  }
+  object BlockBufferReader {
+    
+    inline def apply(
+      blocks: () => js.Iterable[Block],
+      cids: () => js.Iterable[typings.multiformats.cidMod.CID[Any, Double, Double, Version]],
+      get: typings.multiformats.cidMod.CID[Any, Double, Double, Version] => js.UndefOr[Block],
+      has: typings.multiformats.cidMod.CID[Any, Double, Double, Version] => Boolean
+    ): BlockBufferReader = {
+      val __obj = js.Dynamic.literal(blocks = js.Any.fromFunction0(blocks), cids = js.Any.fromFunction0(cids), get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has))
+      __obj.asInstanceOf[BlockBufferReader]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockBufferReader] (val x: Self) extends AnyVal {
+      
+      inline def setBlocks(value: () => js.Iterable[Block]): Self = StObject.set(x, "blocks", js.Any.fromFunction0(value))
+      
+      inline def setCids(value: () => js.Iterable[typings.multiformats.cidMod.CID[Any, Double, Double, Version]]): Self = StObject.set(x, "cids", js.Any.fromFunction0(value))
+      
+      inline def setGet(value: typings.multiformats.cidMod.CID[Any, Double, Double, Version] => js.UndefOr[Block]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      
+      inline def setHas(value: typings.multiformats.cidMod.CID[Any, Double, Double, Version] => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
     }
   }
   
@@ -330,6 +367,25 @@ object distSrcApiMod {
   
   type CIDIterator = AsyncIterable[typings.multiformats.cidMod.CID[Any, Double, Double, Version]]
   
+  trait CarBufferReader
+    extends StObject
+       with BlockBufferReader
+       with RootsBufferReader
+  object CarBufferReader {
+    
+    inline def apply(
+      blocks: () => js.Iterable[Block],
+      cids: () => js.Iterable[typings.multiformats.cidMod.CID[Any, Double, Double, Version]],
+      get: typings.multiformats.cidMod.CID[Any, Double, Double, Version] => js.UndefOr[Block],
+      getRoots: () => js.Array[typings.multiformats.cidMod.CID[Any, Double, Double, Version]],
+      has: typings.multiformats.cidMod.CID[Any, Double, Double, Version] => Boolean,
+      version: Double
+    ): CarBufferReader = {
+      val __obj = js.Dynamic.literal(blocks = js.Any.fromFunction0(blocks), cids = js.Any.fromFunction0(cids), get = js.Any.fromFunction1(get), getRoots = js.Any.fromFunction0(getRoots), has = js.Any.fromFunction1(has), version = version.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CarBufferReader]
+    }
+  }
+  
   @js.native
   trait CarBufferWriter extends StObject {
     
@@ -398,6 +454,31 @@ object distSrcApiMod {
     ): CarReader = {
       val __obj = js.Dynamic.literal(blocks = js.Any.fromFunction0(blocks), cids = js.Any.fromFunction0(cids), get = js.Any.fromFunction1(get), getRoots = js.Any.fromFunction0(getRoots), has = js.Any.fromFunction1(has), version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[CarReader]
+    }
+  }
+  
+  trait RootsBufferReader extends StObject {
+    
+    def getRoots(): js.Array[typings.multiformats.cidMod.CID[Any, Double, Double, Version]]
+    
+    var version: Double
+  }
+  object RootsBufferReader {
+    
+    inline def apply(
+      getRoots: () => js.Array[typings.multiformats.cidMod.CID[Any, Double, Double, Version]],
+      version: Double
+    ): RootsBufferReader = {
+      val __obj = js.Dynamic.literal(getRoots = js.Any.fromFunction0(getRoots), version = version.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RootsBufferReader]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RootsBufferReader] (val x: Self) extends AnyVal {
+      
+      inline def setGetRoots(value: () => js.Array[typings.multiformats.cidMod.CID[Any, Double, Double, Version]]): Self = StObject.set(x, "getRoots", js.Any.fromFunction0(value))
+      
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   

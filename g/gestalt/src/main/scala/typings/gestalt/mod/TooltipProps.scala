@@ -1,6 +1,5 @@
 package typings.gestalt.mod
 
-import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,13 +8,13 @@ trait TooltipProps extends StObject {
   
   var accessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var children: ReactNode
+  var children: Node
   
   var idealDirection: js.UndefOr[FourDirections] = js.undefined
   
   var `inline`: js.UndefOr[Boolean] = js.undefined
   
-  var link: js.UndefOr[ReactNode] = js.undefined
+  var link: js.UndefOr[Node] = js.undefined
   
   var text: String
   
@@ -35,7 +34,7 @@ object TooltipProps {
     
     inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
-    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Node): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
@@ -47,7 +46,7 @@ object TooltipProps {
     
     inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
     
-    inline def setLink(value: ReactNode): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: Node): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     

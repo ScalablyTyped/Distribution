@@ -15,11 +15,13 @@ trait GPUSupportedLimits extends StObject {
   
   val maxBindGroups: Double
   
+  val maxBindGroupsPlusVertexBuffers: Double
+  
   val maxBindingsPerBindGroup: Double
   
   val maxBufferSize: Double
   
-  val maxColorAttachmentBytesPerPixel: Double
+  val maxColorAttachmentBytesPerSample: Double
   
   val maxColorAttachments: Double
   
@@ -79,9 +81,10 @@ object GPUSupportedLimits {
   
   inline def apply(
     maxBindGroups: Double,
+    maxBindGroupsPlusVertexBuffers: Double,
     maxBindingsPerBindGroup: Double,
     maxBufferSize: Double,
-    maxColorAttachmentBytesPerPixel: Double,
+    maxColorAttachmentBytesPerSample: Double,
     maxColorAttachments: Double,
     maxComputeInvocationsPerWorkgroup: Double,
     maxComputeWorkgroupSizeX: Double,
@@ -110,7 +113,7 @@ object GPUSupportedLimits {
     minStorageBufferOffsetAlignment: Double,
     minUniformBufferOffsetAlignment: Double
   ): GPUSupportedLimits = {
-    val __obj = js.Dynamic.literal(__brand = "GPUSupportedLimits", maxBindGroups = maxBindGroups.asInstanceOf[js.Any], maxBindingsPerBindGroup = maxBindingsPerBindGroup.asInstanceOf[js.Any], maxBufferSize = maxBufferSize.asInstanceOf[js.Any], maxColorAttachmentBytesPerPixel = maxColorAttachmentBytesPerPixel.asInstanceOf[js.Any], maxColorAttachments = maxColorAttachments.asInstanceOf[js.Any], maxComputeInvocationsPerWorkgroup = maxComputeInvocationsPerWorkgroup.asInstanceOf[js.Any], maxComputeWorkgroupSizeX = maxComputeWorkgroupSizeX.asInstanceOf[js.Any], maxComputeWorkgroupSizeY = maxComputeWorkgroupSizeY.asInstanceOf[js.Any], maxComputeWorkgroupSizeZ = maxComputeWorkgroupSizeZ.asInstanceOf[js.Any], maxComputeWorkgroupStorageSize = maxComputeWorkgroupStorageSize.asInstanceOf[js.Any], maxComputeWorkgroupsPerDimension = maxComputeWorkgroupsPerDimension.asInstanceOf[js.Any], maxDynamicStorageBuffersPerPipelineLayout = maxDynamicStorageBuffersPerPipelineLayout.asInstanceOf[js.Any], maxDynamicUniformBuffersPerPipelineLayout = maxDynamicUniformBuffersPerPipelineLayout.asInstanceOf[js.Any], maxInterStageShaderComponents = maxInterStageShaderComponents.asInstanceOf[js.Any], maxInterStageShaderVariables = maxInterStageShaderVariables.asInstanceOf[js.Any], maxSampledTexturesPerShaderStage = maxSampledTexturesPerShaderStage.asInstanceOf[js.Any], maxSamplersPerShaderStage = maxSamplersPerShaderStage.asInstanceOf[js.Any], maxStorageBufferBindingSize = maxStorageBufferBindingSize.asInstanceOf[js.Any], maxStorageBuffersPerShaderStage = maxStorageBuffersPerShaderStage.asInstanceOf[js.Any], maxStorageTexturesPerShaderStage = maxStorageTexturesPerShaderStage.asInstanceOf[js.Any], maxTextureArrayLayers = maxTextureArrayLayers.asInstanceOf[js.Any], maxTextureDimension1D = maxTextureDimension1D.asInstanceOf[js.Any], maxTextureDimension2D = maxTextureDimension2D.asInstanceOf[js.Any], maxTextureDimension3D = maxTextureDimension3D.asInstanceOf[js.Any], maxUniformBufferBindingSize = maxUniformBufferBindingSize.asInstanceOf[js.Any], maxUniformBuffersPerShaderStage = maxUniformBuffersPerShaderStage.asInstanceOf[js.Any], maxVertexAttributes = maxVertexAttributes.asInstanceOf[js.Any], maxVertexBufferArrayStride = maxVertexBufferArrayStride.asInstanceOf[js.Any], maxVertexBuffers = maxVertexBuffers.asInstanceOf[js.Any], minStorageBufferOffsetAlignment = minStorageBufferOffsetAlignment.asInstanceOf[js.Any], minUniformBufferOffsetAlignment = minUniformBufferOffsetAlignment.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(__brand = "GPUSupportedLimits", maxBindGroups = maxBindGroups.asInstanceOf[js.Any], maxBindGroupsPlusVertexBuffers = maxBindGroupsPlusVertexBuffers.asInstanceOf[js.Any], maxBindingsPerBindGroup = maxBindingsPerBindGroup.asInstanceOf[js.Any], maxBufferSize = maxBufferSize.asInstanceOf[js.Any], maxColorAttachmentBytesPerSample = maxColorAttachmentBytesPerSample.asInstanceOf[js.Any], maxColorAttachments = maxColorAttachments.asInstanceOf[js.Any], maxComputeInvocationsPerWorkgroup = maxComputeInvocationsPerWorkgroup.asInstanceOf[js.Any], maxComputeWorkgroupSizeX = maxComputeWorkgroupSizeX.asInstanceOf[js.Any], maxComputeWorkgroupSizeY = maxComputeWorkgroupSizeY.asInstanceOf[js.Any], maxComputeWorkgroupSizeZ = maxComputeWorkgroupSizeZ.asInstanceOf[js.Any], maxComputeWorkgroupStorageSize = maxComputeWorkgroupStorageSize.asInstanceOf[js.Any], maxComputeWorkgroupsPerDimension = maxComputeWorkgroupsPerDimension.asInstanceOf[js.Any], maxDynamicStorageBuffersPerPipelineLayout = maxDynamicStorageBuffersPerPipelineLayout.asInstanceOf[js.Any], maxDynamicUniformBuffersPerPipelineLayout = maxDynamicUniformBuffersPerPipelineLayout.asInstanceOf[js.Any], maxInterStageShaderComponents = maxInterStageShaderComponents.asInstanceOf[js.Any], maxInterStageShaderVariables = maxInterStageShaderVariables.asInstanceOf[js.Any], maxSampledTexturesPerShaderStage = maxSampledTexturesPerShaderStage.asInstanceOf[js.Any], maxSamplersPerShaderStage = maxSamplersPerShaderStage.asInstanceOf[js.Any], maxStorageBufferBindingSize = maxStorageBufferBindingSize.asInstanceOf[js.Any], maxStorageBuffersPerShaderStage = maxStorageBuffersPerShaderStage.asInstanceOf[js.Any], maxStorageTexturesPerShaderStage = maxStorageTexturesPerShaderStage.asInstanceOf[js.Any], maxTextureArrayLayers = maxTextureArrayLayers.asInstanceOf[js.Any], maxTextureDimension1D = maxTextureDimension1D.asInstanceOf[js.Any], maxTextureDimension2D = maxTextureDimension2D.asInstanceOf[js.Any], maxTextureDimension3D = maxTextureDimension3D.asInstanceOf[js.Any], maxUniformBufferBindingSize = maxUniformBufferBindingSize.asInstanceOf[js.Any], maxUniformBuffersPerShaderStage = maxUniformBuffersPerShaderStage.asInstanceOf[js.Any], maxVertexAttributes = maxVertexAttributes.asInstanceOf[js.Any], maxVertexBufferArrayStride = maxVertexBufferArrayStride.asInstanceOf[js.Any], maxVertexBuffers = maxVertexBuffers.asInstanceOf[js.Any], minStorageBufferOffsetAlignment = minStorageBufferOffsetAlignment.asInstanceOf[js.Any], minUniformBufferOffsetAlignment = minUniformBufferOffsetAlignment.asInstanceOf[js.Any])
     __obj.asInstanceOf[GPUSupportedLimits]
   }
   
@@ -119,11 +122,13 @@ object GPUSupportedLimits {
     
     inline def setMaxBindGroups(value: Double): Self = StObject.set(x, "maxBindGroups", value.asInstanceOf[js.Any])
     
+    inline def setMaxBindGroupsPlusVertexBuffers(value: Double): Self = StObject.set(x, "maxBindGroupsPlusVertexBuffers", value.asInstanceOf[js.Any])
+    
     inline def setMaxBindingsPerBindGroup(value: Double): Self = StObject.set(x, "maxBindingsPerBindGroup", value.asInstanceOf[js.Any])
     
     inline def setMaxBufferSize(value: Double): Self = StObject.set(x, "maxBufferSize", value.asInstanceOf[js.Any])
     
-    inline def setMaxColorAttachmentBytesPerPixel(value: Double): Self = StObject.set(x, "maxColorAttachmentBytesPerPixel", value.asInstanceOf[js.Any])
+    inline def setMaxColorAttachmentBytesPerSample(value: Double): Self = StObject.set(x, "maxColorAttachmentBytesPerSample", value.asInstanceOf[js.Any])
     
     inline def setMaxColorAttachments(value: Double): Self = StObject.set(x, "maxColorAttachments", value.asInstanceOf[js.Any])
     

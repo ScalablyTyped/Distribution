@@ -71,7 +71,7 @@ open class AudioEngine ()
   /**
     * Connect the audio engine to an audio analyser allowing some amazing
     * synchronization between the sounds/music and your visualization (VuMeter for instance).
-    * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music#using-the-analyser
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/audio/playingSoundsMusic#using-the-analyser
     * @param analyser The analyser to connect to the engine
     */
   /* CompleteClass */

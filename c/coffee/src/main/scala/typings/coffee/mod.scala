@@ -58,6 +58,15 @@ object mod {
       */
     def expect(`type`: String, args: (ExpectedType | js.Array[ExpectedType])*): this.type = js.native
     
+    /**
+      * Assert type with expected string value
+      *
+      * @param {String} type - assertion rule type, can be `code`,`stdout`,`stderr`,`error`.
+      * @param {Array<String>} args - spread args, the first item used to be a test value `{String} expected`
+      * @return {Coffee} return self for chain
+      */
+    def includes(`type`: String, args: (String | js.Array[String])*): this.type = js.native
+    
     var method: String = js.native
     
     /**
@@ -69,6 +78,15 @@ object mod {
       */
     def notExpect(`type`: String, args: (ExpectedType | js.Array[ExpectedType])*): this.type = js.native
     
+    /**
+      * Assert type with not expected string value, opposite assertion of `notIncludes`.
+      *
+      * @param {String} type - assertion rule type, can be `code`,`stdout`,`stderr`,`error`.
+      * @param {Array} args - spread args, the first item used to be a test value `{String} expected`
+      * @return {Coffee} return self for chain
+      */
+    def notIncludes(`type`: String, args: (String | js.Array[String])*): this.type = js.native
+    
     var opt: js.UndefOr[T] = js.native
     
     def restore(): this.type = js.native
@@ -79,7 +97,7 @@ object mod {
       * @param {Rule} RuleClz - custom rule class
       * @protected
       */
-    def setRule(`type`: String, RuleClz: Instantiable1[/* opt */ RuleOpt, Rule]): Any = js.native
+    def setRule(`type`: String, RuleClz: Instantiable1[/* opt */ RuleOpt, Rule]): Unit = js.native
     
     /**
       * whether set as prompt mode

@@ -12,6 +12,11 @@ trait AccountKey extends StObject {
   var accountId: String
   
   /**
+    * A version string for an account
+    */
+  var accountVersion: js.UndefOr[String] = js.undefined
+  
+  /**
     * Any arguments that identify an instantiation of the provider
     */
   var providerArgs: js.UndefOr[Any] = js.undefined
@@ -32,6 +37,10 @@ object AccountKey {
   implicit open class MutableBuilder[Self <: AccountKey] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    
+    inline def setAccountVersion(value: String): Self = StObject.set(x, "accountVersion", value.asInstanceOf[js.Any])
+    
+    inline def setAccountVersionUndefined: Self = StObject.set(x, "accountVersion", js.undefined)
     
     inline def setProviderArgs(value: Any): Self = StObject.set(x, "providerArgs", value.asInstanceOf[js.Any])
     

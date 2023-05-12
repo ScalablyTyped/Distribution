@@ -1,6 +1,6 @@
 package typings.angularCompiler.mod
 
-import typings.angularCompiler.anon.ClosedByChildren
+import typings.angularCompiler.anon.CanSelfClose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class HtmlTagDefinition ()
   extends StObject
      with TagDefinition {
-  def this(param0: ClosedByChildren) = this()
+  def this(param0: CanSelfClose) = this()
   
   /* private */ var closedByChildren: Any = js.native
   

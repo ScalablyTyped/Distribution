@@ -12,6 +12,11 @@ trait RowLevelPermissionTagConfiguration extends StObject {
   var Status: js.UndefOr[typings.awsSdk.clientsQuicksightMod.Status] = js.undefined
   
   /**
+    * A list of tag configuration rules to apply to a dataset. All tag configurations have the OR condition. Tags within each tile will be joined (AND). At least one rule in this structure must have all tag values assigned to it to apply Row-level security (RLS) to the dataset.
+    */
+  var TagRuleConfigurations: js.UndefOr[RowLevelPermissionTagRuleConfigurationList] = js.undefined
+  
+  /**
     * A set of rules associated with row-level security, such as the tag names and columns that they are assigned to.
     */
   var TagRules: RowLevelPermissionTagRuleList
@@ -29,6 +34,12 @@ object RowLevelPermissionTagConfiguration {
     inline def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    
+    inline def setTagRuleConfigurations(value: RowLevelPermissionTagRuleConfigurationList): Self = StObject.set(x, "TagRuleConfigurations", value.asInstanceOf[js.Any])
+    
+    inline def setTagRuleConfigurationsUndefined: Self = StObject.set(x, "TagRuleConfigurations", js.undefined)
+    
+    inline def setTagRuleConfigurationsVarargs(value: RowLevelPermissionTagRuleConfiguration*): Self = StObject.set(x, "TagRuleConfigurations", js.Array(value*))
     
     inline def setTagRules(value: RowLevelPermissionTagRuleList): Self = StObject.set(x, "TagRules", value.asInstanceOf[js.Any])
     

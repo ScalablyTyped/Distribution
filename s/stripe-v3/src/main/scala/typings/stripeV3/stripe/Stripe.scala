@@ -97,4 +97,6 @@ trait Stripe extends StObject {
   def retrieveSetupIntent(clientSecret: String): js.Promise[SetupIntentResponse] = js.native
   
   def retrieveSource(options: RetrieveSourceOptions): js.Promise[SourceResponse] = js.native
+  
+  def verifyIdentity(clientSecret: String): js.Promise[VerificationSessionResult] = js.native
 }

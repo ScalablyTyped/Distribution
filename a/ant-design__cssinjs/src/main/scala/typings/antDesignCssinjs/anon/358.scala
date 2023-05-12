@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ScrollbarWidth
+import typings.csstype.mod.Property.Direction
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `358` extends StObject {
   
   var value: js.UndefOr[
-    ScrollbarWidth | (js.Array[
-      (Extract[
-        js.UndefOr[ScrollbarWidth | js.Array[NonNullable[js.UndefOr[ScrollbarWidth]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[ScrollbarWidth]]
+    Direction | (js.Array[
+      (Extract[js.UndefOr[Direction | js.Array[NonNullable[js.UndefOr[Direction]]]], String]) | NonNullable[js.UndefOr[Direction]]
     ])
   ] = js.native
 }

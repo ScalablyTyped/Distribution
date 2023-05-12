@@ -48,7 +48,7 @@ trait MeshCreateCylinderParams extends StObject {
   /**
     * The unit of the size (defaults to the unit of the location's spatial reference).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createCylinder)
+    * [Read more...](global.html#unit)
     */
   var unit: js.UndefOr[
     millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`

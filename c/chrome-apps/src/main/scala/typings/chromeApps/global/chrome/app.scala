@@ -50,9 +50,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object app {
   
   /**
-    * @enum
     * @internal
-    * @private
     */
   object State {
     
@@ -95,7 +93,6 @@ object app {
     */
   object runtime {
     
-    /** @enum */
     object ActionType {
       
       @JSGlobal("chrome.app.runtime.ActionType")
@@ -108,7 +105,6 @@ object app {
       inline def NEW_NOTE_=(x: new_note_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NEW_NOTE")(x.asInstanceOf[js.Any])
     }
     
-    /** @enum */
     object LaunchSource {
       
       @JSGlobal("chrome.app.runtime.LaunchSource")
@@ -221,7 +217,6 @@ object app {
       inline def URL_HANDLER_=(x: url_handler_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("URL_HANDLER")(x.asInstanceOf[js.Any])
     }
     
-    /** @enum */
     object PlayStoreStatus {
       
       @JSGlobal("chrome.app.runtime.PlayStoreStatus")

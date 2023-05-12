@@ -365,7 +365,7 @@ object mod {
   trait StyleOptions[PropKey, Theme /* <: js.Object */] extends StObject {
     
     var cssProperty: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 791, starting with PropKey, typings.materialUiSystem.materialUiSystemStrings.accentColor, typings.materialUiSystem.materialUiSystemStrings.alignContent */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 811, starting with PropKey, typings.materialUiSystem.materialUiSystemStrings.accentColor, typings.materialUiSystem.materialUiSystemStrings.alignContent */ Any
       ] = js.undefined
     
     var prop: PropKey
@@ -388,7 +388,7 @@ object mod {
     implicit open class MutableBuilder[Self <: StyleOptions[?, ?], PropKey, Theme /* <: js.Object */] (val x: Self & (StyleOptions[PropKey, Theme])) extends AnyVal {
       
       inline def setCssProperty(
-        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 791, starting with PropKey, typings.materialUiSystem.materialUiSystemStrings.accentColor, typings.materialUiSystem.materialUiSystemStrings.alignContent */ Any
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 811, starting with PropKey, typings.materialUiSystem.materialUiSystemStrings.accentColor, typings.materialUiSystem.materialUiSystemStrings.alignContent */ Any
       ): Self = StObject.set(x, "cssProperty", value.asInstanceOf[js.Any])
       
       inline def setCssPropertyUndefined: Self = StObject.set(x, "cssProperty", js.undefined)

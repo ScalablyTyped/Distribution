@@ -93,6 +93,24 @@ trait Typeofruntime extends StObject {
     responseCallback: js.Function1[/* response */ Response, Unit]
   ): Unit = js.native
   def sendMessage[M, R](extensionId: String, message: M, responseCallback: js.Function1[/* response */ R, Unit]): Unit = js.native
+  def sendMessage[M, R](extensionId: Null, message: M): js.Promise[R] = js.native
+  def sendMessage[Message, Response](extensionId: Null, message: Message, options: MessageOptions): js.Promise[Response] = js.native
+  def sendMessage[Message, Response](
+    extensionId: Null,
+    message: Message,
+    options: MessageOptions,
+    responseCallback: js.Function1[/* response */ Response, Unit]
+  ): Unit = js.native
+  def sendMessage[M, R](extensionId: Null, message: M, responseCallback: js.Function1[/* response */ R, Unit]): Unit = js.native
+  def sendMessage[M, R](extensionId: Unit, message: M): js.Promise[R] = js.native
+  def sendMessage[Message, Response](extensionId: Unit, message: Message, options: MessageOptions): js.Promise[Response] = js.native
+  def sendMessage[Message, Response](
+    extensionId: Unit,
+    message: Message,
+    options: MessageOptions,
+    responseCallback: js.Function1[/* response */ Response, Unit]
+  ): Unit = js.native
+  def sendMessage[M, R](extensionId: Unit, message: M, responseCallback: js.Function1[/* response */ R, Unit]): Unit = js.native
   def sendMessage[M, R](message: M): js.Promise[R] = js.native
   def sendMessage[M, R](message: M, options: MessageOptions): js.Promise[R] = js.native
   def sendMessage[M, R](message: M, options: MessageOptions, responseCallback: js.Function1[/* response */ R, Unit]): Unit = js.native

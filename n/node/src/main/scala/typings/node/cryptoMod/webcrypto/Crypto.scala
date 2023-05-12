@@ -2,6 +2,7 @@ package typings.node.cryptoMod.webcrypto
 
 import typings.node.NodeJS.TypedArray
 import typings.node.anon._empty
+import typings.node.cryptoMod.UUID
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -35,7 +36,7 @@ trait Crypto extends StObject {
     * The UUID is generated using a cryptographic pseudorandom number generator.
     * @since v16.7.0
     */
-  def randomUUID(): String
+  def randomUUID(): UUID
   
   /**
     * Provides access to the `SubtleCrypto` API.
@@ -48,7 +49,7 @@ object Crypto {
   inline def apply(
     CryptoKey: CryptoKeyConstructor,
     getRandomValues: Any => Any,
-    randomUUID: () => String,
+    randomUUID: () => UUID,
     subtle: SubtleCrypto
   ): Crypto = {
     val __obj = js.Dynamic.literal(CryptoKey = CryptoKey.asInstanceOf[js.Any], getRandomValues = js.Any.fromFunction1(getRandomValues), randomUUID = js.Any.fromFunction0(randomUUID), subtle = subtle.asInstanceOf[js.Any])
@@ -62,7 +63,7 @@ object Crypto {
     
     inline def setGetRandomValues(value: Any => Any): Self = StObject.set(x, "getRandomValues", js.Any.fromFunction1(value))
     
-    inline def setRandomUUID(value: () => String): Self = StObject.set(x, "randomUUID", js.Any.fromFunction0(value))
+    inline def setRandomUUID(value: () => UUID): Self = StObject.set(x, "randomUUID", js.Any.fromFunction0(value))
     
     inline def setSubtle(value: SubtleCrypto): Self = StObject.set(x, "subtle", value.asInstanceOf[js.Any])
   }

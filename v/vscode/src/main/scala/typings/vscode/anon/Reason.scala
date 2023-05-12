@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Reason extends StObject {
   
   /**
-    * Human readable description of why the code action is currently disabled.
-    *
-    * This is displayed in the code actions UI.
-    */
+  			 * Human readable description of why the code action is currently disabled.
+  			 *
+  			 * This is displayed in the code actions UI.
+  			 */
   val reason: String
 }
 object Reason {

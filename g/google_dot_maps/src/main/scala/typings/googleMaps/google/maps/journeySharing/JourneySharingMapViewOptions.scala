@@ -6,26 +6,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-  * Options for the map view.
-  */
 trait JourneySharingMapViewOptions extends StObject {
   
   /**
     * Configures options for an anticipated route polyline. Invoked whenever a
-    * new anticipated route polyline is rendered. <p>If specifying a function,
-    * the function can and should modify the input&#39;s defaultPolylineOptions
-    * field containing a google.maps.PolylineOptions object, and return it as
-    * polylineOptions in the output PolylineSetupOptions object. <p>Specifying
-    * a PolylineSetupOptions object has the same effect as specifying a
-    * function that returns that static object. <p>Do not reuse the same
-    * PolylineSetupOptions object in different PolylineSetup functions or
-    * static values, and do not reuse the same google.maps.PolylineOptions
-    * object for the polylineOptions key in different PolylineSetupOptions
-    * objects. If polylineOptions or visible is unset or null, it will be
-    * overwritten with the default. Any values set for polylineOptions.map or
-    * polylineOptions.path will be ignored.
+    * new anticipated route polyline is rendered. <br><br>If specifying a
+    * function, the function can and should modify the input&#39;s
+    * defaultPolylineOptions field containing a google.maps.PolylineOptions
+    * object, and return it as polylineOptions in the output
+    * PolylineSetupOptions object. <br><br>Specifying a PolylineSetupOptions
+    * object has the same effect as specifying a function that returns that
+    * static object. <br><br>Do not reuse the same PolylineSetupOptions object
+    * in different PolylineSetup functions or static values, and do not reuse
+    * the same google.maps.PolylineOptions object for the polylineOptions key
+    * in different PolylineSetupOptions objects. If polylineOptions or visible
+    * is unset or null, it will be overwritten with the default. Any values set
+    * for polylineOptions.map or polylineOptions.path will be ignored.
     */
   var anticipatedRoutePolylineSetup: js.UndefOr[
     PolylineSetupOptions | (js.Function1[/* a */ DefaultPolylineSetupOptions, PolylineSetupOptions]) | Null
@@ -41,18 +37,21 @@ trait JourneySharingMapViewOptions extends StObject {
   
   /**
     * Configures options for a destination location marker. Invoked whenever a
-    * new destination marker is rendered. <p>If specifying a function, the
+    * new destination marker is rendered. <br><br>If specifying a function, the
     * function can and should modify the input&#39;s defaultMarkerOptions field
     * containing a google.maps.MarkerOptions object, and return it as
-    * markerOptions in the output MarkerSetupOptions object. <p>Specifying a
-    * MarkerSetupOptions object has the same effect as specifying a function
-    * that returns that static object. <p>Do not reuse the same
+    * markerOptions in the output MarkerSetupOptions object. <br><br>Specifying
+    * a MarkerSetupOptions object has the same effect as specifying a function
+    * that returns that static object. <br><br>Do not reuse the same
     * MarkerSetupOptions object in different MarkerSetup functions or static
     * values, and do not reuse the same google.maps.MarkerOptions object for
     * the markerOptions key in different MarkerSetupOptions objects. If
     * markerOptions is unset or null, it will be overwritten with the default.
     * Any value set for markerOptions.map or markerOptions.position will be
     * ignored.
+    * @deprecated Marker setup is deprecated. Use the
+    *     <code>MarkerCustomizationFunction</code> methods for your location
+    *     provider instead. This field will be removed in the future.
     */
   var destinationMarkerSetup: js.UndefOr[
     MarkerSetupOptions | (js.Function1[/* a */ DefaultMarkerSetupOptions, MarkerSetupOptions]) | Null
@@ -76,17 +75,21 @@ trait JourneySharingMapViewOptions extends StObject {
   
   /**
     * Configures options for an origin location marker. Invoked whenever a new
-    * origin marker is rendered. <p>If specifying a function, the function can
-    * and should modify the input&#39;s defaultMarkerOptions field containing a
-    * google.maps.MarkerOptions object, and return it as markerOptions in the
-    * output MarkerSetupOptions object. <p>Specifying a MarkerSetupOptions
-    * object has the same effect as specifying a function that returns that
-    * static object. <p>Do not reuse the same MarkerSetupOptions object in
-    * different MarkerSetup functions or static values, and do not reuse the
-    * same google.maps.MarkerOptions object for the markerOptions key in
-    * different MarkerSetupOptions objects. If markerOptions is unset or null,
-    * it will be overwritten with the default. Any value set for
-    * markerOptions.map or markerOptions.position will be ignored.
+    * origin marker is rendered. <br><br>If specifying a function, the function
+    * can and should modify the input&#39;s defaultMarkerOptions field
+    * containing a google.maps.MarkerOptions object, and return it as
+    * markerOptions in the output MarkerSetupOptions object. <br><br>Specifying
+    * a MarkerSetupOptions object has the same effect as specifying a function
+    * that returns that static object. <br><br>Do not reuse the same
+    * MarkerSetupOptions object in different MarkerSetup functions or static
+    * values, and do not reuse the same google.maps.MarkerOptions object for
+    * the markerOptions key in different MarkerSetupOptions objects. If
+    * markerOptions is unset or null, it will be overwritten with the default.
+    * Any value set for markerOptions.map or markerOptions.position will be
+    * ignored.
+    * @deprecated Marker setup is deprecated. Use the
+    *     <code>MarkerCustomizationFunction</code> methods for your location
+    *     provider instead. This field will be removed in the future.
     */
   var originMarkerSetup: js.UndefOr[
     MarkerSetupOptions | (js.Function1[/* a */ DefaultMarkerSetupOptions, MarkerSetupOptions]) | Null
@@ -94,17 +97,21 @@ trait JourneySharingMapViewOptions extends StObject {
   
   /**
     * Configures options for a ping location marker. Invoked whenever a new
-    * ping marker is rendered. <p>If specifying a function, the function can
-    * and should modify the input&#39;s defaultMarkerOptions field containing a
-    * google.maps.MarkerOptions object, and return it as markerOptions in the
-    * output MarkerSetupOptions object. <p>Specifying a MarkerSetupOptions
-    * object has the same effect as specifying a function that returns that
-    * static object. <p>Do not reuse the same MarkerSetupOptions object in
-    * different MarkerSetup functions or static values, and do not reuse the
-    * same google.maps.MarkerOptions object for the markerOptions key in
-    * different MarkerSetupOptions objects. If markerOptions is unset or null,
-    * it will be overwritten with the default. Any value set for
-    * markerOptions.map or markerOptions.position will be ignored.
+    * ping marker is rendered. <br><br>If specifying a function, the function
+    * can and should modify the input&#39;s defaultMarkerOptions field
+    * containing a google.maps.MarkerOptions object, and return it as
+    * markerOptions in the output MarkerSetupOptions object. <br><br>Specifying
+    * a MarkerSetupOptions object has the same effect as specifying a function
+    * that returns that static object. <br><br>Do not reuse the same
+    * MarkerSetupOptions object in different MarkerSetup functions or static
+    * values, and do not reuse the same google.maps.MarkerOptions object for
+    * the markerOptions key in different MarkerSetupOptions objects. If
+    * markerOptions is unset or null, it will be overwritten with the default.
+    * Any value set for markerOptions.map or markerOptions.position will be
+    * ignored.
+    * @deprecated Marker setup is deprecated. Use the
+    *     <code>MarkerCustomizationFunction</code> methods for your location
+    *     provider instead. This field will be removed in the future.
     */
   var pingMarkerSetup: js.UndefOr[
     MarkerSetupOptions | (js.Function1[/* a */ DefaultMarkerSetupOptions, MarkerSetupOptions]) | Null
@@ -112,18 +119,21 @@ trait JourneySharingMapViewOptions extends StObject {
   
   /**
     * Configures options for a successful task location marker. Invoked
-    * whenever a new successful task marker is rendered. <p>If specifying a
-    * function, the function can and should modify the input&#39;s
+    * whenever a new successful task marker is rendered. <br><br>If specifying
+    * a function, the function can and should modify the input&#39;s
     * defaultMarkerOptions field containing a google.maps.MarkerOptions object,
     * and return it as markerOptions in the output MarkerSetupOptions object.
-    * <p>Specifying a MarkerSetupOptions object has the same effect as
-    * specifying a function that returns that static object. <p>Do not reuse
-    * the same MarkerSetupOptions object in different MarkerSetup functions or
-    * static values, and do not reuse the same google.maps.MarkerOptions object
-    * for the markerOptions key in different MarkerSetupOptions objects. If
-    * markerOptions is unset or null, it will be overwritten with the default.
-    * Any value set for markerOptions.map or markerOptions.position will be
-    * ignored.
+    * <br><br>Specifying a MarkerSetupOptions object has the same effect as
+    * specifying a function that returns that static object. <br><br>Do not
+    * reuse the same MarkerSetupOptions object in different MarkerSetup
+    * functions or static values, and do not reuse the same
+    * google.maps.MarkerOptions object for the markerOptions key in different
+    * MarkerSetupOptions objects. If markerOptions is unset or null, it will be
+    * overwritten with the default. Any value set for markerOptions.map or
+    * markerOptions.position will be ignored.
+    * @deprecated Marker setup is deprecated. Use the
+    *     <code>MarkerCustomizationFunction</code> methods for your location
+    *     provider instead. This field will be removed in the future.
     */
   var successfulTaskMarkerSetup: js.UndefOr[
     MarkerSetupOptions | (js.Function1[/* a */ DefaultMarkerSetupOptions, MarkerSetupOptions]) | Null
@@ -131,18 +141,18 @@ trait JourneySharingMapViewOptions extends StObject {
   
   /**
     * Configures options for a taken route polyline. Invoked whenever a new
-    * taken route polyline is rendered. <p>If specifying a function, the
+    * taken route polyline is rendered. <br><br>If specifying a function, the
     * function can and should modify the input&#39;s defaultPolylineOptions
     * field containing a google.maps.PolylineOptions object, and return it as
-    * polylineOptions in the output PolylineSetupOptions object. <p>Specifying
-    * a PolylineSetupOptions object has the same effect as specifying a
-    * function that returns that static object. <p>Do not reuse the same
-    * PolylineSetupOptions object in different PolylineSetup functions or
-    * static values, and do not reuse the same google.maps.PolylineOptions
-    * object for the polylineOptions key in different PolylineSetupOptions
-    * objects. <p>Any values set for polylineOptions.map or
-    * polylineOptions.path will be ignored. Any unset or null value will be
-    * overwritten with the default.
+    * polylineOptions in the output PolylineSetupOptions object.
+    * <br><br>Specifying a PolylineSetupOptions object has the same effect as
+    * specifying a function that returns that static object. <br><br>Do not
+    * reuse the same PolylineSetupOptions object in different PolylineSetup
+    * functions or static values, and do not reuse the same
+    * google.maps.PolylineOptions object for the polylineOptions key in
+    * different PolylineSetupOptions objects. <br><br>Any values set for
+    * polylineOptions.map or polylineOptions.path will be ignored. Any unset or
+    * null value will be overwritten with the default.
     */
   var takenRoutePolylineSetup: js.UndefOr[
     PolylineSetupOptions | (js.Function1[/* a */ DefaultPolylineSetupOptions, PolylineSetupOptions]) | Null
@@ -150,18 +160,21 @@ trait JourneySharingMapViewOptions extends StObject {
   
   /**
     * Configures options for a task outcome location marker. Invoked whenever a
-    * new task outcome location marker is rendered. <p>If specifying a
+    * new task outcome location marker is rendered. <br><br>If specifying a
     * function, the function can and should modify the input&#39;s
     * defaultMarkerOptions field containing a google.maps.MarkerOptions object,
     * and return it as markerOptions in the output MarkerSetupOptions object.
-    * <p>Specifying a MarkerSetupOptions object has the same effect as
-    * specifying a function that returns that static object. <p>Do not reuse
-    * the same MarkerSetupOptions object in different MarkerSetup functions or
-    * static values, and do not reuse the same google.maps.MarkerOptions object
-    * for the markerOptions key in different MarkerSetupOptions objects. If
-    * markerOptions is unset or null, it will be overwritten with the default.
-    * Any value set for markerOptions.map or markerOptions.position will be
-    * ignored.
+    * <br><br>Specifying a MarkerSetupOptions object has the same effect as
+    * specifying a function that returns that static object. <br><br>Do not
+    * reuse the same MarkerSetupOptions object in different MarkerSetup
+    * functions or static values, and do not reuse the same
+    * google.maps.MarkerOptions object for the markerOptions key in different
+    * MarkerSetupOptions objects. If markerOptions is unset or null, it will be
+    * overwritten with the default. Any value set for markerOptions.map or
+    * markerOptions.position will be ignored.
+    * @deprecated Marker setup is deprecated. Use the
+    *     <code>MarkerCustomizationFunction</code> methods for your location
+    *     provider instead. This field will be removed in the future.
     */
   var taskOutcomeMarkerSetup: js.UndefOr[
     MarkerSetupOptions | (js.Function1[/* a */ DefaultMarkerSetupOptions, MarkerSetupOptions]) | Null
@@ -169,18 +182,21 @@ trait JourneySharingMapViewOptions extends StObject {
   
   /**
     * Configures options for an unsuccessful task location marker. Invoked
-    * whenever a new unsuccessful task marker is rendered. <p>If specifying a
-    * function, the function can and should modify the input&#39;s
+    * whenever a new unsuccessful task marker is rendered. <br><br>If
+    * specifying a function, the function can and should modify the input&#39;s
     * defaultMarkerOptions field containing a google.maps.MarkerOptions object,
     * and return it as markerOptions in the output MarkerSetupOptions object.
-    * <p>Specifying a MarkerSetupOptions object has the same effect as
-    * specifying a function that returns that static object. <p>Do not reuse
-    * the same MarkerSetupOptions object in different MarkerSetup functions or
-    * static values, and do not reuse the same google.maps.MarkerOptions object
-    * for the markerOptions key in different MarkerSetupOptions objects. If
-    * markerOptions is unset or null, it will be overwritten with the default.
-    * Any value set for markerOptions.map or markerOptions.position will be
-    * ignored.
+    * <br><br>Specifying a MarkerSetupOptions object has the same effect as
+    * specifying a function that returns that static object. <br><br>Do not
+    * reuse the same MarkerSetupOptions object in different MarkerSetup
+    * functions or static values, and do not reuse the same
+    * google.maps.MarkerOptions object for the markerOptions key in different
+    * MarkerSetupOptions objects. If markerOptions is unset or null, it will be
+    * overwritten with the default. Any value set for markerOptions.map or
+    * markerOptions.position will be ignored.
+    * @deprecated Marker setup is deprecated. Use the
+    *     <code>MarkerCustomizationFunction</code> methods for your location
+    *     provider instead. This field will be removed in the future.
     */
   var unsuccessfulTaskMarkerSetup: js.UndefOr[
     MarkerSetupOptions | (js.Function1[/* a */ DefaultMarkerSetupOptions, MarkerSetupOptions]) | Null
@@ -188,17 +204,21 @@ trait JourneySharingMapViewOptions extends StObject {
   
   /**
     * Configures options for a vehicle location marker. Invoked whenever a new
-    * vehicle marker is rendered. <p>If specifying a function, the function can
-    * and should modify the input&#39;s defaultMarkerOptions field containing a
-    * google.maps.MarkerOptions object, and return it as markerOptions in the
-    * output MarkerSetupOptions object. <p>Specifying a MarkerSetupOptions
-    * object has the same effect as specifying a function that returns that
-    * static object. <p>Do not reuse the same MarkerSetupOptions object in
-    * different MarkerSetup functions or static values, and do not reuse the
-    * same google.maps.MarkerOptions object for the markerOptions key in
-    * different MarkerSetupOptions objects. If markerOptions is unset or null,
-    * it will be overwritten with the default. Any value set for
-    * markerOptions.map or markerOptions.position will be ignored.
+    * vehicle marker is rendered. <br><br>If specifying a function, the
+    * function can and should modify the input&#39;s defaultMarkerOptions field
+    * containing a google.maps.MarkerOptions object, and return it as
+    * markerOptions in the output MarkerSetupOptions object. <br><br>Specifying
+    * a MarkerSetupOptions object has the same effect as specifying a function
+    * that returns that static object. <br><br>Do not reuse the same
+    * MarkerSetupOptions object in different MarkerSetup functions or static
+    * values, and do not reuse the same google.maps.MarkerOptions object for
+    * the markerOptions key in different MarkerSetupOptions objects. If
+    * markerOptions is unset or null, it will be overwritten with the default.
+    * Any value set for markerOptions.map or markerOptions.position will be
+    * ignored.
+    * @deprecated Marker setup is deprecated. Use the
+    *     <code>MarkerCustomizationFunction</code> methods for your location
+    *     provider instead. This field will be removed in the future.
     */
   var vehicleMarkerSetup: js.UndefOr[
     MarkerSetupOptions | (js.Function1[/* a */ DefaultMarkerSetupOptions, MarkerSetupOptions]) | Null
@@ -206,18 +226,21 @@ trait JourneySharingMapViewOptions extends StObject {
   
   /**
     * Configures options for a waypoint location marker. Invoked whenever a new
-    * waypoint marker is rendered. <p>If specifying a function, the function
-    * can and should modify the input&#39;s defaultMarkerOptions field
+    * waypoint marker is rendered. <br><br>If specifying a function, the
+    * function can and should modify the input&#39;s defaultMarkerOptions field
     * containing a google.maps.MarkerOptions object, and return it as
-    * markerOptions in the output MarkerSetupOptions object. <p>Specifying a
-    * MarkerSetupOptions object has the same effect as specifying a function
-    * that returns that static object. <p>Do not reuse the same
+    * markerOptions in the output MarkerSetupOptions object. <br><br>Specifying
+    * a MarkerSetupOptions object has the same effect as specifying a function
+    * that returns that static object. <br><br>Do not reuse the same
     * MarkerSetupOptions object in different MarkerSetup functions or static
     * values, and do not reuse the same google.maps.MarkerOptions object for
     * the markerOptions key in different MarkerSetupOptions objects. If
     * markerOptions is unset or null, it will be overwritten with the default.
     * Any value set for markerOptions.map or markerOptions.position will be
     * ignored.
+    * @deprecated Marker setup is deprecated. Use the
+    *     <code>MarkerCustomizationFunction</code> methods for your location
+    *     provider instead. This field will be removed in the future.
     */
   var waypointMarkerSetup: js.UndefOr[
     MarkerSetupOptions | (js.Function1[/* a */ DefaultMarkerSetupOptions, MarkerSetupOptions]) | Null

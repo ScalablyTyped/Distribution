@@ -30,7 +30,8 @@ trait TypeofNgSwitchDefault
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `true`
+    `true`, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[NgSwitchDefault, js.Tuple3[Null, Null, Host]] = js.native

@@ -6,7 +6,7 @@ import typings.fhir.fhirStrings.capability
 import typings.fhir.fhirStrings.draft
 import typings.fhir.fhirStrings.explicit
 import typings.fhir.fhirStrings.instance
-import typings.fhir.fhirStrings.requirements
+import typings.fhir.fhirStrings.requirements_
 import typings.fhir.fhirStrings.retired
 import typings.fhir.fhirStrings.unknown
 import org.scalablytyped.runtime.StObject
@@ -104,7 +104,7 @@ trait TerminologyCapabilities
   /**
     * The way that this statement is intended to be used, to describe an actual running instance of software, a particular product (kind, not instance of software) or a class of implementation (e.g. a desired purchase).
     */
-  var kind: instance | capability | requirements
+  var kind: instance | capability | requirements_
   
   /**
     * Whether the server supports lockedDate.
@@ -176,7 +176,7 @@ object TerminologyCapabilities {
   
   inline def apply(
     date: String,
-    kind: instance | capability | requirements,
+    kind: instance | capability | requirements_,
     status: draft | active | retired | unknown
   ): TerminologyCapabilities = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], resourceType = "TerminologyCapabilities", status = status.asInstanceOf[js.Any])
@@ -234,7 +234,7 @@ object TerminologyCapabilities {
     
     inline def setJurisdictionVarargs(value: CodeableConcept*): Self = StObject.set(x, "jurisdiction", js.Array(value*))
     
-    inline def setKind(value: instance | capability | requirements): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: instance | capability | requirements_): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setLockedDate(value: Boolean): Self = StObject.set(x, "lockedDate", value.asInstanceOf[js.Any])
     

@@ -12,9 +12,14 @@ trait PortfolioShareDetail extends StObject {
   var Accepted: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The identifier of the recipient entity that received the portfolio share. The recipient entities can be one of the following:  1. An external account. 2. An organziation member account. 3. An organzational unit (OU). 4. The organization itself. (This shares with every account in the organization).
+    * The identifier of the recipient entity that received the portfolio share. The recipient entity can be one of the following: 1. An external account. 2. An organziation member account. 3. An organzational unit (OU). 4. The organization itself. (This shares with every account in the organization).
     */
   var PrincipalId: js.UndefOr[Id] = js.undefined
+  
+  /**
+    * Indicates if Principal sharing is enabled or disabled for the portfolio share. 
+    */
+  var SharePrincipals: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether TagOptions sharing is enabled or disabled for the portfolio share.
@@ -43,6 +48,10 @@ object PortfolioShareDetail {
     inline def setPrincipalId(value: Id): Self = StObject.set(x, "PrincipalId", value.asInstanceOf[js.Any])
     
     inline def setPrincipalIdUndefined: Self = StObject.set(x, "PrincipalId", js.undefined)
+    
+    inline def setSharePrincipals(value: Boolean): Self = StObject.set(x, "SharePrincipals", value.asInstanceOf[js.Any])
+    
+    inline def setSharePrincipalsUndefined: Self = StObject.set(x, "SharePrincipals", js.undefined)
     
     inline def setShareTagOptions(value: Boolean): Self = StObject.set(x, "ShareTagOptions", value.asInstanceOf[js.Any])
     

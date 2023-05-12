@@ -59,6 +59,12 @@ open class TextBox protected () extends TextWidget {
   def keyboardType_=(newValue: KeyboardType): Unit = js.native
   
   /**
+    * In version 9.24.0: introduced
+    */
+  def nativeAccessibilitySettings: AccessibilitySettings | Null = js.native
+  def nativeAccessibilitySettings_=(newValue: AccessibilitySettings | Null): Unit = js.native
+  
+  /**
     * In version 8.7.0: introduced
     */
   def onEnterKeyPressAction: ClientAction = js.native

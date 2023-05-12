@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @classDescription Class definition for interacting with the results of a search operation
   * @return {nlobjSearchResult}
-  * @constructor
   */
 @js.native
 trait nlobjSearchResult

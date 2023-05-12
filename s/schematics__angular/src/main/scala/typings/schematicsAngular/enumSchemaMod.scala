@@ -22,7 +22,7 @@ object enumSchemaMod {
       * The name of the project in which to create the enum. Default is the configured default
       * project for the workspace.
       */
-    var project: js.UndefOr[String] = js.undefined
+    var project: String
     
     /**
       * Adds a developer-defined type to the filename, in the format "name.type.ts".
@@ -31,8 +31,8 @@ object enumSchemaMod {
   }
   object Schema {
     
-    inline def apply(name: String): Schema = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    inline def apply(name: String, project: String): Schema = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any])
       __obj.asInstanceOf[Schema]
     }
     
@@ -46,8 +46,6 @@ object enumSchemaMod {
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
       inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
-      
-      inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

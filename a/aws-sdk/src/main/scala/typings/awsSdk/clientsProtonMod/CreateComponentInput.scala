@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateComponentInput extends StObject {
   
   /**
+    * The client token for the created component.
+    */
+  var clientToken: js.UndefOr[ClientToken] = js.undefined
+  
+  /**
     * An optional customer-provided description of the component.
     */
   var description: js.UndefOr[Description] = js.undefined
@@ -60,6 +65,10 @@ object CreateComponentInput {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: CreateComponentInput] (val x: Self) extends AnyVal {
+    
+    inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    
+    inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
     inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

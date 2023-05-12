@@ -50,9 +50,11 @@ object extensions {
     * Handle a type, but using a list of extensions.
     * @param type - Type of extension to handle.
     * @param list - The list of extensions.
+    * @param defaultPriority - The default priority to use if none is specified.
     * @returns {PIXI.extensions} For chaining.
     */
   inline def handleByList(`type`: typings.pixiExtensions.mod.ExtensionType, list: js.Array[Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("handleByList")(`type`.asInstanceOf[js.Any], list.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def handleByList(`type`: typings.pixiExtensions.mod.ExtensionType, list: js.Array[Any], defaultPriority: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("handleByList")(`type`.asInstanceOf[js.Any], list.asInstanceOf[js.Any], defaultPriority.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /**
     * Handle a type, but using a map by `name` property.

@@ -222,7 +222,7 @@ object global {
        with typings.applepayjs.ApplePaySession {
     /**
       * The entry point for Apple Pay on the web.
-      * @param version - The version number of the ApplePay JS API you are using. The current API version number is 3.
+      * @param version - The version number of the ApplePay JS API you are using. The current API version number is 14.
       * @param paymentRequest - An ApplePayPaymentRequest object that contains the information to be displayed on the Apple Pay payment sheet.
       */
     def this(version: Double, paymentRequest: ApplePayPaymentRequest) = this()

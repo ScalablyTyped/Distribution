@@ -6,16 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ReactionidReleaseid extends StObject {
   
-  /** The account owner of the repository. The name is not case sensitive. */
   var owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any
   
-  /** The unique identifier of the reaction. */
   var reaction_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['reaction-id'] */ js.Any
   
-  /** The unique identifier of the release. */
   var release_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['release-id'] */ js.Any
   
-  /** The name of the repository. The name is not case sensitive. */
   var repo: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any
 }
 object ReactionidReleaseid {

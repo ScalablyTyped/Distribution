@@ -105,6 +105,7 @@ object mod extends Shortcut {
     - typings.htmlTags.htmlTagsStrings.s
     - typings.htmlTags.htmlTagsStrings.samp
     - typings.htmlTags.htmlTagsStrings.script
+    - typings.htmlTags.htmlTagsStrings.search
     - typings.htmlTags.htmlTagsStrings.section
     - typings.htmlTags.htmlTagsStrings.select
     - typings.htmlTags.htmlTagsStrings.slot
@@ -313,6 +314,8 @@ object mod extends Shortcut {
     inline def samp: typings.htmlTags.htmlTagsStrings.samp = "samp".asInstanceOf[typings.htmlTags.htmlTagsStrings.samp]
     
     inline def script: typings.htmlTags.htmlTagsStrings.script = "script".asInstanceOf[typings.htmlTags.htmlTagsStrings.script]
+    
+    inline def search: typings.htmlTags.htmlTagsStrings.search = "search".asInstanceOf[typings.htmlTags.htmlTagsStrings.search]
     
     inline def section: typings.htmlTags.htmlTagsStrings.section = "section".asInstanceOf[typings.htmlTags.htmlTagsStrings.section]
     

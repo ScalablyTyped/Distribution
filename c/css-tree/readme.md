@@ -1,7 +1,7 @@
 
 # Scala.js typings for css-tree
 
-Typings are for version 2.0
+Typings are for version 2.3
 
 ## Library description:
 A tool set for CSS: fast detailed parser (CSS → AST), walker (AST traversal), generator (AST → CSS) and lexer (validation and matching) based on specs and browser implementations

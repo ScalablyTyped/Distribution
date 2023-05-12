@@ -15,7 +15,7 @@ object mod {
   
   inline def compare(v1: String, v2: String, operator: CompareOperator): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def compareVersions(v1: String, v2: String): `1` | `-1` | `0` = (^.asInstanceOf[js.Dynamic].applyDynamic("compareVersions")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[`1` | `-1` | `0`]
+  inline def compareVersions(v1: String, v2: String): `0` | `1` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compareVersions")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[`0` | `1` | `-1`]
   
   inline def satisfies(version: String, range: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("satisfies")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   

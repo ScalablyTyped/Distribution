@@ -12,7 +12,7 @@ trait LinesMesh
   /**
     * @internal
     */
-  def _bind(): Mesh = js.native
+  def _bind(_subMesh: SubMesh, colorEffect: Effect): Mesh = js.native
   
   /* private */ var _color4: Any = js.native
   
@@ -29,6 +29,11 @@ trait LinesMesh
     * Color of the line (Default: White)
     */
   var color: Color3 = js.native
+  
+  def dispose(doNotRecurse: Boolean, disposeMaterialAndTextures: Boolean, doNotDisposeMaterial: Boolean): Unit = js.native
+  def dispose(doNotRecurse: Boolean, disposeMaterialAndTextures: Unit, doNotDisposeMaterial: Boolean): Unit = js.native
+  def dispose(doNotRecurse: Unit, disposeMaterialAndTextures: Boolean, doNotDisposeMaterial: Boolean): Unit = js.native
+  def dispose(doNotRecurse: Unit, disposeMaterialAndTextures: Unit, doNotDisposeMaterial: Boolean): Unit = js.native
   
   /**
     * The intersection Threshold is the margin applied when intersection a segment of the LinesMesh with a Ray.

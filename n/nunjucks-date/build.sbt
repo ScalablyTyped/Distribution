@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nunjucks-date"
-version := "0.0-unknown-dt-20220818Z-a8301f"
+version := "0.0-unknown-dt-20230322Z-a8301f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 package typings.awsSdk
 
-import typings.awsSdk.awsSdkStrings.data_
+import typings.awsSdk.awsSdkStrings.data__
 import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,6 +17,6 @@ object libEventStreamEventStreamMod {
     
     def on(event: String, listener: js.Function): this.type = js.native
     @JSName("on")
-    def on_data(event: data_, listener: js.Function1[/* event */ Events, Unit]): this.type = js.native
+    def on_data(event: data__, listener: js.Function1[/* event */ Events, Unit]): this.type = js.native
   }
 }

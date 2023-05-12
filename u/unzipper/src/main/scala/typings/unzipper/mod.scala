@@ -172,6 +172,8 @@ object mod {
     
     var lastModifiedDate: Double = js.native
     
+    var lastModifiedDateTime: js.Date = js.native
+    
     var lastModifiedTime: Double = js.native
     
     var offsetToLocalFileHeader: Double = js.native

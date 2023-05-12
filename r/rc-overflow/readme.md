@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-overflow
 
-Typings are for version 1.2.8
+Typings are for version 1.3.0
 
 ## Library description:
 Auto collapse box when overflow

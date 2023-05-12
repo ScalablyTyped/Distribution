@@ -1,7 +1,7 @@
 
 # Scala.js typings for kafkajs
 
-Typings are for version 2.2.2
+Typings are for version 2.2.4
 
 ## Library description:
 A modern Apache Kafka client for node.js

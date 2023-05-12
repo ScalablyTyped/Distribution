@@ -10,5 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(ip: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ip.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(ip: String): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ip.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Boolean]]
 }

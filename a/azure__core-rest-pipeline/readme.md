@@ -1,7 +1,7 @@
 
 # Scala.js typings for azure__core-rest-pipeline
 
-Typings are for version 1.9.2
+Typings are for version 1.10.3
 
 
 

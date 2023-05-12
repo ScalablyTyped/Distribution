@@ -36,6 +36,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.meters_
 import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.millimeters
 import typings.arcgisJsApi.arcgisJsApiStrings.quantile
+import typings.arcgisJsApi.arcgisJsApiStrings.relationship_
 import typings.arcgisJsApi.arcgisJsApiStrings.square_
 import typings.arcgisJsApi.arcgisJsApiStrings.thumb
 import typings.arcgisJsApi.arcgisJsApiStrings.triangle_
@@ -162,7 +163,7 @@ trait AuthoringInfo
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#type)
     */
-  var `type`: `class-breaks-size` | `class-breaks-color` | `classed-color` | `classed-size` | typings.arcgisJsApi.arcgisJsApiStrings.flow | typings.arcgisJsApi.arcgisJsApiStrings.predominance | typings.arcgisJsApi.arcgisJsApiStrings.relationship | `univariate-color-size` = js.native
+  var `type`: `class-breaks-size` | `class-breaks-color` | `classed-color` | `classed-size` | typings.arcgisJsApi.arcgisJsApiStrings.flow | typings.arcgisJsApi.arcgisJsApiStrings.predominance | relationship_ | `univariate-color-size` = js.native
   
   /**
     * Only applicable to [univariateColorSize](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html) renderers with an `above-and-below` [univariateTheme](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#univariateTheme).

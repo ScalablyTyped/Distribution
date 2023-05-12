@@ -13,13 +13,15 @@ object FeatureName extends StObject {
   
   /* "bgra8unorm-storage" */ val BGRA8UnormStorage: typings.babylonjs.BABYLON.FeatureName.BGRA8UnormStorage & String = js.native
   
-  /* "depth24unorm-stencil8" */ val Depth24UnormStencil8: typings.babylonjs.BABYLON.FeatureName.Depth24UnormStencil8 & String = js.native
-  
   /* "depth32float-stencil8" */ val Depth32FloatStencil8: typings.babylonjs.BABYLON.FeatureName.Depth32FloatStencil8 & String = js.native
   
   /* "depth-clip-control" */ val DepthClipControl: typings.babylonjs.BABYLON.FeatureName.DepthClipControl & String = js.native
   
+  /* "float32-filterable" */ val Float32Filterable: typings.babylonjs.BABYLON.FeatureName.Float32Filterable & String = js.native
+  
   /* "indirect-first-instance" */ val IndirectFirstInstance: typings.babylonjs.BABYLON.FeatureName.IndirectFirstInstance & String = js.native
+  
+  /* "rg11b10ufloat-renderable" */ val RG11B10UFloatRenderable: typings.babylonjs.BABYLON.FeatureName.RG11B10UFloatRenderable & String = js.native
   
   /* "shader-f16" */ val ShaderF16: typings.babylonjs.BABYLON.FeatureName.ShaderF16 & String = js.native
   

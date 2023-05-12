@@ -3,8 +3,10 @@ package typings.blueprintjsCore.anon
 import typings.blueprintjsCore.blueprintjsCoreBooleans.`false`
 import typings.blueprintjsCore.libEsmCommonIntentMod.Intent
 import typings.blueprintjsCore.libEsmCommonPropsMod.MaybeElement
-import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsIcons.libEsmGeneratedIcons16pxBlueprintIcons16Mod.BlueprintIcons16Id
 import typings.react.mod.CSSProperties
+import typings.react.mod.HTMLAttributes
+import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,8 +30,10 @@ trait PartialIconProps extends StObject {
   
   var style: js.UndefOr[CSSProperties] = js.undefined
   
+  var svgProps: js.UndefOr[HTMLAttributes[SVGElement]] = js.undefined
+  
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
   ] = js.undefined
   
   var title: js.UndefOr[String | `false` | Null] = js.undefined
@@ -78,8 +82,12 @@ object PartialIconProps {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
+    inline def setSvgProps(value: HTMLAttributes[SVGElement]): Self = StObject.set(x, "svgProps", value.asInstanceOf[js.Any])
+    
+    inline def setSvgPropsUndefined: Self = StObject.set(x, "svgProps", js.undefined)
+    
     inline def setTagName(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
     ): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     
     inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)

@@ -12,7 +12,7 @@ trait DescribeSpotFleetInstancesResponse extends StObject {
   var ActiveInstances: js.UndefOr[ActiveInstanceSet] = js.undefined
   
   /**
-    * The token required to retrieve the next set of results. This value is null when there are no more results to return.
+    * The token to include in another request to get the next page of items. This value is null when there are no more items to return.
     */
   var NextToken: js.UndefOr[String] = js.undefined
   

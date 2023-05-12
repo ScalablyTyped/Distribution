@@ -11,6 +11,8 @@ object NodeMaterialBlockConnectionPointTypes extends StObject {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.babylonjs.BABYLON.NodeMaterialBlockConnectionPointTypes & Double] = js.native
   
+  /* 4095 */ val All: typings.babylonjs.BABYLON.NodeMaterialBlockConnectionPointTypes.All & Double = js.native
+  
   /* 1024 */ val AutoDetect: typings.babylonjs.BABYLON.NodeMaterialBlockConnectionPointTypes.AutoDetect & Double = js.native
   
   /* 2048 */ val BasedOnInput: typings.babylonjs.BABYLON.NodeMaterialBlockConnectionPointTypes.BasedOnInput & Double = js.native

@@ -1,9 +1,13 @@
 package typings.angularCompilerCli
 
 import typings.angularCompiler.mod.ConstantPool
+import typings.angularCompilerCli.anon.ClassDeclarationDeclarati
 import typings.angularCompilerCli.anon.ReadonlyComponentAnalysis
 import typings.angularCompilerCli.anon.ReadonlyComponentResoluti
+import typings.angularCompilerCli.anon.ReadonlyDecorator
+import typings.angularCompilerCli.srcNgtscAnnotationsCommonMod.InjectableClassRegistry
 import typings.angularCompilerCli.srcNgtscAnnotationsCommonSrcApiMod.ResourceLoader
+import typings.angularCompilerCli.srcNgtscAnnotationsCommonSrcReferencesRegistryMod.ReferencesRegistry
 import typings.angularCompilerCli.srcNgtscAnnotationsComponentSrcMetadataMod.ComponentAnalysisData
 import typings.angularCompilerCli.srcNgtscAnnotationsComponentSrcMetadataMod.ComponentResolutionData
 import typings.angularCompilerCli.srcNgtscAnnotationsComponentSrcSymbolMod.ComponentSymbol
@@ -14,26 +18,27 @@ import typings.angularCompilerCli.srcNgtscImportsMod.ReferenceEmitter
 import typings.angularCompilerCli.srcNgtscIncrementalApiMod.DependencyTracker
 import typings.angularCompilerCli.srcNgtscIncrementalSemanticGraphMod.SemanticDepGraphUpdater
 import typings.angularCompilerCli.srcNgtscIndexerMod.IndexingContext
-import typings.angularCompilerCli.srcNgtscMetadataMod.InjectableClassRegistry
+import typings.angularCompilerCli.srcNgtscMetadataMod.HostDirectivesResolver
 import typings.angularCompilerCli.srcNgtscMetadataMod.ResourceRegistry
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.MetadataReader
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.MetadataRegistry
 import typings.angularCompilerCli.srcNgtscPartialEvaluatorMod.PartialEvaluator
 import typings.angularCompilerCli.srcNgtscPerfSrcApiMod.PerfRecorder
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.Decorator
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ReflectionHost
 import typings.angularCompilerCli.srcNgtscScopeMod.LocalModuleScopeRegistry
 import typings.angularCompilerCli.srcNgtscScopeMod.TypeCheckScopeRegistry
 import typings.angularCompilerCli.srcNgtscScopeSrcApiMod.ComponentScopeReader
 import typings.angularCompilerCli.srcNgtscScopeSrcDependencyMod.DtsModuleScopeResolver
+import typings.angularCompilerCli.srcNgtscTransformSrcApiMod.AnalysisOutput
 import typings.angularCompilerCli.srcNgtscTransformSrcApiMod.CompileResult
 import typings.angularCompilerCli.srcNgtscTransformSrcApiMod.DecoratorHandler
+import typings.angularCompilerCli.srcNgtscTransformSrcApiMod.HandlerFlags
 import typings.angularCompilerCli.srcNgtscTransformSrcApiMod.ResolveResult
 import typings.angularCompilerCli.srcNgtscTypecheckApiContextMod.TypeCheckContext
 import typings.angularCompilerCli.srcNgtscTypecheckExtendedApiExtendedTemplateCheckerMod.ExtendedTemplateChecker
 import typings.angularCompilerCli.srcNgtscXi18nSrcContextMod.Xi18nContext
+import typings.typescript.mod.ClassDeclaration
 import typings.typescript.mod.Diagnostic
 import typings.typescript.mod.SourceFile
 import org.scalablytyped.runtime.StObject
@@ -58,6 +63,7 @@ object srcNgtscAnnotationsComponentSrcHandlerMod {
       typeCheckScopeRegistry: TypeCheckScopeRegistry,
       resourceRegistry: ResourceRegistry,
       isCore: Boolean,
+      strictCtorDeps: Boolean,
       resourceLoader: ResourceLoader,
       rootDirs: js.Array[String],
       defaultPreserveWhitespaces: Boolean,
@@ -69,11 +75,13 @@ object srcNgtscAnnotationsComponentSrcHandlerMod {
       cycleAnalyzer: CycleAnalyzer,
       cycleHandlingStrategy: CycleHandlingStrategy,
       refEmitter: ReferenceEmitter,
+      referencesRegistry: ReferencesRegistry,
       depTracker: DependencyTracker[SourceFile] | Null,
       injectableRegistry: InjectableClassRegistry,
       semanticDepGraphUpdater: SemanticDepGraphUpdater | Null,
       annotateForClosureCompiler: Boolean,
-      perf: PerfRecorder
+      perf: PerfRecorder,
+      hostDirectivesResolver: HostDirectivesResolver
     ) = this()
     
     /**
@@ -84,10 +92,13 @@ object srcNgtscAnnotationsComponentSrcHandlerMod {
       */
     /* private */ var _checkForCyclicImport: Any = js.native
     
+    def analyze(node: ClassDeclarationDeclarati, decorator: ReadonlyDecorator): AnalysisOutput[ComponentAnalysisData] = js.native
+    def analyze(node: ClassDeclarationDeclarati, decorator: ReadonlyDecorator, flags: HandlerFlags): AnalysisOutput[ComponentAnalysisData] = js.native
+    
     /* private */ var annotateForClosureCompiler: Any = js.native
     
     def compileFull(
-      node: ClassDeclaration[DeclarationNode],
+      node: ClassDeclarationDeclarati,
       analysis: ReadonlyComponentAnalysis,
       resolution: ReadonlyComponentResoluti,
       pool: ConstantPool
@@ -95,7 +106,7 @@ object srcNgtscAnnotationsComponentSrcHandlerMod {
     
     @JSName("compilePartial")
     def compilePartial_MComponentDecoratorHandler(
-      node: ClassDeclaration[DeclarationNode],
+      node: ClassDeclarationDeclarati,
       analysis: ReadonlyComponentAnalysis,
       resolution: ReadonlyComponentResoluti
     ): js.Array[CompileResult] = js.native
@@ -117,23 +128,18 @@ object srcNgtscAnnotationsComponentSrcHandlerMod {
     /* private */ var evaluator: Any = js.native
     
     @JSName("extendedTemplateCheck")
-    def extendedTemplateCheck_MComponentDecoratorHandler(
-      component: typings.typescript.mod.ClassDeclaration,
-      extendedTemplateChecker: ExtendedTemplateChecker
-    ): js.Array[Diagnostic] = js.native
+    def extendedTemplateCheck_MComponentDecoratorHandler(component: ClassDeclaration, extendedTemplateChecker: ExtendedTemplateChecker): js.Array[Diagnostic] = js.native
     
     /* private */ var extractTemplateOptions: Any = js.native
+    
+    /* private */ var hostDirectivesResolver: Any = js.native
     
     /* private */ var i18nNormalizeLineEndingsInICUs: Any = js.native
     
     /* private */ var i18nUseExternalIds: Any = js.native
     
     @JSName("index")
-    def index_MComponentDecoratorHandler(
-      context: IndexingContext,
-      node: ClassDeclaration[DeclarationNode],
-      analysis: ReadonlyComponentAnalysis
-    ): js.UndefOr[Null] = js.native
+    def index_MComponentDecoratorHandler(context: IndexingContext, node: ClassDeclarationDeclarati, analysis: ReadonlyComponentAnalysis): js.UndefOr[Null] = js.native
     
     /* private */ var injectableRegistry: Any = js.native
     
@@ -161,24 +167,22 @@ object srcNgtscAnnotationsComponentSrcHandlerMod {
     /* private */ var preanalyzeTemplateCache: Any = js.native
     
     @JSName("preanalyze")
-    def preanalyze_MComponentDecoratorHandler(node: ClassDeclaration[DeclarationNode], decorator: Decorator): js.UndefOr[js.Promise[Unit]] = js.native
+    def preanalyze_MComponentDecoratorHandler(node: ClassDeclarationDeclarati, decorator: ReadonlyDecorator): js.UndefOr[js.Promise[Unit]] = js.native
     
     @JSName("precedence")
     val precedence_ComponentDecoratorHandler: String | Double = js.native
     
     /* private */ var refEmitter: Any = js.native
     
+    /* private */ var referencesRegistry: Any = js.native
+    
     /* private */ var reflector: Any = js.native
     
     @JSName("register")
-    def register_MComponentDecoratorHandler(node: ClassDeclaration[DeclarationNode], analysis: ComponentAnalysisData): Unit = js.native
+    def register_MComponentDecoratorHandler(node: ClassDeclarationDeclarati, analysis: ComponentAnalysisData): Unit = js.native
     
     @JSName("resolve")
-    def resolve_MComponentDecoratorHandler(
-      node: ClassDeclaration[DeclarationNode],
-      analysis: ReadonlyComponentAnalysis,
-      symbol: ComponentSymbol
-    ): ResolveResult[ComponentResolutionData] = js.native
+    def resolve_MComponentDecoratorHandler(node: ClassDeclarationDeclarati, analysis: ReadonlyComponentAnalysis, symbol: ComponentSymbol): ResolveResult[ComponentResolutionData] = js.native
     
     /* private */ var resourceLoader: Any = js.native
     
@@ -192,19 +196,21 @@ object srcNgtscAnnotationsComponentSrcHandlerMod {
     
     /* private */ var semanticDepGraphUpdater: Any = js.native
     
-    def symbol(node: ClassDeclaration[DeclarationNode], analysis: ReadonlyComponentAnalysis): ComponentSymbol = js.native
+    /* private */ var strictCtorDeps: Any = js.native
+    
+    def symbol(node: ClassDeclarationDeclarati, analysis: ReadonlyComponentAnalysis): ComponentSymbol = js.native
     
     /* private */ var typeCheckScopeRegistry: Any = js.native
     
     @JSName("typeCheck")
-    def typeCheck_MComponentDecoratorHandler(ctx: TypeCheckContext, node: ClassDeclaration[DeclarationNode], meta: ReadonlyComponentAnalysis): Unit = js.native
+    def typeCheck_MComponentDecoratorHandler(ctx: TypeCheckContext, node: ClassDeclarationDeclarati, meta: ReadonlyComponentAnalysis): Unit = js.native
     
     @JSName("updateResources")
-    def updateResources_MComponentDecoratorHandler(node: ClassDeclaration[DeclarationNode], analysis: ComponentAnalysisData): Unit = js.native
+    def updateResources_MComponentDecoratorHandler(node: ClassDeclarationDeclarati, analysis: ComponentAnalysisData): Unit = js.native
     
     /* private */ var usePoisonedData: Any = js.native
     
     @JSName("xi18n")
-    def xi18n_MComponentDecoratorHandler(ctx: Xi18nContext, node: ClassDeclaration[DeclarationNode], analysis: ReadonlyComponentAnalysis): Unit = js.native
+    def xi18n_MComponentDecoratorHandler(ctx: Xi18nContext, node: ClassDeclarationDeclarati, analysis: ReadonlyComponentAnalysis): Unit = js.native
   }
 }

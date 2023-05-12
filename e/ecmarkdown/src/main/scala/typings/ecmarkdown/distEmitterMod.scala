@@ -2,6 +2,7 @@ package typings.ecmarkdown
 
 import typings.ecmarkdown.distNodeTypesMod.AlgorithmNode
 import typings.ecmarkdown.distNodeTypesMod.CommentNode
+import typings.ecmarkdown.distNodeTypesMod.DoubleBracketsNode
 import typings.ecmarkdown.distNodeTypesMod.Node
 import typings.ecmarkdown.distNodeTypesMod.OpaqueTagNode
 import typings.ecmarkdown.distNodeTypesMod.OrderedListItemNode
@@ -29,6 +30,8 @@ object distEmitterMod {
     def emit(node: Node): String = js.native
     
     def emitAlgorithm(algorithm: AlgorithmNode): Unit = js.native
+    
+    def emitFieldOrSlot(node: DoubleBracketsNode): Unit = js.native
     
     def emitFragment(fragment: js.Array[Node]): Unit = js.native
     
@@ -60,7 +63,8 @@ object distEmitterMod {
     
     var str: String = js.native
     
-    def wrapFragment(wrapping: String, fragment: js.Array[Node]): Unit = js.native
+    def wrapFragment(tagName: String, fragment: js.Array[Node]): Unit = js.native
+    def wrapFragment(tagName: String, fragment: js.Array[Node], attrs: String): Unit = js.native
   }
   /* static members */
   object Emitter {

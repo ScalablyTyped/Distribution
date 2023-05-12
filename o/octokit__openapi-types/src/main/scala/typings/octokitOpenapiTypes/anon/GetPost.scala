@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetPost extends StObject {
   
   /**
-    * Lists all self-hosted runner groups for an enterprise.
-    *
-    * You must authenticate using an access token with the `manage_runners:enterprise` scope to use this endpoint.
+    * List gists for the authenticated user
+    * @description Lists the authenticated user's gists or if called anonymously, this endpoint returns all public gists:
     */
   var get: ParametersQueryPerpage
   
   /**
-    * Creates a new self-hosted runner group for an enterprise.
+    * Create a gist
+    * @description Allows you to add a new gist with one or more files.
     *
-    * You must authenticate using an access token with the `manage_runners:enterprise` scope to use this endpoint.
+    * **Note:** Don't name your files "gistfile" with a numerical suffix. This is the format of the automatic naming scheme that Gist uses internally.
     */
-  var post: RequestBodyContentApplicationjsonAllowspublicrepositories
+  var post: RequestBodyContentApplicationjsonDescription
 }
 object GetPost {
   
-  inline def apply(get: ParametersQueryPerpage, post: RequestBodyContentApplicationjsonAllowspublicrepositories): GetPost = {
+  inline def apply(get: ParametersQueryPerpage, post: RequestBodyContentApplicationjsonDescription): GetPost = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPost]
   }
@@ -32,6 +32,6 @@ object GetPost {
     
     inline def setGet(value: ParametersQueryPerpage): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPost(value: RequestBodyContentApplicationjsonAllowspublicrepositories): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+    inline def setPost(value: RequestBodyContentApplicationjsonDescription): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
   }
 }

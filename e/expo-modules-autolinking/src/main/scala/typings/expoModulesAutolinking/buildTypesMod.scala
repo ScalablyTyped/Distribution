@@ -11,6 +11,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object buildTypesMod {
   
+  trait AndroidGradlePluginDescriptor extends StObject {
+    
+    /**
+      * Artifact group
+      */
+    var group: String
+    
+    /**
+      * Gradle plugin ID
+      */
+    var id: String
+    
+    /**
+      * Relative path to the gradle plugin directory
+      */
+    var sourceDir: String
+  }
+  object AndroidGradlePluginDescriptor {
+    
+    inline def apply(group: String, id: String, sourceDir: String): AndroidGradlePluginDescriptor = {
+      val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], sourceDir = sourceDir.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AndroidGradlePluginDescriptor]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AndroidGradlePluginDescriptor] (val x: Self) extends AnyVal {
+      
+      inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setSourceDir(value: String): Self = StObject.set(x, "sourceDir", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait GenerateOptions
     extends StObject
        with ResolveOptions {
@@ -40,6 +75,28 @@ object buildTypesMod {
       inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       
       inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ModuleAndroidPluginInfo extends StObject {
+    
+    var id: String
+    
+    var sourceDir: String
+  }
+  object ModuleAndroidPluginInfo {
+    
+    inline def apply(id: String, sourceDir: String): ModuleAndroidPluginInfo = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], sourceDir = sourceDir.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ModuleAndroidPluginInfo]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleAndroidPluginInfo] (val x: Self) extends AnyVal {
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setSourceDir(value: String): Self = StObject.set(x, "sourceDir", value.asInstanceOf[js.Any])
     }
   }
   
@@ -99,6 +156,8 @@ object buildTypesMod {
     
     var packageName: String
     
+    var plugins: js.UndefOr[js.Array[ModuleAndroidPluginInfo]] = js.undefined
+    
     var projects: js.Array[ModuleAndroidProjectInfo]
   }
   object ModuleDescriptorAndroid {
@@ -116,6 +175,12 @@ object buildTypesMod {
       inline def setModulesVarargs(value: String*): Self = StObject.set(x, "modules", js.Array(value*))
       
       inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+      
+      inline def setPlugins(value: js.Array[ModuleAndroidPluginInfo]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      
+      inline def setPluginsVarargs(value: ModuleAndroidPluginInfo*): Self = StObject.set(x, "plugins", js.Array(value*))
       
       inline def setProjects(value: js.Array[ModuleAndroidProjectInfo]): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
       

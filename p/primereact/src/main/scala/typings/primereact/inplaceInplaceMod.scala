@@ -50,6 +50,8 @@ import typings.primereact.primereactStrings.tree
 import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.yes
+import typings.primereact.utilsUtilsMod.IconOptions
+import typings.primereact.utilsUtilsMod.IconType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -103,39 +105,85 @@ object inplaceInplaceMod {
     def this(props: InplaceProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: InplaceProps, context: Any) = this()
     
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
   }
   
   @JSImport("primereact/inplace/inplace", "InplaceContent")
   @js.native
-  open class InplaceContent protected ()
-    extends Component[js.Object, js.Object, Any] {
-    def this(props: js.Object) = this()
+  open class InplaceContent protected () extends Component[InplaceContentProps, Any, Any] {
+    def this(props: InplaceContentProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Object, context: Any) = this()
-    
-    var children: js.UndefOr[ReactNode] = js.native
+    def this(props: InplaceContentProps, context: Any) = this()
   }
   
   @JSImport("primereact/inplace/inplace", "InplaceDisplay")
   @js.native
-  open class InplaceDisplay protected ()
-    extends Component[js.Object, js.Object, Any] {
-    def this(props: js.Object) = this()
+  open class InplaceDisplay protected () extends Component[InplaceDisplayProps, Any, Any] {
+    def this(props: InplaceDisplayProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Object, context: Any) = this()
+    def this(props: InplaceDisplayProps, context: Any) = this()
+  }
+  
+  trait InplaceContentProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
+    var children: js.UndefOr[ReactNode] = js.undefined
+  }
+  object InplaceContentProps {
+    
+    inline def apply(): InplaceContentProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[InplaceContentProps]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InplaceContentProps] (val x: Self) extends AnyVal {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    }
+  }
+  
+  trait InplaceDisplayProps extends StObject {
+    
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
+    var children: js.UndefOr[ReactNode] = js.undefined
+  }
+  object InplaceDisplayProps {
+    
+    inline def apply(): InplaceDisplayProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[InplaceDisplayProps]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InplaceDisplayProps] (val x: Self) extends AnyVal {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    }
   }
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
@@ -145,6 +193,10 @@ object inplaceInplaceMod {
     
     var accessKey: js.UndefOr[String] = js.undefined
     
+    /**
+      * Whether the content is displayed or not.
+      * @defaultValue false
+      */
     var active: js.UndefOr[Boolean] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
@@ -245,21 +297,41 @@ object inplaceInplaceMod {
     
     var `aria-valuetext`: js.UndefOr[String] = js.undefined
     
+    /**
+      * Used to define a string that labels the component.
+      */
     var ariaLabel: js.UndefOr[String] = js.undefined
     
     var autoCapitalize: js.UndefOr[String] = js.undefined
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * Displays a button to switch back to display mode.
+      * @defaultValue false
+      */
     var closable: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Icon of the close button.
+      */
+    var closeIcon: js.UndefOr[IconType[InplaceProps]] = js.undefined
+    
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -275,6 +347,10 @@ object inplaceInplaceMod {
     
     var dir: js.UndefOr[String] = js.undefined
     
+    /**
+      * When present, it specifies that the element should be disabled.
+      * @defaultValue false
+      */
     var disabled: js.UndefOr[Boolean] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
@@ -327,6 +403,10 @@ object inplaceInplaceMod {
     
     var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke when inplace is closed.
+      * @param {React.MouseEvent}  event - Browser event.
+      */
     var onClose: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
     
     var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
@@ -403,6 +483,10 @@ object inplaceInplaceMod {
     
     var onMouseUp: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke when inplace is opened.
+      * @param {React.MouseEvent}  event - Browser event.
+      */
     var onOpen: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
     
     var onPaste: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
@@ -453,7 +537,11 @@ object inplaceInplaceMod {
     
     var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onToggle: js.UndefOr[js.Function1[/* e */ InplaceToggleParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when inplace is opened or closed.
+      * @param {InplaceToggleEvent}  event - Custom toggle event.
+      */
+    var onToggle: js.UndefOr[js.Function1[/* event */ InplaceToggleEvent, Unit]] = js.undefined
     
     var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
     
@@ -479,9 +567,13 @@ object inplaceInplaceMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -737,6 +829,10 @@ object inplaceInplaceMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -753,13 +849,23 @@ object inplaceInplaceMod {
       
       inline def setClosableUndefined: Self = StObject.set(x, "closable", js.undefined)
       
+      inline def setCloseIcon(value: IconType[InplaceProps]): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
+      
+      inline def setCloseIconFunction1(value: /* options */ IconOptions[InplaceProps] => ReactNode): Self = StObject.set(x, "closeIcon", js.Any.fromFunction1(value))
+      
+      inline def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
+      
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -1145,7 +1251,7 @@ object inplaceInplaceMod {
       
       inline def setOnTimeUpdateUndefined: Self = StObject.set(x, "onTimeUpdate", js.undefined)
       
-      inline def setOnToggle(value: /* e */ InplaceToggleParams => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction1(value))
+      inline def setOnToggle(value: /* event */ InplaceToggleEvent => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction1(value))
       
       inline def setOnToggleUndefined: Self = StObject.set(x, "onToggle", js.undefined)
       
@@ -1197,6 +1303,10 @@ object inplaceInplaceMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1204,6 +1314,10 @@ object inplaceInplaceMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1259,21 +1373,32 @@ object inplaceInplaceMod {
     }
   }
   
-  trait InplaceToggleParams extends StObject {
+  /**
+    * Custom toggle event.
+    * @see {@link InplaceProps.onToggle}
+    * @event
+    */
+  trait InplaceToggleEvent extends StObject {
     
+    /**
+      * Browser event
+      */
     var originalEvent: SyntheticEvent[Element, Event]
     
+    /**
+      * Current value
+      */
     var value: Boolean
   }
-  object InplaceToggleParams {
+  object InplaceToggleEvent {
     
-    inline def apply(originalEvent: SyntheticEvent[Element, Event], value: Boolean): InplaceToggleParams = {
+    inline def apply(originalEvent: SyntheticEvent[Element, Event], value: Boolean): InplaceToggleEvent = {
       val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[InplaceToggleParams]
+      __obj.asInstanceOf[InplaceToggleEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: InplaceToggleParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: InplaceToggleEvent] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       

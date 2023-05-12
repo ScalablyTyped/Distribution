@@ -27,7 +27,7 @@ trait PipelineExecutionStep extends StObject {
   var FailureReason: js.UndefOr[typings.awsSdk.clientsSagemakerMod.FailureReason] = js.undefined
   
   /**
-    * Metadata for the step execution.
+    * Metadata to run the pipeline step.
     */
   var Metadata: js.UndefOr[PipelineExecutionStepMetadata] = js.undefined
   

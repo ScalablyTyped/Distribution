@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.LineHeight
+import typings.csstype.mod.Property.MsScrollbar3dlightColor
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `60` extends StObject {
   
   var value: js.UndefOr[
-    (LineHeight[Double | String]) | (js.Array[
+    MsScrollbar3dlightColor | (js.Array[
       (Extract[
         js.UndefOr[
-          (LineHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[LineHeight[Double | String]]]])
+          MsScrollbar3dlightColor | js.Array[NonNullable[js.UndefOr[MsScrollbar3dlightColor]]]
         ], 
         String
-      ]) | (NonNullable[js.UndefOr[LineHeight[Double | String]]])
+      ]) | NonNullable[js.UndefOr[MsScrollbar3dlightColor]]
     ])
   ] = js.native
 }

@@ -13,9 +13,9 @@ object libUtilCheckEmphasisMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def checkEmphasis(context: Context): Exclude[js.UndefOr[Asterisk | _underscore], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkEmphasis")(context.asInstanceOf[js.Any]).asInstanceOf[Exclude[js.UndefOr[Asterisk | _underscore], Unit]]
-  
-  type Context = typings.mdastUtilToMarkdown.libTypesMod.Context
+  inline def checkEmphasis(state: State): Exclude[js.UndefOr[_underscore | Asterisk | Null], js.UndefOr[Null]] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkEmphasis")(state.asInstanceOf[js.Any]).asInstanceOf[Exclude[js.UndefOr[_underscore | Asterisk | Null], js.UndefOr[Null]]]
   
   type Options = typings.mdastUtilToMarkdown.libTypesMod.Options
+  
+  type State = typings.mdastUtilToMarkdown.libTypesMod.State
 }

@@ -6,13 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LanguageOwner extends StObject {
   
-  /** The language of the CodeQL database. */
+  /** @description The language of the CodeQL database. */
   var language: String
   
-  /** The account owner of the repository. The name is not case sensitive. */
   var owner: String
   
-  /** The name of the repository. The name is not case sensitive. */
   var repo: String
 }
 object LanguageOwner {

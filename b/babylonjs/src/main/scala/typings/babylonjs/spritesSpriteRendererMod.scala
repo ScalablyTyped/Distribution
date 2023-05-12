@@ -36,6 +36,8 @@ object spritesSpriteRendererMod {
     
     /* private */ val _capacity: Any = js.native
     
+    /* private */ var _createEffects: Any = js.native
+    
     /* private */ var _drawWrapperBase: Any = js.native
     
     /* private */ var _drawWrapperDepth: Any = js.native
@@ -49,6 +51,8 @@ object spritesSpriteRendererMod {
     /* private */ val _epsilon: Any = js.native
     
     /* private */ var _indexBuffer: Any = js.native
+    
+    /* private */ var _pixelPerfect: Any = js.native
     
     /* private */ val _scene: Any = js.native
     
@@ -110,6 +114,13 @@ object spritesSpriteRendererMod {
       * Gets or sets a boolean indicating if the manager must consider scene fog when rendering
       */
     var fogEnabled: Boolean = js.native
+    
+    /**
+      * Gets or sets a boolean indicating if the renderer must render sprites with pixel perfect rendering
+      * Note that pixel perfect mode is not supported in WebGL 1
+      */
+    def pixelPerfect: Boolean = js.native
+    def pixelPerfect_=(value: Boolean): Unit = js.native
     
     /**
       * Rebuilds the renderer (after a context lost, for eg)

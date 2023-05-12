@@ -46,7 +46,7 @@ object objectexplorer {
     /**
       * Get the parent node. Returns undefined if there is none.
       */
-    def getParent(): Thenable[ObjectExplorerNode] = js.native
+    def getParent(): Thenable[js.UndefOr[ObjectExplorerNode]] = js.native
     
     /**
       * Whether the node is currently expanded in Object Explorer

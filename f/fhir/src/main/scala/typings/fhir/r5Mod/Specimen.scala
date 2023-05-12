@@ -2,6 +2,8 @@ package typings.fhir.r5Mod
 
 import typings.fhir.fhirStrings.`entered-in-error`
 import typings.fhir.fhirStrings.available
+import typings.fhir.fhirStrings.grouped
+import typings.fhir.fhirStrings.pooled
 import typings.fhir.fhirStrings.unavailable_
 import typings.fhir.fhirStrings.unsatisfactory
 import org.scalablytyped.runtime.StObject
@@ -12,6 +14,8 @@ trait Specimen
   extends StObject
      with DomainResource
      with _FhirResource {
+  
+  var _combined: js.UndefOr[Element] = js.undefined
   
   var _receivedTime: js.UndefOr[Element] = js.undefined
   
@@ -28,6 +32,11 @@ trait Specimen
   var collection: js.UndefOr[SpecimenCollection] = js.undefined
   
   /**
+    * This element signifies if the specimen is part of a group or pooled.
+    */
+  var combined: js.UndefOr[grouped | pooled] = js.undefined
+  
+  /**
     * Specimen condition is an observation made about the specimen.  It's a point-in-time assessment.  It can be used to assess its quality or appropriateness for a specific test.
     */
   var condition: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
@@ -36,6 +45,11 @@ trait Specimen
     * The container holding the specimen.  The recursive nature of containers; i.e. blood in tube in tray in rack is not addressed here.
     */
   var container: js.UndefOr[js.Array[SpecimenContainer]] = js.undefined
+  
+  /**
+    * A physical feature or landmark on a specimen, highlighted for context by the collector of the specimen (e.g. surgeon), that identifies the type of feature as well as its meaning (e.g. the red ink indicating the resection margin of the right lobe of the excised prostate tissue or wire loop at radiologically suspected tumor location).
+    */
+  var feature: js.UndefOr[js.Array[SpecimenFeature]] = js.undefined
   
   /**
     * Id for specimen.
@@ -72,6 +86,11 @@ trait Specimen
   val resourceType_Specimen: typings.fhir.fhirStrings.Specimen
   
   /**
+    * The role or reason for the specimen in the testing workflow.
+    */
+  var role: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  
+  /**
     * This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.
     */
   var status: js.UndefOr[available | unavailable_ | unsatisfactory | `entered-in-error`] = js.undefined
@@ -104,6 +123,10 @@ object Specimen {
     
     inline def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
     
+    inline def setCombined(value: grouped | pooled): Self = StObject.set(x, "combined", value.asInstanceOf[js.Any])
+    
+    inline def setCombinedUndefined: Self = StObject.set(x, "combined", js.undefined)
+    
     inline def setCondition(value: js.Array[CodeableConcept]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
@@ -115,6 +138,12 @@ object Specimen {
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     inline def setContainerVarargs(value: SpecimenContainer*): Self = StObject.set(x, "container", js.Array(value*))
+    
+    inline def setFeature(value: js.Array[SpecimenFeature]): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+    
+    inline def setFeatureUndefined: Self = StObject.set(x, "feature", js.undefined)
+    
+    inline def setFeatureVarargs(value: SpecimenFeature*): Self = StObject.set(x, "feature", js.Array(value*))
     
     inline def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
@@ -152,6 +181,12 @@ object Specimen {
     
     inline def setResourceType(value: typings.fhir.fhirStrings.Specimen): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
+    inline def setRole(value: js.Array[CodeableConcept]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    
+    inline def setRoleVarargs(value: CodeableConcept*): Self = StObject.set(x, "role", js.Array(value*))
+    
     inline def setStatus(value: available | unavailable_ | unsatisfactory | `entered-in-error`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
@@ -163,6 +198,10 @@ object Specimen {
     inline def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def set_combined(value: Element): Self = StObject.set(x, "_combined", value.asInstanceOf[js.Any])
+    
+    inline def set_combinedUndefined: Self = StObject.set(x, "_combined", js.undefined)
     
     inline def set_receivedTime(value: Element): Self = StObject.set(x, "_receivedTime", value.asInstanceOf[js.Any])
     

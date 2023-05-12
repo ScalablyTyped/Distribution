@@ -7,9 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WorkGroupConfiguration extends StObject {
   
   /**
+    * Specifies a user defined JSON string that is passed to the notebook engine.
+    */
+  var AdditionalConfiguration: js.UndefOr[NameString] = js.undefined
+  
+  /**
     * The upper data usage limit (cutoff) for the amount of bytes a single query in a workgroup is allowed to scan.
     */
   var BytesScannedCutoffPerQuery: js.UndefOr[BytesScannedCutoffValue] = js.undefined
+  
+  /**
+    * Specifies the KMS key that is used to encrypt the user's data stores in Athena.
+    */
+  var CustomerContentEncryptionConfiguration: js.UndefOr[typings.awsSdk.clientsAthenaMod.CustomerContentEncryptionConfiguration] = js.undefined
+  
+  /**
+    * Enforces a minimal level of encryption for the workgroup for query and calculation results that are written to Amazon S3. When enabled, workgroup users can set encryption only to the minimum level set by the administrator or higher when they submit queries. The EnforceWorkGroupConfiguration setting takes precedence over the EnableMinimumEncryptionConfiguration flag. This means that if EnforceWorkGroupConfiguration is true, the EnableMinimumEncryptionConfiguration flag is ignored, and the workgroup configuration for encryption is used.
+    */
+  var EnableMinimumEncryptionConfiguration: js.UndefOr[BoxedBoolean] = js.undefined
   
   /**
     * If set to "true", the settings for the workgroup override client-side settings. If set to "false", client-side settings are used. For more information, see Workgroup Settings Override Client-Side Settings.
@@ -22,6 +37,11 @@ trait WorkGroupConfiguration extends StObject {
   var EngineVersion: js.UndefOr[typings.awsSdk.clientsAthenaMod.EngineVersion] = js.undefined
   
   /**
+    * Role used in a session for accessing the user's resources.
+    */
+  var ExecutionRole: js.UndefOr[RoleArn] = js.undefined
+  
+  /**
     * Indicates that the Amazon CloudWatch metrics are enabled for the workgroup.
     */
   var PublishCloudWatchMetricsEnabled: js.UndefOr[BoxedBoolean] = js.undefined
@@ -32,7 +52,7 @@ trait WorkGroupConfiguration extends StObject {
   var RequesterPaysEnabled: js.UndefOr[BoxedBoolean] = js.undefined
   
   /**
-    * The configuration for the workgroup, which includes the location in Amazon S3 where query results are stored and the encryption option, if any, used for query results. To run the query, you must specify the query results location using one of the ways: either in the workgroup using this setting, or for individual queries (client-side), using ResultConfiguration$OutputLocation. If none of them is set, Athena issues an error that no output location is provided. For more information, see Query Results.
+    * The configuration for the workgroup, which includes the location in Amazon S3 where query and calculation results are stored and the encryption option, if any, used for query and calculation results. To run the query, you must specify the query results location using one of the ways: either in the workgroup using this setting, or for individual queries (client-side), using ResultConfiguration$OutputLocation. If none of them is set, Athena issues an error that no output location is provided. For more information, see Working with query results, recent queries, and output files.
     */
   var ResultConfiguration: js.UndefOr[typings.awsSdk.clientsAthenaMod.ResultConfiguration] = js.undefined
 }
@@ -46,9 +66,21 @@ object WorkGroupConfiguration {
   @scala.inline
   implicit open class MutableBuilder[Self <: WorkGroupConfiguration] (val x: Self) extends AnyVal {
     
+    inline def setAdditionalConfiguration(value: NameString): Self = StObject.set(x, "AdditionalConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setAdditionalConfigurationUndefined: Self = StObject.set(x, "AdditionalConfiguration", js.undefined)
+    
     inline def setBytesScannedCutoffPerQuery(value: BytesScannedCutoffValue): Self = StObject.set(x, "BytesScannedCutoffPerQuery", value.asInstanceOf[js.Any])
     
     inline def setBytesScannedCutoffPerQueryUndefined: Self = StObject.set(x, "BytesScannedCutoffPerQuery", js.undefined)
+    
+    inline def setCustomerContentEncryptionConfiguration(value: CustomerContentEncryptionConfiguration): Self = StObject.set(x, "CustomerContentEncryptionConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setCustomerContentEncryptionConfigurationUndefined: Self = StObject.set(x, "CustomerContentEncryptionConfiguration", js.undefined)
+    
+    inline def setEnableMinimumEncryptionConfiguration(value: BoxedBoolean): Self = StObject.set(x, "EnableMinimumEncryptionConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setEnableMinimumEncryptionConfigurationUndefined: Self = StObject.set(x, "EnableMinimumEncryptionConfiguration", js.undefined)
     
     inline def setEnforceWorkGroupConfiguration(value: BoxedBoolean): Self = StObject.set(x, "EnforceWorkGroupConfiguration", value.asInstanceOf[js.Any])
     
@@ -57,6 +89,10 @@ object WorkGroupConfiguration {
     inline def setEngineVersion(value: EngineVersion): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
     
     inline def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
+    
+    inline def setExecutionRole(value: RoleArn): Self = StObject.set(x, "ExecutionRole", value.asInstanceOf[js.Any])
+    
+    inline def setExecutionRoleUndefined: Self = StObject.set(x, "ExecutionRole", js.undefined)
     
     inline def setPublishCloudWatchMetricsEnabled(value: BoxedBoolean): Self = StObject.set(x, "PublishCloudWatchMetricsEnabled", value.asInstanceOf[js.Any])
     

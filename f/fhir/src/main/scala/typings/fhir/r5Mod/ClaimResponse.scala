@@ -53,14 +53,34 @@ trait ClaimResponse
   var created: String
   
   /**
+    * The element is used to indicate the current state of the adjudication overall for the claim resource, for example: the request has been held (pended) for adjudication processing, for manual review or other reasons; that it has been processed and will be paid, or the outstanding paid, as submitted (approved); that no amount will be paid (denied); or that some amount between zero and the submitted amount will be paid (partial).
+    */
+  var decision: js.UndefOr[CodeableConcept] = js.undefined
+  
+  /**
+    * For example DRG (Diagnosis Related Group) or a bundled billing code. A patient may have a diagnosis of a Myocardial Infarction and a DRG for HeartAttack would be assigned. The Claim item (and possible subsequent claims) would refer to the DRG for those line items that were for services related to the heart attack event.
+    */
+  var diagnosisRelatedGroup: js.UndefOr[CodeableConcept] = js.undefined
+  
+  /**
     * A human readable description of the status of the adjudication.
     */
   var disposition: js.UndefOr[String] = js.undefined
   
   /**
+    * This will typically be the encounter the event occurred within, but some activities may be initiated prior to or after the official completion of an encounter but still be tied to the context of the encounter.
+    */
+  var encounter: js.UndefOr[js.Array[Reference]] = js.undefined
+  
+  /**
     * If the request contains errors then an error element should be provided and no adjudication related sections (item, addItem, or payment) should be present.
     */
   var error: js.UndefOr[js.Array[ClaimResponseError]] = js.undefined
+  
+  /**
+    * Information code for an event with a corresponding date or period.
+    */
+  var event: js.UndefOr[js.Array[ClaimResponseEvent]] = js.undefined
   
   /**
     * Needed to permit insurers to include the actual form.
@@ -90,7 +110,7 @@ trait ClaimResponse
   /**
     * The party responsible for authorization, adjudication and reimbursement.
     */
-  var insurer: Reference
+  var insurer: js.UndefOr[Reference] = js.undefined
   
   /**
     * A claim line. Either a simple (a product or service) or a 'group' of details which can also be a simple items or groups of sub-details.
@@ -98,7 +118,7 @@ trait ClaimResponse
   var item: js.UndefOr[js.Array[ClaimResponseItem]] = js.undefined
   
   /**
-    * The resource may be used to indicate that: the request has been held (queued) for processing; that it has been processed and errors found (error); that no errors were found and that some of the adjudication has been undertaken (partial) or that all of the adjudication has been undertaken (complete).
+    * The resource may be used to indicate that the Claim/Preauthorization/Pre-determination has been received but processing has not begun (queued); that it has been processed and one or more errors have been detected (error); no errors were detected and some of the adjudication processing has been performed (partial); or all of the adjudication processing has completed without errors (complete).
     */
   var outcome: queued | complete | error | partial
   
@@ -138,7 +158,7 @@ trait ClaimResponse
   var request: js.UndefOr[Reference] = js.undefined
   
   /**
-    * Typically this field would be 1..1 where this party is responsible for the claim but not necessarily professionally responsible for the provision of the individual products and services listed below.
+    * Typically this field would be 1..1 where this party is accountable for the data content within the claim but is not necessarily the facility, provider group or practitioner who provided the products and services listed within this claim resource. This field is the Billing Provider, for example, a facility, provider group, lab or practitioner..
     */
   var requestor: js.UndefOr[Reference] = js.undefined
   
@@ -162,12 +182,17 @@ trait ClaimResponse
   var total: js.UndefOr[js.Array[ClaimResponseTotal]] = js.undefined
   
   /**
+    * Trace number for tracking purposes. May be defined at the jurisdiction level or between trading partners.
+    */
+  var traceNumber: js.UndefOr[js.Array[Identifier]] = js.undefined
+  
+  /**
     * This may contain the local bill type codes, for example the US UB-04 bill type code or the CMS bill type.
     */
   var `type`: CodeableConcept
   
   /**
-    * A code to indicate whether the nature of the request is: to request adjudication of products and services previously rendered; or requesting authorization and adjudication for provision in the future; or requesting the non-binding adjudication of the listed products and services which could be provided in the future.
+    * A code to indicate whether the nature of the request is: Claim - A request to an Insurer to adjudicate the supplied charges for health care goods and services under the identified policy and to pay the determined Benefit amount, if any; Preauthorization - A request to an Insurer to adjudicate the supplied proposed future charges for health care goods and services under the identified policy and to approve the services and provide the expected benefit amounts and potentially to reserve funds to pay the benefits when Claims for the indicated services are later submitted; or, Pre-determination - A request to an Insurer to adjudicate the supplied 'what if' charges for health care goods and services under the identified policy and report back what the Benefit payable would be had the services actually been provided.
     */
   var use: claim_ | preauthorization | predetermination
 }
@@ -175,14 +200,13 @@ object ClaimResponse {
   
   inline def apply(
     created: String,
-    insurer: Reference,
     outcome: queued | complete | error | partial,
     patient: Reference,
     status: active | cancelled | draft | `entered-in-error`,
     `type`: CodeableConcept,
     use: claim_ | preauthorization | predetermination
   ): ClaimResponse = {
-    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], insurer = insurer.asInstanceOf[js.Any], outcome = outcome.asInstanceOf[js.Any], patient = patient.asInstanceOf[js.Any], resourceType = "ClaimResponse", status = status.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], outcome = outcome.asInstanceOf[js.Any], patient = patient.asInstanceOf[js.Any], resourceType = "ClaimResponse", status = status.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClaimResponse]
   }
@@ -210,15 +234,35 @@ object ClaimResponse {
     
     inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
+    inline def setDecision(value: CodeableConcept): Self = StObject.set(x, "decision", value.asInstanceOf[js.Any])
+    
+    inline def setDecisionUndefined: Self = StObject.set(x, "decision", js.undefined)
+    
+    inline def setDiagnosisRelatedGroup(value: CodeableConcept): Self = StObject.set(x, "diagnosisRelatedGroup", value.asInstanceOf[js.Any])
+    
+    inline def setDiagnosisRelatedGroupUndefined: Self = StObject.set(x, "diagnosisRelatedGroup", js.undefined)
+    
     inline def setDisposition(value: String): Self = StObject.set(x, "disposition", value.asInstanceOf[js.Any])
     
     inline def setDispositionUndefined: Self = StObject.set(x, "disposition", js.undefined)
+    
+    inline def setEncounter(value: js.Array[Reference]): Self = StObject.set(x, "encounter", value.asInstanceOf[js.Any])
+    
+    inline def setEncounterUndefined: Self = StObject.set(x, "encounter", js.undefined)
+    
+    inline def setEncounterVarargs(value: Reference*): Self = StObject.set(x, "encounter", js.Array(value*))
     
     inline def setError(value: js.Array[ClaimResponseError]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     inline def setErrorVarargs(value: ClaimResponseError*): Self = StObject.set(x, "error", js.Array(value*))
+    
+    inline def setEvent(value: js.Array[ClaimResponseEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    
+    inline def setEventVarargs(value: ClaimResponseEvent*): Self = StObject.set(x, "event", js.Array(value*))
     
     inline def setForm(value: Attachment): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
@@ -245,6 +289,8 @@ object ClaimResponse {
     inline def setInsuranceVarargs(value: ClaimResponseInsurance*): Self = StObject.set(x, "insurance", js.Array(value*))
     
     inline def setInsurer(value: Reference): Self = StObject.set(x, "insurer", value.asInstanceOf[js.Any])
+    
+    inline def setInsurerUndefined: Self = StObject.set(x, "insurer", js.undefined)
     
     inline def setItem(value: js.Array[ClaimResponseItem]): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
@@ -299,6 +345,12 @@ object ClaimResponse {
     inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
     
     inline def setTotalVarargs(value: ClaimResponseTotal*): Self = StObject.set(x, "total", js.Array(value*))
+    
+    inline def setTraceNumber(value: js.Array[Identifier]): Self = StObject.set(x, "traceNumber", value.asInstanceOf[js.Any])
+    
+    inline def setTraceNumberUndefined: Self = StObject.set(x, "traceNumber", js.undefined)
+    
+    inline def setTraceNumberVarargs(value: Identifier*): Self = StObject.set(x, "traceNumber", js.Array(value*))
     
     inline def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,7 @@ trait DropPendingState
   
   var dimensions: DimensionMap
   
-  var forceShouldAnimate: js.UndefOr[Boolean] = js.undefined
+  var forceShouldAnimate: js.UndefOr[Boolean | Null] = js.undefined
   
   var impact: DragImpact
   
@@ -39,7 +39,7 @@ trait DropPendingState
   
   var reason: DropReason
   
-  var scrollJumpRequest: js.UndefOr[Position] = js.undefined
+  var scrollJumpRequest: js.UndefOr[Position | Null] = js.undefined
   
   var viewport: Viewport
 }
@@ -76,6 +76,8 @@ object DropPendingState {
     
     inline def setForceShouldAnimate(value: Boolean): Self = StObject.set(x, "forceShouldAnimate", value.asInstanceOf[js.Any])
     
+    inline def setForceShouldAnimateNull: Self = StObject.set(x, "forceShouldAnimate", null)
+    
     inline def setForceShouldAnimateUndefined: Self = StObject.set(x, "forceShouldAnimate", js.undefined)
     
     inline def setImpact(value: DragImpact): Self = StObject.set(x, "impact", value.asInstanceOf[js.Any])
@@ -97,6 +99,8 @@ object DropPendingState {
     inline def setReason(value: DropReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     inline def setScrollJumpRequest(value: Position): Self = StObject.set(x, "scrollJumpRequest", value.asInstanceOf[js.Any])
+    
+    inline def setScrollJumpRequestNull: Self = StObject.set(x, "scrollJumpRequest", null)
     
     inline def setScrollJumpRequestUndefined: Self = StObject.set(x, "scrollJumpRequest", js.undefined)
     

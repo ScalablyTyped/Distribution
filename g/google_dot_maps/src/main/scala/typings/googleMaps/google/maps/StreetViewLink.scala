@@ -4,26 +4,23 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A collection of references to adjacent Street View panos.
-  */
 trait StreetViewLink extends StObject {
   
   /**
     * A localized string describing the link.
     */
-  var description: String | Null
+  var description: Null | String
   
   /**
     * The heading of the link.
     */
-  var heading: Double | Null
+  var heading: Null | Double
   
   /**
     * A unique identifier for the panorama. This id is stable within a session
     * but unstable across sessions.
     */
-  var pano: String | Null
+  var pano: Null | String
 }
 object StreetViewLink {
   

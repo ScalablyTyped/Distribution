@@ -30,19 +30,23 @@ trait MatchArgumentsArrayany extends StObject {
     js.Array[Any]
   ])
   
-  var find: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: <S extends any>(predicate : (this : void, value : any, index : number, obj : std.Array<any>): value is S): S | undefined extends object ? cypress.cypress/types/sinon.MatchArguments<<S extends any>(predicate : (this : void, value : any, index : number, obj : std.Array<any>): value is S): S | undefined> : never */ js.Any) | (js.Function1[
-    /* predicate */ js.ThisFunction3[
-      /* this */ Unit, 
-      /* value */ Any, 
-      /* index */ Double, 
-      /* obj */ js.Array[Any], 
-      /* is any */ Boolean
-    ], 
+  var find: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: <S extends any>(predicate : (value : any, index : number, obj : std.Array<any>): value is S): S | undefined extends object ? cypress.cypress/types/sinon.MatchArguments<<S extends any>(predicate : (value : any, index : number, obj : std.Array<any>): value is S): S | undefined> : never */ js.Any) | (js.Function1[
+    /* predicate */ js.Function3[/* value */ Any, /* index */ Double, /* obj */ js.Array[Any], /* is any */ Boolean], 
     js.UndefOr[Any]
   ])
   
   var findIndex: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: (predicate : (value : any, index : number, obj : std.Array<any>): unknown): number extends object ? cypress.cypress/types/sinon.MatchArguments<(predicate : (value : any, index : number, obj : std.Array<any>): unknown): number> : never */ js.Any) | (js.Function1[
     /* predicate */ js.Function3[/* value */ Any, /* index */ Double, /* obj */ js.Array[Any], Any], 
+    Double
+  ])
+  
+  var findLast: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: <S extends any>(predicate : (value : any, index : number, array : std.Array<any>): value is S): S | undefined extends object ? cypress.cypress/types/sinon.MatchArguments<<S extends any>(predicate : (value : any, index : number, array : std.Array<any>): value is S): S | undefined> : never */ js.Any) | (js.Function1[
+    /* predicate */ js.Function3[/* value */ Any, /* index */ Double, /* array */ js.Array[Any], /* is any */ Boolean], 
+    js.UndefOr[Any]
+  ])
+  
+  var findLastIndex: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: (predicate : (value : any, index : number, array : std.Array<any>): unknown): number extends object ? cypress.cypress/types/sinon.MatchArguments<(predicate : (value : any, index : number, array : std.Array<any>): unknown): number> : never */ js.Any) | (js.Function1[
+    /* predicate */ js.Function3[/* value */ Any, /* index */ Double, /* array */ js.Array[Any], Any], 
     Double
   ])
   
@@ -148,18 +152,20 @@ object MatchArgumentsArrayany {
       /* predicate */ js.Function3[/* value */ Any, /* index */ Double, /* array */ js.Array[Any], /* is any */ Boolean], 
       js.Array[Any]
     ]),
-    find: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: <S extends any>(predicate : (this : void, value : any, index : number, obj : std.Array<any>): value is S): S | undefined extends object ? cypress.cypress/types/sinon.MatchArguments<<S extends any>(predicate : (this : void, value : any, index : number, obj : std.Array<any>): value is S): S | undefined> : never */ js.Any) | (js.Function1[
-      /* predicate */ js.ThisFunction3[
-        /* this */ Unit, 
-        /* value */ Any, 
-        /* index */ Double, 
-        /* obj */ js.Array[Any], 
-        /* is any */ Boolean
-      ], 
+    find: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: <S extends any>(predicate : (value : any, index : number, obj : std.Array<any>): value is S): S | undefined extends object ? cypress.cypress/types/sinon.MatchArguments<<S extends any>(predicate : (value : any, index : number, obj : std.Array<any>): value is S): S | undefined> : never */ js.Any) | (js.Function1[
+      /* predicate */ js.Function3[/* value */ Any, /* index */ Double, /* obj */ js.Array[Any], /* is any */ Boolean], 
       js.UndefOr[Any]
     ]),
     findIndex: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: (predicate : (value : any, index : number, obj : std.Array<any>): unknown): number extends object ? cypress.cypress/types/sinon.MatchArguments<(predicate : (value : any, index : number, obj : std.Array<any>): unknown): number> : never */ js.Any) | (js.Function1[
       /* predicate */ js.Function3[/* value */ Any, /* index */ Double, /* obj */ js.Array[Any], Any], 
+      Double
+    ]),
+    findLast: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: <S extends any>(predicate : (value : any, index : number, array : std.Array<any>): value is S): S | undefined extends object ? cypress.cypress/types/sinon.MatchArguments<<S extends any>(predicate : (value : any, index : number, array : std.Array<any>): value is S): S | undefined> : never */ js.Any) | (js.Function1[
+      /* predicate */ js.Function3[/* value */ Any, /* index */ Double, /* array */ js.Array[Any], /* is any */ Boolean], 
+      js.UndefOr[Any]
+    ]),
+    findLastIndex: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: (predicate : (value : any, index : number, array : std.Array<any>): unknown): number extends object ? cypress.cypress/types/sinon.MatchArguments<(predicate : (value : any, index : number, array : std.Array<any>): unknown): number> : never */ js.Any) | (js.Function1[
+      /* predicate */ js.Function3[/* value */ Any, /* index */ Double, /* array */ js.Array[Any], Any], 
       Double
     ]),
     flat: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: <A, D extends number = 1>(this : A): std.Array<std.FlatArray<A, D>> extends object ? cypress.cypress/types/sinon.MatchArguments<<A, D extends number = 1>(this : A): std.Array<std.FlatArray<A, D>>> : never */ js.Any) | (js.ThisFunction0[/* this */ Any, js.Array[FlatArray[Any, typings.cypress.cypressInts.`1`]]]),
@@ -223,7 +229,7 @@ object MatchArgumentsArrayany {
     unshift: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: (items : ...any): number extends object ? cypress.cypress/types/sinon.MatchArguments<(items : ...any): number> : never */ js.Any) | (js.Function1[/* repeated */ Any, Double]),
     values: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: (): std.IterableIterator<any> extends object ? cypress.cypress/types/sinon.MatchArguments<(): std.IterableIterator<any>> : never */ js.Any) | js.Function0[IterableIterator[Any]]
   ): MatchArgumentsArrayany = {
-    val __obj = js.Dynamic.literal(at = at.asInstanceOf[js.Any], concat = concat.asInstanceOf[js.Any], copyWithin = copyWithin.asInstanceOf[js.Any], entries = entries.asInstanceOf[js.Any], every = every.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], find = find.asInstanceOf[js.Any], findIndex = findIndex.asInstanceOf[js.Any], flat = flat.asInstanceOf[js.Any], flatMap = flatMap.asInstanceOf[js.Any], forEach = forEach.asInstanceOf[js.Any], includes = includes.asInstanceOf[js.Any], indexOf = indexOf.asInstanceOf[js.Any], join = join.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], lastIndexOf = lastIndexOf.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], pop = pop.asInstanceOf[js.Any], push = push.asInstanceOf[js.Any], reduce = reduce.asInstanceOf[js.Any], reduceRight = reduceRight.asInstanceOf[js.Any], reverse = reverse.asInstanceOf[js.Any], shift = shift.asInstanceOf[js.Any], slice = slice.asInstanceOf[js.Any], some = some.asInstanceOf[js.Any], sort = sort.asInstanceOf[js.Any], splice = splice.asInstanceOf[js.Any], toLocaleString = toLocaleString.asInstanceOf[js.Any], unshift = unshift.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(at = at.asInstanceOf[js.Any], concat = concat.asInstanceOf[js.Any], copyWithin = copyWithin.asInstanceOf[js.Any], entries = entries.asInstanceOf[js.Any], every = every.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], find = find.asInstanceOf[js.Any], findIndex = findIndex.asInstanceOf[js.Any], findLast = findLast.asInstanceOf[js.Any], findLastIndex = findLastIndex.asInstanceOf[js.Any], flat = flat.asInstanceOf[js.Any], flatMap = flatMap.asInstanceOf[js.Any], forEach = forEach.asInstanceOf[js.Any], includes = includes.asInstanceOf[js.Any], indexOf = indexOf.asInstanceOf[js.Any], join = join.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], lastIndexOf = lastIndexOf.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], pop = pop.asInstanceOf[js.Any], push = push.asInstanceOf[js.Any], reduce = reduce.asInstanceOf[js.Any], reduceRight = reduceRight.asInstanceOf[js.Any], reverse = reverse.asInstanceOf[js.Any], shift = shift.asInstanceOf[js.Any], slice = slice.asInstanceOf[js.Any], some = some.asInstanceOf[js.Any], sort = sort.asInstanceOf[js.Any], splice = splice.asInstanceOf[js.Any], toLocaleString = toLocaleString.asInstanceOf[js.Any], unshift = unshift.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.updateDynamic("toString")(toString_.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatchArgumentsArrayany]
   }
@@ -284,26 +290,14 @@ object MatchArgumentsArrayany {
     ): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
     inline def setFind(
-      value: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: <S extends any>(predicate : (this : void, value : any, index : number, obj : std.Array<any>): value is S): S | undefined extends object ? cypress.cypress/types/sinon.MatchArguments<<S extends any>(predicate : (this : void, value : any, index : number, obj : std.Array<any>): value is S): S | undefined> : never */ js.Any) | (js.Function1[
-          /* predicate */ js.ThisFunction3[
-            /* this */ Unit, 
-            /* value */ Any, 
-            /* index */ Double, 
-            /* obj */ js.Array[Any], 
-            /* is any */ Boolean
-          ], 
+      value: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: <S extends any>(predicate : (value : any, index : number, obj : std.Array<any>): value is S): S | undefined extends object ? cypress.cypress/types/sinon.MatchArguments<<S extends any>(predicate : (value : any, index : number, obj : std.Array<any>): value is S): S | undefined> : never */ js.Any) | (js.Function1[
+          /* predicate */ js.Function3[/* value */ Any, /* index */ Double, /* obj */ js.Array[Any], /* is any */ Boolean], 
           js.UndefOr[Any]
         ])
     ): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
     
     inline def setFindFunction1(
-      value: /* predicate */ js.ThisFunction3[
-          /* this */ Unit, 
-          /* value */ Any, 
-          /* index */ Double, 
-          /* obj */ js.Array[Any], 
-          /* is any */ Boolean
-        ] => js.UndefOr[Any]
+      value: /* predicate */ js.Function3[/* value */ Any, /* index */ Double, /* obj */ js.Array[Any], /* is any */ Boolean] => js.UndefOr[Any]
     ): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
     
     inline def setFindIndex(
@@ -316,6 +310,28 @@ object MatchArgumentsArrayany {
     inline def setFindIndexFunction1(
       value: /* predicate */ js.Function3[/* value */ Any, /* index */ Double, /* obj */ js.Array[Any], Any] => Double
     ): Self = StObject.set(x, "findIndex", js.Any.fromFunction1(value))
+    
+    inline def setFindLast(
+      value: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: <S extends any>(predicate : (value : any, index : number, array : std.Array<any>): value is S): S | undefined extends object ? cypress.cypress/types/sinon.MatchArguments<<S extends any>(predicate : (value : any, index : number, array : std.Array<any>): value is S): S | undefined> : never */ js.Any) | (js.Function1[
+          /* predicate */ js.Function3[/* value */ Any, /* index */ Double, /* array */ js.Array[Any], /* is any */ Boolean], 
+          js.UndefOr[Any]
+        ])
+    ): Self = StObject.set(x, "findLast", value.asInstanceOf[js.Any])
+    
+    inline def setFindLastFunction1(
+      value: /* predicate */ js.Function3[/* value */ Any, /* index */ Double, /* array */ js.Array[Any], /* is any */ Boolean] => js.UndefOr[Any]
+    ): Self = StObject.set(x, "findLast", js.Any.fromFunction1(value))
+    
+    inline def setFindLastIndex(
+      value: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: (predicate : (value : any, index : number, array : std.Array<any>): unknown): number extends object ? cypress.cypress/types/sinon.MatchArguments<(predicate : (value : any, index : number, array : std.Array<any>): unknown): number> : never */ js.Any) | (js.Function1[
+          /* predicate */ js.Function3[/* value */ Any, /* index */ Double, /* array */ js.Array[Any], Any], 
+          Double
+        ])
+    ): Self = StObject.set(x, "findLastIndex", value.asInstanceOf[js.Any])
+    
+    inline def setFindLastIndexFunction1(
+      value: /* predicate */ js.Function3[/* value */ Any, /* index */ Double, /* array */ js.Array[Any], Any] => Double
+    ): Self = StObject.set(x, "findLastIndex", js.Any.fromFunction1(value))
     
     inline def setFlat(
       value: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: <A, D extends number = 1>(this : A): std.Array<std.FlatArray<A, D>> extends object ? cypress.cypress/types/sinon.MatchArguments<<A, D extends number = 1>(this : A): std.Array<std.FlatArray<A, D>>> : never */ js.Any) | (js.ThisFunction0[/* this */ Any, js.Array[FlatArray[Any, typings.cypress.cypressInts.`1`]]])

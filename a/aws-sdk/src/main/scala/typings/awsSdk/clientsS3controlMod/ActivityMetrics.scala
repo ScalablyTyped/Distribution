@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ActivityMetrics extends StObject {
   
   /**
-    * A container for whether the activity metrics are enabled.
+    * A container that indicates whether activity metrics are enabled.
     */
   var IsEnabled: js.UndefOr[typings.awsSdk.clientsS3controlMod.IsEnabled] = js.undefined
 }

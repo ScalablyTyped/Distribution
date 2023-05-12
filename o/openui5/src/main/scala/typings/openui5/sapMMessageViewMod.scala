@@ -1,10 +1,10 @@
 package typings.openui5
 
 import typings.openui5.anon.AsyncDescriptionHandler
-import typings.openui5.anon.ItemMessageTypeFilter
+import typings.openui5.anon.MessageTypeFilter
 import typings.openui5.anon.OpenBy
-import typings.openui5.anon.`15`
-import typings.openui5.anon.`16`
+import typings.openui5.anon.`18`
+import typings.openui5.anon.`19`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -125,6 +125,8 @@ object sapMMessageViewMod {
     inline def getMetadata(): typings.openui5.sapUiCoreElementMetadataMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[typings.openui5.sapUiCoreElementMetadataMod.default]
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Setter for default description and URL validation callbacks across all instances of MessageView
       */
     inline def setDefaultHandlers(/**
@@ -705,6 +707,7 @@ object sapMMessageViewMod {
     
     /**
       * @SINCE 1.58
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:activeTitlePress activeTitlePress} to attached listeners.
       *
@@ -714,10 +717,11 @@ object sapMMessageViewMod {
     def fireActiveTitlePress(/**
       * Parameters to pass along with the event
       */
-    mParameters: `15`): this.type = js.native
+    mParameters: `18`): this.type = js.native
     
     /**
       * @deprecated (since 1.72) - Use the appropriate event from the wrapper control, instead.
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:afterOpen afterOpen} to attached listeners.
       *
@@ -730,6 +734,8 @@ object sapMMessageViewMod {
     mParameters: OpenBy): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:itemSelect itemSelect} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -738,9 +744,11 @@ object sapMMessageViewMod {
     def fireItemSelect(/**
       * Parameters to pass along with the event
       */
-    mParameters: ItemMessageTypeFilter): this.type = js.native
+    mParameters: MessageTypeFilter): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:listSelect listSelect} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -749,9 +757,11 @@ object sapMMessageViewMod {
     def fireListSelect(/**
       * Parameters to pass along with the event
       */
-    mParameters: `16`): this.type = js.native
+    mParameters: `19`): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:longtextLoaded longtextLoaded} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -763,6 +773,8 @@ object sapMMessageViewMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:urlValidated urlValidated} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

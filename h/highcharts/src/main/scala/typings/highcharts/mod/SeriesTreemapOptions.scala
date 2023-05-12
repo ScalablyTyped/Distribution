@@ -26,6 +26,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var data: js.UndefOr[js.Array[Double | Null | PointOptionsObject]] = js.undefined
   
   /**
+    * Not available
+    */
+  var dataParser: Unit
+  
+  /**
+    * Not available
+    */
+  var dataURL: Unit
+  
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
     * be used after render time to get a pointer to the series object through
     * `chart.get()`.
@@ -60,12 +70,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highcharts, Highstock) This option allows grouping series in a stacked
-    * chart. The stack option can be a string or anything else, as long as the
-    * grouped series' stack options match each other after conversion into a
-    * string.
+    * Not available
     */
-  var stack: js.UndefOr[Double | String] = js.undefined
+  var stack: js.UndefOr[Double | String | Unit]
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
@@ -92,8 +99,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object SeriesTreemapOptions {
   
-  inline def apply(`type`: String | treemap): SeriesTreemapOptions = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(dataParser: Unit, dataURL: Unit, `type`: String | treemap): SeriesTreemapOptions = {
+    val __obj = js.Dynamic.literal(dataParser = dataParser.asInstanceOf[js.Any], dataURL = dataURL.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesTreemapOptions]
   }
@@ -102,6 +109,10 @@ object SeriesTreemapOptions {
   implicit open class MutableBuilder[Self <: SeriesTreemapOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[Double | Null | PointOptionsObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataParser(value: Unit): Self = StObject.set(x, "dataParser", value.asInstanceOf[js.Any])
+    
+    inline def setDataURL(value: Unit): Self = StObject.set(x, "dataURL", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -129,7 +140,7 @@ object SeriesTreemapOptions {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setStack(value: Double | String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    inline def setStack(value: Double | String | Unit): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
     inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     

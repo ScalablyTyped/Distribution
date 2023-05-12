@@ -23,6 +23,7 @@ object ModuleKind extends StObject {
   sealed trait CommonJS
     extends StObject
        with ModuleKind
+       with _ResolutionMode
   /* 1 */ val CommonJS: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ModuleKind.CommonJS & Double = js.native
   
   @js.native
@@ -47,6 +48,7 @@ object ModuleKind extends StObject {
   sealed trait ESNext
     extends StObject
        with ModuleKind
+       with _ResolutionMode
   /* 99 */ val ESNext: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ModuleKind.ESNext & Double = js.native
   
   @js.native

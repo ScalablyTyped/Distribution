@@ -11,7 +11,7 @@ object mod {
   /**
     * @param strength - The strength of the blur filter.
     * @param quality - The quality of the blur filter.
-    * @param [resolution=PIXI.settings.FILTER_RESOLUTION] - The resolution of the blur filter.
+    * @param [resolution=Filter.defaultResolution] - The resolution of the blur filter.
     * @param kernelSize - The kernelSize of the blur filter.Options: 5, 7, 9, 11, 13, 15.
     */
   open class BlurFilter ()

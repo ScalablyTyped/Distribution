@@ -1,9 +1,10 @@
 package typings.swiper
 
 import typings.react.mod.FunctionComponent
-import typings.react.mod.VoidFunctionComponent
+import typings.react.mod.RefAttributes
 import typings.swiper.reactSwiperReactMod.SlideData
 import typings.swiper.reactSwiperReactMod.SwiperProps
+import typings.swiper.reactSwiperReactMod.SwiperRef
 import typings.swiper.reactSwiperReactMod.SwiperSlideProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,11 +18,11 @@ object reactMod {
   
   @JSImport("swiper/react", "Swiper")
   @js.native
-  val Swiper: FunctionComponent[SwiperProps] = js.native
+  val Swiper: FunctionComponent[RefAttributes[SwiperRef] & SwiperProps] = js.native
   
   @JSImport("swiper/react", "SwiperSlide")
   @js.native
-  val SwiperSlide: VoidFunctionComponent[SwiperSlideProps] = js.native
+  val SwiperSlide: FunctionComponent[SwiperSlideProps] = js.native
   
   inline def useSwiper(): typings.swiper.typesMod.Swiper = ^.asInstanceOf[js.Dynamic].applyDynamic("useSwiper")().asInstanceOf[typings.swiper.typesMod.Swiper]
   

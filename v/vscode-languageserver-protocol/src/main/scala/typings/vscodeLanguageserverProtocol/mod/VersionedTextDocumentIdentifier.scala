@@ -21,7 +21,7 @@ object VersionedTextDocumentIdentifier {
   ): typings.vscodeLanguageserverTypes.mod.VersionedTextDocumentIdentifier = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.VersionedTextDocumentIdentifier]
   
   /**
-    * Checks whether the given literal conforms to the [VersionedTextDocumentIdentifier](#VersionedTextDocumentIdentifier) interface.
+    * Checks whether the given literal conforms to the {@link VersionedTextDocumentIdentifier} interface.
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.VersionedTextDocumentIdentifier */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.VersionedTextDocumentIdentifier */ Boolean]
 }

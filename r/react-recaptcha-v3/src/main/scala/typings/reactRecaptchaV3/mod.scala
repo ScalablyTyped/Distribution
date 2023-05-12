@@ -19,7 +19,7 @@ object mod {
     def this(props: ReCaptchaProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ReCaptchaProps, context: Any) = this()
     

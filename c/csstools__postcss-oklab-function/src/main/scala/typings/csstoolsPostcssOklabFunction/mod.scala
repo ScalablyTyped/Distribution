@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod extends Shortcut {
   
-  /** Transform oklab() and oklch() functions in CSS. */
   @JSImport("@csstools/postcss-oklab-function", JSImport.Default)
   @js.native
   val default: PluginCreator[pluginOptions] = js.native
@@ -21,10 +20,13 @@ object mod extends Shortcut {
   
   trait pluginOptions extends StObject {
     
+    /** Enable "@csstools/postcss-progressive-custom-properties". default: true */
     var enableProgressiveCustomProperties: js.UndefOr[Boolean] = js.undefined
     
+    /** Preserve the original notation. default: false */
     var preserve: js.UndefOr[Boolean] = js.undefined
     
+    /** Toggle sub features. default: { displayP3: true } */
     var subFeatures: js.UndefOr[DisplayP3] = js.undefined
   }
   object pluginOptions {

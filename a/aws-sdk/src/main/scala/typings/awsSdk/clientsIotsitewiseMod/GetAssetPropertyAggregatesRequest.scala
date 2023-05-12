@@ -22,9 +22,9 @@ trait GetAssetPropertyAggregatesRequest extends StObject {
   var endDate: js.Date
   
   /**
-    * The maximum number of results to return for each paginated request. Default: 100
+    * The maximum number of results to return for each paginated request. A result set is returned in the two cases, whichever occurs first.   The size of the result set is equal to 1 MB.   The number of data points in the result set is equal to the value of maxResults. The maximum value of maxResults is 250.  
     */
-  var maxResults: js.UndefOr[MaxResults] = js.undefined
+  var maxResults: js.UndefOr[GetAssetPropertyValueAggregatesMaxResults] = js.undefined
   
   /**
     * The token to be used for the next set of paginated results.
@@ -81,7 +81,7 @@ object GetAssetPropertyAggregatesRequest {
     
     inline def setEndDate(value: js.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
-    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: GetAssetPropertyValueAggregatesMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     

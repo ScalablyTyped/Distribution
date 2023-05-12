@@ -25,7 +25,7 @@ trait FormTemplate
   var elements: js.Array[Element] = js.native
   
   /**
-    * An array of objects or [ExpressionInfo[]](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-ExpressionInfo.html) that reference [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expressions following the specification defined by the [Constraint Profile](https://developers.arcgis.com/javascript/latest/arcade/#constraint) or the [Form Calculation Profile](https://developers.arcgis.com/javascript/latest/arcade/#form-calculation).
+    * An array of objects or [ExpressionInfo[]](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-ExpressionInfo.html) that reference [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expressions following the specification defined by the [Form Constraint Profile](https://developers.arcgis.com/javascript/latest/arcade/#constraint) or the [Form Calculation Profile](https://developers.arcgis.com/javascript/latest/arcade/#form-calculation).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-FormTemplate.html#expressionInfos)
     */

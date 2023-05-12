@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CommentidGistid extends StObject {
   
-  /** The unique identifier of the comment. */
   var comment_id: Double
   
-  /** The unique identifier of the gist. */
   var gist_id: String
 }
 object CommentidGistid {

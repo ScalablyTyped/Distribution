@@ -15,6 +15,14 @@ trait DraggingStyle extends StObject {
   
   var left: Double
   
+  /**
+    * This value will actually be `null` instead of `undefined`.
+    *
+    * The type is fudged because `null` is not compatible with the
+    * `React.CSSProperties` type.
+    *
+    * The `style` prop should interpret `null` and `undefined` the same way.
+    */
   var opacity: js.UndefOr[Double] = js.undefined
   
   var pointerEvents: none
@@ -23,9 +31,17 @@ trait DraggingStyle extends StObject {
   
   var top: Double
   
+  /**
+    * This value will actually be `null` instead of `undefined`.
+    *
+    * The type is fudged because `null` is not compatible with the
+    * `React.CSSProperties` type.
+    *
+    * The `style` prop should interpret `null` and `undefined` the same way.
+    */
   var transform: js.UndefOr[String] = js.undefined
   
-  var transition: none
+  var transition: String
   
   var width: Double
   
@@ -33,8 +49,8 @@ trait DraggingStyle extends StObject {
 }
 object DraggingStyle {
   
-  inline def apply(height: Double, left: Double, top: Double, width: Double, zIndex: Double): DraggingStyle = {
-    val __obj = js.Dynamic.literal(boxSizing = "border-box", height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], pointerEvents = "none", position = "fixed", top = top.asInstanceOf[js.Any], transition = "none", width = width.asInstanceOf[js.Any], zIndex = zIndex.asInstanceOf[js.Any])
+  inline def apply(height: Double, left: Double, top: Double, transition: String, width: Double, zIndex: Double): DraggingStyle = {
+    val __obj = js.Dynamic.literal(boxSizing = "border-box", height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], pointerEvents = "none", position = "fixed", top = top.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], zIndex = zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraggingStyle]
   }
   
@@ -61,7 +77,7 @@ object DraggingStyle {
     
     inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
-    inline def setTransition(value: none): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    inline def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

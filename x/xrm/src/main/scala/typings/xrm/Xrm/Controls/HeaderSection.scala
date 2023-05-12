@@ -9,18 +9,21 @@ trait HeaderSection extends StObject {
   /**
     * Returns the header's body visibility.
     * @remarks Available only for Unified Interface.
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/formcontext-ui-headersection/getbodyvisible External Link: getBodyVisible (Client API reference)}
     */
   def getBodyVisible(): Boolean
   
   /**
     * Returns the command bar visibility.
     * @remarks Available only for Unified Interface.
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/formcontext-ui-headersection/getcommandbarvisible External Link: getCommandBarVisible (Client API reference)}
     */
   def getCommandBarVisible(): Boolean
   
   /**
     * Returns the tab navigator visibility.
     * @remarks Available only for Unified Interface.
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/formcontext-ui-headersection/gettabnavigatorvisible External Link: getTabNavigatorVisible (Client API reference)}
     */
   def getTabNavigatorVisible(): Boolean
   
@@ -28,6 +31,7 @@ trait HeaderSection extends StObject {
     * Sets the header's body visibility.
     * @arg bool Specify true to show the body; false to hide the body.
     * @remarks Available only for Unified Interface.
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/formcontext-ui-headersection/setbodyvisible External Link: setBodyVisible (Client API reference)}
     */
   def setBodyVisible(bool: Boolean): Unit
   
@@ -35,6 +39,7 @@ trait HeaderSection extends StObject {
     * Sets the command bar visibility.
     * @arg bool Specify true to show the command bar; false to hide the command bar.
     * @remarks Available only for Unified Interface.
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/formcontext-ui-headersection/setcommandbarvisible External Link: setCommandBarVisible (Client API reference)}
     */
   def setCommandBarVisible(bool: Boolean): Unit
   
@@ -42,6 +47,7 @@ trait HeaderSection extends StObject {
     * Sets the tab navigator visibility.
     * @arg bool Specify true to show the tab navigator; false to hide the tab navigator.
     * @remarks Available only for Unified Interface.
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/formcontext-ui-headersection/settabnavigatorvisible External Link: setTabNavigatorVisible (Client API reference)}
     */
   def setTabNavigatorVisible(bool: Boolean): Unit
 }

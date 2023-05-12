@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CollapsibleOptions extends StObject {
   
   /**
-    * If accordion versus collapsible
+    * If accordion versus collapsible.
     * @default true
     */
   var accordion: Boolean
@@ -20,25 +20,25 @@ trait CollapsibleOptions extends StObject {
   var inDuration: Double
   
   /**
-    * Callback function called after modal is closed
+    * Callback function called after collapsible is closed.
     * @default null
     */
   def onCloseEnd(el: Element): Unit
   
   /**
-    * Callback function called before modal is closed
+    * Callback function called before collapsible is closed.
     * @default null
     */
   def onCloseStart(el: Element): Unit
   
   /**
-    * Callback function called after modal is opened
+    * Callback function called after collapsible is opened.
     * @default null
     */
   def onOpenEnd(el: Element): Unit
   
   /**
-    * Callback function called before modal is opened
+    * Callback function called before collapsible is opened.
     * @default null
     */
   def onOpenStart(el: Element): Unit

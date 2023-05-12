@@ -1,5 +1,6 @@
 package typings.cordovaPluginBleCentral
 
+import typings.cordovaPluginBleCentral.BLECentralPlugin.BondState
 import typings.cordovaPluginBleCentral.BLECentralPlugin.PeripheralState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,6 +23,18 @@ object cordovaPluginBleCentralStrings {
   @js.native
   sealed trait balanced extends StObject
   inline def balanced: balanced = "balanced".asInstanceOf[balanced]
+  
+  @js.native
+  sealed trait bonded
+    extends StObject
+       with BondState
+  inline def bonded: bonded = "bonded".asInstanceOf[bonded]
+  
+  @js.native
+  sealed trait bonding
+    extends StObject
+       with BondState
+  inline def bonding: bonding = "bonding".asInstanceOf[bonding]
   
   @js.native
   sealed trait coded extends StObject
@@ -82,6 +95,12 @@ object cordovaPluginBleCentralStrings {
   @js.native
   sealed trait max extends StObject
   inline def max: max = "max".asInstanceOf[max]
+  
+  @js.native
+  sealed trait none
+    extends StObject
+       with BondState
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait one extends StObject

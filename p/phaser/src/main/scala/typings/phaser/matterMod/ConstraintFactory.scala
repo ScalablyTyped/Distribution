@@ -22,4 +22,15 @@ open class ConstraintFactory ()
     */
   /* CompleteClass */
   override def create(options: IConstraintDefinition): ConstraintType = js.native
+  
+  /**
+    * Returns the current length of the constraint.
+    * This is the distance between both of the constraint's end points.
+    * See `constraint.length` for the target rest length.
+    * @method currentLength
+    * @param {constraint} ConstraintType
+    * @return {number} the current length
+    */
+  /* CompleteClass */
+  override def currentLength(constraint: ConstraintType): Double = js.native
 }

@@ -6,11 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait Animation extends StObject
-/**
-  * Animations that can be played on a marker. Use the {@link
-  * google.maps.Marker.setAnimation} method on Marker or the {@link
-  * google.maps.MarkerOptions.animation} option to play an animation.
-  */
 @JSGlobal("google.maps.Animation")
 @js.native
 object Animation extends StObject {

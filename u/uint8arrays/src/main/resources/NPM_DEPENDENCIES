@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "uint8arrays" : "4.0.2"
+      "uint8arrays" : "4.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "uint8arrays" : "4.0.2"
+      "uint8arrays" : "4.0.3"
     }
   ],
   "compile-devDependencies" : [

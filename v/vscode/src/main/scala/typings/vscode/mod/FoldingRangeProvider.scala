@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FoldingRangeProvider extends StObject {
   
   /**
-    * An optional event to signal that the folding ranges from this provider have changed.
-    */
+  		 * An optional event to signal that the folding ranges from this provider have changed.
+  		 */
   var onDidChangeFoldingRanges: js.UndefOr[Event[Unit]] = js.undefined
   
   /**
-    * Returns a list of folding ranges or null and undefined if the provider
-    * does not want to participate or was cancelled.
-    * @param document The document in which the command was invoked.
-    * @param context Additional context information (for future use)
-    * @param token A cancellation token.
-    */
+  		 * Returns a list of folding ranges or null and undefined if the provider
+  		 * does not want to participate or was cancelled.
+  		 * @param document The document in which the command was invoked.
+  		 * @param context Additional context information (for future use)
+  		 * @param token A cancellation token.
+  		 */
   def provideFoldingRanges(document: TextDocument, context: FoldingContext, token: CancellationToken): ProviderResult[js.Array[FoldingRange]]
 }
 object FoldingRangeProvider {

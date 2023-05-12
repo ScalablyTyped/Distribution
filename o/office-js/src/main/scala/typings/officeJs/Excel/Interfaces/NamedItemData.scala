@@ -69,7 +69,8 @@ trait NamedItemData extends StObject {
   ] = js.undefined
   
   /**
-    * Represents the value computed by the name's formula. For a named range, will return the range address.
+    * Represents the value computed by the name's formula. For a named range it will return the range address.
+    * Note: This API returns the #VALUE! error in the Excel UI if it refers to a custom function.
     *
     * @remarks
     * [Api set: ExcelApi 1.1]

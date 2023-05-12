@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EnvironmentVariableMutator extends StObject {
   
   /**
-    * The type of mutation that will occur to the variable.
-    */
+  		 * The type of mutation that will occur to the variable.
+  		 */
   val `type`: EnvironmentVariableMutatorType
   
   /**
-    * The value to use for the variable.
-    */
+  		 * The value to use for the variable.
+  		 */
   val value: String
 }
 object EnvironmentVariableMutator {

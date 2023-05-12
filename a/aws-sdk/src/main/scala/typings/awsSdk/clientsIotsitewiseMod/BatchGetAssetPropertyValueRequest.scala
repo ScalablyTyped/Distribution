@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BatchGetAssetPropertyValueRequest extends StObject {
   
   /**
-    * The list of asset property value entries for the batch get request. You can specify up to 16 entries per request.
+    * The list of asset property value entries for the batch get request. You can specify up to 128 entries per request.
     */
   var entries: BatchGetAssetPropertyValueEntries
   

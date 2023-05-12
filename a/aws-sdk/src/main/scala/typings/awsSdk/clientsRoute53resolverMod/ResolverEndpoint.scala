@@ -52,6 +52,11 @@ trait ResolverEndpoint extends StObject {
   var Name: js.UndefOr[typings.awsSdk.clientsRoute53resolverMod.Name] = js.undefined
   
   /**
+    *  The Resolver endpoint IP address type. 
+    */
+  var ResolverEndpointType: js.UndefOr[typings.awsSdk.clientsRoute53resolverMod.ResolverEndpointType] = js.undefined
+  
+  /**
     * The ID of one or more security groups that control access to this VPC. The security group must include one or more inbound rules (for inbound endpoints) or outbound rules (for outbound endpoints). Inbound and outbound rules must allow TCP and UDP access. For inbound access, open port 53. For outbound access, open the port that you're using for DNS queries on your network.
     */
   var SecurityGroupIds: js.UndefOr[typings.awsSdk.clientsRoute53resolverMod.SecurityGroupIds] = js.undefined
@@ -111,6 +116,10 @@ object ResolverEndpoint {
     inline def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    
+    inline def setResolverEndpointType(value: ResolverEndpointType): Self = StObject.set(x, "ResolverEndpointType", value.asInstanceOf[js.Any])
+    
+    inline def setResolverEndpointTypeUndefined: Self = StObject.set(x, "ResolverEndpointType", js.undefined)
     
     inline def setSecurityGroupIds(value: SecurityGroupIds): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
     

@@ -16,6 +16,10 @@ trait PhysicsVortexEvent extends StObject {
   
   /* private */ var _dataFetched: Any = js.native
   
+  /* private */ var _getBodyHitData: Any = js.native
+  
+  /* private */ var _getHitData: Any = js.native
+  
   /* private */ var _getImpostorHitData: Any = js.native
   
   /* private */ var _intersectsWithCylinder: Any = js.native

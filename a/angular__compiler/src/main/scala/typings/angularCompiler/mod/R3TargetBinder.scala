@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class R3TargetBinder[DirectiveT /* <: DirectiveMeta */] protected ()
   extends StObject
      with TargetBinder[DirectiveT] {
-  def this(directiveMatcher: SelectorMatcher[DirectiveT]) = this()
+  def this(directiveMatcher: SelectorMatcher[js.Array[DirectiveT]]) = this()
   
   /* CompleteClass */
   override def bind(target: Target): BoundTarget[DirectiveT] = js.native

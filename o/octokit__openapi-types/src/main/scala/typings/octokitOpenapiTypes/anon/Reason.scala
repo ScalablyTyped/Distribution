@@ -1,67 +1,38 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.approve_
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.deny
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Reason extends StObject {
   
-  var id: String
+  /**
+    * @description Action to apply to the request.
+    * @enum {string}
+    */
+  var action: approve_ | deny
   
-  var last_read_at: String | Null
-  
-  var reason: String
-  
-  var repository: Branchesurl
-  
-  var subject: Latestcommenturl
-  
-  /** @example https://api.github.com/notifications/threads/2/subscription */
-  var subscription_url: String
-  
-  var unread: Boolean
-  
-  var updated_at: String
-  
-  var url: String
+  /** @description Reason for approving or denying the request. Max 1024 characters. */
+  var reason: js.UndefOr[String | Null] = js.undefined
 }
 object Reason {
   
-  inline def apply(
-    id: String,
-    reason: String,
-    repository: Branchesurl,
-    subject: Latestcommenturl,
-    subscription_url: String,
-    unread: Boolean,
-    updated_at: String,
-    url: String
-  ): Reason = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], subscription_url = subscription_url.asInstanceOf[js.Any], unread = unread.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], last_read_at = null)
+  inline def apply(action: approve_ | deny): Reason = {
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reason]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Reason] (val x: Self) extends AnyVal {
     
-    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-    
-    inline def setLast_read_at(value: String): Self = StObject.set(x, "last_read_at", value.asInstanceOf[js.Any])
-    
-    inline def setLast_read_atNull: Self = StObject.set(x, "last_read_at", null)
+    inline def setAction(value: approve_ | deny): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    inline def setRepository(value: Branchesurl): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setReasonNull: Self = StObject.set(x, "reason", null)
     
-    inline def setSubject(value: Latestcommenturl): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
-    
-    inline def setSubscription_url(value: String): Self = StObject.set(x, "subscription_url", value.asInstanceOf[js.Any])
-    
-    inline def setUnread(value: Boolean): Self = StObject.set(x, "unread", value.asInstanceOf[js.Any])
-    
-    inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
-    
-    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

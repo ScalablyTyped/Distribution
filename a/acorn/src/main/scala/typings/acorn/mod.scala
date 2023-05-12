@@ -1087,6 +1087,7 @@ object mod {
     - typings.acorn.acornInts.`11`
     - typings.acorn.acornInts.`12`
     - typings.acorn.acornInts.`13`
+    - typings.acorn.acornInts.`14`
     - typings.acorn.acornInts.`2015`
     - typings.acorn.acornInts.`2016`
     - typings.acorn.acornInts.`2017`
@@ -1095,6 +1096,7 @@ object mod {
     - typings.acorn.acornInts.`2020`
     - typings.acorn.acornInts.`2021`
     - typings.acorn.acornInts.`2022`
+    - typings.acorn.acornInts.`2023`
     - typings.acorn.acornStrings.latest
   */
   trait ecmaVersion extends StObject
@@ -1107,6 +1109,8 @@ object mod {
     inline def `12`: typings.acorn.acornInts.`12` = 12.asInstanceOf[typings.acorn.acornInts.`12`]
     
     inline def `13`: typings.acorn.acornInts.`13` = 13.asInstanceOf[typings.acorn.acornInts.`13`]
+    
+    inline def `14`: typings.acorn.acornInts.`14` = 14.asInstanceOf[typings.acorn.acornInts.`14`]
     
     inline def `2015`: typings.acorn.acornInts.`2015` = 2015.asInstanceOf[typings.acorn.acornInts.`2015`]
     
@@ -1123,6 +1127,8 @@ object mod {
     inline def `2021`: typings.acorn.acornInts.`2021` = 2021.asInstanceOf[typings.acorn.acornInts.`2021`]
     
     inline def `2022`: typings.acorn.acornInts.`2022` = 2022.asInstanceOf[typings.acorn.acornInts.`2022`]
+    
+    inline def `2023`: typings.acorn.acornInts.`2023` = 2023.asInstanceOf[typings.acorn.acornInts.`2023`]
     
     inline def `3`: typings.acorn.acornInts.`3` = 3.asInstanceOf[typings.acorn.acornInts.`3`]
     

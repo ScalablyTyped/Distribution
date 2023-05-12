@@ -3,6 +3,7 @@ package typings.three
 import typings.three.srcCamerasCameraMod.Camera
 import typings.three.srcConstantsMod.ShadowMapType
 import typings.three.srcLightsLightMod.Light
+import typings.three.srcLightsLightShadowMod.LightShadow
 import typings.three.srcRenderersWebGLRendererMod.WebGLRenderer
 import typings.three.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilities
 import typings.three.srcRenderersWebglWebGLObjectsMod.WebGLObjects
@@ -38,7 +39,7 @@ object srcRenderersWebglWebGLShadowMapMod {
       */
     var needsUpdate: Boolean = js.native
     
-    def render(shadowsArray: js.Array[Light], scene: Scene, camera: Camera): Unit = js.native
+    def render(shadowsArray: js.Array[Light[js.UndefOr[LightShadow[Camera]]]], scene: Scene, camera: Camera): Unit = js.native
     
     /**
       * @default THREE.PCFShadowMap

@@ -134,7 +134,7 @@ object sapMDatePickerMod {
       *
       * Adds some `specialDate` to the aggregation `specialDates`.
       *
-      * @returns Reference to `this` in order to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def addSpecialDate(
       /**
@@ -439,6 +439,7 @@ object sapMDatePickerMod {
     
     /**
       * @SINCE 1.102.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:afterValueHelpClose afterValueHelpClose} to attached listeners.
       *
@@ -452,6 +453,7 @@ object sapMDatePickerMod {
     
     /**
       * @SINCE 1.102.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:afterValueHelpOpen afterValueHelpOpen} to attached listeners.
       *
@@ -470,6 +472,7 @@ object sapMDatePickerMod {
     
     /**
       * @SINCE 1.46.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:navigate navigate} to attached listeners.
       *
@@ -642,7 +645,7 @@ object sapMDatePickerMod {
       *
       * Inserts a `specialDate` to the aggregation `specialDates`.
       *
-      * @returns Reference to `this` in order to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def insertSpecialDate(
       /**
@@ -658,6 +661,8 @@ object sapMDatePickerMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Checks if the picker is open
       */
     def isOpen(): Boolean = js.native
@@ -795,7 +800,7 @@ object sapMDatePickerMod {
       *
       * Sets the associated legend.
       *
-      * @returns Reference to `this` in order to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def setLegend(
       /**
@@ -813,45 +818,31 @@ object sapMDatePickerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.38.0
+      * Set maximum date that can be shown and selected in the `DatePicker`. This must be a JavaScript date object.
       *
-      * Sets a new value for property {@link #getMaxDate maxDate}.
-      *
-      * Maximum date that can be shown and selected in the `DatePicker`. This must be a JavaScript date object.
-      *
-      * **Note:** If the `maxDate` is set to be before the `minDate`, the `maxDate` and the `minDate` are switched
-      * before rendering.
-      *
-      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
-      *
-      * @returns Reference to `this` in order to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
-    def setMaxDate(): this.type = js.native
     def setMaxDate(/**
-      * New value for property `maxDate`
+      * A JavaScript Date
       */
-    oMaxDate: js.Object): this.type = js.native
+    oDate: js.Date): this.type = js.native
     
     /**
-      * @SINCE 1.38.0
+      * Set minimum date that can be shown and selected in the `DatePicker`. This must be a JavaScript date object.
       *
-      * Sets a new value for property {@link #getMinDate minDate}.
-      *
-      * Minimum date that can be shown and selected in the `DatePicker`. This must be a JavaScript date object.
-      *
-      * **Note:** If the `minDate` is set to be after the `maxDate`, the `maxDate` and the `minDate` are switched
-      * before rendering.
-      *
-      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
-      *
-      * @returns Reference to `this` in order to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
-    def setMinDate(): this.type = js.native
     def setMinDate(/**
-      * New value for property `minDate`
+      * A JavaScript Date
       */
-    oMinDate: js.Object): this.type = js.native
+    oDate: js.Date): this.type = js.native
     
+    def setSecondaryCalendarType(
+      /**
+      * New value for property `secondaryCalendarType`
+      */
+    sSecondaryCalendarType: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String
+    ): this.type = js.native
     /**
       * @SINCE 1.34.1
       *
@@ -864,13 +855,6 @@ object sapMDatePickerMod {
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def setSecondaryCalendarType(): this.type = js.native
-    def setSecondaryCalendarType(
-      /**
-      * New value for property `secondaryCalendarType`
-      */
-    sSecondaryCalendarType: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String
-    ): this.type = js.native
     def setSecondaryCalendarType(/**
       * New value for property `secondaryCalendarType`
       */

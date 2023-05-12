@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ansi-escapes" : "6.0.0"
+      "ansi-escapes" : "6.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "ansi-escapes" : "6.0.0"
+      "ansi-escapes" : "6.2.0"
     }
   ],
   "compile-devDependencies" : [

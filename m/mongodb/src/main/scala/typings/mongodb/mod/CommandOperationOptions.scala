@@ -27,9 +27,6 @@ trait CommandOperationOptions
   
   var dbName: js.UndefOr[String] = js.undefined
   
-  /** @deprecated This option does nothing */
-  var fullResponse: js.UndefOr[Boolean] = js.undefined
-  
   var maxTimeMS: js.UndefOr[scala.Double] = js.undefined
   
   var noResponse: js.UndefOr[Boolean] = js.undefined
@@ -65,10 +62,6 @@ object CommandOperationOptions {
     inline def setDbName(value: String): Self = StObject.set(x, "dbName", value.asInstanceOf[js.Any])
     
     inline def setDbNameUndefined: Self = StObject.set(x, "dbName", js.undefined)
-    
-    inline def setFullResponse(value: Boolean): Self = StObject.set(x, "fullResponse", value.asInstanceOf[js.Any])
-    
-    inline def setFullResponseUndefined: Self = StObject.set(x, "fullResponse", js.undefined)
     
     inline def setMaxTimeMS(value: scala.Double): Self = StObject.set(x, "maxTimeMS", value.asInstanceOf[js.Any])
     

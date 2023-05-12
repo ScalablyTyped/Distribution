@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MsScrollSnapPointsX
+import typings.csstype.mod.Property.MsHyphenateLimitZone
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `145` extends StObject {
   
   var value: js.UndefOr[
-    MsScrollSnapPointsX | (js.Array[
+    (MsHyphenateLimitZone[Double | String]) | (js.Array[
       (Extract[
-        js.UndefOr[MsScrollSnapPointsX | js.Array[NonNullable[js.UndefOr[MsScrollSnapPointsX]]]], 
+        js.UndefOr[
+          (MsHyphenateLimitZone[Double | String]) | (js.Array[NonNullable[js.UndefOr[MsHyphenateLimitZone[Double | String]]]])
+        ], 
         String
-      ]) | NonNullable[js.UndefOr[MsScrollSnapPointsX]]
+      ]) | (NonNullable[js.UndefOr[MsHyphenateLimitZone[Double | String]]])
     ])
   ] = js.native
 }

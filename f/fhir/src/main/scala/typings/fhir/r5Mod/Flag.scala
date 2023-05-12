@@ -54,7 +54,7 @@ trait Flag
   var status: active | inactive | `entered-in-error`
   
   /**
-    * The patient, location, group, organization, or practitioner etc. this is about record this flag is associated with.
+    * The patient, related person, location, group, organization, or practitioner etc. this is about record this flag is associated with.
     */
   var subject: Reference
 }

@@ -14,8 +14,8 @@ object UIKind extends StObject {
   def apply(value: Double): js.UndefOr[UIKind & Double] = js.native
   
   /**
-    * Extensions are accessed from a desktop application.
-    */
+  		 * Extensions are accessed from a desktop application.
+  		 */
   @js.native
   sealed trait Desktop
     extends StObject
@@ -23,8 +23,8 @@ object UIKind extends StObject {
   /* 1 */ val Desktop: typings.vscode.mod.UIKind.Desktop & Double = js.native
   
   /**
-    * Extensions are accessed from a web browser.
-    */
+  		 * Extensions are accessed from a web browser.
+  		 */
   @js.native
   sealed trait Web
     extends StObject

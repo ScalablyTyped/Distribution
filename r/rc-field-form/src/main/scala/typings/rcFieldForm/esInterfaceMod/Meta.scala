@@ -12,6 +12,8 @@ trait Meta extends StObject {
   
   var touched: Boolean
   
+  var validated: Boolean
+  
   var validating: Boolean
   
   var warnings: js.Array[String]
@@ -22,10 +24,11 @@ object Meta {
     errors: js.Array[String],
     name: InternalNamePath,
     touched: Boolean,
+    validated: Boolean,
     validating: Boolean,
     warnings: js.Array[String]
   ): Meta = {
-    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], touched = touched.asInstanceOf[js.Any], validating = validating.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], touched = touched.asInstanceOf[js.Any], validated = validated.asInstanceOf[js.Any], validating = validating.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[Meta]
   }
   
@@ -41,6 +44,8 @@ object Meta {
     inline def setNameVarargs(value: (String | Double)*): Self = StObject.set(x, "name", js.Array(value*))
     
     inline def setTouched(value: Boolean): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
+    
+    inline def setValidated(value: Boolean): Self = StObject.set(x, "validated", value.asInstanceOf[js.Any])
     
     inline def setValidating(value: Boolean): Self = StObject.set(x, "validating", value.asInstanceOf[js.Any])
     

@@ -7,11 +7,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Manifest keys: `optional_permissions`
-  *
-  * Not allowed in: Content scripts, Devtools pages
-  */
+/** Not allowed in: Content scripts, Devtools pages */
 object permissions {
   
   @JSGlobal("browser.permissions")

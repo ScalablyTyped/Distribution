@@ -16,4 +16,21 @@ open class Bookmark ()
   extends StObject
      with typings.arcgisJsApi.esri.Bookmark {
   def this(properties: BookmarkProperties) = this()
+  
+  /**
+    * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    */
+  /* CompleteClass */
+  override def toJSON(): Any = js.native
+}
+/* static members */
+object Bookmark {
+  
+  @JSGlobal("__esri.Bookmark")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def fromJSON(json: Any): typings.arcgisJsApi.esri.Bookmark = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.Bookmark]
 }

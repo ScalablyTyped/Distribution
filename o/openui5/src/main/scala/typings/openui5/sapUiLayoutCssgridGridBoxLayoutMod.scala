@@ -124,6 +124,8 @@ object sapUiLayoutCssgridGridBoxLayoutMod {
     extends typings.openui5.sapUiLayoutCssgridGridLayoutBaseMod.default {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns a gridTemplateColumns value based on boxWidth and boxMinWidth properties
       *
       * @returns A value for gridTemplateColumns property

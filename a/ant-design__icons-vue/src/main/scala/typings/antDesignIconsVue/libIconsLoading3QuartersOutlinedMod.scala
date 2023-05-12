@@ -16,7 +16,7 @@ object libIconsLoading3QuartersOutlinedMod extends Shortcut {
   @js.native
   trait Loading3QuartersOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_Loading3QuartersOutlinedIconType: String = js.native

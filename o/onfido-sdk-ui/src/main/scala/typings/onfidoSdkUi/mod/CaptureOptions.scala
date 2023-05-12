@@ -11,8 +11,6 @@ trait CaptureOptions extends StObject {
   var uploadFallback: js.UndefOr[Boolean] = js.undefined
   
   var useUploader: js.UndefOr[Boolean] = js.undefined
-  
-  var useWebcam: js.UndefOr[Boolean] = js.undefined
 }
 object CaptureOptions {
   
@@ -35,9 +33,5 @@ object CaptureOptions {
     inline def setUseUploader(value: Boolean): Self = StObject.set(x, "useUploader", value.asInstanceOf[js.Any])
     
     inline def setUseUploaderUndefined: Self = StObject.set(x, "useUploader", js.undefined)
-    
-    inline def setUseWebcam(value: Boolean): Self = StObject.set(x, "useWebcam", value.asInstanceOf[js.Any])
-    
-    inline def setUseWebcamUndefined: Self = StObject.set(x, "useWebcam", js.undefined)
   }
 }

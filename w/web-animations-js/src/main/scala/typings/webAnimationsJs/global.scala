@@ -1,6 +1,7 @@
 package typings.webAnimationsJs
 
 import typings.std.AnimationEffect
+import typings.std.CSSNumberish
 import typings.std.KeyframeEffect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -39,7 +40,7 @@ object global {
     var currentTarget: typings.webAnimationsJs.Animation = js.native
     
     /* CompleteClass */
-    override val currentTime: Double | Null = js.native
+    override val currentTime: CSSNumberish | Null = js.native
     
     /* CompleteClass */
     var defaultPrevented: Boolean = js.native
@@ -54,7 +55,7 @@ object global {
     var timeStamp: Double = js.native
     
     /* CompleteClass */
-    override val timelineTime: Double | Null = js.native
+    override val timelineTime: CSSNumberish | Null = js.native
     
     /* CompleteClass */
     var `type`: String = js.native

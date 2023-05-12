@@ -2,6 +2,7 @@ package typings.babylonjs.anon
 
 import typings.babylonjs.XRHandedness
 import typings.babylonjs.collisionsPickingInfoMod.PickingInfo
+import typings.babylonjs.mathsMathDotcolorMod.Color4
 import typings.babylonjs.mathsMathDotvectorMod.Vector3
 import typings.babylonjs.meshesAbstractMeshMod.AbstractMesh
 import typings.babylonjs.sceneMod.Scene
@@ -12,6 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Inlined std.Partial<babylonjs.babylonjs/XR/features/WebXRControllerTeleportation.IWebXRTeleportationOptions> */
 trait PartialIWebXRTeleportatio extends StObject {
+  
+  var blockedRayColor: js.UndefOr[Color4] = js.undefined
   
   var customUtilityLayerScene: js.UndefOr[Scene] = js.undefined
   
@@ -54,6 +57,10 @@ object PartialIWebXRTeleportatio {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: PartialIWebXRTeleportatio] (val x: Self) extends AnyVal {
+    
+    inline def setBlockedRayColor(value: Color4): Self = StObject.set(x, "blockedRayColor", value.asInstanceOf[js.Any])
+    
+    inline def setBlockedRayColorUndefined: Self = StObject.set(x, "blockedRayColor", js.undefined)
     
     inline def setCustomUtilityLayerScene(value: Scene): Self = StObject.set(x, "customUtilityLayerScene", value.asInstanceOf[js.Any])
     

@@ -16,6 +16,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object typesSrcCoreOptionsMod {
   
+  @JSImport("pusher-js/types/src/core/options", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def validateOptions(options: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait Options extends StObject {
     
     var activityTimeout: js.UndefOr[Double] = js.undefined
@@ -30,7 +36,7 @@ object typesSrcCoreOptionsMod {
     
     var channelAuthorization: js.UndefOr[ChannelAuthorizationOptions] = js.undefined
     
-    var cluster: js.UndefOr[String] = js.undefined
+    var cluster: String
     
     var disableStats: js.UndefOr[Boolean] = js.undefined
     
@@ -74,8 +80,8 @@ object typesSrcCoreOptionsMod {
   }
   object Options {
     
-    inline def apply(): Options = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(cluster: String): Options = {
+      val __obj = js.Dynamic.literal(cluster = cluster.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
@@ -109,8 +115,6 @@ object typesSrcCoreOptionsMod {
       inline def setChannelAuthorizationUndefined: Self = StObject.set(x, "channelAuthorization", js.undefined)
       
       inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
-      
-      inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
       
       inline def setDisableStats(value: Boolean): Self = StObject.set(x, "disableStats", value.asInstanceOf[js.Any])
       

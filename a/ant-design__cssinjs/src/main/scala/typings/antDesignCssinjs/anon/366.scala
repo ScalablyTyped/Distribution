@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MarginBlockStart
+import typings.csstype.mod.Property.TextEmphasisPosition
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `366` extends StObject {
   
   var value: js.UndefOr[
-    (MarginBlockStart[Double | String]) | (js.Array[
+    TextEmphasisPosition | (js.Array[
       (Extract[
-        js.UndefOr[
-          (MarginBlockStart[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginBlockStart[Double | String]]]])
-        ], 
+        js.UndefOr[TextEmphasisPosition | js.Array[NonNullable[js.UndefOr[TextEmphasisPosition]]]], 
         String
-      ]) | (NonNullable[js.UndefOr[MarginBlockStart[Double | String]]])
+      ]) | NonNullable[js.UndefOr[TextEmphasisPosition]]
     ])
   ] = js.native
 }

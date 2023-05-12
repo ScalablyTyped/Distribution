@@ -5,7 +5,7 @@ import typings.aframe.mod.Entity
 import typings.aframe.mod.ObjectMap
 import typings.aframe.mod.Schema_
 import typings.aframe.mod.System
-import typings.three.mod.Camera
+import typings.three.buildThreeDotmoduleDotminMod.Camera
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

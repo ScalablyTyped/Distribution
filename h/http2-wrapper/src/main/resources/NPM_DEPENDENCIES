@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "http2-wrapper" : "2.1.11"
+      "http2-wrapper" : "2.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "http2-wrapper" : "2.1.11"
+      "http2-wrapper" : "2.2.0"
     }
   ],
   "compile-devDependencies" : [

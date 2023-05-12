@@ -131,22 +131,26 @@ object sapUiLayoutDynamicSideContentMod {
     /**
       * Adds a control to the main content area. Only the main content part in the aggregation is re-rendered.
       *
-      * @returns this pointer for chaining
+      * @returns Reference to `this` for method chaining
       */
-    def addMainContent(/**
+    def addMainContent(
+      /**
       * Object to be added in the aggregation
       */
-    oControl: js.Object): this.type = js.native
+    oControl: typings.openui5.sapUiCoreControlMod.default
+    ): this.type = js.native
     
     /**
       * Adds a control to the side content area. Only the side content part in the aggregation is re-rendered.
       *
-      * @returns this pointer for chaining
+      * @returns Reference to `this` for method chaining
       */
-    def addSideContent(/**
+    def addSideContent(
+      /**
       * Object to be added in the aggregation
       */
-    oControl: js.Object): this.type = js.native
+    oControl: typings.openui5.sapUiCoreControlMod.default
+    ): this.type = js.native
     
     /**
       * @SINCE 1.32
@@ -260,6 +264,7 @@ object sapUiLayoutDynamicSideContentMod {
     
     /**
       * @SINCE 1.32
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:breakpointChanged breakpointChanged} to attached listeners.
       *
@@ -320,10 +325,12 @@ object sapUiLayoutDynamicSideContentMod {
       *
       * @returns The scroll helper instance
       */
-    def getScrollDelegate(/**
+    def getScrollDelegate(
+      /**
       * The control instance that requested the scroll helper
       */
-    oControl: js.Object): typings.openui5.sapUiCoreDelegateScrollEnablementMod.default = js.native
+    oControl: typings.openui5.sapUiCoreControlMod.default
+    ): typings.openui5.sapUiCoreDelegateScrollEnablementMod.default = js.native
     
     /**
       * Gets current value of property {@link #getShowMainContent showMainContent}.
@@ -547,7 +554,7 @@ object sapUiLayoutDynamicSideContentMod {
     /**
       * Sets or unsets the page in equalSplit mode.
       *
-      * @returns this pointer for chaining
+      * @returns Reference to `this` for method chaining
       */
     def setEqualSplit(): this.type = js.native
     def setEqualSplit(/**
@@ -558,7 +565,7 @@ object sapUiLayoutDynamicSideContentMod {
     /**
       * Sets the showMainContent property.
       *
-      * @returns this pointer for chaining
+      * @returns Reference to `this` for method chaining
       */
     def setShowMainContent(
       /**
@@ -574,7 +581,7 @@ object sapUiLayoutDynamicSideContentMod {
     /**
       * Sets the showSideContent property.
       *
-      * @returns this pointer for chaining
+      * @returns Reference to `this` for method chaining
       */
     def setShowSideContent(
       /**
@@ -652,7 +659,7 @@ object sapUiLayoutDynamicSideContentMod {
     /**
       * Sets the sideContentVisibility property.
       *
-      * @returns this pointer for chaining
+      * @returns Reference to `this` for method chaining
       */
     def setSideContentVisibility(
       /**
@@ -670,7 +677,7 @@ object sapUiLayoutDynamicSideContentMod {
       * area is visible. This helper method is used to implement a button/switch for changing between the main
       * and side content areas. Only works if the current breakpoint is "S".
       *
-      * @returns this pointer for chaining
+      * @returns Reference to `this` for method chaining
       */
     def toggle(): this.type = js.native
   }

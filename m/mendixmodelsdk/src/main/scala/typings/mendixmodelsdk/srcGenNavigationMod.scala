@@ -319,6 +319,12 @@ object srcGenNavigationMod {
       def homePage_=(newValue: IPage | Null): Unit = js.native
       
       /**
+        * In version 9.22.0: introduced
+        */
+      def localFileEncryptionEnabled: Boolean = js.native
+      def localFileEncryptionEnabled_=(newValue: Boolean): Unit = js.native
+      
+      /**
         * In version 9.15.0: introduced
         */
       def loggingEnabled: Boolean = js.native
@@ -828,6 +834,7 @@ object srcGenNavigationMod {
       def containerAsNavigationProfileBase: NavigationProfileBase = js.native
       
       /**
+        * In version 9.24.0: deleted
         * In version 8.9.0: introduced
         */
       def downloadMode: OfflineEntitySyncDownloadMode = js.native
@@ -844,6 +851,12 @@ object srcGenNavigationMod {
         */
       def shouldDownload: Boolean = js.native
       def shouldDownload_=(newValue: Boolean): Unit = js.native
+      
+      /**
+        * In version 9.24.0: introduced
+        */
+      def syncMode: OfflineEntitySyncMode = js.native
+      def syncMode_=(newValue: OfflineEntitySyncMode): Unit = js.native
     }
     object OfflineEntityConfig {
       
@@ -918,6 +931,49 @@ object srcGenNavigationMod {
       inline def NoneAndPreserveData_=(x: OfflineEntitySyncDownloadMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NoneAndPreserveData")(x.asInstanceOf[js.Any])
       
       inline def None_=(x: OfflineEntitySyncDownloadMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+    }
+    
+    @JSImport("mendixmodelsdk/src/gen/navigation", "navigation.OfflineEntitySyncMode")
+    @js.native
+    open class OfflineEntitySyncMode protected () extends AbstractEnum {
+      def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
+    }
+    object OfflineEntitySyncMode {
+      
+      @JSImport("mendixmodelsdk/src/gen/navigation", "navigation.OfflineEntitySyncMode")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /* static member */
+      @JSImport("mendixmodelsdk/src/gen/navigation", "navigation.OfflineEntitySyncMode.All")
+      @js.native
+      def All: OfflineEntitySyncMode = js.native
+      inline def All_=(x: OfflineEntitySyncMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("All")(x.asInstanceOf[js.Any])
+      
+      /* static member */
+      @JSImport("mendixmodelsdk/src/gen/navigation", "navigation.OfflineEntitySyncMode.Constrained")
+      @js.native
+      def Constrained: OfflineEntitySyncMode = js.native
+      inline def Constrained_=(x: OfflineEntitySyncMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Constrained")(x.asInstanceOf[js.Any])
+      
+      /* static member */
+      @JSImport("mendixmodelsdk/src/gen/navigation", "navigation.OfflineEntitySyncMode.Never")
+      @js.native
+      def Never: OfflineEntitySyncMode = js.native
+      inline def Never_=(x: OfflineEntitySyncMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Never")(x.asInstanceOf[js.Any])
+      
+      /* static member */
+      @JSImport("mendixmodelsdk/src/gen/navigation", "navigation.OfflineEntitySyncMode.None")
+      @js.native
+      def None: OfflineEntitySyncMode = js.native
+      
+      /* static member */
+      @JSImport("mendixmodelsdk/src/gen/navigation", "navigation.OfflineEntitySyncMode.NoneAndPreserveData")
+      @js.native
+      def NoneAndPreserveData: OfflineEntitySyncMode = js.native
+      inline def NoneAndPreserveData_=(x: OfflineEntitySyncMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NoneAndPreserveData")(x.asInstanceOf[js.Any])
+      
+      inline def None_=(x: OfflineEntitySyncMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
     }
     
     @JSImport("mendixmodelsdk/src/gen/navigation", "navigation.ProfileKind")

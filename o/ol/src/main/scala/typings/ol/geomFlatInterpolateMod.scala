@@ -18,26 +18,26 @@ object geomFlatInterpolateMod {
     end: Double,
     stride: Double,
     fraction: Double,
-    opt_dest: js.Array[Double]
-  ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePoint")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], fraction.asInstanceOf[js.Any], opt_dest.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    dest: js.Array[Double]
+  ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePoint")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], fraction.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   inline def interpolatePoint(
     flatCoordinates: js.Array[Double],
     offset: Double,
     end: Double,
     stride: Double,
     fraction: Double,
-    opt_dest: js.Array[Double],
-    opt_dimension: Double
-  ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePoint")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], fraction.asInstanceOf[js.Any], opt_dest.asInstanceOf[js.Any], opt_dimension.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    dest: js.Array[Double],
+    dimension: Double
+  ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePoint")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], fraction.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], dimension.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   inline def interpolatePoint(
     flatCoordinates: js.Array[Double],
     offset: Double,
     end: Double,
     stride: Double,
     fraction: Double,
-    opt_dest: Unit,
-    opt_dimension: Double
-  ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePoint")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], fraction.asInstanceOf[js.Any], opt_dest.asInstanceOf[js.Any], opt_dimension.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    dest: Unit,
+    dimension: Double
+  ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePoint")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], fraction.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], dimension.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   inline def lineStringCoordinateAtM(
     flatCoordinates: js.Array[Double],
@@ -46,7 +46,7 @@ object geomFlatInterpolateMod {
     stride: Double,
     m: Double,
     extrapolate: Boolean
-  ): Coordinate = (^.asInstanceOf[js.Dynamic].applyDynamic("lineStringCoordinateAtM")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], m.asInstanceOf[js.Any], extrapolate.asInstanceOf[js.Any])).asInstanceOf[Coordinate]
+  ): Coordinate | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("lineStringCoordinateAtM")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], m.asInstanceOf[js.Any], extrapolate.asInstanceOf[js.Any])).asInstanceOf[Coordinate | Null]
   
   inline def lineStringsCoordinateAtM(
     flatCoordinates: js.Array[Double],
@@ -56,5 +56,5 @@ object geomFlatInterpolateMod {
     m: Double,
     extrapolate: Boolean,
     interpolate: Boolean
-  ): Coordinate = (^.asInstanceOf[js.Dynamic].applyDynamic("lineStringsCoordinateAtM")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], ends.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], m.asInstanceOf[js.Any], extrapolate.asInstanceOf[js.Any], interpolate.asInstanceOf[js.Any])).asInstanceOf[Coordinate]
+  ): Coordinate | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("lineStringsCoordinateAtM")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], ends.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], m.asInstanceOf[js.Any], extrapolate.asInstanceOf[js.Any], interpolate.asInstanceOf[js.Any])).asInstanceOf[Coordinate | Null]
 }

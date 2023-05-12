@@ -23,9 +23,13 @@ object distComponentsDebugStatsMod {
     
     var inferenceTime: Double
     
+    var recordAudio: Boolean
+    
     var videoHeight: Double
     
     var videoWidth: Double
+    
+    var worker: Boolean
   }
   object DebugStatsProps {
     
@@ -34,10 +38,12 @@ object distComponentsDebugStatsMod {
       detectionsPerSecond: Double,
       elapsedTime: Double,
       inferenceTime: Double,
+      recordAudio: Boolean,
       videoHeight: Double,
-      videoWidth: Double
+      videoWidth: Double,
+      worker: Boolean
     ): DebugStatsProps = {
-      val __obj = js.Dynamic.literal(backend = backend.asInstanceOf[js.Any], detectionsPerSecond = detectionsPerSecond.asInstanceOf[js.Any], elapsedTime = elapsedTime.asInstanceOf[js.Any], inferenceTime = inferenceTime.asInstanceOf[js.Any], videoHeight = videoHeight.asInstanceOf[js.Any], videoWidth = videoWidth.asInstanceOf[js.Any], faceRotation = null)
+      val __obj = js.Dynamic.literal(backend = backend.asInstanceOf[js.Any], detectionsPerSecond = detectionsPerSecond.asInstanceOf[js.Any], elapsedTime = elapsedTime.asInstanceOf[js.Any], inferenceTime = inferenceTime.asInstanceOf[js.Any], recordAudio = recordAudio.asInstanceOf[js.Any], videoHeight = videoHeight.asInstanceOf[js.Any], videoWidth = videoWidth.asInstanceOf[js.Any], worker = worker.asInstanceOf[js.Any], faceRotation = null)
       __obj.asInstanceOf[DebugStatsProps]
     }
     
@@ -58,9 +64,13 @@ object distComponentsDebugStatsMod {
       
       inline def setInferenceTime(value: Double): Self = StObject.set(x, "inferenceTime", value.asInstanceOf[js.Any])
       
+      inline def setRecordAudio(value: Boolean): Self = StObject.set(x, "recordAudio", value.asInstanceOf[js.Any])
+      
       inline def setVideoHeight(value: Double): Self = StObject.set(x, "videoHeight", value.asInstanceOf[js.Any])
       
       inline def setVideoWidth(value: Double): Self = StObject.set(x, "videoWidth", value.asInstanceOf[js.Any])
+      
+      inline def setWorker(value: Boolean): Self = StObject.set(x, "worker", value.asInstanceOf[js.Any])
     }
   }
 }

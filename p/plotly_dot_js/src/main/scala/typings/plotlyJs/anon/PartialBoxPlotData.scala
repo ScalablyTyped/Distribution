@@ -21,6 +21,7 @@ import typings.plotlyJs.plotlyJsStrings.`infer zero`
 import typings.plotlyJs.plotlyJsStrings.`middle center`
 import typings.plotlyJs.plotlyJsStrings.`middle left`
 import typings.plotlyJs.plotlyJsStrings.`middle right`
+import typings.plotlyJs.plotlyJsStrings.`probability density`
 import typings.plotlyJs.plotlyJsStrings.`top center`
 import typings.plotlyJs.plotlyJsStrings.`top left`
 import typings.plotlyJs.plotlyJsStrings.`top right`
@@ -34,6 +35,7 @@ import typings.plotlyJs.plotlyJsStrings.clockwise
 import typings.plotlyJs.plotlyJsStrings.count
 import typings.plotlyJs.plotlyJsStrings.counterclockwise
 import typings.plotlyJs.plotlyJsStrings.delta
+import typings.plotlyJs.plotlyJsStrings.density
 import typings.plotlyJs.plotlyJsStrings.diameter
 import typings.plotlyJs.plotlyJsStrings.exclusive
 import typings.plotlyJs.plotlyJsStrings.fast
@@ -71,6 +73,7 @@ import typings.plotlyJs.plotlyJsStrings.outliers
 import typings.plotlyJs.plotlyJsStrings.outside
 import typings.plotlyJs.plotlyJsStrings.percent
 import typings.plotlyJs.plotlyJsStrings.points
+import typings.plotlyJs.plotlyJsStrings.probability
 import typings.plotlyJs.plotlyJsStrings.remainder
 import typings.plotlyJs.plotlyJsStrings.sd
 import typings.plotlyJs.plotlyJsStrings.skip
@@ -140,6 +143,8 @@ trait PartialBoxPlotData
   
   var autobinx: js.UndefOr[Boolean] = js.undefined
   
+  var autocontour: js.UndefOr[Boolean] = js.undefined
+  
   var automargin: js.UndefOr[Boolean] = js.undefined
   
   var boxmean: js.UndefOr[Boolean | sd] = js.undefined
@@ -155,6 +160,8 @@ trait PartialBoxPlotData
   var colorscale: js.UndefOr[ColorScale] = js.undefined
   
   var connectgaps: js.UndefOr[Boolean] = js.undefined
+  
+  var contours: js.UndefOr[PartialcoloringfillheatmaColoring] = js.undefined
   
   var customdata: js.UndefOr[js.Array[js.Array[Datum] | Datum]] = js.undefined
   
@@ -179,6 +186,8 @@ trait PartialBoxPlotData
   var groupnorm: js.UndefOr[_empty | fraction | percent] = js.undefined
   
   var histfunc: js.UndefOr[count | sum | avg | min | max] = js.undefined
+  
+  var histnorm: js.UndefOr[_empty | percent | probability | density | (`probability density`)] = js.undefined
   
   var hole: js.UndefOr[Double] = js.undefined
   
@@ -303,6 +312,8 @@ trait PartialBoxPlotData
   
   var name: js.UndefOr[String] = js.undefined
   
+  var ncontours: js.UndefOr[Double] = js.undefined
+  
   var number: js.UndefOr[PartialPlotNumberFont] = js.undefined
   
   var offset: js.UndefOr[Double] = js.undefined
@@ -397,6 +408,8 @@ trait PartialBoxPlotData
   
   var z: js.UndefOr[(js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray] = js.undefined
   
+  var zhoverformat: js.UndefOr[String] = js.undefined
+  
   var zmax: js.UndefOr[Double] = js.undefined
   
   var zmin: js.UndefOr[Double] = js.undefined
@@ -420,6 +433,10 @@ object PartialBoxPlotData {
     inline def setAutobinx(value: Boolean): Self = StObject.set(x, "autobinx", value.asInstanceOf[js.Any])
     
     inline def setAutobinxUndefined: Self = StObject.set(x, "autobinx", js.undefined)
+    
+    inline def setAutocontour(value: Boolean): Self = StObject.set(x, "autocontour", value.asInstanceOf[js.Any])
+    
+    inline def setAutocontourUndefined: Self = StObject.set(x, "autocontour", js.undefined)
     
     inline def setAutomargin(value: Boolean): Self = StObject.set(x, "automargin", value.asInstanceOf[js.Any])
     
@@ -454,6 +471,10 @@ object PartialBoxPlotData {
     inline def setConnectgaps(value: Boolean): Self = StObject.set(x, "connectgaps", value.asInstanceOf[js.Any])
     
     inline def setConnectgapsUndefined: Self = StObject.set(x, "connectgaps", js.undefined)
+    
+    inline def setContours(value: PartialcoloringfillheatmaColoring): Self = StObject.set(x, "contours", value.asInstanceOf[js.Any])
+    
+    inline def setContoursUndefined: Self = StObject.set(x, "contours", js.undefined)
     
     inline def setCustomdata(value: js.Array[js.Array[Datum] | Datum]): Self = StObject.set(x, "customdata", value.asInstanceOf[js.Any])
     
@@ -504,6 +525,10 @@ object PartialBoxPlotData {
     inline def setHistfunc(value: count | sum | avg | min | max): Self = StObject.set(x, "histfunc", value.asInstanceOf[js.Any])
     
     inline def setHistfuncUndefined: Self = StObject.set(x, "histfunc", js.undefined)
+    
+    inline def setHistnorm(value: _empty | percent | probability | density | (`probability density`)): Self = StObject.set(x, "histnorm", value.asInstanceOf[js.Any])
+    
+    inline def setHistnormUndefined: Self = StObject.set(x, "histnorm", js.undefined)
     
     inline def setHole(value: Double): Self = StObject.set(x, "hole", value.asInstanceOf[js.Any])
     
@@ -727,6 +752,10 @@ object PartialBoxPlotData {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
+    inline def setNcontours(value: Double): Self = StObject.set(x, "ncontours", value.asInstanceOf[js.Any])
+    
+    inline def setNcontoursUndefined: Self = StObject.set(x, "ncontours", js.undefined)
+    
     inline def setNumber(value: PartialPlotNumberFont): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
@@ -932,6 +961,10 @@ object PartialBoxPlotData {
     inline def setZUndefined: Self = StObject.set(x, "z", js.undefined)
     
     inline def setZVarargs(value: ((js.Array[js.Array[Datum] | Datum]) | Datum)*): Self = StObject.set(x, "z", js.Array(value*))
+    
+    inline def setZhoverformat(value: String): Self = StObject.set(x, "zhoverformat", value.asInstanceOf[js.Any])
+    
+    inline def setZhoverformatUndefined: Self = StObject.set(x, "zhoverformat", js.undefined)
     
     inline def setZmax(value: Double): Self = StObject.set(x, "zmax", value.asInstanceOf[js.Any])
     

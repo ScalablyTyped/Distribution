@@ -1,5 +1,6 @@
 package typings.openui5
 
+import typings.openui5.anon.Params
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -191,6 +192,8 @@ object sapMQuickViewPageMod {
     def getAvatar(): typings.openui5.sapMAvatarMod.default = js.native
     
     /**
+      * @deprecated (since 1.111)
+      *
       * Gets current value of property {@link #getCrossAppNavCallback crossAppNavCallback}.
       *
       * Specifies the application which provides target and param configuration for cross-application navigation
@@ -198,7 +201,7 @@ object sapMQuickViewPageMod {
       *
       * @returns Value of property `crossAppNavCallback`
       */
-    def getCrossAppNavCallback(): js.Object = js.native
+    def getCrossAppNavCallback(): js.Function0[Params] = js.native
     
     /**
       * Gets current value of property {@link #getDescription description}.
@@ -363,7 +366,9 @@ object sapMQuickViewPageMod {
     oAvatar: typings.openui5.sapMAvatarMod.default): this.type = js.native
     
     /**
-      * Sets a new value for property {@link #getCrossAppNavCallback crossAppNavCallback}.
+      * @deprecated (since 1.111)
+      *
+      * Sets a new value for property {@link #setCrossAppNavCallback crossAppNavCallback}.
       *
       * Specifies the application which provides target and param configuration for cross-application navigation
       * from the 'page header'.
@@ -372,10 +377,13 @@ object sapMQuickViewPageMod {
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def setCrossAppNavCallback(/**
+    def setCrossAppNavCallback(): this.type = js.native
+    def setCrossAppNavCallback(
+      /**
       * New value for property `crossAppNavCallback`
       */
-    oCrossAppNavCallback: js.Object): this.type = js.native
+    oCrossAppNavCallback: js.Function0[Params]
+    ): this.type = js.native
     
     /**
       * Sets a new value for property {@link #getDescription description}.
@@ -533,6 +541,8 @@ object sapMQuickViewPageMod {
     var avatar: js.UndefOr[typings.openui5.sapMAvatarMod.default] = js.undefined
     
     /**
+      * @deprecated (since 1.111) - Attach avatar `press` event instead.
+      *
       * Specifies the application which provides target and param configuration for cross-application navigation
       * from the 'page header'.
       */

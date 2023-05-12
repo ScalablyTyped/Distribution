@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateImageResponse extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the image.
+    * The ARN of the image.
     */
   var ImageArn: js.UndefOr[typings.awsSdk.clientsSagemakerMod.ImageArn] = js.undefined
 }

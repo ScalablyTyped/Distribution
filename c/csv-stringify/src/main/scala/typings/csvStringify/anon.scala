@@ -10,9 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Boolean extends StObject {
+  trait Bigint extends StObject {
     
-    var boolean: js.UndefOr[Cast[scala.Boolean]] = js.undefined
+    var bigint: js.UndefOr[Cast[js.BigInt]] = js.undefined
+    
+    var boolean: js.UndefOr[Cast[Boolean]] = js.undefined
     
     var date: js.UndefOr[Cast[js.Date]] = js.undefined
     
@@ -25,17 +27,21 @@ object anon {
     
     var string: js.UndefOr[Cast[String]] = js.undefined
   }
-  object Boolean {
+  object Bigint {
     
-    inline def apply(): Boolean = {
+    inline def apply(): Bigint = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Boolean]
+      __obj.asInstanceOf[Bigint]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Boolean] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: Bigint] (val x: Self) extends AnyVal {
       
-      inline def setBoolean(value: (scala.Boolean, /* context */ CastingContext) => String | CastReturnObject): Self = StObject.set(x, "boolean", js.Any.fromFunction2(value))
+      inline def setBigint(value: (js.BigInt, /* context */ CastingContext) => String | CastReturnObject): Self = StObject.set(x, "bigint", js.Any.fromFunction2(value))
+      
+      inline def setBigintUndefined: Self = StObject.set(x, "bigint", js.undefined)
+      
+      inline def setBoolean(value: (Boolean, /* context */ CastingContext) => String | CastReturnObject): Self = StObject.set(x, "boolean", js.Any.fromFunction2(value))
       
       inline def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
       

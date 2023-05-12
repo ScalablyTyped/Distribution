@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersPathLicense extends StObject {
   
+  /** Get a license */
   var get: ParametersPathLicense
 }
 object GetParametersPathLicense {

@@ -62,6 +62,11 @@ trait Service extends StObject {
   var ResourceRole: js.UndefOr[String] = js.undefined
   
   /**
+    * Information about the process and any required context values for a specific finding
+    */
+  var RuntimeDetails: js.UndefOr[typings.awsSdk.clientsGuarddutyMod.RuntimeDetails] = js.undefined
+  
+  /**
     * The name of the Amazon Web Services service (GuardDuty) that generated a finding.
     */
   var ServiceName: js.UndefOr[String] = js.undefined
@@ -124,6 +129,10 @@ object Service {
     inline def setResourceRole(value: String): Self = StObject.set(x, "ResourceRole", value.asInstanceOf[js.Any])
     
     inline def setResourceRoleUndefined: Self = StObject.set(x, "ResourceRole", js.undefined)
+    
+    inline def setRuntimeDetails(value: RuntimeDetails): Self = StObject.set(x, "RuntimeDetails", value.asInstanceOf[js.Any])
+    
+    inline def setRuntimeDetailsUndefined: Self = StObject.set(x, "RuntimeDetails", js.undefined)
     
     inline def setServiceName(value: String): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
     

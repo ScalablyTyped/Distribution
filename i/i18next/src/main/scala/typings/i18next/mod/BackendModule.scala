@@ -20,7 +20,7 @@ trait BackendModule[TOptions]
     ]
   ] = js.undefined
   
-  def init(services: Services, backendOptions: TOptions, i18nextOptions: InitOptions): Unit
+  def init(services: Services, backendOptions: TOptions, i18nextOptions: InitOptions[js.Object]): Unit
   
   def read(language: String, namespace: String, callback: ReadCallback): Unit
   
@@ -44,7 +44,10 @@ trait BackendModule[TOptions]
 }
 object BackendModule {
   
-  inline def apply[TOptions](init: (Services, TOptions, InitOptions) => Unit, read: (String, String, ReadCallback) => Unit): BackendModule[TOptions] = {
+  inline def apply[TOptions](
+    init: (Services, TOptions, InitOptions[js.Object]) => Unit,
+    read: (String, String, ReadCallback) => Unit
+  ): BackendModule[TOptions] = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction3(init), read = js.Any.fromFunction3(read))
     __obj.updateDynamic("type")("backend")
     __obj.asInstanceOf[BackendModule[TOptions]]
@@ -59,7 +62,7 @@ object BackendModule {
     
     inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
-    inline def setInit(value: (Services, TOptions, InitOptions) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
+    inline def setInit(value: (Services, TOptions, InitOptions[js.Object]) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
     
     inline def setRead(value: (String, String, ReadCallback) => Unit): Self = StObject.set(x, "read", js.Any.fromFunction3(value))
     

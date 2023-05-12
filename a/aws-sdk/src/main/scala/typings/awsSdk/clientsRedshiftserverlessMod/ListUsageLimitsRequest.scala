@@ -12,7 +12,7 @@ trait ListUsageLimitsRequest extends StObject {
   var maxResults: js.UndefOr[ListUsageLimitsRequestMaxResultsInteger] = js.undefined
   
   /**
-    * If your initial ListUsageLimits operation returns a nextToken, you can include the returned nextToken in subsequent ListUsageLimits operations, which returns results in the next page. 
+    * If your initial ListUsageLimits operation returns a nextToken, you can include the returned nextToken in following ListUsageLimits operations, which returns results in the next page. 
     */
   var nextToken: js.UndefOr[PaginationToken] = js.undefined
   

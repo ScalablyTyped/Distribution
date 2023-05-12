@@ -11,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.HeavyAdIssue
   - typings.devtoolsProtocol.devtoolsProtocolStrings.ContentSecurityPolicyIssue
   - typings.devtoolsProtocol.devtoolsProtocolStrings.SharedArrayBufferIssue
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.TrustedWebActivityIssue
   - typings.devtoolsProtocol.devtoolsProtocolStrings.LowTextContrastIssue
   - typings.devtoolsProtocol.devtoolsProtocolStrings.CorsIssue
   - typings.devtoolsProtocol.devtoolsProtocolStrings.AttributionReportingIssue
@@ -21,6 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.DeprecationIssue
   - typings.devtoolsProtocol.devtoolsProtocolStrings.ClientHintIssue
   - typings.devtoolsProtocol.devtoolsProtocolStrings.FederatedAuthRequestIssue
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.BounceTrackingIssue
 */
 trait InspectorIssueCode extends StObject
 object InspectorIssueCode {
@@ -28,6 +28,8 @@ object InspectorIssueCode {
   inline def AttributionReportingIssue: typings.devtoolsProtocol.devtoolsProtocolStrings.AttributionReportingIssue = "AttributionReportingIssue".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.AttributionReportingIssue]
   
   inline def BlockedByResponseIssue: typings.devtoolsProtocol.devtoolsProtocolStrings.BlockedByResponseIssue = "BlockedByResponseIssue".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.BlockedByResponseIssue]
+  
+  inline def BounceTrackingIssue: typings.devtoolsProtocol.devtoolsProtocolStrings.BounceTrackingIssue = "BounceTrackingIssue".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.BounceTrackingIssue]
   
   inline def ClientHintIssue: typings.devtoolsProtocol.devtoolsProtocolStrings.ClientHintIssue = "ClientHintIssue".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ClientHintIssue]
   
@@ -54,6 +56,4 @@ object InspectorIssueCode {
   inline def QuirksModeIssue: typings.devtoolsProtocol.devtoolsProtocolStrings.QuirksModeIssue = "QuirksModeIssue".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.QuirksModeIssue]
   
   inline def SharedArrayBufferIssue: typings.devtoolsProtocol.devtoolsProtocolStrings.SharedArrayBufferIssue = "SharedArrayBufferIssue".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SharedArrayBufferIssue]
-  
-  inline def TrustedWebActivityIssue: typings.devtoolsProtocol.devtoolsProtocolStrings.TrustedWebActivityIssue = "TrustedWebActivityIssue".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.TrustedWebActivityIssue]
 }

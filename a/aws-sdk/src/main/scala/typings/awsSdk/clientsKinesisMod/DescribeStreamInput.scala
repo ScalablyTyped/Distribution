@@ -17,14 +17,19 @@ trait DescribeStreamInput extends StObject {
   var Limit: js.UndefOr[DescribeStreamInputLimit] = js.undefined
   
   /**
+    * The ARN of the stream.
+    */
+  var StreamARN: js.UndefOr[typings.awsSdk.clientsKinesisMod.StreamARN] = js.undefined
+  
+  /**
     * The name of the stream to describe.
     */
-  var StreamName: typings.awsSdk.clientsKinesisMod.StreamName
+  var StreamName: js.UndefOr[typings.awsSdk.clientsKinesisMod.StreamName] = js.undefined
 }
 object DescribeStreamInput {
   
-  inline def apply(StreamName: StreamName): DescribeStreamInput = {
-    val __obj = js.Dynamic.literal(StreamName = StreamName.asInstanceOf[js.Any])
+  inline def apply(): DescribeStreamInput = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeStreamInput]
   }
   
@@ -39,6 +44,12 @@ object DescribeStreamInput {
     
     inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
+    inline def setStreamARN(value: StreamARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
+    
+    inline def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
+    
     inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+    
+    inline def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
   }
 }

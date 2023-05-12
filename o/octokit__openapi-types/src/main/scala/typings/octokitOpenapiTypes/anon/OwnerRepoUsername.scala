@@ -6,13 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OwnerRepoUsername extends StObject {
   
-  /** The account owner of the repository. The name is not case sensitive. */
   var owner: String
   
-  /** The name of the repository. The name is not case sensitive. */
   var repo: String
   
-  /** The handle for the GitHub user account. */
   var username: String
 }
 object OwnerRepoUsername {

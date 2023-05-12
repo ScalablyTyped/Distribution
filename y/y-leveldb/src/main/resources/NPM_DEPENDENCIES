@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "y-leveldb" : "0.1.1"
+      "y-leveldb" : "0.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "y-leveldb" : "0.1.1"
+      "y-leveldb" : "0.1.2"
     }
   ],
   "compile-devDependencies" : [

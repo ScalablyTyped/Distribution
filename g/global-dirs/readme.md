@@ -1,7 +1,7 @@
 
 # Scala.js typings for global-dirs
 
-Typings are for version 3.0.0
+Typings are for version 3.0.1
 
 ## Library description:
 Get the directory of globally installed packages and binaries

@@ -15,9 +15,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InitOptions
+trait InitOptions[T]
   extends StObject
-     with PluginOptions {
+     with PluginOptions[T] {
   
   /**
     * Prefixes the namespace to the returned key when using `cimode`
@@ -153,7 +153,9 @@ trait InitOptions
     * Gets called in case a interpolation value is undefined. This method will not be called if the value is empty string or null
     * @default noop
     */
-  var missingInterpolationHandler: js.UndefOr[js.Function3[/* text */ String, /* value */ Any, /* options */ this.type, Any]] = js.undefined
+  var missingInterpolationHandler: js.UndefOr[
+    js.Function3[/* text */ String, /* value */ Any, /* options */ InitOptions[js.Object], Any]
+  ] = js.undefined
   
   /**
     * Used for custom missing key handling (needs saveMissing set to true!)
@@ -327,13 +329,13 @@ trait InitOptions
 }
 object InitOptions {
   
-  inline def apply(): InitOptions = {
+  inline def apply[T](): InitOptions[T] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[InitOptions]
+    __obj.asInstanceOf[InitOptions[T]]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: InitOptions] (val x: Self) extends AnyVal {
+  implicit open class MutableBuilder[Self <: InitOptions[?], T] (val x: Self & InitOptions[T]) extends AnyVal {
     
     inline def setAppendNamespaceToCIMode(value: Boolean): Self = StObject.set(x, "appendNamespaceToCIMode", value.asInstanceOf[js.Any])
     
@@ -423,7 +425,7 @@ object InitOptions {
     
     inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
     
-    inline def setMissingInterpolationHandler(value: (/* text */ String, /* value */ Any, InitOptions) => Any): Self = StObject.set(x, "missingInterpolationHandler", js.Any.fromFunction3(value))
+    inline def setMissingInterpolationHandler(value: (/* text */ String, /* value */ Any, /* options */ InitOptions[js.Object]) => Any): Self = StObject.set(x, "missingInterpolationHandler", js.Any.fromFunction3(value))
     
     inline def setMissingInterpolationHandlerUndefined: Self = StObject.set(x, "missingInterpolationHandler", js.undefined)
     

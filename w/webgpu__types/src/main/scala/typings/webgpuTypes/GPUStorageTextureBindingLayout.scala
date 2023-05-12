@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GPUStorageTextureBindingLayout extends StObject {
   
   /**
-    * Indicates whether texture views bound to this binding will be bound for read-only or
-    * write-only access.
+    * The access mode for this binding, indicating readability and writability.
+    * Note:
+    * There is currently only one access mode, {@link GPUStorageTextureAccess#"write-only"},
+    * but this will expand in the future.
     */
   var access: js.UndefOr[GPUStorageTextureAccess] = js.undefined
   

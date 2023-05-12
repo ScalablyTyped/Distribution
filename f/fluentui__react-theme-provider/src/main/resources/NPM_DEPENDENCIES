@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@fluentui/react-theme-provider" : "0.18.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@fluentui/react-theme-provider" : "0.18.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

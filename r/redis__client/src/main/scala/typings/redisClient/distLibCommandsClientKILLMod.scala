@@ -6,10 +6,10 @@ import typings.redisClient.distLibCommandsClientKILLMod.ClientKillFilters.LOCAL_
 import typings.redisClient.distLibCommandsClientKILLMod.ClientKillFilters.TYPE
 import typings.redisClient.distLibCommandsClientKILLMod.ClientKillFilters.USER
 import typings.redisClient.distLibCommandsMod.RedisCommandArguments
-import typings.redisClient.redisClientStrings.master
-import typings.redisClient.redisClientStrings.normal
-import typings.redisClient.redisClientStrings.pubsub
-import typings.redisClient.redisClientStrings.replica
+import typings.redisClient.redisClientStrings.master_
+import typings.redisClient.redisClientStrings.normal_
+import typings.redisClient.redisClientStrings.pubsub_
+import typings.redisClient.redisClientStrings.replica_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -176,11 +176,11 @@ object distLibCommandsClientKILLMod {
        with KillFilter[TYPE]
        with KillFilters {
     
-    var `type`: normal | master | replica | pubsub
+    var `type`: normal_ | master_ | replica_ | pubsub_
   }
   object KillType {
     
-    inline def apply(filter: TYPE, `type`: normal | master | replica | pubsub): KillType = {
+    inline def apply(filter: TYPE, `type`: normal_ | master_ | replica_ | pubsub_): KillType = {
       val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[KillType]
@@ -189,7 +189,7 @@ object distLibCommandsClientKILLMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: KillType] (val x: Self) extends AnyVal {
       
-      inline def setType(value: normal | master | replica | pubsub): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: normal_ | master_ | replica_ | pubsub_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VolumeConfiguration extends StObject {
   
   /**
+    *  Contains the image used to boot the instance during launch. 
+    */
+  var rootVolume: js.UndefOr[RootVolume] = js.undefined
+  
+  /**
     * The baseline IOPS of the volume.
     */
   var volumeBaselineIOPS: js.UndefOr[VolumeBaselineIOPS] = js.undefined
@@ -45,6 +50,10 @@ object VolumeConfiguration {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: VolumeConfiguration] (val x: Self) extends AnyVal {
+    
+    inline def setRootVolume(value: RootVolume): Self = StObject.set(x, "rootVolume", value.asInstanceOf[js.Any])
+    
+    inline def setRootVolumeUndefined: Self = StObject.set(x, "rootVolume", js.undefined)
     
     inline def setVolumeBaselineIOPS(value: VolumeBaselineIOPS): Self = StObject.set(x, "volumeBaselineIOPS", value.asInstanceOf[js.Any])
     

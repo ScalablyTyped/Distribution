@@ -1,7 +1,7 @@
 
 # Scala.js typings for kbar
 
-Typings are for version 0.1.0-beta.36
+Typings are for version 0.1.0-beta.40
 
 ## Library description:
 kbar is a simple plug-n-play React component to add a fast, portable, and extensible <kbd>command</kbd> + <kbd>k</kbd> (command palette) interface to your site.

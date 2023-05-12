@@ -1,6 +1,5 @@
 package typings.meteor.anon
 
-import typings.meteor.meteorInts.`1`
 import typings.meteor.meteorInts.`2`
 import typings.meteor.meteorInts.`3`
 import typings.meteor.meteorInts.`4`
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TypeofAutoEncryptionLogge extends StObject {
   
-  val Error: `1`
+  val Error: typings.meteor.meteorInts.`1`
   
   val FatalError: typings.meteor.meteorInts.`0`
   
@@ -30,7 +29,7 @@ object TypeofAutoEncryptionLogge {
   @scala.inline
   implicit open class MutableBuilder[Self <: TypeofAutoEncryptionLogge] (val x: Self) extends AnyVal {
     
-    inline def setError(value: `1`): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
+    inline def setError(value: typings.meteor.meteorInts.`1`): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
     inline def setFatalError(value: typings.meteor.meteorInts.`0`): Self = StObject.set(x, "FatalError", value.asInstanceOf[js.Any])
     

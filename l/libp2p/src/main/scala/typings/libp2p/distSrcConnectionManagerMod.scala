@@ -1,37 +1,25 @@
 package typings.libp2p
 
-import typings.libp2p.distSrcConnectionManagerLatencyMonitorMod.SummaryObject
-import typings.libp2p.libp2pStrings.addressSorter
-import typings.libp2p.libp2pStrings.autoDial
-import typings.libp2p.libp2pStrings.autoDialInterval
-import typings.libp2p.libp2pStrings.inboundConnectionThreshold
-import typings.libp2p.libp2pStrings.inboundUpgradeTimeout
-import typings.libp2p.libp2pStrings.maxAddrsToDial
-import typings.libp2p.libp2pStrings.maxConnections
-import typings.libp2p.libp2pStrings.maxData
-import typings.libp2p.libp2pStrings.maxDialsPerPeer
-import typings.libp2p.libp2pStrings.maxEventLoopDelay
-import typings.libp2p.libp2pStrings.maxIncomingPendingConnections
-import typings.libp2p.libp2pStrings.maxParallelDials
-import typings.libp2p.libp2pStrings.maxReceivedData
-import typings.libp2p.libp2pStrings.maxSentData
-import typings.libp2p.libp2pStrings.minConnections
-import typings.libp2p.libp2pStrings.movingAverageInterval
-import typings.libp2p.libp2pStrings.pollInterval
-import typings.libp2p.libp2pStrings.resolvers
+import typings.libp2p.distSrcConnectionManagerAutoDialMod.AutoDial
+import typings.libp2p.distSrcConnectionManagerConnectionPrunerMod.ConnectionPruner
+import typings.libp2p.distSrcConnectionManagerDialQueueMod.DialQueue
 import typings.libp2pInterfaceConnection.mod.Connection
+import typings.libp2pInterfaceConnectionGater.mod.ConnectionGater
 import typings.libp2pInterfaceConnectionManager.mod.ConnectionManager
-import typings.libp2pInterfaceConnectionManager.mod.Dialer
+import typings.libp2pInterfaceLibp2p.libp2pInterfaceLibp2pInts.`-1`
+import typings.libp2pInterfaceLibp2p.libp2pInterfaceLibp2pInts.`0`
+import typings.libp2pInterfaceLibp2p.libp2pInterfaceLibp2pInts.`1`
+import typings.libp2pInterfaceLibp2p.mod.AddressSorter
+import typings.libp2pInterfaceLibp2p.mod.Libp2pEvents
 import typings.libp2pInterfaceMetrics.mod.Metrics
 import typings.libp2pInterfacePeerId.mod.PeerId
-import typings.libp2pInterfacePeerStore.libp2pInterfacePeerStoreInts.`-1`
-import typings.libp2pInterfacePeerStore.libp2pInterfacePeerStoreInts.`0`
-import typings.libp2pInterfacePeerStore.libp2pInterfacePeerStoreInts.`1`
 import typings.libp2pInterfacePeerStore.mod.Address
-import typings.libp2pInterfacePeerStore.mod.AddressSorter
 import typings.libp2pInterfacePeerStore.mod.PeerStore
-import typings.libp2pInterfaceTransport.mod.Upgrader
+import typings.libp2pInterfaceTransport.mod.TransportManager
 import typings.libp2pInterfaces.distSrcStartableMod.Startable
+import typings.libp2pInterfaces.eventsMod.EventEmitter
+import typings.libp2pInterfaces.mod.AbortOptions
+import typings.multiformatsMultiaddr.mod.Multiaddr_
 import typings.multiformatsMultiaddr.mod.Resolver
 import typings.std.CustomEvent
 import typings.std.Record
@@ -44,74 +32,33 @@ object distSrcConnectionManagerMod {
   @JSImport("libp2p/dist/src/connection-manager", "DefaultConnectionManager")
   @js.native
   open class DefaultConnectionManager protected ()
-    extends ConnectionManager
+    extends StObject
+       with ConnectionManager
        with Startable {
+    def this(components: DefaultConnectionManagerComponents) = this()
     def this(components: DefaultConnectionManagerComponents, init: ConnectionManagerInit) = this()
-    
-    /**
-      * If the `value` of `name` has exceeded its limit, maybe close a connection
-      */
-    def _checkMaxLimit(
-      name: maxConnections | minConnections | maxData | maxSentData | maxReceivedData | maxEventLoopDelay | pollInterval | movingAverageInterval | autoDial | autoDialInterval | addressSorter | maxParallelDials | maxAddrsToDial | typings.libp2p.libp2pStrings.dialTimeout | inboundUpgradeTimeout | maxDialsPerPeer | resolvers | typings.libp2p.libp2pStrings.startupReconnectTimeout | typings.libp2p.libp2pStrings.allow | typings.libp2p.libp2pStrings.deny | inboundConnectionThreshold | maxIncomingPendingConnections,
-      value: Double
-    ): js.Promise[Unit] = js.native
-    def _checkMaxLimit(
-      name: maxConnections | minConnections | maxData | maxSentData | maxReceivedData | maxEventLoopDelay | pollInterval | movingAverageInterval | autoDial | autoDialInterval | addressSorter | maxParallelDials | maxAddrsToDial | typings.libp2p.libp2pStrings.dialTimeout | inboundUpgradeTimeout | maxDialsPerPeer | resolvers | typings.libp2p.libp2pStrings.startupReconnectTimeout | typings.libp2p.libp2pStrings.allow | typings.libp2p.libp2pStrings.deny | inboundConnectionThreshold | maxIncomingPendingConnections,
-      value: Double,
-      toPrune: Double
-    ): js.Promise[Unit] = js.native
-    
-    /**
-      * Checks the libp2p metrics to determine if any values have exceeded
-      * the configured maximums.
-      *
-      * @private
-      */
-    def _checkMetrics(): js.Promise[Unit] = js.native
-    
-    /**
-      * Cleans up the connections
-      */
-    def _close(): js.Promise[Unit] = js.native
     
     /**
       * Tracks the incoming connection and check the connection limit
       */
     def _onConnect(evt: CustomEvent[Connection]): js.Promise[Unit] = js.native
     
-    /**
-      * If the event loop is slow, maybe close a connection
-      */
-    def _onLatencyMeasure(evt: CustomEvent[SummaryObject]): Unit = js.native
-    
-    /**
-      * If we have more connections than our maximum, select some excess connections
-      * to prune based on peer value
-      */
-    def _pruneConnections(toPrune: Double): js.Promise[Unit] = js.native
-    
     @JSName("afterStart")
     def afterStart_MDefaultConnectionManager(): js.Promise[Unit] = js.native
     
     /* private */ val allow: Any = js.native
     
-    @JSName("beforeStop")
-    def beforeStop_MDefaultConnectionManager(): js.Promise[Unit] = js.native
+    val autoDial: AutoDial = js.native
     
-    /* private */ val components: Any = js.native
-    
-    /* private */ var connectOnStartupController: Any = js.native
+    val connectionPruner: ConnectionPruner = js.native
     
     /* private */ val connections: Any = js.native
     
     /* private */ val deny: Any = js.native
     
-    /* private */ val dialTimeout: Any = js.native
+    val dialQueue: DialQueue = js.native
     
-    /**
-      * Get all open connections with a peer
-      */
-    def getAll(peerId: PeerId): js.Array[Connection] = js.native
+    /* private */ val events: Any = js.native
     
     /* private */ val inboundConnectionRateLimiter: Any = js.native
     
@@ -120,7 +67,11 @@ object distSrcConnectionManagerMod {
     /* CompleteClass */
     override def isStarted(): Boolean = js.native
     
-    /* private */ val latencyMonitor: Any = js.native
+    /* private */ val maxConnections: Any = js.native
+    
+    /* private */ val maxIncomingPendingConnections: Any = js.native
+    
+    /* private */ val metrics: Any = js.native
     
     def onConnect(evt: CustomEvent[Connection]): Unit = js.native
     
@@ -129,7 +80,11 @@ object distSrcConnectionManagerMod {
       */
     def onDisconnect(evt: CustomEvent[Connection]): Unit = js.native
     
-    /* private */ val opts: Any = js.native
+    def openConnection(peerIdOrMultiaddr: js.Array[Multiaddr_], options: OpenConnectionOptions): js.Promise[Connection] = js.native
+    def openConnection(peerIdOrMultiaddr: PeerId, options: OpenConnectionOptions): js.Promise[Connection] = js.native
+    def openConnection(peerIdOrMultiaddr: Multiaddr_, options: OpenConnectionOptions): js.Promise[Connection] = js.native
+    
+    /* private */ val peerStore: Any = js.native
     
     /**
       * This method will be invoked to start the component.
@@ -141,8 +96,6 @@ object distSrcConnectionManagerMod {
     
     /* private */ var started: Any = js.native
     
-    /* private */ val startupReconnectTimeout: Any = js.native
-    
     /**
       * This method will be invoked to stop the component.
       *
@@ -150,40 +103,13 @@ object distSrcConnectionManagerMod {
       */
     /* CompleteClass */
     override def stop(): Unit | js.Promise[Unit] = js.native
-    
-    /* private */ var timer: Any = js.native
-  }
-  
-  trait ConnectionManagerEvents extends StObject {
-    
-    @JSName("peer:connect")
-    var peerColonconnect: CustomEvent[PeerId]
-    
-    @JSName("peer:disconnect")
-    var peerColondisconnect: CustomEvent[PeerId]
-  }
-  object ConnectionManagerEvents {
-    
-    inline def apply(peerColonconnect: CustomEvent[PeerId], peerColondisconnect: CustomEvent[PeerId]): ConnectionManagerEvents = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("peer:connect")(peerColonconnect.asInstanceOf[js.Any])
-      __obj.updateDynamic("peer:disconnect")(peerColondisconnect.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ConnectionManagerEvents]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: ConnectionManagerEvents] (val x: Self) extends AnyVal {
-      
-      inline def setPeerColonconnect(value: CustomEvent[PeerId]): Self = StObject.set(x, "peer:connect", value.asInstanceOf[js.Any])
-      
-      inline def setPeerColondisconnect(value: CustomEvent[PeerId]): Self = StObject.set(x, "peer:disconnect", value.asInstanceOf[js.Any])
-    }
   }
   
   trait ConnectionManagerInit extends StObject {
     
     /**
-      * Sort the known addresses of a peer before trying to dial
+      * Sort the known addresses of a peer before trying to dial, By default public
+      * addresses will be dialled before private (e.g. loopback or LAN) addresses.
       */
     var addressSorter: js.UndefOr[AddressSorter] = js.undefined
     
@@ -194,15 +120,23 @@ object distSrcConnectionManagerMod {
     var allow: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
-      * If true, try to connect to all discovered peers up to the connection manager limit
+      * When dialling peers from the peer book to keep the number of open connections
+      * above `minConnections`, add dials for this many peers to the dial queue
+      * at once. (default: 25)
       */
-    var autoDial: js.UndefOr[Boolean] = js.undefined
+    var autoDialConcurrency: js.UndefOr[Double] = js.undefined
     
     /**
       * How long to wait between attempting to keep our number of concurrent connections
-      * above minConnections
+      * above minConnections (default: 5000)
       */
-    var autoDialInterval: Double
+    var autoDialInterval: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * To allow user dials to take priority over auto dials, use this value as the
+      * dial priority. (default: 0)
+      */
+    var autoDialPriority: js.UndefOr[Double] = js.undefined
     
     /**
       * A list of multiaddrs that will never be allowed to open connections to
@@ -218,97 +152,65 @@ object distSrcConnectionManagerMod {
     
     /**
       * If more than this many connections are opened per second by a single
-      * host, reject subsequent connections
+      * host, reject subsequent connections. (default: 5)
       */
     var inboundConnectionThreshold: js.UndefOr[Double] = js.undefined
     
     /**
       * When a new inbound connection is opened, the upgrade process (e.g. protect,
-      * encrypt, multiplex etc) must complete within this number of ms.
+      * encrypt, multiplex etc) must complete within this number of ms. (default: 30s)
       */
-    var inboundUpgradeTimeout: Double
+    var inboundUpgradeTimeout: js.UndefOr[Double] = js.undefined
     
     /**
-      * Number of max addresses to dial for a given peer
+      * The maximum number of connections libp2p is willing to have before it starts
+      * pruning connections to reduce resource usage. (default: 300)
       */
-    var maxAddrsToDial: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * The maximum number of connections to keep open
-      */
-    var maxConnections: Double
-    
-    /**
-      * The max data (in and out), per average interval to allow
-      */
-    var maxData: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Number of max concurrent dials per peer
-      */
-    var maxDialsPerPeer: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * The upper limit the event loop can take to run
-      */
-    var maxEventLoopDelay: js.UndefOr[Double] = js.undefined
+    var maxConnections: js.UndefOr[Double] = js.undefined
     
     /**
       * The maximum number of parallel incoming connections allowed that have yet to
-      * complete the connection upgrade - e.g. choosing connection encryption, muxer, etc
+      * complete the connection upgrade - e.g. choosing connection encryption, muxer, etc.
+      * (default: 10)
       */
     var maxIncomingPendingConnections: js.UndefOr[Double] = js.undefined
     
     /**
-      * Number of max concurrent dials
+      * The maximum number of dials across all peers to execute in parallel.
+      * (default: 100)
       */
     var maxParallelDials: js.UndefOr[Double] = js.undefined
     
     /**
-      * The max incoming data, per average interval to allow
+      * To prevent individual peers with large amounts of multiaddrs swamping the
+      * dial queue, this value controls how many addresses to dial in parallel per
+      * peer. So for example if two peers have 10 addresses and this value is set
+      * at 5, we will dial 5 addresses from each at a time. (default: 10)
       */
-    var maxReceivedData: js.UndefOr[Double] = js.undefined
+    var maxParallelDialsPerPeer: js.UndefOr[Double] = js.undefined
     
     /**
-      * The max outgoing data, per average interval to allow
+      * Maximum number of addresses allowed for a given peer - if a peer has more
+      * addresses than this then the dial will fail. (default: 25)
       */
-    var maxSentData: js.UndefOr[Double] = js.undefined
+    var maxPeerAddrsToDial: js.UndefOr[Double] = js.undefined
     
     /**
-      * The minimum number of connections to keep open
+      * The minimum number of connections below which libp2p will start to dial peers
+      * from the peer book. Setting this to 0 effectively disables this behaviour.
+      * (default: 50)
       */
-    var minConnections: Double
+    var minConnections: js.UndefOr[Double] = js.undefined
     
     /**
-      * How often, in milliseconds, to compute averages
-      */
-    var movingAverageInterval: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * How often, in milliseconds, metrics and latency should be checked
-      */
-    var pollInterval: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Multiaddr resolvers to use when dialing
+      * Multiaddr resolvers to use when dialling
       */
     var resolvers: js.UndefOr[Record[String, Resolver]] = js.undefined
-    
-    /**
-      * On startup we try to dial any peer that has previously been
-      * tagged with KEEP_ALIVE up to this timeout in ms. (default: 60000)
-      */
-    var startupReconnectTimeout: js.UndefOr[Double] = js.undefined
   }
   object ConnectionManagerInit {
     
-    inline def apply(
-      autoDialInterval: Double,
-      inboundUpgradeTimeout: Double,
-      maxConnections: Double,
-      minConnections: Double
-    ): ConnectionManagerInit = {
-      val __obj = js.Dynamic.literal(autoDialInterval = autoDialInterval.asInstanceOf[js.Any], inboundUpgradeTimeout = inboundUpgradeTimeout.asInstanceOf[js.Any], maxConnections = maxConnections.asInstanceOf[js.Any], minConnections = minConnections.asInstanceOf[js.Any])
+    inline def apply(): ConnectionManagerInit = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConnectionManagerInit]
     }
     
@@ -325,11 +227,17 @@ object distSrcConnectionManagerMod {
       
       inline def setAllowVarargs(value: String*): Self = StObject.set(x, "allow", js.Array(value*))
       
-      inline def setAutoDial(value: Boolean): Self = StObject.set(x, "autoDial", value.asInstanceOf[js.Any])
+      inline def setAutoDialConcurrency(value: Double): Self = StObject.set(x, "autoDialConcurrency", value.asInstanceOf[js.Any])
+      
+      inline def setAutoDialConcurrencyUndefined: Self = StObject.set(x, "autoDialConcurrency", js.undefined)
       
       inline def setAutoDialInterval(value: Double): Self = StObject.set(x, "autoDialInterval", value.asInstanceOf[js.Any])
       
-      inline def setAutoDialUndefined: Self = StObject.set(x, "autoDial", js.undefined)
+      inline def setAutoDialIntervalUndefined: Self = StObject.set(x, "autoDialInterval", js.undefined)
+      
+      inline def setAutoDialPriority(value: Double): Self = StObject.set(x, "autoDialPriority", value.asInstanceOf[js.Any])
+      
+      inline def setAutoDialPriorityUndefined: Self = StObject.set(x, "autoDialPriority", js.undefined)
       
       inline def setDeny(value: js.Array[String]): Self = StObject.set(x, "deny", value.asInstanceOf[js.Any])
       
@@ -347,23 +255,11 @@ object distSrcConnectionManagerMod {
       
       inline def setInboundUpgradeTimeout(value: Double): Self = StObject.set(x, "inboundUpgradeTimeout", value.asInstanceOf[js.Any])
       
-      inline def setMaxAddrsToDial(value: Double): Self = StObject.set(x, "maxAddrsToDial", value.asInstanceOf[js.Any])
-      
-      inline def setMaxAddrsToDialUndefined: Self = StObject.set(x, "maxAddrsToDial", js.undefined)
+      inline def setInboundUpgradeTimeoutUndefined: Self = StObject.set(x, "inboundUpgradeTimeout", js.undefined)
       
       inline def setMaxConnections(value: Double): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
       
-      inline def setMaxData(value: Double): Self = StObject.set(x, "maxData", value.asInstanceOf[js.Any])
-      
-      inline def setMaxDataUndefined: Self = StObject.set(x, "maxData", js.undefined)
-      
-      inline def setMaxDialsPerPeer(value: Double): Self = StObject.set(x, "maxDialsPerPeer", value.asInstanceOf[js.Any])
-      
-      inline def setMaxDialsPerPeerUndefined: Self = StObject.set(x, "maxDialsPerPeer", js.undefined)
-      
-      inline def setMaxEventLoopDelay(value: Double): Self = StObject.set(x, "maxEventLoopDelay", value.asInstanceOf[js.Any])
-      
-      inline def setMaxEventLoopDelayUndefined: Self = StObject.set(x, "maxEventLoopDelay", js.undefined)
+      inline def setMaxConnectionsUndefined: Self = StObject.set(x, "maxConnections", js.undefined)
       
       inline def setMaxIncomingPendingConnections(value: Double): Self = StObject.set(x, "maxIncomingPendingConnections", value.asInstanceOf[js.Any])
       
@@ -371,39 +267,31 @@ object distSrcConnectionManagerMod {
       
       inline def setMaxParallelDials(value: Double): Self = StObject.set(x, "maxParallelDials", value.asInstanceOf[js.Any])
       
+      inline def setMaxParallelDialsPerPeer(value: Double): Self = StObject.set(x, "maxParallelDialsPerPeer", value.asInstanceOf[js.Any])
+      
+      inline def setMaxParallelDialsPerPeerUndefined: Self = StObject.set(x, "maxParallelDialsPerPeer", js.undefined)
+      
       inline def setMaxParallelDialsUndefined: Self = StObject.set(x, "maxParallelDials", js.undefined)
       
-      inline def setMaxReceivedData(value: Double): Self = StObject.set(x, "maxReceivedData", value.asInstanceOf[js.Any])
+      inline def setMaxPeerAddrsToDial(value: Double): Self = StObject.set(x, "maxPeerAddrsToDial", value.asInstanceOf[js.Any])
       
-      inline def setMaxReceivedDataUndefined: Self = StObject.set(x, "maxReceivedData", js.undefined)
-      
-      inline def setMaxSentData(value: Double): Self = StObject.set(x, "maxSentData", value.asInstanceOf[js.Any])
-      
-      inline def setMaxSentDataUndefined: Self = StObject.set(x, "maxSentData", js.undefined)
+      inline def setMaxPeerAddrsToDialUndefined: Self = StObject.set(x, "maxPeerAddrsToDial", js.undefined)
       
       inline def setMinConnections(value: Double): Self = StObject.set(x, "minConnections", value.asInstanceOf[js.Any])
       
-      inline def setMovingAverageInterval(value: Double): Self = StObject.set(x, "movingAverageInterval", value.asInstanceOf[js.Any])
-      
-      inline def setMovingAverageIntervalUndefined: Self = StObject.set(x, "movingAverageInterval", js.undefined)
-      
-      inline def setPollInterval(value: Double): Self = StObject.set(x, "pollInterval", value.asInstanceOf[js.Any])
-      
-      inline def setPollIntervalUndefined: Self = StObject.set(x, "pollInterval", js.undefined)
+      inline def setMinConnectionsUndefined: Self = StObject.set(x, "minConnections", js.undefined)
       
       inline def setResolvers(value: Record[String, Resolver]): Self = StObject.set(x, "resolvers", value.asInstanceOf[js.Any])
       
       inline def setResolversUndefined: Self = StObject.set(x, "resolvers", js.undefined)
-      
-      inline def setStartupReconnectTimeout(value: Double): Self = StObject.set(x, "startupReconnectTimeout", value.asInstanceOf[js.Any])
-      
-      inline def setStartupReconnectTimeoutUndefined: Self = StObject.set(x, "startupReconnectTimeout", js.undefined)
     }
   }
   
   trait DefaultConnectionManagerComponents extends StObject {
     
-    var dialer: Dialer
+    var connectionGater: ConnectionGater
+    
+    var events: EventEmitter[Libp2pEvents]
     
     var metrics: js.UndefOr[Metrics] = js.undefined
     
@@ -411,19 +299,27 @@ object distSrcConnectionManagerMod {
     
     var peerStore: PeerStore
     
-    var upgrader: Upgrader
+    var transportManager: TransportManager
   }
   object DefaultConnectionManagerComponents {
     
-    inline def apply(dialer: Dialer, peerId: PeerId, peerStore: PeerStore, upgrader: Upgrader): DefaultConnectionManagerComponents = {
-      val __obj = js.Dynamic.literal(dialer = dialer.asInstanceOf[js.Any], peerId = peerId.asInstanceOf[js.Any], peerStore = peerStore.asInstanceOf[js.Any], upgrader = upgrader.asInstanceOf[js.Any])
+    inline def apply(
+      connectionGater: ConnectionGater,
+      events: EventEmitter[Libp2pEvents],
+      peerId: PeerId,
+      peerStore: PeerStore,
+      transportManager: TransportManager
+    ): DefaultConnectionManagerComponents = {
+      val __obj = js.Dynamic.literal(connectionGater = connectionGater.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], peerId = peerId.asInstanceOf[js.Any], peerStore = peerStore.asInstanceOf[js.Any], transportManager = transportManager.asInstanceOf[js.Any])
       __obj.asInstanceOf[DefaultConnectionManagerComponents]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: DefaultConnectionManagerComponents] (val x: Self) extends AnyVal {
       
-      inline def setDialer(value: Dialer): Self = StObject.set(x, "dialer", value.asInstanceOf[js.Any])
+      inline def setConnectionGater(value: ConnectionGater): Self = StObject.set(x, "connectionGater", value.asInstanceOf[js.Any])
+      
+      inline def setEvents(value: EventEmitter[Libp2pEvents]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
       inline def setMetrics(value: Metrics): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
       
@@ -433,7 +329,29 @@ object distSrcConnectionManagerMod {
       
       inline def setPeerStore(value: PeerStore): Self = StObject.set(x, "peerStore", value.asInstanceOf[js.Any])
       
-      inline def setUpgrader(value: Upgrader): Self = StObject.set(x, "upgrader", value.asInstanceOf[js.Any])
+      inline def setTransportManager(value: TransportManager): Self = StObject.set(x, "transportManager", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait OpenConnectionOptions
+    extends StObject
+       with AbortOptions {
+    
+    var priority: js.UndefOr[Double] = js.undefined
+  }
+  object OpenConnectionOptions {
+    
+    inline def apply(): OpenConnectionOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[OpenConnectionOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenConnectionOptions] (val x: Self) extends AnyVal {
+      
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     }
   }
 }

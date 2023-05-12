@@ -1,6 +1,5 @@
 package typings.opentelemetryApi
 
-import typings.opentelemetryApi.buildSrcApiMetricsMod.MetricsAPI
 import typings.opentelemetryApi.buildSrcBaggageTypesMod.BaggageEntryMetadata
 import typings.opentelemetryApi.buildSrcContextTypesMod.Context
 import typings.opentelemetryApi.buildSrcMetricsMeterMod.Meter
@@ -38,8 +37,8 @@ object mod {
     
     @JSImport("@opentelemetry/api", "default.metrics")
     @js.native
-    def metrics: MetricsAPI = js.native
-    inline def metrics_=(x: MetricsAPI): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metrics")(x.asInstanceOf[js.Any])
+    def metrics: typings.opentelemetryApi.buildSrcApiMetricsMod.MetricsAPI = js.native
+    inline def metrics_=(x: typings.opentelemetryApi.buildSrcApiMetricsMod.MetricsAPI): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metrics")(x.asInstanceOf[js.Any])
     
     @JSImport("@opentelemetry/api", "default.propagation")
     @js.native
@@ -135,6 +134,27 @@ object mod {
   @JSImport("@opentelemetry/api", "INVALID_TRACEID")
   @js.native
   val INVALID_TRACEID: /* "00000000000000000000000000000000" */ String = js.native
+  
+  @JSImport("@opentelemetry/api", "MetricsAPI")
+  @js.native
+  /** Empty private constructor prevents end users from constructing a new instance of the API */
+  /* private */ open class MetricsAPI ()
+    extends typings.opentelemetryApi.buildSrcApiMetricsMod.MetricsAPI
+  /* static members */
+  object MetricsAPI {
+    
+    @JSImport("@opentelemetry/api", "MetricsAPI")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@opentelemetry/api", "MetricsAPI._instance")
+    @js.native
+    def _instance: Any = js.native
+    inline def _instance_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
+    
+    /** Get the singleton instance of the Metrics API */
+    inline def getInstance(): typings.opentelemetryApi.buildSrcApiMetricsMod.MetricsAPI = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[typings.opentelemetryApi.buildSrcApiMetricsMod.MetricsAPI]
+  }
   
   @JSImport("@opentelemetry/api", "PropagationAPI")
   @js.native
@@ -302,7 +322,7 @@ object mod {
   
   @JSImport("@opentelemetry/api", "metrics")
   @js.native
-  val metrics: MetricsAPI = js.native
+  val metrics: typings.opentelemetryApi.buildSrcApiMetricsMod.MetricsAPI = js.native
   
   @JSImport("@opentelemetry/api", "propagation")
   @js.native

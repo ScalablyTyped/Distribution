@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "sigstore" : "1.4.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "sigstore" : "1.4.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -418,6 +418,8 @@ object sapUiCommonsAccordionMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:sectionClose sectionClose} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -429,6 +431,8 @@ object sapUiCommonsAccordionMod {
     mParameters: CloseSectionId): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:sectionOpen sectionOpen} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -440,6 +444,8 @@ object sapUiCommonsAccordionMod {
     mParameters: CloseSectionIds): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:sectionsReorder sectionsReorder} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

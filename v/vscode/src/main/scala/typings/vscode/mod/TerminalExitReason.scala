@@ -14,8 +14,8 @@ object TerminalExitReason extends StObject {
   def apply(value: Double): js.UndefOr[TerminalExitReason & Double] = js.native
   
   /**
-    * An extension disposed the terminal.
-    */
+  		 * An extension disposed the terminal.
+  		 */
   @js.native
   sealed trait Extension
     extends StObject
@@ -23,8 +23,8 @@ object TerminalExitReason extends StObject {
   /* 4 */ val Extension: typings.vscode.mod.TerminalExitReason.Extension & Double = js.native
   
   /**
-    * The shell process exited.
-    */
+  		 * The shell process exited.
+  		 */
   @js.native
   sealed trait Process
     extends StObject
@@ -32,8 +32,8 @@ object TerminalExitReason extends StObject {
   /* 2 */ val Process: typings.vscode.mod.TerminalExitReason.Process & Double = js.native
   
   /**
-    * The window closed/reloaded.
-    */
+  		 * The window closed/reloaded.
+  		 */
   @js.native
   sealed trait Shutdown
     extends StObject
@@ -41,8 +41,8 @@ object TerminalExitReason extends StObject {
   /* 1 */ val Shutdown: typings.vscode.mod.TerminalExitReason.Shutdown & Double = js.native
   
   /**
-    * Unknown reason.
-    */
+  		 * Unknown reason.
+  		 */
   @js.native
   sealed trait Unknown
     extends StObject
@@ -50,8 +50,8 @@ object TerminalExitReason extends StObject {
   /* 0 */ val Unknown: typings.vscode.mod.TerminalExitReason.Unknown & Double = js.native
   
   /**
-    * The user closed the terminal.
-    */
+  		 * The user closed the terminal.
+  		 */
   @js.native
   sealed trait User
     extends StObject

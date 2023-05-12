@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MozUserInput
+import typings.csstype.mod.Property.BorderRightStyle
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `501` extends StObject {
   
   var value: js.UndefOr[
-    MozUserInput | (js.Array[
-      (Extract[js.UndefOr[MozUserInput | js.Array[NonNullable[js.UndefOr[MozUserInput]]]], String]) | NonNullable[js.UndefOr[MozUserInput]]
+    BorderRightStyle | (js.Array[
+      (Extract[
+        js.UndefOr[BorderRightStyle | js.Array[NonNullable[js.UndefOr[BorderRightStyle]]]], 
+        String
+      ]) | NonNullable[js.UndefOr[BorderRightStyle]]
     ])
   ] = js.native
 }

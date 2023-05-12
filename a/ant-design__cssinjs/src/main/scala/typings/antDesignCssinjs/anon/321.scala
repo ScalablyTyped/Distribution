@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ScrollMarginInlineStart
+import typings.csstype.mod.Property.GlyphOrientationVertical
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `321` extends StObject {
   
   var value: js.UndefOr[
-    (ScrollMarginInlineStart[Double | String]) | (js.Array[
+    GlyphOrientationVertical | (js.Array[
       (Extract[
         js.UndefOr[
-          (ScrollMarginInlineStart[Double | String]) | (js.Array[NonNullable[js.UndefOr[ScrollMarginInlineStart[Double | String]]]])
+          GlyphOrientationVertical | js.Array[NonNullable[js.UndefOr[GlyphOrientationVertical]]]
         ], 
         String
-      ]) | (NonNullable[js.UndefOr[ScrollMarginInlineStart[Double | String]]])
+      ]) | NonNullable[js.UndefOr[GlyphOrientationVertical]]
     ])
   ] = js.native
 }

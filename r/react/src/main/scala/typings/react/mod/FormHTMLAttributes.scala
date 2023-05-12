@@ -1,5 +1,6 @@
 package typings.react.mod
 
+import typings.std.FormData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ trait FormHTMLAttributes[T]
   
   var acceptCharset: js.UndefOr[String] = js.undefined
   
-  var action: js.UndefOr[String] = js.undefined
+  var action: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
   
   var autoComplete: js.UndefOr[String] = js.undefined
   
@@ -21,8 +22,6 @@ trait FormHTMLAttributes[T]
   var name: js.UndefOr[String] = js.undefined
   
   var noValidate: js.UndefOr[Boolean] = js.undefined
-  
-  var rel: js.UndefOr[String] = js.undefined
   
   var target: js.UndefOr[String] = js.undefined
 }
@@ -40,7 +39,9 @@ object FormHTMLAttributes {
     
     inline def setAcceptCharsetUndefined: Self = StObject.set(x, "acceptCharset", js.undefined)
     
-    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    
+    inline def setActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
     
     inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
@@ -63,10 +64,6 @@ object FormHTMLAttributes {
     inline def setNoValidate(value: Boolean): Self = StObject.set(x, "noValidate", value.asInstanceOf[js.Any])
     
     inline def setNoValidateUndefined: Self = StObject.set(x, "noValidate", js.undefined)
-    
-    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
-    
-    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
     
     inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

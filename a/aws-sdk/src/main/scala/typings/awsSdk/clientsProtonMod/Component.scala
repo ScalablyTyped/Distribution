@@ -37,6 +37,11 @@ trait Component extends StObject {
   var environmentName: ResourceName
   
   /**
+    * The last token the client requested.
+    */
+  var lastClientRequestToken: js.UndefOr[String] = js.undefined
+  
+  /**
     * The time when a deployment of the component was last attempted.
     */
   var lastDeploymentAttemptedAt: js.UndefOr[js.Date] = js.undefined
@@ -103,6 +108,10 @@ object Component {
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setEnvironmentName(value: ResourceName): Self = StObject.set(x, "environmentName", value.asInstanceOf[js.Any])
+    
+    inline def setLastClientRequestToken(value: String): Self = StObject.set(x, "lastClientRequestToken", value.asInstanceOf[js.Any])
+    
+    inline def setLastClientRequestTokenUndefined: Self = StObject.set(x, "lastClientRequestToken", js.undefined)
     
     inline def setLastDeploymentAttemptedAt(value: js.Date): Self = StObject.set(x, "lastDeploymentAttemptedAt", value.asInstanceOf[js.Any])
     

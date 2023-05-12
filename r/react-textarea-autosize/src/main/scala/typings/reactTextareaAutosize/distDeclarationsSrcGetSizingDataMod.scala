@@ -65,7 +65,7 @@ object distDeclarationsSrcGetSizingDataMod {
   
   type SizingProps = Extract[
     borderBottomWidth | borderLeftWidth | borderRightWidth | borderTopWidth | boxSizing | fontFamily | fontSize | fontStyle | fontWeight | letterSpacing | lineHeight | paddingBottom | paddingLeft | paddingRight | paddingTop | tabSize | textIndent | textRendering | textTransform | width | wordBreak, 
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 465, starting with typings.reactTextareaAutosize.reactTextareaAutosizeStrings.accentColor, typings.reactTextareaAutosize.reactTextareaAutosizeStrings.alignContent, typings.reactTextareaAutosize.reactTextareaAutosizeStrings.alignItems */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 472, starting with typings.reactTextareaAutosize.reactTextareaAutosizeStrings.accentColor, typings.reactTextareaAutosize.reactTextareaAutosizeStrings.alignContent, typings.reactTextareaAutosize.reactTextareaAutosizeStrings.alignItems */ Any
   ]
   
   type SizingStyle = Pick[CSSStyleDeclaration, SizingProps]

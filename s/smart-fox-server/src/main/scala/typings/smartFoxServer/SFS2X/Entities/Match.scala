@@ -35,7 +35,7 @@ object Match {
     def and(varName: String, condition: FindRoomsRequest, value: Any): MatchExpression = js.native
     def and(varName: String, condition: FindUsersRequest, value: Any): MatchExpression = js.native
     
-    /** @type {(RoomProperties | UserProperties | BoolMatch | NumberMatch | StringMatch | Requests.Game.CreateSFSGameRequest | Requests.System.FindRoomsRequest | Requests.System.FindUsersRequest)} Returns the matching criteria used during values comparison among those provided by the BoolMatch, NumberMatch and StringMatch classes. */
+    /** Returns the matching criteria used during values comparison among those provided by the BoolMatch, NumberMatch and StringMatch classes. */
     var condition: RoomProperties | UserProperties | BoolMatch | NumberMatch | StringMatch | CreateSFSGameRequest | FindRoomsRequest | FindUsersRequest = js.native
     
     /**
@@ -44,10 +44,10 @@ object Match {
       */
     def hasNext(): Boolean = js.native
     
-    /** @type {LogicOperator} In case of concatenated expressions, returns the current logical operator. */
+    /** In case of concatenated expressions, returns the current logical operator. */
     var loginOp: LogicOperator = js.native
     
-    /** @type {MatchExpression} Returns the next matching expression concatenated to the current one, if existing. */
+    /** Returns the next matching expression concatenated to the current one, if existing. */
     var next: MatchExpression = js.native
     
     def or(varName: String, condition: BoolMatch, value: Any): MatchExpression = js.native
@@ -72,10 +72,10 @@ object Match {
       */
     def rewind(): MatchExpression = js.native
     
-    /** @type {any} Returns the value against which the variable or property corresponding to varName is compared. */
+    /** Returns the value against which the variable or property corresponding to varName is compared. */
     var value: Any = js.native
     
-    /** @type {string} Returns the name of the variable or property against which the comparison is made. */
+    /** Returns the name of the variable or property against which the comparison is made. */
     var varName: String = js.native
   }
   

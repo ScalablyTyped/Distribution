@@ -6,17 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersPathIssuenumberQueryContentPage extends StObject {
   
-  /** List the reactions to an [issue](https://docs.github.com/rest/reference/issues). */
+  /**
+    * List reactions for an issue
+    * @description List the reactions to an [issue](https://docs.github.com/rest/reference/issues).
+    */
   var get: ParametersPathIssuenumberQueryContentPage
   
-  /** Create a reaction to an [issue](https://docs.github.com/rest/reference/issues/). A response with an HTTP `200` status means that you already added the reaction type to this issue. */
-  var post: ParametersPathIssuenumberRequestBodyContentApplicationjson114
+  /**
+    * Create reaction for an issue
+    * @description Create a reaction to an [issue](https://docs.github.com/rest/reference/issues/). A response with an HTTP `200` status means that you already added the reaction type to this issue.
+    */
+  var post: ParametersPathIssuenumberRequestBodyContentApplicationjson119
 }
 object GetParametersPathIssuenumberQueryContentPage {
   
   inline def apply(
     get: ParametersPathIssuenumberQueryContentPage,
-    post: ParametersPathIssuenumberRequestBodyContentApplicationjson114
+    post: ParametersPathIssuenumberRequestBodyContentApplicationjson119
   ): GetParametersPathIssuenumberQueryContentPage = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetParametersPathIssuenumberQueryContentPage]
@@ -27,6 +33,6 @@ object GetParametersPathIssuenumberQueryContentPage {
     
     inline def setGet(value: ParametersPathIssuenumberQueryContentPage): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPost(value: ParametersPathIssuenumberRequestBodyContentApplicationjson114): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+    inline def setPost(value: ParametersPathIssuenumberRequestBodyContentApplicationjson119): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
   }
 }

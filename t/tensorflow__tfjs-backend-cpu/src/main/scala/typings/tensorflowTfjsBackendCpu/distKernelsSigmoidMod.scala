@@ -19,5 +19,5 @@ object distKernelsSigmoidMod {
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Sigmoid", "sigmoidImpl")
   @js.native
-  val sigmoidImpl: SimpleUnaryImpl = js.native
+  val sigmoidImpl: SimpleUnaryImpl[Double, Double] = js.native
 }

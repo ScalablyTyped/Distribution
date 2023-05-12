@@ -160,7 +160,7 @@ trait Skeleton
   /**
     * Enable animation blending for this skeleton
     * @param blendingSpeed defines the blending speed to apply
-    * @see https://doc.babylonjs.com/babylon101/animations#animation-blending
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/animation/advanced_animations#animation-blending
     */
   def enableBlending(): Unit = js.native
   def enableBlending(blendingSpeed: Double): Unit = js.native
@@ -234,7 +234,7 @@ trait Skeleton
   
   /**
     * List of inspectable custom properties (used by the Inspector)
-    * @see https://doc.babylonjs.com/how_to/debug_layer#extensibility
+    * @see https://doc.babylonjs.com/toolsAndResources/inspector#extensibility
     */
   var inspectableCustomProperties: js.Array[IInspectable] = js.native
   

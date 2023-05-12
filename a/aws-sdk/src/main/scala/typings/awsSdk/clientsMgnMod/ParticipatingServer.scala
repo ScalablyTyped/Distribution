@@ -12,12 +12,12 @@ trait ParticipatingServer extends StObject {
   var launchStatus: js.UndefOr[LaunchStatus] = js.undefined
   
   /**
-    * Participating server Source Server ID.
+    * Participating server's launched ec2 instance ID.
     */
   var launchedEc2InstanceID: js.UndefOr[EC2InstanceID] = js.undefined
   
   /**
-    * Participating server Source Server ID.
+    * Participating server's Post Launch Actions Status.
     */
   var postLaunchActionsStatus: js.UndefOr[PostLaunchActionsStatus] = js.undefined
   

@@ -59,6 +59,7 @@ object mod {
   inline def extractReplies(text: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractReplies")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   inline def extractUrls(text: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractUrls")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def extractUrls(text: String, options: ExtractUrlsWithoutProtocol): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractUrls")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   inline def extractUrlsWithIndices(text: String): js.Array[UrlWithIndices] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractUrlsWithIndices")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[UrlWithIndices]]
   inline def extractUrlsWithIndices(text: String, options: ExtractUrlsWithoutProtocol): js.Array[UrlWithIndices] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractUrlsWithIndices")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[UrlWithIndices]]

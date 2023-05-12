@@ -87,7 +87,7 @@ trait TestScriptSetupActionOperation
   var params: js.UndefOr[String] = js.undefined
   
   /**
-    * This gives control to test-script writers to set headers explicitly based on test requirements.  It will allow for testing using:  - "If-Modified-Since" and "If-None-Match" headers.  See http://build.fhir.org/http.html#2.1.0.5.1 - "If-Match" header.  See http://build.fhir.org/http.html#2.1.0.11 - Conditional Create using "If-None-Exist".  See http://build.fhir.org/http.html#2.1.0.13.1 - Invalid "Content-Type" header for negative testing. - etc.
+    * This gives control to test-script writers to set headers explicitly based on test requirements.  It will allow for testing using:  - "If-Modified-Since" and "If-None-Match" headers.  ["If-Match" header](http.html#2.1.0.5.1).  See [Conditional Create using "If-None-Exist"](http.html#2.1.0.11).  See [Invalid "Content-Type" header](http.html#2.1.0.13.1) for negative testing. - etc.
     */
   var requestHeader: js.UndefOr[js.Array[TestScriptSetupActionOperationRequestHeader]] = js.undefined
   
@@ -117,7 +117,7 @@ trait TestScriptSetupActionOperation
   var targetId: js.UndefOr[String] = js.undefined
   
   /**
-    * See http://build.fhir.org/http.html for list of server interactions.
+    * See the list of [server interactions](http.html).
     */
   var `type`: js.UndefOr[Coding] = js.undefined
   

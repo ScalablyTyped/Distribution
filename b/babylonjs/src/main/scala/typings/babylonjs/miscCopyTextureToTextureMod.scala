@@ -1,8 +1,8 @@
 package typings.babylonjs
 
-import typings.babylonjs.enginesEngineMod.Engine
 import typings.babylonjs.enginesRenderTargetWrapperMod.IRenderTargetTexture
 import typings.babylonjs.enginesRenderTargetWrapperMod.RenderTargetWrapper
+import typings.babylonjs.enginesThinEngineMod.ThinEngine
 import typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture
 import typings.babylonjs.materialsTexturesThinTextureMod.ThinTexture
 import org.scalablytyped.runtime.StObject
@@ -45,12 +45,18 @@ object miscCopyTextureToTextureMod {
     /**
       * Constructs a new instance of the class
       * @param engine The engine to use for the copy
+      * @param isDepthTexture True means that we should write (using gl_FragDepth) into the depth texture attached to the destination (default: false)
       */
-    def this(engine: Engine) = this()
+    def this(engine: ThinEngine) = this()
+    def this(engine: ThinEngine, isDepthTexture: Boolean) = this()
     
     /* private */ var _conversion: Any = js.native
     
     /* private */ var _effectWrapper: Any = js.native
+    
+    /* private */ var _engine: Any = js.native
+    
+    /* private */ var _isDepthTexture: Any = js.native
     
     /* private */ var _renderer: Any = js.native
     
@@ -73,6 +79,11 @@ object miscCopyTextureToTextureMod {
     def copy(source: ThinTexture, destination: IRenderTargetTexture, conversion: ConversionMode): Boolean = js.native
     def copy(source: ThinTexture, destination: RenderTargetWrapper): Boolean = js.native
     def copy(source: ThinTexture, destination: RenderTargetWrapper, conversion: ConversionMode): Boolean = js.native
+    
+    /**
+      * Releases all the resources used by the class
+      */
+    def dispose(): Unit = js.native
     
     /**
       * Indicates if the effect is ready to be used for the copy

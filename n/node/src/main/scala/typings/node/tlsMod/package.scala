@@ -11,6 +11,15 @@ inline def CLIENT_RENEG_LIMIT: Double = ^.asInstanceOf[js.Dynamic].selectDynamic
 inline def CLIENT_RENEG_WINDOW: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("CLIENT_RENEG_WINDOW").asInstanceOf[Double]
 
 /**
+  * The default value of the ciphers option of tls.createSecureContext().
+  * It can be assigned any of the supported OpenSSL ciphers.
+  * Defaults to the content of crypto.constants.defaultCoreCipherList, unless
+  * changed using CLI options using --tls-default-ciphers.
+  */
+inline def DEFAULT_CIPHERS: String = ^.asInstanceOf[js.Dynamic].selectDynamic("DEFAULT_CIPHERS").asInstanceOf[String]
+inline def DEFAULT_CIPHERS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_CIPHERS")(x.asInstanceOf[js.Any])
+
+/**
   * The default curve name to use for ECDH key agreement in a tls server.
   * The default value is 'auto'. See tls.createSecureContext() for further
   * information.
@@ -82,8 +91,8 @@ inline def checkServerIdentity(hostname: String, cert: PeerCertificate): js.Unde
   *
   * ```js
   * // Assumes an echo server that is listening on port 8000.
-  * const tls = require('tls');
-  * const fs = require('fs');
+  * const tls = require('node:tls');
+  * const fs = require('node:fs');
   *
   * const options = {
   *   // Necessary only if the server requires client certificate authentication.
@@ -136,12 +145,19 @@ inline def connect(port: Double, options: ConnectionOptions, secureConnectListen
   * APIs that create secure contexts have no default value.
   *
   * The `tls.createSecureContext()` method creates a `SecureContext` object. It is
-  * usable as an argument to several `tls` APIs, such as {@link createServer} and `server.addContext()`, but has no public methods.
+  * usable as an argument to several `tls` APIs, such as `server.addContext()`,
+  * but has no public methods. The {@link Server} constructor and the {@link createServer} method do not support the `secureContext` option.
   *
   * A key is _required_ for ciphers that use certificates. Either `key` or`pfx` can be used to provide it.
   *
   * If the `ca` option is not given, then Node.js will default to using [Mozilla's publicly trusted list of
   * CAs](https://hg.mozilla.org/mozilla-central/raw-file/tip/security/nss/lib/ckfw/builtins/certdata.txt).
+  *
+  * Custom DHE parameters are discouraged in favor of the new `dhparam: 'auto'`option. When set to `'auto'`, well-known DHE parameters of sufficient strength
+  * will be selected automatically. Otherwise, if necessary, `openssl dhparam` can
+  * be used to create custom parameters. The key length must be greater than or
+  * equal to 1024 bits or else an error will be thrown. Although 1024 bits is
+  * permissible, use 2048 bits or larger for stronger security.
   * @since v0.11.13
   */
 inline def createSecureContext(): SecureContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createSecureContext")().asInstanceOf[SecureContext]
@@ -201,14 +217,14 @@ inline def createSecurePair(context: SecureContext, isServer: Unit, requestCert:
   * Creates a new {@link Server}. The `secureConnectionListener`, if provided, is
   * automatically set as a listener for the `'secureConnection'` event.
   *
-  * The `ticketKeys` options is automatically shared between `cluster` module
+  * The `ticketKeys` options is automatically shared between `node:cluster` module
   * workers.
   *
   * The following illustrates a simple echo server:
   *
   * ```js
-  * const tls = require('tls');
-  * const fs = require('fs');
+  * const tls = require('node:tls');
+  * const fs = require('node:fs');
   *
   * const options = {
   *   key: fs.readFileSync('server-key.pem'),
@@ -218,7 +234,7 @@ inline def createSecurePair(context: SecureContext, isServer: Unit, requestCert:
   *   requestCert: true,
   *
   *   // This is necessary only if the client uses a self-signed certificate.
-  *   ca: [ fs.readFileSync('client-cert.pem') ]
+  *   ca: [ fs.readFileSync('client-cert.pem') ],
   * };
   *
   * const server = tls.createServer(options, (socket) => {

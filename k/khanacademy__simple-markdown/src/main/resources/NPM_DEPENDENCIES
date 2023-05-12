@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@khanacademy/simple-markdown" : "0.9.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@khanacademy/simple-markdown" : "0.9.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

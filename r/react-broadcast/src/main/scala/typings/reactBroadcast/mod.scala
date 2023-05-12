@@ -15,7 +15,7 @@ object mod {
     def this(props: Props[T]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Props[T], context: Any) = this()
   }
@@ -82,7 +82,7 @@ object mod {
     def this(props: typings.reactBroadcast.mod.Subscriber.Props[T]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: typings.reactBroadcast.mod.Subscriber.Props[T], context: Any) = this()
   }

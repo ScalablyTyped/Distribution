@@ -93,7 +93,9 @@ import typings.std.stdStrings.compositionend
 import typings.std.stdStrings.compositionstart
 import typings.std.stdStrings.compositionupdate
 import typings.std.stdStrings.contextmenu
+import typings.std.stdStrings.copy
 import typings.std.stdStrings.cuechange
+import typings.std.stdStrings.cut
 import typings.std.stdStrings.dblclick
 import typings.std.stdStrings.devicemotion
 import typings.std.stdStrings.deviceorientation
@@ -140,6 +142,7 @@ import typings.std.stdStrings.online
 import typings.std.stdStrings.orientationchange
 import typings.std.stdStrings.pagehide
 import typings.std.stdStrings.pageshow
+import typings.std.stdStrings.paste
 import typings.std.stdStrings.pause
 import typings.std.stdStrings.play
 import typings.std.stdStrings.playing
@@ -615,6 +618,21 @@ inline def addEventListener_contextmenu(
   options: AddEventListenerOptions
 ): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
+inline def addEventListener_copy(
+  `type`: copy,
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def addEventListener_copy(
+  `type`: copy,
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def addEventListener_copy(
+  `type`: copy,
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
 inline def addEventListener_cuechange(`type`: cuechange, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def addEventListener_cuechange(
   `type`: cuechange,
@@ -624,6 +642,21 @@ inline def addEventListener_cuechange(
 inline def addEventListener_cuechange(
   `type`: cuechange,
   listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def addEventListener_cut(
+  `type`: cut,
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def addEventListener_cut(
+  `type`: cut,
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def addEventListener_cut(
+  `type`: cut,
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any],
   options: AddEventListenerOptions
 ): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
@@ -1281,6 +1314,21 @@ inline def addEventListener_pageshow(
 inline def addEventListener_pageshow(
   `type`: pageshow,
   listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def addEventListener_paste(
+  `type`: paste,
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def addEventListener_paste(
+  `type`: paste,
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def addEventListener_paste(
+  `type`: paste,
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any],
   options: AddEventListenerOptions
 ): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
@@ -2215,8 +2263,14 @@ inline def onclose_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any
 inline def oncontextmenu: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null = js.Dynamic.global.selectDynamic("oncontextmenu").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null]
 inline def oncontextmenu_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("oncontextmenu")(x.asInstanceOf[js.Any])
 
+inline def oncopy: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any]) | Null = js.Dynamic.global.selectDynamic("oncopy").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any]) | Null]
+inline def oncopy_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("oncopy")(x.asInstanceOf[js.Any])
+
 inline def oncuechange: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("oncuechange").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def oncuechange_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("oncuechange")(x.asInstanceOf[js.Any])
+
+inline def oncut: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any]) | Null = js.Dynamic.global.selectDynamic("oncut").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any]) | Null]
+inline def oncut_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("oncut")(x.asInstanceOf[js.Any])
 
 /**
   * Fires when the user double-clicks the object.
@@ -2452,6 +2506,9 @@ inline def onpagehide_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings
 
 inline def onpageshow: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onpageshow").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any]) | Null]
 inline def onpageshow_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onpageshow")(x.asInstanceOf[js.Any])
+
+inline def onpaste: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onpaste").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any]) | Null]
+inline def onpaste_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onpaste")(x.asInstanceOf[js.Any])
 
 /**
   * Occurs when playback is paused.
@@ -3096,6 +3153,21 @@ inline def removeEventListener_contextmenu(
   options: EventListenerOptions
 ): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
+inline def removeEventListener_copy(
+  `type`: copy,
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def removeEventListener_copy(
+  `type`: copy,
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def removeEventListener_copy(
+  `type`: copy,
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
 inline def removeEventListener_cuechange(`type`: cuechange, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def removeEventListener_cuechange(
   `type`: cuechange,
@@ -3105,6 +3177,21 @@ inline def removeEventListener_cuechange(
 inline def removeEventListener_cuechange(
   `type`: cuechange,
   listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def removeEventListener_cut(
+  `type`: cut,
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def removeEventListener_cut(
+  `type`: cut,
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def removeEventListener_cut(
+  `type`: cut,
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any],
   options: EventListenerOptions
 ): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
@@ -3762,6 +3849,21 @@ inline def removeEventListener_pageshow(
 inline def removeEventListener_pageshow(
   `type`: pageshow,
   listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def removeEventListener_paste(
+  `type`: paste,
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any]
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def removeEventListener_paste(
+  `type`: paste,
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def removeEventListener_paste(
+  `type`: paste,
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any],
   options: EventListenerOptions
 ): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 

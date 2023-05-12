@@ -16,7 +16,6 @@ import typings.angularRouter.angularRouterBooleans.`true`
 import typings.angularRouter.angularRouterStrings.`[routerLinkActive]`
 import typings.angularRouter.angularRouterStrings.date
 import typings.angularRouter.angularRouterStrings.links
-import typings.angularRouter.angularRouterStrings.linksWithHrefs
 import typings.angularRouter.angularRouterStrings.location
 import typings.angularRouter.angularRouterStrings.page
 import typings.angularRouter.angularRouterStrings.routerLinkActive
@@ -45,22 +44,8 @@ open class RouterLinkActive protected ()
     cdr: ChangeDetectorRef,
     link: RouterLink
   ) = this()
-  def this(
-    router: Router,
-    element: ElementRef[Any],
-    renderer: Renderer2,
-    cdr: ChangeDetectorRef,
-    link: Unit,
-    linkWithHref: RouterLinkWithHref
-  ) = this()
-  def this(
-    router: Router,
-    element: ElementRef[Any],
-    renderer: Renderer2,
-    cdr: ChangeDetectorRef,
-    link: RouterLink,
-    linkWithHref: RouterLinkWithHref
-  ) = this()
+  
+  /* private */ var _isActive: Any = js.native
   
   /**
     * Aria-current attribute to apply when the router link is active.
@@ -79,7 +64,7 @@ open class RouterLinkActive protected ()
   
   /* private */ var hasActiveLinks: Any = js.native
   
-  val isActive: Boolean = js.native
+  def isActive: Boolean = js.native
   
   /**
     *
@@ -105,11 +90,7 @@ open class RouterLinkActive protected ()
   
   /* private */ var linkInputChangesSubscription: Any = js.native
   
-  /* private */ var linkWithHref: Any = js.native
-  
   var links: QueryList[RouterLink] = js.native
-  
-  var linksWithHrefs: QueryList[RouterLinkWithHref] = js.native
   
   /**
     * A callback method that is invoked immediately after
@@ -173,9 +154,10 @@ object RouterLinkActive {
     js.Array[routerLinkActive], 
     AriaCurrentWhenActive, 
     IsActiveChange, 
-    js.Tuple2[links, linksWithHrefs], 
+    js.Array[links], 
     scala.Nothing, 
-    `true`
+    `true`, 
+    scala.Nothing
   ] = js.native
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
@@ -184,14 +166,15 @@ object RouterLinkActive {
       js.Array[routerLinkActive], 
       AriaCurrentWhenActive, 
       IsActiveChange, 
-      js.Tuple2[links, linksWithHrefs], 
+      js.Array[links], 
       scala.Nothing, 
-      `true`
+      `true`, 
+      scala.Nothing
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
   
   @JSImport("@angular/router", "RouterLinkActive.\u0275fac")
   @js.native
-  def ɵfac: ɵɵFactoryDeclaration[RouterLinkActive, js.Tuple6[Null, Null, Null, Null, Optional, Optional]] = js.native
-  inline def ɵfac_=(x: ɵɵFactoryDeclaration[RouterLinkActive, js.Tuple6[Null, Null, Null, Null, Optional, Optional]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+  def ɵfac: ɵɵFactoryDeclaration[RouterLinkActive, js.Tuple5[Null, Null, Null, Null, Optional]] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[RouterLinkActive, js.Tuple5[Null, Null, Null, Null, Optional]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
 }

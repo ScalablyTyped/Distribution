@@ -25,6 +25,8 @@ import typings.dns2.dns2Ints.`0xfc`
 import typings.dns2.dns2Ints.`0xfd`
 import typings.dns2.dns2Ints.`0xfe`
 import typings.dns2.dns2Ints.`0xff`
+import typings.dns2.dns2Strings.TCP
+import typings.dns2.dns2Strings.UDP
 import typings.dns2.mod.DnsHandler
 import typings.dns2.mod.DnsRequest
 import typings.dns2.mod.DnsResponse
@@ -245,6 +247,67 @@ object anon {
     implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined std.Partial<dns2.dns2.DnsClientOptions> */
+  trait PartialDnsClientOptions extends StObject {
+    
+    var nameServers: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var port: js.UndefOr[Double] = js.undefined
+    
+    var recursive: js.UndefOr[Boolean] = js.undefined
+    
+    var resolverProtocol: js.UndefOr[UDP | TCP] = js.undefined
+    
+    var retries: js.UndefOr[Double] = js.undefined
+    
+    var rootServers: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var timeout: js.UndefOr[Double] = js.undefined
+  }
+  object PartialDnsClientOptions {
+    
+    inline def apply(): PartialDnsClientOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialDnsClientOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialDnsClientOptions] (val x: Self) extends AnyVal {
+      
+      inline def setNameServers(value: js.Array[String]): Self = StObject.set(x, "nameServers", value.asInstanceOf[js.Any])
+      
+      inline def setNameServersUndefined: Self = StObject.set(x, "nameServers", js.undefined)
+      
+      inline def setNameServersVarargs(value: String*): Self = StObject.set(x, "nameServers", js.Array(value*))
+      
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      
+      inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+      
+      inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
+      
+      inline def setResolverProtocol(value: UDP | TCP): Self = StObject.set(x, "resolverProtocol", value.asInstanceOf[js.Any])
+      
+      inline def setResolverProtocolUndefined: Self = StObject.set(x, "resolverProtocol", js.undefined)
+      
+      inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+      
+      inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
+      
+      inline def setRootServers(value: js.Array[String]): Self = StObject.set(x, "rootServers", value.asInstanceOf[js.Any])
+      
+      inline def setRootServersUndefined: Self = StObject.set(x, "rootServers", js.undefined)
+      
+      inline def setRootServersVarargs(value: String*): Self = StObject.set(x, "rootServers", js.Array(value*))
+      
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   

@@ -1,7 +1,16 @@
 package typings.gestalt.anon
 
-import typings.gestalt.gestaltStrings.blank
-import typings.gestalt.gestaltStrings.self
+import typings.gestalt.gestaltStrings.lg
+import typings.gestalt.gestaltStrings.md
+import typings.gestalt.gestaltStrings.sm
+import typings.gestalt.mod.AbstractEventHandler
+import typings.gestalt.mod.RelType
+import typings.gestalt.mod.TargetType
+import typings.react.mod.KeyboardEvent
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
+import typings.std.HTMLAnchorElement
+import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,18 +19,31 @@ trait Target extends StObject {
   
   var accessibilityLabel: String
   
-  var href: String
+  var href: js.UndefOr[String] = js.undefined
   
-  def onClick(args: `1`): Unit
+  var label: String
   
-  var target: js.UndefOr[Null | self | blank] = js.undefined
+  var onClick: AbstractEventHandler[
+    (MouseEvent[HTMLAnchorElement | HTMLButtonElement, NativeMouseEvent]) | (KeyboardEvent[HTMLAnchorElement | HTMLButtonElement]), 
+    OnDismissStart
+  ]
   
-  var text: String
+  var rel: js.UndefOr[RelType] = js.undefined
+  
+  var size: js.UndefOr[sm | md | lg] = js.undefined
+  
+  var target: js.UndefOr[TargetType] = js.undefined
 }
 object Target {
   
-  inline def apply(accessibilityLabel: String, href: String, onClick: `1` => Unit, text: String): Target = {
-    val __obj = js.Dynamic.literal(accessibilityLabel = accessibilityLabel.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick), text = text.asInstanceOf[js.Any])
+  inline def apply(
+    accessibilityLabel: String,
+    label: String,
+    onClick: /* arg */ OnDismissStart & (Event[
+      (MouseEvent[HTMLAnchorElement | HTMLButtonElement, NativeMouseEvent]) | (KeyboardEvent[HTMLAnchorElement | HTMLButtonElement])
+    ]) => Unit
+  ): Target = {
+    val __obj = js.Dynamic.literal(accessibilityLabel = accessibilityLabel.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick))
     __obj.asInstanceOf[Target]
   }
   
@@ -32,14 +54,28 @@ object Target {
     
     inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    inline def setOnClick(value: `1` => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
     
-    inline def setTarget(value: self | blank): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setOnClick(
+      value: /* arg */ OnDismissStart & (Event[
+          (MouseEvent[HTMLAnchorElement | HTMLButtonElement, NativeMouseEvent]) | (KeyboardEvent[HTMLAnchorElement | HTMLButtonElement])
+        ]) => Unit
+    ): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    
+    inline def setRel(value: RelType): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    
+    inline def setSize(value: sm | md | lg): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setTarget(value: TargetType): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setTargetNull: Self = StObject.set(x, "target", null)
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
-    
-    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

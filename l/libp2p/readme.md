@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p
 
-Typings are for version 0.40.0
+Typings are for version 0.45.0
 
 ## Library description:
 JavaScript implementation of libp2p, a modular peer to peer network stack

@@ -16,7 +16,7 @@ trait ColorRampStop extends StObject {
   /**
     * The label in the legend describing features with the given `color` and `value`.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#ColorRampStop)
+    * [Read more...](global.html)
     */
   var label: String
   

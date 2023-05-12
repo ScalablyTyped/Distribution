@@ -52,16 +52,14 @@ trait YAxisScrollbarOptions extends StObject {
   var buttonBorderWidth: js.UndefOr[Double] = js.undefined
   
   /**
+    * (Highstock) Enable or disable the buttons at the end of the scrollbar.
+    */
+  var buttonsEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * (Highstock) Enable the scrollbar on the Y axis.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * (Highstock) The height of the scrollbar. The height also applies to the
-    * width of the scroll arrows so that they are always squares. Defaults to
-    * 20 for touch devices and 14 for mouse devices.
-    */
-  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) Whether to redraw the main chart as the scrollbar or the
@@ -180,13 +178,13 @@ object YAxisScrollbarOptions {
     
     inline def setButtonBorderWidthUndefined: Self = StObject.set(x, "buttonBorderWidth", js.undefined)
     
+    inline def setButtonsEnabled(value: Boolean): Self = StObject.set(x, "buttonsEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setButtonsEnabledUndefined: Self = StObject.set(x, "buttonsEnabled", js.undefined)
+    
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
-    
-    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
-    
-    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     inline def setLiveRedraw(value: Boolean): Self = StObject.set(x, "liveRedraw", value.asInstanceOf[js.Any])
     

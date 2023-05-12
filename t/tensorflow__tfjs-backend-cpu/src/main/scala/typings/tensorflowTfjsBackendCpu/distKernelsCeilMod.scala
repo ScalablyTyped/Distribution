@@ -19,5 +19,5 @@ object distKernelsCeilMod {
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Ceil", "ceilImpl")
   @js.native
-  val ceilImpl: SimpleUnaryImpl = js.native
+  val ceilImpl: SimpleUnaryImpl[Double, Double] = js.native
 }

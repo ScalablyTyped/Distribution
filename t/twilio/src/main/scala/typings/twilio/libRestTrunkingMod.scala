@@ -8,21 +8,15 @@ object libRestTrunkingMod {
   
   @JSImport("twilio/lib/rest/Trunking", JSImport.Namespace)
   @js.native
-  open class ^ protected () extends Trunking {
-    /**
-      * Initialize trunking domain
-      *
-      * @param twilio - The twilio client
-      */
-    def this(twilio: typings.twilio.libRestTwilioMod.^) = this()
-  }
+  open class ^ () extends Trunking
   
   @js.native
   trait Trunking
-    extends typings.twilio.libBaseDomainMod.^ {
+    extends typings.twilio.libRestTrunkingBaseMod.^ {
     
-    val trunks: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TrunkListInstance */ Any = js.native
-    
-    val v1: typings.twilio.libRestTrunkingV1Mod.^ = js.native
+    /**
+      * @deprecated - Use v1.trunks instead
+      */
+    def trunks: Any = js.native
   }
 }

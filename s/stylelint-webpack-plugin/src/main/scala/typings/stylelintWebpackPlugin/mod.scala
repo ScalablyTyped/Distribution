@@ -133,6 +133,8 @@ object mod {
     
     var quiet: js.UndefOr[Boolean] = js.undefined
     
+    var quietDeprecationWarnings: js.UndefOr[Boolean] = js.undefined
+    
     var reportDescriptionlessDisables: js.UndefOr[Boolean] = js.undefined
     
     var reportInvalidScopeDisables: js.UndefOr[Boolean] = js.undefined
@@ -140,8 +142,6 @@ object mod {
     var reportNeedlessDisables: js.UndefOr[Boolean] = js.undefined
     
     var stylelintPath: js.UndefOr[String] = js.undefined
-    
-    var syntax: js.UndefOr[String] = js.undefined
     
     var threads: js.UndefOr[Double | Boolean] = js.undefined
   }
@@ -285,6 +285,10 @@ object mod {
       
       inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
       
+      inline def setQuietDeprecationWarnings(value: Boolean): Self = StObject.set(x, "quietDeprecationWarnings", value.asInstanceOf[js.Any])
+      
+      inline def setQuietDeprecationWarningsUndefined: Self = StObject.set(x, "quietDeprecationWarnings", js.undefined)
+      
       inline def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
       
       inline def setReportDescriptionlessDisables(value: Boolean): Self = StObject.set(x, "reportDescriptionlessDisables", value.asInstanceOf[js.Any])
@@ -302,10 +306,6 @@ object mod {
       inline def setStylelintPath(value: String): Self = StObject.set(x, "stylelintPath", value.asInstanceOf[js.Any])
       
       inline def setStylelintPathUndefined: Self = StObject.set(x, "stylelintPath", js.undefined)
-      
-      inline def setSyntax(value: String): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
-      
-      inline def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
       
       inline def setThreads(value: Double | Boolean): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
       

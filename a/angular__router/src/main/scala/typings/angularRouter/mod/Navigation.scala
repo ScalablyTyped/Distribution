@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Navigation extends StObject {
   
   /**
-    * The initial target URL after being parsed with `UrlSerializer.extract()`.
+    * The initial target URL after being parsed with `UrlHandlingStrategy.extract()`.
     */
   var extractedUrl: UrlTree
   

@@ -1,5 +1,6 @@
 package typings.nivoPie
 
+import typings.nivoPie.distTypesTypesMod.MayHaveLabel
 import typings.nivoPie.distTypesTypesMod.PieCanvasProps
 import typings.nivoPie.nivoPieStrings.height
 import typings.nivoPie.nivoPieStrings.width
@@ -15,5 +16,5 @@ object distTypesResponsivePieCanvasMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ResponsivePieCanvas[RawDatum](props: Omit[PieCanvasProps[RawDatum], width | height]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ResponsivePieCanvas")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ResponsivePieCanvas[RawDatum /* <: MayHaveLabel */](props: Omit[PieCanvasProps[RawDatum], width | height]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ResponsivePieCanvas")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

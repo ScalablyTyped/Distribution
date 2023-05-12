@@ -16,7 +16,7 @@ object libIconsAlipayCircleOutlinedMod extends Shortcut {
   @js.native
   trait AlipayCircleOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_AlipayCircleOutlinedIconType: String = js.native

@@ -12,7 +12,12 @@ trait UsageRecord extends StObject {
   var accountId: js.UndefOr[string] = js.undefined
   
   /**
-    * The date and time, in UTC and extended ISO 8601 format, when the free trial started for the account.
+    * The date and time, in UTC and extended ISO 8601 format, when the free trial of automated sensitive data discovery started for the account. If the account is a member account in an organization, this value is the same as the value for the organization's Amazon Macie administrator account.
+    */
+  var automatedDiscoveryFreeTrialStartDate: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The date and time, in UTC and extended ISO 8601 format, when the Amazon Macie free trial started for the account.
     */
   var freeTrialStartDate: js.UndefOr[js.Date] = js.undefined
   
@@ -34,6 +39,10 @@ object UsageRecord {
     inline def setAccountId(value: string): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    
+    inline def setAutomatedDiscoveryFreeTrialStartDate(value: js.Date): Self = StObject.set(x, "automatedDiscoveryFreeTrialStartDate", value.asInstanceOf[js.Any])
+    
+    inline def setAutomatedDiscoveryFreeTrialStartDateUndefined: Self = StObject.set(x, "automatedDiscoveryFreeTrialStartDate", js.undefined)
     
     inline def setFreeTrialStartDate(value: js.Date): Self = StObject.set(x, "freeTrialStartDate", value.asInstanceOf[js.Any])
     

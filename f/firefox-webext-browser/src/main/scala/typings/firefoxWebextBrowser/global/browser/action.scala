@@ -4,6 +4,7 @@ import typings.firefoxWebextBrowser.WebExtEvent
 import typings.firefoxWebextBrowser.browser.action.ColorArray
 import typings.firefoxWebextBrowser.browser.action.Details
 import typings.firefoxWebextBrowser.browser.action.OnClickData
+import typings.firefoxWebextBrowser.browser.action.OpenPopupOptions
 import typings.firefoxWebextBrowser.browser.action.SetBadgeBackgroundColorDetails
 import typings.firefoxWebextBrowser.browser.action.SetBadgeTextColorDetails
 import typings.firefoxWebextBrowser.browser.action.SetBadgeTextDetails
@@ -72,8 +73,12 @@ object action {
   @js.native
   val onClicked: WebExtEvent[js.Function2[/* tab */ Tab, /* info */ js.UndefOr[OnClickData], Unit]] = js.native
   
-  /** Opens the extension popup window in the active window. */
+  /**
+    * Opens the extension popup window in the specified window.
+    * @param [options] An object with information about the popup to open.
+    */
   inline def openPopup(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("openPopup")().asInstanceOf[js.Promise[Boolean]]
+  inline def openPopup(options: OpenPopupOptions): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("openPopup")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
   /**
     * Sets the background color for the badge.

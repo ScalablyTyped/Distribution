@@ -1,6 +1,6 @@
 package typings.blueprintjsSelect
 
-import typings.blueprintjsCore.libEsmComponentsMenuMenuItemMod.MenuItemProps
+import typings.blueprintjsPopover2.libEsmMenuItem2Mod.MenuItem2Props
 import typings.blueprintjsSelect.`libEsm@ExamplesFilmSelectMod`.FilmSelectProps
 import typings.blueprintjsSelect.`libEsm@ExamplesFilmsMod`.Film
 import typings.blueprintjsSelect.anon.CreatedItems
@@ -8,11 +8,10 @@ import typings.blueprintjsSelect.libEsmCommonItemRendererMod.ItemRenderer
 import typings.blueprintjsSelect.libEsmCommonItemRendererMod.ItemRendererProps
 import typings.blueprintjsSelect.libEsmCommonPredicateMod.ItemPredicate
 import typings.react.mod.Attributes
-import typings.react.mod.HTMLAttributes
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.global.JSX.Element
-import typings.std.HTMLAnchorElement
 import typings.std.HTMLElement
+import typings.std.HTMLLIElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,7 +46,7 @@ object `libEsm@ExamplesMod` {
   @js.native
   val filterFilm: ItemPredicate[Film] = js.native
   
-  inline def getFilmItemProps(film: Film, param1: ItemRendererProps): MenuItemProps & Attributes & HTMLAttributes[HTMLAnchorElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFilmItemProps")(film.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[MenuItemProps & Attributes & HTMLAttributes[HTMLAnchorElement]]
+  inline def getFilmItemProps(film: Film, param1: ItemRendererProps[HTMLLIElement]): MenuItem2Props & Attributes = (^.asInstanceOf[js.Dynamic].applyDynamic("getFilmItemProps")(film.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[MenuItem2Props & Attributes]
   
   inline def maybeAddCreatedFilmToArrays(items: js.Array[Film], createdItems: js.Array[Film], film: Film): CreatedItems = (^.asInstanceOf[js.Dynamic].applyDynamic("maybeAddCreatedFilmToArrays")(items.asInstanceOf[js.Any], createdItems.asInstanceOf[js.Any], film.asInstanceOf[js.Any])).asInstanceOf[CreatedItems]
   

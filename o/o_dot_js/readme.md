@@ -1,7 +1,7 @@
 
 # Scala.js typings for o_dot_js
 
-Typings are for version 1.3.1
+Typings are for version 1.3.2
 
 ## Library description:
 o.js is a isomorphic Odata Javascript library to simplify the request of data. The main goal is to build a standalone, lightweight and easy to understand Odata lib.

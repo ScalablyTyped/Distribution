@@ -18,7 +18,7 @@ trait WebGLRenderTargetWrapper
     * Binds a texture to this render target on a specific attachment
     * @param texture The texture to bind to the framebuffer
     * @param attachmentIndex Index of the attachment
-    * @param faceIndex The face of the texture to render to in case of cube texture
+    * @param faceIndexOrLayer The face or layer of the texture to render to in case of cube texture or array texture
     * @param lodLevel defines the lod level to bind to the frame buffer
     */
   /* private */ var _bindTextureRenderTarget: Any = js.native

@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.GridTemplateAreas
+import typings.csstype.mod.Property.UserSelect
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `47` extends StObject {
   
   var value: js.UndefOr[
-    GridTemplateAreas | (js.Array[
-      (Extract[
-        js.UndefOr[GridTemplateAreas | js.Array[NonNullable[js.UndefOr[GridTemplateAreas]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[GridTemplateAreas]]
+    UserSelect | (js.Array[
+      (Extract[js.UndefOr[UserSelect | js.Array[NonNullable[js.UndefOr[UserSelect]]]], String]) | NonNullable[js.UndefOr[UserSelect]]
     ])
   ] = js.native
 }

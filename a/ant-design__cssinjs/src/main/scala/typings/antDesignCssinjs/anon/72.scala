@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.GridColumnGap
+import typings.csstype.mod.Property.MozOutlineRadiusBottomleft
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `72` extends StObject {
   
   var value: js.UndefOr[
-    (GridColumnGap[Double | String]) | (js.Array[
+    (MozOutlineRadiusBottomleft[Double | String]) | (js.Array[
       (Extract[
         js.UndefOr[
-          (GridColumnGap[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridColumnGap[Double | String]]]])
+          (MozOutlineRadiusBottomleft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MozOutlineRadiusBottomleft[Double | String]]]])
         ], 
         String
-      ]) | (NonNullable[js.UndefOr[GridColumnGap[Double | String]]])
+      ]) | (NonNullable[js.UndefOr[MozOutlineRadiusBottomleft[Double | String]]])
     ])
   ] = js.native
 }

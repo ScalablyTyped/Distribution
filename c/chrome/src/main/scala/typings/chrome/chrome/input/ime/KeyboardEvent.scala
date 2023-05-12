@@ -58,7 +58,7 @@ trait KeyboardEvent extends StObject {
   
   /**
     * Optional.
-    * The ID of the request.
+    * The ID of the request. Use the requestId param from the onKeyEvent event instead.
     * @deprecated since Chrome 79.
     */
   var requestId: js.UndefOr[String] = js.undefined

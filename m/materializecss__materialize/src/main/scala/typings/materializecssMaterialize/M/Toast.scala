@@ -10,7 +10,7 @@ trait Toast
      with ComponentBase[ToastOptions] {
   
   /**
-    * remove a specific toast
+    * remove a specific toast.
     */
   def dismiss(): Unit
   
@@ -20,7 +20,8 @@ trait Toast
   var panning: Boolean
   
   /**
-    * The remaining amount of time in ms that the toast will stay before dismissal.
+    * The remaining amount of time in ms that the toast
+    * will stay before dismissal.
     */
   var timeRemaining: Double
 }

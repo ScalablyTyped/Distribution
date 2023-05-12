@@ -20,6 +20,11 @@ trait UpdateMemberDetectorsRequest extends StObject {
     * The detector ID of the administrator account.
     */
   var DetectorId: typings.awsSdk.clientsGuarddutyMod.DetectorId
+  
+  /**
+    * A list of features that will be updated for the specified member accounts.
+    */
+  var Features: js.UndefOr[MemberFeaturesConfigurations] = js.undefined
 }
 object UpdateMemberDetectorsRequest {
   
@@ -40,5 +45,11 @@ object UpdateMemberDetectorsRequest {
     inline def setDataSourcesUndefined: Self = StObject.set(x, "DataSources", js.undefined)
     
     inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
+    
+    inline def setFeatures(value: MemberFeaturesConfigurations): Self = StObject.set(x, "Features", value.asInstanceOf[js.Any])
+    
+    inline def setFeaturesUndefined: Self = StObject.set(x, "Features", js.undefined)
+    
+    inline def setFeaturesVarargs(value: MemberFeaturesConfiguration*): Self = StObject.set(x, "Features", js.Array(value*))
   }
 }

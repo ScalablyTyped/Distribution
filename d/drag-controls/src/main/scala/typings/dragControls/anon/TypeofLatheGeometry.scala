@@ -11,5 +11,6 @@ trait TypeofLatheGeometry
   extends StObject
      with Instantiable0[LatheGeometry] {
   
-  def fromJSON(data: Any): typings.three.srcGeometriesLatheGeometryMod.LatheGeometry = js.native
+  /** @internal */
+  def fromJSON(data: js.Object): typings.three.srcGeometriesLatheGeometryMod.LatheGeometry = js.native
 }

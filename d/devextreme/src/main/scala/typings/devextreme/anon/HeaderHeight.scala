@@ -29,7 +29,7 @@ trait HeaderHeight extends StObject {
   /**
     * Specifies the appearance of groups in the hover state.
     */
-  var hoverStyle: js.UndefOr[`7`] = js.undefined
+  var hoverStyle: js.UndefOr[`8`] = js.undefined
   
   /**
     * Configures the group labels.
@@ -44,7 +44,7 @@ trait HeaderHeight extends StObject {
   /**
     * Specifies the appearance of groups in the selected state.
     */
-  var selectionStyle: js.UndefOr[`7`] = js.undefined
+  var selectionStyle: js.UndefOr[`8`] = js.undefined
 }
 object HeaderHeight {
   
@@ -72,7 +72,7 @@ object HeaderHeight {
     
     inline def setHoverEnabledUndefined: Self = StObject.set(x, "hoverEnabled", js.undefined)
     
-    inline def setHoverStyle(value: `7`): Self = StObject.set(x, "hoverStyle", value.asInstanceOf[js.Any])
+    inline def setHoverStyle(value: `8`): Self = StObject.set(x, "hoverStyle", value.asInstanceOf[js.Any])
     
     inline def setHoverStyleUndefined: Self = StObject.set(x, "hoverStyle", js.undefined)
     
@@ -84,7 +84,7 @@ object HeaderHeight {
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    inline def setSelectionStyle(value: `7`): Self = StObject.set(x, "selectionStyle", value.asInstanceOf[js.Any])
+    inline def setSelectionStyle(value: `8`): Self = StObject.set(x, "selectionStyle", value.asInstanceOf[js.Any])
     
     inline def setSelectionStyleUndefined: Self = StObject.set(x, "selectionStyle", js.undefined)
   }

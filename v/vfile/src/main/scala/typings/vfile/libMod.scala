@@ -14,19 +14,24 @@ object libMod {
   /**
     * Create a new virtual file.
     *
-    * If `options` is `string` or `Buffer`, it’s treated as `{value: options}`.
-    * If `options` is a `URL`, it’s treated as `{path: options}`.
-    * If `options` is a `VFile`, shallow copies its data over to the new file.
-    * All fields in `options` are set on the newly created `VFile`.
+    * `options` is treated as:
+    *
+    * *   `string` or `Buffer` — `{value: options}`
+    * *   `URL` — `{path: options}`
+    * *   `VFile` — shallow copies its data over to the new file
+    * *   `object` — all fields are shallow copied over to the new file
     *
     * Path related fields are set in the following order (least specific to
     * most specific): `history`, `path`, `basename`, `stem`, `extname`,
     * `dirname`.
     *
-    * It’s not possible to set either `dirname` or `extname` without setting
-    * either `history`, `path`, `basename`, or `stem` as well.
+    * You cannot set `dirname` or `extname` without setting either `history`,
+    * `path`, `basename`, or `stem` too.
     *
-    * @param {Compatible} [value]
+    * @param {Compatible | null | undefined} [value]
+    *   File value.
+    * @returns
+    *   New instance.
     */
   open class VFile ()
     extends StObject
@@ -39,6 +44,7 @@ object libMod {
     def basename: js.UndefOr[String] = js.native
     /**
       * Set basename (including extname) (`'index.min.js'`).
+      *
       * Cannot contain path separators (`'/'` on unix, macOS, and browsers, `'\'`
       * on windows).
       * Cannot be nullified (use `file.path = file.dirname` instead).
@@ -47,14 +53,17 @@ object libMod {
     
     /**
       * Base of `path` (default: `process.cwd()` or `'/'` in browsers).
+      *
       * @type {string}
       */
     var cwd: String = js.native
     
     /**
       * Place to store custom information (default: `{}`).
+      *
       * It’s OK to store custom data directly on the file but moving it to
       * `data` is recommended.
+      *
       * @type {Data}
       */
     var data: Data = js.native
@@ -65,6 +74,7 @@ object libMod {
     def dirname: js.UndefOr[String] = js.native
     /**
       * Set the parent path (example: `'~'`).
+      *
       * Cannot be set if there’s no `path` yet.
       */
     def dirname_=(arg: js.UndefOr[String]): Unit = js.native
@@ -75,6 +85,7 @@ object libMod {
     def extname: js.UndefOr[String] = js.native
     /**
       * Set the extname (including dot) (example: `'.js'`).
+      *
       * Cannot contain path separators (`'/'` on unix, macOS, and browsers, `'\'`
       * on windows).
       * Cannot be set if there’s no `path` yet.
@@ -82,151 +93,124 @@ object libMod {
     def extname_=(arg: js.UndefOr[String]): Unit = js.native
     
     /**
-      * Like `VFile#message()`, but associates a fatal message where `fatal` is
-      * set to `true`, and then immediately throws it.
+      * Create a fatal error associated with the file.
+      *
+      * Its `fatal` is set to `true` and `file` is set to the current file path.
+      * Its added to `file.messages`.
       *
       * > 👉 **Note**: a fatal error means that a file is no longer processable.
       *
-      * @param {string|Error} reason
-      *   Human readable reason for the message, uses the stack and message of the error if given.
-      * @param {Node|NodeLike|Position|Point} [place]
-      *   Place where the message occurred in the file.
-      * @param {string} [origin]
-      *   Computer readable reason for the message
+      * @param {string | Error | VFileMessage} reason
+      *   Reason for message, uses the stack and message of the error if given.
+      * @param {Node | NodeLike | Position | Point | null | undefined} [place]
+      *   Place in file where the message occurred.
+      * @param {string | null | undefined} [origin]
+      *   Place in code where the message originates (example:
+      *   `'my-package:my-rule'` or `'my-rule'`).
       * @returns {never}
       *   Message.
+      * @throws {VFileMessage}
+      *   Message.
       */
-    def fail(reason: String): scala.Nothing = js.native
-    def fail(reason: String, place: Unit, origin: String): scala.Nothing = js.native
-    def fail(reason: String, place: typings.unist.mod.Node[typings.unist.mod.Data]): scala.Nothing = js.native
-    def fail(reason: String, place: typings.unist.mod.Node[typings.unist.mod.Data], origin: String): scala.Nothing = js.native
-    def fail(reason: String, place: typings.unist.mod.Point): scala.Nothing = js.native
-    def fail(reason: String, place: typings.unist.mod.Point, origin: String): scala.Nothing = js.native
-    def fail(reason: String, place: typings.unist.mod.Position): scala.Nothing = js.native
-    def fail(reason: String, place: typings.unist.mod.Position, origin: String): scala.Nothing = js.native
-    def fail(reason: String, place: NodeLike): scala.Nothing = js.native
-    def fail(reason: String, place: NodeLike, origin: String): scala.Nothing = js.native
-    def fail(reason: js.Error): scala.Nothing = js.native
-    def fail(reason: js.Error, place: Unit, origin: String): scala.Nothing = js.native
-    def fail(reason: js.Error, place: typings.unist.mod.Node[typings.unist.mod.Data]): scala.Nothing = js.native
-    def fail(reason: js.Error, place: typings.unist.mod.Node[typings.unist.mod.Data], origin: String): scala.Nothing = js.native
-    def fail(reason: js.Error, place: typings.unist.mod.Point): scala.Nothing = js.native
-    def fail(reason: js.Error, place: typings.unist.mod.Point, origin: String): scala.Nothing = js.native
-    def fail(reason: js.Error, place: typings.unist.mod.Position): scala.Nothing = js.native
-    def fail(reason: js.Error, place: typings.unist.mod.Position, origin: String): scala.Nothing = js.native
-    def fail(reason: js.Error, place: NodeLike): scala.Nothing = js.native
-    def fail(reason: js.Error, place: NodeLike, origin: String): scala.Nothing = js.native
+    def fail(
+      reason: String | js.Error | VFileMessage,
+      place: js.UndefOr[Node | NodeLike | Position | Point | Null],
+      origin: js.UndefOr[String | Null]
+    ): scala.Nothing = js.native
     
     /**
       * List of filepaths the file moved between.
+      *
       * The first is the original path and the last is the current path.
+      *
       * @type {Array<string>}
       */
     var history: js.Array[String] = js.native
     
     /**
-      * Like `VFile#message()`, but associates an informational message where
-      * `fatal` is set to `null`.
+      * Create an info message associated with the file.
       *
-      * @param {string|Error} reason
-      *   Human readable reason for the message, uses the stack and message of the error if given.
-      * @param {Node|NodeLike|Position|Point} [place]
-      *   Place where the message occurred in the file.
-      * @param {string} [origin]
-      *   Computer readable reason for the message
+      * Its `fatal` is set to `null` and `file` is set to the current file path.
+      * Its added to `file.messages`.
+      *
+      * @param {string | Error | VFileMessage} reason
+      *   Reason for message, uses the stack and message of the error if given.
+      * @param {Node | NodeLike | Position | Point | null | undefined} [place]
+      *   Place in file where the message occurred.
+      * @param {string | null | undefined} [origin]
+      *   Place in code where the message originates (example:
+      *   `'my-package:my-rule'` or `'my-rule'`).
       * @returns {VFileMessage}
       *   Message.
       */
-    def info(reason: String): VFileMessage = js.native
-    def info(reason: String, place: Unit, origin: String): VFileMessage = js.native
-    def info(reason: String, place: typings.unist.mod.Node[typings.unist.mod.Data]): VFileMessage = js.native
-    def info(reason: String, place: typings.unist.mod.Node[typings.unist.mod.Data], origin: String): VFileMessage = js.native
-    def info(reason: String, place: typings.unist.mod.Point): VFileMessage = js.native
-    def info(reason: String, place: typings.unist.mod.Point, origin: String): VFileMessage = js.native
-    def info(reason: String, place: typings.unist.mod.Position): VFileMessage = js.native
-    def info(reason: String, place: typings.unist.mod.Position, origin: String): VFileMessage = js.native
-    def info(reason: String, place: NodeLike): VFileMessage = js.native
-    def info(reason: String, place: NodeLike, origin: String): VFileMessage = js.native
-    def info(reason: js.Error): VFileMessage = js.native
-    def info(reason: js.Error, place: Unit, origin: String): VFileMessage = js.native
-    def info(reason: js.Error, place: typings.unist.mod.Node[typings.unist.mod.Data]): VFileMessage = js.native
-    def info(reason: js.Error, place: typings.unist.mod.Node[typings.unist.mod.Data], origin: String): VFileMessage = js.native
-    def info(reason: js.Error, place: typings.unist.mod.Point): VFileMessage = js.native
-    def info(reason: js.Error, place: typings.unist.mod.Point, origin: String): VFileMessage = js.native
-    def info(reason: js.Error, place: typings.unist.mod.Position): VFileMessage = js.native
-    def info(reason: js.Error, place: typings.unist.mod.Position, origin: String): VFileMessage = js.native
-    def info(reason: js.Error, place: NodeLike): VFileMessage = js.native
-    def info(reason: js.Error, place: NodeLike, origin: String): VFileMessage = js.native
+    def info(
+      reason: String | js.Error | VFileMessage,
+      place: js.UndefOr[Node | NodeLike | Position | Point | Null],
+      origin: js.UndefOr[String | Null]
+    ): VFileMessage = js.native
     
     /**
-      * Sometimes files have a source map associated with them.
-      * This can be stored in the `map` field.
-      * This should be a `Map` type, which is equivalent to the `RawSourceMap`
-      * type from the `source-map` module.
-      * @type {Map|undefined}
-      */
-    var map: js.UndefOr[Map] = js.native
-    
-    /**
-      * Constructs a new `VFileMessage`, where `fatal` is set to `false`, and
-      * associates it with the file by adding it to `vfile.messages` and setting
-      * `message.file` to the current filepath.
+      * Source map.
       *
-      * @param {string|Error} reason
-      *   Human readable reason for the message, uses the stack and message of the error if given.
-      * @param {Node|NodeLike|Position|Point} [place]
-      *   Place where the message occurred in the file.
-      * @param {string} [origin]
-      *   Computer readable reason for the message
+      * This type is equivalent to the `RawSourceMap` type from the `source-map`
+      * module.
+      *
+      * @type {Map | null | undefined}
+      */
+    var map: js.UndefOr[Map | Null] = js.native
+    
+    /**
+      * Create a warning message associated with the file.
+      *
+      * Its `fatal` is set to `false` and `file` is set to the current file path.
+      * Its added to `file.messages`.
+      *
+      * @param {string | Error | VFileMessage} reason
+      *   Reason for message, uses the stack and message of the error if given.
+      * @param {Node | NodeLike | Position | Point | null | undefined} [place]
+      *   Place in file where the message occurred.
+      * @param {string | null | undefined} [origin]
+      *   Place in code where the message originates (example:
+      *   `'my-package:my-rule'` or `'my-rule'`).
       * @returns {VFileMessage}
       *   Message.
       */
-    def message(reason: String): VFileMessage = js.native
-    def message(reason: String, place: Unit, origin: String): VFileMessage = js.native
-    def message(reason: String, place: typings.unist.mod.Node[typings.unist.mod.Data]): VFileMessage = js.native
-    def message(reason: String, place: typings.unist.mod.Node[typings.unist.mod.Data], origin: String): VFileMessage = js.native
-    def message(reason: String, place: typings.unist.mod.Point): VFileMessage = js.native
-    def message(reason: String, place: typings.unist.mod.Point, origin: String): VFileMessage = js.native
-    def message(reason: String, place: typings.unist.mod.Position): VFileMessage = js.native
-    def message(reason: String, place: typings.unist.mod.Position, origin: String): VFileMessage = js.native
-    def message(reason: String, place: NodeLike): VFileMessage = js.native
-    def message(reason: String, place: NodeLike, origin: String): VFileMessage = js.native
-    def message(reason: js.Error): VFileMessage = js.native
-    def message(reason: js.Error, place: Unit, origin: String): VFileMessage = js.native
-    def message(reason: js.Error, place: typings.unist.mod.Node[typings.unist.mod.Data]): VFileMessage = js.native
-    def message(reason: js.Error, place: typings.unist.mod.Node[typings.unist.mod.Data], origin: String): VFileMessage = js.native
-    def message(reason: js.Error, place: typings.unist.mod.Point): VFileMessage = js.native
-    def message(reason: js.Error, place: typings.unist.mod.Point, origin: String): VFileMessage = js.native
-    def message(reason: js.Error, place: typings.unist.mod.Position): VFileMessage = js.native
-    def message(reason: js.Error, place: typings.unist.mod.Position, origin: String): VFileMessage = js.native
-    def message(reason: js.Error, place: NodeLike): VFileMessage = js.native
-    def message(reason: js.Error, place: NodeLike, origin: String): VFileMessage = js.native
+    def message(
+      reason: String | js.Error | VFileMessage,
+      place: js.UndefOr[Node | NodeLike | Position | Point | Null],
+      origin: js.UndefOr[String | Null]
+    ): VFileMessage = js.native
     
     /**
       * List of messages associated with the file.
+      *
       * @type {Array<VFileMessage>}
       */
     var messages: js.Array[VFileMessage] = js.native
     
     /**
       * Get the full path (example: `'~/index.min.js'`).
+      *
       * @returns {string}
       */
     def path: String = js.native
     /**
       * Set the full path (example: `'~/index.min.js'`).
+      *
       * Cannot be nullified.
       * You can set a file URL (a `URL` object with a `file:` protocol) which will
       * be turned into a path with `url.fileURLToPath`.
-      * @param {string|URL} path
+      *
+      * @param {string | URL} path
       */
     def path_=(arg: String): Unit = js.native
     
     /**
-      * Sometimes files have a non-string, compiled, representation.
-      * This can be stored in the `result` field.
-      * One example is when turning markdown into React nodes.
+      * Custom, non-string, compiled, representation.
+      *
       * This is used by unified to store non-string results.
+      * One example is when turning markdown into React nodes.
+      *
       * @type {unknown}
       */
     var result: Any = js.native
@@ -237,6 +221,7 @@ object libMod {
     def stem: js.UndefOr[String] = js.native
     /**
       * Set the stem (basename w/o extname) (example: `'index.min'`).
+      *
       * Cannot contain path separators (`'/'` on unix, macOS, and browsers, `'\'`
       * on windows).
       * Cannot be nullified (use `file.path = file.dirname` instead).
@@ -245,7 +230,9 @@ object libMod {
     
     /**
       * Whether a file was saved to disk.
+      *
       * This is used by vfile reporters.
+      *
       * @type {boolean}
       */
     var stored: Boolean = js.native
@@ -254,6 +241,7 @@ object libMod {
     
     /**
       * Raw value.
+      *
       * @type {Value}
       */
     var value: Value = js.native
@@ -299,29 +287,50 @@ object libMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.vfile.libMod.Value
     - typings.vfile.libMod.Options
-    - typings.vfile.libMod.VFile
     - typings.vfile.libMod.URL
+    - typings.vfile.libMod.Value
+    - typings.vfile.libMod.VFile
   */
-  type Compatible = _Compatible | Value | URL
+  type Compatible = _Compatible | URL | Value
   
   type Data = typings.vfile.mod.Data
   
   trait Map extends StObject {
     
+    /**
+      *  The generated file this source map is associated with.
+      */
     var file: String
     
+    /**
+      *  A string of base64 VLQs which contain the actual mappings.
+      */
     var mappings: String
     
+    /**
+      *  An array of identifiers which can be referenced by individual mappings.
+      */
     var names: js.Array[String]
     
+    /**
+      * The URL root from which all sources are relative.
+      */
     var sourceRoot: js.UndefOr[String] = js.undefined
     
+    /**
+      *  An array of URLs to the original source files.
+      */
     var sources: js.Array[String]
     
+    /**
+      * An array of contents of the original source files.
+      */
     var sourcesContent: js.UndefOr[js.Array[String]] = js.undefined
     
+    /**
+      *  Which version of the source map spec this map is following.
+      */
     var version: Double
   }
   object Map {
@@ -387,7 +396,7 @@ object libMod {
   
   type Position = typings.unist.mod.Position
   
-  type Reporter = js.Function2[/* files */ js.Array[VFile], /* options */ ReporterSettings, String]
+  type Reporter[Settings /* <: ReporterSettings */] = js.Function2[/* files */ js.Array[VFile], /* options */ Settings, String]
   
   type ReporterSettings = Record[String, Any]
   
@@ -395,23 +404,50 @@ object libMod {
   
   trait VFileCoreOptions extends StObject {
     
-    var basename: js.UndefOr[String] = js.undefined
+    /**
+      * Set `basename`.
+      */
+    var basename: js.UndefOr[String | Null] = js.undefined
     
-    var cwd: js.UndefOr[String] = js.undefined
+    /**
+      * Set `cwd`.
+      */
+    var cwd: js.UndefOr[String | Null] = js.undefined
     
-    var data: js.UndefOr[typings.vfile.mod.Data] = js.undefined
+    /**
+      * Set `data`.
+      */
+    var data: js.UndefOr[Data | Null] = js.undefined
     
-    var dirname: js.UndefOr[String] = js.undefined
+    /**
+      * Set `dirname`.
+      */
+    var dirname: js.UndefOr[String | Null] = js.undefined
     
-    var extname: js.UndefOr[String] = js.undefined
+    /**
+      * Set `extname`.
+      */
+    var extname: js.UndefOr[String | Null] = js.undefined
     
-    var history: js.UndefOr[js.Array[String]] = js.undefined
+    /**
+      * Set `history`.
+      */
+    var history: js.UndefOr[js.Array[String] | Null] = js.undefined
     
-    var path: js.UndefOr[String | typings.vfile.libMinurlDotsharedMod.URL] = js.undefined
+    /**
+      * Set `path`.
+      */
+    var path: js.UndefOr[URL | String | Null] = js.undefined
     
-    var stem: js.UndefOr[String] = js.undefined
+    /**
+      * Set `stem`.
+      */
+    var stem: js.UndefOr[String | Null] = js.undefined
     
-    var value: js.UndefOr[typings.vfile.mod.Value] = js.undefined
+    /**
+      * Set `value`.
+      */
+    var value: js.UndefOr[Value | Null] = js.undefined
   }
   object VFileCoreOptions {
     
@@ -425,39 +461,57 @@ object libMod {
       
       inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
+      inline def setBasenameNull: Self = StObject.set(x, "basename", null)
+      
       inline def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
+      inline def setCwdNull: Self = StObject.set(x, "cwd", null)
+      
       inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      inline def setData(value: typings.vfile.mod.Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setDataNull: Self = StObject.set(x, "data", null)
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
       inline def setDirname(value: String): Self = StObject.set(x, "dirname", value.asInstanceOf[js.Any])
       
+      inline def setDirnameNull: Self = StObject.set(x, "dirname", null)
+      
       inline def setDirnameUndefined: Self = StObject.set(x, "dirname", js.undefined)
       
       inline def setExtname(value: String): Self = StObject.set(x, "extname", value.asInstanceOf[js.Any])
+      
+      inline def setExtnameNull: Self = StObject.set(x, "extname", null)
       
       inline def setExtnameUndefined: Self = StObject.set(x, "extname", js.undefined)
       
       inline def setHistory(value: js.Array[String]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
+      inline def setHistoryNull: Self = StObject.set(x, "history", null)
+      
       inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
       
       inline def setHistoryVarargs(value: String*): Self = StObject.set(x, "history", js.Array(value*))
       
-      inline def setPath(value: String | typings.vfile.libMinurlDotsharedMod.URL): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: URL | String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      
+      inline def setPathNull: Self = StObject.set(x, "path", null)
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
       inline def setStem(value: String): Self = StObject.set(x, "stem", value.asInstanceOf[js.Any])
       
+      inline def setStemNull: Self = StObject.set(x, "stem", null)
+      
       inline def setStemUndefined: Self = StObject.set(x, "stem", js.undefined)
       
-      inline def setValue(value: typings.vfile.mod.Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueNull: Self = StObject.set(x, "value", null)
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }

@@ -65,6 +65,7 @@ import typings.std.HTMLUListElement
 import typings.std.HTMLUnknownElement
 import typings.std.HTMLVideoElement
 import typings.std.SVGAnimateElement
+import typings.std.SVGAnimateMotionElement
 import typings.std.SVGCircleElement
 import typings.std.SVGClipPathElement
 import typings.std.SVGDefsElement
@@ -77,6 +78,7 @@ import typings.std.SVGFECompositeElement
 import typings.std.SVGFEConvolveMatrixElement
 import typings.std.SVGFEDiffuseLightingElement
 import typings.std.SVGFEDisplacementMapElement
+import typings.std.SVGFEDistantLightElement
 import typings.std.SVGFEDropShadowElement
 import typings.std.SVGFEFloodElement
 import typings.std.SVGFEFuncAElement
@@ -89,7 +91,9 @@ import typings.std.SVGFEMergeElement
 import typings.std.SVGFEMergeNodeElement
 import typings.std.SVGFEMorphologyElement
 import typings.std.SVGFEOffsetElement
+import typings.std.SVGFEPointLightElement
 import typings.std.SVGFESpecularLightingElement
+import typings.std.SVGFESpotLightElement
 import typings.std.SVGFETileElement
 import typings.std.SVGFETurbulenceElement
 import typings.std.SVGFilterElement
@@ -98,8 +102,10 @@ import typings.std.SVGGElement
 import typings.std.SVGImageElement
 import typings.std.SVGLineElement
 import typings.std.SVGLinearGradientElement
+import typings.std.SVGMPathElement
 import typings.std.SVGMarkerElement
 import typings.std.SVGMaskElement
+import typings.std.SVGMetadataElement
 import typings.std.SVGPathElement
 import typings.std.SVGPatternElement
 import typings.std.SVGPolygonElement
@@ -107,12 +113,15 @@ import typings.std.SVGPolylineElement
 import typings.std.SVGRadialGradientElement
 import typings.std.SVGRectElement
 import typings.std.SVGSVGElement
+import typings.std.SVGSetElement
 import typings.std.SVGStopElement
+import typings.std.SVGSwitchElement
 import typings.std.SVGSymbolElement
 import typings.std.SVGTSpanElement
 import typings.std.SVGTextElement
 import typings.std.SVGTextPathElement
 import typings.std.SVGUseElement
+import typings.std.SVGViewElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -127,6 +136,8 @@ trait IntrinsicElements extends StObject {
   var address: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLElement]
   
   var animate: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGAnimateElement]
+  
+  var animateMotion: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGAnimateMotionElement]
   
   var animateTransform: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGAnimateElement]
   
@@ -216,6 +227,8 @@ trait IntrinsicElements extends StObject {
   
   var feDisplacementMap: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFEDisplacementMapElement]
   
+  var feDistantLight: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFEDistantLightElement]
+  
   var feDropShadow: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFEDropShadowElement]
   
   var feFlood: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFEFloodElement]
@@ -240,7 +253,11 @@ trait IntrinsicElements extends StObject {
   
   var feOffset: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFEOffsetElement]
   
+  var fePointLight: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFEPointLightElement]
+  
   var feSpecularLighting: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFESpecularLightingElement]
+  
+  var feSpotLight: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFESpotLightElement]
   
   var feTile: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFETileElement]
   
@@ -330,7 +347,11 @@ trait IntrinsicElements extends StObject {
   
   var meta: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLMetaElement]
   
+  var metadata: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGMetadataElement]
+  
   var meter: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLMeterElement]
+  
+  var mpath: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGMPathElement]
   
   var nav: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLElement]
   
@@ -386,6 +407,8 @@ trait IntrinsicElements extends StObject {
   
   var select: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLSelectElement]
   
+  var set: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGSetElement]
+  
   var slot: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLSlotElement]
   
   var small: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLElement]
@@ -408,6 +431,8 @@ trait IntrinsicElements extends StObject {
   
   //SVG
   var svg: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGSVGElement]
+  
+  var switch: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGSwitchElement]
   
   var symbol: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGSymbolElement]
   
@@ -449,6 +474,8 @@ trait IntrinsicElements extends StObject {
   
   var video: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLVideoElement]
   
+  var view: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGViewElement]
+  
   var wbr: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLElement]
 }
 object IntrinsicElements {
@@ -458,6 +485,7 @@ object IntrinsicElements {
     abbr: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLElement],
     address: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLElement],
     animate: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGAnimateElement],
+    animateMotion: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGAnimateMotionElement],
     animateTransform: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGAnimateElement],
     area: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLAreaElement],
     article: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLElement],
@@ -502,6 +530,7 @@ object IntrinsicElements {
     feConvolveMatrix: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFEConvolveMatrixElement],
     feDiffuseLighting: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFEDiffuseLightingElement],
     feDisplacementMap: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFEDisplacementMapElement],
+    feDistantLight: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFEDistantLightElement],
     feDropShadow: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFEDropShadowElement],
     feFlood: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFEFloodElement],
     feFuncA: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFEFuncAElement],
@@ -514,7 +543,9 @@ object IntrinsicElements {
     feMergeNode: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFEMergeNodeElement],
     feMorphology: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFEMorphologyElement],
     feOffset: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFEOffsetElement],
+    fePointLight: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFEPointLightElement],
     feSpecularLighting: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFESpecularLightingElement],
+    feSpotLight: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFESpotLightElement],
     feTile: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFETileElement],
     feTurbulence: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFETurbulenceElement],
     fieldset: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLFieldSetElement],
@@ -559,7 +590,9 @@ object IntrinsicElements {
     menu: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLMenuElement],
     menuitem: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLUnknownElement],
     meta: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLMetaElement],
+    metadata: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGMetadataElement],
     meter: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLMeterElement],
+    mpath: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGMPathElement],
     nav: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLElement],
     noscript: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLElement],
     `object`: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLObjectElement],
@@ -587,6 +620,7 @@ object IntrinsicElements {
     script: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLScriptElement],
     section: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLElement],
     select: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLSelectElement],
+    set: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGSetElement],
     slot: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLSlotElement],
     small: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLElement],
     source: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLSourceElement],
@@ -598,6 +632,7 @@ object IntrinsicElements {
     summary: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLElement],
     sup: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLElement],
     svg: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGSVGElement],
+    switch: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGSwitchElement],
     symbol: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGSymbolElement],
     table: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLTableElement],
     tbody: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLTableSectionElement],
@@ -618,9 +653,10 @@ object IntrinsicElements {
     use: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGUseElement],
     `var`: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLElement],
     video: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLVideoElement],
+    view: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGViewElement],
     wbr: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLElement]
   ): IntrinsicElements = {
-    val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], abbr = abbr.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], animate = animate.asInstanceOf[js.Any], animateTransform = animateTransform.asInstanceOf[js.Any], area = area.asInstanceOf[js.Any], article = article.asInstanceOf[js.Any], aside = aside.asInstanceOf[js.Any], audio = audio.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], bdi = bdi.asInstanceOf[js.Any], bdo = bdo.asInstanceOf[js.Any], big = big.asInstanceOf[js.Any], blockquote = blockquote.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], br = br.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], canvas = canvas.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], circle = circle.asInstanceOf[js.Any], cite = cite.asInstanceOf[js.Any], clipPath = clipPath.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], colgroup = colgroup.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], datalist = datalist.asInstanceOf[js.Any], dd = dd.asInstanceOf[js.Any], defs = defs.asInstanceOf[js.Any], del = del.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], dfn = dfn.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], div = div.asInstanceOf[js.Any], dl = dl.asInstanceOf[js.Any], dt = dt.asInstanceOf[js.Any], ellipse = ellipse.asInstanceOf[js.Any], em = em.asInstanceOf[js.Any], embed = embed.asInstanceOf[js.Any], feBlend = feBlend.asInstanceOf[js.Any], feColorMatrix = feColorMatrix.asInstanceOf[js.Any], feComponentTransfer = feComponentTransfer.asInstanceOf[js.Any], feComposite = feComposite.asInstanceOf[js.Any], feConvolveMatrix = feConvolveMatrix.asInstanceOf[js.Any], feDiffuseLighting = feDiffuseLighting.asInstanceOf[js.Any], feDisplacementMap = feDisplacementMap.asInstanceOf[js.Any], feDropShadow = feDropShadow.asInstanceOf[js.Any], feFlood = feFlood.asInstanceOf[js.Any], feFuncA = feFuncA.asInstanceOf[js.Any], feFuncB = feFuncB.asInstanceOf[js.Any], feFuncG = feFuncG.asInstanceOf[js.Any], feFuncR = feFuncR.asInstanceOf[js.Any], feGaussianBlur = feGaussianBlur.asInstanceOf[js.Any], feImage = feImage.asInstanceOf[js.Any], feMerge = feMerge.asInstanceOf[js.Any], feMergeNode = feMergeNode.asInstanceOf[js.Any], feMorphology = feMorphology.asInstanceOf[js.Any], feOffset = feOffset.asInstanceOf[js.Any], feSpecularLighting = feSpecularLighting.asInstanceOf[js.Any], feTile = feTile.asInstanceOf[js.Any], feTurbulence = feTurbulence.asInstanceOf[js.Any], fieldset = fieldset.asInstanceOf[js.Any], figcaption = figcaption.asInstanceOf[js.Any], figure = figure.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], foreignObject = foreignObject.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], h1 = h1.asInstanceOf[js.Any], h2 = h2.asInstanceOf[js.Any], h3 = h3.asInstanceOf[js.Any], h4 = h4.asInstanceOf[js.Any], h5 = h5.asInstanceOf[js.Any], h6 = h6.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], hgroup = hgroup.asInstanceOf[js.Any], hr = hr.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], iframe = iframe.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], ins = ins.asInstanceOf[js.Any], kbd = kbd.asInstanceOf[js.Any], keygen = keygen.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], li = li.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], linearGradient = linearGradient.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], main = main.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], marquee = marquee.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], menuitem = menuitem.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], meter = meter.asInstanceOf[js.Any], nav = nav.asInstanceOf[js.Any], noscript = noscript.asInstanceOf[js.Any], ol = ol.asInstanceOf[js.Any], optgroup = optgroup.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], param = param.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any], polygon = polygon.asInstanceOf[js.Any], polyline = polyline.asInstanceOf[js.Any], pre = pre.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], radialGradient = radialGradient.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any], rp = rp.asInstanceOf[js.Any], rt = rt.asInstanceOf[js.Any], ruby = ruby.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], samp = samp.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any], strong = strong.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], sup = sup.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], tbody = tbody.asInstanceOf[js.Any], td = td.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textPath = textPath.asInstanceOf[js.Any], textarea = textarea.asInstanceOf[js.Any], tfoot = tfoot.asInstanceOf[js.Any], th = th.asInstanceOf[js.Any], thead = thead.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], tr = tr.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any], tspan = tspan.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any], ul = ul.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], wbr = wbr.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], abbr = abbr.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], animate = animate.asInstanceOf[js.Any], animateMotion = animateMotion.asInstanceOf[js.Any], animateTransform = animateTransform.asInstanceOf[js.Any], area = area.asInstanceOf[js.Any], article = article.asInstanceOf[js.Any], aside = aside.asInstanceOf[js.Any], audio = audio.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], bdi = bdi.asInstanceOf[js.Any], bdo = bdo.asInstanceOf[js.Any], big = big.asInstanceOf[js.Any], blockquote = blockquote.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], br = br.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], canvas = canvas.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], circle = circle.asInstanceOf[js.Any], cite = cite.asInstanceOf[js.Any], clipPath = clipPath.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], colgroup = colgroup.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], datalist = datalist.asInstanceOf[js.Any], dd = dd.asInstanceOf[js.Any], defs = defs.asInstanceOf[js.Any], del = del.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], dfn = dfn.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], div = div.asInstanceOf[js.Any], dl = dl.asInstanceOf[js.Any], dt = dt.asInstanceOf[js.Any], ellipse = ellipse.asInstanceOf[js.Any], em = em.asInstanceOf[js.Any], embed = embed.asInstanceOf[js.Any], feBlend = feBlend.asInstanceOf[js.Any], feColorMatrix = feColorMatrix.asInstanceOf[js.Any], feComponentTransfer = feComponentTransfer.asInstanceOf[js.Any], feComposite = feComposite.asInstanceOf[js.Any], feConvolveMatrix = feConvolveMatrix.asInstanceOf[js.Any], feDiffuseLighting = feDiffuseLighting.asInstanceOf[js.Any], feDisplacementMap = feDisplacementMap.asInstanceOf[js.Any], feDistantLight = feDistantLight.asInstanceOf[js.Any], feDropShadow = feDropShadow.asInstanceOf[js.Any], feFlood = feFlood.asInstanceOf[js.Any], feFuncA = feFuncA.asInstanceOf[js.Any], feFuncB = feFuncB.asInstanceOf[js.Any], feFuncG = feFuncG.asInstanceOf[js.Any], feFuncR = feFuncR.asInstanceOf[js.Any], feGaussianBlur = feGaussianBlur.asInstanceOf[js.Any], feImage = feImage.asInstanceOf[js.Any], feMerge = feMerge.asInstanceOf[js.Any], feMergeNode = feMergeNode.asInstanceOf[js.Any], feMorphology = feMorphology.asInstanceOf[js.Any], feOffset = feOffset.asInstanceOf[js.Any], fePointLight = fePointLight.asInstanceOf[js.Any], feSpecularLighting = feSpecularLighting.asInstanceOf[js.Any], feSpotLight = feSpotLight.asInstanceOf[js.Any], feTile = feTile.asInstanceOf[js.Any], feTurbulence = feTurbulence.asInstanceOf[js.Any], fieldset = fieldset.asInstanceOf[js.Any], figcaption = figcaption.asInstanceOf[js.Any], figure = figure.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], foreignObject = foreignObject.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], h1 = h1.asInstanceOf[js.Any], h2 = h2.asInstanceOf[js.Any], h3 = h3.asInstanceOf[js.Any], h4 = h4.asInstanceOf[js.Any], h5 = h5.asInstanceOf[js.Any], h6 = h6.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], hgroup = hgroup.asInstanceOf[js.Any], hr = hr.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], iframe = iframe.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], ins = ins.asInstanceOf[js.Any], kbd = kbd.asInstanceOf[js.Any], keygen = keygen.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], li = li.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], linearGradient = linearGradient.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], main = main.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], marquee = marquee.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], menuitem = menuitem.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], meter = meter.asInstanceOf[js.Any], mpath = mpath.asInstanceOf[js.Any], nav = nav.asInstanceOf[js.Any], noscript = noscript.asInstanceOf[js.Any], ol = ol.asInstanceOf[js.Any], optgroup = optgroup.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], param = param.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any], polygon = polygon.asInstanceOf[js.Any], polyline = polyline.asInstanceOf[js.Any], pre = pre.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], radialGradient = radialGradient.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any], rp = rp.asInstanceOf[js.Any], rt = rt.asInstanceOf[js.Any], ruby = ruby.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], samp = samp.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any], strong = strong.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], sup = sup.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any], switch = switch.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], tbody = tbody.asInstanceOf[js.Any], td = td.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textPath = textPath.asInstanceOf[js.Any], textarea = textarea.asInstanceOf[js.Any], tfoot = tfoot.asInstanceOf[js.Any], th = th.asInstanceOf[js.Any], thead = thead.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], tr = tr.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any], tspan = tspan.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any], ul = ul.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], wbr = wbr.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("var")(`var`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrinsicElements]
@@ -636,6 +672,8 @@ object IntrinsicElements {
     inline def setAddress(value: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLElement]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     inline def setAnimate(value: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGAnimateElement]): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    
+    inline def setAnimateMotion(value: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGAnimateMotionElement]): Self = StObject.set(x, "animateMotion", value.asInstanceOf[js.Any])
     
     inline def setAnimateTransform(value: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGAnimateElement]): Self = StObject.set(x, "animateTransform", value.asInstanceOf[js.Any])
     
@@ -725,6 +763,8 @@ object IntrinsicElements {
     
     inline def setFeDisplacementMap(value: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFEDisplacementMapElement]): Self = StObject.set(x, "feDisplacementMap", value.asInstanceOf[js.Any])
     
+    inline def setFeDistantLight(value: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFEDistantLightElement]): Self = StObject.set(x, "feDistantLight", value.asInstanceOf[js.Any])
+    
     inline def setFeDropShadow(value: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFEDropShadowElement]): Self = StObject.set(x, "feDropShadow", value.asInstanceOf[js.Any])
     
     inline def setFeFlood(value: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFEFloodElement]): Self = StObject.set(x, "feFlood", value.asInstanceOf[js.Any])
@@ -749,7 +789,11 @@ object IntrinsicElements {
     
     inline def setFeOffset(value: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFEOffsetElement]): Self = StObject.set(x, "feOffset", value.asInstanceOf[js.Any])
     
+    inline def setFePointLight(value: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFEPointLightElement]): Self = StObject.set(x, "fePointLight", value.asInstanceOf[js.Any])
+    
     inline def setFeSpecularLighting(value: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFESpecularLightingElement]): Self = StObject.set(x, "feSpecularLighting", value.asInstanceOf[js.Any])
+    
+    inline def setFeSpotLight(value: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFESpotLightElement]): Self = StObject.set(x, "feSpotLight", value.asInstanceOf[js.Any])
     
     inline def setFeTile(value: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGFETileElement]): Self = StObject.set(x, "feTile", value.asInstanceOf[js.Any])
     
@@ -841,7 +885,11 @@ object IntrinsicElements {
     
     inline def setMeta(value: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLMetaElement]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
+    inline def setMetadata(value: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGMetadataElement]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    
     inline def setMeter(value: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLMeterElement]): Self = StObject.set(x, "meter", value.asInstanceOf[js.Any])
+    
+    inline def setMpath(value: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGMPathElement]): Self = StObject.set(x, "mpath", value.asInstanceOf[js.Any])
     
     inline def setNav(value: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLElement]): Self = StObject.set(x, "nav", value.asInstanceOf[js.Any])
     
@@ -897,6 +945,8 @@ object IntrinsicElements {
     
     inline def setSelect(value: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLSelectElement]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
+    inline def setSet(value: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGSetElement]): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+    
     inline def setSlot(value: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLSlotElement]): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
     
     inline def setSmall(value: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLElement]): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
@@ -918,6 +968,8 @@ object IntrinsicElements {
     inline def setSup(value: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLElement]): Self = StObject.set(x, "sup", value.asInstanceOf[js.Any])
     
     inline def setSvg(value: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGSVGElement]): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
+    
+    inline def setSwitch(value: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGSwitchElement]): Self = StObject.set(x, "switch", value.asInstanceOf[js.Any])
     
     inline def setSymbol(value: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGSymbolElement]): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
@@ -958,6 +1010,8 @@ object IntrinsicElements {
     inline def setVar(value: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLElement]): Self = StObject.set(x, "var", value.asInstanceOf[js.Any])
     
     inline def setVideo(value: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLVideoElement]): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+    
+    inline def setView(value: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGViewElement]): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     inline def setWbr(value: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLElement]): Self = StObject.set(x, "wbr", value.asInstanceOf[js.Any])
   }

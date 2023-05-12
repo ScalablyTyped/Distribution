@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__keycodes
 
-Typings are for version 2.3
+Typings are for version 3.33.0
 
 ## Library description:
 Keycodes utilities for WordPress. Used to check for keyboard events across browsers/operating systems.
@@ -24,7 +24,7 @@ Keycodes utilities for WordPress. Used to check for keyboard events across brows
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

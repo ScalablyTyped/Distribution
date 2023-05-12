@@ -24,11 +24,11 @@ trait AutoScalingTargetTrackingScalingPolicyConfigurationUpdate extends StObject
   /**
     * The target value for the metric. The range is 8.515920e-109 to 1.174271e+108 (Base 10) or 2e-360 to 2e360 (Base 2).
     */
-  var TargetValue: Double
+  var TargetValue: DoubleObject
 }
 object AutoScalingTargetTrackingScalingPolicyConfigurationUpdate {
   
-  inline def apply(TargetValue: Double): AutoScalingTargetTrackingScalingPolicyConfigurationUpdate = {
+  inline def apply(TargetValue: DoubleObject): AutoScalingTargetTrackingScalingPolicyConfigurationUpdate = {
     val __obj = js.Dynamic.literal(TargetValue = TargetValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoScalingTargetTrackingScalingPolicyConfigurationUpdate]
   }
@@ -48,6 +48,6 @@ object AutoScalingTargetTrackingScalingPolicyConfigurationUpdate {
     
     inline def setScaleOutCooldownUndefined: Self = StObject.set(x, "ScaleOutCooldown", js.undefined)
     
-    inline def setTargetValue(value: Double): Self = StObject.set(x, "TargetValue", value.asInstanceOf[js.Any])
+    inline def setTargetValue(value: DoubleObject): Self = StObject.set(x, "TargetValue", value.asInstanceOf[js.Any])
   }
 }

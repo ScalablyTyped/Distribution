@@ -34,7 +34,7 @@ object Range {
   ): typings.vscodeLanguageserverTypes.mod.Range = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.Range]
   
   /**
-    * Checks whether the given literal conforms to the [Range](#Range) interface.
+    * Checks whether the given literal conforms to the {@link Range} interface.
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.Range */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Range */ Boolean]
 }

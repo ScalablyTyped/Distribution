@@ -1,7 +1,7 @@
 package typings.ol
 
 import typings.ol.extentMod.Extent
-import typings.ol.formatFeatureMod.default
+import typings.ol.renderFeatureMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,11 +18,7 @@ object featureloaderMod {
     extent: Extent,
     resolution: Double,
     projection: typings.ol.projProjectionMod.default,
-    success: js.Function2[
-      /* p0 */ js.Array[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]], 
-      /* p1 */ typings.ol.projProjectionMod.default, 
-      Unit
-    ],
+    success: js.Function2[/* arg0 */ js.Array[default], /* arg1 */ typings.ol.projProjectionMod.default, Unit],
     failure: js.Function0[Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFeaturesXhr")(url.asInstanceOf[js.Any], format.asInstanceOf[js.Any], extent.asInstanceOf[js.Any], resolution.asInstanceOf[js.Any], projection.asInstanceOf[js.Any], success.asInstanceOf[js.Any], failure.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def loadFeaturesXhr(
@@ -31,11 +27,7 @@ object featureloaderMod {
     extent: Extent,
     resolution: Double,
     projection: typings.ol.projProjectionMod.default,
-    success: js.Function2[
-      /* p0 */ js.Array[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]], 
-      /* p1 */ typings.ol.projProjectionMod.default, 
-      Unit
-    ],
+    success: js.Function2[/* arg0 */ js.Array[default], /* arg1 */ typings.ol.projProjectionMod.default, Unit],
     failure: js.Function0[Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFeaturesXhr")(url.asInstanceOf[js.Any], format.asInstanceOf[js.Any], extent.asInstanceOf[js.Any], resolution.asInstanceOf[js.Any], projection.asInstanceOf[js.Any], success.asInstanceOf[js.Any], failure.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -46,21 +38,18 @@ object featureloaderMod {
   
   type FeatureLoader = js.ThisFunction5[
     /* this */ typings.ol.sourceVectorMod.default[typings.ol.geomGeometryMod.default] | typings.ol.vectorTileMod.default, 
-    /* p0 */ Extent, 
-    /* p1 */ Double, 
-    /* p2 */ typings.ol.projProjectionMod.default, 
-    /* p3 */ js.Function1[
-      /* p0 */ js.Array[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]], 
-      Unit
-    ], 
-    /* p4 */ js.Function0[Unit], 
+    /* arg1 */ Extent, 
+    /* arg2 */ Double, 
+    /* arg3 */ typings.ol.projProjectionMod.default, 
+    /* arg4 */ js.UndefOr[js.Function1[/* arg0 */ js.Array[default], Unit]], 
+    /* arg5 */ js.UndefOr[js.Function0[Unit]], 
     Unit
   ]
   
   type FeatureUrlFunction = js.Function3[
-    /* p0 */ Extent, 
-    /* p1 */ Double, 
-    /* p2 */ typings.ol.projProjectionMod.default, 
+    /* arg0 */ Extent, 
+    /* arg1 */ Double, 
+    /* arg2 */ typings.ol.projProjectionMod.default, 
     String
   ]
 }

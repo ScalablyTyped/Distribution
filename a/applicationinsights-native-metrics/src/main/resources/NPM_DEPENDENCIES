@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "applicationinsights-native-metrics" : "0.0.8"
+      "applicationinsights-native-metrics" : "0.0.9"
     }
   ],
   "test-dependencies" : [
     {
-      "applicationinsights-native-metrics" : "0.0.8"
+      "applicationinsights-native-metrics" : "0.0.9"
     }
   ],
   "compile-devDependencies" : [

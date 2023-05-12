@@ -6,22 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AllBefore extends StObject {
   
-  /** If `true`, show notifications marked as read. */
   var all: js.UndefOr[Boolean] = js.undefined
   
-  /** Only show notifications updated before the given time. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. */
   var before: js.UndefOr[String] = js.undefined
   
-  /** Page number of the results to fetch. */
   var page: js.UndefOr[Double] = js.undefined
   
-  /** If `true`, only shows notifications in which the user is directly participating or mentioned. */
   var participating: js.UndefOr[Boolean] = js.undefined
   
-  /** The number of results per page (max 50). */
+  /** @description The number of results per page (max 50). */
   var per_page: js.UndefOr[Double] = js.undefined
   
-  /** Only show notifications updated after the given time. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. */
   var since: js.UndefOr[String] = js.undefined
 }
 object AllBefore {

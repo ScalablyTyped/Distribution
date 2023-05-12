@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-handshake
 
-Typings are for version 4.1.2
+Typings are for version 4.1.3
 
 ## Library description:
 Create handshakes for binary protocols with iterable streams

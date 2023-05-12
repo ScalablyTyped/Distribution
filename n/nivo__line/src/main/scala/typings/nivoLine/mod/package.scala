@@ -6,6 +6,8 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.std.Element
+import typings.std.Exclude
+import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,6 +24,8 @@ type CustomLayer = js.Function1[/* props */ CustomLayerProps, ReactNode]
 type DatumValue = typings.nivoCore.mod.DatumValue
 
 type Layer = LineLayerType | CustomLayer
+
+type Omit[T, K /* <: /* keyof T */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
 
 type PointMouseHandler = js.Function2[/* point */ Point, /* event */ MouseEvent[Element, NativeMouseEvent], Unit]
 

@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Options for the rendering of the Street View pegman control on the map.
-  */
 trait StreetViewControlOptions extends StObject {
   
   /**

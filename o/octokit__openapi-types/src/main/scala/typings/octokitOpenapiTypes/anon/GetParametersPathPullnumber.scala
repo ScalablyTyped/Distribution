@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetParametersPathPullnumber extends StObject {
   
   /**
-    * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
+    * Get a pull request
+    * @description Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
     * Lists details of a pull request by providing its number.
     *
@@ -26,15 +27,16 @@ trait GetParametersPathPullnumber extends StObject {
   var get: ParametersPathPullnumber
   
   /**
-    * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
+    * Update a pull request
+    * @description Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
     * To open or update a pull request in a public repository, you must have write access to the head or the source branch. For organization-owned repositories, you must be a member of the organization that owns the repository to open or update a pull request.
     */
-  var patch: RequestBodyContentApplicationjsonMaintainercanmodify
+  var patch: Responses200317
 }
 object GetParametersPathPullnumber {
   
-  inline def apply(get: ParametersPathPullnumber, patch: RequestBodyContentApplicationjsonMaintainercanmodify): GetParametersPathPullnumber = {
+  inline def apply(get: ParametersPathPullnumber, patch: Responses200317): GetParametersPathPullnumber = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetParametersPathPullnumber]
   }
@@ -44,6 +46,6 @@ object GetParametersPathPullnumber {
     
     inline def setGet(value: ParametersPathPullnumber): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPatch(value: RequestBodyContentApplicationjsonMaintainercanmodify): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+    inline def setPatch(value: Responses200317): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for terser
 
-Typings are for version 5.15.1
+Typings are for version 5.17.3
 
 ## Library description:
 JavaScript parser, mangler/compressor and beautifier toolkit for ES6+

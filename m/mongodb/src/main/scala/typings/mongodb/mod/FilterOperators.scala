@@ -110,7 +110,7 @@ trait FilterOperators[TValue]
   ] = js.undefined
   
   @JSName("$type")
-  var $type: js.UndefOr[BSONType | BSONTypeAlias] = js.undefined
+  var $type: js.UndefOr[typings.bson.mod.BSONType | BSONTypeAlias] = js.undefined
 }
 object FilterOperators {
   
@@ -258,7 +258,7 @@ object FilterOperators {
     
     inline def set$sizeUndefined: Self = StObject.set(x, "$size", js.undefined)
     
-    inline def set$type(value: BSONType | BSONTypeAlias): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
+    inline def set$type(value: typings.bson.mod.BSONType | BSONTypeAlias): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
     
     inline def set$typeUndefined: Self = StObject.set(x, "$type", js.undefined)
   }

@@ -4,12 +4,24 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Custom paginator change target options
+  */
 trait PaginatorChangeTargetOptions extends StObject {
   
+  /**
+    * The id attribute of the target options.
+    */
   var id: String
   
+  /**
+    * The name attribute of the target options.
+    */
   var name: String
   
+  /**
+    * The value attribute of the target options.
+    */
   var value: js.UndefOr[String | Null] = js.undefined
 }
 object PaginatorChangeTargetOptions {

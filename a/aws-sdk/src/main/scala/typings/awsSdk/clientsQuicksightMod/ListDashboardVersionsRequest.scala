@@ -14,7 +14,7 @@ trait ListDashboardVersionsRequest extends StObject {
   /**
     * The ID for the dashboard.
     */
-  var DashboardId: RestrictiveResourceId
+  var DashboardId: ShortRestrictiveResourceId
   
   /**
     * The maximum number of results to be returned per request.
@@ -28,7 +28,7 @@ trait ListDashboardVersionsRequest extends StObject {
 }
 object ListDashboardVersionsRequest {
   
-  inline def apply(AwsAccountId: AwsAccountId, DashboardId: RestrictiveResourceId): ListDashboardVersionsRequest = {
+  inline def apply(AwsAccountId: AwsAccountId, DashboardId: ShortRestrictiveResourceId): ListDashboardVersionsRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], DashboardId = DashboardId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDashboardVersionsRequest]
   }
@@ -38,7 +38,7 @@ object ListDashboardVersionsRequest {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    inline def setDashboardId(value: RestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
+    inline def setDashboardId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

@@ -17,6 +17,11 @@ trait PlotTreegraphCollapseButtonOptions extends StObject {
   var height: js.UndefOr[Double] = js.undefined
   
   /**
+    * (Highcharts) The line width of the button in pixels
+    */
+  var lineWidth: js.UndefOr[Double] = js.undefined
+  
+  /**
     * (Highcharts) Whether the button should be visible only when the node is
     * hovered. When set to true, the button is hidden for nodes, which are not
     * collapsed, and shown for the collapsed ones.
@@ -27,6 +32,14 @@ trait PlotTreegraphCollapseButtonOptions extends StObject {
     * (Highcharts) The symbol of the collapse button.
     */
   var shape: js.UndefOr[String] = js.undefined
+  
+  /**
+    * (Highcharts) CSS styles for the collapse button.
+    *
+    * In styled mode, the collapse button style is given in the
+    * `.highcharts-collapse-button` class.
+    */
+  var style: js.UndefOr[PlotTreegraphCollapseButtonStyleOptions] = js.undefined
   
   /**
     * (Highcharts) Width of the button.
@@ -61,6 +74,10 @@ object PlotTreegraphCollapseButtonOptions {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    
+    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
+    
     inline def setOnlyOnHover(value: Boolean): Self = StObject.set(x, "onlyOnHover", value.asInstanceOf[js.Any])
     
     inline def setOnlyOnHoverUndefined: Self = StObject.set(x, "onlyOnHover", js.undefined)
@@ -68,6 +85,10 @@ object PlotTreegraphCollapseButtonOptions {
     inline def setShape(value: String): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    
+    inline def setStyle(value: PlotTreegraphCollapseButtonStyleOptions): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

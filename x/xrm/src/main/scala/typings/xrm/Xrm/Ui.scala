@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Interface for the formContext.ui object.
-  * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-ui External Link: formContext.ui (Client API reference)}
+  * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/formcontext-ui External Link: formContext.ui (Client API reference)}
   */
 @js.native
 trait Ui extends StObject {
@@ -25,7 +25,7 @@ trait Ui extends StObject {
   /**
     * Adds a function to be called on the form OnLoad event.
     * The function will be added to the bottom of the event handler pipeline.
-    * @see {@link https://learn.microsoft.com/power-apps/developer/model-driven-apps/clientapi/reference/formcontext-ui/addonload ui.addOnLoad (Client API reference)}
+    * @see {@link https://learn.microsoft.com/power-apps/developer/model-driven-apps/clientapi/reference/formcontext-ui/addonload External Link: ui.addOnLoad (Client API reference)}
     */
   def addOnLoad(handler: LoadEventHandler | LoadEventHandlerAsync): Unit = js.native
   
@@ -43,7 +43,7 @@ trait Ui extends StObject {
   
   /**
     * A reference to the collection of controls on the form.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/collections External Link: Collections (Client API reference)}
     */
   var controls: ItemCollection[Control] = js.native
   
@@ -104,8 +104,8 @@ trait Ui extends StObject {
   
   /**
     * A collection of all the quick view controls on a form using the new form rendering engine (also called "turbo forms").
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-ui-quickforms ExternalLink: formContext.ui.quickForms (Client API reference)}
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-ui External Link: formContext.ui (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/formcontext-ui-quickforms ExternalLink: formContext.ui.quickForms (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/formcontext-ui External Link: formContext.ui (Client API reference)}
     */
   var quickForms: ItemCollection[QuickFormControl] = js.native
   
@@ -120,14 +120,14 @@ trait Ui extends StObject {
   
   /**
     * Removes a function from the form OnLoad event.
-    * @see {@link https://learn.microsoft.com/power-apps/developer/model-driven-apps/clientapi/reference/formcontext-ui/removeonload ui.removeOnLoad (Client API reference)}
+    * @see {@link https://learn.microsoft.com/power-apps/developer/model-driven-apps/clientapi/reference/formcontext-ui/removeonload External Link: ui.removeOnLoad (Client API reference)}
     */
   def removeOnLoad(handler: LoadEventHandler | LoadEventHandlerAsync): Unit = js.native
   
   /**
     * Sets the name of the table to be displayed on the form.
     * @param name Name of the table to be displayed on the form.
-    * @see {@link https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/formcontext-ui/setformentityname External Link: setFormEntityName (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/formcontext-ui/setformentityname External Link: setFormEntityName (Client API reference)}
     */
   def setFormEntityName(name: String): Unit = js.native
   
@@ -146,7 +146,7 @@ trait Ui extends StObject {
   
   /**
     * A reference to the collection of tabs on the form.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/collections External Link: Collections (Client API reference)}
     */
   var tabs: ItemCollection[Tab] = js.native
 }

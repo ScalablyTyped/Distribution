@@ -1,6 +1,34 @@
 package typings.stripe.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.node.httpMod.IncomingMessage
+import typings.stripe.anon.FullPath
 import typings.stripe.anon.Instantiable
+import typings.stripe.anon.StripeRawErrortypeRawErro
+import typings.stripe.anon.StripeRawErrortypeapierro
+import typings.stripe.anon.StripeRawErrortypeauthent
+import typings.stripe.anon.StripeRawErrortypecarderr
+import typings.stripe.anon.StripeRawErrortypeidempot
+import typings.stripe.anon.StripeRawErrortypeinvalid
+import typings.stripe.anon.StripeRawErrortypeinvalidCharge
+import typings.stripe.anon.StripeRawErrortyperatelim
+import typings.stripe.mod.Stripe.CryptoProvider
+import typings.stripe.mod.Stripe.HttpAgent
+import typings.stripe.mod.Stripe.HttpClient
+import typings.stripe.mod.Stripe.HttpClientResponse
+import typings.stripe.mod.Stripe.RawErrorType
+import typings.stripe.mod.Stripe.Response
+import typings.stripe.mod.Stripe.StripeConfig
+import typings.stripe.mod.Stripe.StripeRawError
+import typings.stripe.mod.Stripe.StripeResourceExtension
+import typings.stripe.mod.Stripe.StripeStreamResponse
+import typings.stripe.stripeStrings.api_error
+import typings.stripe.stripeStrings.authentication_error
+import typings.stripe.stripeStrings.card_error
+import typings.stripe.stripeStrings.idempotency_error
+import typings.stripe.stripeStrings.invalid_grant
+import typings.stripe.stripeStrings.invalid_request_error
+import typings.stripe.stripeStrings.rate_limit_error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,10 +36,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("stripe", JSImport.Default)
 @js.native
 open class default protected () extends Stripe {
-  def this(
-    apiKey: String,
-    config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Stripe.StripeConfig */ Any
-  ) = this()
+  def this(apiKey: String, config: StripeConfig) = this()
 }
 /* static members */
 object default {
@@ -236,11 +261,11 @@ object default {
     extends StObject
        with typings.stripe.mod.Stripe.MandatesResource
   
-  @JSImport("stripe", "default.OrdersResource")
+  @JSImport("stripe", "default.OAuthResource")
   @js.native
-  open class OrdersResource ()
+  open class OAuthResource ()
     extends StObject
-       with typings.stripe.mod.Stripe.OrdersResource
+       with typings.stripe.mod.Stripe.OAuthResource
   
   @JSImport("stripe", "default.PaymentIntentsResource")
   @js.native
@@ -371,11 +396,11 @@ object default {
          with typings.stripe.mod.Stripe.Sigma.ScheduledQueryRunsResource
   }
   
-  @JSImport("stripe", "default.SkusResource")
+  @JSImport("stripe", "default.Signature")
   @js.native
-  open class SkusResource ()
+  open class Signature ()
     extends StObject
-       with typings.stripe.mod.Stripe.SkusResource
+       with typings.stripe.mod.Stripe.Signature
   
   @JSImport("stripe", "default.SourcesResource")
   @js.native
@@ -386,6 +411,31 @@ object default {
   @JSImport("stripe", "default.Stripe")
   @js.native
   def Stripe: Instantiable = js.native
+  
+  @JSImport("stripe", "default.StripeResource")
+  @js.native
+  open class StripeResource ()
+    extends StObject
+       with typings.stripe.mod.Stripe.StripeResource
+  /* static members */
+  object StripeResource {
+    
+    @JSImport("stripe", "default.StripeResource")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    //eslint-disable-line @typescript-eslint/no-explicit-any
+    @JSImport("stripe", "default.StripeResource.MAX_BUFFERED_REQUEST_METRICS")
+    @js.native
+    def MAX_BUFFERED_REQUEST_METRICS: Double = js.native
+    inline def MAX_BUFFERED_REQUEST_METRICS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_BUFFERED_REQUEST_METRICS")(x.asInstanceOf[js.Any])
+    
+    inline def extend[// eslint-disable-next-line @typescript-eslint/no-explicit-any
+    T /* <: StringDictionary[Any] */](spec: T): StripeResourceExtension[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(spec.asInstanceOf[js.Any]).asInstanceOf[StripeResourceExtension[T]]
+    
+    inline def method[ResponseObject](spec: FullPath): js.Function1[/* repeated */ Any, Response[ResponseObject]] = ^.asInstanceOf[js.Dynamic].applyDynamic("method")(spec.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Any, Response[ResponseObject]]]
+  }
+  
   inline def Stripe_=(x: Instantiable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Stripe")(x.asInstanceOf[js.Any])
   
   @JSImport("stripe", "default.SubscriptionItemsResource")
@@ -405,6 +455,21 @@ object default {
   open class SubscriptionsResource ()
     extends StObject
        with typings.stripe.mod.Stripe.SubscriptionsResource
+  
+  object Tax {
+    
+    @JSImport("stripe", "default.Tax.CalculationsResource")
+    @js.native
+    open class CalculationsResource ()
+      extends StObject
+         with typings.stripe.mod.Stripe.Tax.CalculationsResource
+    
+    @JSImport("stripe", "default.Tax.TransactionsResource")
+    @js.native
+    open class TransactionsResource ()
+      extends StObject
+         with typings.stripe.mod.Stripe.Tax.TransactionsResource
+  }
   
   @JSImport("stripe", "default.TaxCodesResource")
   @js.native
@@ -603,4 +668,602 @@ object default {
   open class WebhookEndpointsResource ()
     extends StObject
        with typings.stripe.mod.Stripe.WebhookEndpointsResource
+  
+  @JSImport("stripe", "default.Webhooks")
+  @js.native
+  open class Webhooks ()
+    extends StObject
+       with typings.stripe.mod.Stripe.Webhooks
+  
+  inline def createFetchHttpClient(): HttpClient[
+    HttpClientResponse[
+      /**
+    * The response type cannot be specified without pulling in DOM types.
+    * This corresponds to ReturnType<WindowOrWorkerGlobalScope['fetch']>
+    * for applications which pull in DOM types.
+    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  Any, 
+      /**
+    * The stream type cannot be specified without pulling in DOM types.
+    * This corresponds to ReadableStream<Uint8Array> for applications which
+    * pull in DOM types.
+    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  Any
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFetchHttpClient")().asInstanceOf[HttpClient[
+    HttpClientResponse[
+      /**
+    * The response type cannot be specified without pulling in DOM types.
+    * This corresponds to ReturnType<WindowOrWorkerGlobalScope['fetch']>
+    * for applications which pull in DOM types.
+    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  Any, 
+      /**
+    * The stream type cannot be specified without pulling in DOM types.
+    * This corresponds to ReadableStream<Uint8Array> for applications which
+    * pull in DOM types.
+    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  Any
+    ]
+  ]]
+  inline def createFetchHttpClient(/** When specified, interface should match the Web Fetch API function. */
+  fetchFn: js.Function): HttpClient[
+    HttpClientResponse[
+      /**
+    * The response type cannot be specified without pulling in DOM types.
+    * This corresponds to ReturnType<WindowOrWorkerGlobalScope['fetch']>
+    * for applications which pull in DOM types.
+    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  Any, 
+      /**
+    * The stream type cannot be specified without pulling in DOM types.
+    * This corresponds to ReadableStream<Uint8Array> for applications which
+    * pull in DOM types.
+    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  Any
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFetchHttpClient")(fetchFn.asInstanceOf[js.Any]).asInstanceOf[HttpClient[
+    HttpClientResponse[
+      /**
+    * The response type cannot be specified without pulling in DOM types.
+    * This corresponds to ReturnType<WindowOrWorkerGlobalScope['fetch']>
+    * for applications which pull in DOM types.
+    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  Any, 
+      /**
+    * The stream type cannot be specified without pulling in DOM types.
+    * This corresponds to ReadableStream<Uint8Array> for applications which
+    * pull in DOM types.
+    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  Any
+    ]
+  ]]
+  
+  inline def createNodeCryptoProvider(): CryptoProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("createNodeCryptoProvider")().asInstanceOf[CryptoProvider]
+  
+  inline def createNodeHttpClient(): HttpClient[HttpClientResponse[IncomingMessage, StripeStreamResponse]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNodeHttpClient")().asInstanceOf[HttpClient[HttpClientResponse[IncomingMessage, StripeStreamResponse]]]
+  inline def createNodeHttpClient(agent: HttpAgent): HttpClient[HttpClientResponse[IncomingMessage, StripeStreamResponse]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNodeHttpClient")(agent.asInstanceOf[js.Any]).asInstanceOf[HttpClient[HttpClientResponse[IncomingMessage, StripeStreamResponse]]]
+  
+  inline def createSubtleCryptoProvider(): CryptoProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("createSubtleCryptoProvider")().asInstanceOf[CryptoProvider]
+  inline def createSubtleCryptoProvider(
+    /**
+    * The SubtleCrypto type cannot be specified without pulling in DOM types.
+    * This corresponds to WindowOrWorkerGlobalScope['crypto']['subtle'] for
+    * applications which pull in DOM types.
+    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  subtleCrypto: Any
+  ): CryptoProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("createSubtleCryptoProvider")(subtleCrypto.asInstanceOf[js.Any]).asInstanceOf[CryptoProvider]
+  
+  object errors {
+    
+    @JSImport("stripe", "default.errors")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * API errors cover any other type of problem (e.g., a temporary problem with Stripe's servers),
+      * and are extremely uncommon.
+      *
+      * It could also be raised in the case that a new error has been introduced in the API,
+      * but this version of the library doesn't know how to handle it.
+      */
+    @JSImport("stripe", "default.errors.StripeAPIError")
+    @js.native
+    open class StripeAPIError ()
+      extends StObject
+         with typings.stripe.mod.Stripe.errors.StripeAPIError {
+      
+      /* CompleteClass */
+      override val headers: StringDictionary[String] = js.native
+      
+      /* standard es5 */
+      /* CompleteClass */
+      var message: String = js.native
+      
+      /* standard es5 */
+      /* CompleteClass */
+      var name: String = js.native
+      
+      /* CompleteClass */
+      override val raw: Any = js.native
+      
+      /**
+        * See the "error types" section at https://stripe.com/docs/api/errors
+        */
+      /* CompleteClass */
+      override val rawType: RawErrorType = js.native
+      /* CompleteClass */
+      @JSName("rawType")
+      override val rawType_StripeAPIError: api_error = js.native
+      
+      /* CompleteClass */
+      override val requestId: String = js.native
+      
+      /* CompleteClass */
+      override val `type`: typings.stripe.stripeStrings.StripeError | typings.stripe.stripeStrings.StripeCardError | typings.stripe.stripeStrings.StripeInvalidRequestError | typings.stripe.stripeStrings.StripeAPIError | typings.stripe.stripeStrings.StripeAuthenticationError | typings.stripe.stripeStrings.StripePermissionError | typings.stripe.stripeStrings.StripeRateLimitError | typings.stripe.stripeStrings.StripeConnectionError | typings.stripe.stripeStrings.StripeSignatureVerificationError | typings.stripe.stripeStrings.StripeIdempotencyError | typings.stripe.stripeStrings.StripeInvalidGrantError = js.native
+      /* CompleteClass */
+      @JSName("type")
+      override val type_StripeAPIError: typings.stripe.stripeStrings.StripeAPIError = js.native
+    }
+    
+    /**
+      * Failure to properly authenticate yourself in the request.
+      */
+    @JSImport("stripe", "default.errors.StripeAuthenticationError")
+    @js.native
+    open class StripeAuthenticationError ()
+      extends StObject
+         with typings.stripe.mod.Stripe.errors.StripeAuthenticationError {
+      
+      /* CompleteClass */
+      override val headers: StringDictionary[String] = js.native
+      
+      /* standard es5 */
+      /* CompleteClass */
+      var message: String = js.native
+      
+      /* standard es5 */
+      /* CompleteClass */
+      var name: String = js.native
+      
+      /* CompleteClass */
+      override val raw: Any = js.native
+      
+      /**
+        * See the "error types" section at https://stripe.com/docs/api/errors
+        */
+      /* CompleteClass */
+      override val rawType: RawErrorType = js.native
+      /* CompleteClass */
+      @JSName("rawType")
+      override val rawType_StripeAuthenticationError: authentication_error = js.native
+      
+      /* CompleteClass */
+      override val requestId: String = js.native
+      
+      /* CompleteClass */
+      override val `type`: typings.stripe.stripeStrings.StripeError | typings.stripe.stripeStrings.StripeCardError | typings.stripe.stripeStrings.StripeInvalidRequestError | typings.stripe.stripeStrings.StripeAPIError | typings.stripe.stripeStrings.StripeAuthenticationError | typings.stripe.stripeStrings.StripePermissionError | typings.stripe.stripeStrings.StripeRateLimitError | typings.stripe.stripeStrings.StripeConnectionError | typings.stripe.stripeStrings.StripeSignatureVerificationError | typings.stripe.stripeStrings.StripeIdempotencyError | typings.stripe.stripeStrings.StripeInvalidGrantError = js.native
+      /* CompleteClass */
+      @JSName("type")
+      override val type_StripeAuthenticationError: typings.stripe.stripeStrings.StripeAuthenticationError = js.native
+    }
+    
+    /**
+      * Card errors are the most common type of error you should expect to handle.
+      * They result when the user enters a card that can't be charged for some reason.
+      */
+    @JSImport("stripe", "default.errors.StripeCardError")
+    @js.native
+    open class StripeCardError ()
+      extends StObject
+         with typings.stripe.mod.Stripe.errors.StripeCardError {
+      
+      /**
+        * @docs https://stripe.com/docs/declines/codes
+        */
+      /* CompleteClass */
+      @JSName("decline_code")
+      override val decline_code_StripeCardError: String = js.native
+      
+      /* CompleteClass */
+      override val headers: StringDictionary[String] = js.native
+      
+      /* standard es5 */
+      /* CompleteClass */
+      var message: String = js.native
+      
+      /* standard es5 */
+      /* CompleteClass */
+      var name: String = js.native
+      
+      /* CompleteClass */
+      override val raw: Any = js.native
+      
+      /**
+        * See the "error types" section at https://stripe.com/docs/api/errors
+        */
+      /* CompleteClass */
+      override val rawType: RawErrorType = js.native
+      /* CompleteClass */
+      @JSName("rawType")
+      override val rawType_StripeCardError: card_error = js.native
+      
+      /* CompleteClass */
+      override val requestId: String = js.native
+      
+      /* CompleteClass */
+      override val `type`: typings.stripe.stripeStrings.StripeError | typings.stripe.stripeStrings.StripeCardError | typings.stripe.stripeStrings.StripeInvalidRequestError | typings.stripe.stripeStrings.StripeAPIError | typings.stripe.stripeStrings.StripeAuthenticationError | typings.stripe.stripeStrings.StripePermissionError | typings.stripe.stripeStrings.StripeRateLimitError | typings.stripe.stripeStrings.StripeConnectionError | typings.stripe.stripeStrings.StripeSignatureVerificationError | typings.stripe.stripeStrings.StripeIdempotencyError | typings.stripe.stripeStrings.StripeInvalidGrantError = js.native
+      /* CompleteClass */
+      @JSName("type")
+      override val type_StripeCardError: typings.stripe.stripeStrings.StripeCardError = js.native
+    }
+    
+    /**
+      * The library cannot connect to Stripe.
+      * This can happen for a variety of reasons,
+      * such as loss of network connectivity or a bad TLS certificate.
+      */
+    @JSImport("stripe", "default.errors.StripeConnectionError")
+    @js.native
+    open class StripeConnectionError ()
+      extends StObject
+         with typings.stripe.mod.Stripe.errors.StripeConnectionError {
+      
+      /* CompleteClass */
+      override val headers: StringDictionary[String] = js.native
+      
+      /* standard es5 */
+      /* CompleteClass */
+      var message: String = js.native
+      
+      /* standard es5 */
+      /* CompleteClass */
+      var name: String = js.native
+      
+      /* CompleteClass */
+      override val raw: Any = js.native
+      
+      /**
+        * See the "error types" section at https://stripe.com/docs/api/errors
+        */
+      /* CompleteClass */
+      override val rawType: RawErrorType = js.native
+      
+      /* CompleteClass */
+      override val requestId: String = js.native
+      
+      /* CompleteClass */
+      override val `type`: typings.stripe.stripeStrings.StripeError | typings.stripe.stripeStrings.StripeCardError | typings.stripe.stripeStrings.StripeInvalidRequestError | typings.stripe.stripeStrings.StripeAPIError | typings.stripe.stripeStrings.StripeAuthenticationError | typings.stripe.stripeStrings.StripePermissionError | typings.stripe.stripeStrings.StripeRateLimitError | typings.stripe.stripeStrings.StripeConnectionError | typings.stripe.stripeStrings.StripeSignatureVerificationError | typings.stripe.stripeStrings.StripeIdempotencyError | typings.stripe.stripeStrings.StripeInvalidGrantError = js.native
+      /* CompleteClass */
+      @JSName("type")
+      override val type_StripeConnectionError: typings.stripe.stripeStrings.StripeConnectionError = js.native
+    }
+    
+    @JSImport("stripe", "default.errors.StripeError")
+    @js.native
+    open class StripeError protected ()
+      extends StObject
+         with typings.stripe.mod.Stripe.errors.StripeError {
+      def this(rawError: StripeRawError) = this()
+      
+      /* CompleteClass */
+      override val headers: StringDictionary[String] = js.native
+      
+      /* standard es5 */
+      /* CompleteClass */
+      var message: String = js.native
+      
+      /* standard es5 */
+      /* CompleteClass */
+      var name: String = js.native
+      
+      /* CompleteClass */
+      override val raw: Any = js.native
+      
+      /**
+        * See the "error types" section at https://stripe.com/docs/api/errors
+        */
+      /* CompleteClass */
+      override val rawType: RawErrorType = js.native
+      
+      /* CompleteClass */
+      override val requestId: String = js.native
+      
+      /* CompleteClass */
+      override val `type`: typings.stripe.stripeStrings.StripeError | typings.stripe.stripeStrings.StripeCardError | typings.stripe.stripeStrings.StripeInvalidRequestError | typings.stripe.stripeStrings.StripeAPIError | typings.stripe.stripeStrings.StripeAuthenticationError | typings.stripe.stripeStrings.StripePermissionError | typings.stripe.stripeStrings.StripeRateLimitError | typings.stripe.stripeStrings.StripeConnectionError | typings.stripe.stripeStrings.StripeSignatureVerificationError | typings.stripe.stripeStrings.StripeIdempotencyError | typings.stripe.stripeStrings.StripeInvalidGrantError = js.native
+    }
+    object StripeError {
+      
+      @JSImport("stripe", "default.errors.StripeError")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /* static member */
+      inline def generate(rawError: StripeRawErrortypeRawErro): typings.stripe.mod.Stripe.errors.StripeError = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(rawError.asInstanceOf[js.Any]).asInstanceOf[typings.stripe.mod.Stripe.errors.StripeError]
+      /* static member */
+      inline def generate(rawError: StripeRawErrortypeapierro): typings.stripe.mod.Stripe.errors.StripeAPIError = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(rawError.asInstanceOf[js.Any]).asInstanceOf[typings.stripe.mod.Stripe.errors.StripeAPIError]
+      /* static member */
+      inline def generate(rawError: StripeRawErrortypeauthent): typings.stripe.mod.Stripe.errors.StripeAuthenticationError = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(rawError.asInstanceOf[js.Any]).asInstanceOf[typings.stripe.mod.Stripe.errors.StripeAuthenticationError]
+      /* static member */
+      inline def generate(rawError: StripeRawErrortypecarderr): typings.stripe.mod.Stripe.errors.StripeCardError = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(rawError.asInstanceOf[js.Any]).asInstanceOf[typings.stripe.mod.Stripe.errors.StripeCardError]
+      /* static member */
+      inline def generate(rawError: StripeRawErrortypeidempot): typings.stripe.mod.Stripe.errors.StripeIdempotencyError = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(rawError.asInstanceOf[js.Any]).asInstanceOf[typings.stripe.mod.Stripe.errors.StripeIdempotencyError]
+      /* static member */
+      inline def generate(rawError: StripeRawErrortypeinvalid): typings.stripe.mod.Stripe.errors.StripeInvalidRequestError = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(rawError.asInstanceOf[js.Any]).asInstanceOf[typings.stripe.mod.Stripe.errors.StripeInvalidRequestError]
+      /* static member */
+      inline def generate(rawError: StripeRawErrortypeinvalidCharge): typings.stripe.mod.Stripe.errors.StripeInvalidGrantError = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(rawError.asInstanceOf[js.Any]).asInstanceOf[typings.stripe.mod.Stripe.errors.StripeInvalidGrantError]
+      /* static member */
+      inline def generate(rawError: StripeRawErrortyperatelim): typings.stripe.mod.Stripe.errors.StripeRateLimitError = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(rawError.asInstanceOf[js.Any]).asInstanceOf[typings.stripe.mod.Stripe.errors.StripeRateLimitError]
+    }
+    
+    /**
+      * Idempotency errors occur when an `Idempotency-Key` is re-used on a request that does not match the first request's API endpoint and parameters.
+      * @docs https://stripe.com/docs/api/idempotent_requests?lang=node
+      */
+    @JSImport("stripe", "default.errors.StripeIdempotencyError")
+    @js.native
+    open class StripeIdempotencyError ()
+      extends StObject
+         with typings.stripe.mod.Stripe.errors.StripeIdempotencyError {
+      
+      /* CompleteClass */
+      override val headers: StringDictionary[String] = js.native
+      
+      /* standard es5 */
+      /* CompleteClass */
+      var message: String = js.native
+      
+      /* standard es5 */
+      /* CompleteClass */
+      var name: String = js.native
+      
+      /* CompleteClass */
+      override val raw: Any = js.native
+      
+      /**
+        * See the "error types" section at https://stripe.com/docs/api/errors
+        */
+      /* CompleteClass */
+      override val rawType: RawErrorType = js.native
+      /* CompleteClass */
+      @JSName("rawType")
+      override val rawType_StripeIdempotencyError: idempotency_error = js.native
+      
+      /* CompleteClass */
+      override val requestId: String = js.native
+      
+      /* CompleteClass */
+      override val `type`: typings.stripe.stripeStrings.StripeError | typings.stripe.stripeStrings.StripeCardError | typings.stripe.stripeStrings.StripeInvalidRequestError | typings.stripe.stripeStrings.StripeAPIError | typings.stripe.stripeStrings.StripeAuthenticationError | typings.stripe.stripeStrings.StripePermissionError | typings.stripe.stripeStrings.StripeRateLimitError | typings.stripe.stripeStrings.StripeConnectionError | typings.stripe.stripeStrings.StripeSignatureVerificationError | typings.stripe.stripeStrings.StripeIdempotencyError | typings.stripe.stripeStrings.StripeInvalidGrantError = js.native
+      /* CompleteClass */
+      @JSName("type")
+      override val type_StripeIdempotencyError: typings.stripe.stripeStrings.StripeIdempotencyError = js.native
+    }
+    
+    /**
+      * InvalidGrantError is raised when a specified code doesn't exist, is
+      * expired, has been used, or doesn't belong to you; a refresh token doesn't
+      * exist, or doesn't belong to you; or if an API key's mode (live or test)
+      * doesn't match the mode of a code or refresh token.
+      */
+    @JSImport("stripe", "default.errors.StripeInvalidGrantError")
+    @js.native
+    open class StripeInvalidGrantError ()
+      extends StObject
+         with typings.stripe.mod.Stripe.errors.StripeInvalidGrantError {
+      
+      /* CompleteClass */
+      override val headers: StringDictionary[String] = js.native
+      
+      /* standard es5 */
+      /* CompleteClass */
+      var message: String = js.native
+      
+      /* standard es5 */
+      /* CompleteClass */
+      var name: String = js.native
+      
+      /* CompleteClass */
+      override val raw: Any = js.native
+      
+      /**
+        * See the "error types" section at https://stripe.com/docs/api/errors
+        */
+      /* CompleteClass */
+      override val rawType: RawErrorType = js.native
+      /* CompleteClass */
+      @JSName("rawType")
+      override val rawType_StripeInvalidGrantError: invalid_grant = js.native
+      
+      /* CompleteClass */
+      override val requestId: String = js.native
+      
+      /* CompleteClass */
+      override val `type`: typings.stripe.stripeStrings.StripeError | typings.stripe.stripeStrings.StripeCardError | typings.stripe.stripeStrings.StripeInvalidRequestError | typings.stripe.stripeStrings.StripeAPIError | typings.stripe.stripeStrings.StripeAuthenticationError | typings.stripe.stripeStrings.StripePermissionError | typings.stripe.stripeStrings.StripeRateLimitError | typings.stripe.stripeStrings.StripeConnectionError | typings.stripe.stripeStrings.StripeSignatureVerificationError | typings.stripe.stripeStrings.StripeIdempotencyError | typings.stripe.stripeStrings.StripeInvalidGrantError = js.native
+      /* CompleteClass */
+      @JSName("type")
+      override val type_StripeInvalidGrantError: typings.stripe.stripeStrings.StripeInvalidGrantError = js.native
+    }
+    
+    /**
+      * Invalid request errors arise when your request has invalid parameters.
+      */
+    @JSImport("stripe", "default.errors.StripeInvalidRequestError")
+    @js.native
+    open class StripeInvalidRequestError ()
+      extends StObject
+         with typings.stripe.mod.Stripe.errors.StripeInvalidRequestError {
+      
+      /* CompleteClass */
+      override val headers: StringDictionary[String] = js.native
+      
+      /* standard es5 */
+      /* CompleteClass */
+      var message: String = js.native
+      
+      /* standard es5 */
+      /* CompleteClass */
+      var name: String = js.native
+      
+      /* CompleteClass */
+      override val raw: Any = js.native
+      
+      /**
+        * See the "error types" section at https://stripe.com/docs/api/errors
+        */
+      /* CompleteClass */
+      override val rawType: RawErrorType = js.native
+      /* CompleteClass */
+      @JSName("rawType")
+      override val rawType_StripeInvalidRequestError: invalid_request_error = js.native
+      
+      /* CompleteClass */
+      override val requestId: String = js.native
+      
+      /* CompleteClass */
+      override val `type`: typings.stripe.stripeStrings.StripeError | typings.stripe.stripeStrings.StripeCardError | typings.stripe.stripeStrings.StripeInvalidRequestError | typings.stripe.stripeStrings.StripeAPIError | typings.stripe.stripeStrings.StripeAuthenticationError | typings.stripe.stripeStrings.StripePermissionError | typings.stripe.stripeStrings.StripeRateLimitError | typings.stripe.stripeStrings.StripeConnectionError | typings.stripe.stripeStrings.StripeSignatureVerificationError | typings.stripe.stripeStrings.StripeIdempotencyError | typings.stripe.stripeStrings.StripeInvalidGrantError = js.native
+      /* CompleteClass */
+      @JSName("type")
+      override val type_StripeInvalidRequestError: typings.stripe.stripeStrings.StripeInvalidRequestError = js.native
+    }
+    
+    /**
+      * Access was attempted on a resource that wasn't allowed.
+      */
+    @JSImport("stripe", "default.errors.StripePermissionError")
+    @js.native
+    open class StripePermissionError ()
+      extends StObject
+         with typings.stripe.mod.Stripe.errors.StripePermissionError {
+      
+      /* CompleteClass */
+      override val headers: StringDictionary[String] = js.native
+      
+      /* standard es5 */
+      /* CompleteClass */
+      var message: String = js.native
+      
+      /* standard es5 */
+      /* CompleteClass */
+      var name: String = js.native
+      
+      /* CompleteClass */
+      override val raw: Any = js.native
+      
+      /**
+        * See the "error types" section at https://stripe.com/docs/api/errors
+        */
+      /* CompleteClass */
+      override val rawType: RawErrorType = js.native
+      
+      /* CompleteClass */
+      override val requestId: String = js.native
+      
+      /* CompleteClass */
+      override val `type`: typings.stripe.stripeStrings.StripeError | typings.stripe.stripeStrings.StripeCardError | typings.stripe.stripeStrings.StripeInvalidRequestError | typings.stripe.stripeStrings.StripeAPIError | typings.stripe.stripeStrings.StripeAuthenticationError | typings.stripe.stripeStrings.StripePermissionError | typings.stripe.stripeStrings.StripeRateLimitError | typings.stripe.stripeStrings.StripeConnectionError | typings.stripe.stripeStrings.StripeSignatureVerificationError | typings.stripe.stripeStrings.StripeIdempotencyError | typings.stripe.stripeStrings.StripeInvalidGrantError = js.native
+      /* CompleteClass */
+      @JSName("type")
+      override val type_StripePermissionError: typings.stripe.stripeStrings.StripePermissionError = js.native
+    }
+    
+    /**
+      * Too many requests hit the API too quickly.
+      * @docs https://stripe.com/docs/rate-limits
+      */
+    @JSImport("stripe", "default.errors.StripeRateLimitError")
+    @js.native
+    open class StripeRateLimitError ()
+      extends StObject
+         with typings.stripe.mod.Stripe.errors.StripeRateLimitError {
+      
+      /* CompleteClass */
+      override val headers: StringDictionary[String] = js.native
+      
+      /* standard es5 */
+      /* CompleteClass */
+      var message: String = js.native
+      
+      /* standard es5 */
+      /* CompleteClass */
+      var name: String = js.native
+      
+      /* CompleteClass */
+      override val raw: Any = js.native
+      
+      /**
+        * See the "error types" section at https://stripe.com/docs/api/errors
+        */
+      /* CompleteClass */
+      override val rawType: RawErrorType = js.native
+      /* CompleteClass */
+      @JSName("rawType")
+      override val rawType_StripeRateLimitError: rate_limit_error = js.native
+      
+      /* CompleteClass */
+      override val requestId: String = js.native
+      
+      /* CompleteClass */
+      override val `type`: typings.stripe.stripeStrings.StripeError | typings.stripe.stripeStrings.StripeCardError | typings.stripe.stripeStrings.StripeInvalidRequestError | typings.stripe.stripeStrings.StripeAPIError | typings.stripe.stripeStrings.StripeAuthenticationError | typings.stripe.stripeStrings.StripePermissionError | typings.stripe.stripeStrings.StripeRateLimitError | typings.stripe.stripeStrings.StripeConnectionError | typings.stripe.stripeStrings.StripeSignatureVerificationError | typings.stripe.stripeStrings.StripeIdempotencyError | typings.stripe.stripeStrings.StripeInvalidGrantError = js.native
+      /* CompleteClass */
+      @JSName("type")
+      override val type_StripeRateLimitError: typings.stripe.stripeStrings.StripeRateLimitError = js.native
+    }
+    
+    /**
+      * The signature verification for a webhook failed.
+      * @docs https://stripe.com/docs/webhooks/signatures
+      */
+    @JSImport("stripe", "default.errors.StripeSignatureVerificationError")
+    @js.native
+    open class StripeSignatureVerificationError ()
+      extends StObject
+         with typings.stripe.mod.Stripe.errors.StripeSignatureVerificationError {
+      
+      /* CompleteClass */
+      override val headers: StringDictionary[String] = js.native
+      
+      /* standard es5 */
+      /* CompleteClass */
+      var message: String = js.native
+      
+      /* standard es5 */
+      /* CompleteClass */
+      var name: String = js.native
+      
+      /* CompleteClass */
+      override val raw: Any = js.native
+      
+      /**
+        * See the "error types" section at https://stripe.com/docs/api/errors
+        */
+      /* CompleteClass */
+      override val rawType: RawErrorType = js.native
+      
+      /* CompleteClass */
+      override val requestId: String = js.native
+      
+      /* CompleteClass */
+      override val `type`: typings.stripe.stripeStrings.StripeError | typings.stripe.stripeStrings.StripeCardError | typings.stripe.stripeStrings.StripeInvalidRequestError | typings.stripe.stripeStrings.StripeAPIError | typings.stripe.stripeStrings.StripeAuthenticationError | typings.stripe.stripeStrings.StripePermissionError | typings.stripe.stripeStrings.StripeRateLimitError | typings.stripe.stripeStrings.StripeConnectionError | typings.stripe.stripeStrings.StripeSignatureVerificationError | typings.stripe.stripeStrings.StripeIdempotencyError | typings.stripe.stripeStrings.StripeInvalidGrantError = js.native
+      /* CompleteClass */
+      @JSName("type")
+      override val type_StripeSignatureVerificationError: typings.stripe.stripeStrings.StripeSignatureVerificationError = js.native
+    }
+    
+    inline def generate(rawError: StripeRawErrortypeRawErro): typings.stripe.mod.Stripe.errors.StripeError = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(rawError.asInstanceOf[js.Any]).asInstanceOf[typings.stripe.mod.Stripe.errors.StripeError]
+    inline def generate(rawError: StripeRawErrortypeapierro): typings.stripe.mod.Stripe.errors.StripeAPIError = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(rawError.asInstanceOf[js.Any]).asInstanceOf[typings.stripe.mod.Stripe.errors.StripeAPIError]
+    inline def generate(rawError: StripeRawErrortypeauthent): typings.stripe.mod.Stripe.errors.StripeAuthenticationError = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(rawError.asInstanceOf[js.Any]).asInstanceOf[typings.stripe.mod.Stripe.errors.StripeAuthenticationError]
+    inline def generate(rawError: StripeRawErrortypecarderr): typings.stripe.mod.Stripe.errors.StripeCardError = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(rawError.asInstanceOf[js.Any]).asInstanceOf[typings.stripe.mod.Stripe.errors.StripeCardError]
+    inline def generate(rawError: StripeRawErrortypeidempot): typings.stripe.mod.Stripe.errors.StripeIdempotencyError = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(rawError.asInstanceOf[js.Any]).asInstanceOf[typings.stripe.mod.Stripe.errors.StripeIdempotencyError]
+    inline def generate(rawError: StripeRawErrortypeinvalid): typings.stripe.mod.Stripe.errors.StripeInvalidRequestError = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(rawError.asInstanceOf[js.Any]).asInstanceOf[typings.stripe.mod.Stripe.errors.StripeInvalidRequestError]
+    inline def generate(rawError: StripeRawErrortypeinvalidCharge): typings.stripe.mod.Stripe.errors.StripeInvalidGrantError = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(rawError.asInstanceOf[js.Any]).asInstanceOf[typings.stripe.mod.Stripe.errors.StripeInvalidGrantError]
+    inline def generate(rawError: StripeRawErrortyperatelim): typings.stripe.mod.Stripe.errors.StripeRateLimitError = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(rawError.asInstanceOf[js.Any]).asInstanceOf[typings.stripe.mod.Stripe.errors.StripeRateLimitError]
+  }
 }

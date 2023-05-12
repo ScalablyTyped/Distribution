@@ -12,7 +12,7 @@ open class Redirect[TState] protected ()
   def this(props: RouteComponentProps[RedirectProps[TState]]) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: RouteComponentProps[RedirectProps[TState]], context: Any) = this()
 }

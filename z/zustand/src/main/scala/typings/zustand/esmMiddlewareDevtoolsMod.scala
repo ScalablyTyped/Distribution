@@ -36,6 +36,15 @@ object esmMiddlewareDevtoolsMod {
   
   type ActionCreator[A, P /* <: js.Array[Any] */] = js.Function1[/* args */ P, A]
   
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+    * TS definition: {{{
+    T extends U ? T : U
+    }}}
+    */
+  type Cast[T, U] = T
+  
   trait Config
     extends StObject
        with EnhancerOptions {
@@ -65,6 +74,8 @@ object esmMiddlewareDevtoolsMod {
     var anonymousActionType: js.UndefOr[String] = js.undefined
     
     var enabled: js.UndefOr[Boolean] = js.undefined
+    
+    var store: js.UndefOr[String] = js.undefined
   }
   object DevtoolsOptions {
     
@@ -83,6 +94,10 @@ object esmMiddlewareDevtoolsMod {
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      
+      inline def setStore(value: String): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      
+      inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     }
   }
   
@@ -274,7 +289,7 @@ object esmMiddlewareDevtoolsMod {
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
     * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
-    T extends [] ? [undefined, undefined] : T extends [unknown] ? [a0: ...T, a1: undefined] : T extends [unknown | undefined] ? [a0: ...T, a1: undefined] : T extends [unknown, unknown] ? T : T extends [unknown, unknown | undefined] ? T : T extends [unknown | undefined, unknown | undefined] ? T : T extends [infer A0, infer A1, ...std.Array<unknown>] ? [A0, A1] : T extends [infer A0, infer A1 | undefined, ...std.Array<unknown>] ? [A0, A1 | undefined] : T extends [infer A0 | undefined, infer A1 | undefined, ...std.Array<unknown>] ? [A0 | undefined, A1 | undefined] : never
+    T extends {  length :0} ? [undefined, undefined] : T extends {  length :1} ? [a0: ...zustand.zustand/esm/middleware/devtools.Cast<T, std.Array<unknown>>, a1: undefined] : T extends {  length :0 | 1} ? [a0: ...zustand.zustand/esm/middleware/devtools.Cast<T, std.Array<unknown>>, a1: undefined] : T extends {  length :2} ? T : T extends {  length :1 | 2} ? T : T extends {  length :0 | 1 | 2} ? T : T extends [infer A0, infer A1, ...std.Array<unknown>] ? [A0, A1] : T extends [infer A0, infer A1 | undefined, ...std.Array<unknown>] ? [A0, A1 | undefined] : T extends [infer A0 | undefined, infer A1 | undefined, ...std.Array<unknown>] ? [A0 | undefined, A1 | undefined] : never
     }}}
     */
   type TakeTwo[T] = js.Tuple2[Unit, Unit]

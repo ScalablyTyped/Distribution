@@ -22,6 +22,11 @@ trait RoomSummary extends StObject {
   var id: js.UndefOr[RoomID] = js.undefined
   
   /**
+    * List of logging-configuration identifiers attached to the room.
+    */
+  var loggingConfigurationIdentifiers: js.UndefOr[LoggingConfigurationIdentifierList] = js.undefined
+  
+  /**
     * Configuration information for optional review of messages.
     */
   var messageReviewHandler: js.UndefOr[MessageReviewHandler] = js.undefined
@@ -32,7 +37,7 @@ trait RoomSummary extends StObject {
   var name: js.UndefOr[RoomName] = js.undefined
   
   /**
-    * Tags attached to the resource. See Tagging AWS Resources for details, including restrictions that apply to tags and "Tag naming limits and requirements"; Amazon IVS Chat has no constraints beyond what is documented there.
+    * Tags attached to the resource. Array of maps, each of the form string:string (key:value). See Tagging AWS Resources for details, including restrictions that apply to tags and "Tag naming limits and requirements"; Amazon IVS Chat has no constraints beyond what is documented there.
     */
   var tags: js.UndefOr[Tags] = js.undefined
   
@@ -62,6 +67,12 @@ object RoomSummary {
     inline def setId(value: RoomID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setLoggingConfigurationIdentifiers(value: LoggingConfigurationIdentifierList): Self = StObject.set(x, "loggingConfigurationIdentifiers", value.asInstanceOf[js.Any])
+    
+    inline def setLoggingConfigurationIdentifiersUndefined: Self = StObject.set(x, "loggingConfigurationIdentifiers", js.undefined)
+    
+    inline def setLoggingConfigurationIdentifiersVarargs(value: LoggingConfigurationIdentifier*): Self = StObject.set(x, "loggingConfigurationIdentifiers", js.Array(value*))
     
     inline def setMessageReviewHandler(value: MessageReviewHandler): Self = StObject.set(x, "messageReviewHandler", value.asInstanceOf[js.Any])
     

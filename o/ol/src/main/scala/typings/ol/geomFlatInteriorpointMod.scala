@@ -25,8 +25,8 @@ object geomFlatInteriorpointMod {
     stride: Double,
     flatCenters: js.Array[Double],
     flatCentersOffset: Double,
-    opt_dest: js.Array[Double]
-  ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInteriorPointOfArray")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], ends.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], flatCenters.asInstanceOf[js.Any], flatCentersOffset.asInstanceOf[js.Any], opt_dest.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    dest: js.Array[Double]
+  ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInteriorPointOfArray")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], ends.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], flatCenters.asInstanceOf[js.Any], flatCentersOffset.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   inline def getInteriorPointsOfMultiArray(
     flatCoordinates: js.Array[Double],

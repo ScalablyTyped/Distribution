@@ -8,7 +8,10 @@ trait ServicePrincipal
   extends StObject
      with DirectoryObject {
   
-  // true if the service principal account is enabled; otherwise, false. Supports $filter (eq, ne, not, in).
+  /**
+    * true if the service principal account is enabled; otherwise, false. If set to false, then no users will be able to sign
+    * in to this app, even if they are assigned to it. Supports $filter (eq, ne, not, in).
+    */
   var accountEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
@@ -35,6 +38,9 @@ trait ServicePrincipal
     * startsWith).
     */
   var appId: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  // The appManagementPolicy applied to this application.
+  var appManagementPolicies: js.UndefOr[NullableOption[js.Array[AppManagementPolicy]]] = js.undefined
   
   /**
     * Contains the tenant id where the application is registered. This is applicable only to service principals backed by
@@ -98,8 +104,8 @@ trait ServicePrincipal
   var endpoints: js.UndefOr[NullableOption[js.Array[Endpoint]]] = js.undefined
   
   /**
-    * Federated identities for a specific type of service principal - managed identity. Supports $expand and $filter (eq when
-    * counting empty collections).
+    * Federated identities for a specific type of service principal - managed identity. Supports $expand and $filter (/$count
+    * eq 0, /$count ne 0).
     */
   var federatedIdentityCredentials: js.UndefOr[NullableOption[js.Array[FederatedIdentityCredential]]] = js.undefined
   
@@ -165,12 +171,16 @@ trait ServicePrincipal
     */
   var oauth2PermissionScopes: js.UndefOr[js.Array[PermissionScope]] = js.undefined
   
-  // Directory objects that are owned by this service principal. Read-only. Nullable. Supports $expand.
+  /**
+    * Directory objects that are owned by this service principal. Read-only. Nullable. Supports $expand and $filter (/$count
+    * eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
+    */
   var ownedObjects: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
   /**
     * Directory objects that are owners of this servicePrincipal. The owners are a set of non-admin users or
-    * servicePrincipals who are allowed to modify this object. Read-only. Nullable. Supports $expand.
+    * servicePrincipals who are allowed to modify this object. Read-only. Nullable. Supports $expand and $filter (/$count eq
+    * 0, /$count ne 0, /$count eq 1, /$count ne 1).
     */
   var owners: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
@@ -184,7 +194,11 @@ trait ServicePrincipal
     */
   var preferredSingleSignOnMode: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Reserved for internal use only. Do not write or otherwise rely on this property. May be removed in future versions.
+  /**
+    * This property can be used on SAML applications (apps that have preferredSingleSignOnMode set to saml) to control which
+    * certificate is used to sign the SAML responses. For applications that are not SAML, do not write or otherwise rely on
+    * this property.
+    */
   var preferredTokenSigningKeyThumbprint: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
@@ -228,16 +242,17 @@ trait ServicePrincipal
   
   /**
     * Specifies the Microsoft accounts that are supported for the current application. Read-only. Supported values
-    * are:AzureADMyOrg: Users with a Microsoft work or school account in my organization’s Azure AD tenant
-    * (single-tenant).AzureADMultipleOrgs: Users with a Microsoft work or school account in any organization’s Azure AD
+    * are:AzureADMyOrg: Users with a Microsoft work or school account in my organization's Azure AD tenant
+    * (single-tenant).AzureADMultipleOrgs: Users with a Microsoft work or school account in any organization's Azure AD
     * tenant (multi-tenant).AzureADandPersonalMicrosoftAccount: Users with a personal Microsoft account, or a work or school
-    * account in any organization’s Azure AD tenant.PersonalMicrosoftAccount: Users with a personal Microsoft account only.
+    * account in any organization's Azure AD tenant.PersonalMicrosoftAccount: Users with a personal Microsoft account only.
     */
   var signInAudience: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
-    * Custom strings that can be used to categorize and identify the service principal. Not nullable. Supports $filter (eq,
-    * not, ge, le, startsWith).
+    * Custom strings that can be used to categorize and identify the service principal. Not nullable. The value is the union
+    * of strings set here and on the associated application entity's tags property.Supports $filter (eq, not, ge, le,
+    * startsWith).
     */
   var tags: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -304,6 +319,14 @@ object ServicePrincipal {
     inline def setAppIdNull: Self = StObject.set(x, "appId", null)
     
     inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
+    
+    inline def setAppManagementPolicies(value: NullableOption[js.Array[AppManagementPolicy]]): Self = StObject.set(x, "appManagementPolicies", value.asInstanceOf[js.Any])
+    
+    inline def setAppManagementPoliciesNull: Self = StObject.set(x, "appManagementPolicies", null)
+    
+    inline def setAppManagementPoliciesUndefined: Self = StObject.set(x, "appManagementPolicies", js.undefined)
+    
+    inline def setAppManagementPoliciesVarargs(value: AppManagementPolicy*): Self = StObject.set(x, "appManagementPolicies", js.Array(value*))
     
     inline def setAppOwnerOrganizationId(value: NullableOption[String]): Self = StObject.set(x, "appOwnerOrganizationId", value.asInstanceOf[js.Any])
     

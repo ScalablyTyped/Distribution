@@ -5,28 +5,16 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PureAction[TContext, TEvent /* <: EventObject */]
+@js.native
+trait PureAction[TContext, TExpressionEvent /* <: EventObject */, TEvent /* <: EventObject */]
   extends StObject
-     with ActionObject[TContext, TEvent] {
+     with ActionObject[TContext, TExpressionEvent, TEvent, BaseActionObject]
+     with _BaseAction[TContext, TExpressionEvent, Any, TEvent] {
   
-  def get(context: TContext, event: TEvent): js.UndefOr[SingleOrArray[ActionObject[TContext, TEvent]]]
+  def get(context: TContext, event: TEvent): js.UndefOr[
+    SingleOrArray[(ActionObject[TContext, TEvent, TEvent, BaseActionObject]) | String]
+  ] = js.native
   
   @JSName("type")
-  var type_PureAction: Pure
-}
-object PureAction {
-  
-  inline def apply[TContext, TEvent /* <: EventObject */](get: (TContext, TEvent) => js.UndefOr[SingleOrArray[ActionObject[TContext, TEvent]]], `type`: Pure): PureAction[TContext, TEvent] = {
-    val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get))
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[PureAction[TContext, TEvent]]
-  }
-  
-  @scala.inline
-  implicit open class MutableBuilder[Self <: PureAction[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (PureAction[TContext, TEvent])) extends AnyVal {
-    
-    inline def setGet(value: (TContext, TEvent) => js.UndefOr[SingleOrArray[ActionObject[TContext, TEvent]]]): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
-    
-    inline def setType(value: Pure): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-  }
+  var type_PureAction: Pure = js.native
 }

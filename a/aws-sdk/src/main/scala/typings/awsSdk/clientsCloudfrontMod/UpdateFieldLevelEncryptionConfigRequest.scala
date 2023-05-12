@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateFieldLevelEncryptionConfigRequest extends StObject {
   
   /**
-    * Request to update a field-level encryption configuration. 
+    * Request to update a field-level encryption configuration.
     */
   var FieldLevelEncryptionConfig: typings.awsSdk.clientsCloudfrontMod.FieldLevelEncryptionConfig
   

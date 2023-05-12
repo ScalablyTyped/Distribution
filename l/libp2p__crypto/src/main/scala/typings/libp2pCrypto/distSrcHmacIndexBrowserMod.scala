@@ -1,6 +1,6 @@
 package typings.libp2pCrypto
 
-import typings.libp2pCrypto.anon.Length
+import typings.libp2pCrypto.anon.Digest
 import typings.libp2pCrypto.libp2pCryptoStrings.SHA1
 import typings.libp2pCrypto.libp2pCryptoStrings.SHA256
 import typings.libp2pCrypto.libp2pCryptoStrings.SHA512
@@ -14,5 +14,5 @@ object distSrcHmacIndexBrowserMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def create(hashType: SHA1 | SHA256 | SHA512, secret: js.typedarray.Uint8Array): js.Promise[Length] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(hashType.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Length]]
+  inline def create(hashType: SHA1 | SHA256 | SHA512, secret: js.typedarray.Uint8Array): js.Promise[Digest] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(hashType.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Digest]]
 }

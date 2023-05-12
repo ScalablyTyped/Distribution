@@ -1,6 +1,5 @@
 package typings.nginstackDatasource
 
-import typings.nginstackDatasource.libDataSourceFiltersMod.ModelDef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -161,51 +160,6 @@ object anon {
     implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Boolean): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setExcludeFieldNames(value: String): Self = StObject.set(x, "excludeFieldNames", value.asInstanceOf[js.Any])
-      
-      inline def setIncludeFieldNames(value: String): Self = StObject.set(x, "includeFieldNames", value.asInstanceOf[js.Any])
-      
-      inline def setOnlyIncludedFieldNames(value: Boolean): Self = StObject.set(x, "onlyIncludedFieldNames", value.asInstanceOf[js.Any])
-      
-      inline def setOnlyVisible(value: Boolean): Self = StObject.set(x, "onlyVisible", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait ClassDef extends StObject {
-    
-    var children: Boolean
-    
-    var classDef: ModelDef
-    
-    var excludeFieldNames: String
-    
-    var includeFieldNames: String
-    
-    var onlyIncludedFieldNames: Boolean
-    
-    var onlyVisible: Boolean
-  }
-  object ClassDef {
-    
-    inline def apply(
-      children: Boolean,
-      classDef: ModelDef,
-      excludeFieldNames: String,
-      includeFieldNames: String,
-      onlyIncludedFieldNames: Boolean,
-      onlyVisible: Boolean
-    ): ClassDef = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], classDef = classDef.asInstanceOf[js.Any], excludeFieldNames = excludeFieldNames.asInstanceOf[js.Any], includeFieldNames = includeFieldNames.asInstanceOf[js.Any], onlyIncludedFieldNames = onlyIncludedFieldNames.asInstanceOf[js.Any], onlyVisible = onlyVisible.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ClassDef]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: ClassDef] (val x: Self) extends AnyVal {
-      
-      inline def setChildren(value: Boolean): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setClassDef(value: ModelDef): Self = StObject.set(x, "classDef", value.asInstanceOf[js.Any])
       
       inline def setExcludeFieldNames(value: String): Self = StObject.set(x, "excludeFieldNames", value.asInstanceOf[js.Any])
       

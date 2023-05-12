@@ -7,11 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ContentApplicationjsonRepositoryselectionTotalcount extends StObject {
   
   var content: ApplicationjsonRepositoryselectionTotalcount
+  
+  var headers: LinkString
 }
 object ContentApplicationjsonRepositoryselectionTotalcount {
   
-  inline def apply(content: ApplicationjsonRepositoryselectionTotalcount): ContentApplicationjsonRepositoryselectionTotalcount = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+  inline def apply(content: ApplicationjsonRepositoryselectionTotalcount, headers: LinkString): ContentApplicationjsonRepositoryselectionTotalcount = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentApplicationjsonRepositoryselectionTotalcount]
   }
   
@@ -19,5 +21,7 @@ object ContentApplicationjsonRepositoryselectionTotalcount {
   implicit open class MutableBuilder[Self <: ContentApplicationjsonRepositoryselectionTotalcount] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonRepositoryselectionTotalcount): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setHeaders(value: LinkString): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
   }
 }

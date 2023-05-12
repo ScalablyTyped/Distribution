@@ -15,7 +15,7 @@ open class Component[P, S, SS] protected ()
   def this(props: P) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: P, context: Any) = this()
   
@@ -32,7 +32,7 @@ open class Component[P, S, SS] protected ()
     * declare context: React.ContextType<typeof MyContext>
     * ```
     *
-    * @see https://reactjs.org/docs/context.html
+    * @see https://react.dev/reference/react/Component#context
     */
   var context: Any = js.native
   
@@ -43,7 +43,7 @@ open class Component[P, S, SS] protected ()
   
   /**
     * @deprecated
-    * https://reactjs.org/docs/refs-and-the-dom.html#legacy-api-string-refs
+    * https://legacy.reactjs.org/docs/refs-and-the-dom.html#legacy-api-string-refs
     */
   var refs: StringDictionary[ReactInstance] = js.native
   
@@ -89,7 +89,7 @@ object Component {
     * }
     * ```
     *
-    * @see https://reactjs.org/docs/context.html#classcontexttype
+    * @see https://react.dev/reference/react/Component#static-contexttype
     */
   /* static member */
   @JSImport("react", "Component.contextType")

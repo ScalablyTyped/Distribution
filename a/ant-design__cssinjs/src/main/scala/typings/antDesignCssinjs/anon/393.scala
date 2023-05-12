@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.FontVariantNumeric
+import typings.csstype.mod.Property.BorderLeftColor
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `393` extends StObject {
   
   var value: js.UndefOr[
-    FontVariantNumeric | (js.Array[
+    BorderLeftColor | (js.Array[
       (Extract[
-        js.UndefOr[FontVariantNumeric | js.Array[NonNullable[js.UndefOr[FontVariantNumeric]]]], 
+        js.UndefOr[BorderLeftColor | js.Array[NonNullable[js.UndefOr[BorderLeftColor]]]], 
         String
-      ]) | NonNullable[js.UndefOr[FontVariantNumeric]]
+      ]) | NonNullable[js.UndefOr[BorderLeftColor]]
     ])
   ] = js.native
 }

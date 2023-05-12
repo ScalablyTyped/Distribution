@@ -1,0 +1,121 @@
+package typings.storybookTheming.distCreateC2b2ce6dMod.DataType
+
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._AccentColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BackgroundColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Border
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderBlock
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderBlockColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderBlockEnd
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderBlockEndColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderBlockStart
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderBlockStartColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderBottom
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderBottomColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderInline
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderInlineColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderInlineEnd
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderInlineEndColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderInlineStart
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderInlineStartColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderLeft
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderLeftColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderRight
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderRightColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderTop
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderTopColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Caret
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._CaretColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ColumnRule
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ColumnRuleColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._FloodColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._LightingColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MozBorderBottomColors
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MozBorderLeftColors
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MozBorderRightColors
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MozBorderTopColors
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MsScrollbar3dlightColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MsScrollbarArrowColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MsScrollbarBaseColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MsScrollbarDarkshadowColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MsScrollbarFaceColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MsScrollbarHighlightColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MsScrollbarShadowColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MsScrollbarTrackColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Outline
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._OutlineColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._StopColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._TextDecoration
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._TextDecorationColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._TextEmphasis
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._TextEmphasisColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._WebkitBorderBefore
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._WebkitBorderBeforeColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._WebkitTapHighlightColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._WebkitTextFillColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._WebkitTextStroke
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._WebkitTextStrokeColor
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait _Color
+  extends StObject
+     with _AccentColor
+     with _BackgroundColor
+     with _Border[Any]
+     with _BorderBlock[Any]
+     with _BorderBlockColor
+     with _BorderBlockEnd[Any]
+     with _BorderBlockEndColor
+     with _BorderBlockStart[Any]
+     with _BorderBlockStartColor
+     with _BorderBottom[Any]
+     with _BorderBottomColor
+     with _BorderColor
+     with _BorderInline[Any]
+     with _BorderInlineColor
+     with _BorderInlineEnd[Any]
+     with _BorderInlineEndColor
+     with _BorderInlineStart[Any]
+     with _BorderInlineStartColor
+     with _BorderLeft[Any]
+     with _BorderLeftColor
+     with _BorderRight[Any]
+     with _BorderRightColor
+     with _BorderTop[Any]
+     with _BorderTopColor
+     with _Caret
+     with _CaretColor
+     with typings.storybookTheming.distCreateC2b2ce6dMod.Property._Color
+     with _ColumnRule[Any]
+     with _ColumnRuleColor
+     with _FinalBgLayer[Any]
+     with _FloodColor
+     with _LightingColor
+     with _MozBorderBottomColors
+     with _MozBorderLeftColors
+     with _MozBorderRightColors
+     with _MozBorderTopColors
+     with _MsScrollbar3dlightColor
+     with _MsScrollbarArrowColor
+     with _MsScrollbarBaseColor
+     with _MsScrollbarDarkshadowColor
+     with _MsScrollbarFaceColor
+     with _MsScrollbarHighlightColor
+     with _MsScrollbarShadowColor
+     with _MsScrollbarTrackColor
+     with _Outline[Any]
+     with _OutlineColor
+     with _Paint
+     with _StopColor
+     with _TextDecoration[Any]
+     with _TextDecorationColor
+     with _TextEmphasis
+     with _TextEmphasisColor
+     with _WebkitBorderBefore[Any]
+     with _WebkitBorderBeforeColor
+     with _WebkitTapHighlightColor
+     with _WebkitTextFillColor
+     with _WebkitTextStroke[Any]
+     with _WebkitTextStrokeColor

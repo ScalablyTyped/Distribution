@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class InlayHintLabelPart protected ()
   extends typings.vscode.mod.InlayHintLabelPart {
   /**
-    * Creates a new inlay hint label part.
-    *
-    * @param value The value of the part.
-    */
+  		 * Creates a new inlay hint label part.
+  		 *
+  		 * @param value The value of the part.
+  		 */
   def this(value: String) = this()
 }

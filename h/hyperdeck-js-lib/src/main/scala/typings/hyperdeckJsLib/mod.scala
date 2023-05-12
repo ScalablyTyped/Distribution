@@ -435,7 +435,7 @@ object mod {
       * @return The promise which will resolve/reject when a response has been received
       *         (or connection lost).
       */
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def makeRequest[T](command: String): js.Promise[Response[T]] = js.native
     
     /**

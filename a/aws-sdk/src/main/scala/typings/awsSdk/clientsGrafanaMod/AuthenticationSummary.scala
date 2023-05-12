@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AuthenticationSummary extends StObject {
   
   /**
-    * Specifies whether the workspace uses SAML, Amazon Web Services SSO, or both methods for user authentication.
+    * Specifies whether the workspace uses SAML, IAM Identity Center, or both methods for user authentication.
     */
   var providers: AuthenticationProviders
   

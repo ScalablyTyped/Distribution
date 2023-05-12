@@ -32,10 +32,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("hawk", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
-  
   object client {
     
     @JSImport("hawk", "client")
@@ -127,8 +123,6 @@ object mod {
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("header")(credentials.asInstanceOf[js.Any], artifacts.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
-  inline def setTimeFunction(fn: js.Function0[Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTimeFunction")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
   object uri {
     
     @JSImport("hawk", "uri")
@@ -181,6 +175,8 @@ object mod {
     inline def parseRequest(req: RequestOptions, options: ParseRequestOptions): CustomRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("parseRequest")(req.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CustomRequest]
     inline def parseRequest(req: typings.node.httpsMod.RequestOptions): CustomRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRequest")(req.asInstanceOf[js.Any]).asInstanceOf[CustomRequest]
     inline def parseRequest(req: typings.node.httpsMod.RequestOptions, options: ParseRequestOptions): CustomRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("parseRequest")(req.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CustomRequest]
+    
+    inline def setTimeFunction(fn: js.Function0[Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTimeFunction")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def unauthorized(): Boom[Any] & MissingAuth = ^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")().asInstanceOf[Boom[Any] & MissingAuth]
     inline def unauthorized(message: String): Boom[Any] & MissingAuth = ^.asInstanceOf[js.Dynamic].applyDynamic("unauthorized")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Any] & MissingAuth]

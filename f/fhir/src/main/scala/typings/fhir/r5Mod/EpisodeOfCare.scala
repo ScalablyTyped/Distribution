@@ -29,7 +29,13 @@ trait EpisodeOfCare
   var careManager: js.UndefOr[Reference] = js.undefined
   
   /**
-    * The list of diagnosis relevant to this episode of care.
+    * The list of practitioners that may be facilitating this episode of care for specific purposes.
+    */
+  var careTeam: js.UndefOr[js.Array[Reference]] = js.undefined
+  
+  /**
+    * The diagnosis communicates what medical conditions were actually addressed during the episode of care.  If a diagnosis was provided as a reason, and was treated during the episode of care, it may be listed in both EpisodeOfCare.reason and EpisodeOfCare.diagnosis.
+    * Diagnoses related to billing can be documented on the Account resources which supports ranking for the purpose of reimbursement.
     */
   var diagnosis: js.UndefOr[js.Array[EpisodeOfCareDiagnosis]] = js.undefined
   
@@ -39,7 +45,7 @@ trait EpisodeOfCare
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
-    * The organization that has assumed the specific responsibilities for the specified duration.
+    * If multiple organizations are involved in care delivery, the care teams from those organizations would be represented in EpisodeOfCare.team, while the primary organization managing the care would be listed in EpisodeOfCare.managingOrganization.   Other organizations may have their own EpisodeOfCare for tracking their activities.
     */
   var managingOrganization: js.UndefOr[Reference] = js.undefined
   
@@ -52,6 +58,14 @@ trait EpisodeOfCare
     * The interval during which the managing organization assumes the defined responsibility.
     */
   var period: js.UndefOr[Period] = js.undefined
+  
+  /**
+    * The reason communicates what medical problem the patient has that should be addressed during the episode of care.  This reason could be patient reported complaint, a clinical indication that was determined in a previous encounter or episode of care, or some planned care such as an immunization recommendation.  In the case where you have a primary reason, but are expecting to also address other problems, you can list the primary reason with a use code of 'Chief Complaint', while the other problems being addressed would have a use code of 'Reason for Visit'.
+    * Examples:
+    *  * pregnancy would use HealthcareService or a coding as the reason
+    *  * patient home monitoring could use Condition as the reason
+    */
+  var reason: js.UndefOr[js.Array[EpisodeOfCareReason]] = js.undefined
   
   /**
     * Referral Request(s) that are fulfilled by this EpisodeOfCare, incoming referrals.
@@ -71,11 +85,6 @@ trait EpisodeOfCare
     * The history of statuses that the EpisodeOfCare has been through (without requiring processing the history of the resource).
     */
   var statusHistory: js.UndefOr[js.Array[EpisodeOfCareStatusHistory]] = js.undefined
-  
-  /**
-    * The list of practitioners that may be facilitating this episode of care for specific purposes.
-    */
-  var team: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * The type can be very important in processing as this could be used in determining if the EpisodeOfCare is relevant to specific government reporting, or other types of classifications.
@@ -105,6 +114,12 @@ object EpisodeOfCare {
     
     inline def setCareManagerUndefined: Self = StObject.set(x, "careManager", js.undefined)
     
+    inline def setCareTeam(value: js.Array[Reference]): Self = StObject.set(x, "careTeam", value.asInstanceOf[js.Any])
+    
+    inline def setCareTeamUndefined: Self = StObject.set(x, "careTeam", js.undefined)
+    
+    inline def setCareTeamVarargs(value: Reference*): Self = StObject.set(x, "careTeam", js.Array(value*))
+    
     inline def setDiagnosis(value: js.Array[EpisodeOfCareDiagnosis]): Self = StObject.set(x, "diagnosis", value.asInstanceOf[js.Any])
     
     inline def setDiagnosisUndefined: Self = StObject.set(x, "diagnosis", js.undefined)
@@ -127,6 +142,12 @@ object EpisodeOfCare {
     
     inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
+    inline def setReason(value: js.Array[EpisodeOfCareReason]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    
+    inline def setReasonVarargs(value: EpisodeOfCareReason*): Self = StObject.set(x, "reason", js.Array(value*))
+    
     inline def setReferralRequest(value: js.Array[Reference]): Self = StObject.set(x, "referralRequest", value.asInstanceOf[js.Any])
     
     inline def setReferralRequestUndefined: Self = StObject.set(x, "referralRequest", js.undefined)
@@ -142,12 +163,6 @@ object EpisodeOfCare {
     inline def setStatusHistoryUndefined: Self = StObject.set(x, "statusHistory", js.undefined)
     
     inline def setStatusHistoryVarargs(value: EpisodeOfCareStatusHistory*): Self = StObject.set(x, "statusHistory", js.Array(value*))
-    
-    inline def setTeam(value: js.Array[Reference]): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
-    
-    inline def setTeamUndefined: Self = StObject.set(x, "team", js.undefined)
-    
-    inline def setTeamVarargs(value: Reference*): Self = StObject.set(x, "team", js.Array(value*))
     
     inline def setType(value: js.Array[CodeableConcept]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

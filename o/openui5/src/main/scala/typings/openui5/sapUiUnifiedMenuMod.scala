@@ -1,6 +1,6 @@
 package typings.openui5
 
-import typings.openui5.anon.`5`
+import typings.openui5.anon.`7`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -263,6 +263,8 @@ object sapUiUnifiedMenuMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:itemSelect itemSelect} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -271,7 +273,7 @@ object sapUiUnifiedMenuMod {
     def fireItemSelect(/**
       * Parameters to pass along with the event
       */
-    mParameters: `5`): this.type = js.native
+    mParameters: `7`): this.type = js.native
     
     /**
       * @deprecated (since 1.27.0) - replaced by `ariaLabelledBy` association

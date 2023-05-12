@@ -8,6 +8,11 @@ import typings.std.URL
 import typings.std.XMLHttpRequestBodyInit
 import typings.std.XMLHttpRequestResponseType
 import typings.std.XMLHttpRequestUpload
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
+import typings.std.stdInts.`4`
 import typings.std.stdStrings.readystatechange
 import typings.xhrMock.libTypesMod.ErrorCallbackEvent
 import typings.xhrMock.libTypesMod.MockFunction
@@ -117,15 +122,15 @@ object libMockXMLHttpRequestMod {
   trait MockXMLHttpRequest
     extends typings.xhrMock.libMockXMLHttpRequestEventTargetMod.default {
     
-    val DONE: Double | ReadyState = js.native
+    val DONE: `4` | ReadyState = js.native
     
-    val HEADERS_RECEIVED: Double | ReadyState = js.native
+    val HEADERS_RECEIVED: `2` | ReadyState = js.native
     
-    val LOADING: Double | ReadyState = js.native
+    val LOADING: `3` | ReadyState = js.native
     
-    val OPENED: Double | ReadyState = js.native
+    val OPENED: `1` | ReadyState = js.native
     
-    val UNSENT: Double | ReadyState = js.native
+    val UNSENT: `0` | ReadyState = js.native
     
     /* private */ var _timeout: Any = js.native
     

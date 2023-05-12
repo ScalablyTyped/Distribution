@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetParametersPathFilesha extends StObject {
   
   /**
-    * The `content` in the response will always be Base64 encoded.
+    * Get a blob
+    * @description The `content` in the response will always be Base64 encoded.
     *
     * _Note_: This API supports blobs up to 100 megabytes in size.
     */

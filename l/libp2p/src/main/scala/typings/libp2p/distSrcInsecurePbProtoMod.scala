@@ -1,5 +1,7 @@
 package typings.libp2p
 
+import typings.libp2p.anon.PartialExchange
+import typings.libp2p.anon.PartialPublicKey
 import typings.protonsRuntime.distSrcCodecMod.Codec
 import typings.uint8arraylist.mod.Uint8ArrayList
 import org.scalablytyped.runtime.StObject
@@ -30,7 +32,7 @@ object distSrcInsecurePbProtoMod {
     inline def decode(buf: js.typedarray.Uint8Array): Exchange = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[Exchange]
     inline def decode(buf: Uint8ArrayList): Exchange = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[Exchange]
     
-    inline def encode(obj: Exchange): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def encode(obj: PartialExchange): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     @scala.inline
     implicit open class MutableBuilder[Self <: Exchange] (val x: Self) extends AnyVal {
@@ -103,7 +105,7 @@ object distSrcInsecurePbProtoMod {
     inline def decode(buf: js.typedarray.Uint8Array): PublicKey = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[PublicKey]
     inline def decode(buf: Uint8ArrayList): PublicKey = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[PublicKey]
     
-    inline def encode(obj: PublicKey): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def encode(obj: PartialPublicKey): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     @scala.inline
     implicit open class MutableBuilder[Self <: PublicKey] (val x: Self) extends AnyVal {

@@ -1,8 +1,8 @@
 package typings.nivoPie
 
-import typings.nivoPie.distTypesHooksMod.MayHaveLabel
 import typings.nivoPie.distTypesTypesMod.ComputedDatum
 import typings.nivoPie.distTypesTypesMod.DatumId
+import typings.nivoPie.distTypesTypesMod.MayHaveLabel
 import typings.nivoPie.nivoPieStrings.arc
 import typings.nivoPie.nivoPieStrings.fill
 import typings.react.mod.Dispatch

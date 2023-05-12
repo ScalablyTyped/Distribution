@@ -11,14 +11,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Interface for the event context.
   * In the API documentation, this is sometimes referred to as the executionContext.
-  * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/clientapi-execution-context External Link: Client API execution context}
-  * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/execution-context External Link: Execution context (Client API reference)}
+  * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/clientapi-execution-context?tabs=pass-execution-context-legacy External Link: Client API execution context}
+  * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/execution-context External Link: Execution context (Client API reference)}
   */
 trait EventContext extends StObject {
   
   /**
     * Gets the Xrm context.
-    * @returns The Xrm context.
+    * @returns The {@link GlobalContext Xrm context}
     */
   def getContext(): GlobalContext
   
@@ -35,7 +35,7 @@ trait EventContext extends StObject {
   def getEventSource(): typings.xrm.Xrm.Attributes.Attribute[Any] | Control | Entity
   
   /**
-    * Gets a reference to the currnet form context
+    * Gets a reference to the current form context
     * @returns The {@link FormContext form context}
     */
   def getFormContext(): FormContext
@@ -45,7 +45,7 @@ trait EventContext extends StObject {
     * @param T Generic type parameter.
     * @param key The key.
     * @returns The shared variable.
-    * @desc Gets the shared variable with the specified key.
+    * @description Gets the shared variable with the specified key.
     * Used to pass values between handlers of an event.
     */
   def getSharedVariable[T](key: String): T
@@ -55,7 +55,7 @@ trait EventContext extends StObject {
     * @param T Generic type parameter.
     * @param key The key.
     * @param value The value.
-    * @desc Sets the shared variable with the specified key.
+    * @description Sets the shared variable with the specified key.
     * Used to pass values between handlers of an event.
     */
   def setSharedVariable[T](key: String, value: T): Unit

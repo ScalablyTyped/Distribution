@@ -19,7 +19,7 @@ object mod {
   	//=> 'nb_NO'
   	```
   	*/
-  inline def from(lcidCode: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(lcidCode.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def from(lcidCode: Double): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(lcidCode.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
   /**
   	Get a [Windows locale identifier (LCID)](https://en.wikipedia.org/wiki/Locale#Specifics_for_Microsoft_platforms) from a [standard locale identifier](https://en.wikipedia.org/wiki/Locale_(computer_software)).
@@ -30,5 +30,5 @@ object mod {
   	//=> 1044
   	```
   	*/
-  inline def to(localeId: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("to")(localeId.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def to(localeId: String): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("to")(localeId.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
 }

@@ -12,14 +12,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AuditManager extends Service {
   
   /**
-    *  Associates an evidence folder to an assessment report in a Audit Manager assessment. 
+    *  Associates an evidence folder to an assessment report in an Audit Manager assessment. 
     */
   def associateAssessmentReportEvidenceFolder(): Request[AssociateAssessmentReportEvidenceFolderResponse, AWSError] = js.native
   def associateAssessmentReportEvidenceFolder(
     callback: js.Function2[/* err */ AWSError, /* data */ AssociateAssessmentReportEvidenceFolderResponse, Unit]
   ): Request[AssociateAssessmentReportEvidenceFolderResponse, AWSError] = js.native
   /**
-    *  Associates an evidence folder to an assessment report in a Audit Manager assessment. 
+    *  Associates an evidence folder to an assessment report in an Audit Manager assessment. 
     */
   def associateAssessmentReportEvidenceFolder(params: AssociateAssessmentReportEvidenceFolderRequest): Request[AssociateAssessmentReportEvidenceFolderResponse, AWSError] = js.native
   def associateAssessmentReportEvidenceFolder(
@@ -100,14 +100,14 @@ trait AuditManager extends Service {
   ): Request[BatchDisassociateAssessmentReportEvidenceResponse, AWSError] = js.native
   
   /**
-    *  Uploads one or more pieces of evidence to a control in an Audit Manager assessment. 
+    * Uploads one or more pieces of evidence to a control in an Audit Manager assessment. You can upload manual evidence from any Amazon Simple Storage Service (Amazon S3) bucket by specifying the S3 URI of the evidence.  You must upload manual evidence to your S3 bucket before you can upload it to your assessment. For instructions, see CreateBucket and PutObject in the Amazon Simple Storage Service API Reference.  The following restrictions apply to this action:   Maximum size of an individual evidence file: 100 MB   Number of daily manual evidence uploads per control: 100   Supported file formats: See Supported file types for manual evidence in the Audit Manager User Guide    For more information about Audit Manager service restrictions, see Quotas and restrictions for Audit Manager.
     */
   def batchImportEvidenceToAssessmentControl(): Request[BatchImportEvidenceToAssessmentControlResponse, AWSError] = js.native
   def batchImportEvidenceToAssessmentControl(
     callback: js.Function2[/* err */ AWSError, /* data */ BatchImportEvidenceToAssessmentControlResponse, Unit]
   ): Request[BatchImportEvidenceToAssessmentControlResponse, AWSError] = js.native
   /**
-    *  Uploads one or more pieces of evidence to a control in an Audit Manager assessment. 
+    * Uploads one or more pieces of evidence to a control in an Audit Manager assessment. You can upload manual evidence from any Amazon Simple Storage Service (Amazon S3) bucket by specifying the S3 URI of the evidence.  You must upload manual evidence to your S3 bucket before you can upload it to your assessment. For instructions, see CreateBucket and PutObject in the Amazon Simple Storage Service API Reference.  The following restrictions apply to this action:   Maximum size of an individual evidence file: 100 MB   Number of daily manual evidence uploads per control: 100   Supported file formats: See Supported file types for manual evidence in the Audit Manager User Guide    For more information about Audit Manager service restrictions, see Quotas and restrictions for Audit Manager.
     */
   def batchImportEvidenceToAssessmentControl(params: BatchImportEvidenceToAssessmentControlRequest): Request[BatchImportEvidenceToAssessmentControlResponse, AWSError] = js.native
   def batchImportEvidenceToAssessmentControl(
@@ -247,12 +247,12 @@ trait AuditManager extends Service {
   ): Request[DeleteControlResponse, AWSError] = js.native
   
   /**
-    *  Deregisters an account in Audit Manager.   When you deregister your account from Audit Manager, your data isn’t deleted. If you want to delete your resource data, you must perform that task separately before you deregister your account. Either, you can do this in the Audit Manager console. Or, you can use one of the delete API operations that are provided by Audit Manager.  To delete your Audit Manager resource data, see the following instructions:     DeleteAssessment (see also: Deleting an assessment in the Audit Manager User Guide)    DeleteAssessmentFramework (see also: Deleting a custom framework in the Audit Manager User Guide)    DeleteAssessmentFrameworkShare (see also: Deleting a share request in the Audit Manager User Guide)    DeleteAssessmentReport (see also: Deleting an assessment report in the Audit Manager User Guide)    DeleteControl (see also: Deleting a custom control in the Audit Manager User Guide)   At this time, Audit Manager doesn't provide an option to delete evidence. All available delete operations are listed above. 
+    *  Deregisters an account in Audit Manager.   Before you deregister, you can use the UpdateSettings API operation to set your preferred data retention policy. By default, Audit Manager retains your data. If you want to delete your data, you can use the DeregistrationPolicy attribute to request the deletion of your data.  For more information about data retention, see Data Protection in the Audit Manager User Guide.  
     */
   def deregisterAccount(): Request[DeregisterAccountResponse, AWSError] = js.native
   def deregisterAccount(callback: js.Function2[/* err */ AWSError, /* data */ DeregisterAccountResponse, Unit]): Request[DeregisterAccountResponse, AWSError] = js.native
   /**
-    *  Deregisters an account in Audit Manager.   When you deregister your account from Audit Manager, your data isn’t deleted. If you want to delete your resource data, you must perform that task separately before you deregister your account. Either, you can do this in the Audit Manager console. Or, you can use one of the delete API operations that are provided by Audit Manager.  To delete your Audit Manager resource data, see the following instructions:     DeleteAssessment (see also: Deleting an assessment in the Audit Manager User Guide)    DeleteAssessmentFramework (see also: Deleting a custom framework in the Audit Manager User Guide)    DeleteAssessmentFrameworkShare (see also: Deleting a share request in the Audit Manager User Guide)    DeleteAssessmentReport (see also: Deleting an assessment report in the Audit Manager User Guide)    DeleteControl (see also: Deleting a custom control in the Audit Manager User Guide)   At this time, Audit Manager doesn't provide an option to delete evidence. All available delete operations are listed above. 
+    *  Deregisters an account in Audit Manager.   Before you deregister, you can use the UpdateSettings API operation to set your preferred data retention policy. By default, Audit Manager retains your data. If you want to delete your data, you can use the DeregistrationPolicy attribute to request the deletion of your data.  For more information about data retention, see Data Protection in the Audit Manager User Guide.  
     */
   def deregisterAccount(params: DeregisterAccountRequest): Request[DeregisterAccountResponse, AWSError] = js.native
   def deregisterAccount(
@@ -261,14 +261,14 @@ trait AuditManager extends Service {
   ): Request[DeregisterAccountResponse, AWSError] = js.native
   
   /**
-    * Removes the specified Amazon Web Services account as a delegated administrator for Audit Manager.   When you remove a delegated administrator from your Audit Manager settings, you continue to have access to the evidence that you previously collected under that account. This is also the case when you deregister a delegated administrator from Organizations. However, Audit Manager will stop collecting and attaching evidence to that delegated administrator account moving forward.   When you deregister a delegated administrator account for Audit Manager, the data for that account isn’t deleted. If you want to delete resource data for a delegated administrator account, you must perform that task separately before you deregister the account. Either, you can do this in the Audit Manager console. Or, you can use one of the delete API operations that are provided by Audit Manager.  To delete your Audit Manager resource data, see the following instructions:     DeleteAssessment (see also: Deleting an assessment in the Audit Manager User Guide)    DeleteAssessmentFramework (see also: Deleting a custom framework in the Audit Manager User Guide)    DeleteAssessmentFrameworkShare (see also: Deleting a share request in the Audit Manager User Guide)    DeleteAssessmentReport (see also: Deleting an assessment report in the Audit Manager User Guide)    DeleteControl (see also: Deleting a custom control in the Audit Manager User Guide)   At this time, Audit Manager doesn't provide an option to delete evidence. All available delete operations are listed above. 
+    * Removes the specified Amazon Web Services account as a delegated administrator for Audit Manager.  When you remove a delegated administrator from your Audit Manager settings, you continue to have access to the evidence that you previously collected under that account. This is also the case when you deregister a delegated administrator from Organizations. However, Audit Manager stops collecting and attaching evidence to that delegated administrator account moving forward.  Keep in mind the following cleanup task if you use evidence finder: Before you use your management account to remove a delegated administrator, make sure that the current delegated administrator account signs in to Audit Manager and disables evidence finder first. Disabling evidence finder automatically deletes the event data store that was created in their account when they enabled evidence finder. If this task isn’t completed, the event data store remains in their account. In this case, we recommend that the original delegated administrator goes to CloudTrail Lake and manually deletes the event data store. This cleanup task is necessary to ensure that you don't end up with multiple event data stores. Audit Manager ignores an unused event data store after you remove or change a delegated administrator account. However, the unused event data store continues to incur storage costs from CloudTrail Lake if you don't delete it.  When you deregister a delegated administrator account for Audit Manager, the data for that account isn’t deleted. If you want to delete resource data for a delegated administrator account, you must perform that task separately before you deregister the account. Either, you can do this in the Audit Manager console. Or, you can use one of the delete API operations that are provided by Audit Manager.  To delete your Audit Manager resource data, see the following instructions:     DeleteAssessment (see also: Deleting an assessment in the Audit Manager User Guide)    DeleteAssessmentFramework (see also: Deleting a custom framework in the Audit Manager User Guide)    DeleteAssessmentFrameworkShare (see also: Deleting a share request in the Audit Manager User Guide)    DeleteAssessmentReport (see also: Deleting an assessment report in the Audit Manager User Guide)    DeleteControl (see also: Deleting a custom control in the Audit Manager User Guide)   At this time, Audit Manager doesn't provide an option to delete evidence for a specific delegated administrator. Instead, when your management account deregisters Audit Manager, we perform a cleanup for the current delegated administrator account at the time of deregistration.
     */
   def deregisterOrganizationAdminAccount(): Request[DeregisterOrganizationAdminAccountResponse, AWSError] = js.native
   def deregisterOrganizationAdminAccount(
     callback: js.Function2[/* err */ AWSError, /* data */ DeregisterOrganizationAdminAccountResponse, Unit]
   ): Request[DeregisterOrganizationAdminAccountResponse, AWSError] = js.native
   /**
-    * Removes the specified Amazon Web Services account as a delegated administrator for Audit Manager.   When you remove a delegated administrator from your Audit Manager settings, you continue to have access to the evidence that you previously collected under that account. This is also the case when you deregister a delegated administrator from Organizations. However, Audit Manager will stop collecting and attaching evidence to that delegated administrator account moving forward.   When you deregister a delegated administrator account for Audit Manager, the data for that account isn’t deleted. If you want to delete resource data for a delegated administrator account, you must perform that task separately before you deregister the account. Either, you can do this in the Audit Manager console. Or, you can use one of the delete API operations that are provided by Audit Manager.  To delete your Audit Manager resource data, see the following instructions:     DeleteAssessment (see also: Deleting an assessment in the Audit Manager User Guide)    DeleteAssessmentFramework (see also: Deleting a custom framework in the Audit Manager User Guide)    DeleteAssessmentFrameworkShare (see also: Deleting a share request in the Audit Manager User Guide)    DeleteAssessmentReport (see also: Deleting an assessment report in the Audit Manager User Guide)    DeleteControl (see also: Deleting a custom control in the Audit Manager User Guide)   At this time, Audit Manager doesn't provide an option to delete evidence. All available delete operations are listed above. 
+    * Removes the specified Amazon Web Services account as a delegated administrator for Audit Manager.  When you remove a delegated administrator from your Audit Manager settings, you continue to have access to the evidence that you previously collected under that account. This is also the case when you deregister a delegated administrator from Organizations. However, Audit Manager stops collecting and attaching evidence to that delegated administrator account moving forward.  Keep in mind the following cleanup task if you use evidence finder: Before you use your management account to remove a delegated administrator, make sure that the current delegated administrator account signs in to Audit Manager and disables evidence finder first. Disabling evidence finder automatically deletes the event data store that was created in their account when they enabled evidence finder. If this task isn’t completed, the event data store remains in their account. In this case, we recommend that the original delegated administrator goes to CloudTrail Lake and manually deletes the event data store. This cleanup task is necessary to ensure that you don't end up with multiple event data stores. Audit Manager ignores an unused event data store after you remove or change a delegated administrator account. However, the unused event data store continues to incur storage costs from CloudTrail Lake if you don't delete it.  When you deregister a delegated administrator account for Audit Manager, the data for that account isn’t deleted. If you want to delete resource data for a delegated administrator account, you must perform that task separately before you deregister the account. Either, you can do this in the Audit Manager console. Or, you can use one of the delete API operations that are provided by Audit Manager.  To delete your Audit Manager resource data, see the following instructions:     DeleteAssessment (see also: Deleting an assessment in the Audit Manager User Guide)    DeleteAssessmentFramework (see also: Deleting a custom framework in the Audit Manager User Guide)    DeleteAssessmentFrameworkShare (see also: Deleting a share request in the Audit Manager User Guide)    DeleteAssessmentReport (see also: Deleting an assessment report in the Audit Manager User Guide)    DeleteControl (see also: Deleting a custom control in the Audit Manager User Guide)   At this time, Audit Manager doesn't provide an option to delete evidence for a specific delegated administrator. Instead, when your management account deregisters Audit Manager, we perform a cleanup for the current delegated administrator account at the time of deregistration.
     */
   def deregisterOrganizationAdminAccount(params: DeregisterOrganizationAdminAccountRequest): Request[DeregisterOrganizationAdminAccountResponse, AWSError] = js.native
   def deregisterOrganizationAdminAccount(
@@ -457,14 +457,14 @@ trait AuditManager extends Service {
   ): Request[GetEvidenceFoldersByAssessmentResponse, AWSError] = js.native
   
   /**
-    *  Returns a list of evidence folders that are associated with a specified control of an assessment in Audit Manager. 
+    *  Returns a list of evidence folders that are associated with a specified control in an Audit Manager assessment. 
     */
   def getEvidenceFoldersByAssessmentControl(): Request[GetEvidenceFoldersByAssessmentControlResponse, AWSError] = js.native
   def getEvidenceFoldersByAssessmentControl(
     callback: js.Function2[/* err */ AWSError, /* data */ GetEvidenceFoldersByAssessmentControlResponse, Unit]
   ): Request[GetEvidenceFoldersByAssessmentControlResponse, AWSError] = js.native
   /**
-    *  Returns a list of evidence folders that are associated with a specified control of an assessment in Audit Manager. 
+    *  Returns a list of evidence folders that are associated with a specified control in an Audit Manager assessment. 
     */
   def getEvidenceFoldersByAssessmentControl(params: GetEvidenceFoldersByAssessmentControlRequest): Request[GetEvidenceFoldersByAssessmentControlResponse, AWSError] = js.native
   def getEvidenceFoldersByAssessmentControl(
@@ -515,12 +515,12 @@ trait AuditManager extends Service {
   ): Request[GetOrganizationAdminAccountResponse, AWSError] = js.native
   
   /**
-    *  Returns a list of the in-scope Amazon Web Services for the specified assessment. 
+    * Returns a list of all of the Amazon Web Services that you can choose to include in your assessment. When you create an assessment, specify which of these services you want to include to narrow the assessment's scope.
     */
   def getServicesInScope(): Request[GetServicesInScopeResponse, AWSError] = js.native
   def getServicesInScope(callback: js.Function2[/* err */ AWSError, /* data */ GetServicesInScopeResponse, Unit]): Request[GetServicesInScopeResponse, AWSError] = js.native
   /**
-    *  Returns a list of the in-scope Amazon Web Services for the specified assessment. 
+    * Returns a list of all of the Amazon Web Services that you can choose to include in your assessment. When you create an assessment, specify which of these services you want to include to narrow the assessment's scope.
     */
   def getServicesInScope(params: GetServicesInScopeRequest): Request[GetServicesInScopeResponse, AWSError] = js.native
   def getServicesInScope(
@@ -901,12 +901,12 @@ trait AuditManager extends Service {
   ): Request[UpdateControlResponse, AWSError] = js.native
   
   /**
-    *  Updates Audit Manager settings for the current user account. 
+    *  Updates Audit Manager settings for the current account. 
     */
   def updateSettings(): Request[UpdateSettingsResponse, AWSError] = js.native
   def updateSettings(callback: js.Function2[/* err */ AWSError, /* data */ UpdateSettingsResponse, Unit]): Request[UpdateSettingsResponse, AWSError] = js.native
   /**
-    *  Updates Audit Manager settings for the current user account. 
+    *  Updates Audit Manager settings for the current account. 
     */
   def updateSettings(params: UpdateSettingsRequest): Request[UpdateSettingsResponse, AWSError] = js.native
   def updateSettings(

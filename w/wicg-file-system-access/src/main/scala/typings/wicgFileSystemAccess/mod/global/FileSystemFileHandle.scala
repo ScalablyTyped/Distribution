@@ -8,14 +8,23 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+// class FileSystemWritableFileStream extends WritableStream {
+//     write(data: FileSystemWriteChunkType): Promise<void>;
+//     seek(position: number): Promise<void>;
+//     truncate(size: number): Promise<void>;
+// }
 @js.native
 trait FileSystemFileHandle
   extends StObject
      with FileSystemHandle
      with FileSystemHandleUnion {
   
-  def createWritable(): js.Promise[FileSystemWritableFileStream] = js.native
-  def createWritable(options: FileSystemCreateWritableOptions): js.Promise[FileSystemWritableFileStream] = js.native
+  def createWritable(): js.Promise[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FileSystemWritableFileStream */ Any
+  ] = js.native
+  def createWritable(options: FileSystemCreateWritableOptions): js.Promise[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FileSystemWritableFileStream */ Any
+  ] = js.native
   
   def getFile(): js.Promise[File] = js.native
   

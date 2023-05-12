@@ -6,6 +6,7 @@ import typings.atlaskitMotion.distTypesEnteringTypesMod.Direction
 import typings.atlaskitMotion.distTypesEnteringTypesMod.Fade
 import typings.atlaskitMotion.distTypesEnteringTypesMod.Transition
 import typings.atlaskitMotion.distTypesUtilsCurvesMod.AnimationCurve
+import typings.emotionSerialize.mod.CSSObject
 import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
@@ -29,7 +30,7 @@ object distTypesEnteringSlideInMod {
   @js.native
   val default: FC[SlideInProps] = js.native
   
-  inline def slideInAnimation(from: Direction, state: Transition, fade: Fade): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("slideInAnimation")(from.asInstanceOf[js.Any], state.asInstanceOf[js.Any], fade.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def slideInAnimation(from: Direction, state: Transition, fade: Fade): CSSObject = (^.asInstanceOf[js.Dynamic].applyDynamic("slideInAnimation")(from.asInstanceOf[js.Any], state.asInstanceOf[js.Any], fade.asInstanceOf[js.Any])).asInstanceOf[CSSObject]
   
   trait SlideInProps
     extends StObject
@@ -42,30 +43,30 @@ object distTypesEnteringSlideInMod {
     var animationTimingFunction: js.UndefOr[js.Function1[/* state */ Transition, AnimationCurve]] = js.undefined
     
     /**
-      * Direction the element will slide in from.
-      * E.g. `"right"` will slide in from the right to the left.
-      *
-      * If `exitTo` is not set, exiting will reverse this motion.
-      * E.g. if `enterFrom: "right"`, will slide out to the right.
+      Direction the element will slide in from.
+      E.g. `"right"` will slide in from the right to the left.
+      
+      If `exitTo` is not set, exiting will reverse this motion.
+      E.g. if `enterFrom: "right"`, will slide out to the right.
       */
     var enterFrom: Direction
     
     /**
-      * Direction the element will slide out towards.
-      * E.g. `"right"` will slide out to the right.
-      *
-      * If this is not set, exiting will reverse the entrance motion.
-      * E.g. if `enterFrom: "right"`, will slide out to the right.
+      Direction the element will slide out towards.
+      E.g. `"right"` will slide out to the right.
+      
+      If this is not set, exiting will reverse the entrance motion.
+      E.g. if `enterFrom: "right"`, will slide out to the right.
       */
     var exitTo: js.UndefOr[Direction] = js.undefined
     
     /**
-      * Whether an element will fade on enter, on exit or both.
-      *
-      * `'none'` is the default and will cause the element to not fade,
-      * `'in'` will cause the element to fade on enter,
-      * `'out'` will cause the element to fade on exit,
-      * `'inout'` will cause the element to fade on both
+      Whether an element will fade on enter, on exit or both.
+      
+      `'none'` is the default and will cause the element to not fade,
+      `'in'` will cause the element to fade on enter,
+      `'out'` will cause the element to fade on exit,
+      `'inout'` will cause the element to fade on both
       */
     var fade: js.UndefOr[Fade] = js.undefined
   }

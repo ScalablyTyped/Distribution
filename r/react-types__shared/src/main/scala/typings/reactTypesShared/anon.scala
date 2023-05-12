@@ -10,7 +10,9 @@ object anon {
     
     def continuePropagation(): Unit
     
-    /** @deprecated Use continuePropagation. */
+    /**
+      * Use continuePropagation.
+      * @deprecated */
     def stopPropagation(): Unit
   }
   object ContinuePropagation {

@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EvaluatableExpressionProvider extends StObject {
   
   /**
-    * Provide an evaluatable expression for the given document and position.
-    * The editor will evaluate this expression in the active debug session and will show the result in the debug hover.
-    * The expression can be implicitly specified by the range in the underlying document or by explicitly returning an expression.
-    *
-    * @param document The document for which the debug hover is about to appear.
-    * @param position The line and character position in the document where the debug hover is about to appear.
-    * @param token A cancellation token.
-    * @return An EvaluatableExpression or a thenable that resolves to such. The lack of a result can be
-    * signaled by returning `undefined` or `null`.
-    */
+  		 * Provide an evaluatable expression for the given document and position.
+  		 * The editor will evaluate this expression in the active debug session and will show the result in the debug hover.
+  		 * The expression can be implicitly specified by the range in the underlying document or by explicitly returning an expression.
+  		 *
+  		 * @param document The document for which the debug hover is about to appear.
+  		 * @param position The line and character position in the document where the debug hover is about to appear.
+  		 * @param token A cancellation token.
+  		 * @return An EvaluatableExpression or a thenable that resolves to such. The lack of a result can be
+  		 * signaled by returning `undefined` or `null`.
+  		 */
   def provideEvaluatableExpression(document: TextDocument, position: Position, token: CancellationToken): ProviderResult[EvaluatableExpression]
 }
 object EvaluatableExpressionProvider {

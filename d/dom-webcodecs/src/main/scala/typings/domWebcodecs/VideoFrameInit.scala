@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait VideoFrameInit extends StObject {
   
-  var alpha: js.UndefOr[AlphaOption] = js.undefined
+  var alpha: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlphaOption */ Any
+  ] = js.undefined
   
   var displayHeight: js.UndefOr[Double] = js.undefined
   
@@ -29,7 +31,9 @@ object VideoFrameInit {
   @scala.inline
   implicit open class MutableBuilder[Self <: VideoFrameInit] (val x: Self) extends AnyVal {
     
-    inline def setAlpha(value: AlphaOption): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlphaOption */ Any
+    ): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
     inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     

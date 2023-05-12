@@ -607,6 +607,10 @@ object ssh2Strings {
   inline def sftp: sftp = "sftp".asInstanceOf[sftp]
   
   @js.native
+  sealed trait sha1 extends StObject
+  inline def sha1: sha1 = "sha1".asInstanceOf[sha1]
+  
+  @js.native
   sealed trait sha256 extends StObject
   inline def sha256: sha256 = "sha256".asInstanceOf[sha256]
   

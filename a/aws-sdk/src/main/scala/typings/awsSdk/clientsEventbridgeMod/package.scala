@@ -376,6 +376,8 @@ type SecretsManagerSecretArn = java.lang.String
 
 type Sql = java.lang.String
 
+type Sqls = js.Array[Sql]
+
 type StatementId = java.lang.String
 
 type StatementName = java.lang.String

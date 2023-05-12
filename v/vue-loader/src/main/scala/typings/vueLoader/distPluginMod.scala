@@ -35,8 +35,7 @@ object distPluginMod {
   /* was `typeof VueLoaderPlugin` */
   type Plugin = VueLoaderPlugin
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ trait VueLoaderPlugin extends StObject {
+  trait VueLoaderPlugin extends StObject {
     
     @JSName("apply")
     def apply(compiler: Compiler): Unit

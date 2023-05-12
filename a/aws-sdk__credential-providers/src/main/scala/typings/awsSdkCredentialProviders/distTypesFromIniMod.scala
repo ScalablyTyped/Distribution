@@ -1,7 +1,7 @@
 package typings.awsSdkCredentialProviders
 
 import typings.awsSdkClientSts.distTypesStsclientMod.STSClientConfig
-import typings.awsSdkTypes.distTypesCredentialsMod.CredentialProvider
+import typings.awsSdkTypes.distTypesIdentityAwsCredentialIdentityMod.AwsCredentialIdentityProvider
 import typings.awsSdkTypes.distTypesMiddlewareMod.Pluggable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,8 +13,8 @@ object distTypesFromIniMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromIni(): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIni")().asInstanceOf[CredentialProvider]
-  inline def fromIni(init: FromIniInit): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIni")(init.asInstanceOf[js.Any]).asInstanceOf[CredentialProvider]
+  inline def fromIni(): AwsCredentialIdentityProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIni")().asInstanceOf[AwsCredentialIdentityProvider]
+  inline def fromIni(init: FromIniInit): AwsCredentialIdentityProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIni")(init.asInstanceOf[js.Any]).asInstanceOf[AwsCredentialIdentityProvider]
   
   trait FromIniInit
     extends StObject

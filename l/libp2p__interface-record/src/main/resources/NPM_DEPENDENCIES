@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@libp2p/interface-record" : "2.0.1"
+      "@libp2p/interface-record" : "2.0.7"
     }
   ],
   "test-dependencies" : [
     {
-      "@libp2p/interface-record" : "2.0.1"
+      "@libp2p/interface-record" : "2.0.7"
     }
   ],
   "compile-devDependencies" : [

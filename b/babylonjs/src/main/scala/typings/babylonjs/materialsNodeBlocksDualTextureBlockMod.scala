@@ -3,6 +3,7 @@ package typings.babylonjs
 import typings.babylonjs.materialsEffectMod.Effect
 import typings.babylonjs.materialsNodeNodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPoint
 import typings.babylonjs.materialsNodeNodeMaterialBlockMod.NodeMaterialBlock
+import typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterialTextureBlocks
 import typings.babylonjs.materialsTexturesTextureMod.Texture
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
@@ -13,7 +14,9 @@ object materialsNodeBlocksDualTextureBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Dual/textureBlock", "TextureBlock")
   @js.native
-  open class TextureBlock protected () extends NodeMaterialBlock {
+  open class TextureBlock protected ()
+    extends NodeMaterialBlock
+       with NodeMaterialTextureBlocks {
     /**
       * Create a new TextureBlock
       * @param name defines the block name
@@ -36,6 +39,8 @@ object materialsNodeBlocksDualTextureBlockMod {
     
     /* private */ var _generateTextureLookup: Any = js.native
     
+    /* private */ var _getUVW: Any = js.native
+    
     /* private */ var _imageSource: Any = js.native
     
     /* private */ var _injectVertexCode: Any = js.native
@@ -47,6 +52,10 @@ object materialsNodeBlocksDualTextureBlockMod {
     /* private */ var _mainUVDefineName: Any = js.native
     
     /* private */ var _mainUVName: Any = js.native
+    
+    /* private */ def _samplerFunc: Any = js.native
+    
+    /* private */ def _samplerLodSuffix: Any = js.native
     
     /* private */ var _samplerName: Any = js.native
     
@@ -106,9 +115,19 @@ object materialsNodeBlocksDualTextureBlockMod {
     def isReady(): Boolean = js.native
     
     /**
+      * Gets the layer input component
+      */
+    def layer: NodeMaterialConnectionPoint = js.native
+    
+    /**
       * Gets the level output component
       */
     def level: NodeMaterialConnectionPoint = js.native
+    
+    /**
+      * Gets the LOD input component
+      */
+    def lod: NodeMaterialConnectionPoint = js.native
     
     /**
       * Gets the r output component

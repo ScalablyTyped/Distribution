@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__rich-text
 
-Typings are for version 3.4
+Typings are for version 6.4
 
 ## Library description:
 Rich text value and manipulation API.

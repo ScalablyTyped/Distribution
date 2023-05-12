@@ -7,6 +7,7 @@ import typings.devextreme.mod.DevExpress.core.template
 import typings.devextreme.mod.DevExpress.ui.dxCalendar.CalendarZoomLevel
 import typings.devextreme.mod.DevExpress.ui.dxCalendar.CellTemplateData
 import typings.devextreme.mod.DevExpress.ui.dxCalendar.DisabledDate
+import typings.devextreme.mod.DevExpress.ui.dxCalendar.WeekNumberRule
 import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -75,10 +76,20 @@ trait dxCalendarOptions
   var showTodayButton: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * 
+    */
+  var showWeekNumbers: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * An object or a value specifying the date and time currently selected in the calendar.
     */
   @JSName("value")
   var value_dxCalendarOptions: js.UndefOr[js.Date | Double | String] = js.undefined
+  
+  /**
+    * 
+    */
+  var weekNumberRule: js.UndefOr[WeekNumberRule] = js.undefined
   
   /**
     * Specifies the current calendar zoom level.
@@ -150,9 +161,17 @@ object dxCalendarOptions {
     
     inline def setShowTodayButtonUndefined: Self = StObject.set(x, "showTodayButton", js.undefined)
     
+    inline def setShowWeekNumbers(value: Boolean): Self = StObject.set(x, "showWeekNumbers", value.asInstanceOf[js.Any])
+    
+    inline def setShowWeekNumbersUndefined: Self = StObject.set(x, "showWeekNumbers", js.undefined)
+    
     inline def setValue(value: js.Date | Double | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    
+    inline def setWeekNumberRule(value: WeekNumberRule): Self = StObject.set(x, "weekNumberRule", value.asInstanceOf[js.Any])
+    
+    inline def setWeekNumberRuleUndefined: Self = StObject.set(x, "weekNumberRule", js.undefined)
     
     inline def setZoomLevel(value: CalendarZoomLevel): Self = StObject.set(x, "zoomLevel", value.asInstanceOf[js.Any])
     

@@ -6,12 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait TransitMode extends StObject
-/**
-  * The valid transit mode e.g. bus that can be specified in a <i><code><a
-  * href="#TransitOptions">TransitOptions</a></code></i>. Specify these by
-  * value, or by using the constant&#39;s name. For example, <code>'BUS'</code>
-  * or <code>google.maps.TransitMode.BUS</code>.
-  */
 @JSGlobal("google.maps.TransitMode")
 @js.native
 object TransitMode extends StObject {

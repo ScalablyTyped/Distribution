@@ -11,7 +11,6 @@ open class Window protected () extends StObject {
   // region Constructors
   /**
     * @param {!WebDriver} driver The parent driver.
-    * @constructor
     */
   def this(driver: WebDriver) = this()
   

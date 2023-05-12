@@ -150,23 +150,11 @@ object sourceMergeDeepMod {
   /* Inlined type-fest.type-fest/source/merge.Merge<type-fest.type-fest/source/merge-deep.MergeDeepOptions, {  spreadTopLevelArrays :boolean | undefined}> */
   trait MergeDeepInternalOptions extends StObject {
     
-    var arrayMergeMode: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: 'arrayMergeMode' extends keyof / * Inlined type-fest.type-fest/source/pick-index-signature.PickIndexSignature<{  spreadTopLevelArrays :boolean | undefined}> * /
-    {  spreadTopLevelArrays :boolean | undefined | undefined} ? any | undefined : 'arrayMergeMode' extends keyof / * Inlined type-fest.type-fest/source/pick-index-signature.PickIndexSignature<type-fest.type-fest/source/merge-deep.MergeDeepOptions> * /
-    {  arrayMergeMode :type-fest.type-fest/source/merge-deep.ArrayMergeMode | undefined | undefined,   recurseIntoArrays :boolean | undefined | undefined} ? type-fest.type-fest/source/merge-deep.ArrayMergeMode | undefined | undefined : never */ js.Any
-      ] = js.undefined
+    var arrayMergeMode: js.UndefOr[ArrayMergeMode] = js.undefined
     
-    var recurseIntoArrays: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: 'recurseIntoArrays' extends keyof / * Inlined type-fest.type-fest/source/pick-index-signature.PickIndexSignature<{  spreadTopLevelArrays :boolean | undefined}> * /
-    {  spreadTopLevelArrays :boolean | undefined | undefined} ? any | undefined : 'recurseIntoArrays' extends keyof / * Inlined type-fest.type-fest/source/pick-index-signature.PickIndexSignature<type-fest.type-fest/source/merge-deep.MergeDeepOptions> * /
-    {  arrayMergeMode :type-fest.type-fest/source/merge-deep.ArrayMergeMode | undefined | undefined,   recurseIntoArrays :boolean | undefined | undefined} ? boolean | undefined | undefined : never */ js.Any
-      ] = js.undefined
+    var recurseIntoArrays: js.UndefOr[Boolean] = js.undefined
     
-    var spreadTopLevelArrays: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: 'spreadTopLevelArrays' extends keyof / * Inlined type-fest.type-fest/source/pick-index-signature.PickIndexSignature<{  spreadTopLevelArrays :boolean | undefined}> * /
-    {  spreadTopLevelArrays :boolean | undefined | undefined} ? boolean | undefined | undefined : 'spreadTopLevelArrays' extends keyof / * Inlined type-fest.type-fest/source/pick-index-signature.PickIndexSignature<type-fest.type-fest/source/merge-deep.MergeDeepOptions> * /
-    {  arrayMergeMode :type-fest.type-fest/source/merge-deep.ArrayMergeMode | undefined | undefined,   recurseIntoArrays :boolean | undefined | undefined} ? any | undefined : never */ js.Any
-      ] = js.undefined
+    var spreadTopLevelArrays: js.UndefOr[Boolean] = js.undefined
   }
   object MergeDeepInternalOptions {
     
@@ -178,27 +166,15 @@ object sourceMergeDeepMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: MergeDeepInternalOptions] (val x: Self) extends AnyVal {
       
-      inline def setArrayMergeMode(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: 'arrayMergeMode' extends keyof / * Inlined type-fest.type-fest/source/pick-index-signature.PickIndexSignature<{  spreadTopLevelArrays :boolean | undefined}> * /
-      {  spreadTopLevelArrays :boolean | undefined | undefined} ? any | undefined : 'arrayMergeMode' extends keyof / * Inlined type-fest.type-fest/source/pick-index-signature.PickIndexSignature<type-fest.type-fest/source/merge-deep.MergeDeepOptions> * /
-      {  arrayMergeMode :type-fest.type-fest/source/merge-deep.ArrayMergeMode | undefined | undefined,   recurseIntoArrays :boolean | undefined | undefined} ? type-fest.type-fest/source/merge-deep.ArrayMergeMode | undefined | undefined : never */ js.Any
-      ): Self = StObject.set(x, "arrayMergeMode", value.asInstanceOf[js.Any])
+      inline def setArrayMergeMode(value: ArrayMergeMode): Self = StObject.set(x, "arrayMergeMode", value.asInstanceOf[js.Any])
       
       inline def setArrayMergeModeUndefined: Self = StObject.set(x, "arrayMergeMode", js.undefined)
       
-      inline def setRecurseIntoArrays(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: 'recurseIntoArrays' extends keyof / * Inlined type-fest.type-fest/source/pick-index-signature.PickIndexSignature<{  spreadTopLevelArrays :boolean | undefined}> * /
-      {  spreadTopLevelArrays :boolean | undefined | undefined} ? any | undefined : 'recurseIntoArrays' extends keyof / * Inlined type-fest.type-fest/source/pick-index-signature.PickIndexSignature<type-fest.type-fest/source/merge-deep.MergeDeepOptions> * /
-      {  arrayMergeMode :type-fest.type-fest/source/merge-deep.ArrayMergeMode | undefined | undefined,   recurseIntoArrays :boolean | undefined | undefined} ? boolean | undefined | undefined : never */ js.Any
-      ): Self = StObject.set(x, "recurseIntoArrays", value.asInstanceOf[js.Any])
+      inline def setRecurseIntoArrays(value: Boolean): Self = StObject.set(x, "recurseIntoArrays", value.asInstanceOf[js.Any])
       
       inline def setRecurseIntoArraysUndefined: Self = StObject.set(x, "recurseIntoArrays", js.undefined)
       
-      inline def setSpreadTopLevelArrays(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: 'spreadTopLevelArrays' extends keyof / * Inlined type-fest.type-fest/source/pick-index-signature.PickIndexSignature<{  spreadTopLevelArrays :boolean | undefined}> * /
-      {  spreadTopLevelArrays :boolean | undefined | undefined} ? boolean | undefined | undefined : 'spreadTopLevelArrays' extends keyof / * Inlined type-fest.type-fest/source/pick-index-signature.PickIndexSignature<type-fest.type-fest/source/merge-deep.MergeDeepOptions> * /
-      {  arrayMergeMode :type-fest.type-fest/source/merge-deep.ArrayMergeMode | undefined | undefined,   recurseIntoArrays :boolean | undefined | undefined} ? any | undefined : never */ js.Any
-      ): Self = StObject.set(x, "spreadTopLevelArrays", value.asInstanceOf[js.Any])
+      inline def setSpreadTopLevelArrays(value: Boolean): Self = StObject.set(x, "spreadTopLevelArrays", value.asInstanceOf[js.Any])
       
       inline def setSpreadTopLevelArraysUndefined: Self = StObject.set(x, "spreadTopLevelArrays", js.undefined)
     }
@@ -349,7 +325,7 @@ object sourceMergeDeepMod {
   type PickRestTypeFlat[Type /* <: UnknownArrayOrTuple */] = TypeNumberOrType[PickRestType[Type]]
   
   /**
-  Test if it sould spread top-level arrays.
+  Test if it should spread top-level arrays.
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
@@ -361,7 +337,7 @@ object sourceMergeDeepMod {
   type ShouldSpread[Options /* <: MergeDeepInternalOptions */] = `true`
   
   /**
-  Deeply smplifies an object excluding iterables and functions. Used internally to improve the UX and accept both interfaces and type aliases as inputs.
+  Deeply simplifies an object excluding iterables and functions. Used internally to improve the UX and accept both interfaces and type aliases as inputs.
   */
   type SimplifyDeep[Type] = ConditionalSimplifyDeep[Type, js.Function | js.Iterable[Any], js.Object]
   

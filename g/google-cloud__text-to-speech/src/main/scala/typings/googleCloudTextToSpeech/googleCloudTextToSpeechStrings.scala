@@ -27,6 +27,10 @@ object googleCloudTextToSpeechStrings {
   inline def double: double = "double".asInstanceOf[double]
   
   @js.native
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
+  
+  @js.native
   sealed trait fixed32 extends StObject
   inline def fixed32: fixed32 = "fixed32".asInstanceOf[fixed32]
   
@@ -77,6 +81,10 @@ object googleCloudTextToSpeechStrings {
   @js.native
   sealed trait required extends StObject
   inline def required: required = "required".asInstanceOf[required]
+  
+  @js.native
+  sealed trait response extends StObject
+  inline def response: response = "response".asInstanceOf[response]
   
   @js.native
   sealed trait rest extends StObject

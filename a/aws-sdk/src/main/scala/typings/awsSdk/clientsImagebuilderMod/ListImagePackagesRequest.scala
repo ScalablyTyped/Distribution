@@ -12,7 +12,7 @@ trait ListImagePackagesRequest extends StObject {
   var imageBuildVersionArn: ImageBuildVersionArn
   
   /**
-    * The maxiumum number of results to return from the ListImagePackages request.
+    * The maximum items to return in a request.
     */
   var maxResults: js.UndefOr[RestrictedInteger] = js.undefined
   

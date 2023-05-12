@@ -14,11 +14,11 @@ trait DescribeTemplatePermissionsRequest extends StObject {
   /**
     * The ID for the template.
     */
-  var TemplateId: RestrictiveResourceId
+  var TemplateId: ShortRestrictiveResourceId
 }
 object DescribeTemplatePermissionsRequest {
   
-  inline def apply(AwsAccountId: AwsAccountId, TemplateId: RestrictiveResourceId): DescribeTemplatePermissionsRequest = {
+  inline def apply(AwsAccountId: AwsAccountId, TemplateId: ShortRestrictiveResourceId): DescribeTemplatePermissionsRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], TemplateId = TemplateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTemplatePermissionsRequest]
   }
@@ -28,6 +28,6 @@ object DescribeTemplatePermissionsRequest {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    inline def setTemplateId(value: RestrictiveResourceId): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
+    inline def setTemplateId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
   }
 }

@@ -17,7 +17,7 @@ object buildCommandsChromiumMod {
       * @ref https://github.com/bayandin/chromedriver/blob/v2.45/window_commands.cc#L1724-L1745
       *
       */
-    def deleteNetworkConditions(): Unit = js.native
+    def deleteNetworkConditions(): js.Promise[Unit] = js.native
     
     /**
       * Chromium Protocol Command
@@ -26,7 +26,7 @@ object buildCommandsChromiumMod {
       * @ref https://github.com/bayandin/chromedriver/blob/v2.45/element_commands.cc#L126-L146
       *
       */
-    def elementHover(elementId: String): Unit = js.native
+    def elementHover(elementId: String): js.Promise[Unit] = js.native
     
     /**
       * Chromium Protocol Command
@@ -35,7 +35,7 @@ object buildCommandsChromiumMod {
       * @ref https://github.com/bayandin/chromedriver/blob/v2.45/session_commands.cc#L1037-L1065
       *
       */
-    def file(file: String): String = js.native
+    def file(file: String): js.Promise[String] = js.native
     
     /**
       * Chromium Protocol Command
@@ -44,7 +44,7 @@ object buildCommandsChromiumMod {
       * @ref https://github.com/bayandin/chromedriver/blob/v2.45/window_commands.cc#L625-L633
       *
       */
-    def freeze(): Unit = js.native
+    def freeze(): js.Promise[Unit] = js.native
     
     /**
       * Chromium Protocol Command
@@ -53,7 +53,7 @@ object buildCommandsChromiumMod {
       * @ref https://chromium.googlesource.com/chromium/src/+/refs/tags/73.0.3683.121/chrome/test/chromedriver/server/http_handler.cc#751
       *
       */
-    def getCastIssueMessage(): String = js.native
+    def getCastIssueMessage(): js.Promise[String] = js.native
     
     /**
       * Chromium Protocol Command
@@ -62,7 +62,7 @@ object buildCommandsChromiumMod {
       * @ref https://chromium.googlesource.com/chromium/src/+/refs/tags/73.0.3683.121/chrome/test/chromedriver/server/http_handler.cc#748
       *
       */
-    def getCastSinks(): js.Array[String] = js.native
+    def getCastSinks(): js.Promise[js.Array[String]] = js.native
     
     /**
       * Chromium Protocol Command
@@ -71,7 +71,7 @@ object buildCommandsChromiumMod {
       * @ref https://github.com/bayandin/chromedriver/blob/v2.45/element_commands.cc#L431-L443
       *
       */
-    def getElementValue(elementId: String): String | Null = js.native
+    def getElementValue(elementId: String): js.Promise[String | Null] = js.native
     
     /**
       * Chromium Protocol Command
@@ -80,7 +80,7 @@ object buildCommandsChromiumMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlogtypes
       *
       */
-    def getLogTypes(): js.Array[String] = js.native
+    def getLogTypes(): js.Promise[js.Array[String]] = js.native
     
     /**
       * Chromium Protocol Command
@@ -89,7 +89,7 @@ object buildCommandsChromiumMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlog
       *
       */
-    def getLogs(`type`: String): js.Array[js.Object] = js.native
+    def getLogs(`type`: String): js.Promise[js.Array[js.Object]] = js.native
     
     /**
       * Chromium Protocol Command
@@ -98,7 +98,7 @@ object buildCommandsChromiumMod {
       * @ref https://github.com/bayandin/chromedriver/blob/v2.45/session_commands.cc#L839-L859
       *
       */
-    def getNetworkConditions(): ProtocolCommandResponse = js.native
+    def getNetworkConditions(): js.Promise[ProtocolCommandResponse] = js.native
     
     /**
       * Chromium Protocol Command
@@ -120,7 +120,7 @@ object buildCommandsChromiumMod {
       * console.log(browser.getNetworkConnection()); // outputs: 6 (Both Wi-Fi and data)
       * ```
       */
-    def getNetworkConnection(): Double = js.native
+    def getNetworkConnection(): js.Promise[Double] = js.native
     
     /**
       * Chromium Protocol Command
@@ -135,7 +135,7 @@ object buildCommandsChromiumMod {
       * console.log(browser.isAlertOpen()); // outputs: true
       * ```
       */
-    def isAlertOpen(): Boolean = js.native
+    def isAlertOpen(): js.Promise[Boolean] = js.native
     
     /**
       * Chromium Protocol Command
@@ -144,7 +144,7 @@ object buildCommandsChromiumMod {
       * @ref https://codereview.chromium.org/101203012
       *
       */
-    def isAutoReporting(): Boolean = js.native
+    def isAutoReporting(): js.Promise[Boolean] = js.native
     
     /**
       * Chromium Protocol Command
@@ -159,7 +159,7 @@ object buildCommandsChromiumMod {
       * console.log(browser.isLoading()); // outputs: true
       * ```
       */
-    def isLoading(): Boolean = js.native
+    def isLoading(): js.Promise[Boolean] = js.native
     
     /**
       * Chromium Protocol Command
@@ -169,6 +169,7 @@ object buildCommandsChromiumMod {
       *
       * @example
       * ```js
+      * import fs from 'fs'
       * const browser = remote({
       *     capabilities: {
       *         browserName: 'chrome',
@@ -176,7 +177,7 @@ object buildCommandsChromiumMod {
       *             // Install upon starting browser in order to launch it
       *             extensions: [
       *               // Entry should be a base64-encoded packed Chrome app (.crx)
-      *               require('fs').readFileSync('/absolute/path/app.crx').toString('base64')
+      *               fs.readFileSync('/absolute/path/app.crx').toString('base64')
       *             ]
       *         }
       *     }
@@ -184,7 +185,7 @@ object buildCommandsChromiumMod {
       * browser.launchChromeApp('aohghmighlieiainnegkcijnfilokake')); // Google Docs (https://chrome.google.com/webstore/detail/docs/aohghmighlieiainnegkcijnfilokake)
       * ```
       */
-    def launchChromeApp(id: String): Unit = js.native
+    def launchChromeApp(id: String): js.Promise[Unit] = js.native
     
     /**
       * Chromium Protocol Command
@@ -193,7 +194,7 @@ object buildCommandsChromiumMod {
       * @ref https://github.com/bayandin/chromedriver/blob/v2.45/window_commands.cc#L635-L645
       *
       */
-    def resume(): Unit = js.native
+    def resume(): js.Promise[Unit] = js.native
     
     /**
       * Chromium Protocol Command
@@ -202,7 +203,7 @@ object buildCommandsChromiumMod {
       * @ref https://chromium.googlesource.com/chromium/src/+/refs/tags/73.0.3683.121/chrome/test/chromedriver/server/http_handler.cc#737
       *
       */
-    def selectCastSink(sinkName: String): Unit = js.native
+    def selectCastSink(sinkName: String): js.Promise[Unit] = js.native
     
     /**
       * Chromium Protocol Command
@@ -211,7 +212,7 @@ object buildCommandsChromiumMod {
       * @ref https://github.com/bayandin/chromedriver/blob/v2.45/window_commands.cc#L1290-L1304
       *
       */
-    def sendCommand(cmd: String, params: js.Object): Unit = js.native
+    def sendCommand(cmd: String, params: js.Object): js.Promise[Unit] = js.native
     
     /**
       * Chromium Protocol Command
@@ -220,7 +221,7 @@ object buildCommandsChromiumMod {
       * @ref https://github.com/bayandin/chromedriver/blob/v2.45/window_commands.cc#L1306-L1320
       *
       */
-    def sendCommandAndGetResult(cmd: String, params: js.Object): Any = js.native
+    def sendCommandAndGetResult(cmd: String, params: js.Object): js.Promise[Any] = js.native
     
     /**
       * Chromium Protocol Command
@@ -244,7 +245,7 @@ object buildCommandsChromiumMod {
       * browser.setAutoReporting(true);
       * ```
       */
-    def setAutoReporting(enabled: Boolean): js.Object | Null = js.native
+    def setAutoReporting(enabled: Boolean): js.Promise[js.Object | Null] = js.native
     
     /**
       * Chromium Protocol Command
@@ -273,8 +274,8 @@ object buildCommandsChromiumMod {
       * browser.setNetworkConditions({}, 'Good 3G');
       * ```
       */
-    def setNetworkConditions(networkConditions: js.Object): Unit = js.native
-    def setNetworkConditions(networkConditions: js.Object, networkName: String): Unit = js.native
+    def setNetworkConditions(networkConditions: js.Object): js.Promise[Unit] = js.native
+    def setNetworkConditions(networkConditions: js.Object, networkName: String): js.Promise[Unit] = js.native
     
     /**
       * Chromium Protocol Command
@@ -296,7 +297,7 @@ object buildCommandsChromiumMod {
       * console.log(browser.setNetworkConnection({ type: 1 })); // outputs: 1 (Airplane Mode)
       * ```
       */
-    def setNetworkConnection(parameters: js.Object): Double = js.native
+    def setNetworkConnection(parameters: js.Object): js.Promise[Double] = js.native
     
     /**
       * Chromium Protocol Command
@@ -305,7 +306,7 @@ object buildCommandsChromiumMod {
       * @ref https://github.com/bayandin/chromedriver/blob/v2.45/session_commands.cc#L489-L498
       *
       */
-    def shutdown(): Unit = js.native
+    def shutdown(): js.Promise[Unit] = js.native
     
     /**
       * Chromium Protocol Command
@@ -314,7 +315,7 @@ object buildCommandsChromiumMod {
       * @ref https://chromium.googlesource.com/chromium/src/+/refs/tags/73.0.3683.121/chrome/test/chromedriver/server/http_handler.cc#741
       *
       */
-    def startCastTabMirroring(sinkName: String): Unit = js.native
+    def startCastTabMirroring(sinkName: String): js.Promise[Unit] = js.native
     
     /**
       * Chromium Protocol Command
@@ -323,7 +324,7 @@ object buildCommandsChromiumMod {
       * @ref https://chromium.googlesource.com/chromium/src/+/refs/tags/73.0.3683.121/chrome/test/chromedriver/server/http_handler.cc#744
       *
       */
-    def stopCasting(sinkName: String): Unit = js.native
+    def stopCasting(sinkName: String): js.Promise[Unit] = js.native
     
     /**
       * Chromium Protocol Command
@@ -332,8 +333,8 @@ object buildCommandsChromiumMod {
       * @ref https://w3c.github.io/webdriver/#dfn-take-element-screenshot
       *
       */
-    def takeElementScreenshot(elementId: String): String = js.native
-    def takeElementScreenshot(elementId: String, scroll: Boolean): String = js.native
+    def takeElementScreenshot(elementId: String): js.Promise[String] = js.native
+    def takeElementScreenshot(elementId: String, scroll: Boolean): js.Promise[String] = js.native
     
     /**
       * Chromium Protocol Command
@@ -342,7 +343,7 @@ object buildCommandsChromiumMod {
       * @ref https://github.com/bayandin/chromedriver/blob/v2.45/chrome/web_view.h#L198-L202
       *
       */
-    def takeHeapSnapshot(): ProtocolCommandResponse = js.native
+    def takeHeapSnapshot(): js.Promise[ProtocolCommandResponse] = js.native
     
     /**
       * Chromium Protocol Command
@@ -351,6 +352,6 @@ object buildCommandsChromiumMod {
       * @ref https://github.com/bayandin/chromedriver/blob/v2.45/window_commands.cc#L813-L827
       *
       */
-    def touchPinch(x: Double, y: Double, scale: Double): Unit = js.native
+    def touchPinch(x: Double, y: Double, scale: Double): js.Promise[Unit] = js.native
   }
 }

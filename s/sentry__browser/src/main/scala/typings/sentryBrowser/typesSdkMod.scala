@@ -11,6 +11,7 @@ import typings.sentryBrowser.typesIntegrationsMod.TryCatch
 import typings.sentryCore.mod.Hub
 import typings.sentryCore.mod.Integrations.FunctionToString
 import typings.sentryCore.mod.Integrations.InboundFilters
+import typings.sentryTypes.typesUserMod.UserFeedback
 import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,6 +22,8 @@ object typesSdkMod {
   @JSImport("@sentry/browser/types/sdk", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def captureUserFeedback(feedback: UserFeedback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("captureUserFeedback")(feedback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def close(): PromiseLike[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[PromiseLike[Boolean]]
   inline def close(timeout: Double): PromiseLike[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(timeout.asInstanceOf[js.Any]).asInstanceOf[PromiseLike[Boolean]]

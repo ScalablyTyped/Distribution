@@ -1,7 +1,7 @@
 
 # Scala.js typings for ronilaukkarinen__gulp-stylelint
 
-Typings are for version 14.0
+Typings are for version 14.1
 
 ## Library description:
 Gulp plugin for running Stylelint results through various reporters.

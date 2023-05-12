@@ -1,9 +1,10 @@
 package typings.libp2p
 
-import typings.libp2pInterfaceAddressManager.mod.AddressManagerEvents
+import typings.libp2pInterfaceLibp2p.mod.Libp2pEvents
 import typings.libp2pInterfacePeerId.mod.PeerId
+import typings.libp2pInterfacePeerStore.mod.PeerStore
 import typings.libp2pInterfaceTransport.mod.TransportManager
-import typings.libp2pInterfaces.eventsMod.EventEmitter
+import typings.libp2pInterfaces.distSrcEventsMod.EventEmitter
 import typings.multiformatsMultiaddr.mod.Multiaddr_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,19 +14,21 @@ object distSrcAddressManagerMod {
   
   @JSImport("libp2p/dist/src/address-manager", "DefaultAddressManager")
   @js.native
-  open class DefaultAddressManager protected () extends EventEmitter[AddressManagerEvents] {
+  open class DefaultAddressManager protected () extends StObject {
     /**
       * Responsible for managing the peer addresses.
       * Peers can specify their listen and announce addresses.
       * The listen addresses will be used by the libp2p transports to listen for new connections,
       * while the announce addresses will be used for the peer addresses' to other peers in the network.
       */
+    def this(components: DefaultAddressManagerComponents) = this()
     def this(components: DefaultAddressManagerComponents, init: AddressManagerInit) = this()
+    
+    def _updatePeerStoreAddresses(): Unit = js.native
     
     /**
       * Add peer observed addresses
       */
-    def addObservedAddr(addr: String): Unit = js.native
     def addObservedAddr(addr: Multiaddr_): Unit = js.native
     
     /* private */ val announce: Any = js.native
@@ -34,11 +37,6 @@ object distSrcAddressManagerMod {
     
     /* private */ val components: Any = js.native
     
-    /**
-      * Add peer observed addresses
-      * Signal that we have confidence an observed multiaddr is publicly dialable -
-      * this will make it appear in the output of getAddresses()
-      */
     def confirmObservedAddr(addr: Multiaddr_): Unit = js.native
     
     def getAddresses(): js.Array[Multiaddr_] = js.native
@@ -62,10 +60,6 @@ object distSrcAddressManagerMod {
     
     /* private */ val observed: Any = js.native
     
-    /**
-      * Signal that we do not have confidence an observed multiaddr is publicly dialable -
-      * this will remove it from the output of getObservedAddrs()
-      */
     def removeObservedAddr(addr: Multiaddr_): Unit = js.native
   }
   
@@ -78,6 +72,10 @@ object distSrcAddressManagerMod {
       */
     var announce: js.UndefOr[js.Array[String]] = js.undefined
     
+    /**
+      * Pass an function in this field to override the list of addresses
+      * that are announced to the network
+      */
     var announceFilter: js.UndefOr[AddressFilter] = js.undefined
     
     /**
@@ -126,21 +124,34 @@ object distSrcAddressManagerMod {
   
   trait DefaultAddressManagerComponents extends StObject {
     
+    var events: EventEmitter[Libp2pEvents]
+    
     var peerId: PeerId
+    
+    var peerStore: PeerStore
     
     var transportManager: TransportManager
   }
   object DefaultAddressManagerComponents {
     
-    inline def apply(peerId: PeerId, transportManager: TransportManager): DefaultAddressManagerComponents = {
-      val __obj = js.Dynamic.literal(peerId = peerId.asInstanceOf[js.Any], transportManager = transportManager.asInstanceOf[js.Any])
+    inline def apply(
+      events: EventEmitter[Libp2pEvents],
+      peerId: PeerId,
+      peerStore: PeerStore,
+      transportManager: TransportManager
+    ): DefaultAddressManagerComponents = {
+      val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], peerId = peerId.asInstanceOf[js.Any], peerStore = peerStore.asInstanceOf[js.Any], transportManager = transportManager.asInstanceOf[js.Any])
       __obj.asInstanceOf[DefaultAddressManagerComponents]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: DefaultAddressManagerComponents] (val x: Self) extends AnyVal {
       
+      inline def setEvents(value: EventEmitter[Libp2pEvents]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      
       inline def setPeerId(value: PeerId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
+      
+      inline def setPeerStore(value: PeerStore): Self = StObject.set(x, "peerStore", value.asInstanceOf[js.Any])
       
       inline def setTransportManager(value: TransportManager): Self = StObject.set(x, "transportManager", value.asInstanceOf[js.Any])
     }

@@ -22,31 +22,7 @@ object devLibCompileMod {
   
   type Compile_ = Compile
   
-  trait Definition extends StObject {
-    
-    var destination: js.UndefOr[String] = js.undefined
-    
-    var title: js.UndefOr[String] = js.undefined
-  }
-  object Definition {
-    
-    inline def apply(): Definition = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Definition]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Definition] (val x: Self) extends AnyVal {
-      
-      inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
-      
-      inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
-      
-      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
-      
-      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
-    }
-  }
+  type Definition = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_micromark-util-types.Definition */ Any
   
   type Event = typings.micromarkUtilTypes.mod.Event
   

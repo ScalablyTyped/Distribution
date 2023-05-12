@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* Inlined std.Omit<@onfleet/node-onfleet.@onfleet/node-onfleet/Resources/Tasks.TaskAutoAssignOptions, 'teams' | 'restrictAutoAssignmentToTeam'> */
 trait TaskAutoAssign extends StObject {
   
   var considerDependencies: js.UndefOr[Boolean] = js.undefined
   
-  var excludeWorkerIds: js.UndefOr[js.Array[String]] = js.undefined
+  var excludedWorkerIds: js.UndefOr[js.Array[String]] = js.undefined
   
   var maxAssignedTaskCount: js.UndefOr[Double] = js.undefined
   
@@ -30,11 +31,11 @@ object TaskAutoAssign {
     
     inline def setConsiderDependenciesUndefined: Self = StObject.set(x, "considerDependencies", js.undefined)
     
-    inline def setExcludeWorkerIds(value: js.Array[String]): Self = StObject.set(x, "excludeWorkerIds", value.asInstanceOf[js.Any])
+    inline def setExcludedWorkerIds(value: js.Array[String]): Self = StObject.set(x, "excludedWorkerIds", value.asInstanceOf[js.Any])
     
-    inline def setExcludeWorkerIdsUndefined: Self = StObject.set(x, "excludeWorkerIds", js.undefined)
+    inline def setExcludedWorkerIdsUndefined: Self = StObject.set(x, "excludedWorkerIds", js.undefined)
     
-    inline def setExcludeWorkerIdsVarargs(value: String*): Self = StObject.set(x, "excludeWorkerIds", js.Array(value*))
+    inline def setExcludedWorkerIdsVarargs(value: String*): Self = StObject.set(x, "excludedWorkerIds", js.Array(value*))
     
     inline def setMaxAssignedTaskCount(value: Double): Self = StObject.set(x, "maxAssignedTaskCount", value.asInstanceOf[js.Any])
     

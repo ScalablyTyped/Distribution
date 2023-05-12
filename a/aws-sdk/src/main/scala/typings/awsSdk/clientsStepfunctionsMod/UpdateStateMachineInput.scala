@@ -27,7 +27,7 @@ trait UpdateStateMachineInput extends StObject {
   var stateMachineArn: Arn
   
   /**
-    * Selects whether AWS X-Ray tracing is enabled.
+    * Selects whether X-Ray tracing is enabled.
     */
   var tracingConfiguration: js.UndefOr[TracingConfiguration] = js.undefined
 }

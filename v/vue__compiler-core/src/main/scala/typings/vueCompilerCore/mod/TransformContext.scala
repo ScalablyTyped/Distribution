@@ -111,7 +111,7 @@ trait TransformContext extends StObject {
   @JSName("onWarn")
   var onWarn_Original: js.Function1[/* warning */ CompilerError, Unit] = js.native
   
-  var parent: ParentNode2 | Null = js.native
+  var parent: ParentNode | Null = js.native
   
   var prefixIdentifiers: Boolean = js.native
   
@@ -141,7 +141,7 @@ trait TransformContext extends StObject {
   
   var temps: Double = js.native
   
-  def transformHoist(children: js.Array[TemplateChildNode], context: TransformContext, parent: ParentNode2): Unit = js.native
+  def transformHoist(children: js.Array[TemplateChildNode], context: TransformContext, parent: ParentNode): Unit = js.native
   @JSName("transformHoist")
   var transformHoist_Original: HoistTransform = js.native
 }

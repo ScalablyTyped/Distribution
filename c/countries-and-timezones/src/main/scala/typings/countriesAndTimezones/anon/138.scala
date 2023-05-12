@@ -9,12 +9,12 @@ trait `138` extends StObject {
   
   var c: js.Array[AQ]
   
-  var u: typings.countriesAndTimezones.countriesAndTimezonesInts.`300`
+  var u: typings.countriesAndTimezones.countriesAndTimezonesInts.`420`
 }
 object `138` {
   
   inline def apply(c: js.Array[AQ]): `138` = {
-    val __obj = js.Dynamic.literal(c = c.asInstanceOf[js.Any], u = 300)
+    val __obj = js.Dynamic.literal(c = c.asInstanceOf[js.Any], u = 420)
     __obj.asInstanceOf[`138`]
   }
   
@@ -25,6 +25,6 @@ object `138` {
     
     inline def setCVarargs(value: AQ*): Self = StObject.set(x, "c", js.Array(value*))
     
-    inline def setU(value: typings.countriesAndTimezones.countriesAndTimezonesInts.`300`): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
+    inline def setU(value: typings.countriesAndTimezones.countriesAndTimezonesInts.`420`): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
   }
 }

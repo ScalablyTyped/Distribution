@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeLaunchConfigurationTemplatesRequest extends StObject {
   
   /**
-    * Request to disconnect Source Server from service by Server ID.
+    * Request to filter Launch Configuration Templates list by Launch Configuration Template ID.
     */
   var launchConfigurationTemplateIDs: js.UndefOr[LaunchConfigurationTemplateIDs] = js.undefined
   
   /**
-    * Request to disconnect Source Server from service by Server ID.
+    * Maximum results to be returned in DescribeLaunchConfigurationTemplates.
     */
-  var maxResults: js.UndefOr[StrictlyPositiveInteger] = js.undefined
+  var maxResults: js.UndefOr[MaxResultsType] = js.undefined
   
   /**
-    * Request to disconnect Source Server from service by Server ID.
+    * Next pagination token returned from DescribeLaunchConfigurationTemplates.
     */
   var nextToken: js.UndefOr[PaginationToken] = js.undefined
 }
@@ -37,7 +37,7 @@ object DescribeLaunchConfigurationTemplatesRequest {
     
     inline def setLaunchConfigurationTemplateIDsVarargs(value: LaunchConfigurationTemplateID*): Self = StObject.set(x, "launchConfigurationTemplateIDs", js.Array(value*))
     
-    inline def setMaxResults(value: StrictlyPositiveInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResultsType): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     

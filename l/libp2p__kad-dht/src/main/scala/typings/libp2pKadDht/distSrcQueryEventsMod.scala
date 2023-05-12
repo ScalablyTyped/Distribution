@@ -1,16 +1,17 @@
 package typings.libp2pKadDht
 
-import typings.libp2pInterfaceDht.mod.AddingPeerEvent
-import typings.libp2pInterfaceDht.mod.DialingPeerEvent
-import typings.libp2pInterfaceDht.mod.FinalPeerEvent
-import typings.libp2pInterfaceDht.mod.PeerResponseEvent
-import typings.libp2pInterfaceDht.mod.ProviderEvent
-import typings.libp2pInterfaceDht.mod.QueryErrorEvent
-import typings.libp2pInterfaceDht.mod.SendingQueryEvent
-import typings.libp2pInterfaceDht.mod.ValueEvent
 import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pInterfacePeerInfo.mod.PeerInfo
 import typings.libp2pKadDht.distSrcMessageDhtMod.Message.MessageType
+import typings.libp2pKadDht.mod.AddPeerEvent
+import typings.libp2pKadDht.mod.DialPeerEvent
+import typings.libp2pKadDht.mod.FinalPeerEvent
+import typings.libp2pKadDht.mod.PeerResponseEvent
+import typings.libp2pKadDht.mod.ProviderEvent
+import typings.libp2pKadDht.mod.QueryErrorEvent
+import typings.libp2pKadDht.mod.QueryOptions
+import typings.libp2pKadDht.mod.SendQueryEvent
+import typings.libp2pKadDht.mod.ValueEvent
 import typings.libp2pRecord.mod.Libp2pRecord
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,35 +23,43 @@ object distSrcQueryEventsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def addingPeerEvent(fields: PeerEventFields): AddingPeerEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("addingPeerEvent")(fields.asInstanceOf[js.Any]).asInstanceOf[AddingPeerEvent]
+  inline def addPeerEvent(fields: PeerEventFields): AddPeerEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("addPeerEvent")(fields.asInstanceOf[js.Any]).asInstanceOf[AddPeerEvent]
+  inline def addPeerEvent(fields: PeerEventFields, options: QueryOptions): AddPeerEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("addPeerEvent")(fields.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AddPeerEvent]
   
-  inline def dialingPeerEvent(fields: DialingPeerEventFields): DialingPeerEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("dialingPeerEvent")(fields.asInstanceOf[js.Any]).asInstanceOf[DialingPeerEvent]
+  inline def dialPeerEvent(fields: DialPeerEventFields): DialPeerEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("dialPeerEvent")(fields.asInstanceOf[js.Any]).asInstanceOf[DialPeerEvent]
+  inline def dialPeerEvent(fields: DialPeerEventFields, options: QueryOptions): DialPeerEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("dialPeerEvent")(fields.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DialPeerEvent]
   
   inline def finalPeerEvent(fields: FinalPeerEventFields): FinalPeerEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("finalPeerEvent")(fields.asInstanceOf[js.Any]).asInstanceOf[FinalPeerEvent]
+  inline def finalPeerEvent(fields: FinalPeerEventFields, options: QueryOptions): FinalPeerEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("finalPeerEvent")(fields.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FinalPeerEvent]
   
   inline def peerResponseEvent(fields: PeerResponseEventField): PeerResponseEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("peerResponseEvent")(fields.asInstanceOf[js.Any]).asInstanceOf[PeerResponseEvent]
+  inline def peerResponseEvent(fields: PeerResponseEventField, options: QueryOptions): PeerResponseEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("peerResponseEvent")(fields.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PeerResponseEvent]
   
   inline def providerEvent(fields: ProviderEventFields): ProviderEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("providerEvent")(fields.asInstanceOf[js.Any]).asInstanceOf[ProviderEvent]
+  inline def providerEvent(fields: ProviderEventFields, options: QueryOptions): ProviderEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("providerEvent")(fields.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ProviderEvent]
   
   inline def queryErrorEvent(fields: ErrorEventFields): QueryErrorEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("queryErrorEvent")(fields.asInstanceOf[js.Any]).asInstanceOf[QueryErrorEvent]
+  inline def queryErrorEvent(fields: ErrorEventFields, options: QueryOptions): QueryErrorEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("queryErrorEvent")(fields.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[QueryErrorEvent]
   
-  inline def sendingQueryEvent(fields: QueryEventFields): SendingQueryEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("sendingQueryEvent")(fields.asInstanceOf[js.Any]).asInstanceOf[SendingQueryEvent]
+  inline def sendQueryEvent(fields: QueryEventFields): SendQueryEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("sendQueryEvent")(fields.asInstanceOf[js.Any]).asInstanceOf[SendQueryEvent]
+  inline def sendQueryEvent(fields: QueryEventFields, options: QueryOptions): SendQueryEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("sendQueryEvent")(fields.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SendQueryEvent]
   
   inline def valueEvent(fields: ValueEventFields): ValueEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("valueEvent")(fields.asInstanceOf[js.Any]).asInstanceOf[ValueEvent]
+  inline def valueEvent(fields: ValueEventFields, options: QueryOptions): ValueEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("valueEvent")(fields.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ValueEvent]
   
-  trait DialingPeerEventFields extends StObject {
+  trait DialPeerEventFields extends StObject {
     
     var peer: PeerId
   }
-  object DialingPeerEventFields {
+  object DialPeerEventFields {
     
-    inline def apply(peer: PeerId): DialingPeerEventFields = {
+    inline def apply(peer: PeerId): DialPeerEventFields = {
       val __obj = js.Dynamic.literal(peer = peer.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DialingPeerEventFields]
+      __obj.asInstanceOf[DialPeerEventFields]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: DialingPeerEventFields] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: DialPeerEventFields] (val x: Self) extends AnyVal {
       
       inline def setPeer(value: PeerId): Self = StObject.set(x, "peer", value.asInstanceOf[js.Any])
     }

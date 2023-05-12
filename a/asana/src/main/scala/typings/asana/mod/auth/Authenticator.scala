@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A layer to abstract the differences between using different types of
   * authentication (Oauth vs. Basic). The Authenticator is responsible for
   * establishing credentials and applying them to outgoing requests.
-  * @constructor
   */
 trait Authenticator extends StObject {
   

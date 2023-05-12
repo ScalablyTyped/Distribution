@@ -2,9 +2,9 @@ package typings.dynogels.mod
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import typings.awsSdk.clientsDynamodbMod.CreateTableOutput
-import typings.awsSdk.clientsDynamodbMod.DescribeTableOutput
-import typings.awsSdk.clientsDynamodbMod.UpdateTableOutput
+import typings.awsSdk2Types.clientsDynamodbMod.CreateTableOutput
+import typings.awsSdk2Types.clientsDynamodbMod.DescribeTableOutput
+import typings.awsSdk2Types.clientsDynamodbMod.UpdateTableOutput
 import typings.dynogels.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

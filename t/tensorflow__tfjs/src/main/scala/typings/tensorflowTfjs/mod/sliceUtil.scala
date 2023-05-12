@@ -1,8 +1,8 @@
 package typings.tensorflowTfjs.mod
 
 import typings.tensorflowTfjsCore.anon.Begin
-import typings.tensorflowTfjsCore.distKernelRegistryMod.TensorInfo
 import typings.tensorflowTfjsCore.distOpsSliceUtilMod.SliceInfo_
+import typings.tensorflowTfjsCore.distTensorInfoMod.TensorInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

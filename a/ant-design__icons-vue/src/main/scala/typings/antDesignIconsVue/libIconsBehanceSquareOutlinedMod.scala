@@ -16,7 +16,7 @@ object libIconsBehanceSquareOutlinedMod extends Shortcut {
   @js.native
   trait BehanceSquareOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_BehanceSquareOutlinedIconType: String = js.native

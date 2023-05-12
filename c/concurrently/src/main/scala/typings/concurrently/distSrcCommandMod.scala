@@ -52,6 +52,7 @@ object distSrcCommandMod {
     
     /* private */ val killProcess: Any = js.native
     
+    /** @deprecated */
     def killable: Boolean = js.native
     
     var killed: Boolean = js.native
@@ -63,10 +64,6 @@ object distSrcCommandMod {
     var name: String = js.native
     
     var pid: js.UndefOr[Double] = js.native
-    
-    /** @inheritdoc */
-    @JSName("prefixColor")
-    val prefixColor_Command: String = js.native
     
     var process: js.UndefOr[ChildProcess] = js.native
     
@@ -86,6 +83,20 @@ object distSrcCommandMod {
     val stdout: Subject[Buffer] = js.native
     
     val timer: Subject[TimerEvent] = js.native
+  }
+  /* static members */
+  object Command {
+    
+    @JSImport("concurrently/dist/src/command", "Command")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Detects whether a command can be killed.
+      *
+      * Also works as a type guard on the input `command`.
+      */
+    inline def canKill(command: Command): /* is concurrently.anon.CommandpidnumberprocessCh */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canKill")(command.asInstanceOf[js.Any]).asInstanceOf[/* is concurrently.anon.CommandpidnumberprocessCh */ Boolean]
   }
   
   type ChildProcess = (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EventEmitter */ Any) & PickChildProcesspidstdins

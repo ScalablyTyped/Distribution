@@ -16,7 +16,7 @@ object libIconsCreditCardOutlinedMod extends Shortcut {
   @js.native
   trait CreditCardOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_CreditCardOutlinedIconType: String = js.native

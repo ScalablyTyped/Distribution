@@ -23,6 +23,7 @@ import typings.carbonComponentsReact.carbonComponentsReactStrings.br
 import typings.carbonComponentsReact.carbonComponentsReactStrings.button
 import typings.carbonComponentsReact.carbonComponentsReactStrings.canvas
 import typings.carbonComponentsReact.carbonComponentsReactStrings.caption
+import typings.carbonComponentsReact.carbonComponentsReactStrings.center
 import typings.carbonComponentsReact.carbonComponentsReactStrings.circle
 import typings.carbonComponentsReact.carbonComponentsReactStrings.cite
 import typings.carbonComponentsReact.carbonComponentsReactStrings.clipPath
@@ -240,6 +241,8 @@ object libComponentsGridMod {
   inline def Column_canvas(props: ColumnIntrinsicProps[canvas]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Column_caption(props: ColumnIntrinsicProps[caption]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_center(props: ColumnIntrinsicProps[center]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Column_circle(props: ColumnIntrinsicProps[circle]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
@@ -594,6 +597,8 @@ object libComponentsGridMod {
   
   inline def Grid_caption(props: GridIntrinsicProps[caption]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
+  inline def Grid_center(props: GridIntrinsicProps[center]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
   inline def Grid_circle(props: GridIntrinsicProps[circle]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Grid_cite(props: GridIntrinsicProps[cite]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
@@ -946,6 +951,8 @@ object libComponentsGridMod {
   inline def Row_canvas(props: RowIntrinsicProps[canvas]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Row_caption(props: RowIntrinsicProps[caption]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_center(props: RowIntrinsicProps[center]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Row_circle(props: RowIntrinsicProps[circle]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   

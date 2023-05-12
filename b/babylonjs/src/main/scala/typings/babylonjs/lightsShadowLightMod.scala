@@ -17,7 +17,7 @@ object lightsShadowLightMod {
   open class ShadowLight protected () extends IShadowLight {
     /**
       * Creates a Light object in the scene.
-      * Documentation : https://doc.babylonjs.com/babylon101/lights
+      * Documentation : https://doc.babylonjs.com/features/featuresDeepDive/lights/lights_introduction
       * @param name The friendly name of the light
       * @param scene The scene the light belongs too
       */

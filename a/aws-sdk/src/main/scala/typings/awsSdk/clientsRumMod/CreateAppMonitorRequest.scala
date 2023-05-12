@@ -12,6 +12,11 @@ trait CreateAppMonitorRequest extends StObject {
   var AppMonitorConfiguration: js.UndefOr[typings.awsSdk.clientsRumMod.AppMonitorConfiguration] = js.undefined
   
   /**
+    * Specifies whether this app monitor allows the web client to define and send custom events. If you omit this parameter, custom events are DISABLED. For more information about custom events, see Send custom events.
+    */
+  var CustomEvents: js.UndefOr[typings.awsSdk.clientsRumMod.CustomEvents] = js.undefined
+  
+  /**
     * Data collected by RUM is kept by RUM for 30 days and then deleted. This parameter specifies whether RUM sends a copy of this telemetry data to Amazon CloudWatch Logs in your account. This enables you to keep the telemetry data for more than 30 days, but it does incur Amazon CloudWatch Logs charges. If you omit this parameter, the default is false.
     */
   var CwLogEnabled: js.UndefOr[Boolean] = js.undefined
@@ -27,7 +32,7 @@ trait CreateAppMonitorRequest extends StObject {
   var Name: AppMonitorName
   
   /**
-    * Assigns one or more tags (key-value pairs) to the app monitor. Tags can help you organize and categorize your resources. You can also use them to scope user permissions by granting a user permission to access or change only resources with certain tag values. Tags don't have any semantic meaning to Amazon Web Services and are interpreted strictly as strings of characters.  &lt;p&gt;You can associate as many as 50 tags with an app monitor.&lt;/p&gt; &lt;p&gt;For more information, see &lt;a href=&quot;https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html&quot;&gt;Tagging Amazon Web Services resources&lt;/a&gt;.&lt;/p&gt; 
+    * Assigns one or more tags (key-value pairs) to the app monitor. Tags can help you organize and categorize your resources. You can also use them to scope user permissions by granting a user permission to access or change only resources with certain tag values. Tags don't have any semantic meaning to Amazon Web Services and are interpreted strictly as strings of characters. You can associate as many as 50 tags with an app monitor. For more information, see Tagging Amazon Web Services resources.
     */
   var Tags: js.UndefOr[TagMap] = js.undefined
 }
@@ -44,6 +49,10 @@ object CreateAppMonitorRequest {
     inline def setAppMonitorConfiguration(value: AppMonitorConfiguration): Self = StObject.set(x, "AppMonitorConfiguration", value.asInstanceOf[js.Any])
     
     inline def setAppMonitorConfigurationUndefined: Self = StObject.set(x, "AppMonitorConfiguration", js.undefined)
+    
+    inline def setCustomEvents(value: CustomEvents): Self = StObject.set(x, "CustomEvents", value.asInstanceOf[js.Any])
+    
+    inline def setCustomEventsUndefined: Self = StObject.set(x, "CustomEvents", js.undefined)
     
     inline def setCwLogEnabled(value: Boolean): Self = StObject.set(x, "CwLogEnabled", value.asInstanceOf[js.Any])
     

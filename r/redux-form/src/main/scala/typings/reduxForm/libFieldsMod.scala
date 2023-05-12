@@ -19,7 +19,7 @@ object libFieldsMod {
     def this(props: BaseFieldsProps[P] & P) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: BaseFieldsProps[P] & P, context: Any) = this()
   }

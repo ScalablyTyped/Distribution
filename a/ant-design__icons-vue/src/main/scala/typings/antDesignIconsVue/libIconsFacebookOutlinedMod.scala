@@ -16,7 +16,7 @@ object libIconsFacebookOutlinedMod extends Shortcut {
   @js.native
   trait FacebookOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_FacebookOutlinedIconType: String = js.native

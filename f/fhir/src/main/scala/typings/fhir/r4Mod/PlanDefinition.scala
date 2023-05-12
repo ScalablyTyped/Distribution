@@ -35,8 +35,6 @@ trait PlanDefinition
   
   var _status: js.UndefOr[Element] = js.undefined
   
-  var _subjectCanonical: js.UndefOr[Element] = js.undefined
-  
   var _subtitle: js.UndefOr[Element] = js.undefined
   
   var _title: js.UndefOr[Element] = js.undefined
@@ -103,7 +101,7 @@ trait PlanDefinition
   var experimental: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A goal describes an expected outcome that activities within the plan are intended to achieve. For example, weight loss, restoring an activity of daily living, obtaining herd immunity via immunization, meeting a process improvement objective, meeting the acceptance criteria for a test as specified by a quality specification, etc.
+    * Goals that describe what the activities within the plan are intended to achieve. For example, weight loss, restoring an activity of daily living, obtaining herd immunity via immunization, meeting a process improvement objective, etc.
     */
   var goal: js.UndefOr[js.Array[PlanDefinitionGoal]] = js.undefined
   
@@ -162,17 +160,12 @@ trait PlanDefinition
   var status: draft | active | retired | unknown
   
   /**
-    * A code, group definition, or canonical reference that describes  or identifies the intended subject of the plan definition. Canonical references are allowed to support the definition of protocols for drug and substance quality specifications, and is allowed to reference a MedicinalProductDefinition, SubstanceDefinition, AdministrableProductDefinition, ManufacturedItemDefinition, or PackagedProductDefinition resource.
-    */
-  var subjectCanonical: js.UndefOr[String] = js.undefined
-  
-  /**
-    * A code, group definition, or canonical reference that describes  or identifies the intended subject of the plan definition. Canonical references are allowed to support the definition of protocols for drug and substance quality specifications, and is allowed to reference a MedicinalProductDefinition, SubstanceDefinition, AdministrableProductDefinition, ManufacturedItemDefinition, or PackagedProductDefinition resource.
+    * A code or group definition that describes the intended subject of the plan definition.
     */
   var subjectCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * A code, group definition, or canonical reference that describes  or identifies the intended subject of the plan definition. Canonical references are allowed to support the definition of protocols for drug and substance quality specifications, and is allowed to reference a MedicinalProductDefinition, SubstanceDefinition, AdministrableProductDefinition, ManufacturedItemDefinition, or PackagedProductDefinition resource.
+    * A code or group definition that describes the intended subject of the plan definition.
     */
   var subjectReference: js.UndefOr[Reference] = js.undefined
   
@@ -338,10 +331,6 @@ object PlanDefinition {
     
     inline def setStatus(value: draft | active | retired | unknown): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    inline def setSubjectCanonical(value: String): Self = StObject.set(x, "subjectCanonical", value.asInstanceOf[js.Any])
-    
-    inline def setSubjectCanonicalUndefined: Self = StObject.set(x, "subjectCanonical", js.undefined)
-    
     inline def setSubjectCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "subjectCodeableConcept", value.asInstanceOf[js.Any])
     
     inline def setSubjectCodeableConceptUndefined: Self = StObject.set(x, "subjectCodeableConcept", js.undefined)
@@ -431,10 +420,6 @@ object PlanDefinition {
     inline def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
     inline def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
-    
-    inline def set_subjectCanonical(value: Element): Self = StObject.set(x, "_subjectCanonical", value.asInstanceOf[js.Any])
-    
-    inline def set_subjectCanonicalUndefined: Self = StObject.set(x, "_subjectCanonical", js.undefined)
     
     inline def set_subtitle(value: Element): Self = StObject.set(x, "_subtitle", value.asInstanceOf[js.Any])
     

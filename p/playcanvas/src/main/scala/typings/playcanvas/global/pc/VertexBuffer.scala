@@ -15,9 +15,10 @@ open class VertexBuffer protected ()
   /**
     * Create a new VertexBuffer instance.
     *
-    * @param {GraphicsDevice} graphicsDevice - The graphics device used to manage this vertex
+    * @param {import('./graphics-device.js').GraphicsDevice} graphicsDevice - The graphics device
+    * used to manage this vertex buffer.
+    * @param {import('./vertex-format.js').VertexFormat} format - The vertex format of this vertex
     * buffer.
-    * @param {VertexFormat} format - The vertex format of this vertex buffer.
     * @param {number} numVertices - The number of vertices that this vertex buffer will hold.
     * @param {number} [usage] - The usage type of the vertex buffer (see BUFFER_*). Defaults to BUFFER_STATIC.
     * @param {ArrayBuffer} [initialData] - Initial data.

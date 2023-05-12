@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetDatabaseOutput extends StObject {
   
   /**
-    * 
+    * The SAP HANA database of an application registered with AWS Systems Manager for SAP.
     */
   var Database: js.UndefOr[typings.awsSdk.clientsSsmsapMod.Database] = js.undefined
   
   /**
-    * 
+    * The tags of a database.
     */
   var Tags: js.UndefOr[TagMap] = js.undefined
 }

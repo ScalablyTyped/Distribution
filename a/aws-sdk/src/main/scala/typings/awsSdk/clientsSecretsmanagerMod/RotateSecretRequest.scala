@@ -12,12 +12,12 @@ trait RotateSecretRequest extends StObject {
   var ClientRequestToken: js.UndefOr[ClientRequestTokenType] = js.undefined
   
   /**
-    * Specifies whether to rotate the secret immediately or wait until the next scheduled rotation window. The rotation schedule is defined in RotateSecretRequest$RotationRules. If you don't immediately rotate the secret, Secrets Manager tests the rotation configuration by running the  testSecret step of the Lambda rotation function. The test creates an AWSPENDING version of the secret and then removes it. If you don't specify this value, then by default, Secrets Manager rotates the secret immediately.
+    * Specifies whether to rotate the secret immediately or wait until the next scheduled rotation window. The rotation schedule is defined in RotateSecretRequest$RotationRules. For secrets that use a Lambda rotation function to rotate, if you don't immediately rotate the secret, Secrets Manager tests the rotation configuration by running the  testSecret step of the Lambda rotation function. The test creates an AWSPENDING version of the secret and then removes it. By default, Secrets Manager rotates the secret immediately.
     */
   var RotateImmediately: js.UndefOr[BooleanType] = js.undefined
   
   /**
-    * The ARN of the Lambda rotation function that can rotate the secret.
+    * For secrets that use a Lambda rotation function to rotate, the ARN of the Lambda rotation function.  For secrets that use managed rotation, omit this field. For more information, see Managed rotation in the Secrets Manager User Guide.
     */
   var RotationLambdaARN: js.UndefOr[RotationLambdaARNType] = js.undefined
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** module Or Internal Object */
 /**
   * @brief HeapGraphNode表示堆视图中的一个节点
-  * @detail 
+  * @detail
   */
 @js.native
 trait ClassHeapGraphNode
@@ -15,64 +15,64 @@ trait ClassHeapGraphNode
      with ClassObject {
   
   /**
-    * class prop 
+    * class prop
     *
-    * 
+    *
     * @brief 子节点列表，由HeapGraphEdge类型对象组成
-    * 
+    *
     * @readonly
     * @type NArray
     */
   var childs: js.Array[Any] = js.native
   
   /**
-    * class prop 
+    * class prop
     *
-    * 
+    *
     * @brief 节点的描述
-    * 
+    *
     * @readonly
-    * @type String
+    *
     */
   var description: String = js.native
   
   /**
-    * class prop 
+    * class prop
     *
-    * 
+    *
     * @brief 节点ID
-    * 
+    *
     * @readonly
-    * @type Integer
+    * @note Assumed to be an integer.
     */
   var id: Double = js.native
   
   /**
-    * class prop 
+    * class prop
     *
-    * 
+    *
     * @brief 节点名称
-    * 
+    *
     * @readonly
-    * @type String
+    *
     */
   var name: String = js.native
   
   /**
-    * class prop 
+    * class prop
     *
-    * 
+    *
     * @brief 节点大小，单位为字节
-    * 
+    *
     * @readonly
-    * @type Integer
+    * @note Assumed to be an integer.
     */
   var shallowSize: Double = js.native
   
   /**
-    * class prop 
+    * class prop
     *
-    * 
+    *
     * @brief 节点类型，可能的值：
     * - profiler.Node_Hidden,         隐藏节点，当显示给用户时可以被过滤掉
     * - profiler.Node_Array,          数组
@@ -88,10 +88,10 @@ trait ClassHeapGraphNode
     * - profiler.Node_SlicedString,   分割的字符串
     * - profiler.Node_Symbol,         符号（ES6）
     * - profiler.Node_SimdValue,      堆中排好序的SIMD值(ES7)
-    * 
-    * 
+    *
+    *
     * @readonly
-    * @type Integer
+    * @note Assumed to be an integer.
     */
   var `type`: Double = js.native
 }

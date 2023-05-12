@@ -1,5 +1,6 @@
 package typings.devtoolsProtocol.mod.Protocol.ServiceWorker
 
+import typings.devtoolsProtocol.devtoolsProtocolStrings.running_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Rewritten from type alias, can be one of: 
   - typings.devtoolsProtocol.devtoolsProtocolStrings.stopped
   - typings.devtoolsProtocol.devtoolsProtocolStrings.starting
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.running
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.running_
   - typings.devtoolsProtocol.devtoolsProtocolStrings.stopping
 */
 trait ServiceWorkerVersionRunningStatus extends StObject
 object ServiceWorkerVersionRunningStatus {
   
-  inline def running: typings.devtoolsProtocol.devtoolsProtocolStrings.running = "running".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.running]
+  inline def running: running_ = "running".asInstanceOf[running_]
   
   inline def starting: typings.devtoolsProtocol.devtoolsProtocolStrings.starting = "starting".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.starting]
   

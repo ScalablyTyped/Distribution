@@ -1,16 +1,18 @@
 package typings.devextreme.mod.DevExpress.viz
 
+import typings.devextreme.mod.DevExpress.common.charts.TimeIntervalConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-/* Rewritten from type alias, can be one of: 
-  - scala.Double
-  - typings.devextreme.anon.Days
-  - typings.devextreme.mod.DevExpress.common.charts.TimeInterval
-*/
-type VizTimeInterval = _VizTimeInterval | Double
+type ScaleBreak = typings.devextreme.mod.DevExpress.common.charts.ScaleBreak
+
+type SeriesType = typings.devextreme.mod.DevExpress.common.charts.SeriesType
+
+type VisualRange = typings.devextreme.mod.DevExpress.common.charts.VisualRange
+
+type VizTimeInterval = TimeIntervalConfig
 
 /* Rewritten from type alias, can be one of: 
   - typings.devextreme.mod.DevExpress.viz.dxChart

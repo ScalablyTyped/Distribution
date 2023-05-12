@@ -1,6 +1,5 @@
 package typings.luminoWidgets
 
-import typings.luminoAlgorithm.typesIterMod.IIterator
 import typings.luminoSignaling.mod.ISignal
 import typings.luminoWidgets.typesDockpanelMod.DockPanel.IAddOptions
 import typings.luminoWidgets.typesDockpanelMod.DockPanel.ILayoutConfig
@@ -14,6 +13,7 @@ import typings.luminoWidgets.typesWidgetMod.Widget.HiddenMode
 import typings.std.Document
 import typings.std.Event
 import typings.std.HTMLDivElement
+import typings.std.IterableIterator
 import typings.std.ShadowRoot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -77,19 +77,19 @@ object typesDockpanelMod {
     /* private */ var _evtKeyDown: Any = js.native
     
     /**
-      * Handle the `'mousedown'` event for the dock panel.
+      * Handle the `'pointerdown'` event for the dock panel.
       */
-    /* private */ var _evtMouseDown: Any = js.native
+    /* private */ var _evtPointerDown: Any = js.native
     
     /**
-      * Handle the `'mousemove'` event for the dock panel.
+      * Handle the `'pointermove'` event for the dock panel.
       */
-    /* private */ var _evtMouseMove: Any = js.native
+    /* private */ var _evtPointerMove: Any = js.native
     
     /**
-      * Handle the `'mouseup'` event for the dock panel.
+      * Handle the `'pointerup'` event for the dock panel.
       */
-    /* private */ var _evtMouseUp: Any = js.native
+    /* private */ var _evtPointerUp: Any = js.native
     
     /* private */ var _layoutModified: Any = js.native
     
@@ -161,16 +161,17 @@ object typesDockpanelMod {
     /**
       * Whether the add buttons for each tab bar are enabled.
       */
+    def addButtonEnabled: Boolean = js.native
     /**
       * Set whether the add buttons for each tab bar are enabled.
       */
-    var addButtonEnabled: Boolean = js.native
+    def addButtonEnabled_=(value: Boolean): Unit = js.native
     
     /**
       * A signal emitted when the add button on a tab bar is clicked.
       *
       */
-    val addRequested: ISignal[this.type, TabBar[Widget]] = js.native
+    def addRequested: ISignal[this.type, TabBar[Widget]] = js.native
     
     /**
       * Add a widget to the dock panel.
@@ -203,12 +204,12 @@ object typesDockpanelMod {
       *
       * @returns A new iterator over the handles in the panel.
       */
-    def handles(): IIterator[HTMLDivElement] = js.native
+    def handles(): IterableIterator[HTMLDivElement] = js.native
     
     /**
       * Whether the dock panel is empty.
       */
-    val isEmpty: Boolean = js.native
+    def isEmpty: Boolean = js.native
     
     /**
       * A signal emitted when the layout configuration is modified.
@@ -221,11 +222,12 @@ object typesDockpanelMod {
       * that multiple synchronous modifications results in only a single
       * emit of the signal.
       */
-    val layoutModified: ISignal[this.type, Unit] = js.native
+    def layoutModified: ISignal[this.type, Unit] = js.native
     
     /**
       * Get the mode for the dock panel.
       */
+    def mode: Mode = js.native
     /**
       * Set the mode for the dock panel.
       *
@@ -234,7 +236,7 @@ object typesDockpanelMod {
       * panel's layout configuration. If layout state must be preserved,
       * save the current layout config before changing the mode.
       */
-    var mode: Mode = js.native
+    def mode_=(value: Mode): Unit = js.native
     
     /**
       * The overlay used by the dock panel.
@@ -244,7 +246,7 @@ object typesDockpanelMod {
     /**
       * The renderer used by the dock panel.
       */
-    val renderer: IRenderer = js.native
+    def renderer: IRenderer = js.native
     
     /**
       * Restore the layout to a previously saved configuration.
@@ -290,15 +292,16 @@ object typesDockpanelMod {
       * This iterator yields the widgets corresponding to the current tab
       * of each tab bar in the panel.
       */
-    def selectedWidgets(): IIterator[Widget] = js.native
+    def selectedWidgets(): IterableIterator[Widget] = js.native
     
     /**
       * Get the spacing between the widgets.
       */
+    def spacing: Double = js.native
     /**
       * Set the spacing between the widgets.
       */
-    var spacing: Double = js.native
+    def spacing_=(value: Double): Unit = js.native
     
     /**
       * Create an iterator over the tab bars in the panel.
@@ -308,23 +311,25 @@ object typesDockpanelMod {
       * #### Notes
       * This iterator does not include the user widgets.
       */
-    def tabBars(): IIterator[TabBar[Widget]] = js.native
+    def tabBars(): IterableIterator[TabBar[Widget]] = js.native
     
     /**
       * Whether the tabs are constrained to their source dock panel
       */
+    def tabsConstrained: Boolean = js.native
     /**
       * Constrain/Allow tabs to be dragged outside of this dock panel
       */
-    var tabsConstrained: Boolean = js.native
+    def tabsConstrained_=(value: Boolean): Unit = js.native
     
     /**
       * Whether the tabs can be dragged / moved at runtime.
       */
+    def tabsMovable: Boolean = js.native
     /**
       * Enable / Disable draggable / movable tabs.
       */
-    var tabsMovable: Boolean = js.native
+    def tabsMovable_=(value: Boolean): Unit = js.native
     
     /**
       * Create an iterator over the user widgets in the panel.
@@ -334,7 +339,7 @@ object typesDockpanelMod {
       * #### Notes
       * This iterator does not include the generated tab bars.
       */
-    def widgets(): IIterator[Widget] = js.native
+    def widgets(): IterableIterator[Widget] = js.native
   }
   object DockPanel {
     

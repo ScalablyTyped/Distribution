@@ -2,6 +2,13 @@ package typings.naverWhale.whale
 
 import typings.chrome.chrome.events.Event
 import typings.chrome.chrome.events.UrlFilter
+import typings.chrome.chromeStrings.active
+import typings.chrome.chromeStrings.cached
+import typings.chrome.chromeStrings.fenced_frame
+import typings.chrome.chromeStrings.outermost_frame
+import typings.chrome.chromeStrings.pending_deletion
+import typings.chrome.chromeStrings.prerender
+import typings.chrome.chromeStrings.sub_frame
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,8 +54,17 @@ object webNavigation {
   }
   object GetAllFrameResultDetails {
     
-    inline def apply(errorOccurred: Boolean, frameId: Double, parentFrameId: Double, processId: Double, url: String): GetAllFrameResultDetails = {
-      val __obj = js.Dynamic.literal(errorOccurred = errorOccurred.asInstanceOf[js.Any], frameId = frameId.asInstanceOf[js.Any], parentFrameId = parentFrameId.asInstanceOf[js.Any], processId = processId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    inline def apply(
+      documentId: String,
+      documentLifecycle: prerender | active | cached | pending_deletion,
+      errorOccurred: Boolean,
+      frameId: Double,
+      frameType: outermost_frame | fenced_frame | sub_frame,
+      parentFrameId: Double,
+      processId: Double,
+      url: String
+    ): GetAllFrameResultDetails = {
+      val __obj = js.Dynamic.literal(documentId = documentId.asInstanceOf[js.Any], documentLifecycle = documentLifecycle.asInstanceOf[js.Any], errorOccurred = errorOccurred.asInstanceOf[js.Any], frameId = frameId.asInstanceOf[js.Any], frameType = frameType.asInstanceOf[js.Any], parentFrameId = parentFrameId.asInstanceOf[js.Any], processId = processId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetAllFrameResultDetails]
     }
     
@@ -98,8 +114,20 @@ object webNavigation {
   
   trait GetFrameResultDetails extends StObject {
     
+    /** A UUID of the document loaded. */
+    var documentId: String
+    
+    /** The lifecycle the document is in. */
+    var documentLifecycle: typings.naverWhale.naverWhaleStrings.prerender | typings.naverWhale.naverWhaleStrings.active | typings.naverWhale.naverWhaleStrings.cached | typings.naverWhale.naverWhaleStrings.pending_deletion
+    
     /** True if the last navigation in this frame was interrupted by an error, i.e. the onErrorOccurred event fired. */
     var errorOccurred: Boolean
+    
+    /** The type of frame the navigation occurred in. */
+    var frameType: typings.naverWhale.naverWhaleStrings.outermost_frame | typings.naverWhale.naverWhaleStrings.fenced_frame | typings.naverWhale.naverWhaleStrings.sub_frame
+    
+    /** A UUID of the parent document owning this frame. This is not set if there is no parent. */
+    var parentDocumentId: js.UndefOr[String] = js.undefined
     
     /** ID of frame that wraps the frame. Set to -1 of no parent frame exists. */
     var parentFrameId: Double
@@ -109,15 +137,36 @@ object webNavigation {
   }
   object GetFrameResultDetails {
     
-    inline def apply(errorOccurred: Boolean, parentFrameId: Double, url: String): GetFrameResultDetails = {
-      val __obj = js.Dynamic.literal(errorOccurred = errorOccurred.asInstanceOf[js.Any], parentFrameId = parentFrameId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    inline def apply(
+      documentId: String,
+      documentLifecycle: typings.naverWhale.naverWhaleStrings.prerender | typings.naverWhale.naverWhaleStrings.active | typings.naverWhale.naverWhaleStrings.cached | typings.naverWhale.naverWhaleStrings.pending_deletion,
+      errorOccurred: Boolean,
+      frameType: typings.naverWhale.naverWhaleStrings.outermost_frame | typings.naverWhale.naverWhaleStrings.fenced_frame | typings.naverWhale.naverWhaleStrings.sub_frame,
+      parentFrameId: Double,
+      url: String
+    ): GetFrameResultDetails = {
+      val __obj = js.Dynamic.literal(documentId = documentId.asInstanceOf[js.Any], documentLifecycle = documentLifecycle.asInstanceOf[js.Any], errorOccurred = errorOccurred.asInstanceOf[js.Any], frameType = frameType.asInstanceOf[js.Any], parentFrameId = parentFrameId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetFrameResultDetails]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: GetFrameResultDetails] (val x: Self) extends AnyVal {
       
+      inline def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
+      
+      inline def setDocumentLifecycle(
+        value: typings.naverWhale.naverWhaleStrings.prerender | typings.naverWhale.naverWhaleStrings.active | typings.naverWhale.naverWhaleStrings.cached | typings.naverWhale.naverWhaleStrings.pending_deletion
+      ): Self = StObject.set(x, "documentLifecycle", value.asInstanceOf[js.Any])
+      
       inline def setErrorOccurred(value: Boolean): Self = StObject.set(x, "errorOccurred", value.asInstanceOf[js.Any])
+      
+      inline def setFrameType(
+        value: typings.naverWhale.naverWhaleStrings.outermost_frame | typings.naverWhale.naverWhaleStrings.fenced_frame | typings.naverWhale.naverWhaleStrings.sub_frame
+      ): Self = StObject.set(x, "frameType", value.asInstanceOf[js.Any])
+      
+      inline def setParentDocumentId(value: String): Self = StObject.set(x, "parentDocumentId", value.asInstanceOf[js.Any])
+      
+      inline def setParentDocumentIdUndefined: Self = StObject.set(x, "parentDocumentId", js.undefined)
       
       inline def setParentFrameId(value: Double): Self = StObject.set(x, "parentFrameId", value.asInstanceOf[js.Any])
       
@@ -185,8 +234,20 @@ object webNavigation {
     extends StObject
        with typings.chrome.chrome.webNavigation.WebNavigationUrlCallbackDetails {
     
+    /** A UUID of the document loaded. (This is not set for onBeforeNavigate callbacks.) */
+    var documentId: js.UndefOr[String] = js.undefined
+    
+    /** The lifecycle the document is in. */
+    var documentLifecycle: typings.naverWhale.naverWhaleStrings.prerender | typings.naverWhale.naverWhaleStrings.active | typings.naverWhale.naverWhaleStrings.cached | typings.naverWhale.naverWhaleStrings.pending_deletion
+    
     /** 0 indicates the navigation happens in the tab content window; a positive value indicates navigation in a subframe. Frame IDs are unique for a given tab and process. */
     var frameId: Double
+    
+    /** The type of frame the navigation occurred in. */
+    var frameType: typings.naverWhale.naverWhaleStrings.outermost_frame | typings.naverWhale.naverWhaleStrings.fenced_frame | typings.naverWhale.naverWhaleStrings.sub_frame
+    
+    /** A UUID of the parent document owning this frame. This is not set if there is no parent. */
+    var parentDocumentId: js.UndefOr[String] = js.undefined
     
     /**
       * The ID of the process runs the renderer for this tab.
@@ -196,15 +257,39 @@ object webNavigation {
   }
   object WebNavigationFramedCallbackDetails {
     
-    inline def apply(frameId: Double, processId: Double, tabId: Double, timeStamp: Double, url: String): WebNavigationFramedCallbackDetails = {
-      val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], processId = processId.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    inline def apply(
+      documentLifecycle: typings.naverWhale.naverWhaleStrings.prerender | typings.naverWhale.naverWhaleStrings.active | typings.naverWhale.naverWhaleStrings.cached | typings.naverWhale.naverWhaleStrings.pending_deletion,
+      frameId: Double,
+      frameType: typings.naverWhale.naverWhaleStrings.outermost_frame | typings.naverWhale.naverWhaleStrings.fenced_frame | typings.naverWhale.naverWhaleStrings.sub_frame,
+      processId: Double,
+      tabId: Double,
+      timeStamp: Double,
+      url: String
+    ): WebNavigationFramedCallbackDetails = {
+      val __obj = js.Dynamic.literal(documentLifecycle = documentLifecycle.asInstanceOf[js.Any], frameId = frameId.asInstanceOf[js.Any], frameType = frameType.asInstanceOf[js.Any], processId = processId.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebNavigationFramedCallbackDetails]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: WebNavigationFramedCallbackDetails] (val x: Self) extends AnyVal {
       
+      inline def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
+      
+      inline def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
+      
+      inline def setDocumentLifecycle(
+        value: typings.naverWhale.naverWhaleStrings.prerender | typings.naverWhale.naverWhaleStrings.active | typings.naverWhale.naverWhaleStrings.cached | typings.naverWhale.naverWhaleStrings.pending_deletion
+      ): Self = StObject.set(x, "documentLifecycle", value.asInstanceOf[js.Any])
+      
       inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+      
+      inline def setFrameType(
+        value: typings.naverWhale.naverWhaleStrings.outermost_frame | typings.naverWhale.naverWhaleStrings.fenced_frame | typings.naverWhale.naverWhaleStrings.sub_frame
+      ): Self = StObject.set(x, "frameType", value.asInstanceOf[js.Any])
+      
+      inline def setParentDocumentId(value: String): Self = StObject.set(x, "parentDocumentId", value.asInstanceOf[js.Any])
+      
+      inline def setParentDocumentIdUndefined: Self = StObject.set(x, "parentDocumentId", js.undefined)
       
       inline def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
     }
@@ -219,8 +304,17 @@ object webNavigation {
   }
   object WebNavigationFramedErrorCallbackDetails {
     
-    inline def apply(error: String, frameId: Double, processId: Double, tabId: Double, timeStamp: Double, url: String): WebNavigationFramedErrorCallbackDetails = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], frameId = frameId.asInstanceOf[js.Any], processId = processId.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    inline def apply(
+      documentLifecycle: prerender | active | cached | pending_deletion,
+      error: String,
+      frameId: Double,
+      frameType: outermost_frame | fenced_frame | sub_frame,
+      processId: Double,
+      tabId: Double,
+      timeStamp: Double,
+      url: String
+    ): WebNavigationFramedErrorCallbackDetails = {
+      val __obj = js.Dynamic.literal(documentLifecycle = documentLifecycle.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], frameId = frameId.asInstanceOf[js.Any], frameType = frameType.asInstanceOf[js.Any], processId = processId.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebNavigationFramedErrorCallbackDetails]
     }
     
@@ -248,14 +342,16 @@ object webNavigation {
   object WebNavigationParentedCallbackDetails {
     
     inline def apply(
+      documentLifecycle: prerender | active | cached | pending_deletion,
       frameId: Double,
+      frameType: outermost_frame | fenced_frame | sub_frame,
       parentFrameId: Double,
       processId: Double,
       tabId: Double,
       timeStamp: Double,
       url: String
     ): WebNavigationParentedCallbackDetails = {
-      val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], parentFrameId = parentFrameId.asInstanceOf[js.Any], processId = processId.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(documentLifecycle = documentLifecycle.asInstanceOf[js.Any], frameId = frameId.asInstanceOf[js.Any], frameType = frameType.asInstanceOf[js.Any], parentFrameId = parentFrameId.asInstanceOf[js.Any], processId = processId.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebNavigationParentedCallbackDetails]
     }
     
@@ -353,7 +449,9 @@ object webNavigation {
   object WebNavigationTransitionCallbackDetails {
     
     inline def apply(
+      documentLifecycle: prerender | active | cached | pending_deletion,
       frameId: Double,
+      frameType: outermost_frame | fenced_frame | sub_frame,
       processId: Double,
       tabId: Double,
       timeStamp: Double,
@@ -361,7 +459,7 @@ object webNavigation {
       transitionType: String,
       url: String
     ): WebNavigationTransitionCallbackDetails = {
-      val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], processId = processId.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], transitionQualifiers = transitionQualifiers.asInstanceOf[js.Any], transitionType = transitionType.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(documentLifecycle = documentLifecycle.asInstanceOf[js.Any], frameId = frameId.asInstanceOf[js.Any], frameType = frameType.asInstanceOf[js.Any], processId = processId.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], transitionQualifiers = transitionQualifiers.asInstanceOf[js.Any], transitionType = transitionType.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebNavigationTransitionCallbackDetails]
     }
     

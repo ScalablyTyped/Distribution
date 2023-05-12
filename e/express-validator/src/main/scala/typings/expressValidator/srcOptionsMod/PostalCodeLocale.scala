@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.expressValidator.expressValidatorStrings.AT
   - typings.expressValidator.expressValidatorStrings.AU
   - typings.expressValidator.expressValidatorStrings.AZ
+  - typings.expressValidator.expressValidatorStrings.BA
   - typings.expressValidator.expressValidatorStrings.BE
   - typings.expressValidator.expressValidatorStrings.BG
   - typings.expressValidator.expressValidatorStrings.BR
@@ -80,6 +81,8 @@ object PostalCodeLocale {
   inline def AU: typings.expressValidator.expressValidatorStrings.AU = "AU".asInstanceOf[typings.expressValidator.expressValidatorStrings.AU]
   
   inline def AZ: typings.expressValidator.expressValidatorStrings.AZ = "AZ".asInstanceOf[typings.expressValidator.expressValidatorStrings.AZ]
+  
+  inline def BA: typings.expressValidator.expressValidatorStrings.BA = "BA".asInstanceOf[typings.expressValidator.expressValidatorStrings.BA]
   
   inline def BE: typings.expressValidator.expressValidatorStrings.BE = "BE".asInstanceOf[typings.expressValidator.expressValidatorStrings.BE]
   

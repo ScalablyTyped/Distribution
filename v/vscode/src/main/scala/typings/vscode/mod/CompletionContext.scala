@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CompletionContext extends StObject {
   
   /**
-    * Character that triggered the completion item provider.
-    *
-    * `undefined` if the provider was not triggered by a character.
-    *
-    * The trigger character is already in the document when the completion provider is triggered.
-    */
+  		 * Character that triggered the completion item provider.
+  		 *
+  		 * `undefined` if the provider was not triggered by a character.
+  		 *
+  		 * The trigger character is already in the document when the completion provider is triggered.
+  		 */
   val triggerCharacter: js.UndefOr[String] = js.undefined
   
   /**
-    * How the completion was triggered.
-    */
+  		 * How the completion was triggered.
+  		 */
   val triggerKind: CompletionTriggerKind
 }
 object CompletionContext {

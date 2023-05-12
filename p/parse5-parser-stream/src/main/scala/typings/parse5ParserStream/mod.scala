@@ -1,6 +1,5 @@
 package typings.parse5ParserStream
 
-import typings.node.nodeColonstreamMod.Writable
 import typings.parse5.distParserMod.ParserOptions
 import typings.parse5.distTreeAdaptersInterfaceMod.TreeAdapterTypeMap
 import typings.parse5.mod.Parser
@@ -11,12 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("parse5-parser-stream", "ParserStream")
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writable * / any */ @JSImport("parse5-parser-stream", "ParserStream")
   @js.native
   /**
     * @param options Parsing options.
     */
-  open class ParserStream[T /* <: TreeAdapterTypeMap[Any, Any, Any, Any, Any, Any, Any, Any, Any, Any] */] () extends Writable {
+  open class ParserStream[T /* <: TreeAdapterTypeMap[Any, Any, Any, Any, Any, Any, Any, Any, Any, Any] */] () extends StObject {
     def this(options: ParserOptions[T]) = this()
     def this(options: Unit, parser: Parser[T]) = this()
     def this(options: ParserOptions[T], parser: Parser[T]) = this()

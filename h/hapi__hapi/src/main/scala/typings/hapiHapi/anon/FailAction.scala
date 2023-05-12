@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FailAction extends StObject {
   
-  var failAction: js.UndefOr[typings.hapiHapi.mod.Lifecycle.FailAction] = js.undefined
+  var failAction: js.UndefOr[typings.hapiHapi.libTypesUtilsMod.Lifecycle.FailAction] = js.undefined
   
   var parse: js.UndefOr[Boolean] = js.undefined
 }
@@ -20,7 +20,7 @@ object FailAction {
   @scala.inline
   implicit open class MutableBuilder[Self <: FailAction] (val x: Self) extends AnyVal {
     
-    inline def setFailAction(value: typings.hapiHapi.mod.Lifecycle.FailAction): Self = StObject.set(x, "failAction", value.asInstanceOf[js.Any])
+    inline def setFailAction(value: typings.hapiHapi.libTypesUtilsMod.Lifecycle.FailAction): Self = StObject.set(x, "failAction", value.asInstanceOf[js.Any])
     
     inline def setFailActionUndefined: Self = StObject.set(x, "failAction", js.undefined)
     

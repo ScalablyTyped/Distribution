@@ -23,12 +23,12 @@ object clientsSagemakerfeaturestoreruntimeMod {
   trait BatchGetRecordError extends StObject {
     
     /**
-      * The error code of an error that has occured when attempting to retrieve a batch of Records. For more information on errors, see  Errors.
+      * The error code of an error that has occurred when attempting to retrieve a batch of Records. For more information on errors, see Errors.
       */
     var ErrorCode: ValueAsString
     
     /**
-      * The error message of an error that has occured when attempting to retrieve a record in the batch.
+      * The error message of an error that has occurred when attempting to retrieve a record in the batch.
       */
     var ErrorMessage: Message
     
@@ -138,7 +138,7 @@ object clientsSagemakerfeaturestoreruntimeMod {
   trait BatchGetRecordResponse extends StObject {
     
     /**
-      * A list of errors that have occured when retrieving a batch of Records.
+      * A list of errors that have occurred when retrieving a batch of Records.
       */
     var Errors: BatchGetRecordErrors
     
@@ -193,7 +193,7 @@ object clientsSagemakerfeaturestoreruntimeMod {
     var Record: typings.awsSdk.clientsSagemakerfeaturestoreruntimeMod.Record
     
     /**
-      * The value of the record identifer in string format.
+      * The value of the record identifier in string format.
       */
     var RecordIdentifierValueAsString: ValueAsString
   }
@@ -252,6 +252,11 @@ object clientsSagemakerfeaturestoreruntimeMod {
   trait DeleteRecordRequest extends StObject {
     
     /**
+      * The name of the deletion mode for deleting the record. By default, the deletion mode is set to SoftDelete.
+      */
+    var DeletionMode: js.UndefOr[typings.awsSdk.clientsSagemakerfeaturestoreruntimeMod.DeletionMode] = js.undefined
+    
+    /**
       * Timestamp indicating when the deletion event occurred. EventTime can be used to query data at a certain point in time.
       */
     var EventTime: ValueAsString
@@ -265,6 +270,11 @@ object clientsSagemakerfeaturestoreruntimeMod {
       * The value for the RecordIdentifier that uniquely identifies the record, in string format. 
       */
     var RecordIdentifierValueAsString: ValueAsString
+    
+    /**
+      * A list of stores from which you're deleting the record. By default, Feature Store deletes the record from all of the stores that you're using for the FeatureGroup.
+      */
+    var TargetStores: js.UndefOr[typings.awsSdk.clientsSagemakerfeaturestoreruntimeMod.TargetStores] = js.undefined
   }
   object DeleteRecordRequest {
     
@@ -280,13 +290,30 @@ object clientsSagemakerfeaturestoreruntimeMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: DeleteRecordRequest] (val x: Self) extends AnyVal {
       
+      inline def setDeletionMode(value: DeletionMode): Self = StObject.set(x, "DeletionMode", value.asInstanceOf[js.Any])
+      
+      inline def setDeletionModeUndefined: Self = StObject.set(x, "DeletionMode", js.undefined)
+      
       inline def setEventTime(value: ValueAsString): Self = StObject.set(x, "EventTime", value.asInstanceOf[js.Any])
       
       inline def setFeatureGroupName(value: FeatureGroupName): Self = StObject.set(x, "FeatureGroupName", value.asInstanceOf[js.Any])
       
       inline def setRecordIdentifierValueAsString(value: ValueAsString): Self = StObject.set(x, "RecordIdentifierValueAsString", value.asInstanceOf[js.Any])
+      
+      inline def setTargetStores(value: TargetStores): Self = StObject.set(x, "TargetStores", value.asInstanceOf[js.Any])
+      
+      inline def setTargetStoresUndefined: Self = StObject.set(x, "TargetStores", js.undefined)
+      
+      inline def setTargetStoresVarargs(value: TargetStore*): Self = StObject.set(x, "TargetStores", js.Array(value*))
     }
   }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.SoftDelete
+    - typings.awsSdk.awsSdkStrings.HardDelete
+    - java.lang.String
+  */
+  type DeletionMode = _DeletionMode | String
   
   type FeatureGroupName = String
   
@@ -325,7 +352,7 @@ object clientsSagemakerfeaturestoreruntimeMod {
   trait GetRecordRequest extends StObject {
     
     /**
-      * The name of the feature group in which you want to put the records.
+      * The name of the feature group from which you want to retrieve a record.
       */
     var FeatureGroupName: typings.awsSdk.clientsSagemakerfeaturestoreruntimeMod.FeatureGroupName
     
@@ -399,6 +426,11 @@ object clientsSagemakerfeaturestoreruntimeMod {
       * List of FeatureValues to be inserted. This will be a full over-write. If you only want to update few of the feature values, do the following:   Use GetRecord to retrieve the latest record.   Update the record returned from GetRecord.    Use PutRecord to update feature values.  
       */
     var Record: typings.awsSdk.clientsSagemakerfeaturestoreruntimeMod.Record
+    
+    /**
+      * A list of stores to which you're adding the record. By default, Feature Store adds the record to all of the stores that you're using for the FeatureGroup.
+      */
+    var TargetStores: js.UndefOr[typings.awsSdk.clientsSagemakerfeaturestoreruntimeMod.TargetStores] = js.undefined
   }
   object PutRecordRequest {
     
@@ -415,6 +447,12 @@ object clientsSagemakerfeaturestoreruntimeMod {
       inline def setRecord(value: Record): Self = StObject.set(x, "Record", value.asInstanceOf[js.Any])
       
       inline def setRecordVarargs(value: FeatureValue*): Self = StObject.set(x, "Record", js.Array(value*))
+      
+      inline def setTargetStores(value: TargetStores): Self = StObject.set(x, "TargetStores", value.asInstanceOf[js.Any])
+      
+      inline def setTargetStoresUndefined: Self = StObject.set(x, "TargetStores", js.undefined)
+      
+      inline def setTargetStoresVarargs(value: TargetStore*): Self = StObject.set(x, "TargetStores", js.Array(value*))
     }
   }
   
@@ -443,12 +481,12 @@ object clientsSagemakerfeaturestoreruntimeMod {
     var config_SageMakerFeatureStoreRuntime: ConfigBase & ClientConfiguration = js.native
     
     /**
-      * Deletes a Record from a FeatureGroup. A new record will show up in the OfflineStore when the DeleteRecord API is called. This record will have a value of True in the is_deleted column.
+      * Deletes a Record from a FeatureGroup in the OnlineStore. Feature Store supports both SOFT_DELETE and HARD_DELETE. For SOFT_DELETE (default), feature columns are set to null and the record is no longer retrievable by GetRecord or BatchGetRecord. For HARD_DELETE, the complete Record is removed from the OnlineStore. In both cases, Feature Store appends the deleted record marker to the OfflineStore with feature values set to null, is_deleted value set to True, and EventTime set to the delete input EventTime. Note that the EventTime specified in DeleteRecord should be set later than the EventTime of the existing record in the OnlineStore for that RecordIdentifer. If it is not, the deletion does not occur:   For SOFT_DELETE, the existing (undeleted) record remains in the OnlineStore, though the delete record marker is still written to the OfflineStore.    HARD_DELETE returns EventTime: 400 ValidationException to indicate that the delete operation failed. No delete record marker is written to the OfflineStore.  
       */
     def deleteRecord(): Request[js.Object, AWSError] = js.native
     def deleteRecord(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
     /**
-      * Deletes a Record from a FeatureGroup. A new record will show up in the OfflineStore when the DeleteRecord API is called. This record will have a value of True in the is_deleted column.
+      * Deletes a Record from a FeatureGroup in the OnlineStore. Feature Store supports both SOFT_DELETE and HARD_DELETE. For SOFT_DELETE (default), feature columns are set to null and the record is no longer retrievable by GetRecord or BatchGetRecord. For HARD_DELETE, the complete Record is removed from the OnlineStore. In both cases, Feature Store appends the deleted record marker to the OfflineStore with feature values set to null, is_deleted value set to True, and EventTime set to the delete input EventTime. Note that the EventTime specified in DeleteRecord should be set later than the EventTime of the existing record in the OnlineStore for that RecordIdentifer. If it is not, the deletion does not occur:   For SOFT_DELETE, the existing (undeleted) record remains in the OnlineStore, though the delete record marker is still written to the OfflineStore.    HARD_DELETE returns EventTime: 400 ValidationException to indicate that the delete operation failed. No delete record marker is written to the OfflineStore.  
       */
     def deleteRecord(params: DeleteRecordRequest): Request[js.Object, AWSError] = js.native
     def deleteRecord(
@@ -482,9 +520,22 @@ object clientsSagemakerfeaturestoreruntimeMod {
     def putRecord(params: PutRecordRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.OnlineStore
+    - typings.awsSdk.awsSdkStrings.OfflineStore
+    - java.lang.String
+  */
+  type TargetStore = _TargetStore | String
+  
+  type TargetStores = js.Array[TargetStore]
+  
   type UnprocessedIdentifiers = js.Array[BatchGetRecordIdentifier]
   
   type ValueAsString = String
+  
+  trait _DeletionMode extends StObject
+  
+  trait _TargetStore extends StObject
   
   trait _apiVersion extends StObject
   

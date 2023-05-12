@@ -16,7 +16,7 @@ object libIconsSkypeFilledMod extends Shortcut {
   @js.native
   trait SkypeFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_SkypeFilledIconType: String = js.native

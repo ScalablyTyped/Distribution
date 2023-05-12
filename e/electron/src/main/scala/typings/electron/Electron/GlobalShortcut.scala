@@ -53,7 +53,7 @@ trait GlobalShortcut extends StObject {
     * * "Media Previous Track"
     * * "Media Stop"
     */
-  def registerAll(accelerators: js.Array[String], callback: js.Function0[Unit]): Unit
+  def registerAll(accelerators: js.Array[Accelerator], callback: js.Function0[Unit]): Unit
   
   /**
     * Unregisters the global shortcut of `accelerator`.
@@ -70,7 +70,7 @@ object GlobalShortcut {
   inline def apply(
     isRegistered: Accelerator => Boolean,
     register: (Accelerator, js.Function0[Unit]) => Boolean,
-    registerAll: (js.Array[String], js.Function0[Unit]) => Unit,
+    registerAll: (js.Array[Accelerator], js.Function0[Unit]) => Unit,
     unregister: Accelerator => Unit,
     unregisterAll: () => Unit
   ): GlobalShortcut = {
@@ -85,7 +85,7 @@ object GlobalShortcut {
     
     inline def setRegister(value: (Accelerator, js.Function0[Unit]) => Boolean): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
     
-    inline def setRegisterAll(value: (js.Array[String], js.Function0[Unit]) => Unit): Self = StObject.set(x, "registerAll", js.Any.fromFunction2(value))
+    inline def setRegisterAll(value: (js.Array[Accelerator], js.Function0[Unit]) => Unit): Self = StObject.set(x, "registerAll", js.Any.fromFunction2(value))
     
     inline def setUnregister(value: Accelerator => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction1(value))
     

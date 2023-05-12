@@ -17,7 +17,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Like other objects in the system, users are referred to by numerical IDs.
   * However, the special string identifier `me` can be used anywhere
   * a user ID is accepted, to refer to the current authenticated user.
-  * @class
   * @param {Dispatcher} dispatcher The API dispatcher
   */
 @js.native

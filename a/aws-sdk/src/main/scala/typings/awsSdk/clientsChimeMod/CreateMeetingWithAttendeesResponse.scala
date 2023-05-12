@@ -16,6 +16,9 @@ trait CreateMeetingWithAttendeesResponse extends StObject {
     */
   var Errors: js.UndefOr[BatchCreateAttendeeErrorList] = js.undefined
   
+  /**
+    * A meeting created using the Amazon Chime SDK.
+    */
   var Meeting: js.UndefOr[typings.awsSdk.clientsChimeMod.Meeting] = js.undefined
 }
 object CreateMeetingWithAttendeesResponse {

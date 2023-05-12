@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InitiateLayerUploadRequest extends StObject {
   
   /**
-    * The AWS account ID associated with the registry to which you intend to upload layers. If you do not specify a registry, the default public registry is assumed.
+    * The Amazon Web Services account ID, or registry alias, that's associated with the registry to which you intend to upload layers. If you do not specify a registry, the default public registry is assumed.
     */
   var registryId: js.UndefOr[RegistryIdOrAlias] = js.undefined
   
   /**
-    * The name of the repository to which you intend to upload layers.
+    * The name of the repository that you want to upload layers to.
     */
   var repositoryName: RepositoryName
 }

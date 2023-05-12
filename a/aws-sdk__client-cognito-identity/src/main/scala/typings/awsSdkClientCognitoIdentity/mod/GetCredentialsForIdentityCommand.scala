@@ -10,6 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class GetCredentialsForIdentityCommand protected ()
   extends typings.awsSdkClientCognitoIdentity.distTypesCommandsMod.GetCredentialsForIdentityCommand {
+  /**
+    * @public
+    */
   def this(input: GetCredentialsForIdentityCommandInput) = this()
 }
 /* static members */

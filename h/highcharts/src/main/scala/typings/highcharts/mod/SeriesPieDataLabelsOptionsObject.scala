@@ -8,15 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SeriesPieDataLabelsOptionsObject extends StObject {
   
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) The alignment of the data label
-    * compared to the point. If `right`, the right side of the label should be
-    * touching the point. For points with an extent, like columns, the
-    * alignments also dictates how to align it inside the box, as given with
-    * the inside option. Can be one of `left`, `center` or `right`.
-    */
-  var align: js.UndefOr[AlignValue | Null] = js.undefined
-  
-  /**
     * (Highcharts, Highmaps) Alignment method for data labels. Possible values
     * are:
     *
@@ -30,19 +21,13 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
   var alignTo: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) Whether to allow data labels to
-    * overlap. To make the labels less sensitive for overlapping, the
-    * dataLabels.padding can be set to 0.
-    */
-  var allowOverlap: js.UndefOr[Boolean] = js.undefined
-  
-  /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enable or disable the initial
     * animation when a series is displayed for the `dataLabels`. The animation
     * can also be set as a configuration object. Please note that this option
-    * only applies to the initial animation. For other animations, see
-    * chart.animation and the animation parameter under the API methods. The
-    * following properties are supported:
+    * only applies to the initial animation.
+    *
+    * For other animations, see chart.animation and the animation parameter
+    * under the API methods. The following properties are supported:
     *
     * - `defer`: The animation delay time in milliseconds.
     */
@@ -52,13 +37,14 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The background color or gradient
-    * for the data label.
+    * for the data label. Setting it to `auto` will use the point's color.
     */
   var backgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The border color for the data
-    * label. Defaults to `undefined`.
+    * label. Setting it to `auto` will use the point's color. Defaults to
+    * `undefined`.
     */
   var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
@@ -118,23 +104,21 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
   /**
     * (Highcharts, Highmaps) Specifies the method that is used to generate the
     * connector path. Highcharts provides 3 built-in connector shapes:
-    * `'fixedOffset'` (default), `'straight'` and `'crookedLine'`. Using
-    * `'crookedLine'` has the most sense (in most of the cases) when
-    * `'alignTo'` is set.
+    * `'crookedLine'` (default since v11), `'fixedOffset'` and `'straight'`.
     *
     * Users can provide their own method by passing a function instead of a
-    * String. 3 arguments are passed to the callback:
+    * string. Three arguments are passed to the callback:
     *
-    * - Object that holds the information about the coordinates of the label
+    * - An object that holds the information about the coordinates of the label
     * (`x` & `y` properties) and how the label is located in relation to the
     * pie (`alignment` property). `alignment` can by one of the following:
     * `'left'` (pie on the left side of the data label), `'right'` (pie on the
     * right side of the data label) or `'center'` (data label overlaps the
     * pie).
     *
-    * - Object that holds the information about the position of the connector.
-    * Its `touchingSliceAt` porperty tells the position of the place where the
-    * connector touches the slice.
+    * - An object that holds the information about the position of the
+    * connector. Its `touchingSliceAt` porperty tells the position of the place
+    * where the connector touches the slice.
     *
     * - Data label options
     *
@@ -155,9 +139,11 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
   /**
     * (Highcharts, Highmaps) Works only if `connectorShape` is `'crookedLine'`.
     * It defines how far from the vertical plot edge the coonnector path should
-    * be crooked.
+    * be crooked. With the default, `undefined`, the crook is placed so that
+    * the horizontal line from the label intersects with the radial line
+    * extending through the center of the pie slice.
     */
-  var crookDistance: js.UndefOr[Double] = js.undefined
+  var crookDistance: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to hide data labels that
@@ -170,10 +156,9 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
     * (Highcharts, Highstock, Gantt) Whether to defer displaying the data
     * labels until the initial series animation has finished. Setting to
     * `false` renders the data label immediately. If set to `true` inherits the
-    * defer time set in plotOptions.series.animation. If set to a number, a
-    * defer time is specified in milliseconds.
+    * defer time set in plotOptions.series.animation.
     */
-  var defer: js.UndefOr[Boolean | Double] = js.undefined
+  var defer: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highmaps) The distance of the data label from the pie's
@@ -211,14 +196,6 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
     * takes precedence and the formatter is ignored.
     */
   var formatter: js.UndefOr[DataLabelsFormatterCallbackFunction] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock, Highmaps, Gantt) For points with an extent, like
-    * columns or map areas, whether to align the data label inside the box or
-    * to the actual value point. Defaults to `false` in most cases, `true` in
-    * stacked columns.
-    */
-  var inside: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Format for points with the value
@@ -284,7 +261,7 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
   
   /**
     * (Highcharts, Highmaps) Whether to render the connector as a soft arc or a
-    * line with sharp break. Works only if `connectorShape` equals to
+    * line with a sharp break. Works only if `connectorShape` equals to
     * `fixedOffset`.
     */
   var softConnector: js.UndefOr[Boolean] = js.undefined
@@ -366,19 +343,9 @@ object SeriesPieDataLabelsOptionsObject {
   @scala.inline
   implicit open class MutableBuilder[Self <: SeriesPieDataLabelsOptionsObject] (val x: Self) extends AnyVal {
     
-    inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
-    
-    inline def setAlignNull: Self = StObject.set(x, "align", null)
-    
     inline def setAlignTo(value: String): Self = StObject.set(x, "alignTo", value.asInstanceOf[js.Any])
     
     inline def setAlignToUndefined: Self = StObject.set(x, "alignTo", js.undefined)
-    
-    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
-    
-    inline def setAllowOverlap(value: Boolean): Self = StObject.set(x, "allowOverlap", value.asInstanceOf[js.Any])
-    
-    inline def setAllowOverlapUndefined: Self = StObject.set(x, "allowOverlap", js.undefined)
     
     inline def setAnimation(
       value: Boolean | PlotFunnelDataLabelsAnimationOptions | PlotItemDataLabelsAnimationOptions | PlotPieDataLabelsAnimationOptions | PlotPyramidDataLabelsAnimationOptions | PlotVariablepieDataLabelsAnimationOptions | PartialAnimationOptionsOb
@@ -426,7 +393,7 @@ object SeriesPieDataLabelsOptionsObject {
     
     inline def setConnectorWidthUndefined: Self = StObject.set(x, "connectorWidth", js.undefined)
     
-    inline def setCrookDistance(value: Double): Self = StObject.set(x, "crookDistance", value.asInstanceOf[js.Any])
+    inline def setCrookDistance(value: String): Self = StObject.set(x, "crookDistance", value.asInstanceOf[js.Any])
     
     inline def setCrookDistanceUndefined: Self = StObject.set(x, "crookDistance", js.undefined)
     
@@ -434,7 +401,7 @@ object SeriesPieDataLabelsOptionsObject {
     
     inline def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
     
-    inline def setDefer(value: Boolean | Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    inline def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
     inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
     
@@ -457,10 +424,6 @@ object SeriesPieDataLabelsOptionsObject {
     inline def setFormatter(value: DataLabelsFormatterCallbackFunction): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
     
     inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
-    
-    inline def setInside(value: Boolean): Self = StObject.set(x, "inside", value.asInstanceOf[js.Any])
-    
-    inline def setInsideUndefined: Self = StObject.set(x, "inside", js.undefined)
     
     inline def setNullFormat(value: Boolean | String): Self = StObject.set(x, "nullFormat", value.asInstanceOf[js.Any])
     

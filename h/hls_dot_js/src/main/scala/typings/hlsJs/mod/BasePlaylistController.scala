@@ -1,18 +1,24 @@
 package typings.hlsJs.mod
 
-import typings.hlsJs.mod.Events.ERROR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@JSImport("hls.js", "BasePlaylistController")
 @js.native
-trait BasePlaylistController
+open class BasePlaylistController protected ()
   extends StObject
      with NetworkComponentAPI {
+  def this(hls: Hls, logPrefix: String) = this()
   
   /* protected */ var canLoad: Boolean = js.native
   
+  /* protected */ def checkRetry(errorEvent: ErrorData): Boolean = js.native
+  
   /* protected */ def clearTimer(): Unit = js.native
+  
+  /* CompleteClass */
+  override def destroy(): Unit = js.native
   
   /* private */ var getDeliveryDirectives: Any = js.native
   
@@ -23,20 +29,27 @@ trait BasePlaylistController
   
   /* protected */ def log(msg: Any): Unit = js.native
   
-  /* protected */ def onError(event: ERROR, data: ErrorData): Unit = js.native
-  
   /* protected */ def playlistLoaded(index: Double, data: AudioTrackLoadedData | TrackLoadedData): Unit = js.native
   /* protected */ def playlistLoaded(index: Double, data: AudioTrackLoadedData | TrackLoadedData, previousDetails: LevelDetails): Unit = js.native
   /* protected */ def playlistLoaded(index: Double, data: LevelLoadedData): Unit = js.native
   /* protected */ def playlistLoaded(index: Double, data: LevelLoadedData, previousDetails: LevelDetails): Unit = js.native
   
-  /* protected */ var retryCount: Double = js.native
+  /* protected */ var requestScheduled: Double = js.native
   
-  /* protected */ def retryLoadingOrFail(errorEvent: ErrorData): Boolean = js.native
+  /* protected */ def shouldLoadPlaylist(): Boolean = js.native
+  /* protected */ def shouldLoadPlaylist(playlist: Level): Boolean = js.native
+  /* protected */ def shouldLoadPlaylist(playlist: MediaPlaylist): Boolean = js.native
   
-  /* protected */ def shouldLoadTrack(track: MediaPlaylist): Boolean = js.native
+  /* protected */ def shouldReloadPlaylist(): Boolean = js.native
+  /* protected */ def shouldReloadPlaylist(playlist: Level): Boolean = js.native
+  /* protected */ def shouldReloadPlaylist(playlist: MediaPlaylist): Boolean = js.native
   
   def startLoad(): Unit = js.native
+  /* CompleteClass */
+  override def startLoad(startPosition: Double): Unit = js.native
+  
+  /* CompleteClass */
+  override def stopLoad(): Unit = js.native
   
   /* protected */ def switchParams(playlistUri: String): js.UndefOr[HlsUrlParameters] = js.native
   /* protected */ def switchParams(playlistUri: String, previous: LevelDetails): js.UndefOr[HlsUrlParameters] = js.native

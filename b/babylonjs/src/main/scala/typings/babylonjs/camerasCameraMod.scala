@@ -29,7 +29,7 @@ object camerasCameraMod {
     /**
       * Instantiates a new camera object.
       * This should not be used directly but through the inherited cameras: ArcRotate, Free...
-      * @see https://doc.babylonjs.com/features/cameras
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/cameras
       * @param name Defines the name of the camera in the scene
       * @param position Defines the position of the camera
       * @param scene Defines the scene the camera belongs too
@@ -237,7 +237,7 @@ object camerasCameraMod {
     
     /**
       * Attach a post process to the camera.
-      * @see https://doc.babylonjs.com/how_to/how_to_use_postprocesses#attach-postprocess
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/postProcesses/usePostProcesses#attach-postprocess
       * @param postProcess The post process to attach to the camera
       * @param insertAt The position of the post process in case several of them are in use in the scene
       * @returns the position the post process has been inserted at
@@ -259,7 +259,6 @@ object camerasCameraMod {
       * @returns the cloned camera
       */
     def clone(name: String): Camera = js.native
-    def clone(name: String, newParent: Nullable[Node]): Camera = js.native
     
     /**
       * needs to be overridden by children so sub has required properties to be copied
@@ -284,7 +283,7 @@ object camerasCameraMod {
     
     /**
       * Detach a post process to the camera.
-      * @see https://doc.babylonjs.com/how_to/how_to_use_postprocesses#attach-postprocess
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/postProcesses/usePostProcesses#attach-postprocess
       * @param postProcess The post process to detach from the camera
       */
     def detachPostProcess(postProcess: PostProcess): Unit = js.native

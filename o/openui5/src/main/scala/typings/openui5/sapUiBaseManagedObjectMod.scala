@@ -1,10 +1,26 @@
 package typings.openui5
 
-import typings.openui5.anon.CloneBindings
+import typings.openui5.anon.CloneChildren
 import typings.openui5.anon.DetailedReason
-import typings.openui5.anon.Element
+import typings.openui5.anon.Draggable
+import typings.openui5.anon.ElementMessage
 import typings.openui5.anon.Property
+import typings.openui5.anon.TypeString
+import typings.openui5.openui5Strings.Accessibility
+import typings.openui5.openui5Strings.Appearance
+import typings.openui5.openui5Strings.Behavior
+import typings.openui5.openui5Strings.Data
+import typings.openui5.openui5Strings.Designtime
+import typings.openui5.openui5Strings.Dimension
+import typings.openui5.openui5Strings.Identification
+import typings.openui5.openui5Strings.Misc
+import typings.openui5.openui5Strings.bindable
+import typings.openui5.openui5Strings.hidden
+import typings.openui5.openui5Strings.public
 import typings.openui5.sap.ClassInfo
+import typings.openui5.sapUiBaseManagedObjectMod.MetadataOptions.Aggregation
+import typings.openui5.sapUiBaseManagedObjectMod.MetadataOptions.Association
+import typings.openui5.sapUiBaseManagedObjectMod.MetadataOptions.Event
 import typings.openui5.sapUiModelBindingModeMod.BindingMode
 import typings.openui5.sapUiModelChangeReasonMod.ChangeReason
 import typings.std.Record
@@ -266,9 +282,8 @@ object sapUiBaseManagedObjectMod {
       * in `oClassInfo`.
       *
       * `oClassInfo` can contain the same information that {@link sap.ui.base.Object.extend} already accepts,
-      * plus the following new properties in the 'metadata' object literal:
-      *
-      *
+      * plus the following new properties in the 'metadata' object literal (see {@link sap.ui.base.ManagedObject.MetadataOptions
+      * MetadataOptions} for details on each of them):
       * 	 - `library : string`
       * 	 - `properties : object`
       * 	 - `defaultProperty : string`
@@ -276,9 +291,7 @@ object sapUiBaseManagedObjectMod {
       * 	 - `defaultAggregation : string`
       * 	 - `associations : object`
       * 	 - `events : object`
-      * 	 - `specialSettings : object`// this one is still experimental and not for public usage!
-      *
-      * Each of these properties is explained in more detail lateron.
+      * 	 - `specialSettings : object` // this one is still experimental and not for public usage!
       *
       * Example:
       * ```javascript
@@ -318,321 +331,47 @@ object sapUiBaseManagedObjectMod {
       * ```
       *
       *
-      * Detailed explanation of properties
-      *
-      *
-      * **'library'** : string
-      *  Name of the library that the new subclass should belong to. If the subclass is a control or element,
-      * it will automatically register with that library so that authoring tools can discover it. By convention,
-      * the name of the subclass should have the library name as a prefix, but subfolders are allowed, e.g. `sap.ui.layout.form.Form`
-      * belongs to library `sap.ui.layout`.
-      *
-      * **'properties'** : object
-      *  An object literal whose properties each define a new managed property in the ManagedObject subclass.
-      * The value can either be a simple string which then will be assumed to be the type of the new property
-      * or it can be an object literal with the following properties
-      * 	 - `type: string` type of the new property. Must either be one of the built-in types 'string',
-      * 			'boolean', 'int', 'float', 'object', 'function' or 'any', or a type created and registered with {@link
-      * 			sap.ui.base.DataType.createType} or an array type based on one of the previous types (e.g. 'int[]' or
-      * 			'string[]', but not just 'array').
-      * 	 - `visibility: string` either 'hidden' or 'public', defaults to 'public'. Properties that belong
-      * 			to the API of a class must be 'public' whereas 'hidden' properties can only be used internally. Only
-      * 			public properties are accepted by the constructor or by `applySettings` or in declarative representations
-      * 			like an `XMLView`. Equally, only public properties are cloned.
-      * 	 - `byValue: boolean` (either can be omitted or set to the boolean value `true`) If set to `true`,
-      * 			the property value will be {@link module:sap/base/util/deepClone deep cloned} on write and read operations
-      * 			to ensure that the internal value can't be modified by the outside. The property `byValue` is currently
-      * 			restricted to a `boolean` value. Other types are reserved for future use. Class definitions must only
-      * 			use boolean values for the flag (or omit it), but readers of ManagedObject metadata should handle any
-      * 			truthy value as `true` to be future safe. Note that using `byValue:true` has a performance impact on
-      * 			property access and therefore should be used carefully. It also doesn't make sense to set this option
-      * 			for properties with a primitive type (they have value semantic anyhow) or for properties with arrays
-      * 			of primitive types (they are already cloned with a less expensive implementation). `group:string`
-      * 			a semantic grouping of the properties, intended to be used in design time tools. Allowed values are (case
-      * 			sensitive): Accessibility, Appearance, Behavior, Data, Designtime, Dimension, Identification, Misc
-      * 	 - `defaultValue: any` the default value for the property or null if there is no defaultValue.
-      *
-      * 	 - `bindable: boolean|string` (either can be omitted or set to the boolean value `true` or the
-      * 			magic string 'bindable') If set to `true` or 'bindable', additional named methods `bindName` and
-      * 			`unbindName` are generated as convenience. Despite its name, setting this flag is not mandatory
-      * 			to make the managed property bindable. The generic methods {@link #bindProperty} and {@link #unbindProperty}
-      * 			can always be used.  `selector: string` Optional; can be set to a valid CSS selector (as accepted
-      * 			by the {@link https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelector Element.prototype.querySelector}
-      * 			method). When set, it locates the DOM element that represents this property's value. It should only be
-      * 			set for properties that have a visual text representation in the DOM.
-      *
-      * The purpose of the selector is to allow other framework parts or design time tooling to identify the
-      * DOM parts of a control or element that represent a specific property without knowing the control or element
-      * implementation in detail.
-      *
-      * As an extension to the standard CSS selector syntax, the selector string can contain the placeholder
-      * `{id}` (multiple times). Before evaluating the selector in the context of an element or control, all
-      * occurrences of the placeholder have to be replaced by the (potentially escaped) ID of that element or
-      * control. In fact, any selector should start with `#{id}` to ensure that the query result is limited to
-      * the desired element or control.
-      *
-      * **Note**: there is a convenience method {@link sap.ui.core.Element#getDomRefForSetting} that evaluates
-      * the selector in the context of a concrete element or control instance. It also handles the placeholder
-      * `{id}`. Only selected framework features may use that private method, it is not yet a public API and
-      * might be changed or removed in future versions of UI5. However, instead of maintaining the `selector`
-      * in the metadata, element and control classes can overwrite `getDomRefForSetting` and determine the DOM
-      * element dynamically.  Property names should use camelCase notation, start with a lowercase
-      * letter and only use characters from the set [a-zA-Z0-9_$]. If an aggregation in the literal is preceded
-      * by a JSDoc comment (doclet) and if the UI5 plugin and template are used for JSDoc3 generation, the doclet
-      * will be used as generic documentation of the aggregation.
-      *
-      * For each public property 'foo', the following methods will be created by the "extend" method and will
-      * be added to the prototype of the subclass:
-      * 	 - getFoo() - returns the current value of property 'foo'. Internally calls {@link #getProperty}
-      * 	 - setFoo(v) - sets 'v' as the new value of property 'foo'. Internally calls {@link #setProperty}
-      * 	 - bindFoo(c) - (only if property was defined to be 'bindable'): convenience function that wraps {@link
-      * 			#bindProperty}
-      * 	 - unbindFoo() - (only if property was defined to be 'bindable'): convenience function that wraps {@link
-      * 			#unbindProperty}  For hidden properties, no methods are generated.
-      *
-      * **'defaultProperty'** : string
-      *  When specified, the default property must match the name of one of the properties defined for the new
-      * subclass (either own or inherited). The named property can be used to identify the main property to be
-      * used for bound data. E.g. the value property of a field control.
-      *
-      * **'aggregations'** : object
-      *  An object literal whose properties each define a new aggregation in the ManagedObject subclass. The
-      * value can either be a simple string which then will be assumed to be the type of the new aggregation
-      * or it can be an object literal with the following properties
-      * 	 - `type: string` type of the new aggregation. must be the full global name of a ManagedObject
-      * 			subclass or UI5 interface (in dot notation, e.g. 'sap.m.Button')
-      * 	 - `[multiple]: boolean` whether the aggregation is a 0..1 (false) or a 0..n aggregation (true),
-      * 			defaults to true
-      * 	 - `[singularName]: string`. Singular name for 0..n aggregations. For 0..n aggregations the name
-      * 			by convention should be the plural name. Methods affecting multiple objects in an aggregation will use
-      * 			the plural name (e.g. getItems(), whereas methods that deal with a single object will use the singular
-      * 			name (e.g. addItem). The framework knows a set of common rules for building plural form of English nouns
-      * 			and uses these rules to determine a singular name on its own. if that name is wrong, a singluarName can
-      * 			be specified with this property.
-      * 	 - `[visibility]: string` either 'hidden' or 'public', defaults to 'public'. Aggregations that
-      * 			belong to the API of a class must be 'public' whereas 'hidden' aggregations typically are used for the
-      * 			implementation of composite classes (e.g. composite controls). Only public aggregations are accepted
-      * 			by the constructor or by `applySettings` or in declarative representations like an `XMLView`. Equally,
-      * 			only public aggregations are cloned.
-      * 	 - `bindable: boolean|string` (either can be omitted or set to the boolean value `true` or the
-      * 			magic string 'bindable') If set to `true` or 'bindable', additional named methods `bindName` and
-      * 			`unbindName` are generated as convenience. Despite its name, setting this flag is not mandatory
-      * 			to make the managed aggregation bindable. The generic methods {@link #bindAggregation} and {@link #unbindAggregation}
-      * 			can always be used.
-      * 	 - `forwarding: object` If set, this defines a forwarding of objects added to this aggregation
-      * 			into an aggregation of another ManagedObject - typically to an inner control within a composite control.
-      * 			This means that all adding, removal, or other operations happening on the source aggregation are actually
-      * 			called on the target instance. All elements added to the source aggregation will be located at the target
-      * 			aggregation (this means the target instance is their parent). Both, source and target element will return
-      * 			the added elements when asked for the content of the respective aggregation. If present, the named (non-generic)
-      * 			aggregation methods will be called for the target aggregation. Aggregations can only be forwarded to
-      * 			non-hidden aggregations of the same or higher multiplicity (i.e. an aggregation with multiplicity "0..n"
-      * 			cannot be forwarded to an aggregation with multiplicity "0..1"). The target aggregation must also be
-      * 			"compatible" to the source aggregation in the sense that any items given to the source aggregation must
-      * 			also be valid in the target aggregation (otherwise the target element will throw a validation error).
-      * 			If the forwarded elements use data binding, the target element must be properly aggregated by the source
-      * 			element to make sure all models are available there as well. The aggregation target must remain the same
-      * 			instance across the entire lifetime of the source control. Aggregation forwarding will behave unexpectedly
-      * 			when the content in the target aggregation is modified by other actors (e.g. by the target element or
-      * 			by another forwarding from a different source aggregation). Hence, this is not allowed. The forwarding
-      * 			configuration object defines the target of the forwarding. The available settings are:
-      * 	`idSuffix: string`A string which is appended to the ID of this ManagedObject to construct
-      * the ID of the target ManagedObject. This is one of the two options to specify the target. This option
-      * requires the target instance to be created in the init() method of this ManagedObject and to be always
-      * available.
-      * 	 - `getter: string`The name of the function on instances of this ManagedObject which returns
-      * 			the target instance. This second option to specify the target can be used for lazy instantiation of the
-      * 			target. Note that either idSuffix or getter must be given. Also note that the target instance returned
-      * 			by the getter must remain the same over the entire lifetime of this ManagedObject and the implementation
-      * 			assumes that all instances return the same type of object (at least the target aggregation must always
-      * 			be defined in the same class).
-      * 	 - `aggregation: string`The name of the aggregation on the target into which the objects shall
-      * 			be forwarded. The multiplicity of the target aggregation must be the same as the one of the source aggregation
-      * 			for which forwarding is defined.
-      * 	 - `[forwardBinding]: boolean`Whether any binding should happen on the forwarding target or not.
-      * 			Default if omitted is `false`, which means any bindings happen on the outer ManagedObject. When the binding
-      * 			is forwarded, all binding methods like updateAggregation, getBindingInfo, refreshAggregation etc. are
-      * 			called on the target element of the forwarding instead of being called on this element. The basic aggregation
-      * 			mutator methods (add/remove etc.) are only called on the forwarding target element. Without forwardBinding,
-      * 			they are called on this element, but forwarded to the forwarding target, where they actually modify the
-      * 			aggregation.    `selector: string` Optional; can be set to a valid CSS selector
-      * 			(as accepted by the {@link https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelector Element.prototype.querySelector}
-      * 			method). When set, it locates the DOM element that surrounds the aggregation's content. It should only
-      * 			be set for aggregations that have a visual representation in the DOM. A DOM element surrounding the aggregation's
-      * 			rendered content should be available in the DOM, even if the aggregation is empty or not rendered for
-      * 			some reason. In cases where this is not possible or not intended, `getDomRefForSetting` can be overridden,
-      * 			see below.
-      *
-      * The purpose of the selector is to allow other framework parts like drag and drop or design time tooling
-      * to identify those DOM parts of a control or element that represent a specific aggregation without knowing
-      * the control or element implementation in detail.
-      *
-      * As an extension to the standard CSS selector syntax, the selector string can contain the placeholder
-      * `{id}` (multiple times). Before evaluating the selector in the context of an element or control, all
-      * occurrences of the placeholder have to be replaced by the (potentially escaped) ID of that element or
-      * control. In fact, any selector should start with `#{id}` to ensure that the query result is limited to
-      * the desired element or control.
-      *
-      * **Note**: there is a convenience method {@link sap.ui.core.Element#getDomRefForSetting} that evaluates
-      * the selector in the context of a concrete element or control instance. It also handles the placeholder
-      * `{id}`. Only selected framework features may use that private method, it is not yet a public API and
-      * might be changed or removed in future versions of UI5. However, instead of maintaining the `selector`
-      * in the metadata, element and control classes can overwrite `getDomRefForSetting` to calculate or add
-      * the appropriate DOM Element dynamically.   Aggregation names should use camelCase notation,
-      * start with a lowercase letter and only use characters from the set [a-zA-Z0-9_$]. The name for a hidden
-      * aggregations might start with an underscore. If an aggregation in the literal is preceded by a JSDoc
-      * comment (doclet) and if the UI5 plugin and template are used for JSDoc3 generation, the doclet will be
-      * used as generic documentation of the aggregation.
-      *
-      * For each public aggregation 'item' of cardinality 0..1, the following methods will be created by the
-      * "extend" method and will be added to the prototype of the subclass:
-      * 	 - getItem() - returns the current value of aggregation 'item'. Internally calls {@link #getAggregation}
-      * 			with a default value of `undefined`
-      * 	 - setItem(o) - sets 'o' as the new aggregated object in aggregation 'item'. Internally calls {@link
-      * 			#setAggregation}
-      * 	 - destroyItem(o) - destroy a currently aggregated object in aggregation 'item' and clears the aggregation.
-      * 			Internally calls {@link #destroyAggregation}
-      * 	 - bindItem(c) - (only if aggregation was defined to be 'bindable'): convenience function that wraps
-      * 			{@link #bindAggregation}
-      * 	 - unbindItem() - (only if aggregation was defined to be 'bindable'): convenience function that wraps
-      * 			{@link #unbindAggregation}  For a public aggregation 'items' of cardinality 0..n, the following
-      * 			methods will be created:
-      * 	 - getItems() - returns an array with the objects contained in aggregation 'items'. Internally calls
-      * 			{@link #getAggregation} with a default value of `[]`
-      * 	 - addItem(o) - adds an object as last element in the aggregation 'items'. Internally calls {@link #addAggregation}
-      *
-      * 	 - insertItem(o,p) - inserts an object into the aggregation 'items'. Internally calls {@link #insertAggregation}
-      *
-      * 	 - indexOfItem(o) - returns the position of the given object within the aggregation 'items'. Internally
-      * 			calls {@link #indexOfAggregation}
-      * 	 - removeItem(v) - removes an object from the aggregation 'items'. Internally calls {@link #removeAggregation}
-      *
-      * 	 - removeItems() - removes all objects from the aggregation 'items'. Internally calls {@link #removeAllAggregation}
-      *
-      * 	 - destroyItems() - destroy all currently aggregated objects in aggregation 'items' and clears the aggregation.
-      * 			Internally calls {@link #destroyAggregation}
-      * 	 - bindItems(c) - (only if aggregation was defined to be 'bindable'): convenience function that wraps
-      * 			{@link #bindAggregation}
-      * 	 - unbindItems() - (only if aggregation was defined to be 'bindable'): convenience function that wraps
-      * 			{@link #unbindAggregation}  For hidden aggregations, no methods are generated.
-      *
-      * **'defaultAggregation'** : string
-      *  When specified, the default aggregation must match the name of one of the aggregations defined for the
-      * new subclass (either own or inherited). The named aggregation will be used in contexts where no aggregation
-      * is specified. E,g. when an object in an XMLView embeds other objects without naming an aggregation, as
-      * in the following example:
-      * ```javascript
-      *
-      *  <!-- assuming the defaultAggregation for Dialog is 'content' -->
-      *  <Dialog>
-      *    <Text/>
-      *    <Button/>
-      *  </Dialog>
-      * ```
-      *
-      *
-      * **'associations'** : object
-      *  An object literal whose properties each define a new association of the ManagedObject subclass. The
-      * value can either be a simple string which then will be assumed to be the type of the new association
-      * or it can be an object literal with the following properties
-      * 	 - `type: string` type of the new association
-      * 	 - `multiple: boolean` whether the association is a 0..1 (false) or a 0..n association (true),
-      * 			defaults to false(1) for associations
-      * 	 - `[singularName]: string`. Singular name for 0..n associations. For 0..n associations the name
-      * 			by convention should be the plural name. Methods affecting multiple objects in an association will use
-      * 			the plural name (e.g. getItems(), whereas methods that deal with a single object will use the singular
-      * 			name (e.g. addItem). The framework knows a set of common rules for building plural form of English nouns
-      * 			and uses these rules to determine a singular name on its own. if that name is wrong, a singluarName can
-      * 			be specified with this property.
-      * 	 - `visibility: string` either 'hidden' or 'public', defaults to 'public'. Associations that
-      * 			belong to the API of a class must be 'public' whereas 'hidden' associations can only be used internally.
-      * 			Only public associations are accepted by the constructor or by `applySettings` or in declarative representations
-      * 			like an `XMLView`. Equally, only public associations are cloned.  Association names should use camelCase
-      * 			notation, start with a lowercase letter and only use characters from the set [a-zA-Z0-9_$]. If an association
-      * 			in the literal is preceded by a JSDoc comment (doclet) and if the UI5 plugin and template are used for
-      * 			JSDoc3 generation, the doclet will be used as generic documentation of the association.
-      *
-      * For each association 'ref' of cardinality 0..1, the following methods will be created by the "extend"
-      * method and will be added to the prototype of the subclass:
-      * 	 - getRef() - returns the current value of association 'item'. Internally calls {@link #getAssociation}
-      * 			with a default value of `undefined`
-      * 	 - setRef(o) - sets 'o' as the new associated object in association 'item'. Internally calls {@link
-      * 			#setAssociation}  For a public association 'refs' of cardinality 0..n, the following methods will
-      * 			be created:
-      * 	 - getRefs() - returns an array with the objects contained in association 'items'. Internally calls
-      * 			{@link #getAssociation} with a default value of `[]`
-      * 	 - addRef(o) - adds an object as last element in the association 'items'. Internally calls {@link #addAssociation}
-      *
-      * 	 - removeRef(v) - removes an object from the association 'items'. Internally calls {@link #removeAssociation}
-      *
-      * 	 - removeAllRefs() - removes all objects from the association 'items'. Internally calls {@link #removeAllAssociation}
-      * 			 For hidden associations, no methods are generated.
-      *
-      * **'events'** : object
-      *  An object literal whose properties each define a new event of the ManagedObject subclass. The value
-      * can either be a simple string which then will be assumed to be the type of the new association or it
-      * can be an object literal with the following properties
-      * 	 - `allowPreventDefault: boolean` whether the event allows to prevented the default behavior
-      * 			of the event source
-      * 	 - `parameters: object` an object literal that describes the parameters of this event.
-      * 			Event names should use camelCase notation, start with a lower-case letter and only use characters from
-      * 			the set [a-zA-Z0-9_$]. If an event in the literal is preceded by a JSDoc comment (doclet) and if the
-      * 			UI5 plugin and template are used for JSDoc3 generation, the doclet will be used as generic documentation
-      * 			of the event.
-      *
-      * For each event 'Some' the following methods will be created by the "extend" method and will be added
-      * to the prototype of the subclass:
-      * 	 - attachSome(fn,o) - registers a listener for the event. Internally calls {@link #attachEvent}
-      * 	 - detachSome(fn,o) - deregisters a listener for the event. Internally calls {@link #detachEvent}
-      * 	 - fireSome() - fire the event. Internally calls {@link #fireEvent}
-      *
-      * **'specialSettings'** : object
-      *  Special settings are an experimental feature and MUST NOT BE DEFINED in controls or applications outside
-      * of the `sap.ui.core` library. There's no generic or general way how to set or get the values for special
-      * settings. For the same reason, they cannot be bound against a model. If there's a way for consumers to
-      * define a value for a special setting, it must be documented in the class that introduces the setting.
-      *
-      * @returns the created class / constructor function
+      * @returns The created class / constructor function
       */
     inline def extend[T /* <: Record[String, Any] */](/**
-      * name of the class to be created
+      * Name of the class to be created
       */
     sClassName: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any]).asInstanceOf[js.Function]
     inline def extend[T /* <: Record[String, Any] */](
       /**
-      * name of the class to be created
+      * Name of the class to be created
       */
     sClassName: String,
       /**
-      * object literal with information about the class
+      * Object literal with information about the class
       */
     oClassInfo: Unit,
       /**
-      * constructor function for the metadata object. If not given, it defaults to `sap.ui.base.ManagedObjectMetadata`.
+      * Constructor function for the metadata object. If not given, it defaults to `sap.ui.base.ManagedObjectMetadata`.
       */
     FNMetaImpl: js.Function
     ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any], FNMetaImpl.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     inline def extend[T /* <: Record[String, Any] */](
       /**
-      * name of the class to be created
+      * Name of the class to be created
       */
     sClassName: String,
       /**
-      * object literal with information about the class
+      * Object literal with information about the class
       */
     oClassInfo: ClassInfo[T, ManagedObject]
     ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     inline def extend[T /* <: Record[String, Any] */](
       /**
-      * name of the class to be created
+      * Name of the class to be created
       */
     sClassName: String,
       /**
-      * object literal with information about the class
+      * Object literal with information about the class
       */
     oClassInfo: ClassInfo[T, ManagedObject],
       /**
-      * constructor function for the metadata object. If not given, it defaults to `sap.ui.base.ManagedObjectMetadata`.
+      * Constructor function for the metadata object. If not given, it defaults to `sap.ui.base.ManagedObjectMetadata`.
       */
     FNMetaImpl: js.Function
     ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any], FNMetaImpl.asInstanceOf[js.Any])).asInstanceOf[js.Function]
@@ -816,6 +555,8 @@ object sapUiBaseManagedObjectMod {
     extends typings.openui5.sapUiBaseEventProviderMod.default {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Adds some entity `oObject` to the aggregation identified by `sAggregationName`.
       *
       * If the given object is not valid with regard to the aggregation (if it is not an instance of the type
@@ -857,6 +598,8 @@ object sapUiBaseManagedObjectMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Adds some object with the ID `sId` to the association identified by `sAssociationName` and marks this
       * ManagedObject as changed.
       *
@@ -1455,7 +1198,7 @@ object sapUiBaseManagedObjectMod {
       * Configuration object; when omitted, both properties default to `true`; when specified, undefined properties
       * default to `false`
       */
-    oOptions: CloneBindings
+    oOptions: CloneChildren
     ): this.type = js.native
     def clone(
       /**
@@ -1470,7 +1213,7 @@ object sapUiBaseManagedObjectMod {
       * Configuration object; when omitted, both properties default to `true`; when specified, undefined properties
       * default to `false`
       */
-    oOptions: CloneBindings
+    oOptions: CloneChildren
     ): this.type = js.native
     def clone(
       /**
@@ -1495,7 +1238,7 @@ object sapUiBaseManagedObjectMod {
       * Configuration object; when omitted, both properties default to `true`; when specified, undefined properties
       * default to `false`
       */
-    oOptions: CloneBindings
+    oOptions: CloneChildren
     ): this.type = js.native
     def clone(
       /**
@@ -1510,7 +1253,7 @@ object sapUiBaseManagedObjectMod {
       * Configuration object; when omitted, both properties default to `true`; when specified, undefined properties
       * default to `false`
       */
-    oOptions: CloneBindings
+    oOptions: CloneChildren
     ): this.type = js.native
     
     def destroy(
@@ -1523,6 +1266,8 @@ object sapUiBaseManagedObjectMod {
     ): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Destroys (all) the managed object(s) in the aggregation named `sAggregationName` and empties the aggregation.
       * If the aggregation did contain any object, this ManagedObject is marked as changed.
       *
@@ -1768,6 +1513,8 @@ object sapUiBaseManagedObjectMod {
     ): js.Array[ManagedObject] = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:formatError formatError} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1776,9 +1523,11 @@ object sapUiBaseManagedObjectMod {
     def fireFormatError(/**
       * Parameters to pass along with the event
       */
-    mParameters: Element): this.type = js.native
+    mParameters: Property): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:modelContextChange modelContextChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1790,6 +1539,8 @@ object sapUiBaseManagedObjectMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:parseError parseError} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1798,9 +1549,11 @@ object sapUiBaseManagedObjectMod {
     def fireParseError(/**
       * Parameters to pass along with the event
       */
-    mParameters: Property): this.type = js.native
+    mParameters: ElementMessage): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:validationError validationError} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1809,9 +1562,11 @@ object sapUiBaseManagedObjectMod {
     def fireValidationError(/**
       * Parameters to pass along with the event
       */
-    mParameters: Property): this.type = js.native
+    mParameters: ElementMessage): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:validationSuccess validationSuccess} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1820,9 +1575,11 @@ object sapUiBaseManagedObjectMod {
     def fireValidationSuccess(/**
       * Parameters to pass along with the event
       */
-    mParameters: Element): this.type = js.native
+    mParameters: Property): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns the aggregated object(s) for the named aggregation of this ManagedObject.
       *
       * If the aggregation does not contain any objects(s), the given `oDefaultForCreation` (or `null`) is set
@@ -1874,6 +1631,8 @@ object sapUiBaseManagedObjectMod {
     ): ManagedObject | js.Array[ManagedObject] | Null = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns the content of the association with the given name.
       *
       * For associations of cardinality 0..1, a single string with the ID of an associated object is returned
@@ -1940,6 +1699,8 @@ object sapUiBaseManagedObjectMod {
     sModelName: String): js.UndefOr[typings.openui5.sapUiModelContextMod.default | Null] = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns the binding info for the given property or aggregation.
       *
       * The binding info contains information about path, binding object, format options, sorter, filter etc.
@@ -1955,6 +1716,8 @@ object sapUiBaseManagedObjectMod {
     sName: String): js.Object = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Get the binding path for a specific aggregation/property.
       *
       * @returns the binding path for the given name
@@ -2098,6 +1861,8 @@ object sapUiBaseManagedObjectMod {
     def getParent(): ManagedObject | Null = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns the value for the property with the given `sPropertyName`.
       *
       * **Note:** This method is a low-level API as described in the class documentation.
@@ -2121,6 +1886,8 @@ object sapUiBaseManagedObjectMod {
     def hasModel(): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Searches for the provided ManagedObject in the named aggregation and returns its 0-based index if found,
       * or -1 otherwise. Returns -2 if the given named aggregation is of cardinality 0..1 and doesn't reference
       * the given object.
@@ -2143,6 +1910,8 @@ object sapUiBaseManagedObjectMod {
     ): int = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Inserts managed object `oObject` to the aggregation named `sAggregationName` at position `iIndex`.
       *
       * If the given object is not valid with regard to the aggregation (if it is not an instance of the type
@@ -2200,6 +1969,8 @@ object sapUiBaseManagedObjectMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Marks this object and its aggregated children as 'invalid'.
       *
       * The term 'invalid' originally was introduced by controls where a change to the object's state made the
@@ -2227,6 +1998,7 @@ object sapUiBaseManagedObjectMod {
     
     /**
       * @SINCE 1.93
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Checks if an object's destruction has been started. During the descruction of an object its ID is still
       * registered, and child objects could be still aggregated. Creating another object with the same ID would
@@ -2246,6 +2018,8 @@ object sapUiBaseManagedObjectMod {
     def isDestroyed(): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns whether re-rendering is currently suppressed on this ManagedObject.
       *
       * @returns Whether re-rendering is suppressed
@@ -2253,6 +2027,8 @@ object sapUiBaseManagedObjectMod {
     def isInvalidateSuppressed(): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns whether the given property value is initial and has not been explicitly set or bound. Even after
       * setting the default value or setting null/undefined (which also causes the default value to be set),
       * the property is no longer initial. A property can be reset to initial state by calling `resetProperty(sPropertyName)`.
@@ -2265,6 +2041,8 @@ object sapUiBaseManagedObjectMod {
     sPropertyName: String): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * This method is used internally and should only be overridden by a tree managed object which utilizes
       * the tree binding. In this case and if the aggregation is a tree node the overridden method should then
       * return true. If true is returned the tree binding will be used instead of the list binding.
@@ -2279,6 +2057,7 @@ object sapUiBaseManagedObjectMod {
     
     /**
       * @SINCE 1.28
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Generic method which is called, whenever messages for this object exist.
       */
@@ -2291,6 +2070,8 @@ object sapUiBaseManagedObjectMod {
     aMessages: js.Array[Any]): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Generic method which can be called, when an aggregation needs to be refreshed. This method does not make
       * any change on the aggregation, but just calls the `getContexts` method of the binding to trigger fetching
       * of new data.
@@ -2333,6 +2114,8 @@ object sapUiBaseManagedObjectMod {
     bSuppressInvalidate: Boolean
     ): ManagedObject | Null = js.native
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Removes an object from the aggregation named `sAggregationName` with cardinality 0..n.
       *
       * The removed object is not destroyed nor is it marked as changed.
@@ -2408,6 +2191,8 @@ object sapUiBaseManagedObjectMod {
     ): ManagedObject | Null = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Removes all objects from the 0..n-aggregation named `sAggregationName`.
       *
       * The removed objects are not destroyed nor are they marked as changed.
@@ -2440,6 +2225,8 @@ object sapUiBaseManagedObjectMod {
     ): js.Array[ManagedObject] = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Removes all the objects in the 0..n-association named `sAssociationName` and returns an array with their
       * IDs. This ManagedObject is marked as changed, if the association contained any objects.
       *
@@ -2493,6 +2280,8 @@ object sapUiBaseManagedObjectMod {
     bSuppressInvalidate: Boolean
     ): String | Null = js.native
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Removes a `ManagedObject` from the association named `sAssociationName`.
       *
       * If an object is removed, the ID of that object is returned and this `ManagedObject` is marked as changed.
@@ -2567,6 +2356,8 @@ object sapUiBaseManagedObjectMod {
     ): String | Null = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Resets the given property to the default value and also restores the "initial" state (like it has never
       * been set).
       *
@@ -2584,6 +2375,8 @@ object sapUiBaseManagedObjectMod {
     sPropertyName: String): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets a new object in the named 0..1 aggregation of this ManagedObject and marks this ManagedObject as
       * changed.
       *
@@ -2639,6 +2432,8 @@ object sapUiBaseManagedObjectMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets the associated object for the given managed association of cardinality '0..1' and marks this ManagedObject
       * as changed.
       *
@@ -2802,6 +2597,8 @@ object sapUiBaseManagedObjectMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets the given value for the given property after validating and normalizing it, marks this object as
       * changed.
       *
@@ -2910,6 +2707,8 @@ object sapUiBaseManagedObjectMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Generic method which is called whenever an aggregation binding has changed.
       *
       * Depending on the type of the list binding and on additional configuration, this method either destroys
@@ -2954,6 +2753,8 @@ object sapUiBaseManagedObjectMod {
     bMultiple: Boolean
     ): ManagedObject | Any = js.native
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Checks whether the given value is of the proper type for the given aggregation name.
       *
       * This method is already called by {@link #setAggregation}, {@link #addAggregation} and {@link #insertAggregation}.
@@ -2977,6 +2778,8 @@ object sapUiBaseManagedObjectMod {
     ): ManagedObject | Any = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Checks whether the given value is of the proper type for the given property name.
       *
       * In case `null` or `undefined` is passed, the default value for this property is used as value. If no
@@ -3062,6 +2865,657 @@ object sapUiBaseManagedObjectMod {
       inline def setValidationSuccess(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "validationSuccess", js.Any.fromFunction1(value))
       
       inline def setValidationSuccessUndefined: Self = StObject.set(x, "validationSuccess", js.undefined)
+    }
+  }
+  
+  trait MetadataOptions
+    extends StObject
+       with typings.openui5.sapUiBaseObjectMod.MetadataOptions {
+    
+    /**
+      * An object literal whose properties each define a new aggregation in the ManagedObject subclass. The value
+      * can either be a simple string which then will be assumed to be the type of the new aggregation or it
+      * can be an object literal with the following properties (see {@link sap.ui.base.ManagedObject.MetadataOptions.Aggregation
+      * Aggregation} for details): type, multiple, singularName, visibility, bindable, forwarding, selector.
+      * Aggregation names should use camelCase notation, start with a lowercase letter and only use characters
+      * from the set [a-zA-Z0-9_$]. The name for a hidden aggregations might start with an underscore. If an
+      * aggregation in the literal is preceded by a JSDoc comment (doclet) and if the UI5 plugin and template
+      * are used for JSDoc3 generation, the doclet will be used as generic documentation of the aggregation.
+      *
+      * For each public aggregation 'item' of cardinality 0..1, the following methods will be created by the
+      * "extend" method and will be added to the prototype of the subclass:
+      * 	 - getItem() - returns the current value of aggregation 'item'. Internally calls {@link #getAggregation}
+      * 			with a default value of `undefined`
+      * 	 - setItem(o) - sets 'o' as the new aggregated object in aggregation 'item'. Internally calls {@link
+      * 			#setAggregation}
+      * 	 - destroyItem(o) - destroy a currently aggregated object in aggregation 'item' and clears the aggregation.
+      * 			Internally calls {@link #destroyAggregation}
+      * 	 - bindItem(c) - (only if aggregation was defined to be 'bindable'): convenience function that wraps
+      * 			{@link #bindAggregation}
+      * 	 - unbindItem() - (only if aggregation was defined to be 'bindable'): convenience function that wraps
+      * 			{@link #unbindAggregation}  For a public aggregation 'items' of cardinality 0..n, the following
+      * 			methods will be created:
+      * 	 - getItems() - returns an array with the objects contained in aggregation 'items'. Internally calls
+      * 			{@link #getAggregation} with a default value of `[]`
+      * 	 - addItem(o) - adds an object as last element in the aggregation 'items'. Internally calls {@link #addAggregation}
+      *
+      * 	 - insertItem(o,p) - inserts an object into the aggregation 'items'. Internally calls {@link #insertAggregation}
+      *
+      * 	 - indexOfItem(o) - returns the position of the given object within the aggregation 'items'. Internally
+      * 			calls {@link #indexOfAggregation}
+      * 	 - removeItem(v) - removes an object from the aggregation 'items'. Internally calls {@link #removeAggregation}
+      *
+      * 	 - removeItems() - removes all objects from the aggregation 'items'. Internally calls {@link #removeAllAggregation}
+      *
+      * 	 - destroyItems() - destroy all currently aggregated objects in aggregation 'items' and clears the aggregation.
+      * 			Internally calls {@link #destroyAggregation}
+      * 	 - bindItems(c) - (only if aggregation was defined to be 'bindable'): convenience function that wraps
+      * 			{@link #bindAggregation}
+      * 	 - unbindItems() - (only if aggregation was defined to be 'bindable'): convenience function that wraps
+      * 			{@link #unbindAggregation}  For hidden aggregations, no methods are generated.
+      */
+    var aggregations: js.UndefOr[Record[String, String | Aggregation]] = js.undefined
+    
+    /**
+      * An object literal whose properties each define a new association of the ManagedObject subclass. The value
+      * can either be a simple string which then will be assumed to be the type of the new association or it
+      * can be an object literal with the following properties (see {@link sap.ui.base.ManagedObject.MetadataOptions.Association
+      * Association} for details): type, multiple, singularName, visibility Association names should use camelCase
+      * notation, start with a lowercase letter and only use characters from the set [a-zA-Z0-9_$]. If an association
+      * in the literal is preceded by a JSDoc comment (doclet) and if the UI5 plugin and template are used for
+      * JSDoc3 generation, the doclet will be used as generic documentation of the association.
+      *
+      * For each association 'ref' of cardinality 0..1, the following methods will be created by the "extend"
+      * method and will be added to the prototype of the subclass:
+      * 	 - getRef() - returns the current value of association 'item'. Internally calls {@link #getAssociation}
+      * 			with a default value of `undefined`
+      * 	 - setRef(o) - sets 'o' as the new associated object in association 'item'. Internally calls {@link
+      * 			#setAssociation}  For a public association 'refs' of cardinality 0..n, the following methods will
+      * 			be created:
+      * 	 - getRefs() - returns an array with the objects contained in association 'items'. Internally calls
+      * 			{@link #getAssociation} with a default value of `[]`
+      * 	 - addRef(o) - adds an object as last element in the association 'items'. Internally calls {@link #addAssociation}
+      *
+      * 	 - removeRef(v) - removes an object from the association 'items'. Internally calls {@link #removeAssociation}
+      *
+      * 	 - removeAllRefs() - removes all objects from the association 'items'. Internally calls {@link #removeAllAssociation}
+      * 			 For hidden associations, no methods are generated.
+      */
+    var associations: js.UndefOr[Record[String, String | Association]] = js.undefined
+    
+    /**
+      * When specified, the default aggregation must match the name of one of the aggregations defined for the
+      * new subclass (either own or inherited). The named aggregation will be used in contexts where no aggregation
+      * is specified. E,g. when an object in an XMLView embeds other objects without naming an aggregation, as
+      * in the following example:
+      * ```javascript
+      *
+      *      <!-- assuming the defaultAggregation for Dialog is 'content' -->
+      *      <Dialog>
+      *        <Text/>
+      *        <Button/>
+      *      </Dialog>
+      *     ```
+      */
+    var defaultAggregation: js.UndefOr[String] = js.undefined
+    
+    /**
+      * When specified, the default property must match the name of one of the properties defined for the new
+      * subclass (either own or inherited). The named property can be used to identify the main property to be
+      * used for bound data. E.g. the value property of a field control.
+      */
+    var defaultProperty: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Name of a module that implements the designtime part. Alternatively `true` to indicate that the module's
+      * file is named *.designtime.js with the same base name as the class itself.
+      */
+    var designtime: js.UndefOr[String | Boolean] = js.undefined
+    
+    /**
+      * An object literal whose properties each define a new event of the ManagedObject subclass. In this literal,
+      * the property names are used as event names and the values are object literals describing the respective
+      * event which can have the following properties (see {@link sap.ui.base.ManagedObject.MetadataOptions.Event
+      * Event} for details): allowPreventDefault, parameters Event names should use camelCase notation, start
+      * with a lower-case letter and only use characters from the set [a-zA-Z0-9_$]. If an event in the literal
+      * is preceded by a JSDoc comment (doclet) and if the UI5 plugin and template are used for JSDoc3 generation,
+      * the doclet will be used as generic documentation of the event.
+      *
+      * For each event 'Some' the following methods will be created by the "extend" method and will be added
+      * to the prototype of the subclass:
+      * 	 - attachSome(fn,o) - registers a listener for the event. Internally calls {@link #attachEvent}
+      * 	 - detachSome(fn,o) - deregisters a listener for the event. Internally calls {@link #detachEvent}
+      * 	 - fireSome() - fire the event. Internally calls {@link #fireEvent}
+      */
+    var events: js.UndefOr[Record[String, String | Event]] = js.undefined
+    
+    /**
+      * Name of the library that the new subclass should belong to. If the subclass is a control or element,
+      * it will automatically register with that library so that authoring tools can discover it. By convention,
+      * the name of the subclass should have the library name as a prefix, but subfolders are allowed, e.g. `sap.ui.layout.form.Form`
+      * belongs to library `sap.ui.layout`.
+      */
+    var library: js.UndefOr[String] = js.undefined
+    
+    /**
+      * An object literal whose properties each define a new managed property in the ManagedObject subclass.
+      * The value can either be a simple string which then will be assumed to be the type of the new property
+      * or it can be an object literal with the following properties (see {@link sap.ui.base.ManagedObject.MetadataOptions.Property
+      * Property} for details): type, visibility, byValue, group, defaultValue, bindable, selector Property names
+      * should use camelCase notation, start with a lowercase letter and only use characters from the set [a-zA-Z0-9_$].
+      * If an aggregation in the literal is preceded by a JSDoc comment (doclet) and if the UI5 plugin and template
+      * are used for JSDoc3 generation, the doclet will be used as generic documentation of the aggregation.
+      *
+      * For each public property 'foo', the following methods will be created by the "extend" method and will
+      * be added to the prototype of the subclass:
+      * 	 - getFoo() - returns the current value of property 'foo'. Internally calls {@link #getProperty}
+      * 	 - setFoo(v) - sets 'v' as the new value of property 'foo'. Internally calls {@link #setProperty}
+      * 	 - bindFoo(c) - (only if property was defined to be 'bindable'): convenience function that wraps {@link
+      * 			#bindProperty}
+      * 	 - unbindFoo() - (only if property was defined to be 'bindable'): convenience function that wraps {@link
+      * 			#unbindProperty}  For hidden properties, no methods are generated.
+      */
+    var properties: js.UndefOr[
+        Record[
+          String, 
+          String | typings.openui5.sapUiBaseManagedObjectMod.MetadataOptions.Property
+        ]
+      ] = js.undefined
+    
+    /**
+      * Special settings are an experimental feature and MUST NOT BE DEFINED in controls or applications outside
+      * of the `sap.ui.core` library. There's no generic or general way how to set or get the values for special
+      * settings. For the same reason, they cannot be bound against a model. If there's a way for consumers to
+      * define a value for a special setting, it must be documented in the class that introduces the setting.
+      */
+    var specialSettings: js.UndefOr[Record[String, Any]] = js.undefined
+  }
+  object MetadataOptions {
+    
+    inline def apply(): MetadataOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MetadataOptions]
+    }
+    
+    /**
+      * An object literal describing an aggregation of a class derived from `sap.ui.base.ManagedObject`. See
+      * {@link sap.ui.base.ManagedObject.MetadataOptions MetadataOptions} for details on its usage.
+      */
+    trait Aggregation extends StObject {
+      
+      /**
+        * An optional list of alternative types that may be given instead of the main type. Alternative types may
+        * only be simple types, no descendants of ManagedObject. An example of altTypes being used is the 'tooltip'
+        * aggregation of `sap.ui.core.Element`, which accepts tooltip controls extending `sap.ui.core.TooltipBase`
+        * with their own renderer and design, as well as plain strings, which will simply be displayed using the
+        * browser's built-in tooltip functionality.
+        */
+      var altTypes: js.UndefOr[js.Array[String]] = js.undefined
+      
+      /**
+        * (Either can be omitted or set to the boolean value `true` or the magic string 'bindable'.) If set to
+        * `true` or 'bindable', additional named methods `bindName` and `unbindName` are generated
+        * as convenience. Despite its name, setting this flag is not mandatory to make the managed aggregation
+        * bindable. The generic methods {@link #bindAggregation} and {@link #unbindAggregation} can always be used.
+        */
+      var bindable: js.UndefOr[Boolean | typings.openui5.openui5Strings.bindable] = js.undefined
+      
+      /**
+        * Flag that marks the aggregation as deprecated (defaults to false). May lead to an additional warning
+        * log message at runtime when the aggregation is still used. For the documentation, also add a `@deprecated`
+        * tag in the JSDoc, describing since when it is deprecated and what any alternatives are.
+        */
+      var deprecated: js.UndefOr[Boolean] = js.undefined
+      
+      /**
+        * Only available for aggregations of a class extending `sap.ui.core.Element`, which is a subclass of `sap.ui.base.ManagedObject`!
+        * Defines draggable and droppable configuration of the aggregation. If the `dnd` property is of type Boolean,
+        * then the `draggable` and `droppable` configuration are both set to this Boolean value and the layout
+        * (in case of enabled dnd) is set to default ("Vertical").
+        */
+      var dnd: js.UndefOr[Boolean | Draggable] = js.undefined
+      
+      /**
+        * If set, this defines a forwarding of objects added to this aggregation into an aggregation of another
+        * ManagedObject - typically to an inner control within a composite control. This means that all adding,
+        * removal, or other operations happening on the source aggregation are actually called on the target instance.
+        * All elements added to the source aggregation will be located at the target aggregation (this means the
+        * target instance is their parent). Both, source and target element will return the added elements when
+        * asked for the content of the respective aggregation. If present, the named (non-generic) aggregation
+        * methods will be called for the target aggregation. Aggregations can only be forwarded to non-hidden aggregations
+        * of the same or higher multiplicity (i.e. an aggregation with multiplicity "0..n" cannot be forwarded
+        * to an aggregation with multiplicity "0..1"). The target aggregation must also be "compatible" to the
+        * source aggregation in the sense that any items given to the source aggregation must also be valid in
+        * the target aggregation (otherwise the target element will throw a validation error). If the forwarded
+        * elements use data binding, the target element must be properly aggregated by the source element to make
+        * sure all models are available there as well. The aggregation target must remain the same instance across
+        * the entire lifetime of the source control. Aggregation forwarding will behave unexpectedly when the content
+        * in the target aggregation is modified by other actors (e.g. by the target element or by another forwarding
+        * from a different source aggregation). Hence, this is not allowed.
+        */
+      var forwarding: js.UndefOr[typings.openui5.anon.Aggregation] = js.undefined
+      
+      /**
+        * Whether the aggregation is a 0..1 (false) or a 0..n aggregation (true), defaults to true
+        */
+      var multiple: js.UndefOr[Boolean] = js.undefined
+      
+      /**
+        * Can be set to a valid CSS selector (as accepted by the {@link https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelector
+        * Element.prototype.querySelector} method). When set, it locates the DOM element that surrounds the aggregation's
+        * content. It should only be set for aggregations that have a visual representation in the DOM. A DOM element
+        * surrounding the aggregation's rendered content should be available in the DOM, even if the aggregation
+        * is empty or not rendered for some reason. In cases where this is not possible or not intended, `getDomRefForSetting`
+        * can be overridden, see below.
+        *
+        * The purpose of the selector is to allow other framework parts like drag and drop or design time tooling
+        * to identify those DOM parts of a control or element that represent a specific aggregation without knowing
+        * the control or element implementation in detail.
+        *
+        * As an extension to the standard CSS selector syntax, the selector string can contain the placeholder
+        * `{id}` (multiple times). Before evaluating the selector in the context of an element or control, all
+        * occurrences of the placeholder have to be replaced by the (potentially escaped) ID of that element or
+        * control. In fact, any selector should start with `#{id}` to ensure that the query result is limited to
+        * the desired element or control.
+        *
+        * **Note**: there is a convenience method {@link sap.ui.core.Element#getDomRefForSetting} that evaluates
+        * the selector in the context of a concrete element or control instance. It also handles the placeholder
+        * `{id}`. Only selected framework features may use that private method, it is not yet a public API and
+        * might be changed or removed in future versions of UI5. However, instead of maintaining the `selector`
+        * in the metadata, element and control classes can overwrite `getDomRefForSetting` to calculate or add
+        * the appropriate DOM Element dynamically.
+        */
+      var selector: js.UndefOr[String] = js.undefined
+      
+      /**
+        * Singular name for 0..n aggregations. For 0..n aggregations the name by convention should be the plural
+        * name. Methods affecting multiple objects in an aggregation will use the plural name (e.g. getItems(),
+        * whereas methods that deal with a single object will use the singular name (e.g. addItem). The framework
+        * knows a set of common rules for building the plural form of English nouns and uses these rules to determine
+        * a singular name on its own. If that name is wrong, a singluarName can be specified with this property.
+        */
+      var singularName: js.UndefOr[String] = js.undefined
+      
+      /**
+        * Type of the new aggregation. Must be the full global name of a ManagedObject subclass or a UI5 interface
+        * (in dot notation, e.g. 'sap.m.Button').
+        */
+      var `type`: js.UndefOr[String] = js.undefined
+      
+      /**
+        * Either 'hidden' or 'public', defaults to 'public'. Aggregations that belong to the API of a class must
+        * be 'public' whereas 'hidden' aggregations typically are used for the implementation of composite classes
+        * (e.g. composite controls). Only public aggregations are accepted by the constructor or by `applySettings`
+        * or in declarative representations like an `XMLView`. Equally, only public aggregations are cloned.
+        */
+      var visibility: js.UndefOr[hidden | public] = js.undefined
+    }
+    object Aggregation {
+      
+      inline def apply(): Aggregation = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[Aggregation]
+      }
+      
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Aggregation] (val x: Self) extends AnyVal {
+        
+        inline def setAltTypes(value: js.Array[String]): Self = StObject.set(x, "altTypes", value.asInstanceOf[js.Any])
+        
+        inline def setAltTypesUndefined: Self = StObject.set(x, "altTypes", js.undefined)
+        
+        inline def setAltTypesVarargs(value: String*): Self = StObject.set(x, "altTypes", js.Array(value*))
+        
+        inline def setBindable(value: Boolean | bindable): Self = StObject.set(x, "bindable", value.asInstanceOf[js.Any])
+        
+        inline def setBindableUndefined: Self = StObject.set(x, "bindable", js.undefined)
+        
+        inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+        
+        inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+        
+        inline def setDnd(value: Boolean | Draggable): Self = StObject.set(x, "dnd", value.asInstanceOf[js.Any])
+        
+        inline def setDndUndefined: Self = StObject.set(x, "dnd", js.undefined)
+        
+        inline def setForwarding(value: typings.openui5.anon.Aggregation): Self = StObject.set(x, "forwarding", value.asInstanceOf[js.Any])
+        
+        inline def setForwardingUndefined: Self = StObject.set(x, "forwarding", js.undefined)
+        
+        inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+        
+        inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+        
+        inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+        
+        inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+        
+        inline def setSingularName(value: String): Self = StObject.set(x, "singularName", value.asInstanceOf[js.Any])
+        
+        inline def setSingularNameUndefined: Self = StObject.set(x, "singularName", js.undefined)
+        
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        
+        inline def setVisibility(value: hidden | public): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+        
+        inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+      }
+    }
+    
+    /**
+      * An object literal describing an association of a class derived from `sap.ui.base.ManagedObject`. See
+      * {@link sap.ui.base.ManagedObject.MetadataOptions MetadataOptions} for details on its usage.
+      */
+    trait Association extends StObject {
+      
+      /**
+        * Flag that marks the association as deprecated (defaults to false). May lead to an additional warning
+        * log message at runtime when the association is still used. For the documentation, also add a `@deprecated`
+        * tag in the JSDoc, describing since when it is deprecated and what any alternatives are.
+        */
+      var deprecated: js.UndefOr[Boolean] = js.undefined
+      
+      /**
+        * Whether the association is a 0..1 (false) or a 0..n association (true), defaults to false (0..1) for
+        * associations
+        */
+      var multiple: js.UndefOr[Boolean] = js.undefined
+      
+      /**
+        * Custom singular name. This is only relevant for 0..n associations where the association name should be
+        * defined in plural form and the framework tries to generate the singular form of it for certain places
+        * where it is needed. To do so, the framework knows a set of common rules for building the plural form
+        * of English nouns and uses these rules to determine a singular name on its own. If that name is wrong,
+        * a singularName can be specified with this property. E.g. for an association named `items`, methods affecting
+        * multiple objects in an association will use the plural name (`getItems()`), whereas methods that deal
+        * with a single object will automatically use the generated singular name (e.g. `addItem(...)`). However,
+        * the generated singular form for an association `news` would be `new`, which is wrong, so the singular
+        * name "news" would need to be set.
+        */
+      var singularName: js.UndefOr[String] = js.undefined
+      
+      /**
+        * Type of the new association
+        */
+      var `type`: js.UndefOr[String] = js.undefined
+      
+      /**
+        * Either 'hidden' or 'public', defaults to 'public'. Associations that belong to the API of a class must
+        * be 'public' whereas 'hidden' associations can only be used internally. Only public associations are accepted
+        * by the constructor or by `applySettings` or in declarative representations like an `XMLView`. Equally,
+        * only public associations are cloned.
+        */
+      var visibility: js.UndefOr[hidden | public] = js.undefined
+    }
+    object Association {
+      
+      inline def apply(): Association = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[Association]
+      }
+      
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Association] (val x: Self) extends AnyVal {
+        
+        inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+        
+        inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+        
+        inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+        
+        inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+        
+        inline def setSingularName(value: String): Self = StObject.set(x, "singularName", value.asInstanceOf[js.Any])
+        
+        inline def setSingularNameUndefined: Self = StObject.set(x, "singularName", js.undefined)
+        
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        
+        inline def setVisibility(value: hidden | public): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+        
+        inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+      }
+    }
+    
+    /**
+      * An object literal describing an event of a class derived from `sap.ui.base.ManagedObject`. See {@link
+      * sap.ui.base.ManagedObject.MetadataOptions MetadataOptions} for details on its usage.
+      */
+    trait Event extends StObject {
+      
+      /**
+        * Whether the event allows to prevented the default behavior of the event source
+        */
+      var allowPreventDefault: js.UndefOr[Boolean] = js.undefined
+      
+      /**
+        * Flag that marks the event as deprecated (defaults to false). May lead to an additional warning log message
+        * at runtime when the event is still used. For the documentation, also add a `@deprecated` tag in the JSDoc,
+        * describing since when it is deprecated and what any alternatives are.
+        */
+      var deprecated: js.UndefOr[Boolean] = js.undefined
+      
+      /**
+        * whether event bubbling is enabled on this event. When `true` the event is also forwarded to the parent(s)
+        * of the object (see {@link sap.ui.base.EventProvider#getEventingParent}) until the bubbling of the event
+        * is stopped or no parent is available anymore.
+        */
+      var enableEventBubbling: js.UndefOr[Boolean] = js.undefined
+      
+      /**
+        * An object literal that describes the parameters of this event; the keys are the parameter names and the
+        * values are objects with a 'type' property that specifies the type of the respective parameter.
+        */
+      var parameters: js.UndefOr[Record[String, TypeString | String]] = js.undefined
+    }
+    object Event {
+      
+      inline def apply(): Event = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[Event]
+      }
+      
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+        
+        inline def setAllowPreventDefault(value: Boolean): Self = StObject.set(x, "allowPreventDefault", value.asInstanceOf[js.Any])
+        
+        inline def setAllowPreventDefaultUndefined: Self = StObject.set(x, "allowPreventDefault", js.undefined)
+        
+        inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+        
+        inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+        
+        inline def setEnableEventBubbling(value: Boolean): Self = StObject.set(x, "enableEventBubbling", value.asInstanceOf[js.Any])
+        
+        inline def setEnableEventBubblingUndefined: Self = StObject.set(x, "enableEventBubbling", js.undefined)
+        
+        inline def setParameters(value: Record[String, TypeString | String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+        
+        inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      }
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetadataOptions] (val x: Self) extends AnyVal {
+      
+      inline def setAggregations(value: Record[String, String | Aggregation]): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
+      
+      inline def setAggregationsUndefined: Self = StObject.set(x, "aggregations", js.undefined)
+      
+      inline def setAssociations(value: Record[String, String | Association]): Self = StObject.set(x, "associations", value.asInstanceOf[js.Any])
+      
+      inline def setAssociationsUndefined: Self = StObject.set(x, "associations", js.undefined)
+      
+      inline def setDefaultAggregation(value: String): Self = StObject.set(x, "defaultAggregation", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultAggregationUndefined: Self = StObject.set(x, "defaultAggregation", js.undefined)
+      
+      inline def setDefaultProperty(value: String): Self = StObject.set(x, "defaultProperty", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultPropertyUndefined: Self = StObject.set(x, "defaultProperty", js.undefined)
+      
+      inline def setDesigntime(value: String | Boolean): Self = StObject.set(x, "designtime", value.asInstanceOf[js.Any])
+      
+      inline def setDesigntimeUndefined: Self = StObject.set(x, "designtime", js.undefined)
+      
+      inline def setEvents(value: Record[String, String | Event]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      
+      inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+      
+      inline def setLibrary(value: String): Self = StObject.set(x, "library", value.asInstanceOf[js.Any])
+      
+      inline def setLibraryUndefined: Self = StObject.set(x, "library", js.undefined)
+      
+      inline def setProperties(
+        value: Record[
+              String, 
+              String | typings.openui5.sapUiBaseManagedObjectMod.MetadataOptions.Property
+            ]
+      ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      
+      inline def setSpecialSettings(value: Record[String, Any]): Self = StObject.set(x, "specialSettings", value.asInstanceOf[js.Any])
+      
+      inline def setSpecialSettingsUndefined: Self = StObject.set(x, "specialSettings", js.undefined)
+    }
+    
+    /**
+      * An object literal describing a property of a class derived from `sap.ui.base.ManagedObject`. See {@link
+      * sap.ui.base.ManagedObject.MetadataOptions MetadataOptions} for details on its usage.
+      */
+    trait Property extends StObject {
+      
+      /**
+        * (Either can be omitted or set to the boolean value `true` or the magic string 'bindable'.) If set to
+        * `true` or 'bindable', additional named methods `bindName` and `unbindName` are generated
+        * as convenience. Despite its name, setting this flag is not mandatory to make the managed property bindable.
+        * The generic methods {@link #bindProperty} and {@link #unbindProperty} can always be used.
+        */
+      var bindable: js.UndefOr[Boolean | typings.openui5.openui5Strings.bindable] = js.undefined
+      
+      /**
+        * If set to `true`, the property value will be {@link module:sap/base/util/deepClone deep cloned} on write
+        * and read operations to ensure that the internal value can't be modified by the outside. The property
+        * `byValue` is currently restricted to a `boolean` value. Other types are reserved for future use. Class
+        * definitions must only use boolean values for the flag (or omit it), but readers of ManagedObject metadata
+        * should handle any truthy value as `true` to be future safe. Note that using `byValue:true` has a performance
+        * impact on property access and therefore should be used carefully. It also doesn't make sense to set this
+        * option for properties with a primitive type (they have value semantic anyhow) or for properties with
+        * arrays of primitive types (they are already cloned with a less expensive implementation). Defaults to
+        * 'false'.
+        */
+      var byValue: js.UndefOr[Boolean] = js.undefined
+      
+      /**
+        * The default value for the property or null if there is no specific default value defined (the data type's
+        * default becomes the default value in this case, e.g. `false` for boolean and the empty string for type
+        * string). Omitting this property means the default value is `undefined`.
+        */
+      var defaultValue: js.UndefOr[Any] = js.undefined
+      
+      /**
+        * Flag that marks the property as deprecated (defaults to false). May lead to an additional warning log
+        * message at runtime when the property is still used. For the documentation, also add a `@deprecated` tag
+        * in the JSDoc, describing since when it is deprecated and what any alternatives are.
+        */
+      var deprecated: js.UndefOr[Boolean] = js.undefined
+      
+      /**
+        * A semantic grouping of the properties, intended to be used in design time tools. Allowed values are (case
+        * sensitive): Accessibility, Appearance, Behavior, Data, Designtime, Dimension, Identification, Misc
+        */
+      var group: js.UndefOr[
+            Accessibility | Appearance | Behavior | Data | Designtime | Dimension | Identification | Misc
+          ] = js.undefined
+      
+      /**
+        * Can be set to a valid CSS selector (as accepted by the {@link https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelector
+        * Element.prototype.querySelector} method). When set, it locates the DOM element that represents this property's
+        * value. It should only be set for properties that have a visual text representation in the DOM.
+        *
+        * The purpose of the selector is to allow other framework parts or design time tooling to identify the
+        * DOM parts of a control or element that represent a specific property without knowing the control or element
+        * implementation in detail.
+        *
+        * As an extension to the standard CSS selector syntax, the selector string can contain the placeholder
+        * `{id}` (multiple times). Before evaluating the selector in the context of an element or control, all
+        * occurrences of the placeholder have to be replaced by the (potentially escaped) ID of that element or
+        * control. In fact, any selector should start with `#{id}` to ensure that the query result is limited to
+        * the desired element or control.
+        *
+        * **Note**: there is a convenience method {@link sap.ui.core.Element#getDomRefForSetting} that evaluates
+        * the selector in the context of a concrete element or control instance. It also handles the placeholder
+        * `{id}`. Only selected framework features may use that private method, it is not yet a public API and
+        * might be changed or removed in future versions of UI5. However, instead of maintaining the `selector`
+        * in the metadata, element and control classes can overwrite `getDomRefForSetting` and determine the DOM
+        * element dynamically.
+        */
+      var selector: js.UndefOr[String] = js.undefined
+      
+      /**
+        * Type of the new property. Must either be one of the built-in types 'string', 'boolean', 'int', 'float',
+        * 'object', 'function' or 'any', or a type created and registered with {@link sap.ui.base.DataType.createType}
+        * or an array type based on one of the previous types (e.g. 'int[]' or 'string[]', but not just 'array').
+        */
+      var `type`: String
+      
+      /**
+        * Either 'hidden' or 'public', defaults to 'public'. Properties that belong to the API of a class must
+        * be 'public' whereas 'hidden' properties can only be used internally. Only public properties are accepted
+        * by the constructor or by `applySettings` or in declarative representations like an `XMLView`. Equally,
+        * only public properties are cloned.
+        */
+      var visibility: js.UndefOr[hidden | public] = js.undefined
+    }
+    object Property {
+      
+      inline def apply(`type`: String): typings.openui5.sapUiBaseManagedObjectMod.MetadataOptions.Property = {
+        val __obj = js.Dynamic.literal()
+        __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.openui5.sapUiBaseManagedObjectMod.MetadataOptions.Property]
+      }
+      
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.openui5.sapUiBaseManagedObjectMod.MetadataOptions.Property] (val x: Self) extends AnyVal {
+        
+        inline def setBindable(value: Boolean | bindable): Self = StObject.set(x, "bindable", value.asInstanceOf[js.Any])
+        
+        inline def setBindableUndefined: Self = StObject.set(x, "bindable", js.undefined)
+        
+        inline def setByValue(value: Boolean): Self = StObject.set(x, "byValue", value.asInstanceOf[js.Any])
+        
+        inline def setByValueUndefined: Self = StObject.set(x, "byValue", js.undefined)
+        
+        inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+        
+        inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+        
+        inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+        
+        inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+        
+        inline def setGroup(
+          value: Accessibility | Appearance | Behavior | Data | Designtime | Dimension | Identification | Misc
+        ): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+        
+        inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+        
+        inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+        
+        inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+        
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        
+        inline def setVisibility(value: hidden | public): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+        
+        inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+      }
     }
   }
   

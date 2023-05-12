@@ -1,7 +1,8 @@
 package typings.nodeZendesk.mod
 
+import typings.node.bufferMod.global.Buffer
 import typings.node.fsMod.PathLike
-import typings.nodeZendesk.anon.Filename
+import typings.nodeZendesk.anon.Binary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,8 +85,16 @@ object Attachments {
     def show(attachmentId: Double): js.Promise[ShowResponseModel] = js.native
     def show(attachmentId: Double, cb: ZendeskCallback[Any, ShowResponseModel]): Any = js.native
     
-    def upload(file: PathLike, fileOptions: Filename): js.Promise[UploadResponseModel] = js.native
-    def upload(file: PathLike, fileOptions: Filename, cb: ZendeskCallback[Any, UploadResponseModel]): Unit = js.native
+    def upload(file: Buffer, fileOptions: Binary): js.Promise[UploadResponseModel] = js.native
+    def upload(file: Buffer, fileOptions: Binary, cb: ZendeskCallback[Any, UploadResponseModel]): Unit = js.native
+    def upload(file: PathLike, fileOptions: Binary): js.Promise[UploadResponseModel] = js.native
+    def upload(file: PathLike, fileOptions: Binary, cb: ZendeskCallback[Any, UploadResponseModel]): Unit = js.native
+    def upload(file: typings.node.nodeColonstreamMod.^, fileOptions: Binary): js.Promise[UploadResponseModel] = js.native
+    def upload(
+      file: typings.node.nodeColonstreamMod.^,
+      fileOptions: Binary,
+      cb: ZendeskCallback[Any, UploadResponseModel]
+    ): Unit = js.native
   }
   
   trait Model

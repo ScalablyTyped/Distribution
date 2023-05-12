@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__utils
 
-Typings are for version 0.16.2
+Typings are for version 0.22.8
 
 ## Library description:
 Utils for jimp extensions.

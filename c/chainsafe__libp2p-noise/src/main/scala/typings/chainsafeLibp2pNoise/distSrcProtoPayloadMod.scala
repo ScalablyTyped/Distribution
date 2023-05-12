@@ -1,5 +1,7 @@
 package typings.chainsafeLibp2pNoise
 
+import typings.chainsafeLibp2pNoise.anon.PartialNoiseExtensions
+import typings.chainsafeLibp2pNoise.anon.PartialNoiseHandshakePayl
 import typings.protonsRuntime.distSrcCodecMod.Codec
 import typings.uint8arraylist.mod.Uint8ArrayList
 import org.scalablytyped.runtime.StObject
@@ -28,7 +30,7 @@ object distSrcProtoPayloadMod {
     inline def decode(buf: js.typedarray.Uint8Array): NoiseExtensions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[NoiseExtensions]
     inline def decode(buf: Uint8ArrayList): NoiseExtensions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[NoiseExtensions]
     
-    inline def encode(obj: NoiseExtensions): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def encode(obj: PartialNoiseExtensions): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     @scala.inline
     implicit open class MutableBuilder[Self <: NoiseExtensions] (val x: Self) extends AnyVal {
@@ -63,7 +65,7 @@ object distSrcProtoPayloadMod {
     inline def decode(buf: js.typedarray.Uint8Array): NoiseHandshakePayload = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[NoiseHandshakePayload]
     inline def decode(buf: Uint8ArrayList): NoiseHandshakePayload = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[NoiseHandshakePayload]
     
-    inline def encode(obj: NoiseHandshakePayload): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def encode(obj: PartialNoiseHandshakePayl): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     @scala.inline
     implicit open class MutableBuilder[Self <: NoiseHandshakePayload] (val x: Self) extends AnyVal {

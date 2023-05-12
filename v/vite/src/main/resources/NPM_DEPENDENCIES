@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vite" : "3.2.0"
+      "vite" : "4.3.5"
     }
   ],
   "test-dependencies" : [
     {
-      "vite" : "3.2.0"
+      "vite" : "4.3.5"
     }
   ],
   "compile-devDependencies" : [

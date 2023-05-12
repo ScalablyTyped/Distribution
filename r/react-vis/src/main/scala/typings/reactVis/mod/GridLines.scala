@@ -12,7 +12,7 @@ open class GridLines[T] protected ()
   def this(props: GridLinesProps & T) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: GridLinesProps & T, context: Any) = this()
 }

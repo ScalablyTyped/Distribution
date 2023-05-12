@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SortCriteria extends StObject {
   
   /**
-    * Represents the finding attribute (for example, accountId) to sort findings by.
+    * Represents the finding attribute, such as accountId, that sorts the findings.
     */
   var AttributeName: js.UndefOr[String] = js.undefined
   

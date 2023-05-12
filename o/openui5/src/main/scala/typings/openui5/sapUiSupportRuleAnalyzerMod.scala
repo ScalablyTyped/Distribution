@@ -1,8 +1,9 @@
 package typings.openui5
 
 import org.scalablytyped.runtime.Shortcut
-import typings.openui5.anon.Components
+import typings.openui5.anon.ParentId
 import typings.openui5.sapUiSupportLibraryMod.HistoryFormats
+import typings.openui5.sapUiSupportLibraryMod.RuleConfiguration
 import typings.openui5.sapUiSupportSupportRulesHistoryMod.AnalysisResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -45,7 +46,7 @@ object sapUiSupportRuleAnalyzerMod extends Shortcut {
       * Settings for the new rule. For detailed information about its properties see {@link topic:eaeea19a991d46f29e6d8d8827317d0e
       * Rule Property Values}
       */
-    oRule: js.Object
+    oRule: RuleConfiguration
     ): String = js.native
     
     /**
@@ -175,13 +176,13 @@ object sapUiSupportRuleAnalyzerMod extends Shortcut {
       /**
       * The execution scope of the analysis (see {@link topic:e15067d976f24b11907f4c262bd749a0 Execution Scope}).
       */
-    oExecutionScope: Components
+    oExecutionScope: ParentId
     ): js.Promise[Any] = js.native
     def analyze(
       /**
       * The execution scope of the analysis (see {@link topic:e15067d976f24b11907f4c262bd749a0 Execution Scope}).
       */
-    oExecutionScope: Components,
+    oExecutionScope: ParentId,
       /**
       * This optional parameter allows for selection of subset of rules for the analysis. You can pass:
       *
@@ -195,7 +196,7 @@ object sapUiSupportRuleAnalyzerMod extends Shortcut {
       /**
       * The execution scope of the analysis (see {@link topic:e15067d976f24b11907f4c262bd749a0 Execution Scope}).
       */
-    oExecutionScope: Components,
+    oExecutionScope: ParentId,
       /**
       * This optional parameter allows for selection of subset of rules for the analysis. You can pass:
       *
@@ -213,7 +214,7 @@ object sapUiSupportRuleAnalyzerMod extends Shortcut {
       /**
       * The execution scope of the analysis (see {@link topic:e15067d976f24b11907f4c262bd749a0 Execution Scope}).
       */
-    oExecutionScope: Components,
+    oExecutionScope: ParentId,
       /**
       * This optional parameter allows for selection of subset of rules for the analysis. You can pass:
       *
@@ -227,7 +228,7 @@ object sapUiSupportRuleAnalyzerMod extends Shortcut {
       /**
       * The execution scope of the analysis (see {@link topic:e15067d976f24b11907f4c262bd749a0 Execution Scope}).
       */
-    oExecutionScope: Components,
+    oExecutionScope: ParentId,
       /**
       * This optional parameter allows for selection of subset of rules for the analysis. You can pass:
       *
@@ -245,7 +246,7 @@ object sapUiSupportRuleAnalyzerMod extends Shortcut {
       /**
       * The execution scope of the analysis (see {@link topic:e15067d976f24b11907f4c262bd749a0 Execution Scope}).
       */
-    oExecutionScope: Components,
+    oExecutionScope: ParentId,
       /**
       * This optional parameter allows for selection of subset of rules for the analysis. You can pass:
       *
@@ -259,7 +260,7 @@ object sapUiSupportRuleAnalyzerMod extends Shortcut {
       /**
       * The execution scope of the analysis (see {@link topic:e15067d976f24b11907f4c262bd749a0 Execution Scope}).
       */
-    oExecutionScope: Components,
+    oExecutionScope: ParentId,
       /**
       * This optional parameter allows for selection of subset of rules for the analysis. You can pass:
       *
@@ -277,7 +278,7 @@ object sapUiSupportRuleAnalyzerMod extends Shortcut {
       /**
       * The execution scope of the analysis (see {@link topic:e15067d976f24b11907f4c262bd749a0 Execution Scope}).
       */
-    oExecutionScope: Components,
+    oExecutionScope: ParentId,
       /**
       * This optional parameter allows for selection of subset of rules for the analysis. You can pass:
       *

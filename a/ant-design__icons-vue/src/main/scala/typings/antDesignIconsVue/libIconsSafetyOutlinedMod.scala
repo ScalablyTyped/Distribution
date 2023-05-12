@@ -16,7 +16,7 @@ object libIconsSafetyOutlinedMod extends Shortcut {
   @js.native
   trait SafetyOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_SafetyOutlinedIconType: String = js.native

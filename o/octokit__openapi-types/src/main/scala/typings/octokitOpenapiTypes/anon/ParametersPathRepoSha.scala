@@ -10,11 +10,11 @@ trait ParametersPathRepoSha extends StObject {
   
   var requestBody: ContentApplicationjsonTargeturl
   
-  var responses: `201Content330`
+  var responses: `201Content352`
 }
 object ParametersPathRepoSha {
   
-  inline def apply(parameters: PathRepoSha, requestBody: ContentApplicationjsonTargeturl, responses: `201Content330`): ParametersPathRepoSha = {
+  inline def apply(parameters: PathRepoSha, requestBody: ContentApplicationjsonTargeturl, responses: `201Content352`): ParametersPathRepoSha = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathRepoSha]
   }
@@ -26,6 +26,6 @@ object ParametersPathRepoSha {
     
     inline def setRequestBody(value: ContentApplicationjsonTargeturl): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `201Content330`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `201Content352`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

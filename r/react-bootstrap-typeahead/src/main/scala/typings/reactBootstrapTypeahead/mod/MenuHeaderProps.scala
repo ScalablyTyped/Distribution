@@ -37,6 +37,7 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
+import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings._empty
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.`additions removals`
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.`additions text`
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.`inline`
@@ -44,8 +45,10 @@ import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.`removals 
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.`removals text`
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.`text additions`
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.`text removals`
+import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.`use-credentials`
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.additions
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.all
+import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.anonymous
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.ascending
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.assertive
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.both
@@ -92,6 +95,7 @@ import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.vertical
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.yes
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -109,7 +113,7 @@ trait MenuHeaderProps extends StObject {
   
   var accessKey: js.UndefOr[String] = js.undefined
   
-  var action: js.UndefOr[String] = js.undefined
+  var action: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
   
   var allowFullScreen: js.UndefOr[Boolean] = js.undefined
   
@@ -265,7 +269,7 @@ trait MenuHeaderProps extends StObject {
   
   var coords: js.UndefOr[String] = js.undefined
   
-  var crossOrigin: js.UndefOr[String] = js.undefined
+  var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
   
   var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
   
@@ -293,7 +297,7 @@ trait MenuHeaderProps extends StObject {
   
   var form: js.UndefOr[String] = js.undefined
   
-  var formAction: js.UndefOr[String] = js.undefined
+  var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
   
   var formEncType: js.UndefOr[String] = js.undefined
   
@@ -581,6 +585,8 @@ trait MenuHeaderProps extends StObject {
   
   var results: js.UndefOr[Double] = js.undefined
   
+  var rev: js.UndefOr[String] = js.undefined
+  
   var reversed: js.UndefOr[Boolean] = js.undefined
   
   var role: js.UndefOr[AriaRole] = js.undefined
@@ -687,7 +693,9 @@ object MenuHeaderProps {
     
     inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
     
-    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    
+    inline def setActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
     
     inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
@@ -997,7 +1005,7 @@ object MenuHeaderProps {
     
     inline def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
     
-    inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+    inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
@@ -1057,7 +1065,9 @@ object MenuHeaderProps {
     
     inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
-    inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+    inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+    
+    inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
     
     inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
     
@@ -1640,6 +1650,10 @@ object MenuHeaderProps {
     inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
     

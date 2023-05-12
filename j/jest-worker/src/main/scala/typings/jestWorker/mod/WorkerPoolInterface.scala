@@ -26,6 +26,8 @@ trait WorkerPoolInterface extends StObject {
   ): Unit
   @JSName("send")
   var send_Original: WorkerCallback
+  
+  def start(): js.Promise[Unit]
 }
 object WorkerPoolInterface {
   
@@ -35,9 +37,10 @@ object WorkerPoolInterface {
     getStderr: () => ReadableStream,
     getStdout: () => ReadableStream,
     getWorkers: () => js.Array[WorkerInterface],
-    send: (/* workerId */ Double, /* request */ ChildMessage, /* onStart */ OnStart, /* onEnd */ OnEnd, /* onCustomMessage */ OnCustomMessage) => Unit
+    send: (/* workerId */ Double, /* request */ ChildMessage, /* onStart */ OnStart, /* onEnd */ OnEnd, /* onCustomMessage */ OnCustomMessage) => Unit,
+    start: () => js.Promise[Unit]
   ): WorkerPoolInterface = {
-    val __obj = js.Dynamic.literal(createWorker = js.Any.fromFunction1(createWorker), end = js.Any.fromFunction0(end), getStderr = js.Any.fromFunction0(getStderr), getStdout = js.Any.fromFunction0(getStdout), getWorkers = js.Any.fromFunction0(getWorkers), send = js.Any.fromFunction5(send))
+    val __obj = js.Dynamic.literal(createWorker = js.Any.fromFunction1(createWorker), end = js.Any.fromFunction0(end), getStderr = js.Any.fromFunction0(getStderr), getStdout = js.Any.fromFunction0(getStdout), getWorkers = js.Any.fromFunction0(getWorkers), send = js.Any.fromFunction5(send), start = js.Any.fromFunction0(start))
     __obj.asInstanceOf[WorkerPoolInterface]
   }
   
@@ -57,5 +60,7 @@ object WorkerPoolInterface {
     inline def setSend(
       value: (/* workerId */ Double, /* request */ ChildMessage, /* onStart */ OnStart, /* onEnd */ OnEnd, /* onCustomMessage */ OnCustomMessage) => Unit
     ): Self = StObject.set(x, "send", js.Any.fromFunction5(value))
+    
+    inline def setStart(value: () => js.Promise[Unit]): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
   }
 }

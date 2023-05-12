@@ -49,6 +49,11 @@ object mod {
     
     var customElement: js.UndefOr[Boolean | js.RegExp] = js.undefined
     
+    /**
+      * @experimental
+      */
+    var defineModel: js.UndefOr[Boolean] = js.undefined
+    
     var enableTsInTemplate: js.UndefOr[Boolean] = js.undefined
     
     var exposeFilename: js.UndefOr[Boolean] = js.undefined
@@ -57,6 +62,15 @@ object mod {
     
     var isServerBuild: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * @experimental
+      */
+    var propsDestructure: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * TODO remove in 3.4
+      * @deprecated
+      */
     var reactivityTransform: js.UndefOr[Boolean] = js.undefined
     
     var transformAssetUrls: js.UndefOr[
@@ -99,6 +113,10 @@ object mod {
       
       inline def setCustomElementUndefined: Self = StObject.set(x, "customElement", js.undefined)
       
+      inline def setDefineModel(value: Boolean): Self = StObject.set(x, "defineModel", value.asInstanceOf[js.Any])
+      
+      inline def setDefineModelUndefined: Self = StObject.set(x, "defineModel", js.undefined)
+      
       inline def setEnableTsInTemplate(value: Boolean): Self = StObject.set(x, "enableTsInTemplate", value.asInstanceOf[js.Any])
       
       inline def setEnableTsInTemplateUndefined: Self = StObject.set(x, "enableTsInTemplate", js.undefined)
@@ -114,6 +132,10 @@ object mod {
       inline def setIsServerBuild(value: Boolean): Self = StObject.set(x, "isServerBuild", value.asInstanceOf[js.Any])
       
       inline def setIsServerBuildUndefined: Self = StObject.set(x, "isServerBuild", js.undefined)
+      
+      inline def setPropsDestructure(value: Boolean): Self = StObject.set(x, "propsDestructure", value.asInstanceOf[js.Any])
+      
+      inline def setPropsDestructureUndefined: Self = StObject.set(x, "propsDestructure", js.undefined)
       
       inline def setReactivityTransform(value: Boolean): Self = StObject.set(x, "reactivityTransform", value.asInstanceOf[js.Any])
       

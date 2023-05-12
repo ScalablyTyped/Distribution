@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** Represents a bigint literal value without requiring bigint support */
 trait PseudoBigInt extends StObject {
   
   var base10Value: java.lang.String

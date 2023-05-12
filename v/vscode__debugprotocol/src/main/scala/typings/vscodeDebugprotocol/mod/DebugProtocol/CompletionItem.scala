@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** CompletionItems are the suggestions returned from the CompletionsRequest. */
+/** `CompletionItems` are the suggestions returned from the `completions` request. */
 trait CompletionItem extends StObject {
   
   /** A human-readable string with additional information about this item, like type or symbol information. */
@@ -13,29 +13,19 @@ trait CompletionItem extends StObject {
   /** The label of this completion item. By default this is also the text that is inserted when selecting this completion. */
   var label: String
   
-  /** This value determines how many characters are overwritten by the completion text.
-  			If missing the value 0 is assumed which results in the completion text being inserted.
-  		*/
+  /** Length determines how many characters are overwritten by the completion text and it is measured in UTF-16 code units. If missing the value 0 is assumed which results in the completion text being inserted. */
   var length: js.UndefOr[Double] = js.undefined
   
-  /** Determines the length of the new selection after the text has been inserted (or replaced).
-  			The selection can not extend beyond the bounds of the completion text.
-  			If omitted the length is assumed to be 0.
-  		*/
+  /** Determines the length of the new selection after the text has been inserted (or replaced) and it is measured in UTF-16 code units. The selection can not extend beyond the bounds of the completion text. If omitted the length is assumed to be 0. */
   var selectionLength: js.UndefOr[Double] = js.undefined
   
-  /** Determines the start of the new selection after the text has been inserted (or replaced).
-  			The start position must be in the range 0 and length of the completion text.
-  			If omitted the selection starts at the end of the completion text.
-  		*/
+  /** Determines the start of the new selection after the text has been inserted (or replaced). `selectionStart` is measured in UTF-16 code units and must be in the range 0 and length of the completion text. If omitted the selection starts at the end of the completion text. */
   var selectionStart: js.UndefOr[Double] = js.undefined
   
   /** A string that should be used when comparing this item with other items. If not returned or an empty string, the `label` is used instead. */
   var sortText: js.UndefOr[String] = js.undefined
   
-  /** This value determines the location (in the `completions` request's `text` attribute) where the completion text is added.
-  			If missing the text is added at the location specified by the `completions` request's `column` attribute.
-  		*/
+  /** Start position (within the `text` attribute of the `completions` request) where the completion text is added. The position is measured in UTF-16 code units and the client capability `columnsStartAt1` determines whether it is 0- or 1-based. If the start position is omitted the text is added at the location specified by the `column` attribute of the `completions` request. */
   var start: js.UndefOr[Double] = js.undefined
   
   /** If text is returned and not an empty string, then it is inserted instead of the label. */

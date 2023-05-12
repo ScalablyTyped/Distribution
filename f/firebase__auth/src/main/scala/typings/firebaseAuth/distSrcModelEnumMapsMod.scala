@@ -9,6 +9,7 @@ import typings.firebaseAuth.firebaseAuthStrings.password
 import typings.firebaseAuth.firebaseAuthStrings.phone
 import typings.firebaseAuth.firebaseAuthStrings.reauthenticate
 import typings.firebaseAuth.firebaseAuthStrings.signIn
+import typings.firebaseAuth.firebaseAuthStrings.totp
 import typings.firebaseAuth.firebaseAuthStrings.twitterDotcom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -55,6 +56,10 @@ object distSrcModelEnumMapsMod {
     @JSImport("@firebase/auth/dist/src/model/enum_maps", "FactorId.PHONE")
     @js.native
     val PHONE: phone = js.native
+    
+    @JSImport("@firebase/auth/dist/src/model/enum_maps", "FactorId.TOTP")
+    @js.native
+    val TOTP: totp = js.native
   }
   
   object OperationType {

@@ -1,31 +1,45 @@
 package typings.photoshop.domConstantsMod
 
-import typings.photoshop.photoshopStrings.customPattern
-import typings.photoshop.photoshopStrings.diffusionDither
-import typings.photoshop.photoshopStrings.halfThreshold
-import typings.photoshop.photoshopStrings.halfToneScreen
-import typings.photoshop.photoshopStrings.patternDither
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.photoshop.photoshopStrings.customPattern
-  - typings.photoshop.photoshopStrings.diffusionDither
-  - typings.photoshop.photoshopStrings.halfThreshold
-  - typings.photoshop.photoshopStrings.halfToneScreen
-  - typings.photoshop.photoshopStrings.patternDither
-*/
-trait BitmapConversionType extends StObject
-object BitmapConversionType {
+@js.native
+sealed trait BitmapConversionType extends StObject
+@JSImport("photoshop/dom/Constants", "BitmapConversionType")
+@js.native
+object BitmapConversionType extends StObject {
   
-  inline def CUSTOMPATTERN: customPattern = "customPattern".asInstanceOf[customPattern]
+  @JSBracketAccess
+  def apply(value: String): js.UndefOr[BitmapConversionType & String] = js.native
   
-  inline def DIFFUSIONDITHER: diffusionDither = "diffusionDither".asInstanceOf[diffusionDither]
+  @js.native
+  sealed trait CUSTOMPATTERN
+    extends StObject
+       with BitmapConversionType
+  /* "customPattern" */ val CUSTOMPATTERN: typings.photoshop.domConstantsMod.BitmapConversionType.CUSTOMPATTERN & String = js.native
   
-  inline def HALFTHRESHOLD: halfThreshold = "halfThreshold".asInstanceOf[halfThreshold]
+  @js.native
+  sealed trait DIFFUSIONDITHER
+    extends StObject
+       with BitmapConversionType
+  /* "diffusionDither" */ val DIFFUSIONDITHER: typings.photoshop.domConstantsMod.BitmapConversionType.DIFFUSIONDITHER & String = js.native
   
-  inline def HALFTONESCREEN: halfToneScreen = "halfToneScreen".asInstanceOf[halfToneScreen]
+  @js.native
+  sealed trait HALFTHRESHOLD
+    extends StObject
+       with BitmapConversionType
+  /* "halfThreshold" */ val HALFTHRESHOLD: typings.photoshop.domConstantsMod.BitmapConversionType.HALFTHRESHOLD & String = js.native
   
-  inline def PATTERNDITHER: patternDither = "patternDither".asInstanceOf[patternDither]
+  @js.native
+  sealed trait HALFTONESCREEN
+    extends StObject
+       with BitmapConversionType
+  /* "halfToneScreen" */ val HALFTONESCREEN: typings.photoshop.domConstantsMod.BitmapConversionType.HALFTONESCREEN & String = js.native
+  
+  @js.native
+  sealed trait PATTERNDITHER
+    extends StObject
+       with BitmapConversionType
+  /* "patternDither" */ val PATTERNDITHER: typings.photoshop.domConstantsMod.BitmapConversionType.PATTERNDITHER & String = js.native
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-mathquill" : "1.0.2"
+      "react-mathquill" : "1.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "react-mathquill" : "1.0.2"
+      "react-mathquill" : "1.0.3"
     }
   ],
   "compile-devDependencies" : [

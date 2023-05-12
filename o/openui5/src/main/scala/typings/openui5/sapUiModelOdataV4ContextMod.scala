@@ -120,19 +120,26 @@ object sapUiModelOdataV4ContextMod {
       *
       * Deletes the OData entity this context points to. The context is removed from the binding immediately,
       * even if {@link sap.ui.model.odata.v4.SubmitMode.API} is used, and the request is only sent later when
-      * {@link sap.ui.model.odata.v4.ODataModel#submitBatch} is called. As long as the context is deleted on
-      * the client, but not yet on the server, {@link #isDeleted} returns `true` and the context must not be
-      * used anymore (except for checking {@link #isDeleted}), especially not as a binding context. The application
-      * has to take care that the context is no longer used.
+      * {@link sap.ui.model.odata.v4.ODataModel#submitBatch} is called. As soon as the context is deleted on
+      * the client, {@link #isDeleted} returns `true` and the context must not be used anymore (except for status
+      * APIs like {@link #isDeleted}, {@link #isKeepAlive}, {@link #hasPendingChanges}, {@link #resetChanges}),
+      * especially not as a binding context.
       *
       * Since 1.105 such a pending deletion is a pending change. It causes `hasPendingChanges` to return `true`
-      * for the context, the binding containing it, and the model. `resetChanges` in binding or model cancels
-      * the deletion and restores the context.
+      * for the context, the binding containing it, and the model. The `resetChanges` method called on the context
+      * (since 1.109.0), the binding, or the model cancels the deletion and restores the context.
       *
-      * If the DELETE request succeeds, the context is destroyed and must not be used anymore. If it fails, the
-      * context is restored, reinserted into the list, and fully functional again.
+      * If the DELETE request succeeds, the context is destroyed and must not be used anymore. If it fails or
+      * is canceled, the context is restored, reinserted into the list, and fully functional again.
+      *
+      * If the deleted context is used as binding context of a control or view, the application is advised to
+      * unbind it via `{@link sap.ui.base.ManagedObject#setBindingContext setBindingContext(null)}` before calling
+      * `delete`, and to possibly rebind it after reset or failure. The model itself ensures that all bindings
+      * depending on this context become unresolved, but no attempt is made to restore these bindings in case
+      * of reset or failure.
       * See:
       * 	#hasPendingChanges
+      * 	#resetChanges
       * 	sap.ui.model.odata.v4.ODataContextBinding#hasPendingChanges
       * 	sap.ui.model.odata.v4.ODataListBinding#hasPendingChanges
       * 	sap.ui.model.odata.v4.ODataModel#hasPendingChanges
@@ -281,8 +288,10 @@ object sapUiModelOdataV4ContextMod {
       *
       * Returns whether there are pending changes for bindings dependent on this context, or for unresolved bindings
       * (see {@link sap.ui.model.Binding#isResolved}) which were dependent on this context at the time the pending
-      * change was created. This includes the context itself being {@link #isTransient transient} or {@link #isDeleted
-      * deleted}. Since 1.98.0, {@link #isInactive inactive} contexts are ignored.
+      * change was created. This includes the context itself being {@link #isTransient transient} or {@link #delete
+      * deleted} on the client, but not yet on the server. Since 1.98.0, {@link #isInactive inactive} contexts
+      * are ignored, unless their {@link sap.ui.model.odata.v4.ODataListBinding#event:createActivate activation}
+      * has been prevented and therefore {@link #isInactive} returns `1`.
       *
       * @returns Whether there are pending changes
       */
@@ -291,8 +300,10 @@ object sapUiModelOdataV4ContextMod {
     /**
       * @SINCE 1.105.0
       *
-      * Returns whether this context is deleted on the client, but not on the server yet. The result of this
-      * function can also be accessed via the "@$ui5.context.isDeleted" instance annotation at the entity.
+      * Returns whether this context is deleted. It becomes `true` immediately after calling {@link #delete},
+      * even while the request is waiting for {@link sap.ui.model.odata.v4.ODataModel#submitBatch submitBatch}
+      * or is in process. It becomes `false` again when the DELETE request fails or is canceled. The result of
+      * this function can also be accessed via the "@$ui5.context.isDeleted" instance annotation at the entity.
       * See:
       * 	#delete
       *
@@ -318,15 +329,20 @@ object sapUiModelOdataV4ContextMod {
       *
       * Returns whether this context is inactive. The result of this function can also be accessed via instance
       * annotation "@$ui5.context.isInactive" at the entity.
+      *
+      * Since 1.110.0, `1` is returned in case {@link sap.ui.model.odata.v4.ODataListBinding#event:createActivate
+      * activation} has been prevented. Note that
+      * 	 it is truthy: `!!1 === true`,  it is almost like `true`: `1 == true`,  but it can easily be
+      * distinguished: `1 !== true`,  and `if (oContext.isInactive()) {...}` treats inactive contexts the
+      * same, no matter whether activation has been prevented or not.
       * See:
       * 	#isTransient
       * 	sap.ui.model.odata.v4.ODataListBinding#create
-      * 	sap.ui.model.odata.v4.ODataListBinding#event:createActivate
       *
       * @returns `true` if this context is inactive, `false` if it was created in an inactive state and has been
-      * activated, and `undefined` otherwise.
+      * activated, `1` in case activation has been prevented (since 1.110.0), and `undefined` otherwise.
       */
-    def isInactive(): js.UndefOr[Boolean] = js.native
+    def isInactive(): js.UndefOr[Boolean | Double] = js.native
     
     /**
       * @SINCE 1.81.0
@@ -339,6 +355,17 @@ object sapUiModelOdataV4ContextMod {
       * @returns `true` if this context is kept alive
       */
     def isKeepAlive(): Boolean = js.native
+    
+    /**
+      * @EXPERIMENTAL (since 1.111.0)
+      *
+      * Tells whether this context is currently selected.
+      * See:
+      * 	#setSelected
+      *
+      * @returns Whether this context is currently selected
+      */
+    def isSelected(): Boolean = js.native
     
     /**
       * @SINCE 1.43.0
@@ -613,6 +640,11 @@ object sapUiModelOdataV4ContextMod {
       * "/com.sap.gateway.default.iwbep.tea_busi.v0001.Container/TEAMS") of the service. All (navigation) properties
       * in the complete model matching such an absolute path are updated. Since 1.85.0, "14.4.11 Expression edm:String"
       * is accepted as well.
+      *
+      * Since 1.108.8, a property path matching the "com.sap.vocabularies.Common.v1.Messages" annotation of a
+      * list binding's entity type is treated specially for a row context of a list binding: It is loaded even
+      * if it has not yet been requested by that list binding. This way, exactly the messages for a single row
+      * can be updated. Same for a "*" segment or an empty navigation property path.
       */
     aPathExpressions: js.Array[js.Object | String]
     ): js.Promise[Unit] = js.native
@@ -631,6 +663,11 @@ object sapUiModelOdataV4ContextMod {
       * "/com.sap.gateway.default.iwbep.tea_busi.v0001.Container/TEAMS") of the service. All (navigation) properties
       * in the complete model matching such an absolute path are updated. Since 1.85.0, "14.4.11 Expression edm:String"
       * is accepted as well.
+      *
+      * Since 1.108.8, a property path matching the "com.sap.vocabularies.Common.v1.Messages" annotation of a
+      * list binding's entity type is treated specially for a row context of a list binding: It is loaded even
+      * if it has not yet been requested by that list binding. This way, exactly the messages for a single row
+      * can be updated. Same for a "*" segment or an empty navigation property path.
       */
     aPathExpressions: js.Array[js.Object | String],
       /**
@@ -641,6 +678,22 @@ object sapUiModelOdataV4ContextMod {
       */
     sGroupId: String
     ): js.Promise[Unit] = js.native
+    
+    /**
+      * @SINCE 1.113.0
+      *
+      * Resets all property changes, created entities, and entity deletions of this context. Resets also invalid
+      * user input and inactive contexts which had their activation prevented (see {@link sap.ui.model.odata.v4.Context#isInactive}).
+      * This function does not reset the execution of OData operations (see {@link sap.ui.model.odata.v4.ODataContextBinding#execute}).
+      * For a context which is currently {@link #delete deleted} on the client, but not yet on the server, this
+      * method cancels the deletion and restores the context.
+      * See:
+      * 	#hasPendingChanges
+      *
+      * @returns A promise which is resolved without a defined result as soon as all changes in the context and
+      * its current dependent bindings are canceled
+      */
+    def resetChanges(): js.Promise[Any] = js.native
     
     /**
       * @SINCE 1.81.0
@@ -820,5 +873,17 @@ object sapUiModelOdataV4ContextMod {
       */
     bRetry: Boolean
     ): js.Promise[Any] = js.native
+    
+    /**
+      * @EXPERIMENTAL (since 1.111.0)
+      *
+      * Determines whether this context is currently selected.
+      * See:
+      * 	#isSelected
+      */
+    def setSelected(/**
+      * Whether this context is currently selected
+      */
+    bSelected: Boolean): Unit = js.native
   }
 }

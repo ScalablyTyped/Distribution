@@ -6,11 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PlotWilliamsrParamsOptions extends StObject {
   
-  /**
-    * (Highstock) The point index which indicator calculations will base. For
-    * example using OHLC data, index=2 means the indicator will be calculated
-    * using Low values.
-    */
   var index: js.UndefOr[String] = js.undefined
   
   /**

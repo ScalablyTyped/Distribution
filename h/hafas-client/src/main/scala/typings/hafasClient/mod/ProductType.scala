@@ -13,11 +13,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A ProductType relates to how a means of transport "works" in local context.
-  * Example: Even though S-Bahn and U-Bahn in Berlin are both trains, they have different operators, service patterns,
-  * stations and look different. Therefore, they are two distinct products subway and suburban.
-  */
 trait ProductType extends StObject {
   
   var default: Boolean

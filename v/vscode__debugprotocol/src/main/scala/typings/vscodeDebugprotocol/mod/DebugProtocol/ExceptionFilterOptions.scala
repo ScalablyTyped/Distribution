@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An ExceptionFilterOptions is used to specify an exception filter together with a condition for the `setExceptionBreakpoints` request. */
+/** An `ExceptionFilterOptions` is used to specify an exception filter together with a condition for the `setExceptionBreakpoints` request. */
 trait ExceptionFilterOptions extends StObject {
   
   /** An expression for conditional exceptions.

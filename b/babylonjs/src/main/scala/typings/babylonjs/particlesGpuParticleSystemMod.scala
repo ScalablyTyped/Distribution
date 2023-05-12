@@ -1,6 +1,9 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.babylonjs.anon.Partialcapacitynumberrand
+import typings.babylonjs.buffersBufferMod.VertexBuffer
+import typings.babylonjs.buffersDataBufferMod.DataBuffer
 import typings.babylonjs.enginesThinEngineMod.ThinEngine
 import typings.babylonjs.materialsDrawWrapperMod.DrawWrapper
 import typings.babylonjs.materialsEffectMod.Effect
@@ -14,6 +17,7 @@ import typings.babylonjs.particlesBaseParticleSystemMod.BaseParticleSystem
 import typings.babylonjs.particlesIparticlesystemMod.IParticleSystem
 import typings.babylonjs.sceneMod.IDisposable
 import typings.babylonjs.sceneMod.Scene
+import typings.babylonjs.typesMod.Immutable
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,7 +27,7 @@ object particlesGpuParticleSystemMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.babylonjs.animationsAnimatableDotinterfaceMod.IAnimatable because var conflicts: animations. Inlined 
-  - typings.babylonjs.particlesIparticlesystemMod.IParticleSystem because var conflicts: _wasDispatched, animations, beginAnimationFrom, beginAnimationLoop, beginAnimationOnStart, beginAnimationTo, billboardMode, blendMode, color1, color2, colorDead, disposeOnStop, emitRate, emitter, endSpriteCellID, gravity, id, isAnimationSheetEnabled, isBillboardBased, layerMask, limitVelocityDamping, manualEmitCount, maxAngularSpeed, maxEmitPower, maxInitialRotation, maxLifeTime, maxScaleX, maxScaleY, maxSize, minAngularSpeed, minEmitPower, minInitialRotation, minLifeTime, minScaleX, minScaleY, minSize, name, noiseStrength, noiseTexture, particleEmitterType, particleTexture, preWarmCycles, preWarmStepOffset, renderingGroupId, snippetId, spriteCellChangeSpeed, spriteCellHeight, spriteCellLoop, spriteCellWidth, spriteRandomStartCell, startDelay, startSpriteCellID, targetStopDuration, translationPivot, updateSpeed, useLogarithmicDepth. Inlined isLocal, defaultProjectionMatrix, getCapacity, getActiveCount, isStarted, animate, render, onDisposeObservable, onStoppedObservable, clone, serialize, rebuild, forceRefreshGradients, start, start, stop, reset, isStopping, isReady, getClassName, getCustomEffect, setCustomEffect, fillDefines, fillUniformsAttributesAndSamplerNames, onBeforeDrawParticlesObservable, vertexShaderName, addColorGradient, addColorGradient, removeColorGradient, addSizeGradient, addSizeGradient, removeSizeGradient, addAngularSpeedGradient, addAngularSpeedGradient, removeAngularSpeedGradient, addVelocityGradient, addVelocityGradient, removeVelocityGradient, addLimitVelocityGradient, addLimitVelocityGradient, removeLimitVelocityGradient, addDragGradient, addDragGradient, removeDragGradient, addEmitRateGradient, addEmitRateGradient, removeEmitRateGradient, addStartSizeGradient, addStartSizeGradient, removeStartSizeGradient, addLifeTimeGradient, addLifeTimeGradient, removeLifeTimeGradient, addRampGradient, getRampGradients, useRampGradients, addColorRemapGradient, addAlphaRemapGradient */ @JSImport("babylonjs/Particles/gpuParticleSystem", "GPUParticleSystem")
+  - typings.babylonjs.particlesIparticlesystemMod.IParticleSystem because var conflicts: _wasDispatched, animations, beginAnimationFrom, beginAnimationLoop, beginAnimationOnStart, beginAnimationTo, billboardMode, blendMode, color1, color2, colorDead, disposeOnStop, emitRate, emitter, endSpriteCellID, gravity, id, isAnimationSheetEnabled, isBillboardBased, layerMask, limitVelocityDamping, manualEmitCount, maxAngularSpeed, maxEmitPower, maxInitialRotation, maxLifeTime, maxScaleX, maxScaleY, maxSize, minAngularSpeed, minEmitPower, minInitialRotation, minLifeTime, minScaleX, minScaleY, minSize, name, noiseStrength, noiseTexture, particleEmitterType, particleTexture, preWarmCycles, preWarmStepOffset, renderingGroupId, snippetId, spriteCellChangeSpeed, spriteCellHeight, spriteCellLoop, spriteCellWidth, spriteRandomStartCell, startDelay, startSpriteCellID, targetStopDuration, translationPivot, updateSpeed, useLogarithmicDepth. Inlined isLocal, defaultProjectionMatrix, updateInAnimate, getCapacity, getActiveCount, isStarted, animate, render, onDisposeObservable, onStoppedObservable, clone, serialize, rebuild, forceRefreshGradients, start, start, stop, reset, isStopping, isReady, getClassName, getCustomEffect, setCustomEffect, fillDefines, fillUniformsAttributesAndSamplerNames, onBeforeDrawParticlesObservable, vertexShaderName, vertexBuffers, indexBuffer, addColorGradient, addColorGradient, removeColorGradient, addSizeGradient, addSizeGradient, removeSizeGradient, addAngularSpeedGradient, addAngularSpeedGradient, removeAngularSpeedGradient, addVelocityGradient, addVelocityGradient, removeVelocityGradient, addLimitVelocityGradient, addLimitVelocityGradient, removeLimitVelocityGradient, addDragGradient, addDragGradient, removeDragGradient, addEmitRateGradient, addEmitRateGradient, removeEmitRateGradient, addStartSizeGradient, addStartSizeGradient, removeStartSizeGradient, addLifeTimeGradient, addLifeTimeGradient, removeLifeTimeGradient, addRampGradient, getRampGradients, useRampGradients, addColorRemapGradient, addAlphaRemapGradient */ @JSImport("babylonjs/Particles/gpuParticleSystem", "GPUParticleSystem")
   @js.native
   open class GPUParticleSystem protected ()
     extends BaseParticleSystem
@@ -163,7 +167,7 @@ object particlesGpuParticleSystemMod {
     /* private */ val _rawTextureWidth: Any = js.native
     
     /** @internal */
-    def _recreateUpdateEffect(): Unit = js.native
+    def _recreateUpdateEffect(): Boolean = js.native
     
     /* private */ var _refreshColorGradient: Any = js.native
     
@@ -172,6 +176,8 @@ object particlesGpuParticleSystemMod {
     /* private */ var _releaseBuffers: Any = js.native
     
     /* private */ var _render: Any = js.native
+    
+    /* private */ var _renderVertexBuffers: Any = js.native
     
     /** @internal */
     var _sizeGradientsTexture: RawTexture = js.native
@@ -189,6 +195,10 @@ object particlesGpuParticleSystemMod {
     /* private */ var _targetIndex: Any = js.native
     
     /* private */ var _timeDelta: Any = js.native
+    
+    /** @internal */
+    def _update(): Unit = js.native
+    def _update(emitterWM: Matrix): Unit = js.native
     
     /* private */ var _updateBuffer: Any = js.native
     
@@ -412,10 +422,12 @@ object particlesGpuParticleSystemMod {
       * @returns the cloned particle system
       */
     def clone(name: String, newEmitter: Any): Nullable[IParticleSystem] = js.native
+    def clone(name: String, newEmitter: Any, cloneTexture: Boolean): GPUParticleSystem = js.native
     /**
       * Clones the particle system.
       * @param name The name of the cloned object
       * @param newEmitter The new emitter to use
+      * @param cloneTexture Also clone the textures if true
       * @returns the cloned particle system
       */
     @JSName("clone")
@@ -500,6 +512,19 @@ object particlesGpuParticleSystemMod {
       * @returns the list of ramp gradients
       */
     def getRampGradients(): Nullable[js.Array[Color3Gradient]] = js.native
+    
+    /**
+      * Gets the index buffer used by the particle system (null for GPU particle systems)
+      */
+    def indexBuffer: Nullable[DataBuffer] = js.native
+    /**
+      * Gets the index buffer used by the particle system (or null if no index buffer is used)
+      */
+    @JSName("indexBuffer")
+    var indexBuffer_FGPUParticleSystem: Nullable[DataBuffer] = js.native
+    
+    /** Indicates that the particle system is GPU based */
+    val isGPU: Boolean = js.native
     
     /**
       * Specifies if the particles are updated in emitter local space or world space.
@@ -763,18 +788,33 @@ object particlesGpuParticleSystemMod {
       */
     def stop(): Unit = js.native
     
+    /** Indicates that the update of particles is done in the animate function (and not in render). Default: false */
+    var updateInAnimate: Boolean = js.native
+    
     /**
       * Not supported by GPUParticleSystem
       * Gets or sets a boolean indicating that ramp gradients must be used
-      * @see https://doc.babylonjs.com/babylon101/particles#ramp-gradients
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/particles/particle_system/particle_system_intro#ramp-gradients
       */
     def useRampGradients: Boolean = js.native
     def useRampGradients_=(value: Boolean): Unit = js.native
     /** Gets or sets a boolean indicating that ramp gradients must be used
-      * @see https://doc.babylonjs.com/babylon101/particles#ramp-gradients
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/particles/particle_system/ramps_and_blends
       */
     @JSName("useRampGradients")
     var useRampGradients_FGPUParticleSystem: Boolean = js.native
+    
+    /**
+      * Gets the vertex buffers used by the particle system
+      * Should be called after render() has been called for the current frame so that the buffers returned are the ones that have been updated
+      * in the current frame (there's a ping-pong between two sets of buffers - for a given frame, one set is used as the source and the other as the destination)
+      */
+    def vertexBuffers: Immutable[StringDictionary[VertexBuffer]] = js.native
+    /**
+      * Gets the vertex buffers used by the particle system
+      */
+    @JSName("vertexBuffers")
+    var vertexBuffers_FGPUParticleSystem: Immutable[StringDictionary[VertexBuffer]] = js.native
     
     /**
       * Gets the name of the particle vertex shader

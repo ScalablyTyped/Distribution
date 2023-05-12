@@ -1,5 +1,6 @@
 package typings.pixiCore.libSystemsMod
 
+import typings.pixiCore.libContextContextSystemMod.ContextSystemOptions
 import typings.pixiCore.libRendererMod.Renderer
 import typings.pixiExtensions.mod.ExtensionMetadata
 import org.scalablytyped.runtime.StObject
@@ -15,6 +16,16 @@ open class ContextSystem protected ()
 }
 /* static members */
 object ContextSystem {
+  
+  @JSImport("@pixi/core/lib/systems", "ContextSystem")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /** @ignore */
+  @JSImport("@pixi/core/lib/systems", "ContextSystem.defaultOptions")
+  @js.native
+  def defaultOptions: ContextSystemOptions = js.native
+  inline def defaultOptions_=(x: ContextSystemOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
   
   /** @ignore */
   @JSImport("@pixi/core/lib/systems", "ContextSystem.extension")

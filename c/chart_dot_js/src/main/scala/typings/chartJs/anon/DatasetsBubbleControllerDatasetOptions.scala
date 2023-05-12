@@ -1,6 +1,6 @@
 package typings.chartJs.anon
 
-import typings.chartJs.mod.BubbleControllerDatasetOptions
+import typings.chartJs.distTypesIndexMod.BubbleControllerDatasetOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

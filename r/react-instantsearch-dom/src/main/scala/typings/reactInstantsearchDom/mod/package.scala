@@ -55,7 +55,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 inline def EXPERIMENTALConnectConfigureRelatedItems(Composed: ComponentType[Any]): ComponentClass[Any, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("EXPERIMENTAL_connectConfigureRelatedItems")(Composed.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[Any, ComponentState]]
 
 inline def connectAutoComplete[TDoc](
-  // tslint:disable-next-line:no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
 stateless: FunctionComponent[AutocompleteProvided[TDoc]]
 ): ComponentClass[AutocompleteExposed, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectAutoComplete")(stateless.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[AutocompleteExposed, ComponentState]]
 inline def connectAutoComplete[Props /* <: AutocompleteProvided[TDoc] */, TDoc](Composed: ComponentType[Props]): ConnectedComponentClass[Props, AutocompleteProvided[TDoc], AutocompleteExposed] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectAutoComplete")(Composed.asInstanceOf[js.Any]).asInstanceOf[ConnectedComponentClass[Props, AutocompleteProvided[TDoc], AutocompleteExposed]]
@@ -81,7 +81,7 @@ inline def connectHighlight[TProps /* <: Partial[HighlightProps[TDoc]] */, TDoc]
 inline def connectHitInsights(insightsClient: InsightsClient): js.Function1[/* hitComponent */ ComponentType[Any], ComponentType[OmitConnectHitInsightsPro]] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectHitInsights")(insightsClient.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* hitComponent */ ComponentType[Any], ComponentType[OmitConnectHitInsightsPro]]]
 
 inline def connectHits[THit](
-  // tslint:disable-next-line:no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
 stateless: FunctionComponent[HitsProvided[THit]]
 ): ComponentClass[js.Object, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectHits")(stateless.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[js.Object, ComponentState]]
 inline def connectHits[TProps /* <: HitsProvided[THit] */, THit](ctor: ComponentType[TProps]): ConnectedComponentClass[TProps, HitsProvided[THit], js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectHits")(ctor.asInstanceOf[js.Any]).asInstanceOf[ConnectedComponentClass[TProps, HitsProvided[THit], js.Object]]

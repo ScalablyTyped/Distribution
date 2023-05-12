@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DataIntegrationAssociationSummary extends StObject {
   
   /**
-    * The identifier for teh client that is associated with the DataIntegration association.
+    * The identifier for the client that is associated with the DataIntegration association.
     */
   var ClientId: js.UndefOr[typings.awsSdk.clientsAppintegrationsMod.ClientId] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN)of the DataIntegration.
+    * The Amazon Resource Name (ARN) of the DataIntegration.
     */
   var DataIntegrationArn: js.UndefOr[Arn] = js.undefined
   

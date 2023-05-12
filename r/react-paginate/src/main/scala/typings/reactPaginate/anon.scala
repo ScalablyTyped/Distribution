@@ -6,6 +6,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
+  trait Backward extends StObject {
+    
+    var backward: String
+    
+    var forward: String
+  }
+  object Backward {
+    
+    inline def apply(backward: String, forward: String): Backward = {
+      val __obj = js.Dynamic.literal(backward = backward.asInstanceOf[js.Any], forward = forward.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Backward]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Backward] (val x: Self) extends AnyVal {
+      
+      inline def setBackward(value: String): Self = StObject.set(x, "backward", value.asInstanceOf[js.Any])
+      
+      inline def setForward(value: String): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Event extends StObject {
     
     var event: js.Object

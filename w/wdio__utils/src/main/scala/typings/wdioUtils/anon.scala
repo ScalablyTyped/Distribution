@@ -1,10 +1,11 @@
 package typings.wdioUtils
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.eventsMod.EventEmitter
+import typings.std.Partial
 import typings.std.Record
 import typings.wdioTypes.anon.Http
-import typings.wdioTypes.buildCapabilitiesMod.DesiredCapabilities
-import typings.wdioTypes.buildCapabilitiesMod.W3CCapabilities
+import typings.wdioTypes.buildCapabilitiesMod.RemoteCapability
 import typings.wdioTypes.buildOptionsMod.AutoCompileConfig
 import typings.wdioTypes.buildOptionsMod.RequestLibOptions
 import typings.wdioTypes.buildOptionsMod.RequestLibResponse
@@ -14,9 +15,11 @@ import typings.wdioTypes.buildOptionsMod.WebDriverLogTypes
 import typings.wdioTypes.buildReportersMod.ReporterEntry
 import typings.wdioTypes.buildServicesMod.ServiceEntry
 import typings.wdioTypes.buildServicesMod.ServiceInstance
+import typings.wdioTypes.mod.global.WebdriverIO.BrowserRunnerOptions
 import typings.wdioTypes.mod.global.WebdriverIO.CucumberOpts
 import typings.wdioTypes.mod.global.WebdriverIO.JasmineOpts
 import typings.wdioTypes.mod.global.WebdriverIO.MochaOpts
+import typings.wdioUtils.wdioUtilsStrings.browser
 import typings.wdioUtils.wdioUtilsStrings.local
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -29,10 +32,12 @@ object anon {
     
     def apply(sessionId: String): Any = js.native
     def apply(sessionId: String, commandWrapper: js.Function): Any = js.native
+    def apply(sessionId: String, commandWrapper: js.Function, eventMiddleware: Socket): Any = js.native
+    def apply(sessionId: String, commandWrapper: Unit, eventMiddleware: Socket): Any = js.native
     
     /**
       * Enhance monad prototype with function
-      * @param  {String}   name          name of function to attach to prototype
+      * @param  {string}   name          name of function to attach to prototype
       * @param  {Function} func          function to be added to prototype
       * @param  {Object}   proto         prototype to add function to (optional)
       * @param  {Function} origCommand   original command to be passed to custom command as first argument
@@ -43,13 +48,13 @@ object anon {
   
   trait Capabilities extends StObject {
     
-    var capabilities: DesiredCapabilities
+    var capabilities: RemoteCapability
     
-    var requestedCapabilities: DesiredCapabilities | W3CCapabilities
+    var requestedCapabilities: RemoteCapability
   }
   object Capabilities {
     
-    inline def apply(capabilities: DesiredCapabilities, requestedCapabilities: DesiredCapabilities | W3CCapabilities): Capabilities = {
+    inline def apply(capabilities: RemoteCapability, requestedCapabilities: RemoteCapability): Capabilities = {
       val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any], requestedCapabilities = requestedCapabilities.asInstanceOf[js.Any])
       __obj.asInstanceOf[Capabilities]
     }
@@ -57,9 +62,9 @@ object anon {
     @scala.inline
     implicit open class MutableBuilder[Self <: Capabilities] (val x: Self) extends AnyVal {
       
-      inline def setCapabilities(value: DesiredCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+      inline def setCapabilities(value: RemoteCapability): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
       
-      inline def setRequestedCapabilities(value: DesiredCapabilities | W3CCapabilities): Self = StObject.set(x, "requestedCapabilities", value.asInstanceOf[js.Any])
+      inline def setRequestedCapabilities(value: RemoteCapability): Self = StObject.set(x, "requestedCapabilities", value.asInstanceOf[js.Any])
     }
   }
   
@@ -345,6 +350,8 @@ object anon {
     
     var hostname: js.UndefOr[String] = js.undefined
     
+    var injectGlobals: js.UndefOr[Boolean] = js.undefined
+    
     var jasmineOpts: js.UndefOr[JasmineOpts] = js.undefined
     
     var key: js.UndefOr[String] = js.undefined
@@ -377,7 +384,11 @@ object anon {
     
     var reporters: js.UndefOr[js.Array[ReporterEntry]] = js.undefined
     
-    var runner: js.UndefOr[local] = js.undefined
+    var rootDir: js.UndefOr[String] = js.undefined
+    
+    var runner: js.UndefOr[
+        local | browser | (js.Tuple2[browser | local, BrowserRunnerOptions | scala.Nothing])
+      ] = js.undefined
     
     var runnerEnv: js.UndefOr[Record[String, Any]] = js.undefined
     
@@ -393,7 +404,7 @@ object anon {
     
     var strictSSL: js.UndefOr[Boolean] = js.undefined
     
-    var suites: js.UndefOr[Record[String, js.Array[String]]] = js.undefined
+    var suites: js.UndefOr[Record[String, js.Array[js.Array[String] | String]]] = js.undefined
     
     var transformRequest: js.UndefOr[js.Function1[/* requestOptions */ RequestLibOptions, RequestLibOptions]] = js.undefined
     
@@ -499,6 +510,10 @@ object anon {
       
       inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
       
+      inline def setInjectGlobals(value: Boolean): Self = StObject.set(x, "injectGlobals", value.asInstanceOf[js.Any])
+      
+      inline def setInjectGlobalsUndefined: Self = StObject.set(x, "injectGlobals", js.undefined)
+      
       inline def setJasmineOpts(value: JasmineOpts): Self = StObject.set(x, "jasmineOpts", value.asInstanceOf[js.Any])
       
       inline def setJasmineOptsUndefined: Self = StObject.set(x, "jasmineOpts", js.undefined)
@@ -565,7 +580,11 @@ object anon {
       
       inline def setReportersVarargs(value: ReporterEntry*): Self = StObject.set(x, "reporters", js.Array(value*))
       
-      inline def setRunner(value: local): Self = StObject.set(x, "runner", value.asInstanceOf[js.Any])
+      inline def setRootDir(value: String): Self = StObject.set(x, "rootDir", value.asInstanceOf[js.Any])
+      
+      inline def setRootDirUndefined: Self = StObject.set(x, "rootDir", js.undefined)
+      
+      inline def setRunner(value: local | browser | (js.Tuple2[browser | local, BrowserRunnerOptions | scala.Nothing])): Self = StObject.set(x, "runner", value.asInstanceOf[js.Any])
       
       inline def setRunnerEnv(value: Record[String, Any]): Self = StObject.set(x, "runnerEnv", value.asInstanceOf[js.Any])
       
@@ -601,7 +620,7 @@ object anon {
       
       inline def setStrictSSLUndefined: Self = StObject.set(x, "strictSSL", js.undefined)
       
-      inline def setSuites(value: Record[String, js.Array[String]]): Self = StObject.set(x, "suites", value.asInstanceOf[js.Any])
+      inline def setSuites(value: Record[String, js.Array[js.Array[String] | String]]): Self = StObject.set(x, "suites", value.asInstanceOf[js.Any])
       
       inline def setSuitesUndefined: Self = StObject.set(x, "suites", js.undefined)
       
@@ -630,6 +649,24 @@ object anon {
       inline def setWatch(value: Boolean): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
       
       inline def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
+    }
+  }
+  
+  trait Socket extends StObject {
+    
+    var socket: Partial[EventEmitter]
+  }
+  object Socket {
+    
+    inline def apply(socket: Partial[EventEmitter]): Socket = {
+      val __obj = js.Dynamic.literal(socket = socket.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Socket]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Socket] (val x: Self) extends AnyVal {
+      
+      inline def setSocket(value: Partial[EventEmitter]): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
     }
   }
   

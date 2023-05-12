@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Clipboard extends StObject {
   
   /**
-    * Read the current clipboard contents as text.
-    * @returns A thenable that resolves to a string.
-    */
+  		 * Read the current clipboard contents as text.
+  		 * @returns A thenable that resolves to a string.
+  		 */
   def readText(): Thenable[String]
   
   /**
-    * Writes text into the clipboard.
-    * @returns A thenable that resolves when writing happened.
-    */
+  		 * Writes text into the clipboard.
+  		 * @returns A thenable that resolves when writing happened.
+  		 */
   def writeText(value: String): Thenable[Unit]
 }
 object Clipboard {

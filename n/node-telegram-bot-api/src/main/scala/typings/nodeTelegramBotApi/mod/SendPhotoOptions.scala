@@ -10,6 +10,8 @@ trait SendPhotoOptions
   
   var caption: js.UndefOr[String] = js.undefined
   
+  var has_spoiler: js.UndefOr[Boolean] = js.undefined
+  
   var parse_mode: js.UndefOr[ParseMode] = js.undefined
 }
 object SendPhotoOptions {
@@ -25,6 +27,10 @@ object SendPhotoOptions {
     inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
     inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    
+    inline def setHas_spoiler(value: Boolean): Self = StObject.set(x, "has_spoiler", value.asInstanceOf[js.Any])
+    
+    inline def setHas_spoilerUndefined: Self = StObject.set(x, "has_spoiler", js.undefined)
     
     inline def setParse_mode(value: ParseMode): Self = StObject.set(x, "parse_mode", value.asInstanceOf[js.Any])
     

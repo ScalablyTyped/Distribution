@@ -1,7 +1,7 @@
 
 # Scala.js typings for selderee__plugin-htmlparser2
 
-Typings are for version 0.9.0
+Typings are for version 0.11.0
 
 ## Library description:
 selderee plugin - selectors decision tree builder for htmlparser2 DOM.

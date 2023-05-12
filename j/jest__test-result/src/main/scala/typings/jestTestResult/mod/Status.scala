@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined @jest/test-result.@jest/test-result.AssertionResult['status'] */
 /* Rewritten from type alias, can be one of: 
   - typings.jestTestResult.jestTestResultStrings.disabled
+  - typings.jestTestResult.jestTestResultStrings.focused
   - typings.jestTestResult.jestTestResultStrings.passed
   - typings.jestTestResult.jestTestResultStrings.skipped
   - typings.jestTestResult.jestTestResultStrings.todo
@@ -19,6 +20,8 @@ object Status {
   inline def disabled: typings.jestTestResult.jestTestResultStrings.disabled = "disabled".asInstanceOf[typings.jestTestResult.jestTestResultStrings.disabled]
   
   inline def failed: typings.jestTestResult.jestTestResultStrings.failed = "failed".asInstanceOf[typings.jestTestResult.jestTestResultStrings.failed]
+  
+  inline def focused: typings.jestTestResult.jestTestResultStrings.focused = "focused".asInstanceOf[typings.jestTestResult.jestTestResultStrings.focused]
   
   inline def passed: typings.jestTestResult.jestTestResultStrings.passed = "passed".asInstanceOf[typings.jestTestResult.jestTestResultStrings.passed]
   

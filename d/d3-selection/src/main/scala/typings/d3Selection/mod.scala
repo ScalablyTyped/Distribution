@@ -332,7 +332,7 @@ object mod {
       * from the parent element; or, if the name is one of the known prefixes, the corresponding namespace will be used
       * (for example, svg implies svg:svg)
       */
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def append[ChildElement /* <: BaseType */](`type`: String): Selection_[ChildElement, Datum, PElement, PDatum] = js.native
     /**
       * Appends a new element of the type provided by the element creator function as the last child of each selected element,
@@ -386,13 +386,9 @@ object mod {
       * @param func A function which is passed this selection as the first argument along with any optional arguments.
       * @param args List of optional arguments to be passed to the callback function.
       */
-    def call(
-      func: js.Function2[
-          /* selection */ Selection_[GElement, Datum, PElement, PDatum], 
-          /* repeated */ Any, 
-          Unit
-        ],
-      args: Any*
+    def call[Args /* <: js.Array[Any] */](
+      func: js.Function2[/* selection */ Selection_[GElement, Datum, PElement, PDatum], /* args */ Args, Unit],
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args is not an array type */ args: Args
     ): this.type = js.native
     
     /**
@@ -549,7 +545,7 @@ object mod {
       * Ensure you set the generic to the correct type, if you need to access the data on the exit selection in
       * follow-up steps, e.g. to set styles as part of an exit transition before removing them.
       */
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def exit[OldDatum](): Selection_[GElement, OldDatum, PElement, PDatum] = js.native
     
     /**
@@ -586,7 +582,7 @@ object mod {
       *
       * @param selector A CSS selector string to match when filtering.
       */
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     @JSName("filter")
     def filter_FilteredElement[FilteredElement /* <: BaseType */](selector: String): Selection_[FilteredElement, Datum, PElement, PDatum] = js.native
     /**
@@ -600,7 +596,7 @@ object mod {
       * the current index (i), and the current group (nodes), with this as the current DOM element (nodes[i]). This function should return true
       * for an element to be included, and false otherwise.
       */
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     @JSName("filter")
     def filter_FilteredElement[FilteredElement /* <: BaseType */](selector: ValueFn[GElement, Datum, Boolean]): Selection_[FilteredElement, Datum, PElement, PDatum] = js.native
     
@@ -728,7 +724,7 @@ object mod {
             (Selection_[GElement, Datum, PElement, PDatum]) | (TransitionLike[GElement, Datum])
           ]
         ],
-      // tslint:disable-next-line:no-unnecessary-generics
+      // eslint-disable-next-line no-unnecessary-generics
     exit: js.Function1[/* elem */ Selection_[GElement, OldDatum, PElement, PDatum], Unit]
     ): Selection_[
         GElement | (/* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any), 
@@ -739,7 +735,7 @@ object mod {
     def join[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170, starting with typings.d3Selection.d3SelectionStrings.a, typings.d3Selection.d3SelectionStrings.abbr, typings.d3Selection.d3SelectionStrings.address */ Any */, OldDatum](
       enter: K,
       update: Unit,
-      // tslint:disable-next-line:no-unnecessary-generics
+      // eslint-disable-next-line no-unnecessary-generics
     exit: js.Function1[/* elem */ Selection_[GElement, OldDatum, PElement, PDatum], Unit]
     ): Selection_[
         GElement | (/* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any), 
@@ -771,13 +767,13 @@ object mod {
             (Selection_[GElement, Datum, PElement, PDatum]) | (TransitionLike[GElement, Datum])
           ]
         ],
-      // tslint:disable-next-line:no-unnecessary-generics
+      // eslint-disable-next-line no-unnecessary-generics
     exit: js.Function1[/* elem */ Selection_[GElement, OldDatum, PElement, PDatum], Unit]
     ): Selection_[ChildElement | GElement, Datum, PElement, PDatum] = js.native
     def join[ChildElement /* <: BaseType */, OldDatum](
       enter: String,
       update: Unit,
-      // tslint:disable-next-line:no-unnecessary-generics
+      // eslint-disable-next-line no-unnecessary-generics
     exit: js.Function1[/* elem */ Selection_[GElement, OldDatum, PElement, PDatum], Unit]
     ): Selection_[ChildElement | GElement, Datum, PElement, PDatum] = js.native
     def join[ChildElement /* <: BaseType */, OldDatum](
@@ -809,7 +805,7 @@ object mod {
             (Selection_[GElement, Datum, PElement, PDatum]) | (TransitionLike[GElement, Datum])
           ]
         ],
-      // tslint:disable-next-line:no-unnecessary-generics
+      // eslint-disable-next-line no-unnecessary-generics
     exit: js.Function1[/* elem */ Selection_[GElement, OldDatum, PElement, PDatum], Unit]
     ): Selection_[ChildElement | GElement, Datum, PElement, PDatum] = js.native
     def join[ChildElement /* <: BaseType */, OldDatum](
@@ -818,7 +814,7 @@ object mod {
           (Selection_[ChildElement, Datum, PElement, PDatum]) | (TransitionLike[GElement, Datum])
         ],
       update: Unit,
-      // tslint:disable-next-line:no-unnecessary-generics
+      // eslint-disable-next-line no-unnecessary-generics
     exit: js.Function1[/* elem */ Selection_[GElement, OldDatum, PElement, PDatum], Unit]
     ): Selection_[ChildElement | GElement, Datum, PElement, PDatum] = js.native
     
@@ -986,13 +982,13 @@ object mod {
       *
       * @param selector CSS selector string
       */
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def select[DescElement /* <: BaseType */](selector: String): Selection_[DescElement, Datum, PElement, PDatum] = js.native
     /**
       * Create an empty sub-selection. Selection.select does not affect grouping: it preserves the existing group
       * structure and indexes.
       */
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def select[DescElement /* <: BaseType */](selector: Null): Selection_[Null, Unit, PElement, PDatum] = js.native
     /**
       * For each selected element, select the descendant element returned by the selector function.
@@ -1029,7 +1025,7 @@ object mod {
       *
       * @param selector CSS selector string
       */
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def selectAll[DescElement /* <: BaseType */, OldDatum](selector: String): Selection_[DescElement, OldDatum, GElement, Datum] = js.native
     /**
       * For each selected element, selects the descendant elements returned by the selector function. The elements in the returned
@@ -1062,7 +1058,7 @@ object mod {
       *
       * @param selector CSS selector string
       */
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def selectChild[DescElement /* <: BaseType */](): Selection_[DescElement, Datum, PElement, PDatum] = js.native
     def selectChild[DescElement /* <: BaseType */](selector: String): Selection_[DescElement, Datum, PElement, PDatum] = js.native
     /**

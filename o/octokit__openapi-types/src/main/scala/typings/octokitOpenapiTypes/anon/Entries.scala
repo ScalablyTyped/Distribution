@@ -8,12 +8,8 @@ trait Entries extends StObject {
   
   var _links: Git
   
-  var content: Any
-  
   /** Format: uri */
   var download_url: String | Null
-  
-  var encoding: Any
   
   var entries: js.UndefOr[js.Array[Downloadurl]] = js.undefined
   
@@ -38,18 +34,8 @@ trait Entries extends StObject {
 }
 object Entries {
   
-  inline def apply(
-    _links: Git,
-    content: Any,
-    encoding: Any,
-    name: String,
-    path: String,
-    sha: String,
-    size: Double,
-    `type`: String,
-    url: String
-  ): Entries = {
-    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], download_url = null, git_url = null, html_url = null)
+  inline def apply(_links: Git, name: String, path: String, sha: String, size: Double, `type`: String, url: String): Entries = {
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], download_url = null, git_url = null, html_url = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Entries]
   }
@@ -57,13 +43,9 @@ object Entries {
   @scala.inline
   implicit open class MutableBuilder[Self <: Entries] (val x: Self) extends AnyVal {
     
-    inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
-    
     inline def setDownload_url(value: String): Self = StObject.set(x, "download_url", value.asInstanceOf[js.Any])
     
     inline def setDownload_urlNull: Self = StObject.set(x, "download_url", null)
-    
-    inline def setEncoding(value: Any): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     inline def setEntries(value: js.Array[Downloadurl]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     

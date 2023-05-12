@@ -1,5 +1,6 @@
 package typings.opentelemetryResources
 
+import typings.opentelemetryResources.buildSrcIresourceMod.IResource
 import typings.opentelemetryResources.buildSrcTypesMod.ResourceAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,31 +10,33 @@ object buildSrcResourceMod {
   
   @JSImport("@opentelemetry/resources/build/src/Resource", "Resource")
   @js.native
-  open class Resource protected () extends StObject {
+  open class Resource protected ()
+    extends StObject
+       with IResource {
     def this(/**
       * A dictionary of attributes with string keys and values that provide
       * information about the entity as numbers, strings or booleans
       * TODO: Consider to add check/validation on attributes.
       */
     attributes: ResourceAttributes) = this()
-    
-    /**
+    def this(
+      /**
       * A dictionary of attributes with string keys and values that provide
       * information about the entity as numbers, strings or booleans
       * TODO: Consider to add check/validation on attributes.
       */
-    val attributes: ResourceAttributes = js.native
+    attributes: ResourceAttributes,
+      asyncAttributesPromise: js.Promise[ResourceAttributes]
+    ) = this()
     
-    /**
-      * Returns a new, merged {@link Resource} by merging the current Resource
-      * with the other Resource. In case of a collision, other Resource takes
-      * precedence.
-      *
-      * @param other the Resource that will be merged with this.
-      * @returns the newly merged Resource.
-      */
-    def merge(): Resource = js.native
-    def merge(other: Resource): Resource = js.native
+    /* private */ var _asyncAttributesPromise: Any = js.native
+    
+    /* private */ var _attributes: Any = js.native
+    
+    /* private */ var _syncAttributes: Any = js.native
+    
+    @JSName("attributes")
+    def attributes_MResource: ResourceAttributes = js.native
   }
   /* static members */
   object Resource {
@@ -43,9 +46,9 @@ object buildSrcResourceMod {
     val ^ : js.Any = js.native
     
     /**
-      * Returns a Resource that indentifies the SDK in use.
+      * Returns a Resource that identifies the SDK in use.
       */
-    inline def default(): Resource = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Resource]
+    inline def default(): IResource = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[IResource]
     
     @JSImport("@opentelemetry/resources/build/src/Resource", "Resource.EMPTY")
     @js.native
@@ -54,6 +57,6 @@ object buildSrcResourceMod {
     /**
       * Returns an empty Resource
       */
-    inline def empty(): Resource = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Resource]
+    inline def empty(): IResource = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[IResource]
   }
 }

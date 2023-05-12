@@ -59,6 +59,8 @@ object mod extends Shortcut {
     var retryDelay: js.UndefOr[Double] = js.undefined
     
     var retryStrategy: js.UndefOr[RetryStrategy] = js.undefined
+    
+    var skipHeaderSanitize: js.UndefOr[Boolean] = js.undefined
   }
   object RequestRetryOptions {
     
@@ -93,6 +95,10 @@ object mod extends Shortcut {
       inline def setRetryStrategy(value: (/* err */ js.Error, /* response */ IncomingMessage, /* body */ Any) => Boolean): Self = StObject.set(x, "retryStrategy", js.Any.fromFunction3(value))
       
       inline def setRetryStrategyUndefined: Self = StObject.set(x, "retryStrategy", js.undefined)
+      
+      inline def setSkipHeaderSanitize(value: Boolean): Self = StObject.set(x, "skipHeaderSanitize", value.asInstanceOf[js.Any])
+      
+      inline def setSkipHeaderSanitizeUndefined: Self = StObject.set(x, "skipHeaderSanitize", js.undefined)
     }
   }
   

@@ -3,7 +3,7 @@ package typings.openui5
 import typings.openui5.anon.AutoExpandMode
 import typings.openui5.anon.Length
 import typings.openui5.anon.NumberOfExpandedLevels
-import typings.openui5.anon.`32`
+import typings.openui5.anon.`40`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiModelAnalyticsOdata4analyticsMod.QueryResult
 import typings.std.Record
@@ -16,6 +16,9 @@ object sapUiModelAnalyticsAnalyticalBindingMod {
   @JSImport("sap/ui/model/analytics/AnalyticalBinding", JSImport.Default)
   @js.native
   open class default protected () extends AnalyticalBinding {
+    /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      */
     def this(
       /**
       * The OData model
@@ -381,6 +384,8 @@ object sapUiModelAnalyticsAnalyticalBindingMod {
     val ^ : js.Any = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Creates a new subclass of class sap.ui.model.analytics.AnalyticalBinding with name `sClassName` and enriches
       * it with the information contained in `oClassInfo`.
       *
@@ -434,6 +439,8 @@ object sapUiModelAnalyticsAnalyticalBindingMod {
     ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any], FNMetaImpl.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns a metadata object for class sap.ui.model.analytics.AnalyticalBinding.
       *
       * @returns Metadata object describing this class
@@ -1702,7 +1709,7 @@ object sapUiModelAnalyticsAnalyticalBindingMod {
       * The only supported parameter is `level` as the level number of oContext (because the context might occur
       * at multiple levels)
       */
-    mParameters: `32`
+    mParameters: `40`
     ): Boolean = js.native
     
     /**
@@ -1758,6 +1765,8 @@ object sapUiModelAnalyticsAnalyticalBindingMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Updates the binding's structure with new analytical information.
       *
       * Analytical information is the mapping of UI columns to properties in the bound OData entity set. Every

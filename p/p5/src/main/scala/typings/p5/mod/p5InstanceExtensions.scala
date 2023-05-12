@@ -17,8 +17,6 @@ trait p5InstanceExtensions extends StObject {
   
   val ARROW: typings.p5.mod.ARROW = js.native
   
-  val AUDIO: typings.p5.mod.AUDIO = js.native
-  
   /**
     *   AUTO allows us to automatically set the width or
     *   height of an element (but not both), based on the
@@ -60,11 +58,15 @@ trait p5InstanceExtensions extends StObject {
   
   val CLOSE: typings.p5.mod.CLOSE = js.native
   
+  val CONTAIN: typings.p5.mod.CONTAIN = js.native
+  
   val CONTROL: Double = js.native
   
   val CORNER: typings.p5.mod.CORNER = js.native
   
   val CORNERS: typings.p5.mod.CORNERS = js.native
+  
+  val COVER: typings.p5.mod.COVER = js.native
   
   val CROSS: typings.p5.mod.CROSS = js.native
   
@@ -73,9 +75,9 @@ trait p5InstanceExtensions extends StObject {
   val DARKEST: typings.p5.mod.DARKEST = js.native
   
   /**
-    *   Constant to be used with angleMode() function, to
-    *   set the mode which p5.js interprets and calculates
-    *   angles (either DEGREES or RADIANS).
+    *   Constant to be used with the angleMode() function,
+    *   to set the mode in which p5.js interprets and
+    *   calculates angles (either DEGREES or RADIANS).
     */
   val DEGREES: typings.p5.mod.DEGREES = js.native
   
@@ -212,9 +214,9 @@ trait p5InstanceExtensions extends StObject {
   val QUARTER_PI: Double = js.native
   
   /**
-    *   Constant to be used with angleMode() function, to
-    *   set the mode which p5.js interprets and calculates
-    *   angles (either RADIANS or DEGREES).
+    *   Constant to be used with the angleMode() function,
+    *   to set the mode in which p5.js interprets and
+    *   calculates angles (either RADIANS or DEGREES).
     */
   val RADIANS: typings.p5.mod.RADIANS = js.native
   
@@ -292,8 +294,6 @@ trait p5InstanceExtensions extends StObject {
     */
   val VERSION: typings.p5.mod.VERSION = js.native
   
-  val VIDEO: typings.p5.mod.VIDEO = js.native
-  
   val WAIT: typings.p5.mod.WAIT = js.native
   
   /**
@@ -339,8 +339,8 @@ trait p5InstanceExtensions extends StObject {
     *   The inverse of cos(), returns the arc cosine of a
     *   value. This function expects the values in the
     *   range of -1 to 1 and values are returned in the
-    *   range 0 to PI (3.1415927) if the angleMode is
-    *   RADIANS or 0 to 180 if the angle mode is DEGREES.
+    *   range 0 to PI (3.1415927) if the angleMode() is
+    *   RADIANS or 0 to 180 if the angleMode() is DEGREES.
     *   @param value the value whose arc cosine is to be
     *   returned
     *   @return the arc cosine of the given value
@@ -359,50 +359,93 @@ trait p5InstanceExtensions extends StObject {
   def alpha(color: Color): Double = js.native
   
   /**
-    *   Creates an ambient light with a color. Ambient
-    *   light is light that comes from everywhere on the
-    *   canvas. It has no particular source.
-    *   @param color the ambient light color
+    *   Creates an ambient light with the given color.
+    *   Ambient light does not come from a specific
+    *   direction. Objects are evenly lit from all sides.
+    *   Ambient lights are almost always used in
+    *   combination with other types of lights.
+    *
+    *   Note: lights need to be called (whether directly
+    *   or indirectly) within draw() to remain persistent
+    *   in a looping program. Placing them in setup() will
+    *   cause them to only have an effect the first time
+    *   through the loop.
+    *   @param color color as a p5.Color
     *   @chainable
     */
   def ambientLight(color: Color): p5 = js.native
   /**
-    *   Creates an ambient light with a color. Ambient
-    *   light is light that comes from everywhere on the
-    *   canvas. It has no particular source.
-    *   @param gray a gray value
-    *   @param [alpha] the alpha value
+    *   Creates an ambient light with the given color.
+    *   Ambient light does not come from a specific
+    *   direction. Objects are evenly lit from all sides.
+    *   Ambient lights are almost always used in
+    *   combination with other types of lights.
+    *
+    *   Note: lights need to be called (whether directly
+    *   or indirectly) within draw() to remain persistent
+    *   in a looping program. Placing them in setup() will
+    *   cause them to only have an effect the first time
+    *   through the loop.
+    *   @param gray number specifying value between white
+    *   and black
+    *   @param [alpha] alpha value relative to current
+    *   color range (default is 0-255)
     *   @chainable
     */
   def ambientLight(gray: Double): p5 = js.native
   def ambientLight(gray: Double, alpha: Double): p5 = js.native
   /**
-    *   Creates an ambient light with a color. Ambient
-    *   light is light that comes from everywhere on the
-    *   canvas. It has no particular source.
+    *   Creates an ambient light with the given color.
+    *   Ambient light does not come from a specific
+    *   direction. Objects are evenly lit from all sides.
+    *   Ambient lights are almost always used in
+    *   combination with other types of lights.
+    *
+    *   Note: lights need to be called (whether directly
+    *   or indirectly) within draw() to remain persistent
+    *   in a looping program. Placing them in setup() will
+    *   cause them to only have an effect the first time
+    *   through the loop.
     *   @param v1 red or hue value relative to the current
     *   color range
     *   @param v2 green or saturation value relative to
     *   the current color range
     *   @param v3 blue or brightness value relative to the
     *   current color range
-    *   @param [alpha] the alpha value
+    *   @param [alpha] alpha value relative to current
+    *   color range (default is 0-255)
     *   @chainable
     */
   def ambientLight(v1: Double, v2: Double, v3: Double): p5 = js.native
   def ambientLight(v1: Double, v2: Double, v3: Double, alpha: Double): p5 = js.native
   /**
-    *   Creates an ambient light with a color. Ambient
-    *   light is light that comes from everywhere on the
-    *   canvas. It has no particular source.
+    *   Creates an ambient light with the given color.
+    *   Ambient light does not come from a specific
+    *   direction. Objects are evenly lit from all sides.
+    *   Ambient lights are almost always used in
+    *   combination with other types of lights.
+    *
+    *   Note: lights need to be called (whether directly
+    *   or indirectly) within draw() to remain persistent
+    *   in a looping program. Placing them in setup() will
+    *   cause them to only have an effect the first time
+    *   through the loop.
     *   @param value a color string
     *   @chainable
     */
   def ambientLight(value: String): p5 = js.native
   /**
-    *   Creates an ambient light with a color. Ambient
-    *   light is light that comes from everywhere on the
-    *   canvas. It has no particular source.
+    *   Creates an ambient light with the given color.
+    *   Ambient light does not come from a specific
+    *   direction. Objects are evenly lit from all sides.
+    *   Ambient lights are almost always used in
+    *   combination with other types of lights.
+    *
+    *   Note: lights need to be called (whether directly
+    *   or indirectly) within draw() to remain persistent
+    *   in a looping program. Placing them in setup() will
+    *   cause them to only have an effect the first time
+    *   through the loop.
     *   @param values an array containing the
     *   red,green,blue & and alpha components of the color
     *   @chainable
@@ -410,42 +453,89 @@ trait p5InstanceExtensions extends StObject {
   def ambientLight(values: js.Array[Double]): p5 = js.native
   
   def ambientMaterial(color: String): p5 = js.native
+  def ambientMaterial(color: js.Array[Double]): p5 = js.native
   /**
-    *   Ambient material for geometry with a given color.
-    *   Ambient material defines the color the object
-    *   reflects under any lighting. For example, if the
-    *   ambient material of an object is pure red, but the
-    *   ambient lighting only contains green, the object
-    *   will not reflect any light. Here's an example
-    *   containing all possible materials.
-    *   @param color color, color Array, or CSS color
-    *   string
+    *   Sets the ambient color of the material. The
+    *   ambientMaterial() color is the color the object
+    *   will reflect under any lighting.
+    *
+    *   Consider an ambientMaterial() with the color
+    *   yellow (255, 255, 0). If the light emits the color
+    *   white (255, 255, 255), then the object will appear
+    *   yellow as it will reflect the red and green
+    *   components of the light. If the light emits the
+    *   color red (255, 0, 0), then the object will appear
+    *   red as it will reflect the red component of the
+    *   light. If the light emits the color blue (0, 0,
+    *   255), then the object will appear black, as there
+    *   is no component of the light that it can reflect.
+    *
+    *   You can view more materials in this example.
+    *   @param color color as a p5.Color, as an array, or
+    *   as a CSS string
     *   @chainable
     */
-  def ambientMaterial(color: js.Array[Double]): p5 = js.native
   def ambientMaterial(color: Color): p5 = js.native
   /**
-    *   Ambient material for geometry with a given color.
-    *   Ambient material defines the color the object
-    *   reflects under any lighting. For example, if the
-    *   ambient material of an object is pure red, but the
-    *   ambient lighting only contains green, the object
-    *   will not reflect any light. Here's an example
-    *   containing all possible materials.
-    *   @param v1 gray value, red or hue value (depending
-    *   on the current color mode),
-    *   @param [v2] green or saturation value
-    *   @param [v3] blue or brightness value
+    *   Sets the ambient color of the material. The
+    *   ambientMaterial() color is the color the object
+    *   will reflect under any lighting.
+    *
+    *   Consider an ambientMaterial() with the color
+    *   yellow (255, 255, 0). If the light emits the color
+    *   white (255, 255, 255), then the object will appear
+    *   yellow as it will reflect the red and green
+    *   components of the light. If the light emits the
+    *   color red (255, 0, 0), then the object will appear
+    *   red as it will reflect the red component of the
+    *   light. If the light emits the color blue (0, 0,
+    *   255), then the object will appear black, as there
+    *   is no component of the light that it can reflect.
+    *
+    *   You can view more materials in this example.
+    *   @param gray number specifying value between white
+    *   and black
     *   @chainable
     */
-  def ambientMaterial(v1: Double): p5 = js.native
-  def ambientMaterial(v1: Double, v2: Double): p5 = js.native
+  def ambientMaterial(gray: Double): p5 = js.native
+  /**
+    *   Sets the ambient color of the material. The
+    *   ambientMaterial() color is the color the object
+    *   will reflect under any lighting.
+    *
+    *   Consider an ambientMaterial() with the color
+    *   yellow (255, 255, 0). If the light emits the color
+    *   white (255, 255, 255), then the object will appear
+    *   yellow as it will reflect the red and green
+    *   components of the light. If the light emits the
+    *   color red (255, 0, 0), then the object will appear
+    *   red as it will reflect the red component of the
+    *   light. If the light emits the color blue (0, 0,
+    *   255), then the object will appear black, as there
+    *   is no component of the light that it can reflect.
+    *
+    *   You can view more materials in this example.
+    *   @param v1 red or hue value relative to the current
+    *   color range
+    *   @param v2 green or saturation value relative to
+    *   the current color range
+    *   @param v3 blue or brightness value relative to the
+    *   current color range
+    *   @chainable
+    */
   def ambientMaterial(v1: Double, v2: Double, v3: Double): p5 = js.native
-  def ambientMaterial(v1: Double, v2: Unit, v3: Double): p5 = js.native
   
   /**
-    *   Sets the current mode of p5 to given mode. Default
-    *   mode is RADIANS.
+    *   Sets the current mode of p5 to the given mode.
+    *   Default mode is RADIANS. Calling angleMode() with
+    *   no arguments returns current anglemode.
+    *   @return mode either RADIANS or DEGREES
+    */
+  def angleMode(): UNKNOWN_P5_CONSTANT = js.native
+  /**
+    *   Sets the current mode of p5 to the given mode.
+    *   Default mode is RADIANS. Calling angleMode() with
+    *   no arguments returns current anglemode.
     *   @param mode either RADIANS or DEGREES
     */
   def angleMode(mode: ANGLE_MODE): Unit = js.native
@@ -459,7 +549,6 @@ trait p5InstanceExtensions extends StObject {
     */
   def append(array: js.Array[Any], value: Any): js.Array[Any] = js.native
   
-  def applyMatrix(a: js.Array[Any], b: Double, c: Double, d: Double, e: Double, f: Double): p5 = js.native
   /**
     *   Multiplies the current matrix by the one specified
     *   through the parameters. This is a powerful
@@ -470,21 +559,98 @@ trait p5InstanceExtensions extends StObject {
     *   follows the naming of the  WHATWG specification
     *   and corresponds to a transformation matrix of the
     *   form:
-    *   @param a numbers which define the 2×3 matrix to be
-    *   multiplied, or an array of numbers
-    *   @param b numbers which define the 2×3 matrix to be
-    *   multiplied
-    *   @param c numbers which define the 2×3 matrix to be
-    *   multiplied
-    *   @param d numbers which define the 2×3 matrix to be
-    *   multiplied
-    *   @param e numbers which define the 2×3 matrix to be
-    *   multiplied
-    *   @param f numbers which define the 2×3 matrix to be
-    *   multiplied
+    *   @param arr an array of numbers - should be 6 or 16
+    *   length (23 or 44 matrix values)
+    *   @chainable
+    */
+  def applyMatrix(arr: js.Array[Any]): p5 = js.native
+  /**
+    *   Multiplies the current matrix by the one specified
+    *   through the parameters. This is a powerful
+    *   operation that can perform the equivalent of
+    *   translate, scale, shear and rotate all at once.
+    *   You can learn more about transformation matrices
+    *   on  Wikipedia. The naming of the arguments here
+    *   follows the naming of the  WHATWG specification
+    *   and corresponds to a transformation matrix of the
+    *   form:
+    *   @param a numbers which define the 2×3 or 4x4
+    *   matrix to be multiplied
+    *   @param b numbers which define the 2×3 or 4x4
+    *   matrix to be multiplied
+    *   @param c numbers which define the 2×3 or 4x4
+    *   matrix to be multiplied
+    *   @param d numbers which define the 2×3 or 4x4
+    *   matrix to be multiplied
+    *   @param e numbers which define the 2×3 or 4x4
+    *   matrix to be multiplied
+    *   @param f numbers which define the 2×3 or 4x4
+    *   matrix to be multiplied
     *   @chainable
     */
   def applyMatrix(a: Double, b: Double, c: Double, d: Double, e: Double, f: Double): p5 = js.native
+  /**
+    *   Multiplies the current matrix by the one specified
+    *   through the parameters. This is a powerful
+    *   operation that can perform the equivalent of
+    *   translate, scale, shear and rotate all at once.
+    *   You can learn more about transformation matrices
+    *   on  Wikipedia. The naming of the arguments here
+    *   follows the naming of the  WHATWG specification
+    *   and corresponds to a transformation matrix of the
+    *   form:
+    *   @param a numbers which define the 2×3 or 4x4
+    *   matrix to be multiplied
+    *   @param b numbers which define the 2×3 or 4x4
+    *   matrix to be multiplied
+    *   @param c numbers which define the 2×3 or 4x4
+    *   matrix to be multiplied
+    *   @param d numbers which define the 2×3 or 4x4
+    *   matrix to be multiplied
+    *   @param e numbers which define the 2×3 or 4x4
+    *   matrix to be multiplied
+    *   @param f numbers which define the 2×3 or 4x4
+    *   matrix to be multiplied
+    *   @param g numbers which define the 4x4 matrix to be
+    *   multiplied
+    *   @param h numbers which define the 4x4 matrix to be
+    *   multiplied
+    *   @param i numbers which define the 4x4 matrix to be
+    *   multiplied
+    *   @param j numbers which define the 4x4 matrix to be
+    *   multiplied
+    *   @param k numbers which define the 4x4 matrix to be
+    *   multiplied
+    *   @param l numbers which define the 4x4 matrix to be
+    *   multiplied
+    *   @param m numbers which define the 4x4 matrix to be
+    *   multiplied
+    *   @param n numbers which define the 4x4 matrix to be
+    *   multiplied
+    *   @param o numbers which define the 4x4 matrix to be
+    *   multiplied
+    *   @param p numbers which define the 4x4 matrix to be
+    *   multiplied
+    *   @chainable
+    */
+  def applyMatrix(
+    a: Double,
+    b: Double,
+    c: Double,
+    d: Double,
+    e: Double,
+    f: Double,
+    g: Double,
+    h: Double,
+    i: Double,
+    j: Double,
+    k: Double,
+    l: Double,
+    m: Double,
+    n: Double,
+    o: Double,
+    p: Double
+  ): p5 = js.native
   
   /**
     *   Draw an arc to the screen. If called with only x,
@@ -626,14 +792,14 @@ trait p5InstanceExtensions extends StObject {
     *   Calculates the angle (in radians) from a specified
     *   point to the coordinate origin as measured from
     *   the positive x-axis. Values are returned as a
-    *   float in the range from PI to -PI if the angleMode
-    *   is RADIANS or 180 to -180 if the angleMode is
-    *   DEGREES. The atan2() function is most often used
-    *   for orienting geometry to the position of the
-    *   cursor. Note: The y-coordinate of the point is the
-    *   first parameter, and the x-coordinate is the
-    *   second parameter, due the the structure of
-    *   calculating the tangent.
+    *   float in the range from PI to -PI if the
+    *   angleMode() is RADIANS or 180 to -180 if the
+    *   angleMode() is DEGREES. The atan2() function is
+    *   most often used for orienting geometry to the
+    *   position of the cursor. Note: The y-coordinate of
+    *   the point is the first parameter, and the
+    *   x-coordinate is the second parameter, due to the
+    *   structure of calculating the tangent.
     *   @param y y-coordinate of the point
     *   @param x x-coordinate of the point
     *   @return the arc tangent of the given point
@@ -901,12 +1067,12 @@ trait p5InstanceExtensions extends StObject {
     *   TRIANGLE_STRIP Draw a series of connected
     *   triangles in strip fashion
     *
-    *   QUADS Draw a series of separate quad
+    *   QUADS Draw a series of separate quads
     *
     *   QUAD_STRIP Draw quad strip using adjacent edges to
     *   form the next quad
     *
-    *   TESS (WebGl only) Handle irregular polygon for
+    *   TESS (WEBGL only) Handle irregular polygon for
     *   filling curve by explicit tessellation
     *
     *   After calling the beginShape() function, a series
@@ -1197,7 +1363,7 @@ trait p5InstanceExtensions extends StObject {
     *   - LIGHTEST - only the lightest colour succeeds: C
     *   = max(A*factor, B).
     *   - DIFFERENCE - subtract colors from underlying
-    *   image.
+    *   image. (2D)
     *   - EXCLUSION - similar to DIFFERENCE, but less
     *   extreme.
     *   - MULTIPLY - multiply the colors, result will
@@ -1264,7 +1430,7 @@ trait p5InstanceExtensions extends StObject {
   /**
     *   Draw a box with given width, height and depth
     *   @param [width] width of the box
-    *   @param [Height] height of the box
+    *   @param [height] height of the box
     *   @param [depth] depth of the box
     *   @param [detailX] Optional number of triangle
     *   subdivisions in x-dimension
@@ -1274,36 +1440,36 @@ trait p5InstanceExtensions extends StObject {
     */
   def box(): p5 = js.native
   def box(width: Double): p5 = js.native
-  def box(width: Double, Height: Double): p5 = js.native
-  def box(width: Double, Height: Double, depth: Double): p5 = js.native
-  def box(width: Double, Height: Double, depth: Double, detailX: Double): p5 = js.native
-  def box(width: Double, Height: Double, depth: Double, detailX: Double, detailY: Double): p5 = js.native
-  def box(width: Double, Height: Double, depth: Double, detailX: Unit, detailY: Double): p5 = js.native
-  def box(width: Double, Height: Double, depth: Unit, detailX: Double): p5 = js.native
-  def box(width: Double, Height: Double, depth: Unit, detailX: Double, detailY: Double): p5 = js.native
-  def box(width: Double, Height: Double, depth: Unit, detailX: Unit, detailY: Double): p5 = js.native
-  def box(width: Double, Height: Unit, depth: Double): p5 = js.native
-  def box(width: Double, Height: Unit, depth: Double, detailX: Double): p5 = js.native
-  def box(width: Double, Height: Unit, depth: Double, detailX: Double, detailY: Double): p5 = js.native
-  def box(width: Double, Height: Unit, depth: Double, detailX: Unit, detailY: Double): p5 = js.native
-  def box(width: Double, Height: Unit, depth: Unit, detailX: Double): p5 = js.native
-  def box(width: Double, Height: Unit, depth: Unit, detailX: Double, detailY: Double): p5 = js.native
-  def box(width: Double, Height: Unit, depth: Unit, detailX: Unit, detailY: Double): p5 = js.native
-  def box(width: Unit, Height: Double): p5 = js.native
-  def box(width: Unit, Height: Double, depth: Double): p5 = js.native
-  def box(width: Unit, Height: Double, depth: Double, detailX: Double): p5 = js.native
-  def box(width: Unit, Height: Double, depth: Double, detailX: Double, detailY: Double): p5 = js.native
-  def box(width: Unit, Height: Double, depth: Double, detailX: Unit, detailY: Double): p5 = js.native
-  def box(width: Unit, Height: Double, depth: Unit, detailX: Double): p5 = js.native
-  def box(width: Unit, Height: Double, depth: Unit, detailX: Double, detailY: Double): p5 = js.native
-  def box(width: Unit, Height: Double, depth: Unit, detailX: Unit, detailY: Double): p5 = js.native
-  def box(width: Unit, Height: Unit, depth: Double): p5 = js.native
-  def box(width: Unit, Height: Unit, depth: Double, detailX: Double): p5 = js.native
-  def box(width: Unit, Height: Unit, depth: Double, detailX: Double, detailY: Double): p5 = js.native
-  def box(width: Unit, Height: Unit, depth: Double, detailX: Unit, detailY: Double): p5 = js.native
-  def box(width: Unit, Height: Unit, depth: Unit, detailX: Double): p5 = js.native
-  def box(width: Unit, Height: Unit, depth: Unit, detailX: Double, detailY: Double): p5 = js.native
-  def box(width: Unit, Height: Unit, depth: Unit, detailX: Unit, detailY: Double): p5 = js.native
+  def box(width: Double, height: Double): p5 = js.native
+  def box(width: Double, height: Double, depth: Double): p5 = js.native
+  def box(width: Double, height: Double, depth: Double, detailX: Double): p5 = js.native
+  def box(width: Double, height: Double, depth: Double, detailX: Double, detailY: Double): p5 = js.native
+  def box(width: Double, height: Double, depth: Double, detailX: Unit, detailY: Double): p5 = js.native
+  def box(width: Double, height: Double, depth: Unit, detailX: Double): p5 = js.native
+  def box(width: Double, height: Double, depth: Unit, detailX: Double, detailY: Double): p5 = js.native
+  def box(width: Double, height: Double, depth: Unit, detailX: Unit, detailY: Double): p5 = js.native
+  def box(width: Double, height: Unit, depth: Double): p5 = js.native
+  def box(width: Double, height: Unit, depth: Double, detailX: Double): p5 = js.native
+  def box(width: Double, height: Unit, depth: Double, detailX: Double, detailY: Double): p5 = js.native
+  def box(width: Double, height: Unit, depth: Double, detailX: Unit, detailY: Double): p5 = js.native
+  def box(width: Double, height: Unit, depth: Unit, detailX: Double): p5 = js.native
+  def box(width: Double, height: Unit, depth: Unit, detailX: Double, detailY: Double): p5 = js.native
+  def box(width: Double, height: Unit, depth: Unit, detailX: Unit, detailY: Double): p5 = js.native
+  def box(width: Unit, height: Double): p5 = js.native
+  def box(width: Unit, height: Double, depth: Double): p5 = js.native
+  def box(width: Unit, height: Double, depth: Double, detailX: Double): p5 = js.native
+  def box(width: Unit, height: Double, depth: Double, detailX: Double, detailY: Double): p5 = js.native
+  def box(width: Unit, height: Double, depth: Double, detailX: Unit, detailY: Double): p5 = js.native
+  def box(width: Unit, height: Double, depth: Unit, detailX: Double): p5 = js.native
+  def box(width: Unit, height: Double, depth: Unit, detailX: Double, detailY: Double): p5 = js.native
+  def box(width: Unit, height: Double, depth: Unit, detailX: Unit, detailY: Double): p5 = js.native
+  def box(width: Unit, height: Unit, depth: Double): p5 = js.native
+  def box(width: Unit, height: Unit, depth: Double, detailX: Double): p5 = js.native
+  def box(width: Unit, height: Unit, depth: Double, detailX: Double, detailY: Double): p5 = js.native
+  def box(width: Unit, height: Unit, depth: Double, detailX: Unit, detailY: Double): p5 = js.native
+  def box(width: Unit, height: Unit, depth: Unit, detailX: Double): p5 = js.native
+  def box(width: Unit, height: Unit, depth: Unit, detailX: Double, detailY: Double): p5 = js.native
+  def box(width: Unit, height: Unit, depth: Unit, detailX: Unit, detailY: Double): p5 = js.native
   
   def brightness(color: String): Double = js.native
   def brightness(color: js.Array[Double]): Double = js.native
@@ -1449,15 +1615,15 @@ trait p5InstanceExtensions extends StObject {
     *   Draws a circle to the screen. A circle is a simple
     *   closed shape. It is the set of all points in a
     *   plane that are at a given distance from a given
-    *   point, the centre. This function is a special case
+    *   point, the center. This function is a special case
     *   of the ellipse() function, where the width and
     *   height of the ellipse are the same. Height and
     *   width of the ellipse correspond to the diameter of
     *   the circle. By default, the first two parameters
-    *   set the location of the centre of the circle, the
+    *   set the location of the center of the circle, the
     *   third sets the diameter of the circle.
-    *   @param x x-coordinate of the centre of the circle.
-    *   @param y y-coordinate of the centre of the circle.
+    *   @param x x-coordinate of the center of the circle.
+    *   @param y y-coordinate of the center of the circle.
     *   @param d diameter of the circle.
     *   @chainable
     */
@@ -1883,13 +2049,13 @@ trait p5InstanceExtensions extends StObject {
   def createCamera(): Camera = js.native
   
   /**
-    *   Creates a canvas element in the document, and sets
-    *   the dimensions of it in pixels. This method should
-    *   be called only once at the start of setup. Calling
+    *   Creates a canvas element in the document and sets
+    *   its dimensions in pixels. This method should be
+    *   called only once at the start of setup(). Calling
     *   createCanvas more than once in a sketch will
     *   result in very unpredictable behavior. If you want
     *   more than one drawing canvas you could use
-    *   createGraphics (hidden by default but it can be
+    *   createGraphics() (hidden by default but it can be
     *   shown). Important note: in 2D mode (i.e. when
     *   p5.Renderer is not set) the origin (0,0) is
     *   positioned at the top left of the screen. In 3D
@@ -1907,6 +2073,7 @@ trait p5InstanceExtensions extends StObject {
     *   @param w width of the canvas
     *   @param h height of the canvas
     *   @param [renderer] either P2D or WEBGL
+    *   @return pointer to p5.Renderer holding canvas
     */
   def createCanvas(w: Double, h: Double): Renderer = js.native
   def createCanvas(w: Double, h: Double, renderer: RENDERER_): Renderer = js.native
@@ -1945,8 +2112,8 @@ trait p5InstanceExtensions extends StObject {
   
   /**
     *   Creates a checkbox <input></input> element in the
-    *   DOM. Calling .checked() on a checkbox returns if
-    *   it is checked or not
+    *   DOM. Calling .checked() on a checkbox returns a
+    *   boolean indicating whether it is checked or not.
     *   @param [label] label displayed after checkbox
     *   @param [value] value of the checkbox; checked is
     *   true, unchecked is false
@@ -2142,7 +2309,7 @@ trait p5InstanceExtensions extends StObject {
   def createP(html: String): Element = js.native
   
   /**
-    *   Creates a radio button element in the DOM.It also
+    *   Creates a radio button element in the DOM. It also
     *   helps existing radio buttons assign methods of
     *   p5.Element. - .option(value, [label]) can be used
     *   to create a new option for the element. If an
@@ -2166,7 +2333,7 @@ trait p5InstanceExtensions extends StObject {
     */
   def createRadio(): Element = js.native
   /**
-    *   Creates a radio button element in the DOM.It also
+    *   Creates a radio button element in the DOM. It also
     *   helps existing radio buttons assign methods of
     *   p5.Element. - .option(value, [label]) can be used
     *   to create a new option for the element. If an
@@ -2186,8 +2353,8 @@ trait p5InstanceExtensions extends StObject {
     *   for value.
     *   - .disable(Boolean) method will enable/disable the
     *   whole radio button element.
-    *   @param containerElement An container HTML Element
-    *   either a div or span inside which all existing
+    *   @param containerElement A container HTML Element,
+    *   either a div or span, inside which all existing
     *   radio inputs will be considered as options.
     *   @param [name] A name parameter for each Input
     *   Element.
@@ -2196,7 +2363,7 @@ trait p5InstanceExtensions extends StObject {
   def createRadio(containerElement: js.Object): Element = js.native
   def createRadio(containerElement: js.Object, name: String): Element = js.native
   /**
-    *   Creates a radio button element in the DOM.It also
+    *   Creates a radio button element in the DOM. It also
     *   helps existing radio buttons assign methods of
     *   p5.Element. - .option(value, [label]) can be used
     *   to create a new option for the element. If an
@@ -2224,40 +2391,51 @@ trait p5InstanceExtensions extends StObject {
   
   /**
     *   Creates a dropdown menu <select></select> element
-    *   in the DOM. It also helps to assign select-box
-    *   methods to p5.Element when selecting existing
-    *   select box. - .option(name, [value]) can be used
-    *   to set options for the select after it is created.
+    *   in the DOM. It also assigns select-related methods
+    *   to p5.Element when selecting an existing select
+    *   box. Options in the menu are unique by name (the
+    *   display text). - .option(name, [value]) can be
+    *   used to add an option with name (the display text)
+    *   and value to the select element. If an option with
+    *   name already exists within the select element,
+    *   this method will change its value to value.
     *   - .value() will return the currently selected
     *   option.
-    *   - .selected() will return current dropdown element
-    *   which is an instance of p5.Element
+    *   - .selected() will return the current dropdown
+    *   element which is an instance of p5.Element.
     *   - .selected(value) can be used to make given
     *   option selected by default when the page first
     *   loads.
-    *   - .disable() marks whole of dropdown element as
+    *   - .disable() marks the whole dropdown element as
     *   disabled.
-    *   - .disable(value) marks given option as disabled
+    *   - .disable(value) marks a given option as
+    *   disabled.
     *   @param [multiple] true if dropdown should support
     *   multiple selections
+    *   @return pointer to p5.Element holding created node
     */
   def createSelect(): Element = js.native
   /**
     *   Creates a dropdown menu <select></select> element
-    *   in the DOM. It also helps to assign select-box
-    *   methods to p5.Element when selecting existing
-    *   select box. - .option(name, [value]) can be used
-    *   to set options for the select after it is created.
+    *   in the DOM. It also assigns select-related methods
+    *   to p5.Element when selecting an existing select
+    *   box. Options in the menu are unique by name (the
+    *   display text). - .option(name, [value]) can be
+    *   used to add an option with name (the display text)
+    *   and value to the select element. If an option with
+    *   name already exists within the select element,
+    *   this method will change its value to value.
     *   - .value() will return the currently selected
     *   option.
-    *   - .selected() will return current dropdown element
-    *   which is an instance of p5.Element
+    *   - .selected() will return the current dropdown
+    *   element which is an instance of p5.Element.
     *   - .selected(value) can be used to make given
     *   option selected by default when the page first
     *   loads.
-    *   - .disable() marks whole of dropdown element as
+    *   - .disable() marks the whole dropdown element as
     *   disabled.
-    *   - .disable(value) marks given option as disabled
+    *   - .disable(value) marks a given option as
+    *   disabled.
     *   @param existing DOM select element
     */
   def createSelect(existing: js.Object): Element = js.native
@@ -2285,7 +2463,8 @@ trait p5InstanceExtensions extends StObject {
     *   slider (if step is set to 0, the slider will move
     *   continuously from the minimum to the maximum
     *   value)
-    *   @return pointer to p5.Element holding created node
+    *   @return pointer to p5.Element holding the created
+    *   node
     */
   def createSlider(min: Double, max: Double): Element = js.native
   def createSlider(min: Double, max: Double, value: Double): Element = js.native
@@ -2315,7 +2494,7 @@ trait p5InstanceExtensions extends StObject {
   
   /**
     *   Creates a new p5.Vector (the datatype for storing
-    *   vectors). This provides a two or three dimensional
+    *   vectors). This provides a two or three-dimensional
     *   vector, specifically a Euclidean (also known as
     *   geometric) vector. A vector is an entity that has
     *   both magnitude and direction.
@@ -2490,7 +2669,7 @@ trait p5InstanceExtensions extends StObject {
     *   @param c coordinate of second point
     *   @param d coordinate of second control point
     *   @param t value between 0 and 1
-    *   @return bezier value at position t
+    *   @return Curve value at position t
     */
   def curvePoint(a: Double, b: Double, c: Double, d: Double, t: Double): Double = js.native
   
@@ -2851,7 +3030,8 @@ trait p5InstanceExtensions extends StObject {
     *   of measuring the same thing. There are 360 degrees
     *   in a circle and 2*PI radians in a circle. For
     *   example, 90° = PI/2 = 1.5707964. This function
-    *   does not take into account the current angleMode.
+    *   does not take into account the current
+    *   angleMode().
     *   @param radians the radians value to convert to
     *   degrees
     *   @return the converted angle
@@ -2959,55 +3139,145 @@ trait p5InstanceExtensions extends StObject {
     */
   def deviceTurned(): Unit = js.native
   
-  def directionalLight(color: String, position: Vector): p5 = js.native
+  def directionalLight(color: String, direction: Vector): p5 = js.native
   def directionalLight(color: String, x: Double, y: Double, z: Double): p5 = js.native
-  /**
-    *   Creates a directional light with a color and a
-    *   direction A maximum of 5 directionalLight can be
-    *   active at one time
-    *   @param color color Array, CSS color string, or
-    *   p5.Color value
-    *   @param position the direction of the light
-    *   @chainable
-    */
-  def directionalLight(color: js.Array[Double], position: Vector): p5 = js.native
-  /**
-    *   Creates a directional light with a color and a
-    *   direction A maximum of 5 directionalLight can be
-    *   active at one time
-    *   @param color color Array, CSS color string, or
-    *   p5.Color value
-    *   @param x x axis direction
-    *   @param y y axis direction
-    *   @param z z axis direction
-    *   @chainable
-    */
+  def directionalLight(color: js.Array[Double], direction: Vector): p5 = js.native
   def directionalLight(color: js.Array[Double], x: Double, y: Double, z: Double): p5 = js.native
-  def directionalLight(color: Color, position: Vector): p5 = js.native
+  /**
+    *   Creates a directional light with the given color
+    *   and direction. Directional light comes from one
+    *   direction. The direction is specified as numbers
+    *   inclusively between -1 and 1. For example, setting
+    *   the direction as (0, -1, 0) will cause the
+    *   geometry to be lit from below (since the light
+    *   will be facing directly upwards). Similarly,
+    *   setting the direction as (1, 0, 0) will cause the
+    *   geometry to be lit from the left (since the light
+    *   will be facing directly rightwards).
+    *
+    *   Directional lights do not have a specific point of
+    *   origin, and therefore cannot be positioned closer
+    *   or farther away from a geometry.
+    *
+    *   A maximum of 5 directional lights can be active at
+    *   once.
+    *
+    *   Note: lights need to be called (whether directly
+    *   or indirectly) within draw() to remain persistent
+    *   in a looping program. Placing them in setup() will
+    *   cause them to only have an effect the first time
+    *   through the loop.
+    *   @param color color as a p5.Color, as an array, or
+    *   as a CSS string
+    *   @param direction direction of light as a p5.Vector
+    *   @chainable
+    */
+  def directionalLight(color: Color, direction: Vector): p5 = js.native
+  /**
+    *   Creates a directional light with the given color
+    *   and direction. Directional light comes from one
+    *   direction. The direction is specified as numbers
+    *   inclusively between -1 and 1. For example, setting
+    *   the direction as (0, -1, 0) will cause the
+    *   geometry to be lit from below (since the light
+    *   will be facing directly upwards). Similarly,
+    *   setting the direction as (1, 0, 0) will cause the
+    *   geometry to be lit from the left (since the light
+    *   will be facing directly rightwards).
+    *
+    *   Directional lights do not have a specific point of
+    *   origin, and therefore cannot be positioned closer
+    *   or farther away from a geometry.
+    *
+    *   A maximum of 5 directional lights can be active at
+    *   once.
+    *
+    *   Note: lights need to be called (whether directly
+    *   or indirectly) within draw() to remain persistent
+    *   in a looping program. Placing them in setup() will
+    *   cause them to only have an effect the first time
+    *   through the loop.
+    *   @param color color as a p5.Color, as an array, or
+    *   as a CSS string
+    *   @param x x component of direction (inclusive range
+    *   of -1 to 1)
+    *   @param y y component of direction (inclusive range
+    *   of -1 to 1)
+    *   @param z z component of direction (inclusive range
+    *   of -1 to 1)
+    *   @chainable
+    */
   def directionalLight(color: Color, x: Double, y: Double, z: Double): p5 = js.native
   /**
-    *   Creates a directional light with a color and a
-    *   direction A maximum of 5 directionalLight can be
-    *   active at one time
-    *   @param v1 red or hue value (depending on the
-    *   current color mode),
-    *   @param v2 green or saturation value
-    *   @param v3 blue or brightness value
-    *   @param position the direction of the light
+    *   Creates a directional light with the given color
+    *   and direction. Directional light comes from one
+    *   direction. The direction is specified as numbers
+    *   inclusively between -1 and 1. For example, setting
+    *   the direction as (0, -1, 0) will cause the
+    *   geometry to be lit from below (since the light
+    *   will be facing directly upwards). Similarly,
+    *   setting the direction as (1, 0, 0) will cause the
+    *   geometry to be lit from the left (since the light
+    *   will be facing directly rightwards).
+    *
+    *   Directional lights do not have a specific point of
+    *   origin, and therefore cannot be positioned closer
+    *   or farther away from a geometry.
+    *
+    *   A maximum of 5 directional lights can be active at
+    *   once.
+    *
+    *   Note: lights need to be called (whether directly
+    *   or indirectly) within draw() to remain persistent
+    *   in a looping program. Placing them in setup() will
+    *   cause them to only have an effect the first time
+    *   through the loop.
+    *   @param v1 red or hue value relative to the current
+    *   color range
+    *   @param v2 green or saturation value relative to
+    *   the current color range
+    *   @param v3 blue or brightness value relative to the
+    *   current color range
+    *   @param direction direction of light as a p5.Vector
     *   @chainable
     */
-  def directionalLight(v1: Double, v2: Double, v3: Double, position: Vector): p5 = js.native
+  def directionalLight(v1: Double, v2: Double, v3: Double, direction: Vector): p5 = js.native
   /**
-    *   Creates a directional light with a color and a
-    *   direction A maximum of 5 directionalLight can be
-    *   active at one time
-    *   @param v1 red or hue value (depending on the
-    *   current color mode),
-    *   @param v2 green or saturation value
-    *   @param v3 blue or brightness value
-    *   @param x x axis direction
-    *   @param y y axis direction
-    *   @param z z axis direction
+    *   Creates a directional light with the given color
+    *   and direction. Directional light comes from one
+    *   direction. The direction is specified as numbers
+    *   inclusively between -1 and 1. For example, setting
+    *   the direction as (0, -1, 0) will cause the
+    *   geometry to be lit from below (since the light
+    *   will be facing directly upwards). Similarly,
+    *   setting the direction as (1, 0, 0) will cause the
+    *   geometry to be lit from the left (since the light
+    *   will be facing directly rightwards).
+    *
+    *   Directional lights do not have a specific point of
+    *   origin, and therefore cannot be positioned closer
+    *   or farther away from a geometry.
+    *
+    *   A maximum of 5 directional lights can be active at
+    *   once.
+    *
+    *   Note: lights need to be called (whether directly
+    *   or indirectly) within draw() to remain persistent
+    *   in a looping program. Placing them in setup() will
+    *   cause them to only have an effect the first time
+    *   through the loop.
+    *   @param v1 red or hue value relative to the current
+    *   color range
+    *   @param v2 green or saturation value relative to
+    *   the current color range
+    *   @param v3 blue or brightness value relative to the
+    *   current color range
+    *   @param x x component of direction (inclusive range
+    *   of -1 to 1)
+    *   @param y y component of direction (inclusive range
+    *   of -1 to 1)
+    *   @param z z component of direction (inclusive range
+    *   of -1 to 1)
     *   @chainable
     */
   def directionalLight(v1: Double, v2: Double, v3: Double, x: Double, y: Double, z: Double): p5 = js.native
@@ -3040,7 +3310,7 @@ trait p5InstanceExtensions extends StObject {
   /**
     *   Calculates the distance between two points, in
     *   either two or three dimensions. If you looking for
-    *   distance between two vectors see dist()
+    *   distance between two vectors see p5.Vector.dist()
     *   @param x1 x-coordinate of the first point
     *   @param y1 y-coordinate of the first point
     *   @param x2 x-coordinate of the second point
@@ -3051,7 +3321,7 @@ trait p5InstanceExtensions extends StObject {
   /**
     *   Calculates the distance between two points, in
     *   either two or three dimensions. If you looking for
-    *   distance between two vectors see dist()
+    *   distance between two vectors see p5.Vector.dist()
     *   @param x1 x-coordinate of the first point
     *   @param y1 y-coordinate of the first point
     *   @param z1 z-coordinate of the first point
@@ -3102,8 +3372,10 @@ trait p5InstanceExtensions extends StObject {
     *   is taken. An ellipse with equal width and height
     *   is a circle. The origin may be changed with the
     *   ellipseMode() function.
-    *   @param x x-coordinate of the center of ellipse.
-    *   @param y y-coordinate of the center of ellipse.
+    *   @param x x-coordinate of the center of the
+    *   ellipse.
+    *   @param y y-coordinate of the center of the
+    *   ellipse.
     *   @param w width of the ellipse.
     *   @param [h] height of the ellipse.
     *   @chainable
@@ -3159,11 +3431,13 @@ trait p5InstanceExtensions extends StObject {
     *   is taken. An ellipse with equal width and height
     *   is a circle. The origin may be changed with the
     *   ellipseMode() function.
-    *   @param x x-coordinate of the center of ellipse.
-    *   @param y y-coordinate of the center of ellipse.
+    *   @param x x-coordinate of the center of the
+    *   ellipse.
+    *   @param y y-coordinate of the center of the
+    *   ellipse.
     *   @param w width of the ellipse.
     *   @param h height of the ellipse.
-    *   @param [detail] optional parameter for WebGL mode
+    *   @param [detail] optional parameter for WEBGL mode
     *   only. This is to specify the number of vertices
     *   that makes up the perimeter of the ellipse.
     *   Default value is 25. Won't draw a stroke for a
@@ -3226,45 +3500,62 @@ trait p5InstanceExtensions extends StObject {
   def ellipsoid(radiusx: Unit, radiusy: Unit, radiusz: Unit, detailX: Unit, detailY: Double): p5 = js.native
   
   def emissiveMaterial(color: String): p5 = js.native
+  def emissiveMaterial(color: js.Array[Double]): p5 = js.native
   /**
-    *   Sets the emissive color of the material used for
-    *   geometry drawn to the screen. This is a misnomer
-    *   in the sense that the material does not actually
-    *   emit light that effects surrounding polygons.
-    *   Instead, it gives the appearance that the object
-    *   is glowing. An emissive material will display at
-    *   full strength even if there is no light for it to
-    *   reflect.
-    *   @param color color, color Array, or CSS color
-    *   string
+    *   Sets the emissive color of the material. An
+    *   emissive material will display the emissive color
+    *   at full strength regardless of lighting. This can
+    *   give the appearance that the object is glowing.
+    *
+    *   Note, "emissive" is a misnomer in the sense that
+    *   the material does not actually emit light that
+    *   will affect surrounding objects.
+    *
+    *   You can view more materials in this example.
+    *   @param color color as a p5.Color, as an array, or
+    *   as a CSS string
     *   @chainable
     */
-  def emissiveMaterial(color: js.Array[Double]): p5 = js.native
   def emissiveMaterial(color: Color): p5 = js.native
   /**
-    *   Sets the emissive color of the material used for
-    *   geometry drawn to the screen. This is a misnomer
-    *   in the sense that the material does not actually
-    *   emit light that effects surrounding polygons.
-    *   Instead, it gives the appearance that the object
-    *   is glowing. An emissive material will display at
-    *   full strength even if there is no light for it to
-    *   reflect.
-    *   @param v1 gray value, red or hue value (depending
-    *   on the current color mode),
-    *   @param [v2] green or saturation value
-    *   @param [v3] blue or brightness value
-    *   @param [a] opacity
+    *   Sets the emissive color of the material. An
+    *   emissive material will display the emissive color
+    *   at full strength regardless of lighting. This can
+    *   give the appearance that the object is glowing.
+    *
+    *   Note, "emissive" is a misnomer in the sense that
+    *   the material does not actually emit light that
+    *   will affect surrounding objects.
+    *
+    *   You can view more materials in this example.
+    *   @param gray number specifying value between white
+    *   and black
     *   @chainable
     */
-  def emissiveMaterial(v1: Double): p5 = js.native
-  def emissiveMaterial(v1: Double, v2: Double): p5 = js.native
+  def emissiveMaterial(gray: Double): p5 = js.native
+  /**
+    *   Sets the emissive color of the material. An
+    *   emissive material will display the emissive color
+    *   at full strength regardless of lighting. This can
+    *   give the appearance that the object is glowing.
+    *
+    *   Note, "emissive" is a misnomer in the sense that
+    *   the material does not actually emit light that
+    *   will affect surrounding objects.
+    *
+    *   You can view more materials in this example.
+    *   @param v1 red or hue value relative to the current
+    *   color range
+    *   @param v2 green or saturation value relative to
+    *   the current color range
+    *   @param v3 blue or brightness value relative to the
+    *   current color range
+    *   @param [alpha] alpha value relative to current
+    *   color range (default is 0-255)
+    *   @chainable
+    */
   def emissiveMaterial(v1: Double, v2: Double, v3: Double): p5 = js.native
-  def emissiveMaterial(v1: Double, v2: Double, v3: Double, a: Double): p5 = js.native
-  def emissiveMaterial(v1: Double, v2: Double, v3: Unit, a: Double): p5 = js.native
-  def emissiveMaterial(v1: Double, v2: Unit, v3: Double): p5 = js.native
-  def emissiveMaterial(v1: Double, v2: Unit, v3: Double, a: Double): p5 = js.native
-  def emissiveMaterial(v1: Double, v2: Unit, v3: Unit, a: Double): p5 = js.native
+  def emissiveMaterial(v1: Double, v2: Double, v3: Double, alpha: Double): p5 = js.native
   
   /**
     *   Use the beginContour() and endContour() functions
@@ -3291,9 +3582,9 @@ trait p5InstanceExtensions extends StObject {
     *   The endShape() function is the companion to
     *   beginShape() and may only be called after
     *   beginShape(). When endShape() is called, all of
-    *   image data defined since the previous call to
+    *   the image data defined since the previous call to
     *   beginShape() is written into the image buffer. The
-    *   constant CLOSE as the value for the MODE parameter
+    *   constant CLOSE as the value for the mode parameter
     *   to close the shape (to connect the beginning and
     *   the end).
     *   @param [mode] use CLOSE to close the shape
@@ -3304,11 +3595,11 @@ trait p5InstanceExtensions extends StObject {
   
   /**
     *   All drawing that follows erase() will subtract
-    *   from the canvas.Erased areas will reveal the web
-    *   page underneath the canvas.Erasing can be canceled
-    *   with noErase(). Drawing done with image() and
-    *   background() in between erase() and noErase() will
-    *   not erase the canvas but works as usual.
+    *   from the canvas. Erased areas will reveal the web
+    *   page underneath the canvas. Erasing can be
+    *   canceled with noErase(). Drawing done with image()
+    *   and  background() in between erase() and noErase()
+    *   will not erase the canvas but works as usual.
     *   @param [strengthFill] A number (0-255) for the
     *   strength of erasing for a shape's fill. This will
     *   default to 255 when no argument is given, which is
@@ -3354,7 +3645,7 @@ trait p5InstanceExtensions extends StObject {
     *   as a second argument is not supported, the RGBA
     *   form should be used.
     *
-    *   A p5 Color object can also be provided to set the
+    *   A p5.Color object can also be provided to set the
     *   fill color.
     *   @param color the fill color
     *   @chainable
@@ -3375,7 +3666,7 @@ trait p5InstanceExtensions extends StObject {
     *   as a second argument is not supported, the RGBA
     *   form should be used.
     *
-    *   A p5 Color object can also be provided to set the
+    *   A p5.Color object can also be provided to set the
     *   fill color.
     *   @param gray a gray value
     *   @chainable
@@ -3397,7 +3688,7 @@ trait p5InstanceExtensions extends StObject {
     *   as a second argument is not supported, the RGBA
     *   form should be used.
     *
-    *   A p5 Color object can also be provided to set the
+    *   A p5.Color object can also be provided to set the
     *   fill color.
     *   @param v1 red or hue value relative to the current
     *   color range
@@ -3424,7 +3715,7 @@ trait p5InstanceExtensions extends StObject {
     *   as a second argument is not supported, the RGBA
     *   form should be used.
     *
-    *   A p5 Color object can also be provided to set the
+    *   A p5.Color object can also be provided to set the
     *   fill color.
     *   @param value a color string
     *   @chainable
@@ -3445,7 +3736,7 @@ trait p5InstanceExtensions extends StObject {
     *   as a second argument is not supported, the RGBA
     *   form should be used.
     *
-    *   A p5 Color object can also be provided to set the
+    *   A p5.Color object can also be provided to set the
     *   fill color.
     *   @param values an array containing the
     *   red,green,blue & and alpha components of the color
@@ -3545,7 +3836,7 @@ trait p5InstanceExtensions extends StObject {
     *   The system variable frameCount contains the number
     *   of frames that have been displayed since the
     *   program started. Inside setup() the value is 0,
-    *   after the first iteration of draw it is 1, etc.
+    *   after the first iteration of draw() it is 1, etc.
     */
   var frameCount: Double = js.native
   
@@ -3569,7 +3860,7 @@ trait p5InstanceExtensions extends StObject {
     *   getFrameRate().
     *
     *   Calling frameRate() with arguments that are not of
-    *   the type numbers or are non positive also returns
+    *   the type Number or are non-positive also returns
     *   current framerate.
     *   @return current frameRate
     */
@@ -3594,7 +3885,7 @@ trait p5InstanceExtensions extends StObject {
     *   getFrameRate().
     *
     *   Calling frameRate() with arguments that are not of
-    *   the type numbers or are non positive also returns
+    *   the type Number or are non-positive also returns
     *   current framerate.
     *   @param fps number of frames to be displayed every
     *   second
@@ -3786,11 +4077,6 @@ trait p5InstanceExtensions extends StObject {
     */
   def getItem(key: String): Double | js.Object | String | Boolean | Color | Vector = js.native
   
-  // TODO: Fix userStartAudio() errors in lib/addons/p5.sound.js, line 198:
-  //
-  //    param "element(s)" is not a valid JS symbol name
-  //
-  // userStartAudio(element(s)?: Element|any[], callback?: (...args: any[]) => any): Promise<any>
   /**
     *   Returns a number representing the output volume
     *   for sound in this sketch.
@@ -3798,6 +4084,16 @@ trait p5InstanceExtensions extends StObject {
     *   Should be between 0.0 (silence) and 1.0.
     */
   def getOutputVolume(): Double = js.native
+  
+  /**
+    *   Returns _targetFrameRate variable. The default
+    *   _targetFrameRate is set to 60. This could be
+    *   changed by calling frameRate() and setting it to
+    *   the desired value. When getTargetFrameRate() is
+    *   called, it should return the value that was set.
+    *   @return _targetFrameRate
+    */
+  def getTargetFrameRate(): Double = js.native
   
   /**
     *   Gets the current URL. Note: when using the p5
@@ -4551,43 +4847,6 @@ trait p5InstanceExtensions extends StObject {
     */
   def hue(color: Color): Double = js.native
   
-  def image(img: Element, dx: Double, dy: Double, dWidth: Double, dHeight: Double, sx: Double, sy: Double): Unit = js.native
-  def image(
-    img: Element,
-    dx: Double,
-    dy: Double,
-    dWidth: Double,
-    dHeight: Double,
-    sx: Double,
-    sy: Double,
-    sWidth: Double
-  ): Unit = js.native
-  def image(
-    img: Element,
-    dx: Double,
-    dy: Double,
-    dWidth: Double,
-    dHeight: Double,
-    sx: Double,
-    sy: Double,
-    sWidth: Double,
-    sHeight: Double
-  ): Unit = js.native
-  def image(
-    img: Element,
-    dx: Double,
-    dy: Double,
-    dWidth: Double,
-    dHeight: Double,
-    sx: Double,
-    sy: Double,
-    sWidth: Unit,
-    sHeight: Double
-  ): Unit = js.native
-  def image(img: Element, x: Double, y: Double): Unit = js.native
-  def image(img: Element, x: Double, y: Double, width: Double): Unit = js.native
-  def image(img: Element, x: Double, y: Double, width: Double, height: Double): Unit = js.native
-  def image(img: Element, x: Double, y: Double, width: Unit, height: Double): Unit = js.native
   /**
     *   Draw an image to the p5.js canvas. This function
     *   can be used with different numbers of parameters.
@@ -4596,9 +4855,9 @@ trait p5InstanceExtensions extends StObject {
     *   image. Two more parameters can optionally be added
     *   to specify the width and height of the image.
     *
-    *   This function can also be used with all eight
-    *   Number parameters. To differentiate between all
-    *   these parameters, p5.js uses the language of
+    *   This function can also be used with eight Number
+    *   parameters. To differentiate between all these
+    *   parameters, p5.js uses the language of
     *   "destination rectangle" (which corresponds to
     *   "dx", "dy", etc.) and "source image" (which
     *   corresponds to "sx", "sy", etc.) below. Specifying
@@ -4606,6 +4865,14 @@ trait p5InstanceExtensions extends StObject {
     *   you want to display a subsection of the source
     *   image instead of the whole thing. Here's a diagram
     *   to explain further:
+    *
+    *   This function can also be used to draw images
+    *   without distorting the orginal aspect ratio, by
+    *   adding 9th parameter, fit, which can either be
+    *   COVER or CONTAIN. CONTAIN, as the name suggests,
+    *   contains the whole image within the specified
+    *   destination box without distorting the image
+    *   ratio. COVER covers the entire destination box.
     *   @param img the image to display
     *   @param dx the x-coordinate of the destination
     *   rectangle in which to draw the source image
@@ -4627,40 +4894,30 @@ trait p5InstanceExtensions extends StObject {
     *   @param [sHeight] the height of the subsection of
     *   the source image to draw into the destination
     *   rectangle
+    *   @param [fit] either CONTAIN or COVER
+    *   @param [xAlign] either LEFT, RIGHT or CENTER
+    *   default is CENTER
+    *   @param [yAlign] either TOP, BOTTOM or CENTER
+    *   default is CENTER
     */
-  def image(img: Image, dx: Double, dy: Double, dWidth: Double, dHeight: Double, sx: Double, sy: Double): Unit = js.native
   def image(
-    img: Image,
+    img: Image | Element,
     dx: Double,
     dy: Double,
     dWidth: Double,
     dHeight: Double,
     sx: Double,
     sy: Double,
-    sWidth: Double
+    sWidth: js.UndefOr[Double],
+    sHeight: js.UndefOr[Double],
+    fit: js.UndefOr[IMAGE_FIT],
+    xAlign: js.UndefOr[X_ALIGN],
+    yAlign: js.UndefOr[Y_ALIGN]
   ): Unit = js.native
-  def image(
-    img: Image,
-    dx: Double,
-    dy: Double,
-    dWidth: Double,
-    dHeight: Double,
-    sx: Double,
-    sy: Double,
-    sWidth: Double,
-    sHeight: Double
-  ): Unit = js.native
-  def image(
-    img: Image,
-    dx: Double,
-    dy: Double,
-    dWidth: Double,
-    dHeight: Double,
-    sx: Double,
-    sy: Double,
-    sWidth: Unit,
-    sHeight: Double
-  ): Unit = js.native
+  def image(img: Element, x: Double, y: Double): Unit = js.native
+  def image(img: Element, x: Double, y: Double, width: Double): Unit = js.native
+  def image(img: Element, x: Double, y: Double, width: Double, height: Double): Unit = js.native
+  def image(img: Element, x: Double, y: Double, width: Unit, height: Double): Unit = js.native
   /**
     *   Draw an image to the p5.js canvas. This function
     *   can be used with different numbers of parameters.
@@ -4669,9 +4926,9 @@ trait p5InstanceExtensions extends StObject {
     *   image. Two more parameters can optionally be added
     *   to specify the width and height of the image.
     *
-    *   This function can also be used with all eight
-    *   Number parameters. To differentiate between all
-    *   these parameters, p5.js uses the language of
+    *   This function can also be used with eight Number
+    *   parameters. To differentiate between all these
+    *   parameters, p5.js uses the language of
     *   "destination rectangle" (which corresponds to
     *   "dx", "dy", etc.) and "source image" (which
     *   corresponds to "sx", "sy", etc.) below. Specifying
@@ -4679,6 +4936,14 @@ trait p5InstanceExtensions extends StObject {
     *   you want to display a subsection of the source
     *   image instead of the whole thing. Here's a diagram
     *   to explain further:
+    *
+    *   This function can also be used to draw images
+    *   without distorting the orginal aspect ratio, by
+    *   adding 9th parameter, fit, which can either be
+    *   COVER or CONTAIN. CONTAIN, as the name suggests,
+    *   contains the whole image within the specified
+    *   destination box without distorting the image
+    *   ratio. COVER covers the entire destination box.
     *   @param img the image to display
     *   @param x the x-coordinate of the top-left corner
     *   of the image
@@ -4862,7 +5127,7 @@ trait p5InstanceExtensions extends StObject {
     *   more information. Browsers may have different
     *   default behaviors attached to various key events.
     *   To prevent any default behavior for this event,
-    *   add "return false" to the end of the method.
+    *   add "return false" to the end of the function.
     *   @param [event] optional KeyboardEvent callback
     *   argument.
     */
@@ -4887,7 +5152,7 @@ trait p5InstanceExtensions extends StObject {
     *   Browsers may have different default behaviors
     *   attached to various key events. To prevent any
     *   default behavior for this event, add "return
-    *   false" to the end of the method.
+    *   false" to the end of the function.
     *   @param [event] optional KeyboardEvent callback
     *   argument.
     */
@@ -4898,14 +5163,14 @@ trait p5InstanceExtensions extends StObject {
     *   Calculates a number between two numbers at a
     *   specific increment. The amt parameter is the
     *   amount to interpolate between the two values where
-    *   0.0 equal to the first point, 0.1 is very near the
-    *   first point, 0.5 is half-way in between, and 1.0
-    *   is equal to the second point. If the value of amt
-    *   is more than 1.0 or less than 0.0, the number will
-    *   be calculated accordingly in the ratio of the two
-    *   given numbers. The lerp function is convenient for
-    *   creating motion along a straight path and for
-    *   drawing dotted lines.
+    *   0.0 is equal to the first point, 0.1 is very near
+    *   the first point, 0.5 is half-way in between, and
+    *   1.0 is equal to the second point. If the value of
+    *   amt is more than 1.0 or less than 0.0, the number
+    *   will be calculated accordingly in the ratio of the
+    *   two given numbers. The lerp() function is
+    *   convenient for creating motion along a straight
+    *   path and for drawing dotted lines.
     *   @param start first value
     *   @param stop second value
     *   @param amt number
@@ -4934,20 +5199,22 @@ trait p5InstanceExtensions extends StObject {
   def lerpColor(c1: Color, c2: Color, amt: Double): Color = js.native
   
   /**
-    *   Sets the falloff rates for point lights. It
-    *   affects only the elements which are created after
-    *   it in the code. The default value is
-    *   lightFalloff(1.0, 0.0, 0.0), and the parameters
-    *   are used to calculate the falloff with the
-    *   following equation: d = distance from light
-    *   position to vertex position
+    *   Sets the falloff rate for pointLight() and
+    *   spotLight(). lightFalloff() affects only the
+    *   lights which are created after it in the code.
     *
-    *   falloff = 1 / (CONSTANT + d * LINEAR + ( d * d ) *
+    *   The constant, linear, an quadratic parameters are
+    *   used to calculate falloff as follows:
+    *
+    *   d = distance from light position to vertex
+    *   position
+    *
+    *   falloff = 1 / (CONSTANT + d * LINEAR + (d * d) *
     *   QUADRATIC)
-    *   @param constant constant value for determining
+    *   @param constant CONSTANT value for determining
     *   falloff
-    *   @param linear linear value for determining falloff
-    *   @param quadratic quadratic value for determining
+    *   @param linear LINEAR value for determining falloff
+    *   @param quadratic QUADRATIC value for determining
     *   falloff
     *   @chainable
     */
@@ -4965,14 +5232,14 @@ trait p5InstanceExtensions extends StObject {
   def lightness(color: Color): Double = js.native
   
   /**
-    *   Sets the default ambient and directional light.
-    *   The defaults are ambientLight(128, 128, 128) and
-    *   directionalLight(128, 128, 128, 0, 0, -1). Lights
-    *   need to be included in the draw() to remain
+    *   Places an ambient and directional light in the
+    *   scene. The lights are set to ambientLight(128,
+    *   128, 128) and directionalLight(128, 128, 128, 0,
+    *   0, -1). Note: lights need to be called (whether
+    *   directly or indirectly) within draw() to remain
     *   persistent in a looping program. Placing them in
-    *   the setup() of a looping program will cause them
-    *   to only have an effect the first time through the
-    *   loop.
+    *   setup() will cause them to only have an effect the
+    *   first time through the loop.
     *   @chainable
     */
   def lights(): p5 = js.native
@@ -5034,13 +5301,14 @@ trait p5InstanceExtensions extends StObject {
   
   /**
     *   Loads an opentype font file (.otf, .ttf) from a
-    *   file or a URL, and returns a PFont Object. This
-    *   method is asynchronous, meaning it may not finish
-    *   before the next line in your sketch is executed.
-    *   The path to the font should be relative to the
-    *   HTML file that links in your sketch. Loading fonts
-    *   from a URL or other remote location may be blocked
-    *   due to your browser's built-in security.
+    *   file or a URL, and returns a p5.Font object. This
+    *   function is asynchronous, meaning it may not
+    *   finish before the next line in your sketch is
+    *   executed. The path to the font should be relative
+    *   to the HTML file that links in your sketch.
+    *   Loading fonts from a URL or other remote location
+    *   may be blocked due to your browser's built-in
+    *   security.
     *   @param path name of the file or url to load
     *   @param [callback] function to be executed after
     *   loadFont() completes
@@ -5729,7 +5997,8 @@ trait p5InstanceExtensions extends StObject {
     *   resumed with loop(). Avoid calling loop() from
     *   inside setup().
     *
-    *   Use isLooping() to check current state of loop().
+    *   Use isLooping() to check the current state of
+    *   loop().
     */
   def loop(): Unit = js.native
   
@@ -5928,7 +6197,7 @@ trait p5InstanceExtensions extends StObject {
     *   Browsers may have different default behaviors
     *   attached to various mouse events. To prevent any
     *   default behavior for this event, add "return
-    *   false" to the end of the method.
+    *   false" to the end of the function.
     *   @param [event] optional MouseEvent callback
     *   argument.
     */
@@ -5944,7 +6213,7 @@ trait p5InstanceExtensions extends StObject {
     *   default behaviors attached to various mouse
     *   events. To prevent any default behavior for this
     *   event, add "return false" to the end of the
-    *   method.
+    *   function.
     *   @param [event] optional MouseEvent callback
     *   argument.
     */
@@ -5981,7 +6250,7 @@ trait p5InstanceExtensions extends StObject {
     *   different default behaviors attached to various
     *   mouse events. To prevent any default behavior for
     *   this event, add "return false" to the end of the
-    *   method.
+    *   function.
     *   @param [event] optional MouseEvent callback
     *   argument.
     */
@@ -5996,7 +6265,7 @@ trait p5InstanceExtensions extends StObject {
     *   may have different default behaviors attached to
     *   various mouse events. To prevent any default
     *   behavior for this event, add "return false" to the
-    *   end of the method.
+    *   end of the function.
     *   @param [event] optional MouseEvent callback
     *   argument.
     */
@@ -6010,8 +6279,8 @@ trait p5InstanceExtensions extends StObject {
     *   touchpad. The event.delta property returns the
     *   amount the mouse wheel have scrolled. The values
     *   can be positive or negative depending on the
-    *   scroll direction (on OS X with "natural" scrolling
-    *   enabled, the signs are inverted).
+    *   scroll direction (on macOS with "natural"
+    *   scrolling enabled, the signs are inverted).
     *
     *
     *   Browsers may have different default behaviors
@@ -6326,11 +6595,12 @@ trait p5InstanceExtensions extends StObject {
   def noFill(): p5 = js.native
   
   /**
-    *   This function will remove all the lights from the
-    *   sketch for the subsequent materials rendered. It
-    *   affects all the subsequent methods. Calls to
-    *   lighting methods made after noLights() will
-    *   re-enable lights in the sketch.
+    *   Removes all lights present in a sketch. All
+    *   subsequent geometry is rendered without lighting
+    *   (until a new light is created with a call to one
+    *   of the lighting functions (lights(),
+    *   ambientLight(), directionalLight(), pointLight(),
+    *   spotLight()).
     *   @chainable
     */
   def noLights(): p5 = js.native
@@ -6355,7 +6625,8 @@ trait p5InstanceExtensions extends StObject {
     *   noLoop() has been specified. Otherwise, the sketch
     *   would enter an odd state until loop() was called.
     *
-    *   Use isLooping() to check current state of loop().
+    *   Use isLooping() to check the current state of
+    *   loop().
     */
   def noLoop(): Unit = js.native
   
@@ -6364,6 +6635,7 @@ trait p5InstanceExtensions extends StObject {
     *   Note that smooth() is active by default in 2D
     *   mode, so it is necessary to call noSmooth() to
     *   disable smoothing of geometry, images, and fonts.
+    *
     *   In 3D mode, noSmooth() is enabled by default, so
     *   it is necessary to call smooth() if you would like
     *   smooth (antialiased) edges on your geometry.
@@ -6406,12 +6678,12 @@ trait p5InstanceExtensions extends StObject {
     *   be between 0.0 and 1.0. The noise value can be
     *   animated by moving through the noise space as
     *   demonstrated in the example above. The 2nd and 3rd
-    *   dimension can also be interpreted as time.
+    *   dimensions can also be interpreted as time.
     *
     *   The actual noise is structured similar to an audio
     *   signal, in respect to the function's use of
     *   frequencies. Similar to the concept of harmonics
-    *   in physics, perlin noise is computed over several
+    *   in physics, Perlin noise is computed over several
     *   octaves which are added together for the final
     *   result.
     *
@@ -6445,20 +6717,21 @@ trait p5InstanceExtensions extends StObject {
     *   octaves. Lower octaves contribute more to the
     *   output signal and as such define the overall
     *   intensity of the noise, whereas higher octaves
-    *   create finer grained details in the noise
+    *   create finer-grained details in the noise
     *   sequence. By default, noise is computed over 4
     *   octaves with each octave contributing exactly half
-    *   than its predecessor, starting at 50% strength for
-    *   the 1st octave. This falloff amount can be changed
-    *   by adding an additional function parameter. Eg. a
-    *   falloff factor of 0.75 means each octave will now
-    *   have 75% impact (25% less) of the previous lower
-    *   octave. Any value between 0.0 and 1.0 is valid,
-    *   however note that values greater than 0.5 might
-    *   result in greater than 1.0 values returned by
-    *   noise(). By changing these parameters, the signal
-    *   created by the noise() function can be adapted to
-    *   fit very specific needs and characteristics.
+    *   as much as its predecessor, starting at 50%
+    *   strength for the 1st octave. This falloff amount
+    *   can be changed by adding an additional function
+    *   parameter. Eg. a falloff factor of 0.75 means each
+    *   octave will now have 75% impact (25% less) of the
+    *   previous lower octave. Any value between 0.0 and
+    *   1.0 is valid, however, note that values greater
+    *   than 0.5 might result in greater than 1.0 values
+    *   returned by noise(). By changing these parameters,
+    *   the signal created by the noise() function can be
+    *   adapted to fit very specific needs and
+    *   characteristics.
     *   @param lod number of octaves to be used by the
     *   noise
     *   @param falloff falloff factor for each octave
@@ -6468,7 +6741,7 @@ trait p5InstanceExtensions extends StObject {
   /**
     *   Sets the seed value for noise(). By default,
     *   noise() produces different results each time the
-    *   program is run. Set the value parameter to a
+    *   program is run. Set the seed parameter to a
     *   constant to return the same pseudo-random numbers
     *   each time the software is run.
     *   @param seed the seed value
@@ -6491,12 +6764,6 @@ trait p5InstanceExtensions extends StObject {
     */
   def norm(value: Double, start: Double, stop: Double): Double = js.native
   
-  // TODO: Fix vertex() errors in src/core/shape/vertex.js, line 965:
-  //
-  //    required param "u" follows an optional param
-  //    required param "v" follows an optional param
-  //
-  // vertex(x: number, y: number, z?: number, u: number, v: number): p5
   /**
     *   Sets the 3d vertex normal to use for subsequent
     *   vertices drawn with vertex(). A normal is a vector
@@ -6522,13 +6789,16 @@ trait p5InstanceExtensions extends StObject {
   def normal(x: Double, y: Double, z: Double): p5 = js.native
   
   /**
-    *   Normal material for geometry is a material that is
-    *   not affected by light. It is not reflective and is
-    *   a placeholder material often used for debugging.
-    *   Surfaces facing the X-axis, become red, those
-    *   facing the Y-axis, become green and those facing
-    *   the Z-axis, become blue. You can view all possible
-    *   materials in this example.
+    *   Sets the current material as a normal material. A
+    *   normal material is not affected by light. It is
+    *   often used as a placeholder material when
+    *   debugging.
+    *
+    *   Surfaces facing the X-axis become red, those
+    *   facing the Y-axis become green, and those facing
+    *   the Z-axis become blue.
+    *
+    *   You can view more materials in this example.
     *   @chainable
     */
   def normalMaterial(): p5 = js.native
@@ -6916,53 +7186,101 @@ trait p5InstanceExtensions extends StObject {
   
   def pointLight(color: String, position: Vector): p5 = js.native
   def pointLight(color: String, x: Double, y: Double, z: Double): p5 = js.native
-  /**
-    *   Creates a point light with a color and a light
-    *   position A maximum of 5 pointLight can be active
-    *   at one time
-    *   @param color color Array, CSS color string, or
-    *   p5.Color value
-    *   @param position the position of the light
-    *   @chainable
-    */
   def pointLight(color: js.Array[Double], position: Vector): p5 = js.native
+  def pointLight(color: js.Array[Double], x: Double, y: Double, z: Double): p5 = js.native
   /**
-    *   Creates a point light with a color and a light
-    *   position A maximum of 5 pointLight can be active
-    *   at one time
-    *   @param color color Array, CSS color string, or
-    *   p5.Color value
-    *   @param x x axis position
-    *   @param y y axis position
-    *   @param z z axis position
+    *   Creates a point light with the given color and
+    *   position. A point light emits light from a single
+    *   point in all directions. Because the light is
+    *   emitted from a specific point (position), it has a
+    *   different effect when it is positioned farther vs.
+    *   nearer an object.
+    *
+    *   A maximum of 5 point lights can be active at once.
+    *
+    *   Note: lights need to be called (whether directly
+    *   or indirectly) within draw() to remain persistent
+    *   in a looping program. Placing them in setup() will
+    *   cause them to only have an effect the first time
+    *   through the loop.
+    *   @param color color as a p5.Color, as an array, or
+    *   as a CSS string
+    *   @param position of light as a p5.Vector
     *   @chainable
     */
-  def pointLight(color: js.Array[Double], x: Double, y: Double, z: Double): p5 = js.native
   def pointLight(color: Color, position: Vector): p5 = js.native
+  /**
+    *   Creates a point light with the given color and
+    *   position. A point light emits light from a single
+    *   point in all directions. Because the light is
+    *   emitted from a specific point (position), it has a
+    *   different effect when it is positioned farther vs.
+    *   nearer an object.
+    *
+    *   A maximum of 5 point lights can be active at once.
+    *
+    *   Note: lights need to be called (whether directly
+    *   or indirectly) within draw() to remain persistent
+    *   in a looping program. Placing them in setup() will
+    *   cause them to only have an effect the first time
+    *   through the loop.
+    *   @param color color as a p5.Color, as an array, or
+    *   as a CSS string
+    *   @param x x component of position
+    *   @param y y component of position
+    *   @param z z component of position
+    *   @chainable
+    */
   def pointLight(color: Color, x: Double, y: Double, z: Double): p5 = js.native
   /**
-    *   Creates a point light with a color and a light
-    *   position A maximum of 5 pointLight can be active
-    *   at one time
-    *   @param v1 red or hue value (depending on the
-    *   current color mode),
-    *   @param v2 green or saturation value
-    *   @param v3 blue or brightness value
-    *   @param position the position of the light
+    *   Creates a point light with the given color and
+    *   position. A point light emits light from a single
+    *   point in all directions. Because the light is
+    *   emitted from a specific point (position), it has a
+    *   different effect when it is positioned farther vs.
+    *   nearer an object.
+    *
+    *   A maximum of 5 point lights can be active at once.
+    *
+    *   Note: lights need to be called (whether directly
+    *   or indirectly) within draw() to remain persistent
+    *   in a looping program. Placing them in setup() will
+    *   cause them to only have an effect the first time
+    *   through the loop.
+    *   @param v1 red or hue value relative to the current
+    *   color range
+    *   @param v2 green or saturation value relative to
+    *   the current color range
+    *   @param v3 blue or brightness value relative to the
+    *   current color range
+    *   @param position of light as a p5.Vector
     *   @chainable
     */
   def pointLight(v1: Double, v2: Double, v3: Double, position: Vector): p5 = js.native
   /**
-    *   Creates a point light with a color and a light
-    *   position A maximum of 5 pointLight can be active
-    *   at one time
-    *   @param v1 red or hue value (depending on the
-    *   current color mode),
-    *   @param v2 green or saturation value
-    *   @param v3 blue or brightness value
-    *   @param x x axis position
-    *   @param y y axis position
-    *   @param z z axis position
+    *   Creates a point light with the given color and
+    *   position. A point light emits light from a single
+    *   point in all directions. Because the light is
+    *   emitted from a specific point (position), it has a
+    *   different effect when it is positioned farther vs.
+    *   nearer an object.
+    *
+    *   A maximum of 5 point lights can be active at once.
+    *
+    *   Note: lights need to be called (whether directly
+    *   or indirectly) within draw() to remain persistent
+    *   in a looping program. Placing them in setup() will
+    *   cause them to only have an effect the first time
+    *   through the loop.
+    *   @param v1 red or hue value relative to the current
+    *   color range
+    *   @param v2 green or saturation value relative to
+    *   the current color range
+    *   @param v3 blue or brightness value relative to the
+    *   current color range
+    *   @param x x component of position
+    *   @param y y component of position
+    *   @param z z component of position
     *   @chainable
     */
   def pointLight(v1: Double, v2: Double, v3: Double, x: Double, y: Double, z: Double): p5 = js.native
@@ -7082,7 +7400,7 @@ trait p5InstanceExtensions extends StObject {
   
   /**
     *   Draws a quad on the canvas. A quad is a
-    *   quadrilateral, a four sided polygon. It is similar
+    *   quadrilateral, a four-sided polygon. It is similar
     *   to a rectangle, but the angles between its edges
     *   are not constrained to ninety degrees. The first
     *   pair of parameters (x1,y1) sets the first vertex
@@ -7142,7 +7460,7 @@ trait p5InstanceExtensions extends StObject {
   ): p5 = js.native
   /**
     *   Draws a quad on the canvas. A quad is a
-    *   quadrilateral, a four sided polygon. It is similar
+    *   quadrilateral, a four-sided polygon. It is similar
     *   to a rectangle, but the angles between its edges
     *   are not constrained to ninety degrees. The first
     *   pair of parameters (x1,y1) sets the first vertex
@@ -7347,14 +7665,14 @@ trait p5InstanceExtensions extends StObject {
     *   probability that values far from the mean will be
     *   returned; and a higher probability that numbers
     *   near the mean will be returned. Takes either 0, 1
-    *   or 2 arguments. If no args, returns a mean of 0
-    *   and standard deviation of 1.
+    *   or 2 arguments. If no args, the mean is 0 and the
+    *   standard deviation is 1.
     *
-    *   If one arg, that arg is the mean (standard
-    *   deviation is 1).
+    *   If one arg, that arg is the mean and the standard
+    *   deviation is 1.
     *
-    *   If two args, first is mean, second is standard
-    *   deviation.
+    *   If two args, the first arg is the mean and the
+    *   second is the standard deviation.
     *   @param [mean] the mean
     *   @param [sd] the standard deviation
     *   @return the random number
@@ -7380,7 +7698,7 @@ trait p5InstanceExtensions extends StObject {
     *   degrees. By default, the first two parameters set
     *   the location of the upper-left corner, the third
     *   sets the width, and the fourth sets the height.
-    *   The way these parameters are interpreted, may be
+    *   The way these parameters are interpreted may be
     *   changed with the rectMode() function. The fifth,
     *   sixth, seventh and eighth parameters, if
     *   specified, determine corner radius for the
@@ -7446,7 +7764,7 @@ trait p5InstanceExtensions extends StObject {
     *   and the third and fourth parameters as the
     *   location of the diagonally opposite corner. Note,
     *   the rectangle is drawn between the coordinates, so
-    *   it is not neccesary that the first corner be the
+    *   it is not necessary that the first corner be the
     *   upper left corner.
     *
     *   rectMode(CENTER) interprets the first two
@@ -7576,15 +7894,15 @@ trait p5InstanceExtensions extends StObject {
     *   positive numbers rotate objects in a clockwise
     *   direction. Transformations apply to everything
     *   that happens after and subsequent calls to the
-    *   function accumulates the effect. For example,
+    *   function accumulate the effect. For example,
     *   calling rotate(HALF_PI) and then rotate(HALF_PI)
     *   is the same as rotate(PI). All transformations are
     *   reset when draw() begins again.
     *
     *   Technically, rotate() multiplies the current
     *   transformation matrix by a rotation matrix. This
-    *   function can be further controlled by the push()
-    *   and pop().
+    *   function can be further controlled by push() and
+    *   pop().
     *   @param angle the angle of rotation, specified in
     *   radians or degrees, depending on current angleMode
     *   @param [axis] (in 3d) the axis to rotate around
@@ -7808,14 +8126,25 @@ trait p5InstanceExtensions extends StObject {
     *   default but instead passed as an argument to the
     *   callback function as an array of objects, with the
     *   size of array equal to the total number of frames.
-    *   Note that saveFrames() will only save the first 15
-    *   frames of an animation. To export longer
-    *   animations, you might look into a library like
-    *   ccapture.js.
+    *   The arguments duration and framerate are
+    *   constrained to be less or equal to 15 and 22,
+    *   respectively, which means you can only download a
+    *   maximum of 15 seconds worth of frames at 22 frames
+    *   per second, adding up to 330 frames. This is done
+    *   in order to avoid memory problems since a large
+    *   enough canvas can fill up the memory in your
+    *   computer very easily and crash your program or
+    *   even your browser.
+    *
+    *   To export longer animations, you might look into a
+    *   library like ccapture.js.
     *   @param extension 'jpg' or 'png'
     *   @param duration Duration in seconds to save the
-    *   frames for.
+    *   frames for. This parameter will be constrained to
+    *   be less or equal to 15.
     *   @param framerate Framerate to save the frames in.
+    *   This parameter will be constrained to be less or
+    *   equal to 22.
     *   @param [callback] A callback function that will be
     *   executed to handle the image data. This function
     *   should accept an array as argument. The array will
@@ -7831,6 +8160,46 @@ trait p5InstanceExtensions extends StObject {
     framerate: Double,
     callback: js.Function1[/* p1 */ js.Array[Any], Any]
   ): Unit = js.native
+  
+  /**
+    *   Generates a gif of your current animation and
+    *   downloads it to your computer! The duration
+    *   argument specifies how many seconds you want to
+    *   record from your animation. This value is then
+    *   converted to the necessary number of frames to
+    *   generate it, depending on the value of units. More
+    *   on that on the next paragraph.
+    *
+    *   An optional object that can contain two more
+    *   arguments: delay (number) and units (string).
+    *
+    *   delay, specifying how much time we should wait
+    *   before recording
+    *
+    *   units, a string that can be either 'seconds' or
+    *   'frames'. By default it's 'seconds'.
+    *
+    *   units specifies how the duration and delay
+    *   arguments will behave. If 'seconds', these
+    *   arguments will correspond to seconds, meaning that
+    *   3 seconds worth of animation will be created. If
+    *   'frames', the arguments now correspond to the
+    *   number of frames you want your animation to be, if
+    *   you are very sure of this number.
+    *
+    *   This may be called in setup, or, like in the
+    *   example below, inside an event function, like
+    *   keyPressed or mousePressed.
+    *   @param filename File name of your gif
+    *   @param duration Duration in seconds that you wish
+    *   to capture from your sketch
+    *   @param options An optional object that can contain
+    *   two more arguments: delay, specifying how much
+    *   time we should wait before recording, and units, a
+    *   string that can be either 'seconds' or 'frames'.
+    *   By default it's 'seconds'.
+    */
+  def saveGif(filename: String, duration: Double, options: js.Object): Unit = js.native
   
   /**
     *   Writes the contents of an Array or a JSON object
@@ -8055,7 +8424,7 @@ trait p5InstanceExtensions extends StObject {
     *
     *   premultipliedAlpha - indicates that the page
     *   compositor will assume the drawing buffer contains
-    *   colors with pre-multiplied alpha default is false
+    *   colors with pre-multiplied alpha default is true
     *
     *   preserveDrawingBuffer - if true the buffers will
     *   not be cleared and and will preserve their values
@@ -8097,7 +8466,7 @@ trait p5InstanceExtensions extends StObject {
     *
     *   premultipliedAlpha - indicates that the page
     *   compositor will assume the drawing buffer contains
-    *   colors with pre-multiplied alpha default is false
+    *   colors with pre-multiplied alpha default is true
     *
     *   preserveDrawingBuffer - if true the buffers will
     *   not be cleared and and will preserve their values
@@ -8210,11 +8579,10 @@ trait p5InstanceExtensions extends StObject {
   def shearY(angle: Double): p5 = js.native
   
   /**
-    *   Sets the amount of gloss in the surface of shapes.
-    *   Used in combination with specularMaterial() in
-    *   setting the material properties of shapes. The
-    *   default and minimum value is 1.
-    *   @param shine Degree of Shininess. Defaults to 1.
+    *   Sets the amount of gloss ("shininess") of a
+    *   specularMaterial(). The default and minimum value
+    *   is 1.
+    *   @param shine degree of shininess
     *   @chainable
     */
   def shininess(shine: Double): p5 = js.native
@@ -8252,6 +8620,7 @@ trait p5InstanceExtensions extends StObject {
     *   resized images. Note that smooth() is active by
     *   default in 2D mode; noSmooth() can be used to
     *   disable smoothing of geometry, images, and fonts.
+    *
     *   In 3D mode, noSmooth() is enabled by default, so
     *   it is necessary to call smooth() if you would like
     *   smooth (antialiased) edges on your geometry.
@@ -8297,52 +8666,65 @@ trait p5InstanceExtensions extends StObject {
   var soundOut: js.Object = js.native
   
   /**
-    *   Set's the color of the specular highlight when
-    *   using a specular material and specular light. This
-    *   method can be combined with specularMaterial() and
-    *   shininess() functions to set specular highlights.
-    *   The default color is white, ie (255, 255, 255),
-    *   which is used if this method is not called before
-    *   specularMaterial(). If this method is called
-    *   without specularMaterial(), There will be no
+    *   Sets the color of the specular highlight of a
+    *   non-ambient light (i.e. all lights except
+    *   ambientLight()). specularColor() affects only the
+    *   lights which are created after it in the code.
+    *
+    *   This function is used in combination with
+    *   specularMaterial(). If a geometry does not use
+    *   specularMaterial(), this function will have no
     *   effect.
     *
+    *   The default color is white (255, 255, 255), which
+    *   is used if specularColor() is not explicitly
+    *   called.
+    *
     *   Note: specularColor is equivalent to the
-    *   processing function lightSpecular.
-    *   @param color the ambient light color
+    *   Processing function lightSpecular.
+    *   @param color color as a p5.Color
     *   @chainable
     */
   def specularColor(color: Color): p5 = js.native
   /**
-    *   Set's the color of the specular highlight when
-    *   using a specular material and specular light. This
-    *   method can be combined with specularMaterial() and
-    *   shininess() functions to set specular highlights.
-    *   The default color is white, ie (255, 255, 255),
-    *   which is used if this method is not called before
-    *   specularMaterial(). If this method is called
-    *   without specularMaterial(), There will be no
+    *   Sets the color of the specular highlight of a
+    *   non-ambient light (i.e. all lights except
+    *   ambientLight()). specularColor() affects only the
+    *   lights which are created after it in the code.
+    *
+    *   This function is used in combination with
+    *   specularMaterial(). If a geometry does not use
+    *   specularMaterial(), this function will have no
     *   effect.
     *
+    *   The default color is white (255, 255, 255), which
+    *   is used if specularColor() is not explicitly
+    *   called.
+    *
     *   Note: specularColor is equivalent to the
-    *   processing function lightSpecular.
-    *   @param gray a gray value
+    *   Processing function lightSpecular.
+    *   @param gray number specifying value between white
+    *   and black
     *   @chainable
     */
   def specularColor(gray: Double): p5 = js.native
   /**
-    *   Set's the color of the specular highlight when
-    *   using a specular material and specular light. This
-    *   method can be combined with specularMaterial() and
-    *   shininess() functions to set specular highlights.
-    *   The default color is white, ie (255, 255, 255),
-    *   which is used if this method is not called before
-    *   specularMaterial(). If this method is called
-    *   without specularMaterial(), There will be no
+    *   Sets the color of the specular highlight of a
+    *   non-ambient light (i.e. all lights except
+    *   ambientLight()). specularColor() affects only the
+    *   lights which are created after it in the code.
+    *
+    *   This function is used in combination with
+    *   specularMaterial(). If a geometry does not use
+    *   specularMaterial(), this function will have no
     *   effect.
     *
+    *   The default color is white (255, 255, 255), which
+    *   is used if specularColor() is not explicitly
+    *   called.
+    *
     *   Note: specularColor is equivalent to the
-    *   processing function lightSpecular.
+    *   Processing function lightSpecular.
     *   @param v1 red or hue value relative to the current
     *   color range
     *   @param v2 green or saturation value relative to
@@ -8353,73 +8735,86 @@ trait p5InstanceExtensions extends StObject {
     */
   def specularColor(v1: Double, v2: Double, v3: Double): p5 = js.native
   /**
-    *   Set's the color of the specular highlight when
-    *   using a specular material and specular light. This
-    *   method can be combined with specularMaterial() and
-    *   shininess() functions to set specular highlights.
-    *   The default color is white, ie (255, 255, 255),
-    *   which is used if this method is not called before
-    *   specularMaterial(). If this method is called
-    *   without specularMaterial(), There will be no
+    *   Sets the color of the specular highlight of a
+    *   non-ambient light (i.e. all lights except
+    *   ambientLight()). specularColor() affects only the
+    *   lights which are created after it in the code.
+    *
+    *   This function is used in combination with
+    *   specularMaterial(). If a geometry does not use
+    *   specularMaterial(), this function will have no
     *   effect.
     *
+    *   The default color is white (255, 255, 255), which
+    *   is used if specularColor() is not explicitly
+    *   called.
+    *
     *   Note: specularColor is equivalent to the
-    *   processing function lightSpecular.
-    *   @param value a color string
+    *   Processing function lightSpecular.
+    *   @param value color as a CSS string
     *   @chainable
     */
   def specularColor(value: String): p5 = js.native
   /**
-    *   Set's the color of the specular highlight when
-    *   using a specular material and specular light. This
-    *   method can be combined with specularMaterial() and
-    *   shininess() functions to set specular highlights.
-    *   The default color is white, ie (255, 255, 255),
-    *   which is used if this method is not called before
-    *   specularMaterial(). If this method is called
-    *   without specularMaterial(), There will be no
+    *   Sets the color of the specular highlight of a
+    *   non-ambient light (i.e. all lights except
+    *   ambientLight()). specularColor() affects only the
+    *   lights which are created after it in the code.
+    *
+    *   This function is used in combination with
+    *   specularMaterial(). If a geometry does not use
+    *   specularMaterial(), this function will have no
     *   effect.
     *
+    *   The default color is white (255, 255, 255), which
+    *   is used if specularColor() is not explicitly
+    *   called.
+    *
     *   Note: specularColor is equivalent to the
-    *   processing function lightSpecular.
-    *   @param values an array containing the
-    *   red,green,blue & and alpha components of the color
+    *   Processing function lightSpecular.
+    *   @param values color as an array containing the
+    *   red, green, and blue components
     *   @chainable
     */
   def specularColor(values: js.Array[Double]): p5 = js.native
   
   def specularMaterial(color: String): p5 = js.native
+  def specularMaterial(color: js.Array[Double]): p5 = js.native
   /**
-    *   Specular material for geometry with a given color.
-    *   Specular material is a shiny reflective material.
-    *   Like ambient material it also defines the color
-    *   the object reflects under ambient lighting. For
-    *   example, if the specular material of an object is
-    *   pure red, but the ambient lighting only contains
-    *   green, the object will not reflect any light. For
-    *   all other types of light like point and
-    *   directional light, a specular material will
-    *   reflect the color of the light source to the
-    *   viewer. Here's an example containing all possible
-    *   materials.
-    *   @param color color Array, or CSS color string
+    *   Sets the specular color of the material. A
+    *   specular material is reflective (shiny). The
+    *   shininess can be controlled by the shininess()
+    *   function.
+    *
+    *   Like ambientMaterial(), the specularMaterial()
+    *   color is the color the object will reflect under
+    *   ambientLight(). However unlike ambientMaterial(),
+    *   for all other types of lights (directionalLight(),
+    *   pointLight(), spotLight()), a specular material
+    *   will reflect the color of the light source. This
+    *   is what gives it its "shiny" appearance.
+    *
+    *   You can view more materials in this example.
+    *   @param color color as a p5.Color, as an array, or
+    *   as a CSS string
     *   @chainable
     */
-  def specularMaterial(color: js.Array[Double]): p5 = js.native
   def specularMaterial(color: Color): p5 = js.native
   /**
-    *   Specular material for geometry with a given color.
-    *   Specular material is a shiny reflective material.
-    *   Like ambient material it also defines the color
-    *   the object reflects under ambient lighting. For
-    *   example, if the specular material of an object is
-    *   pure red, but the ambient lighting only contains
-    *   green, the object will not reflect any light. For
-    *   all other types of light like point and
-    *   directional light, a specular material will
-    *   reflect the color of the light source to the
-    *   viewer. Here's an example containing all possible
-    *   materials.
+    *   Sets the specular color of the material. A
+    *   specular material is reflective (shiny). The
+    *   shininess can be controlled by the shininess()
+    *   function.
+    *
+    *   Like ambientMaterial(), the specularMaterial()
+    *   color is the color the object will reflect under
+    *   ambientLight(). However unlike ambientMaterial(),
+    *   for all other types of lights (directionalLight(),
+    *   pointLight(), spotLight()), a specular material
+    *   will reflect the color of the light source. This
+    *   is what gives it its "shiny" appearance.
+    *
+    *   You can view more materials in this example.
     *   @param gray number specifying value between white
     *   and black.
     *   @param [alpha] alpha value relative to current
@@ -8429,18 +8824,20 @@ trait p5InstanceExtensions extends StObject {
   def specularMaterial(gray: Double): p5 = js.native
   def specularMaterial(gray: Double, alpha: Double): p5 = js.native
   /**
-    *   Specular material for geometry with a given color.
-    *   Specular material is a shiny reflective material.
-    *   Like ambient material it also defines the color
-    *   the object reflects under ambient lighting. For
-    *   example, if the specular material of an object is
-    *   pure red, but the ambient lighting only contains
-    *   green, the object will not reflect any light. For
-    *   all other types of light like point and
-    *   directional light, a specular material will
-    *   reflect the color of the light source to the
-    *   viewer. Here's an example containing all possible
-    *   materials.
+    *   Sets the specular color of the material. A
+    *   specular material is reflective (shiny). The
+    *   shininess can be controlled by the shininess()
+    *   function.
+    *
+    *   Like ambientMaterial(), the specularMaterial()
+    *   color is the color the object will reflect under
+    *   ambientLight(). However unlike ambientMaterial(),
+    *   for all other types of lights (directionalLight(),
+    *   pointLight(), spotLight()), a specular material
+    *   will reflect the color of the light source. This
+    *   is what gives it its "shiny" appearance.
+    *
+    *   You can view more materials in this example.
     *   @param v1 red or hue value relative to the current
     *   color range
     *   @param v2 green or saturation value relative to
@@ -8532,16 +8929,48 @@ trait p5InstanceExtensions extends StObject {
   
   def spotLight(color: String, position: Vector, direction: Vector): Unit = js.native
   def spotLight(color: String, position: Vector, direction: Vector, angle: Double): Unit = js.native
-  def spotLight(color: String, position: Vector, direction: Vector, angle: Double, conc: Double): Unit = js.native
-  def spotLight(color: String, position: Vector, direction: Vector, angle: Unit, conc: Double): Unit = js.native
+  def spotLight(color: String, position: Vector, direction: Vector, angle: Double, concentration: Double): Unit = js.native
+  def spotLight(color: String, position: Vector, direction: Vector, angle: Unit, concentration: Double): Unit = js.native
   def spotLight(color: String, position: Vector, rx: Double, ry: Double, rz: Double): Unit = js.native
   def spotLight(color: String, position: Vector, rx: Double, ry: Double, rz: Double, angle: Double): Unit = js.native
-  def spotLight(color: String, position: Vector, rx: Double, ry: Double, rz: Double, angle: Double, conc: Double): Unit = js.native
-  def spotLight(color: String, position: Vector, rx: Double, ry: Double, rz: Double, angle: Unit, conc: Double): Unit = js.native
+  def spotLight(
+    color: String,
+    position: Vector,
+    rx: Double,
+    ry: Double,
+    rz: Double,
+    angle: Double,
+    concentration: Double
+  ): Unit = js.native
+  def spotLight(
+    color: String,
+    position: Vector,
+    rx: Double,
+    ry: Double,
+    rz: Double,
+    angle: Unit,
+    concentration: Double
+  ): Unit = js.native
   def spotLight(color: String, x: Double, y: Double, z: Double, direction: Vector): Unit = js.native
   def spotLight(color: String, x: Double, y: Double, z: Double, direction: Vector, angle: Double): Unit = js.native
-  def spotLight(color: String, x: Double, y: Double, z: Double, direction: Vector, angle: Double, conc: Double): Unit = js.native
-  def spotLight(color: String, x: Double, y: Double, z: Double, direction: Vector, angle: Unit, conc: Double): Unit = js.native
+  def spotLight(
+    color: String,
+    x: Double,
+    y: Double,
+    z: Double,
+    direction: Vector,
+    angle: Double,
+    concentration: Double
+  ): Unit = js.native
+  def spotLight(
+    color: String,
+    x: Double,
+    y: Double,
+    z: Double,
+    direction: Vector,
+    angle: Unit,
+    concentration: Double
+  ): Unit = js.native
   def spotLight(color: String, x: Double, y: Double, z: Double, rx: Double, ry: Double, rz: Double): Unit = js.native
   def spotLight(color: String, x: Double, y: Double, z: Double, rx: Double, ry: Double, rz: Double, angle: Double): Unit = js.native
   def spotLight(
@@ -8553,7 +8982,7 @@ trait p5InstanceExtensions extends StObject {
     ry: Double,
     rz: Double,
     angle: Double,
-    conc: Double
+    concentration: Double
   ): Unit = js.native
   def spotLight(
     color: String,
@@ -8564,52 +8993,12 @@ trait p5InstanceExtensions extends StObject {
     ry: Double,
     rz: Double,
     angle: Unit,
-    conc: Double
+    concentration: Double
   ): Unit = js.native
-  /**
-    *   Creates a spotlight with a given color, position,
-    *   direction of light, angle and concentration. Here,
-    *   angle refers to the opening or aperture of the
-    *   cone of the spotlight, and concentration is used
-    *   to focus the light towards the center. Both angle
-    *   and concentration are optional, but if you want to
-    *   provide concentration, you will also have to
-    *   specify the angle. A maximum of 5 spotLight can be
-    *   active at one time
-    *   @param color color Array, CSS color string, or
-    *   p5.Color value
-    *   @param position the position of the light
-    *   @param direction the direction of the light
-    *   @param [angle] optional parameter for angle.
-    *   Defaults to PI/3
-    *   @param [conc] optional parameter for
-    *   concentration. Defaults to 100
-    */
   def spotLight(color: js.Array[Double], position: Vector, direction: Vector): Unit = js.native
   def spotLight(color: js.Array[Double], position: Vector, direction: Vector, angle: Double): Unit = js.native
-  def spotLight(color: js.Array[Double], position: Vector, direction: Vector, angle: Double, conc: Double): Unit = js.native
-  def spotLight(color: js.Array[Double], position: Vector, direction: Vector, angle: Unit, conc: Double): Unit = js.native
-  /**
-    *   Creates a spotlight with a given color, position,
-    *   direction of light, angle and concentration. Here,
-    *   angle refers to the opening or aperture of the
-    *   cone of the spotlight, and concentration is used
-    *   to focus the light towards the center. Both angle
-    *   and concentration are optional, but if you want to
-    *   provide concentration, you will also have to
-    *   specify the angle. A maximum of 5 spotLight can be
-    *   active at one time
-    *   @param color color Array, CSS color string, or
-    *   p5.Color value
-    *   @param position the position of the light
-    *   @param rx x axis direction of light
-    *   @param ry y axis direction of light
-    *   @param rz z axis direction of light
-    *   @param [angle] optional parameter for angle.
-    *   Defaults to PI/3
-    *   @param [conc] optional parameter for
-    *   concentration. Defaults to 100
-    */
+  def spotLight(color: js.Array[Double], position: Vector, direction: Vector, angle: Double, concentration: Double): Unit = js.native
+  def spotLight(color: js.Array[Double], position: Vector, direction: Vector, angle: Unit, concentration: Double): Unit = js.native
   def spotLight(color: js.Array[Double], position: Vector, rx: Double, ry: Double, rz: Double): Unit = js.native
   def spotLight(color: js.Array[Double], position: Vector, rx: Double, ry: Double, rz: Double, angle: Double): Unit = js.native
   def spotLight(
@@ -8619,7 +9008,7 @@ trait p5InstanceExtensions extends StObject {
     ry: Double,
     rz: Double,
     angle: Double,
-    conc: Double
+    concentration: Double
   ): Unit = js.native
   def spotLight(
     color: js.Array[Double],
@@ -8628,29 +9017,8 @@ trait p5InstanceExtensions extends StObject {
     ry: Double,
     rz: Double,
     angle: Unit,
-    conc: Double
+    concentration: Double
   ): Unit = js.native
-  /**
-    *   Creates a spotlight with a given color, position,
-    *   direction of light, angle and concentration. Here,
-    *   angle refers to the opening or aperture of the
-    *   cone of the spotlight, and concentration is used
-    *   to focus the light towards the center. Both angle
-    *   and concentration are optional, but if you want to
-    *   provide concentration, you will also have to
-    *   specify the angle. A maximum of 5 spotLight can be
-    *   active at one time
-    *   @param color color Array, CSS color string, or
-    *   p5.Color value
-    *   @param x x axis position
-    *   @param y y axis position
-    *   @param z z axis position
-    *   @param direction the direction of the light
-    *   @param [angle] optional parameter for angle.
-    *   Defaults to PI/3
-    *   @param [conc] optional parameter for
-    *   concentration. Defaults to 100
-    */
   def spotLight(color: js.Array[Double], x: Double, y: Double, z: Double, direction: Vector): Unit = js.native
   def spotLight(color: js.Array[Double], x: Double, y: Double, z: Double, direction: Vector, angle: Double): Unit = js.native
   def spotLight(
@@ -8660,7 +9028,7 @@ trait p5InstanceExtensions extends StObject {
     z: Double,
     direction: Vector,
     angle: Double,
-    conc: Double
+    concentration: Double
   ): Unit = js.native
   def spotLight(
     color: js.Array[Double],
@@ -8669,31 +9037,8 @@ trait p5InstanceExtensions extends StObject {
     z: Double,
     direction: Vector,
     angle: Unit,
-    conc: Double
+    concentration: Double
   ): Unit = js.native
-  /**
-    *   Creates a spotlight with a given color, position,
-    *   direction of light, angle and concentration. Here,
-    *   angle refers to the opening or aperture of the
-    *   cone of the spotlight, and concentration is used
-    *   to focus the light towards the center. Both angle
-    *   and concentration are optional, but if you want to
-    *   provide concentration, you will also have to
-    *   specify the angle. A maximum of 5 spotLight can be
-    *   active at one time
-    *   @param color color Array, CSS color string, or
-    *   p5.Color value
-    *   @param x x axis position
-    *   @param y y axis position
-    *   @param z z axis position
-    *   @param rx x axis direction of light
-    *   @param ry y axis direction of light
-    *   @param rz z axis direction of light
-    *   @param [angle] optional parameter for angle.
-    *   Defaults to PI/3
-    *   @param [conc] optional parameter for
-    *   concentration. Defaults to 100
-    */
   def spotLight(color: js.Array[Double], x: Double, y: Double, z: Double, rx: Double, ry: Double, rz: Double): Unit = js.native
   def spotLight(
     color: js.Array[Double],
@@ -8714,7 +9059,7 @@ trait p5InstanceExtensions extends StObject {
     ry: Double,
     rz: Double,
     angle: Double,
-    conc: Double
+    concentration: Double
   ): Unit = js.native
   def spotLight(
     color: js.Array[Double],
@@ -8725,20 +9070,210 @@ trait p5InstanceExtensions extends StObject {
     ry: Double,
     rz: Double,
     angle: Unit,
-    conc: Double
+    concentration: Double
   ): Unit = js.native
+  /**
+    *   Creates a spot light with the given color,
+    *   position, light direction, angle, and
+    *   concentration. Like a pointLight(), a spotLight()
+    *   emits light from a specific point (position). It
+    *   has a different effect when it is positioned
+    *   farther vs. nearer an object.
+    *
+    *   However, unlike a pointLight(), the light is
+    *   emitted in one direction along a conical shape.
+    *   The shape of the cone can be controlled using the
+    *   angle and concentration parameters.
+    *
+    *   The angle parameter is used to determine the
+    *   radius of the cone. And the concentration
+    *   parameter is used to focus the light towards the
+    *   center of the cone. Both parameters are optional,
+    *   however if you want to specify concentration, you
+    *   must also specify angle. The minimum concentration
+    *   value is 1.
+    *
+    *   A maximum of 5 spot lights can be active at once.
+    *
+    *   Note: lights need to be called (whether directly
+    *   or indirectly) within draw() to remain persistent
+    *   in a looping program. Placing them in setup() will
+    *   cause them to only have an effect the first time
+    *   through the loop.
+    *   @param color color as a p5.Color, as an array, or
+    *   as a CSS string
+    *   @param position position of light as a p5.Vector
+    *   @param direction direction of light as a p5.Vector
+    *   @param [angle] angle of cone. Defaults to PI/3
+    *   @param [concentration] concentration of cone.
+    *   Defaults to 100
+    */
   def spotLight(color: Color, position: Vector, direction: Vector): Unit = js.native
   def spotLight(color: Color, position: Vector, direction: Vector, angle: Double): Unit = js.native
-  def spotLight(color: Color, position: Vector, direction: Vector, angle: Double, conc: Double): Unit = js.native
-  def spotLight(color: Color, position: Vector, direction: Vector, angle: Unit, conc: Double): Unit = js.native
+  def spotLight(color: Color, position: Vector, direction: Vector, angle: Double, concentration: Double): Unit = js.native
+  def spotLight(color: Color, position: Vector, direction: Vector, angle: Unit, concentration: Double): Unit = js.native
+  /**
+    *   Creates a spot light with the given color,
+    *   position, light direction, angle, and
+    *   concentration. Like a pointLight(), a spotLight()
+    *   emits light from a specific point (position). It
+    *   has a different effect when it is positioned
+    *   farther vs. nearer an object.
+    *
+    *   However, unlike a pointLight(), the light is
+    *   emitted in one direction along a conical shape.
+    *   The shape of the cone can be controlled using the
+    *   angle and concentration parameters.
+    *
+    *   The angle parameter is used to determine the
+    *   radius of the cone. And the concentration
+    *   parameter is used to focus the light towards the
+    *   center of the cone. Both parameters are optional,
+    *   however if you want to specify concentration, you
+    *   must also specify angle. The minimum concentration
+    *   value is 1.
+    *
+    *   A maximum of 5 spot lights can be active at once.
+    *
+    *   Note: lights need to be called (whether directly
+    *   or indirectly) within draw() to remain persistent
+    *   in a looping program. Placing them in setup() will
+    *   cause them to only have an effect the first time
+    *   through the loop.
+    *   @param color color as a p5.Color, as an array, or
+    *   as a CSS string
+    *   @param position position of light as a p5.Vector
+    *   @param rx x component of light direction
+    *   (inclusive range of -1 to 1)
+    *   @param ry y component of light direction
+    *   (inclusive range of -1 to 1)
+    *   @param rz z component of light direction
+    *   (inclusive range of -1 to 1)
+    *   @param [angle] angle of cone. Defaults to PI/3
+    *   @param [concentration] concentration of cone.
+    *   Defaults to 100
+    */
   def spotLight(color: Color, position: Vector, rx: Double, ry: Double, rz: Double): Unit = js.native
   def spotLight(color: Color, position: Vector, rx: Double, ry: Double, rz: Double, angle: Double): Unit = js.native
-  def spotLight(color: Color, position: Vector, rx: Double, ry: Double, rz: Double, angle: Double, conc: Double): Unit = js.native
-  def spotLight(color: Color, position: Vector, rx: Double, ry: Double, rz: Double, angle: Unit, conc: Double): Unit = js.native
+  def spotLight(
+    color: Color,
+    position: Vector,
+    rx: Double,
+    ry: Double,
+    rz: Double,
+    angle: Double,
+    concentration: Double
+  ): Unit = js.native
+  def spotLight(
+    color: Color,
+    position: Vector,
+    rx: Double,
+    ry: Double,
+    rz: Double,
+    angle: Unit,
+    concentration: Double
+  ): Unit = js.native
+  /**
+    *   Creates a spot light with the given color,
+    *   position, light direction, angle, and
+    *   concentration. Like a pointLight(), a spotLight()
+    *   emits light from a specific point (position). It
+    *   has a different effect when it is positioned
+    *   farther vs. nearer an object.
+    *
+    *   However, unlike a pointLight(), the light is
+    *   emitted in one direction along a conical shape.
+    *   The shape of the cone can be controlled using the
+    *   angle and concentration parameters.
+    *
+    *   The angle parameter is used to determine the
+    *   radius of the cone. And the concentration
+    *   parameter is used to focus the light towards the
+    *   center of the cone. Both parameters are optional,
+    *   however if you want to specify concentration, you
+    *   must also specify angle. The minimum concentration
+    *   value is 1.
+    *
+    *   A maximum of 5 spot lights can be active at once.
+    *
+    *   Note: lights need to be called (whether directly
+    *   or indirectly) within draw() to remain persistent
+    *   in a looping program. Placing them in setup() will
+    *   cause them to only have an effect the first time
+    *   through the loop.
+    *   @param color color as a p5.Color, as an array, or
+    *   as a CSS string
+    *   @param x x component of position
+    *   @param y y component of position
+    *   @param z z component of position
+    *   @param direction direction of light as a p5.Vector
+    *   @param [angle] angle of cone. Defaults to PI/3
+    *   @param [concentration] concentration of cone.
+    *   Defaults to 100
+    */
   def spotLight(color: Color, x: Double, y: Double, z: Double, direction: Vector): Unit = js.native
   def spotLight(color: Color, x: Double, y: Double, z: Double, direction: Vector, angle: Double): Unit = js.native
-  def spotLight(color: Color, x: Double, y: Double, z: Double, direction: Vector, angle: Double, conc: Double): Unit = js.native
-  def spotLight(color: Color, x: Double, y: Double, z: Double, direction: Vector, angle: Unit, conc: Double): Unit = js.native
+  def spotLight(
+    color: Color,
+    x: Double,
+    y: Double,
+    z: Double,
+    direction: Vector,
+    angle: Double,
+    concentration: Double
+  ): Unit = js.native
+  def spotLight(
+    color: Color,
+    x: Double,
+    y: Double,
+    z: Double,
+    direction: Vector,
+    angle: Unit,
+    concentration: Double
+  ): Unit = js.native
+  /**
+    *   Creates a spot light with the given color,
+    *   position, light direction, angle, and
+    *   concentration. Like a pointLight(), a spotLight()
+    *   emits light from a specific point (position). It
+    *   has a different effect when it is positioned
+    *   farther vs. nearer an object.
+    *
+    *   However, unlike a pointLight(), the light is
+    *   emitted in one direction along a conical shape.
+    *   The shape of the cone can be controlled using the
+    *   angle and concentration parameters.
+    *
+    *   The angle parameter is used to determine the
+    *   radius of the cone. And the concentration
+    *   parameter is used to focus the light towards the
+    *   center of the cone. Both parameters are optional,
+    *   however if you want to specify concentration, you
+    *   must also specify angle. The minimum concentration
+    *   value is 1.
+    *
+    *   A maximum of 5 spot lights can be active at once.
+    *
+    *   Note: lights need to be called (whether directly
+    *   or indirectly) within draw() to remain persistent
+    *   in a looping program. Placing them in setup() will
+    *   cause them to only have an effect the first time
+    *   through the loop.
+    *   @param color color as a p5.Color, as an array, or
+    *   as a CSS string
+    *   @param x x component of position
+    *   @param y y component of position
+    *   @param z z component of position
+    *   @param rx x component of light direction
+    *   (inclusive range of -1 to 1)
+    *   @param ry y component of light direction
+    *   (inclusive range of -1 to 1)
+    *   @param rz z component of light direction
+    *   (inclusive range of -1 to 1)
+    *   @param [angle] angle of cone. Defaults to PI/3
+    *   @param [concentration] concentration of cone.
+    *   Defaults to 100
+    */
   def spotLight(color: Color, x: Double, y: Double, z: Double, rx: Double, ry: Double, rz: Double): Unit = js.native
   def spotLight(color: Color, x: Double, y: Double, z: Double, rx: Double, ry: Double, rz: Double, angle: Double): Unit = js.native
   def spotLight(
@@ -8750,7 +9285,7 @@ trait p5InstanceExtensions extends StObject {
     ry: Double,
     rz: Double,
     angle: Double,
-    conc: Double
+    concentration: Double
   ): Unit = js.native
   def spotLight(
     color: Color,
@@ -8761,28 +9296,47 @@ trait p5InstanceExtensions extends StObject {
     ry: Double,
     rz: Double,
     angle: Unit,
-    conc: Double
+    concentration: Double
   ): Unit = js.native
   /**
-    *   Creates a spotlight with a given color, position,
-    *   direction of light, angle and concentration. Here,
-    *   angle refers to the opening or aperture of the
-    *   cone of the spotlight, and concentration is used
-    *   to focus the light towards the center. Both angle
-    *   and concentration are optional, but if you want to
-    *   provide concentration, you will also have to
-    *   specify the angle. A maximum of 5 spotLight can be
-    *   active at one time
-    *   @param v1 red or hue value (depending on the
-    *   current color mode),
-    *   @param v2 green or saturation value
-    *   @param v3 blue or brightness value
-    *   @param position the position of the light
-    *   @param direction the direction of the light
-    *   @param [angle] optional parameter for angle.
-    *   Defaults to PI/3
-    *   @param [conc] optional parameter for
-    *   concentration. Defaults to 100
+    *   Creates a spot light with the given color,
+    *   position, light direction, angle, and
+    *   concentration. Like a pointLight(), a spotLight()
+    *   emits light from a specific point (position). It
+    *   has a different effect when it is positioned
+    *   farther vs. nearer an object.
+    *
+    *   However, unlike a pointLight(), the light is
+    *   emitted in one direction along a conical shape.
+    *   The shape of the cone can be controlled using the
+    *   angle and concentration parameters.
+    *
+    *   The angle parameter is used to determine the
+    *   radius of the cone. And the concentration
+    *   parameter is used to focus the light towards the
+    *   center of the cone. Both parameters are optional,
+    *   however if you want to specify concentration, you
+    *   must also specify angle. The minimum concentration
+    *   value is 1.
+    *
+    *   A maximum of 5 spot lights can be active at once.
+    *
+    *   Note: lights need to be called (whether directly
+    *   or indirectly) within draw() to remain persistent
+    *   in a looping program. Placing them in setup() will
+    *   cause them to only have an effect the first time
+    *   through the loop.
+    *   @param v1 red or hue value relative to the current
+    *   color range
+    *   @param v2 green or saturation value relative to
+    *   the current color range
+    *   @param v3 blue or brightness value relative to the
+    *   current color range
+    *   @param position position of light as a p5.Vector
+    *   @param direction direction of light as a p5.Vector
+    *   @param [angle] angle of cone. Defaults to PI/3
+    *   @param [concentration] concentration of cone.
+    *   Defaults to 100
     */
   def spotLight(v1: Double, v2: Double, v3: Double, position: Vector, direction: Vector): Unit = js.native
   def spotLight(v1: Double, v2: Double, v3: Double, position: Vector, direction: Vector, angle: Double): Unit = js.native
@@ -8793,31 +9347,61 @@ trait p5InstanceExtensions extends StObject {
     position: Vector,
     direction: Vector,
     angle: Double,
-    conc: Double
+    concentration: Double
   ): Unit = js.native
-  def spotLight(v1: Double, v2: Double, v3: Double, position: Vector, direction: Vector, angle: Unit, conc: Double): Unit = js.native
+  def spotLight(
+    v1: Double,
+    v2: Double,
+    v3: Double,
+    position: Vector,
+    direction: Vector,
+    angle: Unit,
+    concentration: Double
+  ): Unit = js.native
   /**
-    *   Creates a spotlight with a given color, position,
-    *   direction of light, angle and concentration. Here,
-    *   angle refers to the opening or aperture of the
-    *   cone of the spotlight, and concentration is used
-    *   to focus the light towards the center. Both angle
-    *   and concentration are optional, but if you want to
-    *   provide concentration, you will also have to
-    *   specify the angle. A maximum of 5 spotLight can be
-    *   active at one time
-    *   @param v1 red or hue value (depending on the
-    *   current color mode),
-    *   @param v2 green or saturation value
-    *   @param v3 blue or brightness value
-    *   @param position the position of the light
-    *   @param rx x axis direction of light
-    *   @param ry y axis direction of light
-    *   @param rz z axis direction of light
-    *   @param [angle] optional parameter for angle.
-    *   Defaults to PI/3
-    *   @param [conc] optional parameter for
-    *   concentration. Defaults to 100
+    *   Creates a spot light with the given color,
+    *   position, light direction, angle, and
+    *   concentration. Like a pointLight(), a spotLight()
+    *   emits light from a specific point (position). It
+    *   has a different effect when it is positioned
+    *   farther vs. nearer an object.
+    *
+    *   However, unlike a pointLight(), the light is
+    *   emitted in one direction along a conical shape.
+    *   The shape of the cone can be controlled using the
+    *   angle and concentration parameters.
+    *
+    *   The angle parameter is used to determine the
+    *   radius of the cone. And the concentration
+    *   parameter is used to focus the light towards the
+    *   center of the cone. Both parameters are optional,
+    *   however if you want to specify concentration, you
+    *   must also specify angle. The minimum concentration
+    *   value is 1.
+    *
+    *   A maximum of 5 spot lights can be active at once.
+    *
+    *   Note: lights need to be called (whether directly
+    *   or indirectly) within draw() to remain persistent
+    *   in a looping program. Placing them in setup() will
+    *   cause them to only have an effect the first time
+    *   through the loop.
+    *   @param v1 red or hue value relative to the current
+    *   color range
+    *   @param v2 green or saturation value relative to
+    *   the current color range
+    *   @param v3 blue or brightness value relative to the
+    *   current color range
+    *   @param position position of light as a p5.Vector
+    *   @param rx x component of light direction
+    *   (inclusive range of -1 to 1)
+    *   @param ry y component of light direction
+    *   (inclusive range of -1 to 1)
+    *   @param rz z component of light direction
+    *   (inclusive range of -1 to 1)
+    *   @param [angle] angle of cone. Defaults to PI/3
+    *   @param [concentration] concentration of cone.
+    *   Defaults to 100
     */
   def spotLight(v1: Double, v2: Double, v3: Double, position: Vector, rx: Double, ry: Double, rz: Double): Unit = js.native
   def spotLight(
@@ -8839,7 +9423,7 @@ trait p5InstanceExtensions extends StObject {
     ry: Double,
     rz: Double,
     angle: Double,
-    conc: Double
+    concentration: Double
   ): Unit = js.native
   def spotLight(
     v1: Double,
@@ -8850,30 +9434,49 @@ trait p5InstanceExtensions extends StObject {
     ry: Double,
     rz: Double,
     angle: Unit,
-    conc: Double
+    concentration: Double
   ): Unit = js.native
   /**
-    *   Creates a spotlight with a given color, position,
-    *   direction of light, angle and concentration. Here,
-    *   angle refers to the opening or aperture of the
-    *   cone of the spotlight, and concentration is used
-    *   to focus the light towards the center. Both angle
-    *   and concentration are optional, but if you want to
-    *   provide concentration, you will also have to
-    *   specify the angle. A maximum of 5 spotLight can be
-    *   active at one time
-    *   @param v1 red or hue value (depending on the
-    *   current color mode),
-    *   @param v2 green or saturation value
-    *   @param v3 blue or brightness value
-    *   @param x x axis position
-    *   @param y y axis position
-    *   @param z z axis position
-    *   @param direction the direction of the light
-    *   @param [angle] optional parameter for angle.
-    *   Defaults to PI/3
-    *   @param [conc] optional parameter for
-    *   concentration. Defaults to 100
+    *   Creates a spot light with the given color,
+    *   position, light direction, angle, and
+    *   concentration. Like a pointLight(), a spotLight()
+    *   emits light from a specific point (position). It
+    *   has a different effect when it is positioned
+    *   farther vs. nearer an object.
+    *
+    *   However, unlike a pointLight(), the light is
+    *   emitted in one direction along a conical shape.
+    *   The shape of the cone can be controlled using the
+    *   angle and concentration parameters.
+    *
+    *   The angle parameter is used to determine the
+    *   radius of the cone. And the concentration
+    *   parameter is used to focus the light towards the
+    *   center of the cone. Both parameters are optional,
+    *   however if you want to specify concentration, you
+    *   must also specify angle. The minimum concentration
+    *   value is 1.
+    *
+    *   A maximum of 5 spot lights can be active at once.
+    *
+    *   Note: lights need to be called (whether directly
+    *   or indirectly) within draw() to remain persistent
+    *   in a looping program. Placing them in setup() will
+    *   cause them to only have an effect the first time
+    *   through the loop.
+    *   @param v1 red or hue value relative to the current
+    *   color range
+    *   @param v2 green or saturation value relative to
+    *   the current color range
+    *   @param v3 blue or brightness value relative to the
+    *   current color range
+    *   @param x x component of position
+    *   @param y y component of position
+    *   @param z z component of position
+    *   @param direction direction of light as a p5.Vector
+    *   @param [angle] angle of cone. Defaults to PI/3
+    *   @param [concentration] concentration of cone.
+    *   Defaults to 100
     */
   def spotLight(v1: Double, v2: Double, v3: Double, x: Double, y: Double, z: Double, direction: Vector): Unit = js.native
   def spotLight(
@@ -8895,7 +9498,7 @@ trait p5InstanceExtensions extends StObject {
     z: Double,
     direction: Vector,
     angle: Double,
-    conc: Double
+    concentration: Double
   ): Unit = js.native
   def spotLight(
     v1: Double,
@@ -8906,32 +9509,54 @@ trait p5InstanceExtensions extends StObject {
     z: Double,
     direction: Vector,
     angle: Unit,
-    conc: Double
+    concentration: Double
   ): Unit = js.native
   /**
-    *   Creates a spotlight with a given color, position,
-    *   direction of light, angle and concentration. Here,
-    *   angle refers to the opening or aperture of the
-    *   cone of the spotlight, and concentration is used
-    *   to focus the light towards the center. Both angle
-    *   and concentration are optional, but if you want to
-    *   provide concentration, you will also have to
-    *   specify the angle. A maximum of 5 spotLight can be
-    *   active at one time
-    *   @param v1 red or hue value (depending on the
-    *   current color mode),
-    *   @param v2 green or saturation value
-    *   @param v3 blue or brightness value
-    *   @param x x axis position
-    *   @param y y axis position
-    *   @param z z axis position
-    *   @param rx x axis direction of light
-    *   @param ry y axis direction of light
-    *   @param rz z axis direction of light
-    *   @param [angle] optional parameter for angle.
-    *   Defaults to PI/3
-    *   @param [conc] optional parameter for
-    *   concentration. Defaults to 100
+    *   Creates a spot light with the given color,
+    *   position, light direction, angle, and
+    *   concentration. Like a pointLight(), a spotLight()
+    *   emits light from a specific point (position). It
+    *   has a different effect when it is positioned
+    *   farther vs. nearer an object.
+    *
+    *   However, unlike a pointLight(), the light is
+    *   emitted in one direction along a conical shape.
+    *   The shape of the cone can be controlled using the
+    *   angle and concentration parameters.
+    *
+    *   The angle parameter is used to determine the
+    *   radius of the cone. And the concentration
+    *   parameter is used to focus the light towards the
+    *   center of the cone. Both parameters are optional,
+    *   however if you want to specify concentration, you
+    *   must also specify angle. The minimum concentration
+    *   value is 1.
+    *
+    *   A maximum of 5 spot lights can be active at once.
+    *
+    *   Note: lights need to be called (whether directly
+    *   or indirectly) within draw() to remain persistent
+    *   in a looping program. Placing them in setup() will
+    *   cause them to only have an effect the first time
+    *   through the loop.
+    *   @param v1 red or hue value relative to the current
+    *   color range
+    *   @param v2 green or saturation value relative to
+    *   the current color range
+    *   @param v3 blue or brightness value relative to the
+    *   current color range
+    *   @param x x component of position
+    *   @param y y component of position
+    *   @param z z component of position
+    *   @param rx x component of light direction
+    *   (inclusive range of -1 to 1)
+    *   @param ry y component of light direction
+    *   (inclusive range of -1 to 1)
+    *   @param rz z component of light direction
+    *   (inclusive range of -1 to 1)
+    *   @param [angle] angle of cone. Defaults to PI/3
+    *   @param [concentration] concentration of cone.
+    *   Defaults to 100
     *   @chainable
     */
   def spotLight(
@@ -8968,7 +9593,7 @@ trait p5InstanceExtensions extends StObject {
     ry: Double,
     rz: Double,
     angle: Double,
-    conc: Double
+    concentration: Double
   ): p5 = js.native
   def spotLight(
     v1: Double,
@@ -8981,7 +9606,7 @@ trait p5InstanceExtensions extends StObject {
     ry: Double,
     rz: Double,
     angle: Unit,
-    conc: Double
+    concentration: Double
   ): p5 = js.native
   
   /**
@@ -9092,7 +9717,7 @@ trait p5InstanceExtensions extends StObject {
     *   as a second argument is not supported, the RGBA
     *   form should be used.
     *
-    *   A p5 Color object can also be provided to set the
+    *   A p5.Color object can also be provided to set the
     *   stroke color.
     *   @param color the stroke color
     *   @chainable
@@ -9111,7 +9736,7 @@ trait p5InstanceExtensions extends StObject {
     *   as a second argument is not supported, the RGBA
     *   form should be used.
     *
-    *   A p5 Color object can also be provided to set the
+    *   A p5.Color object can also be provided to set the
     *   stroke color.
     *   @param gray a gray value
     *   @chainable
@@ -9131,7 +9756,7 @@ trait p5InstanceExtensions extends StObject {
     *   as a second argument is not supported, the RGBA
     *   form should be used.
     *
-    *   A p5 Color object can also be provided to set the
+    *   A p5.Color object can also be provided to set the
     *   stroke color.
     *   @param v1 red or hue value relative to the current
     *   color range
@@ -9156,7 +9781,7 @@ trait p5InstanceExtensions extends StObject {
     *   as a second argument is not supported, the RGBA
     *   form should be used.
     *
-    *   A p5 Color object can also be provided to set the
+    *   A p5.Color object can also be provided to set the
     *   stroke color.
     *   @param value a color string
     *   @chainable
@@ -9175,7 +9800,7 @@ trait p5InstanceExtensions extends StObject {
     *   as a second argument is not supported, the RGBA
     *   form should be used.
     *
-    *   A p5 Color object can also be provided to set the
+    *   A p5.Color object can also be provided to set the
     *   stroke color.
     *   @param values an array containing the
     *   red,green,blue & and alpha components of the color
@@ -9185,35 +9810,36 @@ trait p5InstanceExtensions extends StObject {
   
   /**
     *   Sets the style for rendering line endings. These
-    *   ends are either rounded, squared or extended, each
-    *   of which specified with the corresponding
-    *   parameters: ROUND, SQUARE and PROJECT. The default
+    *   ends are either rounded, squared, or extended,
+    *   each of which specified with the corresponding
+    *   parameters: ROUND, SQUARE, or PROJECT. The default
     *   cap is ROUND. The parameter to this method must be
     *   written in ALL CAPS because they are predefined as
     *   constants in ALL CAPS and Javascript is a
     *   case-sensitive language.
-    *   @param cap either ROUND, SQUARE or PROJECT
+    *   @param cap either ROUND, SQUARE, or PROJECT
     *   @chainable
     */
   def strokeCap(cap: STROKE_CAP): p5 = js.native
   
   /**
     *   Sets the style of the joints which connect line
-    *   segments. These joints are either mitered, beveled
-    *   or rounded and specified with the corresponding
-    *   parameters MITER, BEVEL and ROUND. The default
-    *   joint is MITER. The parameter to this method must
-    *   be written in ALL CAPS because they are predefined
-    *   as constants in ALL CAPS and Javascript is a
+    *   segments. These joints are either mitered,
+    *   beveled, or rounded and specified with the
+    *   corresponding parameters: MITER, BEVEL, or ROUND.
+    *   The default joint is MITER in 2D mode and ROUND in
+    *   WebGL mode. The parameter to this method must be
+    *   written in ALL CAPS because they are predefined as
+    *   constants in ALL CAPS and Javascript is a
     *   case-sensitive language.
-    *   @param join either MITER, BEVEL, ROUND
+    *   @param join either MITER, BEVEL, or ROUND
     *   @chainable
     */
   def strokeJoin(join: STROKE_JOIN): p5 = js.native
   
   /**
     *   Sets the width of the stroke used for lines,
-    *   points and the border around shapes. All widths
+    *   points, and the border around shapes. All widths
     *   are set in units of pixels. Note that it is
     *   affected by any transformation or scaling that has
     *   been applied previously.
@@ -9323,8 +9949,7 @@ trait p5InstanceExtensions extends StObject {
     *   the left edge of your text to the x value you give
     *   in text(). If you write textAlign(RIGHT, TOP), you
     *   are aligning the right edge of your text to the x
-    *   value and the top of edge of the text to the y
-    *   value.
+    *   value and the top edge of the text to the y value.
     */
   def textAlign(): js.Object = js.native
   /**
@@ -9340,8 +9965,7 @@ trait p5InstanceExtensions extends StObject {
     *   the left edge of your text to the x value you give
     *   in text(). If you write textAlign(RIGHT, TOP), you
     *   are aligning the right edge of your text to the x
-    *   value and the top of edge of the text to the y
-    *   value.
+    *   value and the top edge of the text to the y value.
     *   @param horizAlign horizontal alignment, either
     *   LEFT, CENTER, or RIGHT
     *   @param [vertAlign] vertical alignment, either TOP,
@@ -9800,7 +10424,7 @@ trait p5InstanceExtensions extends StObject {
     *   further controlled by using push() and pop().
     *   @param x left/right translation
     *   @param y up/down translation
-    *   @param [z] forward/backward translation (webgl
+    *   @param [z] forward/backward translation (WEBGL
     *   only)
     *   @chainable
     */
@@ -9931,6 +10555,42 @@ trait p5InstanceExtensions extends StObject {
   def updatePixels(x: Unit, y: Unit, w: Unit, h: Double): Unit = js.native
   
   /**
+    *   It is not only a good practice to give users
+    *   control over starting audio. This policy is
+    *   enforced by many web browsers, including iOS and
+    *   Google Chrome, which create the Web Audio API's
+    *   Audio Context in a suspended state. In these
+    *   browser-specific policies, sound will not play
+    *   until a user interaction event (i.e.
+    *   mousePressed()) explicitly resumes the
+    *   AudioContext, or starts an audio node. This can be
+    *   accomplished by calling start() on a
+    *   p5.Oscillator,  play() on a p5.SoundFile, or
+    *   simply userStartAudio().
+    *
+    *   userStartAudio() starts the AudioContext on a user
+    *   gesture. The default behavior will enable audio on
+    *   any mouseUp or touchEnd event. It can also be
+    *   placed in a specific interaction function, such as
+    *   mousePressed() as in the example below. This
+    *   method utilizes StartAudioContext , a library by
+    *   Yotam Mann (MIT Licence, 2016).
+    *   @param [elements] This argument can be an Element,
+    *   Selector String, NodeList, p5.Element, jQuery
+    *   Element, or an Array of any of those.
+    *   @param [callback] Callback to invoke when the
+    *   AudioContext has started
+    *   @return Returns a Promise that resolves when the
+    *   AudioContext state is 'running'
+    */
+  def userStartAudio(): js.Promise[Any] = js.native
+  def userStartAudio(elements: js.Array[Any]): js.Promise[Any] = js.native
+  def userStartAudio(elements: js.Array[Any], callback: js.Function1[/* repeated */ Any, Any]): js.Promise[Any] = js.native
+  def userStartAudio(elements: Unit, callback: js.Function1[/* repeated */ Any, Any]): js.Promise[Any] = js.native
+  def userStartAudio(elements: Element): js.Promise[Any] = js.native
+  def userStartAudio(elements: Element, callback: js.Function1[/* repeated */ Any, Any]): js.Promise[Any] = js.native
+  
+  /**
     *   All shapes are constructed by connecting a series
     *   of vertices. vertex() is used to specify the
     *   vertex coordinates for points, lines, triangles,
@@ -9941,19 +10601,13 @@ trait p5InstanceExtensions extends StObject {
     *   @chainable
     */
   def vertex(x: Double, y: Double): p5 = js.native
-  /**
-    *   All shapes are constructed by connecting a series
-    *   of vertices. vertex() is used to specify the
-    *   vertex coordinates for points, lines, triangles,
-    *   quads, and polygons. It is used exclusively within
-    *   the beginShape() and endShape() functions.
-    *   @param x x-coordinate of the vertex
-    *   @param y y-coordinate of the vertex
-    *   @param z z-coordinate of the vertex. Defaults to 0
-    *   if not specified.
-    *   @chainable
-    */
   def vertex(x: Double, y: Double, z: Double): p5 = js.native
+  def vertex(x: Double, y: Double, z: Double, u: Double): p5 = js.native
+  def vertex(x: Double, y: Double, z: Double, u: Double, v: Double): p5 = js.native
+  def vertex(x: Double, y: Double, z: Double, u: Unit, v: Double): p5 = js.native
+  def vertex(x: Double, y: Double, z: Unit, u: Double): p5 = js.native
+  def vertex(x: Double, y: Double, z: Unit, u: Double, v: Double): p5 = js.native
+  def vertex(x: Double, y: Double, z: Unit, u: Unit, v: Double): p5 = js.native
   
   /**
     *   System variable that stores the width of the

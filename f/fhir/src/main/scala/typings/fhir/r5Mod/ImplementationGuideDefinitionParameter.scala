@@ -8,14 +8,12 @@ trait ImplementationGuideDefinitionParameter
   extends StObject
      with BackboneElement {
   
-  var _code: js.UndefOr[Element] = js.undefined
-  
   var _value: js.UndefOr[Element] = js.undefined
   
   /**
-    * Code that identifies parameter.
+    * A tool-specific code that defines the parameter.
     */
-  var code: String
+  var code: Coding
   
   /**
     * Value for named type.
@@ -24,7 +22,7 @@ trait ImplementationGuideDefinitionParameter
 }
 object ImplementationGuideDefinitionParameter {
   
-  inline def apply(code: String, value: String): ImplementationGuideDefinitionParameter = {
+  inline def apply(code: Coding, value: String): ImplementationGuideDefinitionParameter = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImplementationGuideDefinitionParameter]
   }
@@ -32,13 +30,9 @@ object ImplementationGuideDefinitionParameter {
   @scala.inline
   implicit open class MutableBuilder[Self <: ImplementationGuideDefinitionParameter] (val x: Self) extends AnyVal {
     
-    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Coding): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-    
-    inline def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
-    
-    inline def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
     
     inline def set_value(value: Element): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
     

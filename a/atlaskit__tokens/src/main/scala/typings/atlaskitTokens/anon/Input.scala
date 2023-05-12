@@ -8,42 +8,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Input extends StObject {
   
-  var brand: BoldDefaultHovered
+  var brand: BoldHoveredPressed
   
-  var danger: DefaultDefaultHovered
+  var danger: DefaultHoveredPressed
   
   var disabled: PaintToken[BaseToken]
   
-  var discovery: DefaultDefaultHovered
+  var discovery: DefaultHoveredPressed
   
-  var information: DefaultDefaultHovered
+  var information: DefaultHoveredPressed
   
-  var input: DefaultHovered
+  var input: HoveredPressed
   
-  var inverse: SubtleDefaultHovered
+  var inverse: SubtleHoveredPressed
   
   var neutral: BoldDefaultSubtle
   
-  var selected: DefaultDefaultHovered
+  var selected: DefaultHoveredPressed
   
-  var success: DefaultDefaultHovered
+  var success: DefaultHoveredPressed
   
-  var warning: DefaultDefaultHovered
+  var warning: DefaultHoveredPressed
 }
 object Input {
   
   inline def apply(
-    brand: BoldDefaultHovered,
-    danger: DefaultDefaultHovered,
+    brand: BoldHoveredPressed,
+    danger: DefaultHoveredPressed,
     disabled: PaintToken[BaseToken],
-    discovery: DefaultDefaultHovered,
-    information: DefaultDefaultHovered,
-    input: DefaultHovered,
-    inverse: SubtleDefaultHovered,
+    discovery: DefaultHoveredPressed,
+    information: DefaultHoveredPressed,
+    input: HoveredPressed,
+    inverse: SubtleHoveredPressed,
     neutral: BoldDefaultSubtle,
-    selected: DefaultDefaultHovered,
-    success: DefaultDefaultHovered,
-    warning: DefaultDefaultHovered
+    selected: DefaultHoveredPressed,
+    success: DefaultHoveredPressed,
+    warning: DefaultHoveredPressed
   ): Input = {
     val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], danger = danger.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], discovery = discovery.asInstanceOf[js.Any], information = information.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], inverse = inverse.asInstanceOf[js.Any], neutral = neutral.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], warning = warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[Input]
@@ -52,26 +52,26 @@ object Input {
   @scala.inline
   implicit open class MutableBuilder[Self <: Input] (val x: Self) extends AnyVal {
     
-    inline def setBrand(value: BoldDefaultHovered): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
+    inline def setBrand(value: BoldHoveredPressed): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     
-    inline def setDanger(value: DefaultDefaultHovered): Self = StObject.set(x, "danger", value.asInstanceOf[js.Any])
+    inline def setDanger(value: DefaultHoveredPressed): Self = StObject.set(x, "danger", value.asInstanceOf[js.Any])
     
     inline def setDisabled(value: PaintToken[BaseToken]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    inline def setDiscovery(value: DefaultDefaultHovered): Self = StObject.set(x, "discovery", value.asInstanceOf[js.Any])
+    inline def setDiscovery(value: DefaultHoveredPressed): Self = StObject.set(x, "discovery", value.asInstanceOf[js.Any])
     
-    inline def setInformation(value: DefaultDefaultHovered): Self = StObject.set(x, "information", value.asInstanceOf[js.Any])
+    inline def setInformation(value: DefaultHoveredPressed): Self = StObject.set(x, "information", value.asInstanceOf[js.Any])
     
-    inline def setInput(value: DefaultHovered): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: HoveredPressed): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    inline def setInverse(value: SubtleDefaultHovered): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
+    inline def setInverse(value: SubtleHoveredPressed): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
     
     inline def setNeutral(value: BoldDefaultSubtle): Self = StObject.set(x, "neutral", value.asInstanceOf[js.Any])
     
-    inline def setSelected(value: DefaultDefaultHovered): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: DefaultHoveredPressed): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    inline def setSuccess(value: DefaultDefaultHovered): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: DefaultHoveredPressed): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
-    inline def setWarning(value: DefaultDefaultHovered): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: DefaultHoveredPressed): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
   }
 }

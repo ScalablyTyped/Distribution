@@ -1,6 +1,6 @@
 package typings.tensorflowTfjsBackendWebgl
 
-import typings.tensorflowTfjsBackendWebgl.anon.Type
+import typings.tensorflowTfjsBackendWebgl.anon.NameType
 import typings.tensorflowTfjsBackendWebgl.distGpgpuMathMod.GPGPUProgram
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,7 +19,7 @@ object distEncodeMatrixGpuMod {
     def this(outputShape: js.Tuple3[Double, Double, Double], inputIsUnsignedByte: Unit, usedChannels: String) = this()
     
     @JSName("customUniforms")
-    var customUniforms_EncodeMatrixProgram: js.Array[Type] = js.native
+    var customUniforms_EncodeMatrixProgram: js.Array[NameType] = js.native
     
     @JSName("enableShapeUniforms")
     var enableShapeUniforms_EncodeMatrixProgram: Boolean = js.native

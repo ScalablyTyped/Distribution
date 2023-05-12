@@ -45,6 +45,11 @@ trait RasterFunctionProperties extends StObject {
     c128 | c64 | f32 | f64 | s16 | s32 | s8 | u1 | u16 | u2 | u32 | u4 | u8 | unknown
   ] = js.undefined
   
+  /**
+    * Property where Raster Function template is passed.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html#rasterFunctionDefinition)
+    */
   var rasterFunctionDefinition: js.UndefOr[Any] = js.undefined
   
   /**

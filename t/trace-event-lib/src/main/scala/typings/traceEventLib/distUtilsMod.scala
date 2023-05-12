@@ -10,6 +10,8 @@ object distUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def compactObject[T](maybeObject: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("compactObject")(maybeObject.asInstanceOf[js.Any]).asInstanceOf[T]
+  
   inline def getProcessId(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getProcessId")().asInstanceOf[Double]
   
   inline def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]

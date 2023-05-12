@@ -17,7 +17,7 @@ trait ListConflictingAliasesRequest extends StObject {
   var DistributionId: distributionIdString
   
   /**
-    * Use this field when paginating results to indicate where to begin in the list of conflicting aliases. The response includes conflicting aliases in the list that occur after the marker. To get the next page of the list, set this field’s value to the value of NextMarker from the current page’s response.
+    * Use this field when paginating results to indicate where to begin in the list of conflicting aliases. The response includes conflicting aliases in the list that occur after the marker. To get the next page of the list, set this field's value to the value of NextMarker from the current page's response.
     */
   var Marker: js.UndefOr[String] = js.undefined
   

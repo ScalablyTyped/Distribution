@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ColorInterpolation
+import typings.csstype.mod.Property.InputSecurity
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `415` extends StObject {
   
   var value: js.UndefOr[
-    ColorInterpolation | (js.Array[
+    InputSecurity | (js.Array[
       (Extract[
-        js.UndefOr[ColorInterpolation | js.Array[NonNullable[js.UndefOr[ColorInterpolation]]]], 
+        js.UndefOr[InputSecurity | js.Array[NonNullable[js.UndefOr[InputSecurity]]]], 
         String
-      ]) | NonNullable[js.UndefOr[ColorInterpolation]]
+      ]) | NonNullable[js.UndefOr[InputSecurity]]
     ])
   ] = js.native
 }

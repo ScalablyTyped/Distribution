@@ -2,6 +2,7 @@ package typings.reactConfirm
 
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactElement
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,6 +17,8 @@ object mod {
   
   inline def createConfirmation(component: ComponentType[Any]): js.Function1[/* props */ Any, js.Promise[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createConfirmation")(component.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ Any, js.Promise[String]]]
   inline def createConfirmation(component: ComponentType[Any], unmountDelay: Double): js.Function1[/* props */ Any, js.Promise[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createConfirmation")(component.asInstanceOf[js.Any], unmountDelay.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ Any, js.Promise[String]]]
+  inline def createConfirmation(component: ComponentType[Any], unmountDelay: Double, mountingNode: HTMLElement): js.Function1[/* props */ Any, js.Promise[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createConfirmation")(component.asInstanceOf[js.Any], unmountDelay.asInstanceOf[js.Any], mountingNode.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ Any, js.Promise[String]]]
+  inline def createConfirmation(component: ComponentType[Any], unmountDelay: Unit, mountingNode: HTMLElement): js.Function1[/* props */ Any, js.Promise[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createConfirmation")(component.asInstanceOf[js.Any], unmountDelay.asInstanceOf[js.Any], mountingNode.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ Any, js.Promise[String]]]
   
   @js.native
   trait ReactConfirmProps extends StObject {

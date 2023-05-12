@@ -12,6 +12,11 @@ trait ICodeAction
      with IDocument {
   
   /**
+    * In version 9.23.0: introduced
+    */
+  val actionDefaultReturnName: String = js.native
+  
+  /**
     * In version 7.21.0: introduced
     */
   val actionParameters: IList[ICodeActionParameter] = js.native

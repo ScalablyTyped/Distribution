@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@fluentui/set-version" : "8.2.2"
+      "@fluentui/set-version" : "8.2.9"
     }
   ],
   "test-dependencies" : [
     {
-      "@fluentui/set-version" : "8.2.2"
+      "@fluentui/set-version" : "8.2.9"
     }
   ],
   "compile-devDependencies" : [

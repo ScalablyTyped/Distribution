@@ -6,6 +6,7 @@ import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
 import typings.openui5.sapUiWebcFioriLibraryMod.IUploadCollectionItem
 import typings.openui5.sapUiWebcFioriLibraryMod.UploadState
+import typings.std.File
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -530,6 +531,8 @@ object sapUiWebcFioriUploadCollectionItemMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:fileNameClick fileNameClick} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -541,6 +544,8 @@ object sapUiWebcFioriUploadCollectionItemMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:rename rename} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -552,6 +557,8 @@ object sapUiWebcFioriUploadCollectionItemMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:retry retry} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -563,6 +570,8 @@ object sapUiWebcFioriUploadCollectionItemMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:terminate terminate} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -594,11 +603,11 @@ object sapUiWebcFioriUploadCollectionItemMod {
     /**
       * Gets current value of property {@link #getFile file}.
       *
-      * Holds an instance of `File` associated with this item.
+      * Holds an instance of File associated with this item.
       *
       * @returns Value of property `file`
       */
-    def getFile(): js.Object = js.native
+    def getFile(): File = js.native
     
     /**
       * Gets current value of property {@link #getFileName fileName}.
@@ -757,9 +766,9 @@ object sapUiWebcFioriUploadCollectionItemMod {
     bDisableDeleteButton: Boolean): this.type = js.native
     
     /**
-      * Sets a new value for property {@link #getFile file}.
+      * Sets a new value for property {@link #setFile file}.
       *
-      * Holds an instance of `File` associated with this item.
+      * Holds an instance of File associated with this item.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -769,7 +778,7 @@ object sapUiWebcFioriUploadCollectionItemMod {
     def setFile(/**
       * New value for property `file`
       */
-    oFile: js.Object): this.type = js.native
+    oFile: File): this.type = js.native
     
     /**
       * Sets a new value for property {@link #getFileName fileName}.

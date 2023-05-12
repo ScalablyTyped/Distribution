@@ -45,15 +45,6 @@ trait Component
   var encapsulation: js.UndefOr[ViewEncapsulation] = js.undefined
   
   /**
-    * A set of components that should be compiled along with
-    * this component. For each component listed here,
-    * Angular creates a {@link ComponentFactory} and stores it in the
-    * {@link ComponentFactoryResolver}.
-    * @deprecated Since 9.0.0. With Ivy, this property is no longer necessary.
-    */
-  var entryComponents: js.UndefOr[js.Array[Type[Any] | js.Array[Any]]] = js.undefined
-  
-  /**
     * The imports property specifies the standalone component's template dependencies — those
     * directives, components, and pipes that can be used within its template. Standalone components
     * can import other standalone components, directives, and pipes as well as existing NgModules.
@@ -63,8 +54,6 @@ trait Component
     *
     * More information about standalone components, directives, and pipes can be found in [this
     * guide](guide/standalone-components).
-    *
-    * @developerPreview
     */
   var imports: js.UndefOr[js.Array[Type[Any] | js.Array[Any]]] = js.undefined
   
@@ -79,6 +68,7 @@ trait Component
     * SystemJS exposes the `__moduleName` variable within each module.
     * In CommonJS, this can  be set to `module.id`.
     *
+    * @deprecated This option does not have any effect. Will be removed in Angular v17.
     */
   var moduleId: js.UndefOr[String] = js.undefined
   
@@ -157,12 +147,6 @@ object Component {
     inline def setEncapsulation(value: ViewEncapsulation): Self = StObject.set(x, "encapsulation", value.asInstanceOf[js.Any])
     
     inline def setEncapsulationUndefined: Self = StObject.set(x, "encapsulation", js.undefined)
-    
-    inline def setEntryComponents(value: js.Array[Type[Any] | js.Array[Any]]): Self = StObject.set(x, "entryComponents", value.asInstanceOf[js.Any])
-    
-    inline def setEntryComponentsUndefined: Self = StObject.set(x, "entryComponents", js.undefined)
-    
-    inline def setEntryComponentsVarargs(value: (Type[Any] | js.Array[Any])*): Self = StObject.set(x, "entryComponents", js.Array(value*))
     
     inline def setImports(value: js.Array[Type[Any] | js.Array[Any]]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     

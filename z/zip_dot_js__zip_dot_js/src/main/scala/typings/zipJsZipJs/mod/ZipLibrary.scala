@@ -12,14 +12,14 @@ trait ZipLibrary extends StObject {
   
   /**
     * The class used to compress data.
-    * 
+    *
     * @defaultValue {@link ZipDeflate}
     */
   var Deflate: Instantiable0[ZipDeflate]
   
   /**
     * The class used to decompress data.
-    * 
+    *
     * @defaultValue {@link ZipInflate}
     */
   var Inflate: Instantiable0[ZipInflate]

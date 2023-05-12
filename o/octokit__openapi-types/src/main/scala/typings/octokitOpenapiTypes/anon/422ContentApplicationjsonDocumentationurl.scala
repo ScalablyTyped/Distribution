@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `422ContentApplicationjsonDocumentationurl` extends StObject {
   
-  /** Unprocessable Entity if user is a member of the organization */
+  /** @description Unprocessable Entity if user is a member of the organization */
   var `422`: ContentApplicationjsonDocumentationurl
 }
 object `422ContentApplicationjsonDocumentationurl` {

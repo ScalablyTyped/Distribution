@@ -1,7 +1,7 @@
 
 # Scala.js typings for mdast-util-from-markdown
 
-Typings are for version 1.2.0
+Typings are for version 1.3.0
 
 ## Library description:
 mdast utility to parse markdown

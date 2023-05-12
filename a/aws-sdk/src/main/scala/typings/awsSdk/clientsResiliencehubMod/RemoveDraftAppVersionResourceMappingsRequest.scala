@@ -7,32 +7,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RemoveDraftAppVersionResourceMappingsRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the application. The format for this ARN is: arn:partition:resiliencehub:region:account:app/app-id. For more information about ARNs, see  Amazon Resource Names (ARNs) in the AWS General Reference.
+    * The Amazon Resource Name (ARN) of the Resilience Hub application. The format for this ARN is: arn:partition:resiliencehub:region:account:app/app-id. For more information about ARNs, see  Amazon Resource Names (ARNs) in the AWS General Reference guide.
     */
   var appArn: Arn
   
   /**
-    * The names of the registered applications to remove from the resource mappings.
+    * The names of the registered applications you want to remove from the resource mappings.
     */
   var appRegistryAppNames: js.UndefOr[EntityNameList] = js.undefined
   
   /**
-    * The names of the CloudFormation stacks to remove from the resource mappings.
+    * The names of the Amazon Elastic Kubernetes Service clusters and namespaces you want to remove from the resource mappings.  This parameter accepts values in "eks-cluster/namespace" format. 
+    */
+  var eksSourceNames: js.UndefOr[String255List] = js.undefined
+  
+  /**
+    * The names of the CloudFormation stacks you want to remove from the resource mappings.
     */
   var logicalStackNames: js.UndefOr[String255List] = js.undefined
   
   /**
-    * The names of the resource groups to remove from the resource mappings.
+    * The names of the resource groups you want to remove from the resource mappings.
     */
   var resourceGroupNames: js.UndefOr[EntityNameList] = js.undefined
   
   /**
-    * The names of the resources to remove from the resource mappings.
+    * The names of the resources you want to remove from the resource mappings.
     */
   var resourceNames: js.UndefOr[EntityNameList] = js.undefined
   
   /**
-    *  &lt;/p&gt; 
+    * The names of the Terraform sources you want to remove from the resource mappings.
     */
   var terraformSourceNames: js.UndefOr[String255List] = js.undefined
 }
@@ -53,6 +58,12 @@ object RemoveDraftAppVersionResourceMappingsRequest {
     inline def setAppRegistryAppNamesUndefined: Self = StObject.set(x, "appRegistryAppNames", js.undefined)
     
     inline def setAppRegistryAppNamesVarargs(value: EntityName*): Self = StObject.set(x, "appRegistryAppNames", js.Array(value*))
+    
+    inline def setEksSourceNames(value: String255List): Self = StObject.set(x, "eksSourceNames", value.asInstanceOf[js.Any])
+    
+    inline def setEksSourceNamesUndefined: Self = StObject.set(x, "eksSourceNames", js.undefined)
+    
+    inline def setEksSourceNamesVarargs(value: String255*): Self = StObject.set(x, "eksSourceNames", js.Array(value*))
     
     inline def setLogicalStackNames(value: String255List): Self = StObject.set(x, "logicalStackNames", value.asInstanceOf[js.Any])
     

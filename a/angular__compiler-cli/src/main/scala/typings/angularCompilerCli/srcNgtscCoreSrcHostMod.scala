@@ -6,7 +6,6 @@ import typings.angularCompilerCli.srcNgtscCoreApiSrcInterfacesMod.TransformResou
 import typings.angularCompilerCli.srcNgtscCoreApiSrcInterfacesMod.UnifiedModulesHost
 import typings.angularCompilerCli.srcNgtscCoreApiSrcOptionsMod.NgCompilerOptions
 import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.AbsoluteFsPath
-import typings.angularCompilerCli.srcNgtscShimsApiMod.FactoryTracker
 import typings.angularCompilerCli.srcNgtscShimsMod.ShimAdapter
 import typings.angularCompilerCli.srcNgtscShimsMod.ShimReferenceTagger
 import typings.std.Set
@@ -16,17 +15,19 @@ import typings.typescript.mod.CompilerOptions
 import typings.typescript.mod.CreateSourceFileOptions
 import typings.typescript.mod.Diagnostic
 import typings.typescript.mod.FileReference
-import typings.typescript.mod.ModuleKind.CommonJS
-import typings.typescript.mod.ModuleKind.ESNext
 import typings.typescript.mod.ModuleResolutionCache
 import typings.typescript.mod.ParsedCommandLine
 import typings.typescript.mod.Path
 import typings.typescript.mod.Program
+import typings.typescript.mod.ResolutionMode
 import typings.typescript.mod.ResolvedModule
+import typings.typescript.mod.ResolvedModuleWithFailedLookupLocations
 import typings.typescript.mod.ResolvedProjectReference
 import typings.typescript.mod.ResolvedTypeReferenceDirective
+import typings.typescript.mod.ResolvedTypeReferenceDirectiveWithFailedLookupLocations
 import typings.typescript.mod.ScriptTarget
 import typings.typescript.mod.SourceFile
+import typings.typescript.mod.StringLiteralLike
 import typings.typescript.mod.WriteFileCallback
 import typings.typescript.mod.WriteFileCallbackData
 import org.scalablytyped.runtime.StObject
@@ -86,6 +87,8 @@ object srcNgtscCoreSrcHostMod {
         ]
       ] = js.native
     
+    var hasInvalidatedResolutions: js.UndefOr[js.Function1[/* filePath */ Path, Boolean]] = js.native
+    
     var readDirectory: js.UndefOr[
         js.Function5[
           /* rootDir */ String, 
@@ -103,6 +106,18 @@ object srcNgtscCoreSrcHostMod {
     
     var realpath: js.UndefOr[js.Function1[/* path */ String, String]] = js.native
     
+    var resolveModuleNameLiterals: js.UndefOr[
+        js.Function6[
+          /* moduleLiterals */ js.Array[StringLiteralLike], 
+          /* containingFile */ String, 
+          /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
+          /* options */ CompilerOptions, 
+          /* containingSourceFile */ SourceFile, 
+          /* reusedNames */ js.UndefOr[js.Array[StringLiteralLike]], 
+          js.Array[ResolvedModuleWithFailedLookupLocations]
+        ]
+      ] = js.native
+    
     var resolveModuleNames: js.UndefOr[
         js.Function6[
           /* moduleNames */ js.Array[String], 
@@ -115,13 +130,25 @@ object srcNgtscCoreSrcHostMod {
         ]
       ] = js.native
     
+    var resolveTypeReferenceDirectiveReferences: js.UndefOr[
+        js.Function6[
+          /* typeDirectiveReferences */ js.Array[String | FileReference], 
+          /* containingFile */ String, 
+          /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
+          /* options */ CompilerOptions, 
+          /* containingSourceFile */ js.UndefOr[SourceFile], 
+          /* reusedNames */ js.UndefOr[js.Array[String | FileReference]], 
+          js.Array[ResolvedTypeReferenceDirectiveWithFailedLookupLocations]
+        ]
+      ] = js.native
+    
     var resolveTypeReferenceDirectives: js.UndefOr[
         js.Function5[
           /* typeReferenceDirectiveNames */ js.Array[FileReference | String], 
           /* containingFile */ String, 
           /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
           /* options */ CompilerOptions, 
-          /* containingFileMode */ js.UndefOr[CommonJS | ESNext], 
+          /* containingFileMode */ js.UndefOr[ResolutionMode], 
           js.Array[js.UndefOr[ResolvedTypeReferenceDirective]]
         ]
       ] = js.native
@@ -206,8 +233,8 @@ object srcNgtscCoreSrcHostMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped {[ M in keyof std.Required<@angular/compiler-cli.@angular/compiler-cli/src/ngtsc/core/api/src/interfaces.ExtendedTsCompilerHost> ]: @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/core/api/src/interfaces.ExtendedTsCompilerHost[M]} */ /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.angularCompilerCli.srcNgtscCoreApiSrcAdapterMod.NgCompilerAdapter because var conflicts: directoryExists, getCurrentDirectory, getDirectories, getModifiedResourceFiles, readResource, realpath, resolveModuleNames, resourceNameToFileName, trace, transformResource, useCaseSensitiveFileNames. Inlined entryPoint, constructionDiagnostics, ignoreForEmit, factoryTracker, unifiedModulesHost, rootDirs, readFile_Original, fileExists_Original, getCanonicalFileName_Original, isShim, isResource
-  - typings.angularCompilerCli.srcNgtscCoreApiSrcInterfacesMod.ExtendedTsCompilerHost because var conflicts: createHash, directoryExists, fileNameToModuleName, getCancellationToken, getCurrentDirectory, getDefaultLibLocation, getDirectories, getEnvironmentVariable, getModifiedResourceFiles, getModuleResolutionCache, getParsedCommandLine, getSourceFileByPath, readDirectory, readResource, realpath, resolveModuleNames, resolveTypeReferenceDirectives, resourceNameToFileName, trace, transformResource, useCaseSensitiveFileNames, writeFile_Original. Inlined hasInvalidatedResolutions, getSourceFile, getSourceFile, getSourceFile, getSourceFile, getSourceFile, getSourceFile, getSourceFile, getSourceFile, fileExists */ @JSImport("@angular/compiler-cli/src/ngtsc/core/src/host", "NgCompilerHost")
+  - typings.angularCompilerCli.srcNgtscCoreApiSrcAdapterMod.NgCompilerAdapter because var conflicts: directoryExists, getCurrentDirectory, getDirectories, getModifiedResourceFiles, readResource, realpath, resolveModuleNames, resourceNameToFileName, trace, transformResource, useCaseSensitiveFileNames. Inlined entryPoint, constructionDiagnostics, ignoreForEmit, unifiedModulesHost, rootDirs, readFile_Original, fileExists_Original, getCanonicalFileName_Original, isShim, isResource
+  - typings.angularCompilerCli.srcNgtscCoreApiSrcInterfacesMod.ExtendedTsCompilerHost because var conflicts: createHash, directoryExists, fileNameToModuleName, getCancellationToken, getCurrentDirectory, getDefaultLibLocation, getDirectories, getEnvironmentVariable, getModifiedResourceFiles, getModuleResolutionCache, getParsedCommandLine, getSourceFileByPath, hasInvalidatedResolutions, readDirectory, readResource, realpath, resolveModuleNameLiterals, resolveModuleNames, resolveTypeReferenceDirectiveReferences, resolveTypeReferenceDirectives, resourceNameToFileName, trace, transformResource, useCaseSensitiveFileNames, writeFile_Original. Inlined getSourceFile, getSourceFile, getSourceFile, getSourceFile, getSourceFile, getSourceFile, getSourceFile, getSourceFile, fileExists */ @JSImport("@angular/compiler-cli/src/ngtsc/core/src/host", "NgCompilerHost")
   @js.native
   open class NgCompilerHost protected () extends DelegatingCompilerHost {
     def this(
@@ -217,17 +244,6 @@ object srcNgtscCoreSrcHostMod {
       shimAdapter: ShimAdapter,
       shimTagger: ShimReferenceTagger,
       entryPoint: Null,
-      factoryTracker: Null,
-      diagnostics: js.Array[Diagnostic]
-    ) = this()
-    def this(
-      delegate: ExtendedTsCompilerHost,
-      inputFiles: js.Array[String],
-      rootDirs: js.Array[AbsoluteFsPath],
-      shimAdapter: ShimAdapter,
-      shimTagger: ShimReferenceTagger,
-      entryPoint: Null,
-      factoryTracker: FactoryTracker,
       diagnostics: js.Array[Diagnostic]
     ) = this()
     def this(
@@ -237,17 +253,6 @@ object srcNgtscCoreSrcHostMod {
       shimAdapter: ShimAdapter,
       shimTagger: ShimReferenceTagger,
       entryPoint: AbsoluteFsPath,
-      factoryTracker: Null,
-      diagnostics: js.Array[Diagnostic]
-    ) = this()
-    def this(
-      delegate: ExtendedTsCompilerHost,
-      inputFiles: js.Array[String],
-      rootDirs: js.Array[AbsoluteFsPath],
-      shimAdapter: ShimAdapter,
-      shimTagger: ShimReferenceTagger,
-      entryPoint: AbsoluteFsPath,
-      factoryTracker: FactoryTracker,
       diagnostics: js.Array[Diagnostic]
     ) = this()
     
@@ -256,8 +261,6 @@ object srcNgtscCoreSrcHostMod {
     /* private */ var createCachedResolveModuleNamesFunction: Any = js.native
     
     val entryPoint: AbsoluteFsPath | Null = js.native
-    
-    val factoryTracker: FactoryTracker | Null = js.native
     
     def fileExists(fileName: String): Boolean = js.native
     @JSName("fileExists")
@@ -293,9 +296,6 @@ object srcNgtscCoreSrcHostMod {
       shouldCreateNewSourceFile: Boolean
     ): js.UndefOr[SourceFile] = js.native
     def getSourceFile(fileName: String, languageVersion: ScriptTarget, onError: Unit, shouldCreateNewSourceFile: Boolean): js.UndefOr[SourceFile] = js.native
-    
-    /** If provided along with custom resolveModuleNames or resolveTypeReferenceDirectives, used to determine if unchanged file path needs to re-resolve modules/type reference directives */
-    var hasInvalidatedResolutions: js.UndefOr[js.Function1[/* filePath */ Path, Boolean]] = js.native
     
     /**
       * Retrieves a set of `ts.SourceFile`s which should not be emitted as JS files.

@@ -38,6 +38,12 @@ object distClientDeviceCodeClientMod {
     /* private */ var continuePolling: Any = js.native
     
     /**
+      * Creates query string for the device code request
+      * @param request
+      */
+    def createExtraQueryParameters(request: CommonDeviceCodeRequest): String = js.native
+    
+    /**
       * Create device code endpoint query parameters and returns string
       */
     /* private */ var createQueryString: Any = js.native

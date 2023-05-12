@@ -1,7 +1,7 @@
 
 # Scala.js typings for vega-embed
 
-Typings are for version 6.21.0
+Typings are for version 6.22.1
 
 ## Library description:
 Publish Vega visualizations as embedded web components.

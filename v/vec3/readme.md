@@ -1,7 +1,7 @@
 
 # Scala.js typings for vec3
 
-Typings are for version 0.1.7
+Typings are for version 0.1.8
 
 ## Library description:
 3d vector math with good unit tests

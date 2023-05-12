@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.InputSecurity
+import typings.csstype.mod.Property.FontVariantNumeric
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `403` extends StObject {
   
   var value: js.UndefOr[
-    InputSecurity | (js.Array[
+    FontVariantNumeric | (js.Array[
       (Extract[
-        js.UndefOr[InputSecurity | js.Array[NonNullable[js.UndefOr[InputSecurity]]]], 
+        js.UndefOr[FontVariantNumeric | js.Array[NonNullable[js.UndefOr[FontVariantNumeric]]]], 
         String
-      ]) | NonNullable[js.UndefOr[InputSecurity]]
+      ]) | NonNullable[js.UndefOr[FontVariantNumeric]]
     ])
   ] = js.native
 }

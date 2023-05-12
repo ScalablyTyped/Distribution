@@ -26,7 +26,7 @@ trait IPromise2[TSuccess, TError] extends StObject {
     * are not supported as property names by ES3, you'll need to invoke
     * the method like promise['finally'](callback) to make your code IE8 and Android 2.x compatible.
     */
-  // tslint:disable-next-line:no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   def `finally`[T, U](finallyCallback: js.Function0[Any]): IPromise2[T, U] = js.native
   
   /**

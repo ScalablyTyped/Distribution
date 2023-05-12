@@ -58,7 +58,7 @@ import typings.typeFest.typeFestStrings.linux
 import typings.typeFest.typeFestStrings.mips
 import typings.typeFest.typeFestStrings.mipsel
 import typings.typeFest.typeFestStrings.module
-import typings.typeFest.typeFestStrings.node
+import typings.typeFest.typeFestStrings.node_
 import typings.typeFest.typeFestStrings.openbsd
 import typings.typeFest.typeFestStrings.ppc
 import typings.typeFest.typeFestStrings.ppc64
@@ -157,34 +157,27 @@ object sourcePackageJsonMod {
     }
     
     type ExportCondition = LiteralUnion[
-        `import` | require | node | `node-addons` | deno | browser | electron | `react-native` | default, 
+        `import` | require | node_ | `node-addons` | deno | browser | electron | `react-native` | default, 
         String
       ]
     
+    /**
+    	A mapping of conditions and the paths to which they resolve.
+    	*/
     /** NOTE: Mapped type definitions are impossible to translate to Scala.
       * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
       * You'll have to cast your way around this structure, unfortunately. 
       * TS definition: {{{
-      {[ condition in type-fest.type-fest/source/package-json.PackageJson.ExportCondition ]: type-fest.type-fest/source/package-json.PackageJson.Exports}
+      {[ condition in type-fest.type-fest/source/package-json.PackageJson.ExportCondition ]:? type-fest.type-fest/source/package-json.PackageJson.Exports}
       }}}
       */
     @js.native
     trait ExportConditions extends StObject
     
-    /** 
-    NOTE: Rewritten from type alias:
-    {{{
-    type Exports = null | string | std.Array<string | type-fest.type-fest/source/package-json.PackageJson.ExportConditions> | type-fest.type-fest/source/package-json.PackageJson.ExportConditions | {[path: string] : type-fest.type-fest/source/package-json.PackageJson.Exports}
-    }}}
-    to avoid circular code involving: 
-    - type-fest.type-fest/source/package-json.PackageJson.Exports
-    */
-    type Exports = Null | String | (js.Array[String | ExportConditions]) | ExportConditions | StringDictionary[Any]
+    type Exports = Null | String | (js.Array[String | ExportConditions]) | ExportConditions
     
     type Imports = // eslint-disable-line @typescript-eslint/consistent-indexed-object-style
-    StringDictionary[
-        String | (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in type-fest.type-fest/source/package-json.PackageJson.ExportCondition ]: type-fest.type-fest/source/package-json.PackageJson.Exports} */ js.Any)
-      ]
+    StringDictionary[Exports]
     
     trait JSPMConfiguration extends StObject {
       
@@ -496,6 +489,13 @@ object sourcePackageJsonMod {
       		Package version, parseable by [`node-semver`](https://github.com/npm/node-semver).
       		*/
       var version: js.UndefOr[String] = js.undefined
+      
+      /**
+      		Used to configure [npm workspaces](https://docs.npmjs.com/cli/using-npm/workspaces) / [Yarn workspaces](https://classic.yarnpkg.com/docs/workspaces/).
+      		Workspaces allow you to manage multiple packages within the same repository in such a way that you only need to run your install command once in order to install all of them in a single pass.
+      		Please note that the top-level `private` property of `package.json` **must** be set to `true` in order to use workspaces.
+      		*/
+      var workspaces: js.UndefOr[js.Array[WorkspacePattern] | WorkspaceConfig] = js.undefined
     }
     object PackageJsonStandard {
       
@@ -704,6 +704,12 @@ object sourcePackageJsonMod {
         inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
         
         inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+        
+        inline def setWorkspaces(value: js.Array[WorkspacePattern] | WorkspaceConfig): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
+        
+        inline def setWorkspacesUndefined: Self = StObject.set(x, "workspaces", js.undefined)
+        
+        inline def setWorkspacesVarargs(value: WorkspacePattern*): Self = StObject.set(x, "workspaces", js.Array(value*))
       }
     }
     
@@ -805,7 +811,8 @@ object sourcePackageJsonMod {
       
       /**
       		Designed to solve the problem of packages which break when their `node_modules` are moved to the root workspace directory - a process known as hoisting. For these packages, both within your workspace, and also some that have been installed via `node_modules`, it is important to have a mechanism for preventing the default Yarn workspace behavior. By adding workspace pattern strings here, Yarn will resume non-workspace behavior for any package which matches the defined patterns.
-      		[Read more](https://classic.yarnpkg.com/blog/2018/02/15/nohoist/)
+      		[Supported](https://classic.yarnpkg.com/blog/2018/02/15/nohoist/) by Yarn.
+      		[Not supported](https://github.com/npm/rfcs/issues/287) by npm.
       		*/
       var nohoist: js.UndefOr[js.Array[WorkspacePattern]] = js.undefined
       
@@ -859,13 +866,6 @@ object sourcePackageJsonMod {
       		Selective version resolutions. Allows the definition of custom package versions inside dependencies without manual edits in the `yarn.lock` file.
       		*/
       var resolutions: js.UndefOr[Dependency] = js.undefined
-      
-      /**
-      		Used to configure [Yarn workspaces](https://classic.yarnpkg.com/docs/workspaces/).
-      		Workspaces allow you to manage multiple packages within the same repository in such a way that you only need to run `yarn install` once to install all of them in a single pass.
-      		Please note that the top-level `private` property of `package.json` **must** be set to `true` in order to use workspaces.
-      		*/
-      var workspaces: js.UndefOr[js.Array[WorkspacePattern] | WorkspaceConfig] = js.undefined
     }
     object YarnConfiguration {
       
@@ -884,12 +884,6 @@ object sourcePackageJsonMod {
         inline def setResolutions(value: Dependency): Self = StObject.set(x, "resolutions", value.asInstanceOf[js.Any])
         
         inline def setResolutionsUndefined: Self = StObject.set(x, "resolutions", js.undefined)
-        
-        inline def setWorkspaces(value: js.Array[WorkspacePattern] | WorkspaceConfig): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
-        
-        inline def setWorkspacesUndefined: Self = StObject.set(x, "workspaces", js.undefined)
-        
-        inline def setWorkspacesVarargs(value: WorkspacePattern*): Self = StObject.set(x, "workspaces", js.Array(value*))
       }
     }
   }

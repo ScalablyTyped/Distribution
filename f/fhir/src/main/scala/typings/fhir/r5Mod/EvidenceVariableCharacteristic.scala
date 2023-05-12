@@ -1,11 +1,5 @@
 package typings.fhir.r5Mod
 
-import typings.fhir.fhirStrings.`mean-of-mean`
-import typings.fhir.fhirStrings.`mean-of-median`
-import typings.fhir.fhirStrings.`median-of-mean`
-import typings.fhir.fhirStrings.`median-of-median`
-import typings.fhir.fhirStrings.mean
-import typings.fhir.fhirStrings.median
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,29 +10,46 @@ trait EvidenceVariableCharacteristic
   
   var _definitionCanonical: js.UndefOr[Element] = js.undefined
   
+  var _definitionId: js.UndefOr[Element] = js.undefined
+  
   var _description: js.UndefOr[Element] = js.undefined
   
   var _exclude: js.UndefOr[Element] = js.undefined
   
-  var _groupMeasure: js.UndefOr[Element] = js.undefined
+  var _linkId: js.UndefOr[Element] = js.undefined
   
   /**
-    * Define members of the evidence element using Codes (such as condition, medication, or observation), Expressions ( using an expression language such as FHIRPath or CQL) or DataRequirements (such as Diabetes diagnosis onset in the last year).
+    * Defines the characteristic as a combination of two or more characteristics.
+    */
+  var definitionByCombination: js.UndefOr[EvidenceVariableCharacteristicDefinitionByCombination] = js.undefined
+  
+  /**
+    * Defines the characteristic using both a type and value[x] elements.
+    */
+  var definitionByTypeAndValue: js.UndefOr[EvidenceVariableCharacteristicDefinitionByTypeAndValue] = js.undefined
+  
+  /**
+    * Defines the characteristic using Canonical.
     */
   var definitionCanonical: js.UndefOr[String] = js.undefined
   
   /**
-    * Define members of the evidence element using Codes (such as condition, medication, or observation), Expressions ( using an expression language such as FHIRPath or CQL) or DataRequirements (such as Diabetes diagnosis onset in the last year).
+    * Defines the characteristic using CodeableConcept.
     */
   var definitionCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * Define members of the evidence element using Codes (such as condition, medication, or observation), Expressions ( using an expression language such as FHIRPath or CQL) or DataRequirements (such as Diabetes diagnosis onset in the last year).
+    * When another element provides a definition of the characteristic, the definitionExpression content SHALL match the definition (only adding technical concepts necessary for implementation) without changing the meaning.
     */
   var definitionExpression: js.UndefOr[Expression] = js.undefined
   
   /**
-    * Define members of the evidence element using Codes (such as condition, medication, or observation), Expressions ( using an expression language such as FHIRPath or CQL) or DataRequirements (such as Diabetes diagnosis onset in the last year).
+    * Defines the characteristic using id.
+    */
+  var definitionId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Defines the characteristic using a Reference.
     */
   var definitionReference: js.UndefOr[Reference] = js.undefined
   
@@ -48,36 +59,44 @@ trait EvidenceVariableCharacteristic
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * Device used for determining characteristic.
+    * Length of time in which the characteristic is met.
     */
-  var device: js.UndefOr[Reference] = js.undefined
+  var durationQuantity: js.UndefOr[Quantity] = js.undefined
   
   /**
-    * When true, members with this characteristic are excluded from the element.
+    * Length of time in which the characteristic is met.
+    */
+  var durationRange: js.UndefOr[Range] = js.undefined
+  
+  /**
+    * When true, this characteristic is an exclusion criterion. In other words, not matching this characteristic definition is equivalent to meeting this criterion.
     */
   var exclude: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Value or set of values that define the grouping.
+    * Number of occurrences meeting the characteristic.
     */
-  var groupMeasure: js.UndefOr[
-    mean | median | `mean-of-mean` | `mean-of-median` | `median-of-mean` | `median-of-median`
-  ] = js.undefined
+  var instancesQuantity: js.UndefOr[Quantity] = js.undefined
   
   /**
-    * Method used for describing characteristic.
+    * Number of occurrences meeting the characteristic.
     */
-  var method: js.UndefOr[CodeableConcept] = js.undefined
+  var instancesRange: js.UndefOr[Range] = js.undefined
   
   /**
-    * Observation time from study specified event.
+    * Label used for when a characteristic refers to another characteristic.
+    */
+  var linkId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * A human-readable string to clarify or explain concepts about the characteristic.
+    */
+  var note: js.UndefOr[js.Array[Annotation]] = js.undefined
+  
+  /**
+    * Timing in which the characteristic is determined.
     */
   var timeFromEvent: js.UndefOr[js.Array[EvidenceVariableCharacteristicTimeFromEvent]] = js.undefined
-  
-  /**
-    * Used to expressing the type of characteristic.
-    */
-  var `type`: js.UndefOr[CodeableConcept] = js.undefined
 }
 object EvidenceVariableCharacteristic {
   
@@ -88,6 +107,14 @@ object EvidenceVariableCharacteristic {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: EvidenceVariableCharacteristic] (val x: Self) extends AnyVal {
+    
+    inline def setDefinitionByCombination(value: EvidenceVariableCharacteristicDefinitionByCombination): Self = StObject.set(x, "definitionByCombination", value.asInstanceOf[js.Any])
+    
+    inline def setDefinitionByCombinationUndefined: Self = StObject.set(x, "definitionByCombination", js.undefined)
+    
+    inline def setDefinitionByTypeAndValue(value: EvidenceVariableCharacteristicDefinitionByTypeAndValue): Self = StObject.set(x, "definitionByTypeAndValue", value.asInstanceOf[js.Any])
+    
+    inline def setDefinitionByTypeAndValueUndefined: Self = StObject.set(x, "definitionByTypeAndValue", js.undefined)
     
     inline def setDefinitionCanonical(value: String): Self = StObject.set(x, "definitionCanonical", value.asInstanceOf[js.Any])
     
@@ -101,6 +128,10 @@ object EvidenceVariableCharacteristic {
     
     inline def setDefinitionExpressionUndefined: Self = StObject.set(x, "definitionExpression", js.undefined)
     
+    inline def setDefinitionId(value: String): Self = StObject.set(x, "definitionId", value.asInstanceOf[js.Any])
+    
+    inline def setDefinitionIdUndefined: Self = StObject.set(x, "definitionId", js.undefined)
+    
     inline def setDefinitionReference(value: Reference): Self = StObject.set(x, "definitionReference", value.asInstanceOf[js.Any])
     
     inline def setDefinitionReferenceUndefined: Self = StObject.set(x, "definitionReference", js.undefined)
@@ -109,21 +140,35 @@ object EvidenceVariableCharacteristic {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setDevice(value: Reference): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDurationQuantity(value: Quantity): Self = StObject.set(x, "durationQuantity", value.asInstanceOf[js.Any])
     
-    inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
+    inline def setDurationQuantityUndefined: Self = StObject.set(x, "durationQuantity", js.undefined)
+    
+    inline def setDurationRange(value: Range): Self = StObject.set(x, "durationRange", value.asInstanceOf[js.Any])
+    
+    inline def setDurationRangeUndefined: Self = StObject.set(x, "durationRange", js.undefined)
     
     inline def setExclude(value: Boolean): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
     inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
-    inline def setGroupMeasure(value: mean | median | `mean-of-mean` | `mean-of-median` | `median-of-mean` | `median-of-median`): Self = StObject.set(x, "groupMeasure", value.asInstanceOf[js.Any])
+    inline def setInstancesQuantity(value: Quantity): Self = StObject.set(x, "instancesQuantity", value.asInstanceOf[js.Any])
     
-    inline def setGroupMeasureUndefined: Self = StObject.set(x, "groupMeasure", js.undefined)
+    inline def setInstancesQuantityUndefined: Self = StObject.set(x, "instancesQuantity", js.undefined)
     
-    inline def setMethod(value: CodeableConcept): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setInstancesRange(value: Range): Self = StObject.set(x, "instancesRange", value.asInstanceOf[js.Any])
     
-    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setInstancesRangeUndefined: Self = StObject.set(x, "instancesRange", js.undefined)
+    
+    inline def setLinkId(value: String): Self = StObject.set(x, "linkId", value.asInstanceOf[js.Any])
+    
+    inline def setLinkIdUndefined: Self = StObject.set(x, "linkId", js.undefined)
+    
+    inline def setNote(value: js.Array[Annotation]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+    
+    inline def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
+    
+    inline def setNoteVarargs(value: Annotation*): Self = StObject.set(x, "note", js.Array(value*))
     
     inline def setTimeFromEvent(value: js.Array[EvidenceVariableCharacteristicTimeFromEvent]): Self = StObject.set(x, "timeFromEvent", value.asInstanceOf[js.Any])
     
@@ -131,13 +176,13 @@ object EvidenceVariableCharacteristic {
     
     inline def setTimeFromEventVarargs(value: EvidenceVariableCharacteristicTimeFromEvent*): Self = StObject.set(x, "timeFromEvent", js.Array(value*))
     
-    inline def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    
-    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
-    
     inline def set_definitionCanonical(value: Element): Self = StObject.set(x, "_definitionCanonical", value.asInstanceOf[js.Any])
     
     inline def set_definitionCanonicalUndefined: Self = StObject.set(x, "_definitionCanonical", js.undefined)
+    
+    inline def set_definitionId(value: Element): Self = StObject.set(x, "_definitionId", value.asInstanceOf[js.Any])
+    
+    inline def set_definitionIdUndefined: Self = StObject.set(x, "_definitionId", js.undefined)
     
     inline def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
@@ -147,8 +192,8 @@ object EvidenceVariableCharacteristic {
     
     inline def set_excludeUndefined: Self = StObject.set(x, "_exclude", js.undefined)
     
-    inline def set_groupMeasure(value: Element): Self = StObject.set(x, "_groupMeasure", value.asInstanceOf[js.Any])
+    inline def set_linkId(value: Element): Self = StObject.set(x, "_linkId", value.asInstanceOf[js.Any])
     
-    inline def set_groupMeasureUndefined: Self = StObject.set(x, "_groupMeasure", js.undefined)
+    inline def set_linkIdUndefined: Self = StObject.set(x, "_linkId", js.undefined)
   }
 }

@@ -42,6 +42,9 @@ trait ITrace extends StObject {
   /** Trace http */
   var http: js.UndefOr[IHTTP | Null] = js.undefined
   
+  /** Trace isIncomplete */
+  var isIncomplete: js.UndefOr[Boolean | Null] = js.undefined
+  
   /** Trace persistedQueryHit */
   var persistedQueryHit: js.UndefOr[Boolean | Null] = js.undefined
   
@@ -138,6 +141,12 @@ object ITrace {
     inline def setHttpNull: Self = StObject.set(x, "http", null)
     
     inline def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
+    
+    inline def setIsIncomplete(value: Boolean): Self = StObject.set(x, "isIncomplete", value.asInstanceOf[js.Any])
+    
+    inline def setIsIncompleteNull: Self = StObject.set(x, "isIncomplete", null)
+    
+    inline def setIsIncompleteUndefined: Self = StObject.set(x, "isIncomplete", js.undefined)
     
     inline def setPersistedQueryHit(value: Boolean): Self = StObject.set(x, "persistedQueryHit", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,7 @@ trait BuildingFieldStatistics extends StObject {
   /**
     * Label of the field.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingSummaryStatistics.html#BuildingFieldStatistics)
+    * [Read more...](global.html)
     */
   var label: String
   

@@ -50,24 +50,6 @@ object anon {
     }
   }
   
-  trait Key extends StObject {
-    
-    var key: String
-  }
-  object Key {
-    
-    inline def apply(key: String): Key = {
-      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Key]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
-      
-      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait Name extends StObject {
     
     var name: String
@@ -83,6 +65,33 @@ object anon {
     implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined std.Partial<std.Record<keyof oojs.OO.RegistryEventMap, any>> */
+  trait PartialRecordkeyofRegistr extends StObject {
+    
+    var register: js.UndefOr[Any] = js.undefined
+    
+    var unregister: js.UndefOr[Any] = js.undefined
+  }
+  object PartialRecordkeyofRegistr {
+    
+    inline def apply(): PartialRecordkeyofRegistr = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialRecordkeyofRegistr]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecordkeyofRegistr] (val x: Self) extends AnyVal {
+      
+      inline def setRegister(value: Any): Self = StObject.set(x, "register", value.asInstanceOf[js.Any])
+      
+      inline def setRegisterUndefined: Self = StObject.set(x, "register", js.undefined)
+      
+      inline def setUnregister(value: Any): Self = StObject.set(x, "unregister", value.asInstanceOf[js.Any])
+      
+      inline def setUnregisterUndefined: Self = StObject.set(x, "unregister", js.undefined)
     }
   }
   

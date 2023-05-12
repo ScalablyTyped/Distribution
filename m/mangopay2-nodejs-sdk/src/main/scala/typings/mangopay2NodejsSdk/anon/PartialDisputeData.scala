@@ -13,6 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/typings/models/dispute.dispute.DisputeData> */
 trait PartialDisputeData extends StObject {
   
+  var ClosedDate: js.UndefOr[Timestamp] = js.undefined
+  
   var ContestDeadlineDate: js.UndefOr[Timestamp] = js.undefined
   
   var ContestedFunds: js.UndefOr[MoneyData] = js.undefined
@@ -52,6 +54,10 @@ object PartialDisputeData {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: PartialDisputeData] (val x: Self) extends AnyVal {
+    
+    inline def setClosedDate(value: Timestamp): Self = StObject.set(x, "ClosedDate", value.asInstanceOf[js.Any])
+    
+    inline def setClosedDateUndefined: Self = StObject.set(x, "ClosedDate", js.undefined)
     
     inline def setContestDeadlineDate(value: Timestamp): Self = StObject.set(x, "ContestDeadlineDate", value.asInstanceOf[js.Any])
     

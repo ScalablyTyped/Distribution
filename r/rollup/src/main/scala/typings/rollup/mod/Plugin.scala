@@ -163,6 +163,8 @@ trait Plugin extends StObject {
     ]
   ] = js.undefined
   
+  var version: js.UndefOr[String] = js.undefined
+  
   var watchChange: js.UndefOr[
     ObjectHook[
       /* import warning: importer.ImportType#apply Failed type conversion: 'watchChange' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<rollup.rollup.WatchChangeHook> : rollup.rollup.WatchChangeHook */ js.Any, 
@@ -392,6 +394,10 @@ object Plugin {
     ): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
     inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     inline def setWatchChange(
       value: ObjectHook[

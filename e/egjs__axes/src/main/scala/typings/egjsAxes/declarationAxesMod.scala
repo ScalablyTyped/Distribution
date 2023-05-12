@@ -1,6 +1,6 @@
 package typings.egjsAxes
 
-import typings.cfcsCore.declarationReactiveReactiveSubscribeMod.ReactiveSubscribe
+import typings.cfcsCore.declarationReactiveDecoratorsReactiveSubscribeMod.ReactiveSubscribe
 import typings.egjsAxes.declarationAnimationAnimationManagerMod.AnimationManager
 import typings.egjsAxes.declarationAxisManagerMod.Axis
 import typings.egjsAxes.declarationAxisManagerMod.AxisManager

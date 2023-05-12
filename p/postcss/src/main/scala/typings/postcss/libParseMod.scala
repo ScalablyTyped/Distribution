@@ -1,6 +1,7 @@
 package typings.postcss
 
 import org.scalablytyped.runtime.Shortcut
+import typings.postcss.libRootMod.default
 import typings.postcss.mod.Parser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,12 +9,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libParseMod extends Shortcut {
   
-  @JSImport("postcss/lib/parse", JSImport.Default)
+  @JSImport("postcss/lib/parse", JSImport.Namespace)
   @js.native
-  val default: Parser[typings.postcss.libRootMod.default | typings.postcss.libDocumentMod.default] = js.native
+  val ^ : Parse = js.native
   
-  type _To = Parser[typings.postcss.libRootMod.default | typings.postcss.libDocumentMod.default]
+  @js.native
+  trait Parse
+    extends Parser[default | typings.postcss.libDocumentMod.default] {
+    
+    var default: Parse = js.native
+  }
   
-  /* This means you don't have to write `default`, but can instead just say `libParseMod.foo` */
-  override def _to: Parser[typings.postcss.libRootMod.default | typings.postcss.libDocumentMod.default] = default
+  type _To = Parse
+  
+  /* This means you don't have to write `^`, but can instead just say `libParseMod.foo` */
+  override def _to: Parse = ^
 }

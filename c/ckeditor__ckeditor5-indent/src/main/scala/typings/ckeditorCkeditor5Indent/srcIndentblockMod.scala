@@ -9,15 +9,13 @@ object srcIndentblockMod {
   
   @JSImport("@ckeditor/ckeditor5-indent/src/indentblock", JSImport.Default)
   @js.native
-  open class default ()
+  open class default protected ()
     extends StObject
-       with IndentBlock
-  /* static members */
-  object default {
-    
-    @JSImport("@ckeditor/ckeditor5-indent/src/indentblock", "default.pluginName")
-    @js.native
-    val pluginName: typings.ckeditorCkeditor5Indent.ckeditorCkeditor5IndentStrings.IndentBlock = js.native
+       with IndentBlock {
+    /**
+      * @inheritDoc
+      */
+    def this(editor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Editor */ Any) = this()
   }
   
   @js.native
@@ -25,64 +23,24 @@ object srcIndentblockMod {
     extends StObject
        with Plugin {
     
+    /**
+      * Setups conversion for using classes.
+      */
+    /* private */ var _setupConversionUsingClasses: Any = js.native
+    
+    /**
+      * Setups conversion for using offset indents.
+      */
+    /* private */ var _setupConversionUsingOffset: Any = js.native
+    
+    /**
+      * @inheritDoc
+      */
     def afterInit(): Unit = js.native
     
+    /**
+      * @inheritDoc
+      */
     def init(): Unit = js.native
-  }
-  
-  trait IndentBlockConfig extends StObject {
-    
-    var classes: js.UndefOr[js.Array[String]] = js.undefined
-    
-    var offset: js.UndefOr[Double] = js.undefined
-    
-    var unit: js.UndefOr[String] = js.undefined
-  }
-  object IndentBlockConfig {
-    
-    inline def apply(): IndentBlockConfig = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[IndentBlockConfig]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: IndentBlockConfig] (val x: Self) extends AnyVal {
-      
-      inline def setClasses(value: js.Array[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
-      
-      inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
-      
-      inline def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value*))
-      
-      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
-      
-      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
-      
-      inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
-      
-      inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
-    }
-  }
-  
-  /* augmented module */
-  object ckeditorCkeditor5CoreSrcPlugincollectionAugmentingMod {
-    
-    trait Plugins extends StObject {
-      
-      var IndentBlock: typings.ckeditorCkeditor5Indent.srcIndentblockMod.IndentBlock
-    }
-    object Plugins {
-      
-      inline def apply(IndentBlock: IndentBlock): Plugins = {
-        val __obj = js.Dynamic.literal(IndentBlock = IndentBlock.asInstanceOf[js.Any])
-        __obj.asInstanceOf[Plugins]
-      }
-      
-      @scala.inline
-      implicit open class MutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
-        
-        inline def setIndentBlock(value: IndentBlock): Self = StObject.set(x, "IndentBlock", value.asInstanceOf[js.Any])
-      }
-    }
   }
 }

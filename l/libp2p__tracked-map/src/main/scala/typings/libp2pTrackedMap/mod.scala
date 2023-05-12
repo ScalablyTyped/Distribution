@@ -1,6 +1,6 @@
 package typings.libp2pTrackedMap
 
-import typings.libp2pInterfaceMetrics.mod.ComponentMetricsTracker
+import typings.libp2pInterfaceMetrics.mod.Metrics
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,71 +12,57 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def trackedMap[K, V](config: CreateTrackedMapOptions): Map[K, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("trackedMap")(config.asInstanceOf[js.Any]).asInstanceOf[Map[K, V]]
+  inline def trackedMap[K, V](config: CreateTrackedMapInit): Map[K, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("trackedMap")(config.asInstanceOf[js.Any]).asInstanceOf[Map[K, V]]
   
-  trait CreateTrackedMapOptions extends StObject {
+  trait CreateTrackedMapInit extends StObject {
     
-    var component: String
+    /**
+      * A metrics implementation
+      */
+    var metrics: js.UndefOr[Metrics] = js.undefined
     
-    var metric: String
-    
-    var metrics: js.UndefOr[ComponentMetricsTracker] = js.undefined
-    
-    var system: js.UndefOr[String] = js.undefined
+    /**
+      * The metric name to use
+      */
+    var name: String
   }
-  object CreateTrackedMapOptions {
+  object CreateTrackedMapInit {
     
-    inline def apply(component: String, metric: String): CreateTrackedMapOptions = {
-      val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], metric = metric.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CreateTrackedMapOptions]
+    inline def apply(name: String): CreateTrackedMapInit = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CreateTrackedMapInit]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: CreateTrackedMapOptions] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: CreateTrackedMapInit] (val x: Self) extends AnyVal {
       
-      inline def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
-      
-      inline def setMetric(value: String): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
-      
-      inline def setMetrics(value: ComponentMetricsTracker): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+      inline def setMetrics(value: Metrics): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
       
       inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
       
-      inline def setSystem(value: String): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
-      
-      inline def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
   trait TrackedMapInit extends StObject {
     
-    var component: String
+    var metrics: Metrics
     
-    var metric: String
-    
-    var metrics: ComponentMetricsTracker
-    
-    var system: js.UndefOr[String] = js.undefined
+    var name: String
   }
   object TrackedMapInit {
     
-    inline def apply(component: String, metric: String, metrics: ComponentMetricsTracker): TrackedMapInit = {
-      val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], metric = metric.asInstanceOf[js.Any], metrics = metrics.asInstanceOf[js.Any])
+    inline def apply(metrics: Metrics, name: String): TrackedMapInit = {
+      val __obj = js.Dynamic.literal(metrics = metrics.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[TrackedMapInit]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: TrackedMapInit] (val x: Self) extends AnyVal {
       
-      inline def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setMetrics(value: Metrics): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
       
-      inline def setMetric(value: String): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
-      
-      inline def setMetrics(value: ComponentMetricsTracker): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
-      
-      inline def setSystem(value: String): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
-      
-      inline def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

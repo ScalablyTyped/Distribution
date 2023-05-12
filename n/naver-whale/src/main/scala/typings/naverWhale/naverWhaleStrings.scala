@@ -296,6 +296,18 @@ object naverWhaleStrings {
   inline def downloads: downloads = "downloads".asInstanceOf[downloads]
   
   @js.native
+  sealed trait downloadsDotshelf
+    extends StObject
+       with ManifestPermissions
+  inline def downloadsDotshelf: downloadsDotshelf = "downloads.shelf".asInstanceOf[downloadsDotshelf]
+  
+  @js.native
+  sealed trait downloadsDotui
+    extends StObject
+       with ManifestPermissions
+  inline def downloadsDotui: downloadsDotui = "downloads.ui".asInstanceOf[downloadsDotui]
+  
+  @js.native
   sealed trait editable
     extends StObject
        with ContextType
@@ -342,6 +354,12 @@ object naverWhaleStrings {
   @js.native
   sealed trait fantasy extends StObject
   inline def fantasy: fantasy = "fantasy".asInstanceOf[fantasy]
+  
+  @js.native
+  sealed trait favicon
+    extends StObject
+       with ManifestPermissions
+  inline def favicon: favicon = "favicon".asInstanceOf[favicon]
   
   @js.native
   sealed trait fenced_frame extends StObject
@@ -621,6 +639,12 @@ object naverWhaleStrings {
     extends StObject
        with ResourceType
   inline def `object`: `object` = "object".asInstanceOf[`object`]
+  
+  @js.native
+  sealed trait offscreen
+    extends StObject
+       with ManifestPermissions
+  inline def offscreen: offscreen = "offscreen".asInstanceOf[offscreen]
   
   @js.native
   sealed trait openbsd

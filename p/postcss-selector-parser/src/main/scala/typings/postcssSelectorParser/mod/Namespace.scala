@@ -1,12 +1,11 @@
 package typings.postcssSelectorParser.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.postcssSelectorParser.postcssSelectorParserBooleans.`true`
-import typings.postcssSelectorParser.postcssSelectorParserStrings.`class`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait Namespace[Value /* <: js.UndefOr[String] */]
   extends StObject
      with Base[Value, js.UndefOr[Container[String, Node]]] {
@@ -14,59 +13,18 @@ trait Namespace[Value /* <: js.UndefOr[String] */]
   /**
     *  namespace prefix.
     */
-  var namespace: String | `true`
+  var namespace: String | `true` = js.native
   
   /**
     * A string representing the namespace suitable for output.
     */
-  val namespaceString: String
+  val namespaceString: String = js.native
   
   /** alias for namespace */
-  var ns: String | `true`
+  var ns: String | `true` = js.native
   
   /**
     * If a namespace exists, prefix the value provided with it, separated by |.
     */
-  def qualifiedName(value: String): String
-}
-object Namespace {
-  
-  inline def apply[Value /* <: js.UndefOr[String] */](
-    appendToPropertyAndEscape: (String, Any, String) => Unit,
-    clone_ : StringDictionary[Any] => Node,
-    isAtPosition: (Double, Double) => js.UndefOr[Boolean],
-    namespace: String | `true`,
-    namespaceString: String,
-    next: () => Node,
-    ns: String | `true`,
-    prev: () => Node,
-    qualifiedName: String => String,
-    rawSpaceAfter: String,
-    rawSpaceBefore: String,
-    remove: () => Node,
-    replaceWith: /* repeated */ Node => Node,
-    setPropertyAndEscape: (String, Any, String) => Unit,
-    setPropertyWithoutEscape: (String, Any) => Unit,
-    sourceIndex: Double,
-    spaces: Spaces,
-    `type`: typings.postcssSelectorParser.postcssSelectorParserStrings.tag | typings.postcssSelectorParser.postcssSelectorParserStrings.string | typings.postcssSelectorParser.postcssSelectorParserStrings.selector | typings.postcssSelectorParser.postcssSelectorParserStrings.root | typings.postcssSelectorParser.postcssSelectorParserStrings.pseudo | typings.postcssSelectorParser.postcssSelectorParserStrings.nesting | typings.postcssSelectorParser.postcssSelectorParserStrings.id | typings.postcssSelectorParser.postcssSelectorParserStrings.comment | typings.postcssSelectorParser.postcssSelectorParserStrings.combinator | `class` | typings.postcssSelectorParser.postcssSelectorParserStrings.attribute | typings.postcssSelectorParser.postcssSelectorParserStrings.universal,
-    value: Value
-  ): Namespace[Value] = {
-    val __obj = js.Dynamic.literal(appendToPropertyAndEscape = js.Any.fromFunction3(appendToPropertyAndEscape), isAtPosition = js.Any.fromFunction2(isAtPosition), namespace = namespace.asInstanceOf[js.Any], namespaceString = namespaceString.asInstanceOf[js.Any], next = js.Any.fromFunction0(next), ns = ns.asInstanceOf[js.Any], prev = js.Any.fromFunction0(prev), qualifiedName = js.Any.fromFunction1(qualifiedName), rawSpaceAfter = rawSpaceAfter.asInstanceOf[js.Any], rawSpaceBefore = rawSpaceBefore.asInstanceOf[js.Any], remove = js.Any.fromFunction0(remove), replaceWith = js.Any.fromFunction1(replaceWith), setPropertyAndEscape = js.Any.fromFunction3(setPropertyAndEscape), setPropertyWithoutEscape = js.Any.fromFunction2(setPropertyWithoutEscape), sourceIndex = sourceIndex.asInstanceOf[js.Any], spaces = spaces.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("clone")(js.Any.fromFunction1(clone_))
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Namespace[Value]]
-  }
-  
-  @scala.inline
-  implicit open class MutableBuilder[Self <: Namespace[?], Value /* <: js.UndefOr[String] */] (val x: Self & Namespace[Value]) extends AnyVal {
-    
-    inline def setNamespace(value: String | `true`): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
-    
-    inline def setNamespaceString(value: String): Self = StObject.set(x, "namespaceString", value.asInstanceOf[js.Any])
-    
-    inline def setNs(value: String | `true`): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
-    
-    inline def setQualifiedName(value: String => String): Self = StObject.set(x, "qualifiedName", js.Any.fromFunction1(value))
-  }
+  def qualifiedName(value: String): String = js.native
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for commitlint__execute-rule
 
-Typings are for version 17.0.0
+Typings are for version 17.4.0
 
 ## Library description:
 Lint your commit messages

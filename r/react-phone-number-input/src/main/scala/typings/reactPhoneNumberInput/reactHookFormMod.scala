@@ -1,11 +1,9 @@
 package typings.reactPhoneNumberInput
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.Component
-import typings.react.mod.ComponentClass
+import typings.react.mod.global.JSX.Element
 import typings.reactPhoneNumberInput.mod.DefaultInputComponentProps
 import typings.reactPhoneNumberInput.mod.FeatureProps
-import typings.reactPhoneNumberInput.mod.State
 import typings.reactPhoneNumberInput.mod.Value
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -14,17 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object reactHookFormMod extends Shortcut {
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-  @JSImport("react-phone-number-input/react-hook-form", JSImport.Default)
-  @js.native
-  open class default protected () extends Component[
-          Props[DefaultInputComponentProps, DefaultFormValues], 
-          State[Props[DefaultInputComponentProps, DefaultFormValues]], 
-          Any
-        ] {
-    def this(props: Props[DefaultInputComponentProps, DefaultFormValues]) = this()
-    def this(props: Props[DefaultInputComponentProps, DefaultFormValues], context: Any) = this()
-  }
   // Could also export the component that would accept custom "generics", if the component was a function,
   // but seems like it would also introduce some inconvenience when using `typeof PhoneInputWithCountrySelect`
   // for defining the type of the `props`.
@@ -32,20 +19,21 @@ object reactHookFormMod extends Shortcut {
   // type PhoneInputWithCountrySelectType = <InputComponentProps = DefaultInputComponentProps, FormValues = DefaultFormValues>(props: Props<InputComponentProps, FormValues>) => JSX.Element;
   @JSImport("react-phone-number-input/react-hook-form", JSImport.Default)
   @js.native
-  val default: PhoneInputWithCountrySelectType[DefaultInputComponentProps, DefaultFormValues] = js.native
+  val default: PhoneInputWithCountrySelectType = js.native
   
   type DefaultFormValues = Record[String, Any]
   
-  type PhoneInputWithCountrySelectType[InputComponentProps, FormValues] = ComponentClass[
-    Props[InputComponentProps, FormValues], 
-    State[Props[InputComponentProps, FormValues]]
-  ]
+  type PhoneInputWithCountrySelectType = js.Function1[/* props */ Props[DefaultInputComponentProps, DefaultFormValues], Element]
   
   type Props[InputComponentProps, FormValues] = FeatureProps[InputComponentProps] & ReactHookFormComponentProps[FormValues]
   
   trait ReactHookFormComponentProps[FormValues] extends StObject {
     
-    var control: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Control<FormValues> */ Any
+    // A developer should pass a `control` object that is returned from `useForm()` hook.
+    // Not required when using `<FormProvider/>`.
+    var control: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Control<FormValues> */ Any
+      ] = js.undefined
     
     var defaultValue: js.UndefOr[Value] = js.undefined
     
@@ -60,11 +48,8 @@ object reactHookFormMod extends Shortcut {
   }
   object ReactHookFormComponentProps {
     
-    inline def apply[FormValues](
-      control: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Control<FormValues> */ Any,
-      name: String
-    ): ReactHookFormComponentProps[FormValues] = {
-      val __obj = js.Dynamic.literal(control = control.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    inline def apply[FormValues](name: String): ReactHookFormComponentProps[FormValues] = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactHookFormComponentProps[FormValues]]
     }
     
@@ -74,6 +59,8 @@ object reactHookFormMod extends Shortcut {
       inline def setControl(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Control<FormValues> */ Any
       ): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+      
+      inline def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
       
       inline def setDefaultValue(value: Value): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -91,8 +78,8 @@ object reactHookFormMod extends Shortcut {
     }
   }
   
-  type _To = PhoneInputWithCountrySelectType[DefaultInputComponentProps, DefaultFormValues]
+  type _To = PhoneInputWithCountrySelectType
   
   /* This means you don't have to write `default`, but can instead just say `reactHookFormMod.foo` */
-  override def _to: PhoneInputWithCountrySelectType[DefaultInputComponentProps, DefaultFormValues] = default
+  override def _to: PhoneInputWithCountrySelectType = default
 }

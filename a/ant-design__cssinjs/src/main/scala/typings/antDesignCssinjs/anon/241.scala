@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ScrollPaddingLeft
+import typings.csstype.mod.Property.AnimationDelay
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `241` extends StObject {
   
   var value: js.UndefOr[
-    (ScrollPaddingLeft[Double | String]) | (js.Array[
+    AnimationDelay[String] | (js.Array[
       (Extract[
         js.UndefOr[
-          (ScrollPaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[ScrollPaddingLeft[Double | String]]]])
+          AnimationDelay[String] | js.Array[NonNullable[js.UndefOr[AnimationDelay[String]]]]
         ], 
         String
-      ]) | (NonNullable[js.UndefOr[ScrollPaddingLeft[Double | String]]])
+      ]) | NonNullable[js.UndefOr[AnimationDelay[String]]]
     ])
   ] = js.native
 }

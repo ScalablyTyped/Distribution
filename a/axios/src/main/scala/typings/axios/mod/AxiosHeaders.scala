@@ -1,6 +1,8 @@
 package typings.axios.mod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.axios.axiosBooleans.`true`
+import typings.std.IterableIterator
 import typings.std.RegExpExecArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,17 +10,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("axios", "AxiosHeaders")
 @js.native
-open class AxiosHeaders () extends StObject {
+open class AxiosHeaders ()
+  extends StObject
+     with /* key */ StringDictionary[Any] {
   def this(headers: AxiosHeaders) = this()
   def this(headers: RawAxiosHeaders) = this()
-  def this(headers: Unit, defaultHeaders: AxiosHeaders) = this()
-  def this(headers: Unit, defaultHeaders: RawAxiosHeaders) = this()
-  def this(headers: AxiosHeaders, defaultHeaders: AxiosHeaders) = this()
-  def this(headers: AxiosHeaders, defaultHeaders: RawAxiosHeaders) = this()
-  def this(headers: RawAxiosHeaders, defaultHeaders: AxiosHeaders) = this()
-  def this(headers: RawAxiosHeaders, defaultHeaders: RawAxiosHeaders) = this()
   
   def clear(): Boolean = js.native
+  def clear(matcher: AxiosHeaderMatcher): Boolean = js.native
+  
+  def concat(targets: (js.UndefOr[AxiosHeaders | RawAxiosHeaders | String | Null])*): AxiosHeaders = js.native
   
   def delete(header: String): Boolean = js.native
   def delete(header: String, matcher: AxiosHeaderMatcher): Boolean = js.native
@@ -29,15 +30,41 @@ open class AxiosHeaders () extends StObject {
   def get(headerName: String, matcher: AxiosHeaderMatcher): AxiosHeaderValue = js.native
   def get(headerName: String, parser: js.RegExp): RegExpExecArray | Null = js.native
   
-  var getAccept: AxiosHeaderGetter = js.native
+  def getAccept(): RegExpExecArray | Null = js.native
+  def getAccept(matcher: AxiosHeaderMatcher): AxiosHeaderValue = js.native
+  def getAccept(parser: js.RegExp): RegExpExecArray | Null = js.native
+  @JSName("getAccept")
+  def getAccept_AxiosHeaderValue(): AxiosHeaderValue = js.native
   
-  var getContentEncoding: AxiosHeaderGetter = js.native
+  def getAuthorization(): RegExpExecArray | Null = js.native
+  def getAuthorization(matcher: AxiosHeaderMatcher): AxiosHeaderValue = js.native
+  def getAuthorization(parser: js.RegExp): RegExpExecArray | Null = js.native
+  @JSName("getAuthorization")
+  def getAuthorization_AxiosHeaderValue(): AxiosHeaderValue = js.native
   
-  var getContentLength: AxiosHeaderGetter = js.native
+  def getContentEncoding(): RegExpExecArray | Null = js.native
+  def getContentEncoding(matcher: AxiosHeaderMatcher): AxiosHeaderValue = js.native
+  def getContentEncoding(parser: js.RegExp): RegExpExecArray | Null = js.native
+  @JSName("getContentEncoding")
+  def getContentEncoding_AxiosHeaderValue(): AxiosHeaderValue = js.native
   
-  var getContentType: AxiosHeaderGetter = js.native
+  def getContentLength(): RegExpExecArray | Null = js.native
+  def getContentLength(matcher: AxiosHeaderMatcher): AxiosHeaderValue = js.native
+  def getContentLength(parser: js.RegExp): RegExpExecArray | Null = js.native
+  @JSName("getContentLength")
+  def getContentLength_AxiosHeaderValue(): AxiosHeaderValue = js.native
   
-  var getUserAgent: AxiosHeaderGetter = js.native
+  def getContentType(): RegExpExecArray | Null = js.native
+  def getContentType(matcher: AxiosHeaderMatcher): AxiosHeaderValue = js.native
+  def getContentType(parser: js.RegExp): RegExpExecArray | Null = js.native
+  @JSName("getContentType")
+  def getContentType_AxiosHeaderValue(): AxiosHeaderValue = js.native
+  
+  def getUserAgent(): RegExpExecArray | Null = js.native
+  def getUserAgent(matcher: AxiosHeaderMatcher): AxiosHeaderValue = js.native
+  def getUserAgent(parser: js.RegExp): RegExpExecArray | Null = js.native
+  @JSName("getUserAgent")
+  def getUserAgent_AxiosHeaderValue(): AxiosHeaderValue = js.native
   
   @JSName("get")
   def get_true(headerName: String, matcher: `true`): AxiosHeaderValue = js.native
@@ -47,31 +74,27 @@ open class AxiosHeaders () extends StObject {
   
   def hasAccept(): Boolean = js.native
   def hasAccept(matcher: AxiosHeaderMatcher): Boolean = js.native
-  @JSName("hasAccept")
-  var hasAccept_Original: AxiosHeaderTester = js.native
+  
+  def hasAuthorization(): Boolean = js.native
+  def hasAuthorization(matcher: AxiosHeaderMatcher): Boolean = js.native
   
   def hasContentEncoding(): Boolean = js.native
   def hasContentEncoding(matcher: AxiosHeaderMatcher): Boolean = js.native
-  @JSName("hasContentEncoding")
-  var hasContentEncoding_Original: AxiosHeaderTester = js.native
   
   def hasContentLength(): Boolean = js.native
   def hasContentLength(matcher: AxiosHeaderMatcher): Boolean = js.native
-  @JSName("hasContentLength")
-  var hasContentLength_Original: AxiosHeaderTester = js.native
   
   def hasContentType(): Boolean = js.native
   def hasContentType(matcher: AxiosHeaderMatcher): Boolean = js.native
-  @JSName("hasContentType")
-  var hasContentType_Original: AxiosHeaderTester = js.native
   
   def hasUserAgent(): Boolean = js.native
   def hasUserAgent(matcher: AxiosHeaderMatcher): Boolean = js.native
-  @JSName("hasUserAgent")
-  var hasUserAgent_Original: AxiosHeaderTester = js.native
   
   @JSName("has")
   def has_true(header: String, matcher: `true`): Boolean = js.native
+  
+  @JSName(js.Symbol.iterator)
+  var iterator: js.Function0[IterableIterator[js.Tuple2[String, AxiosHeaderValue]]] = js.native
   
   def normalize(format: Boolean): AxiosHeaders = js.native
   
@@ -96,32 +119,26 @@ open class AxiosHeaders () extends StObject {
   def setAccept(value: AxiosHeaderValue): AxiosHeaders = js.native
   def setAccept(value: AxiosHeaderValue, rewrite: Boolean): AxiosHeaders = js.native
   def setAccept(value: AxiosHeaderValue, rewrite: AxiosHeaderMatcher): AxiosHeaders = js.native
-  @JSName("setAccept")
-  var setAccept_Original: AxiosHeaderSetter = js.native
+  
+  def setAuthorization(value: AxiosHeaderValue): AxiosHeaders = js.native
+  def setAuthorization(value: AxiosHeaderValue, rewrite: Boolean): AxiosHeaders = js.native
+  def setAuthorization(value: AxiosHeaderValue, rewrite: AxiosHeaderMatcher): AxiosHeaders = js.native
   
   def setContentEncoding(value: AxiosHeaderValue): AxiosHeaders = js.native
   def setContentEncoding(value: AxiosHeaderValue, rewrite: Boolean): AxiosHeaders = js.native
   def setContentEncoding(value: AxiosHeaderValue, rewrite: AxiosHeaderMatcher): AxiosHeaders = js.native
-  @JSName("setContentEncoding")
-  var setContentEncoding_Original: AxiosHeaderSetter = js.native
   
   def setContentLength(value: AxiosHeaderValue): AxiosHeaders = js.native
   def setContentLength(value: AxiosHeaderValue, rewrite: Boolean): AxiosHeaders = js.native
   def setContentLength(value: AxiosHeaderValue, rewrite: AxiosHeaderMatcher): AxiosHeaders = js.native
-  @JSName("setContentLength")
-  var setContentLength_Original: AxiosHeaderSetter = js.native
   
-  def setContentType(value: AxiosHeaderValue): AxiosHeaders = js.native
-  def setContentType(value: AxiosHeaderValue, rewrite: Boolean): AxiosHeaders = js.native
-  def setContentType(value: AxiosHeaderValue, rewrite: AxiosHeaderMatcher): AxiosHeaders = js.native
-  @JSName("setContentType")
-  var setContentType_Original: AxiosHeaderSetter = js.native
+  def setContentType(value: ContentType): AxiosHeaders = js.native
+  def setContentType(value: ContentType, rewrite: Boolean): AxiosHeaders = js.native
+  def setContentType(value: ContentType, rewrite: AxiosHeaderMatcher): AxiosHeaders = js.native
   
   def setUserAgent(value: AxiosHeaderValue): AxiosHeaders = js.native
   def setUserAgent(value: AxiosHeaderValue, rewrite: Boolean): AxiosHeaders = js.native
   def setUserAgent(value: AxiosHeaderValue, rewrite: AxiosHeaderMatcher): AxiosHeaders = js.native
-  @JSName("setUserAgent")
-  var setUserAgent_Original: AxiosHeaderSetter = js.native
   
   def toJSON(): RawAxiosHeaders = js.native
   def toJSON(asStrings: Boolean): RawAxiosHeaders = js.native
@@ -135,6 +152,8 @@ object AxiosHeaders {
   
   inline def accessor(header: String): AxiosHeaders = ^.asInstanceOf[js.Dynamic].applyDynamic("accessor")(header.asInstanceOf[js.Any]).asInstanceOf[AxiosHeaders]
   inline def accessor(header: js.Array[String]): AxiosHeaders = ^.asInstanceOf[js.Dynamic].applyDynamic("accessor")(header.asInstanceOf[js.Any]).asInstanceOf[AxiosHeaders]
+  
+  inline def concat(targets: (js.UndefOr[AxiosHeaders | RawAxiosHeaders | String | Null])*): AxiosHeaders = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(targets.asInstanceOf[Seq[js.Any]]*).asInstanceOf[AxiosHeaders]
   
   inline def from(): AxiosHeaders = ^.asInstanceOf[js.Dynamic].applyDynamic("from")().asInstanceOf[AxiosHeaders]
   inline def from(thing: String): AxiosHeaders = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(thing.asInstanceOf[js.Any]).asInstanceOf[AxiosHeaders]

@@ -45,15 +45,11 @@ trait Typeofdisplay extends StObject {
   
   def overscanCalibrationStart(id: String): Unit = js.native
   
-  def setDisplayLayout(layouts: js.Array[DisplayLayout]): Unit = js.native
+  def setDisplayLayout(layouts: js.Array[DisplayLayout]): js.Promise[Unit] = js.native
   def setDisplayLayout(layouts: js.Array[DisplayLayout], callback: js.Function0[Unit]): Unit = js.native
-  @JSName("setDisplayLayout")
-  def setDisplayLayout_Promise(layouts: js.Array[DisplayLayout]): js.Promise[Unit] = js.native
   
-  def setDisplayProperties(id: String, info: DisplayPropertiesInfo): Unit = js.native
+  def setDisplayProperties(id: String, info: DisplayPropertiesInfo): js.Promise[Unit] = js.native
   def setDisplayProperties(id: String, info: DisplayPropertiesInfo, callback: js.Function0[Unit]): Unit = js.native
-  @JSName("setDisplayProperties")
-  def setDisplayProperties_Promise(id: String, info: DisplayPropertiesInfo): js.Promise[Unit] = js.native
   
   def setMirrorMode(info: MirrorModeInfo): js.Promise[Unit] = js.native
   def setMirrorMode(info: MirrorModeInfoMixed): js.Promise[Unit] = js.native

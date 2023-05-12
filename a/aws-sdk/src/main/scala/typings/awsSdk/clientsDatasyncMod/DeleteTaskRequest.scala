@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteTaskRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the task to delete.
+    * Specifies the Amazon Resource Name (ARN) of the task that you want to delete.
     */
   var TaskArn: typings.awsSdk.clientsDatasyncMod.TaskArn
 }

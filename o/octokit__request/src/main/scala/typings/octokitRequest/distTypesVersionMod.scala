@@ -8,5 +8,5 @@ object distTypesVersionMod {
   
   @JSImport("@octokit/request/dist-types/version", "VERSION")
   @js.native
-  val VERSION: /* "6.2.2" */ String = js.native
+  val VERSION: /* "6.2.3" */ String = js.native
 }

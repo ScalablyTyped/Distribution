@@ -11,6 +11,16 @@ trait TcpSocketConnectOpts
      with ConnectOpts
      with SocketConnectOpts {
   
+  /**
+    * @since v18.13.0
+    */
+  var autoSelectFamily: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * @since v18.13.0
+    */
+  var autoSelectFamilyAttemptTimeout: js.UndefOr[Double] = js.undefined
+  
   var family: js.UndefOr[Double] = js.undefined
   
   var hints: js.UndefOr[Double] = js.undefined
@@ -40,6 +50,14 @@ object TcpSocketConnectOpts {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: TcpSocketConnectOpts] (val x: Self) extends AnyVal {
+    
+    inline def setAutoSelectFamily(value: Boolean): Self = StObject.set(x, "autoSelectFamily", value.asInstanceOf[js.Any])
+    
+    inline def setAutoSelectFamilyAttemptTimeout(value: Double): Self = StObject.set(x, "autoSelectFamilyAttemptTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setAutoSelectFamilyAttemptTimeoutUndefined: Self = StObject.set(x, "autoSelectFamilyAttemptTimeout", js.undefined)
+    
+    inline def setAutoSelectFamilyUndefined: Self = StObject.set(x, "autoSelectFamily", js.undefined)
     
     inline def setFamily(value: Double): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     

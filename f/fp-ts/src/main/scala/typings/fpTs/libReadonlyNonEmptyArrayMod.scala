@@ -10,7 +10,7 @@ import typings.fpTs.libEndomorphismMod.Endomorphism
 import typings.fpTs.libEqMod.Eq
 import typings.fpTs.libFoldableMod.Foldable1
 import typings.fpTs.libFoldableWithIndexMod.FoldableWithIndex1
-import typings.fpTs.libFunctionMod.Lazy
+import typings.fpTs.libFunctionMod.LazyArg
 import typings.fpTs.libFunctorMod.Functor1
 import typings.fpTs.libFunctorWithIndexMod.FunctorWithIndex1
 import typings.fpTs.libMonadMod.Monad1
@@ -100,9 +100,9 @@ object libReadonlyNonEmptyArrayMod {
   val URI: /* "ReadonlyNonEmptyArray" */ String = js.native
   type URI = /* "ReadonlyNonEmptyArray" */ String
   
-  inline def alt[A](that: Lazy[ReadonlyNonEmptyArray_[A]]): js.Function1[/* as */ ReadonlyNonEmptyArray_[A], ReadonlyNonEmptyArray_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ ReadonlyNonEmptyArray_[A], ReadonlyNonEmptyArray_[A]]]
+  inline def alt[A](that: LazyArg[ReadonlyNonEmptyArray_[A]]): js.Function1[/* as */ ReadonlyNonEmptyArray_[A], ReadonlyNonEmptyArray_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ ReadonlyNonEmptyArray_[A], ReadonlyNonEmptyArray_[A]]]
   
-  inline def altW[B](that: Lazy[ReadonlyNonEmptyArray_[B]]): js.Function1[/* as */ ReadonlyNonEmptyArray_[Any], ReadonlyNonEmptyArray_[B | Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("altW")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ ReadonlyNonEmptyArray_[Any], ReadonlyNonEmptyArray_[B | Any]]]
+  inline def altW[B](that: LazyArg[ReadonlyNonEmptyArray_[B]]): js.Function1[/* as */ ReadonlyNonEmptyArray_[Any], ReadonlyNonEmptyArray_[B | Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("altW")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ ReadonlyNonEmptyArray_[Any], ReadonlyNonEmptyArray_[B | Any]]]
   
   inline def ap[A](as: ReadonlyNonEmptyArray_[A]): js.Function1[
     /* fab */ ReadonlyNonEmptyArray_[js.Function1[/* a */ A, Any]], 
@@ -205,6 +205,12 @@ object libReadonlyNonEmptyArrayMod {
     /* fab */ ReadonlyNonEmptyArray_[js.Function1[/* a */ A, Any]], 
     ReadonlyNonEmptyArray_[Any]
   ]]
+  
+  inline def flatMap[A, B](f: js.Function2[/* a */ A, /* i */ Double, ReadonlyNonEmptyArray_[B]]): js.Function1[/* ma */ ReadonlyNonEmptyArray_[A], ReadonlyNonEmptyArray_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReadonlyNonEmptyArray_[A], ReadonlyNonEmptyArray_[B]]]
+  inline def flatMap[A, B](
+    ma: ReadonlyNonEmptyArray_[A],
+    f: js.Function2[/* a */ A, /* i */ Double, ReadonlyNonEmptyArray_[B]]
+  ): ReadonlyNonEmptyArray_[B] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(ma.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[ReadonlyNonEmptyArray_[B]]
   
   inline def flatten[A](mma: ReadonlyNonEmptyArray_[ReadonlyNonEmptyArray_[A]]): ReadonlyNonEmptyArray_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(mma.asInstanceOf[js.Any]).asInstanceOf[ReadonlyNonEmptyArray_[A]]
   

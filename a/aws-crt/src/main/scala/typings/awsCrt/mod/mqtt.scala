@@ -299,7 +299,7 @@ object mqtt {
     inline def CONNECT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECT")(x.asInstanceOf[js.Any])
     
     /**
-      * Emitted when connection has disconnected sucessfully.
+      * Emitted when connection has disconnected successfully.
       *
       * @event
       */

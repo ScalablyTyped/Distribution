@@ -15,6 +15,8 @@ trait HtmlRendererOptions extends StObject {
   var langId: js.UndefOr[String] = js.undefined
   
   var lineOptions: js.UndefOr[js.Array[LineOption]] = js.undefined
+  
+  var themeName: js.UndefOr[String] = js.undefined
 }
 object HtmlRendererOptions {
   
@@ -47,5 +49,9 @@ object HtmlRendererOptions {
     inline def setLineOptionsUndefined: Self = StObject.set(x, "lineOptions", js.undefined)
     
     inline def setLineOptionsVarargs(value: LineOption*): Self = StObject.set(x, "lineOptions", js.Array(value*))
+    
+    inline def setThemeName(value: String): Self = StObject.set(x, "themeName", value.asInstanceOf[js.Any])
+    
+    inline def setThemeNameUndefined: Self = StObject.set(x, "themeName", js.undefined)
   }
 }

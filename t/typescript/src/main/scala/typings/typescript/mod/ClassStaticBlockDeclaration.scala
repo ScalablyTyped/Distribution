@@ -9,6 +9,7 @@ trait ClassStaticBlockDeclaration
   extends StObject
      with ClassElement
      with JSDocContainer
+     with LocalsContainer
      with HasJSDoc {
   
   val body: Block = js.native

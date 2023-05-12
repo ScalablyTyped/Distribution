@@ -42,6 +42,13 @@ trait Invitation
     */
   var invitedUserType: js.UndefOr[NullableOption[String]] = js.undefined
   
+  /**
+    * Reset the user's redemption status and reinvite a user while retaining their user identifier, group memberships, and
+    * app assignments. This property allows you to enable a user to sign-in using a different email address from the one in
+    * the previous invitation. For more information about using this property, see Reset redemption status for a guest user.
+    */
+  var resetRedemption: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
   // Indicates whether an email should be sent to the user being invited. The default is false.
   var sendInvitationMessage: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
@@ -95,6 +102,12 @@ object Invitation {
     inline def setInvitedUserTypeUndefined: Self = StObject.set(x, "invitedUserType", js.undefined)
     
     inline def setInvitedUserUndefined: Self = StObject.set(x, "invitedUser", js.undefined)
+    
+    inline def setResetRedemption(value: NullableOption[Boolean]): Self = StObject.set(x, "resetRedemption", value.asInstanceOf[js.Any])
+    
+    inline def setResetRedemptionNull: Self = StObject.set(x, "resetRedemption", null)
+    
+    inline def setResetRedemptionUndefined: Self = StObject.set(x, "resetRedemption", js.undefined)
     
     inline def setSendInvitationMessage(value: NullableOption[Boolean]): Self = StObject.set(x, "sendInvitationMessage", value.asInstanceOf[js.Any])
     

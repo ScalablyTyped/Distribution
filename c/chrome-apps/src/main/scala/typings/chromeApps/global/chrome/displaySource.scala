@@ -28,7 +28,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object displaySource {
   
   /**
-    * @enum
     * @description
     *
     * **'PBC'**
@@ -55,7 +54,6 @@ object displaySource {
   }
   
   /**
-    * @enum
     * @description
     * **'connection_error'**
     * The connection with sink cannot be established or has dropped unexpectedly.
@@ -108,7 +106,6 @@ object displaySource {
   }
   
   /**
-    * @enum
     * @description
     * **'connected'**
     * Connected using this Display Source (i.e., there is an active session)

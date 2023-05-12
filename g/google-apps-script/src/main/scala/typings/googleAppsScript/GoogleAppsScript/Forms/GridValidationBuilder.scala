@@ -23,11 +23,17 @@ trait GridValidationBuilder extends StObject {
   def build(): GridValidation
   
   def requireLimitOneResponsePerColumn(): GridValidationBuilder
+  
+  def setHelpText(text: String): GridValidationBuilder
 }
 object GridValidationBuilder {
   
-  inline def apply(build: () => GridValidation, requireLimitOneResponsePerColumn: () => GridValidationBuilder): GridValidationBuilder = {
-    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), requireLimitOneResponsePerColumn = js.Any.fromFunction0(requireLimitOneResponsePerColumn))
+  inline def apply(
+    build: () => GridValidation,
+    requireLimitOneResponsePerColumn: () => GridValidationBuilder,
+    setHelpText: String => GridValidationBuilder
+  ): GridValidationBuilder = {
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), requireLimitOneResponsePerColumn = js.Any.fromFunction0(requireLimitOneResponsePerColumn), setHelpText = js.Any.fromFunction1(setHelpText))
     __obj.asInstanceOf[GridValidationBuilder]
   }
   
@@ -37,5 +43,7 @@ object GridValidationBuilder {
     inline def setBuild(value: () => GridValidation): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
     inline def setRequireLimitOneResponsePerColumn(value: () => GridValidationBuilder): Self = StObject.set(x, "requireLimitOneResponsePerColumn", js.Any.fromFunction0(value))
+    
+    inline def setSetHelpText(value: String => GridValidationBuilder): Self = StObject.set(x, "setHelpText", js.Any.fromFunction1(value))
   }
 }

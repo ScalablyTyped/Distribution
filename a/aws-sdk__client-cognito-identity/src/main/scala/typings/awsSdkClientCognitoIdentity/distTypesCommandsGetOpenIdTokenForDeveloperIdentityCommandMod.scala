@@ -28,8 +28,14 @@ object distTypesCommandsGetOpenIdTokenForDeveloperIdentityCommandMod {
           Any, 
           Any
         ] {
+    /**
+      * @public
+      */
     def this(input: GetOpenIdTokenForDeveloperIdentityCommandInput) = this()
     
+    /**
+      * @internal
+      */
     /* private */ var deserialize: Any = js.native
     
     /**
@@ -51,6 +57,9 @@ object distTypesCommandsGetOpenIdTokenForDeveloperIdentityCommandMod {
         GetOpenIdTokenForDeveloperIdentityCommandOutput
       ] = js.native
     
+    /**
+      * @internal
+      */
     /* private */ var serialize: Any = js.native
   }
   /* static members */

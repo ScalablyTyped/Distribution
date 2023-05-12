@@ -10,6 +10,8 @@ trait Page[TLength, TTime] extends StObject {
   
   var marks: js.UndefOr[Marks] = js.undefined
   
+  var pageOrientation: js.UndefOr[PageOrientation] = js.undefined
+  
   var size: js.UndefOr[Size[TLength]] = js.undefined
 }
 object Page {
@@ -29,6 +31,10 @@ object Page {
     inline def setMarks(value: Marks): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
     
     inline def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
+    
+    inline def setPageOrientation(value: PageOrientation): Self = StObject.set(x, "pageOrientation", value.asInstanceOf[js.Any])
+    
+    inline def setPageOrientationUndefined: Self = StObject.set(x, "pageOrientation", js.undefined)
     
     inline def setSize(value: Size[TLength]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

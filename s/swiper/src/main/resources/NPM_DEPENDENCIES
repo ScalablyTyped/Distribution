@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "swiper" : "8.4.4"
+      "swiper" : "9.3.1"
     }
   ],
   "test-dependencies" : [
     {
-      "swiper" : "8.4.4"
+      "swiper" : "9.3.1"
     }
   ],
   "compile-devDependencies" : [

@@ -1,5 +1,8 @@
 package typings.primereact
 
+import typings.primereact.primereactStrings.clear
+import typings.primereact.primereactStrings.command
+import typings.primereact.primereactStrings.response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,29 +13,29 @@ object terminalserviceTerminalserviceMod {
   @js.native
   val TerminalService: TerminalServiceOptions = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.command
-    - typings.primereact.primereactStrings.response
-    - typings.primereact.primereactStrings.clear
-  */
-  trait TerminalServiceActionType extends StObject
-  object TerminalServiceActionType {
-    
-    inline def clear: typings.primereact.primereactStrings.clear = "clear".asInstanceOf[typings.primereact.primereactStrings.clear]
-    
-    inline def command: typings.primereact.primereactStrings.command = "command".asInstanceOf[typings.primereact.primereactStrings.command]
-    
-    inline def response: typings.primereact.primereactStrings.response = "response".asInstanceOf[typings.primereact.primereactStrings.response]
-  }
-  
   @js.native
   trait TerminalServiceOptions extends StObject {
     
-    def emit(action: TerminalServiceActionType): Unit = js.native
-    def emit(action: TerminalServiceActionType, params: Any): Unit = js.native
+    /**
+      * Method to emit an event for a specific action.
+      * @param {'command' | 'response' | 'clear'} action - Custom listener.
+      * @param {*} params - Custom listener.
+      */
+    def emit(action: command | response | clear): Unit = js.native
+    def emit(action: command | response | clear, params: Any): Unit = js.native
     
-    def off(action: TerminalServiceActionType, fn: Any): Unit = js.native
+    /**
+      * Method to detach an event listener from a specific action.
+      * @param {'command' | 'response' | 'clear'} action - Custom listener.
+      * @param {*} fn - Custom listener.
+      */
+    def off(action: command | response | clear, fn: Any): Unit = js.native
     
-    def on(action: TerminalServiceActionType, fn: Any): Unit = js.native
+    /**
+      * Method to attach an event listener to a specific action.
+      * @param {'command' | 'response' | 'clear'} action - Custom listener.
+      * @param {*} fn - Custom listener.
+      */
+    def on(action: command | response | clear, fn: Any): Unit = js.native
   }
 }

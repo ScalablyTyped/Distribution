@@ -27,7 +27,7 @@ trait DescribeImageResponse extends StObject {
   var FailureReason: js.UndefOr[typings.awsSdk.clientsSagemakerMod.FailureReason] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the image.
+    * The ARN of the image.
     */
   var ImageArn: js.UndefOr[typings.awsSdk.clientsSagemakerMod.ImageArn] = js.undefined
   
@@ -47,7 +47,7 @@ trait DescribeImageResponse extends StObject {
   var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the IAM role that enables Amazon SageMaker to perform tasks on your behalf.
+    * The ARN of the IAM role that enables Amazon SageMaker to perform tasks on your behalf.
     */
   var RoleArn: js.UndefOr[typings.awsSdk.clientsSagemakerMod.RoleArn] = js.undefined
 }

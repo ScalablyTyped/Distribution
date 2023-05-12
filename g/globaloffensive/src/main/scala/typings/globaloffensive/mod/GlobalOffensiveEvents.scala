@@ -14,6 +14,10 @@ trait GlobalOffensiveEvents extends StObject {
   
   var connectionStatus: js.Tuple2[/* status */ ValueOf[GCGOINGDOWN], /* data */ Any]
   
+  var craftingComplete: js.Tuple2[/* recipe */ Double, /* itemsGained */ js.Array[String]]
+  
+  var debug: js.Array[/* message */ String]
+  
   var disconnectedFromGC: js.Array[/* reason */ ValueOf[GCGOINGDOWN]]
   
   var inspectItemInfo: js.Array[/* item */ ItemInfo]
@@ -38,6 +42,8 @@ object GlobalOffensiveEvents {
     accountData: js.Array[/* accountData */ AccountData],
     connectedToGC: js.Array[Any],
     connectionStatus: js.Tuple2[/* status */ ValueOf[GCGOINGDOWN], /* data */ Any],
+    craftingComplete: js.Tuple2[/* recipe */ Double, /* itemsGained */ js.Array[String]],
+    debug: js.Array[/* message */ String],
     disconnectedFromGC: js.Array[/* reason */ ValueOf[GCGOINGDOWN]],
     inspectItemInfo: js.Array[/* item */ ItemInfo],
     inspectItemTimedOut: js.Array[/* assetid */ String],
@@ -48,7 +54,7 @@ object GlobalOffensiveEvents {
     matchList: js.Tuple2[/* matches */ js.Array[Match], /* data */ MatchesData],
     playersProfile: js.Array[/* profile */ Profile]
   ): GlobalOffensiveEvents = {
-    val __obj = js.Dynamic.literal(accountData = accountData.asInstanceOf[js.Any], connectedToGC = connectedToGC.asInstanceOf[js.Any], connectionStatus = connectionStatus.asInstanceOf[js.Any], disconnectedFromGC = disconnectedFromGC.asInstanceOf[js.Any], inspectItemInfo = inspectItemInfo.asInstanceOf[js.Any], inspectItemTimedOut = inspectItemTimedOut.asInstanceOf[js.Any], itemAcquired = itemAcquired.asInstanceOf[js.Any], itemChanged = itemChanged.asInstanceOf[js.Any], itemCustomizationNotification = itemCustomizationNotification.asInstanceOf[js.Any], itemRemoved = itemRemoved.asInstanceOf[js.Any], matchList = matchList.asInstanceOf[js.Any], playersProfile = playersProfile.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(accountData = accountData.asInstanceOf[js.Any], connectedToGC = connectedToGC.asInstanceOf[js.Any], connectionStatus = connectionStatus.asInstanceOf[js.Any], craftingComplete = craftingComplete.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], disconnectedFromGC = disconnectedFromGC.asInstanceOf[js.Any], inspectItemInfo = inspectItemInfo.asInstanceOf[js.Any], inspectItemTimedOut = inspectItemTimedOut.asInstanceOf[js.Any], itemAcquired = itemAcquired.asInstanceOf[js.Any], itemChanged = itemChanged.asInstanceOf[js.Any], itemCustomizationNotification = itemCustomizationNotification.asInstanceOf[js.Any], itemRemoved = itemRemoved.asInstanceOf[js.Any], matchList = matchList.asInstanceOf[js.Any], playersProfile = playersProfile.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalOffensiveEvents]
   }
   
@@ -64,6 +70,12 @@ object GlobalOffensiveEvents {
     inline def setConnectedToGCVarargs(value: Any*): Self = StObject.set(x, "connectedToGC", js.Array(value*))
     
     inline def setConnectionStatus(value: js.Tuple2[/* status */ ValueOf[GCGOINGDOWN], /* data */ Any]): Self = StObject.set(x, "connectionStatus", value.asInstanceOf[js.Any])
+    
+    inline def setCraftingComplete(value: js.Tuple2[/* recipe */ Double, /* itemsGained */ js.Array[String]]): Self = StObject.set(x, "craftingComplete", value.asInstanceOf[js.Any])
+    
+    inline def setDebug(value: js.Array[/* message */ String]): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    
+    inline def setDebugVarargs(value: (/* message */ String)*): Self = StObject.set(x, "debug", js.Array(value*))
     
     inline def setDisconnectedFromGC(value: js.Array[/* reason */ ValueOf[GCGOINGDOWN]]): Self = StObject.set(x, "disconnectedFromGC", value.asInstanceOf[js.Any])
     

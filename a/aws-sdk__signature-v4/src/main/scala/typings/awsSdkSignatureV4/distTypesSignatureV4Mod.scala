@@ -1,7 +1,8 @@
 package typings.awsSdkSignatureV4
 
-import typings.awsSdkTypes.distTypesCredentialsMod.Credentials
+import typings.awsSdkTypes.distTypesChecksumMod.ChecksumConstructor
 import typings.awsSdkTypes.distTypesCryptoMod.HashConstructor
+import typings.awsSdkTypes.distTypesIdentityAwsCredentialIdentityMod.AwsCredentialIdentity
 import typings.awsSdkTypes.distTypesSignatureMod.EventSigner
 import typings.awsSdkTypes.distTypesSignatureMod.EventSigningArguments
 import typings.awsSdkTypes.distTypesSignatureMod.FormattedEvent
@@ -64,11 +65,11 @@ object distTypesSignatureV4Mod {
   
   trait SignatureV4CryptoInit extends StObject {
     
-    var sha256: HashConstructor
+    var sha256: ChecksumConstructor | HashConstructor
   }
   object SignatureV4CryptoInit {
     
-    inline def apply(sha256: HashConstructor): SignatureV4CryptoInit = {
+    inline def apply(sha256: ChecksumConstructor | HashConstructor): SignatureV4CryptoInit = {
       val __obj = js.Dynamic.literal(sha256 = sha256.asInstanceOf[js.Any])
       __obj.asInstanceOf[SignatureV4CryptoInit]
     }
@@ -76,7 +77,7 @@ object distTypesSignatureV4Mod {
     @scala.inline
     implicit open class MutableBuilder[Self <: SignatureV4CryptoInit] (val x: Self) extends AnyVal {
       
-      inline def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
+      inline def setSha256(value: ChecksumConstructor | HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
     }
   }
   
@@ -96,7 +97,7 @@ object distTypesSignatureV4Mod {
       * The credentials with which the request should be signed or a function
       * that returns a promise that will be resolved with credentials.
       */
-    var credentials: Credentials | Provider[Credentials]
+    var credentials: AwsCredentialIdentity | Provider[AwsCredentialIdentity]
     
     /**
       * The region name or a function that returns a promise that will be
@@ -113,7 +114,7 @@ object distTypesSignatureV4Mod {
       * A constructor function for a hash object that will calculate SHA-256 HMAC
       * checksums.
       */
-    var sha256: js.UndefOr[HashConstructor] = js.undefined
+    var sha256: js.UndefOr[ChecksumConstructor | HashConstructor] = js.undefined
     
     /**
       * Whether to uri-escape the request URI path as part of computing the
@@ -127,7 +128,7 @@ object distTypesSignatureV4Mod {
   object SignatureV4Init {
     
     inline def apply(
-      credentials: Credentials | Provider[Credentials],
+      credentials: AwsCredentialIdentity | Provider[AwsCredentialIdentity],
       region: String | Provider[String],
       service: String
     ): SignatureV4Init = {
@@ -142,9 +143,9 @@ object distTypesSignatureV4Mod {
       
       inline def setApplyChecksumUndefined: Self = StObject.set(x, "applyChecksum", js.undefined)
       
-      inline def setCredentials(value: Credentials | Provider[Credentials]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: AwsCredentialIdentity | Provider[AwsCredentialIdentity]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      inline def setCredentialsFunction0(value: () => js.Promise[Credentials]): Self = StObject.set(x, "credentials", js.Any.fromFunction0(value))
+      inline def setCredentialsFunction0(value: () => js.Promise[AwsCredentialIdentity]): Self = StObject.set(x, "credentials", js.Any.fromFunction0(value))
       
       inline def setRegion(value: String | Provider[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
@@ -152,7 +153,7 @@ object distTypesSignatureV4Mod {
       
       inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
       
-      inline def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
+      inline def setSha256(value: ChecksumConstructor | HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
       
       inline def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
       

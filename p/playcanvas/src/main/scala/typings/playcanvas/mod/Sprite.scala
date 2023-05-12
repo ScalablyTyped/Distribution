@@ -18,7 +18,8 @@ open class Sprite protected () extends EventHandler {
   /**
     * Create a new Sprite instance.
     *
-    * @param {GraphicsDevice} device - The graphics device of the application.
+    * @param {import('../platform/graphics/graphics-device.js').GraphicsDevice} device - The
+    * graphics device of the application.
     * @param {object} [options] - Options for creating the Sprite.
     * @param {number} [options.pixelsPerUnit] - The number of pixels that map to one PlayCanvas
     * unit. Defaults to 1.
@@ -29,7 +30,8 @@ open class Sprite protected () extends EventHandler {
     * - {@link SPRITE_RENDERMODE_TILED}
     *
     * Defaults to {@link SPRITE_RENDERMODE_SIMPLE}.
-    * @param {TextureAtlas} [options.atlas] - The texture atlas. Defaults to null.
+    * @param {import('./texture-atlas.js').TextureAtlas} [options.atlas] - The texture atlas.
+    * Defaults to null.
     * @param {string[]} [options.frameKeys] - The keys of the frames in the sprite atlas that this
     * sprite is using. Defaults to null.
     */
@@ -68,7 +70,7 @@ open class Sprite protected () extends EventHandler {
   /**
     * The texture atlas.
     *
-    * @type {TextureAtlas}
+    * @type {import('./texture-atlas.js').TextureAtlas}
     */
   def atlas_=(arg: TextureAtlas): Unit = js.native
   
@@ -90,7 +92,7 @@ open class Sprite protected () extends EventHandler {
   /**
     * An array that contains a mesh for each frame.
     *
-    * @type {Mesh[]}
+    * @type {import('./mesh.js').Mesh[]}
     */
   def meshes: js.Array[Mesh] = js.native
   

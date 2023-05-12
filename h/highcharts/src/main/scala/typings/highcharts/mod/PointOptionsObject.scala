@@ -36,7 +36,8 @@ trait PointOptionsObject extends StObject {
   
   /**
     * (Highcharts, Gantt) An additional, individual class name for the data
-    * point's graphic representation.
+    * point's graphic representation. Changes to a point's color will also be
+    * reflected in a chart's legend and tooltip.
     */
   var className: js.UndefOr[String] = js.undefined
   
@@ -71,6 +72,9 @@ trait PointOptionsObject extends StObject {
     * In styled mode this will change the color of the graphic. In non-styled
     * mode, the color is set by the `fill` attribute, so the change in class
     * name won't have a visual effect by default.
+    *
+    * Since v11, CSS variables on the form `--highcharts-color-{n}` make
+    * changing the color scheme very convenient.
     */
   var colorIndex: js.UndefOr[Double] = js.undefined
   
@@ -158,6 +162,13 @@ trait PointOptionsObject extends StObject {
     * (Highcharts) The node that the link runs from.
     */
   var from: js.UndefOr[String] = js.undefined
+  
+  /**
+    * (Highcharts) By deafult sides fill is set to a gradient through this
+    * option being set to `true`. Set to `false` to get solid color for the
+    * sides.
+    */
+  var gradientForSides: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock) The high or maximum value for each data point.
@@ -496,6 +507,10 @@ object PointOptionsObject {
     inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    
+    inline def setGradientForSides(value: Boolean): Self = StObject.set(x, "gradientForSides", value.asInstanceOf[js.Any])
+    
+    inline def setGradientForSidesUndefined: Self = StObject.set(x, "gradientForSides", js.undefined)
     
     inline def setHigh(value: Double): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
     

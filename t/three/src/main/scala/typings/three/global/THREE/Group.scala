@@ -6,5 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("THREE.Group")
 @js.native
+/**
+  * Creates a new {@link Bone}.
+  */
 open class Group ()
   extends typings.three.mod.Group

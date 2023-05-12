@@ -7,8 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TypeofAudioContext extends StObject {
   
+  /**
+    * Return the value of the variable `context` in the outer scope, if defined, otherwise set it to a new {@link https://developer.mozilla.org/en-US/docs/Web/API/AudioContext | AudioContext}.
+    */
   def getContext(): AudioContext
   
+  /**
+    * Set the variable `context` in the outer scope to `value`.
+    * @param value
+    */
   def setContext(context: AudioContext): Unit
 }
 object TypeofAudioContext {

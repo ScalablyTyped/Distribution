@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@antv/g-base" : "0.5.11"
+      "@antv/g-base" : "0.5.15"
     }
   ],
   "test-dependencies" : [
     {
-      "@antv/g-base" : "0.5.11"
+      "@antv/g-base" : "0.5.15"
     }
   ],
   "compile-devDependencies" : [

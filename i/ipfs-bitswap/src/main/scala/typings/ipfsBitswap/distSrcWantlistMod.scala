@@ -1,11 +1,15 @@
 package typings.ipfsBitswap
 
+import org.scalablytyped.runtime.Instantiable3
+import typings.ipfsBitswap.distSrcMessageMessageMod.Message.Wantlist.WantType
 import typings.ipfsBitswap.distSrcStatsMod.Stats
 import typings.ipfsBitswap.distSrcWantlistEntryMod.WantListEntry
-import typings.libp2p.mod.Libp2p
+import typings.libp2pInterfaceLibp2p.mod.Libp2p
+import typings.multiformats.cidMod.CID
 import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
 import typings.std.IterableIterator
 import typings.std.Map
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,62 +18,55 @@ object distSrcWantlistMod {
   
   @JSImport("ipfs-bitswap/dist/src/wantlist", "Wantlist")
   @js.native
-  /**
-    * @param {import('../stats').Stats} [stats]
-    * @param {import('libp2p').Libp2p} [libp2p]
-    */
   open class Wantlist () extends StObject {
     def this(stats: Stats) = this()
-    def this(stats: Unit, libp2p: Libp2p) = this()
-    def this(stats: Stats, libp2p: Libp2p) = this()
+    def this(stats: Unit, libp2p: Libp2p[Record[String, Any]]) = this()
+    def this(stats: Stats, libp2p: Libp2p[Record[String, Any]]) = this()
     
-    var _stats: js.UndefOr[Stats] = js.native
+    /* private */ val _stats: Any = js.native
     
-    /**
-      * @param {CID} cid
-      * @param {number} priority
-      * @param {import('../message/message').Message.Wantlist.WantType} wantType
-      */
-    def add(
-      cid: CID,
-      priority: Double,
-      wantType: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_message.Message.Wantlist.WantType */ Any
-    ): Unit = js.native
+    def add(cid: CID[Any, Double, Double, Version], priority: Double, wantType: WantType): Unit = js.native
     
-    /**
-      * @param {CID} cid
-      */
-    def contains(cid: CID): Boolean = js.native
+    def contains(cid: CID[Any, Double, Double, Version]): Boolean = js.native
     
     def entries(): IterableIterator[js.Tuple2[String, WantListEntry]] = js.native
     
-    /**
-      * @param {(entry:Entry, key:string) => void} fn
-      */
     def forEach(fn: js.Function2[/* entry */ WantListEntry, /* key */ String, Unit]): Unit = js.native
     
-    /**
-      * @param {CID} cid
-      */
-    def get(cid: CID): js.UndefOr[WantListEntry] = js.native
+    def get(cid: CID[Any, Double, Double, Version]): js.UndefOr[WantListEntry] = js.native
     
     def length: Double = js.native
     
-    /**
-      * @param {CID} cid
-      */
-    def remove(cid: CID): Unit = js.native
+    def remove(cid: CID[Any, Double, Double, Version]): Unit = js.native
     
-    /**
-      * @param {string} cidStr
-      */
     def removeForce(cidStr: String): Unit = js.native
     
-    /** @type {Map<string, Entry>} */
-    var set: Map[String, WantListEntry] = js.native
+    /* private */ val set: Any = js.native
     
     def sortedEntries(): Map[String, WantListEntry] = js.native
   }
-  
-  type CID = typings.multiformats.mod.CID[Any, Double, Double, Version]
+  /* static members */
+  object Wantlist {
+    
+    @JSImport("ipfs-bitswap/dist/src/wantlist", "Wantlist")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("ipfs-bitswap/dist/src/wantlist", "Wantlist.Entry")
+    @js.native
+    def Entry: Instantiable3[
+        /* cid */ CID[Any, Double, Double, Version], 
+        /* priority */ Double, 
+        /* wantType */ WantType, 
+        WantListEntry
+      ] = js.native
+    inline def Entry_=(
+      x: Instantiable3[
+          /* cid */ CID[Any, Double, Double, Version], 
+          /* priority */ Double, 
+          /* wantType */ WantType, 
+          WantListEntry
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Entry")(x.asInstanceOf[js.Any])
+  }
 }

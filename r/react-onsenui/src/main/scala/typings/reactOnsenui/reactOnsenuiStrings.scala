@@ -300,6 +300,10 @@ object reactOnsenuiStrings {
   inline def color: color = "color".asInstanceOf[color]
   
   @js.native
+  sealed trait content extends StObject
+  inline def content: content = "content".asInstanceOf[content]
+  
+  @js.native
   sealed trait contentEditable extends StObject
   inline def contentEditable: contentEditable = "contentEditable".asInstanceOf[contentEditable]
   
@@ -855,6 +859,10 @@ object reactOnsenuiStrings {
   inline def readOnly: readOnly = "readOnly".asInstanceOf[readOnly]
   
   @js.native
+  sealed trait rel extends StObject
+  inline def rel: rel = "rel".asInstanceOf[rel]
+  
+  @js.native
   sealed trait required extends StObject
   inline def required: required = "required".asInstanceOf[required]
   
@@ -865,6 +873,10 @@ object reactOnsenuiStrings {
   @js.native
   sealed trait results extends StObject
   inline def results: results = "results".asInstanceOf[results]
+  
+  @js.native
+  sealed trait rev extends StObject
+  inline def rev: rev = "rev".asInstanceOf[rev]
   
   @js.native
   sealed trait right

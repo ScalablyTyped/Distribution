@@ -48,7 +48,7 @@ object sapUiModelOdataOdatautilsMod extends Shortcut {
       * if `true`, the string values `vValue1` and `vValue2` are compared as a decimal number (only sign, integer
       * and fraction digits; no exponential format). Otherwise they are recognized by looking at their types.
       */
-    bAsDecimal: String
+    bAsDecimal: Boolean
     ): int = js.native
     
     /**

@@ -20,6 +20,16 @@ trait PhysicsRaycastResult extends StObject {
   /* private */ var _rayToWorld: Any = js.native
   
   /**
+    * The Physics body that the ray hit
+    */
+  var body: js.UndefOr[PhysicsBody] = js.native
+  
+  /**
+    * The body Index in case the Physics body is using instances
+    */
+  var bodyIndex: js.UndefOr[Double] = js.native
+  
+  /**
     * Calculates the distance manually
     */
   def calculateHitDistance(): Unit = js.native

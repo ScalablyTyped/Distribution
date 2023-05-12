@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetRepositoryPolicyResponse extends StObject {
   
   /**
-    * The repository policy text associated with the repository. The policy text will be in JSON format.
+    * The repository policy text that's associated with the repository. The policy text will be in JSON format.
     */
   var policyText: js.UndefOr[RepositoryPolicyText] = js.undefined
   
   /**
-    * The registry ID associated with the request.
+    * The registry ID that's associated with the request.
     */
   var registryId: js.UndefOr[RegistryId] = js.undefined
   
   /**
-    * The repository name associated with the request.
+    * The repository name that's associated with the request.
     */
   var repositoryName: js.UndefOr[RepositoryName] = js.undefined
 }

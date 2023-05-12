@@ -114,6 +114,7 @@ object mod {
     /**
     		* Get the value stored by given id/key
     		* @param id The key for the entry
+    		* @param options Additional options for the retrieval
     		**/
     def get(id: K): js.UndefOr[V] = js.native
     def get(id: K, options: GetOptions): js.UndefOr[V] = js.native
@@ -142,8 +143,10 @@ object mod {
     /**
     		* Get the entry stored by given id/key, which includes both the value and the version number (if available)
     		* @param id The key for the entry
+    	 	* @param options Additional options for the retrieval
     		**/
     def getEntry(id: K): js.UndefOr[Value[V]] = js.native
+    def getEntry(id: K, options: GetOptions): js.UndefOr[Value[V]] = js.native
     
     /**
     		* Get all the unique keys for the given range
@@ -386,6 +389,8 @@ object mod {
     
     def map[U](callback: js.Function1[/* entry */ T, U]): RangeIterable[U] = js.native
     
+    var onDone: js.UndefOr[js.Function] = js.native
+    
     def slice(start: Double, end: Double): RangeIterable[T] = js.native
   }
   
@@ -558,7 +563,25 @@ object mod {
     }
   }
   
-  trait GetOptions extends StObject
+  trait GetOptions extends StObject {
+    
+    var transaction: js.UndefOr[Transaction] = js.undefined
+  }
+  object GetOptions {
+    
+    inline def apply(): GetOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[GetOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetOptions] (val x: Self) extends AnyVal {
+      
+      inline def setTransaction(value: Transaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+      
+      inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+    }
+  }
   
   /** 
   NOTE: Rewritten from type alias:

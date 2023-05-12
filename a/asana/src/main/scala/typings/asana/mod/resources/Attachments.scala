@@ -12,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An _attachment_ object represents any file attached to a task in Asana,
   * whether it's an uploaded file or one associated via a third-party service
   * such as Dropbox or Google Drive.
-  * @class
   * @param {Dispatcher} dispatcher The API dispatcher
   */
 @js.native

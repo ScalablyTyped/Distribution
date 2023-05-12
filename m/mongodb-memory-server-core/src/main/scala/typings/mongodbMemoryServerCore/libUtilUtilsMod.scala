@@ -48,6 +48,9 @@ object libUtilUtilsMod {
   
   inline def checkBinaryPermissions(path: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkBinaryPermissions")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
+  inline def createTmpDir(prefix: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTmpDir")(prefix.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def createTmpDir(prefix: String, atPath: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTmpDir")(prefix.asInstanceOf[js.Any], atPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  
   inline def ensureAsync(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureAsync")().asInstanceOf[js.Promise[Unit]]
   
   inline def errorWithCode(err: Any): /* is mongodb-memory-server-core.mongodb-memory-server-core/lib/util/utils.ErrorWithCode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("errorWithCode")(err.asInstanceOf[js.Any]).asInstanceOf[/* is mongodb-memory-server-core.mongodb-memory-server-core/lib/util/utils.ErrorWithCode */ Boolean]
@@ -68,6 +71,8 @@ object libUtilUtilsMod {
   inline def mkdir(path: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   inline def pathExists(path: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("pathExists")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  
+  inline def removeDir(dirPath: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeDir")(dirPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   inline def statPath(path: String): js.Promise[js.UndefOr[Stats]] = ^.asInstanceOf[js.Dynamic].applyDynamic("statPath")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[Stats]]]
   

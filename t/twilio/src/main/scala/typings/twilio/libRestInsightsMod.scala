@@ -8,29 +8,35 @@ object libRestInsightsMod {
   
   @JSImport("twilio/lib/rest/Insights", JSImport.Namespace)
   @js.native
-  open class ^ protected () extends Insights {
-    /**
-      * Initialize insights domain
-      *
-      * @param twilio - The twilio client
-      */
-    def this(twilio: typings.twilio.libRestTwilioMod.^) = this()
-  }
+  open class ^ () extends Insights
   
   @js.native
   trait Insights
-    extends typings.twilio.libBaseDomainMod.^ {
+    extends typings.twilio.libRestInsightsBaseMod.^ {
     
-    val callSummaries: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CallSummariesListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.callSummaries instead
+      */
+    def callSummaries: Any = js.native
     
-    val calls: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CallListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.calls instead
+      */
+    def calls: Any = js.native
     
-    val conferences: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ConferenceListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.conferences instead
+      */
+    def conferences: Any = js.native
     
-    val rooms: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RoomListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.rooms instead
+      */
+    def rooms: Any = js.native
     
-    val settings: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SettingListInstance */ Any = js.native
-    
-    val v1: typings.twilio.libRestInsightsV1Mod.^ = js.native
+    /**
+      * @deprecated - Use v1.settings instead
+      */
+    def settings: Any = js.native
   }
 }

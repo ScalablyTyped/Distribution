@@ -24,14 +24,18 @@ object distSrcMultistreamMod {
   inline def readString(reader: Reader_): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readString")(reader.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   inline def readString(reader: Reader_, options: AbortOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readString")(reader.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  inline def write(writer: Pushable_[Any], buffer: js.typedarray.Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(writer.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(writer: Pushable_[Any], buffer: js.typedarray.Uint8Array, options: MultistreamSelectInit): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(writer.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(writer: Pushable_[Any], buffer: Uint8ArrayList): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(writer.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(writer: Pushable_[Any], buffer: Uint8ArrayList, options: MultistreamSelectInit): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(writer.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(writer: Pushable_[Any, Unit, Any], buffer: js.typedarray.Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(writer.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    writer: Pushable_[Any, Unit, Any],
+    buffer: js.typedarray.Uint8Array,
+    options: MultistreamSelectInit
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(writer.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(writer: Pushable_[Any, Unit, Any], buffer: Uint8ArrayList): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(writer.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(writer: Pushable_[Any, Unit, Any], buffer: Uint8ArrayList, options: MultistreamSelectInit): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(writer.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def writeAll(writer: Pushable_[Any], buffers: js.Array[js.typedarray.Uint8Array]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeAll")(writer.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def writeAll(writer: Pushable_[Any, Unit, Any], buffers: js.Array[js.typedarray.Uint8Array]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeAll")(writer.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def writeAll(
-    writer: Pushable_[Any],
+    writer: Pushable_[Any, Unit, Any],
     buffers: js.Array[js.typedarray.Uint8Array],
     options: MultistreamSelectInit
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeAll")(writer.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]

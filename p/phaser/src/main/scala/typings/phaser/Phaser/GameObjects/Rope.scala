@@ -7,6 +7,7 @@ import typings.phaser.Phaser.GameObjects.Components.Depth
 import typings.phaser.Phaser.GameObjects.Components.Flip
 import typings.phaser.Phaser.GameObjects.Components.Mask
 import typings.phaser.Phaser.GameObjects.Components.Pipeline
+import typings.phaser.Phaser.GameObjects.Components.PostPipeline
 import typings.phaser.Phaser.GameObjects.Components.ScrollFactor
 import typings.phaser.Phaser.GameObjects.Components.Size
 import typings.phaser.Phaser.GameObjects.Components.Texture
@@ -22,7 +23,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * The Rope object is WebGL only and does not have a Canvas counterpart.
   * 
-  * A Rope is a special kind of Game Object that has a texture that repeats along its entire length.
+  * A Rope is a special kind of Game Object that has a texture is stretched along its entire length.
+  * 
   * Unlike a Sprite, it isn't restricted to using just a quad and can have as many vertices as you define
   * when creating it. The vertices can be arranged in a horizontal or vertical strip and have their own
   * color and alpha values as well.
@@ -39,6 +41,7 @@ trait Rope
      with Flip
      with Mask
      with Pipeline
+     with PostPipeline
      with Size
      with Texture
      with Transform

@@ -15,12 +15,19 @@ trait Ingredient
   
   var _allergenicIndicator: js.UndefOr[Element] = js.undefined
   
+  var _comment: js.UndefOr[Element] = js.undefined
+  
   var _status: js.UndefOr[Element] = js.undefined
   
   /**
-    * If the ingredient is a known or suspected allergen.
+    * If the ingredient is a known or suspected allergen. Note that this is a property of the substance, so if a reference to a SubstanceDefinition is used to decribe that (rather than just a code), the allergen information should go there, not here.
     */
   var allergenicIndicator: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * A place for providing any notes that are relevant to the component, e.g. removed during process, adjusted for loss on drying.
+    */
+  var comment: js.UndefOr[String] = js.undefined
   
   /**
     * The product which this ingredient is a constituent part of.
@@ -28,7 +35,7 @@ trait Ingredient
   var `for`: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * A classification of the ingredient identifying its precise purpose(s) in the drug product. This extends the Ingredient.role to add more detail. Example: Antioxidant, Alkalizing Agent.
+    * A classification of the ingredient identifying its precise purpose(s) in the drug product. This extends the Ingredient.role to add more detail. Example: antioxidant, alkalizing agent.
     */
   var function: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
@@ -43,7 +50,7 @@ trait Ingredient
   var identifier: js.UndefOr[Identifier] = js.undefined
   
   /**
-    * An organization that manufactures this ingredient.
+    * The organization(s) that manufacture this ingredient. Can be used to indicate:         1) Organizations we are aware of that manufacture this ingredient         2) Specific Manufacturer(s) currently being used         3) Set of organisations allowed to manufacture this ingredient for this product         Users must be clear on the application of context relevant to their use case.
     */
   var manufacturer: js.UndefOr[js.Array[IngredientManufacturer]] = js.undefined
   
@@ -79,6 +86,10 @@ object Ingredient {
     inline def setAllergenicIndicator(value: Boolean): Self = StObject.set(x, "allergenicIndicator", value.asInstanceOf[js.Any])
     
     inline def setAllergenicIndicatorUndefined: Self = StObject.set(x, "allergenicIndicator", js.undefined)
+    
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     inline def setFor(value: js.Array[Reference]): Self = StObject.set(x, "for", value.asInstanceOf[js.Any])
     
@@ -117,6 +128,10 @@ object Ingredient {
     inline def set_allergenicIndicator(value: Element): Self = StObject.set(x, "_allergenicIndicator", value.asInstanceOf[js.Any])
     
     inline def set_allergenicIndicatorUndefined: Self = StObject.set(x, "_allergenicIndicator", js.undefined)
+    
+    inline def set_comment(value: Element): Self = StObject.set(x, "_comment", value.asInstanceOf[js.Any])
+    
+    inline def set_commentUndefined: Self = StObject.set(x, "_comment", js.undefined)
     
     inline def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     

@@ -10,6 +10,8 @@ trait CertificateChainValidationEngineVerifyResult extends StObject {
   
   var certificatePath: js.UndefOr[js.Array[Certificate]] = js.undefined
   
+  var error: js.UndefOr[js.Error | ChainValidationError] = js.undefined
+  
   var explicitPolicyIndicator: js.UndefOr[Boolean] = js.undefined
   
   var policyMappings: js.UndefOr[js.Array[String]] = js.undefined
@@ -43,6 +45,10 @@ object CertificateChainValidationEngineVerifyResult {
     inline def setCertificatePathUndefined: Self = StObject.set(x, "certificatePath", js.undefined)
     
     inline def setCertificatePathVarargs(value: Certificate*): Self = StObject.set(x, "certificatePath", js.Array(value*))
+    
+    inline def setError(value: js.Error | ChainValidationError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     inline def setExplicitPolicyIndicator(value: Boolean): Self = StObject.set(x, "explicitPolicyIndicator", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,7 @@ import typings.fpTs.libFromEitherMod.FromEither3
 import typings.fpTs.libFromIOMod.FromIO3
 import typings.fpTs.libFromReaderMod.FromReader3
 import typings.fpTs.libFromTaskMod.FromTask3
-import typings.fpTs.libFunctionMod.Lazy
+import typings.fpTs.libFunctionMod.LazyArg
 import typings.fpTs.libFunctorMod.Functor3
 import typings.fpTs.libIOMod.IO_
 import typings.fpTs.libIoeitherMod.IOEither_
@@ -339,12 +339,20 @@ object readerTaskEither {
     ]
   ]]
   
-  inline def chainOptionK[E](onNone: Lazy[E]): js.Function1[
+  inline def chainOptionK[E](onNone: LazyArg[E]): js.Function1[
     /* f */ js.Function1[/* a */ Any, Option_[Any]], 
     js.Function1[/* ma */ ReaderTaskEither_[Any, E, Any], ReaderTaskEither_[Any, E, Any]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainOptionK")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* f */ js.Function1[/* a */ Any, Option_[Any]], 
     js.Function1[/* ma */ ReaderTaskEither_[Any, E, Any], ReaderTaskEither_[Any, E, Any]]
+  ]]
+  
+  inline def chainOptionKW[E2](onNone: LazyArg[E2]): js.Function1[
+    /* f */ js.Function1[/* a */ Any, Option_[Any]], 
+    js.Function1[/* ma */ ReaderTaskEither_[Any, Any, Any], ReaderTaskEither_[Any, Any | E2, Any]]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainOptionKW")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* f */ js.Function1[/* a */ Any, Option_[Any]], 
+    js.Function1[/* ma */ ReaderTaskEither_[Any, Any, Any], ReaderTaskEither_[Any, Any | E2, Any]]
   ]]
   
   inline def chainReaderEitherK[R, E, A, B](f: js.Function1[/* a */ A, ReaderEither_[R, E, B]]): js.Function1[/* ma */ ReaderTaskEither_[R, E, A], ReaderTaskEither_[R, E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainReaderEitherK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderTaskEither_[R, E, A], ReaderTaskEither_[R, E, B]]]
@@ -387,6 +395,32 @@ object readerTaskEither {
     ReaderTaskEither_[Any, Any, Any]
   ]]
   
+  inline def flatMap[A, R2, E2, B](f: js.Function1[/* a */ A, ReaderTaskEither_[R2, E2, B]]): js.Function1[/* ma */ ReaderTaskEither_[Any, Any, A], ReaderTaskEither_[Any & R2, Any | E2, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderTaskEither_[Any, Any, A], ReaderTaskEither_[Any & R2, Any | E2, B]]]
+  inline def flatMap[R1, E1, A, R2, E2, B](ma: ReaderTaskEither_[R1, E1, A], f: js.Function1[/* a */ A, ReaderTaskEither_[R2, E2, B]]): ReaderTaskEither_[R1 & R2, E1 | E2, B] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(ma.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[ReaderTaskEither_[R1 & R2, E1 | E2, B]]
+  
+  inline def flatMapEither[A, B, E2](f: js.Function1[/* a */ A, Either_[E2, B]]): js.Function1[/* self */ ReaderTaskEither_[Any, Any, A], ReaderTaskEither_[Any, E2 | Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatMapEither")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* self */ ReaderTaskEither_[Any, Any, A], ReaderTaskEither_[Any, E2 | Any, B]]]
+  inline def flatMapEither[R, E1, A, B, E2](self: ReaderTaskEither_[R, E1, A], f: js.Function1[/* a */ A, Either_[E2, B]]): ReaderTaskEither_[R, E1 | E2, B] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMapEither")(self.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[ReaderTaskEither_[R, E1 | E2, B]]
+  
+  inline def flatMapNullable[A, B, E2](f: js.Function1[/* a */ A, js.UndefOr[B | Null]], onNullable: js.Function1[/* a */ A, E2]): js.Function1[
+    /* self */ ReaderTaskEither_[Any, Any, A], 
+    ReaderTaskEither_[Any, E2 | Any, NonNullable[B]]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMapNullable")(f.asInstanceOf[js.Any], onNullable.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* self */ ReaderTaskEither_[Any, Any, A], 
+    ReaderTaskEither_[Any, E2 | Any, NonNullable[B]]
+  ]]
+  inline def flatMapNullable[R, E1, A, B, E2](
+    self: ReaderTaskEither_[R, E1, A],
+    f: js.Function1[/* a */ A, js.UndefOr[B | Null]],
+    onNullable: js.Function1[/* a */ A, E2]
+  ): ReaderTaskEither_[R, E1 | E2, NonNullable[B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMapNullable")(self.asInstanceOf[js.Any], f.asInstanceOf[js.Any], onNullable.asInstanceOf[js.Any])).asInstanceOf[ReaderTaskEither_[R, E1 | E2, NonNullable[B]]]
+  
+  inline def flatMapOption[A, B, E2](f: js.Function1[/* a */ A, Option_[B]], onNone: js.Function1[/* a */ A, E2]): js.Function1[/* self */ ReaderTaskEither_[Any, Any, A], ReaderTaskEither_[Any, E2 | Any, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMapOption")(f.asInstanceOf[js.Any], onNone.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* self */ ReaderTaskEither_[Any, Any, A], ReaderTaskEither_[Any, E2 | Any, B]]]
+  inline def flatMapOption[R, E1, A, B, E2](
+    self: ReaderTaskEither_[R, E1, A],
+    f: js.Function1[/* a */ A, Option_[B]],
+    onNone: js.Function1[/* a */ A, E2]
+  ): ReaderTaskEither_[R, E1 | E2, B] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMapOption")(self.asInstanceOf[js.Any], f.asInstanceOf[js.Any], onNone.asInstanceOf[js.Any])).asInstanceOf[ReaderTaskEither_[R, E1 | E2, B]]
+  
   inline def flatten[R, E, A](mma: ReaderTaskEither_[R, E, ReaderTaskEither_[R, E, A]]): ReaderTaskEither_[R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(mma.asInstanceOf[js.Any]).asInstanceOf[ReaderTaskEither_[R, E, A]]
   
   inline def flattenW[R1, E1, R2, E2, A](mma: ReaderTaskEither_[R1, E1, ReaderTaskEither_[R2, E2, A]]): ReaderTaskEither_[R1 & R2, E1 | E2, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("flattenW")(mma.asInstanceOf[js.Any]).asInstanceOf[ReaderTaskEither_[R1 & R2, E1 | E2, A]]
@@ -423,9 +457,9 @@ object readerTaskEither {
     js.Function1[/* a */ js.Array[Any], ReaderTaskEither_[Any, E, NonNullable[Any]]]
   ]]
   
-  inline def fromOption[E](onNone: Lazy[E]): js.Function1[/* fa */ Option_[Any], ReaderTaskEither_[Any, E, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOption")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[Any], ReaderTaskEither_[Any, E, Any]]]
+  inline def fromOption[E](onNone: LazyArg[E]): js.Function1[/* fa */ Option_[Any], ReaderTaskEither_[Any, E, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOption")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[Any], ReaderTaskEither_[Any, E, Any]]]
   
-  inline def fromOptionK[E](onNone: Lazy[E]): js.Function1[
+  inline def fromOptionK[E](onNone: LazyArg[E]): js.Function1[
     /* f */ js.Function1[/* a */ js.Array[Any], Option_[Any]], 
     js.Function1[/* a */ js.Array[Any], ReaderTaskEither_[Any, E, Any]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOptionK")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -505,6 +539,10 @@ object readerTaskEither {
     ]
   ]]
   
+  inline def liftNullable[A /* <: js.Array[Any] */, B, E](f: js.Function1[/* a */ A, js.UndefOr[B | Null]], onNullable: js.Function1[/* a */ A, E]): js.Function1[/* a */ A, ReaderTaskEither_[Any, E, NonNullable[B]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("liftNullable")(f.asInstanceOf[js.Any], onNullable.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, ReaderTaskEither_[Any, E, NonNullable[B]]]]
+  
+  inline def liftOption[A /* <: js.Array[Any] */, B, E](f: js.Function1[/* a */ A, Option_[B]], onNone: js.Function1[/* a */ A, E]): js.Function1[/* a */ A, ReaderTaskEither_[Any, E, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("liftOption")(f.asInstanceOf[js.Any], onNone.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, ReaderTaskEither_[Any, E, B]]]
+  
   inline def local[R2, R1](f: js.Function1[/* r2 */ R2, R1]): js.Function1[/* ma */ ReaderTaskEither_[R1, Any, Any], ReaderTaskEither_[R2, Any, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("local")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderTaskEither_[R1, Any, Any], ReaderTaskEither_[R2, Any, Any]]]
   
   inline def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* fa */ ReaderTaskEither_[Any, Any, A], ReaderTaskEither_[Any, Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ ReaderTaskEither_[Any, Any, A], ReaderTaskEither_[Any, Any, B]]]
@@ -570,6 +608,30 @@ object readerTaskEither {
   inline def sequenceSeqArray[R, E, A](arr: js.Array[ReaderTaskEither_[R, E, A]]): ReaderTaskEither_[R, E, js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("sequenceSeqArray")(arr.asInstanceOf[js.Any]).asInstanceOf[ReaderTaskEither_[R, E, js.Array[A]]]
   
   inline def swap[R, E, A](ma: ReaderTaskEither_[R, E, A]): ReaderTaskEither_[R, A, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("swap")(ma.asInstanceOf[js.Any]).asInstanceOf[ReaderTaskEither_[R, A, E]]
+  
+  inline def tap[A, R2, E2, _underscore](f: js.Function1[/* a */ A, ReaderTaskEither_[R2, E2, _underscore]]): js.Function1[
+    /* self */ ReaderTaskEither_[Any, Any, A], 
+    ReaderTaskEither_[Any & R2, E2 | Any, A]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("tap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* self */ ReaderTaskEither_[Any, Any, A], 
+    ReaderTaskEither_[Any & R2, E2 | Any, A]
+  ]]
+  inline def tap[R1, E1, A, R2, E2, _underscore](
+    self: ReaderTaskEither_[R1, E1, A],
+    f: js.Function1[/* a */ A, ReaderTaskEither_[R2, E2, _underscore]]
+  ): ReaderTaskEither_[R1 & R2, E1 | E2, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("tap")(self.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[ReaderTaskEither_[R1 & R2, E1 | E2, A]]
+  
+  inline def tapError[E1, R2, E2, _underscore](onLeft: js.Function1[/* e */ E1, ReaderTaskEither_[R2, E2, _underscore]]): js.Function1[
+    /* self */ ReaderTaskEither_[Any, E1, Any], 
+    ReaderTaskEither_[Any & R2, E1 | E2, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("tapError")(onLeft.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* self */ ReaderTaskEither_[Any, E1, Any], 
+    ReaderTaskEither_[Any & R2, E1 | E2, Any]
+  ]]
+  inline def tapError[R1, E1, A, R2, E2, _underscore](
+    self: ReaderTaskEither_[R1, E1, A],
+    onLeft: js.Function1[/* e */ E1, ReaderTaskEither_[R2, E2, _underscore]]
+  ): ReaderTaskEither_[R1 & R2, E1 | E2, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("tapError")(self.asInstanceOf[js.Any], onLeft.asInstanceOf[js.Any])).asInstanceOf[ReaderTaskEither_[R1 & R2, E1 | E2, A]]
   
   @JSImport("fp-ts", "readerTaskEither.throwError")
   @js.native

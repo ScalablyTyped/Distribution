@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.UserSelect
+import typings.csstype.mod.Property.GridAutoFlow
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `46` extends StObject {
   
   var value: js.UndefOr[
-    UserSelect | (js.Array[
-      (Extract[js.UndefOr[UserSelect | js.Array[NonNullable[js.UndefOr[UserSelect]]]], String]) | NonNullable[js.UndefOr[UserSelect]]
+    GridAutoFlow | (js.Array[
+      (Extract[js.UndefOr[GridAutoFlow | js.Array[NonNullable[js.UndefOr[GridAutoFlow]]]], String]) | NonNullable[js.UndefOr[GridAutoFlow]]
     ])
   ] = js.native
 }

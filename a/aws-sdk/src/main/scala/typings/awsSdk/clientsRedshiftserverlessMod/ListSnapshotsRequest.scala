@@ -12,7 +12,7 @@ trait ListSnapshotsRequest extends StObject {
   var endTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * An optional parameter that specifies the maximum number of results to return. You can use nextToken to get the next page of results.
+    * An optional parameter that specifies the maximum number of results to return. You can use nextToken to display the next page of results.
     */
   var maxResults: js.UndefOr[ListSnapshotsRequestMaxResultsInteger] = js.undefined
   

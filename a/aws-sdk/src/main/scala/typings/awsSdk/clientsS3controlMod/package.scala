@@ -1,6 +1,7 @@
 package typings.awsSdk.clientsS3controlMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.Destination_
 import typings.awsSdk.awsSdkStrings.Report_CSV_20180820
 import typings.awsSdk.awsSdkStrings.S3InventoryReport_CSV_20211130
 import typings.awsSdk.awsSdkStrings.V_1
@@ -45,6 +46,8 @@ type Boolean = scala.Boolean
   - java.lang.String
 */
 type BucketCannedACL = _BucketCannedACL | String
+
+type BucketIdentifierString = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EU
@@ -91,7 +94,21 @@ type Days = Double
 
 type DaysAfterInitiation = Double
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Enabled_
+  - typings.awsSdk.awsSdkStrings.Disabled_
+  - java.lang.String
+*/
+type DeleteMarkerReplicationStatus = _DeleteMarkerReplicationStatus | String
+
 type Endpoints = StringDictionary[NonEmptyMaxLength1024String]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Enabled_
+  - typings.awsSdk.awsSdkStrings.Disabled_
+  - java.lang.String
+*/
+type ExistingObjectReplicationStatus = _ExistingObjectReplicationStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Enabled_
@@ -234,11 +251,22 @@ type MaxLength1024String = String
 
 type MaxResults = Double
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Enabled_
+  - typings.awsSdk.awsSdkStrings.Disabled_
+  - java.lang.String
+*/
+type MetricsStatus = _MetricsStatus | String
+
 type MinStorageBytesPercentage = Double
+
+type Minutes = Double
 
 type MultiRegionAccessPointAlias = String
 
 type MultiRegionAccessPointClientToken = String
+
+type MultiRegionAccessPointId = String
 
 type MultiRegionAccessPointName = String
 
@@ -277,6 +305,15 @@ type NoncurrentVersionCount = Double
 type NoncurrentVersionTransitionList = js.Array[NoncurrentVersionTransition]
 
 type ObjectCreationTime = js.Date
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PROVISIONING
+  - typings.awsSdk.awsSdkStrings.READY
+  - java.lang.String
+*/
+type ObjectLambdaAccessPointAliasStatus = _ObjectLambdaAccessPointAliasStatus | String
+
+type ObjectLambdaAccessPointAliasValue = String
 
 type ObjectLambdaAccessPointArn = String
 
@@ -334,9 +371,13 @@ type OperationName = _OperationName | String
 
 type OutputSchemaVersion = V_1 | String
 
+type OwnerOverride = Destination_ | String
+
 type Policy = String
 
 type Prefix = String
+
+type Priority = Double
 
 type PublicAccessBlockEnabled = scala.Boolean
 
@@ -350,6 +391,24 @@ type RegionalBucketList = js.Array[RegionalBucket]
 
 type Regions = js.Array[S3AWSRegion]
 
+type ReplicaKmsKeyID = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Enabled_
+  - typings.awsSdk.awsSdkStrings.Disabled_
+  - java.lang.String
+*/
+type ReplicaModificationsStatus = _ReplicaModificationsStatus | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Enabled_
+  - typings.awsSdk.awsSdkStrings.Disabled_
+  - java.lang.String
+*/
+type ReplicationRuleStatus = _ReplicationRuleStatus | String
+
+type ReplicationRules = js.Array[ReplicationRule]
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.COMPLETED
   - typings.awsSdk.awsSdkStrings.FAILED
@@ -361,6 +420,27 @@ type ReplicationStatus = _ReplicationStatus | String
 
 type ReplicationStatusFilterList = js.Array[ReplicationStatus]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.STANDARD
+  - typings.awsSdk.awsSdkStrings.REDUCED_REDUNDANCY
+  - typings.awsSdk.awsSdkStrings.STANDARD_IA
+  - typings.awsSdk.awsSdkStrings.ONEZONE_IA
+  - typings.awsSdk.awsSdkStrings.INTELLIGENT_TIERING
+  - typings.awsSdk.awsSdkStrings.GLACIER
+  - typings.awsSdk.awsSdkStrings.DEEP_ARCHIVE
+  - typings.awsSdk.awsSdkStrings.OUTPOSTS
+  - typings.awsSdk.awsSdkStrings.GLACIER_IR
+  - java.lang.String
+*/
+type ReplicationStorageClass = _ReplicationStorageClass | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Enabled_
+  - typings.awsSdk.awsSdkStrings.Disabled_
+  - java.lang.String
+*/
+type ReplicationTimeStatus = _ReplicationTimeStatus | String
+
 type ReportPrefixString = String
 
 /* Rewritten from type alias, can be one of: 
@@ -369,6 +449,10 @@ type ReportPrefixString = String
   - java.lang.String
 */
 type RequestedJobStatus = _RequestedJobStatus | String
+
+type Role = String
+
+type RouteList = js.Array[MultiRegionAccessPointRoute]
 
 type S3AWSRegion = String
 
@@ -489,6 +573,13 @@ type SSEKMSKeyId = String
 
 type Setting = scala.Boolean
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Enabled_
+  - typings.awsSdk.awsSdkStrings.Disabled_
+  - java.lang.String
+*/
+type SseKmsEncryptedObjectsStatus = _SseKmsEncryptedObjectsStatus | String
+
 type StorageLensArn = String
 
 type StorageLensConfigurationList = js.Array[ListStorageLensConfigurationEntry]
@@ -510,6 +601,8 @@ type TagKeyString = String
 type TagValueString = String
 
 type TimeStamp = js.Date
+
+type TrafficDialPercentage = Double
 
 type TransitionList = js.Array[Transition]
 

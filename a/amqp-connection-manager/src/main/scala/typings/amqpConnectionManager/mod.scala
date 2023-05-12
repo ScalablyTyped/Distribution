@@ -4,7 +4,6 @@ import typings.amqpConnectionManager.distEsmAmqpConnectionManagerMod.AmqpConnect
 import typings.amqpConnectionManager.distEsmAmqpConnectionManagerMod.ConnectionUrl
 import typings.amqpConnectionManager.distEsmAmqpConnectionManagerMod.IAmqpConnectionManager
 import typings.amqpConnectionManager.distEsmAmqpConnectionManagerMod.default
-import typings.amqpConnectionManager.distEsmChannelWrapperMod.CreateChannelOpts
 import typings.amqpConnectionManager.distEsmChannelWrapperMod.PublishOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -80,28 +79,6 @@ object mod {
     def this(urls: ConnectionUrl, options: AmqpConnectionManagerOptions) = this()
   }
   
-  @JSImport("amqp-connection-manager", "ChannelWrapper")
-  @js.native
-  open class ChannelWrapper protected ()
-    extends typings.amqpConnectionManager.distEsmChannelWrapperMod.default {
-    /**
-      * Create a new ChannelWrapper.
-      *
-      * @param connectionManager - connection manager which
-      *   created this channel.
-      * @param [options] -
-      * @param [options.name] - A name for this channel.  Handy for debugging.
-      * @param [options.setup] - A default setup function to call.  See
-      *   `addSetup` for details.
-      * @param [options.json] - if true, then ChannelWrapper assumes all
-      *   messages passed to `publish()` and `sendToQueue()` are plain JSON objects.
-      *   These will be encoded automatically before being sent.
-      *
-      */
-    def this(connectionManager: IAmqpConnectionManager) = this()
-    def this(connectionManager: IAmqpConnectionManager, options: CreateChannelOpts) = this()
-  }
-  
   inline def connect(): IAmqpConnectionManager = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")().asInstanceOf[IAmqpConnectionManager]
   inline def connect(urls: js.Array[ConnectionUrl]): IAmqpConnectionManager = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(urls.asInstanceOf[js.Any]).asInstanceOf[IAmqpConnectionManager]
   inline def connect(urls: js.Array[ConnectionUrl], options: AmqpConnectionManagerOptions): IAmqpConnectionManager = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(urls.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IAmqpConnectionManager]
@@ -109,6 +86,8 @@ object mod {
   inline def connect(urls: Unit, options: AmqpConnectionManagerOptions): IAmqpConnectionManager = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(urls.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IAmqpConnectionManager]
   inline def connect(urls: ConnectionUrl): IAmqpConnectionManager = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(urls.asInstanceOf[js.Any]).asInstanceOf[IAmqpConnectionManager]
   inline def connect(urls: ConnectionUrl, options: AmqpConnectionManagerOptions): IAmqpConnectionManager = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(urls.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IAmqpConnectionManager]
+  
+  type ChannelWrapper = typings.amqpConnectionManager.distEsmChannelWrapperMod.default
   
   object Options {
     

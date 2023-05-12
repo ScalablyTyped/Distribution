@@ -63,6 +63,13 @@ trait Allowmergecommit extends StObject {
   var gitignore_template: js.UndefOr[String] = js.undefined
   
   /**
+    * @description Whether discussions are enabled.
+    * @default false
+    * @example true
+    */
+  var has_discussions: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * @description Whether downloads are enabled.
     * @default true
     * @example true
@@ -200,6 +207,10 @@ object Allowmergecommit {
     inline def setGitignore_template(value: String): Self = StObject.set(x, "gitignore_template", value.asInstanceOf[js.Any])
     
     inline def setGitignore_templateUndefined: Self = StObject.set(x, "gitignore_template", js.undefined)
+    
+    inline def setHas_discussions(value: Boolean): Self = StObject.set(x, "has_discussions", value.asInstanceOf[js.Any])
+    
+    inline def setHas_discussionsUndefined: Self = StObject.set(x, "has_discussions", js.undefined)
     
     inline def setHas_downloads(value: Boolean): Self = StObject.set(x, "has_downloads", value.asInstanceOf[js.Any])
     

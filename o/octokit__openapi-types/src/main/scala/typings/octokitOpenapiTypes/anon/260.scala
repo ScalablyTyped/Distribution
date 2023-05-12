@@ -6,18 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `260` extends StObject {
   
-  var content: `255`
+  var `503`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['porter_maintenance'] */ js.Any
 }
 object `260` {
   
-  inline def apply(content: `255`): `260` = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+  inline def apply(
+    `503`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['porter_maintenance'] */ js.Any
+  ): `260` = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("503")(`503`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`260`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `260`] (val x: Self) extends AnyVal {
     
-    inline def setContent(value: `255`): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def set503(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['porter_maintenance'] */ js.Any
+    ): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.firebaseAuth
 
 import typings.firebaseApp.mod.FirebaseApp
+import typings.firebaseAppCheckInteropTypes.mod.AppCheckInternalComponentName
 import typings.firebaseAuth.distCordovaSrcCorePersistenceMod.PersistenceInternal
 import typings.firebaseAuth.distCordovaSrcModelAuthMod.AuthInternal
 import typings.firebaseAuth.distCordovaSrcModelAuthMod.ConfigInternal
@@ -30,7 +31,12 @@ object distCordovaSrcCoreAuthAuthImplMod {
   open class AuthImpl protected ()
     extends StObject
        with AuthInternal {
-    def this(app: FirebaseApp, heartbeatServiceProvider: Provider[heartbeat], config: ConfigInternal) = this()
+    def this(
+      app: FirebaseApp,
+      heartbeatServiceProvider: Provider[heartbeat],
+      appCheckServiceProvider: Provider[AppCheckInternalComponentName],
+      config: ConfigInternal
+    ) = this()
     
     /** Returns the current user cast as the internal type */
     def _currentUser: UserInternal = js.native
@@ -47,6 +53,8 @@ object distCordovaSrcCoreAuthAuthImplMod {
     def _updateCurrentUser(user: User, skipBeforeStateCallbacks: Boolean): js.Promise[Unit] = js.native
     
     def _updateErrorMap(errorMap: AuthErrorMap): Unit = js.native
+    
+    /* private */ val appCheckServiceProvider: Any = js.native
     
     /* private */ def assertedPersistence: Any = js.native
     

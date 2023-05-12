@@ -1,5 +1,6 @@
 package typings.nodeJsonDb
 
+import typings.nodeJsonDb.distAdapterIadapterMod.IAdapter
 import typings.nodeJsonDb.distLibJsonDBConfigMod.JsonDBConfig
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
@@ -42,6 +43,16 @@ object mod {
     def this(filename: String, saveOnPush: Unit, humanReadable: Unit, separator: Unit, syncOnSave: Boolean) = this()
   }
   
+  @JSImport("node-json-db", "ConfigWithAdapter")
+  @js.native
+  open class ConfigWithAdapter protected ()
+    extends typings.nodeJsonDb.distLibJsonDBConfigMod.ConfigWithAdapter {
+    def this(adapter: IAdapter[Any]) = this()
+    def this(adapter: IAdapter[Any], saveOnPush: Boolean) = this()
+    def this(adapter: IAdapter[Any], saveOnPush: Boolean, separator: String) = this()
+    def this(adapter: IAdapter[Any], saveOnPush: Unit, separator: String) = this()
+  }
+  
   @JSImport("node-json-db", "DataError")
   @js.native
   open class DataError protected ()
@@ -56,6 +67,21 @@ object mod {
     extends typings.nodeJsonDb.distLibErrorsMod.DatabaseError {
     def this(message: String, id: Number) = this()
     def this(message: String, id: Number, inner: js.Error) = this()
+  }
+  
+  @JSImport("node-json-db", "FileAdapter")
+  @js.native
+  open class FileAdapter protected ()
+    extends typings.nodeJsonDb.distAdapterFileFileAdapterMod.FileAdapter {
+    def this(filename: String, fsync: Boolean) = this()
+  }
+  
+  @JSImport("node-json-db", "JsonAdapter")
+  @js.native
+  open class JsonAdapter protected ()
+    extends typings.nodeJsonDb.distAdapterDataJsonAdapterMod.JsonAdapter {
+    def this(adapter: IAdapter[String]) = this()
+    def this(adapter: IAdapter[String], humanReadable: Boolean) = this()
   }
   
   @JSImport("node-json-db", "JsonDB")
@@ -135,6 +161,14 @@ object mod {
       * @param dataPath  path of the data to retrieve
       */
     def getObject[T](dataPath: String): js.Promise[T] = js.native
+    
+    /**
+      * Same as getData but with your own object type and a possible default value when we can't find the data path
+      * @param dataPath path of the data to retrieve
+      * @param defaultValue value to use when the dataPath doesn't lead to data
+      */
+    def getObjectDefault[T](dataPath: String): js.Promise[T] = js.native
+    def getObjectDefault[T](dataPath: String, defaultValue: T): js.Promise[T] = js.native
     
     /* private */ var getParentData: Any = js.native
     

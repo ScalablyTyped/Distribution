@@ -9,12 +9,12 @@ trait RenewDomainResponse extends StObject {
   /**
     * Identifier for tracking the progress of the request. To query the operation status, use GetOperationDetail.
     */
-  var OperationId: typings.awsSdk.clientsRoute53domainsMod.OperationId
+  var OperationId: js.UndefOr[typings.awsSdk.clientsRoute53domainsMod.OperationId] = js.undefined
 }
 object RenewDomainResponse {
   
-  inline def apply(OperationId: OperationId): RenewDomainResponse = {
-    val __obj = js.Dynamic.literal(OperationId = OperationId.asInstanceOf[js.Any])
+  inline def apply(): RenewDomainResponse = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RenewDomainResponse]
   }
   
@@ -22,5 +22,7 @@ object RenewDomainResponse {
   implicit open class MutableBuilder[Self <: RenewDomainResponse] (val x: Self) extends AnyVal {
     
     inline def setOperationId(value: OperationId): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
+    
+    inline def setOperationIdUndefined: Self = StObject.set(x, "OperationId", js.undefined)
   }
 }

@@ -1,5 +1,7 @@
 package typings.highcharts.mod
 
+import typings.highcharts.highchartsInts.`0`
+import typings.highcharts.highchartsInts.`100`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,7 +70,7 @@ trait PlotSeriesOptions extends StObject {
     * (Highcharts, Highstock, Highmaps, Gantt) Sets the color blending in the
     * boost module.
     */
-  var boostBlending: js.UndefOr[String] = js.undefined
+  var boostBlending: js.UndefOr[OptionsBoostBlendingValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Set the point threshold for when
@@ -106,7 +108,8 @@ trait PlotSeriesOptions extends StObject {
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An additional class name to
     * apply to the series' graphical elements. This option does not replace
-    * default class names of the graphical element.
+    * default class names of the graphical element. Changes to the series'
+    * color will also be reflected in a chart's legend and tooltip.
     */
   var className: js.UndefOr[String] = js.undefined
   
@@ -149,6 +152,9 @@ trait PlotSeriesOptions extends StObject {
     * (Highcharts, Highstock, Highmaps, Gantt) Styled mode only. A specific
     * color index to use for the series, so its graphic representations are
     * given the class name `highcharts-color-{n}`.
+    *
+    * Since v11, CSS variables on the form `--highcharts-color-{n}` make
+    * changing the color scheme very convenient.
     */
   var colorIndex: js.UndefOr[Double] = js.undefined
   
@@ -168,13 +174,13 @@ trait PlotSeriesOptions extends StObject {
     * the development of the series against each other. Adds a `change` field
     * to every point object.
     */
-  var compare: js.UndefOr[String] = js.undefined
+  var compare: js.UndefOr[OptionsCompareValue] = js.undefined
   
   /**
     * (Highstock) When compare is `percent`, this option dictates whether to
     * use 0 or 100 as the base of comparison.
     */
-  var compareBase: js.UndefOr[Double] = js.undefined
+  var compareBase: js.UndefOr[`0` | `100`] = js.undefined
   
   /**
     * (Highstock) Defines if comparison should start from the first point
@@ -197,6 +203,9 @@ trait PlotSeriesOptions extends StObject {
     * (Highcharts, Highstock) Whether to connect a graph line across null
     * points, or render a gap between the two points on either side of the
     * null.
+    *
+    * In stacked area chart, if `connectNulls` is set to true, null points are
+    * interpreted as 0.
     */
   var connectNulls: js.UndefOr[Boolean] = js.undefined
   
@@ -262,12 +271,6 @@ trait PlotSeriesOptions extends StObject {
     * listed under series.color.
     */
   var dashStyle: js.UndefOr[DashStyleValue] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock, Highmaps, Gantt) Indicates data is structured as
-    * columns instead of rows.
-    */
-  var dataAsColumns: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) Data grouping is the concept of sampling the data values into
@@ -342,7 +345,7 @@ trait PlotSeriesOptions extends StObject {
     * Applies only to series types using nearest neighbor search (not direct
     * hover) for tooltip.
     */
-  var findNearestPointBy: js.UndefOr[String] = js.undefined
+  var findNearestPointBy: js.UndefOr[OptionsFindNearestPointByValue] = js.undefined
   
   /**
     * (Highstock) Defines when to display a gap in the graph, together with the
@@ -373,7 +376,7 @@ trait PlotSeriesOptions extends StObject {
     * values, which on a datetime axis is milliseconds. This also applies to
     * the navigator series that inherits gap options from the base series.
     */
-  var gapUnit: js.UndefOr[String] = js.undefined
+  var gapUnit: js.UndefOr[OptionsGapUnitValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Whether to use the Y extremes of the total
@@ -438,6 +441,8 @@ trait PlotSeriesOptions extends StObject {
     */
   var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.undefined
   
+  var legendSymbol: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highcharts, Highstock) Pixel width of the graph line.
     */
@@ -463,10 +468,10 @@ trait PlotSeriesOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for the point markers of
-    * line-like series. Properties like `fillColor`, `lineColor` and
-    * `lineWidth` define the visual appearance of the markers. Other series
-    * types, like column series, don't have markers, but have visual options on
-    * the series level instead.
+    * line and scatter-like series. Properties like `fillColor`, `lineColor`
+    * and `lineWidth` define the visual appearance of the markers. The `symbol`
+    * option defines the shape. Other series types, like column series, don't
+    * have markers, but have visual options on the series level instead.
     *
     * In styled mode, the markers can be styled with the `.highcharts-point`,
     * `.highcharts-point-hover` and `.highcharts-point-select` class names.
@@ -546,7 +551,7 @@ trait PlotSeriesOptions extends StObject {
     * Please note that this options applies to the _series data_, not the
     * interval of the axis ticks, which is independent.
     */
-  var pointIntervalUnit: js.UndefOr[String] = js.undefined
+  var pointIntervalUnit: js.UndefOr[OptionsPointIntervalUnitValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Possible values: `"on"`, `"between"`,
@@ -620,6 +625,11 @@ trait PlotSeriesOptions extends StObject {
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to apply a drop shadow
     * to the graph line. Since 2.3 the shadow can be an object configuration
     * containing `color`, `offsetX`, `offsetY`, `opacity` and `width`.
+    *
+    * Note that in some cases, like stacked columns or other dense layouts, the
+    * series may cast shadows on each other. In that case, the
+    * `chart.seriesGroupShadow` allows applying a common drop shadow to the
+    * whole series group.
     */
   var shadow: js.UndefOr[Boolean | ShadowOptionsObject] = js.undefined
   
@@ -664,6 +674,12 @@ trait PlotSeriesOptions extends StObject {
   var softThreshold: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Sonification/audio chart options
+    * for a series.
+    */
+  var sonification: js.UndefOr[PlotSeriesSonificationOptions] = js.undefined
+  
+  /**
     * (Highcharts, Highstock) Whether to stack the values of each series on top
     * of each other. Possible values are `undefined` to disable, `"normal"` to
     * stack by value or `"percent"`.
@@ -674,7 +690,7 @@ trait PlotSeriesOptions extends StObject {
     * streamgraph series type, the stacking option is set to `"stream"`. The
     * second one is `"overlap"`, which only applies to waterfall series.
     */
-  var stacking: js.UndefOr[String] = js.undefined
+  var stacking: js.UndefOr[OptionsStackingValue] = js.undefined
   
   var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
   
@@ -682,7 +698,7 @@ trait PlotSeriesOptions extends StObject {
     * (Highcharts, Highstock) Whether to apply steps to the line. Possible
     * values are `left`, `center` and `right`.
     */
-  var step: js.UndefOr[String] = js.undefined
+  var step: js.UndefOr[OptionsStepValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Sticky tracking of mouse events.
@@ -786,7 +802,7 @@ object PlotSeriesOptions {
     
     inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    inline def setBoostBlending(value: String): Self = StObject.set(x, "boostBlending", value.asInstanceOf[js.Any])
+    inline def setBoostBlending(value: OptionsBoostBlendingValue): Self = StObject.set(x, "boostBlending", value.asInstanceOf[js.Any])
     
     inline def setBoostBlendingUndefined: Self = StObject.set(x, "boostBlending", js.undefined)
     
@@ -826,9 +842,9 @@ object PlotSeriesOptions {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setCompare(value: String): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
+    inline def setCompare(value: OptionsCompareValue): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
     
-    inline def setCompareBase(value: Double): Self = StObject.set(x, "compareBase", value.asInstanceOf[js.Any])
+    inline def setCompareBase(value: `0` | `100`): Self = StObject.set(x, "compareBase", value.asInstanceOf[js.Any])
     
     inline def setCompareBaseUndefined: Self = StObject.set(x, "compareBase", js.undefined)
     
@@ -874,10 +890,6 @@ object PlotSeriesOptions {
     
     inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
     
-    inline def setDataAsColumns(value: Boolean): Self = StObject.set(x, "dataAsColumns", value.asInstanceOf[js.Any])
-    
-    inline def setDataAsColumnsUndefined: Self = StObject.set(x, "dataAsColumns", js.undefined)
-    
     inline def setDataGrouping(value: DataGroupingOptionsObject): Self = StObject.set(x, "dataGrouping", value.asInstanceOf[js.Any])
     
     inline def setDataGroupingUndefined: Self = StObject.set(x, "dataGrouping", js.undefined)
@@ -908,7 +920,7 @@ object PlotSeriesOptions {
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    inline def setFindNearestPointBy(value: String): Self = StObject.set(x, "findNearestPointBy", value.asInstanceOf[js.Any])
+    inline def setFindNearestPointBy(value: OptionsFindNearestPointByValue): Self = StObject.set(x, "findNearestPointBy", value.asInstanceOf[js.Any])
     
     inline def setFindNearestPointByUndefined: Self = StObject.set(x, "findNearestPointBy", js.undefined)
     
@@ -916,7 +928,7 @@ object PlotSeriesOptions {
     
     inline def setGapSizeUndefined: Self = StObject.set(x, "gapSize", js.undefined)
     
-    inline def setGapUnit(value: String): Self = StObject.set(x, "gapUnit", value.asInstanceOf[js.Any])
+    inline def setGapUnit(value: OptionsGapUnitValue): Self = StObject.set(x, "gapUnit", value.asInstanceOf[js.Any])
     
     inline def setGapUnitUndefined: Self = StObject.set(x, "gapUnit", js.undefined)
     
@@ -951,6 +963,10 @@ object PlotSeriesOptions {
     inline def setLastVisiblePrice(value: SeriesLastVisiblePriceOptionsObject): Self = StObject.set(x, "lastVisiblePrice", value.asInstanceOf[js.Any])
     
     inline def setLastVisiblePriceUndefined: Self = StObject.set(x, "lastVisiblePrice", js.undefined)
+    
+    inline def setLegendSymbol(value: String): Self = StObject.set(x, "legendSymbol", value.asInstanceOf[js.Any])
+    
+    inline def setLegendSymbolUndefined: Self = StObject.set(x, "legendSymbol", js.undefined)
     
     inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
@@ -994,7 +1010,7 @@ object PlotSeriesOptions {
     
     inline def setPointIntervalUndefined: Self = StObject.set(x, "pointInterval", js.undefined)
     
-    inline def setPointIntervalUnit(value: String): Self = StObject.set(x, "pointIntervalUnit", value.asInstanceOf[js.Any])
+    inline def setPointIntervalUnit(value: OptionsPointIntervalUnitValue): Self = StObject.set(x, "pointIntervalUnit", value.asInstanceOf[js.Any])
     
     inline def setPointIntervalUnitUndefined: Self = StObject.set(x, "pointIntervalUnit", js.undefined)
     
@@ -1044,7 +1060,11 @@ object PlotSeriesOptions {
     
     inline def setSoftThresholdUndefined: Self = StObject.set(x, "softThreshold", js.undefined)
     
-    inline def setStacking(value: String): Self = StObject.set(x, "stacking", value.asInstanceOf[js.Any])
+    inline def setSonification(value: PlotSeriesSonificationOptions): Self = StObject.set(x, "sonification", value.asInstanceOf[js.Any])
+    
+    inline def setSonificationUndefined: Self = StObject.set(x, "sonification", js.undefined)
+    
+    inline def setStacking(value: OptionsStackingValue): Self = StObject.set(x, "stacking", value.asInstanceOf[js.Any])
     
     inline def setStackingUndefined: Self = StObject.set(x, "stacking", js.undefined)
     
@@ -1052,7 +1072,7 @@ object PlotSeriesOptions {
     
     inline def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
     
-    inline def setStep(value: String): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: OptionsStepValue): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     

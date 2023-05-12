@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 /**
   * Creates a new sound track.
-  * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music#using-sound-tracks
+  * @see https://doc.babylonjs.com/features/featuresDeepDive/audio/playingSoundsMusic#using-sound-tracks
   * @param scene Define the scene the sound track belongs to
   * @param options
   */
@@ -50,7 +50,7 @@ open class SoundTrack ()
   /**
     * Connect the sound track to an audio analyser allowing some amazing
     * synchronization between the sounds/music and your visualization (VuMeter for instance).
-    * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music#using-the-analyser
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/audio/playingSoundsMusic#using-the-analyser
     * @param analyser The analyser to connect to the engine
     */
   /* CompleteClass */
@@ -92,7 +92,7 @@ open class SoundTrack ()
   /**
     * Switch the panning model to Equal Power:
     * Represents the equal-power panning algorithm, generally regarded as simple and efficient. equalpower is the default value.
-    * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music#creating-a-spatial-3d-sound
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/audio/playingSoundsMusic#creating-a-spatial-3d-sound
     */
   /* CompleteClass */
   override def switchPanningModelToEqualPower(): Unit = js.native
@@ -100,7 +100,7 @@ open class SoundTrack ()
   /**
     * Switch the panning model to HRTF:
     * Renders a stereo output of higher quality than equalpower — it uses a convolution with measured impulse responses from human subjects.
-    * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music#creating-a-spatial-3d-sound
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/audio/playingSoundsMusic#creating-a-spatial-3d-sound
     */
   /* CompleteClass */
   override def switchPanningModelToHRTF(): Unit = js.native

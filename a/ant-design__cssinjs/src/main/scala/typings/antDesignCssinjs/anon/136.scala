@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.Scale
+import typings.csstype.mod.Property.BorderBottomRightRadius
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `136` extends StObject {
   
   var value: js.UndefOr[
-    Scale | (js.Array[
-      (Extract[js.UndefOr[Scale | js.Array[NonNullable[js.UndefOr[Scale]]]], String]) | NonNullable[js.UndefOr[Scale]]
+    (BorderBottomRightRadius[Double | String]) | (js.Array[
+      (Extract[
+        js.UndefOr[
+          (BorderBottomRightRadius[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderBottomRightRadius[Double | String]]]])
+        ], 
+        String
+      ]) | (NonNullable[js.UndefOr[BorderBottomRightRadius[Double | String]]])
     ])
   ] = js.native
 }

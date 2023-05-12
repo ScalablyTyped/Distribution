@@ -1,7 +1,7 @@
 
 # Scala.js typings for opentelemetry__instrumentation
 
-Typings are for version 0.33.0
+Typings are for version 0.39.0
 
 ## Library description:
 Base class for node which OpenTelemetry instrumentation modules extend

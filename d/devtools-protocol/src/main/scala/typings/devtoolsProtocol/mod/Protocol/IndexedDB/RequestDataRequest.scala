@@ -1,5 +1,6 @@
 package typings.devtoolsProtocol.mod.Protocol.IndexedDB
 
+import typings.devtoolsProtocol.mod.Protocol.Storage.StorageBucket
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -33,7 +34,7 @@ trait RequestDataRequest extends StObject {
   var pageSize: integer
   
   /**
-    * At least and at most one of securityOrigin, storageKey must be specified.
+    * At least and at most one of securityOrigin, storageKey, or storageBucket must be specified.
     * Security origin.
     */
   var securityOrigin: js.UndefOr[String] = js.undefined
@@ -42,6 +43,11 @@ trait RequestDataRequest extends StObject {
     * Number of records to skip.
     */
   var skipCount: integer
+  
+  /**
+    * Storage bucket. If not specified, it uses the default bucket.
+    */
+  var storageBucket: js.UndefOr[StorageBucket] = js.undefined
   
   /**
     * Storage key.
@@ -81,6 +87,10 @@ object RequestDataRequest {
     inline def setSecurityOriginUndefined: Self = StObject.set(x, "securityOrigin", js.undefined)
     
     inline def setSkipCount(value: integer): Self = StObject.set(x, "skipCount", value.asInstanceOf[js.Any])
+    
+    inline def setStorageBucket(value: StorageBucket): Self = StObject.set(x, "storageBucket", value.asInstanceOf[js.Any])
+    
+    inline def setStorageBucketUndefined: Self = StObject.set(x, "storageBucket", js.undefined)
     
     inline def setStorageKey(value: String): Self = StObject.set(x, "storageKey", value.asInstanceOf[js.Any])
     

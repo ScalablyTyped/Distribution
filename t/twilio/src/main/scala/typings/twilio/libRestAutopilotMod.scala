@@ -8,23 +8,20 @@ object libRestAutopilotMod {
   
   @JSImport("twilio/lib/rest/Autopilot", JSImport.Namespace)
   @js.native
-  open class ^ protected () extends Autopilot {
-    /**
-      * Initialize autopilot domain
-      *
-      * @param twilio - The twilio client
-      */
-    def this(twilio: typings.twilio.libRestTwilioMod.^) = this()
-  }
+  open class ^ () extends Autopilot
   
   @js.native
   trait Autopilot
-    extends typings.twilio.libBaseDomainMod.^ {
+    extends typings.twilio.libRestAutopilotBaseMod.^ {
     
-    val assistants: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AssistantListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.assistants instead
+      */
+    def assistants: Any = js.native
     
-    val restoreAssistant: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RestoreAssistantListInstance */ Any = js.native
-    
-    val v1: typings.twilio.libRestAutopilotV1Mod.^ = js.native
+    /**
+      * @deprecated - Use v1.restoreAssistant instead
+      */
+    def restoreAssistant: Any = js.native
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__settingregistry
 
-Typings are for version 3.5.0
+Typings are for version 3.6.3
 
 ## Library description:
 Settings registry for Jupyterlab

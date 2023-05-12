@@ -119,6 +119,8 @@ object sapUiBaseObjectPoolMod {
     var __implements__sap_ui_base_Poolable: Boolean
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Called by the `ObjectPool` when this instance will be activated for a caller.
       *
       * The same method will be called after a new instance has been created by an otherwise exhausted pool.
@@ -134,6 +136,8 @@ object sapUiBaseObjectPoolMod {
     ): Unit
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Called by the object pool when an instance is returned to the pool.
       *
       * While no specific implementation is required, poolable objects in general should clean all caller specific

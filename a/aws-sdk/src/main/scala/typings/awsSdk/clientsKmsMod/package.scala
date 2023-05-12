@@ -1,6 +1,7 @@
 package typings.awsSdk.clientsKmsMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.RSAES_OAEP_SHA_256
 import typings.awsSdk.awsSdkStrings.RSA_2048
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
@@ -24,6 +25,8 @@ type AliasNameType = String
 
 type ArnType = String
 
+type AttestationDocumentType = Buffer | js.typedarray.Uint8Array | Blob | String
+
 type BooleanType = Boolean
 
 type CiphertextType = Buffer | js.typedarray.Uint8Array | Blob | String
@@ -41,6 +44,14 @@ type CloudHsmClusterIdType = String
   - typings.awsSdk.awsSdkStrings.USER_LOGGED_IN
   - typings.awsSdk.awsSdkStrings.SUBNET_NOT_FOUND
   - typings.awsSdk.awsSdkStrings.INSUFFICIENT_FREE_ADDRESSES_IN_SUBNET
+  - typings.awsSdk.awsSdkStrings.XKS_PROXY_ACCESS_DENIED
+  - typings.awsSdk.awsSdkStrings.XKS_PROXY_NOT_REACHABLE
+  - typings.awsSdk.awsSdkStrings.XKS_VPC_ENDPOINT_SERVICE_NOT_FOUND
+  - typings.awsSdk.awsSdkStrings.XKS_PROXY_INVALID_RESPONSE
+  - typings.awsSdk.awsSdkStrings.XKS_PROXY_INVALID_CONFIGURATION
+  - typings.awsSdk.awsSdkStrings.XKS_VPC_ENDPOINT_SERVICE_INVALID_CONFIGURATION
+  - typings.awsSdk.awsSdkStrings.XKS_PROXY_TIMED_OUT
+  - typings.awsSdk.awsSdkStrings.XKS_PROXY_INVALID_TLS_CONFIGURATION
   - java.lang.String
 */
 type ConnectionErrorCodeType = _ConnectionErrorCodeType | String
@@ -58,6 +69,13 @@ type ConnectionStateType = _ConnectionStateType | String
 type CustomKeyStoreIdType = String
 
 type CustomKeyStoreNameType = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AWS_CLOUDHSM
+  - typings.awsSdk.awsSdkStrings.EXTERNAL_KEY_STORE
+  - java.lang.String
+*/
+type CustomKeyStoreType = _CustomKeyStoreType | String
 
 type CustomKeyStoresList = js.Array[CustomKeyStoresListEntry]
 
@@ -134,7 +152,7 @@ type GrantList = js.Array[GrantListEntry]
 type GrantNameType = String
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.Decrypt
+  - typings.awsSdk.awsSdkStrings.Decrypt_
   - typings.awsSdk.awsSdkStrings.Encrypt
   - typings.awsSdk.awsSdkStrings.GenerateDataKey
   - typings.awsSdk.awsSdkStrings.GenerateDataKeyWithoutPlaintext
@@ -159,6 +177,8 @@ type GrantOperationList = js.Array[GrantOperation]
 type GrantTokenList = js.Array[GrantTokenType]
 
 type GrantTokenType = String
+
+type KeyEncryptionMechanism = RSAES_OAEP_SHA_256 | String
 
 type KeyIdType = String
 
@@ -196,7 +216,7 @@ type KeySpec = _KeySpec | String
   - typings.awsSdk.awsSdkStrings.PendingDeletion
   - typings.awsSdk.awsSdkStrings.PendingImport
   - typings.awsSdk.awsSdkStrings.PendingReplicaDeletion
-  - typings.awsSdk.awsSdkStrings.Unavailable_
+  - typings.awsSdk.awsSdkStrings.Unavailable__
   - typings.awsSdk.awsSdkStrings.Updating_
   - java.lang.String
 */
@@ -251,6 +271,7 @@ type NumberOfBytesType = Double
   - typings.awsSdk.awsSdkStrings.AWS_KMS
   - typings.awsSdk.awsSdkStrings.EXTERNAL
   - typings.awsSdk.awsSdkStrings.AWS_CLOUDHSM
+  - typings.awsSdk.awsSdkStrings.EXTERNAL_KEY_STORE
   - java.lang.String
 */
 type OriginType = _OriginType | String
@@ -299,6 +320,25 @@ type TagValueType = String
 type TrustAnchorCertificateType = String
 
 type WrappingKeySpec = RSA_2048 | String
+
+type XksKeyIdType = String
+
+type XksProxyAuthenticationAccessKeyIdType = String
+
+type XksProxyAuthenticationRawSecretAccessKeyType = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PUBLIC_ENDPOINT
+  - typings.awsSdk.awsSdkStrings.VPC_ENDPOINT_SERVICE
+  - java.lang.String
+*/
+type XksProxyConnectivityType = _XksProxyConnectivityType | String
+
+type XksProxyUriEndpointType = String
+
+type XksProxyUriPathType = String
+
+type XksProxyVpcEndpointServiceNameType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2014-11-01`

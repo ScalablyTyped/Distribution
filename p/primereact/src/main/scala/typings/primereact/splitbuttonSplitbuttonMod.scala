@@ -13,6 +13,7 @@ import typings.primereact.primereactStrings.ascending
 import typings.primereact.primereactStrings.assertive
 import typings.primereact.primereactStrings.both
 import typings.primereact.primereactStrings.copy
+import typings.primereact.primereactStrings.danger
 import typings.primereact.primereactStrings.date
 import typings.primereact.primereactStrings.decimal
 import typings.primereact.primereactStrings.descending
@@ -22,7 +23,9 @@ import typings.primereact.primereactStrings.execute
 import typings.primereact.primereactStrings.grammar
 import typings.primereact.primereactStrings.grid
 import typings.primereact.primereactStrings.horizontal
+import typings.primereact.primereactStrings.info
 import typings.primereact.primereactStrings.inherit
+import typings.primereact.primereactStrings.large
 import typings.primereact.primereactStrings.link
 import typings.primereact.primereactStrings.list
 import typings.primereact.primereactStrings.listbox
@@ -41,15 +44,19 @@ import typings.primereact.primereactStrings.polite
 import typings.primereact.primereactStrings.popup
 import typings.primereact.primereactStrings.removals
 import typings.primereact.primereactStrings.search
+import typings.primereact.primereactStrings.secondary
 import typings.primereact.primereactStrings.self
+import typings.primereact.primereactStrings.small
 import typings.primereact.primereactStrings.spelling
 import typings.primereact.primereactStrings.step
+import typings.primereact.primereactStrings.success
 import typings.primereact.primereactStrings.tel
 import typings.primereact.primereactStrings.text
 import typings.primereact.primereactStrings.time
 import typings.primereact.primereactStrings.tree
 import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.vertical
+import typings.primereact.primereactStrings.warning
 import typings.primereact.primereactStrings.yes
 import typings.primereact.tooltipTooltipoptionsMod.TooltipOptions
 import typings.react.anon.Html
@@ -105,18 +112,26 @@ object splitbuttonSplitbuttonMod {
     def this(props: SplitButtonProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SplitButtonProps, context: Any) = this()
     
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
     
+    /**
+      * Used to hide the popup.
+      */
     def hide(): Unit = js.native
     
+    /**
+      * Used to show the popup.
+      */
     def show(): Unit = js.native
   }
-  
-  type SplitButtonAppendToType = js.UndefOr[self | HTMLElement | Null]
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
   trait SplitButtonProps extends StObject {
@@ -125,7 +140,11 @@ object splitbuttonSplitbuttonMod {
     
     var accessKey: js.UndefOr[String] = js.undefined
     
-    var appendTo: js.UndefOr[SplitButtonAppendToType] = js.undefined
+    /**
+      * DOM element instance where the overlay panel should be mounted. Valid values are any DOM Element and 'self'. The self value is used to render a component where it is located.
+      * @defaultValue document.body
+      */
+    var appendTo: js.UndefOr[self | HTMLElement | Null] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
@@ -229,21 +248,38 @@ object splitbuttonSplitbuttonMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * ClassName of the button.
+      */
     var buttonClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Props for the main button, any prop is passed implicity to the button element.
+      */
     var buttonProps: js.UndefOr[Any] = js.undefined
     
+    /**
+      * Template of the default button.
+      */
     var buttonTemplate: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TemplateType<SplitButtonProps> */ Any
       ] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -259,16 +295,26 @@ object splitbuttonSplitbuttonMod {
     
     var dir: js.UndefOr[String] = js.undefined
     
+    /**
+      * When present, it specifies that the component should be disabled.
+      * @defaultValue false
+      */
     var disabled: js.UndefOr[Boolean] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
+    /**
+      * Name of the dropdown icon or JSX.Element for dropdown icon.
+      */
     var dropdownIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<SplitButtonProps> */ Any
       ] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Name of the icon.
+      */
     var icon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<SplitButtonProps> */ Any
       ] = js.undefined
@@ -293,24 +339,49 @@ object splitbuttonSplitbuttonMod {
     
     var key: js.UndefOr[Key | Null] = js.undefined
     
+    /**
+      * Text of the button.
+      */
     var label: js.UndefOr[String] = js.undefined
     
     var lang: js.UndefOr[String] = js.undefined
     
+    /**
+      * Display loading icon of the button
+      * @defaultValue false
+      */
     var loading: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Name of the loading icon or JSX.Element for loading icon.
+      */
     var loadingIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<SplitButtonProps> */ Any
       ] = js.undefined
     
+    /**
+      * ClassName of the menu dropdown button.
+      */
     var menuButtonClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Props for the dropdown button, any prop is passed implicity to the dropdown button element.
+      */
     var menuButtonProps: js.UndefOr[Any] = js.undefined
     
+    /**
+      * ClassName class of the overlay menu.
+      */
     var menuClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Inline style of the overlay menu.
+      */
     var menuStyle: js.UndefOr[CSSProperties] = js.undefined
     
+    /**
+      * MenuModel instance to define the overlay items.
+      */
     var model: js.UndefOr[
         js.Array[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuItem */ Any
@@ -339,6 +410,10 @@ object splitbuttonSplitbuttonMod {
     
     var onChange: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke when main button is clicked.
+      * @param {React.MouseEvent<HTMLElement>} event - Browser event
+      */
     var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
     
     var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
@@ -383,6 +458,9 @@ object splitbuttonSplitbuttonMod {
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke when overlay panel becomes hidden.
+      */
     var onHide: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
@@ -457,6 +535,9 @@ object splitbuttonSplitbuttonMod {
     
     var onSelect: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke when overlay panel becomes visible.
+      */
     var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onStalled: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
@@ -483,6 +564,12 @@ object splitbuttonSplitbuttonMod {
     
     var onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Add a border class without a background initially.
+      * @defaultValue false
+      */
+    var outlined: js.UndefOr[Boolean] = js.undefined
+    
     var placeholder: js.UndefOr[String] = js.undefined
     
     var prefix: js.UndefOr[String] = js.undefined
@@ -491,13 +578,39 @@ object splitbuttonSplitbuttonMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    /**
+      * Add a shadow to indicate elevation.
+      * @defaultValue false
+      */
+    var raised: js.UndefOr[Boolean] = js.undefined
+    
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
     
+    var rev: js.UndefOr[String] = js.undefined
+    
     var role: js.UndefOr[AriaRole] = js.undefined
     
+    /**
+      * Add a circular border radius to the button.
+      * @defaultValue false
+      */
+    var rounded: js.UndefOr[Boolean] = js.undefined
+    
     var security: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Defines the style of the button, valid values are "secondary", "success", "info", "warning", "danger".
+      */
+    var severity: js.UndefOr[secondary | success | info | warning | danger] = js.undefined
+    
+    /**
+      * Defines the size of the button, valid values are "small" and "large".
+      */
+    var size: js.UndefOr[small | large] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
     
@@ -511,12 +624,27 @@ object splitbuttonSplitbuttonMod {
     
     var tabIndex: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Add a textual class to the button without a background initially.
+      * @defaultValue false
+      */
+    var text: js.UndefOr[Boolean] = js.undefined
+    
     var title: js.UndefOr[String] = js.undefined
     
+    /**
+      * Content of the tooltip.
+      */
     var tooltip: js.UndefOr[String] = js.undefined
     
+    /**
+      * Configuration of the tooltip, refer to the tooltip documentation for more information.
+      */
     var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
     
+    /**
+      * The properties of CSSTransition can be customized, except for "nodeRef" and "in" properties.
+      */
     var transitionOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSTransitionProps */ Any
       ] = js.undefined
@@ -527,6 +655,10 @@ object splitbuttonSplitbuttonMod {
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
+    /**
+      * When present, it specifies that the element should be visible.
+      * @defaultValue true
+      */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
@@ -549,7 +681,7 @@ object splitbuttonSplitbuttonMod {
       
       inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      inline def setAppendTo(value: SplitButtonAppendToType): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+      inline def setAppendTo(value: self | HTMLElement): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
       
       inline def setAppendToNull: Self = StObject.set(x, "appendTo", null)
       
@@ -757,6 +889,10 @@ object splitbuttonSplitbuttonMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -787,9 +923,13 @@ object splitbuttonSplitbuttonMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -1261,6 +1401,10 @@ object splitbuttonSplitbuttonMod {
       
       inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
       
+      inline def setOutlined(value: Boolean): Self = StObject.set(x, "outlined", value.asInstanceOf[js.Any])
+      
+      inline def setOutlinedUndefined: Self = StObject.set(x, "outlined", js.undefined)
+      
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
@@ -1277,6 +1421,14 @@ object splitbuttonSplitbuttonMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRaised(value: Boolean): Self = StObject.set(x, "raised", value.asInstanceOf[js.Any])
+      
+      inline def setRaisedUndefined: Self = StObject.set(x, "raised", js.undefined)
+      
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1285,13 +1437,29 @@ object splitbuttonSplitbuttonMod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
+      
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
+      inline def setRounded(value: Boolean): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
+      
+      inline def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
+      
       inline def setSecurity(value: String): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
       
       inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
+      
+      inline def setSeverity(value: secondary | success | info | warning | danger): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+      
+      inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
+      
+      inline def setSize(value: small | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
       inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
       
@@ -1316,6 +1484,10 @@ object splitbuttonSplitbuttonMod {
       inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
       
       inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+      
+      inline def setText(value: Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

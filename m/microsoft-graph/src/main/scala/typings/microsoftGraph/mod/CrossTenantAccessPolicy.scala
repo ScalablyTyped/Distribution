@@ -14,6 +14,12 @@ trait CrossTenantAccessPolicy
     */
   var default: js.UndefOr[NullableOption[CrossTenantAccessPolicyConfigurationDefault]] = js.undefined
   
+  /**
+    * Used to specify which Microsoft clouds an organization would like to collaborate with. By default, this value is empty.
+    * Supported values for this field are: microsoftonline.com, microsoftonline.us, and partner.microsoftonline.cn.
+    */
+  var allowedCloudEndpoints: js.UndefOr[js.Array[String]] = js.undefined
+  
   // Defines partner-specific configurations for external Azure Active Directory organizations.
   var partners: js.UndefOr[NullableOption[js.Array[CrossTenantAccessPolicyConfigurationPartner]]] = js.undefined
 }
@@ -26,6 +32,12 @@ object CrossTenantAccessPolicy {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: CrossTenantAccessPolicy] (val x: Self) extends AnyVal {
+    
+    inline def setAllowedCloudEndpoints(value: js.Array[String]): Self = StObject.set(x, "allowedCloudEndpoints", value.asInstanceOf[js.Any])
+    
+    inline def setAllowedCloudEndpointsUndefined: Self = StObject.set(x, "allowedCloudEndpoints", js.undefined)
+    
+    inline def setAllowedCloudEndpointsVarargs(value: String*): Self = StObject.set(x, "allowedCloudEndpoints", js.Array(value*))
     
     inline def setDefault(value: NullableOption[CrossTenantAccessPolicyConfigurationDefault]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

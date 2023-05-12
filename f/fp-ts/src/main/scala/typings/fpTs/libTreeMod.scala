@@ -138,6 +138,9 @@ object libTreeMod {
   
   inline def flap[A](a: A): js.Function1[/* fab */ Tree_[js.Function1[/* a */ A, Any]], Tree_[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flap")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ Tree_[js.Function1[/* a */ A, Any]], Tree_[Any]]]
   
+  inline def flatMap[A, B](f: js.Function1[/* a */ A, Tree_[B]]): js.Function1[/* ma */ Tree_[A], Tree_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Tree_[A], Tree_[B]]]
+  inline def flatMap[A, B](ma: Tree_[A], f: js.Function1[/* a */ A, Tree_[B]]): Tree_[B] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(ma.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Tree_[B]]
+  
   inline def flatten[A](mma: Tree_[Tree_[A]]): Tree_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(mma.asInstanceOf[js.Any]).asInstanceOf[Tree_[A]]
   
   inline def fold[A, B](f: js.Function2[/* a */ A, /* bs */ js.Array[B], B]): js.Function1[/* tree */ Tree_[A], B] = ^.asInstanceOf[js.Dynamic].applyDynamic("fold")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* tree */ Tree_[A], B]]

@@ -1,7 +1,7 @@
 package typings.officeJsPreview.Excel.Interfaces
 
 import typings.officeJsPreview.Excel.DocumentTaskChangeAction
-import typings.officeJsPreview.Excel.Identity
+import typings.officeJsPreview.Excel.EmailIdentity
 import typings.officeJsPreview.officeJsPreviewStrings.assign
 import typings.officeJsPreview.officeJsPreviewStrings.create
 import typings.officeJsPreview.officeJsPreviewStrings.remove
@@ -28,7 +28,7 @@ trait DocumentTaskChangeData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var assignee: js.UndefOr[Identity] = js.undefined
+  var assignee: js.UndefOr[EmailIdentity] = js.undefined
   
   /**
     * Represents the identity of the user who made the task change.
@@ -37,7 +37,7 @@ trait DocumentTaskChangeData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var changedBy: js.UndefOr[Identity] = js.undefined
+  var changedBy: js.UndefOr[EmailIdentity] = js.undefined
   
   /**
     * Represents the ID of the `Comment` or `CommentReply` to which the task change is anchored.
@@ -145,11 +145,11 @@ object DocumentTaskChangeData {
   @scala.inline
   implicit open class MutableBuilder[Self <: DocumentTaskChangeData] (val x: Self) extends AnyVal {
     
-    inline def setAssignee(value: Identity): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
+    inline def setAssignee(value: EmailIdentity): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
     
     inline def setAssigneeUndefined: Self = StObject.set(x, "assignee", js.undefined)
     
-    inline def setChangedBy(value: Identity): Self = StObject.set(x, "changedBy", value.asInstanceOf[js.Any])
+    inline def setChangedBy(value: EmailIdentity): Self = StObject.set(x, "changedBy", value.asInstanceOf[js.Any])
     
     inline def setChangedByUndefined: Self = StObject.set(x, "changedBy", js.undefined)
     

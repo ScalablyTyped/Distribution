@@ -44,7 +44,7 @@ trait summaryStatisticsForAgeSummaryStatisticsForAgeParams extends StObject {
   /**
     * The desired units of the age result.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatisticsForAge.html#summaryStatisticsForAge)
+    * [Read more...](global.html#unit)
     */
   var unit: years | months | days | hours | minutes | seconds
   

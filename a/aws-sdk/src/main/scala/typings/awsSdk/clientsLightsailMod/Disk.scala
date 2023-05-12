@@ -27,6 +27,11 @@ trait Disk extends StObject {
   var attachmentState: js.UndefOr[String] = js.undefined
   
   /**
+    * The status of automatically mounting a storage disk to a virtual computer.  This parameter only applies to Lightsail for Research resources. 
+    */
+  var autoMountStatus: js.UndefOr[AutoMountStatus] = js.undefined
+  
+  /**
     * The date when the disk was created.
     */
   var createdAt: js.UndefOr[js.Date] = js.undefined
@@ -118,6 +123,10 @@ object Disk {
     inline def setAttachmentState(value: String): Self = StObject.set(x, "attachmentState", value.asInstanceOf[js.Any])
     
     inline def setAttachmentStateUndefined: Self = StObject.set(x, "attachmentState", js.undefined)
+    
+    inline def setAutoMountStatus(value: AutoMountStatus): Self = StObject.set(x, "autoMountStatus", value.asInstanceOf[js.Any])
+    
+    inline def setAutoMountStatusUndefined: Self = StObject.set(x, "autoMountStatus", js.undefined)
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     

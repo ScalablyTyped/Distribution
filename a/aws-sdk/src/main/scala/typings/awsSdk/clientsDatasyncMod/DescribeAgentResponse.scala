@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeAgentResponse extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the agent.
+    * The ARN of the agent.
     */
   var AgentArn: js.UndefOr[typings.awsSdk.clientsDatasyncMod.AgentArn] = js.undefined
   

@@ -92,6 +92,12 @@ object ObjectFlags extends StObject {
   /* 32 */ val Mapped: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ObjectFlags.Mapped & Double = js.native
   
   @js.native
+  sealed trait None
+    extends StObject
+       with ObjectFlags
+  /* 0 */ val None: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ObjectFlags.None & Double = js.native
+  
+  @js.native
   sealed trait ObjectLiteral
     extends StObject
        with ObjectFlags

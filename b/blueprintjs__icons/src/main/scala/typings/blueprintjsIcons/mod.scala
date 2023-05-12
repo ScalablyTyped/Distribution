@@ -1,6 +1,6 @@
 package typings.blueprintjsIcons
 
-import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsIcons.libEsmGeneratedIcons16pxBlueprintIcons16Mod.BlueprintIcons16Id
 import typings.blueprintjsIcons.libEsmTypeUtilsPascalCaseMod.PascalCase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -302,6 +302,11 @@ object mod {
     def automaticUpdates: String = js.native
     
     inline def automaticUpdates_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("automatic-updates")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons", "IconCodepoints.axle")
+    @js.native
+    def axle: String = js.native
+    inline def axle_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("axle")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons", "IconCodepoints.backlink")
     @js.native
@@ -641,6 +646,13 @@ object mod {
     @JSImport("@blueprintjs/icons", "IconCodepoints.cross")
     @js.native
     def cross: String = js.native
+    
+    @JSImport("@blueprintjs/icons", "IconCodepoints.cross-circle")
+    @js.native
+    def crossCircle: String = js.native
+    
+    inline def crossCircle_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cross-circle")(x.asInstanceOf[js.Any])
+    
     inline def cross_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cross")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons", "IconCodepoints.crown")
@@ -1546,6 +1558,11 @@ object mod {
     def insert: String = js.native
     inline def insert_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("insert")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons", "IconCodepoints.intelligence")
+    @js.native
+    def intelligence: String = js.native
+    inline def intelligence_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("intelligence")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons", "IconCodepoints.intersection")
     @js.native
     def intersection: String = js.native
@@ -1811,6 +1828,11 @@ object mod {
     def lock: String = js.native
     inline def lock_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lock")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons", "IconCodepoints.locomotive")
+    @js.native
+    def locomotive: String = js.native
+    inline def locomotive_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("locomotive")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons", "IconCodepoints.log-in")
     @js.native
     def logIn: String = js.native
@@ -1943,6 +1965,11 @@ object mod {
     inline def modalFilled_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modal-filled")(x.asInstanceOf[js.Any])
     
     inline def modal_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modal")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons", "IconCodepoints.model")
+    @js.native
+    def model: String = js.native
+    inline def model_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("model")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons", "IconCodepoints.moon")
     @js.native
@@ -2514,6 +2541,11 @@ object mod {
     
     inline def sendTo_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("send-to")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons", "IconCodepoints.sensor")
+    @js.native
+    def sensor: String = js.native
+    inline def sensor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sensor")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons", "IconCodepoints.series-add")
     @js.native
     def seriesAdd: String = js.native
@@ -2764,6 +2796,16 @@ object mod {
     @js.native
     def style: String = js.native
     inline def style_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("style")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons", "IconCodepoints.subscript")
+    @js.native
+    def subscript: String = js.native
+    inline def subscript_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("subscript")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons", "IconCodepoints.superscript")
+    @js.native
+    def superscript: String = js.native
+    inline def superscript_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("superscript")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons", "IconCodepoints.swap-horizontal")
     @js.native
@@ -3464,6 +3506,12 @@ object mod {
     def AUTOMATIC_UPDATES: BlueprintIcons16Id = js.native
     inline def AUTOMATIC_UPDATES_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUTOMATIC_UPDATES")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons", "IconNames.AXLE")
+    @js.native
+    def AXLE_ : BlueprintIcons16Id = js.native
+    
+    inline def AXLE__=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AXLE")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons", "IconNames.Add")
     @js.native
     def Add: BlueprintIcons16Id = js.native
@@ -3710,6 +3758,11 @@ object mod {
     @js.native
     def AutomaticUpdates: BlueprintIcons16Id = js.native
     inline def AutomaticUpdates_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AutomaticUpdates")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons", "IconNames.Axle")
+    @js.native
+    def Axle: BlueprintIcons16Id = js.native
+    inline def Axle_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Axle")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons", "IconNames.BACKLINK")
     @js.native
@@ -4134,6 +4187,11 @@ object mod {
     @js.native
     def CROSS_ : BlueprintIcons16Id = js.native
     
+    @JSImport("@blueprintjs/icons", "IconNames.CROSS_CIRCLE")
+    @js.native
+    def CROSS_CIRCLE: BlueprintIcons16Id = js.native
+    inline def CROSS_CIRCLE_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CROSS_CIRCLE")(x.asInstanceOf[js.Any])
+    
     inline def CROSS__=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CROSS")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons", "IconNames.CROWN")
@@ -4406,6 +4464,12 @@ object mod {
     @JSImport("@blueprintjs/icons", "IconNames.Cross")
     @js.native
     def Cross: BlueprintIcons16Id = js.native
+    
+    @JSImport("@blueprintjs/icons", "IconNames.CrossCircle")
+    @js.native
+    def CrossCircle: BlueprintIcons16Id = js.native
+    inline def CrossCircle_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CrossCircle")(x.asInstanceOf[js.Any])
+    
     inline def Cross_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cross")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons", "IconNames.Crown")
@@ -5982,6 +6046,12 @@ object mod {
     
     inline def INSERT__=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INSERT")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons", "IconNames.INTELLIGENCE")
+    @js.native
+    def INTELLIGENCE_ : BlueprintIcons16Id = js.native
+    
+    inline def INTELLIGENCE__=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INTELLIGENCE")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons", "IconNames.INTERSECTION")
     @js.native
     def INTERSECTION_ : BlueprintIcons16Id = js.native
@@ -6085,6 +6155,11 @@ object mod {
     @js.native
     def Insert: BlueprintIcons16Id = js.native
     inline def Insert_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Insert")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons", "IconNames.Intelligence")
+    @js.native
+    def Intelligence: BlueprintIcons16Id = js.native
+    inline def Intelligence_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Intelligence")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons", "IconNames.Intersection")
     @js.native
@@ -6391,6 +6466,12 @@ object mod {
     
     inline def LOCK__=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOCK")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons", "IconNames.LOCOMOTIVE")
+    @js.native
+    def LOCOMOTIVE_ : BlueprintIcons16Id = js.native
+    
+    inline def LOCOMOTIVE__=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOCOMOTIVE")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons", "IconNames.LOG_IN")
     @js.native
     def LOG_IN: BlueprintIcons16Id = js.native
@@ -6550,6 +6631,11 @@ object mod {
     def Lock: BlueprintIcons16Id = js.native
     inline def Lock_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Lock")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons", "IconNames.Locomotive")
+    @js.native
+    def Locomotive: BlueprintIcons16Id = js.native
+    inline def Locomotive_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locomotive")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons", "IconNames.LogIn")
     @js.native
     def LogIn: BlueprintIcons16Id = js.native
@@ -6672,6 +6758,12 @@ object mod {
     inline def MODAL_FILLED_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODAL_FILLED")(x.asInstanceOf[js.Any])
     
     inline def MODAL__=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODAL")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons", "IconNames.MODEL")
+    @js.native
+    def MODEL_ : BlueprintIcons16Id = js.native
+    
+    inline def MODEL__=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons", "IconNames.MOON")
     @js.native
@@ -6816,6 +6908,11 @@ object mod {
     inline def ModalFilled_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ModalFilled")(x.asInstanceOf[js.Any])
     
     inline def Modal_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Modal")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons", "IconNames.Model")
+    @js.native
+    def Model: BlueprintIcons16Id = js.native
+    inline def Model_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Model")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons", "IconNames.Moon")
     @js.native
@@ -7797,6 +7894,12 @@ object mod {
     def SEND_TO_MAP: BlueprintIcons16Id = js.native
     inline def SEND_TO_MAP_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEND_TO_MAP")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons", "IconNames.SENSOR")
+    @js.native
+    def SENSOR_ : BlueprintIcons16Id = js.native
+    
+    inline def SENSOR__=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SENSOR")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons", "IconNames.SERIES_ADD")
     @js.native
     def SERIES_ADD: BlueprintIcons16Id = js.native
@@ -8032,6 +8135,18 @@ object mod {
     
     inline def STYLE__=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STYLE")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons", "IconNames.SUBSCRIPT")
+    @js.native
+    def SUBSCRIPT_ : BlueprintIcons16Id = js.native
+    
+    inline def SUBSCRIPT__=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUBSCRIPT")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons", "IconNames.SUPERSCRIPT")
+    @js.native
+    def SUPERSCRIPT_ : BlueprintIcons16Id = js.native
+    
+    inline def SUPERSCRIPT__=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUPERSCRIPT")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons", "IconNames.SWAP_HORIZONTAL")
     @js.native
     def SWAP_HORIZONTAL: BlueprintIcons16Id = js.native
@@ -8160,6 +8275,11 @@ object mod {
     inline def SendToMap_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SendToMap")(x.asInstanceOf[js.Any])
     
     inline def SendTo_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SendTo")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons", "IconNames.Sensor")
+    @js.native
+    def Sensor: BlueprintIcons16Id = js.native
+    inline def Sensor_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sensor")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons", "IconNames.SeriesAdd")
     @js.native
@@ -8384,6 +8504,16 @@ object mod {
     @js.native
     def Style: BlueprintIcons16Id = js.native
     inline def Style_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Style")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons", "IconNames.Subscript")
+    @js.native
+    def Subscript: BlueprintIcons16Id = js.native
+    inline def Subscript_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Subscript")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons", "IconNames.Superscript")
+    @js.native
+    def Superscript: BlueprintIcons16Id = js.native
+    inline def Superscript_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Superscript")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons", "IconNames.SwapHorizontal")
     @js.native
@@ -9345,6 +9475,10 @@ object mod {
     @js.native
     val AutomaticUpdates: js.Array[String] = js.native
     
+    @JSImport("@blueprintjs/icons", "IconSvgPaths16.Axle")
+    @js.native
+    val Axle: js.Array[String] = js.native
+    
     @JSImport("@blueprintjs/icons", "IconSvgPaths16.Backlink")
     @js.native
     val Backlink: js.Array[String] = js.native
@@ -9592,6 +9726,10 @@ object mod {
     @JSImport("@blueprintjs/icons", "IconSvgPaths16.Cross")
     @js.native
     val Cross: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons", "IconSvgPaths16.CrossCircle")
+    @js.native
+    val CrossCircle: js.Array[String] = js.native
     
     @JSImport("@blueprintjs/icons", "IconSvgPaths16.Crown")
     @js.native
@@ -10233,6 +10371,10 @@ object mod {
     @js.native
     val Insert: js.Array[String] = js.native
     
+    @JSImport("@blueprintjs/icons", "IconSvgPaths16.Intelligence")
+    @js.native
+    val Intelligence: js.Array[String] = js.native
+    
     @JSImport("@blueprintjs/icons", "IconSvgPaths16.Intersection")
     @js.native
     val Intersection: js.Array[String] = js.native
@@ -10417,6 +10559,10 @@ object mod {
     @js.native
     val Lock: js.Array[String] = js.native
     
+    @JSImport("@blueprintjs/icons", "IconSvgPaths16.Locomotive")
+    @js.native
+    val Locomotive: js.Array[String] = js.native
+    
     @JSImport("@blueprintjs/icons", "IconSvgPaths16.LogIn")
     @js.native
     val LogIn: js.Array[String] = js.native
@@ -10508,6 +10654,10 @@ object mod {
     @JSImport("@blueprintjs/icons", "IconSvgPaths16.ModalFilled")
     @js.native
     val ModalFilled: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons", "IconSvgPaths16.Model")
+    @js.native
+    val Model: js.Array[String] = js.native
     
     @JSImport("@blueprintjs/icons", "IconSvgPaths16.Moon")
     @js.native
@@ -10921,6 +11071,10 @@ object mod {
     @js.native
     val SendToMap: js.Array[String] = js.native
     
+    @JSImport("@blueprintjs/icons", "IconSvgPaths16.Sensor")
+    @js.native
+    val Sensor: js.Array[String] = js.native
+    
     @JSImport("@blueprintjs/icons", "IconSvgPaths16.SeriesAdd")
     @js.native
     val SeriesAdd: js.Array[String] = js.native
@@ -11096,6 +11250,14 @@ object mod {
     @JSImport("@blueprintjs/icons", "IconSvgPaths16.Style")
     @js.native
     val Style: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons", "IconSvgPaths16.Subscript")
+    @js.native
+    val Subscript: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons", "IconSvgPaths16.Superscript")
+    @js.native
+    val Superscript: js.Array[String] = js.native
     
     @JSImport("@blueprintjs/icons", "IconSvgPaths16.SwapHorizontal")
     @js.native
@@ -11608,6 +11770,10 @@ object mod {
     @js.native
     val AutomaticUpdates: js.Array[String] = js.native
     
+    @JSImport("@blueprintjs/icons", "IconSvgPaths20.Axle")
+    @js.native
+    val Axle: js.Array[String] = js.native
+    
     @JSImport("@blueprintjs/icons", "IconSvgPaths20.Backlink")
     @js.native
     val Backlink: js.Array[String] = js.native
@@ -11855,6 +12021,10 @@ object mod {
     @JSImport("@blueprintjs/icons", "IconSvgPaths20.Cross")
     @js.native
     val Cross: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons", "IconSvgPaths20.CrossCircle")
+    @js.native
+    val CrossCircle: js.Array[String] = js.native
     
     @JSImport("@blueprintjs/icons", "IconSvgPaths20.Crown")
     @js.native
@@ -12496,6 +12666,10 @@ object mod {
     @js.native
     val Insert: js.Array[String] = js.native
     
+    @JSImport("@blueprintjs/icons", "IconSvgPaths20.Intelligence")
+    @js.native
+    val Intelligence: js.Array[String] = js.native
+    
     @JSImport("@blueprintjs/icons", "IconSvgPaths20.Intersection")
     @js.native
     val Intersection: js.Array[String] = js.native
@@ -12680,6 +12854,10 @@ object mod {
     @js.native
     val Lock: js.Array[String] = js.native
     
+    @JSImport("@blueprintjs/icons", "IconSvgPaths20.Locomotive")
+    @js.native
+    val Locomotive: js.Array[String] = js.native
+    
     @JSImport("@blueprintjs/icons", "IconSvgPaths20.LogIn")
     @js.native
     val LogIn: js.Array[String] = js.native
@@ -12771,6 +12949,10 @@ object mod {
     @JSImport("@blueprintjs/icons", "IconSvgPaths20.ModalFilled")
     @js.native
     val ModalFilled: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons", "IconSvgPaths20.Model")
+    @js.native
+    val Model: js.Array[String] = js.native
     
     @JSImport("@blueprintjs/icons", "IconSvgPaths20.Moon")
     @js.native
@@ -13184,6 +13366,10 @@ object mod {
     @js.native
     val SendToMap: js.Array[String] = js.native
     
+    @JSImport("@blueprintjs/icons", "IconSvgPaths20.Sensor")
+    @js.native
+    val Sensor: js.Array[String] = js.native
+    
     @JSImport("@blueprintjs/icons", "IconSvgPaths20.SeriesAdd")
     @js.native
     val SeriesAdd: js.Array[String] = js.native
@@ -13359,6 +13545,14 @@ object mod {
     @JSImport("@blueprintjs/icons", "IconSvgPaths20.Style")
     @js.native
     val Style: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons", "IconSvgPaths20.Subscript")
+    @js.native
+    val Subscript: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons", "IconSvgPaths20.Superscript")
+    @js.native
+    val Superscript: js.Array[String] = js.native
     
     @JSImport("@blueprintjs/icons", "IconSvgPaths20.SwapHorizontal")
     @js.native

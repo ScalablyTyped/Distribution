@@ -12,7 +12,7 @@ trait ModifyTargetGroupInput extends StObject {
   var HealthCheckEnabled: js.UndefOr[typings.awsSdk.clientsElbv2Mod.HealthCheckEnabled] = js.undefined
   
   /**
-    * The approximate amount of time, in seconds, between health checks of an individual target. For TCP health checks, the supported values are 10 or 30 seconds.
+    * The approximate amount of time, in seconds, between health checks of an individual target.
     */
   var HealthCheckIntervalSeconds: js.UndefOr[typings.awsSdk.clientsElbv2Mod.HealthCheckIntervalSeconds] = js.undefined
   
@@ -42,7 +42,7 @@ trait ModifyTargetGroupInput extends StObject {
   var HealthyThresholdCount: js.UndefOr[HealthCheckThresholdCount] = js.undefined
   
   /**
-    * [HTTP/HTTPS health checks] The HTTP or gRPC codes to use when checking for a successful response from a target.
+    * [HTTP/HTTPS health checks] The HTTP or gRPC codes to use when checking for a successful response from a target. For target groups with a protocol of TCP, TCP_UDP, UDP or TLS the range is 200-599. For target groups with a protocol of HTTP or HTTPS, the range is 200-499. For target groups with a protocol of GENEVE, the range is 200-399.
     */
   var Matcher: js.UndefOr[typings.awsSdk.clientsElbv2Mod.Matcher] = js.undefined
   
@@ -52,7 +52,7 @@ trait ModifyTargetGroupInput extends StObject {
   var TargetGroupArn: typings.awsSdk.clientsElbv2Mod.TargetGroupArn
   
   /**
-    * The number of consecutive health check failures required before considering the target unhealthy. For target groups with a protocol of TCP or TLS, this value must be the same as the healthy threshold count.
+    * The number of consecutive health check failures required before considering the target unhealthy.
     */
   var UnhealthyThresholdCount: js.UndefOr[HealthCheckThresholdCount] = js.undefined
 }

@@ -16,7 +16,7 @@ open class AudioHandler protected ()
   /**
     * Create a new AudioHandler instance.
     *
-    * @param {AppBase} app - The running {@link AppBase}.
+    * @param {import('../app-base.js').AppBase} app - The running {@link AppBase}.
     * @hideconstructor
     */
   def this(app: typings.playcanvas.mod.AppBase) = this()

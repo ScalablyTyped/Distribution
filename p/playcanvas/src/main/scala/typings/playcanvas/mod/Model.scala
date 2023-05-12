@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('./graph-node.js').GraphNode} GraphNode */
 /**
   * A model is a graphical object that can be added to or removed from a scene. It contains a
   * hierarchy and any number of mesh instances.
@@ -35,7 +34,7 @@ open class Model () extends StObject {
     *
     * @example
     * model.generateWireframe();
-    * for (var i = 0; i < model.meshInstances.length; i++) {
+    * for (let i = 0; i < model.meshInstances.length; i++) {
     *     model.meshInstances[i].renderStyle = pc.RENDERSTYLE_WIREFRAME;
     * }
     */
@@ -52,9 +51,9 @@ open class Model () extends StObject {
   /**
     * The root node of the model's graph node hierarchy.
     *
-    * @type {GraphNode}
+    * @type {import('./graph-node.js').GraphNode|null}
     */
-  var graph: GraphNode = js.native
+  var graph: GraphNode | Null = js.native
   
   var lights: js.Array[Any] = js.native
   

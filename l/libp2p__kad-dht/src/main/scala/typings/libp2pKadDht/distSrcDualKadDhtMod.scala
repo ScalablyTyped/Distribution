@@ -1,39 +1,29 @@
 package typings.libp2pKadDht
 
-import typings.libp2pInterfaceDht.mod.AddingPeerEvent
-import typings.libp2pInterfaceDht.mod.DialingPeerEvent
-import typings.libp2pInterfaceDht.mod.DualDHT
-import typings.libp2pInterfaceDht.mod.PeerResponseEvent
-import typings.libp2pInterfaceDht.mod.ProviderEvent
-import typings.libp2pInterfaceDht.mod.QueryErrorEvent
-import typings.libp2pInterfaceDht.mod.QueryEvent
-import typings.libp2pInterfaceDht.mod.QueryOptions
-import typings.libp2pInterfaceDht.mod.SendingQueryEvent
-import typings.libp2pInterfaceDht.mod.ValueEvent
-import typings.libp2pInterfaces.mod.AbortOptions
-import typings.libp2pKadDht.distSrcKadDhtMod.KadDHT
+import typings.libp2pInterfacePeerDiscovery.mod.PeerDiscoveryEvents
+import typings.libp2pInterfaces.eventsMod.EventEmitter
+import typings.libp2pKadDht.distSrcKadDhtMod.DefaultKadDHT
+import typings.libp2pKadDht.libp2pKadDhtStrings.`@libp2pSlashdual-kad-dht`
+import typings.libp2pKadDht.mod.DualKadDHT
 import typings.libp2pKadDht.mod.KadDHTComponents
-import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
-import typings.multiformats.mod.CID
-import typings.std.AsyncGenerator
+import typings.libp2pKadDht.mod.KadDHTInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distSrcDualKadDhtMod {
   
-  @JSImport("@libp2p/kad-dht/dist/src/dual-kad-dht", "DualKadDHT")
+  @JSImport("@libp2p/kad-dht/dist/src/dual-kad-dht", "DefaultDualKadDHT")
   @js.native
-  open class DualKadDHT protected () extends DualDHT {
-    def this(components: KadDHTComponents, wan: KadDHT, lan: KadDHT) = this()
+  open class DefaultDualKadDHT protected ()
+    extends EventEmitter[PeerDiscoveryEvents]
+       with DualKadDHT {
+    def this(components: KadDHTComponents) = this()
+    def this(components: KadDHTComponents, init: KadDHTInit) = this()
     
     val components: KadDHTComponents = js.native
     
-    /**
-      * Search the dht for up to `K` providers of the given CID
-      */
-    def findProviders(key: CID[Any, Double, Double, Version]): AsyncGenerator[QueryEvent, Unit, Unit] = js.native
-    def findProviders(key: CID[Any, Double, Double, Version], options: QueryOptions): AsyncGenerator[QueryEvent, Unit, Unit] = js.native
+    /* private */ val contentRouting: Any = js.native
     
     var get: Any = js.native
     
@@ -43,21 +33,9 @@ object distSrcDualKadDhtMod {
     def isStarted(): Boolean = js.native
     
     @JSName("lan")
-    val lan_DualKadDHT: KadDHT = js.native
+    val lan_DefaultDualKadDHT: DefaultKadDHT = js.native
     
-    /**
-      * Announce to the network that we can provide given key's value
-      */
-    def provide(key: CID[Any, Double, Double, Version]): AsyncGenerator[
-        SendingQueryEvent | PeerResponseEvent | QueryErrorEvent | ProviderEvent | ValueEvent | AddingPeerEvent | DialingPeerEvent, 
-        Unit, 
-        Any
-      ] = js.native
-    def provide(key: CID[Any, Double, Double, Version], options: AbortOptions): AsyncGenerator[
-        SendingQueryEvent | PeerResponseEvent | QueryErrorEvent | ProviderEvent | ValueEvent | AddingPeerEvent | DialingPeerEvent, 
-        Unit, 
-        Any
-      ] = js.native
+    /* private */ val peerRouting: Any = js.native
     
     /**
       * Start listening to incoming connections.
@@ -71,9 +49,9 @@ object distSrcDualKadDhtMod {
     def stop(): js.Promise[Unit] = js.native
     
     @JSName(js.Symbol.toStringTag)
-    var toStringTag_DualKadDHT: js.Function0[String] = js.native
+    val toStringTag: `@libp2pSlashdual-kad-dht` = js.native
     
     @JSName("wan")
-    val wan_DualKadDHT: KadDHT = js.native
+    val wan_DefaultDualKadDHT: DefaultKadDHT = js.native
   }
 }

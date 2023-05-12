@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.immutable.mod.Collection
 import typings.immutable.mod.Collection.Keyed
 import typings.immutable.mod.Collection.Set
+import typings.immutable.mod.FromJS_
 import typings.immutable.mod.Map
 import typings.immutable.mod.OrderedMap
 import typings.immutable.mod.OrderedSet
@@ -578,6 +579,16 @@ object anon {
       */
     val Stack: TypeofStack = js.native
     
+    def fromJS(jsValue: Any): typings.immutable.mod.Collection[Any, Any] = js.native
+    def fromJS(
+      jsValue: Any,
+      reviver: js.Function3[
+          /* key */ String | Double, 
+          /* sequence */ (Keyed[String, Any]) | typings.immutable.mod.Collection.Indexed[Any], 
+          /* path */ js.UndefOr[js.Array[String | Double]], 
+          Any
+        ]
+    ): typings.immutable.mod.Collection[Any, Any] = js.native
     /**
       * Deeply converts plain JS objects and arrays to Immutable Maps and Lists.
       *
@@ -648,16 +659,7 @@ object anon {
       * [3]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#the_iterable_protocol
       *      "The iterable protocol"
       */
-    def fromJS(jsValue: Any): typings.immutable.mod.Collection[Any, Any] = js.native
-    def fromJS(
-      jsValue: Any,
-      reviver: js.Function3[
-          /* key */ String | Double, 
-          /* sequence */ (Keyed[String, Any]) | typings.immutable.mod.Collection.Indexed[Any], 
-          /* path */ js.UndefOr[js.Array[String | Double]], 
-          Any
-        ]
-    ): typings.immutable.mod.Collection[Any, Any] = js.native
+    def fromJS[JSValue](jsValue: JSValue, reviver: Unit): FromJS_[JSValue] = js.native
     
     def get[V](collection: js.Array[V], key: Double): js.UndefOr[V] = js.native
     def get[V](collection: StringDictionary[V], key: String): js.UndefOr[V] = js.native
@@ -1123,7 +1125,11 @@ object anon {
       value: /* import warning: importer.ImportType#apply Failed type conversion: TProps[K] */ js.Any
     ): C = js.native
     
-    def update[V](collection: js.Array[V], key: Double, updater: js.Function1[/* value */ V, V]): js.Array[V] = js.native
+    def update[V](
+      collection: js.Array[V],
+      key: Double,
+      updater: js.Function1[/* value */ js.UndefOr[V], js.UndefOr[V]]
+    ): js.Array[V] = js.native
     def update[V, NSV](
       collection: js.Array[V],
       key: Double,
@@ -1191,7 +1197,7 @@ object anon {
       * ```
       */
     @JSName("update")
-    def update_KVC[K, V, C /* <: typings.immutable.mod.Collection[K, V] */](collection: C, key: K, updater: js.Function1[/* value */ js.UndefOr[V], V]): C = js.native
+    def update_KVC[K, V, C /* <: typings.immutable.mod.Collection[K, V] */](collection: C, key: K, updater: js.Function1[/* value */ js.UndefOr[V], js.UndefOr[V]]): C = js.native
     @JSName("update")
     def update_KVCNSV[K, V, C /* <: typings.immutable.mod.Collection[K, V] */, NSV](collection: C, key: K, notSetValue: NSV, updater: js.Function1[/* value */ V | NSV, V]): C = js.native
     @JSName("update")

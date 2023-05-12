@@ -11,7 +11,7 @@ trait CitationCitedArtifactStatusDate
   var _actual: js.UndefOr[Element] = js.undefined
   
   /**
-    * Classification of the status.
+    * A definition of the status associated with a date or period.
     */
   var activity: CodeableConcept
   

@@ -19,6 +19,7 @@ open class EnvironmentInjector () extends Injector {
     *
     * @param fn the closure to be run in the context of this injector
     * @returns the return value of the function, if any
+    * @deprecated use the standalone function `runInInjectionContext` instead
     */
   def runInContext[ReturnT](fn: js.Function0[ReturnT]): ReturnT = js.native
 }

@@ -17,22 +17,22 @@ object sapUiModelOdataTypeUnitMod {
     */
   open class default () extends Unit {
     def this(/**
-      * See parameter `oFormatOptions` of {@link sap.ui.model.type.Unit#constructor}. Format options are immutable,
-      * that is, they can only be set once on construction. Format options that are not supported or have a different
-      * default are listed below. If the format option `showMeasure` is set to `false`, model messages for the
-      * unit of measure are not propagated to the control if the corresponding binding supports the feature of
-      * ignoring messages, see {@link sap.ui.model.Binding#supportsIgnoreMessages}, and the corresponding binding
-      * parameter is not set manually.
+      * Format options as defined in {@link sap.ui.core.format.NumberFormat.getUnitInstance}. Format options
+      * are immutable, that is, they can only be set once on construction. Format options that are not supported
+      * or have a different default are listed below. If the format option `showMeasure` is set to `false`, model
+      * messages for the unit of measure are not propagated to the control if the corresponding binding supports
+      * the feature of ignoring messages, see {@link sap.ui.model.Binding#supportsIgnoreMessages}, and the corresponding
+      * binding parameter is not set manually.
       */
     oFormatOptions: CustomUnits) = this()
     def this(
       /**
-      * See parameter `oFormatOptions` of {@link sap.ui.model.type.Unit#constructor}. Format options are immutable,
-      * that is, they can only be set once on construction. Format options that are not supported or have a different
-      * default are listed below. If the format option `showMeasure` is set to `false`, model messages for the
-      * unit of measure are not propagated to the control if the corresponding binding supports the feature of
-      * ignoring messages, see {@link sap.ui.model.Binding#supportsIgnoreMessages}, and the corresponding binding
-      * parameter is not set manually.
+      * Format options as defined in {@link sap.ui.core.format.NumberFormat.getUnitInstance}. Format options
+      * are immutable, that is, they can only be set once on construction. Format options that are not supported
+      * or have a different default are listed below. If the format option `showMeasure` is set to `false`, model
+      * messages for the unit of measure are not propagated to the control if the corresponding binding supports
+      * the feature of ignoring messages, see {@link sap.ui.model.Binding#supportsIgnoreMessages}, and the corresponding
+      * binding parameter is not set manually.
       */
     oFormatOptions: scala.Unit,
       /**
@@ -43,12 +43,12 @@ object sapUiModelOdataTypeUnitMod {
     ) = this()
     def this(
       /**
-      * See parameter `oFormatOptions` of {@link sap.ui.model.type.Unit#constructor}. Format options are immutable,
-      * that is, they can only be set once on construction. Format options that are not supported or have a different
-      * default are listed below. If the format option `showMeasure` is set to `false`, model messages for the
-      * unit of measure are not propagated to the control if the corresponding binding supports the feature of
-      * ignoring messages, see {@link sap.ui.model.Binding#supportsIgnoreMessages}, and the corresponding binding
-      * parameter is not set manually.
+      * Format options as defined in {@link sap.ui.core.format.NumberFormat.getUnitInstance}. Format options
+      * are immutable, that is, they can only be set once on construction. Format options that are not supported
+      * or have a different default are listed below. If the format option `showMeasure` is set to `false`, model
+      * messages for the unit of measure are not propagated to the control if the corresponding binding supports
+      * the feature of ignoring messages, see {@link sap.ui.model.Binding#supportsIgnoreMessages}, and the corresponding
+      * binding parameter is not set manually.
       */
     oFormatOptions: CustomUnits,
       /**
@@ -59,12 +59,12 @@ object sapUiModelOdataTypeUnitMod {
     ) = this()
     def this(
       /**
-      * See parameter `oFormatOptions` of {@link sap.ui.model.type.Unit#constructor}. Format options are immutable,
-      * that is, they can only be set once on construction. Format options that are not supported or have a different
-      * default are listed below. If the format option `showMeasure` is set to `false`, model messages for the
-      * unit of measure are not propagated to the control if the corresponding binding supports the feature of
-      * ignoring messages, see {@link sap.ui.model.Binding#supportsIgnoreMessages}, and the corresponding binding
-      * parameter is not set manually.
+      * Format options as defined in {@link sap.ui.core.format.NumberFormat.getUnitInstance}. Format options
+      * are immutable, that is, they can only be set once on construction. Format options that are not supported
+      * or have a different default are listed below. If the format option `showMeasure` is set to `false`, model
+      * messages for the unit of measure are not propagated to the control if the corresponding binding supports
+      * the feature of ignoring messages, see {@link sap.ui.model.Binding#supportsIgnoreMessages}, and the corresponding
+      * binding parameter is not set manually.
       */
     oFormatOptions: scala.Unit,
       /**
@@ -79,12 +79,12 @@ object sapUiModelOdataTypeUnitMod {
     ) = this()
     def this(
       /**
-      * See parameter `oFormatOptions` of {@link sap.ui.model.type.Unit#constructor}. Format options are immutable,
-      * that is, they can only be set once on construction. Format options that are not supported or have a different
-      * default are listed below. If the format option `showMeasure` is set to `false`, model messages for the
-      * unit of measure are not propagated to the control if the corresponding binding supports the feature of
-      * ignoring messages, see {@link sap.ui.model.Binding#supportsIgnoreMessages}, and the corresponding binding
-      * parameter is not set manually.
+      * Format options as defined in {@link sap.ui.core.format.NumberFormat.getUnitInstance}. Format options
+      * are immutable, that is, they can only be set once on construction. Format options that are not supported
+      * or have a different default are listed below. If the format option `showMeasure` is set to `false`, model
+      * messages for the unit of measure are not propagated to the control if the corresponding binding supports
+      * the feature of ignoring messages, see {@link sap.ui.model.Binding#supportsIgnoreMessages}, and the corresponding
+      * binding parameter is not set manually.
       */
     oFormatOptions: scala.Unit,
       /**
@@ -99,12 +99,12 @@ object sapUiModelOdataTypeUnitMod {
     ) = this()
     def this(
       /**
-      * See parameter `oFormatOptions` of {@link sap.ui.model.type.Unit#constructor}. Format options are immutable,
-      * that is, they can only be set once on construction. Format options that are not supported or have a different
-      * default are listed below. If the format option `showMeasure` is set to `false`, model messages for the
-      * unit of measure are not propagated to the control if the corresponding binding supports the feature of
-      * ignoring messages, see {@link sap.ui.model.Binding#supportsIgnoreMessages}, and the corresponding binding
-      * parameter is not set manually.
+      * Format options as defined in {@link sap.ui.core.format.NumberFormat.getUnitInstance}. Format options
+      * are immutable, that is, they can only be set once on construction. Format options that are not supported
+      * or have a different default are listed below. If the format option `showMeasure` is set to `false`, model
+      * messages for the unit of measure are not propagated to the control if the corresponding binding supports
+      * the feature of ignoring messages, see {@link sap.ui.model.Binding#supportsIgnoreMessages}, and the corresponding
+      * binding parameter is not set manually.
       */
     oFormatOptions: CustomUnits,
       /**
@@ -119,12 +119,12 @@ object sapUiModelOdataTypeUnitMod {
     ) = this()
     def this(
       /**
-      * See parameter `oFormatOptions` of {@link sap.ui.model.type.Unit#constructor}. Format options are immutable,
-      * that is, they can only be set once on construction. Format options that are not supported or have a different
-      * default are listed below. If the format option `showMeasure` is set to `false`, model messages for the
-      * unit of measure are not propagated to the control if the corresponding binding supports the feature of
-      * ignoring messages, see {@link sap.ui.model.Binding#supportsIgnoreMessages}, and the corresponding binding
-      * parameter is not set manually.
+      * Format options as defined in {@link sap.ui.core.format.NumberFormat.getUnitInstance}. Format options
+      * are immutable, that is, they can only be set once on construction. Format options that are not supported
+      * or have a different default are listed below. If the format option `showMeasure` is set to `false`, model
+      * messages for the unit of measure are not propagated to the control if the corresponding binding supports
+      * the feature of ignoring messages, see {@link sap.ui.model.Binding#supportsIgnoreMessages}, and the corresponding
+      * binding parameter is not set manually.
       */
     oFormatOptions: CustomUnits,
       /**

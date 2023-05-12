@@ -16,6 +16,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var decorators: js.Array[Decorator_] | Null
   
+  var optional: Boolean | Null
+  
   var properties: js.Array[RestElement_ | ObjectProperty_]
   
   var typeAnnotation: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null
@@ -26,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ObjectPattern_ {
   
   inline def apply(properties: js.Array[RestElement_ | ObjectProperty_]): ObjectPattern_ = {
-    val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeAnnotation = null)
+    val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, optional = null, start = null, trailingComments = null, typeAnnotation = null)
     __obj.updateDynamic("type")("ObjectPattern")
     __obj.asInstanceOf[ObjectPattern_]
   }
@@ -39,6 +41,10 @@ object ObjectPattern_ {
     inline def setDecoratorsNull: Self = StObject.set(x, "decorators", null)
     
     inline def setDecoratorsVarargs(value: Decorator_ *): Self = StObject.set(x, "decorators", js.Array(value*))
+    
+    inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    
+    inline def setOptionalNull: Self = StObject.set(x, "optional", null)
     
     inline def setProperties(value: js.Array[RestElement_ | ObjectProperty_]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     

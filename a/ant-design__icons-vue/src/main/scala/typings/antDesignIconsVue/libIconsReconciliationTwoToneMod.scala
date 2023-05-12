@@ -16,7 +16,7 @@ object libIconsReconciliationTwoToneMod extends Shortcut {
   @js.native
   trait ReconciliationTwoToneIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_ReconciliationTwoToneIconType: String = js.native

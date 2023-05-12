@@ -6,17 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * @module Hls
-  * @class
-  * @constructor
+  * The `Hls` class is the core of the HLS.js library used to instantiate player instances.
+  * @public
   */
 @JSImport("hls.js", JSImport.Default)
 @js.native
 /**
   * Creates an instance of an HLS client that can attach to exactly one `HTMLMediaElement`.
-  *
-  * @constructs Hls
-  * @param {HlsConfig} config
+  * @param userConfig - Configuration options applied over `Hls.DefaultConfig`
   */
 open class default ()
   extends StObject
@@ -35,6 +32,9 @@ object default {
   def defaultConfig: Any = js.native
   inline def defaultConfig_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultConfig")(x.asInstanceOf[js.Any])
   
+  /**
+    * Check if the required MediaSource Extensions are available.
+    */
   /* static member */
   inline def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
 }

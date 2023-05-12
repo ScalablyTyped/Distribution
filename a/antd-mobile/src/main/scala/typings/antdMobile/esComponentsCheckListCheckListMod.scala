@@ -56,7 +56,7 @@ object esComponentsCheckListCheckListMod {
   @js.native
   val CheckList: FC[CheckListProps] = js.native
   
-  /* Inlined std.Pick<antd-mobile.antd-mobile/es/components/list.ListProps, 'mode' | 'style'> & {  defaultValue :std.Array<string> | undefined,   value :std.Array<string> | undefined,   onChange :(val : std.Array<string>): void | undefined,   multiple :boolean | undefined,   activeIcon :react.react.ReactNode | undefined,   disabled :boolean | undefined,   readOnly :boolean | undefined,   children :react.react.ReactNode | undefined} & antd-mobile.antd-mobile/es/utils/native-props.NativeProps<never> */
+  /* Inlined std.Pick<antd-mobile.antd-mobile/es/components/list.ListProps, 'mode' | 'style'> & {  defaultValue :std.Array<string> | undefined,   value :std.Array<string> | undefined,   onChange :(val : std.Array<string>): void | undefined,   multiple :boolean | undefined,   activeIcon :react.react.ReactNode | undefined,   extra :(active : boolean): react.react.ReactNode | undefined,   disabled :boolean | undefined,   readOnly :boolean | undefined,   children :react.react.ReactNode | undefined} & antd-mobile.antd-mobile/es/utils/native-props.NativeProps<never> */
   trait CheckListProps extends StObject {
     
     var activeIcon: js.UndefOr[ReactNode] = js.undefined
@@ -303,6 +303,8 @@ object esComponentsCheckListCheckListMod {
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
+    var extra: js.UndefOr[js.Function1[/* active */ Boolean, ReactNode]] = js.undefined
+    
     var mode: js.UndefOr[default | card] = js.undefined
     
     var multiple: js.UndefOr[Boolean] = js.undefined
@@ -542,6 +544,10 @@ object esComponentsCheckListCheckListMod {
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      
+      inline def setExtra(value: /* active */ Boolean => ReactNode): Self = StObject.set(x, "extra", js.Any.fromFunction1(value))
+      
+      inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
       
       inline def setMode(value: default | card): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       

@@ -98,7 +98,11 @@ object libTransformMod {
   /* static members */
   object Transform {
     
-    /** A default (identity) transform. */
+    /**
+      * A default (identity) transform.
+      * @static
+      * @type {PIXI.Transform}
+      */
     @JSImport("@pixi/math/lib/Transform", "Transform.IDENTITY")
     @js.native
     val IDENTITY: Transform = js.native

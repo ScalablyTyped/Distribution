@@ -2,7 +2,8 @@ package typings.virtualScroll
 
 import typings.std.Event
 import typings.std.HTMLElement
-import typings.virtualScroll.anon.PartialOptions
+import typings.std.Window
+import typings.virtualScroll.anon.PartialVirtualScrollOptio
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ object mod {
   open class ^ ()
     extends StObject
        with VirtualScroll {
-    def this(options: PartialOptions) = this()
+    def this(options: PartialVirtualScrollOptio) = this()
     
     /* CompleteClass */
     override def destroy(): Unit = js.native
@@ -24,81 +25,6 @@ object mod {
     
     /* CompleteClass */
     override def on(cb: VirtualScrollCallback): Unit = js.native
-  }
-  
-  trait Options extends StObject {
-    
-    var el: HTMLElement
-    
-    // Mutiply the touch action by this modifier to make scroll faster than finger movement. Defaults to 2.
-    var firefoxMultiplier: Double
-    
-    // Firefox on Windows needs a boost, since scrolling is very slow. Defaults to 15.
-    var keyStep: Double
-    
-    // the target element for mobile touch events. Defaults to window.
-    var mouseMultiplier: Double
-    
-    // Elements with this class won't preventDefault on touchMove. Defaults to vs-touchmove-allowed.
-    var passive: js.UndefOr[Boolean] = js.undefined
-    
-    // How many pixels to move with each key press. Defaults to 120.
-    var preventTouch: Boolean
-    
-    // General multiplier for all mousewheel (including Firefox). Default to 1.
-    var touchMultiplier: Double
-    
-    // If true, automatically call e.preventDefault on touchMove. Defaults to false.
-    var unpreventTouchClass: String
-    
-    // if used, will use passive events declaration for the wheel and touch listeners. Can be true or false. Defaults to undefined.
-    var useKeyboard: Boolean
-    
-    // if true, allows to use arrows to navigate, and space to jump from one screen. Defaults to true
-    var useTouch: Boolean
-  }
-  object Options {
-    
-    inline def apply(
-      el: HTMLElement,
-      firefoxMultiplier: Double,
-      keyStep: Double,
-      mouseMultiplier: Double,
-      preventTouch: Boolean,
-      touchMultiplier: Double,
-      unpreventTouchClass: String,
-      useKeyboard: Boolean,
-      useTouch: Boolean
-    ): Options = {
-      val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any], firefoxMultiplier = firefoxMultiplier.asInstanceOf[js.Any], keyStep = keyStep.asInstanceOf[js.Any], mouseMultiplier = mouseMultiplier.asInstanceOf[js.Any], preventTouch = preventTouch.asInstanceOf[js.Any], touchMultiplier = touchMultiplier.asInstanceOf[js.Any], unpreventTouchClass = unpreventTouchClass.asInstanceOf[js.Any], useKeyboard = useKeyboard.asInstanceOf[js.Any], useTouch = useTouch.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Options]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
-      
-      inline def setEl(value: HTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
-      
-      inline def setFirefoxMultiplier(value: Double): Self = StObject.set(x, "firefoxMultiplier", value.asInstanceOf[js.Any])
-      
-      inline def setKeyStep(value: Double): Self = StObject.set(x, "keyStep", value.asInstanceOf[js.Any])
-      
-      inline def setMouseMultiplier(value: Double): Self = StObject.set(x, "mouseMultiplier", value.asInstanceOf[js.Any])
-      
-      inline def setPassive(value: Boolean): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
-      
-      inline def setPassiveUndefined: Self = StObject.set(x, "passive", js.undefined)
-      
-      inline def setPreventTouch(value: Boolean): Self = StObject.set(x, "preventTouch", value.asInstanceOf[js.Any])
-      
-      inline def setTouchMultiplier(value: Double): Self = StObject.set(x, "touchMultiplier", value.asInstanceOf[js.Any])
-      
-      inline def setUnpreventTouchClass(value: String): Self = StObject.set(x, "unpreventTouchClass", value.asInstanceOf[js.Any])
-      
-      inline def setUseKeyboard(value: Boolean): Self = StObject.set(x, "useKeyboard", value.asInstanceOf[js.Any])
-      
-      inline def setUseTouch(value: Boolean): Self = StObject.set(x, "useTouch", value.asInstanceOf[js.Any])
-    }
   }
   
   trait VirtualScroll extends StObject {
@@ -164,6 +90,81 @@ object mod {
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
       inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait VirtualScrollOptions extends StObject {
+    
+    var el: Window | HTMLElement
+    
+    // Mutiply the touch action by this modifier to make scroll faster than finger movement. Defaults to 2.
+    var firefoxMultiplier: Double
+    
+    // Firefox on Windows needs a boost, since scrolling is very slow. Defaults to 15.
+    var keyStep: Double
+    
+    // the target element for mobile touch events. Defaults to window.
+    var mouseMultiplier: Double
+    
+    // Elements with this class won't preventDefault on touchMove. Defaults to vs-touchmove-allowed.
+    var passive: js.UndefOr[Boolean] = js.undefined
+    
+    // How many pixels to move with each key press. Defaults to 120.
+    var preventTouch: Boolean
+    
+    // General multiplier for all mousewheel (including Firefox). Default to 1.
+    var touchMultiplier: Double
+    
+    // If true, automatically call e.preventDefault on touchMove. Defaults to false.
+    var unpreventTouchClass: String
+    
+    // if used, will use passive events declaration for the wheel and touch listeners. Can be true or false. Defaults to undefined.
+    var useKeyboard: Boolean
+    
+    // if true, allows to use arrows to navigate, and space to jump from one screen. Defaults to true
+    var useTouch: Boolean
+  }
+  object VirtualScrollOptions {
+    
+    inline def apply(
+      el: Window | HTMLElement,
+      firefoxMultiplier: Double,
+      keyStep: Double,
+      mouseMultiplier: Double,
+      preventTouch: Boolean,
+      touchMultiplier: Double,
+      unpreventTouchClass: String,
+      useKeyboard: Boolean,
+      useTouch: Boolean
+    ): VirtualScrollOptions = {
+      val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any], firefoxMultiplier = firefoxMultiplier.asInstanceOf[js.Any], keyStep = keyStep.asInstanceOf[js.Any], mouseMultiplier = mouseMultiplier.asInstanceOf[js.Any], preventTouch = preventTouch.asInstanceOf[js.Any], touchMultiplier = touchMultiplier.asInstanceOf[js.Any], unpreventTouchClass = unpreventTouchClass.asInstanceOf[js.Any], useKeyboard = useKeyboard.asInstanceOf[js.Any], useTouch = useTouch.asInstanceOf[js.Any])
+      __obj.asInstanceOf[VirtualScrollOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VirtualScrollOptions] (val x: Self) extends AnyVal {
+      
+      inline def setEl(value: Window | HTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+      
+      inline def setFirefoxMultiplier(value: Double): Self = StObject.set(x, "firefoxMultiplier", value.asInstanceOf[js.Any])
+      
+      inline def setKeyStep(value: Double): Self = StObject.set(x, "keyStep", value.asInstanceOf[js.Any])
+      
+      inline def setMouseMultiplier(value: Double): Self = StObject.set(x, "mouseMultiplier", value.asInstanceOf[js.Any])
+      
+      inline def setPassive(value: Boolean): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
+      
+      inline def setPassiveUndefined: Self = StObject.set(x, "passive", js.undefined)
+      
+      inline def setPreventTouch(value: Boolean): Self = StObject.set(x, "preventTouch", value.asInstanceOf[js.Any])
+      
+      inline def setTouchMultiplier(value: Double): Self = StObject.set(x, "touchMultiplier", value.asInstanceOf[js.Any])
+      
+      inline def setUnpreventTouchClass(value: String): Self = StObject.set(x, "unpreventTouchClass", value.asInstanceOf[js.Any])
+      
+      inline def setUseKeyboard(value: Boolean): Self = StObject.set(x, "useKeyboard", value.asInstanceOf[js.Any])
+      
+      inline def setUseTouch(value: Boolean): Self = StObject.set(x, "useTouch", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RoomAttributes extends StObject {
   
+  /** participantIdentity - Participant identity when connecting to the Room */
   var participantIdentity: js.UndefOr[String] = js.undefined
 }
 object RoomAttributes {

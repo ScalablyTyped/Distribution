@@ -9,11 +9,11 @@ trait ListTagsForResourceRequest extends StObject {
   /**
     * An Amazon Resource Name (ARN) that uniquely identifies an AWS resource.
     */
-  var ResourceArn: string
+  var ResourceArn: _String
 }
 object ListTagsForResourceRequest {
   
-  inline def apply(ResourceArn: string): ListTagsForResourceRequest = {
+  inline def apply(ResourceArn: _String): ListTagsForResourceRequest = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTagsForResourceRequest]
   }
@@ -21,6 +21,6 @@ object ListTagsForResourceRequest {
   @scala.inline
   implicit open class MutableBuilder[Self <: ListTagsForResourceRequest] (val x: Self) extends AnyVal {
     
-    inline def setResourceArn(value: string): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: _String): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
   }
 }

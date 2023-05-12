@@ -10,46 +10,70 @@ trait ExampleScenarioInstance
   
   var _description: js.UndefOr[Element] = js.undefined
   
-  var _name: js.UndefOr[Element] = js.undefined
+  var _key: js.UndefOr[Element] = js.undefined
   
-  var _resourceId: js.UndefOr[Element] = js.undefined
+  var _structureProfileCanonical: js.UndefOr[Element] = js.undefined
   
-  var _resourceType: js.UndefOr[Element] = js.undefined
+  var _structureProfileUri: js.UndefOr[Element] = js.undefined
+  
+  var _structureVersion: js.UndefOr[Element] = js.undefined
+  
+  var _title: js.UndefOr[Element] = js.undefined
   
   /**
-    * Resources contained in the instance (e.g. the observations contained in a bundle).
+    * References to other instances that can be found within this instance (e.g. the observations contained in a bundle).
     */
   var containedInstance: js.UndefOr[js.Array[ExampleScenarioInstanceContainedInstance]] = js.undefined
   
   /**
-    * Human-friendly description of the resource instance.
+    * If not conveying FHIR data or not using the same version of FHIR as this ExampleScenario instance, the reference must be to a Binary.
+    */
+  var content: js.UndefOr[Reference] = js.undefined
+  
+  /**
+    * An explanation of what the instance contains and what it's for.
     */
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * A short name for the resource instance.
+    * A unique string within the scenario that is used to reference the instance.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var key: String
   
   /**
-    * The id of the resource for referencing.
+    * Refers to a profile, template or other ruleset the instance adheres to.
     */
-  var resourceId: String
+  var structureProfileCanonical: js.UndefOr[String] = js.undefined
   
   /**
-    * The type of the resource.
+    * Refers to a profile, template or other ruleset the instance adheres to.
     */
-  var resourceType: String
+  var structureProfileUri: js.UndefOr[String] = js.undefined
   
   /**
-    * A specific version of the resource.
+    * A code indicating the kind of data structure (FHIR resource or some other standard) this is an instance of.
+    */
+  var structureType: Coding
+  
+  /**
+    * Conveys the version of the data structure instantiated.  I.e. what release of FHIR, X12, OpenEHR, etc. is instance compliant with.
+    */
+  var structureVersion: js.UndefOr[String] = js.undefined
+  
+  /**
+    * A short descriptive label the instance to be used in tables or diagrams.
+    */
+  var title: String
+  
+  /**
+    * Not used if an instance doesn't change
     */
   var version: js.UndefOr[js.Array[ExampleScenarioInstanceVersion]] = js.undefined
 }
 object ExampleScenarioInstance {
   
-  inline def apply(resourceId: String, resourceType: String): ExampleScenarioInstance = {
-    val __obj = js.Dynamic.literal(resourceId = resourceId.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  inline def apply(key: String, structureType: Coding, title: String): ExampleScenarioInstance = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], structureType = structureType.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExampleScenarioInstance]
   }
   
@@ -62,17 +86,31 @@ object ExampleScenarioInstance {
     
     inline def setContainedInstanceVarargs(value: ExampleScenarioInstanceContainedInstance*): Self = StObject.set(x, "containedInstance", js.Array(value*))
     
+    inline def setContent(value: Reference): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setStructureProfileCanonical(value: String): Self = StObject.set(x, "structureProfileCanonical", value.asInstanceOf[js.Any])
     
-    inline def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    inline def setStructureProfileCanonicalUndefined: Self = StObject.set(x, "structureProfileCanonical", js.undefined)
     
-    inline def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setStructureProfileUri(value: String): Self = StObject.set(x, "structureProfileUri", value.asInstanceOf[js.Any])
+    
+    inline def setStructureProfileUriUndefined: Self = StObject.set(x, "structureProfileUri", js.undefined)
+    
+    inline def setStructureType(value: Coding): Self = StObject.set(x, "structureType", value.asInstanceOf[js.Any])
+    
+    inline def setStructureVersion(value: String): Self = StObject.set(x, "structureVersion", value.asInstanceOf[js.Any])
+    
+    inline def setStructureVersionUndefined: Self = StObject.set(x, "structureVersion", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setVersion(value: js.Array[ExampleScenarioInstanceVersion]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
@@ -84,16 +122,24 @@ object ExampleScenarioInstance {
     
     inline def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
-    inline def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
+    inline def set_key(value: Element): Self = StObject.set(x, "_key", value.asInstanceOf[js.Any])
     
-    inline def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
+    inline def set_keyUndefined: Self = StObject.set(x, "_key", js.undefined)
     
-    inline def set_resourceId(value: Element): Self = StObject.set(x, "_resourceId", value.asInstanceOf[js.Any])
+    inline def set_structureProfileCanonical(value: Element): Self = StObject.set(x, "_structureProfileCanonical", value.asInstanceOf[js.Any])
     
-    inline def set_resourceIdUndefined: Self = StObject.set(x, "_resourceId", js.undefined)
+    inline def set_structureProfileCanonicalUndefined: Self = StObject.set(x, "_structureProfileCanonical", js.undefined)
     
-    inline def set_resourceType(value: Element): Self = StObject.set(x, "_resourceType", value.asInstanceOf[js.Any])
+    inline def set_structureProfileUri(value: Element): Self = StObject.set(x, "_structureProfileUri", value.asInstanceOf[js.Any])
     
-    inline def set_resourceTypeUndefined: Self = StObject.set(x, "_resourceType", js.undefined)
+    inline def set_structureProfileUriUndefined: Self = StObject.set(x, "_structureProfileUri", js.undefined)
+    
+    inline def set_structureVersion(value: Element): Self = StObject.set(x, "_structureVersion", value.asInstanceOf[js.Any])
+    
+    inline def set_structureVersionUndefined: Self = StObject.set(x, "_structureVersion", js.undefined)
+    
+    inline def set_title(value: Element): Self = StObject.set(x, "_title", value.asInstanceOf[js.Any])
+    
+    inline def set_titleUndefined: Self = StObject.set(x, "_title", js.undefined)
   }
 }

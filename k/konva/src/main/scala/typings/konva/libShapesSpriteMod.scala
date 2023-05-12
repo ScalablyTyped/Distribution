@@ -1,6 +1,7 @@
 package typings.konva
 
 import typings.konva.libAnimationMod.Animation
+import typings.konva.libContextMod.Context
 import typings.konva.libShapeMod.Shape
 import typings.konva.libShapeMod.ShapeConfig
 import typings.konva.libTypesMod.GetSet
@@ -15,11 +16,11 @@ object libShapesSpriteMod {
   @JSImport("konva/lib/shapes/Sprite", "Sprite")
   @js.native
   open class Sprite protected () extends Shape[SpriteConfig] {
-    def this(config: Any) = this()
+    def this(config: SpriteConfig) = this()
     
-    def _hitFunc(context: Any): Unit = js.native
+    def _hitFunc(context: Context): Unit = js.native
     
-    def _sceneFunc(context: Any): Unit = js.native
+    def _sceneFunc(context: Context): Unit = js.native
     
     def _setInterval(): Unit = js.native
     

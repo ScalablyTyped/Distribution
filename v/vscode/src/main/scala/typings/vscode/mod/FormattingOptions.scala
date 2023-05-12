@@ -8,18 +8,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FormattingOptions
   extends StObject
      with /**
-  * Signature for further properties.
-  */
+		 * Signature for further properties.
+		 */
 /* key */ StringDictionary[Boolean | Double | String] {
   
   /**
-    * Prefer spaces over tabs.
-    */
+  		 * Prefer spaces over tabs.
+  		 */
   var insertSpaces: Boolean
   
   /**
-    * Size of a tab in spaces.
-    */
+  		 * Size of a tab in spaces.
+  		 */
   var tabSize: Double
 }
 object FormattingOptions {

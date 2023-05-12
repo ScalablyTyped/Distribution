@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FraudDetectionResult extends StObject {
   
   /**
-    * A timestamp indicating when audio aggregation ended for this fraud detection result.
+    * A timestamp of when audio aggregation ended for this fraud detection result.
     */
   var AudioAggregationEndedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * A timestamp indicating when audio aggregation started for this fraud detection result.
+    * A timestamp of when audio aggregation started for this fraud detection result.
     */
   var AudioAggregationStartedAt: js.UndefOr[js.Date] = js.undefined
   

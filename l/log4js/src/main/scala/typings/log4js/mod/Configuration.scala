@@ -1,6 +1,7 @@
 package typings.log4js.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.log4js.anon.Colour
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ trait Configuration extends StObject {
   
   var disableClustering: js.UndefOr[Boolean] = js.undefined
   
-  var levels: js.UndefOr[Levels_] = js.undefined
+  var levels: js.UndefOr[Levels_ | StringDictionary[Colour]] = js.undefined
   
   var pm2: js.UndefOr[Boolean] = js.undefined
   
@@ -37,7 +38,7 @@ object Configuration {
     
     inline def setDisableClusteringUndefined: Self = StObject.set(x, "disableClustering", js.undefined)
     
-    inline def setLevels(value: Levels_): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+    inline def setLevels(value: Levels_ | StringDictionary[Colour]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     
     inline def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
     

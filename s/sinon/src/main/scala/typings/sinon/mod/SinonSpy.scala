@@ -1,6 +1,5 @@
 package typings.sinon.mod
 
-import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +23,7 @@ trait SinonSpy[TArgs /* <: js.Array[Any] */, TReturnValue] extends StObject {
     * Returns true if spy was always called with the provided arguments (and possibly others).
     */
   def alwaysCalledWith(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchArguments<TArgs> is not an array type */ args: MatchArguments[TArgs]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchExactArguments<TArgs> is not an array type */ args: MatchExactArguments[TArgs]
   ): Boolean = js.native
   
   /**
@@ -32,7 +31,7 @@ trait SinonSpy[TArgs /* <: js.Array[Any] */, TReturnValue] extends StObject {
     * @param args
     */
   def alwaysCalledWithExactly(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchArguments<TArgs> is not an array type */ args: MatchArguments[TArgs]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchExactArguments<TArgs> is not an array type */ args: MatchExactArguments[TArgs]
   ): Boolean = js.native
   
   /**
@@ -131,17 +130,17 @@ trait SinonSpy[TArgs /* <: js.Array[Any] */, TReturnValue] extends StObject {
   var calledOnce: Boolean = js.native
   
   def calledOnceWith(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchArguments<TArgs> is not an array type */ args: MatchArguments[TArgs]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchPartialArguments<TArgs> is not an array type */ args: MatchPartialArguments[TArgs]
   ): Boolean = js.native
   
   def calledOnceWithExactly(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchArguments<TArgs> is not an array type */ args: MatchArguments[TArgs]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchExactArguments<TArgs> is not an array type */ args: MatchExactArguments[TArgs]
   ): Boolean = js.native
   @JSName("calledOnceWithExactly")
-  var calledOnceWithExactly_Original: js.Function1[/* args */ MatchArguments[TArgs], Boolean] = js.native
+  var calledOnceWithExactly_Original: js.Function1[/* args */ MatchExactArguments[TArgs], Boolean] = js.native
   
   @JSName("calledOnceWith")
-  var calledOnceWith_Original: js.Function1[/* args */ MatchArguments[TArgs], Boolean] = js.native
+  var calledOnceWith_Original: js.Function1[/* args */ MatchPartialArguments[TArgs], Boolean] = js.native
   
   /**
     * true if the spy was called exactly thrice
@@ -154,27 +153,27 @@ trait SinonSpy[TArgs /* <: js.Array[Any] */, TReturnValue] extends StObject {
   var calledTwice: Boolean = js.native
   
   def calledWith(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Partial<MatchArguments<TArgs>> is not an array type */ args: Partial[MatchArguments[TArgs]]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchPartialArguments<TArgs> is not an array type */ args: MatchPartialArguments[TArgs]
   ): Boolean = js.native
   
   def calledWithExactly(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchArguments<TArgs> is not an array type */ args: MatchArguments[TArgs]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchExactArguments<TArgs> is not an array type */ args: MatchExactArguments[TArgs]
   ): Boolean = js.native
   @JSName("calledWithExactly")
-  var calledWithExactly_Original: js.Function1[/* args */ MatchArguments[TArgs], Boolean] = js.native
+  var calledWithExactly_Original: js.Function1[/* args */ MatchExactArguments[TArgs], Boolean] = js.native
   
   def calledWithMatch(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type DeepPartialOrMatcher<TArgs> is not an array type */ args: DeepPartialOrMatcher[TArgs]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchPartialArguments<TArgs> is not an array type */ args: MatchPartialArguments[TArgs]
   ): Boolean = js.native
   @JSName("calledWithMatch")
-  var calledWithMatch_Original: js.Function1[/* args */ DeepPartialOrMatcher[TArgs], Boolean] = js.native
+  var calledWithMatch_Original: js.Function1[/* args */ MatchPartialArguments[TArgs], Boolean] = js.native
   
   def calledWithNew(): Boolean = js.native
   @JSName("calledWithNew")
   var calledWithNew_Original: js.Function0[Boolean] = js.native
   
   @JSName("calledWith")
-  var calledWith_Original: js.Function1[/* args */ Partial[MatchArguments[TArgs]], Boolean] = js.native
+  var calledWith_Original: js.Function1[/* args */ MatchPartialArguments[TArgs], Boolean] = js.native
   
   /**
     * Array of exception objects thrown, spy.exceptions[0] is the exception thrown by the first call.
@@ -224,7 +223,7 @@ trait SinonSpy[TArgs /* <: js.Array[Any] */, TReturnValue] extends StObject {
     * @param args
     */
   def neverCalledWith(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchArguments<TArgs> is not an array type */ args: MatchArguments[TArgs]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchExactArguments<TArgs> is not an array type */ args: MatchExactArguments[TArgs]
   ): Boolean = js.native
   
   /**
@@ -242,17 +241,17 @@ trait SinonSpy[TArgs /* <: js.Array[Any] */, TReturnValue] extends StObject {
   var notCalled: Boolean = js.native
   
   def notCalledWith(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchArguments<TArgs> is not an array type */ args: MatchArguments[TArgs]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchExactArguments<TArgs> is not an array type */ args: MatchExactArguments[TArgs]
   ): Boolean = js.native
   
   def notCalledWithMatch(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type DeepPartialOrMatcher<TArgs> is not an array type */ args: DeepPartialOrMatcher[TArgs]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchPartialArguments<TArgs> is not an array type */ args: MatchPartialArguments[TArgs]
   ): Boolean = js.native
   @JSName("notCalledWithMatch")
-  var notCalledWithMatch_Original: js.Function1[/* args */ DeepPartialOrMatcher[TArgs], Boolean] = js.native
+  var notCalledWithMatch_Original: js.Function1[/* args */ MatchPartialArguments[TArgs], Boolean] = js.native
   
   @JSName("notCalledWith")
-  var notCalledWith_Original: js.Function1[/* args */ MatchArguments[TArgs], Boolean] = js.native
+  var notCalledWith_Original: js.Function1[/* args */ MatchExactArguments[TArgs], Boolean] = js.native
   
   /**
     * Returns the passed format string with the following replacements performed:
@@ -314,7 +313,7 @@ trait SinonSpy[TArgs /* <: js.Array[Any] */, TReturnValue] extends StObject {
     * @param args Expected args
     */
   def withArgs(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchArguments<TArgs> is not an array type */ args: MatchArguments[TArgs]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchPartialArguments<TArgs> is not an array type */ args: MatchPartialArguments[TArgs]
   ): SinonSpy[TArgs, TReturnValue] = js.native
   
   /**

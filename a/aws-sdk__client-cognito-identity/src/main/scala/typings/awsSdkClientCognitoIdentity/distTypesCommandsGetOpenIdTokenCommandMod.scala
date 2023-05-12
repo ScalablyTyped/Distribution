@@ -28,8 +28,14 @@ object distTypesCommandsGetOpenIdTokenCommandMod {
           Any, 
           Any
         ] {
+    /**
+      * @public
+      */
     def this(input: GetOpenIdTokenCommandInput) = this()
     
+    /**
+      * @internal
+      */
     /* private */ var deserialize: Any = js.native
     
     /**
@@ -45,6 +51,9 @@ object distTypesCommandsGetOpenIdTokenCommandMod {
       options: HttpHandlerOptions
     ): Handler[GetOpenIdTokenCommandInput, GetOpenIdTokenCommandOutput] = js.native
     
+    /**
+      * @internal
+      */
     /* private */ var serialize: Any = js.native
   }
   /* static members */

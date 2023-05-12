@@ -7,9 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateApplicationComponentConfigRequest extends StObject {
   
   /**
+    * The type of known component.
+    */
+  var appType: js.UndefOr[AppType] = js.undefined
+  
+  /**
     *  The ID of the application component. The ID is unique within an AWS account. 
     */
   var applicationComponentId: ApplicationComponentId
+  
+  /**
+    * Update the configuration request of an application component. If it is set to true, the source code and/or database credentials are updated. If it is set to false, the source code and/or database credentials are updated and an analysis is initiated.
+    */
+  var configureOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  Indicates whether the application component has been included for server recommendation or not. 
@@ -41,7 +51,15 @@ object UpdateApplicationComponentConfigRequest {
   @scala.inline
   implicit open class MutableBuilder[Self <: UpdateApplicationComponentConfigRequest] (val x: Self) extends AnyVal {
     
+    inline def setAppType(value: AppType): Self = StObject.set(x, "appType", value.asInstanceOf[js.Any])
+    
+    inline def setAppTypeUndefined: Self = StObject.set(x, "appType", js.undefined)
+    
     inline def setApplicationComponentId(value: ApplicationComponentId): Self = StObject.set(x, "applicationComponentId", value.asInstanceOf[js.Any])
+    
+    inline def setConfigureOnly(value: Boolean): Self = StObject.set(x, "configureOnly", value.asInstanceOf[js.Any])
+    
+    inline def setConfigureOnlyUndefined: Self = StObject.set(x, "configureOnly", js.undefined)
     
     inline def setInclusionStatus(value: InclusionStatus): Self = StObject.set(x, "inclusionStatus", value.asInstanceOf[js.Any])
     

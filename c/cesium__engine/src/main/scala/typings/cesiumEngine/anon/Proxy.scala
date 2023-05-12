@@ -1,0 +1,70 @@
+package typings.cesiumEngine.anon
+
+import typings.cesiumEngine.mod.RequestErrorEvent
+import typings.cesiumEngine.mod.Resource
+import typings.cesiumEngine.mod.Resource.RetryCallback
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait Proxy extends StObject {
+  
+  var headers: js.UndefOr[Any] = js.undefined
+  
+  var proxy: js.UndefOr[typings.cesiumEngine.mod.Proxy] = js.undefined
+  
+  var queryParameters: js.UndefOr[Any] = js.undefined
+  
+  var request: js.UndefOr[typings.cesiumEngine.mod.Request] = js.undefined
+  
+  var retryAttempts: js.UndefOr[Double] = js.undefined
+  
+  var retryCallback: js.UndefOr[RetryCallback] = js.undefined
+  
+  var templateValues: js.UndefOr[Any] = js.undefined
+  
+  var url: String
+}
+object Proxy {
+  
+  inline def apply(url: String): Proxy = {
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Proxy]
+  }
+  
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Proxy] (val x: Self) extends AnyVal {
+    
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    
+    inline def setProxy(value: typings.cesiumEngine.mod.Proxy): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+    
+    inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+    
+    inline def setQueryParameters(value: Any): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
+    
+    inline def setQueryParametersUndefined: Self = StObject.set(x, "queryParameters", js.undefined)
+    
+    inline def setRequest(value: typings.cesiumEngine.mod.Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    
+    inline def setRetryAttempts(value: Double): Self = StObject.set(x, "retryAttempts", value.asInstanceOf[js.Any])
+    
+    inline def setRetryAttemptsUndefined: Self = StObject.set(x, "retryAttempts", js.undefined)
+    
+    inline def setRetryCallback(
+      value: (/* resource */ js.UndefOr[Resource], /* error */ js.UndefOr[RequestErrorEvent]) => Boolean | js.Promise[Boolean]
+    ): Self = StObject.set(x, "retryCallback", js.Any.fromFunction2(value))
+    
+    inline def setRetryCallbackUndefined: Self = StObject.set(x, "retryCallback", js.undefined)
+    
+    inline def setTemplateValues(value: Any): Self = StObject.set(x, "templateValues", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateValuesUndefined: Self = StObject.set(x, "templateValues", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+  }
+}

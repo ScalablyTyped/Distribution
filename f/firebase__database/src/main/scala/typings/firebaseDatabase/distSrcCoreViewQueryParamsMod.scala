@@ -62,13 +62,9 @@ object distSrcCoreViewQueryParamsMod {
     
     def hasEnd(): Boolean = js.native
     
-    def hasEndBefore(): Boolean = js.native
-    
     def hasLimit(): Boolean = js.native
     
     def hasStart(): Boolean = js.native
-    
-    def hasStartAfter(): Boolean = js.native
     
     var indexEndName_ : String = js.native
     

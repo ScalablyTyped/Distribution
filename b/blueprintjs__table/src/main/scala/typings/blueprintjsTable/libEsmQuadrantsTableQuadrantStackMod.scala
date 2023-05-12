@@ -134,6 +134,8 @@ object libEsmQuadrantsTableQuadrantStackMod {
     
     /* private */ var renderMainQuadrantRowHeader: Any = js.native
     
+    /* private */ var renderTableOverlay: Any = js.native
+    
     /* private */ var renderTopLeftQuadrantColumnHeader: Any = js.native
     
     /* private */ var renderTopLeftQuadrantMenu: Any = js.native
@@ -369,6 +371,10 @@ object libEsmQuadrantsTableQuadrantStackMod {
       * A callback that receives a `ref` to the main-quadrant element.
       */
     var quadrantRef: js.UndefOr[Ref[HTMLDivElement]] = js.native
+    
+    var renderScrollIndicatorOverlay: js.UndefOr[
+        js.Function2[/* scrollBarWidth */ Double, /* columnHeaderHeight */ Double, js.UndefOr[Element]]
+      ] = js.native
     
     /**
       * A callback that receives a `ref` to the main quadrant's row-header container.

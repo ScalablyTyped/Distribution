@@ -7,15 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait R3NgModuleMetadata extends StObject {
   
   /**
-    * An expression intended for use by statements that are adjacent (i.e. tightly coupled) to but
-    * not internal to a class definition.
-    *
-    * This can differ from the outer `type` if the class is being compiled by ngcc and is inside
-    * an IIFE structure that uses a different name internally.
-    */
-  var adjacentType: Expression
-  
-  /**
     * An array of expressions representing the bootstrap components specified by the module.
     */
   var bootstrap: js.Array[R3Reference]
@@ -49,15 +40,6 @@ trait R3NgModuleMetadata extends StObject {
   var includeImportTypes: Boolean
   
   /**
-    * An expression representing the module type being compiled, intended for use within a class
-    * definition itself.
-    *
-    * This can differ from the outer `type` if the class is being compiled by ngcc and is inside
-    * an IIFE structure that uses a different name internally.
-    */
-  var internalType: Expression
-  
-  /**
     * Those declarations which should be visible to downstream consumers. If not specified, all
     * declarations are made visible to downstream consumers.
     */
@@ -81,26 +63,22 @@ trait R3NgModuleMetadata extends StObject {
 object R3NgModuleMetadata {
   
   inline def apply(
-    adjacentType: Expression,
     bootstrap: js.Array[R3Reference],
     containsForwardDecls: Boolean,
     declarations: js.Array[R3Reference],
     exports: js.Array[R3Reference],
     imports: js.Array[R3Reference],
     includeImportTypes: Boolean,
-    internalType: Expression,
     selectorScopeMode: R3SelectorScopeMode,
     `type`: R3Reference
   ): R3NgModuleMetadata = {
-    val __obj = js.Dynamic.literal(adjacentType = adjacentType.asInstanceOf[js.Any], bootstrap = bootstrap.asInstanceOf[js.Any], containsForwardDecls = containsForwardDecls.asInstanceOf[js.Any], declarations = declarations.asInstanceOf[js.Any], exports = exports.asInstanceOf[js.Any], imports = imports.asInstanceOf[js.Any], includeImportTypes = includeImportTypes.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], selectorScopeMode = selectorScopeMode.asInstanceOf[js.Any], id = null, publicDeclarationTypes = null, schemas = null)
+    val __obj = js.Dynamic.literal(bootstrap = bootstrap.asInstanceOf[js.Any], containsForwardDecls = containsForwardDecls.asInstanceOf[js.Any], declarations = declarations.asInstanceOf[js.Any], exports = exports.asInstanceOf[js.Any], imports = imports.asInstanceOf[js.Any], includeImportTypes = includeImportTypes.asInstanceOf[js.Any], selectorScopeMode = selectorScopeMode.asInstanceOf[js.Any], id = null, publicDeclarationTypes = null, schemas = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3NgModuleMetadata]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: R3NgModuleMetadata] (val x: Self) extends AnyVal {
-    
-    inline def setAdjacentType(value: Expression): Self = StObject.set(x, "adjacentType", value.asInstanceOf[js.Any])
     
     inline def setBootstrap(value: js.Array[R3Reference]): Self = StObject.set(x, "bootstrap", value.asInstanceOf[js.Any])
     
@@ -125,8 +103,6 @@ object R3NgModuleMetadata {
     inline def setImportsVarargs(value: R3Reference*): Self = StObject.set(x, "imports", js.Array(value*))
     
     inline def setIncludeImportTypes(value: Boolean): Self = StObject.set(x, "includeImportTypes", value.asInstanceOf[js.Any])
-    
-    inline def setInternalType(value: Expression): Self = StObject.set(x, "internalType", value.asInstanceOf[js.Any])
     
     inline def setPublicDeclarationTypes(value: js.Array[Expression]): Self = StObject.set(x, "publicDeclarationTypes", value.asInstanceOf[js.Any])
     

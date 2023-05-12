@@ -1,5 +1,6 @@
 package typings.babylonjs
 
+import typings.babylonjs.anon.PartialRecordIInspectorCo
 import typings.babylonjs.camerasCameraMod.Camera
 import typings.babylonjs.miscIInspectableMod.IInspectable
 import typings.babylonjs.sceneMod.Scene
@@ -164,7 +165,7 @@ object debugDebugLayerMod {
     
     /**
       * List of inspectable custom properties (used by the Inspector)
-      * @see https://doc.babylonjs.com/how_to/debug_layer#extensibility
+      * @see https://doc.babylonjs.com/toolsAndResources/inspector#extensibility
       */
     var inspectableCustomProperties: js.Array[IInspectable]
     
@@ -259,6 +260,11 @@ object debugDebugLayerMod {
     def action(entity: Any): Unit
     
     /**
+      * Keep popup open after click
+      */
+    var keepOpenAfterClick: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Define the option label
       */
     var label: String
@@ -275,8 +281,49 @@ object debugDebugLayerMod {
       
       inline def setAction(value: Any => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
+      inline def setKeepOpenAfterClick(value: Boolean): Self = StObject.set(x, "keepOpenAfterClick", value.asInstanceOf[js.Any])
+      
+      inline def setKeepOpenAfterClickUndefined: Self = StObject.set(x, "keepOpenAfterClick", js.undefined)
+      
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     }
+  }
+  
+  @js.native
+  trait IInspectorContextMenuItem extends StObject {
+    
+    /**
+      * Callback function that will be called when the menu item is selected
+      * @param entity the entity that is currently selected in the scene explorer
+      */
+    def action(): Unit = js.native
+    def action(entity: Any): Unit = js.native
+    
+    /**
+      * Display label - menu item
+      */
+    var label: String = js.native
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.babylonjs.babylonjsStrings.pipeline
+    - typings.babylonjs.babylonjsStrings.node
+    - typings.babylonjs.babylonjsStrings.materials
+    - typings.babylonjs.babylonjsStrings.spriteManagers
+    - typings.babylonjs.babylonjsStrings.particleSystems
+  */
+  trait IInspectorContextMenuType extends StObject
+  object IInspectorContextMenuType {
+    
+    inline def materials: typings.babylonjs.babylonjsStrings.materials = "materials".asInstanceOf[typings.babylonjs.babylonjsStrings.materials]
+    
+    inline def node: typings.babylonjs.babylonjsStrings.node = "node".asInstanceOf[typings.babylonjs.babylonjsStrings.node]
+    
+    inline def particleSystems: typings.babylonjs.babylonjsStrings.particleSystems = "particleSystems".asInstanceOf[typings.babylonjs.babylonjsStrings.particleSystems]
+    
+    inline def pipeline: typings.babylonjs.babylonjsStrings.pipeline = "pipeline".asInstanceOf[typings.babylonjs.babylonjsStrings.pipeline]
+    
+    inline def spriteManagers: typings.babylonjs.babylonjsStrings.spriteManagers = "spriteManagers".asInstanceOf[typings.babylonjs.babylonjsStrings.spriteManagers]
   }
   
   trait IInspectorOptions extends StObject {
@@ -285,6 +332,16 @@ object debugDebugLayerMod {
       * Optional list of additional top level nodes
       */
     var additionalNodes: js.UndefOr[js.Array[IExplorerAdditionalNode]] = js.undefined
+    
+    /**
+      * Context menu for inspector tools such as "Post Process", "Nodes", "Materials", etc.
+      */
+    var contextMenu: js.UndefOr[PartialRecordIInspectorCo] = js.undefined
+    
+    /**
+      * List of context menu items that should be completely overridden by custom items from the contextMenu property.
+      */
+    var contextMenuOverride: js.UndefOr[js.Array[IInspectorContextMenuType]] = js.undefined
     
     /**
       * Display in embed mode (both panes on the right)
@@ -361,6 +418,16 @@ object debugDebugLayerMod {
       inline def setAdditionalNodesUndefined: Self = StObject.set(x, "additionalNodes", js.undefined)
       
       inline def setAdditionalNodesVarargs(value: IExplorerAdditionalNode*): Self = StObject.set(x, "additionalNodes", js.Array(value*))
+      
+      inline def setContextMenu(value: PartialRecordIInspectorCo): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
+      
+      inline def setContextMenuOverride(value: js.Array[IInspectorContextMenuType]): Self = StObject.set(x, "contextMenuOverride", value.asInstanceOf[js.Any])
+      
+      inline def setContextMenuOverrideUndefined: Self = StObject.set(x, "contextMenuOverride", js.undefined)
+      
+      inline def setContextMenuOverrideVarargs(value: IInspectorContextMenuType*): Self = StObject.set(x, "contextMenuOverride", js.Array(value*))
+      
+      inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
       inline def setEmbedMode(value: Boolean): Self = StObject.set(x, "embedMode", value.asInstanceOf[js.Any])
       

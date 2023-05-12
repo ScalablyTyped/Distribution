@@ -1,7 +1,7 @@
 
 # Scala.js typings for lcid
 
-Typings are for version 4.0.0
+Typings are for version 4.0.1
 
 ## Library description:
 Mapping between standard locale identifiers and Windows locale identifiers (LCID)

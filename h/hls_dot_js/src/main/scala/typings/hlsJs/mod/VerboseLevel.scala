@@ -1,42 +1,31 @@
 package typings.hlsJs.mod
 
+import typings.hlsJs.hlsJsInts.`0`
+import typings.hlsJs.hlsJsInts.`1`
+import typings.hlsJs.hlsJsInts.`2`
+import typings.hlsJs.hlsJsInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait VerboseLevel extends StObject
-@JSImport("hls.js", "VerboseLevel")
-@js.native
-object VerboseLevel extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.hlsJs.hlsJsInts.`0`
+  - typings.hlsJs.hlsJsInts.`1`
+  - typings.hlsJs.hlsJsInts.`2`
+  - typings.hlsJs.hlsJsInts.`3`
+*/
+trait VerboseLevel extends StObject
+object VerboseLevel {
   
-  @js.native
-  sealed trait DATA
-    extends StObject
-       with VerboseLevel
+  inline def DATA: `3` = 3.asInstanceOf[`3`]
   
-  @js.native
-  sealed trait DEBUG
-    extends StObject
-       with VerboseLevel
+  inline def DEBUG: `3` = 3.asInstanceOf[`3`]
   
-  @js.native
-  sealed trait ERROR
-    extends StObject
-       with VerboseLevel
+  inline def ERROR: `0` = 0.asInstanceOf[`0`]
   
-  @js.native
-  sealed trait INFO
-    extends StObject
-       with VerboseLevel
+  inline def INFO: `2` = 2.asInstanceOf[`2`]
   
-  @js.native
-  sealed trait TEXT
-    extends StObject
-       with VerboseLevel
+  inline def TEXT: `1` = 1.asInstanceOf[`1`]
   
-  @js.native
-  sealed trait WARNING
-    extends StObject
-       with VerboseLevel
+  inline def WARNING: `2` = 2.asInstanceOf[`2`]
 }

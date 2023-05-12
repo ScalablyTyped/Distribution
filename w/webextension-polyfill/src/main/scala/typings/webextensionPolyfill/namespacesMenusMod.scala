@@ -281,8 +281,9 @@ object namespacesMenusMod {
       
       /**
         * The id of the bookmark where the context menu was clicked, if it was on a bookmark.
+        * Optional.
         */
-      var bookmarkId: String
+      var bookmarkId: js.UndefOr[String] = js.undefined
       
       /**
         * An integer value of button by which menu item was clicked.
@@ -386,13 +387,8 @@ object namespacesMenusMod {
     }
     object OnClickData {
       
-      inline def apply(
-        bookmarkId: String,
-        editable: Boolean,
-        menuItemId: Double | String,
-        modifiers: js.Array[OnClickDataModifiersItemEnum]
-      ): OnClickData = {
-        val __obj = js.Dynamic.literal(bookmarkId = bookmarkId.asInstanceOf[js.Any], editable = editable.asInstanceOf[js.Any], menuItemId = menuItemId.asInstanceOf[js.Any], modifiers = modifiers.asInstanceOf[js.Any])
+      inline def apply(editable: Boolean, menuItemId: Double | String, modifiers: js.Array[OnClickDataModifiersItemEnum]): OnClickData = {
+        val __obj = js.Dynamic.literal(editable = editable.asInstanceOf[js.Any], menuItemId = menuItemId.asInstanceOf[js.Any], modifiers = modifiers.asInstanceOf[js.Any])
         __obj.asInstanceOf[OnClickData]
       }
       
@@ -400,6 +396,8 @@ object namespacesMenusMod {
       implicit open class MutableBuilder[Self <: OnClickData] (val x: Self) extends AnyVal {
         
         inline def setBookmarkId(value: String): Self = StObject.set(x, "bookmarkId", value.asInstanceOf[js.Any])
+        
+        inline def setBookmarkIdUndefined: Self = StObject.set(x, "bookmarkId", js.undefined)
         
         inline def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
         

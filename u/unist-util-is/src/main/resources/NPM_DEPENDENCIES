@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "unist-util-is" : "5.1.1"
+      "unist-util-is" : "5.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "unist-util-is" : "5.1.1"
+      "unist-util-is" : "5.2.1"
     }
   ],
   "compile-devDependencies" : [

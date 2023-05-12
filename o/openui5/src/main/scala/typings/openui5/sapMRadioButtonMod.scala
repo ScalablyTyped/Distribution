@@ -1,6 +1,7 @@
 package typings.openui5
 
 import typings.openui5.anon.Selected
+import typings.openui5.jQuery.Event
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
@@ -10,6 +11,8 @@ import typings.openui5.sapUiCoreLibraryMod.IFormContent
 import typings.openui5.sapUiCoreLibraryMod.TextAlign
 import typings.openui5.sapUiCoreLibraryMod.TextDirection
 import typings.openui5.sapUiCoreLibraryMod.ValueState
+import typings.std.Object
+import typings.std.PropertyKey
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -60,6 +63,27 @@ object sapMRadioButtonMod {
     
     /* CompleteClass */
     var __implements__sap_ui_core_IFormContent: Boolean = js.native
+    
+    /** The initial value of Object.prototype.constructor is the standard built-in Object constructor. */
+    /* standard es5 */
+    /* CompleteClass */
+    var constructor: js.Function = js.native
+    
+    /**
+      * Determines whether an object has a property with the specified name.
+      * @param v A property name.
+      */
+    /* standard es5 */
+    /* CompleteClass */
+    override def hasOwnProperty(v: PropertyKey): Boolean = js.native
+    
+    /**
+      * Determines whether a specified property is enumerable.
+      * @param v A property name.
+      */
+    /* standard es5 */
+    /* CompleteClass */
+    override def propertyIsEnumerable(v: PropertyKey): Boolean = js.native
   }
   /* static members */
   object default {
@@ -132,7 +156,10 @@ object sapMRadioButtonMod {
   @js.native
   trait RadioButton
     extends typings.openui5.sapUiCoreControlMod.default
-       with IFormContent {
+       with IFormContent
+       with /* was: sap.m.IToolbarInteractiveControl */ Object {
+    
+    var __implements__sap_m_IToolbarInteractiveControl: Boolean = js.native
     
     /**
       * Maintains the RadioButton's internal Label's text property.
@@ -262,6 +289,8 @@ object sapMRadioButtonMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:select select} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -430,7 +459,7 @@ object sapMRadioButtonMod {
     def onsapselect(/**
       * provides information for the event
       */
-    oEvent: js.Object): Unit = js.native
+    oEvent: Event): Unit = js.native
     
     /**
       * Removes all the controls in the association named {@link #getAriaDescribedBy ariaDescribedBy}.
@@ -562,6 +591,7 @@ object sapMRadioButtonMod {
     
     /**
       * @SINCE 1.16
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Sets the tab index of the control
       */

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `243` extends StObject {
   
   @JSName("application/json")
-  var applicationSlashjson: Events | Null
+  var applicationSlashjson: Defaultbranchonly | Null
 }
 object `243` {
   
@@ -20,7 +20,7 @@ object `243` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `243`] (val x: Self) extends AnyVal {
     
-    inline def setApplicationSlashjson(value: Events): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    inline def setApplicationSlashjson(value: Defaultbranchonly): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
     
     inline def setApplicationSlashjsonNull: Self = StObject.set(x, "application/json", null)
   }

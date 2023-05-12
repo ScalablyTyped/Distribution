@@ -8,62 +8,56 @@ trait Api extends StObject {
   
   /**
     * @example [
-    *   "13.64.0.0/16",
-    *   "13.65.0.0/16"
+    *   "192.0.2.1"
     * ]
     */
   var actions: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * @example [
-    *   "127.0.0.1/32"
+    *   "192.0.2.1"
     * ]
     */
   var api: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * @example [
-    *   "192.168.7.15/32",
-    *   "192.168.7.16/32"
+    *   "192.0.2.1"
     * ]
     */
   var dependabot: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * @example [
-    *   "127.0.0.1/32"
+    *   "192.0.2.1"
     * ]
     */
   var git: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * @example [
-    *   "127.0.0.1/32"
+    *   "192.0.2.1"
     * ]
     */
   var hooks: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * @example [
-    *   "54.158.161.132",
-    *   "54.226.70.38"
+    *   "192.0.2.1"
     * ]
     */
   var importer: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * @example [
-    *   "13.65.0.0/16",
-    *   "157.55.204.33/32",
-    *   "2a01:111:f403:f90c::/62"
+    *   "192.0.2.1"
     * ]
     */
   var packages: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * @example [
-    *   "192.30.252.153/32",
-    *   "192.30.252.154/32"
+    *   "192.0.2.1"
     * ]
     */
   var pages: js.UndefOr[js.Array[String]] = js.undefined
@@ -72,7 +66,7 @@ trait Api extends StObject {
   
   /**
     * @example [
-    *   "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl"
+    *   "ssh-ed25519 ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     * ]
     */
   var ssh_keys: js.UndefOr[js.Array[String]] = js.undefined
@@ -82,7 +76,7 @@ trait Api extends StObject {
   
   /**
     * @example [
-    *   "127.0.0.1/32"
+    *   "192.0.2.1"
     * ]
     */
   var web: js.UndefOr[js.Array[String]] = js.undefined

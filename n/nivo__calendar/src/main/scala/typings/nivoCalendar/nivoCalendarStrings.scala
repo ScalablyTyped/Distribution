@@ -1,5 +1,6 @@
 package typings.nivoCalendar
 
+import typings.nivoCalendar.distTypesTypesMod.Weekday
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,6 +36,12 @@ object nivoCalendarStrings {
   inline def date: date = "date".asInstanceOf[date]
   
   @js.native
+  sealed trait friday
+    extends StObject
+       with Weekday
+  inline def friday: friday = "friday".asInstanceOf[friday]
+  
+  @js.native
   sealed trait horizontal extends StObject
   inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
@@ -43,10 +50,46 @@ object nivoCalendarStrings {
   inline def img: img = "img".asInstanceOf[img]
   
   @js.native
+  sealed trait monday
+    extends StObject
+       with Weekday
+  inline def monday: monday = "monday".asInstanceOf[monday]
+  
+  @js.native
+  sealed trait saturday
+    extends StObject
+       with Weekday
+  inline def saturday: saturday = "saturday".asInstanceOf[saturday]
+  
+  @js.native
+  sealed trait sunday
+    extends StObject
+       with Weekday
+  inline def sunday: sunday = "sunday".asInstanceOf[sunday]
+  
+  @js.native
+  sealed trait thursday
+    extends StObject
+       with Weekday
+  inline def thursday: thursday = "thursday".asInstanceOf[thursday]
+  
+  @js.native
+  sealed trait tuesday
+    extends StObject
+       with Weekday
+  inline def tuesday: tuesday = "tuesday".asInstanceOf[tuesday]
+  
+  @js.native
   sealed trait value extends StObject
   inline def value: value = "value".asInstanceOf[value]
   
   @js.native
   sealed trait vertical extends StObject
   inline def vertical: vertical = "vertical".asInstanceOf[vertical]
+  
+  @js.native
+  sealed trait wednesday
+    extends StObject
+       with Weekday
+  inline def wednesday: wednesday = "wednesday".asInstanceOf[wednesday]
 }

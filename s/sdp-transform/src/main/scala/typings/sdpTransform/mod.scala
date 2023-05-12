@@ -51,7 +51,7 @@ object mod {
   
   inline def parseRemoteCandidates(candidates: String): js.Array[Component] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRemoteCandidates")(candidates.asInstanceOf[js.Any]).asInstanceOf[js.Array[Component]]
   
-  inline def parseSimulcastStreamList(streams: String): js.Array[Paused] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSimulcastStreamList")(streams.asInstanceOf[js.Any]).asInstanceOf[js.Array[Paused]]
+  inline def parseSimulcastStreamList(streams: String): js.Array[js.Array[Paused]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSimulcastStreamList")(streams.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[Paused]]]
   
   inline def write(description: SessionDescription): String = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(description.asInstanceOf[js.Any]).asInstanceOf[String]
   

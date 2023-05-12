@@ -87,8 +87,14 @@ trait PositionGizmo
   @JSName("snapDistance")
   var snapDistance_FPositionGizmo: Double = js.native
   
+  @JSName("updateGizmoPositionToMatchAttachedMesh")
+  def updateGizmoPositionToMatchAttachedMesh_MPositionGizmo: Boolean = js.native
+  
   @JSName("updateGizmoRotationToMatchAttachedMesh")
   def updateGizmoRotationToMatchAttachedMesh_MPositionGizmo: Boolean = js.native
+  
+  @JSName("updateScale")
+  def updateScale_MPositionGizmo: Boolean = js.native
   
   /**
     * Internal gizmo used for interactions on the x axis

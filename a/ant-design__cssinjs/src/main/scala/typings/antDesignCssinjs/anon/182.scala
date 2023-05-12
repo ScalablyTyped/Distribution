@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.FontLanguageOverride
+import typings.csstype.mod.Property.MsScrollSnapType
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `182` extends StObject {
   
   var value: js.UndefOr[
-    FontLanguageOverride | (js.Array[
+    MsScrollSnapType | (js.Array[
       (Extract[
-        js.UndefOr[FontLanguageOverride | js.Array[NonNullable[js.UndefOr[FontLanguageOverride]]]], 
+        js.UndefOr[MsScrollSnapType | js.Array[NonNullable[js.UndefOr[MsScrollSnapType]]]], 
         String
-      ]) | NonNullable[js.UndefOr[FontLanguageOverride]]
+      ]) | NonNullable[js.UndefOr[MsScrollSnapType]]
     ])
   ] = js.native
 }

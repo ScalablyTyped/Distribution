@@ -16,7 +16,7 @@ object libIconsFolderOpenTwoToneMod extends Shortcut {
   @js.native
   trait FolderOpenTwoToneIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_FolderOpenTwoToneIconType: String = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeDomainRequest extends StObject {
   
   /**
-    * The identifier of the domain you are describing.
+    * The identifier of the domain that you are describing.
     */
   var DomainId: typings.awsSdk.clientsVoiceidMod.DomainId
 }

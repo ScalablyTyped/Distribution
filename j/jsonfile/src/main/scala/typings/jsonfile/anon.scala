@@ -124,44 +124,6 @@ object anon {
     }
   }
   
-  trait FinalEOL extends StObject {
-    
-    var EOL: js.UndefOr[String] = js.undefined
-    
-    var finalEOL: js.UndefOr[Boolean] = js.undefined
-    
-    var replacer: js.UndefOr[js.Function2[/* key */ String, /* value */ Any, Any]] = js.undefined
-    
-    var spaces: js.UndefOr[String | Double] = js.undefined
-  }
-  object FinalEOL {
-    
-    inline def apply(): FinalEOL = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[FinalEOL]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: FinalEOL] (val x: Self) extends AnyVal {
-      
-      inline def setEOL(value: String): Self = StObject.set(x, "EOL", value.asInstanceOf[js.Any])
-      
-      inline def setEOLUndefined: Self = StObject.set(x, "EOL", js.undefined)
-      
-      inline def setFinalEOL(value: Boolean): Self = StObject.set(x, "finalEOL", value.asInstanceOf[js.Any])
-      
-      inline def setFinalEOLUndefined: Self = StObject.set(x, "finalEOL", js.undefined)
-      
-      inline def setReplacer(value: (/* key */ String, /* value */ Any) => Any): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
-      
-      inline def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
-      
-      inline def setSpaces(value: String | Double): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
-      
-      inline def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
-    }
-  }
-  
   @js.native
   trait FnCall extends StObject {
     

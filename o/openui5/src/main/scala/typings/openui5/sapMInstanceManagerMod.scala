@@ -33,6 +33,8 @@ object sapMInstanceManagerMod extends Shortcut {
   trait InstanceManager extends StObject {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Adds a control to predefined dialog category in instance manager.
       *
       * @returns Enable method chaining.
@@ -46,6 +48,8 @@ object sapMInstanceManagerMod extends Shortcut {
     ): this.type
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Adds an instance to the given category. If the instance is already added to the same category, it won't
       * be added again.
       *
@@ -63,6 +67,8 @@ object sapMInstanceManagerMod extends Shortcut {
     ): this.type
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Adds a control to predefined lightbox category in instance manager.
       *
       * @returns Enable method chaining.
@@ -75,6 +81,8 @@ object sapMInstanceManagerMod extends Shortcut {
     ): this.type
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Adds a control to predefined popover category in instance manager.
       *
       * @returns Enable method chaining.
@@ -109,6 +117,8 @@ object sapMInstanceManagerMod extends Shortcut {
     def closeAllPopovers(): this.type
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns an array of managed instances in the given category.
       *
       * @returns Managed instances in the given category.
@@ -164,6 +174,8 @@ object sapMInstanceManagerMod extends Shortcut {
     def hasOpenPopover(): Boolean
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns if there's no managed instance in the given category.
       *
       * @returns Whether the category is empty.
@@ -191,6 +203,8 @@ object sapMInstanceManagerMod extends Shortcut {
     ): Boolean
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Checks if an instance is managed under the given category.
       *
       * @returns Whether the instance is managed in the given category.
@@ -239,6 +253,8 @@ object sapMInstanceManagerMod extends Shortcut {
     ): Boolean
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Removes control from predefined dialog category in instance manager.
       *
       * @returns The removed dialog, or `null` if the dialog isn't managed.
@@ -251,6 +267,8 @@ object sapMInstanceManagerMod extends Shortcut {
     ): typings.openui5.sapUiCoreControlMod.default | Null
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Removes a managed instance from the given category.
       *
       * @returns The removed instance, or `null` if the instance isn't managed.
@@ -267,6 +285,8 @@ object sapMInstanceManagerMod extends Shortcut {
     ): js.Object | Null
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Removes control from predefined lightbox category in instance manager.
       *
       * @returns The removed LightBox, or `null` if the LightBox isn't managed.
@@ -279,6 +299,8 @@ object sapMInstanceManagerMod extends Shortcut {
     ): typings.openui5.sapMLightBoxMod.default | Null
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Removes control from predefined popover category in instance manager.
       *
       * @returns The removed popover, or `null` if the popover isn't managed.

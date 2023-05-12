@@ -2,7 +2,6 @@ package typings.reactCommandPalette
 
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
-import typings.reactCommandPalette.anon.MaxDisplayed
 import typings.reactCommandPalette.reactCommandPaletteStrings.`inline`
 import typings.reactCommandPalette.reactCommandPaletteStrings.modal
 import typings.std.Record
@@ -138,14 +137,7 @@ object commandPaletteMod {
       *
       * @default 7
       */
-    var maxDisplayed: js.UndefOr[
-        js.Function3[
-          /* props */ MaxDisplayed, 
-          /* propName */ String, 
-          /* componentName */ String, 
-          js.Error | Null
-        ]
-      ] = js.undefined
+    var maxDisplayed: js.UndefOr[Double] = js.undefined
     
     /**
       * onAfterOpen a function that fires after the command palette modal is opened
@@ -323,9 +315,7 @@ object commandPaletteMod {
       
       inline def setHotKeysVarargs(value: String*): Self = StObject.set(x, "hotKeys", js.Array(value*))
       
-      inline def setMaxDisplayed(
-        value: (/* props */ MaxDisplayed, /* propName */ String, /* componentName */ String) => js.Error | Null
-      ): Self = StObject.set(x, "maxDisplayed", js.Any.fromFunction3(value))
+      inline def setMaxDisplayed(value: Double): Self = StObject.set(x, "maxDisplayed", value.asInstanceOf[js.Any])
       
       inline def setMaxDisplayedUndefined: Self = StObject.set(x, "maxDisplayed", js.undefined)
       

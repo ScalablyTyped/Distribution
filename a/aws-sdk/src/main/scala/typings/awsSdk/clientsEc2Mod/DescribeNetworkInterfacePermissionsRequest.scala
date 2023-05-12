@@ -12,7 +12,7 @@ trait DescribeNetworkInterfacePermissionsRequest extends StObject {
   var Filters: js.UndefOr[FilterList] = js.undefined
   
   /**
-    * The maximum number of results to return in a single call. To retrieve the remaining results, make another call with the returned NextToken value. If this parameter is not specified, up to 50 results are returned by default.
+    * The maximum number of items to return for this request. To get the next page of items, make another request with the token returned in the output. If this parameter is not specified, up to 50 results are returned by default. For more information, see Pagination.
     */
   var MaxResults: js.UndefOr[DescribeNetworkInterfacePermissionsMaxResults] = js.undefined
   
@@ -22,7 +22,7 @@ trait DescribeNetworkInterfacePermissionsRequest extends StObject {
   var NetworkInterfacePermissionIds: js.UndefOr[NetworkInterfacePermissionIdList] = js.undefined
   
   /**
-    * The token to request the next page of results.
+    * The token returned from a previous paginated request. Pagination continues from the end of the items returned by the previous request.
     */
   var NextToken: js.UndefOr[String] = js.undefined
 }

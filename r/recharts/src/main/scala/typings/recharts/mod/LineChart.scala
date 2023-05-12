@@ -12,7 +12,7 @@ open class LineChart protected ()
   def this(props: LineChartProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: LineChartProps, context: Any) = this()
 }

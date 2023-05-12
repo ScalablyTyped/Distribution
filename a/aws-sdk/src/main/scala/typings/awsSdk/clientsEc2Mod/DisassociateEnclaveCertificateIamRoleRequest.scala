@@ -9,7 +9,7 @@ trait DisassociateEnclaveCertificateIamRoleRequest extends StObject {
   /**
     * The ARN of the ACM certificate from which to disassociate the IAM role.
     */
-  var CertificateArn: js.UndefOr[ResourceArn] = js.undefined
+  var CertificateArn: CertificateId
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
@@ -19,28 +19,24 @@ trait DisassociateEnclaveCertificateIamRoleRequest extends StObject {
   /**
     * The ARN of the IAM role to disassociate.
     */
-  var RoleArn: js.UndefOr[ResourceArn] = js.undefined
+  var RoleArn: RoleId
 }
 object DisassociateEnclaveCertificateIamRoleRequest {
   
-  inline def apply(): DisassociateEnclaveCertificateIamRoleRequest = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(CertificateArn: CertificateId, RoleArn: RoleId): DisassociateEnclaveCertificateIamRoleRequest = {
+    val __obj = js.Dynamic.literal(CertificateArn = CertificateArn.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateEnclaveCertificateIamRoleRequest]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: DisassociateEnclaveCertificateIamRoleRequest] (val x: Self) extends AnyVal {
     
-    inline def setCertificateArn(value: ResourceArn): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
-    
-    inline def setCertificateArnUndefined: Self = StObject.set(x, "CertificateArn", js.undefined)
+    inline def setCertificateArn(value: CertificateId): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    inline def setRoleArn(value: ResourceArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
-    
-    inline def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
+    inline def setRoleArn(value: RoleId): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
   }
 }

@@ -36,6 +36,12 @@ object toggleControlMod {
       var checked: js.UndefOr[Boolean] = js.undefined
       
       /**
+        * If disabled, the toggle will be grayed out and won't be available
+        * for user interaction.
+        */
+      var disabled: js.UndefOr[Boolean] = js.undefined
+      
+      /**
         * A function that receives the checked state as input.
         */
       var onChange: js.UndefOr[js.Function1[/* isChecked */ Boolean, Unit]] = js.undefined
@@ -53,6 +59,10 @@ object toggleControlMod {
         inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
         
         inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+        
+        inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+        
+        inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
         
         inline def setOnChange(value: /* isChecked */ Boolean => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
         

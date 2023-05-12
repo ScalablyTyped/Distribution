@@ -8,10 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aframe", "THREE.PerspectiveCamera")
 @js.native
 /**
-  * @param [fov=50] Camera frustum vertical field of view. Default value is 50.
-  * @param [aspect=1] Camera frustum aspect ratio. Default value is 1.
-  * @param [near=0.1] Camera frustum near plane. Default value is 0.1.
-  * @param [far=2000] Camera frustum far plane. Default value is 2000.
+  * Creates a new {@link PerspectiveCamera}.
+  * @remarks Together these define the camera's {@link https://en.wikipedia.org/wiki/Viewing_frustum | viewing frustum}.
+  * @param fov Camera frustum vertical field of view. Default `50`.
+  * @param aspect Camera frustum aspect ratio. Default `1`.
+  * @param near Camera frustum near plane. Default `0.1`.
+  * @param far Camera frustum far plane. Default `2000`.
   */
 open class PerspectiveCamera ()
   extends typings.three.mod.PerspectiveCamera

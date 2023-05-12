@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AddOn extends StObject {
   
   /**
+    * The amount of idle time in minutes after which your virtual computer will automatically stop.  This add-on only applies to Lightsail for Research resources. 
+    */
+  var duration: js.UndefOr[String] = js.undefined
+  
+  /**
     * The name of the add-on.
     */
   var name: js.UndefOr[String] = js.undefined
@@ -25,6 +30,11 @@ trait AddOn extends StObject {
     * The status of the add-on.
     */
   var status: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The trigger threshold of the action.  This add-on only applies to Lightsail for Research resources. 
+    */
+  var threshold: js.UndefOr[String] = js.undefined
 }
 object AddOn {
   
@@ -35,6 +45,10 @@ object AddOn {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: AddOn] (val x: Self) extends AnyVal {
+    
+    inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -51,5 +65,9 @@ object AddOn {
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    
+    inline def setThreshold(value: String): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    
+    inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
   }
 }

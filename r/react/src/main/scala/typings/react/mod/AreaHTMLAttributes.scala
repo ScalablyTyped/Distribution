@@ -22,8 +22,6 @@ trait AreaHTMLAttributes[T]
   
   var referrerPolicy: js.UndefOr[HTMLAttributeReferrerPolicy] = js.undefined
   
-  var rel: js.UndefOr[String] = js.undefined
-  
   var shape: js.UndefOr[String] = js.undefined
   
   var target: js.UndefOr[String] = js.undefined
@@ -65,10 +63,6 @@ object AreaHTMLAttributes {
     inline def setReferrerPolicy(value: HTMLAttributeReferrerPolicy): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
     
     inline def setReferrerPolicyUndefined: Self = StObject.set(x, "referrerPolicy", js.undefined)
-    
-    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
-    
-    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
     
     inline def setShape(value: String): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     

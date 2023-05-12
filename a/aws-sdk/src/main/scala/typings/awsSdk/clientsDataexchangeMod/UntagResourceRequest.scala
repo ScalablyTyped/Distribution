@@ -9,7 +9,7 @@ trait UntagResourceRequest extends StObject {
   /**
     * An Amazon Resource Name (ARN) that uniquely identifies an AWS resource.
     */
-  var ResourceArn: string
+  var ResourceArn: _String
   
   /**
     * The key tags.
@@ -18,7 +18,7 @@ trait UntagResourceRequest extends StObject {
 }
 object UntagResourceRequest {
   
-  inline def apply(ResourceArn: string, TagKeys: ListOfString): UntagResourceRequest = {
+  inline def apply(ResourceArn: _String, TagKeys: ListOfString): UntagResourceRequest = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any], TagKeys = TagKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[UntagResourceRequest]
   }
@@ -26,10 +26,10 @@ object UntagResourceRequest {
   @scala.inline
   implicit open class MutableBuilder[Self <: UntagResourceRequest] (val x: Self) extends AnyVal {
     
-    inline def setResourceArn(value: string): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: _String): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
     inline def setTagKeys(value: ListOfString): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
     
-    inline def setTagKeysVarargs(value: string*): Self = StObject.set(x, "TagKeys", js.Array(value*))
+    inline def setTagKeysVarargs(value: _String*): Self = StObject.set(x, "TagKeys", js.Array(value*))
   }
 }

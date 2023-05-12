@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The specification for a geocoding request to be sent to the
-  * <code>Geocoder</code>.
-  */
 trait GeocoderRequest extends StObject {
   
   /**
@@ -32,7 +28,6 @@ trait GeocoderRequest extends StObject {
   var componentRestrictions: js.UndefOr[Null | GeocoderComponentRestrictions] = js.undefined
   
   /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
     * A language identifier for the language in which results should be
     * returned, when possible. See the <a
     * href="https://developers.google.com/maps/faq#languagesupport">list of

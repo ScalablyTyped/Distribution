@@ -31,8 +31,9 @@ trait TypeofNgPluralCase
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `true`
+    `true`, 
+    scala.Nothing
   ] = js.native
   
-  var ɵfac: ɵɵFactoryDeclaration[NgPluralCase, js.Tuple4[Attribute, Null, Null, `6`]] = js.native
+  var ɵfac: ɵɵFactoryDeclaration[NgPluralCase, js.Tuple4[Attribute, Null, Null, `23`]] = js.native
 }

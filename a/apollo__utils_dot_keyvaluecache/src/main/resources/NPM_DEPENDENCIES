@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@apollo/utils.keyvaluecache" : "1.0.1"
+      "@apollo/utils.keyvaluecache" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@apollo/utils.keyvaluecache" : "1.0.1"
+      "@apollo/utils.keyvaluecache" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

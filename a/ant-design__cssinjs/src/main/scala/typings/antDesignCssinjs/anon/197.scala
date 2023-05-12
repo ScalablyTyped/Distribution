@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BaselineShift
+import typings.csstype.mod.Property.WebkitMask
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `197` extends StObject {
   
   var value: js.UndefOr[
-    (BaselineShift[Double | String]) | (js.Array[
+    (WebkitMask[Double | String]) | (js.Array[
       (Extract[
         js.UndefOr[
-          (BaselineShift[Double | String]) | (js.Array[NonNullable[js.UndefOr[BaselineShift[Double | String]]]])
+          (WebkitMask[Double | String]) | (js.Array[NonNullable[js.UndefOr[WebkitMask[Double | String]]]])
         ], 
         String
-      ]) | (NonNullable[js.UndefOr[BaselineShift[Double | String]]])
+      ]) | (NonNullable[js.UndefOr[WebkitMask[Double | String]]])
     ])
   ] = js.native
 }

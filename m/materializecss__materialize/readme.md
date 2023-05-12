@@ -1,7 +1,7 @@
 
 # Scala.js typings for materializecss__materialize
 
-Typings are for version 1.1
+Typings are for version 1.2
 
 ## Library description:
 Builds Materialize distribution packages

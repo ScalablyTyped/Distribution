@@ -54,5 +54,5 @@ object distTypesParserTraverserStatementMod {
   
   inline def parseTopLevel(): File = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTopLevel")().asInstanceOf[File]
   
-  inline def parseVarStatement(kind: TokenType): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("parseVarStatement")(kind.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def parseVarStatement(isBlockScope: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("parseVarStatement")(isBlockScope.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

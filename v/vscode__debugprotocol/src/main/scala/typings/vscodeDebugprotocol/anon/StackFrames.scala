@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait StackFrames extends StObject {
   
-  /** The frames of the stackframe. If the array has length zero, there are no stackframes available.
+  /** The frames of the stack frame. If the array has length zero, there are no stack frames available.
   				This means that there is no location information available.
   			*/
   var stackFrames: js.Array[StackFrame]
   
-  /** The total number of frames available in the stack. If omitted or if totalFrames is larger than the available frames, a client is expected to request frames until a request returns less frames than requested (which indicates the end of the stack). Returning monotonically increasing totalFrames values for subsequent requests can be used to enforce paging in the client. */
+  /** The total number of frames available in the stack. If omitted or if `totalFrames` is larger than the available frames, a client is expected to request frames until a request returns less frames than requested (which indicates the end of the stack). Returning monotonically increasing `totalFrames` values for subsequent requests can be used to enforce paging in the client. */
   var totalFrames: js.UndefOr[Double] = js.undefined
 }
 object StackFrames {

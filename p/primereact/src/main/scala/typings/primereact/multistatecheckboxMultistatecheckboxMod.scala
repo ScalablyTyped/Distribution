@@ -1,6 +1,7 @@
 package typings.primereact
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.primereact.primereactStrings._empty
 import typings.primereact.primereactStrings.`additions removals`
 import typings.primereact.primereactStrings.`additions text`
 import typings.primereact.primereactStrings.`inline`
@@ -8,8 +9,10 @@ import typings.primereact.primereactStrings.`removals additions`
 import typings.primereact.primereactStrings.`removals text`
 import typings.primereact.primereactStrings.`text additions`
 import typings.primereact.primereactStrings.`text removals`
+import typings.primereact.primereactStrings.`use-credentials`
 import typings.primereact.primereactStrings.additions
 import typings.primereact.primereactStrings.all
+import typings.primereact.primereactStrings.anonymous
 import typings.primereact.primereactStrings.ascending
 import typings.primereact.primereactStrings.assertive
 import typings.primereact.primereactStrings.both
@@ -100,6 +103,7 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -113,26 +117,55 @@ object multistatecheckboxMultistatecheckboxMod {
     def this(props: MultiStateCheckboxProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: MultiStateCheckboxProps, context: Any) = this()
     
+    /**
+      * Used to focus the component.
+      */
+    def focus(): Unit = js.native
+    
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
   }
   
-  trait MultiStateCheckboxChangeParams extends StObject {
+  /**
+    * Custom change event.
+    * @see {@link MultiStateCheckboxProps.onChange}
+    * @event
+    */
+  trait MultiStateCheckboxChangeEvent extends StObject {
     
+    /**
+      * Browser event
+      */
     var originalEvent: SyntheticEvent[Element, Event]
     
+    /**
+      * Prevents the default action of the event.
+      */
     def preventDefault(): Unit
     
+    /**
+      * Stops the event from propagating.
+      */
     def stopPropagation(): Unit
     
+    /**
+      * Target options.
+      */
     var target: MultiStateCheckboxChangeTargetOptions
     
+    /**
+      * Current value
+      */
     var value: Any
   }
-  object MultiStateCheckboxChangeParams {
+  object MultiStateCheckboxChangeEvent {
     
     inline def apply(
       originalEvent: SyntheticEvent[Element, Event],
@@ -140,13 +173,13 @@ object multistatecheckboxMultistatecheckboxMod {
       stopPropagation: () => Unit,
       target: MultiStateCheckboxChangeTargetOptions,
       value: Any
-    ): MultiStateCheckboxChangeParams = {
+    ): MultiStateCheckboxChangeEvent = {
       val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[MultiStateCheckboxChangeParams]
+      __obj.asInstanceOf[MultiStateCheckboxChangeEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: MultiStateCheckboxChangeParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: MultiStateCheckboxChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -160,12 +193,24 @@ object multistatecheckboxMultistatecheckboxMod {
     }
   }
   
+  /**
+    * Custom change target options.
+    */
   trait MultiStateCheckboxChangeTargetOptions extends StObject {
     
+    /**
+      * Unique identifier of the element.
+      */
     var id: String
     
+    /**
+      * The name of the element.
+      */
     var name: String
     
+    /**
+      * Value of the MultiStateCheckbox.
+      */
     var value: js.UndefOr[Boolean | Null] = js.undefined
   }
   object MultiStateCheckboxChangeTargetOptions {
@@ -190,25 +235,40 @@ object multistatecheckboxMultistatecheckboxMod {
     }
   }
   
-  trait MultiStateCheckboxIconTemplateParams extends StObject {
+  /**
+    * Custom icon template options.
+    */
+  trait MultiStateCheckboxIconTemplateEvent extends StObject {
     
+    /**
+      * Style class of the element.
+      */
     var className: String
     
+    /**
+      * The default element created by the component.
+      */
     var element: typings.react.mod.global.JSX.Element
     
+    /**
+      * Option of the element.
+      */
     var option: js.UndefOr[MultiStateCheckboxOption | Null] = js.undefined
     
+    /**
+      * The props passed to the component.
+      */
     var props: MultiStateCheckboxProps
   }
-  object MultiStateCheckboxIconTemplateParams {
+  object MultiStateCheckboxIconTemplateEvent {
     
-    inline def apply(className: String, element: typings.react.mod.global.JSX.Element, props: MultiStateCheckboxProps): MultiStateCheckboxIconTemplateParams = {
+    inline def apply(className: String, element: typings.react.mod.global.JSX.Element, props: MultiStateCheckboxProps): MultiStateCheckboxIconTemplateEvent = {
       val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
-      __obj.asInstanceOf[MultiStateCheckboxIconTemplateParams]
+      __obj.asInstanceOf[MultiStateCheckboxIconTemplateEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: MultiStateCheckboxIconTemplateParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: MultiStateCheckboxIconTemplateEvent] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -224,16 +284,26 @@ object multistatecheckboxMultistatecheckboxMod {
     }
   }
   
-  type MultiStateCheckboxIconTemplateType = ReactNode | (js.Function1[/* options */ MultiStateCheckboxIconTemplateParams, ReactNode])
-  
+  /**
+    * Custom MultiStateCheckbox option.
+    */
   trait MultiStateCheckboxOption
     extends StObject
        with /* key */ StringDictionary[Any] {
     
+    /**
+      * Style class of the element.
+      */
     var className: String
     
+    /**
+      * The icon of the option.
+      */
     var icon: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<MultiStateCheckboxProps> */ Any
     
+    /**
+      * Inline style of the element.
+      */
     var style: CSSProperties
   }
   object MultiStateCheckboxOption {
@@ -259,8 +329,6 @@ object multistatecheckboxMultistatecheckboxMod {
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
   }
-  
-  type MultiStateCheckboxOptionsType = js.Array[Any | MultiStateCheckboxOption]
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'onChange' | 'ref'> */
   trait MultiStateCheckboxProps extends StObject {
@@ -385,20 +453,29 @@ object multistatecheckboxMultistatecheckboxMod {
     
     var checked: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
     
+    var content: js.UndefOr[String] = js.undefined
+    
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
+    /**
+      * A property to uniquely identify an option.
+      */
     var dataKey: js.UndefOr[String] = js.undefined
     
     var datatype: js.UndefOr[String] = js.undefined
@@ -409,17 +486,25 @@ object multistatecheckboxMultistatecheckboxMod {
     
     var dir: js.UndefOr[String] = js.undefined
     
+    /**
+      * When present, it specifies that the element value cannot be altered.
+      * @defaultValue false
+      */
     var disabled: js.UndefOr[Boolean] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
+    /**
+      * If false, the empty state is skipped in the chekbox.
+      * @defaultValue true
+      */
     var empty: js.UndefOr[Boolean] = js.undefined
     
     var enterKeyHint: js.UndefOr[enter | done | go | next | previous | search | send] = js.undefined
     
     var form: js.UndefOr[String] = js.undefined
     
-    var formAction: js.UndefOr[String] = js.undefined
+    var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     var formEncType: js.UndefOr[String] = js.undefined
     
@@ -433,7 +518,12 @@ object multistatecheckboxMultistatecheckboxMod {
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var iconTemplate: js.UndefOr[MultiStateCheckboxIconTemplateType] = js.undefined
+    /**
+      * Template of icon for the selected option.
+      */
+    var iconTemplate: js.UndefOr[
+        ReactNode | (js.Function1[/* options */ MultiStateCheckboxIconTemplateEvent, ReactNode])
+      ] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
@@ -491,7 +581,11 @@ object multistatecheckboxMultistatecheckboxMod {
     
     var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ MultiStateCheckboxChangeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke on value change
+      * @param {MultiStateCheckboxChangeEvent} event - Custom change event.
+      */
+    var onChange: js.UndefOr[js.Function1[/* event */ MultiStateCheckboxChangeEvent, Unit]] = js.undefined
     
     var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
@@ -633,11 +727,25 @@ object multistatecheckboxMultistatecheckboxMod {
     
     var onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Property name to use as the icon of an option, defaults to the icon property.
+      */
+    var optionIcon: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Property name to refer to the option label, used by screen readers only. Defaults to optionValue.
+      */
     var optionLabel: js.UndefOr[String] = js.undefined
     
+    /**
+      * Property name to use as the value of an option, defaults to the option itself when not defined.
+      */
     var optionValue: js.UndefOr[String] = js.undefined
     
-    var options: js.UndefOr[MultiStateCheckboxOptionsType] = js.undefined
+    /**
+      * An array to display as the available options.
+      */
+    var options: js.UndefOr[js.Array[Any | MultiStateCheckboxOption]] = js.undefined
     
     var pattern: js.UndefOr[String] = js.undefined
     
@@ -649,13 +757,21 @@ object multistatecheckboxMultistatecheckboxMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    /**
+      * When present, it specifies that the value cannot be changed.
+      * @defaultValue false
+      */
     var readOnly: js.UndefOr[Boolean] = js.undefined
+    
+    var rel: js.UndefOr[String] = js.undefined
     
     var required: js.UndefOr[Boolean] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -681,8 +797,14 @@ object multistatecheckboxMultistatecheckboxMod {
     
     var title: js.UndefOr[String] = js.undefined
     
+    /**
+      * Content of the tooltip.
+      */
     var tooltip: js.UndefOr[String] = js.undefined
     
+    /**
+      * Configuration of the tooltip, refer to the tooltip documentation for more information.
+      */
     var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
     
     var translate: js.UndefOr[yes | no] = js.undefined
@@ -693,6 +815,9 @@ object multistatecheckboxMultistatecheckboxMod {
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
+    /**
+      * Value of the MultiStateCheckbox.
+      */
     var value: js.UndefOr[Any] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
@@ -959,15 +1084,19 @@ object multistatecheckboxMultistatecheckboxMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -1015,7 +1144,9 @@ object multistatecheckboxMultistatecheckboxMod {
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      
+      inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
       
       inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
@@ -1045,9 +1176,9 @@ object multistatecheckboxMultistatecheckboxMod {
       
       inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      inline def setIconTemplate(value: MultiStateCheckboxIconTemplateType): Self = StObject.set(x, "iconTemplate", value.asInstanceOf[js.Any])
+      inline def setIconTemplate(value: ReactNode | (js.Function1[/* options */ MultiStateCheckboxIconTemplateEvent, ReactNode])): Self = StObject.set(x, "iconTemplate", value.asInstanceOf[js.Any])
       
-      inline def setIconTemplateFunction1(value: /* options */ MultiStateCheckboxIconTemplateParams => ReactNode): Self = StObject.set(x, "iconTemplate", js.Any.fromFunction1(value))
+      inline def setIconTemplateFunction1(value: /* options */ MultiStateCheckboxIconTemplateEvent => ReactNode): Self = StObject.set(x, "iconTemplate", js.Any.fromFunction1(value))
       
       inline def setIconTemplateUndefined: Self = StObject.set(x, "iconTemplate", js.undefined)
       
@@ -1165,7 +1296,7 @@ object multistatecheckboxMultistatecheckboxMod {
       
       inline def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
       
-      inline def setOnChange(value: /* e */ MultiStateCheckboxChangeParams => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* event */ MultiStateCheckboxChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -1449,6 +1580,10 @@ object multistatecheckboxMultistatecheckboxMod {
       
       inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
       
+      inline def setOptionIcon(value: String): Self = StObject.set(x, "optionIcon", value.asInstanceOf[js.Any])
+      
+      inline def setOptionIconUndefined: Self = StObject.set(x, "optionIcon", js.undefined)
+      
       inline def setOptionLabel(value: String): Self = StObject.set(x, "optionLabel", value.asInstanceOf[js.Any])
       
       inline def setOptionLabelUndefined: Self = StObject.set(x, "optionLabel", js.undefined)
@@ -1457,7 +1592,7 @@ object multistatecheckboxMultistatecheckboxMod {
       
       inline def setOptionValueUndefined: Self = StObject.set(x, "optionValue", js.undefined)
       
-      inline def setOptions(value: MultiStateCheckboxOptionsType): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[Any | MultiStateCheckboxOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
@@ -1487,6 +1622,10 @@ object multistatecheckboxMultistatecheckboxMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -1498,6 +1637,10 @@ object multistatecheckboxMultistatecheckboxMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       

@@ -116,7 +116,9 @@ import typings.csstype.mod.Property.BreakAfter
 import typings.csstype.mod.Property.BreakBefore
 import typings.csstype.mod.Property.BreakInside
 import typings.csstype.mod.Property.CaptionSide
+import typings.csstype.mod.Property.Caret
 import typings.csstype.mod.Property.CaretColor
+import typings.csstype.mod.Property.CaretShape
 import typings.csstype.mod.Property.Clear
 import typings.csstype.mod.Property.Clip
 import typings.csstype.mod.Property.ClipPath
@@ -136,6 +138,14 @@ import typings.csstype.mod.Property.ColumnSpan
 import typings.csstype.mod.Property.ColumnWidth
 import typings.csstype.mod.Property.Columns
 import typings.csstype.mod.Property.Contain
+import typings.csstype.mod.Property.ContainIntrinsicBlockSize
+import typings.csstype.mod.Property.ContainIntrinsicHeight
+import typings.csstype.mod.Property.ContainIntrinsicInlineSize
+import typings.csstype.mod.Property.ContainIntrinsicSize
+import typings.csstype.mod.Property.ContainIntrinsicWidth
+import typings.csstype.mod.Property.Container
+import typings.csstype.mod.Property.ContainerName
+import typings.csstype.mod.Property.ContainerType
 import typings.csstype.mod.Property.Content
 import typings.csstype.mod.Property.ContentVisibility
 import typings.csstype.mod.Property.CounterIncrement
@@ -166,6 +176,7 @@ import typings.csstype.mod.Property.FontFeatureSettings
 import typings.csstype.mod.Property.FontKerning
 import typings.csstype.mod.Property.FontLanguageOverride
 import typings.csstype.mod.Property.FontOpticalSizing
+import typings.csstype.mod.Property.FontPalette
 import typings.csstype.mod.Property.FontSize
 import typings.csstype.mod.Property.FontSizeAdjust
 import typings.csstype.mod.Property.FontSmooth
@@ -176,6 +187,7 @@ import typings.csstype.mod.Property.FontVariant
 import typings.csstype.mod.Property.FontVariantAlternates
 import typings.csstype.mod.Property.FontVariantCaps
 import typings.csstype.mod.Property.FontVariantEastAsian
+import typings.csstype.mod.Property.FontVariantEmoji
 import typings.csstype.mod.Property.FontVariantLigatures
 import typings.csstype.mod.Property.FontVariantNumeric
 import typings.csstype.mod.Property.FontVariantPosition
@@ -205,6 +217,7 @@ import typings.csstype.mod.Property.GridTemplateRows
 import typings.csstype.mod.Property.HangingPunctuation
 import typings.csstype.mod.Property.Height
 import typings.csstype.mod.Property.HyphenateCharacter
+import typings.csstype.mod.Property.HyphenateLimitChars
 import typings.csstype.mod.Property.Hyphens
 import typings.csstype.mod.Property.ImageOrientation
 import typings.csstype.mod.Property.ImageRendering
@@ -247,6 +260,7 @@ import typings.csstype.mod.Property.MarginInlineStart
 import typings.csstype.mod.Property.MarginLeft
 import typings.csstype.mod.Property.MarginRight
 import typings.csstype.mod.Property.MarginTop
+import typings.csstype.mod.Property.MarginTrim
 import typings.csstype.mod.Property.Marker
 import typings.csstype.mod.Property.MarkerEnd
 import typings.csstype.mod.Property.MarkerMid
@@ -358,6 +372,7 @@ import typings.csstype.mod.Property.Offset
 import typings.csstype.mod.Property.OffsetAnchor
 import typings.csstype.mod.Property.OffsetDistance
 import typings.csstype.mod.Property.OffsetPath
+import typings.csstype.mod.Property.OffsetPosition
 import typings.csstype.mod.Property.OffsetRotate
 import typings.csstype.mod.Property.Opacity
 import typings.csstype.mod.Property.Order
@@ -392,6 +407,7 @@ import typings.csstype.mod.Property.PaddingInlineStart
 import typings.csstype.mod.Property.PaddingLeft
 import typings.csstype.mod.Property.PaddingRight
 import typings.csstype.mod.Property.PaddingTop
+import typings.csstype.mod.Property.Page
 import typings.csstype.mod.Property.PageBreakAfter
 import typings.csstype.mod.Property.PageBreakBefore
 import typings.csstype.mod.Property.PageBreakInside
@@ -445,6 +461,9 @@ import typings.csstype.mod.Property.ScrollSnapStop
 import typings.csstype.mod.Property.ScrollSnapType
 import typings.csstype.mod.Property.ScrollSnapTypeX
 import typings.csstype.mod.Property.ScrollSnapTypeY
+import typings.csstype.mod.Property.ScrollTimeline
+import typings.csstype.mod.Property.ScrollTimelineAxis
+import typings.csstype.mod.Property.ScrollTimelineName
 import typings.csstype.mod.Property.ScrollbarColor
 import typings.csstype.mod.Property.ScrollbarGutter
 import typings.csstype.mod.Property.ScrollbarWidth
@@ -505,6 +524,7 @@ import typings.csstype.mod.Property.UnicodeBidi
 import typings.csstype.mod.Property.UserSelect
 import typings.csstype.mod.Property.VectorEffect
 import typings.csstype.mod.Property.VerticalAlign
+import typings.csstype.mod.Property.ViewTransitionName
 import typings.csstype.mod.Property.Visibility
 import typings.csstype.mod.Property.WebkitAppearance
 import typings.csstype.mod.Property.WebkitBorderBefore
@@ -1372,7 +1392,11 @@ object mod {
     
     var captionSide: js.UndefOr[CaptionSide | OpaqueConfig] = js.undefined
     
+    var caret: js.UndefOr[Caret | OpaqueConfig] = js.undefined
+    
     var caretColor: js.UndefOr[CaretColor | OpaqueConfig] = js.undefined
+    
+    var caretShape: js.UndefOr[CaretShape | OpaqueConfig] = js.undefined
     
     var clear: js.UndefOr[Clear | OpaqueConfig] = js.undefined
     
@@ -1413,6 +1437,22 @@ object mod {
     var columns: js.UndefOr[(Columns[String | Double]) | OpaqueConfig] = js.undefined
     
     var contain: js.UndefOr[Contain | OpaqueConfig] = js.undefined
+    
+    var containIntrinsicBlockSize: js.UndefOr[(ContainIntrinsicBlockSize[String | Double]) | OpaqueConfig] = js.undefined
+    
+    var containIntrinsicHeight: js.UndefOr[(ContainIntrinsicHeight[String | Double]) | OpaqueConfig] = js.undefined
+    
+    var containIntrinsicInlineSize: js.UndefOr[(ContainIntrinsicInlineSize[String | Double]) | OpaqueConfig] = js.undefined
+    
+    var containIntrinsicSize: js.UndefOr[(ContainIntrinsicSize[String | Double]) | OpaqueConfig] = js.undefined
+    
+    var containIntrinsicWidth: js.UndefOr[(ContainIntrinsicWidth[String | Double]) | OpaqueConfig] = js.undefined
+    
+    var container: js.UndefOr[Container | OpaqueConfig] = js.undefined
+    
+    var containerName: js.UndefOr[ContainerName | OpaqueConfig] = js.undefined
+    
+    var containerType: js.UndefOr[ContainerType | OpaqueConfig] = js.undefined
     
     var content: js.UndefOr[Content | OpaqueConfig] = js.undefined
     
@@ -1474,6 +1514,8 @@ object mod {
     
     var fontOpticalSizing: js.UndefOr[FontOpticalSizing | OpaqueConfig] = js.undefined
     
+    var fontPalette: js.UndefOr[FontPalette | OpaqueConfig] = js.undefined
+    
     var fontSize: js.UndefOr[(FontSize[String | Double]) | OpaqueConfig] = js.undefined
     
     var fontSizeAdjust: js.UndefOr[FontSizeAdjust | OpaqueConfig] = js.undefined
@@ -1493,6 +1535,8 @@ object mod {
     var fontVariantCaps: js.UndefOr[FontVariantCaps | OpaqueConfig] = js.undefined
     
     var fontVariantEastAsian: js.UndefOr[FontVariantEastAsian | OpaqueConfig] = js.undefined
+    
+    var fontVariantEmoji: js.UndefOr[FontVariantEmoji | OpaqueConfig] = js.undefined
     
     var fontVariantLigatures: js.UndefOr[FontVariantLigatures | OpaqueConfig] = js.undefined
     
@@ -1553,6 +1597,8 @@ object mod {
     var height: js.UndefOr[(Height[String | Double]) | OpaqueConfig] = js.undefined
     
     var hyphenateCharacter: js.UndefOr[HyphenateCharacter | OpaqueConfig] = js.undefined
+    
+    var hyphenateLimitChars: js.UndefOr[HyphenateLimitChars | OpaqueConfig] = js.undefined
     
     var hyphens: js.UndefOr[Hyphens | OpaqueConfig] = js.undefined
     
@@ -1637,6 +1683,8 @@ object mod {
     var marginRight: js.UndefOr[(MarginRight[String | Double]) | OpaqueConfig] = js.undefined
     
     var marginTop: js.UndefOr[(MarginTop[String | Double]) | OpaqueConfig] = js.undefined
+    
+    var marginTrim: js.UndefOr[MarginTrim | OpaqueConfig] = js.undefined
     
     var marker: js.UndefOr[Marker | OpaqueConfig] = js.undefined
     
@@ -1876,6 +1924,8 @@ object mod {
     
     var offsetPath: js.UndefOr[OffsetPath | OpaqueConfig] = js.undefined
     
+    var offsetPosition: js.UndefOr[(OffsetPosition[String | Double]) | OpaqueConfig] = js.undefined
+    
     var offsetRotate: js.UndefOr[OffsetRotate | OpaqueConfig] = js.undefined
     
     var offsetRotation: js.UndefOr[OffsetRotate | OpaqueConfig] = js.undefined
@@ -1945,6 +1995,8 @@ object mod {
     var paddingRight: js.UndefOr[(PaddingRight[String | Double]) | OpaqueConfig] = js.undefined
     
     var paddingTop: js.UndefOr[(PaddingTop[String | Double]) | OpaqueConfig] = js.undefined
+    
+    var page: js.UndefOr[Page | OpaqueConfig] = js.undefined
     
     var pageBreakAfter: js.UndefOr[PageBreakAfter | OpaqueConfig] = js.undefined
     
@@ -2061,6 +2113,12 @@ object mod {
     var scrollSnapTypeX: js.UndefOr[ScrollSnapTypeX | OpaqueConfig] = js.undefined
     
     var scrollSnapTypeY: js.UndefOr[ScrollSnapTypeY | OpaqueConfig] = js.undefined
+    
+    var scrollTimeline: js.UndefOr[ScrollTimeline | OpaqueConfig] = js.undefined
+    
+    var scrollTimelineAxis: js.UndefOr[ScrollTimelineAxis | OpaqueConfig] = js.undefined
+    
+    var scrollTimelineName: js.UndefOr[ScrollTimelineName | OpaqueConfig] = js.undefined
     
     var scrollbarColor: js.UndefOr[ScrollbarColor | OpaqueConfig] = js.undefined
     
@@ -2181,6 +2239,8 @@ object mod {
     var vectorEffect: js.UndefOr[VectorEffect | OpaqueConfig] = js.undefined
     
     var verticalAlign: js.UndefOr[(VerticalAlign[String | Double]) | OpaqueConfig] = js.undefined
+    
+    var viewTransitionName: js.UndefOr[ViewTransitionName | OpaqueConfig] = js.undefined
     
     var visibility: js.UndefOr[Visibility | OpaqueConfig] = js.undefined
     
@@ -2675,9 +2735,17 @@ object mod {
       
       inline def setCaptionSideUndefined: Self = StObject.set(x, "captionSide", js.undefined)
       
+      inline def setCaret(value: Caret | OpaqueConfig): Self = StObject.set(x, "caret", value.asInstanceOf[js.Any])
+      
       inline def setCaretColor(value: CaretColor | OpaqueConfig): Self = StObject.set(x, "caretColor", value.asInstanceOf[js.Any])
       
       inline def setCaretColorUndefined: Self = StObject.set(x, "caretColor", js.undefined)
+      
+      inline def setCaretShape(value: CaretShape | OpaqueConfig): Self = StObject.set(x, "caretShape", value.asInstanceOf[js.Any])
+      
+      inline def setCaretShapeUndefined: Self = StObject.set(x, "caretShape", js.undefined)
+      
+      inline def setCaretUndefined: Self = StObject.set(x, "caret", js.undefined)
       
       inline def setClear(value: Clear | OpaqueConfig): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       
@@ -2757,7 +2825,39 @@ object mod {
       
       inline def setContain(value: Contain | OpaqueConfig): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
       
+      inline def setContainIntrinsicBlockSize(value: (ContainIntrinsicBlockSize[String | Double]) | OpaqueConfig): Self = StObject.set(x, "containIntrinsicBlockSize", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicBlockSizeUndefined: Self = StObject.set(x, "containIntrinsicBlockSize", js.undefined)
+      
+      inline def setContainIntrinsicHeight(value: (ContainIntrinsicHeight[String | Double]) | OpaqueConfig): Self = StObject.set(x, "containIntrinsicHeight", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicHeightUndefined: Self = StObject.set(x, "containIntrinsicHeight", js.undefined)
+      
+      inline def setContainIntrinsicInlineSize(value: (ContainIntrinsicInlineSize[String | Double]) | OpaqueConfig): Self = StObject.set(x, "containIntrinsicInlineSize", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicInlineSizeUndefined: Self = StObject.set(x, "containIntrinsicInlineSize", js.undefined)
+      
+      inline def setContainIntrinsicSize(value: (ContainIntrinsicSize[String | Double]) | OpaqueConfig): Self = StObject.set(x, "containIntrinsicSize", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicSizeUndefined: Self = StObject.set(x, "containIntrinsicSize", js.undefined)
+      
+      inline def setContainIntrinsicWidth(value: (ContainIntrinsicWidth[String | Double]) | OpaqueConfig): Self = StObject.set(x, "containIntrinsicWidth", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicWidthUndefined: Self = StObject.set(x, "containIntrinsicWidth", js.undefined)
+      
       inline def setContainUndefined: Self = StObject.set(x, "contain", js.undefined)
+      
+      inline def setContainer(value: Container | OpaqueConfig): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      
+      inline def setContainerName(value: ContainerName | OpaqueConfig): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+      
+      inline def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
+      
+      inline def setContainerType(value: ContainerType | OpaqueConfig): Self = StObject.set(x, "containerType", value.asInstanceOf[js.Any])
+      
+      inline def setContainerTypeUndefined: Self = StObject.set(x, "containerType", js.undefined)
+      
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
       inline def setContent(value: Content | OpaqueConfig): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -2877,6 +2977,10 @@ object mod {
       
       inline def setFontOpticalSizingUndefined: Self = StObject.set(x, "fontOpticalSizing", js.undefined)
       
+      inline def setFontPalette(value: FontPalette | OpaqueConfig): Self = StObject.set(x, "fontPalette", value.asInstanceOf[js.Any])
+      
+      inline def setFontPaletteUndefined: Self = StObject.set(x, "fontPalette", js.undefined)
+      
       inline def setFontSize(value: (FontSize[String | Double]) | OpaqueConfig): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
       inline def setFontSizeAdjust(value: FontSizeAdjust | OpaqueConfig): Self = StObject.set(x, "fontSizeAdjust", value.asInstanceOf[js.Any])
@@ -2916,6 +3020,10 @@ object mod {
       inline def setFontVariantEastAsian(value: FontVariantEastAsian | OpaqueConfig): Self = StObject.set(x, "fontVariantEastAsian", value.asInstanceOf[js.Any])
       
       inline def setFontVariantEastAsianUndefined: Self = StObject.set(x, "fontVariantEastAsian", js.undefined)
+      
+      inline def setFontVariantEmoji(value: FontVariantEmoji | OpaqueConfig): Self = StObject.set(x, "fontVariantEmoji", value.asInstanceOf[js.Any])
+      
+      inline def setFontVariantEmojiUndefined: Self = StObject.set(x, "fontVariantEmoji", js.undefined)
       
       inline def setFontVariantLigatures(value: FontVariantLigatures | OpaqueConfig): Self = StObject.set(x, "fontVariantLigatures", value.asInstanceOf[js.Any])
       
@@ -3038,6 +3146,10 @@ object mod {
       inline def setHyphenateCharacter(value: HyphenateCharacter | OpaqueConfig): Self = StObject.set(x, "hyphenateCharacter", value.asInstanceOf[js.Any])
       
       inline def setHyphenateCharacterUndefined: Self = StObject.set(x, "hyphenateCharacter", js.undefined)
+      
+      inline def setHyphenateLimitChars(value: HyphenateLimitChars | OpaqueConfig): Self = StObject.set(x, "hyphenateLimitChars", value.asInstanceOf[js.Any])
+      
+      inline def setHyphenateLimitCharsUndefined: Self = StObject.set(x, "hyphenateLimitChars", js.undefined)
       
       inline def setHyphens(value: Hyphens | OpaqueConfig): Self = StObject.set(x, "hyphens", value.asInstanceOf[js.Any])
       
@@ -3248,6 +3360,10 @@ object mod {
       inline def setMarginTop(value: (MarginTop[String | Double]) | OpaqueConfig): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
       
       inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
+      
+      inline def setMarginTrim(value: MarginTrim | OpaqueConfig): Self = StObject.set(x, "marginTrim", value.asInstanceOf[js.Any])
+      
+      inline def setMarginTrimUndefined: Self = StObject.set(x, "marginTrim", js.undefined)
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
@@ -4185,6 +4301,10 @@ object mod {
       
       inline def setOffsetPathUndefined: Self = StObject.set(x, "offsetPath", js.undefined)
       
+      inline def setOffsetPosition(value: (OffsetPosition[String | Double]) | OpaqueConfig): Self = StObject.set(x, "offsetPosition", value.asInstanceOf[js.Any])
+      
+      inline def setOffsetPositionUndefined: Self = StObject.set(x, "offsetPosition", js.undefined)
+      
       inline def setOffsetRotate(value: OffsetRotate | OpaqueConfig): Self = StObject.set(x, "offsetRotate", value.asInstanceOf[js.Any])
       
       inline def setOffsetRotateUndefined: Self = StObject.set(x, "offsetRotate", js.undefined)
@@ -4327,6 +4447,8 @@ object mod {
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
+      inline def setPage(value: Page | OpaqueConfig): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      
       inline def setPageBreakAfter(value: PageBreakAfter | OpaqueConfig): Self = StObject.set(x, "pageBreakAfter", value.asInstanceOf[js.Any])
       
       inline def setPageBreakAfterUndefined: Self = StObject.set(x, "pageBreakAfter", js.undefined)
@@ -4338,6 +4460,8 @@ object mod {
       inline def setPageBreakInside(value: PageBreakInside | OpaqueConfig): Self = StObject.set(x, "pageBreakInside", value.asInstanceOf[js.Any])
       
       inline def setPageBreakInsideUndefined: Self = StObject.set(x, "pageBreakInside", js.undefined)
+      
+      inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
       
       inline def setPaintOrder(value: PaintOrder | OpaqueConfig): Self = StObject.set(x, "paintOrder", value.asInstanceOf[js.Any])
       
@@ -4558,6 +4682,18 @@ object mod {
       inline def setScrollSnapTypeY(value: ScrollSnapTypeY | OpaqueConfig): Self = StObject.set(x, "scrollSnapTypeY", value.asInstanceOf[js.Any])
       
       inline def setScrollSnapTypeYUndefined: Self = StObject.set(x, "scrollSnapTypeY", js.undefined)
+      
+      inline def setScrollTimeline(value: ScrollTimeline | OpaqueConfig): Self = StObject.set(x, "scrollTimeline", value.asInstanceOf[js.Any])
+      
+      inline def setScrollTimelineAxis(value: ScrollTimelineAxis | OpaqueConfig): Self = StObject.set(x, "scrollTimelineAxis", value.asInstanceOf[js.Any])
+      
+      inline def setScrollTimelineAxisUndefined: Self = StObject.set(x, "scrollTimelineAxis", js.undefined)
+      
+      inline def setScrollTimelineName(value: ScrollTimelineName | OpaqueConfig): Self = StObject.set(x, "scrollTimelineName", value.asInstanceOf[js.Any])
+      
+      inline def setScrollTimelineNameUndefined: Self = StObject.set(x, "scrollTimelineName", js.undefined)
+      
+      inline def setScrollTimelineUndefined: Self = StObject.set(x, "scrollTimeline", js.undefined)
       
       inline def setScrollbarColor(value: ScrollbarColor | OpaqueConfig): Self = StObject.set(x, "scrollbarColor", value.asInstanceOf[js.Any])
       
@@ -4798,6 +4934,10 @@ object mod {
       inline def setVerticalAlign(value: (VerticalAlign[String | Double]) | OpaqueConfig): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
       
       inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+      
+      inline def setViewTransitionName(value: ViewTransitionName | OpaqueConfig): Self = StObject.set(x, "viewTransitionName", value.asInstanceOf[js.Any])
+      
+      inline def setViewTransitionNameUndefined: Self = StObject.set(x, "viewTransitionName", js.undefined)
       
       inline def setVisibility(value: Visibility | OpaqueConfig): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
       

@@ -15,6 +15,14 @@ trait GetCompletionsAtPositionOptions
   var includeInsertTextCompletions: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Include a `symbol` property on each completion entry object.
+    * Symbols reference cyclic data structures and sometimes an entire TypeChecker instance,
+    * so use caution when serializing or retaining completion entries retrieved with this option.
+    * @default false
+    */
+  var includeSymbol: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * If the editor is asking for completions because a certain character was typed
     * (as opposed to when the user explicitly requested them) this should be set.
     */
@@ -39,6 +47,10 @@ object GetCompletionsAtPositionOptions {
     inline def setIncludeInsertTextCompletions(value: Boolean): Self = StObject.set(x, "includeInsertTextCompletions", value.asInstanceOf[js.Any])
     
     inline def setIncludeInsertTextCompletionsUndefined: Self = StObject.set(x, "includeInsertTextCompletions", js.undefined)
+    
+    inline def setIncludeSymbol(value: Boolean): Self = StObject.set(x, "includeSymbol", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeSymbolUndefined: Self = StObject.set(x, "includeSymbol", js.undefined)
     
     inline def setTriggerCharacter(value: CompletionsTriggerCharacter): Self = StObject.set(x, "triggerCharacter", value.asInstanceOf[js.Any])
     

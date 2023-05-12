@@ -18,6 +18,8 @@ open class TextModelResolvedOptions () extends StObject {
   
   val insertSpaces: Boolean = js.native
   
+  def originalIndentSize: Double | typings.monacoEditor.monacoEditorStrings.tabSize = js.native
+  
   val tabSize: Double = js.native
   
   val trimAutoWhitespace: Boolean = js.native

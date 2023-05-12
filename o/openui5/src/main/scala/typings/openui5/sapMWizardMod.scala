@@ -446,6 +446,8 @@ object sapMWizardMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:complete complete} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -458,6 +460,7 @@ object sapMWizardMod {
     
     /**
       * @SINCE 1.101
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:navigationChange navigationChange} to attached listeners.
       *
@@ -470,6 +473,8 @@ object sapMWizardMod {
     mParameters: Step): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:stepActivate stepActivate} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

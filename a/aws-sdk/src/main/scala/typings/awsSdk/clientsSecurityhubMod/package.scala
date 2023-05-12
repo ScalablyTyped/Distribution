@@ -30,6 +30,17 @@ type AdminsMaxResults = scala.Double
 
 type ArnList = js.Array[NonEmptyString]
 
+type AssociatedStandardsList = js.Array[AssociatedStandard]
+
+type AssociationSetList = js.Array[AssociationSetDetails]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type AssociationStatus = _AssociationStatus | String
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
   - typings.awsSdk.awsSdkStrings.DEFAULT
@@ -89,6 +100,24 @@ type AwsDynamoDbTableReplicaGlobalSecondaryIndexList = js.Array[AwsDynamoDbTable
 type AwsDynamoDbTableReplicaList = js.Array[AwsDynamoDbTableReplica]
 
 type AwsEc2InstanceNetworkInterfacesList = js.Array[AwsEc2InstanceNetworkInterfacesDetails]
+
+type AwsEc2LaunchTemplateDataBlockDeviceMappingSetList = js.Array[AwsEc2LaunchTemplateDataBlockDeviceMappingSetDetails]
+
+type AwsEc2LaunchTemplateDataElasticGpuSpecificationSetList = js.Array[AwsEc2LaunchTemplateDataElasticGpuSpecificationSetDetails]
+
+type AwsEc2LaunchTemplateDataElasticInferenceAcceleratorSetList = js.Array[AwsEc2LaunchTemplateDataElasticInferenceAcceleratorSetDetails]
+
+type AwsEc2LaunchTemplateDataLicenseSetList = js.Array[AwsEc2LaunchTemplateDataLicenseSetDetails]
+
+type AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv4PrefixesList = js.Array[AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv4PrefixesDetails]
+
+type AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv6AddressesList = js.Array[AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv6AddressesDetails]
+
+type AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv6PrefixesList = js.Array[AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv6PrefixesDetails]
+
+type AwsEc2LaunchTemplateDataNetworkInterfaceSetList = js.Array[AwsEc2LaunchTemplateDataNetworkInterfaceSetDetails]
+
+type AwsEc2LaunchTemplateDataNetworkInterfaceSetPrivateIpAddressesList = js.Array[AwsEc2LaunchTemplateDataNetworkInterfaceSetPrivateIpAddressesDetails]
 
 type AwsEc2NetworkAclAssociationList = js.Array[AwsEc2NetworkAclAssociation]
 
@@ -314,6 +343,10 @@ type AwsWafRulePredicateList = js.Array[AwsWafRulePredicateListDetails]
 
 type AwsWafWebAclRuleList = js.Array[AwsWafWebAclRule]
 
+type AwsWafv2InsertHeadersList = js.Array[AwsWafv2CustomHttpHeader]
+
+type AwsWafv2RulesList = js.Array[AwsWafv2RulesDetails]
+
 type BatchImportFindingsRequestFindingList = js.Array[AwsSecurityFinding]
 
 type BatchUpdateFindingsUnprocessedFindingsList = js.Array[BatchUpdateFindingsUnprocessedFinding]
@@ -336,6 +369,13 @@ type CidrBlockAssociationList = js.Array[CidrBlockAssociation]
   - java.lang.String
 */
 type ComplianceStatus = _ComplianceStatus | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.STANDARD_CONTROL
+  - typings.awsSdk.awsSdkStrings.SECURITY_CONTROL
+  - java.lang.String
+*/
+type ControlFindingGenerator = _ControlFindingGenerator | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
@@ -361,6 +401,17 @@ type FieldMap = StringDictionary[NonEmptyString]
 type FilePathList = js.Array[FilePaths]
 
 type FindingAggregatorList = js.Array[FindingAggregator]
+
+type FindingHistoryRecordList = js.Array[FindingHistoryRecord]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.BATCH_UPDATE_FINDINGS
+  - typings.awsSdk.awsSdkStrings.BATCH_IMPORT_FINDINGS
+  - java.lang.String
+*/
+type FindingHistoryUpdateSourceType = _FindingHistoryUpdateSourceType | String
+
+type FindingHistoryUpdatesList = js.Array[FindingHistoryUpdate]
 
 type FirewallPolicyStatefulRuleGroupReferencesList = js.Array[FirewallPolicyStatefulRuleGroupReferencesDetails]
 
@@ -476,6 +527,8 @@ type ProductSubscriptionArnList = js.Array[NonEmptyString]
 
 type ProductsList = js.Array[Product]
 
+type PropagatingVgwSetList = js.Array[PropagatingVgwSetDetails]
+
 type Ranges = js.Array[Range]
 
 type RatioScale = scala.Double
@@ -489,6 +542,13 @@ type RecordState = _RecordState | String
 
 type Records = js.Array[Record]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AVAILABLE
+  - typings.awsSdk.awsSdkStrings.UNAVAILABLE
+  - java.lang.String
+*/
+type RegionAvailabilityStatus = _RegionAvailabilityStatus | String
+
 type RelatedFindingList = js.Array[RelatedFinding]
 
 type RelatedRequirementsList = js.Array[NonEmptyString]
@@ -498,6 +558,8 @@ type ResourceArn = String
 type ResourceList = js.Array[Resource]
 
 type ResultList = js.Array[Result]
+
+type RouteSetList = js.Array[RouteSetDetails]
 
 type RuleGroupSourceCustomActionsList = js.Array[RuleGroupSourceCustomActionsDetails]
 
@@ -520,6 +582,10 @@ type RuleGroupSourceStatelessRuleMatchAttributesSourcesList = js.Array[RuleGroup
 type RuleGroupSourceStatelessRuleMatchAttributesTcpFlagsList = js.Array[RuleGroupSourceStatelessRuleMatchAttributesTcpFlags]
 
 type RuleGroupSourceStatelessRulesList = js.Array[RuleGroupSourceStatelessRulesDetails]
+
+type SecurityControlDefinitions = js.Array[SecurityControlDefinition]
+
+type SecurityControls = js.Array[SecurityControl]
 
 type SecurityGroups = js.Array[NonEmptyString]
 
@@ -560,6 +626,16 @@ type SortCriteria = js.Array[SortCriterion]
 type SortOrder = _SortOrder | String
 
 type Standards = js.Array[Standard]
+
+type StandardsControlArnList = js.Array[NonEmptyString]
+
+type StandardsControlAssociationDetails = js.Array[StandardsControlAssociationDetail]
+
+type StandardsControlAssociationIds = js.Array[StandardsControlAssociationId]
+
+type StandardsControlAssociationSummaries = js.Array[StandardsControlAssociationSummary]
+
+type StandardsControlAssociationUpdates = js.Array[StandardsControlAssociationUpdate]
 
 type StandardsControls = js.Array[StandardsControl]
 
@@ -647,6 +723,21 @@ type ThreatList = js.Array[Threat]
 type Timestamp = js.Date
 
 type TypeList = js.Array[NonEmptyString]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.INVALID_INPUT
+  - typings.awsSdk.awsSdkStrings.ACCESS_DENIED
+  - typings.awsSdk.awsSdkStrings.NOT_FOUND
+  - typings.awsSdk.awsSdkStrings.LIMIT_EXCEEDED
+  - java.lang.String
+*/
+type UnprocessedErrorCode = _UnprocessedErrorCode | String
+
+type UnprocessedSecurityControls = js.Array[UnprocessedSecurityControl]
+
+type UnprocessedStandardsControlAssociationUpdates = js.Array[UnprocessedStandardsControlAssociationUpdate]
+
+type UnprocessedStandardsControlAssociations = js.Array[UnprocessedStandardsControlAssociation]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.UNKNOWN

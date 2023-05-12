@@ -98,7 +98,8 @@ object anon {
         js.Object, 
         scala.Nothing, 
         scala.Nothing, 
-        `false`
+        `false`, 
+        scala.Nothing
       ] = js.native
     
     var ɵfac: ɵɵFactoryDeclaration[IconDirective, scala.Nothing] = js.native

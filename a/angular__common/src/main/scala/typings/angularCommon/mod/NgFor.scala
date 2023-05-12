@@ -145,7 +145,8 @@ object NgFor {
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `true`
+    `true`, 
+    scala.Nothing
   ] = js.native
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
@@ -156,7 +157,8 @@ object NgFor {
       js.Object, 
       scala.Nothing, 
       scala.Nothing, 
-      `true`
+      `true`, 
+      scala.Nothing
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
   

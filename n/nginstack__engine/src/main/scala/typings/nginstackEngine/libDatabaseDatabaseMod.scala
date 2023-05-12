@@ -30,9 +30,9 @@ object libDatabaseDatabaseMod {
   trait Database extends StObject {
     
     def applyUpdates(dataSets: js.Array[Any]): Double = js.native
-    def applyUpdates(dataSets: js.Array[Any], log: Boolean): Double = js.native
+    def applyUpdates(dataSets: js.Array[Any], logChanges: Boolean): Double = js.native
     def applyUpdates(dataSets: typings.nginstackEngine.libDatasetDataSetMod.^): Double = js.native
-    def applyUpdates(dataSets: typings.nginstackEngine.libDatasetDataSetMod.^, log: Boolean): Double = js.native
+    def applyUpdates(dataSets: typings.nginstackEngine.libDatasetDataSetMod.^, logChanges: Boolean): Double = js.native
     
     def authenticateUser(userId: String, password: String): Double = js.native
     
@@ -100,7 +100,7 @@ object libDatabaseDatabaseMod {
     def runScript(scriptKeyOrURI: Double, parameters: Any, options: Timeout): Any = js.native
     def runScript(scriptKeyOrURI: Double, parameters: Unit, options: Timeout): Any = js.native
     
-    def sendMail(mail: Mail): Unit = js.native
+    def sendEmail(email: Email): Unit = js.native
     
     def sequenceExists(sequenceName: Any): Boolean = js.native
     
@@ -155,7 +155,7 @@ object libDatabaseDatabaseMod {
     }
   }
   
-  type Mail = typings.nginstackEngine.libMailMailMod.^
+  type Email = typings.nginstackEngine.libEmailEmailMod.^
   
   type Session = typings.nginstackEngine.libSessionSessionMod.^
   

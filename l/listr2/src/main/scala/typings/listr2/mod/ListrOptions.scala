@@ -9,64 +9,98 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Options to set the behavior of this base task.
+  * Options to set the behavior of Listr.
   */
 trait ListrOptions[Ctx] extends StObject {
   
   /**
-    * Collects errors to `ListrInstance.errors`
+    * Collects errors inside the `Listr.errors`.
     *
-    * This can take up a lot of memory, so disabling it can fix out-of-memory errors
+    * - `false` will collect no errors.
+    * - `minimal` will only collect the error message and the location.
+    * - `full` will clone the current context and task in to the error instance.
     *
-    * - 'full' will clone the current context and task in to the error instance
-    * - 'minimal' will only collect the error message and the location
-    * - false will collect no errors
-    *
-    * @default 'minimal'
+    * @defaultValue `false`
+    * @see {@link https://listr2.kilic.dev/task/error-handling.html#collected-errors}
     */
   var collectErrors: js.UndefOr[`false` | minimal | full] = js.undefined
   
   /**
-    * Concurrency sets how many tasks will be run at the same time in parallel.
+    * Concurrency limits how many tasks will be running in parallel.
     *
-    * @default false > Default is to run everything synchronously.
+    * - `false` will only run a single task at a time.
+    * - `true` will set it to `Infinity` to run all the tasks in parallel.
+    * - Given a `number` it will limit the concurrency to that number.
     *
-    * `true` will set it to `Infinity`, `false` will set it to synchronous.
-    *
-    * If you pass in a `number` it will limit it to that number.
+    * @defaultValue `false`
     */
   var concurrent: js.UndefOr[Boolean | Double] = js.undefined
   
   /**
-    * To inject a context through this options wrapper. Context can also be defined in run time.
+    * Inject a context through this options wrapper.
     *
-    * @default {}
+    * @defaultValue `{}`
+    * @see {@link https://listr2.kilic.dev/listr/context.html}
     */
   var ctx: js.UndefOr[Ctx] = js.undefined
   
   /**
-    * Disabling the color, useful for tests and such.
+    * Disable the color output coming from Listr for all renderers.
     *
-    * @default false
+    * @defaultValue `false`
     */
   var disableColor: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Determine the behavior of exiting after rollback actions.
     *
-    * This is independent of exitOnError, since failure of a rollback can be a more critical operation comparing to
+    * This is independent of `exitOnError`, since failure of a rollback can be a more critical operation comparing to
     * failing a single task.
     *
-    * @default true > exit after rolling back tasks
+    * - `true` will stop the execution whenever a rollback happens.
+    * - `false` will continue after successfully recovering from a rollback.
+    *
+    * @defaultValue `true`
     */
   var exitAfterRollback: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Determine the default behavior of exiting on errors.
     *
-    * @default true > exit on any error coming from the tasks.
+    * - `true` will exit the current Listr whenever it encounters an error.
+    * - `false` will continue the execution of current Listr if it encounters an error.
+    *
+    * @defaultValue `true`
     */
   var exitOnError: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Determine the certain condition required to use the fallback renderer.
+    *
+    * @defaultValue handled internally
+    */
+  var fallbackRendererCondition: js.UndefOr[Boolean | js.Function0[Boolean]] = js.undefined
+  
+  /**
+    * Force use color, even though the underlying library detects your current output may not be compatible.
+    *
+    * @defaultValue `false`
+    */
+  var forceColor: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Forces TTY stdout even though your current output may not be compatible.
+    *
+    * @defaultValue `false`
+    */
+  var forceTTY: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Forces unicode icons even though your current output may not be compatible.
+    *
+    * @defaultValue `false`
+    */
+  var forceUnicode: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Inject data directly to TaskWrapper.
@@ -74,25 +108,19 @@ trait ListrOptions[Ctx] extends StObject {
   var injectWrapper: js.UndefOr[Enquirer] = js.undefined
   
   /**
-    * By default, Listr2 will track SIGINIT signal to update the renderer one last time before completely failing.
+    * Listr will track SIGINIT signal to update the renderer one last time before failing, therefore it needs to
+    * register exit listeners.
     *
-    * @default true
+    * @defaultValue true
     */
   var registerSignalListeners: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Determine the certain condition required to use the non-TTY renderer.
-    *
-    * @default null > handled internally
-    */
-  var rendererFallback: js.UndefOr[Boolean | js.Function0[Boolean]] = js.undefined
-  
-  /**
     * Determine the certain condition required to use the silent renderer.
     *
-    * @default null > handled internally
+    * @defaultValue handled internally
     */
-  var rendererSilent: js.UndefOr[Boolean | js.Function0[Boolean]] = js.undefined
+  var silentRendererCondition: js.UndefOr[Boolean | js.Function0[Boolean]] = js.undefined
 }
 object ListrOptions {
   
@@ -128,6 +156,24 @@ object ListrOptions {
     
     inline def setExitOnErrorUndefined: Self = StObject.set(x, "exitOnError", js.undefined)
     
+    inline def setFallbackRendererCondition(value: Boolean | js.Function0[Boolean]): Self = StObject.set(x, "fallbackRendererCondition", value.asInstanceOf[js.Any])
+    
+    inline def setFallbackRendererConditionFunction0(value: () => Boolean): Self = StObject.set(x, "fallbackRendererCondition", js.Any.fromFunction0(value))
+    
+    inline def setFallbackRendererConditionUndefined: Self = StObject.set(x, "fallbackRendererCondition", js.undefined)
+    
+    inline def setForceColor(value: Boolean): Self = StObject.set(x, "forceColor", value.asInstanceOf[js.Any])
+    
+    inline def setForceColorUndefined: Self = StObject.set(x, "forceColor", js.undefined)
+    
+    inline def setForceTTY(value: Boolean): Self = StObject.set(x, "forceTTY", value.asInstanceOf[js.Any])
+    
+    inline def setForceTTYUndefined: Self = StObject.set(x, "forceTTY", js.undefined)
+    
+    inline def setForceUnicode(value: Boolean): Self = StObject.set(x, "forceUnicode", value.asInstanceOf[js.Any])
+    
+    inline def setForceUnicodeUndefined: Self = StObject.set(x, "forceUnicode", js.undefined)
+    
     inline def setInjectWrapper(value: Enquirer): Self = StObject.set(x, "injectWrapper", value.asInstanceOf[js.Any])
     
     inline def setInjectWrapperUndefined: Self = StObject.set(x, "injectWrapper", js.undefined)
@@ -136,16 +182,10 @@ object ListrOptions {
     
     inline def setRegisterSignalListenersUndefined: Self = StObject.set(x, "registerSignalListeners", js.undefined)
     
-    inline def setRendererFallback(value: Boolean | js.Function0[Boolean]): Self = StObject.set(x, "rendererFallback", value.asInstanceOf[js.Any])
+    inline def setSilentRendererCondition(value: Boolean | js.Function0[Boolean]): Self = StObject.set(x, "silentRendererCondition", value.asInstanceOf[js.Any])
     
-    inline def setRendererFallbackFunction0(value: () => Boolean): Self = StObject.set(x, "rendererFallback", js.Any.fromFunction0(value))
+    inline def setSilentRendererConditionFunction0(value: () => Boolean): Self = StObject.set(x, "silentRendererCondition", js.Any.fromFunction0(value))
     
-    inline def setRendererFallbackUndefined: Self = StObject.set(x, "rendererFallback", js.undefined)
-    
-    inline def setRendererSilent(value: Boolean | js.Function0[Boolean]): Self = StObject.set(x, "rendererSilent", value.asInstanceOf[js.Any])
-    
-    inline def setRendererSilentFunction0(value: () => Boolean): Self = StObject.set(x, "rendererSilent", js.Any.fromFunction0(value))
-    
-    inline def setRendererSilentUndefined: Self = StObject.set(x, "rendererSilent", js.undefined)
+    inline def setSilentRendererConditionUndefined: Self = StObject.set(x, "silentRendererCondition", js.undefined)
   }
 }

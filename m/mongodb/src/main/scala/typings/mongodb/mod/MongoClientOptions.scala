@@ -43,7 +43,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     *  Automatic encryption is an enterprise only feature that only applies to operations on a collection. Automatic encryption is not supported for operations on a database or view, and operations that are not bypassed will result in error
     *  (see [libmongocrypt: Auto Encryption Allow-List](https://github.com/mongodb/specifications/blob/master/source/client-side-encryption/client-side-encryption.rst#libmongocrypt-auto-encryption-allow-list)). To bypass automatic encryption for all operations, set bypassAutoEncryption=true in AutoEncryptionOpts.
     *
-    *  Automatic encryption requires the authenticated user to have the [listCollections privilege action](https://docs.mongodb.com/manual/reference/command/listCollections/#dbcmd.listCollections).
+    *  Automatic encryption requires the authenticated user to have the [listCollections privilege action](https://www.mongodb.com/docs/manual/reference/command/listCollections/#dbcmd.listCollections).
     *
     *  If a MongoClient with a limited connection pool size (i.e a non-zero maxPoolSize) is configured with AutoEncryptionOptions, a separate internal MongoClient is created if any of the following are true:
     *  - AutoEncryptionOptions.keyVaultClient is not passed.
@@ -77,10 +77,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var journal: js.UndefOr[Boolean] = js.undefined
   
-  /** TCP Connection keep alive enabled */
+  /** @deprecated TCP Connection keep alive enabled. Will not be able to turn off in the future. */
   var keepAlive: js.UndefOr[Boolean] = js.undefined
   
-  /** The number of milliseconds to wait before initiating keepAlive on the TCP socket */
+  /**
+    * @deprecated The number of milliseconds to wait before initiating keepAlive on the TCP socket.
+    *             Will not be configurable in the future.
+    */
   var keepAliveInitialDelay: js.UndefOr[scala.Double] = js.undefined
   
   /** Instruct the driver it is connecting to a load balancer fronting a mongos like service */
@@ -88,12 +91,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   /** The size (in milliseconds) of the latency window for selecting among multiple suitable MongoDB instances. */
   var localThresholdMS: js.UndefOr[scala.Double] = js.undefined
-  
-  /** Custom logger object */
-  var logger: js.UndefOr[Logger] = js.undefined
-  
-  /** The logging level */
-  var loggerLevel: js.UndefOr[LoggerLevel] = js.undefined
   
   /** The maximum number of connections that may be in the process of being established concurrently by the connection pool. */
   var maxConnecting: js.UndefOr[scala.Double] = js.undefined
@@ -121,12 +118,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   /** A primary key factory function for generation of custom `_id` keys */
   var pkFactory: js.UndefOr[PkFactory] = js.undefined
-  
-  /**
-    * A Promise library class the application wishes to use such as Bluebird, must be ES6 compatible
-    * @deprecated Setting a custom promise library is deprecated the next major version will use the global Promise constructor only.
-    */
-  var promiseLibrary: js.UndefOr[Any] = js.undefined
   
   /** Configures a Socks5 proxy host used for creating TCP connections. */
   var proxyHost: js.UndefOr[String] = js.undefined
@@ -240,7 +231,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * A MongoDB WriteConcern, which describes the level of acknowledgement
     * requested from MongoDB for write operations.
     *
-    * @see https://docs.mongodb.com/manual/reference/write-concern/
+    * @see https://www.mongodb.com/docs/manual/reference/write-concern/
     */
   var writeConcern: js.UndefOr[WriteConcern | WriteConcernSettings] = js.undefined
   
@@ -333,14 +324,6 @@ object MongoClientOptions {
     
     inline def setLocalThresholdMSUndefined: Self = StObject.set(x, "localThresholdMS", js.undefined)
     
-    inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
-    
-    inline def setLoggerLevel(value: LoggerLevel): Self = StObject.set(x, "loggerLevel", value.asInstanceOf[js.Any])
-    
-    inline def setLoggerLevelUndefined: Self = StObject.set(x, "loggerLevel", js.undefined)
-    
-    inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
-    
     inline def setMaxConnecting(value: scala.Double): Self = StObject.set(x, "maxConnecting", value.asInstanceOf[js.Any])
     
     inline def setMaxConnectingUndefined: Self = StObject.set(x, "maxConnecting", js.undefined)
@@ -376,10 +359,6 @@ object MongoClientOptions {
     inline def setPkFactory(value: PkFactory): Self = StObject.set(x, "pkFactory", value.asInstanceOf[js.Any])
     
     inline def setPkFactoryUndefined: Self = StObject.set(x, "pkFactory", js.undefined)
-    
-    inline def setPromiseLibrary(value: Any): Self = StObject.set(x, "promiseLibrary", value.asInstanceOf[js.Any])
-    
-    inline def setPromiseLibraryUndefined: Self = StObject.set(x, "promiseLibrary", js.undefined)
     
     inline def setProxyHost(value: String): Self = StObject.set(x, "proxyHost", value.asInstanceOf[js.Any])
     

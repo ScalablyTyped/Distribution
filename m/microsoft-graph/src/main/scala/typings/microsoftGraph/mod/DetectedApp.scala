@@ -17,6 +17,17 @@ trait DetectedApp
   // The devices that have the discovered application installed
   var managedDevices: js.UndefOr[NullableOption[js.Array[ManagedDevice]]] = js.undefined
   
+  /**
+    * Indicates the operating system / platform of the discovered application. Some possible values are Windows, iOS, macOS.
+    * The default value is unknown (0). Possible values are: unknown, windows, windowsMobile, windowsHolographic, ios, macOS,
+    * chromeOS, androidOSP, androidDeviceAdministrator, androidWorkProfile, androidDedicatedAndFullyManaged,
+    * unknownFutureValue.
+    */
+  var platform: js.UndefOr[DetectedAppPlatformType] = js.undefined
+  
+  // Indicates the publisher of the discovered application. For example: 'Microsoft'. The default value is an empty string.
+  var publisher: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Discovered application size in bytes. Read-only
   var sizeInByte: js.UndefOr[Double] = js.undefined
   
@@ -50,6 +61,16 @@ object DetectedApp {
     inline def setManagedDevicesUndefined: Self = StObject.set(x, "managedDevices", js.undefined)
     
     inline def setManagedDevicesVarargs(value: ManagedDevice*): Self = StObject.set(x, "managedDevices", js.Array(value*))
+    
+    inline def setPlatform(value: DetectedAppPlatformType): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    
+    inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    
+    inline def setPublisher(value: NullableOption[String]): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
+    
+    inline def setPublisherNull: Self = StObject.set(x, "publisher", null)
+    
+    inline def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
     
     inline def setSizeInByte(value: Double): Self = StObject.set(x, "sizeInByte", value.asInstanceOf[js.Any])
     

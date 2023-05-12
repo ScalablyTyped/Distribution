@@ -1,6 +1,7 @@
 package typings.bitcoinjsLib
 
 import typings.bitcoinjsLib.srcNetworksMod.Network
+import typings.bitcoinjsLib.srcTypesMod.Taptree
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -27,6 +28,9 @@ object srcPaymentsMod {
   inline def p2sh(a: Payment): Payment = ^.asInstanceOf[js.Dynamic].applyDynamic("p2sh")(a.asInstanceOf[js.Any]).asInstanceOf[Payment]
   inline def p2sh(a: Payment, opts: PaymentOpts): Payment = (^.asInstanceOf[js.Dynamic].applyDynamic("p2sh")(a.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Payment]
   
+  inline def p2tr(a: Payment): Payment = ^.asInstanceOf[js.Dynamic].applyDynamic("p2tr")(a.asInstanceOf[js.Any]).asInstanceOf[Payment]
+  inline def p2tr(a: Payment, opts: PaymentOpts): Payment = (^.asInstanceOf[js.Dynamic].applyDynamic("p2tr")(a.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Payment]
+  
   inline def p2wpkh(a: Payment): Payment = ^.asInstanceOf[js.Dynamic].applyDynamic("p2wpkh")(a.asInstanceOf[js.Any]).asInstanceOf[Payment]
   inline def p2wpkh(a: Payment, opts: PaymentOpts): Payment = (^.asInstanceOf[js.Dynamic].applyDynamic("p2wpkh")(a.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Payment]
   
@@ -43,6 +47,8 @@ object srcPaymentsMod {
     
     var input: js.UndefOr[Buffer] = js.undefined
     
+    var internalPubkey: js.UndefOr[Buffer] = js.undefined
+    
     var m: js.UndefOr[Double] = js.undefined
     
     var n: js.UndefOr[Double] = js.undefined
@@ -58,6 +64,10 @@ object srcPaymentsMod {
     var pubkeys: js.UndefOr[js.Array[Buffer]] = js.undefined
     
     var redeem: js.UndefOr[Payment] = js.undefined
+    
+    var redeemVersion: js.UndefOr[Double] = js.undefined
+    
+    var scriptTree: js.UndefOr[Taptree] = js.undefined
     
     var signature: js.UndefOr[Buffer] = js.undefined
     
@@ -93,6 +103,10 @@ object srcPaymentsMod {
       
       inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
       
+      inline def setInternalPubkey(value: Buffer): Self = StObject.set(x, "internalPubkey", value.asInstanceOf[js.Any])
+      
+      inline def setInternalPubkeyUndefined: Self = StObject.set(x, "internalPubkey", js.undefined)
+      
       inline def setM(value: Double): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
       
       inline def setMUndefined: Self = StObject.set(x, "m", js.undefined)
@@ -126,6 +140,14 @@ object srcPaymentsMod {
       inline def setRedeem(value: Payment): Self = StObject.set(x, "redeem", value.asInstanceOf[js.Any])
       
       inline def setRedeemUndefined: Self = StObject.set(x, "redeem", js.undefined)
+      
+      inline def setRedeemVersion(value: Double): Self = StObject.set(x, "redeemVersion", value.asInstanceOf[js.Any])
+      
+      inline def setRedeemVersionUndefined: Self = StObject.set(x, "redeemVersion", js.undefined)
+      
+      inline def setScriptTree(value: Taptree): Self = StObject.set(x, "scriptTree", value.asInstanceOf[js.Any])
+      
+      inline def setScriptTreeUndefined: Self = StObject.set(x, "scriptTree", js.undefined)
       
       inline def setSignature(value: Buffer): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
       

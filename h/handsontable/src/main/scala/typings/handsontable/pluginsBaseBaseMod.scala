@@ -2,6 +2,7 @@ package typings.handsontable
 
 import org.scalablytyped.runtime.NumberDictionary
 import typings.handsontable.`3rdpartyWalkontableSrcCalculatorViewportColumnsMod`.ViewportColumnsCalculator
+import typings.handsontable.anon.ColumnHeadersCount
 import typings.handsontable.anon.SkipRender
 import typings.handsontable.anon.Value
 import typings.handsontable.anon.ValueAny
@@ -22,9 +23,11 @@ import typings.handsontable.handsontableStrings.afterChange
 import typings.handsontable.handsontableStrings.afterChangesObserved
 import typings.handsontable.handsontableStrings.afterColumnCollapse
 import typings.handsontable.handsontableStrings.afterColumnExpand
+import typings.handsontable.handsontableStrings.afterColumnFreeze
 import typings.handsontable.handsontableStrings.afterColumnMove
 import typings.handsontable.handsontableStrings.afterColumnResize
 import typings.handsontable.handsontableStrings.afterColumnSort
+import typings.handsontable.handsontableStrings.afterColumnUnfreeze
 import typings.handsontable.handsontableStrings.afterContextMenuDefaultOptions
 import typings.handsontable.handsontableStrings.afterContextMenuHide
 import typings.handsontable.handsontableStrings.afterContextMenuShow
@@ -115,9 +118,11 @@ import typings.handsontable.handsontableStrings.beforeChange
 import typings.handsontable.handsontableStrings.beforeChangeRender
 import typings.handsontable.handsontableStrings.beforeColumnCollapse
 import typings.handsontable.handsontableStrings.beforeColumnExpand
+import typings.handsontable.handsontableStrings.beforeColumnFreeze
 import typings.handsontable.handsontableStrings.beforeColumnMove
 import typings.handsontable.handsontableStrings.beforeColumnResize
 import typings.handsontable.handsontableStrings.beforeColumnSort
+import typings.handsontable.handsontableStrings.beforeColumnUnfreeze
 import typings.handsontable.handsontableStrings.beforeContextMenuSetItems
 import typings.handsontable.handsontableStrings.beforeContextMenuShow
 import typings.handsontable.handsontableStrings.beforeCopy
@@ -194,6 +199,7 @@ import typings.handsontable.handsontableStrings.modifyAutofillRange
 import typings.handsontable.handsontableStrings.modifyColHeader
 import typings.handsontable.handsontableStrings.modifyColWidth
 import typings.handsontable.handsontableStrings.modifyColumnHeaderHeight
+import typings.handsontable.handsontableStrings.modifyColumnHeaderValue
 import typings.handsontable.handsontableStrings.modifyCopyableRange
 import typings.handsontable.handsontableStrings.modifyData
 import typings.handsontable.handsontableStrings.modifyGetCellCoords
@@ -582,6 +588,18 @@ object pluginsBaseBaseMod {
         ]
     ): Unit = js.native
     @JSName("addHook")
+    def addHook_afterColumnFreeze(
+      key: afterColumnFreeze,
+      callback: js.UndefOr[js.Function2[/* columnIndex */ Double, /* isFreezingPerformed */ Boolean, Unit]]
+    ): Unit = js.native
+    @JSName("addHook")
+    def addHook_afterColumnFreeze(
+      key: afterColumnFreeze,
+      callback: js.Array[
+          js.UndefOr[js.Function2[/* columnIndex */ Double, /* isFreezingPerformed */ Boolean, Unit]]
+        ]
+    ): Unit = js.native
+    @JSName("addHook")
     def addHook_afterColumnMove(
       key: afterColumnMove,
       callback: js.UndefOr[
@@ -652,6 +670,22 @@ object pluginsBaseBaseMod {
         ]
     ): Unit = js.native
     @JSName("addHook")
+    def addHook_afterColumnUnfreeze(
+      key: afterColumnUnfreeze,
+      callback: js.UndefOr[
+          js.Function2[/* columnIndex */ Double, /* isUnfreezingPerformed */ Boolean, Unit]
+        ]
+    ): Unit = js.native
+    @JSName("addHook")
+    def addHook_afterColumnUnfreeze(
+      key: afterColumnUnfreeze,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function2[/* columnIndex */ Double, /* isUnfreezingPerformed */ Boolean, Unit]
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("addHook")
     def addHook_afterContextMenuDefaultOptions(
       key: afterContextMenuDefaultOptions,
       callback: js.UndefOr[
@@ -685,7 +719,12 @@ object pluginsBaseBaseMod {
     def addHook_afterCopy(
       key: afterCopy,
       callback: js.UndefOr[
-          js.Function2[/* data */ js.Array[js.Array[CellValue]], /* coords */ js.Array[RangeType], Unit]
+          js.Function3[
+            /* data */ js.Array[js.Array[CellValue]], 
+            /* coords */ js.Array[RangeType], 
+            /* copiedHeadersCount */ ColumnHeadersCount, 
+            Unit
+          ]
         ]
     ): Unit = js.native
     @JSName("addHook")
@@ -693,7 +732,12 @@ object pluginsBaseBaseMod {
       key: afterCopy,
       callback: js.Array[
           js.UndefOr[
-            js.Function2[/* data */ js.Array[js.Array[CellValue]], /* coords */ js.Array[RangeType], Unit]
+            js.Function3[
+              /* data */ js.Array[js.Array[CellValue]], 
+              /* coords */ js.Array[RangeType], 
+              /* copiedHeadersCount */ ColumnHeadersCount, 
+              Unit
+            ]
           ]
         ]
     ): Unit = js.native
@@ -2102,6 +2146,22 @@ object pluginsBaseBaseMod {
         ]
     ): Unit = js.native
     @JSName("addHook")
+    def addHook_beforeColumnFreeze(
+      key: beforeColumnFreeze,
+      callback: js.UndefOr[
+          js.Function2[/* columnIndex */ Double, /* isFreezingPerformed */ Boolean, Unit | Boolean]
+        ]
+    ): Unit = js.native
+    @JSName("addHook")
+    def addHook_beforeColumnFreeze(
+      key: beforeColumnFreeze,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function2[/* columnIndex */ Double, /* isFreezingPerformed */ Boolean, Unit | Boolean]
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("addHook")
     def addHook_beforeColumnMove(
       key: beforeColumnMove,
       callback: js.UndefOr[
@@ -2170,6 +2230,22 @@ object pluginsBaseBaseMod {
         ]
     ): Unit = js.native
     @JSName("addHook")
+    def addHook_beforeColumnUnfreeze(
+      key: beforeColumnUnfreeze,
+      callback: js.UndefOr[
+          js.Function2[/* columnIndex */ Double, /* isUnfreezingPerformed */ Boolean, Unit | Boolean]
+        ]
+    ): Unit = js.native
+    @JSName("addHook")
+    def addHook_beforeColumnUnfreeze(
+      key: beforeColumnUnfreeze,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function2[/* columnIndex */ Double, /* isUnfreezingPerformed */ Boolean, Unit | Boolean]
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("addHook")
     def addHook_beforeContextMenuSetItems(
       key: beforeContextMenuSetItems,
       callback: js.UndefOr[js.Function1[/* menuItems */ js.Array[MenuItemConfig], Unit]]
@@ -2190,9 +2266,10 @@ object pluginsBaseBaseMod {
     def addHook_beforeCopy(
       key: beforeCopy,
       callback: js.UndefOr[
-          js.Function2[
+          js.Function3[
             /* data */ js.Array[js.Array[CellValue]], 
             /* coords */ js.Array[RangeType], 
+            /* copiedHeadersCount */ ColumnHeadersCount, 
             Unit | Boolean
           ]
         ]
@@ -2202,9 +2279,10 @@ object pluginsBaseBaseMod {
       key: beforeCopy,
       callback: js.Array[
           js.UndefOr[
-            js.Function2[
+            js.Function3[
               /* data */ js.Array[js.Array[CellValue]], 
               /* coords */ js.Array[RangeType], 
+              /* copiedHeadersCount */ ColumnHeadersCount, 
               Unit | Boolean
             ]
           ]
@@ -3278,6 +3356,32 @@ object pluginsBaseBaseMod {
     @JSName("addHook")
     def addHook_modifyColumnHeaderHeight(key: modifyColumnHeaderHeight, callback: js.Array[js.UndefOr[js.Function0[Unit]]]): Unit = js.native
     @JSName("addHook")
+    def addHook_modifyColumnHeaderValue(
+      key: modifyColumnHeaderValue,
+      callback: js.UndefOr[
+          js.Function3[
+            /* headerValue */ String, 
+            /* visualColumnIndex */ Double, 
+            /* headerLevel */ Double, 
+            Unit | String
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("addHook")
+    def addHook_modifyColumnHeaderValue(
+      key: modifyColumnHeaderValue,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function3[
+              /* headerValue */ String, 
+              /* visualColumnIndex */ Double, 
+              /* headerLevel */ Double, 
+              Unit | String
+            ]
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("addHook")
     def addHook_modifyCopyableRange(
       key: modifyCopyableRange,
       callback: js.UndefOr[js.Function1[/* copyableRanges */ js.Array[RangeType], Unit]]
@@ -3434,7 +3538,7 @@ object pluginsBaseBaseMod {
     var pluginsInitializedCallbacks: js.Array[String] = js.native
     
     def removeHooks(
-      name: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179, starting with typings.handsontable.handsontableStrings.afterAddChild, typings.handsontable.handsontableStrings.afterAutofill, typings.handsontable.handsontableStrings.afterBeginEditing */ Any
+      name: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 184, starting with typings.handsontable.handsontableStrings.afterAddChild, typings.handsontable.handsontableStrings.afterAutofill, typings.handsontable.handsontableStrings.afterBeginEditing */ Any
     ): Unit = js.native
     
     def updatePlugin(): Unit = js.native

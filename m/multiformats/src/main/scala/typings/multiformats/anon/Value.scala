@@ -3,11 +3,12 @@ package typings.multiformats.anon
 import typings.multiformats.distTypesSrcBlockInterfaceMod.ByteView
 import typings.multiformats.distTypesSrcCodecsInterfaceMod.BlockDecoder
 import typings.multiformats.distTypesSrcLinkInterfaceMod.Link
+import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Value[T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: typings.multiformats.distTypesSrcLinkInterfaceMod.Version */] extends StObject {
+trait Value[T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: Version */] extends StObject {
   
   var bytes: ByteView[T]
   
@@ -19,13 +20,13 @@ trait Value[T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: t
 }
 object Value {
   
-  inline def apply[T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: typings.multiformats.distTypesSrcLinkInterfaceMod.Version */](bytes: ByteView[T], cid: Link[T, Code, Alg, V], value: T): Value[T, Code, Alg, V] = {
+  inline def apply[T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: Version */](bytes: ByteView[T], cid: Link[T, Code, Alg, V], value: T): Value[T, Code, Alg, V] = {
     val __obj = js.Dynamic.literal(bytes = bytes.asInstanceOf[js.Any], cid = cid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Value[T, Code, Alg, V]]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: Value[?, ?, ?, ?], T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: typings.multiformats.distTypesSrcLinkInterfaceMod.Version */] (val x: Self & (Value[T, Code, Alg, V])) extends AnyVal {
+  implicit open class MutableBuilder[Self <: Value[?, ?, ?, ?], T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: Version */] (val x: Self & (Value[T, Code, Alg, V])) extends AnyVal {
     
     inline def setBytes(value: ByteView[T]): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     

@@ -7,6 +7,7 @@ import typings.azureMsalCommon.distRequestCommonAuthorizationUrlRequestMod.Commo
 import typings.azureMsalCommon.distRequestCommonEndSessionRequestMod.CommonEndSessionRequest
 import typings.azureMsalCommon.distResponseAuthenticationResultMod.AuthenticationResult
 import typings.azureMsalCommon.distResponseAuthorizationCodePayloadMod.AuthorizationCodePayload
+import typings.azureMsalCommon.distTelemetryPerformanceIperformanceclientMod.IPerformanceClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,6 +18,7 @@ object distClientAuthorizationCodeClientMod {
   @js.native
   open class AuthorizationCodeClient protected () extends BaseClient {
     def this(configuration: ClientConfiguration) = this()
+    def this(configuration: ClientConfiguration, performanceClient: IPerformanceClient) = this()
     
     /**
       * API to acquire a token in exchange of 'authorization_code` acquired by the user in the first leg of the
@@ -37,12 +39,6 @@ object distClientAuthorizationCodeClientMod {
       * @param request
       */
     /* private */ var createLogoutUrlQueryString: Any = js.native
-    
-    /**
-      * Creates query string for the /token request
-      * @param request
-      */
-    /* private */ var createTokenQueryParameters: Any = js.native
     
     /**
       * Generates a map for all the params to be sent to the service

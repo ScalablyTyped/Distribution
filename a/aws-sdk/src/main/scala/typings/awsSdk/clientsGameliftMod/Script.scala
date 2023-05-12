@@ -12,12 +12,12 @@ trait Script extends StObject {
   var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * A descriptive label that is associated with a script. Script names do not need to be unique.
+    * A descriptive label that is associated with a script. Script names don't need to be unique.
     */
   var Name: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) that is assigned to a GameLift script resource and uniquely identifies it. ARNs are unique across all Regions. In a GameLift script ARN, the resource ID matches the ScriptId value.
+    * The Amazon Resource Name (ARN) that is assigned to a Amazon GameLift script resource and uniquely identifies it. ARNs are unique across all Regions. In a GameLift script ARN, the resource ID matches the ScriptId value.
     */
   var ScriptArn: js.UndefOr[typings.awsSdk.clientsGameliftMod.ScriptArn] = js.undefined
   
@@ -31,10 +31,13 @@ trait Script extends StObject {
     */
   var SizeOnDisk: js.UndefOr[PositiveLong] = js.undefined
   
+  /**
+    * The location of the Amazon S3 bucket where a zipped file containing your Realtime scripts is stored. The storage location must specify the Amazon S3 bucket name, the zip file name (the "key"), and a role ARN that allows Amazon GameLift to access the Amazon S3 storage location. The S3 bucket must be in the same Region where you want to create a new script. By default, Amazon GameLift uploads the latest version of the zip file; if you have S3 object versioning turned on, you can use the ObjectVersion parameter to specify an earlier version. 
+    */
   var StorageLocation: js.UndefOr[S3Location] = js.undefined
   
   /**
-    * Version information that is associated with a build or script. Version strings do not need to be unique.
+    * Version information associated with a build or script. Version strings don't need to be unique.
     */
   var Version: js.UndefOr[NonZeroAndMaxString] = js.undefined
 }

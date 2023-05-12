@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class TabInputWebview protected ()
   extends typings.vscode.mod.TabInputWebview {
   /**
-    * Constructs a webview tab input with the given view type.
-    * @param viewType The type of webview. Maps to {@linkcode WebviewPanel.viewType WebviewPanel's viewType}
-    */
+  		 * Constructs a webview tab input with the given view type.
+  		 * @param viewType The type of webview. Maps to {@linkcode WebviewPanel.viewType WebviewPanel's viewType}
+  		 */
   def this(viewType: String) = this()
 }

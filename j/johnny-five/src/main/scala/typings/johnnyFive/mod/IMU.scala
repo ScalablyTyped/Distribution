@@ -19,15 +19,11 @@ open class IMU protected () extends StObject {
   
   val gyro: Gyro = js.native
   
-  def on(event: String, cb: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_calibrated(event: calibrated, cb: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_change(event: change, cb: js.Function0[Unit]): this.type = js.native
+  def on(event: change | calibrated, cb: js.Function0[Unit]): this.type = js.native
   @JSName("on")
   def on_data(event: data, cb: js.Function1[/* data */ Any, Unit]): this.type = js.native
   
-  val orientation: Orientiation = js.native
+  val orientation: Orientation = js.native
   
   val thermometer: Thermometer = js.native
 }

@@ -10,7 +10,7 @@ trait AbsoluteLocation extends StObject {
     * By default middleware will be added to individual step in un-guaranteed order.
     * In the case that
     *
-    * @default 'normal'
+    * @defaultValue 'normal'
     */
   var priority: js.UndefOr[Priority] = js.undefined
 }

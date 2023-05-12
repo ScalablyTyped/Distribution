@@ -11,7 +11,7 @@ open class SVGOverlay protected () extends BaseControl[SVGOverlayProps, Element]
   def this(props: SVGOverlayProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: SVGOverlayProps, context: Any) = this()
 }

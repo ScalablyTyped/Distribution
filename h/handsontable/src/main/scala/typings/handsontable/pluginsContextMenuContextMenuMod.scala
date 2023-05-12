@@ -204,6 +204,9 @@ object pluginsContextMenuContextMenuMod {
     - typings.handsontable.handsontableStrings.alignment
     - typings.handsontable.handsontableStrings.cut
     - typings.handsontable.handsontableStrings.copy
+    - typings.handsontable.handsontableStrings.copy_column_headers_only
+    - typings.handsontable.handsontableStrings.copy_with_column_group_headers
+    - typings.handsontable.handsontableStrings.copy_with_column_headers
     - typings.handsontable.handsontableStrings.freeze_column
     - typings.handsontable.handsontableStrings.unfreeze_column
     - typings.handsontable.handsontableStrings.borders
@@ -247,6 +250,12 @@ object pluginsContextMenuContextMenuMod {
     inline def commentsRemove: typings.handsontable.handsontableStrings.commentsRemove = "commentsRemove".asInstanceOf[typings.handsontable.handsontableStrings.commentsRemove]
     
     inline def copy: typings.handsontable.handsontableStrings.copy = "copy".asInstanceOf[typings.handsontable.handsontableStrings.copy]
+    
+    inline def copy_column_headers_only: typings.handsontable.handsontableStrings.copy_column_headers_only = "copy_column_headers_only".asInstanceOf[typings.handsontable.handsontableStrings.copy_column_headers_only]
+    
+    inline def copy_with_column_group_headers: typings.handsontable.handsontableStrings.copy_with_column_group_headers = "copy_with_column_group_headers".asInstanceOf[typings.handsontable.handsontableStrings.copy_with_column_group_headers]
+    
+    inline def copy_with_column_headers: typings.handsontable.handsontableStrings.copy_with_column_headers = "copy_with_column_headers".asInstanceOf[typings.handsontable.handsontableStrings.copy_with_column_headers]
     
     inline def cut: typings.handsontable.handsontableStrings.cut = "cut".asInstanceOf[typings.handsontable.handsontableStrings.cut]
     

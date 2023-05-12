@@ -12,7 +12,7 @@ open class ActionSheetButton protected ()
   def this(props: HTMLAttributesidclassName & typings.reactOnsenui.anon.Icon) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: HTMLAttributesidclassName & typings.reactOnsenui.anon.Icon, context: Any) = this()
 }

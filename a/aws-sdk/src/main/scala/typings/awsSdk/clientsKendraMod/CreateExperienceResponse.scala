@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateExperienceResponse extends StObject {
   
   /**
-    * The identifier for your created Amazon Kendra experience.
+    * The identifier of your Amazon Kendra experience.
     */
   var Id: ExperienceId
 }

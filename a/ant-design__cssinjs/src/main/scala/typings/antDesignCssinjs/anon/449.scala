@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.WebkitMaskRepeatX
+import typings.csstype.mod.Property.Stroke
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `449` extends StObject {
   
   var value: js.UndefOr[
-    WebkitMaskRepeatX | (js.Array[
-      (Extract[
-        js.UndefOr[WebkitMaskRepeatX | js.Array[NonNullable[js.UndefOr[WebkitMaskRepeatX]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[WebkitMaskRepeatX]]
+    Stroke | (js.Array[
+      (Extract[js.UndefOr[Stroke | js.Array[NonNullable[js.UndefOr[Stroke]]]], String]) | NonNullable[js.UndefOr[Stroke]]
     ])
   ] = js.native
 }

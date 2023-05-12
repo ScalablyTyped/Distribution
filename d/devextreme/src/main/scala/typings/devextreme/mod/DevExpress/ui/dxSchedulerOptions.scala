@@ -32,6 +32,7 @@ import typings.devextreme.mod.DevExpress.ui.dxScheduler.AppointmentFormOpeningEv
 import typings.devextreme.mod.DevExpress.ui.dxScheduler.AppointmentRenderedEvent
 import typings.devextreme.mod.DevExpress.ui.dxScheduler.AppointmentTemplateData
 import typings.devextreme.mod.DevExpress.ui.dxScheduler.AppointmentTooltipShowingEvent
+import typings.devextreme.mod.DevExpress.ui.dxScheduler.AppointmentTooltipTemplateData
 import typings.devextreme.mod.DevExpress.ui.dxScheduler.AppointmentUpdatedEvent
 import typings.devextreme.mod.DevExpress.ui.dxScheduler.AppointmentUpdatingEvent
 import typings.devextreme.mod.DevExpress.ui.dxScheduler.CellAppointmentsLimit
@@ -98,7 +99,7 @@ trait dxSchedulerOptions
     */
   var appointmentTooltipTemplate: js.UndefOr[
     template | (js.Function3[
-      /* model */ AppointmentTemplateData, 
+      /* model */ AppointmentTooltipTemplateData, 
       /* itemIndex */ Double, 
       /* contentElement */ DxElement_[HTMLElement], 
       String | UserDefinedElement[Element]
@@ -482,7 +483,7 @@ object dxSchedulerOptions {
     
     inline def setAppointmentTooltipTemplate(
       value: template | (js.Function3[
-          /* model */ AppointmentTemplateData, 
+          /* model */ AppointmentTooltipTemplateData, 
           /* itemIndex */ Double, 
           /* contentElement */ DxElement_[HTMLElement], 
           String | UserDefinedElement[Element]
@@ -490,7 +491,7 @@ object dxSchedulerOptions {
     ): Self = StObject.set(x, "appointmentTooltipTemplate", value.asInstanceOf[js.Any])
     
     inline def setAppointmentTooltipTemplateFunction3(
-      value: (/* model */ AppointmentTemplateData, /* itemIndex */ Double, /* contentElement */ DxElement_[HTMLElement]) => String | UserDefinedElement[Element]
+      value: (/* model */ AppointmentTooltipTemplateData, /* itemIndex */ Double, /* contentElement */ DxElement_[HTMLElement]) => String | UserDefinedElement[Element]
     ): Self = StObject.set(x, "appointmentTooltipTemplate", js.Any.fromFunction3(value))
     
     inline def setAppointmentTooltipTemplateUndefined: Self = StObject.set(x, "appointmentTooltipTemplate", js.undefined)

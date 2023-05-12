@@ -1,8 +1,8 @@
 package typings.reactNativeAppsflyer
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.reactNativeAppsflyer.anon.Afadset
 import typings.reactNativeAppsflyer.anon.Afsub1
+import typings.reactNativeAppsflyer.anon.Deeplinkvalue
 import typings.reactNativeAppsflyer.anon.Dictkey
 import typings.reactNativeAppsflyer.reactNativeAppsflyerInts.`0`
 import typings.reactNativeAppsflyer.reactNativeAppsflyerInts.`3`
@@ -190,11 +190,13 @@ object mod {
     }
   }
   
-  type ErrorCB = js.Function1[/* error */ js.UndefOr[Any], Any]
+  type ErrorCB = js.Function1[/* error */ js.UndefOr[js.Error], Any]
   
-  trait GenerateInviteLinkParams
-    extends StObject
-       with /* key */ StringDictionary[Any] {
+  trait GenerateInviteLinkParams extends StObject {
+    
+    var baseDeeplink: js.UndefOr[String] = js.undefined
+    
+    var brandDomain: js.UndefOr[String] = js.undefined
     
     var campaign: js.UndefOr[String] = js.undefined
     
@@ -202,7 +204,13 @@ object mod {
     
     var customerID: js.UndefOr[String] = js.undefined
     
-    var userParams: js.UndefOr[js.Object] = js.undefined
+    var deeplinkPath: js.UndefOr[String] = js.undefined
+    
+    var referrerImageUrl: js.UndefOr[String] = js.undefined
+    
+    var referrerName: js.UndefOr[String] = js.undefined
+    
+    var userParams: js.UndefOr[Deeplinkvalue] = js.undefined
   }
   object GenerateInviteLinkParams {
     
@@ -214,6 +222,14 @@ object mod {
     @scala.inline
     implicit open class MutableBuilder[Self <: GenerateInviteLinkParams] (val x: Self) extends AnyVal {
       
+      inline def setBaseDeeplink(value: String): Self = StObject.set(x, "baseDeeplink", value.asInstanceOf[js.Any])
+      
+      inline def setBaseDeeplinkUndefined: Self = StObject.set(x, "baseDeeplink", js.undefined)
+      
+      inline def setBrandDomain(value: String): Self = StObject.set(x, "brandDomain", value.asInstanceOf[js.Any])
+      
+      inline def setBrandDomainUndefined: Self = StObject.set(x, "brandDomain", js.undefined)
+      
       inline def setCampaign(value: String): Self = StObject.set(x, "campaign", value.asInstanceOf[js.Any])
       
       inline def setCampaignUndefined: Self = StObject.set(x, "campaign", js.undefined)
@@ -224,7 +240,19 @@ object mod {
       
       inline def setCustomerIDUndefined: Self = StObject.set(x, "customerID", js.undefined)
       
-      inline def setUserParams(value: js.Object): Self = StObject.set(x, "userParams", value.asInstanceOf[js.Any])
+      inline def setDeeplinkPath(value: String): Self = StObject.set(x, "deeplinkPath", value.asInstanceOf[js.Any])
+      
+      inline def setDeeplinkPathUndefined: Self = StObject.set(x, "deeplinkPath", js.undefined)
+      
+      inline def setReferrerImageUrl(value: String): Self = StObject.set(x, "referrerImageUrl", value.asInstanceOf[js.Any])
+      
+      inline def setReferrerImageUrlUndefined: Self = StObject.set(x, "referrerImageUrl", js.undefined)
+      
+      inline def setReferrerName(value: String): Self = StObject.set(x, "referrerName", value.asInstanceOf[js.Any])
+      
+      inline def setReferrerNameUndefined: Self = StObject.set(x, "referrerName", js.undefined)
+      
+      inline def setUserParams(value: Deeplinkvalue): Self = StObject.set(x, "userParams", value.asInstanceOf[js.Any])
       
       inline def setUserParamsUndefined: Self = StObject.set(x, "userParams", js.undefined)
     }

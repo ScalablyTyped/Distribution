@@ -29,12 +29,12 @@ trait M2 extends Service {
   var config_M2: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Creates a new application with given parameters. Requires an existing environment and application definition file.
+    * Creates a new application with given parameters. Requires an existing runtime environment and application definition file.
     */
   def createApplication(): Request[CreateApplicationResponse, AWSError] = js.native
   def createApplication(callback: js.Function2[/* err */ AWSError, /* data */ CreateApplicationResponse, Unit]): Request[CreateApplicationResponse, AWSError] = js.native
   /**
-    * Creates a new application with given parameters. Requires an existing environment and application definition file.
+    * Creates a new application with given parameters. Requires an existing runtime environment and application definition file.
     */
   def createApplication(params: CreateApplicationRequest): Request[CreateApplicationResponse, AWSError] = js.native
   def createApplication(
@@ -57,12 +57,12 @@ trait M2 extends Service {
   ): Request[CreateDataSetImportTaskResponse, AWSError] = js.native
   
   /**
-    * Creates and starts a deployment to deploy an application into an environment.
+    * Creates and starts a deployment to deploy an application into a runtime environment.
     */
   def createDeployment(): Request[CreateDeploymentResponse, AWSError] = js.native
   def createDeployment(callback: js.Function2[/* err */ AWSError, /* data */ CreateDeploymentResponse, Unit]): Request[CreateDeploymentResponse, AWSError] = js.native
   /**
-    * Creates and starts a deployment to deploy an application into an environment.
+    * Creates and starts a deployment to deploy an application into a runtime environment.
     */
   def createDeployment(params: CreateDeploymentRequest): Request[CreateDeploymentResponse, AWSError] = js.native
   def createDeployment(
@@ -99,14 +99,14 @@ trait M2 extends Service {
   ): Request[DeleteApplicationResponse, AWSError] = js.native
   
   /**
-    * Deletes a specific application from a specified environment where it has been previously deployed. You cannot delete an environment using DeleteEnvironment, if any application has ever been deployed to it. This API removes the association of the application with the environment so you can delete the environment smoothly.
+    * Deletes a specific application from the specific runtime environment where it was previously deployed. You cannot delete a runtime environment using DeleteEnvironment if any application has ever been deployed to it. This API removes the association of the application with the runtime environment so you can delete the environment smoothly.
     */
   def deleteApplicationFromEnvironment(): Request[DeleteApplicationFromEnvironmentResponse, AWSError] = js.native
   def deleteApplicationFromEnvironment(
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteApplicationFromEnvironmentResponse, Unit]
   ): Request[DeleteApplicationFromEnvironmentResponse, AWSError] = js.native
   /**
-    * Deletes a specific application from a specified environment where it has been previously deployed. You cannot delete an environment using DeleteEnvironment, if any application has ever been deployed to it. This API removes the association of the application with the environment so you can delete the environment smoothly.
+    * Deletes a specific application from the specific runtime environment where it was previously deployed. You cannot delete a runtime environment using DeleteEnvironment if any application has ever been deployed to it. This API removes the association of the application with the runtime environment so you can delete the environment smoothly.
     */
   def deleteApplicationFromEnvironment(params: DeleteApplicationFromEnvironmentRequest): Request[DeleteApplicationFromEnvironmentResponse, AWSError] = js.native
   def deleteApplicationFromEnvironment(
@@ -115,12 +115,12 @@ trait M2 extends Service {
   ): Request[DeleteApplicationFromEnvironmentResponse, AWSError] = js.native
   
   /**
-    * Deletes a specific environment. The environment cannot contain deployed applications. If it does, you must delete those applications before you delete the environment.
+    * Deletes a specific runtime environment. The environment cannot contain deployed applications. If it does, you must delete those applications before you delete the environment.
     */
   def deleteEnvironment(): Request[DeleteEnvironmentResponse, AWSError] = js.native
   def deleteEnvironment(callback: js.Function2[/* err */ AWSError, /* data */ DeleteEnvironmentResponse, Unit]): Request[DeleteEnvironmentResponse, AWSError] = js.native
   /**
-    * Deletes a specific environment. The environment cannot contain deployed applications. If it does, you must delete those applications before you delete the environment.
+    * Deletes a specific runtime environment. The environment cannot contain deployed applications. If it does, you must delete those applications before you delete the environment.
     */
   def deleteEnvironment(params: DeleteEnvironmentRequest): Request[DeleteEnvironmentResponse, AWSError] = js.native
   def deleteEnvironment(
@@ -241,12 +241,12 @@ trait M2 extends Service {
   ): Request[ListApplicationVersionsResponse, AWSError] = js.native
   
   /**
-    * Lists the applications associated with a specific Amazon Web Services account. You can provide the unique identifier of a specific environment in a query parameter to see all applications associated with that environment.
+    * Lists the applications associated with a specific Amazon Web Services account. You can provide the unique identifier of a specific runtime environment in a query parameter to see all applications associated with that environment.
     */
   def listApplications(): Request[ListApplicationsResponse, AWSError] = js.native
   def listApplications(callback: js.Function2[/* err */ AWSError, /* data */ ListApplicationsResponse, Unit]): Request[ListApplicationsResponse, AWSError] = js.native
   /**
-    * Lists the applications associated with a specific Amazon Web Services account. You can provide the unique identifier of a specific environment in a query parameter to see all applications associated with that environment.
+    * Lists the applications associated with a specific Amazon Web Services account. You can provide the unique identifier of a specific runtime environment in a query parameter to see all applications associated with that environment.
     */
   def listApplications(params: ListApplicationsRequest): Request[ListApplicationsResponse, AWSError] = js.native
   def listApplications(
@@ -255,12 +255,12 @@ trait M2 extends Service {
   ): Request[ListApplicationsResponse, AWSError] = js.native
   
   /**
-    * Lists all the available batch job definitions based on the batch job resources uploaded during the application creation. The listed batch job definitions can then be used to start a batch job.
+    * Lists all the available batch job definitions based on the batch job resources uploaded during the application creation. You can use the batch job definitions in the list to start a batch job.
     */
   def listBatchJobDefinitions(): Request[ListBatchJobDefinitionsResponse, AWSError] = js.native
   def listBatchJobDefinitions(callback: js.Function2[/* err */ AWSError, /* data */ ListBatchJobDefinitionsResponse, Unit]): Request[ListBatchJobDefinitionsResponse, AWSError] = js.native
   /**
-    * Lists all the available batch job definitions based on the batch job resources uploaded during the application creation. The listed batch job definitions can then be used to start a batch job.
+    * Lists all the available batch job definitions based on the batch job resources uploaded during the application creation. You can use the batch job definitions in the list to start a batch job.
     */
   def listBatchJobDefinitions(params: ListBatchJobDefinitionsRequest): Request[ListBatchJobDefinitionsResponse, AWSError] = js.native
   def listBatchJobDefinitions(
@@ -297,12 +297,12 @@ trait M2 extends Service {
   ): Request[ListDataSetImportHistoryResponse, AWSError] = js.native
   
   /**
-    * Lists the data sets imported for a specific application. In Amazon Web Services Mainframe Modernization, data sets are associated with applications deployed on environments. This is known as importing data sets. Currently, Amazon Web Services Mainframe Modernization can import data sets into catalogs using CreateDataSetImportTask.
+    * Lists the data sets imported for a specific application. In Amazon Web Services Mainframe Modernization, data sets are associated with applications deployed on runtime environments. This is known as importing data sets. Currently, Amazon Web Services Mainframe Modernization can import data sets into catalogs using CreateDataSetImportTask.
     */
   def listDataSets(): Request[ListDataSetsResponse, AWSError] = js.native
   def listDataSets(callback: js.Function2[/* err */ AWSError, /* data */ ListDataSetsResponse, Unit]): Request[ListDataSetsResponse, AWSError] = js.native
   /**
-    * Lists the data sets imported for a specific application. In Amazon Web Services Mainframe Modernization, data sets are associated with applications deployed on environments. This is known as importing data sets. Currently, Amazon Web Services Mainframe Modernization can import data sets into catalogs using CreateDataSetImportTask.
+    * Lists the data sets imported for a specific application. In Amazon Web Services Mainframe Modernization, data sets are associated with applications deployed on runtime environments. This is known as importing data sets. Currently, Amazon Web Services Mainframe Modernization can import data sets into catalogs using CreateDataSetImportTask.
     */
   def listDataSets(params: ListDataSetsRequest): Request[ListDataSetsResponse, AWSError] = js.native
   def listDataSets(
@@ -451,12 +451,12 @@ trait M2 extends Service {
   ): Request[UpdateApplicationResponse, AWSError] = js.native
   
   /**
-    * Updates the configuration details for a specific environment.
+    * Updates the configuration details for a specific runtime environment.
     */
   def updateEnvironment(): Request[UpdateEnvironmentResponse, AWSError] = js.native
   def updateEnvironment(callback: js.Function2[/* err */ AWSError, /* data */ UpdateEnvironmentResponse, Unit]): Request[UpdateEnvironmentResponse, AWSError] = js.native
   /**
-    * Updates the configuration details for a specific environment.
+    * Updates the configuration details for a specific runtime environment.
     */
   def updateEnvironment(params: UpdateEnvironmentRequest): Request[UpdateEnvironmentResponse, AWSError] = js.native
   def updateEnvironment(

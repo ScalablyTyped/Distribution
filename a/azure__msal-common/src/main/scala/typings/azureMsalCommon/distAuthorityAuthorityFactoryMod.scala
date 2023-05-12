@@ -3,7 +3,9 @@ package typings.azureMsalCommon
 import typings.azureMsalCommon.distAuthorityAuthorityMod.Authority
 import typings.azureMsalCommon.distAuthorityAuthorityOptionsMod.AuthorityOptions
 import typings.azureMsalCommon.distCacheInterfaceIcachemanagerMod.ICacheManager
+import typings.azureMsalCommon.distLoggerLoggerMod.Logger
 import typings.azureMsalCommon.distNetworkInetworkmoduleMod.INetworkModule
+import typings.azureMsalCommon.distTelemetryPerformanceIperformanceclientMod.IPerformanceClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,15 +36,35 @@ object distAuthorityAuthorityFactoryMod {
       authorityUri: String,
       networkClient: INetworkModule,
       cacheManager: ICacheManager,
-      authorityOptions: AuthorityOptions
-    ): js.Promise[Authority] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiscoveredInstance")(authorityUri.asInstanceOf[js.Any], networkClient.asInstanceOf[js.Any], cacheManager.asInstanceOf[js.Any], authorityOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Authority]]
+      authorityOptions: AuthorityOptions,
+      logger: Logger
+    ): js.Promise[Authority] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiscoveredInstance")(authorityUri.asInstanceOf[js.Any], networkClient.asInstanceOf[js.Any], cacheManager.asInstanceOf[js.Any], authorityOptions.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Authority]]
     inline def createDiscoveredInstance(
       authorityUri: String,
       networkClient: INetworkModule,
       cacheManager: ICacheManager,
       authorityOptions: AuthorityOptions,
-      proxyUrl: String
-    ): js.Promise[Authority] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiscoveredInstance")(authorityUri.asInstanceOf[js.Any], networkClient.asInstanceOf[js.Any], cacheManager.asInstanceOf[js.Any], authorityOptions.asInstanceOf[js.Any], proxyUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Authority]]
+      logger: Logger,
+      performanceClient: Unit,
+      correlationId: String
+    ): js.Promise[Authority] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiscoveredInstance")(authorityUri.asInstanceOf[js.Any], networkClient.asInstanceOf[js.Any], cacheManager.asInstanceOf[js.Any], authorityOptions.asInstanceOf[js.Any], logger.asInstanceOf[js.Any], performanceClient.asInstanceOf[js.Any], correlationId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Authority]]
+    inline def createDiscoveredInstance(
+      authorityUri: String,
+      networkClient: INetworkModule,
+      cacheManager: ICacheManager,
+      authorityOptions: AuthorityOptions,
+      logger: Logger,
+      performanceClient: IPerformanceClient
+    ): js.Promise[Authority] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiscoveredInstance")(authorityUri.asInstanceOf[js.Any], networkClient.asInstanceOf[js.Any], cacheManager.asInstanceOf[js.Any], authorityOptions.asInstanceOf[js.Any], logger.asInstanceOf[js.Any], performanceClient.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Authority]]
+    inline def createDiscoveredInstance(
+      authorityUri: String,
+      networkClient: INetworkModule,
+      cacheManager: ICacheManager,
+      authorityOptions: AuthorityOptions,
+      logger: Logger,
+      performanceClient: IPerformanceClient,
+      correlationId: String
+    ): js.Promise[Authority] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiscoveredInstance")(authorityUri.asInstanceOf[js.Any], networkClient.asInstanceOf[js.Any], cacheManager.asInstanceOf[js.Any], authorityOptions.asInstanceOf[js.Any], logger.asInstanceOf[js.Any], performanceClient.asInstanceOf[js.Any], correlationId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Authority]]
     
     /**
       * Create an authority object of the correct type based on the url
@@ -58,14 +80,34 @@ object distAuthorityAuthorityFactoryMod {
       authorityUrl: String,
       networkInterface: INetworkModule,
       cacheManager: ICacheManager,
-      authorityOptions: AuthorityOptions
-    ): Authority = (^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(authorityUrl.asInstanceOf[js.Any], networkInterface.asInstanceOf[js.Any], cacheManager.asInstanceOf[js.Any], authorityOptions.asInstanceOf[js.Any])).asInstanceOf[Authority]
+      authorityOptions: AuthorityOptions,
+      logger: Logger
+    ): Authority = (^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(authorityUrl.asInstanceOf[js.Any], networkInterface.asInstanceOf[js.Any], cacheManager.asInstanceOf[js.Any], authorityOptions.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[Authority]
     inline def createInstance(
       authorityUrl: String,
       networkInterface: INetworkModule,
       cacheManager: ICacheManager,
       authorityOptions: AuthorityOptions,
-      proxyUrl: String
-    ): Authority = (^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(authorityUrl.asInstanceOf[js.Any], networkInterface.asInstanceOf[js.Any], cacheManager.asInstanceOf[js.Any], authorityOptions.asInstanceOf[js.Any], proxyUrl.asInstanceOf[js.Any])).asInstanceOf[Authority]
+      logger: Logger,
+      performanceClient: Unit,
+      correlationId: String
+    ): Authority = (^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(authorityUrl.asInstanceOf[js.Any], networkInterface.asInstanceOf[js.Any], cacheManager.asInstanceOf[js.Any], authorityOptions.asInstanceOf[js.Any], logger.asInstanceOf[js.Any], performanceClient.asInstanceOf[js.Any], correlationId.asInstanceOf[js.Any])).asInstanceOf[Authority]
+    inline def createInstance(
+      authorityUrl: String,
+      networkInterface: INetworkModule,
+      cacheManager: ICacheManager,
+      authorityOptions: AuthorityOptions,
+      logger: Logger,
+      performanceClient: IPerformanceClient
+    ): Authority = (^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(authorityUrl.asInstanceOf[js.Any], networkInterface.asInstanceOf[js.Any], cacheManager.asInstanceOf[js.Any], authorityOptions.asInstanceOf[js.Any], logger.asInstanceOf[js.Any], performanceClient.asInstanceOf[js.Any])).asInstanceOf[Authority]
+    inline def createInstance(
+      authorityUrl: String,
+      networkInterface: INetworkModule,
+      cacheManager: ICacheManager,
+      authorityOptions: AuthorityOptions,
+      logger: Logger,
+      performanceClient: IPerformanceClient,
+      correlationId: String
+    ): Authority = (^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(authorityUrl.asInstanceOf[js.Any], networkInterface.asInstanceOf[js.Any], cacheManager.asInstanceOf[js.Any], authorityOptions.asInstanceOf[js.Any], logger.asInstanceOf[js.Any], performanceClient.asInstanceOf[js.Any], correlationId.asInstanceOf[js.Any])).asInstanceOf[Authority]
   }
 }

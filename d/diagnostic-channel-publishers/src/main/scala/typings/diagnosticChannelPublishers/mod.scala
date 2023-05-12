@@ -109,13 +109,13 @@ object mod {
     
     inline def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
     
+    @JSImport("diagnostic-channel-publishers", "pg.postgres")
+    @js.native
+    val postgres: IModulePatcher = js.native
+    
     @JSImport("diagnostic-channel-publishers", "pg.postgres6")
     @js.native
     val postgres6: IModulePatcher = js.native
-    
-    @JSImport("diagnostic-channel-publishers", "pg.postgres7")
-    @js.native
-    val postgres7: IModulePatcher = js.native
   }
   
   object pgPool {

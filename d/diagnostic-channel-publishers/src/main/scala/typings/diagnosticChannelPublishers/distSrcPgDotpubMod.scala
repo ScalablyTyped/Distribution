@@ -15,13 +15,13 @@ object distSrcPgDotpubMod {
   
   inline def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
   
+  @JSImport("diagnostic-channel-publishers/dist/src/pg.pub", "postgres")
+  @js.native
+  val postgres: IModulePatcher = js.native
+  
   @JSImport("diagnostic-channel-publishers/dist/src/pg.pub", "postgres6")
   @js.native
   val postgres6: IModulePatcher = js.native
-  
-  @JSImport("diagnostic-channel-publishers/dist/src/pg.pub", "postgres7")
-  @js.native
-  val postgres7: IModulePatcher = js.native
   
   trait IPostgresData extends StObject {
     

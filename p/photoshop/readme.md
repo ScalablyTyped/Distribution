@@ -1,7 +1,7 @@
 
 # Scala.js typings for photoshop
 
-Typings are for version 23.0
+Typings are for version 24.5
 
 ## Library description:
 Control Adobe Photoshop and After Effects from Node.js

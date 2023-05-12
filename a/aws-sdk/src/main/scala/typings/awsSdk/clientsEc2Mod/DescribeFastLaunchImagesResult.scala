@@ -12,7 +12,7 @@ trait DescribeFastLaunchImagesResult extends StObject {
   var FastLaunchImages: js.UndefOr[DescribeFastLaunchImagesSuccessSet] = js.undefined
   
   /**
-    * The token to use for the next set of results. This value is null when there are no more results to return.
+    * The token to include in another request to get the next page of items. This value is null when there are no more items to return.
     */
   var NextToken: js.UndefOr[typings.awsSdk.clientsEc2Mod.NextToken] = js.undefined
 }

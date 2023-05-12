@@ -185,6 +185,7 @@ object sapUiModelCompositeTypeMod {
     
     /**
       * @SINCE 1.100.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Processes the types of the parts of this composite type. A concrete composite type may override this
       * method if it needs to derive information from the types of the parts.

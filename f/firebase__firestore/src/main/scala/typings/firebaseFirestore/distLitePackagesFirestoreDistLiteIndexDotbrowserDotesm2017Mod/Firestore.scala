@@ -28,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Firestore protected ()
   extends StObject
-     with fn {
+     with In {
   /** @hideconstructor */
   def this(t: Any, e: Any, n: Any, r: Any) = this()
 }

@@ -3,8 +3,8 @@ package typings.three
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcMaterialsMaterialMod.MaterialParameters
 import typings.three.srcMathColorMod.Color
+import typings.three.srcMathColorMod.ColorRepresentation
 import typings.three.srcTexturesTextureMod.Texture
-import typings.three.srcUtilsMod.ColorRepresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

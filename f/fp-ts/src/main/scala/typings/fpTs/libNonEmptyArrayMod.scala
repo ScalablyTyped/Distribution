@@ -10,7 +10,7 @@ import typings.fpTs.libEndomorphismMod.Endomorphism
 import typings.fpTs.libEqMod.Eq
 import typings.fpTs.libFoldableMod.Foldable1
 import typings.fpTs.libFoldableWithIndexMod.FoldableWithIndex1
-import typings.fpTs.libFunctionMod.Lazy
+import typings.fpTs.libFunctionMod.LazyArg
 import typings.fpTs.libFunctorMod.Functor1
 import typings.fpTs.libFunctorWithIndexMod.FunctorWithIndex1
 import typings.fpTs.libMonadMod.Monad1
@@ -101,9 +101,9 @@ object libNonEmptyArrayMod {
   val URI: /* "NonEmptyArray" */ String = js.native
   type URI = /* "NonEmptyArray" */ String
   
-  inline def alt[A](that: Lazy[NonEmptyArray_[A]]): js.Function1[/* fa */ NonEmptyArray_[A], NonEmptyArray_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ NonEmptyArray_[A], NonEmptyArray_[A]]]
+  inline def alt[A](that: LazyArg[NonEmptyArray_[A]]): js.Function1[/* fa */ NonEmptyArray_[A], NonEmptyArray_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ NonEmptyArray_[A], NonEmptyArray_[A]]]
   
-  inline def altW[B](that: Lazy[NonEmptyArray_[B]]): js.Function1[/* as */ NonEmptyArray_[Any], NonEmptyArray_[B | Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("altW")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ NonEmptyArray_[Any], NonEmptyArray_[B | Any]]]
+  inline def altW[B](that: LazyArg[NonEmptyArray_[B]]): js.Function1[/* as */ NonEmptyArray_[Any], NonEmptyArray_[B | Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("altW")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ NonEmptyArray_[Any], NonEmptyArray_[B | Any]]]
   
   inline def ap[A](as: NonEmptyArray_[A]): js.Function1[/* fab */ NonEmptyArray_[js.Function1[/* a */ A, Any]], NonEmptyArray_[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ap")(as.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ NonEmptyArray_[js.Function1[/* a */ A, Any]], NonEmptyArray_[Any]]]
   
@@ -190,6 +190,9 @@ object libNonEmptyArrayMod {
   inline def filter_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* as */ NonEmptyArray_[A], Option_[NonEmptyArray_[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ NonEmptyArray_[A], Option_[NonEmptyArray_[B]]]]
   
   inline def flap[A](a: A): js.Function1[/* fab */ NonEmptyArray_[js.Function1[/* a */ A, Any]], NonEmptyArray_[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flap")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ NonEmptyArray_[js.Function1[/* a */ A, Any]], NonEmptyArray_[Any]]]
+  
+  inline def flatMap[A, B](f: js.Function2[/* a */ A, /* i */ Double, NonEmptyArray_[B]]): js.Function1[/* ma */ NonEmptyArray_[A], NonEmptyArray_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ NonEmptyArray_[A], NonEmptyArray_[B]]]
+  inline def flatMap[A, B](ma: NonEmptyArray_[A], f: js.Function2[/* a */ A, /* i */ Double, NonEmptyArray_[B]]): NonEmptyArray_[B] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(ma.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[NonEmptyArray_[B]]
   
   inline def flatten[A](mma: NonEmptyArray_[NonEmptyArray_[A]]): NonEmptyArray_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(mma.asInstanceOf[js.Any]).asInstanceOf[NonEmptyArray_[A]]
   

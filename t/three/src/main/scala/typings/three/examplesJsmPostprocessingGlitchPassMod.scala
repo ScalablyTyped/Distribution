@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.examplesJsmPostprocessingPassMod.FullScreenQuad
 import typings.three.examplesJsmPostprocessingPassMod.Pass
 import typings.three.srcThreeMod.DataTexture
 import typings.three.srcThreeMod.ShaderMaterial
@@ -16,7 +17,7 @@ object examplesJsmPostprocessingGlitchPassMod {
     
     var curF: Double = js.native
     
-    var fsQuad: js.Object = js.native
+    var fsQuad: FullScreenQuad = js.native
     
     def generateHeightmap(dt_size: Double): DataTexture = js.native
     

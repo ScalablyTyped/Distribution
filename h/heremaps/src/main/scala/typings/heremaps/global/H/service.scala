@@ -236,6 +236,28 @@ object service {
     val ^ : js.Any = js.native
     
     /**
+      * This class represents the set of values to be associated to a key in cases where it is required to be repeated multiple times in a query string.
+      */
+    @JSGlobal("H.service.Url.MultiValueQueryParameter")
+    @js.native
+    open class MultiValueQueryParameter protected ()
+      extends StObject
+         with typings.heremaps.H.service.Url.MultiValueQueryParameter {
+      /**
+        * @param values {Array<string|number>} - The list of values to be associated to a key in a query string. The the values order in the list will be preserved in the query string.
+        * @throws {H.lang.InvalidArgumentError} - in case the argument of the constructor is not an array or its elements have types different from string and number.
+        */
+      def this(values: js.Array[String | Double]) = this()
+      
+      /**
+        * Returns the array of values.
+        * @returns {Array<string|number>}
+        */
+      /* CompleteClass */
+      override def getValues(): js.Array[String | Double] = js.native
+    }
+    
+    /**
       * This function parses a URL string and returns a H.service.Url object. The URL string must contain at least a scheme and a host.
       * @param url {string} - The URL string to parse.
       * @param opt_baseURL {string=} - The base URL to use to resolve relative URLs. If ommited the base URL of the document which loaded the API is taken.

@@ -2,64 +2,21 @@ package typings.libp2p
 
 import typings.libp2pInterfaceConnectionManager.mod.ConnectionManager
 import typings.libp2pInterfacePeerId.mod.PeerId
-import typings.libp2pInterfaceRegistrar.mod.IncomingStreamData
 import typings.libp2pInterfaceRegistrar.mod.Registrar
-import typings.libp2pInterfaces.distSrcStartableMod.Startable
 import typings.libp2pInterfaces.mod.AbortOptions
+import typings.multiformatsMultiaddr.mod.Multiaddr_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distSrcPingMod {
   
-  @JSImport("libp2p/dist/src/ping", "PingService")
+  @JSImport("libp2p/dist/src/ping", JSImport.Namespace)
   @js.native
-  open class PingService protected ()
-    extends StObject
-       with Startable {
-    def this(components: PingServiceComponents, init: PingServiceInit) = this()
-    
-    /* private */ val components: Any = js.native
-    
-    /**
-      * A handler to register with Libp2p to process ping messages
-      */
-    def handleMessage(data: IncomingStreamData): Unit = js.native
-    
-    /* private */ val init: Any = js.native
-    
-    /* CompleteClass */
-    override def isStarted(): Boolean = js.native
-    
-    /**
-      * Ping a given peer and wait for its response, getting the operation latency.
-      *
-      * @param {PeerId|Multiaddr} peer
-      * @returns {Promise<number>}
-      */
-    def ping(peer: PeerId): js.Promise[Double] = js.native
-    def ping(peer: PeerId, options: AbortOptions): js.Promise[Double] = js.native
-    
-    val protocol: String = js.native
-    
-    /**
-      * This method will be invoked to start the component.
-      *
-      * It should not assume that any other components have been started.
-      */
-    /* CompleteClass */
-    override def start(): Unit | js.Promise[Unit] = js.native
-    
-    /* private */ var started: Any = js.native
-    
-    /**
-      * This method will be invoked to stop the component.
-      *
-      * It should not assume any other components are running when it is called.
-      */
-    /* CompleteClass */
-    override def stop(): Unit | js.Promise[Unit] = js.native
-  }
+  val ^ : js.Any = js.native
+  
+  inline def pingService(): js.Function1[/* components */ PingServiceComponents, PingService_] = ^.asInstanceOf[js.Dynamic].applyDynamic("pingService")().asInstanceOf[js.Function1[/* components */ PingServiceComponents, PingService_]]
+  inline def pingService(init: PingServiceInit): js.Function1[/* components */ PingServiceComponents, PingService_] = ^.asInstanceOf[js.Dynamic].applyDynamic("pingService")(init.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* components */ PingServiceComponents, PingService_]]
   
   trait PingServiceComponents extends StObject {
     
@@ -85,21 +42,21 @@ object distSrcPingMod {
   
   trait PingServiceInit extends StObject {
     
-    var maxInboundStreams: Double
+    var maxInboundStreams: js.UndefOr[Double] = js.undefined
     
-    var maxOutboundStreams: Double
+    var maxOutboundStreams: js.UndefOr[Double] = js.undefined
     
-    var protocolPrefix: String
+    var protocolPrefix: js.UndefOr[String] = js.undefined
     
     /**
       * How long we should wait for a ping response
       */
-    var timeout: Double
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object PingServiceInit {
     
-    inline def apply(maxInboundStreams: Double, maxOutboundStreams: Double, protocolPrefix: String, timeout: Double): PingServiceInit = {
-      val __obj = js.Dynamic.literal(maxInboundStreams = maxInboundStreams.asInstanceOf[js.Any], maxOutboundStreams = maxOutboundStreams.asInstanceOf[js.Any], protocolPrefix = protocolPrefix.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
+    inline def apply(): PingServiceInit = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PingServiceInit]
     }
     
@@ -108,11 +65,30 @@ object distSrcPingMod {
       
       inline def setMaxInboundStreams(value: Double): Self = StObject.set(x, "maxInboundStreams", value.asInstanceOf[js.Any])
       
+      inline def setMaxInboundStreamsUndefined: Self = StObject.set(x, "maxInboundStreams", js.undefined)
+      
       inline def setMaxOutboundStreams(value: Double): Self = StObject.set(x, "maxOutboundStreams", value.asInstanceOf[js.Any])
+      
+      inline def setMaxOutboundStreamsUndefined: Self = StObject.set(x, "maxOutboundStreams", js.undefined)
       
       inline def setProtocolPrefix(value: String): Self = StObject.set(x, "protocolPrefix", value.asInstanceOf[js.Any])
       
+      inline def setProtocolPrefixUndefined: Self = StObject.set(x, "protocolPrefix", js.undefined)
+      
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
+  }
+  
+  @js.native
+  trait PingService_ extends StObject {
+    
+    def ping(peer: js.Array[Multiaddr_]): js.Promise[Double] = js.native
+    def ping(peer: js.Array[Multiaddr_], options: AbortOptions): js.Promise[Double] = js.native
+    def ping(peer: PeerId): js.Promise[Double] = js.native
+    def ping(peer: PeerId, options: AbortOptions): js.Promise[Double] = js.native
+    def ping(peer: Multiaddr_): js.Promise[Double] = js.native
+    def ping(peer: Multiaddr_, options: AbortOptions): js.Promise[Double] = js.native
   }
 }

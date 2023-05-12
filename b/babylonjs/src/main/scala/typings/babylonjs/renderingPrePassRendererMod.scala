@@ -1,5 +1,6 @@
 package typings.babylonjs
 
+import typings.babylonjs.anon.Format
 import typings.babylonjs.camerasCameraMod.Camera
 import typings.babylonjs.materialsEffectMod.Effect
 import typings.babylonjs.materialsMaterialMod.Material
@@ -56,6 +57,10 @@ object renderingPrePassRendererMod {
     /* private */ var _clearAttachments: Any = js.native
     
     /* private */ val _clearColor: Any = js.native
+    
+    /* private */ var _clearDepthAttachments: Any = js.native
+    
+    /* private */ val _clearDepthColor: Any = js.native
     
     /**
       * Creates a new PrePassRenderTarget
@@ -115,6 +120,8 @@ object renderingPrePassRendererMod {
     
     /* private */ var _mrtNames: Any = js.native
     
+    /* private */ var _mrtTypes: Any = js.native
+    
     /* private */ var _multiRenderAttachments: Any = js.native
     
     /* private */ var _needsCompositionForThisPass: Any = js.native
@@ -158,6 +165,8 @@ object renderingPrePassRendererMod {
     /* private */ var _update: Any = js.native
     
     /* private */ var _updateGeometryBufferLayout: Any = js.native
+    
+    /* private */ var _useSpecificClearForDepthTexture: Any = js.native
     
     /**
       * Adds an effect configuration to the prepass render target.
@@ -273,6 +282,13 @@ object renderingPrePassRendererMod {
       * false if there is no postprocesses - and the function has no effect
       */
     def setCustomOutput(rt: RenderTargetTexture): Boolean = js.native
+    
+    /**
+      * If set to true (default: false), the depth texture will be cleared with the depth value corresponding to the far plane (1 in normal mode, 0 in reverse depth buffer mode)
+      * If set to false, the depth texture is always cleared with 0.
+      */
+    def useSpecificClearForDepthTexture: Boolean = js.native
+    def useSpecificClearForDepthTexture_=(value: Boolean): Unit = js.native
   }
   /* static members */
   object PrePassRenderer {
@@ -282,13 +298,16 @@ object renderingPrePassRendererMod {
     val ^ : js.Any = js.native
     
     /**
+      * Describes the types and formats of the textures used by the pre-pass renderer
+      */
+    @JSImport("babylonjs/Rendering/prePassRenderer", "PrePassRenderer.TextureFormats")
+    @js.native
+    def TextureFormats: js.Array[Format] = js.native
+    inline def TextureFormats_=(x: js.Array[Format]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TextureFormats")(x.asInstanceOf[js.Any])
+    
+    /**
       * @internal
       */
     inline def _SceneComponentInitialization(scene: Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    
-    @JSImport("babylonjs/Rendering/prePassRenderer", "PrePassRenderer._TextureFormats")
-    @js.native
-    def _TextureFormats: Any = js.native
-    inline def _TextureFormats_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TextureFormats")(x.asInstanceOf[js.Any])
   }
 }

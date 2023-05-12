@@ -2,9 +2,10 @@ package typings.awsSdkCredentialProviders
 
 import typings.awsSdkClientSts.distTypesStsclientMod.STSClientConfig
 import typings.awsSdkCredentialProviders.anon.OmitAssumeRoleCommandInpu
-import typings.awsSdkTypes.distTypesCredentialsMod.CredentialProvider
-import typings.awsSdkTypes.distTypesCredentialsMod.Credentials
+import typings.awsSdkTypes.distTypesIdentityAwsCredentialIdentityMod.AwsCredentialIdentity
+import typings.awsSdkTypes.distTypesIdentityAwsCredentialIdentityMod.AwsCredentialIdentityProvider
 import typings.awsSdkTypes.distTypesMiddlewareMod.Pluggable
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ object distTypesFromTemporaryCredentialsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromTemporaryCredentials(options: FromTemporaryCredentialsOptions): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTemporaryCredentials")(options.asInstanceOf[js.Any]).asInstanceOf[CredentialProvider]
+  inline def fromTemporaryCredentials(options: FromTemporaryCredentialsOptions): AwsCredentialIdentityProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTemporaryCredentials")(options.asInstanceOf[js.Any]).asInstanceOf[AwsCredentialIdentityProvider]
   
   trait FromTemporaryCredentialsOptions extends StObject {
     
@@ -23,7 +24,7 @@ object distTypesFromTemporaryCredentialsMod {
     
     var clientPlugins: js.UndefOr[js.Array[Pluggable[Any, Any]]] = js.undefined
     
-    var masterCredentials: js.UndefOr[Credentials | CredentialProvider] = js.undefined
+    var masterCredentials: js.UndefOr[AwsCredentialIdentity | AwsCredentialIdentityProvider] = js.undefined
     
     var mfaCodeProvider: js.UndefOr[js.Function1[/* mfaSerial */ String, js.Promise[String]]] = js.undefined
     
@@ -49,9 +50,11 @@ object distTypesFromTemporaryCredentialsMod {
       
       inline def setClientPluginsVarargs(value: (Pluggable[Any, Any])*): Self = StObject.set(x, "clientPlugins", js.Array(value*))
       
-      inline def setMasterCredentials(value: Credentials | CredentialProvider): Self = StObject.set(x, "masterCredentials", value.asInstanceOf[js.Any])
+      inline def setMasterCredentials(value: AwsCredentialIdentity | AwsCredentialIdentityProvider): Self = StObject.set(x, "masterCredentials", value.asInstanceOf[js.Any])
       
-      inline def setMasterCredentialsFunction0(value: () => js.Promise[Credentials]): Self = StObject.set(x, "masterCredentials", js.Any.fromFunction0(value))
+      inline def setMasterCredentialsFunction1(
+        value: /* identityProperties */ js.UndefOr[Record[String, Any]] => js.Promise[AwsCredentialIdentity]
+      ): Self = StObject.set(x, "masterCredentials", js.Any.fromFunction1(value))
       
       inline def setMasterCredentialsUndefined: Self = StObject.set(x, "masterCredentials", js.undefined)
       

@@ -35,6 +35,11 @@ trait Action extends StObject {
     * Information about the PORT_PROBE action described in this finding.
     */
   var PortProbeAction: js.UndefOr[typings.awsSdk.clientsGuarddutyMod.PortProbeAction] = js.undefined
+  
+  /**
+    * Information about RDS_LOGIN_ATTEMPT action described in this finding.
+    */
+  var RdsLoginAttemptAction: js.UndefOr[typings.awsSdk.clientsGuarddutyMod.RdsLoginAttemptAction] = js.undefined
 }
 object Action {
   
@@ -69,5 +74,9 @@ object Action {
     inline def setPortProbeAction(value: PortProbeAction): Self = StObject.set(x, "PortProbeAction", value.asInstanceOf[js.Any])
     
     inline def setPortProbeActionUndefined: Self = StObject.set(x, "PortProbeAction", js.undefined)
+    
+    inline def setRdsLoginAttemptAction(value: RdsLoginAttemptAction): Self = StObject.set(x, "RdsLoginAttemptAction", value.asInstanceOf[js.Any])
+    
+    inline def setRdsLoginAttemptActionUndefined: Self = StObject.set(x, "RdsLoginAttemptAction", js.undefined)
   }
 }

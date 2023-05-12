@@ -12,7 +12,7 @@ open class CursorMarker protected ()
   def this(props: CursorMarkerProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: CursorMarkerProps, context: Any) = this()
 }

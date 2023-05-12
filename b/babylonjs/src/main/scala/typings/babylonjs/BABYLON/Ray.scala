@@ -54,7 +54,7 @@ trait Ray extends StObject {
   def intersectsBoxMinMax(minimum: DeepImmutable[Vector3], maximum: DeepImmutable[Vector3], intersectionTreshold: Double): Boolean = js.native
   
   /**
-    * Checks if ray intersects a mesh
+    * Checks if ray intersects a mesh. The ray is defined in WORLD space.
     * @param mesh the mesh to check
     * @param fastCheck defines if the first intersection will be used (and not the closest)
     * @returns picking info of the intersection

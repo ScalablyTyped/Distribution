@@ -1,6 +1,5 @@
 package typings.three
 
-import typings.three.srcCamerasCameraMod.Camera
 import typings.three.srcCamerasPerspectiveCameraMod.PerspectiveCamera
 import typings.three.srcLightsLightShadowMod.LightShadow
 import typings.three.threeBooleans.`true`
@@ -12,17 +11,25 @@ object srcLightsSpotLightShadowMod {
   
   @JSImport("three/src/lights/SpotLightShadow", "SpotLightShadow")
   @js.native
-  open class SpotLightShadow protected () extends LightShadow {
-    def this(camera: Camera) = this()
-    
-    @JSName("camera")
-    var camera_SpotLightShadow: PerspectiveCamera = js.native
+  open class SpotLightShadow protected () extends LightShadow[PerspectiveCamera] {
+    /**
+      * Create a new instance of {@link LightShadow}
+      * @param camera The light's view of the world.
+      */
+    def this(camera: PerspectiveCamera) = this()
     
     /**
-      * @default 1
+      * Used to focus the shadow camera.
+      * @remarks The camera's field of view is set as a percentage of the spotlight's field-of-view. Range is `[0, 1]`. 0`.
+      * @defaultValue `1`
       */
     var focus: Double = js.native
     
+    /**
+      * Read-only flag to check if a given object is of type {@link SpotLightShadow}.
+      * @remarks This is a _constant_ value
+      * @defaultValue `true`
+      */
     val isSpotLightShadow: `true` = js.native
   }
 }

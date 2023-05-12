@@ -16,7 +16,7 @@ trait BooleanSchema[TSchema]
     * see `boolean.sensitive()` to change this behavior.
     * @param values - strings, numbers or arrays of them
     */
-  def falsy(values: (String | Double)*): this.type = js.native
+  def falsy(values: (String | Double | Null)*): this.type = js.native
   
   /**
     * Allows the values provided to truthy and falsy as well as the "true" and "false" default conversion
@@ -30,5 +30,5 @@ trait BooleanSchema[TSchema]
     * String comparisons are by default case insensitive, see `boolean.sensitive()` to change this behavior.
     * @param values - strings, numbers or arrays of them
     */
-  def truthy(values: (String | Double)*): this.type = js.native
+  def truthy(values: (String | Double | Null)*): this.type = js.native
 }

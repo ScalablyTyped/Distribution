@@ -14,16 +14,16 @@ trait EvaluateArguments extends StObject {
   
   /** The context in which the evaluate request is used.
   			Values: 
-  			'variables': evaluate is called from a variables view context.
   			'watch': evaluate is called from a watch view context.
   			'repl': evaluate is called from a REPL context.
   			'hover': evaluate is called to generate the debug hover contents.
   			This value should only be used if the corresponding capability `supportsEvaluateForHovers` is true.
   			'clipboard': evaluate is called to generate clipboard contents.
   			This value should only be used if the corresponding capability `supportsClipboardContext` is true.
+  			'variables': evaluate is called from a variables view context.
   			etc.
   		*/
-  var context: js.UndefOr[variables | watch | repl | hover | clipboard | String] = js.undefined
+  var context: js.UndefOr[watch | repl | hover | clipboard | variables | String] = js.undefined
   
   /** The expression to evaluate. */
   var expression: String
@@ -46,7 +46,7 @@ object EvaluateArguments {
   @scala.inline
   implicit open class MutableBuilder[Self <: EvaluateArguments] (val x: Self) extends AnyVal {
     
-    inline def setContext(value: variables | watch | repl | hover | clipboard | String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: watch | repl | hover | clipboard | variables | String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     

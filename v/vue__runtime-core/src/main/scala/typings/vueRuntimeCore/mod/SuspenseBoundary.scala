@@ -47,6 +47,8 @@ trait SuspenseBoundary extends StObject {
   
   def resolve(): Unit = js.native
   def resolve(force: Boolean): Unit = js.native
+  def resolve(force: Boolean, sync: Boolean): Unit = js.native
+  def resolve(force: Unit, sync: Boolean): Unit = js.native
   
   var timeout: Double = js.native
   

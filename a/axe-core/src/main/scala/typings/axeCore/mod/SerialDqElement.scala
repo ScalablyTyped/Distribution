@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SerialDqElement extends StObject {
   
-  var ancestry: CrossFrameSelector
+  var ancestry: UnlabelledFrameSelector
   
   var nodeIndexes: js.Array[Double]
   
-  var selector: CrossFrameSelector
+  var selector: UnlabelledFrameSelector
   
   var source: String
   
@@ -19,9 +19,9 @@ trait SerialDqElement extends StObject {
 object SerialDqElement {
   
   inline def apply(
-    ancestry: CrossFrameSelector,
+    ancestry: UnlabelledFrameSelector,
     nodeIndexes: js.Array[Double],
-    selector: CrossFrameSelector,
+    selector: UnlabelledFrameSelector,
     source: String,
     xpath: js.Array[String]
   ): SerialDqElement = {
@@ -32,7 +32,7 @@ object SerialDqElement {
   @scala.inline
   implicit open class MutableBuilder[Self <: SerialDqElement] (val x: Self) extends AnyVal {
     
-    inline def setAncestry(value: CrossFrameSelector): Self = StObject.set(x, "ancestry", value.asInstanceOf[js.Any])
+    inline def setAncestry(value: UnlabelledFrameSelector): Self = StObject.set(x, "ancestry", value.asInstanceOf[js.Any])
     
     inline def setAncestryVarargs(value: CrossTreeSelector*): Self = StObject.set(x, "ancestry", js.Array(value*))
     
@@ -40,7 +40,7 @@ object SerialDqElement {
     
     inline def setNodeIndexesVarargs(value: Double*): Self = StObject.set(x, "nodeIndexes", js.Array(value*))
     
-    inline def setSelector(value: CrossFrameSelector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: UnlabelledFrameSelector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     inline def setSelectorVarargs(value: CrossTreeSelector*): Self = StObject.set(x, "selector", js.Array(value*))
     

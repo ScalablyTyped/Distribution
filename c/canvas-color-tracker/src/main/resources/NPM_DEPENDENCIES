@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "canvas-color-tracker" : "1.1.6"
+      "canvas-color-tracker" : "1.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "canvas-color-tracker" : "1.1.6"
+      "canvas-color-tracker" : "1.2.1"
     }
   ],
   "compile-devDependencies" : [

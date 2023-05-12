@@ -220,6 +220,9 @@ object readerTask {
   
   inline def flap[A](a: A): js.Function1[/* fab */ ReaderTask_[Any, js.Function1[/* a */ A, Any]], ReaderTask_[Any, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flap")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ ReaderTask_[Any, js.Function1[/* a */ A, Any]], ReaderTask_[Any, Any]]]
   
+  inline def flatMap[A, R2, B](f: js.Function1[/* a */ A, ReaderTask_[R2, B]]): js.Function1[/* ma */ ReaderTask_[Any, A], ReaderTask_[Any & R2, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderTask_[Any, A], ReaderTask_[Any & R2, B]]]
+  inline def flatMap[R1, A, R2, B](ma: ReaderTask_[R1, A], f: js.Function1[/* a */ A, ReaderTask_[R2, B]]): ReaderTask_[R1 & R2, B] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(ma.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[ReaderTask_[R1 & R2, B]]
+  
   inline def flatten[R, A](mma: ReaderTask_[R, ReaderTask_[R, A]]): ReaderTask_[R, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(mma.asInstanceOf[js.Any]).asInstanceOf[ReaderTask_[R, A]]
   
   inline def flattenW[R1, R2, A](mma: ReaderTask_[R1, ReaderTask_[R2, A]]): ReaderTask_[R1 & R2, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("flattenW")(mma.asInstanceOf[js.Any]).asInstanceOf[ReaderTask_[R1 & R2, A]]
@@ -277,6 +280,9 @@ object readerTask {
   inline def sequenceArray[R, A](arr: js.Array[ReaderTask_[R, A]]): ReaderTask_[R, js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("sequenceArray")(arr.asInstanceOf[js.Any]).asInstanceOf[ReaderTask_[R, js.Array[A]]]
   
   inline def sequenceSeqArray[R, A](arr: js.Array[ReaderTask_[R, A]]): ReaderTask_[R, js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("sequenceSeqArray")(arr.asInstanceOf[js.Any]).asInstanceOf[ReaderTask_[R, js.Array[A]]]
+  
+  inline def tap[A, R2, _underscore](f: js.Function1[/* a */ A, ReaderTask_[R2, _underscore]]): js.Function1[/* self */ ReaderTask_[Any, A], ReaderTask_[R2 & Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* self */ ReaderTask_[Any, A], ReaderTask_[R2 & Any, A]]]
+  inline def tap[R1, A, R2, _underscore](self: ReaderTask_[R1, A], f: js.Function1[/* a */ A, ReaderTask_[R2, _underscore]]): ReaderTask_[R1 & R2, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("tap")(self.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[ReaderTask_[R1 & R2, A]]
   
   inline def traverseArray[R, A, B](f: js.Function1[/* a */ A, ReaderTask_[R, B]]): js.Function1[/* as */ js.Array[A], ReaderTask_[R, js.Array[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverseArray")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], ReaderTask_[R, js.Array[B]]]]
   

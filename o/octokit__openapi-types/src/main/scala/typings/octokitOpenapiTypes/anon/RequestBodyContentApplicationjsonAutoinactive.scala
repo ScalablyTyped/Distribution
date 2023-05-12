@@ -10,14 +10,14 @@ trait RequestBodyContentApplicationjsonAutoinactive extends StObject {
   
   var requestBody: ContentApplicationjsonAutoinactive
   
-  var responses: `201Content222`
+  var responses: `201Content236`
 }
 object RequestBodyContentApplicationjsonAutoinactive {
   
   inline def apply(
     parameters: PathDeploymentid,
     requestBody: ContentApplicationjsonAutoinactive,
-    responses: `201Content222`
+    responses: `201Content236`
   ): RequestBodyContentApplicationjsonAutoinactive = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonAutoinactive]
@@ -30,6 +30,6 @@ object RequestBodyContentApplicationjsonAutoinactive {
     
     inline def setRequestBody(value: ContentApplicationjsonAutoinactive): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `201Content222`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `201Content236`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

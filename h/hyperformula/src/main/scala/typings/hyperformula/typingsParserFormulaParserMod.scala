@@ -8,7 +8,7 @@ import typings.hyperformula.typingsCellMod.SimpleCellAddress_
 import typings.hyperformula.typingsParserAddressRepresentationConvertersMod.SheetMappingFn
 import typings.hyperformula.typingsParserAstMod.Ast
 import typings.hyperformula.typingsParserAstMod.ParsingError_
-import typings.hyperformula.typingsParserLexerConfigMod.ILexerConfig
+import typings.hyperformula.typingsParserLexerConfigMod.LexerConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ object typingsParserFormulaParserMod {
   @JSImport("hyperformula/typings/parser/FormulaParser", "FormulaLexer")
   @js.native
   open class FormulaLexer protected () extends StObject {
-    def this(lexerConfig: ILexerConfig) = this()
+    def this(lexerConfig: LexerConfig) = this()
     
     /* private */ val lexer: Any = js.native
     
@@ -31,7 +31,7 @@ object typingsParserFormulaParserMod {
     /**
       * Returns Lexer tokens from formula string
       *
-      * @param text - string representation of a formula
+      * @param {string} text - string representation of a formula
       */
     def tokenizeFormula(text: String): ILexingResult = js.native
     
@@ -53,7 +53,7 @@ object typingsParserFormulaParserMod {
   @JSImport("hyperformula/typings/parser/FormulaParser", "FormulaParser")
   @js.native
   open class FormulaParser protected () extends EmbeddedActionsParser {
-    def this(lexerConfig: ILexerConfig, sheetMapping: SheetMappingFn) = this()
+    def this(lexerConfig: LexerConfig, sheetMapping: SheetMappingFn) = this()
     
     /**
       * Rule for addition category operators (e.g. 1 + A1, 1 - A1)
@@ -141,7 +141,7 @@ object typingsParserFormulaParserMod {
     /**
       * Entry rule wrapper that sets formula address
       *
-      * @param address - address of the cell in which formula is located
+      * @param {SimpleCellAddress} address - address of the cell in which formula is located
       */
     /* private */ var formulaWithContext: Any = js.native
     
@@ -154,7 +154,7 @@ object typingsParserFormulaParserMod {
     /**
       * Returns {@link CellReferenceAst} or {@link CellRangeAst} based on OFFSET function arguments
       *
-      * @param args - OFFSET function arguments
+      * @param {Ast[]} args - OFFSET function arguments
       */
     /* private */ var handleOffsetHeuristic: Any = js.native
     
@@ -186,12 +186,6 @@ object typingsParserFormulaParserMod {
       */
     /* private */ var offsetProcedureExpression: Any = js.native
     
-    /* private */ var orderCellRangeEnds: Any = js.native
-    
-    /* private */ var orderColumnRangeEnds: Any = js.native
-    
-    /* private */ var orderRowRangeEnds: Any = js.native
-    
     /**
       * Rule for parenthesis expression
       */
@@ -200,8 +194,8 @@ object typingsParserFormulaParserMod {
     /**
       * Parses tokenized formula and builds abstract syntax tree
       *
-      * @param tokens - tokenized formula
-      * @param formulaAddress - address of the cell in which formula is located
+      * @param {ExtendedToken[]} tokens - tokenized formula
+      * @param {SimpleCellAddress} formulaAddress - address of the cell in which formula is located
       */
     def parseFromTokens(tokens: js.Array[ExtendedToken], formulaAddress: SimpleCellAddress_): FormulaParserResult = js.native
     
@@ -237,11 +231,6 @@ object typingsParserFormulaParserMod {
     @JSImport("hyperformula/typings/parser/FormulaParser", "FormulaParser")
     @js.native
     val ^ : js.Any = js.native
-    
-    @JSImport("hyperformula/typings/parser/FormulaParser", "FormulaParser.compareSheetIds")
-    @js.native
-    def compareSheetIds: Any = js.native
-    inline def compareSheetIds_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("compareSheetIds")(x.asInstanceOf[js.Any])
     
     @JSImport("hyperformula/typings/parser/FormulaParser", "FormulaParser.fixSheetIdsForRangeEnds")
     @js.native

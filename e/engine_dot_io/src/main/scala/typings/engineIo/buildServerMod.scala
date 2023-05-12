@@ -7,10 +7,12 @@ import typings.cors.mod.CorsRequest
 import typings.engineIo.anon.BADHANDSHAKEMETHOD
 import typings.engineIo.anon.CookieSerializeOptionsnam
 import typings.engineIo.anon.`0`
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.node.nodeColonnetMod.Socket
+import typings.node.streamMod.Duplex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,11 +30,32 @@ object buildServerMod {
   open class BaseServer () extends EventEmitter {
     def this(opts: ServerOptions) = this()
     
+    /**
+      * Apply the middlewares to the request.
+      *
+      * @param req
+      * @param res
+      * @param callback
+      * @protected
+      */
+    /* protected */ def _applyMiddlewares(
+      req: IncomingMessage,
+      res: ServerResponse[IncomingMessage],
+      callback: js.Function1[/* err */ js.UndefOr[Any], Unit]
+    ): Unit = js.native
+    
+    /**
+      * Compute the pathname of the requests that are handled by the server
+      * @param options
+      * @protected
+      */
+    /* protected */ def _computePath(options: AttachOptions): String = js.native
+    
     /* protected */ def cleanup(): Any = js.native
     
     /* protected */ var clients: Any = js.native
     
-    /* private */ var clientsCount: Any = js.native
+    var clientsCount: Double = js.native
     
     /**
       * Closes all clients.
@@ -40,8 +63,6 @@ object buildServerMod {
       * @api public
       */
     def close(): this.type = js.native
-    
-    /* protected */ var corsMiddleware: js.Function = js.native
     
     /* protected */ def createTransport(transportName: Any, req: Any): Any = js.native
     
@@ -67,6 +88,8 @@ object buildServerMod {
     
     /* protected */ def init(): Any = js.native
     
+    /* protected */ var middlewares: js.Array[Middleware] = js.native
+    
     var opts: ServerOptions = js.native
     
     /**
@@ -76,6 +99,18 @@ object buildServerMod {
       * @api public
       */
     def upgrades(transport: Any): Any = js.native
+    
+    /**
+      * Adds a new middleware.
+      *
+      * @example
+      * import helmet from "helmet";
+      *
+      * engine.use(helmet());
+      *
+      * @param fn
+      */
+    def use(fn: Any): Unit = js.native
     
     /**
       * Verifies a request.
@@ -148,18 +183,18 @@ object buildServerMod {
     /**
       * Handles an Engine.IO HTTP request.
       *
-      * @param {http.IncomingMessage} request
-      * @param {http.ServerResponse|http.OutgoingMessage} response
+      * @param {IncomingMessage} req
+      * @param {ServerResponse} res
       * @api public
       */
-    def handleRequest(req: Any, res: Any): Unit = js.native
+    def handleRequest(req: IncomingMessage, res: ServerResponse[IncomingMessage]): Unit = js.native
     
     /**
       * Handles an Engine.IO HTTP Upgrade.
       *
       * @api public
       */
-    def handleUpgrade(req: Any, socket: Any, upgradeHead: Any): Unit = js.native
+    def handleUpgrade(req: IncomingMessage, socket: Duplex, upgradeHead: Buffer): Unit = js.native
     
     var httpServer: js.UndefOr[
         typings.node.httpMod.Server[
@@ -192,6 +227,12 @@ object buildServerMod {
   trait AttachOptions extends StObject {
     
     /**
+      * Whether we should add a trailing slash to the request path.
+      * @default true
+      */
+    var addTrailingSlash: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * destroy unhandled upgrade requests
       * @default true
       */
@@ -219,6 +260,10 @@ object buildServerMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: AttachOptions] (val x: Self) extends AnyVal {
       
+      inline def setAddTrailingSlash(value: Boolean): Self = StObject.set(x, "addTrailingSlash", value.asInstanceOf[js.Any])
+      
+      inline def setAddTrailingSlashUndefined: Self = StObject.set(x, "addTrailingSlash", js.undefined)
+      
       inline def setDestroyUpgrade(value: Boolean): Self = StObject.set(x, "destroyUpgrade", value.asInstanceOf[js.Any])
       
       inline def setDestroyUpgradeTimeout(value: Double): Self = StObject.set(x, "destroyUpgradeTimeout", value.asInstanceOf[js.Any])
@@ -232,6 +277,21 @@ object buildServerMod {
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     }
   }
+  
+  /**
+    * An Express-compatible middleware.
+    *
+    * Middleware functions are functions that have access to the request object (req), the response object (res), and the
+    * next middleware function in the application’s request-response cycle.
+    *
+    * @see https://expressjs.com/en/guide/using-middleware.html
+    */
+  type Middleware = js.Function3[
+    /* req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function1[/* err */ js.UndefOr[Any], Unit], 
+    Unit
+  ]
   
   trait ServerOptions extends StObject {
     

@@ -20,7 +20,7 @@ trait BookingCustomerInformation
   // The SMTP address of the bookingCustomer who is booking the appointment
   var emailAddress: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Represents location information for the booking customer who is booking the appointment.
+  // Represents location information for the bookingCustomer who is booking the appointment.
   var location: js.UndefOr[NullableOption[Location]] = js.undefined
   
   // The customer's name.

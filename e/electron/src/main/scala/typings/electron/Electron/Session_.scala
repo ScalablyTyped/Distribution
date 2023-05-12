@@ -1,6 +1,7 @@
 package typings.electron.Electron
 
 import typings.electron.electronStrings.`clipboard-read`
+import typings.electron.electronStrings.`clipboard-sanitized-write`
 import typings.electron.electronStrings.`display-capture`
 import typings.electron.electronStrings.`extension-loaded`
 import typings.electron.electronStrings.`extension-ready`
@@ -10,13 +11,19 @@ import typings.electron.electronStrings.`hid-device-removed`
 import typings.electron.electronStrings.`hid-device-revoked`
 import typings.electron.electronStrings.`select-hid-device`
 import typings.electron.electronStrings.`select-serial-port`
+import typings.electron.electronStrings.`select-usb-device`
 import typings.electron.electronStrings.`serial-port-added`
 import typings.electron.electronStrings.`serial-port-removed`
+import typings.electron.electronStrings.`serial-port-revoked`
 import typings.electron.electronStrings.`spellcheck-dictionary-download-begin`
 import typings.electron.electronStrings.`spellcheck-dictionary-download-failure`
 import typings.electron.electronStrings.`spellcheck-dictionary-download-success`
 import typings.electron.electronStrings.`spellcheck-dictionary-initialized`
+import typings.electron.electronStrings.`usb-device-added`
+import typings.electron.electronStrings.`usb-device-removed`
+import typings.electron.electronStrings.`usb-device-revoked`
 import typings.electron.electronStrings.`will-download`
+import typings.electron.electronStrings.`window-management`
 import typings.electron.electronStrings.fullscreen
 import typings.electron.electronStrings.geolocation
 import typings.electron.electronStrings.media
@@ -94,6 +101,16 @@ trait Session_ extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
+  def addListener_selectusbdevice(
+    event: `select-usb-device`,
+    listener: js.Function3[
+      /* event */ Event, 
+      /* details */ SelectUsbDeviceDetails, 
+      /* callback */ js.Function1[/* deviceId */ js.UndefOr[String], Unit], 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("addListener")
   def addListener_serialportadded(
     event: `serial-port-added`,
     listener: js.Function3[/* event */ Event, /* port */ SerialPort, /* webContents */ WebContents_, Unit]
@@ -102,6 +119,11 @@ trait Session_ extends EventEmitter {
   def addListener_serialportremoved(
     event: `serial-port-removed`,
     listener: js.Function3[/* event */ Event, /* port */ SerialPort, /* webContents */ WebContents_, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  def addListener_serialportrevoked(
+    event: `serial-port-revoked`,
+    listener: js.Function2[/* event */ Event, /* details */ SerialPortRevokedDetails, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_spellcheckdictionarydownloadbegin(
@@ -122,6 +144,21 @@ trait Session_ extends EventEmitter {
   def addListener_spellcheckdictionaryinitialized(
     event: `spellcheck-dictionary-initialized`,
     listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  def addListener_usbdeviceadded(
+    event: `usb-device-added`,
+    listener: js.Function2[/* event */ Event, /* details */ UsbDeviceAddedDetails, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  def addListener_usbdeviceremoved(
+    event: `usb-device-removed`,
+    listener: js.Function2[/* event */ Event, /* details */ UsbDeviceRemovedDetails, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  def addListener_usbdevicerevoked(
+    event: `usb-device-revoked`,
+    listener: js.Function2[/* event */ Event, /* details */ UsbDeviceRevokedDetails, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_willdownload(
@@ -421,8 +458,8 @@ trait Session_ extends EventEmitter {
     * `navigator.hid.requestDevice` is made. `callback` should be called with
     * `deviceId` to be selected; passing no arguments to `callback` will cancel the
     * request.  Additionally, permissioning on `navigator.hid` can be further managed
-    * by using ses.setPermissionCheckHandler(handler) and
-    * ses.setDevicePermissionHandler(handler)`.
+    * by using `ses.setPermissionCheckHandler(handler)` and
+    * `ses.setDevicePermissionHandler(handler)`.
     */
   @JSName("on")
   def on_selecthiddevice(
@@ -453,6 +490,24 @@ trait Session_ extends EventEmitter {
     ]
   ): this.type = js.native
   /**
+    * Emitted when a USB device needs to be selected when a call to
+    * `navigator.usb.requestDevice` is made. `callback` should be called with
+    * `deviceId` to be selected; passing no arguments to `callback` will cancel the
+    * request.  Additionally, permissioning on `navigator.usb` can be further managed
+    * by using `ses.setPermissionCheckHandler(handler)` and
+    * `ses.setDevicePermissionHandler(handler)`.
+    */
+  @JSName("on")
+  def on_selectusbdevice(
+    event: `select-usb-device`,
+    listener: js.Function3[
+      /* event */ Event, 
+      /* details */ SelectUsbDeviceDetails, 
+      /* callback */ js.Function1[/* deviceId */ js.UndefOr[String], Unit], 
+      Unit
+    ]
+  ): this.type = js.native
+  /**
     * Emitted after `navigator.serial.requestPort` has been called and
     * `select-serial-port` has fired if a new serial port becomes available before the
     * callback from `select-serial-port` is called.  This event is intended for use
@@ -475,6 +530,16 @@ trait Session_ extends EventEmitter {
   def on_serialportremoved(
     event: `serial-port-removed`,
     listener: js.Function3[/* event */ Event, /* port */ SerialPort, /* webContents */ WebContents_, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted after `SerialPort.forget()` has been called.  This event can be used to
+    * help maintain persistent storage of permissions when
+    * `setDevicePermissionHandler` is used.
+    */
+  @JSName("on")
+  def on_serialportrevoked(
+    event: `serial-port-revoked`,
+    listener: js.Function2[/* event */ Event, /* details */ SerialPortRevokedDetails, Unit]
   ): this.type = js.native
   /**
     * Emitted when a hunspell dictionary file starts downloading
@@ -509,6 +574,40 @@ trait Session_ extends EventEmitter {
   def on_spellcheckdictionaryinitialized(
     event: `spellcheck-dictionary-initialized`,
     listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted after `navigator.usb.requestDevice` has been called and
+    * `select-usb-device` has fired if a new device becomes available before the
+    * callback from `select-usb-device` is called.  This event is intended for use
+    * when using a UI to ask users to pick a device so that the UI can be updated with
+    * the newly added device.
+    */
+  @JSName("on")
+  def on_usbdeviceadded(
+    event: `usb-device-added`,
+    listener: js.Function2[/* event */ Event, /* details */ UsbDeviceAddedDetails, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted after `navigator.usb.requestDevice` has been called and
+    * `select-usb-device` has fired if a device has been removed before the callback
+    * from `select-usb-device` is called.  This event is intended for use when using a
+    * UI to ask users to pick a device so that the UI can be updated to remove the
+    * specified device.
+    */
+  @JSName("on")
+  def on_usbdeviceremoved(
+    event: `usb-device-removed`,
+    listener: js.Function2[/* event */ Event, /* details */ UsbDeviceRemovedDetails, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted after `USBDevice.forget()` has been called.  This event can be used to
+    * help maintain persistent storage of permissions when
+    * `setDevicePermissionHandler` is used.
+    */
+  @JSName("on")
+  def on_usbdevicerevoked(
+    event: `usb-device-revoked`,
+    listener: js.Function2[/* event */ Event, /* details */ UsbDeviceRevokedDetails, Unit]
   ): this.type = js.native
   /**
     * Emitted when Electron is about to download `item` in `webContents`.
@@ -579,6 +678,16 @@ trait Session_ extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
+  def once_selectusbdevice(
+    event: `select-usb-device`,
+    listener: js.Function3[
+      /* event */ Event, 
+      /* details */ SelectUsbDeviceDetails, 
+      /* callback */ js.Function1[/* deviceId */ js.UndefOr[String], Unit], 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
   def once_serialportadded(
     event: `serial-port-added`,
     listener: js.Function3[/* event */ Event, /* port */ SerialPort, /* webContents */ WebContents_, Unit]
@@ -587,6 +696,11 @@ trait Session_ extends EventEmitter {
   def once_serialportremoved(
     event: `serial-port-removed`,
     listener: js.Function3[/* event */ Event, /* port */ SerialPort, /* webContents */ WebContents_, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_serialportrevoked(
+    event: `serial-port-revoked`,
+    listener: js.Function2[/* event */ Event, /* details */ SerialPortRevokedDetails, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_spellcheckdictionarydownloadbegin(
@@ -607,6 +721,21 @@ trait Session_ extends EventEmitter {
   def once_spellcheckdictionaryinitialized(
     event: `spellcheck-dictionary-initialized`,
     listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_usbdeviceadded(
+    event: `usb-device-added`,
+    listener: js.Function2[/* event */ Event, /* details */ UsbDeviceAddedDetails, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_usbdeviceremoved(
+    event: `usb-device-removed`,
+    listener: js.Function2[/* event */ Event, /* details */ UsbDeviceRemovedDetails, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_usbdevicerevoked(
+    event: `usb-device-revoked`,
+    listener: js.Function2[/* event */ Event, /* details */ UsbDeviceRevokedDetails, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_willdownload(
@@ -690,6 +819,16 @@ trait Session_ extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
+  def removeListener_selectusbdevice(
+    event: `select-usb-device`,
+    listener: js.Function3[
+      /* event */ Event, 
+      /* details */ SelectUsbDeviceDetails, 
+      /* callback */ js.Function1[/* deviceId */ js.UndefOr[String], Unit], 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("removeListener")
   def removeListener_serialportadded(
     event: `serial-port-added`,
     listener: js.Function3[/* event */ Event, /* port */ SerialPort, /* webContents */ WebContents_, Unit]
@@ -698,6 +837,11 @@ trait Session_ extends EventEmitter {
   def removeListener_serialportremoved(
     event: `serial-port-removed`,
     listener: js.Function3[/* event */ Event, /* port */ SerialPort, /* webContents */ WebContents_, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_serialportrevoked(
+    event: `serial-port-revoked`,
+    listener: js.Function2[/* event */ Event, /* details */ SerialPortRevokedDetails, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_spellcheckdictionarydownloadbegin(
@@ -720,6 +864,21 @@ trait Session_ extends EventEmitter {
     listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
   ): this.type = js.native
   @JSName("removeListener")
+  def removeListener_usbdeviceadded(
+    event: `usb-device-added`,
+    listener: js.Function2[/* event */ Event, /* details */ UsbDeviceAddedDetails, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_usbdeviceremoved(
+    event: `usb-device-removed`,
+    listener: js.Function2[/* event */ Event, /* details */ UsbDeviceRemovedDetails, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_usbdevicerevoked(
+    event: `usb-device-revoked`,
+    listener: js.Function2[/* event */ Event, /* details */ UsbDeviceRevokedDetails, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
   def removeListener_willdownload(
     event: `will-download`,
     listener: js.Function3[/* event */ Event, /* item */ DownloadItem, /* webContents */ WebContents_, Unit]
@@ -733,6 +892,12 @@ trait Session_ extends EventEmitter {
     * dictionary as well
     */
   def removeWordFromSpellCheckerDictionary(word: String): Boolean = js.native
+  
+  /**
+    * Resolves with the resolved IP addresses for the `host`.
+    */
+  def resolveHost(host: String): js.Promise[ResolvedHost] = js.native
+  def resolveHost(host: String, options: ResolveHostOptions): js.Promise[ResolvedHost] = js.native
   
   /**
     * Resolves with the proxy information for `url`.
@@ -813,6 +978,25 @@ trait Session_ extends EventEmitter {
   def setDevicePermissionHandler(handler: js.Function1[/* details */ DevicePermissionHandlerHandlerDetails, Boolean]): Unit = js.native
   
   /**
+    * This handler will be called when web content requests access to display media
+    * via the `navigator.mediaDevices.getDisplayMedia` API. Use the desktopCapturer
+    * API to choose which stream(s) to grant access to.
+    *
+    * Passing a WebFrameMain object as a video or audio stream will capture the video
+    * or audio stream from that frame.
+    *
+    * Passing `null` instead of a function resets the handler to its default state.
+    */
+  def setDisplayMediaRequestHandler(): Unit = js.native
+  def setDisplayMediaRequestHandler(
+    handler: js.Function2[
+      /* request */ DisplayMediaRequestHandlerHandlerRequest, 
+      /* callback */ js.Function1[/* streams */ Streams, Unit], 
+      Unit
+    ]
+  ): Unit = js.native
+  
+  /**
     * Sets download saving directory. By default, the download directory will be the
     * `Downloads` under the respective app folder.
     */
@@ -849,7 +1033,7 @@ trait Session_ extends EventEmitter {
   def setPermissionRequestHandler(
     handler: js.Function4[
       /* webContents */ WebContents_, 
-      /* permission */ `clipboard-read` | media | `display-capture` | mediaKeySystem | geolocation | notifications | midi | midiSysex | pointerLock | fullscreen | openExternal | unknown_, 
+      /* permission */ `clipboard-read` | `clipboard-sanitized-write` | media | `display-capture` | mediaKeySystem | geolocation | notifications | midi | midiSysex | pointerLock | fullscreen | openExternal | `window-management` | unknown_, 
       /* callback */ js.Function1[/* permissionGranted */ Boolean, Unit], 
       /* details */ PermissionRequestHandlerHandlerDetails, 
       Unit

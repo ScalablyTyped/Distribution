@@ -12,16 +12,16 @@ trait AccessToken
   extends StObject
      with AccessTokenOptions {
   
-  /**
-    * Adds a grant for a respective Twilio service to the access token
-    * @param grant The grant to add
-    */
+  var accountSid: String = js.native
+  
   def addGrant[T /* <: Grant[Any, Any, Any] */](grant: T): Unit = js.native
   
-  /**
-    * Turns the access token instance into a JWT that can be used in the front-end
-    * @param algorithm The algorithm to sign the JWT
-    */
+  var grants: js.Array[Grant[Any, Any, Any]] = js.native
+  
+  var keySid: String = js.native
+  
+  var secret: String = js.native
+  
   def toJwt(): String = js.native
   def toJwt(algorithm: HS256 | HS384 | HS512): String = js.native
   

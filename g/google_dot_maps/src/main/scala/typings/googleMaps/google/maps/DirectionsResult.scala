@@ -4,16 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The directions response retrieved from the directions server. You can
-  * render these using a {@link google.maps.DirectionsRenderer} or parse this
-  * object and render it yourself. You must display the warnings and copyrights
-  * as noted in the <a
-  * href="https://cloud.google.com/maps-platform/terms">Google Maps Platform
-  * Terms of Service</a>. Note that though this result is
-  * &quot;JSON-like,&quot; it is not strictly JSON, as it indirectly includes
-  * <code>LatLng</code> objects.
-  */
 trait DirectionsResult extends StObject {
   
   /**

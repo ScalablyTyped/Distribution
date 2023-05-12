@@ -163,7 +163,7 @@ object libTestSuiteMod {
     var nonCommentArg_ : Any = js.native
     
     /* CompleteClass */
-    override def removeTime(dt: Any): js.Date = js.native
+    override def removeTime(dt: js.Date): js.Date = js.native
     
     /* CompleteClass */
     override def setUp(): Unit = js.native
@@ -289,7 +289,7 @@ object libTestSuiteMod {
     
     /* private */ var nonCommentArg_ : Any
     
-    def removeTime(dt: Any): js.Date
+    def removeTime(dt: js.Date): js.Date
     
     def setUp(): Unit
     
@@ -356,7 +356,7 @@ object libTestSuiteMod {
       isTestCase: Any => Boolean,
       name: String,
       nonCommentArg_ : Any,
-      removeTime: Any => js.Date,
+      removeTime: js.Date => js.Date,
       setUp: () => Unit,
       sourceEncoding_ : Any,
       tearDown: () => Unit,
@@ -465,7 +465,7 @@ object libTestSuiteMod {
       
       inline def setNonCommentArg_(value: Any): Self = StObject.set(x, "nonCommentArg_", value.asInstanceOf[js.Any])
       
-      inline def setRemoveTime(value: Any => js.Date): Self = StObject.set(x, "removeTime", js.Any.fromFunction1(value))
+      inline def setRemoveTime(value: js.Date => js.Date): Self = StObject.set(x, "removeTime", js.Any.fromFunction1(value))
       
       inline def setSetUp(value: () => Unit): Self = StObject.set(x, "setUp", js.Any.fromFunction0(value))
       

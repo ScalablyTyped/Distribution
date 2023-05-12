@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CreateUserResponse extends StObject {
   
+  /**
+    * The user on the Amazon Chime account.
+    */
   var User: js.UndefOr[typings.awsSdk.clientsChimeMod.User] = js.undefined
 }
 object CreateUserResponse {

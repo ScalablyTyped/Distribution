@@ -25,6 +25,8 @@ object buildSrcExportBatchSpanProcessorBaseMod {
     
     /* private */ var _clearTimer: Any = js.native
     
+    /* private */ var _droppedSpansCount: Any = js.native
+    
     /* private */ val _exportTimeoutMillis: Any = js.native
     
     /* private */ val _exporter: Any = js.native

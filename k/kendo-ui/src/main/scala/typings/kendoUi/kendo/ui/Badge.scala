@@ -17,9 +17,9 @@ trait Badge
   @JSName("options")
   var options_Badge: BadgeOptions = js.native
   
-  def setOptions(options: Any): Unit = js.native
+  def rounded(rounded: String): Unit = js.native
   
-  def shape(shape: String): Unit = js.native
+  def setOptions(options: Any): Unit = js.native
   
   def show(): Unit = js.native
   

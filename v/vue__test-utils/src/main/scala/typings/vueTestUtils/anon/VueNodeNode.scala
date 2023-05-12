@@ -12,6 +12,12 @@ import typings.std.Node
 import typings.std.NodeListOf
 import typings.std.ParentNode
 import typings.vueRuntimeCore.mod.ComponentInternalInstance
+import typings.vueTestUtils.vueTestUtilsInts.`0x01`
+import typings.vueTestUtils.vueTestUtilsInts.`0x02`
+import typings.vueTestUtils.vueTestUtilsInts.`0x04`
+import typings.vueTestUtils.vueTestUtilsInts.`0x08`
+import typings.vueTestUtils.vueTestUtilsInts.`0x10`
+import typings.vueTestUtils.vueTestUtilsInts.`0x20`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,71 +27,71 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VueNodeNode extends StObject {
   
   /* standard dom */
-  val ATTRIBUTE_NODE: Double = js.native
+  val ATTRIBUTE_NODE: typings.vueTestUtils.vueTestUtilsInts.`2` = js.native
   
   /** node is a CDATASection node. */
   /* standard dom */
-  val CDATA_SECTION_NODE: Double = js.native
+  val CDATA_SECTION_NODE: typings.vueTestUtils.vueTestUtilsInts.`4` = js.native
   
   /** node is a Comment node. */
   /* standard dom */
-  val COMMENT_NODE: Double = js.native
+  val COMMENT_NODE: typings.vueTestUtils.vueTestUtilsInts.`8` = js.native
   
   /** node is a DocumentFragment node. */
   /* standard dom */
-  val DOCUMENT_FRAGMENT_NODE: Double = js.native
+  val DOCUMENT_FRAGMENT_NODE: typings.vueTestUtils.vueTestUtilsInts.`11` = js.native
   
   /** node is a document. */
   /* standard dom */
-  val DOCUMENT_NODE: Double = js.native
+  val DOCUMENT_NODE: typings.vueTestUtils.vueTestUtilsInts.`9` = js.native
   
   /** Set when other is a descendant of node. */
   /* standard dom */
-  val DOCUMENT_POSITION_CONTAINED_BY: Double = js.native
+  val DOCUMENT_POSITION_CONTAINED_BY: `0x10` = js.native
   
   /** Set when other is an ancestor of node. */
   /* standard dom */
-  val DOCUMENT_POSITION_CONTAINS: Double = js.native
+  val DOCUMENT_POSITION_CONTAINS: `0x08` = js.native
   
   /** Set when node and other are not in the same tree. */
   /* standard dom */
-  val DOCUMENT_POSITION_DISCONNECTED: Double = js.native
+  val DOCUMENT_POSITION_DISCONNECTED: `0x01` = js.native
   
   /** Set when other is following node. */
   /* standard dom */
-  val DOCUMENT_POSITION_FOLLOWING: Double = js.native
+  val DOCUMENT_POSITION_FOLLOWING: `0x04` = js.native
   
   /* standard dom */
-  val DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC: Double = js.native
+  val DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC: `0x20` = js.native
   
   /** Set when other is preceding node. */
   /* standard dom */
-  val DOCUMENT_POSITION_PRECEDING: Double = js.native
+  val DOCUMENT_POSITION_PRECEDING: `0x02` = js.native
   
   /** node is a doctype. */
   /* standard dom */
-  val DOCUMENT_TYPE_NODE: Double = js.native
+  val DOCUMENT_TYPE_NODE: typings.vueTestUtils.vueTestUtilsInts.`10` = js.native
   
   /** node is an element. */
   /* standard dom */
-  val ELEMENT_NODE: Double = js.native
+  val ELEMENT_NODE: typings.vueTestUtils.vueTestUtilsInts.`1` = js.native
   
   /* standard dom */
-  val ENTITY_NODE: Double = js.native
+  val ENTITY_NODE: typings.vueTestUtils.vueTestUtilsInts.`6` = js.native
   
   /* standard dom */
-  val ENTITY_REFERENCE_NODE: Double = js.native
+  val ENTITY_REFERENCE_NODE: typings.vueTestUtils.vueTestUtilsInts.`5` = js.native
   
   /* standard dom */
-  val NOTATION_NODE: Double = js.native
+  val NOTATION_NODE: typings.vueTestUtils.vueTestUtilsInts.`12` = js.native
   
   /** node is a ProcessingInstruction node. */
   /* standard dom */
-  val PROCESSING_INSTRUCTION_NODE: Double = js.native
+  val PROCESSING_INSTRUCTION_NODE: typings.vueTestUtils.vueTestUtilsInts.`7` = js.native
   
   /** node is a Text node. */
   /* standard dom */
-  val TEXT_NODE: Double = js.native
+  val TEXT_NODE: typings.vueTestUtils.vueTestUtilsInts.`3` = js.native
   
   var __vueParentComponent: js.UndefOr[ComponentInternalInstance] = js.native
   

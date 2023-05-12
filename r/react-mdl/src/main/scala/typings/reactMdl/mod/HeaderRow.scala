@@ -10,7 +10,7 @@ open class HeaderRow protected () extends _MDLComponent[HeaderRowProps] {
   def this(props: HeaderRowProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: HeaderRowProps, context: Any) = this()
 }

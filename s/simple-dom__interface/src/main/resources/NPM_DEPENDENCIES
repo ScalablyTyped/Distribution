@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@simple-dom/interface" : "1.4.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@simple-dom/interface" : "1.4.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -12,7 +12,7 @@ open class ChartLabel[T] protected ()
   def this(props: ChartLabelProps & T) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: ChartLabelProps & T, context: Any) = this()
 }

@@ -1,14 +1,17 @@
 package typings.fhir.r5Mod
 
+import typings.fhir.fhirStrings.`type`
 import typings.fhir.fhirStrings.composite
 import typings.fhir.fhirStrings.date
 import typings.fhir.fhirStrings.in
+import typings.fhir.fhirStrings.instance
 import typings.fhir.fhirStrings.number
 import typings.fhir.fhirStrings.out
 import typings.fhir.fhirStrings.quantity_
 import typings.fhir.fhirStrings.reference
 import typings.fhir.fhirStrings.special
 import typings.fhir.fhirStrings.string
+import typings.fhir.fhirStrings.system
 import typings.fhir.fhirStrings.token
 import typings.fhir.fhirStrings.uri
 import org.scalablytyped.runtime.StObject
@@ -19,11 +22,15 @@ trait OperationDefinitionParameter
   extends StObject
      with BackboneElement {
   
+  var _allowedType: js.UndefOr[js.Array[Element]] = js.undefined
+  
   var _documentation: js.UndefOr[Element] = js.undefined
   
   var _max: js.UndefOr[Element] = js.undefined
   
   var _name: js.UndefOr[Element] = js.undefined
+  
+  var _scope: js.UndefOr[js.Array[Element]] = js.undefined
   
   var _searchType: js.UndefOr[Element] = js.undefined
   
@@ -32,6 +39,11 @@ trait OperationDefinitionParameter
   var _type: js.UndefOr[Element] = js.undefined
   
   var _use: js.UndefOr[Element] = js.undefined
+  
+  /**
+    * In previous versions of FHIR, there was an extension for this: http://hl7.org/fhir/StructureDefinition/operationdefinition-allowed-type
+    */
+  var allowedType: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Binds to a value set if this parameter is coded (code, Coding, CodeableConcept).
@@ -69,7 +81,12 @@ trait OperationDefinitionParameter
   var referencedFrom: js.UndefOr[js.Array[OperationDefinitionParameterReferencedFrom]] = js.undefined
   
   /**
-    * How the parameter is understood as a search parameter. This is only used if the parameter type is 'string'.
+    * If present, indicates that the parameter applies when the operation is being invoked at the specified level.
+    */
+  var scope: js.UndefOr[js.Array[instance | `type` | system]] = js.undefined
+  
+  /**
+    * Parameters that are search parameter usually - but not always - are also defined for use with general searches, and function in the operation to filter the set of resources in scope for the operation just like the do when searching. The searchType describes how the server processes the value. For an example, see the [Evaluate Measure Operation](measure-operation-evaluate-measure.html)
     */
   var searchType: js.UndefOr[
     number | date | string | token | reference | composite | quantity_ | uri | special
@@ -81,7 +98,7 @@ trait OperationDefinitionParameter
   var targetProfile: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * if there is no stated parameter, then the parameter is a multi-part parameter; type and must have at least one part defined.
+    * if there is no stated parameter, then the parameter is a multi-part parameter type and must have at least one part defined.
     */
   var `type`: js.UndefOr[String] = js.undefined
   
@@ -99,6 +116,12 @@ object OperationDefinitionParameter {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: OperationDefinitionParameter] (val x: Self) extends AnyVal {
+    
+    inline def setAllowedType(value: js.Array[String]): Self = StObject.set(x, "allowedType", value.asInstanceOf[js.Any])
+    
+    inline def setAllowedTypeUndefined: Self = StObject.set(x, "allowedType", js.undefined)
+    
+    inline def setAllowedTypeVarargs(value: String*): Self = StObject.set(x, "allowedType", js.Array(value*))
     
     inline def setBinding(value: OperationDefinitionParameterBinding): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
     
@@ -126,6 +149,12 @@ object OperationDefinitionParameter {
     
     inline def setReferencedFromVarargs(value: OperationDefinitionParameterReferencedFrom*): Self = StObject.set(x, "referencedFrom", js.Array(value*))
     
+    inline def setScope(value: js.Array[instance | `type` | system]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    
+    inline def setScopeVarargs(value: (instance | `type` | system)*): Self = StObject.set(x, "scope", js.Array(value*))
+    
     inline def setSearchType(value: number | date | string | token | reference | composite | quantity_ | uri | special): Self = StObject.set(x, "searchType", value.asInstanceOf[js.Any])
     
     inline def setSearchTypeUndefined: Self = StObject.set(x, "searchType", js.undefined)
@@ -142,6 +171,12 @@ object OperationDefinitionParameter {
     
     inline def setUse(value: in | out): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
     
+    inline def set_allowedType(value: js.Array[Element]): Self = StObject.set(x, "_allowedType", value.asInstanceOf[js.Any])
+    
+    inline def set_allowedTypeUndefined: Self = StObject.set(x, "_allowedType", js.undefined)
+    
+    inline def set_allowedTypeVarargs(value: Element*): Self = StObject.set(x, "_allowedType", js.Array(value*))
+    
     inline def set_documentation(value: Element): Self = StObject.set(x, "_documentation", value.asInstanceOf[js.Any])
     
     inline def set_documentationUndefined: Self = StObject.set(x, "_documentation", js.undefined)
@@ -153,6 +188,12 @@ object OperationDefinitionParameter {
     inline def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
     inline def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
+    
+    inline def set_scope(value: js.Array[Element]): Self = StObject.set(x, "_scope", value.asInstanceOf[js.Any])
+    
+    inline def set_scopeUndefined: Self = StObject.set(x, "_scope", js.undefined)
+    
+    inline def set_scopeVarargs(value: Element*): Self = StObject.set(x, "_scope", js.Array(value*))
     
     inline def set_searchType(value: Element): Self = StObject.set(x, "_searchType", value.asInstanceOf[js.Any])
     

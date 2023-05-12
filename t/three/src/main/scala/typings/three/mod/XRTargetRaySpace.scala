@@ -6,5 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "XRTargetRaySpace")
 @js.native
+/**
+  * Creates a new {@link Bone}.
+  */
 open class XRTargetRaySpace ()
   extends typings.three.srcThreeMod.XRTargetRaySpace

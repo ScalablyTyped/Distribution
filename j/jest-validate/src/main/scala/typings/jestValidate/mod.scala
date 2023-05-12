@@ -5,7 +5,6 @@ import typings.jestValidate.anon.DeprecationEntries
 import typings.jestValidate.anon.HasDeprecationWarnings
 import typings.std.Error
 import typings.std.Record
-import typings.yargs.mod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,8 +46,21 @@ object mod {
   inline def validate(config: Record[String, Any], options: ValidationOptions): HasDeprecationWarnings = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(config.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HasDeprecationWarnings]
   
   inline def validateCLIOptions(argv: Argv): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validateCLIOptions")(argv.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def validateCLIOptions(argv: Argv, options: (Record[String, Options]) & DeprecationEntries): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateCLIOptions")(argv.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def validateCLIOptions(argv: Argv, options: (Record[String, Options]) & DeprecationEntries, rawArgv: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateCLIOptions")(argv.asInstanceOf[js.Any], options.asInstanceOf[js.Any], rawArgv.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def validateCLIOptions(
+    argv: Argv,
+    options: (Record[
+      String, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Options */ Any
+    ]) & DeprecationEntries
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateCLIOptions")(argv.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def validateCLIOptions(
+    argv: Argv,
+    options: (Record[
+      String, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Options */ Any
+    ]) & DeprecationEntries,
+    rawArgv: js.Array[String]
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateCLIOptions")(argv.asInstanceOf[js.Any], options.asInstanceOf[js.Any], rawArgv.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def validateCLIOptions(argv: Argv, options: Unit, rawArgv: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateCLIOptions")(argv.asInstanceOf[js.Any], options.asInstanceOf[js.Any], rawArgv.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   type DeprecatedOptionFunc = js.Function1[/* arg */ Record[String, Any], String]

@@ -26,7 +26,7 @@ type AdditionalPlanOptionsMap = StringDictionary[GenericString]
   - typings.awsSdk.awsSdkStrings.last_
   - typings.awsSdk.awsSdkStrings.kurtosis
   - typings.awsSdk.awsSdkStrings.max_
-  - typings.awsSdk.awsSdkStrings.min
+  - typings.awsSdk.awsSdkStrings.min_
   - typings.awsSdk.awsSdkStrings.skewness
   - typings.awsSdk.awsSdkStrings.stddev_samp
   - typings.awsSdk.awsSdkStrings.stddev_pop
@@ -39,6 +39,8 @@ type AdditionalPlanOptionsMap = StringDictionary[GenericString]
 type AggFunction = _AggFunction | String
 
 type AggregateOperations = js.Array[AggregateOperation]
+
+type AmazonRedshiftAdvancedOptions = js.Array[AmazonRedshiftAdvancedOption]
 
 type AttemptCount = scala.Double
 
@@ -378,6 +380,22 @@ type CustomEntityTypes = js.Array[CustomEntityType]
 
 type CustomPatterns = String
 
+type DQDLString = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Immediate_
+  - typings.awsSdk.awsSdkStrings.AfterDataLoad
+  - java.lang.String
+*/
+type DQStopJobOnFailureTiming = _DQStopJobOnFailureTiming | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PrimaryInput
+  - typings.awsSdk.awsSdkStrings.EvaluationResults
+  - java.lang.String
+*/
+type DQTransformOutput = _DQTransformOutput | String
+
 type DagEdges = js.Array[CodeGenEdge]
 
 type DagNodes = js.Array[CodeGenNode]
@@ -392,6 +410,32 @@ type DataFormat = _DataFormat | String
 
 type DataLakePrincipalString = String
 
+type DataQualityResultDescriptionList = js.Array[DataQualityResultDescription]
+
+type DataQualityResultIdList = js.Array[HashString]
+
+type DataQualityResultIds = js.Array[HashString]
+
+type DataQualityResultsList = js.Array[DataQualityResult]
+
+type DataQualityRuleRecommendationRunList = js.Array[DataQualityRuleRecommendationRunDescription]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PASS
+  - typings.awsSdk.awsSdkStrings.FAIL
+  - typings.awsSdk.awsSdkStrings.ERROR
+  - java.lang.String
+*/
+type DataQualityRuleResultStatus = _DataQualityRuleResultStatus | String
+
+type DataQualityRuleResults = js.Array[DataQualityRuleResult]
+
+type DataQualityRulesetEvaluationRunList = js.Array[DataQualityRulesetEvaluationRunDescription]
+
+type DataQualityRulesetList = js.Array[DataQualityRulesetListDetails]
+
+type DataQualityRulesetString = String
+
 type DatabaseList = js.Array[Database]
 
 type DatabaseName = String
@@ -405,6 +449,13 @@ type DatabaseName = String
 type DeleteBehavior = _DeleteBehavior | String
 
 type DeleteConnectionNameList = js.Array[NameString]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.uncompressed_
+  - typings.awsSdk.awsSdkStrings.snappy__
+  - java.lang.String
+*/
+type DeltaTargetCompressionType = _DeltaTargetCompressionType | String
 
 type DeltaTargetList = js.Array[DeltaTarget]
 
@@ -425,6 +476,8 @@ type DoubleValue = scala.Double
 type DynamoDBTargetList = js.Array[DynamoDBTarget]
 
 type EdgeList = js.Array[Edge]
+
+type EnableAdditionalMetadata = js.Array[JdbcMetadataEntry]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TRUE
@@ -469,6 +522,8 @@ type ExecutionTime = scala.Double
 type ExistCondition = _ExistCondition | String
 
 type ExtendedString = String
+
+type FederationIdentifier = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CRAWL_ID
@@ -568,6 +623,8 @@ type GlueStudioPathList = js.Array[EnclosedInStringProperties]
 
 type GlueStudioSchemaColumnList = js.Array[GlueStudioSchemaColumn]
 
+type GlueTableAdditionalOptions = StringDictionary[DescriptionString]
+
 type GlueTables = js.Array[GlueTable]
 
 type GlueVersionString = String
@@ -575,6 +632,15 @@ type GlueVersionString = String
 type GrokPattern = String
 
 type HashString = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.gzip__
+  - typings.awsSdk.awsSdkStrings.lzo_
+  - typings.awsSdk.awsSdkStrings.uncompressed_
+  - typings.awsSdk.awsSdkStrings.snappy__
+  - java.lang.String
+*/
+type HudiTargetCompressionType = _HudiTargetCompressionType | String
 
 type IdString = String
 
@@ -585,6 +651,16 @@ type IntegerFlag = scala.Double
 type IntegerValue = scala.Double
 
 type IsVersionValid = scala.Boolean
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.sqlserver__
+  - typings.awsSdk.awsSdkStrings.mysql__
+  - typings.awsSdk.awsSdkStrings.oracle__
+  - typings.awsSdk.awsSdkStrings.postgresql__
+  - typings.awsSdk.awsSdkStrings.redshift__
+  - java.lang.String
+*/
+type JDBCConnectionType = _JDBCConnectionType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ARRAY
@@ -631,6 +707,13 @@ type IsVersionValid = scala.Boolean
 type JDBCDataType = _JDBCDataType | String
 
 type JDBCDataTypeMapping = StringDictionary[GlueRecordType]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.COMMENTS
+  - typings.awsSdk.awsSdkStrings.RAWTYPES
+  - java.lang.String
+*/
+type JdbcMetadataEntry = _JdbcMetadataEntry | String
 
 type JdbcTargetList = js.Array[JdbcTarget]
 
@@ -815,6 +898,8 @@ type NullableInteger = scala.Double
 
 type OneInput = js.Array[NodeId]
 
+type OptionList = js.Array[Option]
+
 type OrchestrationArgumentsMap = StringDictionary[OrchestrationArgumentsValue]
 
 type OrchestrationArgumentsValue = String
@@ -840,6 +925,18 @@ type OtherMetadataValueList = js.Array[OtherMetadataValueListItem]
 type PageSize = scala.Double
 
 type PaginationToken = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.str
+  - typings.awsSdk.awsSdkStrings.int_
+  - typings.awsSdk.awsSdkStrings.float_
+  - typings.awsSdk.awsSdkStrings.complex
+  - typings.awsSdk.awsSdkStrings.bool
+  - typings.awsSdk.awsSdkStrings.list__
+  - typings.awsSdk.awsSdkStrings.null_
+  - java.lang.String
+*/
+type ParamType = _ParamType | String
 
 type ParametersMap = StringDictionary[ParametersMapValue]
 
@@ -975,6 +1072,7 @@ type ReplaceBoolean = scala.Boolean
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FOREIGN
   - typings.awsSdk.awsSdkStrings.ALL
+  - typings.awsSdk.awsSdkStrings.FEDERATED
   - java.lang.String
 */
 type ResourceShareType = _ResourceShareType | String
@@ -996,6 +1094,8 @@ type RoleArn = String
 type RoleString = String
 
 type RowTag = String
+
+type RulesetNames = js.Array[NameString]
 
 type RunId = String
 
@@ -1071,7 +1171,7 @@ type SecurityConfigurationList = js.Array[SecurityConfiguration]
 type SecurityGroupIdList = js.Array[NameString]
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.comma
+  - typings.awsSdk.awsSdkStrings.comma_
   - typings.awsSdk.awsSdkStrings.ctrla
   - typings.awsSdk.awsSdkStrings.pipe_
   - typings.awsSdk.awsSdkStrings.semicolon
@@ -1178,6 +1278,8 @@ type TagsMap = StringDictionary[TagValue]
   - typings.awsSdk.awsSdkStrings.avro_
   - typings.awsSdk.awsSdkStrings.orc_
   - typings.awsSdk.awsSdkStrings.parquet__
+  - typings.awsSdk.awsSdkStrings.hudi
+  - typings.awsSdk.awsSdkStrings.delta
   - java.lang.String
 */
 type TargetFormat = _TargetFormat | String
@@ -1227,6 +1329,8 @@ type Topk = scala.Double
 type TotalSegmentsInteger = scala.Double
 
 type TransactionIdString = String
+
+type TransformConfigParameterList = js.Array[TransformConfigParameter]
 
 type TransformIdList = js.Array[HashString]
 
@@ -1336,6 +1440,8 @@ type ViewTextString = String
   - typings.awsSdk.awsSdkStrings.GDot1X
   - typings.awsSdk.awsSdkStrings.GDot2X
   - typings.awsSdk.awsSdkStrings.GDot025X
+  - typings.awsSdk.awsSdkStrings.GDot4X
+  - typings.awsSdk.awsSdkStrings.GDot8X
   - java.lang.String
 */
 type WorkerType = _WorkerType | String

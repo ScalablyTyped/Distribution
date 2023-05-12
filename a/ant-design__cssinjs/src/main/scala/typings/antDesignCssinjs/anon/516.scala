@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.WebkitMaskImage
+import typings.csstype.mod.Property.WebkitLineClamp
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `516` extends StObject {
   
   var value: js.UndefOr[
-    WebkitMaskImage | (js.Array[
+    WebkitLineClamp | (js.Array[
       (Extract[
-        js.UndefOr[WebkitMaskImage | js.Array[NonNullable[js.UndefOr[WebkitMaskImage]]]], 
+        js.UndefOr[WebkitLineClamp | js.Array[NonNullable[js.UndefOr[WebkitLineClamp]]]], 
         String
-      ]) | NonNullable[js.UndefOr[WebkitMaskImage]]
+      ]) | NonNullable[js.UndefOr[WebkitLineClamp]]
     ])
   ] = js.native
 }

@@ -11,6 +11,9 @@ object sapUiCoreRoutingRouterHashChangerMod {
   
   @JSImport("sap/ui/core/routing/RouterHashChanger", JSImport.Default)
   @js.native
+  /**
+    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    */
   open class default () extends RouterHashChanger
   /* static members */
   object default {
@@ -20,6 +23,8 @@ object sapUiCoreRoutingRouterHashChangerMod {
     val ^ : js.Any = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Creates a new subclass of class sap.ui.core.routing.RouterHashChanger with name `sClassName` and enriches
       * it with the information contained in `oClassInfo`.
       *
@@ -73,6 +78,8 @@ object sapUiCoreRoutingRouterHashChangerMod {
     ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any], FNMetaImpl.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns a metadata object for class sap.ui.core.routing.RouterHashChanger.
       *
       * @returns Metadata object describing this class
@@ -85,6 +92,8 @@ object sapUiCoreRoutingRouterHashChangerMod {
     extends typings.openui5.sapUiCoreRoutingHashChangerBaseMod.default {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Save the given hash and potentially fires a "hashChanged" event; may be extended to modify the hash before
       * firing the event.
       */
@@ -105,6 +114,8 @@ object sapUiCoreRoutingRouterHashChangerMod {
     ): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Gets the current hash
       *
       * @returns the current hash
@@ -229,6 +240,8 @@ object sapUiCoreRoutingRouterHashChangerMod {
     ): js.UndefOr[js.Promise[Any]] = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Reset the hash if the given router is the active router that is saved in this RouterHashChanger
       *
       * This is needed for allowing to fire the hashChanged event with the previous hash again after displaying

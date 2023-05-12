@@ -48,6 +48,11 @@ object formTokenFieldMod {
       var isBorderless: js.UndefOr[Boolean] = js.undefined
       
       /**
+        * The label for the control.
+        */
+      var label: js.UndefOr[String] = js.undefined
+      
+      /**
         * If passed, `TokenField` will disable ability to add new tokens once
         * number of tokens is greater than or equal to `maxLength`.
         */
@@ -125,6 +130,10 @@ object formTokenFieldMod {
         inline def setIsBorderless(value: Boolean): Self = StObject.set(x, "isBorderless", value.asInstanceOf[js.Any])
         
         inline def setIsBorderlessUndefined: Self = StObject.set(x, "isBorderless", js.undefined)
+        
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        
+        inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
         
         inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
         

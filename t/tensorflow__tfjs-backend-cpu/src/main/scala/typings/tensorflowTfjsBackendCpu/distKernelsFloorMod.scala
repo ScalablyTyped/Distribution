@@ -19,5 +19,5 @@ object distKernelsFloorMod {
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Floor", "floorImpl")
   @js.native
-  val floorImpl: SimpleUnaryImpl = js.native
+  val floorImpl: SimpleUnaryImpl[Double, Double] = js.native
 }

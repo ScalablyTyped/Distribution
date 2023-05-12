@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MaskClip
+import typings.csstype.mod.Property.GridGap
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `525` extends StObject {
   
   var value: js.UndefOr[
-    MaskClip | (js.Array[
-      (Extract[js.UndefOr[MaskClip | js.Array[NonNullable[js.UndefOr[MaskClip]]]], String]) | NonNullable[js.UndefOr[MaskClip]]
+    (GridGap[Double | String]) | (js.Array[
+      (Extract[
+        js.UndefOr[
+          (GridGap[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridGap[Double | String]]]])
+        ], 
+        String
+      ]) | (NonNullable[js.UndefOr[GridGap[Double | String]]])
     ])
   ] = js.native
 }

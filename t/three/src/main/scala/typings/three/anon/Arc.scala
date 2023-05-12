@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Arc extends StObject {
   
-  var arc: Double
+  val arc: Double
   
-  var radialSegments: Double
+  val radialSegments: Double
   
-  var radius: Double
+  val radius: Double
   
-  var tube: Double
+  val tube: Double
   
-  var tubularSegments: Double
+  val tubularSegments: Double
 }
 object Arc {
   

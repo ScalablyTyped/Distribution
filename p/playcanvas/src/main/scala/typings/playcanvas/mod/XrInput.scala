@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('./xr-manager.js').XrManager} XrManager */
 /**
   * Provides access to input sources for WebXR.
   *
@@ -16,7 +15,7 @@ open class XrInput protected () extends EventHandler {
   /**
     * Create a new XrInput instance.
     *
-    * @param {XrManager} manager - WebXR Manager.
+    * @param {import('./xr-manager.js').XrManager} manager - WebXR Manager.
     * @hideconstructor
     */
   def this(manager: XrManager) = this()
@@ -84,7 +83,7 @@ open class XrInput protected () extends EventHandler {
     * @param {XrInputSource} inputSource - Input source that triggered select event.
     * @param {object} evt - XRInputSourceEvent event data from WebXR API.
     * @example
-    * var ray = new pc.Ray();
+    * const ray = new pc.Ray();
     * app.xr.input.on('select', function (inputSource, evt) {
     *     ray.set(inputSource.getOrigin(), inputSource.getDirection());
     *     if (obj.intersectsRay(ray)) {
@@ -151,7 +150,7 @@ open class XrInput protected () extends EventHandler {
   def inputSources: js.Array[XrInputSource] = js.native
   
   /**
-    * @type {XrManager}
+    * @type {import('./xr-manager.js').XrManager}
     * @private
     */
   /* private */ var manager: Any = js.native

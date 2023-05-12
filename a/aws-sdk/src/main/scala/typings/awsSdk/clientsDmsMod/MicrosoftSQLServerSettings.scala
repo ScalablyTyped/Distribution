@@ -22,6 +22,11 @@ trait MicrosoftSQLServerSettings extends StObject {
   var DatabaseName: js.UndefOr[String] = js.undefined
   
   /**
+    * Forces LOB lookup on inline LOB.
+    */
+  var ForceLobLookup: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
     * Endpoint connection password.
     */
   var Password: js.UndefOr[SecretString] = js.undefined
@@ -57,9 +62,14 @@ trait MicrosoftSQLServerSettings extends StObject {
   var SecretsManagerSecretId: js.UndefOr[String] = js.undefined
   
   /**
-    * Fully qualified domain name of the endpoint.
+    * Fully qualified domain name of the endpoint. For an Amazon RDS SQL Server instance, this is the output of DescribeDBInstances, in the  Endpoint.Address field.
     */
   var ServerName: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Indicates the mode used to fetch CDC data.
+    */
+  var TlogAccessMode: js.UndefOr[typings.awsSdk.clientsDmsMod.TlogAccessMode] = js.undefined
   
   /**
     * Use the TrimSpaceInChar source endpoint setting to trim data on CHAR and NCHAR data types during migration. The default value is true.
@@ -103,6 +113,10 @@ object MicrosoftSQLServerSettings {
     
     inline def setDatabaseNameUndefined: Self = StObject.set(x, "DatabaseName", js.undefined)
     
+    inline def setForceLobLookup(value: BooleanOptional): Self = StObject.set(x, "ForceLobLookup", value.asInstanceOf[js.Any])
+    
+    inline def setForceLobLookupUndefined: Self = StObject.set(x, "ForceLobLookup", js.undefined)
+    
     inline def setPassword(value: SecretString): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
     inline def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
@@ -134,6 +148,10 @@ object MicrosoftSQLServerSettings {
     inline def setServerName(value: String): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
     
     inline def setServerNameUndefined: Self = StObject.set(x, "ServerName", js.undefined)
+    
+    inline def setTlogAccessMode(value: TlogAccessMode): Self = StObject.set(x, "TlogAccessMode", value.asInstanceOf[js.Any])
+    
+    inline def setTlogAccessModeUndefined: Self = StObject.set(x, "TlogAccessMode", js.undefined)
     
     inline def setTrimSpaceInChar(value: BooleanOptional): Self = StObject.set(x, "TrimSpaceInChar", value.asInstanceOf[js.Any])
     

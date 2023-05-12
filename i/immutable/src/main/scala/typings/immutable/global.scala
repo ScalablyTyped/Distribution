@@ -5,6 +5,7 @@ import typings.immutable.mod.Collection
 import typings.immutable.mod.Collection.Indexed
 import typings.immutable.mod.Collection.Keyed
 import typings.immutable.mod.Collection.Set
+import typings.immutable.mod.FromJS_
 import typings.immutable.mod.Record
 import typings.immutable.mod.Record.Factory
 import typings.std.ArrayLike
@@ -521,6 +522,18 @@ object global {
         * Creates a new OrderedSet containing `values`.
         */
       inline def of[T](values: T*): typings.immutable.mod.OrderedSet[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(values.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.immutable.mod.OrderedSet[T]]
+    }
+    
+    @JSGlobal("Immutable.PairSorting")
+    @js.native
+    object PairSorting extends StObject {
+      
+      @JSBracketAccess
+      def apply(value: Double): js.UndefOr[typings.immutable.mod.PairSorting & Double] = js.native
+      
+      /* -1 */ val LeftThenRight: typings.immutable.mod.PairSorting.LeftThenRight & Double = js.native
+      
+      /* +1 */ val RightThenLeft: typings.immutable.mod.PairSorting.RightThenLeft & Double = js.native
     }
     
     /**
@@ -1225,6 +1238,16 @@ object global {
       inline def of[T](values: T*): typings.immutable.mod.Stack[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(values.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.immutable.mod.Stack[T]]
     }
     
+    inline def fromJS(jsValue: Any): Collection[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJS")(jsValue.asInstanceOf[js.Any]).asInstanceOf[Collection[Any, Any]]
+    inline def fromJS(
+      jsValue: Any,
+      reviver: js.Function3[
+          /* key */ String | Double, 
+          /* sequence */ (Keyed[String, Any]) | Indexed[Any], 
+          /* path */ js.UndefOr[js.Array[String | Double]], 
+          Any
+        ]
+    ): Collection[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJS")(jsValue.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[Collection[Any, Any]]
     /**
       * Deeply converts plain JS objects and arrays to Immutable Maps and Lists.
       *
@@ -1295,16 +1318,7 @@ object global {
       * [3]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#the_iterable_protocol
       *      "The iterable protocol"
       */
-    inline def fromJS(jsValue: Any): Collection[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJS")(jsValue.asInstanceOf[js.Any]).asInstanceOf[Collection[Any, Any]]
-    inline def fromJS(
-      jsValue: Any,
-      reviver: js.Function3[
-          /* key */ String | Double, 
-          /* sequence */ (Keyed[String, Any]) | Indexed[Any], 
-          /* path */ js.UndefOr[js.Array[String | Double]], 
-          Any
-        ]
-    ): Collection[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJS")(jsValue.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[Collection[Any, Any]]
+    inline def fromJS[JSValue](jsValue: JSValue, reviver: Unit): FromJS_[JSValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJS")(jsValue.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[FromJS_[JSValue]]
     
     inline def get[V](collection: js.Array[V], key: Double): js.UndefOr[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(collection.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[V]]
     inline def get[V](collection: StringDictionary[V], key: String): js.UndefOr[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(collection.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[V]]
@@ -1768,7 +1782,11 @@ object global {
       value: /* import warning: importer.ImportType#apply Failed type conversion: TProps[K] */ js.Any
     ): C = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(record.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[C]
     
-    inline def update[V](collection: js.Array[V], key: Double, updater: js.Function1[/* value */ V, V]): js.Array[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(collection.asInstanceOf[js.Any], key.asInstanceOf[js.Any], updater.asInstanceOf[js.Any])).asInstanceOf[js.Array[V]]
+    inline def update[V](
+      collection: js.Array[V],
+      key: Double,
+      updater: js.Function1[/* value */ js.UndefOr[V], js.UndefOr[V]]
+    ): js.Array[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(collection.asInstanceOf[js.Any], key.asInstanceOf[js.Any], updater.asInstanceOf[js.Any])).asInstanceOf[js.Array[V]]
     inline def update[V, NSV](
       collection: js.Array[V],
       key: Double,
@@ -1835,7 +1853,7 @@ object global {
       * console.log(originalObject) // { x: 123, y: 456 }
       * ```
       */
-    inline def update_KVC[K, V, C /* <: Collection[K, V] */](collection: C, key: K, updater: js.Function1[/* value */ js.UndefOr[V], V]): C = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(collection.asInstanceOf[js.Any], key.asInstanceOf[js.Any], updater.asInstanceOf[js.Any])).asInstanceOf[C]
+    inline def update_KVC[K, V, C /* <: Collection[K, V] */](collection: C, key: K, updater: js.Function1[/* value */ js.UndefOr[V], js.UndefOr[V]]): C = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(collection.asInstanceOf[js.Any], key.asInstanceOf[js.Any], updater.asInstanceOf[js.Any])).asInstanceOf[C]
     
     inline def update_KVCNSV[K, V, C /* <: Collection[K, V] */, NSV](collection: C, key: K, notSetValue: NSV, updater: js.Function1[/* value */ V | NSV, V]): C = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(collection.asInstanceOf[js.Any], key.asInstanceOf[js.Any], notSetValue.asInstanceOf[js.Any], updater.asInstanceOf[js.Any])).asInstanceOf[C]
     

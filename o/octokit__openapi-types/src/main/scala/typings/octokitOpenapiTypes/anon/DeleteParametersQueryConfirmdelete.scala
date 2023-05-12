@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteParametersQueryConfirmdelete extends StObject {
   
   /**
-    * Deletes a specified code scanning analysis from a repository. For
+    * Delete a code scanning analysis from a repository
+    * @description Deletes a specified code scanning analysis from a repository. For
     * private repositories, you must use an access token with the `repo` scope. For public repositories,
     * you must use an access token with `public_repo` scope.
     * GitHub Apps must have the `security_events` write permission to use this endpoint.
@@ -76,7 +77,8 @@ trait DeleteParametersQueryConfirmdelete extends StObject {
   var delete: ParametersQueryConfirmdelete
   
   /**
-    * Gets a specified code scanning analysis for a repository.
+    * Get a code scanning analysis for a repository
+    * @description Gets a specified code scanning analysis for a repository.
     * You must use an access token with the `security_events` scope to use this endpoint with private repos,
     * the `public_repo` scope also grants permission to read security events on public repos only.
     * GitHub Apps must have the `security_events` read permission to use this endpoint.

@@ -12,7 +12,7 @@ trait ListPrincipalsForPortfolioOutput extends StObject {
   var NextPageToken: js.UndefOr[PageToken] = js.undefined
   
   /**
-    * The IAM principals (users or roles) associated with the portfolio.
+    * The PrincipalARNs and corresponding PrincipalTypes associated with the portfolio.
     */
   var Principals: js.UndefOr[typings.awsSdk.clientsServicecatalogMod.Principals] = js.undefined
 }

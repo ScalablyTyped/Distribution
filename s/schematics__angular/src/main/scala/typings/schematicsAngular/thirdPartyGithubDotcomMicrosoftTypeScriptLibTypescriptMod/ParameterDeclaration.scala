@@ -25,6 +25,8 @@ trait ParameterDeclaration
   @JSName("kind")
   val kind_ParameterDeclaration: Parameter = js.native
   
+  val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
+  
   @JSName("name")
   val name_ParameterDeclaration: BindingName = js.native
   

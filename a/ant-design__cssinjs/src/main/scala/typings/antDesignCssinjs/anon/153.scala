@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.InsetBlockEnd
+import typings.csstype.mod.Property.ColumnRuleColor
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `153` extends StObject {
   
   var value: js.UndefOr[
-    (InsetBlockEnd[Double | String]) | (js.Array[
+    ColumnRuleColor | (js.Array[
       (Extract[
-        js.UndefOr[
-          (InsetBlockEnd[Double | String]) | (js.Array[NonNullable[js.UndefOr[InsetBlockEnd[Double | String]]]])
-        ], 
+        js.UndefOr[ColumnRuleColor | js.Array[NonNullable[js.UndefOr[ColumnRuleColor]]]], 
         String
-      ]) | (NonNullable[js.UndefOr[InsetBlockEnd[Double | String]]])
+      ]) | NonNullable[js.UndefOr[ColumnRuleColor]]
     ])
   ] = js.native
 }

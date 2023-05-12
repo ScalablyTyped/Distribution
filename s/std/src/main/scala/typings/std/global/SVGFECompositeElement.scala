@@ -3,6 +3,13 @@ package typings.std.global
 import typings.std.AddEventListenerOptions
 import typings.std.EventListenerOptions
 import typings.std.EventListenerOrEventListenerObject
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
+import typings.std.stdInts.`4`
+import typings.std.stdInts.`5`
+import typings.std.stdInts.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,10 +56,6 @@ open class SVGFECompositeElement ()
   /* standard dom */
   /* CompleteClass */
   var ariaColIndex: java.lang.String | Null = js.native
-  
-  /* standard dom */
-  /* CompleteClass */
-  var ariaColIndexText: java.lang.String | Null = js.native
   
   /* standard dom */
   /* CompleteClass */
@@ -148,10 +151,6 @@ open class SVGFECompositeElement ()
   
   /* standard dom */
   /* CompleteClass */
-  var ariaRowIndexText: java.lang.String | Null = js.native
-  
-  /* standard dom */
-  /* CompleteClass */
   var ariaRowSpan: java.lang.String | Null = js.native
   
   /* standard dom */
@@ -244,35 +243,35 @@ object SVGFECompositeElement {
   /* standard dom */
   @JSGlobal("SVGFECompositeElement.SVG_FECOMPOSITE_OPERATOR_ARITHMETIC")
   @js.native
-  val SVG_FECOMPOSITE_OPERATOR_ARITHMETIC: Double = js.native
+  val SVG_FECOMPOSITE_OPERATOR_ARITHMETIC: `6` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFECompositeElement.SVG_FECOMPOSITE_OPERATOR_ATOP")
   @js.native
-  val SVG_FECOMPOSITE_OPERATOR_ATOP: Double = js.native
+  val SVG_FECOMPOSITE_OPERATOR_ATOP: `4` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFECompositeElement.SVG_FECOMPOSITE_OPERATOR_IN")
   @js.native
-  val SVG_FECOMPOSITE_OPERATOR_IN: Double = js.native
+  val SVG_FECOMPOSITE_OPERATOR_IN: `2` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFECompositeElement.SVG_FECOMPOSITE_OPERATOR_OUT")
   @js.native
-  val SVG_FECOMPOSITE_OPERATOR_OUT: Double = js.native
+  val SVG_FECOMPOSITE_OPERATOR_OUT: `3` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFECompositeElement.SVG_FECOMPOSITE_OPERATOR_OVER")
   @js.native
-  val SVG_FECOMPOSITE_OPERATOR_OVER: Double = js.native
+  val SVG_FECOMPOSITE_OPERATOR_OVER: `1` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFECompositeElement.SVG_FECOMPOSITE_OPERATOR_UNKNOWN")
   @js.native
-  val SVG_FECOMPOSITE_OPERATOR_UNKNOWN: Double = js.native
+  val SVG_FECOMPOSITE_OPERATOR_UNKNOWN: `0` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFECompositeElement.SVG_FECOMPOSITE_OPERATOR_XOR")
   @js.native
-  val SVG_FECOMPOSITE_OPERATOR_XOR: Double = js.native
+  val SVG_FECOMPOSITE_OPERATOR_XOR: `5` = js.native
 }

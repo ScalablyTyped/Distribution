@@ -16,6 +16,7 @@ open class CommandSucceededEvent () extends StObject {
   
   var duration: scala.Double = js.native
   
+  /* Excluded from this release type: name */
   /* Excluded from this release type: __constructor */
   def hasServiceId: Boolean = js.native
   

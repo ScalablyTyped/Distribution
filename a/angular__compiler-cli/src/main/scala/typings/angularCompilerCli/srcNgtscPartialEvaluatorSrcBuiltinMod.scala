@@ -24,10 +24,6 @@ object srcNgtscPartialEvaluatorSrcBuiltinMod {
     /* private */ var lhs: Any = js.native
   }
   
-  @JSImport("@angular/compiler-cli/src/ngtsc/partial_evaluator/src/builtin", "ObjectAssignBuiltinFn")
-  @js.native
-  open class ObjectAssignBuiltinFn () extends KnownFn
-  
   @JSImport("@angular/compiler-cli/src/ngtsc/partial_evaluator/src/builtin", "StringConcatBuiltinFn")
   @js.native
   open class StringConcatBuiltinFn protected () extends KnownFn {

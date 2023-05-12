@@ -28,6 +28,9 @@ trait minWidthnumbermaxWidthnum extends StObject {
   var deviceId: String
   
   /* standard dom */
+  var displaySurface: js.UndefOr[ConstrainDOMString] = js.undefined
+  
+  /* standard dom */
   var echoCancellation: js.UndefOr[ConstrainBoolean] = js.undefined
   
   /* standard dom */
@@ -41,9 +44,6 @@ trait minWidthnumbermaxWidthnum extends StObject {
   
   /* standard dom */
   var height: js.UndefOr[ConstrainULong] = js.undefined
-  
-  /* standard dom */
-  var latency: js.UndefOr[ConstrainDouble] = js.undefined
   
   var maxHeight: Double
   
@@ -61,9 +61,6 @@ trait minWidthnumbermaxWidthnum extends StObject {
   
   /* standard dom */
   var sampleSize: js.UndefOr[ConstrainULong] = js.undefined
-  
-  /* standard dom */
-  var suppressLocalAudioPlayback: js.UndefOr[ConstrainBoolean] = js.undefined
   
   /* standard dom */
   var width: js.UndefOr[ConstrainULong] = js.undefined
@@ -98,6 +95,12 @@ object minWidthnumbermaxWidthnum {
     
     inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
+    inline def setDisplaySurface(value: ConstrainDOMString): Self = StObject.set(x, "displaySurface", value.asInstanceOf[js.Any])
+    
+    inline def setDisplaySurfaceUndefined: Self = StObject.set(x, "displaySurface", js.undefined)
+    
+    inline def setDisplaySurfaceVarargs(value: String*): Self = StObject.set(x, "displaySurface", js.Array(value*))
+    
     inline def setEchoCancellation(value: ConstrainBoolean): Self = StObject.set(x, "echoCancellation", value.asInstanceOf[js.Any])
     
     inline def setEchoCancellationUndefined: Self = StObject.set(x, "echoCancellation", js.undefined)
@@ -122,10 +125,6 @@ object minWidthnumbermaxWidthnum {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setLatency(value: ConstrainDouble): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
-    
-    inline def setLatencyUndefined: Self = StObject.set(x, "latency", js.undefined)
-    
     inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
     inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
@@ -145,10 +144,6 @@ object minWidthnumbermaxWidthnum {
     inline def setSampleSize(value: ConstrainULong): Self = StObject.set(x, "sampleSize", value.asInstanceOf[js.Any])
     
     inline def setSampleSizeUndefined: Self = StObject.set(x, "sampleSize", js.undefined)
-    
-    inline def setSuppressLocalAudioPlayback(value: ConstrainBoolean): Self = StObject.set(x, "suppressLocalAudioPlayback", value.asInstanceOf[js.Any])
-    
-    inline def setSuppressLocalAudioPlaybackUndefined: Self = StObject.set(x, "suppressLocalAudioPlayback", js.undefined)
     
     inline def setWidth(value: ConstrainULong): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

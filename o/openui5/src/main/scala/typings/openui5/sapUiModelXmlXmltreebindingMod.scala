@@ -9,6 +9,9 @@ object sapUiModelXmlXmltreebindingMod {
   @JSImport("sap/ui/model/xml/XMLTreeBinding", JSImport.Default)
   @js.native
   open class default protected () extends XMLTreeBinding {
+    /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      */
     def this(/**
       * pointing to the tree or array that should be bound
       */
@@ -23,6 +26,9 @@ object sapUiModelXmlXmltreebindingMod {
       */
     oContext: js.Object
     ) = this()
+    /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      */
     def this(
       oModel: typings.openui5.sapUiModelXmlXmlmodelMod.default,
       /**

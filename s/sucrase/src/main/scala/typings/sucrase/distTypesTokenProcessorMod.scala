@@ -67,7 +67,7 @@ object distTypesTokenProcessorMod {
     override val disableESTransforms: Boolean = js.native
     
     /* CompleteClass */
-    override def finish(): String = js.native
+    override def finish(): TokenProcessorResult = js.native
     
     /* CompleteClass */
     override val helperManager: HelperManager = js.native
@@ -166,8 +166,15 @@ object distTypesTokenProcessorMod {
     /* private */ /* CompleteClass */
     var resultCode: Any = js.native
     
+    /* private */ /* CompleteClass */
+    var resultMappings: Any = js.native
+    
     /**
-      * Make a new TokenProcessor for things like lookahead.
+      * Snapshot the token state in a way that can be restored later, useful for
+      * things like lookahead.
+      *
+      * resultMappings do not need to be copied since in all use cases, they will
+      * be overwritten anyway after restore.
       */
     /* CompleteClass */
     override def snapshot(): TokenProcessorSnapshot = js.native
@@ -224,7 +231,7 @@ object distTypesTokenProcessorMod {
     
     val disableESTransforms: Boolean
     
-    def finish(): String
+    def finish(): TokenProcessorResult
     
     val helperManager: HelperManager
     
@@ -293,8 +300,14 @@ object distTypesTokenProcessorMod {
     
     /* private */ var resultCode: Any
     
+    /* private */ var resultMappings: Any
+    
     /**
-      * Make a new TokenProcessor for things like lookahead.
+      * Snapshot the token state in a way that can be restored later, useful for
+      * things like lookahead.
+      *
+      * resultMappings do not need to be copied since in all use cases, they will
+      * be overwritten anyway after restore.
       */
     def snapshot(): TokenProcessorSnapshot
     
@@ -325,7 +338,7 @@ object distTypesTokenProcessorMod {
       currentTokenCode: () => String,
       dangerouslyGetAndRemoveCodeSinceSnapshot: TokenProcessorSnapshot => String,
       disableESTransforms: Boolean,
-      finish: () => String,
+      finish: () => TokenProcessorResult,
       helperManager: HelperManager,
       identifierName: () => String,
       identifierNameAtIndex: Double => String,
@@ -356,6 +369,7 @@ object distTypesTokenProcessorMod {
       reset: () => Unit,
       restoreToSnapshot: TokenProcessorSnapshot => Unit,
       resultCode: Any,
+      resultMappings: Any,
       snapshot: () => TokenProcessorSnapshot,
       stringValue: () => String,
       stringValueAtIndex: Double => String,
@@ -364,7 +378,7 @@ object distTypesTokenProcessorMod {
       tokenIndex: Any,
       tokens: js.Array[Token]
     ): TokenProcessor = {
-      val __obj = js.Dynamic.literal(appendCode = js.Any.fromFunction1(appendCode), appendTokenPrefix = appendTokenPrefix.asInstanceOf[js.Any], appendTokenSuffix = appendTokenSuffix.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], copyExpectedToken = js.Any.fromFunction1(copyExpectedToken), copyToken = js.Any.fromFunction0(copyToken), copyTokenWithPrefix = js.Any.fromFunction1(copyTokenWithPrefix), currentIndex = js.Any.fromFunction0(currentIndex), currentToken = js.Any.fromFunction0(currentToken), currentTokenCode = js.Any.fromFunction0(currentTokenCode), dangerouslyGetAndRemoveCodeSinceSnapshot = js.Any.fromFunction1(dangerouslyGetAndRemoveCodeSinceSnapshot), disableESTransforms = disableESTransforms.asInstanceOf[js.Any], finish = js.Any.fromFunction0(finish), helperManager = helperManager.asInstanceOf[js.Any], identifierName = js.Any.fromFunction0(identifierName), identifierNameAtIndex = js.Any.fromFunction1(identifierNameAtIndex), identifierNameAtRelativeIndex = js.Any.fromFunction1(identifierNameAtRelativeIndex), identifierNameForToken = js.Any.fromFunction1(identifierNameForToken), isAtEnd = js.Any.fromFunction0(isAtEnd), isFlowEnabled = isFlowEnabled.asInstanceOf[js.Any], matches1 = js.Any.fromFunction1(matches1), matches1AtIndex = js.Any.fromFunction2(matches1AtIndex), matches2 = js.Any.fromFunction2(matches2), matches2AtIndex = js.Any.fromFunction3(matches2AtIndex), matches3 = js.Any.fromFunction3(matches3), matches3AtIndex = js.Any.fromFunction4(matches3AtIndex), matches4 = js.Any.fromFunction4(matches4), matches5 = js.Any.fromFunction5(matches5), matchesContextIdAndLabel = js.Any.fromFunction2(matchesContextIdAndLabel), matchesContextual = js.Any.fromFunction1(matchesContextual), matchesContextualAtIndex = js.Any.fromFunction2(matchesContextualAtIndex), nextToken = js.Any.fromFunction0(nextToken), previousToken = js.Any.fromFunction0(previousToken), previousWhitespaceAndComments = js.Any.fromFunction0(previousWhitespaceAndComments), rawCodeForToken = js.Any.fromFunction1(rawCodeForToken), removeBalancedCode = js.Any.fromFunction0(removeBalancedCode), removeInitialToken = js.Any.fromFunction0(removeInitialToken), removeToken = js.Any.fromFunction0(removeToken), replaceToken = js.Any.fromFunction1(replaceToken), replaceTokenTrimmingLeftWhitespace = js.Any.fromFunction1(replaceTokenTrimmingLeftWhitespace), reset = js.Any.fromFunction0(reset), restoreToSnapshot = js.Any.fromFunction1(restoreToSnapshot), resultCode = resultCode.asInstanceOf[js.Any], snapshot = js.Any.fromFunction0(snapshot), stringValue = js.Any.fromFunction0(stringValue), stringValueAtIndex = js.Any.fromFunction1(stringValueAtIndex), stringValueForToken = js.Any.fromFunction1(stringValueForToken), tokenAtRelativeIndex = js.Any.fromFunction1(tokenAtRelativeIndex), tokenIndex = tokenIndex.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(appendCode = js.Any.fromFunction1(appendCode), appendTokenPrefix = appendTokenPrefix.asInstanceOf[js.Any], appendTokenSuffix = appendTokenSuffix.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], copyExpectedToken = js.Any.fromFunction1(copyExpectedToken), copyToken = js.Any.fromFunction0(copyToken), copyTokenWithPrefix = js.Any.fromFunction1(copyTokenWithPrefix), currentIndex = js.Any.fromFunction0(currentIndex), currentToken = js.Any.fromFunction0(currentToken), currentTokenCode = js.Any.fromFunction0(currentTokenCode), dangerouslyGetAndRemoveCodeSinceSnapshot = js.Any.fromFunction1(dangerouslyGetAndRemoveCodeSinceSnapshot), disableESTransforms = disableESTransforms.asInstanceOf[js.Any], finish = js.Any.fromFunction0(finish), helperManager = helperManager.asInstanceOf[js.Any], identifierName = js.Any.fromFunction0(identifierName), identifierNameAtIndex = js.Any.fromFunction1(identifierNameAtIndex), identifierNameAtRelativeIndex = js.Any.fromFunction1(identifierNameAtRelativeIndex), identifierNameForToken = js.Any.fromFunction1(identifierNameForToken), isAtEnd = js.Any.fromFunction0(isAtEnd), isFlowEnabled = isFlowEnabled.asInstanceOf[js.Any], matches1 = js.Any.fromFunction1(matches1), matches1AtIndex = js.Any.fromFunction2(matches1AtIndex), matches2 = js.Any.fromFunction2(matches2), matches2AtIndex = js.Any.fromFunction3(matches2AtIndex), matches3 = js.Any.fromFunction3(matches3), matches3AtIndex = js.Any.fromFunction4(matches3AtIndex), matches4 = js.Any.fromFunction4(matches4), matches5 = js.Any.fromFunction5(matches5), matchesContextIdAndLabel = js.Any.fromFunction2(matchesContextIdAndLabel), matchesContextual = js.Any.fromFunction1(matchesContextual), matchesContextualAtIndex = js.Any.fromFunction2(matchesContextualAtIndex), nextToken = js.Any.fromFunction0(nextToken), previousToken = js.Any.fromFunction0(previousToken), previousWhitespaceAndComments = js.Any.fromFunction0(previousWhitespaceAndComments), rawCodeForToken = js.Any.fromFunction1(rawCodeForToken), removeBalancedCode = js.Any.fromFunction0(removeBalancedCode), removeInitialToken = js.Any.fromFunction0(removeInitialToken), removeToken = js.Any.fromFunction0(removeToken), replaceToken = js.Any.fromFunction1(replaceToken), replaceTokenTrimmingLeftWhitespace = js.Any.fromFunction1(replaceTokenTrimmingLeftWhitespace), reset = js.Any.fromFunction0(reset), restoreToSnapshot = js.Any.fromFunction1(restoreToSnapshot), resultCode = resultCode.asInstanceOf[js.Any], resultMappings = resultMappings.asInstanceOf[js.Any], snapshot = js.Any.fromFunction0(snapshot), stringValue = js.Any.fromFunction0(stringValue), stringValueAtIndex = js.Any.fromFunction1(stringValueAtIndex), stringValueForToken = js.Any.fromFunction1(stringValueForToken), tokenAtRelativeIndex = js.Any.fromFunction1(tokenAtRelativeIndex), tokenIndex = tokenIndex.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
       __obj.asInstanceOf[TokenProcessor]
     }
     
@@ -395,7 +409,7 @@ object distTypesTokenProcessorMod {
       
       inline def setDisableESTransforms(value: Boolean): Self = StObject.set(x, "disableESTransforms", value.asInstanceOf[js.Any])
       
-      inline def setFinish(value: () => String): Self = StObject.set(x, "finish", js.Any.fromFunction0(value))
+      inline def setFinish(value: () => TokenProcessorResult): Self = StObject.set(x, "finish", js.Any.fromFunction0(value))
       
       inline def setHelperManager(value: HelperManager): Self = StObject.set(x, "helperManager", value.asInstanceOf[js.Any])
       
@@ -457,6 +471,8 @@ object distTypesTokenProcessorMod {
       
       inline def setResultCode(value: Any): Self = StObject.set(x, "resultCode", value.asInstanceOf[js.Any])
       
+      inline def setResultMappings(value: Any): Self = StObject.set(x, "resultMappings", value.asInstanceOf[js.Any])
+      
       inline def setSnapshot(value: () => TokenProcessorSnapshot): Self = StObject.set(x, "snapshot", js.Any.fromFunction0(value))
       
       inline def setStringValue(value: () => String): Self = StObject.set(x, "stringValue", js.Any.fromFunction0(value))
@@ -472,6 +488,30 @@ object distTypesTokenProcessorMod {
       inline def setTokens(value: js.Array[Token]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
       inline def setTokensVarargs(value: Token*): Self = StObject.set(x, "tokens", js.Array(value*))
+    }
+  }
+  
+  trait TokenProcessorResult extends StObject {
+    
+    var code: String
+    
+    var mappings: js.Array[js.UndefOr[Double]]
+  }
+  object TokenProcessorResult {
+    
+    inline def apply(code: String, mappings: js.Array[js.UndefOr[Double]]): TokenProcessorResult = {
+      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], mappings = mappings.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TokenProcessorResult]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenProcessorResult] (val x: Self) extends AnyVal {
+      
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      
+      inline def setMappings(value: js.Array[js.UndefOr[Double]]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
+      
+      inline def setMappingsVarargs(value: js.UndefOr[Double]*): Self = StObject.set(x, "mappings", js.Array(value*))
     }
   }
   

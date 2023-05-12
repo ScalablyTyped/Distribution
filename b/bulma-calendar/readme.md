@@ -1,7 +1,7 @@
 
 # Scala.js typings for bulma-calendar
 
-Typings are for version 6.1.18
+Typings are for version 6.1.19
 
 ## Library description:
 Display a calendar for date/time selection, in different colors and sizes

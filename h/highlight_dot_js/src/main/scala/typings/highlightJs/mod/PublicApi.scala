@@ -44,12 +44,16 @@ trait PublicApi extends StObject {
   
   def listLanguages(): js.Array[String] = js.native
   
+  def newInstance(): HLJSApi = js.native
+  
   var regex: AnyNumberOfTimes = js.native
   
   def registerAliases(aliasList: String, param1: LanguageName): Unit = js.native
   def registerAliases(aliasList: js.Array[String], param1: LanguageName): Unit = js.native
   
   def registerLanguage(languageName: String, language: LanguageFn): Unit = js.native
+  
+  def removePlugin(plugin: HLJSPlugin): Unit = js.native
   
   def safeMode(): Unit = js.native
   

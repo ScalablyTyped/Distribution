@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExecutionContextDescription extends StObject {
   
   /**
-    * Embedder-specific auxiliary data.
+    * Embedder-specific auxiliary data likely matching {isDefault: boolean, type: 'default'|'isolated'|'worker', frameId: string}
     */
   var auxData: js.UndefOr[Any] = js.undefined
   

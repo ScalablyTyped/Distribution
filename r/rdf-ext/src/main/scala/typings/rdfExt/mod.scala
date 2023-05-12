@@ -1,79 +1,195 @@
 package typings.rdfExt
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.node.eventsMod.EventEmitter
-import typings.node.streamMod.Stream
-import typings.rdfjsTypes.streamMod.Sink
+import org.scalablytyped.runtime.Shortcut
+import typings.rdfExt.clownfaceFactoryMod.ClownfaceFactoryCtor
+import typings.rdfExt.dataFactoryMod.DataFactoryExt
+import typings.rdfExt.dataFactoryMod.DataFactoryExtCtor
+import typings.rdfExt.datasetFactoryMod.DatasetFactoryCtor
+import typings.rdfExt.rdfExtStrings.termSet
+import typings.rdfjsEnvironment.environmentMod.EnvironmentCtor
+import typings.rdfjsEnvironment.formatsFactoryMod.FormatsFactoryCtor
+import typings.rdfjsFetchLite.factoryMod.Fetch
+import typings.rdfjsFetchLite.factoryMod.FetchFactoryCtor
+import typings.rdfjsFetchLite.factoryMod.RdfFetchResponse
+import typings.rdfjsFetchLite.mod.FormatsInit
+import typings.rdfjsNamespace.factoryMod.NamespaceFactoryCtor
+import typings.rdfjsNamespace.mod.NamespaceBuilder
+import typings.rdfjsPrefixMap.factoryMod.PrefixMapFactoryCtor
+import typings.rdfjsScore.anon.Typeofscore
+import typings.rdfjsScore.factoryMod.FactoryCtor
+import typings.rdfjsTraverser.factoryMod.TraverserFactoryCtor
+import typings.rdfjsTypes.dataModelMod.Quad
+import typings.rdfjsTypes.datasetMod.DatasetCore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod {
+object mod extends Shortcut {
   
-  @JSImport("rdf-ext", JSImport.Namespace)
+  @JSImport("rdf-ext", JSImport.Default)
   @js.native
-  open class ^ ()
-    extends typings.rdfExt.libDataFactoryMod.^
-  @JSImport("rdf-ext", JSImport.Namespace)
+  val default: typings.rdfjsEnvironment.environmentMod.Environment[
+    typings.rdfExt.clownfaceFactoryMod.ClownfaceFactory | DataFactoryExt | typings.rdfExt.datasetFactoryMod.DatasetFactory | typings.rdfjsFetchLite.factoryMod.FetchFactory | typings.rdfjsEnvironment.formatsFactoryMod.FormatsFactory | typings.rdfjsNamespace.factoryMod.NamespaceFactory | typings.rdfjsTermMap.factoryMod.TermMapFactory | typings.rdfjsTermSet.factoryMod.TermSetFactory | typings.rdfjsPrefixMap.factoryMod.PrefixMapFactory | typings.rdfjsTraverser.factoryMod.TraverserFactory | typings.rdfjsScore.factoryMod.ScoreFactory
+  ] = js.native
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("rdf-ext", "ClownfaceFactory")
   @js.native
-  val ^ : js.Any = js.native
-  
-  /* static member */
-  @JSImport("rdf-ext", "Parsers")
-  @js.native
-  def Parsers: SinkMap[EventEmitter, Stream] = js.native
-  inline def Parsers_=(x: SinkMap[EventEmitter, Stream]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Parsers")(x.asInstanceOf[js.Any])
-  
-  /* static member */
-  @JSImport("rdf-ext", "Serializers")
-  @js.native
-  def Serializers: SinkMap[Stream, EventEmitter] = js.native
-  inline def Serializers_=(x: SinkMap[Stream, EventEmitter]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Serializers")(x.asInstanceOf[js.Any])
-  
-  /* static member */
-  @JSImport("rdf-ext", "asEvent")
-  @js.native
-  def asEvent: js.Function1[/* p */ Any, EventEmitter] = js.native
-  inline def asEvent_=(x: js.Function1[/* p */ Any, EventEmitter]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("asEvent")(x.asInstanceOf[js.Any])
-  
-  /* static member */
-  @JSImport("rdf-ext", "waitFor")
-  @js.native
-  def waitFor: js.Function1[/* event */ Any, js.Promise[Any]] = js.native
-  inline def waitFor_=(x: js.Function1[/* event */ Any, js.Promise[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("waitFor")(x.asInstanceOf[js.Any])
-  
-  type DataFactoryExt = typings.rdfExt.libDataFactoryMod.^
-  
-  trait SinkMap[InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */]
+  open class ClownfaceFactory ()
     extends StObject
-       with /* mediaType */ StringDictionary[Sink[InputStream, OutputStream]] {
+       with typings.rdfExt.clownfaceFactoryMod.ClownfaceFactory
+  @JSImport("rdf-ext", "ClownfaceFactory")
+  @js.native
+  val ClownfaceFactory: ClownfaceFactoryCtor = js.native
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("rdf-ext", "DataFactory")
+  @js.native
+  open class DataFactory ()
+    extends StObject
+       with DataFactoryExt
+  @JSImport("rdf-ext", "DataFactory")
+  @js.native
+  val DataFactory: DataFactoryExtCtor = js.native
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("rdf-ext", "DatasetFactory")
+  @js.native
+  open class DatasetFactory ()
+    extends StObject
+       with typings.rdfExt.datasetFactoryMod.DatasetFactory
+  @JSImport("rdf-ext", "DatasetFactory")
+  @js.native
+  val DatasetFactory: DatasetFactoryCtor = js.native
+  
+  @JSImport("rdf-ext", "Environment")
+  @js.native
+  val Environment: EnvironmentCtor = js.native
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("rdf-ext", "FetchFactory")
+  @js.native
+  open class FetchFactory ()
+    extends StObject
+       with typings.rdfjsFetchLite.factoryMod.FetchFactory {
     
-    def find(mediaType: String): Sink[InputStream, OutputStream]
+    /* CompleteClass */
+    override def clone(original: typings.rdfjsFetchLite.factoryMod.FetchFactory): typings.rdfjsFetchLite.factoryMod.FetchFactory = js.native
     
-    def `import`(mediaType: String, input: Any, options: Any): Any
-    
-    def list(): js.Array[String]
+    /* CompleteClass */
+    override def fetch(url: String): js.Promise[RdfFetchResponse[DatasetCore[Quad, Quad], Quad, Quad]] = js.native
+    /* CompleteClass */
+    override def fetch(url: String, options: FormatsInit): js.Promise[RdfFetchResponse[DatasetCore[Quad, Quad], Quad, Quad]] = js.native
+    /* CompleteClass */
+    @JSName("fetch")
+    var fetch_Original: Fetch = js.native
   }
-  object SinkMap {
+  @JSImport("rdf-ext", "FetchFactory")
+  @js.native
+  val FetchFactory: FetchFactoryCtor = js.native
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("rdf-ext", "FormatsFactory")
+  @js.native
+  open class FormatsFactory ()
+    extends StObject
+       with typings.rdfjsEnvironment.formatsFactoryMod.FormatsFactory {
     
-    inline def apply[InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */](
-      find: String => Sink[InputStream, OutputStream],
-      `import`: (String, Any, Any) => Any,
-      list: () => js.Array[String]
-    ): SinkMap[InputStream, OutputStream] = {
-      val __obj = js.Dynamic.literal(find = js.Any.fromFunction1(find), list = js.Any.fromFunction0(list))
-      __obj.updateDynamic("import")(js.Any.fromFunction3(`import`))
-      __obj.asInstanceOf[SinkMap[InputStream, OutputStream]]
-    }
+    /* CompleteClass */
+    override def clone(original: typings.rdfjsEnvironment.formatsFactoryMod.FormatsFactory): Unit = js.native
     
-    @scala.inline
-    implicit open class MutableBuilder[Self <: SinkMap[?, ?], InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */] (val x: Self & (SinkMap[InputStream, OutputStream])) extends AnyVal {
-      
-      inline def setFind(value: String => Sink[InputStream, OutputStream]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
-      
-      inline def setImport(value: (String, Any, Any) => Any): Self = StObject.set(x, "import", js.Any.fromFunction3(value))
-      
-      inline def setList(value: () => js.Array[String]): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
-    }
+    /* CompleteClass */
+    var formats: typings.rdfjsEnvironment.libFormatsMod.default = js.native
+    
+    /* CompleteClass */
+    override def init(): Unit = js.native
   }
+  @JSImport("rdf-ext", "FormatsFactory")
+  @js.native
+  val FormatsFactory: FormatsFactoryCtor = js.native
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("rdf-ext", "NamespaceFactory")
+  @js.native
+  open class NamespaceFactory ()
+    extends StObject
+       with typings.rdfjsNamespace.factoryMod.NamespaceFactory {
+    
+    // eslint-disable-next-line no-unnecessary-generics
+    /* CompleteClass */
+    override def namespace[TermNames /* <: String */](baseIRI: String): NamespaceBuilder[TermNames] = js.native
+  }
+  @JSImport("rdf-ext", "NamespaceFactory")
+  @js.native
+  val NamespaceFactory: NamespaceFactoryCtor = js.native
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("rdf-ext", "PrefixMapFactory")
+  @js.native
+  open class PrefixMapFactory ()
+    extends StObject
+       with typings.rdfjsPrefixMap.factoryMod.PrefixMapFactory
+  @JSImport("rdf-ext", "PrefixMapFactory")
+  @js.native
+  val PrefixMapFactory: PrefixMapFactoryCtor = js.native
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("rdf-ext", "ScoreFactory")
+  @js.native
+  open class ScoreFactory ()
+    extends StObject
+       with typings.rdfjsScore.factoryMod.ScoreFactory {
+    
+    /* CompleteClass */
+    var score: Typeofscore = js.native
+  }
+  @JSImport("rdf-ext", "ScoreFactory")
+  @js.native
+  val ScoreFactory: FactoryCtor = js.native
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("rdf-ext", "TermMapFactory")
+  @js.native
+  open class TermMapFactory ()
+    extends StObject
+       with typings.rdfjsTermMap.factoryMod.TermMapFactory
+  @JSImport("rdf-ext", "TermMapFactory")
+  @js.native
+  val TermMapFactory: typings.rdfjsTermMap.factoryMod.FactoryCtor = js.native
+  
+  @JSImport("rdf-ext", "TermSetFactory")
+  @js.native
+  open class TermSetFactory ()
+    extends typings.rdfjsTermSet.factoryMod.default
+  /* static members */
+  object TermSetFactory {
+    
+    @JSImport("rdf-ext", "TermSetFactory")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("rdf-ext", "TermSetFactory.exports")
+    @js.native
+    def exports: js.Array[termSet] = js.native
+    inline def exports_=(x: js.Array[termSet]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exports")(x.asInstanceOf[js.Any])
+  }
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("rdf-ext", "TraverserFactory")
+  @js.native
+  open class TraverserFactory ()
+    extends StObject
+       with typings.rdfjsTraverser.factoryMod.TraverserFactory
+  @JSImport("rdf-ext", "TraverserFactory")
+  @js.native
+  val TraverserFactory: TraverserFactoryCtor = js.native
+  
+  type _To = typings.rdfjsEnvironment.environmentMod.Environment[
+    typings.rdfExt.clownfaceFactoryMod.ClownfaceFactory | DataFactoryExt | typings.rdfExt.datasetFactoryMod.DatasetFactory | typings.rdfjsFetchLite.factoryMod.FetchFactory | typings.rdfjsEnvironment.formatsFactoryMod.FormatsFactory | typings.rdfjsNamespace.factoryMod.NamespaceFactory | typings.rdfjsTermMap.factoryMod.TermMapFactory | typings.rdfjsTermSet.factoryMod.TermSetFactory | typings.rdfjsPrefixMap.factoryMod.PrefixMapFactory | typings.rdfjsTraverser.factoryMod.TraverserFactory | typings.rdfjsScore.factoryMod.ScoreFactory
+  ]
+  
+  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
+  override def _to: typings.rdfjsEnvironment.environmentMod.Environment[
+    typings.rdfExt.clownfaceFactoryMod.ClownfaceFactory | DataFactoryExt | typings.rdfExt.datasetFactoryMod.DatasetFactory | typings.rdfjsFetchLite.factoryMod.FetchFactory | typings.rdfjsEnvironment.formatsFactoryMod.FormatsFactory | typings.rdfjsNamespace.factoryMod.NamespaceFactory | typings.rdfjsTermMap.factoryMod.TermMapFactory | typings.rdfjsTermSet.factoryMod.TermSetFactory | typings.rdfjsPrefixMap.factoryMod.PrefixMapFactory | typings.rdfjsTraverser.factoryMod.TraverserFactory | typings.rdfjsScore.factoryMod.ScoreFactory
+  ] = default
 }

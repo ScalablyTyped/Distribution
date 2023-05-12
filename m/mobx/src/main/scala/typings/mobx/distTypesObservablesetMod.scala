@@ -1,5 +1,6 @@
 package typings.mobx
 
+import typings.mobx.distCoreAtomMod.IAtom
 import typings.mobx.distTypesInterceptUtilsMod.IInterceptable
 import typings.mobx.distTypesInterceptUtilsMod.IInterceptor
 import typings.mobx.distTypesListenUtilsMod.IListenable
@@ -31,7 +32,7 @@ object distTypesObservablesetMod {
     def this(initialData: IObservableSetInitialValues[T], enhancer: Unit, name_ : String) = this()
     def this(initialData: IObservableSetInitialValues[T], enhancer: IEnhancer[T], name_ : String) = this()
     
-    /* private */ var atom_ : Any = js.native
+    var atom_ : IAtom = js.native
     
     /* private */ var data_ : Any = js.native
     

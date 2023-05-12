@@ -1,10 +1,12 @@
 package typings.nivoBar.distTypesTypesMod
 
 import typings.nivoBar.anon.Color
+import typings.nivoBar.anon.ColorString
 import typings.nivoBar.anon.DataValue
 import typings.react.mod.FC
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.reactSpringCore.mod.SpringValues
 import typings.std.SVGRectElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -34,7 +36,7 @@ trait BarItemProps[RawDatum /* <: BarDatum */] extends StObject {
   
   var onClick: js.UndefOr[
     js.Function2[
-      /* datum */ ComputedDatum[RawDatum] & Color, 
+      /* datum */ ComputedDatum[RawDatum] & ColorString, 
       /* event */ MouseEvent[SVGRectElement, NativeMouseEvent], 
       Unit
     ]
@@ -58,7 +60,7 @@ trait BarItemProps[RawDatum /* <: BarDatum */] extends StObject {
   
   var shouldRenderLabel: Boolean
   
-  var style: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValues<{  borderColor :string,   color :string,   height :number,   labelColor :string,   labelOpacity :number,   labelX :number,   labelY :number,   opacity :number,   transform :string,   width :number}> */ Any
+  var style: SpringValues[Color]
   
   var tooltip: FC[BarTooltipProps[RawDatum]]
 }
@@ -72,7 +74,7 @@ object BarItemProps {
     isInteractive: Boolean,
     label: String,
     shouldRenderLabel: Boolean,
-    style: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValues<{  borderColor :string,   color :string,   height :number,   labelColor :string,   labelOpacity :number,   labelX :number,   labelY :number,   opacity :number,   transform :string,   width :number}> */ Any,
+    style: SpringValues[Color],
     tooltip: FC[BarTooltipProps[RawDatum]]
   ): BarItemProps[RawDatum] = {
     val __obj = js.Dynamic.literal(bar = bar.asInstanceOf[js.Any], borderRadius = borderRadius.asInstanceOf[js.Any], borderWidth = borderWidth.asInstanceOf[js.Any], isFocusable = isFocusable.asInstanceOf[js.Any], isInteractive = isInteractive.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], shouldRenderLabel = shouldRenderLabel.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any])
@@ -107,7 +109,7 @@ object BarItemProps {
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setOnClick(
-      value: (/* datum */ ComputedDatum[RawDatum] & Color, /* event */ MouseEvent[SVGRectElement, NativeMouseEvent]) => Unit
+      value: (/* datum */ ComputedDatum[RawDatum] & ColorString, /* event */ MouseEvent[SVGRectElement, NativeMouseEvent]) => Unit
     ): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
@@ -126,9 +128,7 @@ object BarItemProps {
     
     inline def setShouldRenderLabel(value: Boolean): Self = StObject.set(x, "shouldRenderLabel", value.asInstanceOf[js.Any])
     
-    inline def setStyle(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValues<{  borderColor :string,   color :string,   height :number,   labelColor :string,   labelOpacity :number,   labelX :number,   labelY :number,   opacity :number,   transform :string,   width :number}> */ Any
-    ): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: SpringValues[Color]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setTooltip(value: FC[BarTooltipProps[RawDatum]]): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
   }

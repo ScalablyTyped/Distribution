@@ -12,7 +12,7 @@ trait InvalidationBatch extends StObject {
   var CallerReference: String
   
   /**
-    * A complex type that contains information about the objects that you want to invalidate. For more information, see Specifying the Objects to Invalidate in the Amazon CloudFront Developer Guide. 
+    * A complex type that contains information about the objects that you want to invalidate. For more information, see Specifying the Objects to Invalidate in the Amazon CloudFront Developer Guide.
     */
   var Paths: typings.awsSdk.clientsCloudfrontMod.Paths
 }

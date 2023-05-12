@@ -12,57 +12,161 @@ object sapUiUtilStorageMod {
     extends StObject
        with Storage {
     def this(/**
-      * The type this storage should be of or an Object implementing the typical Storage API for direct usage.
+      * The type of native storage implementation that this `Storage` instance should use internally. Alternatively,
+      * this can be a custom implementation of the {@link https://developer.mozilla.org/en-US/docs/Web/API/Storage
+      * Storage Web API).
       */
-    pStorage: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Type * / any */ String) = this()
+    vStorage: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Type * / any */ String) = this()
     def this(/**
-      * The type this storage should be of or an Object implementing the typical Storage API for direct usage.
+      * The type of native storage implementation that this `Storage` instance should use internally. Alternatively,
+      * this can be a custom implementation of the {@link https://developer.mozilla.org/en-US/docs/Web/API/Storage
+      * Storage Web API).
       */
-    pStorage: Storage) = this()
+    vStorage: Storage) = this()
     def this(/**
-      * The type this storage should be of or an Object implementing the typical Storage API for direct usage.
+      * The type of native storage implementation that this `Storage` instance should use internally. Alternatively,
+      * this can be a custom implementation of the {@link https://developer.mozilla.org/en-US/docs/Web/API/Storage
+      * Storage Web API).
       */
-    pStorage: Type) = this()
+    vStorage: Type) = this()
     def this(
       /**
-      * The type this storage should be of or an Object implementing the typical Storage API for direct usage.
+      * The type of native storage implementation that this `Storage` instance should use internally. Alternatively,
+      * this can be a custom implementation of the {@link https://developer.mozilla.org/en-US/docs/Web/API/Storage
+      * Storage Web API).
       */
-    pStorage: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Type * / any */ String,
+    vStorage: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Type * / any */ String,
       /**
-      * The prefix to use in this storage.
+      * The scope prefix to be used by this storage instance
       */
     sStorageKeyPrefix: String
     ) = this()
     def this(
       /**
-      * The type this storage should be of or an Object implementing the typical Storage API for direct usage.
+      * The type of native storage implementation that this `Storage` instance should use internally. Alternatively,
+      * this can be a custom implementation of the {@link https://developer.mozilla.org/en-US/docs/Web/API/Storage
+      * Storage Web API).
       */
-    pStorage: Unit,
+    vStorage: Unit,
       /**
-      * The prefix to use in this storage.
+      * The scope prefix to be used by this storage instance
       */
     sStorageKeyPrefix: String
     ) = this()
     def this(
       /**
-      * The type this storage should be of or an Object implementing the typical Storage API for direct usage.
+      * The type of native storage implementation that this `Storage` instance should use internally. Alternatively,
+      * this can be a custom implementation of the {@link https://developer.mozilla.org/en-US/docs/Web/API/Storage
+      * Storage Web API).
       */
-    pStorage: Storage,
+    vStorage: Storage,
       /**
-      * The prefix to use in this storage.
+      * The scope prefix to be used by this storage instance
       */
     sStorageKeyPrefix: String
     ) = this()
     def this(
       /**
-      * The type this storage should be of or an Object implementing the typical Storage API for direct usage.
+      * The type of native storage implementation that this `Storage` instance should use internally. Alternatively,
+      * this can be a custom implementation of the {@link https://developer.mozilla.org/en-US/docs/Web/API/Storage
+      * Storage Web API).
       */
-    pStorage: Type,
+    vStorage: Type,
       /**
-      * The prefix to use in this storage.
+      * The scope prefix to be used by this storage instance
       */
     sStorageKeyPrefix: String
     ) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("sap/ui/util/Storage", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Clears the whole storage (Independent of the current Storage instance!).
+      *
+      * **CAUTION** This method should be called only in very particular situations, when a global erasing of
+      * data is required. Given that the method deletes the data saved under any key, it should not be called
+      * when managing data for specific controls.
+      *
+      * @returns Whether clearing the storage was successful
+      */
+    inline def clear(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Boolean]
+    
+    /**
+      * Retrieves the value for the given key or `null` if the key does not exist in this storage.
+      *
+      * The returned value will be of a type that `JSON.parse` could return, too.
+      *
+      * @returns The key's value or `null` if the key does not exist in the storage.
+      */
+    inline def get(
+      /**
+      * Key to retrieve the value for; will be prefixed with the prefix given when constructing this `Storage`
+      */
+    sKey: String
+    ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(sKey.asInstanceOf[js.Any]).asInstanceOf[Any]
+    
+    /**
+      * Returns the type of this storage.
+      *
+      * @returns Type of this storage or "unknown" when the Storage was created with an unknown type or implementation
+      */
+    inline def getType(): Type | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Type * / any */ String) = ^.asInstanceOf[js.Dynamic].applyDynamic("getType")().asInstanceOf[Type | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Type * / any */ String)]
+    
+    /**
+      * Returns whether the given storage is supported.
+      *
+      * @returns true if storage is supported, false otherwise (e.g. due to browser security settings)
+      */
+    inline def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
+    
+    /**
+      * Stores the given value under the given key in the storage or updates the value if the key already exists.
+      *
+      * This method supports the same types of values as `JSON.stringify`.
+      *
+      * @returns Whether the data was successfully stored
+      */
+    inline def put(
+      /**
+      * Key to store the given value under; will be prefixed with the prefix given when constructing this `Storage`
+      */
+    sKey: String,
+      /**
+      * Value to store/update under the given key
+      */
+    vValue: Any
+    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(sKey.asInstanceOf[js.Any], vValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    /**
+      * Removes the key and its value from storage, if the key exists.
+      *
+      * @returns Whether the deletion succeeded; if the key didn't exists, the method also reports a success
+      */
+    inline def remove(
+      /**
+      * Key to remove; will be prefixed with the prefix given when constructing this `Storage`
+      */
+    sKey: String
+    ): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(sKey.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    /**
+      * Removes all key/value pairs form the storage where the key starts with the given `sKeyPrefix`.
+      *
+      * @returns Whether the deletion was successful; if no key matches the prefix, this is also a success
+      */
+    inline def removeAll(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAll")().asInstanceOf[Boolean]
+    inline def removeAll(
+      /**
+      * Key prefix for the keys/values to delete; will be additionally prefixed with the prefix given when constructing
+      * this `Storage`
+      */
+    sKeyPrefix: String
+    ): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAll")(sKeyPrefix.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @js.native
@@ -100,28 +204,31 @@ object sapUiUtilStorageMod {
       * Clears the whole storage (Independent of the current Storage instance!).
       *
       * **CAUTION** This method should be called only in very particular situations, when a global erasing of
-      * data is required. Given that the method deletes the data saved under any ID, it should not be called
+      * data is required. Given that the method deletes the data saved under any key, it should not be called
       * when managing data for specific controls.
       *
-      * @returns true if execution of removal was successful or the data to remove doesn't exist, and false if
-      * the feature is unavailable or a problem occurred
+      * @returns Whether clearing the storage was successful
       */
     def clear(): Boolean = js.native
     
     /**
-      * Retrieves data item for a specific key.
+      * Retrieves the value for the given key or `null` if the key does not exist in this storage.
       *
-      * @returns key's value or `null`
+      * The returned value will be of a type that `JSON.parse` could return, too.
+      *
+      * @returns The key's value or `null` if the key does not exist in the storage.
       */
-    def get(/**
-      * key to retrieve
+    def get(
+      /**
+      * Key to retrieve the value for; will be prefixed with the prefix given when constructing this `Storage`
       */
-    sKey: String): js.Object | Null = js.native
+    sKey: String
+    ): Any = js.native
     
     /**
-      * Returns the storage type.
+      * Returns the type of this storage.
       *
-      * @returns storage type or "unknown"
+      * @returns Type of this storage or "unknown" when the Storage was created with an unknown type or implementation
       */
     def getType(): Type | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Type * / any */ String) = js.native
     
@@ -133,39 +240,47 @@ object sapUiUtilStorageMod {
     def isSupported(): Boolean = js.native
     
     /**
-      * Add key to the storage or updates value if the key already exists.
+      * Stores the given value under the given key in the storage or updates the value if the key already exists.
       *
-      * @returns true if the data was successfully stored, otherwise false
+      * This method supports the same types of values as `JSON.stringify`.
+      *
+      * @returns Whether the data was successfully stored
       */
-    def put(/**
-      * key to create
+    def put(
+      /**
+      * Key to store the given value under; will be prefixed with the prefix given when constructing this `Storage`
       */
-    sKey: String, /**
-      * value to create/update
+    sKey: String,
+      /**
+      * Value to store/update under the given key
       */
-    sValue: String): Boolean = js.native
+    vValue: Any
+    ): Boolean = js.native
     
     /**
-      * Removes key from storage if it exists.
+      * Removes the key and its value from storage, if the key exists.
       *
-      * @returns true if the deletion was successful or the data doesn't exist under the specified key, and false
-      * if the feature is unavailable or a problem occurred
+      * @returns Whether the deletion succeeded; if the key didn't exists, the method also reports a success
       */
-    def remove(/**
-      * key to remove
+    def remove(
+      /**
+      * Key to remove; will be prefixed with the prefix given when constructing this `Storage`
       */
-    sKey: String): Boolean = js.native
+    sKey: String
+    ): Boolean = js.native
     
     /**
-      * Removes all stored keys.
+      * Removes all key/value pairs form the storage where the key starts with the given `sKeyPrefix`.
       *
-      * @returns true if the deletion was successful or the data doesn't exist under the specified key, and false
-      * if the feature is unavailable or a problem occurred
+      * @returns Whether the deletion was successful; if no key matches the prefix, this is also a success
       */
     def removeAll(): Boolean = js.native
-    def removeAll(/**
-      * prefix id for the states to delete
+    def removeAll(
+      /**
+      * Key prefix for the keys/values to delete; will be additionally prefixed with the prefix given when constructing
+      * this `Storage`
       */
-    sIdPrefix: String): Boolean = js.native
+    sKeyPrefix: String
+    ): Boolean = js.native
   }
 }

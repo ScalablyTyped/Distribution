@@ -4,20 +4,25 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ExternalHelpers extends StObject {
+@js.native
+trait ExternalHelpers[V] extends StObject {
   
-  var prefs: ValidationOptions
-}
-object ExternalHelpers {
+  def error(code: String): ErrorReport = js.native
+  def error(code: String, local: Context): ErrorReport = js.native
   
-  inline def apply(prefs: ValidationOptions): ExternalHelpers = {
-    val __obj = js.Dynamic.literal(prefs = prefs.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ExternalHelpers]
-  }
+  var linked: ExtensionBoundSchema | Null = js.native
   
-  @scala.inline
-  implicit open class MutableBuilder[Self <: ExternalHelpers] (val x: Self) extends AnyVal {
-    
-    inline def setPrefs(value: ValidationOptions): Self = StObject.set(x, "prefs", value.asInstanceOf[js.Any])
-  }
+  def message(messages: LanguageMessages): ErrorReport = js.native
+  def message(messages: LanguageMessages, local: Context): ErrorReport = js.native
+  
+  var original: V = js.native
+  
+  var prefs: ValidationOptions = js.native
+  
+  var schema: ExtensionBoundSchema = js.native
+  
+  var state: State = js.native
+  
+  def warn(code: String): Unit = js.native
+  def warn(code: String, local: Context): Unit = js.native
 }

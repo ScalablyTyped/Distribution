@@ -14,6 +14,7 @@ trait ActionableOptions
   
   /**
     * The distance in pixels an element must exceed over time to be considered animating
+    *
     * @default 5
     */
   var animationDistanceThreshold: Double

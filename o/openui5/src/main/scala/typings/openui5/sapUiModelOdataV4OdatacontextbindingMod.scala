@@ -183,7 +183,8 @@ object sapUiModelOdataV4OdatacontextbindingMod {
     /**
       * @SINCE 1.45.0
       *
-      * Changes this binding's parameters and refreshes the binding.
+      * Changes this binding's parameters and refreshes the binding. Since 1.111.0, a list binding's header context
+      * is deselected.
       *
       * If there are pending changes that cannot be ignored, an error is thrown. Use {@link #hasPendingChanges}
       * to check if there are such pending changes. If there are, call {@link sap.ui.model.odata.v4.ODataModel#submitBatch}
@@ -271,9 +272,9 @@ object sapUiModelOdataV4OdatacontextbindingMod {
       * returns a `Promise` that resolves with `false`. In this case `oError.canceled === true`.  It is
       * also rejected if `bReplaceWithRVC` is supplied, and there is no return value context at all or the existing
       * context as described above is currently part of the list's collection (that is, has an index).
-      *  A return value context is a {@link sap.ui.model.odata.v4.Context} which represents a bound operation
+      *  A return value context is an {@link sap.ui.model.odata.v4.Context} which represents a bound operation
       * response. It is created only if the operation is bound and has a single entity return value from the
-      * same entity set as the operation's binding parameter and has a parent context which is a {@link sap.ui.model.odata.v4.Context}
+      * same entity set as the operation's binding parameter and has a parent context which is an {@link sap.ui.model.odata.v4.Context}
       * and points to an entity from an entity set. It is destroyed the next time this operation binding is executed
       * again!
       *  If a return value context is created, it must be used instead of `this.getBoundContext()`. All bound
@@ -752,7 +753,9 @@ object sapUiModelOdataV4OdatacontextbindingMod {
       * Returns `true` if this binding or its dependent bindings have property changes, created entities, or
       * entity deletions which have not been sent successfully to the server. This function does not take the
       * execution of OData operations (see {@link sap.ui.model.odata.v4.ODataContextBinding#execute}) into account.
-      * Since 1.98.0, {@link sap.ui.model.odata.v4.Context#isInactive inactive} contexts are ignored.
+      * Since 1.98.0, {@link sap.ui.model.odata.v4.Context#isInactive inactive} contexts are ignored, unless
+      * (since 1.100.0) their {@link sap.ui.model.odata.v4.ODataListBinding#event:createActivate activation}
+      * has been prevented and {@link sap.ui.model.odata.v4.Context#isInactive} therefore returns `1`.
       *
       * Note: If this binding is relative, its data is cached separately for each parent context path. This method
       * returns `true` if there are pending changes for the current parent context path of this binding. If this

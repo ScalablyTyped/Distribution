@@ -1,7 +1,8 @@
 package typings.awsSdkSignatureV4
 
-import typings.awsSdkTypes.distTypesCredentialsMod.Credentials
+import typings.awsSdkTypes.distTypesChecksumMod.ChecksumConstructor
 import typings.awsSdkTypes.distTypesCryptoMod.HashConstructor
+import typings.awsSdkTypes.distTypesIdentityAwsCredentialIdentityMod.AwsCredentialIdentity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,8 +18,15 @@ object distTypesCredentialDerivationMod {
   inline def createScope(shortDate: String, region: String, service: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createScope")(shortDate.asInstanceOf[js.Any], region.asInstanceOf[js.Any], service.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def getSigningKey(
+    sha256Constructor: ChecksumConstructor,
+    credentials: AwsCredentialIdentity,
+    shortDate: String,
+    region: String,
+    service: String
+  ): js.Promise[js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSigningKey")(sha256Constructor.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], shortDate.asInstanceOf[js.Any], region.asInstanceOf[js.Any], service.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
+  inline def getSigningKey(
     sha256Constructor: HashConstructor,
-    credentials: Credentials,
+    credentials: AwsCredentialIdentity,
     shortDate: String,
     region: String,
     service: String

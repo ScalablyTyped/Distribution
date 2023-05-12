@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class TabInputText protected ()
   extends typings.vscode.mod.TabInputText {
   /**
-    * Constructs a text tab input with the given URI.
-    * @param uri The URI of the tab.
-    */
+  		 * Constructs a text tab input with the given URI.
+  		 * @param uri The URI of the tab.
+  		 */
   def this(uri: typings.vscode.mod.Uri) = this()
 }

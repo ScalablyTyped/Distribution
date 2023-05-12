@@ -12,7 +12,7 @@ trait EncryptionSpecification extends StObject {
   var kmsKeyIdentifier: js.UndefOr[kmsKeyARN] = js.undefined
   
   /**
-    * The encryption option specified for the table. You can choose one of the following KMS keys (KMS keys): • type:AWS_OWNED_KMS_KEY - This key is owned by Amazon Keyspaces.  • type:CUSTOMER_MANAGED_KMS_KEY - This key is stored in your account and is created, owned, and managed by you. This option requires the kms_key_identifier of the KMS key in Amazon Resource Name (ARN) format as input.  The default is type:AWS_OWNED_KMS_KEY.  For more information, see Encryption at rest in the Amazon Keyspaces Developer Guide.
+    * The encryption option specified for the table. You can choose one of the following KMS keys (KMS keys):    type:AWS_OWNED_KMS_KEY - This key is owned by Amazon Keyspaces.     type:CUSTOMER_MANAGED_KMS_KEY - This key is stored in your account and is created, owned, and managed by you. This option requires the kms_key_identifier of the KMS key in Amazon Resource Name (ARN) format as input.    The default is type:AWS_OWNED_KMS_KEY.  For more information, see Encryption at rest in the Amazon Keyspaces Developer Guide.
     */
   var `type`: EncryptionType
 }

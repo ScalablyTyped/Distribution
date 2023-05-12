@@ -12,7 +12,7 @@ open class Modal protected () extends Component[IsOpen, Any] {
   def this(props: HTMLAttributesidclassName & IsOpen) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: HTMLAttributesidclassName & IsOpen, context: Any) = this()
 }

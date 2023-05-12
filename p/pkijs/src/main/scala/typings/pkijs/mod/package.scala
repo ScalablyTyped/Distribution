@@ -298,7 +298,7 @@ inline def kdf(
 /**
   * Sets global crypto engine
   * @param name Name of the crypto engine
-  * @param crypto Crypto engine
+  * @param crypto Crypto engine. If the parameter is omitted, `CryptoEngine` with `self.crypto` are used
   * @since 3.0.0
   */
 inline def setEngine(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEngine")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]

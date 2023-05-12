@@ -74,6 +74,10 @@ object anon {
   
   trait Disabled extends StObject {
     
+    /**
+      * When present, it specifies that the component should be disabled.
+      * @defaultValue false
+      */
     var disabled: js.UndefOr[Boolean] = js.undefined
   }
   object Disabled {
@@ -105,10 +109,19 @@ object anon {
   
   trait FilterField extends StObject {
     
+    /**
+      * Field name of the current column.
+      */
     var filterField: String
     
+    /**
+      * Filter metadata for the current column.
+      */
     var filterMeta: js.UndefOr[js.Object | Null] = js.undefined
     
+    /**
+      * Properties of the current column.
+      */
     var props: ColumnProps
   }
   object FilterField {
@@ -196,6 +209,32 @@ object anon {
       inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
       inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Max extends StObject {
+    
+    var max: Double
+    
+    var min: Double
+    
+    var step: Double
+  }
+  object Max {
+    
+    inline def apply(max: Double, min: Double, step: Double): Max = {
+      val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Max]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Max] (val x: Self) extends AnyVal {
+      
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     }
   }
   

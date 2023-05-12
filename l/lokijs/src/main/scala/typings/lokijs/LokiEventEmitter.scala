@@ -37,7 +37,7 @@ trait LokiEventEmitter extends StObject {
   ] = js.native
   
   /**
-    * @prop asyncListeners - boolean determines whether or not the callbacks associated with each event
+    * asyncListeners - boolean determines whether or not the callbacks associated with each event
     * should happen in an async fashion or not
     * Default is false, which means events are synchronous
     */
@@ -56,7 +56,7 @@ trait LokiEventEmitter extends StObject {
   def emit(eventName: String, data: Unit, arg: Any): Unit = js.native
   
   /**
-    * @prop events - a hashmap, with each property being an array of callbacks
+    * events - a hashmap, with each property being an array of callbacks
     */
   var events: StringDictionary[js.Array[js.Function1[/* repeated */ Any, Any]]] = js.native
   

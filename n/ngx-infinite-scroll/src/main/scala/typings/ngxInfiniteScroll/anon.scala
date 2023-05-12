@@ -177,7 +177,8 @@ object anon {
         Scrolled, 
         scala.Nothing, 
         scala.Nothing, 
-        `false`
+        `false`, 
+        scala.Nothing
       ] = js.native
     
     var ɵfac: ɵɵFactoryDeclaration[InfiniteScrollDirective, scala.Nothing] = js.native

@@ -12,7 +12,7 @@ trait ModifySpotFleetRequestRequest extends StObject {
   var Context: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates whether running Spot Instances should be terminated if the target capacity of the Spot Fleet request is decreased below the current size of the Spot Fleet.
+    * Indicates whether running instances should be terminated if the target capacity of the Spot Fleet request is decreased below the current size of the Spot Fleet. Supported only for fleets of type maintain.
     */
   var ExcessCapacityTerminationPolicy: js.UndefOr[typings.awsSdk.clientsEc2Mod.ExcessCapacityTerminationPolicy] = js.undefined
   

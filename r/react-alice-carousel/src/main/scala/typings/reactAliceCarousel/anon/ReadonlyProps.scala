@@ -1,5 +1,6 @@
 package typings.reactAliceCarousel.anon
 
+import typings.react.mod.ReactNode
 import typings.reactAliceCarousel.libTypesMod.AnimationType
 import typings.reactAliceCarousel.libTypesMod.AutoPlayStrategy
 import typings.reactAliceCarousel.libTypesMod.AutoplayDirection
@@ -91,17 +92,17 @@ trait ReadonlyProps extends StObject {
   
   val preservePosition: js.UndefOr[Boolean] = js.undefined
   
-  val renderDotsItem: js.UndefOr[js.Function1[/* e */ DotsItem, Any]] = js.undefined
+  val renderDotsItem: js.UndefOr[js.Function1[/* e */ DotsItem, ReactNode]] = js.undefined
   
   val renderKey: js.UndefOr[Double] = js.undefined
   
-  val renderNextButton: js.UndefOr[js.Function1[/* param0 */ IsDisabled, Any]] = js.undefined
+  val renderNextButton: js.UndefOr[js.Function1[/* param0 */ IsDisabled, ReactNode]] = js.undefined
   
-  val renderPlayPauseButton: js.UndefOr[js.Function1[/* param0 */ IsPlaying, Any]] = js.undefined
+  val renderPlayPauseButton: js.UndefOr[js.Function1[/* param0 */ IsPlaying, ReactNode]] = js.undefined
   
-  val renderPrevButton: js.UndefOr[js.Function1[/* param0 */ IsDisabled, Any]] = js.undefined
+  val renderPrevButton: js.UndefOr[js.Function1[/* param0 */ IsDisabled, ReactNode]] = js.undefined
   
-  val renderSlideInfo: js.UndefOr[js.Function1[/* e */ SlideInfo, Any]] = js.undefined
+  val renderSlideInfo: js.UndefOr[js.Function1[/* e */ SlideInfo, ReactNode]] = js.undefined
   
   val responsive: js.UndefOr[Responsive] = js.undefined
   
@@ -247,7 +248,7 @@ object ReadonlyProps {
     
     inline def setPreservePositionUndefined: Self = StObject.set(x, "preservePosition", js.undefined)
     
-    inline def setRenderDotsItem(value: /* e */ DotsItem => Any): Self = StObject.set(x, "renderDotsItem", js.Any.fromFunction1(value))
+    inline def setRenderDotsItem(value: /* e */ DotsItem => ReactNode): Self = StObject.set(x, "renderDotsItem", js.Any.fromFunction1(value))
     
     inline def setRenderDotsItemUndefined: Self = StObject.set(x, "renderDotsItem", js.undefined)
     
@@ -255,19 +256,19 @@ object ReadonlyProps {
     
     inline def setRenderKeyUndefined: Self = StObject.set(x, "renderKey", js.undefined)
     
-    inline def setRenderNextButton(value: /* param0 */ IsDisabled => Any): Self = StObject.set(x, "renderNextButton", js.Any.fromFunction1(value))
+    inline def setRenderNextButton(value: /* param0 */ IsDisabled => ReactNode): Self = StObject.set(x, "renderNextButton", js.Any.fromFunction1(value))
     
     inline def setRenderNextButtonUndefined: Self = StObject.set(x, "renderNextButton", js.undefined)
     
-    inline def setRenderPlayPauseButton(value: /* param0 */ IsPlaying => Any): Self = StObject.set(x, "renderPlayPauseButton", js.Any.fromFunction1(value))
+    inline def setRenderPlayPauseButton(value: /* param0 */ IsPlaying => ReactNode): Self = StObject.set(x, "renderPlayPauseButton", js.Any.fromFunction1(value))
     
     inline def setRenderPlayPauseButtonUndefined: Self = StObject.set(x, "renderPlayPauseButton", js.undefined)
     
-    inline def setRenderPrevButton(value: /* param0 */ IsDisabled => Any): Self = StObject.set(x, "renderPrevButton", js.Any.fromFunction1(value))
+    inline def setRenderPrevButton(value: /* param0 */ IsDisabled => ReactNode): Self = StObject.set(x, "renderPrevButton", js.Any.fromFunction1(value))
     
     inline def setRenderPrevButtonUndefined: Self = StObject.set(x, "renderPrevButton", js.undefined)
     
-    inline def setRenderSlideInfo(value: /* e */ SlideInfo => Any): Self = StObject.set(x, "renderSlideInfo", js.Any.fromFunction1(value))
+    inline def setRenderSlideInfo(value: /* e */ SlideInfo => ReactNode): Self = StObject.set(x, "renderSlideInfo", js.Any.fromFunction1(value))
     
     inline def setRenderSlideInfoUndefined: Self = StObject.set(x, "renderSlideInfo", js.undefined)
     

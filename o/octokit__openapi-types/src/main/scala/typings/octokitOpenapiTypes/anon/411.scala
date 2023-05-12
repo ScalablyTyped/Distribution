@@ -6,9 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `411` extends StObject {
   
-  var runners: js.UndefOr[js.Array[Os]] = js.undefined
+  var per_page: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['per-page'] */ js.Any
+  ] = js.undefined
   
-  var total_count: js.UndefOr[Double] = js.undefined
+  var since: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['since-user'] */ js.Any
+  ] = js.undefined
 }
 object `411` {
   
@@ -20,14 +24,16 @@ object `411` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `411`] (val x: Self) extends AnyVal {
     
-    inline def setRunners(value: js.Array[Os]): Self = StObject.set(x, "runners", value.asInstanceOf[js.Any])
+    inline def setPer_page(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['per-page'] */ js.Any
+    ): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
     
-    inline def setRunnersUndefined: Self = StObject.set(x, "runners", js.undefined)
+    inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
     
-    inline def setRunnersVarargs(value: Os*): Self = StObject.set(x, "runners", js.Array(value*))
+    inline def setSince(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['since-user'] */ js.Any
+    ): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
-    inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
-    
-    inline def setTotal_countUndefined: Self = StObject.set(x, "total_count", js.undefined)
+    inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
   }
 }

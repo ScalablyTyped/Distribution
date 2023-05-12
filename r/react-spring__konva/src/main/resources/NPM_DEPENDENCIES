@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-spring/konva" : "9.5.4"
+      "@react-spring/konva" : "9.7.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-spring/konva" : "9.5.4"
+      "@react-spring/konva" : "9.7.2"
     }
   ],
   "compile-devDependencies" : [

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EnvironmentSummary extends StObject {
   
   /**
-    * The timestamp when the environment was created.
+    * The timestamp when the runtime environment was created.
     */
   var creationTime: js.Date
   
   /**
-    * The target platform for the environment.
+    * The target platform for the runtime environment.
     */
   var engineType: EngineType
   
@@ -32,17 +32,17 @@ trait EnvironmentSummary extends StObject {
   var environmentId: Identifier
   
   /**
-    * The instance type of the environment.
+    * The instance type of the runtime environment.
     */
   var instanceType: String20
   
   /**
-    * The name of the environment.
+    * The name of the runtime environment.
     */
   var name: EntityName
   
   /**
-    * The status of the environment
+    * The status of the runtime environment
     */
   var status: EnvironmentLifecycle
 }

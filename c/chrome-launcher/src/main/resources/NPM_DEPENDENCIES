@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "chrome-launcher" : "0.15.1"
+      "chrome-launcher" : "0.15.2"
     }
   ],
   "test-dependencies" : [
     {
-      "chrome-launcher" : "0.15.1"
+      "chrome-launcher" : "0.15.2"
     }
   ],
   "compile-devDependencies" : [

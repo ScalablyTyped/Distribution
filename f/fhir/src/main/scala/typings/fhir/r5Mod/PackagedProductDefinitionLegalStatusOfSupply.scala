@@ -9,7 +9,7 @@ trait PackagedProductDefinitionLegalStatusOfSupply
      with BackboneElement {
   
   /**
-    * The actual status of supply. In what situation this package type may be supplied for use.
+    * The actual status of supply. Conveys in what situation this package type may be supplied for use.
     */
   var code: js.UndefOr[CodeableConcept] = js.undefined
   

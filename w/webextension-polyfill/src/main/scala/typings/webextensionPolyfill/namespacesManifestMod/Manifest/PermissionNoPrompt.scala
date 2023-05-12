@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webextensionPolyfill.webextensionPolyfillStrings.unlimitedStorage
   - typings.webextensionPolyfill.webextensionPolyfillStrings.captivePortal
   - typings.webextensionPolyfill.webextensionPolyfillStrings.contextualIdentities
+  - typings.webextensionPolyfill.webextensionPolyfillStrings.declarativeNetRequestFeedback
+  - typings.webextensionPolyfill.webextensionPolyfillStrings.declarativeNetRequestWithHostAccess
   - typings.webextensionPolyfill.webextensionPolyfillStrings.dns
   - typings.webextensionPolyfill.webextensionPolyfillStrings.geckoProfiler
   - typings.webextensionPolyfill.webextensionPolyfillStrings.identity
@@ -49,6 +51,10 @@ object PermissionNoPrompt {
   inline def contextualIdentities: typings.webextensionPolyfill.webextensionPolyfillStrings.contextualIdentities = "contextualIdentities".asInstanceOf[typings.webextensionPolyfill.webextensionPolyfillStrings.contextualIdentities]
   
   inline def cookies: typings.webextensionPolyfill.webextensionPolyfillStrings.cookies = "cookies".asInstanceOf[typings.webextensionPolyfill.webextensionPolyfillStrings.cookies]
+  
+  inline def declarativeNetRequestFeedback: typings.webextensionPolyfill.webextensionPolyfillStrings.declarativeNetRequestFeedback = "declarativeNetRequestFeedback".asInstanceOf[typings.webextensionPolyfill.webextensionPolyfillStrings.declarativeNetRequestFeedback]
+  
+  inline def declarativeNetRequestWithHostAccess: typings.webextensionPolyfill.webextensionPolyfillStrings.declarativeNetRequestWithHostAccess = "declarativeNetRequestWithHostAccess".asInstanceOf[typings.webextensionPolyfill.webextensionPolyfillStrings.declarativeNetRequestWithHostAccess]
   
   inline def dns: typings.webextensionPolyfill.webextensionPolyfillStrings.dns = "dns".asInstanceOf[typings.webextensionPolyfill.webextensionPolyfillStrings.dns]
   

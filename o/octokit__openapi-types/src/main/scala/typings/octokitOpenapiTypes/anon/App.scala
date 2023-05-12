@@ -20,7 +20,7 @@ trait App extends StObject {
   
   var id: Double
   
-  var installation: js.UndefOr[Hasmultiplesinglefiles | Null] = js.undefined
+  var installation: js.UndefOr[Repositoriesurl | Null] = js.undefined
   
   var note: String | Null
   
@@ -70,7 +70,7 @@ object App {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setInstallation(value: Hasmultiplesinglefiles): Self = StObject.set(x, "installation", value.asInstanceOf[js.Any])
+    inline def setInstallation(value: Repositoriesurl): Self = StObject.set(x, "installation", value.asInstanceOf[js.Any])
     
     inline def setInstallationNull: Self = StObject.set(x, "installation", null)
     

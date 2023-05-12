@@ -8,31 +8,35 @@ object libRestPricingMod {
   
   @JSImport("twilio/lib/rest/Pricing", JSImport.Namespace)
   @js.native
-  open class ^ protected () extends Pricing {
-    /**
-      * Initialize pricing domain
-      *
-      * @param twilio - The twilio client
-      */
-    def this(twilio: typings.twilio.libRestTwilioMod.^) = this()
-  }
+  open class ^ () extends Pricing
   
   @js.native
   trait Pricing
-    extends typings.twilio.libBaseDomainMod.^ {
+    extends typings.twilio.libRestPricingBaseMod.^ {
     
-    val countries: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CountryListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v2.countries instead
+      */
+    def countries: Any = js.native
     
-    val messaging: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MessagingListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.messaging instead
+      */
+    def messaging: Any = js.native
     
-    val numbers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NumberListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v2.numbers instead
+      */
+    def numbers: Any = js.native
     
-    val phoneNumbers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PhoneNumberListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.phoneNumbers instead
+      */
+    def phoneNumbers: Any = js.native
     
-    val v1: typings.twilio.libRestPricingV1Mod.^ = js.native
-    
-    val v2: typings.twilio.libRestPricingV2Mod.^ = js.native
-    
-    val voice: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VoiceListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v2.voice instead
+      */
+    def voice: Any = js.native
   }
 }

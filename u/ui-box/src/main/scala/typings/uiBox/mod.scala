@@ -3,7 +3,6 @@ package typings.uiBox
 import typings.react.mod.ElementType
 import typings.react.mod.global.JSX.Element
 import typings.uiBox.anon.Cache
-import typings.uiBox.anon.PartialRecordKeyframesTim
 import typings.uiBox.distSrcCacheMod.CacheEntry
 import typings.uiBox.distSrcTypesBoxTypesMod.BoxProps
 import typings.uiBox.distSrcTypesEnhancersMod.EnhancerProps
@@ -11,6 +10,7 @@ import typings.uiBox.distSrcTypesEnhancersMod.PropAliases
 import typings.uiBox.distSrcTypesEnhancersMod.PropEnhancers
 import typings.uiBox.distSrcTypesEnhancersMod.PropTypesMapping
 import typings.uiBox.distSrcTypesEnhancersMod.PropValidators
+import typings.uiBox.distSrcTypesKeyframesMod.KeyframesTimeline
 import typings.uiBox.distSrcUtilsSafeHrefMod.SafeHrefConfigObj
 import typings.uiBox.distSrcUtilsSplitBoxPropsMod.SplitBoxProps
 import typings.uiBox.distSrcUtilsSplitPropsMod.Dictionary
@@ -202,7 +202,7 @@ object mod {
     val propValidators: PropValidators = js.native
   }
   
-  inline def keyframes(friendlyName: String, timeline: PartialRecordKeyframesTim): String = (^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(friendlyName.asInstanceOf[js.Any], timeline.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def keyframes(friendlyName: String, timeline: KeyframesTimeline): String = (^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(friendlyName.asInstanceOf[js.Any], timeline.asInstanceOf[js.Any])).asInstanceOf[String]
   
   object layout {
     

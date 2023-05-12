@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait S3Configuration extends StObject {
   
   /**
-    * &gt;Bucket name of the customer S3 bucket.
+    * The bucket name of the customer S3 bucket.
     */
   var BucketName: js.UndefOr[S3BucketName] = js.undefined
   
   /**
-    * Encryption option for the customer s3 location. Options are S3 server side encryption with an S3-managed key or KMS managed key.
+    * The encryption option for the customer S3 location. Options are S3 server-side encryption with an S3 managed key or Amazon Web Services managed key.
     */
   var EncryptionOption: js.UndefOr[S3EncryptionOption] = js.undefined
   
   /**
-    * KMS key id for the customer s3 location when encrypting with a KMS managed key.
+    * The KMS key ID for the customer S3 location when encrypting with an Amazon Web Services managed key.
     */
   var KmsKeyId: js.UndefOr[StringValue2048] = js.undefined
   
   /**
-    * Object key preview for the customer S3 location.
+    * The object key preview for the customer S3 location.
     */
   var ObjectKeyPrefix: js.UndefOr[S3ObjectKeyPrefix] = js.undefined
 }

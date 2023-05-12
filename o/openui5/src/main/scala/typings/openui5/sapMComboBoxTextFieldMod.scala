@@ -123,6 +123,8 @@ object sapMComboBoxTextFieldMod {
     extends typings.openui5.sapMInputBaseMod.default {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns the arrow icon
       *
       * Left for backward compatibility.
@@ -190,6 +192,8 @@ object sapMComboBoxTextFieldMod {
     bShowButton: Boolean): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Toggles the icon pressed style on or off.
       */
     def toggleIconPressedStyle(): Unit = js.native

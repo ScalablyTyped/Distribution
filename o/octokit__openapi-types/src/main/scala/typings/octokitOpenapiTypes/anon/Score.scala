@@ -6,9 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Score extends StObject {
   
-  var score: Double
+  /** @description The overall CVSS score of the advisory. */
+  val score: Double
   
-  var vector_string: String | Null
+  /** @description The full CVSS vector string for the advisory. */
+  val vector_string: String | Null
 }
 object Score {
   

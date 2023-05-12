@@ -3,7 +3,7 @@ package typings.blueprintjsCore
 import org.scalablytyped.runtime.Instantiable1
 import typings.blueprintjsCore.libEsmCommonPropsMod.IProps
 import typings.blueprintjsCore.libEsmCommonPropsMod.MaybeElement
-import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsIcons.libEsmGeneratedIcons16pxBlueprintIcons16Mod.BlueprintIcons16Id
 import typings.react.mod.Component
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
@@ -24,7 +24,7 @@ object libEsmComponentsTreeTreeNodeMod {
     def this(props: ITreeNodeProps[T]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ITreeNodeProps[T], context: Any) = this()
     

@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PostRequestBodyContentApplicationjsonBase extends StObject {
   
+  /** Merge a branch */
   var post: RequestBodyContentApplicationjsonBase
 }
 object PostRequestBodyContentApplicationjsonBase {

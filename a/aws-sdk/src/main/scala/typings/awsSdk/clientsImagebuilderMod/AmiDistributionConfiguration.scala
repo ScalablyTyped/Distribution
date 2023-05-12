@@ -22,7 +22,7 @@ trait AmiDistributionConfiguration extends StObject {
   var kmsKeyId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    *  Launch permissions can be used to configure which Amazon Web Services accounts can use the AMI to launch instances.
+    * Launch permissions can be used to configure which Amazon Web Services accounts can use the AMI to launch instances.
     */
   var launchPermission: js.UndefOr[LaunchPermissionConfiguration] = js.undefined
   

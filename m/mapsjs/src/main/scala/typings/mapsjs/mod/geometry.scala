@@ -155,7 +155,6 @@ object geometry {
   
   /**
     * A polyline object which is a closed path geometry with one or more paths.
-    * @class polygon
     */
   @JSImport("mapsjs", "geometry.polygon")
   @js.native
@@ -257,7 +256,6 @@ object geometry {
   
   /**
     * A polyline object which is an open path geometry with one or more paths.
-    * @class polyline
     */
   @JSImport("mapsjs", "geometry.polyline")
   @js.native

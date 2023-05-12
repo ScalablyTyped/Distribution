@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConditionCheck extends StObject {
   
   /**
-    * A condition that must be satisfied in order for a conditional update to succeed.
+    * A condition that must be satisfied in order for a conditional update to succeed. For more information, see Condition expressions in the Amazon DynamoDB Developer Guide.
     */
   var ConditionExpression: typings.awsSdk.clientsDynamodbMod.ConditionExpression
   
   /**
-    * One or more substitution tokens for attribute names in an expression.
+    * One or more substitution tokens for attribute names in an expression. For more information, see Expression attribute names in the Amazon DynamoDB Developer Guide.
     */
   var ExpressionAttributeNames: js.UndefOr[ExpressionAttributeNameMap] = js.undefined
   
   /**
-    * One or more values that can be substituted in an expression.
+    * One or more values that can be substituted in an expression. For more information, see Condition expressions in the Amazon DynamoDB Developer Guide.
     */
   var ExpressionAttributeValues: js.UndefOr[ExpressionAttributeValueMap] = js.undefined
   

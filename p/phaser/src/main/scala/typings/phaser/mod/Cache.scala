@@ -222,7 +222,7 @@ object Cache {
       */
     @JSImport("phaser", "Cache.Events.ADD")
     @js.native
-    val ADD: Any = js.native
+    val ADD: String = js.native
     
     /**
       * The Cache Remove Event.
@@ -231,6 +231,6 @@ object Cache {
       */
     @JSImport("phaser", "Cache.Events.REMOVE")
     @js.native
-    val REMOVE: Any = js.native
+    val REMOVE: String = js.native
   }
 }

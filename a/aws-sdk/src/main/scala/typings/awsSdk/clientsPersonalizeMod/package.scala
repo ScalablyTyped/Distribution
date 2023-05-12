@@ -113,6 +113,14 @@ type KmsKeyArn = String
 
 type MaxResults = Double
 
+type MetricAttributes = js.Array[MetricAttribute]
+
+type MetricAttributesNamesList = js.Array[MetricName]
+
+type MetricAttributions = js.Array[MetricAttributionSummary]
+
+type MetricExpression = String
+
 type MetricName = String
 
 type MetricRegex = String

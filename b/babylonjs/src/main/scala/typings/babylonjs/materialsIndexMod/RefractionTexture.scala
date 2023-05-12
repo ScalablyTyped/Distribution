@@ -12,7 +12,7 @@ open class RefractionTexture protected ()
   /**
     * Creates a refraction texture used by refraction channel of the standard material.
     * It is like a mirror but to see through a material.
-    * @see https://doc.babylonjs.com/how_to/reflect#refraction
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/reflectionTexture#refraction
     * @param name Define the texture name
     * @param size Define the size of the underlying texture
     * @param scene Define the scene the refraction belongs to

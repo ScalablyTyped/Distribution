@@ -52,6 +52,8 @@ object libCommonConfigurationMod {
     
     def initialize(): Unit = js.native
     
+    /* private */ var isDisposed: Any = js.native
+    
     /* private */ var onDidChangeConfiguration: Any = js.native
     
     @JSName("registrationType")

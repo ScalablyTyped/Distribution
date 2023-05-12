@@ -2,19 +2,21 @@ package typings.wordpressBlocks.anon
 
 import typings.react.mod.ComponentType
 import typings.std.Record
-import typings.wordpressBlocks.mod.BlockDeprecation
-import typings.wordpressBlocks.mod.BlockEditProps
-import typings.wordpressBlocks.mod.BlockExampleInnerBlock
-import typings.wordpressBlocks.mod.BlockIconNormalized
-import typings.wordpressBlocks.mod.BlockSaveProps
-import typings.wordpressBlocks.mod.BlockStyle
-import typings.wordpressBlocks.mod.BlockSupports
+import typings.wordpressBlocks.BlockDeprecation
+import typings.wordpressBlocks.BlockEditProps
+import typings.wordpressBlocks.BlockExampleInnerBlock
+import typings.wordpressBlocks.BlockIconNormalized
+import typings.wordpressBlocks.BlockSaveProps
+import typings.wordpressBlocks.BlockStyle
+import typings.wordpressBlocks.BlockSupports
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Readonly<std.Partial<@wordpress/blocks.@wordpress/blocks.Block<{}>> & {  innerBlocks :std.ReadonlyArray<@wordpress/blocks.@wordpress/blocks.BlockExampleInnerBlock> | undefined}> */
+/* Inlined std.Readonly<std.Partial<@wordpress/blocks.Block<{}>> & {  innerBlocks :std.ReadonlyArray<@wordpress/blocks.BlockExampleInnerBlock> | undefined}> */
 trait ReadonlyPartialBlockinner extends StObject {
+  
+  val ancestor: js.UndefOr[js.Array[String]] = js.undefined
   
   val apiVersion: js.UndefOr[Double] = js.undefined
   
@@ -81,6 +83,12 @@ object ReadonlyPartialBlockinner {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: ReadonlyPartialBlockinner] (val x: Self) extends AnyVal {
+    
+    inline def setAncestor(value: js.Array[String]): Self = StObject.set(x, "ancestor", value.asInstanceOf[js.Any])
+    
+    inline def setAncestorUndefined: Self = StObject.set(x, "ancestor", js.undefined)
+    
+    inline def setAncestorVarargs(value: String*): Self = StObject.set(x, "ancestor", js.Array(value*))
     
     inline def setApiVersion(value: Double): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     

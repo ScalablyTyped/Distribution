@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.FontVariantPosition
+import typings.csstype.mod.Property.HangingPunctuation
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `378` extends StObject {
   
   var value: js.UndefOr[
-    FontVariantPosition | (js.Array[
+    HangingPunctuation | (js.Array[
       (Extract[
-        js.UndefOr[FontVariantPosition | js.Array[NonNullable[js.UndefOr[FontVariantPosition]]]], 
+        js.UndefOr[HangingPunctuation | js.Array[NonNullable[js.UndefOr[HangingPunctuation]]]], 
         String
-      ]) | NonNullable[js.UndefOr[FontVariantPosition]]
+      ]) | NonNullable[js.UndefOr[HangingPunctuation]]
     ])
   ] = js.native
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ipfs-cli
 
-Typings are for version 0.15.0
+Typings are for version 0.16.0
 
 ## Library description:
 JavaScript implementation of the IPFS specification

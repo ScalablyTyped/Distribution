@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-crypto__sha256-js
 
-Typings are for version 2.0.2
+Typings are for version 4.0.0
 
 ## Library description:
 A pure JS implementation SHA256.

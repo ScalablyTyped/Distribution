@@ -19,5 +19,5 @@ object distKernelsSqrtMod {
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Sqrt", "sqrtImpl")
   @js.native
-  val sqrtImpl: SimpleUnaryImpl = js.native
+  val sqrtImpl: SimpleUnaryImpl[Double, Double] = js.native
 }

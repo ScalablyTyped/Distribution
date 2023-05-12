@@ -51,7 +51,7 @@ type ActionExecutionId = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.InProgress_
-  - typings.awsSdk.awsSdkStrings.Abandoned
+  - typings.awsSdk.awsSdkStrings.Abandoned_
   - typings.awsSdk.awsSdkStrings.Succeeded_
   - typings.awsSdk.awsSdkStrings.Failed_
   - java.lang.String

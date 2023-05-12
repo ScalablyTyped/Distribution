@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "webdriver" : "7.26.0"
+      "webdriver" : "8.10.2"
     }
   ],
   "test-dependencies" : [
     {
-      "webdriver" : "7.26.0"
+      "webdriver" : "8.10.2"
     }
   ],
   "compile-devDependencies" : [

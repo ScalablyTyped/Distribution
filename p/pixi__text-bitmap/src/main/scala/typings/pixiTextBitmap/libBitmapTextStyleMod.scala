@@ -1,5 +1,6 @@
 package typings.pixiTextBitmap
 
+import typings.pixiColor.libColorMod.ColorSource
 import typings.pixiText.libTextStyleMod.TextStyleAlign
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -41,7 +42,7 @@ object libBitmapTextStyleMod {
     
     var maxWidth: Double
     
-    var tint: Double
+    var tint: ColorSource
   }
   object IBitmapTextStyle {
     
@@ -51,7 +52,7 @@ object libBitmapTextStyleMod {
       fontSize: Double,
       letterSpacing: Double,
       maxWidth: Double,
-      tint: Double
+      tint: ColorSource
     ): IBitmapTextStyle = {
       val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], fontName = fontName.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], letterSpacing = letterSpacing.asInstanceOf[js.Any], maxWidth = maxWidth.asInstanceOf[js.Any], tint = tint.asInstanceOf[js.Any])
       __obj.asInstanceOf[IBitmapTextStyle]
@@ -70,7 +71,9 @@ object libBitmapTextStyleMod {
       
       inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      inline def setTint(value: Double): Self = StObject.set(x, "tint", value.asInstanceOf[js.Any])
+      inline def setTint(value: ColorSource): Self = StObject.set(x, "tint", value.asInstanceOf[js.Any])
+      
+      inline def setTintVarargs(value: Double*): Self = StObject.set(x, "tint", js.Array(value*))
     }
   }
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "bulma-calendar" : "6.1.18"
+      "bulma-calendar" : "6.1.19"
     }
   ],
   "test-dependencies" : [
     {
-      "bulma-calendar" : "6.1.18"
+      "bulma-calendar" : "6.1.19"
     }
   ],
   "compile-devDependencies" : [

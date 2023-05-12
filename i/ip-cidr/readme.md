@@ -1,7 +1,7 @@
 
 # Scala.js typings for ip-cidr
 
-Typings are for version 3.0.10
+Typings are for version 3.1.0
 
 ## Library description:
 Module for working with CIDR (v4, v6)

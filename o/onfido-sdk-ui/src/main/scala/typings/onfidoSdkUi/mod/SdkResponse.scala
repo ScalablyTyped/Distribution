@@ -6,8 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SdkResponse extends StObject {
   
-  var active_video: js.UndefOr[ActiveVideoResponse] = js.undefined
-  
   var data: js.UndefOr[Any] = js.undefined
   
   var document_back: js.UndefOr[DocumentResponse] = js.undefined
@@ -29,10 +27,6 @@ object SdkResponse {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: SdkResponse] (val x: Self) extends AnyVal {
-    
-    inline def setActive_video(value: ActiveVideoResponse): Self = StObject.set(x, "active_video", value.asInstanceOf[js.Any])
-    
-    inline def setActive_videoUndefined: Self = StObject.set(x, "active_video", js.undefined)
     
     inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

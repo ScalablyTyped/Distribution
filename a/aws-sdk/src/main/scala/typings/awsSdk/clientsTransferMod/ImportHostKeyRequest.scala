@@ -12,7 +12,7 @@ trait ImportHostKeyRequest extends StObject {
   var Description: js.UndefOr[HostKeyDescription] = js.undefined
   
   /**
-    * The public key portion of an SSH key pair. Transfer Family accepts RSA, ECDSA, and ED25519 keys.
+    * The private key portion of an SSH key pair. Transfer Family accepts RSA, ECDSA, and ED25519 keys.
     */
   var HostKeyBody: HostKey
   

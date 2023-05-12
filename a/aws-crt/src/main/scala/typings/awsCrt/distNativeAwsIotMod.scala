@@ -3,6 +3,7 @@ package typings.awsCrt
 import typings.awsCrt.distCommonAuthMod.WebsocketOptionsBase
 import typings.awsCrt.distNativeAuthMod.AwsCredentialsProvider
 import typings.awsCrt.distNativeHttpMod.HttpProxyOptions
+import typings.awsCrt.distNativeIoMod.Pkcs12Options
 import typings.awsCrt.distNativeIoMod.SocketOptions
 import typings.awsCrt.distNativeIoMod.TlsContextOptions
 import typings.awsCrt.distNativeIoMod.TlsContextOptions.Pkcs11Options
@@ -76,14 +77,47 @@ object distNativeAwsIotMod {
       * @param username The username to use with the custom authorizer. If an empty string is passed, it will
       *                 check to see if a username has already been set (via WithUsername function). If no
       *                 username is set then no username will be passed with the MQTT connection.
-      * @param authorizerName The name of the custom authorizer. If an empty string is passed, then
+      * @param authorizer_name The name of the custom authorizer. If an empty string is passed, then
       *                       'x-amz-customauthorizer-name' will not be added with the MQTT connection.
-      * @param authorizerSignature The signature of the custom authorizer. If an empty string is passed, then
+      * @param authorizer_signature The signature of the custom authorizer. If an empty string is passed, then
       *                            'x-amz-customauthorizer-signature' will not be added with the MQTT connection.
+      *                            The signature must be based on the private key associated with the custom authorizer.
+      *                            The signature must be base64 encoded.
+      *                            Required if the custom authorizer has signing enabled.  It is strongly suggested to URL-encode
+      *                            this value; the SDK will not do so for you.
       * @param password The password to use with the custom authorizer. If null is passed, then no password will
       *                 be set.
+      * @param token_key_name Key used to extract the custom authorizer token from MQTT username query-string properties.
+      *                       Required if the custom authorizer has signing enabled.  It is strongly suggested to URL-encode
+      *                       this value; the SDK will not do so for you.
+      * @param token_value An opaque token value.
+      *                    Required if the custom authorizer has signing enabled. This value must be signed by the private
+      *                    key associated with the custom authorizer and the result placed in the token_signature argument.
       */
     def with_custom_authorizer(username: String, authorizer_name: String, authorizer_signature: String, password: String): this.type = js.native
+    def with_custom_authorizer(
+      username: String,
+      authorizer_name: String,
+      authorizer_signature: String,
+      password: String,
+      token_key_name: String
+    ): this.type = js.native
+    def with_custom_authorizer(
+      username: String,
+      authorizer_name: String,
+      authorizer_signature: String,
+      password: String,
+      token_key_name: String,
+      token_value: String
+    ): this.type = js.native
+    def with_custom_authorizer(
+      username: String,
+      authorizer_name: String,
+      authorizer_signature: String,
+      password: String,
+      token_key_name: Unit,
+      token_value: String
+    ): this.type = js.native
     
     /**
       * Configures the IoT endpoint for this connection
@@ -181,6 +215,13 @@ object distNativeAwsIotMod {
     inline def configure_websocket_handshake_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("configure_websocket_handshake")(x.asInstanceOf[js.Any])
     
     /**
+      * For API compatibility with the browser version. Alias for {@link new_with_websockets}.
+      *
+      * @returns a new websocket connection builder object with default TLS configuration
+      */
+    inline def new_builder_for_websocket(): AwsIotMqttConnectionConfigBuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("new_builder_for_websocket")().asInstanceOf[AwsIotMqttConnectionConfigBuilder]
+    
+    /**
       * Creates a new builder with default Tls options. This requires setting the connection details manually.
       */
     inline def new_default_builder(): AwsIotMqttConnectionConfigBuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("new_default_builder")().asInstanceOf[AwsIotMqttConnectionConfigBuilder]
@@ -206,6 +247,15 @@ object distNativeAwsIotMod {
       * @param pkcs11_options - PKCS#11 options.
       */
     inline def new_mtls_pkcs11_builder(pkcs11_options: Pkcs11Options): AwsIotMqttConnectionConfigBuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("new_mtls_pkcs11_builder")(pkcs11_options.asInstanceOf[js.Any]).asInstanceOf[AwsIotMqttConnectionConfigBuilder]
+    
+    /**
+      * Create a new builder with mTLS using a PKCS#12 file for private key operations.
+      *
+      * Note: This configuration only works on MacOS devices.
+      *
+      * @param pkcs12_options - The PKCS#12 options to use in the builder.
+      */
+    inline def new_mtls_pkcs12_builder(pkcs12_options: Pkcs12Options): AwsIotMqttConnectionConfigBuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("new_mtls_pkcs12_builder")(pkcs12_options.asInstanceOf[js.Any]).asInstanceOf[AwsIotMqttConnectionConfigBuilder]
     
     /**
       * Create a new builder with mTLS using a certificate in a Windows certificate store.

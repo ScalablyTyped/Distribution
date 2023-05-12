@@ -36,6 +36,9 @@ object examplesJsmLoadersVrmlloaderMod {
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): Unit = js.native
     
+    def loadAsync(url: String): js.Promise[Scene] = js.native
+    def loadAsync(url: String, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[Scene] = js.native
+    
     def parse(data: String, path: String): Scene = js.native
   }
 }

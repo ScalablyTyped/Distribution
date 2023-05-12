@@ -139,10 +139,10 @@ object events {
     *
     * @example
     *   // This listener is called when an impression becomes viewable.
-    *   var targetSlot = googletag.defineSlot('/1234567/example', [160, 600]);
+    *   const targetSlot = googletag.defineSlot('/1234567/example', [160, 600]);
     *   googletag.pubads().addEventListener('impressionViewable',
-    *       function(event) {
-    *         var slot = event.slot;
+    *       (event) => {
+    *         const slot = event.slot;
     *         console.log('Impression for slot', slot.getSlotElementId(),
     *                     'became viewable.');
     *
@@ -164,10 +164,10 @@ object events {
     * instead.
     * @example
     *   // This listener is called when the user closes a rewarded ad slot.
-    *   var targetSlot = googletag.defineSlot('/1234567/example', [160, 600]);
+    *   const targetSlot = googletag.defineSlot('/1234567/example', [160, 600]);
     *   googletag.pubads().addEventListener('rewardedSlotClosed',
-    *       function(event) {
-    *         var slot = event.slot;
+    *       (event) => {
+    *         const slot = event.slot;
     *         console.log('Rewarded ad slot', slot.getSlotElementId(),
     *                     'has been closed.');
     *
@@ -191,10 +191,10 @@ object events {
     * @example
     *   // This listener is called whenever a reward is granted for a
     *   // rewarded ad.
-    *   var targetSlot = googletag.defineSlot('/1234567/example', [160, 600]);
+    *   const targetSlot = googletag.defineSlot('/1234567/example', [160, 600]);
     *   googletag.pubads().addEventListener('rewardedSlotGranted',
-    *       function(event) {
-    *         var slot = event.slot;
+    *       (event) => {
+    *         const slot = event.slot;
     *         console.group(
     *             'Reward granted for slot', slot.getSlotElementId(), '.');
     *
@@ -243,15 +243,16 @@ object events {
     * @example
     *   // This listener is called when a rewarded ad slot becomes ready to be
     *   // displayed.
-    *   var targetSlot = googletag.defineSlot('/1234567/example', [160, 600]);
+    *   const targetSlot = googletag.defineSlot('/1234567/example', [160, 600]);
     *   googletag.pubads().addEventListener('rewardedSlotReady',
-    *       function(event) {
-    *         var slot = event.slot;
+    *       (event) => {
+    *         const slot = event.slot;
     *         console.log('Rewarded ad slot', slot.getSlotElementId(),
     *                     'is ready to be displayed.');
     *
-    *         if('User consents to viewing the ad.') {
-    *           // Display the ad.
+    *         // Replace with custom logic.
+    *         const userHasConsented = true;
+    *         if(userHasConsented) {
     *           event.makeRewardedVisible();
     *         }
     *
@@ -295,9 +296,9 @@ object events {
     *
     * @example
     *   // This listener is called when a creative iframe load event fires.
-    *   var targetSlot = googletag.defineSlot('/1234567/example', [160, 600]);
-    *   googletag.pubads().addEventListener('slotOnload', function(event) {
-    *     var slot = event.slot;
+    *   const targetSlot = googletag.defineSlot('/1234567/example', [160, 600]);
+    *   googletag.pubads().addEventListener('slotOnload', (event) => {
+    *     const slot = event.slot;
     *     console.log('Creative iframe for slot', slot.getSlotElementId(),
     *                 'has loaded.');
     *
@@ -320,10 +321,10 @@ object events {
     *
     * @example
     *   // This listener is called when a slot has finished rendering.
-    *   var targetSlot = googletag.defineSlot('/1234567/example', [160, 600]);
+    *   const targetSlot = googletag.defineSlot('/1234567/example', [160, 600]);
     *   googletag.pubads().addEventListener('slotRenderEnded',
-    *       function(event) {
-    *         var slot = event.slot;
+    *       (event) => {
+    *         const slot = event.slot;
     *         console.group(
     *             'Slot', slot.getSlotElementId(), 'finished rendering.');
     *
@@ -538,9 +539,9 @@ object events {
     *   // request for a slot. Each slot will fire this event, even though they
     *   // may be batched together in a single request if single request
     *   // architecture (SRA) is enabled.
-    *   var targetSlot = googletag.defineSlot('/1234567/example', [160, 600]);
-    *   googletag.pubads().addEventListener('slotRequested', function(event) {
-    *     var slot = event.slot;
+    *   const targetSlot = googletag.defineSlot('/1234567/example', [160, 600]);
+    *   googletag.pubads().addEventListener('slotRequested', (event) => {
+    *     const slot = event.slot;
     *     console.log('Slot', slot.getSlotElementId(), 'has been requested.');
     *
     *     if (slot === targetSlot) {
@@ -560,10 +561,10 @@ object events {
     * @example
     *   // This listener is called when an ad response has been received
     *   // for a slot.
-    *   var targetSlot = googletag.defineSlot('/1234567/example', [160, 600]);
+    *   const targetSlot = googletag.defineSlot('/1234567/example', [160, 600]);
     *   googletag.pubads().addEventListener('slotResponseReceived',
-    *       function(event) {
-    *         var slot = event.slot;
+    *       (event) => {
+    *         const slot = event.slot;
     *         console.log('Ad response for slot', slot.getSlotElementId(),
     *                     'received.');
     *
@@ -586,15 +587,15 @@ object events {
     * @example
     *   // This listener is called whenever the on-screen percentage of an
     *   // ad slot's area changes.
-    *   var targetSlot = googletag.defineSlot('/1234567/example', [160, 600]);
+    *   const targetSlot = googletag.defineSlot('/1234567/example', [160, 600]);
     *   googletag.pubads().addEventListener('slotVisibilityChanged',
-    *       function(event) {
-    *         var slot = event.slot;
+    *       (event) => {
+    *         const slot = event.slot;
     *         console.group(
     *             'Visibility of slot', slot.getSlotElementId(), 'changed.');
     *
     *         // Log details of the event.
-    *         console.log('Visible area:', event.inViewPercentage + '%');
+    *         console.log('Visible area:', `${event.inViewPercentage}%`);
     *         console.groupEnd();
     *
     *         if (slot === targetSlot) {

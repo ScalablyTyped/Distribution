@@ -1,7 +1,7 @@
 
 # Scala.js typings for uirouter__angularjs
 
-Typings are for version 1.0.30
+Typings are for version 1.1.0
 
 ## Library description:
 State-based routing for AngularJS 1.x

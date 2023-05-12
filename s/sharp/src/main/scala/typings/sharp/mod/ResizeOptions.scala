@@ -25,7 +25,7 @@ trait ResizeOptions extends StObject {
   /** How the image should be resized to fit both provided dimensions, one of cover, contain, fill, inside or outside. (optional, default 'cover') */
   var fit: js.UndefOr[contain | cover | fill | inside | outside] = js.undefined
   
-  /** Alternative means of specifying height. If both are present this take priority. */
+  /** Alternative means of specifying height. If both are present this takes priority. */
   var height: js.UndefOr[Double] = js.undefined
   
   /** The kernel to use for image reduction. (optional, default 'lanczos3') */
@@ -34,7 +34,7 @@ trait ResizeOptions extends StObject {
   /** Position, gravity or strategy to use when fit is cover or contain. (optional, default 'centre') */
   var position: js.UndefOr[Double | String] = js.undefined
   
-  /** Alternative means of specifying width. If both are present this take priority. */
+  /** Alternative means of specifying width. If both are present this takes priority. */
   var width: js.UndefOr[Double] = js.undefined
   
   /** Do not enlarge if the width or height are already less than the specified dimensions, equivalent to GraphicsMagick's > geometry option. (optional, default false) */

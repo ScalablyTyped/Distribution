@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.physicsIphysicsengineMod.IPhysicsEnginePlugin
+import typings.babylonjs.physicsV1IphysicsenginepluginMod.IPhysicsEnginePlugin
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -33,12 +33,4 @@ object PhysicsEngine {
     * @returns The default physics plugin
     */
   inline def DefaultPluginFactory(): IPhysicsEnginePlugin = ^.asInstanceOf[js.Dynamic].applyDynamic("DefaultPluginFactory")().asInstanceOf[IPhysicsEnginePlugin]
-  
-  /**
-    * Global value used to control the smallest number supported by the simulation
-    */
-  @JSImport("babylonjs", "PhysicsEngine.Epsilon")
-  @js.native
-  def Epsilon: Double = js.native
-  inline def Epsilon_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Epsilon")(x.asInstanceOf[js.Any])
 }

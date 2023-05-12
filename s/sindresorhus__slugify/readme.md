@@ -1,7 +1,7 @@
 
 # Scala.js typings for sindresorhus__slugify
 
-Typings are for version 2.1.1
+Typings are for version 2.2.0
 
 ## Library description:
 Slugify a string

@@ -266,7 +266,7 @@ trait Quaternion extends StObject {
     * Returns a new Vector3 set with the Euler angles translated from the current quaternion
     * Example Playground https://playground.babylonjs.com/#L49EJ7#32
     * @returns a new Vector3 containing the Euler angles
-    * @see https://doc.babylonjs.com/divingDeeper/mesh/transforms/center_origin/rotation_conventions
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/transforms/center_origin/rotation_conventions
     */
   def toEulerAngles(): Vector3 = js.native
   
@@ -275,7 +275,7 @@ trait Quaternion extends StObject {
     * Example Playground https://playground.babylonjs.com/#L49EJ7#31
     * @param result defines the vector which will be filled with the Euler angles
     * @returns result input
-    * @see https://doc.babylonjs.com/divingDeeper/mesh/transforms/center_origin/rotation_conventions
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/transforms/center_origin/rotation_conventions
     */
   def toEulerAnglesToRef[T /* <: Vector3 */](result: T): T = js.native
   

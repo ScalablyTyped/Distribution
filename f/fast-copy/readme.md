@@ -1,7 +1,7 @@
 
 # Scala.js typings for fast-copy
 
-Typings are for version 3.0.0
+Typings are for version 3.0.1
 
 ## Library description:
 A blazing fast deep object copier

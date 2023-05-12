@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteParametersPathCacheid extends StObject {
   
   /**
-    * Deletes a GitHub Actions cache for a repository, using a cache ID.
+    * Delete a GitHub Actions cache for a repository (using a cache ID)
+    * @description Deletes a GitHub Actions cache for a repository, using a cache ID.
     *
     * You must authenticate using an access token with the `repo` scope to use this endpoint.
     *

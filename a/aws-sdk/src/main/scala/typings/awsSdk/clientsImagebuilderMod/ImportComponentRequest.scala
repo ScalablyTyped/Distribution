@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImportComponentRequest extends StObject {
   
   /**
-    * The change description of the component. Describes what change has been made in this version, or what makes this version different from other versions of this component.
+    * The change description of the component. This description indicates the change that has been made in this version, or what makes this version different from other versions of this component.
     */
   var changeDescription: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -37,7 +37,7 @@ trait ImportComponentRequest extends StObject {
   var kmsKeyId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    *  The name of the component.
+    * The name of the component.
     */
   var name: ResourceName
   

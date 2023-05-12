@@ -171,6 +171,13 @@ trait Game extends StObject {
   val isBooted: Boolean = js.native
   
   /**
+    * Is the Game currently paused? This will stop everything from updating,
+    * except the `TimeStep` and related RequestAnimationFrame or setTimeout.
+    * Those will continue stepping, but the core Game step will be skipped.
+    */
+  var isPaused: Boolean = js.native
+  
+  /**
     * A flag indicating if this Game is currently running its game step or not.
     */
   val isRunning: Boolean = js.native
@@ -208,6 +215,15 @@ trait Game extends StObject {
   /* protected */ def onVisible(): Unit = js.native
   
   /**
+    * This will pause the entire game and emit a `PAUSE` event.
+    * 
+    * All of Phaser's internal systems will be paused and the game will not re-render.
+    * 
+    * Note that it does not pause any Loader requests that are currently in-flight.
+    */
+  def pause(): Unit = js.native
+  
+  /**
     * An instance of the Plugin Manager.
     * 
     * The Plugin Manager is a global system that allows plugins to register themselves with it, and can then install
@@ -216,7 +232,9 @@ trait Game extends StObject {
   var plugins: PluginManager = js.native
   
   /**
-    * An instance of the Data Manager
+    * An instance of the Data Manager. This is a global manager, available from any Scene
+    * and allows you to share and exchange your own game-level data or events without having
+    * to use an internal event system.
     */
   var registry: DataManager = js.native
   
@@ -224,6 +242,13 @@ trait Game extends StObject {
     * A reference to either the Canvas or WebGL Renderer that this Game is using.
     */
   var renderer: CanvasRenderer | WebGLRenderer = js.native
+  
+  /**
+    * This will resume the entire game and emit a `RESUME` event.
+    * 
+    * All of Phaser's internal systems will be resumed and the game will start rendering again.
+    */
+  def resume(): Unit = js.native
   
   /**
     * An instance of the Scale Manager.

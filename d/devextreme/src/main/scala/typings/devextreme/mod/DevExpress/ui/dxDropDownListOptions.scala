@@ -1,10 +1,13 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.mod.DevExpress.DOMComponentOptions
+import org.scalablytyped.runtime.StringDictionary
+import typings.devextreme.mod.DevExpress.DOMComponent.OptionChangedEventInfo
 import typings.devextreme.mod.DevExpress.common.ApplyValueMode
 import typings.devextreme.mod.DevExpress.common.EditorStyle
 import typings.devextreme.mod.DevExpress.common.LabelMode
 import typings.devextreme.mod.DevExpress.common.MaskMode
+import typings.devextreme.mod.DevExpress.common.Mode
+import typings.devextreme.mod.DevExpress.common.Position
 import typings.devextreme.mod.DevExpress.common.SimplifiedSearchMode
 import typings.devextreme.mod.DevExpress.common.ValidationMessageMode
 import typings.devextreme.mod.DevExpress.common.ValidationStatus
@@ -12,6 +15,7 @@ import typings.devextreme.mod.DevExpress.core.DxElement_
 import typings.devextreme.mod.DevExpress.core.UserDefinedElement
 import typings.devextreme.mod.DevExpress.core.template
 import typings.devextreme.mod.DevExpress.events.EventInfo
+import typings.devextreme.mod.DevExpress.events.InitializedEventInfo
 import typings.devextreme.mod.DevExpress.events.ItemInfo
 import typings.devextreme.mod.DevExpress.events.NativeEventInfo
 import typings.devextreme.mod.DevExpress.ui.Editor.ValueChangedInfo
@@ -34,23 +38,15 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.devextreme.mod.DevExpress.ui.WidgetOptions because var conflicts: activeStateEnabled, focusStateEnabled, hoverStateEnabled. Inlined accessKey, disabled, hint, onContentReady, tabIndex, visible
-- typings.devextreme.mod.DevExpress.ui.EditorOptions because var conflicts: activeStateEnabled, focusStateEnabled, hoverStateEnabled, stylingMode, value. Inlined isValid, onValueChanged, readOnly, validationError, validationErrors, validationMessageMode, validationStatus
-- typings.devextreme.mod.DevExpress.ui.dxTextEditorOptions because var conflicts: activeStateEnabled, buttons, value. Inlined focusStateEnabled, hoverStateEnabled, inputAttr, label, labelMode, mask, maskChar, maskInvalidMessage, maskRules, name, onChange, onCopy, onCut, onEnterKey, onFocusIn, onFocusOut, onInput, onKeyDown, onKeyUp, onPaste, placeholder, showClearButton, showMaskMode, spellcheck, stylingMode, text, useMaskedValue, valueChangeEvent
-- typings.devextreme.mod.DevExpress.ui.dxTextBoxOptions because var conflicts: activeStateEnabled, buttons, value. Inlined maxLength, mode
-- typings.devextreme.mod.DevExpress.ui.dxDropDownEditorOptions because var conflicts: value. Inlined acceptCustomValue, activeStateEnabled, applyValueMode, dropDownOptions, buttons, deferRendering, dropDownButtonTemplate, onClosed, onOpened, openOnFieldClick, opened, showDropDownButton */ trait dxDropDownListOptions[TComponent]
+- typings.devextreme.mod.DevExpress.ui.dxDropDownEditorOptions because var conflicts: value. Inlined acceptCustomValue, activeStateEnabled, applyValueMode, dropDownOptions, buttons, deferRendering, dropDownButtonTemplate, onClosed, onOpened, openOnFieldClick, opened, showDropDownButton, validationMessagePosition, onOptionChanged, placeholder, width, elementAttr, onFocusIn, bindingOptions, height, disabled, onPaste, tabIndex, onCopy, valueChangeEvent, visible, onChange, labelMode, mask, onKeyDown, onEnterKey, onInput, stylingMode, accessKey, onContentReady, spellcheck, text, validationMessageMode, maskInvalidMessage, onKeyUp, readOnly, focusStateEnabled, onValueChanged, validationErrors, showClearButton, maskChar, onFocusOut, maxLength, onInitialized, hint, mode, maskRules, name, label, showMaskMode, useMaskedValue, inputAttr, onCut, validationError, isValid, onDisposing, hoverStateEnabled, validationStatus, rtlEnabled */ trait dxDropDownListOptions[TComponent]
   extends StObject
-     with DataExpressionMixinOptions[TComponent]
-     with DOMComponentOptions[TComponent] {
+     with DataExpressionMixinOptions[TComponent] {
   
   /**
     * Specifies whether or not the UI component allows an end-user to enter a custom value.
     */
   var acceptCustomValue: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * Specifies the shortcut key that sets focus on the UI component.
-    */
   var accessKey: js.UndefOr[String] = js.undefined
   
   /**
@@ -63,6 +59,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var applyValueMode: js.UndefOr[ApplyValueMode] = js.undefined
   
+  var bindingOptions: js.UndefOr[StringDictionary[Any]] = js.undefined
+  
   /**
     * Allows you to add custom buttons to the input text field.
     */
@@ -73,9 +71,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var deferRendering: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * Specifies whether the UI component responds to user interaction.
-    */
   var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
@@ -99,9 +94,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var dropDownOptions: js.UndefOr[Properties | typings.devextreme.mod.DevExpress.ui.dxPopover.Properties] = js.undefined
   
-  /**
-    * Specifies whether the UI component can be focused using keyboard navigation.
-    */
+  var elementAttr: js.UndefOr[StringDictionary[Any]] = js.undefined
+  
   var focusStateEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
@@ -121,59 +115,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var grouped: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * Specifies text for a hint that appears when a user pauses on the UI component.
-    */
+  var height: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
+  
   var hint: js.UndefOr[String] = js.undefined
   
-  /**
-    * Specifies whether the UI component changes its state when a user pauses on it.
-    */
   var hoverStateEnabled: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * Specifies the attributes to be passed on to the underlying HTML element.
-    */
   var inputAttr: js.UndefOr[Any] = js.undefined
   
-  /**
-    * Specifies or indicates whether the editor&apos;s value is valid.
-    */
   var isValid: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * Specifies a text string used to annotate the editor&apos;s value.
-    */
   var label: js.UndefOr[String] = js.undefined
   
-  /**
-    * Specifies the label&apos;s display mode.
-    */
   var labelMode: js.UndefOr[LabelMode] = js.undefined
   
-  /**
-    * The editor mask that specifies the custom format of the entered string.
-    */
   var mask: js.UndefOr[String] = js.undefined
   
-  /**
-    * Specifies a mask placeholder. A single character is recommended.
-    */
   var maskChar: js.UndefOr[String] = js.undefined
   
-  /**
-    * A message displayed when the entered text does not match the specified pattern.
-    */
   var maskInvalidMessage: js.UndefOr[String] = js.undefined
   
-  /**
-    * Specifies custom mask rules.
-    */
   var maskRules: js.UndefOr[Any] = js.undefined
   
-  /**
-    * Specifies the maximum number of characters you can enter into the textbox.
-    */
   var maxLength: js.UndefOr[String | Double] = js.undefined
   
   /**
@@ -181,14 +144,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var minSearchLength: js.UndefOr[Double] = js.undefined
   
-  /**
-    * The &apos;mode&apos; attribute value of the actual HTML input element representing the text box.
-    */
   var mode: js.UndefOr[TextBoxType] = js.undefined
   
-  /**
-    * The value to be assigned to the `name` attribute of the underlying HTML element.
-    */
   var name: js.UndefOr[String] = js.undefined
   
   /**
@@ -196,9 +153,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var noDataText: js.UndefOr[String] = js.undefined
   
-  /**
-    * A function that is executed when the UI component loses focus after the text field&apos;s content was changed using the keyboard.
-    */
   var onChange: js.UndefOr[js.Function1[/* e */ NativeEventInfo[TComponent, Event], Unit]] = js.undefined
   
   /**
@@ -206,39 +160,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var onClosed: js.UndefOr[js.Function1[/* e */ EventInfo[TComponent], Unit]] = js.undefined
   
-  /**
-    * A function that is executed when the UI component&apos;s content is ready and each time the content is changed.
-    */
   var onContentReady: js.UndefOr[js.Function1[/* e */ EventInfo[TComponent], Unit]] = js.undefined
   
-  /**
-    * A function that is executed when the UI component&apos;s input has been copied.
-    */
   var onCopy: js.UndefOr[js.Function1[/* e */ NativeEventInfo[TComponent, ClipboardEvent], Unit]] = js.undefined
   
-  /**
-    * A function that is executed when the UI component&apos;s input has been cut.
-    */
   var onCut: js.UndefOr[js.Function1[/* e */ NativeEventInfo[TComponent, ClipboardEvent], Unit]] = js.undefined
   
-  /**
-    * A function that is executed when the Enter key has been pressed while the UI component is focused.
-    */
+  var onDisposing: js.UndefOr[js.Function1[/* e */ EventInfo[TComponent], Unit]] = js.undefined
+  
   var onEnterKey: js.UndefOr[js.Function1[/* e */ NativeEventInfo[TComponent, KeyboardEvent], Unit]] = js.undefined
   
-  /**
-    * A function that is executed when the UI component gets focus.
-    */
   var onFocusIn: js.UndefOr[js.Function1[/* e */ NativeEventInfo[TComponent, FocusEvent], Unit]] = js.undefined
   
-  /**
-    * A function that is executed when the UI component loses focus.
-    */
   var onFocusOut: js.UndefOr[js.Function1[/* e */ NativeEventInfo[TComponent, FocusEvent], Unit]] = js.undefined
   
-  /**
-    * A function that is executed each time the UI component&apos;s input is changed while the UI component is focused.
-    */
+  var onInitialized: js.UndefOr[js.Function1[/* e */ InitializedEventInfo[TComponent], Unit]] = js.undefined
+  
   var onInput: js.UndefOr[js.Function1[/* e */ NativeEventInfo[TComponent, UIEvent], Unit]] = js.undefined
   
   /**
@@ -251,14 +188,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     ]
   ] = js.undefined
   
-  /**
-    * A function that is executed when a user is pressing a key on the keyboard.
-    */
   var onKeyDown: js.UndefOr[js.Function1[/* e */ NativeEventInfo[TComponent, KeyboardEvent], Unit]] = js.undefined
   
-  /**
-    * A function that is executed when a user releases a key on the keyboard.
-    */
   var onKeyUp: js.UndefOr[js.Function1[/* e */ NativeEventInfo[TComponent, KeyboardEvent], Unit]] = js.undefined
   
   /**
@@ -266,9 +197,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var onOpened: js.UndefOr[js.Function1[/* e */ EventInfo[TComponent], Unit]] = js.undefined
   
-  /**
-    * A function that is executed when the UI component&apos;s input has been pasted.
-    */
+  var onOptionChanged: js.UndefOr[js.Function1[/* e */ OptionChangedEventInfo[TComponent], Unit]] = js.undefined
+  
   var onPaste: js.UndefOr[js.Function1[/* e */ NativeEventInfo[TComponent, ClipboardEvent], Unit]] = js.undefined
   
   /**
@@ -296,15 +226,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var opened: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * Specifies a text string displayed when the editor&apos;s value is empty.
-    */
   var placeholder: js.UndefOr[String] = js.undefined
   
-  /**
-    * Specifies whether the editor is read-only.
-    */
   var readOnly: js.UndefOr[Boolean] = js.undefined
+  
+  var rtlEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies whether to allow searching.
@@ -331,9 +257,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var selectedItem: js.UndefOr[Any] = js.undefined
   
-  /**
-    * Specifies whether to display the Clear button in the UI component.
-    */
   var showClearButton: js.UndefOr[Boolean] = js.undefined
   
   /**
@@ -346,29 +269,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var showDropDownButton: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * Specifies when the UI component shows the mask. Applies only if useMaskedValue is true.
-    */
   var showMaskMode: js.UndefOr[MaskMode] = js.undefined
   
-  /**
-    * Specifies whether or not the UI component checks the inner text for spelling mistakes.
-    */
   var spellcheck: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * Specifies how the UI component&apos;s text field is styled.
-    */
   var stylingMode: js.UndefOr[EditorStyle] = js.undefined
   
-  /**
-    * Specifies the number of the element when the Tab key is used for navigating.
-    */
   var tabIndex: js.UndefOr[Double] = js.undefined
   
-  /**
-    * The read-only property that holds the text displayed by the UI component input element.
-    */
   var text: js.UndefOr[String] = js.undefined
   
   /**
@@ -376,29 +284,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var useItemTextAsTitle: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * Specifies whether the value should contain mask characters or not.
-    */
   var useMaskedValue: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * Information on the broken validation rule. Contains the first item from the validationErrors array.
-    */
   var validationError: js.UndefOr[Any] = js.undefined
   
-  /**
-    * An array of the validation rules that failed.
-    */
   var validationErrors: js.UndefOr[js.Array[Any]] = js.undefined
   
-  /**
-    * Specifies how the message about the validation rules that are not satisfied by this editor&apos;s value is displayed.
-    */
   var validationMessageMode: js.UndefOr[ValidationMessageMode] = js.undefined
   
   /**
-    * Indicates or specifies the current validation status.
+    * 
     */
+  var validationMessagePosition: js.UndefOr[Position | Mode] = js.undefined
+  
   var validationStatus: js.UndefOr[ValidationStatus] = js.undefined
   
   /**
@@ -406,10 +304,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var valueChangeEvent: js.UndefOr[String] = js.undefined
   
-  /**
-    * Specifies whether the UI component is visible.
-    */
   var visible: js.UndefOr[Boolean] = js.undefined
+  
+  var width: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
   
   /**
     * Specifies whether text that exceeds the drop-down list width should be wrapped.
@@ -441,6 +338,10 @@ object dxDropDownListOptions {
     inline def setApplyValueMode(value: ApplyValueMode): Self = StObject.set(x, "applyValueMode", value.asInstanceOf[js.Any])
     
     inline def setApplyValueModeUndefined: Self = StObject.set(x, "applyValueMode", js.undefined)
+    
+    inline def setBindingOptions(value: StringDictionary[Any]): Self = StObject.set(x, "bindingOptions", value.asInstanceOf[js.Any])
+    
+    inline def setBindingOptionsUndefined: Self = StObject.set(x, "bindingOptions", js.undefined)
     
     inline def setButtons(value: js.Array[DropDownPredefinedButton | dxTextEditorButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
@@ -478,6 +379,10 @@ object dxDropDownListOptions {
     
     inline def setDropDownOptionsUndefined: Self = StObject.set(x, "dropDownOptions", js.undefined)
     
+    inline def setElementAttr(value: StringDictionary[Any]): Self = StObject.set(x, "elementAttr", value.asInstanceOf[js.Any])
+    
+    inline def setElementAttrUndefined: Self = StObject.set(x, "elementAttr", js.undefined)
+    
     inline def setFocusStateEnabled(value: Boolean): Self = StObject.set(x, "focusStateEnabled", value.asInstanceOf[js.Any])
     
     inline def setFocusStateEnabledUndefined: Self = StObject.set(x, "focusStateEnabled", js.undefined)
@@ -500,6 +405,12 @@ object dxDropDownListOptions {
     inline def setGrouped(value: Boolean): Self = StObject.set(x, "grouped", value.asInstanceOf[js.Any])
     
     inline def setGroupedUndefined: Self = StObject.set(x, "grouped", js.undefined)
+    
+    inline def setHeight(value: Double | String | (js.Function0[Double | String])): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightFunction0(value: () => Double | String): Self = StObject.set(x, "height", js.Any.fromFunction0(value))
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     inline def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     
@@ -581,6 +492,10 @@ object dxDropDownListOptions {
     
     inline def setOnCutUndefined: Self = StObject.set(x, "onCut", js.undefined)
     
+    inline def setOnDisposing(value: /* e */ EventInfo[TComponent] => Unit): Self = StObject.set(x, "onDisposing", js.Any.fromFunction1(value))
+    
+    inline def setOnDisposingUndefined: Self = StObject.set(x, "onDisposing", js.undefined)
+    
     inline def setOnEnterKey(value: /* e */ NativeEventInfo[TComponent, KeyboardEvent] => Unit): Self = StObject.set(x, "onEnterKey", js.Any.fromFunction1(value))
     
     inline def setOnEnterKeyUndefined: Self = StObject.set(x, "onEnterKey", js.undefined)
@@ -592,6 +507,10 @@ object dxDropDownListOptions {
     inline def setOnFocusOut(value: /* e */ NativeEventInfo[TComponent, FocusEvent] => Unit): Self = StObject.set(x, "onFocusOut", js.Any.fromFunction1(value))
     
     inline def setOnFocusOutUndefined: Self = StObject.set(x, "onFocusOut", js.undefined)
+    
+    inline def setOnInitialized(value: /* e */ InitializedEventInfo[TComponent] => Unit): Self = StObject.set(x, "onInitialized", js.Any.fromFunction1(value))
+    
+    inline def setOnInitializedUndefined: Self = StObject.set(x, "onInitialized", js.undefined)
     
     inline def setOnInput(value: /* e */ NativeEventInfo[TComponent, UIEvent] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
     
@@ -614,6 +533,10 @@ object dxDropDownListOptions {
     inline def setOnOpened(value: /* e */ EventInfo[TComponent] => Unit): Self = StObject.set(x, "onOpened", js.Any.fromFunction1(value))
     
     inline def setOnOpenedUndefined: Self = StObject.set(x, "onOpened", js.undefined)
+    
+    inline def setOnOptionChanged(value: /* e */ OptionChangedEventInfo[TComponent] => Unit): Self = StObject.set(x, "onOptionChanged", js.Any.fromFunction1(value))
+    
+    inline def setOnOptionChangedUndefined: Self = StObject.set(x, "onOptionChanged", js.undefined)
     
     inline def setOnPaste(value: /* e */ NativeEventInfo[TComponent, ClipboardEvent] => Unit): Self = StObject.set(x, "onPaste", js.Any.fromFunction1(value))
     
@@ -644,6 +567,10 @@ object dxDropDownListOptions {
     inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    
+    inline def setRtlEnabled(value: Boolean): Self = StObject.set(x, "rtlEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setRtlEnabledUndefined: Self = StObject.set(x, "rtlEnabled", js.undefined)
     
     inline def setSearchEnabled(value: Boolean): Self = StObject.set(x, "searchEnabled", value.asInstanceOf[js.Any])
     
@@ -721,6 +648,10 @@ object dxDropDownListOptions {
     
     inline def setValidationMessageModeUndefined: Self = StObject.set(x, "validationMessageMode", js.undefined)
     
+    inline def setValidationMessagePosition(value: Position | Mode): Self = StObject.set(x, "validationMessagePosition", value.asInstanceOf[js.Any])
+    
+    inline def setValidationMessagePositionUndefined: Self = StObject.set(x, "validationMessagePosition", js.undefined)
+    
     inline def setValidationStatus(value: ValidationStatus): Self = StObject.set(x, "validationStatus", value.asInstanceOf[js.Any])
     
     inline def setValidationStatusUndefined: Self = StObject.set(x, "validationStatus", js.undefined)
@@ -732,6 +663,12 @@ object dxDropDownListOptions {
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    
+    inline def setWidth(value: Double | String | (js.Function0[Double | String])): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthFunction0(value: () => Double | String): Self = StObject.set(x, "width", js.Any.fromFunction0(value))
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     inline def setWrapItemText(value: Boolean): Self = StObject.set(x, "wrapItemText", value.asInstanceOf[js.Any])
     

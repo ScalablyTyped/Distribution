@@ -1,7 +1,7 @@
 
 # Scala.js typings for hot-shots
 
-Typings are for version 9.3.0
+Typings are for version 10.0.0
 
 ## Library description:
 Node.js client for StatsD, DogStatsD, and Telegraf

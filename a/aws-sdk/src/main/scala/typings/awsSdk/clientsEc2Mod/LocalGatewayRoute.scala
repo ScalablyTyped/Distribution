@@ -17,6 +17,11 @@ trait LocalGatewayRoute extends StObject {
   var DestinationCidrBlock: js.UndefOr[String] = js.undefined
   
   /**
+    *  The ID of the prefix list. 
+    */
+  var DestinationPrefixListId: js.UndefOr[PrefixListResourceId] = js.undefined
+  
+  /**
     * The Amazon Resource Name (ARN) of the local gateway route table.
     */
   var LocalGatewayRouteTableArn: js.UndefOr[ResourceArn] = js.undefined
@@ -73,6 +78,10 @@ object LocalGatewayRoute {
     inline def setDestinationCidrBlock(value: String): Self = StObject.set(x, "DestinationCidrBlock", value.asInstanceOf[js.Any])
     
     inline def setDestinationCidrBlockUndefined: Self = StObject.set(x, "DestinationCidrBlock", js.undefined)
+    
+    inline def setDestinationPrefixListId(value: PrefixListResourceId): Self = StObject.set(x, "DestinationPrefixListId", value.asInstanceOf[js.Any])
+    
+    inline def setDestinationPrefixListIdUndefined: Self = StObject.set(x, "DestinationPrefixListId", js.undefined)
     
     inline def setLocalGatewayRouteTableArn(value: ResourceArn): Self = StObject.set(x, "LocalGatewayRouteTableArn", value.asInstanceOf[js.Any])
     

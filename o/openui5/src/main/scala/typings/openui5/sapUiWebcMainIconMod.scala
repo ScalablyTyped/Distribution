@@ -216,6 +216,8 @@ object sapUiWebcMainIconMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:click click} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -295,10 +297,9 @@ object sapUiWebcMainIconMod {
       * Defines the unique identifier (icon name) of the component.
       *
       *
-      * To browse all available icons, see the {@link demo:sap/m/demokit/iconExplorer/webapp/index.html#/overview/SAP-icons
-      * SAP Icons}, {@link demo:sap/m/demokit/iconExplorer/webapp/index.html#/overview/SAP-icons-TNT SAP TNT
-      * Icons} and {@link https://ui5.sap.com/test-resources/sap/m/demokit/iconExplorer/webapp/index.html#/overview/BusinessSuiteInAppSymbols
-      * SAP Business Suite Icons} collections.
+      * To browse all available icons, see the {@link demo:sap/m/demokit/iconExplorer/webapp/index.html SAP Icons},
+      * {@link demo:sap/m/demokit/iconExplorer/webapp/index.html#/overview/SAP-icons-TNT SAP Fiori Tools} and
+      * {@link demo:sap/m/demokit/iconExplorer/webapp/index.html SAP Business Suite} collections.
       *
       *
       * Example:
@@ -450,10 +451,9 @@ object sapUiWebcMainIconMod {
       * Defines the unique identifier (icon name) of the component.
       *
       *
-      * To browse all available icons, see the {@link demo:sap/m/demokit/iconExplorer/webapp/index.html#/overview/SAP-icons
-      * SAP Icons}, {@link demo:sap/m/demokit/iconExplorer/webapp/index.html#/overview/SAP-icons-TNT SAP TNT
-      * Icons} and {@link https://ui5.sap.com/test-resources/sap/m/demokit/iconExplorer/webapp/index.html#/overview/BusinessSuiteInAppSymbols
-      * SAP Business Suite Icons} collections.
+      * To browse all available icons, see the {@link demo:sap/m/demokit/iconExplorer/webapp/index.html SAP Icons},
+      * {@link demo:sap/m/demokit/iconExplorer/webapp/index.html#/overview/SAP-icons-TNT SAP Fiori Tools} and
+      * {@link demo:sap/m/demokit/iconExplorer/webapp/index.html SAP Business Suite} collections.
       *
       *
       * Example:
@@ -575,10 +575,9 @@ object sapUiWebcMainIconMod {
       * Defines the unique identifier (icon name) of the component.
       *
       *
-      * To browse all available icons, see the {@link demo:sap/m/demokit/iconExplorer/webapp/index.html#/overview/SAP-icons
-      * SAP Icons}, {@link demo:sap/m/demokit/iconExplorer/webapp/index.html#/overview/SAP-icons-TNT SAP TNT
-      * Icons} and {@link https://ui5.sap.com/test-resources/sap/m/demokit/iconExplorer/webapp/index.html#/overview/BusinessSuiteInAppSymbols
-      * SAP Business Suite Icons} collections.
+      * To browse all available icons, see the {@link demo:sap/m/demokit/iconExplorer/webapp/index.html SAP Icons},
+      * {@link demo:sap/m/demokit/iconExplorer/webapp/index.html#/overview/SAP-icons-TNT SAP Fiori Tools} and
+      * {@link demo:sap/m/demokit/iconExplorer/webapp/index.html SAP Business Suite} collections.
       *
       *
       * Example:

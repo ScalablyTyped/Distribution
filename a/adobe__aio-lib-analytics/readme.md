@@ -1,7 +1,7 @@
 
 # Scala.js typings for adobe__aio-lib-analytics
 
-Typings are for version 2.1
+Typings are for version 3.0
 
 ## Library description:
 Adobe Analytics SDK

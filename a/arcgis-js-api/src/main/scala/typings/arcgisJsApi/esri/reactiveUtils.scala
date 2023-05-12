@@ -27,23 +27,20 @@ trait reactiveUtils extends StObject {
   def once[T](getValue: js.Function0[T], signal: Signal): js.Promise[T] = js.native
   def once[T](getValue: js.Function0[T], signal: AbortSignal): js.Promise[T] = js.native
   
+  def watch[T](getValue: js.Function0[T], callback: js.Function2[/* newValue */ T, /* oldValue */ T, scala.Unit]): IHandle = js.native
   def watch[T](
     getValue: js.Function0[T],
-    callback: js.Function2[/* newValue */ js.UndefOr[T], /* oldValue */ js.UndefOr[T], scala.Unit]
-  ): IHandle = js.native
-  def watch[T](
-    getValue: js.Function0[T],
-    callback: js.Function2[/* newValue */ js.UndefOr[T], /* oldValue */ js.UndefOr[T], scala.Unit],
+    callback: js.Function2[/* newValue */ T, /* oldValue */ T, scala.Unit],
     options: ReactiveWatchOptions
   ): IHandle = js.native
   
   def when[T](
     getValue: js.Function0[js.UndefOr[T | Null]],
-    callback: js.Function2[/* newValue */ js.UndefOr[T], /* oldValue */ js.UndefOr[T | Null], scala.Unit]
+    callback: js.Function2[/* newValue */ T, /* oldValue */ T | Null, scala.Unit]
   ): IHandle = js.native
   def when[T](
     getValue: js.Function0[js.UndefOr[T | Null]],
-    callback: js.Function2[/* newValue */ js.UndefOr[T], /* oldValue */ js.UndefOr[T | Null], scala.Unit],
+    callback: js.Function2[/* newValue */ T, /* oldValue */ T | Null, scala.Unit],
     options: ReactiveWatchOptions
   ): IHandle = js.native
   

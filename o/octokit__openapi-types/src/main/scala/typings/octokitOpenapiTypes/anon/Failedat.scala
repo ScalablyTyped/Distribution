@@ -16,6 +16,9 @@ trait Failedat extends StObject {
   
   var id: Double
   
+  /** @example "member" */
+  var invitation_source: js.UndefOr[String] = js.undefined
+  
   /** @example "https://api.github.com/organizations/16/invitations/1/teams" */
   var invitation_teams_url: String
   
@@ -67,6 +70,10 @@ object Failedat {
     inline def setFailed_reasonUndefined: Self = StObject.set(x, "failed_reason", js.undefined)
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setInvitation_source(value: String): Self = StObject.set(x, "invitation_source", value.asInstanceOf[js.Any])
+    
+    inline def setInvitation_sourceUndefined: Self = StObject.set(x, "invitation_source", js.undefined)
     
     inline def setInvitation_teams_url(value: String): Self = StObject.set(x, "invitation_teams_url", value.asInstanceOf[js.Any])
     

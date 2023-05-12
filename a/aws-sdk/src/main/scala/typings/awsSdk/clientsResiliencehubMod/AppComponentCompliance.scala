@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AppComponentCompliance extends StObject {
   
   /**
-    * The name of the application component.
+    * The name of the Application Component.
     */
   var appComponentName: js.UndefOr[EntityId] = js.undefined
   
   /**
-    * The compliance of the application component against the resiliency policy.
+    * The compliance of the Application Component against the resiliency policy.
     */
   var compliance: js.UndefOr[AssessmentCompliance] = js.undefined
   

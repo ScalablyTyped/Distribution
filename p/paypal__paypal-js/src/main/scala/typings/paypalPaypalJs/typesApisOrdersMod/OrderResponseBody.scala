@@ -5,6 +5,7 @@ import typings.paypalPaypalJs.anon.PartialPayer
 import typings.paypalPaypalJs.anon.PartialissuerPaypalCARDIS
 import typings.paypalPaypalJs.paypalPaypalJsStrings.APPROVED
 import typings.paypalPaypalJs.paypalPaypalJsStrings.COMPLETED
+import typings.paypalPaypalJs.paypalPaypalJsStrings.CREATED
 import typings.paypalPaypalJs.paypalPaypalJsStrings.PAYER_ACTION_REQUIRED
 import typings.paypalPaypalJs.paypalPaypalJsStrings.SAVED
 import typings.paypalPaypalJs.paypalPaypalJsStrings.VOIDED
@@ -12,7 +13,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OrderResponseBody extends StObject {
+trait OrderResponseBody
+  extends StObject
+     with OrderResponseBodyMinimal {
   
   /**
     * The date and time, in [Internet date and time format](https://tools.ietf.org/html/rfc3339#section-5.6).
@@ -34,20 +37,9 @@ trait OrderResponseBody extends StObject {
   var expiration_time: js.UndefOr[String] = js.undefined
   
   /**
-    * The ID of the order
-    * @readonly
-    */
-  var id: String
-  
-  /**
     * @type {INTENT}
     */
   var intent: INTENT
-  
-  /**
-    * An array of request-related HATEOAS links
-    */
-  var links: js.Array[LinkDescription]
   
   /**
     * @type {Payer}
@@ -67,11 +59,6 @@ trait OrderResponseBody extends StObject {
   var purchase_units: js.Array[PurchaseUnit]
   
   /**
-    * The order status
-    */
-  var status: COMPLETED | SAVED | APPROVED | VOIDED | PAYER_ACTION_REQUIRED
-  
-  /**
     * The date and time, in [Internet date and time format](https://tools.ietf.org/html/rfc3339#section-5.6).
     * Seconds are required while fractional seconds are optional
     * @minLength 20
@@ -88,7 +75,7 @@ object OrderResponseBody {
     links: js.Array[LinkDescription],
     payer: PartialPayer,
     purchase_units: js.Array[PurchaseUnit],
-    status: COMPLETED | SAVED | APPROVED | VOIDED | PAYER_ACTION_REQUIRED,
+    status: CREATED | SAVED | APPROVED | VOIDED | COMPLETED | PAYER_ACTION_REQUIRED,
     update_time: String
   ): OrderResponseBody = {
     val __obj = js.Dynamic.literal(create_time = create_time.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], intent = intent.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], payer = payer.asInstanceOf[js.Any], purchase_units = purchase_units.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], update_time = update_time.asInstanceOf[js.Any])
@@ -108,13 +95,7 @@ object OrderResponseBody {
     
     inline def setExpiration_timeUndefined: Self = StObject.set(x, "expiration_time", js.undefined)
     
-    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-    
     inline def setIntent(value: INTENT): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
-    
-    inline def setLinks(value: js.Array[LinkDescription]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
-    
-    inline def setLinksVarargs(value: LinkDescription*): Self = StObject.set(x, "links", js.Array(value*))
     
     inline def setPayer(value: PartialPayer): Self = StObject.set(x, "payer", value.asInstanceOf[js.Any])
     
@@ -129,8 +110,6 @@ object OrderResponseBody {
     inline def setPurchase_units(value: js.Array[PurchaseUnit]): Self = StObject.set(x, "purchase_units", value.asInstanceOf[js.Any])
     
     inline def setPurchase_unitsVarargs(value: PurchaseUnit*): Self = StObject.set(x, "purchase_units", js.Array(value*))
-    
-    inline def setStatus(value: COMPLETED | SAVED | APPROVED | VOIDED | PAYER_ACTION_REQUIRED): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     inline def setUpdate_time(value: String): Self = StObject.set(x, "update_time", value.asInstanceOf[js.Any])
   }

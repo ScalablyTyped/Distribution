@@ -12,7 +12,7 @@ trait ModifyActivityStreamRequest extends StObject {
   var AuditPolicyState: js.UndefOr[typings.awsSdk.clientsRdsMod.AuditPolicyState] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the RDS for Oracle DB instance, for example, arn:aws:rds:us-east-1:12345667890:instance:my-orcl-db.
+    * The Amazon Resource Name (ARN) of the RDS for Oracle or Microsoft SQL Server DB instance. For example, arn:aws:rds:us-east-1:12345667890:instance:my-orcl-db.
     */
   var ResourceArn: js.UndefOr[String] = js.undefined
 }

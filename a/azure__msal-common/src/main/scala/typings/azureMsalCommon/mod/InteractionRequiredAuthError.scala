@@ -6,15 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@azure/msal-common", "InteractionRequiredAuthError")
 @js.native
-open class InteractionRequiredAuthError ()
+open class InteractionRequiredAuthError protected ()
   extends typings.azureMsalCommon.distErrorInteractionRequiredAuthErrorMod.InteractionRequiredAuthError {
-  def this(errorCode: String) = this()
-  def this(errorCode: String, errorMessage: String) = this()
-  def this(errorCode: Unit, errorMessage: String) = this()
-  def this(errorCode: String, errorMessage: String, subError: String) = this()
-  def this(errorCode: String, errorMessage: Unit, subError: String) = this()
-  def this(errorCode: Unit, errorMessage: String, subError: String) = this()
-  def this(errorCode: Unit, errorMessage: Unit, subError: String) = this()
+  def this(
+    errorCode: js.UndefOr[String],
+    errorMessage: js.UndefOr[String],
+    subError: js.UndefOr[String],
+    timestamp: js.UndefOr[String],
+    traceId: js.UndefOr[String],
+    correlationId: js.UndefOr[String],
+    claims: js.UndefOr[String]
+  ) = this()
 }
 /* static members */
 object InteractionRequiredAuthError {

@@ -18,9 +18,11 @@ trait ExistingRawSourceMap
   
   var sources: js.Array[String]
   
-  var sourcesContent: js.UndefOr[js.Array[String]] = js.undefined
+  var sourcesContent: js.UndefOr[js.Array[String | Null]] = js.undefined
   
   var version: Double
+  
+  var x_google_ignoreList: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object ExistingRawSourceMap {
   
@@ -48,14 +50,20 @@ object ExistingRawSourceMap {
     
     inline def setSources(value: js.Array[String]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
-    inline def setSourcesContent(value: js.Array[String]): Self = StObject.set(x, "sourcesContent", value.asInstanceOf[js.Any])
+    inline def setSourcesContent(value: js.Array[String | Null]): Self = StObject.set(x, "sourcesContent", value.asInstanceOf[js.Any])
     
     inline def setSourcesContentUndefined: Self = StObject.set(x, "sourcesContent", js.undefined)
     
-    inline def setSourcesContentVarargs(value: String*): Self = StObject.set(x, "sourcesContent", js.Array(value*))
+    inline def setSourcesContentVarargs(value: (String | Null)*): Self = StObject.set(x, "sourcesContent", js.Array(value*))
     
     inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value*))
     
     inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setX_google_ignoreList(value: js.Array[Double]): Self = StObject.set(x, "x_google_ignoreList", value.asInstanceOf[js.Any])
+    
+    inline def setX_google_ignoreListUndefined: Self = StObject.set(x, "x_google_ignoreList", js.undefined)
+    
+    inline def setX_google_ignoreListVarargs(value: Double*): Self = StObject.set(x, "x_google_ignoreList", js.Array(value*))
   }
 }

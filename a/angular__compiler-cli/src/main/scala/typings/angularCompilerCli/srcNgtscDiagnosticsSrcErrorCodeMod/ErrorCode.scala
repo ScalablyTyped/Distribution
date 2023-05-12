@@ -171,6 +171,60 @@ object ErrorCode extends StObject {
   /* 5001 */ val HOST_BINDING_PARSE_ERROR: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.HOST_BINDING_PARSE_ERROR & Double = js.native
   
   /**
+    * Raised when a host directive is a component.
+    */
+  @js.native
+  sealed trait HOST_DIRECTIVE_COMPONENT
+    extends StObject
+       with ErrorCode
+  /* 2015 */ val HOST_DIRECTIVE_COMPONENT: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.HOST_DIRECTIVE_COMPONENT & Double = js.native
+  
+  /**
+    * Raised when a host tries to alias a host directive
+    * binding to a pre-existing binding's public name.
+    */
+  @js.native
+  sealed trait HOST_DIRECTIVE_CONFLICTING_ALIAS
+    extends StObject
+       with ErrorCode
+  /* 2018 */ val HOST_DIRECTIVE_CONFLICTING_ALIAS: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.HOST_DIRECTIVE_CONFLICTING_ALIAS & Double = js.native
+  
+  /**
+    * Raised when the compiler wasn't able to resolve the metadata of a host directive.
+    */
+  @js.native
+  sealed trait HOST_DIRECTIVE_INVALID
+    extends StObject
+       with ErrorCode
+  /* 2013 */ val HOST_DIRECTIVE_INVALID: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.HOST_DIRECTIVE_INVALID & Double = js.native
+  
+  /**
+    * Raised when a host directive definition doesn't expose a
+    * required binding from the host directive.
+    */
+  @js.native
+  sealed trait HOST_DIRECTIVE_MISSING_REQUIRED_BINDING
+    extends StObject
+       with ErrorCode
+  /* 2019 */ val HOST_DIRECTIVE_MISSING_REQUIRED_BINDING: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.HOST_DIRECTIVE_MISSING_REQUIRED_BINDING & Double = js.native
+  
+  /**
+    * Raised when a host directive isn't standalone.
+    */
+  @js.native
+  sealed trait HOST_DIRECTIVE_NOT_STANDALONE
+    extends StObject
+       with ErrorCode
+  /* 2014 */ val HOST_DIRECTIVE_NOT_STANDALONE: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.HOST_DIRECTIVE_NOT_STANDALONE & Double = js.native
+  
+  /** Raised when a host tries to alias a host directive binding that does not exist. */
+  @js.native
+  sealed trait HOST_DIRECTIVE_UNDEFINED_BINDING
+    extends StObject
+       with ErrorCode
+  /* 2017 */ val HOST_DIRECTIVE_UNDEFINED_BINDING: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.HOST_DIRECTIVE_UNDEFINED_BINDING & Double = js.native
+  
+  /**
     * Raised when a relationship between directives and/or pipes would cause a cyclic import to be
     * created that cannot be handled, such as in partial compilation mode.
     */
@@ -197,6 +251,16 @@ object ErrorCode extends StObject {
     extends StObject
        with ErrorCode
   /* 9001 */ val INJECTABLE_DUPLICATE_PROV: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.INJECTABLE_DUPLICATE_PROV & Double = js.native
+  
+  /**
+    * Raised when a type with Angular decorator inherits its constructor from a base class
+    * which has a constructor that is incompatible with Angular DI.
+    */
+  @js.native
+  sealed trait INJECTABLE_INHERITS_INVALID_CONSTRUCTOR
+    extends StObject
+       with ErrorCode
+  /* 2016 */ val INJECTABLE_INHERITS_INVALID_CONSTRUCTOR: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.INJECTABLE_INHERITS_INVALID_CONSTRUCTOR & Double = js.native
   
   /**
     * The template type-checking engine would need to generate an inline type check block for a
@@ -274,6 +338,15 @@ object ErrorCode extends StObject {
     extends StObject
        with ErrorCode
   /* 8003 */ val MISSING_REFERENCE_TARGET: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.MISSING_REFERENCE_TARGET & Double = js.native
+  
+  /**
+    * A directive usage isn't binding to one or more required inputs.
+    */
+  @js.native
+  sealed trait MISSING_REQUIRED_INPUTS
+    extends StObject
+       with ErrorCode
+  /* 8008 */ val MISSING_REQUIRED_INPUTS: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.MISSING_REQUIRED_INPUTS & Double = js.native
   
   /**
     * Raised when a standalone component is part of the bootstrap list of an NgModule.
@@ -428,6 +501,23 @@ object ErrorCode extends StObject {
     extends StObject
        with ErrorCode
   /* 8001 */ val SCHEMA_INVALID_ELEMENT: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.SCHEMA_INVALID_ELEMENT & Double = js.native
+  
+  /**
+    * `ngSkipHydration` should not be a binding (it should be a static attribute).
+    *
+    * For example:
+    * ```
+    * <my-cmp [ngSkipHydration]="someTruthyVar" />
+    * ```
+    *
+    * `ngSkipHydration` cannot be a binding and can not have values other than "true" or an empty
+    * value
+    */
+  @js.native
+  sealed trait SKIP_HYDRATION_NOT_STATIC
+    extends StObject
+       with ErrorCode
+  /* 8108 */ val SKIP_HYDRATION_NOT_STATIC: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.SKIP_HYDRATION_NOT_STATIC & Double = js.native
   
   /**
     * A template has a two way binding (two bindings created by a single syntactical element)

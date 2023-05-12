@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetParametersPathDir extends StObject {
   
   /**
-    * Gets the README from a repository directory.
+    * Get a repository README for a directory
+    * @description Gets the README from a repository directory.
     *
     * READMEs support [custom media types](https://docs.github.com/rest/reference/repos#custom-media-types) for retrieving the raw content or rendered HTML.
     */

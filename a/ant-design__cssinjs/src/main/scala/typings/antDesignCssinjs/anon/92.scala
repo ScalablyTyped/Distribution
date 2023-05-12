@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderInlineStartWidth
+import typings.csstype.mod.Property.MozForceBrokenImageIcon
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `92` extends StObject {
   
   var value: js.UndefOr[
-    (BorderInlineStartWidth[Double | String]) | (js.Array[
+    MozForceBrokenImageIcon | (js.Array[
       (Extract[
         js.UndefOr[
-          (BorderInlineStartWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderInlineStartWidth[Double | String]]]])
+          MozForceBrokenImageIcon | js.Array[NonNullable[js.UndefOr[MozForceBrokenImageIcon]]]
         ], 
         String
-      ]) | (NonNullable[js.UndefOr[BorderInlineStartWidth[Double | String]]])
+      ]) | NonNullable[js.UndefOr[MozForceBrokenImageIcon]]
     ])
   ] = js.native
 }

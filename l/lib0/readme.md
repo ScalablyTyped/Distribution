@@ -1,7 +1,7 @@
 
 # Scala.js typings for lib0
 
-Typings are for version 0.2.52
+Typings are for version 0.2.74
 
 ## Library description:
 > Monorepo of isomorphic utility functions

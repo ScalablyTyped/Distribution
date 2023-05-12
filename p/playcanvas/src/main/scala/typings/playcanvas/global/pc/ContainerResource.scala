@@ -4,15 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../../framework/entity.js').Entity} Entity */
-/** @typedef {import('../../scene/mesh-instance').MeshInstance} MeshInstance */
-/** @typedef {import('../../framework/app-base.js').AppBase} AppBase */
 /** @typedef {import('./handler.js').ResourceHandler} ResourceHandler */
-/** @typedef {import('./handler.js').ResourceHandlerCallback} ResourceHandlerCallback */
 /**
   * @interface
   * @name ContainerResource
   * @description Container for a list of animations, textures, materials, renders and a model.
+  * @property {import('../asset/asset.js').Asset[]} renders An array of the Render assets.
+  * @property {import('../asset/asset.js').Asset[]} materials An array of {@link Material} and/or {@link StandardMaterial} assets.
+  * @property {import('../asset/asset.js').Asset[]} textures An array of the {@link Texture} assets.
+  * @property {import('../asset/asset.js').Asset[]} animations An array of the {@link Animation} assets.
   */
 @JSGlobal("pc.ContainerResource")
 @js.native

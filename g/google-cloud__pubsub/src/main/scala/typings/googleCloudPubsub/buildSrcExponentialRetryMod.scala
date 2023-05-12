@@ -33,6 +33,14 @@ object buildSrcExponentialRetryMod {
     /* private */ var randomizeDelta: Any = js.native
     
     /**
+      * Resets an item that was previously retried. This is useful if you have
+      * persistent items that just need to be retried occasionally.
+      *
+      * @private
+      */
+    def reset(item: T): Unit = js.native
+    
+    /**
       * Place an item on the retry queue. It's important that it's the
       * same exact item that was already on the queue, if it's being retried
       * more than once.

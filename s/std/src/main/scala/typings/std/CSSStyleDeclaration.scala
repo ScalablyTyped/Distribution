@@ -377,6 +377,21 @@ trait CSSStyleDeclaration
   var contain: java.lang.String = js.native
   
   /* standard dom */
+  var containIntrinsicBlockSize: java.lang.String = js.native
+  
+  /* standard dom */
+  var containIntrinsicHeight: java.lang.String = js.native
+  
+  /* standard dom */
+  var containIntrinsicInlineSize: java.lang.String = js.native
+  
+  /* standard dom */
+  var containIntrinsicSize: java.lang.String = js.native
+  
+  /* standard dom */
+  var containIntrinsicWidth: java.lang.String = js.native
+  
+  /* standard dom */
   var container: java.lang.String = js.native
   
   /* standard dom */
@@ -387,6 +402,9 @@ trait CSSStyleDeclaration
   
   /* standard dom */
   var content: java.lang.String = js.native
+  
+  /* standard dom */
+  var contentVisibility: java.lang.String = js.native
   
   /* standard dom */
   var counterIncrement: java.lang.String = js.native
@@ -749,6 +767,9 @@ trait CSSStyleDeclaration
   
   /* standard dom */
   var maskType: java.lang.String = js.native
+  
+  /* standard dom */
+  var mathStyle: java.lang.String = js.native
   
   /* standard dom */
   var maxBlockSize: java.lang.String = js.native

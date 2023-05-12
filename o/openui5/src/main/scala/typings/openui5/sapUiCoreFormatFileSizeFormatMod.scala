@@ -1,5 +1,6 @@
 package typings.openui5
 
+import typings.openui5.anon.BinaryFilesize
 import typings.openui5.sap.ClassInfo
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -80,30 +81,38 @@ object sapUiCoreFormatFileSizeFormatMod {
       * @returns instance of the FileSizeFormat
       */
     inline def getInstance(): FileSizeFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[FileSizeFormat]
-    inline def getInstance(/**
-      * Object which defines the format options
-      */
-    oFormatOptions: js.Object): FileSizeFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(oFormatOptions.asInstanceOf[js.Any]).asInstanceOf[FileSizeFormat]
     inline def getInstance(
       /**
-      * Object which defines the format options
-      */
-    oFormatOptions: js.Object,
-      /**
-      * Locale to get the formatter for
-      */
-    oLocale: typings.openui5.sapUiCoreLocaleMod.default
-    ): FileSizeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(oFormatOptions.asInstanceOf[js.Any], oLocale.asInstanceOf[js.Any])).asInstanceOf[FileSizeFormat]
-    inline def getInstance(
-      /**
-      * Object which defines the format options
+      * Supports the same options as {@link sap.ui.core.format.NumberFormat.getFloatInstance}
       */
     oFormatOptions: Unit,
       /**
-      * Locale to get the formatter for
+      * The locale to get the formatter for
       */
     oLocale: typings.openui5.sapUiCoreLocaleMod.default
     ): FileSizeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(oFormatOptions.asInstanceOf[js.Any], oLocale.asInstanceOf[js.Any])).asInstanceOf[FileSizeFormat]
+    inline def getInstance(
+      /**
+      * Supports the same options as {@link sap.ui.core.format.NumberFormat.getFloatInstance}
+      */
+    oFormatOptions: BinaryFilesize
+    ): FileSizeFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(oFormatOptions.asInstanceOf[js.Any]).asInstanceOf[FileSizeFormat]
+    inline def getInstance(
+      /**
+      * Supports the same options as {@link sap.ui.core.format.NumberFormat.getFloatInstance}
+      */
+    oFormatOptions: BinaryFilesize,
+      /**
+      * The locale to get the formatter for
+      */
+    oLocale: typings.openui5.sapUiCoreLocaleMod.default
+    ): FileSizeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(oFormatOptions.asInstanceOf[js.Any], oLocale.asInstanceOf[js.Any])).asInstanceOf[FileSizeFormat]
+    inline def getInstance(
+      /**
+      * The locale to get the formatter for
+      */
+    oLocale: typings.openui5.sapUiCoreLocaleMod.default
+    ): FileSizeFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(oLocale.asInstanceOf[js.Any]).asInstanceOf[FileSizeFormat]
     
     /**
       * Returns a metadata object for class sap.ui.core.format.FileSizeFormat.

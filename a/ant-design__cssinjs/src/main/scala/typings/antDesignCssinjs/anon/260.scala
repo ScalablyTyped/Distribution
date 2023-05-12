@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.InsetBlock
+import typings.csstype.mod.Property.ColumnRule
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `260` extends StObject {
   
   var value: js.UndefOr[
-    (InsetBlock[Double | String]) | (js.Array[
+    (ColumnRule[Double | String]) | (js.Array[
       (Extract[
         js.UndefOr[
-          (InsetBlock[Double | String]) | (js.Array[NonNullable[js.UndefOr[InsetBlock[Double | String]]]])
+          (ColumnRule[Double | String]) | (js.Array[NonNullable[js.UndefOr[ColumnRule[Double | String]]]])
         ], 
         String
-      ]) | (NonNullable[js.UndefOr[InsetBlock[Double | String]]])
+      ]) | (NonNullable[js.UndefOr[ColumnRule[Double | String]]])
     ])
   ] = js.native
 }

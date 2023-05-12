@@ -1,8 +1,10 @@
 package typings.egjsAxes
 
+import typings.egjsAxes.anon.Passive
 import typings.egjsAxes.declarationAxesMod.AxesOption
 import typings.egjsAxes.declarationAxisManagerMod.Axis
 import typings.egjsAxes.declarationTypesMod.ActiveEvent
+import typings.egjsAxes.egjsAxesBooleans.`false`
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,6 +18,8 @@ object declarationInputTypeInputTypeMod {
   
   inline def convertInputType(): ActiveEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("convertInputType")().asInstanceOf[ActiveEvent]
   inline def convertInputType(inputType: js.Array[String]): ActiveEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("convertInputType")(inputType.asInstanceOf[js.Any]).asInstanceOf[ActiveEvent]
+  
+  inline def getAddEventOptions(eventName: String): `false` | Passive = ^.asInstanceOf[js.Dynamic].applyDynamic("getAddEventOptions")(eventName.asInstanceOf[js.Any]).asInstanceOf[`false` | Passive]
   
   inline def toAxis(source: js.Array[String], offset: js.Array[Double]): Axis = (^.asInstanceOf[js.Dynamic].applyDynamic("toAxis")(source.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Axis]
   

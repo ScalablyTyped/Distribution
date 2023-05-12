@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `200ContentApplicationjsonCountUniques` extends StObject {
   
-  /** Response */
+  /** @description Response */
   var `200`: ContentApplicationjsonCountUniques
   
-  var `403`: Content48
+  var `403`: Content36
 }
 object `200ContentApplicationjsonCountUniques` {
   
-  inline def apply(`200`: ContentApplicationjsonCountUniques, `403`: Content48): `200ContentApplicationjsonCountUniques` = {
+  inline def apply(`200`: ContentApplicationjsonCountUniques, `403`: Content36): `200ContentApplicationjsonCountUniques` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.updateDynamic("403")(`403`.asInstanceOf[js.Any])
@@ -25,6 +25,6 @@ object `200ContentApplicationjsonCountUniques` {
     
     inline def set200(value: ContentApplicationjsonCountUniques): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set403(value: Content48): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+    inline def set403(value: Content36): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
   }
 }

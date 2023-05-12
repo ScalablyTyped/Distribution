@@ -1,14 +1,19 @@
 package typings.firebaseFirestore
 
+import typings.firebaseFirestore.anon.Request
+import typings.firebaseFirestore.distLiteFirestoreSrcCoreAggregateMod.Aggregate
 import typings.firebaseFirestore.distLiteFirestoreSrcCoreDatabaseInfoMod.DatabaseId
+import typings.firebaseFirestore.distLiteFirestoreSrcCoreFilterMod.CompositeFilter
+import typings.firebaseFirestore.distLiteFirestoreSrcCoreFilterMod.CompositeOperator
+import typings.firebaseFirestore.distLiteFirestoreSrcCoreFilterMod.FieldFilter
+import typings.firebaseFirestore.distLiteFirestoreSrcCoreFilterMod.Operator
+import typings.firebaseFirestore.distLiteFirestoreSrcCoreOrderByMod.Direction
+import typings.firebaseFirestore.distLiteFirestoreSrcCoreOrderByMod.OrderBy
 import typings.firebaseFirestore.distLiteFirestoreSrcCoreQueryMod.Query
 import typings.firebaseFirestore.distLiteFirestoreSrcCoreSnapshotVersionMod.SnapshotVersion
-import typings.firebaseFirestore.distLiteFirestoreSrcCoreTargetMod.Direction
-import typings.firebaseFirestore.distLiteFirestoreSrcCoreTargetMod.FieldFilter
-import typings.firebaseFirestore.distLiteFirestoreSrcCoreTargetMod.Operator
-import typings.firebaseFirestore.distLiteFirestoreSrcCoreTargetMod.OrderBy
 import typings.firebaseFirestore.distLiteFirestoreSrcCoreTargetMod.Target
 import typings.firebaseFirestore.distLiteFirestoreSrcLocalTargetDataMod.TargetData
+import typings.firebaseFirestore.distLiteFirestoreSrcLocalTargetDataMod.TargetPurpose
 import typings.firebaseFirestore.distLiteFirestoreSrcModelDocumentKeyMod.DocumentKey
 import typings.firebaseFirestore.distLiteFirestoreSrcModelDocumentMod.MutableDocument
 import typings.firebaseFirestore.distLiteFirestoreSrcModelFieldMaskMod.FieldMask
@@ -19,6 +24,7 @@ import typings.firebaseFirestore.distLiteFirestoreSrcModelPathMod.FieldPath
 import typings.firebaseFirestore.distLiteFirestoreSrcModelPathMod.ResourcePath
 import typings.firebaseFirestore.distLiteFirestoreSrcProtosFirestoreProtoApiMod.ApiClientObjectMap
 import typings.firebaseFirestore.distLiteFirestoreSrcProtosFirestoreProtoApiMod.BatchGetDocumentsResponse
+import typings.firebaseFirestore.distLiteFirestoreSrcProtosFirestoreProtoApiMod.CompositeFilterOp
 import typings.firebaseFirestore.distLiteFirestoreSrcProtosFirestoreProtoApiMod.Document
 import typings.firebaseFirestore.distLiteFirestoreSrcProtosFirestoreProtoApiMod.DocumentMask
 import typings.firebaseFirestore.distLiteFirestoreSrcProtosFirestoreProtoApiMod.DocumentsTarget
@@ -29,7 +35,6 @@ import typings.firebaseFirestore.distLiteFirestoreSrcProtosFirestoreProtoApiMod.
 import typings.firebaseFirestore.distLiteFirestoreSrcProtosFirestoreProtoApiMod.Order
 import typings.firebaseFirestore.distLiteFirestoreSrcProtosFirestoreProtoApiMod.OrderDirection
 import typings.firebaseFirestore.distLiteFirestoreSrcProtosFirestoreProtoApiMod.QueryTarget
-import typings.firebaseFirestore.distLiteFirestoreSrcProtosFirestoreProtoApiMod.RunAggregationQueryRequest
 import typings.firebaseFirestore.distLiteFirestoreSrcProtosFirestoreProtoApiMod.Timestamp
 import typings.firebaseFirestore.distLiteFirestoreSrcProtosFirestoreProtoApiMod.Write
 import typings.firebaseFirestore.distLiteFirestoreSrcProtosFirestoreProtoApiMod.WriteResult
@@ -67,6 +72,10 @@ object distLiteFirestoreSrcRemoteSerializerMod {
   inline def fromBytes(serializer: JsonProtoSerializer, value: String): ByteString = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(serializer.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ByteString]
   inline def fromBytes(serializer: JsonProtoSerializer, value: js.typedarray.Uint8Array): ByteString = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(serializer.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ByteString]
   
+  inline def fromCompositeFilter(filter: Filter): CompositeFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCompositeFilter")(filter.asInstanceOf[js.Any]).asInstanceOf[CompositeFilter]
+  
+  inline def fromCompositeOperatorName(op: CompositeFilterOp): CompositeOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCompositeOperatorName")(op.asInstanceOf[js.Any]).asInstanceOf[CompositeOperator]
+  
   inline def fromDirection(): js.UndefOr[Direction] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDirection")().asInstanceOf[js.UndefOr[Direction]]
   inline def fromDirection(dir: OrderDirection): js.UndefOr[Direction] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDirection")(dir.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Direction]]
   
@@ -77,7 +86,7 @@ object distLiteFirestoreSrcRemoteSerializerMod {
   
   inline def fromDocumentsTarget(documentsTarget: DocumentsTarget): Target = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDocumentsTarget")(documentsTarget.asInstanceOf[js.Any]).asInstanceOf[Target]
   
-  inline def fromFieldFilter(filter: Filter): typings.firebaseFirestore.distLiteFirestoreSrcCoreTargetMod.Filter = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFieldFilter")(filter.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distLiteFirestoreSrcCoreTargetMod.Filter]
+  inline def fromFieldFilter(filter: Filter): FieldFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFieldFilter")(filter.asInstanceOf[js.Any]).asInstanceOf[FieldFilter]
   
   inline def fromFieldPathReference(fieldReference: FieldReference): FieldPath = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFieldPathReference")(fieldReference.asInstanceOf[js.Any]).asInstanceOf[FieldPath]
   
@@ -91,7 +100,7 @@ object distLiteFirestoreSrcRemoteSerializerMod {
   
   inline def fromQueryTarget(target: QueryTarget): Target = ^.asInstanceOf[js.Dynamic].applyDynamic("fromQueryTarget")(target.asInstanceOf[js.Any]).asInstanceOf[Target]
   
-  inline def fromUnaryFilter(filter: Filter): typings.firebaseFirestore.distLiteFirestoreSrcCoreTargetMod.Filter = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUnaryFilter")(filter.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distLiteFirestoreSrcCoreTargetMod.Filter]
+  inline def fromUnaryFilter(filter: Filter): typings.firebaseFirestore.distLiteFirestoreSrcCoreFilterMod.Filter = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUnaryFilter")(filter.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distLiteFirestoreSrcCoreFilterMod.Filter]
   
   inline def fromVersion(version: Timestamp): SnapshotVersion = ^.asInstanceOf[js.Dynamic].applyDynamic("fromVersion")(version.asInstanceOf[js.Any]).asInstanceOf[SnapshotVersion]
   
@@ -108,6 +117,10 @@ object distLiteFirestoreSrcRemoteSerializerMod {
   
   inline def toBytes(serializer: JsonProtoSerializer, bytes: ByteString): String | js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("toBytes")(serializer.asInstanceOf[js.Any], bytes.asInstanceOf[js.Any])).asInstanceOf[String | js.typedarray.Uint8Array]
   
+  inline def toCompositeFilter(filter: CompositeFilter): Filter = ^.asInstanceOf[js.Dynamic].applyDynamic("toCompositeFilter")(filter.asInstanceOf[js.Any]).asInstanceOf[Filter]
+  
+  inline def toCompositeOperatorName(op: CompositeOperator): CompositeFilterOp = ^.asInstanceOf[js.Dynamic].applyDynamic("toCompositeOperatorName")(op.asInstanceOf[js.Any]).asInstanceOf[CompositeFilterOp]
+  
   inline def toDirection(dir: Direction): OrderDirection = ^.asInstanceOf[js.Dynamic].applyDynamic("toDirection")(dir.asInstanceOf[js.Any]).asInstanceOf[OrderDirection]
   
   inline def toDocument(serializer: JsonProtoSerializer, document: MutableDocument): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("toDocument")(serializer.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[Document]
@@ -117,6 +130,10 @@ object distLiteFirestoreSrcRemoteSerializerMod {
   inline def toDocumentsTarget(serializer: JsonProtoSerializer, target: Target): DocumentsTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("toDocumentsTarget")(serializer.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[DocumentsTarget]
   
   inline def toFieldPathReference(path: FieldPath): FieldReference = ^.asInstanceOf[js.Dynamic].applyDynamic("toFieldPathReference")(path.asInstanceOf[js.Any]).asInstanceOf[FieldReference]
+  
+  inline def toFilter(filter: typings.firebaseFirestore.distLiteFirestoreSrcCoreFilterMod.Filter): Filter = ^.asInstanceOf[js.Dynamic].applyDynamic("toFilter")(filter.asInstanceOf[js.Any]).asInstanceOf[Filter]
+  
+  inline def toLabel(purpose: TargetPurpose): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("toLabel")(purpose.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   inline def toListenRequestLabels(serializer: JsonProtoSerializer, targetData: TargetData): ApiClientObjectMap[String] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("toListenRequestLabels")(serializer.asInstanceOf[js.Any], targetData.asInstanceOf[js.Any])).asInstanceOf[ApiClientObjectMap[String] | Null]
   
@@ -134,7 +151,7 @@ object distLiteFirestoreSrcRemoteSerializerMod {
   
   inline def toResourceName(databaseId: DatabaseId, path: ResourcePath): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toResourceName")(databaseId.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def toRunAggregationQueryRequest(serializer: JsonProtoSerializer, target: Target): RunAggregationQueryRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("toRunAggregationQueryRequest")(serializer.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[RunAggregationQueryRequest]
+  inline def toRunAggregationQueryRequest(serializer: JsonProtoSerializer, target: Target, aggregates: js.Array[Aggregate]): Request = (^.asInstanceOf[js.Dynamic].applyDynamic("toRunAggregationQueryRequest")(serializer.asInstanceOf[js.Any], target.asInstanceOf[js.Any], aggregates.asInstanceOf[js.Any])).asInstanceOf[Request]
   
   inline def toTarget(serializer: JsonProtoSerializer, targetData: TargetData): typings.firebaseFirestore.distLiteFirestoreSrcProtosFirestoreProtoApiMod.Target = (^.asInstanceOf[js.Dynamic].applyDynamic("toTarget")(serializer.asInstanceOf[js.Any], targetData.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseFirestore.distLiteFirestoreSrcProtosFirestoreProtoApiMod.Target]
   

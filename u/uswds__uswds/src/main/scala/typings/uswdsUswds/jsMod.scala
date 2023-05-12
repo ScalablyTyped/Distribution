@@ -9,7 +9,10 @@ import typings.uswdsUswds.jsUsaDateRangePickerMod.DateRangePicker
 import typings.uswdsUswds.jsUsaFileInputMod.FileInput
 import typings.uswdsUswds.jsUsaFooterMod.Footer
 import typings.uswdsUswds.jsUsaHeaderMod.Navigation
+import typings.uswdsUswds.jsUsaInPageNavigationMod.InPageNavigation
+import typings.uswdsUswds.jsUsaInputMaskMod.InputMask
 import typings.uswdsUswds.jsUsaInputPrefixSuffixMod.InputPrefixSuffix
+import typings.uswdsUswds.jsUsaLanguageSelectorMod.LanguageSelector
 import typings.uswdsUswds.jsUsaModalMod.Modal
 import typings.uswdsUswds.jsUsaPasswordMod.Password
 import typings.uswdsUswds.jsUsaSearchMod.Search
@@ -56,9 +59,21 @@ object jsMod {
   @js.native
   val footer: Footer = js.native
   
+  @JSImport("@uswds/uswds/js", "inPageNavigation")
+  @js.native
+  val inPageNavigation: InPageNavigation = js.native
+  
+  @JSImport("@uswds/uswds/js", "inputMask")
+  @js.native
+  val inputMask: InputMask = js.native
+  
   @JSImport("@uswds/uswds/js", "inputPrefixSuffix")
   @js.native
   val inputPrefixSuffix: InputPrefixSuffix = js.native
+  
+  @JSImport("@uswds/uswds/js", "languageSelector")
+  @js.native
+  val languageSelector: LanguageSelector = js.native
   
   @JSImport("@uswds/uswds/js", "modal")
   @js.native

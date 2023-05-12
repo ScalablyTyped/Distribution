@@ -21,6 +21,9 @@ open class InstanceDataStorage ()
   var batchCacheReplacementModeInFrozenMode: typings.babylonjs.BABYLON.InstancesBatch = js.native
   
   /* CompleteClass */
+  var forceMatrixUpdates: Boolean = js.native
+  
+  /* CompleteClass */
   var hardwareInstancedRendering: Boolean = js.native
   
   /* CompleteClass */

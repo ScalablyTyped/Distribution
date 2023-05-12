@@ -13,6 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var default: TSType | Null
   
+  var const: Boolean | Null
+  
   var constraint: TSType | Null
   
   var in: Boolean | Null
@@ -27,13 +29,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object TSTypeParameter_ {
   
   inline def apply(name: String): TSTypeParameter_ = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], constraint = null, default = null, end = null, in = null, innerComments = null, leadingComments = null, loc = null, out = null, start = null, trailingComments = null)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], const = null, constraint = null, default = null, end = null, in = null, innerComments = null, leadingComments = null, loc = null, out = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSTypeParameter")
     __obj.asInstanceOf[TSTypeParameter_]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: TSTypeParameter_] (val x: Self) extends AnyVal {
+    
+    inline def setConst(value: Boolean): Self = StObject.set(x, "const", value.asInstanceOf[js.Any])
+    
+    inline def setConstNull: Self = StObject.set(x, "const", null)
     
     inline def setConstraint(value: TSType): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
     

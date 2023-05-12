@@ -467,11 +467,11 @@ object DocumentClient {
     /**
       * The target value for the metric. The range is 8.515920e-109 to 1.174271e+108 (Base 10) or 2e-360 to 2e360 (Base 2).
       */
-    var TargetValue: typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.Double
+    var TargetValue: DoubleObject
   }
   object AutoScalingTargetTrackingScalingPolicyConfigurationDescription {
     
-    inline def apply(TargetValue: typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.Double): AutoScalingTargetTrackingScalingPolicyConfigurationDescription = {
+    inline def apply(TargetValue: DoubleObject): AutoScalingTargetTrackingScalingPolicyConfigurationDescription = {
       val __obj = js.Dynamic.literal(TargetValue = TargetValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[AutoScalingTargetTrackingScalingPolicyConfigurationDescription]
     }
@@ -491,7 +491,7 @@ object DocumentClient {
       
       inline def setScaleOutCooldownUndefined: Self = StObject.set(x, "ScaleOutCooldown", js.undefined)
       
-      inline def setTargetValue(value: typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.Double): Self = StObject.set(x, "TargetValue", value.asInstanceOf[js.Any])
+      inline def setTargetValue(value: DoubleObject): Self = StObject.set(x, "TargetValue", value.asInstanceOf[js.Any])
     }
   }
   
@@ -515,11 +515,11 @@ object DocumentClient {
     /**
       * The target value for the metric. The range is 8.515920e-109 to 1.174271e+108 (Base 10) or 2e-360 to 2e360 (Base 2).
       */
-    var TargetValue: typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.Double
+    var TargetValue: DoubleObject
   }
   object AutoScalingTargetTrackingScalingPolicyConfigurationUpdate {
     
-    inline def apply(TargetValue: typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.Double): AutoScalingTargetTrackingScalingPolicyConfigurationUpdate = {
+    inline def apply(TargetValue: DoubleObject): AutoScalingTargetTrackingScalingPolicyConfigurationUpdate = {
       val __obj = js.Dynamic.literal(TargetValue = TargetValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[AutoScalingTargetTrackingScalingPolicyConfigurationUpdate]
     }
@@ -539,7 +539,7 @@ object DocumentClient {
       
       inline def setScaleOutCooldownUndefined: Self = StObject.set(x, "ScaleOutCooldown", js.undefined)
       
-      inline def setTargetValue(value: typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.Double): Self = StObject.set(x, "TargetValue", value.asInstanceOf[js.Any])
+      inline def setTargetValue(value: DoubleObject): Self = StObject.set(x, "TargetValue", value.asInstanceOf[js.Any])
     }
   }
   
@@ -667,7 +667,7 @@ object DocumentClient {
   
   type BackupName = java.lang.String
   
-  type BackupSizeBytes = scala.Double
+  type BackupSizeBytes = Double
   
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.CREATING
@@ -800,7 +800,7 @@ object DocumentClient {
   */
   type BackupTypeFilter = _BackupTypeFilter | java.lang.String
   
-  type BackupsInputLimit = scala.Double
+  type BackupsInputLimit = Double
   
   trait BatchExecuteStatementInput extends StObject {
     
@@ -1128,7 +1128,7 @@ object DocumentClient {
     var ItemCollectionMetrics: js.UndefOr[ItemCollectionMetricsPerTable] = js.undefined
     
     /**
-      * A map of tables and requests against those tables that were not processed. The UnprocessedItems value is in the same form as RequestItems, so you can provide this value directly to a subsequent BatchGetItem operation. For more information, see RequestItems in the Request Parameters section. Each UnprocessedItems entry consists of a table name and, for that table, a list of operations to perform (DeleteRequest or PutRequest).    DeleteRequest - Perform a DeleteItem operation on the specified item. The item to be deleted is identified by a Key subelement:    Key - A map of primary key attribute values that uniquely identify the item. Each entry in this map consists of an attribute name and an attribute value.      PutRequest - Perform a PutItem operation on the specified item. The item to be put is identified by an Item subelement:    Item - A map of attributes and their values. Each entry in this map consists of an attribute name and an attribute value. Attribute values must not be null; string and binary type attributes must have lengths greater than zero; and set type attributes must not be empty. Requests that contain empty values will be rejected with a ValidationException exception. If you specify any attributes that are part of an index key, then the data types for those attributes must match those of the schema in the table's attribute definition.     If there are no unprocessed items remaining, the response contains an empty UnprocessedItems map.
+      * A map of tables and requests against those tables that were not processed. The UnprocessedItems value is in the same form as RequestItems, so you can provide this value directly to a subsequent BatchWriteItem operation. For more information, see RequestItems in the Request Parameters section. Each UnprocessedItems entry consists of a table name and, for that table, a list of operations to perform (DeleteRequest or PutRequest).    DeleteRequest - Perform a DeleteItem operation on the specified item. The item to be deleted is identified by a Key subelement:    Key - A map of primary key attribute values that uniquely identify the item. Each entry in this map consists of an attribute name and an attribute value.      PutRequest - Perform a PutItem operation on the specified item. The item to be put is identified by an Item subelement:    Item - A map of attributes and their values. Each entry in this map consists of an attribute name and an attribute value. Attribute values must not be null; string and binary type attributes must have lengths greater than zero; and set type attributes must not be empty. Requests that contain empty values will be rejected with a ValidationException exception. If you specify any attributes that are part of an index key, then the data types for those attributes must match those of the schema in the table's attribute definition.     If there are no unprocessed items remaining, the response contains an empty UnprocessedItems map.
       */
     var UnprocessedItems: js.UndefOr[BatchWriteItemRequestMap] = js.undefined
   }
@@ -1160,7 +1160,7 @@ object DocumentClient {
   
   type BatchWriteItemRequestMap = StringDictionary[WriteRequests]
   
-  type BilledSizeBytes = scala.Double
+  type BilledSizeBytes = Double
   
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.PROVISIONED
@@ -1339,17 +1339,17 @@ object DocumentClient {
   trait ConditionCheck extends StObject {
     
     /**
-      * A condition that must be satisfied in order for a conditional update to succeed.
+      * A condition that must be satisfied in order for a conditional update to succeed. For more information, see Condition expressions in the Amazon DynamoDB Developer Guide.
       */
     var ConditionExpression: typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.ConditionExpression
     
     /**
-      * One or more substitution tokens for attribute names in an expression.
+      * One or more substitution tokens for attribute names in an expression. For more information, see Expression attribute names in the Amazon DynamoDB Developer Guide.
       */
     var ExpressionAttributeNames: js.UndefOr[ExpressionAttributeNameMap] = js.undefined
     
     /**
-      * One or more values that can be substituted in an expression.
+      * One or more values that can be substituted in an expression. For more information, see Condition expressions in the Amazon DynamoDB Developer Guide.
       */
     var ExpressionAttributeValues: js.UndefOr[ExpressionAttributeValueMap] = js.undefined
     
@@ -1490,7 +1490,7 @@ object DocumentClient {
   
   type ConsumedCapacityMultiple = js.Array[ConsumedCapacity]
   
-  type ConsumedCapacityUnits = scala.Double
+  type ConsumedCapacityUnits = Double
   
   trait ContinuousBackupsDescription extends StObject {
     
@@ -1902,6 +1902,13 @@ object DocumentClient {
     var BillingMode: js.UndefOr[typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.BillingMode] = js.undefined
     
     /**
+      * Indicates whether deletion protection is to be enabled (true) or disabled (false) on the table.
+      */
+    var DeletionProtectionEnabled: js.UndefOr[
+        typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.DeletionProtectionEnabled
+      ] = js.undefined
+    
+    /**
       * One or more global secondary indexes (the maximum is 20) to be created on the table. Each global secondary index in the array includes the following:    IndexName - The name of the global secondary index. Must be unique only for this table.     KeySchema - Specifies the key schema for the global secondary index.    Projection - Specifies attributes that are copied (projected) from the table into the index. These are in addition to the primary key attributes and index key attributes, which are automatically projected. Each attribute specification is composed of:    ProjectionType - One of the following:    KEYS_ONLY - Only the index and primary keys are projected into the index.    INCLUDE - Only the specified table attributes are projected into the index. The list of projected attributes is in NonKeyAttributes.    ALL - All of the table attributes are projected into the index.      NonKeyAttributes - A list of one or more non-key attribute names that are projected into the secondary index. The total count of attributes provided in NonKeyAttributes, summed across all of the secondary indexes, must not exceed 100. If you project the same attribute into two different indexes, this counts as two distinct attributes when determining the total.      ProvisionedThroughput - The provisioned throughput settings for the global secondary index, consisting of read and write capacity units.  
       */
     var GlobalSecondaryIndexes: js.UndefOr[GlobalSecondaryIndexList] = js.undefined
@@ -1963,6 +1970,10 @@ object DocumentClient {
       inline def setBillingMode(value: BillingMode): Self = StObject.set(x, "BillingMode", value.asInstanceOf[js.Any])
       
       inline def setBillingModeUndefined: Self = StObject.set(x, "BillingMode", js.undefined)
+      
+      inline def setDeletionProtectionEnabled(value: DeletionProtectionEnabled): Self = StObject.set(x, "DeletionProtectionEnabled", value.asInstanceOf[js.Any])
+      
+      inline def setDeletionProtectionEnabledUndefined: Self = StObject.set(x, "DeletionProtectionEnabled", js.undefined)
       
       inline def setGlobalSecondaryIndexes(value: GlobalSecondaryIndexList): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
       
@@ -2230,7 +2241,7 @@ object DocumentClient {
     var ExpressionAttributeValues: js.UndefOr[ExpressionAttributeValueMap] = js.undefined
     
     /**
-      * A map of attribute names to AttributeValue objects, representing the primary key of the item to delete. For the primary key, you must provide all of the attributes. For example, with a simple primary key, you only need to provide a value for the partition key. For a composite primary key, you must provide values for both the partition key and the sort key.
+      * A map of attribute names to AttributeValue objects, representing the primary key of the item to delete. For the primary key, you must provide all of the key attributes. For example, with a simple primary key, you only need to provide a value for the partition key. For a composite primary key, you must provide values for both the partition key and the sort key.
       */
     var Key: typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.Key
     
@@ -2311,7 +2322,7 @@ object DocumentClient {
     var Attributes: js.UndefOr[AttributeMap] = js.undefined
     
     /**
-      * The capacity units consumed by the DeleteItem operation. The data returned includes the total provisioned throughput consumed, along with statistics for the table and any indexes involved in the operation. ConsumedCapacity is only returned if the ReturnConsumedCapacity parameter was specified. For more information, see Provisioned Mode in the Amazon DynamoDB Developer Guide.
+      * The capacity units consumed by the DeleteItem operation. The data returned includes the total provisioned throughput consumed, along with statistics for the table and any indexes involved in the operation. ConsumedCapacity is only returned if the ReturnConsumedCapacity parameter was specified. For more information, see Provisioned Throughput in the Amazon DynamoDB Developer Guide.
       */
     var ConsumedCapacity: js.UndefOr[typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.ConsumedCapacity] = js.undefined
     
@@ -2450,6 +2461,8 @@ object DocumentClient {
       inline def setTableDescriptionUndefined: Self = StObject.set(x, "TableDescription", js.undefined)
     }
   }
+  
+  type DeletionProtectionEnabled = Boolean
   
   trait DescribeBackupInput extends StObject {
     
@@ -3148,7 +3161,7 @@ object DocumentClient {
     }
   }
   
-  type Double = scala.Double
+  type DoubleObject = Double
   
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.StringSet
@@ -3164,7 +3177,7 @@ object DocumentClient {
       __obj.asInstanceOf[typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.BinarySet]
     }
     
-    inline def NumberSet(values: js.Array[scala.Double]): typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.NumberSet = {
+    inline def NumberSet(values: js.Array[Double]): typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.NumberSet = {
       val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("Number")
       __obj.asInstanceOf[typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.NumberSet]
@@ -3210,7 +3223,7 @@ object DocumentClient {
   
   type Endpoints = js.Array[Endpoint]
   
-  type ErrorCount = scala.Double
+  type ErrorCount = Double
   
   type ExceptionDescription = java.lang.String
   
@@ -3994,7 +4007,7 @@ object DocumentClient {
   trait GetItemOutput extends StObject {
     
     /**
-      * The capacity units consumed by the GetItem operation. The data returned includes the total provisioned throughput consumed, along with statistics for the table and any indexes involved in the operation. ConsumedCapacity is only returned if the ReturnConsumedCapacity parameter was specified. For more information, see Read/Write Capacity Mode in the Amazon DynamoDB Developer Guide.
+      * The capacity units consumed by the GetItem operation. The data returned includes the total provisioned throughput consumed, along with statistics for the table and any indexes involved in the operation. ConsumedCapacity is only returned if the ReturnConsumedCapacity parameter was specified. For more information, see Provisioned Throughput in the Amazon DynamoDB Developer Guide.
       */
     var ConsumedCapacity: js.UndefOr[typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.ConsumedCapacity] = js.undefined
     
@@ -4120,7 +4133,7 @@ object DocumentClient {
     /**
       * The total size of the specified index, in bytes. DynamoDB updates this value approximately every six hours. Recent changes might not be reflected in this value.
       */
-    var IndexSizeBytes: js.UndefOr[Long] = js.undefined
+    var IndexSizeBytes: js.UndefOr[LongObject] = js.undefined
     
     /**
       * The current state of the global secondary index:    CREATING - The index is being created.    UPDATING - The index is being updated.    DELETING - The index is being deleted.    ACTIVE - The index is ready for use.  
@@ -4130,7 +4143,7 @@ object DocumentClient {
     /**
       * The number of items in the specified index. DynamoDB updates this value approximately every six hours. Recent changes might not be reflected in this value.
       */
-    var ItemCount: js.UndefOr[Long] = js.undefined
+    var ItemCount: js.UndefOr[LongObject] = js.undefined
     
     /**
       * The complete key schema for a global secondary index, which consists of one or more pairs of attribute names and key types:    HASH - partition key    RANGE - sort key    The partition key of an item is also known as its hash attribute. The term "hash attribute" derives from DynamoDB's usage of an internal hash function to evenly distribute data items across partitions, based on their partition key values. The sort key of an item is also known as its range attribute. The term "range attribute" derives from the way DynamoDB stores items with the same partition key physically close together, in sorted order by the sort key value. 
@@ -4169,7 +4182,7 @@ object DocumentClient {
       
       inline def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
       
-      inline def setIndexSizeBytes(value: Long): Self = StObject.set(x, "IndexSizeBytes", value.asInstanceOf[js.Any])
+      inline def setIndexSizeBytes(value: LongObject): Self = StObject.set(x, "IndexSizeBytes", value.asInstanceOf[js.Any])
       
       inline def setIndexSizeBytesUndefined: Self = StObject.set(x, "IndexSizeBytes", js.undefined)
       
@@ -4177,7 +4190,7 @@ object DocumentClient {
       
       inline def setIndexStatusUndefined: Self = StObject.set(x, "IndexStatus", js.undefined)
       
-      inline def setItemCount(value: Long): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
+      inline def setItemCount(value: LongObject): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
       
       inline def setItemCountUndefined: Self = StObject.set(x, "ItemCount", js.undefined)
       
@@ -4623,7 +4636,7 @@ object DocumentClient {
     /**
       *  The total size of data processed from the source file, in Bytes. 
       */
-    var ProcessedSizeBytes: js.UndefOr[Long] = js.undefined
+    var ProcessedSizeBytes: js.UndefOr[LongObject] = js.undefined
     
     /**
       *  Values for the S3 bucket the source file is imported from. Includes bucket name (required), key prefix (optional) and bucket account owner ID (optional). 
@@ -4714,7 +4727,7 @@ object DocumentClient {
       
       inline def setProcessedItemCountUndefined: Self = StObject.set(x, "ProcessedItemCount", js.undefined)
       
-      inline def setProcessedSizeBytes(value: Long): Self = StObject.set(x, "ProcessedSizeBytes", value.asInstanceOf[js.Any])
+      inline def setProcessedSizeBytes(value: LongObject): Self = StObject.set(x, "ProcessedSizeBytes", value.asInstanceOf[js.Any])
       
       inline def setProcessedSizeBytesUndefined: Self = StObject.set(x, "ProcessedSizeBytes", js.undefined)
       
@@ -4827,7 +4840,7 @@ object DocumentClient {
     }
   }
   
-  type ImportedItemCount = scala.Double
+  type ImportedItemCount = Double
   
   type IndexName = java.lang.String
   
@@ -4879,9 +4892,9 @@ object DocumentClient {
     }
   }
   
-  type Integer = scala.Double
+  type Integer = Double
   
-  type IntegerObject = scala.Double
+  type IntegerObject = Double
   
   type ItemCollectionKeyAttributeMap = StringDictionary[AttributeValue]
   
@@ -4923,11 +4936,11 @@ object DocumentClient {
   
   type ItemCollectionMetricsPerTable = StringDictionary[ItemCollectionMetricsMultiple]
   
-  type ItemCollectionSizeEstimateBound = scala.Double
+  type ItemCollectionSizeEstimateBound = Double
   
   type ItemCollectionSizeEstimateRange = js.Array[ItemCollectionSizeEstimateBound]
   
-  type ItemCount = scala.Double
+  type ItemCount = Double
   
   type ItemList = js.Array[AttributeMap]
   
@@ -5327,7 +5340,7 @@ object DocumentClient {
     }
   }
   
-  type ListContributorInsightsLimit = scala.Double
+  type ListContributorInsightsLimit = Double
   
   trait ListContributorInsightsOutput extends StObject {
     
@@ -5406,7 +5419,7 @@ object DocumentClient {
     }
   }
   
-  type ListExportsMaxLimit = scala.Double
+  type ListExportsMaxLimit = Double
   
   trait ListExportsOutput extends StObject {
     
@@ -5558,7 +5571,7 @@ object DocumentClient {
     }
   }
   
-  type ListImportsMaxLimit = scala.Double
+  type ListImportsMaxLimit = Double
   
   trait ListImportsOutput extends StObject {
     
@@ -5626,7 +5639,7 @@ object DocumentClient {
     }
   }
   
-  type ListTablesInputLimit = scala.Double
+  type ListTablesInputLimit = Double
   
   trait ListTablesOutput extends StObject {
     
@@ -5778,12 +5791,12 @@ object DocumentClient {
     /**
       * The total size of the specified index, in bytes. DynamoDB updates this value approximately every six hours. Recent changes might not be reflected in this value.
       */
-    var IndexSizeBytes: js.UndefOr[Long] = js.undefined
+    var IndexSizeBytes: js.UndefOr[LongObject] = js.undefined
     
     /**
       * The number of items in the specified index. DynamoDB updates this value approximately every six hours. Recent changes might not be reflected in this value.
       */
-    var ItemCount: js.UndefOr[Long] = js.undefined
+    var ItemCount: js.UndefOr[LongObject] = js.undefined
     
     /**
       * The complete key schema for the local secondary index, consisting of one or more pairs of attribute names and key types:    HASH - partition key    RANGE - sort key    The partition key of an item is also known as its hash attribute. The term "hash attribute" derives from DynamoDB's usage of an internal hash function to evenly distribute data items across partitions, based on their partition key values. The sort key of an item is also known as its range attribute. The term "range attribute" derives from the way DynamoDB stores items with the same partition key physically close together, in sorted order by the sort key value. 
@@ -5813,11 +5826,11 @@ object DocumentClient {
       
       inline def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
       
-      inline def setIndexSizeBytes(value: Long): Self = StObject.set(x, "IndexSizeBytes", value.asInstanceOf[js.Any])
+      inline def setIndexSizeBytes(value: LongObject): Self = StObject.set(x, "IndexSizeBytes", value.asInstanceOf[js.Any])
       
       inline def setIndexSizeBytesUndefined: Self = StObject.set(x, "IndexSizeBytes", js.undefined)
       
-      inline def setItemCount(value: Long): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
+      inline def setItemCount(value: LongObject): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
       
       inline def setItemCountUndefined: Self = StObject.set(x, "ItemCount", js.undefined)
       
@@ -5882,7 +5895,9 @@ object DocumentClient {
   
   type LocalSecondaryIndexes = js.Array[LocalSecondaryIndexInfo]
   
-  type Long = scala.Double
+  type Long = Double
+  
+  type LongObject = Double
   
   type MapAttributeValue = StringDictionary[AttributeValue]
   
@@ -5892,7 +5907,7 @@ object DocumentClient {
   
   type NonKeyAttributeNameList = js.Array[NonKeyAttributeName]
   
-  type NonNegativeLongObject = scala.Double
+  type NonNegativeLongObject = Double
   
   type NullAttributeValue = Boolean
   
@@ -5904,11 +5919,11 @@ object DocumentClient {
     
     var `type`: Number_
     
-    var values: js.Array[scala.Double]
+    var values: js.Array[Double]
   }
   object NumberSet {
     
-    inline def apply(values: js.Array[scala.Double]): NumberSet = {
+    inline def apply(values: js.Array[Double]): NumberSet = {
       val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("Number")
       __obj.asInstanceOf[NumberSet]
@@ -5919,9 +5934,9 @@ object DocumentClient {
       
       inline def setType(value: Number_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      inline def setValues(value: js.Array[scala.Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      inline def setValuesVarargs(value: scala.Double*): Self = StObject.set(x, "values", js.Array(value*))
+      inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
@@ -6040,13 +6055,13 @@ object DocumentClient {
   */
   type PointInTimeRecoveryStatus = _PointInTimeRecoveryStatus | java.lang.String
   
-  type PositiveIntegerObject = scala.Double
+  type PositiveIntegerObject = Double
   
-  type PositiveLongObject = scala.Double
+  type PositiveLongObject = Double
   
   type PreparedStatementParameters = js.Array[AttributeValue]
   
-  type ProcessedItemCount = scala.Double
+  type ProcessedItemCount = Double
   
   trait Projection extends StObject {
     
@@ -6379,7 +6394,7 @@ object DocumentClient {
     var Attributes: js.UndefOr[AttributeMap] = js.undefined
     
     /**
-      * The capacity units consumed by the PutItem operation. The data returned includes the total provisioned throughput consumed, along with statistics for the table and any indexes involved in the operation. ConsumedCapacity is only returned if the ReturnConsumedCapacity parameter was specified. For more information, see Read/Write Capacity Mode in the Amazon DynamoDB Developer Guide.
+      * The capacity units consumed by the PutItem operation. The data returned includes the total provisioned throughput consumed, along with statistics for the table and any indexes involved in the operation. ConsumedCapacity is only returned if the ReturnConsumedCapacity parameter was specified. For more information, see Provisioned Throughput in the Amazon DynamoDB Developer Guide.
       */
     var ConsumedCapacity: js.UndefOr[typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.ConsumedCapacity] = js.undefined
     
@@ -6510,7 +6525,7 @@ object DocumentClient {
     var ScanIndexForward: js.UndefOr[BooleanObject] = js.undefined
     
     /**
-      * The attributes to be returned in the result. You can retrieve all item attributes, specific item attributes, the count of matching items, or in the case of an index, some or all of the attributes projected into the index.    ALL_ATTRIBUTES - Returns all of the item attributes from the specified table or index. If you query a local secondary index, then for each matching item in the index, DynamoDB fetches the entire item from the parent table. If the index is configured to project all item attributes, then all of the data can be obtained from the local secondary index, and no fetching is required.    ALL_PROJECTED_ATTRIBUTES - Allowed only when querying an index. Retrieves all attributes that have been projected into the index. If the index is configured to project all attributes, this return value is equivalent to specifying ALL_ATTRIBUTES.    COUNT - Returns the number of matching items, rather than the matching items themselves.    SPECIFIC_ATTRIBUTES - Returns only the attributes listed in ProjectionExpression. This return value is equivalent to specifying ProjectionExpression without specifying any value for Select. If you query or scan a local secondary index and request only attributes that are projected into that index, the operation will read only the index and not the table. If any of the requested attributes are not projected into the local secondary index, DynamoDB fetches each of these attributes from the parent table. This extra fetching incurs additional throughput cost and latency. If you query or scan a global secondary index, you can only request attributes that are projected into the index. Global secondary index queries cannot fetch attributes from the parent table.   If neither Select nor ProjectionExpression are specified, DynamoDB defaults to ALL_ATTRIBUTES when accessing a table, and ALL_PROJECTED_ATTRIBUTES when accessing an index. You cannot use both Select and ProjectionExpression together in a single request, unless the value for Select is SPECIFIC_ATTRIBUTES. (This usage is equivalent to specifying ProjectionExpression without any value for Select.)  If you use the ProjectionExpression parameter, then the value for Select can only be SPECIFIC_ATTRIBUTES. Any other value for Select will return an error. 
+      * The attributes to be returned in the result. You can retrieve all item attributes, specific item attributes, the count of matching items, or in the case of an index, some or all of the attributes projected into the index.    ALL_ATTRIBUTES - Returns all of the item attributes from the specified table or index. If you query a local secondary index, then for each matching item in the index, DynamoDB fetches the entire item from the parent table. If the index is configured to project all item attributes, then all of the data can be obtained from the local secondary index, and no fetching is required.    ALL_PROJECTED_ATTRIBUTES - Allowed only when querying an index. Retrieves all attributes that have been projected into the index. If the index is configured to project all attributes, this return value is equivalent to specifying ALL_ATTRIBUTES.    COUNT - Returns the number of matching items, rather than the matching items themselves. Note that this uses the same quantity of read capacity units as getting the items, and is subject to the same item size calculations.    SPECIFIC_ATTRIBUTES - Returns only the attributes listed in ProjectionExpression. This return value is equivalent to specifying ProjectionExpression without specifying any value for Select. If you query or scan a local secondary index and request only attributes that are projected into that index, the operation will read only the index and not the table. If any of the requested attributes are not projected into the local secondary index, DynamoDB fetches each of these attributes from the parent table. This extra fetching incurs additional throughput cost and latency. If you query or scan a global secondary index, you can only request attributes that are projected into the index. Global secondary index queries cannot fetch attributes from the parent table.   If neither Select nor ProjectionExpression are specified, DynamoDB defaults to ALL_ATTRIBUTES when accessing a table, and ALL_PROJECTED_ATTRIBUTES when accessing an index. You cannot use both Select and ProjectionExpression together in a single request, unless the value for Select is SPECIFIC_ATTRIBUTES. (This usage is equivalent to specifying ProjectionExpression without any value for Select.)  If you use the ProjectionExpression parameter, then the value for Select can only be SPECIFIC_ATTRIBUTES. Any other value for Select will return an error. 
       */
     var Select: js.UndefOr[typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.Select] = js.undefined
     
@@ -6924,7 +6939,7 @@ object DocumentClient {
     var IndexName: js.UndefOr[typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.IndexName] = js.undefined
     
     /**
-      * The current state of the replica global secondary index:    CREATING - The index is being created.    UPDATING - The index is being updated.    DELETING - The index is being deleted.    ACTIVE - The index is ready for use.  
+      * The current state of the replica global secondary index:    CREATING - The index is being created.    UPDATING - The table/index configuration is being updated. The table/index remains available for data operations when UPDATING     DELETING - The index is being deleted.    ACTIVE - The index is ready for use.  
       */
     var IndexStatus: js.UndefOr[typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.IndexStatus] = js.undefined
     
@@ -7940,7 +7955,7 @@ object DocumentClient {
     var Segment: js.UndefOr[ScanSegment] = js.undefined
     
     /**
-      * The attributes to be returned in the result. You can retrieve all item attributes, specific item attributes, the count of matching items, or in the case of an index, some or all of the attributes projected into the index.    ALL_ATTRIBUTES - Returns all of the item attributes from the specified table or index. If you query a local secondary index, then for each matching item in the index, DynamoDB fetches the entire item from the parent table. If the index is configured to project all item attributes, then all of the data can be obtained from the local secondary index, and no fetching is required.    ALL_PROJECTED_ATTRIBUTES - Allowed only when querying an index. Retrieves all attributes that have been projected into the index. If the index is configured to project all attributes, this return value is equivalent to specifying ALL_ATTRIBUTES.    COUNT - Returns the number of matching items, rather than the matching items themselves.    SPECIFIC_ATTRIBUTES - Returns only the attributes listed in ProjectionExpression. This return value is equivalent to specifying ProjectionExpression without specifying any value for Select. If you query or scan a local secondary index and request only attributes that are projected into that index, the operation reads only the index and not the table. If any of the requested attributes are not projected into the local secondary index, DynamoDB fetches each of these attributes from the parent table. This extra fetching incurs additional throughput cost and latency. If you query or scan a global secondary index, you can only request attributes that are projected into the index. Global secondary index queries cannot fetch attributes from the parent table.   If neither Select nor ProjectionExpression are specified, DynamoDB defaults to ALL_ATTRIBUTES when accessing a table, and ALL_PROJECTED_ATTRIBUTES when accessing an index. You cannot use both Select and ProjectionExpression together in a single request, unless the value for Select is SPECIFIC_ATTRIBUTES. (This usage is equivalent to specifying ProjectionExpression without any value for Select.)  If you use the ProjectionExpression parameter, then the value for Select can only be SPECIFIC_ATTRIBUTES. Any other value for Select will return an error. 
+      * The attributes to be returned in the result. You can retrieve all item attributes, specific item attributes, the count of matching items, or in the case of an index, some or all of the attributes projected into the index.    ALL_ATTRIBUTES - Returns all of the item attributes from the specified table or index. If you query a local secondary index, then for each matching item in the index, DynamoDB fetches the entire item from the parent table. If the index is configured to project all item attributes, then all of the data can be obtained from the local secondary index, and no fetching is required.    ALL_PROJECTED_ATTRIBUTES - Allowed only when querying an index. Retrieves all attributes that have been projected into the index. If the index is configured to project all attributes, this return value is equivalent to specifying ALL_ATTRIBUTES.    COUNT - Returns the number of matching items, rather than the matching items themselves. Note that this uses the same quantity of read capacity units as getting the items, and is subject to the same item size calculations.    SPECIFIC_ATTRIBUTES - Returns only the attributes listed in ProjectionExpression. This return value is equivalent to specifying ProjectionExpression without specifying any value for Select. If you query or scan a local secondary index and request only attributes that are projected into that index, the operation reads only the index and not the table. If any of the requested attributes are not projected into the local secondary index, DynamoDB fetches each of these attributes from the parent table. This extra fetching incurs additional throughput cost and latency. If you query or scan a global secondary index, you can only request attributes that are projected into the index. Global secondary index queries cannot fetch attributes from the parent table.   If neither Select nor ProjectionExpression are specified, DynamoDB defaults to ALL_ATTRIBUTES when accessing a table, and ALL_PROJECTED_ATTRIBUTES when accessing an index. You cannot use both Select and ProjectionExpression together in a single request, unless the value for Select is SPECIFIC_ATTRIBUTES. (This usage is equivalent to specifying ProjectionExpression without any value for Select.)  If you use the ProjectionExpression parameter, then the value for Select can only be SPECIFIC_ATTRIBUTES. Any other value for Select will return an error. 
       */
     var Select: js.UndefOr[typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.Select] = js.undefined
     
@@ -8091,9 +8106,9 @@ object DocumentClient {
     }
   }
   
-  type ScanSegment = scala.Double
+  type ScanSegment = Double
   
-  type ScanTotalSegments = scala.Double
+  type ScanTotalSegments = Double
   
   type SecondaryIndexesCapacityMap = StringDictionary[Capacity]
   
@@ -8151,7 +8166,7 @@ object DocumentClient {
     /**
       * Size of the table in bytes. Note that this is an approximate value.
       */
-    var TableSizeBytes: js.UndefOr[Long] = js.undefined
+    var TableSizeBytes: js.UndefOr[LongObject] = js.undefined
   }
   object SourceTableDetails {
     
@@ -8193,7 +8208,7 @@ object DocumentClient {
       
       inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
       
-      inline def setTableSizeBytes(value: Long): Self = StObject.set(x, "TableSizeBytes", value.asInstanceOf[js.Any])
+      inline def setTableSizeBytes(value: LongObject): Self = StObject.set(x, "TableSizeBytes", value.asInstanceOf[js.Any])
       
       inline def setTableSizeBytesUndefined: Self = StObject.set(x, "TableSizeBytes", js.undefined)
     }
@@ -8520,6 +8535,13 @@ object DocumentClient {
     var CreationDateTime: js.UndefOr[js.Date] = js.undefined
     
     /**
+      * Indicates whether deletion protection is enabled (true) or disabled (false) on the table.
+      */
+    var DeletionProtectionEnabled: js.UndefOr[
+        typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.DeletionProtectionEnabled
+      ] = js.undefined
+    
+    /**
       * The global secondary indexes, if any, on the table. Each index is scoped to a given partition key value. Each element is composed of:    Backfilling - If true, then the index is currently in the backfilling phase. Backfilling occurs only when a new global secondary index is added to the table. It is the process by which DynamoDB populates the new index with data from the table. (This attribute does not appear for indexes that were created during a CreateTable operation.)   You can delete an index that is being created during the Backfilling phase when IndexStatus is set to CREATING and Backfilling is true. You can't delete the index that is being created when IndexStatus is set to CREATING and Backfilling is false. (This attribute does not appear for indexes that were created during a CreateTable operation.)    IndexName - The name of the global secondary index.    IndexSizeBytes - The total size of the global secondary index, in bytes. DynamoDB updates this value approximately every six hours. Recent changes might not be reflected in this value.     IndexStatus - The current status of the global secondary index:    CREATING - The index is being created.    UPDATING - The index is being updated.    DELETING - The index is being deleted.    ACTIVE - The index is ready for use.      ItemCount - The number of items in the global secondary index. DynamoDB updates this value approximately every six hours. Recent changes might not be reflected in this value.     KeySchema - Specifies the complete index key schema. The attribute names in the key schema must be between 1 and 255 characters (inclusive). The key schema must begin with the same partition key as the table.    Projection - Specifies attributes that are copied (projected) from the table into the index. These are in addition to the primary key attributes and index key attributes, which are automatically projected. Each attribute specification is composed of:    ProjectionType - One of the following:    KEYS_ONLY - Only the index and primary keys are projected into the index.    INCLUDE - In addition to the attributes described in KEYS_ONLY, the secondary index will include other non-key attributes that you specify.    ALL - All of the table attributes are projected into the index.      NonKeyAttributes - A list of one or more non-key attribute names that are projected into the secondary index. The total count of attributes provided in NonKeyAttributes, summed across all of the secondary indexes, must not exceed 100. If you project the same attribute into two different indexes, this counts as two distinct attributes when determining the total.      ProvisionedThroughput - The provisioned throughput settings for the global secondary index, consisting of read and write capacity units, along with data about increases and decreases.    If the table is in the DELETING state, no information about indexes will be returned.
       */
     var GlobalSecondaryIndexes: js.UndefOr[GlobalSecondaryIndexDescriptionList] = js.undefined
@@ -8532,7 +8554,7 @@ object DocumentClient {
     /**
       * The number of items in the specified table. DynamoDB updates this value approximately every six hours. Recent changes might not be reflected in this value.
       */
-    var ItemCount: js.UndefOr[Long] = js.undefined
+    var ItemCount: js.UndefOr[LongObject] = js.undefined
     
     /**
       * The primary key structure for the table. Each KeySchemaElement consists of:    AttributeName - The name of the attribute.    KeyType - The role of the attribute:    HASH - partition key    RANGE - sort key    The partition key of an item is also known as its hash attribute. The term "hash attribute" derives from DynamoDB's usage of an internal hash function to evenly distribute data items across partitions, based on their partition key values. The sort key of an item is also known as its range attribute. The term "range attribute" derives from the way DynamoDB stores items with the same partition key physically close together, in sorted order by the sort key value.    For more information about primary keys, see Primary Key in the Amazon DynamoDB Developer Guide.
@@ -8602,10 +8624,10 @@ object DocumentClient {
     /**
       * The total size of the specified table, in bytes. DynamoDB updates this value approximately every six hours. Recent changes might not be reflected in this value.
       */
-    var TableSizeBytes: js.UndefOr[Long] = js.undefined
+    var TableSizeBytes: js.UndefOr[LongObject] = js.undefined
     
     /**
-      * The current state of the table:    CREATING - The table is being created.    UPDATING - The table is being updated.    DELETING - The table is being deleted.    ACTIVE - The table is ready for use.    INACCESSIBLE_ENCRYPTION_CREDENTIALS - The KMS key used to encrypt the table in inaccessible. Table operations may fail due to failure to use the KMS key. DynamoDB will initiate the table archival process when a table's KMS key remains inaccessible for more than seven days.     ARCHIVING - The table is being archived. Operations are not allowed until archival is complete.     ARCHIVED - The table has been archived. See the ArchivalReason for more information.   
+      * The current state of the table:    CREATING - The table is being created.    UPDATING - The table/index configuration is being updated. The table/index remains available for data operations when UPDATING.    DELETING - The table is being deleted.    ACTIVE - The table is ready for use.    INACCESSIBLE_ENCRYPTION_CREDENTIALS - The KMS key used to encrypt the table in inaccessible. Table operations may fail due to failure to use the KMS key. DynamoDB will initiate the table archival process when a table's KMS key remains inaccessible for more than seven days.     ARCHIVING - The table is being archived. Operations are not allowed until archival is complete.     ARCHIVED - The table has been archived. See the ArchivalReason for more information.   
       */
     var TableStatus: js.UndefOr[typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.TableStatus] = js.undefined
   }
@@ -8637,6 +8659,10 @@ object DocumentClient {
       
       inline def setCreationDateTimeUndefined: Self = StObject.set(x, "CreationDateTime", js.undefined)
       
+      inline def setDeletionProtectionEnabled(value: DeletionProtectionEnabled): Self = StObject.set(x, "DeletionProtectionEnabled", value.asInstanceOf[js.Any])
+      
+      inline def setDeletionProtectionEnabledUndefined: Self = StObject.set(x, "DeletionProtectionEnabled", js.undefined)
+      
       inline def setGlobalSecondaryIndexes(value: GlobalSecondaryIndexDescriptionList): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
       
       inline def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
@@ -8647,7 +8673,7 @@ object DocumentClient {
       
       inline def setGlobalTableVersionUndefined: Self = StObject.set(x, "GlobalTableVersion", js.undefined)
       
-      inline def setItemCount(value: Long): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
+      inline def setItemCount(value: LongObject): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
       
       inline def setItemCountUndefined: Self = StObject.set(x, "ItemCount", js.undefined)
       
@@ -8709,7 +8735,7 @@ object DocumentClient {
       
       inline def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
       
-      inline def setTableSizeBytes(value: Long): Self = StObject.set(x, "TableSizeBytes", value.asInstanceOf[js.Any])
+      inline def setTableSizeBytes(value: LongObject): Self = StObject.set(x, "TableSizeBytes", value.asInstanceOf[js.Any])
       
       inline def setTableSizeBytesUndefined: Self = StObject.set(x, "TableSizeBytes", js.undefined)
       
@@ -9028,7 +9054,7 @@ object DocumentClient {
   trait TransactWriteItemsInput extends StObject {
     
     /**
-      * Providing a ClientRequestToken makes the call to TransactWriteItems idempotent, meaning that multiple identical calls have the same effect as one single call. Although multiple identical calls using the same client request token produce the same result on the server (no side effects), the responses to the calls might not be the same. If the ReturnConsumedCapacity&gt; parameter is set, then the initial TransactWriteItems call returns the amount of write capacity units consumed in making the changes. Subsequent TransactWriteItems calls with the same client token return the number of read capacity units consumed in reading the item. A client request token is valid for 10 minutes after the first request that uses it is completed. After 10 minutes, any request with the same client token is treated as a new request. Do not resubmit the same request with the same client token for more than 10 minutes, or the result might not be idempotent. If you submit a request with the same client token but a change in other parameters within the 10-minute idempotency window, DynamoDB returns an IdempotentParameterMismatch exception.
+      * Providing a ClientRequestToken makes the call to TransactWriteItems idempotent, meaning that multiple identical calls have the same effect as one single call. Although multiple identical calls using the same client request token produce the same result on the server (no side effects), the responses to the calls might not be the same. If the ReturnConsumedCapacity parameter is set, then the initial TransactWriteItems call returns the amount of write capacity units consumed in making the changes. Subsequent TransactWriteItems calls with the same client token return the number of read capacity units consumed in reading the item. A client request token is valid for 10 minutes after the first request that uses it is completed. After 10 minutes, any request with the same client token is treated as a new request. Do not resubmit the same request with the same client token for more than 10 minutes, or the result might not be idempotent. If you submit a request with the same client token but a change in other parameters within the 10-minute idempotency window, DynamoDB returns an IdempotentParameterMismatch exception.
       */
     var ClientRequestToken: js.UndefOr[typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.ClientRequestToken] = js.undefined
     
@@ -9584,7 +9610,7 @@ object DocumentClient {
       ] = js.undefined
     
     /**
-      * Use ReturnValues if you want to get the item attributes as they appear before or after they are updated. For UpdateItem, the valid values are:    NONE - If ReturnValues is not specified, or if its value is NONE, then nothing is returned. (This setting is the default for ReturnValues.)    ALL_OLD - Returns all of the attributes of the item, as they appeared before the UpdateItem operation.    UPDATED_OLD - Returns only the updated attributes, as they appeared before the UpdateItem operation.    ALL_NEW - Returns all of the attributes of the item, as they appear after the UpdateItem operation.    UPDATED_NEW - Returns only the updated attributes, as they appear after the UpdateItem operation.   There is no additional cost associated with requesting a return value aside from the small network and processing overhead of receiving a larger response. No read capacity units are consumed. The values returned are strongly consistent.
+      * Use ReturnValues if you want to get the item attributes as they appear before or after they are successfully updated. For UpdateItem, the valid values are:    NONE - If ReturnValues is not specified, or if its value is NONE, then nothing is returned. (This setting is the default for ReturnValues.)    ALL_OLD - Returns all of the attributes of the item, as they appeared before the UpdateItem operation.    UPDATED_OLD - Returns only the updated attributes, as they appeared before the UpdateItem operation.    ALL_NEW - Returns all of the attributes of the item, as they appear after the UpdateItem operation.    UPDATED_NEW - Returns only the updated attributes, as they appear after the UpdateItem operation.   There is no additional cost associated with requesting a return value aside from the small network and processing overhead of receiving a larger response. No read capacity units are consumed. The values returned are strongly consistent.
       */
     var ReturnValues: js.UndefOr[ReturnValue] = js.undefined
     
@@ -9657,7 +9683,7 @@ object DocumentClient {
   trait UpdateItemOutput extends StObject {
     
     /**
-      * A map of attribute values as they appear before or after the UpdateItem operation, as determined by the ReturnValues parameter. The Attributes map is only present if ReturnValues was specified as something other than NONE in the request. Each element represents one attribute.
+      * A map of attribute values as they appear before or after the UpdateItem operation, as determined by the ReturnValues parameter. The Attributes map is only present if the update was successful and ReturnValues was specified as something other than NONE in the request. Each element represents one attribute.
       */
     var Attributes: js.UndefOr[AttributeMap] = js.undefined
     
@@ -9769,6 +9795,13 @@ object DocumentClient {
     var BillingMode: js.UndefOr[typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.BillingMode] = js.undefined
     
     /**
+      * Indicates whether deletion protection is to be enabled (true) or disabled (false) on the table.
+      */
+    var DeletionProtectionEnabled: js.UndefOr[
+        typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.DeletionProtectionEnabled
+      ] = js.undefined
+    
+    /**
       * An array of one or more global secondary indexes for the table. For each index in the array, you can request one action:    Create - add a new global secondary index to the table.    Update - modify the provisioned throughput settings of an existing global secondary index.    Delete - remove a global secondary index from the table.   You can create or delete only one global secondary index per UpdateTable operation. For more information, see Managing Global Secondary Indexes in the Amazon DynamoDB Developer Guide. 
       */
     var GlobalSecondaryIndexUpdates: js.UndefOr[GlobalSecondaryIndexUpdateList] = js.undefined
@@ -9779,7 +9812,7 @@ object DocumentClient {
     var ProvisionedThroughput: js.UndefOr[typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.ProvisionedThroughput] = js.undefined
     
     /**
-      * A list of replica update actions (create, delete, or update) for the table.  This property only applies to Version 2019.11.21 of global tables. 
+      * A list of replica update actions (create, delete, or update) for the table.  This property only applies to Version 2019.11.21 (Current) of global tables.  
       */
     var ReplicaUpdates: js.UndefOr[ReplicationGroupUpdateList] = js.undefined
     
@@ -9822,6 +9855,10 @@ object DocumentClient {
       inline def setBillingMode(value: BillingMode): Self = StObject.set(x, "BillingMode", value.asInstanceOf[js.Any])
       
       inline def setBillingModeUndefined: Self = StObject.set(x, "BillingMode", js.undefined)
+      
+      inline def setDeletionProtectionEnabled(value: DeletionProtectionEnabled): Self = StObject.set(x, "DeletionProtectionEnabled", value.asInstanceOf[js.Any])
+      
+      inline def setDeletionProtectionEnabledUndefined: Self = StObject.set(x, "DeletionProtectionEnabled", js.undefined)
       
       inline def setGlobalSecondaryIndexUpdates(value: GlobalSecondaryIndexUpdateList): Self = StObject.set(x, "GlobalSecondaryIndexUpdates", value.asInstanceOf[js.Any])
       

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateTimelineEventInput extends StObject {
   
   /**
-    * A token ensuring that the operation is called only once with the specified details.
+    * A token that ensures that a client calls the operation only once with the specified details.
     */
   var clientToken: js.UndefOr[ClientToken] = js.undefined
   
@@ -17,12 +17,12 @@ trait UpdateTimelineEventInput extends StObject {
   var eventData: js.UndefOr[EventData] = js.undefined
   
   /**
-    * The ID of the event you are updating. You can find this by using ListTimelineEvents.
+    * The ID of the event to update. You can use ListTimelineEvents to find an event's ID.
     */
   var eventId: UUID
   
   /**
-    * Updates all existing references in a TimelineEvent. A reference can be an Amazon Web Services resource involved in the incident or in some way associated with it. When you specify a reference, you enter the Amazon Resource Name (ARN) of the resource. You can also specify a related item. As an example, you could specify the ARN of an Amazon DynamoDB (DynamoDB) table. The table for this example is the resource. You could also specify a Amazon CloudWatch metric for that table. The metric is the related item.  This update action overrides all existing references. If you want to keep existing references, you must specify them in the call. If you don't, this action removes them and enters only new references. 
+    * Updates all existing references in a TimelineEvent. A reference is an Amazon Web Services resource involved or associated with the incident. To specify a reference, enter its Amazon Resource Name (ARN). You can also specify a related item associated with that resource. For example, to specify an Amazon DynamoDB (DynamoDB) table as a resource, use its ARN. You can also specify an Amazon CloudWatch metric associated with the DynamoDB table as a related item.  This update action overrides all existing references. If you want to keep existing references, you must specify them in the call. If you don't, this action removes any existing references and enters only new references. 
     */
   var eventReferences: js.UndefOr[EventReferenceList] = js.undefined
   
@@ -32,7 +32,7 @@ trait UpdateTimelineEventInput extends StObject {
   var eventTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The type of the event. You can update events of type Custom Event.
+    * The type of event. You can update events of type Custom Event.
     */
   var eventType: js.UndefOr[TimelineEventType] = js.undefined
   

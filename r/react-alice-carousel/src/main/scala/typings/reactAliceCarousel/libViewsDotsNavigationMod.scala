@@ -3,8 +3,9 @@ package typings.reactAliceCarousel
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
-import typings.reactAliceCarousel.anon.IsActive
+import typings.reactAliceCarousel.libTypesMod.DotsItem
 import typings.reactAliceCarousel.libTypesMod.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,9 +17,9 @@ object libViewsDotsNavigationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def DotsNavigation(param0: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DotsNavigation")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def DotsNavigation(param0: DotsNavigationProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DotsNavigation")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  trait Props extends StObject {
+  trait DotsNavigationProps extends StObject {
     
     var controlsStrategy: js.UndefOr[String] = js.undefined
     
@@ -28,19 +29,19 @@ object libViewsDotsNavigationMod {
     
     var onMouseLeave: js.UndefOr[MouseEventHandler[typings.std.Element]] = js.undefined
     
-    var renderDotsItem: js.UndefOr[js.Function1[/* param0 */ IsActive, Any]] = js.undefined
+    var renderDotsItem: js.UndefOr[js.Function1[/* e */ DotsItem, ReactNode]] = js.undefined
     
     var state: State
   }
-  object Props {
+  object DotsNavigationProps {
     
-    inline def apply(onClick: Double => Unit, state: State): Props = {
+    inline def apply(onClick: Double => Unit, state: State): DotsNavigationProps = {
       val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction1(onClick), state = state.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Props]
+      __obj.asInstanceOf[DotsNavigationProps]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: DotsNavigationProps] (val x: Self) extends AnyVal {
       
       inline def setControlsStrategy(value: String): Self = StObject.set(x, "controlsStrategy", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,7 @@ object libViewsDotsNavigationMod {
       
       inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
       
-      inline def setRenderDotsItem(value: /* param0 */ IsActive => Any): Self = StObject.set(x, "renderDotsItem", js.Any.fromFunction1(value))
+      inline def setRenderDotsItem(value: /* e */ DotsItem => ReactNode): Self = StObject.set(x, "renderDotsItem", js.Any.fromFunction1(value))
       
       inline def setRenderDotsItemUndefined: Self = StObject.set(x, "renderDotsItem", js.undefined)
       

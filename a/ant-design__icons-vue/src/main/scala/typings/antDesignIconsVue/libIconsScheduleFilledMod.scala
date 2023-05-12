@@ -16,7 +16,7 @@ object libIconsScheduleFilledMod extends Shortcut {
   @js.native
   trait ScheduleFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_ScheduleFilledIconType: String = js.native

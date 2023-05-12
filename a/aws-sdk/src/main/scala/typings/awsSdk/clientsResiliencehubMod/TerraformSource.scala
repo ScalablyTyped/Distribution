@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TerraformSource extends StObject {
   
   /**
-    *  The Terraform s3 state file you need to import. 
+    *  The URL of the Terraform s3 state file you need to import. 
     */
   var s3StateFileUrl: S3Url
 }

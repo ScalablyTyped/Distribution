@@ -11,7 +11,7 @@ open class Column protected () extends Component[ColumnProps, Any, Any] {
   def this(props: ColumnProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: ColumnProps, context: Any) = this()
 }

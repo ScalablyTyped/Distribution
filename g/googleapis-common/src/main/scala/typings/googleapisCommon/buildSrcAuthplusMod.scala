@@ -2,7 +2,6 @@ package typings.googleapisCommon
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.googleAuthLibrary.buildSrcAuthAwsclientMod.AwsClientOptions
 import typings.googleAuthLibrary.buildSrcAuthGoogleauthMod.GoogleAuthOptions
 import typings.googleAuthLibrary.buildSrcAuthGoogleauthMod.JSONClient
 import typings.googleAuthLibrary.buildSrcAuthIdentitypoolclientMod.IdentityPoolClientOptions
@@ -13,6 +12,7 @@ import typings.googleAuthLibrary.mod.GoogleAuth
 import typings.googleAuthLibrary.mod.Impersonated
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import typings.googleapisCommon.anon.TypeofAwsClient
 import typings.googleapisCommon.anon.TypeofExternalAccountClie
 import typings.googleapisCommon.anon.TypeofGoogleAuth
 import typings.googleapisCommon.anon.TypeofOAuth2Client
@@ -27,7 +27,7 @@ object buildSrcAuthplusMod {
   open class AuthPlus () extends GoogleAuth[JSONClient] {
     def this(opts: GoogleAuthOptions[JSONClient]) = this()
     
-    var AwsClient: Instantiable1[/* options */ AwsClientOptions, typings.googleAuthLibrary.mod.AwsClient] = js.native
+    var AwsClient: TypeofAwsClient = js.native
     
     var Compute: Instantiable0[typings.googleAuthLibrary.mod.Compute] = js.native
     

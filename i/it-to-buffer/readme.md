@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-to-buffer
 
-Typings are for version 3.0.0
+Typings are for version 4.0.2
 
 ## Library description:
 Takes an async iterator that yields buffers and concatenates them all together

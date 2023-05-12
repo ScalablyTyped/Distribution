@@ -80,7 +80,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent @rjsf/utils.@rjsf/utils.GenericObjectType */
 /* Inlined parent std.Pick<react.react.HTMLAttributes<std.HTMLElement>, std.Exclude<keyof react.react.HTMLAttributes<std.HTMLElement>, 'onBlur' | 'onFocus'>> */
 @js.native
-trait WidgetProps[T, F]
+trait WidgetProps[T, S /* <: StrictRJSFSchema */, F /* <: FormContextType */]
   extends StObject
      with /* name */ StringDictionary[Any] {
   
@@ -190,6 +190,8 @@ trait WidgetProps[T, F]
   
   var autoCorrect: js.UndefOr[String] = js.native
   
+  var autoFocus: js.UndefOr[Boolean] = js.native
+  
   var autoSave: js.UndefOr[String] = js.native
   
   /** A boolean value stating if the widget should autofocus */
@@ -200,6 +202,8 @@ trait WidgetProps[T, F]
   var className: js.UndefOr[String] = js.native
   
   var color: js.UndefOr[String] = js.native
+  
+  var content: js.UndefOr[String] = js.native
   
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
   
@@ -228,7 +232,14 @@ trait WidgetProps[T, F]
   /** A boolean value stating if the widget is hiding its errors */
   var hideError: js.UndefOr[Boolean] = js.native
   
-  /** The generated id for this widget */
+  /** A boolean value, if true, will cause the label to be hidden. This is useful for nested fields where you don't want
+    * to clutter the UI. Customized via `label` in the `UiSchema`
+    */
+  var hideLabel: js.UndefOr[Boolean] = js.native
+  
+  /** The generated id for this widget, used to provide unique `name`s and `id`s for the HTML field elements rendered by
+    * widgets
+    */
   var id: String = js.native
   
   var inlist: js.UndefOr[Any] = js.native
@@ -254,6 +265,11 @@ trait WidgetProps[T, F]
   
   /** A boolean value stating if the widget can accept multiple values */
   var multiple: js.UndefOr[Boolean] = js.native
+  
+  /** The unique name of the field, usually derived from the name of the property in the JSONSchema; Provided in support
+    * of custom widgets.
+    */
+  var name: String = js.native
   
   var nonce: js.UndefOr[String] = js.native
   
@@ -424,7 +440,7 @@ trait WidgetProps[T, F]
   /** A map of UI Options passed as a prop to the component, including the optional `enumOptions`
     * which is a special case on top of `UIOptionsType` needed only by widgets
     */
-  var options: (NonNullable[UIOptionsType[T, F]]) & EnumOptions = js.native
+  var options: (NonNullable[UIOptionsType[T, S, F]]) & EnumOptions[S] = js.native
   
   /** The placeholder for the widget, if any */
   var placeholder: js.UndefOr[String] = js.native
@@ -442,7 +458,9 @@ trait WidgetProps[T, F]
   var readonly: js.UndefOr[Boolean] = js.native
   
   /** The `registry` object */
-  var registry: Registry[T, F] = js.native
+  var registry: Registry[T, S, F] = js.native
+  
+  var rel: js.UndefOr[String] = js.native
   
   /** The required status of this widget */
   var required: js.UndefOr[Boolean] = js.native
@@ -451,10 +469,12 @@ trait WidgetProps[T, F]
   
   var results: js.UndefOr[Double] = js.native
   
+  var rev: js.UndefOr[String] = js.native
+  
   var role: js.UndefOr[AriaRole] = js.native
   
   /** The JSONSchema subschema object for this widget */
-  var schema: RJSFSchema = js.native
+  var schema: S = js.native
   
   var security: js.UndefOr[String] = js.native
   
@@ -477,7 +497,7 @@ trait WidgetProps[T, F]
   var typeof: js.UndefOr[String] = js.native
   
   /** The uiSchema for this widget */
-  var uiSchema: js.UndefOr[UiSchema[T, F]] = js.native
+  var uiSchema: js.UndefOr[UiSchema[T, S, F]] = js.native
   
   var unselectable: js.UndefOr[on | off] = js.native
   

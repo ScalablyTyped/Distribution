@@ -1,12 +1,17 @@
 package typings.socketIo
 
+import typings.socketIo.anon.BroadcastFlagsexpectSingl
 import typings.socketIo.distSocketMod.Handshake
+import typings.socketIo.distTypedEventsMod.AllButLast
+import typings.socketIo.distTypedEventsMod.DecorateAcknowledgements
+import typings.socketIo.distTypedEventsMod.DecorateAcknowledgementsWithTimeoutAndMultipleResponses
 import typings.socketIo.distTypedEventsMod.EventNames
 import typings.socketIo.distTypedEventsMod.EventParams
 import typings.socketIo.distTypedEventsMod.EventsMap
+import typings.socketIo.distTypedEventsMod.Last
+import typings.socketIo.distTypedEventsMod.SecondArg
 import typings.socketIo.distTypedEventsMod.TypedEventBroadcaster
 import typings.socketIoAdapter.mod.Adapter
-import typings.socketIoAdapter.mod.BroadcastFlags
 import typings.socketIoAdapter.mod.Room
 import typings.socketIoAdapter.mod.SocketId
 import typings.std.Set
@@ -25,10 +30,10 @@ object distBroadcastOperatorMod {
     def this(adapter: Adapter, rooms: Set[Room]) = this()
     def this(adapter: Adapter, rooms: Unit, exceptRooms: Set[Room]) = this()
     def this(adapter: Adapter, rooms: Set[Room], exceptRooms: Set[Room]) = this()
-    def this(adapter: Adapter, rooms: Unit, exceptRooms: Unit, flags: BroadcastFlags) = this()
-    def this(adapter: Adapter, rooms: Unit, exceptRooms: Set[Room], flags: BroadcastFlags) = this()
-    def this(adapter: Adapter, rooms: Set[Room], exceptRooms: Unit, flags: BroadcastFlags) = this()
-    def this(adapter: Adapter, rooms: Set[Room], exceptRooms: Set[Room], flags: BroadcastFlags) = this()
+    def this(adapter: Adapter, rooms: Unit, exceptRooms: Unit, flags: BroadcastFlagsexpectSingl) = this()
+    def this(adapter: Adapter, rooms: Unit, exceptRooms: Set[Room], flags: BroadcastFlagsexpectSingl) = this()
+    def this(adapter: Adapter, rooms: Set[Room], exceptRooms: Unit, flags: BroadcastFlagsexpectSingl) = this()
+    def this(adapter: Adapter, rooms: Set[Room], exceptRooms: Set[Room], flags: BroadcastFlagsexpectSingl) = this()
     
     /* private */ val adapter: Any = js.native
     
@@ -73,6 +78,24 @@ object distBroadcastOperatorMod {
       ev: Ev,
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type EventParams<EmitEvents, Ev> is not an array type */ args: EventParams[EmitEvents, Ev]
     ): Boolean = js.native
+    
+    /**
+      * Emits an event and waits for an acknowledgement from all clients.
+      *
+      * @example
+      * try {
+      *   const responses = await io.timeout(1000).emitWithAck("some-event");
+      *   console.log(responses); // one response per client
+      * } catch (e) {
+      *   // some clients did not acknowledge the event in the given delay
+      * }
+      *
+      * @return a Promise that will be fulfilled when all clients have acknowledged the event
+      */
+    def emitWithAck[Ev /* <: EventNames[EmitEvents] */](
+      ev: Ev,
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type AllButLast<EventParams<EmitEvents, Ev>> is not an array type */ args: AllButLast[EventParams[EmitEvents, Ev]]
+    ): js.Promise[SecondArg[Last[EventParams[EmitEvents, Ev]]]] = js.native
     
     def except(room: js.Array[Room]): BroadcastOperator[EmitEvents, SocketData] = js.native
     /**
@@ -198,7 +221,7 @@ object distBroadcastOperatorMod {
       *
       * @param timeout
       */
-    def timeout(timeout: Double): BroadcastOperator[EmitEvents, SocketData] = js.native
+    def timeout(timeout: Double): BroadcastOperator[DecorateAcknowledgementsWithTimeoutAndMultipleResponses[EmitEvents], SocketData] = js.native
     
     def to(room: js.Array[Room]): BroadcastOperator[EmitEvents, SocketData] = js.native
     /**
@@ -278,6 +301,31 @@ object distBroadcastOperatorMod {
     /* private */ val operator: Any = js.native
     
     val rooms: Set[Room] = js.native
+    
+    /**
+      * Adds a timeout in milliseconds for the next operation.
+      *
+      * @example
+      * const sockets = await io.fetchSockets();
+      *
+      * for (const socket of sockets) {
+      *   if (someCondition) {
+      *     socket.timeout(1000).emit("some-event", (err) => {
+      *       if (err) {
+      *         // the client did not acknowledge the event in the given delay
+      *       }
+      *     });
+      *   }
+      * }
+      *
+      * // note: if possible, using a room instead of looping over all sockets is preferable
+      * io.timeout(1000).to(someConditionRoom).emit("some-event", (err, responses) => {
+      *   // ...
+      * });
+      *
+      * @param timeout
+      */
+    def timeout(timeout: Double): BroadcastOperator[DecorateAcknowledgements[EmitEvents], SocketData] = js.native
   }
   
   /**

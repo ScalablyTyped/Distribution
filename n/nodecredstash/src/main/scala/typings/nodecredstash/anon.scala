@@ -1,68 +1,112 @@
 package typings.nodecredstash
 
-import typings.nodecredstash.mod.CredstashContext
+import typings.nodecredstash.srcTypesMod.SecretRecord
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait Context extends StObject {
+  trait Contents extends StObject {
     
-    var context: js.UndefOr[CredstashContext] = js.undefined
+    var contents: String
     
-    var limit: js.UndefOr[Double] = js.undefined
+    var digest: String
     
-    var name: String
-  }
-  object Context {
-    
-    inline def apply(name: String): Context = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Context]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
-      
-      inline def setContext(value: CredstashContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
-      
-      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
-      
-      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
-      
-      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Key extends StObject {
+    var hmac: String
     
     var key: String
   }
-  object Key {
+  object Contents {
     
-    inline def apply(key: String): Key = {
-      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Key]
+    inline def apply(contents: String, digest: String, hmac: String, key: String): Contents = {
+      val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], digest = digest.asInstanceOf[js.Any], hmac = hmac.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Contents]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: Contents] (val x: Self) extends AnyVal {
+      
+      inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      
+      inline def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+      
+      inline def setHmac(value: String): Self = StObject.set(x, "hmac", value.asInstanceOf[js.Any])
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait EncodedKey extends StObject {
+    
+    var encodedKey: js.typedarray.Uint8Array
+    
+    var key: js.typedarray.Uint8Array
+  }
+  object EncodedKey {
+    
+    inline def apply(encodedKey: js.typedarray.Uint8Array, key: js.typedarray.Uint8Array): EncodedKey = {
+      val __obj = js.Dynamic.literal(encodedKey = encodedKey.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
+      __obj.asInstanceOf[EncodedKey]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodedKey] (val x: Self) extends AnyVal {
+      
+      inline def setEncodedKey(value: js.typedarray.Uint8Array): Self = StObject.set(x, "encodedKey", value.asInstanceOf[js.Any])
+      
+      inline def setKey(value: js.typedarray.Uint8Array): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Item extends StObject {
+    
+    var Item: SecretRecord
+  }
+  object Item {
+    
+    inline def apply(Item: SecretRecord): Item = {
+      val __obj = js.Dynamic.literal(Item = Item.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Item]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: SecretRecord): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Items extends StObject {
+    
+    var Items: js.Array[SecretRecord]
+  }
+  object Items {
+    
+    inline def apply(Items: js.Array[SecretRecord]): Items = {
+      val __obj = js.Dynamic.literal(Items = Items.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Items]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Items] (val x: Self) extends AnyVal {
+      
+      inline def setItems(value: js.Array[SecretRecord]): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+      
+      inline def setItemsVarargs(value: SecretRecord*): Self = StObject.set(x, "Items", js.Array(value*))
     }
   }
   
   trait Name extends StObject {
     
     var name: String
+    
+    var version: String
   }
   object Name {
     
-    inline def apply(name: String): Name = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    inline def apply(name: String, version: String): Name = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name]
     }
     
@@ -70,112 +114,26 @@ object anon {
     implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait NameVersion extends StObject {
-    
-    var name: String
-    
-    var version: Double
-  }
-  object NameVersion {
-    
-    inline def apply(name: String, version: Double): NameVersion = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-      __obj.asInstanceOf[NameVersion]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: NameVersion] (val x: Self) extends AnyVal {
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Secret extends StObject {
-    
-    var secret: String
-    
-    var version: String
-  }
-  object Secret {
-    
-    inline def apply(secret: String, version: String): Secret = {
-      val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Secret]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Secret] (val x: Self) extends AnyVal {
-      
-      inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
       
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
-  trait StartsWith extends StObject {
+  trait Value extends StObject {
     
-    var context: js.UndefOr[CredstashContext] = js.undefined
-    
-    var startsWith: js.UndefOr[String] = js.undefined
-    
-    var version: js.UndefOr[Double] = js.undefined
+    var value: String
   }
-  object StartsWith {
+  object Value {
     
-    inline def apply(): StartsWith = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[StartsWith]
+    inline def apply(value: String): Value = {
+      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Value]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: StartsWith] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
-      inline def setContext(value: CredstashContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
-      
-      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
-      
-      inline def setStartsWith(value: String): Self = StObject.set(x, "startsWith", value.asInstanceOf[js.Any])
-      
-      inline def setStartsWithUndefined: Self = StObject.set(x, "startsWith", js.undefined)
-      
-      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
-      
-      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
-    }
-  }
-  
-  trait Version extends StObject {
-    
-    var context: js.UndefOr[CredstashContext] = js.undefined
-    
-    var name: String
-    
-    var version: js.UndefOr[Double] = js.undefined
-  }
-  object Version {
-    
-    inline def apply(name: String): Version = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Version]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Version] (val x: Self) extends AnyVal {
-      
-      inline def setContext(value: CredstashContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
-      
-      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
-      
-      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

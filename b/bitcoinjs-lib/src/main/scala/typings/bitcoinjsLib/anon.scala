@@ -33,6 +33,48 @@ object anon {
     }
   }
   
+  trait FinalScriptWitness extends StObject {
+    
+    var finalScriptWitness: js.UndefOr[Buffer] = js.undefined
+  }
+  object FinalScriptWitness {
+    
+    inline def apply(): FinalScriptWitness = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FinalScriptWitness]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FinalScriptWitness] (val x: Self) extends AnyVal {
+      
+      inline def setFinalScriptWitness(value: Buffer): Self = StObject.set(x, "finalScriptWitness", value.asInstanceOf[js.Any])
+      
+      inline def setFinalScriptWitnessUndefined: Self = StObject.set(x, "finalScriptWitness", js.undefined)
+    }
+  }
+  
+  trait HashType extends StObject {
+    
+    var hashType: Double
+    
+    var signature: Buffer
+  }
+  object HashType {
+    
+    inline def apply(hashType: Double, signature: Buffer): HashType = {
+      val __obj = js.Dynamic.literal(hashType = hashType.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
+      __obj.asInstanceOf[HashType]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HashType] (val x: Self) extends AnyVal {
+      
+      inline def setHashType(value: Double): Self = StObject.set(x, "hashType", value.asInstanceOf[js.Any])
+      
+      inline def setSignature(value: Buffer): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Number extends StObject {
     
     var number: Double

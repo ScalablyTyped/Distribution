@@ -19,6 +19,7 @@ import typings.playcanvas.playcanvasStrings.sprite
 import typings.playcanvas.playcanvasStrings.template
 import typings.playcanvas.playcanvasStrings.text
 import typings.playcanvas.playcanvasStrings.texture
+import typings.playcanvas.playcanvasStrings.textureatlas
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,7 +57,7 @@ open class Asset_ protected () extends EventHandler {
     * retrieve the asset.
     * @param {string} type - Type of asset. One of ["animation", "audio", "binary", "container",
     * "cubemap", "css", "font", "json", "html", "material", "model", "script", "shader", "sprite",
-    * "template", text", "texture"]
+    * "template", text", "texture", "textureatlas"]
     * @param {object} [file] - Details about the file the asset is made from. At the least must
     * contain the 'url' field. For assets that don't contain file data use null.
     * @param {string} [file.url] - The URL of the resource file that contains the asset data.
@@ -73,10 +74,12 @@ open class Asset_ protected () extends EventHandler {
     * materials).
     * @param {object} [options] - The asset handler options. For container options see
     * {@link ContainerHandler}.
-    * @param {boolean} [options.crossOrigin] - For use with texture resources. For
-    * browser-supported image formats only, enable cross origin.
+    * @param {'anonymous'|'use-credentials'|null} [options.crossOrigin] - For use with texture assets
+    * that are loaded using the browser. This setting overrides the default crossOrigin specifier.
+    * For more details on crossOrigin and its use, see
+    * https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/crossOrigin.
     * @example
-    * var asset = new pc.Asset("a texture", "texture", {
+    * const asset = new pc.Asset("a texture", "texture", {
     *     url: "http://example.com/my/assets/here/texture.png"
     * });
     */
@@ -149,8 +152,8 @@ open class Asset_ protected () extends EventHandler {
     *
     * @returns {string|null} The URL. Returns null if the asset has no associated file.
     * @example
-    * var assets = app.assets.find("My Image", "texture");
-    * var img = "&lt;img src='" + assets[0].getFileUrl() + "'&gt;";
+    * const assets = app.assets.find("My Image", "texture");
+    * const img = "&lt;img src='" + assets[0].getFileUrl() + "'&gt;";
     */
   def getFileUrl(): String | Null = js.native
   
@@ -269,7 +272,7 @@ open class Asset_ protected () extends EventHandler {
     * the (asset) arguments.
     * @param {object} [scope] - Scope object to use when calling the callback.
     * @example
-    * var asset = app.assets.find("My Asset");
+    * const asset = app.assets.find("My Asset");
     * asset.ready(function (asset) {
     *   // asset loaded
     * });
@@ -281,7 +284,7 @@ open class Asset_ protected () extends EventHandler {
   /**
     * The asset registry that this Asset belongs to.
     *
-    * @type {AssetRegistry}
+    * @type {import('./asset-registry.js').AssetRegistry}
     */
   var registry: AssetRegistry = js.native
   
@@ -322,17 +325,17 @@ open class Asset_ protected () extends EventHandler {
   /**
     * The type of the asset. One of ["animation", "audio", "binary", "container", "cubemap",
     * "css", "font", "json", "html", "material", "model", "render", "script", "shader", "sprite",
-    * "template", "text", "texture"]
+    * "template", "text", "texture", "textureatlas"]
     *
-    * @type {("animation"|"audio"|"binary"|"container"|"cubemap"|"css"|"font"|"json"|"html"|"material"|"model"|"render"|"script"|"shader"|"sprite"|"template"|"text"|"texture")}
+    * @type {("animation"|"audio"|"binary"|"container"|"cubemap"|"css"|"font"|"json"|"html"|"material"|"model"|"render"|"script"|"shader"|"sprite"|"template"|"text"|"texture"|"textureatlas")}
     */
-  var `type`: animation | audio | binary | container | cubemap | css | font | json | html | material | model | render | typings.playcanvas.playcanvasStrings.script | shader | sprite | template | text | texture = js.native
+  var `type`: animation | audio | binary | container | cubemap | css | font | json | html | material | model | render | typings.playcanvas.playcanvasStrings.script | shader | sprite | template | text | texture | textureatlas = js.native
   
   /**
     * Destroys the associated resource and marks asset as unloaded.
     *
     * @example
-    * var asset = app.assets.find("My Asset");
+    * const asset = app.assets.find("My Asset");
     * asset.unload();
     * // asset.resource is null
     */
@@ -350,7 +353,8 @@ object Asset_ {
     * via http.
     *
     * @param {string} loadUrl - The URL as passed into the handler
-    * @param {ResourceLoaderCallback} callback - The callback function to receive results.
+    * @param {import('../handlers/loader.js').ResourceLoaderCallback} callback - The callback
+    * function to receive results.
     * @param {Asset} [asset] - The asset
     * @param {number} maxRetries - Number of retries if http download is required
     * @ignore

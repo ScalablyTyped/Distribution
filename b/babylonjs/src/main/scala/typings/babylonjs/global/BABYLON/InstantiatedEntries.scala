@@ -17,10 +17,16 @@ open class InstantiatedEntries ()
   var animationGroups: js.Array[typings.babylonjs.BABYLON.AnimationGroup] = js.native
   
   /**
+    * Disposes the instantiated entries from the scene
+    */
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
+  
+  /**
     * List of new root nodes (eg. nodes with no parent)
     */
   /* CompleteClass */
-  var rootNodes: js.Array[typings.babylonjs.BABYLON.TransformNode] = js.native
+  var rootNodes: js.Array[typings.babylonjs.BABYLON.Node] = js.native
   
   /**
     * List of new skeletons

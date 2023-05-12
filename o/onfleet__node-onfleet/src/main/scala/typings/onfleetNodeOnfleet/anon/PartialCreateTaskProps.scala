@@ -51,6 +51,8 @@ trait PartialCreateTaskProps extends StObject {
   var recipients: js.UndefOr[js.Array[CreateRecipientProps | String]] = js.undefined
   
   var requirements: js.UndefOr[TaskCompletionRequirements] = js.undefined
+  
+  var serviceTime: js.UndefOr[Double] = js.undefined
 }
 object PartialCreateTaskProps {
   
@@ -145,5 +147,9 @@ object PartialCreateTaskProps {
     inline def setRequirements(value: TaskCompletionRequirements): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
     
     inline def setRequirementsUndefined: Self = StObject.set(x, "requirements", js.undefined)
+    
+    inline def setServiceTime(value: Double): Self = StObject.set(x, "serviceTime", value.asInstanceOf[js.Any])
+    
+    inline def setServiceTimeUndefined: Self = StObject.set(x, "serviceTime", js.undefined)
   }
 }

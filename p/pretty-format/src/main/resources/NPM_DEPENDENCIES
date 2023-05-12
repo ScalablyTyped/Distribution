@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "pretty-format" : "29.3.1"
+      "pretty-format" : "29.5.0"
     }
   ],
   "test-dependencies" : [
     {
-      "pretty-format" : "29.3.1"
+      "pretty-format" : "29.5.0"
     }
   ],
   "compile-devDependencies" : [

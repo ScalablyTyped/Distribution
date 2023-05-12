@@ -5,6 +5,7 @@ import typings.babylonjs.camerasCameraMod.Camera
 import typings.babylonjs.lightsShadowLightMod.IShadowLight
 import typings.babylonjs.materialsEffectMod.Effect
 import typings.babylonjs.materialsMaterialDefinesMod.MaterialDefines
+import typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture
 import typings.babylonjs.materialsTexturesRenderTargetTextureMod.RenderTargetTexture
 import typings.babylonjs.materialsUniformBufferMod.UniformBuffer
 import typings.babylonjs.mathsMathDotvectorMod.Matrix
@@ -32,7 +33,7 @@ object lightsShadowsShadowGeneratorMod {
       * Creates a ShadowGenerator object.
       * A ShadowGenerator is the required tool to use the shadows.
       * Each light casting shadows needs to use its own ShadowGenerator.
-      * Documentation : https://doc.babylonjs.com/babylon101/shadows
+      * Documentation : https://doc.babylonjs.com/features/featuresDeepDive/lights/shadows
       * @param mapSize The size of the texture what stores the shadows. Example : 1024.
       * @param light The light object generating the shadows.
       * @param usefullFloatFirst By default the generator will try to use half float textures but if you need precision (for self shadowing for instance), you can use this option to enforce full float texture.
@@ -116,6 +117,8 @@ object lightsShadowsShadowGeneratorMod {
     /* protected */ var _mapSize: Double = js.native
     
     /* protected */ var _normalBias: Double = js.native
+    
+    /* protected */ var _opacityTexture: Nullable[BaseTexture] = js.native
     
     /* private */ var _prepareShadowDefines: Any = js.native
     

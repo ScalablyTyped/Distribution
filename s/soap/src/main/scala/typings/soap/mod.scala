@@ -167,6 +167,16 @@ object mod {
     def this(privatePEM: Any, publicP12PEM: Any, password: Any, options: IWSSecurityCertOptions) = this()
   }
   
+  @JSImport("soap", "WSSecurityPlusCert")
+  @js.native
+  open class WSSecurityPlusCert protected ()
+    extends typings.soap.libSecurityMod.WSSecurityPlusCert {
+    def this(
+      wsSecurity: typings.soap.libSecurityWssecurityMod.WSSecurity,
+      wsSecurityCert: typings.soap.libSecurityWssecuritycertMod.WSSecurityCert
+    ) = this()
+  }
+  
   inline def createClient(url: String, callback: CreateClientCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def createClient(url: String, callback: CreateClientCallback, endpoint: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def createClient(url: String, options: IOptions, callback: CreateClientCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -410,6 +420,33 @@ object mod {
       def this(username: String, password: String, options: String) = this()
       def this(username: String, password: String, options: IWSSecurityOptions) = this()
     }
+    
+    @JSImport("soap", "security.WSSecurityPlusCert")
+    @js.native
+    def WSSecurityPlusCert: Instantiable2[
+        /* wsSecurity */ typings.soap.libSecurityWssecurityMod.WSSecurity, 
+        /* wsSecurityCert */ typings.soap.libSecurityWssecuritycertMod.WSSecurityCert, 
+        typings.soap.libSecurityMod.WSSecurityPlusCert
+      ] = js.native
+    
+    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+    @JSImport("soap", "security.WSSecurityPlusCert")
+    @js.native
+    open class WSSecurityPlusCertCls protected ()
+      extends typings.soap.libSecurityMod.WSSecurityPlusCert {
+      def this(
+        wsSecurity: typings.soap.libSecurityWssecurityMod.WSSecurity,
+        wsSecurityCert: typings.soap.libSecurityWssecuritycertMod.WSSecurityCert
+      ) = this()
+    }
+    
+    inline def WSSecurityPlusCert_=(
+      x: Instantiable2[
+          /* wsSecurity */ typings.soap.libSecurityWssecurityMod.WSSecurity, 
+          /* wsSecurityCert */ typings.soap.libSecurityWssecuritycertMod.WSSecurityCert, 
+          typings.soap.libSecurityMod.WSSecurityPlusCert
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSSecurityPlusCert")(x.asInstanceOf[js.Any])
     
     inline def WSSecurity_=(
       x: Instantiable3[

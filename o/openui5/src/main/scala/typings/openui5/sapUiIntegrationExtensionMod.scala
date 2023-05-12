@@ -7,6 +7,7 @@ import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiIntegrationLibraryMod.CardMenuAction
 import typings.openui5.sapUiIntegrationWidgetsCardMod.CardFacade
 import typings.std.Record
+import typings.std.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -135,6 +136,10 @@ object sapUiIntegrationExtensionMod {
       *
       * Fired when an action is triggered in the card.
       *
+      * When an action is triggered in the card it can be handled on several places by "action" event handlers.
+      * In consecutive order those places are: `Extension`, `Card`, `Host`. Each of them can prevent the next
+      * one to handle the action by calling `oEvent.preventDefault()`.
+      *
       * @returns Reference to `this` in order to allow method chaining
       */
     def attachAction(
@@ -163,6 +168,10 @@ object sapUiIntegrationExtensionMod {
       * otherwise it will be bound to this `sap.ui.integration.Extension` itself.
       *
       * Fired when an action is triggered in the card.
+      *
+      * When an action is triggered in the card it can be handled on several places by "action" event handlers.
+      * In consecutive order those places are: `Extension`, `Card`, `Host`. Each of them can prevent the next
+      * one to handle the action by calling `oEvent.preventDefault()`.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
@@ -221,8 +230,34 @@ object sapUiIntegrationExtensionMod {
     ): this.type = js.native
     
     /**
+      * @EXPERIMENTAL (since 1.113) - The API might change.
+      *
+      * Starts the process of fetching a resource from the network, returning a promise that is fulfilled once
+      * the response is available. Use this method to override the default behavior when fetching network resources.
+      * Mimics the browser native Fetch API.
+      *
+      * @returns A `Promise` that resolves to a `Response` object.
+      */
+    def fetch(
+      /**
+      * This defines the resource that you wish to fetch.
+      */
+    sResource: String,
+      /**
+      * An object containing any custom settings that you want to apply to the request.
+      */
+    mOptions: js.Object,
+      /**
+      * The map of request settings defined in the card manifest. Use this only for reading, they can not be
+      * modified.
+      */
+    mRequestSettings: js.Object
+    ): js.Promise[Response] = js.native
+    
+    /**
       * @EXPERIMENTAL (since 1.75) - Disclaimer: this event is in a beta state - incompatible API changes may
       * be done before its official public release. Use at your own discretion.
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:action action} to attached listeners.
       *
@@ -258,15 +293,13 @@ object sapUiIntegrationExtensionMod {
     def getCard(): CardFacade = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.79)
-      *
       * Gets current value of property {@link #getFormatters formatters}.
       *
-      * The formatters, which can be used in the manifest.
+      * The formatters that can be used in the manifest.
       *
       * @returns Value of property `formatters`
       */
-    def getFormatters(): js.Object = js.native
+    def getFormatters(): js.UndefOr[Record[String, js.Function0[Unit]]] = js.native
     
     /**
       * @EXPERIMENTAL (since 1.108)
@@ -279,9 +312,23 @@ object sapUiIntegrationExtensionMod {
     def loadDependencies(): js.Promise[Any] = js.native
     
     /**
-      * Called when the card is ready.
+      * Called after the card is initialized.
       */
     def onCardReady(): Unit = js.native
+    
+    /**
+      * Sets current value of property {@link #setFormatters formatters}.
+      *
+      * The formatters that can be used in the manifest. When called with a value of `null` or `undefined`, the
+      * default value of the property will be restored.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setFormatters(): this.type = js.native
+    def setFormatters(/**
+      * New value of property `formatters`
+      */
+    aFormatters: Record[String, js.Function]): this.type = js.native
   }
   
   trait ExtensionSettings
@@ -293,6 +340,10 @@ object sapUiIntegrationExtensionMod {
       * be done before its official public release. Use at your own discretion.
       *
       * Fired when an action is triggered in the card.
+      *
+      * When an action is triggered in the card it can be handled on several places by "action" event handlers.
+      * In consecutive order those places are: `Extension`, `Card`, `Host`. Each of them can prevent the next
+      * one to handle the action by calling `oEvent.preventDefault()`.
       */
     var action: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
     
@@ -310,7 +361,7 @@ object sapUiIntegrationExtensionMod {
     /**
       * @EXPERIMENTAL (since 1.79)
       *
-      * The formatters, which can be used in the manifest.
+      * The formatters that can be used in the manifest.
       */
     var formatters: js.UndefOr[
         js.Object | PropertyBindingInfo | (/* template literal string: {${string}} */ String)

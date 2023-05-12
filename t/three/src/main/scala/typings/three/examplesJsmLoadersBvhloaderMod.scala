@@ -41,6 +41,9 @@ object examplesJsmLoadersBvhloaderMod {
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): Unit = js.native
     
+    def loadAsync(url: String): js.Promise[BVH] = js.native
+    def loadAsync(url: String, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[BVH] = js.native
+    
     def parse(text: String): BVH = js.native
   }
   

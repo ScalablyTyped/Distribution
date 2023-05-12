@@ -22,7 +22,7 @@ object libFabricMod {
     def this(props: IFabricProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: IFabricProps, context: Any) = this()
   }

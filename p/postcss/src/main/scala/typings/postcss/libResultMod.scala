@@ -2,32 +2,54 @@ package typings.postcss
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.postcss.libWarningMod.WarningOptions
-import typings.postcss.mod.Document
 import typings.postcss.mod.Node
-import typings.postcss.mod.Plugin
 import typings.postcss.mod.ProcessOptions
 import typings.postcss.mod.Root_
 import typings.postcss.mod.SourceMap
 import typings.postcss.mod.TransformCallback
 import typings.postcss.mod.Warning
+import typings.std.Document
+import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libResultMod {
   
+  @JSImport("postcss/lib/result", JSImport.Namespace)
+  @js.native
+  open class ^ ()
+    extends StObject
+       with Result_
+  
+  /**
+    * Provides the result of the PostCSS transformations.
+    *
+    * A Result instance is returned by `LazyResult#then`
+    * or `Root#toResult` methods.
+    *
+    * ```js
+    * postcss([autoprefixer]).process(css).then(result => {
+    *  console.log(result.css)
+    * })
+    * ```
+    *
+    * ```js
+    * const result2 = postcss.parse(css).toResult()
+    * ```
+    */
   @JSImport("postcss/lib/result", JSImport.Default)
   @js.native
   open class default protected ()
     extends StObject
-       with Result {
-    def this(processor: typings.postcss.libProcessorMod.default, root: Document, opts: ResultOptions) = this()
+       with Result_ {
     /**
       * @param processor Processor used for this transformation.
       * @param root      Root node after all transformations.
       * @param opts      Options from the `Processor#process` or `Root#toResult`.
       */
     def this(processor: typings.postcss.libProcessorMod.default, root: Root_, opts: ResultOptions) = this()
+    def this(processor: typings.postcss.libProcessorMod.default, root: Document, opts: ResultOptions) = this()
   }
   
   trait Message
@@ -63,8 +85,61 @@ object libResultMod {
     }
   }
   
+  type Result = Result_
+  
+  trait ResultOptions
+    extends StObject
+       with ProcessOptions {
+    
+    /**
+      * The CSS node that was the source of the warning.
+      */
+    var node: js.UndefOr[Node] = js.undefined
+    
+    /**
+      * Name of plugin that created this warning. `Result#warn` will fill it
+      * automatically with `Plugin#postcssPlugin` value.
+      */
+    var plugin: js.UndefOr[String] = js.undefined
+  }
+  object ResultOptions {
+    
+    inline def apply(): ResultOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ResultOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultOptions] (val x: Self) extends AnyVal {
+      
+      inline def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      
+      inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+      
+      inline def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+      
+      inline def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
+    }
+  }
+  
+  /**
+    * Provides the result of the PostCSS transformations.
+    *
+    * A Result instance is returned by `LazyResult#then`
+    * or `Root#toResult` methods.
+    *
+    * ```js
+    * postcss([autoprefixer]).process(css).then(result => {
+    *  console.log(result.css)
+    * })
+    * ```
+    *
+    * ```js
+    * const result2 = postcss.parse(css).toResult()
+    * ```
+    */
   @js.native
-  trait Result extends StObject {
+  trait Result_ extends StObject {
     
     /**
       * An alias for the `Result#css` property.
@@ -187,40 +262,5 @@ object libResultMod {
       * @return Warnings from plugins.
       */
     def warnings(): js.Array[Warning] = js.native
-  }
-  
-  trait ResultOptions
-    extends StObject
-       with ProcessOptions {
-    
-    /**
-      * The CSS node that was the source of the warning.
-      */
-    var node: js.UndefOr[Node] = js.undefined
-    
-    /**
-      * Name of plugin that created this warning. `Result#warn` will fill it
-      * automatically with `Plugin#postcssPlugin` value.
-      */
-    var plugin: js.UndefOr[String] = js.undefined
-  }
-  object ResultOptions {
-    
-    inline def apply(): ResultOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ResultOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: ResultOptions] (val x: Self) extends AnyVal {
-      
-      inline def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
-      
-      inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
-      
-      inline def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
-      
-      inline def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
-    }
   }
 }

@@ -6,29 +6,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Key extends StObject {
+  /* Inlined std.Partial<@libp2p/record.@libp2p/record/dist/src/record.Record> */
+  trait PartialRecord extends StObject {
     
-    var key: js.typedarray.Uint8Array
+    var key: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
     
-    var timeReceived: String
+    var timeReceived: js.UndefOr[String] = js.undefined
     
-    var value: js.typedarray.Uint8Array
+    var value: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
   }
-  object Key {
+  object PartialRecord {
     
-    inline def apply(key: js.typedarray.Uint8Array, timeReceived: String, value: js.typedarray.Uint8Array): Key = {
-      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], timeReceived = timeReceived.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Key]
+    inline def apply(): PartialRecord = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialRecord]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: PartialRecord] (val x: Self) extends AnyVal {
       
       inline def setKey(value: js.typedarray.Uint8Array): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      
       inline def setTimeReceived(value: String): Self = StObject.set(x, "timeReceived", value.asInstanceOf[js.Any])
       
+      inline def setTimeReceivedUndefined: Self = StObject.set(x, "timeReceived", js.undefined)
+      
       inline def setValue(value: js.typedarray.Uint8Array): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

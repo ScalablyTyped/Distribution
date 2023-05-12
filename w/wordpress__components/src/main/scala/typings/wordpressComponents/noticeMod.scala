@@ -8,7 +8,7 @@ import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.std.HTMLButtonElement
 import typings.wordpressComponents.noticeMod.Notice.Props
-import typings.wordpressNotices.mod.Status
+import typings.wordpressNotices.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

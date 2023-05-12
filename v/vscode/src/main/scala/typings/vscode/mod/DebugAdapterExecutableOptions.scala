@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DebugAdapterExecutableOptions extends StObject {
   
   /**
-    * The current working directory for the executed debug adapter.
-    */
+  		 * The current working directory for the executed debug adapter.
+  		 */
   var cwd: js.UndefOr[String] = js.undefined
   
   /**
-    * The additional environment of the executed program or shell. If omitted
-    * the parent process' environment is used. If provided it is merged with
-    * the parent process' environment.
-    */
+  		 * The additional environment of the executed program or shell. If omitted
+  		 * the parent process' environment is used. If provided it is merged with
+  		 * the parent process' environment.
+  		 */
   var env: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object DebugAdapterExecutableOptions {

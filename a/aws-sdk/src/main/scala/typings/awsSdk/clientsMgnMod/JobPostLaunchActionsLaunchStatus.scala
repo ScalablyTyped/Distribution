@@ -7,27 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JobPostLaunchActionsLaunchStatus extends StObject {
   
   /**
-    * Job type.
+    * AWS Systems Manager Document's execution ID of the of the Job Post Launch Actions.
     */
   var executionID: js.UndefOr[BoundedString] = js.undefined
   
   /**
-    * Job type.
+    * AWS Systems Manager Document's execution status.
     */
   var executionStatus: js.UndefOr[PostLaunchActionExecutionStatus] = js.undefined
   
   /**
-    * Job type.
+    * AWS Systems Manager Document's failure reason.
     */
   var failureReason: js.UndefOr[BoundedString] = js.undefined
   
   /**
-    * Job type.
+    * AWS Systems Manager's Document of the of the Job Post Launch Actions.
     */
   var ssmDocument: js.UndefOr[SsmDocument] = js.undefined
   
   /**
-    * Job type.
+    * AWS Systems Manager Document type.
     */
   var ssmDocumentType: js.UndefOr[SsmDocumentType] = js.undefined
 }

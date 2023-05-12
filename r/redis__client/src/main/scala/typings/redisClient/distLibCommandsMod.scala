@@ -35,6 +35,8 @@ object distLibCommandsMod {
     
     var IS_READ_ONLY: js.UndefOr[Boolean] = js.undefined
     
+    var TRANSFORM_LEGACY_REPLY: js.UndefOr[Boolean] = js.undefined
+    
     def transformArguments(args: Any*): RedisCommandArguments
     
     var transformReply: js.UndefOr[
@@ -60,6 +62,10 @@ object distLibCommandsMod {
       inline def setIS_READ_ONLY(value: Boolean): Self = StObject.set(x, "IS_READ_ONLY", value.asInstanceOf[js.Any])
       
       inline def setIS_READ_ONLYUndefined: Self = StObject.set(x, "IS_READ_ONLY", js.undefined)
+      
+      inline def setTRANSFORM_LEGACY_REPLY(value: Boolean): Self = StObject.set(x, "TRANSFORM_LEGACY_REPLY", value.asInstanceOf[js.Any])
+      
+      inline def setTRANSFORM_LEGACY_REPLYUndefined: Self = StObject.set(x, "TRANSFORM_LEGACY_REPLY", js.undefined)
       
       inline def setTransformArguments(value: /* repeated */ Any => RedisCommandArguments): Self = StObject.set(x, "transformArguments", js.Any.fromFunction1(value))
       

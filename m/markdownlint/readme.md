@@ -1,7 +1,7 @@
 
 # Scala.js typings for markdownlint
 
-Typings are for version 0.26.2
+Typings are for version 0.28.2
 
 ## Library description:
 A Node.js style checker and lint tool for Markdown/CommonMark files.

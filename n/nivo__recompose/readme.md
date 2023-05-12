@@ -1,7 +1,7 @@
 
 # Scala.js typings for nivo__recompose
 
-Typings are for version 0.80.0
+Typings are for version 0.83.0
 
 ## Library description:
 [![version](https://img.shields.io/npm/v/@nivo/recompose.svg?style=flat-square)](https://www.npmjs.com/package/@nivo/recompose)

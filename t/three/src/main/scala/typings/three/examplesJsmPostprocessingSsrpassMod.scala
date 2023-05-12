@@ -4,6 +4,8 @@ import typings.three.anon.Beauty
 import typings.three.examplesJsmObjectsReflectorForSSRPassMod.ReflectorForSSRPass
 import typings.three.examplesJsmPostprocessingPassMod.FullScreenQuad
 import typings.three.examplesJsmPostprocessingPassMod.Pass
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
+import typings.three.srcMathColorMod.ColorRepresentation
 import typings.three.srcThreeMod.BufferGeometry
 import typings.three.srcThreeMod.Camera
 import typings.three.srcThreeMod.Color
@@ -15,7 +17,6 @@ import typings.three.srcThreeMod.Scene
 import typings.three.srcThreeMod.ShaderMaterial
 import typings.three.srcThreeMod.WebGLRenderTarget
 import typings.three.srcThreeMod.WebGLRenderer
-import typings.three.srcUtilsMod.ColorRepresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,7 +48,7 @@ object examplesJsmPostprocessingSsrpassMod {
     
     var fsQuad: FullScreenQuad = js.native
     
-    var groundReflector: ReflectorForSSRPass[BufferGeometry] | Null = js.native
+    var groundReflector: ReflectorForSSRPass[BufferGeometry[NormalBufferAttributes]] | Null = js.native
     
     var height: Double = js.native
     
@@ -115,14 +116,14 @@ object examplesJsmPostprocessingSsrpassMod {
     
     def selects: (js.Array[
         Mesh[
-          typings.three.srcCoreBufferGeometryMod.BufferGeometry, 
+          typings.three.srcCoreBufferGeometryMod.BufferGeometry[NormalBufferAttributes], 
           typings.three.srcMaterialsMaterialMod.Material | js.Array[typings.three.srcMaterialsMaterialMod.Material]
         ]
       ]) | Null = js.native
     def selects_=(
       `val`: (js.Array[
           Mesh[
-            typings.three.srcCoreBufferGeometryMod.BufferGeometry, 
+            typings.three.srcCoreBufferGeometryMod.BufferGeometry[NormalBufferAttributes], 
             typings.three.srcMaterialsMaterialMod.Material | js.Array[typings.three.srcMaterialsMaterialMod.Material]
           ]
         ]) | Null
@@ -157,7 +158,7 @@ object examplesJsmPostprocessingSsrpassMod {
     
     var camera: Camera
     
-    var groundReflector: ReflectorForSSRPass[BufferGeometry] | Null
+    var groundReflector: ReflectorForSSRPass[BufferGeometry[NormalBufferAttributes]] | Null
     
     var height: js.UndefOr[Double] = js.undefined
     
@@ -171,7 +172,7 @@ object examplesJsmPostprocessingSsrpassMod {
     
     var selects: (js.Array[
         Mesh[
-          typings.three.srcCoreBufferGeometryMod.BufferGeometry, 
+          typings.three.srcCoreBufferGeometryMod.BufferGeometry[NormalBufferAttributes], 
           typings.three.srcMaterialsMaterialMod.Material | js.Array[typings.three.srcMaterialsMaterialMod.Material]
         ]
       ]) | Null
@@ -190,7 +191,7 @@ object examplesJsmPostprocessingSsrpassMod {
       
       inline def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
       
-      inline def setGroundReflector(value: ReflectorForSSRPass[BufferGeometry]): Self = StObject.set(x, "groundReflector", value.asInstanceOf[js.Any])
+      inline def setGroundReflector(value: ReflectorForSSRPass[BufferGeometry[NormalBufferAttributes]]): Self = StObject.set(x, "groundReflector", value.asInstanceOf[js.Any])
       
       inline def setGroundReflectorNull: Self = StObject.set(x, "groundReflector", null)
       
@@ -213,7 +214,7 @@ object examplesJsmPostprocessingSsrpassMod {
       inline def setSelects(
         value: js.Array[
               Mesh[
-                typings.three.srcCoreBufferGeometryMod.BufferGeometry, 
+                typings.three.srcCoreBufferGeometryMod.BufferGeometry[NormalBufferAttributes], 
                 typings.three.srcMaterialsMaterialMod.Material | js.Array[typings.three.srcMaterialsMaterialMod.Material]
               ]
             ]
@@ -223,7 +224,7 @@ object examplesJsmPostprocessingSsrpassMod {
       
       inline def setSelectsVarargs(
         value: (Mesh[
-              typings.three.srcCoreBufferGeometryMod.BufferGeometry, 
+              typings.three.srcCoreBufferGeometryMod.BufferGeometry[NormalBufferAttributes], 
               typings.three.srcMaterialsMaterialMod.Material | js.Array[typings.three.srcMaterialsMaterialMod.Material]
             ])*
       ): Self = StObject.set(x, "selects", js.Array(value*))

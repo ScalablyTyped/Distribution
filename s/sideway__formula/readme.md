@@ -1,7 +1,7 @@
 
 # Scala.js typings for sideway__formula
 
-Typings are for version 3.0.0
+Typings are for version 3.0.1
 
 ## Library description:
 Math and string formula parser.

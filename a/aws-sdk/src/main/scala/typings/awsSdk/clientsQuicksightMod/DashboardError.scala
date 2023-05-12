@@ -15,6 +15,11 @@ trait DashboardError extends StObject {
     * Type.
     */
   var Type: js.UndefOr[DashboardErrorType] = js.undefined
+  
+  /**
+    * Lists the violated entities that caused the dashboard error.
+    */
+  var ViolatedEntities: js.UndefOr[EntityList] = js.undefined
 }
 object DashboardError {
   
@@ -33,5 +38,11 @@ object DashboardError {
     inline def setType(value: DashboardErrorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    
+    inline def setViolatedEntities(value: EntityList): Self = StObject.set(x, "ViolatedEntities", value.asInstanceOf[js.Any])
+    
+    inline def setViolatedEntitiesUndefined: Self = StObject.set(x, "ViolatedEntities", js.undefined)
+    
+    inline def setViolatedEntitiesVarargs(value: Entity*): Self = StObject.set(x, "ViolatedEntities", js.Array(value*))
   }
 }

@@ -6,16 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IssuenumberOwnerReactionid extends StObject {
   
-  /** The number that identifies the issue. */
   var issue_number: Double
   
-  /** The account owner of the repository. The name is not case sensitive. */
   var owner: String
   
-  /** The unique identifier of the reaction. */
   var reaction_id: Double
   
-  /** The name of the repository. The name is not case sensitive. */
   var repo: String
 }
 object IssuenumberOwnerReactionid {

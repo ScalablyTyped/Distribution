@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "mdast-util-to-string" : "3.1.0"
+      "mdast-util-to-string" : "3.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "mdast-util-to-string" : "3.1.0"
+      "mdast-util-to-string" : "3.2.0"
     }
   ],
   "compile-devDependencies" : [

@@ -17,11 +17,41 @@ object libResolverResolverMod {
   @js.native
   open class Resolver () extends StObject {
     
+    /**
+      * Appends the default url parameters to the url
+      * @param url - The url to append the default parameters to
+      * @returns - The url with the default parameters appended
+      */
+    /* private */ var _appendDefaultSearchParams: Any = js.native
+    
     /* private */ var _assetMap: Any = js.native
     
     /* private */ var _basePath: Any = js.native
     
+    /** The character that is used to connect the bundleId and the assetId when generating a bundle asset id key */
+    /* private */ var _bundleIdConnector: Any = js.native
+    
     /* private */ var _bundles: Any = js.native
+    
+    /**
+      * A function that generates a bundle asset id key from a bundleId and an assetId
+      * @param bundleId - the bundleId
+      * @param assetId  - the assetId
+      * @returns the bundle asset id key
+      */
+    /* private */ var _createBundleAssetId: Any = js.native
+    
+    /* private */ var _defaultBundleIdentifierOptions: Any = js.native
+    
+    /* private */ var _defaultSearchParams: Any = js.native
+    
+    /**
+      * A function that generates an assetId from a bundle asset id key. This is the reverse of generateBundleAssetId
+      * @param bundleId - the bundleId
+      * @param assetBundleId - the bundle asset id key
+      * @returns the assetId
+      */
+    /* private */ var _extractAssetIdFromBundle: Any = js.native
     
     /**
       * Internal function for figuring out what prefer criteria an asset should use.
@@ -70,14 +100,14 @@ object libResolverResolverMod {
       */
     def add(keysIn: String, assetsIn: String): Unit = js.native
     def add(keysIn: String, assetsIn: String, data: Any): Unit = js.native
-    def add(keysIn: String, assetsIn: js.Array[ResolveAsset | String]): Unit = js.native
-    def add(keysIn: String, assetsIn: js.Array[ResolveAsset | String], data: Any): Unit = js.native
+    def add(keysIn: String, assetsIn: js.Array[String | ResolveAsset]): Unit = js.native
+    def add(keysIn: String, assetsIn: js.Array[String | ResolveAsset], data: Any): Unit = js.native
     def add(keysIn: String, assetsIn: ResolveAsset): Unit = js.native
     def add(keysIn: String, assetsIn: ResolveAsset, data: Any): Unit = js.native
     def add(keysIn: js.Array[String], assetsIn: String): Unit = js.native
     def add(keysIn: js.Array[String], assetsIn: String, data: Any): Unit = js.native
-    def add(keysIn: js.Array[String], assetsIn: js.Array[ResolveAsset | String]): Unit = js.native
-    def add(keysIn: js.Array[String], assetsIn: js.Array[ResolveAsset | String], data: Any): Unit = js.native
+    def add(keysIn: js.Array[String], assetsIn: js.Array[String | ResolveAsset]): Unit = js.native
+    def add(keysIn: js.Array[String], assetsIn: js.Array[String | ResolveAsset], data: Any): Unit = js.native
     def add(keysIn: js.Array[String], assetsIn: ResolveAsset): Unit = js.native
     def add(keysIn: js.Array[String], assetsIn: ResolveAsset, data: Any): Unit = js.native
     
@@ -115,6 +145,18 @@ object libResolverResolverMod {
       * @param basePath - the base path to use
       */
     def basePath_=(basePath: String): Unit = js.native
+    
+    /**
+      * Checks if a bundle with the given key exists in the resolver
+      * @param key - The key of the bundle
+      */
+    def hasBundle(key: String): Boolean = js.native
+    
+    /**
+      * Checks if an asset with a given key exists in the resolver
+      * @param key - The key of the asset
+      */
+    def hasKey(key: String): Boolean = js.native
     
     /**
       * All the active URL parsers that help the parser to extract information and create
@@ -259,5 +301,64 @@ object libResolverResolverMod {
       * @param rootPath - the root path to use
       */
     def rootPath_=(rootPath: String): Unit = js.native
+    
+    /**
+      * Override how the resolver deals with generating bundle ids.
+      * must be called before any bundles are added
+      * @param bundleIdentifier - the bundle identifier options
+      */
+    def setBundleIdentifier(bundleIdentifier: BundleIdentifierOptions): Unit = js.native
+    
+    /**
+      * Sets the default URL search parameters for the URL resolver. The urls can be specified as a string or an object.
+      * @param searchParams - the default url parameters to append when resolving urls
+      */
+    def setDefaultSearchParams(searchParams: String): Unit = js.native
+    def setDefaultSearchParams(searchParams: Record[String, Any]): Unit = js.native
+  }
+  
+  trait BundleIdentifierOptions extends StObject {
+    
+    /** The character that is used to connect the bundleId and the assetId when generating a bundle asset id key */
+    var connector: js.UndefOr[String] = js.undefined
+    
+    /**
+      * A function that generates a bundle asset id key from a bundleId and an assetId
+      * @param bundleId - the bundleId
+      * @param assetId  - the assetId
+      * @returns the bundle asset id key
+      */
+    var createBundleAssetId: js.UndefOr[js.Function2[/* bundleId */ String, /* assetId */ String, String]] = js.undefined
+    
+    /**
+      * A function that generates an assetId from a bundle asset id key. This is the reverse of generateBundleAssetId
+      * @param bundleId - the bundleId
+      * @param assetBundleId - the bundle asset id key
+      * @returns the assetId
+      */
+    var extractAssetIdFromBundle: js.UndefOr[js.Function2[/* bundleId */ String, /* assetBundleId */ String, String]] = js.undefined
+  }
+  object BundleIdentifierOptions {
+    
+    inline def apply(): BundleIdentifierOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[BundleIdentifierOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BundleIdentifierOptions] (val x: Self) extends AnyVal {
+      
+      inline def setConnector(value: String): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
+      
+      inline def setConnectorUndefined: Self = StObject.set(x, "connector", js.undefined)
+      
+      inline def setCreateBundleAssetId(value: (/* bundleId */ String, /* assetId */ String) => String): Self = StObject.set(x, "createBundleAssetId", js.Any.fromFunction2(value))
+      
+      inline def setCreateBundleAssetIdUndefined: Self = StObject.set(x, "createBundleAssetId", js.undefined)
+      
+      inline def setExtractAssetIdFromBundle(value: (/* bundleId */ String, /* assetBundleId */ String) => String): Self = StObject.set(x, "extractAssetIdFromBundle", js.Any.fromFunction2(value))
+      
+      inline def setExtractAssetIdFromBundleUndefined: Self = StObject.set(x, "extractAssetIdFromBundle", js.undefined)
+    }
   }
 }

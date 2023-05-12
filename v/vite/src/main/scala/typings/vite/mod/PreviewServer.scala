@@ -9,33 +9,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PreviewServer extends StObject {
+trait PreviewServer
+  extends StObject
+     with PreviewServerForHook {
   
-  /**
-    * The resolved vite config object
-    */
-  var config: ResolvedConfig
-  
-  /**
-    * native Node http server instance
-    */
-  var httpServer: Server[
-    Instantiable1[/* socket */ Socket, IncomingMessage], 
-    Instantiable1[
-      /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-      ServerResponse[IncomingMessage]
-    ]
-  ]
-  
-  /**
-    * Print server urls
-    */
-  def printUrls(): Unit
-  
-  /**
-    * The resolved urls Vite prints on the CLI
-    */
-  var resolvedUrls: ResolvedServerUrls
+  @JSName("resolvedUrls")
+  var resolvedUrls_PreviewServer: ResolvedServerUrls
 }
 object PreviewServer {
   
@@ -48,29 +27,16 @@ object PreviewServer {
         ServerResponse[IncomingMessage]
       ]
     ],
+    middlewares: typings.vite.mod.Connect.Server,
     printUrls: () => Unit,
     resolvedUrls: ResolvedServerUrls
   ): PreviewServer = {
-    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], httpServer = httpServer.asInstanceOf[js.Any], printUrls = js.Any.fromFunction0(printUrls), resolvedUrls = resolvedUrls.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], httpServer = httpServer.asInstanceOf[js.Any], middlewares = middlewares.asInstanceOf[js.Any], printUrls = js.Any.fromFunction0(printUrls), resolvedUrls = resolvedUrls.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreviewServer]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: PreviewServer] (val x: Self) extends AnyVal {
-    
-    inline def setConfig(value: ResolvedConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
-    
-    inline def setHttpServer(
-      value: Server[
-          Instantiable1[/* socket */ Socket, IncomingMessage], 
-          Instantiable1[
-            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-            ServerResponse[IncomingMessage]
-          ]
-        ]
-    ): Self = StObject.set(x, "httpServer", value.asInstanceOf[js.Any])
-    
-    inline def setPrintUrls(value: () => Unit): Self = StObject.set(x, "printUrls", js.Any.fromFunction0(value))
     
     inline def setResolvedUrls(value: ResolvedServerUrls): Self = StObject.set(x, "resolvedUrls", value.asInstanceOf[js.Any])
   }

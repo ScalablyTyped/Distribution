@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CreateCoipPoolResult extends StObject {
   
+  /**
+    * Information about the CoIP address pool.
+    */
   var CoipPool: js.UndefOr[typings.awsSdk.clientsEc2Mod.CoipPool] = js.undefined
 }
 object CreateCoipPoolResult {

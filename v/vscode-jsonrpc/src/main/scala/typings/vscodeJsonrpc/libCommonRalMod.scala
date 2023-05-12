@@ -63,9 +63,13 @@ object libCommonRalMod {
     /**
       * Tries to read the headers from the buffer
       *
+      * @param lowerCaseKeys Whether the keys should be stored lower case. Doing
+      * so is recommended since HTTP headers are case insensitive.
+      *
       * @returns the header properties or undefined in not enough data can be read.
       */
     def tryReadHeaders(): js.UndefOr[Map[String, String]] = js.native
+    def tryReadHeaders(lowerCaseKeys: Boolean): js.UndefOr[Map[String, String]] = js.native
   }
   
   /* Rewritten from type alias, can be one of: 

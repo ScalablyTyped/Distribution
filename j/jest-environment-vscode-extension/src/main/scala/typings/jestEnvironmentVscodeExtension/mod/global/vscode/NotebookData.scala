@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class NotebookData protected ()
   extends typings.vscode.mod.NotebookData {
   /**
-    * Create new notebook data.
-    *
-    * @param cells An array of cell data.
-    */
+  		 * Create new notebook data.
+  		 *
+  		 * @param cells An array of cell data.
+  		 */
   def this(cells: js.Array[typings.vscode.mod.NotebookCellData]) = this()
 }

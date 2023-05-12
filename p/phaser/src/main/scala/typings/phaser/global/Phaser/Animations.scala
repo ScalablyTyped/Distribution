@@ -114,13 +114,13 @@ object Animations {
       * A reference to the AnimationFrame that comes after this one in the animation, if any.
       */
     /* CompleteClass */
-    override val nextFrame: typings.phaser.Phaser.Animations.AnimationFrame = js.native
+    override val nextFrame: typings.phaser.Phaser.Animations.AnimationFrame | Null = js.native
     
     /**
       * A reference to the AnimationFrame that comes before this one in the animation, if any.
       */
     /* CompleteClass */
-    override val prevFrame: typings.phaser.Phaser.Animations.AnimationFrame = js.native
+    override val prevFrame: typings.phaser.Phaser.Animations.AnimationFrame | Null = js.native
     
     /**
       * What % through the animation does this frame come?
@@ -212,7 +212,7 @@ object Animations {
       */
     @JSGlobal("Phaser.Animations.Events.ADD_ANIMATION")
     @js.native
-    val ADD_ANIMATION: Any = js.native
+    val ADD_ANIMATION: String = js.native
     
     /**
       * The Animation Complete Event.
@@ -241,7 +241,7 @@ object Animations {
       */
     @JSGlobal("Phaser.Animations.Events.ANIMATION_COMPLETE")
     @js.native
-    val ANIMATION_COMPLETE: Any = js.native
+    val ANIMATION_COMPLETE: String = js.native
     
     /**
       * The Animation Complete Dynamic Key Event.
@@ -274,7 +274,7 @@ object Animations {
       */
     @JSGlobal("Phaser.Animations.Events.ANIMATION_COMPLETE_KEY")
     @js.native
-    val ANIMATION_COMPLETE_KEY: Any = js.native
+    val ANIMATION_COMPLETE_KEY: String = js.native
     
     /**
       * The Animation Repeat Event.
@@ -300,7 +300,7 @@ object Animations {
       */
     @JSGlobal("Phaser.Animations.Events.ANIMATION_REPEAT")
     @js.native
-    val ANIMATION_REPEAT: Any = js.native
+    val ANIMATION_REPEAT: String = js.native
     
     /**
       * The Animation Restart Event.
@@ -324,7 +324,7 @@ object Animations {
       */
     @JSGlobal("Phaser.Animations.Events.ANIMATION_RESTART")
     @js.native
-    val ANIMATION_RESTART: Any = js.native
+    val ANIMATION_RESTART: String = js.native
     
     /**
       * The Animation Start Event.
@@ -349,7 +349,7 @@ object Animations {
       */
     @JSGlobal("Phaser.Animations.Events.ANIMATION_START")
     @js.native
-    val ANIMATION_START: Any = js.native
+    val ANIMATION_START: String = js.native
     
     /**
       * The Animation Stop Event.
@@ -374,13 +374,13 @@ object Animations {
       */
     @JSGlobal("Phaser.Animations.Events.ANIMATION_STOP")
     @js.native
-    val ANIMATION_STOP: Any = js.native
+    val ANIMATION_STOP: String = js.native
     
     /**
       * The Animation Update Event.
       * 
       * This event is dispatched by a Sprite when an animation playing on it updates. This happens when the animation changes frame.
-      * An animation will change frame based on the frme rate and other factors like `timeScale` and `delay`. It can also change
+      * An animation will change frame based on the frame rate and other factors like `timeScale` and `delay`. It can also change
       * frame when stopped or restarted.
       * 
       * Listen for it on the Sprite using `sprite.on('animationupdate', listener)`
@@ -403,7 +403,7 @@ object Animations {
       */
     @JSGlobal("Phaser.Animations.Events.ANIMATION_UPDATE")
     @js.native
-    val ANIMATION_UPDATE: Any = js.native
+    val ANIMATION_UPDATE: String = js.native
     
     /**
       * The Pause All Animations Event.
@@ -415,7 +415,7 @@ object Animations {
       */
     @JSGlobal("Phaser.Animations.Events.PAUSE_ALL")
     @js.native
-    val PAUSE_ALL: Any = js.native
+    val PAUSE_ALL: String = js.native
     
     /**
       * The Remove Animation Event.
@@ -424,7 +424,7 @@ object Animations {
       */
     @JSGlobal("Phaser.Animations.Events.REMOVE_ANIMATION")
     @js.native
-    val REMOVE_ANIMATION: Any = js.native
+    val REMOVE_ANIMATION: String = js.native
     
     /**
       * The Resume All Animations Event.
@@ -435,6 +435,6 @@ object Animations {
       */
     @JSGlobal("Phaser.Animations.Events.RESUME_ALL")
     @js.native
-    val RESUME_ALL: Any = js.native
+    val RESUME_ALL: String = js.native
   }
 }

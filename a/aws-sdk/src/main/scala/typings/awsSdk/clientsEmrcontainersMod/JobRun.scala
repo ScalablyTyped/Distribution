@@ -67,6 +67,16 @@ trait JobRun extends StObject {
   var releaseLabel: js.UndefOr[ReleaseLabel] = js.undefined
   
   /**
+    * The configuration of the retry policy that the job runs on.
+    */
+  var retryPolicyConfiguration: js.UndefOr[RetryPolicyConfiguration] = js.undefined
+  
+  /**
+    * The current status of the retry policy executed on the job.
+    */
+  var retryPolicyExecution: js.UndefOr[RetryPolicyExecution] = js.undefined
+  
+  /**
     * The state of the job run. 
     */
   var state: js.UndefOr[JobRunState] = js.undefined
@@ -143,6 +153,14 @@ object JobRun {
     inline def setReleaseLabel(value: ReleaseLabel): Self = StObject.set(x, "releaseLabel", value.asInstanceOf[js.Any])
     
     inline def setReleaseLabelUndefined: Self = StObject.set(x, "releaseLabel", js.undefined)
+    
+    inline def setRetryPolicyConfiguration(value: RetryPolicyConfiguration): Self = StObject.set(x, "retryPolicyConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setRetryPolicyConfigurationUndefined: Self = StObject.set(x, "retryPolicyConfiguration", js.undefined)
+    
+    inline def setRetryPolicyExecution(value: RetryPolicyExecution): Self = StObject.set(x, "retryPolicyExecution", value.asInstanceOf[js.Any])
+    
+    inline def setRetryPolicyExecutionUndefined: Self = StObject.set(x, "retryPolicyExecution", js.undefined)
     
     inline def setState(value: JobRunState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

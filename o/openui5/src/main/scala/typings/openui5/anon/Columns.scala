@@ -7,15 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Columns extends StObject {
   
-  /**
-    * The count of the gird columns.
-    */
-  var columns: js.UndefOr[int] = js.undefined
+  var columns: int
+  
+  var rows: int
 }
 object Columns {
   
-  inline def apply(): Columns = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(columns: int, rows: int): Columns = {
+    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[Columns]
   }
   
@@ -24,6 +23,6 @@ object Columns {
     
     inline def setColumns(value: int): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setRows(value: int): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
   }
 }

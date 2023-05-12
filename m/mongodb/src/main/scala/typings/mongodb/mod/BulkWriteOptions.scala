@@ -15,9 +15,6 @@ trait BulkWriteOptions
   /** Force server to assign _id values instead of driver. */
   var forceServerObjectId: js.UndefOr[Boolean] = js.undefined
   
-  /** @deprecated use `ordered` instead */
-  var keepGoing: js.UndefOr[Boolean] = js.undefined
-  
   /** Map of parameter names and values that can be accessed using $$var (requires MongoDB 5.0). */
   var let: js.UndefOr[Document] = js.undefined
   
@@ -41,10 +38,6 @@ object BulkWriteOptions {
     inline def setForceServerObjectId(value: Boolean): Self = StObject.set(x, "forceServerObjectId", value.asInstanceOf[js.Any])
     
     inline def setForceServerObjectIdUndefined: Self = StObject.set(x, "forceServerObjectId", js.undefined)
-    
-    inline def setKeepGoing(value: Boolean): Self = StObject.set(x, "keepGoing", value.asInstanceOf[js.Any])
-    
-    inline def setKeepGoingUndefined: Self = StObject.set(x, "keepGoing", js.undefined)
     
     inline def setLet(value: Document): Self = StObject.set(x, "let", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for safe-stable-stringify
 
-Typings are for version 2.4.1
+Typings are for version 2.4.3
 
 ## Library description:
 Deterministic and safely JSON.stringify to quickly serialize JavaScript objects

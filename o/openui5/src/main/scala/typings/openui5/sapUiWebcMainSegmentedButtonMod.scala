@@ -238,6 +238,8 @@ object sapUiWebcMainSegmentedButtonMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:selectionChange selectionChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -258,6 +260,8 @@ object sapUiWebcMainSegmentedButtonMod {
     def getAccessibleName(): String = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * `SegmentedButton` must not be stretched in Form because ResizeHandler is used internally in order to
       * manage the width of the SegmentedButton depending on the container size
       *

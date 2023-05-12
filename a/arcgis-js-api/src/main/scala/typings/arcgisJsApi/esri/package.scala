@@ -137,8 +137,6 @@ type BingMapsLayerLayerviewDestroyEventHandler = js.Function1[/* event */ BingMa
 
 type BingMapsLayerRefreshEventHandler = js.Function1[/* event */ BingMapsLayerRefreshEvent, scala.Unit]
 
-type BookmarkConstructor = Instantiable1[/* properties */ js.UndefOr[BookmarkProperties], Bookmark]
-
 type BookmarksBookmarkEditEventHandler = js.Function1[/* event */ BookmarksBookmarkEditEvent, scala.Unit]
 
 type BookmarksBookmarkSelectEventHandler = js.Function1[/* event */ BookmarksBookmarkSelectEvent, scala.Unit]
@@ -609,8 +607,6 @@ type GraphSearchStreamingConstructor = Instantiable1[/* properties */ js.UndefOr
 type GraphicsLayerConstructor = Instantiable1[/* properties */ js.UndefOr[GraphicsLayerProperties], GraphicsLayer]
 
 type GraphicsLayerViewConstructor = Instantiable1[/* properties */ js.UndefOr[GraphicsLayerViewProperties], GraphicsLayerView]
-
-type GraphicsLayerViewProperties = LayerViewProperties
 
 type GroundViewConstructor = Instantiable1[/* properties */ js.UndefOr[GroundViewProperties], GroundView]
 
@@ -1083,6 +1079,8 @@ type SceneViewConstructor = Instantiable1[/* properties */ js.UndefOr[SceneViewP
 
 type SearchConstructor = Instantiable1[/* properties */ js.UndefOr[SearchProperties], Search]
 
+type SearchIndexConstructor = Instantiable1[/* properties */ js.UndefOr[SearchIndexProperties], SearchIndex]
+
 type SearchLayerConstructor = Instantiable1[/* properties */ js.UndefOr[SearchLayerProperties], SearchLayer]
 
 type SearchLayerFieldConstructor = Instantiable1[/* properties */ js.UndefOr[SearchLayerFieldProperties], SearchLayerField]
@@ -1255,6 +1253,8 @@ type StreamLayerViewConstructor = Instantiable1[/* properties */ js.UndefOr[Stre
 
 type StreamLayerViewDataReceivedEventHandler = js.Function1[/* event */ StreamLayerViewDataReceivedEvent, scala.Unit]
 
+type StreamLayerViewMessageReceivedEventHandler = js.Function1[/* event */ StreamLayerViewMessageReceivedEvent, scala.Unit]
+
 type StreamLayerViewUpdateRateEventHandler = js.Function1[/* event */ StreamLayerViewUpdateRateEvent, scala.Unit]
 
 type StyleOriginConstructor = Instantiable1[/* properties */ js.UndefOr[StyleOriginProperties], StyleOrigin]
@@ -1369,6 +1369,14 @@ type UpdateWorkflowConstructor = Instantiable1[/* properties */ js.UndefOr[Updat
 type UpdateWorkflowDataConstructor = Instantiable1[/* properties */ js.UndefOr[UpdateWorkflowDataProperties], UpdateWorkflowData]
 
 type UpdateWorkflowProperties = WorkflowProperties
+
+type UtilityNetworkAssociationsConstructor = Instantiable1[
+/* properties */ js.UndefOr[UtilityNetworkAssociationsProperties], 
+UtilityNetworkAssociations]
+
+type UtilityNetworkAssociationsViewModelConstructor = Instantiable1[
+/* properties */ js.UndefOr[UtilityNetworkAssociationsViewModelProperties], 
+UtilityNetworkAssociationsViewModel]
 
 type UtilityNetworkTraceAddFlagCompleteEventHandler = js.Function1[/* event */ UtilityNetworkTraceAddFlagCompleteEvent, scala.Unit]
 

@@ -374,9 +374,12 @@ object pendo {
     
     var account: js.UndefOr[IdentityMetadata] = js.undefined
     
+    /** ensure that the same anonymous visitor.id is used on all subdomains  */
+    var cookieDomain: js.UndefOr[IdentityCookieDomain] = js.undefined
+    
     var parentAccount: js.UndefOr[IdentityMetadata] = js.undefined
     
-    /** visitor.id is required if user is logged in, otherwise an anonymous ID is generated and tracked by a cookie */
+    /** visitor.id is required if user is logged in, otherwise an anonymous ID is generated and tracked by a cookie (if enabled for a domain) */
     var visitor: js.UndefOr[IdentityMetadata] = js.undefined
   }
   object Identity {
@@ -393,6 +396,10 @@ object pendo {
       
       inline def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
       
+      inline def setCookieDomain(value: IdentityCookieDomain): Self = StObject.set(x, "cookieDomain", value.asInstanceOf[js.Any])
+      
+      inline def setCookieDomainUndefined: Self = StObject.set(x, "cookieDomain", js.undefined)
+      
       inline def setParentAccount(value: IdentityMetadata): Self = StObject.set(x, "parentAccount", value.asInstanceOf[js.Any])
       
       inline def setParentAccountUndefined: Self = StObject.set(x, "parentAccount", js.undefined)
@@ -402,6 +409,9 @@ object pendo {
       inline def setVisitorUndefined: Self = StObject.set(x, "visitor", js.undefined)
     }
   }
+  
+  /** cookie domains should start with a dot, e.g. ".example.com" */
+  type IdentityCookieDomain = /* template literal string: .${string} */ String
   
   trait IdentityMetadata
     extends StObject
@@ -440,6 +450,8 @@ object pendo {
     var excludeTitle: js.UndefOr[Boolean] = js.undefined
     
     var guides: js.UndefOr[Delay] = js.undefined
+    
+    var sanitizeUrl: js.UndefOr[js.Function1[/* url */ String, String]] = js.undefined
   }
   object InitOptions {
     
@@ -474,10 +486,14 @@ object pendo {
       inline def setGuides(value: Delay): Self = StObject.set(x, "guides", value.asInstanceOf[js.Any])
       
       inline def setGuidesUndefined: Self = StObject.set(x, "guides", js.undefined)
+      
+      inline def setSanitizeUrl(value: /* url */ String => String): Self = StObject.set(x, "sanitizeUrl", js.Any.fromFunction1(value))
+      
+      inline def setSanitizeUrlUndefined: Self = StObject.set(x, "sanitizeUrl", js.undefined)
     }
   }
   
-  type Metadata = StringDictionary[String | Double | Boolean | js.Array[String]]
+  type Metadata = StringDictionary[String | Double | Boolean | js.Array[String] | Null]
   
   @js.native
   trait Pendo extends StObject {
@@ -528,7 +544,6 @@ object pendo {
     
     def isReady(): Boolean = js.native
     
-    // Troubleshooting
     def loadGuides(): Unit = js.native
     
     // Guide Events
@@ -544,6 +559,9 @@ object pendo {
     def onGuidePrevious(step: GuideStep): Unit = js.native
     
     def removeLauncher(): Unit = js.native
+    
+    // Troubleshooting
+    def setGuidesDisabled(state: Boolean): Unit = js.native
     
     def showGuideById(id: String): Unit = js.native
     

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "html-tag-names" : "2.0.1"
+      "html-tag-names" : "2.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "html-tag-names" : "2.0.1"
+      "html-tag-names" : "2.1.0"
     }
   ],
   "compile-devDependencies" : [

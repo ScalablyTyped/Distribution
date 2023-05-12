@@ -1,39 +1,36 @@
 package typings.awsSdkClientCognitoIdentity.distTypesModelsModels0Mod
 
+import typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.Contains
+import typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.Equals
+import typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.NotEqual
+import typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.StartsWith
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait MappingRuleMatchType extends StObject
-@JSImport("@aws-sdk/client-cognito-identity/dist-types/models/models_0", "MappingRuleMatchType")
-@js.native
-object MappingRuleMatchType extends StObject {
+/* Inlined { readonly CONTAINS :'Contains',  readonly EQUALS :'Equals',  readonly NOT_EQUAL :'NotEqual',  readonly STARTS_WITH :'StartsWith'}[keyof { readonly CONTAINS :'Contains',  readonly EQUALS :'Equals',  readonly NOT_EQUAL :'NotEqual',  readonly STARTS_WITH :'StartsWith'}] */
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.Contains
+  - typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.Equals
+  - typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.NotEqual
+  - typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.StartsWith
+*/
+trait MappingRuleMatchType extends StObject
+object MappingRuleMatchType {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[MappingRuleMatchType & String] = js.native
-  
+  @JSImport("@aws-sdk/client-cognito-identity/dist-types/models/models_0", "MappingRuleMatchType.CONTAINS")
   @js.native
-  sealed trait CONTAINS
-    extends StObject
-       with MappingRuleMatchType
-  /* "Contains" */ val CONTAINS: typings.awsSdkClientCognitoIdentity.distTypesModelsModels0Mod.MappingRuleMatchType.CONTAINS & String = js.native
+  val CONTAINS: Contains = js.native
   
+  @JSImport("@aws-sdk/client-cognito-identity/dist-types/models/models_0", "MappingRuleMatchType.EQUALS")
   @js.native
-  sealed trait EQUALS
-    extends StObject
-       with MappingRuleMatchType
-  /* "Equals" */ val EQUALS: typings.awsSdkClientCognitoIdentity.distTypesModelsModels0Mod.MappingRuleMatchType.EQUALS & String = js.native
+  val EQUALS: Equals = js.native
   
+  @JSImport("@aws-sdk/client-cognito-identity/dist-types/models/models_0", "MappingRuleMatchType.NOT_EQUAL")
   @js.native
-  sealed trait NOT_EQUAL
-    extends StObject
-       with MappingRuleMatchType
-  /* "NotEqual" */ val NOT_EQUAL: typings.awsSdkClientCognitoIdentity.distTypesModelsModels0Mod.MappingRuleMatchType.NOT_EQUAL & String = js.native
+  val NOT_EQUAL: NotEqual = js.native
   
+  @JSImport("@aws-sdk/client-cognito-identity/dist-types/models/models_0", "MappingRuleMatchType.STARTS_WITH")
   @js.native
-  sealed trait STARTS_WITH
-    extends StObject
-       with MappingRuleMatchType
-  /* "StartsWith" */ val STARTS_WITH: typings.awsSdkClientCognitoIdentity.distTypesModelsModels0Mod.MappingRuleMatchType.STARTS_WITH & String = js.native
+  val STARTS_WITH: StartsWith = js.native
 }

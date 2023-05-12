@@ -6,6 +6,7 @@ import typings.node.nodeColonstreamMod.Readable
 import typings.node.v8Mod.HeapCodeStatistics
 import typings.node.v8Mod.HeapInfo
 import typings.node.v8Mod.HeapSpaceInfo
+import typings.node.v8Mod.PromiseHooks_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,6 +49,15 @@ object nodeColonv8Mod {
   }
   
   /**
+    * This API collects GC data in current thread.
+    * @since v19.6.0, v18.15.0
+    */
+  @JSImport("node:v8", "GCProfiler")
+  @js.native
+  open class GCProfiler ()
+    extends typings.node.v8Mod.GCProfiler
+  
+  /**
     * @since v8.0.0
     */
   @JSImport("node:v8", "Serializer")
@@ -82,13 +92,16 @@ object nodeColonv8Mod {
   inline def deserialize(buffer: TypedArray): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(buffer.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /**
-    * Returns an object with the following properties:
+    * Get statistics about code and its metadata in the heap, see
+    * V8[`GetHeapCodeAndMetadataStatistics`](https://v8docs.nodesource.com/node-13.2/d5/dda/classv8_1_1_isolate.html#a6079122af17612ef54ef3348ce170866) API. Returns an object with the
+    * following properties:
     *
     * ```js
     * {
     *   code_and_metadata_size: 212208,
     *   bytecode_and_metadata_size: 161368,
-    *   external_script_source_size: 1410794
+    *   external_script_source_size: 1410794,
+    *   cpu_profiler_metadata_size: 0,
     * }
     * ```
     * @since v12.8.0
@@ -111,12 +124,12 @@ object nodeColonv8Mod {
     *
     * ```js
     * // Print heap snapshot to the console
-    * const v8 = require('v8');
+    * const v8 = require('node:v8');
     * const stream = v8.getHeapSnapshot();
     * stream.pipe(process.stdout);
     * ```
     * @since v11.13.0
-    * @return A Readable Stream containing the V8 heap snapshot
+    * @return A Readable containing the V8 heap snapshot.
     */
   inline def getHeapSnapshot(): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("getHeapSnapshot")().asInstanceOf[Readable]
   
@@ -188,6 +201,15 @@ object nodeColonv8Mod {
     * of contexts that were detached and not yet garbage collected. This number
     * being non-zero indicates a potential memory leak.
     *
+    * `total_global_handles_size` The value of total\_global\_handles\_size is the
+    * total memory size of V8 global handles.
+    *
+    * `used_global_handles_size` The value of used\_global\_handles\_size is the
+    * used memory size of V8 global handles.
+    *
+    * `external_memory` The value of external\_memory is the memory size of array
+    * buffers and external strings.
+    *
     * ```js
     * {
     *   total_heap_size: 7326976,
@@ -200,12 +222,23 @@ object nodeColonv8Mod {
     *   peak_malloced_memory: 1127496,
     *   does_zap_garbage: 0,
     *   number_of_native_contexts: 1,
-    *   number_of_detached_contexts: 0
+    *   number_of_detached_contexts: 0,
+    *   total_global_handles_size: 8192,
+    *   used_global_handles_size: 3296,
+    *   external_memory: 318824
     * }
     * ```
     * @since v1.0.0
     */
   inline def getHeapStatistics(): HeapInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getHeapStatistics")().asInstanceOf[HeapInfo]
+  
+  /**
+    * The `promiseHooks` interface can be used to track promise lifecycle events.
+    * @since v17.1.0, v16.14.0
+    */
+  @JSImport("node:v8", "promiseHooks")
+  @js.native
+  val promiseHooks: PromiseHooks_ = js.native
   
   /**
     * Uses a `DefaultSerializer` to serialize `value` into a buffer.
@@ -229,7 +262,7 @@ object nodeColonv8Mod {
     *
     * ```js
     * // Print GC events to stdout for one minute.
-    * const v8 = require('v8');
+    * const v8 = require('node:v8');
     * v8.setFlagsFromString('--trace_gc');
     * setTimeout(() => { v8.setFlagsFromString('--notrace_gc'); }, 60e3);
     * ```
@@ -274,12 +307,12 @@ object nodeColonv8Mod {
     * for a duration depending on the heap size.
     *
     * ```js
-    * const { writeHeapSnapshot } = require('v8');
+    * const { writeHeapSnapshot } = require('node:v8');
     * const {
     *   Worker,
     *   isMainThread,
-    *   parentPort
-    * } = require('worker_threads');
+    *   parentPort,
+    * } = require('node:worker_threads');
     *
     * if (isMainThread) {
     *   const worker = new Worker(__filename);

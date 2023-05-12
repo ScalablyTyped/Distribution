@@ -1,6 +1,7 @@
 package typings.floatingUiCore
 
 import typings.floatingUiCore.anon.PartialOptionsPadding
+import typings.floatingUiCore.srcTypesMod.ClientRectObject
 import typings.floatingUiCore.srcTypesMod.Middleware
 import typings.floatingUiCore.srcTypesMod.Padding
 import org.scalablytyped.runtime.StObject
@@ -13,13 +14,15 @@ object srcMiddlewareInlineMod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def getRectsByLine(rects: js.Array[ClientRectObject]): js.Array[ClientRectObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRectsByLine")(rects.asInstanceOf[js.Any]).asInstanceOf[js.Array[ClientRectObject]]
+  
   inline def `inline`(): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("inline")().asInstanceOf[Middleware]
   inline def `inline`(options: PartialOptionsPadding): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("inline")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware]
   
   trait Options extends StObject {
     
     /**
-      * @experimental
+      * Represents the padding around a disjoined rect when choosing it.
       * @default 2
       */
     var padding: Padding

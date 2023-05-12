@@ -48,8 +48,24 @@ object canvasjsStrings {
   inline def longDashDotDot: longDashDotDot = "longDashDotDot".asInstanceOf[longDashDotDot]
   
   @js.native
+  sealed trait pan extends StObject
+  inline def pan: pan = "pan".asInstanceOf[pan]
+  
+  @js.native
   sealed trait png extends StObject
   inline def png: png = "png".asInstanceOf[png]
+  
+  @js.native
+  sealed trait rangeChanged extends StObject
+  inline def rangeChanged: rangeChanged = "rangeChanged".asInstanceOf[rangeChanged]
+  
+  @js.native
+  sealed trait rangeChanging extends StObject
+  inline def rangeChanging: rangeChanging = "rangeChanging".asInstanceOf[rangeChanging]
+  
+  @js.native
+  sealed trait reset extends StObject
+  inline def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
   sealed trait shortDash
@@ -80,4 +96,20 @@ object canvasjsStrings {
     extends StObject
        with DashType
   inline def solid: solid = "solid".asInstanceOf[solid]
+  
+  @js.native
+  sealed trait x extends StObject
+  inline def x: x = "x".asInstanceOf[x]
+  
+  @js.native
+  sealed trait xy extends StObject
+  inline def xy: xy = "xy".asInstanceOf[xy]
+  
+  @js.native
+  sealed trait y extends StObject
+  inline def y: y = "y".asInstanceOf[y]
+  
+  @js.native
+  sealed trait zoom extends StObject
+  inline def zoom: zoom = "zoom".asInstanceOf[zoom]
 }

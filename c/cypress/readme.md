@@ -1,7 +1,7 @@
 
 # Scala.js typings for cypress
 
-Typings are for version 11.1.0
+Typings are for version 12.12.0
 
 ## Library description:
 Cypress is a next generation front end testing tool built for the modern web

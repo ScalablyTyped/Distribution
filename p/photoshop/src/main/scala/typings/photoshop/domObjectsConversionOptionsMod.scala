@@ -1,138 +1,103 @@
 package typings.photoshop
 
-import typings.photoshop.domConstantsMod.BMPDepthType
 import typings.photoshop.domConstantsMod.BitmapConversionType
 import typings.photoshop.domConstantsMod.BitmapHalfToneType
 import typings.photoshop.domConstantsMod.Dither
 import typings.photoshop.domConstantsMod.ForcedColors
-import typings.photoshop.domConstantsMod.JPEGFormatOptions
 import typings.photoshop.domConstantsMod.MatteColor
-import typings.photoshop.domConstantsMod.OperatingSystem
-import typings.photoshop.domConstantsMod.PNGMethod
 import typings.photoshop.domConstantsMod.Palette
-import typings.photoshop.domObjectsSolidColorMod.SolidColor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object domObjectsConversionOptionsMod {
   
-  @JSImport("photoshop/dom/objects/ConversionOptions", "BMPSaveOptions")
-  @js.native
-  /** @ignore */
-  open class BMPSaveOptions () extends StObject {
-    
-    /** True to save the alpha channels */
-    var alphaChannels: Boolean = js.native
-    
-    /** The number of bits per channel */
-    var depth: BMPDepthType = js.native
-    
-    /**
-      * True to write the image from top to bottom,
-      * available only when osType is OperatingSystem.WINDOWS
-      */
-    var flipRowOrder: Boolean = js.native
-    
-    /** The target OS. */
-    var osType: OperatingSystem = js.native
-    
-    /**
-      * True to use RLE compression
-      */
-    var rleCompression: Boolean = js.native
-    
-    /**
-      * The class name of the referenced object
-      * @default "BMPSaveOptions"
-      */
-    val typename: String = js.native
-  }
-  
   @JSImport("photoshop/dom/objects/ConversionOptions", "BitmapConversionOptions")
   @js.native
   /** @ignore */
   open class BitmapConversionOptions () extends StObject {
     
+    /* private */ var _angle: Any = js.native
+    
+    /* private */ var _frequency: Any = js.native
+    
+    /* private */ var _method: Any = js.native
+    
+    /* private */ var _patternName: Any = js.native
+    
+    /* private */ var _resolution: Any = js.native
+    
+    /* private */ var _shape: Any = js.native
+    
     /**
-      * The angle (in degrees) at which to orient individual dots. See [[shape]]
+      * The angle (in degrees) at which to orient individual dots. See shape property below.
+      * Valid only when the method property is set to `BitmapConversionType.HALFTONESCREEN`.
       *
-      * Valid only when [[method]] is `BitmapConversionType.HALFTONESCREEN`.
-      *
+      * @default -
       * @range -180...180
+      * @minVersion 23.0
       */
-    var angle: Double = js.native
-    
-    var frequency: Double = js.native
-    
-    var method: BitmapConversionType = js.native
-    
-    var patternName: String = js.native
-    
-    var resolution: Double = js.native
-    
-    var shape: BitmapHalfToneType = js.native
-    
-    val typename: String = js.native
-  }
-  
-  @JSImport("photoshop/dom/objects/ConversionOptions", "GIFSaveOptions")
-  @js.native
-  /** @ignore */
-  open class GIFSaveOptions () extends StObject {
+    def angle: Double = js.native
+    def angle_=(value: Double): Unit = js.native
     
     /**
-      * The number of palette colors. Valid only when palette is:
+      * The number of dots (per inch) to use.
+      * Valid only when the method property is set to `BitmapConversionType.HALFTONESCREEN`.
       *
-      * Palette.LOCALADAPTIVE, LOCALPERCEPTUAL, LOCALSELECTIVE, MACOSPALETTE, UNIFORM, WEBPALETTE; or WINDOWSPALETTE
+      * @default -
+      * @range 1.0..999.99
+      * @minVersion 23.0
       */
-    var colors: Double = js.native
-    
-    /** The dither type. */
-    var dither: Dither = js.native
+    def frequency: Double = js.native
+    def frequency_=(value: Double): Unit = js.native
     
     /**
-      * The amount of dither.
+      * The conversion method.
       *
-      * Valid only when dither = Dither.DIFFUSION.
+      * @default DIFFUSIONDITHER
+      * @range -
+      * @minVersion 23.0
       */
-    var ditherAmount: Double = js.native
-    
-    /** The type of colors to force into the color palette. */
-    var forced: ForcedColors = js.native
-    
-    /** True if rows should be interlaced/ */
-    var interlaced: Boolean = js.native
+    def method: BitmapConversionType = js.native
+    def method_=(value: BitmapConversionType): Unit = js.native
     
     /**
-      * The color to use to fill anti-aliased edges adjacent to transparent  areas of the image.
+      * The name of the pattern to use.
+      * Valid only when the method property is set to BitmapConversionType.CUSTOMPATTERN.
       *
-      * When transparency is turned off for an image, the matte color is applied to transparent areas.
+      * @default
+      * @range -
+      * @minVersion 23.0
       */
-    var matte: MatteColor = js.native
+    def patternName: String = js.native
+    def patternName_=(value: String): Unit = js.native
     
     /**
-      * The type of palette to use.
-      */
-    var palette: Palette = js.native
-    
-    /**
-      * True to protect colors in the image that contain entries in the color table from being dithered.
+      * The output resolution (in pixels per inch).
       *
-      * Valid only when dither = DITHER.DIFFUSION
+      * @default 72
+      * @range -
+      * @minVersion 23.0
       */
-    var preserveExactColors: Boolean = js.native
+    def resolution: Double = js.native
+    def resolution_=(value: Double): Unit = js.native
     
     /**
-      * True to preserve transparent areas of the image during conversion to GIF format.
+      * The dot shape.
+      * Valid only when the method property is set to BitmapConversionType.HALFTONESCREEN.
+      *
+      * @default -
+      * @range -
+      * @minVersion 23.0
       */
-    var transparency: Boolean = js.native
+    def shape: BitmapHalfToneType = js.native
+    def shape_=(value: BitmapHalfToneType): Unit = js.native
     
     /**
-      * The class name of the referenced object
-      * @default "GIFSaveOptions"
+      * The class name of the referenced object: *"BitmapConversionOptions"*.
+      * @minVersion 23.0
       */
-    val typename: String = js.native
+    def typename: typings.photoshop.photoshopStrings.BitmapConversionOptions = js.native
   }
   
   @JSImport("photoshop/dom/objects/ConversionOptions", "IndexedConversionOptions")
@@ -140,142 +105,99 @@ object domObjectsConversionOptionsMod {
   /** @ignore */
   open class IndexedConversionOptions () extends StObject {
     
-    var colors: Double = js.native
+    /* private */ var _colors: Any = js.native
     
-    var dither: Dither = js.native
+    /* private */ var _dither: Any = js.native
     
-    var ditherAmount: Double = js.native
+    /* private */ var _ditherAmount: Any = js.native
     
-    var forced: ForcedColors = js.native
+    /* private */ var _forced: Any = js.native
     
-    var matte: MatteColor = js.native
+    /* private */ var _matte: Any = js.native
     
-    var palette: Palette = js.native
+    /* private */ var _palette: Any = js.native
     
-    var preserveExactColors: Boolean = js.native
+    /* private */ var _preserveExactColors: Any = js.native
     
-    var transparency: Boolean = js.native
-    
-    val typename: String = js.native
-  }
-  
-  @JSImport("photoshop/dom/objects/ConversionOptions", "JPEGSaveOptions")
-  @js.native
-  /** @ignore */
-  open class JPEGSaveOptions () extends StObject {
+    /* private */ var _transparency: Any = js.native
     
     /**
-      * A custom color to use to fill anti-aliased edges adjacent to transparent areas of the image.
-      * Mutually exclusive with 'matteColor'.
+      * The number of palette colors.
+      *
+      * Valid only with palette types: LOCALADAPTIVE, LOCALPERCEPTUAL,
+      * LOCALSELECTIVE, MACOSPALETTE, UNIFORM, WEBPALETTE, or WINDOWSPALETTE.
+      *
+      * @minVersion 23.0
       */
-    var color: SolidColor = js.native
+    def colors: Double = js.native
+    def colors_=(value: Double): Unit = js.native
     
     /**
-      * Custom matting color; overrides matteColor
+      * The type of dithering to be done.
+      *
+      * @minVersion 23.0
       */
-    var customMatte: SolidColor = js.native
+    def dither: Dither = js.native
     
     /**
-      * False to skip embedding the color profile in the document
+      * The amount of dithering to be done.
+      *
+      * Valid only when dither typ is DIFFUSION.
+      * @minVersion 23.0
       */
-    var embedColorProfile: Boolean = js.native
+    def ditherAmount: Double = js.native
+    def ditherAmount_=(value: Double): Unit = js.native
+    
+    def dither_=(value: Dither): Unit = js.native
     
     /**
-      * The JPEG format option to use.
-      * @default STANDARDBASELINE
+      * The set of colors to force into the color palette.
+      *
+      * @minVersion 23.0
       */
-    var formatOptions: JPEGFormatOptions = js.native
+    def forced: ForcedColors = js.native
+    def forced_=(value: ForcedColors): Unit = js.native
     
     /**
       * The color to use to fill anti-aliased edges adjacent to transparent areas of the image.
-      * Mutually exclusive with 'color'.
-      */
-    var matteColor: MatteColor = js.native
-    
-    /**
-      * The image quality setting to use; affects file size and compression.
       *
-      * @default 8
-      * @range 0...12
-      */
-    var quality: Double = js.native
-    
-    /**
-      * The number of scans to incrementally display the image on the page.
-      * formatOptions must be JPEGFormatOptions.PROGRESSIVE.
-      * @default 3
-      * @range 3...5
-      */
-    var scans: Double = js.native
-    
-    /**
-      * The class name of the referenced object
-      * @default "JPEGSaveOptions"
-      */
-    val typename: String = js.native
-  }
-  
-  @JSImport("photoshop/dom/objects/ConversionOptions", "PNGSaveOptions")
-  @js.native
-  /** @ignore */
-  open class PNGSaveOptions () extends StObject {
-    
-    /**
-      * The compression value to be used when method = PNGMethod.QUICK
+      * When transparency is false, the matte color is applied to transparent areas.
       *
-      * @range 0...9
-      * @default 6
+      * @default WHITE
+      * @minVersion 23.0
       */
-    var compression: Double = js.native
+    def matte: MatteColor = js.native
+    def matte_=(value: MatteColor): Unit = js.native
     
     /**
-      * True to interlace rows when method = PNGMethod.QUICK
+      * The palette type.
       *
-      * @default false
+      * @minVersion 23.0
       */
-    var interlaced: Boolean = js.native
+    def palette: Palette = js.native
+    def palette_=(value: Palette): Unit = js.native
     
     /**
-      * PNG File Size optimization method.
+      * When true, the image colors matching entries in the color table will not be dithered.
+      *
+      * @minVersion 23.0
       */
-    var method: PNGMethod = js.native
+    def preserveExactColors: Boolean = js.native
+    def preserveExactColors_=(value: Boolean): Unit = js.native
     
     /**
-      * The class name of the referenced object
-      * @default "PNGSaveOptions"
+      * When true, transparent areas of the image are preserved during conversion to GIF format.
+      *
+      * @minVersion 23.0
       */
-    val typename: String = js.native
-  }
-  
-  @JSImport("photoshop/dom/objects/ConversionOptions", "PhotoshopSaveOptions")
-  @js.native
-  /** @ignore */
-  open class PhotoshopSaveOptions () extends StObject {
-    
-    /** True to save the alpha channels */
-    var alphaChannels: Boolean = js.native
-    
-    /** True to save the annotations */
-    var annotations: Boolean = js.native
-    
-    /** True to embed the color profiles in the document */
-    var embedColorProfile: Boolean = js.native
-    
-    /** True to preserve the layers */
-    var layers: Boolean = js.native
+    def transparency: Boolean = js.native
+    def transparency_=(value: Boolean): Unit = js.native
     
     /**
-      * Maximize Compatibility with older versions
+      * The class name of the referenced object: *"IndexedConversionOptions"*.
+      *
+      * @minVersion 23.0
       */
-    var maximizeCompatibility: Boolean = js.native
-    
-    /** True to save the spot colors */
-    var spotColor: Boolean = js.native
-    
-    /**
-      * The class name of the referenced object
-      * @default "PhotoshopSaveOptions"
-      */
-    val typename: String = js.native
+    def typename: typings.photoshop.photoshopStrings.IndexedConversionOptions = js.native
   }
 }

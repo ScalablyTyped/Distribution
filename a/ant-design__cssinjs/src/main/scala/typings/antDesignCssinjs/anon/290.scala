@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.FontStyle
+import typings.csstype.mod.Property.ColumnGap
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `290` extends StObject {
   
   var value: js.UndefOr[
-    FontStyle | (js.Array[
-      (Extract[js.UndefOr[FontStyle | js.Array[NonNullable[js.UndefOr[FontStyle]]]], String]) | NonNullable[js.UndefOr[FontStyle]]
+    (ColumnGap[Double | String]) | (js.Array[
+      (Extract[
+        js.UndefOr[
+          (ColumnGap[Double | String]) | (js.Array[NonNullable[js.UndefOr[ColumnGap[Double | String]]]])
+        ], 
+        String
+      ]) | (NonNullable[js.UndefOr[ColumnGap[Double | String]]])
     ])
   ] = js.native
 }

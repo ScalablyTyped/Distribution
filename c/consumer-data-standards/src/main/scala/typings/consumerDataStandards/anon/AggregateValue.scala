@@ -27,7 +27,7 @@ trait AggregateValue
   /**
     *  Specifies quality of reads that are not ACTUAL.  For read indices that are not specified, quality is assumed to be ACTUAL. If not present, all quality of all reads are assumed to be actual. Required when interval-reads query parameter equals FULL or MIN_30
     */
-  var readQualities: js.UndefOr[EndInterval | Null] = js.undefined
+  var readQualities: js.UndefOr[js.Array[EndInterval] | Null] = js.undefined
 }
 object AggregateValue {
   
@@ -55,10 +55,12 @@ object AggregateValue {
     
     inline def setReadIntervalLengthUndefined: Self = StObject.set(x, "readIntervalLength", js.undefined)
     
-    inline def setReadQualities(value: EndInterval): Self = StObject.set(x, "readQualities", value.asInstanceOf[js.Any])
+    inline def setReadQualities(value: js.Array[EndInterval]): Self = StObject.set(x, "readQualities", value.asInstanceOf[js.Any])
     
     inline def setReadQualitiesNull: Self = StObject.set(x, "readQualities", null)
     
     inline def setReadQualitiesUndefined: Self = StObject.set(x, "readQualities", js.undefined)
+    
+    inline def setReadQualitiesVarargs(value: EndInterval*): Self = StObject.set(x, "readQualities", js.Array(value*))
   }
 }

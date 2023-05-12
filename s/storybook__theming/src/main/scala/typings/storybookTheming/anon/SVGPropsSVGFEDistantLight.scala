@@ -40,7 +40,7 @@ import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
 import typings.std.SVGFEDistantLightElement
-import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModules@emotionSerializeTypesIndexMod`.Interpolation
+import typings.storybookTheming.distCreateC2b2ce6dMod.Interpolation
 import typings.storybookTheming.storybookThemingStrings._empty
 import typings.storybookTheming.storybookThemingStrings.`additions removals`
 import typings.storybookTheming.storybookThemingStrings.`additions text`
@@ -118,7 +118,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react.react.SVGProps<std.SVGFEDistantLightElement> & {  css :@storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-react-node_modules-@emotion-serialize-types-index.Interpolation<@storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-react-types-index.Theme> | undefined} */
+/* Inlined react.react.SVGProps<std.SVGFEDistantLightElement> & {  css :@storybook/theming.@storybook/theming/dist/create-c2b2ce6d.I<@storybook/theming.@storybook/theming.Theme> | undefined} */
 trait SVGPropsSVGFEDistantLight extends StObject {
   
   // SVG Specific attributes
@@ -432,9 +432,7 @@ trait SVGPropsSVGFEDistantLight extends StObject {
   
   var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
   
-  var css: js.UndefOr[
-    Interpolation[typings.storybookTheming.`distTs3Dot9Modules@emotionReactTypesIndexMod`.Theme]
-  ] = js.undefined
+  var css: js.UndefOr[Interpolation[typings.storybookTheming.mod.Theme]] = js.undefined
   
   var cursor: js.UndefOr[Double | String] = js.undefined
   
@@ -859,6 +857,11 @@ trait SVGPropsSVGFEDistantLight extends StObject {
   
   var radius: js.UndefOr[Double | String] = js.undefined
   
+  /**
+    * Allows getting a ref to the component instance.
+    * Once the component unmounts, React will set `ref.current` to `null` (or call the ref with `null` if you passed a callback ref).
+    * @see https://react.dev/learn/referencing-values-with-refs#refs-and-the-dom
+    */
   var ref: js.UndefOr[LegacyRef[SVGFEDistantLightElement]] = js.undefined
   
   var refX: js.UndefOr[Double | String] = js.undefined
@@ -1418,9 +1421,7 @@ object SVGPropsSVGFEDistantLight {
     
     inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
-    inline def setCss(
-      value: Interpolation[typings.storybookTheming.`distTs3Dot9Modules@emotionReactTypesIndexMod`.Theme]
-    ): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: Interpolation[typings.storybookTheming.mod.Theme]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssNull: Self = StObject.set(x, "css", null)
     

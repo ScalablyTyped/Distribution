@@ -55,7 +55,7 @@ trait FeatureFormViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FeatureFormViewModel.html#layer)
     */
-  var layer: FeatureLayer | SceneLayer = js.native
+  var layer: FeatureLayer | SceneLayer | SubtypeSublayer = js.native
   
   /**
     * Updates the geometry on _featureClone and triggers re-evaluation of expressions that depend on the feature's geometry
@@ -108,6 +108,11 @@ trait FeatureFormViewModel
     */
   var valid: Boolean = js.native
   
+  /**
+    * Validates whether a feature's attribute values conform to the defined contingent values.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FeatureFormViewModel.html#validateContingencyConstraints)
+    */
   def validateContingencyConstraints(values: String): js.Array[Any] = js.native
   def validateContingencyConstraints(values: String, options: FeatureFormViewModelValidateContingencyConstraintsOptions): js.Array[Any] = js.native
 }

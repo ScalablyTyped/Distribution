@@ -22,6 +22,13 @@ open class ConditionallyVisibleWidget protected () extends Widget {
     container: AbstractElement[IAbstractModel, Container]
   ) = this()
   
+  /**
+    * In version 9.24.0: deleted
+    * In version 9.22.0: introduced
+    */
+  def accessibilitySettings: AccessibilitySettings | Null = js.native
+  def accessibilitySettings_=(newValue: AccessibilitySettings | Null): Unit = js.native
+  
   def conditionalVisibilitySettings: ConditionalVisibilitySettings | Null = js.native
   def conditionalVisibilitySettings_=(newValue: ConditionalVisibilitySettings | Null): Unit = js.native
 }

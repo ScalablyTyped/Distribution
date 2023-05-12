@@ -1,7 +1,7 @@
 package typings.fpTs.libPipeableMod
 
 import typings.fpTs.libEitherMod.Either_
-import typings.fpTs.libFunctionMod.Lazy
+import typings.fpTs.libFunctionMod.LazyArg
 import typings.fpTs.libOptionMod.Option_
 import typings.fpTs.libPredicateMod.Predicate
 import typings.fpTs.libRefinementMod.Refinement
@@ -24,7 +24,7 @@ trait PipeableMonadThrow[F] extends StObject {
   
   def fromEither[E, A](ma: Either_[E, A]): Any = js.native
   
-  def fromOption[E](onNone: Lazy[E]): js.Function1[
+  def fromOption[E](onNone: LazyArg[E]): js.Function1[
     /* ma */ Option_[Any], 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any
   ] = js.native

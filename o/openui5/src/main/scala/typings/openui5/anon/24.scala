@@ -1,6 +1,5 @@
 package typings.openui5.anon
 
-import typings.openui5.sapMUploadUploadSetItemMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `24` extends StObject {
   
   /**
-    * The file whose upload has just been terminated.
+    * Two-dimensional mutable array of selection data to be copied to the clipboard. The first dimension represents
+    * the selected rows, and the second dimension represents the cells of the selected rows.
     */
-  var item: js.UndefOr[default] = js.undefined
+  var data: js.UndefOr[js.Array[js.Array[Any]]] = js.undefined
 }
 object `24` {
   
@@ -22,8 +22,10 @@ object `24` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `24`] (val x: Self) extends AnyVal {
     
-    inline def setItem(value: default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setDataVarargs(value: js.Array[Any]*): Self = StObject.set(x, "data", js.Array(value*))
   }
 }

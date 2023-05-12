@@ -8,20 +8,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Sunken extends StObject {
   
-  var `[default]`: DefaultHovered
+  var `[default]`: HoveredPressed
   
-  var overlay: DefaultHovered
+  var overlay: HoveredPressed
   
-  var raised: DefaultHovered
+  var raised: HoveredPressed
   
   var sunken: PaintToken[BaseToken]
 }
 object Sunken {
   
   inline def apply(
-    `[default]`: DefaultHovered,
-    overlay: DefaultHovered,
-    raised: DefaultHovered,
+    `[default]`: HoveredPressed,
+    overlay: HoveredPressed,
+    raised: HoveredPressed,
     sunken: PaintToken[BaseToken]
   ): Sunken = {
     val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any], raised = raised.asInstanceOf[js.Any], sunken = sunken.asInstanceOf[js.Any])
@@ -32,12 +32,12 @@ object Sunken {
   @scala.inline
   implicit open class MutableBuilder[Self <: Sunken] (val x: Self) extends AnyVal {
     
-    inline def setOverlay(value: DefaultHovered): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+    inline def setOverlay(value: HoveredPressed): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     
-    inline def setRaised(value: DefaultHovered): Self = StObject.set(x, "raised", value.asInstanceOf[js.Any])
+    inline def setRaised(value: HoveredPressed): Self = StObject.set(x, "raised", value.asInstanceOf[js.Any])
     
     inline def setSunken(value: PaintToken[BaseToken]): Self = StObject.set(x, "sunken", value.asInstanceOf[js.Any])
     
-    inline def `set[default]`(value: DefaultHovered): Self = StObject.set(x, "[default]", value.asInstanceOf[js.Any])
+    inline def `set[default]`(value: HoveredPressed): Self = StObject.set(x, "[default]", value.asInstanceOf[js.Any])
   }
 }

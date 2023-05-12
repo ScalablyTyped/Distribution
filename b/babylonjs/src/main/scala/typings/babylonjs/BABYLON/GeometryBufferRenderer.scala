@@ -10,9 +10,13 @@ trait GeometryBufferRenderer extends StObject {
   
   /* private */ var _assignRenderTargetIndices: Any = js.native
   
-  /* private */ var _attachments: Any = js.native
+  /* private */ var _attachmentsFromPrePass: Any = js.native
   
   /* protected */ var _cachedDefines: String = js.native
+  
+  /* private */ var _clearColor: Any = js.native
+  
+  /* private */ var _clearDepthColor: Any = js.native
   
   /* private */ var _copyBonesTransformationMatrices: Any = js.native
   
@@ -205,4 +209,10 @@ trait GeometryBufferRenderer extends StObject {
     * Gets the scene associated with the buffer.
     */
   def scene: Scene = js.native
+  
+  /**
+    * If set to true (default: false), the depth texture will be cleared with the depth value corresponding to the far plane (1 in normal mode, 0 in reverse depth buffer mode)
+    * If set to false, the depth texture is always cleared with 0.
+    */
+  var useSpecificClearForDepthTexture: Boolean = js.native
 }

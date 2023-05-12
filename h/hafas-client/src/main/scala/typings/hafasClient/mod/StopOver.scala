@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A stopover represents a vehicle stopping at a stop/station at a specific time.
-  */
 trait StopOver extends StObject {
   
   /** null, if first stopOver of trip */

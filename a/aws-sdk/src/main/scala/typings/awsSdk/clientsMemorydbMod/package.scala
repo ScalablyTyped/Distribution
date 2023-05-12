@@ -86,6 +86,12 @@ type PasswordListInput = js.Array[String]
 
 type PendingModifiedServiceUpdateList = js.Array[PendingModifiedServiceUpdate]
 
+type RecurringChargeList = js.Array[RecurringCharge]
+
+type ReservedNodeList = js.Array[ReservedNode]
+
+type ReservedNodesOfferingList = js.Array[ReservedNodesOffering]
+
 type SecurityGroupIdsList = js.Array[String]
 
 type SecurityGroupMembershipList = js.Array[SecurityGroupMembership]

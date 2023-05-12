@@ -1,5 +1,6 @@
 package typings.d3Hierarchy
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.d3Hierarchy.d3HierarchyStrings._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -176,7 +177,9 @@ object mod {
   }
   
   @js.native
-  trait HierarchyNode[Datum] extends StObject {
+  trait HierarchyNode[Datum]
+    extends StObject
+       with Instantiable1[/* data */ Datum, HierarchyNode[Datum]] {
     
     /**
       * Returns the array of ancestors nodes, starting with this node, then followed by each parent up to the root.

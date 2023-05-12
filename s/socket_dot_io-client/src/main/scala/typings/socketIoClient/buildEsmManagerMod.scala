@@ -373,6 +373,7 @@ object buildEsmManagerMod {
   object ManagerOptions {
     
     inline def apply(
+      addTrailingSlash: Boolean,
       agent: String | Boolean,
       autoConnect: Boolean,
       autoUnref: Boolean,
@@ -392,7 +393,6 @@ object buildEsmManagerMod {
       path: String,
       perMessageDeflate: Threshold,
       pfx: String,
-      policyPost: Double,
       port: String | Double,
       protocols: String | js.Array[String],
       query: StringDictionary[Any],
@@ -414,7 +414,7 @@ object buildEsmManagerMod {
       useNativeTimers: Boolean,
       withCredentials: Boolean
     ): ManagerOptions = {
-      val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any], autoConnect = autoConnect.asInstanceOf[js.Any], autoUnref = autoUnref.asInstanceOf[js.Any], ca = ca.asInstanceOf[js.Any], cert = cert.asInstanceOf[js.Any], ciphers = ciphers.asInstanceOf[js.Any], closeOnBeforeunload = closeOnBeforeunload.asInstanceOf[js.Any], forceBase64 = forceBase64.asInstanceOf[js.Any], forceNew = forceNew.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], multiplex = multiplex.asInstanceOf[js.Any], onlyBinaryUpgrades = onlyBinaryUpgrades.asInstanceOf[js.Any], parser = parser.asInstanceOf[js.Any], passphrase = passphrase.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], perMessageDeflate = perMessageDeflate.asInstanceOf[js.Any], pfx = pfx.asInstanceOf[js.Any], policyPost = policyPost.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocols = protocols.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], randomizationFactor = randomizationFactor.asInstanceOf[js.Any], reconnection = reconnection.asInstanceOf[js.Any], reconnectionAttempts = reconnectionAttempts.asInstanceOf[js.Any], reconnectionDelay = reconnectionDelay.asInstanceOf[js.Any], reconnectionDelayMax = reconnectionDelayMax.asInstanceOf[js.Any], rejectUnauthorized = rejectUnauthorized.asInstanceOf[js.Any], rememberUpgrade = rememberUpgrade.asInstanceOf[js.Any], requestTimeout = requestTimeout.asInstanceOf[js.Any], secure = secure.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any], timestampParam = timestampParam.asInstanceOf[js.Any], timestampRequests = timestampRequests.asInstanceOf[js.Any], transportOptions = transportOptions.asInstanceOf[js.Any], transports = transports.asInstanceOf[js.Any], upgrade = upgrade.asInstanceOf[js.Any], useNativeTimers = useNativeTimers.asInstanceOf[js.Any], withCredentials = withCredentials.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(addTrailingSlash = addTrailingSlash.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], autoConnect = autoConnect.asInstanceOf[js.Any], autoUnref = autoUnref.asInstanceOf[js.Any], ca = ca.asInstanceOf[js.Any], cert = cert.asInstanceOf[js.Any], ciphers = ciphers.asInstanceOf[js.Any], closeOnBeforeunload = closeOnBeforeunload.asInstanceOf[js.Any], forceBase64 = forceBase64.asInstanceOf[js.Any], forceNew = forceNew.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], multiplex = multiplex.asInstanceOf[js.Any], onlyBinaryUpgrades = onlyBinaryUpgrades.asInstanceOf[js.Any], parser = parser.asInstanceOf[js.Any], passphrase = passphrase.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], perMessageDeflate = perMessageDeflate.asInstanceOf[js.Any], pfx = pfx.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocols = protocols.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], randomizationFactor = randomizationFactor.asInstanceOf[js.Any], reconnection = reconnection.asInstanceOf[js.Any], reconnectionAttempts = reconnectionAttempts.asInstanceOf[js.Any], reconnectionDelay = reconnectionDelay.asInstanceOf[js.Any], reconnectionDelayMax = reconnectionDelayMax.asInstanceOf[js.Any], rejectUnauthorized = rejectUnauthorized.asInstanceOf[js.Any], rememberUpgrade = rememberUpgrade.asInstanceOf[js.Any], requestTimeout = requestTimeout.asInstanceOf[js.Any], secure = secure.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any], timestampParam = timestampParam.asInstanceOf[js.Any], timestampRequests = timestampRequests.asInstanceOf[js.Any], transportOptions = transportOptions.asInstanceOf[js.Any], transports = transports.asInstanceOf[js.Any], upgrade = upgrade.asInstanceOf[js.Any], useNativeTimers = useNativeTimers.asInstanceOf[js.Any], withCredentials = withCredentials.asInstanceOf[js.Any])
       __obj.asInstanceOf[ManagerOptions]
     }
     

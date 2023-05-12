@@ -3,7 +3,8 @@ package typings.babylonjs
 import typings.babylonjs.anon.DiameterSegments
 import typings.babylonjs.mathsMathDotvectorMod.Vector3
 import typings.babylonjs.meshesMeshMod.Mesh
-import typings.babylonjs.physicsPhysicsImpostorMod.PhysicsImpostor
+import typings.babylonjs.physicsV1PhysicsImpostorMod.PhysicsImpostor
+import typings.babylonjs.physicsV2PhysicsBodyMod.PhysicsBody
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
@@ -20,6 +21,12 @@ object physicsPhysicsHelperMod {
       * @param scene Babylon.js scene
       */
     def this(scene: Scene) = this()
+    
+    /* private */ var _applicationForBodies: Any = js.native
+    
+    /* private */ var _copyPhysicsHitData: Any = js.native
+    
+    /* private */ var _hitData: Any = js.native
     
     /* private */ var _physicsEngine: Any = js.native
     
@@ -101,9 +108,9 @@ object physicsPhysicsHelperMod {
     
     /**
       * Creates a gravitational field
-      * @param origin the origin of the explosion
-      * @param radiusOrEventOptions the radius or the options of radial explosion
-      * @param strength the explosion strength
+      * @param origin the origin of the gravitational field
+      * @param radiusOrEventOptions the radius or the options of radial gravitational field
+      * @param strength the gravitational field strength
       * @param falloff possible options: Constant & Linear. Defaults to Constant
       * @returns A physics gravitational field event, or null
       */
@@ -237,6 +244,11 @@ object physicsPhysicsHelperMod {
   @JSImport("babylonjs/Physics/physicsHelper", "PhysicsRadialExplosionEventOptions")
   @js.native
   open class PhysicsRadialExplosionEventOptions () extends StObject {
+    
+    /**
+      * Sphere options for the radial explosion.
+      */
+    def affectedBodiesCallback(affectedBodiesWithData: js.Array[PhysicsAffectedBodyWithData]): Unit = js.native
     
     /**
       * Sphere options for the radial explosion.
@@ -377,6 +389,34 @@ object physicsPhysicsHelperMod {
     var updraftForceMultiplier: Double = js.native
   }
   
+  trait PhysicsAffectedBodyWithData extends StObject {
+    
+    /**
+      * The impostor affected by the effect
+      */
+    var body: PhysicsBody
+    
+    /**
+      * The data about the hit/force from the explosion
+      */
+    var hitData: PhysicsHitData
+  }
+  object PhysicsAffectedBodyWithData {
+    
+    inline def apply(body: PhysicsBody, hitData: PhysicsHitData): PhysicsAffectedBodyWithData = {
+      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], hitData = hitData.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PhysicsAffectedBodyWithData]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhysicsAffectedBodyWithData] (val x: Self) extends AnyVal {
+      
+      inline def setBody(value: PhysicsBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      
+      inline def setHitData(value: PhysicsHitData): Self = StObject.set(x, "hitData", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait PhysicsAffectedImpostorWithData extends StObject {
     
     /**
@@ -488,6 +528,11 @@ object physicsPhysicsHelperMod {
       * The force applied at the contact point
       */
     var force: Vector3
+    
+    /**
+      * For an instanced physics body (mesh with thin instances), the index of the thin instance the hit applies to
+      */
+    var instanceIndex: js.UndefOr[Double] = js.undefined
   }
   object PhysicsHitData {
     
@@ -504,6 +549,10 @@ object physicsPhysicsHelperMod {
       inline def setDistanceFromOrigin(value: Double): Self = StObject.set(x, "distanceFromOrigin", value.asInstanceOf[js.Any])
       
       inline def setForce(value: Vector3): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+      
+      inline def setInstanceIndex(value: Double): Self = StObject.set(x, "instanceIndex", value.asInstanceOf[js.Any])
+      
+      inline def setInstanceIndexUndefined: Self = StObject.set(x, "instanceIndex", js.undefined)
     }
   }
   
@@ -514,6 +563,8 @@ object physicsPhysicsHelperMod {
   trait PhysicsRadialExplosionEvent extends StObject {
     
     /* private */ var _dataFetched: Any = js.native
+    
+    /* private */ var _getHitData: Any = js.native
     
     /* private */ var _intersectsWithSphere: Any = js.native
     
@@ -534,6 +585,17 @@ object physicsPhysicsHelperMod {
     def dispose(force: Boolean): Unit = js.native
     
     /**
+      * Returns the force and contact point of the body or false, if the body is not affected by the force/impulse.
+      * @param body A physics body where the transform node is an AbstractMesh
+      * @param origin the origin of the explosion
+      * @param data the data of the hit
+      * @param instanceIndex the instance index of the body
+      * @returns if there was a hit
+      */
+    def getBodyHitData(body: PhysicsBody, origin: Vector3, data: PhysicsHitData): Boolean = js.native
+    def getBodyHitData(body: PhysicsBody, origin: Vector3, data: PhysicsHitData, instanceIndex: Double): Boolean = js.native
+    
+    /**
       * Returns the data related to the radial explosion event (sphere).
       * @returns The radial explosion event data
       */
@@ -543,9 +605,15 @@ object physicsPhysicsHelperMod {
       * Returns the force and contact point of the impostor or false, if the impostor is not affected by the force/impulse.
       * @param impostor A physics imposter
       * @param origin the origin of the explosion
-      * @returns {Nullable<PhysicsHitData>} A physics force and contact point, or null
+      * @returns A physics force and contact point, or null
       */
-    def getImpostorHitData(impostor: PhysicsImpostor, origin: Vector3): Nullable[PhysicsHitData] = js.native
+    def getImpostorHitData(impostor: PhysicsImpostor, origin: Vector3, data: PhysicsHitData): Boolean = js.native
+    
+    /**
+      * Triggers affected bodies callbacks
+      * @param affectedBodiesWithData defines the list of affected bodies (including associated data)
+      */
+    def triggerAffectedBodiesCallback(affectedBodiesWithData: js.Array[PhysicsAffectedBodyWithData]): Unit = js.native
     
     /**
       * Triggers affected impostors callbacks
@@ -586,6 +654,10 @@ object physicsPhysicsHelperMod {
     /* private */ var _cylinderPosition: Any = js.native
     
     /* private */ var _dataFetched: Any = js.native
+    
+    /* private */ var _getBodyHitData: Any = js.native
+    
+    /* private */ var _getHitData: Any = js.native
     
     /* private */ var _getImpostorHitData: Any = js.native
     
@@ -639,12 +711,12 @@ object physicsPhysicsHelperMod {
     /**
       * A cylinder used for the updraft event
       */
-    var cylinder: Mesh
+    var cylinder: js.UndefOr[Mesh] = js.undefined
   }
   object PhysicsUpdraftEventData {
     
-    inline def apply(cylinder: Mesh): PhysicsUpdraftEventData = {
-      val __obj = js.Dynamic.literal(cylinder = cylinder.asInstanceOf[js.Any])
+    inline def apply(): PhysicsUpdraftEventData = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PhysicsUpdraftEventData]
     }
     
@@ -652,6 +724,8 @@ object physicsPhysicsHelperMod {
     implicit open class MutableBuilder[Self <: PhysicsUpdraftEventData] (val x: Self) extends AnyVal {
       
       inline def setCylinder(value: Mesh): Self = StObject.set(x, "cylinder", value.asInstanceOf[js.Any])
+      
+      inline def setCylinderUndefined: Self = StObject.set(x, "cylinder", js.undefined)
     }
   }
   
@@ -666,6 +740,10 @@ object physicsPhysicsHelperMod {
     /* private */ var _cylinderPosition: Any = js.native
     
     /* private */ var _dataFetched: Any = js.native
+    
+    /* private */ var _getBodyHitData: Any = js.native
+    
+    /* private */ var _getHitData: Any = js.native
     
     /* private */ var _getImpostorHitData: Any = js.native
     

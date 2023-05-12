@@ -12,9 +12,9 @@ object libUtilCheckQuoteMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def checkQuote(context: Context): Exclude[js.UndefOr[Quotationmark | (/* ' */ String)], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkQuote")(context.asInstanceOf[js.Any]).asInstanceOf[Exclude[js.UndefOr[Quotationmark | (/* ' */ String)], Unit]]
-  
-  type Context = typings.mdastUtilToMarkdown.libTypesMod.Context
+  inline def checkQuote(state: State): Exclude[js.UndefOr[Quotationmark | (/* ' */ String) | Null], js.UndefOr[Null]] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkQuote")(state.asInstanceOf[js.Any]).asInstanceOf[Exclude[js.UndefOr[Quotationmark | (/* ' */ String) | Null], js.UndefOr[Null]]]
   
   type Options = typings.mdastUtilToMarkdown.libTypesMod.Options
+  
+  type State = typings.mdastUtilToMarkdown.libTypesMod.State
 }

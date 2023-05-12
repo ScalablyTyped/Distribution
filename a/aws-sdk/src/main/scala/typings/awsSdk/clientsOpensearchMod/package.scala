@@ -13,6 +13,33 @@ type ARN = java.lang.String
 
 type AWSAccount = java.lang.String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.HIGH
+  - typings.awsSdk.awsSdkStrings.MEDIUM
+  - typings.awsSdk.awsSdkStrings.LOW
+  - java.lang.String
+*/
+type ActionSeverity = _ActionSeverity | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PENDING_UPDATE
+  - typings.awsSdk.awsSdkStrings.IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.COMPLETED
+  - typings.awsSdk.awsSdkStrings.NOT_ELIGIBLE
+  - typings.awsSdk.awsSdkStrings.ELIGIBLE
+  - java.lang.String
+*/
+type ActionStatus = _ActionStatus | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SERVICE_SOFTWARE_UPDATE
+  - typings.awsSdk.awsSdkStrings.JVM_HEAP_SIZE_TUNING
+  - typings.awsSdk.awsSdkStrings.JVM_YOUNG_GEN_TUNING
+  - java.lang.String
+*/
+type ActionType = _ActionType | java.lang.String
+
 type AdditionalLimitList = js.Array[AdditionalLimit]
 
 type AdvancedOptions = StringDictionary[String]
@@ -48,6 +75,12 @@ type AutoTuneState = _AutoTuneState | java.lang.String
 
 type AutoTuneType = SCHEDULED_ACTION | java.lang.String
 
+type AvailabilityZone = java.lang.String
+
+type AvailabilityZoneInfoList = js.Array[AvailabilityZoneInfo]
+
+type AvailabilityZoneList = js.Array[AvailabilityZone]
+
 type BackendRole = java.lang.String
 
 type Boolean = scala.Boolean
@@ -69,6 +102,13 @@ type CompatibleVersionsList = js.Array[CompatibleVersionsMap]
 type ConnectionAlias = java.lang.String
 
 type ConnectionId = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DIRECT
+  - typings.awsSdk.awsSdkStrings.VPC_ENDPOINT
+  - java.lang.String
+*/
+type ConnectionMode = _ConnectionMode | java.lang.String
 
 type ConnectionStatusMessage = java.lang.String
 
@@ -108,6 +148,15 @@ type DisableTimestamp = js.Date
 
 type DomainArn = java.lang.String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Red_
+  - typings.awsSdk.awsSdkStrings.Yellow_
+  - typings.awsSdk.awsSdkStrings.Green_
+  - typings.awsSdk.awsSdkStrings.NotAvailable
+  - java.lang.String
+*/
+type DomainHealth = _DomainHealth | java.lang.String
+
 type DomainId = java.lang.String
 
 type DomainInfoList = js.Array[DomainInfo]
@@ -117,6 +166,8 @@ type DomainName = java.lang.String
 type DomainNameFqdn = java.lang.String
 
 type DomainNameList = js.Array[DomainName]
+
+type DomainNodesStatusList = js.Array[DomainNodesStatus]
 
 type DomainPackageDetailsList = js.Array[DomainPackageDetails]
 
@@ -130,11 +181,26 @@ type DomainPackageDetailsList = js.Array[DomainPackageDetails]
 */
 type DomainPackageStatus = _DomainPackageStatus | java.lang.String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Active_
+  - typings.awsSdk.awsSdkStrings.Processing_
+  - typings.awsSdk.awsSdkStrings.NotAvailable
+  - java.lang.String
+*/
+type DomainState = _DomainState | java.lang.String
+
 type DomainStatusList = js.Array[DomainStatus]
 
 type Double = scala.Double
 
 type DryRun = scala.Boolean
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Basic_
+  - typings.awsSdk.awsSdkStrings.Verbose_
+  - java.lang.String
+*/
+type DryRunMode = _DryRunMode | java.lang.String
 
 type DurationValue = scala.Double
 
@@ -148,6 +214,8 @@ type EndpointsMap = StringDictionary[ServiceUrl]
   - java.lang.String
 */
 type EngineType = _EngineType | java.lang.String
+
+type EnvironmentInfoList = js.Array[EnvironmentInfo]
 
 type ErrorMessage = java.lang.String
 
@@ -182,6 +250,8 @@ type InstanceRoleList = js.Array[InstanceRole]
 
 type InstanceTypeDetailsList = js.Array[InstanceTypeDetails]
 
+type InstanceTypeString = java.lang.String
+
 type Integer = scala.Double
 
 type IntegerClass = scala.Double
@@ -215,6 +285,13 @@ type LogType = _LogType | java.lang.String
 
 type Long = scala.Double
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Available_
+  - typings.awsSdk.awsSdkStrings.UnAvailable_
+  - java.lang.String
+*/
+type MasterNodeStatus = _MasterNodeStatus | java.lang.String
+
 type MaxResults = scala.Double
 
 type MaximumInstanceCount = scala.Double
@@ -225,7 +302,31 @@ type MinimumInstanceCount = scala.Double
 
 type NextToken = java.lang.String
 
+type NodeId = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Active_
+  - typings.awsSdk.awsSdkStrings.StandBy_
+  - typings.awsSdk.awsSdkStrings.NotAvailable
+  - java.lang.String
+*/
+type NodeStatus = _NodeStatus | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Data_
+  - typings.awsSdk.awsSdkStrings.Ultrawarm
+  - typings.awsSdk.awsSdkStrings.Master_
+  - java.lang.String
+*/
+type NodeType = _NodeType | java.lang.String
+
 type NonEmptyString = java.lang.String
+
+type NumberOfAZs = java.lang.String
+
+type NumberOfNodes = java.lang.String
+
+type NumberOfShards = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.m3DotmediumDotsearch
@@ -447,6 +548,16 @@ type SAMLEntityId = java.lang.String
 type SAMLMetadata = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NOW
+  - typings.awsSdk.awsSdkStrings.TIMESTAMP
+  - typings.awsSdk.awsSdkStrings.OFF_PEAK_WINDOW
+  - java.lang.String
+*/
+type ScheduleAt = _ScheduleAt | java.lang.String
+
+type ScheduledActionsList = js.Array[ScheduledAction]
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.JVM_HEAP_SIZE_TUNING
   - typings.awsSdk.awsSdkStrings.JVM_YOUNG_GEN_TUNING
   - java.lang.String
@@ -463,9 +574,20 @@ type ScheduledAutoTuneDescription = java.lang.String
 */
 type ScheduledAutoTuneSeverityType = _ScheduledAutoTuneSeverityType | java.lang.String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CUSTOMER
+  - typings.awsSdk.awsSdkStrings.SYSTEM
+  - java.lang.String
+*/
+type ScheduledBy = _ScheduledBy | java.lang.String
+
 type ServiceUrl = java.lang.String
 
 type StartAt = js.Date
+
+type StartTimeHours = scala.Double
+
+type StartTimeMinutes = scala.Double
 
 type StartTimestamp = js.Date
 
@@ -529,11 +651,15 @@ type UserPoolId = java.lang.String
 
 type Username = java.lang.String
 
+type ValidationFailures = js.Array[ValidationFailure]
+
 type ValueStringList = js.Array[NonEmptyString]
 
 type VersionList = js.Array[VersionString]
 
 type VersionString = java.lang.String
+
+type VolumeSize = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.standard__
@@ -572,6 +698,14 @@ type VpcEndpointStatus = _VpcEndpointStatus | java.lang.String
 type VpcEndpointSummaryList = js.Array[VpcEndpointSummary]
 
 type VpcEndpoints = js.Array[VpcEndpoint]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Active_
+  - typings.awsSdk.awsSdkStrings.StandBy_
+  - typings.awsSdk.awsSdkStrings.NotAvailable
+  - java.lang.String
+*/
+type ZoneStatus = _ZoneStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2021-01-01`

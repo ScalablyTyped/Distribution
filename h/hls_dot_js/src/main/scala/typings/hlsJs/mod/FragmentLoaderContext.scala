@@ -11,6 +11,8 @@ trait FragmentLoaderContext
   var frag: Fragment
   
   var part: Part | Null
+  
+  var resetIV: js.UndefOr[Boolean] = js.undefined
 }
 object FragmentLoaderContext {
   
@@ -27,5 +29,9 @@ object FragmentLoaderContext {
     inline def setPart(value: Part): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
     inline def setPartNull: Self = StObject.set(x, "part", null)
+    
+    inline def setResetIV(value: Boolean): Self = StObject.set(x, "resetIV", value.asInstanceOf[js.Any])
+    
+    inline def setResetIVUndefined: Self = StObject.set(x, "resetIV", js.undefined)
   }
 }

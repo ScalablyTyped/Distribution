@@ -34,10 +34,11 @@ trait RemoteEvent extends StObject {
   val targetChanges: Map[TargetId, TargetChange]
   
   /**
-    * A set of targets that is known to be inconsistent. Listens for these
-    * targets should be re-established without resume tokens.
+    * A map of targets that is known to be inconsistent, and the purpose for
+    * re-listening. Listens for these targets should be re-established without
+    * resume tokens.
     */
-  val targetMismatches: SortedSet[TargetId]
+  val targetMismatches: SortedMap[TargetId, TargetPurpose]
 }
 object RemoteEvent {
   
@@ -46,7 +47,7 @@ object RemoteEvent {
     resolvedLimboDocuments: DocumentKeySet,
     snapshotVersion: SnapshotVersion,
     targetChanges: Map[TargetId, TargetChange],
-    targetMismatches: SortedSet[TargetId]
+    targetMismatches: SortedMap[TargetId, TargetPurpose]
   ): RemoteEvent = {
     val __obj = js.Dynamic.literal(documentUpdates = documentUpdates.asInstanceOf[js.Any], resolvedLimboDocuments = resolvedLimboDocuments.asInstanceOf[js.Any], snapshotVersion = snapshotVersion.asInstanceOf[js.Any], targetChanges = targetChanges.asInstanceOf[js.Any], targetMismatches = targetMismatches.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteEvent]
@@ -63,6 +64,6 @@ object RemoteEvent {
     
     inline def setTargetChanges(value: Map[TargetId, TargetChange]): Self = StObject.set(x, "targetChanges", value.asInstanceOf[js.Any])
     
-    inline def setTargetMismatches(value: SortedSet[TargetId]): Self = StObject.set(x, "targetMismatches", value.asInstanceOf[js.Any])
+    inline def setTargetMismatches(value: SortedMap[TargetId, TargetPurpose]): Self = StObject.set(x, "targetMismatches", value.asInstanceOf[js.Any])
   }
 }

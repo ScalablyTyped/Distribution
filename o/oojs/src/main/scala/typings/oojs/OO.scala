@@ -2,9 +2,10 @@ package typings.oojs
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.oojs.anon.Key
+import typings.oojs.anon.PartialRecordkeyofRegistr
 import typings.oojs.anon.Static
-import typings.std.Exclude
+import typings.oojs.oojsStrings.register
+import typings.oojs.oojsStrings.unregister
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,14 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object OO {
   
-  /** NOTE: Conditional type definitions are impossible to translate to Scala.
-    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
-    * TS definition: {{{
-    K extends any ? T[K] extends (args : ...any): any ? K : never : never
-    }}}
-    */
-  type CheckFunctionType[T, K /* <: /* keyof T */ String */] = K
+  type ArgTuple = js.Array[Any] | (js.Tuple2[Any, Any]) | (js.Tuple3[Any, Any, Any]) | (js.Tuple4[Any, Any, Any, Any]) | (js.Tuple5[Any, Any, Any, Any, Any])
   
   trait Cloneable
     extends StObject
@@ -138,6 +132,62 @@ object OO {
     extends StObject
        with Instantiable0[EmitterList]
   
+  trait EmitterListEventMap extends StObject {
+    
+    var add: js.Tuple2[/* item */ EventEmitter, /* index */ Double]
+    
+    var clear: js.Array[Any]
+    
+    var move: js.Tuple3[/* item */ EventEmitter, /* index */ Double, /* oldIndex */ Double]
+    
+    var remove: js.Tuple2[/* item */ EventEmitter, /* index */ Double]
+  }
+  object EmitterListEventMap {
+    
+    inline def apply(
+      add: js.Tuple2[/* item */ EventEmitter, /* index */ Double],
+      clear: js.Array[Any],
+      move: js.Tuple3[/* item */ EventEmitter, /* index */ Double, /* oldIndex */ Double],
+      remove: js.Tuple2[/* item */ EventEmitter, /* index */ Double]
+    ): EmitterListEventMap = {
+      val __obj = js.Dynamic.literal(add = add.asInstanceOf[js.Any], clear = clear.asInstanceOf[js.Any], move = move.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any])
+      __obj.asInstanceOf[EmitterListEventMap]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmitterListEventMap] (val x: Self) extends AnyVal {
+      
+      inline def setAdd(value: js.Tuple2[/* item */ EventEmitter, /* index */ Double]): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
+      
+      inline def setClear(value: js.Array[Any]): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+      
+      inline def setClearVarargs(value: Any*): Self = StObject.set(x, "clear", js.Array(value*))
+      
+      inline def setMove(value: js.Tuple3[/* item */ EventEmitter, /* index */ Double, /* oldIndex */ Double]): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
+      
+      inline def setRemove(value: js.Tuple2[/* item */ EventEmitter, /* index */ Double]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof T ]: oojs.OO.EventConnectionMapEntry<C, M & std.Record<string | number | symbol, std.Array<any>>[K], T[K]>}
+    }}}
+    */
+  @js.native
+  trait EventConnectionMap[T /* <: js.Object */, C, M /* <: js.Object */] extends StObject
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+    * TS definition: {{{
+    T extends oojs.OO.ArgTuple ? [oojs.OO.EventHandler<C, (this : C, args : [...T, ...P]): void>, ...T] : oojs.OO.EventHandler<C, (this : C, args : P): void>
+    }}}
+    */
+  type EventConnectionMapEntry[C, P /* <: js.Array[Any] */, T] = /* import warning: importer.ImportType#apply c repeated non-array type: T */ js.Array[T]
+  
   @js.native
   trait EventEmitter extends StObject {
     
@@ -154,8 +204,8 @@ object OO {
       context: C,
       methods: Record[
           String, 
-          (js.ThisFunction1[/* this */ C, /* repeated */ Any, Unit]) | (/* import warning: importer.ImportType#apply Failed type conversion: C extends object ? oojs.OO.ExtractFunctionKeys<C> : never */ js.Any) | (Array[
-            (js.ThisFunction1[/* this */ C, /* repeated */ Any, Unit]) | (/* import warning: importer.ImportType#apply Failed type conversion: C extends object ? oojs.OO.ExtractFunctionKeys<C> : never */ js.Any) | Any
+          (EventHandler[C, js.ThisFunction1[/* this */ C, /* repeated */ Any, Unit]]) | (Array[
+            (EventHandler[C, js.ThisFunction1[/* this */ C, /* repeated */ Any, Unit]]) | Any
           ])
         ]
     ): this.type = js.native
@@ -173,12 +223,14 @@ object OO {
       *  parameters vary), disconnecting one variation of (event name, event listener, parameters)
       *  will disconnect other variations as well.
       */
-    def disconnect(context: Any): this.type = js.native
-    def disconnect(
-      context: Any,
+    def disconnect[C](context: C): this.type = js.native
+    def disconnect[C](
+      context: C,
       methods: Record[
           String, 
-          String | (js.Function1[/* repeated */ Any, Unit]) | (Array[(js.Function1[/* repeated */ Any, Unit]) | String | Any])
+          (EventHandler[C, js.ThisFunction1[/* this */ C, /* repeated */ Any, Unit]]) | (Array[
+            (EventHandler[C, js.ThisFunction1[/* this */ C, /* repeated */ Any, Unit]]) | Any
+          ])
         ]
     ): this.type = js.native
     
@@ -224,16 +276,18 @@ object OO {
       *
       * @param event Type of event to remove listener from
       * @param method Listener to remove. Must be in the same form as was passed
-      * to "on". Omit to remove all listeners.
+      * to "{@link on}". Omit to remove all listeners.
       * @param context Context object function or method call
       * @throws {Error} Listener argument is not a function or a valid method name
       */
-    def off(event: String): this.type = js.native
-    def off(event: String, method: String): this.type = js.native
-    def off(event: String, method: String, context: Any): this.type = js.native
-    def off(event: String, method: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    def off(event: String, method: js.Function1[/* repeated */ Any, Unit], context: Any): this.type = js.native
-    def off(event: String, method: Unit, context: Any): this.type = js.native
+    def off[C](event: String): this.type = js.native
+    def off[C](event: String, method: Unit, context: C): this.type = js.native
+    def off[C](event: String, method: EventHandler[C, js.ThisFunction1[/* this */ C, /* repeated */ Any, Unit]]): this.type = js.native
+    def off[C](
+      event: String,
+      method: EventHandler[C, js.ThisFunction1[/* this */ C, /* repeated */ Any, Unit]],
+      context: C
+    ): this.type = js.native
     
     /**
       * Add a listener to events of a specific event.
@@ -247,37 +301,24 @@ object OO {
       * @param context Context object for function or method call
       * @throws {Error} Listener argument is not a function or a valid method name
       */
-    def on[C](event: String, method: js.ThisFunction1[/* this */ C, /* repeated */ Any, Unit]): this.type = js.native
+    def on[C](event: String, method: EventHandler[C, js.ThisFunction1[/* this */ C, /* repeated */ Any, Unit]]): this.type = js.native
     def on[C](
       event: String,
-      method: js.ThisFunction1[/* this */ C, /* repeated */ Any, Unit],
+      method: EventHandler[C, js.ThisFunction1[/* this */ C, /* repeated */ Any, Unit]],
       args: js.Array[Any]
     ): this.type = js.native
     def on[C](
       event: String,
-      method: js.ThisFunction1[/* this */ C, /* repeated */ Any, Unit],
+      method: EventHandler[C, js.ThisFunction1[/* this */ C, /* repeated */ Any, Unit]],
       args: js.Array[Any],
       context: C
     ): this.type = js.native
     def on[C](
       event: String,
-      method: js.ThisFunction1[/* this */ C, /* repeated */ Any, Unit],
+      method: EventHandler[C, js.ThisFunction1[/* this */ C, /* repeated */ Any, Unit]],
       args: Unit,
       context: C
     ): this.type = js.native
-    /**
-      * Add a listener to events of a specific event.
-      *
-      * The listener can be a function or the string name of a method; if the latter, then the
-      * name lookup happens at the time the listener is called.
-      *
-      * @param event Type of event to listen to
-      * @param method Function or method name to call when event occurs
-      * @param args Arguments to pass to listener, will be prepended to emitted arguments
-      * @param context Context object for function or method call
-      * @throws {Error} Listener argument is not a function or a valid method name
-      */
-    def on[C /* <: js.Object */](event: String, method: ExtractFunctionKeys[C], args: js.Array[Any], context: C): this.type = js.native
     
     /**
       * Add a one-time listener to a specific event.
@@ -293,31 +334,18 @@ object OO {
     extends StObject
        with Instantiable0[EventEmitter]
   
-  type ExtractFunctionKeys[T /* <: js.Object */] = Exclude[CheckFunctionType[T, /* keyof T */ String], scala.Nothing]
+  type EventHandler[C, F /* <: js.Function1[/* repeated */ Any, Any] */] = (FunctionFieldsOf[C, F, /* keyof C */ String]) | F
   
   // HACK: Omit register and unregister because Factory changed their call signatures (!)
   /* Inlined parent std.Omit<oojs.OO.Registry, 'register' | 'unregister'> */
   @js.native
   trait Factory extends StObject {
     
-    def connect[C](
-      context: C,
-      methods: Record[
-          String, 
-          (js.ThisFunction1[/* this */ C, /* repeated */ Any, Unit]) | (/* import warning: importer.ImportType#apply Failed type conversion: C extends object ? oojs.OO.ExtractFunctionKeys<C> : never */ js.Any) | (Array[
-            (js.ThisFunction1[/* this */ C, /* repeated */ Any, Unit]) | (/* import warning: importer.ImportType#apply Failed type conversion: C extends object ? oojs.OO.ExtractFunctionKeys<C> : never */ js.Any) | Any
-          ])
-        ]
-    ): this.type = js.native
+    def connect[T /* <: PartialRecordkeyofRegistr */, C](context: C, methods: EventConnectionMap[T, C, RegistryEventMap]): this.type = js.native
     @JSName("connect")
     var connect_Original: js.Function2[
         /* context */ Any, 
-        /* methods */ Record[
-          String, 
-          (js.ThisFunction1[/* this */ Any, /* repeated */ Any, Unit]) | (/* import warning: importer.ImportType#apply Failed type conversion: any extends object ? oojs.OO.ExtractFunctionKeys<any> : never */ js.Any) | (Array[
-            (js.ThisFunction1[/* this */ Any, /* repeated */ Any, Unit]) | (/* import warning: importer.ImportType#apply Failed type conversion: any extends object ? oojs.OO.ExtractFunctionKeys<any> : never */ js.Any) | Any
-          ])
-        ], 
+        /* methods */ EventConnectionMap[PartialRecordkeyofRegistr, Any, RegistryEventMap], 
         this.type
       ] = js.native
     
@@ -334,110 +362,184 @@ object OO {
       */
     def create(key: String, args: Any*): Any = js.native
     
-    def disconnect(context: Any): this.type = js.native
-    def disconnect(
-      context: Any,
-      methods: Record[
-          String, 
-          String | (js.Function1[/* repeated */ Any, Unit]) | (Array[(js.Function1[/* repeated */ Any, Unit]) | String | Any])
-        ]
-    ): this.type = js.native
+    def disconnect[T /* <: PartialRecordkeyofRegistr */, C](context: C): this.type = js.native
+    def disconnect[T /* <: PartialRecordkeyofRegistr */, C](context: C, methods: EventConnectionMap[T, C, RegistryEventMap]): this.type = js.native
     @JSName("disconnect")
     var disconnect_Original: js.Function2[
         /* context */ Any, 
-        /* methods */ js.UndefOr[
-          Record[
-            String, 
-            String | (js.Function1[/* repeated */ Any, Unit]) | (Array[(js.Function1[/* repeated */ Any, Unit]) | String | Any])
-          ]
-        ], 
+        /* methods */ js.UndefOr[EventConnectionMap[PartialRecordkeyofRegistr, Any, RegistryEventMap]], 
         this.type
       ] = js.native
     
-    def emit(event: String, args: Any*): Boolean = js.native
+    def emit[K /* <: register | unregister */](
+      event: K,
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type RegistryEventMap[K] is not an array type */ args: /* import warning: importer.ImportType#apply Failed type conversion: oojs.OO.RegistryEventMap[K] */ js.Any
+    ): Boolean = js.native
     
-    def emitThrow(event: String, args: Any*): Boolean = js.native
+    def emitThrow[K /* <: register | unregister */](
+      event: K,
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type RegistryEventMap[K] is not an array type */ args: /* import warning: importer.ImportType#apply Failed type conversion: oojs.OO.RegistryEventMap[K] */ js.Any
+    ): Boolean = js.native
     @JSName("emitThrow")
-    var emitThrow_Original: js.Function2[/* event */ String, /* repeated */ Any, Boolean] = js.native
+    var emitThrow_Original: js.Function2[
+        /* event */ register | unregister, 
+        /* import warning: importer.ImportType#apply Failed type conversion: oojs.OO.RegistryEventMap['register' | 'unregister'] */ /* args */ js.Any, 
+        Boolean
+      ] = js.native
     
     @JSName("emit")
-    var emit_Original: js.Function2[/* event */ String, /* repeated */ Any, Boolean] = js.native
+    var emit_Original: js.Function2[
+        /* event */ register | unregister, 
+        /* import warning: importer.ImportType#apply Failed type conversion: oojs.OO.RegistryEventMap['register' | 'unregister'] */ /* args */ js.Any, 
+        Boolean
+      ] = js.native
     
     def lookup(name: String): js.UndefOr[Any] = js.native
     @JSName("lookup")
     var lookup_Original: js.Function1[/* name */ String, js.UndefOr[Any]] = js.native
     
-    def off(event: String): this.type = js.native
-    def off(event: String, method: String): this.type = js.native
-    def off(event: String, method: String, context: Any): this.type = js.native
-    def off(event: String, method: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    def off(event: String, method: js.Function1[/* repeated */ Any, Unit], context: Any): this.type = js.native
-    def off(event: String, method: Unit, context: Any): this.type = js.native
+    def off[K /* <: register | unregister */, C](event: K): this.type = js.native
+    def off[K /* <: register | unregister */, C](event: K, method: Unit, context: C): this.type = js.native
+    def off[K /* <: register | unregister */, C](
+      event: K,
+      method: EventHandler[
+          C, 
+          js.ThisFunction1[
+            /* this */ C, 
+            /* import warning: importer.ImportType#apply Failed type conversion: oojs.OO.RegistryEventMap[K] */ /* args */ js.Any, 
+            Unit
+          ]
+        ]
+    ): this.type = js.native
+    def off[K /* <: register | unregister */, C](
+      event: K,
+      method: EventHandler[
+          C, 
+          js.ThisFunction1[
+            /* this */ C, 
+            /* import warning: importer.ImportType#apply Failed type conversion: oojs.OO.RegistryEventMap[K] */ /* args */ js.Any, 
+            Unit
+          ]
+        ],
+      context: C
+    ): this.type = js.native
     @JSName("off")
     var off_Original: js.Function3[
-        /* event */ String, 
-        /* method */ js.UndefOr[String | (js.Function1[/* repeated */ Any, Unit])], 
-        /* context */ js.UndefOr[Any], 
+        /* event */ register | unregister, 
+        /* method */ js.UndefOr[
+          EventHandler[
+            Null, 
+            js.ThisFunction1[
+              /* this */ Null, 
+              /* import warning: importer.ImportType#apply Failed type conversion: oojs.OO.RegistryEventMap['register' | 'unregister'] */ /* args */ js.Any, 
+              Unit
+            ]
+          ]
+        ], 
+        /* context */ js.UndefOr[Null], 
         this.type
       ] = js.native
     
-    def on[C](event: String, method: js.ThisFunction1[/* this */ C, /* repeated */ Any, Unit]): this.type = js.native
-    def on[C](
-      event: String,
-      method: js.ThisFunction1[/* this */ C, /* repeated */ Any, Unit],
-      args: js.Array[Any]
+    def on[K /* <: register | unregister */, A /* <: ArgTuple */, C](
+      event: K,
+      method: EventHandler[
+          C, 
+          js.ThisFunction1[
+            /* this */ C, 
+            /* import warning: importer.ImportType#apply c repeated non-array type: A */ /* args */ js.Array[A], 
+            Unit
+          ]
+        ]
     ): this.type = js.native
-    def on[C](
-      event: String,
-      method: js.ThisFunction1[/* this */ C, /* repeated */ Any, Unit],
-      args: js.Array[Any],
+    def on[K /* <: register | unregister */, A /* <: ArgTuple */, C](
+      event: K,
+      method: EventHandler[
+          C, 
+          js.ThisFunction1[
+            /* this */ C, 
+            /* import warning: importer.ImportType#apply c repeated non-array type: A */ /* args */ js.Array[A], 
+            Unit
+          ]
+        ],
+      args: A
+    ): this.type = js.native
+    def on[K /* <: register | unregister */, A /* <: ArgTuple */, C](
+      event: K,
+      method: EventHandler[
+          C, 
+          js.ThisFunction1[
+            /* this */ C, 
+            /* import warning: importer.ImportType#apply c repeated non-array type: A */ /* args */ js.Array[A], 
+            Unit
+          ]
+        ],
+      args: A,
       context: C
     ): this.type = js.native
-    def on[C](
-      event: String,
-      method: js.ThisFunction1[/* this */ C, /* repeated */ Any, Unit],
+    def on[K /* <: register | unregister */, A /* <: ArgTuple */, C](
+      event: K,
+      method: EventHandler[
+          C, 
+          js.ThisFunction1[
+            /* this */ C, 
+            /* import warning: importer.ImportType#apply c repeated non-array type: A */ /* args */ js.Array[A], 
+            Unit
+          ]
+        ],
       args: Unit,
       context: C
     ): this.type = js.native
     @JSName("on")
     var on_Original: js.Function4[
-        /* event */ String, 
-        /* method */ js.ThisFunction1[/* this */ Null, /* repeated */ Any, Unit], 
+        /* event */ register | unregister, 
+        /* method */ EventHandler[
+          Null, 
+          js.ThisFunction1[
+            /* this */ Null, 
+            /* import warning: importer.ImportType#apply c repeated non-array type: [] */ /* args */ js.Array[js.Array[Any]], 
+            Unit
+          ]
+        ], 
         /* args */ js.UndefOr[js.Array[Any]], 
         /* context */ js.UndefOr[Null], 
         this.type
       ] = js.native
     
-    def once(event: String, listener: js.ThisFunction1[/* this */ Null, /* repeated */ Any, Unit]): this.type = js.native
+    def once[K /* <: register | unregister */](
+      event: K,
+      listener: js.ThisFunction1[
+          /* this */ Null, 
+          /* import warning: importer.ImportType#apply Failed type conversion: oojs.OO.RegistryEventMap[K] */ /* args */ js.Any, 
+          Unit
+        ]
+    ): this.type = js.native
     @JSName("once")
     var once_Original: js.Function2[
-        /* event */ String, 
-        /* listener */ js.ThisFunction1[/* this */ Null, /* repeated */ Any, Unit], 
+        /* event */ register | unregister, 
+        /* listener */ js.ThisFunction1[
+          /* this */ Null, 
+          /* import warning: importer.ImportType#apply Failed type conversion: oojs.OO.RegistryEventMap['register' | 'unregister'] */ /* args */ js.Any, 
+          Unit
+        ], 
         this.type
       ] = js.native
     
     /**
-      * Register a class with the factory.
+      * Register a constructor with the factory.
       *
       *     function MyClass() {};
       *     OO.initClass( MyClass );
-      *     MyClass.key = 'hello';
-      *
-      *     // Register class with the factory
+      *     MyClass.static.name = 'hello';
+      *     // Register class with the factory, available via the symbolic name "hello"
       *     factory.register( MyClass );
       *
-      *     // Instantiate a class based on its registered key (also known as a "symbolic name")
-      *     factory.create( 'hello' );
-      *
-      * @param constructor Class to use when creating an object
-      * @param key The key for {@link create}.
-      *  This parameter is usually omitted in favour of letting the class declare
-      *  its own key, through `MyClass.key`.
-      *  For backwards-compatibility with OOjs 6.0 (2021) and older, it can also be declared
-      *  via `MyClass.static.name`.
+      * @param constructor Constructor to use when creating object
+      * @param name Symbolic name to use for {@link create()}.
+      *  This parameter may be omitted in favour of letting the constructor decide
+      *  its own name, through `constructor.static.name`.
       * @throws {Error} If a parameter is invalid
       */
-    def register(constructor: ConstructorLike & Key & Static): Unit = js.native
+    def register(constructor: ConstructorLike & Static): Unit = js.native
     /**
       * Register a class with the factory.
       *
@@ -481,6 +583,15 @@ object OO {
     
     var `super`: RegistryConstructor = js.native
   }
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+    * TS definition: {{{
+    K extends any ? T[K] extends F ? K : never : never
+    }}}
+    */
+  type FunctionFieldsOf[T, F /* <: js.Function1[/* repeated */ Any, Any] */, K /* <: /* keyof T */ String */] = K
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
@@ -554,6 +665,41 @@ object OO {
     extends StObject
        with EventEmitter {
     
+    def connect[T /* <: PartialRecordkeyofRegistr */, C](context: C, methods: EventConnectionMap[T, C, RegistryEventMap]): this.type = js.native
+    
+    def disconnect[T /* <: PartialRecordkeyofRegistr */, C](context: C, methods: EventConnectionMap[T, C, RegistryEventMap]): this.type = js.native
+    
+    def emit[K /* <: String */](
+      event: /* import warning: importer.ImportType#apply Failed type conversion: K extends 'register' | 'unregister' ? never : K */ js.Any,
+      args: Any*
+    ): Boolean = js.native
+    
+    def emitThrow[K /* <: String */](
+      event: /* import warning: importer.ImportType#apply Failed type conversion: K extends 'register' | 'unregister' ? never : K */ js.Any,
+      args: Any*
+    ): Boolean = js.native
+    @JSName("emitThrow")
+    def emitThrow_register(
+      event: register,
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type RegistryEventMap[K] is not an array type */ args: js.Tuple2[/* name */ String, /* data */ Any]
+    ): Boolean = js.native
+    @JSName("emitThrow")
+    def emitThrow_unregister(
+      event: unregister,
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type RegistryEventMap[K] is not an array type */ args: js.Tuple2[/* name */ String, /* data */ Any]
+    ): Boolean = js.native
+    
+    @JSName("emit")
+    def emit_register(
+      event: register,
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type RegistryEventMap[K] is not an array type */ args: js.Tuple2[/* name */ String, /* data */ Any]
+    ): Boolean = js.native
+    @JSName("emit")
+    def emit_unregister(
+      event: unregister,
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type RegistryEventMap[K] is not an array type */ args: js.Tuple2[/* name */ String, /* data */ Any]
+    ): Boolean = js.native
+    
     /**
       * Get data for a given symbolic name.
       *
@@ -561,6 +707,210 @@ object OO {
       * @return Data associated with symbolic name
       */
     def lookup(name: String): js.UndefOr[Any] = js.native
+    
+    def off[K /* <: String */, C](
+      event: /* import warning: importer.ImportType#apply Failed type conversion: K extends 'register' | 'unregister' ? never : K */ js.Any
+    ): this.type = js.native
+    def off[K /* <: String */, C](
+      event: /* import warning: importer.ImportType#apply Failed type conversion: K extends 'register' | 'unregister' ? never : K */ js.Any,
+      method: Unit,
+      context: C
+    ): this.type = js.native
+    def off[K /* <: String */, C](
+      event: /* import warning: importer.ImportType#apply Failed type conversion: K extends 'register' | 'unregister' ? never : K */ js.Any,
+      method: EventHandler[C, js.ThisFunction1[/* this */ C, /* repeated */ Any, Unit]]
+    ): this.type = js.native
+    def off[K /* <: String */, C](
+      event: /* import warning: importer.ImportType#apply Failed type conversion: K extends 'register' | 'unregister' ? never : K */ js.Any,
+      method: EventHandler[C, js.ThisFunction1[/* this */ C, /* repeated */ Any, Unit]],
+      context: C
+    ): this.type = js.native
+    @JSName("off")
+    def off_register[C](event: register): this.type = js.native
+    @JSName("off")
+    def off_register[C](event: register, method: Unit, context: C): this.type = js.native
+    @JSName("off")
+    def off_register[C](
+      event: register,
+      method: EventHandler[
+          C, 
+          js.ThisFunction1[/* this */ C, /* args */ js.Tuple2[/* name */ String, /* data */ Any], Unit]
+        ]
+    ): this.type = js.native
+    @JSName("off")
+    def off_register[C](
+      event: register,
+      method: EventHandler[
+          C, 
+          js.ThisFunction1[/* this */ C, /* args */ js.Tuple2[/* name */ String, /* data */ Any], Unit]
+        ],
+      context: C
+    ): this.type = js.native
+    @JSName("off")
+    def off_unregister[C](event: unregister): this.type = js.native
+    @JSName("off")
+    def off_unregister[C](event: unregister, method: Unit, context: C): this.type = js.native
+    @JSName("off")
+    def off_unregister[C](
+      event: unregister,
+      method: EventHandler[
+          C, 
+          js.ThisFunction1[/* this */ C, /* args */ js.Tuple2[/* name */ String, /* data */ Any], Unit]
+        ]
+    ): this.type = js.native
+    @JSName("off")
+    def off_unregister[C](
+      event: unregister,
+      method: EventHandler[
+          C, 
+          js.ThisFunction1[/* this */ C, /* args */ js.Tuple2[/* name */ String, /* data */ Any], Unit]
+        ],
+      context: C
+    ): this.type = js.native
+    
+    def on[K /* <: String */, C](
+      event: /* import warning: importer.ImportType#apply Failed type conversion: K extends 'register' | 'unregister' ? never : K */ js.Any,
+      method: EventHandler[C, js.ThisFunction1[/* this */ C, /* repeated */ Any, Unit]]
+    ): this.type = js.native
+    def on[K /* <: String */, C](
+      event: /* import warning: importer.ImportType#apply Failed type conversion: K extends 'register' | 'unregister' ? never : K */ js.Any,
+      method: EventHandler[C, js.ThisFunction1[/* this */ C, /* repeated */ Any, Unit]],
+      args: js.Array[Any]
+    ): this.type = js.native
+    def on[K /* <: String */, C](
+      event: /* import warning: importer.ImportType#apply Failed type conversion: K extends 'register' | 'unregister' ? never : K */ js.Any,
+      method: EventHandler[C, js.ThisFunction1[/* this */ C, /* repeated */ Any, Unit]],
+      args: js.Array[Any],
+      context: C
+    ): this.type = js.native
+    def on[K /* <: String */, C](
+      event: /* import warning: importer.ImportType#apply Failed type conversion: K extends 'register' | 'unregister' ? never : K */ js.Any,
+      method: EventHandler[C, js.ThisFunction1[/* this */ C, /* repeated */ Any, Unit]],
+      args: Unit,
+      context: C
+    ): this.type = js.native
+    // #region EventEmitter overloads
+    @JSName("on")
+    def on_register[A /* <: ArgTuple */, C](
+      event: register,
+      method: EventHandler[
+          C, 
+          js.ThisFunction1[
+            /* this */ C, 
+            /* import warning: importer.ImportType#apply c repeated non-array type: A */ /* args */ js.Array[A], 
+            Unit
+          ]
+        ]
+    ): this.type = js.native
+    @JSName("on")
+    def on_register[A /* <: ArgTuple */, C](
+      event: register,
+      method: EventHandler[
+          C, 
+          js.ThisFunction1[
+            /* this */ C, 
+            /* import warning: importer.ImportType#apply c repeated non-array type: A */ /* args */ js.Array[A], 
+            Unit
+          ]
+        ],
+      args: A
+    ): this.type = js.native
+    @JSName("on")
+    def on_register[A /* <: ArgTuple */, C](
+      event: register,
+      method: EventHandler[
+          C, 
+          js.ThisFunction1[
+            /* this */ C, 
+            /* import warning: importer.ImportType#apply c repeated non-array type: A */ /* args */ js.Array[A], 
+            Unit
+          ]
+        ],
+      args: A,
+      context: C
+    ): this.type = js.native
+    @JSName("on")
+    def on_register[A /* <: ArgTuple */, C](
+      event: register,
+      method: EventHandler[
+          C, 
+          js.ThisFunction1[
+            /* this */ C, 
+            /* import warning: importer.ImportType#apply c repeated non-array type: A */ /* args */ js.Array[A], 
+            Unit
+          ]
+        ],
+      args: Unit,
+      context: C
+    ): this.type = js.native
+    @JSName("on")
+    def on_unregister[A /* <: ArgTuple */, C](
+      event: unregister,
+      method: EventHandler[
+          C, 
+          js.ThisFunction1[
+            /* this */ C, 
+            /* import warning: importer.ImportType#apply c repeated non-array type: A */ /* args */ js.Array[A], 
+            Unit
+          ]
+        ]
+    ): this.type = js.native
+    @JSName("on")
+    def on_unregister[A /* <: ArgTuple */, C](
+      event: unregister,
+      method: EventHandler[
+          C, 
+          js.ThisFunction1[
+            /* this */ C, 
+            /* import warning: importer.ImportType#apply c repeated non-array type: A */ /* args */ js.Array[A], 
+            Unit
+          ]
+        ],
+      args: A
+    ): this.type = js.native
+    @JSName("on")
+    def on_unregister[A /* <: ArgTuple */, C](
+      event: unregister,
+      method: EventHandler[
+          C, 
+          js.ThisFunction1[
+            /* this */ C, 
+            /* import warning: importer.ImportType#apply c repeated non-array type: A */ /* args */ js.Array[A], 
+            Unit
+          ]
+        ],
+      args: A,
+      context: C
+    ): this.type = js.native
+    @JSName("on")
+    def on_unregister[A /* <: ArgTuple */, C](
+      event: unregister,
+      method: EventHandler[
+          C, 
+          js.ThisFunction1[
+            /* this */ C, 
+            /* import warning: importer.ImportType#apply c repeated non-array type: A */ /* args */ js.Array[A], 
+            Unit
+          ]
+        ],
+      args: Unit,
+      context: C
+    ): this.type = js.native
+    
+    def once[K /* <: String */](
+      event: /* import warning: importer.ImportType#apply Failed type conversion: K extends 'register' | 'unregister' ? never : K */ js.Any,
+      listener: js.ThisFunction1[/* this */ Null, /* repeated */ Any, Unit]
+    ): this.type = js.native
+    @JSName("once")
+    def once_register(
+      event: register,
+      listener: js.ThisFunction1[/* this */ Null, /* args */ js.Tuple2[/* name */ String, /* data */ Any], Unit]
+    ): this.type = js.native
+    @JSName("once")
+    def once_unregister(
+      event: unregister,
+      listener: js.ThisFunction1[/* this */ Null, /* args */ js.Tuple2[/* name */ String, /* data */ Any], Unit]
+    ): this.type = js.native
     
     /**
       * Associate one or more symbolic names with some data.
@@ -588,6 +938,31 @@ object OO {
   trait RegistryConstructor
     extends StObject
        with Instantiable0[Registry]
+  
+  trait RegistryEventMap extends StObject {
+    
+    var register: js.Tuple2[/* name */ String, /* data */ Any]
+    
+    var unregister: js.Tuple2[/* name */ String, /* data */ Any]
+  }
+  object RegistryEventMap {
+    
+    inline def apply(
+      register: js.Tuple2[/* name */ String, /* data */ Any],
+      unregister: js.Tuple2[/* name */ String, /* data */ Any]
+    ): RegistryEventMap = {
+      val __obj = js.Dynamic.literal(register = register.asInstanceOf[js.Any], unregister = unregister.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RegistryEventMap]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegistryEventMap] (val x: Self) extends AnyVal {
+      
+      inline def setRegister(value: js.Tuple2[/* name */ String, /* data */ Any]): Self = StObject.set(x, "register", value.asInstanceOf[js.Any])
+      
+      inline def setUnregister(value: js.Tuple2[/* name */ String, /* data */ Any]): Self = StObject.set(x, "unregister", value.asInstanceOf[js.Any])
+    }
+  }
   
   /**
     * Manage a sorted list of {@link OO.EmitterList} objects.

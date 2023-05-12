@@ -1,7 +1,7 @@
 
 # Scala.js typings for inferno-hydrate
 
-Typings are for version 8.0.4
+Typings are for version 8.1.1
 
 ## Library description:
 Hydrate plugin to inferno. This package can be used to reuse server side rendered html

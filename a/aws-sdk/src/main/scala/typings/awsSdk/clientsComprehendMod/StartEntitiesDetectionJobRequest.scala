@@ -12,7 +12,7 @@ trait StartEntitiesDetectionJobRequest extends StObject {
   var ClientRequestToken: js.UndefOr[ClientRequestTokenString] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that grants Amazon Comprehend read access to your input data. For more information, see https://docs.aws.amazon.com/comprehend/latest/dg/access-control-managing-permissions.html#auth-role-permissions.
+    * The Amazon Resource Name (ARN) of the IAM role that grants Amazon Comprehend read access to your input data. For more information, see Role-based permissions.
     */
   var DataAccessRoleArn: IamRoleArn
   
@@ -20,6 +20,11 @@ trait StartEntitiesDetectionJobRequest extends StObject {
     * The Amazon Resource Name (ARN) that identifies the specific entity recognizer to be used by the StartEntitiesDetectionJob. This ARN is optional and is only used for a custom entity recognition job.
     */
   var EntityRecognizerArn: js.UndefOr[typings.awsSdk.clientsComprehendMod.EntityRecognizerArn] = js.undefined
+  
+  /**
+    * The Amazon Resource Number (ARN) of the flywheel associated with the model to use.
+    */
+  var FlywheelArn: js.UndefOr[ComprehendFlywheelArn] = js.undefined
   
   /**
     * Specifies the format and location of the input data for the job.
@@ -42,12 +47,12 @@ trait StartEntitiesDetectionJobRequest extends StObject {
   var OutputDataConfig: typings.awsSdk.clientsComprehendMod.OutputDataConfig
   
   /**
-    * Tags to be associated with the entities detection job. A tag is a key-value pair that adds metadata to a resource used by Amazon Comprehend. For example, a tag with "Sales" as the key might be added to a resource to indicate its use by the sales department.
+    * Tags to associate with the entities detection job. A tag is a key-value pair that adds metadata to a resource used by Amazon Comprehend. For example, a tag with "Sales" as the key might be added to a resource to indicate its use by the sales department.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
-    * ID for the AWS Key Management Service (KMS) key that Amazon Comprehend uses to encrypt data on the storage volume attached to the ML compute instance(s) that process the analysis job. The VolumeKmsKeyId can be either of the following formats:   KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"   
+    * ID for the Amazon Web Services Key Management Service (KMS) key that Amazon Comprehend uses to encrypt data on the storage volume attached to the ML compute instance(s) that process the analysis job. The VolumeKmsKeyId can be either of the following formats:   KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"   
     */
   var VolumeKmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   
@@ -80,6 +85,10 @@ object StartEntitiesDetectionJobRequest {
     inline def setEntityRecognizerArn(value: EntityRecognizerArn): Self = StObject.set(x, "EntityRecognizerArn", value.asInstanceOf[js.Any])
     
     inline def setEntityRecognizerArnUndefined: Self = StObject.set(x, "EntityRecognizerArn", js.undefined)
+    
+    inline def setFlywheelArn(value: ComprehendFlywheelArn): Self = StObject.set(x, "FlywheelArn", value.asInstanceOf[js.Any])
+    
+    inline def setFlywheelArnUndefined: Self = StObject.set(x, "FlywheelArn", js.undefined)
     
     inline def setInputDataConfig(value: InputDataConfig): Self = StObject.set(x, "InputDataConfig", value.asInstanceOf[js.Any])
     

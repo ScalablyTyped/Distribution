@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "mnemonist" : "0.39.1"
+      "mnemonist" : "0.39.5"
     }
   ],
   "test-dependencies" : [
     {
-      "mnemonist" : "0.39.1"
+      "mnemonist" : "0.39.5"
     }
   ],
   "compile-devDependencies" : [

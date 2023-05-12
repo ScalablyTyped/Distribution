@@ -1,105 +1,51 @@
 package typings.atlaskitTokens
 
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-UNSAFE_util-MISSING_TOKEN`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-UNSAFE_util-transparent`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-accent-boldBlue`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-accent-boldGreen`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-accent-boldOrange`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-accent-boldPurple`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-accent-boldRed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-accent-boldTeal`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-accent-subtleBlue`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-accent-subtleGreen`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-accent-subtleMagenta`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-accent-subtleOrange`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-accent-subtlePurple`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-accent-subtleRed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-accent-subtleTeal`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-blue-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-UNSAFE-transparent`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-blue-bolder`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-blue-subtle`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-blue-subtler`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-blue-subtlest`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-blue`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-gray-bolder`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-gray-subtle`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-gray-subtler`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-gray-subtlest`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-green-bold`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-green-bolder`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-green-subtle`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-green-subtler`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-green-subtlest`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-green`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-magenta-bold`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-magenta-bolder`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-magenta-subtle`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-magenta-subtler`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-magenta-subtlest`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-magenta`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-orange-bold`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-orange-bolder`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-orange-subtle`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-orange-subtler`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-orange-subtlest`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-orange`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-purple-bold`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-purple-bolder`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-purple-subtle`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-purple-subtler`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-purple-subtlest`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-purple`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-red-bold`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-red-bolder`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-red-subtle`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-red-subtler`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-red-subtlest`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-red`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-teal-bold`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-teal-bolder`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-teal-subtle`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-teal-subtler`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-teal-subtlest`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-teal`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-yellow-bold`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-yellow-bolder`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-yellow-subtle`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-yellow-subtler`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-yellow-subtlest`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-yellow`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-blanket`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldBrand-hover`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldBrand-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldBrand-resting`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldDanger-hover`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldDanger-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldDanger-resting`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldDiscovery-hover`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldDiscovery-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldDiscovery-resting`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldNeutral-hover`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldNeutral-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldNeutral-resting`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldSuccess-hover`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldSuccess-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldSuccess-resting`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldWarning-hover`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldWarning-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldWarning-resting`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-brand-bold-hovered`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-brand-bold-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-brand-bold`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-brand-hovered`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-brand-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-brand`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-card`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-danger-bold-hovered`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-danger-bold-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-danger-bold`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-danger-hovered`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-danger-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-danger`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-default`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-disabled`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-discovery-bold-hovered`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-discovery-bold-pressed`
@@ -119,7 +65,6 @@ import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-input`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-inverse-subtle-hovered`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-inverse-subtle-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-inverse-subtle`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-inverse`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-neutral-bold-hovered`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-neutral-bold-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-neutral-bold`
@@ -129,44 +74,18 @@ import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-neutral-sub
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-neutral-subtle-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-neutral-subtle`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-neutral`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-overlay`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-selected-bold-hovered`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-selected-bold-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-selected-bold`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-selected-hover`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-selected-hovered`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-selected-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-selected-resting`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-selected`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleBorderedNeutral-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleBorderedNeutral-resting`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleBrand-hover`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleBrand-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleBrand-resting`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleDanger-hover`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleDanger-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleDanger-resting`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleDiscovery-hover`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleDiscovery-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleDiscovery-resting`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleNeutral-hover`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleNeutral-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleNeutral-resting`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleSuccess-hover`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleSuccess-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleSuccess-resting`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleWarning-hover`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleWarning-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleWarning-resting`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-success-bold-hovered`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-success-bold-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-success-bold`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-success-hovered`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-success-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-success`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-sunken`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-transparentNeutral-hover`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-transparentNeutral-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-warning-bold-hovered`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-warning-bold-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-warning-bold`
@@ -190,42 +109,128 @@ import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-brand`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-danger`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-disabled`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-discovery`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-focus`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-focused`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-information`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-input`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-inverse`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-neutral`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-selected`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-success`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-warning`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-card`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-component-2`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-component-4`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-component-6`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-component-8`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-container-32`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-container-40`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-container-48`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-content-12`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-content-16`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-content-20`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-content-24`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-container-12`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-container-16`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-container-20`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-container-24`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-element-2`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-element-4`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-element-6`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-element-8`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-layout-32`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-layout-40`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-layout-64`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-gap-100`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-gap-200`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-gap-300`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-blue-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-blue-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-blue-bolder-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-blue-bolder`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-blue-boldest-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-blue-boldest`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-brand-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-brand`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-1-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-1`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-2-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-2`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-3-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-3`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-4-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-4`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-5-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-5`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-6-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-6`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-7-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-7`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-8-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-8`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-danger-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-danger-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-danger-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-danger`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-discovery-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-discovery-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-discovery-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-discovery`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-gray-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-gray-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-gray-bolder-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-gray-bolder`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-gray-boldest-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-gray-boldest`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-green-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-green-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-green-bolder-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-green-bolder`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-green-boldest-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-green-boldest`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-information-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-information-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-information-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-information`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-magenta-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-magenta-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-magenta-bolder-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-magenta-bolder`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-magenta-boldest-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-magenta-boldest`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-neutral-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-neutral`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-orange-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-orange-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-orange-bolder-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-orange-bolder`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-orange-boldest-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-orange-boldest`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-purple-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-purple-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-purple-bolder-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-purple-bolder`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-purple-boldest-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-purple-boldest`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-red-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-red-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-red-bolder-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-red-bolder`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-red-boldest-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-red-boldest`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-success-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-success-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-success-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-success`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-teal-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-teal-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-teal-bolder-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-teal-bolder`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-teal-boldest-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-teal-boldest`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-warning-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-warning-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-warning-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-warning`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-yellow-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-yellow-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-yellow-bolder-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-yellow-bolder`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-yellow-boldest-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-yellow-boldest`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-family-monospace`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-family-sans`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-lineHeight-100`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-lineHeight-200`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-lineHeight-300`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-lineHeight-400`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-lineHeight-500`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-lineHeight-600`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-size-050`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-size-075`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-size-100`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-size-200`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-size-300`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-size-400`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-size-500`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-size-600`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-weight-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-weight-medium`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-weight-regular`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-weight-semibold`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon-accent-blue`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon-accent-gray`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon-accent-green`
@@ -246,79 +251,40 @@ import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon-subtle`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon-success`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon-warning-inverse`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon-warning`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-iconBorder-brand`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-iconBorder-danger`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-iconBorder-discovery`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-iconBorder-success`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-iconBorder-warning`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-inset-100`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-inset-200`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-inset-300`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-interaction-hovered`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-interaction-inverse-hovered`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-interaction-inverse-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-interaction-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-link-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-link`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-opacity-disabled`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-opacity-loading`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-overlay-hover`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-overlay-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-overlay`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-0`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-12`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-16`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-20`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-24`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-2`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-32`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-40`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-48`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-4`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-6`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-8`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-025`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-050`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-075`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-0`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-100`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-150`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-200`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-250`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-300`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-400`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-500`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-600`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-0`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-1000`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-100`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-1100`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-200`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-300`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-400`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-500`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-600`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-700`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-800`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-900`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-radius-050`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-radius-100`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-radius-200`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-radius-300`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-radius-400`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-radius-round`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-shadow-overflow-perimeter`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-shadow-overflow-spread`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-shadow-overflow`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-shadow-overlay`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-shadow-raised`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-large`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-medium`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-none`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-small`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-xlarge`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-xsmall`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-xxSmall`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-xxlarge`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-xxxSmall`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-xxxlarge`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-xxxxSmall`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-xxxxlarge`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-skeleton-subtle`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-skeleton`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-space-025`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-space-050`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-space-075`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-space-0`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-space-1000`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-space-100`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-space-150`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-space-200`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-space-250`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-space-300`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-space-400`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-space-500`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-space-600`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-space-800`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-surface-hovered`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-surface-overlay-hovered`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-surface-overlay-pressed`
@@ -351,15 +317,8 @@ import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-brand`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-danger`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-disabled`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-discovery`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-highEmphasis`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-information`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-inverse`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-link-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-link-resting`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-lowEmphasis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-mediumEmphasis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-onBoldWarning`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-onBold`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-selected`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-subtle`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-subtlest`
@@ -367,6 +326,9 @@ import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-success`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-warning-inverse`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-warning`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-width-050`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-width-0`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-width-100`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -375,65 +337,41 @@ object distTypesEntryPointsTokenNamesMod {
   
   object default {
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.accent.boldBlue")
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.border.radius.050")
     @js.native
-    val colorAccentBoldBlue: `--ds-accent-boldBlue` = js.native
+    val borderRadius050: `--ds-radius-050` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.accent.boldGreen")
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.border.radius.100")
     @js.native
-    val colorAccentBoldGreen: `--ds-accent-boldGreen` = js.native
+    val borderRadius100: `--ds-radius-100` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.accent.boldOrange")
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.border.radius.200")
     @js.native
-    val colorAccentBoldOrange: `--ds-accent-boldOrange` = js.native
+    val borderRadius200: `--ds-radius-200` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.accent.boldPurple")
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.border.radius.300")
     @js.native
-    val colorAccentBoldPurple: `--ds-accent-boldPurple` = js.native
+    val borderRadius300: `--ds-radius-300` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.accent.boldRed")
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.border.radius.400")
     @js.native
-    val colorAccentBoldRed: `--ds-accent-boldRed` = js.native
+    val borderRadius400: `--ds-radius-400` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.accent.boldTeal")
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.border.radius.round")
     @js.native
-    val colorAccentBoldTeal: `--ds-accent-boldTeal` = js.native
+    val borderRadiusRound: `--ds-radius-round` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.accent.subtleBlue")
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.border.width.0")
     @js.native
-    val colorAccentSubtleBlue: `--ds-accent-subtleBlue` = js.native
+    val borderWidth0: `--ds-width-0` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.accent.subtleGreen")
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.border.width.050")
     @js.native
-    val colorAccentSubtleGreen: `--ds-accent-subtleGreen` = js.native
+    val borderWidth050: `--ds-width-050` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.accent.subtleMagenta")
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.border.width.100")
     @js.native
-    val colorAccentSubtleMagenta: `--ds-accent-subtleMagenta` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.accent.subtleOrange")
-    @js.native
-    val colorAccentSubtleOrange: `--ds-accent-subtleOrange` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.accent.subtlePurple")
-    @js.native
-    val colorAccentSubtlePurple: `--ds-accent-subtlePurple` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.accent.subtleRed")
-    @js.native
-    val colorAccentSubtleRed: `--ds-accent-subtleRed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.accent.subtleTeal")
-    @js.native
-    val colorAccentSubtleTeal: `--ds-accent-subtleTeal` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.accent.blue")
-    @js.native
-    val colorBackgroundAccentBlue: `--ds-background-accent-blue` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.accent.blue.bold")
-    @js.native
-    val colorBackgroundAccentBlueBold: `--ds-background-accent-blue-bold` = js.native
+    val borderWidth100: `--ds-width-100` = js.native
     
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.accent.blue.bolder")
     @js.native
@@ -467,14 +405,6 @@ object distTypesEntryPointsTokenNamesMod {
     @js.native
     val colorBackgroundAccentGraySubtlest: `--ds-background-accent-gray-subtlest` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.accent.green")
-    @js.native
-    val colorBackgroundAccentGreen: `--ds-background-accent-green` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.accent.green.bold")
-    @js.native
-    val colorBackgroundAccentGreenBold: `--ds-background-accent-green-bold` = js.native
-    
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.accent.green.bolder")
     @js.native
     val colorBackgroundAccentGreenBolder: `--ds-background-accent-green-bolder` = js.native
@@ -490,14 +420,6 @@ object distTypesEntryPointsTokenNamesMod {
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.accent.green.subtlest")
     @js.native
     val colorBackgroundAccentGreenSubtlest: `--ds-background-accent-green-subtlest` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.accent.magenta")
-    @js.native
-    val colorBackgroundAccentMagenta: `--ds-background-accent-magenta` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.accent.magenta.bold")
-    @js.native
-    val colorBackgroundAccentMagentaBold: `--ds-background-accent-magenta-bold` = js.native
     
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.accent.magenta.bolder")
     @js.native
@@ -515,14 +437,6 @@ object distTypesEntryPointsTokenNamesMod {
     @js.native
     val colorBackgroundAccentMagentaSubtlest: `--ds-background-accent-magenta-subtlest` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.accent.orange")
-    @js.native
-    val colorBackgroundAccentOrange: `--ds-background-accent-orange` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.accent.orange.bold")
-    @js.native
-    val colorBackgroundAccentOrangeBold: `--ds-background-accent-orange-bold` = js.native
-    
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.accent.orange.bolder")
     @js.native
     val colorBackgroundAccentOrangeBolder: `--ds-background-accent-orange-bolder` = js.native
@@ -538,14 +452,6 @@ object distTypesEntryPointsTokenNamesMod {
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.accent.orange.subtlest")
     @js.native
     val colorBackgroundAccentOrangeSubtlest: `--ds-background-accent-orange-subtlest` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.accent.purple")
-    @js.native
-    val colorBackgroundAccentPurple: `--ds-background-accent-purple` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.accent.purple.bold")
-    @js.native
-    val colorBackgroundAccentPurpleBold: `--ds-background-accent-purple-bold` = js.native
     
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.accent.purple.bolder")
     @js.native
@@ -563,14 +469,6 @@ object distTypesEntryPointsTokenNamesMod {
     @js.native
     val colorBackgroundAccentPurpleSubtlest: `--ds-background-accent-purple-subtlest` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.accent.red")
-    @js.native
-    val colorBackgroundAccentRed: `--ds-background-accent-red` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.accent.red.bold")
-    @js.native
-    val colorBackgroundAccentRedBold: `--ds-background-accent-red-bold` = js.native
-    
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.accent.red.bolder")
     @js.native
     val colorBackgroundAccentRedBolder: `--ds-background-accent-red-bolder` = js.native
@@ -586,14 +484,6 @@ object distTypesEntryPointsTokenNamesMod {
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.accent.red.subtlest")
     @js.native
     val colorBackgroundAccentRedSubtlest: `--ds-background-accent-red-subtlest` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.accent.teal")
-    @js.native
-    val colorBackgroundAccentTeal: `--ds-background-accent-teal` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.accent.teal.bold")
-    @js.native
-    val colorBackgroundAccentTealBold: `--ds-background-accent-teal-bold` = js.native
     
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.accent.teal.bolder")
     @js.native
@@ -611,14 +501,6 @@ object distTypesEntryPointsTokenNamesMod {
     @js.native
     val colorBackgroundAccentTealSubtlest: `--ds-background-accent-teal-subtlest` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.accent.yellow")
-    @js.native
-    val colorBackgroundAccentYellow: `--ds-background-accent-yellow` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.accent.yellow.bold")
-    @js.native
-    val colorBackgroundAccentYellowBold: `--ds-background-accent-yellow-bold` = js.native
-    
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.accent.yellow.bolder")
     @js.native
     val colorBackgroundAccentYellowBolder: `--ds-background-accent-yellow-bolder` = js.native
@@ -635,86 +517,6 @@ object distTypesEntryPointsTokenNamesMod {
     @js.native
     val colorBackgroundAccentYellowSubtlest: `--ds-background-accent-yellow-subtlest` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.blanket")
-    @js.native
-    val colorBackgroundBlanket: `--ds-background-blanket` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.boldBrand.hover")
-    @js.native
-    val colorBackgroundBoldBrandHover: `--ds-background-boldBrand-hover` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.boldBrand.pressed")
-    @js.native
-    val colorBackgroundBoldBrandPressed: `--ds-background-boldBrand-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.boldBrand.resting")
-    @js.native
-    val colorBackgroundBoldBrandResting: `--ds-background-boldBrand-resting` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.boldDanger.hover")
-    @js.native
-    val colorBackgroundBoldDangerHover: `--ds-background-boldDanger-hover` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.boldDanger.pressed")
-    @js.native
-    val colorBackgroundBoldDangerPressed: `--ds-background-boldDanger-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.boldDanger.resting")
-    @js.native
-    val colorBackgroundBoldDangerResting: `--ds-background-boldDanger-resting` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.boldDiscovery.hover")
-    @js.native
-    val colorBackgroundBoldDiscoveryHover: `--ds-background-boldDiscovery-hover` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.boldDiscovery.pressed")
-    @js.native
-    val colorBackgroundBoldDiscoveryPressed: `--ds-background-boldDiscovery-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.boldDiscovery.resting")
-    @js.native
-    val colorBackgroundBoldDiscoveryResting: `--ds-background-boldDiscovery-resting` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.boldNeutral.hover")
-    @js.native
-    val colorBackgroundBoldNeutralHover: `--ds-background-boldNeutral-hover` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.boldNeutral.pressed")
-    @js.native
-    val colorBackgroundBoldNeutralPressed: `--ds-background-boldNeutral-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.boldNeutral.resting")
-    @js.native
-    val colorBackgroundBoldNeutralResting: `--ds-background-boldNeutral-resting` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.boldSuccess.hover")
-    @js.native
-    val colorBackgroundBoldSuccessHover: `--ds-background-boldSuccess-hover` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.boldSuccess.pressed")
-    @js.native
-    val colorBackgroundBoldSuccessPressed: `--ds-background-boldSuccess-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.boldSuccess.resting")
-    @js.native
-    val colorBackgroundBoldSuccessResting: `--ds-background-boldSuccess-resting` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.boldWarning.hover")
-    @js.native
-    val colorBackgroundBoldWarningHover: `--ds-background-boldWarning-hover` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.boldWarning.pressed")
-    @js.native
-    val colorBackgroundBoldWarningPressed: `--ds-background-boldWarning-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.boldWarning.resting")
-    @js.native
-    val colorBackgroundBoldWarningResting: `--ds-background-boldWarning-resting` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.brand")
-    @js.native
-    val colorBackgroundBrand: `--ds-background-brand` = js.native
-    
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.brand.bold")
     @js.native
     val colorBackgroundBrandBold: `--ds-background-brand-bold` = js.native
@@ -726,18 +528,6 @@ object distTypesEntryPointsTokenNamesMod {
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.brand.bold.pressed")
     @js.native
     val colorBackgroundBrandBoldPressed: `--ds-background-brand-bold-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.brand.hovered")
-    @js.native
-    val colorBackgroundBrandHovered: `--ds-background-brand-hovered` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.brand.pressed")
-    @js.native
-    val colorBackgroundBrandPressed: `--ds-background-brand-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.card")
-    @js.native
-    val colorBackgroundCard: `--ds-background-card` = js.native
     
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.danger")
     @js.native
@@ -762,10 +552,6 @@ object distTypesEntryPointsTokenNamesMod {
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.danger.pressed")
     @js.native
     val colorBackgroundDangerPressed: `--ds-background-danger-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.default")
-    @js.native
-    val colorBackgroundDefault: `--ds-background-default` = js.native
     
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.disabled")
     @js.native
@@ -831,10 +617,6 @@ object distTypesEntryPointsTokenNamesMod {
     @js.native
     val colorBackgroundInputPressed: `--ds-background-input-pressed` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.inverse")
-    @js.native
-    val colorBackgroundInverse: `--ds-background-inverse` = js.native
-    
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.inverse.subtle")
     @js.native
     val colorBackgroundInverseSubtle: `--ds-background-inverse-subtle` = js.native
@@ -883,10 +665,6 @@ object distTypesEntryPointsTokenNamesMod {
     @js.native
     val colorBackgroundNeutralSubtlePressed: `--ds-background-neutral-subtle-pressed` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.overlay")
-    @js.native
-    val colorBackgroundOverlay: `--ds-background-overlay` = js.native
-    
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.selected")
     @js.native
     val colorBackgroundSelected: `--ds-background-selected` = js.native
@@ -903,10 +681,6 @@ object distTypesEntryPointsTokenNamesMod {
     @js.native
     val colorBackgroundSelectedBoldPressed: `--ds-background-selected-bold-pressed` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.selected.hover")
-    @js.native
-    val colorBackgroundSelectedHover: `--ds-background-selected-hover` = js.native
-    
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.selected.hovered")
     @js.native
     val colorBackgroundSelectedHovered: `--ds-background-selected-hovered` = js.native
@@ -914,90 +688,6 @@ object distTypesEntryPointsTokenNamesMod {
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.selected.pressed")
     @js.native
     val colorBackgroundSelectedPressed: `--ds-background-selected-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.selected.resting")
-    @js.native
-    val colorBackgroundSelectedResting: `--ds-background-selected-resting` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.subtleBorderedNeutral.pressed")
-    @js.native
-    val colorBackgroundSubtleBorderedNeutralPressed: `--ds-background-subtleBorderedNeutral-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.subtleBorderedNeutral.resting")
-    @js.native
-    val colorBackgroundSubtleBorderedNeutralResting: `--ds-background-subtleBorderedNeutral-resting` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.subtleBrand.hover")
-    @js.native
-    val colorBackgroundSubtleBrandHover: `--ds-background-subtleBrand-hover` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.subtleBrand.pressed")
-    @js.native
-    val colorBackgroundSubtleBrandPressed: `--ds-background-subtleBrand-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.subtleBrand.resting")
-    @js.native
-    val colorBackgroundSubtleBrandResting: `--ds-background-subtleBrand-resting` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.subtleDanger.hover")
-    @js.native
-    val colorBackgroundSubtleDangerHover: `--ds-background-subtleDanger-hover` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.subtleDanger.pressed")
-    @js.native
-    val colorBackgroundSubtleDangerPressed: `--ds-background-subtleDanger-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.subtleDanger.resting")
-    @js.native
-    val colorBackgroundSubtleDangerResting: `--ds-background-subtleDanger-resting` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.subtleDiscovery.hover")
-    @js.native
-    val colorBackgroundSubtleDiscoveryHover: `--ds-background-subtleDiscovery-hover` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.subtleDiscovery.pressed")
-    @js.native
-    val colorBackgroundSubtleDiscoveryPressed: `--ds-background-subtleDiscovery-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.subtleDiscovery.resting")
-    @js.native
-    val colorBackgroundSubtleDiscoveryResting: `--ds-background-subtleDiscovery-resting` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.subtleNeutral.hover")
-    @js.native
-    val colorBackgroundSubtleNeutralHover: `--ds-background-subtleNeutral-hover` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.subtleNeutral.pressed")
-    @js.native
-    val colorBackgroundSubtleNeutralPressed: `--ds-background-subtleNeutral-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.subtleNeutral.resting")
-    @js.native
-    val colorBackgroundSubtleNeutralResting: `--ds-background-subtleNeutral-resting` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.subtleSuccess.hover")
-    @js.native
-    val colorBackgroundSubtleSuccessHover: `--ds-background-subtleSuccess-hover` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.subtleSuccess.pressed")
-    @js.native
-    val colorBackgroundSubtleSuccessPressed: `--ds-background-subtleSuccess-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.subtleSuccess.resting")
-    @js.native
-    val colorBackgroundSubtleSuccessResting: `--ds-background-subtleSuccess-resting` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.subtleWarning.hover")
-    @js.native
-    val colorBackgroundSubtleWarningHover: `--ds-background-subtleWarning-hover` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.subtleWarning.pressed")
-    @js.native
-    val colorBackgroundSubtleWarningPressed: `--ds-background-subtleWarning-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.subtleWarning.resting")
-    @js.native
-    val colorBackgroundSubtleWarningResting: `--ds-background-subtleWarning-resting` = js.native
     
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.success")
     @js.native
@@ -1022,18 +712,6 @@ object distTypesEntryPointsTokenNamesMod {
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.success.pressed")
     @js.native
     val colorBackgroundSuccessPressed: `--ds-background-success-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.sunken")
-    @js.native
-    val colorBackgroundSunken: `--ds-background-sunken` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.transparentNeutral.hover")
-    @js.native
-    val colorBackgroundTransparentNeutralHover: `--ds-background-transparentNeutral-hover` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.transparentNeutral.pressed")
-    @js.native
-    val colorBackgroundTransparentNeutralPressed: `--ds-background-transparentNeutral-pressed` = js.native
     
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.background.warning")
     @js.native
@@ -1131,10 +809,6 @@ object distTypesEntryPointsTokenNamesMod {
     @js.native
     val colorBorderDiscovery: `--ds-border-discovery` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.border.focus")
-    @js.native
-    val colorBorderFocus: `--ds-border-focus` = js.native
-    
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.border.focused")
     @js.native
     val colorBorderFocused: `--ds-border-focused` = js.native
@@ -1151,10 +825,6 @@ object distTypesEntryPointsTokenNamesMod {
     @js.native
     val colorBorderInverse: `--ds-border-inverse` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.border.neutral")
-    @js.native
-    val colorBorderNeutral: `--ds-border-neutral` = js.native
-    
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.border.selected")
     @js.native
     val colorBorderSelected: `--ds-border-selected` = js.native
@@ -1166,6 +836,382 @@ object distTypesEntryPointsTokenNamesMod {
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.border.warning")
     @js.native
     val colorBorderWarning: `--ds-border-warning` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.blue.bold")
+    @js.native
+    val colorChartBlueBold: `--ds-chart-blue-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.blue.bold.hovered")
+    @js.native
+    val colorChartBlueBoldHovered: `--ds-chart-blue-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.blue.bolder")
+    @js.native
+    val colorChartBlueBolder: `--ds-chart-blue-bolder` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.blue.bolder.hovered")
+    @js.native
+    val colorChartBlueBolderHovered: `--ds-chart-blue-bolder-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.blue.boldest")
+    @js.native
+    val colorChartBlueBoldest: `--ds-chart-blue-boldest` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.blue.boldest.hovered")
+    @js.native
+    val colorChartBlueBoldestHovered: `--ds-chart-blue-boldest-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.brand")
+    @js.native
+    val colorChartBrand: `--ds-chart-brand` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.brand.hovered")
+    @js.native
+    val colorChartBrandHovered: `--ds-chart-brand-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.categorical.1")
+    @js.native
+    val colorChartCategorical1: `--ds-chart-categorical-1` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.categorical.1.hovered")
+    @js.native
+    val colorChartCategorical1Hovered: `--ds-chart-categorical-1-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.categorical.2")
+    @js.native
+    val colorChartCategorical2: `--ds-chart-categorical-2` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.categorical.2.hovered")
+    @js.native
+    val colorChartCategorical2Hovered: `--ds-chart-categorical-2-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.categorical.3")
+    @js.native
+    val colorChartCategorical3: `--ds-chart-categorical-3` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.categorical.3.hovered")
+    @js.native
+    val colorChartCategorical3Hovered: `--ds-chart-categorical-3-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.categorical.4")
+    @js.native
+    val colorChartCategorical4: `--ds-chart-categorical-4` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.categorical.4.hovered")
+    @js.native
+    val colorChartCategorical4Hovered: `--ds-chart-categorical-4-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.categorical.5")
+    @js.native
+    val colorChartCategorical5: `--ds-chart-categorical-5` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.categorical.5.hovered")
+    @js.native
+    val colorChartCategorical5Hovered: `--ds-chart-categorical-5-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.categorical.6")
+    @js.native
+    val colorChartCategorical6: `--ds-chart-categorical-6` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.categorical.6.hovered")
+    @js.native
+    val colorChartCategorical6Hovered: `--ds-chart-categorical-6-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.categorical.7")
+    @js.native
+    val colorChartCategorical7: `--ds-chart-categorical-7` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.categorical.7.hovered")
+    @js.native
+    val colorChartCategorical7Hovered: `--ds-chart-categorical-7-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.categorical.8")
+    @js.native
+    val colorChartCategorical8: `--ds-chart-categorical-8` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.categorical.8.hovered")
+    @js.native
+    val colorChartCategorical8Hovered: `--ds-chart-categorical-8-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.danger")
+    @js.native
+    val colorChartDanger: `--ds-chart-danger` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.danger.bold")
+    @js.native
+    val colorChartDangerBold: `--ds-chart-danger-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.danger.bold.hovered")
+    @js.native
+    val colorChartDangerBoldHovered: `--ds-chart-danger-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.danger.hovered")
+    @js.native
+    val colorChartDangerHovered: `--ds-chart-danger-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.discovery")
+    @js.native
+    val colorChartDiscovery: `--ds-chart-discovery` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.discovery.bold")
+    @js.native
+    val colorChartDiscoveryBold: `--ds-chart-discovery-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.discovery.bold.hovered")
+    @js.native
+    val colorChartDiscoveryBoldHovered: `--ds-chart-discovery-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.discovery.hovered")
+    @js.native
+    val colorChartDiscoveryHovered: `--ds-chart-discovery-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.gray.bold")
+    @js.native
+    val colorChartGrayBold: `--ds-chart-gray-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.gray.bold.hovered")
+    @js.native
+    val colorChartGrayBoldHovered: `--ds-chart-gray-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.gray.bolder")
+    @js.native
+    val colorChartGrayBolder: `--ds-chart-gray-bolder` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.gray.bolder.hovered")
+    @js.native
+    val colorChartGrayBolderHovered: `--ds-chart-gray-bolder-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.gray.boldest")
+    @js.native
+    val colorChartGrayBoldest: `--ds-chart-gray-boldest` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.gray.boldest.hovered")
+    @js.native
+    val colorChartGrayBoldestHovered: `--ds-chart-gray-boldest-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.green.bold")
+    @js.native
+    val colorChartGreenBold: `--ds-chart-green-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.green.bold.hovered")
+    @js.native
+    val colorChartGreenBoldHovered: `--ds-chart-green-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.green.bolder")
+    @js.native
+    val colorChartGreenBolder: `--ds-chart-green-bolder` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.green.bolder.hovered")
+    @js.native
+    val colorChartGreenBolderHovered: `--ds-chart-green-bolder-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.green.boldest")
+    @js.native
+    val colorChartGreenBoldest: `--ds-chart-green-boldest` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.green.boldest.hovered")
+    @js.native
+    val colorChartGreenBoldestHovered: `--ds-chart-green-boldest-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.information")
+    @js.native
+    val colorChartInformation: `--ds-chart-information` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.information.bold")
+    @js.native
+    val colorChartInformationBold: `--ds-chart-information-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.information.bold.hovered")
+    @js.native
+    val colorChartInformationBoldHovered: `--ds-chart-information-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.information.hovered")
+    @js.native
+    val colorChartInformationHovered: `--ds-chart-information-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.magenta.bold")
+    @js.native
+    val colorChartMagentaBold: `--ds-chart-magenta-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.magenta.bold.hovered")
+    @js.native
+    val colorChartMagentaBoldHovered: `--ds-chart-magenta-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.magenta.bolder")
+    @js.native
+    val colorChartMagentaBolder: `--ds-chart-magenta-bolder` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.magenta.bolder.hovered")
+    @js.native
+    val colorChartMagentaBolderHovered: `--ds-chart-magenta-bolder-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.magenta.boldest")
+    @js.native
+    val colorChartMagentaBoldest: `--ds-chart-magenta-boldest` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.magenta.boldest.hovered")
+    @js.native
+    val colorChartMagentaBoldestHovered: `--ds-chart-magenta-boldest-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.neutral")
+    @js.native
+    val colorChartNeutral: `--ds-chart-neutral` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.neutral.hovered")
+    @js.native
+    val colorChartNeutralHovered: `--ds-chart-neutral-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.orange.bold")
+    @js.native
+    val colorChartOrangeBold: `--ds-chart-orange-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.orange.bold.hovered")
+    @js.native
+    val colorChartOrangeBoldHovered: `--ds-chart-orange-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.orange.bolder")
+    @js.native
+    val colorChartOrangeBolder: `--ds-chart-orange-bolder` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.orange.bolder.hovered")
+    @js.native
+    val colorChartOrangeBolderHovered: `--ds-chart-orange-bolder-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.orange.boldest")
+    @js.native
+    val colorChartOrangeBoldest: `--ds-chart-orange-boldest` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.orange.boldest.hovered")
+    @js.native
+    val colorChartOrangeBoldestHovered: `--ds-chart-orange-boldest-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.purple.bold")
+    @js.native
+    val colorChartPurpleBold: `--ds-chart-purple-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.purple.bold.hovered")
+    @js.native
+    val colorChartPurpleBoldHovered: `--ds-chart-purple-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.purple.bolder")
+    @js.native
+    val colorChartPurpleBolder: `--ds-chart-purple-bolder` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.purple.bolder.hovered")
+    @js.native
+    val colorChartPurpleBolderHovered: `--ds-chart-purple-bolder-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.purple.boldest")
+    @js.native
+    val colorChartPurpleBoldest: `--ds-chart-purple-boldest` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.purple.boldest.hovered")
+    @js.native
+    val colorChartPurpleBoldestHovered: `--ds-chart-purple-boldest-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.red.bold")
+    @js.native
+    val colorChartRedBold: `--ds-chart-red-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.red.bold.hovered")
+    @js.native
+    val colorChartRedBoldHovered: `--ds-chart-red-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.red.bolder")
+    @js.native
+    val colorChartRedBolder: `--ds-chart-red-bolder` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.red.bolder.hovered")
+    @js.native
+    val colorChartRedBolderHovered: `--ds-chart-red-bolder-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.red.boldest")
+    @js.native
+    val colorChartRedBoldest: `--ds-chart-red-boldest` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.red.boldest.hovered")
+    @js.native
+    val colorChartRedBoldestHovered: `--ds-chart-red-boldest-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.success")
+    @js.native
+    val colorChartSuccess: `--ds-chart-success` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.success.bold")
+    @js.native
+    val colorChartSuccessBold: `--ds-chart-success-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.success.bold.hovered")
+    @js.native
+    val colorChartSuccessBoldHovered: `--ds-chart-success-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.success.hovered")
+    @js.native
+    val colorChartSuccessHovered: `--ds-chart-success-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.teal.bold")
+    @js.native
+    val colorChartTealBold: `--ds-chart-teal-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.teal.bold.hovered")
+    @js.native
+    val colorChartTealBoldHovered: `--ds-chart-teal-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.teal.bolder")
+    @js.native
+    val colorChartTealBolder: `--ds-chart-teal-bolder` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.teal.bolder.hovered")
+    @js.native
+    val colorChartTealBolderHovered: `--ds-chart-teal-bolder-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.teal.boldest")
+    @js.native
+    val colorChartTealBoldest: `--ds-chart-teal-boldest` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.teal.boldest.hovered")
+    @js.native
+    val colorChartTealBoldestHovered: `--ds-chart-teal-boldest-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.warning")
+    @js.native
+    val colorChartWarning: `--ds-chart-warning` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.warning.bold")
+    @js.native
+    val colorChartWarningBold: `--ds-chart-warning-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.warning.bold.hovered")
+    @js.native
+    val colorChartWarningBoldHovered: `--ds-chart-warning-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.warning.hovered")
+    @js.native
+    val colorChartWarningHovered: `--ds-chart-warning-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.yellow.bold")
+    @js.native
+    val colorChartYellowBold: `--ds-chart-yellow-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.yellow.bold.hovered")
+    @js.native
+    val colorChartYellowBoldHovered: `--ds-chart-yellow-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.yellow.bolder")
+    @js.native
+    val colorChartYellowBolder: `--ds-chart-yellow-bolder` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.yellow.bolder.hovered")
+    @js.native
+    val colorChartYellowBolderHovered: `--ds-chart-yellow-bolder-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.yellow.boldest")
+    @js.native
+    val colorChartYellowBoldest: `--ds-chart-yellow-boldest` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.chart.yellow.boldest.hovered")
+    @js.native
+    val colorChartYellowBoldestHovered: `--ds-chart-yellow-boldest-hovered` = js.native
     
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.icon")
     @js.native
@@ -1206,26 +1252,6 @@ object distTypesEntryPointsTokenNamesMod {
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.icon.accent.yellow")
     @js.native
     val colorIconAccentYellow: `--ds-icon-accent-yellow` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.iconBorder.brand")
-    @js.native
-    val colorIconBorderBrand: `--ds-iconBorder-brand` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.iconBorder.danger")
-    @js.native
-    val colorIconBorderDanger: `--ds-iconBorder-danger` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.iconBorder.discovery")
-    @js.native
-    val colorIconBorderDiscovery: `--ds-iconBorder-discovery` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.iconBorder.success")
-    @js.native
-    val colorIconBorderSuccess: `--ds-iconBorder-success` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.iconBorder.warning")
-    @js.native
-    val colorIconBorderWarning: `--ds-iconBorder-warning` = js.native
     
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.icon.brand")
     @js.native
@@ -1275,14 +1301,6 @@ object distTypesEntryPointsTokenNamesMod {
     @js.native
     val colorInteractionHovered: `--ds-interaction-hovered` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.interaction.inverse.hovered")
-    @js.native
-    val colorInteractionInverseHovered: `--ds-interaction-inverse-hovered` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.interaction.inverse.pressed")
-    @js.native
-    val colorInteractionInversePressed: `--ds-interaction-inverse-pressed` = js.native
-    
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.interaction.pressed")
     @js.native
     val colorInteractionPressed: `--ds-interaction-pressed` = js.native
@@ -1294,14 +1312,6 @@ object distTypesEntryPointsTokenNamesMod {
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.link.pressed")
     @js.native
     val colorLinkPressed: `--ds-link-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.overlay.hover")
-    @js.native
-    val colorOverlayHover: `--ds-overlay-hover` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.overlay.pressed")
-    @js.native
-    val colorOverlayPressed: `--ds-overlay-pressed` = js.native
     
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.skeleton")
     @js.native
@@ -1403,10 +1413,6 @@ object distTypesEntryPointsTokenNamesMod {
     @js.native
     val colorTextDiscovery: `--ds-text-discovery` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.text.highEmphasis")
-    @js.native
-    val colorTextHighEmphasis: `--ds-text-highEmphasis` = js.native
-    
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.text.information")
     @js.native
     val colorTextInformation: `--ds-text-information` = js.native
@@ -1414,30 +1420,6 @@ object distTypesEntryPointsTokenNamesMod {
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.text.inverse")
     @js.native
     val colorTextInverse: `--ds-text-inverse` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.text.link.pressed")
-    @js.native
-    val colorTextLinkPressed: `--ds-text-link-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.text.link.resting")
-    @js.native
-    val colorTextLinkResting: `--ds-text-link-resting` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.text.lowEmphasis")
-    @js.native
-    val colorTextLowEmphasis: `--ds-text-lowEmphasis` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.text.mediumEmphasis")
-    @js.native
-    val colorTextMediumEmphasis: `--ds-text-mediumEmphasis` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.text.onBold")
-    @js.native
-    val colorTextOnBold: `--ds-text-onBold` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.text.onBoldWarning")
-    @js.native
-    val colorTextOnBoldWarning: `--ds-text-onBoldWarning` = js.native
     
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.color.text.selected")
     @js.native
@@ -1466,6 +1448,14 @@ object distTypesEntryPointsTokenNamesMod {
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.elevation.shadow.overflow")
     @js.native
     val elevationShadowOverflow: `--ds-shadow-overflow` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.elevation.shadow.overflow.perimeter")
+    @js.native
+    val elevationShadowOverflowPerimeter: `--ds-shadow-overflow-perimeter` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.elevation.shadow.overflow.spread")
+    @js.native
+    val elevationShadowOverflowSpread: `--ds-shadow-overflow-spread` = js.native
     
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.elevation.shadow.overlay")
     @js.native
@@ -1515,6 +1505,86 @@ object distTypesEntryPointsTokenNamesMod {
     @js.native
     val elevationSurfaceSunken: `--ds-surface-sunken` = js.native
     
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.font.family.monospace")
+    @js.native
+    val fontFamilyMonospace: `--ds-font-family-monospace` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.font.family.sans")
+    @js.native
+    val fontFamilySans: `--ds-font-family-sans` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.font.lineHeight.100")
+    @js.native
+    val fontLineHeight100: `--ds-font-lineHeight-100` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.font.lineHeight.200")
+    @js.native
+    val fontLineHeight200: `--ds-font-lineHeight-200` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.font.lineHeight.300")
+    @js.native
+    val fontLineHeight300: `--ds-font-lineHeight-300` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.font.lineHeight.400")
+    @js.native
+    val fontLineHeight400: `--ds-font-lineHeight-400` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.font.lineHeight.500")
+    @js.native
+    val fontLineHeight500: `--ds-font-lineHeight-500` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.font.lineHeight.600")
+    @js.native
+    val fontLineHeight600: `--ds-font-lineHeight-600` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.font.size.050")
+    @js.native
+    val fontSize050: `--ds-font-size-050` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.font.size.075")
+    @js.native
+    val fontSize075: `--ds-font-size-075` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.font.size.100")
+    @js.native
+    val fontSize100: `--ds-font-size-100` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.font.size.200")
+    @js.native
+    val fontSize200: `--ds-font-size-200` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.font.size.300")
+    @js.native
+    val fontSize300: `--ds-font-size-300` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.font.size.400")
+    @js.native
+    val fontSize400: `--ds-font-size-400` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.font.size.500")
+    @js.native
+    val fontSize500: `--ds-font-size-500` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.font.size.600")
+    @js.native
+    val fontSize600: `--ds-font-size-600` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.font.weight.bold")
+    @js.native
+    val fontWeightBold: `--ds-font-weight-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.font.weight.medium")
+    @js.native
+    val fontWeightMedium: `--ds-font-weight-medium` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.font.weight.regular")
+    @js.native
+    val fontWeightRegular: `--ds-font-weight-regular` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.font.weight.semibold")
+    @js.native
+    val fontWeightSemibold: `--ds-font-weight-semibold` = js.native
+    
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.opacity.disabled")
     @js.native
     val opacityDisabled: `--ds-opacity-disabled` = js.native
@@ -1523,324 +1593,64 @@ object distTypesEntryPointsTokenNamesMod {
     @js.native
     val opacityLoading: `--ds-opacity-loading` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.shadow.card")
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.space.0")
     @js.native
-    val shadowCard: `--ds-card` = js.native
+    val space0: `--ds-space-0` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.shadow.overlay")
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.space.025")
     @js.native
-    val shadowOverlay: `--ds-overlay` = js.native
+    val space025: `--ds-space-025` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.ccc.component.2")
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.space.050")
     @js.native
-    val spacingCccComponent2: `--ds-ccc-component-2` = js.native
+    val space050: `--ds-space-050` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.ccc.component.4")
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.space.075")
     @js.native
-    val spacingCccComponent4: `--ds-ccc-component-4` = js.native
+    val space075: `--ds-space-075` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.ccc.component.6")
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.space.100")
     @js.native
-    val spacingCccComponent6: `--ds-ccc-component-6` = js.native
+    val space100: `--ds-space-100` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.ccc.component.8")
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.space.1000")
     @js.native
-    val spacingCccComponent8: `--ds-ccc-component-8` = js.native
+    val space1000: `--ds-space-1000` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.ccc.container.32")
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.space.150")
     @js.native
-    val spacingCccContainer32: `--ds-ccc-container-32` = js.native
+    val space150: `--ds-space-150` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.ccc.container.40")
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.space.200")
     @js.native
-    val spacingCccContainer40: `--ds-ccc-container-40` = js.native
+    val space200: `--ds-space-200` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.ccc.container.48")
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.space.250")
     @js.native
-    val spacingCccContainer48: `--ds-ccc-container-48` = js.native
+    val space250: `--ds-space-250` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.ccc.content.12")
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.space.300")
     @js.native
-    val spacingCccContent12: `--ds-ccc-content-12` = js.native
+    val space300: `--ds-space-300` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.ccc.content.16")
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.space.400")
     @js.native
-    val spacingCccContent16: `--ds-ccc-content-16` = js.native
+    val space400: `--ds-space-400` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.ccc.content.20")
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.space.500")
     @js.native
-    val spacingCccContent20: `--ds-ccc-content-20` = js.native
+    val space500: `--ds-space-500` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.ccc.content.24")
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.space.600")
     @js.native
-    val spacingCccContent24: `--ds-ccc-content-24` = js.native
+    val space600: `--ds-space-600` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.ecl.container.12")
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.space.800")
     @js.native
-    val spacingEclContainer12: `--ds-ecl-container-12` = js.native
+    val space800: `--ds-space-800` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.ecl.container.16")
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.utility.UNSAFE.transparent")
     @js.native
-    val spacingEclContainer16: `--ds-ecl-container-16` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.ecl.container.20")
-    @js.native
-    val spacingEclContainer20: `--ds-ecl-container-20` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.ecl.container.24")
-    @js.native
-    val spacingEclContainer24: `--ds-ecl-container-24` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.ecl.element.2")
-    @js.native
-    val spacingEclElement2: `--ds-ecl-element-2` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.ecl.element.4")
-    @js.native
-    val spacingEclElement4: `--ds-ecl-element-4` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.ecl.element.6")
-    @js.native
-    val spacingEclElement6: `--ds-ecl-element-6` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.ecl.element.8")
-    @js.native
-    val spacingEclElement8: `--ds-ecl-element-8` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.ecl.layout.32")
-    @js.native
-    val spacingEclLayout32: `--ds-ecl-layout-32` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.ecl.layout.40")
-    @js.native
-    val spacingEclLayout40: `--ds-ecl-layout-40` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.ecl.layout.64")
-    @js.native
-    val spacingEclLayout64: `--ds-ecl-layout-64` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.gap.100")
-    @js.native
-    val spacingGap100: `--ds-gap-100` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.gap.200")
-    @js.native
-    val spacingGap200: `--ds-gap-200` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.gap.300")
-    @js.native
-    val spacingGap300: `--ds-gap-300` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.inset.100")
-    @js.native
-    val spacingInset100: `--ds-inset-100` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.inset.200")
-    @js.native
-    val spacingInset200: `--ds-inset-200` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.inset.300")
-    @js.native
-    val spacingInset300: `--ds-inset-300` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.pixel.0")
-    @js.native
-    val spacingPixel0: `--ds-pixel-0` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.pixel.12")
-    @js.native
-    val spacingPixel12: `--ds-pixel-12` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.pixel.16")
-    @js.native
-    val spacingPixel16: `--ds-pixel-16` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.pixel.2")
-    @js.native
-    val spacingPixel2: `--ds-pixel-2` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.pixel.20")
-    @js.native
-    val spacingPixel20: `--ds-pixel-20` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.pixel.24")
-    @js.native
-    val spacingPixel24: `--ds-pixel-24` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.pixel.32")
-    @js.native
-    val spacingPixel32: `--ds-pixel-32` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.pixel.4")
-    @js.native
-    val spacingPixel4: `--ds-pixel-4` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.pixel.40")
-    @js.native
-    val spacingPixel40: `--ds-pixel-40` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.pixel.48")
-    @js.native
-    val spacingPixel48: `--ds-pixel-48` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.pixel.6")
-    @js.native
-    val spacingPixel6: `--ds-pixel-6` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.pixel.8")
-    @js.native
-    val spacingPixel8: `--ds-pixel-8` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scale.0")
-    @js.native
-    val spacingScale0: `--ds-scale-0` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scale.025")
-    @js.native
-    val spacingScale025: `--ds-scale-025` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scale.050")
-    @js.native
-    val spacingScale050: `--ds-scale-050` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scale.075")
-    @js.native
-    val spacingScale075: `--ds-scale-075` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scale.100")
-    @js.native
-    val spacingScale100: `--ds-scale-100` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scale.150")
-    @js.native
-    val spacingScale150: `--ds-scale-150` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scale.200")
-    @js.native
-    val spacingScale200: `--ds-scale-200` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scale.250")
-    @js.native
-    val spacingScale250: `--ds-scale-250` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scale.300")
-    @js.native
-    val spacingScale300: `--ds-scale-300` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scale.400")
-    @js.native
-    val spacingScale400: `--ds-scale-400` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scale.500")
-    @js.native
-    val spacingScale500: `--ds-scale-500` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scale.600")
-    @js.native
-    val spacingScale600: `--ds-scale-600` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scaleLinear.0")
-    @js.native
-    val spacingScaleLinear0: `--ds-scaleLinear-0` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scaleLinear.100")
-    @js.native
-    val spacingScaleLinear100: `--ds-scaleLinear-100` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scaleLinear.1000")
-    @js.native
-    val spacingScaleLinear1000: `--ds-scaleLinear-1000` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scaleLinear.1100")
-    @js.native
-    val spacingScaleLinear1100: `--ds-scaleLinear-1100` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scaleLinear.200")
-    @js.native
-    val spacingScaleLinear200: `--ds-scaleLinear-200` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scaleLinear.300")
-    @js.native
-    val spacingScaleLinear300: `--ds-scaleLinear-300` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scaleLinear.400")
-    @js.native
-    val spacingScaleLinear400: `--ds-scaleLinear-400` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scaleLinear.500")
-    @js.native
-    val spacingScaleLinear500: `--ds-scaleLinear-500` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scaleLinear.600")
-    @js.native
-    val spacingScaleLinear600: `--ds-scaleLinear-600` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scaleLinear.700")
-    @js.native
-    val spacingScaleLinear700: `--ds-scaleLinear-700` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scaleLinear.800")
-    @js.native
-    val spacingScaleLinear800: `--ds-scaleLinear-800` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scaleLinear.900")
-    @js.native
-    val spacingScaleLinear900: `--ds-scaleLinear-900` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.size.large")
-    @js.native
-    val spacingSizeLarge: `--ds-size-large` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.size.medium")
-    @js.native
-    val spacingSizeMedium: `--ds-size-medium` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.size.none")
-    @js.native
-    val spacingSizeNone: `--ds-size-none` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.size.small")
-    @js.native
-    val spacingSizeSmall: `--ds-size-small` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.size.xlarge")
-    @js.native
-    val spacingSizeXlarge: `--ds-size-xlarge` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.size.xsmall")
-    @js.native
-    val spacingSizeXsmall: `--ds-size-xsmall` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.size.xxSmall")
-    @js.native
-    val spacingSizeXxSmall: `--ds-size-xxSmall` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.size.xxlarge")
-    @js.native
-    val spacingSizeXxlarge: `--ds-size-xxlarge` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.size.xxxSmall")
-    @js.native
-    val spacingSizeXxxSmall: `--ds-size-xxxSmall` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.size.xxxlarge")
-    @js.native
-    val spacingSizeXxxlarge: `--ds-size-xxxlarge` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.size.xxxxSmall")
-    @js.native
-    val spacingSizeXxxxSmall: `--ds-size-xxxxSmall` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.size.xxxxlarge")
-    @js.native
-    val spacingSizeXxxxlarge: `--ds-size-xxxxlarge` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.utility.UNSAFE_util.MISSING_TOKEN")
-    @js.native
-    val utilityUNSAFEUtilMISSINGTOKEN: `--ds-UNSAFE_util-MISSING_TOKEN` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.utility.UNSAFE_util.transparent")
-    @js.native
-    val utilityUNSAFEUtilTransparent: `--ds-UNSAFE_util-transparent` = js.native
+    val utilityUNSAFETransparent: `--ds-UNSAFE-transparent` = js.native
   }
 }

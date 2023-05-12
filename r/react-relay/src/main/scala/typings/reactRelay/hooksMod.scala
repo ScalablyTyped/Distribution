@@ -101,7 +101,7 @@ object hooksMod {
   
   inline def commitMutation[TOperation /* <: MutationParameters */](
     environment: Environment,
-    // tslint:disable-next-line no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
   config: MutationConfig[TOperation]
   ): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("commitMutation")(environment.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
@@ -187,7 +187,7 @@ object hooksMod {
   
   inline def requestSubscription[TSubscription /* <: OperationType */](
     environment: Environment,
-    // tslint:disable-next-line no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
   config: GraphQLSubscriptionConfig[TSubscription]
   ): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("requestSubscription")(environment.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
@@ -215,23 +215,23 @@ object hooksMod {
     commitMutationFn: js.Function2[/* environment */ Environment, /* config */ MutationConfig[TMutation], Disposable]
   ): js.Tuple2[js.Function1[/* config */ UseMutationConfig[TMutation], Disposable], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useMutation")(mutation.asInstanceOf[js.Any], commitMutationFn.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Function1[/* config */ UseMutationConfig[TMutation], Disposable], Boolean]]
   
-  inline def usePaginationFragment[TQuery /* <: OperationType */, TKey /* <: typings.reactRelay.relayHooksHelpersMod.KeyType[Any] */](fragmentInput: GraphQLTaggedNode): // tslint:disable-next-line no-unnecessary-generics
+  inline def usePaginationFragment[TQuery /* <: OperationType */, TKey /* <: typings.reactRelay.relayHooksHelpersMod.KeyType[Any] */](fragmentInput: GraphQLTaggedNode): // eslint-disable-next-line no-unnecessary-generics
   usePaginationFragmentHookType[
     TQuery, 
     TKey | Null, 
     (typings.reactRelay.relayHooksHelpersMod.KeyTypeData[TKey, Any]) | Null
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePaginationFragment")(fragmentInput.asInstanceOf[js.Any]).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePaginationFragment")(fragmentInput.asInstanceOf[js.Any]).asInstanceOf[// eslint-disable-next-line no-unnecessary-generics
   usePaginationFragmentHookType[
     TQuery, 
     TKey | Null, 
     (typings.reactRelay.relayHooksHelpersMod.KeyTypeData[TKey, Any]) | Null
   ]]
-  inline def usePaginationFragment[TQuery /* <: OperationType */, TKey /* <: typings.reactRelay.relayHooksHelpersMod.KeyType[Any] */](fragmentInput: GraphQLTaggedNode, parentFragmentRef: TKey): // tslint:disable-next-line no-unnecessary-generics
+  inline def usePaginationFragment[TQuery /* <: OperationType */, TKey /* <: typings.reactRelay.relayHooksHelpersMod.KeyType[Any] */](fragmentInput: GraphQLTaggedNode, parentFragmentRef: TKey): // eslint-disable-next-line no-unnecessary-generics
   usePaginationFragmentHookType[
     TQuery, 
     TKey | Null, 
     (typings.reactRelay.relayHooksHelpersMod.KeyTypeData[TKey, Any]) | Null
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("usePaginationFragment")(fragmentInput.asInstanceOf[js.Any], parentFragmentRef.asInstanceOf[js.Any])).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("usePaginationFragment")(fragmentInput.asInstanceOf[js.Any], parentFragmentRef.asInstanceOf[js.Any])).asInstanceOf[// eslint-disable-next-line no-unnecessary-generics
   usePaginationFragmentHookType[
     TQuery, 
     TKey | Null, 
@@ -259,23 +259,23 @@ object hooksMod {
     initialQueryReference: PreloadedQuery[TQuery, EnvironmentProviderOptions[Record[String, Any]]]
   ): useQueryLoaderHookType[TQuery] = (^.asInstanceOf[js.Dynamic].applyDynamic("useQueryLoader")(preloadableRequest.asInstanceOf[js.Any], initialQueryReference.asInstanceOf[js.Any])).asInstanceOf[useQueryLoaderHookType[TQuery]]
   
-  inline def useRefetchableFragment[TQuery /* <: OperationType */, TKey /* <: typings.reactRelay.relayHooksHelpersMod.KeyType[Any] */](fragmentInput: GraphQLTaggedNode): // tslint:disable-next-line no-unnecessary-generics
+  inline def useRefetchableFragment[TQuery /* <: OperationType */, TKey /* <: typings.reactRelay.relayHooksHelpersMod.KeyType[Any] */](fragmentInput: GraphQLTaggedNode): // eslint-disable-next-line no-unnecessary-generics
   useRefetchableFragmentHookType[
     TQuery, 
     TKey, 
     (typings.reactRelay.relayHooksHelpersMod.KeyTypeData[TKey, Any]) | Null
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRefetchableFragment")(fragmentInput.asInstanceOf[js.Any]).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRefetchableFragment")(fragmentInput.asInstanceOf[js.Any]).asInstanceOf[// eslint-disable-next-line no-unnecessary-generics
   useRefetchableFragmentHookType[
     TQuery, 
     TKey, 
     (typings.reactRelay.relayHooksHelpersMod.KeyTypeData[TKey, Any]) | Null
   ]]
-  inline def useRefetchableFragment[TQuery /* <: OperationType */, TKey /* <: typings.reactRelay.relayHooksHelpersMod.KeyType[Any] */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): // tslint:disable-next-line no-unnecessary-generics
+  inline def useRefetchableFragment[TQuery /* <: OperationType */, TKey /* <: typings.reactRelay.relayHooksHelpersMod.KeyType[Any] */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): // eslint-disable-next-line no-unnecessary-generics
   useRefetchableFragmentHookType[
     TQuery, 
     TKey, 
     (typings.reactRelay.relayHooksHelpersMod.KeyTypeData[TKey, Any]) | Null
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("useRefetchableFragment")(fragmentInput.asInstanceOf[js.Any], fragmentRef.asInstanceOf[js.Any])).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("useRefetchableFragment")(fragmentInput.asInstanceOf[js.Any], fragmentRef.asInstanceOf[js.Any])).asInstanceOf[// eslint-disable-next-line no-unnecessary-generics
   useRefetchableFragmentHookType[
     TQuery, 
     TKey, 
@@ -288,12 +288,12 @@ object hooksMod {
   
   inline def useSubscription[TSubscriptionPayload /* <: OperationType */](
     // The actual subtype of OperationType is required to allow for type inference inside GraphQLSubscriptionConfig.s
-  // tslint:disable-next-line no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   config: GraphQLSubscriptionConfig[TSubscriptionPayload]
   ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useSubscription")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def useSubscription[TSubscriptionPayload /* <: OperationType */](
     // The actual subtype of OperationType is required to allow for type inference inside GraphQLSubscriptionConfig.s
-  // tslint:disable-next-line no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   config: GraphQLSubscriptionConfig[TSubscriptionPayload],
     requestSubscriptionFn: FnCall
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useSubscription")(config.asInstanceOf[js.Any], requestSubscriptionFn.asInstanceOf[js.Any])).asInstanceOf[Unit]

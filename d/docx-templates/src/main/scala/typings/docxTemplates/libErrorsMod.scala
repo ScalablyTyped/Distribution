@@ -51,6 +51,21 @@ object libErrorsMod {
     def this(err: js.Error, command: String) = this()
   }
   
+  @JSImport("docx-templates/lib/errors", "IncompleteConditionalStatementError")
+  @js.native
+  open class IncompleteConditionalStatementError ()
+    extends StObject
+       with Error {
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var name: String = js.native
+  }
+  
   @JSImport("docx-templates/lib/errors", "InternalError")
   @js.native
   open class InternalError protected ()

@@ -318,6 +318,7 @@ object sapUiUnifiedColorPickerPopoverMod {
     
     /**
       * @SINCE 1.60.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
@@ -331,6 +332,7 @@ object sapUiUnifiedColorPickerPopoverMod {
     
     /**
       * @SINCE 1.85
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:liveChange liveChange} to attached listeners.
       *

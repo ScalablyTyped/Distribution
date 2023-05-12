@@ -56,7 +56,6 @@ object edgeMod {
   @JSImport("selenium-webdriver/edge", "Options")
   @js.native
   /**
-    * @constructor
     */
   open class Options () extends Capabilities {
     

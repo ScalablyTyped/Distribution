@@ -16,7 +16,7 @@ trait Commitmessage extends StObject {
   var commit_title: js.UndefOr[String] = js.undefined
   
   /**
-    * @description Merge method to use. Possible values are `merge`, `squash` or `rebase`. Default is `merge`.
+    * @description The merge method to use.
     * @enum {string}
     */
   var merge_method: js.UndefOr[merge | squash | rebase] = js.undefined

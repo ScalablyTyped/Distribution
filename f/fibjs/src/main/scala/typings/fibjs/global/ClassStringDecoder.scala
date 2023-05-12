@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** module Or Internal Object */
 /**
   * @brief 流解码对象
-  * @detail 
+  * @detail
   */
 @JSGlobal("Class_StringDecoder")
 @js.native
 /**
-  * 
+  *
   * @brief 解码器构造函数
   * @param encoding 解码编码. 默认 'utf8'.
-  * 
-  * 
-  * 
+  *
+  *
+  *
   */
 open class ClassStringDecoder ()
   extends StObject

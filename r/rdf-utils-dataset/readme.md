@@ -1,7 +1,7 @@
 
 # Scala.js typings for rdf-utils-dataset
 
-Typings are for version 1.1
+Typings are for version 2.0
 
 ## Library description:
 RDFJS Dataset utils

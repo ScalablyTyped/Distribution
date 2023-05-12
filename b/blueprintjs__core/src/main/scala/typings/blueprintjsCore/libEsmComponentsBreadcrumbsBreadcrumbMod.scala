@@ -1,9 +1,10 @@
 package typings.blueprintjsCore
 
-import typings.blueprintjsCore.libEsmCommonPropsMod.IActionProps
+import typings.blueprintjsCore.libEsmCommonPropsMod.ActionProps
 import typings.blueprintjsCore.libEsmCommonPropsMod.ILinkProps
 import typings.react.mod.FC
 import typings.react.mod.ReactNode
+import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ object libEsmComponentsBreadcrumbsBreadcrumbMod {
   
   trait IBreadcrumbProps
     extends StObject
-       with IActionProps
+       with ActionProps[HTMLAnchorElement]
        with ILinkProps {
     
     var children: js.UndefOr[ReactNode] = js.undefined

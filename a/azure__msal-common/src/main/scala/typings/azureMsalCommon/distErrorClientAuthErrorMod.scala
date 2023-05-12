@@ -33,6 +33,12 @@ object distErrorClientAuthErrorMod {
       */
     inline def createAppendScopeSetError(appendError: String): ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createAppendScopeSetError")(appendError.asInstanceOf[js.Any]).asInstanceOf[ClientAuthError]
     
+    /**
+      * Creates an error thrown when max_age was provided in the request, but auth_time is not in the token claims
+      * @param missingNonce
+      */
+    inline def createAuthTimeNotFoundError(): ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createAuthTimeNotFoundError")().asInstanceOf[ClientAuthError]
+    
     inline def createBindingKeyNotRemovedError(): ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createBindingKeyNotRemovedError")().asInstanceOf[ClientAuthError]
     
     /**
@@ -122,6 +128,11 @@ object distErrorClientAuthErrorMod {
     inline def createLogoutNotSupportedError(): ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createLogoutNotSupportedError")().asInstanceOf[ClientAuthError]
     
     /**
+      * Creates an error thrown when too much time has elapsed since the last end-user authentication
+      */
+    inline def createMaxAgeTranspiredError(): ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createMaxAgeTranspiredError")().asInstanceOf[ClientAuthError]
+    
+    /**
       * Throws error when multiple accounts are in cache for the given params
       */
     inline def createMultipleMatchingAccountsInCacheError(): ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createMultipleMatchingAccountsInCacheError")().asInstanceOf[ClientAuthError]
@@ -161,6 +172,11 @@ object distErrorClientAuthErrorMod {
       * @param operationName
       */
     inline def createNoCryptoObjectError(operationName: String): ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createNoCryptoObjectError")(operationName.asInstanceOf[js.Any]).asInstanceOf[ClientAuthError]
+    
+    /**
+      * Create an error when the client does not have network connectivity
+      */
+    inline def createNoNetworkConnectivityError(): ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createNoNetworkConnectivityError")().asInstanceOf[ClientAuthError]
     
     /**
       * Creates an error thrown when the nonce does not match.
@@ -235,6 +251,11 @@ object distErrorClientAuthErrorMod {
     inline def createUnexpectedCredentialTypeError(): ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createUnexpectedCredentialTypeError")().asInstanceOf[ClientAuthError]
     
     /**
+      * Create an error when the user cancels the flow
+      */
+    inline def createUserCanceledError(): ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createUserCanceledError")().asInstanceOf[ClientAuthError]
+    
+    /**
       * Throws error if the user defined timeout is reached.
       */
     inline def createUserTimeoutReachedError(): ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createUserTimeoutReachedError")().asInstanceOf[ClientAuthError]
@@ -285,6 +306,11 @@ object distErrorClientAuthErrorMod {
     @js.native
     def appendScopeSetError: Code = js.native
     inline def appendScopeSetError_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("appendScopeSetError")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@azure/msal-common/dist/error/ClientAuthError", "ClientAuthErrorMessage.authTimeNotFoundError")
+    @js.native
+    def authTimeNotFoundError: Code = js.native
+    inline def authTimeNotFoundError_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("authTimeNotFoundError")(x.asInstanceOf[js.Any])
     
     @JSImport("@azure/msal-common/dist/error/ClientAuthError", "ClientAuthErrorMessage.bindingKeyNotRemovedError")
     @js.native
@@ -361,6 +387,11 @@ object distErrorClientAuthErrorMod {
     def logoutNotSupported: Code = js.native
     inline def logoutNotSupported_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logoutNotSupported")(x.asInstanceOf[js.Any])
     
+    @JSImport("@azure/msal-common/dist/error/ClientAuthError", "ClientAuthErrorMessage.maxAgeTranspiredError")
+    @js.native
+    def maxAgeTranspiredError: Code = js.native
+    inline def maxAgeTranspiredError_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxAgeTranspiredError")(x.asInstanceOf[js.Any])
+    
     @JSImport("@azure/msal-common/dist/error/ClientAuthError", "ClientAuthErrorMessage.multipleMatchingAccounts")
     @js.native
     def multipleMatchingAccounts: Code = js.native
@@ -400,6 +431,11 @@ object distErrorClientAuthErrorMod {
     @js.native
     def noCryptoObj: Code = js.native
     inline def noCryptoObj_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noCryptoObj")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@azure/msal-common/dist/error/ClientAuthError", "ClientAuthErrorMessage.noNetworkConnectivity")
+    @js.native
+    def noNetworkConnectivity: Code = js.native
+    inline def noNetworkConnectivity_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noNetworkConnectivity")(x.asInstanceOf[js.Any])
     
     @JSImport("@azure/msal-common/dist/error/ClientAuthError", "ClientAuthErrorMessage.noTokensFoundError")
     @js.native
@@ -470,6 +506,11 @@ object distErrorClientAuthErrorMod {
     @js.native
     def unexpectedCredentialType: Code = js.native
     inline def unexpectedCredentialType_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unexpectedCredentialType")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@azure/msal-common/dist/error/ClientAuthError", "ClientAuthErrorMessage.userCanceledError")
+    @js.native
+    def userCanceledError: Code = js.native
+    inline def userCanceledError_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("userCanceledError")(x.asInstanceOf[js.Any])
     
     @JSImport("@azure/msal-common/dist/error/ClientAuthError", "ClientAuthErrorMessage.userTimeoutReached")
     @js.native

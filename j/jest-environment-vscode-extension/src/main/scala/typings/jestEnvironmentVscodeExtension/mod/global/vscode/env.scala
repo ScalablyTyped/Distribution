@@ -3,6 +3,9 @@ package typings.jestEnvironmentVscodeExtension.mod.global.vscode
 import typings.vscode.Thenable
 import typings.vscode.mod.Clipboard
 import typings.vscode.mod.Event
+import typings.vscode.mod.TelemetryLogger
+import typings.vscode.mod.TelemetryLoggerOptions
+import typings.vscode.mod.TelemetrySender
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,6 +34,9 @@ object env {
   @js.native
   val clipboard: Clipboard = js.native
   
+  inline def createTelemetryLogger(sender: TelemetrySender): TelemetryLogger = ^.asInstanceOf[js.Dynamic].applyDynamic("createTelemetryLogger")(sender.asInstanceOf[js.Any]).asInstanceOf[TelemetryLogger]
+  inline def createTelemetryLogger(sender: TelemetrySender, options: TelemetryLoggerOptions): TelemetryLogger = (^.asInstanceOf[js.Dynamic].applyDynamic("createTelemetryLogger")(sender.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TelemetryLogger]
+  
   @JSGlobal("vscode.env.isNewAppInstall")
   @js.native
   val isNewAppInstall: Boolean = js.native
@@ -43,9 +49,17 @@ object env {
   @js.native
   val language: String = js.native
   
+  @JSGlobal("vscode.env.logLevel")
+  @js.native
+  val logLevel: typings.vscode.mod.LogLevel = js.native
+  
   @JSGlobal("vscode.env.machineId")
   @js.native
   val machineId: String = js.native
+  
+  @JSGlobal("vscode.env.onDidChangeLogLevel")
+  @js.native
+  val onDidChangeLogLevel: Event[typings.vscode.mod.LogLevel] = js.native
   
   @JSGlobal("vscode.env.onDidChangeTelemetryEnabled")
   @js.native

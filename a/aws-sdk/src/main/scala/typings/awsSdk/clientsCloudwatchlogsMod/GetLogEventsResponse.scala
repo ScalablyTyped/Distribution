@@ -12,7 +12,7 @@ trait GetLogEventsResponse extends StObject {
   var events: js.UndefOr[OutputLogEvents] = js.undefined
   
   /**
-    * The token for the next set of items in the backward direction. The token expires after 24 hours. This token is never null. If you have reached the end of the stream, it returns the same token you passed in.
+    * The token for the next set of items in the backward direction. The token expires after 24 hours. This token is not null. If you have reached the end of the stream, it returns the same token you passed in.
     */
   var nextBackwardToken: js.UndefOr[NextToken] = js.undefined
   

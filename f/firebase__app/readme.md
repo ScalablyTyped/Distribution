@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__app
 
-Typings are for version 0.8.4
+Typings are for version 0.9.9
 
 ## Library description:
 The primary entrypoint to the Firebase JS SDK

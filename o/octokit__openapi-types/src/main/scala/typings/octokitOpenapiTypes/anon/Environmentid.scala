@@ -2,7 +2,6 @@ package typings.octokitOpenapiTypes.anon
 
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Available
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Awaiting
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Deleted
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.EastUs
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Exporting
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Failed
@@ -80,7 +79,7 @@ trait Environmentid extends StObject {
   var last_used_at: String
   
   /**
-    * @description The Azure region where this codespace is located.
+    * @description The initally assigned location of a new codespace.
     * @example WestUs2
     * @enum {string}
     */
@@ -113,6 +112,12 @@ trait Environmentid extends StObject {
     * @example false
     */
   var prebuild: Boolean | Null
+  
+  /**
+    * Format: uri
+    * @description API URL to publish this codespace to a new repository.
+    */
+  var publish_url: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Format: uri
@@ -150,7 +155,7 @@ trait Environmentid extends StObject {
     * @example Available
     * @enum {string}
     */
-  var state: Unknown | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Created | Queued | Provisioning | Available | Awaiting | Unavailable | Deleted | Moved | Shutdown | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Archived | Starting | ShuttingDown | Failed | Exporting | Updating | Rebuilding
+  var state: Unknown | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Created | Queued | Provisioning | Available | Awaiting | Unavailable | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Deleted | Moved | Shutdown | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Archived | Starting | ShuttingDown | Failed | Exporting | Updating | Rebuilding
   
   /**
     * Format: uri
@@ -191,7 +196,7 @@ object Environmentid {
     recent_folders: js.Array[String],
     repository: Branchesurl,
     start_url: String,
-    state: Unknown | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Created | Queued | Provisioning | Available | Awaiting | Unavailable | Deleted | Moved | Shutdown | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Archived | Starting | ShuttingDown | Failed | Exporting | Updating | Rebuilding,
+    state: Unknown | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Created | Queued | Provisioning | Available | Awaiting | Unavailable | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Deleted | Moved | Shutdown | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Archived | Starting | ShuttingDown | Failed | Exporting | Updating | Rebuilding,
     stop_url: String,
     updated_at: String,
     url: String,
@@ -274,6 +279,12 @@ object Environmentid {
     
     inline def setPrebuildNull: Self = StObject.set(x, "prebuild", null)
     
+    inline def setPublish_url(value: String): Self = StObject.set(x, "publish_url", value.asInstanceOf[js.Any])
+    
+    inline def setPublish_urlNull: Self = StObject.set(x, "publish_url", null)
+    
+    inline def setPublish_urlUndefined: Self = StObject.set(x, "publish_url", js.undefined)
+    
     inline def setPulls_url(value: String): Self = StObject.set(x, "pulls_url", value.asInstanceOf[js.Any])
     
     inline def setPulls_urlNull: Self = StObject.set(x, "pulls_url", null)
@@ -303,7 +314,7 @@ object Environmentid {
     inline def setStart_url(value: String): Self = StObject.set(x, "start_url", value.asInstanceOf[js.Any])
     
     inline def setState(
-      value: Unknown | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Created | Queued | Provisioning | Available | Awaiting | Unavailable | Deleted | Moved | Shutdown | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Archived | Starting | ShuttingDown | Failed | Exporting | Updating | Rebuilding
+      value: Unknown | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Created | Queued | Provisioning | Available | Awaiting | Unavailable | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Deleted | Moved | Shutdown | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Archived | Starting | ShuttingDown | Failed | Exporting | Updating | Rebuilding
     ): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStop_url(value: String): Self = StObject.set(x, "stop_url", value.asInstanceOf[js.Any])

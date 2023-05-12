@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-mobile
 
-Typings are for version 3.1.1
+Typings are for version 4.0.0
 
 ## Library description:
 Check if mobile browser.

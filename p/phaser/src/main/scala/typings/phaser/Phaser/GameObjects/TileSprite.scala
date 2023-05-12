@@ -10,6 +10,7 @@ import typings.phaser.Phaser.GameObjects.Components.GetBounds
 import typings.phaser.Phaser.GameObjects.Components.Mask
 import typings.phaser.Phaser.GameObjects.Components.Origin
 import typings.phaser.Phaser.GameObjects.Components.Pipeline
+import typings.phaser.Phaser.GameObjects.Components.PostPipeline
 import typings.phaser.Phaser.GameObjects.Components.ScrollFactor
 import typings.phaser.Phaser.GameObjects.Components.Tint
 import typings.phaser.Phaser.GameObjects.Components.Transform
@@ -60,6 +61,7 @@ trait TileSprite
      with Mask
      with Origin
      with Pipeline
+     with PostPipeline
      with ScrollFactor
      with Tint
      with Transform
@@ -69,7 +71,7 @@ trait TileSprite
     * The Canvas element that the TileSprite renders its fill pattern in to.
     * Only used in Canvas mode.
     */
-  var canvas: HTMLCanvasElement = js.native
+  var canvas: HTMLCanvasElement | Null = js.native
   
   /**
     * The Context of the Canvas element that the TileSprite renders its fill pattern in to.
@@ -99,7 +101,7 @@ trait TileSprite
     * The texture that the Tile Sprite is rendered to, which is then rendered to a Scene.
     * In WebGL this is a WebGLTexture. In Canvas it's a Canvas Fill Pattern.
     */
-  var fillPattern: WebGLTexture | CanvasPattern = js.native
+  var fillPattern: WebGLTexture | CanvasPattern | Null = js.native
   
   /**
     * The next power of two value from the height of the Fill Pattern frame.

@@ -21,9 +21,8 @@ object mod {
     /**
       * Socket constructor.
       *
-      * @param {String|Object} uri or options
+      * @param {String|Object} uri - uri or options
       * @param {Object} opts - options
-      * @api public
       */
     def this(uri: Any) = this()
     def this(uri: Any, opts: PartialSocketOptions) = this()
@@ -53,8 +52,8 @@ object mod {
     /**
       * Transport abstract constructor.
       *
-      * @param {Object} options.
-      * @api private
+      * @param {Object} opts - options
+      * @protected
       */
     def this(opts: Any) = this()
   }
@@ -83,7 +82,7 @@ object mod {
         * XHR Polling constructor.
         *
         * @param {Object} opts
-        * @api public
+        * @package
         */
       def this(opts: Any) = this()
     }
@@ -99,8 +98,8 @@ object mod {
       /**
         * WebSocket transport constructor.
         *
-        * @api {Object} connection options
-        * @api public
+        * @param {Object} opts - connection options
+        * @protected
         */
       def this(opts: Any) = this()
     }

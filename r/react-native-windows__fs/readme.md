@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-windows__fs
 
-Typings are for version 0.70.0
+Typings are for version 0.71.2
 
 ## Library description:
 A minimal-dependency drop-in replacement to `fs` with changes for resiliency, promises, and convenience.

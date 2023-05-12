@@ -139,6 +139,8 @@ object callbackApiMod {
     
     def close(callback: js.Function1[/* err */ Any, Unit]): Unit = js.native
     
+    var connection: Connection = js.native
+    
     def consume(queue: String, onMessage: js.Function1[/* msg */ Message | Null, Unit]): Unit = js.native
     def consume(
       queue: String,

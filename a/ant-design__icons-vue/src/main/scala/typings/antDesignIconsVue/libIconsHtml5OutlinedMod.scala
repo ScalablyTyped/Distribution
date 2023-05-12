@@ -16,7 +16,7 @@ object libIconsHtml5OutlinedMod extends Shortcut {
   @js.native
   trait Html5OutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_Html5OutlinedIconType: String = js.native

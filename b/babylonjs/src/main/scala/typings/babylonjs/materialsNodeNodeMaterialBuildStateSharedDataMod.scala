@@ -3,14 +3,9 @@ package typings.babylonjs
 import org.scalablytyped.runtime.StringDictionary
 import typings.babylonjs.anon.EmitFragment
 import typings.babylonjs.anon.NeedAlphaBlending
-import typings.babylonjs.materialsNodeBlocksDualCurrentScreenBlockMod.CurrentScreenBlock
-import typings.babylonjs.materialsNodeBlocksDualImageSourceBlockMod.ImageSourceBlock
-import typings.babylonjs.materialsNodeBlocksDualReflectionTextureBaseBlockMod.ReflectionTextureBaseBlock
-import typings.babylonjs.materialsNodeBlocksDualTextureBlockMod.TextureBlock
 import typings.babylonjs.materialsNodeBlocksInputInputBlockMod.InputBlock
-import typings.babylonjs.materialsNodeBlocksParticleParticleTextureBlockMod.ParticleTextureBlock
-import typings.babylonjs.materialsNodeBlocksPbrRefractionBlockMod.RefractionBlock
 import typings.babylonjs.materialsNodeNodeMaterialBlockMod.NodeMaterialBlock
+import typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterialTextureBlocks
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Immutable
 import org.scalablytyped.runtime.StObject
@@ -116,9 +111,7 @@ object materialsNodeNodeMaterialBuildStateSharedDataMod {
     /**
       * Input blocks
       */
-    var textureBlocks: js.Array[
-        ImageSourceBlock | TextureBlock | ReflectionTextureBaseBlock | RefractionBlock | CurrentScreenBlock | ParticleTextureBlock
-      ] = js.native
+    var textureBlocks: js.Array[NodeMaterialTextureBlocks] = js.native
     
     /** List of emitted variables */
     var variableNames: StringDictionary[Double] = js.native

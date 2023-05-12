@@ -17,7 +17,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.arcgisJsApi.esri.FeatureLayerBase because var conflicts: fullExtent. Inlined copyright, definitionExpression, displayField, editFieldsInfo, editingInfo, elevationInfo, floorInfo, gdbVersion, geometryFieldsInfo, geometryType, hasM, hasZ, historicMoment, isTable, layerId, objectIdField, returnM, returnZ, serviceDefinitionExpression, sourceJSON, spatialReference, url, version */ @js.native
+- typings.arcgisJsApi.esri.FeatureLayerBase because var conflicts: fullExtent, title. Inlined capabilities, copyright, datesInUnknownTimezone, definitionExpression, displayField, editFieldsInfo, editingInfo, effectiveCapabilities, effectiveEditingEnabled, elevationInfo, fieldsIndex, floorInfo, gdbVersion, geometryFieldsInfo, geometryType, hasM, hasZ, historicMoment, isTable, layerId, objectIdField, relationships, returnM, returnZ, serviceDefinitionExpression, sourceJSON, spatialReference, url, version, addAttachment, addAttachment, applyEdits, applyEdits, deleteAttachments, getField, getFieldDomain, getFieldDomain, queryAttachments, queryAttachments, queryAttachments, queryAttachments, queryRelatedFeatures, queryRelatedFeatures, queryRelatedFeatures, queryRelatedFeatures, queryRelatedFeaturesCount, queryRelatedFeaturesCount, queryRelatedFeaturesCount, queryRelatedFeaturesCount, updateAttachment, updateAttachment */ @js.native
 trait SubtypeGroupLayer
   extends StObject
      with Layer
@@ -28,28 +28,28 @@ trait SubtypeGroupLayer
      with BlendLayer
      with CustomParametersMixin {
   
-  def addAttachment(feature: Graphic, attachment: FormData): js.Promise[SubtypeGroupLayerFeatureEditResult] = js.native
+  def addAttachment(feature: Graphic, attachment: FormData): js.Promise[FeatureEditResult] = js.native
   /**
     * Adds an attachment to a feature.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#addAttachment)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#addAttachment)
     */
-  def addAttachment(feature: Graphic, attachment: HTMLFormElement): js.Promise[SubtypeGroupLayerFeatureEditResult] = js.native
+  def addAttachment(feature: Graphic, attachment: HTMLFormElement): js.Promise[FeatureEditResult] = js.native
   
   /**
     * Applies edits to features in a layer.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#applyEdits)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#applyEdits)
     */
-  def applyEdits(edits: SubtypeGroupLayerApplyEditsEdits): js.Promise[Any] = js.native
-  def applyEdits(edits: SubtypeGroupLayerApplyEditsEdits, options: SubtypeGroupLayerApplyEditsOptions): js.Promise[Any] = js.native
+  def applyEdits(edits: FeatureLayerBaseApplyEditsEdits): js.Promise[EditsResult] = js.native
+  def applyEdits(edits: FeatureLayerBaseApplyEditsEdits, options: FeatureLayerBaseApplyEditsOptions): js.Promise[EditsResult] = js.native
   
   /**
     * Describes the layer's supported capabilities.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#capabilities)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#capabilities)
     */
-  val capabilities: SubtypeGroupLayerCapabilities = js.native
+  val capabilities: Capabilities = js.native
   
   /**
     * Copyright information for the layer.
@@ -70,7 +70,7 @@ trait SubtypeGroupLayer
     *
     * @default false
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#datesInUnknownTimezone)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#datesInUnknownTimezone)
     */
   val datesInUnknownTimezone: Boolean = js.native
   
@@ -84,9 +84,9 @@ trait SubtypeGroupLayer
   /**
     * Deletes attachments from a feature.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#deleteAttachments)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#deleteAttachments)
     */
-  def deleteAttachments(feature: Graphic, attachmentIds: js.Array[Double]): js.Promise[SubtypeGroupLayerFeatureEditResult] = js.native
+  def deleteAttachments(feature: Graphic, attachmentIds: js.Array[Double]): js.Promise[js.Array[FeatureEditResult]] = js.native
   
   /**
     * The name of the layer's primary display field.
@@ -119,6 +119,20 @@ trait SubtypeGroupLayer
   val editingInfo: EditFieldsInfo = js.native
   
   /**
+    * Describes effective capabilities of the layer taking in to consideration privileges of the currently signed-in user.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#effectiveCapabilities)
+    */
+  val effectiveCapabilities: Capabilities = js.native
+  
+  /**
+    * Indicates whether the layer is editable taking in to consideration privileges of the currently signed-in user.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#effectiveEditingEnabled)
+    */
+  val effectiveEditingEnabled: Boolean = js.native
+  
+  /**
     * Specifies how features are placed on the vertical axis (z).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#elevationInfo)
@@ -135,9 +149,16 @@ trait SubtypeGroupLayer
   /**
     * A convenient property that can be used to make case-insensitive lookups for a field by name.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#fieldsIndex)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#fieldsIndex)
     */
   val fieldsIndex: FieldsIndex = js.native
+  
+  /**
+    * Returns the sublayer to which the given feature belongs, as determined by the value defined on its `attributes` object for the property specified by `subtypeField`
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#findSublayerForFeature)
+    */
+  def findSublayerForFeature(feature: Graphic): SubtypeSublayer = js.native
   
   /**
     * When a feature layer is configured as floor-aware, it has a floorInfo property defined.
@@ -170,17 +191,17 @@ trait SubtypeGroupLayer
   /**
     * Returns the [Field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html) instance for a field name (case-insensitive).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#getField)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#getField)
     */
   def getField(fieldName: String): Field = js.native
   
   /**
     * Returns the [Domain](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Domain.html) associated with the given field name.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#getFieldDomain)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#getFieldDomain)
     */
   def getFieldDomain(fieldName: String): Domain = js.native
-  def getFieldDomain(fieldName: String, options: SubtypeGroupLayerGetFieldDomainOptions): Domain = js.native
+  def getFieldDomain(fieldName: String, options: FeatureLayerBaseGetFieldDomainOptions): Domain = js.native
   
   /**
     * Indicates whether the client-side features in the layer have `M` (measurement) values.
@@ -224,6 +245,13 @@ trait SubtypeGroupLayer
   var layerId: Double = js.native
   
   /**
+    * Loads all of the sublayers.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#loadAll)
+    */
+  def loadAll(): js.Promise[Sublayer] = js.native
+  
+  /**
     * The name of an `oid` [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#fields) containing a unique value or identifier for each feature in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#objectIdField)
@@ -247,12 +275,12 @@ trait SubtypeGroupLayer
   /**
     * Query information about attachments associated with features.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#queryAttachments)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#queryAttachments)
     */
   def queryAttachments(attachmentQuery: AttachmentQuery): js.Promise[Any] = js.native
   def queryAttachments(attachmentQuery: AttachmentQueryProperties): js.Promise[Any] = js.native
-  def queryAttachments(attachmentQuery: AttachmentQueryProperties, options: SubtypeGroupLayerQueryAttachmentsOptions): js.Promise[Any] = js.native
-  def queryAttachments(attachmentQuery: AttachmentQuery, options: SubtypeGroupLayerQueryAttachmentsOptions): js.Promise[Any] = js.native
+  def queryAttachments(attachmentQuery: AttachmentQueryProperties, options: FeatureLayerBaseQueryAttachmentsOptions): js.Promise[Any] = js.native
+  def queryAttachments(attachmentQuery: AttachmentQuery, options: FeatureLayerBaseQueryAttachmentsOptions): js.Promise[Any] = js.native
   
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html) against the feature service and returns the [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) of features that satisfy the query.
@@ -305,33 +333,33 @@ trait SubtypeGroupLayer
   /**
     * Executes a [RelationshipQuery](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html) against the feature service and returns [FeatureSets](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-FeatureSet.html) grouped by source layer or table objectIds.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#queryRelatedFeatures)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#queryRelatedFeatures)
     */
   def queryRelatedFeatures(relationshipQuery: RelationshipQuery): js.Promise[Any] = js.native
   def queryRelatedFeatures(relationshipQuery: RelationshipQueryProperties): js.Promise[Any] = js.native
   def queryRelatedFeatures(
     relationshipQuery: RelationshipQueryProperties,
-    options: SubtypeGroupLayerQueryRelatedFeaturesOptions
+    options: FeatureLayerBaseQueryRelatedFeaturesOptions
   ): js.Promise[Any] = js.native
-  def queryRelatedFeatures(relationshipQuery: RelationshipQuery, options: SubtypeGroupLayerQueryRelatedFeaturesOptions): js.Promise[Any] = js.native
+  def queryRelatedFeatures(relationshipQuery: RelationshipQuery, options: FeatureLayerBaseQueryRelatedFeaturesOptions): js.Promise[Any] = js.native
   
   /**
     * Executes a [RelationshipQuery](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html) against the feature service and when resolved, it returns an `object` containing key value pairs.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#queryRelatedFeaturesCount)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#queryRelatedFeaturesCount)
     */
   def queryRelatedFeaturesCount(relationshipQuery: RelationshipQuery): js.Promise[Any] = js.native
   def queryRelatedFeaturesCount(relationshipQuery: RelationshipQueryProperties): js.Promise[Any] = js.native
   def queryRelatedFeaturesCount(
     relationshipQuery: RelationshipQueryProperties,
-    options: SubtypeGroupLayerQueryRelatedFeaturesCountOptions
+    options: FeatureLayerBaseQueryRelatedFeaturesCountOptions
   ): js.Promise[Any] = js.native
-  def queryRelatedFeaturesCount(relationshipQuery: RelationshipQuery, options: SubtypeGroupLayerQueryRelatedFeaturesCountOptions): js.Promise[Any] = js.native
+  def queryRelatedFeaturesCount(relationshipQuery: RelationshipQuery, options: FeatureLayerBaseQueryRelatedFeaturesCountOptions): js.Promise[Any] = js.native
   
   /**
     * Array of [relationships](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Relationship.html) set up for the layer.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#relationships)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#relationships)
     */
   val relationships: js.Array[Relationship_] = js.native
   
@@ -391,13 +419,13 @@ trait SubtypeGroupLayer
   @JSName("type")
   val type_SubtypeGroupLayer: `subtype-group` = js.native
   
-  def updateAttachment(feature: Graphic, attachmentId: Double, attachment: FormData): js.Promise[SubtypeGroupLayerFeatureEditResult] = js.native
+  def updateAttachment(feature: Graphic, attachmentId: Double, attachment: FormData): js.Promise[FeatureEditResult] = js.native
   /**
     * Updates an existing attachment for a feature.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#updateAttachment)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#updateAttachment)
     */
-  def updateAttachment(feature: Graphic, attachmentId: Double, attachment: HTMLFormElement): js.Promise[SubtypeGroupLayerFeatureEditResult] = js.native
+  def updateAttachment(feature: Graphic, attachmentId: Double, attachment: HTMLFormElement): js.Promise[FeatureEditResult] = js.native
   
   /**
     * The absolute URL of the REST endpoint of the layer, non-spatial table or service.

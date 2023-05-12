@@ -170,6 +170,20 @@ object ieMod {
     def requireWindowFocus(require: Boolean): Options = js.native
     
     /**
+      * Sets the IEDriver to drive Chromium-based Edge in Internet Explorer mode.
+      * @param {boolean} attachEdgeChromium Whether to run in Chromium-based-Edge in IE mode
+      * @return {!Options} A self reference.
+      */
+    def setEdgeChromium(attachEdgeChromium: Boolean): Options = js.native
+    
+    /**
+      * Sets the path of the EdgeChromium driver.
+      * @param {string} path The EdgeChromium driver path
+      * @return {!Options} A self reference.
+      */
+    def setEdgePath(path: String): Options = js.native
+    
+    /**
       * Sets the path of the temporary data directory to use.
       * @param {string} path The log file path.
       * @return {!Options} A self reference.

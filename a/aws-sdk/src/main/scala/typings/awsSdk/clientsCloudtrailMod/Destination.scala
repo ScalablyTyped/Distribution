@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Destination extends StObject {
   
   /**
-    * For service-linked channels, the value is the name of the Amazon Web Services service.
+    *  For channels used for a CloudTrail Lake integration, the location is the ARN of an event data store that receives events from a channel. For service-linked channels, the location is the name of the Amazon Web Services service.
     */
   var Location: typings.awsSdk.clientsCloudtrailMod.Location
   
   /**
-    * The type of destination for events arriving from a channel. For service-linked channels, the value is AWS_SERVICE.
+    * The type of destination for events arriving from a channel. For channels used for a CloudTrail Lake integration, the value is EventDataStore. For service-linked channels, the value is AWS_SERVICE. 
     */
   var Type: DestinationType
 }

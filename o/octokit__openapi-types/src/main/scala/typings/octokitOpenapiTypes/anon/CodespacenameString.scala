@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CodespacenameString extends StObject {
   
-  /** The name of the codespace. */
   var codespace_name: String
 }
 object CodespacenameString {

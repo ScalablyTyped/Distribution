@@ -105,7 +105,7 @@ trait HTMLAttributes[T]
   
   var spellCheck: js.UndefOr[Booleanish | Null] = js.undefined
   
-  var style: js.UndefOr[(PropertiesHyphen[String | `0`, String]) | String | Null] = js.undefined
+  var style: js.UndefOr[(PropertiesHyphen[String | `0`, String]) | String | Null | CssVariables] = js.undefined
   
   var tabIndex: js.UndefOr[Double | Null] = js.undefined
   
@@ -345,7 +345,7 @@ object HTMLAttributes {
     
     inline def setSpellCheckUndefined: Self = StObject.set(x, "spellCheck", js.undefined)
     
-    inline def setStyle(value: (PropertiesHyphen[String | `0`, String]) | String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: (PropertiesHyphen[String | `0`, String]) | String | CssVariables): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleNull: Self = StObject.set(x, "style", null)
     

@@ -19,7 +19,7 @@ object componentsSnackbarSnackbarMod {
     def this(props: SnackbarProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SnackbarProps, context: Any) = this()
   }
@@ -31,7 +31,7 @@ object componentsSnackbarSnackbarMod {
     def this(props: SnackbarProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SnackbarProps, context: Any) = this()
   }

@@ -2,7 +2,6 @@ package typings.azureMsalCommon
 
 import typings.azureMsalCommon.distAccountCcsCredentialMod.CcsCredential
 import typings.azureMsalCommon.distRequestBaseAuthRequestMod.BaseAuthRequest
-import typings.azureMsalCommon.distUtilsMsalTypesMod.StringDict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,8 +17,6 @@ object distRequestCommonRefreshTokenRequestMod {
     var forceCache: js.UndefOr[Boolean] = js.undefined
     
     var refreshToken: String
-    
-    var tokenQueryParameters: js.UndefOr[StringDict] = js.undefined
   }
   object CommonRefreshTokenRequest {
     
@@ -40,10 +37,6 @@ object distRequestCommonRefreshTokenRequestMod {
       inline def setForceCacheUndefined: Self = StObject.set(x, "forceCache", js.undefined)
       
       inline def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
-      
-      inline def setTokenQueryParameters(value: StringDict): Self = StObject.set(x, "tokenQueryParameters", value.asInstanceOf[js.Any])
-      
-      inline def setTokenQueryParametersUndefined: Self = StObject.set(x, "tokenQueryParameters", js.undefined)
     }
   }
 }

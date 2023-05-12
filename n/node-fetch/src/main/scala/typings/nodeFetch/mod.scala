@@ -22,6 +22,8 @@ object mod {
   
   inline def default(url: RequestInfo): js.Promise[Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Response]]
   inline def default(url: RequestInfo, init: RequestInit): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
+  inline def default(url: URL): js.Promise[Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Response]]
+  inline def default(url: URL, init: RequestInit): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
   
   @JSImport("node-fetch", "AbortError")
   @js.native
@@ -130,7 +132,9 @@ object mod {
     extends StObject
        with BodyMixin {
     def this(input: RequestInfo) = this()
+    def this(input: URL) = this()
     def this(input: RequestInfo, init: RequestInit) = this()
+    def this(input: URL, init: RequestInit) = this()
     
     /* CompleteClass */
     override def arrayBuffer(): js.Promise[js.typedarray.ArrayBuffer] = js.native

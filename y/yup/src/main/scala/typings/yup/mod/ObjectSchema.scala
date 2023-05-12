@@ -1,80 +1,105 @@
 package typings.yup.mod
 
-import org.scalablytyped.runtime.TopLevel
-import typings.std.Exclude
-import typings.std.Record
-import typings.yup.anon.Values
+import typings.std.Extract
+import typings.std.NonNullable
+import typings.std.Omit
+import typings.std.Partial
 import typings.yup.yupBooleans.`false`
 import typings.yup.yupBooleans.`true`
+import typings.yup.yupStrings.s
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@JSImport("yup", "ObjectSchema")
 @js.native
-trait ObjectSchema[T /* <: js.UndefOr[js.Object | Null] */, C]
-  extends StObject
-     with Schema[T, C] {
+open class ObjectSchema[TIn /* <: Maybe[AnyObject] */, TContext, TDefault, TFlags /* <: Flags */] () extends Schema[MakeKeysOptional[TIn], TContext, TDefault, TFlags] {
+  def this(spec: Shape[TIn, TContext]) = this()
   
-  def camelCase(): ObjectSchema[T, C] = js.native
+  /* protected */ def _cast(_value: Any): Any = js.native
+  /* protected */ def _cast(_value: Any, options: InternalOptions[TContext]): Any = js.native
+  
+  /* private */ var _excludedEdges: Any = js.native
+  
+  /* private */ var _nodes: Any = js.native
+  
+  /* private */ var _sortErrors: Any = js.native
+  
+  def camelCase(): this.type = js.native
+  
+  def clone(spec: ObjectSchemaSpec): this.type = js.native
   
   @JSName("concat")
-  def concat_U_Object_ObjectSchema[U /* <: js.Object */](schema: ObjectSchema[U, C]): ObjectSchema[T & U, C] = js.native
+  def concat_IInICIDIF_ObjectSchema[IIn /* <: Maybe[AnyObject] */, IC, ID, IF /* <: Flags */](schema: ObjectSchema[IIn, IC, ID, IF]): ObjectSchema[
+    ConcatObjectTypes[TIn, IIn], 
+    TContext & IC, 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<IF, 'd'> extends never ? TDefault extends yup.yup.AnyObject ? ID extends yup.yup.AnyObject ? yup.yup._<yup.yup.ConcatObjectTypes<TDefault, ID>> : ID : ID : ID */ js.Any, 
+    TFlags | IF
+  ] = js.native
   
-  def constantCase(): ObjectSchema[T, C] = js.native
+  def constantCase(): this.type = js.native
   
-  def defined(): ObjectSchema[Exclude[T, Unit], C] = js.native
+  def deepPartial(): ObjectSchema[PartialDeep[TIn], TContext, TDefault, TFlags] = js.native
   
-  def equals[U /* <: T */](arrayOfValues: js.Array[U | Ref_]): ObjectSchema[U, C] = js.native
-  def equals[U /* <: T */](arrayOfValues: js.Array[U | Ref_], message: js.UndefOr[TestOptionsMessage[Values, js.Any]]): ObjectSchema[U, C] = js.native
+  var fields: Shape[NonNullable[TIn], TContext] = js.native
   
-  var fields: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ k in keyof T ]: yup.yup.Schema<T[k], C>}
-    */ typings.yup.yupStrings.ObjectSchema & TopLevel[T] = js.native
+  def from(from: String, to: /* keyof TIn */ String): this.type = js.native
+  def from(from: String, to: /* keyof TIn */ String, alias: Boolean): this.type = js.native
   
-  def from(fromKey: String, toKey: String): ObjectSchema[T, C] = js.native
-  def from(fromKey: String, toKey: String, alias: Boolean): ObjectSchema[T, C] = js.native
+  /** Parse an input JSON string to an object */
+  def json(): this.type = js.native
   
-  def noUnknown(): ObjectSchema[T, C] = js.native
-  def noUnknown(onlyKnownKeys: Boolean): ObjectSchema[T, C] = js.native
-  def noUnknown(onlyKnownKeys: Boolean, message: js.UndefOr[TestOptionsMessage[js.Object, js.Any]]): ObjectSchema[T, C] = js.native
-  def noUnknown(onlyKnownKeys: Unit, message: js.UndefOr[TestOptionsMessage[js.Object, js.Any]]): ObjectSchema[T, C] = js.native
+  def noUnknown(): this.type = js.native
+  def noUnknown(message: Message[Any]): this.type = js.native
+  def noUnknown(noAllow: Boolean): this.type = js.native
+  def noUnknown(noAllow: Boolean, message: Message[Any]): this.type = js.native
   
-  def notRequired(): ObjectSchema[js.UndefOr[T], C] = js.native
+  def nullable(msg: Message[Any]): ObjectSchema[TIn | Null, TContext, TDefault, TFlags] = js.native
   
-  def nullable(): ObjectSchema[T | Null, C] = js.native
-  def nullable(isNullable: Boolean): ObjectSchema[T, C] = js.native
-  @JSName("nullable")
-  def nullable_false(isNullable: `false`): ObjectSchema[Exclude[T, Null], C] = js.native
-  @JSName("nullable")
-  def nullable_true(isNullable: `true`): ObjectSchema[T | Null, C] = js.native
+  def omit[TKey /* <: /* keyof TIn */ String */](keys: js.Array[TKey]): ObjectSchema[Omit[TIn, TKey], TContext, TDefault, TFlags] = js.native
   
-  def oneOf[U /* <: T */](arrayOfValues: js.Array[U | Ref_]): ObjectSchema[U, C] = js.native
-  def oneOf[U /* <: T */](arrayOfValues: js.Array[U | Ref_], message: js.UndefOr[TestOptionsMessage[Values, js.Any]]): ObjectSchema[U, C] = js.native
+  def partial(): ObjectSchema[Partial[TIn], TContext, TDefault, TFlags] = js.native
   
-  def optional(): ObjectSchema[js.UndefOr[T], C] = js.native
+  def pick[TKey /* <: /* keyof TIn */ String */](keys: js.Array[TKey]): ObjectSchema[
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ K in TKey ]: TIn[K]} */ js.Any, 
+    TContext, 
+    TDefault, 
+    TFlags
+  ] = js.native
   
-  def required(): ObjectSchema[Exclude[T, js.UndefOr[Null]], C] = js.native
-  def required(message: TestOptionsMessage[js.Object, js.Any]): ObjectSchema[Exclude[T, js.UndefOr[Null]], C] = js.native
+  /* private */ var setFields: Any = js.native
   
-  def shape[U /* <: js.Object */](fields: ObjectSchemaDefinition[U, C]): ObjectSchema[Shape[T, U], C] = js.native
-  def shape[U /* <: js.Object */](fields: ObjectSchemaDefinition[U, C], noSortEdges: js.Array[js.Tuple2[String, String]]): ObjectSchema[Shape[T, U], C] = js.native
+  def shape[U /* <: ObjectShape */](additions: U): ObjectSchema[
+    _underscore[
+      ((/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof TIn ]: P extends keyof U? yup.yup.TypeFromShape<U, TContext>[P] : TIn[P]} */ js.Any) & (TypeFromShape[U, TContext])) | (Extract[TIn, js.UndefOr[Null]])
+    ], 
+    TContext, 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<TFlags, 'd'> extends never ? yup.yup._<TDefault & yup.yup.DefaultFromShape<U>> : TDefault */ js.Any, 
+    TFlags
+  ] = js.native
+  def shape[U /* <: ObjectShape */](additions: U, excludes: js.Array[js.Tuple2[String, String]]): ObjectSchema[
+    _underscore[
+      ((/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof TIn ]: P extends keyof U? yup.yup.TypeFromShape<U, TContext>[P] : TIn[P]} */ js.Any) & (TypeFromShape[U, TContext])) | (Extract[TIn, js.UndefOr[Null]])
+    ], 
+    TContext, 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<TFlags, 'd'> extends never ? yup.yup._<TDefault & yup.yup.DefaultFromShape<U>> : TDefault */ js.Any, 
+    TFlags
+  ] = js.native
   
-  def snakeCase(): ObjectSchema[T, C] = js.native
+  def snakeCase(): this.type = js.native
   
-  def test(
-    name: String,
-    message: TestOptionsMessage[js.Object, js.Any],
-    test: TestFunction[js.UndefOr[T | Null], C]
-  ): this.type = js.native
-  def test(options: TestOptions[Record[String, js.Any], C]): this.type = js.native
-  def test[U /* <: T */](options: AssertingTestOptions[U, Record[String, js.Any], C]): ObjectSchema[U, C] = js.native
-  @JSName("test")
-  def test_U_T_ObjectSchema[U /* <: T */](name: String, message: TestOptionsMessage[js.Object, js.Any], test: AssertingTestFunction[U, C]): ObjectSchema[U, C] = js.native
+  @JSName("spec")
+  var spec_ObjectSchema: ObjectSchemaSpec = js.native
   
-  def transformKeys(callback: js.Function1[/* key */ js.Any, js.Any]): Unit = js.native
+  @JSName("strip")
+  def strip_false(enabled: `false`): ObjectSchema[TIn, TContext, TDefault, UnsetFlag[TFlags, s]] = js.native
+  @JSName("strip")
+  def strip_true(enabled: `true`): ObjectSchema[TIn, TContext, TDefault, SetFlag[TFlags, s]] = js.native
   
-  def unknown(): ObjectSchema[T, C] = js.native
-  def unknown(allow: Boolean): ObjectSchema[T, C] = js.native
-  def unknown(allow: Boolean, message: js.UndefOr[TestOptionsMessage[js.Object, js.Any]]): ObjectSchema[T, C] = js.native
-  def unknown(allow: Unit, message: js.UndefOr[TestOptionsMessage[js.Object, js.Any]]): ObjectSchema[T, C] = js.native
+  def transformKeys(fn: js.Function1[/* key */ String, String]): this.type = js.native
+  
+  def unknown(): this.type = js.native
+  def unknown(allow: Boolean): this.type = js.native
+  def unknown(allow: Boolean, message: Message[Any]): this.type = js.native
+  def unknown(allow: Unit, message: Message[Any]): this.type = js.native
 }

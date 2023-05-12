@@ -1,26 +1,34 @@
 package typings.twilio.libTwimlVoiceResponseMod
 
+import typings.twilio.libTwimlTwiMLMod.default
+import typings.xmlbuilder.mod.XMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("twilio/lib/twiml/VoiceResponse", "VirtualAgent")
 @js.native
-open class VirtualAgent () extends StObject {
+open class VirtualAgent protected () extends default {
+  /**
+    * <VirtualAgent> TwiML Noun
+    */
+  def this(virtualAgent: XMLElement) = this()
   
   /**
     * <Config> TwiML Noun
     *
     * @param attributes - TwiML attributes
     */
-  def config(): Unit = js.native
-  def config(attributes: ConfigAttributes): Unit = js.native
+  def config(): Config = js.native
+  def config(attributes: ConfigAttributes): Config = js.native
   
   /**
     * <Parameter> TwiML Noun
     *
     * @param attributes - TwiML attributes
     */
-  def parameter(): Unit = js.native
-  def parameter(attributes: ParameterAttributes): Unit = js.native
+  def parameter(): Parameter = js.native
+  def parameter(attributes: ParameterAttributes): Parameter = js.native
+  
+  var virtualAgent: XMLElement = js.native
 }

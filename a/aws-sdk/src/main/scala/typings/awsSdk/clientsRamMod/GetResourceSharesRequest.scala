@@ -22,9 +22,14 @@ trait GetResourceSharesRequest extends StObject {
   var nextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies that you want to retrieve details of only those resource shares that use the RAM permission with this Amazon Resoure Name (ARN).
+    * Specifies that you want to retrieve details of only those resource shares that use the managed permission with this Amazon Resource Name (ARN).
     */
   var permissionArn: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Specifies that you want to retrieve details for only those resource shares that use the specified version of the managed permission.
+    */
+  var permissionVersion: js.UndefOr[Integer] = js.undefined
   
   /**
     * Specifies that you want to retrieve details of only those resource shares that match the following:     SELF  – resource shares that your account shares with other accounts     OTHER-ACCOUNTS  – resource shares that other accounts share with your account  
@@ -71,6 +76,10 @@ object GetResourceSharesRequest {
     inline def setPermissionArn(value: String): Self = StObject.set(x, "permissionArn", value.asInstanceOf[js.Any])
     
     inline def setPermissionArnUndefined: Self = StObject.set(x, "permissionArn", js.undefined)
+    
+    inline def setPermissionVersion(value: Integer): Self = StObject.set(x, "permissionVersion", value.asInstanceOf[js.Any])
+    
+    inline def setPermissionVersionUndefined: Self = StObject.set(x, "permissionVersion", js.undefined)
     
     inline def setResourceOwner(value: ResourceOwner): Self = StObject.set(x, "resourceOwner", value.asInstanceOf[js.Any])
     

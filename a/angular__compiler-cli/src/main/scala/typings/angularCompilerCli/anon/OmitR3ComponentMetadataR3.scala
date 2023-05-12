@@ -8,7 +8,9 @@ import typings.angularCompiler.mod.Expression
 import typings.angularCompiler.mod.InterpolationConfig
 import typings.angularCompiler.mod.ParseSourceSpan
 import typings.angularCompiler.mod.R3DependencyMetadata
+import typings.angularCompiler.mod.R3HostDirectiveMetadata
 import typings.angularCompiler.mod.R3HostMetadata
+import typings.angularCompiler.mod.R3InputMetadata
 import typings.angularCompiler.mod.R3QueryMetadata
 import typings.angularCompiler.mod.R3Reference
 import typings.angularCompiler.mod.ViewEncapsulation
@@ -34,11 +36,11 @@ trait OmitR3ComponentMetadataR3 extends StObject {
   
   var host: R3HostMetadata
   
+  var hostDirectives: js.UndefOr[js.Array[R3HostDirectiveMetadata] | Null] = js.undefined
+  
   var i18nUseExternalIds: Boolean
   
-  var inputs: StringDictionary[String | (js.Tuple2[String, String])]
-  
-  var internalType: Expression
+  var inputs: StringDictionary[R3InputMetadata]
   
   var interpolation: InterpolationConfig
   
@@ -81,8 +83,7 @@ object OmitR3ComponentMetadataR3 {
     fullInheritance: Boolean,
     host: R3HostMetadata,
     i18nUseExternalIds: Boolean,
-    inputs: StringDictionary[String | (js.Tuple2[String, String])],
-    internalType: Expression,
+    inputs: StringDictionary[R3InputMetadata],
     interpolation: InterpolationConfig,
     isStandalone: Boolean,
     lifecycle: UsesOnChanges,
@@ -98,7 +99,7 @@ object OmitR3ComponentMetadataR3 {
     usesInheritance: Boolean,
     viewQueries: js.Array[R3QueryMetadata]
   ): OmitR3ComponentMetadataR3 = {
-    val __obj = js.Dynamic.literal(encapsulation = encapsulation.asInstanceOf[js.Any], fullInheritance = fullInheritance.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], i18nUseExternalIds = i18nUseExternalIds.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], interpolation = interpolation.asInstanceOf[js.Any], isStandalone = isStandalone.asInstanceOf[js.Any], lifecycle = lifecycle.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], queries = queries.asInstanceOf[js.Any], relativeContextFilePath = relativeContextFilePath.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], typeSourceSpan = typeSourceSpan.asInstanceOf[js.Any], usesInheritance = usesInheritance.asInstanceOf[js.Any], viewQueries = viewQueries.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(encapsulation = encapsulation.asInstanceOf[js.Any], fullInheritance = fullInheritance.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], i18nUseExternalIds = i18nUseExternalIds.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], interpolation = interpolation.asInstanceOf[js.Any], isStandalone = isStandalone.asInstanceOf[js.Any], lifecycle = lifecycle.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], queries = queries.asInstanceOf[js.Any], relativeContextFilePath = relativeContextFilePath.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], typeSourceSpan = typeSourceSpan.asInstanceOf[js.Any], usesInheritance = usesInheritance.asInstanceOf[js.Any], viewQueries = viewQueries.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OmitR3ComponentMetadataR3]
   }
@@ -138,11 +139,17 @@ object OmitR3ComponentMetadataR3 {
     
     inline def setHost(value: R3HostMetadata): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
+    inline def setHostDirectives(value: js.Array[R3HostDirectiveMetadata]): Self = StObject.set(x, "hostDirectives", value.asInstanceOf[js.Any])
+    
+    inline def setHostDirectivesNull: Self = StObject.set(x, "hostDirectives", null)
+    
+    inline def setHostDirectivesUndefined: Self = StObject.set(x, "hostDirectives", js.undefined)
+    
+    inline def setHostDirectivesVarargs(value: R3HostDirectiveMetadata*): Self = StObject.set(x, "hostDirectives", js.Array(value*))
+    
     inline def setI18nUseExternalIds(value: Boolean): Self = StObject.set(x, "i18nUseExternalIds", value.asInstanceOf[js.Any])
     
-    inline def setInputs(value: StringDictionary[String | (js.Tuple2[String, String])]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
-    
-    inline def setInternalType(value: Expression): Self = StObject.set(x, "internalType", value.asInstanceOf[js.Any])
+    inline def setInputs(value: StringDictionary[R3InputMetadata]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     inline def setInterpolation(value: InterpolationConfig): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
     

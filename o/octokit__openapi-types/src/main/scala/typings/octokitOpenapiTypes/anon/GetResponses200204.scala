@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetResponses200204 extends StObject {
   
   /**
-    * Each array contains the day number, hour number, and number of commits:
+    * Get the hourly commit count for each day
+    * @description Each array contains the day number, hour number, and number of commits:
     *
     * *   `0-6`: Sunday - Saturday
     * *   `0-23`: Hour of day

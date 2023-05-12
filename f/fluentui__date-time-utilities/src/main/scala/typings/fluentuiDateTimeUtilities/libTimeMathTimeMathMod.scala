@@ -14,5 +14,5 @@ object libTimeMathTimeMathMod {
   
   inline def ceilMinuteToIncrement(date: js.Date, increments: Double): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("ceilMinuteToIncrement")(date.asInstanceOf[js.Any], increments.asInstanceOf[js.Any])).asInstanceOf[js.Date]
   
-  inline def getDateFromTimeSelection(useHour12: Boolean, baseDate: js.Date, selectedTime: String): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("getDateFromTimeSelection")(useHour12.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any], selectedTime.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+  inline def getDateFromTimeSelection(useHour12: Boolean, dateStartAnchor: js.Date, selectedTime: String): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("getDateFromTimeSelection")(useHour12.asInstanceOf[js.Any], dateStartAnchor.asInstanceOf[js.Any], selectedTime.asInstanceOf[js.Any])).asInstanceOf[js.Date]
 }

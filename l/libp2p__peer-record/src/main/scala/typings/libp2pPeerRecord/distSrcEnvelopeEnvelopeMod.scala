@@ -1,5 +1,6 @@
 package typings.libp2pPeerRecord
 
+import typings.libp2pPeerRecord.anon.PartialEnvelope
 import typings.protonsRuntime.distSrcCodecMod.Codec
 import typings.uint8arraylist.mod.Uint8ArrayList
 import org.scalablytyped.runtime.StObject
@@ -39,7 +40,7 @@ object distSrcEnvelopeEnvelopeMod {
     inline def decode(buf: js.typedarray.Uint8Array): Envelope = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[Envelope]
     inline def decode(buf: Uint8ArrayList): Envelope = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[Envelope]
     
-    inline def encode(obj: Envelope): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def encode(obj: PartialEnvelope): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     @scala.inline
     implicit open class MutableBuilder[Self <: Envelope] (val x: Self) extends AnyVal {

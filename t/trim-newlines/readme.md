@@ -1,7 +1,7 @@
 
 # Scala.js typings for trim-newlines
 
-Typings are for version 4.0.2
+Typings are for version 5.0.0
 
 ## Library description:
 Trim newlines from the start and/or end of a string

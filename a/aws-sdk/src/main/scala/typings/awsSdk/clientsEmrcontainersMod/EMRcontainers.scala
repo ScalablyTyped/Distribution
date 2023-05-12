@@ -43,12 +43,12 @@ trait EMRcontainers extends Service {
   ): Request[CreateJobTemplateResponse, AWSError] = js.native
   
   /**
-    * Creates a managed endpoint. A managed endpoint is a gateway that connects EMR Studio to Amazon EMR on EKS so that EMR Studio can communicate with your virtual cluster.
+    * Creates a managed endpoint. A managed endpoint is a gateway that connects Amazon EMR Studio to Amazon EMR on EKS so that Amazon EMR Studio can communicate with your virtual cluster.
     */
   def createManagedEndpoint(): Request[CreateManagedEndpointResponse, AWSError] = js.native
   def createManagedEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ CreateManagedEndpointResponse, Unit]): Request[CreateManagedEndpointResponse, AWSError] = js.native
   /**
-    * Creates a managed endpoint. A managed endpoint is a gateway that connects EMR Studio to Amazon EMR on EKS so that EMR Studio can communicate with your virtual cluster.
+    * Creates a managed endpoint. A managed endpoint is a gateway that connects Amazon EMR Studio to Amazon EMR on EKS so that Amazon EMR Studio can communicate with your virtual cluster.
     */
   def createManagedEndpoint(params: CreateManagedEndpointRequest): Request[CreateManagedEndpointResponse, AWSError] = js.native
   def createManagedEndpoint(
@@ -85,12 +85,12 @@ trait EMRcontainers extends Service {
   ): Request[DeleteJobTemplateResponse, AWSError] = js.native
   
   /**
-    * Deletes a managed endpoint. A managed endpoint is a gateway that connects EMR Studio to Amazon EMR on EKS so that EMR Studio can communicate with your virtual cluster.
+    * Deletes a managed endpoint. A managed endpoint is a gateway that connects Amazon EMR Studio to Amazon EMR on EKS so that Amazon EMR Studio can communicate with your virtual cluster.
     */
   def deleteManagedEndpoint(): Request[DeleteManagedEndpointResponse, AWSError] = js.native
   def deleteManagedEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ DeleteManagedEndpointResponse, Unit]): Request[DeleteManagedEndpointResponse, AWSError] = js.native
   /**
-    * Deletes a managed endpoint. A managed endpoint is a gateway that connects EMR Studio to Amazon EMR on EKS so that EMR Studio can communicate with your virtual cluster.
+    * Deletes a managed endpoint. A managed endpoint is a gateway that connects Amazon EMR Studio to Amazon EMR on EKS so that Amazon EMR Studio can communicate with your virtual cluster.
     */
   def deleteManagedEndpoint(params: DeleteManagedEndpointRequest): Request[DeleteManagedEndpointResponse, AWSError] = js.native
   def deleteManagedEndpoint(
@@ -141,12 +141,12 @@ trait EMRcontainers extends Service {
   ): Request[DescribeJobTemplateResponse, AWSError] = js.native
   
   /**
-    * Displays detailed information about a managed endpoint. A managed endpoint is a gateway that connects EMR Studio to Amazon EMR on EKS so that EMR Studio can communicate with your virtual cluster.
+    * Displays detailed information about a managed endpoint. A managed endpoint is a gateway that connects Amazon EMR Studio to Amazon EMR on EKS so that Amazon EMR Studio can communicate with your virtual cluster.
     */
   def describeManagedEndpoint(): Request[DescribeManagedEndpointResponse, AWSError] = js.native
   def describeManagedEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ DescribeManagedEndpointResponse, Unit]): Request[DescribeManagedEndpointResponse, AWSError] = js.native
   /**
-    * Displays detailed information about a managed endpoint. A managed endpoint is a gateway that connects EMR Studio to Amazon EMR on EKS so that EMR Studio can communicate with your virtual cluster.
+    * Displays detailed information about a managed endpoint. A managed endpoint is a gateway that connects Amazon EMR Studio to Amazon EMR on EKS so that Amazon EMR Studio can communicate with your virtual cluster.
     */
   def describeManagedEndpoint(params: DescribeManagedEndpointRequest): Request[DescribeManagedEndpointResponse, AWSError] = js.native
   def describeManagedEndpoint(
@@ -167,6 +167,22 @@ trait EMRcontainers extends Service {
     params: DescribeVirtualClusterRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeVirtualClusterResponse, Unit]
   ): Request[DescribeVirtualClusterResponse, AWSError] = js.native
+  
+  /**
+    * Generate a session token to connect to a managed endpoint. 
+    */
+  def getManagedEndpointSessionCredentials(): Request[GetManagedEndpointSessionCredentialsResponse, AWSError] = js.native
+  def getManagedEndpointSessionCredentials(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetManagedEndpointSessionCredentialsResponse, Unit]
+  ): Request[GetManagedEndpointSessionCredentialsResponse, AWSError] = js.native
+  /**
+    * Generate a session token to connect to a managed endpoint. 
+    */
+  def getManagedEndpointSessionCredentials(params: GetManagedEndpointSessionCredentialsRequest): Request[GetManagedEndpointSessionCredentialsResponse, AWSError] = js.native
+  def getManagedEndpointSessionCredentials(
+    params: GetManagedEndpointSessionCredentialsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetManagedEndpointSessionCredentialsResponse, Unit]
+  ): Request[GetManagedEndpointSessionCredentialsResponse, AWSError] = js.native
   
   /**
     * Lists job runs based on a set of parameters. A job run is a unit of work, such as a Spark jar, PySpark script, or SparkSQL query, that you submit to Amazon EMR on EKS.
@@ -197,12 +213,12 @@ trait EMRcontainers extends Service {
   ): Request[ListJobTemplatesResponse, AWSError] = js.native
   
   /**
-    * Lists managed endpoints based on a set of parameters. A managed endpoint is a gateway that connects EMR Studio to Amazon EMR on EKS so that EMR Studio can communicate with your virtual cluster.
+    * Lists managed endpoints based on a set of parameters. A managed endpoint is a gateway that connects Amazon EMR Studio to Amazon EMR on EKS so that Amazon EMR Studio can communicate with your virtual cluster.
     */
   def listManagedEndpoints(): Request[ListManagedEndpointsResponse, AWSError] = js.native
   def listManagedEndpoints(callback: js.Function2[/* err */ AWSError, /* data */ ListManagedEndpointsResponse, Unit]): Request[ListManagedEndpointsResponse, AWSError] = js.native
   /**
-    * Lists managed endpoints based on a set of parameters. A managed endpoint is a gateway that connects EMR Studio to Amazon EMR on EKS so that EMR Studio can communicate with your virtual cluster.
+    * Lists managed endpoints based on a set of parameters. A managed endpoint is a gateway that connects Amazon EMR Studio to Amazon EMR on EKS so that Amazon EMR Studio can communicate with your virtual cluster.
     */
   def listManagedEndpoints(params: ListManagedEndpointsRequest): Request[ListManagedEndpointsResponse, AWSError] = js.native
   def listManagedEndpoints(
@@ -253,12 +269,12 @@ trait EMRcontainers extends Service {
   ): Request[StartJobRunResponse, AWSError] = js.native
   
   /**
-    * Assigns tags to resources. A tag is a label that you assign to an AWS resource. Each tag consists of a key and an optional value, both of which you define. Tags enable you to categorize your AWS resources by attributes such as purpose, owner, or environment. When you have many resources of the same type, you can quickly identify a specific resource based on the tags you've assigned to it. For example, you can define a set of tags for your Amazon EMR on EKS clusters to help you track each cluster's owner and stack level. We recommend that you devise a consistent set of tag keys for each resource type. You can then search and filter the resources based on the tags that you add.
+    * Assigns tags to resources. A tag is a label that you assign to an Amazon Web Services resource. Each tag consists of a key and an optional value, both of which you define. Tags enable you to categorize your Amazon Web Services resources by attributes such as purpose, owner, or environment. When you have many resources of the same type, you can quickly identify a specific resource based on the tags you've assigned to it. For example, you can define a set of tags for your Amazon EMR on EKS clusters to help you track each cluster's owner and stack level. We recommend that you devise a consistent set of tag keys for each resource type. You can then search and filter the resources based on the tags that you add.
     */
   def tagResource(): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]): Request[TagResourceResponse, AWSError] = js.native
   /**
-    * Assigns tags to resources. A tag is a label that you assign to an AWS resource. Each tag consists of a key and an optional value, both of which you define. Tags enable you to categorize your AWS resources by attributes such as purpose, owner, or environment. When you have many resources of the same type, you can quickly identify a specific resource based on the tags you've assigned to it. For example, you can define a set of tags for your Amazon EMR on EKS clusters to help you track each cluster's owner and stack level. We recommend that you devise a consistent set of tag keys for each resource type. You can then search and filter the resources based on the tags that you add.
+    * Assigns tags to resources. A tag is a label that you assign to an Amazon Web Services resource. Each tag consists of a key and an optional value, both of which you define. Tags enable you to categorize your Amazon Web Services resources by attributes such as purpose, owner, or environment. When you have many resources of the same type, you can quickly identify a specific resource based on the tags you've assigned to it. For example, you can define a set of tags for your Amazon EMR on EKS clusters to help you track each cluster's owner and stack level. We recommend that you devise a consistent set of tag keys for each resource type. You can then search and filter the resources based on the tags that you add.
     */
   def tagResource(params: TagResourceRequest): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(

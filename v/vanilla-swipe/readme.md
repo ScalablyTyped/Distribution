@@ -1,7 +1,7 @@
 
 # Scala.js typings for vanilla-swipe
 
-Typings are for version 2.4.0
+Typings are for version 2.4.1
 
 ## Library description:
 Tiny vanilla JS library to detect swipe direction.

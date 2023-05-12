@@ -20,11 +20,39 @@ object buildPluginsIconsWithAndroidIconsMod {
   @js.native
   val ANDROID_RES_PATH: /* "android/app/src/main/res/" */ String = js.native
   
-  inline def configureAdaptiveIconAsync(projectRoot: String, foregroundImage: String, backgroundImage: String, isAdaptive: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("configureAdaptiveIconAsync")(projectRoot.asInstanceOf[js.Any], foregroundImage.asInstanceOf[js.Any], backgroundImage.asInstanceOf[js.Any], isAdaptive.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def configureAdaptiveIconAsync(projectRoot: String, foregroundImage: String, backgroundImage: Null, isAdaptive: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("configureAdaptiveIconAsync")(projectRoot.asInstanceOf[js.Any], foregroundImage.asInstanceOf[js.Any], backgroundImage.asInstanceOf[js.Any], isAdaptive.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def configureAdaptiveIconAsync(
+    projectRoot: String,
+    foregroundImage: String,
+    backgroundImage: String,
+    monochromeImage: String,
+    isAdaptive: Boolean
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("configureAdaptiveIconAsync")(projectRoot.asInstanceOf[js.Any], foregroundImage.asInstanceOf[js.Any], backgroundImage.asInstanceOf[js.Any], monochromeImage.asInstanceOf[js.Any], isAdaptive.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def configureAdaptiveIconAsync(
+    projectRoot: String,
+    foregroundImage: String,
+    backgroundImage: String,
+    monochromeImage: Null,
+    isAdaptive: Boolean
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("configureAdaptiveIconAsync")(projectRoot.asInstanceOf[js.Any], foregroundImage.asInstanceOf[js.Any], backgroundImage.asInstanceOf[js.Any], monochromeImage.asInstanceOf[js.Any], isAdaptive.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def configureAdaptiveIconAsync(
+    projectRoot: String,
+    foregroundImage: String,
+    backgroundImage: Null,
+    monochromeImage: String,
+    isAdaptive: Boolean
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("configureAdaptiveIconAsync")(projectRoot.asInstanceOf[js.Any], foregroundImage.asInstanceOf[js.Any], backgroundImage.asInstanceOf[js.Any], monochromeImage.asInstanceOf[js.Any], isAdaptive.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def configureAdaptiveIconAsync(
+    projectRoot: String,
+    foregroundImage: String,
+    backgroundImage: Null,
+    monochromeImage: Null,
+    isAdaptive: Boolean
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("configureAdaptiveIconAsync")(projectRoot.asInstanceOf[js.Any], foregroundImage.asInstanceOf[js.Any], backgroundImage.asInstanceOf[js.Any], monochromeImage.asInstanceOf[js.Any], isAdaptive.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   inline def createAdaptiveIconXmlString(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createAdaptiveIconXmlString")().asInstanceOf[String]
   inline def createAdaptiveIconXmlString(backgroundImage: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createAdaptiveIconXmlString")(backgroundImage.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def createAdaptiveIconXmlString(backgroundImage: String, monochromeImage: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createAdaptiveIconXmlString")(backgroundImage.asInstanceOf[js.Any], monochromeImage.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def createAdaptiveIconXmlString(backgroundImage: Null, monochromeImage: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createAdaptiveIconXmlString")(backgroundImage.asInstanceOf[js.Any], monochromeImage.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("@expo/prebuild-config/build/plugins/icons/withAndroidIcons", "dpiValues")
   @js.native

@@ -8,6 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DISTRIBUTED_GRANTS_ONLY
+  - typings.awsSdk.awsSdkStrings.ALL_GRANTS_PERMITTED_BY_ISSUER
+  - java.lang.String
+*/
+type ActivationOverrideBehavior = _ActivationOverrideBehavior | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CreateGrant
   - typings.awsSdk.awsSdkStrings.CheckoutLicense
   - typings.awsSdk.awsSdkStrings.CheckoutBorrowLicense

@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersPathMigrationidQueryPage extends StObject {
   
-  /** List all the repositories for this organization migration. */
+  /**
+    * List repositories in an organization migration
+    * @description List all the repositories for this organization migration.
+    */
   var get: ParametersPathMigrationidQueryPage
 }
 object GetParametersPathMigrationidQueryPage {

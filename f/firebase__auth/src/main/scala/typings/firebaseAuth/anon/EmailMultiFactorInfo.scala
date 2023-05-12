@@ -8,7 +8,7 @@ trait EmailMultiFactorInfo extends StObject {
   
   var email: js.UndefOr[String | Null] = js.undefined
   
-  var multiFactorInfo: js.UndefOr[typings.firebaseAuth.distEsm2017SrcModelPublicTypesMod.MultiFactorInfo | Null] = js.undefined
+  var multiFactorInfo: js.UndefOr[typings.firebaseAuth.distCordovaSrcModelPublicTypesMod.MultiFactorInfo | Null] = js.undefined
   
   var previousEmail: js.UndefOr[String | Null] = js.undefined
 }
@@ -28,7 +28,7 @@ object EmailMultiFactorInfo {
     
     inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    inline def setMultiFactorInfo(value: typings.firebaseAuth.distEsm2017SrcModelPublicTypesMod.MultiFactorInfo): Self = StObject.set(x, "multiFactorInfo", value.asInstanceOf[js.Any])
+    inline def setMultiFactorInfo(value: typings.firebaseAuth.distCordovaSrcModelPublicTypesMod.MultiFactorInfo): Self = StObject.set(x, "multiFactorInfo", value.asInstanceOf[js.Any])
     
     inline def setMultiFactorInfoNull: Self = StObject.set(x, "multiFactorInfo", null)
     

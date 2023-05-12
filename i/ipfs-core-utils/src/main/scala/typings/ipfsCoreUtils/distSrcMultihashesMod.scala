@@ -24,12 +24,8 @@ object distSrcMultihashesMod {
     /** @type {Record<string, MultihashHasher>}} */
     var _hashersByName: Record[String, MultihashHasher] = js.native
     
-    def _loadHasher(codeOrName: String): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MultihashHasher */ Any
-      ] = js.native
-    def _loadHasher(codeOrName: Double): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MultihashHasher */ Any
-      ] = js.native
+    def _loadHasher(codeOrName: String): js.Promise[typings.multiformats.distTypesSrcHashesInterfaceMod.MultihashHasher[Double]] = js.native
+    def _loadHasher(codeOrName: Double): js.Promise[typings.multiformats.distTypesSrcHashesInterfaceMod.MultihashHasher[Double]] = js.native
     @JSName("_loadHasher")
     var _loadHasher_Original: typings.ipfsCoreUtils.distSrcTypesMod.LoadHasherFn = js.native
     
@@ -40,19 +36,13 @@ object distSrcMultihashesMod {
       */
     def addHasher(hasher: MultihashHasher): Unit = js.native
     
-    def getHasher(code: String): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.MultihashHasher<number> */ Any
-      ] = js.native
+    def getHasher(code: String): js.Promise[typings.multiformats.distTypesSrcHashesInterfaceMod.MultihashHasher[Double]] = js.native
     /**
       * @param {number | string} code
       */
-    def getHasher(code: Double): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.MultihashHasher<number> */ Any
-      ] = js.native
+    def getHasher(code: Double): js.Promise[typings.multiformats.distTypesSrcHashesInterfaceMod.MultihashHasher[Double]] = js.native
     
-    def listHashers(): js.Array[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.MultihashHasher<number> */ Any
-      ] = js.native
+    def listHashers(): js.Array[typings.multiformats.distTypesSrcHashesInterfaceMod.MultihashHasher[Double]] = js.native
     
     /**
       * Remove support for a multibase hasher
@@ -66,5 +56,5 @@ object distSrcMultihashesMod {
   
   type LoadHasherFn = typings.ipfsCoreUtils.distSrcTypesMod.LoadHasherFn
   
-  type MultihashHasher = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.MultihashHasher */ Any
+  type MultihashHasher = typings.multiformats.distTypesSrcHashesInterfaceMod.MultihashHasher[Double]
 }

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SuperExpression
   extends StObject
-     with PrimaryExpression {
+     with PrimaryExpression
+     with FlowContainer {
   
   @JSName("kind")
   val kind_SuperExpression: SuperKeyword = js.native

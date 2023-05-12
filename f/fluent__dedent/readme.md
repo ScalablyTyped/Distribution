@@ -1,7 +1,7 @@
 
 # Scala.js typings for fluent__dedent
 
-Typings are for version 0.4.0
+Typings are for version 0.5.0
 
 ## Library description:
 A template literal tag for dedenting Fluent code

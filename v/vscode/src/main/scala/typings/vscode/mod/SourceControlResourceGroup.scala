@@ -7,30 +7,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SourceControlResourceGroup extends StObject {
   
   /**
-    * Dispose this source control resource group.
-    */
+  		 * Dispose this source control resource group.
+  		 */
   def dispose(): Unit
   
   /**
-    * Whether this source control resource group is hidden when it contains
-    * no {@link SourceControlResourceState source control resource states}.
-    */
+  		 * Whether this source control resource group is hidden when it contains
+  		 * no {@link SourceControlResourceState source control resource states}.
+  		 */
   var hideWhenEmpty: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The id of this source control resource group.
-    */
+  		 * The id of this source control resource group.
+  		 */
   val id: String
   
   /**
-    * The label of this source control resource group.
-    */
+  		 * The label of this source control resource group.
+  		 */
   var label: String
   
   /**
-    * This group's collection of
-    * {@link SourceControlResourceState source control resource states}.
-    */
+  		 * This group's collection of
+  		 * {@link SourceControlResourceState source control resource states}.
+  		 */
   var resourceStates: js.Array[SourceControlResourceState]
 }
 object SourceControlResourceGroup {

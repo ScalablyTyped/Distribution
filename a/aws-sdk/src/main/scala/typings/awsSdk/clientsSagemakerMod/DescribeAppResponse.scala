@@ -52,6 +52,11 @@ trait DescribeAppResponse extends StObject {
   var ResourceSpec: js.UndefOr[typings.awsSdk.clientsSagemakerMod.ResourceSpec] = js.undefined
   
   /**
+    * The name of the space. If this value is not set, then UserProfileName must be set.
+    */
+  var SpaceName: js.UndefOr[typings.awsSdk.clientsSagemakerMod.SpaceName] = js.undefined
+  
+  /**
     * The status.
     */
   var Status: js.UndefOr[AppStatus] = js.undefined
@@ -106,6 +111,10 @@ object DescribeAppResponse {
     inline def setResourceSpec(value: ResourceSpec): Self = StObject.set(x, "ResourceSpec", value.asInstanceOf[js.Any])
     
     inline def setResourceSpecUndefined: Self = StObject.set(x, "ResourceSpec", js.undefined)
+    
+    inline def setSpaceName(value: SpaceName): Self = StObject.set(x, "SpaceName", value.asInstanceOf[js.Any])
+    
+    inline def setSpaceNameUndefined: Self = StObject.set(x, "SpaceName", js.undefined)
     
     inline def setStatus(value: AppStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

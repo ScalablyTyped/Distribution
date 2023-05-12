@@ -236,6 +236,42 @@ object anon {
     }
   }
   
+  trait Field extends StObject {
+    
+    var field: js.UndefOr[String] = js.undefined
+    
+    var metadata: Orderid
+    
+    var reason: String
+    
+    var source: String
+    
+    var step: String
+  }
+  object Field {
+    
+    inline def apply(metadata: Orderid, reason: String, source: String, step: String): Field = {
+      val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Field]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
+      
+      inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+      
+      inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+      
+      inline def setMetadata(value: Orderid): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      
+      inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      
+      inline def setStep(value: String): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Language extends StObject {
     
     var language: en | ben | hi | mar | guj | tam | tel

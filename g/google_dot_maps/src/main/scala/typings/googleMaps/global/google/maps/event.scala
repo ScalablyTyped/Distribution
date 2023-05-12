@@ -5,6 +5,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@JSGlobal("google.maps.event")
+@js.native
+open class event ()
+  extends StObject
+     with typings.googleMaps.google.maps.event
+/* static members */
 object event {
   
   @JSGlobal("google.maps.event")
@@ -15,11 +21,11 @@ object event {
     * Cross browser event handler registration. This listener is removed by
     * calling removeListener(handle) for the handle that is returned by this
     * function.
-    * @deprecated <code>google.maps.event.addDomListener()</code> is deprecated,
-    *     use the standard <a
+    * @deprecated <code>google.maps.event.addDomListener()</code> is
+    *     deprecated, use the standard <a
     *     href="https://developer.mozilla.org/docs/Web/API/EventTarget/addEventListener">addEventListener()</a>
-    *     method instead. The feature will continue to work and there is no plan
-    *     to decommission it.
+    *     method instead. The feature will continue to work and there is no
+    *     plan to decommission it.
     */
   inline def addDomListener(instance: js.Object, eventName: String, handler: js.Function): MapsEventListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addDomListener")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[MapsEventListener]
   inline def addDomListener(instance: js.Object, eventName: String, handler: js.Function, capture: Boolean): MapsEventListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addDomListener")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[MapsEventListener]
@@ -30,8 +36,8 @@ object event {
     * @deprecated <code>google.maps.event.addDomListenerOnce()</code> is
     *     deprecated, use the standard <a
     *     href="https://developer.mozilla.org/docs/Web/API/EventTarget/addEventListener">addEventListener()</a>
-    *     method instead. The feature will continue to work and there is no plan
-    *     to decommission it.
+    *     method instead. The feature will continue to work and there is no
+    *     plan to decommission it.
     */
   inline def addDomListenerOnce(instance: js.Object, eventName: String, handler: js.Function): MapsEventListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addDomListenerOnce")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[MapsEventListener]
   inline def addDomListenerOnce(instance: js.Object, eventName: String, handler: js.Function, capture: Boolean): MapsEventListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addDomListenerOnce")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[MapsEventListener]
@@ -66,8 +72,8 @@ object event {
   inline def hasListeners(instance: js.Object, eventName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasListeners")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
-    * Removes the given listener, which should have been returned by addListener
-    * above. Equivalent to calling <code>listener.remove()</code>.
+    * Removes the given listener, which should have been returned by
+    * addListener above. Equivalent to calling <code>listener.remove()</code>.
     */
   inline def removeListener(listener: MapsEventListener): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(listener.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

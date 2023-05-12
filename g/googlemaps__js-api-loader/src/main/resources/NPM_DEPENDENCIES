@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@googlemaps/js-api-loader" : "1.14.3"
+      "@googlemaps/js-api-loader" : "1.15.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@googlemaps/js-api-loader" : "1.14.3"
+      "@googlemaps/js-api-loader" : "1.15.1"
     }
   ],
   "compile-devDependencies" : [

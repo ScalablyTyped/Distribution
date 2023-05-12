@@ -32,7 +32,7 @@ trait CreateGrantRequest extends StObject {
   var LicenseArn: Arn
   
   /**
-    * The grant principals. This value should be specified as an Amazon Resource Name (ARN).
+    * The grant principals. You can specify one of the following as an Amazon Resource Name (ARN):   An Amazon Web Services account, which includes only the account specified.     An organizational unit (OU), which includes all accounts in the OU.     An organization, which will include all accounts across your organization.  
     */
   var Principals: PrincipalArnList
 }

@@ -215,6 +215,10 @@ trait WeakValidationMapBreadcru extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : undefined extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : react.react.Validator<string | undefined | undefined> */ js.Any
   ] = js.undefined
   
+  var autoFocus: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean | undefined | undefined ? react.react.Validator<boolean | undefined | undefined | null | undefined> : undefined extends boolean | undefined | undefined ? react.react.Validator<boolean | undefined | undefined | null | undefined> : react.react.Validator<boolean | undefined | undefined> */ js.Any
+  ] = js.undefined
+  
   var autoSave: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : undefined extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : react.react.Validator<string | undefined | undefined> */ js.Any
   ] = js.undefined
@@ -224,6 +228,10 @@ trait WeakValidationMapBreadcru extends StObject {
   ] = js.undefined
   
   var color: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : undefined extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : react.react.Validator<string | undefined | undefined> */ js.Any
+  ] = js.undefined
+  
+  var content: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : undefined extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : react.react.Validator<string | undefined | undefined> */ js.Any
   ] = js.undefined
   
@@ -651,12 +659,20 @@ trait WeakValidationMapBreadcru extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.Ref<std.HTMLUListElement> | undefined ? react.react.Validator<react.react.Ref<std.HTMLUListElement> | undefined | null | undefined> : undefined extends react.react.Ref<std.HTMLUListElement> | undefined ? react.react.Validator<react.react.Ref<std.HTMLUListElement> | undefined | null | undefined> : react.react.Validator<react.react.Ref<std.HTMLUListElement> | undefined> */ js.Any
   ] = js.undefined
   
+  var rel: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : undefined extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : react.react.Validator<string | undefined | undefined> */ js.Any
+  ] = js.undefined
+  
   var resource: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : undefined extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : react.react.Validator<string | undefined | undefined> */ js.Any
   ] = js.undefined
   
   var results: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: null extends number | undefined | undefined ? react.react.Validator<number | undefined | undefined | null | undefined> : undefined extends number | undefined | undefined ? react.react.Validator<number | undefined | undefined | null | undefined> : react.react.Validator<number | undefined | undefined> */ js.Any
+  ] = js.undefined
+  
+  var rev: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : undefined extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : react.react.Validator<string | undefined | undefined> */ js.Any
   ] = js.undefined
   
   var role: js.UndefOr[
@@ -1033,6 +1049,12 @@ object WeakValidationMapBreadcru {
     
     inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
     
+    inline def setAutoFocus(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean | undefined | undefined ? react.react.Validator<boolean | undefined | undefined | null | undefined> : undefined extends boolean | undefined | undefined ? react.react.Validator<boolean | undefined | undefined | null | undefined> : react.react.Validator<boolean | undefined | undefined> */ js.Any
+    ): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+    
     inline def setAutoSave(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : undefined extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : react.react.Validator<string | undefined | undefined> */ js.Any
     ): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
@@ -1051,11 +1073,17 @@ object WeakValidationMapBreadcru {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
+    inline def setContent(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : undefined extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : react.react.Validator<string | undefined | undefined> */ js.Any
+    ): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
     inline def setContentEditable(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.Booleanish | 'inherit' | undefined | undefined ? react.react.Validator<react.react.Booleanish | 'inherit' | undefined | undefined | null | undefined> : undefined extends react.react.Booleanish | 'inherit' | undefined | undefined ? react.react.Validator<react.react.Booleanish | 'inherit' | undefined | undefined | null | undefined> : react.react.Validator<react.react.Booleanish | 'inherit' | undefined | undefined> */ js.Any
     ): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setContextMenu(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : undefined extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : react.react.Validator<string | undefined | undefined> */ js.Any
@@ -1687,6 +1715,12 @@ object WeakValidationMapBreadcru {
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
+    inline def setRel(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : undefined extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : react.react.Validator<string | undefined | undefined> */ js.Any
+    ): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    
     inline def setResource(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : undefined extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : react.react.Validator<string | undefined | undefined> */ js.Any
     ): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
@@ -1698,6 +1732,12 @@ object WeakValidationMapBreadcru {
     ): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    
+    inline def setRev(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : undefined extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : react.react.Validator<string | undefined | undefined> */ js.Any
+    ): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     inline def setRole(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.AriaRole | undefined | undefined ? react.react.Validator<react.react.AriaRole | undefined | undefined | null | undefined> : undefined extends react.react.AriaRole | undefined | undefined ? react.react.Validator<react.react.AriaRole | undefined | undefined | null | undefined> : react.react.Validator<react.react.AriaRole | undefined | undefined> */ js.Any

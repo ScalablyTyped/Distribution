@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Interface for the Mobile.offline methods to create and manage records in the mobile clients while working in the offline mode.
   * @deprecated Use {@link Xrm.WebApi.offline} instead.  Xrm.WebApi.offline is implemented differently than Xrm.Mobile.offline
-  * @see {@link https://msdn.microsoft.com/en-us/library/mt787123.aspx External Link: Xrm.Mobile.offline (client-side reference)}
-  * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
+  * @see {@link https://learn.microsoft.com/en-us/previous-versions/dynamicscrm-2016/developers-guide/mt787123(v=crm.8) External Link: Xrm.Mobile.offline (client-side reference)}
+  * @see {@link https://learn.microsoft.com/en-us/power-platform/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
   */
 @js.native
 trait MobileOffline extends StObject {
@@ -27,7 +27,7 @@ trait MobileOffline extends StObject {
     *             Integer, Lookup, Memo, Money, Owner, Picklist, String, State<BR>
     *             Status, UniqueIdentifier
     * @deprecated Use {@link Xrm.WebApi.createRecord} instead.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
+    * @see {@link https://learn.microsoft.com/en-us/power-platform/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     */
   def createRecord(entityType: String, data: StringDictionary[Any]): PromiseLike[OfflineOperationSuccessCallbackObject] = js.native
   
@@ -38,7 +38,7 @@ trait MobileOffline extends StObject {
     * @returns Returns an asynchronous promise.
     * @remarks  You cannot delete intersect and activity party entities.
     * @deprecated Use {@link Xrm.WebApi.deleteRecord} instead.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
+    * @see {@link https://learn.microsoft.com/en-us/power-platform/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     */
   def deleteRecord(entityType: String, id: String): PromiseLike[OfflineOperationSuccessCallbackObject] = js.native
   
@@ -47,7 +47,7 @@ trait MobileOffline extends StObject {
     * @param entityType The logical name of the entity.
     * @returns True if the entity is offline enabled; otherwise False.
     * @deprecated Use {@link Xrm.WebApi.isAvailableOffline} instead.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
+    * @see {@link https://learn.microsoft.com/en-us/power-platform/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     */
   def isOfflineEnabled(entityType: String): Boolean = js.native
   
@@ -70,7 +70,7 @@ trait MobileOffline extends StObject {
     *             Integer, Lookup, Memo, Money, Owner, Picklist, String, State<BR>
     *             Status, UniqueIdentifier
     * @deprecated Use {@link Xrm.WebApi.retrieveMultipleRecords} instead.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
+    * @see {@link https://learn.microsoft.com/en-us/power-platform/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     */
   def retrieveMultipleRecords(entityType: String): PromiseLike[js.Array[StringDictionary[Any]]] = js.native
   def retrieveMultipleRecords(entityType: String, options: String): PromiseLike[js.Array[StringDictionary[Any]]] = js.native
@@ -92,7 +92,7 @@ trait MobileOffline extends StObject {
     *             Integer, Lookup, Memo, Money, Owner, Picklist, String, State<BR>
     *             Status, UniqueIdentifier
     * @deprecated Use {@link Xrm.WebApi.retrieveRecord} instead.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
+    * @see {@link https://learn.microsoft.com/en-us/power-platform/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     */
   def retrieveRecord(entityType: String, id: String): PromiseLike[OfflineOperationSuccessCallbackObject] = js.native
   def retrieveRecord(entityType: String, id: String, options: String): PromiseLike[OfflineOperationSuccessCallbackObject] = js.native
@@ -109,7 +109,7 @@ trait MobileOffline extends StObject {
     *             Integer, Lookup, Memo, Money, Owner, Picklist, String, State<BR>
     *             Status, UniqueIdentifier
     * @deprecated Use {@link Xrm.WebApi.updateRecord} instead.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
+    * @see {@link https://learn.microsoft.com/en-us/power-platform/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     */
   def updateRecord(entityType: String, id: String, data: StringDictionary[Any]): PromiseLike[OfflineOperationSuccessCallbackObject] = js.native
 }

@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `200ContentApplicationjsonOrigin` extends StObject {
   
-  /** Response */
+  /** @description Response */
   var `200`: ContentApplicationjsonOrigin
   
-  var `422`: Content397
+  var `422`: Content346
 }
 object `200ContentApplicationjsonOrigin` {
   
-  inline def apply(`200`: ContentApplicationjsonOrigin, `422`: Content397): `200ContentApplicationjsonOrigin` = {
+  inline def apply(`200`: ContentApplicationjsonOrigin, `422`: Content346): `200ContentApplicationjsonOrigin` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.updateDynamic("422")(`422`.asInstanceOf[js.Any])
@@ -25,6 +25,6 @@ object `200ContentApplicationjsonOrigin` {
     
     inline def set200(value: ContentApplicationjsonOrigin): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set422(value: Content397): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
+    inline def set422(value: Content346): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
   }
 }

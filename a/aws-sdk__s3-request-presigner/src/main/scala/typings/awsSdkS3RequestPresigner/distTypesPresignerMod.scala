@@ -1,7 +1,8 @@
 package typings.awsSdkS3RequestPresigner
 
-import typings.awsSdkTypes.distTypesCredentialsMod.Credentials
+import typings.awsSdkTypes.distTypesChecksumMod.ChecksumConstructor
 import typings.awsSdkTypes.distTypesCryptoMod.HashConstructor
+import typings.awsSdkTypes.distTypesIdentityAwsCredentialIdentityMod.AwsCredentialIdentity
 import typings.awsSdkTypes.distTypesSignatureMod.RequestPresigner
 import typings.awsSdkTypes.distTypesUtilMod.Provider
 import typings.std.Omit
@@ -30,7 +31,7 @@ object distTypesPresignerMod {
     
     var applyChecksum: js.UndefOr[Boolean] = js.undefined
     
-    var credentials: Credentials | Provider[Credentials]
+    var credentials: AwsCredentialIdentity | Provider[AwsCredentialIdentity]
     
     var region: String | Provider[String]
     
@@ -38,7 +39,7 @@ object distTypesPresignerMod {
     
     var service: js.UndefOr[String] = js.undefined
     
-    var sha256: js.UndefOr[HashConstructor] = js.undefined
+    var sha256: js.UndefOr[ChecksumConstructor | HashConstructor] = js.undefined
     
     var signingName: js.UndefOr[String] = js.undefined
     
@@ -46,7 +47,10 @@ object distTypesPresignerMod {
   }
   object S3RequestPresignerOptions {
     
-    inline def apply(credentials: Credentials | Provider[Credentials], region: String | Provider[String]): S3RequestPresignerOptions = {
+    inline def apply(
+      credentials: AwsCredentialIdentity | Provider[AwsCredentialIdentity],
+      region: String | Provider[String]
+    ): S3RequestPresignerOptions = {
       val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any])
       __obj.asInstanceOf[S3RequestPresignerOptions]
     }
@@ -58,9 +62,9 @@ object distTypesPresignerMod {
       
       inline def setApplyChecksumUndefined: Self = StObject.set(x, "applyChecksum", js.undefined)
       
-      inline def setCredentials(value: Credentials | Provider[Credentials]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: AwsCredentialIdentity | Provider[AwsCredentialIdentity]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      inline def setCredentialsFunction0(value: () => js.Promise[Credentials]): Self = StObject.set(x, "credentials", js.Any.fromFunction0(value))
+      inline def setCredentialsFunction0(value: () => js.Promise[AwsCredentialIdentity]): Self = StObject.set(x, "credentials", js.Any.fromFunction0(value))
       
       inline def setRegion(value: String | Provider[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
@@ -74,7 +78,7 @@ object distTypesPresignerMod {
       
       inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
       
-      inline def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
+      inline def setSha256(value: ChecksumConstructor | HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
       
       inline def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
       

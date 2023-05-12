@@ -26,5 +26,7 @@ object func {
   
   inline def id[A](a: A): A = ^.asInstanceOf[js.Dynamic].applyDynamic("id")(a.asInstanceOf[js.Any]).asInstanceOf[A]
   
+  inline def isOneOf[V, OPTS /* <: V */](value: V, options: js.Array[OPTS]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isOneOf")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   inline def nop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("nop")().asInstanceOf[Unit]
 }

@@ -8,11 +8,11 @@ trait ParametersPathAutolinkid extends StObject {
   
   var parameters: PathAutolinkid
   
-  var responses: `200160`
+  var responses: `200171`
 }
 object ParametersPathAutolinkid {
   
-  inline def apply(parameters: PathAutolinkid, responses: `200160`): ParametersPathAutolinkid = {
+  inline def apply(parameters: PathAutolinkid, responses: `200171`): ParametersPathAutolinkid = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathAutolinkid]
   }
@@ -22,6 +22,6 @@ object ParametersPathAutolinkid {
     
     inline def setParameters(value: PathAutolinkid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200160`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200171`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

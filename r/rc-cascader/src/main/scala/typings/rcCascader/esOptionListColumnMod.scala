@@ -2,8 +2,8 @@ package typings.rcCascader
 
 import typings.rcCascader.esCascaderMod.DefaultOptionType
 import typings.rcCascader.esCascaderMod.SingleValueType
+import typings.react.mod.JSX.Element
 import typings.react.mod.Key
-import typings.react.mod.global.JSX.Element
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -48,6 +48,8 @@ object esOptionListColumnMod {
     
     /** The value path before current column */
     var prevValuePath: js.Array[Key]
+    
+    var searchValue: js.UndefOr[String] = js.undefined
   }
   object ColumnProps {
     
@@ -103,6 +105,10 @@ object esOptionListColumnMod {
       inline def setPrevValuePath(value: js.Array[Key]): Self = StObject.set(x, "prevValuePath", value.asInstanceOf[js.Any])
       
       inline def setPrevValuePathVarargs(value: Key*): Self = StObject.set(x, "prevValuePath", js.Array(value*))
+      
+      inline def setSearchValue(value: String): Self = StObject.set(x, "searchValue", value.asInstanceOf[js.Any])
+      
+      inline def setSearchValueUndefined: Self = StObject.set(x, "searchValue", js.undefined)
     }
   }
 }

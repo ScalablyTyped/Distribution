@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Cacheable extends StObject {
   
-  var cacheable: js.UndefOr[Boolean] = js.undefined
+  var cacheable: Boolean
 }
 object Cacheable {
   
-  inline def apply(): Cacheable = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(cacheable: Boolean): Cacheable = {
+    val __obj = js.Dynamic.literal(cacheable = cacheable.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cacheable]
   }
   
@@ -19,7 +19,5 @@ object Cacheable {
   implicit open class MutableBuilder[Self <: Cacheable] (val x: Self) extends AnyVal {
     
     inline def setCacheable(value: Boolean): Self = StObject.set(x, "cacheable", value.asInstanceOf[js.Any])
-    
-    inline def setCacheableUndefined: Self = StObject.set(x, "cacheable", js.undefined)
   }
 }

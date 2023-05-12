@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** module Or Internal Object */
 /**
   * @brief 信息摘要对象
-  * @detail 
+  * @detail
   */
 @JSGlobal("Class_Digest")
 @js.native

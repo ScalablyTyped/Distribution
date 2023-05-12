@@ -257,7 +257,7 @@ object sapUiCoreLocaleDataMod {
       *
       * CLDR format pattern:
       * See:
-      * 	http://cldr.unicode.org/translation/numbers-currency/number-patterns
+      * 	https://cldr.unicode.org/translation/numbers-currency/number-patterns
       *
       * @returns The pattern
       */
@@ -300,7 +300,7 @@ object sapUiCoreLocaleDataMod {
       * that is: Era (G), Year (y/Y), Quarter (q/Q), Month (M/L), Week (w/W), Day-Of-Week (E/e/c), Day (d/D),
       * Hour (h/H/k/K/), Minute (m), Second (s), Timezone (z/Z/v/V/O/X/x)
       *
-      * See http://unicode.org/reports/tr35/tr35-dates.html#availableFormats_appendItems
+      * See https://unicode.org/reports/tr35/tr35-dates.html#availableFormats_appendItems
       *
       * @returns the best matching datetime pattern
       */
@@ -390,7 +390,7 @@ object sapUiCoreLocaleDataMod {
       * that is: Era (G), Year (y/Y), Quarter (q/Q), Month (M/L), Week (w/W), Day-Of-Week (E/e/c), Day (d/D),
       * Hour (h/H/k/K/), Minute (m), Second (s), Timezone (z/Z/v/V/O/X/x)
       *
-      * See http://unicode.org/reports/tr35/tr35-dates.html#availableFormats_appendItems
+      * See https://unicode.org/reports/tr35/tr35-dates.html#availableFormats_appendItems
       *
       * @returns the best matching interval pattern if interval difference is given otherwise an array with all
       * possible interval patterns which match the given skeleton format
@@ -933,20 +933,28 @@ object sapUiCoreLocaleDataMod {
       * @SINCE 1.50
       *
       * Returns the plural category (zero, one, two, few, many or other) for the given number value. The number
-      * should be passed as a string with dot as decimal separator and the number of decimal/fraction digits
-      * as used in the final output. This is needed in order to preserve trailing zeros which are relevant to
-      * determine the right plural category.
+      * must be passed as an unformatted number string with dot as decimal separator (for example "12345.67").
+      * To determine the correct plural category, it is also necessary to keep the same number of decimal digits
+      * as given in the formatted output string. For example "1" and "1.0" could be in different plural categories
+      * as the number of decimal digits is different.
+      *
+      * Compact numbers (for example in "short" format) must be provided in the locale-independent CLDR compact
+      * notation. This notation uses the plural rule operand "c" for the compact decimal exponent, for example
+      * "1.2c3" for "1.2K" (1200) or "4c6" for "4M" (4000000).
+      *
+      * Note that the operand "e" is deprecated, but is a synonym corresponding to the CLDR specification for
+      * "c" and may be redefined in the future.
       *
       * @returns The plural category
       */
     def getPluralCategory(/**
       * The number to find the plural category for
       */
-    sNumber: String): String = js.native
+    vNumber: String): String = js.native
     def getPluralCategory(/**
       * The number to find the plural category for
       */
-    sNumber: Double): String = js.native
+    vNumber: Double): String = js.native
     
     /**
       * @SINCE 1.28.6

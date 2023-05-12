@@ -36,11 +36,15 @@ open class QueryList[T] ()
   
   val dirty: /* true */ Boolean = js.native
   
+  def filter(predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Any]): js.Array[T] = js.native
   /**
     * See
     * [Array.filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
     */
-  def filter(fn: js.Function3[/* item */ T, /* index */ Double, /* array */ js.Array[T], Boolean]): js.Array[T] = js.native
+  @JSName("filter")
+  def filter_S[S /* <: T */](
+    predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], /* is S */ Boolean]
+  ): js.Array[S] = js.native
   
   /**
     * See

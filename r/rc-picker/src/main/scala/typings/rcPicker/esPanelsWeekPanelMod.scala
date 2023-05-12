@@ -1,5 +1,6 @@
 package typings.rcPicker
 
+import typings.rcPicker.esInterfaceMod.CellRender
 import typings.rcPicker.esInterfaceMod.PanelSharedProps
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
@@ -14,5 +15,11 @@ object esPanelsWeekPanelMod {
   
   inline def default[DateType](props: WeekPanelProps[DateType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  type WeekPanelProps[DateType] = PanelSharedProps[DateType]
+  @js.native
+  trait WeekPanelProps[DateType]
+    extends StObject
+       with PanelSharedProps[DateType] {
+    
+    var cellRender: js.UndefOr[CellRender[DateType, DateType]] = js.native
+  }
 }

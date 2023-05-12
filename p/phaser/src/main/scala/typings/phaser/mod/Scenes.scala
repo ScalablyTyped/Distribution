@@ -39,7 +39,7 @@ object Scenes {
       */
     @JSImport("phaser", "Scenes.Events.ADDED_TO_SCENE")
     @js.native
-    val ADDED_TO_SCENE: Any = js.native
+    val ADDED_TO_SCENE: String = js.native
     
     /**
       * The Scene Systems Boot Event.
@@ -50,7 +50,7 @@ object Scenes {
       */
     @JSImport("phaser", "Scenes.Events.BOOT")
     @js.native
-    val BOOT: Any = js.native
+    val BOOT: String = js.native
     
     /**
       * The Scene Create Event.
@@ -65,7 +65,7 @@ object Scenes {
       */
     @JSImport("phaser", "Scenes.Events.CREATE")
     @js.native
-    val CREATE: Any = js.native
+    val CREATE: String = js.native
     
     /**
       * The Scene Systems Destroy Event.
@@ -78,7 +78,7 @@ object Scenes {
       */
     @JSImport("phaser", "Scenes.Events.DESTROY")
     @js.native
-    val DESTROY: Any = js.native
+    val DESTROY: String = js.native
     
     /**
       * The Scene Systems Pause Event.
@@ -90,7 +90,7 @@ object Scenes {
       */
     @JSImport("phaser", "Scenes.Events.PAUSE")
     @js.native
-    val PAUSE: Any = js.native
+    val PAUSE: String = js.native
     
     /**
       * The Scene Systems Post Update Event.
@@ -112,7 +112,7 @@ object Scenes {
       */
     @JSImport("phaser", "Scenes.Events.POST_UPDATE")
     @js.native
-    val POST_UPDATE: Any = js.native
+    val POST_UPDATE: String = js.native
     
     /**
       * The Scene Systems Pre-Render Event.
@@ -136,7 +136,7 @@ object Scenes {
       */
     @JSImport("phaser", "Scenes.Events.PRE_RENDER")
     @js.native
-    val PRE_RENDER: Any = js.native
+    val PRE_RENDER: String = js.native
     
     /**
       * The Scene Systems Pre Update Event.
@@ -158,7 +158,7 @@ object Scenes {
       */
     @JSImport("phaser", "Scenes.Events.PRE_UPDATE")
     @js.native
-    val PRE_UPDATE: Any = js.native
+    val PRE_UPDATE: String = js.native
     
     /**
       * The Scene Systems Ready Event.
@@ -171,7 +171,7 @@ object Scenes {
       */
     @JSImport("phaser", "Scenes.Events.READY")
     @js.native
-    val READY: Any = js.native
+    val READY: String = js.native
     
     /**
       * The Game Object Removed from Scene Event.
@@ -182,7 +182,7 @@ object Scenes {
       */
     @JSImport("phaser", "Scenes.Events.REMOVED_FROM_SCENE")
     @js.native
-    val REMOVED_FROM_SCENE: Any = js.native
+    val REMOVED_FROM_SCENE: String = js.native
     
     /**
       * The Scene Systems Render Event.
@@ -206,7 +206,7 @@ object Scenes {
       */
     @JSImport("phaser", "Scenes.Events.RENDER")
     @js.native
-    val RENDER: Any = js.native
+    val RENDER: String = js.native
     
     /**
       * The Scene Systems Resume Event.
@@ -218,7 +218,7 @@ object Scenes {
       */
     @JSImport("phaser", "Scenes.Events.RESUME")
     @js.native
-    val RESUME: Any = js.native
+    val RESUME: String = js.native
     
     /**
       * The Scene Systems Shutdown Event.
@@ -233,7 +233,7 @@ object Scenes {
       */
     @JSImport("phaser", "Scenes.Events.SHUTDOWN")
     @js.native
-    val SHUTDOWN: Any = js.native
+    val SHUTDOWN: String = js.native
     
     /**
       * The Scene Systems Sleep Event.
@@ -245,7 +245,7 @@ object Scenes {
       */
     @JSImport("phaser", "Scenes.Events.SLEEP")
     @js.native
-    val SLEEP: Any = js.native
+    val SLEEP: String = js.native
     
     /**
       * The Scene Systems Start Event.
@@ -256,7 +256,7 @@ object Scenes {
       */
     @JSImport("phaser", "Scenes.Events.START")
     @js.native
-    val START: Any = js.native
+    val START: String = js.native
     
     /**
       * The Scene Transition Complete Event.
@@ -278,7 +278,7 @@ object Scenes {
       */
     @JSImport("phaser", "Scenes.Events.TRANSITION_COMPLETE")
     @js.native
-    val TRANSITION_COMPLETE: Any = js.native
+    val TRANSITION_COMPLETE: String = js.native
     
     /**
       * The Scene Transition Init Event.
@@ -300,7 +300,7 @@ object Scenes {
       */
     @JSImport("phaser", "Scenes.Events.TRANSITION_INIT")
     @js.native
-    val TRANSITION_INIT: Any = js.native
+    val TRANSITION_INIT: String = js.native
     
     /**
       * The Scene Transition Out Event.
@@ -319,7 +319,7 @@ object Scenes {
       */
     @JSImport("phaser", "Scenes.Events.TRANSITION_OUT")
     @js.native
-    val TRANSITION_OUT: Any = js.native
+    val TRANSITION_OUT: String = js.native
     
     /**
       * The Scene Transition Start Event.
@@ -344,7 +344,7 @@ object Scenes {
       */
     @JSImport("phaser", "Scenes.Events.TRANSITION_START")
     @js.native
-    val TRANSITION_START: Any = js.native
+    val TRANSITION_START: String = js.native
     
     /**
       * The Scene Transition Wake Event.
@@ -364,7 +364,7 @@ object Scenes {
       */
     @JSImport("phaser", "Scenes.Events.TRANSITION_WAKE")
     @js.native
-    val TRANSITION_WAKE: Any = js.native
+    val TRANSITION_WAKE: String = js.native
     
     /**
       * The Scene Systems Update Event.
@@ -375,7 +375,7 @@ object Scenes {
       * 
       * 1. [PRE_UPDATE]{@linkcode Phaser.Scenes.Events#event:PRE_UPDATE}
       * 2. [UPDATE]{@linkcode Phaser.Scenes.Events#event:UPDATE}
-      * 3. The `Scene.update` method is called, if it exists
+      * 3. The `Scene.update` method is called, if it exists and the Scene is in a Running state, otherwise this is skipped.
       * 4. [POST_UPDATE]{@linkcode Phaser.Scenes.Events#event:POST_UPDATE}
       * 5. [PRE_RENDER]{@linkcode Phaser.Scenes.Events#event:PRE_RENDER}
       * 6. [RENDER]{@linkcode Phaser.Scenes.Events#event:RENDER}
@@ -386,7 +386,7 @@ object Scenes {
       */
     @JSImport("phaser", "Scenes.Events.UPDATE")
     @js.native
-    val UPDATE: Any = js.native
+    val UPDATE: String = js.native
     
     /**
       * The Scene Systems Wake Event.
@@ -398,7 +398,7 @@ object Scenes {
       */
     @JSImport("phaser", "Scenes.Events.WAKE")
     @js.native
-    val WAKE: Any = js.native
+    val WAKE: String = js.native
   }
   
   /**

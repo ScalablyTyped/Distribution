@@ -22,12 +22,12 @@ trait DescribeStoreImageTasksRequest extends StObject {
   var ImageIds: js.UndefOr[ImageIdList] = js.undefined
   
   /**
-    * The maximum number of results to return in a single call. To retrieve the remaining results, make another call with the returned NextToken value. This value can be between 1 and 200. You cannot specify this parameter and the ImageIDs parameter in the same call.
+    * The maximum number of items to return for this request. To get the next page of items, make another request with the token returned in the output. For more information, see Pagination. You cannot specify this parameter and the ImageIDs parameter in the same call.
     */
   var MaxResults: js.UndefOr[DescribeStoreImageTasksRequestMaxResults] = js.undefined
   
   /**
-    * The token for the next page of results.
+    * The token returned from a previous paginated request. Pagination continues from the end of the items returned by the previous request.
     */
   var NextToken: js.UndefOr[String] = js.undefined
 }

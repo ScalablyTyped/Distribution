@@ -6,6 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("web3-bzz", JSImport.Default)
+  @js.native
+  open class default () extends Bzz {
+    def this(provider: Any) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("web3-bzz", "default.givenProvider")
+    @js.native
+    val givenProvider: Any = js.native
+  }
+  
   @JSImport("web3-bzz", "Bzz")
   @js.native
   open class Bzz () extends StObject {

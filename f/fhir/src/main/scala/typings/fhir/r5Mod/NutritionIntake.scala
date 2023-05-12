@@ -35,7 +35,7 @@ trait NutritionIntake
   var basedOn: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * Type of nutrition intake setting/reporting.
+    * Overall type of nutrition intake.
     */
   var code: js.UndefOr[CodeableConcept] = js.undefined
   

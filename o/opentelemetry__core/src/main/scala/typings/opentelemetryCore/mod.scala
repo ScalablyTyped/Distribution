@@ -9,9 +9,12 @@ import typings.opentelemetryApi.buildSrcCommonTimeMod.TimeInput
 import typings.opentelemetryApi.buildSrcContextTypesMod.Context
 import typings.opentelemetryApi.buildSrcTraceAttributesMod.SpanAttributes
 import typings.opentelemetryApi.buildSrcTraceSpanContextMod.SpanContext
+import typings.opentelemetryCore.anon.FnCall
 import typings.opentelemetryCore.buildSrcBaggageUtilsMod.ParsedBaggageKeyValue
 import typings.opentelemetryCore.buildSrcCommonAnchoredClockMod.Clock
 import typings.opentelemetryCore.buildSrcCommonTypesMod.ErrorHandler
+import typings.opentelemetryCore.buildSrcExportResultMod.ExportResult
+import typings.opentelemetryCore.buildSrcInternalExporterMod.Exporter
 import typings.opentelemetryCore.buildSrcPropagationCompositeMod.CompositePropagatorConfig
 import typings.opentelemetryCore.buildSrcTraceRpcMetadataMod.RPCMetadata
 import typings.opentelemetryCore.buildSrcTraceSamplerParentBasedSamplerMod.ParentBasedSamplerConfig
@@ -83,6 +86,14 @@ object mod {
   @js.native
   val DEFAULT_ENVIRONMENT: Required[ENVIRONMENT] = js.native
   
+  @JSImport("@opentelemetry/core", "DEFAULT_SPAN_ATTRIBUTE_PER_EVENT_COUNT_LIMIT")
+  @js.native
+  val DEFAULT_SPAN_ATTRIBUTE_PER_EVENT_COUNT_LIMIT: /* 128 */ Double = js.native
+  
+  @JSImport("@opentelemetry/core", "DEFAULT_SPAN_ATTRIBUTE_PER_LINK_COUNT_LIMIT")
+  @js.native
+  val DEFAULT_SPAN_ATTRIBUTE_PER_LINK_COUNT_LIMIT: /* 128 */ Double = js.native
+  
   @JSImport("@opentelemetry/core", "ExportResultCode")
   @js.native
   object ExportResultCode extends StObject {
@@ -125,6 +136,13 @@ object mod {
   @js.native
   val TRACE_STATE_HEADER: /* "tracestate" */ String = js.native
   
+  @JSImport("@opentelemetry/core", "TimeoutError")
+  @js.native
+  open class TimeoutError ()
+    extends typings.opentelemetryCore.buildSrcUtilsTimeoutMod.TimeoutError {
+    def this(message: String) = this()
+  }
+  
   @JSImport("@opentelemetry/core", "TraceIdRatioBasedSampler")
   @js.native
   open class TraceIdRatioBasedSampler ()
@@ -161,7 +179,7 @@ object mod {
   
   @JSImport("@opentelemetry/core", "VERSION")
   @js.native
-  val VERSION: /* "1.7.0" */ String = js.native
+  val VERSION: /* "1.13.0" */ String = js.native
   
   @JSImport("@opentelemetry/core", "W3CBaggagePropagator")
   @js.native
@@ -172,6 +190,8 @@ object mod {
   @js.native
   open class W3CTraceContextPropagator ()
     extends typings.opentelemetryCore.buildSrcTraceW3CTraceContextPropagatorMod.W3CTraceContextPropagator
+  
+  inline def addHrTimes(time1: HrTime, time2: HrTime): HrTime = (^.asInstanceOf[js.Dynamic].applyDynamic("addHrTimes")(time1.asInstanceOf[js.Any], time2.asInstanceOf[js.Any])).asInstanceOf[HrTime]
   
   object baggageUtils {
     
@@ -189,6 +209,8 @@ object mod {
     inline def serializeKeyPairs(keyPairs: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeKeyPairs")(keyPairs.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
+  inline def callWithTimeout[T](promise: js.Promise[T], timeout: Double): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("callWithTimeout")(promise.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  
   inline def deleteRPCMetadata(context: Context): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteRPCMetadata")(context.asInstanceOf[js.Any]).asInstanceOf[Context]
   
   inline def getEnv(): Required[ENVIRONMENT] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnv")().asInstanceOf[Required[ENVIRONMENT]]
@@ -196,6 +218,8 @@ object mod {
   inline def getEnvWithoutDefaults(): ENVIRONMENT = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnvWithoutDefaults")().asInstanceOf[ENVIRONMENT]
   
   inline def getRPCMetadata(context: Context): js.UndefOr[RPCMetadata] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRPCMetadata")(context.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[RPCMetadata]]
+  
+  inline def getTimeOrigin(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimeOrigin")().asInstanceOf[Double]
   
   inline def globalErrorHandler(ex: Exception): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("globalErrorHandler")(ex.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -218,6 +242,19 @@ object mod {
   
   inline def hrTimeToTimeStamp(time: HrTime): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hrTimeToTimeStamp")(time.asInstanceOf[js.Any]).asInstanceOf[String]
   
+  object internal {
+    
+    @JSImport("@opentelemetry/core", "internal")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@opentelemetry/core", "internal._export")
+    @js.native
+    val `export`: FnCall = js.native
+    
+    inline def `export`[T](exporter: Exporter[T], arg: T): js.Promise[ExportResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("_export")(exporter.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ExportResult]]
+  }
+  
   inline def isAttributeKey(key: Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAttributeKey")(key.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
   
   inline def isAttributeValue(`val`: Any): /* is @opentelemetry/api.@opentelemetry/api/build/src/trace/attributes.SpanAttributeValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAttributeValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is @opentelemetry/api.@opentelemetry/api/build/src/trace/attributes.SpanAttributeValue */ Boolean]
@@ -236,6 +273,8 @@ object mod {
   inline def loggingErrorHandler(): ErrorHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("loggingErrorHandler")().asInstanceOf[ErrorHandler]
   
   inline def merge(args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
+  
+  inline def millisToHrTime(epochMillis: Double): HrTime = ^.asInstanceOf[js.Dynamic].applyDynamic("millisToHrTime")(epochMillis.asInstanceOf[js.Any]).asInstanceOf[HrTime]
   
   @JSImport("@opentelemetry/core", "otperformance")
   @js.native

@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MsTextAutospace
+import typings.csstype.mod.Property.AnimationTimingFunction
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `161` extends StObject {
   
   var value: js.UndefOr[
-    MsTextAutospace | (js.Array[
+    AnimationTimingFunction | (js.Array[
       (Extract[
-        js.UndefOr[MsTextAutospace | js.Array[NonNullable[js.UndefOr[MsTextAutospace]]]], 
+        js.UndefOr[
+          AnimationTimingFunction | js.Array[NonNullable[js.UndefOr[AnimationTimingFunction]]]
+        ], 
         String
-      ]) | NonNullable[js.UndefOr[MsTextAutospace]]
+      ]) | NonNullable[js.UndefOr[AnimationTimingFunction]]
     ])
   ] = js.native
 }

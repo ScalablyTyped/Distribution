@@ -2,7 +2,7 @@ package typings.awsSdkCredentialProviderIni
 
 import typings.awsSdkCredentialProviderIni.awsSdkCredentialProviderIniBooleans.`true`
 import typings.awsSdkCredentialProviderIni.distTypesFromIniMod.FromIniInit
-import typings.awsSdkTypes.distTypesCredentialsMod.Credentials
+import typings.awsSdkTypes.distTypesIdentityAwsCredentialIdentityMod.AwsCredentialIdentity
 import typings.awsSdkTypes.distTypesProfileMod.ParsedIniData
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -17,14 +17,14 @@ object distTypesResolveAssumeRoleCredentialsMod {
   
   inline def isAssumeRoleProfile(arg: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAssumeRoleProfile")(arg.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def resolveAssumeRoleCredentials(profileName: String, profiles: ParsedIniData, options: FromIniInit): js.Promise[Credentials] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAssumeRoleCredentials")(profileName.asInstanceOf[js.Any], profiles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Credentials]]
+  inline def resolveAssumeRoleCredentials(profileName: String, profiles: ParsedIniData, options: FromIniInit): js.Promise[AwsCredentialIdentity] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAssumeRoleCredentials")(profileName.asInstanceOf[js.Any], profiles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AwsCredentialIdentity]]
   
   inline def resolveAssumeRoleCredentials_true(
     profileName: String,
     profiles: ParsedIniData,
     options: FromIniInit,
     visitedProfiles: Record[String, `true`]
-  ): js.Promise[Credentials] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAssumeRoleCredentials")(profileName.asInstanceOf[js.Any], profiles.asInstanceOf[js.Any], options.asInstanceOf[js.Any], visitedProfiles.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Credentials]]
+  ): js.Promise[AwsCredentialIdentity] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAssumeRoleCredentials")(profileName.asInstanceOf[js.Any], profiles.asInstanceOf[js.Any], options.asInstanceOf[js.Any], visitedProfiles.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AwsCredentialIdentity]]
   
   trait AssumeRoleParams extends StObject {
     

@@ -2,7 +2,6 @@ package typings.memFsEditor
 
 import typings.ejs.mod.Data
 import typings.ejs.mod.Options
-import typings.glob.mod.IOptions
 import typings.jsonSchema.mod.JSONSchema7Type
 import typings.memFs.mod.Store
 import typings.memFsEditor.memFsEditorBooleans.`false`
@@ -202,7 +201,9 @@ object mod {
   
   trait WithGlobOptions extends StObject {
     
-    var globOptions: js.UndefOr[IOptions] = js.undefined
+    var globOptions: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobOptions */ Any
+      ] = js.undefined
   }
   object WithGlobOptions {
     
@@ -214,7 +215,9 @@ object mod {
     @scala.inline
     implicit open class MutableBuilder[Self <: WithGlobOptions] (val x: Self) extends AnyVal {
       
-      inline def setGlobOptions(value: IOptions): Self = StObject.set(x, "globOptions", value.asInstanceOf[js.Any])
+      inline def setGlobOptions(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobOptions */ Any
+      ): Self = StObject.set(x, "globOptions", value.asInstanceOf[js.Any])
       
       inline def setGlobOptionsUndefined: Self = StObject.set(x, "globOptions", js.undefined)
     }

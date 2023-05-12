@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PermissionEntry extends StObject {
   
   /**
-    * Specifies whether the user or group has the Admin or Editor role.
+    * Specifies whether the user or group has the Admin, Editor, or Viewer role.
     */
   var role: Role
   

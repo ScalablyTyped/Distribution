@@ -13,7 +13,7 @@ object fs {
   
   /**
     * The Filesystem constructor.
-    * 
+    *
     * @defaultValue {@link FS}
     */
   @JSImport("@zip.js/zip.js", "fs.FS")
@@ -22,7 +22,7 @@ object fs {
   
   /**
     * The Filesystem constructor.
-    * 
+    *
     * @defaultValue {@link FS}
     */
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
@@ -34,7 +34,7 @@ object fs {
   
   /**
     * The {@link ZipDirectoryEntry} constructor.
-    * 
+    *
     * @defaultValue {@link ZipDirectoryEntry}
     */
   @JSImport("@zip.js/zip.js", "fs.ZipDirectoryEntry")
@@ -43,7 +43,7 @@ object fs {
   
   /**
     * The {@link ZipDirectoryEntry} constructor.
-    * 
+    *
     * @defaultValue {@link ZipDirectoryEntry}
     */
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
@@ -55,7 +55,7 @@ object fs {
   
   /**
     * The {@link ZipFileEntry} constructor.
-    * 
+    *
     * @defaultValue {@link ZipFileEntry}
     */
   @JSImport("@zip.js/zip.js", "fs.ZipFileEntry")
@@ -64,7 +64,7 @@ object fs {
   
   /**
     * The {@link ZipFileEntry} constructor.
-    * 
+    *
     * @defaultValue {@link ZipFileEntry}
     */
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */

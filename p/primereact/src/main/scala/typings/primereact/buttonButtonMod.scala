@@ -12,8 +12,10 @@ import typings.primereact.primereactStrings.all
 import typings.primereact.primereactStrings.ascending
 import typings.primereact.primereactStrings.assertive
 import typings.primereact.primereactStrings.both
+import typings.primereact.primereactStrings.bottom
 import typings.primereact.primereactStrings.button
 import typings.primereact.primereactStrings.copy
+import typings.primereact.primereactStrings.danger
 import typings.primereact.primereactStrings.date
 import typings.primereact.primereactStrings.decimal
 import typings.primereact.primereactStrings.descending
@@ -22,8 +24,12 @@ import typings.primereact.primereactStrings.email
 import typings.primereact.primereactStrings.execute
 import typings.primereact.primereactStrings.grammar
 import typings.primereact.primereactStrings.grid
+import typings.primereact.primereactStrings.help
 import typings.primereact.primereactStrings.horizontal
+import typings.primereact.primereactStrings.info
 import typings.primereact.primereactStrings.inherit
+import typings.primereact.primereactStrings.large
+import typings.primereact.primereactStrings.left
 import typings.primereact.primereactStrings.link
 import typings.primereact.primereactStrings.list
 import typings.primereact.primereactStrings.listbox
@@ -42,16 +48,22 @@ import typings.primereact.primereactStrings.polite
 import typings.primereact.primereactStrings.popup
 import typings.primereact.primereactStrings.removals
 import typings.primereact.primereactStrings.reset
+import typings.primereact.primereactStrings.right
 import typings.primereact.primereactStrings.search
+import typings.primereact.primereactStrings.secondary
+import typings.primereact.primereactStrings.small
 import typings.primereact.primereactStrings.spelling
 import typings.primereact.primereactStrings.step
 import typings.primereact.primereactStrings.submit
+import typings.primereact.primereactStrings.success
 import typings.primereact.primereactStrings.tel
 import typings.primereact.primereactStrings.text
 import typings.primereact.primereactStrings.time
+import typings.primereact.primereactStrings.top
 import typings.primereact.primereactStrings.tree
 import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.vertical
+import typings.primereact.primereactStrings.warning
 import typings.primereact.primereactStrings.yes
 import typings.primereact.tooltipTooltipoptionsMod.TooltipOptions
 import typings.react.anon.Html
@@ -93,6 +105,7 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -106,27 +119,9 @@ object buttonButtonMod {
     def this(props: ButtonProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ButtonProps, context: Any) = this()
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.top
-    - typings.primereact.primereactStrings.bottom
-    - typings.primereact.primereactStrings.left
-    - typings.primereact.primereactStrings.right
-  */
-  trait ButtonPositionType extends StObject
-  object ButtonPositionType {
-    
-    inline def bottom: typings.primereact.primereactStrings.bottom = "bottom".asInstanceOf[typings.primereact.primereactStrings.bottom]
-    
-    inline def left: typings.primereact.primereactStrings.left = "left".asInstanceOf[typings.primereact.primereactStrings.left]
-    
-    inline def right: typings.primereact.primereactStrings.right = "right".asInstanceOf[typings.primereact.primereactStrings.right]
-    
-    inline def top: typings.primereact.primereactStrings.top = "top".asInstanceOf[typings.primereact.primereactStrings.top]
   }
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.ButtonHTMLAttributes<std.HTMLButtonElement>, std.HTMLButtonElement>, 'disabled' | 'ref'> */
@@ -242,15 +237,27 @@ object buttonButtonMod {
     
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Value of the badge.
+      */
     var badge: js.UndefOr[String] = js.undefined
     
+    /**
+      * Style class of the badge.
+      */
     var badgeClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -266,13 +273,17 @@ object buttonButtonMod {
     
     var dir: js.UndefOr[String] = js.undefined
     
+    /**
+      * When present, it specifies that the element should be disabled.
+      * @defaultValue false
+      */
     var disabled: js.UndefOr[Boolean] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
     var form: js.UndefOr[String] = js.undefined
     
-    var formAction: js.UndefOr[String] = js.undefined
+    var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     var formEncType: js.UndefOr[String] = js.undefined
     
@@ -284,11 +295,18 @@ object buttonButtonMod {
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Name of the icon or JSX.Element for icon.
+      */
     var icon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<ButtonProps> */ Any
       ] = js.undefined
     
-    var iconPos: js.UndefOr[ButtonPositionType] = js.undefined
+    /**
+      * Position of the icon, valid values are "left", "right", "top" and "bottom".
+      * @defaultValue left
+      */
+    var iconPos: js.UndefOr[top | bottom | left | right] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
@@ -310,12 +328,28 @@ object buttonButtonMod {
     
     var key: js.UndefOr[Key | Null] = js.undefined
     
+    /**
+      * Text of the button.
+      */
     var label: js.UndefOr[String] = js.undefined
     
     var lang: js.UndefOr[String] = js.undefined
     
+    /**
+      * Add a link style to the button.
+      * @defaultValue false
+      */
+    var link: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Display loading icon of the button
+      * @defaultValue false
+      */
     var loading: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Name of the loading icon or JSX.Element for loading icon.
+      */
     var loadingIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<ButtonProps> */ Any
       ] = js.undefined
@@ -484,6 +518,12 @@ object buttonButtonMod {
     
     var onWheel: js.UndefOr[WheelEventHandler[HTMLButtonElement]] = js.undefined
     
+    /**
+      * Add a border class without a background initially.
+      * @defaultValue false
+      */
+    var outlined: js.UndefOr[Boolean] = js.undefined
+    
     var placeholder: js.UndefOr[String] = js.undefined
     
     var prefix: js.UndefOr[String] = js.undefined
@@ -492,13 +532,39 @@ object buttonButtonMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    /**
+      * Add a shadow to indicate elevation.
+      * @defaultValue false
+      */
+    var raised: js.UndefOr[Boolean] = js.undefined
+    
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
     
+    var rev: js.UndefOr[String] = js.undefined
+    
     var role: js.UndefOr[AriaRole] = js.undefined
     
+    /**
+      * Add a circular border radius to the button.
+      * @defaultValue false
+      */
+    var rounded: js.UndefOr[Boolean] = js.undefined
+    
     var security: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Defines the style of the button, valid values are "secondary", "success", "info", "warning", "danger", "help".
+      */
+    var severity: js.UndefOr[secondary | success | info | warning | danger | help] = js.undefined
+    
+    /**
+      * Defines the size of the button, valid values are "small" and "large".
+      */
+    var size: js.UndefOr[small | large] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
     
@@ -512,10 +578,22 @@ object buttonButtonMod {
     
     var tabIndex: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Add a textual class to the button without a background initially.
+      * @defaultValue false
+      */
+    var text: js.UndefOr[Boolean] = js.undefined
+    
     var title: js.UndefOr[String] = js.undefined
     
+    /**
+      * Content of the tooltip.
+      */
     var tooltip: js.UndefOr[String] = js.undefined
     
+    /**
+      * Configuration of the tooltip, refer to the tooltip documentation for more information.
+      */
     var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
     
     var translate: js.UndefOr[yes | no] = js.undefined
@@ -528,6 +606,10 @@ object buttonButtonMod {
     
     var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
     
+    /**
+      * When present, it specifies that the element should be visible.
+      * @defaultValue true
+      */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
@@ -780,9 +862,13 @@ object buttonButtonMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -820,7 +906,9 @@ object buttonButtonMod {
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      
+      inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
       
       inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
@@ -850,7 +938,7 @@ object buttonButtonMod {
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<ButtonProps> */ Any
       ): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      inline def setIconPos(value: ButtonPositionType): Self = StObject.set(x, "iconPos", value.asInstanceOf[js.Any])
+      inline def setIconPos(value: top | bottom | left | right): Self = StObject.set(x, "iconPos", value.asInstanceOf[js.Any])
       
       inline def setIconPosUndefined: Self = StObject.set(x, "iconPos", js.undefined)
       
@@ -905,6 +993,10 @@ object buttonButtonMod {
       inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+      
+      inline def setLink(value: Boolean): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      
+      inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
       
       inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
@@ -1244,6 +1336,10 @@ object buttonButtonMod {
       
       inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
       
+      inline def setOutlined(value: Boolean): Self = StObject.set(x, "outlined", value.asInstanceOf[js.Any])
+      
+      inline def setOutlinedUndefined: Self = StObject.set(x, "outlined", js.undefined)
+      
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
@@ -1260,6 +1356,14 @@ object buttonButtonMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRaised(value: Boolean): Self = StObject.set(x, "raised", value.asInstanceOf[js.Any])
+      
+      inline def setRaisedUndefined: Self = StObject.set(x, "raised", js.undefined)
+      
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1268,13 +1372,29 @@ object buttonButtonMod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
+      
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
+      inline def setRounded(value: Boolean): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
+      
+      inline def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
+      
       inline def setSecurity(value: String): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
       
       inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
+      
+      inline def setSeverity(value: secondary | success | info | warning | danger | help): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+      
+      inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
+      
+      inline def setSize(value: small | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
       inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
       
@@ -1299,6 +1419,10 @@ object buttonButtonMod {
       inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
       
       inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+      
+      inline def setText(value: Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

@@ -167,6 +167,12 @@ type TextAreaChangeEvent = TextAreaEvent
 
 type TextBoxChangeEvent = TextBoxEvent
 
+type TimeDurationPickerChangeEvent = TimeDurationPickerEvent
+
+type TimeDurationPickerCloseEvent = TimeDurationPickerEvent
+
+type TimeDurationPickerOpenEvent = TimeDurationPickerEvent
+
 type TimePickerChangeEvent = TimePickerEvent
 
 type TimePickerCloseEvent = TimePickerEvent

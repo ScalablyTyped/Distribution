@@ -12,7 +12,7 @@ trait ComponentConfiguration extends StObject {
   var componentArn: ComponentVersionArnOrBuildVersionArn
   
   /**
-    * A group of parameter settings that are used to configure the component for a specific recipe.
+    * A group of parameter settings that Image Builder uses to configure the component for a specific recipe.
     */
   var parameters: js.UndefOr[ComponentParameterList] = js.undefined
 }

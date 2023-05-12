@@ -14,7 +14,7 @@ object libComponentsSpinnerSpinnerDotbaseMod {
     def this(props: ISpinnerProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ISpinnerProps, context: Any) = this()
   }

@@ -19,7 +19,7 @@ object distSrcEnvelopeMod {
       * The Envelope is responsible for keeping an arbitrary signed record
       * by a libp2p peer.
       */
-    def this(init: EnvelopeInit) = this()
+    def this(init: RecordEnvelopeInit) = this()
     
     /* CompleteClass */
     override def equals(other: Envelope): Boolean = js.native
@@ -75,7 +75,7 @@ object distSrcEnvelopeMod {
     inline def seal(record: Record, peerId: PeerId): js.Promise[RecordEnvelope] = (^.asInstanceOf[js.Dynamic].applyDynamic("seal")(record.asInstanceOf[js.Any], peerId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RecordEnvelope]]
   }
   
-  trait EnvelopeInit extends StObject {
+  trait RecordEnvelopeInit extends StObject {
     
     var payload: js.typedarray.Uint8Array
     
@@ -85,20 +85,20 @@ object distSrcEnvelopeMod {
     
     var signature: js.typedarray.Uint8Array
   }
-  object EnvelopeInit {
+  object RecordEnvelopeInit {
     
     inline def apply(
       payload: js.typedarray.Uint8Array,
       payloadType: js.typedarray.Uint8Array,
       peerId: PeerId,
       signature: js.typedarray.Uint8Array
-    ): EnvelopeInit = {
+    ): RecordEnvelopeInit = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], payloadType = payloadType.asInstanceOf[js.Any], peerId = peerId.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
-      __obj.asInstanceOf[EnvelopeInit]
+      __obj.asInstanceOf[RecordEnvelopeInit]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: EnvelopeInit] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: RecordEnvelopeInit] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: js.typedarray.Uint8Array): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       

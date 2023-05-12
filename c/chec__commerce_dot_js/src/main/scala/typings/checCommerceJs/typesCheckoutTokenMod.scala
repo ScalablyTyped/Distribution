@@ -7,7 +7,7 @@ import typings.checCommerceJs.anon.Cartfree
 import typings.checCommerceJs.anon.Collectsbillingaddress
 import typings.checCommerceJs.anon.Collectsextrafields
 import typings.checCommerceJs.anon.Digitaldelivery
-import typings.checCommerceJs.typesExtrafieldMod.Extrafield
+import typings.checCommerceJs.typesExtrafieldsMod.Extrafields
 import typings.checCommerceJs.typesGatewayMod.Gateway
 import typings.checCommerceJs.typesLiveMod.Live
 import typings.checCommerceJs.typesMerchantMod.Merchant
@@ -34,7 +34,7 @@ object typesCheckoutTokenMod {
     
     var expires: Double
     
-    var extra_fields: js.Array[Extrafield]
+    var extra_fields: Extrafields
     
     var gateways: js.Array[Gateway]
     
@@ -60,7 +60,7 @@ object typesCheckoutTokenMod {
       conditionals: Collectsbillingaddress,
       created: Double,
       expires: Double,
-      extra_fields: js.Array[Extrafield],
+      extra_fields: Extrafields,
       gateways: js.Array[Gateway],
       has: Availablediscounts,
       id: String,
@@ -91,9 +91,7 @@ object typesCheckoutTokenMod {
       
       inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
-      inline def setExtra_fields(value: js.Array[Extrafield]): Self = StObject.set(x, "extra_fields", value.asInstanceOf[js.Any])
-      
-      inline def setExtra_fieldsVarargs(value: Extrafield*): Self = StObject.set(x, "extra_fields", js.Array(value*))
+      inline def setExtra_fields(value: Extrafields): Self = StObject.set(x, "extra_fields", value.asInstanceOf[js.Any])
       
       inline def setGateways(value: js.Array[Gateway]): Self = StObject.set(x, "gateways", value.asInstanceOf[js.Any])
       

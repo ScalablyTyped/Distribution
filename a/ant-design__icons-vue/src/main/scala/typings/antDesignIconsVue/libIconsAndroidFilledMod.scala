@@ -16,7 +16,7 @@ object libIconsAndroidFilledMod extends Shortcut {
   @js.native
   trait AndroidFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_AndroidFilledIconType: String = js.native

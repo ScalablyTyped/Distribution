@@ -18,7 +18,7 @@ trait Idletimeoutminutes extends StObject {
   /** @description Time in minutes before codespace stops from inactivity */
   var idle_timeout_minutes: js.UndefOr[Double] = js.undefined
   
-  /** @description Location for this codespace. Assigned by IP if not provided */
+  /** @description The requested location for a new codespace. Best efforts are made to respect this upon creation. Assigned by IP if not provided. */
   var location: js.UndefOr[String] = js.undefined
   
   /** @description Machine type to use for this codespace */
@@ -26,12 +26,6 @@ trait Idletimeoutminutes extends StObject {
   
   /** @description Whether to authorize requested permissions from devcontainer.json */
   var multi_repo_permissions_opt_out: js.UndefOr[Boolean] = js.undefined
-  
-  /** @description Git ref (typically a branch name) for this codespace */
-  var ref: js.UndefOr[String] = js.undefined
-  
-  /** @description Repository id for this codespace */
-  var repository_id: Double
   
   /** @description Duration in minutes after codespace has gone idle in which it will be deleted. Must be integer minutes between 0 and 43200 (30 days). */
   var retention_period_minutes: js.UndefOr[Double] = js.undefined
@@ -41,8 +35,8 @@ trait Idletimeoutminutes extends StObject {
 }
 object Idletimeoutminutes {
   
-  inline def apply(repository_id: Double): Idletimeoutminutes = {
-    val __obj = js.Dynamic.literal(repository_id = repository_id.asInstanceOf[js.Any])
+  inline def apply(): Idletimeoutminutes = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Idletimeoutminutes]
   }
   
@@ -76,12 +70,6 @@ object Idletimeoutminutes {
     inline def setMulti_repo_permissions_opt_out(value: Boolean): Self = StObject.set(x, "multi_repo_permissions_opt_out", value.asInstanceOf[js.Any])
     
     inline def setMulti_repo_permissions_opt_outUndefined: Self = StObject.set(x, "multi_repo_permissions_opt_out", js.undefined)
-    
-    inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
-    
-    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
-    
-    inline def setRepository_id(value: Double): Self = StObject.set(x, "repository_id", value.asInstanceOf[js.Any])
     
     inline def setRetention_period_minutes(value: Double): Self = StObject.set(x, "retention_period_minutes", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListAttributeGroupsForApplicationResponse extends StObject {
   
   /**
-    *  The details related to a specific AttributeGroup. 
+    *  The details related to a specific attribute group. 
     */
   var attributeGroupsDetails: js.UndefOr[AttributeGroupDetailsList] = js.undefined
   

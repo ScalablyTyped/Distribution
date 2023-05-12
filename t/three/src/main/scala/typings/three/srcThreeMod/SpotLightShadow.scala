@@ -8,5 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class SpotLightShadow protected ()
   extends typings.three.srcLightsSpotLightShadowMod.SpotLightShadow {
-  def this(camera: typings.three.srcCamerasCameraMod.Camera) = this()
+  /**
+    * Create a new instance of {@link LightShadow}
+    * @param camera The light's view of the world.
+    */
+  def this(camera: typings.three.srcCamerasPerspectiveCameraMod.PerspectiveCamera) = this()
 }

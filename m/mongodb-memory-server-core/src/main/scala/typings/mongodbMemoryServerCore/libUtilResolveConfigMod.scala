@@ -16,7 +16,7 @@ object libUtilResolveConfigMod {
   
   @JSImport("mongodb-memory-server-core/lib/util/resolveConfig", "DEFAULT_VERSION")
   @js.native
-  val DEFAULT_VERSION: /* "5.0.8" */ String = js.native
+  val DEFAULT_VERSION: /* "5.0.13" */ String = js.native
   
   @JSImport("mongodb-memory-server-core/lib/util/resolveConfig", "ENV_CONFIG_PREFIX")
   @js.native

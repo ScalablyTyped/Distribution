@@ -11,14 +11,6 @@ object fhirStrings {
   inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait `2d` extends StObject
-  inline def `2d`: `2d` = "2d".asInstanceOf[`2d`]
-  
-  @js.native
-  sealed trait `3d` extends StObject
-  inline def `3d`: `3d` = "3d".asInstanceOf[`3d`]
-  
-  @js.native
   sealed trait AE extends StObject
   inline def AE: AE = "AE".asInstanceOf[AE]
   
@@ -29,6 +21,10 @@ object fhirStrings {
   @js.native
   sealed trait ActivityDefinition extends StObject
   inline def ActivityDefinition: ActivityDefinition = "ActivityDefinition".asInstanceOf[ActivityDefinition]
+  
+  @js.native
+  sealed trait ActorDefinition extends StObject
+  inline def ActorDefinition: ActorDefinition = "ActorDefinition".asInstanceOf[ActorDefinition]
   
   @js.native
   sealed trait AdministrableProductDefinition extends StObject
@@ -71,6 +67,10 @@ object fhirStrings {
   inline def BiologicallyDerivedProduct: BiologicallyDerivedProduct = "BiologicallyDerivedProduct".asInstanceOf[BiologicallyDerivedProduct]
   
   @js.native
+  sealed trait BiologicallyDerivedProductDispense extends StObject
+  inline def BiologicallyDerivedProductDispense: BiologicallyDerivedProductDispense = "BiologicallyDerivedProductDispense".asInstanceOf[BiologicallyDerivedProductDispense]
+  
+  @js.native
   sealed trait BodySite extends StObject
   inline def BodySite: BodySite = "BodySite".asInstanceOf[BodySite]
   
@@ -97,10 +97,6 @@ object fhirStrings {
   @js.native
   sealed trait CapabilityStatement extends StObject
   inline def CapabilityStatement: CapabilityStatement = "CapabilityStatement".asInstanceOf[CapabilityStatement]
-  
-  @js.native
-  sealed trait CapabilityStatement2 extends StObject
-  inline def CapabilityStatement2: CapabilityStatement2 = "CapabilityStatement2".asInstanceOf[CapabilityStatement2]
   
   @js.native
   sealed trait CarePlan extends StObject
@@ -143,10 +139,6 @@ object fhirStrings {
   inline def ClinicalUseDefinition: ClinicalUseDefinition = "ClinicalUseDefinition".asInstanceOf[ClinicalUseDefinition]
   
   @js.native
-  sealed trait ClinicalUseIssue extends StObject
-  inline def ClinicalUseIssue: ClinicalUseIssue = "ClinicalUseIssue".asInstanceOf[ClinicalUseIssue]
-  
-  @js.native
   sealed trait CodeSystem extends StObject
   inline def CodeSystem: CodeSystem = "CodeSystem".asInstanceOf[CodeSystem]
   
@@ -177,10 +169,6 @@ object fhirStrings {
   @js.native
   sealed trait ConceptMap extends StObject
   inline def ConceptMap: ConceptMap = "ConceptMap".asInstanceOf[ConceptMap]
-  
-  @js.native
-  sealed trait ConceptMap2 extends StObject
-  inline def ConceptMap2: ConceptMap2 = "ConceptMap2".asInstanceOf[ConceptMap2]
   
   @js.native
   sealed trait Condition extends StObject
@@ -239,6 +227,10 @@ object fhirStrings {
   inline def Device: Device = "Device".asInstanceOf[Device]
   
   @js.native
+  sealed trait DeviceAssociation extends StObject
+  inline def DeviceAssociation: DeviceAssociation = "DeviceAssociation".asInstanceOf[DeviceAssociation]
+  
+  @js.native
   sealed trait DeviceComponent extends StObject
   inline def DeviceComponent: DeviceComponent = "DeviceComponent".asInstanceOf[DeviceComponent]
   
@@ -287,12 +279,8 @@ object fhirStrings {
   inline def DocumentReference: DocumentReference = "DocumentReference".asInstanceOf[DocumentReference]
   
   @js.native
-  sealed trait ELLIPSE extends StObject
-  inline def ELLIPSE: ELLIPSE = "ELLIPSE".asInstanceOf[ELLIPSE]
-  
-  @js.native
-  sealed trait ELLIPSOID extends StObject
-  inline def ELLIPSOID: ELLIPSOID = "ELLIPSOID".asInstanceOf[ELLIPSOID]
+  sealed trait EffectEvidenceSynthesis extends StObject
+  inline def EffectEvidenceSynthesis: EffectEvidenceSynthesis = "EffectEvidenceSynthesis".asInstanceOf[EffectEvidenceSynthesis]
   
   @js.native
   sealed trait EligibilityRequest extends StObject
@@ -305,6 +293,10 @@ object fhirStrings {
   @js.native
   sealed trait Encounter extends StObject
   inline def Encounter: Encounter = "Encounter".asInstanceOf[Encounter]
+  
+  @js.native
+  sealed trait EncounterHistory extends StObject
+  inline def EncounterHistory: EncounterHistory = "EncounterHistory".asInstanceOf[EncounterHistory]
   
   @js.native
   sealed trait Endpoint extends StObject
@@ -367,8 +359,16 @@ object fhirStrings {
   inline def Flag: Flag = "Flag".asInstanceOf[Flag]
   
   @js.native
+  sealed trait FormularyItem extends StObject
+  inline def FormularyItem: FormularyItem = "FormularyItem".asInstanceOf[FormularyItem]
+  
+  @js.native
   sealed trait GET extends StObject
   inline def GET: GET = "GET".asInstanceOf[GET]
+  
+  @js.native
+  sealed trait GenomicStudy extends StObject
+  inline def GenomicStudy: GenomicStudy = "GenomicStudy".asInstanceOf[GenomicStudy]
   
   @js.native
   sealed trait Goal extends StObject
@@ -443,6 +443,10 @@ object fhirStrings {
   inline def InsurancePlan: InsurancePlan = "InsurancePlan".asInstanceOf[InsurancePlan]
   
   @js.native
+  sealed trait InventoryItem extends StObject
+  inline def InventoryItem: InventoryItem = "InventoryItem".asInstanceOf[InventoryItem]
+  
+  @js.native
   sealed trait InventoryReport extends StObject
   inline def InventoryReport: InventoryReport = "InventoryReport".asInstanceOf[InventoryReport]
   
@@ -475,8 +479,8 @@ object fhirStrings {
   inline def Location: Location = "Location".asInstanceOf[Location]
   
   @js.native
-  sealed trait MULTIPOINT extends StObject
-  inline def MULTIPOINT: MULTIPOINT = "MULTIPOINT".asInstanceOf[MULTIPOINT]
+  sealed trait MAY extends StObject
+  inline def MAY: MAY = "MAY".asInstanceOf[MAY]
   
   @js.native
   sealed trait ManufacturedItemDefinition extends StObject
@@ -523,12 +527,48 @@ object fhirStrings {
   inline def MedicationStatement: MedicationStatement = "MedicationStatement".asInstanceOf[MedicationStatement]
   
   @js.native
-  sealed trait MedicationUsage extends StObject
-  inline def MedicationUsage: MedicationUsage = "MedicationUsage".asInstanceOf[MedicationUsage]
+  sealed trait MedicinalProduct extends StObject
+  inline def MedicinalProduct: MedicinalProduct = "MedicinalProduct".asInstanceOf[MedicinalProduct]
+  
+  @js.native
+  sealed trait MedicinalProductAuthorization extends StObject
+  inline def MedicinalProductAuthorization: MedicinalProductAuthorization = "MedicinalProductAuthorization".asInstanceOf[MedicinalProductAuthorization]
+  
+  @js.native
+  sealed trait MedicinalProductContraindication extends StObject
+  inline def MedicinalProductContraindication: MedicinalProductContraindication = "MedicinalProductContraindication".asInstanceOf[MedicinalProductContraindication]
   
   @js.native
   sealed trait MedicinalProductDefinition extends StObject
   inline def MedicinalProductDefinition: MedicinalProductDefinition = "MedicinalProductDefinition".asInstanceOf[MedicinalProductDefinition]
+  
+  @js.native
+  sealed trait MedicinalProductIndication extends StObject
+  inline def MedicinalProductIndication: MedicinalProductIndication = "MedicinalProductIndication".asInstanceOf[MedicinalProductIndication]
+  
+  @js.native
+  sealed trait MedicinalProductIngredient extends StObject
+  inline def MedicinalProductIngredient: MedicinalProductIngredient = "MedicinalProductIngredient".asInstanceOf[MedicinalProductIngredient]
+  
+  @js.native
+  sealed trait MedicinalProductInteraction extends StObject
+  inline def MedicinalProductInteraction: MedicinalProductInteraction = "MedicinalProductInteraction".asInstanceOf[MedicinalProductInteraction]
+  
+  @js.native
+  sealed trait MedicinalProductManufactured extends StObject
+  inline def MedicinalProductManufactured: MedicinalProductManufactured = "MedicinalProductManufactured".asInstanceOf[MedicinalProductManufactured]
+  
+  @js.native
+  sealed trait MedicinalProductPackaged extends StObject
+  inline def MedicinalProductPackaged: MedicinalProductPackaged = "MedicinalProductPackaged".asInstanceOf[MedicinalProductPackaged]
+  
+  @js.native
+  sealed trait MedicinalProductPharmaceutical extends StObject
+  inline def MedicinalProductPharmaceutical: MedicinalProductPharmaceutical = "MedicinalProductPharmaceutical".asInstanceOf[MedicinalProductPharmaceutical]
+  
+  @js.native
+  sealed trait MedicinalProductUndesirableEffect extends StObject
+  inline def MedicinalProductUndesirableEffect: MedicinalProductUndesirableEffect = "MedicinalProductUndesirableEffect".asInstanceOf[MedicinalProductUndesirableEffect]
   
   @js.native
   sealed trait MessageDefinition extends StObject
@@ -613,18 +653,6 @@ object fhirStrings {
   @js.native
   sealed trait PATCH extends StObject
   inline def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
-  
-  @js.native
-  sealed trait POINT extends StObject
-  inline def POINT: POINT = "POINT".asInstanceOf[POINT]
-  
-  @js.native
-  sealed trait POLYGON extends StObject
-  inline def POLYGON: POLYGON = "POLYGON".asInstanceOf[POLYGON]
-  
-  @js.native
-  sealed trait POLYLINE extends StObject
-  inline def POLYLINE: POLYLINE = "POLYLINE".asInstanceOf[POLYLINE]
   
   @js.native
   sealed trait POST extends StObject
@@ -735,6 +763,14 @@ object fhirStrings {
   inline def RequestGroup: RequestGroup = "RequestGroup".asInstanceOf[RequestGroup]
   
   @js.native
+  sealed trait RequestOrchestration extends StObject
+  inline def RequestOrchestration: RequestOrchestration = "RequestOrchestration".asInstanceOf[RequestOrchestration]
+  
+  @js.native
+  sealed trait Requirements extends StObject
+  inline def Requirements: Requirements = "Requirements".asInstanceOf[Requirements]
+  
+  @js.native
   sealed trait ResearchDefinition extends StObject
   inline def ResearchDefinition: ResearchDefinition = "ResearchDefinition".asInstanceOf[ResearchDefinition]
   
@@ -753,6 +789,22 @@ object fhirStrings {
   @js.native
   sealed trait RiskAssessment extends StObject
   inline def RiskAssessment: RiskAssessment = "RiskAssessment".asInstanceOf[RiskAssessment]
+  
+  @js.native
+  sealed trait RiskEvidenceSynthesis extends StObject
+  inline def RiskEvidenceSynthesis: RiskEvidenceSynthesis = "RiskEvidenceSynthesis".asInstanceOf[RiskEvidenceSynthesis]
+  
+  @js.native
+  sealed trait SHALL extends StObject
+  inline def SHALL: SHALL = "SHALL".asInstanceOf[SHALL]
+  
+  @js.native
+  sealed trait SHOULD extends StObject
+  inline def SHOULD: SHOULD = "SHOULD".asInstanceOf[SHOULD]
+  
+  @js.native
+  sealed trait `SHOULD-NOT` extends StObject
+  inline def `SHOULD-NOT`: `SHOULD-NOT` = "SHOULD-NOT".asInstanceOf[`SHOULD-NOT`]
   
   @js.native
   sealed trait SampledData extends StObject
@@ -839,6 +891,10 @@ object fhirStrings {
   inline def SubstanceSourceMaterial: SubstanceSourceMaterial = "SubstanceSourceMaterial".asInstanceOf[SubstanceSourceMaterial]
   
   @js.native
+  sealed trait SubstanceSpecification extends StObject
+  inline def SubstanceSpecification: SubstanceSpecification = "SubstanceSpecification".asInstanceOf[SubstanceSpecification]
+  
+  @js.native
   sealed trait SupplyDelivery extends StObject
   inline def SupplyDelivery: SupplyDelivery = "SupplyDelivery".asInstanceOf[SupplyDelivery]
   
@@ -855,12 +911,20 @@ object fhirStrings {
   inline def TerminologyCapabilities: TerminologyCapabilities = "TerminologyCapabilities".asInstanceOf[TerminologyCapabilities]
   
   @js.native
+  sealed trait TestPlan extends StObject
+  inline def TestPlan: TestPlan = "TestPlan".asInstanceOf[TestPlan]
+  
+  @js.native
   sealed trait TestReport extends StObject
   inline def TestReport: TestReport = "TestReport".asInstanceOf[TestReport]
   
   @js.native
   sealed trait TestScript extends StObject
   inline def TestScript: TestScript = "TestScript".asInstanceOf[TestScript]
+  
+  @js.native
+  sealed trait Transport extends StObject
+  inline def Transport: Transport = "Transport".asInstanceOf[Transport]
   
   @js.native
   sealed trait UNAVAILABLE extends StObject
@@ -969,6 +1033,14 @@ object fhirStrings {
   @js.native
   sealed trait allergy extends StObject
   inline def allergy: allergy = "allergy".asInstanceOf[allergy]
+  
+  @js.native
+  sealed trait allocated extends StObject
+  inline def allocated: allocated = "allocated".asInstanceOf[allocated]
+  
+  @js.native
+  sealed trait allowed extends StObject
+  inline def allowed: allowed = "allowed".asInstanceOf[allowed]
   
   @js.native
   sealed trait alternate extends StObject
@@ -1115,6 +1187,14 @@ object fhirStrings {
   inline def bad: bad = "bad".asInstanceOf[bad]
   
   @js.native
+  sealed trait badGateway extends StObject
+  inline def badGateway: badGateway = "badGateway".asInstanceOf[badGateway]
+  
+  @js.native
+  sealed trait badRequest extends StObject
+  inline def badRequest: badRequest = "badRequest".asInstanceOf[badRequest]
+  
+  @js.native
   sealed trait balanced extends StObject
   inline def balanced: balanced = "balanced".asInstanceOf[balanced]
   
@@ -1125,6 +1205,10 @@ object fhirStrings {
   @js.native
   sealed trait base extends StObject
   inline def base: base = "base".asInstanceOf[base]
+  
+  @js.native
+  sealed trait basic_ extends StObject
+  inline def basic_ : basic_ = "basic".asInstanceOf[basic_]
   
   @js.native
   sealed trait batch extends StObject
@@ -1319,8 +1403,16 @@ object fhirStrings {
   inline def choice: choice = "choice".asInstanceOf[choice]
   
   @js.native
+  sealed trait circle extends StObject
+  inline def circle: circle = "circle".asInstanceOf[circle]
+  
+  @js.native
   sealed trait citation_ extends StObject
   inline def citation_ : citation_ = "citation".asInstanceOf[citation_]
+  
+  @js.native
+  sealed trait `cite-as` extends StObject
+  inline def `cite-as`: `cite-as` = "cite-as".asInstanceOf[`cite-as`]
   
   @js.native
   sealed trait `cited-by` extends StObject
@@ -1361,6 +1453,10 @@ object fhirStrings {
   @js.native
   sealed trait code extends StObject
   inline def code: code = "code".asInstanceOf[code]
+  
+  @js.native
+  sealed trait `code-text` extends StObject
+  inline def `code-text`: `code-text` = "code-text".asInstanceOf[`code-text`]
   
   @js.native
   sealed trait codesystem_ extends StObject
@@ -1405,6 +1501,10 @@ object fhirStrings {
   @js.native
   sealed trait `complex-type` extends StObject
   inline def `complex-type`: `complex-type` = "complex-type".asInstanceOf[`complex-type`]
+  
+  @js.native
+  sealed trait component extends StObject
+  inline def component: component = "component".asInstanceOf[component]
   
   @js.native
   sealed trait `composed-of` extends StObject
@@ -1467,6 +1567,14 @@ object fhirStrings {
   inline def contains: contains = "contains".asInstanceOf[contains]
   
   @js.native
+  sealed trait contentTooLarge extends StObject
+  inline def contentTooLarge: contentTooLarge = "contentTooLarge".asInstanceOf[contentTooLarge]
+  
+  @js.native
+  sealed trait continue extends StObject
+  inline def continue: continue = "continue".asInstanceOf[continue]
+  
+  @js.native
   sealed trait continuous extends StObject
   inline def continuous: continuous = "continuous".asInstanceOf[continuous]
   
@@ -1509,6 +1617,10 @@ object fhirStrings {
   @js.native
   sealed trait created extends StObject
   inline def created: created = "created".asInstanceOf[created]
+  
+  @js.native
+  sealed trait `created-with` extends StObject
+  inline def `created-with`: `created-with` = "created-with".asInstanceOf[`created-with`]
   
   @js.native
   sealed trait crick extends StObject
@@ -1559,6 +1671,10 @@ object fhirStrings {
   inline def `data-collection`: `data-collection` = "data-collection".asInstanceOf[`data-collection`]
   
   @js.native
+  sealed trait `data-exchange` extends StObject
+  inline def `data-exchange`: `data-exchange` = "data-exchange".asInstanceOf[`data-exchange`]
+  
+  @js.native
   sealed trait `data-modified` extends StObject
   inline def `data-modified`: `data-modified` = "data-modified".asInstanceOf[`data-modified`]
   
@@ -1573,6 +1689,10 @@ object fhirStrings {
   @js.native
   sealed trait `data-required` extends StObject
   inline def `data-required`: `data-required` = "data-required".asInstanceOf[`data-required`]
+  
+  @js.native
+  sealed trait dataset extends StObject
+  inline def dataset: dataset = "dataset".asInstanceOf[dataset]
   
   @js.native
   sealed trait datatype extends StObject
@@ -1615,12 +1735,24 @@ object fhirStrings {
   inline def deferred: deferred = "deferred".asInstanceOf[deferred]
   
   @js.native
+  sealed trait definitional extends StObject
+  inline def definitional: definitional = "definitional".asInstanceOf[definitional]
+  
+  @js.native
   sealed trait delete_ extends StObject
   inline def delete_ : delete_ = "delete".asInstanceOf[delete_]
   
   @js.native
   sealed trait deny extends StObject
   inline def deny: deny = "deny".asInstanceOf[deny]
+  
+  @js.native
+  sealed trait `deny-overrides` extends StObject
+  inline def `deny-overrides`: `deny-overrides` = "deny-overrides".asInstanceOf[`deny-overrides`]
+  
+  @js.native
+  sealed trait `deny-unless-permit` extends StObject
+  inline def `deny-unless-permit`: `deny-unless-permit` = "deny-unless-permit".asInstanceOf[`deny-unless-permit`]
   
   @js.native
   sealed trait dependents extends StObject
@@ -1703,6 +1835,14 @@ object fhirStrings {
   inline def disapproved: disapproved = "disapproved".asInstanceOf[disapproved]
   
   @js.native
+  sealed trait discharged extends StObject
+  inline def discharged: discharged = "discharged".asInstanceOf[discharged]
+  
+  @js.native
+  sealed trait discontinued extends StObject
+  inline def discontinued: discontinued = "discontinued".asInstanceOf[discontinued]
+  
+  @js.native
   sealed trait discount extends StObject
   inline def discount: discount = "discount".asInstanceOf[discount]
   
@@ -1737,6 +1877,10 @@ object fhirStrings {
   @js.native
   sealed trait documentation extends StObject
   inline def documentation: documentation = "documentation".asInstanceOf[documentation]
+  
+  @js.native
+  sealed trait documents extends StObject
+  inline def documents: documents = "documents".asInstanceOf[documents]
   
   @js.native
   sealed trait down extends StObject
@@ -1783,6 +1927,14 @@ object fhirStrings {
   inline def eligible: eligible = "eligible".asInstanceOf[eligible]
   
   @js.native
+  sealed trait ellipse extends StObject
+  inline def ellipse: ellipse = "ellipse".asInstanceOf[ellipse]
+  
+  @js.native
+  sealed trait ellipsoid extends StObject
+  inline def ellipsoid: ellipsoid = "ellipsoid".asInstanceOf[ellipsoid]
+  
+  @js.native
   sealed trait email extends StObject
   inline def email: email = "email".asInstanceOf[email]
   
@@ -1817,6 +1969,10 @@ object fhirStrings {
   @js.native
   sealed trait entity extends StObject
   inline def entity: entity = "entity".asInstanceOf[entity]
+  
+  @js.native
+  sealed trait enumerated extends StObject
+  inline def enumerated: enumerated = "enumerated".asInstanceOf[enumerated]
   
   @js.native
   sealed trait environment extends StObject
@@ -1887,6 +2043,10 @@ object fhirStrings {
   inline def `expansion-parameter`: `expansion-parameter` = "expansion-parameter".asInstanceOf[`expansion-parameter`]
   
   @js.native
+  sealed trait expectationFailed extends StObject
+  inline def expectationFailed: expectationFailed = "expectationFailed".asInstanceOf[expectationFailed]
+  
+  @js.native
   sealed trait `expiration-date` extends StObject
   inline def `expiration-date`: `expiration-date` = "expiration-date".asInstanceOf[`expiration-date`]
   
@@ -1901,6 +2061,10 @@ object fhirStrings {
   @js.native
   sealed trait exposure extends StObject
   inline def exposure: exposure = "exposure".asInstanceOf[exposure]
+  
+  @js.native
+  sealed trait `exposure-alternative` extends StObject
+  inline def `exposure-alternative`: `exposure-alternative` = "exposure-alternative".asInstanceOf[`exposure-alternative`]
   
   @js.native
   sealed trait extensible extends StObject
@@ -1995,6 +2159,10 @@ object fhirStrings {
   inline def forbidden: forbidden = "forbidden".asInstanceOf[forbidden]
   
   @js.native
+  sealed trait found extends StObject
+  inline def found: found = "found".asInstanceOf[found]
+  
+  @js.native
   sealed trait fragment extends StObject
   inline def fragment: fragment = "fragment".asInstanceOf[fragment]
   
@@ -2023,16 +2191,16 @@ object fhirStrings {
   inline def `full-support`: `full-support` = "full-support".asInstanceOf[`full-support`]
   
   @js.native
-  sealed trait `full-url` extends StObject
-  inline def `full-url`: `full-url` = "full-url".asInstanceOf[`full-url`]
-  
-  @js.native
   sealed trait `fully-specified` extends StObject
   inline def `fully-specified`: `fully-specified` = "fully-specified".asInstanceOf[`fully-specified`]
   
   @js.native
   sealed trait gain extends StObject
   inline def gain: gain = "gain".asInstanceOf[gain]
+  
+  @js.native
+  sealed trait gatewayTimeout extends StObject
+  inline def gatewayTimeout: gatewayTimeout = "gatewayTimeout".asInstanceOf[gatewayTimeout]
   
   @js.native
   sealed trait ge extends StObject
@@ -2077,6 +2245,10 @@ object fhirStrings {
   @js.native
   sealed trait group_ extends StObject
   inline def group_ : group_ = "group".asInstanceOf[group_]
+  
+  @js.native
+  sealed trait grouped extends StObject
+  inline def grouped: grouped = "grouped".asInstanceOf[grouped]
   
   @js.native
   sealed trait `grouped-by` extends StObject
@@ -2155,6 +2327,10 @@ object fhirStrings {
   inline def `html-template`: `html-template` = "html-template".asInstanceOf[`html-template`]
   
   @js.native
+  sealed trait httpVersionNotSupported extends StObject
+  inline def httpVersionNotSupported: httpVersionNotSupported = "httpVersionNotSupported".asInstanceOf[httpVersionNotSupported]
+  
+  @js.native
   sealed trait id extends StObject
   inline def id: id = "id".asInstanceOf[id]
   
@@ -2177,6 +2353,18 @@ object fhirStrings {
   @js.native
   sealed trait in extends StObject
   inline def in: in = "in".asInstanceOf[in]
+  
+  @js.native
+  sealed trait `in-compose` extends StObject
+  inline def `in-compose`: `in-compose` = "in-compose".asInstanceOf[`in-compose`]
+  
+  @js.native
+  sealed trait `in-compose-or-expansion` extends StObject
+  inline def `in-compose-or-expansion`: `in-compose-or-expansion` = "in-compose-or-expansion".asInstanceOf[`in-compose-or-expansion`]
+  
+  @js.native
+  sealed trait `in-expansion` extends StObject
+  inline def `in-expansion`: `in-expansion` = "in-expansion".asInstanceOf[`in-expansion`]
   
   @js.native
   sealed trait `in-process` extends StObject
@@ -2271,6 +2459,10 @@ object fhirStrings {
   inline def institutional: institutional = "institutional".asInstanceOf[institutional]
   
   @js.native
+  sealed trait insurance extends StObject
+  inline def insurance: insurance = "insurance".asInstanceOf[insurance]
+  
+  @js.native
   sealed trait integer extends StObject
   inline def integer: integer = "integer".asInstanceOf[integer]
   
@@ -2287,12 +2479,24 @@ object fhirStrings {
   inline def `interfered-by`: `interfered-by` = "interfered-by".asInstanceOf[`interfered-by`]
   
   @js.native
+  sealed trait internalServerError extends StObject
+  inline def internalServerError: internalServerError = "internalServerError".asInstanceOf[internalServerError]
+  
+  @js.native
+  sealed trait interpolated extends StObject
+  inline def interpolated: interpolated = "interpolated".asInstanceOf[interpolated]
+  
+  @js.native
   sealed trait intersection extends StObject
   inline def intersection: intersection = "intersection".asInstanceOf[intersection]
   
   @js.native
   sealed trait intolerance extends StObject
   inline def intolerance: intolerance = "intolerance".asInstanceOf[intolerance]
+  
+  @js.native
+  sealed trait `iri-stem` extends StObject
+  inline def `iri-stem`: `iri-stem` = "iri-stem".asInstanceOf[`iri-stem`]
   
   @js.native
   sealed trait `is-a` extends StObject
@@ -2309,6 +2513,10 @@ object fhirStrings {
   @js.native
   sealed trait issued extends StObject
   inline def issued: issued = "issued".asInstanceOf[issued]
+  
+  @js.native
+  sealed trait iterate extends StObject
+  inline def iterate: iterate = "iterate".asInstanceOf[iterate]
   
   @js.native
   sealed trait json extends StObject
@@ -2343,6 +2551,10 @@ object fhirStrings {
   inline def legal: legal = "legal".asInstanceOf[legal]
   
   @js.native
+  sealed trait lengthRequired extends StObject
+  inline def lengthRequired: lengthRequired = "lengthRequired".asInstanceOf[lengthRequired]
+  
+  @js.native
   sealed trait lessThan extends StObject
   inline def lessThan: lessThan = "lessThan".asInstanceOf[lessThan]
   
@@ -2361,6 +2573,10 @@ object fhirStrings {
   @js.native
   sealed trait level4 extends StObject
   inline def level4: level4 = "level4".asInstanceOf[level4]
+  
+  @js.native
+  sealed trait license extends StObject
+  inline def license: license = "license".asInstanceOf[license]
   
   @js.native
   sealed trait likely extends StObject
@@ -2427,6 +2643,10 @@ object fhirStrings {
   inline def manual: manual = "manual".asInstanceOf[manual]
   
   @js.native
+  sealed trait manualEval extends StObject
+  inline def manualEval: manualEval = "manualEval".asInstanceOf[manualEval]
+  
+  @js.native
   sealed trait `manufactured-date` extends StObject
   inline def `manufactured-date`: `manufactured-date` = "manufactured-date".asInstanceOf[`manufactured-date`]
   
@@ -2443,12 +2663,20 @@ object fhirStrings {
   inline def markdown: markdown = "markdown".asInstanceOf[markdown]
   
   @js.native
+  sealed trait master extends StObject
+  inline def master: master = "master".asInstanceOf[master]
+  
+  @js.native
   sealed trait `match` extends StObject
   inline def `match`: `match` = "match".asInstanceOf[`match`]
   
   @js.native
   sealed trait matching extends StObject
   inline def matching: matching = "matching".asInstanceOf[matching]
+  
+  @js.native
+  sealed trait maximum extends StObject
+  inline def maximum: maximum = "maximum".asInstanceOf[maximum]
   
   @js.native
   sealed trait mean extends StObject
@@ -2503,8 +2731,20 @@ object fhirStrings {
   inline def min: min = "min".asInstanceOf[min]
   
   @js.native
+  sealed trait minimum extends StObject
+  inline def minimum: minimum = "minimum".asInstanceOf[minimum]
+  
+  @js.native
+  sealed trait misdirectedRequest extends StObject
+  inline def misdirectedRequest: misdirectedRequest = "misdirectedRequest".asInstanceOf[misdirectedRequest]
+  
+  @js.native
   sealed trait missing extends StObject
   inline def missing: missing = "missing".asInstanceOf[missing]
+  
+  @js.native
+  sealed trait mitigated extends StObject
+  inline def mitigated: mitigated = "mitigated".asInstanceOf[mitigated]
   
   @js.native
   sealed trait mo extends StObject
@@ -2527,6 +2767,10 @@ object fhirStrings {
   inline def moderate: moderate = "moderate".asInstanceOf[moderate]
   
   @js.native
+  sealed trait modified extends StObject
+  inline def modified: modified = "modified".asInstanceOf[modified]
+  
+  @js.native
   sealed trait `modified-since` extends StObject
   inline def `modified-since`: `modified-since` = "modified-since".asInstanceOf[`modified-since`]
   
@@ -2535,8 +2779,20 @@ object fhirStrings {
   inline def mon: mon = "mon".asInstanceOf[mon]
   
   @js.native
+  sealed trait movedPermanently extends StObject
+  inline def movedPermanently: movedPermanently = "movedPermanently".asInstanceOf[movedPermanently]
+  
+  @js.native
   sealed trait multiple extends StObject
   inline def multiple: multiple = "multiple".asInstanceOf[multiple]
+  
+  @js.native
+  sealed trait multipleChoices extends StObject
+  inline def multipleChoices: multipleChoices = "multipleChoices".asInstanceOf[multipleChoices]
+  
+  @js.native
+  sealed trait multipoint extends StObject
+  inline def multipoint: multipoint = "multipoint".asInstanceOf[multipoint]
   
   @js.native
   sealed trait must extends StObject
@@ -2601,6 +2857,10 @@ object fhirStrings {
   @js.native
   sealed trait noContent extends StObject
   inline def noContent: noContent = "noContent".asInstanceOf[noContent]
+  
+  @js.native
+  sealed trait nonAuthoritativeInformation extends StObject
+  inline def nonAuthoritativeInformation: nonAuthoritativeInformation = "nonAuthoritativeInformation".asInstanceOf[nonAuthoritativeInformation]
   
   @js.native
   sealed trait none extends StObject
@@ -2675,6 +2935,10 @@ object fhirStrings {
   inline def `not-taken`: `not-taken` = "not-taken".asInstanceOf[`not-taken`]
   
   @js.native
+  sealed trait notAcceptable extends StObject
+  inline def notAcceptable: notAcceptable = "notAcceptable".asInstanceOf[notAcceptable]
+  
+  @js.native
   sealed trait notContains extends StObject
   inline def notContains: notContains = "notContains".asInstanceOf[notContains]
   
@@ -2689,6 +2953,10 @@ object fhirStrings {
   @js.native
   sealed trait notFound extends StObject
   inline def notFound: notFound = "notFound".asInstanceOf[notFound]
+  
+  @js.native
+  sealed trait notImplemented extends StObject
+  inline def notImplemented: notImplemented = "notImplemented".asInstanceOf[notImplemented]
   
   @js.native
   sealed trait notIn extends StObject
@@ -2875,6 +3143,14 @@ object fhirStrings {
   inline def order_ : order_ = "order".asInstanceOf[order_]
   
   @js.native
+  sealed trait `ordered-deny-overrides` extends StObject
+  inline def `ordered-deny-overrides`: `ordered-deny-overrides` = "ordered-deny-overrides".asInstanceOf[`ordered-deny-overrides`]
+  
+  @js.native
+  sealed trait `ordered-permit-overrides` extends StObject
+  inline def `ordered-permit-overrides`: `ordered-permit-overrides` = "ordered-permit-overrides".asInstanceOf[`ordered-permit-overrides`]
+  
+  @js.native
   sealed trait ordinal extends StObject
   inline def ordinal: ordinal = "ordinal".asInstanceOf[ordinal]
   
@@ -2931,6 +3207,10 @@ object fhirStrings {
   inline def partial: partial = "partial".asInstanceOf[partial]
   
   @js.native
+  sealed trait partialContent extends StObject
+  inline def partialContent: partialContent = "partialContent".asInstanceOf[partialContent]
+  
+  @js.native
   sealed trait pass extends StObject
   inline def pass: pass = "pass".asInstanceOf[pass]
   
@@ -2967,6 +3247,10 @@ object fhirStrings {
   inline def pattern: pattern = "pattern".asInstanceOf[pattern]
   
   @js.native
+  sealed trait paymentRequired extends StObject
+  inline def paymentRequired: paymentRequired = "paymentRequired".asInstanceOf[paymentRequired]
+  
+  @js.native
   sealed trait pending extends StObject
   inline def pending: pending = "pending".asInstanceOf[pending]
   
@@ -2979,8 +3263,20 @@ object fhirStrings {
   inline def periodic: periodic = "periodic".asInstanceOf[periodic]
   
   @js.native
+  sealed trait permanentRedirect extends StObject
+  inline def permanentRedirect: permanentRedirect = "permanentRedirect".asInstanceOf[permanentRedirect]
+  
+  @js.native
   sealed trait permit extends StObject
   inline def permit: permit = "permit".asInstanceOf[permit]
+  
+  @js.native
+  sealed trait `permit-overrides` extends StObject
+  inline def `permit-overrides`: `permit-overrides` = "permit-overrides".asInstanceOf[`permit-overrides`]
+  
+  @js.native
+  sealed trait `permit-unless-deny` extends StObject
+  inline def `permit-unless-deny`: `permit-unless-deny` = "permit-unless-deny".asInstanceOf[`permit-unless-deny`]
   
   @js.native
   sealed trait person_ extends StObject
@@ -3027,6 +3323,10 @@ object fhirStrings {
   inline def planned: planned = "planned".asInstanceOf[planned]
   
   @js.native
+  sealed trait point extends StObject
+  inline def point: point = "point".asInstanceOf[point]
+  
+  @js.native
   sealed trait pointer extends StObject
   inline def pointer: pointer = "pointer".asInstanceOf[pointer]
   
@@ -3043,8 +3343,28 @@ object fhirStrings {
   inline def polychotomous: polychotomous = "polychotomous".asInstanceOf[polychotomous]
   
   @js.native
+  sealed trait polygon extends StObject
+  inline def polygon: polygon = "polygon".asInstanceOf[polygon]
+  
+  @js.native
+  sealed trait polyline extends StObject
+  inline def polyline: polyline = "polyline".asInstanceOf[polyline]
+  
+  @js.native
+  sealed trait pooled extends StObject
+  inline def pooled: pooled = "pooled".asInstanceOf[pooled]
+  
+  @js.native
   sealed trait population extends StObject
   inline def population: population = "population".asInstanceOf[population]
+  
+  @js.native
+  sealed trait position extends StObject
+  inline def position: position = "position".asInstanceOf[position]
+  
+  @js.native
+  sealed trait possible extends StObject
+  inline def possible: possible = "possible".asInstanceOf[possible]
   
   @js.native
   sealed trait post_ extends StObject
@@ -3151,6 +3471,10 @@ object fhirStrings {
   inline def provisional: provisional = "provisional".asInstanceOf[provisional]
   
   @js.native
+  sealed trait proxyAuthenticationRequired extends StObject
+  inline def proxyAuthenticationRequired: proxyAuthenticationRequired = "proxyAuthenticationRequired".asInstanceOf[proxyAuthenticationRequired]
+  
+  @js.native
   sealed trait published extends StObject
   inline def published: published = "published".asInstanceOf[published]
   
@@ -3199,8 +3523,16 @@ object fhirStrings {
   inline def quotation: quotation = "quotation".asInstanceOf[quotation]
   
   @js.native
+  sealed trait rangeNotSatisfiable extends StObject
+  inline def rangeNotSatisfiable: rangeNotSatisfiable = "rangeNotSatisfiable".asInstanceOf[rangeNotSatisfiable]
+  
+  @js.native
   sealed trait rating extends StObject
   inline def rating: rating = "rating".asInstanceOf[rating]
+  
+  @js.native
+  sealed trait `re-run` extends StObject
+  inline def `re-run`: `re-run` = "re-run".asInstanceOf[`re-run`]
   
   @js.native
   sealed trait read extends StObject
@@ -3241,6 +3573,10 @@ object fhirStrings {
   @js.native
   sealed trait referenced extends StObject
   inline def referenced: referenced = "referenced".asInstanceOf[referenced]
+  
+  @js.native
+  sealed trait reflex extends StObject
+  inline def reflex: reflex = "reflex".asInstanceOf[reflex]
   
   @js.native
   sealed trait `reflex-order` extends StObject
@@ -3299,6 +3635,10 @@ object fhirStrings {
   inline def renewed: renewed = "renewed".asInstanceOf[renewed]
   
   @js.native
+  sealed trait repeat extends StObject
+  inline def repeat: repeat = "repeat".asInstanceOf[repeat]
+  
+  @js.native
   sealed trait replace extends StObject
   inline def replace: replace = "replace".asInstanceOf[replace]
   
@@ -3323,6 +3663,14 @@ object fhirStrings {
   inline def replaces: replaces = "replaces".asInstanceOf[replaces]
   
   @js.native
+  sealed trait reprint extends StObject
+  inline def reprint: reprint = "reprint".asInstanceOf[reprint]
+  
+  @js.native
+  sealed trait `reprint-of` extends StObject
+  inline def `reprint-of`: `reprint-of` = "reprint-of".asInstanceOf[`reprint-of`]
+  
+  @js.native
   sealed trait reprocess extends StObject
   inline def reprocess: reprocess = "reprocess".asInstanceOf[reprocess]
   
@@ -3335,8 +3683,8 @@ object fhirStrings {
   inline def request: request = "request".asInstanceOf[request]
   
   @js.native
-  sealed trait `request-response` extends StObject
-  inline def `request-response`: `request-response` = "request-response".asInstanceOf[`request-response`]
+  sealed trait requestTimeout extends StObject
+  inline def requestTimeout: requestTimeout = "requestTimeout".asInstanceOf[requestTimeout]
   
   @js.native
   sealed trait requested extends StObject
@@ -3351,12 +3699,20 @@ object fhirStrings {
   inline def requirement: requirement = "requirement".asInstanceOf[requirement]
   
   @js.native
-  sealed trait requirements extends StObject
-  inline def requirements: requirements = "requirements".asInstanceOf[requirements]
+  sealed trait requirements_ extends StObject
+  inline def requirements_ : requirements_ = "requirements".asInstanceOf[requirements_]
+  
+  @js.native
+  sealed trait requires extends StObject
+  inline def requires: requires = "requires".asInstanceOf[requires]
   
   @js.native
   sealed trait reserved extends StObject
   inline def reserved: reserved = "reserved".asInstanceOf[reserved]
+  
+  @js.native
+  sealed trait resetContent extends StObject
+  inline def resetContent: resetContent = "resetContent".asInstanceOf[resetContent]
   
   @js.native
   sealed trait resolved extends StObject
@@ -3397,6 +3753,10 @@ object fhirStrings {
   @js.native
   sealed trait retracts extends StObject
   inline def retracts: retracts = "retracts".asInstanceOf[retracts]
+  
+  @js.native
+  sealed trait returned extends StObject
+  inline def returned: returned = "returned".asInstanceOf[returned]
   
   @js.native
   sealed trait `reval-fail` extends StObject
@@ -3483,8 +3843,16 @@ object fhirStrings {
   inline def secondary: secondary = "secondary".asInstanceOf[secondary]
   
   @js.native
+  sealed trait seeOther extends StObject
+  inline def seeOther: seeOther = "seeOther".asInstanceOf[seeOther]
+  
+  @js.native
   sealed trait seealso extends StObject
   inline def seealso: seealso = "seealso".asInstanceOf[seealso]
+  
+  @js.native
+  sealed trait `self-pay` extends StObject
+  inline def `self-pay`: `self-pay` = "self-pay".asInstanceOf[`self-pay`]
   
   @js.native
   sealed trait `self-reported` extends StObject
@@ -3521,6 +3889,10 @@ object fhirStrings {
   @js.native
   sealed trait server extends StObject
   inline def server: server = "server".asInstanceOf[server]
+  
+  @js.native
+  sealed trait serviceUnavailable extends StObject
+  inline def serviceUnavailable: serviceUnavailable = "serviceUnavailable".asInstanceOf[serviceUnavailable]
   
   @js.native
   sealed trait setting extends StObject
@@ -3595,6 +3967,14 @@ object fhirStrings {
   inline def specific: specific = "specific".asInstanceOf[specific]
   
   @js.native
+  sealed trait `specification-of` extends StObject
+  inline def `specification-of`: `specification-of` = "specification-of".asInstanceOf[`specification-of`]
+  
+  @js.native
+  sealed trait specimen_ extends StObject
+  inline def specimen_ : specimen_ = "specimen".asInstanceOf[specimen_]
+  
+  @js.native
   sealed trait standby extends StObject
   inline def standby: standby = "standby".asInstanceOf[standby]
   
@@ -3603,8 +3983,16 @@ object fhirStrings {
   inline def start: start = "start".asInstanceOf[start]
   
   @js.native
+  sealed trait starter extends StObject
+  inline def starter: starter = "starter".asInstanceOf[starter]
+  
+  @js.native
   sealed trait stat extends StObject
   inline def stat: stat = "stat".asInstanceOf[stat]
+  
+  @js.native
+  sealed trait statistical extends StObject
+  inline def statistical: statistical = "statistical".asInstanceOf[statistical]
   
   @js.native
   sealed trait status extends StObject
@@ -3687,6 +4075,14 @@ object fhirStrings {
   inline def sustaining: sustaining = "sustaining".asInstanceOf[sustaining]
   
   @js.native
+  sealed trait switchingProtocols extends StObject
+  inline def switchingProtocols: switchingProtocols = "switchingProtocols".asInstanceOf[switchingProtocols]
+  
+  @js.native
+  sealed trait system extends StObject
+  inline def system: system = "system".asInstanceOf[system]
+  
+  @js.native
   sealed trait target extends StObject
   inline def target: target = "target".asInstanceOf[target]
   
@@ -3705,6 +4101,10 @@ object fhirStrings {
   @js.native
   sealed trait `temporarily-closed-to-accrual-and-intervention` extends StObject
   inline def `temporarily-closed-to-accrual-and-intervention`: `temporarily-closed-to-accrual-and-intervention` = "temporarily-closed-to-accrual-and-intervention".asInstanceOf[`temporarily-closed-to-accrual-and-intervention`]
+  
+  @js.native
+  sealed trait temporaryRedirect extends StObject
+  inline def temporaryRedirect: temporaryRedirect = "temporaryRedirect".asInstanceOf[temporaryRedirect]
   
   @js.native
   sealed trait tentative extends StObject
@@ -3737,6 +4137,10 @@ object fhirStrings {
   @js.native
   sealed trait text extends StObject
   inline def text: text = "text".asInstanceOf[text]
+  
+  @js.native
+  sealed trait `text-advanced` extends StObject
+  inline def `text-advanced`: `text-advanced` = "text-advanced".asInstanceOf[`text-advanced`]
   
   @js.native
   sealed trait thermal extends StObject
@@ -3839,8 +4243,16 @@ object fhirStrings {
   inline def `udi-label-name`: `udi-label-name` = "udi-label-name".asInstanceOf[`udi-label-name`]
   
   @js.native
+  sealed trait ui extends StObject
+  inline def ui: ui = "ui".asInstanceOf[ui]
+  
+  @js.native
   sealed trait `unable-to-assess` extends StObject
   inline def `unable-to-assess`: `unable-to-assess` = "unable-to-assess".asInstanceOf[`unable-to-assess`]
+  
+  @js.native
+  sealed trait unauthorized extends StObject
+  inline def unauthorized: unauthorized = "unauthorized".asInstanceOf[unauthorized]
   
   @js.native
   sealed trait unavailable_ extends StObject
@@ -3853,6 +4265,10 @@ object fhirStrings {
   @js.native
   sealed trait `undesirable-effect` extends StObject
   inline def `undesirable-effect`: `undesirable-effect` = "undesirable-effect".asInstanceOf[`undesirable-effect`]
+  
+  @js.native
+  sealed trait unfulfilled extends StObject
+  inline def unfulfilled: unfulfilled = "unfulfilled".asInstanceOf[unfulfilled]
   
   @js.native
   sealed trait union extends StObject
@@ -3879,6 +4295,10 @@ object fhirStrings {
   inline def unprocessable: unprocessable = "unprocessable".asInstanceOf[unprocessable]
   
   @js.native
+  sealed trait unprocessableContent extends StObject
+  inline def unprocessableContent: unprocessableContent = "unprocessableContent".asInstanceOf[unprocessableContent]
+  
+  @js.native
   sealed trait unresolved extends StObject
   inline def unresolved: unresolved = "unresolved".asInstanceOf[unresolved]
   
@@ -3891,12 +4311,20 @@ object fhirStrings {
   inline def unspecified: unspecified = "unspecified".asInstanceOf[unspecified]
   
   @js.native
+  sealed trait unsupportedMediaType extends StObject
+  inline def unsupportedMediaType: unsupportedMediaType = "unsupportedMediaType".asInstanceOf[unsupportedMediaType]
+  
+  @js.native
   sealed trait up extends StObject
   inline def up: up = "up".asInstanceOf[up]
   
   @js.native
   sealed trait update extends StObject
   inline def update: update = "update".asInstanceOf[update]
+  
+  @js.native
+  sealed trait upgradeRequired extends StObject
+  inline def upgradeRequired: upgradeRequired = "upgradeRequired".asInstanceOf[upgradeRequired]
   
   @js.native
   sealed trait urgent extends StObject
@@ -3907,8 +4335,20 @@ object fhirStrings {
   inline def uri: uri = "uri".asInstanceOf[uri]
   
   @js.native
+  sealed trait uriTooLong extends StObject
+  inline def uriTooLong: uriTooLong = "uriTooLong".asInstanceOf[uriTooLong]
+  
+  @js.native
   sealed trait url extends StObject
   inline def url: url = "url".asInstanceOf[url]
+  
+  @js.native
+  sealed trait `use-source-code` extends StObject
+  inline def `use-source-code`: `use-source-code` = "use-source-code".asInstanceOf[`use-source-code`]
+  
+  @js.native
+  sealed trait useProxy extends StObject
+  inline def useProxy: useProxy = "useProxy".asInstanceOf[useProxy]
   
   @js.native
   sealed trait `user-friendly-name` extends StObject
@@ -4005,6 +4445,10 @@ object fhirStrings {
   @js.native
   sealed trait wed extends StObject
   inline def wed: wed = "wed".asInstanceOf[wed]
+  
+  @js.native
+  sealed trait where extends StObject
+  inline def where: where = "where".asInstanceOf[where]
   
   @js.native
   sealed trait white extends StObject

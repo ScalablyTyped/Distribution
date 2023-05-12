@@ -11,7 +11,7 @@ import typings.fpTs.libFilterableMod.Filterable1
 import typings.fpTs.libFromEitherMod.FromEither1
 import typings.fpTs.libFromIOMod.FromIO1
 import typings.fpTs.libFromTaskMod.FromTask1
-import typings.fpTs.libFunctionMod.Lazy
+import typings.fpTs.libFunctionMod.LazyArg
 import typings.fpTs.libFunctorMod.Functor1
 import typings.fpTs.libIOMod.IO_
 import typings.fpTs.libMonadIOMod.MonadIO1
@@ -123,9 +123,9 @@ object taskOption {
   @js.native
   val Zero_ : Zero1[typings.fpTs.libTaskOptionMod.URI] = js.native
   
-  inline def alt[A](second: Lazy[TaskOption[A]]): js.Function1[/* first */ TaskOption[A], TaskOption[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(second.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* first */ TaskOption[A], TaskOption[A]]]
+  inline def alt[A](second: LazyArg[TaskOption[A]]): js.Function1[/* first */ TaskOption[A], TaskOption[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(second.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* first */ TaskOption[A], TaskOption[A]]]
   
-  inline def altW[B](second: Lazy[TaskOption[B]]): js.Function1[/* first */ TaskOption[Any], TaskOption[Any | B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("altW")(second.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* first */ TaskOption[Any], TaskOption[Any | B]]]
+  inline def altW[B](second: LazyArg[TaskOption[B]]): js.Function1[/* first */ TaskOption[Any], TaskOption[Any | B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("altW")(second.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* first */ TaskOption[Any], TaskOption[Any | B]]]
   
   inline def ap[A](fa: TaskOption[A]): js.Function1[/* fab */ TaskOption[js.Function1[/* a */ A, Any]], TaskOption[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ap")(fa.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ TaskOption[js.Function1[/* a */ A, Any]], TaskOption[Any]]]
   
@@ -204,6 +204,9 @@ object taskOption {
   
   inline def flap[A](a: A): js.Function1[/* fab */ TaskOption[js.Function1[/* a */ A, Any]], TaskOption[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flap")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ TaskOption[js.Function1[/* a */ A, Any]], TaskOption[Any]]]
   
+  inline def flatMap[A, B](f: js.Function1[/* a */ A, TaskOption[B]]): js.Function1[/* ma */ TaskOption[A], TaskOption[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ TaskOption[A], TaskOption[B]]]
+  inline def flatMap[A, B](ma: TaskOption[A], f: js.Function1[/* a */ A, TaskOption[B]]): TaskOption[B] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(ma.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[TaskOption[B]]
+  
   inline def flatten[A](mma: TaskOption[TaskOption[A]]): TaskOption[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(mma.asInstanceOf[js.Any]).asInstanceOf[TaskOption[A]]
   
   inline def fold[B, A](onNone: js.Function0[Task_[B]], onSome: js.Function1[/* a */ A, Task_[B]]): js.Function1[/* ma */ TaskOption[A], Task_[B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fold")(onNone.asInstanceOf[js.Any], onSome.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ma */ TaskOption[A], Task_[B]]]
@@ -236,9 +239,9 @@ object taskOption {
   
   inline def fromTaskK[A /* <: js.Array[Any] */, B](f: js.Function1[/* a */ A, Task_[B]]): js.Function1[/* a */ A, TaskOption[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTaskK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, TaskOption[B]]]
   
-  inline def getOrElse[A](onNone: Lazy[Task_[A]]): js.Function1[/* fa */ TaskOption[A], Task_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElse")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ TaskOption[A], Task_[A]]]
+  inline def getOrElse[A](onNone: LazyArg[Task_[A]]): js.Function1[/* fa */ TaskOption[A], Task_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElse")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ TaskOption[A], Task_[A]]]
   
-  inline def getOrElseW[B](onNone: Lazy[Task_[B]]): js.Function1[/* ma */ TaskOption[Any], Task_[Any | B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElseW")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ TaskOption[Any], Task_[Any | B]]]
+  inline def getOrElseW[B](onNone: LazyArg[Task_[B]]): js.Function1[/* ma */ TaskOption[Any], Task_[Any | B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElseW")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ TaskOption[Any], Task_[Any | B]]]
   
   inline def guard(b: Boolean): TaskOption[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("guard")(b.asInstanceOf[js.Any]).asInstanceOf[TaskOption[Unit]]
   
@@ -292,6 +295,9 @@ object taskOption {
   
   inline def some[A](a: A): TaskOption[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("some")(a.asInstanceOf[js.Any]).asInstanceOf[TaskOption[A]]
   
+  inline def tap[A, _underscore](f: js.Function1[/* a */ A, TaskOption[_underscore]]): js.Function1[/* self */ TaskOption[A], TaskOption[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* self */ TaskOption[A], TaskOption[A]]]
+  inline def tap[A, _underscore](self: TaskOption[A], f: js.Function1[/* a */ A, TaskOption[_underscore]]): TaskOption[A] = (^.asInstanceOf[js.Dynamic].applyDynamic("tap")(self.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[TaskOption[A]]
+  
   inline def traverseArray[A, B](f: js.Function1[/* a */ A, TaskOption[B]]): js.Function1[/* as */ js.Array[A], TaskOption[js.Array[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverseArray")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], TaskOption[js.Array[B]]]]
   
   inline def traverseArrayWithIndex[A, B](f: js.Function2[/* index */ Double, /* a */ A, TaskOption[B]]): js.Function1[/* as */ js.Array[A], TaskOption[js.Array[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverseArrayWithIndex")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], TaskOption[js.Array[B]]]]
@@ -308,7 +314,7 @@ object taskOption {
   
   inline def traverseSeqArrayWithIndex[A, B](f: js.Function2[/* index */ Double, /* a */ A, TaskOption[B]]): js.Function1[/* as */ js.Array[A], TaskOption[js.Array[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverseSeqArrayWithIndex")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], TaskOption[js.Array[B]]]]
   
-  inline def tryCatch[A](f: Lazy[js.Promise[A]]): TaskOption[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("tryCatch")(f.asInstanceOf[js.Any]).asInstanceOf[TaskOption[A]]
+  inline def tryCatch[A](f: LazyArg[js.Promise[A]]): TaskOption[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("tryCatch")(f.asInstanceOf[js.Any]).asInstanceOf[TaskOption[A]]
   
   inline def tryCatchK[A /* <: js.Array[Any] */, B](f: js.Function1[/* a */ A, js.Promise[B]]): js.Function1[/* a */ A, TaskOption[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tryCatchK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, TaskOption[B]]]
   

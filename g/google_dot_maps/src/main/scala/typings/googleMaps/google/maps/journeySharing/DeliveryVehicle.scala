@@ -6,10 +6,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-  * The details for a delivery vehicle returned by Fleet Engine.
-  */
 trait DeliveryVehicle extends StObject {
   
   /**
@@ -32,17 +28,17 @@ trait DeliveryVehicle extends StObject {
     * &quot;providers/{provider_id}/deliveryVehicles/{delivery_vehicle_id}&quot;.
     * The delivery_vehicle_id must be a unique identifier.
     */
-  var name: String | Null
+  var name: String
   
   /**
     * The current navigation status of the vehicle.
     */
-  var navigationStatus: String | Null
+  var navigationStatus: String
   
   /**
     * The remaining driving distance in the current route segment, in meters.
     */
-  var remainingDistanceMeters: Double | Null
+  var remainingDistanceMeters: Double
   
   /**
     * The remaining driving duration in the current route segment, in
@@ -54,12 +50,18 @@ trait DeliveryVehicle extends StObject {
     * The journey segments assigned to this delivery vehicle, starting from the
     * vehicle&#39;s most recently reported location.
     */
-  var remainingVehicleJourneySegments: js.Array[VehicleJourneySegment] | Null
+  var remainingVehicleJourneySegments: js.Array[VehicleJourneySegment]
 }
 object DeliveryVehicle {
   
-  inline def apply(attributes: StringDictionary[String | Null]): DeliveryVehicle = {
-    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], currentRouteSegmentEndPoint = null, latestVehicleLocationUpdate = null, name = null, navigationStatus = null, remainingDistanceMeters = null, remainingDurationMillis = null, remainingVehicleJourneySegments = null)
+  inline def apply(
+    attributes: StringDictionary[String | Null],
+    name: String,
+    navigationStatus: String,
+    remainingDistanceMeters: Double,
+    remainingVehicleJourneySegments: js.Array[VehicleJourneySegment]
+  ): DeliveryVehicle = {
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], navigationStatus = navigationStatus.asInstanceOf[js.Any], remainingDistanceMeters = remainingDistanceMeters.asInstanceOf[js.Any], remainingVehicleJourneySegments = remainingVehicleJourneySegments.asInstanceOf[js.Any], currentRouteSegmentEndPoint = null, latestVehicleLocationUpdate = null, remainingDurationMillis = null)
     __obj.asInstanceOf[DeliveryVehicle]
   }
   
@@ -78,23 +80,15 @@ object DeliveryVehicle {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setNameNull: Self = StObject.set(x, "name", null)
-    
     inline def setNavigationStatus(value: String): Self = StObject.set(x, "navigationStatus", value.asInstanceOf[js.Any])
     
-    inline def setNavigationStatusNull: Self = StObject.set(x, "navigationStatus", null)
-    
     inline def setRemainingDistanceMeters(value: Double): Self = StObject.set(x, "remainingDistanceMeters", value.asInstanceOf[js.Any])
-    
-    inline def setRemainingDistanceMetersNull: Self = StObject.set(x, "remainingDistanceMeters", null)
     
     inline def setRemainingDurationMillis(value: Double): Self = StObject.set(x, "remainingDurationMillis", value.asInstanceOf[js.Any])
     
     inline def setRemainingDurationMillisNull: Self = StObject.set(x, "remainingDurationMillis", null)
     
     inline def setRemainingVehicleJourneySegments(value: js.Array[VehicleJourneySegment]): Self = StObject.set(x, "remainingVehicleJourneySegments", value.asInstanceOf[js.Any])
-    
-    inline def setRemainingVehicleJourneySegmentsNull: Self = StObject.set(x, "remainingVehicleJourneySegments", null)
     
     inline def setRemainingVehicleJourneySegmentsVarargs(value: VehicleJourneySegment*): Self = StObject.set(x, "remainingVehicleJourneySegments", js.Array(value*))
   }

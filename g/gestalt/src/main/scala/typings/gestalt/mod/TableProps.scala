@@ -2,7 +2,6 @@ package typings.gestalt.mod
 
 import typings.gestalt.gestaltStrings.none
 import typings.gestalt.gestaltStrings.sm
-import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ trait TableProps extends StObject {
   
   var borderStyle: js.UndefOr[sm | none] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.undefined
+  var children: Node
   
   var maxHeight: js.UndefOr[Double | String] = js.undefined
   
@@ -35,7 +34,7 @@ object TableProps {
     
     inline def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
     
-    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Node): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     

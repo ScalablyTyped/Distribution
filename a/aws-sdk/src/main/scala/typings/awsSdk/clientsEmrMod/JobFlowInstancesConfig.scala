@@ -17,7 +17,7 @@ trait JobFlowInstancesConfig extends StObject {
   var AdditionalSlaveSecurityGroups: js.UndefOr[SecurityGroupsList] = js.undefined
   
   /**
-    * The name of the EC2 key pair that can be used to connect to the master node using SSH as the user called "hadoop."
+    * The name of the Amazon EC2 key pair that can be used to connect to the master node using SSH as the user called "hadoop."
     */
   var Ec2KeyName: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
@@ -27,7 +27,7 @@ trait JobFlowInstancesConfig extends StObject {
   var Ec2SubnetId: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
-    * Applies to clusters that use the instance fleet configuration. When multiple EC2 subnet IDs are specified, Amazon EMR evaluates them and launches instances in the optimal subnet.  The instance fleet configuration is available only in Amazon EMR versions 4.8.0 and later, excluding 5.0.x versions. 
+    * Applies to clusters that use the instance fleet configuration. When multiple Amazon EC2 subnet IDs are specified, Amazon EMR evaluates them and launches instances in the optimal subnet.  The instance fleet configuration is available only in Amazon EMR releases 4.8.0 and later, excluding 5.0.x versions. 
     */
   var Ec2SubnetIds: js.UndefOr[XmlStringMaxLen256List] = js.undefined
   
@@ -47,12 +47,12 @@ trait JobFlowInstancesConfig extends StObject {
   var HadoopVersion: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
-    * The number of EC2 instances in the cluster.
+    * The number of Amazon EC2 instances in the cluster.
     */
   var InstanceCount: js.UndefOr[Integer] = js.undefined
   
   /**
-    *  The instance fleet configuration is available only in Amazon EMR versions 4.8.0 and later, excluding 5.0.x versions.  Describes the EC2 instances and instance configurations for clusters that use the instance fleet configuration.
+    *  The instance fleet configuration is available only in Amazon EMR releases 4.8.0 and later, excluding 5.0.x versions.  Describes the Amazon EC2 instances and instance configurations for clusters that use the instance fleet configuration.
     */
   var InstanceFleets: js.UndefOr[InstanceFleetConfigList] = js.undefined
   
@@ -67,7 +67,7 @@ trait JobFlowInstancesConfig extends StObject {
   var KeepJobFlowAliveWhenNoSteps: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The EC2 instance type of the master node.
+    * The Amazon EC2 instance type of the master node.
     */
   var MasterInstanceType: js.UndefOr[InstanceType] = js.undefined
   
@@ -82,7 +82,7 @@ trait JobFlowInstancesConfig extends StObject {
   var ServiceAccessSecurityGroup: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
-    * The EC2 instance type of the core and task nodes.
+    * The Amazon EC2 instance type of the core and task nodes.
     */
   var SlaveInstanceType: js.UndefOr[InstanceType] = js.undefined
   

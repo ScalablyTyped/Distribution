@@ -16,6 +16,8 @@ object distNodeEsmSrcCoreViewFilterRangedFilterMod {
        with NodeFilter {
     def this(params: QueryParams) = this()
     
+    /* private */ var endIsInclusive_ : Any = js.native
+    
     /* private */ var endPost_ : Any = js.native
     
     def getEndPost(): NamedNode = js.native
@@ -27,6 +29,8 @@ object distNodeEsmSrcCoreViewFilterRangedFilterMod {
     /* private */ var indexedFilter_ : Any = js.native
     
     def matches(node: NamedNode): Boolean = js.native
+    
+    /* private */ var startIsInclusive_ : Any = js.native
     
     /* private */ var startPost_ : Any = js.native
   }

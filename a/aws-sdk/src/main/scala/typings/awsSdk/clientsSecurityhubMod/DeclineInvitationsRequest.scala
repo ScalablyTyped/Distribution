@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeclineInvitationsRequest extends StObject {
   
   /**
-    * The list of account IDs for the accounts from which to decline the invitations to Security Hub.
+    * The list of prospective member account IDs for which to decline an invitation.
     */
   var AccountIds: AccountIdList
 }

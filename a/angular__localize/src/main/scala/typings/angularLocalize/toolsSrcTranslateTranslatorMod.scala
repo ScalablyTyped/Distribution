@@ -3,8 +3,8 @@ package typings.angularLocalize
 import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.AbsoluteFsPath
 import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.PathSegment
 import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.ReadonlyFileSystem
-import typings.angularLocalize.mod.MessageId
-import typings.angularLocalize.mod.ɵParsedTranslation
+import typings.angularLocalize.localizeMod.MessageId
+import typings.angularLocalize.localizeMod.ɵParsedTranslation
 import typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics
 import typings.angularLocalize.toolsSrcTranslateOutputPathMod.OutputPathFn
 import typings.std.Record

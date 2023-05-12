@@ -38,7 +38,7 @@ trait TypeHierarchyItem extends StObject {
   /**
     * The range that should be selected and revealed when this symbol is being
     * picked, e.g. the name of a function. Must be contained by the
-    * [`range`](#TypeHierarchyItem.range).
+    * {@link TypeHierarchyItem.range `range`}.
     */
   var selectionRange: Range
   

@@ -22,6 +22,8 @@ trait Parent extends StObject {
   
   var node_id: String
   
+  var notification_setting: js.UndefOr[String] = js.undefined
+  
   var parent: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-team-simple'] */ js.Any
   
   var permission: String
@@ -72,6 +74,10 @@ object Parent {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
+    
+    inline def setNotification_setting(value: String): Self = StObject.set(x, "notification_setting", value.asInstanceOf[js.Any])
+    
+    inline def setNotification_settingUndefined: Self = StObject.set(x, "notification_setting", js.undefined)
     
     inline def setParent(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-team-simple'] */ js.Any

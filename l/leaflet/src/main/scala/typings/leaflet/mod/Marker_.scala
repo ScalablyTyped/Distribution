@@ -27,7 +27,8 @@ open class Marker_[P] protected () extends Layer {
   def getLatLng(): LatLng_ = js.native
   
   // Properties
-  var options: MarkerOptions = js.native
+  @JSName("options")
+  var options_Marker_ : MarkerOptions = js.native
   
   def setIcon(icon: DivIcon_): this.type = js.native
   def setIcon(icon: Icon_[IconOptions]): this.type = js.native

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "hls.js" : "1.2.7"
+      "hls.js" : "1.4.3"
     }
   ],
   "test-dependencies" : [
     {
-      "hls.js" : "1.2.7"
+      "hls.js" : "1.4.3"
     }
   ],
   "compile-devDependencies" : [

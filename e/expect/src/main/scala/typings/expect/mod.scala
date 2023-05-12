@@ -117,6 +117,8 @@ object mod extends Shortcut {
   
   trait BaseExpect extends StObject {
     
+    def addEqualityTesters(testers: js.Array[Tester]): Unit
+    
     def assertions(numberOfAssertions: Double): Unit
     
     def extend(matchers: MatchersObject): Unit
@@ -132,6 +134,7 @@ object mod extends Shortcut {
   object BaseExpect {
     
     inline def apply(
+      addEqualityTesters: js.Array[Tester] => Unit,
       assertions: Double => Unit,
       extend: MatchersObject => Unit,
       extractExpectedAssertionsErrors: () => ExpectedAssertionsErrors,
@@ -139,12 +142,14 @@ object mod extends Shortcut {
       hasAssertions: () => Unit,
       setState: PartialMatcherState => Unit
     ): BaseExpect = {
-      val __obj = js.Dynamic.literal(assertions = js.Any.fromFunction1(assertions), extend = js.Any.fromFunction1(extend), extractExpectedAssertionsErrors = js.Any.fromFunction0(extractExpectedAssertionsErrors), getState = js.Any.fromFunction0(getState), hasAssertions = js.Any.fromFunction0(hasAssertions), setState = js.Any.fromFunction1(setState))
+      val __obj = js.Dynamic.literal(addEqualityTesters = js.Any.fromFunction1(addEqualityTesters), assertions = js.Any.fromFunction1(assertions), extend = js.Any.fromFunction1(extend), extractExpectedAssertionsErrors = js.Any.fromFunction0(extractExpectedAssertionsErrors), getState = js.Any.fromFunction0(getState), hasAssertions = js.Any.fromFunction0(hasAssertions), setState = js.Any.fromFunction1(setState))
       __obj.asInstanceOf[BaseExpect]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: BaseExpect] (val x: Self) extends AnyVal {
+      
+      inline def setAddEqualityTesters(value: js.Array[Tester] => Unit): Self = StObject.set(x, "addEqualityTesters", js.Any.fromFunction1(value))
       
       inline def setAssertions(value: Double => Unit): Self = StObject.set(x, "assertions", js.Any.fromFunction1(value))
       
@@ -160,7 +165,10 @@ object mod extends Shortcut {
     }
   }
   
-  type Expect_ = (js.Function1[/* actual */ Any, Matchers[Unit] & Inverse[Matchers[Unit]] & PromiseMatchers]) & BaseExpect & AsymmetricMatchers & Inverse[OmitAsymmetricMatchersany]
+  type Expect_ = (js.Function1[
+    /* actual */ Any, 
+    (Matchers[Unit, Any]) & (Inverse[Matchers[Unit, Any]]) & PromiseMatchers[Any]
+  ]) & BaseExpect & AsymmetricMatchers & Inverse[OmitAsymmetricMatchersany]
   
   type ExpectationResult = SyncExpectationResult | js.Promise[SyncExpectationResult]
   
@@ -194,6 +202,8 @@ object mod extends Shortcut {
     
     val currentTestName: js.UndefOr[String] = js.undefined
     
+    var customTesters: js.Array[Tester]
+    
     def dontThrow(): Unit
     
     def equals(a: Any, b: Any): Boolean
@@ -217,6 +227,8 @@ object mod extends Shortcut {
     
     val isNot: js.UndefOr[Boolean] = js.undefined
     
+    val numPassingAsserts: Double
+    
     val promise: js.UndefOr[String] = js.undefined
     
     val suppressedErrors: js.Array[js.Error]
@@ -229,13 +241,15 @@ object mod extends Shortcut {
     
     inline def apply(
       assertionCalls: Double,
+      customTesters: js.Array[Tester],
       dontThrow: () => Unit,
       equals_ : (/* a */ Any, /* b */ Any, /* customTesters */ js.UndefOr[js.Array[Tester]], /* strictCheck */ js.UndefOr[Boolean]) => Boolean,
       isExpectingAssertions: Boolean,
+      numPassingAsserts: Double,
       suppressedErrors: js.Array[js.Error],
       utils: readonlyprintExpectedvalu
     ): MatcherContext = {
-      val __obj = js.Dynamic.literal(assertionCalls = assertionCalls.asInstanceOf[js.Any], dontThrow = js.Any.fromFunction0(dontThrow), isExpectingAssertions = isExpectingAssertions.asInstanceOf[js.Any], suppressedErrors = suppressedErrors.asInstanceOf[js.Any], utils = utils.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(assertionCalls = assertionCalls.asInstanceOf[js.Any], customTesters = customTesters.asInstanceOf[js.Any], dontThrow = js.Any.fromFunction0(dontThrow), isExpectingAssertions = isExpectingAssertions.asInstanceOf[js.Any], numPassingAsserts = numPassingAsserts.asInstanceOf[js.Any], suppressedErrors = suppressedErrors.asInstanceOf[js.Any], utils = utils.asInstanceOf[js.Any])
       __obj.updateDynamic("equals")(js.Any.fromFunction4(equals_))
       __obj.asInstanceOf[MatcherContext]
     }
@@ -248,6 +262,10 @@ object mod extends Shortcut {
       inline def setCurrentTestName(value: String): Self = StObject.set(x, "currentTestName", value.asInstanceOf[js.Any])
       
       inline def setCurrentTestNameUndefined: Self = StObject.set(x, "currentTestName", js.undefined)
+      
+      inline def setCustomTesters(value: js.Array[Tester]): Self = StObject.set(x, "customTesters", value.asInstanceOf[js.Any])
+      
+      inline def setCustomTestersVarargs(value: Tester*): Self = StObject.set(x, "customTesters", js.Array(value*))
       
       inline def setDontThrow(value: () => Unit): Self = StObject.set(x, "dontThrow", js.Any.fromFunction0(value))
       
@@ -282,6 +300,8 @@ object mod extends Shortcut {
       inline def setIsNot(value: Boolean): Self = StObject.set(x, "isNot", value.asInstanceOf[js.Any])
       
       inline def setIsNotUndefined: Self = StObject.set(x, "isNot", js.undefined)
+      
+      inline def setNumPassingAsserts(value: Double): Self = StObject.set(x, "numPassingAsserts", value.asInstanceOf[js.Any])
       
       inline def setPromise(value: String): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       
@@ -323,6 +343,8 @@ object mod extends Shortcut {
     
     var isNot: js.UndefOr[Boolean] = js.undefined
     
+    var numPassingAsserts: Double
+    
     var promise: js.UndefOr[String] = js.undefined
     
     var suppressedErrors: js.Array[js.Error]
@@ -331,8 +353,13 @@ object mod extends Shortcut {
   }
   object MatcherState {
     
-    inline def apply(assertionCalls: Double, isExpectingAssertions: Boolean, suppressedErrors: js.Array[js.Error]): MatcherState = {
-      val __obj = js.Dynamic.literal(assertionCalls = assertionCalls.asInstanceOf[js.Any], isExpectingAssertions = isExpectingAssertions.asInstanceOf[js.Any], suppressedErrors = suppressedErrors.asInstanceOf[js.Any], expectedAssertionsNumber = null)
+    inline def apply(
+      assertionCalls: Double,
+      isExpectingAssertions: Boolean,
+      numPassingAsserts: Double,
+      suppressedErrors: js.Array[js.Error]
+    ): MatcherState = {
+      val __obj = js.Dynamic.literal(assertionCalls = assertionCalls.asInstanceOf[js.Any], isExpectingAssertions = isExpectingAssertions.asInstanceOf[js.Any], numPassingAsserts = numPassingAsserts.asInstanceOf[js.Any], suppressedErrors = suppressedErrors.asInstanceOf[js.Any], expectedAssertionsNumber = null)
       __obj.asInstanceOf[MatcherState]
     }
     
@@ -371,6 +398,8 @@ object mod extends Shortcut {
       
       inline def setIsNotUndefined: Self = StObject.set(x, "isNot", js.undefined)
       
+      inline def setNumPassingAsserts(value: Double): Self = StObject.set(x, "numPassingAsserts", value.asInstanceOf[js.Any])
+      
       inline def setPromise(value: String): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       
       inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
@@ -387,6 +416,8 @@ object mod extends Shortcut {
   
   trait MatcherUtils extends StObject {
     
+    var customTesters: js.Array[Tester]
+    
     def dontThrow(): Unit
     
     def equals(a: Any, b: Any): Boolean
@@ -401,17 +432,22 @@ object mod extends Shortcut {
   object MatcherUtils {
     
     inline def apply(
+      customTesters: js.Array[Tester],
       dontThrow: () => Unit,
       equals_ : (/* a */ Any, /* b */ Any, /* customTesters */ js.UndefOr[js.Array[Tester]], /* strictCheck */ js.UndefOr[Boolean]) => Boolean,
       utils: readonlyprintExpectedvalu
     ): MatcherUtils = {
-      val __obj = js.Dynamic.literal(dontThrow = js.Any.fromFunction0(dontThrow), utils = utils.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(customTesters = customTesters.asInstanceOf[js.Any], dontThrow = js.Any.fromFunction0(dontThrow), utils = utils.asInstanceOf[js.Any])
       __obj.updateDynamic("equals")(js.Any.fromFunction4(equals_))
       __obj.asInstanceOf[MatcherUtils]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: MatcherUtils] (val x: Self) extends AnyVal {
+      
+      inline def setCustomTesters(value: js.Array[Tester]): Self = StObject.set(x, "customTesters", value.asInstanceOf[js.Any])
+      
+      inline def setCustomTestersVarargs(value: Tester*): Self = StObject.set(x, "customTesters", js.Array(value*))
       
       inline def setDontThrow(value: () => Unit): Self = StObject.set(x, "dontThrow", js.Any.fromFunction0(value))
       
@@ -424,7 +460,7 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait Matchers[R /* <: Unit | js.Promise[Unit] */] extends StObject {
+  trait Matchers[R /* <: Unit | js.Promise[Unit] */, T] extends StObject {
     
     /**
       * Ensures the last call to a mock function was provided specific args.
@@ -691,36 +727,36 @@ object mod extends Shortcut {
   
   type MatchersObject = StringDictionary[RawMatcherFn[MatcherContext]]
   
-  trait PromiseMatchers extends StObject {
+  trait PromiseMatchers[T] extends StObject {
     
     /**
       * Unwraps the reason of a rejected promise so any other matcher can be chained.
       * If the promise is fulfilled the assertion fails.
       */
-    var rejects: Matchers[js.Promise[Unit]] & Inverse[Matchers[js.Promise[Unit]]]
+    var rejects: (Matchers[js.Promise[Unit], T]) & (Inverse[Matchers[js.Promise[Unit], T]])
     
     /**
       * Unwraps the value of a fulfilled promise so any other matcher can be chained.
       * If the promise is rejected the assertion fails.
       */
-    var resolves: Matchers[js.Promise[Unit]] & Inverse[Matchers[js.Promise[Unit]]]
+    var resolves: (Matchers[js.Promise[Unit], T]) & (Inverse[Matchers[js.Promise[Unit], T]])
   }
   object PromiseMatchers {
     
-    inline def apply(
-      rejects: Matchers[js.Promise[Unit]] & Inverse[Matchers[js.Promise[Unit]]],
-      resolves: Matchers[js.Promise[Unit]] & Inverse[Matchers[js.Promise[Unit]]]
-    ): PromiseMatchers = {
+    inline def apply[T](
+      rejects: (Matchers[js.Promise[Unit], T]) & (Inverse[Matchers[js.Promise[Unit], T]]),
+      resolves: (Matchers[js.Promise[Unit], T]) & (Inverse[Matchers[js.Promise[Unit], T]])
+    ): PromiseMatchers[T] = {
       val __obj = js.Dynamic.literal(rejects = rejects.asInstanceOf[js.Any], resolves = resolves.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PromiseMatchers]
+      __obj.asInstanceOf[PromiseMatchers[T]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: PromiseMatchers] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: PromiseMatchers[?], T] (val x: Self & PromiseMatchers[T]) extends AnyVal {
       
-      inline def setRejects(value: Matchers[js.Promise[Unit]] & Inverse[Matchers[js.Promise[Unit]]]): Self = StObject.set(x, "rejects", value.asInstanceOf[js.Any])
+      inline def setRejects(value: (Matchers[js.Promise[Unit], T]) & (Inverse[Matchers[js.Promise[Unit], T]])): Self = StObject.set(x, "rejects", value.asInstanceOf[js.Any])
       
-      inline def setResolves(value: Matchers[js.Promise[Unit]] & Inverse[Matchers[js.Promise[Unit]]]): Self = StObject.set(x, "resolves", value.asInstanceOf[js.Any])
+      inline def setResolves(value: (Matchers[js.Promise[Unit], T]) & (Inverse[Matchers[js.Promise[Unit], T]])): Self = StObject.set(x, "resolves", value.asInstanceOf[js.Any])
     }
   }
   

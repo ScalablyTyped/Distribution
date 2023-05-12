@@ -507,4 +507,28 @@ object distNativeIoMod {
   inline def errorCodeToString(error_code: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("error_code_to_string")(error_code.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def isAlpnAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is_alpn_available")().asInstanceOf[Boolean]
+  
+  trait Pkcs12Options extends StObject {
+    
+    /** Path to the PKCS#12 file */
+    var pkcs12_file: String
+    
+    /** The password for the PKCS#12 file */
+    var pkcs12_password: String
+  }
+  object Pkcs12Options {
+    
+    inline def apply(pkcs12_file: String, pkcs12_password: String): Pkcs12Options = {
+      val __obj = js.Dynamic.literal(pkcs12_file = pkcs12_file.asInstanceOf[js.Any], pkcs12_password = pkcs12_password.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Pkcs12Options]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pkcs12Options] (val x: Self) extends AnyVal {
+      
+      inline def setPkcs12_file(value: String): Self = StObject.set(x, "pkcs12_file", value.asInstanceOf[js.Any])
+      
+      inline def setPkcs12_password(value: String): Self = StObject.set(x, "pkcs12_password", value.asInstanceOf[js.Any])
+    }
+  }
 }

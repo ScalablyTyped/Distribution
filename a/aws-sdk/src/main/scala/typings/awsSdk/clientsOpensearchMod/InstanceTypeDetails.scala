@@ -17,6 +17,11 @@ trait InstanceTypeDetails extends StObject {
   var AppLogsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * The supported Availability Zones for the instance type.
+    */
+  var AvailabilityZones: js.UndefOr[AvailabilityZoneList] = js.undefined
+  
+  /**
     * Whether Amazon Cognito access is supported for the instance type.
     */
   var CognitoEnabled: js.UndefOr[Boolean] = js.undefined
@@ -58,6 +63,12 @@ object InstanceTypeDetails {
     inline def setAppLogsEnabled(value: Boolean): Self = StObject.set(x, "AppLogsEnabled", value.asInstanceOf[js.Any])
     
     inline def setAppLogsEnabledUndefined: Self = StObject.set(x, "AppLogsEnabled", js.undefined)
+    
+    inline def setAvailabilityZones(value: AvailabilityZoneList): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
+    
+    inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
+    
+    inline def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "AvailabilityZones", js.Array(value*))
     
     inline def setCognitoEnabled(value: Boolean): Self = StObject.set(x, "CognitoEnabled", value.asInstanceOf[js.Any])
     

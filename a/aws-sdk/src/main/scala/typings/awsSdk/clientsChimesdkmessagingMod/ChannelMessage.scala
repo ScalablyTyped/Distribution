@@ -17,6 +17,11 @@ trait ChannelMessage extends StObject {
   var Content: js.UndefOr[typings.awsSdk.clientsChimesdkmessagingMod.Content] = js.undefined
   
   /**
+    * The content type of the channel message.
+    */
+  var ContentType: js.UndefOr[typings.awsSdk.clientsChimesdkmessagingMod.ContentType] = js.undefined
+  
+  /**
     * The time at which the message was created.
     */
   var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
@@ -91,6 +96,10 @@ object ChannelMessage {
     inline def setChannelArnUndefined: Self = StObject.set(x, "ChannelArn", js.undefined)
     
     inline def setContent(value: Content): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    
+    inline def setContentType(value: ContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
+    
+    inline def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
     
     inline def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
     

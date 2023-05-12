@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "pprof-format" : "2.0.4"
+      "pprof-format" : "2.0.7"
     }
   ],
   "test-dependencies" : [
     {
-      "pprof-format" : "2.0.4"
+      "pprof-format" : "2.0.7"
     }
   ],
   "compile-devDependencies" : [

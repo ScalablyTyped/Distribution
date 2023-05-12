@@ -9,12 +9,12 @@ trait ClinicalUseDefinitionInteractionInteractant
      with BackboneElement {
   
   /**
-    * The specific medication, food or laboratory test that interacts.
+    * The specific medication, product, food, substance etc. or laboratory test that interacts.
     */
   var itemCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * The specific medication, food or laboratory test that interacts.
+    * The specific medication, product, food, substance etc. or laboratory test that interacts.
     */
   var itemReference: js.UndefOr[Reference] = js.undefined
 }

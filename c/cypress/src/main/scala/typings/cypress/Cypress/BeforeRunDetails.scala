@@ -1,10 +1,13 @@
 package typings.cypress.Cypress
 
+import typings.cypress.cypressBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait BeforeRunDetails extends StObject {
+  
+  var autoCancelAfterFailures: js.UndefOr[Double | `false`] = js.undefined
   
   var browser: js.UndefOr[Browser] = js.undefined
   
@@ -35,6 +38,10 @@ object BeforeRunDetails {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: BeforeRunDetails] (val x: Self) extends AnyVal {
+    
+    inline def setAutoCancelAfterFailures(value: Double | `false`): Self = StObject.set(x, "autoCancelAfterFailures", value.asInstanceOf[js.Any])
+    
+    inline def setAutoCancelAfterFailuresUndefined: Self = StObject.set(x, "autoCancelAfterFailures", js.undefined)
     
     inline def setBrowser(value: Browser): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     

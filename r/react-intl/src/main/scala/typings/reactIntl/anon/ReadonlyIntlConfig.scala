@@ -46,7 +46,7 @@ trait ReadonlyIntlConfig extends StObject {
   val onWarn: js.UndefOr[OnWarnFn] = js.undefined
   
   val textComponent: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.react.mod.ComponentType[js.Object], typings.reactIntl.reactIntlStrings.a, typings.reactIntl.reactIntlStrings.abbr */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119, starting with typings.react.mod.ComponentType[js.Object], typings.reactIntl.reactIntlStrings.a, typings.reactIntl.reactIntlStrings.abbr */ Any
   ] = js.undefined
   
   val timeZone: js.UndefOr[String] = js.undefined
@@ -105,7 +105,7 @@ object ReadonlyIntlConfig {
     inline def setOnWarnUndefined: Self = StObject.set(x, "onWarn", js.undefined)
     
     inline def setTextComponent(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.react.mod.ComponentType[js.Object], typings.reactIntl.reactIntlStrings.a, typings.reactIntl.reactIntlStrings.abbr */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119, starting with typings.react.mod.ComponentType[js.Object], typings.reactIntl.reactIntlStrings.a, typings.reactIntl.reactIntlStrings.abbr */ Any
     ): Self = StObject.set(x, "textComponent", value.asInstanceOf[js.Any])
     
     inline def setTextComponentUndefined: Self = StObject.set(x, "textComponent", js.undefined)

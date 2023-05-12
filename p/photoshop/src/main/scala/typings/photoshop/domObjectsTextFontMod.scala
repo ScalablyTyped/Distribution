@@ -11,35 +11,50 @@ object domObjectsTextFontMod {
   @js.native
   open class TextFont () extends StObject {
     
+    /* private */ var _family: Any = js.native
+    
+    /* private */ var _name: Any = js.native
+    
+    /* private */ var _parent: Any = js.native
+    
+    /* private */ var _postScriptName: Any = js.native
+    
+    /* private */ var _style: Any = js.native
+    
     /**
       * The font family.
+      * @minVersion 23.0
       */
-    val family: String = js.native
+    def family: String = js.native
     
     /**
       * The name of the font.
+      * @minVersion 23.0
       */
-    val name: String = js.native
+    def name: String = js.native
     
     /**
       * The containing application.
+      * @minVersion 23.0
       */
-    val parent: Photoshop = js.native
+    def parent: Photoshop = js.native
     
     /**
       * The PostScript name of the font.
+      * @minVersion 23.0
       */
-    val postScriptName: String = js.native
+    def postScriptName: String = js.native
     
     /**
       * The font style.
+      * @minVersion 23.0
       */
-    val style: String = js.native
+    def style: String = js.native
     
     /**
-      * The class name of the referenced object
-      * @default "TextFont"
+      * The class name of the referenced object: *"TextFont"*.
+      * @minVersion 23.0
       */
-    val typename: String = js.native
+    def typename: typings.photoshop.photoshopStrings.TextFont = js.native
   }
 }

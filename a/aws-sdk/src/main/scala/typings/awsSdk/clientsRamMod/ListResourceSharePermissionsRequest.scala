@@ -17,7 +17,7 @@ trait ListResourceSharePermissionsRequest extends StObject {
   var nextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies the Amazon Resoure Name (ARN) of the resource share for which you want to retrieve the associated permissions.
+    * Specifies the Amazon Resource Name (ARN) of the resource share for which you want to retrieve the associated permissions.
     */
   var resourceShareArn: String
 }

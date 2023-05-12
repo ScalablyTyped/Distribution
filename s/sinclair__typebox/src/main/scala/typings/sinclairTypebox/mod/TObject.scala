@@ -14,7 +14,7 @@ trait TObject[T /* <: TProperties */]
   extends StObject
      with TSchema {
   
-  var additionalProperties: js.UndefOr[Boolean] = js.native
+  var additionalProperties: js.UndefOr[TAdditionalProperties] = js.native
   
   var maxProperties: js.UndefOr[Double] = js.native
   

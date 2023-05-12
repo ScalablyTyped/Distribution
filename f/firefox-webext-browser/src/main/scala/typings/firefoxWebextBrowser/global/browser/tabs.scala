@@ -11,14 +11,11 @@ import typings.firefoxWebextBrowser.browser.tabs.HighlightHighlightInfo
 import typings.firefoxWebextBrowser.browser.tabs.MoveInSuccessionOptions
 import typings.firefoxWebextBrowser.browser.tabs.MoveMoveProperties
 import typings.firefoxWebextBrowser.browser.tabs.OnActivatedActiveInfo
-import typings.firefoxWebextBrowser.browser.tabs.OnActiveChangedSelectInfo
 import typings.firefoxWebextBrowser.browser.tabs.OnAttachedAttachInfo
 import typings.firefoxWebextBrowser.browser.tabs.OnDetachedDetachInfo
-import typings.firefoxWebextBrowser.browser.tabs.OnHighlightChangedSelectInfo
 import typings.firefoxWebextBrowser.browser.tabs.OnHighlightedHighlightInfo
 import typings.firefoxWebextBrowser.browser.tabs.OnMovedMoveInfo
 import typings.firefoxWebextBrowser.browser.tabs.OnRemovedRemoveInfo
-import typings.firefoxWebextBrowser.browser.tabs.OnSelectionChangedSelectInfo
 import typings.firefoxWebextBrowser.browser.tabs.OnUpdatedChangeInfo
 import typings.firefoxWebextBrowser.browser.tabs.OnZoomChangeZoomChangeInfo
 import typings.firefoxWebextBrowser.browser.tabs.PageSettings
@@ -111,12 +108,14 @@ object tabs {
   /**
     * Injects JavaScript code into a page. For details, see the programmatic injection section of the content scripts doc.
     * @param details Details of the script to run.
+    * Not supported on manifest versions above 2.
     */
   inline def executeScript(details: InjectDetails): js.Promise[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("executeScript")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Any]]]
   /**
     * Injects JavaScript code into a page. For details, see the programmatic injection section of the content scripts doc.
     * @param tabId The ID of the tab in which to run the script; defaults to the active tab of the current window.
     * @param details Details of the script to run.
+    * Not supported on manifest versions above 2.
     */
   inline def executeScript(tabId: Double, details: InjectDetails): js.Promise[js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeScript")(tabId.asInstanceOf[js.Any], details.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Any]]]
   
@@ -125,25 +124,9 @@ object tabs {
   inline def get(tabId: Double): js.Promise[Tab] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(tabId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Tab]]
   
   /**
-    * Gets details about all tabs in the specified window.
-    * @param [windowId] Defaults to the current window.
-    * @deprecated Please use `tabs.query` `{windowId: windowId}`.
-    */
-  inline def getAllInWindow(): js.Promise[js.Array[Tab]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllInWindow")().asInstanceOf[js.Promise[js.Array[Tab]]]
-  inline def getAllInWindow(windowId: Double): js.Promise[js.Array[Tab]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllInWindow")(windowId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Tab]]]
-  
-  /**
     * Gets the tab that this script call is being made from. May be undefined if called from a non-tab context (for example: a background page or popup view).
     */
-  inline def getCurrent(): js.Promise[Tab] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrent")().asInstanceOf[js.Promise[Tab]]
-  
-  /**
-    * Gets the tab that is selected in the specified window.
-    * @param [windowId] Defaults to the current window.
-    * @deprecated Please use `tabs.query` `{active: true}`.
-    */
-  inline def getSelected(): js.Promise[Tab] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelected")().asInstanceOf[js.Promise[Tab]]
-  inline def getSelected(windowId: Double): js.Promise[Tab] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelected")(windowId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Tab]]
+  inline def getCurrent(): js.Promise[js.UndefOr[Tab]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrent")().asInstanceOf[js.Promise[js.UndefOr[Tab]]]
   
   /**
     * Gets the current zoom factor of a specified tab.
@@ -186,12 +169,14 @@ object tabs {
   /**
     * Injects CSS into a page. For details, see the programmatic injection section of the content scripts doc.
     * @param details Details of the CSS text to insert.
+    * Not supported on manifest versions above 2.
     */
   inline def insertCSS(details: InjectDetails): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("insertCSS")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   /**
     * Injects CSS into a page. For details, see the programmatic injection section of the content scripts doc.
     * @param tabId The ID of the tab in which to insert the CSS; defaults to the active tab of the current window.
     * @param details Details of the CSS text to insert.
+    * Not supported on manifest versions above 2.
     */
   inline def insertCSS(tabId: Double, details: InjectDetails): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertCSS")(tabId.asInstanceOf[js.Any], details.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
@@ -219,19 +204,6 @@ object tabs {
   @js.native
   val onActivated: WebExtEvent[js.Function1[/* activeInfo */ OnActivatedActiveInfo, Unit]] = js.native
   
-  /**
-    * Fires when the selected tab in a window changes. Note that the tab's URL may not be set at the time this event fired, but you can listen to `tabs.onUpdated` events to be notified when a URL is set.
-    * @param tabId The ID of the tab that has become active.
-    * @deprecated Please use `tabs.onActivated`.
-    */
-  @JSGlobal("browser.tabs.onActiveChanged")
-  @js.native
-  val onActiveChanged: js.UndefOr[
-    WebExtEvent[
-      js.Function2[/* tabId */ Double, /* selectInfo */ OnActiveChangedSelectInfo, Unit]
-    ]
-  ] = js.native
-  
   /** Fired when a tab is attached to a window, for example because it was moved between windows. */
   @JSGlobal("browser.tabs.onAttached")
   @js.native
@@ -250,14 +222,6 @@ object tabs {
   @JSGlobal("browser.tabs.onDetached")
   @js.native
   val onDetached: WebExtEvent[js.Function2[/* tabId */ Double, /* detachInfo */ OnDetachedDetachInfo, Unit]] = js.native
-  
-  /**
-    * Fired when the highlighted or selected tabs in a window changes.
-    * @deprecated Please use `tabs.onHighlighted`.
-    */
-  @JSGlobal("browser.tabs.onHighlightChanged")
-  @js.native
-  val onHighlightChanged: js.UndefOr[WebExtEvent[js.Function1[/* selectInfo */ OnHighlightChangedSelectInfo, Unit]]] = js.native
   
   /** Fired when the highlighted or selected tabs in a window changes. */
   @JSGlobal("browser.tabs.onHighlighted")
@@ -280,19 +244,6 @@ object tabs {
   @JSGlobal("browser.tabs.onReplaced")
   @js.native
   val onReplaced: WebExtEvent[js.Function2[/* addedTabId */ Double, /* removedTabId */ Double, Unit]] = js.native
-  
-  /**
-    * Fires when the selected tab in a window changes.
-    * @param tabId The ID of the tab that has become active.
-    * @deprecated Please use `tabs.onActivated`.
-    */
-  @JSGlobal("browser.tabs.onSelectionChanged")
-  @js.native
-  val onSelectionChanged: js.UndefOr[
-    WebExtEvent[
-      js.Function2[/* tabId */ Double, /* selectInfo */ OnSelectionChangedSelectInfo, Unit]
-    ]
-  ] = js.native
   
   /**
     * Fired when a tab is updated.
@@ -340,12 +291,14 @@ object tabs {
   /**
     * Removes injected CSS from a page. For details, see the programmatic injection section of the content scripts doc.
     * @param details Details of the CSS text to remove.
+    * Not supported on manifest versions above 2.
     */
   inline def removeCSS(details: InjectDetails): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeCSS")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   /**
     * Removes injected CSS from a page. For details, see the programmatic injection section of the content scripts doc.
     * @param tabId The ID of the tab from which to remove the injected CSS; defaults to the active tab of the current window.
     * @param details Details of the CSS text to remove.
+    * Not supported on manifest versions above 2.
     */
   inline def removeCSS(tabId: Double, details: InjectDetails): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCSS")(tabId.asInstanceOf[js.Any], details.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
@@ -360,13 +313,6 @@ object tabs {
     */
   inline def sendMessage(tabId: Double, message: Any): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(tabId.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   inline def sendMessage(tabId: Double, message: Any, options: SendMessageOptions): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(tabId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
-  
-  /**
-    * Sends a single request to the content script(s) in the specified tab, with an optional callback to run when a response is sent back. The `extension.onRequest` event is fired in each content script running in the specified tab for the current extension.
-    * @deprecated Please use `runtime.sendMessage`.
-    */
-  inline def sendRequest(tabId: Double, request: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(tabId.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def sendRequest(tabId: Double, request: Any, responseCallback: js.Function1[/* response */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(tabId.asInstanceOf[js.Any], request.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Zooms a specified tab.

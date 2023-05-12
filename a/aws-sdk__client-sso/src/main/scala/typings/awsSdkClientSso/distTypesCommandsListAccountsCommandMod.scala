@@ -22,8 +22,14 @@ object distTypesCommandsListAccountsCommandMod {
   @JSImport("@aws-sdk/client-sso/dist-types/commands/ListAccountsCommand", "ListAccountsCommand")
   @js.native
   open class ListAccountsCommand protected () extends Command[ListAccountsCommandInput, ListAccountsCommandOutput, SSOClientResolvedConfig, Any, Any] {
+    /**
+      * @public
+      */
     def this(input: ListAccountsCommandInput) = this()
     
+    /**
+      * @internal
+      */
     /* private */ var deserialize: Any = js.native
     
     /**
@@ -39,6 +45,9 @@ object distTypesCommandsListAccountsCommandMod {
       options: HttpHandlerOptions
     ): Handler[ListAccountsCommandInput, ListAccountsCommandOutput] = js.native
     
+    /**
+      * @internal
+      */
     /* private */ var serialize: Any = js.native
   }
   /* static members */

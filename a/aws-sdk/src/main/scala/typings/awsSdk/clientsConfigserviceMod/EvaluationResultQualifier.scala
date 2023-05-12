@@ -12,6 +12,11 @@ trait EvaluationResultQualifier extends StObject {
   var ConfigRuleName: js.UndefOr[typings.awsSdk.clientsConfigserviceMod.ConfigRuleName] = js.undefined
   
   /**
+    * The mode of an evaluation. The valid values are Detective or Proactive.
+    */
+  var EvaluationMode: js.UndefOr[typings.awsSdk.clientsConfigserviceMod.EvaluationMode] = js.undefined
+  
+  /**
     * The ID of the evaluated Amazon Web Services resource.
     */
   var ResourceId: js.UndefOr[BaseResourceId] = js.undefined
@@ -34,6 +39,10 @@ object EvaluationResultQualifier {
     inline def setConfigRuleName(value: ConfigRuleName): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
     
     inline def setConfigRuleNameUndefined: Self = StObject.set(x, "ConfigRuleName", js.undefined)
+    
+    inline def setEvaluationMode(value: EvaluationMode): Self = StObject.set(x, "EvaluationMode", value.asInstanceOf[js.Any])
+    
+    inline def setEvaluationModeUndefined: Self = StObject.set(x, "EvaluationMode", js.undefined)
     
     inline def setResourceId(value: BaseResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     

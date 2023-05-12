@@ -6,10 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GPUColorTargetState extends StObject {
   
+  /**
+    * The blending behavior for this color target. If left undefined, disables blending for this
+    * color target.
+    */
   var blend: js.UndefOr[GPUBlendState] = js.undefined
   
+  /**
+    * The {@link GPUTextureFormat} of this color target. The pipeline will only be compatible with
+    * {@link GPURenderPassEncoder}s which use a {@link GPUTextureView} of the same format in the
+    * corresponding color attachment.
+    */
   var format: GPUTextureFormat
   
+  /**
+    * Bitmask controlling which channels are are written to when drawing to this color target.
+    */
   var writeMask: js.UndefOr[GPUColorWriteFlags] = js.undefined
 }
 object GPUColorTargetState {

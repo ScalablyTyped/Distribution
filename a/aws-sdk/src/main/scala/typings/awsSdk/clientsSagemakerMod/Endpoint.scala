@@ -54,6 +54,11 @@ trait Endpoint extends StObject {
   var ProductionVariants: js.UndefOr[ProductionVariantSummaryList] = js.undefined
   
   /**
+    * A list of the shadow variants hosted on the endpoint. Each shadow variant is a model in shadow mode with production traffic replicated from the production variant.
+    */
+  var ShadowProductionVariants: js.UndefOr[ProductionVariantSummaryList] = js.undefined
+  
+  /**
     * A list of the tags associated with the endpoint. For more information, see Tagging Amazon Web Services resources in the Amazon Web Services General Reference Guide.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
@@ -106,6 +111,12 @@ object Endpoint {
     inline def setProductionVariantsUndefined: Self = StObject.set(x, "ProductionVariants", js.undefined)
     
     inline def setProductionVariantsVarargs(value: ProductionVariantSummary*): Self = StObject.set(x, "ProductionVariants", js.Array(value*))
+    
+    inline def setShadowProductionVariants(value: ProductionVariantSummaryList): Self = StObject.set(x, "ShadowProductionVariants", value.asInstanceOf[js.Any])
+    
+    inline def setShadowProductionVariantsUndefined: Self = StObject.set(x, "ShadowProductionVariants", js.undefined)
+    
+    inline def setShadowProductionVariantsVarargs(value: ProductionVariantSummary*): Self = StObject.set(x, "ShadowProductionVariants", js.Array(value*))
     
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

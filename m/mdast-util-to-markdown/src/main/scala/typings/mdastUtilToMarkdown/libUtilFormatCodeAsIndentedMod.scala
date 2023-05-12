@@ -10,9 +10,9 @@ object libUtilFormatCodeAsIndentedMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def formatCodeAsIndented(node: Code, context: Context): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("formatCodeAsIndented")(node.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def formatCodeAsIndented(node: Code, state: State): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("formatCodeAsIndented")(node.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   type Code = typings.mdast.mod.Code
   
-  type Context = typings.mdastUtilToMarkdown.libTypesMod.Context
+  type State = typings.mdastUtilToMarkdown.libTypesMod.State
 }

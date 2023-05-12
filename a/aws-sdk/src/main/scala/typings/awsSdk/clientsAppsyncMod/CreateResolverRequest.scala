@@ -17,6 +17,11 @@ trait CreateResolverRequest extends StObject {
   var cachingConfig: js.UndefOr[CachingConfig] = js.undefined
   
   /**
+    * The resolver code that contains the request and response functions. When code is used, the runtime is required. The runtime value must be APPSYNC_JS.
+    */
+  var code: js.UndefOr[Code] = js.undefined
+  
+  /**
     * The name of the data source for which the resolver is being created.
     */
   var dataSourceName: js.UndefOr[ResourceName] = js.undefined
@@ -51,6 +56,8 @@ trait CreateResolverRequest extends StObject {
     */
   var responseMappingTemplate: js.UndefOr[MappingTemplate] = js.undefined
   
+  var runtime: js.UndefOr[AppSyncRuntime] = js.undefined
+  
   /**
     * The SyncConfig for a resolver attached to a versioned data source.
     */
@@ -77,6 +84,10 @@ object CreateResolverRequest {
     
     inline def setCachingConfigUndefined: Self = StObject.set(x, "cachingConfig", js.undefined)
     
+    inline def setCode(value: Code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    
     inline def setDataSourceName(value: ResourceName): Self = StObject.set(x, "dataSourceName", value.asInstanceOf[js.Any])
     
     inline def setDataSourceNameUndefined: Self = StObject.set(x, "dataSourceName", js.undefined)
@@ -102,6 +113,10 @@ object CreateResolverRequest {
     inline def setResponseMappingTemplate(value: MappingTemplate): Self = StObject.set(x, "responseMappingTemplate", value.asInstanceOf[js.Any])
     
     inline def setResponseMappingTemplateUndefined: Self = StObject.set(x, "responseMappingTemplate", js.undefined)
+    
+    inline def setRuntime(value: AppSyncRuntime): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+    
+    inline def setRuntimeUndefined: Self = StObject.set(x, "runtime", js.undefined)
     
     inline def setSyncConfig(value: SyncConfig): Self = StObject.set(x, "syncConfig", value.asInstanceOf[js.Any])
     

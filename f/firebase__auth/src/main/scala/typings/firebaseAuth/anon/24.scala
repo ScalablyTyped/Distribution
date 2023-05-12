@@ -1,6 +1,6 @@
 package typings.firebaseAuth.anon
 
-import typings.firebaseAuth.distNodeSrcPlatformCordovaPluginsMod.InAppBrowserRef
+import typings.firebaseAuth.distNodeEsmSrcPlatformCordovaPluginsMod.InAppBrowserRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

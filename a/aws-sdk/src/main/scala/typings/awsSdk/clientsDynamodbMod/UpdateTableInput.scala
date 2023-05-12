@@ -17,6 +17,11 @@ trait UpdateTableInput extends StObject {
   var BillingMode: js.UndefOr[typings.awsSdk.clientsDynamodbMod.BillingMode] = js.undefined
   
   /**
+    * Indicates whether deletion protection is to be enabled (true) or disabled (false) on the table.
+    */
+  var DeletionProtectionEnabled: js.UndefOr[typings.awsSdk.clientsDynamodbMod.DeletionProtectionEnabled] = js.undefined
+  
+  /**
     * An array of one or more global secondary indexes for the table. For each index in the array, you can request one action:    Create - add a new global secondary index to the table.    Update - modify the provisioned throughput settings of an existing global secondary index.    Delete - remove a global secondary index from the table.   You can create or delete only one global secondary index per UpdateTable operation. For more information, see Managing Global Secondary Indexes in the Amazon DynamoDB Developer Guide. 
     */
   var GlobalSecondaryIndexUpdates: js.UndefOr[GlobalSecondaryIndexUpdateList] = js.undefined
@@ -27,7 +32,7 @@ trait UpdateTableInput extends StObject {
   var ProvisionedThroughput: js.UndefOr[typings.awsSdk.clientsDynamodbMod.ProvisionedThroughput] = js.undefined
   
   /**
-    * A list of replica update actions (create, delete, or update) for the table.  This property only applies to Version 2019.11.21 of global tables. 
+    * A list of replica update actions (create, delete, or update) for the table.  This property only applies to Version 2019.11.21 (Current) of global tables.  
     */
   var ReplicaUpdates: js.UndefOr[ReplicationGroupUpdateList] = js.undefined
   
@@ -70,6 +75,10 @@ object UpdateTableInput {
     inline def setBillingMode(value: BillingMode): Self = StObject.set(x, "BillingMode", value.asInstanceOf[js.Any])
     
     inline def setBillingModeUndefined: Self = StObject.set(x, "BillingMode", js.undefined)
+    
+    inline def setDeletionProtectionEnabled(value: DeletionProtectionEnabled): Self = StObject.set(x, "DeletionProtectionEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setDeletionProtectionEnabledUndefined: Self = StObject.set(x, "DeletionProtectionEnabled", js.undefined)
     
     inline def setGlobalSecondaryIndexUpdates(value: GlobalSecondaryIndexUpdateList): Self = StObject.set(x, "GlobalSecondaryIndexUpdates", value.asInstanceOf[js.Any])
     

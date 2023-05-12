@@ -2,11 +2,14 @@ package typings.angularCompilerCli
 
 import typings.angularCompiler.mod.Expression
 import typings.angularCompiler.mod.Type
+import typings.angularCompilerCli.srcNgtscImportsMod.ReferenceEmitter
 import typings.angularCompilerCli.srcNgtscImportsSrcCoreMod.ImportRewriter
+import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ReflectionHost
 import typings.angularCompilerCli.srcNgtscTranslatorSrcApiAstFactoryMod.AstFactory
 import typings.angularCompilerCli.srcNgtscTranslatorSrcApiAstFactoryMod.LeadingComment
 import typings.angularCompilerCli.srcNgtscTranslatorSrcApiImportGeneratorMod.ImportGenerator
 import typings.angularCompilerCli.srcNgtscTranslatorSrcTranslatorMod.TranslatorOptions
+import typings.typescript.mod.SourceFile
 import typings.typescript.mod.Statement
 import typings.typescript.mod.TemplateMiddle
 import typings.typescript.mod.TemplateTail
@@ -80,6 +83,9 @@ object srcNgtscTranslatorMod {
   
   inline def translateType(
     `type`: Type,
+    contextFile: SourceFile,
+    reflector: ReflectionHost,
+    refEmitter: ReferenceEmitter,
     imports: typings.angularCompilerCli.srcNgtscTranslatorSrcImportManagerMod.ImportManager
-  ): TypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("translateType")(`type`.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[TypeNode]
+  ): TypeNode = (^.asInstanceOf[js.Dynamic].applyDynamic("translateType")(`type`.asInstanceOf[js.Any], contextFile.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any], refEmitter.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[TypeNode]
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@angular/core" : "14.2.10"
+      "@angular/core" : "16.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@angular/core" : "14.2.10"
+      "@angular/core" : "16.0.1"
     }
   ],
   "compile-devDependencies" : [

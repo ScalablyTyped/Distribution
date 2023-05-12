@@ -4,19 +4,70 @@ import typings.postcss.libNodeMod.ChildNode
 import typings.postcss.libNodeMod.ChildProps
 import typings.postcss.libNodeMod.NodeProps
 import typings.postcss.postcssBooleans.`false`
+import typings.std.Comment
+import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libContainerMod {
   
+  @JSImport("postcss/lib/container", JSImport.Namespace)
+  @js.native
+  open class ^[Child /* <: typings.postcss.libNodeMod.default */] ()
+    extends StObject
+       with Container_[Child]
+  
+  /**
+    * The `Root`, `AtRule`, and `Rule` container nodes
+    * inherit some common methods to help work with their children.
+    *
+    * Note that all containers can store any content. If you write a rule inside
+    * a rule, PostCSS will parse it.
+    */
   /* note: abstract class */ @JSImport("postcss/lib/container", JSImport.Default)
   @js.native
-  open class default[Child /* <: typings.postcss.libNodeMod.default */] () extends Container[Child]
+  open class default[Child /* <: Node */] ()
+    extends StObject
+       with Container_[Child]
   
+  type Container[Child /* <: typings.postcss.libNodeMod.default */] = Container_[Child]
+  
+  trait ContainerProps
+    extends StObject
+       with NodeProps {
+    
+    var nodes: js.UndefOr[js.Array[ChildNode | ChildProps]] = js.undefined
+  }
+  object ContainerProps {
+    
+    inline def apply(): ContainerProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ContainerProps]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainerProps] (val x: Self) extends AnyVal {
+      
+      inline def setNodes(value: js.Array[ChildNode | ChildProps]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      
+      inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
+      
+      inline def setNodesVarargs(value: (ChildNode | ChildProps)*): Self = StObject.set(x, "nodes", js.Array(value*))
+    }
+  }
+  
+  /**
+    * The `Root`, `AtRule`, and `Rule` container nodes
+    * inherit some common methods to help work with their children.
+    *
+    * Note that all containers can store any content. If you write a rule inside
+    * a rule, PostCSS will parse it.
+    */
   @js.native
-  trait Container[Child /* <: typings.postcss.libNodeMod.default */]
-    extends typings.postcss.libNodeMod.default {
+  trait Container_[Child /* <: Node */]
+    extends StObject
+       with Node {
     
     /**
       * Inserts new nodes to the end of the container.
@@ -38,9 +89,7 @@ object libContainerMod {
       * @param nodes New nodes.
       * @return This node for methods chain.
       */
-    def append(
-      nodes: (typings.postcss.libNodeMod.default | (js.Array[ChildProps | String | typings.postcss.libNodeMod.default]) | ChildProps | String)*
-    ): this.type = js.native
+    def append(nodes: (Node | (js.Array[ChildProps | Node | String]) | ChildProps | String)*): this.type = js.native
     
     /**
       * Iterates through the container’s immediate children,
@@ -192,9 +241,7 @@ object libContainerMod {
       * @param nodes New nodes.
       * @return This node for methods chain.
       */
-    def prepend(
-      nodes: (typings.postcss.libNodeMod.default | (js.Array[ChildProps | String | typings.postcss.libNodeMod.default]) | ChildProps | String)*
-    ): this.type = js.native
+    def prepend(nodes: (Node | (js.Array[ChildProps | Node | String]) | ChildProps | String)*): this.type = js.native
     
     /**
       * Add child to the end of the node.
@@ -221,21 +268,6 @@ object libContainerMod {
       */
     def removeAll(): this.type = js.native
     
-    /**
-      * Removes node from the container and cleans the parent properties
-      * from the node and its children.
-      *
-      * ```js
-      * rule.nodes.length  //=> 5
-      * rule.removeChild(decl)
-      * rule.nodes.length  //=> 4
-      * decl.parent        //=> undefined
-      * ```
-      *
-      * @param child Child or child’s index.
-      * @return This node for methods chain.
-      */
-    def removeChild(child: Child): this.type = js.native
     def removeChild(child: Double): this.type = js.native
     
     /**
@@ -366,13 +398,7 @@ object libContainerMod {
       * @return Returns `false` if iteration was broke.
       */
     @JSName("walkComments")
-    def walkComments_false(
-      callback: js.Function2[
-          /* comment */ typings.postcss.libCommentMod.default, 
-          /* indexed */ Double, 
-          `false` | Unit
-        ]
-    ): js.UndefOr[`false`] = js.native
+    def walkComments_false(callback: js.Function2[/* comment */ Comment, /* indexed */ Double, `false` | Unit]): js.UndefOr[`false`] = js.native
     
     @JSName("walkDecls")
     def walkDecls_false(
@@ -487,31 +513,7 @@ object libContainerMod {
       * @return  Returns `false` if iteration was broke.
       */
     @JSName("walk")
-    def walk_false(callback: js.Function2[/* node */ ChildNode, /* index */ Double, `false` | Unit]): js.UndefOr[`false`] = js.native
-  }
-  
-  trait ContainerProps
-    extends StObject
-       with NodeProps {
-    
-    var nodes: js.UndefOr[js.Array[ChildNode | ChildProps]] = js.undefined
-  }
-  object ContainerProps {
-    
-    inline def apply(): ContainerProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ContainerProps]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: ContainerProps] (val x: Self) extends AnyVal {
-      
-      inline def setNodes(value: js.Array[ChildNode | ChildProps]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
-      
-      inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
-      
-      inline def setNodesVarargs(value: (ChildNode | ChildProps)*): Self = StObject.set(x, "nodes", js.Array(value*))
-    }
+    def walk_false(callback: js.Function2[/* node */ typings.std.ChildNode, /* index */ Double, `false` | Unit]): js.UndefOr[`false`] = js.native
   }
   
   trait ValueOptions extends StObject {

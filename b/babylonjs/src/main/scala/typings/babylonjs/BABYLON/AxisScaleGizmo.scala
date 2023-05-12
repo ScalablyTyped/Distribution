@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.babylonjs.BABYLON.IDisposable because Already inherited
 - typings.babylonjs.BABYLON.IGizmo because Already inherited
-- typings.babylonjs.BABYLON.IAxisScaleGizmo because var conflicts: _rootMesh, attachedMesh, attachedNode, customRotationQuaternion, gizmoLayer, isHovered, scaleRatio, updateGizmoPositionToMatchAttachedMesh, updateGizmoRotationToMatchAttachedMesh, updateScale. Inlined dragBehavior, snapDistance, onSnapObservable, uniformScaling, sensitivity, dragScale, isEnabled */ @js.native
+- typings.babylonjs.BABYLON.IAxisScaleGizmo because var conflicts: _rootMesh, attachedMesh, attachedNode, customRotationQuaternion, gizmoLayer, isHovered, scaleRatio, updateGizmoPositionToMatchAttachedMesh, updateGizmoRotationToMatchAttachedMesh, updateScale. Inlined dragBehavior, snapDistance, onSnapObservable, uniformScaling, sensitivity, dragScale, isEnabled, coloredMaterial, hoverMaterial, disableMaterial */ @js.native
 trait AxisScaleGizmo
   extends StObject
      with Gizmo {
@@ -39,11 +39,19 @@ trait AxisScaleGizmo
   
   /* protected */ var _pointerObserver: Nullable[Observer[PointerInfo]] = js.native
   
-  /* protected */ var _tmpMatrix: Matrix = js.native
+  /* private */ var _tmpVector: Any = js.native
   
-  /* protected */ var _tmpMatrix2: Matrix = js.native
+  /** Default material used to render when gizmo is not disabled or hovered */
+  def coloredMaterial: StandardMaterial = js.native
+  /** Default material used to render when gizmo is not disabled or hovered */
+  @JSName("coloredMaterial")
+  var coloredMaterial_FAxisScaleGizmo: StandardMaterial = js.native
   
-  /* protected */ var _tmpVector: Vector3 = js.native
+  /** Material used to render when gizmo is disabled. typically grey.*/
+  def disableMaterial: StandardMaterial = js.native
+  /** Material used to render when gizmo is disabled. typically grey.*/
+  @JSName("disableMaterial")
+  var disableMaterial_FAxisScaleGizmo: StandardMaterial = js.native
   
   /**
     * Drag behavior responsible for the gizmos dragging interactions
@@ -54,6 +62,12 @@ trait AxisScaleGizmo
     * The magnitude of the drag strength (scaling factor)
     */
   var dragScale: Double = js.native
+  
+  /** Material used to render when gizmo is hovered with mouse*/
+  def hoverMaterial: StandardMaterial = js.native
+  /** Material used to render when gizmo is hovered with mouse*/
+  @JSName("hoverMaterial")
+  var hoverMaterial_FAxisScaleGizmo: StandardMaterial = js.native
   
   def isEnabled: Boolean = js.native
   /**

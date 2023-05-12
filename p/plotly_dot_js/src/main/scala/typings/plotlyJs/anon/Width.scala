@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Width extends StObject {
   
-  var dash: typings.plotlyJs.libTracesOhclMod.Dash
+  var dash: typings.plotlyJs.libTracesOhlcMod.Dash
   
   var width: Double
 }
 object Width {
   
-  inline def apply(dash: typings.plotlyJs.libTracesOhclMod.Dash, width: Double): Width = {
+  inline def apply(dash: typings.plotlyJs.libTracesOhlcMod.Dash, width: Double): Width = {
     val __obj = js.Dynamic.literal(dash = dash.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Width]
   }
@@ -20,7 +20,7 @@ object Width {
   @scala.inline
   implicit open class MutableBuilder[Self <: Width] (val x: Self) extends AnyVal {
     
-    inline def setDash(value: typings.plotlyJs.libTracesOhclMod.Dash): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
+    inline def setDash(value: typings.plotlyJs.libTracesOhlcMod.Dash): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }

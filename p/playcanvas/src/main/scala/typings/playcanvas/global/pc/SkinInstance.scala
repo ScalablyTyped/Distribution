@@ -15,8 +15,8 @@ open class SkinInstance protected ()
   /**
     * Create a new SkinInstance instance.
     *
-    * @param {Skin} skin - The skin that will provide the inverse bind pose matrices to generate
-    * the final matrix palette.
+    * @param {import('./skin.js').Skin} skin - The skin that will provide the inverse bind pose
+    * matrices to generate the final matrix palette.
     */
   def this(skin: typings.playcanvas.mod.Skin) = this()
 }

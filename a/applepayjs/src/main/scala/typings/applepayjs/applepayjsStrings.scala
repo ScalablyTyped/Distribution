@@ -7,6 +7,8 @@ import typings.applepayjs.ApplePayJS.ApplePayLineItemType
 import typings.applepayjs.ApplePayJS.ApplePayMerchantCapability
 import typings.applepayjs.ApplePayJS.ApplePayPaymentMethodType
 import typings.applepayjs.ApplePayJS.ApplePayPaymentPassActivationState
+import typings.applepayjs.ApplePayJS.ApplePayPaymentTiming
+import typings.applepayjs.ApplePayJS.ApplePayRecurringPaymentDateUnit
 import typings.applepayjs.ApplePayJS.ApplePayShippingType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -45,6 +47,12 @@ object applepayjsStrings {
   inline def administrativeArea: administrativeArea = "administrativeArea".asInstanceOf[administrativeArea]
   
   @js.native
+  sealed trait automaticReload
+    extends StObject
+       with ApplePayPaymentTiming
+  inline def automaticReload: automaticReload = "automaticReload".asInstanceOf[automaticReload]
+  
+  @js.native
   sealed trait billingContactInvalid
     extends StObject
        with ApplePayErrorCode
@@ -69,6 +77,12 @@ object applepayjsStrings {
   inline def credit: credit = "credit".asInstanceOf[credit]
   
   @js.native
+  sealed trait day
+    extends StObject
+       with ApplePayRecurringPaymentDateUnit
+  inline def day: day = "day".asInstanceOf[day]
+  
+  @js.native
   sealed trait deactivated
     extends StObject
        with ApplePayPaymentPassActivationState
@@ -79,6 +93,12 @@ object applepayjsStrings {
     extends StObject
        with ApplePayPaymentMethodType
   inline def debit: debit = "debit".asInstanceOf[debit]
+  
+  @js.native
+  sealed trait deferred
+    extends StObject
+       with ApplePayPaymentTiming
+  inline def deferred: deferred = "deferred".asInstanceOf[deferred]
   
   @js.native
   sealed trait delivery
@@ -105,10 +125,34 @@ object applepayjsStrings {
   inline def `final`: `final` = "final".asInstanceOf[`final`]
   
   @js.native
+  sealed trait hour
+    extends StObject
+       with ApplePayRecurringPaymentDateUnit
+  inline def hour: hour = "hour".asInstanceOf[hour]
+  
+  @js.native
+  sealed trait immediate
+    extends StObject
+       with ApplePayPaymentTiming
+  inline def immediate: immediate = "immediate".asInstanceOf[immediate]
+  
+  @js.native
   sealed trait locality
     extends StObject
        with ApplePayErrorContactField
   inline def locality: locality = "locality".asInstanceOf[locality]
+  
+  @js.native
+  sealed trait minute
+    extends StObject
+       with ApplePayRecurringPaymentDateUnit
+  inline def minute: minute = "minute".asInstanceOf[minute]
+  
+  @js.native
+  sealed trait month
+    extends StObject
+       with ApplePayRecurringPaymentDateUnit
+  inline def month: month = "month".asInstanceOf[month]
   
   @js.native
   sealed trait name
@@ -160,6 +204,12 @@ object applepayjsStrings {
     extends StObject
        with ApplePayPaymentMethodType
   inline def prepaid: prepaid = "prepaid".asInstanceOf[prepaid]
+  
+  @js.native
+  sealed trait recurring
+    extends StObject
+       with ApplePayPaymentTiming
+  inline def recurring: recurring = "recurring".asInstanceOf[recurring]
   
   @js.native
   sealed trait requiresActivation
@@ -244,4 +294,10 @@ object applepayjsStrings {
     extends StObject
        with ApplePayErrorCode
   inline def unknown: unknown = "unknown".asInstanceOf[unknown]
+  
+  @js.native
+  sealed trait year
+    extends StObject
+       with ApplePayRecurringPaymentDateUnit
+  inline def year: year = "year".asInstanceOf[year]
 }

@@ -6,12 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait DirectionsStatus extends StObject
-/**
-  * The status returned by the <code>DirectionsService</code> on the completion
-  * of a call to <code>route()</code>. Specify these by value, or by using the
-  * constant&#39;s name. For example, <code>'OK'</code> or
-  * <code>google.maps.DirectionsStatus.OK</code>.
-  */
 @JSGlobal("google.maps.DirectionsStatus")
 @js.native
 object DirectionsStatus extends StObject {

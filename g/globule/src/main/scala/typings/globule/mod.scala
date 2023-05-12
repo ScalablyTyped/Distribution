@@ -1,7 +1,6 @@
 package typings.globule
 
 import org.scalablytyped.runtime.Shortcut
-import typings.glob.mod.IOptions
 import typings.globule.globuleStrings.first
 import typings.globule.globuleStrings.last
 import org.scalablytyped.runtime.StObject
@@ -14,13 +13,16 @@ object mod extends Shortcut {
   @js.native
   val ^ : GlobuleStatic = js.native
   
-  trait FindOptions
-    extends StObject
-       with IOptions {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify glob.IOptions * / any */ trait FindOptions extends StObject {
     
     var filter: js.UndefOr[
         String | (js.Function2[/* filepath */ js.UndefOr[String], /* options */ js.UndefOr[Any], Boolean])
       ] = js.undefined
+    
+    var matchBase: js.UndefOr[Boolean] = js.undefined
+    
+    var nonull: js.UndefOr[Boolean] = js.undefined
     
     var prefixBase: js.UndefOr[Boolean] = js.undefined
     
@@ -45,6 +47,14 @@ object mod extends Shortcut {
       inline def setFilterFunction2(value: (/* filepath */ js.UndefOr[String], /* options */ js.UndefOr[Any]) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      
+      inline def setMatchBase(value: Boolean): Self = StObject.set(x, "matchBase", value.asInstanceOf[js.Any])
+      
+      inline def setMatchBaseUndefined: Self = StObject.set(x, "matchBase", js.undefined)
+      
+      inline def setNonull(value: Boolean): Self = StObject.set(x, "nonull", value.asInstanceOf[js.Any])
+      
+      inline def setNonullUndefined: Self = StObject.set(x, "nonull", js.undefined)
       
       inline def setPrefixBase(value: Boolean): Self = StObject.set(x, "prefixBase", value.asInstanceOf[js.Any])
       
@@ -97,13 +107,29 @@ object mod extends Shortcut {
       * Tests pattern(s) against against one or more file paths and returns true if any files were matched, otherwise false.
       */
     def isMatch(patterns: String, filepaths: String): Boolean = js.native
-    def isMatch(patterns: String, filepaths: String, options: typings.minimatch.mod.IOptions): Boolean = js.native
+    def isMatch(
+      patterns: String,
+      filepaths: String,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify minimatch.IOptions */ Any
+    ): Boolean = js.native
     def isMatch(patterns: String, filepaths: js.Array[String]): Boolean = js.native
-    def isMatch(patterns: String, filepaths: js.Array[String], options: typings.minimatch.mod.IOptions): Boolean = js.native
+    def isMatch(
+      patterns: String,
+      filepaths: js.Array[String],
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify minimatch.IOptions */ Any
+    ): Boolean = js.native
     def isMatch(patterns: js.Array[String], filepaths: String): Boolean = js.native
-    def isMatch(patterns: js.Array[String], filepaths: String, options: typings.minimatch.mod.IOptions): Boolean = js.native
+    def isMatch(
+      patterns: js.Array[String],
+      filepaths: String,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify minimatch.IOptions */ Any
+    ): Boolean = js.native
     def isMatch(patterns: js.Array[String], filepaths: js.Array[String]): Boolean = js.native
-    def isMatch(patterns: js.Array[String], filepaths: js.Array[String], options: typings.minimatch.mod.IOptions): Boolean = js.native
+    def isMatch(
+      patterns: js.Array[String],
+      filepaths: js.Array[String],
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify minimatch.IOptions */ Any
+    ): Boolean = js.native
     
     /**
       * Given a set of source file paths, returns an array of src-dest file mapping objects
@@ -135,13 +161,29 @@ object mod extends Shortcut {
       * Returns a uniqued array of all file paths that match any of the specified globbing patterns.
       */
     def `match`(patterns: String, filepaths: String): js.Array[String] = js.native
-    def `match`(patterns: String, filepaths: String, options: typings.minimatch.mod.IOptions): js.Array[String] = js.native
+    def `match`(
+      patterns: String,
+      filepaths: String,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify minimatch.IOptions */ Any
+    ): js.Array[String] = js.native
     def `match`(patterns: String, filepaths: js.Array[String]): js.Array[String] = js.native
-    def `match`(patterns: String, filepaths: js.Array[String], options: typings.minimatch.mod.IOptions): js.Array[String] = js.native
+    def `match`(
+      patterns: String,
+      filepaths: js.Array[String],
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify minimatch.IOptions */ Any
+    ): js.Array[String] = js.native
     def `match`(patterns: js.Array[String], filepaths: String): js.Array[String] = js.native
-    def `match`(patterns: js.Array[String], filepaths: String, options: typings.minimatch.mod.IOptions): js.Array[String] = js.native
+    def `match`(
+      patterns: js.Array[String],
+      filepaths: String,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify minimatch.IOptions */ Any
+    ): js.Array[String] = js.native
     def `match`(patterns: js.Array[String], filepaths: js.Array[String]): js.Array[String] = js.native
-    def `match`(patterns: js.Array[String], filepaths: js.Array[String], options: typings.minimatch.mod.IOptions): js.Array[String] = js.native
+    def `match`(
+      patterns: js.Array[String],
+      filepaths: js.Array[String],
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify minimatch.IOptions */ Any
+    ): js.Array[String] = js.native
   }
   
   trait MappingOptions

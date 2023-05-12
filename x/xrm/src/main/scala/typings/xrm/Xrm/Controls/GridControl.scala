@@ -1,6 +1,7 @@
 package typings.xrm.Xrm.Controls
 
 import typings.xrm.Xrm.Events.GridControl.LoadEventHandler
+import typings.xrm.XrmEnum.GridClient
 import typings.xrm.XrmEnum.GridControlContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,6 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @see {@link Control}
   */
+@js.native
 trait GridControl
   extends StObject
      with Control
@@ -18,95 +20,75 @@ trait GridControl
   
   /**
     * Use this method to add event handlers to the GridControl's OnLoad event.
-    *
     * @param handler The event handler.
     */
-  def addOnLoad(handler: LoadEventHandler): Unit
+  def addOnLoad(handler: LoadEventHandler): Unit = js.native
   
   /**
     * This method returns context information about the GridControl.
-    *
     * @returns The context type.
     */
-  def getContextType(): GridControlContext
+  def getContextType(): GridControlContext = js.native
   
   /**
-    * Use this method to get the logical name of the entity data displayed in the grid.
-    *
-    * @returns The entity name.
+    * Gets the logical name of the table data displayed in the grid.
+    * @returns The logical name of the table data displayed in the grid.
     */
-  def getEntityName(): String
+  def getEntityName(): String = js.native
   
   /**
-    * Use this method to get access to the Grid available in the GridControl.
-    * @returns The grid.
+    * Gets the FetchXML query that represents the current data, including filtered and sorted data, in the grid control.
+    * @returns The FetchXML query.
     */
-  def getGrid(): Grid
+  def getFetchXml(): String = js.native
+  
+  /**
+    * Get access to the Grid available in the GridControl (gridContext).
+    * @returns The Grid object.
+    */
+  def getGrid(): Grid = js.native
+  
+  /**
+    * Gets information about the relationship used to filter the subgrid.
+    * @returns A relationship object.
+    */
+  def getRelationship(): GridRelationship = js.native
+  
+  /**
+    * Gets the URL of the current grid control.
+    * @param client Indicates the client type.
+    * @returns Gets the URL of the current grid control.
+    */
+  def getUrl(): String = js.native
+  def getUrl(client: GridClient): String = js.native
   
   /**
     * Use this method to get access to the ViewSelector available for the GridControl when it is configured to display views.
     * @returns The view selector.
     */
-  def getViewSelector(): ViewSelector
+  def getViewSelector(): ViewSelector = js.native
+  
+  /**
+    * Displays the associated grid for the grid.
+    * @remarks This method does nothing if the grid is not filtered based on a relationship.
+    */
+  def openRelatedGrid(): Unit = js.native
   
   /**
     * Refreshes the sub grid.
     * @remarks Not available during the "on load" event of the form.
     */
-  def refresh(): Unit
+  def refresh(): Unit = js.native
   
   /**
     * Refreshes the sub grid ribbon.
-    * @see {@link https://docs.microsoft.com/it-it/powerapps/developer/model-driven-apps/clientapi/reference/grids/gridcontrol/refreshribbon External Link: refreshRibbon (Client API reference)}
+    * @see {@link https://learn.microsoft.com/it-it/power-apps/developer/model-driven-apps/clientapi/reference/grids/gridcontrol/refreshribbon External Link: refreshRibbon (Client API reference)}
     */
-  def refreshRibbon(): Unit
+  def refreshRibbon(): Unit = js.native
   
   /**
     * Use this method to remove event handlers from the GridControl's OnLoad event.
     * @param handler The handler.
     */
-  def removeOnLoad(handler: js.Function0[Unit]): Unit
-}
-object GridControl {
-  
-  inline def apply(
-    addOnLoad: LoadEventHandler => Unit,
-    getContextType: () => GridControlContext,
-    getControlType: () => ControlType | String,
-    getEntityName: () => String,
-    getGrid: () => Grid,
-    getLabel: () => String,
-    getName: () => String,
-    getParent: () => Section,
-    getViewSelector: () => ViewSelector,
-    getVisible: () => Boolean,
-    refresh: () => Unit,
-    refreshRibbon: () => Unit,
-    removeOnLoad: js.Function0[Unit] => Unit,
-    setLabel: String => Unit,
-    setVisible: Boolean => Unit
-  ): GridControl = {
-    val __obj = js.Dynamic.literal(addOnLoad = js.Any.fromFunction1(addOnLoad), getContextType = js.Any.fromFunction0(getContextType), getControlType = js.Any.fromFunction0(getControlType), getEntityName = js.Any.fromFunction0(getEntityName), getGrid = js.Any.fromFunction0(getGrid), getLabel = js.Any.fromFunction0(getLabel), getName = js.Any.fromFunction0(getName), getParent = js.Any.fromFunction0(getParent), getViewSelector = js.Any.fromFunction0(getViewSelector), getVisible = js.Any.fromFunction0(getVisible), refresh = js.Any.fromFunction0(refresh), refreshRibbon = js.Any.fromFunction0(refreshRibbon), removeOnLoad = js.Any.fromFunction1(removeOnLoad), setLabel = js.Any.fromFunction1(setLabel), setVisible = js.Any.fromFunction1(setVisible))
-    __obj.asInstanceOf[GridControl]
-  }
-  
-  @scala.inline
-  implicit open class MutableBuilder[Self <: GridControl] (val x: Self) extends AnyVal {
-    
-    inline def setAddOnLoad(value: LoadEventHandler => Unit): Self = StObject.set(x, "addOnLoad", js.Any.fromFunction1(value))
-    
-    inline def setGetContextType(value: () => GridControlContext): Self = StObject.set(x, "getContextType", js.Any.fromFunction0(value))
-    
-    inline def setGetEntityName(value: () => String): Self = StObject.set(x, "getEntityName", js.Any.fromFunction0(value))
-    
-    inline def setGetGrid(value: () => Grid): Self = StObject.set(x, "getGrid", js.Any.fromFunction0(value))
-    
-    inline def setGetViewSelector(value: () => ViewSelector): Self = StObject.set(x, "getViewSelector", js.Any.fromFunction0(value))
-    
-    inline def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
-    
-    inline def setRefreshRibbon(value: () => Unit): Self = StObject.set(x, "refreshRibbon", js.Any.fromFunction0(value))
-    
-    inline def setRemoveOnLoad(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "removeOnLoad", js.Any.fromFunction1(value))
-  }
+  def removeOnLoad(handler: js.Function0[Unit]): Unit = js.native
 }

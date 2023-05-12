@@ -18,7 +18,7 @@ object camerasFreeCameraMod {
       * Instantiates a Free Camera.
       * This represents a free type of camera. It can be useful in First Person Shooter game for instance.
       * Please consider using the new UniversalCamera instead as it adds more functionality like touch to this camera.
-      * @see https://doc.babylonjs.com/features/cameras#universal-camera
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/cameras/camera_introduction#universal-camera
       * @param name Define the name of the camera in the scene
       * @param position Define the start position of the camera in the scene
       * @param scene Define the scene the camera belongs to
@@ -84,7 +84,7 @@ object camerasFreeCameraMod {
     /**
       * Define the collision ellipsoid of the camera.
       * This is helpful to simulate a camera body like the player body around the camera
-      * @see https://doc.babylonjs.com/babylon101/cameras,_mesh_collisions_and_gravity#arcrotatecamera
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/cameras/camera_collisions#arcrotatecamera
       */
     var ellipsoid: Vector3 = js.native
     
@@ -126,6 +126,12 @@ object camerasFreeCameraMod {
     def keysRight_=(value: js.Array[Double]): Unit = js.native
     
     /**
+      * Gets or Set the list of keyboard keys used to control the down rotation move of the camera.
+      */
+    def keysRotateDown: js.Array[Double] = js.native
+    def keysRotateDown_=(value: js.Array[Double]): Unit = js.native
+    
+    /**
       * Gets or Set the list of keyboard keys used to control the left rotation move of the camera.
       */
     def keysRotateLeft: js.Array[Double] = js.native
@@ -136,6 +142,12 @@ object camerasFreeCameraMod {
       */
     def keysRotateRight: js.Array[Double] = js.native
     def keysRotateRight_=(value: js.Array[Double]): Unit = js.native
+    
+    /**
+      * Gets or Set the list of keyboard keys used to control the up rotation move of the camera.
+      */
+    def keysRotateUp: js.Array[Double] = js.native
+    def keysRotateUp_=(value: js.Array[Double]): Unit = js.native
     
     /**
       * Gets or Set the list of keyboard keys used to control the forward move of the camera.

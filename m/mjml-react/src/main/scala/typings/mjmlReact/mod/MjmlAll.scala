@@ -13,7 +13,7 @@ open class MjmlAll protected ()
   def this(props: Dictkey) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: Dictkey, context: Any) = this()
 }

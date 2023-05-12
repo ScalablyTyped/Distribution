@@ -1,10 +1,7 @@
 package typings.vscodeLanguageserverProtocol.libCommonProtocolMod
 
+import typings.vscodeJsonrpc.libCommonConnectionMod.TraceValues
 import typings.vscodeLanguageserverProtocol.anon.Name
-import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.compact
-import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.messages
-import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.off
-import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.verbose
 import typings.vscodeLanguageserverTypes.mod.DocumentUri
 import typings.vscodeLanguageserverTypes.mod.LSPAny
 import typings.vscodeLanguageserverTypes.mod.integer
@@ -74,7 +71,7 @@ trait _InitializeParams
   /**
     * The initial trace setting. If omitted trace is disabled ('off').
     */
-  var trace: js.UndefOr[off | messages | compact | verbose] = js.undefined
+  var trace: js.UndefOr[TraceValues] = js.undefined
 }
 object _InitializeParams {
   
@@ -114,7 +111,7 @@ object _InitializeParams {
     
     inline def setRootUriNull: Self = StObject.set(x, "rootUri", null)
     
-    inline def setTrace(value: off | messages | compact | verbose): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
+    inline def setTrace(value: TraceValues): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
     
     inline def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
   }

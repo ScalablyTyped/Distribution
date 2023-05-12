@@ -17,7 +17,7 @@ trait UpdateFunctionCodeRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The name of the Lambda function.  Name formats     Function name - my-function.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:my-function.    Partial ARN - 123456789012:function:my-function.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
+    * The name of the Lambda function.  Name formats     Function name – my-function.    Function ARN – arn:aws:lambda:us-west-2:123456789012:function:my-function.    Partial ARN – 123456789012:function:my-function.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
     */
   var FunctionName: typings.awsSdk.clientsLambdaMod.FunctionName
   
@@ -32,7 +32,7 @@ trait UpdateFunctionCodeRequest extends StObject {
   var Publish: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Only update the function if the revision ID matches the ID that's specified. Use this option to avoid modifying a function that has changed since you last read it.
+    * Update the function only if the revision ID matches the ID that's specified. Use this option to avoid modifying a function that has changed since you last read it.
     */
   var RevisionId: js.UndefOr[String] = js.undefined
   
@@ -52,7 +52,7 @@ trait UpdateFunctionCodeRequest extends StObject {
   var S3ObjectVersion: js.UndefOr[typings.awsSdk.clientsLambdaMod.S3ObjectVersion] = js.undefined
   
   /**
-    * The base64-encoded contents of the deployment package. Amazon Web Services SDK and Amazon Web Services CLI clients handle the encoding for you. Use only with a function defined with a .zip file archive deployment package.
+    * The base64-encoded contents of the deployment package. Amazon Web Services SDK and CLI clients handle the encoding for you. Use only with a function defined with a .zip file archive deployment package.
     */
   var ZipFile: js.UndefOr[_Blob] = js.undefined
 }

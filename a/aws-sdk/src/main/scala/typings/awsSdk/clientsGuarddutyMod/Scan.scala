@@ -67,12 +67,17 @@ trait Scan extends StObject {
   var ScanStatus: js.UndefOr[typings.awsSdk.clientsGuarddutyMod.ScanStatus] = js.undefined
   
   /**
+    * Specifies the scan type that invoked the malware scan.
+    */
+  var ScanType: js.UndefOr[typings.awsSdk.clientsGuarddutyMod.ScanType] = js.undefined
+  
+  /**
     * Represents total bytes that were scanned.
     */
   var TotalBytes: js.UndefOr[PositiveLong] = js.undefined
   
   /**
-    * Represents the reason the scan was triggered.
+    * Specifies the reason why the scan was initiated.
     */
   var TriggerDetails: js.UndefOr[typings.awsSdk.clientsGuarddutyMod.TriggerDetails] = js.undefined
 }
@@ -135,6 +140,10 @@ object Scan {
     inline def setScanStatus(value: ScanStatus): Self = StObject.set(x, "ScanStatus", value.asInstanceOf[js.Any])
     
     inline def setScanStatusUndefined: Self = StObject.set(x, "ScanStatus", js.undefined)
+    
+    inline def setScanType(value: ScanType): Self = StObject.set(x, "ScanType", value.asInstanceOf[js.Any])
+    
+    inline def setScanTypeUndefined: Self = StObject.set(x, "ScanType", js.undefined)
     
     inline def setTotalBytes(value: PositiveLong): Self = StObject.set(x, "TotalBytes", value.asInstanceOf[js.Any])
     

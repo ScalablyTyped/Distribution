@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JQueryStatic extends StObject {
   
   /**
-    * @desc Set or get a key's value
+    * @description Set or get a key's value
     * @param key Key to set.
     * @param value Value to set for key. If ommited, current value for key is returned.
     * @param options Not implemented.

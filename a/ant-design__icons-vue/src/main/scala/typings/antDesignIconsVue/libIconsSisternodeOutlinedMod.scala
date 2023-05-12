@@ -16,7 +16,7 @@ object libIconsSisternodeOutlinedMod extends Shortcut {
   @js.native
   trait SisternodeOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_SisternodeOutlinedIconType: String = js.native

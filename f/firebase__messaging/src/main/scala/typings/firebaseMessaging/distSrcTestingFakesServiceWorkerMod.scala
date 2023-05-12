@@ -27,6 +27,18 @@ object distSrcTestingFakesServiceWorkerMod {
     def this(`type`: String) = this()
     def this(`type`: String, options: EventInit) = this()
     
+    @JSName("AT_TARGET")
+    var AT_TARGET_FakeEvent: Double = js.native
+    
+    @JSName("BUBBLING_PHASE")
+    var BUBBLING_PHASE_FakeEvent: Double = js.native
+    
+    @JSName("CAPTURING_PHASE")
+    var CAPTURING_PHASE_FakeEvent: Double = js.native
+    
+    @JSName("NONE")
+    var NONE_FakeEvent: Double = js.native
+    
     @JSName("currentTarget")
     var currentTarget_FakeEvent: Null = js.native
     
@@ -106,8 +118,6 @@ object distSrcTestingFakesServiceWorkerMod {
     def removeEventListener(): Unit = js.native
     
     def showNotification(): js.Promise[Unit] = js.native
-    
-    var sync: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SyncManager */ Any = js.native
     
     @JSName("waiting")
     var waiting_FakeServiceWorkerRegistration: Null = js.native

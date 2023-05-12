@@ -1,14 +1,11 @@
 package typings.fbt
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.fbt.fbtBooleans.`true`
 import typings.fbt.fbtStrings.ifMany
 import typings.fbt.fbtStrings.no
 import typings.fbt.fbtStrings.yes
 import typings.fbt.mod.FbtHookRegistrations
-import typings.fbt.mod.GenderConst
 import typings.fbt.mod.IntlVariationsGender
-import typings.fbt.mod.PronounType
 import typings.fbt.mod.TranslationDict
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
@@ -16,6 +13,28 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
+  
+  trait `0` extends StObject {
+    
+    var children: js.UndefOr[String | js.Array[String]] = js.undefined
+  }
+  object `0` {
+    
+    inline def apply(): `0` = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[`0`]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
+      
+      inline def setChildren(value: String | js.Array[String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setChildrenVarargs(value: String*): Self = StObject.set(x, "children", js.Array(value*))
+    }
+  }
   
   trait Children extends StObject {
     
@@ -34,6 +53,28 @@ object anon {
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    }
+  }
+  
+  trait Fbt extends StObject {
+    
+    var fbt: Any
+    
+    var params: Any
+  }
+  object Fbt {
+    
+    inline def apply(fbt: Any, params: Any): Fbt = {
+      val __obj = js.Dynamic.literal(fbt = fbt.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Fbt]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fbt] (val x: Self) extends AnyVal {
+      
+      inline def setFbt(value: Any): Self = StObject.set(x, "fbt", value.asInstanceOf[js.Any])
+      
+      inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     }
   }
   
@@ -58,38 +99,6 @@ object anon {
       inline def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
       
       inline def setTranslations(value: TranslationDict): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  /* Inlined fbt.fbt.<global>.JSX.PropsWithChildren<fbt.fbt.FbtEnumProps> */
-  trait PropsWithChildrenFbtEnumP extends StObject {
-    
-    var children: js.UndefOr[ReactNode] = js.undefined
-    
-    var `enum-range`: js.Array[String] | StringDictionary[String]
-    
-    var value: String
-  }
-  object PropsWithChildrenFbtEnumP {
-    
-    inline def apply(`enum-range`: js.Array[String] | StringDictionary[String], value: String): PropsWithChildrenFbtEnumP = {
-      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("enum-range")(`enum-range`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PropsWithChildrenFbtEnumP]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: PropsWithChildrenFbtEnumP] (val x: Self) extends AnyVal {
-      
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      inline def `setEnum-range`(value: js.Array[String] | StringDictionary[String]): Self = StObject.set(x, "enum-range", value.asInstanceOf[js.Any])
-      
-      inline def `setEnum-rangeVarargs`(value: String*): Self = StObject.set(x, "enum-range", js.Array(value*))
-      
-      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -234,54 +243,6 @@ object anon {
     }
   }
   
-  /* Inlined fbt.fbt.<global>.JSX.PropsWithChildren<fbt.fbt.FbtPronounProps> */
-  trait PropsWithChildrenFbtProno extends StObject {
-    
-    /**
-      * Whether to capitalize the pronoun in the source string.
-      */
-    var capitalize: js.UndefOr[Boolean] = js.undefined
-    
-    var children: js.UndefOr[ReactNode] = js.undefined
-    
-    var gender: GenderConst
-    
-    /**
-      * Whether to elide the NOT_A_PERSON option in the text variations generated.
-      */
-    var human: js.UndefOr[Boolean] = js.undefined
-    
-    var `type`: PronounType
-  }
-  object PropsWithChildrenFbtProno {
-    
-    inline def apply(gender: GenderConst, `type`: PronounType): PropsWithChildrenFbtProno = {
-      val __obj = js.Dynamic.literal(gender = gender.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PropsWithChildrenFbtProno]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: PropsWithChildrenFbtProno] (val x: Self) extends AnyVal {
-      
-      inline def setCapitalize(value: Boolean): Self = StObject.set(x, "capitalize", value.asInstanceOf[js.Any])
-      
-      inline def setCapitalizeUndefined: Self = StObject.set(x, "capitalize", js.undefined)
-      
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      inline def setGender(value: GenderConst): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
-      
-      inline def setHuman(value: Boolean): Self = StObject.set(x, "human", value.asInstanceOf[js.Any])
-      
-      inline def setHumanUndefined: Self = StObject.set(x, "human", js.undefined)
-      
-      inline def setType(value: PronounType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
-  
   /* Inlined fbt.fbt.<global>.JSX.PropsWithChildren<fbt.fbt.FbtProps> */
   trait PropsWithChildrenFbtProps extends StObject {
     
@@ -364,28 +325,150 @@ object anon {
     }
   }
   
-  /* Inlined fbt.fbt.<global>.JSX.PropsWithChildren<fbt.fbt.FbtSameParamProps> */
-  trait PropsWithChildrenFbtSameP extends StObject {
+  /* Inlined fbt.fbt.<global>.JSX.PropsWithStringChild<fbt.fbt.FbtNameProps> */
+  trait PropsWithStringChildFbtNa extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.undefined
+    var children: js.UndefOr[String | js.Array[String]] = js.undefined
+    
+    var gender: IntlVariationsGender
     
     var name: String
   }
-  object PropsWithChildrenFbtSameP {
+  object PropsWithStringChildFbtNa {
     
-    inline def apply(name: String): PropsWithChildrenFbtSameP = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PropsWithChildrenFbtSameP]
+    inline def apply(gender: IntlVariationsGender, name: String): PropsWithStringChildFbtNa = {
+      val __obj = js.Dynamic.literal(gender = gender.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PropsWithStringChildFbtNa]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: PropsWithChildrenFbtSameP] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: PropsWithStringChildFbtNa] (val x: Self) extends AnyVal {
       
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: String | js.Array[String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
+      inline def setChildrenVarargs(value: String*): Self = StObject.set(x, "children", js.Array(value*))
+      
+      inline def setGender(value: IntlVariationsGender): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
+      
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined fbt.fbt.<global>.JSX.PropsWithStringChild<fbt.fbt.FbtParamProps> */
+  trait PropsWithStringChildFbtPa extends StObject {
+    
+    var children: js.UndefOr[String | js.Array[String]] = js.undefined
+    
+    /**
+      * `IntlVariations.GENDER_*` Pass the gender of the parameter for correctly variated text.
+      */
+    var gender: js.UndefOr[IntlVariationsGender] = js.undefined
+    
+    var name: String
+    
+    /**
+      * Passing a value of type `number` into the `number` option uses that value as the input for which we determine the [CLDR plural value](http://cldr.unicode.org/index/cldr-spec/plural-rules).
+      * You can pass `true` to simply use the parameter value (the same value that replaces the token).
+      */
+    var number: js.UndefOr[Double | `true`] = js.undefined
+  }
+  object PropsWithStringChildFbtPa {
+    
+    inline def apply(name: String): PropsWithStringChildFbtPa = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PropsWithStringChildFbtPa]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropsWithStringChildFbtPa] (val x: Self) extends AnyVal {
+      
+      inline def setChildren(value: String | js.Array[String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setChildrenVarargs(value: String*): Self = StObject.set(x, "children", js.Array(value*))
+      
+      inline def setGender(value: IntlVariationsGender): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
+      
+      inline def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNumber(value: Double | `true`): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      
+      inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+    }
+  }
+  
+  /* Inlined fbt.fbt.<global>.JSX.PropsWithStringChild<fbt.fbt.FbtPluralProps> */
+  trait PropsWithStringChildFbtPl extends StObject {
+    
+    var children: js.UndefOr[String | js.Array[String]] = js.undefined
+    
+    var count: Double
+    
+    /**
+      * Represents the plural form of the string in English. Default is `{singular} + 's'`
+      */
+    var many: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Name of the token where count shows up. (Default: `"number"`)
+      */
+    var name: js.UndefOr[String] = js.undefined
+    
+    /**
+      * `"yes"|"no"|"ifMany"`: Whether to show the `{number}` in the string.
+      *
+      * > Note that the singular phrase never has a token, but inlines to `1`.
+      * ? This is to account for languages like Hebrew for which showing the actual number isn't appropriate
+      *
+      *  - "no": (DEFAULT) Don't show the count
+      *  - "ifMany": Show the count only in plural case
+      *  - "yes": Show the count in all cases
+      */
+    var showCount: js.UndefOr[yes | no | ifMany] = js.undefined
+    
+    /**
+      * For overriding the displayed number
+      */
+    var value: js.UndefOr[Any] = js.undefined
+  }
+  object PropsWithStringChildFbtPl {
+    
+    inline def apply(count: Double): PropsWithStringChildFbtPl = {
+      val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PropsWithStringChildFbtPl]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropsWithStringChildFbtPl] (val x: Self) extends AnyVal {
+      
+      inline def setChildren(value: String | js.Array[String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setChildrenVarargs(value: String*): Self = StObject.set(x, "children", js.Array(value*))
+      
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      
+      inline def setMany(value: String): Self = StObject.set(x, "many", value.asInstanceOf[js.Any])
+      
+      inline def setManyUndefined: Self = StObject.set(x, "many", js.undefined)
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setShowCount(value: yes | no | ifMany): Self = StObject.set(x, "showCount", value.asInstanceOf[js.Any])
+      
+      inline def setShowCountUndefined: Self = StObject.set(x, "showCount", js.undefined)
+      
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   

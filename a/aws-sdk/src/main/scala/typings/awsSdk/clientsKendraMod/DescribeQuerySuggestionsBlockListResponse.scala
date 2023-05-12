@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeQuerySuggestionsBlockListResponse extends StObject {
   
   /**
-    * The date-time a block list for query suggestions was created.
+    * The Unix timestamp when a block list for query suggestions was created.
     */
   var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
@@ -62,7 +62,7 @@ trait DescribeQuerySuggestionsBlockListResponse extends StObject {
   var Status: js.UndefOr[QuerySuggestionsBlockListStatus] = js.undefined
   
   /**
-    * The date-time a block list for query suggestions was last updated.
+    * The Unix timestamp when a block list for query suggestions was last updated.
     */
   var UpdatedAt: js.UndefOr[js.Date] = js.undefined
 }

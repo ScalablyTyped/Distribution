@@ -7,13 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ExcludePage extends StObject {
   
-  /** Exclude attributes from the API response to improve performance */
+  /** @description Exclude attributes from the API response to improve performance */
   var exclude: js.UndefOr[js.Array[repositories]] = js.undefined
   
-  /** Page number of the results to fetch. */
   var page: js.UndefOr[Double] = js.undefined
   
-  /** The number of results per page (max 100). */
   var per_page: js.UndefOr[Double] = js.undefined
 }
 object ExcludePage {

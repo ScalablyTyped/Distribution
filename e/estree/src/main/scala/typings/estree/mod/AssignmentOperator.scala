@@ -18,11 +18,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.estree.estreeStrings.VerticallineEqualssign
   - typings.estree.estreeStrings.`^Equalssign`
   - typings.estree.estreeStrings.AmpersandEqualssign
+  - typings.estree.estreeStrings.VerticallineVerticallineEqualssign
+  - typings.estree.estreeStrings.AmpersandAmpersandEqualssign
+  - typings.estree.estreeStrings.QuestionmarkQuestionmarkEqualssign
 */
 trait AssignmentOperator extends StObject
 object AssignmentOperator {
   
   inline def `-Equalssign`: typings.estree.estreeStrings.`-Equalssign` = "-=".asInstanceOf[typings.estree.estreeStrings.`-Equalssign`]
+  
+  inline def AmpersandAmpersandEqualssign: typings.estree.estreeStrings.AmpersandAmpersandEqualssign = "&&=".asInstanceOf[typings.estree.estreeStrings.AmpersandAmpersandEqualssign]
   
   inline def AmpersandEqualssign: typings.estree.estreeStrings.AmpersandEqualssign = "&=".asInstanceOf[typings.estree.estreeStrings.AmpersandEqualssign]
   
@@ -42,9 +47,13 @@ object AssignmentOperator {
   
   inline def PlussignEqualssign: typings.estree.estreeStrings.PlussignEqualssign = "+=".asInstanceOf[typings.estree.estreeStrings.PlussignEqualssign]
   
+  inline def QuestionmarkQuestionmarkEqualssign: typings.estree.estreeStrings.QuestionmarkQuestionmarkEqualssign = "??=".asInstanceOf[typings.estree.estreeStrings.QuestionmarkQuestionmarkEqualssign]
+  
   inline def SlashEqualssign: typings.estree.estreeStrings.SlashEqualssign = "/=".asInstanceOf[typings.estree.estreeStrings.SlashEqualssign]
   
   inline def VerticallineEqualssign: typings.estree.estreeStrings.VerticallineEqualssign = "|=".asInstanceOf[typings.estree.estreeStrings.VerticallineEqualssign]
+  
+  inline def VerticallineVerticallineEqualssign: typings.estree.estreeStrings.VerticallineVerticallineEqualssign = "||=".asInstanceOf[typings.estree.estreeStrings.VerticallineVerticallineEqualssign]
   
   inline def `^Equalssign`: typings.estree.estreeStrings.`^Equalssign` = "^=".asInstanceOf[typings.estree.estreeStrings.`^Equalssign`]
 }

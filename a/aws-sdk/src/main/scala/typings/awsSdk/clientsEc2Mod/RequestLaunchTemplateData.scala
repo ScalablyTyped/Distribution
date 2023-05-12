@@ -27,7 +27,7 @@ trait RequestLaunchTemplateData extends StObject {
   var CreditSpecification: js.UndefOr[CreditSpecificationRequest] = js.undefined
   
   /**
-    * Indicates whether to enable the instance for stop protection. For more information, see Stop Protection.
+    * Indicates whether to enable the instance for stop protection. For more information, see Stop protection in the Amazon Elastic Compute Cloud User Guide.
     */
   var DisableApiStop: js.UndefOr[Boolean] = js.undefined
   
@@ -67,7 +67,7 @@ trait RequestLaunchTemplateData extends StObject {
   var IamInstanceProfile: js.UndefOr[LaunchTemplateIamInstanceProfileSpecificationRequest] = js.undefined
   
   /**
-    * The ID of the AMI.
+    * The ID of the AMI. Alternatively, you can specify a Systems Manager parameter, which will resolve to an AMI ID on launch. Valid formats:    ami-17characters00000     resolve:ssm:parameter-name     resolve:ssm:parameter-name:version-number     resolve:ssm:parameter-name:label     resolve:ssm:public-parameter     Currently, EC2 Fleet and Spot Fleet do not support specifying a Systems Manager parameter. If the launch template will be used by an EC2 Fleet or Spot Fleet, you must specify the AMI ID.  For more information, see Use a Systems Manager parameter instead of an AMI ID in the Amazon Elastic Compute Cloud User Guide.
     */
   var ImageId: js.UndefOr[typings.awsSdk.clientsEc2Mod.ImageId] = js.undefined
   

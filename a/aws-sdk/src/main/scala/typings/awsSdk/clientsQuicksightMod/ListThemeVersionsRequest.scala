@@ -24,11 +24,11 @@ trait ListThemeVersionsRequest extends StObject {
   /**
     * The ID for the theme.
     */
-  var ThemeId: RestrictiveResourceId
+  var ThemeId: ShortRestrictiveResourceId
 }
 object ListThemeVersionsRequest {
   
-  inline def apply(AwsAccountId: AwsAccountId, ThemeId: RestrictiveResourceId): ListThemeVersionsRequest = {
+  inline def apply(AwsAccountId: AwsAccountId, ThemeId: ShortRestrictiveResourceId): ListThemeVersionsRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], ThemeId = ThemeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListThemeVersionsRequest]
   }
@@ -46,6 +46,6 @@ object ListThemeVersionsRequest {
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    inline def setThemeId(value: RestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
+    inline def setThemeId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
   }
 }

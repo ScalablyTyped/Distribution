@@ -48,6 +48,8 @@ open class LevelDetails protected () extends StObject {
   
   def edge: Double = js.native
   
+  var encryptedFragments: js.Array[Fragment] = js.native
+  
   var endCC: Double = js.native
   
   var endSN: Double = js.native
@@ -59,6 +61,8 @@ open class LevelDetails protected () extends StObject {
   var fragments: js.Array[Fragment] = js.native
   
   def hasProgramDateTime: Boolean = js.native
+  
+  var hasVariableRefs: Boolean = js.native
   
   var holdBack: Double = js.native
   
@@ -74,8 +78,6 @@ open class LevelDetails protected () extends StObject {
   
   var misses: Double = js.native
   
-  var needSidxRanges: Boolean = js.native
-  
   def partEnd: Double = js.native
   
   var partHoldBack: Double = js.native
@@ -83,6 +85,8 @@ open class LevelDetails protected () extends StObject {
   var partList: js.Array[Part] | Null = js.native
   
   var partTarget: Double = js.native
+  
+  var playlistParsingError: js.Error | Null = js.native
   
   var preloadHint: js.UndefOr[AttrList] = js.native
   
@@ -112,6 +116,8 @@ open class LevelDetails protected () extends StObject {
   var updated: Boolean = js.native
   
   var url: String = js.native
+  
+  var variableList: VariableMap | Null = js.native
   
   var version: Double | Null = js.native
 }

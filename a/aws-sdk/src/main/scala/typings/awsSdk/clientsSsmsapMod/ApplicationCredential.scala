@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ApplicationCredential extends StObject {
   
   /**
-    * 
+    * The type of the application credentials. 
     */
   var CredentialType: typings.awsSdk.clientsSsmsapMod.CredentialType
   
   /**
-    * 
+    * The name of the SAP HANA database.
     */
   var DatabaseName: typings.awsSdk.clientsSsmsapMod.DatabaseName
   
   /**
-    * 
+    * The secret ID created in AWS Secrets Manager to store the credentials of the SAP application. 
     */
   var SecretId: typings.awsSdk.clientsSsmsapMod.SecretId
 }

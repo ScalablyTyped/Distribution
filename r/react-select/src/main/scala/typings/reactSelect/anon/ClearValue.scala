@@ -61,6 +61,51 @@ trait ClearValue[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option]
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: Any
   ): String = js.native
   
+  @JSName("getClassNames")
+  def getClassNames_clearIndicator(key: clearIndicator, props: ClearIndicatorProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+  @JSName("getClassNames")
+  def getClassNames_container(key: container, props: ContainerProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+  @JSName("getClassNames")
+  def getClassNames_control(key: control, props: ControlProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+  @JSName("getClassNames")
+  def getClassNames_dropdownIndicator(key: dropdownIndicator, props: DropdownIndicatorProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+  @JSName("getClassNames")
+  def getClassNames_group(key: group, props: GroupProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+  @JSName("getClassNames")
+  def getClassNames_groupHeading(key: groupHeading, props: GroupHeadingProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+  @JSName("getClassNames")
+  def getClassNames_indicatorSeparator(key: indicatorSeparator, props: IndicatorSeparatorProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+  @JSName("getClassNames")
+  def getClassNames_indicatorsContainer(key: indicatorsContainer, props: IndicatorsContainerProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+  @JSName("getClassNames")
+  def getClassNames_input(key: input, props: InputProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+  @JSName("getClassNames")
+  def getClassNames_loadingIndicator(key: loadingIndicator, props: LoadingIndicatorProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+  @JSName("getClassNames")
+  def getClassNames_loadingMessage(key: loadingMessage, props: NoticeProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+  @JSName("getClassNames")
+  def getClassNames_menu(key: menu, props: MenuProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+  @JSName("getClassNames")
+  def getClassNames_menuList(key: menuList, props: MenuListProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+  @JSName("getClassNames")
+  def getClassNames_menuPortal(key: menuPortal, props: PortalStyleArgs): js.UndefOr[String] = js.native
+  @JSName("getClassNames")
+  def getClassNames_multiValue(key: multiValue, props: MultiValueProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+  @JSName("getClassNames")
+  def getClassNames_multiValueLabel(key: multiValueLabel, props: MultiValueProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+  @JSName("getClassNames")
+  def getClassNames_multiValueRemove(key: multiValueRemove, props: MultiValueProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+  @JSName("getClassNames")
+  def getClassNames_noOptionsMessage(key: noOptionsMessage, props: NoticeProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+  @JSName("getClassNames")
+  def getClassNames_option(key: option, props: OptionProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+  @JSName("getClassNames")
+  def getClassNames_placeholder(key: placeholder, props: PlaceholderProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+  @JSName("getClassNames")
+  def getClassNames_singleValue(key: singleValue, props: SingleValueProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+  @JSName("getClassNames")
+  def getClassNames_valueContainer(key: valueContainer, props: ValueContainerProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+  
   @JSName("getStyles")
   def getStyles_clearIndicator(key: clearIndicator, props: ClearIndicatorProps[Option, IsMulti, Group]): CSSObjectWithLabel = js.native
   @JSName("getStyles")

@@ -74,6 +74,10 @@ object floatingUiCoreStrings {
   inline def left: left = "left".asInstanceOf[left]
   
   @js.native
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
+  
+  @js.native
   sealed trait reference
     extends StObject
        with ElementContext

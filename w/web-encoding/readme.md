@@ -1,7 +1,7 @@
 
 # Scala.js typings for web-encoding
 
-Typings are for version 1.0.4
+Typings are for version 1.1.5
 
 ## Library description:
 TextEncoder and TextDecoder APIs from Encoding Standard APIs in a universal package
@@ -10,10 +10,10 @@ TextEncoder and TextDecoder APIs from Encoding Standard APIs in a universal pack
 | ------------------ | :-------------: |
 | Full name          | web-encoding |
 | Keywords           | TextEncoder, TextDecoder |
-| # releases         | 10 |
-| # dependents       | 5 |
-| # downloads        | 508468 |
-| # stars            | 0 |
+| # releases         | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 732689.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/gozala/web-encoding)

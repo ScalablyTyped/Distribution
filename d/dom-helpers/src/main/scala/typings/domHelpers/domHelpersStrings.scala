@@ -5012,10 +5012,23 @@ object domHelpersStrings {
   inline def captionSide: captionSide = "captionSide".asInstanceOf[captionSide]
   
   @js.native
+  sealed trait caret
+    extends StObject
+       with CamelProperty
+       with HyphenProperty
+  inline def caret: caret = "caret".asInstanceOf[caret]
+  
+  @js.native
   sealed trait `caret-color`
     extends StObject
        with HyphenProperty
   inline def `caret-color`: `caret-color` = "caret-color".asInstanceOf[`caret-color`]
+  
+  @js.native
+  sealed trait `caret-shape`
+    extends StObject
+       with HyphenProperty
+  inline def `caret-shape`: `caret-shape` = "caret-shape".asInstanceOf[`caret-shape`]
   
   @js.native
   sealed trait caretColor
@@ -5023,6 +5036,12 @@ object domHelpersStrings {
        with CamelProperty
        with Styles
   inline def caretColor: caretColor = "caretColor".asInstanceOf[caretColor]
+  
+  @js.native
+  sealed trait caretShape
+    extends StObject
+       with CamelProperty
+  inline def caretShape: caretShape = "caretShape".asInstanceOf[caretShape]
   
   @js.native
   sealed trait change extends StObject
@@ -5288,20 +5307,101 @@ object domHelpersStrings {
   inline def contain: contain = "contain".asInstanceOf[contain]
   
   @js.native
+  sealed trait `contain-intrinsic-block-size`
+    extends StObject
+       with HyphenProperty
+  inline def `contain-intrinsic-block-size`: `contain-intrinsic-block-size` = "contain-intrinsic-block-size".asInstanceOf[`contain-intrinsic-block-size`]
+  
+  @js.native
+  sealed trait `contain-intrinsic-height`
+    extends StObject
+       with HyphenProperty
+  inline def `contain-intrinsic-height`: `contain-intrinsic-height` = "contain-intrinsic-height".asInstanceOf[`contain-intrinsic-height`]
+  
+  @js.native
+  sealed trait `contain-intrinsic-inline-size`
+    extends StObject
+       with HyphenProperty
+  inline def `contain-intrinsic-inline-size`: `contain-intrinsic-inline-size` = "contain-intrinsic-inline-size".asInstanceOf[`contain-intrinsic-inline-size`]
+  
+  @js.native
+  sealed trait `contain-intrinsic-size`
+    extends StObject
+       with HyphenProperty
+  inline def `contain-intrinsic-size`: `contain-intrinsic-size` = "contain-intrinsic-size".asInstanceOf[`contain-intrinsic-size`]
+  
+  @js.native
+  sealed trait `contain-intrinsic-width`
+    extends StObject
+       with HyphenProperty
+  inline def `contain-intrinsic-width`: `contain-intrinsic-width` = "contain-intrinsic-width".asInstanceOf[`contain-intrinsic-width`]
+  
+  @js.native
+  sealed trait containIntrinsicBlockSize
+    extends StObject
+       with CamelProperty
+       with Styles
+  inline def containIntrinsicBlockSize: containIntrinsicBlockSize = "containIntrinsicBlockSize".asInstanceOf[containIntrinsicBlockSize]
+  
+  @js.native
+  sealed trait containIntrinsicHeight
+    extends StObject
+       with CamelProperty
+       with Styles
+  inline def containIntrinsicHeight: containIntrinsicHeight = "containIntrinsicHeight".asInstanceOf[containIntrinsicHeight]
+  
+  @js.native
+  sealed trait containIntrinsicInlineSize
+    extends StObject
+       with CamelProperty
+       with Styles
+  inline def containIntrinsicInlineSize: containIntrinsicInlineSize = "containIntrinsicInlineSize".asInstanceOf[containIntrinsicInlineSize]
+  
+  @js.native
+  sealed trait containIntrinsicSize
+    extends StObject
+       with CamelProperty
+       with Styles
+  inline def containIntrinsicSize: containIntrinsicSize = "containIntrinsicSize".asInstanceOf[containIntrinsicSize]
+  
+  @js.native
+  sealed trait containIntrinsicWidth
+    extends StObject
+       with CamelProperty
+       with Styles
+  inline def containIntrinsicWidth: containIntrinsicWidth = "containIntrinsicWidth".asInstanceOf[containIntrinsicWidth]
+  
+  @js.native
   sealed trait container
     extends StObject
+       with CamelProperty
+       with HyphenProperty
        with Styles
   inline def container: container = "container".asInstanceOf[container]
   
   @js.native
+  sealed trait `container-name`
+    extends StObject
+       with HyphenProperty
+  inline def `container-name`: `container-name` = "container-name".asInstanceOf[`container-name`]
+  
+  @js.native
+  sealed trait `container-type`
+    extends StObject
+       with HyphenProperty
+  inline def `container-type`: `container-type` = "container-type".asInstanceOf[`container-type`]
+  
+  @js.native
   sealed trait containerName
     extends StObject
+       with CamelProperty
        with Styles
   inline def containerName: containerName = "containerName".asInstanceOf[containerName]
   
   @js.native
   sealed trait containerType
     extends StObject
+       with CamelProperty
        with Styles
   inline def containerType: containerType = "containerType".asInstanceOf[containerType]
   
@@ -5323,6 +5423,7 @@ object domHelpersStrings {
   sealed trait contentVisibility
     extends StObject
        with CamelProperty
+       with Styles
   inline def contentVisibility: contentVisibility = "contentVisibility".asInstanceOf[contentVisibility]
   
   @js.native
@@ -5703,6 +5804,12 @@ object domHelpersStrings {
   inline def `font-optical-sizing`: `font-optical-sizing` = "font-optical-sizing".asInstanceOf[`font-optical-sizing`]
   
   @js.native
+  sealed trait `font-palette`
+    extends StObject
+       with HyphenProperty
+  inline def `font-palette`: `font-palette` = "font-palette".asInstanceOf[`font-palette`]
+  
+  @js.native
   sealed trait `font-size`
     extends StObject
        with HyphenProperty
@@ -5761,6 +5868,12 @@ object domHelpersStrings {
     extends StObject
        with HyphenProperty
   inline def `font-variant-east-asian`: `font-variant-east-asian` = "font-variant-east-asian".asInstanceOf[`font-variant-east-asian`]
+  
+  @js.native
+  sealed trait `font-variant-emoji`
+    extends StObject
+       with HyphenProperty
+  inline def `font-variant-emoji`: `font-variant-emoji` = "font-variant-emoji".asInstanceOf[`font-variant-emoji`]
   
   @js.native
   sealed trait `font-variant-ligatures`
@@ -5829,6 +5942,7 @@ object domHelpersStrings {
   @js.native
   sealed trait fontPalette
     extends StObject
+       with CamelProperty
        with Styles
   inline def fontPalette: fontPalette = "fontPalette".asInstanceOf[fontPalette]
   
@@ -5900,6 +6014,12 @@ object domHelpersStrings {
        with CamelProperty
        with Styles
   inline def fontVariantEastAsian: fontVariantEastAsian = "fontVariantEastAsian".asInstanceOf[fontVariantEastAsian]
+  
+  @js.native
+  sealed trait fontVariantEmoji
+    extends StObject
+       with CamelProperty
+  inline def fontVariantEmoji: fontVariantEmoji = "fontVariantEmoji".asInstanceOf[fontVariantEmoji]
   
   @js.native
   sealed trait fontVariantLigatures
@@ -6240,11 +6360,23 @@ object domHelpersStrings {
   inline def `hyphenate-character`: `hyphenate-character` = "hyphenate-character".asInstanceOf[`hyphenate-character`]
   
   @js.native
+  sealed trait `hyphenate-limit-chars`
+    extends StObject
+       with HyphenProperty
+  inline def `hyphenate-limit-chars`: `hyphenate-limit-chars` = "hyphenate-limit-chars".asInstanceOf[`hyphenate-limit-chars`]
+  
+  @js.native
   sealed trait hyphenateCharacter
     extends StObject
        with CamelProperty
        with Styles
   inline def hyphenateCharacter: hyphenateCharacter = "hyphenateCharacter".asInstanceOf[hyphenateCharacter]
+  
+  @js.native
+  sealed trait hyphenateLimitChars
+    extends StObject
+       with CamelProperty
+  inline def hyphenateLimitChars: hyphenateLimitChars = "hyphenateLimitChars".asInstanceOf[hyphenateLimitChars]
   
   @js.native
   sealed trait hyphens
@@ -6737,6 +6869,12 @@ object domHelpersStrings {
   inline def `margin-top`: `margin-top` = "margin-top".asInstanceOf[`margin-top`]
   
   @js.native
+  sealed trait `margin-trim`
+    extends StObject
+       with HyphenProperty
+  inline def `margin-trim`: `margin-trim` = "margin-trim".asInstanceOf[`margin-trim`]
+  
+  @js.native
   sealed trait marginBlock
     extends StObject
        with CamelProperty
@@ -6805,6 +6943,12 @@ object domHelpersStrings {
        with CamelProperty
        with Styles
   inline def marginTop: marginTop = "marginTop".asInstanceOf[marginTop]
+  
+  @js.native
+  sealed trait marginTrim
+    extends StObject
+       with CamelProperty
+  inline def marginTrim: marginTrim = "marginTrim".asInstanceOf[marginTrim]
   
   @js.native
   sealed trait marker
@@ -7096,6 +7240,7 @@ object domHelpersStrings {
   sealed trait mathStyle
     extends StObject
        with CamelProperty
+       with Styles
   inline def mathStyle: mathStyle = "mathStyle".asInstanceOf[mathStyle]
   
   @js.native
@@ -7819,6 +7964,12 @@ object domHelpersStrings {
   inline def `offset-path`: `offset-path` = "offset-path".asInstanceOf[`offset-path`]
   
   @js.native
+  sealed trait `offset-position`
+    extends StObject
+       with HyphenProperty
+  inline def `offset-position`: `offset-position` = "offset-position".asInstanceOf[`offset-position`]
+  
+  @js.native
   sealed trait `offset-rotate`
     extends StObject
        with HyphenProperty
@@ -7885,6 +8036,12 @@ object domHelpersStrings {
        with CamelProperty
        with Styles
   inline def offsetPath: offsetPath = "offsetPath".asInstanceOf[offsetPath]
+  
+  @js.native
+  sealed trait offsetPosition
+    extends StObject
+       with CamelProperty
+  inline def offsetPosition: offsetPosition = "offsetPosition".asInstanceOf[offsetPosition]
   
   @js.native
   sealed trait offsetRotate
@@ -8294,6 +8451,13 @@ object domHelpersStrings {
        with CamelProperty
        with Styles
   inline def paddingTop: paddingTop = "paddingTop".asInstanceOf[paddingTop]
+  
+  @js.native
+  sealed trait page
+    extends StObject
+       with CamelProperty
+       with HyphenProperty
+  inline def page: page = "page".asInstanceOf[page]
   
   @js.native
   sealed trait `page-break-after`
@@ -8895,6 +9059,24 @@ object domHelpersStrings {
   inline def `scroll-snap-type-y`: `scroll-snap-type-y` = "scroll-snap-type-y".asInstanceOf[`scroll-snap-type-y`]
   
   @js.native
+  sealed trait `scroll-timeline`
+    extends StObject
+       with HyphenProperty
+  inline def `scroll-timeline`: `scroll-timeline` = "scroll-timeline".asInstanceOf[`scroll-timeline`]
+  
+  @js.native
+  sealed trait `scroll-timeline-axis`
+    extends StObject
+       with HyphenProperty
+  inline def `scroll-timeline-axis`: `scroll-timeline-axis` = "scroll-timeline-axis".asInstanceOf[`scroll-timeline-axis`]
+  
+  @js.native
+  sealed trait `scroll-timeline-name`
+    extends StObject
+       with HyphenProperty
+  inline def `scroll-timeline-name`: `scroll-timeline-name` = "scroll-timeline-name".asInstanceOf[`scroll-timeline-name`]
+  
+  @js.native
   sealed trait scrollBehavior
     extends StObject
        with CamelProperty
@@ -9141,6 +9323,24 @@ object domHelpersStrings {
     extends StObject
        with CamelProperty
   inline def scrollSnapTypeY: scrollSnapTypeY = "scrollSnapTypeY".asInstanceOf[scrollSnapTypeY]
+  
+  @js.native
+  sealed trait scrollTimeline
+    extends StObject
+       with CamelProperty
+  inline def scrollTimeline: scrollTimeline = "scrollTimeline".asInstanceOf[scrollTimeline]
+  
+  @js.native
+  sealed trait scrollTimelineAxis
+    extends StObject
+       with CamelProperty
+  inline def scrollTimelineAxis: scrollTimelineAxis = "scrollTimelineAxis".asInstanceOf[scrollTimelineAxis]
+  
+  @js.native
+  sealed trait scrollTimelineName
+    extends StObject
+       with CamelProperty
+  inline def scrollTimelineName: scrollTimelineName = "scrollTimelineName".asInstanceOf[scrollTimelineName]
   
   @js.native
   sealed trait `scrollbar-color`
@@ -10013,6 +10213,18 @@ object domHelpersStrings {
        with CamelProperty
        with Styles
   inline def verticalAlign: verticalAlign = "verticalAlign".asInstanceOf[verticalAlign]
+  
+  @js.native
+  sealed trait `view-transition-name`
+    extends StObject
+       with HyphenProperty
+  inline def `view-transition-name`: `view-transition-name` = "view-transition-name".asInstanceOf[`view-transition-name`]
+  
+  @js.native
+  sealed trait viewTransitionName
+    extends StObject
+       with CamelProperty
+  inline def viewTransitionName: viewTransitionName = "viewTransitionName".asInstanceOf[viewTransitionName]
   
   @js.native
   sealed trait visibility

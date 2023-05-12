@@ -1,6 +1,5 @@
 package typings.prismReactRenderer
 
-import typings.prismReactRenderer.mod.Language
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,136 +43,80 @@ object prismReactRendererStrings {
   inline def `900`: `900` = "900".asInstanceOf[`900`]
   
   @js.native
-  sealed trait actionscript
-    extends StObject
-       with Language
-  inline def actionscript: actionscript = "actionscript".asInstanceOf[actionscript]
+  sealed trait Array extends StObject
+  inline def Array: Array = "Array".asInstanceOf[Array]
   
   @js.native
-  sealed trait bash
-    extends StObject
-       with Language
-  inline def bash: bash = "bash".asInstanceOf[bash]
+  sealed trait Boolean extends StObject
+  inline def Boolean: Boolean = "Boolean".asInstanceOf[Boolean]
+  
+  @js.native
+  sealed trait Function extends StObject
+  inline def Function: Function = "Function".asInstanceOf[Function]
+  
+  @js.native
+  sealed trait Null extends StObject
+  inline def Null: Null = "Null".asInstanceOf[Null]
+  
+  @js.native
+  sealed trait Number extends StObject
+  inline def Number: Number = "Number".asInstanceOf[Number]
+  
+  @js.native
+  sealed trait RegExp extends StObject
+  inline def RegExp: RegExp = "RegExp".asInstanceOf[RegExp]
+  
+  @js.native
+  sealed trait String extends StObject
+  inline def String: String = "String".asInstanceOf[String]
+  
+  @js.native
+  sealed trait Undefined extends StObject
+  inline def Undefined: Undefined = "Undefined".asInstanceOf[Undefined]
+  
+  @js.native
+  sealed trait `after-highlight` extends StObject
+  inline def `after-highlight`: `after-highlight` = "after-highlight".asInstanceOf[`after-highlight`]
+  
+  @js.native
+  sealed trait `after-tokenize` extends StObject
+  inline def `after-tokenize`: `after-tokenize` = "after-tokenize".asInstanceOf[`after-tokenize`]
+  
+  @js.native
+  sealed trait `before-highlight` extends StObject
+  inline def `before-highlight`: `before-highlight` = "before-highlight".asInstanceOf[`before-highlight`]
+  
+  @js.native
+  sealed trait `before-highlightall` extends StObject
+  inline def `before-highlightall`: `before-highlightall` = "before-highlightall".asInstanceOf[`before-highlightall`]
+  
+  @js.native
+  sealed trait `before-insert` extends StObject
+  inline def `before-insert`: `before-insert` = "before-insert".asInstanceOf[`before-insert`]
+  
+  @js.native
+  sealed trait `before-sanity-check` extends StObject
+  inline def `before-sanity-check`: `before-sanity-check` = "before-sanity-check".asInstanceOf[`before-sanity-check`]
+  
+  @js.native
+  sealed trait `before-tokenize` extends StObject
+  inline def `before-tokenize`: `before-tokenize` = "before-tokenize".asInstanceOf[`before-tokenize`]
   
   @js.native
   sealed trait bold extends StObject
   inline def bold: bold = "bold".asInstanceOf[bold]
   
   @js.native
-  sealed trait c
-    extends StObject
-       with Language
-  inline def c: c = "c".asInstanceOf[c]
-  
-  @js.native
-  sealed trait clike
-    extends StObject
-       with Language
-  inline def clike: clike = "clike".asInstanceOf[clike]
-  
-  @js.native
-  sealed trait coffeescript
-    extends StObject
-       with Language
-  inline def coffeescript: coffeescript = "coffeescript".asInstanceOf[coffeescript]
-  
-  @js.native
-  sealed trait cpp
-    extends StObject
-       with Language
-  inline def cpp: cpp = "cpp".asInstanceOf[cpp]
-  
-  @js.native
-  sealed trait css
-    extends StObject
-       with Language
-  inline def css: css = "css".asInstanceOf[css]
-  
-  @js.native
-  sealed trait `css-extr`
-    extends StObject
-       with Language
-  inline def `css-extr`: `css-extr` = "css-extr".asInstanceOf[`css-extr`]
-  
-  @js.native
-  sealed trait diff
-    extends StObject
-       with Language
-  inline def diff: diff = "diff".asInstanceOf[diff]
-  
-  @js.native
-  sealed trait git
-    extends StObject
-       with Language
-  inline def git: git = "git".asInstanceOf[git]
-  
-  @js.native
-  sealed trait go
-    extends StObject
-       with Language
-  inline def go: go = "go".asInstanceOf[go]
-  
-  @js.native
-  sealed trait graphql
-    extends StObject
-       with Language
-  inline def graphql: graphql = "graphql".asInstanceOf[graphql]
-  
-  @js.native
-  sealed trait handlebars
-    extends StObject
-       with Language
-  inline def handlebars: handlebars = "handlebars".asInstanceOf[handlebars]
+  sealed trait complete extends StObject
+  inline def complete: complete = "complete".asInstanceOf[complete]
   
   @js.native
   sealed trait italic extends StObject
   inline def italic: italic = "italic".asInstanceOf[italic]
   
   @js.native
-  sealed trait javascript
-    extends StObject
-       with Language
-  inline def javascript: javascript = "javascript".asInstanceOf[javascript]
-  
-  @js.native
-  sealed trait json
-    extends StObject
-       with Language
-  inline def json: json = "json".asInstanceOf[json]
-  
-  @js.native
-  sealed trait jsx
-    extends StObject
-       with Language
-  inline def jsx: jsx = "jsx".asInstanceOf[jsx]
-  
-  @js.native
-  sealed trait less
-    extends StObject
-       with Language
-  inline def less: less = "less".asInstanceOf[less]
-  
-  @js.native
   sealed trait `line-through` extends StObject
   inline def `line-through`: `line-through` = "line-through".asInstanceOf[`line-through`]
-  
-  @js.native
-  sealed trait makefile
-    extends StObject
-       with Language
-  inline def makefile: makefile = "makefile".asInstanceOf[makefile]
-  
-  @js.native
-  sealed trait markdown
-    extends StObject
-       with Language
-  inline def markdown: markdown = "markdown".asInstanceOf[markdown]
-  
-  @js.native
-  sealed trait markup
-    extends StObject
-       with Language
-  inline def markup: markup = "markup".asInstanceOf[markup]
   
   @js.native
   sealed trait none extends StObject
@@ -184,66 +127,6 @@ object prismReactRendererStrings {
   inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait objectivec
-    extends StObject
-       with Language
-  inline def objectivec: objectivec = "objectivec".asInstanceOf[objectivec]
-  
-  @js.native
-  sealed trait ocaml
-    extends StObject
-       with Language
-  inline def ocaml: ocaml = "ocaml".asInstanceOf[ocaml]
-  
-  @js.native
-  sealed trait python
-    extends StObject
-       with Language
-  inline def python: python = "python".asInstanceOf[python]
-  
-  @js.native
-  sealed trait reason
-    extends StObject
-       with Language
-  inline def reason: reason = "reason".asInstanceOf[reason]
-  
-  @js.native
-  sealed trait sass
-    extends StObject
-       with Language
-  inline def sass: sass = "sass".asInstanceOf[sass]
-  
-  @js.native
-  sealed trait scss
-    extends StObject
-       with Language
-  inline def scss: scss = "scss".asInstanceOf[scss]
-  
-  @js.native
-  sealed trait sql
-    extends StObject
-       with Language
-  inline def sql: sql = "sql".asInstanceOf[sql]
-  
-  @js.native
-  sealed trait stylus
-    extends StObject
-       with Language
-  inline def stylus: stylus = "stylus".asInstanceOf[stylus]
-  
-  @js.native
-  sealed trait tsx
-    extends StObject
-       with Language
-  inline def tsx: tsx = "tsx".asInstanceOf[tsx]
-  
-  @js.native
-  sealed trait typescript
-    extends StObject
-       with Language
-  inline def typescript: typescript = "typescript".asInstanceOf[typescript]
-  
-  @js.native
   sealed trait underline extends StObject
   inline def underline: underline = "underline".asInstanceOf[underline]
   
@@ -252,14 +135,6 @@ object prismReactRendererStrings {
   inline def `underline line-through`: `underline line-through` = ("underline line-through").asInstanceOf[`underline line-through`]
   
   @js.native
-  sealed trait wasm
-    extends StObject
-       with Language
-  inline def wasm: wasm = "wasm".asInstanceOf[wasm]
-  
-  @js.native
-  sealed trait yaml
-    extends StObject
-       with Language
-  inline def yaml: yaml = "yaml".asInstanceOf[yaml]
+  sealed trait wrap extends StObject
+  inline def wrap: wrap = "wrap".asInstanceOf[wrap]
 }

@@ -4,6 +4,7 @@ import typings.oembedParser.oembedParserStrings.link
 import typings.oembedParser.oembedParserStrings.photo
 import typings.oembedParser.oembedParserStrings.rich
 import typings.oembedParser.oembedParserStrings.video
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,7 +73,7 @@ object mod {
       * list of request headers
       * default: null
       */
-    var headers: js.UndefOr[js.Array[String]] = js.undefined
+    var headers: js.UndefOr[Record[String, String]] = js.undefined
     
     /**
       * the values to configure proxy
@@ -90,11 +91,9 @@ object mod {
     @scala.inline
     implicit open class MutableBuilder[Self <: FetchOptions] (val x: Self) extends AnyVal {
       
-      inline def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
-      
-      inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setProxy(value: ProxyConfig): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
@@ -252,30 +251,30 @@ object mod {
       * language for the embed, e.g. "en", "fr", "vi", etc
       * Default: null
       */
-    var lang: String
+    var lang: js.UndefOr[String] = js.undefined
     
     /**
       * max height of embed size
       * Default: null
       */
-    var maxheight: Double
+    var maxheight: js.UndefOr[Double] = js.undefined
     
     /**
       * max width of embed size
       * Default: null
       */
-    var maxwidth: Double
+    var maxwidth: js.UndefOr[Double] = js.undefined
     
     /**
       * theme for the embed, such as "dark" or "light"
       * Default: null
       */
-    var theme: String
+    var theme: js.UndefOr[String] = js.undefined
   }
   object Params {
     
-    inline def apply(lang: String, maxheight: Double, maxwidth: Double, theme: String): Params = {
-      val __obj = js.Dynamic.literal(lang = lang.asInstanceOf[js.Any], maxheight = maxheight.asInstanceOf[js.Any], maxwidth = maxwidth.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
+    inline def apply(): Params = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Params]
     }
     
@@ -284,11 +283,19 @@ object mod {
       
       inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
+      inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+      
       inline def setMaxheight(value: Double): Self = StObject.set(x, "maxheight", value.asInstanceOf[js.Any])
+      
+      inline def setMaxheightUndefined: Self = StObject.set(x, "maxheight", js.undefined)
       
       inline def setMaxwidth(value: Double): Self = StObject.set(x, "maxwidth", value.asInstanceOf[js.Any])
       
+      inline def setMaxwidthUndefined: Self = StObject.set(x, "maxwidth", js.undefined)
+      
       inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -362,7 +369,7 @@ object mod {
   
   trait ProxyConfig extends StObject {
     
-    var headers: js.UndefOr[js.Array[String]] = js.undefined
+    var headers: js.UndefOr[Record[String, String]] = js.undefined
     
     var target: js.UndefOr[String] = js.undefined
   }
@@ -376,11 +383,9 @@ object mod {
     @scala.inline
     implicit open class MutableBuilder[Self <: ProxyConfig] (val x: Self) extends AnyVal {
       
-      inline def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
-      
-      inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       

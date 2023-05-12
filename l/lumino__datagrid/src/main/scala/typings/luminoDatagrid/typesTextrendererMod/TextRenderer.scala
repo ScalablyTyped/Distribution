@@ -49,7 +49,7 @@ open class TextRenderer () extends CellRenderer {
   def drawText(gc: GraphicsContext, config: CellConfig): Unit = js.native
   
   /**
-    * Which side to draw the ellipsis.
+    * Which side to draw the ellipsis. Set to 'none' to disable ellipsis.
     */
   val elideDirection: ConfigOption[ElideDirection] = js.native
   
@@ -737,11 +737,14 @@ object TextRenderer {
   /* Rewritten from type alias, can be one of: 
     - typings.luminoDatagrid.luminoDatagridStrings.left
     - typings.luminoDatagrid.luminoDatagridStrings.right
+    - typings.luminoDatagrid.luminoDatagridStrings.none
   */
   trait ElideDirection extends StObject
   object ElideDirection {
     
     inline def left: typings.luminoDatagrid.luminoDatagridStrings.left = "left".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.left]
+    
+    inline def none: typings.luminoDatagrid.luminoDatagridStrings.none = "none".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.none]
     
     inline def right: typings.luminoDatagrid.luminoDatagridStrings.right = "right".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.right]
   }
@@ -784,7 +787,7 @@ object TextRenderer {
     /**
       * The ellipsis direction for the cell text.
       *
-      * The default is `'right'`.
+      * The default is `'none'`.
       */
     var elideDirection: js.UndefOr[ConfigOption[ElideDirection]] = js.undefined
     

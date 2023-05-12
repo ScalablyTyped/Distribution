@@ -3,7 +3,6 @@ package typings.ipfsHttpServer
 import typings.ipfsHttpServer.ipfsHttpServerStrings.directory
 import typings.ipfsHttpServer.ipfsHttpServerStrings.file
 import typings.ipfsHttpServer.ipfsHttpServerStrings.symlink
-import typings.ipfsUnixfs.distSrcTypesMod.Mtime
 import typings.std.AsyncGenerator
 import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject
@@ -28,7 +27,9 @@ object distSrcUtilsMultipartRequestParserMod {
     
     var mode: js.UndefOr[Double] = js.undefined
     
-    var mtime: js.UndefOr[Mtime] = js.undefined
+    var mtime: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_types.Mtime */ Any
+      ] = js.undefined
     
     var name: String
     
@@ -51,7 +52,9 @@ object distSrcUtilsMultipartRequestParserMod {
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      inline def setMtime(value: Mtime): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_types.Mtime */ Any
+      ): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
       inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
       

@@ -15,12 +15,12 @@ trait ResourceGroups extends Service {
   var config_ResourceGroups: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Creates a resource group with the specified name and description. You can optionally include a resource query, or a service configuration. For more information about constructing a resource query, see Create a tag-based group in Resource Groups. For more information about service configurations, see Service configurations for resource groups.  Minimum permissions  To run this command, you must have the following permissions:    resource-groups:CreateGroup   
+    * Creates a resource group with the specified name and description. You can optionally include either a resource query or a service configuration. For more information about constructing a resource query, see Build queries and groups in Resource Groups in the Resource Groups User Guide. For more information about service-linked groups and service configurations, see Service configurations for Resource Groups.  Minimum permissions  To run this command, you must have the following permissions:    resource-groups:CreateGroup   
     */
   def createGroup(): Request[CreateGroupOutput, AWSError] = js.native
   def createGroup(callback: js.Function2[/* err */ AWSError, /* data */ CreateGroupOutput, Unit]): Request[CreateGroupOutput, AWSError] = js.native
   /**
-    * Creates a resource group with the specified name and description. You can optionally include a resource query, or a service configuration. For more information about constructing a resource query, see Create a tag-based group in Resource Groups. For more information about service configurations, see Service configurations for resource groups.  Minimum permissions  To run this command, you must have the following permissions:    resource-groups:CreateGroup   
+    * Creates a resource group with the specified name and description. You can optionally include either a resource query or a service configuration. For more information about constructing a resource query, see Build queries and groups in Resource Groups in the Resource Groups User Guide. For more information about service-linked groups and service configurations, see Service configurations for Resource Groups.  Minimum permissions  To run this command, you must have the following permissions:    resource-groups:CreateGroup   
     */
   def createGroup(params: CreateGroupInput): Request[CreateGroupOutput, AWSError] = js.native
   def createGroup(
@@ -43,6 +43,12 @@ trait ResourceGroups extends Service {
   ): Request[DeleteGroupOutput, AWSError] = js.native
   
   /**
+    * Retrieves the current status of optional features in Resource Groups.
+    */
+  def getAccountSettings(): Request[GetAccountSettingsOutput, AWSError] = js.native
+  def getAccountSettings(callback: js.Function2[/* err */ AWSError, /* data */ GetAccountSettingsOutput, Unit]): Request[GetAccountSettingsOutput, AWSError] = js.native
+  
+  /**
     * Returns information about a specified resource group.  Minimum permissions  To run this command, you must have the following permissions:    resource-groups:GetGroup   
     */
   def getGroup(): Request[GetGroupOutput, AWSError] = js.native
@@ -54,12 +60,12 @@ trait ResourceGroups extends Service {
   def getGroup(params: GetGroupInput, callback: js.Function2[/* err */ AWSError, /* data */ GetGroupOutput, Unit]): Request[GetGroupOutput, AWSError] = js.native
   
   /**
-    * Returns the service configuration associated with the specified resource group. For details about the service configuration syntax, see Service configurations for resource groups.  Minimum permissions  To run this command, you must have the following permissions:    resource-groups:GetGroupConfiguration   
+    * Retrieves the service configuration associated with the specified resource group. For details about the service configuration syntax, see Service configurations for Resource Groups.  Minimum permissions  To run this command, you must have the following permissions:    resource-groups:GetGroupConfiguration   
     */
   def getGroupConfiguration(): Request[GetGroupConfigurationOutput, AWSError] = js.native
   def getGroupConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ GetGroupConfigurationOutput, Unit]): Request[GetGroupConfigurationOutput, AWSError] = js.native
   /**
-    * Returns the service configuration associated with the specified resource group. For details about the service configuration syntax, see Service configurations for resource groups.  Minimum permissions  To run this command, you must have the following permissions:    resource-groups:GetGroupConfiguration   
+    * Retrieves the service configuration associated with the specified resource group. For details about the service configuration syntax, see Service configurations for Resource Groups.  Minimum permissions  To run this command, you must have the following permissions:    resource-groups:GetGroupConfiguration   
     */
   def getGroupConfiguration(params: GetGroupConfigurationInput): Request[GetGroupConfigurationOutput, AWSError] = js.native
   def getGroupConfiguration(
@@ -93,12 +99,12 @@ trait ResourceGroups extends Service {
   def getTags(params: GetTagsInput, callback: js.Function2[/* err */ AWSError, /* data */ GetTagsOutput, Unit]): Request[GetTagsOutput, AWSError] = js.native
   
   /**
-    * Adds the specified resources to the specified group.  Minimum permissions  To run this command, you must have the following permissions:    resource-groups:GroupResources   
+    * Adds the specified resources to the specified group.  You can use this operation with only resource groups that are configured with the following types:    AWS::EC2::HostManagement     AWS::EC2::CapacityReservationPool    Other resource group type and resource types aren't currently supported by this operation.   Minimum permissions  To run this command, you must have the following permissions:    resource-groups:GroupResources   
     */
   def groupResources(): Request[GroupResourcesOutput, AWSError] = js.native
   def groupResources(callback: js.Function2[/* err */ AWSError, /* data */ GroupResourcesOutput, Unit]): Request[GroupResourcesOutput, AWSError] = js.native
   /**
-    * Adds the specified resources to the specified group.  Minimum permissions  To run this command, you must have the following permissions:    resource-groups:GroupResources   
+    * Adds the specified resources to the specified group.  You can use this operation with only resource groups that are configured with the following types:    AWS::EC2::HostManagement     AWS::EC2::CapacityReservationPool    Other resource group type and resource types aren't currently supported by this operation.   Minimum permissions  To run this command, you must have the following permissions:    resource-groups:GroupResources   
     */
   def groupResources(params: GroupResourcesInput): Request[GroupResourcesOutput, AWSError] = js.native
   def groupResources(
@@ -121,12 +127,12 @@ trait ResourceGroups extends Service {
   ): Request[ListGroupResourcesOutput, AWSError] = js.native
   
   /**
-    * Returns a list of existing resource groups in your account.  Minimum permissions  To run this command, you must have the following permissions:    resource-groups:ListGroups   
+    * Returns a list of existing Resource Groups in your account.  Minimum permissions  To run this command, you must have the following permissions:    resource-groups:ListGroups   
     */
   def listGroups(): Request[ListGroupsOutput, AWSError] = js.native
   def listGroups(callback: js.Function2[/* err */ AWSError, /* data */ ListGroupsOutput, Unit]): Request[ListGroupsOutput, AWSError] = js.native
   /**
-    * Returns a list of existing resource groups in your account.  Minimum permissions  To run this command, you must have the following permissions:    resource-groups:ListGroups   
+    * Returns a list of existing Resource Groups in your account.  Minimum permissions  To run this command, you must have the following permissions:    resource-groups:ListGroups   
     */
   def listGroups(params: ListGroupsInput): Request[ListGroupsOutput, AWSError] = js.native
   def listGroups(
@@ -149,12 +155,12 @@ trait ResourceGroups extends Service {
   ): Request[PutGroupConfigurationOutput, AWSError] = js.native
   
   /**
-    * Returns a list of AWS resource identifiers that matches the specified query. The query uses the same format as a resource query in a CreateGroup or UpdateGroupQuery operation.  Minimum permissions  To run this command, you must have the following permissions:    resource-groups:SearchResources     cloudformation:DescribeStacks     cloudformation:ListStackResources     tag:GetResources   
+    * Returns a list of Amazon Web Services resource identifiers that matches the specified query. The query uses the same format as a resource query in a CreateGroup or UpdateGroupQuery operation.  Minimum permissions  To run this command, you must have the following permissions:    resource-groups:SearchResources     cloudformation:DescribeStacks     cloudformation:ListStackResources     tag:GetResources   
     */
   def searchResources(): Request[SearchResourcesOutput, AWSError] = js.native
   def searchResources(callback: js.Function2[/* err */ AWSError, /* data */ SearchResourcesOutput, Unit]): Request[SearchResourcesOutput, AWSError] = js.native
   /**
-    * Returns a list of AWS resource identifiers that matches the specified query. The query uses the same format as a resource query in a CreateGroup or UpdateGroupQuery operation.  Minimum permissions  To run this command, you must have the following permissions:    resource-groups:SearchResources     cloudformation:DescribeStacks     cloudformation:ListStackResources     tag:GetResources   
+    * Returns a list of Amazon Web Services resource identifiers that matches the specified query. The query uses the same format as a resource query in a CreateGroup or UpdateGroupQuery operation.  Minimum permissions  To run this command, you must have the following permissions:    resource-groups:SearchResources     cloudformation:DescribeStacks     cloudformation:ListStackResources     tag:GetResources   
     */
   def searchResources(params: SearchResourcesInput): Request[SearchResourcesOutput, AWSError] = js.native
   def searchResources(
@@ -174,12 +180,12 @@ trait ResourceGroups extends Service {
   def tag(params: TagInput, callback: js.Function2[/* err */ AWSError, /* data */ TagOutput, Unit]): Request[TagOutput, AWSError] = js.native
   
   /**
-    * Removes the specified resources from the specified group.  Minimum permissions  To run this command, you must have the following permissions:    resource-groups:UngroupResources   
+    * Removes the specified resources from the specified group. This operation works only with static groups that you populated using the GroupResources operation. It doesn't work with any resource groups that are automatically populated by tag-based or CloudFormation stack-based queries.  Minimum permissions  To run this command, you must have the following permissions:    resource-groups:UngroupResources   
     */
   def ungroupResources(): Request[UngroupResourcesOutput, AWSError] = js.native
   def ungroupResources(callback: js.Function2[/* err */ AWSError, /* data */ UngroupResourcesOutput, Unit]): Request[UngroupResourcesOutput, AWSError] = js.native
   /**
-    * Removes the specified resources from the specified group.  Minimum permissions  To run this command, you must have the following permissions:    resource-groups:UngroupResources   
+    * Removes the specified resources from the specified group. This operation works only with static groups that you populated using the GroupResources operation. It doesn't work with any resource groups that are automatically populated by tag-based or CloudFormation stack-based queries.  Minimum permissions  To run this command, you must have the following permissions:    resource-groups:UngroupResources   
     */
   def ungroupResources(params: UngroupResourcesInput): Request[UngroupResourcesOutput, AWSError] = js.native
   def ungroupResources(
@@ -197,6 +203,20 @@ trait ResourceGroups extends Service {
     */
   def untag(params: UntagInput): Request[UntagOutput, AWSError] = js.native
   def untag(params: UntagInput, callback: js.Function2[/* err */ AWSError, /* data */ UntagOutput, Unit]): Request[UntagOutput, AWSError] = js.native
+  
+  /**
+    * Turns on or turns off optional features in Resource Groups. The preceding example shows that the request to turn on group lifecycle events is IN_PROGRESS. You can call the GetAccountSettings operation to check for completion by looking for GroupLifecycleEventsStatus to change to ACTIVE.
+    */
+  def updateAccountSettings(): Request[UpdateAccountSettingsOutput, AWSError] = js.native
+  def updateAccountSettings(callback: js.Function2[/* err */ AWSError, /* data */ UpdateAccountSettingsOutput, Unit]): Request[UpdateAccountSettingsOutput, AWSError] = js.native
+  /**
+    * Turns on or turns off optional features in Resource Groups. The preceding example shows that the request to turn on group lifecycle events is IN_PROGRESS. You can call the GetAccountSettings operation to check for completion by looking for GroupLifecycleEventsStatus to change to ACTIVE.
+    */
+  def updateAccountSettings(params: UpdateAccountSettingsInput): Request[UpdateAccountSettingsOutput, AWSError] = js.native
+  def updateAccountSettings(
+    params: UpdateAccountSettingsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateAccountSettingsOutput, Unit]
+  ): Request[UpdateAccountSettingsOutput, AWSError] = js.native
   
   /**
     * Updates the description for an existing group. You cannot update the name of a resource group.  Minimum permissions  To run this command, you must have the following permissions:    resource-groups:UpdateGroup   

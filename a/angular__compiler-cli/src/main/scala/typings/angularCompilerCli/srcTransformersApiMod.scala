@@ -6,12 +6,12 @@ import typings.angularCompilerCli.angularCompilerCliStrings.decorators
 import typings.angularCompilerCli.angularCompilerCliStrings.error
 import typings.angularCompilerCli.angularCompilerCliStrings.ignore
 import typings.angularCompilerCli.angularCompilerCliStrings.warning
-import typings.angularCompilerCli.anon.CancellationToken
 import typings.angularCompilerCli.anon.FilePath
 import typings.angularCompilerCli.srcNgtscCoreApiSrcInterfacesMod.ResourceHostContext
 import typings.angularCompilerCli.srcNgtscCoreApiSrcInterfacesMod.TransformResourceResult
 import typings.angularCompilerCli.srcNgtscCoreApiSrcOptionsMod.NgCompilerOptions
 import typings.std.Set
+import typings.typescript.mod.CancellationToken
 import typings.typescript.mod.Diagnostic
 import typings.typescript.mod.EmitResult
 import typings.typescript.mod.SourceFile
@@ -95,7 +95,7 @@ object srcTransformersApiMod {
   inline def isTsDiagnostic(diagnostic: Any): /* is typescript.typescript.Diagnostic */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTsDiagnostic")(diagnostic.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.Diagnostic */ Boolean]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.angularCompilerCli.srcNgtscCoreApiSrcInterfacesMod.ExtendedTsCompilerHost because var conflicts: createHash, directoryExists, getCancellationToken, getCurrentDirectory, getDefaultLibLocation, getDirectories, getEnvironmentVariable, getModuleResolutionCache, getParsedCommandLine, getSourceFileByPath, hasInvalidatedResolutions, readDirectory, realpath, resolveModuleNames, resolveTypeReferenceDirectives, trace, useCaseSensitiveFileNames, writeFile_Original. Inlined resourceNameToFileName, readResource, getModifiedResourceFiles, transformResource, fileNameToModuleName */ @js.native
+  - typings.angularCompilerCli.srcNgtscCoreApiSrcInterfacesMod.ExtendedTsCompilerHost because var conflicts: createHash, directoryExists, getCancellationToken, getCurrentDirectory, getDefaultLibLocation, getDirectories, getEnvironmentVariable, getModuleResolutionCache, getParsedCommandLine, getSourceFileByPath, hasInvalidatedResolutions, readDirectory, realpath, resolveModuleNameLiterals, resolveModuleNames, resolveTypeReferenceDirectiveReferences, resolveTypeReferenceDirectives, trace, useCaseSensitiveFileNames, writeFile_Original. Inlined resourceNameToFileName, readResource, getModifiedResourceFiles, transformResource, fileNameToModuleName */ @js.native
   trait CompilerHost
     extends StObject
        with typings.typescript.mod.CompilerHost {
@@ -187,12 +187,6 @@ object srcTransformersApiMod {
       */
     var enableResourceInlining: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * Whether to generate .ngsummary.ts files that allow to use AOTed artifacts
-      * in JIT mode. This is off by default.
-      */
-    var enableSummariesForJit: js.UndefOr[Boolean] = js.undefined
-    
     var flatModulePrivateSymbolPrefix: js.UndefOr[String] = js.undefined
     
     var genDir: js.UndefOr[String] = js.undefined
@@ -242,10 +236,6 @@ object srcTransformersApiMod {
       inline def setEnableResourceInlining(value: Boolean): Self = StObject.set(x, "enableResourceInlining", value.asInstanceOf[js.Any])
       
       inline def setEnableResourceInliningUndefined: Self = StObject.set(x, "enableResourceInlining", js.undefined)
-      
-      inline def setEnableSummariesForJit(value: Boolean): Self = StObject.set(x, "enableSummariesForJit", value.asInstanceOf[js.Any])
-      
-      inline def setEnableSummariesForJitUndefined: Self = StObject.set(x, "enableSummariesForJit", js.undefined)
       
       inline def setFlatModulePrivateSymbolPrefix(value: String): Self = StObject.set(x, "flatModulePrivateSymbolPrefix", value.asInstanceOf[js.Any])
       
@@ -319,6 +309,56 @@ object srcTransformersApiMod {
     }
   }
   
+  trait EmitOptions[CbEmitRes /* <: EmitResult */] extends StObject {
+    
+    var cancellationToken: js.UndefOr[CancellationToken] = js.undefined
+    
+    var customTransformers: js.UndefOr[CustomTransformers] = js.undefined
+    
+    var emitCallback: js.UndefOr[TsEmitCallback[CbEmitRes]] = js.undefined
+    
+    var emitFlags: js.UndefOr[EmitFlags] = js.undefined
+    
+    var forceEmit: js.UndefOr[Boolean] = js.undefined
+    
+    var mergeEmitResultsCallback: js.UndefOr[TsMergeEmitResultsCallback[CbEmitRes]] = js.undefined
+  }
+  object EmitOptions {
+    
+    inline def apply[CbEmitRes /* <: EmitResult */](): EmitOptions[CbEmitRes] = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[EmitOptions[CbEmitRes]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmitOptions[?], CbEmitRes /* <: EmitResult */] (val x: Self & EmitOptions[CbEmitRes]) extends AnyVal {
+      
+      inline def setCancellationToken(value: CancellationToken): Self = StObject.set(x, "cancellationToken", value.asInstanceOf[js.Any])
+      
+      inline def setCancellationTokenUndefined: Self = StObject.set(x, "cancellationToken", js.undefined)
+      
+      inline def setCustomTransformers(value: CustomTransformers): Self = StObject.set(x, "customTransformers", value.asInstanceOf[js.Any])
+      
+      inline def setCustomTransformersUndefined: Self = StObject.set(x, "customTransformers", js.undefined)
+      
+      inline def setEmitCallback(value: /* args */ TsEmitArguments => CbEmitRes): Self = StObject.set(x, "emitCallback", js.Any.fromFunction1(value))
+      
+      inline def setEmitCallbackUndefined: Self = StObject.set(x, "emitCallback", js.undefined)
+      
+      inline def setEmitFlags(value: EmitFlags): Self = StObject.set(x, "emitFlags", value.asInstanceOf[js.Any])
+      
+      inline def setEmitFlagsUndefined: Self = StObject.set(x, "emitFlags", js.undefined)
+      
+      inline def setForceEmit(value: Boolean): Self = StObject.set(x, "forceEmit", value.asInstanceOf[js.Any])
+      
+      inline def setForceEmitUndefined: Self = StObject.set(x, "forceEmit", js.undefined)
+      
+      inline def setMergeEmitResultsCallback(value: /* results */ js.Array[CbEmitRes] => CbEmitRes): Self = StObject.set(x, "mergeEmitResultsCallback", js.Any.fromFunction1(value))
+      
+      inline def setMergeEmitResultsCallbackUndefined: Self = StObject.set(x, "mergeEmitResultsCallback", js.undefined)
+    }
+  }
+  
   trait LazyRoute extends StObject {
     
     var module: FilePath
@@ -353,14 +393,14 @@ object srcTransformersApiMod {
       *
       * Angular structural information is required to emit files.
       */
-    def emit(): EmitResult = js.native
-    def emit(param0: CancellationToken): EmitResult = js.native
+    def emit[CbEmitRes /* <: EmitResult */](): EmitResult = js.native
+    def emit[CbEmitRes /* <: EmitResult */](opts: EmitOptions[CbEmitRes]): EmitResult = js.native
     
     /**
       * Retrieve options diagnostics for the Angular options used to create the program.
       */
     def getNgOptionDiagnostics(): js.Array[Diagnostic] = js.native
-    def getNgOptionDiagnostics(cancellationToken: typings.typescript.mod.CancellationToken): js.Array[Diagnostic] = js.native
+    def getNgOptionDiagnostics(cancellationToken: CancellationToken): js.Array[Diagnostic] = js.native
     
     /**
       * Retrieve the Angular semantic diagnostics.
@@ -369,8 +409,8 @@ object srcTransformersApiMod {
       */
     def getNgSemanticDiagnostics(): js.Array[Diagnostic] = js.native
     def getNgSemanticDiagnostics(fileName: String): js.Array[Diagnostic] = js.native
-    def getNgSemanticDiagnostics(fileName: String, cancellationToken: typings.typescript.mod.CancellationToken): js.Array[Diagnostic] = js.native
-    def getNgSemanticDiagnostics(fileName: Unit, cancellationToken: typings.typescript.mod.CancellationToken): js.Array[Diagnostic] = js.native
+    def getNgSemanticDiagnostics(fileName: String, cancellationToken: CancellationToken): js.Array[Diagnostic] = js.native
+    def getNgSemanticDiagnostics(fileName: Unit, cancellationToken: CancellationToken): js.Array[Diagnostic] = js.native
     
     /**
       * Retrieve the diagnostics for the structure of an Angular application is correctly formed.
@@ -384,7 +424,7 @@ object srcTransformersApiMod {
       * Angular structural information is required to produce these diagnostics.
       */
     def getNgStructuralDiagnostics(): js.Array[Diagnostic] = js.native
-    def getNgStructuralDiagnostics(cancellationToken: typings.typescript.mod.CancellationToken): js.Array[Diagnostic] = js.native
+    def getNgStructuralDiagnostics(cancellationToken: CancellationToken): js.Array[Diagnostic] = js.native
     
     /**
       * Retrieve options diagnostics for the TypeScript options used to create the program. This is
@@ -392,7 +432,7 @@ object srcTransformersApiMod {
       * collect Angular structural information to produce the errors.
       */
     def getTsOptionDiagnostics(): js.Array[Diagnostic] = js.native
-    def getTsOptionDiagnostics(cancellationToken: typings.typescript.mod.CancellationToken): js.Array[Diagnostic] = js.native
+    def getTsOptionDiagnostics(cancellationToken: CancellationToken): js.Array[Diagnostic] = js.native
     
     /**
       * Retrieve the TypeScript program used to produce semantic diagnostics and emit the sources.
@@ -406,9 +446,9 @@ object srcTransformersApiMod {
       * `getTsProgram().getSemanticDiagnostics()` directly and is included for completeness.
       */
     def getTsSemanticDiagnostics(): js.Array[Diagnostic] = js.native
-    def getTsSemanticDiagnostics(sourceFile: Unit, cancellationToken: typings.typescript.mod.CancellationToken): js.Array[Diagnostic] = js.native
+    def getTsSemanticDiagnostics(sourceFile: Unit, cancellationToken: CancellationToken): js.Array[Diagnostic] = js.native
     def getTsSemanticDiagnostics(sourceFile: SourceFile): js.Array[Diagnostic] = js.native
-    def getTsSemanticDiagnostics(sourceFile: SourceFile, cancellationToken: typings.typescript.mod.CancellationToken): js.Array[Diagnostic] = js.native
+    def getTsSemanticDiagnostics(sourceFile: SourceFile, cancellationToken: CancellationToken): js.Array[Diagnostic] = js.native
     
     /**
       * Retrieve the syntax diagnostics from TypeScript. This is faster than calling
@@ -416,9 +456,9 @@ object srcTransformersApiMod {
       * information to produce the errors.
       */
     def getTsSyntacticDiagnostics(): js.Array[Diagnostic] = js.native
-    def getTsSyntacticDiagnostics(sourceFile: Unit, cancellationToken: typings.typescript.mod.CancellationToken): js.Array[Diagnostic] = js.native
+    def getTsSyntacticDiagnostics(sourceFile: Unit, cancellationToken: CancellationToken): js.Array[Diagnostic] = js.native
     def getTsSyntacticDiagnostics(sourceFile: SourceFile): js.Array[Diagnostic] = js.native
-    def getTsSyntacticDiagnostics(sourceFile: SourceFile, cancellationToken: typings.typescript.mod.CancellationToken): js.Array[Diagnostic] = js.native
+    def getTsSyntacticDiagnostics(sourceFile: SourceFile, cancellationToken: CancellationToken): js.Array[Diagnostic] = js.native
     
     /**
       * This method is obsolete and always returns an empty array.
@@ -437,7 +477,7 @@ object srcTransformersApiMod {
   
   trait TsEmitArguments extends StObject {
     
-    var cancellationToken: js.UndefOr[typings.typescript.mod.CancellationToken] = js.undefined
+    var cancellationToken: js.UndefOr[CancellationToken] = js.undefined
     
     var customTransformers: js.UndefOr[typings.typescript.mod.CustomTransformers] = js.undefined
     
@@ -463,7 +503,7 @@ object srcTransformersApiMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: TsEmitArguments] (val x: Self) extends AnyVal {
       
-      inline def setCancellationToken(value: typings.typescript.mod.CancellationToken): Self = StObject.set(x, "cancellationToken", value.asInstanceOf[js.Any])
+      inline def setCancellationToken(value: CancellationToken): Self = StObject.set(x, "cancellationToken", value.asInstanceOf[js.Any])
       
       inline def setCancellationTokenUndefined: Self = StObject.set(x, "cancellationToken", js.undefined)
       
@@ -493,7 +533,7 @@ object srcTransformersApiMod {
     }
   }
   
-  type TsEmitCallback = js.Function1[/* args */ TsEmitArguments, EmitResult]
+  type TsEmitCallback[T /* <: EmitResult */] = js.Function1[/* args */ TsEmitArguments, T]
   
-  type TsMergeEmitResultsCallback = js.Function1[/* results */ js.Array[EmitResult], EmitResult]
+  type TsMergeEmitResultsCallback[T /* <: EmitResult */] = js.Function1[/* results */ js.Array[T], T]
 }

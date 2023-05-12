@@ -13,7 +13,7 @@ open class MjmlTitle protected ()
   def this(props: `1`) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: `1`, context: Any) = this()
 }

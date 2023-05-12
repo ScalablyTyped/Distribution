@@ -1,7 +1,8 @@
 package typings.metroTransformWorker
 
-import typings.metroTransformWorker.mod.JSFileType
-import typings.metroTransformWorker.mod.Type
+import typings.metroTransformWorker.srcMod.BytecodeFileType
+import typings.metroTransformWorker.srcMod.JSFileType
+import typings.metroTransformWorker.srcMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,6 +14,24 @@ object metroTransformWorkerStrings {
     extends StObject
        with Type
   inline def asset: asset = "asset".asInstanceOf[asset]
+  
+  @js.native
+  sealed trait bytecodeSlashmodule
+    extends StObject
+       with BytecodeFileType
+  inline def bytecodeSlashmodule: bytecodeSlashmodule = "bytecode/module".asInstanceOf[bytecodeSlashmodule]
+  
+  @js.native
+  sealed trait bytecodeSlashmoduleSlashasset
+    extends StObject
+       with BytecodeFileType
+  inline def bytecodeSlashmoduleSlashasset: bytecodeSlashmoduleSlashasset = "bytecode/module/asset".asInstanceOf[bytecodeSlashmoduleSlashasset]
+  
+  @js.native
+  sealed trait bytecodeSlashscript
+    extends StObject
+       with BytecodeFileType
+  inline def bytecodeSlashscript: bytecodeSlashscript = "bytecode/script".asInstanceOf[bytecodeSlashscript]
   
   @js.native
   sealed trait jsSlashmodule

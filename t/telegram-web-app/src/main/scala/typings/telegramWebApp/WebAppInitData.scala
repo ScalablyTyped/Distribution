@@ -1,5 +1,10 @@
 package typings.telegramWebApp
 
+import typings.telegramWebApp.telegramWebAppStrings.`private`
+import typings.telegramWebApp.telegramWebAppStrings.channel
+import typings.telegramWebApp.telegramWebAppStrings.group
+import typings.telegramWebApp.telegramWebAppStrings.sender
+import typings.telegramWebApp.telegramWebAppStrings.supergroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,6 +30,20 @@ trait WebAppInitData extends StObject {
     * only for Web Apps launched via the attachment menu.
     */
   var chat: js.UndefOr[WebAppChat] = js.undefined
+  
+  /**
+    * Global identifier, uniquely corresponding to the chat from which the Web App was opened.
+    * Returned only for Web Apps launched from a direct link.
+    */
+  var chat_instance: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Type of the chat from which the Web App was opened.
+    * Can be either “sender” for a private chat with the user opening the link,
+    * “private”, “group”, “supergroup”, or “channel”.
+    * Returned only for Web Apps launched from direct links.
+    */
+  var chat_type: js.UndefOr[sender | `private` | group | supergroup | channel] = js.undefined
   
   /**
     * A hash of all passed parameters, which the bot server can use to check
@@ -76,6 +95,14 @@ object WebAppInitData {
     inline def setChat(value: WebAppChat): Self = StObject.set(x, "chat", value.asInstanceOf[js.Any])
     
     inline def setChatUndefined: Self = StObject.set(x, "chat", js.undefined)
+    
+    inline def setChat_instance(value: String): Self = StObject.set(x, "chat_instance", value.asInstanceOf[js.Any])
+    
+    inline def setChat_instanceUndefined: Self = StObject.set(x, "chat_instance", js.undefined)
+    
+    inline def setChat_type(value: sender | `private` | group | supergroup | channel): Self = StObject.set(x, "chat_type", value.asInstanceOf[js.Any])
+    
+    inline def setChat_typeUndefined: Self = StObject.set(x, "chat_type", js.undefined)
     
     inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

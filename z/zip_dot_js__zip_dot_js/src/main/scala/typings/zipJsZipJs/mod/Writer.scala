@@ -14,14 +14,14 @@ open class Writer[Type] ()
   
   /**
     * Retrieves all the written data
-    * 
+    *
     * @returns A promise resolving to the written data.
     */
   def getData(): js.Promise[Type] = js.native
   
   /**
     * Initializes the instance asynchronously
-    * 
+    *
     * @param size the total size of the written data in bytes.
     */
   @JSName("init")
@@ -35,9 +35,9 @@ open class Writer[Type] ()
   
   /**
     * Appends a chunk of data
-    * 
+    *
     * @param array The chunk data to append.
-    * 
+    *
     * @virtual
     */
   def writeUint8Array(array: js.typedarray.Uint8Array): js.Promise[Unit] = js.native

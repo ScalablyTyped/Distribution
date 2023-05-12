@@ -35,7 +35,7 @@ trait ElementDefinitionType
   var code: String
   
   /**
-    * It is possible to profile  backbone element (e.g. part of a resource), using the [profile-element](extension-elementdefinition-profile-element.html) extension.
+    * It is possible to profile  backbone element (e.g. part of a resource), using the [http://hl7.org/fhir/StructureDefinition/elementdefinition-profile-element](http://hl7.org/fhir/extensions/StructureDefinition-elementdefinition-profile-element.html) extension.
     */
   var profile: js.UndefOr[js.Array[String]] = js.undefined
   

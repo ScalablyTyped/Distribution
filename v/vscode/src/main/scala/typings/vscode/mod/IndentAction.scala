@@ -14,8 +14,8 @@ object IndentAction extends StObject {
   def apply(value: Double): js.UndefOr[IndentAction & Double] = js.native
   
   /**
-    * Insert new line and indent once (relative to the previous line's indentation).
-    */
+  		 * Insert new line and indent once (relative to the previous line's indentation).
+  		 */
   @js.native
   sealed trait Indent
     extends StObject
@@ -23,10 +23,10 @@ object IndentAction extends StObject {
   /* 1 */ val Indent: typings.vscode.mod.IndentAction.Indent & Double = js.native
   
   /**
-    * Insert two new lines:
-    *  - the first one indented which will hold the cursor
-    *  - the second one at the same indentation level
-    */
+  		 * Insert two new lines:
+  		 *  - the first one indented which will hold the cursor
+  		 *  - the second one at the same indentation level
+  		 */
   @js.native
   sealed trait IndentOutdent
     extends StObject
@@ -34,8 +34,8 @@ object IndentAction extends StObject {
   /* 2 */ val IndentOutdent: typings.vscode.mod.IndentAction.IndentOutdent & Double = js.native
   
   /**
-    * Insert new line and copy the previous line's indentation.
-    */
+  		 * Insert new line and copy the previous line's indentation.
+  		 */
   @js.native
   sealed trait None
     extends StObject
@@ -43,8 +43,8 @@ object IndentAction extends StObject {
   /* 0 */ val None: typings.vscode.mod.IndentAction.None & Double = js.native
   
   /**
-    * Insert new line and outdent once (relative to the previous line's indentation).
-    */
+  		 * Insert new line and outdent once (relative to the previous line's indentation).
+  		 */
   @js.native
   sealed trait Outdent
     extends StObject

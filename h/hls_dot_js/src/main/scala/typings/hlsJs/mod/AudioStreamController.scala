@@ -11,10 +11,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@JSImport("hls.js", "AudioStreamController")
 @js.native
-trait AudioStreamController
-  extends StObject
-     with BaseStreamController {
+open class AudioStreamController protected () extends BaseStreamController {
+  def this(hls: Hls, fragmentTracker: FragmentTracker, keyLoader: KeyLoader) = this()
   
   /* private */ var _bufferInitSegment: Any = js.native
   
@@ -26,18 +26,15 @@ trait AudioStreamController
   
   /* private */ var _unregisterListeners: Any = js.native
   
-  /* private */ var audioSwitch: Any = js.native
-  
   /* private */ var bufferFlushed: Any = js.native
+  
+  /* private */ var bufferedTrack: Any = js.native
   
   /* private */ var cachedTrackLoadedData: Any = js.native
   
   def clearWaitingFragment(): Unit = js.native
   
   /* private */ var completeAudioSwitch: Any = js.native
-  
-  /* InferMemberOverrides */
-  override def destroy(): Unit = js.native
   
   /* private */ var doTickIdle: Any = js.native
   
@@ -64,6 +61,8 @@ trait AudioStreamController
   def onLevelLoaded(event: LEVEL_LOADED, data: LevelLoadedData): Unit = js.native
   
   def onManifestLoading(): Unit = js.native
+  
+  /* private */ var switchingTrack: Any = js.native
   
   /* private */ var trackId: Any = js.native
   

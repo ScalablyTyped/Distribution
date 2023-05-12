@@ -1,6 +1,8 @@
 package typings.three
 
+import typings.three.anon.Shapes
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcExtrasCoreCurveMod.Curve
 import typings.three.srcExtrasCoreShapeMod.Shape
 import typings.three.srcMathVector2Mod.Vector2
@@ -13,7 +15,12 @@ object srcGeometriesExtrudeGeometryMod {
   
   @JSImport("three/src/geometries/ExtrudeGeometry", "ExtrudeGeometry")
   @js.native
-  open class ExtrudeGeometry () extends BufferGeometry {
+  /**
+    * Create a new instance of {@link ExtrudeGeometry}
+    * @param shapes Shape or an array of shapes. Default `new Shape([new Vector2(0.5, 0.5), new Vector2(-0.5, 0.5), new Vector2(-0.5, -0.5), new Vector2(0.5, -0.5)])`.
+    * @param options Object that can contain the following parameters. @see {@link ExtrudeGeometryOptions} for defaults.
+    */
+  open class ExtrudeGeometry () extends BufferGeometry[NormalBufferAttributes] {
     def this(shapes: js.Array[Shape]) = this()
     def this(shapes: Shape) = this()
     def this(shapes: js.Array[Shape], options: ExtrudeGeometryOptions) = this()
@@ -21,10 +28,20 @@ object srcGeometriesExtrudeGeometryMod {
     def this(shapes: Shape, options: ExtrudeGeometryOptions) = this()
     
     def addShape(shape: Shape): Unit = js.native
-    def addShape(shape: Shape, options: Any): Unit = js.native
     
-    def addShapeList(shapes: js.Array[Shape]): Unit = js.native
-    def addShapeList(shapes: js.Array[Shape], options: Any): Unit = js.native
+    /**
+      * An object with a property for each of the constructor parameters.
+      * @remarks Any modification after instantiation does not change the geometry.
+      */
+    val parameters: Shapes = js.native
+    
+    /**
+      * A Read-only _string_ to check if `this` object type.
+      * @remarks Sub-classes will update this value.
+      * @defaultValue `ExtrudeGeometry`
+      */
+    @JSName("type")
+    val type_ExtrudeGeometry: String | typings.three.threeStrings.ExtrudeGeometry = js.native
   }
   /* static members */
   object ExtrudeGeometry {
@@ -33,49 +50,73 @@ object srcGeometriesExtrudeGeometryMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def fromJSON(data: Any): ExtrudeGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[ExtrudeGeometry]
+    /** @internal */
+    inline def fromJSON(data: js.Object, shapes: Any): ExtrudeGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any], shapes.asInstanceOf[js.Any])).asInstanceOf[ExtrudeGeometry]
   }
   
   trait ExtrudeGeometryOptions extends StObject {
     
+    /**
+      * A object that provides UV generator functions.
+      */
     var UVGenerator: js.UndefOr[typings.three.srcGeometriesExtrudeGeometryMod.UVGenerator] = js.undefined
     
     /**
-      * @default true
+      * Turn on bevel. Applying beveling to the shape.
+      * @defaultValue `true`
       */
     var bevelEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * @default 0
+      * Distance from the shape outline that the bevel starts.
+      * Expects a `Float`.
+      * @defaultValue `0`
       */
     var bevelOffset: js.UndefOr[Double] = js.undefined
     
     /**
-      * @default 3
+      * Number of bevel layers/segments.
+      * Expects a `Integer`.
+      * @defaultValue `3`
       */
     var bevelSegments: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Distance from the shape outline that the bevel extends
+      * Expects a `Float`.
+      * @defaultValue `bevelThickness - 0.1`
+      */
     var bevelSize: js.UndefOr[Double] = js.undefined
     
     /**
-      * @default 6
+      * How deep into the original shape the bevel goes.
+      * Expects a `Float`.
+      * @defaultValue `0.2`
       */
     var bevelThickness: js.UndefOr[Double] = js.undefined
     
     /**
-      * @default 12
+      * Number of points on the curves.
+      * Expects a `Integer`.
+      * @defaultValue `12`
       */
     var curveSegments: js.UndefOr[Double] = js.undefined
     
     /**
-      * @default 100
+      * Depth to extrude the shape.
+      * @defaultValue `1`
       */
     var depth: js.UndefOr[Double] = js.undefined
     
+    /**
+      * A 3D spline path along which the shape should be extruded.
+      * @remarks Bevels not supported for path extrusion.
+      */
     var extrudePath: js.UndefOr[Curve[Vector3]] = js.undefined
     
     /**
-      * @default 1
+      * Number of points used for subdividing segments along the depth of the extruded spline.
+      * @defaultValue `1`
       */
     var steps: js.UndefOr[Double] = js.undefined
   }

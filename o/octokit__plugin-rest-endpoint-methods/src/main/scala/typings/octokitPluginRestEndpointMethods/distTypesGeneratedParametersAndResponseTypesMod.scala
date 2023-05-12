@@ -20,17 +20,17 @@ import typings.octokitPluginRestEndpointMethods.anon.DeleteArchiveForAuthenticat
 import typings.octokitPluginRestEndpointMethods.anon.DeletePackageForOrg
 import typings.octokitPluginRestEndpointMethods.anon.DeleteRepoSubscription
 import typings.octokitPluginRestEndpointMethods.anon.DiffRange
-import typings.octokitPluginRestEndpointMethods.anon.DisableSelectedOrganizationGithubActionsEnterprise
-import typings.octokitPluginRestEndpointMethods.anon.Get1039
-import typings.octokitPluginRestEndpointMethods.anon.Get1295
+import typings.octokitPluginRestEndpointMethods.anon.EnableSelectedOrganizationGithubActionsEnterprise
+import typings.octokitPluginRestEndpointMethods.anon.Get1090
+import typings.octokitPluginRestEndpointMethods.anon.Get1332
 import typings.octokitPluginRestEndpointMethods.anon.GetAnalysis
 import typings.octokitPluginRestEndpointMethods.anon.GetConductCode
 import typings.octokitPluginRestEndpointMethods.anon.GetForRepo
 import typings.octokitPluginRestEndpointMethods.anon.GetGithubActionsBillingUser
+import typings.octokitPluginRestEndpointMethods.anon.GetOctocat
 import typings.octokitPluginRestEndpointMethods.anon.GetRestrictionsForOrg
+import typings.octokitPluginRestEndpointMethods.anon.GetSecurityAnalysisSettingsForEnterprise
 import typings.octokitPluginRestEndpointMethods.anon.GetTemplate
-import typings.octokitPluginRestEndpointMethods.anon.GetZen
-import typings.octokitPluginRestEndpointMethods.anon.ListAlertsForEnterprise
 import typings.octokitPluginRestEndpointMethods.anon.RenderRaw
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -60,9 +60,9 @@ object distTypesGeneratedParametersAndResponseTypesMod {
     
     var dependencyGraph: DiffRange
     
-    var emojis: Get1039
+    var emojis: Get1090
     
-    var enterpriseAdmin: DisableSelectedOrganizationGithubActionsEnterprise
+    var enterpriseAdmin: EnableSelectedOrganizationGithubActionsEnterprise
     
     var gists: CreateComment
     
@@ -78,7 +78,7 @@ object distTypesGeneratedParametersAndResponseTypesMod {
     
     var markdown: RenderRaw
     
-    var meta: GetZen
+    var meta: GetOctocat
     
     var migrations: DeleteArchiveForAuthenticatedUser
     
@@ -90,7 +90,7 @@ object distTypesGeneratedParametersAndResponseTypesMod {
     
     var pulls: CreateReplyForReviewComment
     
-    var rateLimit: Get1295
+    var rateLimit: Get1332
     
     var reactions: CreateForIssue
     
@@ -98,7 +98,7 @@ object distTypesGeneratedParametersAndResponseTypesMod {
     
     var search: Commits
     
-    var secretScanning: ListAlertsForEnterprise
+    var secretScanning: GetSecurityAnalysisSettingsForEnterprise
     
     var teams: AddOrUpdateProjectPermissionsInOrg
     
@@ -117,8 +117,8 @@ object distTypesGeneratedParametersAndResponseTypesMod {
       codespaces: CodespaceMachinesForAuthenticatedUser,
       dependabot: CreateOrUpdateOrgSecret,
       dependencyGraph: DiffRange,
-      emojis: Get1039,
-      enterpriseAdmin: DisableSelectedOrganizationGithubActionsEnterprise,
+      emojis: Get1090,
+      enterpriseAdmin: EnableSelectedOrganizationGithubActionsEnterprise,
       gists: CreateComment,
       git: CreateCommit,
       gitignore: GetTemplate,
@@ -126,17 +126,17 @@ object distTypesGeneratedParametersAndResponseTypesMod {
       issues: AddLabels,
       licenses: GetForRepo,
       markdown: RenderRaw,
-      meta: GetZen,
+      meta: GetOctocat,
       migrations: DeleteArchiveForAuthenticatedUser,
       orgs: BlockUser,
       packages: DeletePackageForOrg,
       projects: CreateCard,
       pulls: CreateReplyForReviewComment,
-      rateLimit: Get1295,
+      rateLimit: Get1332,
       reactions: CreateForIssue,
       repos: AcceptInvitationForAuthenticatedUser,
       search: Commits,
-      secretScanning: ListAlertsForEnterprise,
+      secretScanning: GetSecurityAnalysisSettingsForEnterprise,
       teams: AddOrUpdateProjectPermissionsInOrg,
       users: AddEmailForAuthenticatedUser
     ): RestEndpointMethodTypes = {
@@ -167,9 +167,9 @@ object distTypesGeneratedParametersAndResponseTypesMod {
       
       inline def setDependencyGraph(value: DiffRange): Self = StObject.set(x, "dependencyGraph", value.asInstanceOf[js.Any])
       
-      inline def setEmojis(value: Get1039): Self = StObject.set(x, "emojis", value.asInstanceOf[js.Any])
+      inline def setEmojis(value: Get1090): Self = StObject.set(x, "emojis", value.asInstanceOf[js.Any])
       
-      inline def setEnterpriseAdmin(value: DisableSelectedOrganizationGithubActionsEnterprise): Self = StObject.set(x, "enterpriseAdmin", value.asInstanceOf[js.Any])
+      inline def setEnterpriseAdmin(value: EnableSelectedOrganizationGithubActionsEnterprise): Self = StObject.set(x, "enterpriseAdmin", value.asInstanceOf[js.Any])
       
       inline def setGists(value: CreateComment): Self = StObject.set(x, "gists", value.asInstanceOf[js.Any])
       
@@ -185,7 +185,7 @@ object distTypesGeneratedParametersAndResponseTypesMod {
       
       inline def setMarkdown(value: RenderRaw): Self = StObject.set(x, "markdown", value.asInstanceOf[js.Any])
       
-      inline def setMeta(value: GetZen): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: GetOctocat): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
       inline def setMigrations(value: DeleteArchiveForAuthenticatedUser): Self = StObject.set(x, "migrations", value.asInstanceOf[js.Any])
       
@@ -197,7 +197,7 @@ object distTypesGeneratedParametersAndResponseTypesMod {
       
       inline def setPulls(value: CreateReplyForReviewComment): Self = StObject.set(x, "pulls", value.asInstanceOf[js.Any])
       
-      inline def setRateLimit(value: Get1295): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
+      inline def setRateLimit(value: Get1332): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
       
       inline def setReactions(value: CreateForIssue): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
       
@@ -205,7 +205,7 @@ object distTypesGeneratedParametersAndResponseTypesMod {
       
       inline def setSearch(value: Commits): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      inline def setSecretScanning(value: ListAlertsForEnterprise): Self = StObject.set(x, "secretScanning", value.asInstanceOf[js.Any])
+      inline def setSecretScanning(value: GetSecurityAnalysisSettingsForEnterprise): Self = StObject.set(x, "secretScanning", value.asInstanceOf[js.Any])
       
       inline def setTeams(value: AddOrUpdateProjectPermissionsInOrg): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
       

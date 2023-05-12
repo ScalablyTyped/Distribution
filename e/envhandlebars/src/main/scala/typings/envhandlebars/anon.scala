@@ -23,6 +23,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
+  @js.native
+  trait FnCall extends StObject {
+    
+    def apply(): scala.Nothing = js.native
+    def apply(code: Double): scala.Nothing = js.native
+  }
+  
   trait TypeofAST extends StObject {
     
     val helpers: typings.handlebars.hbs.AST.helpers

@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ScrollPaddingInline
+import typings.csstype.mod.Property.OverscrollBehaviorX
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `456` extends StObject {
   
   var value: js.UndefOr[
-    (ScrollPaddingInline[Double | String]) | (js.Array[
+    OverscrollBehaviorX | (js.Array[
       (Extract[
-        js.UndefOr[
-          (ScrollPaddingInline[Double | String]) | (js.Array[NonNullable[js.UndefOr[ScrollPaddingInline[Double | String]]]])
-        ], 
+        js.UndefOr[OverscrollBehaviorX | js.Array[NonNullable[js.UndefOr[OverscrollBehaviorX]]]], 
         String
-      ]) | (NonNullable[js.UndefOr[ScrollPaddingInline[Double | String]]])
+      ]) | NonNullable[js.UndefOr[OverscrollBehaviorX]]
     ])
   ] = js.native
 }

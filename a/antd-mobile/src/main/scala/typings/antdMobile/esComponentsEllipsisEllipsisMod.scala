@@ -61,7 +61,7 @@ object esComponentsEllipsisEllipsisMod {
   @js.native
   val Ellipsis: FC[EllipsisProps] = js.native
   
-  /* Inlined {  content :string,   direction :'start' | 'end' | 'middle' | undefined,   rows :number | undefined,   expandText :string | undefined,   collapseText :string | undefined,   stopPropagationForActionButtons :std.Array<antd-mobile.antd-mobile/es/utils/with-stop-propagation.PropagationEvent> | undefined,   onContentClick :(e : react.react.MouseEvent<std.HTMLDivElement, std.MouseEvent>): void | undefined} & antd-mobile.antd-mobile/es/utils/native-props.NativeProps<never> */
+  /* Inlined {  content :string,   direction :'start' | 'end' | 'middle' | undefined,   rows :number | undefined,   expandText :string | undefined,   collapseText :string | undefined,   stopPropagationForActionButtons :std.Array<antd-mobile.antd-mobile/es/utils/with-stop-propagation.PropagationEvent> | undefined,   onContentClick :(e : react.react.MouseEvent<std.HTMLDivElement, std.MouseEvent>): void | undefined,   defaultExpanded :boolean | undefined} & antd-mobile.antd-mobile/es/utils/native-props.NativeProps<never> */
   trait EllipsisProps extends StObject {
     
     /** Identifies the currently active element when DOM focus is on a composite widget, textbox, group, or application. */
@@ -304,6 +304,8 @@ object esComponentsEllipsisEllipsisMod {
     
     var content: String
     
+    var defaultExpanded: js.UndefOr[Boolean] = js.undefined
+    
     var direction: js.UndefOr[start | end | middle] = js.undefined
     
     var expandText: js.UndefOr[String] = js.undefined
@@ -533,6 +535,10 @@ object esComponentsEllipsisEllipsisMod {
       inline def setCollapseTextUndefined: Self = StObject.set(x, "collapseText", js.undefined)
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultExpanded(value: Boolean): Self = StObject.set(x, "defaultExpanded", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultExpandedUndefined: Self = StObject.set(x, "defaultExpanded", js.undefined)
       
       inline def setDirection(value: start | end | middle): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       

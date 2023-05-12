@@ -17,6 +17,11 @@ object typingsModelsDisputeMod {
          with EntityBaseData {
       
       /**
+        * The date and time the dispute was closed
+        */
+      var ClosedDate: Timestamp
+      
+      /**
         * The deadline by which you must contest the dispute (if you wish to contest it)
         */
       var ContestDeadlineDate: Timestamp
@@ -79,6 +84,7 @@ object typingsModelsDisputeMod {
     object DisputeData {
       
       inline def apply(
+        ClosedDate: Timestamp,
         ContestDeadlineDate: Timestamp,
         ContestedFunds: MoneyData,
         CreationDate: Double,
@@ -95,12 +101,14 @@ object typingsModelsDisputeMod {
         StatusMessage: String,
         Tag: String
       ): DisputeData = {
-        val __obj = js.Dynamic.literal(ContestDeadlineDate = ContestDeadlineDate.asInstanceOf[js.Any], ContestedFunds = ContestedFunds.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], DisputeReason = DisputeReason.asInstanceOf[js.Any], DisputeType = DisputeType.asInstanceOf[js.Any], DisputedFunds = DisputedFunds.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], InitialTransactionId = InitialTransactionId.asInstanceOf[js.Any], InitialTransactionType = InitialTransactionType.asInstanceOf[js.Any], RepudiationId = RepudiationId.asInstanceOf[js.Any], ResultCode = ResultCode.asInstanceOf[js.Any], ResultMessage = ResultMessage.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], StatusMessage = StatusMessage.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(ClosedDate = ClosedDate.asInstanceOf[js.Any], ContestDeadlineDate = ContestDeadlineDate.asInstanceOf[js.Any], ContestedFunds = ContestedFunds.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], DisputeReason = DisputeReason.asInstanceOf[js.Any], DisputeType = DisputeType.asInstanceOf[js.Any], DisputedFunds = DisputedFunds.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], InitialTransactionId = InitialTransactionId.asInstanceOf[js.Any], InitialTransactionType = InitialTransactionType.asInstanceOf[js.Any], RepudiationId = RepudiationId.asInstanceOf[js.Any], ResultCode = ResultCode.asInstanceOf[js.Any], ResultMessage = ResultMessage.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], StatusMessage = StatusMessage.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any])
         __obj.asInstanceOf[DisputeData]
       }
       
       @scala.inline
       implicit open class MutableBuilder[Self <: DisputeData] (val x: Self) extends AnyVal {
+        
+        inline def setClosedDate(value: Timestamp): Self = StObject.set(x, "ClosedDate", value.asInstanceOf[js.Any])
         
         inline def setContestDeadlineDate(value: Timestamp): Self = StObject.set(x, "ContestDeadlineDate", value.asInstanceOf[js.Any])
         

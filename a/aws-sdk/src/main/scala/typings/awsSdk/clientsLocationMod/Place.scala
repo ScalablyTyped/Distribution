@@ -54,7 +54,7 @@ trait Place extends StObject {
   var Street: js.UndefOr[String] = js.undefined
   
   /**
-    * A country, or an area that's part of a larger region. For example, Metro Vancouver.
+    * A county, or an area that's part of a larger region. For example, Metro Vancouver.
     */
   var SubRegion: js.UndefOr[String] = js.undefined
   

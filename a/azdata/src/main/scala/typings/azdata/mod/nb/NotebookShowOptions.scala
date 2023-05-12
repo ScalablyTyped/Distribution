@@ -29,12 +29,12 @@ trait NotebookShowOptions extends StObject {
   var initialDirtyState: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * An optional flag that when `true` will stop the [editor](#NotebookEditor) from taking focus.
+    * An optional flag that when `true` will stop the {@link NotebookEditor} from taking focus.
     */
   var preserveFocus: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * An optional flag that controls if an [editor](#NotebookEditor)-tab will be replaced
+    * An optional flag that controls if an {@link NotebookEditor}-tab will be replaced
     * with the next editor or if it will be kept.
     */
   var preview: js.UndefOr[Boolean] = js.undefined
@@ -45,10 +45,10 @@ trait NotebookShowOptions extends StObject {
   var providerId: js.UndefOr[String] = js.undefined
   
   /**
-    * An optional view column in which the [editor](#NotebookEditor) should be shown.
-    * The default is the [active](#ViewColumn.Active), other values are adjusted to
-    * be `Min(column, columnCount + 1)`, the [active](#ViewColumn.Active)-column is
-    * not adjusted. Use [`ViewColumn.Beside`](#ViewColumn.Beside) to open the
+    * An optional view column in which the {@link NotebookEditor} should be shown.
+    * The default is the {@link vscode.ViewColumn.Active}, other values are adjusted to
+    * be `Min(column, columnCount + 1)`, the {@link vscode.ViewColumn.Active}-column is
+    * not adjusted. Use {@link vscode.ViewColumn.Beside} to open the
     * editor to the side of the currently active one.
     */
   var viewColumn: js.UndefOr[ViewColumn] = js.undefined

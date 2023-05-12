@@ -698,7 +698,7 @@ object distTypesMod {
     extends StObject
        with IEventTarget {
     
-    def addEventListener[K /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.antvGLite.antvGLiteStrings.fullscreenchange, typings.antvGLite.antvGLiteStrings.fullscreenerror, typings.antvGLite.antvGLiteStrings.copy */ Any */](
+    def addEventListener[K /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.antvGLite.antvGLiteStrings.fullscreenchange, typings.antvGLite.antvGLiteStrings.fullscreenerror, typings.antvGLite.antvGLiteStrings.abort */ Any */](
       `type`: K,
       listener: js.ThisFunction1[
           /* this */ HTMLCanvasElement, 
@@ -706,7 +706,7 @@ object distTypesMod {
           Any
         ]
     ): Unit = js.native
-    def addEventListener[K /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.antvGLite.antvGLiteStrings.fullscreenchange, typings.antvGLite.antvGLiteStrings.fullscreenerror, typings.antvGLite.antvGLiteStrings.copy */ Any */](
+    def addEventListener[K /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.antvGLite.antvGLiteStrings.fullscreenchange, typings.antvGLite.antvGLiteStrings.fullscreenerror, typings.antvGLite.antvGLiteStrings.abort */ Any */](
       `type`: K,
       listener: js.ThisFunction1[
           /* this */ HTMLCanvasElement, 
@@ -715,7 +715,7 @@ object distTypesMod {
         ],
       options: Boolean
     ): Unit = js.native
-    def addEventListener[K /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.antvGLite.antvGLiteStrings.fullscreenchange, typings.antvGLite.antvGLiteStrings.fullscreenerror, typings.antvGLite.antvGLiteStrings.copy */ Any */](
+    def addEventListener[K /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.antvGLite.antvGLiteStrings.fullscreenchange, typings.antvGLite.antvGLiteStrings.fullscreenerror, typings.antvGLite.antvGLiteStrings.abort */ Any */](
       `type`: K,
       listener: js.ThisFunction1[
           /* this */ HTMLCanvasElement, 
@@ -726,7 +726,7 @@ object distTypesMod {
     ): Unit = js.native
     @JSName("addEventListener")
     var addEventListener_Original: (js.Function3[
-        /* keyof std.HTMLElementEventMap */ /* type */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.antvGLite.antvGLiteStrings.fullscreenchange, typings.antvGLite.antvGLiteStrings.fullscreenerror, typings.antvGLite.antvGLiteStrings.copy */ Any, 
+        /* keyof std.HTMLElementEventMap */ /* type */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.antvGLite.antvGLiteStrings.fullscreenchange, typings.antvGLite.antvGLiteStrings.fullscreenerror, typings.antvGLite.antvGLiteStrings.abort */ Any, 
         /* listener */ js.ThisFunction1[
           /* this */ HTMLCanvasElement, 
           /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementEventMap[keyof std.HTMLElementEventMap] */ /* ev */ js.Any, 
@@ -771,7 +771,7 @@ object distTypesMod {
     var height: Double = js.native
     
     def removeEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
-    def removeEventListener[K /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.antvGLite.antvGLiteStrings.fullscreenchange, typings.antvGLite.antvGLiteStrings.fullscreenerror, typings.antvGLite.antvGLiteStrings.copy */ Any */](
+    def removeEventListener[K /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.antvGLite.antvGLiteStrings.fullscreenchange, typings.antvGLite.antvGLiteStrings.fullscreenerror, typings.antvGLite.antvGLiteStrings.abort */ Any */](
       `type`: K,
       listener: js.ThisFunction1[
           /* this */ HTMLCanvasElement, 
@@ -779,7 +779,7 @@ object distTypesMod {
           Any
         ]
     ): Unit = js.native
-    def removeEventListener[K /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.antvGLite.antvGLiteStrings.fullscreenchange, typings.antvGLite.antvGLiteStrings.fullscreenerror, typings.antvGLite.antvGLiteStrings.copy */ Any */](
+    def removeEventListener[K /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.antvGLite.antvGLiteStrings.fullscreenchange, typings.antvGLite.antvGLiteStrings.fullscreenerror, typings.antvGLite.antvGLiteStrings.abort */ Any */](
       `type`: K,
       listener: js.ThisFunction1[
           /* this */ HTMLCanvasElement, 
@@ -788,7 +788,7 @@ object distTypesMod {
         ],
       options: Boolean
     ): Unit = js.native
-    def removeEventListener[K /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.antvGLite.antvGLiteStrings.fullscreenchange, typings.antvGLite.antvGLiteStrings.fullscreenerror, typings.antvGLite.antvGLiteStrings.copy */ Any */](
+    def removeEventListener[K /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.antvGLite.antvGLiteStrings.fullscreenchange, typings.antvGLite.antvGLiteStrings.fullscreenerror, typings.antvGLite.antvGLiteStrings.abort */ Any */](
       `type`: K,
       listener: js.ThisFunction1[
           /* this */ HTMLCanvasElement, 
@@ -799,7 +799,7 @@ object distTypesMod {
     ): Unit = js.native
     @JSName("removeEventListener")
     var removeEventListener_Original: (js.Function3[
-        /* keyof std.HTMLElementEventMap */ /* type */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.antvGLite.antvGLiteStrings.fullscreenchange, typings.antvGLite.antvGLiteStrings.fullscreenerror, typings.antvGLite.antvGLiteStrings.copy */ Any, 
+        /* keyof std.HTMLElementEventMap */ /* type */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.antvGLite.antvGLiteStrings.fullscreenchange, typings.antvGLite.antvGLiteStrings.fullscreenerror, typings.antvGLite.antvGLiteStrings.abort */ Any, 
         /* listener */ js.ThisFunction1[
           /* this */ HTMLCanvasElement, 
           /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementEventMap[keyof std.HTMLElementEventMap] */ /* ev */ js.Any, 

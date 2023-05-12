@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FraudsterRegistrationJobSummary extends StObject {
   
   /**
-    * A timestamp showing when the fraudster registration job is created. 
+    * A timestamp of when the fraudster registration job was created. 
     */
   var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The identifier of the domain containing the fraudster registration job.
+    * The identifier of the domain that contains the fraudster registration job.
     */
   var DomainId: js.UndefOr[typings.awsSdk.clientsVoiceidMod.DomainId] = js.undefined
   
   /**
-    * A timestamp showing when the fraudster registration job ended.
+    * A timestamp of when the fraudster registration job ended.
     */
   var EndedAt: js.UndefOr[js.Date] = js.undefined
   

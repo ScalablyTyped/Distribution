@@ -37,9 +37,14 @@ trait AnomalySubscription extends StObject {
   var SubscriptionName: GenericString
   
   /**
-    * The dollar value that triggers a notification if the threshold is exceeded. 
+    * (deprecated) The dollar value that triggers a notification if the threshold is exceeded.  This field has been deprecated. To specify a threshold, use ThresholdExpression. Continued use of Threshold will be treated as shorthand syntax for a ThresholdExpression. One of Threshold or ThresholdExpression is required for this resource.
     */
-  var Threshold: NullableNonNegativeDouble
+  var Threshold: js.UndefOr[NullableNonNegativeDouble] = js.undefined
+  
+  /**
+    * An Expression object used to specify the anomalies that you want to generate alerts for. This supports dimensions and nested expressions. The supported dimensions are ANOMALY_TOTAL_IMPACT_ABSOLUTE and ANOMALY_TOTAL_IMPACT_PERCENTAGE. The supported nested expression types are AND and OR. The match option GREATER_THAN_OR_EQUAL is required. Values must be numbers between 0 and 10,000,000,000. One of Threshold or ThresholdExpression is required for this resource. The following are examples of valid ThresholdExpressions:   Absolute threshold: { "Dimensions": { "Key": "ANOMALY_TOTAL_IMPACT_ABSOLUTE", "MatchOptions": [ "GREATER_THAN_OR_EQUAL" ], "Values": [ "100" ] } }    Percentage threshold: { "Dimensions": { "Key": "ANOMALY_TOTAL_IMPACT_PERCENTAGE", "MatchOptions": [ "GREATER_THAN_OR_EQUAL" ], "Values": [ "100" ] } }     AND two thresholds together: { "And": [ { "Dimensions": { "Key": "ANOMALY_TOTAL_IMPACT_ABSOLUTE", "MatchOptions": [ "GREATER_THAN_OR_EQUAL" ], "Values": [ "100" ] } }, { "Dimensions": { "Key": "ANOMALY_TOTAL_IMPACT_PERCENTAGE", "MatchOptions": [ "GREATER_THAN_OR_EQUAL" ], "Values": [ "100" ] } } ] }     OR two thresholds together: { "Or": [ { "Dimensions": { "Key": "ANOMALY_TOTAL_IMPACT_ABSOLUTE", "MatchOptions": [ "GREATER_THAN_OR_EQUAL" ], "Values": [ "100" ] } }, { "Dimensions": { "Key": "ANOMALY_TOTAL_IMPACT_PERCENTAGE", "MatchOptions": [ "GREATER_THAN_OR_EQUAL" ], "Values": [ "100" ] } } ] }   
+    */
+  var ThresholdExpression: js.UndefOr[Expression] = js.undefined
 }
 object AnomalySubscription {
   
@@ -47,10 +52,9 @@ object AnomalySubscription {
     Frequency: AnomalySubscriptionFrequency,
     MonitorArnList: MonitorArnList,
     Subscribers: Subscribers,
-    SubscriptionName: GenericString,
-    Threshold: NullableNonNegativeDouble
+    SubscriptionName: GenericString
   ): AnomalySubscription = {
-    val __obj = js.Dynamic.literal(Frequency = Frequency.asInstanceOf[js.Any], MonitorArnList = MonitorArnList.asInstanceOf[js.Any], Subscribers = Subscribers.asInstanceOf[js.Any], SubscriptionName = SubscriptionName.asInstanceOf[js.Any], Threshold = Threshold.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Frequency = Frequency.asInstanceOf[js.Any], MonitorArnList = MonitorArnList.asInstanceOf[js.Any], Subscribers = Subscribers.asInstanceOf[js.Any], SubscriptionName = SubscriptionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnomalySubscription]
   }
   
@@ -78,5 +82,11 @@ object AnomalySubscription {
     inline def setSubscriptionName(value: GenericString): Self = StObject.set(x, "SubscriptionName", value.asInstanceOf[js.Any])
     
     inline def setThreshold(value: NullableNonNegativeDouble): Self = StObject.set(x, "Threshold", value.asInstanceOf[js.Any])
+    
+    inline def setThresholdExpression(value: Expression): Self = StObject.set(x, "ThresholdExpression", value.asInstanceOf[js.Any])
+    
+    inline def setThresholdExpressionUndefined: Self = StObject.set(x, "ThresholdExpression", js.undefined)
+    
+    inline def setThresholdUndefined: Self = StObject.set(x, "Threshold", js.undefined)
   }
 }

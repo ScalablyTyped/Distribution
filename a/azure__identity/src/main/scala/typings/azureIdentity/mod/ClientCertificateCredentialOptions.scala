@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClientCertificateCredentialOptions
   extends StObject
      with MultiTenantTokenCredentialOptions
-     with CredentialPersistenceOptions {
+     with CredentialPersistenceOptions
+     with AuthorityValidationOptions {
   
   /**
     * Option to include x5c header for SubjectName and Issuer name authorization.

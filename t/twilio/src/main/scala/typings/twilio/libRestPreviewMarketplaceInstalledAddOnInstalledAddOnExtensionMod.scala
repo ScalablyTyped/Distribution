@@ -1,201 +1,124 @@
 package typings.twilio
 
+import typings.twilio.anon.Enabled
 import typings.twilio.libBasePageMod.TwilioResponsePayload
-import typings.twilio.libInterfacesMod.SerializableClass
+import typings.twilio.libRestPreviewMarketplaceMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libRestPreviewMarketplaceInstalledAddOnInstalledAddOnExtensionMod {
   
-  @JSImport("twilio/lib/rest/preview/marketplace/installedAddOn/installedAddOnExtension", JSImport.Namespace)
+  @JSImport("twilio/lib/rest/preview/marketplace/installedAddOn/installedAddOnExtension", "InstalledAddOnExtensionContextImpl")
   @js.native
-  val ^ : js.Any = js.native
-  
-  @JSImport("twilio/lib/rest/preview/marketplace/installedAddOn/installedAddOnExtension", "InstalledAddOnExtensionContext")
-  @js.native
-  open class InstalledAddOnExtensionContext protected () extends StObject {
-    /**
-      * Initialize the InstalledAddOnExtensionContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param installedAddOnSid - The SID of the InstalledAddOn resource with the extension to fetch
-      * @param sid - The SID of the InstalledAddOn Extension resource to fetch
-      */
-    def this(version: typings.twilio.libRestPreviewMarketplaceMod.^, installedAddOnSid: String, sid: String) = this()
+  open class InstalledAddOnExtensionContextImpl protected ()
+    extends StObject
+       with InstalledAddOnExtensionContext {
+    def this(_version: default, installedAddOnSid: String, sid: String) = this()
     
-    /**
-      * fetch a InstalledAddOnExtensionInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def fetch(): js.Promise[InstalledAddOnExtensionInstance] = js.native
-    def fetch(
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ InstalledAddOnExtensionInstance, Any]
-    ): js.Promise[InstalledAddOnExtensionInstance] = js.native
+    /* protected */ var _solution: InstalledAddOnExtensionContextSolution = js.native
     
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
+    /* protected */ var _uri: String = js.native
     
-    /**
-      * update a InstalledAddOnExtensionInstance
-      *
-      * @param opts - Options for request
-      * @param callback - Callback to handle processed record
-      */
-    def update(opts: InstalledAddOnExtensionInstanceUpdateOptions): js.Promise[InstalledAddOnExtensionInstance] = js.native
-    def update(
-      opts: InstalledAddOnExtensionInstanceUpdateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ InstalledAddOnExtensionInstance, Any]
-    ): js.Promise[InstalledAddOnExtensionInstance] = js.native
+    /* protected */ var _version: default = js.native
   }
   
   @JSImport("twilio/lib/rest/preview/marketplace/installedAddOn/installedAddOnExtension", "InstalledAddOnExtensionInstance")
   @js.native
-  open class InstalledAddOnExtensionInstance protected () extends SerializableClass {
-    /**
-      * Initialize the InstalledAddOnExtensionContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param payload - The instance payload
-      * @param installedAddOnSid - The SID of the InstalledAddOn resource to which this extension applies
-      * @param sid - The SID of the InstalledAddOn Extension resource to fetch
-      */
+  open class InstalledAddOnExtensionInstance protected () extends StObject {
+    def this(_version: default, payload: InstalledAddOnExtensionResource, installedAddOnSid: String) = this()
     def this(
-      version: typings.twilio.libRestPreviewMarketplaceMod.^,
-      payload: InstalledAddOnExtensionPayload,
+      _version: default,
+      payload: InstalledAddOnExtensionResource,
       installedAddOnSid: String,
       sid: String
     ) = this()
     
-    /* private */ var _proxy: InstalledAddOnExtensionContext = js.native
+    /* protected */ var _context: js.UndefOr[InstalledAddOnExtensionContext] = js.native
     
+    /* private */ def _proxy: Any = js.native
+    
+    /* protected */ var _solution: InstalledAddOnExtensionContextSolution = js.native
+    
+    /* protected */ var _version: default = js.native
+    
+    /**
+      * Whether the Extension will be invoked.
+      */
     var enabled: Boolean = js.native
     
     /**
-      * fetch a InstalledAddOnExtensionInstance
+      * Fetch a InstalledAddOnExtensionInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed InstalledAddOnExtensionInstance
       */
     def fetch(): js.Promise[InstalledAddOnExtensionInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[InstalledAddOnExtensionInstance] = js.native
+    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]): js.Promise[InstalledAddOnExtensionInstance] = js.native
     
+    /**
+      * The string that you assigned to describe the resource.
+      */
     var friendlyName: String = js.native
     
+    /**
+      * The SID of the InstalledAddOn resource to which this extension applies.
+      */
     var installedAddOnSid: String = js.native
     
+    /**
+      * The name of the Product this Extension is used within.
+      */
     var productName: String = js.native
     
+    /**
+      * The unique string that we created to identify the InstalledAddOn Extension resource.
+      */
     var sid: String = js.native
-    
-    var uniqueName: String = js.native
-    
-    /**
-      * update a InstalledAddOnExtensionInstance
-      *
-      * @param opts - Options for request
-      * @param callback - Callback to handle processed record
-      */
-    def update(opts: InstalledAddOnExtensionInstanceUpdateOptions): js.Promise[InstalledAddOnExtensionInstance] = js.native
-    def update(
-      opts: InstalledAddOnExtensionInstanceUpdateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]
-    ): js.Promise[InstalledAddOnExtensionInstance] = js.native
-    
-    var url: String = js.native
-  }
-  
-  /**
-    * Initialize the InstalledAddOnExtensionList
-    *
-    * PLEASE NOTE that this class contains preview products that are subject to
-    * change. Use them with caution. If you currently do not have developer preview
-    * access, please contact help@twilio.com.
-    *
-    * @param version - Version of the resource
-    * @param installedAddOnSid - The SID of the InstalledAddOn resource to which this extension applies
-    */
-  inline def InstalledAddOnExtensionList(version: typings.twilio.libRestPreviewMarketplaceMod.^, installedAddOnSid: String): InstalledAddOnExtensionListInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("InstalledAddOnExtensionList")(version.asInstanceOf[js.Any], installedAddOnSid.asInstanceOf[js.Any])).asInstanceOf[InstalledAddOnExtensionListInstance]
-  
-  @JSImport("twilio/lib/rest/preview/marketplace/installedAddOn/installedAddOnExtension", "InstalledAddOnExtensionPage")
-  @js.native
-  open class InstalledAddOnExtensionPage protected ()
-    extends typings.twilio.libBasePageMod.^[
-          typings.twilio.libRestPreviewMarketplaceMod.^, 
-          InstalledAddOnExtensionPayload, 
-          InstalledAddOnExtensionResource, 
-          InstalledAddOnExtensionInstance
-        ] {
-    /**
-      * Initialize the InstalledAddOnExtensionPage
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param response - Response from the API
-      * @param solution - Path solution
-      */
-    def this(
-      version: typings.twilio.libRestPreviewMarketplaceMod.^,
-      response: typings.twilio.libHttpResponseMod.^[String],
-      solution: InstalledAddOnExtensionSolution
-    ) = this()
-    
-    /**
-      * Build an instance of InstalledAddOnExtensionInstance
-      *
-      * @param payload - Payload response from the API
-      */
-    def getInstance(payload: InstalledAddOnExtensionPayload): InstalledAddOnExtensionInstance = js.native
     
     /**
       * Provide a user-friendly representation
+      *
+      * @returns Object
       */
-    def toJSON(): Any = js.native
-  }
-  
-  /**
-    * Options to pass to update
-    *
-    * @property enabled - Whether the Extension should be invoked
-    */
-  trait InstalledAddOnExtensionInstanceUpdateOptions extends StObject {
+    def toJSON(): Enabled = js.native
     
-    var enabled: Boolean
-  }
-  object InstalledAddOnExtensionInstanceUpdateOptions {
+    /**
+      * An application-defined string that uniquely identifies the resource.
+      */
+    var uniqueName: String = js.native
     
-    inline def apply(enabled: Boolean): InstalledAddOnExtensionInstanceUpdateOptions = {
-      val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
-      __obj.asInstanceOf[InstalledAddOnExtensionInstanceUpdateOptions]
-    }
+    /**
+      * Update a InstalledAddOnExtensionInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed InstalledAddOnExtensionInstance
+      */
+    def update(params: InstalledAddOnExtensionContextUpdateOptions): js.Promise[InstalledAddOnExtensionInstance] = js.native
+    def update(
+      params: InstalledAddOnExtensionContextUpdateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]
+    ): js.Promise[InstalledAddOnExtensionInstance] = js.native
     
-    @scala.inline
-    implicit open class MutableBuilder[Self <: InstalledAddOnExtensionInstanceUpdateOptions] (val x: Self) extends AnyVal {
-      
-      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
-    }
+    /**
+      * The absolute URL of the resource.
+      */
+    var url: String = js.native
   }
   
   @js.native
   trait InstalledAddOnExtensionListInstance extends StObject {
     
-    /**
-      * @param sid - sid of instance
-      */
     def apply(sid: String): InstalledAddOnExtensionContext = js.native
+    
+    var _solution: InstalledAddOnExtensionSolution = js.native
+    
+    var _uri: String = js.native
+    
+    var _version: default = js.native
     
     /**
       * Streams InstalledAddOnExtensionInstance records from the API.
@@ -209,7 +132,8 @@ object libRestPreviewMarketplaceInstalledAddOnInstalledAddOnExtensionMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Function to process each record
+      * @param { InstalledAddOnExtensionListInstanceEachOptions } [params] - Options for request
+      * @param { function } [callback] - Function to process each record
       */
     def each(): Unit = js.native
     def each(
@@ -219,17 +143,9 @@ object libRestPreviewMarketplaceInstalledAddOnInstalledAddOnExtensionMod {
           Unit
         ]
     ): Unit = js.native
+    def each(params: InstalledAddOnExtensionListInstanceEachOptions): Unit = js.native
     def each(
-      opts: Unit,
-      callback: js.Function2[
-          /* item */ InstalledAddOnExtensionInstance, 
-          /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
-          Unit
-        ]
-    ): Unit = js.native
-    def each(opts: InstalledAddOnExtensionListInstanceEachOptions): Unit = js.native
-    def each(
-      opts: InstalledAddOnExtensionListInstanceEachOptions,
+      params: InstalledAddOnExtensionListInstanceEachOptions,
       callback: js.Function2[
           /* item */ InstalledAddOnExtensionInstance, 
           /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
@@ -237,33 +153,19 @@ object libRestPreviewMarketplaceInstalledAddOnInstalledAddOnExtensionMod {
         ]
     ): Unit = js.native
     
-    /**
-      * Constructs a installed_add_on_extension
-      *
-      * @param sid - The SID of the InstalledAddOn Extension resource to fetch
-      */
     def get(sid: String): InstalledAddOnExtensionContext = js.native
     
     /**
-      * Retrieve a single target page of InstalledAddOnExtensionInstance records from
-      * the API.
+      * Retrieve a single target page of InstalledAddOnExtensionInstance records from the API.
       *
       * The request is executed immediately.
       *
-      * If a function is passed as the first argument, it will be used as the callback
-      * function.
-      *
-      * @param callback - Callback to handle list of records
+      * @param { string } [targetUrl] - API-generated URL for the requested results page
+      * @param { function } [callback] - Callback to handle list of records
       */
-    def getPage(): js.Promise[InstalledAddOnExtensionPage] = js.native
-    def getPage(callback: js.Function2[/* error */ js.Error | Null, /* items */ InstalledAddOnExtensionPage, Any]): js.Promise[InstalledAddOnExtensionPage] = js.native
     def getPage(targetUrl: String): js.Promise[InstalledAddOnExtensionPage] = js.native
     def getPage(
       targetUrl: String,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ InstalledAddOnExtensionPage, Any]
-    ): js.Promise[InstalledAddOnExtensionPage] = js.native
-    def getPage(
-      targetUrl: Unit,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ InstalledAddOnExtensionPage, Any]
     ): js.Promise[InstalledAddOnExtensionPage] = js.native
     
@@ -273,7 +175,8 @@ object libRestPreviewMarketplaceInstalledAddOnInstalledAddOnExtensionMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { InstalledAddOnExtensionListInstanceOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def list(): js.Promise[js.Array[InstalledAddOnExtensionInstance]] = js.native
     def list(
@@ -283,17 +186,9 @@ object libRestPreviewMarketplaceInstalledAddOnInstalledAddOnExtensionMod {
           Any
         ]
     ): js.Promise[js.Array[InstalledAddOnExtensionInstance]] = js.native
+    def list(params: InstalledAddOnExtensionListInstanceOptions): js.Promise[js.Array[InstalledAddOnExtensionInstance]] = js.native
     def list(
-      opts: Unit,
-      callback: js.Function2[
-          /* error */ js.Error | Null, 
-          /* items */ js.Array[InstalledAddOnExtensionInstance], 
-          Any
-        ]
-    ): js.Promise[js.Array[InstalledAddOnExtensionInstance]] = js.native
-    def list(opts: InstalledAddOnExtensionListInstanceOptions): js.Promise[js.Array[InstalledAddOnExtensionInstance]] = js.native
-    def list(
-      opts: InstalledAddOnExtensionListInstanceOptions,
+      params: InstalledAddOnExtensionListInstanceOptions,
       callback: js.Function2[
           /* error */ js.Error | Null, 
           /* items */ js.Array[InstalledAddOnExtensionInstance], 
@@ -309,17 +204,14 @@ object libRestPreviewMarketplaceInstalledAddOnInstalledAddOnExtensionMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { InstalledAddOnExtensionListInstancePageOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def page(): js.Promise[InstalledAddOnExtensionPage] = js.native
     def page(callback: js.Function2[/* error */ js.Error | Null, /* items */ InstalledAddOnExtensionPage, Any]): js.Promise[InstalledAddOnExtensionPage] = js.native
+    def page(params: InstalledAddOnExtensionListInstancePageOptions): js.Promise[InstalledAddOnExtensionPage] = js.native
     def page(
-      opts: Unit,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ InstalledAddOnExtensionPage, Any]
-    ): js.Promise[InstalledAddOnExtensionPage] = js.native
-    def page(opts: InstalledAddOnExtensionListInstancePageOptions): js.Promise[InstalledAddOnExtensionPage] = js.native
-    def page(
-      opts: InstalledAddOnExtensionListInstancePageOptions,
+      params: InstalledAddOnExtensionListInstancePageOptions,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ InstalledAddOnExtensionPage, Any]
     ): js.Promise[InstalledAddOnExtensionPage] = js.native
     
@@ -328,27 +220,130 @@ object libRestPreviewMarketplaceInstalledAddOnInstalledAddOnExtensionMod {
       */
     def toJSON(): Any = js.native
   }
+  object InstalledAddOnExtensionListInstance {
+    
+    @JSImport("twilio/lib/rest/preview/marketplace/installedAddOn/installedAddOnExtension", "InstalledAddOnExtensionListInstance")
+    @js.native
+    def apply(version: default, installedAddOnSid: String): InstalledAddOnExtensionListInstance = js.native
+  }
   
-  /**
-    * Options to pass to each
-    *
-    * @property callback -
-    *                         Function to process each record. If this and a positional
-    *                         callback are passed, this one will be used
-    * @property done - Function to be called upon completion of streaming
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         each() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no pageSize is defined but a limit is defined,
-    *                         each() will attempt to read the limit with the most efficient
-    *                         page size, i.e. min(limit, 1000)
-    */
+  @JSImport("twilio/lib/rest/preview/marketplace/installedAddOn/installedAddOnExtension", "InstalledAddOnExtensionPage")
+  @js.native
+  open class InstalledAddOnExtensionPage protected ()
+    extends typings.twilio.libBasePageMod.default[
+          default, 
+          InstalledAddOnExtensionPayload, 
+          InstalledAddOnExtensionResource, 
+          InstalledAddOnExtensionInstance
+        ] {
+    /**
+      * Initialize the InstalledAddOnExtensionPage
+      *
+      * @param version - Version of the resource
+      * @param response - Response from the API
+      * @param solution - Path solution
+      */
+    def this(
+      version: default,
+      response: typings.twilio.libHttpResponseMod.default[String],
+      solution: InstalledAddOnExtensionSolution
+    ) = this()
+    
+    /**
+      * Build an instance of InstalledAddOnExtensionInstance
+      *
+      * @param payload - Payload response from the API
+      */
+    def getInstance(payload: InstalledAddOnExtensionResource): InstalledAddOnExtensionInstance = js.native
+  }
+  
+  @js.native
+  trait InstalledAddOnExtensionContext extends StObject {
+    
+    /**
+      * Fetch a InstalledAddOnExtensionInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed InstalledAddOnExtensionInstance
+      */
+    def fetch(): js.Promise[InstalledAddOnExtensionInstance] = js.native
+    def fetch(
+      callback: js.Function2[
+          /* error */ js.Error | Null, 
+          /* item */ js.UndefOr[InstalledAddOnExtensionInstance], 
+          Any
+        ]
+    ): js.Promise[InstalledAddOnExtensionInstance] = js.native
+    
+    /**
+      * Provide a user-friendly representation
+      */
+    def toJSON(): Any = js.native
+    
+    /**
+      * Update a InstalledAddOnExtensionInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed InstalledAddOnExtensionInstance
+      */
+    def update(params: InstalledAddOnExtensionContextUpdateOptions): js.Promise[InstalledAddOnExtensionInstance] = js.native
+    def update(
+      params: InstalledAddOnExtensionContextUpdateOptions,
+      callback: js.Function2[
+          /* error */ js.Error | Null, 
+          /* item */ js.UndefOr[InstalledAddOnExtensionInstance], 
+          Any
+        ]
+    ): js.Promise[InstalledAddOnExtensionInstance] = js.native
+  }
+  
+  trait InstalledAddOnExtensionContextSolution extends StObject {
+    
+    var installedAddOnSid: String
+    
+    var sid: String
+  }
+  object InstalledAddOnExtensionContextSolution {
+    
+    inline def apply(installedAddOnSid: String, sid: String): InstalledAddOnExtensionContextSolution = {
+      val __obj = js.Dynamic.literal(installedAddOnSid = installedAddOnSid.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any])
+      __obj.asInstanceOf[InstalledAddOnExtensionContextSolution]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstalledAddOnExtensionContextSolution] (val x: Self) extends AnyVal {
+      
+      inline def setInstalledAddOnSid(value: String): Self = StObject.set(x, "installedAddOnSid", value.asInstanceOf[js.Any])
+      
+      inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait InstalledAddOnExtensionContextUpdateOptions extends StObject {
+    
+    /** Whether the Extension should be invoked. */
+    var enabled: Boolean
+  }
+  object InstalledAddOnExtensionContextUpdateOptions {
+    
+    inline def apply(enabled: Boolean): InstalledAddOnExtensionContextUpdateOptions = {
+      val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
+      __obj.asInstanceOf[InstalledAddOnExtensionContextUpdateOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstalledAddOnExtensionContextUpdateOptions] (val x: Self) extends AnyVal {
+      
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait InstalledAddOnExtensionListInstanceEachOptions extends StObject {
     
+    /** Function to process each record. If this and a positional callback are passed, this one will be used */
     var callback: js.UndefOr[
         js.Function2[
           /* item */ InstalledAddOnExtensionInstance, 
@@ -357,10 +352,13 @@ object libRestPreviewMarketplaceInstalledAddOnInstalledAddOnExtensionMod {
         ]
       ] = js.undefined
     
+    /** Function to be called upon completion of streaming */
     var done: js.UndefOr[js.Function] = js.undefined
     
+    /** Upper limit for the number of records to return. each() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
   }
   object InstalledAddOnExtensionListInstanceEachOptions {
@@ -393,24 +391,12 @@ object libRestPreviewMarketplaceInstalledAddOnInstalledAddOnExtensionMod {
     }
   }
   
-  /**
-    * Options to pass to list
-    *
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         list() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no page_size is defined but a limit is defined,
-    *                         list() will attempt to read the limit with the most
-    *                         efficient page size, i.e. min(limit, 1000)
-    */
   trait InstalledAddOnExtensionListInstanceOptions extends StObject {
     
+    /** Upper limit for the number of records to return. list() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
   }
   object InstalledAddOnExtensionListInstanceOptions {
@@ -433,19 +419,15 @@ object libRestPreviewMarketplaceInstalledAddOnInstalledAddOnExtensionMod {
     }
   }
   
-  /**
-    * Options to pass to page
-    *
-    * @property pageNumber - Page Number, this value is simply for client state
-    * @property pageSize - Number of records to return, defaults to 50
-    * @property pageToken - PageToken provided by the API
-    */
   trait InstalledAddOnExtensionListInstancePageOptions extends StObject {
     
+    /** Page Number, this value is simply for client state */
     var pageNumber: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
     
+    /** PageToken provided by the API */
     var pageToken: js.UndefOr[String] = js.undefined
   }
   object InstalledAddOnExtensionListInstancePageOptions {
@@ -474,27 +456,31 @@ object libRestPreviewMarketplaceInstalledAddOnInstalledAddOnExtensionMod {
   
   trait InstalledAddOnExtensionPayload
     extends StObject
-       with InstalledAddOnExtensionResource
-       with TwilioResponsePayload
+       with TwilioResponsePayload {
+    
+    var extensions: js.Array[InstalledAddOnExtensionResource]
+  }
   object InstalledAddOnExtensionPayload {
     
     inline def apply(
-      enabled: Boolean,
+      extensions: js.Array[InstalledAddOnExtensionResource],
       first_page_uri: String,
-      friendly_name: String,
-      installed_add_on_sid: String,
       next_page_uri: String,
       page: Double,
       page_size: Double,
       previous_page_uri: String,
-      product_name: String,
-      sid: String,
-      unique_name: String,
-      uri: String,
-      url: String
+      uri: String
     ): InstalledAddOnExtensionPayload = {
-      val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], first_page_uri = first_page_uri.asInstanceOf[js.Any], friendly_name = friendly_name.asInstanceOf[js.Any], installed_add_on_sid = installed_add_on_sid.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], product_name = product_name.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any], unique_name = unique_name.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(extensions = extensions.asInstanceOf[js.Any], first_page_uri = first_page_uri.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[InstalledAddOnExtensionPayload]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstalledAddOnExtensionPayload] (val x: Self) extends AnyVal {
+      
+      inline def setExtensions(value: js.Array[InstalledAddOnExtensionResource]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      
+      inline def setExtensionsVarargs(value: InstalledAddOnExtensionResource*): Self = StObject.set(x, "extensions", js.Array(value*))
     }
   }
   
@@ -550,12 +536,12 @@ object libRestPreviewMarketplaceInstalledAddOnInstalledAddOnExtensionMod {
   
   trait InstalledAddOnExtensionSolution extends StObject {
     
-    var installedAddOnSid: js.UndefOr[String] = js.undefined
+    var installedAddOnSid: String
   }
   object InstalledAddOnExtensionSolution {
     
-    inline def apply(): InstalledAddOnExtensionSolution = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(installedAddOnSid: String): InstalledAddOnExtensionSolution = {
+      val __obj = js.Dynamic.literal(installedAddOnSid = installedAddOnSid.asInstanceOf[js.Any])
       __obj.asInstanceOf[InstalledAddOnExtensionSolution]
     }
     
@@ -563,8 +549,6 @@ object libRestPreviewMarketplaceInstalledAddOnInstalledAddOnExtensionMod {
     implicit open class MutableBuilder[Self <: InstalledAddOnExtensionSolution] (val x: Self) extends AnyVal {
       
       inline def setInstalledAddOnSid(value: String): Self = StObject.set(x, "installedAddOnSid", value.asInstanceOf[js.Any])
-      
-      inline def setInstalledAddOnSidUndefined: Self = StObject.set(x, "installedAddOnSid", js.undefined)
     }
   }
 }

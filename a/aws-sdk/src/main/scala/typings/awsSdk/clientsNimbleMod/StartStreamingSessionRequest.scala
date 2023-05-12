@@ -7,7 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StartStreamingSessionRequest extends StObject {
   
   /**
-    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. If you don’t specify a client token, the AWS SDK automatically generates a client token and uses it for the request to ensure idempotency.
+    * The ID of the backup.
+    */
+  var backupId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. If you don’t specify a client token, the Amazon Web Services SDK automatically generates a client token and uses it for the request to ensure idempotency.
     */
   var clientToken: js.UndefOr[ClientToken] = js.undefined
   
@@ -30,6 +35,10 @@ object StartStreamingSessionRequest {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: StartStreamingSessionRequest] (val x: Self) extends AnyVal {
+    
+    inline def setBackupId(value: String): Self = StObject.set(x, "backupId", value.asInstanceOf[js.Any])
+    
+    inline def setBackupIdUndefined: Self = StObject.set(x, "backupId", js.undefined)
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

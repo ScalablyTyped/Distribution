@@ -2,6 +2,7 @@ package typings.sentryCore
 
 import typings.sentryTypes.typesTransportMod.InternalBaseTransportOptions
 import typings.sentryTypes.typesTransportMod.Transport
+import typings.sentryTypes.typesTransportMod.TransportMakeRequestResponse
 import typings.sentryTypes.typesTransportMod.TransportRequestExecutor
 import typings.sentryUtils.typesPromisebufferMod.PromiseBuffer
 import org.scalablytyped.runtime.StObject
@@ -22,6 +23,6 @@ object typesTransportsBaseMod {
   inline def createTransport(
     options: InternalBaseTransportOptions,
     makeRequest: TransportRequestExecutor,
-    buffer: PromiseBuffer[Unit]
+    buffer: PromiseBuffer[Unit | TransportMakeRequestResponse]
   ): Transport = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(options.asInstanceOf[js.Any], makeRequest.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Transport]
 }

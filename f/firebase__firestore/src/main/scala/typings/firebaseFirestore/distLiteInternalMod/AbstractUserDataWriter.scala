@@ -23,6 +23,14 @@ trait AbstractUserDataWriter extends StObject {
   
   /* private */ var convertObject: Any = js.native
   
+  /**
+    * @internal
+    */
+  def convertObjectMap(): typings.firebaseFirestoreTypes.mod.DocumentData = js.native
+  def convertObjectMap(fields: Unit, serverTimestampBehavior: ServerTimestampBehavior): typings.firebaseFirestoreTypes.mod.DocumentData = js.native
+  def convertObjectMap(fields: ApiClientObjectMap[Value]): typings.firebaseFirestoreTypes.mod.DocumentData = js.native
+  def convertObjectMap(fields: ApiClientObjectMap[Value], serverTimestampBehavior: ServerTimestampBehavior): typings.firebaseFirestoreTypes.mod.DocumentData = js.native
+  
   /* protected */ def convertReference(name: String): Any = js.native
   
   /* private */ var convertServerTimestamp: Any = js.native

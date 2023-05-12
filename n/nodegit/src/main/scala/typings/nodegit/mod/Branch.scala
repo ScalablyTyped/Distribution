@@ -28,7 +28,7 @@ object Branch {
     branchName: String,
     commit: typings.nodegit.annotatedCommitMod.AnnotatedCommit,
     force: Double
-  ): typings.nodegit.referenceMod.Reference = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromAnnotated")(repository.asInstanceOf[js.Any], branchName.asInstanceOf[js.Any], commit.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[typings.nodegit.referenceMod.Reference]
+  ): js.Promise[typings.nodegit.referenceMod.Reference] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromAnnotated")(repository.asInstanceOf[js.Any], branchName.asInstanceOf[js.Any], commit.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.referenceMod.Reference]]
   
   inline def delete(branch: typings.nodegit.referenceMod.Reference): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(branch.asInstanceOf[js.Any]).asInstanceOf[Double]
   

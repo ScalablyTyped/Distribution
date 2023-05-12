@@ -11,6 +11,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(source: js.Iterable[Any]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def default(source: js.Iterable[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def default(source: AsyncIterable[Any]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  
+  inline def default_Promise(source: js.Iterable[Any]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

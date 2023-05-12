@@ -11,15 +11,14 @@ open class EllipsoidTerrainProvider () extends StObject {
   
   /**
     * Gets an object that can be used to determine availability of terrain from this provider, such as
-    * at points and in rectangles.  This function should not be called before
-    * {@link TerrainProvider#ready} returns true.  This property may be undefined if availability
+    * at points and in rectangles. This property may be undefined if availability
     * information is not available.
     */
   val availability: TileAvailability = js.native
   
   /**
     * Gets the credit to display when this terrain provider is active.  Typically this is used to credit
-    * the source of the terrain.  This function should not be called before {@link EllipsoidTerrainProvider#ready} returns true.
+    * the source of the terrain.
     */
   val credit: Credit = js.native
   
@@ -48,15 +47,13 @@ open class EllipsoidTerrainProvider () extends StObject {
   
   /**
     * Gets a value indicating whether or not the requested tiles include vertex normals.
-    * This function should not be called before {@link EllipsoidTerrainProvider#ready} returns true.
     */
   val hasVertexNormals: Boolean = js.native
   
   /**
     * Gets a value indicating whether or not the provider includes a water mask.  The water mask
     * indicates which areas of the globe are water rather than land, so they can be rendered
-    * as a reflective surface with animated waves.  This function should not be
-    * called before {@link EllipsoidTerrainProvider#ready} returns true.
+    * as a reflective surface with animated waves.
     */
   val hasWaterMask: Boolean = js.native
   
@@ -80,8 +77,7 @@ open class EllipsoidTerrainProvider () extends StObject {
   val readyPromise: js.Promise[Boolean] = js.native
   
   /**
-    * Requests the geometry for a given tile.  This function should not be called before
-    * {@link TerrainProvider#ready} returns true.  The result includes terrain
+    * Requests the geometry for a given tile. The result includes terrain
     * data and indicates that all child tiles are available.
     * @param x - The X coordinate of the tile for which to request geometry.
     * @param y - The Y coordinate of the tile for which to request geometry.
@@ -95,8 +91,7 @@ open class EllipsoidTerrainProvider () extends StObject {
   def requestTileGeometry(x: Double, y: Double, level: Double, request: Request): js.UndefOr[js.Promise[TerrainData]] = js.native
   
   /**
-    * Gets the tiling scheme used by this provider.  This function should
-    * not be called before {@link EllipsoidTerrainProvider#ready} returns true.
+    * Gets the tiling scheme used by this provider.
     */
   val tilingScheme: GeographicTilingScheme = js.native
 }

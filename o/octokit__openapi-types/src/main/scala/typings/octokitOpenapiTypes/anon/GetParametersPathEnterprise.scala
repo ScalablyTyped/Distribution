@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetParametersPathEnterprise extends StObject {
   
   /**
-    * Gets the total GitHub Actions cache usage for an enterprise.
-    * The data fetched using this API is refreshed approximately every 5 minutes, so values returned from this endpoint may take at least 5 minutes to get updated.
-    * You must authenticate using an access token with the `admin:enterprise` scope to use this endpoint.
+    * List secret scanning alerts for an enterprise
+    * @description Lists secret scanning alerts for eligible repositories in an enterprise, from newest to oldest.
+    * To use this endpoint, you must be a member of the enterprise, and you must use an access token with the `repo` scope or `security_events` scope. Alerts are only returned for organizations in the enterprise for which you are an organization owner or a [security manager](https://docs.github.com/organizations/managing-peoples-access-to-your-organization-with-roles/managing-security-managers-in-your-organization).
     */
   var get: ParametersPathEnterprise
 }

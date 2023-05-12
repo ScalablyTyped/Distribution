@@ -27,7 +27,7 @@ trait ReplicationGroup extends StObject {
   var AuthTokenLastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    *  If you are running Redis engine version 6.0 or later, set this parameter to yes if you want to opt-in to the next auto minor version upgrade campaign. This parameter is disabled for previous versions. 
+    * If you are running Redis engine version 6.0 or later, set this parameter to yes if you want to opt-in to the next auto minor version upgrade campaign. This parameter is disabled for previous versions. 
     */
   var AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.undefined
   
@@ -45,6 +45,11 @@ trait ReplicationGroup extends StObject {
     * A flag indicating whether or not this replication group is cluster enabled; i.e., whether its data can be partitioned across multiple shards (API/CLI: node groups). Valid values: true | false 
     */
   var ClusterEnabled: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
+    * Enabled or Disabled. To modify cluster mode from Disabled to Enabled, you must first set the cluster mode to Compatible. Compatible mode allows your Redis clients to connect using both cluster mode enabled and cluster mode disabled. After you migrate all Redis clients to use cluster mode enabled, you can then complete cluster mode configuration and set the cluster mode to Enabled.
+    */
+  var ClusterMode: js.UndefOr[typings.awsSdk.clientsElasticacheMod.ClusterMode] = js.undefined
   
   /**
     * The configuration endpoint for this replication group. Use the configuration endpoint to connect to this replication group.
@@ -142,9 +147,14 @@ trait ReplicationGroup extends StObject {
   var Status: js.UndefOr[String] = js.undefined
   
   /**
-    * A flag that enables in-transit encryption when set to true. You cannot modify the value of TransitEncryptionEnabled after the cluster is created. To enable in-transit encryption on a cluster you must set TransitEncryptionEnabled to true when you create a cluster.  Required: Only available when creating a replication group in an Amazon VPC using redis version 3.2.6, 4.x or later. Default: false 
+    * A flag that enables in-transit encryption when set to true.  Required: Only available when creating a replication group in an Amazon VPC using redis version 3.2.6, 4.x or later. Default: false 
     */
   var TransitEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
+    * A setting that allows you to migrate your clients to use in-transit encryption, with no downtime.
+    */
+  var TransitEncryptionMode: js.UndefOr[typings.awsSdk.clientsElasticacheMod.TransitEncryptionMode] = js.undefined
   
   /**
     * The ID of the user group associated to the replication group.
@@ -192,6 +202,10 @@ object ReplicationGroup {
     inline def setClusterEnabled(value: BooleanOptional): Self = StObject.set(x, "ClusterEnabled", value.asInstanceOf[js.Any])
     
     inline def setClusterEnabledUndefined: Self = StObject.set(x, "ClusterEnabled", js.undefined)
+    
+    inline def setClusterMode(value: ClusterMode): Self = StObject.set(x, "ClusterMode", value.asInstanceOf[js.Any])
+    
+    inline def setClusterModeUndefined: Self = StObject.set(x, "ClusterMode", js.undefined)
     
     inline def setConfigurationEndpoint(value: Endpoint): Self = StObject.set(x, "ConfigurationEndpoint", value.asInstanceOf[js.Any])
     
@@ -280,6 +294,10 @@ object ReplicationGroup {
     inline def setTransitEncryptionEnabled(value: BooleanOptional): Self = StObject.set(x, "TransitEncryptionEnabled", value.asInstanceOf[js.Any])
     
     inline def setTransitEncryptionEnabledUndefined: Self = StObject.set(x, "TransitEncryptionEnabled", js.undefined)
+    
+    inline def setTransitEncryptionMode(value: TransitEncryptionMode): Self = StObject.set(x, "TransitEncryptionMode", value.asInstanceOf[js.Any])
+    
+    inline def setTransitEncryptionModeUndefined: Self = StObject.set(x, "TransitEncryptionMode", js.undefined)
     
     inline def setUserGroupIds(value: UserGroupIdList): Self = StObject.set(x, "UserGroupIds", value.asInstanceOf[js.Any])
     

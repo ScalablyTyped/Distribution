@@ -37,9 +37,18 @@ type AssociateEntityList = js.Array[EntityConfiguration]
 
 type AttributeFilterList = js.Array[AttributeFilter]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - typings.awsSdk.awsSdkStrings.INACTIVE
+  - java.lang.String
+*/
+type AttributeSuggestionsMode = _AttributeSuggestionsMode | java.lang.String
+
 type BasicAuthenticationConfigurationList = js.Array[BasicAuthenticationConfiguration]
 
 type BatchDeleteDocumentResponseFailedDocuments = js.Array[BatchDeleteDocumentResponseFailedDocument]
+
+type BatchDeleteFeaturedResultsSetErrors = js.Array[BatchDeleteFeaturedResultsSetError]
 
 type BatchGetDocumentStatusResponseErrors = js.Array[BatchGetDocumentStatusResponseError]
 
@@ -161,6 +170,13 @@ type ConfluenceVersion = _ConfluenceVersion | java.lang.String
   - typings.awsSdk.awsSdkStrings.MS_WORD
   - typings.awsSdk.awsSdkStrings.PLAIN_TEXT
   - typings.awsSdk.awsSdkStrings.PPT
+  - typings.awsSdk.awsSdkStrings.RTF
+  - typings.awsSdk.awsSdkStrings.XML
+  - typings.awsSdk.awsSdkStrings.XSLT
+  - typings.awsSdk.awsSdkStrings.MS_EXCEL
+  - typings.awsSdk.awsSdkStrings.CSV
+  - typings.awsSdk.awsSdkStrings.JSON
+  - typings.awsSdk.awsSdkStrings.MD
   - java.lang.String
 */
 type ContentType = _ContentType | java.lang.String
@@ -401,6 +417,31 @@ type FaqStatus = _FaqStatus | java.lang.String
 
 type FaqSummaryItems = js.Array[FaqSummary]
 
+type FeaturedDocumentList = js.Array[FeaturedDocument]
+
+type FeaturedDocumentMissingList = js.Array[FeaturedDocumentMissing]
+
+type FeaturedDocumentWithMetadataList = js.Array[FeaturedDocumentWithMetadata]
+
+type FeaturedResultsItemList = js.Array[FeaturedResultsItem]
+
+type FeaturedResultsSetDescription = java.lang.String
+
+type FeaturedResultsSetId = java.lang.String
+
+type FeaturedResultsSetIdList = js.Array[FeaturedResultsSetId]
+
+type FeaturedResultsSetName = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - typings.awsSdk.awsSdkStrings.INACTIVE
+  - java.lang.String
+*/
+type FeaturedResultsSetStatus = _FeaturedResultsSetStatus | java.lang.String
+
+type FeaturedResultsSetSummaryItems = js.Array[FeaturedResultsSetSummary]
+
 type FeedbackToken = java.lang.String
 
 type FileSystemId = java.lang.String
@@ -536,6 +577,8 @@ type MaxResultsIntegerForListExperiencesRequest = Double
 
 type MaxResultsIntegerForListFaqsRequest = Double
 
+type MaxResultsIntegerForListFeaturedResultsSetsRequest = Double
+
 type MaxResultsIntegerForListIndicesRequest = Double
 
 type MaxResultsIntegerForListPrincipalsRequest = Double
@@ -648,6 +691,13 @@ type QueryId = java.lang.String
 */
 type QueryIdentifiersEnclosingOption = _QueryIdentifiersEnclosingOption | java.lang.String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.TABLE
+  - typings.awsSdk.awsSdkStrings.TEXT
+  - java.lang.String
+*/
+type QueryResultFormat = _QueryResultFormat | java.lang.String
+
 type QueryResultItemList = js.Array[QueryResultItem]
 
 /* Rewritten from type alias, can be one of: 
@@ -685,6 +735,8 @@ type QuerySuggestionsId = java.lang.String
 type QuerySuggestionsStatus = _QuerySuggestionsStatus | java.lang.String
 
 type QueryText = java.lang.String
+
+type QueryTextList = js.Array[QueryText]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ALLOW
@@ -853,6 +905,8 @@ type SnapshotsDataRecords = js.Array[SnapshotsDataRecord]
 */
 type SortOrder = _SortOrder | java.lang.String
 
+type SourceDocuments = js.Array[SourceDocument]
+
 type SpellCorrectedQueryList = js.Array[SpellCorrectedQuery]
 
 type StorageCapacityUnit = Double
@@ -865,6 +919,8 @@ type SubnetId = java.lang.String
 
 type SubnetIdList = js.Array[SubnetId]
 
+type SuggestableConfigList = js.Array[SuggestableConfig]
+
 type SuggestedQueryText = java.lang.String
 
 type SuggestionHighlightList = js.Array[SuggestionHighlight]
@@ -873,7 +929,20 @@ type SuggestionList = js.Array[Suggestion]
 
 type SuggestionQueryText = java.lang.String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.QUERY
+  - typings.awsSdk.awsSdkStrings.DOCUMENT_ATTRIBUTES
+  - java.lang.String
+*/
+type SuggestionType = _SuggestionType | java.lang.String
+
+type SuggestionTypes = js.Array[SuggestionType]
+
+type TableCellList = js.Array[TableCell]
+
 type TableName = java.lang.String
+
+type TableRowList = js.Array[TableRow]
 
 type TagKey = java.lang.String
 

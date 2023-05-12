@@ -143,7 +143,7 @@ object ThinEngine {
   inline def NearestPOT(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("NearestPOT")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
-    * Queue a new function into the requested animation frame pool (ie. this function will be executed byt the browser for the next frame)
+    * Queue a new function into the requested animation frame pool (ie. this function will be executed by the browser (or the javascript engine) for the next frame)
     * @param func - the function to be called
     * @param requester - the object that will request the next frame. Falls back to window.
     * @returns frame number

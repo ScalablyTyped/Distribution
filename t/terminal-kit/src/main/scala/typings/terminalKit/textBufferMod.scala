@@ -90,8 +90,8 @@ object textBufferMod {
   @js.native
   trait TextBuffer extends StObject {
     
-    def bulkDelete(): Unit = js.native
-    def bulkDelete(n: Double): Unit = js.native
+    def backDelete(): Unit = js.native
+    def backDelete(n: Double): Unit = js.native
     
     def delete(): Unit = js.native
     def delete(n: Double): Unit = js.native

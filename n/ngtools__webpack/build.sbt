@@ -1,33 +1,30 @@
 organization := "org.scalablytyped"
 name := "ngtools__webpack"
-version := "14.2.6-e9b3e4"
+version := "16.0.1-3508a0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ajv" % "8.11.2-e03df2",
-  "org.scalablytyped" %%% "angular__compiler" % "14.2.10-9da090",
-  "org.scalablytyped" %%% "angular__compiler-cli" % "14.2.7-10ac45",
-  "org.scalablytyped" %%% "babel__core" % "7.1-dt-20221107Z-5b3929",
-  "org.scalablytyped" %%% "babel__generator" % "7.6-dt-20211223Z-5fc152",
-  "org.scalablytyped" %%% "babel__parser" % "7.20.3-0ceec3",
-  "org.scalablytyped" %%% "babel__template" % "7.4-dt-20211202Z-10b9d5",
-  "org.scalablytyped" %%% "babel__traverse" % "7.18-dt-20220923Z-b27c06",
-  "org.scalablytyped" %%% "babel__types" % "7.20.2-0db274",
-  "org.scalablytyped" %%% "convert-source-map" % "1.5-dt-20211202Z-0de974",
-  "org.scalablytyped" %%% "dependency-graph" % "0.11.0-edf6e0",
-  "org.scalablytyped" %%% "estree" % "1.0-dt-20220712Z-6dfb17",
-  "org.scalablytyped" %%% "json-schema" % "7.0-dt-20220325Z-64302b",
-  "org.scalablytyped" %%% "magic-string" % "0.26.7-dba250",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-874609",
-  "org.scalablytyped" %%% "re2" % "1.17.7-31fc73",
-  "org.scalablytyped" %%% "schema-utils" % "4.0.0-21a261",
-  "org.scalablytyped" %%% "semver" % "7.3-dt-20221026Z-7e28ad",
-  "org.scalablytyped" %%% "std" % "4.9-ecb5eb",
-  "org.scalablytyped" %%% "tapable" % "2.2.1-7a5e1e",
-  "org.scalablytyped" %%% "typescript" % "4.9.3-94f598",
-  "org.scalablytyped" %%% "uri-js" % "4.4.1-8d8221",
-  "org.scalablytyped" %%% "webpack" % "5.75.0-5aadf4")
+  "org.scalablytyped" %%% "ajv" % "8.12.0-6bf940",
+  "org.scalablytyped" %%% "angular__compiler" % "16.0.1-8ff931",
+  "org.scalablytyped" %%% "angular__compiler-cli" % "16.0.1-33d01f",
+  "org.scalablytyped" %%% "babel__core" % "7.20-dt-20230118Z-e25db7",
+  "org.scalablytyped" %%% "babel__generator" % "7.6-dt-20211223Z-589aa7",
+  "org.scalablytyped" %%% "babel__parser" % "7.21.8-43580a",
+  "org.scalablytyped" %%% "babel__template" % "7.4-dt-20211202Z-a71ff4",
+  "org.scalablytyped" %%% "babel__traverse" % "7.18-dt-20230426Z-96f2d9",
+  "org.scalablytyped" %%% "babel__types" % "7.21.5-fbdd8a",
+  "org.scalablytyped" %%% "estree" % "1.0-dt-20230419Z-f51b02",
+  "org.scalablytyped" %%% "json-schema" % "7.0-dt-20220325Z-c415ea",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "re2" % "1.18.0-0ff8d6",
+  "org.scalablytyped" %%% "schema-utils" % "4.0.1-eeb615",
+  "org.scalablytyped" %%% "semver" % "7.5-dt-20230508Z-37288e",
+  "org.scalablytyped" %%% "std" % "5.0-e63739",
+  "org.scalablytyped" %%% "tapable" % "2.2.1-b557e4",
+  "org.scalablytyped" %%% "typescript" % "5.0.4-f7d5cf",
+  "org.scalablytyped" %%% "uri-js" % "4.4.1-347272",
+  "org.scalablytyped" %%% "webpack" % "5.82.1-fe40a3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

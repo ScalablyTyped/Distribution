@@ -1,5 +1,7 @@
 package typings.highcharts.mod
 
+import typings.highcharts.highchartsInts.`0`
+import typings.highcharts.highchartsInts.`100`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,28 +71,6 @@ trait PlotMapOptions extends StObject {
   var animationLimit: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highmaps) Sets the color blending in the boost module.
-    */
-  var boostBlending: js.UndefOr[String] = js.undefined
-  
-  /**
-    * (Highmaps) Set the point threshold for when a series should enter boost
-    * mode.
-    *
-    * Setting it to e.g. 2000 will cause the series to enter boost mode when
-    * there are 2000 or more points in the series.
-    *
-    * To disable boosting on the series, set the `boostThreshold` to 0. Setting
-    * it to 1 will force boosting.
-    *
-    * Note that the cropThreshold also affects this setting. When zooming in on
-    * a series that has fewer points than the `cropThreshold`, all points are
-    * rendered although outside the visible plot area, and the `boostThreshold`
-    * won't take effect.
-    */
-  var boostThreshold: js.UndefOr[Double] = js.undefined
-  
-  /**
     * (Highmaps) The border color of the map areas.
     *
     * In styled mode, the border stroke is given in the `.highcharts-point`
@@ -109,7 +89,8 @@ trait PlotMapOptions extends StObject {
   /**
     * (Highmaps) An additional class name to apply to the series' graphical
     * elements. This option does not replace default class names of the
-    * graphical element.
+    * graphical element. Changes to the series' color will also be reflected in
+    * a chart's legend and tooltip.
     */
   var className: js.UndefOr[String] = js.undefined
   
@@ -120,20 +101,6 @@ trait PlotMapOptions extends StObject {
     * **Note:** Clipping should be always enabled when chart.zoomType is set
     */
   var clip: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * (Highcharts, Highmaps) Options for marker clusters, the concept of
-    * sampling the data values into larger blocks in order to ease readability
-    * and increase performance of the JavaScript charts.
-    *
-    * Note: marker clusters module is not working with `boost` and
-    * `draggable-points` modules.
-    *
-    * The marker clusters feature requires the marker-clusters.js file to be
-    * loaded, found in the modules directory of the download package, or online
-    * at code.highcharts.com/modules/marker-clusters.js.
-    */
-  var cluster: js.UndefOr[PlotMapClusterOptions] = js.undefined
   
   /**
     * (Highmaps) The main color of the series. In line type series it applies
@@ -162,9 +129,24 @@ trait PlotMapOptions extends StObject {
   var colorAxis: js.UndefOr[Boolean | Double | String] = js.undefined
   
   /**
+    * (Highmaps) When using automatic point colors pulled from the global
+    * colors or series-specific plotOptions.map.colors collections, this option
+    * determines whether the chart should receive one color per series or one
+    * color per point.
+    *
+    * In styled mode, the `colors` or `series.colors` arrays are not supported,
+    * and instead this option gives the points individual color class names on
+    * the form `highcharts-color-{n}`.
+    */
+  var colorByPoint: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * (Highmaps) Styled mode only. A specific color index to use for the
     * series, so its graphic representations are given the class name
     * `highcharts-color-{n}`.
+    *
+    * Since v11, CSS variables on the form `--highcharts-color-{n}` make
+    * changing the color scheme very convenient.
     */
   var colorIndex: js.UndefOr[Double] = js.undefined
   
@@ -177,6 +159,12 @@ trait PlotMapOptions extends StObject {
   var colorKey: js.UndefOr[String] = js.undefined
   
   /**
+    * (Highmaps) A series specific or series type specific color set to apply
+    * instead of the global colors when colorByPoint is true.
+    */
+  var colors: js.UndefOr[js.Array[ColorString | GradientColorObject | PatternObject]] = js.undefined
+  
+  /**
     * (Highstock) Compare the values of the series against the first non-null,
     * non- zero value in the visible range. The y axis will show percentage or
     * absolute change depending on whether `compare` is set to `"percent"` or
@@ -184,13 +172,13 @@ trait PlotMapOptions extends StObject {
     * the development of the series against each other. Adds a `change` field
     * to every point object.
     */
-  var compare: js.UndefOr[String] = js.undefined
+  var compare: js.UndefOr[OptionsCompareValue] = js.undefined
   
   /**
     * (Highstock) When compare is `percent`, this option dictates whether to
     * use 0 or 100 as the base of comparison.
     */
-  var compareBase: js.UndefOr[Double] = js.undefined
+  var compareBase: js.UndefOr[`0` | `100`] = js.undefined
   
   /**
     * (Highstock) Defines if comparison should start from the first point
@@ -213,6 +201,9 @@ trait PlotMapOptions extends StObject {
     * (Highcharts, Highstock) Whether to connect a graph line across null
     * points, or render a gap between the two points on either side of the
     * null.
+    *
+    * In stacked area chart, if `connectNulls` is set to true, null points are
+    * interpreted as 0.
     */
   var connectNulls: js.UndefOr[Boolean] = js.undefined
   
@@ -231,18 +222,6 @@ trait PlotMapOptions extends StObject {
     * column is rendered blurry.
     */
   var crisp: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock) When the series contains less points than the
-    * crop threshold, all points are drawn, even if the points fall outside the
-    * visible plot area at the current zoom. The advantage of drawing all
-    * points (including markers and columns), is that animation is performed on
-    * updates. On the other hand, when the series contains more points than the
-    * crop threshold, the series data is cropped to only contain points that
-    * fall within the plot area. The advantage of cropping away invisible
-    * points is to increase performance on large series.
-    */
-  var cropThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) Cumulative Sum feature replaces points' values with the
@@ -278,11 +257,6 @@ trait PlotMapOptions extends StObject {
     * listed under series.color.
     */
   var dashStyle: js.UndefOr[DashStyleValue] = js.undefined
-  
-  /**
-    * (Highmaps) Indicates data is structured as columns instead of rows.
-    */
-  var dataAsColumns: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) Data grouping is the concept of sampling the data values into
@@ -325,14 +299,6 @@ trait PlotMapOptions extends StObject {
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highmaps) The draggable-points module allows points to be moved around
-    * or modified in the chart. In addition to the options mentioned under the
-    * `dragDrop` API structure, the module fires three events, point.dragStart,
-    * point.drag and point.drop.
-    */
-  var dragDrop: js.UndefOr[SeriesDragDropOptionsObject] = js.undefined
-  
-  /**
     * (Highmaps) Enable or disable the mouse tracking for a specific series.
     * This includes point tooltips and click events on graphs and points. For
     * large datasets it improves performance.
@@ -356,7 +322,7 @@ trait PlotMapOptions extends StObject {
     * Applies only to series types using nearest neighbor search (not direct
     * hover) for tooltip.
     */
-  var findNearestPointBy: js.UndefOr[String] = js.undefined
+  var findNearestPointBy: js.UndefOr[OptionsFindNearestPointByValue] = js.undefined
   
   /**
     * (Highstock) Defines when to display a gap in the graph, together with the
@@ -387,7 +353,7 @@ trait PlotMapOptions extends StObject {
     * values, which on a datetime axis is milliseconds. This also applies to
     * the navigator series that inherits gap options from the base series.
     */
-  var gapUnit: js.UndefOr[String] = js.undefined
+  var gapUnit: js.UndefOr[OptionsGapUnitValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Whether to use the Y extremes of the total
@@ -468,6 +434,8 @@ trait PlotMapOptions extends StObject {
     */
   var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.undefined
   
+  var legendSymbol: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highcharts, Highstock) The width of the line connecting the data points.
     */
@@ -475,8 +443,8 @@ trait PlotMapOptions extends StObject {
   
   /**
     * (Highcharts, Highstock) The SVG value used for the `stroke-linecap` and
-    * `stroke-linejoin` of a line graph. Round means that lines are rounded in
-    * the ends and bends.
+    * `stroke-linejoin` of the map borders. Round means that borders are
+    * rounded in the ends and bends.
     */
   var linecap: js.UndefOr[SeriesLinecapValue] = js.undefined
   
@@ -491,17 +459,6 @@ trait PlotMapOptions extends StObject {
     * order as the master one.
     */
   var linkedTo: js.UndefOr[String] = js.undefined
-  
-  /**
-    * (Highmaps) Options for the point markers of line-like series. Properties
-    * like `fillColor`, `lineColor` and `lineWidth` define the visual
-    * appearance of the markers. Other series types, like column series, don't
-    * have markers, but have visual options on the series level instead.
-    *
-    * In styled mode, the markers can be styled with the `.highcharts-point`,
-    * `.highcharts-point-hover` and `.highcharts-point-select` class names.
-    */
-  var marker: js.UndefOr[PointMarkerOptionsObject] = js.undefined
   
   /**
     * (Highstock) Options for the corresponding navigator series if
@@ -587,34 +544,7 @@ trait PlotMapOptions extends StObject {
     * Please note that this options applies to the _series data_, not the
     * interval of the axis ticks, which is independent.
     */
-  var pointIntervalUnit: js.UndefOr[String] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock, Gantt) Possible values: `"on"`, `"between"`,
-    * `number`.
-    *
-    * In a column chart, when pointPlacement is `"on"`, the point will not
-    * create any padding of the X axis. In a polar column chart this means that
-    * the first column points directly north. If the pointPlacement is
-    * `"between"`, the columns will be laid out between ticks. This is useful
-    * for example for visualising an amount between two points in time or in a
-    * certain sector of a polar chart.
-    *
-    * Since Highcharts 3.0.2, the point placement can also be numeric, where 0
-    * is on the axis value, -0.5 is between this value and the previous, and
-    * 0.5 is between this value and the next. Unlike the textual options,
-    * numeric point placement options won't affect axis padding.
-    *
-    * Note that pointPlacement needs a pointRange to work. For column series
-    * this is computed, but for line-type series it needs to be set.
-    *
-    * For the `xrange` series type and gantt charts, if the Y axis is a
-    * category axis, the `pointPlacement` applies to the Y axis rather than the
-    * (typically datetime) X axis.
-    *
-    * Defaults to `undefined` in cartesian charts, `"between"` in polar charts.
-    */
-  var pointPlacement: js.UndefOr[Double | String] = js.undefined
+  var pointIntervalUnit: js.UndefOr[OptionsPointIntervalUnitValue] = js.undefined
   
   /**
     * (Highstock) The width of each point on the x axis. For example in a
@@ -658,13 +588,6 @@ trait PlotMapOptions extends StObject {
   var selected: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highmaps) Whether to apply a drop shadow to the graph line. Since 2.3
-    * the shadow can be an object configuration containing `color`, `offsetX`,
-    * `offsetY`, `opacity` and `width`.
-    */
-  var shadow: js.UndefOr[Boolean | ShadowOptionsObject] = js.undefined
-  
-  /**
     * (Highmaps) If true, a checkbox is displayed next to the legend item to
     * allow selecting the series. The state of the checkbox is determined by
     * the `selected` option.
@@ -703,6 +626,11 @@ trait PlotMapOptions extends StObject {
   var softThreshold: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * (Highmaps) Sonification/audio chart options for a series.
+    */
+  var sonification: js.UndefOr[PlotMapSonificationOptions] = js.undefined
+  
+  /**
     * (Highcharts, Highstock) Whether to stack the values of each series on top
     * of each other. Possible values are `undefined` to disable, `"normal"` to
     * stack by value or `"percent"`.
@@ -713,7 +641,7 @@ trait PlotMapOptions extends StObject {
     * streamgraph series type, the stacking option is set to `"stream"`. The
     * second one is `"overlap"`, which only applies to waterfall series.
     */
-  var stacking: js.UndefOr[String] = js.undefined
+  var stacking: js.UndefOr[OptionsStackingValue] = js.undefined
   
   var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
   
@@ -721,7 +649,7 @@ trait PlotMapOptions extends StObject {
     * (Highcharts, Highstock) Whether to apply steps to the line. Possible
     * values are `left`, `center` and `right`.
     */
-  var step: js.UndefOr[String] = js.undefined
+  var step: js.UndefOr[OptionsStepValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) Sticky tracking of mouse events. When
@@ -763,12 +691,6 @@ trait PlotMapOptions extends StObject {
     * two dimensional arrays are allowed.
     */
   var turboThreshold: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * (Highstock) The parameter allows setting line series type and use OHLC
-    * indicators. Data in OHLC format is required.
-    */
-  var useOhlcData: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highmaps) Set the initial visibility of the series.
@@ -831,14 +753,6 @@ object PlotMapOptions {
     
     inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    inline def setBoostBlending(value: String): Self = StObject.set(x, "boostBlending", value.asInstanceOf[js.Any])
-    
-    inline def setBoostBlendingUndefined: Self = StObject.set(x, "boostBlending", js.undefined)
-    
-    inline def setBoostThreshold(value: Double): Self = StObject.set(x, "boostThreshold", value.asInstanceOf[js.Any])
-    
-    inline def setBoostThresholdUndefined: Self = StObject.set(x, "boostThreshold", js.undefined)
-    
     inline def setBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
@@ -855,15 +769,15 @@ object PlotMapOptions {
     
     inline def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
     
-    inline def setCluster(value: PlotMapClusterOptions): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
-    
-    inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
-    
     inline def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorAxis(value: Boolean | Double | String): Self = StObject.set(x, "colorAxis", value.asInstanceOf[js.Any])
     
     inline def setColorAxisUndefined: Self = StObject.set(x, "colorAxis", js.undefined)
+    
+    inline def setColorByPoint(value: Boolean): Self = StObject.set(x, "colorByPoint", value.asInstanceOf[js.Any])
+    
+    inline def setColorByPointUndefined: Self = StObject.set(x, "colorByPoint", js.undefined)
     
     inline def setColorIndex(value: Double): Self = StObject.set(x, "colorIndex", value.asInstanceOf[js.Any])
     
@@ -875,9 +789,15 @@ object PlotMapOptions {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setCompare(value: String): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
+    inline def setColors(value: js.Array[ColorString | GradientColorObject | PatternObject]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    inline def setCompareBase(value: Double): Self = StObject.set(x, "compareBase", value.asInstanceOf[js.Any])
+    inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+    
+    inline def setColorsVarargs(value: (ColorString | GradientColorObject | PatternObject)*): Self = StObject.set(x, "colors", js.Array(value*))
+    
+    inline def setCompare(value: OptionsCompareValue): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
+    
+    inline def setCompareBase(value: `0` | `100`): Self = StObject.set(x, "compareBase", value.asInstanceOf[js.Any])
     
     inline def setCompareBaseUndefined: Self = StObject.set(x, "compareBase", js.undefined)
     
@@ -903,10 +823,6 @@ object PlotMapOptions {
     
     inline def setCrispUndefined: Self = StObject.set(x, "crisp", js.undefined)
     
-    inline def setCropThreshold(value: Double): Self = StObject.set(x, "cropThreshold", value.asInstanceOf[js.Any])
-    
-    inline def setCropThresholdUndefined: Self = StObject.set(x, "cropThreshold", js.undefined)
-    
     inline def setCumulative(value: Boolean): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
     
     inline def setCumulativeUndefined: Self = StObject.set(x, "cumulative", js.undefined)
@@ -922,10 +838,6 @@ object PlotMapOptions {
     inline def setDashStyle(value: DashStyleValue): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     
     inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
-    
-    inline def setDataAsColumns(value: Boolean): Self = StObject.set(x, "dataAsColumns", value.asInstanceOf[js.Any])
-    
-    inline def setDataAsColumnsUndefined: Self = StObject.set(x, "dataAsColumns", js.undefined)
     
     inline def setDataGrouping(value: DataGroupingOptionsObject): Self = StObject.set(x, "dataGrouping", value.asInstanceOf[js.Any])
     
@@ -945,10 +857,6 @@ object PlotMapOptions {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setDragDrop(value: SeriesDragDropOptionsObject): Self = StObject.set(x, "dragDrop", value.asInstanceOf[js.Any])
-    
-    inline def setDragDropUndefined: Self = StObject.set(x, "dragDrop", js.undefined)
-    
     inline def setEnableMouseTracking(value: Boolean): Self = StObject.set(x, "enableMouseTracking", value.asInstanceOf[js.Any])
     
     inline def setEnableMouseTrackingUndefined: Self = StObject.set(x, "enableMouseTracking", js.undefined)
@@ -957,7 +865,7 @@ object PlotMapOptions {
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    inline def setFindNearestPointBy(value: String): Self = StObject.set(x, "findNearestPointBy", value.asInstanceOf[js.Any])
+    inline def setFindNearestPointBy(value: OptionsFindNearestPointByValue): Self = StObject.set(x, "findNearestPointBy", value.asInstanceOf[js.Any])
     
     inline def setFindNearestPointByUndefined: Self = StObject.set(x, "findNearestPointBy", js.undefined)
     
@@ -965,7 +873,7 @@ object PlotMapOptions {
     
     inline def setGapSizeUndefined: Self = StObject.set(x, "gapSize", js.undefined)
     
-    inline def setGapUnit(value: String): Self = StObject.set(x, "gapUnit", value.asInstanceOf[js.Any])
+    inline def setGapUnit(value: OptionsGapUnitValue): Self = StObject.set(x, "gapUnit", value.asInstanceOf[js.Any])
     
     inline def setGapUnitUndefined: Self = StObject.set(x, "gapUnit", js.undefined)
     
@@ -1005,6 +913,10 @@ object PlotMapOptions {
     
     inline def setLastVisiblePriceUndefined: Self = StObject.set(x, "lastVisiblePrice", js.undefined)
     
+    inline def setLegendSymbol(value: String): Self = StObject.set(x, "legendSymbol", value.asInstanceOf[js.Any])
+    
+    inline def setLegendSymbolUndefined: Self = StObject.set(x, "legendSymbol", js.undefined)
+    
     inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
     inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
@@ -1016,10 +928,6 @@ object PlotMapOptions {
     inline def setLinkedTo(value: String): Self = StObject.set(x, "linkedTo", value.asInstanceOf[js.Any])
     
     inline def setLinkedToUndefined: Self = StObject.set(x, "linkedTo", js.undefined)
-    
-    inline def setMarker(value: PointMarkerOptionsObject): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
-    
-    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
     inline def setNavigatorOptions(value: PlotSeriesOptions): Self = StObject.set(x, "navigatorOptions", value.asInstanceOf[js.Any])
     
@@ -1055,13 +963,9 @@ object PlotMapOptions {
     
     inline def setPointIntervalUndefined: Self = StObject.set(x, "pointInterval", js.undefined)
     
-    inline def setPointIntervalUnit(value: String): Self = StObject.set(x, "pointIntervalUnit", value.asInstanceOf[js.Any])
+    inline def setPointIntervalUnit(value: OptionsPointIntervalUnitValue): Self = StObject.set(x, "pointIntervalUnit", value.asInstanceOf[js.Any])
     
     inline def setPointIntervalUnitUndefined: Self = StObject.set(x, "pointIntervalUnit", js.undefined)
-    
-    inline def setPointPlacement(value: Double | String): Self = StObject.set(x, "pointPlacement", value.asInstanceOf[js.Any])
-    
-    inline def setPointPlacementUndefined: Self = StObject.set(x, "pointPlacement", js.undefined)
     
     inline def setPointRange(value: Double): Self = StObject.set(x, "pointRange", value.asInstanceOf[js.Any])
     
@@ -1080,10 +984,6 @@ object PlotMapOptions {
     inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
-    
-    inline def setShadow(value: Boolean | ShadowOptionsObject): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
-    
-    inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     
     inline def setShowCheckbox(value: Boolean): Self = StObject.set(x, "showCheckbox", value.asInstanceOf[js.Any])
     
@@ -1105,7 +1005,11 @@ object PlotMapOptions {
     
     inline def setSoftThresholdUndefined: Self = StObject.set(x, "softThreshold", js.undefined)
     
-    inline def setStacking(value: String): Self = StObject.set(x, "stacking", value.asInstanceOf[js.Any])
+    inline def setSonification(value: PlotMapSonificationOptions): Self = StObject.set(x, "sonification", value.asInstanceOf[js.Any])
+    
+    inline def setSonificationUndefined: Self = StObject.set(x, "sonification", js.undefined)
+    
+    inline def setStacking(value: OptionsStackingValue): Self = StObject.set(x, "stacking", value.asInstanceOf[js.Any])
     
     inline def setStackingUndefined: Self = StObject.set(x, "stacking", js.undefined)
     
@@ -1113,7 +1017,7 @@ object PlotMapOptions {
     
     inline def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
     
-    inline def setStep(value: String): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: OptionsStepValue): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
@@ -1134,10 +1038,6 @@ object PlotMapOptions {
     inline def setTurboThreshold(value: Double): Self = StObject.set(x, "turboThreshold", value.asInstanceOf[js.Any])
     
     inline def setTurboThresholdUndefined: Self = StObject.set(x, "turboThreshold", js.undefined)
-    
-    inline def setUseOhlcData(value: Boolean): Self = StObject.set(x, "useOhlcData", value.asInstanceOf[js.Any])
-    
-    inline def setUseOhlcDataUndefined: Self = StObject.set(x, "useOhlcData", js.undefined)
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     

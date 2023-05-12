@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetParametersQueryClientipLocation extends StObject {
   
   /**
-    * List the machine types available for a given repository based on its configuration.
+    * List available machine types for a repository
+    * @description List the machine types available for a given repository based on its configuration.
     *
     * You must authenticate using an access token with the `codespace` scope to use this endpoint.
     *

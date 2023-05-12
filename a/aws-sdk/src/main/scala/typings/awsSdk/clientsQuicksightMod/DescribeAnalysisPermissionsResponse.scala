@@ -14,7 +14,7 @@ trait DescribeAnalysisPermissionsResponse extends StObject {
   /**
     * The ID of the analysis whose permissions you're describing.
     */
-  var AnalysisId: js.UndefOr[RestrictiveResourceId] = js.undefined
+  var AnalysisId: js.UndefOr[ShortRestrictiveResourceId] = js.undefined
   
   /**
     * A structure that describes the principals and the resource-level permissions on an analysis.
@@ -45,7 +45,7 @@ object DescribeAnalysisPermissionsResponse {
     
     inline def setAnalysisArnUndefined: Self = StObject.set(x, "AnalysisArn", js.undefined)
     
-    inline def setAnalysisId(value: RestrictiveResourceId): Self = StObject.set(x, "AnalysisId", value.asInstanceOf[js.Any])
+    inline def setAnalysisId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "AnalysisId", value.asInstanceOf[js.Any])
     
     inline def setAnalysisIdUndefined: Self = StObject.set(x, "AnalysisId", js.undefined)
     

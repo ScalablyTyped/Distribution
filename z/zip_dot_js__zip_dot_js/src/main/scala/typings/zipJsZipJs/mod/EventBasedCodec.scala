@@ -12,7 +12,7 @@ trait EventBasedCodec extends StObject {
   
   /**
     * The function called when a chunk of data has been compressed/decompressed.
-    * 
+    *
     * @param data The chunk of compressed/decompressed data.
     */
   def ondata(): Unit = js.native
@@ -20,7 +20,7 @@ trait EventBasedCodec extends StObject {
   
   /**
     * Appends a chunk of data to compress/decompress
-    * 
+    *
     * @param data The chunk of data to append.
     */
   def push(data: js.typedarray.Uint8Array): Unit = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for stylable__uni-driver
 
-Typings are for version 5.2.1
+Typings are for version 5.11.0
 
 ## Library description:
 Stylable UniDriver testing utilities

@@ -1271,14 +1271,14 @@ object cjsAddEventListenerMod {
   def optionsSupported: Boolean = js.native
   inline def optionsSupported_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("optionsSupported")(x.asInstanceOf[js.Any])
   
-  type EventHandler[K /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.domHelpers.domHelpersStrings.fullscreenchange, typings.domHelpers.domHelpersStrings.fullscreenerror, typings.domHelpers.domHelpersStrings.copy */ Any */] = js.ThisFunction1[
+  type EventHandler[K /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.domHelpers.domHelpersStrings.fullscreenchange, typings.domHelpers.domHelpersStrings.fullscreenerror, typings.domHelpers.domHelpersStrings.abort */ Any */] = js.ThisFunction1[
     /* this */ HTMLElement, 
     /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementEventMap[K] */ /* event */ js.Any, 
     Any
   ]
   
   @js.native
-  trait TaggedEventHandler[K /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.domHelpers.domHelpersStrings.fullscreenchange, typings.domHelpers.domHelpersStrings.fullscreenerror, typings.domHelpers.domHelpersStrings.copy */ Any */] extends EventHandler[K] {
+  trait TaggedEventHandler[K /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.domHelpers.domHelpersStrings.fullscreenchange, typings.domHelpers.domHelpersStrings.fullscreenerror, typings.domHelpers.domHelpersStrings.abort */ Any */] extends EventHandler[K] {
     
     var __once: js.UndefOr[EventHandler[K]] = js.native
   }

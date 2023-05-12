@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListFleetsOutput extends StObject {
   
   /**
-    * A set of fleet IDs that match the list request. You can retrieve additional information about all returned fleets by passing this result set to a DescribeFleetAttributes, DescribeFleetCapacity, or DescribeFleetUtilization call.
+    * A set of fleet IDs that match the list request.
     */
   var FleetIds: js.UndefOr[FleetIdList] = js.undefined
   

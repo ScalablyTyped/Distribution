@@ -8,5 +8,5 @@ object buildSrcVersionMod {
   
   @JSImport("@opentelemetry/instrumentation/build/src/version", "VERSION")
   @js.native
-  val VERSION: /* "0.33.0" */ String = js.native
+  val VERSION: /* "0.39.0" */ String = js.native
 }

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListApplicationsOutput extends StObject {
   
   /**
-    * 
+    * The applications registered with AWS Systems Manager for SAP.
     */
   var Applications: js.UndefOr[ApplicationSummaryList] = js.undefined
   
   /**
-    * 
+    * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
     */
   var NextToken: js.UndefOr[typings.awsSdk.clientsSsmsapMod.NextToken] = js.undefined
 }

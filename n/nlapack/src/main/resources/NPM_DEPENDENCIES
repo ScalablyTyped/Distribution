@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "nlapack" : "2.0.4"
+      "nlapack" : "2.0.8"
     }
   ],
   "test-dependencies" : [
     {
-      "nlapack" : "2.0.4"
+      "nlapack" : "2.0.8"
     }
   ],
   "compile-devDependencies" : [

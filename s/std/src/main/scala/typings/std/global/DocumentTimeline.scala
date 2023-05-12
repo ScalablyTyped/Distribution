@@ -1,6 +1,5 @@
 package typings.std.global
 
-import typings.std.CSSNumberish
 import typings.std.DocumentTimelineOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,5 +16,5 @@ open class DocumentTimeline ()
   
   /* standard dom */
   /* CompleteClass */
-  override val currentTime: CSSNumberish | Null = js.native
+  override val currentTime: Double | Null = js.native
 }

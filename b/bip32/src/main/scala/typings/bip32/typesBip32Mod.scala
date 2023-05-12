@@ -148,7 +148,7 @@ object typesBip32Mod {
     
     def privateAdd(d: js.typedarray.Uint8Array, tweak: js.typedarray.Uint8Array): js.typedarray.Uint8Array | Null = js.native
     
-    def privateNegate(d: js.typedarray.Uint8Array): js.typedarray.Uint8Array = js.native
+    var privateNegate: js.UndefOr[js.Function1[/* d */ js.typedarray.Uint8Array, js.typedarray.Uint8Array]] = js.native
     
     def sign(h: js.typedarray.Uint8Array, d: js.typedarray.Uint8Array): js.typedarray.Uint8Array = js.native
     def sign(h: js.typedarray.Uint8Array, d: js.typedarray.Uint8Array, e: js.typedarray.Uint8Array): js.typedarray.Uint8Array = js.native
@@ -179,7 +179,13 @@ object typesBip32Mod {
         ]
       ] = js.native
     
-    def xOnlyPointAddTweak(p: js.typedarray.Uint8Array, tweak: js.typedarray.Uint8Array): XOnlyPointAddTweakResult | Null = js.native
+    var xOnlyPointAddTweak: js.UndefOr[
+        js.Function2[
+          /* p */ js.typedarray.Uint8Array, 
+          /* tweak */ js.typedarray.Uint8Array, 
+          XOnlyPointAddTweakResult | Null
+        ]
+      ] = js.native
   }
   
   trait XOnlyPointAddTweakResult extends StObject {

@@ -6,12 +6,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object formatFilterComparisonMod {
   
-  /* note: abstract class */ @JSImport("ol/format/filter/Comparison", JSImport.Default)
+  /**
+    * @classdesc
+    * Abstract class; normally only used for creating subclasses and not instantiated in apps.
+    * Base class for WFS GetFeature property comparison filters.
+    *
+    * @abstract
+    */
+  @JSImport("ol/format/filter/Comparison", JSImport.Default)
   @js.native
-  open class default protected ()
-    extends typings.ol.formatFilterFilterMod.default {
+  open class default protected () extends Comparison {
+    /**
+      * @param {!string} tagName The XML tag name for this filter.
+      * @param {!string} propertyName Name of the context property to compare.
+      */
     def this(tagName: String, propertyName: String) = this()
   }
   
-  type Comparison = typings.ol.formatFilterFilterMod.default
+  /**
+    * @classdesc
+    * Abstract class; normally only used for creating subclasses and not instantiated in apps.
+    * Base class for WFS GetFeature property comparison filters.
+    *
+    * @abstract
+    */
+  @js.native
+  trait Comparison
+    extends typings.ol.formatFilterFilterMod.default {
+    
+    /**
+      * @type {!string}
+      */
+    var propertyName: String = js.native
+  }
 }

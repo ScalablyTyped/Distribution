@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-what
 
-Typings are for version 4.1.7
+Typings are for version 4.1.9
 
 ## Library description:
 JS type check (TypeScript supported) functions like `isPlainObject() isArray()` etc. A simple & small integration.

@@ -16,7 +16,7 @@ object libIconsPushpinTwoToneMod extends Shortcut {
   @js.native
   trait PushpinTwoToneIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_PushpinTwoToneIconType: String = js.native

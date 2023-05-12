@@ -7,6 +7,16 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
+type ApiKey = java.lang.String
+
+type ApiKeyAction = java.lang.String
+
+type ApiKeyRestrictionsAllowActionsList = js.Array[ApiKeyAction]
+
+type ApiKeyRestrictionsAllowReferersList = js.Array[RefererPattern]
+
+type ApiKeyRestrictionsAllowResourcesList = js.Array[GeoArn]
+
 type Arn = java.lang.String
 
 type ArnList = js.Array[Arn]
@@ -79,7 +89,7 @@ type CountryCodeList = js.Array[CountryCode]
 type DevicePositionList = js.Array[DevicePosition]
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.Meters
+  - typings.awsSdk.awsSdkStrings.Meters_
   - typings.awsSdk.awsSdkStrings.Feet_
   - java.lang.String
 */
@@ -147,6 +157,10 @@ type ListGeofenceResponseEntryList = js.Array[ListGeofenceResponseEntry]
 
 type ListGeofencesRequestMaxResultsInteger = scala.Double
 
+type ListKeysRequestMaxResultsInteger = scala.Double
+
+type ListKeysResponseEntryList = js.Array[ListKeysResponseEntry]
+
 type ListMapsRequestMaxResultsInteger = scala.Double
 
 type ListMapsResponseEntryList = js.Array[ListMapsResponseEntry]
@@ -197,6 +211,8 @@ type PropertyMapKeyString = java.lang.String
 
 type PropertyMapValueString = java.lang.String
 
+type RefererPattern = java.lang.String
+
 type ResourceDescription = java.lang.String
 
 type ResourceName = java.lang.String
@@ -240,6 +256,13 @@ type SearchPlaceIndexForTextRequestTextString = java.lang.String
 
 type SensitiveString = java.lang.String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Active_
+  - typings.awsSdk.awsSdkStrings.Expired_
+  - java.lang.String
+*/
+type Status = _Status | java.lang.String
+
 type StepDistanceDouble = scala.Double
 
 type StepDurationSecondsDouble = scala.Double
@@ -266,6 +289,8 @@ type Token = java.lang.String
   - typings.awsSdk.awsSdkStrings.Car
   - typings.awsSdk.awsSdkStrings.Truck
   - typings.awsSdk.awsSdkStrings.Walking
+  - typings.awsSdk.awsSdkStrings.Bicycle
+  - typings.awsSdk.awsSdkStrings.Motorcycle
   - java.lang.String
 */
 type TravelMode = _TravelMode | java.lang.String

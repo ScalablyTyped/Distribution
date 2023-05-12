@@ -1,7 +1,7 @@
 
 # Scala.js typings for lambda-log
 
-Typings are for version 2.2
+Typings are for version 3.0
 
 ## Library description:
 Lightweight logging library for any Node 10+ applications

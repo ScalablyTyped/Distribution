@@ -5,10 +5,10 @@ import typings.chartJs.chartJsStrings.linear
 import typings.chartJs.chartJsStrings.logarithmic
 import typings.chartJs.chartJsStrings.time
 import typings.chartJs.chartJsStrings.timeseries
-import typings.chartJs.mod.DoughnutControllerChartOptions
-import typings.chartJs.mod.DoughnutControllerDatasetOptions
-import typings.chartJs.mod.DoughnutDataPoint
-import typings.chartJs.mod.DoughnutMetaExtensions
+import typings.chartJs.distTypesIndexMod.DoughnutControllerChartOptions
+import typings.chartJs.distTypesIndexMod.DoughnutControllerDatasetOptions
+import typings.chartJs.distTypesIndexMod.DoughnutDataPoint
+import typings.chartJs.distTypesIndexMod.DoughnutMetaExtensions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

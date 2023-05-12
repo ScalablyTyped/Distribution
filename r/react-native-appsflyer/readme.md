@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-appsflyer
 
-Typings are for version 6.9.2
+Typings are for version 6.10.3
 
 ## Library description:
 React Native Appsflyer plugin

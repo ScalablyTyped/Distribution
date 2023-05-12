@@ -5,12 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A single geocoder result retrieved from the geocode server. A geocode
-  * request may return multiple result objects. Note that though this result is
-  * &quot;JSON-like,&quot; it is not strictly JSON, as it indirectly includes a
-  * <code>LatLng</code> object.
-  */
 trait GeocoderResult extends StObject {
   
   /**

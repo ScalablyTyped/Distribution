@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "babel-plugin-ember-template-compilation" : "2.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "babel-plugin-ember-template-compilation" : "2.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

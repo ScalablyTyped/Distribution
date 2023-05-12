@@ -10,7 +10,7 @@ trait Call extends StObject {
   
   def apply(): js.Function = js.native
   
-  var options: ComponentOptions[js.Object, Any, Any, Any, Any, Any, Any, Any] = js.native
+  var options: ComponentOptions[js.Object, Any, Any, Any, Any, Any, Any, Any, Any] = js.native
   
   var `super`: js.Function = js.native
 }

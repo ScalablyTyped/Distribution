@@ -17,7 +17,7 @@ trait CustomOriginConfig extends StObject {
   var HTTPSPort: integer
   
   /**
-    * Specifies how long, in seconds, CloudFront persists its connection to the origin. The minimum timeout is 1 second, the maximum is 60 seconds, and the default (if you don’t specify otherwise) is 5 seconds. For more information, see Origin Keep-alive Timeout in the Amazon CloudFront Developer Guide.
+    * Specifies how long, in seconds, CloudFront persists its connection to the origin. The minimum timeout is 1 second, the maximum is 60 seconds, and the default (if you don't specify otherwise) is 5 seconds. For more information, see Origin Keep-alive Timeout in the Amazon CloudFront Developer Guide.
     */
   var OriginKeepaliveTimeout: js.UndefOr[integer] = js.undefined
   
@@ -27,7 +27,7 @@ trait CustomOriginConfig extends StObject {
   var OriginProtocolPolicy: typings.awsSdk.clientsCloudfrontMod.OriginProtocolPolicy
   
   /**
-    * Specifies how long, in seconds, CloudFront waits for a response from the origin. This is also known as the origin response timeout. The minimum timeout is 1 second, the maximum is 60 seconds, and the default (if you don’t specify otherwise) is 30 seconds. For more information, see Origin Response Timeout in the Amazon CloudFront Developer Guide.
+    * Specifies how long, in seconds, CloudFront waits for a response from the origin. This is also known as the origin response timeout. The minimum timeout is 1 second, the maximum is 60 seconds, and the default (if you don't specify otherwise) is 30 seconds. For more information, see Origin Response Timeout in the Amazon CloudFront Developer Guide.
     */
   var OriginReadTimeout: js.UndefOr[integer] = js.undefined
   

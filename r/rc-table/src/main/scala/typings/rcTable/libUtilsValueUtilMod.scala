@@ -14,8 +14,6 @@ object libUtilsValueUtilMod {
   
   inline def getColumnsKey(columns: js.Array[GetColumnKeyColumn]): js.Array[Key] = ^.asInstanceOf[js.Dynamic].applyDynamic("getColumnsKey")(columns.asInstanceOf[js.Any]).asInstanceOf[js.Array[Key]]
   
-  inline def getPathValue[ValueType, ObjectType /* <: js.Object */](record: ObjectType, path: DataIndex): ValueType = (^.asInstanceOf[js.Dynamic].applyDynamic("getPathValue")(record.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[ValueType]
-  
   inline def validateValue[T](`val`: T): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validateValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   trait GetColumnKeyColumn extends StObject {

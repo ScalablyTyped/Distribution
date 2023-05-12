@@ -1,5 +1,6 @@
 package typings.dc.mod
 
+import typings.d3Axis.mod.Axis
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,10 +30,8 @@ trait ICompositeChart[T]
   def rightY(): js.Function1[/* n */ Any, Any] = js.native
   def rightY(t: js.Function1[/* n */ Any, Any]): ICompositeChart[T] = js.native
   
-  def rightYAxis(): Any = js.native
-  def rightYAxis(
-    t: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ Any
-  ): ICompositeChart[T] = js.native
+  def rightYAxis(): Axis[Any] = js.native
+  def rightYAxis(t: Axis[Any]): ICompositeChart[T] = js.native
   
   def rightYAxisLabel(): IGetSet[String, ICompositeChart[T]] = js.native
   def rightYAxisLabel(rightYAxisLabel: String): IGetSet[String, ICompositeChart[T]] = js.native
@@ -40,10 +39,7 @@ trait ICompositeChart[T]
   def rightYAxisLabel(rightYAxisLabel: Unit, padding: Double): IGetSet[String, ICompositeChart[T]] = js.native
   
   @JSName("rightYAxis")
-  var rightYAxis_Original: IGetSet[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ Any, 
-    ICompositeChart[T]
-  ] = js.native
+  var rightYAxis_Original: IGetSet[Axis[Any], ICompositeChart[T]] = js.native
   
   @JSName("rightY")
   var rightY_Original: IGetSet[js.Function1[/* n */ Any, Any], ICompositeChart[T]] = js.native

@@ -40,6 +40,11 @@ trait DataCellsFilter extends StObject {
     * A table in the database.
     */
   var TableName: NameString
+  
+  /**
+    * The ID of the data cells filter version.
+    */
+  var VersionId: js.UndefOr[VersionString] = js.undefined
 }
 object DataCellsFilter {
   
@@ -72,5 +77,9 @@ object DataCellsFilter {
     inline def setTableCatalogId(value: CatalogIdString): Self = StObject.set(x, "TableCatalogId", value.asInstanceOf[js.Any])
     
     inline def setTableName(value: NameString): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    
+    inline def setVersionId(value: VersionString): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
+    
+    inline def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
   }
 }

@@ -21,29 +21,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * limitations under the License.
   */
 /**
-  * @license
-  * Copyright 2020 Google LLC
-  *
-  * Licensed under the Apache License, Version 2.0 (the "License");
-  * you may not use this file except in compliance with the License.
-  * You may obtain a copy of the License at
-  *
-  *   http://www.apache.org/licenses/LICENSE-2.0
-  *
-  * Unless required by applicable law or agreed to in writing, software
-  * distributed under the License is distributed on an "AS IS" BASIS,
-  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  * See the License for the specific language governing permissions and
-  * limitations under the License.
-  */
-/**
   * An immutable object representing an array of bytes.
-  */
-@JSImport("@firebase/firestore/dist/packages/firestore/dist/index.esm2017", "Bytes")
+  */ @JSImport("@firebase/firestore/dist/packages/firestore/dist/index.esm2017", "Bytes")
 @js.native
 open class Bytes protected ()
   extends StObject
-     with th {
+     with qh {
   /** @hideconstructor */
   def this(t: Any) = this()
   
@@ -84,12 +67,12 @@ object Bytes {
     *
     * @param base64 - The Base64 string used to create the `Bytes` object.
     */ /* static member */
-  inline def fromBase64String(t: Any): th = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64String")(t.asInstanceOf[js.Any]).asInstanceOf[th]
+  inline def fromBase64String(t: Any): qh = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64String")(t.asInstanceOf[js.Any]).asInstanceOf[qh]
   
   /**
     * Creates a new `Bytes` object from the given Uint8Array.
     *
     * @param array - The Uint8Array used to create the `Bytes` object.
     */ /* static member */
-  inline def fromUint8Array(t: Any): th = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUint8Array")(t.asInstanceOf[js.Any]).asInstanceOf[th]
+  inline def fromUint8Array(t: Any): qh = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUint8Array")(t.asInstanceOf[js.Any]).asInstanceOf[qh]
 }

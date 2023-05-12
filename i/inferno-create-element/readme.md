@@ -1,7 +1,7 @@
 
 # Scala.js typings for inferno-create-element
 
-Typings are for version 8.0.4
+Typings are for version 8.1.1
 
 ## Library description:
 Provides methods to create Inferno VNodes

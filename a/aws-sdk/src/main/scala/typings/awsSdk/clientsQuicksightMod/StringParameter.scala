@@ -14,11 +14,11 @@ trait StringParameter extends StObject {
   /**
     * The values of a string parameter.
     */
-  var Values: StringList
+  var Values: SensitiveStringList
 }
 object StringParameter {
   
-  inline def apply(Name: NonEmptyString, Values: StringList): StringParameter = {
+  inline def apply(Name: NonEmptyString, Values: SensitiveStringList): StringParameter = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringParameter]
   }
@@ -28,8 +28,8 @@ object StringParameter {
     
     inline def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setValues(value: StringList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: SensitiveStringList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "Values", js.Array(value*))
+    inline def setValuesVarargs(value: SensitiveString*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

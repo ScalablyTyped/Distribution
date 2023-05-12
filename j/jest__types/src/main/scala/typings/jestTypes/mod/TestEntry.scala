@@ -25,6 +25,8 @@ trait TestEntry extends StObject {
   
   var name: TestName2
   
+  var numPassingAsserts: Double
+  
   var parent: DescribeBlock
   
   var retryReasons: js.Array[TestError]
@@ -50,11 +52,12 @@ object TestEntry {
     invocations: Double,
     mode: TestMode,
     name: TestName2,
+    numPassingAsserts: Double,
     parent: DescribeBlock,
     retryReasons: js.Array[TestError],
     seenDone: Boolean
   ): TestEntry = {
-    val __obj = js.Dynamic.literal(asyncError = asyncError.asInstanceOf[js.Any], concurrent = concurrent.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], failing = failing.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any], invocations = invocations.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], retryReasons = retryReasons.asInstanceOf[js.Any], seenDone = seenDone.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(asyncError = asyncError.asInstanceOf[js.Any], concurrent = concurrent.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], failing = failing.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any], invocations = invocations.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], numPassingAsserts = numPassingAsserts.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], retryReasons = retryReasons.asInstanceOf[js.Any], seenDone = seenDone.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("test")
     __obj.asInstanceOf[TestEntry]
   }
@@ -85,6 +88,8 @@ object TestEntry {
     inline def setMode(value: TestMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setName(value: TestName2): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNumPassingAsserts(value: Double): Self = StObject.set(x, "numPassingAsserts", value.asInstanceOf[js.Any])
     
     inline def setParent(value: DescribeBlock): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

@@ -15,9 +15,9 @@ object buildUseCountUpMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(props: useCountUpProps): CountUpApi = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[CountUpApi]
+  inline def default(props: UseCountUpProps): CountUpApi = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[CountUpApi]
   
-  trait useCountUpProps
+  trait UseCountUpProps
     extends StObject
        with CommonProps
        with CallbackProps {
@@ -28,15 +28,15 @@ object buildUseCountUpMod {
     
     var startOnMount: js.UndefOr[Boolean] = js.undefined
   }
-  object useCountUpProps {
+  object UseCountUpProps {
     
-    inline def apply(end: Double, ref: String | RefObject[HTMLElement]): useCountUpProps = {
+    inline def apply(end: Double, ref: String | RefObject[HTMLElement]): UseCountUpProps = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
-      __obj.asInstanceOf[useCountUpProps]
+      __obj.asInstanceOf[UseCountUpProps]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: useCountUpProps] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: UseCountUpProps] (val x: Self) extends AnyVal {
       
       inline def setEnableReinitialize(value: Boolean): Self = StObject.set(x, "enableReinitialize", value.asInstanceOf[js.Any])
       

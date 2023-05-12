@@ -21,6 +21,8 @@ trait DropDownListOptions
   
   var cascadeFromField: js.UndefOr[String] = js.undefined
   
+  var cascadeFromParentField: js.UndefOr[String] = js.undefined
+  
   var change: js.UndefOr[js.Function1[/* e */ DropDownListChangeEvent, Unit]] = js.undefined
   
   var close: js.UndefOr[js.Function1[/* e */ DropDownListCloseEvent, Unit]] = js.undefined
@@ -60,6 +62,8 @@ trait DropDownListOptions
   var ignoreCase: js.UndefOr[Boolean] = js.undefined
   
   var index: js.UndefOr[Double] = js.undefined
+  
+  var label: js.UndefOr[String | js.Function | BaseLabel] = js.undefined
   
   var minLength: js.UndefOr[Double] = js.undefined
   
@@ -122,6 +126,10 @@ object DropDownListOptions {
     inline def setCascadeFromField(value: String): Self = StObject.set(x, "cascadeFromField", value.asInstanceOf[js.Any])
     
     inline def setCascadeFromFieldUndefined: Self = StObject.set(x, "cascadeFromField", js.undefined)
+    
+    inline def setCascadeFromParentField(value: String): Self = StObject.set(x, "cascadeFromParentField", value.asInstanceOf[js.Any])
+    
+    inline def setCascadeFromParentFieldUndefined: Self = StObject.set(x, "cascadeFromParentField", js.undefined)
     
     inline def setCascadeFromUndefined: Self = StObject.set(x, "cascadeFrom", js.undefined)
     
@@ -206,6 +214,10 @@ object DropDownListOptions {
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    
+    inline def setLabel(value: String | js.Function | BaseLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     

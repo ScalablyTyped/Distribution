@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "hash-it" : "5.0.2"
+      "hash-it" : "6.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "hash-it" : "5.0.2"
+      "hash-it" : "6.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -1,7 +1,5 @@
 package typings.babylonjs
 
-import typings.babylonjs.anon.BlurSteps
-import typings.babylonjs.anon.Blurred
 import typings.babylonjs.camerasCameraMod.Camera
 import typings.babylonjs.enginesEngineMod.Engine
 import typings.babylonjs.materialsEffectMod.Effect
@@ -64,25 +62,5 @@ object postProcessesDepthOfFieldMergePostProcessMod {
       onCompiled: js.UndefOr[js.Function1[/* effect */ Effect, Unit]],
       onError: js.UndefOr[js.Function2[/* effect */ Effect, /* errors */ String, Unit]]
     ): Unit = js.native
-  }
-  
-  @JSImport("babylonjs/PostProcesses/depthOfFieldMergePostProcess", "DepthOfFieldMergePostProcessOptions")
-  @js.native
-  open class DepthOfFieldMergePostProcessOptions () extends StObject {
-    
-    /**
-      * Parameters to perform the merge of bloom effect
-      */
-    var bloom: js.UndefOr[Blurred] = js.native
-    
-    /**
-      * Parameters to perform the merge of the depth of field effect
-      */
-    var depthOfField: js.UndefOr[BlurSteps] = js.native
-    
-    /**
-      * The original image to merge on top of
-      */
-    var originalFromInput: PostProcess = js.native
   }
 }

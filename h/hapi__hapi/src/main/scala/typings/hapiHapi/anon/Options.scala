@@ -1,6 +1,6 @@
 package typings.hapiHapi.anon
 
-import typings.hapiHapi.mod.ReqRef
+import typings.hapiHapi.libTypesRequestMod.ReqRef
 import typings.joi.mod.ObjectSchema
 import typings.joi.mod.Schema
 import typings.joi.mod.ValidationOptions
@@ -15,9 +15,9 @@ trait Options[Refs /* <: ReqRef */] extends StObject {
   
   var schema: js.UndefOr[
     (ObjectSchema[
-      /* import warning: importer.ImportType#apply Failed type conversion: @hapi/hapi.@hapi/hapi.MergeRefs<Refs>['Rules'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: @hapi/hapi.@hapi/hapi/lib/types/request.MergeRefs<Refs>['Rules'] */ js.Any
     ]) | (Record[
-      /* import warning: importer.ImportType#apply Failed type conversion: keyof @hapi/hapi.@hapi/hapi.MergeRefs<Refs>['Rules'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: keyof @hapi/hapi.@hapi/hapi/lib/types/request.MergeRefs<Refs>['Rules'] */ js.Any, 
       Schema[Any]
     ])
   ] = js.undefined
@@ -38,9 +38,9 @@ object Options {
     
     inline def setSchema(
       value: (ObjectSchema[
-          /* import warning: importer.ImportType#apply Failed type conversion: @hapi/hapi.@hapi/hapi.MergeRefs<Refs>['Rules'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @hapi/hapi.@hapi/hapi/lib/types/request.MergeRefs<Refs>['Rules'] */ js.Any
         ]) | (Record[
-          /* import warning: importer.ImportType#apply Failed type conversion: keyof @hapi/hapi.@hapi/hapi.MergeRefs<Refs>['Rules'] */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof @hapi/hapi.@hapi/hapi/lib/types/request.MergeRefs<Refs>['Rules'] */ js.Any, 
           Schema[Any]
         ])
     ): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])

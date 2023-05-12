@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteParametersQueryKeyRef extends StObject {
   
   /**
-    * Deletes one or more GitHub Actions caches for a repository, using a complete cache key. By default, all caches that match the provided key are deleted, but you can optionally provide a Git ref to restrict deletions to caches that match both the provided key and the Git ref.
+    * Delete GitHub Actions caches for a repository (using a cache key)
+    * @description Deletes one or more GitHub Actions caches for a repository, using a complete cache key. By default, all caches that match the provided key are deleted, but you can optionally provide a Git ref to restrict deletions to caches that match both the provided key and the Git ref.
     *
     * You must authenticate using an access token with the `repo` scope to use this endpoint.
     *
@@ -16,7 +17,8 @@ trait DeleteParametersQueryKeyRef extends StObject {
   var delete: ParametersQueryKeyRef
   
   /**
-    * Lists the GitHub Actions caches for a repository.
+    * List GitHub Actions caches for a repository
+    * @description Lists the GitHub Actions caches for a repository.
     * You must authenticate using an access token with the `repo` scope to use this endpoint.
     * GitHub Apps must have the `actions:read` permission to use this endpoint.
     */

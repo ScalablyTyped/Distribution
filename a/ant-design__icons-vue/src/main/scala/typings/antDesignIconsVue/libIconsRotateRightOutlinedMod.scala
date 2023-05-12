@@ -16,7 +16,7 @@ object libIconsRotateRightOutlinedMod extends Shortcut {
   @js.native
   trait RotateRightOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_RotateRightOutlinedIconType: String = js.native

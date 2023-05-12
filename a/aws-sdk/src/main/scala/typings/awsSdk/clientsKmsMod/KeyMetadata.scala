@@ -17,7 +17,7 @@ trait KeyMetadata extends StObject {
   var Arn: js.UndefOr[ArnType] = js.undefined
   
   /**
-    * The cluster ID of the CloudHSM cluster that contains the key material for the KMS key. When you create a KMS key in a custom key store, KMS creates the key material for the KMS key in the associated CloudHSM cluster. This value is present only when the KMS key is created in a custom key store.
+    * The cluster ID of the CloudHSM cluster that contains the key material for the KMS key. When you create a KMS key in an CloudHSM custom key store, KMS creates the key material for the KMS key in the associated CloudHSM cluster. This field is present only when the KMS key is created in an CloudHSM key store.
     */
   var CloudHsmClusterId: js.UndefOr[CloudHsmClusterIdType] = js.undefined
   
@@ -27,12 +27,12 @@ trait KeyMetadata extends StObject {
   var CreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * A unique identifier for the custom key store that contains the KMS key. This value is present only when the KMS key is created in a custom key store.
+    * A unique identifier for the custom key store that contains the KMS key. This field is present only when the KMS key is created in a custom key store.
     */
   var CustomKeyStoreId: js.UndefOr[CustomKeyStoreIdType] = js.undefined
   
   /**
-    * Instead, use the KeySpec field. The KeySpec and CustomerMasterKeySpec fields have the same value. We recommend that you use the KeySpec field in your code. However, to avoid breaking changes, KMS will support both fields.
+    * Instead, use the KeySpec field. The KeySpec and CustomerMasterKeySpec fields have the same value. We recommend that you use the KeySpec field in your code. However, to avoid breaking changes, KMS supports both fields.
     */
   var CustomerMasterKeySpec: js.UndefOr[typings.awsSdk.clientsKmsMod.CustomerMasterKeySpec] = js.undefined
   
@@ -120,6 +120,11 @@ trait KeyMetadata extends StObject {
     * The time at which the imported key material expires. When the key material expires, KMS deletes the key material and the KMS key becomes unusable. This value is present only for KMS keys whose Origin is EXTERNAL and whose ExpirationModel is KEY_MATERIAL_EXPIRES, otherwise this value is omitted.
     */
   var ValidTo: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * Information about the external key that is associated with a KMS key in an external key store. For more information, see External key in the Key Management Service Developer Guide.
+    */
+  var XksKeyConfiguration: js.UndefOr[XksKeyConfigurationType] = js.undefined
 }
 object KeyMetadata {
   
@@ -226,5 +231,9 @@ object KeyMetadata {
     inline def setValidTo(value: js.Date): Self = StObject.set(x, "ValidTo", value.asInstanceOf[js.Any])
     
     inline def setValidToUndefined: Self = StObject.set(x, "ValidTo", js.undefined)
+    
+    inline def setXksKeyConfiguration(value: XksKeyConfigurationType): Self = StObject.set(x, "XksKeyConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setXksKeyConfigurationUndefined: Self = StObject.set(x, "XksKeyConfiguration", js.undefined)
   }
 }

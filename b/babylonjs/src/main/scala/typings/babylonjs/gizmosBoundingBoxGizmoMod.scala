@@ -23,7 +23,7 @@ object gizmosBoundingBoxGizmoMod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.babylonjs.sceneMod.IDisposable because Already inherited
   - typings.babylonjs.gizmosGizmoMod.IGizmo because Already inherited
-  - typings.babylonjs.gizmosBoundingBoxGizmoMod.IBoundingBoxGizmo because var conflicts: _rootMesh, attachedMesh, attachedNode, customRotationQuaternion, gizmoLayer, isHovered, scaleRatio, updateGizmoPositionToMatchAttachedMesh, updateGizmoRotationToMatchAttachedMesh, updateScale. Inlined ignoreChildren, includeChildPredicate, rotationSphereSize, scaleBoxSize, fixedDragMeshScreenSize, fixedDragMeshBoundsSize, fixedDragMeshScreenSizeDistanceFactor, onDragStartObservable, onScaleBoxDragObservable, onScaleBoxDragEndObservable, onRotationSphereDragObservable, onRotationSphereDragEndObservable, scalePivot, axisFactor, scaleDragSpeed, setColor, getScaleBoxes, updateBoundingBox, setEnabledRotationAxis, setEnabledScaling, setEnabledScaling, enableDragBehavior */ @JSImport("babylonjs/Gizmos/boundingBoxGizmo", "BoundingBoxGizmo")
+  - typings.babylonjs.gizmosBoundingBoxGizmoMod.IBoundingBoxGizmo because var conflicts: _rootMesh, attachedMesh, attachedNode, customRotationQuaternion, gizmoLayer, isHovered, scaleRatio, updateGizmoPositionToMatchAttachedMesh, updateGizmoRotationToMatchAttachedMesh, updateScale. Inlined ignoreChildren, includeChildPredicate, rotationSphereSize, scaleBoxSize, fixedDragMeshScreenSize, fixedDragMeshBoundsSize, fixedDragMeshScreenSizeDistanceFactor, onDragStartObservable, onScaleBoxDragObservable, onScaleBoxDragEndObservable, onRotationSphereDragObservable, onRotationSphereDragEndObservable, scalePivot, axisFactor, scaleDragSpeed, setColor, getScaleBoxes, updateBoundingBox, setEnabledRotationAxis, setEnabledScaling, setEnabledScaling, enableDragBehavior, coloredMaterial, hoverMaterial */ @JSImport("babylonjs/Gizmos/boundingBoxGizmo", "BoundingBoxGizmo")
   @js.native
   /**
     * Creates an BoundingBoxGizmo
@@ -79,6 +79,8 @@ object gizmosBoundingBoxGizmoMod {
     
     /* private */ var _tmpVector: Any = js.native
     
+    /* protected */ def _unhoverMeshOnTouchUp(pointerInfo: Nullable[PointerInfo], selectedMesh: AbstractMesh): Unit = js.native
+    
     /* protected */ def _updateDummy(): Unit = js.native
     
     /* protected */ def _updateRotationSpheres(): Unit = js.native
@@ -98,6 +100,12 @@ object gizmosBoundingBoxGizmoMod {
     /** Scale factor vector used for masking some axis */
     @JSName("axisFactor")
     var axisFactor_FBoundingBoxGizmo: Vector3 = js.native
+    
+    /** Default material used to render when gizmo is not disabled or hovered */
+    def coloredMaterial: StandardMaterial = js.native
+    /** Default material used to render when gizmo is not disabled or hovered */
+    @JSName("coloredMaterial")
+    var coloredMaterial_FBoundingBoxGizmo: StandardMaterial = js.native
     
     /**
       * Enables a pointer drag behavior on the bounding box of the gizmo
@@ -127,6 +135,12 @@ object gizmosBoundingBoxGizmoMod {
       */
     /** Returns an array containing all boxes used for scaling (in increasing x, y and z orders) */
     def getScaleBoxes(): js.Array[AbstractMesh] = js.native
+    
+    /** Material used to render when gizmo is hovered with mouse*/
+    def hoverMaterial: StandardMaterial = js.native
+    /** Material used to render when gizmo is hovered with mouse*/
+    @JSName("hoverMaterial")
+    var hoverMaterial_FBoundingBoxGizmo: StandardMaterial = js.native
     
     /**
       * If child meshes should be ignored when calculating the bounding box. This should be set to true to avoid perf hits with heavily nested meshes (Default: false)
@@ -251,6 +265,9 @@ object gizmosBoundingBoxGizmoMod {
     /** Scale factor vector used for masking some axis */
     var axisFactor: Vector3 = js.native
     
+    /** Default material used to render when gizmo is not disabled or hovered */
+    var coloredMaterial: StandardMaterial = js.native
+    
     /** Enables a pointer drag behavior on the bounding box of the gizmo */
     def enableDragBehavior(): Unit = js.native
     
@@ -273,6 +290,9 @@ object gizmosBoundingBoxGizmoMod {
     
     /** Returns an array containing all boxes used for scaling (in increasing x, y and z orders) */
     def getScaleBoxes(): js.Array[AbstractMesh] = js.native
+    
+    /** Material used to render when gizmo is hovered with mouse*/
+    var hoverMaterial: StandardMaterial = js.native
     
     /**
       * If child meshes should be ignored when calculating the bounding box. This should be set to true to avoid perf hits with heavily nested meshes.

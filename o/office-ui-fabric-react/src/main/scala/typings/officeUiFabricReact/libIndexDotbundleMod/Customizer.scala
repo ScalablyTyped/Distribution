@@ -14,7 +14,7 @@ open class Customizer protected ()
   def this(props: ICustomizerProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: ICustomizerProps, context: Any) = this()
 }

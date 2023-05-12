@@ -4,11 +4,11 @@ import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.hapiAuthJwt2.anon.Credentials
 import typings.hapiAuthJwt2.hapiAuthJwt2Strings.jwt
-import typings.hapiHapi.mod.Plugin
-import typings.hapiHapi.mod.ReqRefDefaults
-import typings.hapiHapi.mod.Request
-import typings.hapiHapi.mod.ResponseObject
-import typings.hapiHapi.mod.ResponseToolkit
+import typings.hapiHapi.libTypesPluginMod.Plugin
+import typings.hapiHapi.libTypesRequestMod.ReqRefDefaults
+import typings.hapiHapi.libTypesRequestMod.Request
+import typings.hapiHapi.libTypesResponseMod.ResponseObject
+import typings.hapiHapi.libTypesResponseMod.ResponseToolkit
 import typings.jsonwebtoken.mod.VerifyOptions
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
@@ -19,7 +19,7 @@ object mod extends Shortcut {
   
   @JSImport("hapi-auth-jwt2", JSImport.Namespace)
   @js.native
-  val ^ : Plugin[RegisterOptions] = js.native
+  val ^ : Plugin[RegisterOptions, Unit] = js.native
   
   trait ErrorContext extends StObject {
     
@@ -322,10 +322,10 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = Plugin[RegisterOptions]
+  type _To = Plugin[RegisterOptions, Unit]
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Plugin[RegisterOptions] = ^
+  override def _to: Plugin[RegisterOptions, Unit] = ^
   
   /* augmented module */
   object hapiHapiAugmentingMod {

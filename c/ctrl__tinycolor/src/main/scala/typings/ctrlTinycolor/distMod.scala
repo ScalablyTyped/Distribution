@@ -103,6 +103,11 @@ object distMod {
     
     def isLight(): Boolean = js.native
     
+    /**
+      * Returns whether the color is monochrome.
+      */
+    def isMonochrome(): Boolean = js.native
+    
     /** the color was successfully parsed */
     var isValid: Boolean = js.native
     
@@ -203,14 +208,21 @@ object distMod {
     def toHex8(allow4Char: Boolean): String = js.native
     
     /**
-      * Returns the hex 8 value of the color -with a # appened.
+      * Returns the hex 8 value of the color -with a # prefixed.
       * @param allow4Char will shorten hex value to 4 char if possible
       */
     def toHex8String(): String = js.native
     def toHex8String(allow4Char: Boolean): String = js.native
     
     /**
-      * Returns the hex value of the color -with a # appened.
+      * Returns the shorter hex value of the color depends on its alpha -with a # prefixed.
+      * @param allowShortChar will shorten hex value to 3 or 4 char if possible
+      */
+    def toHexShortString(): String = js.native
+    def toHexShortString(allowShortChar: Boolean): String = js.native
+    
+    /**
+      * Returns the hex value of the color -with a # prefixed.
       * @param allow3Char will shorten hex value to 3 char if possible
       */
     def toHexString(): String = js.native

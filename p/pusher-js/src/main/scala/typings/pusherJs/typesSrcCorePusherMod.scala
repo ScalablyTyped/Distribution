@@ -15,7 +15,6 @@ object typesSrcCorePusherMod {
   open class default protected ()
     extends StObject
        with Pusher {
-    def this(app_key: String) = this()
     def this(app_key: String, options: Options) = this()
   }
   /* static members */

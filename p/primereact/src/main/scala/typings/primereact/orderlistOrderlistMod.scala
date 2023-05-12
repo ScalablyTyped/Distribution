@@ -50,6 +50,8 @@ import typings.primereact.primereactStrings.tree
 import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.yes
+import typings.primereact.utilsUtilsMod.IconOptions
+import typings.primereact.utilsUtilsMod.IconType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -102,28 +104,43 @@ object orderlistOrderlistMod {
     def this(props: OrderListProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: OrderListProps, context: Any) = this()
     
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
   }
   
-  trait OrderListChangeParams extends StObject {
+  /**
+    * Custom change event.
+    * @see {@link OrderListProps.onChange}
+    * @event
+    */
+  trait OrderListChangeEvent extends StObject {
     
+    /**
+      * Browser event
+      */
     var originalEvent: SyntheticEvent[Element, Event]
     
+    /**
+      * Reordered list
+      */
     var value: Any
   }
-  object OrderListChangeParams {
+  object OrderListChangeEvent {
     
-    inline def apply(originalEvent: SyntheticEvent[Element, Event], value: Any): OrderListChangeParams = {
+    inline def apply(originalEvent: SyntheticEvent[Element, Event], value: Any): OrderListChangeEvent = {
       val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[OrderListChangeParams]
+      __obj.asInstanceOf[OrderListChangeEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: OrderListChangeParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: OrderListChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -131,10 +148,19 @@ object orderlistOrderlistMod {
     }
   }
   
+  /**
+    * Custom filter options.
+    */
   trait OrderListFilterOptions extends StObject {
     
+    /**
+      * Browser keyboard event for the filter orderlist element.
+      */
     var filter: js.UndefOr[js.Function1[/* event */ js.UndefOr[KeyboardEvent], Unit]] = js.undefined
     
+    /**
+      * Used to reset the filter.
+      */
     var reset: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object OrderListFilterOptions {
@@ -156,8 +182,6 @@ object orderlistOrderlistMod {
       inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     }
   }
-  
-  type OrderListFilterTemplateType = ReactNode | (js.Function1[/* options */ OrderListFilterOptions, ReactNode])
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'onChange' | 'ref'> */
   trait OrderListProps extends StObject {
@@ -268,13 +292,27 @@ object orderlistOrderlistMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * The breakpoint to define the maximum width boundary when responsiveness is enabled.
+      * @defaultValue '960px'.
+      */
+    var breakpoint: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -282,6 +320,9 @@ object orderlistOrderlistMod {
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
+    /**
+      * Name of the field that uniquely identifies the a record in the data.
+      */
     var dataKey: js.UndefOr[String] = js.undefined
     
     var datatype: js.UndefOr[String] = js.undefined
@@ -292,22 +333,56 @@ object orderlistOrderlistMod {
     
     var dir: js.UndefOr[String] = js.undefined
     
+    /**
+      * Whether to enable dragdrop based reordering.
+      * @defaultValue false
+      */
     var dragdrop: js.UndefOr[Boolean] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
+    /**
+      * When filtering is enabled, filterBy decides which field or fields (comma separated) to search against.
+      * @defaultValue label
+      */
     var filter: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * When filtering is enabled, filterBy decides which field or fields (comma separated) to search against.
+      * @defaultValue label
+      */
     var filterBy: js.UndefOr[String] = js.undefined
     
+    /**
+      * Icon of the filter.
+      */
+    var filterIcon: js.UndefOr[IconType[OrderListProps]] = js.undefined
+    
+    /**
+      * Locale to use in filtering. The default locale is the host environment's current locale.
+      * @defaultValue undefined
+      */
     var filterLocale: js.UndefOr[String] = js.undefined
     
+    /**
+      * Defines how the items are filtered, valid values are "contains" (default), "startsWith", "endsWith", "equals" and "notEquals".
+      * @defaultValue contains
+      */
     var filterMatchMode: js.UndefOr[String] = js.undefined
     
+    /**
+      * Placeholder text to show when filter input is empty.
+      */
     var filterPlaceholder: js.UndefOr[String] = js.undefined
     
-    var filterTemplate: js.UndefOr[OrderListFilterTemplateType] = js.undefined
+    /**
+      * Custom template of filter element.
+      */
+    var filterTemplate: js.UndefOr[ReactNode | (js.Function1[/* options */ OrderListFilterOptions, ReactNode])] = js.undefined
     
+    /**
+      * Text for the caption.
+      */
     var header: js.UndefOr[ReactNode] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
@@ -328,6 +403,10 @@ object orderlistOrderlistMod {
     
     var itemScope: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * The template of each item
+      * @param {*} item - Current item
+      */
     var itemTemplate: js.UndefOr[js.Function1[/* item */ Any, ReactNode]] = js.undefined
     
     var itemType: js.UndefOr[String] = js.undefined
@@ -336,7 +415,30 @@ object orderlistOrderlistMod {
     
     var lang: js.UndefOr[String] = js.undefined
     
+    /**
+      * Inline style of the list element.
+      */
     var listStyle: js.UndefOr[CSSProperties] = js.undefined
+    
+    /**
+      * Icon of the move bottom icon.
+      */
+    var moveBottomIcon: js.UndefOr[IconType[OrderListProps]] = js.undefined
+    
+    /**
+      * Icon of the move down icon.
+      */
+    var moveDownIcon: js.UndefOr[IconType[OrderListProps]] = js.undefined
+    
+    /**
+      * Icon of the move top icon.
+      */
+    var moveTopIcon: js.UndefOr[IconType[OrderListProps]] = js.undefined
+    
+    /**
+      * Icon of the move up icon.
+      */
+    var moveUpIcon: js.UndefOr[IconType[OrderListProps]] = js.undefined
     
     var nonce: js.UndefOr[String] = js.undefined
     
@@ -358,7 +460,11 @@ object orderlistOrderlistMod {
     
     var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ OrderListChangeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke to when a mouse button is pressed.
+      * @param {OrderListChangeEvent} event - Browser event.
+      */
+    var onChange: js.UndefOr[js.Function1[/* event */ OrderListChangeEvent, Unit]] = js.undefined
     
     var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
@@ -508,9 +614,13 @@ object orderlistOrderlistMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -536,6 +646,9 @@ object orderlistOrderlistMod {
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
+    /**
+      * An array of objects to reorder.
+      */
     var value: js.UndefOr[js.Array[Any]] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
@@ -760,9 +873,17 @@ object orderlistOrderlistMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
+      
+      inline def setBreakpoint(value: String): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
+      
+      inline def setBreakpointUndefined: Self = StObject.set(x, "breakpoint", js.undefined)
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -776,9 +897,13 @@ object orderlistOrderlistMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -824,6 +949,12 @@ object orderlistOrderlistMod {
       
       inline def setFilterByUndefined: Self = StObject.set(x, "filterBy", js.undefined)
       
+      inline def setFilterIcon(value: IconType[OrderListProps]): Self = StObject.set(x, "filterIcon", value.asInstanceOf[js.Any])
+      
+      inline def setFilterIconFunction1(value: /* options */ IconOptions[OrderListProps] => ReactNode): Self = StObject.set(x, "filterIcon", js.Any.fromFunction1(value))
+      
+      inline def setFilterIconUndefined: Self = StObject.set(x, "filterIcon", js.undefined)
+      
       inline def setFilterLocale(value: String): Self = StObject.set(x, "filterLocale", value.asInstanceOf[js.Any])
       
       inline def setFilterLocaleUndefined: Self = StObject.set(x, "filterLocale", js.undefined)
@@ -836,7 +967,7 @@ object orderlistOrderlistMod {
       
       inline def setFilterPlaceholderUndefined: Self = StObject.set(x, "filterPlaceholder", js.undefined)
       
-      inline def setFilterTemplate(value: OrderListFilterTemplateType): Self = StObject.set(x, "filterTemplate", value.asInstanceOf[js.Any])
+      inline def setFilterTemplate(value: ReactNode | (js.Function1[/* options */ OrderListFilterOptions, ReactNode])): Self = StObject.set(x, "filterTemplate", value.asInstanceOf[js.Any])
       
       inline def setFilterTemplateFunction1(value: /* options */ OrderListFilterOptions => ReactNode): Self = StObject.set(x, "filterTemplate", js.Any.fromFunction1(value))
       
@@ -906,6 +1037,30 @@ object orderlistOrderlistMod {
       
       inline def setListStyleUndefined: Self = StObject.set(x, "listStyle", js.undefined)
       
+      inline def setMoveBottomIcon(value: IconType[OrderListProps]): Self = StObject.set(x, "moveBottomIcon", value.asInstanceOf[js.Any])
+      
+      inline def setMoveBottomIconFunction1(value: /* options */ IconOptions[OrderListProps] => ReactNode): Self = StObject.set(x, "moveBottomIcon", js.Any.fromFunction1(value))
+      
+      inline def setMoveBottomIconUndefined: Self = StObject.set(x, "moveBottomIcon", js.undefined)
+      
+      inline def setMoveDownIcon(value: IconType[OrderListProps]): Self = StObject.set(x, "moveDownIcon", value.asInstanceOf[js.Any])
+      
+      inline def setMoveDownIconFunction1(value: /* options */ IconOptions[OrderListProps] => ReactNode): Self = StObject.set(x, "moveDownIcon", js.Any.fromFunction1(value))
+      
+      inline def setMoveDownIconUndefined: Self = StObject.set(x, "moveDownIcon", js.undefined)
+      
+      inline def setMoveTopIcon(value: IconType[OrderListProps]): Self = StObject.set(x, "moveTopIcon", value.asInstanceOf[js.Any])
+      
+      inline def setMoveTopIconFunction1(value: /* options */ IconOptions[OrderListProps] => ReactNode): Self = StObject.set(x, "moveTopIcon", js.Any.fromFunction1(value))
+      
+      inline def setMoveTopIconUndefined: Self = StObject.set(x, "moveTopIcon", js.undefined)
+      
+      inline def setMoveUpIcon(value: IconType[OrderListProps]): Self = StObject.set(x, "moveUpIcon", value.asInstanceOf[js.Any])
+      
+      inline def setMoveUpIconFunction1(value: /* options */ IconOptions[OrderListProps] => ReactNode): Self = StObject.set(x, "moveUpIcon", js.Any.fromFunction1(value))
+      
+      inline def setMoveUpIconUndefined: Self = StObject.set(x, "moveUpIcon", js.undefined)
+      
       inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
       inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
@@ -946,7 +1101,7 @@ object orderlistOrderlistMod {
       
       inline def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
       
-      inline def setOnChange(value: /* e */ OrderListChangeParams => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* event */ OrderListChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -1246,6 +1401,10 @@ object orderlistOrderlistMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1253,6 +1412,10 @@ object orderlistOrderlistMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       

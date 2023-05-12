@@ -83,11 +83,42 @@ type CertificateType = _CertificateType | String
 */
 type ComparisonOperatorType = _ComparisonOperatorType | String
 
+type ComputeArn = String
+
+type ComputeAuthToken = String
+
+type ComputeList = js.Array[Compute]
+
+type ComputeName = String
+
+type ComputeNameOrArn = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PENDING
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - typings.awsSdk.awsSdkStrings.TERMINATING
+  - java.lang.String
+*/
+type ComputeStatus = _ComputeStatus | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.EC2
+  - typings.awsSdk.awsSdkStrings.ANYWHERE
+  - java.lang.String
+*/
+type ComputeType = _ComputeType | String
+
 type CustomEventData = String
+
+type CustomInputLocationStringModel = String
+
+type CustomLocationNameOrArnModel = String
 
 type DesiredPlayerSessionList = js.Array[DesiredPlayerSession]
 
 type DnsName = String
+
+type DnsNameInput = String
 
 type Double = scala.Double
 
@@ -248,6 +279,7 @@ type EC2InstanceType = _EC2InstanceType | String
   - typings.awsSdk.awsSdkStrings.FLEET_VPC_PEERING_FAILED
   - typings.awsSdk.awsSdkStrings.FLEET_VPC_PEERING_DELETED
   - typings.awsSdk.awsSdkStrings.INSTANCE_INTERRUPTED
+  - typings.awsSdk.awsSdkStrings.INSTANCE_RECYCLED
   - java.lang.String
 */
 type EventCode = _EventCode | String
@@ -282,6 +314,7 @@ type FleetIdOrArnList = js.Array[FleetIdOrArn]
   - typings.awsSdk.awsSdkStrings.DELETING
   - typings.awsSdk.awsSdkStrings.ERROR
   - typings.awsSdk.awsSdkStrings.TERMINATED
+  - typings.awsSdk.awsSdkStrings.NOT_FOUND
   - java.lang.String
 */
 type FleetStatus = _FleetStatus | String
@@ -305,6 +338,8 @@ type FlexMatchMode = _FlexMatchMode | String
 type Float = scala.Double
 
 type FreeText = String
+
+type GameLiftServiceSdkEndpointOutput = String
 
 type GamePropertyKey = String
 
@@ -564,11 +599,26 @@ type LaunchTemplateName = String
 
 type LaunchTemplateVersion = String
 
+type ListLocationsLimit = scala.Double
+
+type LocationArnModel = String
+
 type LocationAttributesList = js.Array[LocationAttributes]
 
 type LocationConfigurationList = js.Array[LocationConfiguration]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AWS
+  - typings.awsSdk.awsSdkStrings.CUSTOM
+  - java.lang.String
+*/
+type LocationFilter = _LocationFilter | String
+
+type LocationFilterList = js.Array[LocationFilter]
+
 type LocationList = js.Array[LocationStringModel]
+
+type LocationModelList = js.Array[LocationModel]
 
 type LocationStateList = js.Array[LocationState]
 
@@ -637,6 +687,7 @@ type MetricGroupList = js.Array[MetricGroup]
   - typings.awsSdk.awsSdkStrings.PercentIdleInstances
   - typings.awsSdk.awsSdkStrings.QueueDepth
   - typings.awsSdk.awsSdkStrings.WaitTime
+  - typings.awsSdk.awsSdkStrings.ConcurrentActivatableGameSessions
   - java.lang.String
 */
 type MetricName = _MetricName | String
@@ -649,12 +700,15 @@ type NonEmptyString = String
 
 type NonNegativeDouble = scala.Double
 
+type NonNegativeLimitedLengthDouble = String
+
 type NonZeroAndMaxString = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.WINDOWS_2012
   - typings.awsSdk.awsSdkStrings.AMAZON_LINUX
   - typings.awsSdk.awsSdkStrings.AMAZON_LINUX_2
+  - typings.awsSdk.awsSdkStrings.WINDOWS_2016
   - java.lang.String
 */
 type OperatingSystem = _OperatingSystem | String
@@ -662,6 +716,12 @@ type OperatingSystem = _OperatingSystem | String
 type PlacedPlayerSessionList = js.Array[PlacedPlayerSession]
 
 type PlayerAttributeMap = StringDictionary[AttributeValue]
+
+type PlayerAttributeString = String
+
+type PlayerAttributeStringDoubleMap = StringDictionary[DoubleObject]
+
+type PlayerAttributeStringList = js.Array[PlayerAttributeString]
 
 type PlayerData = String
 
@@ -775,6 +835,8 @@ type ScriptList = js.Array[Script]
 
 type ServerProcessList = js.Array[ServerProcess]
 
+type ServerSdkVersion = String
+
 type SnsArnStringModel = String
 
 /* Rewritten from type alias, can be one of: 
@@ -783,8 +845,6 @@ type SnsArnStringModel = String
   - java.lang.String
 */
 type SortOrder = _SortOrder | String
-
-type StringDoubleMap = StringDictionary[DoubleObject]
 
 type StringList = js.Array[NonZeroAndMaxString]
 

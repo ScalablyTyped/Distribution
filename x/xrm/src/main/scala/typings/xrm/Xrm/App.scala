@@ -1,6 +1,6 @@
 package typings.xrm.Xrm
 
-import typings.xrm.Xrm.App.Notifcation
+import typings.xrm.Xrm.App.Notification
 import typings.xrm.Xrm.Async.PromiseLike
 import typings.xrm.Xrm.Navigation.CustomPage
 import typings.xrm.Xrm.Navigation.Dashboard
@@ -8,6 +8,7 @@ import typings.xrm.Xrm.Navigation.NavigationOptions
 import typings.xrm.Xrm.Navigation.PageInputEntityList
 import typings.xrm.Xrm.Navigation.PageInputEntityRecord
 import typings.xrm.Xrm.Navigation.PageInputHtmlWebResource
+import typings.xrm.XrmEnum.AppNotificationLevel
 import typings.xrm.anon.CreatePane
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Interface for Xrm.App API
-  * @see {@link https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/xrm-app External Link: Xrm.App (Client API reference)}
+  * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-app External Link: Xrm.App (Client API reference)}
   */
 trait App extends StObject {
   
@@ -24,7 +25,7 @@ trait App extends StObject {
     * @param notification The notification to add.
     * @returns On success, returns a promise object containing a GUID value to uniquely identify the notification as described earlier in the description of the successCallback parameter.
     */
-  def addGlobalNotification(notification: Notifcation): PromiseLike[String]
+  def addGlobalNotification(notification: Notification): PromiseLike[String]
   
   /**
     * Clears a notification in the app.
@@ -35,18 +36,18 @@ trait App extends StObject {
   
   /**
     * Provides methods for managing side panes.
-    * @see {@link https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/xrm-app-sidepanes External Link: sidePanes (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-app-sidepanes External Link: sidePanes (Client API reference)}
     */
   var sidePanes: CreatePane
 }
 /**
   * Namespace to hold Xrm.App related types
-  * @see {@link https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/xrm-app External Link: Xrm.App (Client API reference)}
+  * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-app External Link: Xrm.App (Client API reference)}
   */
 object App {
   
   inline def apply(
-    addGlobalNotification: Notifcation => PromiseLike[String],
+    addGlobalNotification: Notification => PromiseLike[String],
     clearGlobalNotification: String => PromiseLike[String],
     sidePanes: CreatePane
   ): App = {
@@ -93,7 +94,7 @@ object App {
   @scala.inline
   implicit open class MutableBuilder[Self <: App] (val x: Self) extends AnyVal {
     
-    inline def setAddGlobalNotification(value: Notifcation => PromiseLike[String]): Self = StObject.set(x, "addGlobalNotification", js.Any.fromFunction1(value))
+    inline def setAddGlobalNotification(value: Notification => PromiseLike[String]): Self = StObject.set(x, "addGlobalNotification", js.Any.fromFunction1(value))
     
     inline def setClearGlobalNotification(value: String => PromiseLike[String]): Self = StObject.set(x, "clearGlobalNotification", js.Any.fromFunction1(value))
     
@@ -104,7 +105,7 @@ object App {
     * Defines the notification object for Xrm.App.addGlobalNotification
     * @see {@link Xmr.App.addGlobalNotification}
     */
-  trait Notifcation extends StObject {
+  trait Notification extends StObject {
     
     /**
       * @see {@link Xrm.App.Action}
@@ -114,7 +115,7 @@ object App {
     /**
       * Defines the level of notification.
       */
-    var level: Double
+    var level: AppNotificationLevel
     
     /**
       * The message to display in the notification.
@@ -131,22 +132,22 @@ object App {
       */
     var `type`: Double
   }
-  object Notifcation {
+  object Notification {
     
-    inline def apply(level: Double, message: String, `type`: Double): Notifcation = {
+    inline def apply(level: AppNotificationLevel, message: String, `type`: Double): Notification = {
       val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Notifcation]
+      __obj.asInstanceOf[Notification]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Notifcation] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: Notification] (val x: Self) extends AnyVal {
       
       inline def setAction(value: Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: AppNotificationLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

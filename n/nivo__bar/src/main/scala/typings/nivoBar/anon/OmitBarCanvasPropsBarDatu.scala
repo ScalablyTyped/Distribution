@@ -80,7 +80,7 @@ trait OmitBarCanvasPropsBarDatu extends StObject {
   
   var indexScale: js.UndefOr[ScaleBandSpec] = js.undefined
   
-  var initialHiddenIds: js.UndefOr[js.Array[String]] = js.undefined
+  var initialHiddenIds: js.UndefOr[js.Array[String | Double]] = js.undefined
   
   var innerPadding: js.UndefOr[Double] = js.undefined
   
@@ -142,6 +142,11 @@ trait OmitBarCanvasPropsBarDatu extends StObject {
   
   var pixelRatio: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Allows getting a ref to the component instance.
+    * Once the component unmounts, React will set `ref.current` to `null` (or call the ref with `null` if you passed a callback ref).
+    * @see https://react.dev/learn/referencing-values-with-refs#refs-and-the-dom
+    */
   var ref: js.UndefOr[Ref[HTMLCanvasElement]] = js.undefined
   
   var renderBar: js.UndefOr[
@@ -268,11 +273,11 @@ object OmitBarCanvasPropsBarDatu {
     
     inline def setIndexScaleUndefined: Self = StObject.set(x, "indexScale", js.undefined)
     
-    inline def setInitialHiddenIds(value: js.Array[String]): Self = StObject.set(x, "initialHiddenIds", value.asInstanceOf[js.Any])
+    inline def setInitialHiddenIds(value: js.Array[String | Double]): Self = StObject.set(x, "initialHiddenIds", value.asInstanceOf[js.Any])
     
     inline def setInitialHiddenIdsUndefined: Self = StObject.set(x, "initialHiddenIds", js.undefined)
     
-    inline def setInitialHiddenIdsVarargs(value: String*): Self = StObject.set(x, "initialHiddenIds", js.Array(value*))
+    inline def setInitialHiddenIdsVarargs(value: (String | Double)*): Self = StObject.set(x, "initialHiddenIds", js.Array(value*))
     
     inline def setInnerPadding(value: Double): Self = StObject.set(x, "innerPadding", value.asInstanceOf[js.Any])
     

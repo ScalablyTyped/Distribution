@@ -14,7 +14,7 @@ trait DocumentFetchResponse[D] extends StObject {
   
   var total_rows: Double
   
-  var update_seq: js.UndefOr[Double] = js.undefined
+  var update_seq: js.UndefOr[Double | String] = js.undefined
 }
 object DocumentFetchResponse {
   
@@ -34,7 +34,7 @@ object DocumentFetchResponse {
     
     inline def setTotal_rows(value: Double): Self = StObject.set(x, "total_rows", value.asInstanceOf[js.Any])
     
-    inline def setUpdate_seq(value: Double): Self = StObject.set(x, "update_seq", value.asInstanceOf[js.Any])
+    inline def setUpdate_seq(value: Double | String): Self = StObject.set(x, "update_seq", value.asInstanceOf[js.Any])
     
     inline def setUpdate_seqUndefined: Self = StObject.set(x, "update_seq", js.undefined)
   }

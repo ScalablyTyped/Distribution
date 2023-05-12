@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridLayerOptions extends StObject {
-  
-  var attribution: js.UndefOr[String] = js.undefined
+trait GridLayerOptions
+  extends StObject
+     with LayerOptions {
   
   var bounds: js.UndefOr[LatLngBoundsExpression] = js.undefined
   
@@ -34,8 +34,6 @@ trait GridLayerOptions extends StObject {
   
   var opacity: js.UndefOr[Double] = js.undefined
   
-  var pane: js.UndefOr[String] = js.undefined
-  
   var tileSize: js.UndefOr[Double | Point_] = js.undefined
   
   var updateInterval: js.UndefOr[Double] = js.undefined
@@ -55,10 +53,6 @@ object GridLayerOptions {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: GridLayerOptions] (val x: Self) extends AnyVal {
-    
-    inline def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
-    
-    inline def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
     
     inline def setBounds(value: LatLngBoundsExpression): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
@@ -97,10 +91,6 @@ object GridLayerOptions {
     inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
-    
-    inline def setPane(value: String): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
-    
-    inline def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
     
     inline def setTileSize(value: Double | Point_): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
     

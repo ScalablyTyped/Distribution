@@ -1,13 +1,123 @@
 package typings.babelCore
 
+import typings.babelCore.babelCoreBooleans.`true`
+import typings.babelCore.babelCoreStrings.current
+import typings.babelCore.babelCoreStrings.tp
 import typings.babelCore.mod.TransformOptions
 import typings.babelParser.anon.ParseResultFile
 import typings.babelParser.mod.ParserOptions
+import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
+  
+  trait Android extends StObject {
+    
+    var android: js.UndefOr[String] = js.undefined
+    
+    var browsers: js.UndefOr[String | js.Array[String]] = js.undefined
+    
+    var chrome: js.UndefOr[String] = js.undefined
+    
+    var deno: js.UndefOr[String] = js.undefined
+    
+    var edge: js.UndefOr[String] = js.undefined
+    
+    var electron: js.UndefOr[String] = js.undefined
+    
+    var esmodules: js.UndefOr[Boolean] = js.undefined
+    
+    var firefox: js.UndefOr[String] = js.undefined
+    
+    var ie: js.UndefOr[String] = js.undefined
+    
+    var ios: js.UndefOr[String] = js.undefined
+    
+    var node: js.UndefOr[(Omit[String, current]) | current | `true`] = js.undefined
+    
+    var opera: js.UndefOr[String] = js.undefined
+    
+    var rhino: js.UndefOr[String] = js.undefined
+    
+    var safari: js.UndefOr[(Omit[String, tp]) | tp] = js.undefined
+    
+    var samsung: js.UndefOr[String] = js.undefined
+  }
+  object Android {
+    
+    inline def apply(): Android = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Android]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Android] (val x: Self) extends AnyVal {
+      
+      inline def setAndroid(value: String): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
+      
+      inline def setAndroidUndefined: Self = StObject.set(x, "android", js.undefined)
+      
+      inline def setBrowsers(value: String | js.Array[String]): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
+      
+      inline def setBrowsersUndefined: Self = StObject.set(x, "browsers", js.undefined)
+      
+      inline def setBrowsersVarargs(value: String*): Self = StObject.set(x, "browsers", js.Array(value*))
+      
+      inline def setChrome(value: String): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
+      
+      inline def setChromeUndefined: Self = StObject.set(x, "chrome", js.undefined)
+      
+      inline def setDeno(value: String): Self = StObject.set(x, "deno", value.asInstanceOf[js.Any])
+      
+      inline def setDenoUndefined: Self = StObject.set(x, "deno", js.undefined)
+      
+      inline def setEdge(value: String): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
+      
+      inline def setEdgeUndefined: Self = StObject.set(x, "edge", js.undefined)
+      
+      inline def setElectron(value: String): Self = StObject.set(x, "electron", value.asInstanceOf[js.Any])
+      
+      inline def setElectronUndefined: Self = StObject.set(x, "electron", js.undefined)
+      
+      inline def setEsmodules(value: Boolean): Self = StObject.set(x, "esmodules", value.asInstanceOf[js.Any])
+      
+      inline def setEsmodulesUndefined: Self = StObject.set(x, "esmodules", js.undefined)
+      
+      inline def setFirefox(value: String): Self = StObject.set(x, "firefox", value.asInstanceOf[js.Any])
+      
+      inline def setFirefoxUndefined: Self = StObject.set(x, "firefox", js.undefined)
+      
+      inline def setIe(value: String): Self = StObject.set(x, "ie", value.asInstanceOf[js.Any])
+      
+      inline def setIeUndefined: Self = StObject.set(x, "ie", js.undefined)
+      
+      inline def setIos(value: String): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
+      
+      inline def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
+      
+      inline def setNode(value: (Omit[String, current]) | current | `true`): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      
+      inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+      
+      inline def setOpera(value: String): Self = StObject.set(x, "opera", value.asInstanceOf[js.Any])
+      
+      inline def setOperaUndefined: Self = StObject.set(x, "opera", js.undefined)
+      
+      inline def setRhino(value: String): Self = StObject.set(x, "rhino", value.asInstanceOf[js.Any])
+      
+      inline def setRhinoUndefined: Self = StObject.set(x, "rhino", js.undefined)
+      
+      inline def setSafari(value: (Omit[String, tp]) | tp): Self = StObject.set(x, "safari", value.asInstanceOf[js.Any])
+      
+      inline def setSafariUndefined: Self = StObject.set(x, "safari", js.undefined)
+      
+      inline def setSamsung(value: String): Self = StObject.set(x, "samsung", value.asInstanceOf[js.Any])
+      
+      inline def setSamsungUndefined: Self = StObject.set(x, "samsung", js.undefined)
+    }
+  }
   
   trait Exported extends StObject {
     

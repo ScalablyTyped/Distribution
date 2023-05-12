@@ -16,7 +16,7 @@ object libIconsYahooFilledMod extends Shortcut {
   @js.native
   trait YahooFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_YahooFilledIconType: String = js.native

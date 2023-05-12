@@ -21,7 +21,7 @@ open class ResourceLoader protected () extends StObject {
   /**
     * Create a new ResourceLoader instance.
     *
-    * @param {AppBase} app - The application.
+    * @param {import('../app-base.js').AppBase} app - The application.
     */
   def this(app: AppBase) = this()
   
@@ -56,10 +56,10 @@ open class ResourceLoader protected () extends StObject {
     * - {@link ASSET_SCRIPT}
     * - {@link ASSET_CONTAINER}
     *
-    * @param {ResourceHandler} handler - An instance of a resource handler supporting at least
-    * `load()` and `open()`.
+    * @param {import('./handler.js').ResourceHandler} handler - An instance of a resource handler
+    * supporting at least `load()` and `open()`.
     * @example
-    * var loader = new ResourceLoader();
+    * const loader = new ResourceLoader();
     * loader.addHandler("json", new pc.JsonHandler());
     */
   def addHandler(`type`: String, handler: ResourceHandler): Unit = js.native
@@ -107,7 +107,7 @@ open class ResourceLoader protected () extends StObject {
     * Get a {@link ResourceHandler} for a resource type.
     *
     * @param {string} type - The name of the resource type that the handler is registered with.
-    * @returns {ResourceHandler} The registered handler.
+    * @returns {import('./handler.js').ResourceHandler} The registered handler.
     */
   def getHandler(`type`: String): ResourceHandler = js.native
   
@@ -120,7 +120,8 @@ open class ResourceLoader protected () extends StObject {
     * @param {string} type - The type of resource expected.
     * @param {ResourceLoaderCallback} callback - The callback used when the resource is loaded or
     * an error occurs. Passed (err, resource) where err is null if there are no errors.
-    * @param {Asset} [asset] - Optional asset that is passed into handler
+    * @param {import('../asset/asset.js').Asset} [asset] - Optional asset that is passed into
+    * handler.
     * @example
     * app.loader.load("../path/to/texture.png", "texture", function (err, texture) {
     *     // use texture here
@@ -143,8 +144,8 @@ open class ResourceLoader protected () extends StObject {
     * Perform any operations on a resource, that requires a dependency on its asset data or any
     * other asset data.
     *
-    * @param {Asset} asset - The asset to patch.
-    * @param {AssetRegistry} assets - The asset registry.
+    * @param {import('../asset/asset.js').Asset} asset - The asset to patch.
+    * @param {import('../asset/asset-registry.js').AssetRegistry} assets - The asset registry.
     */
   def patch(asset: Asset_, assets: AssetRegistry): Unit = js.native
   

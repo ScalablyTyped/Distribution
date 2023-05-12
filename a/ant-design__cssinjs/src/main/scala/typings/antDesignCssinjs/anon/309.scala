@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.FontOpticalSizing
+import typings.csstype.mod.Property.MsContentZoomLimit
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `309` extends StObject {
   
   var value: js.UndefOr[
-    FontOpticalSizing | (js.Array[
+    MsContentZoomLimit | (js.Array[
       (Extract[
-        js.UndefOr[FontOpticalSizing | js.Array[NonNullable[js.UndefOr[FontOpticalSizing]]]], 
+        js.UndefOr[MsContentZoomLimit | js.Array[NonNullable[js.UndefOr[MsContentZoomLimit]]]], 
         String
-      ]) | NonNullable[js.UndefOr[FontOpticalSizing]]
+      ]) | NonNullable[js.UndefOr[MsContentZoomLimit]]
     ])
   ] = js.native
 }

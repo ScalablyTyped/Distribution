@@ -22,7 +22,7 @@ open class ResourceLoader protected ()
   /**
     * Create a new ResourceLoader instance.
     *
-    * @param {AppBase} app - The application.
+    * @param {import('../app-base.js').AppBase} app - The application.
     */
   def this(app: typings.playcanvas.mod.AppBase) = this()
 }

@@ -1,7 +1,7 @@
 package typings.consumerDataStandards.energySdhMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.consumerDataStandards.anon.AggregateValue
+import typings.consumerDataStandards.anon.IntervalReads
 import typings.consumerDataStandards.anon.Quality
 import typings.consumerDataStandards.consumerDataStandardsStrings.basicRead
 import typings.consumerDataStandards.consumerDataStandardsStrings.intervalRead
@@ -26,7 +26,7 @@ trait EnergyUsageRead
   /**
     * Mandatory if readUType is set to intervalRead
     */
-  var intervalRead: js.UndefOr[AggregateValue | Null] = js.undefined
+  var intervalRead: js.UndefOr[IntervalReads | Null] = js.undefined
   
   /**
     * Meter id/serial number as it appears in customer’s bill. ID permanence rules do not apply.
@@ -95,7 +95,7 @@ object EnergyUsageRead {
     
     inline def setControlledLoadUndefined: Self = StObject.set(x, "controlledLoad", js.undefined)
     
-    inline def setIntervalRead(value: AggregateValue): Self = StObject.set(x, "intervalRead", value.asInstanceOf[js.Any])
+    inline def setIntervalRead(value: IntervalReads): Self = StObject.set(x, "intervalRead", value.asInstanceOf[js.Any])
     
     inline def setIntervalReadNull: Self = StObject.set(x, "intervalRead", null)
     

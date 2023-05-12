@@ -1,18 +1,25 @@
 package typings.twilio
 
-import typings.twilio.libRestTwilioMod.RequestOptions
+import typings.twilio.libBaseBaseTwilioMod.Client
+import typings.twilio.libBaseBaseTwilioMod.RequestOpts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libBaseDomainMod {
   
-  @JSImport("twilio/lib/base/Domain", JSImport.Namespace)
+  @JSImport("twilio/lib/base/Domain", JSImport.Default)
   @js.native
-  open class ^ protected ()
+  open class default protected ()
     extends StObject
        with Domain {
-    def this(twilio: typings.twilio.libRestTwilioMod.^, baseUrl: String) = this()
+    /**
+      * Creates a Domain instance
+      *
+      * @param twilio - A Twilio Client
+      * @param baseUrl - Base url for this domain
+      */
+    def this(twilio: Client, baseUrl: String) = this()
   }
   
   @js.native
@@ -21,18 +28,22 @@ object libBaseDomainMod {
     /**
       * Turn a uri into an absolute url
       *
-      * @param  uri uri to transform
-      * @return absolute url
+      * @param uri - uri to transform
+      * @returns absolute url
       */
+    def absoluteUrl(): String = js.native
     def absoluteUrl(uri: String): String = js.native
+    
+    var baseUrl: String = js.native
     
     /**
       * Make request to this domain
       *
-      * @param opts request options
-      * @return request promise
+      * @param opts - request options
+      * @returns request promise
       */
-    def request(): js.Promise[Any] = js.native
-    def request(opts: RequestOptions): js.Promise[Any] = js.native
+    def request(opts: RequestOpts): js.Promise[Any] = js.native
+    
+    var twilio: Client = js.native
   }
 }

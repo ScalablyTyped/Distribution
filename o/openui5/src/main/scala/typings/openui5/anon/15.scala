@@ -1,6 +1,6 @@
 package typings.openui5.anon
 
-import typings.openui5.sapMMessageItemMod.default
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `15` extends StObject {
   
   /**
-    * Refers to the message item that contains the activeTitle.
+    * the activated row.
     */
-  var item: js.UndefOr[default] = js.undefined
+  var row: js.UndefOr[HTMLElement] = js.undefined
 }
 object `15` {
   
@@ -22,8 +22,8 @@ object `15` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `15`] (val x: Self) extends AnyVal {
     
-    inline def setItem(value: default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setRow(value: HTMLElement): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
-    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
   }
 }

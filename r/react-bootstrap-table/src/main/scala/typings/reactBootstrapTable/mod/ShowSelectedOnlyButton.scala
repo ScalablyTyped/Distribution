@@ -12,7 +12,7 @@ open class ShowSelectedOnlyButton protected ()
   def this(props: ShowSelectedButtonProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: ShowSelectedButtonProps, context: Any) = this()
 }

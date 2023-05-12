@@ -3,6 +3,7 @@ package typings.forkTsCheckerWebpackPlugin
 import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.basic
 import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.codeframe
 import typings.forkTsCheckerWebpackPlugin.libFormatterFormatterMod.Formatter
+import typings.forkTsCheckerWebpackPlugin.libFormatterFormatterMod.FormatterPathType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,6 +13,8 @@ object libFormatterFormatterOptionsMod {
   trait BasicFormatterOptions
     extends StObject
        with _FormatterOptions {
+    
+    var pathType: js.UndefOr[FormatterPathType] = js.undefined
     
     var `type`: basic
   }
@@ -26,6 +29,10 @@ object libFormatterFormatterOptionsMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: BasicFormatterOptions] (val x: Self) extends AnyVal {
       
+      inline def setPathType(value: FormatterPathType): Self = StObject.set(x, "pathType", value.asInstanceOf[js.Any])
+      
+      inline def setPathTypeUndefined: Self = StObject.set(x, "pathType", js.undefined)
+      
       inline def setType(value: basic): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
@@ -37,6 +44,8 @@ object libFormatterFormatterOptionsMod {
     var options: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BabelCodeFrameOptions */ Any
       ] = js.undefined
+    
+    var pathType: js.UndefOr[FormatterPathType] = js.undefined
     
     var `type`: codeframe
   }
@@ -56,6 +65,10 @@ object libFormatterFormatterOptionsMod {
       ): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      
+      inline def setPathType(value: FormatterPathType): Self = StObject.set(x, "pathType", value.asInstanceOf[js.Any])
+      
+      inline def setPathTypeUndefined: Self = StObject.set(x, "pathType", js.undefined)
       
       inline def setType(value: codeframe): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

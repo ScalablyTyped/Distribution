@@ -1,60 +1,66 @@
 package typings.atlaskitTokens.anon
 
+import typings.atlaskitTokens.distTypesTypesMod.PaintToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Teal extends StObject {
+trait Teal[BaseToken] extends StObject {
   
-  var blue: BoldPaintTokenDefaultPaintToken
+  var blue: PaintToken[BaseToken]
   
-  var green: BoldPaintTokenDefaultPaintToken
+  var gray: PaintToken[BaseToken]
   
-  var magenta: BoldPaintTokenDefaultPaintToken
+  var green: PaintToken[BaseToken]
   
-  var orange: BoldPaintTokenDefaultPaintToken
+  var magenta: PaintToken[BaseToken]
   
-  var purple: BoldPaintTokenDefaultPaintToken
+  var orange: PaintToken[BaseToken]
   
-  var red: BoldPaintTokenDefaultPaintToken
+  var purple: PaintToken[BaseToken]
   
-  var teal: BoldPaintTokenDefaultPaintToken
+  var red: PaintToken[BaseToken]
   
-  var yellow: BoldPaintTokenDefaultPaintToken
+  var teal: PaintToken[BaseToken]
+  
+  var yellow: PaintToken[BaseToken]
 }
 object Teal {
   
-  inline def apply(
-    blue: BoldPaintTokenDefaultPaintToken,
-    green: BoldPaintTokenDefaultPaintToken,
-    magenta: BoldPaintTokenDefaultPaintToken,
-    orange: BoldPaintTokenDefaultPaintToken,
-    purple: BoldPaintTokenDefaultPaintToken,
-    red: BoldPaintTokenDefaultPaintToken,
-    teal: BoldPaintTokenDefaultPaintToken,
-    yellow: BoldPaintTokenDefaultPaintToken
-  ): Teal = {
-    val __obj = js.Dynamic.literal(blue = blue.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], magenta = magenta.asInstanceOf[js.Any], orange = orange.asInstanceOf[js.Any], purple = purple.asInstanceOf[js.Any], red = red.asInstanceOf[js.Any], teal = teal.asInstanceOf[js.Any], yellow = yellow.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Teal]
+  inline def apply[BaseToken](
+    blue: PaintToken[BaseToken],
+    gray: PaintToken[BaseToken],
+    green: PaintToken[BaseToken],
+    magenta: PaintToken[BaseToken],
+    orange: PaintToken[BaseToken],
+    purple: PaintToken[BaseToken],
+    red: PaintToken[BaseToken],
+    teal: PaintToken[BaseToken],
+    yellow: PaintToken[BaseToken]
+  ): Teal[BaseToken] = {
+    val __obj = js.Dynamic.literal(blue = blue.asInstanceOf[js.Any], gray = gray.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], magenta = magenta.asInstanceOf[js.Any], orange = orange.asInstanceOf[js.Any], purple = purple.asInstanceOf[js.Any], red = red.asInstanceOf[js.Any], teal = teal.asInstanceOf[js.Any], yellow = yellow.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Teal[BaseToken]]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: Teal] (val x: Self) extends AnyVal {
+  implicit open class MutableBuilder[Self <: Teal[?], BaseToken] (val x: Self & Teal[BaseToken]) extends AnyVal {
     
-    inline def setBlue(value: BoldPaintTokenDefaultPaintToken): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
+    inline def setBlue(value: PaintToken[BaseToken]): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
     
-    inline def setGreen(value: BoldPaintTokenDefaultPaintToken): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
+    inline def setGray(value: PaintToken[BaseToken]): Self = StObject.set(x, "gray", value.asInstanceOf[js.Any])
     
-    inline def setMagenta(value: BoldPaintTokenDefaultPaintToken): Self = StObject.set(x, "magenta", value.asInstanceOf[js.Any])
+    inline def setGreen(value: PaintToken[BaseToken]): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
     
-    inline def setOrange(value: BoldPaintTokenDefaultPaintToken): Self = StObject.set(x, "orange", value.asInstanceOf[js.Any])
+    inline def setMagenta(value: PaintToken[BaseToken]): Self = StObject.set(x, "magenta", value.asInstanceOf[js.Any])
     
-    inline def setPurple(value: BoldPaintTokenDefaultPaintToken): Self = StObject.set(x, "purple", value.asInstanceOf[js.Any])
+    inline def setOrange(value: PaintToken[BaseToken]): Self = StObject.set(x, "orange", value.asInstanceOf[js.Any])
     
-    inline def setRed(value: BoldPaintTokenDefaultPaintToken): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
+    inline def setPurple(value: PaintToken[BaseToken]): Self = StObject.set(x, "purple", value.asInstanceOf[js.Any])
     
-    inline def setTeal(value: BoldPaintTokenDefaultPaintToken): Self = StObject.set(x, "teal", value.asInstanceOf[js.Any])
+    inline def setRed(value: PaintToken[BaseToken]): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
     
-    inline def setYellow(value: BoldPaintTokenDefaultPaintToken): Self = StObject.set(x, "yellow", value.asInstanceOf[js.Any])
+    inline def setTeal(value: PaintToken[BaseToken]): Self = StObject.set(x, "teal", value.asInstanceOf[js.Any])
+    
+    inline def setYellow(value: PaintToken[BaseToken]): Self = StObject.set(x, "yellow", value.asInstanceOf[js.Any])
   }
 }

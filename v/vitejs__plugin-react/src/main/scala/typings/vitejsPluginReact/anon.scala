@@ -30,6 +30,12 @@ object anon {
     var allowImportExportEverywhere: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * By default, new.target use is not allowed outside of a function or class.
+      * Set this to true to accept such code.
+      */
+    var allowNewTargetOutsideFunction: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * By default, a return statement at the top level raises an error.
       * Set this to true to accept such code.
       */
@@ -42,6 +48,12 @@ object anon {
       * Set this to true to allow export statements to reference undeclared variables.
       */
     var allowUndeclaredExports: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * By default, Babel parser JavaScript code according to Annex B syntax.
+      * Set this to `false` to disable such behavior.
+      */
+    var annexB: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default, Babel attaches comments to adjacent AST nodes.
@@ -137,6 +149,10 @@ object anon {
       
       inline def setAllowImportExportEverywhereUndefined: Self = StObject.set(x, "allowImportExportEverywhere", js.undefined)
       
+      inline def setAllowNewTargetOutsideFunction(value: Boolean): Self = StObject.set(x, "allowNewTargetOutsideFunction", value.asInstanceOf[js.Any])
+      
+      inline def setAllowNewTargetOutsideFunctionUndefined: Self = StObject.set(x, "allowNewTargetOutsideFunction", js.undefined)
+      
       inline def setAllowReturnOutsideFunction(value: Boolean): Self = StObject.set(x, "allowReturnOutsideFunction", value.asInstanceOf[js.Any])
       
       inline def setAllowReturnOutsideFunctionUndefined: Self = StObject.set(x, "allowReturnOutsideFunction", js.undefined)
@@ -148,6 +164,10 @@ object anon {
       inline def setAllowUndeclaredExports(value: Boolean): Self = StObject.set(x, "allowUndeclaredExports", value.asInstanceOf[js.Any])
       
       inline def setAllowUndeclaredExportsUndefined: Self = StObject.set(x, "allowUndeclaredExports", js.undefined)
+      
+      inline def setAnnexB(value: Boolean): Self = StObject.set(x, "annexB", value.asInstanceOf[js.Any])
+      
+      inline def setAnnexBUndefined: Self = StObject.set(x, "annexB", js.undefined)
       
       inline def setAttachComment(value: Boolean): Self = StObject.set(x, "attachComment", value.asInstanceOf[js.Any])
       

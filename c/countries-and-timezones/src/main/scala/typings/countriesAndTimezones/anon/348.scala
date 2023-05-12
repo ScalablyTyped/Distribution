@@ -1,15 +1,13 @@
 package typings.countriesAndTimezones.anon
 
-import typings.countriesAndTimezones.countriesAndTimezonesStrings.CH
-import typings.countriesAndTimezones.countriesAndTimezonesStrings.DE
-import typings.countriesAndTimezones.countriesAndTimezonesStrings.LI
+import typings.countriesAndTimezones.countriesAndTimezonesStrings.AT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `348` extends StObject {
   
-  var c: js.Tuple3[CH, DE, LI]
+  var c: js.Array[AT]
   
   var d: typings.countriesAndTimezones.countriesAndTimezonesInts.`120`
   
@@ -17,7 +15,7 @@ trait `348` extends StObject {
 }
 object `348` {
   
-  inline def apply(c: js.Tuple3[CH, DE, LI]): `348` = {
+  inline def apply(c: js.Array[AT]): `348` = {
     val __obj = js.Dynamic.literal(c = c.asInstanceOf[js.Any], d = 120, u = 60)
     __obj.asInstanceOf[`348`]
   }
@@ -25,7 +23,9 @@ object `348` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `348`] (val x: Self) extends AnyVal {
     
-    inline def setC(value: js.Tuple3[CH, DE, LI]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+    inline def setC(value: js.Array[AT]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+    
+    inline def setCVarargs(value: AT*): Self = StObject.set(x, "c", js.Array(value*))
     
     inline def setD(value: typings.countriesAndTimezones.countriesAndTimezonesInts.`120`): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     

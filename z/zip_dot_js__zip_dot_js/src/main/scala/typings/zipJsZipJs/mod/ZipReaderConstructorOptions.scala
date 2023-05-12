@@ -15,14 +15,14 @@ trait ZipReaderConstructorOptions
   
   /**
     * `true` to extract the appended data into {@link ZipReader#appendedData}.
-    * 
+    *
     * @defaultValue false
     */
   var extractAppendedData: js.UndefOr[Boolean] = js.undefined
   
   /**
     * `true` to extract the prepended data into {@link ZipReader#prependedData}.
-    * 
+    *
     * @defaultValue false
     */
   var extractPrependedData: js.UndefOr[Boolean] = js.undefined

@@ -8,5 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class CameraHelper protected ()
   extends typings.three.srcHelpersCameraHelperMod.CameraHelper {
+  /**
+    * This create a new {@link CameraHelper} for the specified camera.
+    * @param camera The camera to visualize.
+    */
   def this(camera: typings.three.srcCamerasCameraMod.Camera) = this()
 }

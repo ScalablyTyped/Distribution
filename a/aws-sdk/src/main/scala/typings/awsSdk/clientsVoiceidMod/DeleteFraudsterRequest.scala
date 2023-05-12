@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteFraudsterRequest extends StObject {
   
   /**
-    * The identifier of the domain containing the fraudster.
+    * The identifier of the domain that contains the fraudster.
     */
   var DomainId: typings.awsSdk.clientsVoiceidMod.DomainId
   

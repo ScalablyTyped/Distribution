@@ -14,8 +14,8 @@ object SignatureHelpTriggerKind extends StObject {
   def apply(value: Double): js.UndefOr[SignatureHelpTriggerKind & Double] = js.native
   
   /**
-    * Signature help was triggered by the cursor moving or by the document content changing.
-    */
+  		 * Signature help was triggered by the cursor moving or by the document content changing.
+  		 */
   @js.native
   sealed trait ContentChange
     extends StObject
@@ -23,8 +23,8 @@ object SignatureHelpTriggerKind extends StObject {
   /* 3 */ val ContentChange: typings.vscode.mod.SignatureHelpTriggerKind.ContentChange & Double = js.native
   
   /**
-    * Signature help was invoked manually by the user or by a command.
-    */
+  		 * Signature help was invoked manually by the user or by a command.
+  		 */
   @js.native
   sealed trait Invoke
     extends StObject
@@ -32,8 +32,8 @@ object SignatureHelpTriggerKind extends StObject {
   /* 1 */ val Invoke: typings.vscode.mod.SignatureHelpTriggerKind.Invoke & Double = js.native
   
   /**
-    * Signature help was triggered by a trigger character.
-    */
+  		 * Signature help was triggered by a trigger character.
+  		 */
   @js.native
   sealed trait TriggerCharacter
     extends StObject

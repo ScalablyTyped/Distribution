@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetOperationOutput extends StObject {
   
   /**
-    * 
+    * Returns the details of an operation.
     */
   var Operation: js.UndefOr[typings.awsSdk.clientsSsmsapMod.Operation] = js.undefined
 }

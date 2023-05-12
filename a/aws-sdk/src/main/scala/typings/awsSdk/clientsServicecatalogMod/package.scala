@@ -3,8 +3,8 @@ package typings.awsSdk.clientsServicecatalogMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdk.awsSdkStrings.ACCOUNT
 import typings.awsSdk.awsSdkStrings.CLOUDFORMATION
+import typings.awsSdk.awsSdkStrings.CODESTAR
 import typings.awsSdk.awsSdkStrings.CopyTags
-import typings.awsSdk.awsSdkStrings.IAM
 import typings.awsSdk.awsSdkStrings.Id_
 import typings.awsSdk.awsSdkStrings.SSM_AUTOMATION
 import typings.awsSdk.awsSdkStrings.SearchQuery
@@ -65,6 +65,8 @@ type CloudWatchDashboardName = java.lang.String
 
 type CloudWatchDashboards = js.Array[CloudWatchDashboard]
 
+type CodeStarConnectionArn = java.lang.String
+
 type ConstraintDescription = java.lang.String
 
 type ConstraintDetails = js.Array[ConstraintDetail]
@@ -106,6 +108,17 @@ type Description = java.lang.String
 
 type DisableTemplateValidation = scala.Boolean
 
+type EngineWorkflowFailureReason = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SUCCEEDED
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - java.lang.String
+*/
+type EngineWorkflowStatus = _EngineWorkflowStatus | java.lang.String
+
+type EngineWorkflowToken = java.lang.String
+
 type Error = java.lang.String
 
 type ErrorCode = java.lang.String
@@ -146,6 +159,19 @@ type InstructionType = java.lang.String
 type InstructionValue = java.lang.String
 
 type LastRequestId = java.lang.String
+
+type LastSuccessfulSyncTime = js.Date
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SUCCEEDED
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - java.lang.String
+*/
+type LastSyncStatus = _LastSyncStatus | java.lang.String
+
+type LastSyncStatusMessage = java.lang.String
+
+type LastSyncTime = js.Date
 
 type LaunchPathSummaries = js.Array[LaunchPathSummary]
 
@@ -225,7 +251,12 @@ type PortfolioShareType = _PortfolioShareType | java.lang.String
 
 type PrincipalARN = java.lang.String
 
-type PrincipalType = IAM | java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.IAM
+  - typings.awsSdk.awsSdkStrings.IAM_PATTERN
+  - java.lang.String
+*/
+type PrincipalType = _PrincipalType | java.lang.String
 
 type Principals = js.Array[Principal]
 
@@ -236,6 +267,7 @@ type ProductSource = ACCOUNT | java.lang.String
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CLOUD_FORMATION_TEMPLATE
   - typings.awsSdk.awsSdkStrings.MARKETPLACE
+  - typings.awsSdk.awsSdkStrings.TERRAFORM_OPEN_SOURCE
   - java.lang.String
 */
 type ProductType = _ProductType | java.lang.String
@@ -384,6 +416,7 @@ type ProvisioningArtifactSummaries = js.Array[ProvisioningArtifactSummary]
   - typings.awsSdk.awsSdkStrings.CLOUD_FORMATION_TEMPLATE
   - typings.awsSdk.awsSdkStrings.MARKETPLACE_AMI
   - typings.awsSdk.awsSdkStrings.MARKETPLACE_CAR
+  - typings.awsSdk.awsSdkStrings.TERRAFORM_OPEN_SOURCE
   - java.lang.String
 */
 type ProvisioningArtifactType = _ProvisioningArtifactType | java.lang.String
@@ -427,6 +460,12 @@ type Region = java.lang.String
   - java.lang.String
 */
 type Replacement = _Replacement | java.lang.String
+
+type Repository = java.lang.String
+
+type RepositoryArtifactPath = java.lang.String
+
+type RepositoryBranch = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NEVER
@@ -487,6 +526,7 @@ type SearchProvisionedProductsPageSize = Double
   - typings.awsSdk.awsSdkStrings.LIMIT_EXCEEDED
   - typings.awsSdk.awsSdkStrings.RESOURCE_NOT_FOUND
   - typings.awsSdk.awsSdkStrings.THROTTLING
+  - typings.awsSdk.awsSdkStrings.INVALID_PARAMETER
   - java.lang.String
 */
 type ServiceActionAssociationErrorCode = _ServiceActionAssociationErrorCode | java.lang.String
@@ -540,6 +580,10 @@ type SortOrder = _SortOrder | java.lang.String
 type SourceProvisioningArtifactProperties = js.Array[SourceProvisioningArtifactPropertiesMap]
 
 type SourceProvisioningArtifactPropertiesMap = StringDictionary[ProvisioningArtifactPropertyValue]
+
+type SourceRevision = java.lang.String
+
+type SourceType = CODESTAR | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CURRENT
@@ -616,6 +660,10 @@ type TagValue = java.lang.String
 type Tags = js.Array[Tag]
 
 type TotalResultsCount = Double
+
+type UniqueTagKey = java.lang.String
+
+type UniqueTagValue = java.lang.String
 
 type UpdateProvisioningParameters = js.Array[UpdateProvisioningParameter]
 

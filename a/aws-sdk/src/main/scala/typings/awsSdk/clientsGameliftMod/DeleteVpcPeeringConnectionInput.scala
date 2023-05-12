@@ -12,7 +12,7 @@ trait DeleteVpcPeeringConnectionInput extends StObject {
   var FleetId: typings.awsSdk.clientsGameliftMod.FleetId
   
   /**
-    * A unique identifier for a VPC peering connection. This value is included in the VpcPeeringConnection object, which can be retrieved by calling DescribeVpcPeeringConnections.
+    * A unique identifier for a VPC peering connection.
     */
   var VpcPeeringConnectionId: NonZeroAndMaxString
 }

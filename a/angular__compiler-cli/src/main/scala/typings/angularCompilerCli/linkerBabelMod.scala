@@ -1,9 +1,10 @@
 package typings.angularCompilerCli
 
 import typings.angularCompilerCli.anon.PartialLinkerOptions
-import typings.angularCompilerCli.linkerBabelSrcBabelCoreMod.ConfigAPI
-import typings.angularCompilerCli.linkerBabelSrcBabelCoreMod.PluginObj
 import typings.angularCompilerCli.linkerBabelSrcLinkerPluginOptionsMod.LinkerPluginOptions
+import typings.babelCore.mod.ConfigAPI
+import typings.babelCore.mod.PluginObj
+import typings.babelCore.mod.PluginPass
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ object linkerBabelMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(api: ConfigAPI, options: PartialLinkerOptions): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
+  inline def default(api: ConfigAPI, options: PartialLinkerOptions): PluginObj[PluginPass] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PluginObj[PluginPass]]
   
-  inline def createEs2015LinkerPlugin(param0: LinkerPluginOptions): PluginObj = ^.asInstanceOf[js.Dynamic].applyDynamic("createEs2015LinkerPlugin")(param0.asInstanceOf[js.Any]).asInstanceOf[PluginObj]
+  inline def createEs2015LinkerPlugin(param0: LinkerPluginOptions): PluginObj[PluginPass] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEs2015LinkerPlugin")(param0.asInstanceOf[js.Any]).asInstanceOf[PluginObj[PluginPass]]
 }

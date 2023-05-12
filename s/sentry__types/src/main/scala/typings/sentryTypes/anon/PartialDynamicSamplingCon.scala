@@ -13,6 +13,8 @@ trait PartialDynamicSamplingCon extends StObject {
   
   var release: js.UndefOr[String] = js.undefined
   
+  var replay_id: js.UndefOr[String] = js.undefined
+  
   var sample_rate: js.UndefOr[String] = js.undefined
   
   var trace_id: js.UndefOr[String] = js.undefined
@@ -42,6 +44,10 @@ object PartialDynamicSamplingCon {
     inline def setRelease(value: String): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
     
     inline def setReleaseUndefined: Self = StObject.set(x, "release", js.undefined)
+    
+    inline def setReplay_id(value: String): Self = StObject.set(x, "replay_id", value.asInstanceOf[js.Any])
+    
+    inline def setReplay_idUndefined: Self = StObject.set(x, "replay_id", js.undefined)
     
     inline def setSample_rate(value: String): Self = StObject.set(x, "sample_rate", value.asInstanceOf[js.Any])
     

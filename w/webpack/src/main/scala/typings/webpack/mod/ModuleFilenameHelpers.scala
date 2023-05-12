@@ -1,5 +1,8 @@
 package typings.webpack.mod
 
+import typings.webpack.webpackInts.`-1`
+import typings.webpack.webpackInts.`0`
+import typings.webpack.webpackInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -139,28 +142,38 @@ object ModuleFilenameHelpers {
   
   @JSImport("webpack", "ModuleFilenameHelpers.matchObject")
   @js.native
-  def matchObject: js.Function2[/* obj */ js.UndefOr[Any], /* str */ js.UndefOr[Any], Boolean] = js.native
-  inline def matchObject_=(x: js.Function2[/* obj */ js.UndefOr[Any], /* str */ js.UndefOr[Any], Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matchObject")(x.asInstanceOf[js.Any])
+  def matchObject: js.Function2[/* obj */ MatchObject, /* str */ String, Boolean] = js.native
+  inline def matchObject_=(x: js.Function2[/* obj */ MatchObject, /* str */ String, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matchObject")(x.asInstanceOf[js.Any])
   
   @JSImport("webpack", "ModuleFilenameHelpers.matchPart")
   @js.native
-  def matchPart: js.Function2[/* str */ js.UndefOr[Any], /* test */ js.UndefOr[Any], Any] = js.native
-  inline def matchPart_=(x: js.Function2[/* str */ js.UndefOr[Any], /* test */ js.UndefOr[Any], Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matchPart")(x.asInstanceOf[js.Any])
+  def matchPart: js.Function2[/* str */ String, /* test */ Matcher, Boolean] = js.native
+  inline def matchPart_=(x: js.Function2[/* str */ String, /* test */ Matcher, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matchPart")(x.asInstanceOf[js.Any])
   
   @JSImport("webpack", "ModuleFilenameHelpers.replaceDuplicates")
   @js.native
   def replaceDuplicates: js.Function3[
-    /* array */ js.UndefOr[Any], 
-    /* fn */ js.UndefOr[Any], 
-    /* comparator */ js.UndefOr[Any], 
-    Any
+    /* array */ js.Array[Any], 
+    /* fn */ js.Function3[
+      /* duplicateItem */ Any, 
+      /* duplicateItemIndex */ Double, 
+      /* numberOfTimesReplaced */ Double, 
+      Any
+    ], 
+    /* comparator */ js.UndefOr[js.Function2[/* firstElement */ Any, /* nextElement */ Any, `0` | `1` | `-1`]], 
+    js.Array[Any]
   ] = js.native
   inline def replaceDuplicates_=(
     x: js.Function3[
-      /* array */ js.UndefOr[Any], 
-      /* fn */ js.UndefOr[Any], 
-      /* comparator */ js.UndefOr[Any], 
-      Any
+      /* array */ js.Array[Any], 
+      /* fn */ js.Function3[
+        /* duplicateItem */ Any, 
+        /* duplicateItemIndex */ Double, 
+        /* numberOfTimesReplaced */ Double, 
+        Any
+      ], 
+      /* comparator */ js.UndefOr[js.Function2[/* firstElement */ Any, /* nextElement */ Any, `0` | `1` | `-1`]], 
+      js.Array[Any]
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("replaceDuplicates")(x.asInstanceOf[js.Any])
 }

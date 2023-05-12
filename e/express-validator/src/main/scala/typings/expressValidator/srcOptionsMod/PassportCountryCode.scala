@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.expressValidator.expressValidatorStrings.AR
   - typings.expressValidator.expressValidatorStrings.AT
   - typings.expressValidator.expressValidatorStrings.AU
+  - typings.expressValidator.expressValidatorStrings.AZ
   - typings.expressValidator.expressValidatorStrings.BE
   - typings.expressValidator.expressValidatorStrings.BG
   - typings.expressValidator.expressValidatorStrings.BY
@@ -35,8 +36,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.expressValidator.expressValidatorStrings.IR
   - typings.expressValidator.expressValidatorStrings.IS
   - typings.expressValidator.expressValidatorStrings.IT
+  - typings.expressValidator.expressValidatorStrings.JM
   - typings.expressValidator.expressValidatorStrings.JP
   - typings.expressValidator.expressValidatorStrings.KR
+  - typings.expressValidator.expressValidatorStrings.KZ
+  - typings.expressValidator.expressValidatorStrings.LI
   - typings.expressValidator.expressValidatorStrings.LT
   - typings.expressValidator.expressValidatorStrings.LU
   - typings.expressValidator.expressValidatorStrings.LV
@@ -45,6 +49,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.expressValidator.expressValidatorStrings.MY
   - typings.expressValidator.expressValidatorStrings.MZ
   - typings.expressValidator.expressValidatorStrings.NL
+  - typings.expressValidator.expressValidatorStrings.NZ
+  - typings.expressValidator.expressValidatorStrings.PH
+  - typings.expressValidator.expressValidatorStrings.PK
   - typings.expressValidator.expressValidatorStrings.PL
   - typings.expressValidator.expressValidatorStrings.PO
   - typings.expressValidator.expressValidatorStrings.PT
@@ -53,6 +60,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.expressValidator.expressValidatorStrings.SE
   - typings.expressValidator.expressValidatorStrings.SL
   - typings.expressValidator.expressValidatorStrings.SK
+  - typings.expressValidator.expressValidatorStrings.TH
   - typings.expressValidator.expressValidatorStrings.TR
   - typings.expressValidator.expressValidatorStrings.UA
   - typings.expressValidator.expressValidatorStrings.US
@@ -67,6 +75,8 @@ object PassportCountryCode {
   inline def AT: typings.expressValidator.expressValidatorStrings.AT = "AT".asInstanceOf[typings.expressValidator.expressValidatorStrings.AT]
   
   inline def AU: typings.expressValidator.expressValidatorStrings.AU = "AU".asInstanceOf[typings.expressValidator.expressValidatorStrings.AU]
+  
+  inline def AZ: typings.expressValidator.expressValidatorStrings.AZ = "AZ".asInstanceOf[typings.expressValidator.expressValidatorStrings.AZ]
   
   inline def BE: typings.expressValidator.expressValidatorStrings.BE = "BE".asInstanceOf[typings.expressValidator.expressValidatorStrings.BE]
   
@@ -120,9 +130,15 @@ object PassportCountryCode {
   
   inline def IT: typings.expressValidator.expressValidatorStrings.IT = "IT".asInstanceOf[typings.expressValidator.expressValidatorStrings.IT]
   
+  inline def JM: typings.expressValidator.expressValidatorStrings.JM = "JM".asInstanceOf[typings.expressValidator.expressValidatorStrings.JM]
+  
   inline def JP: typings.expressValidator.expressValidatorStrings.JP = "JP".asInstanceOf[typings.expressValidator.expressValidatorStrings.JP]
   
   inline def KR: typings.expressValidator.expressValidatorStrings.KR = "KR".asInstanceOf[typings.expressValidator.expressValidatorStrings.KR]
+  
+  inline def KZ: typings.expressValidator.expressValidatorStrings.KZ = "KZ".asInstanceOf[typings.expressValidator.expressValidatorStrings.KZ]
+  
+  inline def LI: typings.expressValidator.expressValidatorStrings.LI = "LI".asInstanceOf[typings.expressValidator.expressValidatorStrings.LI]
   
   inline def LT: typings.expressValidator.expressValidatorStrings.LT = "LT".asInstanceOf[typings.expressValidator.expressValidatorStrings.LT]
   
@@ -140,6 +156,12 @@ object PassportCountryCode {
   
   inline def NL: typings.expressValidator.expressValidatorStrings.NL = "NL".asInstanceOf[typings.expressValidator.expressValidatorStrings.NL]
   
+  inline def NZ: typings.expressValidator.expressValidatorStrings.NZ = "NZ".asInstanceOf[typings.expressValidator.expressValidatorStrings.NZ]
+  
+  inline def PH: typings.expressValidator.expressValidatorStrings.PH = "PH".asInstanceOf[typings.expressValidator.expressValidatorStrings.PH]
+  
+  inline def PK: typings.expressValidator.expressValidatorStrings.PK = "PK".asInstanceOf[typings.expressValidator.expressValidatorStrings.PK]
+  
   inline def PL: typings.expressValidator.expressValidatorStrings.PL = "PL".asInstanceOf[typings.expressValidator.expressValidatorStrings.PL]
   
   inline def PO: typings.expressValidator.expressValidatorStrings.PO = "PO".asInstanceOf[typings.expressValidator.expressValidatorStrings.PO]
@@ -155,6 +177,8 @@ object PassportCountryCode {
   inline def SK: typings.expressValidator.expressValidatorStrings.SK = "SK".asInstanceOf[typings.expressValidator.expressValidatorStrings.SK]
   
   inline def SL: typings.expressValidator.expressValidatorStrings.SL = "SL".asInstanceOf[typings.expressValidator.expressValidatorStrings.SL]
+  
+  inline def TH: typings.expressValidator.expressValidatorStrings.TH = "TH".asInstanceOf[typings.expressValidator.expressValidatorStrings.TH]
   
   inline def TR: typings.expressValidator.expressValidatorStrings.TR = "TR".asInstanceOf[typings.expressValidator.expressValidatorStrings.TR]
   

@@ -8,6 +8,7 @@ import typings.chrome.chrome.downloads.DownloadItem
 import typings.chrome.chrome.downloads.DownloadOptions
 import typings.chrome.chrome.downloads.DownloadQuery
 import typings.chrome.chrome.downloads.GetFileIconOptions
+import typings.chrome.chrome.downloads.UiOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,15 +30,11 @@ object downloads {
   inline def acceptDanger(downloadId: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("acceptDanger")(downloadId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   inline def acceptDanger(downloadId: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("acceptDanger")(downloadId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def cancel(downloadId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancel")(downloadId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def cancel(downloadId: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("cancel")(downloadId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   inline def cancel(downloadId: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cancel")(downloadId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def cancel_Promise(downloadId: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("cancel")(downloadId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  
-  inline def download(options: DownloadOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("download")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def download(options: DownloadOptions): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("download")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
   inline def download(options: DownloadOptions, callback: js.Function1[/* downloadId */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("download")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def download_Promise(options: DownloadOptions): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("download")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
   
   inline def drag(downloadId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("drag")(downloadId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -75,25 +72,24 @@ object downloads {
   
   inline def open(downloadId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(downloadId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def pause(downloadId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pause")(downloadId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def pause(downloadId: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("pause")(downloadId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   inline def pause(downloadId: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pause")(downloadId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def pause_Promise(downloadId: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("pause")(downloadId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   inline def removeFile(downloadId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFile")(downloadId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def removeFile(downloadId: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFile")(downloadId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def removeFile_Promise(downloadId: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFile")(downloadId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  inline def resume(downloadId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resume")(downloadId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def resume(downloadId: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("resume")(downloadId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   inline def resume(downloadId: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resume")(downloadId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def resume_Promise(downloadId: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("resume")(downloadId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   inline def search(query: DownloadQuery): js.Promise[js.Array[DownloadItem]] = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[DownloadItem]]]
   inline def search(query: DownloadQuery, callback: js.Function1[/* results */ js.Array[DownloadItem], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def setShelfEnabled(enabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setShelfEnabled")(enabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def setUiOptions(options: UiOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setUiOptions")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def setUiOptions(options: UiOptions, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUiOptions")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def show(downloadId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(downloadId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

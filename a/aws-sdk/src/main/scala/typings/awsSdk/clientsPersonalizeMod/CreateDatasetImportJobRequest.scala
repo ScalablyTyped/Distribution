@@ -27,6 +27,11 @@ trait CreateDatasetImportJobRequest extends StObject {
   var jobName: Name
   
   /**
+    * If you created a metric attribution, specify whether to publish metrics for this import job to Amazon S3
+    */
+  var publishAttributionMetricsToS3: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * The ARN of the IAM role that has permissions to read from the Amazon S3 data source.
     */
   var roleArn: RoleArn
@@ -55,6 +60,10 @@ object CreateDatasetImportJobRequest {
     inline def setImportModeUndefined: Self = StObject.set(x, "importMode", js.undefined)
     
     inline def setJobName(value: Name): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
+    
+    inline def setPublishAttributionMetricsToS3(value: Boolean): Self = StObject.set(x, "publishAttributionMetricsToS3", value.asInstanceOf[js.Any])
+    
+    inline def setPublishAttributionMetricsToS3Undefined: Self = StObject.set(x, "publishAttributionMetricsToS3", js.undefined)
     
     inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     

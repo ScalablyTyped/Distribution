@@ -1,0 +1,84 @@
+package typings.vueCompilerSfc.mod
+
+import typings.vueCompilerSfc.vueCompilerSfcStrings.`literal-const`
+import typings.vueCompilerSfc.vueCompilerSfcStrings.`props-aliased`
+import typings.vueCompilerSfc.vueCompilerSfcStrings.`setup-const`
+import typings.vueCompilerSfc.vueCompilerSfcStrings.`setup-let`
+import typings.vueCompilerSfc.vueCompilerSfcStrings.`setup-maybe-ref`
+import typings.vueCompilerSfc.vueCompilerSfcStrings.`setup-reactive-const`
+import typings.vueCompilerSfc.vueCompilerSfcStrings.`setup-ref`
+import typings.vueCompilerSfc.vueCompilerSfcStrings.data
+import typings.vueCompilerSfc.vueCompilerSfcStrings.options
+import typings.vueCompilerSfc.vueCompilerSfcStrings.props
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typings.vueCompilerSfc.vueCompilerSfcStrings.data
+  - typings.vueCompilerSfc.vueCompilerSfcStrings.props
+  - typings.vueCompilerSfc.vueCompilerSfcStrings.`props-aliased`
+  - typings.vueCompilerSfc.vueCompilerSfcStrings.`setup-let`
+  - typings.vueCompilerSfc.vueCompilerSfcStrings.`setup-const`
+  - typings.vueCompilerSfc.vueCompilerSfcStrings.`setup-reactive-const`
+  - typings.vueCompilerSfc.vueCompilerSfcStrings.`setup-maybe-ref`
+  - typings.vueCompilerSfc.vueCompilerSfcStrings.`setup-ref`
+  - typings.vueCompilerSfc.vueCompilerSfcStrings.options
+  - typings.vueCompilerSfc.vueCompilerSfcStrings.`literal-const`
+*/
+trait BindingTypes extends StObject
+object BindingTypes {
+  
+  /**
+    * returned from data()
+    */
+  inline def DATA: data = "data".asInstanceOf[data]
+  
+  /**
+    * a literal constant, e.g. 'foo', 1, true
+    */
+  inline def LITERAL_CONST: `literal-const` = "literal-const".asInstanceOf[`literal-const`]
+  
+  /**
+    * declared by other options, e.g. computed, inject
+    */
+  inline def OPTIONS: options = "options".asInstanceOf[options]
+  
+  /**
+    * declared as a prop
+    */
+  inline def PROPS: props = "props".asInstanceOf[props]
+  
+  /**
+    * a local alias of a `<script setup>` destructured prop.
+    * the original is stored in __propsAliases of the bindingMetadata object.
+    */
+  inline def PROPS_ALIASED: `props-aliased` = "props-aliased".asInstanceOf[`props-aliased`]
+  
+  /**
+    * a const binding that can never be a ref.
+    * these bindings don't need `unref()` calls when processed in inlined
+    * template expressions.
+    */
+  inline def SETUP_CONST: `setup-const` = "setup-const".asInstanceOf[`setup-const`]
+  
+  /**
+    * a let binding (may or may not be a ref)
+    */
+  inline def SETUP_LET: `setup-let` = "setup-let".asInstanceOf[`setup-let`]
+  
+  /**
+    * a const binding that may be a ref.
+    */
+  inline def SETUP_MAYBE_REF: `setup-maybe-ref` = "setup-maybe-ref".asInstanceOf[`setup-maybe-ref`]
+  
+  /**
+    * a const binding that does not need `unref()`, but may be mutated.
+    */
+  inline def SETUP_REACTIVE_CONST: `setup-reactive-const` = "setup-reactive-const".asInstanceOf[`setup-reactive-const`]
+  
+  /**
+    * bindings that are guaranteed to be refs
+    */
+  inline def SETUP_REF: `setup-ref` = "setup-ref".asInstanceOf[`setup-ref`]
+}

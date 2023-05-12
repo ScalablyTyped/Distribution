@@ -14,7 +14,7 @@ object ResampleMethod extends StObject {
   def apply(value: String): js.UndefOr[ResampleMethod & String] = js.native
   
   /**
-    * Choose best option automatically
+    * Choose best bicubic option automatically
     */
   @js.native
   sealed trait AUTOMATIC
@@ -59,7 +59,7 @@ object ResampleMethod extends StObject {
   /* "bilinear" */ val BILINEAR: typings.photoshop.domConstantsMod.ResampleMethod.BILINEAR & String = js.native
   
   /**
-    * Using deep learning, predict what the picture will look like larger
+    * Using deep learning, predict what the picture will look like larger.
     */
   @js.native
   sealed trait DEEPUPSCALE
@@ -77,7 +77,9 @@ object ResampleMethod extends StObject {
   /* "nearestNeighbor" */ val NEARESTNEIGHBOR: typings.photoshop.domConstantsMod.ResampleMethod.NEARESTNEIGHBOR & String = js.native
   
   /**
-    * Duplicates pixels
+    * Changes image resolution value without affecting document dimension
+    *
+    * Currently unsupported**
     */
   @js.native
   sealed trait NONE

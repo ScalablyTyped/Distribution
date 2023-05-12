@@ -6,16 +6,40 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * A Render Texture.
+  * A Render Texture is a combination of Dynamic Texture and an Image Game Object, that uses the
+  * Dynamic Texture to display itself with.
   * 
-  * A Render Texture is a special texture that allows any number of Game Objects to be drawn to it. You can take many complex objects and
-  * draw them all to this one texture, which can they be used as the texture for other Game Object's. It's a way to generate dynamic
-  * textures at run-time that are WebGL friendly and don't invoke expensive GPU uploads.
+  * A Dynamic Texture is a special texture that allows you to draw textures, frames and most kind of
+  * Game Objects directly to it.
   * 
-  * Note that under WebGL a FrameBuffer, which is what the Render Texture uses internally, cannot be anti-aliased. This means
-  * that when drawing objects such as Shapes to a Render Texture they will appear to be drawn with no aliasing, however this
-  * is a technical limitation of WebGL. To get around it, create your shape as a texture in an art package, then draw that
-  * to the Render Texture.
+  * You can take many complex objects and draw them to this one texture, which can then be used as the
+  * base texture for other Game Objects, such as Sprites. Should you then update this texture, all
+  * Game Objects using it will instantly be updated as well, reflecting the changes immediately.
+  * 
+  * It's a powerful way to generate dynamic textures at run-time that are WebGL friendly and don't invoke
+  * expensive GPU uploads on each change.
+  * 
+  * In versions of Phaser before 3.60 a Render Texture was the only way you could create a texture
+  * like this, that had the ability to be drawn on. But in 3.60 we split the core functions out to
+  * the Dynamic Texture class as it made a lot more sense for them to reside in there. As a result,
+  * the Render Texture is now a light-weight shim that sits on-top of an Image Game Object and offers
+  * proxy methods to the features available from a Dynamic Texture.
+  * 
+  * **When should you use a Render Texture vs. a Dynamic Texture?**
+  * 
+  * You should use a Dynamic Texture if the texture is going to be used by multiple Game Objects,
+  * or you want to use it across multiple Scenes, because textures are globally stored.
+  * 
+  * You should use a Dynamic Texture if the texture isn't going to be displayed in-game, but is
+  * instead going to be used for something like a mask or shader.
+  * 
+  * You should use a Render Texture if you need to display the texture in-game on a single Game Object,
+  * as it provides the convenience of wrapping an Image and Dynamic Texture together for you.
+  * 
+  * Under WebGL1, a FrameBuffer, which is what this Dynamic Texture uses internally, cannot be anti-aliased.
+  * This means that when drawing objects such as Shapes or Graphics instances to this texture, they may appear
+  * to be drawn with no aliasing around the edges. This is a technical limitation of WebGL1. To get around it,
+  * create your shape as a texture in an art package, then draw that to this texture.
   */
 @JSGlobal("Phaser.GameObjects.RenderTexture")
 @js.native
@@ -29,21 +53,26 @@ open class RenderTexture protected ()
     * @param y The vertical position of this Game Object in the world. Default 0.
     * @param width The width of the Render Texture. Default 32.
     * @param height The height of the Render Texture. Default 32.
-    * @param key The texture key to make the RenderTexture from.
-    * @param frame The frame to make the RenderTexture from.
     */
-  def this(
-    scene: Scene,
-    x: js.UndefOr[Double],
-    y: js.UndefOr[Double],
-    width: js.UndefOr[Double],
-    height: js.UndefOr[Double],
-    key: js.UndefOr[String],
-    frame: js.UndefOr[String]
-  ) = this()
+  def this(scene: Scene) = this()
+  def this(scene: Scene, x: Double) = this()
+  def this(scene: Scene, x: Double, y: Double) = this()
+  def this(scene: Scene, x: Unit, y: Double) = this()
+  def this(scene: Scene, x: Double, y: Double, width: Double) = this()
+  def this(scene: Scene, x: Double, y: Unit, width: Double) = this()
+  def this(scene: Scene, x: Unit, y: Double, width: Double) = this()
+  def this(scene: Scene, x: Unit, y: Unit, width: Double) = this()
+  def this(scene: Scene, x: Double, y: Double, width: Double, height: Double) = this()
+  def this(scene: Scene, x: Double, y: Double, width: Unit, height: Double) = this()
+  def this(scene: Scene, x: Double, y: Unit, width: Double, height: Double) = this()
+  def this(scene: Scene, x: Double, y: Unit, width: Unit, height: Double) = this()
+  def this(scene: Scene, x: Unit, y: Double, width: Double, height: Double) = this()
+  def this(scene: Scene, x: Unit, y: Double, width: Unit, height: Double) = this()
+  def this(scene: Scene, x: Unit, y: Unit, width: Double, height: Double) = this()
+  def this(scene: Scene, x: Unit, y: Unit, width: Unit, height: Double) = this()
   
   /**
-    * The depth of this Game Object within the Scene.
+    * The depth of this Game Object within the Scene. Ensure this value is only ever set to a number data-type.
     * 
     * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
     * of Game Objects, without actually moving their position in the display list.
@@ -55,26 +84,6 @@ open class RenderTexture protected ()
     */
   /* CompleteClass */
   var depth: Double = js.native
-  
-  /**
-    * The displayed height of this Game Object.
-    * 
-    * This value takes into account the scale factor.
-    * 
-    * Setting this value will adjust the Game Object's scale property.
-    */
-  /* CompleteClass */
-  var displayHeight: Double = js.native
-  
-  /**
-    * The displayed width of this Game Object.
-    * 
-    * This value takes into account the scale factor.
-    * 
-    * Setting this value will adjust the Game Object's scale property.
-    */
-  /* CompleteClass */
-  var displayWidth: Double = js.native
   
   /**
     * The horizontally flipped state of the Game Object.
@@ -97,16 +106,6 @@ open class RenderTexture protected ()
   var flipY: Boolean = js.native
   
   /**
-    * The native (un-scaled) height of this Game Object.
-    * 
-    * Changing this value will not change the size that the Game Object is rendered in-game.
-    * For that you need to either set the scale of the Game Object (`setScale`) or use
-    * the `displayHeight` property.
-    */
-  /* CompleteClass */
-  var height: Double = js.native
-  
-  /**
     * Resets the horizontal and vertical flipped state of this Game Object back to their default un-flipped state.
     */
   /* CompleteClass */
@@ -122,20 +121,10 @@ open class RenderTexture protected ()
     * value will always render in front of one with a lower value.
     * 
     * Setting the depth will queue a depth sort event within the Scene.
-    * @param value The depth of this Game Object.
+    * @param value The depth of this Game Object. Ensure this value is only ever a number data-type.
     */
   /* CompleteClass */
   override def setDepth(value: Double): this.type = js.native
-  
-  /**
-    * Sets the display size of this Game Object.
-    * 
-    * Calling this will adjust the scale.
-    * @param width The width of this Game Object.
-    * @param height The height of this Game Object.
-    */
-  /* CompleteClass */
-  override def setDisplaySize(width: Double, height: Double): this.type = js.native
   
   /**
     * Sets the horizontal and vertical flipped state of this Game Object.
@@ -166,22 +155,6 @@ open class RenderTexture protected ()
     */
   /* CompleteClass */
   override def setFlipY(value: Boolean): this.type = js.native
-  
-  /**
-    * Sets the internal size of this Game Object, as used for frame or physics body creation.
-    * 
-    * This will not change the size that the Game Object is rendered in-game.
-    * For that you need to either set the scale of the Game Object (`setScale`) or call the
-    * `setDisplaySize` method, which is the same thing as changing the scale but allows you
-    * to do so by giving pixel values.
-    * 
-    * If you have enabled this Game Object for input, changing the size will _not_ change the
-    * size of the hit area. To do this you should adjust the `input.hitArea` object directly.
-    * @param width The width of this Game Object.
-    * @param height The height of this Game Object.
-    */
-  /* CompleteClass */
-  override def setSize(width: Double, height: Double): this.type = js.native
   
   /**
     * Sets the visibility of this Game Object.
@@ -215,14 +188,4 @@ open class RenderTexture protected ()
     */
   /* CompleteClass */
   var visible: Boolean = js.native
-  
-  /**
-    * The native (un-scaled) width of this Game Object.
-    * 
-    * Changing this value will not change the size that the Game Object is rendered in-game.
-    * For that you need to either set the scale of the Game Object (`setScale`) or use
-    * the `displayWidth` property.
-    */
-  /* CompleteClass */
-  var width: Double = js.native
 }

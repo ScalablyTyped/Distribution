@@ -45,7 +45,6 @@ object distClientClientCredentialClientMod {
     
     /**
       * Reads access token from the cache
-      * TODO: Move this call to cacheManager instead
       */
     /* private */ var readAccessTokenFromCache: Any = js.native
     

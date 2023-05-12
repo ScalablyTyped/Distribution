@@ -19,12 +19,6 @@ trait SeriesMaplineDataOptions extends StObject {
   var dataLabels: js.UndefOr[DataLabelsOptions] = js.undefined
   
   /**
-    * (Highmaps) The `id` of a series in the drilldown.series array to use for
-    * a drilldown for this point.
-    */
-  var drilldown: js.UndefOr[String] = js.undefined
-  
-  /**
     * (Highmaps) Individual point events
     */
   var events: js.UndefOr[PointEventsOptionsObject] = js.undefined
@@ -36,9 +30,13 @@ trait SeriesMaplineDataOptions extends StObject {
     * recommended to use `mapData` to define the geometry instead of defining
     * it on the data points themselves.
     *
-    * The geometry object is compatible to that of a `feature` in geoJSON, so
-    * features of geoJSON can be passed directly into the `data`, optionally
+    * The geometry object is compatible to that of a `feature` in GeoJSON, so
+    * features of GeoJSON can be passed directly into the `data`, optionally
     * after first filtering and processing it.
+    *
+    * For pre-projected maps (like GeoJSON maps from our map collection), user
+    * has to specify coordinates in `projectedUnits` for geometry type other
+    * than `Point`, instead of `[longitude, latitude]`.
     */
   var geometry: js.UndefOr[js.Object | SeriesMaplineDataGeometryOptions] = js.undefined
   
@@ -55,6 +53,11 @@ trait SeriesMaplineDataOptions extends StObject {
     * the area.
     */
   var labelrank: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highmaps) Pixel width of the mapline line.
+    */
+  var lineWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highmaps) The relative mid point of an area, used to place the data
@@ -113,10 +116,6 @@ object SeriesMaplineDataOptions {
     
     inline def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
     
-    inline def setDrilldown(value: String): Self = StObject.set(x, "drilldown", value.asInstanceOf[js.Any])
-    
-    inline def setDrilldownUndefined: Self = StObject.set(x, "drilldown", js.undefined)
-    
     inline def setEvents(value: PointEventsOptionsObject): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
@@ -132,6 +131,10 @@ object SeriesMaplineDataOptions {
     inline def setLabelrank(value: Double): Self = StObject.set(x, "labelrank", value.asInstanceOf[js.Any])
     
     inline def setLabelrankUndefined: Self = StObject.set(x, "labelrank", js.undefined)
+    
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    
+    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
     
     inline def setMiddleX(value: Double): Self = StObject.set(x, "middleX", value.asInstanceOf[js.Any])
     

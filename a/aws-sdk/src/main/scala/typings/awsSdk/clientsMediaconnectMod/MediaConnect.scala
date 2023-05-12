@@ -16,6 +16,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MediaConnect extends Service {
   
   /**
+    * Adds outputs to an existing bridge.
+    */
+  def addBridgeOutputs(): Request[AddBridgeOutputsResponse, AWSError] = js.native
+  def addBridgeOutputs(callback: js.Function2[/* err */ AWSError, /* data */ AddBridgeOutputsResponse, Unit]): Request[AddBridgeOutputsResponse, AWSError] = js.native
+  /**
+    * Adds outputs to an existing bridge.
+    */
+  def addBridgeOutputs(params: AddBridgeOutputsRequest): Request[AddBridgeOutputsResponse, AWSError] = js.native
+  def addBridgeOutputs(
+    params: AddBridgeOutputsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AddBridgeOutputsResponse, Unit]
+  ): Request[AddBridgeOutputsResponse, AWSError] = js.native
+  
+  /**
+    * Adds sources to an existing bridge.
+    */
+  def addBridgeSources(): Request[AddBridgeSourcesResponse, AWSError] = js.native
+  def addBridgeSources(callback: js.Function2[/* err */ AWSError, /* data */ AddBridgeSourcesResponse, Unit]): Request[AddBridgeSourcesResponse, AWSError] = js.native
+  /**
+    * Adds sources to an existing bridge.
+    */
+  def addBridgeSources(params: AddBridgeSourcesRequest): Request[AddBridgeSourcesResponse, AWSError] = js.native
+  def addBridgeSources(
+    params: AddBridgeSourcesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AddBridgeSourcesResponse, Unit]
+  ): Request[AddBridgeSourcesResponse, AWSError] = js.native
+  
+  /**
     * Adds media streams to an existing flow. After you add a media stream to a flow, you can associate it with a source and/or an output that uses the ST 2110 JPEG XS or CDI protocol.
     */
   def addFlowMediaStreams(): Request[AddFlowMediaStreamsResponse, AWSError] = js.native
@@ -75,6 +103,20 @@ trait MediaConnect extends Service {
   var config_MediaConnect: ConfigBase & ClientConfiguration = js.native
   
   /**
+    * Creates a new bridge. The request must include one source.
+    */
+  def createBridge(): Request[CreateBridgeResponse, AWSError] = js.native
+  def createBridge(callback: js.Function2[/* err */ AWSError, /* data */ CreateBridgeResponse, Unit]): Request[CreateBridgeResponse, AWSError] = js.native
+  /**
+    * Creates a new bridge. The request must include one source.
+    */
+  def createBridge(params: CreateBridgeRequest): Request[CreateBridgeResponse, AWSError] = js.native
+  def createBridge(
+    params: CreateBridgeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateBridgeResponse, Unit]
+  ): Request[CreateBridgeResponse, AWSError] = js.native
+  
+  /**
     * Creates a new flow. The request must include one source. The request optionally can include outputs (up to 50) and entitlements (up to 50).
     */
   def createFlow(): Request[CreateFlowResponse, AWSError] = js.native
@@ -87,6 +129,34 @@ trait MediaConnect extends Service {
     params: CreateFlowRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateFlowResponse, Unit]
   ): Request[CreateFlowResponse, AWSError] = js.native
+  
+  /**
+    * Creates a new gateway. The request must include at least one network (up to 4).
+    */
+  def createGateway(): Request[CreateGatewayResponse, AWSError] = js.native
+  def createGateway(callback: js.Function2[/* err */ AWSError, /* data */ CreateGatewayResponse, Unit]): Request[CreateGatewayResponse, AWSError] = js.native
+  /**
+    * Creates a new gateway. The request must include at least one network (up to 4).
+    */
+  def createGateway(params: CreateGatewayRequest): Request[CreateGatewayResponse, AWSError] = js.native
+  def createGateway(
+    params: CreateGatewayRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateGatewayResponse, Unit]
+  ): Request[CreateGatewayResponse, AWSError] = js.native
+  
+  /**
+    * Deletes a bridge. Before you can delete a bridge, you must stop the bridge.
+    */
+  def deleteBridge(): Request[DeleteBridgeResponse, AWSError] = js.native
+  def deleteBridge(callback: js.Function2[/* err */ AWSError, /* data */ DeleteBridgeResponse, Unit]): Request[DeleteBridgeResponse, AWSError] = js.native
+  /**
+    * Deletes a bridge. Before you can delete a bridge, you must stop the bridge.
+    */
+  def deleteBridge(params: DeleteBridgeRequest): Request[DeleteBridgeResponse, AWSError] = js.native
+  def deleteBridge(
+    params: DeleteBridgeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteBridgeResponse, Unit]
+  ): Request[DeleteBridgeResponse, AWSError] = js.native
   
   /**
     * Deletes a flow. Before you can delete a flow, you must stop the flow.
@@ -103,6 +173,48 @@ trait MediaConnect extends Service {
   ): Request[DeleteFlowResponse, AWSError] = js.native
   
   /**
+    * Deletes a gateway. Before you can delete a gateway, you must deregister its instances and delete its bridges.
+    */
+  def deleteGateway(): Request[DeleteGatewayResponse, AWSError] = js.native
+  def deleteGateway(callback: js.Function2[/* err */ AWSError, /* data */ DeleteGatewayResponse, Unit]): Request[DeleteGatewayResponse, AWSError] = js.native
+  /**
+    * Deletes a gateway. Before you can delete a gateway, you must deregister its instances and delete its bridges.
+    */
+  def deleteGateway(params: DeleteGatewayRequest): Request[DeleteGatewayResponse, AWSError] = js.native
+  def deleteGateway(
+    params: DeleteGatewayRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteGatewayResponse, Unit]
+  ): Request[DeleteGatewayResponse, AWSError] = js.native
+  
+  /**
+    * Deregisters an instance. Before you deregister an instance, all bridges running on the instance must be stopped. If you want to deregister an instance without stopping the bridges, you must use the --force option.
+    */
+  def deregisterGatewayInstance(): Request[DeregisterGatewayInstanceResponse, AWSError] = js.native
+  def deregisterGatewayInstance(callback: js.Function2[/* err */ AWSError, /* data */ DeregisterGatewayInstanceResponse, Unit]): Request[DeregisterGatewayInstanceResponse, AWSError] = js.native
+  /**
+    * Deregisters an instance. Before you deregister an instance, all bridges running on the instance must be stopped. If you want to deregister an instance without stopping the bridges, you must use the --force option.
+    */
+  def deregisterGatewayInstance(params: DeregisterGatewayInstanceRequest): Request[DeregisterGatewayInstanceResponse, AWSError] = js.native
+  def deregisterGatewayInstance(
+    params: DeregisterGatewayInstanceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeregisterGatewayInstanceResponse, Unit]
+  ): Request[DeregisterGatewayInstanceResponse, AWSError] = js.native
+  
+  /**
+    * Displays the details of a bridge.
+    */
+  def describeBridge(): Request[DescribeBridgeResponse, AWSError] = js.native
+  def describeBridge(callback: js.Function2[/* err */ AWSError, /* data */ DescribeBridgeResponse, Unit]): Request[DescribeBridgeResponse, AWSError] = js.native
+  /**
+    * Displays the details of a bridge.
+    */
+  def describeBridge(params: DescribeBridgeRequest): Request[DescribeBridgeResponse, AWSError] = js.native
+  def describeBridge(
+    params: DescribeBridgeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeBridgeResponse, Unit]
+  ): Request[DescribeBridgeResponse, AWSError] = js.native
+  
+  /**
     * Displays the details of a flow. The response includes the flow ARN, name, and Availability Zone, as well as details about the source, outputs, and entitlements.
     */
   def describeFlow(): Request[DescribeFlowResponse, AWSError] = js.native
@@ -115,6 +227,34 @@ trait MediaConnect extends Service {
     params: DescribeFlowRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeFlowResponse, Unit]
   ): Request[DescribeFlowResponse, AWSError] = js.native
+  
+  /**
+    * Displays the details of a gateway. The response includes the gateway ARN, name, and CIDR blocks, as well as details about the networks.
+    */
+  def describeGateway(): Request[DescribeGatewayResponse, AWSError] = js.native
+  def describeGateway(callback: js.Function2[/* err */ AWSError, /* data */ DescribeGatewayResponse, Unit]): Request[DescribeGatewayResponse, AWSError] = js.native
+  /**
+    * Displays the details of a gateway. The response includes the gateway ARN, name, and CIDR blocks, as well as details about the networks.
+    */
+  def describeGateway(params: DescribeGatewayRequest): Request[DescribeGatewayResponse, AWSError] = js.native
+  def describeGateway(
+    params: DescribeGatewayRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeGatewayResponse, Unit]
+  ): Request[DescribeGatewayResponse, AWSError] = js.native
+  
+  /**
+    * Displays the details of an instance.
+    */
+  def describeGatewayInstance(): Request[DescribeGatewayInstanceResponse, AWSError] = js.native
+  def describeGatewayInstance(callback: js.Function2[/* err */ AWSError, /* data */ DescribeGatewayInstanceResponse, Unit]): Request[DescribeGatewayInstanceResponse, AWSError] = js.native
+  /**
+    * Displays the details of an instance.
+    */
+  def describeGatewayInstance(params: DescribeGatewayInstanceRequest): Request[DescribeGatewayInstanceResponse, AWSError] = js.native
+  def describeGatewayInstance(
+    params: DescribeGatewayInstanceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeGatewayInstanceResponse, Unit]
+  ): Request[DescribeGatewayInstanceResponse, AWSError] = js.native
   
   /**
     * Displays the details of an offering. The response includes the offering description, duration, outbound bandwidth, price, and Amazon Resource Name (ARN).
@@ -159,6 +299,20 @@ trait MediaConnect extends Service {
   ): Request[GrantFlowEntitlementsResponse, AWSError] = js.native
   
   /**
+    * Displays a list of bridges that are associated with this account and an optionally specified Arn. This request returns a paginated result.
+    */
+  def listBridges(): Request[ListBridgesResponse, AWSError] = js.native
+  def listBridges(callback: js.Function2[/* err */ AWSError, /* data */ ListBridgesResponse, Unit]): Request[ListBridgesResponse, AWSError] = js.native
+  /**
+    * Displays a list of bridges that are associated with this account and an optionally specified Arn. This request returns a paginated result.
+    */
+  def listBridges(params: ListBridgesRequest): Request[ListBridgesResponse, AWSError] = js.native
+  def listBridges(
+    params: ListBridgesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListBridgesResponse, Unit]
+  ): Request[ListBridgesResponse, AWSError] = js.native
+  
+  /**
     * Displays a list of all entitlements that have been granted to this account. This request returns 20 results per page.
     */
   def listEntitlements(): Request[ListEntitlementsResponse, AWSError] = js.native
@@ -185,6 +339,34 @@ trait MediaConnect extends Service {
     params: ListFlowsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListFlowsResponse, Unit]
   ): Request[ListFlowsResponse, AWSError] = js.native
+  
+  /**
+    * Displays a list of instances associated with the AWS account. This request returns a paginated result. You can use the filterArn property to display only the instances associated with the selected Gateway Amazon Resource Name (ARN).
+    */
+  def listGatewayInstances(): Request[ListGatewayInstancesResponse, AWSError] = js.native
+  def listGatewayInstances(callback: js.Function2[/* err */ AWSError, /* data */ ListGatewayInstancesResponse, Unit]): Request[ListGatewayInstancesResponse, AWSError] = js.native
+  /**
+    * Displays a list of instances associated with the AWS account. This request returns a paginated result. You can use the filterArn property to display only the instances associated with the selected Gateway Amazon Resource Name (ARN).
+    */
+  def listGatewayInstances(params: ListGatewayInstancesRequest): Request[ListGatewayInstancesResponse, AWSError] = js.native
+  def listGatewayInstances(
+    params: ListGatewayInstancesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListGatewayInstancesResponse, Unit]
+  ): Request[ListGatewayInstancesResponse, AWSError] = js.native
+  
+  /**
+    * Displays a list of gateways that are associated with this account. This request returns a paginated result.
+    */
+  def listGateways(): Request[ListGatewaysResponse, AWSError] = js.native
+  def listGateways(callback: js.Function2[/* err */ AWSError, /* data */ ListGatewaysResponse, Unit]): Request[ListGatewaysResponse, AWSError] = js.native
+  /**
+    * Displays a list of gateways that are associated with this account. This request returns a paginated result.
+    */
+  def listGateways(params: ListGatewaysRequest): Request[ListGatewaysResponse, AWSError] = js.native
+  def listGateways(
+    params: ListGatewaysRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListGatewaysResponse, Unit]
+  ): Request[ListGatewaysResponse, AWSError] = js.native
   
   /**
     * Displays a list of all offerings that are available to this account in the current AWS Region. If you have an active reservation (which means you've purchased an offering that has already started and hasn't expired yet), your account isn't eligible for other offerings.
@@ -241,6 +423,34 @@ trait MediaConnect extends Service {
     params: PurchaseOfferingRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PurchaseOfferingResponse, Unit]
   ): Request[PurchaseOfferingResponse, AWSError] = js.native
+  
+  /**
+    * Removes an output from a bridge.
+    */
+  def removeBridgeOutput(): Request[RemoveBridgeOutputResponse, AWSError] = js.native
+  def removeBridgeOutput(callback: js.Function2[/* err */ AWSError, /* data */ RemoveBridgeOutputResponse, Unit]): Request[RemoveBridgeOutputResponse, AWSError] = js.native
+  /**
+    * Removes an output from a bridge.
+    */
+  def removeBridgeOutput(params: RemoveBridgeOutputRequest): Request[RemoveBridgeOutputResponse, AWSError] = js.native
+  def removeBridgeOutput(
+    params: RemoveBridgeOutputRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RemoveBridgeOutputResponse, Unit]
+  ): Request[RemoveBridgeOutputResponse, AWSError] = js.native
+  
+  /**
+    * Removes a source from a bridge.
+    */
+  def removeBridgeSource(): Request[RemoveBridgeSourceResponse, AWSError] = js.native
+  def removeBridgeSource(callback: js.Function2[/* err */ AWSError, /* data */ RemoveBridgeSourceResponse, Unit]): Request[RemoveBridgeSourceResponse, AWSError] = js.native
+  /**
+    * Removes a source from a bridge.
+    */
+  def removeBridgeSource(params: RemoveBridgeSourceRequest): Request[RemoveBridgeSourceResponse, AWSError] = js.native
+  def removeBridgeSource(
+    params: RemoveBridgeSourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RemoveBridgeSourceResponse, Unit]
+  ): Request[RemoveBridgeSourceResponse, AWSError] = js.native
   
   /**
     * Removes a media stream from a flow. This action is only available if the media stream is not associated with a source or output.
@@ -366,6 +576,62 @@ trait MediaConnect extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
+    * Updates the bridge
+    */
+  def updateBridge(): Request[UpdateBridgeResponse, AWSError] = js.native
+  def updateBridge(callback: js.Function2[/* err */ AWSError, /* data */ UpdateBridgeResponse, Unit]): Request[UpdateBridgeResponse, AWSError] = js.native
+  /**
+    * Updates the bridge
+    */
+  def updateBridge(params: UpdateBridgeRequest): Request[UpdateBridgeResponse, AWSError] = js.native
+  def updateBridge(
+    params: UpdateBridgeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateBridgeResponse, Unit]
+  ): Request[UpdateBridgeResponse, AWSError] = js.native
+  
+  /**
+    * Updates an existing bridge output.
+    */
+  def updateBridgeOutput(): Request[UpdateBridgeOutputResponse, AWSError] = js.native
+  def updateBridgeOutput(callback: js.Function2[/* err */ AWSError, /* data */ UpdateBridgeOutputResponse, Unit]): Request[UpdateBridgeOutputResponse, AWSError] = js.native
+  /**
+    * Updates an existing bridge output.
+    */
+  def updateBridgeOutput(params: UpdateBridgeOutputRequest): Request[UpdateBridgeOutputResponse, AWSError] = js.native
+  def updateBridgeOutput(
+    params: UpdateBridgeOutputRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateBridgeOutputResponse, Unit]
+  ): Request[UpdateBridgeOutputResponse, AWSError] = js.native
+  
+  /**
+    * Updates an existing bridge source.
+    */
+  def updateBridgeSource(): Request[UpdateBridgeSourceResponse, AWSError] = js.native
+  def updateBridgeSource(callback: js.Function2[/* err */ AWSError, /* data */ UpdateBridgeSourceResponse, Unit]): Request[UpdateBridgeSourceResponse, AWSError] = js.native
+  /**
+    * Updates an existing bridge source.
+    */
+  def updateBridgeSource(params: UpdateBridgeSourceRequest): Request[UpdateBridgeSourceResponse, AWSError] = js.native
+  def updateBridgeSource(
+    params: UpdateBridgeSourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateBridgeSourceResponse, Unit]
+  ): Request[UpdateBridgeSourceResponse, AWSError] = js.native
+  
+  /**
+    * Updates the bridge state
+    */
+  def updateBridgeState(): Request[UpdateBridgeStateResponse, AWSError] = js.native
+  def updateBridgeState(callback: js.Function2[/* err */ AWSError, /* data */ UpdateBridgeStateResponse, Unit]): Request[UpdateBridgeStateResponse, AWSError] = js.native
+  /**
+    * Updates the bridge state
+    */
+  def updateBridgeState(params: UpdateBridgeStateRequest): Request[UpdateBridgeStateResponse, AWSError] = js.native
+  def updateBridgeState(
+    params: UpdateBridgeStateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateBridgeStateResponse, Unit]
+  ): Request[UpdateBridgeStateResponse, AWSError] = js.native
+  
+  /**
     * Updates flow
     */
   def updateFlow(): Request[UpdateFlowResponse, AWSError] = js.native
@@ -434,6 +700,20 @@ trait MediaConnect extends Service {
     params: UpdateFlowSourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateFlowSourceResponse, Unit]
   ): Request[UpdateFlowSourceResponse, AWSError] = js.native
+  
+  /**
+    * Updates the configuration of an existing Gateway Instance.
+    */
+  def updateGatewayInstance(): Request[UpdateGatewayInstanceResponse, AWSError] = js.native
+  def updateGatewayInstance(callback: js.Function2[/* err */ AWSError, /* data */ UpdateGatewayInstanceResponse, Unit]): Request[UpdateGatewayInstanceResponse, AWSError] = js.native
+  /**
+    * Updates the configuration of an existing Gateway Instance.
+    */
+  def updateGatewayInstance(params: UpdateGatewayInstanceRequest): Request[UpdateGatewayInstanceResponse, AWSError] = js.native
+  def updateGatewayInstance(
+    params: UpdateGatewayInstanceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateGatewayInstanceResponse, Unit]
+  ): Request[UpdateGatewayInstanceResponse, AWSError] = js.native
   
   /**
     * Waits for the flowActive state by periodically calling the underlying MediaConnect.describeFlowoperation every 3 seconds (at most 40 times). Wait until a flow is active

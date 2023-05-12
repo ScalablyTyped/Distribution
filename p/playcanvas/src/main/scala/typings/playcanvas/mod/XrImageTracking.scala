@@ -11,7 +11,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('./xr-manager.js').XrManager} XrManager */
 /**
   * Image Tracking provides the ability to track real world images by provided image samples and
   * their estimated sizes.
@@ -25,7 +24,7 @@ open class XrImageTracking protected () extends EventHandler {
     * Image Tracking provides the ability to track real world images by provided image samples and
     * their estimate sizes.
     *
-    * @param {XrManager} manager - WebXR Manager.
+    * @param {import('./xr-manager.js').XrManager} manager - WebXR Manager.
     * @hideconstructor
     */
   def this(manager: XrManager) = this()
@@ -43,7 +42,7 @@ open class XrImageTracking protected () extends EventHandler {
   /* private */ var _images: Any = js.native
   
   /**
-    * @type {XrManager}
+    * @type {import('./xr-manager.js').XrManager}
     * @private
     */
   /* private */ var _manager: Any = js.native

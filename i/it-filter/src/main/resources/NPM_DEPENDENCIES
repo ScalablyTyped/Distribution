@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "it-filter" : "2.0.0"
+      "it-filter" : "3.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "it-filter" : "2.0.0"
+      "it-filter" : "3.0.2"
     }
   ],
   "compile-devDependencies" : [

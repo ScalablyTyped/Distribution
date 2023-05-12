@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Enquirer extends StObject {
   
+  /**
+    * Inject an `enquirer` instance for using with prompts.
+    */
   var enquirer: js.UndefOr[^[js.Object]] = js.undefined
 }
 object Enquirer {

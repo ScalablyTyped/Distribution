@@ -1,7 +1,7 @@
 
 # Scala.js typings for socketcluster-server
 
-Typings are for version 16.1
+Typings are for version 17.3
 
 ## Library description:
 Server module for SocketCluster

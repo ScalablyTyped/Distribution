@@ -106,7 +106,9 @@ import typings.csstype.mod.Property.BreakAfter
 import typings.csstype.mod.Property.BreakBefore
 import typings.csstype.mod.Property.BreakInside
 import typings.csstype.mod.Property.CaptionSide
+import typings.csstype.mod.Property.Caret
 import typings.csstype.mod.Property.CaretColor
+import typings.csstype.mod.Property.CaretShape
 import typings.csstype.mod.Property.Clear
 import typings.csstype.mod.Property.Clip
 import typings.csstype.mod.Property.ClipPath
@@ -126,6 +128,14 @@ import typings.csstype.mod.Property.ColumnSpan
 import typings.csstype.mod.Property.ColumnWidth
 import typings.csstype.mod.Property.Columns
 import typings.csstype.mod.Property.Contain
+import typings.csstype.mod.Property.ContainIntrinsicBlockSize
+import typings.csstype.mod.Property.ContainIntrinsicHeight
+import typings.csstype.mod.Property.ContainIntrinsicInlineSize
+import typings.csstype.mod.Property.ContainIntrinsicSize
+import typings.csstype.mod.Property.ContainIntrinsicWidth
+import typings.csstype.mod.Property.Container
+import typings.csstype.mod.Property.ContainerName
+import typings.csstype.mod.Property.ContainerType
 import typings.csstype.mod.Property.Content
 import typings.csstype.mod.Property.ContentVisibility
 import typings.csstype.mod.Property.CounterIncrement
@@ -156,6 +166,7 @@ import typings.csstype.mod.Property.FontFeatureSettings
 import typings.csstype.mod.Property.FontKerning
 import typings.csstype.mod.Property.FontLanguageOverride
 import typings.csstype.mod.Property.FontOpticalSizing
+import typings.csstype.mod.Property.FontPalette
 import typings.csstype.mod.Property.FontSize
 import typings.csstype.mod.Property.FontSizeAdjust
 import typings.csstype.mod.Property.FontSmooth
@@ -166,6 +177,7 @@ import typings.csstype.mod.Property.FontVariant
 import typings.csstype.mod.Property.FontVariantAlternates
 import typings.csstype.mod.Property.FontVariantCaps
 import typings.csstype.mod.Property.FontVariantEastAsian
+import typings.csstype.mod.Property.FontVariantEmoji
 import typings.csstype.mod.Property.FontVariantLigatures
 import typings.csstype.mod.Property.FontVariantNumeric
 import typings.csstype.mod.Property.FontVariantPosition
@@ -192,6 +204,7 @@ import typings.csstype.mod.Property.GridTemplateRows
 import typings.csstype.mod.Property.HangingPunctuation
 import typings.csstype.mod.Property.Height
 import typings.csstype.mod.Property.HyphenateCharacter
+import typings.csstype.mod.Property.HyphenateLimitChars
 import typings.csstype.mod.Property.Hyphens
 import typings.csstype.mod.Property.ImageOrientation
 import typings.csstype.mod.Property.ImageRendering
@@ -233,6 +246,7 @@ import typings.csstype.mod.Property.MarginInlineStart
 import typings.csstype.mod.Property.MarginLeft
 import typings.csstype.mod.Property.MarginRight
 import typings.csstype.mod.Property.MarginTop
+import typings.csstype.mod.Property.MarginTrim
 import typings.csstype.mod.Property.Marker
 import typings.csstype.mod.Property.MarkerEnd
 import typings.csstype.mod.Property.MarkerMid
@@ -268,6 +282,7 @@ import typings.csstype.mod.Property.MinInlineSize
 import typings.csstype.mod.Property.MinWidth
 import typings.csstype.mod.Property.MixBlendMode
 import typings.csstype.mod.Property.MozAppearance
+import typings.csstype.mod.Property.MozBinding
 import typings.csstype.mod.Property.MozBorderBottomColors
 import typings.csstype.mod.Property.MozBorderLeftColors
 import typings.csstype.mod.Property.MozBorderRightColors
@@ -335,6 +350,7 @@ import typings.csstype.mod.Property.Offset
 import typings.csstype.mod.Property.OffsetAnchor
 import typings.csstype.mod.Property.OffsetDistance
 import typings.csstype.mod.Property.OffsetPath
+import typings.csstype.mod.Property.OffsetPosition
 import typings.csstype.mod.Property.OffsetRotate
 import typings.csstype.mod.Property.Opacity
 import typings.csstype.mod.Property.Order
@@ -369,6 +385,7 @@ import typings.csstype.mod.Property.PaddingInlineStart
 import typings.csstype.mod.Property.PaddingLeft
 import typings.csstype.mod.Property.PaddingRight
 import typings.csstype.mod.Property.PaddingTop
+import typings.csstype.mod.Property.Page
 import typings.csstype.mod.Property.PageBreakAfter
 import typings.csstype.mod.Property.PageBreakBefore
 import typings.csstype.mod.Property.PageBreakInside
@@ -416,6 +433,9 @@ import typings.csstype.mod.Property.ScrollPaddingTop
 import typings.csstype.mod.Property.ScrollSnapAlign
 import typings.csstype.mod.Property.ScrollSnapStop
 import typings.csstype.mod.Property.ScrollSnapType
+import typings.csstype.mod.Property.ScrollTimeline
+import typings.csstype.mod.Property.ScrollTimelineAxis
+import typings.csstype.mod.Property.ScrollTimelineName
 import typings.csstype.mod.Property.ScrollbarColor
 import typings.csstype.mod.Property.ScrollbarGutter
 import typings.csstype.mod.Property.ScrollbarWidth
@@ -476,6 +496,7 @@ import typings.csstype.mod.Property.UnicodeBidi
 import typings.csstype.mod.Property.UserSelect
 import typings.csstype.mod.Property.VectorEffect
 import typings.csstype.mod.Property.VerticalAlign
+import typings.csstype.mod.Property.ViewTransitionName
 import typings.csstype.mod.Property.Visibility
 import typings.csstype.mod.Property.WebkitAppearance
 import typings.csstype.mod.Property.WebkitBorderBefore
@@ -543,6 +564,8 @@ trait CSSPropertiesWithMultiValues extends StObject {
   var MozAppearance: js.UndefOr[typings.csstype.mod.Property.MozAppearance] = js.undefined
   
   var MozBackfaceVisibility: js.UndefOr[BackfaceVisibility] = js.undefined
+  
+  var MozBinding: js.UndefOr[typings.csstype.mod.Property.MozBinding] = js.undefined
   
   var MozBorderBottomColors: js.UndefOr[typings.csstype.mod.Property.MozBorderBottomColors] = js.undefined
   
@@ -1096,7 +1119,11 @@ trait CSSPropertiesWithMultiValues extends StObject {
   
   var captionSide: js.UndefOr[CaptionSide] = js.undefined
   
+  var caret: js.UndefOr[Caret] = js.undefined
+  
   var caretColor: js.UndefOr[CaretColor] = js.undefined
+  
+  var caretShape: js.UndefOr[CaretShape] = js.undefined
   
   var clear: js.UndefOr[Clear] = js.undefined
   
@@ -1137,6 +1164,22 @@ trait CSSPropertiesWithMultiValues extends StObject {
   var columns: js.UndefOr[Columns[Double | String]] = js.undefined
   
   var contain: js.UndefOr[Contain] = js.undefined
+  
+  var containIntrinsicBlockSize: js.UndefOr[ContainIntrinsicBlockSize[Double | String]] = js.undefined
+  
+  var containIntrinsicHeight: js.UndefOr[ContainIntrinsicHeight[Double | String]] = js.undefined
+  
+  var containIntrinsicInlineSize: js.UndefOr[ContainIntrinsicInlineSize[Double | String]] = js.undefined
+  
+  var containIntrinsicSize: js.UndefOr[ContainIntrinsicSize[Double | String]] = js.undefined
+  
+  var containIntrinsicWidth: js.UndefOr[ContainIntrinsicWidth[Double | String]] = js.undefined
+  
+  var container: js.UndefOr[Container] = js.undefined
+  
+  var containerName: js.UndefOr[ContainerName] = js.undefined
+  
+  var containerType: js.UndefOr[ContainerType] = js.undefined
   
   var content: js.UndefOr[Content] = js.undefined
   
@@ -1198,6 +1241,8 @@ trait CSSPropertiesWithMultiValues extends StObject {
   
   var fontOpticalSizing: js.UndefOr[FontOpticalSizing] = js.undefined
   
+  var fontPalette: js.UndefOr[FontPalette] = js.undefined
+  
   var fontSize: js.UndefOr[FontSize[Double | String]] = js.undefined
   
   var fontSizeAdjust: js.UndefOr[FontSizeAdjust] = js.undefined
@@ -1217,6 +1262,8 @@ trait CSSPropertiesWithMultiValues extends StObject {
   var fontVariantCaps: js.UndefOr[FontVariantCaps] = js.undefined
   
   var fontVariantEastAsian: js.UndefOr[FontVariantEastAsian] = js.undefined
+  
+  var fontVariantEmoji: js.UndefOr[FontVariantEmoji] = js.undefined
   
   var fontVariantLigatures: js.UndefOr[FontVariantLigatures] = js.undefined
   
@@ -1269,6 +1316,8 @@ trait CSSPropertiesWithMultiValues extends StObject {
   var height: js.UndefOr[Height[Double | String]] = js.undefined
   
   var hyphenateCharacter: js.UndefOr[HyphenateCharacter] = js.undefined
+  
+  var hyphenateLimitChars: js.UndefOr[HyphenateLimitChars] = js.undefined
   
   var hyphens: js.UndefOr[Hyphens] = js.undefined
   
@@ -1351,6 +1400,8 @@ trait CSSPropertiesWithMultiValues extends StObject {
   var marginRight: js.UndefOr[MarginRight[Double | String]] = js.undefined
   
   var marginTop: js.UndefOr[MarginTop[Double | String]] = js.undefined
+  
+  var marginTrim: js.UndefOr[MarginTrim] = js.undefined
   
   var marker: js.UndefOr[Marker] = js.undefined
   
@@ -1576,6 +1627,8 @@ trait CSSPropertiesWithMultiValues extends StObject {
   
   var offsetPath: js.UndefOr[OffsetPath] = js.undefined
   
+  var offsetPosition: js.UndefOr[OffsetPosition[Double | String]] = js.undefined
+  
   var offsetRotate: js.UndefOr[OffsetRotate] = js.undefined
   
   var offsetRotation: js.UndefOr[OffsetRotate] = js.undefined
@@ -1645,6 +1698,8 @@ trait CSSPropertiesWithMultiValues extends StObject {
   var paddingRight: js.UndefOr[PaddingRight[Double | String]] = js.undefined
   
   var paddingTop: js.UndefOr[PaddingTop[Double | String]] = js.undefined
+  
+  var page: js.UndefOr[Page] = js.undefined
   
   var pageBreakAfter: js.UndefOr[PageBreakAfter] = js.undefined
   
@@ -1749,6 +1804,12 @@ trait CSSPropertiesWithMultiValues extends StObject {
   var scrollSnapStop: js.UndefOr[ScrollSnapStop] = js.undefined
   
   var scrollSnapType: js.UndefOr[ScrollSnapType] = js.undefined
+  
+  var scrollTimeline: js.UndefOr[ScrollTimeline] = js.undefined
+  
+  var scrollTimelineAxis: js.UndefOr[ScrollTimelineAxis] = js.undefined
+  
+  var scrollTimelineName: js.UndefOr[ScrollTimelineName] = js.undefined
   
   var scrollbarColor: js.UndefOr[ScrollbarColor] = js.undefined
   
@@ -1869,6 +1930,8 @@ trait CSSPropertiesWithMultiValues extends StObject {
   var vectorEffect: js.UndefOr[VectorEffect] = js.undefined
   
   var verticalAlign: js.UndefOr[VerticalAlign[Double | String]] = js.undefined
+  
+  var viewTransitionName: js.UndefOr[ViewTransitionName] = js.undefined
   
   var visibility: js.UndefOr[Visibility] = js.undefined
   
@@ -2326,9 +2389,17 @@ object CSSPropertiesWithMultiValues {
     
     inline def setCaptionSideUndefined: Self = StObject.set(x, "captionSide", js.undefined)
     
+    inline def setCaret(value: Caret): Self = StObject.set(x, "caret", value.asInstanceOf[js.Any])
+    
     inline def setCaretColor(value: CaretColor): Self = StObject.set(x, "caretColor", value.asInstanceOf[js.Any])
     
     inline def setCaretColorUndefined: Self = StObject.set(x, "caretColor", js.undefined)
+    
+    inline def setCaretShape(value: CaretShape): Self = StObject.set(x, "caretShape", value.asInstanceOf[js.Any])
+    
+    inline def setCaretShapeUndefined: Self = StObject.set(x, "caretShape", js.undefined)
+    
+    inline def setCaretUndefined: Self = StObject.set(x, "caret", js.undefined)
     
     inline def setClear(value: Clear): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     
@@ -2408,7 +2479,39 @@ object CSSPropertiesWithMultiValues {
     
     inline def setContain(value: Contain): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
     
+    inline def setContainIntrinsicBlockSize(value: ContainIntrinsicBlockSize[Double | String]): Self = StObject.set(x, "containIntrinsicBlockSize", value.asInstanceOf[js.Any])
+    
+    inline def setContainIntrinsicBlockSizeUndefined: Self = StObject.set(x, "containIntrinsicBlockSize", js.undefined)
+    
+    inline def setContainIntrinsicHeight(value: ContainIntrinsicHeight[Double | String]): Self = StObject.set(x, "containIntrinsicHeight", value.asInstanceOf[js.Any])
+    
+    inline def setContainIntrinsicHeightUndefined: Self = StObject.set(x, "containIntrinsicHeight", js.undefined)
+    
+    inline def setContainIntrinsicInlineSize(value: ContainIntrinsicInlineSize[Double | String]): Self = StObject.set(x, "containIntrinsicInlineSize", value.asInstanceOf[js.Any])
+    
+    inline def setContainIntrinsicInlineSizeUndefined: Self = StObject.set(x, "containIntrinsicInlineSize", js.undefined)
+    
+    inline def setContainIntrinsicSize(value: ContainIntrinsicSize[Double | String]): Self = StObject.set(x, "containIntrinsicSize", value.asInstanceOf[js.Any])
+    
+    inline def setContainIntrinsicSizeUndefined: Self = StObject.set(x, "containIntrinsicSize", js.undefined)
+    
+    inline def setContainIntrinsicWidth(value: ContainIntrinsicWidth[Double | String]): Self = StObject.set(x, "containIntrinsicWidth", value.asInstanceOf[js.Any])
+    
+    inline def setContainIntrinsicWidthUndefined: Self = StObject.set(x, "containIntrinsicWidth", js.undefined)
+    
     inline def setContainUndefined: Self = StObject.set(x, "contain", js.undefined)
+    
+    inline def setContainer(value: Container): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerName(value: ContainerName): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+    
+    inline def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
+    
+    inline def setContainerType(value: ContainerType): Self = StObject.set(x, "containerType", value.asInstanceOf[js.Any])
+    
+    inline def setContainerTypeUndefined: Self = StObject.set(x, "containerType", js.undefined)
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     inline def setContent(value: Content): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
@@ -2528,6 +2631,10 @@ object CSSPropertiesWithMultiValues {
     
     inline def setFontOpticalSizingUndefined: Self = StObject.set(x, "fontOpticalSizing", js.undefined)
     
+    inline def setFontPalette(value: FontPalette): Self = StObject.set(x, "fontPalette", value.asInstanceOf[js.Any])
+    
+    inline def setFontPaletteUndefined: Self = StObject.set(x, "fontPalette", js.undefined)
+    
     inline def setFontSize(value: FontSize[Double | String]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     inline def setFontSizeAdjust(value: FontSizeAdjust): Self = StObject.set(x, "fontSizeAdjust", value.asInstanceOf[js.Any])
@@ -2567,6 +2674,10 @@ object CSSPropertiesWithMultiValues {
     inline def setFontVariantEastAsian(value: FontVariantEastAsian): Self = StObject.set(x, "fontVariantEastAsian", value.asInstanceOf[js.Any])
     
     inline def setFontVariantEastAsianUndefined: Self = StObject.set(x, "fontVariantEastAsian", js.undefined)
+    
+    inline def setFontVariantEmoji(value: FontVariantEmoji): Self = StObject.set(x, "fontVariantEmoji", value.asInstanceOf[js.Any])
+    
+    inline def setFontVariantEmojiUndefined: Self = StObject.set(x, "fontVariantEmoji", js.undefined)
     
     inline def setFontVariantLigatures(value: FontVariantLigatures): Self = StObject.set(x, "fontVariantLigatures", value.asInstanceOf[js.Any])
     
@@ -2673,6 +2784,10 @@ object CSSPropertiesWithMultiValues {
     inline def setHyphenateCharacter(value: HyphenateCharacter): Self = StObject.set(x, "hyphenateCharacter", value.asInstanceOf[js.Any])
     
     inline def setHyphenateCharacterUndefined: Self = StObject.set(x, "hyphenateCharacter", js.undefined)
+    
+    inline def setHyphenateLimitChars(value: HyphenateLimitChars): Self = StObject.set(x, "hyphenateLimitChars", value.asInstanceOf[js.Any])
+    
+    inline def setHyphenateLimitCharsUndefined: Self = StObject.set(x, "hyphenateLimitChars", js.undefined)
     
     inline def setHyphens(value: Hyphens): Self = StObject.set(x, "hyphens", value.asInstanceOf[js.Any])
     
@@ -2835,6 +2950,10 @@ object CSSPropertiesWithMultiValues {
     inline def setMarginTop(value: MarginTop[Double | String]): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
     inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
+    
+    inline def setMarginTrim(value: MarginTrim): Self = StObject.set(x, "marginTrim", value.asInstanceOf[js.Any])
+    
+    inline def setMarginTrimUndefined: Self = StObject.set(x, "marginTrim", js.undefined)
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
@@ -3033,6 +3152,10 @@ object CSSPropertiesWithMultiValues {
     inline def setMozBackfaceVisibility(value: BackfaceVisibility): Self = StObject.set(x, "MozBackfaceVisibility", value.asInstanceOf[js.Any])
     
     inline def setMozBackfaceVisibilityUndefined: Self = StObject.set(x, "MozBackfaceVisibility", js.undefined)
+    
+    inline def setMozBinding(value: MozBinding): Self = StObject.set(x, "MozBinding", value.asInstanceOf[js.Any])
+    
+    inline def setMozBindingUndefined: Self = StObject.set(x, "MozBinding", js.undefined)
     
     inline def setMozBorderBottomColors(value: MozBorderBottomColors): Self = StObject.set(x, "MozBorderBottomColors", value.asInstanceOf[js.Any])
     
@@ -3520,6 +3643,10 @@ object CSSPropertiesWithMultiValues {
     
     inline def setOffsetPathUndefined: Self = StObject.set(x, "offsetPath", js.undefined)
     
+    inline def setOffsetPosition(value: OffsetPosition[Double | String]): Self = StObject.set(x, "offsetPosition", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetPositionUndefined: Self = StObject.set(x, "offsetPosition", js.undefined)
+    
     inline def setOffsetRotate(value: OffsetRotate): Self = StObject.set(x, "offsetRotate", value.asInstanceOf[js.Any])
     
     inline def setOffsetRotateUndefined: Self = StObject.set(x, "offsetRotate", js.undefined)
@@ -3662,6 +3789,8 @@ object CSSPropertiesWithMultiValues {
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
+    inline def setPage(value: Page): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    
     inline def setPageBreakAfter(value: PageBreakAfter): Self = StObject.set(x, "pageBreakAfter", value.asInstanceOf[js.Any])
     
     inline def setPageBreakAfterUndefined: Self = StObject.set(x, "pageBreakAfter", js.undefined)
@@ -3673,6 +3802,8 @@ object CSSPropertiesWithMultiValues {
     inline def setPageBreakInside(value: PageBreakInside): Self = StObject.set(x, "pageBreakInside", value.asInstanceOf[js.Any])
     
     inline def setPageBreakInsideUndefined: Self = StObject.set(x, "pageBreakInside", js.undefined)
+    
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
     inline def setPaintOrder(value: PaintOrder): Self = StObject.set(x, "paintOrder", value.asInstanceOf[js.Any])
     
@@ -3869,6 +4000,18 @@ object CSSPropertiesWithMultiValues {
     inline def setScrollSnapType(value: ScrollSnapType): Self = StObject.set(x, "scrollSnapType", value.asInstanceOf[js.Any])
     
     inline def setScrollSnapTypeUndefined: Self = StObject.set(x, "scrollSnapType", js.undefined)
+    
+    inline def setScrollTimeline(value: ScrollTimeline): Self = StObject.set(x, "scrollTimeline", value.asInstanceOf[js.Any])
+    
+    inline def setScrollTimelineAxis(value: ScrollTimelineAxis): Self = StObject.set(x, "scrollTimelineAxis", value.asInstanceOf[js.Any])
+    
+    inline def setScrollTimelineAxisUndefined: Self = StObject.set(x, "scrollTimelineAxis", js.undefined)
+    
+    inline def setScrollTimelineName(value: ScrollTimelineName): Self = StObject.set(x, "scrollTimelineName", value.asInstanceOf[js.Any])
+    
+    inline def setScrollTimelineNameUndefined: Self = StObject.set(x, "scrollTimelineName", js.undefined)
+    
+    inline def setScrollTimelineUndefined: Self = StObject.set(x, "scrollTimeline", js.undefined)
     
     inline def setScrollbarColor(value: ScrollbarColor): Self = StObject.set(x, "scrollbarColor", value.asInstanceOf[js.Any])
     
@@ -4109,6 +4252,10 @@ object CSSPropertiesWithMultiValues {
     inline def setVerticalAlign(value: VerticalAlign[Double | String]): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
     inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+    
+    inline def setViewTransitionName(value: ViewTransitionName): Self = StObject.set(x, "viewTransitionName", value.asInstanceOf[js.Any])
+    
+    inline def setViewTransitionNameUndefined: Self = StObject.set(x, "viewTransitionName", js.undefined)
     
     inline def setVisibility(value: Visibility): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     

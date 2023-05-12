@@ -7,12 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Ipam extends StObject {
   
   /**
+    * The IPAM's default resource discovery association ID.
+    */
+  var DefaultResourceDiscoveryAssociationId: js.UndefOr[IpamResourceDiscoveryAssociationId] = js.undefined
+  
+  /**
+    * The IPAM's default resource discovery ID.
+    */
+  var DefaultResourceDiscoveryId: js.UndefOr[IpamResourceDiscoveryId] = js.undefined
+  
+  /**
     * The description for the IPAM.
     */
   var Description: js.UndefOr[String] = js.undefined
   
   /**
-    * The ARN of the IPAM.
+    * The Amazon Resource Name (ARN) of the IPAM.
     */
   var IpamArn: js.UndefOr[ResourceArn] = js.undefined
   
@@ -47,6 +57,11 @@ trait Ipam extends StObject {
   var PublicDefaultScopeId: js.UndefOr[IpamScopeId] = js.undefined
   
   /**
+    * The IPAM's resource discovery association count.
+    */
+  var ResourceDiscoveryAssociationCount: js.UndefOr[Integer] = js.undefined
+  
+  /**
     * The number of scopes in the IPAM. The scope quota is 5. For more information on quotas, see Quotas in IPAM in the Amazon VPC IPAM User Guide. 
     */
   var ScopeCount: js.UndefOr[Integer] = js.undefined
@@ -70,6 +85,14 @@ object Ipam {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Ipam] (val x: Self) extends AnyVal {
+    
+    inline def setDefaultResourceDiscoveryAssociationId(value: IpamResourceDiscoveryAssociationId): Self = StObject.set(x, "DefaultResourceDiscoveryAssociationId", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultResourceDiscoveryAssociationIdUndefined: Self = StObject.set(x, "DefaultResourceDiscoveryAssociationId", js.undefined)
+    
+    inline def setDefaultResourceDiscoveryId(value: IpamResourceDiscoveryId): Self = StObject.set(x, "DefaultResourceDiscoveryId", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultResourceDiscoveryIdUndefined: Self = StObject.set(x, "DefaultResourceDiscoveryId", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
@@ -104,6 +127,10 @@ object Ipam {
     inline def setPublicDefaultScopeId(value: IpamScopeId): Self = StObject.set(x, "PublicDefaultScopeId", value.asInstanceOf[js.Any])
     
     inline def setPublicDefaultScopeIdUndefined: Self = StObject.set(x, "PublicDefaultScopeId", js.undefined)
+    
+    inline def setResourceDiscoveryAssociationCount(value: Integer): Self = StObject.set(x, "ResourceDiscoveryAssociationCount", value.asInstanceOf[js.Any])
+    
+    inline def setResourceDiscoveryAssociationCountUndefined: Self = StObject.set(x, "ResourceDiscoveryAssociationCount", js.undefined)
     
     inline def setScopeCount(value: Integer): Self = StObject.set(x, "ScopeCount", value.asInstanceOf[js.Any])
     

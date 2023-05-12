@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "editly" : "0.14.0"
+      "editly" : "0.14.2"
     }
   ],
   "test-dependencies" : [
     {
-      "editly" : "0.14.0"
+      "editly" : "0.14.2"
     }
   ],
   "compile-devDependencies" : [

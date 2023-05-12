@@ -102,6 +102,8 @@ object sapUiModelBaseManagedObjectModelMod {
     extends typings.openui5.sapUiModelJsonJsonmodelMod.default {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Private method iterating the registered bindings of this model instance and initiating their check for
       * update
       */
@@ -113,6 +115,8 @@ object sapUiModelBaseManagedObjectModelMod {
     fnFilter: js.Function
     ): Unit = js.native
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Private method iterating the registered bindings of this model instance and initiating their check for
       * update
       */

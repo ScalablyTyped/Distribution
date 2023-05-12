@@ -27,8 +27,14 @@ object distTypesCommandsRegisterClientCommandMod {
           Any, 
           Any
         ] {
+    /**
+      * @public
+      */
     def this(input: RegisterClientCommandInput) = this()
     
+    /**
+      * @internal
+      */
     /* private */ var deserialize: Any = js.native
     
     /**
@@ -44,6 +50,9 @@ object distTypesCommandsRegisterClientCommandMod {
       options: HttpHandlerOptions
     ): Handler[RegisterClientCommandInput, RegisterClientCommandOutput] = js.native
     
+    /**
+      * @internal
+      */
     /* private */ var serialize: Any = js.native
   }
   /* static members */

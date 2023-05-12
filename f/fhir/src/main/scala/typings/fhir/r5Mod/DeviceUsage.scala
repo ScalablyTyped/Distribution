@@ -23,6 +23,11 @@ trait DeviceUsage
   var _timingDateTime: js.UndefOr[Element] = js.undefined
   
   /**
+    * This indicates how or if the device is being used.
+    */
+  var adherence: js.UndefOr[DeviceUsageAdherence] = js.undefined
+  
+  /**
     * A plan, proposal or order that is fulfilled in whole or in part by this DeviceUsage.
     */
   var basedOn: js.UndefOr[js.Array[Reference]] = js.undefined
@@ -130,6 +135,10 @@ object DeviceUsage {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: DeviceUsage] (val x: Self) extends AnyVal {
+    
+    inline def setAdherence(value: DeviceUsageAdherence): Self = StObject.set(x, "adherence", value.asInstanceOf[js.Any])
+    
+    inline def setAdherenceUndefined: Self = StObject.set(x, "adherence", js.undefined)
     
     inline def setBasedOn(value: js.Array[Reference]): Self = StObject.set(x, "basedOn", value.asInstanceOf[js.Any])
     

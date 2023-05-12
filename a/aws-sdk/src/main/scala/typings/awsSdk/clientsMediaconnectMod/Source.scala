@@ -27,6 +27,11 @@ trait Source extends StObject {
   var EntitlementArn: js.UndefOr[string] = js.undefined
   
   /**
+    * The source configuration for cloud flows receiving a stream from a bridge.
+    */
+  var GatewayBridgeSource: js.UndefOr[typings.awsSdk.clientsMediaconnectMod.GatewayBridgeSource] = js.undefined
+  
+  /**
     * The IP address that the flow will be listening on for incoming content.
     */
   var IngestIp: js.UndefOr[string] = js.undefined
@@ -101,6 +106,10 @@ object Source {
     inline def setEntitlementArn(value: string): Self = StObject.set(x, "EntitlementArn", value.asInstanceOf[js.Any])
     
     inline def setEntitlementArnUndefined: Self = StObject.set(x, "EntitlementArn", js.undefined)
+    
+    inline def setGatewayBridgeSource(value: GatewayBridgeSource): Self = StObject.set(x, "GatewayBridgeSource", value.asInstanceOf[js.Any])
+    
+    inline def setGatewayBridgeSourceUndefined: Self = StObject.set(x, "GatewayBridgeSource", js.undefined)
     
     inline def setIngestIp(value: string): Self = StObject.set(x, "IngestIp", value.asInstanceOf[js.Any])
     

@@ -33,21 +33,23 @@ object mod {
   
   @JSImport("@vue/reactivity", "EffectScope")
   @js.native
-  /* Excluded from this release type: active */
-  /* Excluded from this release type: effects */
-  /* Excluded from this release type: cleanups */
-  /* Excluded from this release type: parent */
-  /* Excluded from this release type: scopes */
-  /* Excluded from this release type: index */
+  /* removed internal: _active */
+  /* removed internal: effects */
+  /* removed internal: cleanups */
+  /* removed internal: parent */
+  /* removed internal: scopes */
+  /* removed internal: index */
   open class EffectScope_ () extends StObject {
     def this(detached: Boolean) = this()
+    
+    def active: Boolean = js.native
     
     var detached: Boolean = js.native
     
     def run[T](fn: js.Function0[T]): js.UndefOr[T] = js.native
     
-    /* Excluded from this release type: on */
-    /* Excluded from this release type: off */
+    /* removed internal: on */
+    /* removed internal: off */
     def stop(): Unit = js.native
     def stop(fromParent: Boolean): Unit = js.native
   }
@@ -71,9 +73,9 @@ object mod {
     
     def fn(): T = js.native
     
-    /* Excluded from this release type: computed */
-    /* Excluded from this release type: allowRecurse */
-    /* Excluded from this release type: deferStop */
+    /* removed internal: computed */
+    /* removed internal: allowRecurse */
+    /* removed internal: deferStop */
     var onStop: js.UndefOr[js.Function0[Unit]] = js.native
     
     var onTrack: js.UndefOr[js.Function1[/* event */ DebuggerEvent, Unit]] = js.native
@@ -132,9 +134,9 @@ object mod {
   inline def readonly[T /* <: js.Object */](target: T): DeepReadonly[UnwrapNestedRefs[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readonly")(target.asInstanceOf[js.Any]).asInstanceOf[DeepReadonly[UnwrapNestedRefs[T]]]
   
   inline def ref[T](): Ref_[js.UndefOr[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")().asInstanceOf[Ref_[js.UndefOr[T]]]
-  inline def ref[T /* <: js.Object */](value: T): /* import warning: importer.ImportType#apply Failed type conversion: [T] extends [@vue/reactivity.@vue/reactivity.Ref<any>] ? T : @vue/reactivity.@vue/reactivity.Ref<@vue/reactivity.@vue/reactivity.UnwrapRef<T>> */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")(value.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: [T] extends [@vue/reactivity.@vue/reactivity.Ref<any>] ? T : @vue/reactivity.@vue/reactivity.Ref<@vue/reactivity.@vue/reactivity.UnwrapRef<T>> */ js.Any]
+  inline def ref[T](value: T): Ref_[UnwrapRef[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")(value.asInstanceOf[js.Any]).asInstanceOf[Ref_[UnwrapRef[T]]]
   
-  inline def ref_T_Ref_[T](value: T): Ref_[UnwrapRef[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")(value.asInstanceOf[js.Any]).asInstanceOf[Ref_[UnwrapRef[T]]]
+  inline def ref_T_T[T /* <: Ref_[Any] */](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")(value.asInstanceOf[js.Any]).asInstanceOf[T]
   
   inline def resetTracking(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetTracking")().asInstanceOf[Unit]
   
@@ -151,6 +153,7 @@ object mod {
   
   inline def toRaw[T](observed: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("toRaw")(observed.asInstanceOf[js.Any]).asInstanceOf[T]
   
+  inline def toRef[T](value: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends (): infer R ? std.Readonly<@vue/reactivity.@vue/reactivity.Ref<R>> : T extends @vue/reactivity.@vue/reactivity.Ref<any> ? T : @vue/reactivity.@vue/reactivity.Ref<@vue/reactivity.@vue/reactivity.UnwrapRef<T>> */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toRef")(value.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends (): infer R ? std.Readonly<@vue/reactivity.@vue/reactivity.Ref<R>> : T extends @vue/reactivity.@vue/reactivity.Ref<any> ? T : @vue/reactivity.@vue/reactivity.Ref<@vue/reactivity.@vue/reactivity.UnwrapRef<T>> */ js.Any]
   inline def toRef[T /* <: js.Object */, K /* <: /* keyof T */ String */](`object`: T, key: K): ToRef_[
     /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("toRef")(`object`.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[ToRef_[
@@ -173,6 +176,8 @@ object mod {
   ]]
   
   inline def toRefs[T /* <: js.Object */](`object`: T): ToRefs_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toRefs")(`object`.asInstanceOf[js.Any]).asInstanceOf[ToRefs_[T]]
+  
+  inline def toValue[T](source: MaybeRefOrGetter[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("toValue")(source.asInstanceOf[js.Any]).asInstanceOf[T]
   
   inline def track(target: js.Object, `type`: TrackOpTypes, key: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -315,8 +320,7 @@ object mod {
   
   inline def triggerRef(ref: Ref_[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("triggerRef")(ref.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def unref[T](ref: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("unref")(ref.asInstanceOf[js.Any]).asInstanceOf[T]
-  inline def unref[T](ref: Ref_[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("unref")(ref.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def unref[T](ref: MaybeRef[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("unref")(ref.asInstanceOf[js.Any]).asInstanceOf[T]
   
   type BaseTypes = String | Double | Boolean
   
@@ -474,6 +478,10 @@ object mod {
   }
   
   type IterableCollections = (Map[Any, Any]) | Set[Any]
+  
+  type MaybeRef[T] = T | Ref_[T]
+  
+  type MaybeRefOrGetter[T] = MaybeRef[T] | js.Function0[T]
   
   type Primitive = js.UndefOr[String | Double | Boolean | js.BigInt | js.Symbol | Null]
   

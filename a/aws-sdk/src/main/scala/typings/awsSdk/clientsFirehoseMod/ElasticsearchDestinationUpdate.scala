@@ -22,7 +22,7 @@ trait ElasticsearchDestinationUpdate extends StObject {
   var ClusterEndpoint: js.UndefOr[ElasticsearchClusterEndpoint] = js.undefined
   
   /**
-    * The ARN of the Amazon ES domain. The IAM role must have permissions for DescribeElasticsearchDomain, DescribeElasticsearchDomains, and DescribeElasticsearchDomainConfig after assuming the IAM role specified in RoleARN. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces. Specify either ClusterEndpoint or DomainARN.
+    * The ARN of the Amazon ES domain. The IAM role must have permissions for DescribeDomain, DescribeDomains, and DescribeDomainConfig after assuming the IAM role specified in RoleARN. For more information, see Amazon Resource Names (ARNs) and Amazon Web Services Service Namespaces. Specify either ClusterEndpoint or DomainARN.
     */
   var DomainARN: js.UndefOr[ElasticsearchDomainARN] = js.undefined
   
@@ -47,7 +47,7 @@ trait ElasticsearchDestinationUpdate extends StObject {
   var RetryOptions: js.UndefOr[ElasticsearchRetryOptions] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the IAM role to be assumed by Kinesis Data Firehose for calling the Amazon ES Configuration API and for indexing documents. For more information, see Grant Kinesis Data Firehose Access to an Amazon S3 Destination and Amazon Resource Names (ARNs) and AWS Service Namespaces.
+    * The Amazon Resource Name (ARN) of the IAM role to be assumed by Kinesis Data Firehose for calling the Amazon ES Configuration API and for indexing documents. For more information, see Grant Kinesis Data Firehose Access to an Amazon S3 Destination and Amazon Resource Names (ARNs) and Amazon Web Services Service Namespaces.
     */
   var RoleARN: js.UndefOr[typings.awsSdk.clientsFirehoseMod.RoleARN] = js.undefined
   

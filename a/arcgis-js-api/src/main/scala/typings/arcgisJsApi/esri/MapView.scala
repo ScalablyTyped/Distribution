@@ -73,7 +73,7 @@ trait MapView
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#highlightOptions)
     */
-  var highlightOptions: MapViewHighlightOptions = js.native
+  var highlightOptions: HighlightOptions = js.native
   
   /**
     * Returns [hit test results](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#HitTestResult) from each layer that intersects the specified screen coordinates.

@@ -34,7 +34,7 @@ trait DescribeEndpointOutput extends StObject {
   var EndpointName: typings.awsSdk.clientsSagemakerMod.EndpointName
   
   /**
-    * The status of the endpoint.    OutOfService: Endpoint is not available to take incoming requests.    Creating: CreateEndpoint is executing.    Updating: UpdateEndpoint or UpdateEndpointWeightsAndCapacities is executing.    SystemUpdating: Endpoint is undergoing maintenance and cannot be updated or deleted or re-scaled until it has completed. This maintenance operation does not change any customer-specified values such as VPC config, KMS encryption, model, instance type, or instance count.    RollingBack: Endpoint fails to scale up or down or change its variant weight and is in the process of rolling back to its previous configuration. Once the rollback completes, endpoint returns to an InService status. This transitional status only applies to an endpoint that has autoscaling enabled and is undergoing variant weight or capacity changes as part of an UpdateEndpointWeightsAndCapacities call or when the UpdateEndpointWeightsAndCapacities operation is called explicitly.    InService: Endpoint is available to process incoming requests.    Deleting: DeleteEndpoint is executing.    Failed: Endpoint could not be created, updated, or re-scaled. Use DescribeEndpointOutput$FailureReason for information about the failure. DeleteEndpoint is the only operation that can be performed on a failed endpoint.  
+    * The status of the endpoint.    OutOfService: Endpoint is not available to take incoming requests.    Creating: CreateEndpoint is executing.    Updating: UpdateEndpoint or UpdateEndpointWeightsAndCapacities is executing.    SystemUpdating: Endpoint is undergoing maintenance and cannot be updated or deleted or re-scaled until it has completed. This maintenance operation does not change any customer-specified values such as VPC config, KMS encryption, model, instance type, or instance count.    RollingBack: Endpoint fails to scale up or down or change its variant weight and is in the process of rolling back to its previous configuration. Once the rollback completes, endpoint returns to an InService status. This transitional status only applies to an endpoint that has autoscaling enabled and is undergoing variant weight or capacity changes as part of an UpdateEndpointWeightsAndCapacities call or when the UpdateEndpointWeightsAndCapacities operation is called explicitly.    InService: Endpoint is available to process incoming requests.    Deleting: DeleteEndpoint is executing.    Failed: Endpoint could not be created, updated, or re-scaled. Use the FailureReason value returned by DescribeEndpoint for information about the failure. DeleteEndpoint is the only operation that can be performed on a failed endpoint.  
     */
   var EndpointStatus: typings.awsSdk.clientsSagemakerMod.EndpointStatus
   
@@ -64,9 +64,14 @@ trait DescribeEndpointOutput extends StObject {
   var PendingDeploymentSummary: js.UndefOr[typings.awsSdk.clientsSagemakerMod.PendingDeploymentSummary] = js.undefined
   
   /**
-    *  An array of ProductionVariantSummary objects, one for each model hosted behind this endpoint. 
+    * An array of ProductionVariantSummary objects, one for each model hosted behind this endpoint.
     */
   var ProductionVariants: js.UndefOr[ProductionVariantSummaryList] = js.undefined
+  
+  /**
+    * An array of ProductionVariantSummary objects, one for each model that you want to host at this endpoint in shadow mode with production traffic replicated from the model specified on ProductionVariants.
+    */
+  var ShadowProductionVariants: js.UndefOr[ProductionVariantSummaryList] = js.undefined
 }
 object DescribeEndpointOutput {
   
@@ -126,5 +131,11 @@ object DescribeEndpointOutput {
     inline def setProductionVariantsUndefined: Self = StObject.set(x, "ProductionVariants", js.undefined)
     
     inline def setProductionVariantsVarargs(value: ProductionVariantSummary*): Self = StObject.set(x, "ProductionVariants", js.Array(value*))
+    
+    inline def setShadowProductionVariants(value: ProductionVariantSummaryList): Self = StObject.set(x, "ShadowProductionVariants", value.asInstanceOf[js.Any])
+    
+    inline def setShadowProductionVariantsUndefined: Self = StObject.set(x, "ShadowProductionVariants", js.undefined)
+    
+    inline def setShadowProductionVariantsVarargs(value: ProductionVariantSummary*): Self = StObject.set(x, "ShadowProductionVariants", js.Array(value*))
   }
 }

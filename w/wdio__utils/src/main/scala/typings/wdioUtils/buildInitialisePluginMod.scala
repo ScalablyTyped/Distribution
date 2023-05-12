@@ -12,6 +12,6 @@ object buildInitialisePluginMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(name: String): ServicePlugin | RunnerPlugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any]).asInstanceOf[ServicePlugin | RunnerPlugin]
-  inline def default(name: String, `type`: String): ServicePlugin | RunnerPlugin = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[ServicePlugin | RunnerPlugin]
+  inline def default(name: String): js.Promise[ServicePlugin | RunnerPlugin] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ServicePlugin | RunnerPlugin]]
+  inline def default(name: String, `type`: String): js.Promise[ServicePlugin | RunnerPlugin] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ServicePlugin | RunnerPlugin]]
 }

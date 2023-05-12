@@ -50,6 +50,8 @@ import typings.primereact.primereactStrings.tree
 import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.yes
+import typings.primereact.utilsUtilsMod.IconOptions
+import typings.primereact.utilsUtilsMod.IconType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -103,18 +105,28 @@ object menubarMenubarMod {
     def this(props: MenubarProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: MenubarProps, context: Any) = this()
     
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
     
+    /**
+      * Used to get menu button element.
+      * @return {HTMLElement} Menu button element
+      */
     def getMenuButton(): HTMLElement = js.native
     
+    /**
+      * Used to get root menu element.
+      * @return {HTMLElement} Root menu element
+      */
     def getRootMenu(): HTMLElement = js.native
   }
-  
-  type MenubarEndTemplate = ReactNode | (js.Function1[/* props */ MenubarProps, ReactNode])
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
   trait MenubarProps extends StObject {
@@ -225,13 +237,21 @@ object menubarMenubarMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -249,7 +269,10 @@ object menubarMenubarMod {
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
-    var end: js.UndefOr[MenubarEndTemplate] = js.undefined
+    /**
+      * The template of trailing element.
+      */
+    var end: js.UndefOr[ReactNode | (js.Function1[/* props */ this.type, ReactNode])] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
@@ -275,6 +298,14 @@ object menubarMenubarMod {
     
     var lang: js.UndefOr[String] = js.undefined
     
+    /**
+      * Icon of the menu.
+      */
+    var menuIcon: js.UndefOr[IconType[MenubarProps]] = js.undefined
+    
+    /**
+      * An array of menuitems.
+      */
     var model: js.UndefOr[
         js.Array[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuItem */ Any
@@ -451,9 +482,13 @@ object menubarMenubarMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -463,9 +498,17 @@ object menubarMenubarMod {
     
     var spellCheck: js.UndefOr[Booleanish] = js.undefined
     
-    var start: js.UndefOr[MenubarStartTemplate] = js.undefined
+    /**
+      * The template of starting element.
+      */
+    var start: js.UndefOr[ReactNode | (js.Function1[/* props */ this.type, ReactNode])] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
+    
+    /**
+      * Icon of the submenu.
+      */
+    var submenuIcon: js.UndefOr[IconType[MenubarProps]] = js.undefined
     
     var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
     
@@ -703,6 +746,10 @@ object menubarMenubarMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -719,9 +766,13 @@ object menubarMenubarMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -753,9 +804,9 @@ object menubarMenubarMod {
       
       inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
-      inline def setEnd(value: MenubarEndTemplate): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: ReactNode | (js.Function1[MenubarProps, ReactNode])): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      inline def setEndFunction1(value: /* props */ MenubarProps => ReactNode): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
+      inline def setEndFunction1(value: MenubarProps => ReactNode): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
       
       inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
@@ -808,6 +859,12 @@ object menubarMenubarMod {
       inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+      
+      inline def setMenuIcon(value: IconType[MenubarProps]): Self = StObject.set(x, "menuIcon", value.asInstanceOf[js.Any])
+      
+      inline def setMenuIconFunction1(value: /* options */ IconOptions[MenubarProps] => ReactNode): Self = StObject.set(x, "menuIcon", js.Any.fromFunction1(value))
+      
+      inline def setMenuIconUndefined: Self = StObject.set(x, "menuIcon", js.undefined)
       
       inline def setModel(
         value: js.Array[
@@ -1161,6 +1218,10 @@ object menubarMenubarMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1168,6 +1229,10 @@ object menubarMenubarMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1185,15 +1250,21 @@ object menubarMenubarMod {
       
       inline def setSpellCheckUndefined: Self = StObject.set(x, "spellCheck", js.undefined)
       
-      inline def setStart(value: MenubarStartTemplate): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: ReactNode | (js.Function1[MenubarProps, ReactNode])): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      inline def setStartFunction1(value: /* props */ MenubarProps => ReactNode): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+      inline def setStartFunction1(value: MenubarProps => ReactNode): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
       
       inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      
+      inline def setSubmenuIcon(value: IconType[MenubarProps]): Self = StObject.set(x, "submenuIcon", value.asInstanceOf[js.Any])
+      
+      inline def setSubmenuIconFunction1(value: /* options */ IconOptions[MenubarProps] => ReactNode): Self = StObject.set(x, "submenuIcon", js.Any.fromFunction1(value))
+      
+      inline def setSubmenuIconUndefined: Self = StObject.set(x, "submenuIcon", js.undefined)
       
       inline def setSuppressContentEditableWarning(value: Boolean): Self = StObject.set(x, "suppressContentEditableWarning", value.asInstanceOf[js.Any])
       
@@ -1228,6 +1299,4 @@ object menubarMenubarMod {
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
     }
   }
-  
-  type MenubarStartTemplate = ReactNode | (js.Function1[/* props */ MenubarProps, ReactNode])
 }

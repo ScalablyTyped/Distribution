@@ -58,6 +58,11 @@ trait FreeCameraKeyboardMoveInput
   var keysRight: js.Array[Double] = js.native
   
   /**
+    * Gets or Set the list of keyboard keys used to control the down rotation move of the camera.
+    */
+  var keysRotateDown: js.Array[Double] = js.native
+  
+  /**
     * Gets or Set the list of keyboard keys used to control the left rotation move of the camera.
     */
   var keysRotateLeft: js.Array[Double] = js.native
@@ -66,6 +71,11 @@ trait FreeCameraKeyboardMoveInput
     * Gets or Set the list of keyboard keys used to control the right rotation move of the camera.
     */
   var keysRotateRight: js.Array[Double] = js.native
+  
+  /**
+    * Gets or Set the list of keyboard keys used to control the up rotation move of the camera.
+    */
+  var keysRotateUp: js.Array[Double] = js.native
   
   /**
     * Gets or Set the list of keyboard keys used to control the forward move of the camera.

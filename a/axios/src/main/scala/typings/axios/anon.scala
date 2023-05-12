@@ -8,25 +8,30 @@ import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.Instantiable5
 import org.scalablytyped.runtime.StringDictionary
 import typings.axios.axiosBooleans.`false`
-import typings.axios.mod.AxiosAdapter
+import typings.axios.axiosInts.`4`
+import typings.axios.axiosInts.`6`
+import typings.axios.mod.AxiosAdapterConfig
 import typings.axios.mod.AxiosBasicCredentials
 import typings.axios.mod.AxiosError
 import typings.axios.mod.AxiosHeaderValue
+import typings.axios.mod.AxiosHeaders
 import typings.axios.mod.AxiosInterceptorManager
 import typings.axios.mod.AxiosProgressEvent
 import typings.axios.mod.AxiosProxyConfig
-import typings.axios.mod.AxiosRequestConfig
 import typings.axios.mod.AxiosRequestTransformer
 import typings.axios.mod.AxiosResponse
 import typings.axios.mod.AxiosResponseTransformer
 import typings.axios.mod.CancelToken
+import typings.axios.mod.CustomParamsSerializer
 import typings.axios.mod.FormSerializerOptions
 import typings.axios.mod.GenericAbortSignal
+import typings.axios.mod.InternalAxiosRequestConfig
 import typings.axios.mod.MaxDownloadRate
 import typings.axios.mod.MaxUploadRate
 import typings.axios.mod.Method
 import typings.axios.mod.Milliseconds
 import typings.axios.mod.ParamsSerializerOptions
+import typings.axios.mod.RawAxiosHeaders
 import typings.axios.mod.RawAxiosRequestHeaders
 import typings.axios.mod.ResponseType
 import typings.axios.mod.TransitionalOptions
@@ -37,6 +42,24 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
+  
+  @js.native
+  trait FnCall extends StObject {
+    
+    def apply[T](values: js.Array[T | js.Promise[T]]): js.Promise[js.Array[T]] = js.native
+  }
+  
+  @js.native
+  trait FnCallCallback extends StObject {
+    
+    def apply[T, R](callback: js.Function1[/* repeated */ T, R]): js.Function1[/* array */ js.Array[T], R] = js.native
+  }
+  
+  @js.native
+  trait FnCallPayload extends StObject {
+    
+    def apply[T, D](payload: Any): /* is axios.axios.AxiosError<T, D> */ Boolean = js.native
+  }
   
   trait FormData extends StObject {
     
@@ -156,7 +179,7 @@ object anon {
   /* Inlined std.Omit<axios.axios.AxiosDefaults<any>, 'headers'> & {  headers :axios.axios.HeadersDefaults & {[key: string] : axios.axios.AxiosHeaderValue}} */
   trait OmitAxiosDefaultsanyheade extends StObject {
     
-    var adapter: js.UndefOr[AxiosAdapter] = js.undefined
+    var adapter: js.UndefOr[AxiosAdapterConfig | js.Array[AxiosAdapterConfig]] = js.undefined
     
     var auth: js.UndefOr[AxiosBasicCredentials] = js.undefined
     
@@ -174,6 +197,8 @@ object anon {
     
     var env: js.UndefOr[FormData] = js.undefined
     
+    var family: js.UndefOr[`4` | `6`] = js.undefined
+    
     var formSerializer: js.UndefOr[FormSerializerOptions] = js.undefined
     
     var headers: HeadersDefaultskeystringA
@@ -183,6 +208,19 @@ object anon {
     var httpsAgent: js.UndefOr[Any] = js.undefined
     
     var insecureHTTPParser: js.UndefOr[Boolean] = js.undefined
+    
+    var lookup: js.UndefOr[
+        (js.Function3[
+          /* hostname */ String, 
+          /* options */ js.Object, 
+          /* cb */ js.Function3[/* err */ js.Error | Null, /* address */ String, /* family */ Double, Unit], 
+          Unit
+        ]) | (js.Function2[
+          /* hostname */ String, 
+          /* options */ js.Object, 
+          js.Promise[(js.Tuple2[/* address */ String, /* family */ Double]) | String]
+        ])
+      ] = js.undefined
     
     var maxBodyLength: js.UndefOr[Double] = js.undefined
     
@@ -200,7 +238,7 @@ object anon {
     
     var params: js.UndefOr[Any] = js.undefined
     
-    var paramsSerializer: js.UndefOr[ParamsSerializerOptions] = js.undefined
+    var paramsSerializer: js.UndefOr[ParamsSerializerOptions | CustomParamsSerializer] = js.undefined
     
     var proxy: js.UndefOr[AxiosProxyConfig | `false`] = js.undefined
     
@@ -222,6 +260,8 @@ object anon {
     
     var transitional: js.UndefOr[TransitionalOptions] = js.undefined
     
+    var transport: js.UndefOr[Any] = js.undefined
+    
     var url: js.UndefOr[String] = js.undefined
     
     var validateStatus: js.UndefOr[(js.Function1[/* status */ Double, Boolean]) | Null] = js.undefined
@@ -242,9 +282,13 @@ object anon {
     @scala.inline
     implicit open class MutableBuilder[Self <: OmitAxiosDefaultsanyheade] (val x: Self) extends AnyVal {
       
-      inline def setAdapter(value: /* config */ AxiosRequestConfig[Any] => js.Promise[AxiosResponse[Any, Any]]): Self = StObject.set(x, "adapter", js.Any.fromFunction1(value))
+      inline def setAdapter(value: AxiosAdapterConfig | js.Array[AxiosAdapterConfig]): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
+      
+      inline def setAdapterFunction1(value: /* config */ InternalAxiosRequestConfig[Any] => js.Promise[AxiosResponse[Any, Any]]): Self = StObject.set(x, "adapter", js.Any.fromFunction1(value))
       
       inline def setAdapterUndefined: Self = StObject.set(x, "adapter", js.undefined)
+      
+      inline def setAdapterVarargs(value: AxiosAdapterConfig*): Self = StObject.set(x, "adapter", js.Array(value*))
       
       inline def setAuth(value: AxiosBasicCredentials): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -274,6 +318,10 @@ object anon {
       
       inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
+      inline def setFamily(value: `4` | `6`): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+      
+      inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
+      
       inline def setFormSerializer(value: FormSerializerOptions): Self = StObject.set(x, "formSerializer", value.asInstanceOf[js.Any])
       
       inline def setFormSerializerUndefined: Self = StObject.set(x, "formSerializer", js.undefined)
@@ -291,6 +339,29 @@ object anon {
       inline def setInsecureHTTPParser(value: Boolean): Self = StObject.set(x, "insecureHTTPParser", value.asInstanceOf[js.Any])
       
       inline def setInsecureHTTPParserUndefined: Self = StObject.set(x, "insecureHTTPParser", js.undefined)
+      
+      inline def setLookup(
+        value: (js.Function3[
+              /* hostname */ String, 
+              /* options */ js.Object, 
+              /* cb */ js.Function3[/* err */ js.Error | Null, /* address */ String, /* family */ Double, Unit], 
+              Unit
+            ]) | (js.Function2[
+              /* hostname */ String, 
+              /* options */ js.Object, 
+              js.Promise[(js.Tuple2[/* address */ String, /* family */ Double]) | String]
+            ])
+      ): Self = StObject.set(x, "lookup", value.asInstanceOf[js.Any])
+      
+      inline def setLookupFunction2(
+        value: (/* hostname */ String, /* options */ js.Object) => js.Promise[(js.Tuple2[/* address */ String, /* family */ Double]) | String]
+      ): Self = StObject.set(x, "lookup", js.Any.fromFunction2(value))
+      
+      inline def setLookupFunction3(
+        value: (/* hostname */ String, /* options */ js.Object, /* cb */ js.Function3[/* err */ js.Error | Null, /* address */ String, /* family */ Double, Unit]) => Unit
+      ): Self = StObject.set(x, "lookup", js.Any.fromFunction3(value))
+      
+      inline def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)
       
       inline def setMaxBodyLength(value: Double): Self = StObject.set(x, "maxBodyLength", value.asInstanceOf[js.Any])
       
@@ -322,7 +393,11 @@ object anon {
       
       inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      inline def setParamsSerializer(value: ParamsSerializerOptions): Self = StObject.set(x, "paramsSerializer", value.asInstanceOf[js.Any])
+      inline def setParamsSerializer(value: ParamsSerializerOptions | CustomParamsSerializer): Self = StObject.set(x, "paramsSerializer", value.asInstanceOf[js.Any])
+      
+      inline def setParamsSerializerFunction2(
+        value: (/* params */ Record[String, Any], /* options */ js.UndefOr[ParamsSerializerOptions]) => String
+      ): Self = StObject.set(x, "paramsSerializer", js.Any.fromFunction2(value))
       
       inline def setParamsSerializerUndefined: Self = StObject.set(x, "paramsSerializer", js.undefined)
       
@@ -373,6 +448,10 @@ object anon {
       inline def setTransitional(value: TransitionalOptions): Self = StObject.set(x, "transitional", value.asInstanceOf[js.Any])
       
       inline def setTransitionalUndefined: Self = StObject.set(x, "transitional", js.undefined)
+      
+      inline def setTransport(value: Any): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+      
+      inline def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
@@ -503,14 +582,14 @@ object anon {
   
   trait Request extends StObject {
     
-    var request: AxiosInterceptorManager[AxiosRequestConfig[Any]]
+    var request: AxiosInterceptorManager[InternalAxiosRequestConfig[Any]]
     
     var response: AxiosInterceptorManager[AxiosResponse[Any, Any]]
   }
   object Request {
     
     inline def apply(
-      request: AxiosInterceptorManager[AxiosRequestConfig[Any]],
+      request: AxiosInterceptorManager[InternalAxiosRequestConfig[Any]],
       response: AxiosInterceptorManager[AxiosResponse[Any, Any]]
     ): Request = {
       val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
@@ -520,31 +599,9 @@ object anon {
     @scala.inline
     implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
       
-      inline def setRequest(value: AxiosInterceptorManager[AxiosRequestConfig[Any]]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: AxiosInterceptorManager[InternalAxiosRequestConfig[Any]]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
       inline def setResponse(value: AxiosInterceptorManager[AxiosResponse[Any, Any]]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Setcookie extends StObject {
-    
-    var `set-cookie`: js.UndefOr[js.Array[String]] = js.undefined
-  }
-  object Setcookie {
-    
-    inline def apply(): Setcookie = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Setcookie]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Setcookie] (val x: Self) extends AnyVal {
-      
-      inline def `setSet-cookie`(value: js.Array[String]): Self = StObject.set(x, "set-cookie", value.asInstanceOf[js.Any])
-      
-      inline def `setSet-cookieUndefined`: Self = StObject.set(x, "set-cookie", js.undefined)
-      
-      inline def `setSet-cookieVarargs`(value: String*): Self = StObject.set(x, "set-cookie", js.Array(value*))
     }
   }
   
@@ -561,20 +618,20 @@ object anon {
        with Instantiable3[
           (/* message */ String) | (/* message */ Unit), 
           (/* code */ String) | (/* code */ Unit), 
-          /* config */ AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any], 
+          /* config */ InternalAxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any], 
           AxiosError[js.Object, js.Object]
         ]
        with Instantiable4[
           (/* message */ String) | (/* message */ Unit), 
           (/* code */ String) | (/* code */ Unit), 
-          (/* config */ AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any]) | (/* config */ Unit), 
+          (/* config */ InternalAxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any]) | (/* config */ Unit), 
           /* request */ Any, 
           AxiosError[js.Object, js.Object]
         ]
        with Instantiable5[
           (/* message */ String) | (/* message */ Unit), 
           (/* code */ String) | (/* code */ Unit), 
-          (/* config */ AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any]) | (/* config */ Unit), 
+          (/* config */ InternalAxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any]) | (/* config */ Unit), 
           (/* request */ Any) | (/* request */ Unit), 
           /* response */ AxiosResponse[
             /* import warning: RewrittenClass.unapply cls was tparam T */ Any, 
@@ -606,5 +663,31 @@ object anon {
     val ERR_NOT_SUPPORT: /* "ERR_NOT_SUPPORT" */ String = js.native
     
     val ETIMEDOUT: /* "ETIMEDOUT" */ String = js.native
+    
+    def from[T, D](
+      error: js.Error | Any,
+      code: js.UndefOr[String],
+      config: js.UndefOr[InternalAxiosRequestConfig[D]],
+      request: js.UndefOr[Any],
+      response: js.UndefOr[AxiosResponse[T, D]],
+      customProps: js.UndefOr[js.Object]
+    ): AxiosError[T, D] = js.native
+  }
+  
+  @js.native
+  trait TypeofAxiosHeaders
+    extends StObject
+       with Instantiable0[AxiosHeaders]
+       with Instantiable1[(/* headers */ AxiosHeaders) | (/* headers */ RawAxiosHeaders), AxiosHeaders] {
+    
+    def accessor(header: String): AxiosHeaders = js.native
+    def accessor(header: js.Array[String]): AxiosHeaders = js.native
+    
+    def concat(targets: (js.UndefOr[AxiosHeaders | RawAxiosHeaders | String | Null])*): AxiosHeaders = js.native
+    
+    def from(): AxiosHeaders = js.native
+    def from(thing: String): AxiosHeaders = js.native
+    def from(thing: AxiosHeaders): AxiosHeaders = js.native
+    def from(thing: RawAxiosHeaders): AxiosHeaders = js.native
   }
 }

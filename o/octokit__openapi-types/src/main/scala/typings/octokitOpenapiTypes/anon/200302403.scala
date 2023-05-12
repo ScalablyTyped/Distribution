@@ -6,22 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `200302403` extends StObject {
   
-  /** Response */
+  /** @description Response */
   var `200`: ContentApplicationjsonApplicationvndgithubobject
   
-  var `302`: Any
+  var `302`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabelsreadonly['found'] */ js.Any
   
-  var `403`: Content48
+  var `403`: Content36
   
-  var `404`: Content48
+  var `404`: Content36
 }
 object `200302403` {
   
   inline def apply(
     `200`: ContentApplicationjsonApplicationvndgithubobject,
-    `302`: Any,
-    `403`: Content48,
-    `404`: Content48
+    `302`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabelsreadonly['found'] */ js.Any,
+    `403`: Content36,
+    `404`: Content36
   ): `200302403` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
@@ -36,10 +36,12 @@ object `200302403` {
     
     inline def set200(value: ContentApplicationjsonApplicationvndgithubobject): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set302(value: Any): Self = StObject.set(x, "302", value.asInstanceOf[js.Any])
+    inline def set302(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabelsreadonly['found'] */ js.Any
+    ): Self = StObject.set(x, "302", value.asInstanceOf[js.Any])
     
-    inline def set403(value: Content48): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+    inline def set403(value: Content36): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
     
-    inline def set404(value: Content48): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(value: Content36): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
   }
 }

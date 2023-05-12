@@ -68,6 +68,8 @@ object encoding {
   
   inline def createEncoder(): typings.lib0.encodingMod.Encoder = ^.asInstanceOf[js.Dynamic].applyDynamic("createEncoder")().asInstanceOf[typings.lib0.encodingMod.Encoder]
   
+  inline def hasContent(encoder: typings.lib0.encodingMod.Encoder): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasContent")(encoder.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   inline def length(encoder: typings.lib0.encodingMod.Encoder): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("length")(encoder.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   inline def set(encoder: typings.lib0.encodingMod.Encoder, pos: Double, num: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(encoder.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], num.asInstanceOf[js.Any])).asInstanceOf[Unit]

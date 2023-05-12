@@ -3,6 +3,7 @@ package typings.amazonConnectStreams
 import typings.amazonConnectStreams.connect.Agent
 import typings.amazonConnectStreams.connect.AgentApp
 import typings.amazonConnectStreams.connect.AgentCallback
+import typings.amazonConnectStreams.connect.Callback
 import typings.amazonConnectStreams.connect.Contact
 import typings.amazonConnectStreams.connect.ContactCallback
 import typings.amazonConnectStreams.connect.Core
@@ -76,6 +77,48 @@ object global {
       /* "MultipleCcpWindows" */ val MULTIPLE_CCP_WINDOWS: typings.amazonConnectStreams.connect.AgentErrorStates.MULTIPLE_CCP_WINDOWS & String = js.native
       
       /* "RealtimeCommunicationError" */ val REALTIME_COMMUNICATION_ERROR: typings.amazonConnectStreams.connect.AgentErrorStates.REALTIME_COMMUNICATION_ERROR & String = js.native
+    }
+    
+    @JSGlobal("connect.AgentEvents")
+    @js.native
+    object AgentEvents extends StObject {
+      
+      @JSBracketAccess
+      def apply(value: String): js.UndefOr[typings.amazonConnectStreams.connect.AgentEvents & String] = js.native
+      
+      /* "acw" */ val ACW: typings.amazonConnectStreams.connect.AgentEvents.ACW & String = js.native
+      
+      /* "contact_pending" */ val CONTACT_PENDING: typings.amazonConnectStreams.connect.AgentEvents.CONTACT_PENDING & String = js.native
+      
+      /* "enqueued_next_state" */ val ENQUEUED_NEXT_STATE: typings.amazonConnectStreams.connect.AgentEvents.ENQUEUED_NEXT_STATE & String = js.native
+      
+      /* "error" */ val ERROR: typings.amazonConnectStreams.connect.AgentEvents.ERROR & String = js.native
+      
+      /* "init" */ val INIT: typings.amazonConnectStreams.connect.AgentEvents.INIT & String = js.native
+      
+      /* "local_media_stream_created" */ val LOCAL_MEDIA_STREAM_CREATED: typings.amazonConnectStreams.connect.AgentEvents.LOCAL_MEDIA_STREAM_CREATED & String = js.native
+      
+      /* "mute_toggle" */ val MUTE_TOGGLE: typings.amazonConnectStreams.connect.AgentEvents.MUTE_TOGGLE & String = js.native
+      
+      /* "not_routable" */ val NOT_ROUTABLE: typings.amazonConnectStreams.connect.AgentEvents.NOT_ROUTABLE & String = js.native
+      
+      /* "offline" */ val OFFLINE: typings.amazonConnectStreams.connect.AgentEvents.OFFLINE & String = js.native
+      
+      /* "pending" */ val PENDING: typings.amazonConnectStreams.connect.AgentEvents.PENDING & String = js.native
+      
+      /* "refresh" */ val REFRESH: typings.amazonConnectStreams.connect.AgentEvents.REFRESH & String = js.native
+      
+      /* "routable" */ val ROUTABLE: typings.amazonConnectStreams.connect.AgentEvents.ROUTABLE & String = js.native
+      
+      /* "softphone_error" */ val SOFTPHONE_ERROR: typings.amazonConnectStreams.connect.AgentEvents.SOFTPHONE_ERROR & String = js.native
+      
+      /* "state_change" */ val STATE_CHANGE: typings.amazonConnectStreams.connect.AgentEvents.STATE_CHANGE & String = js.native
+      
+      /* "update" */ val UPDATE: typings.amazonConnectStreams.connect.AgentEvents.UPDATE & String = js.native
+      
+      /* "websocket_connection_gained" */ val WEBSOCKET_CONNECTION_GAINED: typings.amazonConnectStreams.connect.AgentEvents.WEBSOCKET_CONNECTION_GAINED & String = js.native
+      
+      /* "websocket_connection_lost" */ val WEBSOCKET_CONNECTION_LOST: typings.amazonConnectStreams.connect.AgentEvents.WEBSOCKET_CONNECTION_LOST & String = js.native
     }
     
     /** This enumeration lists the different types of agent states. */
@@ -210,6 +253,8 @@ object global {
       @JSBracketAccess
       def apply(value: String): js.UndefOr[typings.amazonConnectStreams.connect.ConnectionStateType & String] = js.native
       
+      /* "barge" */ val BARGE: typings.amazonConnectStreams.connect.ConnectionStateType.BARGE & String = js.native
+      
       /* "connected" */ val CONNECTED: typings.amazonConnectStreams.connect.ConnectionStateType.CONNECTED & String = js.native
       
       /* "connecting" */ val CONNECTING: typings.amazonConnectStreams.connect.ConnectionStateType.CONNECTING & String = js.native
@@ -219,6 +264,8 @@ object global {
       /* "hold" */ val HOLD: typings.amazonConnectStreams.connect.ConnectionStateType.HOLD & String = js.native
       
       /* "init" */ val INIT: typings.amazonConnectStreams.connect.ConnectionStateType.INIT & String = js.native
+      
+      /* "silent_monitor" */ val SILENT_MONITOR: typings.amazonConnectStreams.connect.ConnectionStateType.SILENT_MONITOR & String = js.native
     }
     
     /** Lists the different types of connections. */
@@ -279,6 +326,10 @@ object global {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[typings.amazonConnectStreams.connect.ContactStateType & String] = js.native
+      
+      /* "acw" */ val ACW: typings.amazonConnectStreams.connect.ContactStateType.ACW & String = js.native
+      
+      /* "cleared" */ val CLEARED: typings.amazonConnectStreams.connect.ContactStateType.CLEARED & String = js.native
       
       /* "connected" */ val CONNECTED: typings.amazonConnectStreams.connect.ContactStateType.CONNECTED & String = js.native
       
@@ -465,6 +516,48 @@ object global {
       /* "update_connected_ccps" */ val UPDATE_CONNECTED_CCPS: typings.amazonConnectStreams.connect.EventType.UPDATE_CONNECTED_CCPS & String = js.native
     }
     
+    @JSGlobal("connect.LogLevel")
+    @js.native
+    object LogLevel extends StObject {
+      
+      @JSBracketAccess
+      def apply(value: String): js.UndefOr[typings.amazonConnectStreams.connect.LogLevel & String] = js.native
+      
+      /* "CRITICAL" */ val CRITICAL: typings.amazonConnectStreams.connect.LogLevel.CRITICAL & String = js.native
+      
+      /* "DEBUG" */ val DEBUG: typings.amazonConnectStreams.connect.LogLevel.DEBUG & String = js.native
+      
+      /* "ERROR" */ val ERROR: typings.amazonConnectStreams.connect.LogLevel.ERROR & String = js.native
+      
+      /* "INFO" */ val INFO: typings.amazonConnectStreams.connect.LogLevel.INFO & String = js.native
+      
+      /* "LOG" */ val LOG: typings.amazonConnectStreams.connect.LogLevel.LOG & String = js.native
+      
+      /* "TEST" */ val TEST: typings.amazonConnectStreams.connect.LogLevel.TEST & String = js.native
+      
+      /* "TRACE" */ val TRACE: typings.amazonConnectStreams.connect.LogLevel.TRACE & String = js.native
+      
+      /* "WARN" */ val WARN: typings.amazonConnectStreams.connect.LogLevel.WARN & String = js.native
+    }
+    
+    @JSGlobal("connect.MasterTopics")
+    @js.native
+    object MasterTopics extends StObject {
+      
+      @JSBracketAccess
+      def apply(value: String): js.UndefOr[typings.amazonConnectStreams.connect.MasterTopics & String] = js.native
+      
+      /* "loginPopup" */ val LOGIN_POPUP: typings.amazonConnectStreams.connect.MasterTopics.LOGIN_POPUP & String = js.native
+      
+      /* "metrics" */ val METRICS: typings.amazonConnectStreams.connect.MasterTopics.METRICS & String = js.native
+      
+      /* "ringtone" */ val RINGTONE: typings.amazonConnectStreams.connect.MasterTopics.RINGTONE & String = js.native
+      
+      /* "sendLogs" */ val SEND_LOGS: typings.amazonConnectStreams.connect.MasterTopics.SEND_LOGS & String = js.native
+      
+      /* "softphone" */ val SOFTPHONE: typings.amazonConnectStreams.connect.MasterTopics.SOFTPHONE & String = js.native
+    }
+    
     @JSGlobal("connect.MediaType")
     @js.native
     object MediaType extends StObject {
@@ -477,6 +570,18 @@ object global {
       /* "softphone" */ val SOFTPHONE: typings.amazonConnectStreams.connect.MediaType.SOFTPHONE & String = js.native
       
       /* "task" */ val TASK: typings.amazonConnectStreams.connect.MediaType.TASK & String = js.native
+    }
+    
+    @JSGlobal("connect.MonitoringMode")
+    @js.native
+    object MonitoringMode extends StObject {
+      
+      @JSBracketAccess
+      def apply(value: String): js.UndefOr[typings.amazonConnectStreams.connect.MonitoringMode & String] = js.native
+      
+      /* "BARGE" */ val BARGE: typings.amazonConnectStreams.connect.MonitoringMode.BARGE & String = js.native
+      
+      /* "SILENT_MONITOR" */ val SLIENT_MONITOR: typings.amazonConnectStreams.connect.MonitoringMode.SLIENT_MONITOR & String = js.native
     }
     
     @JSGlobal("connect.ReferenceType")
@@ -618,5 +723,15 @@ object global {
       * @param method The method to be encapsulated.
       */
     inline def hitch[T /* <: js.Function1[/* repeated */ Any, Any] */](scope: js.Object, method: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("hitch")(scope.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[T]
+    
+    /**
+      * Subscribe a method to be called when the WebSocket connection fails to initialize.
+      * If the WebSocket has already failed at least once in initializing, the call is
+      * synchronous and the callback is invoked immediately.  Otherwise, the callback is
+      * invoked once the first attempt to initialize fails.
+      * 
+      * @param callback A callback with no arguments
+      */
+    inline def onWebsocketInitFailure(callback: Callback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onWebsocketInitFailure")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

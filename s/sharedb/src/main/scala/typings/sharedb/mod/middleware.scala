@@ -118,10 +118,15 @@ object middleware {
   trait ApplyContext
     extends StObject
        with BaseContext
-       with SubmitRequest
+       with SubmitRequest {
+    
+    @JSName("$fixup")
+    def $fixup(op: Any): Unit
+  }
   object ApplyContext {
     
     inline def apply(
+      $fixup: Any => Unit,
       action: afterSubmit | afterWrite | apply | commit | connect | doc | op | query | readSnapshots | receive | receivePresence | reply | sendPresence | submit,
       agent: typings.sharedb.libAgentMod.^[Any],
       backend: sharedb,
@@ -136,8 +141,14 @@ object middleware {
       retries: Double,
       start: Double
     ): ApplyContext = {
-      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], collection = collection.asInstanceOf[js.Any], extra = extra.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], ops = ops.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], projection = projection.asInstanceOf[js.Any], retries = retries.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], channels = null, maxRetries = null, saveMilestoneSnapshot = null, snapshot = null, suppressPublish = null)
+      val __obj = js.Dynamic.literal($fixup = js.Any.fromFunction1($fixup), action = action.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], collection = collection.asInstanceOf[js.Any], extra = extra.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], ops = ops.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], projection = projection.asInstanceOf[js.Any], retries = retries.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], channels = null, maxRetries = null, saveMilestoneSnapshot = null, snapshot = null, suppressPublish = null)
       __obj.asInstanceOf[ApplyContext]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplyContext] (val x: Self) extends AnyVal {
+      
+      inline def set$fixup(value: Any => Unit): Self = StObject.set(x, "$fixup", js.Any.fromFunction1(value))
     }
   }
   
@@ -334,7 +345,12 @@ object middleware {
     extends StObject
        with BaseContext {
     
+    /**
+      * @deprecated Use channels property instead
+      */
     var channel: String
+    
+    var channels: js.Array[String]
     
     var collection: String
     
@@ -359,13 +375,14 @@ object middleware {
       agent: typings.sharedb.libAgentMod.^[Any],
       backend: sharedb,
       channel: String,
+      channels: js.Array[String],
       collection: String,
       fields: ProjectionFields,
       index: String,
       projection: ReadonlyProjection,
       query: Any
     ): QueryContext = {
-      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], channel = channel.asInstanceOf[js.Any], collection = collection.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], projection = projection.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], db = null, snapshotProjection = null)
+      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], channel = channel.asInstanceOf[js.Any], channels = channels.asInstanceOf[js.Any], collection = collection.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], projection = projection.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], db = null, snapshotProjection = null)
       __obj.asInstanceOf[QueryContext]
     }
     
@@ -373,6 +390,10 @@ object middleware {
     implicit open class MutableBuilder[Self <: QueryContext] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      
+      inline def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+      
+      inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value*))
       
       inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       

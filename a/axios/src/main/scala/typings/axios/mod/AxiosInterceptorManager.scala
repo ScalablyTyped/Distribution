@@ -24,14 +24,28 @@ trait AxiosInterceptorManager[V] extends StObject {
   ): Double = js.native
   def use(
     onFulfilled: js.Function1[/* value */ V, V | js.Promise[V]],
+    onRejected: Null,
+    options: AxiosInterceptorOptions
+  ): Double = js.native
+  def use(
+    onFulfilled: js.Function1[/* value */ V, V | js.Promise[V]],
     onRejected: Unit,
     options: AxiosInterceptorOptions
   ): Double = js.native
+  def use(onFulfilled: Null, onRejected: js.Function1[/* error */ Any, Any]): Double = js.native
+  def use(
+    onFulfilled: Null,
+    onRejected: js.Function1[/* error */ Any, Any],
+    options: AxiosInterceptorOptions
+  ): Double = js.native
+  def use(onFulfilled: Null, onRejected: Null, options: AxiosInterceptorOptions): Double = js.native
+  def use(onFulfilled: Null, onRejected: Unit, options: AxiosInterceptorOptions): Double = js.native
   def use(onFulfilled: Unit, onRejected: js.Function1[/* error */ Any, Any]): Double = js.native
   def use(
     onFulfilled: Unit,
     onRejected: js.Function1[/* error */ Any, Any],
     options: AxiosInterceptorOptions
   ): Double = js.native
+  def use(onFulfilled: Unit, onRejected: Null, options: AxiosInterceptorOptions): Double = js.native
   def use(onFulfilled: Unit, onRejected: Unit, options: AxiosInterceptorOptions): Double = js.native
 }

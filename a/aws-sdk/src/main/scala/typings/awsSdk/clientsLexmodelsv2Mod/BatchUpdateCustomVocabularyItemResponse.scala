@@ -7,27 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BatchUpdateCustomVocabularyItemResponse extends StObject {
   
   /**
-    * The unique identifier of the bot to the batch update response for the custom vocabulary item.
+    * The identifier of the bot associated with this custom vocabulary.
     */
   var botId: js.UndefOr[Id] = js.undefined
   
   /**
-    * The bot version of the bot to the batch update response for the custom vocabulary item.
+    * The identifier of the version of the bot associated with this custom vocabulary.
     */
   var botVersion: js.UndefOr[BotVersion] = js.undefined
   
   /**
-    * The errors of the action to batch update response for the custom vocabulary item.
+    * A list of custom vocabulary items that failed to update during the operation. The reason for the error is contained within each error object.
     */
   var errors: js.UndefOr[FailedCustomVocabularyItems] = js.undefined
   
   /**
-    * The locale identifier of the bot to the batch update response for the custom vocabulary item.
+    * The identifier of the language and locale where this custom vocabulary is used. The string must match one of the supported locales. For more information, see  Supported Languages .
     */
   var localeId: js.UndefOr[LocaleId] = js.undefined
   
   /**
-    * The resources of the action to batch update response for the custom vocabulary item.
+    * A list of custom vocabulary items that were successfully updated during the operation.
     */
   var resources: js.UndefOr[CustomVocabularyItems] = js.undefined
 }

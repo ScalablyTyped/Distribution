@@ -30,6 +30,14 @@ open class RetrievalQuery protected () extends Element[IModel] {
     container: AbstractElement[IAbstractModel, Container]
   ) = this()
   
+  /**
+    * In version 9.21.0: introduced
+    */
+  def allowedUserRoleSets: IList[UserRoleSet] = js.native
+  
+  /**
+    * In version 9.21.0: deleted
+    */
   def allowedUserRoles: IList[IUserRole] = js.native
   
   def allowedUserRolesQualifiedNames: js.Array[String] = js.native

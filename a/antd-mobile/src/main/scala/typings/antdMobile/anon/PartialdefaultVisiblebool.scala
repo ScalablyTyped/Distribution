@@ -57,7 +57,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<{  defaultVisible :boolean | undefined,   visible :boolean | undefined,   onVisibleChange :(visible : boolean): void | undefined,   getContainer :antd-mobile.antd-mobile/es/utils/render-to-container.GetContainer | undefined,   destroyOnHide :boolean | undefined,   children :react.react.ReactElement,   mode :'dark' | 'light' | undefined,   trigger :'click' | undefined,   placement :antd-mobile.antd-mobile/es/components/popover.DeprecatedPlacement | antd-mobile.antd-mobile/es/components/popover.Placement | undefined,   stopPropagation :std.Array<'click'> | undefined,   content :react.react.ReactNode,   className :string | undefined,   style :react.react.CSSProperties & std.Partial<std.Record<'--z-index', string>> | undefined,   tabIndex :number | undefined} & react.react.AriaAttributes & react.react.RefAttributes<antd-mobile.antd-mobile/es/components/popover/popover.PopoverRef>> */
+/* Inlined std.Partial<{  defaultVisible :boolean | undefined,   visible :boolean | undefined,   onVisibleChange :(visible : boolean): void | undefined,   getContainer :antd-mobile.antd-mobile/es/utils/render-to-container.GetContainer | undefined,   destroyOnHide :boolean | undefined,   children :react.react.ReactElement,   mode :'dark' | 'light' | undefined,   trigger :'click' | undefined,   placement :antd-mobile.antd-mobile/es/components/popover.DeprecatedPlacement | antd-mobile.antd-mobile/es/components/popover.Placement | undefined,   stopPropagation :std.Array<'click'> | undefined,   content :react.react.ReactNode,   className :string | undefined,   style :react.react.CSSProperties & std.Partial<std.Record<'--z-index' | '--arrow-size', string>> | undefined,   tabIndex :number | undefined} & react.react.AriaAttributes & react.react.RefAttributes<antd-mobile.antd-mobile/es/components/popover/popover.PopoverRef>> */
 trait PartialdefaultVisiblebool extends StObject {
   
   var `aria-activedescendant`: js.UndefOr[String] = js.undefined
@@ -182,7 +182,7 @@ trait PartialdefaultVisiblebool extends StObject {
   
   var stopPropagation: js.UndefOr[js.Array[click]] = js.undefined
   
-  var style: js.UndefOr[CSSPropertiesPartialRecorAlignmentBaseline] = js.undefined
+  var style: js.UndefOr[CSSPropertiesPartialRecorArrowsize] = js.undefined
   
   var tabIndex: js.UndefOr[Double] = js.undefined
   
@@ -454,7 +454,7 @@ object PartialdefaultVisiblebool {
     
     inline def setStopPropagationVarargs(value: click*): Self = StObject.set(x, "stopPropagation", js.Array(value*))
     
-    inline def setStyle(value: CSSPropertiesPartialRecorAlignmentBaseline): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSPropertiesPartialRecorArrowsize): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     

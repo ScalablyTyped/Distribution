@@ -57,7 +57,7 @@ trait Deployment extends StObject {
   var platformVersion: js.UndefOr[String] = js.undefined
   
   /**
-    *  The rolloutState of a service is only returned for services that use the rolling update (ECS) deployment type that aren't behind a Classic Load Balancer.  The rollout state of the deployment. When a service deployment is started, it begins in an IN_PROGRESS state. When the service reaches a steady state, the deployment transitions to a COMPLETED state. If the service fails to reach a steady state and circuit breaker is enabled, the deployment transitions to a FAILED state. A deployment in FAILED state doesn't launch any new tasks. For more information, see DeploymentCircuitBreaker.
+    *  The rolloutState of a service is only returned for services that use the rolling update (ECS) deployment type that aren't behind a Classic Load Balancer.  The rollout state of the deployment. When a service deployment is started, it begins in an IN_PROGRESS state. When the service reaches a steady state, the deployment transitions to a COMPLETED state. If the service fails to reach a steady state and circuit breaker is turned on, the deployment transitions to a FAILED state. A deployment in FAILED state doesn't launch any new tasks. For more information, see DeploymentCircuitBreaker.
     */
   var rolloutState: js.UndefOr[DeploymentRolloutState] = js.undefined
   
@@ -70,6 +70,16 @@ trait Deployment extends StObject {
     * The number of tasks in the deployment that are in the RUNNING status.
     */
   var runningCount: js.UndefOr[Integer] = js.undefined
+  
+  /**
+    * The details of the Service Connect configuration that's used by this deployment. Compare the configuration between multiple deployments when troubleshooting issues with new deployments. The configuration for this service to discover and connect to services, and be discovered by, and connected from, other services within a namespace. Tasks that run in a namespace can use short names to connect to services in the namespace. Tasks can connect to services across all of the clusters in the namespace. Tasks connect through a managed proxy container that collects logs and metrics for increased visibility. Only the tasks that Amazon ECS services create are supported with Service Connect. For more information, see Service Connect in the Amazon Elastic Container Service Developer Guide.
+    */
+  var serviceConnectConfiguration: js.UndefOr[ServiceConnectConfiguration] = js.undefined
+  
+  /**
+    * The list of Service Connect resources that are associated with this deployment. Each list entry maps a discovery name to a Cloud Map service name.
+    */
+  var serviceConnectResources: js.UndefOr[ServiceConnectServiceResourceList] = js.undefined
   
   /**
     * The status of the deployment. The following describes each state.  PRIMARY  The most recent deployment of a service.  ACTIVE  A service deployment that still has running tasks, but are in the process of being replaced with a new PRIMARY deployment.  INACTIVE  A deployment that has been completely replaced.  
@@ -149,6 +159,16 @@ object Deployment {
     inline def setRunningCount(value: Integer): Self = StObject.set(x, "runningCount", value.asInstanceOf[js.Any])
     
     inline def setRunningCountUndefined: Self = StObject.set(x, "runningCount", js.undefined)
+    
+    inline def setServiceConnectConfiguration(value: ServiceConnectConfiguration): Self = StObject.set(x, "serviceConnectConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setServiceConnectConfigurationUndefined: Self = StObject.set(x, "serviceConnectConfiguration", js.undefined)
+    
+    inline def setServiceConnectResources(value: ServiceConnectServiceResourceList): Self = StObject.set(x, "serviceConnectResources", value.asInstanceOf[js.Any])
+    
+    inline def setServiceConnectResourcesUndefined: Self = StObject.set(x, "serviceConnectResources", js.undefined)
+    
+    inline def setServiceConnectResourcesVarargs(value: ServiceConnectServiceResource*): Self = StObject.set(x, "serviceConnectResources", js.Array(value*))
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

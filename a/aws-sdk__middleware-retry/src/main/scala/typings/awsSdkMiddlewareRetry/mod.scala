@@ -4,7 +4,6 @@ import typings.awsSdkMiddlewareRetry.distTypesAdaptiveRetryStrategyMod.AdaptiveR
 import typings.awsSdkMiddlewareRetry.distTypesConfigurationsMod.PreviouslyResolved
 import typings.awsSdkMiddlewareRetry.distTypesConfigurationsMod.RetryInputConfig
 import typings.awsSdkMiddlewareRetry.distTypesConfigurationsMod.RetryResolvedConfig
-import typings.awsSdkMiddlewareRetry.distTypesDefaultRateLimiterMod.DefaultRateLimiterOptions
 import typings.awsSdkMiddlewareRetry.distTypesStandardRetryStrategyMod.StandardRetryStrategyOptions
 import typings.awsSdkNodeConfigProvider.distTypesConfigLoaderMod.LoadedConfigSelectors
 import typings.awsSdkTypes.distTypesMiddlewareMod.AbsoluteLocation
@@ -42,21 +41,6 @@ object mod {
   @js.native
   val CONFIG_RETRY_MODE: /* "retry_mode" */ String = js.native
   
-  @JSImport("@aws-sdk/middleware-retry", "DEFAULT_MAX_ATTEMPTS")
-  @js.native
-  val DEFAULT_MAX_ATTEMPTS: /* 3 */ Double = js.native
-  
-  @JSImport("@aws-sdk/middleware-retry", "DEFAULT_RETRY_MODE")
-  @js.native
-  val DEFAULT_RETRY_MODE: String | Double = js.native
-  
-  @JSImport("@aws-sdk/middleware-retry", "DefaultRateLimiter")
-  @js.native
-  open class DefaultRateLimiter ()
-    extends typings.awsSdkMiddlewareRetry.distTypesDefaultRateLimiterMod.DefaultRateLimiter {
-    def this(options: DefaultRateLimiterOptions) = this()
-  }
-  
   @JSImport("@aws-sdk/middleware-retry", "ENV_MAX_ATTEMPTS")
   @js.native
   val ENV_MAX_ATTEMPTS: /* "AWS_MAX_ATTEMPTS" */ String = js.native
@@ -73,18 +57,6 @@ object mod {
   @js.native
   val NODE_RETRY_MODE_CONFIG_OPTIONS: LoadedConfigSelectors[String] = js.native
   
-  @JSImport("@aws-sdk/middleware-retry", "RETRY_MODES")
-  @js.native
-  object RETRY_MODES extends StObject {
-    
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.awsSdkMiddlewareRetry.distTypesConfigMod.RETRY_MODES & String] = js.native
-    
-    /* "adaptive" */ val ADAPTIVE: typings.awsSdkMiddlewareRetry.distTypesConfigMod.RETRY_MODES.ADAPTIVE & String = js.native
-    
-    /* "standard" */ val STANDARD: typings.awsSdkMiddlewareRetry.distTypesConfigMod.RETRY_MODES.STANDARD & String = js.native
-  }
-  
   @JSImport("@aws-sdk/middleware-retry", "StandardRetryStrategy")
   @js.native
   open class StandardRetryStrategy protected ()
@@ -98,6 +70,8 @@ object mod {
   inline def defaultRetryDecider(error: SdkError): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRetryDecider")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def getOmitRetryHeadersPlugin(options: Any): Pluggable[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOmitRetryHeadersPlugin")(options.asInstanceOf[js.Any]).asInstanceOf[Pluggable[Any, Any]]
+  
+  inline def getRetryAfterHint(response: Any): js.UndefOr[js.Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRetryAfterHint")(response.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Date]]
   
   inline def getRetryPlugin(options: RetryResolvedConfig): Pluggable[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRetryPlugin")(options.asInstanceOf[js.Any]).asInstanceOf[Pluggable[Any, Any]]
   

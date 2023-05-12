@@ -1176,7 +1176,7 @@ object distConstantsDomEventsMod {
   */
   trait DomEventName extends StObject
   
-  type DomEventNameWithModifier = DomEventName | (/* template literal string: ${DomEventName}.${typeofsystemKeyModifiers[number]} */ String)
+  type DomEventNameWithModifier = DomEventName | (/* template literal string: ${DomEventName}.${(typeofsystemKeyModifiers)[number]} */ String)
   
   /* Rewritten from type alias, can be one of: 
     - typings.vueTestUtils.vueTestUtilsStrings.AnimationEvent

@@ -1,7 +1,7 @@
 
 # Scala.js typings for antv__attr
 
-Typings are for version 0.3.3
+Typings are for version 0.3.5
 
 ## Library description:
 The Attribute module for G2, F2.

@@ -1,54 +1,62 @@
 package typings.gestalt.mod
 
-import typings.gestalt.gestaltStrings.circle
+import typings.gestalt.anon.HrefLabel
+import typings.gestalt.anon.OnClickText
+import typings.gestalt.anon.OnDismiss
 import typings.gestalt.gestaltStrings.default
 import typings.gestalt.gestaltStrings.error
-import typings.gestalt.gestaltStrings.rectangle
-import typings.gestalt.gestaltStrings.square
-import typings.react.mod.ReactNode
+import typings.gestalt.gestaltStrings.progress
+import typings.gestalt.gestaltStrings.success
+import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ToastProps extends StObject {
   
-  var button: js.UndefOr[ReactNode] = js.undefined
+  var dissmissButton: js.UndefOr[OnDismiss] = js.undefined
   
-  var text: js.UndefOr[String | ReactNode] = js.undefined
+  var helperLink: js.UndefOr[OnClickText] = js.undefined
   
-  var thumbnail: js.UndefOr[ReactNode] = js.undefined
+  var primaryAction: js.UndefOr[HrefLabel] = js.undefined
   
-  var thumbnailShape: js.UndefOr[circle | rectangle | square] = js.undefined
+  var text: String | ReactElement
   
-  var variant: js.UndefOr[default | error] = js.undefined
+  var thumbnail: js.UndefOr[
+    typings.gestalt.anon.Image | typings.gestalt.anon.Avatar | typings.gestalt.anon.Icon
+  ] = js.undefined
+  
+  var variant: js.UndefOr[default | success | error | progress] = js.undefined
 }
 object ToastProps {
   
-  inline def apply(): ToastProps = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(text: String | ReactElement): ToastProps = {
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToastProps]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: ToastProps] (val x: Self) extends AnyVal {
     
-    inline def setButton(value: ReactNode): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setDissmissButton(value: OnDismiss): Self = StObject.set(x, "dissmissButton", value.asInstanceOf[js.Any])
     
-    inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    inline def setDissmissButtonUndefined: Self = StObject.set(x, "dissmissButton", js.undefined)
     
-    inline def setText(value: String | ReactNode): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setHelperLink(value: OnClickText): Self = StObject.set(x, "helperLink", value.asInstanceOf[js.Any])
     
-    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setHelperLinkUndefined: Self = StObject.set(x, "helperLink", js.undefined)
     
-    inline def setThumbnail(value: ReactNode): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    inline def setPrimaryAction(value: HrefLabel): Self = StObject.set(x, "primaryAction", value.asInstanceOf[js.Any])
     
-    inline def setThumbnailShape(value: circle | rectangle | square): Self = StObject.set(x, "thumbnailShape", value.asInstanceOf[js.Any])
+    inline def setPrimaryActionUndefined: Self = StObject.set(x, "primaryAction", js.undefined)
     
-    inline def setThumbnailShapeUndefined: Self = StObject.set(x, "thumbnailShape", js.undefined)
+    inline def setText(value: String | ReactElement): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setThumbnail(value: typings.gestalt.anon.Image | typings.gestalt.anon.Avatar | typings.gestalt.anon.Icon): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
     inline def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
     
-    inline def setVariant(value: default | error): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: default | success | error | progress): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
   }

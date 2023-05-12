@@ -32,6 +32,7 @@ object buildSrcCallCredentialsFilterMod {
     /* private */ val channel: Any = js.native
     
     /* CompleteClass */
-    override def createFilter(callStream: Call): CallCredentialsFilter = js.native
+    override def createFilter(): CallCredentialsFilter = js.native
+    def createFilter(callStream: Call): CallCredentialsFilter = js.native
   }
 }

@@ -184,6 +184,10 @@ object carbonComponentsReactStrings {
   inline def animateTransform: animateTransform = "animateTransform".asInstanceOf[animateTransform]
   
   @js.native
+  sealed trait anonymous extends StObject
+  inline def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
+  
+  @js.native
   sealed trait area extends StObject
   inline def area: area = "area".asInstanceOf[area]
   
@@ -2138,6 +2142,10 @@ object carbonComponentsReactStrings {
   @js.native
   sealed trait use extends StObject
   inline def use: use = "use".asInstanceOf[use]
+  
+  @js.native
+  sealed trait `use-credentials` extends StObject
+  inline def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
   
   @js.native
   sealed trait user extends StObject

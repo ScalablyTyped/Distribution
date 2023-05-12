@@ -8,10 +8,16 @@ trait AttachmentSession
   extends StObject
      with Entity {
   
+  // The content streams that are uploaded.
   var content: js.UndefOr[NullableOption[Any]] = js.undefined
   
+  /**
+    * The date and time in UTC when the upload session will expire. The complete file must be uploaded before this expiration
+    * time is reached.
+    */
   var expirationDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // Indicates a single value {start} that represents the location in the file where the next upload should begin.
   var nextExpectedRanges: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
 }
 object AttachmentSession {

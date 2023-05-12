@@ -16,7 +16,7 @@ open class MjmlButton protected ()
   def this(props: MjmlButtonProps & PaddingProps & ClassNameProps & HrefProps & BorderProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: MjmlButtonProps & PaddingProps & ClassNameProps & HrefProps & BorderProps, context: Any) = this()
 }

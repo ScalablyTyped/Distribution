@@ -12,7 +12,7 @@ open class AreaGroup protected ()
   def this(props: AreaGroupProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: AreaGroupProps, context: Any) = this()
 }

@@ -36,6 +36,20 @@ trait Logger extends StObject {
   def info(template: String, args: Any*): LogEntry
   
   /**
+    * Set the echo level.  This is the minimum level at which logs will
+    * be printed to the javascript console.
+    * @param level The log level.
+    */
+  def setEchoLevel(level: LogLevel): Unit
+  
+  /**
+    * Set the log level.  This is the minimum level at which logs will
+    * be kept for later archiving.
+    * @param level The log level.
+    */
+  def setLogLevel(level: LogLevel): Unit
+  
+  /**
     * Adds a log entry with warn level.
     * @param template The `printf`-style template.
     * @param args The arguments to the template.
@@ -49,9 +63,11 @@ object Logger {
     download: () => Unit,
     error: (String, /* repeated */ Any) => LogEntry,
     info: (String, /* repeated */ Any) => LogEntry,
+    setEchoLevel: LogLevel => Unit,
+    setLogLevel: LogLevel => Unit,
     warn: (String, /* repeated */ Any) => LogEntry
   ): Logger = {
-    val __obj = js.Dynamic.literal(debug = js.Any.fromFunction2(debug), download = js.Any.fromFunction0(download), error = js.Any.fromFunction2(error), info = js.Any.fromFunction2(info), warn = js.Any.fromFunction2(warn))
+    val __obj = js.Dynamic.literal(debug = js.Any.fromFunction2(debug), download = js.Any.fromFunction0(download), error = js.Any.fromFunction2(error), info = js.Any.fromFunction2(info), setEchoLevel = js.Any.fromFunction1(setEchoLevel), setLogLevel = js.Any.fromFunction1(setLogLevel), warn = js.Any.fromFunction2(warn))
     __obj.asInstanceOf[Logger]
   }
   
@@ -65,6 +81,10 @@ object Logger {
     inline def setError(value: (String, /* repeated */ Any) => LogEntry): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
     
     inline def setInfo(value: (String, /* repeated */ Any) => LogEntry): Self = StObject.set(x, "info", js.Any.fromFunction2(value))
+    
+    inline def setSetEchoLevel(value: LogLevel => Unit): Self = StObject.set(x, "setEchoLevel", js.Any.fromFunction1(value))
+    
+    inline def setSetLogLevel(value: LogLevel => Unit): Self = StObject.set(x, "setLogLevel", js.Any.fromFunction1(value))
     
     inline def setWarn(value: (String, /* repeated */ Any) => LogEntry): Self = StObject.set(x, "warn", js.Any.fromFunction2(value))
   }

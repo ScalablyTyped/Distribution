@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@firebase/auth-compat" : "0.2.24"
+      "@firebase/auth-compat" : "0.4.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@firebase/auth-compat" : "0.2.24"
+      "@firebase/auth-compat" : "0.4.1"
     }
   ],
   "compile-devDependencies" : [

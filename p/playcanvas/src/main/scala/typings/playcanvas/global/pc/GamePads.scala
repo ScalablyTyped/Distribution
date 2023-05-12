@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Input handler for accessing GamePad input.
+  *
+  * @augments EventHandler
   */
 @JSGlobal("pc.GamePads")
 @js.native

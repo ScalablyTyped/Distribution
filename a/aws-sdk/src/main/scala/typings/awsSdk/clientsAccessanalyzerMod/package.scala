@@ -110,6 +110,7 @@ type FindingSourceList = js.Array[FindingSource]
   - typings.awsSdk.awsSdkStrings.POLICY
   - typings.awsSdk.awsSdkStrings.BUCKET_ACL
   - typings.awsSdk.awsSdkStrings.S3_ACCESS_POINT
+  - typings.awsSdk.awsSdkStrings.S3_ACCESS_POINT_ACCOUNT
   - java.lang.String
 */
 type FindingSourceType = _FindingSourceType | java.lang.String
@@ -175,7 +176,7 @@ type KmsGrantConfigurationsList = js.Array[KmsGrantConfiguration]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CreateGrant
-  - typings.awsSdk.awsSdkStrings.Decrypt
+  - typings.awsSdk.awsSdkStrings.Decrypt_
   - typings.awsSdk.awsSdkStrings.DescribeKey
   - typings.awsSdk.awsSdkStrings.Encrypt
   - typings.awsSdk.awsSdkStrings.GenerateDataKey

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "shiki" : "0.11.1"
+      "shiki" : "0.14.2"
     }
   ],
   "test-dependencies" : [
     {
-      "shiki" : "0.11.1"
+      "shiki" : "0.14.2"
     }
   ],
   "compile-devDependencies" : [

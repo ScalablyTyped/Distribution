@@ -1,5 +1,6 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings._empty
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.action_required
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.cancelled
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.completed
@@ -8,6 +9,8 @@ import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.in_progress
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.neutral
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.queued_
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.skipped
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.stale
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.startup_failure
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.success
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.timed_out
 import org.scalablytyped.runtime.StObject
@@ -30,7 +33,7 @@ trait Checkrunsurl extends StObject {
     * @example neutral
     * @enum {string|null}
     */
-  var conclusion: success | failure | neutral | cancelled | skipped | timed_out | action_required | Null
+  var conclusion: success | failure | neutral | cancelled | skipped | timed_out | action_required | startup_failure | stale | _empty | Null
   
   /** Format: date-time */
   var created_at: String | Null
@@ -106,7 +109,9 @@ object Checkrunsurl {
     
     inline def setCheck_runs_url(value: String): Self = StObject.set(x, "check_runs_url", value.asInstanceOf[js.Any])
     
-    inline def setConclusion(value: success | failure | neutral | cancelled | skipped | timed_out | action_required): Self = StObject.set(x, "conclusion", value.asInstanceOf[js.Any])
+    inline def setConclusion(
+      value: success | failure | neutral | cancelled | skipped | timed_out | action_required | startup_failure | stale | _empty
+    ): Self = StObject.set(x, "conclusion", value.asInstanceOf[js.Any])
     
     inline def setConclusionNull: Self = StObject.set(x, "conclusion", null)
     

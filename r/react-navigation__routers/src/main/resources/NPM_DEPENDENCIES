@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-navigation/routers" : "6.1.3"
+      "@react-navigation/routers" : "6.1.8"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-navigation/routers" : "6.1.3"
+      "@react-navigation/routers" : "6.1.8"
     }
   ],
   "compile-devDependencies" : [

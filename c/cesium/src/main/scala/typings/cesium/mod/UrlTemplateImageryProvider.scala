@@ -12,7 +12,7 @@ open class UrlTemplateImageryProvider protected () extends StObject {
   
   /**
     * Gets the credit to display when this imagery provider is active.  Typically this is used to credit
-    * the source of the imagery.  This function should not be called before {@link UrlTemplateImageryProvider#ready} returns true.
+    * the source of the imagery.
     */
   val credit: Credit = js.native
   
@@ -102,26 +102,23 @@ open class UrlTemplateImageryProvider protected () extends StObject {
     * include an alpha channel.  If this property is false, an alpha channel, if present, will
     * be ignored.  If this property is true, any images without an alpha channel will be treated
     * as if their alpha is 1.0 everywhere.  When this property is false, memory usage
-    * and texture upload time are reduced.  This function should
-    * not be called before {@link ImageryProvider#ready} returns true.
+    * and texture upload time are reduced.
     */
   val hasAlphaChannel: Boolean = js.native
   
   /**
     * Gets the maximum level-of-detail that can be requested, or undefined if there is no limit.
-    * This function should not be called before {@link UrlTemplateImageryProvider#ready} returns true.
     */
   val maximumLevel: js.UndefOr[Double] = js.native
   
   /**
-    * Gets the minimum level-of-detail that can be requested.  This function should
-    * not be called before {@link UrlTemplateImageryProvider#ready} returns true.
+    * Gets the minimum level-of-detail that can be requested.
     */
   val minimumLevel: Double = js.native
   
   /**
     * Asynchronously determines what features, if any, are located at a given longitude and latitude within
-    * a tile.  This function should not be called before {@link ImageryProvider#ready} returns true.
+    * a tile.
     * @param x - The tile X coordinate.
     * @param y - The tile Y coordinate.
     * @param level - The tile level.
@@ -169,8 +166,7 @@ open class UrlTemplateImageryProvider protected () extends StObject {
   val readyPromise: js.Promise[Boolean] = js.native
   
   /**
-    * Gets the rectangle, in radians, of the imagery provided by this instance.  This function should
-    * not be called before {@link UrlTemplateImageryProvider#ready} returns true.
+    * Gets the rectangle, in radians, of the imagery provided by this instance.
     */
   val rectangle: Rectangle = js.native
   
@@ -183,8 +179,6 @@ open class UrlTemplateImageryProvider protected () extends StObject {
   def reinitialize(options: Any): Unit = js.native
   
   /**
-    * Requests the image for a given tile.  This function should
-    * not be called before {@link UrlTemplateImageryProvider#ready} returns true.
     * @param x - The tile X coordinate.
     * @param y - The tile Y coordinate.
     * @param level - The tile level.
@@ -198,26 +192,22 @@ open class UrlTemplateImageryProvider protected () extends StObject {
   /**
     * Gets the tile discard policy.  If not undefined, the discard policy is responsible
     * for filtering out "missing" tiles via its shouldDiscardImage function.  If this function
-    * returns undefined, no tiles are filtered.  This function should
-    * not be called before {@link UrlTemplateImageryProvider#ready} returns true.
+    * returns undefined, no tiles are filtered.
     */
   val tileDiscardPolicy: TileDiscardPolicy = js.native
   
   /**
-    * Gets the height of each tile, in pixels.  This function should
-    * not be called before {@link UrlTemplateImageryProvider#ready} returns true.
+    * Gets the height of each tile, in pixels.
     */
   val tileHeight: Double = js.native
   
   /**
-    * Gets the width of each tile, in pixels. This function should
-    * not be called before {@link UrlTemplateImageryProvider#ready} returns true.
+    * Gets the width of each tile, in pixels.
     */
   val tileWidth: Double = js.native
   
   /**
-    * Gets the tiling scheme used by this provider.  This function should
-    * not be called before {@link UrlTemplateImageryProvider#ready} returns true.
+    * Gets the tiling scheme used by this provider.
     */
   val tilingScheme: TilingScheme = js.native
   
@@ -347,6 +337,7 @@ object UrlTemplateImageryProvider {
     *        source does not support picking features or if you don't want this provider's features to be pickable. Note
     *        that this can be dynamically overridden by modifying the {@link UriTemplateImageryProvider#enablePickFeatures}
     *        property.
+    * @property [tileDiscardPolicy] - A policy for discarding tile images according to some criteria
     * @property [customTags] - Allow to replace custom keywords in the URL template. The object must have strings as keys and functions as values.
     */
   trait ConstructorOptions extends StObject {
@@ -374,6 +365,8 @@ object UrlTemplateImageryProvider {
     var rectangle: js.UndefOr[Rectangle] = js.undefined
     
     var subdomains: js.UndefOr[String | js.Array[String]] = js.undefined
+    
+    var tileDiscardPolicy: js.UndefOr[TileDiscardPolicy] = js.undefined
     
     var tileHeight: js.UndefOr[Double] = js.undefined
     
@@ -446,6 +439,10 @@ object UrlTemplateImageryProvider {
       inline def setSubdomainsUndefined: Self = StObject.set(x, "subdomains", js.undefined)
       
       inline def setSubdomainsVarargs(value: String*): Self = StObject.set(x, "subdomains", js.Array(value*))
+      
+      inline def setTileDiscardPolicy(value: TileDiscardPolicy): Self = StObject.set(x, "tileDiscardPolicy", value.asInstanceOf[js.Any])
+      
+      inline def setTileDiscardPolicyUndefined: Self = StObject.set(x, "tileDiscardPolicy", js.undefined)
       
       inline def setTileHeight(value: Double): Self = StObject.set(x, "tileHeight", value.asInstanceOf[js.Any])
       

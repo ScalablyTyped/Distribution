@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@azure/core-paging" : "1.3.0"
+      "@azure/core-paging" : "1.5.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@azure/core-paging" : "1.3.0"
+      "@azure/core-paging" : "1.5.0"
     }
   ],
   "compile-devDependencies" : [

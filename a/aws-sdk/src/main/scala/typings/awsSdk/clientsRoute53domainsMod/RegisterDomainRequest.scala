@@ -12,7 +12,7 @@ trait RegisterDomainRequest extends StObject {
   var AdminContact: ContactDetail
   
   /**
-    * Indicates whether the domain will be automatically renewed (true) or not (false). Autorenewal only takes effect after the account is charged. Default: true 
+    * Indicates whether the domain will be automatically renewed (true) or not (false). Auto renewal only takes effect after the account is charged. Default: true 
     */
   var AutoRenew: js.UndefOr[Boolean] = js.undefined
   

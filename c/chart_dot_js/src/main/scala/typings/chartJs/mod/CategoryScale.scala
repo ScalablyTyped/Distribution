@@ -1,12 +1,12 @@
 package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.chartJs.typesBasicMod.AnyObject
+import typings.chartJs.distTypesBasicMod.AnyObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined chart.js.chart.js.ChartComponent & {  prototype :chart.js.chart.js.CategoryScale<chart.js.chart.js.CategoryScaleOptions>, new <O extends chart.js.chart.js.CategoryScaleOptions = chart.js.chart.js.CategoryScaleOptions>(cfg : chart.js.chart.js/types/basic.AnyObject): chart.js.chart.js.CategoryScale<O>} */
+/* Inlined chart.js.chart.js/dist/types/index.ChartComponent & {  prototype :chart.js.chart.js/dist/types/index.CategoryScale<chart.js.chart.js/dist/types/index.CategoryScaleOptions>, new <O extends chart.js.chart.js/dist/types/index.CategoryScaleOptions = chart.js.chart.js/dist/types/index.CategoryScaleOptions>(cfg : chart.js.chart.js/dist/types/basic.AnyObject): chart.js.chart.js/dist/types/index.CategoryScale<O>} */
 object CategoryScale {
   
   @JSImport("chart.js", "CategoryScale")

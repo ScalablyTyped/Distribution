@@ -77,6 +77,11 @@ object typesRatelimiterMod {
       */
     /* CompleteClass */
     override val isDisposed: Boolean = js.native
+    /**
+      * Whether the rate limiter is disposed.
+      */
+    @JSName("isDisposed")
+    def isDisposed_MRateLimiter: Boolean = js.native
     
     /**
       * The rate limit in milliseconds.

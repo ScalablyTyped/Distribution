@@ -12,7 +12,7 @@ object mod {
     * @param compare Optional comparison function, same semantics as array.sort().
     * @returns An empty tree ordered by `compare`.
     */
-  // tslint:disable-next-line:no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   inline def apply[K, V](): Tree[K, V] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Tree[K, V]]
   inline def apply[K, V](compare: js.Function2[/* key1 */ K, /* key2 */ K, Double]): Tree[K, V] = ^.asInstanceOf[js.Dynamic].apply(compare.asInstanceOf[js.Any]).asInstanceOf[Tree[K, V]]
   

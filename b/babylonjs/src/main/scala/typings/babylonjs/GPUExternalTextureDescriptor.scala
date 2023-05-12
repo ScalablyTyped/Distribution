@@ -1,5 +1,6 @@
 package typings.babylonjs
 
+import typings.std.PredefinedColorSpace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ trait GPUExternalTextureDescriptor
   extends StObject
      with GPUObjectDescriptorBase {
   
-  var colorSpace: js.UndefOr[GPUPredefinedColorSpace] = js.undefined
+  var colorSpace: js.UndefOr[PredefinedColorSpace] = js.undefined
   
   var source: HTMLVideoElement
 }
@@ -22,7 +23,7 @@ object GPUExternalTextureDescriptor {
   @scala.inline
   implicit open class MutableBuilder[Self <: GPUExternalTextureDescriptor] (val x: Self) extends AnyVal {
     
-    inline def setColorSpace(value: GPUPredefinedColorSpace): Self = StObject.set(x, "colorSpace", value.asInstanceOf[js.Any])
+    inline def setColorSpace(value: PredefinedColorSpace): Self = StObject.set(x, "colorSpace", value.asInstanceOf[js.Any])
     
     inline def setColorSpaceUndefined: Self = StObject.set(x, "colorSpace", js.undefined)
     

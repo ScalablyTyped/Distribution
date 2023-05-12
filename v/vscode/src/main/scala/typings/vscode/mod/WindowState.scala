@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WindowState extends StObject {
   
   /**
-    * Whether the current window is focused.
-    */
+  		 * Whether the current window is focused.
+  		 */
   val focused: Boolean
 }
 object WindowState {

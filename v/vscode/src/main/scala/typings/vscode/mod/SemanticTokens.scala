@@ -11,15 +11,15 @@ open class SemanticTokens protected () extends StObject {
   def this(data: js.typedarray.Uint32Array, resultId: String) = this()
   
   /**
-    * The actual tokens data.
-    * @see {@link DocumentSemanticTokensProvider.provideDocumentSemanticTokens provideDocumentSemanticTokens} for an explanation of the format.
-    */
+  		 * The actual tokens data.
+  		 * @see {@link DocumentSemanticTokensProvider.provideDocumentSemanticTokens provideDocumentSemanticTokens} for an explanation of the format.
+  		 */
   val data: js.typedarray.Uint32Array = js.native
   
   /**
-    * The result id of the tokens.
-    *
-    * This is the id that will be passed to `DocumentSemanticTokensProvider.provideDocumentSemanticTokensEdits` (if implemented).
-    */
+  		 * The result id of the tokens.
+  		 *
+  		 * This is the id that will be passed to `DocumentSemanticTokensProvider.provideDocumentSemanticTokensEdits` (if implemented).
+  		 */
   val resultId: js.UndefOr[String] = js.native
 }

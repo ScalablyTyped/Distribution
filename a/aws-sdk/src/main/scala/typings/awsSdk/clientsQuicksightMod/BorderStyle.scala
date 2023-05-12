@@ -9,7 +9,7 @@ trait BorderStyle extends StObject {
   /**
     * The option to enable display of borders for visuals.
     */
-  var Show: js.UndefOr[scala.Boolean] = js.undefined
+  var Show: js.UndefOr[Boolean] = js.undefined
 }
 object BorderStyle {
   
@@ -21,7 +21,7 @@ object BorderStyle {
   @scala.inline
   implicit open class MutableBuilder[Self <: BorderStyle] (val x: Self) extends AnyVal {
     
-    inline def setShow(value: scala.Boolean): Self = StObject.set(x, "Show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "Show", value.asInstanceOf[js.Any])
     
     inline def setShowUndefined: Self = StObject.set(x, "Show", js.undefined)
   }

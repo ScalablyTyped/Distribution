@@ -10,7 +10,7 @@ open class Spinner protected () extends _MDLComponent[SpinnerProps] {
   def this(props: SpinnerProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: SpinnerProps, context: Any) = this()
 }

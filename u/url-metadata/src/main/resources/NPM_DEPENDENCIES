@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "url-metadata" : "2.5.0"
+      "url-metadata" : "3.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "url-metadata" : "2.5.0"
+      "url-metadata" : "3.0.1"
     }
   ],
   "compile-devDependencies" : [

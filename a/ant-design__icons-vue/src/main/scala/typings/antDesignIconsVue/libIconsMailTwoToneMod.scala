@@ -16,7 +16,7 @@ object libIconsMailTwoToneMod extends Shortcut {
   @js.native
   trait MailTwoToneIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_MailTwoToneIconType: String = js.native

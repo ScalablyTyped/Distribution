@@ -12,12 +12,12 @@ trait PutChannelMembershipPreferencesRequest extends StObject {
   var ChannelArn: ChimeArn
   
   /**
-    * The AppInstanceUserARN of the user making the API call.
+    * The ARN of the AppInstanceUser or AppInstanceBot that makes the API call.
     */
   var ChimeBearer: ChimeArn
   
   /**
-    * The AppInstanceUserArn of the member setting the preferences.
+    * The ARN of the member setting the preferences.
     */
   var MemberArn: ChimeArn
   

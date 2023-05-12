@@ -37,7 +37,7 @@ trait Procedure
   var basedOn: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * If the use case requires attributes from the BodySite resource (e.g. to identify and track separately) then use the standard extension [procedure-targetbodystructure](extension-procedure-targetbodystructure.html).
+    * If the use case requires attributes from the BodySite resource (e.g. to identify and track separately) then use the standard extension [http://hl7.org/fhir/StructureDefinition/procedure-targetBodyStructure](http://hl7.org/fhir/extensions/StructureDefinition-procedure-targetBodyStructure.html).
     */
   var bodySite: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
@@ -52,14 +52,9 @@ trait Procedure
   var code: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * If complications are only expressed by the narrative text, they can be captured using the CodeableConcept.text.
+    * If complications are only expressed by the narrative text, they can be captured using the CodeableReference.concept.text.
     */
-  var complication: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
-  
-  /**
-    * Any complications that occurred during the procedure, or in the immediate post-performance period.
-    */
-  var complicationDetail: js.UndefOr[js.Array[Reference]] = js.undefined
+  var complication: js.UndefOr[js.Array[CodeableReference]] = js.undefined
   
   /**
     * This will typically be the encounter the event occurred within, but some activities may be initiated prior to or after the official completion of an encounter but still be tied to the context of the encounter.
@@ -70,6 +65,11 @@ trait Procedure
     * A device that is implanted, removed or otherwise manipulated (calibration, battery replacement, fitting a prosthesis, attaching a wound-vac, etc.) as a focal portion of the Procedure.
     */
   var focalDevice: js.UndefOr[js.Array[ProcedureFocalDevice]] = js.undefined
+  
+  /**
+    * Who is the target of the procedure when it is not the subject of record only.  If focus is not present, then subject is the focus.  If focus is present and the subject is one of the targets of the procedure, include subject as a focus as well. If focus is present and the subject is not included in focus, it implies that the procedure was only targeted on the focus. For example, when a caregiver is given education for a patient, the caregiver would be the focus and the procedure record is associated with the subject (e.g. patient).  For example, use focus when recording the target of the education, training, or counseling is the parent or relative of a patient.
+    */
+  var focus: js.UndefOr[Reference] = js.undefined
   
   /**
     * If the procedure required specific follow up - e.g. removal of sutures. The follow up may be represented as a simple note or could potentially be more complex, in which case the CarePlan resource can be used.
@@ -148,12 +148,12 @@ trait Procedure
   var partOf: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * Limited to "real" people rather than equipment.
+    * Indicates who or what performed the procedure and how they were involved.
     */
   var performer: js.UndefOr[js.Array[ProcedurePerformer]] = js.undefined
   
   /**
-    * Use Procedure.reason.concept when a code sufficiently describes the reason.  Use Procedure.reason.reference when referencing a resource, which allows more information to be conveyed, such as onset date. Procedure.reason.concept and Procedure.reason.reference are not meant to be duplicative.  For a single reason, either Procedure.reason.concept or Procedure.reason.reference can be used.  Procedure.reason.concept may be a summary code, or Procedure.reason.reference may be used to reference a very precise definition of the reason using Condition | Observation | Procedure | DiagnosticReport | DocumentReference.  Both Procedure.reason.concept and Procedure.reason.reference can be used if they are describing different reasons for the procedure.
+    * Use Procedure.reason.concept when a code sufficiently describes the reason. Use Procedure.reason.reference when referencing a resource, which allows more information to be conveyed, such as onset date.  For a single Procedure.reason, if both Procedure.reason.concept and Procedure.reason.reference are present, they are expected to be consistent with each other.
     */
   var reason: js.UndefOr[js.Array[CodeableReference]] = js.undefined
   
@@ -198,7 +198,7 @@ trait Procedure
   var statusReason: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * On whom or what the procedure was performed. This is usually an individual human, but can also be performed on animals, groups of humans or animals, organizations or practitioners (for licensing), locations or devices (for safety inspections or regulatory authorizations).
+    * On whom or on what the procedure was performed. This is usually an individual human, but can also be performed on animals, groups of humans or animals, organizations or practitioners (for licensing), locations or devices (for safety inspections or regulatory authorizations).  If the actual focus of the procedure is different from the subject, the focus element specifies the actual focus of the procedure.
     */
   var subject: Reference
   
@@ -208,7 +208,7 @@ trait Procedure
   var supportingInfo: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * For devices actually implanted or removed, use Procedure.device.
+    * For devices actually implanted or removed, use Procedure.focalDevice.manipulated.
     */
   var used: js.UndefOr[js.Array[CodeableReference]] = js.undefined
 }
@@ -247,17 +247,11 @@ object Procedure {
     
     inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    inline def setComplication(value: js.Array[CodeableConcept]): Self = StObject.set(x, "complication", value.asInstanceOf[js.Any])
-    
-    inline def setComplicationDetail(value: js.Array[Reference]): Self = StObject.set(x, "complicationDetail", value.asInstanceOf[js.Any])
-    
-    inline def setComplicationDetailUndefined: Self = StObject.set(x, "complicationDetail", js.undefined)
-    
-    inline def setComplicationDetailVarargs(value: Reference*): Self = StObject.set(x, "complicationDetail", js.Array(value*))
+    inline def setComplication(value: js.Array[CodeableReference]): Self = StObject.set(x, "complication", value.asInstanceOf[js.Any])
     
     inline def setComplicationUndefined: Self = StObject.set(x, "complication", js.undefined)
     
-    inline def setComplicationVarargs(value: CodeableConcept*): Self = StObject.set(x, "complication", js.Array(value*))
+    inline def setComplicationVarargs(value: CodeableReference*): Self = StObject.set(x, "complication", js.Array(value*))
     
     inline def setEncounter(value: Reference): Self = StObject.set(x, "encounter", value.asInstanceOf[js.Any])
     
@@ -268,6 +262,10 @@ object Procedure {
     inline def setFocalDeviceUndefined: Self = StObject.set(x, "focalDevice", js.undefined)
     
     inline def setFocalDeviceVarargs(value: ProcedureFocalDevice*): Self = StObject.set(x, "focalDevice", js.Array(value*))
+    
+    inline def setFocus(value: Reference): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+    
+    inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
     
     inline def setFollowUp(value: js.Array[CodeableConcept]): Self = StObject.set(x, "followUp", value.asInstanceOf[js.Any])
     

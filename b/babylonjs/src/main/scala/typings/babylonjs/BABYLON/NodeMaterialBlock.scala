@@ -67,6 +67,9 @@ trait NodeMaterialBlock extends StObject {
   
   /* private */ var _processBuild: Any = js.native
   
+  /** @internal */
+  def _setInitialTarget(target: NodeMaterialBlockTargets): Unit = js.native
+  
   /* protected */ var _target: NodeMaterialBlockTargets = js.native
   
   /* protected */ def _writeFloat(value: Double): String = js.native

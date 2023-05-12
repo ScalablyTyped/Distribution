@@ -53,6 +53,7 @@ import typings.nivoHeatmap.nivoHeatmapStrings.xOuterPadding
 import typings.nivoHeatmap.nivoHeatmapStrings.yInnerPadding
 import typings.nivoHeatmap.nivoHeatmapStrings.yOuterPadding
 import typings.react.mod.global.JSX.Element
+import typings.reactSpringCore.mod.SpringConfig
 import typings.std.Omit
 import typings.std.Partial
 import typings.std.Pick
@@ -332,10 +333,8 @@ object mod {
     
     @JSImport("@nivo/heatmap", "commonDefaultProps.motionConfig")
     @js.native
-    def motionConfig: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any) = js.native
-    inline def motionConfig_=(
-      x: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("motionConfig")(x.asInstanceOf[js.Any])
+    def motionConfig: String | SpringConfig = js.native
+    inline def motionConfig_=(x: String | SpringConfig): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("motionConfig")(x.asInstanceOf[js.Any])
     
     @JSImport("@nivo/heatmap", "commonDefaultProps.opacity")
     @js.native

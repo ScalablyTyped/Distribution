@@ -1,0 +1,32 @@
+package typings.nightwatch.anon
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait Implicit extends StObject {
+  
+  var `implicit`: Double
+  
+  var pageLoad: Double
+  
+  var script: Double
+}
+object Implicit {
+  
+  inline def apply(`implicit`: Double, pageLoad: Double, script: Double): Implicit = {
+    val __obj = js.Dynamic.literal(pageLoad = pageLoad.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any])
+    __obj.updateDynamic("implicit")(`implicit`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Implicit]
+  }
+  
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Implicit] (val x: Self) extends AnyVal {
+    
+    inline def setImplicit(value: Double): Self = StObject.set(x, "implicit", value.asInstanceOf[js.Any])
+    
+    inline def setPageLoad(value: Double): Self = StObject.set(x, "pageLoad", value.asInstanceOf[js.Any])
+    
+    inline def setScript(value: Double): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+  }
+}

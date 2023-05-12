@@ -1,7 +1,7 @@
 
 # Scala.js typings for okta__okta-auth-js
 
-Typings are for version 7.0.0
+Typings are for version 7.3.0
 
 ## Library description:
 The Okta Auth SDK

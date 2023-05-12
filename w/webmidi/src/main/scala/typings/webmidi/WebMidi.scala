@@ -4,7 +4,7 @@ import typings.std.AddEventListenerOptions
 import typings.std.Event
 import typings.std.EventInit
 import typings.std.EventTarget
-import typings.std.Map
+import typings.std.ReadonlyMap
 import typings.webmidi.webmidiStrings.input
 import typings.webmidi.webmidiStrings.midimessage
 import typings.webmidi.webmidiStrings.output
@@ -128,7 +128,7 @@ object WebMidi {
     * This is a maplike interface whose value is a MIDIInput instance and key is its
     * ID.
     */
-  type MIDIInputMap = Map[String, MIDIInput]
+  type MIDIInputMap = ReadonlyMap[String, MIDIInput]
   
   @js.native
   trait MIDIMessageEvent
@@ -231,7 +231,7 @@ object WebMidi {
     * This is a maplike interface whose value is a MIDIOutput instance and key is its
     * ID.
     */
-  type MIDIOutputMap = Map[String, MIDIOutput]
+  type MIDIOutputMap = ReadonlyMap[String, MIDIOutput]
   
   @js.native
   trait MIDIPort

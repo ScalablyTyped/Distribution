@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "atomically" : "1.7.0"
+      "atomically" : "2.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "atomically" : "1.7.0"
+      "atomically" : "2.0.1"
     }
   ],
   "compile-devDependencies" : [

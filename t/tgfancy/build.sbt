@@ -1,17 +1,18 @@
 organization := "org.scalablytyped"
 name := "tgfancy"
-version := "0.13-dt-20211202Z-aadd3d"
+version := "0.13-dt-20230328Z-f27356"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20220624Z-1ebd5d",
-  "org.scalablytyped" %%% "form-data" % "4.0.0-987bd0",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-874609",
-  "org.scalablytyped" %%% "node-telegram-bot-api" % "0.57-dt-20221025Z-908ad0",
-  "org.scalablytyped" %%% "request" % "2.48-dt-20220101Z-bbaa9f",
-  "org.scalablytyped" %%% "std" % "4.9-ecb5eb",
-  "org.scalablytyped" %%% "tough-cookie" % "4.0-dt-20220414Z-5338ca")
+  "org.scalablytyped" %%% "eventemitter3" % "5.0.1-abf8ed",
+  "org.scalablytyped" %%% "form-data" % "4.0.0-305372",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "node-telegram-bot-api" % "0.61-dt-20230402Z-a62da6",
+  "org.scalablytyped" %%% "request" % "2.48-dt-20220101Z-8e1419",
+  "org.scalablytyped" %%% "std" % "5.0-e63739",
+  "org.scalablytyped" %%% "tough-cookie" % "4.0-dt-20220414Z-1da94b")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

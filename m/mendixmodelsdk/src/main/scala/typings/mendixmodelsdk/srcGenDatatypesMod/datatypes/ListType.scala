@@ -4,6 +4,7 @@ import typings.mendixmodelsdk.srcGenAppservicesMod.appservices.AppServiceAction
 import typings.mendixmodelsdk.srcGenAppservicesMod.appservices.AppServiceActionParameter
 import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
 import typings.mendixmodelsdk.srcGenConstantsMod.constants.Constant
+import typings.mendixmodelsdk.srcGenDatabaseconnectorMod.databaseconnector.QueryParameter
 import typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetColumn
 import typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetParameter
 import typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo
@@ -17,6 +18,8 @@ import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MicroflowParameterB
 import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MicroflowParameterObject
 import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.ResultHandling
 import typings.mendixmodelsdk.srcGenPagesMod.pages.PageParameter
+import typings.mendixmodelsdk.srcGenPagesMod.pages.SnippetParameter
+import typings.mendixmodelsdk.srcGenRestMod.rest.OperationParameter
 import typings.mendixmodelsdk.srcGenRestMod.rest.RestOperationParameter
 import typings.mendixmodelsdk.srcGenWebservicesMod.webservices.PublishedOperation
 import typings.mendixmodelsdk.srcGenWebservicesMod.webservices.PublishedParameter
@@ -39,7 +42,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.srcSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IDataType because Already inherited
 - typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IEntityType because Already inherited
-- typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IListType because var conflicts: containerAsAppServiceAction, containerAsAppServiceActionParameter, containerAsConstant, containerAsDataSetParameter, containerAsDocumentTemplateParameter, containerAsImportMapping, containerAsMicroflowBase, containerAsMicroflowParameterBase, containerAsPageParameter, entity, entityQualifiedName, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/datatypes", "datatypes.ListType")
+- typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IListType because var conflicts: containerAsAppServiceAction, containerAsAppServiceActionParameter, containerAsConstant, containerAsDataSetParameter, containerAsDocumentTemplateParameter, containerAsImportMapping, containerAsMicroflowBase, containerAsMicroflowParameterBase, containerAsOperationParameter, containerAsPageParameter, containerAsSnippetParameter, entity, entityQualifiedName, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/datatypes", "datatypes.ListType")
 @js.native
 open class ListType protected () extends EntityType {
   def this(
@@ -75,8 +78,14 @@ open class ListType protected () extends EntityType {
   @JSName("containerAsMicroflowParameterBase")
   def containerAsMicroflowParameterBase_MListType: MicroflowParameterBase = js.native
   
+  @JSName("containerAsOperationParameter")
+  def containerAsOperationParameter_MListType: OperationParameter = js.native
+  
   @JSName("containerAsPageParameter")
   def containerAsPageParameter_MListType: PageParameter = js.native
+  
+  @JSName("containerAsSnippetParameter")
+  def containerAsSnippetParameter_MListType: SnippetParameter = js.native
 }
 object ListType {
   
@@ -226,6 +235,17 @@ object ListType {
   
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
+    * The new ListType will be automatically stored in the 'dataType' property
+    * of the parent rest.OperationParameter element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.24.0 and higher
+    */
+  /* static member */
+  inline def createInOperationParameterUnderDataType(container: OperationParameter): ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOperationParameterUnderDataType")(container.asInstanceOf[js.Any]).asInstanceOf[ListType]
+  
+  /**
+    * Creates and returns a new ListType instance in the SDK and on the server.
     * The new ListType will be automatically stored in the 'parameterType' property
     * of the parent pages.PageParameter element passed as argument.
     *
@@ -259,6 +279,17 @@ object ListType {
   
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
+    * The new ListType will be automatically stored in the 'dataType' property
+    * of the parent databaseconnector.QueryParameter element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.22.0 and higher
+    */
+  /* static member */
+  inline def createInQueryParameterUnderDataType(container: QueryParameter): ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInQueryParameterUnderDataType")(container.asInstanceOf[js.Any]).asInstanceOf[ListType]
+  
+  /**
+    * Creates and returns a new ListType instance in the SDK and on the server.
     * The new ListType will be automatically stored in the 'type' property
     * of the parent rest.RestOperationParameter element passed as argument.
     *
@@ -278,6 +309,17 @@ object ListType {
     */
   /* static member */
   inline def createInResultHandlingUnderVariableType(container: ResultHandling): ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[ListType]
+  
+  /**
+    * Creates and returns a new ListType instance in the SDK and on the server.
+    * The new ListType will be automatically stored in the 'parameterType' property
+    * of the parent pages.SnippetParameter element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.21.0 and higher
+    */
+  /* static member */
+  inline def createInSnippetParameterUnderParameterType(container: SnippetParameter): ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[ListType]
   
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.

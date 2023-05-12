@@ -12,7 +12,7 @@ open class ActionButton protected ()
   def this(props: IButtonProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: IButtonProps, context: Any) = this()
 }

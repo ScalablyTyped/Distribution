@@ -1,5 +1,6 @@
 package typings.babylonjs.global
 
+import typings.babylonjs.XRCPUDepthInformation
 import typings.babylonjs.XRLightEstimate
 import typings.babylonjs.XRLightProbe
 import org.scalablytyped.runtime.StObject
@@ -20,6 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class XRFrame ()
   extends StObject
      with typings.babylonjs.XRFrame {
+  
+  /* CompleteClass */
+  override def getDepthInformation(view: typings.babylonjs.XRView): js.UndefOr[XRCPUDepthInformation] = js.native
   
   /* CompleteClass */
   override def getHitTestResults(hitTestSource: typings.babylonjs.XRHitTestSource): js.Array[typings.babylonjs.XRHitTestResult] = js.native

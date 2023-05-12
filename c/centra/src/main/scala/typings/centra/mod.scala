@@ -11,10 +11,14 @@ import typings.centra.centraStrings.defaultPort
 import typings.centra.centraStrings.family
 import typings.centra.centraStrings.form
 import typings.centra.centraStrings.headers
+import typings.centra.centraStrings.hints
 import typings.centra.centraStrings.host
 import typings.centra.centraStrings.hostname
+import typings.centra.centraStrings.insecureHTTPParser
+import typings.centra.centraStrings.joinDuplicateHeaders
 import typings.centra.centraStrings.json
 import typings.centra.centraStrings.localAddress
+import typings.centra.centraStrings.localPort
 import typings.centra.centraStrings.lookup
 import typings.centra.centraStrings.maxHeaderSize
 import typings.centra.centraStrings.method
@@ -25,6 +29,7 @@ import typings.centra.centraStrings.setHost
 import typings.centra.centraStrings.signal
 import typings.centra.centraStrings.socketPath
 import typings.centra.centraStrings.timeout
+import typings.centra.centraStrings.uniqueHeaders
 import typings.node.AbortSignal
 import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.Agent
@@ -107,6 +112,10 @@ object mod extends Shortcut {
     @JSName("option")
     def option_headers(key: headers, value: OutgoingHttpHeaders): this.type = js.native
     @JSName("option")
+    def option_hints(key: hints): this.type = js.native
+    @JSName("option")
+    def option_hints(key: hints, value: js.UndefOr[Double]): this.type = js.native
+    @JSName("option")
     def option_host(key: host): this.type = js.native
     @JSName("option")
     def option_host(key: host, value: String): this.type = js.native
@@ -115,9 +124,21 @@ object mod extends Shortcut {
     @JSName("option")
     def option_hostname(key: hostname, value: String): this.type = js.native
     @JSName("option")
+    def option_insecureHTTPParser(key: insecureHTTPParser): this.type = js.native
+    @JSName("option")
+    def option_insecureHTTPParser(key: insecureHTTPParser, value: Boolean): this.type = js.native
+    @JSName("option")
+    def option_joinDuplicateHeaders(key: joinDuplicateHeaders): this.type = js.native
+    @JSName("option")
+    def option_joinDuplicateHeaders(key: joinDuplicateHeaders, value: Boolean): this.type = js.native
+    @JSName("option")
     def option_localAddress(key: localAddress): this.type = js.native
     @JSName("option")
     def option_localAddress(key: localAddress, value: String): this.type = js.native
+    @JSName("option")
+    def option_localPort(key: localPort): this.type = js.native
+    @JSName("option")
+    def option_localPort(key: localPort, value: Double): this.type = js.native
     @JSName("option")
     def option_lookup(key: lookup): this.type = js.native
     @JSName("option")
@@ -160,6 +181,10 @@ object mod extends Shortcut {
     def option_timeout(key: timeout): this.type = js.native
     @JSName("option")
     def option_timeout(key: timeout, value: Double): this.type = js.native
+    @JSName("option")
+    def option_uniqueHeaders(key: uniqueHeaders): this.type = js.native
+    @JSName("option")
+    def option_uniqueHeaders(key: uniqueHeaders, value: js.Array[String | js.Array[String]]): this.type = js.native
     
     def path(relativePath: String): this.type = js.native
     

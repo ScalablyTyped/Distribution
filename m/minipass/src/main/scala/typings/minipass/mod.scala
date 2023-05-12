@@ -10,12 +10,18 @@ import typings.minipass.minipassStrings.error
 import typings.minipass.minipassStrings.finish
 import typings.minipass.minipassStrings.prefinish
 import typings.minipass.minipassStrings.resume
+import typings.minipass.mod.Minipass.DualIterable
+import typings.minipass.mod.Minipass.Encoding
+import typings.minipass.mod.Minipass.PipeOptions
+import typings.minipass.mod.Minipass.Writable
 import typings.node.bufferMod.global.Buffer
 import typings.node.bufferMod.global.BufferEncoding
 import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.Stream
+import typings.std.AbortSignal
 import typings.std.ArrayBufferLike
 import typings.std.AsyncIterable
+import typings.std.Generator
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,73 +29,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("minipass", JSImport.Default)
+  @JSImport("minipass", "Minipass")
   @js.native
-  open class default[RType /* <: Any */, WType /* <: Any */] protected () extends Minipass[RType, WType] {
-    // setEncoding(encoding: Encoding): void
-    // Options required if not reading buffers
-    def this(/* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type RType extends Buffer ? [] | [Options<RType>] : [Options<RType>] is not an array type */ args: /* import warning: importer.ImportType#apply Failed type conversion: RType extends node.buffer.<global>.Buffer ? [] | [minipass.minipass.Options<RType>] : [minipass.minipass.Options<RType>] */ js.Any) = this()
-  }
-  /* static members */
-  object default {
-    
-    @JSImport("minipass", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    inline def isStream(stream: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStream")(stream.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  }
-  
-  trait BufferOptions extends StObject {
-    
-    var async: js.UndefOr[Boolean] = js.undefined
-    
-    var encoding: js.UndefOr[Null | buffer] = js.undefined
-    
-    var objectMode: js.UndefOr[Boolean] = js.undefined
-  }
-  object BufferOptions {
-    
-    inline def apply(): BufferOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[BufferOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: BufferOptions] (val x: Self) extends AnyVal {
-      
-      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
-      
-      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
-      
-      inline def setEncoding(value: buffer): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
-      
-      inline def setEncodingNull: Self = StObject.set(x, "encoding", null)
-      
-      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
-      
-      inline def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
-      
-      inline def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
-    }
-  }
-  
-  type BufferOrString = Buffer | String
-  
-  type ContiguousData = Buffer | ArrayBufferLike | js.typedarray.ArrayBufferView | String
-  
-  @js.native
-  trait DualIterable[T]
-    extends StObject
-       with Iterable[T]
-       with AsyncIterable[T]
-  
-  type Encoding = BufferEncoding | buffer | Null
-  
-  @js.native
-  trait Minipass[RType /* <: Any */, WType /* <: Any */]
+  open class Minipass[RType /* <: Any */, WType /* <: Any */] protected ()
     extends Stream
        with DualIterable[RType] {
+    // setEncoding(encoding: Encoding): void
+    // Options required if not reading buffers
+    def this(/* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type RType extends Buffer ? [] | [Minipass.Options<RType>] : [Minipass.Options<RType>] is not an array type */ args: /* import warning: importer.ImportType#apply Failed type conversion: RType extends node.buffer.<global>.Buffer ? [] | [minipass.minipass.Minipass.Options<RType>] : [minipass.minipass.Minipass.Options<RType>] */ js.Any) = this()
+    
+    val aborted: Boolean = js.native
     
     /**
       * alias for on()
@@ -98,16 +47,11 @@ object mod {
     
     var async: Boolean = js.native
     
-    /**
-      * Not technically private or readonly, but not safe to mutate.
-      */
-    /* private */ val buffer: js.Array[RType] = js.native
-    
     val bufferLength: Double = js.native
     
     def collect(): js.Promise[js.Array[RType]] = js.native
     
-    def concat(): /* import warning: importer.ImportType#apply Failed type conversion: RType extends minipass.minipass.BufferOrString ? std.Promise<RType> : never */ js.Any = js.native
+    def concat(): /* import warning: importer.ImportType#apply Failed type conversion: RType extends minipass.minipass.Minipass.BufferOrString ? std.Promise<RType> : never */ js.Any = js.native
     
     def destroy(): Unit = js.native
     def destroy(er: Any): Unit = js.native
@@ -141,6 +85,9 @@ object mod {
     
     val flowing: Boolean = js.native
     
+    @JSName(js.Symbol.iterator)
+    var iterator_Minipass: js.Function0[Generator[RType, Unit, Unit]] = js.native
+    
     /**
       * Technically writable, but mutating it can change the type,
       * so is not safe to do in TypeScript.
@@ -164,8 +111,6 @@ object mod {
     def pipe[W /* <: Writable */](dest: W): W = js.native
     def pipe[W /* <: Writable */](dest: W, opts: PipeOptions): W = js.native
     
-    /* private */ val pipes: js.Array[Pipe[RType, WType]] = js.native
-    
     def promise(): js.Promise[Unit] = js.native
     
     def read(): RType = js.native
@@ -185,137 +130,180 @@ object mod {
     def write(chunk: WType, encoding: Encoding): Boolean = js.native
     def write(chunk: WType, encoding: Encoding, cb: js.Function0[Unit]): Boolean = js.native
   }
-  
-  trait ObjectModeOptions extends StObject {
+  /* static members */
+  object Minipass {
     
-    var async: js.UndefOr[Boolean] = js.undefined
+    @JSImport("minipass", "Minipass")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var objectMode: `true`
-  }
-  object ObjectModeOptions {
+    inline def isStream(stream: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStream")(stream.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def apply(): ObjectModeOptions = {
-      val __obj = js.Dynamic.literal(objectMode = true)
-      __obj.asInstanceOf[ObjectModeOptions]
+    trait BufferOptions
+      extends StObject
+         with SharedOptions {
+      
+      var encoding: js.UndefOr[Null | buffer] = js.undefined
+      
+      var objectMode: js.UndefOr[Boolean] = js.undefined
+    }
+    object BufferOptions {
+      
+      inline def apply(): BufferOptions = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[BufferOptions]
+      }
+      
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BufferOptions] (val x: Self) extends AnyVal {
+        
+        inline def setEncoding(value: buffer): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+        
+        inline def setEncodingNull: Self = StObject.set(x, "encoding", null)
+        
+        inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+        
+        inline def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
+        
+        inline def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
+      }
     }
     
-    @scala.inline
-    implicit open class MutableBuilder[Self <: ObjectModeOptions] (val x: Self) extends AnyVal {
+    type BufferOrString = Buffer | String
+    
+    type ContiguousData = Buffer | ArrayBufferLike | js.typedarray.ArrayBufferView | String
+    
+    @js.native
+    trait DualIterable[T]
+      extends StObject
+         with Iterable[T]
+         with AsyncIterable[T]
+    
+    type Encoding = BufferEncoding | buffer | Null
+    
+    trait ObjectModeOptions
+      extends StObject
+         with SharedOptions {
       
-      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
-      
-      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
-      
-      inline def setObjectMode(value: `true`): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
+      var objectMode: `true`
     }
-  }
-  
-  /** NOTE: Conditional type definitions are impossible to translate to Scala.
-    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
-    * TS definition: {{{
-    T extends string ? minipass.minipass.StringOptions : T extends node.buffer.<global>.Buffer ? minipass.minipass.BufferOptions : minipass.minipass.ObjectModeOptions
-    }}}
-    */
-  type Options[T] = StringOptions
-  
-  trait Pipe[R, W] extends StObject {
-    
-    var dest: Writable
-    
-    var opts: PipeOptions
-    
-    var src: Minipass[R, W]
-  }
-  object Pipe {
-    
-    inline def apply[R, W](dest: Writable, opts: PipeOptions, src: Minipass[R, W]): Pipe[R, W] = {
-      val __obj = js.Dynamic.literal(dest = dest.asInstanceOf[js.Any], opts = opts.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Pipe[R, W]]
+    object ObjectModeOptions {
+      
+      inline def apply(): ObjectModeOptions = {
+        val __obj = js.Dynamic.literal(objectMode = true)
+        __obj.asInstanceOf[ObjectModeOptions]
+      }
+      
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ObjectModeOptions] (val x: Self) extends AnyVal {
+        
+        inline def setObjectMode(value: `true`): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
+      }
     }
     
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Pipe[?, ?], R, W] (val x: Self & (Pipe[R, W])) extends AnyVal {
+    /** NOTE: Conditional type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+      * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+      * TS definition: {{{
+      T extends string ? minipass.minipass.Minipass.StringOptions : T extends node.buffer.<global>.Buffer ? minipass.minipass.Minipass.BufferOptions : minipass.minipass.Minipass.ObjectModeOptions
+      }}}
+      */
+    type Options[T] = StringOptions
+    
+    trait PipeOptions extends StObject {
       
-      inline def setDest(value: Writable): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
+      var end: js.UndefOr[Boolean] = js.undefined
       
-      inline def setOpts(value: PipeOptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
-      
-      inline def setSrc(value: Minipass[R, W]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      var proxyErrors: js.UndefOr[Boolean] = js.undefined
     }
-  }
-  
-  trait PipeOptions extends StObject {
-    
-    var end: js.UndefOr[Boolean] = js.undefined
-    
-    var proxyErrors: js.UndefOr[Boolean] = js.undefined
-  }
-  object PipeOptions {
-    
-    inline def apply(): PipeOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PipeOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: PipeOptions] (val x: Self) extends AnyVal {
+    object PipeOptions {
       
-      inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def apply(): PipeOptions = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[PipeOptions]
+      }
       
-      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
-      
-      inline def setProxyErrors(value: Boolean): Self = StObject.set(x, "proxyErrors", value.asInstanceOf[js.Any])
-      
-      inline def setProxyErrorsUndefined: Self = StObject.set(x, "proxyErrors", js.undefined)
-    }
-  }
-  
-  @js.native
-  trait Readable extends EventEmitter {
-    
-    def pause(): Any = js.native
-    
-    def pipe(): Any = js.native
-    
-    def resume(): Any = js.native
-  }
-  
-  trait StringOptions extends StObject {
-    
-    var async: js.UndefOr[Boolean] = js.undefined
-    
-    var encoding: BufferEncoding
-    
-    var objectMode: js.UndefOr[Boolean] = js.undefined
-  }
-  object StringOptions {
-    
-    inline def apply(encoding: BufferEncoding): StringOptions = {
-      val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
-      __obj.asInstanceOf[StringOptions]
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PipeOptions] (val x: Self) extends AnyVal {
+        
+        inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+        
+        inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+        
+        inline def setProxyErrors(value: Boolean): Self = StObject.set(x, "proxyErrors", value.asInstanceOf[js.Any])
+        
+        inline def setProxyErrorsUndefined: Self = StObject.set(x, "proxyErrors", js.undefined)
+      }
     }
     
-    @scala.inline
-    implicit open class MutableBuilder[Self <: StringOptions] (val x: Self) extends AnyVal {
+    @js.native
+    trait Readable extends EventEmitter {
       
-      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      def pause(): Any = js.native
       
-      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      def pipe(): Any = js.native
       
-      inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
-      
-      inline def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
-      
-      inline def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
+      def resume(): Any = js.native
     }
-  }
-  
-  @js.native
-  trait Writable extends EventEmitter {
     
-    def end(): Any = js.native
+    trait SharedOptions extends StObject {
+      
+      var async: js.UndefOr[Boolean] = js.undefined
+      
+      var signal: js.UndefOr[AbortSignal] = js.undefined
+    }
+    object SharedOptions {
+      
+      inline def apply(): SharedOptions = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[SharedOptions]
+      }
+      
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SharedOptions] (val x: Self) extends AnyVal {
+        
+        inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+        
+        inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+        
+        inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+        
+        inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+      }
+    }
     
-    def write(chunk: Any, args: Any*): Any = js.native
+    trait StringOptions
+      extends StObject
+         with SharedOptions {
+      
+      var encoding: BufferEncoding
+      
+      var objectMode: js.UndefOr[Boolean] = js.undefined
+    }
+    object StringOptions {
+      
+      inline def apply(encoding: BufferEncoding): StringOptions = {
+        val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
+        __obj.asInstanceOf[StringOptions]
+      }
+      
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StringOptions] (val x: Self) extends AnyVal {
+        
+        inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+        
+        inline def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
+        
+        inline def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
+      }
+    }
+    
+    @js.native
+    trait Writable extends EventEmitter {
+      
+      def end(): Any = js.native
+      
+      def write(chunk: Any, args: Any*): Any = js.native
+    }
   }
 }

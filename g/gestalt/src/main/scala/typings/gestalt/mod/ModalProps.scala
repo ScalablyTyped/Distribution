@@ -1,61 +1,42 @@
 package typings.gestalt.mod
 
-import typings.gestalt.gestaltStrings.`100`
-import typings.gestalt.gestaltStrings.`200`
-import typings.gestalt.gestaltStrings.`300`
-import typings.gestalt.gestaltStrings.`400`
-import typings.gestalt.gestaltStrings.`500`
-import typings.gestalt.gestaltStrings.`600`
 import typings.gestalt.gestaltStrings.alertdialog
 import typings.gestalt.gestaltStrings.center
+import typings.gestalt.gestaltStrings.defaut
 import typings.gestalt.gestaltStrings.dialog
-import typings.gestalt.gestaltStrings.left
 import typings.gestalt.gestaltStrings.lg
 import typings.gestalt.gestaltStrings.md
+import typings.gestalt.gestaltStrings.none
 import typings.gestalt.gestaltStrings.sm
-import typings.react.mod.ReactNode
+import typings.gestalt.gestaltStrings.start
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ModalProps extends StObject {
   
-  /*
-    * Temporary undocumented prop to disable ScrollBoundaryContainer.
-    */
   var _dangerouslyDisableScrollBoundaryContainer: js.UndefOr[Boolean] = js.undefined
   
   var accessibilityModalLabel: String
   
-  /**
-    * Use to specify the alignment of `heading` & `subHeading` strings
-    *
-    * @default "center"
-    */
-  var align: js.UndefOr[center | left] = js.undefined
+  var align: js.UndefOr[center | start] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.undefined
+  var children: js.UndefOr[Node] = js.undefined
   
-  /**
-    * Close the modal when you click outside of it
-    *
-    * @default true
-    */
   var closeOnOutsideClick: js.UndefOr[Boolean] = js.undefined
   
-  var footer: js.UndefOr[ReactNode] = js.undefined
+  var footer: js.UndefOr[Node] = js.undefined
   
-  var heading: js.UndefOr[ReactNode] = js.undefined
+  var heading: js.UndefOr[Node] = js.undefined
   
   def onDismiss(): Unit
   
+  var padding: js.UndefOr[defaut | none] = js.undefined
+  
   var role: js.UndefOr[alertdialog | dialog] = js.undefined
   
-  var size: js.UndefOr[sm | md | lg | `100` | `200` | `300` | `400` | `500` | `600`] = js.undefined
+  var size: js.UndefOr[sm | md | lg | Double] = js.undefined
   
-  /**
-    * Only renders with `heading` strings
-    */
   var subHeading: js.UndefOr[String] = js.undefined
 }
 object ModalProps {
@@ -70,11 +51,11 @@ object ModalProps {
     
     inline def setAccessibilityModalLabel(value: String): Self = StObject.set(x, "accessibilityModalLabel", value.asInstanceOf[js.Any])
     
-    inline def setAlign(value: center | left): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: center | start): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Node): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
@@ -82,21 +63,25 @@ object ModalProps {
     
     inline def setCloseOnOutsideClickUndefined: Self = StObject.set(x, "closeOnOutsideClick", js.undefined)
     
-    inline def setFooter(value: ReactNode): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+    inline def setFooter(value: Node): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
     inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     
-    inline def setHeading(value: ReactNode): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+    inline def setHeading(value: Node): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
     inline def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
     
     inline def setOnDismiss(value: () => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction0(value))
     
+    inline def setPadding(value: defaut | none): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    
     inline def setRole(value: alertdialog | dialog): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    inline def setSize(value: sm | md | lg | `100` | `200` | `300` | `400` | `500` | `600`): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: sm | md | lg | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for azure__core-client
 
-Typings are for version 1.6.1
+Typings are for version 1.7.2
 
 
 

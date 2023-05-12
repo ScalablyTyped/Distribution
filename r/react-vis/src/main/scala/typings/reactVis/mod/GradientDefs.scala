@@ -12,7 +12,7 @@ open class GradientDefs[T] protected ()
   def this(props: GradientDefsProps & T) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: GradientDefsProps & T, context: Any) = this()
 }

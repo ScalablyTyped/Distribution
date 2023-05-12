@@ -11,7 +11,7 @@ object karmaMod {
   trait BrowserStackOptions extends StObject {
     
     /**  BS access key, you can also use BROWSERSTACK_ACCESS_KEY env variable */
-    var accessKey: String
+    var accessKey: js.UndefOr[String] = js.undefined
     
     /** the BS worker build name */
     var build: js.UndefOr[String] = js.undefined
@@ -64,15 +64,15 @@ object karmaMod {
     var tunnelIdentifier: js.UndefOr[String] = js.undefined
     
     /** BS username, you can also use BROWSERSTACK_USERNAME env variable */
-    var username: String
+    var username: js.UndefOr[String] = js.undefined
     
     /** enable video recording of session on BrowserStack */
     var video: js.UndefOr[Boolean] = js.undefined
   }
   object BrowserStackOptions {
     
-    inline def apply(accessKey: String, username: String): BrowserStackOptions = {
-      val __obj = js.Dynamic.literal(accessKey = accessKey.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    inline def apply(): BrowserStackOptions = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BrowserStackOptions]
     }
     
@@ -80,6 +80,8 @@ object karmaMod {
     implicit open class MutableBuilder[Self <: BrowserStackOptions] (val x: Self) extends AnyVal {
       
       inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
+      
+      inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
       inline def setBuild(value: String): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
       
@@ -142,6 +144,8 @@ object karmaMod {
       inline def setTunnelIdentifierUndefined: Self = StObject.set(x, "tunnelIdentifier", js.undefined)
       
       inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
       
       inline def setVideo(value: Boolean): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
       

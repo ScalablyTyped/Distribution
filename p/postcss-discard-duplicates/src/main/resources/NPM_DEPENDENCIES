@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "postcss-discard-duplicates" : "5.1.0"
+      "postcss-discard-duplicates" : "6.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "postcss-discard-duplicates" : "5.1.0"
+      "postcss-discard-duplicates" : "6.0.0"
     }
   ],
   "compile-devDependencies" : [

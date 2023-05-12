@@ -5,11 +5,16 @@ import typings.egjsAxes.declarationTypesMod.ExtendedEvent
 import typings.egjsAxes.declarationTypesMod.InputEventType
 import typings.std.PointerEvent
 import typings.std.Touch
+import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object declarationEventInputEventInputMod {
+  
+  @JSImport("@egjs/axes/declaration/eventInput/EventInput", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* note: abstract class */ @JSImport("@egjs/axes/declaration/eventInput/EventInput", "EventInput")
   @js.native
@@ -32,6 +37,11 @@ object declarationEventInputEventInputMod {
     
     /* protected */ def _isValidButton(button: String, inputButton: js.Array[String]): Boolean = js.native
     
+    /* protected */ def _isValidEvent(event: InputEventType): Boolean = js.native
+    /* protected */ def _isValidEvent(event: InputEventType, inputKey: js.Array[String]): Boolean = js.native
+    /* protected */ def _isValidEvent(event: InputEventType, inputKey: js.Array[String], inputButton: js.Array[String]): Boolean = js.native
+    /* protected */ def _isValidEvent(event: InputEventType, inputKey: Unit, inputButton: js.Array[String]): Boolean = js.native
+    
     /* private */ var _latestInterval: Any = js.native
     
     /* protected */ def _preventMouseButton(event: InputEventType, button: String): Unit = js.native
@@ -41,7 +51,9 @@ object declarationEventInputEventInputMod {
     def extendEvent(event: InputEventType): ExtendedEvent = js.native
     
     def getTouches(event: InputEventType): Double = js.native
-    def getTouches(event: InputEventType, inputButton: js.Array[String]): Double = js.native
+    def getTouches(event: InputEventType, inputKey: js.Array[String]): Double = js.native
+    def getTouches(event: InputEventType, inputKey: js.Array[String], inputButton: js.Array[String]): Double = js.native
+    def getTouches(event: InputEventType, inputKey: Unit, inputButton: js.Array[String]): Double = js.native
     
     def onEventEnd(event: InputEventType): Unit = js.native
     
@@ -71,4 +83,9 @@ object declarationEventInputEventInputMod {
   @JSImport("@egjs/axes/declaration/eventInput/EventInput", "SUPPORT_TOUCH")
   @js.native
   val SUPPORT_TOUCH: Boolean = js.native
+  
+  inline def isValidKey(event: InputEventType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidKey")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidKey(event: InputEventType, inputKey: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidKey")(event.asInstanceOf[js.Any], inputKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isValidKey(event: WheelEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidKey")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidKey(event: WheelEvent, inputKey: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidKey")(event.asInstanceOf[js.Any], inputKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

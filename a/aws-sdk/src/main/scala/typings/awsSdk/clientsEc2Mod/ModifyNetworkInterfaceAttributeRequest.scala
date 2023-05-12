@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ModifyNetworkInterfaceAttributeRequest extends StObject {
   
   /**
-    * Information about the interface attachment. If modifying the 'delete on termination' attribute, you must specify the ID of the interface attachment.
+    * Information about the interface attachment. If modifying the delete on termination attribute, you must specify the ID of the interface attachment.
     */
   var Attachment: js.UndefOr[NetworkInterfaceAttachmentChanges] = js.undefined
   
@@ -20,6 +20,11 @@ trait ModifyNetworkInterfaceAttributeRequest extends StObject {
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
   var DryRun: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Updates the ENA Express configuration for the network interface that’s attached to the instance.
+    */
+  var EnaSrdSpecification: js.UndefOr[typings.awsSdk.clientsEc2Mod.EnaSrdSpecification] = js.undefined
   
   /**
     * Changes the security groups for the network interface. The new set of groups you specify replaces the current set. You must specify at least one group, even if it's just the default security group in the VPC. You must specify the ID of the security group, not the name.
@@ -57,6 +62,10 @@ object ModifyNetworkInterfaceAttributeRequest {
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    
+    inline def setEnaSrdSpecification(value: EnaSrdSpecification): Self = StObject.set(x, "EnaSrdSpecification", value.asInstanceOf[js.Any])
+    
+    inline def setEnaSrdSpecificationUndefined: Self = StObject.set(x, "EnaSrdSpecification", js.undefined)
     
     inline def setGroups(value: SecurityGroupIdStringList): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     

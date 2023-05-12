@@ -4,6 +4,7 @@ import typings.std.ErrorEvent
 import typings.std.EventTarget
 import typings.std.ProgressEvent
 import typings.three.anon.Atoms
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcThreeMod.BufferGeometry
 import typings.three.srcThreeMod.Loader
 import typings.three.srcThreeMod.LoadingManager
@@ -37,20 +38,27 @@ object examplesJsmLoadersPdbloaderMod {
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): Unit = js.native
     
+    def loadAsync(url: String): js.Promise[PDB] = js.native
+    def loadAsync(url: String, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[PDB] = js.native
+    
     def parse(text: String): PDB = js.native
   }
   
   trait PDB extends StObject {
     
-    var geometryAtoms: BufferGeometry
+    var geometryAtoms: BufferGeometry[NormalBufferAttributes]
     
-    var geometryBonds: BufferGeometry
+    var geometryBonds: BufferGeometry[NormalBufferAttributes]
     
     var json: Atoms
   }
   object PDB {
     
-    inline def apply(geometryAtoms: BufferGeometry, geometryBonds: BufferGeometry, json: Atoms): PDB = {
+    inline def apply(
+      geometryAtoms: BufferGeometry[NormalBufferAttributes],
+      geometryBonds: BufferGeometry[NormalBufferAttributes],
+      json: Atoms
+    ): PDB = {
       val __obj = js.Dynamic.literal(geometryAtoms = geometryAtoms.asInstanceOf[js.Any], geometryBonds = geometryBonds.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any])
       __obj.asInstanceOf[PDB]
     }
@@ -58,9 +66,9 @@ object examplesJsmLoadersPdbloaderMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: PDB] (val x: Self) extends AnyVal {
       
-      inline def setGeometryAtoms(value: BufferGeometry): Self = StObject.set(x, "geometryAtoms", value.asInstanceOf[js.Any])
+      inline def setGeometryAtoms(value: BufferGeometry[NormalBufferAttributes]): Self = StObject.set(x, "geometryAtoms", value.asInstanceOf[js.Any])
       
-      inline def setGeometryBonds(value: BufferGeometry): Self = StObject.set(x, "geometryBonds", value.asInstanceOf[js.Any])
+      inline def setGeometryBonds(value: BufferGeometry[NormalBufferAttributes]): Self = StObject.set(x, "geometryBonds", value.asInstanceOf[js.Any])
       
       inline def setJson(value: Atoms): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     }

@@ -8,13 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /** @typedef {normalize.Options} Options */
   /**
-    * @type {import('postcss').PluginCreator<Options>}
-    * @param {Options} opts
+    * @type {import('postcss').PluginCreator<void>}
     * @return {import('postcss').Plugin}
     */
-  inline def apply(opts: Options): Plugin = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Plugin]
+  inline def apply(): Plugin = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Plugin]
   
   @JSImport("postcss-normalize-url", JSImport.Namespace)
   @js.native
@@ -22,8 +20,5 @@ object mod {
   
   @JSImport("postcss-normalize-url", "postcss")
   @js.native
-  def postcss: `true` = js.native
-  inline def postcss_=(x: `true`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("postcss")(x.asInstanceOf[js.Any])
-  
-  type Options = typings.normalizeUrl.mod.Options
+  val postcss: `true` = js.native
 }

@@ -1,5 +1,8 @@
 package typings.meshoptimizer
 
+import typings.meshoptimizer.meshoptimizerStrings.Separate
+import typings.meshoptimizer.meshoptimizerStrings.SharedComponent
+import typings.meshoptimizer.meshoptimizerStrings.SharedVector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,6 +16,13 @@ object meshoptEncoderDotmoduleMod {
     val ^ : js.Any = js.native
     
     inline def encodeFilterExp(source: js.typedarray.Float32Array, count: Double, stride: Double, bits: Double): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeFilterExp")(source.asInstanceOf[js.Any], count.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], bits.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+    inline def encodeFilterExp(
+      source: js.typedarray.Float32Array,
+      count: Double,
+      stride: Double,
+      bits: Double,
+      mode: Separate | SharedVector | SharedComponent
+    ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeFilterExp")(source.asInstanceOf[js.Any], count.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], bits.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
     
     inline def encodeFilterOct(source: js.typedarray.Float32Array, count: Double, stride: Double, bits: Double): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeFilterOct")(source.asInstanceOf[js.Any], count.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], bits.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
     

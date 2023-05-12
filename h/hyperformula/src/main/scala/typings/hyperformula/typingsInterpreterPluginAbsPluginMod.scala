@@ -1,10 +1,10 @@
 package typings.hyperformula
 
-import typings.hyperformula.anon.ABS
 import typings.hyperformula.typingsInterpreterInterpreterMod.Interpreter
 import typings.hyperformula.typingsInterpreterInterpreterStateMod.InterpreterState
 import typings.hyperformula.typingsInterpreterInterpreterValueMod.InterpreterValue
 import typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.FunctionPlugin
+import typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.ImplementedFunctions
 import typings.hyperformula.typingsParserAstMod.ProcedureAst
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -29,7 +29,7 @@ object typingsInterpreterPluginAbsPluginMod {
     
     @JSImport("hyperformula/typings/interpreter/plugin/AbsPlugin", "AbsPlugin.implementedFunctions")
     @js.native
-    def implementedFunctions: ABS = js.native
-    inline def implementedFunctions_=(x: ABS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("implementedFunctions")(x.asInstanceOf[js.Any])
+    def implementedFunctions: ImplementedFunctions = js.native
+    inline def implementedFunctions_=(x: ImplementedFunctions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("implementedFunctions")(x.asInstanceOf[js.Any])
   }
 }

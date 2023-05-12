@@ -1,12 +1,12 @@
 package typings.hapiHapi.anon
 
-import typings.hapiHapi.mod.ReqRefDefaults
-import typings.hapiHapi.mod.RouteExtObject
+import typings.hapiHapi.libTypesRequestMod.ReqRefDefaults
+import typings.hapiHapi.libTypesServerExtMod.RouteExtObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {[ key in @hapi/hapi.@hapi/hapi.RouteRequestExtType ]:? @hapi/hapi.@hapi/hapi.RouteExtObject<@hapi/hapi.@hapi/hapi.ReqRefDefaults> | std.Array<@hapi/hapi.@hapi/hapi.RouteExtObject<@hapi/hapi.@hapi/hapi.ReqRefDefaults>>} */
+/* Inlined {[ key in @hapi/hapi.@hapi/hapi/lib/types/server.RouteRequestExtType ]:? @hapi/hapi.@hapi/hapi/lib/types/server.RouteExtObject<@hapi/hapi.@hapi/hapi/lib/types/request.ReqRefDefaults> | std.Array<@hapi/hapi.@hapi/hapi/lib/types/server.RouteExtObject<@hapi/hapi.@hapi/hapi/lib/types/request.ReqRefDefaults>> | undefined} */
 trait keyinRouteRequestExtTypeR extends StObject {
   
   var onCredentials: js.UndefOr[RouteExtObject[ReqRefDefaults] | js.Array[RouteExtObject[ReqRefDefaults]]] = js.undefined

@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class DocumentSymbol protected ()
   extends typings.vscode.mod.DocumentSymbol {
   /**
-    * Creates a new document symbol.
-    *
-    * @param name The name of the symbol.
-    * @param detail Details for the symbol.
-    * @param kind The kind of the symbol.
-    * @param range The full range of the symbol.
-    * @param selectionRange The range that should be reveal.
-    */
+  		 * Creates a new document symbol.
+  		 *
+  		 * @param name The name of the symbol.
+  		 * @param detail Details for the symbol.
+  		 * @param kind The kind of the symbol.
+  		 * @param range The full range of the symbol.
+  		 * @param selectionRange The range that should be reveal.
+  		 */
   def this(
     name: String,
     detail: String,

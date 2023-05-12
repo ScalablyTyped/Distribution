@@ -8,20 +8,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DataTransferFile extends StObject {
   
   /**
-    * The full file contents of the file.
-    */
+  		 * The full file contents of the file.
+  		 */
   def data(): Thenable[js.typedarray.Uint8Array]
   
   /**
-    * The name of the file.
-    */
+  		 * The name of the file.
+  		 */
   val name: String
   
   /**
-    * The full file path of the file.
-    *
-    * May be `undefined` on web.
-    */
+  		 * The full file path of the file.
+  		 *
+  		 * May be `undefined` on web.
+  		 */
   val uri: js.UndefOr[Uri] = js.undefined
 }
 object DataTransferFile {

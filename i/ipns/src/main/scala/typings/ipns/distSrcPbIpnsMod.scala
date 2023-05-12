@@ -1,5 +1,6 @@
 package typings.ipns
 
+import typings.ipns.anon.PartialIpnsEntry
 import typings.ipns.distSrcPbIpnsMod.IpnsEntry.ValidityType
 import typings.protonsRuntime.distSrcCodecMod.Codec
 import typings.uint8arraylist.mod.Uint8ArrayList
@@ -63,7 +64,7 @@ object distSrcPbIpnsMod {
     inline def decode(buf: js.typedarray.Uint8Array): IpnsEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[IpnsEntry]
     inline def decode(buf: Uint8ArrayList): IpnsEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[IpnsEntry]
     
-    inline def encode(obj: IpnsEntry): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def encode(obj: PartialIpnsEntry): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     @scala.inline
     implicit open class MutableBuilder[Self <: IpnsEntry] (val x: Self) extends AnyVal {

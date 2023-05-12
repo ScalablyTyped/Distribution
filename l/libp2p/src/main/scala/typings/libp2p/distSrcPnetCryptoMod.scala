@@ -3,6 +3,7 @@ package typings.libp2p
 import typings.itStreamTypes.mod.Source
 import typings.libp2p.anon.CodecName
 import typings.std.AsyncGenerator
+import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,10 +16,10 @@ object distSrcPnetCryptoMod {
   
   inline def createBoxStream(nonce: js.typedarray.Uint8Array, psk: js.typedarray.Uint8Array): js.Function1[
     /* source */ Source[js.typedarray.Uint8Array], 
-    AsyncGenerator[js.typedarray.Uint8Array, Unit, Any]
+    AsyncIterable[js.typedarray.Uint8Array]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createBoxStream")(nonce.asInstanceOf[js.Any], psk.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* source */ Source[js.typedarray.Uint8Array], 
-    AsyncGenerator[js.typedarray.Uint8Array, Unit, Any]
+    AsyncIterable[js.typedarray.Uint8Array]
   ]]
   
   inline def createUnboxStream(nonce: js.typedarray.Uint8Array, psk: js.typedarray.Uint8Array): js.Function1[

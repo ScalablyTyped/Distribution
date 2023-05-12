@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* note: abstract class */ @JSImport("vscode-languageclient", "TextDocumentEventFeature")
 @js.native
-open class TextDocumentEventFeature[P, E, M] protected ()
+open class TextDocumentEventFeature[P /* <: typings.vscodeLanguageclient.anon.TextDocument */, E, M] protected ()
   extends typings.vscodeLanguageclient.libCommonFeaturesMod.TextDocumentEventFeature[P, E, M] {
   def this(
     client: FeatureClient[M, js.Object],

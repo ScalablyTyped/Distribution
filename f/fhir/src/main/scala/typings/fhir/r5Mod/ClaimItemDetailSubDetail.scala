@@ -29,9 +29,19 @@ trait ClaimItemDetailSubDetail
   var net: js.UndefOr[Money] = js.undefined
   
   /**
+    * The amount paid by the patient, in total at the claim claim level or specifically for the item and detail level, to the provider for goods and services.
+    */
+  var patientPaid: js.UndefOr[Money] = js.undefined
+  
+  /**
     * If this is an actual service or product line, i.e. not a Group, then use code to indicate the Professional Service or Product supplied (e.g. CTP, HCPCS, USCLS, ICD10, NCPDP, DIN, RxNorm, ACHI, CCI). If a grouping item then use a group code to indicate the type of thing being grouped e.g. 'glasses' or 'compound'.
     */
-  var productOrService: CodeableConcept
+  var productOrService: js.UndefOr[CodeableConcept] = js.undefined
+  
+  /**
+    * This contains the end of a range of product, service, drug or other billing codes for the item. This element is not used when the .productOrService is a group code. This value may only be present when a .productOfService code has been provided to convey the start of the range. Typically this value may be used only with preauthorizations and not with claims.
+    */
+  var productOrServiceEnd: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * For example: Neonatal program, child dental program or drug users recovery program.
@@ -54,6 +64,16 @@ trait ClaimItemDetailSubDetail
   var sequence: Double
   
   /**
+    * The total of taxes applicable for this product or service.
+    */
+  var tax: js.UndefOr[Money] = js.undefined
+  
+  /**
+    * Trace number for tracking purposes. May be defined at the jurisdiction level or between trading partners.
+    */
+  var traceNumber: js.UndefOr[js.Array[Identifier]] = js.undefined
+  
+  /**
     * Unique Device Identifiers associated with this line item.
     */
   var udi: js.UndefOr[js.Array[Reference]] = js.undefined
@@ -65,8 +85,8 @@ trait ClaimItemDetailSubDetail
 }
 object ClaimItemDetailSubDetail {
   
-  inline def apply(productOrService: CodeableConcept, sequence: Double): ClaimItemDetailSubDetail = {
-    val __obj = js.Dynamic.literal(productOrService = productOrService.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any])
+  inline def apply(sequence: Double): ClaimItemDetailSubDetail = {
+    val __obj = js.Dynamic.literal(sequence = sequence.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClaimItemDetailSubDetail]
   }
   
@@ -91,7 +111,17 @@ object ClaimItemDetailSubDetail {
     
     inline def setNetUndefined: Self = StObject.set(x, "net", js.undefined)
     
+    inline def setPatientPaid(value: Money): Self = StObject.set(x, "patientPaid", value.asInstanceOf[js.Any])
+    
+    inline def setPatientPaidUndefined: Self = StObject.set(x, "patientPaid", js.undefined)
+    
     inline def setProductOrService(value: CodeableConcept): Self = StObject.set(x, "productOrService", value.asInstanceOf[js.Any])
+    
+    inline def setProductOrServiceEnd(value: CodeableConcept): Self = StObject.set(x, "productOrServiceEnd", value.asInstanceOf[js.Any])
+    
+    inline def setProductOrServiceEndUndefined: Self = StObject.set(x, "productOrServiceEnd", js.undefined)
+    
+    inline def setProductOrServiceUndefined: Self = StObject.set(x, "productOrService", js.undefined)
     
     inline def setProgramCode(value: js.Array[CodeableConcept]): Self = StObject.set(x, "programCode", value.asInstanceOf[js.Any])
     
@@ -108,6 +138,16 @@ object ClaimItemDetailSubDetail {
     inline def setRevenueUndefined: Self = StObject.set(x, "revenue", js.undefined)
     
     inline def setSequence(value: Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
+    
+    inline def setTax(value: Money): Self = StObject.set(x, "tax", value.asInstanceOf[js.Any])
+    
+    inline def setTaxUndefined: Self = StObject.set(x, "tax", js.undefined)
+    
+    inline def setTraceNumber(value: js.Array[Identifier]): Self = StObject.set(x, "traceNumber", value.asInstanceOf[js.Any])
+    
+    inline def setTraceNumberUndefined: Self = StObject.set(x, "traceNumber", js.undefined)
+    
+    inline def setTraceNumberVarargs(value: Identifier*): Self = StObject.set(x, "traceNumber", js.Array(value*))
     
     inline def setUdi(value: js.Array[Reference]): Self = StObject.set(x, "udi", value.asInstanceOf[js.Any])
     

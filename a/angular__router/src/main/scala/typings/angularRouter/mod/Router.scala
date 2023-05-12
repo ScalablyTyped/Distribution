@@ -1,20 +1,12 @@
 package typings.angularRouter.mod
 
-import typings.angularCommon.mod.Location
-import typings.angularCore.mod.Compiler
-import typings.angularCore.mod.Injector
-import typings.angularCore.mod.Type
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵInjectableDeclaration
 import typings.angularRouter.angularRouterStrings.always
 import typings.angularRouter.angularRouterStrings.computed
-import typings.angularRouter.angularRouterStrings.corrected
 import typings.angularRouter.angularRouterStrings.deferred
 import typings.angularRouter.angularRouterStrings.eager
 import typings.angularRouter.angularRouterStrings.emptyOnly
-import typings.angularRouter.angularRouterStrings.ignore
-import typings.angularRouter.angularRouterStrings.legacy
-import typings.angularRouter.angularRouterStrings.reload
 import typings.angularRouter.angularRouterStrings.replace
 import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
@@ -23,28 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/router", "Router")
 @js.native
-open class Router protected () extends StObject {
-  def this(
-    rootComponentType: Null,
-    urlSerializer: UrlSerializer,
-    rootContexts: ChildrenOutletContexts,
-    location: Location,
-    injector: Injector,
-    compiler: Compiler,
-    config: Routes
-  ) = this()
-  /**
-    * Creates the router service.
-    */
-  def this(
-    rootComponentType: Type[Any],
-    urlSerializer: UrlSerializer,
-    rootContexts: ChildrenOutletContexts,
-    location: Location,
-    injector: Injector,
-    compiler: Compiler,
-    config: Routes
-  ) = this()
+open class Router () extends StObject {
   
   /**
     * The ɵrouterPageId of whatever page is currently active in the browser history. This is
@@ -52,25 +23,6 @@ open class Router protected () extends StObject {
     * page id in the browser history is 1 more than the previous entry.
     */
   /* private */ def browserPageId: Any = js.native
-  
-  /**
-    * Meant to represent the part of the browser url that the `Router` is set up to handle (via the
-    * `UrlHandlingStrategy`). This value is updated immediately after the browser url is updated (or
-    * the browser url update is skipped via `skipLocationChange`). With that, note that
-    * `browserUrlTree` _may not_ reflect the actual browser URL for two reasons:
-    *
-    * 1. `UrlHandlingStrategy` only handles part of the URL
-    * 2. `skipLocationChange` does not update the browser url.
-    *
-    * So to reiterate, `browserUrlTree` only represents the Router's internal understanding of the
-    * current route, either before guards with `urlUpdateStrategy === 'eager'` or right before
-    * activation with `'deferred'`.
-    *
-    * This should match the `currentUrlTree` when the navigation succeeds.
-    */
-  /* private */ var browserUrlTree: Any = js.native
-  
-  /* private */ var cancelNavigationTransition: Any = js.native
   
   /**
     * Configures how the Router attempts to restore state when a navigation is cancelled.
@@ -93,12 +45,22 @@ open class Router protected () extends StObject {
     *
     * The default value is `replace`.
     *
+    * @deprecated Configure this through `provideRouter` or `RouterModule.forRoot` instead.
+    * @see `withRouterConfig`
+    * @see `provideRouter`
+    * @see `RouterModule`
     */
   var canceledNavigationResolution: replace | computed = js.native
   
-  var config: Routes = js.native
+  /**
+    * Indicates whether the the application has opted in to binding Router data to component inputs.
+    *
+    * This option is enabled by the `withComponentInputBinding` feature of `provideRouter` or
+    * `bindToComponentInputs` in the `ExtraOptions` of `RouterModule.forRoot`.
+    */
+  val componentInputBindingEnabled: Boolean = js.native
   
-  /* private */ var configLoader: Any = js.native
+  var config: Routes = js.native
   
   /* private */ var console: Any = js.native
   
@@ -153,8 +115,6 @@ open class Router protected () extends StObject {
   def createUrlTree(commands: js.Array[Any]): UrlTree = js.native
   def createUrlTree(commands: js.Array[Any], navigationExtras: UrlCreationOptions): UrlTree = js.native
   
-  /* private */ var currentNavigation: Any = js.native
-  
   /**
     * The id of the currently active page in the router.
     * Updated to the transition's target id on a successful navigation.
@@ -165,16 +125,6 @@ open class Router protected () extends StObject {
     */
   /* private */ var currentPageId: Any = js.native
   
-  /**
-    * Represents the activated `UrlTree` that the `Router` is configured to handle (through
-    * `UrlHandlingStrategy`). That is, after we find the route config tree that we're going to
-    * activate, run guards, and are just about to activate the route, we set the currentUrlTree.
-    *
-    * This should match the `browserUrlTree` when a navigation succeeds. If the
-    * `UrlHandlingStrategy.shouldProcessUrl` is `false`, only the `browserUrlTree` is updated.
-    */
-  /* private */ var currentUrlTree: Any = js.native
-  
   /** Disposes of the router. */
   def dispose(): Unit = js.native
   
@@ -182,18 +132,17 @@ open class Router protected () extends StObject {
   
   /**
     * A handler for navigation errors in this NgModule.
+    *
+    * @deprecated Subscribe to the `Router` events and watch for `NavigationError` instead.
+    *   `provideRouter` has the `withNavigationErrorHandler` feature to make this easier.
+    * @see `withNavigationErrorHandler`
     */
   def errorHandler(error: Any): Any = js.native
-  /**
-    * A handler for navigation errors in this NgModule.
-    */
-  @JSName("errorHandler")
-  var errorHandler_Original: ErrorHandler = js.native
   
   /**
-    * An event stream for routing events in this NgModule.
+    * An event stream for routing events.
     */
-  val events: Observable_[Event2] = js.native
+  def events: Observable_[Event2] = js.native
   
   /* private */ var generateNgRouterState: Any = js.native
   
@@ -231,9 +180,13 @@ open class Router protected () extends StObject {
   
   /* private */ var lastSuccessfulId: Any = js.native
   
-  /* private */ var lastSuccessfulNavigation: Any = js.native
+  /**
+    * The `Navigation` object of the most recent navigation to succeed and `null` if there
+    *     has not been a successful navigation yet.
+    */
+  def lastSuccessfulNavigation: Navigation | Null = js.native
   
-  /* private */ var location: Any = js.native
+  /* private */ val location: Any = js.native
   
   /* private */ var locationSubscription: Any = js.native
   
@@ -242,6 +195,10 @@ open class Router protected () extends StObject {
     * when `url` contains an invalid character.
     * The most common case is a `%` sign
     * that's not encoded and is not part of a percent encoded sequence.
+    *
+    * @deprecated URI parsing errors should be handled in the `UrlSerializer`.
+    *
+    * @see `RouterModule`
     */
   def malformedUriErrorHandler(error: js.URIError, urlSerializer: UrlSerializer, url: String): UrlTree = js.native
   
@@ -308,34 +265,39 @@ open class Router protected () extends StObject {
   def navigateByUrl(url: UrlTree, extras: NavigationBehaviorOptions): js.Promise[Boolean] = js.native
   
   /**
+    * Schedules a router navigation to synchronize Router state with the browser state.
+    *
+    * This is done as a response to a popstate event and the initial navigation. These
+    * two scenarios represent times when the browser URL/state has been updated and
+    * the Router needs to respond to ensure its internal state matches.
+    */
+  /* private */ var navigateToSyncWithBrowser: Any = js.native
+  
+  /**
     * True if at least one navigation event has occurred,
     * false otherwise.
     */
   var navigated: Boolean = js.native
   
-  /* private */ var navigationId: Any = js.native
+  /* private */ def navigationId: Any = js.native
   
-  /* private */ var navigations: Any = js.native
-  
-  /* private */ var ngModule: Any = js.native
+  /* private */ val navigationTransitions: Any = js.native
   
   /** @nodoc */
   def ngOnDestroy(): Unit = js.native
   
   /**
-    * How to handle a navigation request to the current URL. One of:
+    * How to handle a navigation request to the current URL.
     *
-    * - `'ignore'` :  The router ignores the request.
-    * - `'reload'` : The router reloads the URL. Use to implement a "refresh" feature.
     *
-    * Note that this only configures whether the Route reprocesses the URL and triggers related
-    * action and events like redirects, guards, and resolvers. By default, the router re-uses a
-    * component instance when it re-navigates to the same component type without visiting a different
-    * component first. This behavior is configured by the `RouteReuseStrategy`. In order to reload
-    * routed components on same url navigation, you need to set `onSameUrlNavigation` to `'reload'`
-    * _and_ provide a `RouteReuseStrategy` which returns `false` for `shouldReuseRoute`.
+    * @deprecated Configure this through `provideRouter` or `RouterModule.forRoot` instead.
+    * @see `withRouterConfig`
+    * @see `provideRouter`
+    * @see `RouterModule`
     */
-  var onSameUrlNavigation: reload | ignore = js.native
+  var onSameUrlNavigation: OnSameUrlNavigation = js.native
+  
+  /* private */ var options: Any = js.native
   
   /**
     * How to merge parameters, data, resolved data, and title from parent to child
@@ -345,34 +307,18 @@ open class Router protected () extends StObject {
     * for path-less or component-less routes.
     * - `'always'` : Inherit parent parameters, data, and resolved data
     * for all child routes.
+    *
+    * @deprecated Configure this through `provideRouter` or `RouterModule.forRoot` instead.
+    * @see `withRouterConfig`
+    * @see `provideRouter`
+    * @see `RouterModule`
     */
   var paramsInheritanceStrategy: emptyOnly | always = js.native
   
   /** Parses a string into a `UrlTree` */
   def parseUrl(url: String): UrlTree = js.native
   
-  /* private */ var processNavigations: Any = js.native
-  
-  /**
-    * Meant to represent the entire browser url after a successful navigation. In the life of a
-    * navigation transition:
-    * 1. The rawUrl represents the full URL that's being navigated to
-    * 2. We apply redirects, which might only apply to _part_ of the URL (due to
-    * `UrlHandlingStrategy`).
-    * 3. Right before activation (because we assume activation will succeed), we update the
-    * rawUrlTree to be a combination of the urlAfterRedirects (again, this might only apply to part
-    * of the initial url) and the rawUrl of the transition (which was the original navigation url in
-    * its full form).
-    */
-  /* private */ var rawUrlTree: Any = js.native
-  
-  /**
-    * Enables a bug fix that corrects relative link resolution in components with empty paths.
-    * @see `RouterModule`
-    *
-    * @deprecated
-    */
-  var relativeLinkResolution: legacy | corrected = js.native
+  /* private */ var pendingTasks: Any = js.native
   
   /* private */ var removeEmptyProps: Any = js.native
   
@@ -399,17 +345,10 @@ open class Router protected () extends StObject {
   /* private */ var resetUrlToCurrentUrlTree: Any = js.native
   
   /**
-    * Performs the necessary rollback action to restore the browser URL to the
-    * state before the transition.
-    */
-  /* private */ var restoreHistory: Any = js.native
-  
-  /* private */ var rootComponentType: Any = js.native
-  
-  /* private */ var rootContexts: Any = js.native
-  
-  /**
     * A strategy for re-using routes.
+    *
+    * @deprecated Configure using `providers` instead:
+    *   `{provide: RouteReuseStrategy, useClass: MyStrategy}`.
     */
   var routeReuseStrategy: RouteReuseStrategy = js.native
   
@@ -418,14 +357,8 @@ open class Router protected () extends StObject {
     */
   val routerState: RouterState = js.native
   
-  /* private */ var scheduleNavigation: Any = js.native
-  
   /** Serializes a `UrlTree` into a string */
   def serializeUrl(url: UrlTree): String = js.native
-  
-  /* private */ var setBrowserUrl: Any = js.native
-  
-  /* private */ var setTransition: Any = js.native
   
   /**
     * Sets up the location change listener. This listener detects navigations triggered from outside
@@ -434,14 +367,13 @@ open class Router protected () extends StObject {
     */
   def setUpLocationChangeListener(): Unit = js.native
   
-  /* private */ var setupNavigations: Any = js.native
-  
   /**
     * A strategy for setting the title based on the `routerState`.
+    *
+    * @deprecated Configure using `providers` instead:
+    *   `{provide: TitleStrategy, useClass: MyStrategy}`.
     */
   var titleStrategy: js.UndefOr[TitleStrategy] = js.native
-  
-  /* private */ val transitions: Any = js.native
   
   /** The current URL. */
   def url: String = js.native
@@ -449,10 +381,13 @@ open class Router protected () extends StObject {
   /**
     * A strategy for extracting and merging URLs.
     * Used for AngularJS to Angular migrations.
+    *
+    * @deprecated Configure using `providers` instead:
+    *   `{provide: UrlHandlingStrategy, useClass: MyStrategy}`.
     */
   var urlHandlingStrategy: UrlHandlingStrategy = js.native
   
-  /* private */ var urlSerializer: Any = js.native
+  /* private */ val urlSerializer: Any = js.native
   
   /**
     * Determines when the router updates the browser URL.
@@ -460,6 +395,11 @@ open class Router protected () extends StObject {
     * Set to `'eager'` to update the browser URL at the beginning of navigation.
     * You can choose to update early so that, if navigation fails,
     * you can show an error message with the URL that failed.
+    *
+    * @deprecated Configure this through `provideRouter` or `RouterModule.forRoot` instead.
+    * @see `withRouterConfig`
+    * @see `provideRouter`
+    * @see `RouterModule`
     */
   var urlUpdateStrategy: deferred | eager = js.native
 }

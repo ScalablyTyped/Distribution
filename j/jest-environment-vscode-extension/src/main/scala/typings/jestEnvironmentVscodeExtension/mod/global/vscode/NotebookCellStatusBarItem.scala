@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class NotebookCellStatusBarItem protected ()
   extends typings.vscode.mod.NotebookCellStatusBarItem {
   /**
-    * Creates a new NotebookCellStatusBarItem.
-    * @param text The text to show for the item.
-    * @param alignment Whether the item is aligned to the left or right.
-    */
+  		 * Creates a new NotebookCellStatusBarItem.
+  		 * @param text The text to show for the item.
+  		 * @param alignment Whether the item is aligned to the left or right.
+  		 */
   def this(text: String, alignment: typings.vscode.mod.NotebookCellStatusBarAlignment) = this()
 }

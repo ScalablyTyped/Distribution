@@ -8,23 +8,20 @@ object libRestMonitorMod {
   
   @JSImport("twilio/lib/rest/Monitor", JSImport.Namespace)
   @js.native
-  open class ^ protected () extends Monitor {
-    /**
-      * Initialize monitor domain
-      *
-      * @param twilio - The twilio client
-      */
-    def this(twilio: typings.twilio.libRestTwilioMod.^) = this()
-  }
+  open class ^ () extends Monitor
   
   @js.native
   trait Monitor
-    extends typings.twilio.libBaseDomainMod.^ {
+    extends typings.twilio.libRestMonitorBaseMod.^ {
     
-    val alerts: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlertListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.alerts instead
+      */
+    def alerts: Any = js.native
     
-    val events: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EventListInstance */ Any = js.native
-    
-    val v1: typings.twilio.libRestMonitorV1Mod.^ = js.native
+    /**
+      * @deprecated - Use v1.events instead
+      */
+    def events: Any = js.native
   }
 }

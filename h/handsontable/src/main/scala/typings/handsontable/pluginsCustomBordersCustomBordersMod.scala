@@ -1,6 +1,6 @@
 package typings.handsontable
 
-import typings.handsontable.anon.From
+import typings.handsontable.anon.To
 import typings.handsontable.coreMod.default
 import typings.handsontable.pluginsBaseMod.BasePlugin
 import org.scalablytyped.runtime.StObject
@@ -60,11 +60,11 @@ object pluginsCustomBordersCustomBordersMod {
   
   trait BorderRange extends StObject {
     
-    var range: From
+    var range: To
   }
   object BorderRange {
     
-    inline def apply(range: From): BorderRange = {
+    inline def apply(range: To): BorderRange = {
       val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any])
       __obj.asInstanceOf[BorderRange]
     }
@@ -72,7 +72,7 @@ object pluginsCustomBordersCustomBordersMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: BorderRange] (val x: Self) extends AnyVal {
       
-      inline def setRange(value: From): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: To): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     }
   }
   
@@ -83,7 +83,7 @@ object pluginsCustomBordersCustomBordersMod {
   trait DetailedSettings extends StObject
   object DetailedSettings {
     
-    inline def BorderRangeleftBorderOpti(range: From): typings.handsontable.anon.BorderRangeleftBorderOpti = {
+    inline def BorderRangeleftBorderOpti(range: To): typings.handsontable.anon.BorderRangeleftBorderOpti = {
       val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.handsontable.anon.BorderRangeleftBorderOpti]
     }

@@ -47,6 +47,11 @@ object anon {
       ] = js.undefined
     
     /**
+      * Validator name.
+      */
+    var name: js.UndefOr[String] = js.undefined
+    
+    /**
       * Specific validation type options.
       */
     var options: js.UndefOr[Any] = js.undefined
@@ -101,6 +106,10 @@ object anon {
       ): Self = StObject.set(x, "message", js.Any.fromFunction3(value))
       
       inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       

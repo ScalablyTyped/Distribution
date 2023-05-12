@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@commitlint/config-validator" : "17.1.0"
+      "@commitlint/config-validator" : "17.4.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@commitlint/config-validator" : "17.1.0"
+      "@commitlint/config-validator" : "17.4.4"
     }
   ],
   "compile-devDependencies" : [

@@ -2,7 +2,7 @@ package typings.playcanvas.mod
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable2
-import typings.playcanvas.anon.Name
+import typings.playcanvas.anon.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ open class AnimationComponentSystem protected () extends ComponentSystem {
   /**
     * Create a new ComponentSystem instance.
     *
-    * @param {AppBase} app - The application managing this system.
+    * @param {import('../app-base.js').AppBase} app - The application managing this system.
     */
   def this(app: AppBase) = this()
   
@@ -39,10 +39,10 @@ open class AnimationComponentSystem protected () extends ComponentSystem {
     * A descriptor can be either a plain property name, or an object specifying the name and type.
     * @ignore
     */
-  def initializeComponentData(component: AnimationComponent, data: js.Object, properties: js.Array[String | Name]): Unit = js.native
+  def initializeComponentData(component: AnimationComponent, data: js.Object, properties: js.Array[String | Type]): Unit = js.native
   
   /**
-    * @param {Entity} entity - The entity having its component removed.
+    * @param {import('../../entity.js').Entity} entity - The entity having its component removed.
     * @param {AnimationComponent} component - The component being removed.
     * @private
     */

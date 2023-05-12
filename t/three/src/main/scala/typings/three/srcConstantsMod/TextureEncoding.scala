@@ -1,13 +1,17 @@
 package typings.three.srcConstantsMod
 
-import typings.three.srcConstantsMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait TextureEncoding extends StObject
+/* Rewritten from type alias, can be one of: 
+  - typings.three.threeInts.`3000`
+  - typings.three.threeInts.`3001`
+*/
+trait TextureEncoding extends StObject
 object TextureEncoding {
   
-  inline def apply(value: scala.Nothing): js.UndefOr[TextureEncoding & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("TextureEncoding")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[TextureEncoding & scala.Nothing]]
+  inline def `3000`: typings.three.threeInts.`3000` = 3000.asInstanceOf[typings.three.threeInts.`3000`]
+  
+  inline def `3001`: typings.three.threeInts.`3001` = 3001.asInstanceOf[typings.three.threeInts.`3001`]
 }

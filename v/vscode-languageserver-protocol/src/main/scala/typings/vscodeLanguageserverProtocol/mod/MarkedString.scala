@@ -18,7 +18,7 @@ object MarkedString {
   inline def fromPlainText(plainText: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPlainText")(plainText.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
-    * Checks whether the given value conforms to the [MarkedString](#MarkedString) type.
+    * Checks whether the given value conforms to the {@link MarkedString} type.
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.MarkedString */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.MarkedString */ Boolean]
 }

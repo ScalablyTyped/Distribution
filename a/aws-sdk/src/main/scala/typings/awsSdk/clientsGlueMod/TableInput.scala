@@ -27,7 +27,7 @@ trait TableInput extends StObject {
   var Name: NameString
   
   /**
-    * The table owner.
+    * The table owner. Included for Apache Hive compatibility. Not used in the normal course of Glue operations.
     */
   var Owner: js.UndefOr[NameString] = js.undefined
   
@@ -52,7 +52,7 @@ trait TableInput extends StObject {
   var StorageDescriptor: js.UndefOr[typings.awsSdk.clientsGlueMod.StorageDescriptor] = js.undefined
   
   /**
-    * The type of this table (EXTERNAL_TABLE, VIRTUAL_VIEW, etc.).
+    * The type of this table. Glue will create tables with the EXTERNAL_TABLE type. Other services, such as Athena, may create tables with additional table types.  Glue related table types:  EXTERNAL_TABLE  Hive compatible attribute - indicates a non-Hive managed table.  GOVERNED  Used by Lake Formation. The Glue Data Catalog understands GOVERNED.  
     */
   var TableType: js.UndefOr[TableTypeString] = js.undefined
   
@@ -62,12 +62,12 @@ trait TableInput extends StObject {
   var TargetTable: js.UndefOr[TableIdentifier] = js.undefined
   
   /**
-    * If the table is a view, the expanded text of the view; otherwise null.
+    * Included for Apache Hive compatibility. Not used in the normal course of Glue operations.
     */
   var ViewExpandedText: js.UndefOr[ViewTextString] = js.undefined
   
   /**
-    * If the table is a view, the original text of the view; otherwise null.
+    * Included for Apache Hive compatibility. Not used in the normal course of Glue operations. If the table is a VIRTUAL_VIEW, certain Athena configuration encoded in base64.
     */
   var ViewOriginalText: js.UndefOr[ViewTextString] = js.undefined
 }

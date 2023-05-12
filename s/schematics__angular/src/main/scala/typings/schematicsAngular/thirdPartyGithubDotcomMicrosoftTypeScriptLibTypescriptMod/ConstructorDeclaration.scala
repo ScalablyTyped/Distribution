@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConstructorDeclaration
   extends StObject
      with FunctionLikeDeclarationBase
+     with LocalsContainer
      with FunctionLikeDeclaration
      with HasJSDoc
      with HasModifiers
@@ -27,8 +28,7 @@ trait ConstructorDeclaration
   @JSName("kind")
   val kind_ConstructorDeclaration: Constructor = js.native
   
-  @JSName("modifiers")
-  val modifiers_ConstructorDeclaration: js.UndefOr[NodeArray[Modifier]] = js.native
+  val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
   
   @JSName("parent")
   val parent_ConstructorDeclaration: ClassLikeDeclaration = js.native

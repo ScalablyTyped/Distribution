@@ -19,7 +19,7 @@ object mod {
     def this(props: CSSGridProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: CSSGridProps, context: Any) = this()
   }
@@ -31,7 +31,7 @@ object mod {
     def this(props: SpringGridProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SpringGridProps, context: Any) = this()
   }

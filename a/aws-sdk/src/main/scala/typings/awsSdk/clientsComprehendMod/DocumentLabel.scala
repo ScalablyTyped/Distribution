@@ -12,6 +12,11 @@ trait DocumentLabel extends StObject {
   var Name: js.UndefOr[String] = js.undefined
   
   /**
+    * Page number where the label occurs. This field is present in the response only if your request includes the Byte parameter. 
+    */
+  var Page: js.UndefOr[Integer] = js.undefined
+  
+  /**
     * The confidence score that Amazon Comprehend has this label correctly attributed.
     */
   var Score: js.UndefOr[Float] = js.undefined
@@ -29,6 +34,10 @@ object DocumentLabel {
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    
+    inline def setPage(value: Integer): Self = StObject.set(x, "Page", value.asInstanceOf[js.Any])
+    
+    inline def setPageUndefined: Self = StObject.set(x, "Page", js.undefined)
     
     inline def setScore(value: Float): Self = StObject.set(x, "Score", value.asInstanceOf[js.Any])
     

@@ -862,8 +862,6 @@ object sapFSemanticSemanticPageMod {
       * If all the areas have assigned values greater than 1, the numbers are scaled so that at least one of
       * them is equal to 1. For example, value of `2:4:8` is equal to `1:2:4`.
       *
-      *  When this property is set the `titlePrimaryArea` property has no effect.
-      *
       * Default value is `"1:1.6:1.6"`.
       *
       * @returns Value of property `titleAreaShrinkRatio`
@@ -1940,8 +1938,6 @@ object sapFSemanticSemanticPageMod {
       * If all the areas have assigned values greater than 1, the numbers are scaled so that at least one of
       * them is equal to 1. For example, value of `2:4:8` is equal to `1:2:4`.
       *
-      *  When this property is set the `titlePrimaryArea` property has no effect.
-      *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
       * Default value is `"1:1.6:1.6"`.
@@ -2003,43 +1999,6 @@ object sapFSemanticSemanticPageMod {
       */
     oTitleMainAction: typings.openui5.sapFSemanticTitleMainActionMod.default
     ): this.type = js.native
-    
-    /**
-      * @SINCE 1.52
-      * @deprecated (since 1.58) - Please use the `titleAreaShrinkRatio` property instead. The value of `titleAreaShrinkRatio`
-      * must be set in `Heading:Content:Actions` format where Heading, Content and Actions are numbers greater
-      * than or equal to 0. The greater value a section has the faster it shrinks when the screen size is being
-      * reduced.
-      *
-      * `titlePrimaryArea=Begin` can be achieved by setting a low number for the Heading area to `titleAreaShrinkRatio`,
-      * for example `1:1.6:1.6`.
-      *
-      * `titlePrimaryArea=Middle` can be achieved by setting a low number for the Content area to `titleAreaShrinkRatio`,
-      * for example `1.6:1:1.6`.
-      *
-      * Sets a new value for property {@link #getTitlePrimaryArea titlePrimaryArea}.
-      *
-      * Determines which of the title areas (Begin, Middle) is primary.
-      *
-      * **Note:** The primary area is shrinking at a lower rate, remaining visible as long as it can.
-      *
-      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
-      *
-      * Default value is `Begin`.
-      *
-      * @returns Reference to `this` in order to allow method chaining
-      */
-    def setTitlePrimaryArea(): this.type = js.native
-    def setTitlePrimaryArea(
-      /**
-      * New value for property `titlePrimaryArea`
-      */
-    sTitlePrimaryArea: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DynamicPageTitleArea * / any */ String
-    ): this.type = js.native
-    def setTitlePrimaryArea(/**
-      * New value for property `titlePrimaryArea`
-      */
-    sTitlePrimaryArea: DynamicPageTitleArea): this.type = js.native
     
     /**
       * @SINCE 1.58
@@ -2396,8 +2355,6 @@ object sapFSemanticSemanticPageMod {
       *
       * If all the areas have assigned values greater than 1, the numbers are scaled so that at least one of
       * them is equal to 1. For example, value of `2:4:8` is equal to `1:2:4`.
-      *
-      *  When this property is set the `titlePrimaryArea` property has no effect.
       */
     var titleAreaShrinkRatio: js.UndefOr[
         DynamicPageTitleShrinkRatio | PropertyBindingInfo | (/* template literal string: {${string}} */ String)

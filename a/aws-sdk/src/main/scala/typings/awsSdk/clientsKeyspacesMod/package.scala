@@ -10,6 +10,8 @@ type ARN = java.lang.String
 
 type CapacityUnits = Double
 
+type ClientSideTimestampsStatus = ENABLED | java.lang.String
+
 type ClusteringKeyList = js.Array[ClusteringKey]
 
 type ColumnDefinitionList = js.Array[ColumnDefinition]

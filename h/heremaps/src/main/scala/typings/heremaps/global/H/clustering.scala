@@ -14,10 +14,10 @@ object clustering {
   
   /**
     * This class represents the input data structure for data points to be clustered.
-    * @property lat {H.geo.Latitude} - The latitude coordinate of the data point's position
-    * @property lng {H.geo.Longitude} - The longitude coordinate of the data point's position
-    * @property wt {number} - The weight of the data point
-    * @property data {*} - Data associated with this data point
+    * lat {H.geo.Latitude} - The latitude coordinate of the data point's position
+    * lng {H.geo.Longitude} - The longitude coordinate of the data point's position
+    * wt {number} - The weight of the data point
+    * data {*} - Data associated with this data point
     */
   @JSGlobal("H.clustering.DataPoint")
   @js.native
@@ -60,8 +60,8 @@ object clustering {
   /**
     * The clustering provider serves clusters and noise point representation for the map depending on the provided data set.
     * Levels for clustering as well as custom cluster representation can be set via Options.
-    * @property min {number} - Minimum zoom level at which provider can cluster data
-    * @property max {number} - Maximum zoom level at which provider can cluster data
+    * min {number} - Minimum zoom level at which provider can cluster data
+    * max {number} - Maximum zoom level at which provider can cluster data
     */
   @JSGlobal("H.clustering.Provider")
   @js.native

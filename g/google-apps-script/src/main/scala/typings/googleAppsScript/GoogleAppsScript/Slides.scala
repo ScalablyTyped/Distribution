@@ -9341,6 +9341,8 @@ object Slides {
     
     def insertWordArt(wordArt: typings.googleAppsScript.GoogleAppsScript.Slides.WordArt): typings.googleAppsScript.GoogleAppsScript.Slides.WordArt = js.native
     
+    def isSkipped(): Boolean = js.native
+    
     def move(index: Integer): Unit = js.native
     
     def refreshSlide(): Unit = js.native

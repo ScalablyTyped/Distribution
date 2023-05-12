@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ScrollSnapCoordinate
+import typings.csstype.mod.Property.InsetBlockStart
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `226` extends StObject {
   
   var value: js.UndefOr[
-    (ScrollSnapCoordinate[Double | String]) | (js.Array[
+    (InsetBlockStart[Double | String]) | (js.Array[
       (Extract[
         js.UndefOr[
-          (ScrollSnapCoordinate[Double | String]) | (js.Array[NonNullable[js.UndefOr[ScrollSnapCoordinate[Double | String]]]])
+          (InsetBlockStart[Double | String]) | (js.Array[NonNullable[js.UndefOr[InsetBlockStart[Double | String]]]])
         ], 
         String
-      ]) | (NonNullable[js.UndefOr[ScrollSnapCoordinate[Double | String]]])
+      ]) | (NonNullable[js.UndefOr[InsetBlockStart[Double | String]]])
     ])
   ] = js.native
 }

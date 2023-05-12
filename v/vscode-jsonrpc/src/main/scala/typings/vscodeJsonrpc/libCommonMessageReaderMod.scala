@@ -118,6 +118,8 @@ object libCommonMessageReaderMod {
     
     /* private */ var partialMessageTimer: Any = js.native
     
+    /* private */ var readSemaphore: Any = js.native
+    
     /* private */ var readable: Any = js.native
     
     /* private */ var setPartialMessageTimer: Any = js.native

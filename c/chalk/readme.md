@@ -1,7 +1,7 @@
 
 # Scala.js typings for chalk
 
-Typings are for version 5.1.2
+Typings are for version 5.2.0
 
 ## Library description:
 Terminal string styling done right

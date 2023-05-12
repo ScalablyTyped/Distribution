@@ -60,6 +60,11 @@ open class Cesium3DTileContent () extends StObject {
   val pointsLength: Double = js.native
   
   /**
+    * Returns true when the tile's content is ready to render; otherwise false
+    */
+  val ready: Boolean = js.native
+  
+  /**
     * Gets the promise that will be resolved when the tile's content is ready to render.
     */
   val readyPromise: js.Promise[Cesium3DTileContent] = js.native

@@ -9,7 +9,10 @@ trait JSDocSignature
   extends StObject
      with JSDocType
      with Declaration
-     with DeclarationWithTypeParameters {
+     with JSDocContainer
+     with LocalsContainer
+     with DeclarationWithTypeParameters
+     with HasJSDoc {
   
   @JSName("kind")
   val kind_JSDocSignature: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.SyntaxKind.JSDocSignature = js.native

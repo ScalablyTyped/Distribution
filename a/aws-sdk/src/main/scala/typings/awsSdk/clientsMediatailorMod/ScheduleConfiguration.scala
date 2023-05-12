@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScheduleConfiguration extends StObject {
   
   /**
+    * Program clip range configuration.
+    */
+  var ClipRange: js.UndefOr[typings.awsSdk.clientsMediatailorMod.ClipRange] = js.undefined
+  
+  /**
     * Program transition configurations.
     */
   var Transition: typings.awsSdk.clientsMediatailorMod.Transition
@@ -20,6 +25,10 @@ object ScheduleConfiguration {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: ScheduleConfiguration] (val x: Self) extends AnyVal {
+    
+    inline def setClipRange(value: ClipRange): Self = StObject.set(x, "ClipRange", value.asInstanceOf[js.Any])
+    
+    inline def setClipRangeUndefined: Self = StObject.set(x, "ClipRange", js.undefined)
     
     inline def setTransition(value: Transition): Self = StObject.set(x, "Transition", value.asInstanceOf[js.Any])
   }

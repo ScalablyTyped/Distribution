@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InputFileLocation extends StObject {
   
   /**
-    * Reserved for future use.
+    * Specifies the details for the Amazon Elastic File System (Amazon EFS) file that's being decrypted.
     */
   var EfsFileLocation: js.UndefOr[typings.awsSdk.clientsTransferMod.EfsFileLocation] = js.undefined
   
   /**
-    * Specifies the details for the S3 file being copied.
+    * Specifies the details for the Amazon S3 file that's being copied or decrypted.
     */
   var S3FileLocation: js.UndefOr[S3InputFileLocation] = js.undefined
 }

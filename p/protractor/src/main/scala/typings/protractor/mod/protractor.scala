@@ -17,7 +17,6 @@ object protractor extends Shortcut {
   @js.native
   // region Constructors
   /**
-    * @constructor
     */
   open class BuilderCls ()
     extends typings.seleniumWebdriver.mod.Builder
@@ -38,7 +37,6 @@ object protractor extends Shortcut {
   @js.native
   // region Constructors
   /**
-    * @constructor
     */
   open class EventEmitterCls ()
     extends typings.seleniumWebdriver.mod.EventEmitter
@@ -46,7 +44,6 @@ object protractor extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("protractor", "protractor.FileDetector")
   @js.native
-  /** @constructor */
   open class FileDetectorCls ()
     extends typings.seleniumWebdriver.mod.FileDetector
   
@@ -60,7 +57,6 @@ object protractor extends Shortcut {
       * @param {string} id The session ID.
       * @param {!(Object|Capabilities)} capabilities The session
       *     capabilities.
-      * @constructor
       */
     def this(id: String, capabilities: typings.seleniumWebdriver.libCapabilitiesMod.Capabilities) = this()
   }

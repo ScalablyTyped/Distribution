@@ -8,7 +8,6 @@ import typings.rxjs.mod.Observable_
 import typings.rxjs.mod.Subject
 import typings.rxjs.mod.Subscription
 import typings.std.Partial
-import typings.std.PromiseConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,8 +36,6 @@ object srcLoggerLoggerMod {
     def asApi(): LoggerApi = js.native
     
     def complete(): Unit = js.native
-    
-    def forEach(next: js.Function1[/* value */ LogEntry, Unit], PromiseCtor: PromiseConstructor): js.Promise[Unit] = js.native
     
     val name: String = js.native
     

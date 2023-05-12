@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The type that defines the props for an Icon button, extending from a basic HTML button attributes */
-trait IconButtonProps[T, F]
+trait IconButtonProps[T, S /* <: StrictRJSFSchema */, F /* <: FormContextType */]
   extends StObject
      with ButtonHTMLAttributes[HTMLButtonElement] {
   
@@ -18,18 +18,21 @@ trait IconButtonProps[T, F]
   /** An alternative specification for the type of the icon button */
   var iconType: js.UndefOr[String] = js.undefined
   
+  /** The `registry` object */
+  var registry: Registry[T, S, F]
+  
   /** The uiSchema for this widget */
-  var uiSchema: js.UndefOr[UiSchema[T, F]] = js.undefined
+  var uiSchema: js.UndefOr[UiSchema[T, S, F]] = js.undefined
 }
 object IconButtonProps {
   
-  inline def apply[T, F](): IconButtonProps[T, F] = {
-    val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[IconButtonProps[T, F]]
+  inline def apply[T, S /* <: StrictRJSFSchema */, F /* <: FormContextType */](registry: Registry[T, S, F]): IconButtonProps[T, S, F] = {
+    val __obj = js.Dynamic.literal(registry = registry.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IconButtonProps[T, S, F]]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: IconButtonProps[?, ?], T, F] (val x: Self & (IconButtonProps[T, F])) extends AnyVal {
+  implicit open class MutableBuilder[Self <: IconButtonProps[?, ?, ?], T, S /* <: StrictRJSFSchema */, F /* <: FormContextType */] (val x: Self & (IconButtonProps[T, S, F])) extends AnyVal {
     
     inline def setIcon(value: String | ReactElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
@@ -39,7 +42,9 @@ object IconButtonProps {
     
     inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    inline def setUiSchema(value: UiSchema[T, F]): Self = StObject.set(x, "uiSchema", value.asInstanceOf[js.Any])
+    inline def setRegistry(value: Registry[T, S, F]): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
+    
+    inline def setUiSchema(value: UiSchema[T, S, F]): Self = StObject.set(x, "uiSchema", value.asInstanceOf[js.Any])
     
     inline def setUiSchemaUndefined: Self = StObject.set(x, "uiSchema", js.undefined)
   }

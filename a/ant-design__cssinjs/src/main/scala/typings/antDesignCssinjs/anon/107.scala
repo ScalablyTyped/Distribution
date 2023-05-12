@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MarginBlockEnd
+import typings.csstype.mod.Property.OffsetPath
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `107` extends StObject {
   
   var value: js.UndefOr[
-    (MarginBlockEnd[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (MarginBlockEnd[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginBlockEnd[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[MarginBlockEnd[Double | String]]])
+    OffsetPath | (js.Array[
+      (Extract[js.UndefOr[OffsetPath | js.Array[NonNullable[js.UndefOr[OffsetPath]]]], String]) | NonNullable[js.UndefOr[OffsetPath]]
     ])
   ] = js.native
 }

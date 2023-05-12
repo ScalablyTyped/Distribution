@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "postcss-minify-gradients" : "5.1.1"
+      "postcss-minify-gradients" : "6.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "postcss-minify-gradients" : "5.1.1"
+      "postcss-minify-gradients" : "6.0.0"
     }
   ],
   "compile-devDependencies" : [

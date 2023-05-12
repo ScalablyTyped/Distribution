@@ -12,11 +12,11 @@ trait Introduced extends StObject {
   
   var introduced: String
   
-  var replacement: Unit
+  var pixelValue: String
   
   var state: String
   
-  var suggest: js.Array[String]
+  var suggest: Unit
 }
 object Introduced {
   
@@ -24,11 +24,11 @@ object Introduced {
     description: String,
     group: String,
     introduced: String,
-    replacement: Unit,
+    pixelValue: String,
     state: String,
-    suggest: js.Array[String]
+    suggest: Unit
   ): Introduced = {
-    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], introduced = introduced.asInstanceOf[js.Any], replacement = replacement.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], suggest = suggest.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], introduced = introduced.asInstanceOf[js.Any], pixelValue = pixelValue.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], suggest = suggest.asInstanceOf[js.Any])
     __obj.asInstanceOf[Introduced]
   }
   
@@ -41,12 +41,10 @@ object Introduced {
     
     inline def setIntroduced(value: String): Self = StObject.set(x, "introduced", value.asInstanceOf[js.Any])
     
-    inline def setReplacement(value: Unit): Self = StObject.set(x, "replacement", value.asInstanceOf[js.Any])
+    inline def setPixelValue(value: String): Self = StObject.set(x, "pixelValue", value.asInstanceOf[js.Any])
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    inline def setSuggest(value: js.Array[String]): Self = StObject.set(x, "suggest", value.asInstanceOf[js.Any])
-    
-    inline def setSuggestVarargs(value: String*): Self = StObject.set(x, "suggest", js.Array(value*))
+    inline def setSuggest(value: Unit): Self = StObject.set(x, "suggest", value.asInstanceOf[js.Any])
   }
 }

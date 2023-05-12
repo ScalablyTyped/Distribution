@@ -22,7 +22,8 @@ trait TypeofEmailValidator
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    `false`, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[EmailValidator, scala.Nothing] = js.native

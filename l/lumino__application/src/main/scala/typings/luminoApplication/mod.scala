@@ -9,7 +9,7 @@ import typings.luminoWidgets.mod.Widget
 import typings.luminoWidgets.typesMenuMod.Menu.IRenderer
 import typings.std.Event
 import typings.std.KeyboardEvent
-import typings.std.MouseEvent
+import typings.std.PointerEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,14 +28,14 @@ object mod {
     
     /* private */ var _delegate: Any = js.native
     
-    /* private */ var _pluginMap: Any = js.native
+    /* private */ var _plugins: Any = js.native
     
-    /* private */ var _serviceMap: Any = js.native
+    /* private */ var _services: Any = js.native
     
     /* private */ var _started: Any = js.native
     
     /**
-      * Activate the plugin with the given id.
+      * Activate the plugin with the given ID.
       *
       * @param id - The ID of the plugin of interest.
       *
@@ -58,10 +58,10 @@ object mod {
     /**
       * Attach the application shell to the DOM.
       *
-      * @param id - The id of the host node for the shell, or `''`.
+      * @param id - The ID of the host node for the shell, or `''`.
       *
       * #### Notes
-      * If the id is not provided, the document body will be the host.
+      * If the ID is not provided, the document body will be the host.
       *
       * A subclass may reimplement this method as needed.
       */
@@ -78,6 +78,26 @@ object mod {
     val contextMenu: ContextMenu = js.native
     
     /**
+      * Deactivate the plugin and its downstream dependents if and only if the
+      * plugin and its dependents all support `deactivate`.
+      *
+      * @param id - The ID of the plugin of interest.
+      *
+      * @returns A list of IDs of downstream plugins deactivated with this one.
+      */
+    def deactivatePlugin(id: String): js.Promise[js.Array[String]] = js.native
+    
+    /**
+      * Deregister a plugin with the application.
+      *
+      * @param id - The ID of the plugin of interest.
+      *
+      * @param force - Whether to deregister the plugin even if it is active.
+      */
+    def deregisterPlugin(id: String): Unit = js.native
+    def deregisterPlugin(id: String, force: Boolean): Unit = js.native
+    
+    /**
       * A method invoked on a document `'contextmenu'` event.
       *
       * #### Notes
@@ -90,7 +110,7 @@ object mod {
       *
       * A subclass may reimplement this method as needed.
       */
-    /* protected */ def evtContextMenu(event: MouseEvent): Unit = js.native
+    /* protected */ def evtContextMenu(event: PointerEvent): Unit = js.native
     
     /**
       * A method invoked on a document `'keydown'` event.
@@ -114,6 +134,15 @@ object mod {
     /* protected */ def evtResize(event: Event): Unit = js.native
     
     /**
+      * Get a plugin description.
+      *
+      * @param id - The ID of the plugin of interest.
+      *
+      * @returns The plugin description.
+      */
+    def getPluginDescription(id: String): String = js.native
+    
+    /**
       * Handle the DOM events for the application.
       *
       * @param event - The DOM event sent to the application.
@@ -128,11 +157,20 @@ object mod {
     /**
       * Test whether a plugin is registered with the application.
       *
-      * @param id - The id of the plugin of interest.
+      * @param id - The ID of the plugin of interest.
       *
       * @returns `true` if the plugin is registered, `false` otherwise.
       */
     def hasPlugin(id: String): Boolean = js.native
+    
+    /**
+      * Test whether a plugin is activated with the application.
+      *
+      * @param id - The ID of the plugin of interest.
+      *
+      * @returns `true` if the plugin is activated, `false` otherwise.
+      */
+    def isPluginActivated(id: String): Boolean = js.native
     
     /**
       * List the IDs of the plugins registered with the application.
@@ -147,7 +185,7 @@ object mod {
       * @param plugin - The plugin to register.
       *
       * #### Notes
-      * An error will be thrown if a plugin with the same id is already
+      * An error will be thrown if a plugin with the same ID is already
       * registered, or if the plugin has a circular dependency.
       *
       * If the plugin provides a service which has already been provided
@@ -248,7 +286,7 @@ object mod {
       * This promise will resolve after the `start()` method is called,
       * when all the bootstrapping and shell mounting work is complete.
       */
-    val started: js.Promise[Unit] = js.native
+    def started: js.Promise[Unit] = js.native
   }
   object Application {
     
@@ -347,7 +385,7 @@ object mod {
     }
   }
   
-  trait IPlugin[T, U] extends StObject {
+  trait IPlugin[T /* <: Application[Widget] */, U] extends StObject {
     
     /**
       * A function invoked to activate the plugin.
@@ -377,7 +415,25 @@ object mod {
     var autoStart: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * The human readable id of the plugin.
+      * A function invoked to deactivate the plugin.
+      *
+      * @param app - The application which owns the plugin.
+      *
+      * @param args - The services specified by the `requires` property.
+      */
+    var deactivate: js.UndefOr[(js.Function2[/* app */ T, /* repeated */ Any, Unit | js.Promise[Unit]]) | Null] = js.undefined
+    
+    /**
+      * Plugin description.
+      *
+      * #### Notes
+      * This can be used to provide user documentation on the feature
+      * brought by a plugin.
+      */
+    var description: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The human readable ID of the plugin.
       *
       * #### Notes
       * This must be unique within an application.
@@ -406,7 +462,7 @@ object mod {
       * When the plugin is activated, the return value of `activate()`
       * is used as the concrete instance of the type.
       */
-    var provides: js.UndefOr[Token[U]] = js.undefined
+    var provides: js.UndefOr[Token[U] | Null] = js.undefined
     
     /**
       * The types of required services for the plugin, if any.
@@ -423,19 +479,29 @@ object mod {
   }
   object IPlugin {
     
-    inline def apply[T, U](activate: (T, /* repeated */ Any) => U | js.Promise[U], id: String): IPlugin[T, U] = {
+    inline def apply[T /* <: Application[Widget] */, U](activate: (T, /* repeated */ Any) => U | js.Promise[U], id: String): IPlugin[T, U] = {
       val __obj = js.Dynamic.literal(activate = js.Any.fromFunction2(activate), id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPlugin[T, U]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: IPlugin[?, ?], T, U] (val x: Self & (IPlugin[T, U])) extends AnyVal {
+    implicit open class MutableBuilder[Self <: IPlugin[?, ?], T /* <: Application[Widget] */, U] (val x: Self & (IPlugin[T, U])) extends AnyVal {
       
       inline def setActivate(value: (T, /* repeated */ Any) => U | js.Promise[U]): Self = StObject.set(x, "activate", js.Any.fromFunction2(value))
       
       inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
       
       inline def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
+      
+      inline def setDeactivate(value: (/* app */ T, /* repeated */ Any) => Unit | js.Promise[Unit]): Self = StObject.set(x, "deactivate", js.Any.fromFunction2(value))
+      
+      inline def setDeactivateNull: Self = StObject.set(x, "deactivate", null)
+      
+      inline def setDeactivateUndefined: Self = StObject.set(x, "deactivate", js.undefined)
+      
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -446,6 +512,8 @@ object mod {
       inline def setOptionalVarargs(value: Token[Any]*): Self = StObject.set(x, "optional", js.Array(value*))
       
       inline def setProvides(value: Token[U]): Self = StObject.set(x, "provides", value.asInstanceOf[js.Any])
+      
+      inline def setProvidesNull: Self = StObject.set(x, "provides", null)
       
       inline def setProvidesUndefined: Self = StObject.set(x, "provides", js.undefined)
       

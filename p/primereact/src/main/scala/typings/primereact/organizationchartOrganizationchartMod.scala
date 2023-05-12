@@ -30,6 +30,7 @@ import typings.primereact.primereactStrings.location
 import typings.primereact.primereactStrings.menu
 import typings.primereact.primereactStrings.mixed
 import typings.primereact.primereactStrings.move
+import typings.primereact.primereactStrings.multiple
 import typings.primereact.primereactStrings.no
 import typings.primereact.primereactStrings.none
 import typings.primereact.primereactStrings.numeric
@@ -41,6 +42,7 @@ import typings.primereact.primereactStrings.polite
 import typings.primereact.primereactStrings.popup
 import typings.primereact.primereactStrings.removals
 import typings.primereact.primereactStrings.search
+import typings.primereact.primereactStrings.single
 import typings.primereact.primereactStrings.spelling
 import typings.primereact.primereactStrings.step
 import typings.primereact.primereactStrings.tel
@@ -50,6 +52,8 @@ import typings.primereact.primereactStrings.tree
 import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.yes
+import typings.primereact.utilsUtilsMod.IconOptions
+import typings.primereact.utilsUtilsMod.IconType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -102,23 +106,46 @@ object organizationchartOrganizationchartMod {
     def this(props: OrganizationChartProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: OrganizationChartProps, context: Any) = this()
     
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
   }
   
+  /**
+    * Custom organizationchart node data.
+    */
   trait OrganizationChartNodeData extends StObject {
     
+    /**
+      * The child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[js.Array[OrganizationChartNodeData]] = js.undefined
     
+    /**
+      * Style class of the node.
+      */
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * Visibility of node.
+      */
     var expanded: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Label of node.
+      */
     var label: js.UndefOr[String] = js.undefined
     
+    /**
+      * Whether the node is selectable when selection mode is enabled.
+      */
     var selectable: js.UndefOr[Boolean] = js.undefined
   }
   object OrganizationChartNodeData {
@@ -155,25 +182,34 @@ object organizationchartOrganizationchartMod {
     }
   }
   
-  type OrganizationChartNodeDataType = js.UndefOr[OrganizationChartNodeData | Null]
-  
-  trait OrganizationChartNodeSelectParams extends StObject {
+  /**
+    * Custom node select event.
+    * @see {@link OrganizationChartProps.onNodeSelect}
+    * @event
+    */
+  trait OrganizationChartNodeSelectEvent extends StObject {
     
-    var node: OrganizationChartNodeDataType
+    /**
+      * Selected node instance.
+      */
+    var node: js.UndefOr[OrganizationChartNodeData | Null] = js.undefined
     
+    /**
+      * Browser event.
+      */
     var originalEvent: SyntheticEvent[Element, Event]
   }
-  object OrganizationChartNodeSelectParams {
+  object OrganizationChartNodeSelectEvent {
     
-    inline def apply(originalEvent: SyntheticEvent[Element, Event]): OrganizationChartNodeSelectParams = {
+    inline def apply(originalEvent: SyntheticEvent[Element, Event]): OrganizationChartNodeSelectEvent = {
       val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any])
-      __obj.asInstanceOf[OrganizationChartNodeSelectParams]
+      __obj.asInstanceOf[OrganizationChartNodeSelectEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: OrganizationChartNodeSelectParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: OrganizationChartNodeSelectEvent] (val x: Self) extends AnyVal {
       
-      inline def setNode(value: OrganizationChartNodeDataType): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: OrganizationChartNodeData): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
       inline def setNodeNull: Self = StObject.set(x, "node", null)
       
@@ -183,7 +219,42 @@ object organizationchartOrganizationchartMod {
     }
   }
   
-  type OrganizationChartNodeUnselectParams = OrganizationChartNodeSelectParams
+  /**
+    * Custom node unselect event.
+    * @see {@link OrganizationChartProps.onNodeUnselect}
+    * @event
+    */
+  trait OrganizationChartNodeUnselectEvent extends StObject {
+    
+    /**
+      * Unselected node instance.
+      */
+    var node: js.UndefOr[OrganizationChartNodeData | Null] = js.undefined
+    
+    /**
+      * Browser event.
+      */
+    var originalEvent: SyntheticEvent[Element, Event]
+  }
+  object OrganizationChartNodeUnselectEvent {
+    
+    inline def apply(originalEvent: SyntheticEvent[Element, Event]): OrganizationChartNodeUnselectEvent = {
+      val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any])
+      __obj.asInstanceOf[OrganizationChartNodeUnselectEvent]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OrganizationChartNodeUnselectEvent] (val x: Self) extends AnyVal {
+      
+      inline def setNode(value: OrganizationChartNodeData): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      
+      inline def setNodeNull: Self = StObject.set(x, "node", null)
+      
+      inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+      
+      inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    }
+  }
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
   trait OrganizationChartProps extends StObject {
@@ -294,13 +365,21 @@ object organizationchartOrganizationchartMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -342,6 +421,10 @@ object organizationchartOrganizationchartMod {
     
     var lang: js.UndefOr[String] = js.undefined
     
+    /**
+      * Template function that gets a node as a parameter and returns a content.
+      * @param {OrganizationChartNodeData} node - A node instance.
+      */
     var nodeTemplate: js.UndefOr[js.Function1[/* node */ OrganizationChartNodeData, ReactNode]] = js.undefined
     
     var nonce: js.UndefOr[String] = js.undefined
@@ -442,9 +525,17 @@ object organizationchartOrganizationchartMod {
     
     var onMouseUp: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onNodeSelect: js.UndefOr[js.Function1[/* e */ OrganizationChartNodeSelectParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when a node is selected.
+      * @param {OrganizationChartNodeSelectEvent} event - Custom node select event.
+      */
+    var onNodeSelect: js.UndefOr[js.Function1[/* event */ OrganizationChartNodeSelectEvent, Unit]] = js.undefined
     
-    var onNodeUnselect: js.UndefOr[js.Function1[/* e */ OrganizationChartNodeUnselectParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when a node is unselected.
+      * @param {OrganizationChartNodeUnselectEvent} event - Custom node unselect event.
+      */
+    var onNodeUnselect: js.UndefOr[js.Function1[/* event */ OrganizationChartNodeUnselectEvent, Unit]] = js.undefined
     
     var onPaste: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
     
@@ -518,19 +609,38 @@ object organizationchartOrganizationchartMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
-    var selection: js.UndefOr[OrganizationChartSelectionNodeDataType] = js.undefined
+    /**
+      * A single treenode instance or an array to refer to the selections.
+      */
+    var selection: js.UndefOr[OrganizationChartNodeData | js.Array[OrganizationChartNodeData] | Null] = js.undefined
     
-    var selectionChange: js.UndefOr[js.Function1[/* node */ OrganizationChartSelectionNodeDataType, Unit]] = js.undefined
+    /**
+      * Callback to invoke when node selection changes.
+      * @param {OrganizationChartNodeData | OrganizationChartNodeData[] | null | undefined} node - A node instance.
+      */
+    var selectionChange: js.UndefOr[
+        js.Function1[
+          /* node */ js.UndefOr[OrganizationChartNodeData | js.Array[OrganizationChartNodeData] | Null], 
+          Unit
+        ]
+      ] = js.undefined
     
-    var selectionMode: js.UndefOr[OrganizationChartSelectionModeType] = js.undefined
+    /**
+      * Defines the selection mode, valid values "single" and "multiple".
+      */
+    var selectionMode: js.UndefOr[single | multiple] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
     
@@ -546,12 +656,20 @@ object organizationchartOrganizationchartMod {
     
     var title: js.UndefOr[String] = js.undefined
     
+    /**
+      * Toggle icon of an expanded and collapsed node.
+      */
+    var togglerIcon: js.UndefOr[IconType[OrganizationChartProps]] = js.undefined
+    
     var translate: js.UndefOr[yes | no] = js.undefined
     
     var typeof: js.UndefOr[String] = js.undefined
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
+    /**
+      * An array of nested TreeNodes.
+      */
     var value: js.UndefOr[js.Array[OrganizationChartNodeData]] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
@@ -776,6 +894,10 @@ object organizationchartOrganizationchartMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -792,9 +914,13 @@ object organizationchartOrganizationchartMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -1076,11 +1202,11 @@ object organizationchartOrganizationchartMod {
       
       inline def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
       
-      inline def setOnNodeSelect(value: /* e */ OrganizationChartNodeSelectParams => Unit): Self = StObject.set(x, "onNodeSelect", js.Any.fromFunction1(value))
+      inline def setOnNodeSelect(value: /* event */ OrganizationChartNodeSelectEvent => Unit): Self = StObject.set(x, "onNodeSelect", js.Any.fromFunction1(value))
       
       inline def setOnNodeSelectUndefined: Self = StObject.set(x, "onNodeSelect", js.undefined)
       
-      inline def setOnNodeUnselect(value: /* e */ OrganizationChartNodeUnselectParams => Unit): Self = StObject.set(x, "onNodeUnselect", js.Any.fromFunction1(value))
+      inline def setOnNodeUnselect(value: /* event */ OrganizationChartNodeUnselectEvent => Unit): Self = StObject.set(x, "onNodeUnselect", js.Any.fromFunction1(value))
       
       inline def setOnNodeUnselectUndefined: Self = StObject.set(x, "onNodeUnselect", js.undefined)
       
@@ -1228,6 +1354,10 @@ object organizationchartOrganizationchartMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1235,6 +1365,10 @@ object organizationchartOrganizationchartMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1244,13 +1378,15 @@ object organizationchartOrganizationchartMod {
       
       inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
       
-      inline def setSelection(value: OrganizationChartSelectionNodeDataType): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      inline def setSelection(value: OrganizationChartNodeData | js.Array[OrganizationChartNodeData]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
-      inline def setSelectionChange(value: /* node */ OrganizationChartSelectionNodeDataType => Unit): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
+      inline def setSelectionChange(
+        value: /* node */ js.UndefOr[OrganizationChartNodeData | js.Array[OrganizationChartNodeData] | Null] => Unit
+      ): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
       
       inline def setSelectionChangeUndefined: Self = StObject.set(x, "selectionChange", js.undefined)
       
-      inline def setSelectionMode(value: OrganizationChartSelectionModeType): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+      inline def setSelectionMode(value: single | multiple): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
       
       inline def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
       
@@ -1288,6 +1424,12 @@ object organizationchartOrganizationchartMod {
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
+      inline def setTogglerIcon(value: IconType[OrganizationChartProps]): Self = StObject.set(x, "togglerIcon", value.asInstanceOf[js.Any])
+      
+      inline def setTogglerIconFunction1(value: /* options */ IconOptions[OrganizationChartProps] => ReactNode): Self = StObject.set(x, "togglerIcon", js.Any.fromFunction1(value))
+      
+      inline def setTogglerIconUndefined: Self = StObject.set(x, "togglerIcon", js.undefined)
+      
       inline def setTranslate(value: yes | no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
@@ -1311,18 +1453,4 @@ object organizationchartOrganizationchartMod {
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
     }
   }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.single
-    - typings.primereact.primereactStrings.multiple
-  */
-  trait OrganizationChartSelectionModeType extends StObject
-  object OrganizationChartSelectionModeType {
-    
-    inline def multiple: typings.primereact.primereactStrings.multiple = "multiple".asInstanceOf[typings.primereact.primereactStrings.multiple]
-    
-    inline def single: typings.primereact.primereactStrings.single = "single".asInstanceOf[typings.primereact.primereactStrings.single]
-  }
-  
-  type OrganizationChartSelectionNodeDataType = js.UndefOr[OrganizationChartNodeData | js.Array[OrganizationChartNodeData] | Null]
 }

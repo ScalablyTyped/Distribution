@@ -241,12 +241,20 @@ object interactjsTypesStrings {
   inline def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
   
   @js.native
+  sealed trait copy extends StObject
+  inline def copy: copy = "copy".asInstanceOf[copy]
+  
+  @js.native
   sealed trait cuechange extends StObject
   inline def cuechange: cuechange = "cuechange".asInstanceOf[cuechange]
   
   @js.native
   sealed trait cursorChecker extends StObject
   inline def cursorChecker: cursorChecker = "cursorChecker".asInstanceOf[cursorChecker]
+  
+  @js.native
+  sealed trait cut extends StObject
+  inline def cut: cut = "cut".asInstanceOf[cut]
   
   @js.native
   sealed trait dblclick extends StObject
@@ -829,6 +837,10 @@ object interactjsTypesStrings {
   @js.native
   sealed trait pageshow extends StObject
   inline def pageshow: pageshow = "pageshow".asInstanceOf[pageshow]
+  
+  @js.native
+  sealed trait paste extends StObject
+  inline def paste: paste = "paste".asInstanceOf[paste]
   
   @js.native
   sealed trait pause extends StObject

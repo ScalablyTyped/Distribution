@@ -1,7 +1,8 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.both_
-import typings.arcgisJsApi.arcgisJsApiStrings.entity
+import typings.arcgisJsApi.arcgisJsApiStrings.entity_
+import typings.arcgisJsApi.arcgisJsApiStrings.relationship_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ trait GraphSearchProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphSearch.html#typeCategoryFilter)
     */
-  var typeCategoryFilter: js.UndefOr[entity | typings.arcgisJsApi.arcgisJsApiStrings.relationship | both_] = js.undefined
+  var typeCategoryFilter: js.UndefOr[entity_ | relationship_ | both_] = js.undefined
 }
 object GraphSearchProperties {
   
@@ -38,7 +39,7 @@ object GraphSearchProperties {
     
     inline def setSearchQueryUndefined: Self = StObject.set(x, "searchQuery", js.undefined)
     
-    inline def setTypeCategoryFilter(value: entity | typings.arcgisJsApi.arcgisJsApiStrings.relationship | both_): Self = StObject.set(x, "typeCategoryFilter", value.asInstanceOf[js.Any])
+    inline def setTypeCategoryFilter(value: entity_ | relationship_ | both_): Self = StObject.set(x, "typeCategoryFilter", value.asInstanceOf[js.Any])
     
     inline def setTypeCategoryFilterUndefined: Self = StObject.set(x, "typeCategoryFilter", js.undefined)
   }

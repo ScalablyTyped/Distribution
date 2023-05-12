@@ -1,35 +1,51 @@
 package typings.photoshop.domConstantsMod
 
-import typings.photoshop.photoshopStrings.CMYKColorEnum
-import typings.photoshop.photoshopStrings.HSBColorEnum
-import typings.photoshop.photoshopStrings.RGBColor
-import typings.photoshop.photoshopStrings.grayScale
-import typings.photoshop.photoshopStrings.labColor
-import typings.photoshop.photoshopStrings.noColor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.photoshop.photoshopStrings.grayScale
-  - typings.photoshop.photoshopStrings.HSBColorEnum
-  - typings.photoshop.photoshopStrings.CMYKColorEnum
-  - typings.photoshop.photoshopStrings.labColor
-  - typings.photoshop.photoshopStrings.RGBColor
-  - typings.photoshop.photoshopStrings.noColor
-*/
-trait ColorModel extends StObject
-object ColorModel {
+@js.native
+sealed trait ColorModel extends StObject
+@JSImport("photoshop/dom/Constants", "ColorModel")
+@js.native
+object ColorModel extends StObject {
   
-  inline def CMYK: CMYKColorEnum = "CMYKColorEnum".asInstanceOf[CMYKColorEnum]
+  @JSBracketAccess
+  def apply(value: String): js.UndefOr[ColorModel & String] = js.native
   
-  inline def GRAYSCALE: grayScale = "grayScale".asInstanceOf[grayScale]
+  @js.native
+  sealed trait CMYK
+    extends StObject
+       with ColorModel
+  /* "CMYKColorEnum" */ val CMYK: typings.photoshop.domConstantsMod.ColorModel.CMYK & String = js.native
   
-  inline def HSB: HSBColorEnum = "HSBColorEnum".asInstanceOf[HSBColorEnum]
+  @js.native
+  sealed trait GRAYSCALE
+    extends StObject
+       with ColorModel
+  /* "grayScale" */ val GRAYSCALE: typings.photoshop.domConstantsMod.ColorModel.GRAYSCALE & String = js.native
   
-  inline def LAB: labColor = "labColor".asInstanceOf[labColor]
+  @js.native
+  sealed trait HSB
+    extends StObject
+       with ColorModel
+  /* "HSBColorEnum" */ val HSB: typings.photoshop.domConstantsMod.ColorModel.HSB & String = js.native
   
-  inline def NONE: noColor = "noColor".asInstanceOf[noColor]
+  @js.native
+  sealed trait LAB
+    extends StObject
+       with ColorModel
+  /* "labColor" */ val LAB: typings.photoshop.domConstantsMod.ColorModel.LAB & String = js.native
   
-  inline def RGB: RGBColor = "RGBColor".asInstanceOf[RGBColor]
+  @js.native
+  sealed trait NONE
+    extends StObject
+       with ColorModel
+  /* "noColor" */ val NONE: typings.photoshop.domConstantsMod.ColorModel.NONE & String = js.native
+  
+  @js.native
+  sealed trait RGB
+    extends StObject
+       with ColorModel
+  /* "RGBColor" */ val RGB: typings.photoshop.domConstantsMod.ColorModel.RGB & String = js.native
 }

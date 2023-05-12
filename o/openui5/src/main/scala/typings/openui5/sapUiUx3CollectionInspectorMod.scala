@@ -437,6 +437,8 @@ object sapUiUx3CollectionInspectorMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:collectionSelected collectionSelected} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -448,6 +450,8 @@ object sapUiUx3CollectionInspectorMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:editCollection editCollection} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -459,6 +463,8 @@ object sapUiUx3CollectionInspectorMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:itemSelectionChanged itemSelectionChanged} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

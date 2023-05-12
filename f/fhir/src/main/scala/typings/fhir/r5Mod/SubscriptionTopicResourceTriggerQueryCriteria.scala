@@ -21,27 +21,27 @@ trait SubscriptionTopicResourceTriggerQueryCriteria
   var _resultForDelete: js.UndefOr[Element] = js.undefined
   
   /**
-    * The rules are search criteria (without the [base] part). Like Bundle.entry.request.url, it has no leading "/".
+    * The rules are search criteria (without the [base] part). Like Bundle.entry.request.url, it has no leading slash character (`/`).
     */
   var current: js.UndefOr[String] = js.undefined
   
   /**
-    * The rules are search criteria (without the [base] part). Like Bundle.entry.request.url, it has no leading "/".
+    * The rules are search criteria (without the [base] part). Like Bundle.entry.request.url, it has no leading slash character (`/`).
     */
   var previous: js.UndefOr[String] = js.undefined
   
   /**
-    * If set to true, both current and previous criteria must evaluate true to  trigger a notification for this topic.  Otherwise a notification for this topic will be triggered if either one evaluates to true.
+    * Please note the interaction between this element and the `resultForCreate`/`resultForDelete` elements during `create` and `delete` interactions.  For example, if `resultForCreate` is set to `test-passes`, setting `requireBoth` to `false` means that every `create` will trigger a notification while setting `requireBoth` to `true` will result in notifications if the `current` test passes.  Similarly, if `resultForCreate` is set to `test-fails`, setting `requireBoth` to `true` means that no `create` will be able to generate a notification while setting `requireBoth` to `false` will result in notifications if the `current` test passes.
     */
   var requireBoth: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * What behavior a server will exhibit if the previous state of a resource does NOT exist (e.g., prior to a create).
+    * For `create` interactions, should the `previous` criteria count as an automatic pass or an automatic fail. If not present, the testing behavior during `create` interactions is unspecified (server discretion).
     */
   var resultForCreate: js.UndefOr[`test-passes` | `test-fails`] = js.undefined
   
   /**
-    * What behavior a server will exhibit if the current state of a resource does NOT exist (e.g., after a DELETE).
+    * For 'delete' interactions, should the 'current' query criteria count as an automatic pass or an automatic fail. If not present, the testing behavior during `delete` interactions is unspecified (server discretion).
     */
   var resultForDelete: js.UndefOr[`test-passes` | `test-fails`] = js.undefined
 }

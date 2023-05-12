@@ -38,14 +38,14 @@ trait Members extends StObject {
   
   var membersOptionals: js.Array[Boolean]
   
-  var `object`: UnaryExpression | ThisExpression | ArrayExpression | ObjectExpression | FunctionExpression | ArrowFunctionExpression | YieldExpression | SimpleLiteral | RegExpLiteral | BigIntLiteral | UpdateExpression | BinaryExpression | AssignmentExpression | LogicalExpression | MemberExpression | ConditionalExpression | SimpleCallExpression | NewExpression | SequenceExpression | TemplateLiteral | TaggedTemplateExpression | ClassExpression | MetaProperty | Identifier | AwaitExpression | ImportExpression | ChainExpression | Super
+  var `object`: UnaryExpression | ArrayExpression | ArrowFunctionExpression | AssignmentExpression | AwaitExpression | BinaryExpression | SimpleCallExpression | NewExpression | ChainExpression | ClassExpression | ConditionalExpression | FunctionExpression | Identifier | ImportExpression | SimpleLiteral | RegExpLiteral | BigIntLiteral | LogicalExpression | MemberExpression | MetaProperty | ObjectExpression | SequenceExpression | TaggedTemplateExpression | TemplateLiteral | ThisExpression | UpdateExpression | YieldExpression | Super
 }
 object Members {
   
   inline def apply(
     members: js.Array[String],
     membersOptionals: js.Array[Boolean],
-    `object`: UnaryExpression | ThisExpression | ArrayExpression | ObjectExpression | FunctionExpression | ArrowFunctionExpression | YieldExpression | SimpleLiteral | RegExpLiteral | BigIntLiteral | UpdateExpression | BinaryExpression | AssignmentExpression | LogicalExpression | MemberExpression | ConditionalExpression | SimpleCallExpression | NewExpression | SequenceExpression | TemplateLiteral | TaggedTemplateExpression | ClassExpression | MetaProperty | Identifier | AwaitExpression | ImportExpression | ChainExpression | Super
+    `object`: UnaryExpression | ArrayExpression | ArrowFunctionExpression | AssignmentExpression | AwaitExpression | BinaryExpression | SimpleCallExpression | NewExpression | ChainExpression | ClassExpression | ConditionalExpression | FunctionExpression | Identifier | ImportExpression | SimpleLiteral | RegExpLiteral | BigIntLiteral | LogicalExpression | MemberExpression | MetaProperty | ObjectExpression | SequenceExpression | TaggedTemplateExpression | TemplateLiteral | ThisExpression | UpdateExpression | YieldExpression | Super
   ): Members = {
     val __obj = js.Dynamic.literal(members = members.asInstanceOf[js.Any], membersOptionals = membersOptionals.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
@@ -64,7 +64,7 @@ object Members {
     inline def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value*))
     
     inline def setObject(
-      value: UnaryExpression | ThisExpression | ArrayExpression | ObjectExpression | FunctionExpression | ArrowFunctionExpression | YieldExpression | SimpleLiteral | RegExpLiteral | BigIntLiteral | UpdateExpression | BinaryExpression | AssignmentExpression | LogicalExpression | MemberExpression | ConditionalExpression | SimpleCallExpression | NewExpression | SequenceExpression | TemplateLiteral | TaggedTemplateExpression | ClassExpression | MetaProperty | Identifier | AwaitExpression | ImportExpression | ChainExpression | Super
+      value: UnaryExpression | ArrayExpression | ArrowFunctionExpression | AssignmentExpression | AwaitExpression | BinaryExpression | SimpleCallExpression | NewExpression | ChainExpression | ClassExpression | ConditionalExpression | FunctionExpression | Identifier | ImportExpression | SimpleLiteral | RegExpLiteral | BigIntLiteral | LogicalExpression | MemberExpression | MetaProperty | ObjectExpression | SequenceExpression | TaggedTemplateExpression | TemplateLiteral | ThisExpression | UpdateExpression | YieldExpression | Super
     ): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }
 }

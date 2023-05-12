@@ -17,8 +17,10 @@ open class SpriteComponent protected () extends Component {
   /**
     * Create a new SpriteComponent instance.
     *
-    * @param {SpriteComponentSystem} system - The ComponentSystem that created this Component.
-    * @param {Entity} entity - The Entity that this Component is attached to.
+    * @param {import('./system.js').SpriteComponentSystem} system - The ComponentSystem that
+    * created this Component.
+    * @param {import('../../entity.js').Entity} entity - The Entity that this Component is
+    * attached to.
     */
   def this(system: SpriteComponentSystem, entity: Entity) = this()
   
@@ -117,8 +119,8 @@ open class SpriteComponent protected () extends Component {
     * @param {string} [data.name] - The name of the new animation clip.
     * @param {number} [data.fps] - Frames per second for the animation clip.
     * @param {boolean} [data.loop] - Whether to loop the animation clip.
-    * @param {number|Asset} [data.spriteAsset] - The asset id or the {@link Asset} of the sprite
-    * that this clip will play.
+    * @param {number|import('../../asset/asset.js').Asset} [data.spriteAsset] - The asset id or
+    * the {@link Asset} of the sprite that this clip will play.
     * @returns {SpriteAnimationClip} The new clip that was added.
     */
   def addClip(data: Loop): SpriteAnimationClip = js.native
@@ -278,7 +280,7 @@ open class SpriteComponent protected () extends Component {
     * The asset id or the {@link Asset} of the sprite to render. Only works for
     * {@link SPRITETYPE_SIMPLE} sprites.
     *
-    * @type {number|Asset}
+    * @type {number|import('../../asset/asset.js').Asset}
     */
   def spriteAsset_=(arg: Any): Unit = js.native
   

@@ -727,32 +727,24 @@ object global {
       /**
         * A unique key used to identify the group.  This key can be used in calls to DataView
         * collapseGroup() or expandGroup().
-        * @property groupingKey
-        * @type {Object}
         */
       /* CompleteClass */
       var groupingKey: Any = js.native
       
       /**
         * Sub-groups that are part of the group.
-        * @property groups
-        * @type {Array}
         */
       /* CompleteClass */
       var groups: js.Array[typings.slickgrid.Slick.Group[T]] = js.native
       
       /**
         * Grouping level, starting with 0.
-        * @property level
-        * @type {Number}
         */
       /* CompleteClass */
       var level: Double = js.native
       
       /**
         * Rows that are part of the group.
-        * @property rows
-        * @type {Array}
         */
       /* CompleteClass */
       var rows: js.Array[T] = js.native
@@ -843,7 +835,6 @@ object global {
          with typings.slickgrid.Slick.Range {
       /**
         * A structure containing a range of cells.
-        * @constructor
         * @param fromRow {Integer} Starting row.
         * @param fromCell {Integer} Starting cell.
         * @param toRow {Integer} Optional. Ending row. Defaults to <code>fromRow</code>.

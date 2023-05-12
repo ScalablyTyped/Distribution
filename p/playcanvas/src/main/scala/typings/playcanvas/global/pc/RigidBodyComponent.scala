@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ```javascript
   * // Create a static 1x1x1 box-shaped rigid body
   * const entity = pc.Entity();
-  * entity.addComponent("rigidbody"); // With no options specified, this defaults to a 'static' body
-  * entity.addComponent("collision"); // With no options specified, this defaults to a 1x1x1 box shape
+  * entity.addComponent("rigidbody"); // Without options, this defaults to a 'static' body
+  * entity.addComponent("collision"); // Without options, this defaults to a 1x1x1 box shape
   * ```
   *
   * To create a dynamic sphere with mass of 10, do:
@@ -47,8 +47,9 @@ open class RigidBodyComponent protected ()
   /**
     * Create a new RigidBodyComponent instance.
     *
-    * @param {RigidBodyComponentSystem} system - The ComponentSystem that created this component.
-    * @param {Entity} entity - The entity this component is attached to.
+    * @param {import('./system.js').RigidBodyComponentSystem} system - The ComponentSystem that
+    * created this component.
+    * @param {import('../../entity.js').Entity} entity - The entity this component is attached to.
     */
   def this(system: typings.playcanvas.mod.RigidBodyComponentSystem, entity: typings.playcanvas.mod.Entity) = this()
 }
@@ -74,20 +75,21 @@ object RigidBodyComponent {
     * Fired when two rigid bodies stop touching.
     *
     * @event RigidBodyComponent#collisionend
-    * @param {Entity} other - The {@link Entity} that stopped touching this rigid body.
+    * @param {import('../../entity.js').Entity} other - The {@link Entity} that stopped touching this rigid body.
     */
   /**
     * Fired when a rigid body enters a trigger volume.
     *
     * @event RigidBodyComponent#triggerenter
-    * @param {Entity} other - The {@link Entity} with trigger volume that this rigid body entered.
+    * @param {import('../../entity.js').Entity} other - The {@link Entity} with trigger volume that this rigid body entered.
     */
   /**
     * Fired when a rigid body exits a trigger volume.
     *
     * @event RigidBodyComponent#triggerleave
-    * @param {Entity} other - The {@link Entity} with trigger volume that this rigid body exited.
+    * @param {import('../../entity.js').Entity} other - The {@link Entity} with trigger volume that this rigid body exited.
     */
+  /** @ignore */
   /* static member */
   inline def onLibraryLoaded(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onLibraryLoaded")().asInstanceOf[Unit]
 }

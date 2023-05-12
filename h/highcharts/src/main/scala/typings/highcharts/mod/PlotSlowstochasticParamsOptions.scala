@@ -6,18 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PlotSlowstochasticParamsOptions extends StObject {
   
-  /**
-    * (Highstock) The point index which indicator calculations will base. For
-    * example using OHLC data, index=2 means the indicator will be calculated
-    * using Low values.
-    */
   var index: js.UndefOr[String] = js.undefined
   
-  /**
-    * (Highstock) The base period for indicator calculations. This is the
-    * number of data points which are taken into account for the indicator
-    * calculations.
-    */
   var period: js.UndefOr[String] = js.undefined
   
   /**

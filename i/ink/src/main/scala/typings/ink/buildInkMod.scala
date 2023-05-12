@@ -20,6 +20,8 @@ object buildInkMod {
   @js.native
   trait Ink extends StObject {
     
+    def calculateLayout(): Unit = js.native
+    
     def clear(): Unit = js.native
     
     /* private */ val container: Any = js.native
@@ -44,6 +46,8 @@ object buildInkMod {
     def rejectExitPromise(reason: js.Error): Unit = js.native
     
     def render(node: ReactNode): Unit = js.native
+    
+    def resized(): Unit = js.native
     
     def resolveExitPromise(): Unit = js.native
     

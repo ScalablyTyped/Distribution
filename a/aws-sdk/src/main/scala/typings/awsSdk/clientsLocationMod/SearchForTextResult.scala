@@ -17,12 +17,12 @@ trait SearchForTextResult extends StObject {
   var Place: typings.awsSdk.clientsLocationMod.Place
   
   /**
-    * The unique identifier of the place. You can use this with the GetPlace operation to find the place again later.  For SearchPlaceIndexForText operations, the PlaceId is returned only by place indexes that use HERE as a data provider. 
+    * The unique identifier of the place. You can use this with the GetPlace operation to find the place again later.  For SearchPlaceIndexForText operations, the PlaceId is returned only by place indexes that use HERE or Grab as a data provider. 
     */
   var PlaceId: js.UndefOr[typings.awsSdk.clientsLocationMod.PlaceId] = js.undefined
   
   /**
-    * The relative confidence in the match for a result among the results returned. For example, if more fields for an address match (including house number, street, city, country/region, and postal code), the relevance score is closer to 1. Returned only when the partner selected is Esri.
+    * The relative confidence in the match for a result among the results returned. For example, if more fields for an address match (including house number, street, city, country/region, and postal code), the relevance score is closer to 1. Returned only when the partner selected is Esri or Grab.
     */
   var Relevance: js.UndefOr[SearchForTextResultRelevanceDouble] = js.undefined
 }

@@ -39,23 +39,22 @@ trait Signature
   /**
     * Examples include attesting to: authorship, correct transcription, and witness of specific event. Also known as a &quot;Commitment Type Indication&quot;.
     */
-  var `type`: js.Array[Coding]
+  var `type`: js.UndefOr[js.Array[Coding]] = js.undefined
   
   /**
     * This should agree with the information in the signature.
     */
-  var when: String
+  var when: js.UndefOr[String] = js.undefined
   
   /**
     * This should agree with the information in the signature.
     */
-  var who: Reference
+  var who: js.UndefOr[Reference] = js.undefined
 }
 object Signature {
   
-  inline def apply(`type`: js.Array[Coding], when: String, who: Reference): Signature = {
-    val __obj = js.Dynamic.literal(when = when.asInstanceOf[js.Any], who = who.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  inline def apply(): Signature = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Signature]
   }
   
@@ -80,11 +79,17 @@ object Signature {
     
     inline def setType(value: js.Array[Coding]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
     inline def setTypeVarargs(value: Coding*): Self = StObject.set(x, "type", js.Array(value*))
     
     inline def setWhen(value: String): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
     
+    inline def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
+    
     inline def setWho(value: Reference): Self = StObject.set(x, "who", value.asInstanceOf[js.Any])
+    
+    inline def setWhoUndefined: Self = StObject.set(x, "who", js.undefined)
     
     inline def set_data(value: Element): Self = StObject.set(x, "_data", value.asInstanceOf[js.Any])
     

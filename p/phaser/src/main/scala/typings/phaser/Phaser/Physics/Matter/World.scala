@@ -15,6 +15,7 @@ import typings.phaser.Phaser.Tilemaps.Tile
 import typings.phaser.Phaser.Tilemaps.TilemapLayer
 import typings.phaser.Phaser.Types.Physics.Matter.MatterDebugConfig
 import typings.phaser.Phaser.Types.Physics.Matter.MatterRunnerConfig
+import typings.phaser.Phaser.Types.Physics.Matter.MatterWalls
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,15 +74,6 @@ trait World
     */
   def convertTiles(tiles: js.Array[Tile]): this.type = js.native
   def convertTiles(tiles: js.Array[Tile], options: js.Object): this.type = js.native
-  
-  /**
-    * The correction argument is an optional Number that specifies the time correction factor to apply to the update.
-    * This can help improve the accuracy of the simulation in cases where delta is changing between updates.
-    * The value of correction is defined as delta / lastDelta, i.e. the percentage change of delta over the last step.
-    * Therefore the value is always 1 (no correction) when delta is constant (or when no correction is desired, which is the default).
-    * See the paper on Time Corrected Verlet for more information.
-    */
-  var correction: Double = js.native
   
   /**
     * Creates a rectangle Matter body and adds it to the world.
@@ -870,6 +862,7 @@ trait World
   
   /**
     * Sets the bounds of the Physics world to match the given world pixel dimensions.
+    * 
     * You can optionally set which 'walls' to create: left, right, top or bottom.
     * If none of the walls are given it will default to use the walls settings it had previously.
     * I.e. if you previously told it to not have the left or right walls, and you then adjust the world size
@@ -979,12 +972,9 @@ trait World
     * Adjusting these values can help performance in certain situations, depending on the physics requirements
     * of your game.
     * @param delta The delta value. Default 16.666.
-    * @param correction Optional delta correction value. Default 1.
     */
   def step(): Unit = js.native
   def step(delta: Double): Unit = js.native
-  def step(delta: Double, correction: Double): Unit = js.native
-  def step(delta: Unit, correction: Double): Unit = js.native
   
   /**
     * The internal update method. This is called automatically by the parent Scene.
@@ -1060,5 +1050,5 @@ trait World
   /**
     * An object containing the 4 wall bodies that bound the physics world.
     */
-  var walls: js.Object = js.native
+  var walls: MatterWalls = js.native
 }

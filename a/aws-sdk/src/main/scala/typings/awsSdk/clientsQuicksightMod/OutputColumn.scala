@@ -17,7 +17,7 @@ trait OutputColumn extends StObject {
   var Name: js.UndefOr[ColumnName] = js.undefined
   
   /**
-    * Type.
+    * The type.
     */
   var Type: js.UndefOr[ColumnDataType] = js.undefined
 }

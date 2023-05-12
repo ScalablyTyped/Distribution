@@ -312,7 +312,7 @@ object anon {
       const {response} = error;
       if (response && response.body) {
       error.name = 'GitHubError';
-      error.message = `${response.body.message} (${response.statusCode})`;
+      error.message = `${response.body.message} (${response.status})`;
       }
       return error;
       }
@@ -393,6 +393,8 @@ object anon {
     
     var afterStatusCodes: js.Array[Double]
     
+    var backoffLimit: Double
+    
     var limit: Double
     
     var maxRetryAfter: Double
@@ -405,12 +407,13 @@ object anon {
     
     inline def apply(
       afterStatusCodes: js.Array[Double],
+      backoffLimit: Double,
       limit: Double,
       maxRetryAfter: Double,
       methods: js.Array[String],
       statusCodes: js.Array[Double]
     ): RequiredRetryOptions = {
-      val __obj = js.Dynamic.literal(afterStatusCodes = afterStatusCodes.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], maxRetryAfter = maxRetryAfter.asInstanceOf[js.Any], methods = methods.asInstanceOf[js.Any], statusCodes = statusCodes.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(afterStatusCodes = afterStatusCodes.asInstanceOf[js.Any], backoffLimit = backoffLimit.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], maxRetryAfter = maxRetryAfter.asInstanceOf[js.Any], methods = methods.asInstanceOf[js.Any], statusCodes = statusCodes.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequiredRetryOptions]
     }
     
@@ -420,6 +423,8 @@ object anon {
       inline def setAfterStatusCodes(value: js.Array[Double]): Self = StObject.set(x, "afterStatusCodes", value.asInstanceOf[js.Any])
       
       inline def setAfterStatusCodesVarargs(value: Double*): Self = StObject.set(x, "afterStatusCodes", js.Array(value*))
+      
+      inline def setBackoffLimit(value: Double): Self = StObject.set(x, "backoffLimit", value.asInstanceOf[js.Any])
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -443,6 +448,18 @@ object anon {
       @default [413, 429, 503]
       */
     var afterStatusCodes: js.UndefOr[js.Array[Double]] = js.undefined
+    
+    /**
+      The upper limit of the delay per retry in milliseconds.
+      To clamp the delay, set `backoffLimit` to 1000, for example.
+      By default, the delay is calculated in the following way:
+      ```
+      0.3 * (2 ** (attemptCount - 1)) * 1000
+      ```
+      The delay increases exponentially.
+      @default Infinity
+      */
+    var backoffLimit: js.UndefOr[Double] = js.undefined
     
     /**
       The number of times to retry failed requests.
@@ -483,6 +500,10 @@ object anon {
       inline def setAfterStatusCodesUndefined: Self = StObject.set(x, "afterStatusCodes", js.undefined)
       
       inline def setAfterStatusCodesVarargs(value: Double*): Self = StObject.set(x, "afterStatusCodes", js.Array(value*))
+      
+      inline def setBackoffLimit(value: Double): Self = StObject.set(x, "backoffLimit", value.asInstanceOf[js.Any])
+      
+      inline def setBackoffLimitUndefined: Self = StObject.set(x, "backoffLimit", js.undefined)
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       

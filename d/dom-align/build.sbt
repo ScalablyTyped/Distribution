@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dom-align"
-version := "1.12.3-dd6395"
+version := "1.12.4-0878f8"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

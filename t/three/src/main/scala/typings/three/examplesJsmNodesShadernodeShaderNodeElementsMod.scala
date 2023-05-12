@@ -4,7 +4,6 @@ import typings.std.ArrayLike
 import typings.three.anon.Alpha
 import typings.three.anon.AmbientOcclusion
 import typings.three.anon.Call
-import typings.three.anon.CutoffDistance
 import typings.three.anon.DiffuseColor
 import typings.three.anon.DotNL
 import typings.three.anon.DotVH
@@ -13,11 +12,11 @@ import typings.three.anon.IblIrradiance
 import typings.three.anon.Irradiance
 import typings.three.anon.LightColor
 import typings.three.anon.Roughness
-import typings.three.examplesJsmNodesCoreCodeNodeMod.CodeNodeInclude
+import typings.three.examplesJsmNodesCodeCodeNodeMod.CodeNodeInclude
+import typings.three.examplesJsmNodesCodeFunctionNodeMod.FunctionNodeArguments
 import typings.three.examplesJsmNodesCoreConstantsMod.NodeTypeOption
 import typings.three.examplesJsmNodesCoreConstantsMod.NodeUserData
 import typings.three.examplesJsmNodesCoreConstantsMod.NodeValueOption
-import typings.three.examplesJsmNodesCoreFunctionNodeMod.FunctionNodeArguments
 import typings.three.examplesJsmNodesCoreNodeBuilderMod.NodeBuilderContext
 import typings.three.examplesJsmNodesCoreNodeMod.default
 import typings.three.examplesJsmNodesGeometryRangeNodeMod.RangeModeBound
@@ -26,6 +25,7 @@ import typings.three.examplesJsmNodesNodesMod.BitangentNode
 import typings.three.examplesJsmNodesNodesMod.BlendModeNode
 import typings.three.examplesJsmNodesNodesMod.BufferNode
 import typings.three.examplesJsmNodesNodesMod.BypassNode
+import typings.three.examplesJsmNodesNodesMod.CacheNode
 import typings.three.examplesJsmNodesNodesMod.CameraNode
 import typings.three.examplesJsmNodesNodesMod.CheckerNode
 import typings.three.examplesJsmNodesNodesMod.CodeNode
@@ -36,6 +36,7 @@ import typings.three.examplesJsmNodesNodesMod.ContextNode
 import typings.three.examplesJsmNodesNodesMod.CubeTextureNode
 import typings.three.examplesJsmNodesNodesMod.EquirectUVNode
 import typings.three.examplesJsmNodesNodesMod.ExpressionNode
+import typings.three.examplesJsmNodesNodesMod.FogExp2Node
 import typings.three.examplesJsmNodesNodesMod.FogNode
 import typings.three.examplesJsmNodesNodesMod.FogRangeNode
 import typings.three.examplesJsmNodesNodesMod.FrontFacingNode
@@ -65,6 +66,7 @@ import typings.three.examplesJsmNodesNodesMod.ReflectVectorNode
 import typings.three.examplesJsmNodesNodesMod.RemapNode
 import typings.three.examplesJsmNodesNodesMod.RotateUVNode
 import typings.three.examplesJsmNodesNodesMod.SkinningNode
+import typings.three.examplesJsmNodesNodesMod.SpecularMIPLevelNode
 import typings.three.examplesJsmNodesNodesMod.SpriteSheetUVNode
 import typings.three.examplesJsmNodesNodesMod.TangentNode
 import typings.three.examplesJsmNodesNodesMod.TimerNode
@@ -73,7 +75,8 @@ import typings.three.examplesJsmNodesNodesMod.TriplanarTexturesNode
 import typings.three.examplesJsmNodesNodesMod.UVNode
 import typings.three.examplesJsmNodesNodesMod.UserDataNode
 import typings.three.examplesJsmNodesNodesMod.VarNode
-import typings.three.examplesJsmNodesNodesMod.VaryNode
+import typings.three.examplesJsmNodesNodesMod.VaryingNode
+import typings.three.examplesJsmNodesNodesMod.ViewportNode
 import typings.three.examplesJsmNodesShadernodeShaderNodeBaseElementsMod.Binary
 import typings.three.examplesJsmNodesShadernodeShaderNodeBaseElementsMod.Fn_
 import typings.three.examplesJsmNodesShadernodeShaderNodeBaseElementsMod.Operator
@@ -95,9 +98,12 @@ import typings.three.examplesJsmNodesShadernodeShaderNodeMod.ProxiedTuple
 import typings.three.examplesJsmNodesShadernodeShaderNodeMod.RemoveHeadAndTail
 import typings.three.examplesJsmNodesShadernodeShaderNodeMod.RemoveTail
 import typings.three.examplesJsmNodesShadernodeShaderNodeMod.Swizzable
+import typings.three.srcCamerasCameraMod.Camera
 import typings.three.srcConstantsMod.TextureEncoding
 import typings.three.srcConstantsMod.ToneMapping
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
+import typings.three.srcLightsLightShadowMod.LightShadow
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.CubeTexture
 import typings.three.srcThreeMod.InstancedMesh
@@ -288,6 +294,9 @@ object examplesJsmNodesShadernodeShaderNodeElementsMod {
   
   inline def bypass(returnNode: NodeRepresentation[Node], callNode: NodeRepresentation[Node]): Swizzable[BypassNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("bypass")(returnNode.asInstanceOf[js.Any], callNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[BypassNode]]
   
+  inline def cache(node: default): Swizzable[CacheNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("cache")(node.asInstanceOf[js.Any]).asInstanceOf[Swizzable[CacheNode]]
+  inline def cache(node: default, cache: typings.three.examplesJsmNodesCoreNodeCacheMod.default): Swizzable[CacheNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("cache")(node.asInstanceOf[js.Any], cache.asInstanceOf[js.Any])).asInstanceOf[Swizzable[CacheNode]]
+  
   inline def call[P /* <: FunctionNodeArguments */](): Swizzable[FunctionCallNode[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("call")().asInstanceOf[Swizzable[FunctionCallNode[P]]]
   inline def call[P /* <: FunctionNodeArguments */](functionNode: Unit, parameters: ProxiedObject[P]): Swizzable[FunctionCallNode[P]] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(functionNode.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Swizzable[FunctionCallNode[P]]]
   inline def call[P /* <: FunctionNodeArguments */](functionNode: FunctionNode[P]): Swizzable[FunctionCallNode[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("call")(functionNode.asInstanceOf[js.Any]).asInstanceOf[Swizzable[FunctionCallNode[P]]]
@@ -415,6 +424,8 @@ object examplesJsmNodesShadernodeShaderNodeElementsMod {
   @js.native
   val exp2: Unary = js.native
   
+  inline def exp2Fog(colorNode: default, densityNode: default): Swizzable[FogExp2Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("exp2Fog")(colorNode.asInstanceOf[js.Any], densityNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[FogExp2Node]]
+  
   inline def expression(): Swizzable[ExpressionNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("expression")().asInstanceOf[Swizzable[ExpressionNode]]
   inline def expression(snipped: String): Swizzable[ExpressionNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("expression")(snipped.asInstanceOf[js.Any]).asInstanceOf[Swizzable[ExpressionNode]]
   inline def expression(snipped: String, nodeType: NodeTypeOption): Swizzable[ExpressionNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("expression")(snipped.asInstanceOf[js.Any], nodeType.asInstanceOf[js.Any])).asInstanceOf[Swizzable[ExpressionNode]]
@@ -456,10 +467,6 @@ object examplesJsmNodesShadernodeShaderNodeElementsMod {
   inline def func[P /* <: FunctionNodeArguments */](code: String): Call[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("func")(code.asInstanceOf[js.Any]).asInstanceOf[Call[P]]
   inline def func[P /* <: FunctionNodeArguments */](code: String, includes: js.Array[CodeNodeInclude]): Call[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("func")(code.asInstanceOf[js.Any], includes.asInstanceOf[js.Any])).asInstanceOf[Call[P]]
   
-  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "getDistanceAttenuation")
-  @js.native
-  val getDistanceAttenuation: typings.three.examplesJsmNodesShadernodeShaderNodeBaseElementsMod.ShaderNode[CutoffDistance, Node] = js.native
-  
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "getGeometryRoughness")
   @js.native
   val getGeometryRoughness: typings.three.examplesJsmNodesShadernodeShaderNodeBaseElementsMod.ShaderNode[js.Object, Node] = js.native
@@ -487,7 +494,7 @@ object examplesJsmNodesShadernodeShaderNodeElementsMod {
   @js.native
   val imat4: ConvertType = js.native
   
-  inline def instance(instanceMesh: InstancedMesh[BufferGeometry, Material | js.Array[Material]]): Swizzable[InstanceNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")(instanceMesh.asInstanceOf[js.Any]).asInstanceOf[Swizzable[InstanceNode]]
+  inline def instance(instanceMesh: InstancedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]): Swizzable[InstanceNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")(instanceMesh.asInstanceOf[js.Any]).asInstanceOf[Swizzable[InstanceNode]]
   
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "instanceIndex")
   @js.native
@@ -535,7 +542,7 @@ object examplesJsmNodesShadernodeShaderNodeElementsMod {
   inline def lightingContext(node: default): Swizzable[typings.three.examplesJsmNodesLightingLightingContextNodeMod.default] = ^.asInstanceOf[js.Dynamic].applyDynamic("lightingContext")(node.asInstanceOf[js.Any]).asInstanceOf[Swizzable[typings.three.examplesJsmNodesLightingLightingContextNodeMod.default]]
   inline def lightingContext(node: default, lightingModelNode: LightingModelNode): Swizzable[typings.three.examplesJsmNodesLightingLightingContextNodeMod.default] = (^.asInstanceOf[js.Dynamic].applyDynamic("lightingContext")(node.asInstanceOf[js.Any], lightingModelNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[typings.three.examplesJsmNodesLightingLightingContextNodeMod.default]]
   
-  inline def lights(lights: js.Array[Light]): Swizzable[LightsNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("lights")(lights.asInstanceOf[js.Any]).asInstanceOf[Swizzable[LightsNode]]
+  inline def lights(lights: js.Array[Light[js.UndefOr[LightShadow[Camera]]]]): Swizzable[LightsNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("lights")(lights.asInstanceOf[js.Any]).asInstanceOf[Swizzable[LightsNode]]
   
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "log")
   @js.native
@@ -840,7 +847,7 @@ object examplesJsmNodesShadernodeShaderNodeElementsMod {
   @js.native
   val sin: Unary = js.native
   
-  inline def skinning(skinnedMesh: SkinnedMesh[BufferGeometry, Material | js.Array[Material]]): Swizzable[SkinningNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("skinning")(skinnedMesh.asInstanceOf[js.Any]).asInstanceOf[Swizzable[SkinningNode]]
+  inline def skinning(skinnedMesh: SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]): Swizzable[SkinningNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("skinning")(skinnedMesh.asInstanceOf[js.Any]).asInstanceOf[Swizzable[SkinningNode]]
   
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "smoothstep")
   @js.native
@@ -849,6 +856,8 @@ object examplesJsmNodesShadernodeShaderNodeElementsMod {
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "specularColor")
   @js.native
   val specularColor: Swizzable[PropertyNode] = js.native
+  
+  inline def specularMIPLevel(): Swizzable[SpecularMIPLevelNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("specularMIPLevel")().asInstanceOf[Swizzable[SpecularMIPLevelNode]]
   
   inline def spritesheetUV(countNode: NodeRepresentation[Node]): Swizzable[SpriteSheetUVNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("spritesheetUV")(countNode.asInstanceOf[js.Any]).asInstanceOf[Swizzable[SpriteSheetUVNode]]
   inline def spritesheetUV(countNode: NodeRepresentation[Node], uvNode: Unit, frameNode: NodeRepresentation[Node]): Swizzable[SpriteSheetUVNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("spritesheetUV")(countNode.asInstanceOf[js.Any], uvNode.asInstanceOf[js.Any], frameNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[SpriteSheetUVNode]]
@@ -1189,8 +1198,8 @@ object examplesJsmNodesShadernodeShaderNodeElementsMod {
   @js.native
   val uvec4: ConvertType = js.native
   
-  inline def vary(node: NodeRepresentation[Node]): Swizzable[VaryNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("vary")(node.asInstanceOf[js.Any]).asInstanceOf[Swizzable[VaryNode]]
-  inline def vary(node: NodeRepresentation[Node], name: String): Swizzable[VaryNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("vary")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Swizzable[VaryNode]]
+  inline def vary(node: NodeRepresentation[Node]): Swizzable[VaryingNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("vary")(node.asInstanceOf[js.Any]).asInstanceOf[Swizzable[VaryingNode]]
+  inline def vary(node: NodeRepresentation[Node], name: String): Swizzable[VaryingNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("vary")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Swizzable[VaryingNode]]
   
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "vec2")
   @js.native
@@ -1206,6 +1215,30 @@ object examplesJsmNodesShadernodeShaderNodeElementsMod {
   
   inline def vibrance(colorNode: NodeRepresentation[Node]): Swizzable[ColorAdjustmentNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("vibrance")(colorNode.asInstanceOf[js.Any]).asInstanceOf[Swizzable[ColorAdjustmentNode]]
   inline def vibrance(colorNode: NodeRepresentation[Node], adjustmentNode: NodeRepresentation[Node]): Swizzable[ColorAdjustmentNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("vibrance")(colorNode.asInstanceOf[js.Any], adjustmentNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[ColorAdjustmentNode]]
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "viewportBottomLeft")
+  @js.native
+  val viewportBottomLeft: Swizzable[ViewportNode] = js.native
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "viewportBottomRight")
+  @js.native
+  val viewportBottomRight: Swizzable[ViewportNode] = js.native
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "viewportCoordinate")
+  @js.native
+  val viewportCoordinate: Swizzable[ViewportNode] = js.native
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "viewportResolution")
+  @js.native
+  val viewportResolution: Swizzable[ViewportNode] = js.native
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "viewportTopLeft")
+  @js.native
+  val viewportTopLeft: Swizzable[ViewportNode] = js.native
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "viewportTopRight")
+  @js.native
+  val viewportTopRight: Swizzable[ViewportNode] = js.native
   
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "xor")
   @js.native

@@ -52,6 +52,8 @@ trait Aliases extends StObject {
   
   var Immutable: typings.babelTypes.mod.Immutable
   
+  var ImportOrExportDeclaration: typings.babelTypes.mod.ImportOrExportDeclaration
+  
   var JSX: typings.babelTypes.mod.JSX
   
   var LVal: typings.babelTypes.mod.LVal
@@ -130,6 +132,7 @@ object Aliases {
     Function: Function,
     FunctionParent: FunctionParent,
     Immutable: Immutable,
+    ImportOrExportDeclaration: ImportOrExportDeclaration,
     JSX: JSX,
     LVal: LVal,
     Literal: Literal,
@@ -157,7 +160,7 @@ object Aliases {
     UserWhitespacable: UserWhitespacable,
     While: While
   ): Aliases = {
-    val __obj = js.Dynamic.literal(Accessor = Accessor.asInstanceOf[js.Any], Binary = Binary.asInstanceOf[js.Any], Block = Block.asInstanceOf[js.Any], BlockParent = BlockParent.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], CompletionStatement = CompletionStatement.asInstanceOf[js.Any], Conditional = Conditional.asInstanceOf[js.Any], Declaration = Declaration.asInstanceOf[js.Any], EnumBody = EnumBody.asInstanceOf[js.Any], EnumMember = EnumMember.asInstanceOf[js.Any], ExportDeclaration = ExportDeclaration.asInstanceOf[js.Any], Expression = Expression.asInstanceOf[js.Any], ExpressionWrapper = ExpressionWrapper.asInstanceOf[js.Any], Flow = Flow.asInstanceOf[js.Any], FlowBaseAnnotation = FlowBaseAnnotation.asInstanceOf[js.Any], FlowDeclaration = FlowDeclaration.asInstanceOf[js.Any], FlowPredicate = FlowPredicate.asInstanceOf[js.Any], FlowType = FlowType.asInstanceOf[js.Any], For = For.asInstanceOf[js.Any], ForXStatement = ForXStatement.asInstanceOf[js.Any], Function = Function.asInstanceOf[js.Any], FunctionParent = FunctionParent.asInstanceOf[js.Any], Immutable = Immutable.asInstanceOf[js.Any], JSX = JSX.asInstanceOf[js.Any], LVal = LVal.asInstanceOf[js.Any], Literal = Literal.asInstanceOf[js.Any], Loop = Loop.asInstanceOf[js.Any], Method = Method.asInstanceOf[js.Any], Miscellaneous = Miscellaneous.asInstanceOf[js.Any], ModuleDeclaration = ModuleDeclaration.asInstanceOf[js.Any], ModuleSpecifier = ModuleSpecifier.asInstanceOf[js.Any], ObjectMember = ObjectMember.asInstanceOf[js.Any], Pattern = Pattern.asInstanceOf[js.Any], PatternLike = PatternLike.asInstanceOf[js.Any], Private = Private.asInstanceOf[js.Any], Property = Property.asInstanceOf[js.Any], Pureish = Pureish.asInstanceOf[js.Any], Scopable = Scopable.asInstanceOf[js.Any], Standardized = Standardized.asInstanceOf[js.Any], Statement = Statement.asInstanceOf[js.Any], TSBaseType = TSBaseType.asInstanceOf[js.Any], TSEntityName = TSEntityName.asInstanceOf[js.Any], TSType = TSType.asInstanceOf[js.Any], TSTypeElement = TSTypeElement.asInstanceOf[js.Any], Terminatorless = Terminatorless.asInstanceOf[js.Any], TypeScript = TypeScript.asInstanceOf[js.Any], UnaryLike = UnaryLike.asInstanceOf[js.Any], UserWhitespacable = UserWhitespacable.asInstanceOf[js.Any], While = While.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Accessor = Accessor.asInstanceOf[js.Any], Binary = Binary.asInstanceOf[js.Any], Block = Block.asInstanceOf[js.Any], BlockParent = BlockParent.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], CompletionStatement = CompletionStatement.asInstanceOf[js.Any], Conditional = Conditional.asInstanceOf[js.Any], Declaration = Declaration.asInstanceOf[js.Any], EnumBody = EnumBody.asInstanceOf[js.Any], EnumMember = EnumMember.asInstanceOf[js.Any], ExportDeclaration = ExportDeclaration.asInstanceOf[js.Any], Expression = Expression.asInstanceOf[js.Any], ExpressionWrapper = ExpressionWrapper.asInstanceOf[js.Any], Flow = Flow.asInstanceOf[js.Any], FlowBaseAnnotation = FlowBaseAnnotation.asInstanceOf[js.Any], FlowDeclaration = FlowDeclaration.asInstanceOf[js.Any], FlowPredicate = FlowPredicate.asInstanceOf[js.Any], FlowType = FlowType.asInstanceOf[js.Any], For = For.asInstanceOf[js.Any], ForXStatement = ForXStatement.asInstanceOf[js.Any], Function = Function.asInstanceOf[js.Any], FunctionParent = FunctionParent.asInstanceOf[js.Any], Immutable = Immutable.asInstanceOf[js.Any], ImportOrExportDeclaration = ImportOrExportDeclaration.asInstanceOf[js.Any], JSX = JSX.asInstanceOf[js.Any], LVal = LVal.asInstanceOf[js.Any], Literal = Literal.asInstanceOf[js.Any], Loop = Loop.asInstanceOf[js.Any], Method = Method.asInstanceOf[js.Any], Miscellaneous = Miscellaneous.asInstanceOf[js.Any], ModuleDeclaration = ModuleDeclaration.asInstanceOf[js.Any], ModuleSpecifier = ModuleSpecifier.asInstanceOf[js.Any], ObjectMember = ObjectMember.asInstanceOf[js.Any], Pattern = Pattern.asInstanceOf[js.Any], PatternLike = PatternLike.asInstanceOf[js.Any], Private = Private.asInstanceOf[js.Any], Property = Property.asInstanceOf[js.Any], Pureish = Pureish.asInstanceOf[js.Any], Scopable = Scopable.asInstanceOf[js.Any], Standardized = Standardized.asInstanceOf[js.Any], Statement = Statement.asInstanceOf[js.Any], TSBaseType = TSBaseType.asInstanceOf[js.Any], TSEntityName = TSEntityName.asInstanceOf[js.Any], TSType = TSType.asInstanceOf[js.Any], TSTypeElement = TSTypeElement.asInstanceOf[js.Any], Terminatorless = Terminatorless.asInstanceOf[js.Any], TypeScript = TypeScript.asInstanceOf[js.Any], UnaryLike = UnaryLike.asInstanceOf[js.Any], UserWhitespacable = UserWhitespacable.asInstanceOf[js.Any], While = While.asInstanceOf[js.Any])
     __obj.asInstanceOf[Aliases]
   }
   
@@ -209,6 +212,8 @@ object Aliases {
     inline def setFunctionParent(value: FunctionParent): Self = StObject.set(x, "FunctionParent", value.asInstanceOf[js.Any])
     
     inline def setImmutable(value: Immutable): Self = StObject.set(x, "Immutable", value.asInstanceOf[js.Any])
+    
+    inline def setImportOrExportDeclaration(value: ImportOrExportDeclaration): Self = StObject.set(x, "ImportOrExportDeclaration", value.asInstanceOf[js.Any])
     
     inline def setJSX(value: JSX): Self = StObject.set(x, "JSX", value.asInstanceOf[js.Any])
     

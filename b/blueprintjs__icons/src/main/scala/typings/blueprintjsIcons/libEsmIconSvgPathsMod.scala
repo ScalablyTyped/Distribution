@@ -1,6 +1,6 @@
 package typings.blueprintjsIcons
 
-import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsIcons.libEsmGeneratedIcons16pxBlueprintIcons16Mod.BlueprintIcons16Id
 import typings.blueprintjsIcons.libEsmTypeUtilsPascalCaseMod.PascalCase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -209,6 +209,10 @@ object libEsmIconSvgPathsMod {
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.AutomaticUpdates")
     @js.native
     val AutomaticUpdates: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.Axle")
+    @js.native
+    val Axle: js.Array[String] = js.native
     
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.Backlink")
     @js.native
@@ -457,6 +461,10 @@ object libEsmIconSvgPathsMod {
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.Cross")
     @js.native
     val Cross: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.CrossCircle")
+    @js.native
+    val CrossCircle: js.Array[String] = js.native
     
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.Crown")
     @js.native
@@ -1098,6 +1106,10 @@ object libEsmIconSvgPathsMod {
     @js.native
     val Insert: js.Array[String] = js.native
     
+    @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.Intelligence")
+    @js.native
+    val Intelligence: js.Array[String] = js.native
+    
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.Intersection")
     @js.native
     val Intersection: js.Array[String] = js.native
@@ -1282,6 +1294,10 @@ object libEsmIconSvgPathsMod {
     @js.native
     val Lock: js.Array[String] = js.native
     
+    @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.Locomotive")
+    @js.native
+    val Locomotive: js.Array[String] = js.native
+    
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.LogIn")
     @js.native
     val LogIn: js.Array[String] = js.native
@@ -1373,6 +1389,10 @@ object libEsmIconSvgPathsMod {
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.ModalFilled")
     @js.native
     val ModalFilled: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.Model")
+    @js.native
+    val Model: js.Array[String] = js.native
     
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.Moon")
     @js.native
@@ -1786,6 +1806,10 @@ object libEsmIconSvgPathsMod {
     @js.native
     val SendToMap: js.Array[String] = js.native
     
+    @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.Sensor")
+    @js.native
+    val Sensor: js.Array[String] = js.native
+    
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.SeriesAdd")
     @js.native
     val SeriesAdd: js.Array[String] = js.native
@@ -1961,6 +1985,14 @@ object libEsmIconSvgPathsMod {
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.Style")
     @js.native
     val Style: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.Subscript")
+    @js.native
+    val Subscript: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.Superscript")
+    @js.native
+    val Superscript: js.Array[String] = js.native
     
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.SwapHorizontal")
     @js.native
@@ -2473,6 +2505,10 @@ object libEsmIconSvgPathsMod {
     @js.native
     val AutomaticUpdates: js.Array[String] = js.native
     
+    @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.Axle")
+    @js.native
+    val Axle: js.Array[String] = js.native
+    
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.Backlink")
     @js.native
     val Backlink: js.Array[String] = js.native
@@ -2720,6 +2756,10 @@ object libEsmIconSvgPathsMod {
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.Cross")
     @js.native
     val Cross: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.CrossCircle")
+    @js.native
+    val CrossCircle: js.Array[String] = js.native
     
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.Crown")
     @js.native
@@ -3361,6 +3401,10 @@ object libEsmIconSvgPathsMod {
     @js.native
     val Insert: js.Array[String] = js.native
     
+    @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.Intelligence")
+    @js.native
+    val Intelligence: js.Array[String] = js.native
+    
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.Intersection")
     @js.native
     val Intersection: js.Array[String] = js.native
@@ -3545,6 +3589,10 @@ object libEsmIconSvgPathsMod {
     @js.native
     val Lock: js.Array[String] = js.native
     
+    @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.Locomotive")
+    @js.native
+    val Locomotive: js.Array[String] = js.native
+    
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.LogIn")
     @js.native
     val LogIn: js.Array[String] = js.native
@@ -3636,6 +3684,10 @@ object libEsmIconSvgPathsMod {
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.ModalFilled")
     @js.native
     val ModalFilled: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.Model")
+    @js.native
+    val Model: js.Array[String] = js.native
     
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.Moon")
     @js.native
@@ -4049,6 +4101,10 @@ object libEsmIconSvgPathsMod {
     @js.native
     val SendToMap: js.Array[String] = js.native
     
+    @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.Sensor")
+    @js.native
+    val Sensor: js.Array[String] = js.native
+    
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.SeriesAdd")
     @js.native
     val SeriesAdd: js.Array[String] = js.native
@@ -4224,6 +4280,14 @@ object libEsmIconSvgPathsMod {
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.Style")
     @js.native
     val Style: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.Subscript")
+    @js.native
+    val Subscript: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.Superscript")
+    @js.native
+    val Superscript: js.Array[String] = js.native
     
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.SwapHorizontal")
     @js.native

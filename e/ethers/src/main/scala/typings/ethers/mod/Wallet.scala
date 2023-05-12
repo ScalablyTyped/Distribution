@@ -1,11 +1,7 @@
 package typings.ethers.mod
 
-import typings.ethersprojectAbstractProvider.mod.Provider
-import typings.ethersprojectAbstractSigner.mod.ExternallyOwnedAccount
-import typings.ethersprojectBytes.mod.Bytes
-import typings.ethersprojectBytes.mod.BytesLike
-import typings.ethersprojectJsonWallets.libKeystoreMod.ProgressCallback
-import typings.ethersprojectSigningKey.mod.SigningKey
+import typings.ethers.typesCryptoScryptMod.ProgressCallback
+import typings.ethers.typesProvidersProviderMod.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("ethers", "Wallet")
 @js.native
 open class Wallet protected ()
-  extends typings.ethersprojectWallet.mod.Wallet {
-  def this(privateKey: ExternallyOwnedAccount) = this()
-  def this(privateKey: BytesLike) = this()
-  def this(privateKey: SigningKey) = this()
-  def this(privateKey: ExternallyOwnedAccount, provider: Provider) = this()
-  def this(privateKey: BytesLike, provider: Provider) = this()
-  def this(privateKey: SigningKey, provider: Provider) = this()
+  extends typings.ethers.typesEthersMod.Wallet {
+  /**
+    *  Create a new wallet for the %%privateKey%%, optionally connected
+    *  to %%provider%%.
+    */
+  def this(key: String) = this()
+  def this(key: typings.ethers.typesCryptoMod.SigningKey) = this()
+  def this(key: String, provider: Provider) = this()
+  def this(key: typings.ethers.typesCryptoMod.SigningKey, provider: Provider) = this()
 }
 /* static members */
 object Wallet {
@@ -29,21 +27,55 @@ object Wallet {
   val ^ : js.Any = js.native
   
   /**
-    *  Static methods to create Wallet instances.
+    *  Creates a new random [[HDNodeWallet]] using the avavilable
+    *  [cryptographic random source](randomBytes).
+    *
+    *  If there is no crytographic random source, this will throw.
     */
-  inline def createRandom(): typings.ethersprojectWallet.mod.Wallet = ^.asInstanceOf[js.Dynamic].applyDynamic("createRandom")().asInstanceOf[typings.ethersprojectWallet.mod.Wallet]
-  inline def createRandom(options: Any): typings.ethersprojectWallet.mod.Wallet = ^.asInstanceOf[js.Dynamic].applyDynamic("createRandom")(options.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectWallet.mod.Wallet]
+  inline def createRandom(): typings.ethers.typesWalletHdwalletMod.HDNodeWallet = ^.asInstanceOf[js.Dynamic].applyDynamic("createRandom")().asInstanceOf[typings.ethers.typesWalletHdwalletMod.HDNodeWallet]
+  inline def createRandom(provider: Provider): typings.ethers.typesWalletHdwalletMod.HDNodeWallet = ^.asInstanceOf[js.Dynamic].applyDynamic("createRandom")(provider.asInstanceOf[js.Any]).asInstanceOf[typings.ethers.typesWalletHdwalletMod.HDNodeWallet]
   
-  inline def fromEncryptedJson(json: String, password: String): js.Promise[typings.ethersprojectWallet.mod.Wallet] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJson")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ethersprojectWallet.mod.Wallet]]
-  inline def fromEncryptedJson(json: String, password: String, progressCallback: ProgressCallback): js.Promise[typings.ethersprojectWallet.mod.Wallet] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJson")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ethersprojectWallet.mod.Wallet]]
-  inline def fromEncryptedJson(json: String, password: Bytes): js.Promise[typings.ethersprojectWallet.mod.Wallet] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJson")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ethersprojectWallet.mod.Wallet]]
-  inline def fromEncryptedJson(json: String, password: Bytes, progressCallback: ProgressCallback): js.Promise[typings.ethersprojectWallet.mod.Wallet] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJson")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ethersprojectWallet.mod.Wallet]]
+  inline def fromEncryptedJson(json: String, password: String): js.Promise[
+    typings.ethers.typesWalletHdwalletMod.HDNodeWallet | typings.ethers.typesWalletWalletMod.Wallet
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJson")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+    typings.ethers.typesWalletHdwalletMod.HDNodeWallet | typings.ethers.typesWalletWalletMod.Wallet
+  ]]
+  inline def fromEncryptedJson(json: String, password: String, progress: ProgressCallback): js.Promise[
+    typings.ethers.typesWalletHdwalletMod.HDNodeWallet | typings.ethers.typesWalletWalletMod.Wallet
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJson")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any], progress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+    typings.ethers.typesWalletHdwalletMod.HDNodeWallet | typings.ethers.typesWalletWalletMod.Wallet
+  ]]
+  /**
+    *  Creates (asynchronously) a **Wallet** by decrypting the %%json%%
+    *  with %%password%%.
+    *
+    *  If %%progress%% is provided, it is called periodically during
+    *  decryption so that any UI can be updated.
+    */
+  inline def fromEncryptedJson(json: String, password: js.typedarray.Uint8Array): js.Promise[
+    typings.ethers.typesWalletHdwalletMod.HDNodeWallet | typings.ethers.typesWalletWalletMod.Wallet
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJson")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+    typings.ethers.typesWalletHdwalletMod.HDNodeWallet | typings.ethers.typesWalletWalletMod.Wallet
+  ]]
+  inline def fromEncryptedJson(json: String, password: js.typedarray.Uint8Array, progress: ProgressCallback): js.Promise[
+    typings.ethers.typesWalletHdwalletMod.HDNodeWallet | typings.ethers.typesWalletWalletMod.Wallet
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJson")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any], progress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+    typings.ethers.typesWalletHdwalletMod.HDNodeWallet | typings.ethers.typesWalletWalletMod.Wallet
+  ]]
   
-  inline def fromEncryptedJsonSync(json: String, password: String): typings.ethersprojectWallet.mod.Wallet = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJsonSync")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectWallet.mod.Wallet]
-  inline def fromEncryptedJsonSync(json: String, password: Bytes): typings.ethersprojectWallet.mod.Wallet = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJsonSync")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectWallet.mod.Wallet]
+  inline def fromEncryptedJsonSync(json: String, password: String): typings.ethers.typesWalletHdwalletMod.HDNodeWallet | typings.ethers.typesWalletWalletMod.Wallet = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJsonSync")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.ethers.typesWalletHdwalletMod.HDNodeWallet | typings.ethers.typesWalletWalletMod.Wallet]
+  /**
+    *  Creates a **Wallet** by decrypting the %%json%% with %%password%%.
+    *
+    *  The [[fromEncryptedJson]] method is preferred, as this method
+    *  will lock up and freeze the UI during decryption, which may take
+    *  some time.
+    */
+  inline def fromEncryptedJsonSync(json: String, password: js.typedarray.Uint8Array): typings.ethers.typesWalletHdwalletMod.HDNodeWallet | typings.ethers.typesWalletWalletMod.Wallet = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJsonSync")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.ethers.typesWalletHdwalletMod.HDNodeWallet | typings.ethers.typesWalletWalletMod.Wallet]
   
-  inline def fromMnemonic(mnemonic: String): typings.ethersprojectWallet.mod.Wallet = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMnemonic")(mnemonic.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectWallet.mod.Wallet]
-  inline def fromMnemonic(mnemonic: String, path: String): typings.ethersprojectWallet.mod.Wallet = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMnemonic")(mnemonic.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectWallet.mod.Wallet]
-  inline def fromMnemonic(mnemonic: String, path: String, wordlist: typings.ethersprojectWordlists.mod.Wordlist): typings.ethersprojectWallet.mod.Wallet = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMnemonic")(mnemonic.asInstanceOf[js.Any], path.asInstanceOf[js.Any], wordlist.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectWallet.mod.Wallet]
-  inline def fromMnemonic(mnemonic: String, path: Unit, wordlist: typings.ethersprojectWordlists.mod.Wordlist): typings.ethersprojectWallet.mod.Wallet = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMnemonic")(mnemonic.asInstanceOf[js.Any], path.asInstanceOf[js.Any], wordlist.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectWallet.mod.Wallet]
+  /**
+    *  Creates a [[HDNodeWallet]] for %%phrase%%.
+    */
+  inline def fromPhrase(phrase: String): typings.ethers.typesWalletHdwalletMod.HDNodeWallet = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPhrase")(phrase.asInstanceOf[js.Any]).asInstanceOf[typings.ethers.typesWalletHdwalletMod.HDNodeWallet]
+  inline def fromPhrase(phrase: String, provider: Provider): typings.ethers.typesWalletHdwalletMod.HDNodeWallet = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPhrase")(phrase.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[typings.ethers.typesWalletHdwalletMod.HDNodeWallet]
 }

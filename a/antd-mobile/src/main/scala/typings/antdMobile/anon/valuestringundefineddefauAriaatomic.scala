@@ -42,6 +42,8 @@ import typings.antdMobile.antdMobileStrings.tree
 import typings.antdMobile.antdMobileStrings.vertical
 import typings.antdMobile.esComponentsInputInputMod.InputRef
 import typings.react.mod.Booleanish
+import typings.react.mod.CompositionEvent
+import typings.react.mod.CompositionEventHandler
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.Key
@@ -53,7 +55,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  value :string | undefined,   defaultValue :string | undefined,   maxLength :number | undefined,   placeholder :string | undefined,   clearable :boolean | undefined,   onlyShowClearWhenFocus :boolean | undefined,   showCancelButton :boolean | (focus : boolean, value : string): boolean | undefined,   cancelText :string | undefined,   icon :react.react.ReactNode | undefined,   clearOnCancel :boolean | undefined,   onSearch :(val : string): void | undefined,   onChange :(val : string): void | undefined,   onCancel :(): void | undefined,   className :string | undefined,   style :react.react.CSSProperties & std.Partial<std.Record<'--height' | '--border-radius' | '--padding-left' | '--background' | '--placeholder-color', string>> | undefined,   tabIndex :number | undefined} & std.Pick<antd-mobile.antd-mobile/es/components/input.InputProps, 'onFocus' | 'onBlur' | 'onClear'> & react.react.AriaAttributes & react.react.RefAttributes<antd-mobile.antd-mobile/es/components/input.InputRef> */
+/* Inlined {  value :string | undefined,   defaultValue :string | undefined,   maxLength :number | undefined,   placeholder :string | undefined,   clearable :boolean | undefined,   onlyShowClearWhenFocus :boolean | undefined,   showCancelButton :boolean | (focus : boolean, value : string): boolean | undefined,   cancelText :string | undefined,   icon :react.react.ReactNode | undefined,   clearOnCancel :boolean | undefined,   onSearch :(val : string): void | undefined,   onChange :(val : string): void | undefined,   onCancel :(): void | undefined,   className :string | undefined,   style :react.react.CSSProperties & std.Partial<std.Record<'--height' | '--border-radius' | '--padding-left' | '--background' | '--placeholder-color', string>> | undefined,   tabIndex :number | undefined} & std.Pick<antd-mobile.antd-mobile/es/components/input.InputProps, 'onCompositionEnd' | 'onCompositionStart' | 'onFocus' | 'onBlur' | 'onClear'> & react.react.AriaAttributes & react.react.RefAttributes<antd-mobile.antd-mobile/es/components/input.InputRef> */
 trait valuestringundefineddefauAriaatomic extends StObject {
   
   /** Identifies the currently active element when DOM focus is on a composite widget, textbox, group, or application. */
@@ -314,6 +316,10 @@ trait valuestringundefineddefauAriaatomic extends StObject {
   
   var onClear: js.UndefOr[js.Function0[Unit]] = js.undefined
   
+  var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLInputElement]] = js.undefined
+  
+  var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLInputElement]] = js.undefined
+  
   var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
   
   var onSearch: js.UndefOr[js.Function1[/* val */ String, Unit]] = js.undefined
@@ -322,6 +328,11 @@ trait valuestringundefineddefauAriaatomic extends StObject {
   
   var placeholder: js.UndefOr[String] = js.undefined
   
+  /**
+    * Allows getting a ref to the component instance.
+    * Once the component unmounts, React will set `ref.current` to `null` (or call the ref with `null` if you passed a callback ref).
+    * @see https://react.dev/learn/referencing-values-with-refs#refs-and-the-dom
+    */
   var ref: js.UndefOr[Ref[InputRef]] = js.undefined
   
   var showCancelButton: js.UndefOr[Boolean | (js.Function2[/* focus */ Boolean, /* value */ String, Boolean])] = js.undefined
@@ -585,6 +596,14 @@ object valuestringundefineddefauAriaatomic {
     inline def setOnClear(value: () => Unit): Self = StObject.set(x, "onClear", js.Any.fromFunction0(value))
     
     inline def setOnClearUndefined: Self = StObject.set(x, "onClear", js.undefined)
+    
+    inline def setOnCompositionEnd(value: CompositionEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onCompositionEnd", js.Any.fromFunction1(value))
+    
+    inline def setOnCompositionEndUndefined: Self = StObject.set(x, "onCompositionEnd", js.undefined)
+    
+    inline def setOnCompositionStart(value: CompositionEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onCompositionStart", js.Any.fromFunction1(value))
+    
+    inline def setOnCompositionStartUndefined: Self = StObject.set(x, "onCompositionStart", js.undefined)
     
     inline def setOnFocus(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     

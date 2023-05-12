@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SpecDocument extends StObject {
   
+  var createTime: TestSnapshotVersion
+  
   var key: String
   
   var options: js.UndefOr[DocumentOptions] = js.undefined
@@ -18,13 +20,15 @@ trait SpecDocument extends StObject {
 }
 object SpecDocument {
   
-  inline def apply(key: String, version: TestSnapshotVersion): SpecDocument = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], value = null)
+  inline def apply(createTime: TestSnapshotVersion, key: String, version: TestSnapshotVersion): SpecDocument = {
+    val __obj = js.Dynamic.literal(createTime = createTime.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], value = null)
     __obj.asInstanceOf[SpecDocument]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: SpecDocument] (val x: Self) extends AnyVal {
+    
+    inline def setCreateTime(value: TestSnapshotVersion): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

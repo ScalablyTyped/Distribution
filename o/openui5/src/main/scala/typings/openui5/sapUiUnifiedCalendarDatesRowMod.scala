@@ -195,20 +195,14 @@ object sapUiUnifiedCalendarDatesRowMod {
     bShowDayNamesLine: Boolean): this.type = js.native
     
     /**
-      * Sets a new value for property {@link #getStartDate startDate}.
+      * Sets start date of the row.
       *
-      * Start date of the row If in rendering phase the date property is not in the range startDate + days, it
-      * is set to the start date So after setting the start date the date should be set to be in the range of
-      * the start date
-      *
-      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
-      *
-      * @returns Reference to `this` in order to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def setStartDate(/**
-      * New value for property `startDate`
+      * A JavaScript date
       */
-    oStartDate: js.Object): this.type = js.native
+    oStartDate: js.Date): this.type = js.native
   }
   
   trait DatesRowSettings

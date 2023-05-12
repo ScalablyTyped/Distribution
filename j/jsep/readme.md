@@ -1,7 +1,7 @@
 
 # Scala.js typings for jsep
 
-Typings are for version 1.3.7
+Typings are for version 1.3.8
 
 ## Library description:
 a tiny JavaScript expression parser

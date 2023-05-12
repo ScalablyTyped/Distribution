@@ -16,7 +16,9 @@ import typings.awsSdkTypes.distTypesCryptoMod.HashConstructor
 import typings.awsSdkTypes.distTypesEndpointMod.EndpointV2
 import typings.awsSdkTypes.distTypesHttpMod.Endpoint
 import typings.awsSdkTypes.distTypesHttpMod.HttpHandlerOptions
+import typings.awsSdkTypes.distTypesIdentityAwsCredentialIdentityMod.AwsCredentialIdentity
 import typings.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import typings.awsSdkTypes.distTypesRetryMod.RetryStrategyV2
 import typings.awsSdkTypes.distTypesSerdeMod.StreamCollector
 import typings.awsSdkTypes.distTypesSignatureMod.RequestSigner
 import typings.awsSdkTypes.distTypesTransferMod.RequestHandler
@@ -53,7 +55,7 @@ object anon {
     
     def credentialDefaultProvider(input: Any): Provider[Credentials] = js.native
     
-    var credentials: js.UndefOr[Credentials | Provider[Credentials]] = js.native
+    var credentials: js.UndefOr[AwsCredentialIdentity | Provider[AwsCredentialIdentity]] = js.native
     
     var customUserAgent: js.UndefOr[String | UserAgent] = js.native
     
@@ -84,7 +86,7 @@ object anon {
     
     var retryMode: String | Provider[String] = js.native
     
-    var retryStrategy: js.UndefOr[RetryStrategy] = js.native
+    var retryStrategy: js.UndefOr[RetryStrategy | RetryStrategyV2] = js.native
     
     var runtime: String = js.native
     
@@ -153,7 +155,7 @@ object anon {
     @JSName("credentialDefaultProvider")
     var credentialDefaultProvider_Original: DefaultCredentialProvider = js.native
     
-    var credentials: js.UndefOr[Credentials | Provider[Credentials]] = js.native
+    var credentials: js.UndefOr[AwsCredentialIdentity | Provider[AwsCredentialIdentity]] = js.native
     
     var customUserAgent: js.UndefOr[String | UserAgent] = js.native
     
@@ -184,7 +186,7 @@ object anon {
     
     var retryMode: String | Provider[String] = js.native
     
-    var retryStrategy: js.UndefOr[RetryStrategy] = js.native
+    var retryStrategy: js.UndefOr[RetryStrategy | RetryStrategyV2] = js.native
     
     var runtime: String = js.native
     
@@ -251,7 +253,7 @@ object anon {
     
     def credentialDefaultProvider(input: Any): Provider[Credentials] = js.native
     
-    var credentials: js.UndefOr[Credentials | Provider[Credentials]] = js.native
+    var credentials: js.UndefOr[AwsCredentialIdentity | Provider[AwsCredentialIdentity]] = js.native
     
     var customUserAgent: js.UndefOr[String | UserAgent] = js.native
     
@@ -278,7 +280,7 @@ object anon {
     
     var retryMode: String | Provider[String] = js.native
     
-    var retryStrategy: js.UndefOr[RetryStrategy] = js.native
+    var retryStrategy: js.UndefOr[RetryStrategy | RetryStrategyV2] = js.native
     
     var runtime: String = js.native
     
@@ -370,6 +372,14 @@ object anon {
     def urlParser(url: URL): Endpoint = js.native
     @JSName("urlParser")
     var urlParser_Original: UrlParser = js.native
+    
+    def utf8Decoder(input: String): js.typedarray.Uint8Array = js.native
+    @JSName("utf8Decoder")
+    var utf8Decoder_Original: Decoder = js.native
+    
+    def utf8Encoder(input: js.typedarray.Uint8Array): String = js.native
+    @JSName("utf8Encoder")
+    var utf8Encoder_Original: Encoder = js.native
   }
   
   /* Inlined @aws-sdk/smithy-client.@aws-sdk/smithy-client.ExceptionOptionType<@aws-sdk/client-sts.@aws-sdk/client-sts/dist-types/models/models_0.ExpiredTokenException, @aws-sdk/client-sts.@aws-sdk/client-sts/dist-types/models/STSServiceException.STSServiceException> */

@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetResponses202204 extends StObject {
   
-  /** Returns a weekly aggregate of the number of additions and deletions pushed to a repository. */
+  /**
+    * Get the weekly commit activity
+    * @description Returns a weekly aggregate of the number of additions and deletions pushed to a repository.
+    */
   var get: Responses202204
 }
 object GetResponses202204 {

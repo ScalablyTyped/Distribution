@@ -13,7 +13,7 @@ trait InputBoxComponent
   extends StObject
      with Component {
   
-  var ariaLive: js.UndefOr[String] = js.native
+  var ariaLive: js.UndefOr[AriaLiveValue] = js.native
   
   var columns: js.UndefOr[Double] = js.native
   

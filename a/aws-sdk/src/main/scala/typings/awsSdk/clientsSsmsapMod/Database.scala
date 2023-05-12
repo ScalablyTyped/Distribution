@@ -7,57 +7,57 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Database extends StObject {
   
   /**
-    * 
+    * The ID of the application.
     */
   var ApplicationId: js.UndefOr[typings.awsSdk.clientsSsmsapMod.ApplicationId] = js.undefined
   
   /**
-    * 
+    * The Amazon Resource Name (ARN) of the database.
     */
   var Arn: js.UndefOr[SsmSapArn] = js.undefined
   
   /**
-    * 
+    * The ID of the component.
     */
   var ComponentId: js.UndefOr[typings.awsSdk.clientsSsmsapMod.ComponentId] = js.undefined
   
   /**
-    * 
+    * The credentials of the database.
     */
   var Credentials: js.UndefOr[ApplicationCredentialList] = js.undefined
   
   /**
-    * 
+    * The ID of the SAP HANA database.
     */
   var DatabaseId: js.UndefOr[typings.awsSdk.clientsSsmsapMod.DatabaseId] = js.undefined
   
   /**
-    * 
+    * The name of the database.
     */
   var DatabaseName: js.UndefOr[String] = js.undefined
   
   /**
-    * 
+    * The type of the database.
     */
   var DatabaseType: js.UndefOr[typings.awsSdk.clientsSsmsapMod.DatabaseType] = js.undefined
   
   /**
-    * 
+    * The time at which the database was last updated.
     */
   var LastUpdated: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * 
+    * The primary host of the database.
     */
   var PrimaryHost: js.UndefOr[String] = js.undefined
   
   /**
-    * 
+    * The SQL port of the database.
     */
   var SQLPort: js.UndefOr[Integer] = js.undefined
   
   /**
-    * 
+    * The status of the database.
     */
   var Status: js.UndefOr[DatabaseStatus] = js.undefined
 }

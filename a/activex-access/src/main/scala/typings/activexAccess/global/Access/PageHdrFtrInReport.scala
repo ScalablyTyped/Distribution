@@ -54,7 +54,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   /* CompleteClass */
   override def Controls[T](Index: String): T = js.native
-  // tslint:disable-next-line:no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   /* CompleteClass */
   override def Controls[T](Index: Double): T = js.native
   /* CompleteClass */

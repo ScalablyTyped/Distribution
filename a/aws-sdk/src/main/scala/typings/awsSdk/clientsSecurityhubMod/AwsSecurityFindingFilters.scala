@@ -17,6 +17,16 @@ trait AwsSecurityFindingFilters extends StObject {
   var CompanyName: js.UndefOr[StringFilterList] = js.undefined
   
   /**
+    *  The unique identifier of a standard in which a control is enabled. This field consists of the resource portion of the Amazon Resource Name (ARN) returned for a standard in the DescribeStandards API response. 
+    */
+  var ComplianceAssociatedStandardsId: js.UndefOr[StringFilterList] = js.undefined
+  
+  /**
+    *  The unique identifier of a control across standards. Values for this field typically consist of an Amazon Web Service and a number, such as APIGateway.5. 
+    */
+  var ComplianceSecurityControlId: js.UndefOr[StringFilterList] = js.undefined
+  
+  /**
     * Exclusive to findings that are generated as the result of a check run against a specific rule in a supported standard, such as CIS Amazon Web Services Foundations. Contains security standard-related finding details.
     */
   var ComplianceStatus: js.UndefOr[StringFilterList] = js.undefined
@@ -27,7 +37,7 @@ trait AwsSecurityFindingFilters extends StObject {
   var Confidence: js.UndefOr[NumberFilterList] = js.undefined
   
   /**
-    * An ISO8601-formatted timestamp that indicates when the security-findings provider captured the potential security issue that a finding captured.
+    * An ISO8601-formatted timestamp that indicates when the security findings provider captured the potential security issue that a finding captured. A correctly formatted example is 2020-05-21T20:16:34.724Z. The value cannot contain spaces, and date and time should be separated by T. For more information, see RFC 3339 section 5.6, Internet Date/Time Format.
     */
   var CreatedAt: js.UndefOr[DateFilterList] = js.undefined
   
@@ -77,12 +87,12 @@ trait AwsSecurityFindingFilters extends StObject {
   var FindingProviderFieldsTypes: js.UndefOr[StringFilterList] = js.undefined
   
   /**
-    * An ISO8601-formatted timestamp that indicates when the security-findings provider first observed the potential security issue that a finding captured.
+    * An ISO8601-formatted timestamp that indicates when the security findings provider first observed the potential security issue that a finding captured. A correctly formatted example is 2020-05-21T20:16:34.724Z. The value cannot contain spaces, and date and time should be separated by T. For more information, see RFC 3339 section 5.6, Internet Date/Time Format.
     */
   var FirstObservedAt: js.UndefOr[DateFilterList] = js.undefined
   
   /**
-    * The identifier for the solution-specific component (a discrete unit of logic) that generated a finding. In various security-findings providers' solutions, this generator can be called a rule, a check, a detector, a plugin, etc.
+    * The identifier for the solution-specific component (a discrete unit of logic) that generated a finding. In various security findings providers' solutions, this generator can be called a rule, a check, a detector, a plugin, etc.
     */
   var GeneratorId: js.UndefOr[StringFilterList] = js.undefined
   
@@ -97,7 +107,7 @@ trait AwsSecurityFindingFilters extends StObject {
   var Keyword: js.UndefOr[KeywordFilterList] = js.undefined
   
   /**
-    * An ISO8601-formatted timestamp that indicates when the security-findings provider most recently observed the potential security issue that a finding captured.
+    * An ISO8601-formatted timestamp that indicates when the security findings provider most recently observed the potential security issue that a finding captured. A correctly formatted example is 2020-05-21T20:16:34.724Z. The value cannot contain spaces, and date and time should be separated by T. For more information, see RFC 3339 section 5.6, Internet Date/Time Format.
     */
   var LastObservedAt: js.UndefOr[DateFilterList] = js.undefined
   
@@ -192,7 +202,7 @@ trait AwsSecurityFindingFilters extends StObject {
   var NoteUpdatedBy: js.UndefOr[StringFilterList] = js.undefined
   
   /**
-    * The date/time that the process was launched.
+    * A timestamp that identifies when the process was launched. A correctly formatted example is 2020-05-21T20:16:34.724Z. The value cannot contain spaces, and date and time should be separated by T. For more information, see RFC 3339 section 5.6, Internet Date/Time Format.
     */
   var ProcessLaunchedAt: js.UndefOr[DateFilterList] = js.undefined
   
@@ -202,7 +212,7 @@ trait AwsSecurityFindingFilters extends StObject {
   var ProcessName: js.UndefOr[StringFilterList] = js.undefined
   
   /**
-    * The parent process ID.
+    * The parent process ID. This field accepts positive integers between O and 2147483647.
     */
   var ProcessParentPid: js.UndefOr[NumberFilterList] = js.undefined
   
@@ -217,7 +227,7 @@ trait AwsSecurityFindingFilters extends StObject {
   var ProcessPid: js.UndefOr[NumberFilterList] = js.undefined
   
   /**
-    * The date/time that the process was terminated.
+    * A timestamp that identifies when the process was terminated. A correctly formatted example is 2020-05-21T20:16:34.724Z. The value cannot contain spaces, and date and time should be separated by T. For more information, see RFC 3339 section 5.6, Internet Date/Time Format.
     */
   var ProcessTerminatedAt: js.UndefOr[DateFilterList] = js.undefined
   
@@ -227,7 +237,7 @@ trait AwsSecurityFindingFilters extends StObject {
   var ProductArn: js.UndefOr[StringFilterList] = js.undefined
   
   /**
-    * A data type where security-findings providers can include additional solution-specific details that aren't part of the defined AwsSecurityFinding format.
+    * A data type where security findings providers can include additional solution-specific details that aren't part of the defined AwsSecurityFinding format.
     */
   var ProductFields: js.UndefOr[MapFilterList] = js.undefined
   
@@ -352,7 +362,7 @@ trait AwsSecurityFindingFilters extends StObject {
   var ResourceContainerImageName: js.UndefOr[StringFilterList] = js.undefined
   
   /**
-    * The date/time that the container was started.
+    * A timestamp that identifies when the container was started. A correctly formatted example is 2020-05-21T20:16:34.724Z. The value cannot contain spaces, and date and time should be separated by T. For more information, see RFC 3339 section 5.6, Internet Date/Time Format.
     */
   var ResourceContainerLaunchedAt: js.UndefOr[DateFilterList] = js.undefined
   
@@ -407,12 +417,12 @@ trait AwsSecurityFindingFilters extends StObject {
   var SeverityNormalized: js.UndefOr[NumberFilterList] = js.undefined
   
   /**
-    * The native severity as defined by the security-findings provider's solution that generated the finding.
+    * The native severity as defined by the security findings provider's solution that generated the finding.
     */
   var SeverityProduct: js.UndefOr[NumberFilterList] = js.undefined
   
   /**
-    * A URL that links to a page about the current finding in the security-findings provider's solution.
+    * A URL that links to a page about the current finding in the security findings provider's solution.
     */
   var SourceUrl: js.UndefOr[StringFilterList] = js.undefined
   
@@ -422,7 +432,7 @@ trait AwsSecurityFindingFilters extends StObject {
   var ThreatIntelIndicatorCategory: js.UndefOr[StringFilterList] = js.undefined
   
   /**
-    * The date/time of the last observation of a threat intelligence indicator.
+    * A timestamp that identifies the last observation of a threat intelligence indicator.
     */
   var ThreatIntelIndicatorLastObservedAt: js.UndefOr[DateFilterList] = js.undefined
   
@@ -457,7 +467,7 @@ trait AwsSecurityFindingFilters extends StObject {
   var Type: js.UndefOr[StringFilterList] = js.undefined
   
   /**
-    * An ISO8601-formatted timestamp that indicates when the security-findings provider last updated the finding record. 
+    * An ISO8601-formatted timestamp that indicates when the security findings provider last updated the finding record.  A correctly formatted example is 2020-05-21T20:16:34.724Z. The value cannot contain spaces, and date and time should be separated by T. For more information, see RFC 3339 section 5.6, Internet Date/Time Format.
     */
   var UpdatedAt: js.UndefOr[DateFilterList] = js.undefined
   
@@ -502,6 +512,18 @@ object AwsSecurityFindingFilters {
     inline def setCompanyNameUndefined: Self = StObject.set(x, "CompanyName", js.undefined)
     
     inline def setCompanyNameVarargs(value: StringFilter*): Self = StObject.set(x, "CompanyName", js.Array(value*))
+    
+    inline def setComplianceAssociatedStandardsId(value: StringFilterList): Self = StObject.set(x, "ComplianceAssociatedStandardsId", value.asInstanceOf[js.Any])
+    
+    inline def setComplianceAssociatedStandardsIdUndefined: Self = StObject.set(x, "ComplianceAssociatedStandardsId", js.undefined)
+    
+    inline def setComplianceAssociatedStandardsIdVarargs(value: StringFilter*): Self = StObject.set(x, "ComplianceAssociatedStandardsId", js.Array(value*))
+    
+    inline def setComplianceSecurityControlId(value: StringFilterList): Self = StObject.set(x, "ComplianceSecurityControlId", value.asInstanceOf[js.Any])
+    
+    inline def setComplianceSecurityControlIdUndefined: Self = StObject.set(x, "ComplianceSecurityControlId", js.undefined)
+    
+    inline def setComplianceSecurityControlIdVarargs(value: StringFilter*): Self = StObject.set(x, "ComplianceSecurityControlId", js.Array(value*))
     
     inline def setComplianceStatus(value: StringFilterList): Self = StObject.set(x, "ComplianceStatus", value.asInstanceOf[js.Any])
     

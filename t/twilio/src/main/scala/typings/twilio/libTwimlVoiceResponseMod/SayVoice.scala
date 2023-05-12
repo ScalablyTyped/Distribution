@@ -68,7 +68,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.twilio.twilioStrings.PollyDotVitoria
   - typings.twilio.twilioStrings.PollyDotZeina
   - typings.twilio.twilioStrings.PollyDotZhiyu
+  - typings.twilio.twilioStrings.`PollyDotAdriano-Neural`
   - typings.twilio.twilioStrings.`PollyDotAmy-Neural`
+  - typings.twilio.twilioStrings.`PollyDotAndres-Neural`
   - typings.twilio.twilioStrings.`PollyDotAria-Neural`
   - typings.twilio.twilioStrings.`PollyDotArlet-Neural`
   - typings.twilio.twilioStrings.`PollyDotArthur-Neural`
@@ -77,40 +79,59 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.twilio.twilioStrings.`PollyDotBrian-Neural`
   - typings.twilio.twilioStrings.`PollyDotCamila-Neural`
   - typings.twilio.twilioStrings.`PollyDotDaniel-Neural`
+  - typings.twilio.twilioStrings.`PollyDotElin-Neural`
   - typings.twilio.twilioStrings.`PollyDotEmma-Neural`
   - typings.twilio.twilioStrings.`PollyDotGabrielle-Neural`
+  - typings.twilio.twilioStrings.`PollyDotHala-Neural`
   - typings.twilio.twilioStrings.`PollyDotHannah-Neural`
+  - typings.twilio.twilioStrings.`PollyDotHiujin-Neural`
+  - typings.twilio.twilioStrings.`PollyDotIda-Neural`
   - typings.twilio.twilioStrings.`PollyDotInes-Neural`
   - typings.twilio.twilioStrings.`PollyDotIvy-Neural`
   - typings.twilio.twilioStrings.`PollyDotJoanna-Neural`
   - typings.twilio.twilioStrings.`PollyDotJoey-Neural`
   - typings.twilio.twilioStrings.`PollyDotJustin-Neural`
   - typings.twilio.twilioStrings.`PollyDotKajal-Neural`
+  - typings.twilio.twilioStrings.`PollyDotKazuha-Neural`
   - typings.twilio.twilioStrings.`PollyDotKendra-Neural`
   - typings.twilio.twilioStrings.`PollyDotKevin-Neural`
   - typings.twilio.twilioStrings.`PollyDotKimberly-Neural`
+  - typings.twilio.twilioStrings.`PollyDotLaura-Neural`
   - typings.twilio.twilioStrings.`PollyDotLea-Neural`
   - typings.twilio.twilioStrings.`PollyDotLiam-Neural`
   - typings.twilio.twilioStrings.`PollyDotLucia-Neural`
   - typings.twilio.twilioStrings.`PollyDotLupe-Neural`
   - typings.twilio.twilioStrings.`PollyDotMatthew-Neural`
   - typings.twilio.twilioStrings.`PollyDotMia-Neural`
+  - typings.twilio.twilioStrings.`PollyDotOla-Neural`
   - typings.twilio.twilioStrings.`PollyDotOlivia-Neural`
   - typings.twilio.twilioStrings.`PollyDotPedro-Neural`
+  - typings.twilio.twilioStrings.`PollyDotRemi-Neural`
+  - typings.twilio.twilioStrings.`PollyDotRuth-Neural`
   - typings.twilio.twilioStrings.`PollyDotSalli-Neural`
   - typings.twilio.twilioStrings.`PollyDotSeoyeon-Neural`
+  - typings.twilio.twilioStrings.`PollyDotSergio-Neural`
+  - typings.twilio.twilioStrings.`PollyDotStephen-Neural`
+  - typings.twilio.twilioStrings.`PollyDotSuvi-Neural`
   - typings.twilio.twilioStrings.`PollyDotTakumi-Neural`
+  - typings.twilio.twilioStrings.`PollyDotTomoko-Neural`
+  - typings.twilio.twilioStrings.`PollyDotThiago-Neural`
   - typings.twilio.twilioStrings.`PollyDotVicki-Neural`
   - typings.twilio.twilioStrings.`PollyDotVitoria-Neural`
+  - typings.twilio.twilioStrings.`PollyDotZhiyu-Neural`
 */
 trait SayVoice extends StObject
 object SayVoice {
   
   inline def PollyDotAditi: typings.twilio.twilioStrings.PollyDotAditi = "Polly.Aditi".asInstanceOf[typings.twilio.twilioStrings.PollyDotAditi]
   
+  inline def `PollyDotAdriano-Neural`: typings.twilio.twilioStrings.`PollyDotAdriano-Neural` = "Polly.Adriano-Neural".asInstanceOf[typings.twilio.twilioStrings.`PollyDotAdriano-Neural`]
+  
   inline def PollyDotAmy: typings.twilio.twilioStrings.PollyDotAmy = "Polly.Amy".asInstanceOf[typings.twilio.twilioStrings.PollyDotAmy]
   
   inline def `PollyDotAmy-Neural`: typings.twilio.twilioStrings.`PollyDotAmy-Neural` = "Polly.Amy-Neural".asInstanceOf[typings.twilio.twilioStrings.`PollyDotAmy-Neural`]
+  
+  inline def `PollyDotAndres-Neural`: typings.twilio.twilioStrings.`PollyDotAndres-Neural` = "Polly.Andres-Neural".asInstanceOf[typings.twilio.twilioStrings.`PollyDotAndres-Neural`]
   
   inline def `PollyDotAria-Neural`: typings.twilio.twilioStrings.`PollyDotAria-Neural` = "Polly.Aria-Neural".asInstanceOf[typings.twilio.twilioStrings.`PollyDotAria-Neural`]
   
@@ -150,6 +171,8 @@ object SayVoice {
   
   inline def PollyDotDora: typings.twilio.twilioStrings.PollyDotDora = "Polly.Dora".asInstanceOf[typings.twilio.twilioStrings.PollyDotDora]
   
+  inline def `PollyDotElin-Neural`: typings.twilio.twilioStrings.`PollyDotElin-Neural` = "Polly.Elin-Neural".asInstanceOf[typings.twilio.twilioStrings.`PollyDotElin-Neural`]
+  
   inline def PollyDotEmma: typings.twilio.twilioStrings.PollyDotEmma = "Polly.Emma".asInstanceOf[typings.twilio.twilioStrings.PollyDotEmma]
   
   inline def `PollyDotEmma-Neural`: typings.twilio.twilioStrings.`PollyDotEmma-Neural` = "Polly.Emma-Neural".asInstanceOf[typings.twilio.twilioStrings.`PollyDotEmma-Neural`]
@@ -168,9 +191,15 @@ object SayVoice {
   
   inline def PollyDotGwyneth: typings.twilio.twilioStrings.PollyDotGwyneth = "Polly.Gwyneth".asInstanceOf[typings.twilio.twilioStrings.PollyDotGwyneth]
   
+  inline def `PollyDotHala-Neural`: typings.twilio.twilioStrings.`PollyDotHala-Neural` = "Polly.Hala-Neural".asInstanceOf[typings.twilio.twilioStrings.`PollyDotHala-Neural`]
+  
   inline def `PollyDotHannah-Neural`: typings.twilio.twilioStrings.`PollyDotHannah-Neural` = "Polly.Hannah-Neural".asInstanceOf[typings.twilio.twilioStrings.`PollyDotHannah-Neural`]
   
   inline def PollyDotHans: typings.twilio.twilioStrings.PollyDotHans = "Polly.Hans".asInstanceOf[typings.twilio.twilioStrings.PollyDotHans]
+  
+  inline def `PollyDotHiujin-Neural`: typings.twilio.twilioStrings.`PollyDotHiujin-Neural` = "Polly.Hiujin-Neural".asInstanceOf[typings.twilio.twilioStrings.`PollyDotHiujin-Neural`]
+  
+  inline def `PollyDotIda-Neural`: typings.twilio.twilioStrings.`PollyDotIda-Neural` = "Polly.Ida-Neural".asInstanceOf[typings.twilio.twilioStrings.`PollyDotIda-Neural`]
   
   inline def PollyDotInes: typings.twilio.twilioStrings.PollyDotInes = "Polly.Ines".asInstanceOf[typings.twilio.twilioStrings.PollyDotInes]
   
@@ -200,6 +229,8 @@ object SayVoice {
   
   inline def PollyDotKarl: typings.twilio.twilioStrings.PollyDotKarl = "Polly.Karl".asInstanceOf[typings.twilio.twilioStrings.PollyDotKarl]
   
+  inline def `PollyDotKazuha-Neural`: typings.twilio.twilioStrings.`PollyDotKazuha-Neural` = "Polly.Kazuha-Neural".asInstanceOf[typings.twilio.twilioStrings.`PollyDotKazuha-Neural`]
+  
   inline def PollyDotKendra: typings.twilio.twilioStrings.PollyDotKendra = "Polly.Kendra".asInstanceOf[typings.twilio.twilioStrings.PollyDotKendra]
   
   inline def `PollyDotKendra-Neural`: typings.twilio.twilioStrings.`PollyDotKendra-Neural` = "Polly.Kendra-Neural".asInstanceOf[typings.twilio.twilioStrings.`PollyDotKendra-Neural`]
@@ -209,6 +240,8 @@ object SayVoice {
   inline def PollyDotKimberly: typings.twilio.twilioStrings.PollyDotKimberly = "Polly.Kimberly".asInstanceOf[typings.twilio.twilioStrings.PollyDotKimberly]
   
   inline def `PollyDotKimberly-Neural`: typings.twilio.twilioStrings.`PollyDotKimberly-Neural` = "Polly.Kimberly-Neural".asInstanceOf[typings.twilio.twilioStrings.`PollyDotKimberly-Neural`]
+  
+  inline def `PollyDotLaura-Neural`: typings.twilio.twilioStrings.`PollyDotLaura-Neural` = "Polly.Laura-Neural".asInstanceOf[typings.twilio.twilioStrings.`PollyDotLaura-Neural`]
   
   inline def PollyDotLea: typings.twilio.twilioStrings.PollyDotLea = "Polly.Lea".asInstanceOf[typings.twilio.twilioStrings.PollyDotLea]
   
@@ -254,6 +287,8 @@ object SayVoice {
   
   inline def PollyDotNicole: typings.twilio.twilioStrings.PollyDotNicole = "Polly.Nicole".asInstanceOf[typings.twilio.twilioStrings.PollyDotNicole]
   
+  inline def `PollyDotOla-Neural`: typings.twilio.twilioStrings.`PollyDotOla-Neural` = "Polly.Ola-Neural".asInstanceOf[typings.twilio.twilioStrings.`PollyDotOla-Neural`]
+  
   inline def `PollyDotOlivia-Neural`: typings.twilio.twilioStrings.`PollyDotOlivia-Neural` = "Polly.Olivia-Neural".asInstanceOf[typings.twilio.twilioStrings.`PollyDotOlivia-Neural`]
   
   inline def `PollyDotPedro-Neural`: typings.twilio.twilioStrings.`PollyDotPedro-Neural` = "Polly.Pedro-Neural".asInstanceOf[typings.twilio.twilioStrings.`PollyDotPedro-Neural`]
@@ -262,11 +297,15 @@ object SayVoice {
   
   inline def PollyDotRaveena: typings.twilio.twilioStrings.PollyDotRaveena = "Polly.Raveena".asInstanceOf[typings.twilio.twilioStrings.PollyDotRaveena]
   
+  inline def `PollyDotRemi-Neural`: typings.twilio.twilioStrings.`PollyDotRemi-Neural` = "Polly.Remi-Neural".asInstanceOf[typings.twilio.twilioStrings.`PollyDotRemi-Neural`]
+  
   inline def PollyDotRicardo: typings.twilio.twilioStrings.PollyDotRicardo = "Polly.Ricardo".asInstanceOf[typings.twilio.twilioStrings.PollyDotRicardo]
   
   inline def PollyDotRuben: typings.twilio.twilioStrings.PollyDotRuben = "Polly.Ruben".asInstanceOf[typings.twilio.twilioStrings.PollyDotRuben]
   
   inline def PollyDotRussell: typings.twilio.twilioStrings.PollyDotRussell = "Polly.Russell".asInstanceOf[typings.twilio.twilioStrings.PollyDotRussell]
+  
+  inline def `PollyDotRuth-Neural`: typings.twilio.twilioStrings.`PollyDotRuth-Neural` = "Polly.Ruth-Neural".asInstanceOf[typings.twilio.twilioStrings.`PollyDotRuth-Neural`]
   
   inline def PollyDotSalli: typings.twilio.twilioStrings.PollyDotSalli = "Polly.Salli".asInstanceOf[typings.twilio.twilioStrings.PollyDotSalli]
   
@@ -276,11 +315,21 @@ object SayVoice {
   
   inline def `PollyDotSeoyeon-Neural`: typings.twilio.twilioStrings.`PollyDotSeoyeon-Neural` = "Polly.Seoyeon-Neural".asInstanceOf[typings.twilio.twilioStrings.`PollyDotSeoyeon-Neural`]
   
+  inline def `PollyDotSergio-Neural`: typings.twilio.twilioStrings.`PollyDotSergio-Neural` = "Polly.Sergio-Neural".asInstanceOf[typings.twilio.twilioStrings.`PollyDotSergio-Neural`]
+  
+  inline def `PollyDotStephen-Neural`: typings.twilio.twilioStrings.`PollyDotStephen-Neural` = "Polly.Stephen-Neural".asInstanceOf[typings.twilio.twilioStrings.`PollyDotStephen-Neural`]
+  
+  inline def `PollyDotSuvi-Neural`: typings.twilio.twilioStrings.`PollyDotSuvi-Neural` = "Polly.Suvi-Neural".asInstanceOf[typings.twilio.twilioStrings.`PollyDotSuvi-Neural`]
+  
   inline def PollyDotTakumi: typings.twilio.twilioStrings.PollyDotTakumi = "Polly.Takumi".asInstanceOf[typings.twilio.twilioStrings.PollyDotTakumi]
   
   inline def `PollyDotTakumi-Neural`: typings.twilio.twilioStrings.`PollyDotTakumi-Neural` = "Polly.Takumi-Neural".asInstanceOf[typings.twilio.twilioStrings.`PollyDotTakumi-Neural`]
   
   inline def PollyDotTatyana: typings.twilio.twilioStrings.PollyDotTatyana = "Polly.Tatyana".asInstanceOf[typings.twilio.twilioStrings.PollyDotTatyana]
+  
+  inline def `PollyDotThiago-Neural`: typings.twilio.twilioStrings.`PollyDotThiago-Neural` = "Polly.Thiago-Neural".asInstanceOf[typings.twilio.twilioStrings.`PollyDotThiago-Neural`]
+  
+  inline def `PollyDotTomoko-Neural`: typings.twilio.twilioStrings.`PollyDotTomoko-Neural` = "Polly.Tomoko-Neural".asInstanceOf[typings.twilio.twilioStrings.`PollyDotTomoko-Neural`]
   
   inline def PollyDotVicki: typings.twilio.twilioStrings.PollyDotVicki = "Polly.Vicki".asInstanceOf[typings.twilio.twilioStrings.PollyDotVicki]
   
@@ -293,6 +342,8 @@ object SayVoice {
   inline def PollyDotZeina: typings.twilio.twilioStrings.PollyDotZeina = "Polly.Zeina".asInstanceOf[typings.twilio.twilioStrings.PollyDotZeina]
   
   inline def PollyDotZhiyu: typings.twilio.twilioStrings.PollyDotZhiyu = "Polly.Zhiyu".asInstanceOf[typings.twilio.twilioStrings.PollyDotZhiyu]
+  
+  inline def `PollyDotZhiyu-Neural`: typings.twilio.twilioStrings.`PollyDotZhiyu-Neural` = "Polly.Zhiyu-Neural".asInstanceOf[typings.twilio.twilioStrings.`PollyDotZhiyu-Neural`]
   
   inline def alice: typings.twilio.twilioStrings.alice = "alice".asInstanceOf[typings.twilio.twilioStrings.alice]
   

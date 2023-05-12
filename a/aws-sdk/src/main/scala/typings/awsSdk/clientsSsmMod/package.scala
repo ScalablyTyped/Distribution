@@ -2,6 +2,7 @@ package typings.awsSdk.clientsSsmMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdk.awsSdkStrings.ChangeRequest
+import typings.awsSdk.awsSdkStrings.Comment_
 import typings.awsSdk.awsSdkStrings.Equal_
 import typings.awsSdk.awsSdkStrings.JsonSerDe
 import typings.awsSdk.awsSdkStrings.Sha256_
@@ -550,7 +551,7 @@ type DocumentReviewComment = java.lang.String
 
 type DocumentReviewCommentList = js.Array[DocumentReviewCommentSource]
 
-type DocumentReviewCommentType = typings.awsSdk.awsSdkStrings.Comment | java.lang.String
+type DocumentReviewCommentType = Comment_ | java.lang.String
 
 type DocumentReviewerResponseList = js.Array[DocumentReviewerResponseSource]
 
@@ -585,6 +586,7 @@ type DocumentStatusInformation = java.lang.String
   - typings.awsSdk.awsSdkStrings.ProblemAnalysisTemplate
   - typings.awsSdk.awsSdkStrings.CloudFormation_
   - typings.awsSdk.awsSdkStrings.ConformancePackTemplate
+  - typings.awsSdk.awsSdkStrings.QuickSetup
   - java.lang.String
 */
 type DocumentType = _DocumentType | java.lang.String
@@ -638,6 +640,8 @@ type GetInventorySchemaMaxResults = Double
 type GetOpsMetadataMaxResults = Double
 
 type GetParametersByPathMaxResults = Double
+
+type GetResourcePoliciesResponseEntries = js.Array[GetResourcePoliciesResponseEntry]
 
 type IPAddress = java.lang.String
 
@@ -1019,6 +1023,8 @@ type NotificationType = _NotificationType | java.lang.String
   - typings.awsSdk.awsSdkStrings.MACOS
   - typings.awsSdk.awsSdkStrings.RASPBIAN
   - typings.awsSdk.awsSdkStrings.ROCKY_LINUX
+  - typings.awsSdk.awsSdkStrings.ALMA_LINUX
+  - typings.awsSdk.awsSdkStrings.AMAZON_LINUX_2023
   - java.lang.String
 */
 type OperatingSystem = _OperatingSystem | java.lang.String
@@ -1069,6 +1075,10 @@ type OpsFilterOperatorType = _OpsFilterOperatorType | java.lang.String
 type OpsFilterValue = java.lang.String
 
 type OpsFilterValueList = js.Array[OpsFilterValue]
+
+type OpsItemAccountId = java.lang.String
+
+type OpsItemArn = java.lang.String
 
 type OpsItemCategory = java.lang.String
 
@@ -1127,6 +1137,7 @@ type OpsItemEventSummaries = js.Array[OpsItemEventSummary]
   - typings.awsSdk.awsSdkStrings.ChangeRequestByTemplate
   - typings.awsSdk.awsSdkStrings.ChangeRequestByTargetsResourceGroup
   - typings.awsSdk.awsSdkStrings.InsightByType
+  - typings.awsSdk.awsSdkStrings.AccountId
   - java.lang.String
 */
 type OpsItemFilterKey = _OpsItemFilterKey | java.lang.String
@@ -1550,6 +1561,12 @@ type PlatformType = _PlatformType | java.lang.String
 
 type PlatformTypeList = js.Array[PlatformType]
 
+type Policy = java.lang.String
+
+type PolicyHash = java.lang.String
+
+type PolicyId = java.lang.String
+
 type Product = java.lang.String
 
 type PutInventoryMessage = java.lang.String
@@ -1578,6 +1595,10 @@ type RegistrationsCount = Double
 type RelatedOpsItems = js.Array[RelatedOpsItem]
 
 type RemainingCount = Double
+
+type RequireType = java.lang.String
+
+type ResourceArnString = java.lang.String
 
 type ResourceComplianceSummaryItemList = js.Array[ResourceComplianceSummaryItem]
 
@@ -1626,6 +1647,8 @@ type ResourceDataSyncState = java.lang.String
 type ResourceDataSyncType = java.lang.String
 
 type ResourceId = java.lang.String
+
+type ResourcePolicyMaxResults = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ManagedInstance

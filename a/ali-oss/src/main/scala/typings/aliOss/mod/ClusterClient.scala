@@ -38,10 +38,12 @@ open class ClusterClient protected () extends StObject {
   def list(query: Null, options: RequestOptions): js.Promise[ListObjectResult] = js.native
   def list(query: ListObjectsQuery, options: RequestOptions): js.Promise[ListObjectResult] = js.native
   
-  def listV2(query: Null, options: RequestOptions): js.Promise[ListObjectResult] = js.native
   /**
     * @since 6.12.0
     */
+  def listV2(): js.Promise[ListObjectResult] = js.native
+  def listV2(query: Null, options: RequestOptions): js.Promise[ListObjectResult] = js.native
+  def listV2(query: ListV2ObjectsQuery): js.Promise[ListObjectResult] = js.native
   def listV2(query: ListV2ObjectsQuery, options: RequestOptions): js.Promise[ListObjectResult] = js.native
   
   def put(name: String, file: Any): js.Promise[PutObjectResult] = js.native

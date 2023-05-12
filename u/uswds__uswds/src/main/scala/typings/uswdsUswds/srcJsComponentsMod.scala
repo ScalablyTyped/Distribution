@@ -5,10 +5,14 @@ import typings.uswdsUswds.jsUsaBannerMod.Banner
 import typings.uswdsUswds.jsUsaCharacterCountMod.CharacterCount
 import typings.uswdsUswds.jsUsaComboBoxMod.ComboBox
 import typings.uswdsUswds.jsUsaDatePickerMod.DatePicker
+import typings.uswdsUswds.jsUsaDateRangePickerMod.DateRangePicker
 import typings.uswdsUswds.jsUsaFileInputMod.FileInput
 import typings.uswdsUswds.jsUsaFooterMod.Footer
 import typings.uswdsUswds.jsUsaHeaderMod.Navigation
+import typings.uswdsUswds.jsUsaInPageNavigationMod.InPageNavigation
+import typings.uswdsUswds.jsUsaInputMaskMod.InputMask
 import typings.uswdsUswds.jsUsaInputPrefixSuffixMod.InputPrefixSuffix
+import typings.uswdsUswds.jsUsaLanguageSelectorMod.LanguageSelector
 import typings.uswdsUswds.jsUsaModalMod.Modal
 import typings.uswdsUswds.jsUsaPasswordMod.Password
 import typings.uswdsUswds.jsUsaSearchMod.Search
@@ -43,6 +47,10 @@ object srcJsComponentsMod {
   @js.native
   val datePicker: DatePicker = js.native
   
+  @JSImport("@uswds/uswds/src/js/components", "dateRangePicker")
+  @js.native
+  val dateRangePicker: DateRangePicker = js.native
+  
   @JSImport("@uswds/uswds/src/js/components", "fileInput")
   @js.native
   val fileInput: FileInput = js.native
@@ -51,9 +59,21 @@ object srcJsComponentsMod {
   @js.native
   val footer: Footer = js.native
   
+  @JSImport("@uswds/uswds/src/js/components", "inPageNavigation")
+  @js.native
+  val inPageNavigation: InPageNavigation = js.native
+  
+  @JSImport("@uswds/uswds/src/js/components", "inputMask")
+  @js.native
+  val inputMask: InputMask = js.native
+  
   @JSImport("@uswds/uswds/src/js/components", "inputPrefixSuffix")
   @js.native
   val inputPrefixSuffix: InputPrefixSuffix = js.native
+  
+  @JSImport("@uswds/uswds/src/js/components", "languageSelector")
+  @js.native
+  val languageSelector: LanguageSelector = js.native
   
   @JSImport("@uswds/uswds/src/js/components", "modal")
   @js.native

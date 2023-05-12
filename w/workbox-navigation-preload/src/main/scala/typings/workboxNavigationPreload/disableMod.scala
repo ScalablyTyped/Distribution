@@ -10,5 +10,10 @@ object disableMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    * If the browser supports Navigation Preload, then this will disable it.
+    *
+    * @memberof workbox-navigation-preload
+    */
   inline def disable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")().asInstanceOf[Unit]
 }

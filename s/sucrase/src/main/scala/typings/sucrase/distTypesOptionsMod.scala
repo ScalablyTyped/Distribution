@@ -2,6 +2,7 @@ package typings.sucrase
 
 import typings.sucrase.sucraseStrings.automatic
 import typings.sucrase.sucraseStrings.classic
+import typings.sucrase.sucraseStrings.preserve
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,14 +69,15 @@ object distTypesOptionsMod {
     var jsxPragma: js.UndefOr[String] = js.undefined
     
     /**
-      * Transformation mode for the JSX transform. The automatic transform refers
-      * to the transform behavior released with React 17, where the `jsx` function
-      * (or a variation) is automatically imported. The classic transform refers to
-      * the previous behavior using `React.createElement`.
+      * Transformation mode for the JSX transform.
+      * - "classic" refers to the original behavior using `React.createElement`.
+      * - "automatic" refers to the transform behavior released with React 17,
+      *   where the `jsx` function (or a variation) is automatically imported.
+      * - "preserve" leaves the JSX as-is.
       *
-      * Default value: "classic"
+      * Default value: "classic".
       */
-    var jsxRuntime: js.UndefOr[classic | automatic] = js.undefined
+    var jsxRuntime: js.UndefOr[classic | automatic | preserve] = js.undefined
     
     /**
       * If specified, the imports transform does not attempt to change dynamic
@@ -91,9 +93,7 @@ object distTypesOptionsMod {
     
     /**
       * If specified, we also return a RawSourceMap object alongside the code.
-      * Currently, source maps simply map each line to the original line without
-      * any mappings within lines, since Sucrase preserves line numbers. filePath
-      * must be specified if this option is enabled.
+      * filePath must be specified if this option is enabled.
       */
     var sourceMapOptions: js.UndefOr[SourceMapOptions] = js.undefined
     
@@ -145,7 +145,7 @@ object distTypesOptionsMod {
       
       inline def setJsxPragmaUndefined: Self = StObject.set(x, "jsxPragma", js.undefined)
       
-      inline def setJsxRuntime(value: classic | automatic): Self = StObject.set(x, "jsxRuntime", value.asInstanceOf[js.Any])
+      inline def setJsxRuntime(value: classic | automatic | preserve): Self = StObject.set(x, "jsxRuntime", value.asInstanceOf[js.Any])
       
       inline def setJsxRuntimeUndefined: Self = StObject.set(x, "jsxRuntime", js.undefined)
       

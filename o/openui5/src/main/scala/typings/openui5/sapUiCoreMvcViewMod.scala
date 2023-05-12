@@ -149,6 +149,7 @@ object sapUiCoreMvcViewMod {
     
     /**
       * @SINCE 1.30
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Register a preprocessor for all views of a specific type.
       *
@@ -850,6 +851,8 @@ object sapUiCoreMvcViewMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:afterInit afterInit} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -861,6 +864,8 @@ object sapUiCoreMvcViewMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:afterRendering afterRendering} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -872,6 +877,8 @@ object sapUiCoreMvcViewMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:beforeExit beforeExit} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -883,6 +890,8 @@ object sapUiCoreMvcViewMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:beforeRendering beforeRendering} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -895,6 +904,7 @@ object sapUiCoreMvcViewMod {
     
     /**
       * @SINCE 1.88
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * A method to be implemented by typed views, returning the flag whether to prefix the IDs of controls automatically
       * or not, if the controls are created inside the {@link sap.ui.core.mvc.View#createContent} function. By
@@ -969,6 +979,8 @@ object sapUiCoreMvcViewMod {
     sId: String): String | Null = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns the info object which is also passed to the preprocessors
       * See:
       * 	sap.ui.core.mvc.View.Preprocessor.process
@@ -1008,6 +1020,8 @@ object sapUiCoreMvcViewMod {
     def getWidth(): CSSSize = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Checks if any preprocessors are active for the specified type
       *
       * @returns `true` if a preprocessor is active
@@ -1115,6 +1129,8 @@ object sapUiCoreMvcViewMod {
     bSync: Boolean
     ): js.Promise[Any] | js.Object | String | Element = js.native
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Executes preprocessors for a type of source
       *
       * @returns a promise resolving with the processed source or an error | the source when bSync=true

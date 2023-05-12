@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteUnspecifiedTreatedAsLax
   - typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteNoneInsecure
   - typings.devtoolsProtocol.devtoolsProtocolStrings.UserPreferences
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.ThirdPartyBlockedInFirstPartySet
   - typings.devtoolsProtocol.devtoolsProtocolStrings.SyntaxError
   - typings.devtoolsProtocol.devtoolsProtocolStrings.SchemeNotSupported
   - typings.devtoolsProtocol.devtoolsProtocolStrings.OverwriteSecure
@@ -58,6 +59,8 @@ object SetCookieBlockedReason {
   inline def SecureOnly: typings.devtoolsProtocol.devtoolsProtocolStrings.SecureOnly = "SecureOnly".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SecureOnly]
   
   inline def SyntaxError: typings.devtoolsProtocol.devtoolsProtocolStrings.SyntaxError = "SyntaxError".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SyntaxError]
+  
+  inline def ThirdPartyBlockedInFirstPartySet: typings.devtoolsProtocol.devtoolsProtocolStrings.ThirdPartyBlockedInFirstPartySet = "ThirdPartyBlockedInFirstPartySet".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ThirdPartyBlockedInFirstPartySet]
   
   inline def UnknownError: typings.devtoolsProtocol.devtoolsProtocolStrings.UnknownError = "UnknownError".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.UnknownError]
   

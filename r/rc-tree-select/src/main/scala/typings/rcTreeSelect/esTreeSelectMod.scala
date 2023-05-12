@@ -2,13 +2,14 @@ package typings.rcTreeSelect
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.rcComponentTrigger.esInterfaceMod.AlignType
+import typings.rcComponentTrigger.esInterfaceMod.BuildInPlacements
 import typings.rcSelect.libBaseSelectMod.CustomTagProps
 import typings.rcSelect.libBaseSelectMod.DisplayValueType
 import typings.rcSelect.libBaseSelectMod.Placement
 import typings.rcSelect.libBaseSelectMod.RenderDOMFunc
 import typings.rcSelect.libBaseSelectMod.RenderNode
 import typings.rcSelect.libSelectMod.ArrayElementType
-import typings.rcSelect.libSelectMod.LabelInValueType
 import typings.rcSelect.libSelectMod.SelectHandler
 import typings.rcTree.esInterfaceMod.DataNode
 import typings.rcTree.esInterfaceMod.IconType
@@ -63,7 +64,6 @@ import typings.rcTreeSelect.rcTreeSelectStrings.text
 import typings.rcTreeSelect.rcTreeSelectStrings.time
 import typings.rcTreeSelect.rcTreeSelectStrings.tree
 import typings.rcTreeSelect.rcTreeSelectStrings.vertical
-import typings.rcTrigger.esInterfaceMod.AlignType
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.FocusEvent
@@ -561,6 +561,8 @@ object esTreeSelectMod extends Shortcut {
     
     var autoFocus: js.UndefOr[Boolean] = js.undefined
     
+    var builtinPlacements: js.UndefOr[BuildInPlacements] = js.undefined
+    
     var choiceTransitionName: js.UndefOr[String] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
@@ -700,6 +702,8 @@ object esTreeSelectMod extends Shortcut {
     var tabIndex: js.UndefOr[Double] = js.undefined
     
     var tagRender: js.UndefOr[js.Function1[/* props */ CustomTagProps, ReactElement]] = js.undefined
+    
+    var title: js.UndefOr[String] = js.undefined
     
     var tokenSeparators: js.UndefOr[js.Array[String]] = js.undefined
     
@@ -957,6 +961,10 @@ object esTreeSelectMod extends Shortcut {
       
       inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
+      inline def setBuiltinPlacements(value: BuildInPlacements): Self = StObject.set(x, "builtinPlacements", value.asInstanceOf[js.Any])
+      
+      inline def setBuiltinPlacementsUndefined: Self = StObject.set(x, "builtinPlacements", js.undefined)
+      
       inline def setChoiceTransitionName(value: String): Self = StObject.set(x, "choiceTransitionName", value.asInstanceOf[js.Any])
       
       inline def setChoiceTransitionNameUndefined: Self = StObject.set(x, "choiceTransitionName", js.undefined)
@@ -1109,9 +1117,7 @@ object esTreeSelectMod extends Shortcut {
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      inline def setOnDeselect(
-        value: (LabelInValueType | typings.rcSelect.libSelectMod.RawValueType | ArrayElementType[ValueType], OptionType) => Unit
-      ): Self = StObject.set(x, "onDeselect", js.Any.fromFunction2(value))
+      inline def setOnDeselect(value: (ArrayElementType[ValueType], OptionType) => Unit): Self = StObject.set(x, "onDeselect", js.Any.fromFunction2(value))
       
       inline def setOnDeselectUndefined: Self = StObject.set(x, "onDeselect", js.undefined)
       
@@ -1155,9 +1161,7 @@ object esTreeSelectMod extends Shortcut {
       
       inline def setOnSearchUndefined: Self = StObject.set(x, "onSearch", js.undefined)
       
-      inline def setOnSelect(
-        value: (LabelInValueType | typings.rcSelect.libSelectMod.RawValueType | ArrayElementType[ValueType], OptionType) => Unit
-      ): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
+      inline def setOnSelect(value: (ArrayElementType[ValueType], OptionType) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
@@ -1234,6 +1238,10 @@ object esTreeSelectMod extends Shortcut {
       inline def setTagRender(value: /* props */ CustomTagProps => ReactElement): Self = StObject.set(x, "tagRender", js.Any.fromFunction1(value))
       
       inline def setTagRenderUndefined: Self = StObject.set(x, "tagRender", js.undefined)
+      
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
       inline def setTokenSeparators(value: js.Array[String]): Self = StObject.set(x, "tokenSeparators", value.asInstanceOf[js.Any])
       

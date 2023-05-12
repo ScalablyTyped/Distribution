@@ -13,10 +13,10 @@ object distSrcPinRemoteRmAllMod {
   val ^ : js.Any = js.native
   
   inline def createRmAll(client: Client): js.Function1[
-    /* param0 */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_remote.Query */ Any) & AbortOptions & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions, 
+    /* query */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_remote.Query */ Any) & AbortOptions & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions, 
     js.Promise[Unit]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRmAll")(client.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* param0 */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_remote.Query */ Any) & AbortOptions & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions, 
+    /* query */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_remote.Query */ Any) & AbortOptions & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions, 
     js.Promise[Unit]
   ]]
   

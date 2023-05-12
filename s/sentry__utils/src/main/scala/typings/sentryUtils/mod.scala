@@ -10,10 +10,14 @@ import typings.sentryTypes.typesEnvelopeMod.AttachmentItem
 import typings.sentryTypes.typesEnvelopeMod.ClientReportEnvelope
 import typings.sentryTypes.typesEnvelopeMod.Envelope
 import typings.sentryTypes.typesEnvelopeMod.EnvelopeItemType
+import typings.sentryTypes.typesEnvelopeMod.EventEnvelopeHeaders
 import typings.sentryTypes.typesEventMod.Event
+import typings.sentryTypes.typesIntegrationMod.Integration
 import typings.sentryTypes.typesMiscMod.ExtractedNodeRequestData
 import typings.sentryTypes.typesMiscMod.Primitive
 import typings.sentryTypes.typesPolymorphicsMod.PolymorphicRequest
+import typings.sentryTypes.typesSdkinfoMod.SdkInfo
+import typings.sentryTypes.typesSdkmetadataMod.SdkMetadata
 import typings.sentryTypes.typesSeverityMod.Severity
 import typings.sentryTypes.typesSeverityMod.SeverityLevel
 import typings.sentryTypes.typesStackframeMod.StackFrame
@@ -28,8 +32,9 @@ import typings.sentryTypes.typesWrappedfunctionMod.WrappedFunction
 import typings.sentryUtils.anon.CustomRoute
 import typings.sentryUtils.anon.Deps
 import typings.sentryUtils.anon.DictownProps
-import typings.sentryUtils.anon.Host
+import typings.sentryUtils.anon.KeyAttrs
 import typings.sentryUtils.anon.Message
+import typings.sentryUtils.anon.Method
 import typings.sentryUtils.anon.PartialDynamicSamplingCon
 import typings.sentryUtils.anon.PartialMechanism
 import typings.sentryUtils.sentryUtilsStrings.assert
@@ -39,18 +44,23 @@ import typings.sentryUtils.sentryUtilsStrings.info
 import typings.sentryUtils.sentryUtilsStrings.log
 import typings.sentryUtils.sentryUtilsStrings.trace
 import typings.sentryUtils.sentryUtilsStrings.warn
+import typings.sentryUtils.typesEnvMod.SdkSource
+import typings.sentryUtils.typesEnvelopeMod.TextDecoderInternal
 import typings.sentryUtils.typesInstrumentMod.InstrumentHandlerCallback
 import typings.sentryUtils.typesInstrumentMod.InstrumentHandlerType
 import typings.sentryUtils.typesLoggerMod.ConsoleLevel
 import typings.sentryUtils.typesLoggerMod.Logger_
 import typings.sentryUtils.typesMemoMod.MemoFunc
 import typings.sentryUtils.typesMiscMod.SemVer
+import typings.sentryUtils.typesNodeStackTraceMod.GetModuleFn
 import typings.sentryUtils.typesNormalizeMod.ObjOrArray
 import typings.sentryUtils.typesPromisebufferMod.PromiseBuffer
 import typings.sentryUtils.typesRatelimitMod.RateLimits
 import typings.sentryUtils.typesRequestdataMod.AddRequestDataToEventOptions
 import typings.sentryUtils.typesRequestdataMod.InjectedNodeDeps
-import typings.sentryUtils.typesStacktraceMod.GetModuleFn
+import typings.sentryUtils.typesUrlMod.PartialURL
+import typings.sentryUtils.typesUserIntegrationsMod.ForcedIntegrationOptions
+import typings.sentryUtils.typesUserIntegrationsMod.UserIntegrations
 import typings.sentryUtils.typesWorldwideMod.InternalGlobal
 import typings.std.ObjectConstructor
 import typings.std.PromiseLike
@@ -92,6 +102,10 @@ object mod {
   @JSImport("@sentry/utils", "SENTRY_BAGGAGE_KEY_PREFIX_REGEX")
   @js.native
   val SENTRY_BAGGAGE_KEY_PREFIX_REGEX: js.RegExp = js.native
+  
+  @JSImport("@sentry/utils", "SENTRY_XHR_DATA_KEY")
+  @js.native
+  val SENTRY_XHR_DATA_KEY: /* "__sentry_xhr_v2__" */ String = js.native
   
   @JSImport("@sentry/utils", "SentryError")
   @js.native
@@ -140,6 +154,13 @@ object mod {
   
   inline def addNonEnumerableProperty(obj: StringDictionary[Any], name: String, value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addNonEnumerableProperty")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def addOrUpdateIntegration[T /* <: UserIntegrations */](defaultIntegrationInstance: Integration, userIntegrations: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("addOrUpdateIntegration")(defaultIntegrationInstance.asInstanceOf[js.Any], userIntegrations.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def addOrUpdateIntegration[T /* <: UserIntegrations */](
+    defaultIntegrationInstance: Integration,
+    userIntegrations: T,
+    forcedOptions: ForcedIntegrationOptions
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("addOrUpdateIntegration")(defaultIntegrationInstance.asInstanceOf[js.Any], userIntegrations.asInstanceOf[js.Any], forcedOptions.asInstanceOf[js.Any])).asInstanceOf[T]
+  
   inline def addRequestDataToEvent(event: Event, req: PolymorphicRequest): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("addRequestDataToEvent")(event.asInstanceOf[js.Any], req.asInstanceOf[js.Any])).asInstanceOf[Event]
   inline def addRequestDataToEvent(event: Event, req: PolymorphicRequest, options: AddRequestDataToEventOptions): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("addRequestDataToEvent")(event.asInstanceOf[js.Any], req.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Event]
   
@@ -174,7 +195,7 @@ object mod {
   
   inline def consoleSandbox[T](callback: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("consoleSandbox")(callback.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  inline def convertToPlainObject[V /* <: Any */](value: V): DictownProps | Message | V = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToPlainObject")(value.asInstanceOf[js.Any]).asInstanceOf[DictownProps | Message | V]
+  inline def convertToPlainObject[V](value: V): DictownProps | Message | V = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToPlainObject")(value.asInstanceOf[js.Any]).asInstanceOf[DictownProps | Message | V]
   
   inline def createAttachmentEnvelopeItem(attachment: Attachment): AttachmentItem = ^.asInstanceOf[js.Dynamic].applyDynamic("createAttachmentEnvelopeItem")(attachment.asInstanceOf[js.Any]).asInstanceOf[AttachmentItem]
   inline def createAttachmentEnvelopeItem(attachment: Attachment, textEncoder: TextEncoderInternal): AttachmentItem = (^.asInstanceOf[js.Dynamic].applyDynamic("createAttachmentEnvelopeItem")(attachment.asInstanceOf[js.Any], textEncoder.asInstanceOf[js.Any])).asInstanceOf[AttachmentItem]
@@ -190,6 +211,11 @@ object mod {
   ): E = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvelope")(headers.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[E]
   
   inline def createEnvelope_0[E /* <: Envelope */](headers: /* import warning: importer.ImportType#apply Failed type conversion: E[0] */ js.Any): E = ^.asInstanceOf[js.Dynamic].applyDynamic("createEnvelope")(headers.asInstanceOf[js.Any]).asInstanceOf[E]
+  
+  inline def createEventEnvelopeHeaders(event: Event, sdkInfo: Unit, tunnel: String, dsn: DsnComponents): EventEnvelopeHeaders = (^.asInstanceOf[js.Dynamic].applyDynamic("createEventEnvelopeHeaders")(event.asInstanceOf[js.Any], sdkInfo.asInstanceOf[js.Any], tunnel.asInstanceOf[js.Any], dsn.asInstanceOf[js.Any])).asInstanceOf[EventEnvelopeHeaders]
+  inline def createEventEnvelopeHeaders(event: Event, sdkInfo: Unit, tunnel: Unit, dsn: DsnComponents): EventEnvelopeHeaders = (^.asInstanceOf[js.Dynamic].applyDynamic("createEventEnvelopeHeaders")(event.asInstanceOf[js.Any], sdkInfo.asInstanceOf[js.Any], tunnel.asInstanceOf[js.Any], dsn.asInstanceOf[js.Any])).asInstanceOf[EventEnvelopeHeaders]
+  inline def createEventEnvelopeHeaders(event: Event, sdkInfo: SdkInfo, tunnel: String, dsn: DsnComponents): EventEnvelopeHeaders = (^.asInstanceOf[js.Dynamic].applyDynamic("createEventEnvelopeHeaders")(event.asInstanceOf[js.Any], sdkInfo.asInstanceOf[js.Any], tunnel.asInstanceOf[js.Any], dsn.asInstanceOf[js.Any])).asInstanceOf[EventEnvelopeHeaders]
+  inline def createEventEnvelopeHeaders(event: Event, sdkInfo: SdkInfo, tunnel: Unit, dsn: DsnComponents): EventEnvelopeHeaders = (^.asInstanceOf[js.Dynamic].applyDynamic("createEventEnvelopeHeaders")(event.asInstanceOf[js.Any], sdkInfo.asInstanceOf[js.Any], tunnel.asInstanceOf[js.Any], dsn.asInstanceOf[js.Any])).asInstanceOf[EventEnvelopeHeaders]
   
   inline def createStackParser(parsers: StackLineParser*): StackParser = ^.asInstanceOf[js.Dynamic].applyDynamic("createStackParser")(parsers.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StackParser]
   
@@ -209,6 +235,8 @@ object mod {
   inline def dynamicRequire(mod: Any, request: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dynamicRequire")(mod.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def dynamicSamplingContextToSentryBaggageHeader(dynamicSamplingContext: PartialDynamicSamplingCon): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("dynamicSamplingContextToSentryBaggageHeader")(dynamicSamplingContext.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  
+  inline def envelopeContainsItemType(envelope: Envelope, types: js.Array[EnvelopeItemType]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("envelopeContainsItemType")(envelope.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def envelopeItemTypeToDataCategory(`type`: EnvelopeItemType): DataCategory = ^.asInstanceOf[js.Dynamic].applyDynamic("envelopeItemTypeToDataCategory")(`type`.asInstanceOf[js.Any]).asInstanceOf[DataCategory]
   
@@ -236,9 +264,9 @@ object mod {
     callback: js.Function2[
       /* import warning: importer.ImportType#apply Failed type conversion: E[1][number] */ /* envelopeItem */ js.Any, 
       /* import warning: importer.ImportType#apply Failed type conversion: E[1][number][0]['type'] */ /* envelopeItemType */ js.Any, 
-      Unit
+      Boolean | Unit
     ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachEnvelopeItem")(envelope.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachEnvelopeItem")(envelope.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def getDomElement[E](selector: String): E | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDomElement")(selector.asInstanceOf[js.Any]).asInstanceOf[E | Null]
   
@@ -249,11 +277,11 @@ object mod {
   inline def getGlobalObject[T](): T & InternalGlobal = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalObject")().asInstanceOf[T & InternalGlobal]
   
   inline def getGlobalSingleton[T](
-    name: /* import warning: importer.ImportType#apply Failed type conversion: 'navigator' | 'console' | 'Sentry' | 'SENTRY_ENVIRONMENT' | 'SENTRY_DSN' | 'SENTRY_RELEASE' | '__SENTRY__'['__SENTRY__'] */ js.Any,
+    name: /* import warning: importer.ImportType#apply Failed type conversion: 'navigator' | 'console' | 'Sentry' | 'onerror' | 'onunhandledrejection' | 'SENTRY_ENVIRONMENT' | 'SENTRY_DSN' | 'SENTRY_RELEASE' | 'SENTRY_SDK_SOURCE' | '_sentryDebugIds' | '__SENTRY__'['__SENTRY__'] */ js.Any,
     creator: js.Function0[T]
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalSingleton")(name.asInstanceOf[js.Any], creator.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def getGlobalSingleton[T](
-    name: /* import warning: importer.ImportType#apply Failed type conversion: 'navigator' | 'console' | 'Sentry' | 'SENTRY_ENVIRONMENT' | 'SENTRY_DSN' | 'SENTRY_RELEASE' | '__SENTRY__'['__SENTRY__'] */ js.Any,
+    name: /* import warning: importer.ImportType#apply Failed type conversion: 'navigator' | 'console' | 'Sentry' | 'onerror' | 'onunhandledrejection' | 'SENTRY_ENVIRONMENT' | 'SENTRY_DSN' | 'SENTRY_RELEASE' | 'SENTRY_SDK_SOURCE' | '_sentryDebugIds' | '__SENTRY__'['__SENTRY__'] */ js.Any,
     creator: js.Function0[T],
     obj: Any
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalSingleton")(name.asInstanceOf[js.Any], creator.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[T]
@@ -264,8 +292,17 @@ object mod {
   
   inline def getOriginalFunction(func: WrappedFunction): js.UndefOr[WrappedFunction] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOriginalFunction")(func.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[WrappedFunction]]
   
+  inline def getSDKSource(): SdkSource = ^.asInstanceOf[js.Dynamic].applyDynamic("getSDKSource")().asInstanceOf[SdkSource]
+  
+  inline def getSanitizedUrlString(url: PartialURL): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSanitizedUrlString")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def getSdkMetadataForEnvelopeHeader(): js.UndefOr[SdkInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSdkMetadataForEnvelopeHeader")().asInstanceOf[js.UndefOr[SdkInfo]]
+  inline def getSdkMetadataForEnvelopeHeader(metadataOrEvent: Event): js.UndefOr[SdkInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSdkMetadataForEnvelopeHeader")(metadataOrEvent.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SdkInfo]]
+  inline def getSdkMetadataForEnvelopeHeader(metadataOrEvent: SdkMetadata): js.UndefOr[SdkInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSdkMetadataForEnvelopeHeader")(metadataOrEvent.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SdkInfo]]
+  
   inline def htmlTreeAsString(elem: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlTreeAsString")(elem.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def htmlTreeAsString(elem: Any, keyAttrs: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTreeAsString")(elem.asInstanceOf[js.Any], keyAttrs.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def htmlTreeAsString(elem: Any, options: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTreeAsString")(elem.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def htmlTreeAsString(elem: Any, options: KeyAttrs): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTreeAsString")(elem.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def isAbsolute(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAbsolute")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
@@ -286,7 +323,9 @@ object mod {
   inline def isInstanceOf(wat: Any, base: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInstanceOf")(wat.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def isMatchingPattern(value: String, pattern: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatchingPattern")(value.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isMatchingPattern(value: String, pattern: String, requireExactStringMatch: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatchingPattern")(value.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], requireExactStringMatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def isMatchingPattern(value: String, pattern: js.RegExp): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatchingPattern")(value.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isMatchingPattern(value: String, pattern: js.RegExp, requireExactStringMatch: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatchingPattern")(value.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], requireExactStringMatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def isNaN(wat: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNaN")(wat.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
@@ -344,12 +383,17 @@ object mod {
   
   inline def objectify(wat: Any): ObjectConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("objectify")(wat.asInstanceOf[js.Any]).asInstanceOf[ObjectConstructor]
   
+  inline def parseEnvelope(env: String, textEncoder: TextEncoderInternal, textDecoder: TextDecoderInternal): Envelope = (^.asInstanceOf[js.Dynamic].applyDynamic("parseEnvelope")(env.asInstanceOf[js.Any], textEncoder.asInstanceOf[js.Any], textDecoder.asInstanceOf[js.Any])).asInstanceOf[Envelope]
+  inline def parseEnvelope(env: js.typedarray.Uint8Array, textEncoder: TextEncoderInternal, textDecoder: TextDecoderInternal): Envelope = (^.asInstanceOf[js.Dynamic].applyDynamic("parseEnvelope")(env.asInstanceOf[js.Any], textEncoder.asInstanceOf[js.Any], textDecoder.asInstanceOf[js.Any])).asInstanceOf[Envelope]
+  
+  inline def parseFetchArgs(fetchArgs: js.Array[Any]): Method = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFetchArgs")(fetchArgs.asInstanceOf[js.Any]).asInstanceOf[Method]
+  
   inline def parseRetryAfterHeader(header: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRetryAfterHeader")(header.asInstanceOf[js.Any]).asInstanceOf[Double]
   inline def parseRetryAfterHeader(header: String, now: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("parseRetryAfterHeader")(header.asInstanceOf[js.Any], now.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def parseSemver(input: String): SemVer = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSemver")(input.asInstanceOf[js.Any]).asInstanceOf[SemVer]
   
-  inline def parseUrl(url: String): Host = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUrl")(url.asInstanceOf[js.Any]).asInstanceOf[Host]
+  inline def parseUrl(url: String): PartialURL = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUrl")(url.asInstanceOf[js.Any]).asInstanceOf[PartialURL]
   
   inline def rejectedSyncPromise[T](): PromiseLike[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("rejectedSyncPromise")().asInstanceOf[PromiseLike[T]]
   inline def rejectedSyncPromise[T](reason: Any): PromiseLike[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("rejectedSyncPromise")(reason.asInstanceOf[js.Any]).asInstanceOf[PromiseLike[T]]
@@ -379,6 +423,11 @@ object mod {
   
   inline def stackParserFromStackParserOptions(stackParser: js.Array[StackLineParser]): StackParser = ^.asInstanceOf[js.Dynamic].applyDynamic("stackParserFromStackParserOptions")(stackParser.asInstanceOf[js.Any]).asInstanceOf[StackParser]
   inline def stackParserFromStackParserOptions(stackParser: StackParser): StackParser = ^.asInstanceOf[js.Dynamic].applyDynamic("stackParserFromStackParserOptions")(stackParser.asInstanceOf[js.Any]).asInstanceOf[StackParser]
+  
+  inline def stringMatchesSomePattern(testString: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("stringMatchesSomePattern")(testString.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def stringMatchesSomePattern(testString: String, patterns: js.Array[String | js.RegExp]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("stringMatchesSomePattern")(testString.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def stringMatchesSomePattern(testString: String, patterns: js.Array[String | js.RegExp], requireExactStringMatch: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("stringMatchesSomePattern")(testString.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any], requireExactStringMatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def stringMatchesSomePattern(testString: String, patterns: Unit, requireExactStringMatch: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("stringMatchesSomePattern")(testString.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any], requireExactStringMatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def stripSentryFramesAndReverse(stack: js.Array[StackFrame]): js.Array[StackFrame] = ^.asInstanceOf[js.Dynamic].applyDynamic("stripSentryFramesAndReverse")(stack.asInstanceOf[js.Any]).asInstanceOf[js.Array[StackFrame]]
   

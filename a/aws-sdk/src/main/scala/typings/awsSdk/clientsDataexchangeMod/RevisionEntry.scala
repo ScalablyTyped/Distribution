@@ -22,7 +22,7 @@ trait RevisionEntry extends StObject {
   var CreatedAt: js.Date
   
   /**
-    * The unique identifier for the data set associated with this revision.
+    * The unique identifier for the data set associated with the data set revision.
     */
   var DataSetId: Id
   

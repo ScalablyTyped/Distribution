@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-tree
 
-Typings are for version 5.7.0
+Typings are for version 5.7.3
 
 ## Library description:
 tree ui component for react

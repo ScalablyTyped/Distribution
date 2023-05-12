@@ -2,6 +2,7 @@ package typings.azdata
 
 import typings.azdata.mod.AlignContentType
 import typings.azdata.mod.AlignItemsType
+import typings.azdata.mod.AriaLiveValue
 import typings.azdata.mod.DisplayType
 import typings.azdata.mod.FlexWrapType
 import typings.azdata.mod.InfoBoxStyle
@@ -43,6 +44,12 @@ object azdataStrings {
     extends StObject
        with PositionType
   inline def absolute: absolute = "absolute".asInstanceOf[absolute]
+  
+  @js.native
+  sealed trait assertive
+    extends StObject
+       with AriaLiveValue
+  inline def assertive: assertive = "assertive".asInstanceOf[assertive]
   
   @js.native
   sealed trait bar
@@ -412,6 +419,12 @@ object azdataStrings {
   inline def number: number = "number".asInstanceOf[number]
   
   @js.native
+  sealed trait off
+    extends StObject
+       with AriaLiveValue
+  inline def off: off = "off".asInstanceOf[off]
+  
+  @js.native
   sealed trait ok
     extends StObject
        with CloseReason
@@ -446,6 +459,12 @@ object azdataStrings {
     extends StObject
        with VisualizationType
   inline def pie: pie = "pie".asInstanceOf[pie]
+  
+  @js.native
+  sealed trait polite
+    extends StObject
+       with AriaLiveValue
+  inline def polite: polite = "polite".asInstanceOf[polite]
   
   @js.native
   sealed trait queryStart

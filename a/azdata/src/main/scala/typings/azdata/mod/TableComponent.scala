@@ -1,5 +1,6 @@
 package typings.azdata.mod
 
+import typings.vscode.Thenable
 import typings.vscode.mod.Disposable
 import typings.vscode.mod.Event
 import org.scalablytyped.runtime.StObject
@@ -12,6 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TableComponent
   extends StObject
      with Component {
+  
+  /**
+    * Append data to the existing table data.
+    */
+  def appendData(data: js.Array[js.Array[Any]]): Thenable[Unit] = js.native
   
   var ariaColumnCount: js.UndefOr[Double] = js.native
   

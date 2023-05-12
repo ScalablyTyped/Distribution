@@ -16,7 +16,7 @@ object libIconsBoxPlotFilledMod extends Shortcut {
   @js.native
   trait BoxPlotFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_BoxPlotFilledIconType: String = js.native

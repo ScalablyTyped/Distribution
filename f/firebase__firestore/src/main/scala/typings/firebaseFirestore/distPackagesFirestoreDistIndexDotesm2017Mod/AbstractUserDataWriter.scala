@@ -8,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class AbstractUserDataWriter ()
   extends StObject
-     with tl
+     with zl

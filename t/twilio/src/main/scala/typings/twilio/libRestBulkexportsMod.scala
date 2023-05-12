@@ -8,23 +8,20 @@ object libRestBulkexportsMod {
   
   @JSImport("twilio/lib/rest/Bulkexports", JSImport.Namespace)
   @js.native
-  open class ^ protected () extends Bulkexports {
-    /**
-      * Initialize bulkexports domain
-      *
-      * @param twilio - The twilio client
-      */
-    def this(twilio: typings.twilio.libRestTwilioMod.^) = this()
-  }
+  open class ^ () extends Bulkexports
   
   @js.native
   trait Bulkexports
-    extends typings.twilio.libBaseDomainMod.^ {
+    extends typings.twilio.libRestBulkexportsBaseMod.^ {
     
-    val exportConfiguration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExportConfigurationListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.exportConfiguration instead
+      */
+    def exportConfiguration: Any = js.native
     
-    val exports: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExportListInstance */ Any = js.native
-    
-    val v1: typings.twilio.libRestBulkexportsV1Mod.^ = js.native
+    /**
+      * @deprecated - Use v1.exports instead
+      */
+    def exports: Any = js.native
   }
 }

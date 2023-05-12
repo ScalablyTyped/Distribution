@@ -1,14 +1,17 @@
 package typings.multiformats
 
 import typings.multiformats.anon.Codec
+import typings.multiformats.anon._empty
 import typings.multiformats.distTypesSrcBasesInterfaceMod.MultibaseDecoder
 import typings.multiformats.distTypesSrcBasesInterfaceMod.MultibaseEncoder
 import typings.multiformats.distTypesSrcBlockInterfaceMod.ByteView
 import typings.multiformats.distTypesSrcHashesInterfaceMod.MultihashDigest
 import typings.multiformats.distTypesSrcLinkInterfaceMod.DAG_PB
 import typings.multiformats.distTypesSrcLinkInterfaceMod.Link
+import typings.multiformats.distTypesSrcLinkInterfaceMod.LinkJSON
 import typings.multiformats.distTypesSrcLinkInterfaceMod.SHA_256
 import typings.multiformats.distTypesSrcLinkInterfaceMod.ToString
+import typings.multiformats.distTypesSrcLinkInterfaceMod.UnknownLink
 import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
 import typings.multiformats.multiformatsInts.`0`
 import typings.multiformats.multiformatsInts.`112`
@@ -62,6 +65,8 @@ object distTypesSrcCidMod {
     
     var get: Any = js.native
     
+    def toJSON(): _empty[Data, Format, Alg, Version] = js.native
+    
     @JSName(js.Symbol.toStringTag)
     var toStringTag: js.Function0[String] = js.native
     
@@ -82,7 +87,7 @@ object distTypesSrcCidMod {
       * a `CID` otherwise returns `null`. If `value` is instanceof `CID`
       * it will return value back. If `value` is not instance of this CID
       * class, but is compatible CID it will return new instance of this
-      * `CID` class. Otherwise returs null.
+      * `CID` class. Otherwise returns null.
       *
       * This allows two different incompatible versions of CID library to
       * co-exist and interop as long as binary interface is compatible.
@@ -216,4 +221,10 @@ object distTypesSrcCidMod {
   
   inline def format[T /* <: Link[Any, Double, Double, Version] */, Prefix /* <: String */](link: T): ToString[T, Prefix] = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(link.asInstanceOf[js.Any]).asInstanceOf[ToString[T, Prefix]]
   inline def format[T /* <: Link[Any, Double, Double, Version] */, Prefix /* <: String */](link: T, base: MultibaseEncoder[Prefix]): ToString[T, Prefix] = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(link.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[ToString[T, Prefix]]
+  
+  inline def fromJSON[Link /* <: UnknownLink */](json: LinkJSON[Link]): CID[Any, Double, Double, Version] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[CID[Any, Double, Double, Version]]
+  
+  inline def toJSON(link: Link[Any, Double, Double, Version]): LinkJSON[Link[Any, Double, Double, Version]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(link.asInstanceOf[js.Any]).asInstanceOf[LinkJSON[Link[Any, Double, Double, Version]]]
+  
+  inline def toJSON_0(link: Link[Any, DAG_PB, SHA_256, `0`]): LinkJSON[Link[Any, DAG_PB, SHA_256, `0`]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(link.asInstanceOf[js.Any]).asInstanceOf[LinkJSON[Link[Any, DAG_PB, SHA_256, `0`]]]
 }

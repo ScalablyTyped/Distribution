@@ -8,11 +8,11 @@ trait ParametersQueryPerpageRepositoryid extends StObject {
   
   var parameters: QueryPerpageRepositoryid
   
-  var responses: `500`
+  var responses: `401403404`
 }
 object ParametersQueryPerpageRepositoryid {
   
-  inline def apply(parameters: QueryPerpageRepositoryid, responses: `500`): ParametersQueryPerpageRepositoryid = {
+  inline def apply(parameters: QueryPerpageRepositoryid, responses: `401403404`): ParametersQueryPerpageRepositoryid = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryPerpageRepositoryid]
   }
@@ -22,6 +22,6 @@ object ParametersQueryPerpageRepositoryid {
     
     inline def setParameters(value: QueryPerpageRepositoryid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `500`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `401403404`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

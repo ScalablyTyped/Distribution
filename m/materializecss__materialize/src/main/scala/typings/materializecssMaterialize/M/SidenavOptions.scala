@@ -19,48 +19,54 @@ trait SidenavOptions extends StObject {
   var dragTargetWidth: String
   
   /**
-    * Allow swipe gestures to open/close Sidenav
+    * Allow swipe gestures to open/close Sidenav.
     * @default true
     */
   var draggable: Boolean
   
   /**
-    * Side of screen on which Sidenav appears
+    * Side of screen on which Sidenav appears.
     * @default 'left'
     */
   var edge: left | right
   
   /**
-    * Length in ms of enter transition
+    * Length in ms of enter transition.
     * @default 250
     */
   var inDuration: Double
   
   /**
-    * Function called when sidenav finishes exiting
+    * Function called when sidenav finishes exiting.
     */
   def onCloseEnd(elem: Element): Unit
   
   /**
-    * Function called when sidenav starts exiting
+    * Function called when sidenav starts exiting.
     */
   def onCloseStart(elem: Element): Unit
   
   /**
-    * Function called when sidenav finishes entering
+    * Function called when sidenav finishes entering.
     */
   def onOpenEnd(elem: Element): Unit
   
   /**
-    * Function called when sidenav starts entering
+    * Function called when sidenav starts entering.
     */
   def onOpenStart(elem: Element): Unit
   
   /**
-    * Length in ms of exit transition
+    * Length in ms of exit transition.
     * @default 200
     */
   var outDuration: Double
+  
+  /**
+    * Prevent page from scrolling while sidenav is open.
+    * @default true
+    */
+  var preventScrolling: Boolean
 }
 object SidenavOptions {
   
@@ -73,9 +79,10 @@ object SidenavOptions {
     onCloseStart: Element => Unit,
     onOpenEnd: Element => Unit,
     onOpenStart: Element => Unit,
-    outDuration: Double
+    outDuration: Double,
+    preventScrolling: Boolean
   ): SidenavOptions = {
-    val __obj = js.Dynamic.literal(dragTargetWidth = dragTargetWidth.asInstanceOf[js.Any], draggable = draggable.asInstanceOf[js.Any], edge = edge.asInstanceOf[js.Any], inDuration = inDuration.asInstanceOf[js.Any], onCloseEnd = js.Any.fromFunction1(onCloseEnd), onCloseStart = js.Any.fromFunction1(onCloseStart), onOpenEnd = js.Any.fromFunction1(onOpenEnd), onOpenStart = js.Any.fromFunction1(onOpenStart), outDuration = outDuration.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dragTargetWidth = dragTargetWidth.asInstanceOf[js.Any], draggable = draggable.asInstanceOf[js.Any], edge = edge.asInstanceOf[js.Any], inDuration = inDuration.asInstanceOf[js.Any], onCloseEnd = js.Any.fromFunction1(onCloseEnd), onCloseStart = js.Any.fromFunction1(onCloseStart), onOpenEnd = js.Any.fromFunction1(onOpenEnd), onOpenStart = js.Any.fromFunction1(onOpenStart), outDuration = outDuration.asInstanceOf[js.Any], preventScrolling = preventScrolling.asInstanceOf[js.Any])
     __obj.asInstanceOf[SidenavOptions]
   }
   
@@ -99,5 +106,7 @@ object SidenavOptions {
     inline def setOnOpenStart(value: Element => Unit): Self = StObject.set(x, "onOpenStart", js.Any.fromFunction1(value))
     
     inline def setOutDuration(value: Double): Self = StObject.set(x, "outDuration", value.asInstanceOf[js.Any])
+    
+    inline def setPreventScrolling(value: Boolean): Self = StObject.set(x, "preventScrolling", value.asInstanceOf[js.Any])
   }
 }

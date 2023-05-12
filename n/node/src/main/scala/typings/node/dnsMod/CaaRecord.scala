@@ -10,7 +10,7 @@ trait CaaRecord extends StObject {
   
   var contactphone: js.UndefOr[String] = js.undefined
   
-  var critial: Double
+  var critical: Double
   
   var iodef: js.UndefOr[String] = js.undefined
   
@@ -20,8 +20,8 @@ trait CaaRecord extends StObject {
 }
 object CaaRecord {
   
-  inline def apply(critial: Double): CaaRecord = {
-    val __obj = js.Dynamic.literal(critial = critial.asInstanceOf[js.Any])
+  inline def apply(critical: Double): CaaRecord = {
+    val __obj = js.Dynamic.literal(critical = critical.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaaRecord]
   }
   
@@ -36,7 +36,7 @@ object CaaRecord {
     
     inline def setContactphoneUndefined: Self = StObject.set(x, "contactphone", js.undefined)
     
-    inline def setCritial(value: Double): Self = StObject.set(x, "critial", value.asInstanceOf[js.Any])
+    inline def setCritical(value: Double): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
     
     inline def setIodef(value: String): Self = StObject.set(x, "iodef", value.asInstanceOf[js.Any])
     

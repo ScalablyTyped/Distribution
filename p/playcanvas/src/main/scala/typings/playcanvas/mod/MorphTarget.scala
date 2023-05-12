@@ -34,6 +34,8 @@ open class MorphTarget protected () extends StObject {
     */
   def this(options: Aabb, args: Any*) = this()
   
+  var _aabb: BoundingBox = js.native
+  
   def _createVertexBuffer(device: Any, data: Any): VertexBuffer = js.native
   def _createVertexBuffer(device: Any, data: Any, dataType: Double): VertexBuffer = js.native
   
@@ -51,7 +53,7 @@ open class MorphTarget protected () extends StObject {
   
   var _vertexBufferPositions: VertexBuffer = js.native
   
-  var aabb: BoundingBox = js.native
+  def aabb: BoundingBox = js.native
   
   /**
     * The default weight of the morph target.

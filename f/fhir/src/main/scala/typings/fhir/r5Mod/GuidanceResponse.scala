@@ -36,7 +36,7 @@ trait GuidanceResponse
   /**
     * Messages resulting from the evaluation of the artifact or artifacts. As part of evaluating the request, the engine may produce informational or warning messages. These messages will be provided by this element.
     */
-  var evaluationMessage: js.UndefOr[js.Array[Reference]] = js.undefined
+  var evaluationMessage: js.UndefOr[Reference] = js.undefined
   
   /**
     * Allows a service to provide  unique, business identifiers for the response.
@@ -79,7 +79,7 @@ trait GuidanceResponse
   var performer: js.UndefOr[Reference] = js.undefined
   
   /**
-    * Describes the reason for the guidance response in coded or textual form, or Indicates the reason the request was initiated. This is typically provided as a parameter to the evaluation and echoed by the service, although for some use cases, such as subscription- or event-based scenarios, it may provide an indication of the cause for the response.
+    * Although this reference can be used to point to any resource, it is typically expected to refer to subject-specific data appropriate to the subject of the guidance. For example, patient-based decision support would be expected to reference patient-level data. In addition, implementations should provide as much detail as possible by using the [http://hl7.org/fhir/StructureDefinition/targetElement](http://hl7.org/fhir/extensions/StructureDefinition-targetElement.html) and [http://hl7.org/fhir/StructureDefinition/targetPath](http://hl7.org/fhir/extensions/StructureDefinition-targetPath.html) extensions to indicate the specific elements relevant to providing the reason for the guidance.
     */
   var reason: js.UndefOr[js.Array[CodeableReference]] = js.undefined
   
@@ -95,7 +95,7 @@ trait GuidanceResponse
   /**
     * The actions, if any, produced by the evaluation of the artifact.
     */
-  var result: js.UndefOr[Reference] = js.undefined
+  var result: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.
@@ -129,11 +129,9 @@ object GuidanceResponse {
     
     inline def setEncounterUndefined: Self = StObject.set(x, "encounter", js.undefined)
     
-    inline def setEvaluationMessage(value: js.Array[Reference]): Self = StObject.set(x, "evaluationMessage", value.asInstanceOf[js.Any])
+    inline def setEvaluationMessage(value: Reference): Self = StObject.set(x, "evaluationMessage", value.asInstanceOf[js.Any])
     
     inline def setEvaluationMessageUndefined: Self = StObject.set(x, "evaluationMessage", js.undefined)
-    
-    inline def setEvaluationMessageVarargs(value: Reference*): Self = StObject.set(x, "evaluationMessage", js.Array(value*))
     
     inline def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
@@ -183,9 +181,11 @@ object GuidanceResponse {
     
     inline def setResourceType(value: typings.fhir.fhirStrings.GuidanceResponse): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    inline def setResult(value: Reference): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: js.Array[Reference]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    
+    inline def setResultVarargs(value: Reference*): Self = StObject.set(x, "result", js.Array(value*))
     
     inline def setStatus(value: success | `data-requested` | `data-required` | `in-progress` | failure | `entered-in-error`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

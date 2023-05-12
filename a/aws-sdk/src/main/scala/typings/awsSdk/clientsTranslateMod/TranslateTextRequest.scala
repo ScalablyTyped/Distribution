@@ -27,7 +27,7 @@ trait TranslateTextRequest extends StObject {
   var TerminologyNames: js.UndefOr[ResourceNameList] = js.undefined
   
   /**
-    * The text to translate. The text string can be a maximum of 5,000 bytes long. Depending on your character set, this may be fewer than 5,000 characters.
+    * The text to translate. The text string can be a maximum of 10,000 bytes long. Depending on your character set, this may be fewer than 10,000 characters.
     */
   var Text: BoundedLengthString
 }

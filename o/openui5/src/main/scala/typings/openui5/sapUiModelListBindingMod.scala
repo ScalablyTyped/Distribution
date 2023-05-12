@@ -526,6 +526,7 @@ object sapUiModelListBindingMod {
     /**
       * @deprecated (since 1.11) - use the `change` event. It now contains a parameter `(reason : "filter")`
       * when a filter event is fired.
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Attaches event handler `fnFunction` to the {@link #event:filter filter} event of this `sap.ui.model.ListBinding`.
       *
@@ -550,6 +551,7 @@ object sapUiModelListBindingMod {
     /**
       * @deprecated (since 1.11) - use the `change` event. It now contains a parameter `(reason : "sort")` when
       * a sorter event is fired.
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Attaches event handler `fnFunction` to the {@link #event:sort sort} event of this `sap.ui.model.ListBinding`.
       *
@@ -573,6 +575,7 @@ object sapUiModelListBindingMod {
     
     /**
       * @deprecated (since 1.11) - use the `change` event.
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Detaches event handler `fnFunction` from the {@link #event:filter filter} event of this `sap.ui.model.ListBinding`.
       */
@@ -593,6 +596,7 @@ object sapUiModelListBindingMod {
     
     /**
       * @deprecated (since 1.11) - use the `change` event.
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Detaches event handler `fnFunction` from the {@link #event:sort sort} event of this `sap.ui.model.ListBinding`.
       */
@@ -612,6 +616,8 @@ object sapUiModelListBindingMod {
     ): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Calculates delta of specified old data array and new data array.
       *
       * For more information, see {@link module:sap/base/util/array/diff}.
@@ -642,6 +648,8 @@ object sapUiModelListBindingMod {
     oExtendedChangeDetectionConfig: js.Object
     ): Unit = js.native
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Enable extended change detection. When extended change detection is enabled, the list binding provides
       * detailed information about changes, for example which entries have been removed or inserted. This can
       * be utilized by a control for fine-grained update of its elements. Please see {@link sap.ui.model.ListBinding.prototype.getContexts}
@@ -754,6 +762,8 @@ object sapUiModelListBindingMod {
     def getAllCurrentContexts(): js.Array[typings.openui5.sapUiModelContextMod.default] = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns an array of binding contexts for the bound target list.
       *
       * In case of extended change detection, the context array may have an additional `diff` property, see {@link
@@ -1140,6 +1150,7 @@ object sapUiModelListBindingMod {
     
     /**
       * @SINCE 1.77.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Requests a {@link sap.ui.model.Filter} object which can be used to filter the list binding by entries
       * with model messages. With the filter callback, you can define if a message is considered when creating

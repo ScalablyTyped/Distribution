@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MaskImage
+import typings.csstype.mod.Property.OverflowClipMargin
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `325` extends StObject {
   
   var value: js.UndefOr[
-    MaskImage | (js.Array[
-      (Extract[js.UndefOr[MaskImage | js.Array[NonNullable[js.UndefOr[MaskImage]]]], String]) | NonNullable[js.UndefOr[MaskImage]]
+    (OverflowClipMargin[Double | String]) | (js.Array[
+      (Extract[
+        js.UndefOr[
+          (OverflowClipMargin[Double | String]) | (js.Array[NonNullable[js.UndefOr[OverflowClipMargin[Double | String]]]])
+        ], 
+        String
+      ]) | (NonNullable[js.UndefOr[OverflowClipMargin[Double | String]]])
     ])
   ] = js.native
 }

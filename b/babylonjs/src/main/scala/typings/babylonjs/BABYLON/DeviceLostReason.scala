@@ -14,4 +14,9 @@ object DeviceLostReason extends StObject {
   sealed trait Destroyed
     extends StObject
        with DeviceLostReason
+  
+  @js.native
+  sealed trait Unknown
+    extends StObject
+       with DeviceLostReason
 }

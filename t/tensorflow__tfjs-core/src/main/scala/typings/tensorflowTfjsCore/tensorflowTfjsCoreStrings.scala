@@ -580,6 +580,18 @@ object tensorflowTfjsCoreStrings {
   inline def findIndex: findIndex = "findIndex".asInstanceOf[findIndex]
   
   @js.native
+  sealed trait findLast
+    extends StObject
+       with DataValues
+  inline def findLast: findLast = "findLast".asInstanceOf[findLast]
+  
+  @js.native
+  sealed trait findLastIndex
+    extends StObject
+       with DataValues
+  inline def findLastIndex: findLastIndex = "findLastIndex".asInstanceOf[findLastIndex]
+  
+  @js.native
   sealed trait flat
     extends StObject
        with DataValues

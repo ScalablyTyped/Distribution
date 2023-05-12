@@ -1,6 +1,5 @@
 package typings.barnard59Base
 
-import typings.glob.mod.IOptions
 import typings.readableStream.mod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,9 +13,8 @@ object globMod {
   
   inline def default(arg: Options): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(arg.asInstanceOf[js.Any]).asInstanceOf[Readable]
   
-  trait Options
-    extends StObject
-       with IOptions {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify G.IOptions * / any */ trait Options extends StObject {
     
     var pattern: String
   }

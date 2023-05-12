@@ -14,9 +14,9 @@ object mapevents {
   
   /**
     * Behavior class uses map events and adds behavior functionality to the map. This allows map panning and zooming via using mouse wheel
-    * @property DRAGGING {number} - Map responds to user dragging via mouse or touch
-    * @property WHEELZOOM {number} - Map zooms in or out in respond to mouse wheel events
-    * @property DBLTAPZOOM {number} - Map zooms in or out in response to double click or double tap. For double tap if more that one touches are on the screen map will zoom out.
+    * DRAGGING {number} - Map responds to user dragging via mouse or touch
+    * WHEELZOOM {number} - Map zooms in or out in respond to mouse wheel events
+    * DBLTAPZOOM {number} - Map zooms in or out in response to double click or double tap. For double tap if more that one touches are on the screen map will zoom out.
     */
   @JSGlobal("H.mapevents.Behavior")
   @js.native
@@ -58,13 +58,13 @@ object mapevents {
   
   /**
     * ContextMenuEvent should be fired, when a user right-clicks or longpresses on a map object.
-    * @property viewportX {Array<H.util.ContextItem>} - Contains ContextItems, that will be used to create context menu entries. Should be filled by listeners of the "contextmenu" event
-    * @property viewportY {number} - Map viewport y position
-    * @property target {(H.map.Object | H.Map)} - Target for the event
-    * @property originalEvent {Event} - Original event
-    * @property currentTarget {(H.map.Object | H.Map)} - Object which has listener attached
-    * @property type {string} - Name of the dispatched event
-    * @property defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
+    * viewportX {Array<H.util.ContextItem>} - Contains ContextItems, that will be used to create context menu entries. Should be filled by listeners of the "contextmenu" event
+    * viewportY {number} - Map viewport y position
+    * target {(H.map.Object | H.Map)} - Target for the event
+    * originalEvent {Event} - Original event
+    * currentTarget {(H.map.Object | H.Map)} - Object which has listener attached
+    * type {string} - Name of the dispatched event
+    * defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
     */
   @JSGlobal("H.mapevents.ContextMenuEvent")
   @js.native
@@ -127,15 +127,15 @@ object mapevents {
   
   /**
     * Custom map event. Contains list of pointers on the map, list of changed pointers and original event. Inherits from H.util.Event.
-    * @property pointers {Array<H.mapevents.Pointer>} - Pointers which are currently on the screen
-    * @property changedPointers {Array<H.mapevents.Pointer>} - Pointers which has changed in course of event
-    * @property targetPointers {Array<H.mapevents.Pointer>} - Pointers which are on same target as the current pointer
-    * @property currentPointer {H.mapevents.Pointer} - Current pointer
-    * @property originalEvent {Event} - Original event fired by the browser
-    * @property target {(H.map.Object | H.Map)} - Object which triggered event. Can be the map object (i.e marker or polyline) or the map itself
-    * @property currentTarget {(H.map.Object | H.Map)} - Object which has listener attached
-    * @property type {string} - Name of the dispatched event
-    * @property defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
+    * pointers {Array<H.mapevents.Pointer>} - Pointers which are currently on the screen
+    * changedPointers {Array<H.mapevents.Pointer>} - Pointers which has changed in course of event
+    * targetPointers {Array<H.mapevents.Pointer>} - Pointers which are on same target as the current pointer
+    * currentPointer {H.mapevents.Pointer} - Current pointer
+    * originalEvent {Event} - Original event fired by the browser
+    * target {(H.map.Object | H.Map)} - Object which triggered event. Can be the map object (i.e marker or polyline) or the map itself
+    * currentTarget {(H.map.Object | H.Map)} - Object which has listener attached
+    * type {string} - Name of the dispatched event
+    * defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
     */
   @JSGlobal("H.mapevents.Event")
   @js.native
@@ -230,13 +230,13 @@ object mapevents {
   
   /**
     * Class representing pointer on the map surface. A pointer in platform specific definition would mean either mouse, touch, pen or any pointing device which can trigger browser events.
-    * @property viewportX {number} - X coordinate on the map's viewport
-    * @property viewportY {number} - Y coordinate on the map's viewport
-    * @property target {(H.map.Object | H.Map)} - Map object directly under the pointer. Can be null if if pointer is out of the map viewport
-    * @property id {number} - Pointer unique identifier.
-    * @property type {string} - Pointer type can be: 'mouse', 'touch' or 'pen'
-    * @property dragTarget {(H.map.Object | H.Map)} - Object which is currently dragged by the pointer
-    * @property button {H.mapevents.Pointer.Button} - Indicates which pointer device button has changed.
+    * viewportX {number} - X coordinate on the map's viewport
+    * viewportY {number} - Y coordinate on the map's viewport
+    * target {(H.map.Object | H.Map)} - Map object directly under the pointer. Can be null if if pointer is out of the map viewport
+    * id {number} - Pointer unique identifier.
+    * type {string} - Pointer type can be: 'mouse', 'touch' or 'pen'
+    * dragTarget {(H.map.Object | H.Map)} - Object which is currently dragged by the pointer
+    * button {H.mapevents.Pointer.Button} - Indicates which pointer device button has changed.
     */
   @JSGlobal("H.mapevents.Pointer")
   @js.native
@@ -316,14 +316,14 @@ object mapevents {
   
   /**
     * WheelEvent is fired when the mouse wheel is used over the map. It contains information about cursor position and the map object which resides directly under the cursor.
-    * @property delta {number} - Wheel move delta
-    * @property viewportX {number} - Map viewport x position
-    * @property viewportY {number} - Map viewport y position
-    * @property target {(H.map.Object | H.Map)} - Target for the event
-    * @property originalEvent {Event} - Original mouse wheel event
-    * @property currentTarget {(H.map.Object | H.Map)} - Object which has listener attached
-    * @property type {string} - Name of the dispatched event
-    * @property defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
+    * delta {number} - Wheel move delta
+    * viewportX {number} - Map viewport x position
+    * viewportY {number} - Map viewport y position
+    * target {(H.map.Object | H.Map)} - Target for the event
+    * originalEvent {Event} - Original mouse wheel event
+    * currentTarget {(H.map.Object | H.Map)} - Object which has listener attached
+    * type {string} - Name of the dispatched event
+    * defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
     */
   @JSGlobal("H.mapevents.WheelEvent")
   @js.native

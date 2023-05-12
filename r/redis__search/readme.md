@@ -1,7 +1,7 @@
 
 # Scala.js typings for redis__search
 
-Typings are for version 1.1.0
+Typings are for version 1.1.2
 
 ## Library description:
 This package provides support for the [RediSearch](https://redisearch.io) module, which adds indexing and querying support for data stored in Redis Hashes or as JSON documents with the RedisJSON module.  It extends the [Node Redis client](https://github.c

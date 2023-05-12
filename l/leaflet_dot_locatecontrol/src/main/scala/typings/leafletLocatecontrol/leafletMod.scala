@@ -1,11 +1,13 @@
 package typings.leafletLocatecontrol
 
+import typings.leaflet.mod.ErrorEvent
 import typings.leaflet.mod.Layer
 import typings.leaflet.mod.Map_
 import typings.leaflet.mod.MarkerOptions
 import typings.leaflet.mod.PathOptions
 import typings.leafletLocatecontrol.leafletMod.Control_.Locate
 import typings.leafletLocatecontrol.leafletMod.Control_.LocateOptions
+import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -30,6 +32,8 @@ object leafletMod {
       def start(): Unit = js.native
       
       def stop(): Unit = js.native
+      
+      def stopFollowing(): Unit = js.native
     }
     
     trait LocateOptions extends StObject {
@@ -46,7 +50,7 @@ object leafletMod {
       
       var compassStyle: js.UndefOr[PathOptions] = js.undefined
       
-      var createButtonCallback: js.UndefOr[Any] = js.undefined
+      var createButtonCallback: js.UndefOr[js.Function2[/* container */ HTMLDivElement, /* options */ this.type, Unit]] = js.undefined
       
       var drawCircle: js.UndefOr[Boolean] = js.undefined
       
@@ -78,9 +82,9 @@ object leafletMod {
       
       var metric: js.UndefOr[Boolean] = js.undefined
       
-      var onLocationError: js.UndefOr[Any] = js.undefined
+      var onLocationError: js.UndefOr[js.Function2[/* event */ ErrorEvent, /* control */ Locate, Unit]] = js.undefined
       
-      var onLocationOutsideMapBounds: js.UndefOr[Any] = js.undefined
+      var onLocationOutsideMapBounds: js.UndefOr[js.Function1[/* control */ Locate, Unit]] = js.undefined
       
       var position: js.UndefOr[String] = js.undefined
       
@@ -92,7 +96,7 @@ object leafletMod {
       
       var showPopup: js.UndefOr[Boolean] = js.undefined
       
-      var strings: js.UndefOr[Any] = js.undefined
+      var strings: js.UndefOr[StringsOptions] = js.undefined
       
       var textElementTag: js.UndefOr[String] = js.undefined
     }
@@ -132,7 +136,7 @@ object leafletMod {
         
         inline def setCompassStyleUndefined: Self = StObject.set(x, "compassStyle", js.undefined)
         
-        inline def setCreateButtonCallback(value: Any): Self = StObject.set(x, "createButtonCallback", value.asInstanceOf[js.Any])
+        inline def setCreateButtonCallback(value: (/* container */ HTMLDivElement, LocateOptions) => Unit): Self = StObject.set(x, "createButtonCallback", js.Any.fromFunction2(value))
         
         inline def setCreateButtonCallbackUndefined: Self = StObject.set(x, "createButtonCallback", js.undefined)
         
@@ -196,11 +200,11 @@ object leafletMod {
         
         inline def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
         
-        inline def setOnLocationError(value: Any): Self = StObject.set(x, "onLocationError", value.asInstanceOf[js.Any])
+        inline def setOnLocationError(value: (/* event */ ErrorEvent, /* control */ Locate) => Unit): Self = StObject.set(x, "onLocationError", js.Any.fromFunction2(value))
         
         inline def setOnLocationErrorUndefined: Self = StObject.set(x, "onLocationError", js.undefined)
         
-        inline def setOnLocationOutsideMapBounds(value: Any): Self = StObject.set(x, "onLocationOutsideMapBounds", value.asInstanceOf[js.Any])
+        inline def setOnLocationOutsideMapBounds(value: /* control */ Locate => Unit): Self = StObject.set(x, "onLocationOutsideMapBounds", js.Any.fromFunction1(value))
         
         inline def setOnLocationOutsideMapBoundsUndefined: Self = StObject.set(x, "onLocationOutsideMapBounds", js.undefined)
         
@@ -224,13 +228,57 @@ object leafletMod {
         
         inline def setShowPopupUndefined: Self = StObject.set(x, "showPopup", js.undefined)
         
-        inline def setStrings(value: Any): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
+        inline def setStrings(value: StringsOptions): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
         
         inline def setStringsUndefined: Self = StObject.set(x, "strings", js.undefined)
         
         inline def setTextElementTag(value: String): Self = StObject.set(x, "textElementTag", value.asInstanceOf[js.Any])
         
         inline def setTextElementTagUndefined: Self = StObject.set(x, "textElementTag", js.undefined)
+      }
+    }
+    
+    trait StringsOptions extends StObject {
+      
+      var feetUnit: js.UndefOr[String] = js.undefined
+      
+      var metersUnit: js.UndefOr[String] = js.undefined
+      
+      var outsideMapBoundsMsg: js.UndefOr[String] = js.undefined
+      
+      var popup: js.UndefOr[String] = js.undefined
+      
+      var title: js.UndefOr[String] = js.undefined
+    }
+    object StringsOptions {
+      
+      inline def apply(): StringsOptions = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[StringsOptions]
+      }
+      
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StringsOptions] (val x: Self) extends AnyVal {
+        
+        inline def setFeetUnit(value: String): Self = StObject.set(x, "feetUnit", value.asInstanceOf[js.Any])
+        
+        inline def setFeetUnitUndefined: Self = StObject.set(x, "feetUnit", js.undefined)
+        
+        inline def setMetersUnit(value: String): Self = StObject.set(x, "metersUnit", value.asInstanceOf[js.Any])
+        
+        inline def setMetersUnitUndefined: Self = StObject.set(x, "metersUnit", js.undefined)
+        
+        inline def setOutsideMapBoundsMsg(value: String): Self = StObject.set(x, "outsideMapBoundsMsg", value.asInstanceOf[js.Any])
+        
+        inline def setOutsideMapBoundsMsgUndefined: Self = StObject.set(x, "outsideMapBoundsMsg", js.undefined)
+        
+        inline def setPopup(value: String): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+        
+        inline def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
+        
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       }
     }
   }

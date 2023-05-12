@@ -2,6 +2,7 @@ package typings.awsSdk.clientsAppflowMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdk.awsSdkStrings.BETWEEN
+import typings.awsSdk.awsSdkStrings.GLUE
 import typings.awsSdk.awsSdkStrings.LAMBDA
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -64,6 +65,10 @@ type BucketName = java.lang.String
 
 type BucketPrefix = java.lang.String
 
+type BusinessUnitId = java.lang.String
+
+type CatalogType = GLUE | java.lang.String
+
 type ClientCredentialsArn = java.lang.String
 
 type ClientId = java.lang.String
@@ -71,6 +76,10 @@ type ClientId = java.lang.String
 type ClientNumber = java.lang.String
 
 type ClientSecret = java.lang.String
+
+type ClientToken = java.lang.String
+
+type ClusterIdentifier = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Public_
@@ -125,7 +134,7 @@ type ConnectorSuppliedValueOptionList = js.Array[ConnectorSuppliedValue]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Salesforce_
-  - typings.awsSdk.awsSdkStrings.Singular
+  - typings.awsSdk.awsSdkStrings.Singular_
   - typings.awsSdk.awsSdkStrings.Slack_
   - typings.awsSdk.awsSdkStrings.Redshift_
   - typings.awsSdk.awsSdkStrings.S3
@@ -147,6 +156,7 @@ type ConnectorSuppliedValueOptionList = js.Array[ConnectorSuppliedValue]
   - typings.awsSdk.awsSdkStrings.CustomerProfiles
   - typings.awsSdk.awsSdkStrings.SAPOData
   - typings.awsSdk.awsSdkStrings.CustomConnector
+  - typings.awsSdk.awsSdkStrings.Pardot
   - java.lang.String
 */
 type ConnectorType = _ConnectorType | java.lang.String
@@ -173,12 +183,16 @@ type CustomPropertyKey = java.lang.String
 
 type CustomPropertyValue = java.lang.String
 
+type DataApiRoleArn = java.lang.String
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Incremental_
   - typings.awsSdk.awsSdkStrings.Complete_
   - java.lang.String
 */
 type DataPullMode = _DataPullMode | java.lang.String
+
+type DatabaseName = java.lang.String
 
 type DatabaseUrl = java.lang.String
 
@@ -244,12 +258,16 @@ type EntityName = java.lang.String
 
 type ExecutionId = java.lang.String
 
+type ExecutionIds = js.Array[ExecutionId]
+
 type ExecutionMessage = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.InProgress_
   - typings.awsSdk.awsSdkStrings.Successful_
   - typings.awsSdk.awsSdkStrings.Error_
+  - typings.awsSdk.awsSdkStrings.CancelStarted
+  - typings.awsSdk.awsSdkStrings.Canceled_
   - java.lang.String
 */
 type ExecutionStatus = _ExecutionStatus | java.lang.String
@@ -291,6 +309,12 @@ type FlowStatus = _FlowStatus | java.lang.String
 
 type FlowStatusMessage = java.lang.String
 
+type GlueDataCatalogDatabaseName = java.lang.String
+
+type GlueDataCatalogIAMRole = java.lang.String
+
+type GlueDataCatalogTablePrefix = java.lang.String
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PROJECTION
   - typings.awsSdk.awsSdkStrings.BETWEEN
@@ -328,11 +352,15 @@ type InstanceUrl = java.lang.String
 
 type JavaBoolean = scala.Boolean
 
+type JwtToken = java.lang.String
+
 type KMSArn = java.lang.String
 
 type Key = java.lang.String
 
 type Label = java.lang.String
+
+type ListEntitiesMaxResults = scala.Double
 
 type LogoURL = java.lang.String
 
@@ -363,6 +391,8 @@ type MarketoConnectorOperator = _MarketoConnectorOperator | java.lang.String
 
 type MaxResults = scala.Double
 
+type MetadataCatalogDetails = js.Array[MetadataCatalogDetail]
+
 type MostRecentExecutionMessage = java.lang.String
 
 type Name = java.lang.String
@@ -381,6 +411,7 @@ type OAuth2CustomPropertiesList = js.Array[OAuth2CustomParameter]
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CLIENT_CREDENTIALS
   - typings.awsSdk.awsSdkStrings.AUTHORIZATION_CODE
+  - typings.awsSdk.awsSdkStrings.JWT_BEARER
   - java.lang.String
 */
 type OAuth2GrantType = _OAuth2GrantType | java.lang.String
@@ -438,6 +469,7 @@ type Operator = _Operator | java.lang.String
   - typings.awsSdk.awsSdkStrings.SUBFIELD_CATEGORY_MAP
   - typings.awsSdk.awsSdkStrings.EXCLUDE_SOURCE_FIELDS_LIST
   - typings.awsSdk.awsSdkStrings.INCLUDE_NEW_FIELDS
+  - typings.awsSdk.awsSdkStrings.ORDERED_PARTITION_KEYS_LIST
   - java.lang.String
 */
 type OperatorPropertiesKeys = _OperatorPropertiesKeys | java.lang.String
@@ -468,7 +500,35 @@ type OperatorPropertiesKeys = _OperatorPropertiesKeys | java.lang.String
 */
 type Operators = _Operators | java.lang.String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PROJECTION
+  - typings.awsSdk.awsSdkStrings.EQUAL_TO
+  - typings.awsSdk.awsSdkStrings.NO_OP
+  - typings.awsSdk.awsSdkStrings.ADDITION
+  - typings.awsSdk.awsSdkStrings.MULTIPLICATION
+  - typings.awsSdk.awsSdkStrings.DIVISION
+  - typings.awsSdk.awsSdkStrings.SUBTRACTION
+  - typings.awsSdk.awsSdkStrings.MASK_ALL
+  - typings.awsSdk.awsSdkStrings.MASK_FIRST_N
+  - typings.awsSdk.awsSdkStrings.MASK_LAST_N
+  - typings.awsSdk.awsSdkStrings.VALIDATE_NON_NULL
+  - typings.awsSdk.awsSdkStrings.VALIDATE_NON_ZERO
+  - typings.awsSdk.awsSdkStrings.VALIDATE_NON_NEGATIVE
+  - typings.awsSdk.awsSdkStrings.VALIDATE_NUMERIC
+  - java.lang.String
+*/
+type PardotConnectorOperator = _PardotConnectorOperator | java.lang.String
+
 type Password = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.EXECUTION_ID
+  - typings.awsSdk.awsSdkStrings.SCHEMA_VERSION
+  - java.lang.String
+*/
+type PathPrefix = _PathPrefix | java.lang.String
+
+type PathPrefixHierarchy = js.Array[PathPrefix]
 
 type PortNumber = scala.Double
 
@@ -750,6 +810,7 @@ type TaskPropertiesMap = StringDictionary[Property]
   - typings.awsSdk.awsSdkStrings.Passthrough__
   - typings.awsSdk.awsSdkStrings.Truncate
   - typings.awsSdk.awsSdkStrings.Validate
+  - typings.awsSdk.awsSdkStrings.Partition_
   - java.lang.String
 */
 type TaskType = _TaskType | java.lang.String
@@ -828,6 +889,8 @@ type Value = java.lang.String
 type VeevaConnectorOperator = _VeevaConnectorOperator | java.lang.String
 
 type Warehouse = java.lang.String
+
+type WorkgroupName = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INSERT

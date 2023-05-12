@@ -1,8 +1,9 @@
 package typings.contractProxyKit.anon
 
-import org.scalablytyped.runtime.Instantiable2
-import typings.ethers.mod.ethers.utils.ConstructorFragment
-import typings.ethersprojectAbi.libFragmentsMod.JsonFragment
+import org.scalablytyped.runtime.Instantiable4
+import typings.ethers.mod.ethers.ConstructorFragment
+import typings.ethers.typesAbiFragmentsMod.FragmentType
+import typings.ethers.typesAbiFragmentsMod.ParamType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,16 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TypeofConstructorFragment
   extends StObject
-     with Instantiable2[/* constructorGuard */ Any, /* params */ Any, ConstructorFragment] {
+     with Instantiable4[
+      /* guard */ Any, 
+      /* type */ FragmentType, 
+      /* inputs */ js.Array[ParamType], 
+      /* payable */ Boolean, 
+      ConstructorFragment
+    ] {
   
-  def from(value: String): typings.ethersprojectAbi.libFragmentsMod.ConstructorFragment = js.native
-  def from(value: typings.ethersprojectAbi.libFragmentsMod.ConstructorFragment): typings.ethersprojectAbi.libFragmentsMod.ConstructorFragment = js.native
-  def from(value: JsonFragment): typings.ethersprojectAbi.libFragmentsMod.ConstructorFragment = js.native
+  def from(obj: Any): typings.ethers.typesAbiFragmentsMod.ConstructorFragment = js.native
   
-  def fromObject(value: typings.ethersprojectAbi.libFragmentsMod.ConstructorFragment): typings.ethersprojectAbi.libFragmentsMod.ConstructorFragment = js.native
-  def fromObject(value: JsonFragment): typings.ethersprojectAbi.libFragmentsMod.ConstructorFragment = js.native
-  
-  def fromString(value: String): typings.ethersprojectAbi.libFragmentsMod.ConstructorFragment = js.native
-  
-  def isConstructorFragment(value: Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.ConstructorFragment */ Boolean = js.native
+  def isFragment(value: Any): /* is ethers.ethers/types/abi/fragments.ConstructorFragment */ Boolean = js.native
 }

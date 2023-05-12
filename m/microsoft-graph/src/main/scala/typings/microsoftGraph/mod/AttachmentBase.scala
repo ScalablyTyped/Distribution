@@ -8,12 +8,19 @@ trait AttachmentBase
   extends StObject
      with Entity {
   
+  // The MIME type.
   var contentType: js.UndefOr[NullableOption[String]] = js.undefined
   
+  /**
+    * The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example,
+    * midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    */
   var lastModifiedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // The display name of the attachment. This does not need to be the actual file name.
   var name: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // The length of the attachment in bytes.
   var size: js.UndefOr[Double] = js.undefined
 }
 object AttachmentBase {

@@ -39,8 +39,10 @@ open class ScriptType protected ()
     * Create a new ScriptType instance.
     *
     * @param {object} args - The input arguments object.
-    * @param {AppBase} args.app - The {@link AppBase} that is running the script.
-    * @param {Entity} args.entity - The {@link Entity} that the script is attached to.
+    * @param {import('../app-base.js').AppBase} args.app - The {@link AppBase} that is running the
+    * script.
+    * @param {import('../entity.js').Entity} args.entity - The {@link Entity} that the script is
+    * attached to.
     */
   def this(args: App) = this()
 }

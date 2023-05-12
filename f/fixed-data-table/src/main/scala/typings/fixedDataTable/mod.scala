@@ -24,7 +24,7 @@ object mod {
     def this(props: CellProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: CellProps, context: Any) = this()
   }
@@ -36,7 +36,7 @@ object mod {
     def this(props: ColumnProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ColumnProps, context: Any) = this()
   }
@@ -48,7 +48,7 @@ object mod {
     def this(props: ColumnGroupProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ColumnGroupProps, context: Any) = this()
   }
@@ -60,7 +60,7 @@ object mod {
     def this(props: TableProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: TableProps, context: Any) = this()
   }

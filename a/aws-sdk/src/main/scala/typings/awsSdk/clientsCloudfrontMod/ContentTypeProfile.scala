@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ContentTypeProfile extends StObject {
   
   /**
-    * The content type for a field-level encryption content type-profile mapping. 
+    * The content type for a field-level encryption content type-profile mapping.
     */
   var ContentType: String
   
   /**
-    * The format for a field-level encryption content type-profile mapping. 
+    * The format for a field-level encryption content type-profile mapping.
     */
   var Format: typings.awsSdk.clientsCloudfrontMod.Format
   
   /**
-    * The profile ID for a field-level encryption content type-profile mapping. 
+    * The profile ID for a field-level encryption content type-profile mapping.
     */
   var ProfileId: js.UndefOr[String] = js.undefined
 }

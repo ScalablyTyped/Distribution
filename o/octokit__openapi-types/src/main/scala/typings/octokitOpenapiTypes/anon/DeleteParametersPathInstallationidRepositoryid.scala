@@ -7,14 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteParametersPathInstallationidRepositoryid extends StObject {
   
   /**
-    * Remove a single repository from an installation. The authenticated user must have admin access to the repository.
+    * Remove a repository from an app installation
+    * @description Remove a single repository from an installation. The authenticated user must have admin access to the repository.
     *
     * You must use a personal access token (which you can create via the [command line](https://docs.github.com/github/authenticating-to-github/creating-a-personal-access-token) or [Basic Authentication](https://docs.github.com/rest/overview/other-authentication-methods#basic-authentication)) to access this endpoint.
     */
   var delete: ParametersPathInstallationidRepositoryid
   
   /**
-    * Add a single repository to an installation. The authenticated user must have admin access to the repository.
+    * Add a repository to an app installation
+    * @description Add a single repository to an installation. The authenticated user must have admin access to the repository.
     *
     * You must use a personal access token (which you can create via the [command line](https://docs.github.com/github/authenticating-to-github/creating-a-personal-access-token) or [Basic Authentication](https://docs.github.com/rest/overview/other-authentication-methods#basic-authentication)) to access this endpoint.
     */

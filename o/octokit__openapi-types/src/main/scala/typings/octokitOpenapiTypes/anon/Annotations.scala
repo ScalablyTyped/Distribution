@@ -6,25 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Annotations extends StObject {
   
-  /** @description Adds information from your analysis to specific lines of code. Annotations are visible on GitHub in the **Checks** and **Files changed** tab of the pull request. The Checks API limits the number of annotations to a maximum of 50 per API request. To create more than 50 annotations, you have to make multiple requests to the [Update a check run](https://docs.github.com/rest/reference/checks#update-a-check-run) endpoint. Each time you update the check run, annotations are appended to the list of annotations that already exist for the check run. For details about how you can view annotations on GitHub, see "[About status checks](https://docs.github.com/articles/about-status-checks#checks)". See the [`annotations` object](https://docs.github.com/rest/reference/checks#annotations-object) description for details about how to use this parameter. */
+  /** @description Adds information from your analysis to specific lines of code. Annotations are visible in GitHub's pull request UI. Annotations are visible in GitHub's pull request UI. The Checks API limits the number of annotations to a maximum of 50 per API request. To create more than 50 annotations, you have to make multiple requests to the [Update a check run](https://docs.github.com/rest/reference/checks#update-a-check-run) endpoint. Each time you update the check run, annotations are appended to the list of annotations that already exist for the check run. GitHub Actions are limited to 10 warning annotations and 10 error annotations per step. For details about annotations in the UI, see "[About status checks](https://docs.github.com/articles/about-status-checks#checks)". */
   var annotations: js.UndefOr[js.Array[Annotationlevel]] = js.undefined
   
-  /** @description Adds images to the output displayed in the GitHub pull request UI. See the [`images` object](https://docs.github.com/rest/reference/checks#images-object) description for details. */
+  /** @description Adds images to the output displayed in the GitHub pull request UI. */
   var images: js.UndefOr[js.Array[Alt]] = js.undefined
   
-  /** @description The summary of the check run. This parameter supports Markdown. */
+  /** @description Can contain Markdown. */
   var summary: String
   
-  /** @description The details of the check run. This parameter supports Markdown. */
+  /** @description Can contain Markdown. */
   var text: js.UndefOr[String] = js.undefined
   
-  /** @description The title of the check run. */
-  var title: String
+  /** @description **Required**. */
+  var title: js.UndefOr[String] = js.undefined
 }
 object Annotations {
   
-  inline def apply(summary: String, title: String): Annotations = {
-    val __obj = js.Dynamic.literal(summary = summary.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+  inline def apply(summary: String): Annotations = {
+    val __obj = js.Dynamic.literal(summary = summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[Annotations]
   }
   
@@ -50,5 +50,7 @@ object Annotations {
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

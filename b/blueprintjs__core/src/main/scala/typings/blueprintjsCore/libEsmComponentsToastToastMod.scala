@@ -6,8 +6,9 @@ import typings.blueprintjsCore.libEsmCommonPropsMod.IIntentProps
 import typings.blueprintjsCore.libEsmCommonPropsMod.IProps
 import typings.blueprintjsCore.libEsmCommonPropsMod.LinkProps
 import typings.blueprintjsCore.libEsmCommonPropsMod.MaybeElement
-import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsIcons.libEsmGeneratedIcons16pxBlueprintIcons16Mod.BlueprintIcons16Id
 import typings.react.mod.ReactNode
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,7 +72,7 @@ object libEsmComponentsToastToastMod {
       * cannot have its own intent color that might conflict with the toast's intent). Omit this
       * prop to omit the action button.
       */
-    var action: js.UndefOr[ActionProps & LinkProps] = js.undefined
+    var action: js.UndefOr[ActionProps[HTMLElement] & LinkProps] = js.undefined
     
     /** Name of a Blueprint UI icon (or an icon element) to render before the message. */
     var icon: js.UndefOr[BlueprintIcons16Id | MaybeElement] = js.undefined
@@ -110,7 +111,7 @@ object libEsmComponentsToastToastMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: ToastProps] (val x: Self) extends AnyVal {
       
-      inline def setAction(value: ActionProps & LinkProps): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: ActionProps[HTMLElement] & LinkProps): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       

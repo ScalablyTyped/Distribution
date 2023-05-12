@@ -17,7 +17,7 @@ object libVictoryAccessibleGroupVictoryAccessibleGroupMod {
     def this(props: VictoryAccessibleGroupProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: VictoryAccessibleGroupProps, context: Any) = this()
   }

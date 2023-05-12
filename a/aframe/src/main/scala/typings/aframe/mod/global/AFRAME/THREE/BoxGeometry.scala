@@ -10,12 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class BoxGeometry protected ()
   extends typings.three.mod.BoxGeometry {
   /**
-    * @param [width=1] — Width of the sides on the X axis.
-    * @param [height=1] — Height of the sides on the Y axis.
-    * @param [depth=1] — Depth of the sides on the Z axis.
-    * @param [widthSegments=1] — Number of segmented faces along the width of the sides.
-    * @param [heightSegments=1] — Number of segmented faces along the height of the sides.
-    * @param [depthSegments=1] — Number of segmented faces along the depth of the sides.
+    * Create a new instance of {@link BoxGeometry}
+    * @param width Width; that is, the length of the edges parallel to the X axis. Optional; Expects a `Float`. Default `1`
+    * @param height Height; that is, the length of the edges parallel to the Y axis. Optional; Expects a `Float`. Default `1`
+    * @param depth Depth; that is, the length of the edges parallel to the Z axis. Optional; Expects a `Float`. Default `1`
+    * @param widthSegments Number of segmented rectangular faces along the width of the sides. Optional; Expects a `Integer`. Default `1`
+    * @param heightSegments Number of segmented rectangular faces along the height of the sides. Optional; Expects a `Integer`. Default `1`
+    * @param depthSegments Number of segmented rectangular faces along the depth of the sides. Optional; Expects a `Integer`. Default `1`
     */
   def this(
     width: js.UndefOr[Double],

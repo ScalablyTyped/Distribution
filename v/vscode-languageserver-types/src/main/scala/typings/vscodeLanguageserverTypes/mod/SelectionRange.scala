@@ -12,7 +12,7 @@ trait SelectionRange extends StObject {
   var parent: js.UndefOr[SelectionRange] = js.undefined
   
   /**
-    * The [range](#Range) of this selection range.
+    * The {@link Range range} of this selection range.
     */
   var range: Range
 }

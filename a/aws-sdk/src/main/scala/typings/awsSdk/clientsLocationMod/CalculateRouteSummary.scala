@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CalculateRouteSummary extends StObject {
   
   /**
-    * The data provider of traffic and road network data used to calculate the route. Indicates one of the available providers:    Esri     Here    For more information about data providers, see Amazon Location Service data providers.
+    * The data provider of traffic and road network data used to calculate the route. Indicates one of the available providers:    Esri     Grab     Here    For more information about data providers, see Amazon Location Service data providers.
     */
   var DataSource: String
   

@@ -3,12 +3,7 @@ package typings.pixiGraphics
 import typings.pixiCore.libTexturesResourcesResourceMod.Resource
 import typings.pixiCore.mod.BatchDrawCall
 import typings.pixiCore.mod.BatchGeometry
-import typings.pixiCore.mod.Circle
-import typings.pixiCore.mod.Ellipse
 import typings.pixiCore.mod.Matrix
-import typings.pixiCore.mod.Polygon
-import typings.pixiCore.mod.Rectangle
-import typings.pixiCore.mod.RoundedRectangle
 import typings.pixiCore.mod.Texture
 import typings.pixiDisplay.mod.Bounds
 import typings.pixiGraphics.libGraphicsDataMod.GraphicsData
@@ -16,6 +11,7 @@ import typings.pixiGraphics.libStylesFillStyleMod.FillStyle
 import typings.pixiGraphics.libStylesLineStyleMod.LineStyle
 import typings.pixiGraphics.libUtilsMod.BatchPart
 import typings.pixiMath.libIpointdataMod.IPointData
+import typings.pixiMath.mod.IShape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -109,6 +105,11 @@ object libGraphicsGeometryMod {
     
     /**
       * Get the current bounds of the graphic geometry.
+      *
+      * Since 6.5.0, bounds of the graphics geometry are calculated based on the vertices of generated geometry.
+      * Since shapes or strokes with full transparency (`alpha: 0`) will not generate geometry, they are not considered
+      * when calculating bounds for the graphics geometry. See PR [#8343]{@link https://github.com/pixijs/pixijs/pull/8343}
+      * and issue [#8623]{@link https://github.com/pixijs/pixijs/pull/8623}.
       * @readonly
       */
     def bounds: Bounds = js.native
@@ -266,16 +267,10 @@ object libGraphicsGeometryMod {
     @js.native
     val ^ : js.Any = js.native
     
-    /**
-      * The maximum number of points to consider an object "batchable",
-      * able to be batched by the renderer's batch system.
-    \
-      */
+    /** The maximum number of points to consider an object "batchable", able to be batched by the renderer's batch system. */
     @JSImport("@pixi/graphics/lib/GraphicsGeometry", "GraphicsGeometry.BATCHABLE_SIZE")
     @js.native
     def BATCHABLE_SIZE: Double = js.native
     inline def BATCHABLE_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BATCHABLE_SIZE")(x.asInstanceOf[js.Any])
   }
-  
-  type IShape = Circle | Ellipse | Polygon | Rectangle | RoundedRectangle
 }

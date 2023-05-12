@@ -30,6 +30,11 @@ trait AccountSettings extends StObject {
     * A Boolean value that indicates whether public sharing is turned on for an Amazon QuickSight account. For more information about turning on public sharing, see UpdatePublicSharingSettings.
     */
   var PublicSharingEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * A boolean value that determines whether or not an Amazon QuickSight account can be deleted. A True value doesn't allow the account to be deleted and results in an error message if a user tries to make a DeleteAccountSubsctiption request. A False value will allow the ccount to be deleted. 
+    */
+  var TerminationProtectionEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object AccountSettings {
   
@@ -60,5 +65,9 @@ object AccountSettings {
     inline def setPublicSharingEnabled(value: Boolean): Self = StObject.set(x, "PublicSharingEnabled", value.asInstanceOf[js.Any])
     
     inline def setPublicSharingEnabledUndefined: Self = StObject.set(x, "PublicSharingEnabled", js.undefined)
+    
+    inline def setTerminationProtectionEnabled(value: Boolean): Self = StObject.set(x, "TerminationProtectionEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setTerminationProtectionEnabledUndefined: Self = StObject.set(x, "TerminationProtectionEnabled", js.undefined)
   }
 }

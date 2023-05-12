@@ -26,8 +26,6 @@ object distRequestCommonAuthorizationCodeRequestMod {
     var redirectUri: String
     
     var tokenBodyParameters: js.UndefOr[StringDict] = js.undefined
-    
-    var tokenQueryParameters: js.UndefOr[StringDict] = js.undefined
   }
   object CommonAuthorizationCodeRequest {
     
@@ -68,10 +66,6 @@ object distRequestCommonAuthorizationCodeRequestMod {
       inline def setTokenBodyParameters(value: StringDict): Self = StObject.set(x, "tokenBodyParameters", value.asInstanceOf[js.Any])
       
       inline def setTokenBodyParametersUndefined: Self = StObject.set(x, "tokenBodyParameters", js.undefined)
-      
-      inline def setTokenQueryParameters(value: StringDict): Self = StObject.set(x, "tokenQueryParameters", value.asInstanceOf[js.Any])
-      
-      inline def setTokenQueryParametersUndefined: Self = StObject.set(x, "tokenQueryParameters", js.undefined)
     }
   }
 }

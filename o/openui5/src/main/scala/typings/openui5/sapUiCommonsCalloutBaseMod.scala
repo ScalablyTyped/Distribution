@@ -490,6 +490,8 @@ object sapUiCommonsCalloutBaseMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:beforeOpen beforeOpen} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -504,6 +506,8 @@ object sapUiCommonsCalloutBaseMod {
     mParameters: Parent): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:close close} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -515,6 +519,8 @@ object sapUiCommonsCalloutBaseMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:open open} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -527,6 +533,7 @@ object sapUiCommonsCalloutBaseMod {
     
     /**
       * @SINCE 1.11.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:opened opened} to attached listeners.
       *

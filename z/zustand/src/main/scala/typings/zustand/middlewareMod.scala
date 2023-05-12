@@ -3,7 +3,10 @@ package typings.zustand
 import typings.zustand.middlewareCombineMod.Combine_
 import typings.zustand.middlewareDevtoolsMod.Devtools_
 import typings.zustand.middlewareDevtoolsMod.WithDevtools
+import typings.zustand.middlewarePersistMod.JsonStorageOptions
+import typings.zustand.middlewarePersistMod.PersistStorage
 import typings.zustand.middlewarePersistMod.Persist_
+import typings.zustand.middlewarePersistMod.StateStorage
 import typings.zustand.middlewarePersistMod.WithPersist
 import typings.zustand.middlewareReduxMod.Redux_
 import typings.zustand.middlewareReduxMod.WithRedux
@@ -15,9 +18,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object middlewareMod {
   
+  @JSImport("zustand/middleware", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("zustand/middleware", "combine")
   @js.native
   val combine: Combine_ = js.native
+  
+  inline def createJSONStorage[S](getStorage: js.Function0[StateStorage]): js.UndefOr[PersistStorage[S]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createJSONStorage")(getStorage.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[PersistStorage[S]]]
+  inline def createJSONStorage[S](getStorage: js.Function0[StateStorage], options: JsonStorageOptions): js.UndefOr[PersistStorage[S]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSONStorage")(getStorage.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[PersistStorage[S]]]
   
   @JSImport("zustand/middleware", "devtools")
   @js.native

@@ -4,12 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * These options specify the appearance of a marker label. A marker label is a
-  * string (often a single character) which will appear inside the marker. If
-  * you are using it with a custom marker, you can reposition it with the
-  * <code>labelOrigin</code> property in the <code>Icon</code> class.
-  */
 trait MarkerLabel extends StObject {
   
   /**

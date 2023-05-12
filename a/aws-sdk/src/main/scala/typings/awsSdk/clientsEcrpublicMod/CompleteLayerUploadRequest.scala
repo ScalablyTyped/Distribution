@@ -12,7 +12,7 @@ trait CompleteLayerUploadRequest extends StObject {
   var layerDigests: LayerDigestList
   
   /**
-    * The AWS account ID associated with the registry to which to upload layers. If you do not specify a registry, the default public registry is assumed.
+    * The Amazon Web Services account ID, or registry alias, associated with the registry where layers are uploaded. If you do not specify a registry, the default public registry is assumed.
     */
   var registryId: js.UndefOr[RegistryIdOrAlias] = js.undefined
   

@@ -2,20 +2,19 @@ package typings.esbuildWasm.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.esbuildWasm.anon.EntryPoint
-import typings.esbuildWasm.anon.Imports
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Metafile extends StObject {
   
-  var inputs: StringDictionary[Imports]
+  var inputs: StringDictionary[typings.esbuildWasm.anon.Format]
   
   var outputs: StringDictionary[EntryPoint]
 }
 object Metafile {
   
-  inline def apply(inputs: StringDictionary[Imports], outputs: StringDictionary[EntryPoint]): Metafile = {
+  inline def apply(inputs: StringDictionary[typings.esbuildWasm.anon.Format], outputs: StringDictionary[EntryPoint]): Metafile = {
     val __obj = js.Dynamic.literal(inputs = inputs.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metafile]
   }
@@ -23,7 +22,7 @@ object Metafile {
   @scala.inline
   implicit open class MutableBuilder[Self <: Metafile] (val x: Self) extends AnyVal {
     
-    inline def setInputs(value: StringDictionary[Imports]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: StringDictionary[typings.esbuildWasm.anon.Format]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     inline def setOutputs(value: StringDictionary[EntryPoint]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
   }

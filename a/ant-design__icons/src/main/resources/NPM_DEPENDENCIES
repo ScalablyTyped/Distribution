@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ant-design/icons" : "4.7.0"
+      "@ant-design/icons" : "5.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@ant-design/icons" : "4.7.0"
+      "@ant-design/icons" : "5.0.1"
     }
   ],
   "compile-devDependencies" : [

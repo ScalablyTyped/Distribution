@@ -1,7 +1,7 @@
 
 # Scala.js typings for multiformats__multiaddr-to-uri
 
-Typings are for version 9.0.2
+Typings are for version 9.0.4
 
 ## Library description:
 Convert a Multiaddr to a URI /dnsaddr/ipfs.io/http -> http://ipfs.io

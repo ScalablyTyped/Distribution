@@ -16,7 +16,7 @@ object libIconsHighlightFilledMod extends Shortcut {
   @js.native
   trait HighlightFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_HighlightFilledIconType: String = js.native

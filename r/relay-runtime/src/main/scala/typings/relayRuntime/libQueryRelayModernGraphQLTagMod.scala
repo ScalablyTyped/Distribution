@@ -42,10 +42,11 @@ object libQueryRelayModernGraphQLTagMod {
   /* Rewritten from type alias, can be one of: 
     - typings.relayRuntime.libUtilReaderNodeMod.ReaderFragment
     - typings.relayRuntime.libUtilRelayConcreteNodeMod.ConcreteRequest
+    - typings.relayRuntime.libUtilReaderNodeMod.ReaderInlineDataFragment
     - js.Function0[
-  typings.relayRuntime.libUtilReaderNodeMod.ReaderFragment | typings.relayRuntime.libUtilRelayConcreteNodeMod.ConcreteRequest]
+  typings.relayRuntime.libUtilReaderNodeMod.ReaderFragment | typings.relayRuntime.libUtilRelayConcreteNodeMod.ConcreteRequest | typings.relayRuntime.libUtilReaderNodeMod.ReaderInlineDataFragment]
   */
-  type GraphQLTaggedNode = _GraphQLTaggedNode | (js.Function0[ReaderFragment | ConcreteRequest])
+  type GraphQLTaggedNode = _GraphQLTaggedNode | (js.Function0[ReaderFragment | ConcreteRequest | ReaderInlineDataFragment])
   
   trait _GraphQLTaggedNode extends StObject
   object _GraphQLTaggedNode {
@@ -70,6 +71,11 @@ object libQueryRelayModernGraphQLTagMod {
       val __obj = js.Dynamic.literal(argumentDefinitions = argumentDefinitions.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.relayRuntime.libUtilReaderNodeMod.ReaderFragment]
+    }
+    
+    inline def ReaderInlineDataFragment(kind: String, name: String): typings.relayRuntime.libUtilReaderNodeMod.ReaderInlineDataFragment = {
+      val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.relayRuntime.libUtilReaderNodeMod.ReaderInlineDataFragment]
     }
   }
 }

@@ -18,6 +18,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression_ | TSSatisfiesExpression_ | TSTypeAssertion_ | TSNonNullExpression_
   
+  var optional: Boolean | Null
+  
   var right: Expression
   
   var typeAnnotation: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null
@@ -31,7 +33,7 @@ object AssignmentPattern_ {
     left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression_ | TSSatisfiesExpression_ | TSTypeAssertion_ | TSNonNullExpression_,
     right: Expression
   ): AssignmentPattern_ = {
-    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeAnnotation = null)
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, optional = null, start = null, trailingComments = null, typeAnnotation = null)
     __obj.updateDynamic("type")("AssignmentPattern")
     __obj.asInstanceOf[AssignmentPattern_]
   }
@@ -48,6 +50,10 @@ object AssignmentPattern_ {
     inline def setLeft(
       value: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression_ | TSSatisfiesExpression_ | TSTypeAssertion_ | TSNonNullExpression_
     ): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    
+    inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    
+    inline def setOptionalNull: Self = StObject.set(x, "optional", null)
     
     inline def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     

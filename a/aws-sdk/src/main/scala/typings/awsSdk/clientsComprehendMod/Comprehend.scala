@@ -96,12 +96,12 @@ trait Comprehend extends Service {
   ): Request[BatchDetectTargetedSentimentResponse, AWSError] = js.native
   
   /**
-    * Creates a new document classification request to analyze a single document in real-time, using a previously created and trained custom model and an endpoint.
+    * Creates a new document classification request to analyze a single document in real-time, using a previously created and trained custom model and an endpoint. You can input plain text or you can upload a single-page input document (text, PDF, Word, or image).  If the system detects errors while processing a page in the input document, the API response includes an entry in Errors that describes the errors. If the system detects a document-level error in your input document, the API returns an InvalidRequestException error response. For details about this exception, see  Errors in semi-structured documents in the Comprehend Developer Guide. 
     */
   def classifyDocument(): Request[ClassifyDocumentResponse, AWSError] = js.native
   def classifyDocument(callback: js.Function2[/* err */ AWSError, /* data */ ClassifyDocumentResponse, Unit]): Request[ClassifyDocumentResponse, AWSError] = js.native
   /**
-    * Creates a new document classification request to analyze a single document in real-time, using a previously created and trained custom model and an endpoint.
+    * Creates a new document classification request to analyze a single document in real-time, using a previously created and trained custom model and an endpoint. You can input plain text or you can upload a single-page input document (text, PDF, Word, or image).  If the system detects errors while processing a page in the input document, the API response includes an entry in Errors that describes the errors. If the system detects a document-level error in your input document, the API returns an InvalidRequestException error response. For details about this exception, see  Errors in semi-structured documents in the Comprehend Developer Guide. 
     */
   def classifyDocument(params: ClassifyDocumentRequest): Request[ClassifyDocumentResponse, AWSError] = js.native
   def classifyDocument(
@@ -127,12 +127,26 @@ trait Comprehend extends Service {
   ): Request[ContainsPiiEntitiesResponse, AWSError] = js.native
   
   /**
-    * Creates a new document classifier that you can use to categorize documents. To create a classifier, you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. For more information, see Document Classification in the Comprehend Developer Guide. 
+    * Creates a dataset to upload training or test data for a model associated with a flywheel. For more information about datasets, see  Flywheel overview in the Amazon Comprehend Developer Guide.
+    */
+  def createDataset(): Request[CreateDatasetResponse, AWSError] = js.native
+  def createDataset(callback: js.Function2[/* err */ AWSError, /* data */ CreateDatasetResponse, Unit]): Request[CreateDatasetResponse, AWSError] = js.native
+  /**
+    * Creates a dataset to upload training or test data for a model associated with a flywheel. For more information about datasets, see  Flywheel overview in the Amazon Comprehend Developer Guide.
+    */
+  def createDataset(params: CreateDatasetRequest): Request[CreateDatasetResponse, AWSError] = js.native
+  def createDataset(
+    params: CreateDatasetRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateDatasetResponse, Unit]
+  ): Request[CreateDatasetResponse, AWSError] = js.native
+  
+  /**
+    * Creates a new document classifier that you can use to categorize documents. To create a classifier, you provide a set of training documents that are labeled with the categories that you want to use. For more information, see Training classifier models in the Comprehend Developer Guide. 
     */
   def createDocumentClassifier(): Request[CreateDocumentClassifierResponse, AWSError] = js.native
   def createDocumentClassifier(callback: js.Function2[/* err */ AWSError, /* data */ CreateDocumentClassifierResponse, Unit]): Request[CreateDocumentClassifierResponse, AWSError] = js.native
   /**
-    * Creates a new document classifier that you can use to categorize documents. To create a classifier, you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. For more information, see Document Classification in the Comprehend Developer Guide. 
+    * Creates a new document classifier that you can use to categorize documents. To create a classifier, you provide a set of training documents that are labeled with the categories that you want to use. For more information, see Training classifier models in the Comprehend Developer Guide. 
     */
   def createDocumentClassifier(params: CreateDocumentClassifierRequest): Request[CreateDocumentClassifierResponse, AWSError] = js.native
   def createDocumentClassifier(
@@ -155,18 +169,32 @@ trait Comprehend extends Service {
   ): Request[CreateEndpointResponse, AWSError] = js.native
   
   /**
-    * Creates an entity recognizer using submitted files. After your CreateEntityRecognizer request is submitted, you can check job status using the API. 
+    * Creates an entity recognizer using submitted files. After your CreateEntityRecognizer request is submitted, you can check job status using the DescribeEntityRecognizer API. 
     */
   def createEntityRecognizer(): Request[CreateEntityRecognizerResponse, AWSError] = js.native
   def createEntityRecognizer(callback: js.Function2[/* err */ AWSError, /* data */ CreateEntityRecognizerResponse, Unit]): Request[CreateEntityRecognizerResponse, AWSError] = js.native
   /**
-    * Creates an entity recognizer using submitted files. After your CreateEntityRecognizer request is submitted, you can check job status using the API. 
+    * Creates an entity recognizer using submitted files. After your CreateEntityRecognizer request is submitted, you can check job status using the DescribeEntityRecognizer API. 
     */
   def createEntityRecognizer(params: CreateEntityRecognizerRequest): Request[CreateEntityRecognizerResponse, AWSError] = js.native
   def createEntityRecognizer(
     params: CreateEntityRecognizerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateEntityRecognizerResponse, Unit]
   ): Request[CreateEntityRecognizerResponse, AWSError] = js.native
+  
+  /**
+    * A flywheel is an Amazon Web Services resource that orchestrates the ongoing training of a model for custom classification or custom entity recognition. You can create a flywheel to start with an existing trained model, or Comprehend can create and train a new model. When you create the flywheel, Comprehend creates a data lake in your account. The data lake holds the training data and test data for all versions of the model. To use a flywheel with an existing trained model, you specify the active model version. Comprehend copies the model's training data and test data into the flywheel's data lake. To use the flywheel with a new model, you need to provide a dataset for training data (and optional test data) when you create the flywheel. For more information about flywheels, see  Flywheel overview in the Amazon Comprehend Developer Guide.
+    */
+  def createFlywheel(): Request[CreateFlywheelResponse, AWSError] = js.native
+  def createFlywheel(callback: js.Function2[/* err */ AWSError, /* data */ CreateFlywheelResponse, Unit]): Request[CreateFlywheelResponse, AWSError] = js.native
+  /**
+    * A flywheel is an Amazon Web Services resource that orchestrates the ongoing training of a model for custom classification or custom entity recognition. You can create a flywheel to start with an existing trained model, or Comprehend can create and train a new model. When you create the flywheel, Comprehend creates a data lake in your account. The data lake holds the training data and test data for all versions of the model. To use a flywheel with an existing trained model, you specify the active model version. Comprehend copies the model's training data and test data into the flywheel's data lake. To use the flywheel with a new model, you need to provide a dataset for training data (and optional test data) when you create the flywheel. For more information about flywheels, see  Flywheel overview in the Amazon Comprehend Developer Guide.
+    */
+  def createFlywheel(params: CreateFlywheelRequest): Request[CreateFlywheelResponse, AWSError] = js.native
+  def createFlywheel(
+    params: CreateFlywheelRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateFlywheelResponse, Unit]
+  ): Request[CreateFlywheelResponse, AWSError] = js.native
   
   /**
     * Deletes a previously created document classifier Only those classifiers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the classifier into a DELETING state, and it is then removed by a background job. Once removed, the classifier disappears from your account and is no longer available for use. 
@@ -211,6 +239,20 @@ trait Comprehend extends Service {
   ): Request[DeleteEntityRecognizerResponse, AWSError] = js.native
   
   /**
+    * Deletes a flywheel. When you delete the flywheel, Amazon Comprehend does not delete the data lake or the model associated with the flywheel. For more information about flywheels, see  Flywheel overview in the Amazon Comprehend Developer Guide.
+    */
+  def deleteFlywheel(): Request[DeleteFlywheelResponse, AWSError] = js.native
+  def deleteFlywheel(callback: js.Function2[/* err */ AWSError, /* data */ DeleteFlywheelResponse, Unit]): Request[DeleteFlywheelResponse, AWSError] = js.native
+  /**
+    * Deletes a flywheel. When you delete the flywheel, Amazon Comprehend does not delete the data lake or the model associated with the flywheel. For more information about flywheels, see  Flywheel overview in the Amazon Comprehend Developer Guide.
+    */
+  def deleteFlywheel(params: DeleteFlywheelRequest): Request[DeleteFlywheelResponse, AWSError] = js.native
+  def deleteFlywheel(
+    params: DeleteFlywheelRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteFlywheelResponse, Unit]
+  ): Request[DeleteFlywheelResponse, AWSError] = js.native
+  
+  /**
     * Deletes a resource-based policy that is attached to a custom model.
     */
   def deleteResourcePolicy(): Request[DeleteResourcePolicyResponse, AWSError] = js.native
@@ -223,6 +265,20 @@ trait Comprehend extends Service {
     params: DeleteResourcePolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteResourcePolicyResponse, Unit]
   ): Request[DeleteResourcePolicyResponse, AWSError] = js.native
+  
+  /**
+    * Returns information about the dataset that you specify. For more information about datasets, see  Flywheel overview in the Amazon Comprehend Developer Guide.
+    */
+  def describeDataset(): Request[DescribeDatasetResponse, AWSError] = js.native
+  def describeDataset(callback: js.Function2[/* err */ AWSError, /* data */ DescribeDatasetResponse, Unit]): Request[DescribeDatasetResponse, AWSError] = js.native
+  /**
+    * Returns information about the dataset that you specify. For more information about datasets, see  Flywheel overview in the Amazon Comprehend Developer Guide.
+    */
+  def describeDataset(params: DescribeDatasetRequest): Request[DescribeDatasetResponse, AWSError] = js.native
+  def describeDataset(
+    params: DescribeDatasetRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeDatasetResponse, Unit]
+  ): Request[DescribeDatasetResponse, AWSError] = js.native
   
   /**
     * Gets the properties associated with a document classification job. Use this operation to get the status of a classification job.
@@ -325,6 +381,34 @@ trait Comprehend extends Service {
     params: DescribeEventsDetectionJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeEventsDetectionJobResponse, Unit]
   ): Request[DescribeEventsDetectionJobResponse, AWSError] = js.native
+  
+  /**
+    * Provides configuration information about the flywheel. For more information about flywheels, see  Flywheel overview in the Amazon Comprehend Developer Guide.
+    */
+  def describeFlywheel(): Request[DescribeFlywheelResponse, AWSError] = js.native
+  def describeFlywheel(callback: js.Function2[/* err */ AWSError, /* data */ DescribeFlywheelResponse, Unit]): Request[DescribeFlywheelResponse, AWSError] = js.native
+  /**
+    * Provides configuration information about the flywheel. For more information about flywheels, see  Flywheel overview in the Amazon Comprehend Developer Guide.
+    */
+  def describeFlywheel(params: DescribeFlywheelRequest): Request[DescribeFlywheelResponse, AWSError] = js.native
+  def describeFlywheel(
+    params: DescribeFlywheelRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeFlywheelResponse, Unit]
+  ): Request[DescribeFlywheelResponse, AWSError] = js.native
+  
+  /**
+    * Retrieve the configuration properties of a flywheel iteration. For more information about flywheels, see  Flywheel overview in the Amazon Comprehend Developer Guide.
+    */
+  def describeFlywheelIteration(): Request[DescribeFlywheelIterationResponse, AWSError] = js.native
+  def describeFlywheelIteration(callback: js.Function2[/* err */ AWSError, /* data */ DescribeFlywheelIterationResponse, Unit]): Request[DescribeFlywheelIterationResponse, AWSError] = js.native
+  /**
+    * Retrieve the configuration properties of a flywheel iteration. For more information about flywheels, see  Flywheel overview in the Amazon Comprehend Developer Guide.
+    */
+  def describeFlywheelIteration(params: DescribeFlywheelIterationRequest): Request[DescribeFlywheelIterationResponse, AWSError] = js.native
+  def describeFlywheelIteration(
+    params: DescribeFlywheelIterationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeFlywheelIterationResponse, Unit]
+  ): Request[DescribeFlywheelIterationResponse, AWSError] = js.native
   
   /**
     * Gets the properties associated with a key phrases detection job. Use this operation to get the status of a detection job.
@@ -431,12 +515,12 @@ trait Comprehend extends Service {
   ): Request[DetectDominantLanguageResponse, AWSError] = js.native
   
   /**
-    * Inspects text for named entities, and returns information about them. For more information, about named entities, see Entities in the Comprehend Developer Guide.
+    * Detects named entities in input text when you use the pre-trained model. Detects custom entities if you have a custom entity recognition model.   When detecting named entities using the pre-trained model, use plain text as the input. For more information about named entities, see Entities in the Comprehend Developer Guide. When you use a custom entity recognition model, you can input plain text or you can upload a single-page input document (text, PDF, Word, or image).  If the system detects errors while processing a page in the input document, the API response includes an entry in Errors for each error.  If the system detects a document-level error in your input document, the API returns an InvalidRequestException error response. For details about this exception, see  Errors in semi-structured documents in the Comprehend Developer Guide. 
     */
   def detectEntities(): Request[DetectEntitiesResponse, AWSError] = js.native
   def detectEntities(callback: js.Function2[/* err */ AWSError, /* data */ DetectEntitiesResponse, Unit]): Request[DetectEntitiesResponse, AWSError] = js.native
   /**
-    * Inspects text for named entities, and returns information about them. For more information, about named entities, see Entities in the Comprehend Developer Guide.
+    * Detects named entities in input text when you use the pre-trained model. Detects custom entities if you have a custom entity recognition model.   When detecting named entities using the pre-trained model, use plain text as the input. For more information about named entities, see Entities in the Comprehend Developer Guide. When you use a custom entity recognition model, you can input plain text or you can upload a single-page input document (text, PDF, Word, or image).  If the system detects errors while processing a page in the input document, the API response includes an entry in Errors for each error.  If the system detects a document-level error in your input document, the API returns an InvalidRequestException error response. For details about this exception, see  Errors in semi-structured documents in the Comprehend Developer Guide. 
     */
   def detectEntities(params: DetectEntitiesRequest): Request[DetectEntitiesResponse, AWSError] = js.native
   def detectEntities(
@@ -515,18 +599,32 @@ trait Comprehend extends Service {
   ): Request[DetectTargetedSentimentResponse, AWSError] = js.native
   
   /**
-    * Creates a new custom model that replicates a source custom model that you import. The source model can be in your AWS account or another one. If the source model is in another AWS account, then it must have a resource-based policy that authorizes you to import it. The source model must be in the same AWS region that you're using when you import. You can't import a model that's in a different region.
+    * Creates a new custom model that replicates a source custom model that you import. The source model can be in your Amazon Web Services account or another one. If the source model is in another Amazon Web Services account, then it must have a resource-based policy that authorizes you to import it. The source model must be in the same Amazon Web Services Region that you're using when you import. You can't import a model that's in a different Region.
     */
   def importModel(): Request[ImportModelResponse, AWSError] = js.native
   def importModel(callback: js.Function2[/* err */ AWSError, /* data */ ImportModelResponse, Unit]): Request[ImportModelResponse, AWSError] = js.native
   /**
-    * Creates a new custom model that replicates a source custom model that you import. The source model can be in your AWS account or another one. If the source model is in another AWS account, then it must have a resource-based policy that authorizes you to import it. The source model must be in the same AWS region that you're using when you import. You can't import a model that's in a different region.
+    * Creates a new custom model that replicates a source custom model that you import. The source model can be in your Amazon Web Services account or another one. If the source model is in another Amazon Web Services account, then it must have a resource-based policy that authorizes you to import it. The source model must be in the same Amazon Web Services Region that you're using when you import. You can't import a model that's in a different Region.
     */
   def importModel(params: ImportModelRequest): Request[ImportModelResponse, AWSError] = js.native
   def importModel(
     params: ImportModelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ImportModelResponse, Unit]
   ): Request[ImportModelResponse, AWSError] = js.native
+  
+  /**
+    * List the datasets that you have configured in this Region. For more information about datasets, see  Flywheel overview in the Amazon Comprehend Developer Guide.
+    */
+  def listDatasets(): Request[ListDatasetsResponse, AWSError] = js.native
+  def listDatasets(callback: js.Function2[/* err */ AWSError, /* data */ ListDatasetsResponse, Unit]): Request[ListDatasetsResponse, AWSError] = js.native
+  /**
+    * List the datasets that you have configured in this Region. For more information about datasets, see  Flywheel overview in the Amazon Comprehend Developer Guide.
+    */
+  def listDatasets(params: ListDatasetsRequest): Request[ListDatasetsResponse, AWSError] = js.native
+  def listDatasets(
+    params: ListDatasetsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListDatasetsResponse, Unit]
+  ): Request[ListDatasetsResponse, AWSError] = js.native
   
   /**
     * Gets a list of the documentation classification jobs that you have submitted.
@@ -661,6 +759,34 @@ trait Comprehend extends Service {
   ): Request[ListEventsDetectionJobsResponse, AWSError] = js.native
   
   /**
+    * Information about the history of a flywheel iteration. For more information about flywheels, see  Flywheel overview in the Amazon Comprehend Developer Guide.
+    */
+  def listFlywheelIterationHistory(): Request[ListFlywheelIterationHistoryResponse, AWSError] = js.native
+  def listFlywheelIterationHistory(callback: js.Function2[/* err */ AWSError, /* data */ ListFlywheelIterationHistoryResponse, Unit]): Request[ListFlywheelIterationHistoryResponse, AWSError] = js.native
+  /**
+    * Information about the history of a flywheel iteration. For more information about flywheels, see  Flywheel overview in the Amazon Comprehend Developer Guide.
+    */
+  def listFlywheelIterationHistory(params: ListFlywheelIterationHistoryRequest): Request[ListFlywheelIterationHistoryResponse, AWSError] = js.native
+  def listFlywheelIterationHistory(
+    params: ListFlywheelIterationHistoryRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListFlywheelIterationHistoryResponse, Unit]
+  ): Request[ListFlywheelIterationHistoryResponse, AWSError] = js.native
+  
+  /**
+    * Gets a list of the flywheels that you have created.
+    */
+  def listFlywheels(): Request[ListFlywheelsResponse, AWSError] = js.native
+  def listFlywheels(callback: js.Function2[/* err */ AWSError, /* data */ ListFlywheelsResponse, Unit]): Request[ListFlywheelsResponse, AWSError] = js.native
+  /**
+    * Gets a list of the flywheels that you have created.
+    */
+  def listFlywheels(params: ListFlywheelsRequest): Request[ListFlywheelsResponse, AWSError] = js.native
+  def listFlywheels(
+    params: ListFlywheelsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListFlywheelsResponse, Unit]
+  ): Request[ListFlywheelsResponse, AWSError] = js.native
+  
+  /**
     * Get a list of key phrase detection jobs that you have submitted.
     */
   def listKeyPhrasesDetectionJobs(): Request[ListKeyPhrasesDetectionJobsResponse, AWSError] = js.native
@@ -747,12 +873,12 @@ trait Comprehend extends Service {
   ): Request[ListTopicsDetectionJobsResponse, AWSError] = js.native
   
   /**
-    * Attaches a resource-based policy to a custom model. You can use this policy to authorize an entity in another AWS account to import the custom model, which replicates it in Amazon Comprehend in their account.
+    * Attaches a resource-based policy to a custom model. You can use this policy to authorize an entity in another Amazon Web Services account to import the custom model, which replicates it in Amazon Comprehend in their account.
     */
   def putResourcePolicy(): Request[PutResourcePolicyResponse, AWSError] = js.native
   def putResourcePolicy(callback: js.Function2[/* err */ AWSError, /* data */ PutResourcePolicyResponse, Unit]): Request[PutResourcePolicyResponse, AWSError] = js.native
   /**
-    * Attaches a resource-based policy to a custom model. You can use this policy to authorize an entity in another AWS account to import the custom model, which replicates it in Amazon Comprehend in their account.
+    * Attaches a resource-based policy to a custom model. You can use this policy to authorize an entity in another Amazon Web Services account to import the custom model, which replicates it in Amazon Comprehend in their account.
     */
   def putResourcePolicy(params: PutResourcePolicyRequest): Request[PutResourcePolicyResponse, AWSError] = js.native
   def putResourcePolicy(
@@ -761,14 +887,14 @@ trait Comprehend extends Service {
   ): Request[PutResourcePolicyResponse, AWSError] = js.native
   
   /**
-    * Starts an asynchronous document classification job. Use the operation to track the progress of the job.
+    * Starts an asynchronous document classification job. Use the DescribeDocumentClassificationJob operation to track the progress of the job.
     */
   def startDocumentClassificationJob(): Request[StartDocumentClassificationJobResponse, AWSError] = js.native
   def startDocumentClassificationJob(
     callback: js.Function2[/* err */ AWSError, /* data */ StartDocumentClassificationJobResponse, Unit]
   ): Request[StartDocumentClassificationJobResponse, AWSError] = js.native
   /**
-    * Starts an asynchronous document classification job. Use the operation to track the progress of the job.
+    * Starts an asynchronous document classification job. Use the DescribeDocumentClassificationJob operation to track the progress of the job.
     */
   def startDocumentClassificationJob(params: StartDocumentClassificationJobRequest): Request[StartDocumentClassificationJobResponse, AWSError] = js.native
   def startDocumentClassificationJob(
@@ -821,6 +947,20 @@ trait Comprehend extends Service {
   ): Request[StartEventsDetectionJobResponse, AWSError] = js.native
   
   /**
+    * Start the flywheel iteration.This operation uses any new datasets to train a new model version. For more information about flywheels, see  Flywheel overview in the Amazon Comprehend Developer Guide.
+    */
+  def startFlywheelIteration(): Request[StartFlywheelIterationResponse, AWSError] = js.native
+  def startFlywheelIteration(callback: js.Function2[/* err */ AWSError, /* data */ StartFlywheelIterationResponse, Unit]): Request[StartFlywheelIterationResponse, AWSError] = js.native
+  /**
+    * Start the flywheel iteration.This operation uses any new datasets to train a new model version. For more information about flywheels, see  Flywheel overview in the Amazon Comprehend Developer Guide.
+    */
+  def startFlywheelIteration(params: StartFlywheelIterationRequest): Request[StartFlywheelIterationResponse, AWSError] = js.native
+  def startFlywheelIteration(
+    params: StartFlywheelIterationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartFlywheelIterationResponse, Unit]
+  ): Request[StartFlywheelIterationResponse, AWSError] = js.native
+  
+  /**
     * Starts an asynchronous key phrase detection job for a collection of documents. Use the operation to track the status of a job.
     */
   def startKeyPhrasesDetectionJob(): Request[StartKeyPhrasesDetectionJobResponse, AWSError] = js.native
@@ -863,14 +1003,14 @@ trait Comprehend extends Service {
   ): Request[StartSentimentDetectionJobResponse, AWSError] = js.native
   
   /**
-    * Starts an asynchronous targeted sentiment detection job for a collection of documents. Use the operation to track the status of a job.
+    * Starts an asynchronous targeted sentiment detection job for a collection of documents. Use the DescribeTargetedSentimentDetectionJob operation to track the status of a job.
     */
   def startTargetedSentimentDetectionJob(): Request[StartTargetedSentimentDetectionJobResponse, AWSError] = js.native
   def startTargetedSentimentDetectionJob(
     callback: js.Function2[/* err */ AWSError, /* data */ StartTargetedSentimentDetectionJobResponse, Unit]
   ): Request[StartTargetedSentimentDetectionJobResponse, AWSError] = js.native
   /**
-    * Starts an asynchronous targeted sentiment detection job for a collection of documents. Use the operation to track the status of a job.
+    * Starts an asynchronous targeted sentiment detection job for a collection of documents. Use the DescribeTargetedSentimentDetectionJob operation to track the status of a job.
     */
   def startTargetedSentimentDetectionJob(params: StartTargetedSentimentDetectionJobRequest): Request[StartTargetedSentimentDetectionJobResponse, AWSError] = js.native
   def startTargetedSentimentDetectionJob(
@@ -1065,4 +1205,18 @@ trait Comprehend extends Service {
     params: UpdateEndpointRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateEndpointResponse, Unit]
   ): Request[UpdateEndpointResponse, AWSError] = js.native
+  
+  /**
+    * Update the configuration information for an existing flywheel.
+    */
+  def updateFlywheel(): Request[UpdateFlywheelResponse, AWSError] = js.native
+  def updateFlywheel(callback: js.Function2[/* err */ AWSError, /* data */ UpdateFlywheelResponse, Unit]): Request[UpdateFlywheelResponse, AWSError] = js.native
+  /**
+    * Update the configuration information for an existing flywheel.
+    */
+  def updateFlywheel(params: UpdateFlywheelRequest): Request[UpdateFlywheelResponse, AWSError] = js.native
+  def updateFlywheel(
+    params: UpdateFlywheelRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateFlywheelResponse, Unit]
+  ): Request[UpdateFlywheelResponse, AWSError] = js.native
 }

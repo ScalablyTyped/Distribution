@@ -26,6 +26,8 @@ object srcContextBuilderMod {
     
     /* private */ var optional: Any = js.native
     
+    /* private */ var requestBail: Any = js.native
+    
     def setFields(fields: js.Array[String]): this.type = js.native
     
     def setLocations(locations: js.Array[Location]): this.type = js.native
@@ -33,6 +35,8 @@ object srcContextBuilderMod {
     def setMessage(message: Any): this.type = js.native
     
     def setOptional(options: Optional): this.type = js.native
+    
+    def setRequestBail(): this.type = js.native
     
     /* private */ val stack: Any = js.native
   }

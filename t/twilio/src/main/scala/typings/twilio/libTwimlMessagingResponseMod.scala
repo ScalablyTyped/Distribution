@@ -1,5 +1,7 @@
 package typings.twilio
 
+import typings.twilio.libTwimlTwiMLMod.default
+import typings.xmlbuilder.mod.XMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,53 +13,88 @@ object libTwimlMessagingResponseMod {
   /**
     * <Response> TwiML for Messages
     */
-  open class ^ ()
-    extends StObject
-       with MessagingResponse
+  open class ^ () extends MessagingResponse
+  
+  @JSImport("twilio/lib/twiml/MessagingResponse", "Body")
+  @js.native
+  open class Body protected () extends default {
+    /**
+      * <Body> TwiML Noun
+      */
+    def this(body: XMLElement) = this()
+    
+    var body: XMLElement = js.native
+  }
+  
+  @JSImport("twilio/lib/twiml/MessagingResponse", "Media")
+  @js.native
+  open class Media protected () extends default {
+    /**
+      * <Media> TwiML Noun
+      */
+    def this(media: XMLElement) = this()
+    
+    var media: XMLElement = js.native
+  }
   
   @JSImport("twilio/lib/twiml/MessagingResponse", "Message")
   @js.native
-  open class Message () extends StObject {
+  open class Message protected () extends default {
+    /**
+      * <Message> TwiML Verb
+      */
+    def this(message: XMLElement) = this()
     
+    def body(attributes: js.Object, message: String): Body = js.native
     /**
       * <Body> TwiML Noun
       *
       * @param attributes - TwiML attributes
       * @param message - Message Body
       */
-    def body(attributes: js.Object, message: String): Unit = js.native
-    /**
-      * <Body> TwiML Noun
-      *
-      * @param message - Message Body
-      */
-    def body(message: String): Unit = js.native
+    def body(message: String): Body = js.native
     
+    def media(attributes: js.Object, url: String): Media = js.native
     /**
       * <Media> TwiML Noun
       *
       * @param attributes - TwiML attributes
       * @param url - Media URL
       */
-    def media(attributes: js.Object, url: String): Unit = js.native
-    /**
-      * <Media> TwiML Noun
-      *
-      * @param url - Media URL
-      */
-    def media(url: String): Unit = js.native
+    def media(url: String): Media = js.native
+    
+    var message: XMLElement = js.native
   }
   
+  @JSImport("twilio/lib/twiml/MessagingResponse", "Redirect")
+  @js.native
+  open class Redirect protected () extends default {
+    /**
+      * <Redirect> TwiML Verb
+      */
+    def this(redirect: XMLElement) = this()
+    
+    var redirect: XMLElement = js.native
+  }
+  
+  /**
+    * Attributes to pass to message
+    */
   trait MessageAttributes extends StObject {
     
+    /** action - Action URL */
     var action: js.UndefOr[String] = js.undefined
     
+    /** from - Phone Number to send Message from */
     var from: js.UndefOr[String] = js.undefined
     
+    /** method - Action URL Method */
     var method: js.UndefOr[String] = js.undefined
     
+    /** statusCallback - Status callback URL. Deprecated in favor of action. */
     var statusCallback: js.UndefOr[String] = js.undefined
     
+    /** to - Phone Number to send Message to */
     var to: js.UndefOr[String] = js.undefined
   }
   object MessageAttributes {
@@ -93,39 +130,54 @@ object libTwimlMessagingResponseMod {
   }
   
   @js.native
-  trait MessagingResponse extends StObject {
+  trait MessagingResponse extends default {
     
     /**
-      * <Message> TwiML Verb
+      * Comments in <Response>
       *
-      * @param attributes - TwiML attributes
-      * @param body - Message Body
+      * @param comment - XML Comment
       */
+    def comment(comment: String): XMLElement = js.native
+    
+    /**
+      * Comments after <Response>
+      *
+      * @param comment - XML Comment
+      */
+    def commentAfter(comment: String): XMLElement = js.native
+    
+    /**
+      * Comments before <Response>
+      *
+      * @param comment - XML Comment
+      */
+    def commentBefore(comment: String): XMLElement = js.native
+    
     def message(attributes: MessageAttributes, body: String): Message = js.native
     /**
       * <Message> TwiML Verb
       *
+      * @param attributes - TwiML attributes
       * @param body - Message Body
       */
     def message(body: String): Message = js.native
     
+    def redirect(attributes: RedirectAttributes, url: String): Redirect = js.native
     /**
       * <Redirect> TwiML Verb
       *
       * @param attributes - TwiML attributes
       * @param url - Redirect URL
       */
-    def redirect(attributes: RedirectAttributes, url: String): Unit = js.native
-    /**
-      * <Redirect> TwiML Verb
-      *
-      * @param url - Redirect URL
-      */
-    def redirect(url: String): Unit = js.native
+    def redirect(url: String): Redirect = js.native
   }
   
+  /**
+    * Attributes to pass to redirect
+    */
   trait RedirectAttributes extends StObject {
     
+    /** method - Redirect URL method */
     var method: js.UndefOr[String] = js.undefined
   }
   object RedirectAttributes {

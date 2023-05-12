@@ -22,7 +22,7 @@ trait PendingModifiedValues extends StObject {
   var BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * The identifier of the CA certificate for the DB instance.
+    * The identifier of the CA certificate for the DB instance. For more information, see Using SSL/TLS to encrypt a connection to a DB instance in the Amazon RDS User Guide and  Using SSL/TLS to encrypt a connection to a DB cluster in the Amazon Aurora User Guide.
     */
   var CACertificateIdentifier: js.UndefOr[String] = js.undefined
   

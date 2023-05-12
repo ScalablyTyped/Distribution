@@ -1,9 +1,6 @@
 package typings.pixiAssets
 
-import typings.pixiAssets.libLoaderParsersLoaderParserMod.LoaderParser
-import typings.pixiAssets.libResolverTypesMod.PreferOrder
 import typings.pixiAssets.libResolverTypesMod.ResolveAsset
-import typings.pixiAssets.libResolverTypesMod.ResolveURLParser
 import typings.pixiExtensions.mod.ExtensionMetadata
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -11,6 +8,38 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
+  
+  trait Data extends StObject {
+    
+    var data: js.UndefOr[Any] = js.undefined
+    
+    var name: String | js.Array[String]
+    
+    var srcs: String | ResolveAsset | (js.Array[String | ResolveAsset])
+  }
+  object Data {
+    
+    inline def apply(name: String | js.Array[String], srcs: String | ResolveAsset | (js.Array[String | ResolveAsset])): Data = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], srcs = srcs.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Data]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+      
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      
+      inline def setName(value: String | js.Array[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value*))
+      
+      inline def setSrcs(value: String | ResolveAsset | (js.Array[String | ResolveAsset])): Self = StObject.set(x, "srcs", value.asInstanceOf[js.Any])
+      
+      inline def setSrcsVarargs(value: (String | ResolveAsset)*): Self = StObject.set(x, "srcs", js.Array(value*))
+    }
+  }
   
   trait Format extends StObject {
     
@@ -41,55 +70,6 @@ object anon {
       inline def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
       
       inline def setResolutionVarargs(value: Double*): Self = StObject.set(x, "resolution", js.Array(value*))
-    }
-  }
-  
-  trait Name extends StObject {
-    
-    var name: String | js.Array[String]
-    
-    var srcs: String | js.Array[ResolveAsset]
-  }
-  object Name {
-    
-    inline def apply(name: String | js.Array[String], srcs: String | js.Array[ResolveAsset]): Name = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], srcs = srcs.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Name]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
-      
-      inline def setName(value: String | js.Array[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value*))
-      
-      inline def setSrcs(value: String | js.Array[ResolveAsset]): Self = StObject.set(x, "srcs", value.asInstanceOf[js.Any])
-      
-      inline def setSrcsVarargs(value: ResolveAsset*): Self = StObject.set(x, "srcs", js.Array(value*))
-    }
-  }
-  
-  trait Parsers extends StObject {
-    
-    /** custom parsers can be added here, for example something that could load a sound or a 3D model */
-    var parsers: js.UndefOr[js.Array[LoaderParser[Any, Any]]] = js.undefined
-  }
-  object Parsers {
-    
-    inline def apply(): Parsers = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Parsers]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Parsers] (val x: Self) extends AnyVal {
-      
-      inline def setParsers(value: js.Array[LoaderParser[Any, Any]]): Self = StObject.set(x, "parsers", value.asInstanceOf[js.Any])
-      
-      inline def setParsersUndefined: Self = StObject.set(x, "parsers", js.undefined)
-      
-      inline def setParsersVarargs(value: (LoaderParser[Any, Any])*): Self = StObject.set(x, "parsers", js.Array(value*))
     }
   }
   
@@ -168,46 +148,6 @@ object anon {
       inline def setTest(value: /* url */ String => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
       
       inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
-    }
-  }
-  
-  trait PreferOrders extends StObject {
-    
-    /**
-      * a list of preferOrders that let the resolver know which asset to pick.
-      * already built-in we have a texture preferOrders that let the resolve know which asset to prefer
-      * if it has multiple assets to pick from (resolution/formats etc)
-      */
-    var preferOrders: js.UndefOr[js.Array[PreferOrder]] = js.undefined
-    
-    /**
-      * a list of urlParsers, these can read the URL and pick put the various options.
-      * for example there is a texture URL parser that picks our resolution and file format.
-      * You can add custom ways to read URLs and extract information here.
-      */
-    var urlParsers: js.UndefOr[js.Array[ResolveURLParser]] = js.undefined
-  }
-  object PreferOrders {
-    
-    inline def apply(): PreferOrders = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PreferOrders]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: PreferOrders] (val x: Self) extends AnyVal {
-      
-      inline def setPreferOrders(value: js.Array[PreferOrder]): Self = StObject.set(x, "preferOrders", value.asInstanceOf[js.Any])
-      
-      inline def setPreferOrdersUndefined: Self = StObject.set(x, "preferOrders", js.undefined)
-      
-      inline def setPreferOrdersVarargs(value: PreferOrder*): Self = StObject.set(x, "preferOrders", js.Array(value*))
-      
-      inline def setUrlParsers(value: js.Array[ResolveURLParser]): Self = StObject.set(x, "urlParsers", value.asInstanceOf[js.Any])
-      
-      inline def setUrlParsersUndefined: Self = StObject.set(x, "urlParsers", js.undefined)
-      
-      inline def setUrlParsersVarargs(value: ResolveURLParser*): Self = StObject.set(x, "urlParsers", js.Array(value*))
     }
   }
 }

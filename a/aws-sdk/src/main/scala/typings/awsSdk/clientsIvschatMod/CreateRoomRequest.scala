@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateRoomRequest extends StObject {
   
   /**
+    * Array of logging-configuration identifiers attached to the room.
+    */
+  var loggingConfigurationIdentifiers: js.UndefOr[LoggingConfigurationIdentifierList] = js.undefined
+  
+  /**
     * Maximum number of characters in a single message. Messages are expected to be UTF-8 encoded and this limit applies specifically to rune/code-point count, not number of bytes. Default: 500.
     */
   var maximumMessageLength: js.UndefOr[RoomMaxMessageLength] = js.undefined
@@ -40,6 +45,12 @@ object CreateRoomRequest {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: CreateRoomRequest] (val x: Self) extends AnyVal {
+    
+    inline def setLoggingConfigurationIdentifiers(value: LoggingConfigurationIdentifierList): Self = StObject.set(x, "loggingConfigurationIdentifiers", value.asInstanceOf[js.Any])
+    
+    inline def setLoggingConfigurationIdentifiersUndefined: Self = StObject.set(x, "loggingConfigurationIdentifiers", js.undefined)
+    
+    inline def setLoggingConfigurationIdentifiersVarargs(value: LoggingConfigurationIdentifier*): Self = StObject.set(x, "loggingConfigurationIdentifiers", js.Array(value*))
     
     inline def setMaximumMessageLength(value: RoomMaxMessageLength): Self = StObject.set(x, "maximumMessageLength", value.asInstanceOf[js.Any])
     

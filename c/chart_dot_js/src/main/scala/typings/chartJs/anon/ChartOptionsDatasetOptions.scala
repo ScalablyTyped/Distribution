@@ -1,9 +1,9 @@
 package typings.chartJs.anon
 
 import typings.chartJs.chartJsStrings.radialLinear
-import typings.chartJs.mod.PolarAreaControllerChartOptions
-import typings.chartJs.mod.PolarAreaControllerDatasetOptions
-import typings.chartJs.mod.RadialParsedData
+import typings.chartJs.distTypesIndexMod.PolarAreaControllerChartOptions
+import typings.chartJs.distTypesIndexMod.PolarAreaControllerDatasetOptions
+import typings.chartJs.distTypesIndexMod.RadialParsedData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

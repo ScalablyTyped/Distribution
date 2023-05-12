@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-  * Settings which control the behavior of the Maps JavaScript API as a whole.
-  */
 @JSGlobal("google.maps.Settings")
 @js.native
 open class Settings ()
@@ -29,6 +25,7 @@ open class Settings ()
   /* CompleteClass */
   var experienceIds: js.Iterable[String] = js.native
 }
+/* static members */
 object Settings {
   
   @JSGlobal("google.maps.Settings")
@@ -39,6 +36,5 @@ object Settings {
     * Available only in the v=beta channel: https://goo.gle/3oAthT3.
     * Returns the singleton instance of <code>google.maps.Settings</code>.
     */
-  /* static member */
   inline def getInstance(): typings.googleMaps.google.maps.Settings = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[typings.googleMaps.google.maps.Settings]
 }

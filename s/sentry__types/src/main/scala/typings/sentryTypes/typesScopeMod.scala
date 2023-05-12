@@ -72,6 +72,11 @@ object typesScopeMod {
     def getAttachments(): js.Array[Attachment] = js.native
     
     /**
+      * Get the last breadcrumb.
+      */
+    def getLastBreadcrumb(): js.UndefOr[Breadcrumb] = js.native
+    
+    /**
       * Returns the `RequestSession` if there is one
       */
     def getRequestSession(): js.UndefOr[RequestSession] = js.native

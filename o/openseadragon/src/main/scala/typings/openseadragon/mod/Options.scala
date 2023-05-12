@@ -137,7 +137,7 @@ trait Options extends StObject {
   
   var minZoomLevel: js.UndefOr[Double] = js.undefined
   
-  var mouseNavEnabled: js.UndefOr[Double] = js.undefined
+  var mouseNavEnabled: js.UndefOr[Boolean] = js.undefined
   
   var navImages: js.UndefOr[NavImages] = js.undefined
   
@@ -485,7 +485,7 @@ object Options {
     
     inline def setMinZoomLevelUndefined: Self = StObject.set(x, "minZoomLevel", js.undefined)
     
-    inline def setMouseNavEnabled(value: Double): Self = StObject.set(x, "mouseNavEnabled", value.asInstanceOf[js.Any])
+    inline def setMouseNavEnabled(value: Boolean): Self = StObject.set(x, "mouseNavEnabled", value.asInstanceOf[js.Any])
     
     inline def setMouseNavEnabledUndefined: Self = StObject.set(x, "mouseNavEnabled", js.undefined)
     

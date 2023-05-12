@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MozAppearance
+import typings.csstype.mod.Property.AnimationTimeline
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `225` extends StObject {
   
   var value: js.UndefOr[
-    MozAppearance | (js.Array[
+    AnimationTimeline | (js.Array[
       (Extract[
-        js.UndefOr[MozAppearance | js.Array[NonNullable[js.UndefOr[MozAppearance]]]], 
+        js.UndefOr[AnimationTimeline | js.Array[NonNullable[js.UndefOr[AnimationTimeline]]]], 
         String
-      ]) | NonNullable[js.UndefOr[MozAppearance]]
+      ]) | NonNullable[js.UndefOr[AnimationTimeline]]
     ])
   ] = js.native
 }

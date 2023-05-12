@@ -388,15 +388,15 @@ object sapUiUnifiedCalendarMonthMod {
     ): this.type = js.native
     
     /**
-      * checks if a date is focusable in the current rendered output. So if not rendered or in other month it
+      * Checks if a date is focusable in the current rendered output. So if not rendered or in other month it
       * is not focusable.
       *
       * @returns flag if focusable
       */
     def checkDateFocusable(/**
-      * JavaScript date object for focused date.
+      * JavaScript date object for focused date
       */
-    oDate: js.Object): Boolean = js.native
+    oDate: js.Date): Boolean = js.native
     
     /**
       * @SINCE 1.38.0
@@ -497,16 +497,18 @@ object sapUiUnifiedCalendarMonthMod {
     ): this.type = js.native
     
     /**
-      * displays the month of a given date without setting the focus
+      * Displays the month of a given date without setting the focus.
       *
-      * @returns `this` to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def displayDate(/**
-      * JavaScript date object for focused date.
+      * JavaScript date object for focused date
       */
-    oDate: js.Object): this.type = js.native
+    oDate: js.Date): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:focus focus} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -518,6 +520,8 @@ object sapUiUnifiedCalendarMonthMod {
     mParameters: Date): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:select select} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -530,6 +534,7 @@ object sapUiUnifiedCalendarMonthMod {
     
     /**
       * @SINCE 1.60
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:weekNumberSelect weekNumberSelect} to attached listeners.
       *
@@ -959,19 +964,14 @@ object sapUiUnifiedCalendarMonthMod {
     ): this.type = js.native
     
     /**
-      * Sets a new value for property {@link #getDate date}.
+      * Sets a date for the month.
       *
-      * A date as JavaScript Date object. The month including this date is rendered and this date is focused
-      * initially (if no other focus is set).
-      *
-      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
-      *
-      * @returns Reference to `this` in order to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def setDate(/**
-      * New value for property `date`
+      * a JavaScript date
       */
-    oDate: js.Object): this.type = js.native
+    oDate: js.Date): this.type = js.native
     
     /**
       * @SINCE 1.28.9

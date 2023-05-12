@@ -1,70 +1,31 @@
 package typings.sentryTypes
 
+import typings.sentryTypes.sentryTypesStrings.sourcemap
+import typings.sentryTypes.sentryTypesStrings.wasm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDebugMetaMod {
   
-  trait DebugImage extends StObject {
-    
-    var code_file: String
-    
-    var code_id: js.UndefOr[String | Null] = js.undefined
-    
-    var debug_file: js.UndefOr[String | Null] = js.undefined
-    
-    var debug_id: String
-    
-    var `type`: DebugImageType
-  }
+  /* Rewritten from type alias, can be one of: 
+    - typings.sentryTypes.typesDebugMetaMod.WasmDebugImage
+    - typings.sentryTypes.typesDebugMetaMod.SourceMapDebugImage
+  */
+  trait DebugImage extends StObject
   object DebugImage {
     
-    inline def apply(code_file: String, debug_id: String, `type`: DebugImageType): DebugImage = {
+    inline def SourceMapDebugImage(code_file: String, debug_id: String): typings.sentryTypes.typesDebugMetaMod.SourceMapDebugImage = {
       val __obj = js.Dynamic.literal(code_file = code_file.asInstanceOf[js.Any], debug_id = debug_id.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DebugImage]
+      __obj.updateDynamic("type")("sourcemap")
+      __obj.asInstanceOf[typings.sentryTypes.typesDebugMetaMod.SourceMapDebugImage]
     }
     
-    @scala.inline
-    implicit open class MutableBuilder[Self <: DebugImage] (val x: Self) extends AnyVal {
-      
-      inline def setCode_file(value: String): Self = StObject.set(x, "code_file", value.asInstanceOf[js.Any])
-      
-      inline def setCode_id(value: String): Self = StObject.set(x, "code_id", value.asInstanceOf[js.Any])
-      
-      inline def setCode_idNull: Self = StObject.set(x, "code_id", null)
-      
-      inline def setCode_idUndefined: Self = StObject.set(x, "code_id", js.undefined)
-      
-      inline def setDebug_file(value: String): Self = StObject.set(x, "debug_file", value.asInstanceOf[js.Any])
-      
-      inline def setDebug_fileNull: Self = StObject.set(x, "debug_file", null)
-      
-      inline def setDebug_fileUndefined: Self = StObject.set(x, "debug_file", js.undefined)
-      
-      inline def setDebug_id(value: String): Self = StObject.set(x, "debug_id", value.asInstanceOf[js.Any])
-      
-      inline def setType(value: DebugImageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def WasmDebugImage(code_file: String, debug_id: String): typings.sentryTypes.typesDebugMetaMod.WasmDebugImage = {
+      val __obj = js.Dynamic.literal(code_file = code_file.asInstanceOf[js.Any], debug_id = debug_id.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("wasm")
+      __obj.asInstanceOf[typings.sentryTypes.typesDebugMetaMod.WasmDebugImage]
     }
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.sentryTypes.sentryTypesStrings.wasm
-    - typings.sentryTypes.sentryTypesStrings.macho
-    - typings.sentryTypes.sentryTypesStrings.elf
-    - typings.sentryTypes.sentryTypesStrings.pe
-  */
-  trait DebugImageType extends StObject
-  object DebugImageType {
-    
-    inline def elf: typings.sentryTypes.sentryTypesStrings.elf = "elf".asInstanceOf[typings.sentryTypes.sentryTypesStrings.elf]
-    
-    inline def macho: typings.sentryTypes.sentryTypesStrings.macho = "macho".asInstanceOf[typings.sentryTypes.sentryTypesStrings.macho]
-    
-    inline def pe: typings.sentryTypes.sentryTypesStrings.pe = "pe".asInstanceOf[typings.sentryTypes.sentryTypesStrings.pe]
-    
-    inline def wasm: typings.sentryTypes.sentryTypesStrings.wasm = "wasm".asInstanceOf[typings.sentryTypes.sentryTypesStrings.wasm]
   }
   
   trait DebugMeta extends StObject {
@@ -86,6 +47,80 @@ object typesDebugMetaMod {
       inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
       
       inline def setImagesVarargs(value: DebugImage*): Self = StObject.set(x, "images", js.Array(value*))
+    }
+  }
+  
+  trait SourceMapDebugImage
+    extends StObject
+       with DebugImage {
+    
+    var code_file: String
+    
+    var debug_id: String
+    
+    var `type`: sourcemap
+  }
+  object SourceMapDebugImage {
+    
+    inline def apply(code_file: String, debug_id: String): SourceMapDebugImage = {
+      val __obj = js.Dynamic.literal(code_file = code_file.asInstanceOf[js.Any], debug_id = debug_id.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("sourcemap")
+      __obj.asInstanceOf[SourceMapDebugImage]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceMapDebugImage] (val x: Self) extends AnyVal {
+      
+      inline def setCode_file(value: String): Self = StObject.set(x, "code_file", value.asInstanceOf[js.Any])
+      
+      inline def setDebug_id(value: String): Self = StObject.set(x, "debug_id", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: sourcemap): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait WasmDebugImage
+    extends StObject
+       with DebugImage {
+    
+    var code_file: String
+    
+    var code_id: js.UndefOr[String | Null] = js.undefined
+    
+    var debug_file: js.UndefOr[String | Null] = js.undefined
+    
+    var debug_id: String
+    
+    var `type`: wasm
+  }
+  object WasmDebugImage {
+    
+    inline def apply(code_file: String, debug_id: String): WasmDebugImage = {
+      val __obj = js.Dynamic.literal(code_file = code_file.asInstanceOf[js.Any], debug_id = debug_id.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("wasm")
+      __obj.asInstanceOf[WasmDebugImage]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WasmDebugImage] (val x: Self) extends AnyVal {
+      
+      inline def setCode_file(value: String): Self = StObject.set(x, "code_file", value.asInstanceOf[js.Any])
+      
+      inline def setCode_id(value: String): Self = StObject.set(x, "code_id", value.asInstanceOf[js.Any])
+      
+      inline def setCode_idNull: Self = StObject.set(x, "code_id", null)
+      
+      inline def setCode_idUndefined: Self = StObject.set(x, "code_id", js.undefined)
+      
+      inline def setDebug_file(value: String): Self = StObject.set(x, "debug_file", value.asInstanceOf[js.Any])
+      
+      inline def setDebug_fileNull: Self = StObject.set(x, "debug_file", null)
+      
+      inline def setDebug_fileUndefined: Self = StObject.set(x, "debug_file", js.undefined)
+      
+      inline def setDebug_id(value: String): Self = StObject.set(x, "debug_id", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: wasm): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

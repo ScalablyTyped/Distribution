@@ -47,6 +47,11 @@ trait VulnerablePackage extends StObject {
   var remediation: js.UndefOr[VulnerablePackageRemediation] = js.undefined
   
   /**
+    * The Amazon Resource Number (ARN) of the AWS Lambda function affected by a finding.
+    */
+  var sourceLambdaLayerArn: js.UndefOr[LambdaLayerArn] = js.undefined
+  
+  /**
     * The source layer hash of the vulnerable package.
     */
   var sourceLayerHash: js.UndefOr[SourceLayerHash] = js.undefined
@@ -95,6 +100,10 @@ object VulnerablePackage {
     inline def setRemediation(value: VulnerablePackageRemediation): Self = StObject.set(x, "remediation", value.asInstanceOf[js.Any])
     
     inline def setRemediationUndefined: Self = StObject.set(x, "remediation", js.undefined)
+    
+    inline def setSourceLambdaLayerArn(value: LambdaLayerArn): Self = StObject.set(x, "sourceLambdaLayerArn", value.asInstanceOf[js.Any])
+    
+    inline def setSourceLambdaLayerArnUndefined: Self = StObject.set(x, "sourceLambdaLayerArn", js.undefined)
     
     inline def setSourceLayerHash(value: SourceLayerHash): Self = StObject.set(x, "sourceLayerHash", value.asInstanceOf[js.Any])
     

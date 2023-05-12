@@ -17,6 +17,11 @@ trait dxSelectBoxOptions[TComponent]
      with dxDropDownListOptions[TComponent] {
   
   /**
+    * 
+    */
+  var customItemCreateEvent: js.UndefOr[String] = js.undefined
+  
+  /**
     * Configures the drop-down field which holds the content.
     */
   @JSName("dropDownOptions")
@@ -45,6 +50,7 @@ trait dxSelectBoxOptions[TComponent]
   
   /**
     * Specifies the DOM events after which the UI component&apos;s value should be updated. Applies only if acceptCustomValue is set to true.
+    * @deprecated 
     */
   @JSName("valueChangeEvent")
   var valueChangeEvent_dxSelectBoxOptions: js.UndefOr[String] = js.undefined
@@ -58,6 +64,10 @@ object dxSelectBoxOptions {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: dxSelectBoxOptions[?], TComponent] (val x: Self & dxSelectBoxOptions[TComponent]) extends AnyVal {
+    
+    inline def setCustomItemCreateEvent(value: String): Self = StObject.set(x, "customItemCreateEvent", value.asInstanceOf[js.Any])
+    
+    inline def setCustomItemCreateEventUndefined: Self = StObject.set(x, "customItemCreateEvent", js.undefined)
     
     inline def setDropDownOptions(value: Properties): Self = StObject.set(x, "dropDownOptions", value.asInstanceOf[js.Any])
     

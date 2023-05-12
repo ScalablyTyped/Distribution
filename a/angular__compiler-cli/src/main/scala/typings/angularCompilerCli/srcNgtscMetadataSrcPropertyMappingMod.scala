@@ -11,7 +11,7 @@ object srcNgtscMetadataSrcPropertyMappingMod {
   
   @JSImport("@angular/compiler-cli/src/ngtsc/metadata/src/property_mapping", "ClassPropertyMapping")
   @js.native
-  /* private */ open class ClassPropertyMapping ()
+  /* private */ open class ClassPropertyMapping[T /* <: InputOrOutput */] ()
     extends StObject
        with InputOutputPropertySet {
     
@@ -28,12 +28,12 @@ object srcNgtscMetadataSrcPropertyMappingMod {
     /**
       * Lookup all `InputOrOutput`s that use this `propertyName`.
       */
-    def getByBindingPropertyName(propertyName: String): js.Array[InputOrOutput] | Null = js.native
+    def getByBindingPropertyName(propertyName: String): js.Array[T] | Null = js.native
     
     /**
       * Lookup the `InputOrOutput` associated with a `classPropertyName`.
       */
-    def getByClassPropertyName(classPropertyName: String): InputOrOutput | Null = js.native
+    def getByClassPropertyName(classPropertyName: String): T | Null = js.native
     
     /* CompleteClass */
     override def hasBindingPropertyName(propertyName: String): Boolean = js.native
@@ -43,7 +43,7 @@ object srcNgtscMetadataSrcPropertyMappingMod {
       * property names (and are useful for destructuring).
       */
     @JSName(js.Symbol.iterator)
-    var iterator: js.Function0[IterableIterator[js.Tuple2[ClassPropertyName, BindingPropertyName]]] = js.native
+    var iterator: js.Function0[IterableIterator[T]] = js.native
     
     /**
       * All binding property names mapped in this mapping.
@@ -68,7 +68,7 @@ object srcNgtscMetadataSrcPropertyMappingMod {
       *
       * This object format is used when mappings are serialized (for example into .d.ts files).
       */
-    def toJointMappedObject(): StringDictionary[BindingPropertyName | (js.Tuple2[BindingPropertyName, ClassPropertyName])] = js.native
+    def toJointMappedObject(): StringDictionary[T] = js.native
   }
   /* static members */
   object ClassPropertyMapping {
@@ -80,20 +80,22 @@ object srcNgtscMetadataSrcPropertyMappingMod {
     /**
       * Construct a `ClassPropertyMapping` with no entries.
       */
-    inline def empty(): ClassPropertyMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[ClassPropertyMapping]
+    inline def empty[T /* <: InputOrOutput */](): ClassPropertyMapping[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[ClassPropertyMapping[T]]
     
     /**
       * Construct a `ClassPropertyMapping` from a primitive JS object which maps class property names
       * to either binding property names or an array that contains both names, which is used in on-disk
       * metadata formats (e.g. in .d.ts files).
       */
-    inline def fromMappedObject(obj: StringDictionary[BindingPropertyName | (js.Tuple2[ClassPropertyName, BindingPropertyName])]): ClassPropertyMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMappedObject")(obj.asInstanceOf[js.Any]).asInstanceOf[ClassPropertyMapping]
+    inline def fromMappedObject[T /* <: InputOrOutput */](
+      obj: StringDictionary[BindingPropertyName | (js.Tuple2[ClassPropertyName, BindingPropertyName]) | T]
+    ): ClassPropertyMapping[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMappedObject")(obj.asInstanceOf[js.Any]).asInstanceOf[ClassPropertyMapping[T]]
     
     /**
       * Merge two mappings into one, with class properties from `b` taking precedence over class
       * properties from `a`.
       */
-    inline def merge(a: ClassPropertyMapping, b: ClassPropertyMapping): ClassPropertyMapping = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[ClassPropertyMapping]
+    inline def merge[T /* <: InputOrOutput */](a: ClassPropertyMapping[T], b: ClassPropertyMapping[T]): ClassPropertyMapping[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[ClassPropertyMapping[T]]
   }
   
   type BindingPropertyName = String

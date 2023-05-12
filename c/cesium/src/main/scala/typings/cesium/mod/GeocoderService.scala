@@ -10,19 +10,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class GeocoderService () extends StObject {
   
   /**
+    * Gets the credit to display after a geocode is performed. Typically this is used to credit
+    * the geocoder service.
+    */
+  val credit: js.UndefOr[Credit] = js.native
+  
+  /**
     * @param query - The query to be sent to the geocoder service
     * @param [type = GeocodeType.SEARCH] - The type of geocode to perform.
     */
   def geocode(query: String): js.Promise[js.Array[Result]] = js.native
   def geocode(query: String, `type`: GeocodeType): js.Promise[js.Array[Result]] = js.native
 }
+/* static members */
 object GeocoderService {
+  
+  @JSImport("cesium", "GeocoderService")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Parses credits from the geocoder result attributions, if present.
+    * @param geocoderResult - The geocoder result
+    * @returns A list of credits if present in the result, otherwise undefined
+    */
+  inline def getCreditsFromResult(geocoderResult: Result): js.UndefOr[js.Array[Credit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCreditsFromResult")(geocoderResult.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[Credit]]]
   
   /**
     * @property displayName - The display name for a location
     * @property destination - The bounding box for a location
     */
   trait Result extends StObject {
+    
+    var attributions: js.UndefOr[js.Array[js.Object]] = js.undefined
     
     var destination: Rectangle | Cartesian3
     
@@ -37,6 +57,12 @@ object GeocoderService {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+      
+      inline def setAttributions(value: js.Array[js.Object]): Self = StObject.set(x, "attributions", value.asInstanceOf[js.Any])
+      
+      inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
+      
+      inline def setAttributionsVarargs(value: js.Object*): Self = StObject.set(x, "attributions", js.Array(value*))
       
       inline def setDestination(value: Rectangle | Cartesian3): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       

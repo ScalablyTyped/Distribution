@@ -12,7 +12,7 @@ trait DescribeScheduledInstancesRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The filters.    availability-zone - The Availability Zone (for example, us-west-2a).    instance-type - The instance type (for example, c4.large).    network-platform - The network platform (EC2-Classic or EC2-VPC).    platform - The platform (Linux/UNIX or Windows).  
+    * The filters.    availability-zone - The Availability Zone (for example, us-west-2a).    instance-type - The instance type (for example, c4.large).    platform - The platform (Linux/UNIX or Windows).  
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   

@@ -20,9 +20,9 @@ object geomFlatTextpathMod {
     startM: Double,
     maxAngle: Double,
     scale: Double,
-    measureAndCacheTextWidth: js.Function3[/* p0 */ String, /* p1 */ String, /* p2 */ StringDictionary[Double], Double],
+    measureAndCacheTextWidth: js.Function3[/* arg0 */ String, /* arg1 */ String, /* arg2 */ StringDictionary[Double], Double],
     font: String,
     cache: StringDictionary[Double],
     rotation: Double
-  ): js.Array[js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTextOnPath")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], text.asInstanceOf[js.Any], startM.asInstanceOf[js.Any], maxAngle.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], measureAndCacheTextWidth.asInstanceOf[js.Any], font.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Any]]]
+  ): js.Array[js.Array[Any]] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTextOnPath")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], text.asInstanceOf[js.Any], startM.asInstanceOf[js.Any], maxAngle.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], measureAndCacheTextWidth.asInstanceOf[js.Any], font.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Any]] | Null]
 }

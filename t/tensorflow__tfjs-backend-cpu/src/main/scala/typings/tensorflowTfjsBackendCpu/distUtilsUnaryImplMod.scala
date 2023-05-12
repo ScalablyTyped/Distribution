@@ -12,5 +12,5 @@ object distUtilsUnaryImplMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createSimpleUnaryImpl(op: SimpleUnaryOperation): SimpleUnaryImpl = ^.asInstanceOf[js.Dynamic].applyDynamic("createSimpleUnaryImpl")(op.asInstanceOf[js.Any]).asInstanceOf[SimpleUnaryImpl]
+  inline def createSimpleUnaryImpl[I /* <: Double | String */, O /* <: Double | String */](op: SimpleUnaryOperation[I, O]): SimpleUnaryImpl[I, O] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSimpleUnaryImpl")(op.asInstanceOf[js.Any]).asInstanceOf[SimpleUnaryImpl[I, O]]
 }

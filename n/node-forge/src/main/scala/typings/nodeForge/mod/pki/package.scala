@@ -99,6 +99,21 @@ inline def publicKeyToRSAPublicKey(publicKey: PublicKey): Any = ^.asInstanceOf[j
 inline def publicKeyToRSAPublicKeyPem(key: PublicKey): PEM = ^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyToRSAPublicKeyPem")(key.asInstanceOf[js.Any]).asInstanceOf[PEM]
 inline def publicKeyToRSAPublicKeyPem(key: PublicKey, maxline: Double): PEM = (^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyToRSAPublicKeyPem")(key.asInstanceOf[js.Any], maxline.asInstanceOf[js.Any])).asInstanceOf[PEM]
 
+/* was `typeof pki.rsa.setPrivateKey` */
+inline def setRsaPrivateKey(
+  n: BigInteger,
+  e: BigInteger,
+  d: BigInteger,
+  p: BigInteger,
+  q: BigInteger,
+  dP: BigInteger,
+  dQ: BigInteger,
+  qInv: BigInteger
+): typings.nodeForge.mod.pki.rsa.PrivateKey = (^.asInstanceOf[js.Dynamic].applyDynamic("setRsaPrivateKey")(n.asInstanceOf[js.Any], e.asInstanceOf[js.Any], d.asInstanceOf[js.Any], p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], dP.asInstanceOf[js.Any], dQ.asInstanceOf[js.Any], qInv.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.PrivateKey]
+
+/* was `typeof pki.rsa.setPublicKey` */
+inline def setRsaPublicKey(n: BigInteger, e: BigInteger): typings.nodeForge.mod.pki.rsa.PublicKey = (^.asInstanceOf[js.Dynamic].applyDynamic("setRsaPublicKey")(n.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.PublicKey]
+
 inline def verifyCertificateChain(caStore: CAStore, chain: js.Array[Certificate]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyCertificateChain")(caStore.asInstanceOf[js.Any], chain.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 inline def verifyCertificateChain(
   caStore: CAStore,
@@ -119,5 +134,3 @@ type PEM = String
 type PrivateKey = typings.nodeForge.mod.pki.rsa.PrivateKey | Key
 
 type PublicKey = typings.nodeForge.mod.pki.rsa.PublicKey | Key
-
-type setRsaPublicKey = js.Function2[/* n */ BigInteger, /* e */ BigInteger, typings.nodeForge.mod.pki.rsa.PublicKey]

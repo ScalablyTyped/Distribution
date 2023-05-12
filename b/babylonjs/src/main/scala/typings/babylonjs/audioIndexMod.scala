@@ -175,7 +175,7 @@ object audioIndexMod {
   @js.native
   /**
     * Creates a new sound track.
-    * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music#using-sound-tracks
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/audio/playingSoundsMusic#using-sound-tracks
     * @param scene Define the scene the sound track belongs to
     * @param options
     */
@@ -241,15 +241,21 @@ object audioIndexMod {
       
       /**
         * Gets or sets if audio support is enabled
-        * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/audio/playingSoundsMusic
         */
       var audioEnabled: Boolean
       
       /**
         * Gets or sets custom audio listener position provider
-        * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/audio/playingSoundsMusic
         */
       var audioListenerPositionProvider: Nullable[js.Function0[Vector3]]
+      
+      /**
+        * Gets or sets custom audio listener rotation provider
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/audio/playingSoundsMusic
+        */
+      var audioListenerRotationProvider: Nullable[js.Function0[Vector3]]
       
       /**
         * Gets or sets a refresh rate when using 3D audio positioning
@@ -265,7 +271,7 @@ object audioIndexMod {
       
       /**
         * Gets or sets if audio will be output to headphones
-        * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/audio/playingSoundsMusic
         */
       var headphone: Boolean
       
@@ -277,7 +283,7 @@ object audioIndexMod {
       
       /**
         * The list of sound tracks added to the scene
-        * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/audio/playingSoundsMusic
         */
       var soundTracks: Nullable[js.Array[typings.babylonjs.audioSoundTrackMod.SoundTrack]]
     }
@@ -291,7 +297,7 @@ object audioIndexMod {
         headphone: Boolean,
         mainSoundTrack: typings.babylonjs.audioSoundTrackMod.SoundTrack
       ): typings.babylonjs.audioIndexMod.babylonjsSceneAugmentingMod.Scene = {
-        val __obj = js.Dynamic.literal(_mainSoundTrack = _mainSoundTrack.asInstanceOf[js.Any], audioEnabled = audioEnabled.asInstanceOf[js.Any], audioPositioningRefreshRate = audioPositioningRefreshRate.asInstanceOf[js.Any], getSoundByName = js.Any.fromFunction1(getSoundByName), headphone = headphone.asInstanceOf[js.Any], mainSoundTrack = mainSoundTrack.asInstanceOf[js.Any], audioListenerPositionProvider = null, soundTracks = null)
+        val __obj = js.Dynamic.literal(_mainSoundTrack = _mainSoundTrack.asInstanceOf[js.Any], audioEnabled = audioEnabled.asInstanceOf[js.Any], audioPositioningRefreshRate = audioPositioningRefreshRate.asInstanceOf[js.Any], getSoundByName = js.Any.fromFunction1(getSoundByName), headphone = headphone.asInstanceOf[js.Any], mainSoundTrack = mainSoundTrack.asInstanceOf[js.Any], audioListenerPositionProvider = null, audioListenerRotationProvider = null, soundTracks = null)
         __obj.asInstanceOf[typings.babylonjs.audioIndexMod.babylonjsSceneAugmentingMod.Scene]
       }
       
@@ -303,6 +309,10 @@ object audioIndexMod {
         inline def setAudioListenerPositionProvider(value: () => Vector3): Self = StObject.set(x, "audioListenerPositionProvider", js.Any.fromFunction0(value))
         
         inline def setAudioListenerPositionProviderNull: Self = StObject.set(x, "audioListenerPositionProvider", null)
+        
+        inline def setAudioListenerRotationProvider(value: () => Vector3): Self = StObject.set(x, "audioListenerRotationProvider", js.Any.fromFunction0(value))
+        
+        inline def setAudioListenerRotationProviderNull: Self = StObject.set(x, "audioListenerRotationProvider", null)
         
         inline def setAudioPositioningRefreshRate(value: Double): Self = StObject.set(x, "audioPositioningRefreshRate", value.asInstanceOf[js.Any])
         

@@ -1,7 +1,7 @@
 
 # Scala.js typings for staticmaps
 
-Typings are for version 1.10
+Typings are for version 1.12
 
 ## Library description:
 A Node.js library for creating map images with markers, polylines, polygons and text.

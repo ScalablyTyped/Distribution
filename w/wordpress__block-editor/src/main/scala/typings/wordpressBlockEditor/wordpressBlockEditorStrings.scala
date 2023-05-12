@@ -12,6 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object wordpressBlockEditorStrings {
   
   @js.native
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @js.native
   sealed trait a extends StObject
   inline def a: a = "a".asInstanceOf[a]
   
@@ -48,6 +52,10 @@ object wordpressBlockEditorStrings {
   @js.native
   sealed trait alt extends StObject
   inline def alt: alt = "alt".asInstanceOf[alt]
+  
+  @js.native
+  sealed trait anonymous extends StObject
+  inline def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
   
   @js.native
   sealed trait area extends StObject
@@ -721,8 +729,16 @@ object wordpressBlockEditorStrings {
   inline def ul: ul = "ul".asInstanceOf[ul]
   
   @js.native
+  sealed trait undefined extends StObject
+  inline def undefined: undefined = "undefined".asInstanceOf[undefined]
+  
+  @js.native
   sealed trait url extends StObject
   inline def url: url = "url".asInstanceOf[url]
+  
+  @js.native
+  sealed trait `use-credentials` extends StObject
+  inline def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
   
   @js.native
   sealed trait user extends StObject

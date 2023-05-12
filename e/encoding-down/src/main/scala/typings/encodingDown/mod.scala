@@ -34,7 +34,7 @@ object mod {
     open class ^[K, V] protected ()
       extends StObject
          with EncodingDown[K, V] {
-      // tslint:disable-next-line:no-unnecessary-generics
+      // eslint-disable-next-line no-unnecessary-generics
       def this(db: AbstractLevelDOWN[Any, Any]) = this()
       def this(db: AbstractLevelDOWN[Any, Any], options: CodecOptions) = this()
     }
@@ -90,7 +90,7 @@ object mod {
     @js.native
     trait Constructor
       extends StObject
-         with // tslint:disable-next-line:no-unnecessary-generics
+         with // eslint-disable-next-line no-unnecessary-generics
     Instantiable1[/* db */ AbstractLevelDOWN[Any, Any], EncodingDown[js.Object, js.Object]]
          with Instantiable2[
               /* db */ AbstractLevelDOWN[Any, Any], 
@@ -98,7 +98,7 @@ object mod {
               EncodingDown[js.Object, js.Object]
             ] {
       
-      // tslint:disable-next-line:no-unnecessary-generics
+      // eslint-disable-next-line no-unnecessary-generics
       def apply[K, V](db: AbstractLevelDOWN[Any, Any]): EncodingDown[K, V] = js.native
       def apply[K, V](db: AbstractLevelDOWN[Any, Any], options: CodecOptions): EncodingDown[K, V] = js.native
     }

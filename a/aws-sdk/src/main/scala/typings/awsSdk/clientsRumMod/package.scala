@@ -22,6 +22,13 @@ type BatchDeleteRumMetricDefinitionsErrors = js.Array[BatchDeleteRumMetricDefini
 
 type Boolean = scala.Boolean
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type CustomEventsStatus = _CustomEventsStatus | java.lang.String
+
 type DestinationArn = java.lang.String
 
 type DimensionKey = java.lang.String
@@ -69,7 +76,13 @@ type MetricDestinationSummaryList = js.Array[MetricDestinationSummary]
 
 type MetricName = java.lang.String
 
+type Namespace = java.lang.String
+
 type Pages = js.Array[Url]
+
+type PutRumEventsRequestBatchIdString = java.lang.String
+
+type PutRumEventsRequestIdString = java.lang.String
 
 type QueryFilterKey = java.lang.String
 
@@ -80,6 +93,8 @@ type QueryFilterValueList = js.Array[QueryFilterValue]
 type QueryFilters = js.Array[QueryFilter]
 
 type QueryTimestamp = Double
+
+type RumEventIdString = java.lang.String
 
 type RumEventList = js.Array[RumEvent]
 
@@ -120,6 +135,10 @@ type Token = java.lang.String
 type UnitLabel = java.lang.String
 
 type Url = java.lang.String
+
+type UserDetailsSessionIdString = java.lang.String
+
+type UserDetailsUserIdString = java.lang.String
 
 type ValueKey = java.lang.String
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for pusher-js
 
-Typings are for version 7.5.0
+Typings are for version 8.0.2
 
 ## Library description:
 Pusher Channels JavaScript library for browsers, React Native, NodeJS and web workers

@@ -10,25 +10,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PushpinOptions extends StObject {
   
   /**
-    * The distance in pixels from the top of the page where the elements stops being fixed
+    * The distance in pixels from the top of the page where
+    * the elements stops being fixed.
     * @default Infinity
     */
   var bottom: Double
   
   /**
-    * The offset from the top the element will be fixed at
+    * The offset from the top the element will be fixed at.
     * @default 0
     */
   var offset: Double
   
   /**
-    * Callback function called when pushpin position changes. You are provided with a position string
+    * Callback function called when pushpin position changes.
+    * You are provided with a position string.
     * @default null
     */
   def onPositionChange(position: pinned | `pin-top` | `pin-bottom`): Unit
   
   /**
-    * The distance in pixels from the top of the page where the element becomes fixed
+    * The distance in pixels from the top of the page where
+    * the element becomes fixed.
     * @default 0
     */
   var top: Double

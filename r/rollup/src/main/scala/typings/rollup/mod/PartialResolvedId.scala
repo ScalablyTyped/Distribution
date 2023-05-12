@@ -11,7 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent std.Partial<rollup.rollup.PartialNull<rollup.rollup.ModuleOptions>> */
 trait PartialResolvedId
   extends StObject
-     with _ResolveIdResult {
+     with _ResolveIdResult
+     with _ResolveIdResultWithoutNullValue {
   
   var assertions: js.UndefOr[(Record[String, String]) | Null] = js.undefined
   
@@ -22,6 +23,8 @@ trait PartialResolvedId
   var meta: js.UndefOr[CustomPluginOptions | Null] = js.undefined
   
   var moduleSideEffects: js.UndefOr[Boolean | `no-treeshake` | Null] = js.undefined
+  
+  var resolvedBy: js.UndefOr[String] = js.undefined
   
   var syntheticNamedExports: js.UndefOr[Boolean | String | Null] = js.undefined
 }
@@ -58,6 +61,10 @@ object PartialResolvedId {
     inline def setModuleSideEffectsNull: Self = StObject.set(x, "moduleSideEffects", null)
     
     inline def setModuleSideEffectsUndefined: Self = StObject.set(x, "moduleSideEffects", js.undefined)
+    
+    inline def setResolvedBy(value: String): Self = StObject.set(x, "resolvedBy", value.asInstanceOf[js.Any])
+    
+    inline def setResolvedByUndefined: Self = StObject.set(x, "resolvedBy", js.undefined)
     
     inline def setSyntheticNamedExports(value: Boolean | String): Self = StObject.set(x, "syntheticNamedExports", value.asInstanceOf[js.Any])
     

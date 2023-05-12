@@ -17,7 +17,7 @@ trait CreateIndexRequest extends StObject {
   var Description: js.UndefOr[typings.awsSdk.clientsKendraMod.Description] = js.undefined
   
   /**
-    * The Amazon Kendra edition to use for the index. Choose DEVELOPER_EDITION for indexes intended for development, testing, or proof of concept. Use ENTERPRISE_EDITION for your production databases. Once you set the edition for an index, it can't be changed. The Edition parameter is optional. If you don't supply a value, the default is ENTERPRISE_EDITION. For more information on quota limits for enterprise and developer editions, see Quotas.
+    * The Amazon Kendra edition to use for the index. Choose DEVELOPER_EDITION for indexes intended for development, testing, or proof of concept. Use ENTERPRISE_EDITION for production. Once you set the edition for an index, it can't be changed. The Edition parameter is optional. If you don't supply a value, the default is ENTERPRISE_EDITION. For more information on quota limits for Enterprise and Developer editions, see Quotas.
     */
   var Edition: js.UndefOr[IndexEdition] = js.undefined
   
@@ -27,7 +27,7 @@ trait CreateIndexRequest extends StObject {
   var Name: IndexName
   
   /**
-    * An Identity and Access Management (IAM) role that gives Amazon Kendra permissions to access your Amazon CloudWatch logs and metrics. This is also the role you use when you call the BatchPutDocument API to index documents from an Amazon S3 bucket.
+    * The Amazon Resource Name (ARN) of an IAM role with permission to access your Amazon CloudWatch logs and metrics. For more information, see IAM access roles for Amazon Kendra.
     */
   var RoleArn: typings.awsSdk.clientsKendraMod.RoleArn
   
@@ -37,7 +37,7 @@ trait CreateIndexRequest extends StObject {
   var ServerSideEncryptionConfiguration: js.UndefOr[typings.awsSdk.clientsKendraMod.ServerSideEncryptionConfiguration] = js.undefined
   
   /**
-    * A list of key-value pairs that identify the index. You can use the tags to identify and organize your resources and to control access to resources.
+    * A list of key-value pairs that identify or categorize the index. You can also use tags to help control access to the index. Tag keys and values can consist of Unicode letters, digits, white space, and any of the following symbols: _ . : / = + - @.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
   
@@ -47,7 +47,7 @@ trait CreateIndexRequest extends StObject {
   var UserContextPolicy: js.UndefOr[typings.awsSdk.clientsKendraMod.UserContextPolicy] = js.undefined
   
   /**
-    * Enables fetching access levels of groups and users from an IAM Identity Center (successor to Single Sign-On) identity source. To configure this, see UserGroupResolutionConfiguration.
+    * Gets users and groups from IAM Identity Center (successor to Single Sign-On) identity source. To configure this, see UserGroupResolutionConfiguration.
     */
   var UserGroupResolutionConfiguration: js.UndefOr[typings.awsSdk.clientsKendraMod.UserGroupResolutionConfiguration] = js.undefined
   

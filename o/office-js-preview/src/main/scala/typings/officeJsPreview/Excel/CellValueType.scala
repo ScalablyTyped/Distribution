@@ -105,6 +105,17 @@ object CellValueType extends StObject {
        with CellValueType
   
   /**
+    * Represents a `LocalImageCellValue`.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.16]
+    */
+  @js.native
+  sealed trait localImage
+    extends StObject
+       with CellValueType
+  
+  /**
     * Represents a `ValueTypeNotAvailableCellValue`.
     *
     * @remarks

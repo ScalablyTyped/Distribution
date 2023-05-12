@@ -16,7 +16,7 @@ open class XrHitTestSource protected () extends EventHandler {
   /**
     * Create a new XrHitTestSource instance.
     *
-    * @param {XrManager} manager - WebXR Manager.
+    * @param {import('./xr-manager.js').XrManager} manager - WebXR Manager.
     * @param {*} xrHitTestSource - XRHitTestSource object that is created by WebXR API.
     * @param {boolean} transient - True if XRHitTestSource created for input source profile.
     * @hideconstructor
@@ -36,7 +36,7 @@ open class XrHitTestSource protected () extends EventHandler {
   /* private */ var _xrHitTestSource: Any = js.native
   
   /**
-    * @type {XrManager}
+    * @type {import('./xr-manager.js').XrManager}
     * @private
     */
   /* private */ var manager: Any = js.native

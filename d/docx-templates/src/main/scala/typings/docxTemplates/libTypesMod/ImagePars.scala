@@ -12,6 +12,11 @@ trait ImagePars extends StObject {
   var alt: js.UndefOr[String] = js.undefined
   
   /**
+    * Optional caption
+    */
+  var caption: js.UndefOr[String] = js.undefined
+  
+  /**
     * Either an ArrayBuffer or a base64 string with the image data.
     */
   var data: js.typedarray.ArrayBuffer | String
@@ -60,6 +65,10 @@ object ImagePars {
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+    
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
     inline def setData(value: js.typedarray.ArrayBuffer | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

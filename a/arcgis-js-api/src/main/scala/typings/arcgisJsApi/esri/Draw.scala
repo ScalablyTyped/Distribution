@@ -49,9 +49,9 @@ trait Draw
   def reset(): scala.Unit = js.native
   
   /**
-    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html).
+    * The view in which geometries will be drawn by the user.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-Draw.html#view)
     */
-  var view: MapView = js.native
+  var view: MapView | SceneView = js.native
 }

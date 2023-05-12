@@ -6,4 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 trait SpanContext
-  extends typings.opentracing.mod.SpanContext
+  extends typings.opentracing.mod.SpanContext {
+  
+  /**
+    * Returns the string representation used for DBM integration.
+    */
+  def toTraceparent(): String = js.native
+}

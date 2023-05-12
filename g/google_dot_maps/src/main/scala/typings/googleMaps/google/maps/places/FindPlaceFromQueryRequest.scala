@@ -10,10 +10,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A find place from text search request to be sent to {@link
-  * google.maps.places.PlacesService.findPlaceFromQuery}.
-  */
 trait FindPlaceFromQueryRequest extends StObject {
   
   /**

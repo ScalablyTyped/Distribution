@@ -1,7 +1,7 @@
 
 # Scala.js typings for preact-render-to-string
 
-Typings are for version 5.2.6
+Typings are for version 6.0.3
 
 ## Library description:
 Render JSX to an HTML string, with support for Preact components.

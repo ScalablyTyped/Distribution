@@ -41,6 +41,8 @@ object materialsNodeBlocksPbrPbrMetallicRoughnessBlockMod {
     
     /* private */ var _scene: Any = js.native
     
+    /* private */ var _setTarget: Any = js.native
+    
     /* private */ var _vMetallicReflectanceFactorsName: Any = js.native
     
     /* private */ var _vNormalWName: Any = js.native
@@ -153,6 +155,9 @@ object materialsNodeBlocksPbrPbrMetallicRoughnessBlockMod {
       * Force normal to face away from face.
       */
     var forceNormalForward: Boolean = js.native
+    
+    /** Indicates that no code should be generated in the vertex shader. Can be useful in some specific circumstances (like when doing ray marching for eg) */
+    var generateOnlyFragmentCode: Boolean = js.native
     
     /**
       * Gets the index of refraction input component
@@ -319,5 +324,17 @@ object materialsNodeBlocksPbrPbrMetallicRoughnessBlockMod {
       * Gets the world position input component
       */
     def worldPosition: NodeMaterialConnectionPoint = js.native
+  }
+  /* static members */
+  object PBRMetallicRoughnessBlock {
+    
+    @JSImport("babylonjs/Materials/Node/Blocks/PBR/pbrMetallicRoughnessBlock", "PBRMetallicRoughnessBlock")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("babylonjs/Materials/Node/Blocks/PBR/pbrMetallicRoughnessBlock", "PBRMetallicRoughnessBlock._OnGenerateOnlyFragmentCodeChanged")
+    @js.native
+    def _OnGenerateOnlyFragmentCodeChanged: Any = js.native
+    inline def _OnGenerateOnlyFragmentCodeChanged_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_OnGenerateOnlyFragmentCodeChanged")(x.asInstanceOf[js.Any])
   }
 }

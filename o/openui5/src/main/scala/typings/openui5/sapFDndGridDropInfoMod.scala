@@ -1,5 +1,6 @@
 package typings.openui5
 
+import typings.openui5.anon.Columns
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreDndDropInfoMod.DropInfoSettings
@@ -125,46 +126,47 @@ object sapFDndGridDropInfoMod {
       * Gets current value of property {@link #getDropIndicatorSize dropIndicatorSize}.
       *
       * A function which will define the desired drop indicator size. The drop indicator shows the user how the
-      * grid will rearrange after drop.
-      *
-      * Use when custom size needs to be defined. For example when an item is dragged from outside a grid and
-      * is dropped over the grid.
+      * grid will rearrange after drop. Use when custom size needs to be defined. For example, when an item is
+      * dragged from outside a grid and is dropped over the grid.
       *
       * If not specified or if the function returns `null`, the indicator size will be calculated automatically.
       *
-      * This callback will be called when the indicator is displayed, that happens during the drag over movement.
+      * This callback will be called when the indicator is displayed, which happens during the drag over movement.
       *
-      * The callback receives `draggedControl` as parameter and must return an object of type `{rows: ,
-      * columns: }` or `null`.
+      * The callback receives `draggedControl` as parameter and must return an object of type `{rows: int, columns:
+      * int}` or `null`.
       *
       * @returns Value of property `dropIndicatorSize`
       */
-    def getDropIndicatorSize(): js.Function = js.native
+    def getDropIndicatorSize(): js.UndefOr[
+        js.Function1[/* p1 */ typings.openui5.sapUiCoreControlMod.default, Columns | Null]
+      ] = js.native
     
     /**
-      * Sets a new value for property {@link #getDropIndicatorSize dropIndicatorSize}.
+      * Sets a new value for property {@link #setDropIndicatorSize dropIndicatorSize}.
       *
       * A function which will define the desired drop indicator size. The drop indicator shows the user how the
-      * grid will rearrange after drop.
-      *
-      * Use when custom size needs to be defined. For example when an item is dragged from outside a grid and
-      * is dropped over the grid.
+      * grid will rearrange after drop. Use when custom size needs to be defined. For example when an item is
+      * dragged from outside a grid and is dropped over the grid.
       *
       * If not specified or if the function returns `null`, the indicator size will be calculated automatically.
       *
-      * This callback will be called when the indicator is displayed, that happens during the drag over movement.
+      * This callback will be called when the indicator is displayed, which happens during the drag over movement.
       *
-      * The callback receives `draggedControl` as parameter and must return an object of type `{rows: ,
-      * columns: }` or `null`.
+      * The callback receives `draggedControl` as parameter and must return an object of type `{rows: int, columns:
+      * int}` or `null`.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def setDropIndicatorSize(/**
+    def setDropIndicatorSize(): this.type = js.native
+    def setDropIndicatorSize(
+      /**
       * New value for property `dropIndicatorSize`
       */
-    fnDropIndicatorSize: js.Function): this.type = js.native
+    fnDropIndicatorSize: js.Function1[/* p1 */ typings.openui5.sapUiCoreControlMod.default, Columns | Null]
+    ): this.type = js.native
   }
   
   trait GridDropInfoSettings
@@ -180,10 +182,10 @@ object sapFDndGridDropInfoMod {
       *
       * If not specified or if the function returns `null`, the indicator size will be calculated automatically.
       *
-      * This callback will be called when the indicator is displayed, that happens during the drag over movement.
+      * This callback will be called when the indicator is displayed, which happens during the drag over movement.
       *
-      * The callback receives `draggedControl` as parameter and must return an object of type `{rows: ,
-      * columns: }` or `null`.
+      * The callback receives `draggedControl` as parameter and must return an object of type `{rows: int, columns:
+      * int}` or `null`.
       */
     var dropIndicatorSize: js.UndefOr[
         js.Function | PropertyBindingInfo | (/* template literal string: {${string}} */ String)

@@ -30,5 +30,5 @@ trait TypeofIntersection
   /**
     * Checks if polygon intersects rectangle
     */
-  def intersectPolygonRectangle(points: js.Array[Point], r1: Double, r2: Double): typings.fabric.fabricImplMod.Intersection = js.native
+  def intersectPolygonRectangle(points: js.Array[Point], r1: Point, r2: Point): typings.fabric.fabricImplMod.Intersection = js.native
 }

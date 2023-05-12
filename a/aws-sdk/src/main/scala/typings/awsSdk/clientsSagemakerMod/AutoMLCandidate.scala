@@ -44,7 +44,12 @@ trait AutoMLCandidate extends StObject {
   var FinalAutoMLJobObjectiveMetric: js.UndefOr[typings.awsSdk.clientsSagemakerMod.FinalAutoMLJobObjectiveMetric] = js.undefined
   
   /**
-    * Information about the inference container definitions.
+    * The mapping of all supported processing unit (CPU, GPU, etc...) to inference container definitions for the candidate. This field is populated for the V2 API only (for example, for jobs created by calling CreateAutoMLJobV2).
+    */
+  var InferenceContainerDefinitions: js.UndefOr[AutoMLInferenceContainerDefinitions] = js.undefined
+  
+  /**
+    * Information about the recommended inference container definitions.
     */
   var InferenceContainers: js.UndefOr[AutoMLContainerDefinitions] = js.undefined
   
@@ -100,6 +105,10 @@ object AutoMLCandidate {
     inline def setFinalAutoMLJobObjectiveMetric(value: FinalAutoMLJobObjectiveMetric): Self = StObject.set(x, "FinalAutoMLJobObjectiveMetric", value.asInstanceOf[js.Any])
     
     inline def setFinalAutoMLJobObjectiveMetricUndefined: Self = StObject.set(x, "FinalAutoMLJobObjectiveMetric", js.undefined)
+    
+    inline def setInferenceContainerDefinitions(value: AutoMLInferenceContainerDefinitions): Self = StObject.set(x, "InferenceContainerDefinitions", value.asInstanceOf[js.Any])
+    
+    inline def setInferenceContainerDefinitionsUndefined: Self = StObject.set(x, "InferenceContainerDefinitions", js.undefined)
     
     inline def setInferenceContainers(value: AutoMLContainerDefinitions): Self = StObject.set(x, "InferenceContainers", value.asInstanceOf[js.Any])
     

@@ -72,6 +72,16 @@ trait BackupJob extends StObject {
   var IamRoleArn: js.UndefOr[IAMRoleArn] = js.undefined
   
   /**
+    * This is a boolean value indicating this is a parent (composite) backup job.
+    */
+  var IsParent: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /**
+    * This uniquely identifies a request to Backup to back up a resource. The return will be the parent (composite) job ID.
+    */
+  var ParentJobId: js.UndefOr[String] = js.undefined
+  
+  /**
     * Contains an estimated percentage complete of a job at the time the job status was queried.
     */
   var PercentDone: js.UndefOr[String] = js.undefined
@@ -85,6 +95,11 @@ trait BackupJob extends StObject {
     * An ARN that uniquely identifies a resource. The format of the ARN depends on the resource type.
     */
   var ResourceArn: js.UndefOr[ARN] = js.undefined
+  
+  /**
+    * This is the non-unique name of the resource that belongs to the specified backup.
+    */
+  var ResourceName: js.UndefOr[String] = js.undefined
   
   /**
     * The type of Amazon Web Services resource to be backed up; for example, an Amazon Elastic Block Store (Amazon EBS) volume or an Amazon Relational Database Service (Amazon RDS) database. For Windows Volume Shadow Copy Service (VSS) backups, the only supported resource type is Amazon EC2.
@@ -168,6 +183,14 @@ object BackupJob {
     
     inline def setIamRoleArnUndefined: Self = StObject.set(x, "IamRoleArn", js.undefined)
     
+    inline def setIsParent(value: scala.Boolean): Self = StObject.set(x, "IsParent", value.asInstanceOf[js.Any])
+    
+    inline def setIsParentUndefined: Self = StObject.set(x, "IsParent", js.undefined)
+    
+    inline def setParentJobId(value: String): Self = StObject.set(x, "ParentJobId", value.asInstanceOf[js.Any])
+    
+    inline def setParentJobIdUndefined: Self = StObject.set(x, "ParentJobId", js.undefined)
+    
     inline def setPercentDone(value: String): Self = StObject.set(x, "PercentDone", value.asInstanceOf[js.Any])
     
     inline def setPercentDoneUndefined: Self = StObject.set(x, "PercentDone", js.undefined)
@@ -179,6 +202,10 @@ object BackupJob {
     inline def setResourceArn(value: ARN): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
     inline def setResourceArnUndefined: Self = StObject.set(x, "ResourceArn", js.undefined)
+    
+    inline def setResourceName(value: String): Self = StObject.set(x, "ResourceName", value.asInstanceOf[js.Any])
+    
+    inline def setResourceNameUndefined: Self = StObject.set(x, "ResourceName", js.undefined)
     
     inline def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     

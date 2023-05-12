@@ -731,6 +731,8 @@ object sapUiUx3ToolPopupMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:close close} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -745,6 +747,8 @@ object sapUiUx3ToolPopupMod {
     mParameters: js.Object): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:closed closed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -756,6 +760,8 @@ object sapUiUx3ToolPopupMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:enter enter} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -767,6 +773,8 @@ object sapUiUx3ToolPopupMod {
     mParameters: OriginalEvent): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:iconChanged iconChanged} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -778,6 +786,8 @@ object sapUiUx3ToolPopupMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:open open} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -790,6 +800,7 @@ object sapUiUx3ToolPopupMod {
     
     /**
       * @SINCE 1.19.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:opened opened} to attached listeners.
       *

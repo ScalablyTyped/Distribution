@@ -75,6 +75,10 @@ trait PartialGossipsubOpts extends StObject {
   
   var heartbeatInterval: js.UndefOr[Double] = js.undefined
   
+  var ignoreDuplicatePublishError: js.UndefOr[Boolean] = js.undefined
+  
+  var maxInboundDataLength: js.UndefOr[Double] = js.undefined
+  
   var maxInboundStreams: js.UndefOr[Double] = js.undefined
   
   var maxOutboundBufferSize: js.UndefOr[Double] = js.undefined
@@ -238,6 +242,14 @@ object PartialGossipsubOpts {
     inline def setHeartbeatInterval(value: Double): Self = StObject.set(x, "heartbeatInterval", value.asInstanceOf[js.Any])
     
     inline def setHeartbeatIntervalUndefined: Self = StObject.set(x, "heartbeatInterval", js.undefined)
+    
+    inline def setIgnoreDuplicatePublishError(value: Boolean): Self = StObject.set(x, "ignoreDuplicatePublishError", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreDuplicatePublishErrorUndefined: Self = StObject.set(x, "ignoreDuplicatePublishError", js.undefined)
+    
+    inline def setMaxInboundDataLength(value: Double): Self = StObject.set(x, "maxInboundDataLength", value.asInstanceOf[js.Any])
+    
+    inline def setMaxInboundDataLengthUndefined: Self = StObject.set(x, "maxInboundDataLength", js.undefined)
     
     inline def setMaxInboundStreams(value: Double): Self = StObject.set(x, "maxInboundStreams", value.asInstanceOf[js.Any])
     

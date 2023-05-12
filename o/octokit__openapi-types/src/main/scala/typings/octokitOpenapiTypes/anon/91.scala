@@ -1,14 +1,21 @@
 package typings.octokitOpenapiTypes.anon
 
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.repositories
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.admin
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.member_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `91` extends StObject {
   
-  /** Exclude attributes from the API response to improve performance */
-  var exclude: js.UndefOr[js.Array[repositories]] = js.undefined
+  /**
+    * @description The role to give the user in the organization. Can be one of:
+    *  * `admin` - The user will become an owner of the organization.
+    *  * `member` - The user will become a non-owner member of the organization.
+    * @default member
+    * @enum {string}
+    */
+  var role: js.UndefOr[admin | member_] = js.undefined
 }
 object `91` {
   
@@ -20,10 +27,8 @@ object `91` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `91`] (val x: Self) extends AnyVal {
     
-    inline def setExclude(value: js.Array[repositories]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+    inline def setRole(value: admin | member_): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
-    
-    inline def setExcludeVarargs(value: repositories*): Self = StObject.set(x, "exclude", js.Array(value*))
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
   }
 }

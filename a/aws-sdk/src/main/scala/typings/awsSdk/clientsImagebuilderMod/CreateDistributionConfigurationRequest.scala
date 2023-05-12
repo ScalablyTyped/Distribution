@@ -7,27 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateDistributionConfigurationRequest extends StObject {
   
   /**
-    *  The idempotency token of the distribution configuration.
+    * The idempotency token of the distribution configuration.
     */
   var clientToken: ClientToken
   
   /**
-    *  The description of the distribution configuration.
+    * The description of the distribution configuration.
     */
   var description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    *  The distributions of the distribution configuration.
+    * The distributions of the distribution configuration.
     */
   var distributions: DistributionList
   
   /**
-    *  The name of the distribution configuration.
+    * The name of the distribution configuration.
     */
   var name: ResourceName
   
   /**
-    *  The tags of the distribution configuration.
+    * The tags of the distribution configuration.
     */
   var tags: js.UndefOr[TagMap] = js.undefined
 }

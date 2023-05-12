@@ -12,7 +12,7 @@ trait CreateDomainRequest extends StObject {
   var AppNetworkAccessType: js.UndefOr[typings.awsSdk.clientsSagemakerMod.AppNetworkAccessType] = js.undefined
   
   /**
-    * The entity that creates and manages the required security groups for inter-app communication in VPCOnly mode. Required when CreateDomain.AppNetworkAccessType is VPCOnly and DomainSettings.RStudioServerProDomainSettings.DomainExecutionRoleArn is provided.
+    * The entity that creates and manages the required security groups for inter-app communication in VPCOnly mode. Required when CreateDomain.AppNetworkAccessType is VPCOnly and DomainSettings.RStudioServerProDomainSettings.DomainExecutionRoleArn is provided. If setting up the domain for use with RStudio, this value must be set to Service.
     */
   var AppSecurityGroupManagement: js.UndefOr[typings.awsSdk.clientsSagemakerMod.AppSecurityGroupManagement] = js.undefined
   
@@ -20,6 +20,11 @@ trait CreateDomainRequest extends StObject {
     * The mode of authentication that members use to access the domain.
     */
   var AuthMode: typings.awsSdk.clientsSagemakerMod.AuthMode
+  
+  /**
+    * The default settings used to create a space.
+    */
+  var DefaultSpaceSettings: js.UndefOr[typings.awsSdk.clientsSagemakerMod.DefaultSpaceSettings] = js.undefined
   
   /**
     * The default settings to use to create a user profile when UserSettings isn't specified in the call to the CreateUserProfile API.  SecurityGroups is aggregated when specified in both calls. For all other settings in UserSettings, the values specified in CreateUserProfile take precedence over those specified in CreateDomain.
@@ -86,6 +91,10 @@ object CreateDomainRequest {
     inline def setAppSecurityGroupManagementUndefined: Self = StObject.set(x, "AppSecurityGroupManagement", js.undefined)
     
     inline def setAuthMode(value: AuthMode): Self = StObject.set(x, "AuthMode", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultSpaceSettings(value: DefaultSpaceSettings): Self = StObject.set(x, "DefaultSpaceSettings", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultSpaceSettingsUndefined: Self = StObject.set(x, "DefaultSpaceSettings", js.undefined)
     
     inline def setDefaultUserSettings(value: UserSettings): Self = StObject.set(x, "DefaultUserSettings", value.asInstanceOf[js.Any])
     

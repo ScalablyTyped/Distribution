@@ -109,6 +109,8 @@ trait InitialOptionsWithRootDir extends StObject {
   
   var onlyFailures: js.UndefOr[Boolean] = js.undefined
   
+  var openHandlesTimeout: js.UndefOr[Double] = js.undefined
+  
   var outputFile: js.UndefOr[String] = js.undefined
   
   var passWithNoTests: js.UndefOr[Boolean] = js.undefined
@@ -118,6 +120,8 @@ trait InitialOptionsWithRootDir extends StObject {
   var prettierPath: js.UndefOr[String | Null] = js.undefined
   
   var projects: js.UndefOr[js.Array[String | InitialProjectOptions]] = js.undefined
+  
+  var randomize: js.UndefOr[Boolean] = js.undefined
   
   var replname: js.UndefOr[String | Null] = js.undefined
   
@@ -210,6 +214,8 @@ trait InitialOptionsWithRootDir extends StObject {
   var watchman: js.UndefOr[Boolean] = js.undefined
   
   var workerIdleMemoryLimit: js.UndefOr[Double | String] = js.undefined
+  
+  var workerThreads: js.UndefOr[Boolean] = js.undefined
 }
 object InitialOptionsWithRootDir {
   
@@ -439,6 +445,10 @@ object InitialOptionsWithRootDir {
     
     inline def setOnlyFailuresUndefined: Self = StObject.set(x, "onlyFailures", js.undefined)
     
+    inline def setOpenHandlesTimeout(value: Double): Self = StObject.set(x, "openHandlesTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setOpenHandlesTimeoutUndefined: Self = StObject.set(x, "openHandlesTimeout", js.undefined)
+    
     inline def setOutputFile(value: String): Self = StObject.set(x, "outputFile", value.asInstanceOf[js.Any])
     
     inline def setOutputFileUndefined: Self = StObject.set(x, "outputFile", js.undefined)
@@ -464,6 +474,10 @@ object InitialOptionsWithRootDir {
     inline def setProjectsUndefined: Self = StObject.set(x, "projects", js.undefined)
     
     inline def setProjectsVarargs(value: (String | InitialProjectOptions)*): Self = StObject.set(x, "projects", js.Array(value*))
+    
+    inline def setRandomize(value: Boolean): Self = StObject.set(x, "randomize", value.asInstanceOf[js.Any])
+    
+    inline def setRandomizeUndefined: Self = StObject.set(x, "randomize", js.undefined)
     
     inline def setReplname(value: String): Self = StObject.set(x, "replname", value.asInstanceOf[js.Any])
     
@@ -678,5 +692,9 @@ object InitialOptionsWithRootDir {
     inline def setWorkerIdleMemoryLimit(value: Double | String): Self = StObject.set(x, "workerIdleMemoryLimit", value.asInstanceOf[js.Any])
     
     inline def setWorkerIdleMemoryLimitUndefined: Self = StObject.set(x, "workerIdleMemoryLimit", js.undefined)
+    
+    inline def setWorkerThreads(value: Boolean): Self = StObject.set(x, "workerThreads", value.asInstanceOf[js.Any])
+    
+    inline def setWorkerThreadsUndefined: Self = StObject.set(x, "workerThreads", js.undefined)
   }
 }

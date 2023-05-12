@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.StopColor
+import typings.csstype.mod.Property.MarginBottom
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `444` extends StObject {
   
   var value: js.UndefOr[
-    StopColor | (js.Array[
-      (Extract[js.UndefOr[StopColor | js.Array[NonNullable[js.UndefOr[StopColor]]]], String]) | NonNullable[js.UndefOr[StopColor]]
+    (MarginBottom[Double | String]) | (js.Array[
+      (Extract[
+        js.UndefOr[
+          (MarginBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginBottom[Double | String]]]])
+        ], 
+        String
+      ]) | (NonNullable[js.UndefOr[MarginBottom[Double | String]]])
     ])
   ] = js.native
 }

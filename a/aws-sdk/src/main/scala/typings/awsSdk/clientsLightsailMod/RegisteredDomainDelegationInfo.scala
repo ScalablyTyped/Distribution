@@ -11,6 +11,9 @@ trait RegisteredDomainDelegationInfo extends StObject {
     */
   var nameServersUpdateState: js.UndefOr[NameServersUpdateState] = js.undefined
   
+  /**
+    * Describes the deletion state of an Amazon Route 53 hosted zone for a domain that is being automatically delegated to an Amazon Lightsail DNS zone.
+    */
   var r53HostedZoneDeletionState: js.UndefOr[R53HostedZoneDeletionState] = js.undefined
 }
 object RegisteredDomainDelegationInfo {

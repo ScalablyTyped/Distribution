@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../evaluator/anim-target.js').AnimTarget} AnimTarget */
 /**
   * This interface is used by {@link AnimEvaluator} to resolve unique animation target path strings
   * into instances of {@link AnimTarget}.
@@ -20,7 +19,8 @@ open class AnimBinder () extends StObject {
     * handle setting the value, or return null if no such target exists.
     *
     * @param {string} path - The animation curve path to resolve.
-    * @returns {AnimTarget|null} - Returns the target instance on success and null otherwise.
+    * @returns {import('../evaluator/anim-target.js').AnimTarget|null} - Returns the target
+    * instance on success and null otherwise.
     */
   def resolve(path: String): AnimTarget | Null = js.native
   

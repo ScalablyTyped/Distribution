@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "copy-to-clipboard"
-version := "3.3.2-142192"
+version := "3.3.3-874a0a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

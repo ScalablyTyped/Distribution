@@ -42,7 +42,7 @@ trait Environment extends StObject {
   var description: js.UndefOr[Description] = js.undefined
   
   /**
-    * The ID of the environment account connection that Proton uses to provision infrastructure resources in an environment account.
+    * The ID of the environment account connection that's used to provision infrastructure resources in an environment account.
     */
   var environmentAccountConnectionId: js.UndefOr[EnvironmentAccountConnectionId] = js.undefined
   
@@ -67,7 +67,7 @@ trait Environment extends StObject {
   var name: ResourceName
   
   /**
-    * The Amazon Resource Name (ARN) of the IAM service role that allows Proton to provision infrastructure using Amazon Web Services-managed provisioning and CloudFormation on your behalf.
+    * The Amazon Resource Name (ARN) of the Proton service role that allows Proton to make calls to other services on your behalf.
     */
   var protonServiceRoleArn: js.UndefOr[Arn] = js.undefined
   

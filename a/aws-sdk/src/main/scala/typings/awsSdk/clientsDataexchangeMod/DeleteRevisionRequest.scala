@@ -9,16 +9,16 @@ trait DeleteRevisionRequest extends StObject {
   /**
     * The unique identifier for a data set.
     */
-  var DataSetId: string
+  var DataSetId: _String
   
   /**
     * The unique identifier for a revision.
     */
-  var RevisionId: string
+  var RevisionId: _String
 }
 object DeleteRevisionRequest {
   
-  inline def apply(DataSetId: string, RevisionId: string): DeleteRevisionRequest = {
+  inline def apply(DataSetId: _String, RevisionId: _String): DeleteRevisionRequest = {
     val __obj = js.Dynamic.literal(DataSetId = DataSetId.asInstanceOf[js.Any], RevisionId = RevisionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRevisionRequest]
   }
@@ -26,8 +26,8 @@ object DeleteRevisionRequest {
   @scala.inline
   implicit open class MutableBuilder[Self <: DeleteRevisionRequest] (val x: Self) extends AnyVal {
     
-    inline def setDataSetId(value: string): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
+    inline def setDataSetId(value: _String): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
     
-    inline def setRevisionId(value: string): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: _String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,8 @@
 package typings.opentelemetryCore
 
 import typings.opentelemetryApi.buildSrcDiagTypesMod.DiagLogLevel
+import typings.opentelemetryCore.buildSrcExportResultMod.ExportResult
+import typings.opentelemetryCore.buildSrcInternalExporterMod.Exporter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,6 +45,22 @@ object anon {
     
     var OTEL_EXPORTER_OTLP_INSECURE: js.UndefOr[String] = js.undefined
     
+    var OTEL_EXPORTER_OTLP_LOGS_CERTIFICATE: js.UndefOr[String] = js.undefined
+    
+    var OTEL_EXPORTER_OTLP_LOGS_CLIENT_CERTIFICATE: js.UndefOr[String] = js.undefined
+    
+    var OTEL_EXPORTER_OTLP_LOGS_CLIENT_KEY: js.UndefOr[String] = js.undefined
+    
+    var OTEL_EXPORTER_OTLP_LOGS_COMPRESSION: js.UndefOr[String] = js.undefined
+    
+    var OTEL_EXPORTER_OTLP_LOGS_ENDPOINT: js.UndefOr[String] = js.undefined
+    
+    var OTEL_EXPORTER_OTLP_LOGS_HEADERS: js.UndefOr[String] = js.undefined
+    
+    var OTEL_EXPORTER_OTLP_LOGS_INSECURE: js.UndefOr[String] = js.undefined
+    
+    var OTEL_EXPORTER_OTLP_LOGS_PROTOCOL: js.UndefOr[String] = js.undefined
+    
     var OTEL_EXPORTER_OTLP_METRICS_CERTIFICATE: js.UndefOr[String] = js.undefined
     
     var OTEL_EXPORTER_OTLP_METRICS_CLIENT_CERTIFICATE: js.UndefOr[String] = js.undefined
@@ -56,6 +74,12 @@ object anon {
     var OTEL_EXPORTER_OTLP_METRICS_HEADERS: js.UndefOr[String] = js.undefined
     
     var OTEL_EXPORTER_OTLP_METRICS_INSECURE: js.UndefOr[String] = js.undefined
+    
+    var OTEL_EXPORTER_OTLP_METRICS_PROTOCOL: js.UndefOr[String] = js.undefined
+    
+    var OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE: js.UndefOr[String] = js.undefined
+    
+    var OTEL_EXPORTER_OTLP_PROTOCOL: js.UndefOr[String] = js.undefined
     
     var OTEL_EXPORTER_OTLP_TRACES_CERTIFICATE: js.UndefOr[String] = js.undefined
     
@@ -71,7 +95,11 @@ object anon {
     
     var OTEL_EXPORTER_OTLP_TRACES_INSECURE: js.UndefOr[String] = js.undefined
     
+    var OTEL_EXPORTER_OTLP_TRACES_PROTOCOL: js.UndefOr[String] = js.undefined
+    
     var OTEL_EXPORTER_ZIPKIN_ENDPOINT: js.UndefOr[String] = js.undefined
+    
+    var OTEL_LOGS_EXPORTER: js.UndefOr[String] = js.undefined
     
     var OTEL_LOG_LEVEL: js.UndefOr[DiagLogLevel] = js.undefined
     
@@ -163,6 +191,38 @@ object anon {
       
       inline def setOTEL_EXPORTER_OTLP_INSECUREUndefined: Self = StObject.set(x, "OTEL_EXPORTER_OTLP_INSECURE", js.undefined)
       
+      inline def setOTEL_EXPORTER_OTLP_LOGS_CERTIFICATE(value: String): Self = StObject.set(x, "OTEL_EXPORTER_OTLP_LOGS_CERTIFICATE", value.asInstanceOf[js.Any])
+      
+      inline def setOTEL_EXPORTER_OTLP_LOGS_CERTIFICATEUndefined: Self = StObject.set(x, "OTEL_EXPORTER_OTLP_LOGS_CERTIFICATE", js.undefined)
+      
+      inline def setOTEL_EXPORTER_OTLP_LOGS_CLIENT_CERTIFICATE(value: String): Self = StObject.set(x, "OTEL_EXPORTER_OTLP_LOGS_CLIENT_CERTIFICATE", value.asInstanceOf[js.Any])
+      
+      inline def setOTEL_EXPORTER_OTLP_LOGS_CLIENT_CERTIFICATEUndefined: Self = StObject.set(x, "OTEL_EXPORTER_OTLP_LOGS_CLIENT_CERTIFICATE", js.undefined)
+      
+      inline def setOTEL_EXPORTER_OTLP_LOGS_CLIENT_KEY(value: String): Self = StObject.set(x, "OTEL_EXPORTER_OTLP_LOGS_CLIENT_KEY", value.asInstanceOf[js.Any])
+      
+      inline def setOTEL_EXPORTER_OTLP_LOGS_CLIENT_KEYUndefined: Self = StObject.set(x, "OTEL_EXPORTER_OTLP_LOGS_CLIENT_KEY", js.undefined)
+      
+      inline def setOTEL_EXPORTER_OTLP_LOGS_COMPRESSION(value: String): Self = StObject.set(x, "OTEL_EXPORTER_OTLP_LOGS_COMPRESSION", value.asInstanceOf[js.Any])
+      
+      inline def setOTEL_EXPORTER_OTLP_LOGS_COMPRESSIONUndefined: Self = StObject.set(x, "OTEL_EXPORTER_OTLP_LOGS_COMPRESSION", js.undefined)
+      
+      inline def setOTEL_EXPORTER_OTLP_LOGS_ENDPOINT(value: String): Self = StObject.set(x, "OTEL_EXPORTER_OTLP_LOGS_ENDPOINT", value.asInstanceOf[js.Any])
+      
+      inline def setOTEL_EXPORTER_OTLP_LOGS_ENDPOINTUndefined: Self = StObject.set(x, "OTEL_EXPORTER_OTLP_LOGS_ENDPOINT", js.undefined)
+      
+      inline def setOTEL_EXPORTER_OTLP_LOGS_HEADERS(value: String): Self = StObject.set(x, "OTEL_EXPORTER_OTLP_LOGS_HEADERS", value.asInstanceOf[js.Any])
+      
+      inline def setOTEL_EXPORTER_OTLP_LOGS_HEADERSUndefined: Self = StObject.set(x, "OTEL_EXPORTER_OTLP_LOGS_HEADERS", js.undefined)
+      
+      inline def setOTEL_EXPORTER_OTLP_LOGS_INSECURE(value: String): Self = StObject.set(x, "OTEL_EXPORTER_OTLP_LOGS_INSECURE", value.asInstanceOf[js.Any])
+      
+      inline def setOTEL_EXPORTER_OTLP_LOGS_INSECUREUndefined: Self = StObject.set(x, "OTEL_EXPORTER_OTLP_LOGS_INSECURE", js.undefined)
+      
+      inline def setOTEL_EXPORTER_OTLP_LOGS_PROTOCOL(value: String): Self = StObject.set(x, "OTEL_EXPORTER_OTLP_LOGS_PROTOCOL", value.asInstanceOf[js.Any])
+      
+      inline def setOTEL_EXPORTER_OTLP_LOGS_PROTOCOLUndefined: Self = StObject.set(x, "OTEL_EXPORTER_OTLP_LOGS_PROTOCOL", js.undefined)
+      
       inline def setOTEL_EXPORTER_OTLP_METRICS_CERTIFICATE(value: String): Self = StObject.set(x, "OTEL_EXPORTER_OTLP_METRICS_CERTIFICATE", value.asInstanceOf[js.Any])
       
       inline def setOTEL_EXPORTER_OTLP_METRICS_CERTIFICATEUndefined: Self = StObject.set(x, "OTEL_EXPORTER_OTLP_METRICS_CERTIFICATE", js.undefined)
@@ -190,6 +250,18 @@ object anon {
       inline def setOTEL_EXPORTER_OTLP_METRICS_INSECURE(value: String): Self = StObject.set(x, "OTEL_EXPORTER_OTLP_METRICS_INSECURE", value.asInstanceOf[js.Any])
       
       inline def setOTEL_EXPORTER_OTLP_METRICS_INSECUREUndefined: Self = StObject.set(x, "OTEL_EXPORTER_OTLP_METRICS_INSECURE", js.undefined)
+      
+      inline def setOTEL_EXPORTER_OTLP_METRICS_PROTOCOL(value: String): Self = StObject.set(x, "OTEL_EXPORTER_OTLP_METRICS_PROTOCOL", value.asInstanceOf[js.Any])
+      
+      inline def setOTEL_EXPORTER_OTLP_METRICS_PROTOCOLUndefined: Self = StObject.set(x, "OTEL_EXPORTER_OTLP_METRICS_PROTOCOL", js.undefined)
+      
+      inline def setOTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE(value: String): Self = StObject.set(x, "OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE", value.asInstanceOf[js.Any])
+      
+      inline def setOTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCEUndefined: Self = StObject.set(x, "OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE", js.undefined)
+      
+      inline def setOTEL_EXPORTER_OTLP_PROTOCOL(value: String): Self = StObject.set(x, "OTEL_EXPORTER_OTLP_PROTOCOL", value.asInstanceOf[js.Any])
+      
+      inline def setOTEL_EXPORTER_OTLP_PROTOCOLUndefined: Self = StObject.set(x, "OTEL_EXPORTER_OTLP_PROTOCOL", js.undefined)
       
       inline def setOTEL_EXPORTER_OTLP_TRACES_CERTIFICATE(value: String): Self = StObject.set(x, "OTEL_EXPORTER_OTLP_TRACES_CERTIFICATE", value.asInstanceOf[js.Any])
       
@@ -219,9 +291,17 @@ object anon {
       
       inline def setOTEL_EXPORTER_OTLP_TRACES_INSECUREUndefined: Self = StObject.set(x, "OTEL_EXPORTER_OTLP_TRACES_INSECURE", js.undefined)
       
+      inline def setOTEL_EXPORTER_OTLP_TRACES_PROTOCOL(value: String): Self = StObject.set(x, "OTEL_EXPORTER_OTLP_TRACES_PROTOCOL", value.asInstanceOf[js.Any])
+      
+      inline def setOTEL_EXPORTER_OTLP_TRACES_PROTOCOLUndefined: Self = StObject.set(x, "OTEL_EXPORTER_OTLP_TRACES_PROTOCOL", js.undefined)
+      
       inline def setOTEL_EXPORTER_ZIPKIN_ENDPOINT(value: String): Self = StObject.set(x, "OTEL_EXPORTER_ZIPKIN_ENDPOINT", value.asInstanceOf[js.Any])
       
       inline def setOTEL_EXPORTER_ZIPKIN_ENDPOINTUndefined: Self = StObject.set(x, "OTEL_EXPORTER_ZIPKIN_ENDPOINT", js.undefined)
+      
+      inline def setOTEL_LOGS_EXPORTER(value: String): Self = StObject.set(x, "OTEL_LOGS_EXPORTER", value.asInstanceOf[js.Any])
+      
+      inline def setOTEL_LOGS_EXPORTERUndefined: Self = StObject.set(x, "OTEL_LOGS_EXPORTER", js.undefined)
       
       inline def setOTEL_LOG_LEVEL(value: DiagLogLevel): Self = StObject.set(x, "OTEL_LOG_LEVEL", value.asInstanceOf[js.Any])
       
@@ -265,5 +345,11 @@ object anon {
       
       inline def setFetchStart(value: Double): Self = StObject.set(x, "fetchStart", value.asInstanceOf[js.Any])
     }
+  }
+  
+  @js.native
+  trait FnCall extends StObject {
+    
+    def apply[T](exporter: Exporter[T], arg: T): js.Promise[ExportResult] = js.native
   }
 }

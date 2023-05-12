@@ -39,7 +39,9 @@ open class WorldClusters protected () extends StObject {
   
   var _clusterCompressionLimit0Id: Any = js.native
   
-  var _clusterPixelsPerCellId: Any = js.native
+  var _clusterMaxCellsId: Any = js.native
+  
+  var _clusterSkipId: Any = js.native
   
   var _clusterTextureSizeData: js.typedarray.Float32Array = js.native
   
@@ -49,11 +51,9 @@ open class WorldClusters protected () extends StObject {
   
   var _maxAttenuation: Double = js.native
   
-  var _maxCellLightCount: Double = js.native
+  var _maxCellLightCount: Any = js.native
   
   var _maxColorValue: Double = js.native
-  
-  var _pixelsPerCellCount: Double = js.native
   
   var _usedLights: js.Array[ClusterLight] = js.native
   
@@ -68,6 +68,7 @@ open class WorldClusters protected () extends StObject {
   def cells: Vec3 = js.native
   def cells_=(arg: Vec3): Unit = js.native
   
+  /** @type {import('../../platform/graphics/texture.js').Texture} */
   var clusterTexture: Texture = js.native
   
   var clusters: js.typedarray.Uint8ClampedArray = js.native
@@ -88,8 +89,8 @@ open class WorldClusters protected () extends StObject {
   
   var lightsBuffer: LightsBuffer = js.native
   
-  def maxCellLightCount: Double = js.native
-  def maxCellLightCount_=(arg: Double): Unit = js.native
+  def maxCellLightCount: Any = js.native
+  def maxCellLightCount_=(arg: Any): Unit = js.native
   
   var name: String = js.native
   

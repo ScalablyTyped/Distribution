@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("vscode.CompletionList")
 @js.native
 /**
-  * Creates a new completion list.
-  *
-  * @param items The completion items.
-  * @param isIncomplete The list is not complete.
-  */
+		 * Creates a new completion list.
+		 *
+		 * @param items The completion items.
+		 * @param isIncomplete The list is not complete.
+		 */
 open class CompletionList[T /* <: typings.vscode.mod.CompletionItem */] ()
   extends typings.vscode.mod.CompletionList[T] {
   def this(items: js.Array[T]) = this()

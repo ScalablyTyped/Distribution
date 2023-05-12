@@ -9,6 +9,7 @@ import typings.nodeDownloaderHelper.nodeDownloaderHelperStrings.error
 import typings.nodeDownloaderHelper.nodeDownloaderHelperStrings.pause
 import typings.nodeDownloaderHelper.nodeDownloaderHelperStrings.progress
 import typings.nodeDownloaderHelper.nodeDownloaderHelperStrings.progressDotthrottled
+import typings.nodeDownloaderHelper.nodeDownloaderHelperStrings.redirected
 import typings.nodeDownloaderHelper.nodeDownloaderHelperStrings.renamed
 import typings.nodeDownloaderHelper.nodeDownloaderHelperStrings.resume
 import typings.nodeDownloaderHelper.nodeDownloaderHelperStrings.retry
@@ -85,7 +86,7 @@ open class DownloaderHelper protected () extends EventEmitter {
     * 
     * @memberof EventEmitter
     */
-  def on[E /* <: /* keyof node-downloader-helper.node-downloader-helper.DownloadEvents */ start | skip | download | progress | progressDotthrottled | retry | end | error | timeout | pause | resume | stop | renamed | stateChanged | warning */](
+  def on[E /* <: /* keyof node-downloader-helper.node-downloader-helper.DownloadEvents */ start | skip | download | progress | progressDotthrottled | retry | end | error | timeout | pause | resume | stop | renamed | redirected | stateChanged | warning */](
     event: E,
     callback: /* import warning: importer.ImportType#apply Failed type conversion: node-downloader-helper.node-downloader-helper.DownloadEvents[E] */ js.Any
   ): Any = js.native
@@ -159,8 +160,11 @@ open class DownloaderHelper protected () extends EventEmitter {
     * Updates the options, can be use on pause/resume events
     *
     * @param {Object} [options={}]
+    * @param {String} [url='']
     * @memberof DownloaderHelper
     */
   def updateOptions(): Unit = js.native
   def updateOptions(options: js.Object): Unit = js.native
+  def updateOptions(options: js.Object, url: String): Unit = js.native
+  def updateOptions(options: Unit, url: String): Unit = js.native
 }

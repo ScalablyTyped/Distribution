@@ -1,6 +1,7 @@
 package typings.three
 
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.BoxGeometry
 import typings.three.srcThreeMod.Mesh
@@ -14,7 +15,7 @@ object examplesJsmObjectsSkyMod {
   @JSImport("three/examples/jsm/objects/Sky", "Sky")
   @js.native
   open class Sky ()
-    extends Mesh[BufferGeometry, Material | js.Array[Material]] {
+    extends Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]] {
     
     @JSName("geometry")
     var geometry_Sky: BoxGeometry = js.native

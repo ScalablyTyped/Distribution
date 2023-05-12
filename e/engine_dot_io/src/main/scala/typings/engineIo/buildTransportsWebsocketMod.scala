@@ -19,6 +19,13 @@ object buildTransportsWebsocketMod {
     def this(req: Any) = this()
     
     /**
+      * Whether the encoding of the WebSocket frame can be skipped.
+      * @param packet
+      * @private
+      */
+    /* private */ var _canSendPreEncodedFrame: Any = js.native
+    
+    /**
       * Advertise upgrade support.
       *
       * @api public

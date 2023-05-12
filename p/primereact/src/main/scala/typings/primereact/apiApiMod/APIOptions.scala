@@ -10,6 +10,16 @@ trait APIOptions extends StObject {
   
   var autoZIndex: js.UndefOr[Boolean] = js.undefined
   
+  var changeTheme: js.UndefOr[
+    js.Function4[
+      /* theme */ js.UndefOr[String], 
+      /* newTheme */ js.UndefOr[String], 
+      /* linkElementId */ js.UndefOr[String], 
+      /* callback */ js.UndefOr[js.Function0[Unit]], 
+      Unit
+    ]
+  ] = js.undefined
+  
   var cssTransition: js.UndefOr[Boolean] = js.undefined
   
   var filterMatchModeOptions: js.UndefOr[FilterMatchModeOptions] = js.undefined
@@ -45,6 +55,12 @@ object APIOptions {
     inline def setAutoZIndex(value: Boolean): Self = StObject.set(x, "autoZIndex", value.asInstanceOf[js.Any])
     
     inline def setAutoZIndexUndefined: Self = StObject.set(x, "autoZIndex", js.undefined)
+    
+    inline def setChangeTheme(
+      value: (/* theme */ js.UndefOr[String], /* newTheme */ js.UndefOr[String], /* linkElementId */ js.UndefOr[String], /* callback */ js.UndefOr[js.Function0[Unit]]) => Unit
+    ): Self = StObject.set(x, "changeTheme", js.Any.fromFunction4(value))
+    
+    inline def setChangeThemeUndefined: Self = StObject.set(x, "changeTheme", js.undefined)
     
     inline def setCssTransition(value: Boolean): Self = StObject.set(x, "cssTransition", value.asInstanceOf[js.Any])
     

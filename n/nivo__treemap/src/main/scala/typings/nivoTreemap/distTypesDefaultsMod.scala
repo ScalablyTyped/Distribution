@@ -23,6 +23,7 @@ import typings.nivoTreemap.nivoTreemapStrings.sliceDice
 import typings.nivoTreemap.nivoTreemapStrings.squarify
 import typings.nivoTreemap.nivoTreemapStrings.top
 import typings.react.mod.global.JSX.Element
+import typings.reactSpringCore.mod.SpringConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -292,14 +293,8 @@ object distTypesDefaultsMod {
     
     @JSImport("@nivo/treemap/dist/types/defaults", "commonDefaultProps.motionConfig")
     @js.native
-    def motionConfig: js.UndefOr[
-        String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-      ] = js.native
-    inline def motionConfig_=(
-      x: js.UndefOr[
-          String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-        ]
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("motionConfig")(x.asInstanceOf[js.Any])
+    def motionConfig: js.UndefOr[String | SpringConfig] = js.native
+    inline def motionConfig_=(x: js.UndefOr[String | SpringConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("motionConfig")(x.asInstanceOf[js.Any])
     
     @JSImport("@nivo/treemap/dist/types/defaults", "commonDefaultProps.nodeOpacity")
     @js.native

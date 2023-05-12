@@ -234,10 +234,8 @@ object mod {
     def mergeAdd(source: String): FfmpegCommand = js.native
     def mergeAdd(source: Readable): FfmpegCommand = js.native
     
-    def mergeToFile(target: String): FfmpegCommand = js.native
-    def mergeToFile(target: String, options: End): FfmpegCommand = js.native
-    def mergeToFile(target: Writable): FfmpegCommand = js.native
-    def mergeToFile(target: Writable, options: End): FfmpegCommand = js.native
+    def mergeToFile(target: String, tmpFolder: String): FfmpegCommand = js.native
+    def mergeToFile(target: Writable, tmpFolder: String): FfmpegCommand = js.native
     
     def native(): FfmpegCommand = js.native
     

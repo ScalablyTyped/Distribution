@@ -14,7 +14,7 @@ trait TypeofURL extends StObject {
     * const {
     *   Blob,
     *   resolveObjectURL,
-    * } = require('buffer');
+    * } = require('node:buffer');
     *
     * const blob = new Blob(['hello']);
     * const id = URL.createObjectURL(blob);
@@ -38,7 +38,7 @@ trait TypeofURL extends StObject {
   
   /**
     * Removes the stored `Blob` identified by the given ID. Attempting to revoke a
-    * ID that isn’t registered will silently fail.
+    * ID that isn't registered will silently fail.
     * @since v16.7.0
     * @experimental
     * @param id A `'blob:nodedata:...` URL string returned by a prior call to `URL.createObjectURL()`.

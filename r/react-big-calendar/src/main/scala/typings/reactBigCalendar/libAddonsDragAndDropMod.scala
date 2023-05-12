@@ -4,12 +4,10 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentType
 import typings.react.mod.DragEvent
 import typings.react.mod.HTMLAttributes
-import typings.reactBigCalendar.anon.Action
-import typings.reactBigCalendar.anon.AllDay
-import typings.reactBigCalendar.anon.IsAllDay
 import typings.reactBigCalendar.mod.CalendarProps
 import typings.reactBigCalendar.mod.Components_
 import typings.reactBigCalendar.mod.DateLocalizer
+import typings.reactBigCalendar.mod.stringOrDate
 import typings.reactBigCalendar.reactBigCalendarBooleans.`false`
 import typings.reactBigCalendar.reactBigCalendarBooleans.`true`
 import typings.reactBigCalendar.reactBigCalendarStrings.ignoreEvents
@@ -27,6 +25,18 @@ object libAddonsDragAndDropMod {
   
   inline def default[TEvent /* <: js.Object */, TResource /* <: js.Object */](calendar: ComponentType[CalendarProps[TEvent, TResource]]): ComponentType[DragAndDropCalendarProps[TEvent, TResource]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(calendar.asInstanceOf[js.Any]).asInstanceOf[ComponentType[DragAndDropCalendarProps[TEvent, TResource]]]
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.reactBigCalendar.reactBigCalendarStrings.resize
+    - typings.reactBigCalendar.reactBigCalendarStrings.move
+  */
+  trait DragAction extends StObject
+  object DragAction {
+    
+    inline def move: typings.reactBigCalendar.reactBigCalendarStrings.move = "move".asInstanceOf[typings.reactBigCalendar.reactBigCalendarStrings.move]
+    
+    inline def resize: typings.reactBigCalendar.reactBigCalendarStrings.resize = "resize".asInstanceOf[typings.reactBigCalendar.reactBigCalendarStrings.resize]
+  }
+  
   type DragAndDropCalendar[TEvent /* <: js.Object */, TResource /* <: js.Object */] = Component[DragAndDropCalendarProps[TEvent, TResource], js.Object, Any]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -40,13 +50,13 @@ object libAddonsDragAndDropMod {
     
     var onDragOver: js.UndefOr[js.Function1[/* event */ DragEvent[Element], Unit]] = js.undefined
     
-    var onDragStart: js.UndefOr[js.Function1[/* args */ Action[TEvent], Unit]] = js.undefined
+    var onDragStart: js.UndefOr[js.Function1[/* args */ OnDragStartArgs[TEvent], Unit]] = js.undefined
     
-    var onDropFromOutside: js.UndefOr[js.Function1[/* args */ AllDay, Unit]] = js.undefined
+    var onDropFromOutside: js.UndefOr[js.Function1[/* args */ DragFromOutsideItemArgs, Unit]] = js.undefined
     
-    var onEventDrop: js.UndefOr[js.Function1[/* args */ IsAllDay[TEvent], Unit]] = js.undefined
+    var onEventDrop: js.UndefOr[js.Function1[/* args */ EventInteractionArgs[TEvent], Unit]] = js.undefined
     
-    var onEventResize: js.UndefOr[js.Function1[/* args */ IsAllDay[TEvent], Unit]] = js.undefined
+    var onEventResize: js.UndefOr[js.Function1[/* args */ EventInteractionArgs[TEvent], Unit]] = js.undefined
     
     var resizable: js.UndefOr[Boolean] = js.undefined
     
@@ -76,19 +86,19 @@ object libAddonsDragAndDropMod {
       
       inline def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
       
-      inline def setOnDragStart(value: /* args */ Action[TEvent] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
+      inline def setOnDragStart(value: /* args */ OnDragStartArgs[TEvent] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
       
       inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
       
-      inline def setOnDropFromOutside(value: /* args */ AllDay => Unit): Self = StObject.set(x, "onDropFromOutside", js.Any.fromFunction1(value))
+      inline def setOnDropFromOutside(value: /* args */ DragFromOutsideItemArgs => Unit): Self = StObject.set(x, "onDropFromOutside", js.Any.fromFunction1(value))
       
       inline def setOnDropFromOutsideUndefined: Self = StObject.set(x, "onDropFromOutside", js.undefined)
       
-      inline def setOnEventDrop(value: /* args */ IsAllDay[TEvent] => Unit): Self = StObject.set(x, "onEventDrop", js.Any.fromFunction1(value))
+      inline def setOnEventDrop(value: /* args */ EventInteractionArgs[TEvent] => Unit): Self = StObject.set(x, "onEventDrop", js.Any.fromFunction1(value))
       
       inline def setOnEventDropUndefined: Self = StObject.set(x, "onEventDrop", js.undefined)
       
-      inline def setOnEventResize(value: /* args */ IsAllDay[TEvent] => Unit): Self = StObject.set(x, "onEventResize", js.Any.fromFunction1(value))
+      inline def setOnEventResize(value: /* args */ EventInteractionArgs[TEvent] => Unit): Self = StObject.set(x, "onEventResize", js.Any.fromFunction1(value))
       
       inline def setOnEventResizeUndefined: Self = StObject.set(x, "onEventResize", js.undefined)
       
@@ -101,6 +111,106 @@ object libAddonsDragAndDropMod {
       inline def setResizableAccessorUndefined: Self = StObject.set(x, "resizableAccessor", js.undefined)
       
       inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
+    }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.reactBigCalendar.reactBigCalendarStrings.UP
+    - typings.reactBigCalendar.reactBigCalendarStrings.DOWN
+    - typings.reactBigCalendar.reactBigCalendarStrings.LEFT
+    - typings.reactBigCalendar.reactBigCalendarStrings.RIGHT
+  */
+  trait DragDirection extends StObject
+  object DragDirection {
+    
+    inline def DOWN: typings.reactBigCalendar.reactBigCalendarStrings.DOWN = "DOWN".asInstanceOf[typings.reactBigCalendar.reactBigCalendarStrings.DOWN]
+    
+    inline def LEFT: typings.reactBigCalendar.reactBigCalendarStrings.LEFT = "LEFT".asInstanceOf[typings.reactBigCalendar.reactBigCalendarStrings.LEFT]
+    
+    inline def RIGHT: typings.reactBigCalendar.reactBigCalendarStrings.RIGHT = "RIGHT".asInstanceOf[typings.reactBigCalendar.reactBigCalendarStrings.RIGHT]
+    
+    inline def UP: typings.reactBigCalendar.reactBigCalendarStrings.UP = "UP".asInstanceOf[typings.reactBigCalendar.reactBigCalendarStrings.UP]
+  }
+  
+  trait DragFromOutsideItemArgs extends StObject {
+    
+    var allDay: Boolean
+    
+    var end: stringOrDate
+    
+    var start: stringOrDate
+  }
+  object DragFromOutsideItemArgs {
+    
+    inline def apply(allDay: Boolean, end: stringOrDate, start: stringOrDate): DragFromOutsideItemArgs = {
+      val __obj = js.Dynamic.literal(allDay = allDay.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DragFromOutsideItemArgs]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragFromOutsideItemArgs] (val x: Self) extends AnyVal {
+      
+      inline def setAllDay(value: Boolean): Self = StObject.set(x, "allDay", value.asInstanceOf[js.Any])
+      
+      inline def setEnd(value: stringOrDate): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      
+      inline def setStart(value: stringOrDate): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait EventInteractionArgs[TEvent] extends StObject {
+    
+    var end: stringOrDate
+    
+    var event: TEvent
+    
+    var isAllDay: Boolean
+    
+    var start: stringOrDate
+  }
+  object EventInteractionArgs {
+    
+    inline def apply[TEvent](end: stringOrDate, event: TEvent, isAllDay: Boolean, start: stringOrDate): EventInteractionArgs[TEvent] = {
+      val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], isAllDay = isAllDay.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+      __obj.asInstanceOf[EventInteractionArgs[TEvent]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventInteractionArgs[?], TEvent] (val x: Self & EventInteractionArgs[TEvent]) extends AnyVal {
+      
+      inline def setEnd(value: stringOrDate): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      
+      inline def setEvent(value: TEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      
+      inline def setIsAllDay(value: Boolean): Self = StObject.set(x, "isAllDay", value.asInstanceOf[js.Any])
+      
+      inline def setStart(value: stringOrDate): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait OnDragStartArgs[TEvent] extends StObject {
+    
+    var action: DragAction
+    
+    var direction: DragDirection
+    
+    var event: TEvent
+  }
+  object OnDragStartArgs {
+    
+    inline def apply[TEvent](action: DragAction, direction: DragDirection, event: TEvent): OnDragStartArgs[TEvent] = {
+      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
+      __obj.asInstanceOf[OnDragStartArgs[TEvent]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnDragStartArgs[?], TEvent] (val x: Self & OnDragStartArgs[TEvent]) extends AnyVal {
+      
+      inline def setAction(value: DragAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      
+      inline def setDirection(value: DragDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      
+      inline def setEvent(value: TEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,13 +228,13 @@ object libAddonsDragAndDropMod {
     
     var onDragOver: js.UndefOr[js.Function1[/* event */ DragEvent[Element], Unit]] = js.undefined
     
-    var onDragStart: js.UndefOr[js.Function1[/* args */ Action[TEvent], Unit]] = js.undefined
+    var onDragStart: js.UndefOr[js.Function1[/* args */ OnDragStartArgs[TEvent], Unit]] = js.undefined
     
-    var onDropFromOutside: js.UndefOr[js.Function1[/* args */ AllDay, Unit]] = js.undefined
+    var onDropFromOutside: js.UndefOr[js.Function1[/* args */ DragFromOutsideItemArgs, Unit]] = js.undefined
     
-    var onEventDrop: js.UndefOr[js.Function1[/* args */ IsAllDay[TEvent], Unit]] = js.undefined
+    var onEventDrop: js.UndefOr[js.Function1[/* args */ EventInteractionArgs[TEvent], Unit]] = js.undefined
     
-    var onEventResize: js.UndefOr[js.Function1[/* args */ IsAllDay[TEvent], Unit]] = js.undefined
+    var onEventResize: js.UndefOr[js.Function1[/* args */ EventInteractionArgs[TEvent], Unit]] = js.undefined
     
     var resizable: js.UndefOr[Boolean] = js.undefined
     
@@ -166,19 +276,19 @@ object libAddonsDragAndDropMod {
       
       inline def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
       
-      inline def setOnDragStart(value: /* args */ Action[TEvent] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
+      inline def setOnDragStart(value: /* args */ OnDragStartArgs[TEvent] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
       
       inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
       
-      inline def setOnDropFromOutside(value: /* args */ AllDay => Unit): Self = StObject.set(x, "onDropFromOutside", js.Any.fromFunction1(value))
+      inline def setOnDropFromOutside(value: /* args */ DragFromOutsideItemArgs => Unit): Self = StObject.set(x, "onDropFromOutside", js.Any.fromFunction1(value))
       
       inline def setOnDropFromOutsideUndefined: Self = StObject.set(x, "onDropFromOutside", js.undefined)
       
-      inline def setOnEventDrop(value: /* args */ IsAllDay[TEvent] => Unit): Self = StObject.set(x, "onEventDrop", js.Any.fromFunction1(value))
+      inline def setOnEventDrop(value: /* args */ EventInteractionArgs[TEvent] => Unit): Self = StObject.set(x, "onEventDrop", js.Any.fromFunction1(value))
       
       inline def setOnEventDropUndefined: Self = StObject.set(x, "onEventDrop", js.undefined)
       
-      inline def setOnEventResize(value: /* args */ IsAllDay[TEvent] => Unit): Self = StObject.set(x, "onEventResize", js.Any.fromFunction1(value))
+      inline def setOnEventResize(value: /* args */ EventInteractionArgs[TEvent] => Unit): Self = StObject.set(x, "onEventResize", js.Any.fromFunction1(value))
       
       inline def setOnEventResizeUndefined: Self = StObject.set(x, "onEventResize", js.undefined)
       

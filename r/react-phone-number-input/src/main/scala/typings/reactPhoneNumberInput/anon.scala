@@ -268,7 +268,9 @@ object anon {
       
       inline def setDefaultCountryUndefined: Self = StObject.set(x, "defaultCountry", js.undefined)
       
-      inline def setInputComponent(
+      inline def setInputComponent(value: InputComponent[InputComponentProps]): Self = StObject.set(x, "inputComponent", value.asInstanceOf[js.Any])
+      
+      inline def setInputComponentFunction1(
         value: InputComponentProps => typings.react.mod.global.JSX.Element | (ComponentClass[InputComponentProps, Any])
       ): Self = StObject.set(x, "inputComponent", js.Any.fromFunction1(value))
       

@@ -3,7 +3,6 @@ package typings.gestalt.mod
 import typings.gestalt.anon.Event
 import typings.gestalt.anon.ItemDropdownOption
 import typings.react.mod.FocusEvent
-import typings.react.mod.ReactNode
 import typings.std.Element
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
@@ -12,26 +11,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DropdownItemProps extends StObject {
   
-  /**
-    * When supplied, will display a Badge next to the item's label.
-    */
   var badge: js.UndefOr[BadgeObject] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.undefined
+  var children: js.UndefOr[Node] = js.undefined
   
-  /**
-    * When supplied, will add a data-test-id prop to the dom element.
-    */
   var dataTestId: js.UndefOr[String] = js.undefined
   
   var onSelect: AbstractEventHandler[FocusEvent[HTMLInputElement, Element], ItemDropdownOption]
   
   var option: DropdownOption
   
-  /**
-    * Either the selected item info or an array of selected items,
-    * used to determine when the "selected" icon appears on an item
-    */
   var selected: js.UndefOr[DropdownOption | js.Array[DropdownOption]] = js.undefined
 }
 object DropdownItemProps {
@@ -51,7 +40,7 @@ object DropdownItemProps {
     
     inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
     
-    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Node): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     

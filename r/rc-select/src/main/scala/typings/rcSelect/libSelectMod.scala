@@ -177,11 +177,7 @@ object libSelectMod extends Shortcut {
   
   type RawValueType = String | Double
   
-  type SelectHandler[ValueType, OptionType /* <: BaseOptionType */] = js.Function2[
-    LabelInValueType | RawValueType | (/* value */ ValueType), 
-    /* option */ OptionType, 
-    Unit
-  ]
+  type SelectHandler[ValueType, OptionType /* <: BaseOptionType */] = js.Function2[/* value */ ValueType, /* option */ OptionType, Unit]
   
   trait SelectProps[ValueType, OptionType /* <: BaseOptionType */]
     extends StObject
@@ -328,7 +324,7 @@ object libSelectMod extends Shortcut {
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setOnDeselect(value: (LabelInValueType | RawValueType | ArrayElementType[ValueType], OptionType) => Unit): Self = StObject.set(x, "onDeselect", js.Any.fromFunction2(value))
+      inline def setOnDeselect(value: (ArrayElementType[ValueType], OptionType) => Unit): Self = StObject.set(x, "onDeselect", js.Any.fromFunction2(value))
       
       inline def setOnDeselectUndefined: Self = StObject.set(x, "onDeselect", js.undefined)
       
@@ -336,7 +332,7 @@ object libSelectMod extends Shortcut {
       
       inline def setOnSearchUndefined: Self = StObject.set(x, "onSearch", js.undefined)
       
-      inline def setOnSelect(value: (LabelInValueType | RawValueType | ArrayElementType[ValueType], OptionType) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
+      inline def setOnSelect(value: (ArrayElementType[ValueType], OptionType) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       

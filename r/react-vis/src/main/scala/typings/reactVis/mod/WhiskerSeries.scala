@@ -10,7 +10,7 @@ open class WhiskerSeries protected () extends AbstractSeries[WhiskerSeriesProps]
   def this(props: WhiskerSeriesProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: WhiskerSeriesProps, context: Any) = this()
 }

@@ -95,7 +95,7 @@ object libMaskMaskDataMod {
     def filter: ISpriteMaskFilter = js.native
     def filter_=(value: ISpriteMaskFilter): Unit = js.native
     
-    /** Indicator of the type (always true for {@link MaskData} objects) */
+    /** Indicator of the type (always true for {@link PIXI.MaskData} objects) */
     var isMaskData: Boolean = js.native
     
     /**
@@ -107,7 +107,7 @@ object libMaskMaskDataMod {
     /**
       * Number of samples of the sprite mask filter.
       * If set to `null`, the sample count of the current render target is used.
-      * @default PIXI.settings.FILTER_MULTISAMPLE
+      * @default PIXI.Filter.defaultMultisample
       */
     var multisample: MSAA_QUALITY = js.native
     

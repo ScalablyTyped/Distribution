@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * MFA Info as returned by the API
+  * MFA Info as returned by the API.
   */
 trait BaseMfaEnrollment extends StObject {
   

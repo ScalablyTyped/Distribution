@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__hapi
 
-Typings are for version 20.0
+Typings are for version 21.3.2
 
 ## Library description:
 HTTP Server framework
@@ -24,7 +24,7 @@ HTTP Server framework
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -1,7 +1,7 @@
 package typings.openui5
 
+import typings.openui5.anon.ActionItems
 import typings.openui5.anon.Content
-import typings.openui5.anon.Level
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
@@ -15,6 +15,8 @@ object sapMSelectionDetailsMod {
   @JSImport("sap/m/SelectionDetails", JSImport.Default)
   @js.native
   /**
+    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    *
     * Constructor for a new SelectionDetails.
     *
     * Accepts an object literal `mSettings` that defines initial property values, aggregated and associated
@@ -59,6 +61,8 @@ object sapMSelectionDetailsMod {
     val ^ : js.Any = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Creates a new subclass of class sap.m.SelectionDetails with name `sClassName` and enriches it with the
       * information contained in `oClassInfo`.
       *
@@ -112,6 +116,8 @@ object sapMSelectionDetailsMod {
     ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any], FNMetaImpl.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns a metadata object for class sap.m.SelectionDetails.
       *
       * @returns Metadata object describing this class
@@ -124,6 +130,8 @@ object sapMSelectionDetailsMod {
     extends typings.openui5.sapUiCoreControlMod.default {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Adds some action to the aggregation {@link #getActions actions}.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -136,6 +144,8 @@ object sapMSelectionDetailsMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Adds some actionGroup to the aggregation {@link #getActionGroups actionGroups}.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -148,6 +158,8 @@ object sapMSelectionDetailsMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Adds some item to the aggregation {@link #getItems items}.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -160,6 +172,8 @@ object sapMSelectionDetailsMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Attaches event handler `fnFunction` to the {@link #event:actionPress actionPress} event of this `sap.m.SelectionDetails`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -186,6 +200,8 @@ object sapMSelectionDetailsMod {
     oListener: js.Object
     ): this.type = js.native
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Attaches event handler `fnFunction` to the {@link #event:actionPress actionPress} event of this `sap.m.SelectionDetails`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -223,6 +239,8 @@ object sapMSelectionDetailsMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Attaches event handler `fnFunction` to the {@link #event:beforeClose beforeClose} event of this `sap.m.SelectionDetails`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -249,6 +267,8 @@ object sapMSelectionDetailsMod {
     oListener: js.Object
     ): this.type = js.native
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Attaches event handler `fnFunction` to the {@link #event:beforeClose beforeClose} event of this `sap.m.SelectionDetails`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -286,6 +306,8 @@ object sapMSelectionDetailsMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Attaches event handler `fnFunction` to the {@link #event:beforeOpen beforeOpen} event of this `sap.m.SelectionDetails`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -312,6 +334,8 @@ object sapMSelectionDetailsMod {
     oListener: js.Object
     ): this.type = js.native
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Attaches event handler `fnFunction` to the {@link #event:beforeOpen beforeOpen} event of this `sap.m.SelectionDetails`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -349,6 +373,8 @@ object sapMSelectionDetailsMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Attaches event handler `fnFunction` to the {@link #event:navigate navigate} event of this `sap.m.SelectionDetails`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -375,6 +401,8 @@ object sapMSelectionDetailsMod {
     oListener: js.Object
     ): this.type = js.native
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Attaches event handler `fnFunction` to the {@link #event:navigate navigate} event of this `sap.m.SelectionDetails`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -412,6 +440,8 @@ object sapMSelectionDetailsMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Attaches an event handler to the given listener to react to user selection interaction.
       *
       * @returns this to allow method chaining
@@ -428,6 +458,8 @@ object sapMSelectionDetailsMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Binds aggregation {@link #getItems items} to model data.
       *
       * See {@link sap.ui.base.ManagedObject#bindAggregation ManagedObject.bindAggregation} for a detailed description
@@ -441,6 +473,8 @@ object sapMSelectionDetailsMod {
     oBindingInfo: AggregationBindingInfo): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Destroys all the actionGroups in the aggregation {@link #getActionGroups actionGroups}.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -448,6 +482,8 @@ object sapMSelectionDetailsMod {
     def destroyActionGroups(): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Destroys all the actions in the aggregation {@link #getActions actions}.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -455,6 +491,8 @@ object sapMSelectionDetailsMod {
     def destroyActions(): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Destroys all the items in the aggregation {@link #getItems items}.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -462,6 +500,8 @@ object sapMSelectionDetailsMod {
     def destroyItems(): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Detaches event handler `fnFunction` from the {@link #event:actionPress actionPress} event of this `sap.m.SelectionDetails`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -486,6 +526,8 @@ object sapMSelectionDetailsMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Detaches event handler `fnFunction` from the {@link #event:beforeClose beforeClose} event of this `sap.m.SelectionDetails`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -510,6 +552,8 @@ object sapMSelectionDetailsMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Detaches event handler `fnFunction` from the {@link #event:beforeOpen beforeOpen} event of this `sap.m.SelectionDetails`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -534,6 +578,8 @@ object sapMSelectionDetailsMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Detaches event handler `fnFunction` from the {@link #event:navigate navigate} event of this `sap.m.SelectionDetails`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -558,6 +604,8 @@ object sapMSelectionDetailsMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Detaches the event which was attached by `attachSelectionHandler`.
       *
       * @returns this to allow method chaining
@@ -565,6 +613,8 @@ object sapMSelectionDetailsMod {
     def detachSelectionHandler(): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:actionPress actionPress} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -573,9 +623,11 @@ object sapMSelectionDetailsMod {
     def fireActionPress(/**
       * Parameters to pass along with the event
       */
-    mParameters: Level): this.type = js.native
+    mParameters: ActionItems): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:beforeClose beforeClose} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -587,6 +639,8 @@ object sapMSelectionDetailsMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:beforeOpen beforeOpen} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -598,6 +652,8 @@ object sapMSelectionDetailsMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:navigate navigate} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -609,6 +665,8 @@ object sapMSelectionDetailsMod {
     mParameters: Content): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Gets content of aggregation {@link #getActionGroups actionGroups}.
       *
       * Contains actions that are rendered as a dedicated {@link sap.m.StandardListItem item}. In case an action
@@ -618,6 +676,8 @@ object sapMSelectionDetailsMod {
     def getActionGroups(): js.Array[typings.openui5.sapUiCoreItemMod.default] = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Gets content of aggregation {@link #getActions actions}.
       *
       * Contains custom actions shown in the responsive toolbar below items on the first page.
@@ -625,6 +685,8 @@ object sapMSelectionDetailsMod {
     def getActions(): js.Array[typings.openui5.sapUiCoreItemMod.default] = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns the public facade of the SelectionDetails control for non inner framework usages.
       *
       * @returns The reduced facade for outer framework usages.
@@ -632,6 +694,8 @@ object sapMSelectionDetailsMod {
     def getFacade(): typings.openui5.sapUiBaseInterfaceMod.default = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Gets content of aggregation {@link #getItems items}.
       *
       * Contains {@link sap.m.SelectionDetailsItem items} that are displayed on the first page.
@@ -639,6 +703,8 @@ object sapMSelectionDetailsMod {
     def getItems(): js.Array[typings.openui5.sapMSelectionDetailsItemMod.default] = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Checks for the provided `sap.ui.core.Item` in the aggregation {@link #getActions actions}. and returns
       * its index if found or -1 otherwise.
       *
@@ -652,6 +718,8 @@ object sapMSelectionDetailsMod {
     ): int = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Checks for the provided `sap.ui.core.Item` in the aggregation {@link #getActionGroups actionGroups}.
       * and returns its index if found or -1 otherwise.
       *
@@ -665,6 +733,8 @@ object sapMSelectionDetailsMod {
     ): int = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Checks for the provided `sap.m.SelectionDetailsItem` in the aggregation {@link #getItems items}. and
       * returns its index if found or -1 otherwise.
       *
@@ -678,6 +748,8 @@ object sapMSelectionDetailsMod {
     ): int = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Inserts a action into the aggregation {@link #getActions actions}.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -696,6 +768,8 @@ object sapMSelectionDetailsMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Inserts a actionGroup into the aggregation {@link #getActionGroups actionGroups}.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -714,6 +788,8 @@ object sapMSelectionDetailsMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Inserts a item into the aggregation {@link #getItems items}.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -732,6 +808,8 @@ object sapMSelectionDetailsMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Method to register the factory function that creates the SelectionDetailsItems. The factory function
       * is called for every selected entry separately with three parameters. First parameter is the display data
       * array for each item out of the selection. Second parameter is the data array for each item out of the
@@ -756,6 +834,8 @@ object sapMSelectionDetailsMod {
       */
     vAction: String): typings.openui5.sapUiCoreItemMod.default | Null = js.native
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Removes a action from the aggregation {@link #getActions actions}.
       *
       * @returns The removed action or `null`
@@ -776,6 +856,8 @@ object sapMSelectionDetailsMod {
       */
     vActionGroup: String): typings.openui5.sapUiCoreItemMod.default | Null = js.native
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Removes a actionGroup from the aggregation {@link #getActionGroups actionGroups}.
       *
       * @returns The removed actionGroup or `null`
@@ -792,6 +874,8 @@ object sapMSelectionDetailsMod {
     ): typings.openui5.sapUiCoreItemMod.default | Null = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Removes all the controls from the aggregation {@link #getActionGroups actionGroups}.
       *
       * Additionally, it unregisters them from the hosting UIArea.
@@ -801,6 +885,8 @@ object sapMSelectionDetailsMod {
     def removeAllActionGroups(): js.Array[typings.openui5.sapUiCoreItemMod.default] = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Removes all the controls from the aggregation {@link #getActions actions}.
       *
       * Additionally, it unregisters them from the hosting UIArea.
@@ -810,6 +896,8 @@ object sapMSelectionDetailsMod {
     def removeAllActions(): js.Array[typings.openui5.sapUiCoreItemMod.default] = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Removes all the controls from the aggregation {@link #getItems items}.
       *
       * Additionally, it unregisters them from the hosting UIArea.
@@ -823,6 +911,8 @@ object sapMSelectionDetailsMod {
       */
     vItem: String): typings.openui5.sapMSelectionDetailsItemMod.default | Null = js.native
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Removes a item from the aggregation {@link #getItems items}.
       *
       * @returns The removed item or `null`
@@ -839,6 +929,8 @@ object sapMSelectionDetailsMod {
     ): typings.openui5.sapMSelectionDetailsItemMod.default | Null = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets the popover to modal or non-modal based on the given parameter. This only takes effect on desktop
       * or tablet. Please see the documentation {@link sap.m.ResponsivePopover#modal}.
       *
@@ -850,6 +942,8 @@ object sapMSelectionDetailsMod {
     modal: Boolean): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Unbinds aggregation {@link #getItems items} from model data.
       *
       * @returns Reference to `this` in order to allow method chaining

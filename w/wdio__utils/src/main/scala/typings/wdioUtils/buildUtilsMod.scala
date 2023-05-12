@@ -24,6 +24,7 @@ object buildUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def canAccess(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canAccess")().asInstanceOf[Boolean]
   inline def canAccess(file: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canAccess")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def commandCallStructure(commandName: String, args: js.Array[Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("commandCallStructure")(commandName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -40,7 +41,7 @@ object buildUtilsMod {
   
   inline def overwriteElementCommands(propertiesObject: Dictkey): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("overwriteElementCommands")(propertiesObject.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def safeRequire(name: String): ServicePlugin | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("safeRequire")(name.asInstanceOf[js.Any]).asInstanceOf[ServicePlugin | Null]
+  inline def safeImport(name: String): js.Promise[ServicePlugin | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeImport")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ServicePlugin | Null]]
   
   inline def sleep(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("sleep")().asInstanceOf[js.Promise[Any]]
   inline def sleep(ms: Double): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("sleep")(ms.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]

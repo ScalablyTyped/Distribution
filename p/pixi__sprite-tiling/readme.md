@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi__sprite-tiling
 
-Typings are for version 7.0.4
+Typings are for version 7.2.4
 
 ## Library description:
 Tiling Sprites for faster rendering a tiling image

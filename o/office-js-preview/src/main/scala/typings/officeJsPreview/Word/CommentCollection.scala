@@ -1,7 +1,6 @@
 package typings.officeJsPreview.Word
 
 import typings.officeJsPreview.OfficeExtension.ClientObject
-import typings.officeJsPreview.OfficeExtension.EventHandlers
 import typings.officeJsPreview.OfficeExtension.LoadOption
 import typings.officeJsPreview.Word.Interfaces.CollectionLoadOptions
 import typings.officeJsPreview.Word.Interfaces.CommentCollectionData
@@ -54,61 +53,6 @@ trait CommentCollection
   def load(propertyNamesAndPaths: LoadOption): CommentCollection = js.native
   def load(propertyNames: String): CommentCollection = js.native
   def load(propertyNames: js.Array[String]): CommentCollection = js.native
-  
-  /**
-    * Occurs when new comments are added.
-    *
-    * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-    *
-    * @eventproperty
-    * @beta
-    */
-  val onCommentAdded: EventHandlers[CommentEventArgs] = js.native
-  
-  /**
-    * Occurs when a comment or its reply is changed.
-    *
-    * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-    *
-    * @eventproperty
-    * @beta
-    */
-  val onCommentChanged: EventHandlers[CommentEventArgs] = js.native
-  
-  /**
-    * Occurs when comments are deleted.
-    *
-    * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-    *
-    * @eventproperty
-    * @beta
-    */
-  val onCommentDeleted: EventHandlers[CommentEventArgs] = js.native
-  
-  /**
-    * Occurs when a comment is deselected.
-    *
-    * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-    *
-    * @eventproperty
-    * @beta
-    */
-  val onCommentDeselected: EventHandlers[CommentEventArgs] = js.native
-  
-  /**
-    * Occurs when a comment is selected.
-    *
-    * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-    *
-    * @eventproperty
-    * @beta
-    */
-  val onCommentSelected: EventHandlers[CommentEventArgs] = js.native
   
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@rollup/plugin-node-resolve" : "15.0.1"
+      "@rollup/plugin-node-resolve" : "15.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@rollup/plugin-node-resolve" : "15.0.1"
+      "@rollup/plugin-node-resolve" : "15.0.2"
     }
   ],
   "compile-devDependencies" : [

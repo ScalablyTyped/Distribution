@@ -41,7 +41,7 @@ object libComponentsAntdIconMod extends Shortcut {
   trait AntdIconType
     extends StObject
        with Color
-       with FunctionalComponent[IconComponentProps, js.Object] {
+       with FunctionalComponent[IconComponentProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_AntdIconType: String = js.native

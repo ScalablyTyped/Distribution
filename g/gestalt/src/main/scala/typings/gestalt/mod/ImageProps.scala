@@ -14,7 +14,9 @@ import typings.gestalt.gestaltStrings.low
 import typings.gestalt.gestaltStrings.none
 import typings.gestalt.gestaltStrings.presentation
 import typings.gestalt.gestaltStrings.sync
-import typings.react.mod.ReactNode
+import typings.react.mod.SyntheticEvent
+import typings.std.Event
+import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,9 +25,9 @@ trait ImageProps extends StObject {
   
   var alt: String
   
-  var children: js.UndefOr[ReactNode] = js.undefined
+  var children: js.UndefOr[Node] = js.undefined
   
-  var color: String
+  var color: js.UndefOr[String] = js.undefined
   
   var crossOrigin: js.UndefOr[anonymous | `use-credentials`] = js.undefined
   
@@ -33,9 +35,9 @@ trait ImageProps extends StObject {
   
   var elementTiming: js.UndefOr[String] = js.undefined
   
-  var fit: js.UndefOr[cover | contain | none] = js.undefined
+  var fetchPriority: js.UndefOr[high | low | auto] = js.undefined
   
-  var importance: js.UndefOr[high | low | auto] = js.undefined
+  var fit: js.UndefOr[cover | contain | none] = js.undefined
   
   var loading: js.UndefOr[eager | `lazy` | auto] = js.undefined
   
@@ -43,9 +45,9 @@ trait ImageProps extends StObject {
   
   var naturalWidth: Double
   
-  var onError: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onError: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLImageElement, Event], js.Object]] = js.undefined
   
-  var onLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onLoad: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLImageElement, Event], js.Object]] = js.undefined
   
   var role: js.UndefOr[img | presentation] = js.undefined
   
@@ -57,8 +59,8 @@ trait ImageProps extends StObject {
 }
 object ImageProps {
   
-  inline def apply(alt: String, color: String, naturalHeight: Double, naturalWidth: Double, src: String): ImageProps = {
-    val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], naturalHeight = naturalHeight.asInstanceOf[js.Any], naturalWidth = naturalWidth.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
+  inline def apply(alt: String, naturalHeight: Double, naturalWidth: Double, src: String): ImageProps = {
+    val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any], naturalHeight = naturalHeight.asInstanceOf[js.Any], naturalWidth = naturalWidth.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageProps]
   }
   
@@ -67,11 +69,13 @@ object ImageProps {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
-    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Node): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     inline def setCrossOrigin(value: anonymous | `use-credentials`): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
@@ -85,13 +89,13 @@ object ImageProps {
     
     inline def setElementTimingUndefined: Self = StObject.set(x, "elementTiming", js.undefined)
     
+    inline def setFetchPriority(value: high | low | auto): Self = StObject.set(x, "fetchPriority", value.asInstanceOf[js.Any])
+    
+    inline def setFetchPriorityUndefined: Self = StObject.set(x, "fetchPriority", js.undefined)
+    
     inline def setFit(value: cover | contain | none): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
     
     inline def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
-    
-    inline def setImportance(value: high | low | auto): Self = StObject.set(x, "importance", value.asInstanceOf[js.Any])
-    
-    inline def setImportanceUndefined: Self = StObject.set(x, "importance", js.undefined)
     
     inline def setLoading(value: eager | `lazy` | auto): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
@@ -101,11 +105,15 @@ object ImageProps {
     
     inline def setNaturalWidth(value: Double): Self = StObject.set(x, "naturalWidth", value.asInstanceOf[js.Any])
     
-    inline def setOnError(value: () => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
+    inline def setOnError(
+      value: /* arg */ js.Object & (typings.gestalt.anon.Event[SyntheticEvent[HTMLImageElement, Event]]) => Unit
+    ): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    inline def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
+    inline def setOnLoad(
+      value: /* arg */ js.Object & (typings.gestalt.anon.Event[SyntheticEvent[HTMLImageElement, Event]]) => Unit
+    ): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
     
     inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
     

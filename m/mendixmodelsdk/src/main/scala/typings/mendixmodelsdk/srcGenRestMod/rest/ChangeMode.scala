@@ -13,9 +13,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Interfaces and instance classes for types from the Mendix sub meta model `Rest`.
-  */
-/**
   * In version 9.11.0: introduced
   */
 /* note: abstract class */ @JSImport("mendixmodelsdk/src/gen/rest", "rest.ChangeMode")

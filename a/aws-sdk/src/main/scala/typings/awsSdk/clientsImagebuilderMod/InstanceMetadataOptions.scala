@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InstanceMetadataOptions extends StObject {
   
   /**
-    * Limit the number of hops that an instance metadata request can traverse to reach its destination.
+    * Limit the number of hops that an instance metadata request can traverse to reach its destination. The default is one hop. However, if HTTP tokens are required, container image builds need a minimum of two hops.
     */
   var httpPutResponseHopLimit: js.UndefOr[HttpPutResponseHopLimit] = js.undefined
   

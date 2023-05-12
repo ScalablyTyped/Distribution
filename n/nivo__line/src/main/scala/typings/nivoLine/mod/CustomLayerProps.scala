@@ -32,12 +32,13 @@ import typings.nivoTooltip.distTypesTypesMod.CrosshairType
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
+import typings.reactSpringCore.mod.SpringConfig
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined parent @nivo/line.Omit<@nivo/line.@nivo/line.LineSvgProps, 'xScale' | 'yScale'> */
+/* Inlined parent @nivo/line.@nivo/line.Omit<@nivo/line.@nivo/line.LineSvgProps, 'xScale' | 'yScale'> */
 trait CustomLayerProps extends StObject {
   
   var animate: js.UndefOr[Boolean] = js.undefined
@@ -102,7 +103,7 @@ trait CustomLayerProps extends StObject {
   
   var legends: js.UndefOr[js.Array[LegendProps]] = js.undefined
   
-  var lineGenerator: Line_[js.Array[X]]
+  var lineGenerator: Line_[X]
   
   var lineWidth: js.UndefOr[Double] = js.undefined
   
@@ -110,9 +111,7 @@ trait CustomLayerProps extends StObject {
   
   var markers: js.UndefOr[js.Array[CartesianMarkerProps[typings.nivoCore.mod.DatumValue]]] = js.undefined
   
-  var motionConfig: js.UndefOr[
-    String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-  ] = js.undefined
+  var motionConfig: js.UndefOr[String | SpringConfig] = js.undefined
   
   var onClick: js.UndefOr[PointMouseHandler] = js.undefined
   
@@ -166,7 +165,7 @@ object CustomLayerProps {
     data: js.Array[Serie],
     innerHeight: Double,
     innerWidth: Double,
-    lineGenerator: Line_[js.Array[X]],
+    lineGenerator: Line_[X],
     points: js.Array[Point],
     series: js.Array[ComputedSerie],
     xScale: Scale[Any, Any],
@@ -321,7 +320,7 @@ object CustomLayerProps {
     
     inline def setLegendsVarargs(value: LegendProps*): Self = StObject.set(x, "legends", js.Array(value*))
     
-    inline def setLineGenerator(value: Line_[js.Array[X]]): Self = StObject.set(x, "lineGenerator", value.asInstanceOf[js.Any])
+    inline def setLineGenerator(value: Line_[X]): Self = StObject.set(x, "lineGenerator", value.asInstanceOf[js.Any])
     
     inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
@@ -337,9 +336,7 @@ object CustomLayerProps {
     
     inline def setMarkersVarargs(value: CartesianMarkerProps[typings.nivoCore.mod.DatumValue]*): Self = StObject.set(x, "markers", js.Array(value*))
     
-    inline def setMotionConfig(
-      value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-    ): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
+    inline def setMotionConfig(value: String | SpringConfig): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
     
     inline def setMotionConfigUndefined: Self = StObject.set(x, "motionConfig", js.undefined)
     

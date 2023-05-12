@@ -6,7 +6,7 @@ import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
 import typings.wordpressBlockEditor.anon.PartialEditorSettingsEdit
 import typings.wordpressBlockEditor.componentsProviderMod.BlockEditorProvider.Props
-import typings.wordpressBlocks.mod.BlockInstance
+import typings.wordpressBlocks.BlockInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

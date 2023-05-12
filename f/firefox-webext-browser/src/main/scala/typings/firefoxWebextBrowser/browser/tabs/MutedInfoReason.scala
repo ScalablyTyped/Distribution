@@ -1,5 +1,6 @@
 package typings.firefoxWebextBrowser.browser.tabs
 
+import typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.user_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* tabs types */
 /** An event that caused a muted state change. */
 /* Rewritten from type alias, can be one of: 
-  - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.user
+  - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.user_
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.capture
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`extension`
 */
@@ -18,5 +19,5 @@ object MutedInfoReason {
   
   inline def `extension`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`extension` = "extension".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`extension`]
   
-  inline def user: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.user = "user".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.user]
+  inline def user: user_ = "user".asInstanceOf[user_]
 }

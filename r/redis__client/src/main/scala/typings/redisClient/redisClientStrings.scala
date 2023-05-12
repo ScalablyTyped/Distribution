@@ -4,6 +4,7 @@ import typings.redisClient.distLibCommandsBitopMod.BitOperations
 import typings.redisClient.distLibCommandsGenericTransformersMod.GeoUnits
 import typings.redisClient.distLibCommandsGenericTransformersMod.ListSide
 import typings.redisClient.distLibCommandsGenericTransformersMod.SortedSetSide
+import typings.redisClient.distLibCommandsLatencyGRAPHMod.EventType
 import typings.redisClient.distLibCommandsLinsertMod.LInsertPosition
 import typings.redisClient.distLibCommandsRoleMod.RoleReplicaState
 import org.scalablytyped.runtime.StObject
@@ -113,6 +114,10 @@ object redisClientStrings {
   inline def LT: LT = "LT".asInstanceOf[LT]
   
   @js.native
+  sealed trait MASTER extends StObject
+  inline def MASTER: MASTER = "MASTER".asInstanceOf[MASTER]
+  
+  @js.native
   sealed trait MAX
     extends StObject
        with SortedSetSide
@@ -135,6 +140,10 @@ object redisClientStrings {
   @js.native
   sealed trait NO extends StObject
   inline def NO: NO = "NO".asInstanceOf[NO]
+  
+  @js.native
+  sealed trait NORMAL extends StObject
+  inline def NORMAL: NORMAL = "NORMAL".asInstanceOf[NORMAL]
   
   @js.native
   sealed trait NOSAVE extends StObject
@@ -165,6 +174,10 @@ object redisClientStrings {
   inline def OVERFLOW: OVERFLOW = "OVERFLOW".asInstanceOf[OVERFLOW]
   
   @js.native
+  sealed trait PUBSUB extends StObject
+  inline def PUBSUB: PUBSUB = "PUBSUB".asInstanceOf[PUBSUB]
+  
+  @js.native
   sealed trait PX extends StObject
   inline def PX: PX = "PX".asInstanceOf[PX]
   
@@ -175,6 +188,10 @@ object redisClientStrings {
   @js.native
   sealed trait REPLACE extends StObject
   inline def REPLACE: REPLACE = "REPLACE".asInstanceOf[REPLACE]
+  
+  @js.native
+  sealed trait REPLICA extends StObject
+  inline def REPLICA: REPLICA = "REPLICA".asInstanceOf[REPLICA]
   
   @js.native
   sealed trait RIGHT
@@ -233,11 +250,67 @@ object redisClientStrings {
   inline def YES: YES = "YES".asInstanceOf[YES]
   
   @js.native
+  sealed trait `active-defrag-cycle`
+    extends StObject
+       with EventType
+  inline def `active-defrag-cycle`: `active-defrag-cycle` = "active-defrag-cycle".asInstanceOf[`active-defrag-cycle`]
+  
+  @js.native
+  sealed trait `aof-fsync-always`
+    extends StObject
+       with EventType
+  inline def `aof-fsync-always`: `aof-fsync-always` = "aof-fsync-always".asInstanceOf[`aof-fsync-always`]
+  
+  @js.native
+  sealed trait `aof-rename`
+    extends StObject
+       with EventType
+  inline def `aof-rename`: `aof-rename` = "aof-rename".asInstanceOf[`aof-rename`]
+  
+  @js.native
+  sealed trait `aof-rewrite-diff-write`
+    extends StObject
+       with EventType
+  inline def `aof-rewrite-diff-write`: `aof-rewrite-diff-write` = "aof-rewrite-diff-write".asInstanceOf[`aof-rewrite-diff-write`]
+  
+  @js.native
+  sealed trait `aof-stat`
+    extends StObject
+       with EventType
+  inline def `aof-stat`: `aof-stat` = "aof-stat".asInstanceOf[`aof-stat`]
+  
+  @js.native
+  sealed trait `aof-write`
+    extends StObject
+       with EventType
+  inline def `aof-write`: `aof-write` = "aof-write".asInstanceOf[`aof-write`]
+  
+  @js.native
+  sealed trait `aof-write-active-child`
+    extends StObject
+       with EventType
+  inline def `aof-write-active-child`: `aof-write-active-child` = "aof-write-active-child".asInstanceOf[`aof-write-active-child`]
+  
+  @js.native
+  sealed trait `aof-write-alone`
+    extends StObject
+       with EventType
+  inline def `aof-write-alone`: `aof-write-alone` = "aof-write-alone".asInstanceOf[`aof-write-alone`]
+  
+  @js.native
+  sealed trait `aof-write-pending-fsync`
+    extends StObject
+       with EventType
+  inline def `aof-write-pending-fsync`: `aof-write-pending-fsync` = "aof-write-pending-fsync".asInstanceOf[`aof-write-pending-fsync`]
+  
+  @js.native
   sealed trait channels extends StObject
   inline def channels: channels = "channels".asInstanceOf[channels]
   
   @js.native
-  sealed trait command extends StObject
+  sealed trait command
+    extends StObject
+       with EventType
   inline def command: command = "command".asInstanceOf[command]
   
   @js.native
@@ -291,8 +364,38 @@ object redisClientStrings {
   inline def events: events = "events".asInstanceOf[events]
   
   @js.native
+  sealed trait `eviction-cycle`
+    extends StObject
+       with EventType
+  inline def `eviction-cycle`: `eviction-cycle` = "eviction-cycle".asInstanceOf[`eviction-cycle`]
+  
+  @js.native
+  sealed trait `eviction-del`
+    extends StObject
+       with EventType
+  inline def `eviction-del`: `eviction-del` = "eviction-del".asInstanceOf[`eviction-del`]
+  
+  @js.native
+  sealed trait `expire-cycle`
+    extends StObject
+       with EventType
+  inline def `expire-cycle`: `expire-cycle` = "expire-cycle".asInstanceOf[`expire-cycle`]
+  
+  @js.native
+  sealed trait `fast-command`
+    extends StObject
+       with EventType
+  inline def `fast-command`: `fast-command` = "fast-command".asInstanceOf[`fast-command`]
+  
+  @js.native
   sealed trait flags extends StObject
   inline def flags: flags = "flags".asInstanceOf[flags]
+  
+  @js.native
+  sealed trait fork
+    extends StObject
+       with EventType
+  inline def fork: fork = "fork".asInstanceOf[fork]
   
   @js.native
   sealed trait ft
@@ -329,8 +432,8 @@ object redisClientStrings {
   inline def m: m = "m".asInstanceOf[m]
   
   @js.native
-  sealed trait master extends StObject
-  inline def master: master = "master".asInstanceOf[master]
+  sealed trait master_ extends StObject
+  inline def master_ : master_ = "master".asInstanceOf[master_]
   
   @js.native
   sealed trait matches extends StObject
@@ -351,8 +454,8 @@ object redisClientStrings {
   inline def node: node = "node".asInstanceOf[node]
   
   @js.native
-  sealed trait normal extends StObject
-  inline def normal: normal = "normal".asInstanceOf[normal]
+  sealed trait normal_ extends StObject
+  inline def normal_ : normal_ = "normal".asInstanceOf[normal_]
   
   @js.native
   sealed trait passwords extends StObject
@@ -363,16 +466,22 @@ object redisClientStrings {
   inline def prefixes: prefixes = "prefixes".asInstanceOf[prefixes]
   
   @js.native
-  sealed trait pubsub extends StObject
-  inline def pubsub: pubsub = "pubsub".asInstanceOf[pubsub]
+  sealed trait pubsub_ extends StObject
+  inline def pubsub_ : pubsub_ = "pubsub".asInstanceOf[pubsub_]
+  
+  @js.native
+  sealed trait `rdb-unlink-temp-file`
+    extends StObject
+       with EventType
+  inline def `rdb-unlink-temp-file`: `rdb-unlink-temp-file` = "rdb-unlink-temp-file".asInstanceOf[`rdb-unlink-temp-file`]
   
   @js.native
   sealed trait redirect extends StObject
   inline def redirect: redirect = "redirect".asInstanceOf[redirect]
   
   @js.native
-  sealed trait replica extends StObject
-  inline def replica: replica = "replica".asInstanceOf[replica]
+  sealed trait replica_ extends StObject
+  inline def replica_ : replica_ = "replica".asInstanceOf[replica_]
   
   @js.native
   sealed trait running_script extends StObject

@@ -11,7 +11,7 @@ trait CitationCitedArtifactVersion
   var _value: js.UndefOr[Element] = js.undefined
   
   /**
-    * Citation for the main version of the cited artifact.
+    * When referencing a baseCitation, one may inherit any data from the referenced Citation Resource and consider any data in the current Citation Resource as superceding to be version-specific.
     */
   var baseCitation: js.UndefOr[Reference] = js.undefined
   

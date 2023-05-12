@@ -10,18 +10,18 @@ trait Credentials extends StObject {
   
   var expiresIn: Double
   
-  var idToken: String
+  var idToken: js.UndefOr[String] = js.undefined
   
   var refreshToken: js.UndefOr[String] = js.undefined
   
-  var scope: String
+  var scope: js.UndefOr[String] = js.undefined
   
   var tokenType: String
 }
 object Credentials {
   
-  inline def apply(accessToken: String, expiresIn: Double, idToken: String, scope: String, tokenType: String): Credentials = {
-    val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], expiresIn = expiresIn.asInstanceOf[js.Any], idToken = idToken.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], tokenType = tokenType.asInstanceOf[js.Any])
+  inline def apply(accessToken: String, expiresIn: Double, tokenType: String): Credentials = {
+    val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], expiresIn = expiresIn.asInstanceOf[js.Any], tokenType = tokenType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Credentials]
   }
   
@@ -34,11 +34,15 @@ object Credentials {
     
     inline def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
     
+    inline def setIdTokenUndefined: Self = StObject.set(x, "idToken", js.undefined)
+    
     inline def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
     
     inline def setRefreshTokenUndefined: Self = StObject.set(x, "refreshToken", js.undefined)
     
     inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     inline def setTokenType(value: String): Self = StObject.set(x, "tokenType", value.asInstanceOf[js.Any])
   }

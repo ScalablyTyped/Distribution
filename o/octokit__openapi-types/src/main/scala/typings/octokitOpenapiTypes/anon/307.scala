@@ -8,7 +8,7 @@ trait `307` extends StObject {
   
   var `307`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['temporary_redirect'] */ js.Any
   
-  /** If an organization owner has configured the organization to prevent members from deleting organization-owned repositories, a member will get this response: */
+  /** @description If an organization owner has configured the organization to prevent members from deleting organization-owned repositories, a member will get this response: */
   var `403`: ContentApplicationjsonDocumentationurl
   
   var `404`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any

@@ -16,7 +16,7 @@ object libCommonCancellationMod {
     val isCancellationRequested: Boolean = js.native
     
     /**
-      * An [event](#Event) which fires upon cancellation.
+      * An {@link Event event} which fires upon cancellation.
       */
     def onCancellationRequested(listener: js.Function1[/* e */ Any, Any]): Disposable = js.native
     def onCancellationRequested(listener: js.Function1[/* e */ Any, Any], thisArgs: Any): Disposable = js.native

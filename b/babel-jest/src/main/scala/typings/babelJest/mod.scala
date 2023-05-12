@@ -15,8 +15,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def createTransformer(): SyncTransformer[TransformOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransformer")().asInstanceOf[SyncTransformer[TransformOptions]]
-    inline def createTransformer(transformerConfig: TransformOptions): SyncTransformer[TransformOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransformer")(transformerConfig.asInstanceOf[js.Any]).asInstanceOf[SyncTransformer[TransformOptions]]
+    inline def createTransformer(): SyncTransformer[TransformOptions] | js.Promise[SyncTransformer[TransformOptions]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransformer")().asInstanceOf[SyncTransformer[TransformOptions] | js.Promise[SyncTransformer[TransformOptions]]]
+    inline def createTransformer(transformerConfig: TransformOptions): SyncTransformer[TransformOptions] | js.Promise[SyncTransformer[TransformOptions]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransformer")(transformerConfig.asInstanceOf[js.Any]).asInstanceOf[SyncTransformer[TransformOptions] | js.Promise[SyncTransformer[TransformOptions]]]
     @JSImport("babel-jest", "default.createTransformer")
     @js.native
     def createTransformer_Fdefault: TransformerCreator[SyncTransformer[TransformOptions], TransformOptions] = js.native

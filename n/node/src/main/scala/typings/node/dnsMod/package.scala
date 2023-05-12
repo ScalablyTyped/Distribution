@@ -74,6 +74,8 @@ inline def TIMEOUT: String = ^.asInstanceOf[js.Dynamic].selectDynamic("TIMEOUT")
 
 inline def V4MAPPED: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("V4MAPPED").asInstanceOf[Double]
 
+inline def getDefaultResultOrder(): ipv4first | verbatim = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultResultOrder")().asInstanceOf[ipv4first | verbatim]
+
 inline def getServers(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getServers")().asInstanceOf[js.Array[String]]
 
 inline def lookup(

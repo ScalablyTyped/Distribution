@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-object-hash
 
-Typings are for version 2.3.10
+Typings are for version 3.0.0
 
 ## Library description:
 Node.js object hash library with properties/arrays sorting to provide constant hashes

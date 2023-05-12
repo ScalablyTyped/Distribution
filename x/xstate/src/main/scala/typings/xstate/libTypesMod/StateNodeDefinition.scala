@@ -24,9 +24,9 @@ trait StateNodeDefinition[TContext, TStateSchema /* <: StateSchema[Any] */, TEve
   
   var description: js.UndefOr[String] = js.undefined
   
-  var entry: js.Array[ActionObject[TContext, TEvent]]
+  var entry: js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]]
   
-  var exit: js.Array[ActionObject[TContext, TEvent]]
+  var exit: js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]]
   
   var history: js.UndefOr[Boolean | shallow | deep] = js.undefined
   
@@ -61,8 +61,8 @@ object StateNodeDefinition {
   inline def apply[TContext, TStateSchema /* <: StateSchema[Any] */, TEvent /* <: EventObject */](
     activities: js.Array[ActivityDefinition[TContext, TEvent]],
     context: TContext,
-    entry: js.Array[ActionObject[TContext, TEvent]],
-    exit: js.Array[ActionObject[TContext, TEvent]],
+    entry: js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]],
+    exit: js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]],
     id: String,
     invoke: js.Array[InvokeDefinition[TContext, TEvent]],
     key: String,
@@ -98,13 +98,13 @@ object StateNodeDefinition {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setEntry(value: js.Array[ActionObject[TContext, TEvent]]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+    inline def setEntry(value: js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
     
-    inline def setEntryVarargs(value: (ActionObject[TContext, TEvent])*): Self = StObject.set(x, "entry", js.Array(value*))
+    inline def setEntryVarargs(value: (ActionObject[TContext, TEvent, TEvent, BaseActionObject])*): Self = StObject.set(x, "entry", js.Array(value*))
     
-    inline def setExit(value: js.Array[ActionObject[TContext, TEvent]]): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
+    inline def setExit(value: js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]]): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
     
-    inline def setExitVarargs(value: (ActionObject[TContext, TEvent])*): Self = StObject.set(x, "exit", js.Array(value*))
+    inline def setExitVarargs(value: (ActionObject[TContext, TEvent, TEvent, BaseActionObject])*): Self = StObject.set(x, "exit", js.Array(value*))
     
     inline def setHistory(value: Boolean | shallow | deep): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     

@@ -2,6 +2,7 @@ package typings.gestalt.mod
 
 import typings.gestalt.anon.DangerouslyDisableOnNavigation
 import typings.gestalt.anon.Event
+import typings.gestalt.anon.Number
 import typings.gestalt.gestaltStrings.page
 import typings.gestalt.gestaltStrings.section
 import typings.react.mod.KeyboardEvent
@@ -15,30 +16,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SideNavigationNestedItemProps extends StObject {
   
-  /**
-    * When set to 'page' or 'section', it displays the item in "active" state. See the [Accessibility](https://gestalt.pinterest.systems/SideNavigation#Accessibility) guidelines to learn more.
-    */
   var active: js.UndefOr[page | section] = js.undefined
   
-  /**
-    * Directs users to the url when item is selected.
-    */
+  var counter: js.UndefOr[Number] = js.undefined
+  
   var href: String
   
-  /**
-    * Label for the item.
-    */
   var label: String
   
-  /**
-    * Callback when the user selects an item using the mouse or keyboard.
-    */
-  var onClick: js.UndefOr[
-    AbstractEventHandler[
-      (MouseEvent[HTMLAnchorElement | HTMLButtonElement, NativeMouseEvent]) | (KeyboardEvent[HTMLAnchorElement | HTMLButtonElement]), 
-      DangerouslyDisableOnNavigation
-    ]
-  ] = js.undefined
+  var onClick: js.UndefOr[ButtonEventHandlerType] = js.undefined
 }
 object SideNavigationNestedItemProps {
   
@@ -53,6 +39,10 @@ object SideNavigationNestedItemProps {
     inline def setActive(value: page | section): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    
+    inline def setCounter(value: Number): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
+    
+    inline def setCounterUndefined: Self = StObject.set(x, "counter", js.undefined)
     
     inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     

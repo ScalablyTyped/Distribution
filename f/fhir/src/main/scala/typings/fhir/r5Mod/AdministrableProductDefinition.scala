@@ -13,6 +13,8 @@ trait AdministrableProductDefinition
      with DomainResource
      with _FhirResource {
   
+  var _description: js.UndefOr[Element] = js.undefined
+  
   var _status: js.UndefOr[Element] = js.undefined
   
   /**
@@ -21,12 +23,17 @@ trait AdministrableProductDefinition
   var administrableDoseForm: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
+    * A general description of the product, when in its final form, suitable for administration e.g. effervescent blue liquid, to be swallowed. Intended to be used when the other structured properties of this resource are insufficient or cannot be supported. It is not intended to duplicate information already carried elswehere.
+    */
+  var description: js.UndefOr[String] = js.undefined
+  
+  /**
     * A device that is integral to the medicinal product, in effect being considered as an "ingredient" of the medicinal product. This is not intended for devices that are just co-packaged.
     */
   var device: js.UndefOr[Reference] = js.undefined
   
   /**
-    * The medicinal product that this is a prepared administrable form of. This element is not a reference to the item(s) that make up this administrable form (for which see AdministrableProductDefinition.producedFrom). It is medicinal product as a whole, which may have several components (as well as packaging, devices etc.), that are given to the patient in this final administrable form. A single medicinal product may have several different administrable products (e.g. a tablet and a cream), and these could have different administrable forms (e.g. tablet as oral solid, or tablet crushed).
+    * References a product from which one or more of the constituent parts of that product can be prepared and used as described by this administrable product.  If this administrable product describes the administration of a crushed tablet, the 'formOf' would be the product representing a distribution containing tablets and possibly also a cream.  This is distinct from the 'producedFrom' which refers to the specific components of the product that are used in this preparation, rather than the product as a whole.
     */
   var formOf: js.UndefOr[js.Array[Reference]] = js.undefined
   
@@ -41,12 +48,12 @@ trait AdministrableProductDefinition
   var ingredient: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
-    * The constituent manufactured item(s) that this administrable product is produced from. Either a single item, or several that are mixed before administration (e.g. a power item and a solvent item, to make a consumable solution). Note the items this is produced from are not raw ingredients (see AdministrableProductDefinition.ingredient), but manufactured medication items (ManufacturedItemDefinitions), which may be combined or prepared and transformed for patient use. The constituent items that this administrable form is produced from are all part of the product (for which see AdministrableProductDefinition.formOf).
+    * Indicates the specific manufactured items that are part of the 'formOf' product that are used in the preparation of this specific administrable form.  In some cases, an administrable form might use all of the items from the overall product (or there might only be one item), while in other cases, an administrable form might use only a subset of the items available in the overall product.  For example, an administrable form might involve combining a liquid and a powder available as part of an overall product, but not involve applying the also supplied cream.
     */
   var producedFrom: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * Characteristics e.g. a products onset of action.
+    * Characteristics e.g. a product's onset of action.
     */
   var property: js.UndefOr[js.Array[AdministrableProductDefinitionProperty]] = js.undefined
   
@@ -55,7 +62,7 @@ trait AdministrableProductDefinition
   val resourceType_AdministrableProductDefinition: typings.fhir.fhirStrings.AdministrableProductDefinition
   
   /**
-    * The path by which the product is taken into or makes contact with the body. In some regions this is referred to as the licenced or approved route.
+    * The path by which the product is taken into or makes contact with the body. In some regions this is referred to as the licenced or approved route. RouteOfAdministration cannot be used when the 'formOf' product already uses MedicinalProductDefinition.route (and vice versa).
     */
   var routeOfAdministration: js.Array[AdministrableProductDefinitionRouteOfAdministration]
   
@@ -85,6 +92,10 @@ object AdministrableProductDefinition {
     inline def setAdministrableDoseForm(value: CodeableConcept): Self = StObject.set(x, "administrableDoseForm", value.asInstanceOf[js.Any])
     
     inline def setAdministrableDoseFormUndefined: Self = StObject.set(x, "administrableDoseForm", js.undefined)
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setDevice(value: Reference): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
@@ -131,6 +142,10 @@ object AdministrableProductDefinition {
     inline def setUnitOfPresentation(value: CodeableConcept): Self = StObject.set(x, "unitOfPresentation", value.asInstanceOf[js.Any])
     
     inline def setUnitOfPresentationUndefined: Self = StObject.set(x, "unitOfPresentation", js.undefined)
+    
+    inline def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
+    
+    inline def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
     inline def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     

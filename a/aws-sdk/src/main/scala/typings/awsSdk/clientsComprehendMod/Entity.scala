@@ -7,12 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Entity extends StObject {
   
   /**
-    * The zero-based offset from the beginning of the source text to the first character in the entity.
+    * The zero-based offset from the beginning of the source text to the first character in the entity. This field is empty for non-text input.
     */
   var BeginOffset: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The zero-based offset from the beginning of the source text to the last character in the entity.
+    * A reference to each block for this entity. This field is empty for plain-text input.
+    */
+  var BlockReferences: js.UndefOr[ListOfBlockReferences] = js.undefined
+  
+  /**
+    * The zero-based offset from the beginning of the source text to the last character in the entity. This field is empty for non-text input.
     */
   var EndOffset: js.UndefOr[Integer] = js.undefined
   
@@ -27,7 +32,7 @@ trait Entity extends StObject {
   var Text: js.UndefOr[String] = js.undefined
   
   /**
-    * The entity's type.
+    * The entity type. For entity detection using the built-in model, this field contains one of the standard entity types listed below. For custom entity detection, this field contains one of the entity types that you specified when you trained your custom model.
     */
   var Type: js.UndefOr[EntityType] = js.undefined
 }
@@ -44,6 +49,12 @@ object Entity {
     inline def setBeginOffset(value: Integer): Self = StObject.set(x, "BeginOffset", value.asInstanceOf[js.Any])
     
     inline def setBeginOffsetUndefined: Self = StObject.set(x, "BeginOffset", js.undefined)
+    
+    inline def setBlockReferences(value: ListOfBlockReferences): Self = StObject.set(x, "BlockReferences", value.asInstanceOf[js.Any])
+    
+    inline def setBlockReferencesUndefined: Self = StObject.set(x, "BlockReferences", js.undefined)
+    
+    inline def setBlockReferencesVarargs(value: BlockReference*): Self = StObject.set(x, "BlockReferences", js.Array(value*))
     
     inline def setEndOffset(value: Integer): Self = StObject.set(x, "EndOffset", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,7 @@ object libIconsSlidersOutlinedMod extends Shortcut {
   @js.native
   trait SlidersOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_SlidersOutlinedIconType: String = js.native

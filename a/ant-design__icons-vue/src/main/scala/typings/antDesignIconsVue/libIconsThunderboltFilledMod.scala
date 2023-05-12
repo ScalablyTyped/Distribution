@@ -16,7 +16,7 @@ object libIconsThunderboltFilledMod extends Shortcut {
   @js.native
   trait ThunderboltFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_ThunderboltFilledIconType: String = js.native

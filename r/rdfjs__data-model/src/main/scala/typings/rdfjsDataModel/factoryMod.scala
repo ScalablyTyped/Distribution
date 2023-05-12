@@ -1,5 +1,6 @@
 package typings.rdfjsDataModel
 
+import typings.rdfjsDataModel.libFromTermMod.FromTerm
 import typings.rdfjsDataModel.rdfjsDataModelStrings.blankNode
 import typings.rdfjsDataModel.rdfjsDataModelStrings.defaultGraph
 import typings.rdfjsDataModel.rdfjsDataModelStrings.fromQuad
@@ -15,6 +16,7 @@ import typings.rdfjsTypes.dataModelMod.Literal
 import typings.rdfjsTypes.dataModelMod.NamedNode
 import typings.rdfjsTypes.dataModelMod.Term
 import typings.rdfjsTypes.dataModelMod.Variable
+import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,14 +48,14 @@ object factoryMod {
     @JSName("defaultGraph")
     var defaultGraph_Original: js.Function0[DefaultGraph] = js.native
     
-    def fromQuad[T /* <: BaseQuad */](value: T): T = js.native
+    def fromQuad[T /* <: BaseQuad */](value: T): ReturnType[FromTerm[T, this.type]] = js.native
     
-    def fromTerm(value: BaseQuad): BaseQuad = js.native
-    def fromTerm(value: BlankNode): BlankNode = js.native
-    def fromTerm(value: DefaultGraph): DefaultGraph = js.native
-    def fromTerm(value: Literal): Literal = js.native
-    def fromTerm(value: NamedNode[String]): NamedNode[String] = js.native
-    def fromTerm(value: Variable): Variable = js.native
+    def fromTerm(value: BaseQuad): ReturnType[FromTerm[BaseQuad, this.type]] = js.native
+    def fromTerm(value: BlankNode): ReturnType[FromTerm[BlankNode, this.type]] = js.native
+    def fromTerm(value: DefaultGraph): ReturnType[FromTerm[DefaultGraph, this.type]] = js.native
+    def fromTerm(value: Literal): ReturnType[FromTerm[Literal, this.type]] = js.native
+    def fromTerm(value: NamedNode[String]): ReturnType[FromTerm[NamedNode[String], this.type]] = js.native
+    def fromTerm(value: Variable): ReturnType[FromTerm[Variable, this.type]] = js.native
     
     def init(): Unit = js.native
     

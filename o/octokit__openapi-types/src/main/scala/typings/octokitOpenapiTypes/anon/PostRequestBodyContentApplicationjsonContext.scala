@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PostRequestBodyContentApplicationjsonContext extends StObject {
   
+  /** Render a Markdown document */
   var post: RequestBodyContentApplicationjsonContext
 }
 object PostRequestBodyContentApplicationjsonContext {

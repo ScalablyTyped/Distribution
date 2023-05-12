@@ -1,11 +1,14 @@
 package typings.emberOwner
 
 import typings.std.Partial
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  type DIRegistry = Record[String, Record[String, Any]]
   
   @js.native
   trait Factory[T] extends StObject {
@@ -29,7 +32,7 @@ object mod {
     val `class`: Factory[T] = js.native
   }
   
-  type FullName = /* template literal string: ${string}:${string} */ String
+  type FullName[Type /* <: String */, Name /* <: String */] = /* template literal string: ${Type}:${Name} */ String
   
   /** NOTE: Mapped type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
@@ -52,15 +55,16 @@ object mod {
       * destroyed manually by the caller of `.create()`. Typically, this is done
       * during the creating objects own `destroy` or `willDestroy` methods.
       */
-    def factoryFor(fullName: FullName): js.UndefOr[FactoryManager[Any]] = js.native
+    def factoryFor[Type /* <: ValidType */, Name /* <: ValidName[Type] */](fullName: FullName[Type, Name]): ResolveFactoryManager[Type, Name] = js.native
     
     /**
       * Given a {@linkcode FullName} return a corresponding instance.
       */
-    def lookup(fullName: FullName): Any = js.native
+    def lookup[Type /* <: ValidType */, Name /* <: ValidName[Type] */](fullName: FullName[Type, Name]): /* import warning: importer.ImportType#apply Failed type conversion: @ember/owner.@ember/owner.DIRegistry[Type][Name] */ js.Any = js.native
+    def lookup[Type /* <: ValidType */, Name /* <: ValidName[Type] */](fullName: FullName[Type, Name], options: RegisterOptions): /* import warning: importer.ImportType#apply Failed type conversion: @ember/owner.@ember/owner.DIRegistry[Type][Name] */ js.Any = js.native
     
-    def register(fullName: FullName, factory: js.Object): Unit = js.native
-    def register(fullName: FullName, factory: js.Object, options: RegisterOptions): Unit = js.native
+    def register(fullName: FullName[String, String], factory: js.Object): Unit = js.native
+    def register(fullName: FullName[String, String], factory: js.Object, options: RegisterOptions): Unit = js.native
     /**
       * Registers a factory or value that can be used for dependency injection
       * (with `inject`) or for service lookup. Each factory is registered with a
@@ -72,7 +76,7 @@ object mod {
       * - To override the default singleton behavior and instead create multiple
       *   instances, pass the `{ singleton: false }` option.
       */
-    // Dear future maintainer: yes, I know that `Factory<unknown> | object` is
+    // Dear future maintainer: yes, I know that `Factory<object> | object` is
     // an exceedingly weird type here. This is how we type it internally in
     // Ember itself. We actually allow more or less *anything* to be passed
     // here. In the future, we may possibly be able to update this to actually
@@ -81,8 +85,8 @@ object mod {
     // factory, not needing `create` if `options.instantiate` is `false`, etc.)
     // but doing so will require rationalizing Ember's own internals and may
     // need a full Ember RFC.
-    def register(fullName: FullName, factory: Factory[Any]): Unit = js.native
-    def register(fullName: FullName, factory: Factory[Any], options: RegisterOptions): Unit = js.native
+    def register(fullName: FullName[String, String], factory: Factory[js.Object]): Unit = js.native
+    def register(fullName: FullName[String, String], factory: Factory[js.Object], options: RegisterOptions): Unit = js.native
   }
   
   trait RegisterOptions extends StObject {
@@ -111,15 +115,26 @@ object mod {
     }
   }
   
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+    * TS definition: {{{
+    @ember/owner.@ember/owner.DIRegistry[Type][Name] extends infer RegistryEntry ? RegistryEntry extends object ? @ember/owner.@ember/owner.FactoryManager<RegistryEntry> : @ember/owner.@ember/owner.FactoryManager<object> | undefined : never
+    }}}
+    */
+  type ResolveFactoryManager[Type /* <: String */, Name /* <: String */] = js.UndefOr[FactoryManager[js.Object]]
+  
   trait Resolver extends StObject {
     
     var knownForType: js.UndefOr[js.Function1[/* type */ String, KnownForTypeResult[String]]] = js.undefined
     
-    var lookupDescription: js.UndefOr[js.Function1[/* fullName */ FullName, String]] = js.undefined
+    var lookupDescription: js.UndefOr[js.Function1[/* fullName */ FullName[String, String], String]] = js.undefined
     
-    var makeToString: js.UndefOr[js.Function2[/* factory */ Factory[js.Object], /* fullName */ FullName, String]] = js.undefined
+    var makeToString: js.UndefOr[
+        js.Function2[/* factory */ Factory[js.Object], /* fullName */ FullName[String, String], String]
+      ] = js.undefined
     
-    var normalize: js.UndefOr[js.Function1[/* fullName */ FullName, String]] = js.undefined
+    var normalize: js.UndefOr[js.Function1[/* fullName */ FullName[String, String], String]] = js.undefined
     
     def resolve(name: String): js.UndefOr[Factory[js.Object] | js.Object]
   }
@@ -137,19 +152,23 @@ object mod {
       
       inline def setKnownForTypeUndefined: Self = StObject.set(x, "knownForType", js.undefined)
       
-      inline def setLookupDescription(value: /* fullName */ FullName => String): Self = StObject.set(x, "lookupDescription", js.Any.fromFunction1(value))
+      inline def setLookupDescription(value: /* fullName */ FullName[String, String] => String): Self = StObject.set(x, "lookupDescription", js.Any.fromFunction1(value))
       
       inline def setLookupDescriptionUndefined: Self = StObject.set(x, "lookupDescription", js.undefined)
       
-      inline def setMakeToString(value: (/* factory */ Factory[js.Object], /* fullName */ FullName) => String): Self = StObject.set(x, "makeToString", js.Any.fromFunction2(value))
+      inline def setMakeToString(value: (/* factory */ Factory[js.Object], /* fullName */ FullName[String, String]) => String): Self = StObject.set(x, "makeToString", js.Any.fromFunction2(value))
       
       inline def setMakeToStringUndefined: Self = StObject.set(x, "makeToString", js.undefined)
       
-      inline def setNormalize(value: /* fullName */ FullName => String): Self = StObject.set(x, "normalize", js.Any.fromFunction1(value))
+      inline def setNormalize(value: /* fullName */ FullName[String, String] => String): Self = StObject.set(x, "normalize", js.Any.fromFunction1(value))
       
       inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
       
       inline def setResolve(value: String => js.UndefOr[Factory[js.Object] | js.Object]): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
     }
   }
+  
+  type ValidName[Type /* <: ValidType */] = (/* import warning: importer.ImportType#apply Failed type conversion: keyof @ember/owner.@ember/owner.DIRegistry[Type] */ js.Any) & String
+  
+  type ValidType = /* keyof @ember/owner.@ember/owner.DIRegistry */ String
 }

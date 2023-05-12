@@ -20,7 +20,7 @@ object mod {
     def this(props: Any) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Any, context: Any) = this()
   }
@@ -46,7 +46,7 @@ object mod {
     def this(props: IInfoWindowProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: IInfoWindowProps, context: Any) = this()
   }
@@ -57,7 +57,7 @@ object mod {
     def this(props: IMapProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: IMapProps, context: Any) = this()
   }
@@ -68,7 +68,7 @@ object mod {
     def this(props: IMarkerProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: IMarkerProps, context: Any) = this()
   }
@@ -79,7 +79,7 @@ object mod {
     def this(props: Any) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Any, context: Any) = this()
   }
@@ -90,7 +90,7 @@ object mod {
     def this(props: Any) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Any, context: Any) = this()
   }

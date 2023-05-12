@@ -7,6 +7,7 @@ import typings.babylonjs.materialsFresnelParametersMod.FresnelParameters
 import typings.babylonjs.materialsImageProcessingConfigurationMod.IImageProcessingConfigurationDefines
 import typings.babylonjs.materialsImageProcessingConfigurationMod.ImageProcessingConfiguration
 import typings.babylonjs.materialsMaterialDefinesMod.MaterialDefines
+import typings.babylonjs.materialsMaterialDotdecalMapConfigurationMod.DecalMapConfiguration
 import typings.babylonjs.materialsMaterialDotdetailMapConfigurationMod.DetailMapConfiguration
 import typings.babylonjs.materialsPrePassConfigurationMod.PrePassConfiguration
 import typings.babylonjs.materialsPushMaterialMod.PushMaterial
@@ -30,7 +31,7 @@ object materialsStandardMaterialMod {
       * Instantiates a new standard material.
       * This is the default material used in Babylon. It is the best trade off between quality
       * and performances.
-      * @see https://doc.babylonjs.com/babylon101/materials
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/materials_introduction
       * @param name Define the name of the material in the scene
       * @param scene Define the scene the material belong to
       */
@@ -48,6 +49,9 @@ object materialsStandardMaterialMod {
     /* private */ var _bumpTexture: Any = js.native
     
     /* protected */ var _cacheHasRenderTargetTextures: Boolean = js.native
+    
+    /** @internal */
+    var _decalMap: Nullable[DecalMapConfiguration] = js.native
     
     /* private */ var _diffuseFresnelParameters: Any = js.native
     
@@ -142,7 +146,7 @@ object materialsStandardMaterialMod {
     
     /**
       * The color of the material lit by the environmental background lighting.
-      * @see https://doc.babylonjs.com/babylon101/materials#ambient-color-example
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/materials_introduction#ambient-color-example
       */
     var ambientColor: Color3 = js.native
     
@@ -154,7 +158,7 @@ object materialsStandardMaterialMod {
     /**
       * Bump mapping is a technique to simulate bump and dents on a rendered surface.
       * These are made by creating a normal map from an image. The means to do this can be found on the web, a search for 'normal map generator' will bring up free and paid for methods of doing this.
-      * @see https://doc.babylonjs.com/how_to/more_materials#bump-map
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/moreMaterials#bump-map
       */
     var bumpTexture: Nullable[BaseTexture] = js.native
     
@@ -232,6 +236,13 @@ object materialsStandardMaterialMod {
       */
     def cameraToneMappingEnabled_=(value: Boolean): Unit = js.native
     
+    def clone(name: String, cloneTexturesOnlyOnce: Boolean): StandardMaterial = js.native
+    
+    /**
+      * Defines the decal map parameters for the material.
+      */
+    var decalMap: Nullable[DecalMapConfiguration] = js.native
+    
     /**
       * Defines the detail map parameters for the material.
       */
@@ -244,7 +255,7 @@ object materialsStandardMaterialMod {
     
     /**
       * Define the diffuse fresnel parameters of the material.
-      * @see https://doc.babylonjs.com/how_to/how_to_use_fresnelparameters
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/fresnelParameters
       */
     var diffuseFresnelParameters: FresnelParameters = js.native
     
@@ -267,7 +278,7 @@ object materialsStandardMaterialMod {
     
     /**
       * Define the emissive fresnel parameters of the material.
-      * @see https://doc.babylonjs.com/how_to/how_to_use_fresnelparameters
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/fresnelParameters
       */
     var emissiveFresnelParameters: FresnelParameters = js.native
     
@@ -290,7 +301,7 @@ object materialsStandardMaterialMod {
     
     /**
       * In case of refraction, define the value of the index of refraction.
-      * @see https://doc.babylonjs.com/how_to/reflect#how-to-obtain-reflections-and-refractions
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/reflectionTexture#how-to-obtain-reflections-and-refractions
       */
     var indexOfRefraction: Double = js.native
     
@@ -307,14 +318,14 @@ object materialsStandardMaterialMod {
     /**
       * Invert the refraction texture alongside the y axis.
       * It can be useful with procedural textures or probe for instance.
-      * @see https://doc.babylonjs.com/how_to/reflect#how-to-obtain-reflections-and-refractions
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/reflectionTexture#how-to-obtain-reflections-and-refractions
       */
     var invertRefractionY: Boolean = js.native
     
     /**
       * Complex lighting can be computationally expensive to compute at runtime.
       * To save on computation, lightmaps may be used to store calculated lighting in a texture which will be applied to a given mesh.
-      * @see https://doc.babylonjs.com/babylon101/lights#lightmaps
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/lights/lights_introduction#lightmaps
       */
     var lightmapTexture: Nullable[BaseTexture] = js.native
     
@@ -331,7 +342,7 @@ object materialsStandardMaterialMod {
     
     /**
       * Define the opacity fresnel parameters of the material.
-      * @see https://doc.babylonjs.com/how_to/how_to_use_fresnelparameters
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/fresnelParameters
       */
     var opacityFresnelParameters: FresnelParameters = js.native
     
@@ -354,25 +365,25 @@ object materialsStandardMaterialMod {
     
     /**
       * Define the reflection fresnel parameters of the material.
-      * @see https://doc.babylonjs.com/how_to/how_to_use_fresnelparameters
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/fresnelParameters
       */
     var reflectionFresnelParameters: FresnelParameters = js.native
     
     /**
       * Define the texture used to display the reflection.
-      * @see https://doc.babylonjs.com/how_to/reflect#how-to-obtain-reflections-and-refractions
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/reflectionTexture#how-to-obtain-reflections-and-refractions
       */
     var reflectionTexture: Nullable[BaseTexture] = js.native
     
     /**
       * Define the refraction fresnel parameters of the material.
-      * @see https://doc.babylonjs.com/how_to/how_to_use_fresnelparameters
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/fresnelParameters
       */
     var refractionFresnelParameters: FresnelParameters = js.native
     
     /**
       * Define the texture used to display the refraction.
-      * @see https://doc.babylonjs.com/how_to/reflect#how-to-obtain-reflections-and-refractions
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/reflectionTexture#how-to-obtain-reflections-and-refractions
       */
     var refractionTexture: Nullable[BaseTexture] = js.native
     
@@ -426,7 +437,7 @@ object materialsStandardMaterialMod {
     /**
       * In case the depth buffer does not allow enough depth precision for your scene (might be the case in large scenes)
       * You can try switching to logarithmic depth.
-      * @see https://doc.babylonjs.com/how_to/using_logarithmic_depth_buffer
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/advanced/logarithmicDepthBuffer
       */
     def useLogarithmicDepth: Boolean = js.native
     def useLogarithmicDepth_=(value: Boolean): Unit = js.native
@@ -438,20 +449,20 @@ object materialsStandardMaterialMod {
     
     /**
       * Is parallax enabled or not.
-      * @see https://doc.babylonjs.com/how_to/using_parallax_mapping
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/parallaxMapping
       */
     var useParallax: Boolean = js.native
     
     /**
       * Is parallax occlusion enabled or not.
       * If true, the outcome is way more realistic than traditional Parallax but you can expect a performance hit that worthes consideration.
-      * @see https://doc.babylonjs.com/how_to/using_parallax_mapping
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/parallaxMapping
       */
     var useParallaxOcclusion: Boolean = js.native
     
     /**
       * If true automatically deducts the fresnels values from the material specularity.
-      * @see https://doc.babylonjs.com/how_to/how_to_use_fresnelparameters
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/fresnelParameters
       */
     var useReflectionFresnelFromSpecular: Boolean = js.native
     
@@ -518,6 +529,10 @@ object materialsStandardMaterialMod {
     var BUMPDIRECTUV: Double = js.native
     
     var BonesPerMesh: Double = js.native
+    
+    var CAMERA_ORTHOGRAPHIC: Boolean = js.native
+    
+    var CAMERA_PERSPECTIVE: Boolean = js.native
     
     var CLIPPLANE: Boolean = js.native
     

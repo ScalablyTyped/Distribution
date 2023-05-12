@@ -6,12 +6,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object formatFilterNotMod {
   
+  /**
+    * @classdesc
+    * Represents a logical `<Not>` operator for a filter condition.
+    * @api
+    */
   @JSImport("ol/format/filter/Not", JSImport.Default)
   @js.native
-  open class default protected ()
-    extends typings.ol.formatFilterFilterMod.default {
+  open class default protected () extends Not {
+    /**
+      * @param {!import("./Filter.js").default} condition Filter condition.
+      */
     def this(condition: typings.ol.formatFilterFilterMod.default) = this()
   }
   
-  type Not = typings.ol.formatFilterFilterMod.default
+  /**
+    * @classdesc
+    * Represents a logical `<Not>` operator for a filter condition.
+    * @api
+    */
+  @js.native
+  trait Not
+    extends typings.ol.formatFilterFilterMod.default {
+    
+    /**
+      * @type {!import("./Filter.js").default}
+      */
+    var condition: typings.ol.formatFilterFilterMod.default = js.native
+  }
 }

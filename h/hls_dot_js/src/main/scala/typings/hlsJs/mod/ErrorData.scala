@@ -12,13 +12,20 @@ trait ErrorData extends StObject {
   
   var bytes: js.UndefOr[Double] = js.undefined
   
+  var chunkMeta: js.UndefOr[ChunkMetadata] = js.undefined
+  
   var context: js.UndefOr[PlaylistLoaderContext] = js.undefined
   
   var details: ErrorDetails
   
+  /**
+    * @deprecated Use ErrorData.error
+    */
   var err: js.UndefOr[Message] = js.undefined
   
-  var error: js.UndefOr[js.Error] = js.undefined
+  var error: js.Error
+  
+  var errorAction: js.UndefOr[IErrorAction] = js.undefined
   
   var event: js.UndefOr[(/* keyof hls.js.hls.js.HlsListeners */ String) | demuxerWorker] = js.undefined
   
@@ -42,14 +49,16 @@ trait ErrorData extends StObject {
   
   var response: js.UndefOr[LoaderResponse] = js.undefined
   
+  var stats: js.UndefOr[LoaderStats] = js.undefined
+  
   var `type`: ErrorTypes
   
   var url: js.UndefOr[String] = js.undefined
 }
 object ErrorData {
   
-  inline def apply(details: ErrorDetails, fatal: Boolean, `type`: ErrorTypes): ErrorData = {
-    val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], fatal = fatal.asInstanceOf[js.Any])
+  inline def apply(details: ErrorDetails, error: js.Error, fatal: Boolean, `type`: ErrorTypes): ErrorData = {
+    val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], fatal = fatal.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorData]
   }
@@ -65,6 +74,10 @@ object ErrorData {
     
     inline def setBytesUndefined: Self = StObject.set(x, "bytes", js.undefined)
     
+    inline def setChunkMeta(value: ChunkMetadata): Self = StObject.set(x, "chunkMeta", value.asInstanceOf[js.Any])
+    
+    inline def setChunkMetaUndefined: Self = StObject.set(x, "chunkMeta", js.undefined)
+    
     inline def setContext(value: PlaylistLoaderContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
@@ -77,7 +90,9 @@ object ErrorData {
     
     inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorAction(value: IErrorAction): Self = StObject.set(x, "errorAction", value.asInstanceOf[js.Any])
+    
+    inline def setErrorActionUndefined: Self = StObject.set(x, "errorAction", js.undefined)
     
     inline def setEvent(value: (/* keyof hls.js.hls.js.HlsListeners */ String) | demuxerWorker): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
@@ -120,6 +135,10 @@ object ErrorData {
     inline def setResponse(value: LoaderResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+    
+    inline def setStats(value: LoaderStats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    
+    inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
     
     inline def setType(value: ErrorTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

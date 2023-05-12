@@ -14,8 +14,8 @@ open class PostEffectQueue protected ()
   /**
     * Create a new PostEffectQueue instance.
     *
-    * @param {AppBase} app - The application.
-    * @param {CameraComponent} camera - The camera component.
+    * @param {import('../../app-base.js').AppBase} app - The application.
+    * @param {import('./component.js').CameraComponent} camera - The camera component.
     */
   def this(app: typings.playcanvas.mod.AppBase, camera: typings.playcanvas.mod.CameraComponent) = this()
 }

@@ -1,6 +1,6 @@
 package typings.fpTs.libPipeableMod
 
-import typings.fpTs.libFunctionMod.Lazy
+import typings.fpTs.libFunctionMod.LazyArg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PipeableAlt[F] extends StObject {
   
   def alt[A](
-    that: Lazy[
+    that: LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any
     ]
   ): js.Function1[
@@ -19,7 +19,7 @@ trait PipeableAlt[F] extends StObject {
 object PipeableAlt {
   
   inline def apply[F](
-    alt: Lazy[
+    alt: LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any
     ] => js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ Any, 
@@ -34,7 +34,7 @@ object PipeableAlt {
   implicit open class MutableBuilder[Self <: PipeableAlt[?], F] (val x: Self & PipeableAlt[F]) extends AnyVal {
     
     inline def setAlt(
-      value: Lazy[
+      value: LazyArg[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any
         ] => js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ Any, 

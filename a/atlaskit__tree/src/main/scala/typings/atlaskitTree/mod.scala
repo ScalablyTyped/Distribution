@@ -8,7 +8,7 @@ import typings.atlaskitTree.distTypesTypesMod.ItemId
 import typings.atlaskitTree.distTypesTypesMod.TreeData
 import typings.atlaskitTree.distTypesTypesMod.TreeDestinationPosition
 import typings.atlaskitTree.distTypesTypesMod.TreeSourcePosition
-import typings.atlaskitTree.distTypesUtilsTreeMod.TreeItemMutation
+import typings.atlaskitTree.distTypesUtilsMutateTreeMod.TreeItemMutation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

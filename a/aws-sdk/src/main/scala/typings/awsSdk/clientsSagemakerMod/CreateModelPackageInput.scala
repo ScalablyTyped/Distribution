@@ -69,7 +69,7 @@ trait CreateModelPackageInput extends StObject {
   var ModelPackageName: js.UndefOr[EntityName] = js.undefined
   
   /**
-    * The Amazon Simple Storage Service (Amazon S3) path where the sample payload are stored. This path must point to a single gzip compressed tar archive (.tar.gz suffix).
+    * The Amazon Simple Storage Service (Amazon S3) path where the sample payload is stored. This path must point to a single gzip compressed tar archive (.tar.gz suffix). This archive can hold multiple files that are all equally used in the load test. Each file in the archive must satisfy the size constraints of the InvokeEndpoint call.
     */
   var SamplePayloadUrl: js.UndefOr[S3Uri] = js.undefined
   

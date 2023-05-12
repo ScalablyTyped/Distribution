@@ -1,7 +1,8 @@
 package typings.octokitOpenapiTypes.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Partial
+import typings.octokitOpenapiTypes.mod.OneOf
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,13 +10,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Files extends StObject {
   
   /**
-    * @description Description of the gist
+    * @description The description of the gist.
     * @example Example Ruby script
     */
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * @description Names of files to be updated
+    * @description The gist files to be updated, renamed, or deleted. Each `key` must match the current filename
+    * (including extension) of the targeted gist file. For example: `hello.py`.
+    *
+    * To delete a file, set the whole file to null. For example: `hello.py : null`.
     * @example {
     *   "hello.rb": {
     *     "content": "blah",
@@ -23,7 +27,9 @@ trait Files extends StObject {
     *   }
     * }
     */
-  var files: js.UndefOr[StringDictionary[Partial[StringDictionary[Any]]]] = js.undefined
+  var files: js.UndefOr[
+    StringDictionary[js.UndefOr[OneOf[js.Tuple2[Filename, Record[String, scala.Nothing]]]]]
+  ] = js.undefined
 }
 object Files {
   
@@ -39,7 +45,7 @@ object Files {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setFiles(value: StringDictionary[Partial[StringDictionary[Any]]]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: StringDictionary[js.UndefOr[OneOf[js.Tuple2[Filename, Record[String, scala.Nothing]]]]]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
   }

@@ -128,11 +128,15 @@ object sapUiUx3DataSetMod {
     extends typings.openui5.sapUiCoreControlMod.default {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Rerendering of the FilterArea
       */
     def _rerenderFilter(): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Rerendering of the Toolbar
       */
     def _rerenderToolbar(): Unit = js.native
@@ -326,6 +330,8 @@ object sapUiUx3DataSetMod {
     def clearSelection(): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Creates a view switch button
       *
       * @returns viewSwitch instance
@@ -333,10 +339,10 @@ object sapUiUx3DataSetMod {
     def createViewSwitch(/**
       * View
       */
-    oView: js.Object, /**
+    oView: /* was: sap.m.Element */ Any, /**
       * Index of view
       */
-    iIndex: int): js.Object = js.native
+    iIndex: int): Any = js.native
     
     /**
       * Destroys all the filter in the aggregation {@link #getFilter filter}.
@@ -409,6 +415,8 @@ object sapUiUx3DataSetMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:search search} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -420,6 +428,8 @@ object sapUiUx3DataSetMod {
     mParameters: Query): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:selectionChanged selectionChanged} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -445,6 +455,8 @@ object sapUiUx3DataSetMod {
     def getItems(): js.Array[typings.openui5.sapUiUx3DataSetItemMod.default] = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns the LeadSelection index
       *
       * @returns selected index
@@ -473,6 +485,8 @@ object sapUiUx3DataSetMod {
     def getSelectedIndices(): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns id of selected Item from given index
       *
       * @returns id of selected item
@@ -620,6 +634,8 @@ object sapUiUx3DataSetMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns true if iIndex is selected
       *
       * @returns index selected true/false
@@ -720,6 +736,8 @@ object sapUiUx3DataSetMod {
     vView: DataSetView): DataSetView | Null = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Set the LeadSelection index
       */
     def setLeadSelection(/**

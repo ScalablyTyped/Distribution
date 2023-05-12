@@ -9,10 +9,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Creates a new observable
   * @param onObserverAdded defines a callback to call when a new observer is added
+  * @param notifyIfTriggered If set to true the observable will notify when an observer was added if the observable was already triggered.
   */
 open class Observable[T] ()
   extends typings.babylonjs.miscIndexMod.Observable[T] {
   def this(onObserverAdded: js.Function1[/* observer */ typings.babylonjs.miscObservableMod.Observer[T], Unit]) = this()
+  def this(
+    onObserverAdded: js.Function1[/* observer */ typings.babylonjs.miscObservableMod.Observer[T], Unit],
+    /**
+    * If set to true the observable will notify when an observer was added if the observable was already triggered.
+    * This is helpful to single-state observables like the scene onReady or the dispose observable.
+    */
+  notifyIfTriggered: Boolean
+  ) = this()
+  def this(
+    onObserverAdded: Unit,
+    /**
+    * If set to true the observable will notify when an observer was added if the observable was already triggered.
+    * This is helpful to single-state observables like the scene onReady or the dispose observable.
+    */
+  notifyIfTriggered: Boolean
+  ) = this()
 }
 /* static members */
 object Observable {

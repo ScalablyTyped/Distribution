@@ -22,7 +22,7 @@ trait EnableLoggingMessage extends StObject {
   var LogDestinationType: js.UndefOr[typings.awsSdk.clientsRedshiftMod.LogDestinationType] = js.undefined
   
   /**
-    * The collection of exported log types. Log types include the connection log, user log and user activity log.
+    * The collection of exported log types. Possible values are connectionlog, useractivitylog, and userlog.
     */
   var LogExports: js.UndefOr[LogTypeList] = js.undefined
   

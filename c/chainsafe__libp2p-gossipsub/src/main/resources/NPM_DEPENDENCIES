@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@chainsafe/libp2p-gossipsub" : "5.0.0"
+      "@chainsafe/libp2p-gossipsub" : "7.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@chainsafe/libp2p-gossipsub" : "5.0.0"
+      "@chainsafe/libp2p-gossipsub" : "7.0.0"
     }
   ],
   "compile-devDependencies" : [

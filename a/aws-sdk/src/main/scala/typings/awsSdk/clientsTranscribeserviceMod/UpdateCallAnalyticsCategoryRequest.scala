@@ -12,6 +12,11 @@ trait UpdateCallAnalyticsCategoryRequest extends StObject {
   var CategoryName: typings.awsSdk.clientsTranscribeserviceMod.CategoryName
   
   /**
+    * Choose whether you want to update a real-time or a post-call category. The input type you specify must match the input type specified when the category was created. For example, if you created a category with the POST_CALL input type, you must use POST_CALL as the input type when updating this category.
+    */
+  var InputType: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.InputType] = js.undefined
+  
+  /**
     * The rules used for the updated Call Analytics category. The rules you provide in this field replace the ones that are currently being used in the specified category.
     */
   var Rules: RuleList
@@ -27,6 +32,10 @@ object UpdateCallAnalyticsCategoryRequest {
   implicit open class MutableBuilder[Self <: UpdateCallAnalyticsCategoryRequest] (val x: Self) extends AnyVal {
     
     inline def setCategoryName(value: CategoryName): Self = StObject.set(x, "CategoryName", value.asInstanceOf[js.Any])
+    
+    inline def setInputType(value: InputType): Self = StObject.set(x, "InputType", value.asInstanceOf[js.Any])
+    
+    inline def setInputTypeUndefined: Self = StObject.set(x, "InputType", js.undefined)
     
     inline def setRules(value: RuleList): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     

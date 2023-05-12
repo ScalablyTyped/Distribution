@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@blueprintjs/timezone" : "4.5.11"
+      "@blueprintjs/timezone" : "4.5.33"
     }
   ],
   "test-dependencies" : [
     {
-      "@blueprintjs/timezone" : "4.5.11"
+      "@blueprintjs/timezone" : "4.5.33"
     }
   ],
   "compile-devDependencies" : [

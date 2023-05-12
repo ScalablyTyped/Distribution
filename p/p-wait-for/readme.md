@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-wait-for
 
-Typings are for version 5.0.0
+Typings are for version 5.0.2
 
 ## Library description:
 Wait for a condition to be true

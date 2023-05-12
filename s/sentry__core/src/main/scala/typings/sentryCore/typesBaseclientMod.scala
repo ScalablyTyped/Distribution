@@ -1,20 +1,32 @@
 package typings.sentryCore
 
+import typings.sentryCore.sentryCoreStrings.afterSendEvent
+import typings.sentryCore.sentryCoreStrings.beforeAddBreadcrumb
+import typings.sentryCore.sentryCoreStrings.beforeEnvelope
+import typings.sentryCore.sentryCoreStrings.createDsc
+import typings.sentryCore.sentryCoreStrings.finishTransaction
+import typings.sentryCore.sentryCoreStrings.startTransaction
 import typings.sentryCore.typesIntegrationMod.IntegrationIndex
 import typings.sentryCore.typesScopeMod.Scope
+import typings.sentryTypes.typesBreadcrumbMod.Breadcrumb
+import typings.sentryTypes.typesBreadcrumbMod.BreadcrumbHint
 import typings.sentryTypes.typesClientMod.Client
 import typings.sentryTypes.typesClientreportMod.Outcome
 import typings.sentryTypes.typesDsnMod.DsnComponents
+import typings.sentryTypes.typesEnvelopeMod.DynamicSamplingContext
 import typings.sentryTypes.typesEnvelopeMod.Envelope
 import typings.sentryTypes.typesEventMod.Event
 import typings.sentryTypes.typesEventMod.EventHint
 import typings.sentryTypes.typesIntegrationMod.Integration
 import typings.sentryTypes.typesOptionsMod.ClientOptions
+import typings.sentryTypes.typesSdkmetadataMod.SdkMetadata
 import typings.sentryTypes.typesSessionMod.Session
 import typings.sentryTypes.typesSeverityMod.Severity
 import typings.sentryTypes.typesSeverityMod.SeverityLevel
+import typings.sentryTypes.typesTransactionMod.Transaction
 import typings.sentryTypes.typesTransportMod.BaseTransportOptions
 import typings.sentryTypes.typesTransportMod.Transport
+import typings.sentryTypes.typesTransportMod.TransportMakeRequestResponse
 import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -35,20 +47,6 @@ object typesBaseclientMod {
     /* protected */ def this(options: O) = this()
     
     /**
-      *  Enhances event using the client configuration.
-      *  It takes care of all "static" values like environment, release and `dist`,
-      *  as well as truncating overly long values.
-      * @param event event instance to be enhanced
-      */
-    /* protected */ def _applyClientOptions(event: Event): Unit = js.native
-    
-    /**
-      * This function adds all used integrations to the SDK info in the event.
-      * @param event The event that will be filled with all integrations.
-      */
-    /* protected */ def _applyIntegrationsMetadata(event: Event): Unit = js.native
-    
-    /**
       * Processes the event and logs an error in case of rejection
       * @param event
       * @param hint
@@ -66,6 +64,8 @@ object typesBaseclientMod {
     
     /** The client Dsn, if specified in options. Without this Dsn, the SDK will be disabled. */
     /* protected */ val _dsn: js.UndefOr[DsnComponents] = js.native
+    
+    /* private */ var _hooks: Any = js.native
     
     /** Array of set up integrations. */
     /* protected */ var _integrations: IntegrationIndex = js.native
@@ -88,19 +88,6 @@ object typesBaseclientMod {
     
     /** Determines whether this SDK is enabled and a valid Dsn is present. */
     /* protected */ def _isEnabled(): Boolean = js.native
-    
-    /* protected */ def _normalizeEvent(event: Null, depth: Double, maxBreadth: Double): Event | Null = js.native
-    /**
-      * Applies `normalize` function on necessary `Event` attributes to make them safe for serialization.
-      * Normalized keys:
-      * - `breadcrumbs.data`
-      * - `user`
-      * - `contexts`
-      * - `extra`
-      * @param event Event
-      * @returns Normalized event
-      */
-    /* protected */ def _normalizeEvent(event: Event, depth: Double, maxBreadth: Double): Event | Null = js.native
     
     /** Number of calls being processed */
     /* protected */ var _numProcessing: Double = js.native
@@ -152,12 +139,18 @@ object typesBaseclientMod {
     /**
       * @inheritdoc
       */
-    /* protected */ def _sendEnvelope(envelope: Envelope): Unit = js.native
+    /* protected */ def _sendEnvelope(envelope: Envelope): (PromiseLike[Unit | TransportMakeRequestResponse]) | Unit = js.native
     
     /* protected */ val _transport: js.UndefOr[Transport] = js.native
     
     /** Updates existing session based on the provided event */
     /* protected */ def _updateSessionFromEvent(session: Session, event: Event): Unit = js.native
+    
+    /**
+      * @inheritDoc
+      */
+    @JSName("addIntegration")
+    def addIntegration_MBaseClient(integration: Integration): Unit = js.native
     
     def captureEvent(event: Event, hint: Unit, scope: Scope): js.UndefOr[String] = js.native
     def captureEvent(event: Event, hint: EventHint, scope: Scope): js.UndefOr[String] = js.native
@@ -178,11 +171,64 @@ object typesBaseclientMod {
     @JSName("captureSession")
     def captureSession_MBaseClient(session: Session): Unit = js.native
     
+    /** @inheritdoc */
+    @JSName("emit")
+    def emit_MBaseClient(hook: startTransaction | finishTransaction, transaction: Transaction): Unit = js.native
+    @JSName("emit")
+    def emit_afterSendEvent(hook: afterSendEvent, event: Event, sendResponse: Unit): Unit = js.native
+    /** @inheritdoc */
+    @JSName("emit")
+    def emit_afterSendEvent(hook: afterSendEvent, event: Event, sendResponse: TransportMakeRequestResponse): Unit = js.native
+    /** @inheritdoc */
+    @JSName("emit")
+    def emit_beforeAddBreadcrumb(hook: beforeAddBreadcrumb, breadcrumb: Breadcrumb): Unit = js.native
+    @JSName("emit")
+    def emit_beforeAddBreadcrumb(hook: beforeAddBreadcrumb, breadcrumb: Breadcrumb, hint: BreadcrumbHint): Unit = js.native
+    /** @inheritdoc */
+    @JSName("emit")
+    def emit_beforeEnvelope(hook: beforeEnvelope, envelope: Envelope): Unit = js.native
+    /** @inheritdoc */
+    @JSName("emit")
+    def emit_createDsc(hook: createDsc, dsc: DynamicSamplingContext): Unit = js.native
+    
     /**
       * Gets an installed integration by its `id`.
       *
       * @returns The installed integration or `undefined` if no integration with that `id` was installed.
       */
     def getIntegrationById(integrationId: String): js.UndefOr[Integration] = js.native
+    
+    /**
+      * @see SdkMetadata in @sentry/types
+      *
+      * @return The metadata of the SDK
+      */
+    @JSName("getSdkMetadata")
+    def getSdkMetadata_MBaseClient(): js.UndefOr[SdkMetadata] = js.native
+    
+    /** @inheritdoc */
+    @JSName("on")
+    def on_MBaseClient(
+      hook: startTransaction | finishTransaction,
+      callback: js.Function1[/* transaction */ Transaction, Unit]
+    ): Unit = js.native
+    /** @inheritdoc */
+    @JSName("on")
+    def on_afterSendEvent(
+      hook: afterSendEvent,
+      callback: js.Function2[/* event */ Event, /* sendResponse */ TransportMakeRequestResponse | Unit, Unit]
+    ): Unit = js.native
+    /** @inheritdoc */
+    @JSName("on")
+    def on_beforeAddBreadcrumb(
+      hook: beforeAddBreadcrumb,
+      callback: js.Function2[/* breadcrumb */ Breadcrumb, /* hint */ js.UndefOr[BreadcrumbHint], Unit]
+    ): Unit = js.native
+    /** @inheritdoc */
+    @JSName("on")
+    def on_beforeEnvelope(hook: beforeEnvelope, callback: js.Function1[/* envelope */ Envelope, Unit]): Unit = js.native
+    /** @inheritdoc */
+    @JSName("on")
+    def on_createDsc(hook: createDsc, callback: js.Function1[/* dsc */ DynamicSamplingContext, Unit]): Unit = js.native
   }
 }

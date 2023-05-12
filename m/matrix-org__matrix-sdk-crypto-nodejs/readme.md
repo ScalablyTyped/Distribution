@@ -1,7 +1,7 @@
 
 # Scala.js typings for matrix-org__matrix-sdk-crypto-nodejs
 
-Typings are for version 0.1.0-beta.1
+Typings are for version 0.1.0-beta.6
 
 
 

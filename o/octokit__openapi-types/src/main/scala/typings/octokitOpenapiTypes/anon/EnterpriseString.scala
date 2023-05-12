@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EnterpriseString extends StObject {
   
-  /** The slug version of the enterprise name. You can also substitute this value with the enterprise id. */
   var enterprise: String
 }
 object EnterpriseString {

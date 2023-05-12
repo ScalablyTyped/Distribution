@@ -10,5 +10,8 @@ object shallowMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /* was `typeof shallow` */
   inline def default[T](objA: T, objB: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def shallow[T](objA: T, objB: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

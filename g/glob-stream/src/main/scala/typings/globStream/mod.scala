@@ -1,17 +1,20 @@
 package typings.globStream
 
-import typings.glob.mod.IOptions
-import typings.node.NodeJS.ReadableStream
+import typings.globStream.globStreamBooleans.`false`
+import typings.globStream.globStreamBooleans.`true`
+import typings.picomatch.libPicomatchMod.PicomatchOptions
+import typings.streamx.mod.Readable
+import typings.streamx.mod.ReadableEvents
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(glob: String): ReadableStream = ^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
-  inline def apply(glob: String, options: Options): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
-  inline def apply(glob: js.Array[String]): ReadableStream = ^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
-  inline def apply(glob: js.Array[String], options: Options): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  inline def apply(glob: String): Readable[Entry, Entry, Entry, `true`, `false`, ReadableEvents[Entry]] = ^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any]).asInstanceOf[Readable[Entry, Entry, Entry, `true`, `false`, ReadableEvents[Entry]]]
+  inline def apply(glob: String, options: Options): Readable[Entry, Entry, Entry, `true`, `false`, ReadableEvents[Entry]] = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Readable[Entry, Entry, Entry, `true`, `false`, ReadableEvents[Entry]]]
+  inline def apply(glob: js.Array[String]): Readable[Entry, Entry, Entry, `true`, `false`, ReadableEvents[Entry]] = ^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any]).asInstanceOf[Readable[Entry, Entry, Entry, `true`, `false`, ReadableEvents[Entry]]]
+  inline def apply(glob: js.Array[String], options: Options): Readable[Entry, Entry, Entry, `true`, `false`, ReadableEvents[Entry]] = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Readable[Entry, Entry, Entry, `true`, `false`, ReadableEvents[Entry]]]
   
   @JSImport("glob-stream", JSImport.Namespace)
   @js.native
@@ -45,7 +48,7 @@ object mod {
   
   trait Options
     extends StObject
-       with IOptions {
+       with PicomatchOptions {
     
     /**
       * Whether or not to error upon an empty singular glob.
@@ -54,14 +57,19 @@ object mod {
     
     /**
       * The absolute segment of the glob path that isn't a glob. This value is attached
-      * to each globobject and is useful for relative pathing.
+      * to each glob object and is useful for relative pathing.
       */
     var base: js.UndefOr[String] = js.undefined
     
     /**
-      * Whether or not the `cwd` and `base` should be the same.
+      * Whether or not the {@linkcode cwd} and {@linkcode base} should be the same.
       */
     var cwdbase: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The root path that the glob is resolved against.
+      */
+    var root: js.UndefOr[String] = js.undefined
     
     /**
       * Filters stream to remove duplicates based on the string property name or the result of function.
@@ -92,6 +100,10 @@ object mod {
       
       inline def setCwdbaseUndefined: Self = StObject.set(x, "cwdbase", js.undefined)
       
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      
       inline def setUniqueBy(value: UniqueByStringPredicate | UniqueByFunctionPredicate): Self = StObject.set(x, "uniqueBy", value.asInstanceOf[js.Any])
       
       inline def setUniqueByFunction1(value: /* entry */ Entry => String): Self = StObject.set(x, "uniqueBy", js.Any.fromFunction1(value))
@@ -108,12 +120,4 @@ object mod {
     - typings.globStream.globStreamStrings.path
   */
   trait UniqueByStringPredicate extends StObject
-  object UniqueByStringPredicate {
-    
-    inline def base: typings.globStream.globStreamStrings.base = "base".asInstanceOf[typings.globStream.globStreamStrings.base]
-    
-    inline def cwd: typings.globStream.globStreamStrings.cwd = "cwd".asInstanceOf[typings.globStream.globStreamStrings.cwd]
-    
-    inline def path: typings.globStream.globStreamStrings.path = "path".asInstanceOf[typings.globStream.globStreamStrings.path]
-  }
 }

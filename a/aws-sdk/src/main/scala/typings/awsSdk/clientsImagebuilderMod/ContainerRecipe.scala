@@ -12,7 +12,7 @@ trait ContainerRecipe extends StObject {
   var arn: js.UndefOr[ImageBuilderArn] = js.undefined
   
   /**
-    * Components for build and test that are included in the container recipe.
+    * Build and test components that are included in the container recipe. Recipes require a minimum of one build component, and can have a maximum of 20 build and test components in any combination.
     */
   var components: js.UndefOr[ComponentConfigurationList] = js.undefined
   

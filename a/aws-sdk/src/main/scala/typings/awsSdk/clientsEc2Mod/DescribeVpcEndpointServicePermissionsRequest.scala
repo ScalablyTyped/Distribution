@@ -12,7 +12,7 @@ trait DescribeVpcEndpointServicePermissionsRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * One or more filters.    principal - The ARN of the principal.    principal-type - The principal type (All | Service | OrganizationUnit | Account | User | Role).  
+    * The filters.    principal - The ARN of the principal.    principal-type - The principal type (All | Service | OrganizationUnit | Account | User | Role).  
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   

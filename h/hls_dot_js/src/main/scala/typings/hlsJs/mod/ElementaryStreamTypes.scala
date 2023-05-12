@@ -1,33 +1,23 @@
 package typings.hlsJs.mod
 
+import typings.hlsJs.hlsJsStrings.audio_
+import typings.hlsJs.hlsJsStrings.audiovideo
+import typings.hlsJs.hlsJsStrings.video_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait ElementaryStreamTypes extends StObject
-@JSImport("hls.js", "ElementaryStreamTypes")
-@js.native
-object ElementaryStreamTypes extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.hlsJs.hlsJsStrings.audio_
+  - typings.hlsJs.hlsJsStrings.video_
+  - typings.hlsJs.hlsJsStrings.audiovideo
+*/
+trait ElementaryStreamTypes extends StObject
+object ElementaryStreamTypes {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ElementaryStreamTypes & String] = js.native
+  inline def AUDIO: audio_ = "audio".asInstanceOf[audio_]
   
-  @js.native
-  sealed trait AUDIO
-    extends StObject
-       with ElementaryStreamTypes
-  /* "audio" */ val AUDIO: typings.hlsJs.mod.ElementaryStreamTypes.AUDIO & String = js.native
+  inline def AUDIOVIDEO: audiovideo = "audiovideo".asInstanceOf[audiovideo]
   
-  @js.native
-  sealed trait AUDIOVIDEO
-    extends StObject
-       with ElementaryStreamTypes
-  /* "audiovideo" */ val AUDIOVIDEO: typings.hlsJs.mod.ElementaryStreamTypes.AUDIOVIDEO & String = js.native
-  
-  @js.native
-  sealed trait VIDEO
-    extends StObject
-       with ElementaryStreamTypes
-  /* "video" */ val VIDEO: typings.hlsJs.mod.ElementaryStreamTypes.VIDEO & String = js.native
+  inline def VIDEO: video_ = "video".asInstanceOf[video_]
 }

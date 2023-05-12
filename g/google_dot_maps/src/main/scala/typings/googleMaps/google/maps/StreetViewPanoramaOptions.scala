@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Options defining the properties of a <code>StreetViewPanorama</code>
-  * object.
-  */
 trait StreetViewPanoramaOptions extends StObject {
   
   /**
@@ -21,7 +17,9 @@ trait StreetViewPanoramaOptions extends StObject {
   var addressControlOptions: js.UndefOr[StreetViewAddressControlOptions | Null] = js.undefined
   
   /**
-    * The enabled/disabled state of click-to-go.
+    * The enabled/disabled state of click-to-go. Not applicable to custom
+    * panoramas.
+    * @defaultValue <code>true</code>
     */
   var clickToGo: js.UndefOr[Boolean | Null] = js.undefined
   
@@ -138,6 +136,7 @@ trait StreetViewPanoramaOptions extends StObject {
     * specified, or is set to <code>true</code>, street names are displayed on
     * the panorama. If set to <code>false</code>, street names are not
     * displayed.
+    * @defaultValue <code>true</code>
     */
   var showRoadLabels: js.UndefOr[Boolean | Null] = js.undefined
   

@@ -43,7 +43,7 @@ type BackupCreationDateTime = js.Date
 
 type BackupName = java.lang.String
 
-type BackupSizeBytes = scala.Double
+type BackupSizeBytes = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATING
@@ -72,7 +72,7 @@ type BackupType = _BackupType | java.lang.String
 */
 type BackupTypeFilter = _BackupTypeFilter | java.lang.String
 
-type BackupsInputLimit = scala.Double
+type BackupsInputLimit = Double
 
 type BatchGetRequestMap = StringDictionary[KeysAndAttributes]
 
@@ -96,7 +96,7 @@ type BatchStatementErrorCodeEnum = _BatchStatementErrorCodeEnum | java.lang.Stri
 
 type BatchWriteItemRequestMap = StringDictionary[WriteRequests]
 
-type BilledSizeBytes = scala.Double
+type BilledSizeBytes = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PROVISIONED
@@ -150,7 +150,7 @@ type ConsistentRead = Boolean
 
 type ConsumedCapacityMultiple = js.Array[ConsumedCapacity]
 
-type ConsumedCapacityUnits = scala.Double
+type ConsumedCapacityUnits = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
@@ -190,6 +190,8 @@ type CsvHeaderList = js.Array[CsvHeader]
 
 type Date = js.Date
 
+type DeletionProtectionEnabled = Boolean
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLING
   - typings.awsSdk.awsSdkStrings.ACTIVE
@@ -200,11 +202,11 @@ type Date = js.Date
 */
 type DestinationStatus = _DestinationStatus | java.lang.String
 
-type Double = scala.Double
+type DoubleObject = Double
 
 type Endpoints = js.Array[Endpoint]
 
-type ErrorCount = scala.Double
+type ErrorCount = Double
 
 type ExceptionDescription = java.lang.String
 
@@ -300,7 +302,7 @@ type ImportStatus = _ImportStatus | java.lang.String
 
 type ImportSummaryList = js.Array[ImportSummary]
 
-type ImportedItemCount = scala.Double
+type ImportedItemCount = Double
 
 type IndexName = java.lang.String
 
@@ -329,9 +331,9 @@ type InputCompressionType = _InputCompressionType | java.lang.String
 */
 type InputFormat = _InputFormat | java.lang.String
 
-type Integer = scala.Double
+type Integer = Double
 
-type IntegerObject = scala.Double
+type IntegerObject = Double
 
 type ItemCollectionKeyAttributeMap = StringDictionary[AttributeValue]
 
@@ -339,11 +341,11 @@ type ItemCollectionMetricsMultiple = js.Array[ItemCollectionMetrics]
 
 type ItemCollectionMetricsPerTable = StringDictionary[ItemCollectionMetricsMultiple]
 
-type ItemCollectionSizeEstimateBound = scala.Double
+type ItemCollectionSizeEstimateBound = Double
 
 type ItemCollectionSizeEstimateRange = js.Array[ItemCollectionSizeEstimateBound]
 
-type ItemCount = scala.Double
+type ItemCount = Double
 
 type ItemList = js.Array[AttributeMap]
 
@@ -378,13 +380,13 @@ type LastUpdateDateTime = js.Date
 
 type ListAttributeValue = js.Array[AttributeValue]
 
-type ListContributorInsightsLimit = scala.Double
+type ListContributorInsightsLimit = Double
 
-type ListExportsMaxLimit = scala.Double
+type ListExportsMaxLimit = Double
 
-type ListImportsMaxLimit = scala.Double
+type ListImportsMaxLimit = Double
 
-type ListTablesInputLimit = scala.Double
+type ListTablesInputLimit = Double
 
 type LocalSecondaryIndexDescriptionList = js.Array[LocalSecondaryIndexDescription]
 
@@ -392,7 +394,9 @@ type LocalSecondaryIndexList = js.Array[LocalSecondaryIndex]
 
 type LocalSecondaryIndexes = js.Array[LocalSecondaryIndexInfo]
 
-type Long = scala.Double
+type Long = Double
+
+type LongObject = Double
 
 type MapAttributeValue = StringDictionary[AttributeValue]
 
@@ -402,7 +406,7 @@ type NonKeyAttributeName = java.lang.String
 
 type NonKeyAttributeNameList = js.Array[NonKeyAttributeName]
 
-type NonNegativeLongObject = scala.Double
+type NonNegativeLongObject = Double
 
 type NullAttributeValue = Boolean
 
@@ -427,13 +431,13 @@ type PartiQLStatement = java.lang.String
 */
 type PointInTimeRecoveryStatus = _PointInTimeRecoveryStatus | java.lang.String
 
-type PositiveIntegerObject = scala.Double
+type PositiveIntegerObject = Double
 
-type PositiveLongObject = scala.Double
+type PositiveLongObject = Double
 
 type PreparedStatementParameters = js.Array[AttributeValue]
 
-type ProcessedItemCount = scala.Double
+type ProcessedItemCount = Double
 
 type ProjectionExpression = java.lang.String
 
@@ -571,9 +575,9 @@ type SSEType = _SSEType | java.lang.String
 */
 type ScalarAttributeType = _ScalarAttributeType | java.lang.String
 
-type ScanSegment = scala.Double
+type ScanSegment = Double
 
-type ScanTotalSegments = scala.Double
+type ScanTotalSegments = Double
 
 type SecondaryIndexesCapacityMap = StringDictionary[Capacity]
 

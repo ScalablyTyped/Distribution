@@ -5,6 +5,7 @@ import typings.smoothScrollbar.interfacesScrollbarMod.Scrollbar
 import typings.smoothScrollbar.utilsEventHubMod.EventHandler
 import typings.std.EventTarget
 import typings.std.HTMLElement
+import typings.std.Parameters
 import typings.std.Touch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,7 +29,14 @@ object utilsMod {
     def this(touch: Touch) = this()
   }
   
+  inline def clamp(value: Double, lower: Double, upper: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(value.asInstanceOf[js.Any], lower.asInstanceOf[js.Any], upper.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
   inline def clearEventsOn(scrollbar: Scrollbar): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearEventsOn")(scrollbar.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def debounce[T /* <: js.Function1[/* repeated */ Any, Unit] */](fn: T): js.ThisFunction1[/* this */ Any, /* args */ Parameters[T], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(fn.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction1[/* this */ Any, /* args */ Parameters[T], Unit]]
+  inline def debounce[T /* <: js.Function1[/* repeated */ Any, Unit] */](fn: T, wait: Double): js.ThisFunction1[/* this */ Any, /* args */ Parameters[T], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(fn.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[js.ThisFunction1[/* this */ Any, /* args */ Parameters[T], Unit]]
+  inline def debounce[T /* <: js.Function1[/* repeated */ Any, Unit] */](fn: T, wait: Double, leading: Boolean): js.ThisFunction1[/* this */ Any, /* args */ Parameters[T], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(fn.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], leading.asInstanceOf[js.Any])).asInstanceOf[js.ThisFunction1[/* this */ Any, /* args */ Parameters[T], Unit]]
+  inline def debounce[T /* <: js.Function1[/* repeated */ Any, Unit] */](fn: T, wait: Unit, leading: Boolean): js.ThisFunction1[/* this */ Any, /* args */ Parameters[T], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(fn.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], leading.asInstanceOf[js.Any])).asInstanceOf[js.ThisFunction1[/* this */ Any, /* args */ Parameters[T], Unit]]
   
   inline def eventScope(scrollbar: Scrollbar): js.Function3[/* elem */ EventTarget, /* events */ String, /* fn */ EventHandler, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("eventScope")(scrollbar.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* elem */ EventTarget, /* events */ String, /* fn */ EventHandler, Unit]]
   

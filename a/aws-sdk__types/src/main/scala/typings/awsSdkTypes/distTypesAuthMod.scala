@@ -9,6 +9,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesAuthMod {
   
+  @js.native
+  sealed trait HttpAuthLocation extends StObject
+  @JSImport("@aws-sdk/types/dist-types/auth", "HttpAuthLocation")
+  @js.native
+  object HttpAuthLocation extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[HttpAuthLocation & String] = js.native
+    
+    @js.native
+    sealed trait HEADER
+      extends StObject
+         with HttpAuthLocation
+    /* "header" */ val HEADER: typings.awsSdkTypes.distTypesAuthMod.HttpAuthLocation.HEADER & String = js.native
+    
+    @js.native
+    sealed trait QUERY
+      extends StObject
+         with HttpAuthLocation
+    /* "query" */ val QUERY: typings.awsSdkTypes.distTypesAuthMod.HttpAuthLocation.QUERY & String = js.native
+  }
+  
   trait AuthScheme extends StObject {
     
     /**
@@ -30,7 +52,7 @@ object distTypesAuthMod {
     
     /**
       * @example ["*"]
-      * @exammple ["us-west-2", "us-east-1"]
+      * @example ["us-west-2", "us-east-1"]
       */
     var signingRegionSet: js.UndefOr[js.Array[String]] = js.undefined
     
@@ -67,6 +89,45 @@ object distTypesAuthMod {
       inline def setSigningRegionSetUndefined: Self = StObject.set(x, "signingRegionSet", js.undefined)
       
       inline def setSigningRegionSetVarargs(value: String*): Self = StObject.set(x, "signingRegionSet", js.Array(value*))
+    }
+  }
+  
+  trait HttpAuthDefinition extends StObject {
+    
+    /**
+      * Defines the location of where the Auth is serialized.
+      */
+    var in: HttpAuthLocation
+    
+    /**
+      * Defines the name of the HTTP header or query string parameter
+      * that contains the Auth.
+      */
+    var name: String
+    
+    /**
+      * Defines the security scheme to use on the `Authorization` header value.
+      * This can only be set if the "in" property is set to {@link HttpAuthLocation.HEADER}.
+      */
+    var scheme: js.UndefOr[String] = js.undefined
+  }
+  object HttpAuthDefinition {
+    
+    inline def apply(in: HttpAuthLocation, name: String): HttpAuthDefinition = {
+      val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[HttpAuthDefinition]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpAuthDefinition] (val x: Self) extends AnyVal {
+      
+      inline def setIn(value: HttpAuthLocation): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+      
+      inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
     }
   }
 }

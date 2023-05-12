@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular__service-worker
 
-Typings are for version 14.2.7
+Typings are for version 16.0.1
 
 ## Library description:
 Angular - service worker tooling!

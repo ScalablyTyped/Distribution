@@ -1,6 +1,7 @@
 package typings.chevrotainTypes.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.chevrotainTypes.anon.MaxLookahead
 import typings.chevrotainTypes.anon.Payload
 import typings.chevrotainTypes.mod.^
 import typings.std.Record
@@ -14,6 +15,8 @@ inline def EMPTY_ALT(): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDyn
 inline def EMPTY_ALT[T](value: T): js.Function0[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("EMPTY_ALT")(value.asInstanceOf[js.Any]).asInstanceOf[js.Function0[T]]
 
 inline def EOF: TokenType = ^.asInstanceOf[js.Dynamic].selectDynamic("EOF").asInstanceOf[TokenType]
+
+inline def LLkLookaheadStrategy: ILLkLookaheadStrategyConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("LLkLookaheadStrategy").asInstanceOf[ILLkLookaheadStrategyConstructor]
 
 inline def VERSION: String = ^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[String]
 
@@ -42,6 +45,8 @@ inline def defaultParserErrorProvider: IParserErrorMessageProvider = ^.asInstanc
 inline def generateCstDts(productions: Record[String, Rule]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateCstDts")(productions.asInstanceOf[js.Any]).asInstanceOf[String]
 inline def generateCstDts(productions: Record[String, Rule], options: GenerateDtsOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCstDts")(productions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
 
+inline def getLookaheadPaths(options: MaxLookahead): js.Array[LookaheadSequence] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLookaheadPaths")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[LookaheadSequence]]
+
 inline def isRecognitionException(error: js.Error): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRecognitionException")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
 inline def serializeGrammar(topRules: js.Array[Rule]): js.Array[ISerializedGast] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeGrammar")(topRules.asInstanceOf[js.Any]).asInstanceOf[js.Array[ISerializedGast]]
@@ -68,6 +73,8 @@ type CustomPatternMatcherReturn = js.Array[String] & Payload
 type GrammarAction[OUT] = js.Function0[OUT]
 
 type IOrAltWithGate[T] = IOrAlt[T]
+
+type LookaheadSequence = js.Array[js.Array[TokenType]]
 
 type MultiModesDefinition = StringDictionary[js.Array[TokenType]]
 

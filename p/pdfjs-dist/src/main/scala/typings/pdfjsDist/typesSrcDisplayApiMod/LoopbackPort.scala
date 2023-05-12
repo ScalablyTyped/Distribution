@@ -10,7 +10,7 @@ open class LoopbackPort () extends StObject {
   
   def addEventListener(name: Any, listener: Any): Unit = js.native
   
-  def postMessage(obj: Any, transfers: Any): Unit = js.native
+  def postMessage(obj: Any, transfer: Any): Unit = js.native
   
   /* private */ var `private`: Any = js.native
   

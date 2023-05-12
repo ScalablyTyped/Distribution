@@ -1,7 +1,7 @@
 
 # Scala.js typings for swagger-ui-react
 
-Typings are for version 4.11
+Typings are for version 4.18
 
 ## Library description:
 [![NPM version](https://badge.fury.io/js/swagger-ui-react.svg)](http://badge.fury.io/js/swagger-ui-react)

@@ -12,7 +12,7 @@ trait IpAddressResponse extends StObject {
   var CreationTime: js.UndefOr[Rfc3339TimeString] = js.undefined
   
   /**
-    * One IP address that the Resolver endpoint uses for DNS queries.
+    * One IPv4 address that the Resolver endpoint uses for DNS queries.
     */
   var Ip: js.UndefOr[typings.awsSdk.clientsRoute53resolverMod.Ip] = js.undefined
   
@@ -20,6 +20,11 @@ trait IpAddressResponse extends StObject {
     * The ID of one IP address.
     */
   var IpId: js.UndefOr[ResourceId] = js.undefined
+  
+  /**
+    *  One IPv6 address that the Resolver endpoint uses for DNS queries. 
+    */
+  var Ipv6: js.UndefOr[typings.awsSdk.clientsRoute53resolverMod.Ipv6] = js.undefined
   
   /**
     * The date and time that the IP address was last modified, in Unix time format and Coordinated Universal Time (UTC).
@@ -62,6 +67,10 @@ object IpAddressResponse {
     inline def setIpIdUndefined: Self = StObject.set(x, "IpId", js.undefined)
     
     inline def setIpUndefined: Self = StObject.set(x, "Ip", js.undefined)
+    
+    inline def setIpv6(value: Ipv6): Self = StObject.set(x, "Ipv6", value.asInstanceOf[js.Any])
+    
+    inline def setIpv6Undefined: Self = StObject.set(x, "Ipv6", js.undefined)
     
     inline def setModificationTime(value: Rfc3339TimeString): Self = StObject.set(x, "ModificationTime", value.asInstanceOf[js.Any])
     

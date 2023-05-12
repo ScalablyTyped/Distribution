@@ -51,6 +51,10 @@ object nodeDownloaderHelperStrings {
   inline def progressDotthrottled: progressDotthrottled = "progress.throttled".asInstanceOf[progressDotthrottled]
   
   @js.native
+  sealed trait redirected extends StObject
+  inline def redirected: redirected = "redirected".asInstanceOf[redirected]
+  
+  @js.native
   sealed trait renamed extends StObject
   inline def renamed: renamed = "renamed".asInstanceOf[renamed]
   

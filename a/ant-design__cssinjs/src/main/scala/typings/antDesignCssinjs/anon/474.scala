@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.WebkitMaskRepeatY
+import typings.csstype.mod.Property.ScrollSnapAlign
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `474` extends StObject {
   
   var value: js.UndefOr[
-    WebkitMaskRepeatY | (js.Array[
+    ScrollSnapAlign | (js.Array[
       (Extract[
-        js.UndefOr[WebkitMaskRepeatY | js.Array[NonNullable[js.UndefOr[WebkitMaskRepeatY]]]], 
+        js.UndefOr[ScrollSnapAlign | js.Array[NonNullable[js.UndefOr[ScrollSnapAlign]]]], 
         String
-      ]) | NonNullable[js.UndefOr[WebkitMaskRepeatY]]
+      ]) | NonNullable[js.UndefOr[ScrollSnapAlign]]
     ])
   ] = js.native
 }

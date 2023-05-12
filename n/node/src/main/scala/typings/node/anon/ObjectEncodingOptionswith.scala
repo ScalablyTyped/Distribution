@@ -6,10 +6,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined node.node:fs.ObjectEncodingOptions & {  withFileTypes :false | undefined} */
+/* Inlined node.node:fs.ObjectEncodingOptions & {  withFileTypes :false | undefined,   recursive :boolean | undefined} */
 trait ObjectEncodingOptionswith extends StObject {
   
   var encoding: js.UndefOr[BufferEncoding | Null] = js.undefined
+  
+  var recursive: js.UndefOr[Boolean] = js.undefined
   
   var withFileTypes: js.UndefOr[`false`] = js.undefined
 }
@@ -28,6 +30,10 @@ object ObjectEncodingOptionswith {
     inline def setEncodingNull: Self = StObject.set(x, "encoding", null)
     
     inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    
+    inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    
+    inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
     
     inline def setWithFileTypes(value: `false`): Self = StObject.set(x, "withFileTypes", value.asInstanceOf[js.Any])
     

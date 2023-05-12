@@ -1,14 +1,15 @@
 package typings.ddTrace
 
 import typings.ddTrace.ddTraceStrings.agent
+import typings.ddTrace.ddTraceStrings.datadog
 import typings.ddTrace.ddTraceStrings.log
+import typings.ddTrace.mod.Span
 import typings.ddTrace.mod.TransportRequestParams
 import typings.ddTrace.mod.anyObject
 import typings.ddTrace.mod.plugins.ExecutionArgs
 import typings.node.httpMod.ClientRequest
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
-import typings.opentracing.mod.Span
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -115,15 +116,15 @@ object anon {
     var enableGetRumData: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Whether to write traces to log output, rather than send to an agent
+      * Whether to write traces to log output or agentless, rather than send to an agent
       * @default false
       */
-    var exporter: js.UndefOr[log | agent] = js.undefined
+    var exporter: js.UndefOr[log | agent | datadog] = js.undefined
     
     /**
       * Configuration of the IAST. Can be a boolean as an alias to `iast.enabled`.
       */
-    var iast: js.UndefOr[Boolean | Enabled] = js.undefined
+    var iast: js.UndefOr[Boolean | DeduplicationEnabled] = js.undefined
     
     /**
       * Whether to add an auto-generated `runtime-id` tag to metrics.
@@ -151,11 +152,11 @@ object anon {
       
       inline def setEnableGetRumDataUndefined: Self = StObject.set(x, "enableGetRumData", js.undefined)
       
-      inline def setExporter(value: log | agent): Self = StObject.set(x, "exporter", value.asInstanceOf[js.Any])
+      inline def setExporter(value: log | agent | datadog): Self = StObject.set(x, "exporter", value.asInstanceOf[js.Any])
       
       inline def setExporterUndefined: Self = StObject.set(x, "exporter", js.undefined)
       
-      inline def setIast(value: Boolean | Enabled): Self = StObject.set(x, "iast", value.asInstanceOf[js.Any])
+      inline def setIast(value: Boolean | DeduplicationEnabled): Self = StObject.set(x, "iast", value.asInstanceOf[js.Any])
       
       inline def setIastUndefined: Self = StObject.set(x, "iast", js.undefined)
       
@@ -166,6 +167,95 @@ object anon {
       inline def setTraceparent(value: Boolean): Self = StObject.set(x, "traceparent", value.asInstanceOf[js.Any])
       
       inline def setTraceparentUndefined: Self = StObject.set(x, "traceparent", js.undefined)
+    }
+  }
+  
+  trait BlockedTemplateHtml extends StObject {
+    
+    /**
+      * Specifies a path to a custom blocking template html file.
+      */
+    var blockedTemplateHtml: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Specifies a path to a custom blocking template json file.
+      */
+    var blockedTemplateJson: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Whether to enable AppSec.
+      * @default false
+      */
+    var enabled: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Specifies a regex that will redact sensitive data by its key in attack reports.
+      */
+    var obfuscatorKeyRegex: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Specifies a regex that will redact sensitive data by its value in attack reports.
+      */
+    var obfuscatorValueRegex: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Controls the maximum amount of traces sampled by AppSec attacks, per second.
+      * @default 100
+      */
+    var rateLimit: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Specifies a path to a custom rules file.
+      */
+    var rules: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Controls the maximum amount of time in microseconds the WAF is allowed to run synchronously for.
+      * @default 5000
+      */
+    var wafTimeout: js.UndefOr[Double] = js.undefined
+  }
+  object BlockedTemplateHtml {
+    
+    inline def apply(): BlockedTemplateHtml = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[BlockedTemplateHtml]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockedTemplateHtml] (val x: Self) extends AnyVal {
+      
+      inline def setBlockedTemplateHtml(value: String): Self = StObject.set(x, "blockedTemplateHtml", value.asInstanceOf[js.Any])
+      
+      inline def setBlockedTemplateHtmlUndefined: Self = StObject.set(x, "blockedTemplateHtml", js.undefined)
+      
+      inline def setBlockedTemplateJson(value: String): Self = StObject.set(x, "blockedTemplateJson", value.asInstanceOf[js.Any])
+      
+      inline def setBlockedTemplateJsonUndefined: Self = StObject.set(x, "blockedTemplateJson", js.undefined)
+      
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      
+      inline def setObfuscatorKeyRegex(value: String): Self = StObject.set(x, "obfuscatorKeyRegex", value.asInstanceOf[js.Any])
+      
+      inline def setObfuscatorKeyRegexUndefined: Self = StObject.set(x, "obfuscatorKeyRegex", js.undefined)
+      
+      inline def setObfuscatorValueRegex(value: String): Self = StObject.set(x, "obfuscatorValueRegex", value.asInstanceOf[js.Any])
+      
+      inline def setObfuscatorValueRegexUndefined: Self = StObject.set(x, "obfuscatorValueRegex", js.undefined)
+      
+      inline def setRateLimit(value: Double): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
+      
+      inline def setRateLimitUndefined: Self = StObject.set(x, "rateLimit", js.undefined)
+      
+      inline def setRules(value: String): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      
+      inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+      
+      inline def setWafTimeout(value: Double): Self = StObject.set(x, "wafTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setWafTimeoutUndefined: Self = StObject.set(x, "wafTimeout", js.undefined)
     }
   }
   
@@ -182,7 +272,12 @@ object anon {
     def warn(message: String): Unit = js.native
   }
   
-  trait Enabled extends StObject {
+  trait DeduplicationEnabled extends StObject {
+    
+    /**
+      * Whether to enable vulnerability deduplication
+      */
+    var deduplicationEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to enable IAST.
@@ -208,15 +303,19 @@ object anon {
       */
     var requestSampling: js.UndefOr[Double] = js.undefined
   }
-  object Enabled {
+  object DeduplicationEnabled {
     
-    inline def apply(): Enabled = {
+    inline def apply(): DeduplicationEnabled = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Enabled]
+      __obj.asInstanceOf[DeduplicationEnabled]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Enabled] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: DeduplicationEnabled] (val x: Self) extends AnyVal {
+      
+      inline def setDeduplicationEnabled(value: Boolean): Self = StObject.set(x, "deduplicationEnabled", value.asInstanceOf[js.Any])
+      
+      inline def setDeduplicationEnabledUndefined: Self = StObject.set(x, "deduplicationEnabled", js.undefined)
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -240,7 +339,7 @@ object anon {
     
     var execute: js.UndefOr[
         js.Function3[
-          /* span */ js.UndefOr[typings.ddTrace.mod.Span], 
+          /* span */ js.UndefOr[Span], 
           /* args */ js.UndefOr[ExecutionArgs], 
           /* res */ js.UndefOr[Any], 
           Unit
@@ -249,7 +348,7 @@ object anon {
     
     var parse: js.UndefOr[
         js.Function3[
-          /* span */ js.UndefOr[typings.ddTrace.mod.Span], 
+          /* span */ js.UndefOr[Span], 
           /* source */ js.UndefOr[Any], 
           /* document */ js.UndefOr[Any], 
           Unit
@@ -258,7 +357,7 @@ object anon {
     
     var validate: js.UndefOr[
         js.Function3[
-          /* span */ js.UndefOr[typings.ddTrace.mod.Span], 
+          /* span */ js.UndefOr[Span], 
           /* document */ js.UndefOr[Any], 
           /* errors */ js.UndefOr[Any], 
           Unit
@@ -276,19 +375,19 @@ object anon {
     implicit open class MutableBuilder[Self <: Execute] (val x: Self) extends AnyVal {
       
       inline def setExecute(
-        value: (/* span */ js.UndefOr[typings.ddTrace.mod.Span], /* args */ js.UndefOr[ExecutionArgs], /* res */ js.UndefOr[Any]) => Unit
+        value: (/* span */ js.UndefOr[Span], /* args */ js.UndefOr[ExecutionArgs], /* res */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "execute", js.Any.fromFunction3(value))
       
       inline def setExecuteUndefined: Self = StObject.set(x, "execute", js.undefined)
       
       inline def setParse(
-        value: (/* span */ js.UndefOr[typings.ddTrace.mod.Span], /* source */ js.UndefOr[Any], /* document */ js.UndefOr[Any]) => Unit
+        value: (/* span */ js.UndefOr[Span], /* source */ js.UndefOr[Any], /* document */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "parse", js.Any.fromFunction3(value))
       
       inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
       
       inline def setValidate(
-        value: (/* span */ js.UndefOr[typings.ddTrace.mod.Span], /* document */ js.UndefOr[Any], /* errors */ js.UndefOr[Any]) => Unit
+        value: (/* span */ js.UndefOr[Span], /* document */ js.UndefOr[Any], /* errors */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "validate", js.Any.fromFunction3(value))
       
       inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
@@ -328,74 +427,27 @@ object anon {
     }
   }
   
-  trait ObfuscatorKeyRegex extends StObject {
+  trait PollInterval extends StObject {
     
     /**
-      * Whether to enable AppSec.
-      * @default false
+      * Specifies the remote configuration polling interval in seconds
+      * @default 5
       */
-    var enabled: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Specifies a regex that will redact sensitive data by its key in attack reports.
-      */
-    var obfuscatorKeyRegex: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Specifies a regex that will redact sensitive data by its value in attack reports.
-      */
-    var obfuscatorValueRegex: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Controls the maximum amount of traces sampled by AppSec attacks, per second.
-      * @default 100
-      */
-    var rateLimit: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Specifies a path to a custom rules file.
-      */
-    var rules: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Controls the maximum amount of time in microseconds the WAF is allowed to run synchronously for.
-      * @default 5000
-      */
-    var wafTimeout: js.UndefOr[Double] = js.undefined
+    var pollInterval: js.UndefOr[Double] = js.undefined
   }
-  object ObfuscatorKeyRegex {
+  object PollInterval {
     
-    inline def apply(): ObfuscatorKeyRegex = {
+    inline def apply(): PollInterval = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ObfuscatorKeyRegex]
+      __obj.asInstanceOf[PollInterval]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: ObfuscatorKeyRegex] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: PollInterval] (val x: Self) extends AnyVal {
       
-      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setPollInterval(value: Double): Self = StObject.set(x, "pollInterval", value.asInstanceOf[js.Any])
       
-      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
-      
-      inline def setObfuscatorKeyRegex(value: String): Self = StObject.set(x, "obfuscatorKeyRegex", value.asInstanceOf[js.Any])
-      
-      inline def setObfuscatorKeyRegexUndefined: Self = StObject.set(x, "obfuscatorKeyRegex", js.undefined)
-      
-      inline def setObfuscatorValueRegex(value: String): Self = StObject.set(x, "obfuscatorValueRegex", value.asInstanceOf[js.Any])
-      
-      inline def setObfuscatorValueRegexUndefined: Self = StObject.set(x, "obfuscatorValueRegex", js.undefined)
-      
-      inline def setRateLimit(value: Double): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
-      
-      inline def setRateLimitUndefined: Self = StObject.set(x, "rateLimit", js.undefined)
-      
-      inline def setRules(value: String): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
-      
-      inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
-      
-      inline def setWafTimeout(value: Double): Self = StObject.set(x, "wafTimeout", value.asInstanceOf[js.Any])
-      
-      inline def setWafTimeoutUndefined: Self = StObject.set(x, "wafTimeout", js.undefined)
+      inline def setPollIntervalUndefined: Self = StObject.set(x, "pollInterval", js.undefined)
     }
   }
   

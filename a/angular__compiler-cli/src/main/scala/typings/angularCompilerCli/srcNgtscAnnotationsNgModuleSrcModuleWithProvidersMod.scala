@@ -1,10 +1,9 @@
 package typings.angularCompilerCli
 
+import typings.angularCompilerCli.anon.ClassDeclarationDeclarati
 import typings.angularCompilerCli.srcNgtscImportsMod.Reference
 import typings.angularCompilerCli.srcNgtscPartialEvaluatorMod.SyntheticValue
 import typings.angularCompilerCli.srcNgtscPartialEvaluatorSrcInterfaceMod.ForeignFunctionResolver
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ReflectionHost
 import typings.typescript.mod.CallExpression
 import org.scalablytyped.runtime.StObject
@@ -25,11 +24,11 @@ object srcNgtscAnnotationsNgModuleSrcModuleWithProvidersMod {
     
     var mwpCall: CallExpression
     
-    var ngModule: Reference[ClassDeclaration[DeclarationNode]]
+    var ngModule: Reference[ClassDeclarationDeclarati]
   }
   object ResolvedModuleWithProviders {
     
-    inline def apply(mwpCall: CallExpression, ngModule: Reference[ClassDeclaration[DeclarationNode]]): ResolvedModuleWithProviders = {
+    inline def apply(mwpCall: CallExpression, ngModule: Reference[ClassDeclarationDeclarati]): ResolvedModuleWithProviders = {
       val __obj = js.Dynamic.literal(mwpCall = mwpCall.asInstanceOf[js.Any], ngModule = ngModule.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResolvedModuleWithProviders]
     }
@@ -39,7 +38,7 @@ object srcNgtscAnnotationsNgModuleSrcModuleWithProvidersMod {
       
       inline def setMwpCall(value: CallExpression): Self = StObject.set(x, "mwpCall", value.asInstanceOf[js.Any])
       
-      inline def setNgModule(value: Reference[ClassDeclaration[DeclarationNode]]): Self = StObject.set(x, "ngModule", value.asInstanceOf[js.Any])
+      inline def setNgModule(value: Reference[ClassDeclarationDeclarati]): Self = StObject.set(x, "ngModule", value.asInstanceOf[js.Any])
     }
   }
 }

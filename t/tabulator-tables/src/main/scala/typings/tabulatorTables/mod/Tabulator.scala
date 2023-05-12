@@ -33,14 +33,14 @@ open class Tabulator protected () extends StObject {
   def addColumn(definition: ColumnDefinition, insertRightOfTarget: Unit, positionTarget: ColumnLookup): js.Promise[Unit] = js.native
   
   /** The addData method returns a promise, this can be used to run any other commands that have to be run after the data has been loaded into the table. By running them in the promise you ensure they are only run after the table has loaded the data. */
-  def addData(): js.Promise[RowComponent] = js.native
-  def addData(data: js.Array[js.Object]): js.Promise[RowComponent] = js.native
-  def addData(data: js.Array[js.Object], addToTop: Boolean): js.Promise[RowComponent] = js.native
-  def addData(data: js.Array[js.Object], addToTop: Boolean, positionTarget: RowLookup): js.Promise[RowComponent] = js.native
-  def addData(data: js.Array[js.Object], addToTop: Unit, positionTarget: RowLookup): js.Promise[RowComponent] = js.native
-  def addData(data: Unit, addToTop: Boolean): js.Promise[RowComponent] = js.native
-  def addData(data: Unit, addToTop: Boolean, positionTarget: RowLookup): js.Promise[RowComponent] = js.native
-  def addData(data: Unit, addToTop: Unit, positionTarget: RowLookup): js.Promise[RowComponent] = js.native
+  def addData(): js.Promise[js.Array[RowComponent]] = js.native
+  def addData(data: js.Array[js.Object]): js.Promise[js.Array[RowComponent]] = js.native
+  def addData(data: js.Array[js.Object], addToTop: Boolean): js.Promise[js.Array[RowComponent]] = js.native
+  def addData(data: js.Array[js.Object], addToTop: Boolean, positionTarget: RowLookup): js.Promise[js.Array[RowComponent]] = js.native
+  def addData(data: js.Array[js.Object], addToTop: Unit, positionTarget: RowLookup): js.Promise[js.Array[RowComponent]] = js.native
+  def addData(data: Unit, addToTop: Boolean): js.Promise[js.Array[RowComponent]] = js.native
+  def addData(data: Unit, addToTop: Boolean, positionTarget: RowLookup): js.Promise[js.Array[RowComponent]] = js.native
+  def addData(data: Unit, addToTop: Unit, positionTarget: RowLookup): js.Promise[js.Array[RowComponent]] = js.native
   
   /** If you want to add another filter to the existing filters then you can call the addFilter function: */
   def addFilter(field: String, `type`: FilterType, value: Any): Unit = js.native
@@ -65,12 +65,18 @@ open class Tabulator protected () extends StObject {
   def addRow(data: Unit, addToTop: Boolean, positionTarget: RowLookup): js.Promise[RowComponent] = js.native
   def addRow(data: Unit, addToTop: Unit, positionTarget: RowLookup): js.Promise[RowComponent] = js.native
   
+  /** Display alert message on the table */
+  def alert(message: String): Unit = js.native
+  
   /** Prevent actions from triggering an update of the Virtual DOM: */
   def blockRedraw(): Unit = js.native
   
   var browser: String = js.native
   
   var browserSlow: Boolean = js.native
+  
+  /** clear the alert message from the table */
+  def clearAlert(): Unit = js.native
   
   /** Clear the edited flag on all cells in the table or some of them. */
   def clearCellEdited(): Unit = js.native
@@ -405,14 +411,14 @@ open class Tabulator protected () extends StObject {
   /** You can change to show the next page using the previousPage function. */
   def nextPage(): js.Promise[Unit] = js.native
   
-  def off[K /* <: /* keyof tabulator-tables.tabulator-tables.EventCallBackMethods */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 105, starting with typings.tabulatorTables.tabulatorTablesStrings.validationFailed, typings.tabulatorTables.tabulatorTablesStrings.scrollHorizontal, typings.tabulatorTables.tabulatorTablesStrings.scrollVertical */ Any */](event: K): Unit = js.native
-  def off[K /* <: /* keyof tabulator-tables.tabulator-tables.EventCallBackMethods */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 105, starting with typings.tabulatorTables.tabulatorTablesStrings.validationFailed, typings.tabulatorTables.tabulatorTablesStrings.scrollHorizontal, typings.tabulatorTables.tabulatorTablesStrings.scrollVertical */ Any */](
+  def off[K /* <: /* keyof tabulator-tables.tabulator-tables.EventCallBackMethods */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 109, starting with typings.tabulatorTables.tabulatorTablesStrings.validationFailed, typings.tabulatorTables.tabulatorTablesStrings.scrollHorizontal, typings.tabulatorTables.tabulatorTablesStrings.scrollVertical */ Any */](event: K): Unit = js.native
+  def off[K /* <: /* keyof tabulator-tables.tabulator-tables.EventCallBackMethods */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 109, starting with typings.tabulatorTables.tabulatorTablesStrings.validationFailed, typings.tabulatorTables.tabulatorTablesStrings.scrollHorizontal, typings.tabulatorTables.tabulatorTablesStrings.scrollVertical */ Any */](
     event: K,
     callback: /* import warning: importer.ImportType#apply Failed type conversion: tabulator-tables.tabulator-tables.EventCallBackMethods[K] */ js.Any
   ): Unit = js.native
   
-  def on[K /* <: /* keyof tabulator-tables.tabulator-tables.EventCallBackMethods */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 105, starting with typings.tabulatorTables.tabulatorTablesStrings.validationFailed, typings.tabulatorTables.tabulatorTablesStrings.scrollHorizontal, typings.tabulatorTables.tabulatorTablesStrings.scrollVertical */ Any */](event: K): Unit = js.native
-  def on[K /* <: /* keyof tabulator-tables.tabulator-tables.EventCallBackMethods */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 105, starting with typings.tabulatorTables.tabulatorTablesStrings.validationFailed, typings.tabulatorTables.tabulatorTablesStrings.scrollHorizontal, typings.tabulatorTables.tabulatorTablesStrings.scrollVertical */ Any */](
+  def on[K /* <: /* keyof tabulator-tables.tabulator-tables.EventCallBackMethods */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 109, starting with typings.tabulatorTables.tabulatorTablesStrings.validationFailed, typings.tabulatorTables.tabulatorTablesStrings.scrollHorizontal, typings.tabulatorTables.tabulatorTablesStrings.scrollVertical */ Any */](event: K): Unit = js.native
+  def on[K /* <: /* keyof tabulator-tables.tabulator-tables.EventCallBackMethods */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 109, starting with typings.tabulatorTables.tabulatorTablesStrings.validationFailed, typings.tabulatorTables.tabulatorTablesStrings.scrollHorizontal, typings.tabulatorTables.tabulatorTablesStrings.scrollVertical */ Any */](
     event: K,
     callback: /* import warning: importer.ImportType#apply Failed type conversion: tabulator-tables.tabulator-tables.EventCallBackMethods[K] */ js.Any
   ): Unit = js.native
@@ -524,7 +530,7 @@ open class Tabulator protected () extends StObject {
   def selectRow_true(lookup: `true`): Unit = js.native
   
   /** If you have previously used the getColumnLayout function to retrieve a tables layout, you can use the setColumnLayout function to apply it to a table. */
-  def setColumnLayout(layout: ColumnLayout): Unit = js.native
+  def setColumnLayout(layout: js.Array[ColumnLayout]): Unit = js.native
   
   /** To replace the current column definitions for a table use the setColumns function. This function takes a column definition array as its only argument. */
   def setColumns(definitions: js.Array[ColumnDefinition]): Unit = js.native

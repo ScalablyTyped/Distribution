@@ -16,5 +16,5 @@ open class KeyframeTrack protected ()
     * @param values
     * @param [interpolation=THREE.InterpolateLinear]
     */
-  def this(name: String, times: ArrayLike[Any], values: ArrayLike[Any]) = this()
+  def this(name: String, times: ArrayLike[Double], values: ArrayLike[Any]) = this()
 }

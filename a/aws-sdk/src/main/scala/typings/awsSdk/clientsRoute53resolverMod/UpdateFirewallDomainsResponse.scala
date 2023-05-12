@@ -17,7 +17,7 @@ trait UpdateFirewallDomainsResponse extends StObject {
   var Name: js.UndefOr[typings.awsSdk.clientsRoute53resolverMod.Name] = js.undefined
   
   /**
-    *  
+    * Status of the UpdateFirewallDomains request.
     */
   var Status: js.UndefOr[FirewallDomainListStatus] = js.undefined
   

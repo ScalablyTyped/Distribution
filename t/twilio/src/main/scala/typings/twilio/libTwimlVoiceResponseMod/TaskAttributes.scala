@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TaskAttributes extends StObject {
   
+  /** priority - Task priority */
   var priority: js.UndefOr[Double] = js.undefined
   
+  /** timeout - Timeout associated with task */
   var timeout: js.UndefOr[Double] = js.undefined
 }
 object TaskAttributes {

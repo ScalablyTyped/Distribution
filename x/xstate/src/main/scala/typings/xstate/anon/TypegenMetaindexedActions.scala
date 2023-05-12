@@ -72,7 +72,7 @@ trait TypegenMetaindexedActions extends StObject {
     * Allows you to specify all the missing implementations
     * of the machine
     */
-  var missingImplementations: Actions
+  var missingImplementations: Delays
   
   /**
     * Allows you to specify all tags used by the machine
@@ -90,7 +90,7 @@ object TypegenMetaindexedActions {
     indexedEvents: Record[String, EventObject],
     invokeSrcNameMap: Record[String, String],
     matchesStates: String | js.Object,
-    missingImplementations: Actions,
+    missingImplementations: Delays,
     tags: String
   ): TypegenMetaindexedActions = {
     val __obj = js.Dynamic.literal(eventsCausingActions = eventsCausingActions.asInstanceOf[js.Any], eventsCausingDelays = eventsCausingDelays.asInstanceOf[js.Any], eventsCausingGuards = eventsCausingGuards.asInstanceOf[js.Any], eventsCausingServices = eventsCausingServices.asInstanceOf[js.Any], indexedActions = indexedActions.asInstanceOf[js.Any], indexedEvents = indexedEvents.asInstanceOf[js.Any], invokeSrcNameMap = invokeSrcNameMap.asInstanceOf[js.Any], matchesStates = matchesStates.asInstanceOf[js.Any], missingImplementations = missingImplementations.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
@@ -119,7 +119,7 @@ object TypegenMetaindexedActions {
     
     inline def setMatchesStates(value: String | js.Object): Self = StObject.set(x, "matchesStates", value.asInstanceOf[js.Any])
     
-    inline def setMissingImplementations(value: Actions): Self = StObject.set(x, "missingImplementations", value.asInstanceOf[js.Any])
+    inline def setMissingImplementations(value: Delays): Self = StObject.set(x, "missingImplementations", value.asInstanceOf[js.Any])
     
     inline def setTags(value: String): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
   }

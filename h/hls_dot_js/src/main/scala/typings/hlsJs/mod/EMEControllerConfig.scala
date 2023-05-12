@@ -11,13 +11,30 @@ trait EMEControllerConfig extends StObject {
   
   var drmSystemOptions: DRMSystemOptions
   
+  var drmSystems: DRMSystemsConfiguration
+  
   var emeEnabled: Boolean
   
   var licenseResponseCallback: js.UndefOr[
-    js.Function2[/* xhr */ XMLHttpRequest, /* url */ String, js.typedarray.ArrayBuffer]
+    js.ThisFunction3[
+      /* this */ Hls, 
+      /* xhr */ XMLHttpRequest, 
+      /* url */ String, 
+      /* keyContext */ MediaKeySessionContext, 
+      js.typedarray.ArrayBuffer
+    ]
   ] = js.undefined
   
-  var licenseXhrSetup: js.UndefOr[js.Function2[/* xhr */ XMLHttpRequest, /* url */ String, Unit]] = js.undefined
+  var licenseXhrSetup: js.UndefOr[
+    js.ThisFunction4[
+      /* this */ Hls, 
+      /* xhr */ XMLHttpRequest, 
+      /* url */ String, 
+      /* keyContext */ MediaKeySessionContext, 
+      /* licenseChallenge */ js.typedarray.Uint8Array, 
+      Unit | js.typedarray.Uint8Array | (js.Promise[js.typedarray.Uint8Array | Unit])
+    ]
+  ] = js.undefined
   
   var requestMediaKeySystemAccessFunc: MediaKeyFunc | Null
   
@@ -25,8 +42,8 @@ trait EMEControllerConfig extends StObject {
 }
 object EMEControllerConfig {
   
-  inline def apply(drmSystemOptions: DRMSystemOptions, emeEnabled: Boolean): EMEControllerConfig = {
-    val __obj = js.Dynamic.literal(drmSystemOptions = drmSystemOptions.asInstanceOf[js.Any], emeEnabled = emeEnabled.asInstanceOf[js.Any], requestMediaKeySystemAccessFunc = null)
+  inline def apply(drmSystemOptions: DRMSystemOptions, drmSystems: DRMSystemsConfiguration, emeEnabled: Boolean): EMEControllerConfig = {
+    val __obj = js.Dynamic.literal(drmSystemOptions = drmSystemOptions.asInstanceOf[js.Any], drmSystems = drmSystems.asInstanceOf[js.Any], emeEnabled = emeEnabled.asInstanceOf[js.Any], requestMediaKeySystemAccessFunc = null)
     __obj.asInstanceOf[EMEControllerConfig]
   }
   
@@ -35,13 +52,32 @@ object EMEControllerConfig {
     
     inline def setDrmSystemOptions(value: DRMSystemOptions): Self = StObject.set(x, "drmSystemOptions", value.asInstanceOf[js.Any])
     
+    inline def setDrmSystems(value: DRMSystemsConfiguration): Self = StObject.set(x, "drmSystems", value.asInstanceOf[js.Any])
+    
     inline def setEmeEnabled(value: Boolean): Self = StObject.set(x, "emeEnabled", value.asInstanceOf[js.Any])
     
-    inline def setLicenseResponseCallback(value: (/* xhr */ XMLHttpRequest, /* url */ String) => js.typedarray.ArrayBuffer): Self = StObject.set(x, "licenseResponseCallback", js.Any.fromFunction2(value))
+    inline def setLicenseResponseCallback(
+      value: js.ThisFunction3[
+          /* this */ Hls, 
+          /* xhr */ XMLHttpRequest, 
+          /* url */ String, 
+          /* keyContext */ MediaKeySessionContext, 
+          js.typedarray.ArrayBuffer
+        ]
+    ): Self = StObject.set(x, "licenseResponseCallback", value.asInstanceOf[js.Any])
     
     inline def setLicenseResponseCallbackUndefined: Self = StObject.set(x, "licenseResponseCallback", js.undefined)
     
-    inline def setLicenseXhrSetup(value: (/* xhr */ XMLHttpRequest, /* url */ String) => Unit): Self = StObject.set(x, "licenseXhrSetup", js.Any.fromFunction2(value))
+    inline def setLicenseXhrSetup(
+      value: js.ThisFunction4[
+          /* this */ Hls, 
+          /* xhr */ XMLHttpRequest, 
+          /* url */ String, 
+          /* keyContext */ MediaKeySessionContext, 
+          /* licenseChallenge */ js.typedarray.Uint8Array, 
+          Unit | js.typedarray.Uint8Array | (js.Promise[js.typedarray.Uint8Array | Unit])
+        ]
+    ): Self = StObject.set(x, "licenseXhrSetup", value.asInstanceOf[js.Any])
     
     inline def setLicenseXhrSetupUndefined: Self = StObject.set(x, "licenseXhrSetup", js.undefined)
     

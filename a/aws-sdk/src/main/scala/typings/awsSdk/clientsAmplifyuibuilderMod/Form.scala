@@ -42,6 +42,11 @@ trait Form extends StObject {
   var id: Uuid
   
   /**
+    * Specifies an icon or decoration to display on the form.
+    */
+  var labelDecorator: js.UndefOr[LabelDecorator] = js.undefined
+  
+  /**
     * The name of the form.
     */
   var name: FormName
@@ -102,6 +107,10 @@ object Form {
     inline def setFormActionType(value: FormActionType): Self = StObject.set(x, "formActionType", value.asInstanceOf[js.Any])
     
     inline def setId(value: Uuid): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setLabelDecorator(value: LabelDecorator): Self = StObject.set(x, "labelDecorator", value.asInstanceOf[js.Any])
+    
+    inline def setLabelDecoratorUndefined: Self = StObject.set(x, "labelDecorator", js.undefined)
     
     inline def setName(value: FormName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

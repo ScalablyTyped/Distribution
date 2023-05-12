@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetGroupsForCapacityReservationRequest extends StObject {
   
   /**
-    * The ID of the Capacity Reservation.
+    * The ID of the Capacity Reservation. If you specify a Capacity Reservation that is shared with you, the operation returns only Capacity Reservation groups that you own.
     */
   var CapacityReservationId: typings.awsSdk.clientsEc2Mod.CapacityReservationId
   

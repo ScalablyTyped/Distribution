@@ -21,7 +21,7 @@ object buildLazyLogMod {
     def this(props: LazyLogProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: LazyLogProps, context: Any) = this()
   }
@@ -45,7 +45,7 @@ object buildLazyLogMod {
     def this(props: LazyLogProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: LazyLogProps, context: Any) = this()
   }

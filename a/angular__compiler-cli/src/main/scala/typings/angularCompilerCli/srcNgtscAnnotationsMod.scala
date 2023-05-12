@@ -1,5 +1,6 @@
 package typings.angularCompilerCli
 
+import typings.angularCompilerCli.srcNgtscAnnotationsCommonMod.InjectableClassRegistry
 import typings.angularCompilerCli.srcNgtscAnnotationsCommonSrcApiMod.ResourceLoader
 import typings.angularCompilerCli.srcNgtscAnnotationsCommonSrcReferencesRegistryMod.ReferencesRegistry
 import typings.angularCompilerCli.srcNgtscCyclesMod.CycleAnalyzer
@@ -8,7 +9,8 @@ import typings.angularCompilerCli.srcNgtscImportsMod.ModuleResolver
 import typings.angularCompilerCli.srcNgtscImportsMod.ReferenceEmitter
 import typings.angularCompilerCli.srcNgtscIncrementalApiMod.DependencyTracker
 import typings.angularCompilerCli.srcNgtscIncrementalSemanticGraphMod.SemanticDepGraphUpdater
-import typings.angularCompilerCli.srcNgtscMetadataMod.InjectableClassRegistry
+import typings.angularCompilerCli.srcNgtscMetadataMod.ExportedProviderStatusResolver
+import typings.angularCompilerCli.srcNgtscMetadataMod.HostDirectivesResolver
 import typings.angularCompilerCli.srcNgtscMetadataMod.ResourceRegistry
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.MetadataReader
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.MetadataRegistry
@@ -20,7 +22,6 @@ import typings.angularCompilerCli.srcNgtscScopeMod.LocalModuleScopeRegistry
 import typings.angularCompilerCli.srcNgtscScopeMod.TypeCheckScopeRegistry
 import typings.angularCompilerCli.srcNgtscScopeSrcApiMod.ComponentScopeReader
 import typings.angularCompilerCli.srcNgtscScopeSrcDependencyMod.DtsModuleScopeResolver
-import typings.angularCompilerCli.srcNgtscShimsApiMod.FactoryTracker
 import typings.typescript.mod.SourceFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -43,6 +44,7 @@ object srcNgtscAnnotationsMod {
       typeCheckScopeRegistry: TypeCheckScopeRegistry,
       resourceRegistry: ResourceRegistry,
       isCore: Boolean,
+      strictCtorDeps: Boolean,
       resourceLoader: ResourceLoader,
       rootDirs: js.Array[String],
       defaultPreserveWhitespaces: Boolean,
@@ -54,11 +56,13 @@ object srcNgtscAnnotationsMod {
       cycleAnalyzer: CycleAnalyzer,
       cycleHandlingStrategy: CycleHandlingStrategy,
       refEmitter: ReferenceEmitter,
+      referencesRegistry: ReferencesRegistry,
       depTracker: DependencyTracker[SourceFile] | Null,
       injectableRegistry: InjectableClassRegistry,
       semanticDepGraphUpdater: SemanticDepGraphUpdater | Null,
       annotateForClosureCompiler: Boolean,
-      perf: PerfRecorder
+      perf: PerfRecorder,
+      hostDirectivesResolver: HostDirectivesResolver
     ) = this()
   }
   
@@ -73,10 +77,12 @@ object srcNgtscAnnotationsMod {
       scopeRegistry: LocalModuleScopeRegistry,
       metaReader: MetadataReader,
       injectableRegistry: InjectableClassRegistry,
+      refEmitter: ReferenceEmitter,
+      referencesRegistry: ReferencesRegistry,
       isCore: Boolean,
+      strictCtorDeps: Boolean,
       semanticDepGraphUpdater: Null,
       annotateForClosureCompiler: Boolean,
-      compileUndecoratedClassesWithAngularFeatures: Boolean,
       perf: PerfRecorder
     ) = this()
     def this(
@@ -86,10 +92,12 @@ object srcNgtscAnnotationsMod {
       scopeRegistry: LocalModuleScopeRegistry,
       metaReader: MetadataReader,
       injectableRegistry: InjectableClassRegistry,
+      refEmitter: ReferenceEmitter,
+      referencesRegistry: ReferencesRegistry,
       isCore: Boolean,
+      strictCtorDeps: Boolean,
       semanticDepGraphUpdater: SemanticDepGraphUpdater,
       annotateForClosureCompiler: Boolean,
-      compileUndecoratedClassesWithAngularFeatures: Boolean,
       perf: PerfRecorder
     ) = this()
   }
@@ -100,6 +108,7 @@ object srcNgtscAnnotationsMod {
     extends typings.angularCompilerCli.srcNgtscAnnotationsSrcInjectableMod.InjectableDecoratorHandler {
     def this(
       reflector: ReflectionHost,
+      evaluator: PartialEvaluator,
       isCore: Boolean,
       strictCtorDeps: Boolean,
       injectableRegistry: InjectableClassRegistry,
@@ -107,6 +116,7 @@ object srcNgtscAnnotationsMod {
     ) = this()
     def this(
       reflector: ReflectionHost,
+      evaluator: PartialEvaluator,
       isCore: Boolean,
       strictCtorDeps: Boolean,
       injectableRegistry: InjectableClassRegistry,
@@ -132,9 +142,10 @@ object srcNgtscAnnotationsMod {
       metaRegistry: MetadataRegistry,
       scopeRegistry: LocalModuleScopeRegistry,
       referencesRegistry: ReferencesRegistry,
+      exportedProviderStatusResolver: ExportedProviderStatusResolver,
+      semanticDepGraphUpdater: Null,
       isCore: Boolean,
       refEmitter: ReferenceEmitter,
-      factoryTracker: Null,
       annotateForClosureCompiler: Boolean,
       onlyPublishPublicTypings: Boolean,
       injectableRegistry: InjectableClassRegistry,
@@ -147,9 +158,10 @@ object srcNgtscAnnotationsMod {
       metaRegistry: MetadataRegistry,
       scopeRegistry: LocalModuleScopeRegistry,
       referencesRegistry: ReferencesRegistry,
+      exportedProviderStatusResolver: ExportedProviderStatusResolver,
+      semanticDepGraphUpdater: SemanticDepGraphUpdater,
       isCore: Boolean,
       refEmitter: ReferenceEmitter,
-      factoryTracker: FactoryTracker,
       annotateForClosureCompiler: Boolean,
       onlyPublishPublicTypings: Boolean,
       injectableRegistry: InjectableClassRegistry,

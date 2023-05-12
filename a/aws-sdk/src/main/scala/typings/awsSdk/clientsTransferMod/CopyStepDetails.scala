@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CopyStepDetails extends StObject {
   
   /**
-    * Specifies the location for the file being copied. Only applicable for Copy type workflow steps. Use ${Transfer:username} in this field to parametrize the destination prefix by username.
+    * Specifies the location for the file being copied. Use ${Transfer:username} or ${Transfer:UploadDate} in this field to parametrize the destination prefix by username or uploaded date.   Set the value of DestinationFileLocation to ${Transfer:username} to copy uploaded files to an Amazon S3 bucket that is prefixed with the name of the Transfer Family user that uploaded the file.   Set the value of DestinationFileLocation to ${Transfer:UploadDate} to copy uploaded files to an Amazon S3 bucket that is prefixed with the date of the upload.  The system resolves UploadDate to a date format of YYYY-MM-DD, based on the date the file is uploaded.   
     */
   var DestinationFileLocation: js.UndefOr[InputFileLocation] = js.undefined
   
@@ -17,12 +17,12 @@ trait CopyStepDetails extends StObject {
   var Name: js.UndefOr[WorkflowStepName] = js.undefined
   
   /**
-    * A flag that indicates whether or not to overwrite an existing file of the same name. The default is FALSE.
+    * A flag that indicates whether to overwrite an existing file of the same name. The default is FALSE.
     */
   var OverwriteExisting: js.UndefOr[typings.awsSdk.clientsTransferMod.OverwriteExisting] = js.undefined
   
   /**
-    * Specifies which file to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow.   Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value.   Enter ${original.file} to use the originally-uploaded file location as input for this step.  
+    * Specifies which file to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow.   To use the previous file as the input, enter ${previous.file}. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value.   To use the originally uploaded file location as input for this step, enter ${original.file}.  
     */
   var SourceFileLocation: js.UndefOr[typings.awsSdk.clientsTransferMod.SourceFileLocation] = js.undefined
 }

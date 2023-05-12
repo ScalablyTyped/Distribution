@@ -14,12 +14,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def tokenCache[T](getToken: js.Function0[js.Promise[T]], options: TokenCacheOptions[T]): TokenCache_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenCache")(getToken.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TokenCache_]
+  inline def tokenCache[T](getToken: js.Function0[js.Promise[T]], options: TokenCacheOptions[T]): TokenCache_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenCache")(getToken.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TokenCache_[T]]
   
   // Interfaces
   trait InterceptorOptions[T] extends StObject {
     
-    var getToken: js.UndefOr[js.Function0[String | js.Promise[String]]] = js.undefined
+    var getToken: js.UndefOr[js.Function0[T | js.Promise[T]]] = js.undefined
     
     var header: js.UndefOr[String] = js.undefined
     
@@ -37,7 +37,7 @@ object mod {
     @scala.inline
     implicit open class MutableBuilder[Self <: InterceptorOptions[?], T] (val x: Self & InterceptorOptions[T]) extends AnyVal {
       
-      inline def setGetToken(value: () => String | js.Promise[String]): Self = StObject.set(x, "getToken", js.Any.fromFunction0(value))
+      inline def setGetToken(value: () => T | js.Promise[T]): Self = StObject.set(x, "getToken", js.Any.fromFunction0(value))
       
       inline def setGetTokenUndefined: Self = StObject.set(x, "getToken", js.undefined)
       
@@ -52,6 +52,28 @@ object mod {
       inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
       inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+    }
+  }
+  
+  trait Token extends StObject {
+    
+    var access_token: String
+    
+    var expires_in: Double
+  }
+  object Token {
+    
+    inline def apply(access_token: String, expires_in: Double): Token = {
+      val __obj = js.Dynamic.literal(access_token = access_token.asInstanceOf[js.Any], expires_in = expires_in.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Token]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
+      
+      inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+      
+      inline def setExpires_in(value: Double): Self = StObject.set(x, "expires_in", value.asInstanceOf[js.Any])
     }
   }
   
@@ -86,9 +108,9 @@ object mod {
   }
   
   @js.native
-  trait TokenCache_ extends StObject {
+  trait TokenCache_[T] extends StObject {
     
-    def apply(): js.Promise[String] = js.native
+    def apply(): js.Promise[T] = js.native
     
     def reset(): Unit = js.native
   }

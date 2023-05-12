@@ -9,10 +9,22 @@ trait DownloadOptions extends StObject {
   
   var cache: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * An object containing all the HTTP header fields and their values for the download network request. The keys and values of the object are the header names and values respectively.
+    */
   var headers: js.UndefOr[Record[String, String]] = js.undefined
   
+  /**
+    * If `true`, include the MD5 hash of the file in the returned object. Provided for convenience since it is common to check the integrity of a file immediately after downloading.
+    * @default false
+    */
   var md5: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * A session type. Determines if tasks can be handled in the background. On Android, sessions always work in the background and you can't change it.
+    * @default FileSystemSessionType.BACKGROUND
+    * @platform ios
+    */
   var sessionType: js.UndefOr[FileSystemSessionType] = js.undefined
 }
 object DownloadOptions {

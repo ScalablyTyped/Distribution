@@ -34,29 +34,21 @@ trait Group[T /* <: SlickData */]
   /**
     * A unique key used to identify the group.  This key can be used in calls to DataView
     * collapseGroup() or expandGroup().
-    * @property groupingKey
-    * @type {Object}
     */
   var groupingKey: Any
   
   /**
     * Sub-groups that are part of the group.
-    * @property groups
-    * @type {Array}
     */
   var groups: js.Array[Group[T]]
   
   /**
     * Grouping level, starting with 0.
-    * @property level
-    * @type {Number}
     */
   var level: Double
   
   /**
     * Rows that are part of the group.
-    * @property rows
-    * @type {Array}
     */
   var rows: js.Array[T]
   

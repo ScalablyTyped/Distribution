@@ -16,7 +16,7 @@ trait TestScriptScope
   var artifact: String
   
   /**
-    * The expectation of whether the test must pass for the system to be considered conformant with the artifact: required - all tests must pass, optional - all test are expected to pass but non-pass status may be allowed.
+    * The expectation of whether the test must pass for the system to be considered conformant with the artifact: required - all tests are expected to pass, optional - all test are expected to pass but non-pass status may be allowed, strict - all tests are expected to pass and warnings are treated as a failure.
     */
   var conformance: js.UndefOr[CodeableConcept] = js.undefined
   

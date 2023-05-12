@@ -1,6 +1,7 @@
 package typings.awsSdk.clientsAppsyncMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.APPSYNC_JS
 import typings.awsSdk.awsSdkStrings.AWS_IAM
 import typings.awsSdk.awsSdkStrings.RDS_HTTP_ENDPOINT
 import typings.node.bufferMod.global.Buffer
@@ -78,6 +79,16 @@ type CachingKeys = js.Array[String]
 
 type CertificateArn = java.lang.String
 
+type Code = java.lang.String
+
+type CodeErrorColumn = Double
+
+type CodeErrorLine = Double
+
+type CodeErrorSpan = Double
+
+type CodeErrors = js.Array[CodeError]
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.VERSION
   - typings.awsSdk.awsSdkStrings.NONE
@@ -104,6 +115,7 @@ type Context = java.lang.String
   - typings.awsSdk.awsSdkStrings.HTTP
   - typings.awsSdk.awsSdkStrings.RELATIONAL_DATABASE
   - typings.awsSdk.awsSdkStrings.AMAZON_OPENSEARCH_SERVICE
+  - typings.awsSdk.awsSdkStrings.AMAZON_EVENTBRIDGE
   - java.lang.String
 */
 type DataSourceType = _DataSourceType | java.lang.String
@@ -139,7 +151,16 @@ type Functions = js.Array[FunctionConfiguration]
 
 type FunctionsIds = js.Array[String]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.GLOBAL
+  - typings.awsSdk.awsSdkStrings.PRIVATE
+  - java.lang.String
+*/
+type GraphQLApiVisibility = _GraphQLApiVisibility | java.lang.String
+
 type GraphqlApis = js.Array[GraphqlApi]
+
+type Logs = js.Array[String]
 
 type Long = Double
 
@@ -174,6 +195,8 @@ type Resolvers = js.Array[Resolver]
 type ResourceArn = java.lang.String
 
 type ResourceName = java.lang.String
+
+type RuntimeName = APPSYNC_JS | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PROCESSING

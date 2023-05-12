@@ -1,7 +1,7 @@
 
 # Scala.js typings for js-joda__core
 
-Typings are for version 5.3.1
+Typings are for version 5.5.3
 
 ## Library description:
 a date and time library for javascript

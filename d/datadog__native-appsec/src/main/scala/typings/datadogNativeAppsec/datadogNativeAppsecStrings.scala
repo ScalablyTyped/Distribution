@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object datadogNativeAppsecStrings {
   
   @js.native
-  sealed trait block extends StObject
-  inline def block: block = "block".asInstanceOf[block]
-  
-  @js.native
-  sealed trait monitor extends StObject
-  inline def monitor: monitor = "monitor".asInstanceOf[monitor]
+  sealed trait `match` extends StObject
+  inline def `match`: `match` = "match".asInstanceOf[`match`]
 }

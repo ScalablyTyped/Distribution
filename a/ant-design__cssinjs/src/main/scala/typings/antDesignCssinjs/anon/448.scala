@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.AlignSelf
+import typings.csstype.mod.Property.MsScrollLimitYMax
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `448` extends StObject {
   
   var value: js.UndefOr[
-    AlignSelf | (js.Array[
-      (Extract[js.UndefOr[AlignSelf | js.Array[NonNullable[js.UndefOr[AlignSelf]]]], String]) | NonNullable[js.UndefOr[AlignSelf]]
+    (MsScrollLimitYMax[Double | String]) | (js.Array[
+      (Extract[
+        js.UndefOr[
+          (MsScrollLimitYMax[Double | String]) | (js.Array[NonNullable[js.UndefOr[MsScrollLimitYMax[Double | String]]]])
+        ], 
+        String
+      ]) | (NonNullable[js.UndefOr[MsScrollLimitYMax[Double | String]]])
     ])
   ] = js.native
 }

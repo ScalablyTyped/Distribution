@@ -2,8 +2,10 @@ package typings.readPkgUp
 
 import typings.readPkg.mod.NormalizedPackageJson
 import typings.readPkg.mod.PackageJson
-import typings.readPkgUp.readPkgUpBooleans.`true`
-import typings.std.URL
+import typings.readPkgUp.anon.Cwd
+import typings.readPkgUp.readPkgUpStrings.cwd
+import typings.typeFest.anon.RequireExactProps
+import typings.typeFest.sourceExceptMod.Except
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,43 +17,12 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def readPackageUp(): js.Promise[js.UndefOr[NormalizedReadResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readPackageUp")().asInstanceOf[js.Promise[js.UndefOr[NormalizedReadResult]]]
-  inline def readPackageUp(options: NormalizeOptions): js.Promise[js.UndefOr[NormalizedReadResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readPackageUp")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[NormalizedReadResult]]]
-  inline def readPackageUp(options: Options): js.Promise[js.UndefOr[ReadResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readPackageUp")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[ReadResult]]]
+  inline def readPackageUp(options: NormalizeOptions | Options): js.Promise[js.UndefOr[NormalizedReadResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readPackageUp")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[NormalizedReadResult]]]
   
   inline def readPackageUpSync(): js.UndefOr[NormalizedReadResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("readPackageUpSync")().asInstanceOf[js.UndefOr[NormalizedReadResult]]
-  inline def readPackageUpSync(options: NormalizeOptions): js.UndefOr[NormalizedReadResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("readPackageUpSync")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NormalizedReadResult]]
-  inline def readPackageUpSync(options: Options): js.UndefOr[ReadResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("readPackageUpSync")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ReadResult]]
+  inline def readPackageUpSync(options: NormalizeOptions | Options): js.UndefOr[NormalizedReadResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("readPackageUpSync")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NormalizedReadResult]]
   
-  /* Inlined {  cwd :std.URL | string | undefined} & type-fest.type-fest.Except<read-pkg.read-pkg.NormalizeOptions, 'cwd'> */
-  trait NormalizeOptions extends StObject {
-    
-    /**
-    	The directory to start looking for a package.json file.
-    	@default process.cwd()
-    	*/
-    var cwd: js.UndefOr[URL | String] = js.undefined
-    
-    var normalize: js.UndefOr[`true`] = js.undefined
-  }
-  object NormalizeOptions {
-    
-    inline def apply(): NormalizeOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[NormalizeOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: NormalizeOptions] (val x: Self) extends AnyVal {
-      
-      inline def setCwd(value: URL | String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
-      
-      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
-      
-      inline def setNormalize(value: `true`): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
-      
-      inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
-    }
-  }
+  type NormalizeOptions = Cwd & (Except[typings.readPkg.mod.NormalizeOptions, cwd, RequireExactProps])
   
   trait NormalizedReadResult extends StObject {
     
@@ -75,36 +46,7 @@ object mod {
     }
   }
   
-  /* Inlined {  cwd :std.URL | string | undefined} & type-fest.type-fest.Except<read-pkg.read-pkg.Options, 'cwd'> */
-  trait Options extends StObject {
-    
-    /**
-    	The directory to start looking for a package.json file.
-    	@default process.cwd()
-    	*/
-    var cwd: js.UndefOr[URL | String] = js.undefined
-    
-    var normalize: js.UndefOr[Boolean] = js.undefined
-  }
-  object Options {
-    
-    inline def apply(): Options = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Options]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
-      
-      inline def setCwd(value: URL | String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
-      
-      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
-      
-      inline def setNormalize(value: Boolean): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
-      
-      inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
-    }
-  }
+  type Options = Cwd & (Except[typings.readPkg.mod.Options, cwd, RequireExactProps])
   
   trait ReadResult extends StObject {
     

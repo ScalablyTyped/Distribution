@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreatePortfolioShareInput extends StObject {
   
   /**
-    * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
+    * The language code.    jp - Japanese    zh - Chinese  
     */
   var AcceptLanguage: js.UndefOr[typings.awsSdk.clientsServicecatalogMod.AcceptLanguage] = js.undefined
   
@@ -25,6 +25,11 @@ trait CreatePortfolioShareInput extends StObject {
     * The portfolio identifier.
     */
   var PortfolioId: Id
+  
+  /**
+    * Enables or disables Principal sharing when creating the portfolio share. If this flag is not provided, principal sharing is disabled.  When you enable Principal Name Sharing for a portfolio share, the share recipient account end users with a principal that matches any of the associated IAM patterns can provision products from the portfolio. Once shared, the share recipient can view associations of PrincipalType: IAM_PATTERN on their portfolio. You can create the principals in the recipient account before or after creating the share. 
+    */
+  var SharePrincipals: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enables or disables TagOptions  sharing when creating the portfolio share. If this flag is not provided, TagOptions sharing is disabled.
@@ -54,6 +59,10 @@ object CreatePortfolioShareInput {
     inline def setOrganizationNodeUndefined: Self = StObject.set(x, "OrganizationNode", js.undefined)
     
     inline def setPortfolioId(value: Id): Self = StObject.set(x, "PortfolioId", value.asInstanceOf[js.Any])
+    
+    inline def setSharePrincipals(value: Boolean): Self = StObject.set(x, "SharePrincipals", value.asInstanceOf[js.Any])
+    
+    inline def setSharePrincipalsUndefined: Self = StObject.set(x, "SharePrincipals", js.undefined)
     
     inline def setShareTagOptions(value: Boolean): Self = StObject.set(x, "ShareTagOptions", value.asInstanceOf[js.Any])
     

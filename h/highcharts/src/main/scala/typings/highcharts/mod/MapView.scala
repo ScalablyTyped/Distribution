@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The map view handles zooming and centering on the map, and various
   * client-side projection capabilities.
   *
-  * On a chart instance, the map view is available as `chart.mapView`.
+  * On a chart instance of `MapChart`, the map view is available as
+  * `chart.mapView`.
   */
 @js.native
 trait MapView extends StObject {
@@ -65,7 +66,7 @@ trait MapView extends StObject {
     *
     * @return The pixel position
     */
-  def lonLatToPixels(lonLat: typings.highcharts.modulesMapMod.highchartsAugmentingMod.MapLonLatObject): js.UndefOr[PositionObject] = js.native
+  def lonLatToPixels(lonLat: MapLonLatObject): js.UndefOr[PositionObject] = js.native
   
   /**
     * Get projected units from longitude/latitude. Insets are accounted
@@ -77,7 +78,7 @@ trait MapView extends StObject {
     *
     * @return X and Y coordinates in terms of projected values
     */
-  def lonLatToProjectedUnits(lonLat: typings.highcharts.modulesMapMod.highchartsAugmentingMod.MapLonLatObject): typings.highcharts.modulesMapMod.highchartsAugmentingMod.ProjectedXY = js.native
+  def lonLatToProjectedUnits(lonLat: MapLonLatObject): typings.highcharts.modulesMapMod.highchartsAugmentingMod.ProjectedXY = js.native
   
   /**
     * Convert pixel position to longitude and latitude.
@@ -87,7 +88,7 @@ trait MapView extends StObject {
     *
     * @return The map coordinates
     */
-  def pixelsToLonLat(pos: PositionObject): js.UndefOr[typings.highcharts.modulesMapMod.highchartsAugmentingMod.MapLonLatObject] = js.native
+  def pixelsToLonLat(pos: PositionObject): js.UndefOr[MapLonLatObject] = js.native
   
   /**
     * Convert pixel position to projected units
@@ -109,8 +110,8 @@ trait MapView extends StObject {
     *
     * @return An object with `lat` and `lon` properties.
     */
-  def projectedUnitsToLonLat(point: typings.highcharts.modulesMapMod.highchartsAugmentingMod.Point): js.UndefOr[typings.highcharts.modulesMapMod.highchartsAugmentingMod.MapLonLatObject] = js.native
-  def projectedUnitsToLonLat(point: typings.highcharts.modulesMapMod.highchartsAugmentingMod.ProjectedXY): js.UndefOr[typings.highcharts.modulesMapMod.highchartsAugmentingMod.MapLonLatObject] = js.native
+  def projectedUnitsToLonLat(point: typings.highcharts.modulesMapMod.highchartsAugmentingMod.Point): js.UndefOr[MapLonLatObject] = js.native
+  def projectedUnitsToLonLat(point: typings.highcharts.modulesMapMod.highchartsAugmentingMod.ProjectedXY): js.UndefOr[MapLonLatObject] = js.native
   
   /**
     * Convert projected units to pixel position

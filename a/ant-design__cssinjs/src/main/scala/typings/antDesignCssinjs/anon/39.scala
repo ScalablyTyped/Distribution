@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.FontVariant
+import typings.csstype.mod.Property.WebkitBorderBefore
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `39` extends StObject {
   
   var value: js.UndefOr[
-    FontVariant | (js.Array[
-      (Extract[js.UndefOr[FontVariant | js.Array[NonNullable[js.UndefOr[FontVariant]]]], String]) | NonNullable[js.UndefOr[FontVariant]]
+    (WebkitBorderBefore[Double | String]) | (js.Array[
+      (Extract[
+        js.UndefOr[
+          (WebkitBorderBefore[Double | String]) | (js.Array[NonNullable[js.UndefOr[WebkitBorderBefore[Double | String]]]])
+        ], 
+        String
+      ]) | (NonNullable[js.UndefOr[WebkitBorderBefore[Double | String]]])
     ])
   ] = js.native
 }

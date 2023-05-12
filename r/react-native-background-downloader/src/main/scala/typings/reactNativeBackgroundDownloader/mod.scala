@@ -12,46 +12,6 @@ object mod extends Shortcut {
   @js.native
   val default: RNBackgroundDownloader = js.native
   
-  @js.native
-  sealed trait DownloadTaskState extends StObject
-  @JSImport("react-native-background-downloader", "DownloadTaskState")
-  @js.native
-  object DownloadTaskState extends StObject {
-    
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[DownloadTaskState & String] = js.native
-    
-    @js.native
-    sealed trait DONE
-      extends StObject
-         with DownloadTaskState
-    /* "DONE" */ val DONE: typings.reactNativeBackgroundDownloader.mod.DownloadTaskState.DONE & String = js.native
-    
-    @js.native
-    sealed trait DOWNLOADING
-      extends StObject
-         with DownloadTaskState
-    /* "DOWNLOADING" */ val DOWNLOADING: typings.reactNativeBackgroundDownloader.mod.DownloadTaskState.DOWNLOADING & String = js.native
-    
-    @js.native
-    sealed trait FAILED
-      extends StObject
-         with DownloadTaskState
-    /* "FAILED" */ val FAILED: typings.reactNativeBackgroundDownloader.mod.DownloadTaskState.FAILED & String = js.native
-    
-    @js.native
-    sealed trait PAUSED
-      extends StObject
-         with DownloadTaskState
-    /* "PAUSED" */ val PAUSED: typings.reactNativeBackgroundDownloader.mod.DownloadTaskState.PAUSED & String = js.native
-    
-    @js.native
-    sealed trait STOPPED
-      extends StObject
-         with DownloadTaskState
-    /* "STOPPED" */ val STOPPED: typings.reactNativeBackgroundDownloader.mod.DownloadTaskState.STOPPED & String = js.native
-  }
-  
   trait Network extends StObject {
     
     var ALL: String
@@ -102,6 +62,10 @@ object mod extends Shortcut {
   @js.native
   val checkForExistingDownloads: CheckForExistingDownloads_ = js.native
   
+  @JSImport("react-native-background-downloader", "completeHandler")
+  @js.native
+  val completeHandler: CompleteHandler_ = js.native
+  
   @JSImport("react-native-background-downloader", "directories")
   @js.native
   val directories: Directories_ = js.native
@@ -114,9 +78,33 @@ object mod extends Shortcut {
   @js.native
   val setHeaders: SetHeaders_ = js.native
   
-  type BeginHandler = js.Function1[/* expectedBytes */ Double, Any]
+  type BeginHandler = js.Function1[/* param0 */ BeginHandlerObject, Any]
+  
+  trait BeginHandlerObject extends StObject {
+    
+    var expectedBytes: Double
+    
+    var headers: StringDictionary[String]
+  }
+  object BeginHandlerObject {
+    
+    inline def apply(expectedBytes: Double, headers: StringDictionary[String]): BeginHandlerObject = {
+      val __obj = js.Dynamic.literal(expectedBytes = expectedBytes.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BeginHandlerObject]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeginHandlerObject] (val x: Self) extends AnyVal {
+      
+      inline def setExpectedBytes(value: Double): Self = StObject.set(x, "expectedBytes", value.asInstanceOf[js.Any])
+      
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    }
+  }
   
   type CheckForExistingDownloads_ = js.Function0[js.Promise[js.Array[DownloadTask]]]
+  
+  type CompleteHandler_ = js.Function1[/* id */ String, Unit]
   
   trait Directories_ extends StObject {
     
@@ -174,7 +162,7 @@ object mod extends Shortcut {
   
   trait DownloadTask extends StObject {
     
-    def _beginHandler(expectedBytes: Double): Any
+    def _beginHandler(param0: BeginHandlerObject): Any
     @JSName("_beginHandler")
     var _beginHandler_Original: BeginHandler
     
@@ -217,7 +205,7 @@ object mod extends Shortcut {
   object DownloadTask {
     
     inline def apply(
-      _beginHandler: /* expectedBytes */ Double => Any,
+      _beginHandler: /* param0 */ BeginHandlerObject => Any,
       _doneHandler: () => Any,
       _errorHandler: (/* error */ Any, /* errorCode */ Any) => Any,
       _progressHandler: (/* percent */ Double, /* bytesWritten */ Double, /* totalBytes */ Double) => Any,
@@ -265,7 +253,7 @@ object mod extends Shortcut {
       
       inline def setTotalBytes(value: Double): Self = StObject.set(x, "totalBytes", value.asInstanceOf[js.Any])
       
-      inline def set_beginHandler(value: /* expectedBytes */ Double => Any): Self = StObject.set(x, "_beginHandler", js.Any.fromFunction1(value))
+      inline def set_beginHandler(value: /* param0 */ BeginHandlerObject => Any): Self = StObject.set(x, "_beginHandler", js.Any.fromFunction1(value))
       
       inline def set_doneHandler(value: () => Any): Self = StObject.set(x, "_doneHandler", js.Any.fromFunction0(value))
       
@@ -273,6 +261,27 @@ object mod extends Shortcut {
       
       inline def set_progressHandler(value: (/* percent */ Double, /* bytesWritten */ Double, /* totalBytes */ Double) => Any): Self = StObject.set(x, "_progressHandler", js.Any.fromFunction3(value))
     }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.reactNativeBackgroundDownloader.reactNativeBackgroundDownloaderStrings.DOWNLOADING
+    - typings.reactNativeBackgroundDownloader.reactNativeBackgroundDownloaderStrings.PAUSED
+    - typings.reactNativeBackgroundDownloader.reactNativeBackgroundDownloaderStrings.DONE
+    - typings.reactNativeBackgroundDownloader.reactNativeBackgroundDownloaderStrings.FAILED
+    - typings.reactNativeBackgroundDownloader.reactNativeBackgroundDownloaderStrings.STOPPED
+  */
+  trait DownloadTaskState extends StObject
+  object DownloadTaskState {
+    
+    inline def DONE: typings.reactNativeBackgroundDownloader.reactNativeBackgroundDownloaderStrings.DONE = "DONE".asInstanceOf[typings.reactNativeBackgroundDownloader.reactNativeBackgroundDownloaderStrings.DONE]
+    
+    inline def DOWNLOADING: typings.reactNativeBackgroundDownloader.reactNativeBackgroundDownloaderStrings.DOWNLOADING = "DOWNLOADING".asInstanceOf[typings.reactNativeBackgroundDownloader.reactNativeBackgroundDownloaderStrings.DOWNLOADING]
+    
+    inline def FAILED: typings.reactNativeBackgroundDownloader.reactNativeBackgroundDownloaderStrings.FAILED = "FAILED".asInstanceOf[typings.reactNativeBackgroundDownloader.reactNativeBackgroundDownloaderStrings.FAILED]
+    
+    inline def PAUSED: typings.reactNativeBackgroundDownloader.reactNativeBackgroundDownloaderStrings.PAUSED = "PAUSED".asInstanceOf[typings.reactNativeBackgroundDownloader.reactNativeBackgroundDownloaderStrings.PAUSED]
+    
+    inline def STOPPED: typings.reactNativeBackgroundDownloader.reactNativeBackgroundDownloaderStrings.STOPPED = "STOPPED".asInstanceOf[typings.reactNativeBackgroundDownloader.reactNativeBackgroundDownloaderStrings.STOPPED]
   }
   
   type Download_ = js.Function1[/* options */ DownloadOption, DownloadTask]
@@ -291,6 +300,10 @@ object mod extends Shortcut {
     @JSName("checkForExistingDownloads")
     var checkForExistingDownloads_Original: CheckForExistingDownloads_
     
+    def completeHandler(id: String): Unit
+    @JSName("completeHandler")
+    var completeHandler_Original: CompleteHandler_
+    
     var directories: Directories_
     
     def download(options: DownloadOption): DownloadTask
@@ -307,11 +320,12 @@ object mod extends Shortcut {
       Network: Network,
       Priority: Priority,
       checkForExistingDownloads: () => js.Promise[js.Array[DownloadTask]],
+      completeHandler: /* id */ String => Unit,
       directories: Directories_,
       download: /* options */ DownloadOption => DownloadTask,
       setHeaders: /* h */ DownloadHeaders => Unit
     ): RNBackgroundDownloader = {
-      val __obj = js.Dynamic.literal(Network = Network.asInstanceOf[js.Any], Priority = Priority.asInstanceOf[js.Any], checkForExistingDownloads = js.Any.fromFunction0(checkForExistingDownloads), directories = directories.asInstanceOf[js.Any], download = js.Any.fromFunction1(download), setHeaders = js.Any.fromFunction1(setHeaders))
+      val __obj = js.Dynamic.literal(Network = Network.asInstanceOf[js.Any], Priority = Priority.asInstanceOf[js.Any], checkForExistingDownloads = js.Any.fromFunction0(checkForExistingDownloads), completeHandler = js.Any.fromFunction1(completeHandler), directories = directories.asInstanceOf[js.Any], download = js.Any.fromFunction1(download), setHeaders = js.Any.fromFunction1(setHeaders))
       __obj.asInstanceOf[RNBackgroundDownloader]
     }
     
@@ -319,6 +333,8 @@ object mod extends Shortcut {
     implicit open class MutableBuilder[Self <: RNBackgroundDownloader] (val x: Self) extends AnyVal {
       
       inline def setCheckForExistingDownloads(value: () => js.Promise[js.Array[DownloadTask]]): Self = StObject.set(x, "checkForExistingDownloads", js.Any.fromFunction0(value))
+      
+      inline def setCompleteHandler(value: /* id */ String => Unit): Self = StObject.set(x, "completeHandler", js.Any.fromFunction1(value))
       
       inline def setDirectories(value: Directories_): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
       

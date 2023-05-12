@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-crypto__sha256-browser
 
-Typings are for version 2.0.2
+Typings are for version 4.0.0
 
 ## Library description:
 SHA256 wrapper for browsers that prefers `window.crypto.subtle` but will fall back to a pure JS implementation in @aws-crypto/sha256-js to provide a consistent interface for SHA256.

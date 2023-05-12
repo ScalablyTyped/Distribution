@@ -1,6 +1,7 @@
 package typings.cronConverter
 
-import typings.moment.mod.Moment
+import typings.cronConverter.anon.PartialOptions
+import typings.cronConverter.distMjsScheduleMod.Schedule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,126 +10,19 @@ object mod {
   
   @JSImport("cron-converter", JSImport.Namespace)
   @js.native
-  /**
-    * Creates an instance of Cron.
-    * Cron objects each represent a cron schedule.
-    * @param options The options to use.
-    */
-  open class ^ ()
-    extends StObject
-       with Cron {
-    def this(options: Options) = this()
-  }
+  val ^ : js.Any = js.native
   
-  @JSImport("cron-converter", "Seeker")
-  @js.native
-  open class Seeker protected () extends StObject {
-    /**
-      * Creates an instance of Seeker.
-      * Seeker objects search for execution times of a cron schedule.
-      * @param cron A Cron instance.
-      * @param now A Date or Moment object.
-      */
-    def this(cron: Cron, now: js.Date) = this()
-    
-    /**
-      * Returns the time the schedule would run next.
-      */
-    def next(): Moment = js.native
-    
-    /**
-      * Returns the time the schedule would have last run at.
-      */
-    def prev(): Moment = js.native
-    
-    /**
-      * Resets the iterator.
-      */
-    def reset(): Unit = js.native
-  }
+  inline def arrayToString(arr: js.Array[js.Array[Double]]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayToString")(arr.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def arrayToString(arr: js.Array[js.Array[Double]], options: PartialOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayToString")(arr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
-  trait Cron extends StObject {
-    
-    /**
-      * Parses a 2-dimensional array of integers as a cron schedule.
-      * @param cronArr The array to parse.
-      */
-    def fromArray(cronArr: CronArray): Cron = js.native
-    
-    /**
-      * Parses a cron string.
-      * @param str The string to parse.
-      */
-    def fromString(str: String): Cron = js.native
-    
-    /**
-      * Returns the time the schedule would run next.
-      * @param now A Date or Moment object.
-      */
-    def schedule(): Seeker = js.native
-    def schedule(now: js.Date): Seeker = js.native
-    def schedule(now: Moment): Seeker = js.native
-    
-    /**
-      * Returns the cron schedule as a 2-dimensional array of integers.
-      */
-    def toArray(): CronArray = js.native
-  }
+  inline def getSchedule(arr: js.Array[js.Array[Double]]): Schedule = ^.asInstanceOf[js.Dynamic].applyDynamic("getSchedule")(arr.asInstanceOf[js.Any]).asInstanceOf[Schedule]
+  inline def getSchedule(arr: js.Array[js.Array[Double]], now: String): Schedule = (^.asInstanceOf[js.Dynamic].applyDynamic("getSchedule")(arr.asInstanceOf[js.Any], now.asInstanceOf[js.Any])).asInstanceOf[Schedule]
+  inline def getSchedule(arr: js.Array[js.Array[Double]], now: String, timezone: String): Schedule = (^.asInstanceOf[js.Dynamic].applyDynamic("getSchedule")(arr.asInstanceOf[js.Any], now.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[Schedule]
+  inline def getSchedule(arr: js.Array[js.Array[Double]], now: js.Date): Schedule = (^.asInstanceOf[js.Dynamic].applyDynamic("getSchedule")(arr.asInstanceOf[js.Any], now.asInstanceOf[js.Any])).asInstanceOf[Schedule]
+  inline def getSchedule(arr: js.Array[js.Array[Double]], now: js.Date, timezone: String): Schedule = (^.asInstanceOf[js.Dynamic].applyDynamic("getSchedule")(arr.asInstanceOf[js.Any], now.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[Schedule]
+  inline def getSchedule(arr: js.Array[js.Array[Double]], now: Unit, timezone: String): Schedule = (^.asInstanceOf[js.Dynamic].applyDynamic("getSchedule")(arr.asInstanceOf[js.Any], now.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[Schedule]
   
-  type CronArray = js.Tuple5[js.Array[Double], js.Array[Double], js.Array[Double], js.Array[Double], js.Array[Double]]
+  inline def getUnits(): js.Array[typings.cronConverter.distMjsTypesMod.Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUnits")().asInstanceOf[js.Array[typings.cronConverter.distMjsTypesMod.Unit]]
   
-  trait Options extends StObject {
-    
-    /**
-      * Changes the * to H on the `toString()`.
-      * Default: `false`.
-      */
-    var outputHashes: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Changes the numbers to 3 letter month names on the `toString()`.
-      * Default: `false`.
-      */
-    var outputMonthNames: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Changes the numbers to 3 letter weekday names on the `toString()`.
-      * Default: `false`.
-      */
-    var outputWeekdayNames: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Defines a timezone to the cron instance.
-      * Default: `Local timezone`.
-      */
-    var timezone: js.UndefOr[String] = js.undefined
-  }
-  object Options {
-    
-    inline def apply(): Options = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Options]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
-      
-      inline def setOutputHashes(value: Boolean): Self = StObject.set(x, "outputHashes", value.asInstanceOf[js.Any])
-      
-      inline def setOutputHashesUndefined: Self = StObject.set(x, "outputHashes", js.undefined)
-      
-      inline def setOutputMonthNames(value: Boolean): Self = StObject.set(x, "outputMonthNames", value.asInstanceOf[js.Any])
-      
-      inline def setOutputMonthNamesUndefined: Self = StObject.set(x, "outputMonthNames", js.undefined)
-      
-      inline def setOutputWeekdayNames(value: Boolean): Self = StObject.set(x, "outputWeekdayNames", value.asInstanceOf[js.Any])
-      
-      inline def setOutputWeekdayNamesUndefined: Self = StObject.set(x, "outputWeekdayNames", js.undefined)
-      
-      inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
-      
-      inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
-    }
-  }
+  inline def stringToArray(str: String): js.Array[js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToArray")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[Double]]]
 }

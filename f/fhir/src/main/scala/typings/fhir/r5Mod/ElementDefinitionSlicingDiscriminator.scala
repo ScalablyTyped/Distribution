@@ -3,6 +3,7 @@ package typings.fhir.r5Mod
 import typings.fhir.fhirStrings.`type`
 import typings.fhir.fhirStrings.exists
 import typings.fhir.fhirStrings.pattern
+import typings.fhir.fhirStrings.position
 import typings.fhir.fhirStrings.profile
 import typings.fhir.fhirStrings.value
 import org.scalablytyped.runtime.StObject
@@ -18,18 +19,18 @@ trait ElementDefinitionSlicingDiscriminator
   var _type: js.UndefOr[Element] = js.undefined
   
   /**
-    * The only FHIRPath functions that are allowed are as(type), resolve(), and extension(url).
+    * A FHIRPath expression, using [the simple subset of FHIRPath](fhirpath.html#simple), that is used to identify the element on which discrimination is based.
     */
   var path: String
   
   /**
-    * How the element value is interpreted when discrimination is evaluated.
+    * 'pattern' is deprecated - it works exactly the same as 'value'.
     */
-  var `type`: value | exists | pattern | typings.fhir.fhirStrings.`type` | profile
+  var `type`: value | exists | typings.fhir.fhirStrings.`type` | profile | position | pattern
 }
 object ElementDefinitionSlicingDiscriminator {
   
-  inline def apply(path: String, `type`: value | exists | pattern | `type` | profile): ElementDefinitionSlicingDiscriminator = {
+  inline def apply(path: String, `type`: value | exists | `type` | profile | position | pattern): ElementDefinitionSlicingDiscriminator = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementDefinitionSlicingDiscriminator]
@@ -40,7 +41,7 @@ object ElementDefinitionSlicingDiscriminator {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setType(value: value | exists | pattern | `type` | profile): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: value | exists | `type` | profile | position | pattern): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def set_path(value: Element): Self = StObject.set(x, "_path", value.asInstanceOf[js.Any])
     

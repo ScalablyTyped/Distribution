@@ -1,16 +1,15 @@
 organization := "org.scalablytyped"
 name := "globaloffensive"
-version := "2.2-dt-20220411Z-d8bea3"
+version := "2.3-dt-20230510Z-f12f14"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "bytebuffer" % "5.0.0-dt-20220818Z-ff4594",
-  "org.scalablytyped" %%% "file-manager" % "2.0-dt-20220829Z-836993",
-  "org.scalablytyped" %%% "long" % "5.2.1-93c497",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-874609",
-  "org.scalablytyped" %%% "std" % "4.9-ecb5eb",
-  "org.scalablytyped" %%% "steam-user" % "4.23-dt-20220909Z-96eed5",
+  "org.scalablytyped" %%% "bytebuffer" % "5.0.0-dt-20220818Z-81b582",
+  "org.scalablytyped" %%% "file-manager" % "2.0-dt-20220829Z-71c6b0",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "std" % "5.0-e63739",
+  "org.scalablytyped" %%% "steam-user" % "4.26-dt-20230510Z-bd711a",
   "org.scalablytyped" %%% "steamid" % "2.0-dt-20211202Z-2ad9ef")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

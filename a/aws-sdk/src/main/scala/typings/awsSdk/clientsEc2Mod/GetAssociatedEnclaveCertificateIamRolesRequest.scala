@@ -9,7 +9,7 @@ trait GetAssociatedEnclaveCertificateIamRolesRequest extends StObject {
   /**
     * The ARN of the ACM certificate for which to view the associated IAM roles, encryption keys, and Amazon S3 object information.
     */
-  var CertificateArn: js.UndefOr[ResourceArn] = js.undefined
+  var CertificateArn: CertificateId
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
@@ -18,17 +18,15 @@ trait GetAssociatedEnclaveCertificateIamRolesRequest extends StObject {
 }
 object GetAssociatedEnclaveCertificateIamRolesRequest {
   
-  inline def apply(): GetAssociatedEnclaveCertificateIamRolesRequest = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(CertificateArn: CertificateId): GetAssociatedEnclaveCertificateIamRolesRequest = {
+    val __obj = js.Dynamic.literal(CertificateArn = CertificateArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAssociatedEnclaveCertificateIamRolesRequest]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: GetAssociatedEnclaveCertificateIamRolesRequest] (val x: Self) extends AnyVal {
     
-    inline def setCertificateArn(value: ResourceArn): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
-    
-    inline def setCertificateArnUndefined: Self = StObject.set(x, "CertificateArn", js.undefined)
+    inline def setCertificateArn(value: CertificateId): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

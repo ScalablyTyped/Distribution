@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Interface for the Xrm.WebApi.offline API
+  * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-webapi/offline External Link: Xrm.WebApi.offline (Client API reference)}
   */
 @js.native
 trait WebApiOffline extends StObject {
@@ -16,7 +17,7 @@ trait WebApiOffline extends StObject {
     * @param entityLogicalName Logical name of the entity you want to create. For example: "account".
     * @param record A JSON object defining the attributes and values for the new entity record.
     * @returns On success, returns a promise object containing the attributes specified earlier in the description of the successCallback parameter.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-webapi/createrecord External Link: createRecord (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-webapi/createrecord External Link: createRecord (Client API reference)}
     */
   def createRecord(entityLogicalName: String, record: Any): PromiseLike[CreateResponse] = js.native
   
@@ -25,7 +26,7 @@ trait WebApiOffline extends StObject {
     * @param entityLogicalName The entity logical name of the record you want to delete. For example: "account".
     * @param id GUID of the entity record you want to delete.
     * @returns On success, returns a promise object containing the attributes specified earlier in the description of the successCallback parameter.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-webapi/deleterecord External Link: deleteRecord (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-webapi/deleterecord External Link: deleteRecord (Client API reference)}
     */
   def deleteRecord(entityLogicalName: String, id: String): PromiseLike[String] = js.native
   
@@ -43,7 +44,7 @@ trait WebApiOffline extends StObject {
     * * If you do not specify this parameter, the default value is passed as 5000. If the number of records being retrieved is more than the specified
     * maxPageSize value, nextLink attribute in the returned promise object will contain a link to retrieve the next set of entities.
     * @returns On success, returns a promise object containing the attributes specified earlier in the description of the successCallback parameter.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-webapi/retrievemultiplerecords External Link: retrieveMultipleRecords (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-webapi/retrievemultiplerecords External Link: retrieveMultipleRecords (Client API reference)}
     */
   def retrieveMultipleRecords(entityLogicalName: String): PromiseLike[RetrieveMultipleResult] = js.native
   def retrieveMultipleRecords(entityLogicalName: String, options: String): PromiseLike[RetrieveMultipleResult] = js.native
@@ -67,7 +68,7 @@ trait WebApiOffline extends StObject {
     * @example <caption>options example:</caption>
     * options: $select=name&$expand=primarycontactid($select=contactid,fullname)
     * @returns On success, returns a promise containing a JSON object with the retrieved attributes and their values.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-webapi/retrieverecord External Link: retrieveRecord (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-webapi/retrieverecord External Link: retrieveRecord (Client API reference)}
     */
   def retrieveRecord(entityLogicalName: String, id: String): PromiseLike[Any] = js.native
   def retrieveRecord(entityLogicalName: String, id: String, options: String): PromiseLike[Any] = js.native
@@ -78,7 +79,7 @@ trait WebApiOffline extends StObject {
     * @param id GUID of the entity record you want to update.
     * @param Data A JSON object containing key: value pairs, where key is the property of the entity and value is the value of the property you want update.
     * @returns On success, returns a promise object containing the attributes specified earlier in the description of the successCallback parameter.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-webapi/updaterecord External Link: updateRecord (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-webapi/updaterecord External Link: updateRecord (Client API reference)}
     */
   def updateRecord(entityLogicalName: String, id: String, data: Any): PromiseLike[Any] = js.native
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for hash-it
 
-Typings are for version 5.0.2
+Typings are for version 6.0.0
 
 ## Library description:
 Hash any object based on its value

@@ -33,13 +33,8 @@ object Euler {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("three/src/Three", "Euler.DefaultOrder")
+  @JSImport("three/src/Three", "Euler.DEFAULT_ORDER")
   @js.native
-  def DefaultOrder: XYZ = js.native
-  inline def DefaultOrder_=(x: XYZ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultOrder")(x.asInstanceOf[js.Any])
-  
-  @JSImport("three/src/Three", "Euler.RotationOrders")
-  @js.native
-  def RotationOrders: js.Array[EulerOrder] = js.native
-  inline def RotationOrders_=(x: js.Array[EulerOrder]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RotationOrders")(x.asInstanceOf[js.Any])
+  def DEFAULT_ORDER: XYZ = js.native
+  inline def DEFAULT_ORDER_=(x: XYZ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_ORDER")(x.asInstanceOf[js.Any])
 }

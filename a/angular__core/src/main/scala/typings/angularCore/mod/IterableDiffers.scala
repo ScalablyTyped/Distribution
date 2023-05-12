@@ -9,10 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class IterableDiffers protected () extends StObject {
   def this(factories: js.Array[IterableDifferFactory]) = this()
   
-  /**
-    * @deprecated v4.0.0 - Should be private
-    */
-  var factories: js.Array[IterableDifferFactory] = js.native
+  /* private */ var factories: Any = js.native
   
   def find(iterable: Any): IterableDifferFactory = js.native
 }

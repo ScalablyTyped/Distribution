@@ -193,7 +193,7 @@ object PolygonGraphics {
     
     var heightReference: js.UndefOr[Property | HeightReference] = js.undefined
     
-    var hierarchy: js.UndefOr[Property | PolygonHierarchy] = js.undefined
+    var hierarchy: js.UndefOr[Property | PolygonHierarchy | js.Array[Cartesian3]] = js.undefined
     
     var material: js.UndefOr[MaterialProperty | Color] = js.undefined
     
@@ -269,9 +269,11 @@ object PolygonGraphics {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setHierarchy(value: Property | PolygonHierarchy): Self = StObject.set(x, "hierarchy", value.asInstanceOf[js.Any])
+      inline def setHierarchy(value: Property | PolygonHierarchy | js.Array[Cartesian3]): Self = StObject.set(x, "hierarchy", value.asInstanceOf[js.Any])
       
       inline def setHierarchyUndefined: Self = StObject.set(x, "hierarchy", js.undefined)
+      
+      inline def setHierarchyVarargs(value: Cartesian3*): Self = StObject.set(x, "hierarchy", js.Array(value*))
       
       inline def setMaterial(value: MaterialProperty | Color): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
       

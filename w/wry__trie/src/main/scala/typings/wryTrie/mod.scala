@@ -26,6 +26,12 @@ object mod {
     
     /* private */ var makeData: Any = js.native
     
+    def peek[T /* <: js.Array[Any] */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param array because its type T is not an array type */ array: T
+    ): js.UndefOr[Data] = js.native
+    
+    def peekArray[T /* <: IArguments | js.Array[Any] */](array: T): js.UndefOr[Data] = js.native
+    
     /* private */ var strong: Any = js.native
     
     /* private */ var weak: Any = js.native

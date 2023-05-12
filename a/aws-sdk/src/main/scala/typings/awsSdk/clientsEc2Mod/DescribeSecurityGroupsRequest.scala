@@ -27,12 +27,12 @@ trait DescribeSecurityGroupsRequest extends StObject {
   var GroupNames: js.UndefOr[GroupNameStringList] = js.undefined
   
   /**
-    * The maximum number of results to return in a single call. To retrieve the remaining results, make another request with the returned NextToken value. This value can be between 5 and 1000. If this parameter is not specified, then all results are returned.
+    * The maximum number of items to return for this request. To get the next page of items, make another request with the token returned in the output. This value can be between 5 and 1000. If this parameter is not specified, then all items are returned. For more information, see Pagination.
     */
   var MaxResults: js.UndefOr[DescribeSecurityGroupsMaxResults] = js.undefined
   
   /**
-    * The token to request the next page of results.
+    * The token returned from a previous paginated request. Pagination continues from the end of the items returned by the previous request.
     */
   var NextToken: js.UndefOr[String] = js.undefined
 }

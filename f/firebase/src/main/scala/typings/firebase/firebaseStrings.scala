@@ -349,8 +349,24 @@ object firebaseStrings {
   inline def `authSlashinvalid-provider-id`: `authSlashinvalid-provider-id` = "auth/invalid-provider-id".asInstanceOf[`authSlashinvalid-provider-id`]
   
   @js.native
+  sealed trait `authSlashinvalid-recaptcha-action` extends StObject
+  inline def `authSlashinvalid-recaptcha-action`: `authSlashinvalid-recaptcha-action` = "auth/invalid-recaptcha-action".asInstanceOf[`authSlashinvalid-recaptcha-action`]
+  
+  @js.native
+  sealed trait `authSlashinvalid-recaptcha-token` extends StObject
+  inline def `authSlashinvalid-recaptcha-token`: `authSlashinvalid-recaptcha-token` = "auth/invalid-recaptcha-token".asInstanceOf[`authSlashinvalid-recaptcha-token`]
+  
+  @js.native
+  sealed trait `authSlashinvalid-recaptcha-version` extends StObject
+  inline def `authSlashinvalid-recaptcha-version`: `authSlashinvalid-recaptcha-version` = "auth/invalid-recaptcha-version".asInstanceOf[`authSlashinvalid-recaptcha-version`]
+  
+  @js.native
   sealed trait `authSlashinvalid-recipient-email` extends StObject
   inline def `authSlashinvalid-recipient-email`: `authSlashinvalid-recipient-email` = "auth/invalid-recipient-email".asInstanceOf[`authSlashinvalid-recipient-email`]
+  
+  @js.native
+  sealed trait `authSlashinvalid-req-type` extends StObject
+  inline def `authSlashinvalid-req-type`: `authSlashinvalid-req-type` = "auth/invalid-req-type".asInstanceOf[`authSlashinvalid-req-type`]
   
   @js.native
   sealed trait `authSlashinvalid-sender` extends StObject
@@ -385,6 +401,10 @@ object firebaseStrings {
   inline def `authSlashmissing-app-credential`: `authSlashmissing-app-credential` = "auth/missing-app-credential".asInstanceOf[`authSlashmissing-app-credential`]
   
   @js.native
+  sealed trait `authSlashmissing-client-type` extends StObject
+  inline def `authSlashmissing-client-type`: `authSlashmissing-client-type` = "auth/missing-client-type".asInstanceOf[`authSlashmissing-client-type`]
+  
+  @js.native
   sealed trait `authSlashmissing-continue-uri` extends StObject
   inline def `authSlashmissing-continue-uri`: `authSlashmissing-continue-uri` = "auth/missing-continue-uri".asInstanceOf[`authSlashmissing-continue-uri`]
   
@@ -411,6 +431,14 @@ object firebaseStrings {
   @js.native
   sealed trait `authSlashmissing-phone-number` extends StObject
   inline def `authSlashmissing-phone-number`: `authSlashmissing-phone-number` = "auth/missing-phone-number".asInstanceOf[`authSlashmissing-phone-number`]
+  
+  @js.native
+  sealed trait `authSlashmissing-recaptcha-token` extends StObject
+  inline def `authSlashmissing-recaptcha-token`: `authSlashmissing-recaptcha-token` = "auth/missing-recaptcha-token".asInstanceOf[`authSlashmissing-recaptcha-token`]
+  
+  @js.native
+  sealed trait `authSlashmissing-recaptcha-version` extends StObject
+  inline def `authSlashmissing-recaptcha-version`: `authSlashmissing-recaptcha-version` = "auth/missing-recaptcha-version".asInstanceOf[`authSlashmissing-recaptcha-version`]
   
   @js.native
   sealed trait `authSlashmissing-verification-code` extends StObject
@@ -467,6 +495,10 @@ object firebaseStrings {
   @js.native
   sealed trait `authSlashquota-exceeded` extends StObject
   inline def `authSlashquota-exceeded`: `authSlashquota-exceeded` = "auth/quota-exceeded".asInstanceOf[`authSlashquota-exceeded`]
+  
+  @js.native
+  sealed trait `authSlashrecaptcha-not-enabled` extends StObject
+  inline def `authSlashrecaptcha-not-enabled`: `authSlashrecaptcha-not-enabled` = "auth/recaptcha-not-enabled".asInstanceOf[`authSlashrecaptcha-not-enabled`]
   
   @js.native
   sealed trait `authSlashredirect-cancelled-by-user` extends StObject
@@ -963,6 +995,10 @@ object firebaseStrings {
     extends StObject
        with EventNameString
   inline def timing_complete: timing_complete = "timing_complete".asInstanceOf[timing_complete]
+  
+  @js.native
+  sealed trait totp extends StObject
+  inline def totp: totp = "totp".asInstanceOf[totp]
   
   @js.native
   sealed trait twitterDotcom

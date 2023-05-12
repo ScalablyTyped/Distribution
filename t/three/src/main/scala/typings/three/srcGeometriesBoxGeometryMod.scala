@@ -2,6 +2,7 @@ package typings.three
 
 import typings.three.anon.Depth
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,14 +11,15 @@ object srcGeometriesBoxGeometryMod {
   
   @JSImport("three/src/geometries/BoxGeometry", "BoxGeometry")
   @js.native
-  open class BoxGeometry protected () extends BufferGeometry {
+  open class BoxGeometry protected () extends BufferGeometry[NormalBufferAttributes] {
     /**
-      * @param [width=1] — Width of the sides on the X axis.
-      * @param [height=1] — Height of the sides on the Y axis.
-      * @param [depth=1] — Depth of the sides on the Z axis.
-      * @param [widthSegments=1] — Number of segmented faces along the width of the sides.
-      * @param [heightSegments=1] — Number of segmented faces along the height of the sides.
-      * @param [depthSegments=1] — Number of segmented faces along the depth of the sides.
+      * Create a new instance of {@link BoxGeometry}
+      * @param width Width; that is, the length of the edges parallel to the X axis. Optional; Expects a `Float`. Default `1`
+      * @param height Height; that is, the length of the edges parallel to the Y axis. Optional; Expects a `Float`. Default `1`
+      * @param depth Depth; that is, the length of the edges parallel to the Z axis. Optional; Expects a `Float`. Default `1`
+      * @param widthSegments Number of segmented rectangular faces along the width of the sides. Optional; Expects a `Integer`. Default `1`
+      * @param heightSegments Number of segmented rectangular faces along the height of the sides. Optional; Expects a `Integer`. Default `1`
+      * @param depthSegments Number of segmented rectangular faces along the depth of the sides. Optional; Expects a `Integer`. Default `1`
       */
     def this(
       width: js.UndefOr[Double],
@@ -28,7 +30,19 @@ object srcGeometriesBoxGeometryMod {
       depthSegments: js.UndefOr[Double]
     ) = this()
     
-    var parameters: Depth = js.native
+    /**
+      * An object with a property for each of the constructor parameters.
+      * @remarks Any modification after instantiation does not change the geometry.
+      */
+    val parameters: Depth = js.native
+    
+    /**
+      * A Read-only _string_ to check if `this` object type.
+      * @remarks Sub-classes will update this value.
+      * @defaultValue `BoxGeometry`
+      */
+    @JSName("type")
+    val type_BoxGeometry: String | typings.three.threeStrings.BoxGeometry = js.native
   }
   /* static members */
   object BoxGeometry {
@@ -37,6 +51,7 @@ object srcGeometriesBoxGeometryMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def fromJSON(data: Any): BoxGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[BoxGeometry]
+    /** @internal */
+    inline def fromJSON(data: js.Object): BoxGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[BoxGeometry]
   }
 }

@@ -5,32 +5,18 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SelectedSuggestionInfo extends StObject {
+@JSImport("monaco-editor", "languages.SelectedSuggestionInfo")
+@js.native
+open class SelectedSuggestionInfo protected () extends StObject {
+  def this(range: IRange, text: String, completionKind: CompletionItemKind, isSnippetText: Boolean) = this()
   
-  var completionKind: CompletionItemKind
+  val completionKind: CompletionItemKind = js.native
   
-  var isSnippetText: Boolean
+  def equals(other: SelectedSuggestionInfo): Boolean = js.native
   
-  var range: IRange
+  val isSnippetText: Boolean = js.native
   
-  var text: String
-}
-object SelectedSuggestionInfo {
+  val range: IRange = js.native
   
-  inline def apply(completionKind: CompletionItemKind, isSnippetText: Boolean, range: IRange, text: String): SelectedSuggestionInfo = {
-    val __obj = js.Dynamic.literal(completionKind = completionKind.asInstanceOf[js.Any], isSnippetText = isSnippetText.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SelectedSuggestionInfo]
-  }
-  
-  @scala.inline
-  implicit open class MutableBuilder[Self <: SelectedSuggestionInfo] (val x: Self) extends AnyVal {
-    
-    inline def setCompletionKind(value: CompletionItemKind): Self = StObject.set(x, "completionKind", value.asInstanceOf[js.Any])
-    
-    inline def setIsSnippetText(value: Boolean): Self = StObject.set(x, "isSnippetText", value.asInstanceOf[js.Any])
-    
-    inline def setRange(value: IRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
-    
-    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
-  }
+  val text: String = js.native
 }

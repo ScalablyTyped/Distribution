@@ -30,7 +30,7 @@ trait DeviceDefinitionUdiDeviceIdentifier
   var jurisdiction: String
   
   /**
-    * The organization that assigns the identifier algorithm.
+    * Indicates where and when the device is available on the market.
     */
   var marketDistribution: js.UndefOr[js.Array[DeviceDefinitionUdiDeviceIdentifierMarketDistribution]] = js.undefined
 }

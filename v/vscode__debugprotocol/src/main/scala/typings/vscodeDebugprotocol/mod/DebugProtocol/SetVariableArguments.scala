@@ -16,7 +16,7 @@ trait SetVariableArguments extends StObject {
   /** The value of the variable. */
   var value: String
   
-  /** The reference of the variable container. */
+  /** The reference of the variable container. The `variablesReference` must have been obtained in the current suspended state. See 'Lifetime of Object References' in the Overview section for details. */
   var variablesReference: Double
 }
 object SetVariableArguments {

@@ -94,14 +94,14 @@ trait BaseClient
   
   def requestObject(payload: RequestObjectPayload): js.Promise[String] = js.native
   
-  def requestResource(resourceUrl: String, accessToken: String): `0` & IncomingMessage = js.native
-  def requestResource(resourceUrl: String, accessToken: String, options: Headers): `0` & IncomingMessage = js.native
-  def requestResource(resourceUrl: String, accessToken: TokenSet): `0` & IncomingMessage = js.native
-  def requestResource(resourceUrl: String, accessToken: TokenSet, options: Headers): `0` & IncomingMessage = js.native
-  def requestResource(resourceUrl: URL_, accessToken: String): `0` & IncomingMessage = js.native
-  def requestResource(resourceUrl: URL_, accessToken: String, options: Headers): `0` & IncomingMessage = js.native
-  def requestResource(resourceUrl: URL_, accessToken: TokenSet): `0` & IncomingMessage = js.native
-  def requestResource(resourceUrl: URL_, accessToken: TokenSet, options: Headers): `0` & IncomingMessage = js.native
+  def requestResource(resourceUrl: String, accessToken: String): js.Promise[`0` & IncomingMessage] = js.native
+  def requestResource(resourceUrl: String, accessToken: String, options: Headers): js.Promise[`0` & IncomingMessage] = js.native
+  def requestResource(resourceUrl: String, accessToken: TokenSet): js.Promise[`0` & IncomingMessage] = js.native
+  def requestResource(resourceUrl: String, accessToken: TokenSet, options: Headers): js.Promise[`0` & IncomingMessage] = js.native
+  def requestResource(resourceUrl: URL_, accessToken: String): js.Promise[`0` & IncomingMessage] = js.native
+  def requestResource(resourceUrl: URL_, accessToken: String, options: Headers): js.Promise[`0` & IncomingMessage] = js.native
+  def requestResource(resourceUrl: URL_, accessToken: TokenSet): js.Promise[`0` & IncomingMessage] = js.native
+  def requestResource(resourceUrl: URL_, accessToken: TokenSet, options: Headers): js.Promise[`0` & IncomingMessage] = js.native
   
   def revoke(token: String): js.Promise[Unit] = js.native
   def revoke(token: String, tokenTypeHint: Unit, extras: RevokeExtras): js.Promise[Unit] = js.native

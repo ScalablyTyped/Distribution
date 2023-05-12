@@ -11,5 +11,9 @@ object functionDottestMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def testDeepEquality(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testDeepEquality")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def testBasics(_tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testBasics")(_tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def testCallAll(_tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testCallAll")(_tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def testDeepEquality(_tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testDeepEquality")(_tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

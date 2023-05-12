@@ -52,6 +52,7 @@ object mod {
   inline def encodeBlock(input: Buffer, output: Buffer, startIdx: Unit, endIdx: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeBlock")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], startIdx.asInstanceOf[js.Any], endIdx.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def encodeBlockHC(input: Buffer, output: Buffer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeBlockHC")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def encodeBlockHC(input: Buffer, output: Buffer, compressionLevel: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeBlockHC")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], compressionLevel.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def encodeBound(inputSize: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeBound")(inputSize.asInstanceOf[js.Any]).asInstanceOf[Double]
   

@@ -75,6 +75,20 @@ trait MigrationHubStrategy extends Service {
   ): Request[GetImportFileTaskResponse, AWSError] = js.native
   
   /**
+    * Retrieve the latest ID of a specific assessment task.
+    */
+  def getLatestAssessmentId(): Request[GetLatestAssessmentIdResponse, AWSError] = js.native
+  def getLatestAssessmentId(callback: js.Function2[/* err */ AWSError, /* data */ GetLatestAssessmentIdResponse, Unit]): Request[GetLatestAssessmentIdResponse, AWSError] = js.native
+  /**
+    * Retrieve the latest ID of a specific assessment task.
+    */
+  def getLatestAssessmentId(params: GetLatestAssessmentIdRequest): Request[GetLatestAssessmentIdResponse, AWSError] = js.native
+  def getLatestAssessmentId(
+    params: GetLatestAssessmentIdRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetLatestAssessmentIdResponse, Unit]
+  ): Request[GetLatestAssessmentIdResponse, AWSError] = js.native
+  
+  /**
     *  Retrieves your migration and modernization preferences. 
     */
   def getPortfolioPreferences(): Request[GetPortfolioPreferencesResponse, AWSError] = js.native

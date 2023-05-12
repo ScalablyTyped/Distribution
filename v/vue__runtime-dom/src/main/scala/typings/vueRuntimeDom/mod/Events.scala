@@ -19,17 +19,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Events extends StObject {
   
-  // media events
   var onAbort: Event
   
   var onAnimationend: AnimationEvent
   
   var onAnimationiteration: AnimationEvent
   
-  // animation events
   var onAnimationstart: AnimationEvent
   
-  // mouse events
   var onAuxclick: MouseEvent
   
   var onBeforeinput: Event
@@ -40,12 +37,10 @@ trait Events extends StObject {
   
   var onCanplaythrough: Event
   
-  // form events
   var onChange: Event
   
   var onClick: MouseEvent
   
-  // composition events
   var onCompositionend: CompositionEvent
   
   var onCompositionstart: CompositionEvent
@@ -54,14 +49,12 @@ trait Events extends StObject {
   
   var onContextmenu: MouseEvent
   
-  // clipboard events
   var onCopy: ClipboardEvent
   
   var onCut: ClipboardEvent
   
   var onDblclick: MouseEvent
   
-  // drag drop events
   var onDrag: DragEvent
   
   var onDragend: DragEvent
@@ -88,7 +81,6 @@ trait Events extends StObject {
   
   var onError: Event
   
-  // focus events
   var onFocus: FocusEvent
   
   var onFocusin: FocusEvent
@@ -99,14 +91,12 @@ trait Events extends StObject {
   
   var onInvalid: Event
   
-  // keyboard events
   var onKeydown: KeyboardEvent
   
   var onKeypress: KeyboardEvent
   
   var onKeyup: KeyboardEvent
   
-  // image events
   var onLoad: Event
   
   var onLoadeddata: Event
@@ -139,7 +129,6 @@ trait Events extends StObject {
   
   var onPointercancel: PointerEvent
   
-  // pointer events
   var onPointerdown: PointerEvent
   
   var onPointerenter: PointerEvent
@@ -160,14 +149,12 @@ trait Events extends StObject {
   
   var onReset: Event
   
-  // UI events
   var onScroll: UIEvent
   
   var onSeeked: Event
   
   var onSeeking: Event
   
-  // selection events
   var onSelect: Event
   
   var onStalled: Event
@@ -178,7 +165,6 @@ trait Events extends StObject {
   
   var onTimeupdate: Event
   
-  // touch events
   var onTouchcancel: TouchEvent
   
   var onTouchend: TouchEvent
@@ -187,7 +173,6 @@ trait Events extends StObject {
   
   var onTouchstart: TouchEvent
   
-  // transition events
   var onTransitionend: TransitionEvent
   
   var onTransitionstart: TransitionEvent
@@ -196,7 +181,6 @@ trait Events extends StObject {
   
   var onWaiting: Event
   
-  // wheel events
   var onWheel: WheelEvent
 }
 object Events {

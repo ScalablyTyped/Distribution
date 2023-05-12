@@ -20,8 +20,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * ```js
   * const {
-  *   createHmac
-  * } = await import('crypto');
+  *   createHmac,
+  * } = await import('node:crypto');
   *
   * const hmac = createHmac('sha256', 'a secret');
   *
@@ -43,11 +43,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Example: Using `Hmac` and piped streams:
   *
   * ```js
-  * import { createReadStream } from 'fs';
-  * import { stdout } from 'process';
+  * import { createReadStream } from 'node:fs';
+  * import { stdout } from 'node:process';
   * const {
-  *   createHmac
-  * } = await import('crypto');
+  *   createHmac,
+  * } = await import('node:crypto');
   *
   * const hmac = createHmac('sha256', 'a secret');
   *
@@ -59,8 +59,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * ```js
   * const {
-  *   createHmac
-  * } = await import('crypto');
+  *   createHmac,
+  * } = await import('node:crypto');
   *
   * const hmac = createHmac('sha256', 'a secret');
   *

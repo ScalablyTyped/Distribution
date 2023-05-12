@@ -40,6 +40,10 @@ object sucraseStrings {
   inline def jsx: jsx = "jsx".asInstanceOf[jsx]
   
   @js.native
+  sealed trait preserve extends StObject
+  inline def preserve: preserve = "preserve".asInstanceOf[preserve]
+  
+  @js.native
   sealed trait `react-hot-loader`
     extends StObject
        with Transform

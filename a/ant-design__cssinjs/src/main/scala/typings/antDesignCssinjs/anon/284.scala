@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ScrollbarColor
+import typings.csstype.mod.Property.PrintColorAdjust
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `284` extends StObject {
   
   var value: js.UndefOr[
-    ScrollbarColor | (js.Array[
+    PrintColorAdjust | (js.Array[
       (Extract[
-        js.UndefOr[ScrollbarColor | js.Array[NonNullable[js.UndefOr[ScrollbarColor]]]], 
+        js.UndefOr[PrintColorAdjust | js.Array[NonNullable[js.UndefOr[PrintColorAdjust]]]], 
         String
-      ]) | NonNullable[js.UndefOr[ScrollbarColor]]
+      ]) | NonNullable[js.UndefOr[PrintColorAdjust]]
     ])
   ] = js.native
 }

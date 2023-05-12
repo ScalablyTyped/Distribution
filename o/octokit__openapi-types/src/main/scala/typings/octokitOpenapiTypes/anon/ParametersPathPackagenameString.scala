@@ -8,11 +8,11 @@ trait ParametersPathPackagenameString extends StObject {
   
   var parameters: PathPackagenameString
   
-  var responses: `200ContentApplicationjsonVersioncount`
+  var responses: `200ContentApplicationjsonOwnerPackagetype`
 }
 object ParametersPathPackagenameString {
   
-  inline def apply(parameters: PathPackagenameString, responses: `200ContentApplicationjsonVersioncount`): ParametersPathPackagenameString = {
+  inline def apply(parameters: PathPackagenameString, responses: `200ContentApplicationjsonOwnerPackagetype`): ParametersPathPackagenameString = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathPackagenameString]
   }
@@ -22,6 +22,6 @@ object ParametersPathPackagenameString {
     
     inline def setParameters(value: PathPackagenameString): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200ContentApplicationjsonVersioncount`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200ContentApplicationjsonOwnerPackagetype`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

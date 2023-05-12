@@ -26,6 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.protectedMediaIdentifier
   - typings.devtoolsProtocol.devtoolsProtocolStrings.sensors
   - typings.devtoolsProtocol.devtoolsProtocolStrings.storageAccess
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.topLevelStorageAccess
   - typings.devtoolsProtocol.devtoolsProtocolStrings.videoCapture
   - typings.devtoolsProtocol.devtoolsProtocolStrings.videoCapturePanTiltZoom
   - typings.devtoolsProtocol.devtoolsProtocolStrings.wakeLockScreen
@@ -76,6 +77,8 @@ object PermissionType {
   inline def sensors: typings.devtoolsProtocol.devtoolsProtocolStrings.sensors = "sensors".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.sensors]
   
   inline def storageAccess: typings.devtoolsProtocol.devtoolsProtocolStrings.storageAccess = "storageAccess".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.storageAccess]
+  
+  inline def topLevelStorageAccess: typings.devtoolsProtocol.devtoolsProtocolStrings.topLevelStorageAccess = "topLevelStorageAccess".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.topLevelStorageAccess]
   
   inline def videoCapture: typings.devtoolsProtocol.devtoolsProtocolStrings.videoCapture = "videoCapture".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.videoCapture]
   

@@ -6,14 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TeamslugUsername extends StObject {
   
-  /** The organization name. The name is not case sensitive. */
   @JSName("org")
   var org_ : String
   
-  /** The slug of the team name. */
   var team_slug: String
   
-  /** The handle for the GitHub user account. */
   var username: String
 }
 object TeamslugUsername {

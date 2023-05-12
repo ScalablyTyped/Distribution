@@ -13,6 +13,26 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def ab[TToken, TOptions, TValueA, TValueB, TValue](
+    pa: Matcher[TToken, TOptions, TValueA],
+    pb: Matcher[TToken, TOptions, TValueB],
+    /**
+    * @param va - A value matched by the first matcher.
+    * @param vb - A value matched by the second matcher.
+    * @param data - Data object (tokens and options).
+    * @param i - Parser position in the tokens array (before both matchers matched).
+    * @param j - Parser position in the tokens array (after both matchers matched).
+    */
+  join: js.Function5[
+      /* va */ TValueA, 
+      /* vb */ TValueB, 
+      /* data */ Data[TToken, TOptions], 
+      /* i */ Double, 
+      /* j */ Double, 
+      TValue
+    ]
+  ): Matcher[TToken, TOptions, TValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("ab")(pa.asInstanceOf[js.Any], pb.asInstanceOf[js.Any], join.asInstanceOf[js.Any])).asInstanceOf[Matcher[TToken, TOptions, TValue]]
+  
+  inline def ab_TTokenTOptionsTValueATValueBTValue_Parser[TToken, TOptions, TValueA, TValueB, TValue](
     pa: Parser[TToken, TOptions, TValueA],
     pb: Parser[TToken, TOptions, TValueB],
     /**
@@ -33,6 +53,29 @@ object mod {
   ): Parser[TToken, TOptions, TValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("ab")(pa.asInstanceOf[js.Any], pb.asInstanceOf[js.Any], join.asInstanceOf[js.Any])).asInstanceOf[Parser[TToken, TOptions, TValue]]
   
   inline def abc[TToken, TOptions, TValueA, TValueB, TValueC, TValue](
+    pa: Matcher[TToken, TOptions, TValueA],
+    pb: Matcher[TToken, TOptions, TValueB],
+    pc: Matcher[TToken, TOptions, TValueC],
+    /**
+    * @param va - A value matched by the first matcher.
+    * @param vb - A value matched by the second matcher.
+    * @param vc - A value matched by the third matcher.
+    * @param data - Data object (tokens and options).
+    * @param i - Parser position in the tokens array (before all three matchers matched).
+    * @param j - Parser position in the tokens array (after all three matchers matched).
+    */
+  join: js.Function6[
+      /* va */ TValueA, 
+      /* vb */ TValueB, 
+      /* vc */ TValueC, 
+      /* data */ Data[TToken, TOptions], 
+      /* i */ Double, 
+      /* j */ Double, 
+      TValue
+    ]
+  ): Matcher[TToken, TOptions, TValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("abc")(pa.asInstanceOf[js.Any], pb.asInstanceOf[js.Any], pc.asInstanceOf[js.Any], join.asInstanceOf[js.Any])).asInstanceOf[Matcher[TToken, TOptions, TValue]]
+  
+  inline def abc_TTokenTOptionsTValueATValueBTValueCTValue_Parser[TToken, TOptions, TValueA, TValueB, TValueC, TValue](
     pa: Parser[TToken, TOptions, TValueA],
     pb: Parser[TToken, TOptions, TValueB],
     pc: Parser[TToken, TOptions, TValueC],
@@ -69,7 +112,11 @@ object mod {
   
   inline def all[TToken, TOptions, TValue](ps: (Parser[TToken, TOptions, TValue])*): Parser[TToken, TOptions, js.Array[TValue]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(ps.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Parser[TToken, TOptions, js.Array[TValue]]]
   
+  inline def all_TTokenTOptionsTValue_Matcher[TToken, TOptions, TValue](ps: (Matcher[TToken, TOptions, TValue])*): Matcher[TToken, TOptions, js.Array[TValue]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(ps.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Matcher[TToken, TOptions, js.Array[TValue]]]
+  
   inline def and[TToken, TOptions, TValue](ps: (Parser[TToken, TOptions, TValue])*): Parser[TToken, TOptions, js.Array[TValue]] = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(ps.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Parser[TToken, TOptions, js.Array[TValue]]]
+  
+  inline def and_TTokenTOptionsTValue_Matcher[TToken, TOptions, TValue](ps: (Matcher[TToken, TOptions, TValue])*): Matcher[TToken, TOptions, js.Array[TValue]] = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(ps.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Matcher[TToken, TOptions, js.Array[TValue]]]
   
   inline def any[TToken, TOptions](data: Data[TToken, TOptions], i: Double): Result[TToken] = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(data.asInstanceOf[js.Any], i.asInstanceOf[js.Any])).asInstanceOf[Result[TToken]]
   
@@ -105,21 +152,36 @@ object mod {
     ]
   ): Matcher[TToken, TOptions, TAcc] = (^.asInstanceOf[js.Dynamic].applyDynamic("chainReduce")(acc.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Matcher[TToken, TOptions, TAcc]]
   
+  inline def choice[TToken, TOptions, TValue](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param ps because its type [...Array<Parser<TToken, TOptions, TValue>>, Matcher<TToken, TOptions, TValue>] is not an array type */ ps: Array[(Matcher[TToken, TOptions, TValue]) | (Parser[TToken, TOptions, TValue])]
+  ): Matcher[TToken, TOptions, TValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("choice")(ps.asInstanceOf[js.Any]).asInstanceOf[Matcher[TToken, TOptions, TValue]]
   inline def choice[TToken, TOptions, TValue](ps: (Parser[TToken, TOptions, TValue])*): Parser[TToken, TOptions, TValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("choice")(ps.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Parser[TToken, TOptions, TValue]]
   
-  inline def condition[TToken, TOptions, TValue](
+  inline def condition[TToken, TOptions, TValueA, TValueB](
     /**
     * @param data - Data object (tokens and options).
     * @param i - Parser position in the tokens array (before parsing).
     */
   cond: js.Function2[/* data */ Data[TToken, TOptions], /* i */ Double, Boolean],
-    pTrue: Parser[TToken, TOptions, TValue],
-    pFalse: Parser[TToken, TOptions, TValue]
-  ): Parser[TToken, TOptions, TValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("condition")(cond.asInstanceOf[js.Any], pTrue.asInstanceOf[js.Any], pFalse.asInstanceOf[js.Any])).asInstanceOf[Parser[TToken, TOptions, TValue]]
+    pTrue: Parser[TToken, TOptions, TValueA],
+    pFalse: Parser[TToken, TOptions, TValueB]
+  ): Parser[TToken, TOptions, TValueA | TValueB] = (^.asInstanceOf[js.Dynamic].applyDynamic("condition")(cond.asInstanceOf[js.Any], pTrue.asInstanceOf[js.Any], pFalse.asInstanceOf[js.Any])).asInstanceOf[Parser[TToken, TOptions, TValueA | TValueB]]
+  
+  inline def condition_TTokenTOptionsTValueATValueB_Matcher[TToken, TOptions, TValueA, TValueB](
+    /**
+    * @param data - Data object (tokens and options).
+    * @param i - Parser position in the tokens array (before parsing).
+    */
+  cond: js.Function2[/* data */ Data[TToken, TOptions], /* i */ Double, Boolean],
+    pTrue: Matcher[TToken, TOptions, TValueA],
+    pFalse: Matcher[TToken, TOptions, TValueB]
+  ): Matcher[TToken, TOptions, TValueA | TValueB] = (^.asInstanceOf[js.Dynamic].applyDynamic("condition")(cond.asInstanceOf[js.Any], pTrue.asInstanceOf[js.Any], pFalse.asInstanceOf[js.Any])).asInstanceOf[Matcher[TToken, TOptions, TValueA | TValueB]]
   
   inline def decide[TToken, TOptions, TValue](p: Parser[TToken, TOptions, Parser[TToken, TOptions, TValue]]): Parser[TToken, TOptions, TValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("decide")(p.asInstanceOf[js.Any]).asInstanceOf[Parser[TToken, TOptions, TValue]]
   
   inline def discard[TToken, TOptions](ps: (Parser[TToken, TOptions, Any])*): Parser[TToken, TOptions, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("discard")(ps.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Parser[TToken, TOptions, Any]]
+  
+  inline def discard_TTokenTOptions_Matcher[TToken, TOptions](ps: (Matcher[TToken, TOptions, Any])*): Matcher[TToken, TOptions, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("discard")(ps.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Matcher[TToken, TOptions, Any]]
   
   inline def eitherOr[TToken, TOptions, TValueA, TValueB](pa: Parser[TToken, TOptions, TValueA], pb: Parser[TToken, TOptions, TValueB]): Parser[TToken, TOptions, TValueA | TValueB] = (^.asInstanceOf[js.Dynamic].applyDynamic("eitherOr")(pa.asInstanceOf[js.Any], pb.asInstanceOf[js.Any])).asInstanceOf[Parser[TToken, TOptions, TValueA | TValueB]]
   
@@ -156,6 +218,8 @@ object mod {
     pOper: Parser[TToken, TOptions, js.Function2[/* x */ TLeft, /* y */ TRight, TLeft]],
     pRight: Parser[TToken, TOptions, TRight]
   ): Parser[TToken, TOptions, TLeft] = (^.asInstanceOf[js.Dynamic].applyDynamic("leftAssoc2")(pLeft.asInstanceOf[js.Any], pOper.asInstanceOf[js.Any], pRight.asInstanceOf[js.Any])).asInstanceOf[Parser[TToken, TOptions, TLeft]]
+  
+  inline def left_TTokenTOptionsTValueATValueB_Matcher[TToken, TOptions, TValueA, TValueB](pa: Matcher[TToken, TOptions, TValueA], pb: Matcher[TToken, TOptions, TValueB]): Matcher[TToken, TOptions, TValueA] = (^.asInstanceOf[js.Dynamic].applyDynamic("left")(pa.asInstanceOf[js.Any], pb.asInstanceOf[js.Any])).asInstanceOf[Matcher[TToken, TOptions, TValueA]]
   
   inline def longest[TToken, TOptions, TValue](ps: (Parser[TToken, TOptions, TValue])*): Parser[TToken, TOptions, TValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("longest")(ps.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Parser[TToken, TOptions, TValue]]
   
@@ -228,6 +292,12 @@ object mod {
   inline def `match`[TToken, TOptions, TValue](matcher: Matcher[TToken, TOptions, TValue], tokens: js.Array[TToken], options: TOptions): TValue = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(matcher.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TValue]
   
   inline def middle[TToken, TOptions, TValueA, TValueB, TValueC](
+    pa: Matcher[TToken, TOptions, TValueA],
+    pb: Matcher[TToken, TOptions, TValueB],
+    pc: Matcher[TToken, TOptions, TValueC]
+  ): Matcher[TToken, TOptions, TValueB] = (^.asInstanceOf[js.Dynamic].applyDynamic("middle")(pa.asInstanceOf[js.Any], pb.asInstanceOf[js.Any], pc.asInstanceOf[js.Any])).asInstanceOf[Matcher[TToken, TOptions, TValueB]]
+  
+  inline def middle_TTokenTOptionsTValueATValueBTValueC_Parser[TToken, TOptions, TValueA, TValueB, TValueC](
     pa: Parser[TToken, TOptions, TValueA],
     pb: Parser[TToken, TOptions, TValueB],
     pc: Parser[TToken, TOptions, TValueC]
@@ -239,6 +309,9 @@ object mod {
   
   inline def option[TToken, TOptions, TValue](p: Parser[TToken, TOptions, TValue], `def`: TValue): Matcher[TToken, TOptions, TValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("option")(p.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[Matcher[TToken, TOptions, TValue]]
   
+  inline def or[TToken, TOptions, TValue](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param ps because its type [...Array<Parser<TToken, TOptions, TValue>>, Matcher<TToken, TOptions, TValue>] is not an array type */ ps: Array[(Matcher[TToken, TOptions, TValue]) | (Parser[TToken, TOptions, TValue])]
+  ): Matcher[TToken, TOptions, TValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(ps.asInstanceOf[js.Any]).asInstanceOf[Matcher[TToken, TOptions, TValue]]
   inline def or[TToken, TOptions, TValue](ps: (Parser[TToken, TOptions, TValue])*): Parser[TToken, TOptions, TValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(ps.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Parser[TToken, TOptions, TValue]]
   
   inline def otherwise[TToken, TOptions, TValueA, TValueB](pa: Parser[TToken, TOptions, TValueA], pb: Parser[TToken, TOptions, TValueB]): Parser[TToken, TOptions, TValueA | TValueB] = (^.asInstanceOf[js.Dynamic].applyDynamic("otherwise")(pa.asInstanceOf[js.Any], pb.asInstanceOf[js.Any])).asInstanceOf[Parser[TToken, TOptions, TValueA | TValueB]]
@@ -340,6 +413,8 @@ object mod {
     pRight: Parser[TToken, TOptions, TRight]
   ): Parser[TToken, TOptions, TRight] = (^.asInstanceOf[js.Dynamic].applyDynamic("rightAssoc2")(pLeft.asInstanceOf[js.Any], pOper.asInstanceOf[js.Any], pRight.asInstanceOf[js.Any])).asInstanceOf[Parser[TToken, TOptions, TRight]]
   
+  inline def right_TTokenTOptionsTValueATValueB_Matcher[TToken, TOptions, TValueA, TValueB](pa: Matcher[TToken, TOptions, TValueA], pb: Matcher[TToken, TOptions, TValueB]): Matcher[TToken, TOptions, TValueB] = (^.asInstanceOf[js.Dynamic].applyDynamic("right")(pa.asInstanceOf[js.Any], pb.asInstanceOf[js.Any])).asInstanceOf[Matcher[TToken, TOptions, TValueB]]
+  
   inline def satisfy[TToken, TOptions](
     /**
     * @param token - A token at the parser position.
@@ -354,6 +429,8 @@ object mod {
   inline def sepBy1[TToken, TOptions, TValue, TSep](pValue: Parser[TToken, TOptions, TValue], pSep: Parser[TToken, TOptions, TSep]): Parser[TToken, TOptions, Array[TValue]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sepBy1")(pValue.asInstanceOf[js.Any], pSep.asInstanceOf[js.Any])).asInstanceOf[Parser[TToken, TOptions, Array[TValue]]]
   
   inline def skip[TToken, TOptions](ps: (Parser[TToken, TOptions, Any])*): Parser[TToken, TOptions, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("skip")(ps.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Parser[TToken, TOptions, Any]]
+  
+  inline def skip_TTokenTOptions_Matcher[TToken, TOptions](ps: (Matcher[TToken, TOptions, Any])*): Matcher[TToken, TOptions, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("skip")(ps.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Matcher[TToken, TOptions, Any]]
   
   inline def some[TToken, TOptions, TValue](p: Parser[TToken, TOptions, TValue]): Parser[TToken, TOptions, Array[TValue]] = ^.asInstanceOf[js.Dynamic].applyDynamic("some")(p.asInstanceOf[js.Any]).asInstanceOf[Parser[TToken, TOptions, Array[TValue]]]
   

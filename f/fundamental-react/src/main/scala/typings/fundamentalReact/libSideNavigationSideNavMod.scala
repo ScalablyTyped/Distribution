@@ -14,6 +14,7 @@ import typings.react.mod.Context
 import typings.react.mod.GetDerivedStateFromError
 import typings.react.mod.GetDerivedStateFromProps
 import typings.react.mod.HTMLAttributes
+import typings.react.mod.ReactNode
 import typings.react.mod.ValidationMap
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
@@ -167,7 +168,7 @@ object libSideNavigationSideNavMod {
     
     var isSubItem: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.undefined
+    var name: js.UndefOr[ReactNode] = js.undefined
     
     @JSName("onClick")
     var onClick_SideNavListItemProps: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
@@ -210,7 +211,7 @@ object libSideNavigationSideNavMod {
       
       inline def setIsSubItemUndefined: Self = StObject.set(x, "isSubItem", js.undefined)
       
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: ReactNode): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       

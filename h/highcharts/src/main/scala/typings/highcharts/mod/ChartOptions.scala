@@ -106,7 +106,7 @@ trait ChartOptions extends StObject {
     * (Highcharts, Highstock, Highmaps, Gantt) In styled mode, this sets how
     * many colors the class names should rotate between. With ten colors,
     * series (or points) are given class names like `highcharts-color-0`,
-    * `highcharts-color-0` [...] `highcharts-color-9`. The equivalent in
+    * `highcharts-color-1` [...] `highcharts-color-9`. The equivalent in
     * non-styled mode is to set colors using the colors setting.
     */
   var colorCount: js.UndefOr[Double] = js.undefined
@@ -234,7 +234,7 @@ trait ChartOptions extends StObject {
     * key properties of the click event argument (`event.altKey`,
     * `event.ctrlKey`, `event.metaKey` and `event.shiftKey`).
     */
-  var panKey: js.UndefOr[String] = js.undefined
+  var panKey: js.UndefOr[OptionsPanKeyValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Allow panning in a chart. Best
@@ -296,7 +296,7 @@ trait ChartOptions extends StObject {
     * can be an object configuration containing `color`, `offsetX`, `offsetY`,
     * `opacity` and `width`.
     */
-  var plotShadow: js.UndefOr[Boolean | CSSObject] = js.undefined
+  var plotShadow: js.UndefOr[Boolean | ShadowOptionsObject] = js.undefined
   
   /**
     * (Highcharts) When true, cartesian charts like line, spline, area and
@@ -362,7 +362,7 @@ trait ChartOptions extends StObject {
     * can be an object configuration containing `color`, `offsetX`, `offsetY`,
     * `opacity` and `width`.
     */
-  var shadow: js.UndefOr[Boolean | CSSObject] = js.undefined
+  var shadow: js.UndefOr[Boolean | ShadowOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Gantt) Whether to show the axes initially. This only applies
@@ -411,9 +411,11 @@ trait ChartOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Additional CSS styles to apply
-    * inline to the container `div`. Note that since the default font styles
-    * are applied in the renderer, it is ignorant of the individual chart
-    * options and must be set globally.
+    * inline to the container `div` and the root SVG.
+    *
+    * Since v11, the root font size is 1rem by default, and all child element
+    * are given a relative `em` font size by default. This allows implementers
+    * to control all the chart's font sizes by only setting the root level.
     */
   var style: js.UndefOr[CSSObject] = js.undefined
   
@@ -423,6 +425,8 @@ trait ChartOptions extends StObject {
     * the chart SVG. Instead, CSS rules are required to style the chart. The
     * default style sheet is available from
     * `https://code.highcharts.com/css/highcharts.css`.
+    *
+    * Read more in the docs on what classes and variables are available.
     */
   var styledMode: js.UndefOr[Boolean] = js.undefined
   
@@ -562,7 +566,7 @@ object ChartOptions {
     
     inline def setOptions3dUndefined: Self = StObject.set(x, "options3d", js.undefined)
     
-    inline def setPanKey(value: String): Self = StObject.set(x, "panKey", value.asInstanceOf[js.Any])
+    inline def setPanKey(value: OptionsPanKeyValue): Self = StObject.set(x, "panKey", value.asInstanceOf[js.Any])
     
     inline def setPanKeyUndefined: Self = StObject.set(x, "panKey", js.undefined)
     
@@ -596,7 +600,7 @@ object ChartOptions {
     
     inline def setPlotBorderWidthUndefined: Self = StObject.set(x, "plotBorderWidth", js.undefined)
     
-    inline def setPlotShadow(value: Boolean | CSSObject): Self = StObject.set(x, "plotShadow", value.asInstanceOf[js.Any])
+    inline def setPlotShadow(value: Boolean | ShadowOptionsObject): Self = StObject.set(x, "plotShadow", value.asInstanceOf[js.Any])
     
     inline def setPlotShadowUndefined: Self = StObject.set(x, "plotShadow", js.undefined)
     
@@ -628,7 +632,7 @@ object ChartOptions {
     
     inline def setSelectionMarkerFillUndefined: Self = StObject.set(x, "selectionMarkerFill", js.undefined)
     
-    inline def setShadow(value: Boolean | CSSObject): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+    inline def setShadow(value: Boolean | ShadowOptionsObject): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
     inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     

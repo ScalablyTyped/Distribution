@@ -11,7 +11,7 @@ open class SplitDataReader protected ()
   extends Reader[js.Array[ReadableReader | ReadableStream[Any] | Reader[Any]]] {
   /**
     * Creates the {@link Reader} instance
-    * 
+    *
     * @param value The data to read.
     */
   def this(value: js.Array[ReadableReader | ReadableStream[Any] | Reader[Any]]) = this()

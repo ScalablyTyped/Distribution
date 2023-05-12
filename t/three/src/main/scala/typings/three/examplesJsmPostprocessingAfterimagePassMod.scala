@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.examplesJsmPostprocessingPassMod.FullScreenQuad
 import typings.three.examplesJsmPostprocessingPassMod.Pass
 import typings.three.srcThreeMod.ShaderMaterial
 import typings.three.srcThreeMod.WebGLRenderTarget
@@ -14,9 +15,9 @@ object examplesJsmPostprocessingAfterimagePassMod {
   open class AfterimagePass () extends Pass {
     def this(damp: Double) = this()
     
-    var compFsQuad: js.Object = js.native
+    var compFsQuad: FullScreenQuad = js.native
     
-    var copyFsQuad: js.Object = js.native
+    var copyFsQuad: FullScreenQuad = js.native
     
     var shader: js.Object = js.native
     

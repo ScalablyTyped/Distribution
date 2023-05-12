@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Planid extends StObject {
   
-  /** The unique identifier of the plan. */
   var plan_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['plan-id'] */ js.Any
 }
 object Planid {

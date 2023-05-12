@@ -41,8 +41,6 @@ object distNetworkInetworkmoduleMod {
     var body: js.UndefOr[String] = js.undefined
     
     var headers: js.UndefOr[Record[String, String]] = js.undefined
-    
-    var proxyUrl: js.UndefOr[String] = js.undefined
   }
   object NetworkRequestOptions {
     
@@ -61,10 +59,6 @@ object distNetworkInetworkmoduleMod {
       inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
-      
-      inline def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
-      
-      inline def setProxyUrlUndefined: Self = StObject.set(x, "proxyUrl", js.undefined)
     }
   }
 }

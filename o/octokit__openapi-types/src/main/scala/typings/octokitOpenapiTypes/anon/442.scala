@@ -1,27 +1,46 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.actions
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.composer
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.erlang
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.go
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.maven
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.npm
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.nuget
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.other
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.pip
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.pub
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.rubygems
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.rust
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `442` extends StObject {
   
-  @JSName("application/json")
-  var applicationSlashjson: js.Array[DescriptionName]
+  var ecosystem: rubygems | npm | pip | maven | nuget | composer | go | rust | erlang | actions | pub | other
+  
+  /** @description The unique package name within its ecosystem. */
+  var name: String | Null
 }
 object `442` {
   
-  inline def apply(applicationSlashjson: js.Array[DescriptionName]): `442` = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
+  inline def apply(
+    ecosystem: rubygems | npm | pip | maven | nuget | composer | go | rust | erlang | actions | pub | other
+  ): `442` = {
+    val __obj = js.Dynamic.literal(ecosystem = ecosystem.asInstanceOf[js.Any], name = null)
     __obj.asInstanceOf[`442`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `442`] (val x: Self) extends AnyVal {
     
-    inline def setApplicationSlashjson(value: js.Array[DescriptionName]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    inline def setEcosystem(
+      value: rubygems | npm | pip | maven | nuget | composer | go | rust | erlang | actions | pub | other
+    ): Self = StObject.set(x, "ecosystem", value.asInstanceOf[js.Any])
     
-    inline def setApplicationSlashjsonVarargs(value: DescriptionName*): Self = StObject.set(x, "application/json", js.Array(value*))
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
   }
 }

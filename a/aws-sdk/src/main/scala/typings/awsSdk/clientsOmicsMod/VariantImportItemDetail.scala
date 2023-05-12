@@ -1,0 +1,42 @@
+package typings.awsSdk.clientsOmicsMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait VariantImportItemDetail extends StObject {
+  
+  /**
+    * The item's job status.
+    */
+  var jobStatus: JobStatus
+  
+  /**
+    * The source file's location in Amazon S3.
+    */
+  var source: S3Uri
+  
+  /**
+    *  A message that provides additional context about a job 
+    */
+  var statusMessage: js.UndefOr[JobStatusMsg] = js.undefined
+}
+object VariantImportItemDetail {
+  
+  inline def apply(jobStatus: JobStatus, source: S3Uri): VariantImportItemDetail = {
+    val __obj = js.Dynamic.literal(jobStatus = jobStatus.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VariantImportItemDetail]
+  }
+  
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VariantImportItemDetail] (val x: Self) extends AnyVal {
+    
+    inline def setJobStatus(value: JobStatus): Self = StObject.set(x, "jobStatus", value.asInstanceOf[js.Any])
+    
+    inline def setSource(value: S3Uri): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setStatusMessage(value: JobStatusMsg): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+    
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
+  }
+}

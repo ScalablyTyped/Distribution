@@ -1,7 +1,7 @@
 
 # Scala.js typings for styled-jsx
 
-Typings are for version 5.1.0
+Typings are for version 5.1.2
 
 ## Library description:
 Full CSS support for JSX without compromises

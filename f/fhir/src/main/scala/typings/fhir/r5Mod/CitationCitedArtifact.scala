@@ -11,7 +11,7 @@ trait CitationCitedArtifact
   var _dateAccessed: js.UndefOr[Element] = js.undefined
   
   /**
-    * Summary of the article or artifact.
+    * The abstract may be used to convey article-contained abstracts, externally-created abstracts, or other descriptive summaries.
     */
   var `abstract`: js.UndefOr[js.Array[CitationCitedArtifactAbstract]] = js.undefined
   
@@ -31,12 +31,12 @@ trait CitationCitedArtifact
   var currentState: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
-    * When the cited artifact was accessed.
+    * Use this element when citing an artifact from a potentially unstable source, such as a webpage, to note the date (and time) the source was accessed.
     */
   var dateAccessed: js.UndefOr[String] = js.undefined
   
   /**
-    * May include DOI, PMID, PMCID, etc. This element will contain unique identifiers that support de-duplication of citations. This identifier can be valid for only one citation resource.
+    * This element will contain unique identifiers that support de-duplication of citations. Commonly used identifiers for study citations include digital object identifier (DOI), PubMed ID (PMID), and PubMed Central ID (PMCID). To maintain interoperability, the suggested identifier.system values to use for these 3 identifiers are: DOI = "https://doi.org" PMID = "https://pubmed.ncbi.nlm.nih.gov" PMCID = "https://www.ncbi.nlm.nih.gov/pmc/"
     */
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
@@ -56,17 +56,17 @@ trait CitationCitedArtifact
   var publicationForm: js.UndefOr[js.Array[CitationCitedArtifactPublicationForm]] = js.undefined
   
   /**
-    * May include trial registry identifiers, e.g. NCT04372602 from clinicaltrials.gov. This identifier can be valid for multiple citation resources.
+    * May include trial registry identifiers, e.g. NCT04372602 from clinicaltrials.gov. This related identifier would not be used as unique identifier for the cited artifact itself. Multiple published articles (each with their own unique identifier) may relate to the same study record in a research registry. Commonly used related identifiers for study registries include ClinicalTrials.gov identifier (NCTId) and PROSPERO identifier (used for registration of systematic reviews). To maintain interoperability, the suggested identifier.system values to use for these 2 identifiers are: ClinicalTrials.gov = "https://clinicaltrials.gov" PROSPERO = "https://www.crd.york.ac.uk/prospero/"
     */
   var relatedIdentifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
-    * The artifact related to the cited artifact.
+    * The citedArtifact.relatesTo element uses a BackboneElement instead of the RelatedArtifact Datatype to enable use of an extended value set for the required code for the type of relationship.
     */
-  var relatesTo: js.UndefOr[js.Array[RelatedArtifact]] = js.undefined
+  var relatesTo: js.UndefOr[js.Array[CitationCitedArtifactRelatesTo]] = js.undefined
   
   /**
-    * An effective date or period for a status of the cited artifact.
+    * An effective date or period, historical or future, actual or expected, for a status of the cited artifact.
     */
   var statusDate: js.UndefOr[js.Array[CitationCitedArtifactStatusDate]] = js.undefined
   
@@ -149,11 +149,11 @@ object CitationCitedArtifact {
     
     inline def setRelatedIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "relatedIdentifier", js.Array(value*))
     
-    inline def setRelatesTo(value: js.Array[RelatedArtifact]): Self = StObject.set(x, "relatesTo", value.asInstanceOf[js.Any])
+    inline def setRelatesTo(value: js.Array[CitationCitedArtifactRelatesTo]): Self = StObject.set(x, "relatesTo", value.asInstanceOf[js.Any])
     
     inline def setRelatesToUndefined: Self = StObject.set(x, "relatesTo", js.undefined)
     
-    inline def setRelatesToVarargs(value: RelatedArtifact*): Self = StObject.set(x, "relatesTo", js.Array(value*))
+    inline def setRelatesToVarargs(value: CitationCitedArtifactRelatesTo*): Self = StObject.set(x, "relatesTo", js.Array(value*))
     
     inline def setStatusDate(value: js.Array[CitationCitedArtifactStatusDate]): Self = StObject.set(x, "statusDate", value.asInstanceOf[js.Any])
     

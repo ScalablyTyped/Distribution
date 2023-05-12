@@ -199,6 +199,59 @@ object mod {
     inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("handsontable", "CellCoords")
+  @js.native
+  open class CellCoords protected ()
+    extends typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default {
+    def this(row: Double, column: Double) = this()
+    def this(row: Double, column: Double, isRtl: Boolean) = this()
+  }
+  
+  @JSImport("handsontable", "CellRange")
+  @js.native
+  open class CellRange protected ()
+    extends typings.handsontable.`3rdpartyWalkontableSrcCellRangeMod`.default {
+    def this(highlight: typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default) = this()
+    def this(
+      highlight: typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default,
+      from: typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default
+    ) = this()
+    def this(
+      highlight: typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default,
+      from: Unit,
+      to: typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default
+    ) = this()
+    def this(
+      highlight: typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default,
+      from: typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default,
+      to: typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default
+    ) = this()
+    def this(
+      highlight: typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default,
+      from: Unit,
+      to: Unit,
+      isRtl: Boolean
+    ) = this()
+    def this(
+      highlight: typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default,
+      from: Unit,
+      to: typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default,
+      isRtl: Boolean
+    ) = this()
+    def this(
+      highlight: typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default,
+      from: typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default,
+      to: Unit,
+      isRtl: Boolean
+    ) = this()
+    def this(
+      highlight: typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default,
+      from: typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default,
+      to: typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default,
+      isRtl: Boolean
+    ) = this()
+  }
+  
   object Handsontable {
     
     object plugins {

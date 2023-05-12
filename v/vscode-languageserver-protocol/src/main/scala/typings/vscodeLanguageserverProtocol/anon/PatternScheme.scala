@@ -15,7 +15,7 @@ trait PatternScheme
   /** A glob pattern. */
   var pattern: String
   
-  /** A Uri [scheme](#Uri.scheme), like `file` or `untitled`. */
+  /** A Uri {@link Uri.scheme scheme}, like `file` or `untitled`. */
   var scheme: js.UndefOr[String] = js.undefined
 }
 object PatternScheme {

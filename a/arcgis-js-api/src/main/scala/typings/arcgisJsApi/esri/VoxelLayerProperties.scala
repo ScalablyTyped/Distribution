@@ -45,6 +45,24 @@ trait VoxelLayerProperties
   var enableSlices: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Indicates whether the layer will be included in the legend.
+    *
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html#legendEnabled)
+    */
+  var legendEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Indicates whether to display popups when voxels in the layer are clicked.
+    *
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html#popupEnabled)
+    */
+  var popupEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Current rendering mode for the [VoxelLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html).
     *
     * @default "volume"
@@ -92,6 +110,14 @@ object VoxelLayerProperties {
     inline def setEnableSlices(value: Boolean): Self = StObject.set(x, "enableSlices", value.asInstanceOf[js.Any])
     
     inline def setEnableSlicesUndefined: Self = StObject.set(x, "enableSlices", js.undefined)
+    
+    inline def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setLegendEnabledUndefined: Self = StObject.set(x, "legendEnabled", js.undefined)
+    
+    inline def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setPopupEnabledUndefined: Self = StObject.set(x, "popupEnabled", js.undefined)
     
     inline def setRenderMode(value: volume | surfaces): Self = StObject.set(x, "renderMode", value.asInstanceOf[js.Any])
     

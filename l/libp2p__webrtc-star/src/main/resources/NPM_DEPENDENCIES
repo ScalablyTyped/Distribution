@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@libp2p/webrtc-star" : "5.0.3"
+      "@libp2p/webrtc-star" : "7.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@libp2p/webrtc-star" : "5.0.3"
+      "@libp2p/webrtc-star" : "7.0.0"
     }
   ],
   "compile-devDependencies" : [

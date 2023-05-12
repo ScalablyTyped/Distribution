@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StudioComponentSummary extends StObject {
   
   /**
-    * The Unix epoch timestamp in seconds for when the resource was created.
+    * The ISO timestamp in seconds for when the resource was created.
     */
   var createdAt: js.UndefOr[js.Date] = js.undefined
   
@@ -42,7 +42,7 @@ trait StudioComponentSummary extends StObject {
   var `type`: js.UndefOr[StudioComponentType] = js.undefined
   
   /**
-    * The Unix epoch timestamp in seconds for when the resource was updated.
+    * The ISO timestamp in seconds for when the resource was updated.
     */
   var updatedAt: js.UndefOr[js.Date] = js.undefined
   

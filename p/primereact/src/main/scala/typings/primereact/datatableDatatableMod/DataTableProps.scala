@@ -1,5 +1,9 @@
 package typings.primereact.datatableDatatableMod
 
+import typings.primereact.primereactInts.`-1`
+import typings.primereact.primereactInts.`0`
+import typings.primereact.primereactInts.`1`
+import typings.primereact.primereactStrings._empty
 import typings.primereact.primereactStrings.`additions removals`
 import typings.primereact.primereactStrings.`additions text`
 import typings.primereact.primereactStrings.`inline`
@@ -7,36 +11,57 @@ import typings.primereact.primereactStrings.`removals additions`
 import typings.primereact.primereactStrings.`removals text`
 import typings.primereact.primereactStrings.`text additions`
 import typings.primereact.primereactStrings.`text removals`
+import typings.primereact.primereactStrings.`use-credentials`
 import typings.primereact.primereactStrings.additions
 import typings.primereact.primereactStrings.all
+import typings.primereact.primereactStrings.anonymous
 import typings.primereact.primereactStrings.ascending
 import typings.primereact.primereactStrings.assertive
 import typings.primereact.primereactStrings.both
+import typings.primereact.primereactStrings.bottom
+import typings.primereact.primereactStrings.checkbox
+import typings.primereact.primereactStrings.contains
 import typings.primereact.primereactStrings.copy
+import typings.primereact.primereactStrings.custom
 import typings.primereact.primereactStrings.date
 import typings.primereact.primereactStrings.decimal
+import typings.primereact.primereactStrings.deepEquals
 import typings.primereact.primereactStrings.descending
 import typings.primereact.primereactStrings.dialog
 import typings.primereact.primereactStrings.done
 import typings.primereact.primereactStrings.email
+import typings.primereact.primereactStrings.endsWith
 import typings.primereact.primereactStrings.enter
 import typings.primereact.primereactStrings.environment
+import typings.primereact.primereactStrings.equals
 import typings.primereact.primereactStrings.execute
+import typings.primereact.primereactStrings.expand
+import typings.primereact.primereactStrings.fit
 import typings.primereact.primereactStrings.go
 import typings.primereact.primereactStrings.grammar
 import typings.primereact.primereactStrings.grid
+import typings.primereact.primereactStrings.gt
+import typings.primereact.primereactStrings.gte
 import typings.primereact.primereactStrings.horizontal
+import typings.primereact.primereactStrings.in
 import typings.primereact.primereactStrings.inherit
+import typings.primereact.primereactStrings.large
 import typings.primereact.primereactStrings.link
 import typings.primereact.primereactStrings.list
 import typings.primereact.primereactStrings.listbox
+import typings.primereact.primereactStrings.local
 import typings.primereact.primereactStrings.location
+import typings.primereact.primereactStrings.lt
+import typings.primereact.primereactStrings.lte
 import typings.primereact.primereactStrings.menu
 import typings.primereact.primereactStrings.mixed
 import typings.primereact.primereactStrings.move
+import typings.primereact.primereactStrings.multiple
 import typings.primereact.primereactStrings.next
 import typings.primereact.primereactStrings.no
 import typings.primereact.primereactStrings.none
+import typings.primereact.primereactStrings.normal
+import typings.primereact.primereactStrings.notEquals
 import typings.primereact.primereactStrings.numeric
 import typings.primereact.primereactStrings.off
 import typings.primereact.primereactStrings.on
@@ -45,19 +70,31 @@ import typings.primereact.primereactStrings.page
 import typings.primereact.primereactStrings.polite
 import typings.primereact.primereactStrings.popup
 import typings.primereact.primereactStrings.previous
+import typings.primereact.primereactStrings.radiobutton
 import typings.primereact.primereactStrings.removals
+import typings.primereact.primereactStrings.row
+import typings.primereact.primereactStrings.scroll
 import typings.primereact.primereactStrings.search
+import typings.primereact.primereactStrings.self
 import typings.primereact.primereactStrings.send
+import typings.primereact.primereactStrings.session
+import typings.primereact.primereactStrings.single
+import typings.primereact.primereactStrings.small
 import typings.primereact.primereactStrings.spelling
+import typings.primereact.primereactStrings.stack
+import typings.primereact.primereactStrings.startsWith
 import typings.primereact.primereactStrings.step
 import typings.primereact.primereactStrings.tel
 import typings.primereact.primereactStrings.text
 import typings.primereact.primereactStrings.time
+import typings.primereact.primereactStrings.top
 import typings.primereact.primereactStrings.tree
 import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.user
 import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.yes
+import typings.primereact.utilsUtilsMod.IconOptions
+import typings.primereact.utilsUtilsMod.IconType
 import typings.primereact.virtualscrollerVirtualscrollerMod.VirtualScrollerProps
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
@@ -100,13 +137,15 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLDivElement
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'size' | 'onContextMenu' | 'ref'> */
-trait DataTableProps extends StObject {
+/* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'size' | 'onContextMenu' | 'ref' | 'value'> */
+trait DataTableProps[TValue /* <: DataTableValueArray */] extends StObject {
   
   var about: js.UndefOr[String] = js.undefined
   
@@ -116,6 +155,10 @@ trait DataTableProps extends StObject {
   
   var alt: js.UndefOr[String] = js.undefined
   
+  /**
+    * Whether to show it even there is only one page.
+    * @defaultValue true
+    */
   var alwaysShowPaginator: js.UndefOr[Boolean] = js.undefined
   
   var `aria-activedescendant`: js.UndefOr[String] = js.undefined
@@ -224,59 +267,127 @@ trait DataTableProps extends StObject {
   
   var autoFocus: js.UndefOr[Boolean] = js.undefined
   
-  var autoLayout: js.UndefOr[Boolean] = js.undefined
-  
   var autoSave: js.UndefOr[String] = js.undefined
   
+  /**
+    * The breakpoint to define the maximum width boundary when using stack responsive layout.
+    * @defaultValue 960px
+    */
   var breakpoint: js.UndefOr[String] = js.undefined
   
   var capture: js.UndefOr[Boolean | user | environment] = js.undefined
   
+  /**
+    * Function that takes the cell data and returns an object in &#123;'styleclass' : condition&#125; format to define a classname for a particular now.
+    * @param {*} value - Value of the cell.
+    * @param {DataTableCellClassNameOptions<TValue>} options - ClassName options.
+    * @return {object | string | undefined} A string or object to define a classname for a particular cell.
+    */
   var cellClassName: js.UndefOr[
-    js.Function2[/* value */ Any, /* options */ DataTableCellClassNameOptions, js.Object | String]
+    js.Function2[
+      /* value */ Any, 
+      /* options */ DataTableCellClassNameOptions[TValue], 
+      js.UndefOr[js.Object | String]
+    ]
   ] = js.undefined
   
+  /**
+    * Whether to cell selection is enabled or not.
+    * @defaultValue false
+    */
   var cellSelection: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Icon to display in the checkbox.
+    */
+  var checkIcon: js.UndefOr[IconType[DataTableProps[TValue]]] = js.undefined
   
   var checked: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Used to get the child elements of the component.
+    * @readonly
+    */
   var children: js.UndefOr[ReactNode] = js.undefined
   
+  /**
+    * Style class of the component.
+    */
   var className: js.UndefOr[String] = js.undefined
   
-  var collapsedRowIcon: js.UndefOr[String] = js.undefined
+  /**
+    * Icon of the row toggler to display the row as collapsed.
+    */
+  var collapsedRowIcon: js.UndefOr[IconType[DataTableProps[TValue]]] = js.undefined
   
   var color: js.UndefOr[String] = js.undefined
   
-  var columnResizeMode: js.UndefOr[DataTableColumnResizeModeType] = js.undefined
+  /**
+    * Used to define the resize mode of the columns, valid values are "fit" and "expand".
+    * @defaultValue fit
+    */
+  var columnResizeMode: js.UndefOr[fit | expand] = js.undefined
   
-  var compareSelectionBy: js.UndefOr[DataTableCompareSelectionByType] = js.undefined
+  /**
+    * Algorithm to define if a row is selected, valid values are "equals" that compares by reference and "deepEquals" that compares all fields.
+    * @defaultValue deepEquals
+    */
+  var compareSelectionBy: js.UndefOr[deepEquals | equals] = js.undefined
+  
+  var content: js.UndefOr[String] = js.undefined
   
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   
   var contextMenu: js.UndefOr[String] = js.undefined
   
+  /**
+    * Selected row in single mode or an array of values in multiple mode.
+    */
   var contextMenuSelection: js.UndefOr[js.Object] = js.undefined
   
-  var crossOrigin: js.UndefOr[String] = js.undefined
+  var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
   
+  /**
+    * Character to use as the csv separator.
+    * @defaultValue ,
+    */
   var csvSeparator: js.UndefOr[String] = js.undefined
   
+  /**
+    * Template of the current page report element. Available placeholders are &#123;currentPage&#125;, &#123;totalPages&#125;, &#123;rows&#125;, &#123;first&#125;, &#123;last&#125; and &#123;totalRecords&#125;
+    * @defaultValue (&#123;currentPage&#125; of &#123;totalPages&#125;)
+    */
   var currentPageReportTemplate: js.UndefOr[String] = js.undefined
   
-  var customRestoreState: js.UndefOr[js.Function0[js.Object]] = js.undefined
+  /**
+    * A function to implement custom restoreState with stateStorage="custom". Need to return state object.
+    * @return {object | undefined} Returns the state object.
+    */
+  var customRestoreState: js.UndefOr[js.Function0[js.UndefOr[js.Object]]] = js.undefined
   
+  /**
+    * A function to implement custom saveState with stateStorage="custom".
+    * @param {object} state - The object to be stored.
+    */
   var customSaveState: js.UndefOr[js.Function1[/* state */ js.Object, Unit]] = js.undefined
   
   var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
   
+  /**
+    * Name of the field that uniquely identifies a record in the data. Should be a unique business key to prevent re-rendering.
+    * @defaultValue (&#123;currentPage&#125; of &#123;totalPages&#125;)
+    */
   var dataKey: js.UndefOr[String] = js.undefined
   
   var datatype: js.UndefOr[String] = js.undefined
   
   var defaultChecked: js.UndefOr[Boolean] = js.undefined
   
-  var defaultSortOrder: js.UndefOr[DataTableSortOrderType] = js.undefined
+  /**
+    * Default sort order of an unsorted column.
+    * @defaultValue (&#123;currentPage&#125; of &#123;totalPages&#125;)
+    */
+  var defaultSortOrder: js.UndefOr[`1` | `0` | `-1` | Null] = js.undefined
   
   var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
   
@@ -284,45 +395,102 @@ trait DataTableProps extends StObject {
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * When enabled, a rectangle that can be dragged can be used to make a range selection.
+    * @defaultValue false
+    */
   var dragSelection: js.UndefOr[Boolean] = js.undefined
   
   var draggable: js.UndefOr[Booleanish] = js.undefined
   
+  /**
+    * Defines editing mode, options are "cell" and "row".
+    * @defaultValue cell
+    */
   var editMode: js.UndefOr[String] = js.undefined
   
-  var editingRows: js.UndefOr[js.Array[Any] | DataTableEditingRows] = js.undefined
+  /**
+    * A collection of rows to represent the current editing data in row edit mode.
+    */
+  var editingRows: js.UndefOr[DataTableValueArray | DataTableEditingRows] = js.undefined
   
-  var emptyMessage: js.UndefOr[DataTableEmptyMessageType] = js.undefined
+  /**
+    * Text to display when there is no data.
+    */
+  var emptyMessage: js.UndefOr[ReactNode | (js.Function1[/* frozen */ Boolean, ReactNode])] = js.undefined
   
   var enterKeyHint: js.UndefOr[enter | done | go | next | previous | search | send] = js.undefined
   
+  /**
+    * Makes row groups toggleable, default is false.
+    * @defaultValue false
+    */
   var expandableRowGroups: js.UndefOr[Boolean] = js.undefined
   
-  var expandedRowIcon: js.UndefOr[String] = js.undefined
+  /**
+    * Icon of the row toggler to display the row as expanded.
+    */
+  var expandedRowIcon: js.UndefOr[IconType[DataTableProps[TValue]]] = js.undefined
   
-  var expandedRows: js.UndefOr[js.Array[Any] | DataTableExpandedRows] = js.undefined
+  /**
+    * A collection of rows or a map object row data keys that are expanded.
+    */
+  var expandedRows: js.UndefOr[DataTableValueArray | DataTableExpandedRows] = js.undefined
   
+  /**
+    * Name of the exported file.
+    * @defaultValue download
+    */
   var exportFilename: js.UndefOr[String] = js.undefined
   
-  var exportFunction: js.UndefOr[js.Function1[/* e */ DataTableExportFunctionParams, Any]] = js.undefined
+  /**
+    * A function to implement custom export. Need to return string value.
+    * @param {DataTableExportFunctionEvent<TValue>} event - Custom export function event.
+    */
+  var exportFunction: js.UndefOr[js.Function1[/* event */ DataTableExportFunctionEvent[TValue], Any]] = js.undefined
   
+  /**
+    * Delay in milliseconds before filtering the data.
+    * @defaultValue 300
+    */
   var filterDelay: js.UndefOr[Double] = js.undefined
   
-  var filterDisplay: js.UndefOr[DataTableFilterDisplayType] = js.undefined
+  /**
+    * Layout of the filter elements, valid values are "row" and "menu".
+    * @defaultValue menu
+    */
+  var filterDisplay: js.UndefOr[menu | row] = js.undefined
   
+  /**
+    * Locale to use in filtering. The default locale is the host environment's current locale.
+    * @defaultValue undefined
+    */
   var filterLocale: js.UndefOr[String] = js.undefined
   
+  /**
+    * An array of FilterMetadata objects to provide external filters.
+    */
   var filters: js.UndefOr[DataTableFilterMeta] = js.undefined
   
+  /**
+    * Index of the first row to be displayed.
+    * @defaultValue 0
+    */
   var first: js.UndefOr[Double] = js.undefined
   
-  var footer: js.UndefOr[DataTableFooterTemplateType] = js.undefined
+  /**
+    * Custom footer content of the table.
+    */
+  var footer: js.UndefOr[DataTableFooterTemplateType[TValue]] = js.undefined
   
+  /**
+    * ColumnGroup component for footer.
+    */
   var footerColumnGroup: js.UndefOr[ReactNode] = js.undefined
   
   var form: js.UndefOr[String] = js.undefined
   
-  var formAction: js.UndefOr[String] = js.undefined
+  var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
   
   var formEncType: js.UndefOr[String] = js.undefined
   
@@ -332,28 +500,56 @@ trait DataTableProps extends StObject {
   
   var formTarget: js.UndefOr[String] = js.undefined
   
-  var frozenValue: js.UndefOr[js.Array[Any]] = js.undefined
+  /**
+    * Items of the frozen part in scrollable DataTable.
+    */
+  var frozenValue: js.UndefOr[DataTableRowDataArray[TValue]] = js.undefined
   
+  /**
+    * Width of the frozen part in scrollable DataTable.
+    */
   var frozenWidth: js.UndefOr[String] = js.undefined
   
-  var globalFilter: js.UndefOr[DataTableGlobalFilterType] = js.undefined
+  /**
+    * Value of the global filter to use in filtering.
+    */
+  var globalFilter: js.UndefOr[String | Null] = js.undefined
   
+  /**
+    * Define fields to be filtered globally.
+    */
   var globalFilterFields: js.UndefOr[js.Array[String]] = js.undefined
   
+  /**
+    * Defines filterMatchMode; "startsWith", "contains", "endsWith", "equals", "notEquals", "in", "lt", "lte", "gt", "gte" and "custom".
+    * @defaultValue contains
+    */
   var globalFilterMatchMode: js.UndefOr[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColumnFilterMatchModeType */ Any
+    startsWith | contains | endsWith | equals | notEquals | in | lt | lte | gt | gte | custom
   ] = js.undefined
   
+  /**
+    * Used for either be grouped by a separate grouping row or using rowspan.
+    */
   var groupRowsBy: js.UndefOr[String] = js.undefined
   
-  var header: js.UndefOr[DataTableHeaderTemplateType] = js.undefined
+  /**
+    * Custom header content of the table.
+    */
+  var header: js.UndefOr[DataTableHeaderTemplateType[TValue]] = js.undefined
   
+  /**
+    * ColumnGroup component for header.
+    */
   var headerColumnGroup: js.UndefOr[ReactNode] = js.undefined
   
   var height: js.UndefOr[Double | String] = js.undefined
   
   var hidden: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Unique identifier of the element.
+    */
   var id: js.UndefOr[String] = js.undefined
   
   var inlist: js.UndefOr[Any] = js.undefined
@@ -362,7 +558,13 @@ trait DataTableProps extends StObject {
   
   var is: js.UndefOr[String] = js.undefined
   
-  var isDataSelectable: js.UndefOr[js.Function1[/* e */ DataTableDataSelectableParams, js.UndefOr[Boolean | Null]]] = js.undefined
+  /**
+    * Function that returns a boolean to decide whether the data should be selectable.
+    * @param {DataTableDataSelectableEvent<TValue>} event - Custom data selectable event.
+    */
+  var isDataSelectable: js.UndefOr[
+    js.Function1[/* event */ DataTableDataSelectableEvent[TValue], js.UndefOr[Boolean | Null]]
+  ] = js.undefined
   
   var itemID: js.UndefOr[String] = js.undefined
   
@@ -378,25 +580,43 @@ trait DataTableProps extends StObject {
   
   var lang: js.UndefOr[String] = js.undefined
   
+  /**
+    * Defines if data is loaded and interacted with in lazy manner.
+    * @defaultValue false
+    */
   var `lazy`: js.UndefOr[Boolean] = js.undefined
   
   var list: js.UndefOr[String] = js.undefined
   
+  /**
+    * Displays a loader to indicate data load is in progress.
+    * @defaultValue false
+    */
   var loading: js.UndefOr[Boolean] = js.undefined
   
-  var loadingIcon: js.UndefOr[String] = js.undefined
+  /**
+    * The icon to show while indicating data load is in progress.
+    */
+  var loadingIcon: js.UndefOr[IconType[DataTableProps[TValue]]] = js.undefined
   
   var max: js.UndefOr[Double | String] = js.undefined
   
   var maxLength: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Defines whether metaKey is requred or not for the selection. When true metaKey needs to be pressed to select or unselect an item and when set to false selection of each item can be toggled individually. On touch enabled devices, metaKeySelection is turned off automatically.
+    * @defaultValue true
+    */
   var metaKeySelection: js.UndefOr[Boolean] = js.undefined
   
   var min: js.UndefOr[Double | String] = js.undefined
   
   var minLength: js.UndefOr[Double] = js.undefined
   
-  var multiSortMeta: js.UndefOr[DataTableMultiSortMetaType] = js.undefined
+  /**
+    * An array of SortMeta objects to sort the data by default in multiple sort mode.
+    */
+  var multiSortMeta: js.UndefOr[js.Array[DataTableSortMeta] | Null] = js.undefined
   
   var multiple: js.UndefOr[Boolean] = js.undefined
   
@@ -406,9 +626,17 @@ trait DataTableProps extends StObject {
   
   var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  var onAllRowsSelect: js.UndefOr[js.Function1[/* e */ DataTableSelectParams, Unit]] = js.undefined
+  /**
+    * Callback to invoke when all rows are selected using the header checkbox.
+    * @param {DataTableSelectEvent} event - Custom select event.
+    */
+  var onAllRowsSelect: js.UndefOr[js.Function1[/* event */ DataTableSelectEvent, Unit]] = js.undefined
   
-  var onAllRowsUnselect: js.UndefOr[js.Function1[/* e */ DataTableUnselectParams, Unit]] = js.undefined
+  /**
+    * Callback to invoke when all rows are unselected using the header checkbox.
+    * @param {DataTableUnselectEvent} event - Custom unselect event.
+    */
+  var onAllRowsUnselect: js.UndefOr[js.Function1[/* event */ DataTableUnselectEvent, Unit]] = js.undefined
   
   var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
   
@@ -426,23 +654,51 @@ trait DataTableProps extends StObject {
   
   var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  var onCellClick: js.UndefOr[js.Function1[/* e */ DataTableCellClickEventParams, Unit]] = js.undefined
+  /**
+    * Callback to invoke on cell click.
+    * @param {DataTableCellClickEvent<TValue>} event - Custom cell click event.
+    */
+  var onCellClick: js.UndefOr[js.Function1[/* event */ DataTableCellClickEvent[TValue], Unit]] = js.undefined
   
-  var onCellSelect: js.UndefOr[js.Function1[/* e */ DataTableSelectParams, Unit]] = js.undefined
+  /**
+    * Callback to invoke on cell select.
+    * @param {DataTableSelectEvent} event - Custom select event.
+    */
+  var onCellSelect: js.UndefOr[js.Function1[/* event */ DataTableSelectEvent, Unit]] = js.undefined
   
-  var onCellUnselect: js.UndefOr[js.Function1[/* e */ DataTableUnselectParams, Unit]] = js.undefined
+  /**
+    * Callback to invoke on cell unselect.
+    * @param {DataTableUnselectEvent} event - Custom unselect event.
+    */
+  var onCellUnselect: js.UndefOr[js.Function1[/* event */ DataTableUnselectEvent, Unit]] = js.undefined
   
   var onChange: js.UndefOr[ChangeEventHandler[HTMLDivElement]] = js.undefined
   
   var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   
-  var onColReorder: js.UndefOr[js.Function1[/* e */ DataTableColReorderParams, Unit]] = js.undefined
+  /**
+    * Callback to invoke when a column is reordered.
+    * @param {DataTableColReorderEvent} event - Custom column reorder event.
+    */
+  var onColReorder: js.UndefOr[js.Function1[/* event */ DataTableColReorderEvent, Unit]] = js.undefined
   
-  var onColumnResizeEnd: js.UndefOr[js.Function1[/* e */ DataTableColumnResizeEndParams, Unit]] = js.undefined
+  /**
+    * Callback to invoke when a column is resized.
+    * @param {DataTableColumnResizeEndEvent} event - Custom column resize end event.
+    */
+  var onColumnResizeEnd: js.UndefOr[js.Function1[/* event */ DataTableColumnResizeEndEvent, Unit]] = js.undefined
   
-  var onColumnResizerClick: js.UndefOr[js.Function1[/* e */ DataTableColumnResizerClickParams, Unit]] = js.undefined
+  /**
+    * Callback to invoke when a resizer element is clicked.
+    * @param {DataTableColumnResizerClickEvent} event - Custom column resizer click event.
+    */
+  var onColumnResizerClick: js.UndefOr[js.Function1[/* event */ DataTableColumnResizerClickEvent, Unit]] = js.undefined
   
-  var onColumnResizerDoubleClick: js.UndefOr[js.Function1[/* e */ DataTableColumnResizerClickParams, Unit]] = js.undefined
+  /**
+    * Callback to invoke when a resizer element is double clicked.
+    * @param {DataTableColumnResizerClickEvent} event - Custom column resizer double click event.
+    */
+  var onColumnResizerDoubleClick: js.UndefOr[js.Function1[/* event */ DataTableColumnResizerClickEvent, Unit]] = js.undefined
   
   var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
   
@@ -450,9 +706,17 @@ trait DataTableProps extends StObject {
   
   var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
   
-  var onContextMenu: js.UndefOr[js.Function1[/* e */ DataTableRowEventParams, Unit]] = js.undefined
+  /**
+    * Callback to invoke when a context menu is clicked.
+    * @param {DataTableRowEvent} event - Custom row event.
+    */
+  var onContextMenu: js.UndefOr[js.Function1[/* event */ DataTableRowEvent, Unit]] = js.undefined
   
-  var onContextMenuSelectionChange: js.UndefOr[js.Function1[/* e */ DataTableSelectionChangeParams, Unit]] = js.undefined
+  /**
+    * Callback to invoke when a row selected with right click.
+    * @param {DataTableRowEvent} event - Custom row event.
+    */
+  var onContextMenuSelectionChange: js.UndefOr[js.Function1[/* event */ DataTableContextMenuSelectionChangeEvent[TValue], Unit]] = js.undefined
   
   var onCopy: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
   
@@ -486,7 +750,11 @@ trait DataTableProps extends StObject {
   
   var onError: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  var onFilter: js.UndefOr[js.Function1[/* e */ DataTablePFSEvent, Unit]] = js.undefined
+  /**
+    * Callback to invoke on filtering.
+    * @param {DataTableStateEvent} event - Custom state event.
+    */
+  var onFilter: js.UndefOr[js.Function1[/* event */ DataTableStateEvent, Unit]] = js.undefined
   
   var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
   
@@ -522,7 +790,11 @@ trait DataTableProps extends StObject {
   
   var onMouseUp: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   
-  var onPage: js.UndefOr[js.Function1[/* e */ DataTablePFSEvent, Unit]] = js.undefined
+  /**
+    * Callback to invoke on pagination.
+    * @param {DataTableStateEvent} event - Custom state event.
+    */
+  var onPage: js.UndefOr[js.Function1[/* event */ DataTableStateEvent, Unit]] = js.undefined
   
   var onPaste: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
   
@@ -556,31 +828,95 @@ trait DataTableProps extends StObject {
   
   var onResize: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  var onRowClick: js.UndefOr[js.Function1[/* e */ DataTableRowClickEventParams, Unit]] = js.undefined
+  /**
+    * Callback to invoke when a row is clicked.
+    * @param {DataTableRowClickEvent} event - Custom row click event.
+    */
+  var onRowClick: js.UndefOr[js.Function1[/* event */ DataTableRowClickEvent, Unit]] = js.undefined
   
-  var onRowCollapse: js.UndefOr[js.Function1[/* e */ DataTableRowEventParams, Unit]] = js.undefined
+  /**
+    * Callback to invoke when a row is collapsed.
+    * @param {DataTableRowEvent} event - Custom row event.
+    */
+  var onRowCollapse: js.UndefOr[js.Function1[/* event */ DataTableRowEvent, Unit]] = js.undefined
   
-  var onRowDoubleClick: js.UndefOr[js.Function1[/* e */ DataTableRowClickEventParams, Unit]] = js.undefined
+  /**
+    * Callback to invoke when a row is double clicked.
+    * @param {DataTableRowClickEvent} event - Custom click event.
+    */
+  var onRowDoubleClick: js.UndefOr[js.Function1[/* event */ DataTableRowClickEvent, Unit]] = js.undefined
   
-  var onRowEditCancel: js.UndefOr[js.Function1[/* e */ DataTableRowEditParams, Unit]] = js.undefined
+  /**
+    * Callback to invoke when the cancel icon is clicked on row editing mode.
+    * @param {DataTableRowEditEvent} event - Custom row edit event.
+    */
+  var onRowEditCancel: js.UndefOr[js.Function1[/* event */ DataTableRowEditEvent, Unit]] = js.undefined
   
-  var onRowEditChange: js.UndefOr[js.Function1[/* e */ DataTableRowEditParams, Unit]] = js.undefined
+  /**
+    * Callback to invoke when the cancel icon is clicked on row editing mode.
+    * @param {DataTableRowEditEvent} event - Custom row edit event.
+    */
+  var onRowEditChange: js.UndefOr[js.Function1[/* event */ DataTableRowEditEvent, Unit]] = js.undefined
   
-  var onRowEditComplete: js.UndefOr[js.Function1[/* e */ DataTableRowEditCompleteParams, Unit]] = js.undefined
+  /**
+    * Callback to invoke when row edit is completed.
+    * @param {DataTableRowEditCompleteEvent} event - Custom row edit complete event.
+    */
+  var onRowEditComplete: js.UndefOr[js.Function1[/* event */ DataTableRowEditCompleteEvent, Unit]] = js.undefined
   
-  var onRowEditInit: js.UndefOr[js.Function1[/* e */ DataTableRowEditParams, Unit]] = js.undefined
+  /**
+    * Callback to invoke when the editing icon is clicked on row editing mode.
+    * @param {DataTableRowEditEvent} event - Custom row edit event.
+    */
+  var onRowEditInit: js.UndefOr[js.Function1[/* event */ DataTableRowEditEvent, Unit]] = js.undefined
   
-  var onRowEditSave: js.UndefOr[js.Function1[/* e */ DataTableRowEditSaveParams, Unit]] = js.undefined
+  /**
+    * Callback to invoke when the save icon is clicked on row editing mode.
+    * @param {DataTableRowEditSaveEvent} event - Custom row edit save event.
+    */
+  var onRowEditSave: js.UndefOr[js.Function1[/* event */ DataTableRowEditSaveEvent, Unit]] = js.undefined
   
-  var onRowExpand: js.UndefOr[js.Function1[/* e */ DataTableRowEventParams, Unit]] = js.undefined
+  /**
+    * Callback to invoke when a row is expanded.
+    * @param {DataTableRowEvent} event - Custom row event.
+    */
+  var onRowExpand: js.UndefOr[js.Function1[/* event */ DataTableRowEvent, Unit]] = js.undefined
   
-  var onRowReorder: js.UndefOr[js.Function1[/* e */ DataTableRowReorderParams, Unit]] = js.undefined
+  /**
+    * Callback to invoke when a row is hovered with mouse.
+    * @param {DataTableRowMouseEvent} event - Custom row mouse event.
+    */
+  var onRowMouseEnter: js.UndefOr[js.Function1[/* event */ DataTableRowMouseEvent, Unit]] = js.undefined
   
-  var onRowSelect: js.UndefOr[js.Function1[/* e */ DataTableSelectParams, Unit]] = js.undefined
+  /**
+    * Callback to invoke when a row is navigated away from with mouse.
+    * @param {DataTableRowMouseEvent} event - Custom row mouse event.
+    */
+  var onRowMouseLeave: js.UndefOr[js.Function1[/* event */ DataTableRowMouseEvent, Unit]] = js.undefined
   
-  var onRowToggle: js.UndefOr[js.Function1[/* e */ DataTableRowToggleParams, Unit]] = js.undefined
+  /**
+    * Callback to update the new order.
+    * @param {DataTableRowReorderEvent<TValue>} event - Custom row reorder event.
+    */
+  var onRowReorder: js.UndefOr[js.Function1[/* event */ DataTableRowReorderEvent[TValue], Unit]] = js.undefined
   
-  var onRowUnselect: js.UndefOr[js.Function1[/* e */ DataTableUnselectParams, Unit]] = js.undefined
+  /**
+    * Callback to invoke when a row is selected.
+    * @param {DataTableSelectEvent} event - Custom select event.
+    */
+  var onRowSelect: js.UndefOr[js.Function1[/* event */ DataTableSelectEvent, Unit]] = js.undefined
+  
+  /**
+    * Callback to invoke when a row is toggled or collapsed.
+    * @param {DataTableRowToggleEvent} event - Custom row toggle event.
+    */
+  var onRowToggle: js.UndefOr[js.Function1[/* event */ DataTableRowToggleEvent, Unit]] = js.undefined
+  
+  /**
+    * Callback to invoke when a row is unselected.
+    * @param {DataTableUnselectEvent} event - Custom unselect event.
+    */
+  var onRowUnselect: js.UndefOr[js.Function1[/* event */ DataTableUnselectEvent, Unit]] = js.undefined
   
   var onScroll: js.UndefOr[UIEventHandler[HTMLDivElement]] = js.undefined
   
@@ -590,16 +926,36 @@ trait DataTableProps extends StObject {
   
   var onSelect: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  var onSelectAllChange: js.UndefOr[js.Function1[/* e */ DataTableSelectAllChangeParams, Unit]] = js.undefined
+  /**
+    * Callback to invoke when select all value changes.
+    * @param {DataTableSelectAllChangeEvent} event - Custom select all change event.
+    */
+  var onSelectAllChange: js.UndefOr[js.Function1[/* event */ DataTableSelectAllChangeEvent, Unit]] = js.undefined
   
-  var onSelectionChange: js.UndefOr[js.Function1[/* e */ DataTableSelectionChangeParams, Unit]] = js.undefined
+  /**
+    * Callback to invoke when selection changes.
+    * @param {DataTableSelectionChangeEvent<TValue>} event - Custom selection change event.
+    */
+  var onSelectionChange: js.UndefOr[js.Function1[/* event */ DataTableSelectionChangeEvent[TValue], Unit]] = js.undefined
   
-  var onSort: js.UndefOr[js.Function1[/* e */ DataTablePFSEvent, Unit]] = js.undefined
+  /**
+    * Callback to invoke on sort.
+    * @param {DataTableStateEvent} event - Custom state event.
+    */
+  var onSort: js.UndefOr[js.Function1[/* event */ DataTableStateEvent, Unit]] = js.undefined
   
   var onStalled: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
+  /**
+    * Callback to invoke table state is restored.
+    * @param {object} state - Table state.
+    */
   var onStateRestore: js.UndefOr[js.Function1[/* state */ js.Object, Unit]] = js.undefined
   
+  /**
+    * Callback to invoke table state is saved.
+    * @param {object} state - Table state.
+    */
   var onStateSave: js.UndefOr[js.Function1[/* state */ js.Object, Unit]] = js.undefined
   
   var onSubmit: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
@@ -618,7 +974,11 @@ trait DataTableProps extends StObject {
   
   var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLDivElement]] = js.undefined
   
-  var onValueChange: js.UndefOr[js.Function1[/* value */ js.Array[Any], Unit]] = js.undefined
+  /**
+    * Callback to invoke after filtering and sorting to pass the rendered value.
+    * @param {DataTableRowDataArray<TValue>} value - Value displayed by the table.
+    */
+  var onValueChange: js.UndefOr[js.Function1[/* value */ DataTableRowDataArray[TValue], Unit]] = js.undefined
   
   var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
@@ -626,20 +986,49 @@ trait DataTableProps extends StObject {
   
   var onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.undefined
   
+  /**
+    * Number of page links to display.
+    * @defaultValue 5
+    */
   var pageLinkSize: js.UndefOr[Double] = js.undefined
   
+  /**
+    * When specified as true, enables the pagination.
+    * @defaultValue false
+    */
   var paginator: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Style class of the paginator element.
+    */
   var paginatorClassName: js.UndefOr[String] = js.undefined
   
-  var paginatorDropdownAppendTo: js.UndefOr[DataTableAppendToType] = js.undefined
+  /**
+    * DOM element instance where the overlay panel should be mounted. Valid values are any DOM Element and 'self'. The self value is used to render a component where it is located.
+    * @defaultValue document.body
+    */
+  var paginatorDropdownAppendTo: js.UndefOr[self | HTMLElement | Null] = js.undefined
   
+  /**
+    * Content for the left side of the paginator.
+    */
   var paginatorLeft: js.UndefOr[ReactNode] = js.undefined
   
-  var paginatorPosition: js.UndefOr[DataTablePaginatorPositionType] = js.undefined
+  /**
+    * Position of the paginator, options are "top","bottom" or "both".
+    * @defaultValue bottom
+    */
+  var paginatorPosition: js.UndefOr[top | bottom | both] = js.undefined
   
+  /**
+    * Content for the right side of the paginator.
+    */
   var paginatorRight: js.UndefOr[ReactNode] = js.undefined
   
+  /**
+    * Template of the paginator. For details, refer to the template section of the paginator documentation for further options.
+    * @defaultValue FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink RowsPerPageDropdown
+    */
   var paginatorTemplate: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PaginatorTemplate */ Any
   ] = js.undefined
@@ -656,126 +1045,312 @@ trait DataTableProps extends StObject {
   
   var readOnly: js.UndefOr[Boolean] = js.undefined
   
+  var rel: js.UndefOr[String] = js.undefined
+  
+  /**
+    * When enabled, columns can have an un-sorted state.
+    * @defaultValue false
+    */
   var removableSort: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Defines the reorder indicator down icon.
+    */
+  var reorderIndicatorDownIcon: js.UndefOr[IconType[DataTableProps[TValue]]] = js.undefined
+  
+  /**
+    * Defines the reorder indicator up icon.
+    */
+  var reorderIndicatorUpIcon: js.UndefOr[IconType[DataTableProps[TValue]]] = js.undefined
+  
+  /**
+    * When enabled, columns can be reordered using drag and drop.
+    * @defaultValue false
+    */
   var reorderableColumns: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * When enabled, rows can be reordered using drag and drop.
+    * @defaultValue false
+    */
   var reorderableRows: js.UndefOr[Boolean] = js.undefined
   
   var required: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * When enabled, columns can be resized using drag and drop.
+    * @defaultValue false
+    */
   var resizableColumns: js.UndefOr[Boolean] = js.undefined
   
   var resource: js.UndefOr[String] = js.undefined
   
-  var responsiveLayout: js.UndefOr[DataTableResponsiveLayoutType] = js.undefined
+  /**
+    * Defines the responsive mode, valid options are "stack" and "scroll".
+    * @defaultValue scroll
+    * @deprecated since version 9.2.0
+    */
+  var responsiveLayout: js.UndefOr[scroll | stack] = js.undefined
   
   var results: js.UndefOr[Double] = js.undefined
   
+  var rev: js.UndefOr[String] = js.undefined
+  
   var role: js.UndefOr[AriaRole] = js.undefined
   
+  /**
+    * Function that takes the row data and returns an object in &#123;'styleclass' : condition&#125; format to define a classname for a particular now.
+    * @param {DataTableRowData<TValue>} data - Value displayed by the table.
+    */
   var rowClassName: js.UndefOr[
-    js.Function2[/* data */ Any, /* options */ DataTableRowClassNameOptions, js.Object | String]
+    js.Function2[
+      /* data */ DataTableRowData[TValue], 
+      /* options */ DataTableRowClassNameOptions[TValue], 
+      js.UndefOr[js.Object | String]
+    ]
   ] = js.undefined
   
+  /**
+    * Callback to invoke to validate the editing row when the save icon is clicked on row editing mode.
+    * @param {DataTableRowData<TValue>} data - Editing row data.
+    */
   var rowEditValidator: js.UndefOr[
-    js.Function2[/* data */ Any, /* options */ DataTableRowEditValidatorOptions, Boolean]
+    js.Function2[
+      /* data */ DataTableRowData[TValue], 
+      /* options */ DataTableRowEditValidatorOptions[TValue], 
+      js.UndefOr[Boolean]
+    ]
   ] = js.undefined
   
+  /**
+    * Icon to display in the row editor cancel button.
+    */
+  var rowEditorCancelIcon: js.UndefOr[IconType[DataTableProps[TValue]]] = js.undefined
+  
+  /**
+    * Icon to display in the row editor init button.
+    */
+  var rowEditorInitIcon: js.UndefOr[IconType[DataTableProps[TValue]]] = js.undefined
+  
+  /**
+    * Icon to display in the row editor save button.
+    */
+  var rowEditorSaveIcon: js.UndefOr[IconType[DataTableProps[TValue]]] = js.undefined
+  
+  /**
+    * Function that receives the row data as the parameter and returns the expanded row content. You can override the rendering of the content by setting options.customRendering = true.
+    * @param {DataTableRowData<TValue>} data - Editing row data.
+    * @param {DataTableRowExpansionTemplate} options - Options for the row expansion template.
+    */
   var rowExpansionTemplate: js.UndefOr[
-    js.Function2[/* data */ Any, /* options */ DataTableRowExpansionTemplate, ReactNode]
+    js.Function2[
+      /* data */ DataTableRowData[TValue], 
+      /* options */ DataTableRowExpansionTemplate, 
+      ReactNode
+    ]
   ] = js.undefined
   
-  var rowGroupFooterTemplate: js.UndefOr[DataTableRowGroupFooterTemplateType] = js.undefined
+  /**
+    * Function to provide the content of row group footer.
+    */
+  var rowGroupFooterTemplate: js.UndefOr[DataTableRowGroupFooterTemplateType[TValue]] = js.undefined
   
-  var rowGroupHeaderTemplate: js.UndefOr[DataTableRowGroupHeaderTemplateType] = js.undefined
+  /**
+    * Function to provide the content of row group header.
+    */
+  var rowGroupHeaderTemplate: js.UndefOr[DataTableRowGroupHeaderTemplateType[TValue]] = js.undefined
   
+  /**
+    * Defines the row grouping mode, valid values are "subheader" and "rowgroup".
+    */
   var rowGroupMode: js.UndefOr[String] = js.undefined
   
+  /**
+    * When enabled, background of the rows change on hover.
+    */
   var rowHover: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Number of rows to display per page.
+    */
   var rows: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Array of integer values to display inside rows per page dropdown.
+    */
   var rowsPerPageOptions: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var scrollDirection: js.UndefOr[DataTableScrollDirectionType] = js.undefined
-  
+  /**
+    * Height of the scroll viewport.
+    */
   var scrollHeight: js.UndefOr[String] = js.undefined
   
+  /**
+    * When specified, enables horizontal and/or vertical scrolling.
+    * @defaultValue false
+    */
   var scrollable: js.UndefOr[Boolean] = js.undefined
   
   var security: js.UndefOr[String] = js.undefined
   
+  /**
+    * When specified, selects all rows on page.
+    * @defaultValue false
+    */
   var selectAll: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Determines whether the cell editor will be opened when clicking to select any row on Selection and Cell Edit modes.
+    * @defaultValue true
+    */
   var selectOnEdit: js.UndefOr[Boolean] = js.undefined
   
-  var selection: js.UndefOr[Any | js.Array[Any]] = js.undefined
+  /**
+    * Selected row in single mode or an array of values in multiple mode.
+    * @defaultValue true
+    */
+  var selection: js.UndefOr[DataTableSelection[TValue]] = js.undefined
   
+  /**
+    * A field property from the row to add Select &#123;field&#125; and Unselect &#123;field&#125; ARIA labels to checkbox/radio buttons.
+    */
   var selectionAriaLabel: js.UndefOr[String] = js.undefined
   
+  /**
+    * When a selectable row is clicked on RadioButton and Checkbox selection, it automatically decides whether to focus on elements such as checkbox or radio.
+    * @defaultValue true
+    */
   var selectionAutoFocus: js.UndefOr[Boolean] = js.undefined
   
-  var selectionMode: js.UndefOr[DataTableSelectionModeType] = js.undefined
+  /**
+    * Specifies the selection mode, valid values are "single", "multiple", "radiobutton" and "checkbox".
+    */
+  var selectionMode: js.UndefOr[single | multiple | checkbox | radiobutton] = js.undefined
   
+  /**
+    * When enabled with paginator and checkbox selection mode, the select all checkbox in the header will select all rows on the current page.
+    * @defaultValue false
+    */
   var selectionPageOnly: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Whether to show grid lines between cells.
+    * @defaultValue false
+    */
   var showGridlines: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Function that returns a boolean by passing the row data to decide if the row reorder element should be displayed per row.
+    * @param {DataTableRowData<TValue>} data - Editing row data.
+    * @param {DataTableShowRowReorderElementOptions} options - Options for the row reorder element.
+    */
   var showRowReorderElement: js.UndefOr[
     js.Function2[
-      /* data */ Any, 
-      /* options */ DataTableShowRowReorderElementOptions, 
+      /* data */ DataTableRowData[TValue], 
+      /* options */ DataTableShowRowReorderElementOptions[TValue], 
       js.UndefOr[Boolean | Null]
     ]
   ] = js.undefined
   
+  /**
+    * Whether to show the select all checkbox inside the datatable's header.
+    */
   var showSelectAll: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Function that returns a boolean by passing the row data to decide if the radio or checkbox should be displayed per row.
+    * @param {DataTableRowData<TValue>} data - Editing row data.
+    * @param {DataTableShowSelectionElementOptions} options - Options for the row reorder element.
+    */
   var showSelectionElement: js.UndefOr[
     js.Function2[
-      /* data */ Any, 
-      /* options */ DataTableShowSelectionElementOptions, 
+      /* data */ DataTableRowData[TValue], 
+      /* options */ DataTableShowSelectionElementOptions[TValue], 
       js.UndefOr[Boolean | Null]
     ]
   ] = js.undefined
   
-  var size: js.UndefOr[DataTableSizeType] = js.undefined
+  /**
+    * Define to set alternative sizes. Valid values: "small", "normal" and "large".
+    * @defaultValue normal
+    */
+  var size: js.UndefOr[small | normal | large] = js.undefined
   
   var slot: js.UndefOr[String] = js.undefined
   
+  /**
+    * Property of a row data used for sorting, defaults to field.
+    */
   var sortField: js.UndefOr[String] = js.undefined
   
-  var sortMode: js.UndefOr[DataTableSortModeType] = js.undefined
+  /**
+    * Icon to display the current sorting status.
+    */
+  var sortIcon: js.UndefOr[IconType[DataTable[TValue]]] = js.undefined
   
-  var sortOrder: js.UndefOr[DataTableSortOrderType] = js.undefined
+  /**
+    * Defines whether sorting works on single column or on multiple columns.
+    * @defaultValue single
+    */
+  var sortMode: js.UndefOr[single | multiple] = js.undefined
+  
+  /**
+    * Order to sort the data by default.
+    */
+  var sortOrder: js.UndefOr[`1` | `0` | `-1` | Null] = js.undefined
   
   var spellCheck: js.UndefOr[Booleanish] = js.undefined
   
   var src: js.UndefOr[String] = js.undefined
   
+  /**
+    * Unique identifier of a stateful table to use in state storage.
+    */
   var stateKey: js.UndefOr[String] = js.undefined
   
-  var stateStorage: js.UndefOr[DataTableStateStorageType] = js.undefined
+  /**
+    * Defines where a stateful table keeps its state, valid values are "session" for sessionStorage, "local" for localStorage and "custom".
+    * @defaultValue session
+    */
+  var stateStorage: js.UndefOr[session | local | custom] = js.undefined
   
   var step: js.UndefOr[Double | String] = js.undefined
   
+  /**
+    * Whether to displays rows with alternating colors.
+    * @defaultValue false
+    */
   var stripedRows: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Inline style of the component.
+    */
   var style: js.UndefOr[CSSProperties] = js.undefined
   
   var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
   
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Index of the element in tabbing order.
+    */
   var tabIndex: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Style class of the table element.
+    */
   var tableClassName: js.UndefOr[String] = js.undefined
   
+  /**
+    * Inline style of the table element.
+    */
   var tableStyle: js.UndefOr[CSSProperties] = js.undefined
   
   var title: js.UndefOr[String] = js.undefined
   
+  /**
+    * Number of total records, defaults to length of value when not defined.
+    */
   var totalRecords: js.UndefOr[Double] = js.undefined
   
   var translate: js.UndefOr[yes | no] = js.undefined
@@ -786,8 +1361,16 @@ trait DataTableProps extends StObject {
   
   var unselectable: js.UndefOr[on | off] = js.undefined
   
-  var value: js.UndefOr[js.Array[Any]] = js.undefined
+  /**
+    * An array of objects to display.
+    */
+  var value: js.UndefOr[TValue] = js.undefined
   
+  /**
+    * Whether to use the virtualScroller feature. The properties of VirtualScroller component can be used like an object in it.
+    *
+    * Note: Currently only vertical orientation mode is supported.
+    */
   var virtualScrollerOptions: js.UndefOr[VirtualScrollerProps] = js.undefined
   
   var vocab: js.UndefOr[String] = js.undefined
@@ -796,13 +1379,13 @@ trait DataTableProps extends StObject {
 }
 object DataTableProps {
   
-  inline def apply(): DataTableProps = {
+  inline def apply[TValue /* <: DataTableValueArray */](): DataTableProps[TValue] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[DataTableProps]
+    __obj.asInstanceOf[DataTableProps[TValue]]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: DataTableProps] (val x: Self) extends AnyVal {
+  implicit open class MutableBuilder[Self <: DataTableProps[?], TValue /* <: DataTableValueArray */] (val x: Self & DataTableProps[TValue]) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     
@@ -1034,10 +1617,6 @@ object DataTableProps {
     
     inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
     
-    inline def setAutoLayout(value: Boolean): Self = StObject.set(x, "autoLayout", value.asInstanceOf[js.Any])
-    
-    inline def setAutoLayoutUndefined: Self = StObject.set(x, "autoLayout", js.undefined)
-    
     inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
     
     inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -1050,13 +1629,21 @@ object DataTableProps {
     
     inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     
-    inline def setCellClassName(value: (/* value */ Any, /* options */ DataTableCellClassNameOptions) => js.Object | String): Self = StObject.set(x, "cellClassName", js.Any.fromFunction2(value))
+    inline def setCellClassName(
+      value: (/* value */ Any, /* options */ DataTableCellClassNameOptions[TValue]) => js.UndefOr[js.Object | String]
+    ): Self = StObject.set(x, "cellClassName", js.Any.fromFunction2(value))
     
     inline def setCellClassNameUndefined: Self = StObject.set(x, "cellClassName", js.undefined)
     
     inline def setCellSelection(value: Boolean): Self = StObject.set(x, "cellSelection", value.asInstanceOf[js.Any])
     
     inline def setCellSelectionUndefined: Self = StObject.set(x, "cellSelection", js.undefined)
+    
+    inline def setCheckIcon(value: IconType[DataTableProps[TValue]]): Self = StObject.set(x, "checkIcon", value.asInstanceOf[js.Any])
+    
+    inline def setCheckIconFunction1(value: /* options */ IconOptions[DataTableProps[TValue]] => ReactNode): Self = StObject.set(x, "checkIcon", js.Any.fromFunction1(value))
+    
+    inline def setCheckIconUndefined: Self = StObject.set(x, "checkIcon", js.undefined)
     
     inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
@@ -1070,7 +1657,9 @@ object DataTableProps {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setCollapsedRowIcon(value: String): Self = StObject.set(x, "collapsedRowIcon", value.asInstanceOf[js.Any])
+    inline def setCollapsedRowIcon(value: IconType[DataTableProps[TValue]]): Self = StObject.set(x, "collapsedRowIcon", value.asInstanceOf[js.Any])
+    
+    inline def setCollapsedRowIconFunction1(value: /* options */ IconOptions[DataTableProps[TValue]] => ReactNode): Self = StObject.set(x, "collapsedRowIcon", js.Any.fromFunction1(value))
     
     inline def setCollapsedRowIconUndefined: Self = StObject.set(x, "collapsedRowIcon", js.undefined)
     
@@ -1078,17 +1667,21 @@ object DataTableProps {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setColumnResizeMode(value: DataTableColumnResizeModeType): Self = StObject.set(x, "columnResizeMode", value.asInstanceOf[js.Any])
+    inline def setColumnResizeMode(value: fit | expand): Self = StObject.set(x, "columnResizeMode", value.asInstanceOf[js.Any])
     
     inline def setColumnResizeModeUndefined: Self = StObject.set(x, "columnResizeMode", js.undefined)
     
-    inline def setCompareSelectionBy(value: DataTableCompareSelectionByType): Self = StObject.set(x, "compareSelectionBy", value.asInstanceOf[js.Any])
+    inline def setCompareSelectionBy(value: deepEquals | equals): Self = StObject.set(x, "compareSelectionBy", value.asInstanceOf[js.Any])
     
     inline def setCompareSelectionByUndefined: Self = StObject.set(x, "compareSelectionBy", js.undefined)
+    
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
@@ -1098,7 +1691,7 @@ object DataTableProps {
     
     inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
     
-    inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+    inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
@@ -1110,7 +1703,7 @@ object DataTableProps {
     
     inline def setCurrentPageReportTemplateUndefined: Self = StObject.set(x, "currentPageReportTemplate", js.undefined)
     
-    inline def setCustomRestoreState(value: () => js.Object): Self = StObject.set(x, "customRestoreState", js.Any.fromFunction0(value))
+    inline def setCustomRestoreState(value: () => js.UndefOr[js.Object]): Self = StObject.set(x, "customRestoreState", js.Any.fromFunction0(value))
     
     inline def setCustomRestoreStateUndefined: Self = StObject.set(x, "customRestoreState", js.undefined)
     
@@ -1134,7 +1727,7 @@ object DataTableProps {
     
     inline def setDefaultCheckedUndefined: Self = StObject.set(x, "defaultChecked", js.undefined)
     
-    inline def setDefaultSortOrder(value: DataTableSortOrderType): Self = StObject.set(x, "defaultSortOrder", value.asInstanceOf[js.Any])
+    inline def setDefaultSortOrder(value: `1` | `0` | `-1`): Self = StObject.set(x, "defaultSortOrder", value.asInstanceOf[js.Any])
     
     inline def setDefaultSortOrderNull: Self = StObject.set(x, "defaultSortOrder", null)
     
@@ -1166,13 +1759,13 @@ object DataTableProps {
     
     inline def setEditModeUndefined: Self = StObject.set(x, "editMode", js.undefined)
     
-    inline def setEditingRows(value: js.Array[Any] | DataTableEditingRows): Self = StObject.set(x, "editingRows", value.asInstanceOf[js.Any])
+    inline def setEditingRows(value: DataTableValueArray | DataTableEditingRows): Self = StObject.set(x, "editingRows", value.asInstanceOf[js.Any])
     
     inline def setEditingRowsUndefined: Self = StObject.set(x, "editingRows", js.undefined)
     
-    inline def setEditingRowsVarargs(value: Any*): Self = StObject.set(x, "editingRows", js.Array(value*))
+    inline def setEditingRowsVarargs(value: DataTableValue*): Self = StObject.set(x, "editingRows", js.Array(value*))
     
-    inline def setEmptyMessage(value: DataTableEmptyMessageType): Self = StObject.set(x, "emptyMessage", value.asInstanceOf[js.Any])
+    inline def setEmptyMessage(value: ReactNode | (js.Function1[/* frozen */ Boolean, ReactNode])): Self = StObject.set(x, "emptyMessage", value.asInstanceOf[js.Any])
     
     inline def setEmptyMessageFunction1(value: /* frozen */ Boolean => ReactNode): Self = StObject.set(x, "emptyMessage", js.Any.fromFunction1(value))
     
@@ -1186,21 +1779,23 @@ object DataTableProps {
     
     inline def setExpandableRowGroupsUndefined: Self = StObject.set(x, "expandableRowGroups", js.undefined)
     
-    inline def setExpandedRowIcon(value: String): Self = StObject.set(x, "expandedRowIcon", value.asInstanceOf[js.Any])
+    inline def setExpandedRowIcon(value: IconType[DataTableProps[TValue]]): Self = StObject.set(x, "expandedRowIcon", value.asInstanceOf[js.Any])
+    
+    inline def setExpandedRowIconFunction1(value: /* options */ IconOptions[DataTableProps[TValue]] => ReactNode): Self = StObject.set(x, "expandedRowIcon", js.Any.fromFunction1(value))
     
     inline def setExpandedRowIconUndefined: Self = StObject.set(x, "expandedRowIcon", js.undefined)
     
-    inline def setExpandedRows(value: js.Array[Any] | DataTableExpandedRows): Self = StObject.set(x, "expandedRows", value.asInstanceOf[js.Any])
+    inline def setExpandedRows(value: DataTableValueArray | DataTableExpandedRows): Self = StObject.set(x, "expandedRows", value.asInstanceOf[js.Any])
     
     inline def setExpandedRowsUndefined: Self = StObject.set(x, "expandedRows", js.undefined)
     
-    inline def setExpandedRowsVarargs(value: Any*): Self = StObject.set(x, "expandedRows", js.Array(value*))
+    inline def setExpandedRowsVarargs(value: DataTableValue*): Self = StObject.set(x, "expandedRows", js.Array(value*))
     
     inline def setExportFilename(value: String): Self = StObject.set(x, "exportFilename", value.asInstanceOf[js.Any])
     
     inline def setExportFilenameUndefined: Self = StObject.set(x, "exportFilename", js.undefined)
     
-    inline def setExportFunction(value: /* e */ DataTableExportFunctionParams => Any): Self = StObject.set(x, "exportFunction", js.Any.fromFunction1(value))
+    inline def setExportFunction(value: /* event */ DataTableExportFunctionEvent[TValue] => Any): Self = StObject.set(x, "exportFunction", js.Any.fromFunction1(value))
     
     inline def setExportFunctionUndefined: Self = StObject.set(x, "exportFunction", js.undefined)
     
@@ -1208,7 +1803,7 @@ object DataTableProps {
     
     inline def setFilterDelayUndefined: Self = StObject.set(x, "filterDelay", js.undefined)
     
-    inline def setFilterDisplay(value: DataTableFilterDisplayType): Self = StObject.set(x, "filterDisplay", value.asInstanceOf[js.Any])
+    inline def setFilterDisplay(value: menu | row): Self = StObject.set(x, "filterDisplay", value.asInstanceOf[js.Any])
     
     inline def setFilterDisplayUndefined: Self = StObject.set(x, "filterDisplay", js.undefined)
     
@@ -1224,19 +1819,21 @@ object DataTableProps {
     
     inline def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
     
-    inline def setFooter(value: DataTableFooterTemplateType): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+    inline def setFooter(value: DataTableFooterTemplateType[TValue]): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
     inline def setFooterColumnGroup(value: ReactNode): Self = StObject.set(x, "footerColumnGroup", value.asInstanceOf[js.Any])
     
     inline def setFooterColumnGroupUndefined: Self = StObject.set(x, "footerColumnGroup", js.undefined)
     
-    inline def setFooterFunction1(value: /* options */ DataTableFooterTemplateOptions => ReactNode): Self = StObject.set(x, "footer", js.Any.fromFunction1(value))
+    inline def setFooterFunction1(value: /* options */ DataTableFooterTemplateOptions[TValue] => ReactNode): Self = StObject.set(x, "footer", js.Any.fromFunction1(value))
     
     inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     
     inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
-    inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+    inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+    
+    inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
     
     inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
     
@@ -1258,17 +1855,17 @@ object DataTableProps {
     
     inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
     
-    inline def setFrozenValue(value: js.Array[Any]): Self = StObject.set(x, "frozenValue", value.asInstanceOf[js.Any])
+    inline def setFrozenValue(value: DataTableRowDataArray[TValue]): Self = StObject.set(x, "frozenValue", value.asInstanceOf[js.Any])
     
     inline def setFrozenValueUndefined: Self = StObject.set(x, "frozenValue", js.undefined)
     
-    inline def setFrozenValueVarargs(value: Any*): Self = StObject.set(x, "frozenValue", js.Array(value*))
+    inline def setFrozenValueVarargs(value: DataTableRowData[TValue]*): Self = StObject.set(x, "frozenValue", js.Array(value*))
     
     inline def setFrozenWidth(value: String): Self = StObject.set(x, "frozenWidth", value.asInstanceOf[js.Any])
     
     inline def setFrozenWidthUndefined: Self = StObject.set(x, "frozenWidth", js.undefined)
     
-    inline def setGlobalFilter(value: DataTableGlobalFilterType): Self = StObject.set(x, "globalFilter", value.asInstanceOf[js.Any])
+    inline def setGlobalFilter(value: String): Self = StObject.set(x, "globalFilter", value.asInstanceOf[js.Any])
     
     inline def setGlobalFilterFields(value: js.Array[String]): Self = StObject.set(x, "globalFilterFields", value.asInstanceOf[js.Any])
     
@@ -1276,9 +1873,7 @@ object DataTableProps {
     
     inline def setGlobalFilterFieldsVarargs(value: String*): Self = StObject.set(x, "globalFilterFields", js.Array(value*))
     
-    inline def setGlobalFilterMatchMode(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColumnFilterMatchModeType */ Any
-    ): Self = StObject.set(x, "globalFilterMatchMode", value.asInstanceOf[js.Any])
+    inline def setGlobalFilterMatchMode(value: startsWith | contains | endsWith | equals | notEquals | in | lt | lte | gt | gte | custom): Self = StObject.set(x, "globalFilterMatchMode", value.asInstanceOf[js.Any])
     
     inline def setGlobalFilterMatchModeUndefined: Self = StObject.set(x, "globalFilterMatchMode", js.undefined)
     
@@ -1290,13 +1885,13 @@ object DataTableProps {
     
     inline def setGroupRowsByUndefined: Self = StObject.set(x, "groupRowsBy", js.undefined)
     
-    inline def setHeader(value: DataTableHeaderTemplateType): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: DataTableHeaderTemplateType[TValue]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     inline def setHeaderColumnGroup(value: ReactNode): Self = StObject.set(x, "headerColumnGroup", value.asInstanceOf[js.Any])
     
     inline def setHeaderColumnGroupUndefined: Self = StObject.set(x, "headerColumnGroup", js.undefined)
     
-    inline def setHeaderFunction1(value: /* options */ DataTableHeaderTemplateOptions => ReactNode): Self = StObject.set(x, "header", js.Any.fromFunction1(value))
+    inline def setHeaderFunction1(value: /* options */ DataTableHeaderTemplateOptions[TValue] => ReactNode): Self = StObject.set(x, "header", js.Any.fromFunction1(value))
     
     inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
@@ -1322,7 +1917,7 @@ object DataTableProps {
     
     inline def setIs(value: String): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
     
-    inline def setIsDataSelectable(value: /* e */ DataTableDataSelectableParams => js.UndefOr[Boolean | Null]): Self = StObject.set(x, "isDataSelectable", js.Any.fromFunction1(value))
+    inline def setIsDataSelectable(value: /* event */ DataTableDataSelectableEvent[TValue] => js.UndefOr[Boolean | Null]): Self = StObject.set(x, "isDataSelectable", js.Any.fromFunction1(value))
     
     inline def setIsDataSelectableUndefined: Self = StObject.set(x, "isDataSelectable", js.undefined)
     
@@ -1368,7 +1963,9 @@ object DataTableProps {
     
     inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
-    inline def setLoadingIcon(value: String): Self = StObject.set(x, "loadingIcon", value.asInstanceOf[js.Any])
+    inline def setLoadingIcon(value: IconType[DataTableProps[TValue]]): Self = StObject.set(x, "loadingIcon", value.asInstanceOf[js.Any])
+    
+    inline def setLoadingIconFunction1(value: /* options */ IconOptions[DataTableProps[TValue]] => ReactNode): Self = StObject.set(x, "loadingIcon", js.Any.fromFunction1(value))
     
     inline def setLoadingIconUndefined: Self = StObject.set(x, "loadingIcon", js.undefined)
     
@@ -1394,7 +1991,7 @@ object DataTableProps {
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    inline def setMultiSortMeta(value: DataTableMultiSortMetaType): Self = StObject.set(x, "multiSortMeta", value.asInstanceOf[js.Any])
+    inline def setMultiSortMeta(value: js.Array[DataTableSortMeta]): Self = StObject.set(x, "multiSortMeta", value.asInstanceOf[js.Any])
     
     inline def setMultiSortMetaNull: Self = StObject.set(x, "multiSortMeta", null)
     
@@ -1418,11 +2015,11 @@ object DataTableProps {
     
     inline def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
     
-    inline def setOnAllRowsSelect(value: /* e */ DataTableSelectParams => Unit): Self = StObject.set(x, "onAllRowsSelect", js.Any.fromFunction1(value))
+    inline def setOnAllRowsSelect(value: /* event */ DataTableSelectEvent => Unit): Self = StObject.set(x, "onAllRowsSelect", js.Any.fromFunction1(value))
     
     inline def setOnAllRowsSelectUndefined: Self = StObject.set(x, "onAllRowsSelect", js.undefined)
     
-    inline def setOnAllRowsUnselect(value: /* e */ DataTableUnselectParams => Unit): Self = StObject.set(x, "onAllRowsUnselect", js.Any.fromFunction1(value))
+    inline def setOnAllRowsUnselect(value: /* event */ DataTableUnselectEvent => Unit): Self = StObject.set(x, "onAllRowsUnselect", js.Any.fromFunction1(value))
     
     inline def setOnAllRowsUnselectUndefined: Self = StObject.set(x, "onAllRowsUnselect", js.undefined)
     
@@ -1458,15 +2055,15 @@ object DataTableProps {
     
     inline def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
     
-    inline def setOnCellClick(value: /* e */ DataTableCellClickEventParams => Unit): Self = StObject.set(x, "onCellClick", js.Any.fromFunction1(value))
+    inline def setOnCellClick(value: /* event */ DataTableCellClickEvent[TValue] => Unit): Self = StObject.set(x, "onCellClick", js.Any.fromFunction1(value))
     
     inline def setOnCellClickUndefined: Self = StObject.set(x, "onCellClick", js.undefined)
     
-    inline def setOnCellSelect(value: /* e */ DataTableSelectParams => Unit): Self = StObject.set(x, "onCellSelect", js.Any.fromFunction1(value))
+    inline def setOnCellSelect(value: /* event */ DataTableSelectEvent => Unit): Self = StObject.set(x, "onCellSelect", js.Any.fromFunction1(value))
     
     inline def setOnCellSelectUndefined: Self = StObject.set(x, "onCellSelect", js.undefined)
     
-    inline def setOnCellUnselect(value: /* e */ DataTableUnselectParams => Unit): Self = StObject.set(x, "onCellUnselect", js.Any.fromFunction1(value))
+    inline def setOnCellUnselect(value: /* event */ DataTableUnselectEvent => Unit): Self = StObject.set(x, "onCellUnselect", js.Any.fromFunction1(value))
     
     inline def setOnCellUnselectUndefined: Self = StObject.set(x, "onCellUnselect", js.undefined)
     
@@ -1478,19 +2075,19 @@ object DataTableProps {
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    inline def setOnColReorder(value: /* e */ DataTableColReorderParams => Unit): Self = StObject.set(x, "onColReorder", js.Any.fromFunction1(value))
+    inline def setOnColReorder(value: /* event */ DataTableColReorderEvent => Unit): Self = StObject.set(x, "onColReorder", js.Any.fromFunction1(value))
     
     inline def setOnColReorderUndefined: Self = StObject.set(x, "onColReorder", js.undefined)
     
-    inline def setOnColumnResizeEnd(value: /* e */ DataTableColumnResizeEndParams => Unit): Self = StObject.set(x, "onColumnResizeEnd", js.Any.fromFunction1(value))
+    inline def setOnColumnResizeEnd(value: /* event */ DataTableColumnResizeEndEvent => Unit): Self = StObject.set(x, "onColumnResizeEnd", js.Any.fromFunction1(value))
     
     inline def setOnColumnResizeEndUndefined: Self = StObject.set(x, "onColumnResizeEnd", js.undefined)
     
-    inline def setOnColumnResizerClick(value: /* e */ DataTableColumnResizerClickParams => Unit): Self = StObject.set(x, "onColumnResizerClick", js.Any.fromFunction1(value))
+    inline def setOnColumnResizerClick(value: /* event */ DataTableColumnResizerClickEvent => Unit): Self = StObject.set(x, "onColumnResizerClick", js.Any.fromFunction1(value))
     
     inline def setOnColumnResizerClickUndefined: Self = StObject.set(x, "onColumnResizerClick", js.undefined)
     
-    inline def setOnColumnResizerDoubleClick(value: /* e */ DataTableColumnResizerClickParams => Unit): Self = StObject.set(x, "onColumnResizerDoubleClick", js.Any.fromFunction1(value))
+    inline def setOnColumnResizerDoubleClick(value: /* event */ DataTableColumnResizerClickEvent => Unit): Self = StObject.set(x, "onColumnResizerDoubleClick", js.Any.fromFunction1(value))
     
     inline def setOnColumnResizerDoubleClickUndefined: Self = StObject.set(x, "onColumnResizerDoubleClick", js.undefined)
     
@@ -1506,9 +2103,9 @@ object DataTableProps {
     
     inline def setOnCompositionUpdateUndefined: Self = StObject.set(x, "onCompositionUpdate", js.undefined)
     
-    inline def setOnContextMenu(value: /* e */ DataTableRowEventParams => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
+    inline def setOnContextMenu(value: /* event */ DataTableRowEvent => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
     
-    inline def setOnContextMenuSelectionChange(value: /* e */ DataTableSelectionChangeParams => Unit): Self = StObject.set(x, "onContextMenuSelectionChange", js.Any.fromFunction1(value))
+    inline def setOnContextMenuSelectionChange(value: /* event */ DataTableContextMenuSelectionChangeEvent[TValue] => Unit): Self = StObject.set(x, "onContextMenuSelectionChange", js.Any.fromFunction1(value))
     
     inline def setOnContextMenuSelectionChangeUndefined: Self = StObject.set(x, "onContextMenuSelectionChange", js.undefined)
     
@@ -1578,7 +2175,7 @@ object DataTableProps {
     
     inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    inline def setOnFilter(value: /* e */ DataTablePFSEvent => Unit): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
+    inline def setOnFilter(value: /* event */ DataTableStateEvent => Unit): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
     
     inline def setOnFilterUndefined: Self = StObject.set(x, "onFilter", js.undefined)
     
@@ -1650,7 +2247,7 @@ object DataTableProps {
     
     inline def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
     
-    inline def setOnPage(value: /* e */ DataTablePFSEvent => Unit): Self = StObject.set(x, "onPage", js.Any.fromFunction1(value))
+    inline def setOnPage(value: /* event */ DataTableStateEvent => Unit): Self = StObject.set(x, "onPage", js.Any.fromFunction1(value))
     
     inline def setOnPageUndefined: Self = StObject.set(x, "onPage", js.undefined)
     
@@ -1718,55 +2315,63 @@ object DataTableProps {
     
     inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
-    inline def setOnRowClick(value: /* e */ DataTableRowClickEventParams => Unit): Self = StObject.set(x, "onRowClick", js.Any.fromFunction1(value))
+    inline def setOnRowClick(value: /* event */ DataTableRowClickEvent => Unit): Self = StObject.set(x, "onRowClick", js.Any.fromFunction1(value))
     
     inline def setOnRowClickUndefined: Self = StObject.set(x, "onRowClick", js.undefined)
     
-    inline def setOnRowCollapse(value: /* e */ DataTableRowEventParams => Unit): Self = StObject.set(x, "onRowCollapse", js.Any.fromFunction1(value))
+    inline def setOnRowCollapse(value: /* event */ DataTableRowEvent => Unit): Self = StObject.set(x, "onRowCollapse", js.Any.fromFunction1(value))
     
     inline def setOnRowCollapseUndefined: Self = StObject.set(x, "onRowCollapse", js.undefined)
     
-    inline def setOnRowDoubleClick(value: /* e */ DataTableRowClickEventParams => Unit): Self = StObject.set(x, "onRowDoubleClick", js.Any.fromFunction1(value))
+    inline def setOnRowDoubleClick(value: /* event */ DataTableRowClickEvent => Unit): Self = StObject.set(x, "onRowDoubleClick", js.Any.fromFunction1(value))
     
     inline def setOnRowDoubleClickUndefined: Self = StObject.set(x, "onRowDoubleClick", js.undefined)
     
-    inline def setOnRowEditCancel(value: /* e */ DataTableRowEditParams => Unit): Self = StObject.set(x, "onRowEditCancel", js.Any.fromFunction1(value))
+    inline def setOnRowEditCancel(value: /* event */ DataTableRowEditEvent => Unit): Self = StObject.set(x, "onRowEditCancel", js.Any.fromFunction1(value))
     
     inline def setOnRowEditCancelUndefined: Self = StObject.set(x, "onRowEditCancel", js.undefined)
     
-    inline def setOnRowEditChange(value: /* e */ DataTableRowEditParams => Unit): Self = StObject.set(x, "onRowEditChange", js.Any.fromFunction1(value))
+    inline def setOnRowEditChange(value: /* event */ DataTableRowEditEvent => Unit): Self = StObject.set(x, "onRowEditChange", js.Any.fromFunction1(value))
     
     inline def setOnRowEditChangeUndefined: Self = StObject.set(x, "onRowEditChange", js.undefined)
     
-    inline def setOnRowEditComplete(value: /* e */ DataTableRowEditCompleteParams => Unit): Self = StObject.set(x, "onRowEditComplete", js.Any.fromFunction1(value))
+    inline def setOnRowEditComplete(value: /* event */ DataTableRowEditCompleteEvent => Unit): Self = StObject.set(x, "onRowEditComplete", js.Any.fromFunction1(value))
     
     inline def setOnRowEditCompleteUndefined: Self = StObject.set(x, "onRowEditComplete", js.undefined)
     
-    inline def setOnRowEditInit(value: /* e */ DataTableRowEditParams => Unit): Self = StObject.set(x, "onRowEditInit", js.Any.fromFunction1(value))
+    inline def setOnRowEditInit(value: /* event */ DataTableRowEditEvent => Unit): Self = StObject.set(x, "onRowEditInit", js.Any.fromFunction1(value))
     
     inline def setOnRowEditInitUndefined: Self = StObject.set(x, "onRowEditInit", js.undefined)
     
-    inline def setOnRowEditSave(value: /* e */ DataTableRowEditSaveParams => Unit): Self = StObject.set(x, "onRowEditSave", js.Any.fromFunction1(value))
+    inline def setOnRowEditSave(value: /* event */ DataTableRowEditSaveEvent => Unit): Self = StObject.set(x, "onRowEditSave", js.Any.fromFunction1(value))
     
     inline def setOnRowEditSaveUndefined: Self = StObject.set(x, "onRowEditSave", js.undefined)
     
-    inline def setOnRowExpand(value: /* e */ DataTableRowEventParams => Unit): Self = StObject.set(x, "onRowExpand", js.Any.fromFunction1(value))
+    inline def setOnRowExpand(value: /* event */ DataTableRowEvent => Unit): Self = StObject.set(x, "onRowExpand", js.Any.fromFunction1(value))
     
     inline def setOnRowExpandUndefined: Self = StObject.set(x, "onRowExpand", js.undefined)
     
-    inline def setOnRowReorder(value: /* e */ DataTableRowReorderParams => Unit): Self = StObject.set(x, "onRowReorder", js.Any.fromFunction1(value))
+    inline def setOnRowMouseEnter(value: /* event */ DataTableRowMouseEvent => Unit): Self = StObject.set(x, "onRowMouseEnter", js.Any.fromFunction1(value))
+    
+    inline def setOnRowMouseEnterUndefined: Self = StObject.set(x, "onRowMouseEnter", js.undefined)
+    
+    inline def setOnRowMouseLeave(value: /* event */ DataTableRowMouseEvent => Unit): Self = StObject.set(x, "onRowMouseLeave", js.Any.fromFunction1(value))
+    
+    inline def setOnRowMouseLeaveUndefined: Self = StObject.set(x, "onRowMouseLeave", js.undefined)
+    
+    inline def setOnRowReorder(value: /* event */ DataTableRowReorderEvent[TValue] => Unit): Self = StObject.set(x, "onRowReorder", js.Any.fromFunction1(value))
     
     inline def setOnRowReorderUndefined: Self = StObject.set(x, "onRowReorder", js.undefined)
     
-    inline def setOnRowSelect(value: /* e */ DataTableSelectParams => Unit): Self = StObject.set(x, "onRowSelect", js.Any.fromFunction1(value))
+    inline def setOnRowSelect(value: /* event */ DataTableSelectEvent => Unit): Self = StObject.set(x, "onRowSelect", js.Any.fromFunction1(value))
     
     inline def setOnRowSelectUndefined: Self = StObject.set(x, "onRowSelect", js.undefined)
     
-    inline def setOnRowToggle(value: /* e */ DataTableRowToggleParams => Unit): Self = StObject.set(x, "onRowToggle", js.Any.fromFunction1(value))
+    inline def setOnRowToggle(value: /* event */ DataTableRowToggleEvent => Unit): Self = StObject.set(x, "onRowToggle", js.Any.fromFunction1(value))
     
     inline def setOnRowToggleUndefined: Self = StObject.set(x, "onRowToggle", js.undefined)
     
-    inline def setOnRowUnselect(value: /* e */ DataTableUnselectParams => Unit): Self = StObject.set(x, "onRowUnselect", js.Any.fromFunction1(value))
+    inline def setOnRowUnselect(value: /* event */ DataTableUnselectEvent => Unit): Self = StObject.set(x, "onRowUnselect", js.Any.fromFunction1(value))
     
     inline def setOnRowUnselectUndefined: Self = StObject.set(x, "onRowUnselect", js.undefined)
     
@@ -1784,17 +2389,17 @@ object DataTableProps {
     
     inline def setOnSelect(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
     
-    inline def setOnSelectAllChange(value: /* e */ DataTableSelectAllChangeParams => Unit): Self = StObject.set(x, "onSelectAllChange", js.Any.fromFunction1(value))
+    inline def setOnSelectAllChange(value: /* event */ DataTableSelectAllChangeEvent => Unit): Self = StObject.set(x, "onSelectAllChange", js.Any.fromFunction1(value))
     
     inline def setOnSelectAllChangeUndefined: Self = StObject.set(x, "onSelectAllChange", js.undefined)
     
     inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     
-    inline def setOnSelectionChange(value: /* e */ DataTableSelectionChangeParams => Unit): Self = StObject.set(x, "onSelectionChange", js.Any.fromFunction1(value))
+    inline def setOnSelectionChange(value: /* event */ DataTableSelectionChangeEvent[TValue] => Unit): Self = StObject.set(x, "onSelectionChange", js.Any.fromFunction1(value))
     
     inline def setOnSelectionChangeUndefined: Self = StObject.set(x, "onSelectionChange", js.undefined)
     
-    inline def setOnSort(value: /* e */ DataTablePFSEvent => Unit): Self = StObject.set(x, "onSort", js.Any.fromFunction1(value))
+    inline def setOnSort(value: /* event */ DataTableStateEvent => Unit): Self = StObject.set(x, "onSort", js.Any.fromFunction1(value))
     
     inline def setOnSortUndefined: Self = StObject.set(x, "onSort", js.undefined)
     
@@ -1842,7 +2447,7 @@ object DataTableProps {
     
     inline def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
     
-    inline def setOnValueChange(value: /* value */ js.Array[Any] => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction1(value))
+    inline def setOnValueChange(value: /* value */ DataTableRowDataArray[TValue] => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction1(value))
     
     inline def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
     
@@ -1868,7 +2473,7 @@ object DataTableProps {
     
     inline def setPaginatorClassNameUndefined: Self = StObject.set(x, "paginatorClassName", js.undefined)
     
-    inline def setPaginatorDropdownAppendTo(value: DataTableAppendToType): Self = StObject.set(x, "paginatorDropdownAppendTo", value.asInstanceOf[js.Any])
+    inline def setPaginatorDropdownAppendTo(value: self | HTMLElement): Self = StObject.set(x, "paginatorDropdownAppendTo", value.asInstanceOf[js.Any])
     
     inline def setPaginatorDropdownAppendToNull: Self = StObject.set(x, "paginatorDropdownAppendTo", null)
     
@@ -1878,7 +2483,7 @@ object DataTableProps {
     
     inline def setPaginatorLeftUndefined: Self = StObject.set(x, "paginatorLeft", js.undefined)
     
-    inline def setPaginatorPosition(value: DataTablePaginatorPositionType): Self = StObject.set(x, "paginatorPosition", value.asInstanceOf[js.Any])
+    inline def setPaginatorPosition(value: top | bottom | both): Self = StObject.set(x, "paginatorPosition", value.asInstanceOf[js.Any])
     
     inline def setPaginatorPositionUndefined: Self = StObject.set(x, "paginatorPosition", js.undefined)
     
@@ -1918,9 +2523,25 @@ object DataTableProps {
     
     inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    
     inline def setRemovableSort(value: Boolean): Self = StObject.set(x, "removableSort", value.asInstanceOf[js.Any])
     
     inline def setRemovableSortUndefined: Self = StObject.set(x, "removableSort", js.undefined)
+    
+    inline def setReorderIndicatorDownIcon(value: IconType[DataTableProps[TValue]]): Self = StObject.set(x, "reorderIndicatorDownIcon", value.asInstanceOf[js.Any])
+    
+    inline def setReorderIndicatorDownIconFunction1(value: /* options */ IconOptions[DataTableProps[TValue]] => ReactNode): Self = StObject.set(x, "reorderIndicatorDownIcon", js.Any.fromFunction1(value))
+    
+    inline def setReorderIndicatorDownIconUndefined: Self = StObject.set(x, "reorderIndicatorDownIcon", js.undefined)
+    
+    inline def setReorderIndicatorUpIcon(value: IconType[DataTableProps[TValue]]): Self = StObject.set(x, "reorderIndicatorUpIcon", value.asInstanceOf[js.Any])
+    
+    inline def setReorderIndicatorUpIconFunction1(value: /* options */ IconOptions[DataTableProps[TValue]] => ReactNode): Self = StObject.set(x, "reorderIndicatorUpIcon", js.Any.fromFunction1(value))
+    
+    inline def setReorderIndicatorUpIconUndefined: Self = StObject.set(x, "reorderIndicatorUpIcon", js.undefined)
     
     inline def setReorderableColumns(value: Boolean): Self = StObject.set(x, "reorderableColumns", value.asInstanceOf[js.Any])
     
@@ -1942,7 +2563,7 @@ object DataTableProps {
     
     inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
-    inline def setResponsiveLayout(value: DataTableResponsiveLayoutType): Self = StObject.set(x, "responsiveLayout", value.asInstanceOf[js.Any])
+    inline def setResponsiveLayout(value: scroll | stack): Self = StObject.set(x, "responsiveLayout", value.asInstanceOf[js.Any])
     
     inline def setResponsiveLayoutUndefined: Self = StObject.set(x, "responsiveLayout", js.undefined)
     
@@ -1950,31 +2571,59 @@ object DataTableProps {
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
+    
     inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    inline def setRowClassName(value: (/* data */ Any, /* options */ DataTableRowClassNameOptions) => js.Object | String): Self = StObject.set(x, "rowClassName", js.Any.fromFunction2(value))
+    inline def setRowClassName(
+      value: (/* data */ DataTableRowData[TValue], /* options */ DataTableRowClassNameOptions[TValue]) => js.UndefOr[js.Object | String]
+    ): Self = StObject.set(x, "rowClassName", js.Any.fromFunction2(value))
     
     inline def setRowClassNameUndefined: Self = StObject.set(x, "rowClassName", js.undefined)
     
-    inline def setRowEditValidator(value: (/* data */ Any, /* options */ DataTableRowEditValidatorOptions) => Boolean): Self = StObject.set(x, "rowEditValidator", js.Any.fromFunction2(value))
+    inline def setRowEditValidator(
+      value: (/* data */ DataTableRowData[TValue], /* options */ DataTableRowEditValidatorOptions[TValue]) => js.UndefOr[Boolean]
+    ): Self = StObject.set(x, "rowEditValidator", js.Any.fromFunction2(value))
     
     inline def setRowEditValidatorUndefined: Self = StObject.set(x, "rowEditValidator", js.undefined)
     
-    inline def setRowExpansionTemplate(value: (/* data */ Any, /* options */ DataTableRowExpansionTemplate) => ReactNode): Self = StObject.set(x, "rowExpansionTemplate", js.Any.fromFunction2(value))
+    inline def setRowEditorCancelIcon(value: IconType[DataTableProps[TValue]]): Self = StObject.set(x, "rowEditorCancelIcon", value.asInstanceOf[js.Any])
+    
+    inline def setRowEditorCancelIconFunction1(value: /* options */ IconOptions[DataTableProps[TValue]] => ReactNode): Self = StObject.set(x, "rowEditorCancelIcon", js.Any.fromFunction1(value))
+    
+    inline def setRowEditorCancelIconUndefined: Self = StObject.set(x, "rowEditorCancelIcon", js.undefined)
+    
+    inline def setRowEditorInitIcon(value: IconType[DataTableProps[TValue]]): Self = StObject.set(x, "rowEditorInitIcon", value.asInstanceOf[js.Any])
+    
+    inline def setRowEditorInitIconFunction1(value: /* options */ IconOptions[DataTableProps[TValue]] => ReactNode): Self = StObject.set(x, "rowEditorInitIcon", js.Any.fromFunction1(value))
+    
+    inline def setRowEditorInitIconUndefined: Self = StObject.set(x, "rowEditorInitIcon", js.undefined)
+    
+    inline def setRowEditorSaveIcon(value: IconType[DataTableProps[TValue]]): Self = StObject.set(x, "rowEditorSaveIcon", value.asInstanceOf[js.Any])
+    
+    inline def setRowEditorSaveIconFunction1(value: /* options */ IconOptions[DataTableProps[TValue]] => ReactNode): Self = StObject.set(x, "rowEditorSaveIcon", js.Any.fromFunction1(value))
+    
+    inline def setRowEditorSaveIconUndefined: Self = StObject.set(x, "rowEditorSaveIcon", js.undefined)
+    
+    inline def setRowExpansionTemplate(
+      value: (/* data */ DataTableRowData[TValue], /* options */ DataTableRowExpansionTemplate) => ReactNode
+    ): Self = StObject.set(x, "rowExpansionTemplate", js.Any.fromFunction2(value))
     
     inline def setRowExpansionTemplateUndefined: Self = StObject.set(x, "rowExpansionTemplate", js.undefined)
     
-    inline def setRowGroupFooterTemplate(value: DataTableRowGroupFooterTemplateType): Self = StObject.set(x, "rowGroupFooterTemplate", value.asInstanceOf[js.Any])
+    inline def setRowGroupFooterTemplate(value: DataTableRowGroupFooterTemplateType[TValue]): Self = StObject.set(x, "rowGroupFooterTemplate", value.asInstanceOf[js.Any])
     
-    inline def setRowGroupFooterTemplateFunction2(value: (/* data */ Any, /* options */ DataTableRowGroupFooterTemplateOptions) => ReactNode): Self = StObject.set(x, "rowGroupFooterTemplate", js.Any.fromFunction2(value))
+    inline def setRowGroupFooterTemplateFunction2(value: (/* data */ Any, /* options */ DataTableRowGroupFooterTemplateOptions[TValue]) => ReactNode): Self = StObject.set(x, "rowGroupFooterTemplate", js.Any.fromFunction2(value))
     
     inline def setRowGroupFooterTemplateUndefined: Self = StObject.set(x, "rowGroupFooterTemplate", js.undefined)
     
-    inline def setRowGroupHeaderTemplate(value: DataTableRowGroupHeaderTemplateType): Self = StObject.set(x, "rowGroupHeaderTemplate", value.asInstanceOf[js.Any])
+    inline def setRowGroupHeaderTemplate(value: DataTableRowGroupHeaderTemplateType[TValue]): Self = StObject.set(x, "rowGroupHeaderTemplate", value.asInstanceOf[js.Any])
     
-    inline def setRowGroupHeaderTemplateFunction2(value: (/* data */ Any, /* options */ DataTableRowGroupHeaderTemplateOptions) => ReactNode): Self = StObject.set(x, "rowGroupHeaderTemplate", js.Any.fromFunction2(value))
+    inline def setRowGroupHeaderTemplateFunction2(value: (/* data */ Any, /* options */ DataTableRowGroupHeaderTemplateOptions[TValue]) => ReactNode): Self = StObject.set(x, "rowGroupHeaderTemplate", js.Any.fromFunction2(value))
     
     inline def setRowGroupHeaderTemplateUndefined: Self = StObject.set(x, "rowGroupHeaderTemplate", js.undefined)
     
@@ -1996,10 +2645,6 @@ object DataTableProps {
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setScrollDirection(value: DataTableScrollDirectionType): Self = StObject.set(x, "scrollDirection", value.asInstanceOf[js.Any])
-    
-    inline def setScrollDirectionUndefined: Self = StObject.set(x, "scrollDirection", js.undefined)
-    
     inline def setScrollHeight(value: String): Self = StObject.set(x, "scrollHeight", value.asInstanceOf[js.Any])
     
     inline def setScrollHeightUndefined: Self = StObject.set(x, "scrollHeight", js.undefined)
@@ -2020,7 +2665,7 @@ object DataTableProps {
     
     inline def setSelectOnEditUndefined: Self = StObject.set(x, "selectOnEdit", js.undefined)
     
-    inline def setSelection(value: Any | js.Array[Any]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: DataTableSelection[TValue]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
     inline def setSelectionAriaLabel(value: String): Self = StObject.set(x, "selectionAriaLabel", value.asInstanceOf[js.Any])
     
@@ -2030,7 +2675,7 @@ object DataTableProps {
     
     inline def setSelectionAutoFocusUndefined: Self = StObject.set(x, "selectionAutoFocus", js.undefined)
     
-    inline def setSelectionMode(value: DataTableSelectionModeType): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+    inline def setSelectionMode(value: single | multiple | checkbox | radiobutton): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
     
     inline def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
     
@@ -2040,14 +2685,14 @@ object DataTableProps {
     
     inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
     
-    inline def setSelectionVarargs(value: Any*): Self = StObject.set(x, "selection", js.Array(value*))
+    inline def setSelectionVarargs(value: DataTableRowData[TValue]*): Self = StObject.set(x, "selection", js.Array(value*))
     
     inline def setShowGridlines(value: Boolean): Self = StObject.set(x, "showGridlines", value.asInstanceOf[js.Any])
     
     inline def setShowGridlinesUndefined: Self = StObject.set(x, "showGridlines", js.undefined)
     
     inline def setShowRowReorderElement(
-      value: (/* data */ Any, /* options */ DataTableShowRowReorderElementOptions) => js.UndefOr[Boolean | Null]
+      value: (/* data */ DataTableRowData[TValue], /* options */ DataTableShowRowReorderElementOptions[TValue]) => js.UndefOr[Boolean | Null]
     ): Self = StObject.set(x, "showRowReorderElement", js.Any.fromFunction2(value))
     
     inline def setShowRowReorderElementUndefined: Self = StObject.set(x, "showRowReorderElement", js.undefined)
@@ -2057,12 +2702,12 @@ object DataTableProps {
     inline def setShowSelectAllUndefined: Self = StObject.set(x, "showSelectAll", js.undefined)
     
     inline def setShowSelectionElement(
-      value: (/* data */ Any, /* options */ DataTableShowSelectionElementOptions) => js.UndefOr[Boolean | Null]
+      value: (/* data */ DataTableRowData[TValue], /* options */ DataTableShowSelectionElementOptions[TValue]) => js.UndefOr[Boolean | Null]
     ): Self = StObject.set(x, "showSelectionElement", js.Any.fromFunction2(value))
     
     inline def setShowSelectionElementUndefined: Self = StObject.set(x, "showSelectionElement", js.undefined)
     
-    inline def setSize(value: DataTableSizeType): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: small | normal | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
@@ -2074,11 +2719,17 @@ object DataTableProps {
     
     inline def setSortFieldUndefined: Self = StObject.set(x, "sortField", js.undefined)
     
-    inline def setSortMode(value: DataTableSortModeType): Self = StObject.set(x, "sortMode", value.asInstanceOf[js.Any])
+    inline def setSortIcon(value: IconType[DataTable[TValue]]): Self = StObject.set(x, "sortIcon", value.asInstanceOf[js.Any])
+    
+    inline def setSortIconFunction1(value: /* options */ IconOptions[DataTable[TValue]] => ReactNode): Self = StObject.set(x, "sortIcon", js.Any.fromFunction1(value))
+    
+    inline def setSortIconUndefined: Self = StObject.set(x, "sortIcon", js.undefined)
+    
+    inline def setSortMode(value: single | multiple): Self = StObject.set(x, "sortMode", value.asInstanceOf[js.Any])
     
     inline def setSortModeUndefined: Self = StObject.set(x, "sortMode", js.undefined)
     
-    inline def setSortOrder(value: DataTableSortOrderType): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+    inline def setSortOrder(value: `1` | `0` | `-1`): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     
     inline def setSortOrderNull: Self = StObject.set(x, "sortOrder", null)
     
@@ -2096,7 +2747,7 @@ object DataTableProps {
     
     inline def setStateKeyUndefined: Self = StObject.set(x, "stateKey", js.undefined)
     
-    inline def setStateStorage(value: DataTableStateStorageType): Self = StObject.set(x, "stateStorage", value.asInstanceOf[js.Any])
+    inline def setStateStorage(value: session | local | custom): Self = StObject.set(x, "stateStorage", value.asInstanceOf[js.Any])
     
     inline def setStateStorageUndefined: Self = StObject.set(x, "stateStorage", js.undefined)
     
@@ -2156,11 +2807,9 @@ object DataTableProps {
     
     inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
     
-    inline def setValue(value: js.Array[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: TValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
-    
-    inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
     
     inline def setVirtualScrollerOptions(value: VirtualScrollerProps): Self = StObject.set(x, "virtualScrollerOptions", value.asInstanceOf[js.Any])
     

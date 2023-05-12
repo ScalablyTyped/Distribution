@@ -88,10 +88,14 @@ import typings.tensorflowTfjsLayers.distLayersPoolingMod.Pooling2DLayerArgs
 import typings.tensorflowTfjsLayers.distLayersPoolingMod.Pooling3DLayerArgs
 import typings.tensorflowTfjsLayers.distLayersPreprocessingCategoryEncodingMod.CategoryEncoding
 import typings.tensorflowTfjsLayers.distLayersPreprocessingCategoryEncodingMod.CategoryEncodingArgs
+import typings.tensorflowTfjsLayers.distLayersPreprocessingCenterCropMod.CenterCrop
+import typings.tensorflowTfjsLayers.distLayersPreprocessingCenterCropMod.CenterCropArgs
 import typings.tensorflowTfjsLayers.distLayersPreprocessingImagePreprocessingMod.Rescaling
 import typings.tensorflowTfjsLayers.distLayersPreprocessingImagePreprocessingMod.RescalingArgs
 import typings.tensorflowTfjsLayers.distLayersPreprocessingImageResizingMod.Resizing
 import typings.tensorflowTfjsLayers.distLayersPreprocessingImageResizingMod.ResizingArgs
+import typings.tensorflowTfjsLayers.distLayersPreprocessingRandomWidthMod.RandomWidth
+import typings.tensorflowTfjsLayers.distLayersPreprocessingRandomWidthMod.RandomWidthArgs
 import typings.tensorflowTfjsLayers.distLayersRecurrentMod.GRU
 import typings.tensorflowTfjsLayers.distLayersRecurrentMod.GRUCell
 import typings.tensorflowTfjsLayers.distLayersRecurrentMod.GRUCellLayerArgs
@@ -212,6 +216,9 @@ object layers {
   
   inline def categoryEncoding(args: CategoryEncodingArgs): CategoryEncoding = ^.asInstanceOf[js.Dynamic].applyDynamic("categoryEncoding")(args.asInstanceOf[js.Any]).asInstanceOf[CategoryEncoding]
   
+  inline def centerCrop(): CenterCrop = ^.asInstanceOf[js.Dynamic].applyDynamic("centerCrop")().asInstanceOf[CenterCrop]
+  inline def centerCrop(args: CenterCropArgs): CenterCrop = ^.asInstanceOf[js.Dynamic].applyDynamic("centerCrop")(args.asInstanceOf[js.Any]).asInstanceOf[CenterCrop]
+  
   inline def concatenate(): Concatenate_ = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenate")().asInstanceOf[Concatenate_]
   inline def concatenate(args: ConcatenateLayerArgs): Concatenate_ = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenate")(args.asInstanceOf[js.Any]).asInstanceOf[Concatenate_]
   
@@ -317,6 +324,8 @@ object layers {
   
   inline def prelu(): PReLU = ^.asInstanceOf[js.Dynamic].applyDynamic("prelu")().asInstanceOf[PReLU]
   inline def prelu(args: PReLULayerArgs): PReLU = ^.asInstanceOf[js.Dynamic].applyDynamic("prelu")(args.asInstanceOf[js.Any]).asInstanceOf[PReLU]
+  
+  inline def randomWidth(args: RandomWidthArgs): RandomWidth = ^.asInstanceOf[js.Dynamic].applyDynamic("randomWidth")(args.asInstanceOf[js.Any]).asInstanceOf[RandomWidth]
   
   inline def reLU(): ReLU = ^.asInstanceOf[js.Dynamic].applyDynamic("reLU")().asInstanceOf[ReLU]
   inline def reLU(args: ReLULayerArgs): ReLU = ^.asInstanceOf[js.Dynamic].applyDynamic("reLU")(args.asInstanceOf[js.Any]).asInstanceOf[ReLU]

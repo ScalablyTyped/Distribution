@@ -43,6 +43,9 @@ object examplesJsmNodesLoadersNodeLoaderMod {
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): Unit = js.native
     
+    def loadAsync(url: String): js.Promise[NodeLoaderResult] = js.native
+    def loadAsync(url: String, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[NodeLoaderResult] = js.native
+    
     def parse(json: AnyJson): Node = js.native
     
     def parseNodes(json: AnyJson): NodeLoaderResult = js.native

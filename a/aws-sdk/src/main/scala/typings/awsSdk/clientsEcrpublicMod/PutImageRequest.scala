@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutImageRequest extends StObject {
   
   /**
-    * The image digest of the image manifest corresponding to the image.
+    * The image digest of the image manifest that corresponds to the image.
     */
   var imageDigest: js.UndefOr[ImageDigest] = js.undefined
   
   /**
-    * The image manifest corresponding to the image to be uploaded.
+    * The image manifest that corresponds to the image to be uploaded.
     */
   var imageManifest: ImageManifest
   
   /**
-    * The media type of the image manifest. If you push an image manifest that does not contain the mediaType field, you must specify the imageManifestMediaType in the request.
+    * The media type of the image manifest. If you push an image manifest that doesn't contain the mediaType field, you must specify the imageManifestMediaType in the request.
     */
   var imageManifestMediaType: js.UndefOr[MediaType] = js.undefined
   
@@ -27,12 +27,12 @@ trait PutImageRequest extends StObject {
   var imageTag: js.UndefOr[ImageTag] = js.undefined
   
   /**
-    * The AWS account ID associated with the public registry that contains the repository in which to put the image. If you do not specify a registry, the default public registry is assumed.
+    * The Amazon Web Services account ID, or registry alias, that's associated with the public registry that contains the repository where the image is put. If you do not specify a registry, the default public registry is assumed.
     */
   var registryId: js.UndefOr[RegistryIdOrAlias] = js.undefined
   
   /**
-    * The name of the repository in which to put the image.
+    * The name of the repository where the image is put.
     */
   var repositoryName: RepositoryName
 }

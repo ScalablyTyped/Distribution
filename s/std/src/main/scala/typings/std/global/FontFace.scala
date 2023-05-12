@@ -1,6 +1,7 @@
 package typings.std.global
 
 import typings.std.BinaryData
+import typings.std.FontDisplay
 import typings.std.FontFaceDescriptors
 import typings.std.FontFaceLoadStatus
 import org.scalablytyped.runtime.StObject
@@ -29,7 +30,7 @@ open class FontFace protected ()
   
   /* standard dom */
   /* CompleteClass */
-  var display: java.lang.String = js.native
+  var display: FontDisplay = js.native
   
   /* standard dom */
   /* CompleteClass */
@@ -70,10 +71,6 @@ open class FontFace protected ()
   /* standard dom */
   /* CompleteClass */
   var variant: java.lang.String = js.native
-  
-  /* standard dom */
-  /* CompleteClass */
-  var variationSettings: java.lang.String = js.native
   
   /* standard dom */
   /* CompleteClass */

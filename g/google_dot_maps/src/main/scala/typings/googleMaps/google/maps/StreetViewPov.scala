@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A point of view object which specifies the camera&#39;s orientation at the
-  * Street View panorama&#39;s position. The point of view is defined as
-  * heading and pitch.
-  */
 trait StreetViewPov extends StObject {
   
   /**

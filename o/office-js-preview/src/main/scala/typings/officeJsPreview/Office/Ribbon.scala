@@ -23,7 +23,7 @@ trait Ribbon extends StObject {
     * This method only requests that the tab be registered. The actual registration is controlled by the Office application and may not be complete when the returned `Promise` object is resolved.
     * For more information and code examples, see {@link https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.
     * 
-    * @param tabDefinition - Specifies the tab's properties and child controls and their properties. Pass a JSON string that conforms to the Office dynamic-ribbon JSON schema to `JSON.parse`, and then pass the returned object to this method.
+    * @param tabDefinition - Specifies the tab's properties and child controls and their properties. This parameter isn't strongly typed because its shape is defined by a JSON schema that can be versioned. To create the parameter object, pass a JSON string that conforms to the Office {@link https://developer.microsoft.com/json-schemas/office-js/dynamic-ribbon.schema.json | dynamic-ribbon JSON schema} to `JSON.parse`, and then pass the returned object to this method. To get IntelliSense for the JSON in Visual Studio Code, see {@link https://code.visualstudio.com/docs/languages/json#_json-schemas-and-settings | Editing JSON with Visual Studio Code - JSON schemas and settings }.
     */
   def requestCreateControls(tabDefinition: js.Object): js.Promise[Unit]
   

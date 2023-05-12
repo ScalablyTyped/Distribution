@@ -3,6 +3,8 @@ package typings.playcanvas.mod
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable2
 import typings.playcanvas.anon.Cameras
+import typings.playcanvas.anon.FilterCallback
+import typings.playcanvas.anon.FilterCollisionGroup
 import typings.playcanvas.anon.TypeofRigidBodyComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,7 +24,7 @@ open class RigidBodyComponentSystem protected () extends ComponentSystem {
   /**
     * Create a new ComponentSystem instance.
     *
-    * @param {AppBase} app - The application managing this system.
+    * @param {import('../app-base.js').AppBase} app - The application managing this system.
     */
   def this(app: AppBase) = this()
   
@@ -68,9 +70,15 @@ open class RigidBodyComponentSystem protected () extends ComponentSystem {
   /* private */ var _dynamic: Any = js.native
   
   /**
+    * @type {Float32Array}
+    * @private
+    */
+  /* private */ var _gravityFloat32: Any = js.native
+  
+  /**
     * Returns true if the entity has a contact event attached and false otherwise.
     *
-    * @param {object} entity - Entity to test.
+    * @param {import('../../entity.js').Entity} entity - Entity to test.
     * @returns {boolean} True if the entity has a contact and false otherwise.
     * @private
     */
@@ -88,8 +96,9 @@ open class RigidBodyComponentSystem protected () extends ComponentSystem {
     * Stores a collision between the entity and other in the contacts map and returns true if it
     * is a new collision.
     *
-    * @param {Entity} entity - The entity.
-    * @param {Entity} other - The entity that collides with the first entity.
+    * @param {import('../../entity.js').Entity} entity - The entity.
+    * @param {import('../../entity.js').Entity} other - The entity that collides with the first
+    * entity.
     * @returns {boolean} True if this is a new collision, false otherwise.
     * @private
     */
@@ -167,14 +176,53 @@ open class RigidBodyComponentSystem protected () extends ComponentSystem {
   /**
     * Raycast the world and return all entities the ray hits. It returns an array of
     * {@link RaycastResult}, one for each hit. If no hits are detected, the returned array will be
-    * of length 0.
+    * of length 0. Results are sorted by distance with closest first.
     *
     * @param {Vec3} start - The world space point where the ray starts.
     * @param {Vec3} end - The world space point where the ray ends.
+    * @param {object} [options] - The additional options for the raycasting.
+    * @param {boolean} [options.sort] - Whether to sort raycast results based on distance with closest
+    * first. Defaults to false.
+    * @param {number} [options.filterCollisionGroup] - Collision group to apply to the raycast.
+    * @param {number} [options.filterCollisionMask] - Collision mask to apply to the raycast.
+    * @param {any[]} [options.filterTags] - Tags filters. Defined the same way as a {@link Tags#has}
+    * query but within an array.
+    * @param {Function} [options.filterCallback] - Custom function to use to filter entities.
+    * Must return true to proceed with result. Takes the entity to evaluate as argument.
+    *
     * @returns {RaycastResult[]} An array of raycast hit results (0 length if there were no hits).
+    *
+    * @example
+    * // Return all results of a raycast between 0, 2, 2 and 0, -2, -2
+    * const hits = this.app.systems.rigidbody.raycastAll(new Vec3(0, 2, 2), new Vec3(0, -2, -2));
+    * @example
+    * // Return all results of a raycast between 0, 2, 2 and 0, -2, -2
+    * // where hit entity is tagged with `bird` OR `mammal`
+    * const hits = this.app.systems.rigidbody.raycastAll(new Vec3(0, 2, 2), new Vec3(0, -2, -2), {
+    *     filterTags: [ "bird", "mammal" ]
+    * });
+    * @example
+    * // Return all results of a raycast between 0, 2, 2 and 0, -2, -2
+    * // where hit entity has a `camera` component
+    * const hits = this.app.systems.rigidbody.raycastAll(new Vec3(0, 2, 2), new Vec3(0, -2, -2), {
+    *     filterCallback: (entity) => entity && entity.camera
+    * });
+    * @example
+    * // Return all results of a raycast between 0, 2, 2 and 0, -2, -2
+    * // where hit entity is tagged with (`carnivore` AND `mammal`) OR (`carnivore` AND `reptile`)
+    * // and the entity has an `anim` component
+    * const hits = this.app.systems.rigidbody.raycastAll(new Vec3(0, 2, 2), new Vec3(0, -2, -2), {
+    *     filterTags: [
+    *         [ "carnivore", "mammal" ],
+    *         [ "carnivore", "reptile" ]
+    *     ],
+    *     filterCallback: (entity) => entity && entity.anim
+    * });
     */
   def raycastAll(start: Vec3, end: Vec3): js.Array[RaycastResult] = js.native
+  def raycastAll(start: Vec3, end: Vec3, options: FilterCollisionGroup): js.Array[RaycastResult] = js.native
   
+  def raycastFirst(start: Vec3, end: Vec3, options: Unit, args: Any*): RaycastResult | Null = js.native
   /**
     * Raycast the world and return the first entity the ray hits. Fire a ray into the world from
     * start to end, if the ray hits an entity with a collision component, it returns a
@@ -182,9 +230,17 @@ open class RigidBodyComponentSystem protected () extends ComponentSystem {
     *
     * @param {Vec3} start - The world space point where the ray starts.
     * @param {Vec3} end - The world space point where the ray ends.
-    * @returns {RaycastResult} The result of the raycasting or null if there was no hit.
+    * @param {object} [options] - The additional options for the raycasting.
+    * @param {number} [options.filterCollisionGroup] - Collision group to apply to the raycast.
+    * @param {number} [options.filterCollisionMask] - Collision mask to apply to the raycast.
+    * @param {any[]} [options.filterTags] - Tags filters. Defined the same way as a {@link Tags#has}
+    * query but within an array.
+    * @param {Function} [options.filterCallback] - Custom function to use to filter entities.
+    * Must return true to proceed with result. Takes one argument: the entity to evaluate.
+    *
+    * @returns {RaycastResult|null} The result of the raycasting or null if there was no hit.
     */
-  def raycastFirst(start: Vec3, end: Vec3, args: Any*): RaycastResult = js.native
+  def raycastFirst(start: Vec3, end: Vec3, options: FilterCallback, args: Any*): RaycastResult | Null = js.native
   
   def removeBody(body: Any): Unit = js.native
   

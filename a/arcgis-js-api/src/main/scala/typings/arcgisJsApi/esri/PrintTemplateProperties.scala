@@ -58,6 +58,15 @@ trait PrintTemplateProperties extends StObject {
   var format: js.UndefOr[pdf | png32 | png8 | jpg | gif | eps | svg | svgz] = js.undefined
   
   /**
+    * When `true`, tables will be included in the printout request.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#includeTables)
+    */
+  var includeTables: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * The layout used for the print output.
     *
     * @default map-only
@@ -134,6 +143,10 @@ object PrintTemplateProperties {
     inline def setFormat(value: pdf | png32 | png8 | jpg | gif | eps | svg | svgz): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setIncludeTables(value: Boolean): Self = StObject.set(x, "includeTables", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeTablesUndefined: Self = StObject.set(x, "includeTables", js.undefined)
     
     inline def setLayout(
       value: `map-only` | `a3-landscape` | `a3-portrait` | `a4-landscape` | `a4-portrait` | `letter-ansi-a-landscape` | `letter-ansi-a-portrait` | `tabloid-ansi-b-landscape` | `tabloid-ansi-b-portrait`

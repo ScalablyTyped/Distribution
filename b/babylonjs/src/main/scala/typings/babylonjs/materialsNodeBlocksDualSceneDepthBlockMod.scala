@@ -42,6 +42,11 @@ object materialsNodeBlocksDualSceneDepthBlockMod {
     var force32itsFloat: Boolean = js.native
     
     /**
+      * Defines if the depth renderer should be setup in camera space Z mode (if set, useNonLinearDepth has no effect)
+      */
+    var storeCameraSpaceZ: Boolean = js.native
+    
+    /**
       * Defines if the depth renderer should be setup in non linear mode
       */
     var useNonLinearDepth: Boolean = js.native

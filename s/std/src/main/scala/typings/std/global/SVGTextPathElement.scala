@@ -3,6 +3,9 @@ package typings.std.global
 import typings.std.AddEventListenerOptions
 import typings.std.EventListenerOptions
 import typings.std.EventListenerOrEventListenerObject
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,10 +52,6 @@ open class SVGTextPathElement ()
   /* standard dom */
   /* CompleteClass */
   var ariaColIndex: java.lang.String | Null = js.native
-  
-  /* standard dom */
-  /* CompleteClass */
-  var ariaColIndexText: java.lang.String | Null = js.native
   
   /* standard dom */
   /* CompleteClass */
@@ -148,10 +147,6 @@ open class SVGTextPathElement ()
   
   /* standard dom */
   /* CompleteClass */
-  var ariaRowIndexText: java.lang.String | Null = js.native
-  
-  /* standard dom */
-  /* CompleteClass */
   var ariaRowSpan: java.lang.String | Null = js.native
   
   /* standard dom */
@@ -236,30 +231,30 @@ object SVGTextPathElement {
   /* standard dom */
   @JSGlobal("SVGTextPathElement.TEXTPATH_METHODTYPE_ALIGN")
   @js.native
-  val TEXTPATH_METHODTYPE_ALIGN: Double = js.native
+  val TEXTPATH_METHODTYPE_ALIGN: `1` = js.native
   
   /* standard dom */
   @JSGlobal("SVGTextPathElement.TEXTPATH_METHODTYPE_STRETCH")
   @js.native
-  val TEXTPATH_METHODTYPE_STRETCH: Double = js.native
+  val TEXTPATH_METHODTYPE_STRETCH: `2` = js.native
   
   /* standard dom */
   @JSGlobal("SVGTextPathElement.TEXTPATH_METHODTYPE_UNKNOWN")
   @js.native
-  val TEXTPATH_METHODTYPE_UNKNOWN: Double = js.native
+  val TEXTPATH_METHODTYPE_UNKNOWN: `0` = js.native
   
   /* standard dom */
   @JSGlobal("SVGTextPathElement.TEXTPATH_SPACINGTYPE_AUTO")
   @js.native
-  val TEXTPATH_SPACINGTYPE_AUTO: Double = js.native
+  val TEXTPATH_SPACINGTYPE_AUTO: `1` = js.native
   
   /* standard dom */
   @JSGlobal("SVGTextPathElement.TEXTPATH_SPACINGTYPE_EXACT")
   @js.native
-  val TEXTPATH_SPACINGTYPE_EXACT: Double = js.native
+  val TEXTPATH_SPACINGTYPE_EXACT: `2` = js.native
   
   /* standard dom */
   @JSGlobal("SVGTextPathElement.TEXTPATH_SPACINGTYPE_UNKNOWN")
   @js.native
-  val TEXTPATH_SPACINGTYPE_UNKNOWN: Double = js.native
+  val TEXTPATH_SPACINGTYPE_UNKNOWN: `0` = js.native
 }

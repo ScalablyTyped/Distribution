@@ -43,7 +43,7 @@ trait IndexedDBApi extends StObject {
   def enable(): js.Promise[Unit]
   
   /**
-    * Gets metadata of an object store
+    * Gets metadata of an object store.
     */
   def getMetadata(params: GetMetadataRequest): js.Promise[GetMetadataResponse]
   

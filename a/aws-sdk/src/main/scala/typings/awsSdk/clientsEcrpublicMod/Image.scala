@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Image extends StObject {
   
   /**
-    * An object containing the image tag and image digest associated with an image.
+    * An object that contains the image tag and image digest associated with an image.
     */
   var imageId: js.UndefOr[ImageIdentifier] = js.undefined
   
   /**
-    * The image manifest associated with the image.
+    * The image manifest that's associated with the image.
     */
   var imageManifest: js.UndefOr[ImageManifest] = js.undefined
   
@@ -22,12 +22,12 @@ trait Image extends StObject {
   var imageManifestMediaType: js.UndefOr[MediaType] = js.undefined
   
   /**
-    * The AWS account ID associated with the registry containing the image.
+    * The Amazon Web Services account ID that's associated with the registry containing the image.
     */
   var registryId: js.UndefOr[RegistryIdOrAlias] = js.undefined
   
   /**
-    * The name of the repository associated with the image.
+    * The name of the repository that's associated with the image.
     */
   var repositoryName: js.UndefOr[RepositoryName] = js.undefined
 }

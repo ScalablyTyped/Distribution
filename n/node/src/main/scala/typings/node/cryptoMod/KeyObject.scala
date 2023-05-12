@@ -124,13 +124,13 @@ object KeyObject {
     * Example: Converting a `CryptoKey` instance to a `KeyObject`:
     *
     * ```js
-    * const { webcrypto, KeyObject } = await import('crypto');
-    * const { subtle } = webcrypto;
+    * const { KeyObject } = await import('node:crypto');
+    * const { subtle } = globalThis.crypto;
     *
     * const key = await subtle.generateKey({
     *   name: 'HMAC',
     *   hash: 'SHA-256',
-    *   length: 256
+    *   length: 256,
     * }, true, ['sign', 'verify']);
     *
     * const keyObject = KeyObject.from(key);

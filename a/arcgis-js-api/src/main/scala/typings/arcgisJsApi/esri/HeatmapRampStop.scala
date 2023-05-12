@@ -16,7 +16,7 @@ trait HeatmapRampStop extends StObject {
   /**
     * The label of the color stop displayed in the legend.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#HeatmapRampStop)
+    * [Read more...](global.html)
     */
   var label: String
   

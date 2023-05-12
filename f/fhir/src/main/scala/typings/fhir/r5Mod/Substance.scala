@@ -41,7 +41,7 @@ trait Substance
   var expiry: js.UndefOr[String] = js.undefined
   
   /**
-    * This identifier is associated with the kind of substance in contrast to the  Substance.instance.identifier which is associated with the package/container.
+    * Unique identifier for the substance. For an instance, an identifier associated with the package/container (usually a label affixed directly).
     */
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   

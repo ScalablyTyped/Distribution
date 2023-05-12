@@ -12,6 +12,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DataSync extends Service {
   
   /**
+    * Creates an Amazon Web Services resource for an on-premises storage system that you want DataSync Discovery to collect information about.
+    */
+  def addStorageSystem(): Request[AddStorageSystemResponse, AWSError] = js.native
+  def addStorageSystem(callback: js.Function2[/* err */ AWSError, /* data */ AddStorageSystemResponse, Unit]): Request[AddStorageSystemResponse, AWSError] = js.native
+  /**
+    * Creates an Amazon Web Services resource for an on-premises storage system that you want DataSync Discovery to collect information about.
+    */
+  def addStorageSystem(params: AddStorageSystemRequest): Request[AddStorageSystemResponse, AWSError] = js.native
+  def addStorageSystem(
+    params: AddStorageSystemRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AddStorageSystemResponse, Unit]
+  ): Request[AddStorageSystemResponse, AWSError] = js.native
+  
+  /**
     * Stops an DataSync task execution that's in progress. The transfer of some files are abruptly interrupted. File contents that're transferred to the destination might be incomplete or inconsistent with the source files. However, if you start a new task execution using the same task and allow it to finish, file content on the destination will be complete and consistent. This applies to other unexpected failures that interrupt a task execution. In all of these cases, DataSync successfully completes the transfer when you start the next task execution.
     */
   def cancelTaskExecution(): Request[CancelTaskExecutionResponse, AWSError] = js.native
@@ -155,12 +169,12 @@ trait DataSync extends Service {
   ): Request[CreateLocationObjectStorageResponse, AWSError] = js.native
   
   /**
-    * Creates an endpoint for an Amazon S3 bucket that DataSync can access for a transfer. For more information, see Create an Amazon S3 location in the DataSync User Guide.
+    * A location is an endpoint for an Amazon S3 bucket. DataSync can use the location as a source or destination for copying data.  Before you create your location, make sure that you read the following sections:    Storage class considerations with Amazon S3 locations     Evaluating S3 request costs when using DataSync      For more information, see Creating an Amazon S3 location.
     */
   def createLocationS3(): Request[CreateLocationS3Response, AWSError] = js.native
   def createLocationS3(callback: js.Function2[/* err */ AWSError, /* data */ CreateLocationS3Response, Unit]): Request[CreateLocationS3Response, AWSError] = js.native
   /**
-    * Creates an endpoint for an Amazon S3 bucket that DataSync can access for a transfer. For more information, see Create an Amazon S3 location in the DataSync User Guide.
+    * A location is an endpoint for an Amazon S3 bucket. DataSync can use the location as a source or destination for copying data.  Before you create your location, make sure that you read the following sections:    Storage class considerations with Amazon S3 locations     Evaluating S3 request costs when using DataSync      For more information, see Creating an Amazon S3 location.
     */
   def createLocationS3(params: CreateLocationS3Request): Request[CreateLocationS3Response, AWSError] = js.native
   def createLocationS3(
@@ -169,12 +183,12 @@ trait DataSync extends Service {
   ): Request[CreateLocationS3Response, AWSError] = js.native
   
   /**
-    * Defines a file system on a Server Message Block (SMB) server that can be read from or written to.
+    * Creates an endpoint for a Server Message Block (SMB) file server that DataSync can access for a transfer. For more information, see Creating an SMB location.
     */
   def createLocationSmb(): Request[CreateLocationSmbResponse, AWSError] = js.native
   def createLocationSmb(callback: js.Function2[/* err */ AWSError, /* data */ CreateLocationSmbResponse, Unit]): Request[CreateLocationSmbResponse, AWSError] = js.native
   /**
-    * Defines a file system on a Server Message Block (SMB) server that can be read from or written to.
+    * Creates an endpoint for a Server Message Block (SMB) file server that DataSync can access for a transfer. For more information, see Creating an SMB location.
     */
   def createLocationSmb(params: CreateLocationSmbRequest): Request[CreateLocationSmbResponse, AWSError] = js.native
   def createLocationSmb(
@@ -183,12 +197,12 @@ trait DataSync extends Service {
   ): Request[CreateLocationSmbResponse, AWSError] = js.native
   
   /**
-    * Configures a task, which defines where and how DataSync transfers your data. A task includes a source location, a destination location, and the preferences for how and when you want to transfer your data (such as bandwidth limits, scheduling, among other options). When you create a task that transfers data between Amazon Web Services services in different Amazon Web Services Regions, one of your locations must reside in the Region where you're using DataSync. For more information, see the following topics:    Working with DataSync locations     Configure DataSync task settings   
+    * Configures a task, which defines where and how DataSync transfers your data. A task includes a source location, a destination location, and the preferences for how and when you want to transfer your data (such as bandwidth limits, scheduling, among other options).  If you're planning to transfer data to or from an Amazon S3 location, review how DataSync can affect your S3 request charges and the DataSync pricing page before you begin. 
     */
   def createTask(): Request[CreateTaskResponse, AWSError] = js.native
   def createTask(callback: js.Function2[/* err */ AWSError, /* data */ CreateTaskResponse, Unit]): Request[CreateTaskResponse, AWSError] = js.native
   /**
-    * Configures a task, which defines where and how DataSync transfers your data. A task includes a source location, a destination location, and the preferences for how and when you want to transfer your data (such as bandwidth limits, scheduling, among other options). When you create a task that transfers data between Amazon Web Services services in different Amazon Web Services Regions, one of your locations must reside in the Region where you're using DataSync. For more information, see the following topics:    Working with DataSync locations     Configure DataSync task settings   
+    * Configures a task, which defines where and how DataSync transfers your data. A task includes a source location, a destination location, and the preferences for how and when you want to transfer your data (such as bandwidth limits, scheduling, among other options).  If you're planning to transfer data to or from an Amazon S3 location, review how DataSync can affect your S3 request charges and the DataSync pricing page before you begin. 
     */
   def createTask(params: CreateTaskRequest): Request[CreateTaskResponse, AWSError] = js.native
   def createTask(
@@ -225,12 +239,12 @@ trait DataSync extends Service {
   ): Request[DeleteLocationResponse, AWSError] = js.native
   
   /**
-    * Deletes a task.
+    * Deletes an DataSync task.
     */
   def deleteTask(): Request[DeleteTaskResponse, AWSError] = js.native
   def deleteTask(callback: js.Function2[/* err */ AWSError, /* data */ DeleteTaskResponse, Unit]): Request[DeleteTaskResponse, AWSError] = js.native
   /**
-    * Deletes a task.
+    * Deletes an DataSync task.
     */
   def deleteTask(params: DeleteTaskRequest): Request[DeleteTaskResponse, AWSError] = js.native
   def deleteTask(
@@ -239,18 +253,32 @@ trait DataSync extends Service {
   ): Request[DeleteTaskResponse, AWSError] = js.native
   
   /**
-    * Returns metadata such as the name, the network interfaces, and the status (that is, whether the agent is running or not) for an agent. To specify which agent to describe, use the Amazon Resource Name (ARN) of the agent in your request. 
+    * Returns metadata about an DataSync agent, such as its name, endpoint type, and status.
     */
   def describeAgent(): Request[DescribeAgentResponse, AWSError] = js.native
   def describeAgent(callback: js.Function2[/* err */ AWSError, /* data */ DescribeAgentResponse, Unit]): Request[DescribeAgentResponse, AWSError] = js.native
   /**
-    * Returns metadata such as the name, the network interfaces, and the status (that is, whether the agent is running or not) for an agent. To specify which agent to describe, use the Amazon Resource Name (ARN) of the agent in your request. 
+    * Returns metadata about an DataSync agent, such as its name, endpoint type, and status.
     */
   def describeAgent(params: DescribeAgentRequest): Request[DescribeAgentResponse, AWSError] = js.native
   def describeAgent(
     params: DescribeAgentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeAgentResponse, Unit]
   ): Request[DescribeAgentResponse, AWSError] = js.native
+  
+  /**
+    * Returns information about a DataSync discovery job.
+    */
+  def describeDiscoveryJob(): Request[DescribeDiscoveryJobResponse, AWSError] = js.native
+  def describeDiscoveryJob(callback: js.Function2[/* err */ AWSError, /* data */ DescribeDiscoveryJobResponse, Unit]): Request[DescribeDiscoveryJobResponse, AWSError] = js.native
+  /**
+    * Returns information about a DataSync discovery job.
+    */
+  def describeDiscoveryJob(params: DescribeDiscoveryJobRequest): Request[DescribeDiscoveryJobResponse, AWSError] = js.native
+  def describeDiscoveryJob(
+    params: DescribeDiscoveryJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeDiscoveryJobResponse, Unit]
+  ): Request[DescribeDiscoveryJobResponse, AWSError] = js.native
   
   /**
     * Returns metadata about your DataSync location for an Amazon EFS file system.
@@ -393,6 +421,52 @@ trait DataSync extends Service {
   ): Request[DescribeLocationSmbResponse, AWSError] = js.native
   
   /**
+    * Returns information about an on-premises storage system that you're using with DataSync Discovery.
+    */
+  def describeStorageSystem(): Request[DescribeStorageSystemResponse, AWSError] = js.native
+  def describeStorageSystem(callback: js.Function2[/* err */ AWSError, /* data */ DescribeStorageSystemResponse, Unit]): Request[DescribeStorageSystemResponse, AWSError] = js.native
+  /**
+    * Returns information about an on-premises storage system that you're using with DataSync Discovery.
+    */
+  def describeStorageSystem(params: DescribeStorageSystemRequest): Request[DescribeStorageSystemResponse, AWSError] = js.native
+  def describeStorageSystem(
+    params: DescribeStorageSystemRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeStorageSystemResponse, Unit]
+  ): Request[DescribeStorageSystemResponse, AWSError] = js.native
+  
+  /**
+    * Returns information, including performance data and capacity usage, which DataSync Discovery collects about a specific resource in your-premises storage system.
+    */
+  def describeStorageSystemResourceMetrics(): Request[DescribeStorageSystemResourceMetricsResponse, AWSError] = js.native
+  def describeStorageSystemResourceMetrics(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeStorageSystemResourceMetricsResponse, Unit]
+  ): Request[DescribeStorageSystemResourceMetricsResponse, AWSError] = js.native
+  /**
+    * Returns information, including performance data and capacity usage, which DataSync Discovery collects about a specific resource in your-premises storage system.
+    */
+  def describeStorageSystemResourceMetrics(params: DescribeStorageSystemResourceMetricsRequest): Request[DescribeStorageSystemResourceMetricsResponse, AWSError] = js.native
+  def describeStorageSystemResourceMetrics(
+    params: DescribeStorageSystemResourceMetricsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeStorageSystemResourceMetricsResponse, Unit]
+  ): Request[DescribeStorageSystemResourceMetricsResponse, AWSError] = js.native
+  
+  /**
+    * Returns information that DataSync Discovery collects about resources in your on-premises storage system.
+    */
+  def describeStorageSystemResources(): Request[DescribeStorageSystemResourcesResponse, AWSError] = js.native
+  def describeStorageSystemResources(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeStorageSystemResourcesResponse, Unit]
+  ): Request[DescribeStorageSystemResourcesResponse, AWSError] = js.native
+  /**
+    * Returns information that DataSync Discovery collects about resources in your on-premises storage system.
+    */
+  def describeStorageSystemResources(params: DescribeStorageSystemResourcesRequest): Request[DescribeStorageSystemResourcesResponse, AWSError] = js.native
+  def describeStorageSystemResources(
+    params: DescribeStorageSystemResourcesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeStorageSystemResourcesResponse, Unit]
+  ): Request[DescribeStorageSystemResourcesResponse, AWSError] = js.native
+  
+  /**
     * Returns metadata about a task.
     */
   def describeTask(): Request[DescribeTaskResponse, AWSError] = js.native
@@ -421,18 +495,46 @@ trait DataSync extends Service {
   ): Request[DescribeTaskExecutionResponse, AWSError] = js.native
   
   /**
-    * Returns a list of agents owned by an Amazon Web Services account in the Amazon Web Services Region specified in the request. The returned list is ordered by agent Amazon Resource Name (ARN). By default, this operation returns a maximum of 100 agents. This operation supports pagination that enables you to optionally reduce the number of agents returned in a response. If you have more agents than are returned in a response (that is, the response returns only a truncated list of your agents), the response contains a marker that you can specify in your next request to fetch the next page of agents.
+    * Creates recommendations about where to migrate your data to in Amazon Web Services. Recommendations are generated based on information that DataSync Discovery collects about your on-premises storage system's resources. For more information, see Recommendations provided by DataSync Discovery. Once generated, you can view your recommendations by using the DescribeStorageSystemResources operation.  If your discovery job completes successfully, you don't need to use this operation. DataSync Discovery generates the recommendations for you automatically. 
+    */
+  def generateRecommendations(): Request[GenerateRecommendationsResponse, AWSError] = js.native
+  def generateRecommendations(callback: js.Function2[/* err */ AWSError, /* data */ GenerateRecommendationsResponse, Unit]): Request[GenerateRecommendationsResponse, AWSError] = js.native
+  /**
+    * Creates recommendations about where to migrate your data to in Amazon Web Services. Recommendations are generated based on information that DataSync Discovery collects about your on-premises storage system's resources. For more information, see Recommendations provided by DataSync Discovery. Once generated, you can view your recommendations by using the DescribeStorageSystemResources operation.  If your discovery job completes successfully, you don't need to use this operation. DataSync Discovery generates the recommendations for you automatically. 
+    */
+  def generateRecommendations(params: GenerateRecommendationsRequest): Request[GenerateRecommendationsResponse, AWSError] = js.native
+  def generateRecommendations(
+    params: GenerateRecommendationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GenerateRecommendationsResponse, Unit]
+  ): Request[GenerateRecommendationsResponse, AWSError] = js.native
+  
+  /**
+    * Returns a list of DataSync agents that belong to an Amazon Web Services account in the Amazon Web Services Region specified in the request. With pagination, you can reduce the number of agents returned in a response. If you get a truncated list of agents in a response, the response contains a marker that you can specify in your next request to fetch the next page of agents.  ListAgents is eventually consistent. This means the result of running the operation might not reflect that you just created or deleted an agent. For example, if you create an agent with CreateAgent and then immediately run ListAgents, that agent might not show up in the list right away. In situations like this, you can always confirm whether an agent has been created (or deleted) by using DescribeAgent.
     */
   def listAgents(): Request[ListAgentsResponse, AWSError] = js.native
   def listAgents(callback: js.Function2[/* err */ AWSError, /* data */ ListAgentsResponse, Unit]): Request[ListAgentsResponse, AWSError] = js.native
   /**
-    * Returns a list of agents owned by an Amazon Web Services account in the Amazon Web Services Region specified in the request. The returned list is ordered by agent Amazon Resource Name (ARN). By default, this operation returns a maximum of 100 agents. This operation supports pagination that enables you to optionally reduce the number of agents returned in a response. If you have more agents than are returned in a response (that is, the response returns only a truncated list of your agents), the response contains a marker that you can specify in your next request to fetch the next page of agents.
+    * Returns a list of DataSync agents that belong to an Amazon Web Services account in the Amazon Web Services Region specified in the request. With pagination, you can reduce the number of agents returned in a response. If you get a truncated list of agents in a response, the response contains a marker that you can specify in your next request to fetch the next page of agents.  ListAgents is eventually consistent. This means the result of running the operation might not reflect that you just created or deleted an agent. For example, if you create an agent with CreateAgent and then immediately run ListAgents, that agent might not show up in the list right away. In situations like this, you can always confirm whether an agent has been created (or deleted) by using DescribeAgent.
     */
   def listAgents(params: ListAgentsRequest): Request[ListAgentsResponse, AWSError] = js.native
   def listAgents(
     params: ListAgentsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListAgentsResponse, Unit]
   ): Request[ListAgentsResponse, AWSError] = js.native
+  
+  /**
+    * Provides a list of the existing discovery jobs in the Amazon Web Services Region and Amazon Web Services account where you're using DataSync Discovery.
+    */
+  def listDiscoveryJobs(): Request[ListDiscoveryJobsResponse, AWSError] = js.native
+  def listDiscoveryJobs(callback: js.Function2[/* err */ AWSError, /* data */ ListDiscoveryJobsResponse, Unit]): Request[ListDiscoveryJobsResponse, AWSError] = js.native
+  /**
+    * Provides a list of the existing discovery jobs in the Amazon Web Services Region and Amazon Web Services account where you're using DataSync Discovery.
+    */
+  def listDiscoveryJobs(params: ListDiscoveryJobsRequest): Request[ListDiscoveryJobsResponse, AWSError] = js.native
+  def listDiscoveryJobs(
+    params: ListDiscoveryJobsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListDiscoveryJobsResponse, Unit]
+  ): Request[ListDiscoveryJobsResponse, AWSError] = js.native
   
   /**
     * Returns a list of source and destination locations. If you have more locations than are returned in a response (that is, the response returns only a truncated list of your agents), the response contains a token that you can specify in your next request to fetch the next page of locations.
@@ -449,12 +551,26 @@ trait DataSync extends Service {
   ): Request[ListLocationsResponse, AWSError] = js.native
   
   /**
-    * Returns all the tags associated with a specified resource. 
+    * Lists the on-premises storage systems that you're using with DataSync Discovery.
+    */
+  def listStorageSystems(): Request[ListStorageSystemsResponse, AWSError] = js.native
+  def listStorageSystems(callback: js.Function2[/* err */ AWSError, /* data */ ListStorageSystemsResponse, Unit]): Request[ListStorageSystemsResponse, AWSError] = js.native
+  /**
+    * Lists the on-premises storage systems that you're using with DataSync Discovery.
+    */
+  def listStorageSystems(params: ListStorageSystemsRequest): Request[ListStorageSystemsResponse, AWSError] = js.native
+  def listStorageSystems(
+    params: ListStorageSystemsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListStorageSystemsResponse, Unit]
+  ): Request[ListStorageSystemsResponse, AWSError] = js.native
+  
+  /**
+    * Returns all the tags associated with an Amazon Web Services resource.
     */
   def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]): Request[ListTagsForResourceResponse, AWSError] = js.native
   /**
-    * Returns all the tags associated with a specified resource. 
+    * Returns all the tags associated with an Amazon Web Services resource.
     */
   def listTagsForResource(params: ListTagsForResourceRequest): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(
@@ -491,12 +607,40 @@ trait DataSync extends Service {
   ): Request[ListTasksResponse, AWSError] = js.native
   
   /**
-    * Starts a specific invocation of a task. A TaskExecution value represents an individual run of a task. Each task can have at most one TaskExecution at a time.  TaskExecution has the following transition phases: INITIALIZING | PREPARING | TRANSFERRING | VERIFYING | SUCCESS/FAILURE.  For detailed information, see the Task Execution section in the Components and Terminology topic in the DataSync User Guide.
+    * Permanently removes a storage system resource from DataSync Discovery, including the associated discovery jobs, collected data, and recommendations.
+    */
+  def removeStorageSystem(): Request[RemoveStorageSystemResponse, AWSError] = js.native
+  def removeStorageSystem(callback: js.Function2[/* err */ AWSError, /* data */ RemoveStorageSystemResponse, Unit]): Request[RemoveStorageSystemResponse, AWSError] = js.native
+  /**
+    * Permanently removes a storage system resource from DataSync Discovery, including the associated discovery jobs, collected data, and recommendations.
+    */
+  def removeStorageSystem(params: RemoveStorageSystemRequest): Request[RemoveStorageSystemResponse, AWSError] = js.native
+  def removeStorageSystem(
+    params: RemoveStorageSystemRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RemoveStorageSystemResponse, Unit]
+  ): Request[RemoveStorageSystemResponse, AWSError] = js.native
+  
+  /**
+    * Runs a DataSync discovery job on your on-premises storage system. If you haven't added the storage system to DataSync Discovery yet, do this first by using the AddStorageSystem operation.
+    */
+  def startDiscoveryJob(): Request[StartDiscoveryJobResponse, AWSError] = js.native
+  def startDiscoveryJob(callback: js.Function2[/* err */ AWSError, /* data */ StartDiscoveryJobResponse, Unit]): Request[StartDiscoveryJobResponse, AWSError] = js.native
+  /**
+    * Runs a DataSync discovery job on your on-premises storage system. If you haven't added the storage system to DataSync Discovery yet, do this first by using the AddStorageSystem operation.
+    */
+  def startDiscoveryJob(params: StartDiscoveryJobRequest): Request[StartDiscoveryJobResponse, AWSError] = js.native
+  def startDiscoveryJob(
+    params: StartDiscoveryJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartDiscoveryJobResponse, Unit]
+  ): Request[StartDiscoveryJobResponse, AWSError] = js.native
+  
+  /**
+    * Starts an DataSync task. For each task, you can only run one task execution at a time. There are several phases to a task execution. For more information, see Task execution statuses.  If you're planning to transfer data to or from an Amazon S3 location, review how DataSync can affect your S3 request charges and the DataSync pricing page before you begin. 
     */
   def startTaskExecution(): Request[StartTaskExecutionResponse, AWSError] = js.native
   def startTaskExecution(callback: js.Function2[/* err */ AWSError, /* data */ StartTaskExecutionResponse, Unit]): Request[StartTaskExecutionResponse, AWSError] = js.native
   /**
-    * Starts a specific invocation of a task. A TaskExecution value represents an individual run of a task. Each task can have at most one TaskExecution at a time.  TaskExecution has the following transition phases: INITIALIZING | PREPARING | TRANSFERRING | VERIFYING | SUCCESS/FAILURE.  For detailed information, see the Task Execution section in the Components and Terminology topic in the DataSync User Guide.
+    * Starts an DataSync task. For each task, you can only run one task execution at a time. There are several phases to a task execution. For more information, see Task execution statuses.  If you're planning to transfer data to or from an Amazon S3 location, review how DataSync can affect your S3 request charges and the DataSync pricing page before you begin. 
     */
   def startTaskExecution(params: StartTaskExecutionRequest): Request[StartTaskExecutionResponse, AWSError] = js.native
   def startTaskExecution(
@@ -505,12 +649,26 @@ trait DataSync extends Service {
   ): Request[StartTaskExecutionResponse, AWSError] = js.native
   
   /**
-    * Applies a key-value pair to an Amazon Web Services resource.
+    * Stops a running DataSync discovery job. You can stop a discovery job anytime. A job that's stopped before it's scheduled to end likely will provide you some information about your on-premises storage system resources. To get recommendations for a stopped job, you must use the GenerateRecommendations operation.
+    */
+  def stopDiscoveryJob(): Request[StopDiscoveryJobResponse, AWSError] = js.native
+  def stopDiscoveryJob(callback: js.Function2[/* err */ AWSError, /* data */ StopDiscoveryJobResponse, Unit]): Request[StopDiscoveryJobResponse, AWSError] = js.native
+  /**
+    * Stops a running DataSync discovery job. You can stop a discovery job anytime. A job that's stopped before it's scheduled to end likely will provide you some information about your on-premises storage system resources. To get recommendations for a stopped job, you must use the GenerateRecommendations operation.
+    */
+  def stopDiscoveryJob(params: StopDiscoveryJobRequest): Request[StopDiscoveryJobResponse, AWSError] = js.native
+  def stopDiscoveryJob(
+    params: StopDiscoveryJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StopDiscoveryJobResponse, Unit]
+  ): Request[StopDiscoveryJobResponse, AWSError] = js.native
+  
+  /**
+    * Applies a tag to an Amazon Web Services resource. Tags are key-value pairs that can help you manage, filter, and search for your resources. These include DataSync resources, such as locations, tasks, and task executions.
     */
   def tagResource(): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]): Request[TagResourceResponse, AWSError] = js.native
   /**
-    * Applies a key-value pair to an Amazon Web Services resource.
+    * Applies a tag to an Amazon Web Services resource. Tags are key-value pairs that can help you manage, filter, and search for your resources. These include DataSync resources, such as locations, tasks, and task executions.
     */
   def tagResource(params: TagResourceRequest): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(
@@ -519,12 +677,12 @@ trait DataSync extends Service {
   ): Request[TagResourceResponse, AWSError] = js.native
   
   /**
-    * Removes a tag from an Amazon Web Services resource.
+    * Removes tags from an Amazon Web Services resource.
     */
   def untagResource(): Request[UntagResourceResponse, AWSError] = js.native
   def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]): Request[UntagResourceResponse, AWSError] = js.native
   /**
-    * Removes a tag from an Amazon Web Services resource.
+    * Removes tags from an Amazon Web Services resource.
     */
   def untagResource(params: UntagResourceRequest): Request[UntagResourceResponse, AWSError] = js.native
   def untagResource(
@@ -545,6 +703,20 @@ trait DataSync extends Service {
     params: UpdateAgentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateAgentResponse, Unit]
   ): Request[UpdateAgentResponse, AWSError] = js.native
+  
+  /**
+    * Edits a DataSync discovery job configuration.
+    */
+  def updateDiscoveryJob(): Request[UpdateDiscoveryJobResponse, AWSError] = js.native
+  def updateDiscoveryJob(callback: js.Function2[/* err */ AWSError, /* data */ UpdateDiscoveryJobResponse, Unit]): Request[UpdateDiscoveryJobResponse, AWSError] = js.native
+  /**
+    * Edits a DataSync discovery job configuration.
+    */
+  def updateDiscoveryJob(params: UpdateDiscoveryJobRequest): Request[UpdateDiscoveryJobResponse, AWSError] = js.native
+  def updateDiscoveryJob(
+    params: UpdateDiscoveryJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateDiscoveryJobResponse, Unit]
+  ): Request[UpdateDiscoveryJobResponse, AWSError] = js.native
   
   /**
     * Updates some parameters of a previously created location for a Hadoop Distributed File System cluster.
@@ -603,6 +775,20 @@ trait DataSync extends Service {
   ): Request[UpdateLocationSmbResponse, AWSError] = js.native
   
   /**
+    * Modifies some configurations of an on-premises storage system resource that you're using with DataSync Discovery.
+    */
+  def updateStorageSystem(): Request[UpdateStorageSystemResponse, AWSError] = js.native
+  def updateStorageSystem(callback: js.Function2[/* err */ AWSError, /* data */ UpdateStorageSystemResponse, Unit]): Request[UpdateStorageSystemResponse, AWSError] = js.native
+  /**
+    * Modifies some configurations of an on-premises storage system resource that you're using with DataSync Discovery.
+    */
+  def updateStorageSystem(params: UpdateStorageSystemRequest): Request[UpdateStorageSystemResponse, AWSError] = js.native
+  def updateStorageSystem(
+    params: UpdateStorageSystemRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateStorageSystemResponse, Unit]
+  ): Request[UpdateStorageSystemResponse, AWSError] = js.native
+  
+  /**
     * Updates the metadata associated with a task.
     */
   def updateTask(): Request[UpdateTaskResponse, AWSError] = js.native
@@ -617,12 +803,12 @@ trait DataSync extends Service {
   ): Request[UpdateTaskResponse, AWSError] = js.native
   
   /**
-    * Updates execution of a task. You can modify bandwidth throttling for a task execution that is running or queued. For more information, see Adjusting Bandwidth Throttling for a Task Execution.  The only Option that can be modified by UpdateTaskExecution is  BytesPerSecond . 
+    * Modifies a running DataSync task.  Currently, the only Option that you can modify with UpdateTaskExecution is  BytesPerSecond , which throttles bandwidth for a running or queued task. 
     */
   def updateTaskExecution(): Request[UpdateTaskExecutionResponse, AWSError] = js.native
   def updateTaskExecution(callback: js.Function2[/* err */ AWSError, /* data */ UpdateTaskExecutionResponse, Unit]): Request[UpdateTaskExecutionResponse, AWSError] = js.native
   /**
-    * Updates execution of a task. You can modify bandwidth throttling for a task execution that is running or queued. For more information, see Adjusting Bandwidth Throttling for a Task Execution.  The only Option that can be modified by UpdateTaskExecution is  BytesPerSecond . 
+    * Modifies a running DataSync task.  Currently, the only Option that you can modify with UpdateTaskExecution is  BytesPerSecond , which throttles bandwidth for a running or queued task. 
     */
   def updateTaskExecution(params: UpdateTaskExecutionRequest): Request[UpdateTaskExecutionResponse, AWSError] = js.native
   def updateTaskExecution(

@@ -12,6 +12,9 @@ trait ExtendOptions extends StObject {
   /** single pixel count to bottom edge (optional, default 0) */
   var bottom: js.UndefOr[Double] = js.undefined
   
+  /** how the extension is done, one of: "background", "copy", "repeat", "mirror" (optional, default `'background'`) */
+  var extendWith: js.UndefOr[ExtendWith] = js.undefined
+  
   /** single pixel count to left edge (optional, default 0) */
   var left: js.UndefOr[Double] = js.undefined
   
@@ -38,6 +41,10 @@ object ExtendOptions {
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
     inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+    
+    inline def setExtendWith(value: ExtendWith): Self = StObject.set(x, "extendWith", value.asInstanceOf[js.Any])
+    
+    inline def setExtendWithUndefined: Self = StObject.set(x, "extendWith", js.undefined)
     
     inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

@@ -1,5 +1,8 @@
 package typings.std
 
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
 import typings.std.stdStrings.abort
 import typings.std.stdStrings.load
 import typings.std.stdStrings.loadend
@@ -16,13 +19,13 @@ trait FileReader
      with EventTarget {
   
   /* standard dom */
-  val DONE: Double = js.native
+  val DONE: `2` = js.native
   
   /* standard dom */
-  val EMPTY: Double = js.native
+  val EMPTY: `0` = js.native
   
   /* standard dom */
-  val LOADING: Double = js.native
+  val LOADING: `1` = js.native
   
   /* standard dom */
   def abort(): Unit = js.native
@@ -166,7 +169,7 @@ trait FileReader
   def readAsText(blob: Blob, encoding: java.lang.String): Unit = js.native
   
   /* standard dom */
-  val readyState: Double = js.native
+  val readyState: `0` | `1` | `2` = js.native
   
   /* standard dom */
   @JSName("removeEventListener")

@@ -4,10 +4,13 @@ import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.GenericTagDesign
 import typings.openui5.sapMLibraryMod.GenericTagValueState
 import typings.openui5.sapMLibraryMod.IOverflowToolbarContent
+import typings.openui5.sapMLibraryMod.OverflowToolbarConfig
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
 import typings.openui5.sapUiCoreLibraryMod.ID
 import typings.openui5.sapUiCoreLibraryMod.ValueState
+import typings.std.Object
+import typings.std.PropertyKey
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -56,6 +59,27 @@ object sapMGenericTagMod {
     
     /* CompleteClass */
     var __implements__sap_m_IOverflowToolbarContent: Boolean = js.native
+    
+    /** The initial value of Object.prototype.constructor is the standard built-in Object constructor. */
+    /* standard es5 */
+    /* CompleteClass */
+    var constructor: js.Function = js.native
+    
+    /**
+      * Determines whether an object has a property with the specified name.
+      * @param v A property name.
+      */
+    /* standard es5 */
+    /* CompleteClass */
+    override def hasOwnProperty(v: PropertyKey): Boolean = js.native
+    
+    /**
+      * Determines whether a specified property is enumerable.
+      * @param v A property name.
+      */
+    /* standard es5 */
+    /* CompleteClass */
+    override def propertyIsEnumerable(v: PropertyKey): Boolean = js.native
   }
   /* static members */
   object default {
@@ -128,7 +152,10 @@ object sapMGenericTagMod {
   @js.native
   trait GenericTag
     extends typings.openui5.sapUiCoreControlMod.default
-       with IOverflowToolbarContent {
+       with IOverflowToolbarContent
+       with /* was: sap.m.IToolbarInteractiveControl */ Object {
+    
+    var __implements__sap_m_IToolbarInteractiveControl: Boolean = js.native
     
     def addAriaLabelledBy(
       /**
@@ -243,6 +270,8 @@ object sapMGenericTagMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:press press} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -273,11 +302,12 @@ object sapMGenericTagMod {
     def getDesign(): GenericTagDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GenericTagDesign * / any */ String) = js.native
     
     /**
-      * Sets the behavior of the `GenericTag` inside an `OverflowToolbar` configuration.
+      * Sets the behavior of the `GenericTag` inside an `OverflowToolbar` configuration. Required by the {@link
+      * sap.m.IOverflowToolbarContent} interface.
       *
       * @returns Configuration information for the `sap.m.IOverflowToolbarContent` interface.
       */
-    def getOverflowToolbarConfig(): js.Object = js.native
+    def getOverflowToolbarConfig(): OverflowToolbarConfig = js.native
     
     /**
       * Gets current value of property {@link #getStatus status}.

@@ -1,7 +1,7 @@
 
 # Scala.js typings for electron-installer-dmg
 
-Typings are for version 3.0
+Typings are for version 4.0
 
 ## Library description:
 Create DMG installers for your electron apps.

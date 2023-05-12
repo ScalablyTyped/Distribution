@@ -18,7 +18,6 @@ open class ChromeExtensionFlowCls protected ()
     *     directory of the extension to the receiver page. This is an HTML file
     *     that has been made web-accessible, and that calls the receiver method
     *     `Asana.auth.ChromeExtensionFlow.runReceiver();`.
-    * @constructor
     */
   def this(options: Any) = this()
   

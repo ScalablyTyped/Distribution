@@ -11,13 +11,15 @@ object distEventloopDottestMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def testAnimationFrame(tc: TestCase): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("testAnimationFrame")(tc.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def testAnimationFrame(_tc: TestCase): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("testAnimationFrame")(_tc.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  inline def testEventloopOrder(tc: TestCase): js.Promise[js.Array[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("testEventloopOrder")(tc.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Unit]]]
+  inline def testDebouncer(_tc: TestCase): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("testDebouncer")(_tc.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  inline def testIdleCallback(tc: TestCase): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("testIdleCallback")(tc.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def testEventloopOrder(_tc: TestCase): js.Promise[js.Array[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("testEventloopOrder")(_tc.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Unit]]]
   
-  inline def testInterval(tc: TestCase): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("testInterval")(tc.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def testIdleCallback(_tc: TestCase): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("testIdleCallback")(_tc.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  inline def testTimeout(tc: TestCase): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("testTimeout")(tc.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def testInterval(_tc: TestCase): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("testInterval")(_tc.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  
+  inline def testTimeout(_tc: TestCase): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("testTimeout")(_tc.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

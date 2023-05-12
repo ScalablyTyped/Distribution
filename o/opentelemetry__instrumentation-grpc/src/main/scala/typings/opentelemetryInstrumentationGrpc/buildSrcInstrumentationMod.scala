@@ -1,7 +1,7 @@
 package typings.opentelemetryInstrumentationGrpc
 
+import typings.opentelemetryApi.buildSrcMetricsMeterProviderMod.MeterProvider
 import typings.opentelemetryApi.buildSrcTraceTracerProviderMod.TracerProvider
-import typings.opentelemetryApiMetrics.buildSrcTypesMeterProviderMod.MeterProvider
 import typings.opentelemetryInstrumentationGrpc.buildSrcTypesMod.GrpcInstrumentationConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

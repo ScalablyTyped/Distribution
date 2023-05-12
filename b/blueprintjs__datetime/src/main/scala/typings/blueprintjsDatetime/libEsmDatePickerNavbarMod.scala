@@ -14,7 +14,7 @@ object libEsmDatePickerNavbarMod {
     def this(props: IDatePickerNavbarProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: IDatePickerNavbarProps, context: Any) = this()
     

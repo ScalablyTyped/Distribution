@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class InlineCompletionList protected () extends StObject {
   /**
-    * Creates a new list of inline completion items.
-    */
+  		 * Creates a new list of inline completion items.
+  		*/
   def this(items: js.Array[InlineCompletionItem]) = this()
   
   /**
-    * The inline completion items.
-    */
+  		 * The inline completion items.
+  		 */
   var items: js.Array[InlineCompletionItem] = js.native
 }

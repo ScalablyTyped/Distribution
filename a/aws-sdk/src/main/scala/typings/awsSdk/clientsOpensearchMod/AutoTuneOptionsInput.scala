@@ -12,9 +12,14 @@ trait AutoTuneOptionsInput extends StObject {
   var DesiredState: js.UndefOr[AutoTuneDesiredState] = js.undefined
   
   /**
-    * A list of maintenance schedules during which Auto-Tune can deploy changes. Maintenance schedules are overwrite, not append. If your request includes no schedules, the request deletes all existing schedules. To preserve existing schedules, make a call to DescribeDomainConfig first and use the MaintenanceSchedules portion of the response as the basis for this section.
+    * A list of maintenance schedules during which Auto-Tune can deploy changes. Maintenance windows are deprecated and have been replaced with off-peak windows.
     */
   var MaintenanceSchedules: js.UndefOr[AutoTuneMaintenanceScheduleList] = js.undefined
+  
+  /**
+    * Whether to schedule Auto-Tune optimizations that require blue/green deployments during the domain's configured daily off-peak window.
+    */
+  var UseOffPeakWindow: js.UndefOr[Boolean] = js.undefined
 }
 object AutoTuneOptionsInput {
   
@@ -35,5 +40,9 @@ object AutoTuneOptionsInput {
     inline def setMaintenanceSchedulesUndefined: Self = StObject.set(x, "MaintenanceSchedules", js.undefined)
     
     inline def setMaintenanceSchedulesVarargs(value: AutoTuneMaintenanceSchedule*): Self = StObject.set(x, "MaintenanceSchedules", js.Array(value*))
+    
+    inline def setUseOffPeakWindow(value: Boolean): Self = StObject.set(x, "UseOffPeakWindow", value.asInstanceOf[js.Any])
+    
+    inline def setUseOffPeakWindowUndefined: Self = StObject.set(x, "UseOffPeakWindow", js.undefined)
   }
 }

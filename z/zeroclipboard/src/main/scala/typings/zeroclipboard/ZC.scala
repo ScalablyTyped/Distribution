@@ -163,7 +163,6 @@ object ZC {
     
     /**
       * A unique identifier for this ZeroClipboard client instance.
-      * @type {string}
       */
     var id: String = js.native
     
@@ -411,45 +410,38 @@ object ZC {
     
     /**
       * The class used to indicate that a clipped element is active (is being clicked).
-      * @type {string}
       */
     var activeClass: js.UndefOr[String] = js.undefined
     
     /**
       * Setting this to `false` would allow users to handle calling `ZeroClipboard.focus(...);`
       * themselves instead of relying on our per-element `mouseover` handler.
-      * @type {boolean}
       */
     var autoActivate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Bubble synthetic events in JavaScript after they are received by the Flash object.
-      * @type {boolean}
       */
     var bubbleEvents: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Include a "noCache" query parameter on requests for the SWF.
-      * @type {boolean}
       */
     var cacheBust: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets the class of the `div` encapsulating the Flash object.
-      * @type {string}
       */
     var containerClass: js.UndefOr[String] = js.undefined
     
     /**
       * Sets the ID of the `div` encapsulating the Flash object.
       * Value is validated against the [HTML4 spec for `ID` tokens][valid_ids].
-      * @type {string}
       */
     var containerId: js.UndefOr[String] = js.undefined
     
     /**
       * Ensure OS-compliant line endings, i.e. "\r\n" on Windows, "\n" elsewhere
-      * @type {boolean}
       */
     var fixLineEndings: js.UndefOr[Boolean] = js.undefined
     
@@ -457,52 +449,44 @@ object ZC {
       * How many milliseconds to wait for the Flash SWF to load and respond before assuming that
       * Flash is deactivated (e.g. click-to-play) in the user's browser. If you don't care about
       * how long it takes to load the SWF, you can set this to `null`.
-      * @type {number}
       */
     var flashLoadTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Enable use of the fancy "Desktop" clipboard, even on Linux where it is known to suck.
-      * @type {boolean}
       */
     var forceEnhancedClipboard: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Forcibly set the hand cursor ("pointer") for all clipped elements.
       * IMPORTANT: This configuration value CAN be modified while a SWF is actively embedded.
-      * @type {boolean}
       */
     var forceHandCursor: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The class used to indicate that a clipped element is being hovered over.
-      * @type {string}
       */
     var hoverClass: js.UndefOr[String] = js.undefined
     
     /**
       * Sets the ID and name of the Flash `object` element.
       * Value is validated against the [HTML4 spec for `ID` and `Name` tokens][valid_ids].
-      * @type {string}
       */
     var swfObjectId: js.UndefOr[String] = js.undefined
     
     /**
       * SWF URL, relative to the page. Default value will be "ZeroClipboard.swf" under the same path as the ZeroClipboard JS file.
-      * @type {string}
       */
     var swfPath: js.UndefOr[String] = js.undefined
     
     /**
       * Sets the title of the `div` encapsulating the Flash object.
       * IMPORTANT: This configuration value CAN be modified while a SWF is actively embedded.
-      * @type {string}
       */
     var title: js.UndefOr[String] = js.undefined
     
     /**
       * SWF inbound scripting policy: page domains that the SWF should trust. (single string, or array of strings)
-      * @type {SingleOrList<string>}
       */
     var trustedDomains: js.UndefOr[js.Array[String]] = js.undefined
     
@@ -510,7 +494,6 @@ object ZC {
       * The z-index used by the Flash object.
       * Max value (32-bit): 2147483647.
       * IMPORTANT: This configuration value CAN be modified while a SWF is actively embedded.
-      * @type {number}
       */
     var zIndex: js.UndefOr[Double] = js.undefined
   }
@@ -904,7 +887,6 @@ object ZC {
     /**
       * Create the Flash bridge SWF object.
       * IMPORTANT: This method should be considered private.
-      * @private
       */
     def create(): Unit = js.native
     
@@ -930,7 +912,6 @@ object ZC {
       * Indicates if Flash Player is definitely unusable (disabled, outdated, unavailable, or deactivated).
       * IMPORTANT: This method should be considered private.
       * @return {boolean}
-      * @private
       */
     def isFlashUnusable(): Boolean = js.native
     
@@ -942,7 +923,6 @@ object ZC {
     
     /**
       * The version of the ZeroClipboard library being used, e.g. "2.0.0".
-      * @type {string}
       */
     var version: String = js.native
   }

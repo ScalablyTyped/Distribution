@@ -1,7 +1,7 @@
 
 # Scala.js typings for read-pkg
 
-Typings are for version 7.1.0
+Typings are for version 8.0.0
 
 ## Library description:
 Read a package.json file

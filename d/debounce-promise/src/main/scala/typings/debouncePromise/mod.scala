@@ -1,5 +1,6 @@
 package typings.debouncePromise
 
+import typings.debouncePromise.anon.DebounceOptionsaccumulate
 import typings.std.Parameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -48,6 +49,69 @@ object mod {
   ] = (^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* args */ Parameters[T], 
     /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<T> extends std.Promise<any> ? std.ReturnType<T> : std.Promise<std.ReturnType<T>> */ js.Any
+  ]]
+  // func is called with an array of array of parameters if accumulate is true
+  // Use Array<[arg0, arg1, ..., argN]> as func's first parameter type for correct hints
+  inline def apply[T /* <: js.Array[Any] */, R](
+    func: js.Function1[
+      /* args */ js.Array[
+        /* import warning: importer.ImportType#apply c repeated non-array type: T */ js.Array[T]
+      ], 
+      R
+    ]
+  ): js.Function1[
+    /* args */ T, 
+    /* import warning: importer.ImportType#apply Failed type conversion: R extends std.Promise<any> ? R : std.Promise<R> */ js.Any
+  ] = ^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* args */ T, 
+    /* import warning: importer.ImportType#apply Failed type conversion: R extends std.Promise<any> ? R : std.Promise<R> */ js.Any
+  ]]
+  inline def apply[T /* <: js.Array[Any] */, R](
+    func: js.Function1[
+      /* args */ js.Array[
+        /* import warning: importer.ImportType#apply c repeated non-array type: T */ js.Array[T]
+      ], 
+      R
+    ],
+    wait: Double
+  ): js.Function1[
+    /* args */ T, 
+    /* import warning: importer.ImportType#apply Failed type conversion: R extends std.Promise<any> ? R : std.Promise<R> */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* args */ T, 
+    /* import warning: importer.ImportType#apply Failed type conversion: R extends std.Promise<any> ? R : std.Promise<R> */ js.Any
+  ]]
+  inline def apply[T /* <: js.Array[Any] */, R](
+    func: js.Function1[
+      /* args */ js.Array[
+        /* import warning: importer.ImportType#apply c repeated non-array type: T */ js.Array[T]
+      ], 
+      R
+    ],
+    wait: Double,
+    options: DebounceOptionsaccumulate
+  ): js.Function1[
+    /* args */ T, 
+    /* import warning: importer.ImportType#apply Failed type conversion: R extends std.Promise<any> ? R : std.Promise<R> */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* args */ T, 
+    /* import warning: importer.ImportType#apply Failed type conversion: R extends std.Promise<any> ? R : std.Promise<R> */ js.Any
+  ]]
+  inline def apply[T /* <: js.Array[Any] */, R](
+    func: js.Function1[
+      /* args */ js.Array[
+        /* import warning: importer.ImportType#apply c repeated non-array type: T */ js.Array[T]
+      ], 
+      R
+    ],
+    wait: Unit,
+    options: DebounceOptionsaccumulate
+  ): js.Function1[
+    /* args */ T, 
+    /* import warning: importer.ImportType#apply Failed type conversion: R extends std.Promise<any> ? R : std.Promise<R> */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* args */ T, 
+    /* import warning: importer.ImportType#apply Failed type conversion: R extends std.Promise<any> ? R : std.Promise<R> */ js.Any
   ]]
   
   @JSImport("debounce-promise", JSImport.Namespace)

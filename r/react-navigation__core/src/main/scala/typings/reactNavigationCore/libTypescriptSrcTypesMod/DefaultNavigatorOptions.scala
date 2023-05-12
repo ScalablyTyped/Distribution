@@ -1,7 +1,6 @@
 package typings.reactNavigationCore.libTypescriptSrcTypesMod
 
 import typings.react.mod.ReactNode
-import typings.reactNavigationCore.anon.NavigationOptions
 import typings.reactNavigationCore.anon.NavigationRoute
 import typings.reactNavigationRouters.libTypescriptSrcTypesMod.DefaultRouterOptions
 import typings.reactNavigationRouters.libTypescriptSrcTypesMod.NavigationState
@@ -19,14 +18,6 @@ trait DefaultNavigatorOptions[ParamList /* <: ParamListBase */, State /* <: Navi
     * Only `Screen`, `Group` and `React.Fragment` are supported as children.
     */
   var children: ReactNode
-  
-  /**
-    * Default options specified by the navigator.
-    * It receives the custom options in the arguments if a function is specified.
-    */
-  var defaultScreenOptions: js.UndefOr[
-    ScreenOptions | (js.Function1[/* props */ NavigationOptions[ParamList, ScreenOptions], ScreenOptions])
-  ] = js.undefined
   
   /**
     * Optional ID for the navigator. Can be used with `navigation.getParent(id)` to refer to a parent.
@@ -60,14 +51,6 @@ object DefaultNavigatorOptions {
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-    
-    inline def setDefaultScreenOptions(
-      value: ScreenOptions | (js.Function1[/* props */ NavigationOptions[ParamList, ScreenOptions], ScreenOptions])
-    ): Self = StObject.set(x, "defaultScreenOptions", value.asInstanceOf[js.Any])
-    
-    inline def setDefaultScreenOptionsFunction1(value: /* props */ NavigationOptions[ParamList, ScreenOptions] => ScreenOptions): Self = StObject.set(x, "defaultScreenOptions", js.Any.fromFunction1(value))
-    
-    inline def setDefaultScreenOptionsUndefined: Self = StObject.set(x, "defaultScreenOptions", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

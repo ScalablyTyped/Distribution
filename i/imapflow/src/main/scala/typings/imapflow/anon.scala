@@ -1,5 +1,6 @@
 package typings.imapflow
 
+import typings.imapflow.mod.StatusQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -134,29 +135,22 @@ object anon {
   
   trait HighestModseq extends StObject {
     
-    var highestModseq: Boolean
+    var highestModseq: js.UndefOr[Boolean] = js.undefined
     
-    var messages: Boolean
+    var messages: js.UndefOr[Boolean] = js.undefined
     
-    var recent: Boolean
+    var recent: js.UndefOr[Boolean] = js.undefined
     
-    var uidNext: Boolean
+    var uidNext: js.UndefOr[Boolean] = js.undefined
     
-    var uidValidity: Boolean
+    var uidValidity: js.UndefOr[Boolean] = js.undefined
     
-    var unseen: Boolean
+    var unseen: js.UndefOr[Boolean] = js.undefined
   }
   object HighestModseq {
     
-    inline def apply(
-      highestModseq: Boolean,
-      messages: Boolean,
-      recent: Boolean,
-      uidNext: Boolean,
-      uidValidity: Boolean,
-      unseen: Boolean
-    ): HighestModseq = {
-      val __obj = js.Dynamic.literal(highestModseq = highestModseq.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], recent = recent.asInstanceOf[js.Any], uidNext = uidNext.asInstanceOf[js.Any], uidValidity = uidValidity.asInstanceOf[js.Any], unseen = unseen.asInstanceOf[js.Any])
+    inline def apply(): HighestModseq = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HighestModseq]
     }
     
@@ -165,15 +159,27 @@ object anon {
       
       inline def setHighestModseq(value: Boolean): Self = StObject.set(x, "highestModseq", value.asInstanceOf[js.Any])
       
+      inline def setHighestModseqUndefined: Self = StObject.set(x, "highestModseq", js.undefined)
+      
       inline def setMessages(value: Boolean): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      
+      inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
       
       inline def setRecent(value: Boolean): Self = StObject.set(x, "recent", value.asInstanceOf[js.Any])
       
+      inline def setRecentUndefined: Self = StObject.set(x, "recent", js.undefined)
+      
       inline def setUidNext(value: Boolean): Self = StObject.set(x, "uidNext", value.asInstanceOf[js.Any])
+      
+      inline def setUidNextUndefined: Self = StObject.set(x, "uidNext", js.undefined)
       
       inline def setUidValidity(value: Boolean): Self = StObject.set(x, "uidValidity", value.asInstanceOf[js.Any])
       
+      inline def setUidValidityUndefined: Self = StObject.set(x, "uidValidity", js.undefined)
+      
       inline def setUnseen(value: Boolean): Self = StObject.set(x, "unseen", value.asInstanceOf[js.Any])
+      
+      inline def setUnseenUndefined: Self = StObject.set(x, "unseen", js.undefined)
     }
   }
   
@@ -214,6 +220,32 @@ object anon {
       inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
       
       inline def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
+    }
+  }
+  
+  trait SpecialUseHints extends StObject {
+    
+    var specialUseHints: js.UndefOr[typings.imapflow.mod.SpecialUseHints] = js.undefined
+    
+    var statusQuery: js.UndefOr[StatusQuery] = js.undefined
+  }
+  object SpecialUseHints {
+    
+    inline def apply(): SpecialUseHints = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SpecialUseHints]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpecialUseHints] (val x: Self) extends AnyVal {
+      
+      inline def setSpecialUseHints(value: typings.imapflow.mod.SpecialUseHints): Self = StObject.set(x, "specialUseHints", value.asInstanceOf[js.Any])
+      
+      inline def setSpecialUseHintsUndefined: Self = StObject.set(x, "specialUseHints", js.undefined)
+      
+      inline def setStatusQuery(value: StatusQuery): Self = StObject.set(x, "statusQuery", value.asInstanceOf[js.Any])
+      
+      inline def setStatusQueryUndefined: Self = StObject.set(x, "statusQuery", js.undefined)
     }
   }
   

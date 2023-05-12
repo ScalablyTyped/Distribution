@@ -12,6 +12,8 @@ import typings.openui5.sapUiCoreLibraryMod.IShrinkable
 import typings.openui5.sapUiCoreLibraryMod.TextAlign
 import typings.openui5.sapUiCoreLibraryMod.TextDirection
 import typings.std.HTMLElement
+import typings.std.Object
+import typings.std.PropertyKey
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -69,6 +71,27 @@ object sapMTextMod {
     
     /* CompleteClass */
     var __implements__sap_ui_core_IShrinkable: Boolean = js.native
+    
+    /** The initial value of Object.prototype.constructor is the standard built-in Object constructor. */
+    /* standard es5 */
+    /* CompleteClass */
+    var constructor: js.Function = js.native
+    
+    /**
+      * Determines whether an object has a property with the specified name.
+      * @param v A property name.
+      */
+    /* standard es5 */
+    /* CompleteClass */
+    override def hasOwnProperty(v: PropertyKey): Boolean = js.native
+    
+    /**
+      * Determines whether a specified property is enumerable.
+      * @param v A property name.
+      */
+    /* standard es5 */
+    /* CompleteClass */
+    override def propertyIsEnumerable(v: PropertyKey): Boolean = js.native
   }
   /* static members */
   object default {
@@ -139,6 +162,7 @@ object sapMTextMod {
     
     /**
       * @SINCE 1.13.2
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Defines whether browser supports native line clamp or not
       */
@@ -149,6 +173,7 @@ object sapMTextMod {
     
     /**
       * @SINCE 1.30.3
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * To prevent from the layout thrashing of the `textContent` call, this method first tries to set the `nodeValue`
       * of the first child if it exists.
@@ -174,7 +199,10 @@ object sapMTextMod {
     extends typings.openui5.sapUiCoreControlMod.default
        with IShrinkable
        with IFormContent
-       with ISemanticFormContent {
+       with ISemanticFormContent
+       with /* was: sap.m.IToolbarInteractiveControl */ Object {
+    
+    var __implements__sap_m_IToolbarInteractiveControl: Boolean = js.native
     
     /**
       * Binds property {@link #getText text} to model data.
@@ -191,6 +219,7 @@ object sapMTextMod {
     
     /**
       * @SINCE 1.22
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Determines per instance whether line height should be cached or not.
       *
@@ -200,6 +229,7 @@ object sapMTextMod {
     
     /**
       * @SINCE 1.20
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Decides whether the control can use native line clamp feature or not.
       *
@@ -209,6 +239,7 @@ object sapMTextMod {
     
     /**
       * @SINCE 1.22
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Sets the max height to support `maxLines` property.
       *
@@ -222,6 +253,7 @@ object sapMTextMod {
     
     /**
       * @SINCE 1.20
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Clamps the wrapping text according to max lines and returns the found ellipsis position. Parameters can
       * be used for better performance.
@@ -312,6 +344,7 @@ object sapMTextMod {
     
     /**
       * @SINCE 1.13.2
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Ellipsis(...) text to indicate more text when clampText function is used.
       *
@@ -321,6 +354,7 @@ object sapMTextMod {
     
     /**
       * @SINCE 1.22
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Returns the max height according to max lines and line height calculation. This is not calculated max
       * height!
@@ -348,6 +382,7 @@ object sapMTextMod {
     
     /**
       * @SINCE 1.22
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Caches and returns the computed line height of the text.
       * See:
@@ -425,6 +460,7 @@ object sapMTextMod {
     
     /**
       * @SINCE 1.22
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Returns the text node container's DOM reference. This can be different from `getDomRef` when inner wrapper
       * is needed.
@@ -471,6 +507,7 @@ object sapMTextMod {
     
     /**
       * @SINCE 1.22
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Determines whether max lines should be rendered or not.
       *
@@ -480,6 +517,7 @@ object sapMTextMod {
     
     /**
       * @SINCE 1.22
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Default line height value as a number when line height is normal.
       *

@@ -10,6 +10,9 @@ object sapUiTestPageObjectFactoryMod {
   
   @JSImport("sap/ui/test/PageObjectFactory", JSImport.Default)
   @js.native
+  /**
+    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    */
   open class default ()
     extends typings.openui5.sapUiBaseObjectMod.default
   /* static members */
@@ -20,6 +23,8 @@ object sapUiTestPageObjectFactoryMod {
     val ^ : js.Any = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Creates a set of page objects, each consisting of actions and assertions, and adds them to the Opa configuration.
       *
       * Use page objects to structure your actions and assertions based on parts of the screen. This helps to

@@ -24,6 +24,13 @@ object distSrcErrorsMod {
     /* CompleteClass */
     var name: String = js.native
   }
+  /* static members */
+  object InvalidCryptoExchangeError {
+    
+    @JSImport("@libp2p/interface-connection-encrypter/dist/src/errors", "InvalidCryptoExchangeError.code")
+    @js.native
+    val code: /* "ERR_INVALID_CRYPTO_EXCHANGE" */ String = js.native
+  }
   
   @JSImport("@libp2p/interface-connection-encrypter/dist/src/errors", "InvalidCryptoTransmissionError")
   @js.native
@@ -42,6 +49,13 @@ object distSrcErrorsMod {
     /* CompleteClass */
     var name: String = js.native
   }
+  /* static members */
+  object InvalidCryptoTransmissionError {
+    
+    @JSImport("@libp2p/interface-connection-encrypter/dist/src/errors", "InvalidCryptoTransmissionError.code")
+    @js.native
+    val code: /* "ERR_INVALID_CRYPTO_TRANSMISSION" */ String = js.native
+  }
   
   @JSImport("@libp2p/interface-connection-encrypter/dist/src/errors", "UnexpectedPeerError")
   @js.native
@@ -59,5 +73,12 @@ object distSrcErrorsMod {
     /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
+  }
+  /* static members */
+  object UnexpectedPeerError {
+    
+    @JSImport("@libp2p/interface-connection-encrypter/dist/src/errors", "UnexpectedPeerError.code")
+    @js.native
+    val code: /* "ERR_UNEXPECTED_PEER" */ String = js.native
   }
 }

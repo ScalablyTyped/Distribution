@@ -29,6 +29,14 @@ trait ConditionalRangeFormat
     */
   val borders: ConditionalRangeBorderCollection = js.native
   
+  /**
+    * Remove the format properties from a conditional format rule. This creates a rule with no format settings.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.17]
+    */
+  def clearFormat(): Unit = js.native
+  
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_ConditionalRangeFormat: RequestContext = js.native

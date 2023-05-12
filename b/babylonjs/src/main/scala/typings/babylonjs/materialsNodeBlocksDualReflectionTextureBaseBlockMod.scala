@@ -3,6 +3,7 @@ package typings.babylonjs
 import typings.babylonjs.materialsNodeNodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPoint
 import typings.babylonjs.materialsNodeNodeMaterialBlockMod.NodeMaterialBlock
 import typings.babylonjs.materialsNodeNodeMaterialBuildStateMod.NodeMaterialBuildState
+import typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterialTextureBlocks
 import typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
@@ -13,7 +14,9 @@ object materialsNodeBlocksDualReflectionTextureBaseBlockMod {
   
   /* note: abstract class */ @JSImport("babylonjs/Materials/Node/Blocks/Dual/reflectionTextureBaseBlock", "ReflectionTextureBaseBlock")
   @js.native
-  open class ReflectionTextureBaseBlock protected () extends NodeMaterialBlock {
+  open class ReflectionTextureBaseBlock protected ()
+    extends NodeMaterialBlock
+       with NodeMaterialTextureBlocks {
     /**
       * Create a new ReflectionTextureBaseBlock
       * @param name defines the block name
@@ -66,6 +69,8 @@ object materialsNodeBlocksDualReflectionTextureBaseBlockMod {
     
     /* protected */ def _getTexture(): Nullable[BaseTexture] = js.native
     
+    /* protected */ def _onGenerateOnlyFragmentCodeChanged(): Boolean = js.native
+    
     /* protected */ var _positionUVWName: String = js.native
     
     /* protected */ var _reflectionColorName: String = js.native
@@ -84,12 +89,19 @@ object materialsNodeBlocksDualReflectionTextureBaseBlockMod {
     
     /* protected */ var _reflectionVectorName: String = js.native
     
+    /* protected */ def _setTarget(): Unit = js.native
+    
     /* protected */ var _texture: Nullable[BaseTexture] = js.native
+    
+    /* protected */ var _worldPositionNameInFragmentOnlyMode: String = js.native
     
     /**
       * Gets the camera (or eye) position component
       */
     def cameraPosition: NodeMaterialConnectionPoint = js.native
+    
+    /** Indicates that no code should be generated in the vertex shader. Can be useful in some specific circumstances (like when doing ray marching for eg) */
+    var generateOnlyFragmentCode: Boolean = js.native
     
     /**
       * Generates the reflection color code for the fragment code path
@@ -187,5 +199,14 @@ object materialsNodeBlocksDualReflectionTextureBaseBlockMod {
       * @returns the shader code
       */
     def writeOutputs(state: NodeMaterialBuildState, varName: String): String = js.native
+  }
+  /* static members */
+  object ReflectionTextureBaseBlock {
+    
+    @JSImport("babylonjs/Materials/Node/Blocks/Dual/reflectionTextureBaseBlock", "ReflectionTextureBaseBlock")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def _OnGenerateOnlyFragmentCodeChanged(block: NodeMaterialBlock, _propertyName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("_OnGenerateOnlyFragmentCodeChanged")(block.asInstanceOf[js.Any], _propertyName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
 }

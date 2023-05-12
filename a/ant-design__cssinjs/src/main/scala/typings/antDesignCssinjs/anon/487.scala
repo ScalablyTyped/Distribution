@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.AspectRatio
+import typings.csstype.mod.Property.MarkerMid
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `487` extends StObject {
   
   var value: js.UndefOr[
-    AspectRatio | (js.Array[
-      (Extract[js.UndefOr[AspectRatio | js.Array[NonNullable[js.UndefOr[AspectRatio]]]], String]) | NonNullable[js.UndefOr[AspectRatio]]
+    MarkerMid | (js.Array[
+      (Extract[js.UndefOr[MarkerMid | js.Array[NonNullable[js.UndefOr[MarkerMid]]]], String]) | NonNullable[js.UndefOr[MarkerMid]]
     ])
   ] = js.native
 }

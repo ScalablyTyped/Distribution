@@ -12,7 +12,7 @@ trait InputDataConfig extends StObject {
   var ContentType: typings.awsSdk.clientsTranslateMod.ContentType
   
   /**
-    * The URI of the AWS S3 folder that contains the input files. Amazon Translate translates all the files in the folder. The folder must be in the same Region as the API endpoint you are calling.  The URI can also point to a single input document, or it can provide the prefix for a collection of input documents. For example. if you use the URI S3://bucketName/prefix and the prefix is a single file, Amazon Translate uses that files as input. If more than one file begins with the prefix, Amazon Translate uses all of them as input. 
+    * The URI of the AWS S3 folder that contains the input files. Amazon Translate translates all the files in the folder and all its sub-folders. The folder must be in the same Region as the API endpoint you are calling.
     */
   var S3Uri: typings.awsSdk.clientsTranslateMod.S3Uri
 }

@@ -12,7 +12,7 @@ trait StudioComponentInitializationScript extends StObject {
   var launchProfileProtocolVersion: js.UndefOr[LaunchProfileProtocolVersion] = js.undefined
   
   /**
-    * The platform of the initialization script, either WINDOWS or LINUX.
+    * The platform of the initialization script, either Windows or Linux.
     */
   var platform: js.UndefOr[LaunchProfilePlatform] = js.undefined
   

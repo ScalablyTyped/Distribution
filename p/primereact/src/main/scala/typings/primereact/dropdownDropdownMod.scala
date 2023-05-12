@@ -1,5 +1,6 @@
 package typings.primereact
 
+import typings.primereact.primereactStrings._empty
 import typings.primereact.primereactStrings.`additions removals`
 import typings.primereact.primereactStrings.`additions text`
 import typings.primereact.primereactStrings.`inline`
@@ -7,11 +8,14 @@ import typings.primereact.primereactStrings.`removals additions`
 import typings.primereact.primereactStrings.`removals text`
 import typings.primereact.primereactStrings.`text additions`
 import typings.primereact.primereactStrings.`text removals`
+import typings.primereact.primereactStrings.`use-credentials`
 import typings.primereact.primereactStrings.additions
 import typings.primereact.primereactStrings.all
+import typings.primereact.primereactStrings.anonymous
 import typings.primereact.primereactStrings.ascending
 import typings.primereact.primereactStrings.assertive
 import typings.primereact.primereactStrings.both
+import typings.primereact.primereactStrings.contains
 import typings.primereact.primereactStrings.copy
 import typings.primereact.primereactStrings.date
 import typings.primereact.primereactStrings.decimal
@@ -19,14 +23,17 @@ import typings.primereact.primereactStrings.descending
 import typings.primereact.primereactStrings.dialog
 import typings.primereact.primereactStrings.done
 import typings.primereact.primereactStrings.email
+import typings.primereact.primereactStrings.endsWith
 import typings.primereact.primereactStrings.enter
 import typings.primereact.primereactStrings.environment
+import typings.primereact.primereactStrings.equals
 import typings.primereact.primereactStrings.execute
 import typings.primereact.primereactStrings.go
 import typings.primereact.primereactStrings.grammar
 import typings.primereact.primereactStrings.grid
 import typings.primereact.primereactStrings.horizontal
 import typings.primereact.primereactStrings.inherit
+import typings.primereact.primereactStrings.label
 import typings.primereact.primereactStrings.link
 import typings.primereact.primereactStrings.list
 import typings.primereact.primereactStrings.listbox
@@ -37,6 +44,7 @@ import typings.primereact.primereactStrings.move
 import typings.primereact.primereactStrings.next
 import typings.primereact.primereactStrings.no
 import typings.primereact.primereactStrings.none
+import typings.primereact.primereactStrings.notEquals
 import typings.primereact.primereactStrings.numeric
 import typings.primereact.primereactStrings.off
 import typings.primereact.primereactStrings.on
@@ -50,6 +58,7 @@ import typings.primereact.primereactStrings.search
 import typings.primereact.primereactStrings.self
 import typings.primereact.primereactStrings.send
 import typings.primereact.primereactStrings.spelling
+import typings.primereact.primereactStrings.startsWith
 import typings.primereact.primereactStrings.step
 import typings.primereact.primereactStrings.tel
 import typings.primereact.primereactStrings.text
@@ -62,6 +71,7 @@ import typings.primereact.primereactStrings.yes
 import typings.primereact.selectitemSelectitemMod.SelectItem
 import typings.primereact.selectitemSelectitemMod.SelectItemOptionsType
 import typings.primereact.tooltipTooltipoptionsMod.TooltipOptions
+import typings.primereact.tsHelpersMod.FormEvent
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -76,10 +86,10 @@ import typings.react.mod.CompositionEventHandler
 import typings.react.mod.DragEvent
 import typings.react.mod.DragEventHandler
 import typings.react.mod.FocusEvent
-import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
 import typings.react.mod.HTMLInputTypeAttribute
 import typings.react.mod.Key
+import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
@@ -101,11 +111,11 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import typings.std.HTMLSelectElement
-import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -118,95 +128,97 @@ object dropdownDropdownMod {
     def this(props: DropdownProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: DropdownProps, context: Any) = this()
     
+    /**
+      * Used to focus the component.
+      */
+    def focus(): Unit = js.native
+    
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
     
+    /**
+      * Used to get focusable input element.
+      * @return {HTMLInputElement} Input element
+      */
     def getFocusInput(): HTMLInputElement = js.native
     
+    /**
+      * Used to get input element.
+      * @return {HTMLInputElement} Input element
+      */
     def getInput(): HTMLInputElement = js.native
     
+    /**
+      * Used to get overlay element.
+      * @return {HTMLElement} Overlay element
+      */
     def getOverlay(): HTMLElement = js.native
   }
   
-  type DropdownAppendToType = js.UndefOr[self | HTMLElement | Null]
+  /**
+    * Custom change event.
+    * @see {@link DropdownProps.onChange}
+    * @extends {FormEvent}
+    * @event
+    */
+  type DropdownChangeEvent = FormEvent[Any, SyntheticEvent[Element, Event]]
   
-  trait DropdownChangeParams extends StObject {
+  /**
+    * Custom filter event
+    * @see {@link DropdownProps.onFilter}
+    * @event
+    */
+  trait DropdownFilterEvent extends StObject {
     
+    /**
+      * Filter value
+      */
+    var filter: String
+    
+    /**
+      * Browser event
+      */
     var originalEvent: SyntheticEvent[Element, Event]
-    
-    def preventDefault(): Unit
-    
-    def stopPropagation(): Unit
-    
-    var target: DropdownChangeTargetOptions
-    
-    var value: Any
   }
-  object DropdownChangeParams {
+  object DropdownFilterEvent {
     
-    inline def apply(
-      originalEvent: SyntheticEvent[Element, Event],
-      preventDefault: () => Unit,
-      stopPropagation: () => Unit,
-      target: DropdownChangeTargetOptions,
-      value: Any
-    ): DropdownChangeParams = {
-      val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DropdownChangeParams]
+    inline def apply(filter: String, originalEvent: SyntheticEvent[Element, Event]): DropdownFilterEvent = {
+      val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DropdownFilterEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: DropdownChangeParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: DropdownFilterEvent] (val x: Self) extends AnyVal {
+      
+      inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
-      
-      inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
-      
-      inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
-      
-      inline def setTarget(value: DropdownChangeTargetOptions): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
-      
-      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
-  trait DropdownChangeTargetOptions extends StObject {
-    
-    var id: String
-    
-    var name: String
-    
-    var value: Any
-  }
-  object DropdownChangeTargetOptions {
-    
-    inline def apply(id: String, name: String, value: Any): DropdownChangeTargetOptions = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DropdownChangeTargetOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: DropdownChangeTargetOptions] (val x: Self) extends AnyVal {
-      
-      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  type DropdownEmptyFilterMessageType = ReactNode | (js.Function1[/* props */ DropdownProps, ReactNode])
-  
-  type DropdownEmptyMessageType = ReactNode | (js.Function1[/* props */ DropdownProps, ReactNode])
-  
+  /**
+    * Custom filter options
+    * @see {@link DropdownProps.filterTemplate}
+    * @deprecated Since v9.3.0
+    */
   trait DropdownFilterOptions extends StObject {
     
-    var filter: js.UndefOr[js.Function1[/* event */ js.UndefOr[KeyboardEvent], Unit]] = js.undefined
+    /**
+      * Used to filter options
+      * @param {React.KeyboardEvent<HTMLElement>} event - Browser event
+      */
+    var filter: js.UndefOr[js.Function1[/* event */ js.UndefOr[KeyboardEvent[HTMLElement]], Unit]] = js.undefined
     
+    /**
+      * Used to reset the filtered options
+      */
     var reset: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object DropdownFilterOptions {
@@ -219,7 +231,7 @@ object dropdownDropdownMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: DropdownFilterOptions] (val x: Self) extends AnyVal {
       
-      inline def setFilter(value: /* event */ js.UndefOr[KeyboardEvent] => Unit): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: /* event */ js.UndefOr[KeyboardEvent[HTMLElement]] => Unit): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
@@ -228,36 +240,6 @@ object dropdownDropdownMod {
       inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     }
   }
-  
-  trait DropdownFilterParams extends StObject {
-    
-    var filter: String
-    
-    var originalEvent: SyntheticEvent[Element, Event]
-  }
-  object DropdownFilterParams {
-    
-    inline def apply(filter: String, originalEvent: SyntheticEvent[Element, Event]): DropdownFilterParams = {
-      val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DropdownFilterParams]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: DropdownFilterParams] (val x: Self) extends AnyVal {
-      
-      inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
-      
-      inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  type DropdownFilterTemplateType = ReactNode | (js.Function1[/* options */ DropdownFilterOptions, ReactNode])
-  
-  type DropdownItemTemplateType = ReactNode | (js.Function1[/* option */ Any, ReactNode])
-  
-  type DropdownOptionDisabledType = String | (js.Function1[/* option */ Any, Boolean])
-  
-  type DropdownOptionGroupTemplateType = ReactNode | (js.Function2[/* option */ Any, /* index */ Double, ReactNode])
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'onChange' | 'ref'> */
   trait DropdownProps extends StObject {
@@ -270,7 +252,11 @@ object dropdownDropdownMod {
     
     var alt: js.UndefOr[String] = js.undefined
     
-    var appendTo: js.UndefOr[DropdownAppendToType] = js.undefined
+    /**
+      * DOM element instance where the overlay panel should be mounted. Valid values are any DOM Element and "self". The "self" value is used to render a component where it is located.
+      * @defaultValue document.body
+      */
+    var appendTo: js.UndefOr[self | HTMLElement | Null] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
@@ -370,8 +356,14 @@ object dropdownDropdownMod {
     
     var `aria-valuetext`: js.UndefOr[String] = js.undefined
     
+    /**
+      * Used to define a string that labels the component.
+      */
     var ariaLabel: js.UndefOr[String] = js.undefined
     
+    /**
+      * Establishes relationships between the component and label(s) where its value should be one or more element IDs.
+      */
     var ariaLabelledBy: js.UndefOr[String] = js.undefined
     
     var autoCapitalize: js.UndefOr[String] = js.undefined
@@ -380,6 +372,10 @@ object dropdownDropdownMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    /**
+      * When present, it specifies that the component should automatically get focus on load.
+      * @defaultValue false
+      */
     var autoFocus: js.UndefOr[Boolean] = js.undefined
     
     var autoSave: js.UndefOr[String] = js.undefined
@@ -388,20 +384,39 @@ object dropdownDropdownMod {
     
     var checked: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * Style class of the component.
+      */
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * Icon of the dropdown.
+      */
+    var clearIcon: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<DropdownProps> */ Any
+      ] = js.undefined
+    
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
+    /**
+      * A property to uniquely match the value in options for better performance.
+      */
     var dataKey: js.UndefOr[String] = js.undefined
     
     var datatype: js.UndefOr[String] = js.undefined
@@ -412,37 +427,103 @@ object dropdownDropdownMod {
     
     var dir: js.UndefOr[String] = js.undefined
     
+    /**
+      * When present, it specifies that the component should be disabled.
+      * @defaultValue false
+      */
     var disabled: js.UndefOr[Boolean] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
-    var dropdownIcon: js.UndefOr[String] = js.undefined
+    /**
+      * Icon of the dropdown.
+      */
+    var dropdownIcon: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<DropdownProps> */ Any
+      ] = js.undefined
     
+    /**
+      * When present, custom value instead of predefined options can be entered using the editable input field.
+      * @defaultValue false
+      */
     var editable: js.UndefOr[Boolean] = js.undefined
     
-    var emptyFilterMessage: js.UndefOr[DropdownEmptyFilterMessageType] = js.undefined
+    /**
+      * Template to display when filtering does not return any results.
+      * @defaultValue No available options
+      */
+    var emptyFilterMessage: js.UndefOr[ReactNode | (js.Function1[/* props */ this.type, ReactNode])] = js.undefined
     
-    var emptyMessage: js.UndefOr[DropdownEmptyMessageType] = js.undefined
+    /**
+      * Text to display when there are no options available.
+      * @defaultValue No results found
+      */
+    var emptyMessage: js.UndefOr[ReactNode | (js.Function1[/* props */ this.type, ReactNode])] = js.undefined
     
     var enterKeyHint: js.UndefOr[enter | done | go | next | previous | search | send] = js.undefined
     
+    /**
+      * When specified, displays an input field to filter the items on keyup.
+      * @defaultValue false
+      */
     var filter: js.UndefOr[Boolean] = js.undefined
     
-    var filterBy: js.UndefOr[String] = js.undefined
+    /**
+      * When filtering is enabled, filterBy decides which field or fields (comma separated) to search against.
+      * @defaultValue label
+      */
+    var filterBy: js.UndefOr[label | String] = js.undefined
     
+    /**
+      * Icon of the filter to clear.
+      */
+    var filterClearIcon: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<DropdownProps> */ Any
+      ] = js.undefined
+    
+    /**
+      * Icon of the filter to search.
+      */
+    var filterIcon: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<DropdownProps> */ Any
+      ] = js.undefined
+    
+    /**
+      * When the panel is opened, it specifies that the filter input should focus automatically.
+      * @defaultValue true
+      */
     var filterInputAutoFocus: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Locale to use in filtering. The default locale is the host environment's current locale.
+      */
     var filterLocale: js.UndefOr[String] = js.undefined
     
-    var filterMatchMode: js.UndefOr[String] = js.undefined
+    /**
+      * Defines how the items are filtered.
+      * @defaultValue contains
+      */
+    var filterMatchMode: js.UndefOr[contains | startsWith | endsWith | equals | notEquals] = js.undefined
     
+    /**
+      * Placeholder text to show when filter input is empty.
+      */
     var filterPlaceholder: js.UndefOr[String] = js.undefined
     
-    var filterTemplate: js.UndefOr[DropdownFilterTemplateType] = js.undefined
+    /**
+      * The template of filter element.
+      * @deprecated Since v9.3.0
+      */
+    var filterTemplate: js.UndefOr[ReactNode | (js.Function1[/* options */ DropdownFilterOptions, ReactNode])] = js.undefined
+    
+    /**
+      * Reference of the focusable input element.
+      */
+    var focusInputRef: js.UndefOr[Ref[HTMLInputElement]] = js.undefined
     
     var form: js.UndefOr[String] = js.undefined
     
-    var formAction: js.UndefOr[String] = js.undefined
+    var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     var formEncType: js.UndefOr[String] = js.undefined
     
@@ -456,14 +537,23 @@ object dropdownDropdownMod {
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Unique identifier of the element.
+      */
     var id: js.UndefOr[String] = js.undefined
     
     var inlist: js.UndefOr[Any] = js.undefined
     
+    /**
+      * Identifier of the focusable input.
+      */
     var inputId: js.UndefOr[String] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
+    /**
+      * Reference of the input element.
+      */
     var inputRef: js.UndefOr[Ref[HTMLSelectElement]] = js.undefined
     
     var is: js.UndefOr[String] = js.undefined
@@ -476,7 +566,10 @@ object dropdownDropdownMod {
     
     var itemScope: js.UndefOr[Boolean] = js.undefined
     
-    var itemTemplate: js.UndefOr[DropdownItemTemplateType] = js.undefined
+    /**
+      * The template of items.
+      */
+    var itemTemplate: js.UndefOr[ReactNode | (js.Function1[/* option */ Any, ReactNode])] = js.undefined
     
     var itemType: js.UndefOr[String] = js.undefined
     
@@ -488,6 +581,9 @@ object dropdownDropdownMod {
     
     var max: js.UndefOr[Double | String] = js.undefined
     
+    /**
+      * Maximum number of characters to be typed on an editable input.
+      */
     var maxLength: js.UndefOr[Double] = js.undefined
     
     var min: js.UndefOr[Double | String] = js.undefined
@@ -496,6 +592,9 @@ object dropdownDropdownMod {
     
     var multiple: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Name of the input element.
+      */
     var name: js.UndefOr[String] = js.undefined
     
     var nonce: js.UndefOr[String] = js.undefined
@@ -512,13 +611,21 @@ object dropdownDropdownMod {
     
     var onBeforeInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke when the element loses focus.
+      * @param {React.FocusEvent<HTMLInputElement>} event - Browser event
+      */
     var onBlur: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLInputElement, Element], Unit]] = js.undefined
     
     var onCanPlay: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
     var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ DropdownChangeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke on value change
+      * @param {DropdownChangeEvent} event - Custom change event
+      */
+    var onChange: js.UndefOr[js.Function1[/* event */ DropdownChangeEvent, Unit]] = js.undefined
     
     var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
@@ -528,6 +635,10 @@ object dropdownDropdownMod {
     
     var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke on right-click.
+      * @param {React.MouseEvent<HTMLElement>} event - Browser event
+      */
     var onContextMenu: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
     
     var onCopy: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
@@ -562,10 +673,21 @@ object dropdownDropdownMod {
     
     var onError: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onFilter: js.UndefOr[js.Function1[/* e */ DropdownFilterParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when the value is filtered.
+      * @param {DropdownFilterEvent} event - Custom filter event
+      */
+    var onFilter: js.UndefOr[js.Function1[/* event */ DropdownFilterEvent, Unit]] = js.undefined
     
+    /**
+      * Callback to invoke when the element receives focus.
+      * @param {React.FocusEvent<HTMLInputElement>} event - Browser event
+      */
     var onFocus: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLInputElement, Element], Unit]] = js.undefined
     
+    /**
+      * Callback to invoke when the overlay is hidden.
+      */
     var onHide: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
@@ -586,6 +708,10 @@ object dropdownDropdownMod {
     
     var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke to when a mouse button is pressed.
+      * @param {React.MouseEvent<HTMLElement>} event - Browser event
+      */
     var onMouseDown: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
     
     var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
@@ -640,6 +766,9 @@ object dropdownDropdownMod {
     
     var onSelect: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke when the overlay is shown.
+      */
     var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onStalled: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
@@ -666,26 +795,57 @@ object dropdownDropdownMod {
     
     var onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.undefined
     
-    var optionDisabled: js.UndefOr[DropdownOptionDisabledType] = js.undefined
+    /**
+      * Property name or getter function to use as the disabled flag of an option, defaults to false when not defined.
+      */
+    var optionDisabled: js.UndefOr[String | (js.Function1[/* option */ Any, Boolean])] = js.undefined
     
+    /**
+      * Property name or getter function that refers to the children options of option group.
+      */
     var optionGroupChildren: js.UndefOr[String] = js.undefined
     
+    /**
+      * Property name or getter function to use as the label of an option group.
+      */
     var optionGroupLabel: js.UndefOr[String] = js.undefined
     
-    var optionGroupTemplate: js.UndefOr[DropdownOptionGroupTemplateType] = js.undefined
+    /**
+      * Template of an option group item.
+      */
+    var optionGroupTemplate: js.UndefOr[ReactNode | (js.Function2[/* option */ Any, /* index */ Double, ReactNode])] = js.undefined
     
+    /**
+      * Name of the label field of an option when arbitrary objects are used as options instead of SelectItems.
+      */
     var optionLabel: js.UndefOr[String] = js.undefined
     
+    /**
+      * Name of the value field of an option when arbitrary objects are used as options instead of SelectItems.
+      */
     var optionValue: js.UndefOr[String] = js.undefined
     
+    /**
+      * An array of selectitems to display as the available options.
+      * @type {SelectItemOptionsType}
+      */
     var options: js.UndefOr[SelectItemOptionsType] = js.undefined
     
+    /**
+      * Style class of the overlay panel element.
+      */
     var panelClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Inline style of the overlay panel element.
+      */
     var panelStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var pattern: js.UndefOr[String] = js.undefined
     
+    /**
+      * Default text to display when no option is selected.
+      */
     var placeholder: js.UndefOr[String] = js.undefined
     
     var prefix: js.UndefOr[String] = js.undefined
@@ -696,24 +856,52 @@ object dropdownDropdownMod {
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
+    /**
+      * When present, it specifies that an input field must be filled out before submitting the form.
+      * @defaultValue false
+      */
     var required: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Clears the filter value when hiding the dropdown.
+      * @defaultValue false
+      */
     var resetFilterOnHide: js.UndefOr[Boolean] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
     
+    var rev: js.UndefOr[String] = js.undefined
+    
     var role: js.UndefOr[AriaRole] = js.undefined
     
+    /**
+      * Height of the viewport in pixels, a scrollbar is defined if height of list exceeds this value.
+      * @defaultValue 200px
+      */
     var scrollHeight: js.UndefOr[String] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
+    /**
+      * When enabled, a clear icon is displayed to clear the value.
+      * @defaultValue false
+      */
     var showClear: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * When enabled, a clear icon is displayed to clear the filtered value.
+      * @defaultValue false
+      */
     var showFilterClear: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * When enabled, overlay panel will be visible with input focus.
+      * @defaultValue false
+      */
     var showOnFocus: js.UndefOr[Boolean] = js.undefined
     
     var size: js.UndefOr[Double] = js.undefined
@@ -726,20 +914,37 @@ object dropdownDropdownMod {
     
     var step: js.UndefOr[Double | String] = js.undefined
     
+    /**
+      * Inline style of the element.
+      */
     var style: js.UndefOr[CSSProperties] = js.undefined
     
     var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
     
     var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Index of the element in tabbing order.
+      */
     var tabIndex: js.UndefOr[Double] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
     
+    /**
+      * Content of the tooltip.
+      */
     var tooltip: js.UndefOr[String] = js.undefined
     
+    /**
+      * Configuration of the tooltip, refer to the tooltip documentation for more information.
+      * @type {TooltipOptions}
+      */
     var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
     
+    /**
+      * The properties of CSSTransition can be customized, except for "nodeRef" and "in" properties.
+      * @type {CSSTransitionProps}
+      */
     var transitionOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSTransitionProps */ Any
       ] = js.undefined
@@ -752,10 +957,20 @@ object dropdownDropdownMod {
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
+    /**
+      * Value of the component.
+      */
     var value: js.UndefOr[Any] = js.undefined
     
-    var valueTemplate: js.UndefOr[DropdownValueTemplateType] = js.undefined
+    /**
+      * The template of selected item.
+      */
+    var valueTemplate: js.UndefOr[ReactNode | (js.Function2[/* option */ Any, /* props */ this.type, ReactNode])] = js.undefined
     
+    /**
+      * Whether to use the virtualScroller feature. The properties of VirtualScroller component can be used like an object in it.
+      * @type {VirtualScrollerProps}
+      */
     var virtualScrollerOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualScrollerProps */ Any
       ] = js.undefined
@@ -790,7 +1005,7 @@ object dropdownDropdownMod {
       
       inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
       
-      inline def setAppendTo(value: DropdownAppendToType): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+      inline def setAppendTo(value: self | HTMLElement): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
       
       inline def setAppendToNull: Self = StObject.set(x, "appendTo", null)
       
@@ -1034,19 +1249,29 @@ object dropdownDropdownMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
+      inline def setClearIcon(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<DropdownProps> */ Any
+      ): Self = StObject.set(x, "clearIcon", value.asInstanceOf[js.Any])
+      
+      inline def setClearIconUndefined: Self = StObject.set(x, "clearIcon", js.undefined)
+      
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
       
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -1084,7 +1309,9 @@ object dropdownDropdownMod {
       
       inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
-      inline def setDropdownIcon(value: String): Self = StObject.set(x, "dropdownIcon", value.asInstanceOf[js.Any])
+      inline def setDropdownIcon(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<DropdownProps> */ Any
+      ): Self = StObject.set(x, "dropdownIcon", value.asInstanceOf[js.Any])
       
       inline def setDropdownIconUndefined: Self = StObject.set(x, "dropdownIcon", js.undefined)
       
@@ -1092,15 +1319,15 @@ object dropdownDropdownMod {
       
       inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
       
-      inline def setEmptyFilterMessage(value: DropdownEmptyFilterMessageType): Self = StObject.set(x, "emptyFilterMessage", value.asInstanceOf[js.Any])
+      inline def setEmptyFilterMessage(value: ReactNode | (js.Function1[DropdownProps, ReactNode])): Self = StObject.set(x, "emptyFilterMessage", value.asInstanceOf[js.Any])
       
-      inline def setEmptyFilterMessageFunction1(value: /* props */ DropdownProps => ReactNode): Self = StObject.set(x, "emptyFilterMessage", js.Any.fromFunction1(value))
+      inline def setEmptyFilterMessageFunction1(value: DropdownProps => ReactNode): Self = StObject.set(x, "emptyFilterMessage", js.Any.fromFunction1(value))
       
       inline def setEmptyFilterMessageUndefined: Self = StObject.set(x, "emptyFilterMessage", js.undefined)
       
-      inline def setEmptyMessage(value: DropdownEmptyMessageType): Self = StObject.set(x, "emptyMessage", value.asInstanceOf[js.Any])
+      inline def setEmptyMessage(value: ReactNode | (js.Function1[DropdownProps, ReactNode])): Self = StObject.set(x, "emptyMessage", value.asInstanceOf[js.Any])
       
-      inline def setEmptyMessageFunction1(value: /* props */ DropdownProps => ReactNode): Self = StObject.set(x, "emptyMessage", js.Any.fromFunction1(value))
+      inline def setEmptyMessageFunction1(value: DropdownProps => ReactNode): Self = StObject.set(x, "emptyMessage", js.Any.fromFunction1(value))
       
       inline def setEmptyMessageUndefined: Self = StObject.set(x, "emptyMessage", js.undefined)
       
@@ -1110,9 +1337,21 @@ object dropdownDropdownMod {
       
       inline def setFilter(value: Boolean): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      inline def setFilterBy(value: String): Self = StObject.set(x, "filterBy", value.asInstanceOf[js.Any])
+      inline def setFilterBy(value: label | String): Self = StObject.set(x, "filterBy", value.asInstanceOf[js.Any])
       
       inline def setFilterByUndefined: Self = StObject.set(x, "filterBy", js.undefined)
+      
+      inline def setFilterClearIcon(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<DropdownProps> */ Any
+      ): Self = StObject.set(x, "filterClearIcon", value.asInstanceOf[js.Any])
+      
+      inline def setFilterClearIconUndefined: Self = StObject.set(x, "filterClearIcon", js.undefined)
+      
+      inline def setFilterIcon(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<DropdownProps> */ Any
+      ): Self = StObject.set(x, "filterIcon", value.asInstanceOf[js.Any])
+      
+      inline def setFilterIconUndefined: Self = StObject.set(x, "filterIcon", js.undefined)
       
       inline def setFilterInputAutoFocus(value: Boolean): Self = StObject.set(x, "filterInputAutoFocus", value.asInstanceOf[js.Any])
       
@@ -1122,7 +1361,7 @@ object dropdownDropdownMod {
       
       inline def setFilterLocaleUndefined: Self = StObject.set(x, "filterLocale", js.undefined)
       
-      inline def setFilterMatchMode(value: String): Self = StObject.set(x, "filterMatchMode", value.asInstanceOf[js.Any])
+      inline def setFilterMatchMode(value: contains | startsWith | endsWith | equals | notEquals): Self = StObject.set(x, "filterMatchMode", value.asInstanceOf[js.Any])
       
       inline def setFilterMatchModeUndefined: Self = StObject.set(x, "filterMatchMode", js.undefined)
       
@@ -1130,7 +1369,7 @@ object dropdownDropdownMod {
       
       inline def setFilterPlaceholderUndefined: Self = StObject.set(x, "filterPlaceholder", js.undefined)
       
-      inline def setFilterTemplate(value: DropdownFilterTemplateType): Self = StObject.set(x, "filterTemplate", value.asInstanceOf[js.Any])
+      inline def setFilterTemplate(value: ReactNode | (js.Function1[/* options */ DropdownFilterOptions, ReactNode])): Self = StObject.set(x, "filterTemplate", value.asInstanceOf[js.Any])
       
       inline def setFilterTemplateFunction1(value: /* options */ DropdownFilterOptions => ReactNode): Self = StObject.set(x, "filterTemplate", js.Any.fromFunction1(value))
       
@@ -1138,9 +1377,19 @@ object dropdownDropdownMod {
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
+      inline def setFocusInputRef(value: Ref[HTMLInputElement]): Self = StObject.set(x, "focusInputRef", value.asInstanceOf[js.Any])
+      
+      inline def setFocusInputRefFunction1(value: /* instance */ HTMLInputElement | Null => Unit): Self = StObject.set(x, "focusInputRef", js.Any.fromFunction1(value))
+      
+      inline def setFocusInputRefNull: Self = StObject.set(x, "focusInputRef", null)
+      
+      inline def setFocusInputRefUndefined: Self = StObject.set(x, "focusInputRef", js.undefined)
+      
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      
+      inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
       
       inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
@@ -1214,7 +1463,7 @@ object dropdownDropdownMod {
       
       inline def setItemScopeUndefined: Self = StObject.set(x, "itemScope", js.undefined)
       
-      inline def setItemTemplate(value: DropdownItemTemplateType): Self = StObject.set(x, "itemTemplate", value.asInstanceOf[js.Any])
+      inline def setItemTemplate(value: ReactNode | (js.Function1[/* option */ Any, ReactNode])): Self = StObject.set(x, "itemTemplate", value.asInstanceOf[js.Any])
       
       inline def setItemTemplateFunction1(value: /* option */ Any => ReactNode): Self = StObject.set(x, "itemTemplate", js.Any.fromFunction1(value))
       
@@ -1286,7 +1535,7 @@ object dropdownDropdownMod {
       
       inline def setOnAuxClickUndefined: Self = StObject.set(x, "onAuxClick", js.undefined)
       
-      inline def setOnBeforeInput(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
+      inline def setOnBeforeInput(value: typings.react.mod.FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
@@ -1302,7 +1551,7 @@ object dropdownDropdownMod {
       
       inline def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
       
-      inline def setOnChange(value: /* e */ DropdownChangeParams => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* event */ DropdownChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -1390,7 +1639,7 @@ object dropdownDropdownMod {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFilter(value: /* e */ DropdownFilterParams => Unit): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
+      inline def setOnFilter(value: /* event */ DropdownFilterEvent => Unit): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
       
       inline def setOnFilterUndefined: Self = StObject.set(x, "onFilter", js.undefined)
       
@@ -1402,23 +1651,23 @@ object dropdownDropdownMod {
       
       inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
       
-      inline def setOnInput(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
+      inline def setOnInput(value: typings.react.mod.FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
       
       inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
       
-      inline def setOnInvalid(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
+      inline def setOnInvalid(value: typings.react.mod.FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
       
       inline def setOnInvalidUndefined: Self = StObject.set(x, "onInvalid", js.undefined)
       
-      inline def setOnKeyDown(value: typings.react.mod.KeyboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: KeyboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
       inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      inline def setOnKeyPress(value: typings.react.mod.KeyboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
+      inline def setOnKeyPress(value: KeyboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
       
       inline def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
       
-      inline def setOnKeyUp(value: typings.react.mod.KeyboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
+      inline def setOnKeyUp(value: KeyboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
       
       inline def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
       
@@ -1522,7 +1771,7 @@ object dropdownDropdownMod {
       
       inline def setOnRateChangeUndefined: Self = StObject.set(x, "onRateChange", js.undefined)
       
-      inline def setOnReset(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
+      inline def setOnReset(value: typings.react.mod.FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
@@ -1554,7 +1803,7 @@ object dropdownDropdownMod {
       
       inline def setOnStalledUndefined: Self = StObject.set(x, "onStalled", js.undefined)
       
-      inline def setOnSubmit(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
+      inline def setOnSubmit(value: typings.react.mod.FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
       
       inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
       
@@ -1598,7 +1847,7 @@ object dropdownDropdownMod {
       
       inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
       
-      inline def setOptionDisabled(value: DropdownOptionDisabledType): Self = StObject.set(x, "optionDisabled", value.asInstanceOf[js.Any])
+      inline def setOptionDisabled(value: String | (js.Function1[/* option */ Any, Boolean])): Self = StObject.set(x, "optionDisabled", value.asInstanceOf[js.Any])
       
       inline def setOptionDisabledFunction1(value: /* option */ Any => Boolean): Self = StObject.set(x, "optionDisabled", js.Any.fromFunction1(value))
       
@@ -1612,7 +1861,7 @@ object dropdownDropdownMod {
       
       inline def setOptionGroupLabelUndefined: Self = StObject.set(x, "optionGroupLabel", js.undefined)
       
-      inline def setOptionGroupTemplate(value: DropdownOptionGroupTemplateType): Self = StObject.set(x, "optionGroupTemplate", value.asInstanceOf[js.Any])
+      inline def setOptionGroupTemplate(value: ReactNode | (js.Function2[/* option */ Any, /* index */ Double, ReactNode])): Self = StObject.set(x, "optionGroupTemplate", value.asInstanceOf[js.Any])
       
       inline def setOptionGroupTemplateFunction2(value: (/* option */ Any, /* index */ Double) => ReactNode): Self = StObject.set(x, "optionGroupTemplate", js.Any.fromFunction2(value))
       
@@ -1664,6 +1913,10 @@ object dropdownDropdownMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -1679,6 +1932,10 @@ object dropdownDropdownMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1776,9 +2033,9 @@ object dropdownDropdownMod {
       
       inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      inline def setValueTemplate(value: DropdownValueTemplateType): Self = StObject.set(x, "valueTemplate", value.asInstanceOf[js.Any])
+      inline def setValueTemplate(value: ReactNode | (js.Function2[/* option */ Any, DropdownProps, ReactNode])): Self = StObject.set(x, "valueTemplate", value.asInstanceOf[js.Any])
       
-      inline def setValueTemplateFunction2(value: (/* option */ Any, /* props */ DropdownProps) => ReactNode): Self = StObject.set(x, "valueTemplate", js.Any.fromFunction2(value))
+      inline def setValueTemplateFunction2(value: (/* option */ Any, DropdownProps) => ReactNode): Self = StObject.set(x, "valueTemplate", js.Any.fromFunction2(value))
       
       inline def setValueTemplateUndefined: Self = StObject.set(x, "valueTemplate", js.undefined)
       
@@ -1799,6 +2056,4 @@ object dropdownDropdownMod {
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
-  
-  type DropdownValueTemplateType = ReactNode | (js.Function2[/* option */ Any, /* props */ DropdownProps, ReactNode])
 }

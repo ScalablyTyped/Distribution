@@ -46,11 +46,6 @@ trait ImagingStudy
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
-    * Who read the study and interpreted the images or other content.
-    */
-  var interpreter: js.UndefOr[js.Array[Reference]] = js.undefined
-  
-  /**
     * The principal physical location where the ImagingStudy was performed.
     */
   var location: js.UndefOr[Reference] = js.undefined
@@ -58,7 +53,7 @@ trait ImagingStudy
   /**
     * A list of all the distinct values of series.modality. This may include both acquisition and non-acquisition modalities.
     */
-  var modality: js.UndefOr[js.Array[Coding]] = js.undefined
+  var modality: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * Per the recommended DICOM mapping, this element is derived from the Study Description attribute (0008,1030). Observations or findings about the imaging study should be recorded in another resource, e.g. Observation, and not in this element.
@@ -76,7 +71,12 @@ trait ImagingStudy
   var numberOfSeries: js.UndefOr[Double] = js.undefined
   
   /**
-    * The procedure or code from which this ImagingStudy was part of.
+    * To link an ImagingStudy to an Encounter use `encounter`.
+    */
+  var partOf: js.UndefOr[js.Array[Reference]] = js.undefined
+  
+  /**
+    * This field corresponds to the DICOM Procedure Code Sequence (0008,1032). This is different from the FHIR Procedure resource that may include the ImagingStudy.
     */
   var procedure: js.UndefOr[js.Array[CodeableReference]] = js.undefined
   
@@ -150,21 +150,15 @@ object ImagingStudy {
     
     inline def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value*))
     
-    inline def setInterpreter(value: js.Array[Reference]): Self = StObject.set(x, "interpreter", value.asInstanceOf[js.Any])
-    
-    inline def setInterpreterUndefined: Self = StObject.set(x, "interpreter", js.undefined)
-    
-    inline def setInterpreterVarargs(value: Reference*): Self = StObject.set(x, "interpreter", js.Array(value*))
-    
     inline def setLocation(value: Reference): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    inline def setModality(value: js.Array[Coding]): Self = StObject.set(x, "modality", value.asInstanceOf[js.Any])
+    inline def setModality(value: js.Array[CodeableConcept]): Self = StObject.set(x, "modality", value.asInstanceOf[js.Any])
     
     inline def setModalityUndefined: Self = StObject.set(x, "modality", js.undefined)
     
-    inline def setModalityVarargs(value: Coding*): Self = StObject.set(x, "modality", js.Array(value*))
+    inline def setModalityVarargs(value: CodeableConcept*): Self = StObject.set(x, "modality", js.Array(value*))
     
     inline def setNote(value: js.Array[Annotation]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
@@ -179,6 +173,12 @@ object ImagingStudy {
     inline def setNumberOfSeries(value: Double): Self = StObject.set(x, "numberOfSeries", value.asInstanceOf[js.Any])
     
     inline def setNumberOfSeriesUndefined: Self = StObject.set(x, "numberOfSeries", js.undefined)
+    
+    inline def setPartOf(value: js.Array[Reference]): Self = StObject.set(x, "partOf", value.asInstanceOf[js.Any])
+    
+    inline def setPartOfUndefined: Self = StObject.set(x, "partOf", js.undefined)
+    
+    inline def setPartOfVarargs(value: Reference*): Self = StObject.set(x, "partOf", js.Array(value*))
     
     inline def setProcedure(value: js.Array[CodeableReference]): Self = StObject.set(x, "procedure", value.asInstanceOf[js.Any])
     

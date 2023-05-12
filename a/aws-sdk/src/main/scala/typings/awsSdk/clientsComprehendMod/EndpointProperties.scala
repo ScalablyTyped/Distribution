@@ -17,7 +17,7 @@ trait EndpointProperties extends StObject {
   var CurrentInferenceUnits: js.UndefOr[InferenceUnitsInteger] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the AWS identity and Access Management (IAM) role that grants Amazon Comprehend read access to trained custom models encrypted with a customer managed key (ModelKmsKeyId).
+    * The Amazon Resource Name (ARN) of the IAM role that grants Amazon Comprehend read access to trained custom models encrypted with a customer managed key (ModelKmsKeyId).
     */
   var DataAccessRoleArn: js.UndefOr[IamRoleArn] = js.undefined
   
@@ -40,6 +40,11 @@ trait EndpointProperties extends StObject {
     * The Amazon Resource Number (ARN) of the endpoint.
     */
   var EndpointArn: js.UndefOr[ComprehendEndpointArn] = js.undefined
+  
+  /**
+    * The Amazon Resource Number (ARN) of the flywheel
+    */
+  var FlywheelArn: js.UndefOr[ComprehendFlywheelArn] = js.undefined
   
   /**
     * The date and time that the endpoint was last modified.
@@ -98,6 +103,10 @@ object EndpointProperties {
     inline def setEndpointArn(value: ComprehendEndpointArn): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
     
     inline def setEndpointArnUndefined: Self = StObject.set(x, "EndpointArn", js.undefined)
+    
+    inline def setFlywheelArn(value: ComprehendFlywheelArn): Self = StObject.set(x, "FlywheelArn", value.asInstanceOf[js.Any])
+    
+    inline def setFlywheelArnUndefined: Self = StObject.set(x, "FlywheelArn", js.undefined)
     
     inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     

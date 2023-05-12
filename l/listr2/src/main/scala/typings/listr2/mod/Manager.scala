@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creates a new Listr2 task manager.
   *
   * Useful for creating a single instance of Listr2 with pre-set settings.
+  *
+  * @see {@link https://listr2.kilic.dev/listr/manager.html}
   */
 @JSImport("listr2", "Manager")
 @js.native
@@ -35,11 +37,10 @@ open class Manager[Ctx, Renderer /* <: ListrRendererValue */, FallbackRenderer /
     options: ListrSubClassOptions[InjectCtx, Renderer]
   ): Unit = js.native
   
+  def ctx: Ctx = js.native
   def ctx_=(ctx: Ctx): Unit = js.native
   
-  var err: js.Array[ListrError[ListrContext]] = js.native
-  
-  def getRuntime(pipetime: Double): String = js.native
+  var errors: js.Array[ListrError[ListrContext]] = js.native
   
   def indent[InjectCtx](tasks: js.Array[ListrTask[InjectCtx, ListrGetRendererClassFromValue[Renderer]]]): ListrTask[InjectCtx, ListrGetRendererClassFromValue[Renderer]] = js.native
   def indent[InjectCtx](

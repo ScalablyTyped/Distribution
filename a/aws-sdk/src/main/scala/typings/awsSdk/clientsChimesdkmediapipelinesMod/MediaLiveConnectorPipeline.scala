@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MediaLiveConnectorPipeline extends StObject {
   
   /**
-    * Thetime at which the connector pipeline was created.
+    * The time at which the connector pipeline was created.
     */
   var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
   

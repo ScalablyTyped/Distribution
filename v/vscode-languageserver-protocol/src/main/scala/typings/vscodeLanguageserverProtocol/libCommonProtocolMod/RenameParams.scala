@@ -12,7 +12,7 @@ trait RenameParams
   
   /**
     * The new name of the symbol. If the given name is not valid the
-    * request must return a [ResponseError](#ResponseError) with an
+    * request must return a {@link ResponseError} with an
     * appropriate message set.
     */
   var newName: String

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AlarmRecommendation extends StObject {
   
   /**
-    * The application component for the CloudWatch alarm recommendation.
+    * The Application Component for the CloudWatch alarm recommendation.
     */
   var appComponentName: js.UndefOr[EntityId] = js.undefined
   

@@ -28,8 +28,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type CX = js.Function2[/* state */ ClassNamesState, /* className */ js.UndefOr[String], String]
-
 type ClassNamesState = StringDictionary[Boolean]
 
 type GetOptionLabel[Option] = js.Function1[/* option */ Option, String]

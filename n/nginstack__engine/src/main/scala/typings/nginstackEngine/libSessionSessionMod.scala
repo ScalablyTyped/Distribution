@@ -30,6 +30,8 @@ object libSessionSessionMod {
     
     def executeStartupScripts(): Unit = js.native
     
+    def hasRequest(): Boolean = js.native
+    
     var id: String = js.native
     
     var lastPath: String = js.native

@@ -28,7 +28,7 @@ object anon {
       * }
       * ```
       *
-      * @see https://reactjs.org/docs/context.html#classcontexttype
+      * @see https://react.dev/reference/react/Component#static-contexttype
       */
     /* static member */
     var contextType: js.UndefOr[Context[Any]] = js.undefined

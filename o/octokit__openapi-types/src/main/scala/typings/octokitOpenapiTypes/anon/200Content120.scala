@@ -6,18 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `200Content120` extends StObject {
   
-  /** Response */
+  /** @description Response */
   var `200`: Content120
   
-  /** Not Found if project is not managed by this team */
-  var `404`: Any
+  /** @description Response */
+  var `201`: Content120
 }
 object `200Content120` {
   
-  inline def apply(`200`: Content120, `404`: Any): `200Content120` = {
+  inline def apply(`200`: Content120, `201`: Content120): `200Content120` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
-    __obj.updateDynamic("404")(`404`.asInstanceOf[js.Any])
+    __obj.updateDynamic("201")(`201`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`200Content120`]
   }
   
@@ -26,6 +26,6 @@ object `200Content120` {
     
     inline def set200(value: Content120): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set404(value: Any): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set201(value: Content120): Self = StObject.set(x, "201", value.asInstanceOf[js.Any])
   }
 }

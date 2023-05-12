@@ -29,6 +29,8 @@ object nextMod {
       
       var integrity: js.UndefOr[String] = js.undefined
       
+      var nonce: js.UndefOr[String] = js.undefined
+      
       var precedence: js.UndefOr[String] = js.undefined
     }
     object PreinitOptions {
@@ -50,6 +52,10 @@ object nextMod {
         inline def setIntegrity(value: String): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
         
         inline def setIntegrityUndefined: Self = StObject.set(x, "integrity", js.undefined)
+        
+        inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+        
+        inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
         
         inline def setPrecedence(value: String): Self = StObject.set(x, "precedence", value.asInstanceOf[js.Any])
         

@@ -37,7 +37,7 @@ trait RestoreDBClusterFromS3Message extends StObject {
   var DBClusterIdentifier: String
   
   /**
-    * The name of the DB cluster parameter group to associate with the restored DB cluster. If this argument is omitted, default.aurora5.6 is used. Constraints:   If supplied, must match the name of an existing DBClusterParameterGroup.  
+    * The name of the DB cluster parameter group to associate with the restored DB cluster. If this argument is omitted, the default parameter group for the engine version is used. Constraints:   If supplied, must match the name of an existing DBClusterParameterGroup.  
     */
   var DBClusterParameterGroupName: js.UndefOr[String] = js.undefined
   
@@ -67,7 +67,7 @@ trait RestoreDBClusterFromS3Message extends StObject {
   var DomainIAMRoleName: js.UndefOr[String] = js.undefined
   
   /**
-    * The list of logs that the restored DB cluster is to export to CloudWatch Logs. The values in the list depend on the DB engine being used.  Aurora MySQL  Possible values are audit, error, general, and slowquery.  Aurora PostgreSQL  Possible value is postgresql. For more information about exporting CloudWatch Logs for Amazon Aurora, see Publishing Database Logs to Amazon CloudWatch Logs in the Amazon Aurora User Guide.
+    * The list of logs that the restored DB cluster is to export to CloudWatch Logs. The values in the list depend on the DB engine being used.  Aurora MySQL  Possible values are audit, error, general, and slowquery. For more information about exporting CloudWatch Logs for Amazon Aurora, see Publishing Database Logs to Amazon CloudWatch Logs in the Amazon Aurora User Guide.
     */
   var EnableCloudwatchLogsExports: js.UndefOr[LogTypeList] = js.undefined
   
@@ -77,12 +77,12 @@ trait RestoreDBClusterFromS3Message extends StObject {
   var EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * The name of the database engine to be used for this DB cluster. Valid Values: aurora (for MySQL 5.6-compatible Aurora) and aurora-mysql (for MySQL 5.7-compatible and MySQL 8.0-compatible Aurora)
+    * The name of the database engine to be used for this DB cluster. Valid Values: aurora-mysql (for Aurora MySQL)
     */
   var Engine: String
   
   /**
-    * The version number of the database engine to use. To list all of the available engine versions for aurora (for MySQL 5.6-compatible Aurora), use the following command:  aws rds describe-db-engine-versions --engine aurora --query "DBEngineVersions[].EngineVersion"  To list all of the available engine versions for aurora-mysql (for MySQL 5.7-compatible and MySQL 8.0-compatible Aurora), use the following command:  aws rds describe-db-engine-versions --engine aurora-mysql --query "DBEngineVersions[].EngineVersion"   Aurora MySQL  Example: 5.6.10a, 5.6.mysql_aurora.1.19.2, 5.7.mysql_aurora.2.07.1, 8.0.mysql_aurora.3.02.0 
+    * The version number of the database engine to use. To list all of the available engine versions for aurora-mysql (Aurora MySQL), use the following command:  aws rds describe-db-engine-versions --engine aurora-mysql --query "DBEngineVersions[].EngineVersion"   Aurora MySQL  Examples: 5.7.mysql_aurora.2.07.1, 8.0.mysql_aurora.3.02.0 
     */
   var EngineVersion: js.UndefOr[String] = js.undefined
   
@@ -92,9 +92,19 @@ trait RestoreDBClusterFromS3Message extends StObject {
   var KmsKeyId: js.UndefOr[String] = js.undefined
   
   /**
-    * The password for the master database user. This password can contain any printable ASCII character except "/", """, or "@". Constraints: Must contain from 8 to 41 characters.
+    * A value that indicates whether to manage the master user password with Amazon Web Services Secrets Manager. For more information, see Password management with Amazon Web Services Secrets Manager in the Amazon RDS User Guide and Password management with Amazon Web Services Secrets Manager in the Amazon Aurora User Guide.  Constraints:   Can't manage the master user password with Amazon Web Services Secrets Manager if MasterUserPassword is specified.  
     */
-  var MasterUserPassword: String
+  var ManageMasterUserPassword: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
+    * The password for the master database user. This password can contain any printable ASCII character except "/", """, or "@". Constraints:   Must contain from 8 to 41 characters.   Can't be specified if ManageMasterUserPassword is turned on.  
+    */
+  var MasterUserPassword: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The Amazon Web Services KMS key identifier to encrypt a secret that is automatically generated and managed in Amazon Web Services Secrets Manager. This setting is valid only if the master user password is managed by RDS in Amazon Web Services Secrets Manager for the DB cluster. The Amazon Web Services KMS key identifier is the key ARN, key ID, alias ARN, or alias name for the KMS key. To use a KMS key in a different Amazon Web Services account, specify the key ARN or alias ARN. If you don't specify MasterUserSecretKmsKeyId, then the aws/secretsmanager KMS key is used to encrypt the secret. If the secret is in a different Amazon Web Services account, then you can't use the aws/secretsmanager KMS key to encrypt the secret, and you must use a customer managed KMS key. There is a default KMS key for your Amazon Web Services account. Your Amazon Web Services account has a different default KMS key for each Amazon Web Services Region.
+    */
+  var MasterUserSecretKmsKeyId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the master user for the restored DB cluster. Constraints:   Must be 1 to 16 letters or numbers.   First character must be a letter.   Can't be a reserved word for the chosen database engine.  
@@ -158,6 +168,11 @@ trait RestoreDBClusterFromS3Message extends StObject {
     */
   var StorageEncrypted: js.UndefOr[BooleanOptional] = js.undefined
   
+  /**
+    * Specifies the storage type to be associated with the DB cluster. Valid values: aurora, aurora-iopt1  Default: aurora  Valid for: Aurora DB clusters only
+    */
+  var StorageType: js.UndefOr[String] = js.undefined
+  
   var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
@@ -170,14 +185,13 @@ object RestoreDBClusterFromS3Message {
   inline def apply(
     DBClusterIdentifier: String,
     Engine: String,
-    MasterUserPassword: String,
     MasterUsername: String,
     S3BucketName: String,
     S3IngestionRoleArn: String,
     SourceEngine: String,
     SourceEngineVersion: String
   ): RestoreDBClusterFromS3Message = {
-    val __obj = js.Dynamic.literal(DBClusterIdentifier = DBClusterIdentifier.asInstanceOf[js.Any], Engine = Engine.asInstanceOf[js.Any], MasterUserPassword = MasterUserPassword.asInstanceOf[js.Any], MasterUsername = MasterUsername.asInstanceOf[js.Any], S3BucketName = S3BucketName.asInstanceOf[js.Any], S3IngestionRoleArn = S3IngestionRoleArn.asInstanceOf[js.Any], SourceEngine = SourceEngine.asInstanceOf[js.Any], SourceEngineVersion = SourceEngineVersion.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(DBClusterIdentifier = DBClusterIdentifier.asInstanceOf[js.Any], Engine = Engine.asInstanceOf[js.Any], MasterUsername = MasterUsername.asInstanceOf[js.Any], S3BucketName = S3BucketName.asInstanceOf[js.Any], S3IngestionRoleArn = S3IngestionRoleArn.asInstanceOf[js.Any], SourceEngine = SourceEngine.asInstanceOf[js.Any], SourceEngineVersion = SourceEngineVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestoreDBClusterFromS3Message]
   }
   
@@ -252,7 +266,17 @@ object RestoreDBClusterFromS3Message {
     
     inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
+    inline def setManageMasterUserPassword(value: BooleanOptional): Self = StObject.set(x, "ManageMasterUserPassword", value.asInstanceOf[js.Any])
+    
+    inline def setManageMasterUserPasswordUndefined: Self = StObject.set(x, "ManageMasterUserPassword", js.undefined)
+    
     inline def setMasterUserPassword(value: String): Self = StObject.set(x, "MasterUserPassword", value.asInstanceOf[js.Any])
+    
+    inline def setMasterUserPasswordUndefined: Self = StObject.set(x, "MasterUserPassword", js.undefined)
+    
+    inline def setMasterUserSecretKmsKeyId(value: String): Self = StObject.set(x, "MasterUserSecretKmsKeyId", value.asInstanceOf[js.Any])
+    
+    inline def setMasterUserSecretKmsKeyIdUndefined: Self = StObject.set(x, "MasterUserSecretKmsKeyId", js.undefined)
     
     inline def setMasterUsername(value: String): Self = StObject.set(x, "MasterUsername", value.asInstanceOf[js.Any])
     
@@ -295,6 +319,10 @@ object RestoreDBClusterFromS3Message {
     inline def setStorageEncrypted(value: BooleanOptional): Self = StObject.set(x, "StorageEncrypted", value.asInstanceOf[js.Any])
     
     inline def setStorageEncryptedUndefined: Self = StObject.set(x, "StorageEncrypted", js.undefined)
+    
+    inline def setStorageType(value: String): Self = StObject.set(x, "StorageType", value.asInstanceOf[js.Any])
+    
+    inline def setStorageTypeUndefined: Self = StObject.set(x, "StorageType", js.undefined)
     
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

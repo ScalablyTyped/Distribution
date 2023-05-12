@@ -75,7 +75,7 @@ object Tilemaps {
     
     /**
       * Copies the tiles in the source rectangular area to a new destination (all specified in tile
-      * coordinates) within the layer. This copies all tile properties & recalculates collision
+      * coordinates) within the layer. This copies all tile properties and recalculates collision
       * information in the destination region.
       * @param srcTileX The x coordinate of the area to copy from, in tiles, not pixels.
       * @param srcTileY The y coordinate of the area to copy from, in tiles, not pixels.
@@ -114,6 +114,14 @@ object Tilemaps {
       layer: typings.phaser.Phaser.Tilemaps.LayerData
     ): js.Array[Sprite] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromTiles")(indexes.asInstanceOf[js.Any], replacements.asInstanceOf[js.Any], spriteConfig.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], layer.asInstanceOf[js.Any])).asInstanceOf[js.Array[Sprite]]
     inline def CreateFromTiles(
+      indexes: js.Array[Double],
+      replacements: Unit,
+      spriteConfig: SpriteConfig,
+      scene: typings.phaser.Phaser.Scene,
+      camera: Camera,
+      layer: typings.phaser.Phaser.Tilemaps.LayerData
+    ): js.Array[Sprite] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromTiles")(indexes.asInstanceOf[js.Any], replacements.asInstanceOf[js.Any], spriteConfig.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], layer.asInstanceOf[js.Any])).asInstanceOf[js.Array[Sprite]]
+    inline def CreateFromTiles(
       indexes: Double,
       replacements: js.Array[Double],
       spriteConfig: SpriteConfig,
@@ -136,6 +144,14 @@ object Tilemaps {
     inline def CreateFromTiles(
       indexes: Double,
       replacements: Double,
+      spriteConfig: SpriteConfig,
+      scene: typings.phaser.Phaser.Scene,
+      camera: Camera,
+      layer: typings.phaser.Phaser.Tilemaps.LayerData
+    ): js.Array[Sprite] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromTiles")(indexes.asInstanceOf[js.Any], replacements.asInstanceOf[js.Any], spriteConfig.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], layer.asInstanceOf[js.Any])).asInstanceOf[js.Array[Sprite]]
+    inline def CreateFromTiles(
+      indexes: Double,
+      replacements: Unit,
       spriteConfig: SpriteConfig,
       scene: typings.phaser.Phaser.Scene,
       camera: Camera,
@@ -231,7 +247,7 @@ object Tilemaps {
       * @param reverse If true it will scan the layer in reverse, starting at the bottom-right. Otherwise it scans from the top-left.
       * @param layer The Tilemap Layer to act upon.
       */
-    inline def FindByIndex(index: Double, skip: Double, reverse: Boolean, layer: typings.phaser.Phaser.Tilemaps.LayerData): typings.phaser.Phaser.Tilemaps.Tile = (^.asInstanceOf[js.Dynamic].applyDynamic("FindByIndex")(index.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any], layer.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Tilemaps.Tile]
+    inline def FindByIndex(index: Double, skip: Double, reverse: Boolean, layer: typings.phaser.Phaser.Tilemaps.LayerData): typings.phaser.Phaser.Tilemaps.Tile | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("FindByIndex")(index.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any], layer.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Tilemaps.Tile | Null]
     
     /**
       * Find the first tile in the given rectangular area (in tile coordinates) of the layer that
@@ -255,7 +271,7 @@ object Tilemaps {
       height: Double,
       filteringOptions: FilteringOptions,
       layer: typings.phaser.Phaser.Tilemaps.LayerData
-    ): typings.phaser.Phaser.Tilemaps.Tile = (^.asInstanceOf[js.Dynamic].applyDynamic("FindTile")(callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any], tileX.asInstanceOf[js.Any], tileY.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], filteringOptions.asInstanceOf[js.Any], layer.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Tilemaps.Tile]
+    ): typings.phaser.Phaser.Tilemaps.Tile | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("FindTile")(callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any], tileX.asInstanceOf[js.Any], tileY.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], filteringOptions.asInstanceOf[js.Any], layer.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Tilemaps.Tile | Null]
     
     /**
       * For each tile in the given rectangular area (in tile coordinates) of the layer, run the given
@@ -312,6 +328,21 @@ object Tilemaps {
     ): typings.phaser.Phaser.Tilemaps.Tile = (^.asInstanceOf[js.Dynamic].applyDynamic("GetTileAtWorldXY")(worldX.asInstanceOf[js.Any], worldY.asInstanceOf[js.Any], nonNull.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], layer.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Tilemaps.Tile]
     
     /**
+      * Gets the corners of the Tile as an array of Vector2s.
+      * @param tileX The x coordinate, in tiles, not pixels.
+      * @param tileY The y coordinate, in tiles, not pixels.
+      * @param camera The Camera to use when calculating the tile index from the world values.
+      * @param layer The Tilemap Layer to act upon.
+      */
+    inline def GetTileCorners(tileX: Double, tileY: Double, camera: Camera, layer: typings.phaser.Phaser.Tilemaps.LayerData): js.Array[Vector2] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetTileCorners")(tileX.asInstanceOf[js.Any], tileY.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], layer.asInstanceOf[js.Any])).asInstanceOf[js.Array[Vector2]]
+    
+    /**
+      * Gets the correct function to use to get the tile corners, based on the map orientation.
+      * @param orientation The Tilemap orientation constant.
+      */
+    inline def GetTileCornersFunction(orientation: Double): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("GetTileCornersFunction")(orientation.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+    
+    /**
       * Gets the correct function to use to translate tiles, based on the map orientation.
       * @param orientation The Tilemap orientation constant.
       */
@@ -331,6 +362,9 @@ object Tilemaps {
     
     /**
       * Gets the tiles in the given rectangular area (in tile coordinates) of the layer.
+      * 
+      * This returns an array with references to the Tile instances in, so be aware of
+      * modifying them directly.
       * @param tileX The left most tile index (in tile coordinates) to use as the origin of the area.
       * @param tileY The top most tile index (in tile coordinates) to use as the origin of the area.
       * @param width How many tiles wide from the `tileX` index the area will be.
@@ -402,6 +436,8 @@ object Tilemaps {
     
     /**
       * Gets the correct function to use to translate tiles, based on the map orientation.
+      * 
+      * Only orthogonal maps support this feature.
       * @param orientation The Tilemap orientation constant.
       */
     inline def GetWorldToTileXFunction(orientation: Double): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("GetWorldToTileXFunction")(orientation.asInstanceOf[js.Any]).asInstanceOf[js.Function]
@@ -425,7 +461,7 @@ object Tilemaps {
       * @param tileY Y position to get the tile from (given in tile units, not pixels).
       * @param layer The Tilemap Layer to act upon.
       */
-    inline def HasTileAt(tileX: Double, tileY: Double, layer: typings.phaser.Phaser.Tilemaps.LayerData): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("HasTileAt")(tileX.asInstanceOf[js.Any], tileY.asInstanceOf[js.Any], layer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def HasTileAt(tileX: Double, tileY: Double, layer: typings.phaser.Phaser.Tilemaps.LayerData): Boolean | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("HasTileAt")(tileX.asInstanceOf[js.Any], tileY.asInstanceOf[js.Any], layer.asInstanceOf[js.Any])).asInstanceOf[Boolean | Null]
     
     /**
       * Checks if there is a tile at the given location (in world coordinates) in the given layer. Returns
@@ -435,7 +471,7 @@ object Tilemaps {
       * @param camera The Camera to use when factoring in which tiles to return.
       * @param layer The Tilemap Layer to act upon.
       */
-    inline def HasTileAtWorldXY(worldX: Double, worldY: Double, camera: Camera, layer: typings.phaser.Phaser.Tilemaps.LayerData): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("HasTileAtWorldXY")(worldX.asInstanceOf[js.Any], worldY.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], layer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def HasTileAtWorldXY(worldX: Double, worldY: Double, camera: Camera, layer: typings.phaser.Phaser.Tilemaps.LayerData): Boolean | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("HasTileAtWorldXY")(worldX.asInstanceOf[js.Any], worldY.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], layer.asInstanceOf[js.Any])).asInstanceOf[Boolean | Null]
     
     /**
       * Returns the bounds in the given layer that are within the camera's viewport.
@@ -468,6 +504,15 @@ object Tilemaps {
     ): js.Array[typings.phaser.Phaser.Tilemaps.Tile] = (^.asInstanceOf[js.Dynamic].applyDynamic("HexagonalCullTiles")(layer.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], outputArray.asInstanceOf[js.Any], renderOrder.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Tilemaps.Tile]]
     
     /**
+      * Gets the corners of the Hexagonal Tile as an array of Vector2s.
+      * @param tileX The x coordinate, in tiles, not pixels.
+      * @param tileY The y coordinate, in tiles, not pixels.
+      * @param camera The Camera to use when calculating the tile index from the world values.
+      * @param layer The Tilemap Layer to act upon.
+      */
+    inline def HexagonalGetTileCorners(tileX: Double, tileY: Double, camera: Camera, layer: typings.phaser.Phaser.Tilemaps.LayerData): js.Array[Vector2] = (^.asInstanceOf[js.Dynamic].applyDynamic("HexagonalGetTileCorners")(tileX.asInstanceOf[js.Any], tileY.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], layer.asInstanceOf[js.Any])).asInstanceOf[js.Array[Vector2]]
+    
+    /**
       * Converts from hexagonal tile XY coordinates (tile units) to world XY coordinates (pixels), factoring in the
       * layer's position, scale and scroll. This will return a new Vector2 object or update the given
       * `point` object.
@@ -484,15 +529,6 @@ object Tilemaps {
       camera: Camera,
       layer: typings.phaser.Phaser.Tilemaps.LayerData
     ): Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("HexagonalTileToWorldXY")(tileX.asInstanceOf[js.Any], tileY.asInstanceOf[js.Any], point.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], layer.asInstanceOf[js.Any])).asInstanceOf[Vector2]
-    
-    /**
-      * Converts from hexagonal tile Y coordinates (tile units) to world Y coordinates (pixels), factoring in the
-      * layer's position, scale and scroll.
-      * @param tileY The y coordinate, in tiles, not pixels.
-      * @param camera The Camera to use when calculating the tile index from the world values.
-      * @param layer The Tilemap Layer to act upon.
-      */
-    inline def HexagonalTileToWorldY(tileY: Double, camera: Camera, layer: typings.phaser.Phaser.Tilemaps.LayerData): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("HexagonalTileToWorldY")(tileY.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], layer.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Converts from world XY coordinates (pixels) to hexagonal tile XY coordinates (tile units), factoring in the
@@ -513,21 +549,6 @@ object Tilemaps {
       camera: Camera,
       layer: typings.phaser.Phaser.Tilemaps.LayerData
     ): Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("HexagonalWorldToTileXY")(worldX.asInstanceOf[js.Any], worldY.asInstanceOf[js.Any], snapToFloor.asInstanceOf[js.Any], point.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], layer.asInstanceOf[js.Any])).asInstanceOf[Vector2]
-    
-    /**
-      * Converts from world Y coordinates (pixels) to hexagonal tile Y coordinates (tile units), factoring in the
-      * layers position, scale and scroll.
-      * @param worldY The y coordinate to be converted, in pixels, not tiles.
-      * @param snapToFloor Whether or not to round the tile coordinate down to the nearest integer.
-      * @param camera The Camera to use when calculating the tile index from the world values.
-      * @param layer The Tilemap Layer to act upon.
-      */
-    inline def HexagonalWorldToTileY(
-      worldY: Double,
-      snapToFloor: Boolean,
-      camera: Camera,
-      layer: typings.phaser.Phaser.Tilemaps.LayerData
-    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("HexagonalWorldToTileY")(worldY.asInstanceOf[js.Any], snapToFloor.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], layer.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Checks if the given tile coordinates are within the bounds of the layer.
@@ -579,7 +600,7 @@ object Tilemaps {
     
     /**
       * Converts from world XY coordinates (pixels) to isometric tile XY coordinates (tile units), factoring in the
-      * layer's position, scale and scroll. This will return a new Vector2 object or update the given
+      * layers position, scale and scroll. This will return a new Vector2 object or update the given
       * `point` object.
       * @param worldX The x coordinate to be converted, in pixels, not tiles.
       * @param worldY The y coordinate to be converted, in pixels, not tiles.
@@ -587,6 +608,7 @@ object Tilemaps {
       * @param point A Vector2 to store the coordinates in. If not given a new Vector2 is created.
       * @param camera The Camera to use when calculating the tile index from the world values.
       * @param layer The Tilemap Layer to act upon.
+      * @param originTop Which is the active face of the isometric tile? The top (default, true), or the base? (false) Default true.
       */
     inline def IsometricWorldToTileXY(
       worldX: Double,
@@ -596,6 +618,15 @@ object Tilemaps {
       camera: Camera,
       layer: typings.phaser.Phaser.Tilemaps.LayerData
     ): Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("IsometricWorldToTileXY")(worldX.asInstanceOf[js.Any], worldY.asInstanceOf[js.Any], snapToFloor.asInstanceOf[js.Any], point.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], layer.asInstanceOf[js.Any])).asInstanceOf[Vector2]
+    inline def IsometricWorldToTileXY(
+      worldX: Double,
+      worldY: Double,
+      snapToFloor: Boolean,
+      point: Vector2,
+      camera: Camera,
+      layer: typings.phaser.Phaser.Tilemaps.LayerData,
+      originTop: Boolean
+    ): Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("IsometricWorldToTileXY")(worldX.asInstanceOf[js.Any], worldY.asInstanceOf[js.Any], snapToFloor.asInstanceOf[js.Any], point.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], layer.asInstanceOf[js.Any], originTop.asInstanceOf[js.Any])).asInstanceOf[Vector2]
     
     /**
       * Puts a tile at the given tile coordinates in the specified layer. You can pass in either an index
@@ -1159,6 +1190,12 @@ object Tilemaps {
       layer: typings.phaser.Phaser.Tilemaps.LayerData
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("WeightedRandomize")(tileX.asInstanceOf[js.Any], tileY.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], weightedIndexes.asInstanceOf[js.Any], layer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    inline def WorldToTileX(
+      worldX: Double,
+      snapToFloor: Boolean,
+      camera: Unit,
+      layer: typings.phaser.Phaser.Tilemaps.LayerData
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("WorldToTileX")(worldX.asInstanceOf[js.Any], snapToFloor.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], layer.asInstanceOf[js.Any])).asInstanceOf[Double]
     /**
       * Converts from world X coordinates (pixels) to tile X coordinates (tile units), factoring in the
       * layer's position, scale and scroll.
@@ -1194,6 +1231,12 @@ object Tilemaps {
       layer: typings.phaser.Phaser.Tilemaps.LayerData
     ): Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("WorldToTileXY")(worldX.asInstanceOf[js.Any], worldY.asInstanceOf[js.Any], snapToFloor.asInstanceOf[js.Any], point.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], layer.asInstanceOf[js.Any])).asInstanceOf[Vector2]
     
+    inline def WorldToTileY(
+      worldY: Double,
+      snapToFloor: Boolean,
+      camera: Unit,
+      layer: typings.phaser.Phaser.Tilemaps.LayerData
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("WorldToTileY")(worldY.asInstanceOf[js.Any], snapToFloor.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], layer.asInstanceOf[js.Any])).asInstanceOf[Double]
     /**
       * Converts from world Y coordinates (pixels) to tile Y coordinates (tile units), factoring in the
       * layer's position, scale and scroll.
@@ -1619,6 +1662,24 @@ object Tilemaps {
     var properties: js.Array[js.Object] = js.native
     
     /**
+      * The Stagger Axis as defined in Tiled.
+      * 
+      * Only used for hexagonal orientation Tilemaps.
+      */
+    /* CompleteClass */
+    var staggerAxis: String = js.native
+    
+    /**
+      * The Stagger Index as defined in Tiled.
+      * 
+      * Either 'odd' or 'even'.
+      * 
+      * Only used for hexagonal orientation Tilemaps.
+      */
+    /* CompleteClass */
+    var staggerIndex: String = js.native
+    
+    /**
       * The pixel height of the tiles.
       */
     /* CompleteClass */
@@ -1709,6 +1770,7 @@ object Tilemaps {
     
     /**
       * The length of the horizontal sides of the hexagon.
+      * 
       * Only used for hexagonal orientation Tilemaps.
       */
     /* CompleteClass */
@@ -1748,7 +1810,7 @@ object Tilemaps {
       * An object of Tiled Object Layers.
       */
     /* CompleteClass */
-    var objects: js.Object = js.native
+    var objects: js.Array[ObjectLayerConfig] = js.native
     
     /**
       * The orientation of the map data (i.e. orthogonal, isometric, hexagonal), default 'orthogonal'.
@@ -1772,6 +1834,24 @@ object Tilemaps {
       */
     /* CompleteClass */
     var renderOrder: String = js.native
+    
+    /**
+      * The Stagger Axis as defined in Tiled.
+      * 
+      * Only used for hexagonal orientation Tilemaps.
+      */
+    /* CompleteClass */
+    var staggerAxis: String = js.native
+    
+    /**
+      * The Stagger Index as defined in Tiled.
+      * 
+      * Either 'odd' or 'even'.
+      * 
+      * Only used for hexagonal orientation Tilemaps.
+      */
+    /* CompleteClass */
+    var staggerIndex: String = js.native
     
     /**
       * The height of the tiles.
@@ -1822,6 +1902,22 @@ object Tilemaps {
   @JSImport("phaser", "Tilemaps.ORTHOGONAL")
   @js.native
   val ORTHOGONAL: Double = js.native
+  
+  /**
+    * The ObjectHelper helps tie objects with `gids` into the tileset
+    * that sits behind them.
+    */
+  @JSImport("phaser", "Tilemaps.ObjectHelper")
+  @js.native
+  open class ObjectHelper protected ()
+    extends StObject
+       with typings.phaser.Phaser.Tilemaps.ObjectHelper {
+    /**
+      * 
+      * @param tilesets The backing tileset data.
+      */
+    def this(tilesets: js.Array[typings.phaser.Phaser.Tilemaps.Tileset]) = this()
+  }
   
   /**
     * A class for representing a Tiled object layer in a map. This mirrors the structure of a Tiled
@@ -1995,7 +2091,7 @@ object Tilemaps {
         * consumption. However if your map is small or you need to update the tiles dynamically, then leave
         * the default value set.
         */
-      inline def ParseWeltmeister(name: String, json: js.Object, insertNull: Boolean): typings.phaser.Phaser.Tilemaps.MapData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseWeltmeister")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any], insertNull.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Tilemaps.MapData]
+      inline def ParseWeltmeister(name: String, json: js.Object, insertNull: Boolean): typings.phaser.Phaser.Tilemaps.MapData | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseWeltmeister")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any], insertNull.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Tilemaps.MapData | Null]
     }
     
     inline def Parse(
@@ -2105,13 +2201,13 @@ object Tilemaps {
       /**
         * Parse a Tiled group layer and create a state object for inheriting.
         * @param json The Tiled JSON object.
-        * @param currentl The current group layer from the Tiled JSON file.
-        * @param parentstate The state of the parent group (if any).
+        * @param group The current group layer from the Tiled JSON file.
+        * @param parentState The state of the parent group (if any).
         */
       inline def CreateGroupLayer(json: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroupLayer")(json.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-      inline def CreateGroupLayer(json: js.Object, currentl: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroupLayer")(json.asInstanceOf[js.Any], currentl.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      inline def CreateGroupLayer(json: js.Object, currentl: js.Object, parentstate: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroupLayer")(json.asInstanceOf[js.Any], currentl.asInstanceOf[js.Any], parentstate.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      inline def CreateGroupLayer(json: js.Object, currentl: Unit, parentstate: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroupLayer")(json.asInstanceOf[js.Any], currentl.asInstanceOf[js.Any], parentstate.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def CreateGroupLayer(json: js.Object, group: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroupLayer")(json.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def CreateGroupLayer(json: js.Object, group: js.Object, parentState: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroupLayer")(json.asInstanceOf[js.Any], group.asInstanceOf[js.Any], parentState.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def CreateGroupLayer(json: js.Object, group: Unit, parentState: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroupLayer")(json.asInstanceOf[js.Any], group.asInstanceOf[js.Any], parentState.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       
       /**
         * See Tiled documentation on tile flipping:
@@ -2129,7 +2225,7 @@ object Tilemaps {
       /**
         * Parses a Tiled JSON object into a new MapData object.
         * @param name The name of the tilemap, used to set the name on the MapData.
-        * @param json The Tiled JSON object.
+        * @param source The original Tiled JSON object. This is deep copied by this function.
         * @param insertNull Controls how empty tiles, tiles with an index of -1, in the map
         * data are handled. If `true`, empty locations will get a value of `null`. If `false`, empty
         * location will get a Tile object with an index of -1. If you've a large sparsely populated map and
@@ -2137,7 +2233,7 @@ object Tilemaps {
         * consumption. However if your map is small or you need to update the tiles dynamically, then leave
         * the default value set.
         */
-      inline def ParseJSONTiled(name: String, json: js.Object, insertNull: Boolean): typings.phaser.Phaser.Tilemaps.MapData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseJSONTiled")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any], insertNull.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Tilemaps.MapData]
+      inline def ParseJSONTiled(name: String, source: js.Object, insertNull: Boolean): typings.phaser.Phaser.Tilemaps.MapData | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseJSONTiled")(name.asInstanceOf[js.Any], source.asInstanceOf[js.Any], insertNull.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Tilemaps.MapData | Null]
       
       /**
         * Convert a Tiled object to an internal parsed object normalising and copying properties over, while applying optional x and y offsets. The parsed object will always have the properties `id`, `name`, `type`, `rotation`, `properties`, `visible`, `x`, `y`, `width` and `height`. Other properties will be added according to the object type (such as text, polyline, gid etc.)
@@ -2364,6 +2460,10 @@ object Tilemaps {
     * group name prepended with a '/'.  For example, consider a group called 'ParentGroup' with a
     * child called 'Layer 1'. In the Tilemap object, 'Layer 1' will have the name
     * 'ParentGroup/Layer 1'.
+    * 
+    * The Phaser Tiled Parser does **not** support the 'Collection of Images' feature for a Tileset.
+    * You must ensure all of your tiles are contained in a single tileset image file (per layer)
+    * and have this 'embedded' in the exported Tiled JSON map data.
     */
   @JSImport("phaser", "Tilemaps.Tilemap")
   @js.native
@@ -2485,7 +2585,7 @@ object Tilemaps {
     ) = this()
     
     /**
-      * The depth of this Game Object within the Scene.
+      * The depth of this Game Object within the Scene. Ensure this value is only ever set to a number data-type.
       * 
       * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
       * of Game Objects, without actually moving their position in the display list.
@@ -2564,7 +2664,7 @@ object Tilemaps {
       * value will always render in front of one with a lower value.
       * 
       * Setting the depth will queue a depth sort event within the Scene.
-      * @param value The depth of this Game Object.
+      * @param value The depth of this Game Object. Ensure this value is only ever a number data-type.
       */
     /* CompleteClass */
     override def setDepth(value: Double): this.type = js.native
@@ -2670,7 +2770,7 @@ object Tilemaps {
   }
   
   /**
-    * A Tileset is a combination of an image containing the tiles and a container for data about
+    * A Tileset is a combination of a single image containing the tiles and a container for data about
     * each tile.
     */
   @JSImport("phaser", "Tilemaps.Tileset")
@@ -2688,8 +2788,8 @@ object Tilemaps {
       * @param tileSpacing The spacing between each tile in the sheet (in pixels). Default 0.
       * @param tileProperties Custom properties defined per tile in the Tileset.
       * These typically are custom properties created in Tiled when editing a tileset. Default {}.
-      * @param tileData Data stored per tile. These typically are created in Tiled
-      * when editing a tileset, e.g. from Tiled's tile collision editor or terrain editor. Default {}.
+      * @param tileData Data stored per tile. These typically are created in Tiled when editing a tileset, e.g. from Tiled's tile collision editor or terrain editor. Default {}.
+      * @param tileOffset Tile texture drawing offset. Default {x: 0, y: 0}.
       */
     def this(
       name: String,
@@ -2699,7 +2799,8 @@ object Tilemaps {
       tileMargin: js.UndefOr[Double],
       tileSpacing: js.UndefOr[Double],
       tileProperties: js.UndefOr[js.Object],
-      tileData: js.UndefOr[js.Object]
+      tileData: js.UndefOr[js.Object],
+      tileOffset: js.UndefOr[js.Object]
     ) = this()
   }
 }

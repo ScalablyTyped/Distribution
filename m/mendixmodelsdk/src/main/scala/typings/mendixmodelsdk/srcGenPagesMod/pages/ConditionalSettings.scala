@@ -72,6 +72,12 @@ open class ConditionalSettings protected () extends Element[IModel] {
   def expressionModel_=(newValue: Expression): Unit = js.native
   
   def expression_=(newValue: String): Unit = js.native
+  
+  /**
+    * In version 9.24.0: introduced
+    */
+  def sourceVariable: PageVariable | Null = js.native
+  def sourceVariable_=(newValue: PageVariable | Null): Unit = js.native
 }
 object ConditionalSettings {
   

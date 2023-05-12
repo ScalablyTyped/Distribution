@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetAssessmentResponse extends StObject {
   
   /**
+    * List of criteria for assessment.
+    */
+  var assessmentTargets: js.UndefOr[AssessmentTargets] = js.undefined
+  
+  /**
     *  Detailed information about the assessment. 
     */
   var dataCollectionDetails: js.UndefOr[DataCollectionDetails] = js.undefined
@@ -25,6 +30,12 @@ object GetAssessmentResponse {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: GetAssessmentResponse] (val x: Self) extends AnyVal {
+    
+    inline def setAssessmentTargets(value: AssessmentTargets): Self = StObject.set(x, "assessmentTargets", value.asInstanceOf[js.Any])
+    
+    inline def setAssessmentTargetsUndefined: Self = StObject.set(x, "assessmentTargets", js.undefined)
+    
+    inline def setAssessmentTargetsVarargs(value: AssessmentTarget*): Self = StObject.set(x, "assessmentTargets", js.Array(value*))
     
     inline def setDataCollectionDetails(value: DataCollectionDetails): Self = StObject.set(x, "dataCollectionDetails", value.asInstanceOf[js.Any])
     

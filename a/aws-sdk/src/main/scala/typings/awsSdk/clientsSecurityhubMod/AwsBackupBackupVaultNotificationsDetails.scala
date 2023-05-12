@@ -12,7 +12,7 @@ trait AwsBackupBackupVaultNotificationsDetails extends StObject {
   var BackupVaultEvents: js.UndefOr[NonEmptyStringList] = js.undefined
   
   /**
-    * An ARN that uniquely identifies the Amazon SNS topic for a backup vault’s events. 
+    * The Amazon Resource Name (ARN) that uniquely identifies the Amazon SNS topic for a backup vault's events. 
     */
   var SnsTopicArn: js.UndefOr[NonEmptyString] = js.undefined
 }

@@ -1,19 +1,26 @@
 package typings.twilio
 
+import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libJwtTaskrouterTaskRouterCapabilityMod {
   
-  @JSImport("twilio/lib/jwt/taskrouter/TaskRouterCapability", JSImport.Namespace)
+  @JSImport("twilio/lib/jwt/taskrouter/TaskRouterCapability", JSImport.Default)
   @js.native
-  open class ^ protected ()
+  open class default protected ()
     extends StObject
        with TaskRouterCapability {
     /**
-      * TaskRouterCapability class
-      * @param options Options to initiate
+      * @param options - ...
+      * @param options.accountSid - account sid
+      * @param options.authToken - auth token
+      * @param options.workspaceSid - workspace sid
+      * @param options.channelId - taskrouter channel id
+      * @param options.friendlyName - friendly name for the jwt
+      * @param options.ttl - time to live
+      * @param options.version - taskrouter version
       */
     def this(options: TaskRouterCapabilityOptions) = this()
     
@@ -44,17 +51,48 @@ object libJwtTaskrouterTaskRouterCapabilityMod {
     /* CompleteClass */
     var workspaceSid: String = js.native
   }
+  /* static members */
+  object default {
+    
+    @JSImport("twilio/lib/jwt/taskrouter/TaskRouterCapability", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("twilio/lib/jwt/taskrouter/TaskRouterCapability", "default.Policy")
+    @js.native
+    def Policy: Instantiable1[
+        /* options */ js.UndefOr[PolicyOptions], 
+        typings.twilio.libJwtTaskrouterTaskRouterCapabilityMod.Policy
+      ] = js.native
+    inline def Policy_=(x: Instantiable1[/* options */ js.UndefOr[PolicyOptions], Policy]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Policy")(x.asInstanceOf[js.Any])
+  }
   
   @JSImport("twilio/lib/jwt/taskrouter/TaskRouterCapability", "Policy")
   @js.native
-  open class Policy protected () extends StObject {
-    /**
-      * Create a new Policy
-      * @param options Options to initiate policy
-      */
+  /**
+    * Create a new Policy instance
+    *
+    * @param options - ...
+    * @param options.url - Policy URL
+    * @param options.method - HTTP Method
+    * @param options.queryFilter - Request query filter allowances
+    * @param options.postFilter - Request post filter allowances
+    * @param options.allowed - Allow the policy
+    */
+  open class Policy () extends StObject {
     def this(options: PolicyOptions) = this()
     
+    var allow: Boolean = js.native
+    
+    var method: String = js.native
+    
     def payload(): PolicyPayload = js.native
+    
+    var postFilter: js.Object = js.native
+    
+    var queryFilter: js.Object = js.native
+    
+    var url: String = js.native
   }
   
   trait PolicyOptions extends StObject {

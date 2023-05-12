@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class FunctionBreakpoint protected () extends Breakpoint {
   /**
-    * Create a new function breakpoint.
-    */
+  		 * Create a new function breakpoint.
+  		 */
   def this(functionName: String) = this()
   def this(functionName: String, enabled: Boolean) = this()
   def this(functionName: String, enabled: Boolean, condition: String) = this()
@@ -34,7 +34,7 @@ open class FunctionBreakpoint protected () extends Breakpoint {
   def this(functionName: String, enabled: Unit, condition: Unit, hitCondition: Unit, logMessage: String) = this()
   
   /**
-    * The name of the function to which this breakpoint is attached.
-    */
+  		 * The name of the function to which this breakpoint is attached.
+  		 */
   val functionName: String = js.native
 }

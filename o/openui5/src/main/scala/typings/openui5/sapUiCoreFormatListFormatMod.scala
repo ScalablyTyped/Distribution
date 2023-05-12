@@ -71,6 +71,10 @@ object sapUiCoreFormatListFormatMod {
       */
     oLocale: typings.openui5.sapUiCoreLocaleMod.default
     ): ListFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(oFormatOptions.asInstanceOf[js.Any], oLocale.asInstanceOf[js.Any])).asInstanceOf[ListFormat]
+    inline def getInstance(/**
+      * Locale to get the formatter for
+      */
+    oLocale: typings.openui5.sapUiCoreLocaleMod.default): ListFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(oLocale.asInstanceOf[js.Any]).asInstanceOf[ListFormat]
   }
   
   trait ListFormat extends StObject {

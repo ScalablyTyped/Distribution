@@ -13,7 +13,13 @@ trait MediaTrackSettings extends StObject {
   var autoGainControl: js.UndefOr[scala.Boolean] = js.undefined
   
   /* standard dom */
+  var channelCount: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var deviceId: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
+  var displaySurface: js.UndefOr[java.lang.String] = js.undefined
   
   /* standard dom */
   var echoCancellation: js.UndefOr[scala.Boolean] = js.undefined
@@ -32,9 +38,6 @@ trait MediaTrackSettings extends StObject {
   
   /* standard dom */
   var noiseSuppression: js.UndefOr[scala.Boolean] = js.undefined
-  
-  /* standard dom */
-  var restrictOwnAudio: js.UndefOr[scala.Boolean] = js.undefined
   
   /* standard dom */
   var sampleRate: js.UndefOr[Double] = js.undefined
@@ -63,9 +66,17 @@ object MediaTrackSettings {
     
     inline def setAutoGainControlUndefined: Self = StObject.set(x, "autoGainControl", js.undefined)
     
+    inline def setChannelCount(value: Double): Self = StObject.set(x, "channelCount", value.asInstanceOf[js.Any])
+    
+    inline def setChannelCountUndefined: Self = StObject.set(x, "channelCount", js.undefined)
+    
     inline def setDeviceId(value: java.lang.String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
     inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+    
+    inline def setDisplaySurface(value: java.lang.String): Self = StObject.set(x, "displaySurface", value.asInstanceOf[js.Any])
+    
+    inline def setDisplaySurfaceUndefined: Self = StObject.set(x, "displaySurface", js.undefined)
     
     inline def setEchoCancellation(value: scala.Boolean): Self = StObject.set(x, "echoCancellation", value.asInstanceOf[js.Any])
     
@@ -90,10 +101,6 @@ object MediaTrackSettings {
     inline def setNoiseSuppression(value: scala.Boolean): Self = StObject.set(x, "noiseSuppression", value.asInstanceOf[js.Any])
     
     inline def setNoiseSuppressionUndefined: Self = StObject.set(x, "noiseSuppression", js.undefined)
-    
-    inline def setRestrictOwnAudio(value: scala.Boolean): Self = StObject.set(x, "restrictOwnAudio", value.asInstanceOf[js.Any])
-    
-    inline def setRestrictOwnAudioUndefined: Self = StObject.set(x, "restrictOwnAudio", js.undefined)
     
     inline def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
     

@@ -5,6 +5,7 @@ import typings.phaser.Phaser.GameObjects.Components.TransformMatrix
 import typings.phaser.Phaser.Math.Matrix4
 import typings.phaser.Phaser.Math.Vector2
 import typings.phaser.Phaser.Math.Vector3
+import typings.phaser.Phaser.Types.GameObjects.Particles.DeathZoneObject
 import typings.phaser.Phaser.Types.Math.Vector2Like
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,7 +21,9 @@ object Geom {
     * To render a Circle you should look at the capabilities of the Graphics class.
     */
   @js.native
-  trait Circle extends StObject {
+  trait Circle
+    extends StObject
+       with DeathZoneObject {
     
     /**
       * The bottom position of the Circle.
@@ -149,7 +152,9 @@ object Geom {
     * To render an Ellipse you should look at the capabilities of the Graphics class.
     */
   @js.native
-  trait Ellipse extends StObject {
+  trait Ellipse
+    extends StObject
+       with DeathZoneObject {
     
     /**
       * The bottom position of the Ellipse.
@@ -531,6 +536,36 @@ object Geom {
       ): Double = js.native
       
       /**
+        * Scales the original UV values of each vertex by the given amounts.
+        * 
+        * The original properties `Vertex.u` and `Vertex.v`
+        * remain unchanged, only the translated properties
+        * `Vertex.tu` and `Vertex.tv`, as used in rendering,
+        * are updated.
+        * @param x The amount to scale the UV u coordinate by.
+        * @param y The amount to scale the UV v coordinate by.
+        */
+      def scaleUV(x: Double, y: Double): this.type = js.native
+      
+      /**
+        * Translates the original UV positions of each vertex by the given amounts.
+        * 
+        * The original properties `Vertex.u` and `Vertex.v`
+        * remain unchanged, only the translated properties
+        * `Vertex.tu` and `Vertex.tv`, as used in rendering,
+        * are updated.
+        * @param x The amount to scroll the UV u coordinate by.
+        * @param y The amount to scroll the UV v coordinate by.
+        */
+      def scrollUV(x: Double, y: Double): this.type = js.native
+      
+      /**
+        * Sets the color value for each Vertex in this Face.
+        * @param color The color value for each vertex.
+        */
+      def setColor(color: Double): this.type = js.native
+      
+      /**
         * Transforms all Face vertices by the given matrix, storing the results in their `vx`, `vy` and `vz` properties.
         * @param transformMatrix The transform matrix to apply to this vertex.
         * @param width The width of the parent Mesh.
@@ -550,6 +585,29 @@ object Geom {
         */
       def translate(x: Double): this.type = js.native
       def translate(x: Double, y: Double): this.type = js.native
+      
+      /**
+        * Calls the `Vertex.update` method on each of the vertices. This populates them
+        * with the new translated values, updating their `tx`, `ty` and `ta` properties.
+        * @param alpha The alpha of the parent object.
+        * @param a The parent transform matrix data a component.
+        * @param b The parent transform matrix data b component.
+        * @param c The parent transform matrix data c component.
+        * @param d The parent transform matrix data d component.
+        * @param e The parent transform matrix data e component.
+        * @param f The parent transform matrix data f component.
+        * @param roundPixels Round the vertex position or not?
+        */
+      def update(
+        alpha: Double,
+        a: Double,
+        b: Double,
+        c: Double,
+        d: Double,
+        e: Double,
+        f: Double,
+        roundPixels: Boolean
+      ): this.type = js.native
       
       /**
         * Updates the bounds of this Face, based on the translated values of the vertices.
@@ -623,22 +681,61 @@ object Geom {
       ): Double = js.native
       
       /**
-        * The projected x coordinate of this vertex.
+        * The normalized projected x coordinate of this vertex.
         */
       var nx: Double = js.native
       
       /**
-        * The projected y coordinate of this vertex.
+        * The normalized projected y coordinate of this vertex.
         */
       var ny: Double = js.native
       
       /**
-        * The projected z coordinate of this vertex.
+        * The normalized projected z coordinate of this vertex.
         */
       var nz: Double = js.native
       
       /**
+        * Resizes this Vertex by setting the x and y coordinates, then transforms this vertex
+        * by an identity matrix and dimensions, storing the results in `vx`, `vy` and `vz`.
+        * @param x The x position of the vertex.
+        * @param y The y position of the vertex.
+        * @param width The width of the parent Mesh.
+        * @param height The height of the parent Mesh.
+        * @param originX The originX of the parent Mesh.
+        * @param originY The originY of the parent Mesh.
+        */
+      def resize(x: Double, y: Double, width: Double, height: Double, originX: Double, originY: Double): this.type = js.native
+      
+      /**
+        * Scales the original UV values by the given amounts.
+        * 
+        * The original properties `Vertex.u` and `Vertex.v`
+        * remain unchanged, only the translated properties
+        * `Vertex.tu` and `Vertex.tv`, as used in rendering,
+        * are updated.
+        * @param x The amount to scale the UV u coordinate by.
+        * @param y The amount to scale the UV v coordinate by.
+        */
+      def scaleUV(x: Double, y: Double): this.type = js.native
+      
+      /**
+        * Translates the original UV positions by the given amounts.
+        * 
+        * The original properties `Vertex.u` and `Vertex.v`
+        * remain unchanged, only the translated properties
+        * `Vertex.tu` and `Vertex.tv`, as used in rendering,
+        * are updated.
+        * @param x The amount to scroll the UV u coordinate by.
+        * @param y The amount to scroll the UV v coordinate by.
+        */
+      def scrollUV(x: Double, y: Double): this.type = js.native
+      
+      /**
         * Sets the U and V properties.
+        * 
+        * Also resets the translated uv properties, undoing any scale
+        * or shift they may have had.
         * @param u The UV u coordinate of the vertex.
         * @param v The UV v coordinate of the vertex.
         */
@@ -657,6 +754,16 @@ object Geom {
         * @param cameraZ The z position of the MeshCamera.
         */
       def transformCoordinatesLocal(transformMatrix: Matrix4, width: Double, height: Double, cameraZ: Double): Unit = js.native
+      
+      /**
+        * The translated uv u coordinate of this vertex.
+        */
+      var tu: Double = js.native
+      
+      /**
+        * The translated uv v coordinate of this vertex.
+        */
+      var tv: Double = js.native
       
       /**
         * The translated x coordinate of this vertex.
@@ -760,7 +867,9 @@ object Geom {
     * To render a Polygon you should look at the capabilities of the Graphics class.
     */
   @js.native
-  trait Polygon extends StObject {
+  trait Polygon
+    extends StObject
+       with DeathZoneObject {
     
     /**
       * The area of this Polygon.
@@ -994,7 +1103,9 @@ object Geom {
     * specify the second point, and the last two arguments specify the third point.
     */
   @js.native
-  trait Triangle extends StObject {
+  trait Triangle
+    extends StObject
+       with DeathZoneObject {
     
     /**
       * Bottom most Y coordinate of the triangle. Setting it moves the triangle on the Y axis accordingly.

@@ -27,8 +27,14 @@ object distTypesCommandsGetAccessKeyInfoCommandMod {
           Any, 
           Any
         ] {
+    /**
+      * @public
+      */
     def this(input: GetAccessKeyInfoCommandInput) = this()
     
+    /**
+      * @internal
+      */
     /* private */ var deserialize: Any = js.native
     
     /**
@@ -44,6 +50,9 @@ object distTypesCommandsGetAccessKeyInfoCommandMod {
       options: HttpHandlerOptions
     ): Handler[GetAccessKeyInfoCommandInput, GetAccessKeyInfoCommandOutput] = js.native
     
+    /**
+      * @internal
+      */
     /* private */ var serialize: Any = js.native
   }
   /* static members */

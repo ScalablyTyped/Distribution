@@ -22,7 +22,7 @@ object distSrcRpcHandlersGetValueMod {
     
     /**
       * Try to fetch a given record by from the local datastore.
-      * Returns the record iff it is still valid, meaning
+      * Returns the record if it is still valid, meaning
       * - it was either authored by this node, or
       * - it was received less than `MAX_RECORD_AGE` ago.
       */
@@ -38,13 +38,38 @@ object distSrcRpcHandlersGetValueMod {
   
   trait GetValueHandlerComponents extends StObject {
     
-    var datastore: Datastore
+    var datastore: Datastore[
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object
+      ]
     
     var peerStore: PeerStore
   }
   object GetValueHandlerComponents {
     
-    inline def apply(datastore: Datastore, peerStore: PeerStore): GetValueHandlerComponents = {
+    inline def apply(
+      datastore: Datastore[
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object
+        ],
+      peerStore: PeerStore
+    ): GetValueHandlerComponents = {
       val __obj = js.Dynamic.literal(datastore = datastore.asInstanceOf[js.Any], peerStore = peerStore.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetValueHandlerComponents]
     }
@@ -52,7 +77,20 @@ object distSrcRpcHandlersGetValueMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: GetValueHandlerComponents] (val x: Self) extends AnyVal {
       
-      inline def setDatastore(value: Datastore): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
+      inline def setDatastore(
+        value: Datastore[
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object
+            ]
+      ): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
       
       inline def setPeerStore(value: PeerStore): Self = StObject.set(x, "peerStore", value.asInstanceOf[js.Any])
     }

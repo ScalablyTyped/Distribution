@@ -7,6 +7,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TableStatistics extends StObject {
   
   /**
+    * The number of data definition language (DDL) statements used to build and modify the structure of your tables applied on the target.
+    */
+  var AppliedDdls: js.UndefOr[LongOptional] = js.undefined
+  
+  /**
+    * The number of delete actions applied on a target table.
+    */
+  var AppliedDeletes: js.UndefOr[LongOptional] = js.undefined
+  
+  /**
+    * The number of insert actions applied on a target table.
+    */
+  var AppliedInserts: js.UndefOr[LongOptional] = js.undefined
+  
+  /**
+    * The number of update actions applied on a target table.
+    */
+  var AppliedUpdates: js.UndefOr[LongOptional] = js.undefined
+  
+  /**
     * The data definition language (DDL) used to build and modify the structure of your tables.
     */
   var Ddls: js.UndefOr[Long] = js.undefined
@@ -110,6 +130,22 @@ object TableStatistics {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: TableStatistics] (val x: Self) extends AnyVal {
+    
+    inline def setAppliedDdls(value: LongOptional): Self = StObject.set(x, "AppliedDdls", value.asInstanceOf[js.Any])
+    
+    inline def setAppliedDdlsUndefined: Self = StObject.set(x, "AppliedDdls", js.undefined)
+    
+    inline def setAppliedDeletes(value: LongOptional): Self = StObject.set(x, "AppliedDeletes", value.asInstanceOf[js.Any])
+    
+    inline def setAppliedDeletesUndefined: Self = StObject.set(x, "AppliedDeletes", js.undefined)
+    
+    inline def setAppliedInserts(value: LongOptional): Self = StObject.set(x, "AppliedInserts", value.asInstanceOf[js.Any])
+    
+    inline def setAppliedInsertsUndefined: Self = StObject.set(x, "AppliedInserts", js.undefined)
+    
+    inline def setAppliedUpdates(value: LongOptional): Self = StObject.set(x, "AppliedUpdates", value.asInstanceOf[js.Any])
+    
+    inline def setAppliedUpdatesUndefined: Self = StObject.set(x, "AppliedUpdates", js.undefined)
     
     inline def setDdls(value: Long): Self = StObject.set(x, "Ddls", value.asInstanceOf[js.Any])
     

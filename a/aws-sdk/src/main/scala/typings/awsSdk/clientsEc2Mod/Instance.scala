@@ -22,7 +22,7 @@ trait Instance extends StObject {
   var BlockDeviceMappings: js.UndefOr[InstanceBlockDeviceMappingList] = js.undefined
   
   /**
-    * The boot mode of the instance. For more information, see Boot modes in the Amazon EC2 User Guide.
+    * The boot mode that was specified by the AMI. If the value is uefi-preferred, the AMI supports both UEFI and Legacy BIOS. The currentInstanceBootMode parameter is the boot mode that is used to boot the instance at launch or start.  The operating system contained in the AMI must be configured to support the specified boot mode.  For more information, see Boot modes in the Amazon EC2 User Guide.
     */
   var BootMode: js.UndefOr[BootModeValues] = js.undefined
   
@@ -47,6 +47,11 @@ trait Instance extends StObject {
   var CpuOptions: js.UndefOr[typings.awsSdk.clientsEc2Mod.CpuOptions] = js.undefined
   
   /**
+    * The boot mode that is used to boot the instance at launch or start. For more information, see Boot modes in the Amazon EC2 User Guide.
+    */
+  var CurrentInstanceBootMode: js.UndefOr[InstanceBootModeValues] = js.undefined
+  
+  /**
     * Indicates whether the instance is optimized for Amazon EBS I/O. This optimization provides dedicated throughput to Amazon EBS and an optimized configuration stack to provide optimal I/O performance. This optimization isn't available with all instance types. Additional usage charges apply when using an EBS Optimized instance.
     */
   var EbsOptimized: js.UndefOr[Boolean] = js.undefined
@@ -57,7 +62,7 @@ trait Instance extends StObject {
   var ElasticGpuAssociations: js.UndefOr[ElasticGpuAssociationList] = js.undefined
   
   /**
-    *  The elastic inference accelerator associated with the instance.
+    * The elastic inference accelerator associated with the instance.
     */
   var ElasticInferenceAcceleratorAssociations: js.UndefOr[ElasticInferenceAcceleratorAssociationList] = js.undefined
   
@@ -147,7 +152,7 @@ trait Instance extends StObject {
   var Monitoring: js.UndefOr[typings.awsSdk.clientsEc2Mod.Monitoring] = js.undefined
   
   /**
-    * [EC2-VPC] The network interfaces for the instance.
+    * The network interfaces for the instance.
     */
   var NetworkInterfaces: js.UndefOr[InstanceNetworkInterfaceList] = js.undefined
   
@@ -172,7 +177,7 @@ trait Instance extends StObject {
   var PlatformDetails: js.UndefOr[String] = js.undefined
   
   /**
-    * (IPv4 only) The private DNS hostname name assigned to the instance. This DNS hostname can only be used inside the Amazon EC2 network. This name is not available until the instance enters the running state.  [EC2-VPC] The Amazon-provided DNS server resolves Amazon-provided private DNS hostnames if you've enabled DNS resolution and DNS hostnames in your VPC. If you are not using the Amazon-provided DNS server in your VPC, your custom domain name servers must resolve the hostname as appropriate.
+    * [IPv4 only] The private DNS hostname name assigned to the instance. This DNS hostname can only be used inside the Amazon EC2 network. This name is not available until the instance enters the running state.  The Amazon-provided DNS server resolves Amazon-provided private DNS hostnames if you've enabled DNS resolution and DNS hostnames in your VPC. If you are not using the Amazon-provided DNS server in your VPC, your custom domain name servers must resolve the hostname as appropriate.
     */
   var PrivateDnsName: js.UndefOr[String] = js.undefined
   
@@ -192,7 +197,7 @@ trait Instance extends StObject {
   var ProductCodes: js.UndefOr[ProductCodeList] = js.undefined
   
   /**
-    * (IPv4 only) The public DNS name assigned to the instance. This name is not available until the instance enters the running state. For EC2-VPC, this name is only available if you've enabled DNS hostnames for your VPC.
+    * [IPv4 only] The public DNS name assigned to the instance. This name is not available until the instance enters the running state. This name is only available if you've enabled DNS hostnames for your VPC.
     */
   var PublicDnsName: js.UndefOr[String] = js.undefined
   
@@ -252,7 +257,7 @@ trait Instance extends StObject {
   var StateTransitionReason: js.UndefOr[String] = js.undefined
   
   /**
-    * [EC2-VPC] The ID of the subnet in which the instance is running.
+    * The ID of the subnet in which the instance is running.
     */
   var SubnetId: js.UndefOr[String] = js.undefined
   
@@ -282,7 +287,7 @@ trait Instance extends StObject {
   var VirtualizationType: js.UndefOr[typings.awsSdk.clientsEc2Mod.VirtualizationType] = js.undefined
   
   /**
-    * [EC2-VPC] The ID of the VPC in which the instance is running.
+    * The ID of the VPC in which the instance is running.
     */
   var VpcId: js.UndefOr[String] = js.undefined
 }
@@ -329,6 +334,10 @@ object Instance {
     inline def setCpuOptions(value: CpuOptions): Self = StObject.set(x, "CpuOptions", value.asInstanceOf[js.Any])
     
     inline def setCpuOptionsUndefined: Self = StObject.set(x, "CpuOptions", js.undefined)
+    
+    inline def setCurrentInstanceBootMode(value: InstanceBootModeValues): Self = StObject.set(x, "CurrentInstanceBootMode", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentInstanceBootModeUndefined: Self = StObject.set(x, "CurrentInstanceBootMode", js.undefined)
     
     inline def setEbsOptimized(value: Boolean): Self = StObject.set(x, "EbsOptimized", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,7 @@ trait ListPackagesRequest extends StObject {
   var maxResults: js.UndefOr[ListPackagesMaxResults] = js.undefined
   
   /**
-    * The namespace used to filter requested packages. Only packages with the provided namespace will be returned. The package component that specifies its namespace depends on its type. For example:    The namespace of a Maven package is its groupId.     The namespace of an npm package is its scope.     Python and NuGet packages do not contain a corresponding component, packages of those formats do not have a namespace.   
+    * The namespace prefix used to filter requested packages. Only packages with a namespace that starts with the provided string value are returned. Note that although this option is called --namespace and not --namespace-prefix, it has prefix-matching behavior. Each package format uses namespace as follows:    The namespace of a Maven package is its groupId.     The namespace of an npm package is its scope.     Python and NuGet packages do not contain a corresponding component, packages of those formats do not have a namespace.     The namespace of a generic package is its namespace.   
     */
   var namespace: js.UndefOr[PackageNamespace] = js.undefined
   

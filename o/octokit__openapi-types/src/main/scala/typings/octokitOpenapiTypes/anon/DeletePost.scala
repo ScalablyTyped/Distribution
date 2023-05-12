@@ -6,17 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DeletePost extends StObject {
   
-  /** Removes one or more assignees from an issue. */
-  var delete: RequestBodyContentApplicationjsonAssigneesArray
+  /**
+    * Removes users from Codespaces billing for an organization
+    * @description Codespaces for the specified users will no longer be billed to the organization.
+    * To use this endpoint, the billing settings for the organization must be set to `selected_members`. For information on how to change this setting please see [these docs].(https://docs.github.com/rest/codespaces/organizations#manage-access-control-for-organization-codespaces) You must authenticate using an access token with the `admin:org` scope to use this endpoint.
+    */
+  var delete: RequestBodyContentApplicationjsonSelectedusernamesArray
   
-  /** Adds up to 10 assignees to an issue. Users already assigned to an issue are not replaced. */
-  var post: RequestBodyContentApplicationjson261
+  /**
+    * Add users to Codespaces billing for an organization
+    * @description Codespaces for the specified users will be billed to the organization.
+    * To use this endpoint, the billing settings for the organization must be set to `selected_members`. For information on how to change this setting please see [these docs].(https://docs.github.com/rest/codespaces/organizations#manage-access-control-for-organization-codespaces) You must authenticate using an access token with the `admin:org` scope to use this endpoint.
+    */
+  var post: RequestBodyContentApplicationjsonSelectedusernamesArray
 }
 object DeletePost {
   
   inline def apply(
-    delete: RequestBodyContentApplicationjsonAssigneesArray,
-    post: RequestBodyContentApplicationjson261
+    delete: RequestBodyContentApplicationjsonSelectedusernamesArray,
+    post: RequestBodyContentApplicationjsonSelectedusernamesArray
   ): DeletePost = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletePost]
@@ -25,8 +33,8 @@ object DeletePost {
   @scala.inline
   implicit open class MutableBuilder[Self <: DeletePost] (val x: Self) extends AnyVal {
     
-    inline def setDelete(value: RequestBodyContentApplicationjsonAssigneesArray): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: RequestBodyContentApplicationjsonSelectedusernamesArray): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    inline def setPost(value: RequestBodyContentApplicationjson261): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+    inline def setPost(value: RequestBodyContentApplicationjsonSelectedusernamesArray): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
   }
 }

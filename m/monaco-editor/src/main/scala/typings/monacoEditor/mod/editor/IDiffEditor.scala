@@ -44,6 +44,13 @@ trait IDiffEditor
   def getOriginalEditor(): ICodeEditor = js.native
   
   /**
+    * An event emitted when the diff model is changed (i.e. the diff editor shows new content).
+    * @event
+    */
+  def onDidChangeModel(listener: js.Function1[/* e */ Unit, Any]): IDisposable = js.native
+  def onDidChangeModel(listener: js.Function1[/* e */ Unit, Any], thisArg: Any): IDisposable = js.native
+  
+  /**
     * An event emitted when the diff information computed by this diff editor has been updated.
     * @event
     */

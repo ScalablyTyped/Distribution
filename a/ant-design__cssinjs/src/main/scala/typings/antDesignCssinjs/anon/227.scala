@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.GridRow
+import typings.csstype.mod.Property.MaskBorderOutset
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `227` extends StObject {
   
   var value: js.UndefOr[
-    GridRow | (js.Array[
-      (Extract[js.UndefOr[GridRow | js.Array[NonNullable[js.UndefOr[GridRow]]]], String]) | NonNullable[js.UndefOr[GridRow]]
+    (MaskBorderOutset[Double | String]) | (js.Array[
+      (Extract[
+        js.UndefOr[
+          (MaskBorderOutset[Double | String]) | (js.Array[NonNullable[js.UndefOr[MaskBorderOutset[Double | String]]]])
+        ], 
+        String
+      ]) | (NonNullable[js.UndefOr[MaskBorderOutset[Double | String]]])
     ])
   ] = js.native
 }

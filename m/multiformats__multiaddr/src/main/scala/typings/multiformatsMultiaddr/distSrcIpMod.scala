@@ -10,15 +10,15 @@ object distSrcIpMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isIP(string: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIP")(string.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isIP(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIP")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("@multiformats/multiaddr/dist/src/ip", "isV4")
   @js.native
-  val isV4: js.Function1[/* string */ String, Boolean] = js.native
+  val isV4: js.Function1[/* input */ String, Boolean] = js.native
   
   @JSImport("@multiformats/multiaddr/dist/src/ip", "isV6")
   @js.native
-  val isV6: js.Function1[/* string */ String, Boolean] = js.native
+  val isV6: js.Function1[/* input */ String, Boolean] = js.native
   
   inline def toBytes(ip: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("toBytes")(ip.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   

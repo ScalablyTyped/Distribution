@@ -12,8 +12,8 @@ The streaming build system.
 | Keywords           | build, stream, system, make, tool, asset, pipeline, series, parallel, streaming |
 | # releases         | 0 |
 | # dependents       | 0.0 |
-| # downloads        | 5994461.666666667 |
-| # stars            | 32613.0 |
+| # downloads        | 5888594.666666667 |
+| # stars            | 32664.0 |
 
 ## Links
 - [Homepage](https://gulpjs.com)

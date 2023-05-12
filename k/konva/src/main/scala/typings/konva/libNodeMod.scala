@@ -29,7 +29,9 @@ import typings.konva.konvaStrings.compositionend
 import typings.konva.konvaStrings.compositionstart
 import typings.konva.konvaStrings.compositionupdate
 import typings.konva.konvaStrings.contextmenu
+import typings.konva.konvaStrings.copy
 import typings.konva.konvaStrings.cuechange
+import typings.konva.konvaStrings.cut
 import typings.konva.konvaStrings.dblclick
 import typings.konva.konvaStrings.drag
 import typings.konva.konvaStrings.dragend
@@ -64,6 +66,7 @@ import typings.konva.konvaStrings.mousemove
 import typings.konva.konvaStrings.mouseout
 import typings.konva.konvaStrings.mouseover
 import typings.konva.konvaStrings.mouseup
+import typings.konva.konvaStrings.paste
 import typings.konva.konvaStrings.pause
 import typings.konva.konvaStrings.play
 import typings.konva.konvaStrings.playing
@@ -120,6 +123,7 @@ import typings.konva.libTypesMod.IRect
 import typings.konva.libTypesMod.Vector2d
 import typings.konva.libUtilMod.Transform
 import typings.std.AnimationEvent
+import typings.std.ClipboardEvent
 import typings.std.CompositionEvent
 import typings.std.DragEvent
 import typings.std.ErrorEvent
@@ -372,14 +376,14 @@ object libNodeMod {
     @JSName("filters")
     var filters_Original: GetSet[js.Array[Filter], this.type] = js.native
     
-    def findAncestor(): Node[NodeConfig] = js.native
-    def findAncestor(selector: String): Node[NodeConfig] = js.native
-    def findAncestor(selector: String, includeSelf: Boolean): Node[NodeConfig] = js.native
-    def findAncestor(selector: String, includeSelf: Boolean, stopNode: Container[Node[NodeConfig]]): Node[NodeConfig] = js.native
-    def findAncestor(selector: String, includeSelf: Unit, stopNode: Container[Node[NodeConfig]]): Node[NodeConfig] = js.native
-    def findAncestor(selector: Unit, includeSelf: Boolean): Node[NodeConfig] = js.native
-    def findAncestor(selector: Unit, includeSelf: Boolean, stopNode: Container[Node[NodeConfig]]): Node[NodeConfig] = js.native
-    def findAncestor(selector: Unit, includeSelf: Unit, stopNode: Container[Node[NodeConfig]]): Node[NodeConfig] = js.native
+    def findAncestor(): Any = js.native
+    def findAncestor(selector: String): Any = js.native
+    def findAncestor(selector: String, includeSelf: Boolean): Any = js.native
+    def findAncestor(selector: String, includeSelf: Boolean, stopNode: Container[Node[NodeConfig]]): Any = js.native
+    def findAncestor(selector: String, includeSelf: Unit, stopNode: Container[Node[NodeConfig]]): Any = js.native
+    def findAncestor(selector: Unit, includeSelf: Boolean): Any = js.native
+    def findAncestor(selector: Unit, includeSelf: Boolean, stopNode: Container[Node[NodeConfig]]): Any = js.native
+    def findAncestor(selector: Unit, includeSelf: Unit, stopNode: Container[Node[NodeConfig]]): Any = js.native
     
     def findAncestors(selector: String): js.Array[Node[NodeConfig]] = js.native
     def findAncestors(selector: String, includeSelf: Boolean): js.Array[Node[NodeConfig]] = js.native
@@ -592,7 +596,11 @@ object libNodeMod {
     @JSName("on")
     def on_contextmenu(evtStr: contextmenu, handler: KonvaEventListener[this.type, MouseEvent]): Any = js.native
     @JSName("on")
+    def on_copy(evtStr: copy, handler: KonvaEventListener[this.type, ClipboardEvent]): Any = js.native
+    @JSName("on")
     def on_cuechange(evtStr: cuechange, handler: KonvaEventListener[this.type, Event]): Any = js.native
+    @JSName("on")
+    def on_cut(evtStr: cut, handler: KonvaEventListener[this.type, ClipboardEvent]): Any = js.native
     @JSName("on")
     def on_dblclick(evtStr: dblclick, handler: KonvaEventListener[this.type, MouseEvent]): Any = js.native
     @JSName("on")
@@ -661,6 +669,8 @@ object libNodeMod {
     def on_mouseover(evtStr: mouseover, handler: KonvaEventListener[this.type, MouseEvent]): Any = js.native
     @JSName("on")
     def on_mouseup(evtStr: mouseup, handler: KonvaEventListener[this.type, MouseEvent]): Any = js.native
+    @JSName("on")
+    def on_paste(evtStr: paste, handler: KonvaEventListener[this.type, ClipboardEvent]): Any = js.native
     @JSName("on")
     def on_pause(evtStr: pause, handler: KonvaEventListener[this.type, Event]): Any = js.native
     @JSName("on")
@@ -984,6 +994,8 @@ object libNodeMod {
     
     var evt: EventType
     
+    var pointerId: Double
+    
     var target: Shape[ShapeConfig] | Stage
     
     var `type`: String
@@ -994,10 +1006,11 @@ object libNodeMod {
       cancelBubble: Boolean,
       currentTarget: Node[NodeConfig],
       evt: EventType,
+      pointerId: Double,
       target: Shape[ShapeConfig] | Stage,
       `type`: String
     ): KonvaEventObject[EventType] = {
-      val __obj = js.Dynamic.literal(cancelBubble = cancelBubble.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], evt = evt.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(cancelBubble = cancelBubble.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], evt = evt.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[KonvaEventObject[EventType]]
     }
@@ -1014,6 +1027,8 @@ object libNodeMod {
       inline def setCurrentTarget(value: Node[NodeConfig]): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
       inline def setEvt(value: EventType): Self = StObject.set(x, "evt", value.asInstanceOf[js.Any])
+      
+      inline def setPointerId(value: Double): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
       
       inline def setTarget(value: Shape[ShapeConfig] | Stage): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
@@ -1202,7 +1217,9 @@ object libNodeMod {
       compositionstart: CompositionEvent,
       compositionupdate: CompositionEvent,
       contextmenu: MouseEvent,
+      copy: ClipboardEvent,
       cuechange: Event,
+      cut: ClipboardEvent,
       dblclick: MouseEvent,
       drag: DragEvent,
       dragend: DragEvent,
@@ -1237,6 +1254,7 @@ object libNodeMod {
       mouseout: MouseEvent,
       mouseover: MouseEvent,
       mouseup: MouseEvent,
+      paste: ClipboardEvent,
       pause: Event,
       play: Event,
       playing: Event,
@@ -1281,7 +1299,7 @@ object libNodeMod {
       webkittransitionend: Event,
       wheel: WheelEvent
     ): NodeEventMap = {
-      val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any], animationcancel = animationcancel.asInstanceOf[js.Any], animationend = animationend.asInstanceOf[js.Any], animationiteration = animationiteration.asInstanceOf[js.Any], animationstart = animationstart.asInstanceOf[js.Any], auxclick = auxclick.asInstanceOf[js.Any], beforeinput = beforeinput.asInstanceOf[js.Any], blur = blur.asInstanceOf[js.Any], cancel = cancel.asInstanceOf[js.Any], canplay = canplay.asInstanceOf[js.Any], canplaythrough = canplaythrough.asInstanceOf[js.Any], change = change.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], compositionend = compositionend.asInstanceOf[js.Any], compositionstart = compositionstart.asInstanceOf[js.Any], compositionupdate = compositionupdate.asInstanceOf[js.Any], contextmenu = contextmenu.asInstanceOf[js.Any], cuechange = cuechange.asInstanceOf[js.Any], dblclick = dblclick.asInstanceOf[js.Any], drag = drag.asInstanceOf[js.Any], dragend = dragend.asInstanceOf[js.Any], dragenter = dragenter.asInstanceOf[js.Any], dragleave = dragleave.asInstanceOf[js.Any], dragover = dragover.asInstanceOf[js.Any], dragstart = dragstart.asInstanceOf[js.Any], drop = drop.asInstanceOf[js.Any], durationchange = durationchange.asInstanceOf[js.Any], emptied = emptied.asInstanceOf[js.Any], ended = ended.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], focusin = focusin.asInstanceOf[js.Any], focusout = focusout.asInstanceOf[js.Any], formdata = formdata.asInstanceOf[js.Any], gotpointercapture = gotpointercapture.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], invalid = invalid.asInstanceOf[js.Any], keydown = keydown.asInstanceOf[js.Any], keypress = keypress.asInstanceOf[js.Any], keyup = keyup.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any], loadeddata = loadeddata.asInstanceOf[js.Any], loadedmetadata = loadedmetadata.asInstanceOf[js.Any], loadstart = loadstart.asInstanceOf[js.Any], lostpointercapture = lostpointercapture.asInstanceOf[js.Any], mousedown = mousedown.asInstanceOf[js.Any], mouseenter = mouseenter.asInstanceOf[js.Any], mouseleave = mouseleave.asInstanceOf[js.Any], mousemove = mousemove.asInstanceOf[js.Any], mouseout = mouseout.asInstanceOf[js.Any], mouseover = mouseover.asInstanceOf[js.Any], mouseup = mouseup.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], play = play.asInstanceOf[js.Any], playing = playing.asInstanceOf[js.Any], pointercancel = pointercancel.asInstanceOf[js.Any], pointerdown = pointerdown.asInstanceOf[js.Any], pointerenter = pointerenter.asInstanceOf[js.Any], pointerleave = pointerleave.asInstanceOf[js.Any], pointermove = pointermove.asInstanceOf[js.Any], pointerout = pointerout.asInstanceOf[js.Any], pointerover = pointerover.asInstanceOf[js.Any], pointerup = pointerup.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], ratechange = ratechange.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], resize = resize.asInstanceOf[js.Any], scroll = scroll.asInstanceOf[js.Any], securitypolicyviolation = securitypolicyviolation.asInstanceOf[js.Any], seeked = seeked.asInstanceOf[js.Any], seeking = seeking.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], selectionchange = selectionchange.asInstanceOf[js.Any], selectstart = selectstart.asInstanceOf[js.Any], slotchange = slotchange.asInstanceOf[js.Any], stalled = stalled.asInstanceOf[js.Any], submit = submit.asInstanceOf[js.Any], suspend = suspend.asInstanceOf[js.Any], timeupdate = timeupdate.asInstanceOf[js.Any], toggle = toggle.asInstanceOf[js.Any], touchcancel = touchcancel.asInstanceOf[js.Any], touchend = touchend.asInstanceOf[js.Any], touchmove = touchmove.asInstanceOf[js.Any], touchstart = touchstart.asInstanceOf[js.Any], transitioncancel = transitioncancel.asInstanceOf[js.Any], transitionend = transitionend.asInstanceOf[js.Any], transitionrun = transitionrun.asInstanceOf[js.Any], transitionstart = transitionstart.asInstanceOf[js.Any], volumechange = volumechange.asInstanceOf[js.Any], waiting = waiting.asInstanceOf[js.Any], webkitanimationend = webkitanimationend.asInstanceOf[js.Any], webkitanimationiteration = webkitanimationiteration.asInstanceOf[js.Any], webkitanimationstart = webkitanimationstart.asInstanceOf[js.Any], webkittransitionend = webkittransitionend.asInstanceOf[js.Any], wheel = wheel.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any], animationcancel = animationcancel.asInstanceOf[js.Any], animationend = animationend.asInstanceOf[js.Any], animationiteration = animationiteration.asInstanceOf[js.Any], animationstart = animationstart.asInstanceOf[js.Any], auxclick = auxclick.asInstanceOf[js.Any], beforeinput = beforeinput.asInstanceOf[js.Any], blur = blur.asInstanceOf[js.Any], cancel = cancel.asInstanceOf[js.Any], canplay = canplay.asInstanceOf[js.Any], canplaythrough = canplaythrough.asInstanceOf[js.Any], change = change.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], compositionend = compositionend.asInstanceOf[js.Any], compositionstart = compositionstart.asInstanceOf[js.Any], compositionupdate = compositionupdate.asInstanceOf[js.Any], contextmenu = contextmenu.asInstanceOf[js.Any], copy = copy.asInstanceOf[js.Any], cuechange = cuechange.asInstanceOf[js.Any], cut = cut.asInstanceOf[js.Any], dblclick = dblclick.asInstanceOf[js.Any], drag = drag.asInstanceOf[js.Any], dragend = dragend.asInstanceOf[js.Any], dragenter = dragenter.asInstanceOf[js.Any], dragleave = dragleave.asInstanceOf[js.Any], dragover = dragover.asInstanceOf[js.Any], dragstart = dragstart.asInstanceOf[js.Any], drop = drop.asInstanceOf[js.Any], durationchange = durationchange.asInstanceOf[js.Any], emptied = emptied.asInstanceOf[js.Any], ended = ended.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], focusin = focusin.asInstanceOf[js.Any], focusout = focusout.asInstanceOf[js.Any], formdata = formdata.asInstanceOf[js.Any], gotpointercapture = gotpointercapture.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], invalid = invalid.asInstanceOf[js.Any], keydown = keydown.asInstanceOf[js.Any], keypress = keypress.asInstanceOf[js.Any], keyup = keyup.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any], loadeddata = loadeddata.asInstanceOf[js.Any], loadedmetadata = loadedmetadata.asInstanceOf[js.Any], loadstart = loadstart.asInstanceOf[js.Any], lostpointercapture = lostpointercapture.asInstanceOf[js.Any], mousedown = mousedown.asInstanceOf[js.Any], mouseenter = mouseenter.asInstanceOf[js.Any], mouseleave = mouseleave.asInstanceOf[js.Any], mousemove = mousemove.asInstanceOf[js.Any], mouseout = mouseout.asInstanceOf[js.Any], mouseover = mouseover.asInstanceOf[js.Any], mouseup = mouseup.asInstanceOf[js.Any], paste = paste.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], play = play.asInstanceOf[js.Any], playing = playing.asInstanceOf[js.Any], pointercancel = pointercancel.asInstanceOf[js.Any], pointerdown = pointerdown.asInstanceOf[js.Any], pointerenter = pointerenter.asInstanceOf[js.Any], pointerleave = pointerleave.asInstanceOf[js.Any], pointermove = pointermove.asInstanceOf[js.Any], pointerout = pointerout.asInstanceOf[js.Any], pointerover = pointerover.asInstanceOf[js.Any], pointerup = pointerup.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], ratechange = ratechange.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], resize = resize.asInstanceOf[js.Any], scroll = scroll.asInstanceOf[js.Any], securitypolicyviolation = securitypolicyviolation.asInstanceOf[js.Any], seeked = seeked.asInstanceOf[js.Any], seeking = seeking.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], selectionchange = selectionchange.asInstanceOf[js.Any], selectstart = selectstart.asInstanceOf[js.Any], slotchange = slotchange.asInstanceOf[js.Any], stalled = stalled.asInstanceOf[js.Any], submit = submit.asInstanceOf[js.Any], suspend = suspend.asInstanceOf[js.Any], timeupdate = timeupdate.asInstanceOf[js.Any], toggle = toggle.asInstanceOf[js.Any], touchcancel = touchcancel.asInstanceOf[js.Any], touchend = touchend.asInstanceOf[js.Any], touchmove = touchmove.asInstanceOf[js.Any], touchstart = touchstart.asInstanceOf[js.Any], transitioncancel = transitioncancel.asInstanceOf[js.Any], transitionend = transitionend.asInstanceOf[js.Any], transitionrun = transitionrun.asInstanceOf[js.Any], transitionstart = transitionstart.asInstanceOf[js.Any], volumechange = volumechange.asInstanceOf[js.Any], waiting = waiting.asInstanceOf[js.Any], webkitanimationend = webkitanimationend.asInstanceOf[js.Any], webkitanimationiteration = webkitanimationiteration.asInstanceOf[js.Any], webkitanimationstart = webkitanimationstart.asInstanceOf[js.Any], webkittransitionend = webkittransitionend.asInstanceOf[js.Any], wheel = wheel.asInstanceOf[js.Any])
       __obj.asInstanceOf[NodeEventMap]
     }
   }

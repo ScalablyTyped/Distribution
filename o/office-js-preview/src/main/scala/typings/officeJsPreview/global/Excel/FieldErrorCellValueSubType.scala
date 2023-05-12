@@ -19,6 +19,8 @@ object FieldErrorCellValueSubType extends StObject {
   
   /* "DataProviderError" */ val dataProviderError: typings.officeJsPreview.Excel.FieldErrorCellValueSubType.dataProviderError & String = js.native
   
+  /* "RichValueRelMissingFilePart" */ val richValueRelMissingFilePart: typings.officeJsPreview.Excel.FieldErrorCellValueSubType.richValueRelMissingFilePart & String = js.native
+  
   /* "Unknown" */ val unknown: typings.officeJsPreview.Excel.FieldErrorCellValueSubType.unknown & String = js.native
   
   /* "WebImageMissingFilePart" */ val webImageMissingFilePart: typings.officeJsPreview.Excel.FieldErrorCellValueSubType.webImageMissingFilePart & String = js.native

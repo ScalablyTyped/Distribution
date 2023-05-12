@@ -1,100 +1,52 @@
 package typings.svelteLeafletjs.mod
 
-import typings.std.NonNullable
+import typings.leaflet.mod.LeafletEvent
+import typings.leaflet.mod.TileEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined svelte-leafletjs.svelte-leafletjs.CreateSvelteEventMap<react-leaflet.react-leaflet.TileLayerEvents> */
 trait TileLayerEvents extends StObject {
   
-  var onload: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var load: LeafletEvent
   
-  var onloading: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var loading: LeafletEvent
   
-  var ontileerror: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.TileEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var tileerror: TileEvent
   
-  var ontileload: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.TileEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var tileload: TileEvent
   
-  var ontileloadstart: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.TileEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var tileloadstart: TileEvent
   
-  var ontileunload: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.TileEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var tileunload: TileEvent
 }
 object TileLayerEvents {
   
   inline def apply(
-    onload: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-    ],
-    onloading: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-    ],
-    ontileerror: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.TileEvent): void | undefined>>>[0] */ js.Any
-    ],
-    ontileload: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.TileEvent): void | undefined>>>[0] */ js.Any
-    ],
-    ontileloadstart: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.TileEvent): void | undefined>>>[0] */ js.Any
-    ],
-    ontileunload: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.TileEvent): void | undefined>>>[0] */ js.Any
-    ]
+    load: LeafletEvent,
+    loading: LeafletEvent,
+    tileerror: TileEvent,
+    tileload: TileEvent,
+    tileloadstart: TileEvent,
+    tileunload: TileEvent
   ): TileLayerEvents = {
-    val __obj = js.Dynamic.literal(onload = onload.asInstanceOf[js.Any], onloading = onloading.asInstanceOf[js.Any], ontileerror = ontileerror.asInstanceOf[js.Any], ontileload = ontileload.asInstanceOf[js.Any], ontileloadstart = ontileloadstart.asInstanceOf[js.Any], ontileunload = ontileunload.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(load = load.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], tileerror = tileerror.asInstanceOf[js.Any], tileload = tileload.asInstanceOf[js.Any], tileloadstart = tileloadstart.asInstanceOf[js.Any], tileunload = tileunload.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileLayerEvents]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: TileLayerEvents] (val x: Self) extends AnyVal {
     
-    inline def setOnload(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "onload", value.asInstanceOf[js.Any])
+    inline def setLoad(value: LeafletEvent): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
-    inline def setOnloading(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "onloading", value.asInstanceOf[js.Any])
+    inline def setLoading(value: LeafletEvent): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
-    inline def setOntileerror(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.TileEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "ontileerror", value.asInstanceOf[js.Any])
+    inline def setTileerror(value: TileEvent): Self = StObject.set(x, "tileerror", value.asInstanceOf[js.Any])
     
-    inline def setOntileload(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.TileEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "ontileload", value.asInstanceOf[js.Any])
+    inline def setTileload(value: TileEvent): Self = StObject.set(x, "tileload", value.asInstanceOf[js.Any])
     
-    inline def setOntileloadstart(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.TileEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "ontileloadstart", value.asInstanceOf[js.Any])
+    inline def setTileloadstart(value: TileEvent): Self = StObject.set(x, "tileloadstart", value.asInstanceOf[js.Any])
     
-    inline def setOntileunload(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.TileEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "ontileunload", value.asInstanceOf[js.Any])
+    inline def setTileunload(value: TileEvent): Self = StObject.set(x, "tileunload", value.asInstanceOf[js.Any])
   }
 }

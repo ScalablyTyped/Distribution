@@ -5,6 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
+type AssociatedPermissionList = js.Array[AssociatedPermission]
+
 type Boolean = scala.Boolean
 
 type DateTime = js.Date
@@ -15,6 +17,40 @@ type MaxResults = Double
 
 type PermissionArnList = js.Array[String]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CREATED_FROM_POLICY
+  - typings.awsSdk.awsSdkStrings.PROMOTING_TO_STANDARD
+  - typings.awsSdk.awsSdkStrings.STANDARD
+  - java.lang.String
+*/
+type PermissionFeatureSet = _PermissionFeatureSet | java.lang.String
+
+type PermissionName = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ATTACHABLE
+  - typings.awsSdk.awsSdkStrings.UNATTACHABLE
+  - typings.awsSdk.awsSdkStrings.DELETING
+  - typings.awsSdk.awsSdkStrings.DELETED
+  - java.lang.String
+*/
+type PermissionStatus = _PermissionStatus | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CUSTOMER_MANAGED
+  - typings.awsSdk.awsSdkStrings.AWS_MANAGED
+  - java.lang.String
+*/
+type PermissionType = _PermissionType | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ALL
+  - typings.awsSdk.awsSdkStrings.AWS_MANAGED
+  - typings.awsSdk.awsSdkStrings.CUSTOMER_MANAGED
+  - java.lang.String
+*/
+type PermissionTypeFilter = _PermissionTypeFilter | java.lang.String
+
 type Policy = java.lang.String
 
 type PolicyList = js.Array[Policy]
@@ -22,6 +58,18 @@ type PolicyList = js.Array[Policy]
 type PrincipalArnOrIdList = js.Array[String]
 
 type PrincipalList = js.Array[Principal]
+
+type ReplacePermissionAssociationsWorkIdList = js.Array[String]
+
+type ReplacePermissionAssociationsWorkList = js.Array[ReplacePermissionAssociationsWork]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.COMPLETED
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - java.lang.String
+*/
+type ReplacePermissionAssociationsWorkStatus = _ReplacePermissionAssociationsWorkStatus | java.lang.String
 
 type ResourceArnList = js.Array[String]
 

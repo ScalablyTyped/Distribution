@@ -8,31 +8,35 @@ object libRestVerifyMod {
   
   @JSImport("twilio/lib/rest/Verify", JSImport.Namespace)
   @js.native
-  open class ^ protected () extends Verify {
-    /**
-      * Initialize verify domain
-      *
-      * @param twilio - The twilio client
-      */
-    def this(twilio: typings.twilio.libRestTwilioMod.^) = this()
-  }
+  open class ^ () extends Verify
   
   @js.native
   trait Verify
-    extends typings.twilio.libBaseDomainMod.^ {
+    extends typings.twilio.libRestVerifyBaseMod.^ {
     
-    val forms: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FormListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v2.forms instead
+      */
+    def forms: Any = js.native
     
-    val safelist: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SafelistListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v2.services instead
+      */
+    def services: Any = js.native
     
-    val services: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v2.templates instead
+      */
+    def templates: Any = js.native
     
-    val templates: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TemplateListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v2.verificationAttempts instead
+      */
+    def verificationAttempts: Any = js.native
     
-    val v2: typings.twilio.libRestVerifyV2Mod.^ = js.native
-    
-    val verificationAttempts: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VerificationAttemptListInstance */ Any = js.native
-    
-    val verificationAttemptsSummary: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VerificationAttemptsSummaryListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v2.verificationAttemptsSummary instead
+      */
+    def verificationAttemptsSummary: Any = js.native
   }
 }

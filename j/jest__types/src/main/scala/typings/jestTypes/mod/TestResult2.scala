@@ -17,6 +17,8 @@ trait TestResult2 extends StObject {
   
   var location: js.UndefOr[Column | Null] = js.undefined
   
+  var numPassingAsserts: Double
+  
   var retryReasons: js.Array[FormattedError]
   
   var status: TestStatus
@@ -29,11 +31,12 @@ object TestResult2 {
     errors: js.Array[FormattedError],
     errorsDetailed: js.Array[MatcherResults | Any],
     invocations: Double,
+    numPassingAsserts: Double,
     retryReasons: js.Array[FormattedError],
     status: TestStatus,
     testPath: js.Array[TestName2 | BlockName2]
   ): TestResult2 = {
-    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], errorsDetailed = errorsDetailed.asInstanceOf[js.Any], invocations = invocations.asInstanceOf[js.Any], retryReasons = retryReasons.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], testPath = testPath.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], errorsDetailed = errorsDetailed.asInstanceOf[js.Any], invocations = invocations.asInstanceOf[js.Any], numPassingAsserts = numPassingAsserts.asInstanceOf[js.Any], retryReasons = retryReasons.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], testPath = testPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestResult2]
   }
   
@@ -61,6 +64,8 @@ object TestResult2 {
     inline def setLocationNull: Self = StObject.set(x, "location", null)
     
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    
+    inline def setNumPassingAsserts(value: Double): Self = StObject.set(x, "numPassingAsserts", value.asInstanceOf[js.Any])
     
     inline def setRetryReasons(value: js.Array[FormattedError]): Self = StObject.set(x, "retryReasons", value.asInstanceOf[js.Any])
     

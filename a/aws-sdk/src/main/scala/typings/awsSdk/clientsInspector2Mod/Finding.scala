@@ -17,6 +17,16 @@ trait Finding extends StObject {
   var description: FindingDescription
   
   /**
+    * If a finding discovered in your environment has an exploit available.
+    */
+  var exploitAvailable: js.UndefOr[ExploitAvailable] = js.undefined
+  
+  /**
+    * The details of an exploit available for a finding discovered in your environment.
+    */
+  var exploitabilityDetails: js.UndefOr[ExploitabilityDetails] = js.undefined
+  
+  /**
     * The Amazon Resource Number (ARN) of the finding.
     */
   var findingArn: FindingArn
@@ -116,6 +126,14 @@ object Finding {
     inline def setAwsAccountId(value: AccountId): Self = StObject.set(x, "awsAccountId", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: FindingDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setExploitAvailable(value: ExploitAvailable): Self = StObject.set(x, "exploitAvailable", value.asInstanceOf[js.Any])
+    
+    inline def setExploitAvailableUndefined: Self = StObject.set(x, "exploitAvailable", js.undefined)
+    
+    inline def setExploitabilityDetails(value: ExploitabilityDetails): Self = StObject.set(x, "exploitabilityDetails", value.asInstanceOf[js.Any])
+    
+    inline def setExploitabilityDetailsUndefined: Self = StObject.set(x, "exploitabilityDetails", js.undefined)
     
     inline def setFindingArn(value: FindingArn): Self = StObject.set(x, "findingArn", value.asInstanceOf[js.Any])
     

@@ -1,11 +1,14 @@
 package typings.datadogPprof
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.datadogPprof.anon.Async
 import typings.datadogPprof.outSrcCpuProfilerMod.default
+import typings.datadogPprof.outSrcHeapProfilerMod.NearHeapLimitCallback
 import typings.datadogPprof.outSrcTimeProfilerMod.Microseconds
 import typings.datadogPprof.outSrcTimeProfilerMod.TimeProfilerOptions
 import typings.datadogPprof.outSrcV8TypesMod.AllocationProfileNode
 import typings.node.bufferMod.global.Buffer
+import typings.pprofFormat.mod.Profile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,13 +49,9 @@ object mod {
     inline def create(searchDirs: js.Array[String]): js.Promise[typings.datadogPprof.outSrcSourcemapperSourcemapperMod.SourceMapper] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(searchDirs.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.datadogPprof.outSrcSourcemapperSourcemapperMod.SourceMapper]]
   }
   
-  inline def encode(
-    profile: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify perftools.profiles.IProfile */ Any
-  ): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(profile.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  inline def encode(profile: Profile): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(profile.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
   
-  inline def encodeSync(
-    profile: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify perftools.profiles.IProfile */ Any
-  ): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeSync")(profile.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def encodeSync(profile: Profile): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeSync")(profile.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
   object heap {
     
@@ -60,29 +59,143 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def profile(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("profile")().asInstanceOf[Any]
-    inline def profile(ignoreSamplePath: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("profile")(ignoreSamplePath.asInstanceOf[js.Any]).asInstanceOf[Any]
+    @JSImport("@datadog/pprof", "heap.CallbackMode")
+    @js.native
+    def CallbackMode: Async = js.native
+    inline def CallbackMode_=(x: Async): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CallbackMode")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@datadog/pprof", "heap.convertProfile")
+    @js.native
+    def convertProfile: js.Function3[
+        /* rootNode */ AllocationProfileNode, 
+        /* ignoreSamplePath */ js.UndefOr[String], 
+        /* sourceMapper */ js.UndefOr[typings.datadogPprof.outSrcSourcemapperSourcemapperMod.SourceMapper], 
+        Profile
+      ] = js.native
+    inline def convertProfile(rootNode: AllocationProfileNode): Profile = ^.asInstanceOf[js.Dynamic].applyDynamic("convertProfile")(rootNode.asInstanceOf[js.Any]).asInstanceOf[Profile]
+    inline def convertProfile(rootNode: AllocationProfileNode, ignoreSamplePath: String): Profile = (^.asInstanceOf[js.Dynamic].applyDynamic("convertProfile")(rootNode.asInstanceOf[js.Any], ignoreSamplePath.asInstanceOf[js.Any])).asInstanceOf[Profile]
+    inline def convertProfile(
+      rootNode: AllocationProfileNode,
+      ignoreSamplePath: String,
+      sourceMapper: typings.datadogPprof.outSrcSourcemapperSourcemapperMod.SourceMapper
+    ): Profile = (^.asInstanceOf[js.Dynamic].applyDynamic("convertProfile")(rootNode.asInstanceOf[js.Any], ignoreSamplePath.asInstanceOf[js.Any], sourceMapper.asInstanceOf[js.Any])).asInstanceOf[Profile]
+    inline def convertProfile(
+      rootNode: AllocationProfileNode,
+      ignoreSamplePath: Unit,
+      sourceMapper: typings.datadogPprof.outSrcSourcemapperSourcemapperMod.SourceMapper
+    ): Profile = (^.asInstanceOf[js.Dynamic].applyDynamic("convertProfile")(rootNode.asInstanceOf[js.Any], ignoreSamplePath.asInstanceOf[js.Any], sourceMapper.asInstanceOf[js.Any])).asInstanceOf[Profile]
+    inline def convertProfile_=(
+      x: js.Function3[
+          /* rootNode */ AllocationProfileNode, 
+          /* ignoreSamplePath */ js.UndefOr[String], 
+          /* sourceMapper */ js.UndefOr[typings.datadogPprof.outSrcSourcemapperSourcemapperMod.SourceMapper], 
+          Profile
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("convertProfile")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@datadog/pprof", "heap.monitorOutOfMemory")
+    @js.native
+    def monitorOutOfMemory: js.Function6[
+        /* heapLimitExtensionSize */ Double, 
+        /* maxHeapLimitExtensionCount */ Double, 
+        /* dumpHeapProfileOnSdterr */ Boolean, 
+        /* exportCommand */ js.UndefOr[js.Array[String]], 
+        /* callback */ js.UndefOr[NearHeapLimitCallback], 
+        /* callbackMode */ js.UndefOr[Double], 
+        Unit
+      ] = js.native
+    inline def monitorOutOfMemory(
+      heapLimitExtensionSize: Double,
+      maxHeapLimitExtensionCount: Double,
+      dumpHeapProfileOnSdterr: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("monitorOutOfMemory")(heapLimitExtensionSize.asInstanceOf[js.Any], maxHeapLimitExtensionCount.asInstanceOf[js.Any], dumpHeapProfileOnSdterr.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def monitorOutOfMemory(
+      heapLimitExtensionSize: Double,
+      maxHeapLimitExtensionCount: Double,
+      dumpHeapProfileOnSdterr: Boolean,
+      exportCommand: js.Array[String]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("monitorOutOfMemory")(heapLimitExtensionSize.asInstanceOf[js.Any], maxHeapLimitExtensionCount.asInstanceOf[js.Any], dumpHeapProfileOnSdterr.asInstanceOf[js.Any], exportCommand.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def monitorOutOfMemory(
+      heapLimitExtensionSize: Double,
+      maxHeapLimitExtensionCount: Double,
+      dumpHeapProfileOnSdterr: Boolean,
+      exportCommand: js.Array[String],
+      callback: Unit,
+      callbackMode: Double
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("monitorOutOfMemory")(heapLimitExtensionSize.asInstanceOf[js.Any], maxHeapLimitExtensionCount.asInstanceOf[js.Any], dumpHeapProfileOnSdterr.asInstanceOf[js.Any], exportCommand.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], callbackMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def monitorOutOfMemory(
+      heapLimitExtensionSize: Double,
+      maxHeapLimitExtensionCount: Double,
+      dumpHeapProfileOnSdterr: Boolean,
+      exportCommand: js.Array[String],
+      callback: NearHeapLimitCallback
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("monitorOutOfMemory")(heapLimitExtensionSize.asInstanceOf[js.Any], maxHeapLimitExtensionCount.asInstanceOf[js.Any], dumpHeapProfileOnSdterr.asInstanceOf[js.Any], exportCommand.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def monitorOutOfMemory(
+      heapLimitExtensionSize: Double,
+      maxHeapLimitExtensionCount: Double,
+      dumpHeapProfileOnSdterr: Boolean,
+      exportCommand: js.Array[String],
+      callback: NearHeapLimitCallback,
+      callbackMode: Double
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("monitorOutOfMemory")(heapLimitExtensionSize.asInstanceOf[js.Any], maxHeapLimitExtensionCount.asInstanceOf[js.Any], dumpHeapProfileOnSdterr.asInstanceOf[js.Any], exportCommand.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], callbackMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def monitorOutOfMemory(
+      heapLimitExtensionSize: Double,
+      maxHeapLimitExtensionCount: Double,
+      dumpHeapProfileOnSdterr: Boolean,
+      exportCommand: Unit,
+      callback: Unit,
+      callbackMode: Double
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("monitorOutOfMemory")(heapLimitExtensionSize.asInstanceOf[js.Any], maxHeapLimitExtensionCount.asInstanceOf[js.Any], dumpHeapProfileOnSdterr.asInstanceOf[js.Any], exportCommand.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], callbackMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def monitorOutOfMemory(
+      heapLimitExtensionSize: Double,
+      maxHeapLimitExtensionCount: Double,
+      dumpHeapProfileOnSdterr: Boolean,
+      exportCommand: Unit,
+      callback: NearHeapLimitCallback
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("monitorOutOfMemory")(heapLimitExtensionSize.asInstanceOf[js.Any], maxHeapLimitExtensionCount.asInstanceOf[js.Any], dumpHeapProfileOnSdterr.asInstanceOf[js.Any], exportCommand.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def monitorOutOfMemory(
+      heapLimitExtensionSize: Double,
+      maxHeapLimitExtensionCount: Double,
+      dumpHeapProfileOnSdterr: Boolean,
+      exportCommand: Unit,
+      callback: NearHeapLimitCallback,
+      callbackMode: Double
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("monitorOutOfMemory")(heapLimitExtensionSize.asInstanceOf[js.Any], maxHeapLimitExtensionCount.asInstanceOf[js.Any], dumpHeapProfileOnSdterr.asInstanceOf[js.Any], exportCommand.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], callbackMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def monitorOutOfMemory_=(
+      x: js.Function6[
+          /* heapLimitExtensionSize */ Double, 
+          /* maxHeapLimitExtensionCount */ Double, 
+          /* dumpHeapProfileOnSdterr */ Boolean, 
+          /* exportCommand */ js.UndefOr[js.Array[String]], 
+          /* callback */ js.UndefOr[NearHeapLimitCallback], 
+          /* callbackMode */ js.UndefOr[Double], 
+          Unit
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("monitorOutOfMemory")(x.asInstanceOf[js.Any])
+    
+    inline def profile(): Profile = ^.asInstanceOf[js.Dynamic].applyDynamic("profile")().asInstanceOf[Profile]
+    inline def profile(ignoreSamplePath: String): Profile = ^.asInstanceOf[js.Dynamic].applyDynamic("profile")(ignoreSamplePath.asInstanceOf[js.Any]).asInstanceOf[Profile]
     inline def profile(
       ignoreSamplePath: String,
       sourceMapper: typings.datadogPprof.outSrcSourcemapperSourcemapperMod.SourceMapper
-    ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("profile")(ignoreSamplePath.asInstanceOf[js.Any], sourceMapper.asInstanceOf[js.Any])).asInstanceOf[Any]
+    ): Profile = (^.asInstanceOf[js.Dynamic].applyDynamic("profile")(ignoreSamplePath.asInstanceOf[js.Any], sourceMapper.asInstanceOf[js.Any])).asInstanceOf[Profile]
     inline def profile(
       ignoreSamplePath: Unit,
       sourceMapper: typings.datadogPprof.outSrcSourcemapperSourcemapperMod.SourceMapper
-    ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("profile")(ignoreSamplePath.asInstanceOf[js.Any], sourceMapper.asInstanceOf[js.Any])).asInstanceOf[Any]
+    ): Profile = (^.asInstanceOf[js.Dynamic].applyDynamic("profile")(ignoreSamplePath.asInstanceOf[js.Any], sourceMapper.asInstanceOf[js.Any])).asInstanceOf[Profile]
     @JSImport("@datadog/pprof", "heap.profile")
     @js.native
     def profile_Fheap: js.Function2[
         /* ignoreSamplePath */ js.UndefOr[String], 
         /* sourceMapper */ js.UndefOr[typings.datadogPprof.outSrcSourcemapperSourcemapperMod.SourceMapper], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify perftools.profiles.IProfile */ Any
+        Profile
       ] = js.native
     
     inline def profile_Fheap_=(
       x: js.Function2[
           /* ignoreSamplePath */ js.UndefOr[String], 
           /* sourceMapper */ js.UndefOr[typings.datadogPprof.outSrcSourcemapperSourcemapperMod.SourceMapper], 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify perftools.profiles.IProfile */ Any
+          Profile
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("profile")(x.asInstanceOf[js.Any])
     
@@ -115,174 +228,62 @@ object mod {
     
     @JSImport("@datadog/pprof", "time.profile")
     @js.native
-    def profile: js.Function1[
-        /* options */ TimeProfilerOptions, 
-        js.Promise[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-        ]
-      ] = js.native
-    inline def profile(options: TimeProfilerOptions): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("profile")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ]]
-    inline def profile_=(
-      x: js.Function1[
-          /* options */ TimeProfilerOptions, 
-          js.Promise[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-          ]
-        ]
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("profile")(x.asInstanceOf[js.Any])
+    def profile: js.Function1[/* options */ TimeProfilerOptions, js.Promise[Profile]] = js.native
+    inline def profile(options: TimeProfilerOptions): js.Promise[Profile] = ^.asInstanceOf[js.Dynamic].applyDynamic("profile")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Profile]]
+    inline def profile_=(x: js.Function1[/* options */ TimeProfilerOptions, js.Promise[Profile]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("profile")(x.asInstanceOf[js.Any])
     
-    inline def start(): js.Function1[
-        /* restart */ js.UndefOr[Boolean], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[js.Function1[
-        /* restart */ js.UndefOr[Boolean], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ]]
-    inline def start(intervalMicros: Unit, name: String): js.Function1[
-        /* restart */ js.UndefOr[Boolean], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(intervalMicros.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-        /* restart */ js.UndefOr[Boolean], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ]]
-    inline def start(intervalMicros: Unit, name: String, sourceMapper: Unit, lineNumbers: Boolean): js.Function1[
-        /* restart */ js.UndefOr[Boolean], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(intervalMicros.asInstanceOf[js.Any], name.asInstanceOf[js.Any], sourceMapper.asInstanceOf[js.Any], lineNumbers.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-        /* restart */ js.UndefOr[Boolean], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ]]
+    inline def start(): js.Function1[/* restart */ js.UndefOr[Boolean], Profile] = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[js.Function1[/* restart */ js.UndefOr[Boolean], Profile]]
+    inline def start(intervalMicros: Unit, name: String): js.Function1[/* restart */ js.UndefOr[Boolean], Profile] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(intervalMicros.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* restart */ js.UndefOr[Boolean], Profile]]
+    inline def start(intervalMicros: Unit, name: String, sourceMapper: Unit, lineNumbers: Boolean): js.Function1[/* restart */ js.UndefOr[Boolean], Profile] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(intervalMicros.asInstanceOf[js.Any], name.asInstanceOf[js.Any], sourceMapper.asInstanceOf[js.Any], lineNumbers.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* restart */ js.UndefOr[Boolean], Profile]]
     inline def start(
       intervalMicros: Unit,
       name: String,
       sourceMapper: typings.datadogPprof.outSrcSourcemapperSourcemapperMod.SourceMapper
-    ): js.Function1[
-        /* restart */ js.UndefOr[Boolean], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(intervalMicros.asInstanceOf[js.Any], name.asInstanceOf[js.Any], sourceMapper.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-        /* restart */ js.UndefOr[Boolean], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ]]
+    ): js.Function1[/* restart */ js.UndefOr[Boolean], Profile] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(intervalMicros.asInstanceOf[js.Any], name.asInstanceOf[js.Any], sourceMapper.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* restart */ js.UndefOr[Boolean], Profile]]
     inline def start(
       intervalMicros: Unit,
       name: String,
       sourceMapper: typings.datadogPprof.outSrcSourcemapperSourcemapperMod.SourceMapper,
       lineNumbers: Boolean
-    ): js.Function1[
-        /* restart */ js.UndefOr[Boolean], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(intervalMicros.asInstanceOf[js.Any], name.asInstanceOf[js.Any], sourceMapper.asInstanceOf[js.Any], lineNumbers.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-        /* restart */ js.UndefOr[Boolean], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ]]
-    inline def start(intervalMicros: Unit, name: Unit, sourceMapper: Unit, lineNumbers: Boolean): js.Function1[
-        /* restart */ js.UndefOr[Boolean], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(intervalMicros.asInstanceOf[js.Any], name.asInstanceOf[js.Any], sourceMapper.asInstanceOf[js.Any], lineNumbers.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-        /* restart */ js.UndefOr[Boolean], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ]]
+    ): js.Function1[/* restart */ js.UndefOr[Boolean], Profile] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(intervalMicros.asInstanceOf[js.Any], name.asInstanceOf[js.Any], sourceMapper.asInstanceOf[js.Any], lineNumbers.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* restart */ js.UndefOr[Boolean], Profile]]
+    inline def start(intervalMicros: Unit, name: Unit, sourceMapper: Unit, lineNumbers: Boolean): js.Function1[/* restart */ js.UndefOr[Boolean], Profile] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(intervalMicros.asInstanceOf[js.Any], name.asInstanceOf[js.Any], sourceMapper.asInstanceOf[js.Any], lineNumbers.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* restart */ js.UndefOr[Boolean], Profile]]
     inline def start(
       intervalMicros: Unit,
       name: Unit,
       sourceMapper: typings.datadogPprof.outSrcSourcemapperSourcemapperMod.SourceMapper
-    ): js.Function1[
-        /* restart */ js.UndefOr[Boolean], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(intervalMicros.asInstanceOf[js.Any], name.asInstanceOf[js.Any], sourceMapper.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-        /* restart */ js.UndefOr[Boolean], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ]]
+    ): js.Function1[/* restart */ js.UndefOr[Boolean], Profile] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(intervalMicros.asInstanceOf[js.Any], name.asInstanceOf[js.Any], sourceMapper.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* restart */ js.UndefOr[Boolean], Profile]]
     inline def start(
       intervalMicros: Unit,
       name: Unit,
       sourceMapper: typings.datadogPprof.outSrcSourcemapperSourcemapperMod.SourceMapper,
       lineNumbers: Boolean
-    ): js.Function1[
-        /* restart */ js.UndefOr[Boolean], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(intervalMicros.asInstanceOf[js.Any], name.asInstanceOf[js.Any], sourceMapper.asInstanceOf[js.Any], lineNumbers.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-        /* restart */ js.UndefOr[Boolean], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ]]
-    inline def start(intervalMicros: Microseconds): js.Function1[
-        /* restart */ js.UndefOr[Boolean], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(intervalMicros.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* restart */ js.UndefOr[Boolean], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ]]
-    inline def start(intervalMicros: Microseconds, name: String): js.Function1[
-        /* restart */ js.UndefOr[Boolean], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(intervalMicros.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-        /* restart */ js.UndefOr[Boolean], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ]]
-    inline def start(intervalMicros: Microseconds, name: String, sourceMapper: Unit, lineNumbers: Boolean): js.Function1[
-        /* restart */ js.UndefOr[Boolean], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(intervalMicros.asInstanceOf[js.Any], name.asInstanceOf[js.Any], sourceMapper.asInstanceOf[js.Any], lineNumbers.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-        /* restart */ js.UndefOr[Boolean], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ]]
+    ): js.Function1[/* restart */ js.UndefOr[Boolean], Profile] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(intervalMicros.asInstanceOf[js.Any], name.asInstanceOf[js.Any], sourceMapper.asInstanceOf[js.Any], lineNumbers.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* restart */ js.UndefOr[Boolean], Profile]]
+    inline def start(intervalMicros: Microseconds): js.Function1[/* restart */ js.UndefOr[Boolean], Profile] = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(intervalMicros.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* restart */ js.UndefOr[Boolean], Profile]]
+    inline def start(intervalMicros: Microseconds, name: String): js.Function1[/* restart */ js.UndefOr[Boolean], Profile] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(intervalMicros.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* restart */ js.UndefOr[Boolean], Profile]]
+    inline def start(intervalMicros: Microseconds, name: String, sourceMapper: Unit, lineNumbers: Boolean): js.Function1[/* restart */ js.UndefOr[Boolean], Profile] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(intervalMicros.asInstanceOf[js.Any], name.asInstanceOf[js.Any], sourceMapper.asInstanceOf[js.Any], lineNumbers.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* restart */ js.UndefOr[Boolean], Profile]]
     inline def start(
       intervalMicros: Microseconds,
       name: String,
       sourceMapper: typings.datadogPprof.outSrcSourcemapperSourcemapperMod.SourceMapper
-    ): js.Function1[
-        /* restart */ js.UndefOr[Boolean], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(intervalMicros.asInstanceOf[js.Any], name.asInstanceOf[js.Any], sourceMapper.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-        /* restart */ js.UndefOr[Boolean], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ]]
+    ): js.Function1[/* restart */ js.UndefOr[Boolean], Profile] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(intervalMicros.asInstanceOf[js.Any], name.asInstanceOf[js.Any], sourceMapper.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* restart */ js.UndefOr[Boolean], Profile]]
     inline def start(
       intervalMicros: Microseconds,
       name: String,
       sourceMapper: typings.datadogPprof.outSrcSourcemapperSourcemapperMod.SourceMapper,
       lineNumbers: Boolean
-    ): js.Function1[
-        /* restart */ js.UndefOr[Boolean], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(intervalMicros.asInstanceOf[js.Any], name.asInstanceOf[js.Any], sourceMapper.asInstanceOf[js.Any], lineNumbers.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-        /* restart */ js.UndefOr[Boolean], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ]]
-    inline def start(intervalMicros: Microseconds, name: Unit, sourceMapper: Unit, lineNumbers: Boolean): js.Function1[
-        /* restart */ js.UndefOr[Boolean], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(intervalMicros.asInstanceOf[js.Any], name.asInstanceOf[js.Any], sourceMapper.asInstanceOf[js.Any], lineNumbers.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-        /* restart */ js.UndefOr[Boolean], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ]]
+    ): js.Function1[/* restart */ js.UndefOr[Boolean], Profile] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(intervalMicros.asInstanceOf[js.Any], name.asInstanceOf[js.Any], sourceMapper.asInstanceOf[js.Any], lineNumbers.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* restart */ js.UndefOr[Boolean], Profile]]
+    inline def start(intervalMicros: Microseconds, name: Unit, sourceMapper: Unit, lineNumbers: Boolean): js.Function1[/* restart */ js.UndefOr[Boolean], Profile] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(intervalMicros.asInstanceOf[js.Any], name.asInstanceOf[js.Any], sourceMapper.asInstanceOf[js.Any], lineNumbers.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* restart */ js.UndefOr[Boolean], Profile]]
     inline def start(
       intervalMicros: Microseconds,
       name: Unit,
       sourceMapper: typings.datadogPprof.outSrcSourcemapperSourcemapperMod.SourceMapper
-    ): js.Function1[
-        /* restart */ js.UndefOr[Boolean], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(intervalMicros.asInstanceOf[js.Any], name.asInstanceOf[js.Any], sourceMapper.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-        /* restart */ js.UndefOr[Boolean], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ]]
+    ): js.Function1[/* restart */ js.UndefOr[Boolean], Profile] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(intervalMicros.asInstanceOf[js.Any], name.asInstanceOf[js.Any], sourceMapper.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* restart */ js.UndefOr[Boolean], Profile]]
     inline def start(
       intervalMicros: Microseconds,
       name: Unit,
       sourceMapper: typings.datadogPprof.outSrcSourcemapperSourcemapperMod.SourceMapper,
       lineNumbers: Boolean
-    ): js.Function1[
-        /* restart */ js.UndefOr[Boolean], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(intervalMicros.asInstanceOf[js.Any], name.asInstanceOf[js.Any], sourceMapper.asInstanceOf[js.Any], lineNumbers.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-        /* restart */ js.UndefOr[Boolean], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ]]
+    ): js.Function1[/* restart */ js.UndefOr[Boolean], Profile] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(intervalMicros.asInstanceOf[js.Any], name.asInstanceOf[js.Any], sourceMapper.asInstanceOf[js.Any], lineNumbers.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* restart */ js.UndefOr[Boolean], Profile]]
     @JSImport("@datadog/pprof", "time.start")
     @js.native
     def start_Ftime: js.Function4[
@@ -290,10 +291,7 @@ object mod {
         /* name */ js.UndefOr[String], 
         /* sourceMapper */ js.UndefOr[typings.datadogPprof.outSrcSourcemapperSourcemapperMod.SourceMapper], 
         /* lineNumbers */ js.UndefOr[Boolean], 
-        js.Function1[
-          /* restart */ js.UndefOr[Boolean], 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-        ]
+        js.Function1[/* restart */ js.UndefOr[Boolean], Profile]
       ] = js.native
     
     inline def start_Ftime_=(
@@ -302,10 +300,7 @@ object mod {
           /* name */ js.UndefOr[String], 
           /* sourceMapper */ js.UndefOr[typings.datadogPprof.outSrcSourcemapperSourcemapperMod.SourceMapper], 
           /* lineNumbers */ js.UndefOr[Boolean], 
-          js.Function1[
-            /* restart */ js.UndefOr[Boolean], 
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-          ]
+          js.Function1[/* restart */ js.UndefOr[Boolean], Profile]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("start")(x.asInstanceOf[js.Any])
   }

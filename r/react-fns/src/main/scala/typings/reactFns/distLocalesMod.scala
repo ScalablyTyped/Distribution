@@ -20,7 +20,7 @@ object distLocalesMod {
     def this(props: SharedRenderProps[LocalesProps]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SharedRenderProps[LocalesProps], context: Any) = this()
   }

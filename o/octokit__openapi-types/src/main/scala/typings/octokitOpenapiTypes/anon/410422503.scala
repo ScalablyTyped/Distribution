@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `410422503` extends StObject {
   
-  /** Response */
+  /** @description Response */
   var `201`: ContentApplicationjsonBodyhtml
   
-  var `403`: Content48
+  var `403`: Content36
   
-  var `404`: Content48
+  var `404`: Content36
   
-  var `410`: Content48
+  var `410`: Content36
   
-  var `422`: Content397
+  var `422`: Content346
   
   var `503`: ContentApplicationjsonCodeDocumentationurlMessage
 }
@@ -23,10 +23,10 @@ object `410422503` {
   
   inline def apply(
     `201`: ContentApplicationjsonBodyhtml,
-    `403`: Content48,
-    `404`: Content48,
-    `410`: Content48,
-    `422`: Content397,
+    `403`: Content36,
+    `404`: Content36,
+    `410`: Content36,
+    `422`: Content346,
     `503`: ContentApplicationjsonCodeDocumentationurlMessage
   ): `410422503` = {
     val __obj = js.Dynamic.literal()
@@ -44,13 +44,13 @@ object `410422503` {
     
     inline def set201(value: ContentApplicationjsonBodyhtml): Self = StObject.set(x, "201", value.asInstanceOf[js.Any])
     
-    inline def set403(value: Content48): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+    inline def set403(value: Content36): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
     
-    inline def set404(value: Content48): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(value: Content36): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
     
-    inline def set410(value: Content48): Self = StObject.set(x, "410", value.asInstanceOf[js.Any])
+    inline def set410(value: Content36): Self = StObject.set(x, "410", value.asInstanceOf[js.Any])
     
-    inline def set422(value: Content397): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
+    inline def set422(value: Content346): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
     
     inline def set503(value: ContentApplicationjsonCodeDocumentationurlMessage): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
   }

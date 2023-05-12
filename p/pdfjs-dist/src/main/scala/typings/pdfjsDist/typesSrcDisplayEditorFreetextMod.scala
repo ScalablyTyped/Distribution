@@ -86,7 +86,7 @@ object typesSrcDisplayEditorFreetextMod {
     inline def _type_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_type")(x.asInstanceOf[js.Any])
     
     /** @inheritdoc */
-    inline def deserialize(data: Any, parent: Any): AnnotationEditor = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(data.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[AnnotationEditor]
+    inline def deserialize(data: Any, parent: Any, uiManager: Any): AnnotationEditor = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(data.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], uiManager.asInstanceOf[js.Any])).asInstanceOf[AnnotationEditor]
     
     inline def initialize(l10n: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(l10n.asInstanceOf[js.Any]).asInstanceOf[Unit]
     

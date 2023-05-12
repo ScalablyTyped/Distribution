@@ -15,6 +15,11 @@ trait ApplePayShippingMethod extends StObject {
   var amount: String
   
   /**
+    * A dictionary that specifies the start and end dates for a range of time.
+    */
+  var dateComponentsRange: js.UndefOr[ApplePayDateComponentsRange] = js.undefined
+  
+  /**
     * A further description of the shipping method.
     */
   var detail: String
@@ -40,6 +45,10 @@ object ApplePayShippingMethod {
   implicit open class MutableBuilder[Self <: ApplePayShippingMethod] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    
+    inline def setDateComponentsRange(value: ApplePayDateComponentsRange): Self = StObject.set(x, "dateComponentsRange", value.asInstanceOf[js.Any])
+    
+    inline def setDateComponentsRangeUndefined: Self = StObject.set(x, "dateComponentsRange", js.undefined)
     
     inline def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     

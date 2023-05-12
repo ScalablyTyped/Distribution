@@ -26,13 +26,11 @@ object mod {
       
       /**
         * Specifies a custom error.
-        * @type {any}
         */
       var error: js.UndefOr[Any] = js.undefined
       
       /**
         * Value that indicates if the BCC addresses must be included in generated message.
-        * @type {boolean}
         */
       var keepBcc: js.UndefOr[Boolean] = js.undefined
     }

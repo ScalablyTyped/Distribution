@@ -102,12 +102,6 @@ object vegaTypingsStrings {
   inline def WARN: WARN = "WARN".asInstanceOf[WARN]
   
   @js.native
-  sealed trait __count__
-    extends StObject
-       with AggregateOps
-  inline def __count__ : __count__ = "__count__".asInstanceOf[__count__]
-  
-  @js.native
   sealed trait accent
     extends StObject
        with Categorical

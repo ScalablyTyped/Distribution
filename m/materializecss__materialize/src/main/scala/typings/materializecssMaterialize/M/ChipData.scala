@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChipData extends StObject {
   
   /**
-    * Chip image
+    * Chip image.
     */
   var img: js.UndefOr[String] = js.undefined
   
   /**
-    * Chip tag
+    * Chip tag.
     */
   var tag: String
 }

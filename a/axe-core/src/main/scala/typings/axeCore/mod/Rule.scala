@@ -1,5 +1,6 @@
 package typings.axeCore.mod
 
+import typings.axeCore.anon.OmitRuleMetadataruleId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,6 +20,8 @@ trait Rule extends StObject {
   var impact: js.UndefOr[ImpactValue] = js.undefined
   
   var matches: js.UndefOr[String] = js.undefined
+  
+  var metadata: js.UndefOr[OmitRuleMetadataruleId] = js.undefined
   
   var none: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -71,6 +74,10 @@ object Rule {
     inline def setMatches(value: String): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
     inline def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
+    
+    inline def setMetadata(value: OmitRuleMetadataruleId): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     inline def setNone(value: js.Array[String]): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     

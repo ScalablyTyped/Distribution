@@ -8,7 +8,7 @@ trait TypeofPaymentMethodDetailBancontact extends StObject {
   
   val Bancontact: Any
   
-  val Card: TypeofCardThreeDSecure
+  val Card: TypeofCardThreeDSecureWallet
   
   val Ideal: Any
   
@@ -16,7 +16,7 @@ trait TypeofPaymentMethodDetailBancontact extends StObject {
 }
 object TypeofPaymentMethodDetailBancontact {
   
-  inline def apply(Bancontact: Any, Card: TypeofCardThreeDSecure, Ideal: Any, Sofort: Any): TypeofPaymentMethodDetailBancontact = {
+  inline def apply(Bancontact: Any, Card: TypeofCardThreeDSecureWallet, Ideal: Any, Sofort: Any): TypeofPaymentMethodDetailBancontact = {
     val __obj = js.Dynamic.literal(Bancontact = Bancontact.asInstanceOf[js.Any], Card = Card.asInstanceOf[js.Any], Ideal = Ideal.asInstanceOf[js.Any], Sofort = Sofort.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofPaymentMethodDetailBancontact]
   }
@@ -26,7 +26,7 @@ object TypeofPaymentMethodDetailBancontact {
     
     inline def setBancontact(value: Any): Self = StObject.set(x, "Bancontact", value.asInstanceOf[js.Any])
     
-    inline def setCard(value: TypeofCardThreeDSecure): Self = StObject.set(x, "Card", value.asInstanceOf[js.Any])
+    inline def setCard(value: TypeofCardThreeDSecureWallet): Self = StObject.set(x, "Card", value.asInstanceOf[js.Any])
     
     inline def setIdeal(value: Any): Self = StObject.set(x, "Ideal", value.asInstanceOf[js.Any])
     

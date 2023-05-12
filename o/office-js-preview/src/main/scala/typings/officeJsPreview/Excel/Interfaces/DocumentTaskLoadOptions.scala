@@ -74,15 +74,6 @@ trait DocumentTaskLoadOptions extends StObject {
   var createdDateTime: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets or sets the date and time the task is due.
-    *
-    * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
-    */
-  var dueDateTime: js.UndefOr[Boolean] = js.undefined
-  
-  /**
     * Gets the ID of the task.
     *
     * @remarks
@@ -110,13 +101,13 @@ trait DocumentTaskLoadOptions extends StObject {
   var priority: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets or sets the date and time the task starts.
+    * Gets or sets the date and time the task should start and is due.
     *
     * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var startDateTime: js.UndefOr[Boolean] = js.undefined
+  var startAndDueDateTime: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies title of the task.
@@ -165,10 +156,6 @@ object DocumentTaskLoadOptions {
     
     inline def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
     
-    inline def setDueDateTime(value: Boolean): Self = StObject.set(x, "dueDateTime", value.asInstanceOf[js.Any])
-    
-    inline def setDueDateTimeUndefined: Self = StObject.set(x, "dueDateTime", js.undefined)
-    
     inline def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
@@ -181,9 +168,9 @@ object DocumentTaskLoadOptions {
     
     inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    inline def setStartDateTime(value: Boolean): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
+    inline def setStartAndDueDateTime(value: Boolean): Self = StObject.set(x, "startAndDueDateTime", value.asInstanceOf[js.Any])
     
-    inline def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
+    inline def setStartAndDueDateTimeUndefined: Self = StObject.set(x, "startAndDueDateTime", js.undefined)
     
     inline def setTitle(value: Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

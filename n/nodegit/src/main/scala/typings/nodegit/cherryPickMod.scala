@@ -23,8 +23,8 @@ object cherryPickMod {
     /**
       * Cherrypick a commit and, changing the index and working directory
       */
-    inline def cherrypick(repo: Repository, commit: Commit): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("cherrypick")(repo.asInstanceOf[js.Any], commit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
-    inline def cherrypick(repo: Repository, commit: Commit, options: CherrypickOptions): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("cherrypick")(repo.asInstanceOf[js.Any], commit.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    inline def cherrypick(repo: Repository, commit: Commit): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("cherrypick")(repo.asInstanceOf[js.Any], commit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def cherrypick(repo: Repository, commit: Commit, options: CherrypickOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("cherrypick")(repo.asInstanceOf[js.Any], commit.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Cherrypicks the given commit against "our" commit, producing an index that reflects the result of the cherrypick. The index is not backed by a repo.

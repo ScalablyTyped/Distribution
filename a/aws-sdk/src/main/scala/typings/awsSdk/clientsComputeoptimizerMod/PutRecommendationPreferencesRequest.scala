@@ -12,6 +12,11 @@ trait PutRecommendationPreferencesRequest extends StObject {
   var enhancedInfrastructureMetrics: js.UndefOr[EnhancedInfrastructureMetrics] = js.undefined
   
   /**
+    * The provider of the external metrics recommendation preference to create or update. Specify a valid provider in the source field to activate the preference. To delete this preference, see the DeleteRecommendationPreferences action. This preference can only be set for the Ec2Instance resource type. For more information, see External metrics ingestion in the Compute Optimizer User Guide.
+    */
+  var externalMetricsPreference: js.UndefOr[ExternalMetricsPreference] = js.undefined
+  
+  /**
     * The status of the inferred workload types recommendation preference to create or update.  The inferred workload type feature is active by default. To deactivate it, create a recommendation preference.  Specify the Inactive status to deactivate the feature, or specify Active to activate it. For more information, see Inferred workload types in the Compute Optimizer User Guide.
     */
   var inferredWorkloadTypes: js.UndefOr[InferredWorkloadTypesPreference] = js.undefined
@@ -39,6 +44,10 @@ object PutRecommendationPreferencesRequest {
     inline def setEnhancedInfrastructureMetrics(value: EnhancedInfrastructureMetrics): Self = StObject.set(x, "enhancedInfrastructureMetrics", value.asInstanceOf[js.Any])
     
     inline def setEnhancedInfrastructureMetricsUndefined: Self = StObject.set(x, "enhancedInfrastructureMetrics", js.undefined)
+    
+    inline def setExternalMetricsPreference(value: ExternalMetricsPreference): Self = StObject.set(x, "externalMetricsPreference", value.asInstanceOf[js.Any])
+    
+    inline def setExternalMetricsPreferenceUndefined: Self = StObject.set(x, "externalMetricsPreference", js.undefined)
     
     inline def setInferredWorkloadTypes(value: InferredWorkloadTypesPreference): Self = StObject.set(x, "inferredWorkloadTypes", value.asInstanceOf[js.Any])
     

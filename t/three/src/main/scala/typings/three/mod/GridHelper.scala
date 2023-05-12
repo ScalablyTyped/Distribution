@@ -1,6 +1,6 @@
 package typings.three.mod
 
-import typings.three.srcUtilsMod.ColorRepresentation
+import typings.three.srcMathColorMod.ColorRepresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,10 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "GridHelper")
 @js.native
 /**
-  * @param [size=10]
-  * @param [divisions=10]
-  * @param [color1=0x444444]
-  * @param [color2=0x888888]
+  * Creates a new {@link GridHelper} of size 'size' and divided into 'divisions' segments per side
+  * @remarks
+  * Colors are optional.
+  * @param size The size of the grid. Default `10`
+  * @param divisions The number of divisions across the grid. Default `10`
+  * @param colorCenterLine The color of the centerline. This can be a {@link THREE.Color | Color}, a hexadecimal value and an CSS-Color name. Default `0x444444`
+  * @param colorGrid The color of the lines of the grid. This can be a {@link THREE.Color | Color}, a hexadecimal value and an CSS-Color name. Default `0x888888`
   */
 open class GridHelper ()
   extends typings.three.srcThreeMod.GridHelper {

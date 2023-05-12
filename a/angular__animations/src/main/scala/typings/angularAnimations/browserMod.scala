@@ -491,8 +491,7 @@ object browserMod {
       * @param position A 0-based offset into the duration, in milliseconds.
       */
     /* CompleteClass */
-    override def setPosition(position: Any): Unit = js.native
-    def setPosition(p: Double): Unit = js.native
+    override def setPosition(position: Double): Unit = js.native
     
     var time: Double = js.native
     

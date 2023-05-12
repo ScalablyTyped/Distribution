@@ -6,24 +6,44 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Xcommonmarkerversion extends StObject {
   
-  var `content-type`: js.UndefOr[String] = js.undefined
+  /** @example text/html */
+  var `content-type`: String
   
-  var link: js.UndefOr[String] = js.undefined
+  /** @example <https://api.github.com/resource?page=2>; rel="next", <https://api.github.com/resource?page=5>; rel="last" */
+  var link: String
   
-  var location: js.UndefOr[String] = js.undefined
+  /** @example https://pipelines.actions.githubusercontent.com/OhgS4QRKqmgx7bKC27GKU83jnQjyeqG8oIMTge8eqtheppcmw8/_apis/pipelines/1/runs/176/signedlogcontent?urlExpires=2020-01-24T18%3A10%3A31.5729946Z&urlSigningMethod=HMACV1&urlSignature=agG73JakPYkHrh06seAkvmH7rBR4Ji4c2%2B6a2ejYh3E%3D */
+  var location: String
   
-  var `x-common-marker-version`: js.UndefOr[String] = js.undefined
+  /** @example 0.17.4 */
+  var `x-common-marker-version`: String
   
-  var `x-rate-limit-limit`: js.UndefOr[Double] = js.undefined
+  /** @example 5000 */
+  var `x-rate-limit-limit`: Double
   
-  var `x-rate-limit-remaining`: js.UndefOr[Double] = js.undefined
+  /** @example 4999 */
+  var `x-rate-limit-remaining`: Double
   
-  var `x-rate-limit-reset`: js.UndefOr[Double] = js.undefined
+  /** @example 1590701888 */
+  var `x-rate-limit-reset`: Double
 }
 object Xcommonmarkerversion {
   
-  inline def apply(): Xcommonmarkerversion = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    `content-type`: String,
+    link: String,
+    location: String,
+    `x-common-marker-version`: String,
+    `x-rate-limit-limit`: Double,
+    `x-rate-limit-remaining`: Double,
+    `x-rate-limit-reset`: Double
+  ): Xcommonmarkerversion = {
+    val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
+    __obj.updateDynamic("content-type")(`content-type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("x-common-marker-version")(`x-common-marker-version`.asInstanceOf[js.Any])
+    __obj.updateDynamic("x-rate-limit-limit")(`x-rate-limit-limit`.asInstanceOf[js.Any])
+    __obj.updateDynamic("x-rate-limit-remaining")(`x-rate-limit-remaining`.asInstanceOf[js.Any])
+    __obj.updateDynamic("x-rate-limit-reset")(`x-rate-limit-reset`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Xcommonmarkerversion]
   }
   
@@ -32,30 +52,16 @@ object Xcommonmarkerversion {
     
     inline def `setContent-type`(value: String): Self = StObject.set(x, "content-type", value.asInstanceOf[js.Any])
     
-    inline def `setContent-typeUndefined`: Self = StObject.set(x, "content-type", js.undefined)
-    
     inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
-    
-    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
-    
     inline def `setX-common-marker-version`(value: String): Self = StObject.set(x, "x-common-marker-version", value.asInstanceOf[js.Any])
-    
-    inline def `setX-common-marker-versionUndefined`: Self = StObject.set(x, "x-common-marker-version", js.undefined)
     
     inline def `setX-rate-limit-limit`(value: Double): Self = StObject.set(x, "x-rate-limit-limit", value.asInstanceOf[js.Any])
     
-    inline def `setX-rate-limit-limitUndefined`: Self = StObject.set(x, "x-rate-limit-limit", js.undefined)
-    
     inline def `setX-rate-limit-remaining`(value: Double): Self = StObject.set(x, "x-rate-limit-remaining", value.asInstanceOf[js.Any])
     
-    inline def `setX-rate-limit-remainingUndefined`: Self = StObject.set(x, "x-rate-limit-remaining", js.undefined)
-    
     inline def `setX-rate-limit-reset`(value: Double): Self = StObject.set(x, "x-rate-limit-reset", value.asInstanceOf[js.Any])
-    
-    inline def `setX-rate-limit-resetUndefined`: Self = StObject.set(x, "x-rate-limit-reset", js.undefined)
   }
 }

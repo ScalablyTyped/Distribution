@@ -1,10 +1,10 @@
 package typings.nivoColors
 
 import typings.d3Color.mod.RGBColor
-import typings.nivoColors.anon.PartialPickCompleteThemeb
 import typings.nivoColors.nivoColorsStrings.brighter
 import typings.nivoColors.nivoColorsStrings.darker
 import typings.nivoColors.nivoColorsStrings.opacity
+import typings.nivoCore.mod.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,10 +16,10 @@ object distTypesInheritedColorMod {
   val ^ : js.Any = js.native
   
   inline def getInheritedColorGenerator[Datum](config: InheritedColorConfig[Datum]): InheritedColorConfigCustomFunction[Datum] | (js.Function1[/* d */ Datum, Any]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getInheritedColorGenerator")(config.asInstanceOf[js.Any]).asInstanceOf[InheritedColorConfigCustomFunction[Datum] | (js.Function1[/* d */ Datum, Any])]
-  inline def getInheritedColorGenerator[Datum](config: InheritedColorConfig[Datum], theme: PartialPickCompleteThemeb): InheritedColorConfigCustomFunction[Datum] | (js.Function1[/* d */ Datum, Any]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getInheritedColorGenerator")(config.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[InheritedColorConfigCustomFunction[Datum] | (js.Function1[/* d */ Datum, Any])]
+  inline def getInheritedColorGenerator[Datum](config: InheritedColorConfig[Datum], theme: Theme): InheritedColorConfigCustomFunction[Datum] | (js.Function1[/* d */ Datum, Any]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getInheritedColorGenerator")(config.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[InheritedColorConfigCustomFunction[Datum] | (js.Function1[/* d */ Datum, Any])]
   
   inline def useInheritedColor[Datum](config: InheritedColorConfig[Datum]): InheritedColorConfigCustomFunction[Datum] | (js.Function1[/* d */ Datum, Any]) = ^.asInstanceOf[js.Dynamic].applyDynamic("useInheritedColor")(config.asInstanceOf[js.Any]).asInstanceOf[InheritedColorConfigCustomFunction[Datum] | (js.Function1[/* d */ Datum, Any])]
-  inline def useInheritedColor[Datum](config: InheritedColorConfig[Datum], theme: PartialPickCompleteThemeb): InheritedColorConfigCustomFunction[Datum] | (js.Function1[/* d */ Datum, Any]) = (^.asInstanceOf[js.Dynamic].applyDynamic("useInheritedColor")(config.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[InheritedColorConfigCustomFunction[Datum] | (js.Function1[/* d */ Datum, Any])]
+  inline def useInheritedColor[Datum](config: InheritedColorConfig[Datum], theme: Theme): InheritedColorConfigCustomFunction[Datum] | (js.Function1[/* d */ Datum, Any]) = (^.asInstanceOf[js.Dynamic].applyDynamic("useInheritedColor")(config.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[InheritedColorConfigCustomFunction[Datum] | (js.Function1[/* d */ Datum, Any])]
   
   type ColorModifier = ColorModifierBrightness | ColorModifierDarkness | ColorModifierOpacity
   

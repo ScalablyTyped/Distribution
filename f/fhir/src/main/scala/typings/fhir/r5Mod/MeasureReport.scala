@@ -1,6 +1,6 @@
 package typings.fhir.r5Mod
 
-import typings.fhir.fhirStrings.`data-collection`
+import typings.fhir.fhirStrings.`data-exchange`
 import typings.fhir.fhirStrings.`subject-list`
 import typings.fhir.fhirStrings.complete
 import typings.fhir.fhirStrings.error
@@ -34,12 +34,12 @@ trait MeasureReport
   var dataUpdateType: js.UndefOr[incremental | snapshot] = js.undefined
   
   /**
-    * The date this measure report was generated.
+    * The date this measure was calculated.
     */
   var date: js.UndefOr[String] = js.undefined
   
   /**
-    * A reference to a Bundle containing the Resources that were used in the calculation of this measure.
+    * Evaluated resources are only reported for individual reports.
     */
   var evaluatedResource: js.UndefOr[js.Array[Reference]] = js.undefined
   
@@ -54,14 +54,24 @@ trait MeasureReport
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
-    * This element is typically defined by the measure, but reproduced here to ensure the measure score can be interpreted. The element is labeled as a modifier because it changes the interpretation of the reported measure score.
+    * This element is typically defined by the measure, but reproduced here to ensure the measure score can be interpreted. The element is labeled as a modifier because it changes the interpretation of the reported measure score. Note also that a MeasureReport instance includes the improvementNotation as defined by the Measure being reported. It is duplicated in the MeasureReport because it is a critical aspect of interpreting the measure score but it is not intended to reflect whether the measure report is an increase or decrease. It helps interpret if the measure score is an increase or decrease, I.e., moving in the direction of the desired outcome.
     */
   var improvementNotation: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
+    * Whenever an operation returns a MeasureReport, the IN parameters from that operation can be returned to the caller of the operation using MeasureReport.inputParameters. Operations include but are not limited to $evaluate-measure, $care-gaps, $data-requirements, and $collect-data. The inputParameters can also be used in a MeasureReport used to define a test case (i.e., not as a result of an operation).
+    */
+  var inputParameters: js.UndefOr[Reference] = js.undefined
+  
+  /**
+    * A reference to the location for which the data is being reported.
+    */
+  var location: js.UndefOr[Reference] = js.undefined
+  
+  /**
     * A reference to the Measure that was calculated to produce this report.
     */
-  var measure: String
+  var measure: js.UndefOr[String] = js.undefined
   
   /**
     * The reporting period for which the report was calculated.
@@ -69,7 +79,7 @@ trait MeasureReport
   var period: Period
   
   /**
-    * The individual, location, or organization that is reporting the data.
+    * The individual or organization that is reporting the data.
     */
   var reporter: js.UndefOr[Reference] = js.undefined
   
@@ -98,19 +108,23 @@ trait MeasureReport
   var subject: js.UndefOr[Reference] = js.undefined
   
   /**
-    * Data-collection reports are used only to communicate data-of-interest for a measure. They do not necessarily include all the data for a particular subject or population, but they may.
+    * For individual measure reports, the supplementalData elements represent the direct result of evaluating the supplementalData expression for the subject of the report. For summary reports, supplementalData is reported as references to contained Observation resources that represent the number of times each value appeared as a supplementalData result for members of the population.
     */
-  var `type`: individual | `subject-list` | summary | `data-collection`
+  var supplementalData: js.UndefOr[js.Array[Reference]] = js.undefined
+  
+  /**
+    * Data-exchange reports are used only to communicate data-of-interest for a measure. They do not necessarily include all the data for a particular subject or population, but they may.
+    */
+  var `type`: individual | `subject-list` | summary | `data-exchange`
 }
 object MeasureReport {
   
   inline def apply(
-    measure: String,
     period: Period,
     status: complete | pending | error,
-    `type`: individual | `subject-list` | summary | `data-collection`
+    `type`: individual | `subject-list` | summary | `data-exchange`
   ): MeasureReport = {
-    val __obj = js.Dynamic.literal(measure = measure.asInstanceOf[js.Any], period = period.asInstanceOf[js.Any], resourceType = "MeasureReport", status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(period = period.asInstanceOf[js.Any], resourceType = "MeasureReport", status = status.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeasureReport]
   }
@@ -148,7 +162,17 @@ object MeasureReport {
     
     inline def setImprovementNotationUndefined: Self = StObject.set(x, "improvementNotation", js.undefined)
     
+    inline def setInputParameters(value: Reference): Self = StObject.set(x, "inputParameters", value.asInstanceOf[js.Any])
+    
+    inline def setInputParametersUndefined: Self = StObject.set(x, "inputParameters", js.undefined)
+    
+    inline def setLocation(value: Reference): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    
     inline def setMeasure(value: String): Self = StObject.set(x, "measure", value.asInstanceOf[js.Any])
+    
+    inline def setMeasureUndefined: Self = StObject.set(x, "measure", js.undefined)
     
     inline def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
@@ -172,7 +196,13 @@ object MeasureReport {
     
     inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
-    inline def setType(value: individual | `subject-list` | summary | `data-collection`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setSupplementalData(value: js.Array[Reference]): Self = StObject.set(x, "supplementalData", value.asInstanceOf[js.Any])
+    
+    inline def setSupplementalDataUndefined: Self = StObject.set(x, "supplementalData", js.undefined)
+    
+    inline def setSupplementalDataVarargs(value: Reference*): Self = StObject.set(x, "supplementalData", js.Array(value*))
+    
+    inline def setType(value: individual | `subject-list` | summary | `data-exchange`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def set_dataUpdateType(value: Element): Self = StObject.set(x, "_dataUpdateType", value.asInstanceOf[js.Any])
     

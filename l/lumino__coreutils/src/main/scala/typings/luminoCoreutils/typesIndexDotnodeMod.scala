@@ -133,8 +133,10 @@ object typesIndexDotnodeMod {
       * Construct a new token.
       *
       * @param name - A human readable name for the token.
+      * @param description - Token purpose description for documentation.
       */
     def this(name: String) = this()
+    def this(name: String, description: String) = this()
   }
   
   object UUID {

@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ConfigAttributes extends StObject {
   
+  /** name - The name of the custom config */
   var name: js.UndefOr[String] = js.undefined
   
+  /** value - The value of the custom config */
   var value: js.UndefOr[String] = js.undefined
 }
 object ConfigAttributes {

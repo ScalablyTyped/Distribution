@@ -11,7 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.arcgisJsApi.esri.FeatureLayerBaseProperties because var conflicts: fullExtent. Inlined copyright, definitionExpression, displayField, elevationInfo, floorInfo, gdbVersion, geometryType, hasM, hasZ, historicMoment, layerId, objectIdField, returnM, returnZ, sourceJSON, spatialReference, url */ trait SubtypeGroupLayerProperties
+- typings.arcgisJsApi.esri.FeatureLayerBaseProperties because var conflicts: fullExtent, title. Inlined copyright, definitionExpression, displayField, elevationInfo, floorInfo, gdbVersion, geometryType, hasM, hasZ, historicMoment, layerId, objectIdField, returnM, returnZ, sourceJSON, spatialReference, url */ trait SubtypeGroupLayerProperties
   extends StObject
      with LayerProperties
      with PortalLayerProperties

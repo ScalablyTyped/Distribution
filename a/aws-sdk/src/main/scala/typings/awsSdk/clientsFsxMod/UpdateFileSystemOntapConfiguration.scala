@@ -6,6 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UpdateFileSystemOntapConfiguration extends StObject {
   
+  /**
+    * (Multi-AZ only) A list of IDs of new virtual private cloud (VPC) route tables to associate (add) with your Amazon FSx for NetApp ONTAP file system.
+    */
+  var AddRouteTableIds: js.UndefOr[RouteTableIds] = js.undefined
+  
   var AutomaticBackupRetentionDays: js.UndefOr[typings.awsSdk.clientsFsxMod.AutomaticBackupRetentionDays] = js.undefined
   
   var DailyAutomaticBackupStartTime: js.UndefOr[DailyTime] = js.undefined
@@ -21,7 +26,12 @@ trait UpdateFileSystemOntapConfiguration extends StObject {
   var FsxAdminPassword: js.UndefOr[AdminPassword] = js.undefined
   
   /**
-    * Specifies the throughput of an FSx for NetApp ONTAP file system, measured in megabytes per second (MBps). Valid values are 128, 256, 512, 1024, or 2048 MB/s.
+    * (Multi-AZ only) A list of IDs of existing virtual private cloud (VPC) route tables to disassociate (remove) from your Amazon FSx for NetApp ONTAP file system. You can use the API operation to retrieve the list of VPC route table IDs for a file system.
+    */
+  var RemoveRouteTableIds: js.UndefOr[RouteTableIds] = js.undefined
+  
+  /**
+    * Specifies the throughput of an FSx for NetApp ONTAP file system, measured in megabytes per second (MBps). Valid values are 128, 256, 512, 1024, 2048, and 4096 MBps.
     */
   var ThroughputCapacity: js.UndefOr[MegabytesPerSecond] = js.undefined
   
@@ -36,6 +46,12 @@ object UpdateFileSystemOntapConfiguration {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: UpdateFileSystemOntapConfiguration] (val x: Self) extends AnyVal {
+    
+    inline def setAddRouteTableIds(value: RouteTableIds): Self = StObject.set(x, "AddRouteTableIds", value.asInstanceOf[js.Any])
+    
+    inline def setAddRouteTableIdsUndefined: Self = StObject.set(x, "AddRouteTableIds", js.undefined)
+    
+    inline def setAddRouteTableIdsVarargs(value: RouteTableId*): Self = StObject.set(x, "AddRouteTableIds", js.Array(value*))
     
     inline def setAutomaticBackupRetentionDays(value: AutomaticBackupRetentionDays): Self = StObject.set(x, "AutomaticBackupRetentionDays", value.asInstanceOf[js.Any])
     
@@ -52,6 +68,12 @@ object UpdateFileSystemOntapConfiguration {
     inline def setFsxAdminPassword(value: AdminPassword): Self = StObject.set(x, "FsxAdminPassword", value.asInstanceOf[js.Any])
     
     inline def setFsxAdminPasswordUndefined: Self = StObject.set(x, "FsxAdminPassword", js.undefined)
+    
+    inline def setRemoveRouteTableIds(value: RouteTableIds): Self = StObject.set(x, "RemoveRouteTableIds", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveRouteTableIdsUndefined: Self = StObject.set(x, "RemoveRouteTableIds", js.undefined)
+    
+    inline def setRemoveRouteTableIdsVarargs(value: RouteTableId*): Self = StObject.set(x, "RemoveRouteTableIds", js.Array(value*))
     
     inline def setThroughputCapacity(value: MegabytesPerSecond): Self = StObject.set(x, "ThroughputCapacity", value.asInstanceOf[js.Any])
     

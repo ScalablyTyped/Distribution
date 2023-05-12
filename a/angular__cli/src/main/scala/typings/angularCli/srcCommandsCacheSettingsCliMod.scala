@@ -14,8 +14,7 @@ object srcCommandsCacheSettingsCliMod {
     extends CommandModule[js.Object] {
     def this(context: CommandContext) = this()
     
-    @JSName("aliases")
-    var aliases_CacheDisableModule: String = js.native
+    var aliases: String = js.native
     
     @JSName("describe")
     var describe_CacheDisableModule: String = js.native
@@ -29,8 +28,7 @@ object srcCommandsCacheSettingsCliMod {
     extends CommandModule[js.Object] {
     def this(context: CommandContext) = this()
     
-    @JSName("aliases")
-    var aliases_CacheEnableModule: String = js.native
+    var aliases: String = js.native
     
     @JSName("describe")
     var describe_CacheEnableModule: String = js.native

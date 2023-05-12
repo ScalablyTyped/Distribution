@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "has-package-exports"
-version := "1.2-dt-20220624Z-9b7968"
+version := "1.2-dt-20230322Z-9b7968"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

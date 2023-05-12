@@ -14,7 +14,7 @@ trait UpdateDashboardPermissionsResponse extends StObject {
   /**
     * The ID for the dashboard.
     */
-  var DashboardId: js.UndefOr[RestrictiveResourceId] = js.undefined
+  var DashboardId: js.UndefOr[ShortRestrictiveResourceId] = js.undefined
   
   /**
     * Updates the permissions of a shared link to an Amazon QuickSight dashboard.
@@ -50,7 +50,7 @@ object UpdateDashboardPermissionsResponse {
     
     inline def setDashboardArnUndefined: Self = StObject.set(x, "DashboardArn", js.undefined)
     
-    inline def setDashboardId(value: RestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
+    inline def setDashboardId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
     
     inline def setDashboardIdUndefined: Self = StObject.set(x, "DashboardId", js.undefined)
     

@@ -6,7 +6,6 @@ import typings.awsSdk.awsSdkStrings.FAILED_FILES_ONLY
 import typings.awsSdk.awsSdkStrings.LUSTRE
 import typings.awsSdk.awsSdkStrings.NFS3
 import typings.awsSdk.awsSdkStrings.REPORT_CSV_20191124
-import typings.awsSdk.awsSdkStrings.SINGLE_AZ_1
 import typings.awsSdk.awsSdkStrings.`file-system-id`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -27,6 +26,7 @@ type AdminPassword = String
   - typings.awsSdk.awsSdkStrings.VOLUME_UPDATE
   - typings.awsSdk.awsSdkStrings.SNAPSHOT_UPDATE
   - typings.awsSdk.awsSdkStrings.RELEASE_NFS_V3_LOCKS
+  - typings.awsSdk.awsSdkStrings.VOLUME_RESTORE
   - java.lang.String
 */
 type AdministrativeActionType = _AdministrativeActionType | String
@@ -309,6 +309,13 @@ type FlexCacheEndpointType = _FlexCacheEndpointType | String
 
 type GeneralARN = String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.RW
+  - typings.awsSdk.awsSdkStrings.DP
+  - java.lang.String
+*/
+type InputOntapVolumeType = _InputOntapVolumeType | String
+
 type IntegerNoMax = Double
 
 type IntegerNoMaxFromNegativeOne = Double
@@ -411,7 +418,12 @@ type OpenZFSCopyStrategy = _OpenZFSCopyStrategy | String
 */
 type OpenZFSDataCompressionType = _OpenZFSDataCompressionType | String
 
-type OpenZFSDeploymentType = SINGLE_AZ_1 | String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SINGLE_AZ_1
+  - typings.awsSdk.awsSdkStrings.SINGLE_AZ_2
+  - java.lang.String
+*/
+type OpenZFSDeploymentType = _OpenZFSDeploymentType | String
 
 type OpenZFSNfsExportOption = String
 
@@ -509,6 +521,8 @@ type SnapshotIds = js.Array[SnapshotId]
 type SnapshotLifecycle = _SnapshotLifecycle | String
 
 type SnapshotName = String
+
+type SnapshotPolicy = String
 
 type Snapshots = js.Array[Snapshot]
 

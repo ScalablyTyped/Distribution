@@ -13,14 +13,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AddAll extends StObject {
   
-  def add(path: String): js.Promise[CID[Any, Double, Double, Version]] = js.native
+  def add(cid: String): js.Promise[CID[Any, Double, Double, Version]] = js.native
   def add(
-    path: String,
+    cid: String,
     options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.AddOptions */ Any) & HTTPClientExtraOptions
   ): js.Promise[CID[Any, Double, Double, Version]] = js.native
-  def add(path: CID[Any, Double, Double, Version]): js.Promise[CID[Any, Double, Double, Version]] = js.native
+  def add(cid: CID[Any, Double, Double, Version]): js.Promise[CID[Any, Double, Double, Version]] = js.native
   def add(
-    path: CID[Any, Double, Double, Version],
+    cid: CID[Any, Double, Double, Version],
     options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.AddOptions */ Any) & HTTPClientExtraOptions
   ): js.Promise[CID[Any, Double, Double, Version]] = js.native
   
@@ -47,14 +47,14 @@ trait AddAll extends StObject {
   
   var remote: Rm = js.native
   
-  def rm(path: String): js.Promise[CID[Any, Double, Double, Version]] = js.native
+  def rm(ipfsPath: String): js.Promise[CID[Any, Double, Double, Version]] = js.native
   def rm(
-    path: String,
+    ipfsPath: String,
     options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.RmOptions */ Any) & HTTPClientExtraOptions
   ): js.Promise[CID[Any, Double, Double, Version]] = js.native
-  def rm(path: CID[Any, Double, Double, Version]): js.Promise[CID[Any, Double, Double, Version]] = js.native
+  def rm(ipfsPath: CID[Any, Double, Double, Version]): js.Promise[CID[Any, Double, Double, Version]] = js.native
   def rm(
-    path: CID[Any, Double, Double, Version],
+    ipfsPath: CID[Any, Double, Double, Version],
     options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.RmOptions */ Any) & HTTPClientExtraOptions
   ): js.Promise[CID[Any, Double, Double, Version]] = js.native
   

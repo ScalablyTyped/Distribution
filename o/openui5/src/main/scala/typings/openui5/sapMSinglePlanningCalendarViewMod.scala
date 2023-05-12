@@ -2,6 +2,7 @@ package typings.openui5
 
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
+import typings.openui5.sapUiCoreDateCalendarWeekNumberingMod.CalendarWeekNumbering
 import typings.openui5.sapUiCoreElementMod.ElementSettings
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -126,9 +127,21 @@ object sapMSinglePlanningCalendarViewMod {
       * a given date.
       */
     def calculateStartDate(/**
-      * the given date
+      * A JavaScript Date
       */
-    oDate: js.Object): Unit = js.native
+    oDate: js.Date): Unit = js.native
+    
+    /**
+      * @SINCE 1.110.0
+      *
+      * Gets current value of property {@link #getCalendarWeekNumbering calendarWeekNumbering}.
+      *
+      * If set, the calendar week numbering is used for display. If not set, the calendar week numbering of the
+      * global configuration is used. Note: This property should not be used with firstDayOfWeek property.
+      *
+      * @returns Value of property `calendarWeekNumbering`
+      */
+    def getCalendarWeekNumbering(): CalendarWeekNumbering | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String) = js.native
     
     /**
       * Should return the number of columns to be displayed in the grid of the `sap.m.SinglePlanningCalendar`.
@@ -177,6 +190,32 @@ object sapMSinglePlanningCalendarViewMod {
       * @returns Value of property `title`
       */
     def getTitle(): String = js.native
+    
+    /**
+      * @SINCE 1.110.0
+      *
+      * Sets a new value for property {@link #getCalendarWeekNumbering calendarWeekNumbering}.
+      *
+      * If set, the calendar week numbering is used for display. If not set, the calendar week numbering of the
+      * global configuration is used. Note: This property should not be used with firstDayOfWeek property.
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setCalendarWeekNumbering(): this.type = js.native
+    def setCalendarWeekNumbering(
+      /**
+      * New value for property `calendarWeekNumbering`
+      */
+    sCalendarWeekNumbering: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String
+    ): this.type = js.native
+    def setCalendarWeekNumbering(
+      /**
+      * New value for property `calendarWeekNumbering`
+      */
+    sCalendarWeekNumbering: CalendarWeekNumbering
+    ): this.type = js.native
     
     /**
       * @SINCE 1.98
@@ -235,6 +274,16 @@ object sapMSinglePlanningCalendarViewMod {
        with ElementSettings {
     
     /**
+      * @SINCE 1.110.0
+      *
+      * If set, the calendar week numbering is used for display. If not set, the calendar week numbering of the
+      * global configuration is used. Note: This property should not be used with firstDayOfWeek property.
+      */
+    var calendarWeekNumbering: js.UndefOr[
+        CalendarWeekNumbering | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String) | PropertyBindingInfo
+      ] = js.undefined
+    
+    /**
       * @SINCE 1.98
       *
       * If set, the first day of the displayed week is this day. Valid values are 0 to 6 starting on Sunday.
@@ -264,6 +313,12 @@ object sapMSinglePlanningCalendarViewMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: SinglePlanningCalendarViewSettings] (val x: Self) extends AnyVal {
+      
+      inline def setCalendarWeekNumbering(
+        value: CalendarWeekNumbering | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String) | PropertyBindingInfo
+      ): Self = StObject.set(x, "calendarWeekNumbering", value.asInstanceOf[js.Any])
+      
+      inline def setCalendarWeekNumberingUndefined: Self = StObject.set(x, "calendarWeekNumbering", js.undefined)
       
       inline def setFirstDayOfWeek(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "firstDayOfWeek", value.asInstanceOf[js.Any])
       

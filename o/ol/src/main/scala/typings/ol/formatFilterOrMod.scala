@@ -6,12 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object formatFilterOrMod {
   
+  /**
+    * @classdesc
+    * Represents a logical `<Or>` operator between two ore more filter conditions.
+    * @api
+    */
   @JSImport("ol/format/filter/Or", JSImport.Default)
   @js.native
   open class default protected ()
     extends typings.ol.formatFilterLogicalNaryMod.default {
-    def this(conditions: typings.ol.formatFilterFilterMod.default*) = this()
+    /**
+      * @param {...import("./Filter.js").default} conditions Conditions.
+      */
+    def this(args: typings.ol.formatFilterFilterMod.default*) = this()
   }
   
+  /**
+    * @classdesc
+    * Represents a logical `<Or>` operator between two ore more filter conditions.
+    * @api
+    */
   type Or = typings.ol.formatFilterLogicalNaryMod.default
 }

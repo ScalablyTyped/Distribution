@@ -29,7 +29,7 @@ object mod {
     def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement], context: Any) = this()
   }
@@ -41,7 +41,7 @@ object mod {
     def this(props: AuthButtonProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: AuthButtonProps, context: Any) = this()
   }
@@ -52,7 +52,7 @@ object mod {
     def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement], context: Any) = this()
   }
@@ -63,7 +63,7 @@ object mod {
     def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement], context: Any) = this()
   }
@@ -74,7 +74,7 @@ object mod {
     def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement], context: Any) = this()
   }
@@ -85,7 +85,7 @@ object mod {
     def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement], context: Any) = this()
   }
@@ -97,7 +97,7 @@ object mod {
     def this(props: srcstringdefaultSrcstring) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: srcstringdefaultSrcstring, context: Any) = this()
   }
@@ -109,7 +109,7 @@ object mod {
     def this(props: Src) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Src, context: Any) = this()
   }
@@ -120,7 +120,7 @@ object mod {
     def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement], context: Any) = this()
   }
@@ -131,7 +131,7 @@ object mod {
     def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ActivityButtonProps & HTMLAttributes[HTMLButtonElement], context: Any) = this()
   }
@@ -143,7 +143,7 @@ object mod {
     def this(props: hrefstringHTMLAttributesH) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: hrefstringHTMLAttributesH, context: Any) = this()
   }
@@ -155,7 +155,7 @@ object mod {
     def this(props: ListProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ListProps, context: Any) = this()
   }
@@ -167,7 +167,7 @@ object mod {
     def this(props: Subscribe) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Subscribe, context: Any) = this()
   }
@@ -179,7 +179,7 @@ object mod {
     def this(props: js.Object) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: js.Object, context: Any) = this()
   }
@@ -191,7 +191,7 @@ object mod {
     def this(props: js.Object) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: js.Object, context: Any) = this()
   }
@@ -203,7 +203,7 @@ object mod {
     def this(props: LoginButtonProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: LoginButtonProps, context: Any) = this()
   }
@@ -215,7 +215,7 @@ object mod {
     def this(props: ClassName) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ClassName, context: Any) = this()
   }
@@ -227,7 +227,7 @@ object mod {
     def this(props: Src) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Src, context: Any) = this()
   }
@@ -239,7 +239,7 @@ object mod {
     def this(props: Src) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Src, context: Any) = this()
   }
@@ -344,7 +344,7 @@ object mod {
     
     // dtslint does not appear to understand that `T` is used in the type guard.
     // See https://github.com/Microsoft/dtslint/issues/228
-    // tslint:disable-next-line no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     var filter: js.UndefOr[
         js.Function3[
           /* item */ LDflexValue, 

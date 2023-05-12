@@ -3,9 +3,8 @@ package typings.anchorJs
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
-import typings.anchorJs.mod.anchorjs.Anchor
-import typings.anchorJs.mod.anchorjs.AnchorOptions
-import typings.anchorJs.mod.anchorjs.AnchorStatic
+import typings.anchorJs.mod.anchorjs.AnchorJS
+import typings.anchorJs.mod.anchorjs.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,42 +16,65 @@ object mod extends Shortcut {
   @js.native
   open class ^ ()
     extends StObject
-       with Anchor {
-    def this(options: AnchorOptions) = this()
+       with AnchorJS {
+    def this(options: Options) = this()
   }
   @JSImport("anchor-js", JSImport.Namespace)
   @js.native
-  val ^ : js.Object & AnchorStatic = js.native
+  val ^ : js.Object & AnchorJS = js.native
   
   object global {
     
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("anchors")
     @js.native
-    val anchors: Anchor = js.native
+    open class anchors ()
+      extends StObject
+         with AnchorJS {
+      def this(options: Options) = this()
+    }
+    @JSGlobal("anchors")
+    @js.native
+    val anchors: AnchorJS = js.native
   }
   
-  type _To = js.Object & AnchorStatic
+  type _To = js.Object & AnchorJS
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: js.Object & AnchorStatic = ^
+  override def _to: js.Object & AnchorJS = ^
   
   object anchorjs {
     
+    /** @deprecated alias for AnchorJS */
+    type Anchor = AnchorJS
+    
     @js.native
-    trait Anchor extends StObject {
+    trait AnchorJS
+      extends StObject
+         with Instantiable0[AnchorJS]
+         with Instantiable1[/* options */ Options, AnchorJS] {
       
-      def add(): Anchor = js.native
-      def add(selector: String): Anchor = js.native
+      def add(): this.type = js.native
+      def add(selector: String): this.type = js.native
       
-      var options: AnchorOptions = js.native
+      var options: Options = js.native
       
-      def remove(): Anchor = js.native
-      def remove(selector: String): Anchor = js.native
+      def remove(): this.type = js.native
+      def remove(selector: String): this.type = js.native
       
       def removeAll(): Unit = js.native
     }
     
-    trait AnchorOptions extends StObject {
+    /** @deprecated alias for {Options} */
+    type AnchorOptions = Options
+    
+    /** @deprecated alias for {Placement} */
+    type AnchorPlacement = Placement
+    
+    /** @deprecated alias for {Visibility} */
+    type AnchorVisibility = Visibility
+    
+    trait Options extends StObject {
       
       var ariaLabel: js.UndefOr[String] = js.undefined
       
@@ -68,17 +90,17 @@ object mod extends Shortcut {
       
       var truncate: js.UndefOr[Double] = js.undefined
       
-      var visible: js.UndefOr[AnchorVisibility] = js.undefined
+      var visible: js.UndefOr[Visibility] = js.undefined
     }
-    object AnchorOptions {
+    object Options {
       
-      inline def apply(): AnchorOptions = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
-        __obj.asInstanceOf[AnchorOptions]
+        __obj.asInstanceOf[Options]
       }
       
       @scala.inline
-      implicit open class MutableBuilder[Self <: AnchorOptions] (val x: Self) extends AnyVal {
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
         
@@ -108,7 +130,7 @@ object mod extends Shortcut {
         
         inline def setTruncateUndefined: Self = StObject.set(x, "truncate", js.undefined)
         
-        inline def setVisible(value: AnchorVisibility): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+        inline def setVisible(value: Visibility): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
         
         inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
       }
@@ -118,33 +140,24 @@ object mod extends Shortcut {
       - typings.anchorJs.anchorJsStrings.left
       - typings.anchorJs.anchorJsStrings.right
     */
-    trait AnchorPlacement extends StObject
-    object AnchorPlacement {
+    trait Placement extends StObject
+    object Placement {
       
       inline def left: typings.anchorJs.anchorJsStrings.left = "left".asInstanceOf[typings.anchorJs.anchorJsStrings.left]
       
       inline def right: typings.anchorJs.anchorJsStrings.right = "right".asInstanceOf[typings.anchorJs.anchorJsStrings.right]
     }
     
-    @js.native
-    trait AnchorStatic
-      extends StObject
-         with Instantiable0[Anchor]
-         with Instantiable1[/* options */ AnchorOptions, Anchor]
-    
     /* Rewritten from type alias, can be one of: 
       - typings.anchorJs.anchorJsStrings.always
       - typings.anchorJs.anchorJsStrings.hover
-      - typings.anchorJs.anchorJsStrings.touch
     */
-    trait AnchorVisibility extends StObject
-    object AnchorVisibility {
+    trait Visibility extends StObject
+    object Visibility {
       
       inline def always: typings.anchorJs.anchorJsStrings.always = "always".asInstanceOf[typings.anchorJs.anchorJsStrings.always]
       
       inline def hover: typings.anchorJs.anchorJsStrings.hover = "hover".asInstanceOf[typings.anchorJs.anchorJsStrings.hover]
-      
-      inline def touch: typings.anchorJs.anchorJsStrings.touch = "touch".asInstanceOf[typings.anchorJs.anchorJsStrings.touch]
     }
   }
 }

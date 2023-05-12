@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersPathOwnerQueryPagePerpage extends StObject {
   
+  /** Get all repository topics */
   var get: ParametersPathOwnerQueryPagePerpage
   
+  /** Replace all repository topics */
   var put: RequestBodyContentApplicationjsonNames
 }
 object GetParametersPathOwnerQueryPagePerpage {

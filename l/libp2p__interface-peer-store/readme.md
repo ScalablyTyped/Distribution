@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__interface-peer-store
 
-Typings are for version 1.2.2
+Typings are for version 2.0.3
 
 ## Library description:
 Peer Store interface for libp2p

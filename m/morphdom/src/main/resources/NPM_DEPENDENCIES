@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "morphdom" : "2.6.1"
+      "morphdom" : "2.7.0"
     }
   ],
   "test-dependencies" : [
     {
-      "morphdom" : "2.6.1"
+      "morphdom" : "2.7.0"
     }
   ],
   "compile-devDependencies" : [

@@ -1,7 +1,7 @@
 
 # Scala.js typings for testing-library__vue
 
-Typings are for version 6.6.1
+Typings are for version 7.0.0
 
 ## Library description:
 Simple and complete Vue DOM testing utilities that encourage good testing practices.

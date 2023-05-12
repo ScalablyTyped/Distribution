@@ -34,4 +34,6 @@ trait GPU extends StObject {
     */
   def requestAdapter(): js.Promise[GPUAdapter | Null] = js.native
   def requestAdapter(options: GPURequestAdapterOptions): js.Promise[GPUAdapter | Null] = js.native
+  
+  val wgslLanguageFeatures: WGSLLanguageFeatures = js.native
 }

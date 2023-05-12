@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ShapeMargin
+import typings.csstype.mod.Property.Columns
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `98` extends StObject {
   
   var value: js.UndefOr[
-    (ShapeMargin[Double | String]) | (js.Array[
+    (Columns[Double | String]) | (js.Array[
       (Extract[
         js.UndefOr[
-          (ShapeMargin[Double | String]) | (js.Array[NonNullable[js.UndefOr[ShapeMargin[Double | String]]]])
+          (Columns[Double | String]) | (js.Array[NonNullable[js.UndefOr[Columns[Double | String]]]])
         ], 
         String
-      ]) | (NonNullable[js.UndefOr[ShapeMargin[Double | String]]])
+      ]) | (NonNullable[js.UndefOr[Columns[Double | String]]])
     ])
   ] = js.native
 }

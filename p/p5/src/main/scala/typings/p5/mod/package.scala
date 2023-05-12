@@ -30,9 +30,11 @@ import typings.p5.p5Strings.char
 import typings.p5.p5Strings.chord
 import typings.p5.p5Strings.clamp
 import typings.p5.p5Strings.close
+import typings.p5.p5Strings.contain
 import typings.p5.p5Strings.copy
 import typings.p5.p5Strings.corner
 import typings.p5.p5Strings.corners
+import typings.p5.p5Strings.cover
 import typings.p5.p5Strings.cross
 import typings.p5.p5Strings.curve
 import typings.p5.p5Strings.darkest
@@ -149,9 +151,13 @@ type CLOSE = close
 
 type COLOR_MODE = RGB | HSB | HSL
 
+type CONTAIN = contain
+
 type CORNER = corner
 
 type CORNERS = corners
+
+type COVER = cover
 
 type CROSS = cross
 
@@ -208,6 +214,8 @@ type HSL = hsl
 type HighPass = Filter
 
 type IMAGE_ = image
+
+type IMAGE_FIT = CONTAIN | COVER
 
 type IMAGE_MODE = CORNER | CORNERS | CENTER
 
@@ -364,3 +372,7 @@ type WRAP_STYLE = WORD | CHAR
 type WRAP_X = CLAMP | REPEAT | MIRROR
 
 type WRAP_Y = CLAMP | REPEAT | MIRROR
+
+type X_ALIGN = LEFT | RIGHT | CENTER
+
+type Y_ALIGN = TOP | BOTTOM | CENTER

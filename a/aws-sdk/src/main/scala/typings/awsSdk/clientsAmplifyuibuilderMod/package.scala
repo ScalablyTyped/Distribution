@@ -56,8 +56,8 @@ type FormActionType = _FormActionType | java.lang.String
 type FormBindings = StringDictionary[FormBindingElement]
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.top
-  - typings.awsSdk.awsSdkStrings.bottom
+  - typings.awsSdk.awsSdkStrings.top_
+  - typings.awsSdk.awsSdkStrings.bottom_
   - typings.awsSdk.awsSdkStrings.top_and_bottom
   - java.lang.String
 */
@@ -70,6 +70,10 @@ type FormButtonsPosition = _FormButtonsPosition | java.lang.String
 */
 type FormDataSourceType = _FormDataSourceType | java.lang.String
 
+type FormInputBindingProperties = StringDictionary[FormInputBindingPropertiesValue]
+
+type FormInputValuePropertyList = js.Array[FormInputValueProperty]
+
 type FormList = js.Array[Form]
 
 type FormName = java.lang.String
@@ -80,6 +84,14 @@ type IdentifierList = js.Array[String]
 
 type Integer = Double
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.required__
+  - typings.awsSdk.awsSdkStrings.optional__
+  - typings.awsSdk.awsSdkStrings.none__
+  - java.lang.String
+*/
+type LabelDecorator = _LabelDecorator | java.lang.String
+
 type ListComponentsLimit = Double
 
 type ListFormsLimit = Double
@@ -87,6 +99,8 @@ type ListFormsLimit = Double
 type ListThemesLimit = Double
 
 type NumValues = js.Array[Integer]
+
+type OperandType = java.lang.String
 
 type PredicateList = js.Array[Predicate]
 
@@ -102,6 +116,14 @@ type SensitiveString = java.lang.String
 type SortDirection = _SortDirection | java.lang.String
 
 type SortPropertyList = js.Array[SortProperty]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.public__
+  - typings.awsSdk.awsSdkStrings.`protected`
+  - typings.awsSdk.awsSdkStrings.private__
+  - java.lang.String
+*/
+type StorageAccessLevel = _StorageAccessLevel | java.lang.String
 
 type StrValues = js.Array[String]
 

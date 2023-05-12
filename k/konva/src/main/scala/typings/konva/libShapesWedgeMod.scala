@@ -1,5 +1,6 @@
 package typings.konva
 
+import typings.konva.libContextMod.Context
 import typings.konva.libShapeMod.Shape
 import typings.konva.libShapeMod.ShapeConfig
 import typings.konva.libTypesMod.GetSet
@@ -14,7 +15,7 @@ object libShapesWedgeMod {
   open class Wedge () extends Shape[WedgeConfig] {
     def this(config: WedgeConfig) = this()
     
-    def _sceneFunc(context: Any): Unit = js.native
+    def _sceneFunc(context: Context): Unit = js.native
     
     def angle(): Double = js.native
     def angle(v: Double): this.type = js.native
@@ -35,9 +36,9 @@ object libShapesWedgeMod {
     @JSName("radius")
     var radius_Original: GetSet[Double, this.type] = js.native
     
-    def setHeight(height: Any): Unit = js.native
+    def setHeight(height: Double): Unit = js.native
     
-    def setWidth(width: Any): Unit = js.native
+    def setWidth(width: Double): Unit = js.native
   }
   
   trait WedgeConfig

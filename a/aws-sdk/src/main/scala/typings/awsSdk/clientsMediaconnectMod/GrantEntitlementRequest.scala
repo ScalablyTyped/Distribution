@@ -17,7 +17,7 @@ trait GrantEntitlementRequest extends StObject {
   var Description: js.UndefOr[string] = js.undefined
   
   /**
-    * The type of encryption that will be used on the output that is associated with this entitlement.
+    * The type of encryption that will be used on the output that is associated with this entitlement. Allowable encryption types: static-key, speke.
     */
   var Encryption: js.UndefOr[typings.awsSdk.clientsMediaconnectMod.Encryption] = js.undefined
   

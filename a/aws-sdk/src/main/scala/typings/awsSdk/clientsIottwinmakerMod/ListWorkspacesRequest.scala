@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListWorkspacesRequest extends StObject {
   
   /**
-    * The maximum number of results to display.
+    * The maximum number of results to return at one time. The default is 25. Valid Range: Minimum value of 1. Maximum value of 250.
     */
   var maxResults: js.UndefOr[MaxResults] = js.undefined
   

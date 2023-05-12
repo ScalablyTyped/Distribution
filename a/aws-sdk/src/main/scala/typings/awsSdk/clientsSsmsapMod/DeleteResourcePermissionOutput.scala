@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteResourcePermissionOutput extends StObject {
   
   /**
-    * 
+    * The policy that removes permissions on the target database.
     */
   var Policy: js.UndefOr[String] = js.undefined
 }

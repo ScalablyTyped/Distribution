@@ -2,175 +2,37 @@ package typings.libp2p
 
 import typings.interfaceDatastore.mod.Datastore
 import typings.libp2pInterfaceAddressManager.mod.AddressManager
-import typings.libp2pInterfaceConnection.mod.ConnectionGater
 import typings.libp2pInterfaceConnection.mod.ConnectionProtector
+import typings.libp2pInterfaceConnectionGater.mod.ConnectionGater
 import typings.libp2pInterfaceConnectionManager.mod.ConnectionManager
-import typings.libp2pInterfaceConnectionManager.mod.Dialer
-import typings.libp2pInterfaceContentRouting.mod.ContentRouting
-import typings.libp2pInterfaceDht.mod.DualDHT
+import typings.libp2pInterfaceContentRouting.mod.ContentRouting_
+import typings.libp2pInterfaceLibp2p.mod.Libp2pEvents
 import typings.libp2pInterfaceMetrics.mod.Metrics
 import typings.libp2pInterfacePeerId.mod.PeerId
-import typings.libp2pInterfacePeerRouting.mod.PeerRouting
+import typings.libp2pInterfacePeerRouting.mod.PeerRouting_
 import typings.libp2pInterfacePeerStore.mod.PeerStore
-import typings.libp2pInterfacePubsub.mod.PubSub
-import typings.libp2pInterfacePubsub.mod.PubSubEvents
 import typings.libp2pInterfaceRegistrar.mod.Registrar
 import typings.libp2pInterfaceTransport.mod.TransportManager
 import typings.libp2pInterfaceTransport.mod.Upgrader
 import typings.libp2pInterfaces.distSrcStartableMod.Startable
+import typings.libp2pInterfaces.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distSrcComponentsMod {
   
-  @JSImport("libp2p/dist/src/components", "DefaultComponents")
+  @JSImport("libp2p/dist/src/components", JSImport.Namespace)
   @js.native
-  open class DefaultComponents ()
-    extends StObject
-       with Components
-       with Startable {
-    def this(init: ComponentsInit) = this()
-    
-    /* private */ var _addressManager: Any = js.native
-    
-    /* private */ var _connectionGater: Any = js.native
-    
-    /* private */ var _connectionManager: Any = js.native
-    
-    /* private */ var _connectionProtector: Any = js.native
-    
-    /* private */ var _contentRouting: Any = js.native
-    
-    /* private */ var _datastore: Any = js.native
-    
-    /* private */ var _dht: Any = js.native
-    
-    /* private */ var _dialer: Any = js.native
-    
-    /* private */ var _metrics: Any = js.native
-    
-    /* private */ var _peerId: Any = js.native
-    
-    /* private */ var _peerRouting: Any = js.native
-    
-    /* private */ var _peerStore: Any = js.native
-    
-    /* private */ var _pubsub: Any = js.native
-    
-    /* private */ var _registrar: Any = js.native
-    
-    /* private */ var _started: Any = js.native
-    
-    /* private */ var _transportManager: Any = js.native
-    
-    /* private */ var _upgrader: Any = js.native
-    
-    /* CompleteClass */
-    var addressManager: AddressManager = js.native
-    @JSName("addressManager")
-    def addressManager_MDefaultComponents: AddressManager = js.native
-    
-    @JSName("afterStart")
-    def afterStart_MDefaultComponents(): js.Promise[Unit] = js.native
-    
-    @JSName("afterStop")
-    def afterStop_MDefaultComponents(): js.Promise[Unit] = js.native
-    
-    @JSName("beforeStart")
-    def beforeStart_MDefaultComponents(): js.Promise[Unit] = js.native
-    
-    @JSName("beforeStop")
-    def beforeStop_MDefaultComponents(): js.Promise[Unit] = js.native
-    
-    /* CompleteClass */
-    var connectionGater: ConnectionGater = js.native
-    @JSName("connectionGater")
-    def connectionGater_MDefaultComponents: ConnectionGater = js.native
-    
-    /* CompleteClass */
-    var connectionManager: ConnectionManager = js.native
-    @JSName("connectionManager")
-    def connectionManager_MDefaultComponents: ConnectionManager = js.native
-    
-    @JSName("connectionProtector")
-    def connectionProtector_MDefaultComponents: js.UndefOr[ConnectionProtector] = js.native
-    
-    /* CompleteClass */
-    var contentRouting: ContentRouting = js.native
-    @JSName("contentRouting")
-    def contentRouting_MDefaultComponents: ContentRouting = js.native
-    
-    /* CompleteClass */
-    var datastore: Datastore = js.native
-    @JSName("datastore")
-    def datastore_MDefaultComponents: Datastore = js.native
-    
-    @JSName("dht")
-    def dht_MDefaultComponents: js.UndefOr[DualDHT] = js.native
-    
-    /* CompleteClass */
-    var dialer: Dialer = js.native
-    @JSName("dialer")
-    def dialer_MDefaultComponents: Dialer = js.native
-    
-    /* CompleteClass */
-    override def isStarted(): Boolean = js.native
-    
-    @JSName("metrics")
-    def metrics_MDefaultComponents: js.UndefOr[Metrics] = js.native
-    
-    /* CompleteClass */
-    var peerId: PeerId = js.native
-    @JSName("peerId")
-    def peerId_MDefaultComponents: PeerId = js.native
-    
-    /* CompleteClass */
-    var peerRouting: PeerRouting = js.native
-    @JSName("peerRouting")
-    def peerRouting_MDefaultComponents: PeerRouting = js.native
-    
-    /* CompleteClass */
-    var peerStore: PeerStore = js.native
-    @JSName("peerStore")
-    def peerStore_MDefaultComponents: PeerStore = js.native
-    
-    @JSName("pubsub")
-    def pubsub_MDefaultComponents: js.UndefOr[PubSub[PubSubEvents]] = js.native
-    
-    /* CompleteClass */
-    var registrar: Registrar = js.native
-    @JSName("registrar")
-    def registrar_MDefaultComponents: Registrar = js.native
-    
-    /**
-      * This method will be invoked to start the component.
-      *
-      * It should not assume that any other components have been started.
-      */
-    /* CompleteClass */
-    override def start(): Unit | js.Promise[Unit] = js.native
-    
-    /**
-      * This method will be invoked to stop the component.
-      *
-      * It should not assume any other components are running when it is called.
-      */
-    /* CompleteClass */
-    override def stop(): Unit | js.Promise[Unit] = js.native
-    
-    /* CompleteClass */
-    var transportManager: TransportManager = js.native
-    @JSName("transportManager")
-    def transportManager_MDefaultComponents: TransportManager = js.native
-    
-    /* CompleteClass */
-    var upgrader: Upgrader = js.native
-    @JSName("upgrader")
-    def upgrader_MDefaultComponents: Upgrader = js.native
-  }
+  val ^ : js.Any = js.native
   
-  trait Components extends StObject {
+  inline def defaultComponents(): Components = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultComponents")().asInstanceOf[Components]
+  inline def defaultComponents(init: ComponentsInit): Components = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultComponents")(init.asInstanceOf[js.Any]).asInstanceOf[Components]
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in string ]: any} */ trait Components
+    extends StObject
+       with Startable {
     
     var addressManager: AddressManager
     
@@ -180,23 +42,30 @@ object distSrcComponentsMod {
     
     var connectionProtector: js.UndefOr[ConnectionProtector] = js.undefined
     
-    var contentRouting: ContentRouting
+    var contentRouting: ContentRouting_
     
-    var datastore: Datastore
+    var datastore: Datastore[
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object
+      ]
     
-    var dht: js.UndefOr[DualDHT] = js.undefined
-    
-    var dialer: Dialer
+    var events: EventEmitter[Libp2pEvents]
     
     var metrics: js.UndefOr[Metrics] = js.undefined
     
     var peerId: PeerId
     
-    var peerRouting: PeerRouting
+    var peerRouting: PeerRouting_
     
     var peerStore: PeerStore
-    
-    var pubsub: js.UndefOr[PubSub[PubSubEvents]] = js.undefined
     
     var registrar: Registrar
     
@@ -210,17 +79,31 @@ object distSrcComponentsMod {
       addressManager: AddressManager,
       connectionGater: ConnectionGater,
       connectionManager: ConnectionManager,
-      contentRouting: ContentRouting,
-      datastore: Datastore,
-      dialer: Dialer,
+      contentRouting: ContentRouting_,
+      datastore: Datastore[
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object
+        ],
+      events: EventEmitter[Libp2pEvents],
+      isStarted: () => Boolean,
       peerId: PeerId,
-      peerRouting: PeerRouting,
+      peerRouting: PeerRouting_,
       peerStore: PeerStore,
       registrar: Registrar,
+      start: () => Unit | js.Promise[Unit],
+      stop: () => Unit | js.Promise[Unit],
       transportManager: TransportManager,
       upgrader: Upgrader
     ): Components = {
-      val __obj = js.Dynamic.literal(addressManager = addressManager.asInstanceOf[js.Any], connectionGater = connectionGater.asInstanceOf[js.Any], connectionManager = connectionManager.asInstanceOf[js.Any], contentRouting = contentRouting.asInstanceOf[js.Any], datastore = datastore.asInstanceOf[js.Any], dialer = dialer.asInstanceOf[js.Any], peerId = peerId.asInstanceOf[js.Any], peerRouting = peerRouting.asInstanceOf[js.Any], peerStore = peerStore.asInstanceOf[js.Any], registrar = registrar.asInstanceOf[js.Any], transportManager = transportManager.asInstanceOf[js.Any], upgrader = upgrader.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(addressManager = addressManager.asInstanceOf[js.Any], connectionGater = connectionGater.asInstanceOf[js.Any], connectionManager = connectionManager.asInstanceOf[js.Any], contentRouting = contentRouting.asInstanceOf[js.Any], datastore = datastore.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], isStarted = js.Any.fromFunction0(isStarted), peerId = peerId.asInstanceOf[js.Any], peerRouting = peerRouting.asInstanceOf[js.Any], peerStore = peerStore.asInstanceOf[js.Any], registrar = registrar.asInstanceOf[js.Any], start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop), transportManager = transportManager.asInstanceOf[js.Any], upgrader = upgrader.asInstanceOf[js.Any])
       __obj.asInstanceOf[Components]
     }
     
@@ -237,15 +120,24 @@ object distSrcComponentsMod {
       
       inline def setConnectionProtectorUndefined: Self = StObject.set(x, "connectionProtector", js.undefined)
       
-      inline def setContentRouting(value: ContentRouting): Self = StObject.set(x, "contentRouting", value.asInstanceOf[js.Any])
+      inline def setContentRouting(value: ContentRouting_): Self = StObject.set(x, "contentRouting", value.asInstanceOf[js.Any])
       
-      inline def setDatastore(value: Datastore): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
+      inline def setDatastore(
+        value: Datastore[
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object
+            ]
+      ): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
       
-      inline def setDht(value: DualDHT): Self = StObject.set(x, "dht", value.asInstanceOf[js.Any])
-      
-      inline def setDhtUndefined: Self = StObject.set(x, "dht", js.undefined)
-      
-      inline def setDialer(value: Dialer): Self = StObject.set(x, "dialer", value.asInstanceOf[js.Any])
+      inline def setEvents(value: EventEmitter[Libp2pEvents]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
       inline def setMetrics(value: Metrics): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
       
@@ -253,13 +145,9 @@ object distSrcComponentsMod {
       
       inline def setPeerId(value: PeerId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
       
-      inline def setPeerRouting(value: PeerRouting): Self = StObject.set(x, "peerRouting", value.asInstanceOf[js.Any])
+      inline def setPeerRouting(value: PeerRouting_): Self = StObject.set(x, "peerRouting", value.asInstanceOf[js.Any])
       
       inline def setPeerStore(value: PeerStore): Self = StObject.set(x, "peerStore", value.asInstanceOf[js.Any])
-      
-      inline def setPubsub(value: PubSub[PubSubEvents]): Self = StObject.set(x, "pubsub", value.asInstanceOf[js.Any])
-      
-      inline def setPubsubUndefined: Self = StObject.set(x, "pubsub", js.undefined)
       
       inline def setRegistrar(value: Registrar): Self = StObject.set(x, "registrar", value.asInstanceOf[js.Any])
       
@@ -279,23 +167,32 @@ object distSrcComponentsMod {
     
     var connectionProtector: js.UndefOr[ConnectionProtector] = js.undefined
     
-    var contentRouting: js.UndefOr[ContentRouting] = js.undefined
+    var contentRouting: js.UndefOr[ContentRouting_] = js.undefined
     
-    var datastore: js.UndefOr[Datastore] = js.undefined
+    var datastore: js.UndefOr[
+        Datastore[
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object
+        ]
+      ] = js.undefined
     
-    var dht: js.UndefOr[DualDHT] = js.undefined
-    
-    var dialer: js.UndefOr[Dialer] = js.undefined
+    var events: js.UndefOr[EventEmitter[Libp2pEvents]] = js.undefined
     
     var metrics: js.UndefOr[Metrics] = js.undefined
     
     var peerId: js.UndefOr[PeerId] = js.undefined
     
-    var peerRouting: js.UndefOr[PeerRouting] = js.undefined
+    var peerRouting: js.UndefOr[PeerRouting_] = js.undefined
     
     var peerStore: js.UndefOr[PeerStore] = js.undefined
-    
-    var pubsub: js.UndefOr[PubSub[PubSubEvents]] = js.undefined
     
     var registrar: js.UndefOr[Registrar] = js.undefined
     
@@ -329,21 +226,30 @@ object distSrcComponentsMod {
       
       inline def setConnectionProtectorUndefined: Self = StObject.set(x, "connectionProtector", js.undefined)
       
-      inline def setContentRouting(value: ContentRouting): Self = StObject.set(x, "contentRouting", value.asInstanceOf[js.Any])
+      inline def setContentRouting(value: ContentRouting_): Self = StObject.set(x, "contentRouting", value.asInstanceOf[js.Any])
       
       inline def setContentRoutingUndefined: Self = StObject.set(x, "contentRouting", js.undefined)
       
-      inline def setDatastore(value: Datastore): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
+      inline def setDatastore(
+        value: Datastore[
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object
+            ]
+      ): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
       
       inline def setDatastoreUndefined: Self = StObject.set(x, "datastore", js.undefined)
       
-      inline def setDht(value: DualDHT): Self = StObject.set(x, "dht", value.asInstanceOf[js.Any])
+      inline def setEvents(value: EventEmitter[Libp2pEvents]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      inline def setDhtUndefined: Self = StObject.set(x, "dht", js.undefined)
-      
-      inline def setDialer(value: Dialer): Self = StObject.set(x, "dialer", value.asInstanceOf[js.Any])
-      
-      inline def setDialerUndefined: Self = StObject.set(x, "dialer", js.undefined)
+      inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
       inline def setMetrics(value: Metrics): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
       
@@ -353,17 +259,13 @@ object distSrcComponentsMod {
       
       inline def setPeerIdUndefined: Self = StObject.set(x, "peerId", js.undefined)
       
-      inline def setPeerRouting(value: PeerRouting): Self = StObject.set(x, "peerRouting", value.asInstanceOf[js.Any])
+      inline def setPeerRouting(value: PeerRouting_): Self = StObject.set(x, "peerRouting", value.asInstanceOf[js.Any])
       
       inline def setPeerRoutingUndefined: Self = StObject.set(x, "peerRouting", js.undefined)
       
       inline def setPeerStore(value: PeerStore): Self = StObject.set(x, "peerStore", value.asInstanceOf[js.Any])
       
       inline def setPeerStoreUndefined: Self = StObject.set(x, "peerStore", js.undefined)
-      
-      inline def setPubsub(value: PubSub[PubSubEvents]): Self = StObject.set(x, "pubsub", value.asInstanceOf[js.Any])
-      
-      inline def setPubsubUndefined: Self = StObject.set(x, "pubsub", js.undefined)
       
       inline def setRegistrar(value: Registrar): Self = StObject.set(x, "registrar", value.asInstanceOf[js.Any])
       

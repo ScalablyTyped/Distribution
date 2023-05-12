@@ -14,6 +14,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MethodDeclaration
   extends StObject
      with FunctionLikeDeclarationBase
+     with LocalsContainer
+     with FlowContainer
      with FunctionLikeDeclaration
      with HasDecorators
      with HasJSDoc
@@ -30,6 +32,8 @@ trait MethodDeclaration
   
   @JSName("kind")
   val kind_MethodDeclaration: typings.typescript.mod.SyntaxKind.MethodDeclaration = js.native
+  
+  val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
   
   @JSName("name")
   val name_MethodDeclaration: PropertyName = js.native

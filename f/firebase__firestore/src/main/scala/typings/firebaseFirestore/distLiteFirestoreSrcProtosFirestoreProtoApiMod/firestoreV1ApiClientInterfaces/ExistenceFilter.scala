@@ -9,6 +9,8 @@ trait ExistenceFilter extends StObject {
   var count: js.UndefOr[Double] = js.undefined
   
   var targetId: js.UndefOr[Double] = js.undefined
+  
+  var unchangedNames: js.UndefOr[BloomFilter] = js.undefined
 }
 object ExistenceFilter {
   
@@ -27,5 +29,9 @@ object ExistenceFilter {
     inline def setTargetId(value: Double): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
     
     inline def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
+    
+    inline def setUnchangedNames(value: BloomFilter): Self = StObject.set(x, "unchangedNames", value.asInstanceOf[js.Any])
+    
+    inline def setUnchangedNamesUndefined: Self = StObject.set(x, "unchangedNames", js.undefined)
   }
 }

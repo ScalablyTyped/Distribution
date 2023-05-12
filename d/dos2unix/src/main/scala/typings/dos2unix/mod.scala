@@ -10,7 +10,6 @@ import typings.dos2unix.dos2unixStrings.processingDoterror
 import typings.dos2unix.dos2unixStrings.processingDotskip
 import typings.dos2unix.dos2unixStrings.processingDotstart
 import typings.dos2unix.dos2unixStrings.start
-import typings.glob.mod.IOptions
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -82,7 +81,9 @@ object mod {
   
   trait Options extends StObject {
     
-    var glob: js.UndefOr[IOptions] = js.undefined
+    var glob: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobOptions */ Any
+      ] = js.undefined
     
     var maxConcurrency: js.UndefOr[Double] = js.undefined
   }
@@ -96,7 +97,9 @@ object mod {
     @scala.inline
     implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
-      inline def setGlob(value: IOptions): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
+      inline def setGlob(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobOptions */ Any
+      ): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
       
       inline def setGlobUndefined: Self = StObject.set(x, "glob", js.undefined)
       

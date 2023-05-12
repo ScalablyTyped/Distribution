@@ -13,6 +13,8 @@ trait TypeVisitor extends StObject {
   def visitExpressionType(`type`: ExpressionType, context: Any): Any
   
   def visitMapType(`type`: MapType, context: Any): Any
+  
+  def visitTransplantedType(`type`: TransplantedType[Any], context: Any): Any
 }
 object TypeVisitor {
   
@@ -20,9 +22,10 @@ object TypeVisitor {
     visitArrayType: (ArrayType, Any) => Any,
     visitBuiltinType: (BuiltinType, Any) => Any,
     visitExpressionType: (ExpressionType, Any) => Any,
-    visitMapType: (MapType, Any) => Any
+    visitMapType: (MapType, Any) => Any,
+    visitTransplantedType: (TransplantedType[Any], Any) => Any
   ): TypeVisitor = {
-    val __obj = js.Dynamic.literal(visitArrayType = js.Any.fromFunction2(visitArrayType), visitBuiltinType = js.Any.fromFunction2(visitBuiltinType), visitExpressionType = js.Any.fromFunction2(visitExpressionType), visitMapType = js.Any.fromFunction2(visitMapType))
+    val __obj = js.Dynamic.literal(visitArrayType = js.Any.fromFunction2(visitArrayType), visitBuiltinType = js.Any.fromFunction2(visitBuiltinType), visitExpressionType = js.Any.fromFunction2(visitExpressionType), visitMapType = js.Any.fromFunction2(visitMapType), visitTransplantedType = js.Any.fromFunction2(visitTransplantedType))
     __obj.asInstanceOf[TypeVisitor]
   }
   
@@ -36,5 +39,7 @@ object TypeVisitor {
     inline def setVisitExpressionType(value: (ExpressionType, Any) => Any): Self = StObject.set(x, "visitExpressionType", js.Any.fromFunction2(value))
     
     inline def setVisitMapType(value: (MapType, Any) => Any): Self = StObject.set(x, "visitMapType", js.Any.fromFunction2(value))
+    
+    inline def setVisitTransplantedType(value: (TransplantedType[Any], Any) => Any): Self = StObject.set(x, "visitTransplantedType", js.Any.fromFunction2(value))
   }
 }

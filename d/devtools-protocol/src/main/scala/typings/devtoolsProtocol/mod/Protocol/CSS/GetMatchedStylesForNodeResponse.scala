@@ -18,6 +18,11 @@ trait GetMatchedStylesForNodeResponse extends StObject {
   var cssKeyframesRules: js.UndefOr[js.Array[CSSKeyframesRule]] = js.undefined
   
   /**
+    * A list of CSS position fallbacks matching this node.
+    */
+  var cssPositionFallbackRules: js.UndefOr[js.Array[CSSPositionFallbackRule]] = js.undefined
+  
+  /**
     * A chain of inherited styles (from the immediate node parent up to the DOM tree root).
     */
   var inherited: js.UndefOr[js.Array[InheritedStyleEntry]] = js.undefined
@@ -66,6 +71,12 @@ object GetMatchedStylesForNodeResponse {
     inline def setCssKeyframesRulesUndefined: Self = StObject.set(x, "cssKeyframesRules", js.undefined)
     
     inline def setCssKeyframesRulesVarargs(value: CSSKeyframesRule*): Self = StObject.set(x, "cssKeyframesRules", js.Array(value*))
+    
+    inline def setCssPositionFallbackRules(value: js.Array[CSSPositionFallbackRule]): Self = StObject.set(x, "cssPositionFallbackRules", value.asInstanceOf[js.Any])
+    
+    inline def setCssPositionFallbackRulesUndefined: Self = StObject.set(x, "cssPositionFallbackRules", js.undefined)
+    
+    inline def setCssPositionFallbackRulesVarargs(value: CSSPositionFallbackRule*): Self = StObject.set(x, "cssPositionFallbackRules", js.Array(value*))
     
     inline def setInherited(value: js.Array[InheritedStyleEntry]): Self = StObject.set(x, "inherited", value.asInstanceOf[js.Any])
     

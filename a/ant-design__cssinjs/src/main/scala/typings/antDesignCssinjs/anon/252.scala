@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ColumnRule
+import typings.csstype.mod.Property.MsScrollbarShadowColor
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `252` extends StObject {
   
   var value: js.UndefOr[
-    (ColumnRule[Double | String]) | (js.Array[
+    MsScrollbarShadowColor | (js.Array[
       (Extract[
         js.UndefOr[
-          (ColumnRule[Double | String]) | (js.Array[NonNullable[js.UndefOr[ColumnRule[Double | String]]]])
+          MsScrollbarShadowColor | js.Array[NonNullable[js.UndefOr[MsScrollbarShadowColor]]]
         ], 
         String
-      ]) | (NonNullable[js.UndefOr[ColumnRule[Double | String]]])
+      ]) | NonNullable[js.UndefOr[MsScrollbarShadowColor]]
     ])
   ] = js.native
 }

@@ -2,7 +2,7 @@ package typings.opentelemetrySdkTraceBase
 
 import typings.opentelemetryApi.buildSrcPropagationTextMapPropagatorMod.TextMapPropagator
 import typings.opentelemetryApi.buildSrcTraceTracerProviderMod.TracerProvider
-import typings.opentelemetryResources.mod.Resource
+import typings.opentelemetryResources.buildSrcIresourceMod.IResource
 import typings.opentelemetrySdkTraceBase.anon.SchemaUrl
 import typings.opentelemetrySdkTraceBase.buildSrcExportSpanExporterMod.SpanExporter
 import typings.opentelemetrySdkTraceBase.buildSrcSpanProcessorMod.SpanProcessor
@@ -69,7 +69,7 @@ object buildSrcBasicTracerProviderMod {
     def register(): Unit = js.native
     def register(config: SDKRegistrationConfig): Unit = js.native
     
-    val resource: Resource = js.native
+    val resource: IResource = js.native
     
     def shutdown(): js.Promise[Unit] = js.native
   }

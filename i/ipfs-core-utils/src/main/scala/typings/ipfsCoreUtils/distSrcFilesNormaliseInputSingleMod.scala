@@ -11,7 +11,15 @@ object distSrcFilesNormaliseInputSingleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def normaliseInput(input: ImportCandidate): AsyncGenerator[typings.ipfsUnixfsImporter.distSrcTypesMod.ImportCandidate, Unit, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("normaliseInput")(input.asInstanceOf[js.Any]).asInstanceOf[AsyncGenerator[typings.ipfsUnixfsImporter.distSrcTypesMod.ImportCandidate, Unit, Any]]
+  inline def normaliseInput(input: ImportCandidate): AsyncGenerator[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_types.ImportCandidate */ Any, 
+    Unit, 
+    Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("normaliseInput")(input.asInstanceOf[js.Any]).asInstanceOf[AsyncGenerator[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_types.ImportCandidate */ Any, 
+    Unit, 
+    Any
+  ]]
   
   type ImportCandidate = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.ImportCandidate */ Any
 }

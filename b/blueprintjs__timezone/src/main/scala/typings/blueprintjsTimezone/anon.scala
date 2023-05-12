@@ -6,7 +6,7 @@ import typings.blueprintjsCore.libEsmCommonPropsMod.MaybeElement
 import typings.blueprintjsCore.libEsmComponentsFormsInputGroupMod.InputGroupProps2
 import typings.blueprintjsCore.libEsmComponentsPopoverPopoverMod.PopoverInteractionKind
 import typings.blueprintjsCore.libEsmComponentsPopoverPopoverSharedPropsMod.PopoverPosition
-import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsIcons.libEsmGeneratedIcons16pxBlueprintIcons16Mod.BlueprintIcons16Id
 import typings.blueprintjsTimezone.blueprintjsTimezoneStrings.button
 import typings.blueprintjsTimezone.blueprintjsTimezoneStrings.reset
 import typings.blueprintjsTimezone.blueprintjsTimezoneStrings.submit
@@ -14,6 +14,7 @@ import typings.blueprintjsTimezone.libEsmComponentsTimezonePickerTimezoneDisplay
 import typings.popperJs.mod.Boundary
 import typings.popperJs.mod.Modifiers
 import typings.popperJs.mod.Placement
+import typings.react.mod.FocusEvent
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.HTMLProps
 import typings.react.mod.MouseEvent
@@ -21,7 +22,7 @@ import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
 import typings.react.mod.SyntheticEvent
-import typings.react.mod.global.JSX.Element
+import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
@@ -60,6 +61,8 @@ object anon {
     var minimal: js.UndefOr[Boolean] = js.undefined
     
     var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
+    
+    var onFocus: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLElement, Element], Unit]] = js.undefined
     
     var outlined: js.UndefOr[Boolean] = js.undefined
     
@@ -139,6 +142,10 @@ object anon {
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
+      inline def setOnFocus(value: /* event */ FocusEvent[HTMLElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      
+      inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      
       inline def setOutlined(value: Boolean): Self = StObject.set(x, "outlined", value.asInstanceOf[js.Any])
       
       inline def setOutlinedUndefined: Self = StObject.set(x, "outlined", js.undefined)
@@ -180,7 +187,7 @@ object anon {
     
     var className: js.UndefOr[String] = js.undefined
     
-    var content: js.UndefOr[String | Element] = js.undefined
+    var content: js.UndefOr[String | typings.react.mod.global.JSX.Element] = js.undefined
     
     var defaultIsOpen: js.UndefOr[Boolean] = js.undefined
     
@@ -242,14 +249,14 @@ object anon {
     
     var shouldReturnFocusOnClose: js.UndefOr[Boolean] = js.undefined
     
-    var target: js.UndefOr[String | Element] = js.undefined
+    var target: js.UndefOr[String | typings.react.mod.global.JSX.Element] = js.undefined
     
     var targetClassName: js.UndefOr[String] = js.undefined
     
     var targetProps: js.UndefOr[HTMLAttributes[HTMLElement]] = js.undefined
     
     var targetTagName: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsTimezone.blueprintjsTimezoneStrings.a, typings.blueprintjsTimezone.blueprintjsTimezoneStrings.abbr, typings.blueprintjsTimezone.blueprintjsTimezoneStrings.address */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.blueprintjsTimezone.blueprintjsTimezoneStrings.a, typings.blueprintjsTimezone.blueprintjsTimezoneStrings.abbr, typings.blueprintjsTimezone.blueprintjsTimezoneStrings.address */ Any
       ] = js.undefined
     
     var transitionDuration: js.UndefOr[Double] = js.undefined
@@ -257,7 +264,7 @@ object anon {
     var usePortal: js.UndefOr[Boolean] = js.undefined
     
     var wrapperTagName: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsTimezone.blueprintjsTimezoneStrings.a, typings.blueprintjsTimezone.blueprintjsTimezoneStrings.abbr, typings.blueprintjsTimezone.blueprintjsTimezoneStrings.address */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.blueprintjsTimezone.blueprintjsTimezoneStrings.a, typings.blueprintjsTimezone.blueprintjsTimezoneStrings.abbr, typings.blueprintjsTimezone.blueprintjsTimezoneStrings.address */ Any
       ] = js.undefined
   }
   object PartialIPopoverProps {
@@ -298,7 +305,7 @@ object anon {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setContent(value: String | Element): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String | typings.react.mod.global.JSX.Element): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
@@ -416,7 +423,7 @@ object anon {
       
       inline def setShouldReturnFocusOnCloseUndefined: Self = StObject.set(x, "shouldReturnFocusOnClose", js.undefined)
       
-      inline def setTarget(value: String | Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String | typings.react.mod.global.JSX.Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetClassName(value: String): Self = StObject.set(x, "targetClassName", value.asInstanceOf[js.Any])
       
@@ -427,7 +434,7 @@ object anon {
       inline def setTargetPropsUndefined: Self = StObject.set(x, "targetProps", js.undefined)
       
       inline def setTargetTagName(
-        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsTimezone.blueprintjsTimezoneStrings.a, typings.blueprintjsTimezone.blueprintjsTimezoneStrings.abbr, typings.blueprintjsTimezone.blueprintjsTimezoneStrings.address */ Any
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.blueprintjsTimezone.blueprintjsTimezoneStrings.a, typings.blueprintjsTimezone.blueprintjsTimezoneStrings.abbr, typings.blueprintjsTimezone.blueprintjsTimezoneStrings.address */ Any
       ): Self = StObject.set(x, "targetTagName", value.asInstanceOf[js.Any])
       
       inline def setTargetTagNameUndefined: Self = StObject.set(x, "targetTagName", js.undefined)
@@ -443,7 +450,7 @@ object anon {
       inline def setUsePortalUndefined: Self = StObject.set(x, "usePortal", js.undefined)
       
       inline def setWrapperTagName(
-        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsTimezone.blueprintjsTimezoneStrings.a, typings.blueprintjsTimezone.blueprintjsTimezoneStrings.abbr, typings.blueprintjsTimezone.blueprintjsTimezoneStrings.address */ Any
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.blueprintjsTimezone.blueprintjsTimezoneStrings.a, typings.blueprintjsTimezone.blueprintjsTimezoneStrings.abbr, typings.blueprintjsTimezone.blueprintjsTimezoneStrings.address */ Any
       ): Self = StObject.set(x, "wrapperTagName", value.asInstanceOf[js.Any])
       
       inline def setWrapperTagNameUndefined: Self = StObject.set(x, "wrapperTagName", js.undefined)

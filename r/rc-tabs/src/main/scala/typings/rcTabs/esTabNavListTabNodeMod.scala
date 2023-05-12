@@ -1,29 +1,27 @@
 package typings.rcTabs
 
-import org.scalablytyped.runtime.Shortcut
 import typings.rcTabs.esInterfaceMod.EditableConfig
 import typings.rcTabs.esInterfaceMod.Tab
 import typings.react.mod.CSSProperties
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
-import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.react.mod.RefAttributes
 import typings.std.Element
-import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esTabNavListTabNodeMod extends Shortcut {
+object esTabNavListTabNodeMod {
   
-  @JSImport("rc-tabs/es/TabNavList/TabNode", JSImport.Default)
+  @JSImport("rc-tabs/es/TabNavList/TabNode", JSImport.Namespace)
   @js.native
-  val default: ForwardRefExoticComponent[TabNodeProps & RefAttributes[HTMLDivElement]] = js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(param0: TabNodeProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   trait TabNodeProps extends StObject {
     
@@ -40,8 +38,6 @@ object esTabNavListTabNodeMod extends Shortcut {
       ] = js.undefined
     
     var onFocus: FocusEventHandler[Element]
-    
-    def onRemove(): Unit
     
     var onResize: js.UndefOr[
         js.Function4[/* width */ Double, /* height */ Double, /* left */ Double, /* top */ Double, Unit]
@@ -65,11 +61,10 @@ object esTabNavListTabNodeMod extends Shortcut {
       active: Boolean,
       id: String,
       onFocus: FocusEvent[Element, Element] => Unit,
-      onRemove: () => Unit,
       prefixCls: String,
       tab: Tab
     ): TabNodeProps = {
-      val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], onFocus = js.Any.fromFunction1(onFocus), onRemove = js.Any.fromFunction0(onRemove), prefixCls = prefixCls.asInstanceOf[js.Any], tab = tab.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], onFocus = js.Any.fromFunction1(onFocus), prefixCls = prefixCls.asInstanceOf[js.Any], tab = tab.asInstanceOf[js.Any])
       __obj.asInstanceOf[TabNodeProps]
     }
     
@@ -93,8 +88,6 @@ object esTabNavListTabNodeMod extends Shortcut {
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
       inline def setOnFocus(value: FocusEvent[Element, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
-      
-      inline def setOnRemove(value: () => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction0(value))
       
       inline def setOnResize(value: (/* width */ Double, /* height */ Double, /* left */ Double, /* top */ Double) => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction4(value))
       
@@ -121,9 +114,4 @@ object esTabNavListTabNodeMod extends Shortcut {
       inline def setTab(value: Tab): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
     }
   }
-  
-  type _To = ForwardRefExoticComponent[TabNodeProps & RefAttributes[HTMLDivElement]]
-  
-  /* This means you don't have to write `default`, but can instead just say `esTabNavListTabNodeMod.foo` */
-  override def _to: ForwardRefExoticComponent[TabNodeProps & RefAttributes[HTMLDivElement]] = default
 }

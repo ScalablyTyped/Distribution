@@ -16,7 +16,7 @@ object libIconsContainerFilledMod extends Shortcut {
   @js.native
   trait ContainerFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_ContainerFilledIconType: String = js.native

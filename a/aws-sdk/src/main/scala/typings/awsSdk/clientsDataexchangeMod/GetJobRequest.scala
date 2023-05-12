@@ -9,11 +9,11 @@ trait GetJobRequest extends StObject {
   /**
     * The unique identifier for a job.
     */
-  var JobId: string
+  var JobId: _String
 }
 object GetJobRequest {
   
-  inline def apply(JobId: string): GetJobRequest = {
+  inline def apply(JobId: _String): GetJobRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetJobRequest]
   }
@@ -21,6 +21,6 @@ object GetJobRequest {
   @scala.inline
   implicit open class MutableBuilder[Self <: GetJobRequest] (val x: Self) extends AnyVal {
     
-    inline def setJobId(value: string): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: _String): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
   }
 }

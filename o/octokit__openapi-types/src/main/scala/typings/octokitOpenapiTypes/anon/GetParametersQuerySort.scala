@@ -6,11 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersQuerySort extends StObject {
   
-  /** Lists repositories for the specified organization. */
+  /**
+    * List organization repositories
+    * @description Lists repositories for the specified organization.
+    *
+    * **Note:** In order to see the `security_and_analysis` block for a repository you must have admin permissions for the repository or be an owner or security manager for the organization that owns the repository. For more information, see "[Managing security managers in your organization](https://docs.github.com/organizations/managing-peoples-access-to-your-organization-with-roles/managing-security-managers-in-your-organization)."
+    */
   var get: ParametersQuerySort
   
   /**
-    * Creates a new repository in the specified organization. The authenticated user must be a member of the organization.
+    * Create an organization repository
+    * @description Creates a new repository in the specified organization. The authenticated user must be a member of the organization.
     *
     * **OAuth scope requirements**
     *

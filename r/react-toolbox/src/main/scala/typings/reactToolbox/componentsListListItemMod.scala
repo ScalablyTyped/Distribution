@@ -21,7 +21,7 @@ object componentsListListItemMod {
     def this(props: ListItemProps & ListItemLayoutProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ListItemProps & ListItemLayoutProps, context: Any) = this()
   }

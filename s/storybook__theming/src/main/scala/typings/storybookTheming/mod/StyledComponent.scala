@@ -10,7 +10,8 @@ import typings.react.mod.ButtonHTMLAttributes
 import typings.react.mod.CanvasHTMLAttributes
 import typings.react.mod.ColHTMLAttributes
 import typings.react.mod.ColgroupHTMLAttributes
-import typings.react.mod.ComponentType
+import typings.react.mod.ComponentClass
+import typings.react.mod.ComponentState
 import typings.react.mod.DataHTMLAttributes
 import typings.react.mod.DelHTMLAttributes
 import typings.react.mod.DetailedHTMLProps
@@ -42,7 +43,9 @@ import typings.react.mod.OutputHTMLAttributes
 import typings.react.mod.ParamHTMLAttributes
 import typings.react.mod.ProgressHTMLAttributes
 import typings.react.mod.QuoteHTMLAttributes
+import typings.react.mod.SVGLineElementAttributes
 import typings.react.mod.SVGProps
+import typings.react.mod.SVGTextElementAttributes
 import typings.react.mod.ScriptHTMLAttributes
 import typings.react.mod.SelectHTMLAttributes
 import typings.react.mod.SlotHTMLAttributes
@@ -173,7 +176,8 @@ import typings.std.SVGTextElement
 import typings.std.SVGTextPathElement
 import typings.std.SVGUseElement
 import typings.std.SVGViewElement
-import typings.storybookTheming.anon.`0`
+import typings.storybookTheming.anon.Ref
+import typings.storybookTheming.distCreateC2b2ce6dMod.ComponentSelector
 import typings.storybookTheming.storybookThemingStrings.`object`
 import typings.storybookTheming.storybookThemingStrings.`var`
 import typings.storybookTheming.storybookThemingStrings.a_
@@ -197,6 +201,7 @@ import typings.storybookTheming.storybookThemingStrings.br
 import typings.storybookTheming.storybookThemingStrings.button
 import typings.storybookTheming.storybookThemingStrings.canvas
 import typings.storybookTheming.storybookThemingStrings.caption
+import typings.storybookTheming.storybookThemingStrings.center
 import typings.storybookTheming.storybookThemingStrings.circle
 import typings.storybookTheming.storybookThemingStrings.cite
 import typings.storybookTheming.storybookThemingStrings.clipPath
@@ -337,7 +342,6 @@ import typings.storybookTheming.storybookThemingStrings.textarea
 import typings.storybookTheming.storybookThemingStrings.tfoot
 import typings.storybookTheming.storybookThemingStrings.th
 import typings.storybookTheming.storybookThemingStrings.thead
-import typings.storybookTheming.storybookThemingStrings.theme
 import typings.storybookTheming.storybookThemingStrings.time
 import typings.storybookTheming.storybookThemingStrings.title
 import typings.storybookTheming.storybookThemingStrings.tr
@@ -354,632 +358,849 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * @typeparam ComponentProps  Props which will be included when withComponent is called
+  * @typeparam SpecificComponentProps  Props which will *not* be included when withComponent is called
+  */
 @js.native
-trait StyledComponent[InnerProps, StyleProps, Theme /* <: js.Object */]
+trait StyledComponent[ComponentProps /* <: js.Object */, SpecificComponentProps /* <: js.Object */, JSXProps /* <: js.Object */]
   extends StObject
-     with FunctionComponent[InnerProps & (DistributiveOmit[StyleProps, theme]) & `0`[Theme]]
+     with FunctionComponent[ComponentProps & SpecificComponentProps & JSXProps]
      with ComponentSelector {
   
-  def withComponent[Tag /* <: ComponentType[Any] */](tag: Tag): StyledComponent[PropsOf[Tag], StyleProps, Theme] = js.native
-  /**
-    * @desc this method is type-unsafe
-    */
+  def withComponent(component: ComponentClass[typings.react.mod.ComponentProps[Any], ComponentState]): StyledComponent[
+    ComponentProps & (PropsOf[ComponentClass[typings.react.mod.ComponentProps[Any], ComponentState]]), 
+    js.Object, 
+    js.Object
+  ] = js.native
+  def withComponent(component: FunctionComponent[typings.react.mod.ComponentProps[Any]]): StyledComponent[
+    ComponentProps & PropsOf[FunctionComponent[typings.react.mod.ComponentProps[Any]]], 
+    js.Object, 
+    js.Object
+  ] = js.native
+  def withComponent[C /* <: ComponentClass[typings.react.mod.ComponentProps[C], ComponentState] */](component: C): StyledComponent[ComponentProps & PropsOf[C], js.Object, Ref[C]] = js.native
   @JSName("withComponent")
   def withComponent_a(tag: a_): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_abbr(tag: abbr): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_abbr(tag: abbr): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
-  def withComponent_address(tag: address): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_address(tag: address): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
-  def withComponent_animate(tag: animate): StyledComponent[SVGProps[SVGElement], StyleProps, Theme] = js.native
+  def withComponent_animate(tag: animate): StyledComponent[ComponentProps, SVGProps[SVGElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_animateMotion(tag: animateMotion): StyledComponent[SVGProps[SVGElement], StyleProps, Theme] = js.native
+  def withComponent_animateMotion(tag: animateMotion): StyledComponent[ComponentProps, SVGProps[SVGElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_animateTransform(tag: animateTransform): StyledComponent[SVGProps[SVGElement], StyleProps, Theme] = js.native
+  def withComponent_animateTransform(tag: animateTransform): StyledComponent[ComponentProps, SVGProps[SVGElement], js.Object] = js.native
   @JSName("withComponent")
   def withComponent_area(tag: area): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[AreaHTMLAttributes[HTMLAreaElement], HTMLAreaElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_article(tag: article): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_article(tag: article): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
-  def withComponent_aside(tag: aside): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_aside(tag: aside): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
   def withComponent_audio(tag: audio): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[AudioHTMLAttributes[HTMLAudioElement], HTMLAudioElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_b(tag: b): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_b(tag: b): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
   def withComponent_base(tag: base): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[BaseHTMLAttributes[HTMLBaseElement], HTMLBaseElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_bdi(tag: bdi): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_bdi(tag: bdi): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
-  def withComponent_bdo(tag: bdo): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_bdo(tag: bdo): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
-  def withComponent_big(tag: big): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_big(tag: big): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
   def withComponent_blockquote(tag: blockquote): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_body(tag: body): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[HTMLAttributes[HTMLBodyElement], HTMLBodyElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_br(tag: br): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLBRElement], HTMLBRElement], StyleProps, Theme] = js.native
+  def withComponent_br(tag: br): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLBRElement], HTMLBRElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
   def withComponent_button(tag: button): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_canvas(tag: canvas): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[CanvasHTMLAttributes[HTMLCanvasElement], HTMLCanvasElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_caption(tag: caption): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_caption(tag: caption): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
-  def withComponent_circle(tag: circle): StyledComponent[SVGProps[SVGCircleElement], StyleProps, Theme] = js.native
+  def withComponent_center(tag: center): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
-  def withComponent_cite(tag: cite): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_circle(tag: circle): StyledComponent[ComponentProps, SVGProps[SVGCircleElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_clipPath(tag: clipPath): StyledComponent[SVGProps[SVGClipPathElement], StyleProps, Theme] = js.native
+  def withComponent_cite(tag: cite): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
-  def withComponent_code(tag: code): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_clipPath(tag: clipPath): StyledComponent[ComponentProps, SVGProps[SVGClipPathElement], js.Object] = js.native
+  @JSName("withComponent")
+  def withComponent_code(tag: code): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
   def withComponent_col(tag: col): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[ColHTMLAttributes[HTMLTableColElement], HTMLTableColElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_colgroup(tag: colgroup): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[ColgroupHTMLAttributes[HTMLTableColElement], HTMLTableColElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_data(tag: data): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[DataHTMLAttributes[HTMLDataElement], HTMLDataElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_datalist(tag: datalist): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[HTMLAttributes[HTMLDataListElement], HTMLDataListElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_dd(tag: dd): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_dd(tag: dd): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
-  def withComponent_defs(tag: defs): StyledComponent[SVGProps[SVGDefsElement], StyleProps, Theme] = js.native
+  def withComponent_defs(tag: defs): StyledComponent[ComponentProps, SVGProps[SVGDefsElement], js.Object] = js.native
   @JSName("withComponent")
   def withComponent_del(tag: del): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[DelHTMLAttributes[HTMLModElement], HTMLModElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_desc(tag: desc): StyledComponent[SVGProps[SVGDescElement], StyleProps, Theme] = js.native
+  def withComponent_desc(tag: desc): StyledComponent[ComponentProps, SVGProps[SVGDescElement], js.Object] = js.native
   @JSName("withComponent")
   def withComponent_details(tag: details): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[DetailsHTMLAttributes[HTMLDetailsElement], HTMLDetailsElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_dfn(tag: dfn): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_dfn(tag: dfn): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
   def withComponent_dialog(tag: dialog): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[DialogHTMLAttributes[HTMLDialogElement], HTMLDialogElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_div(tag: div): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], StyleProps, Theme] = js.native
+  def withComponent_div(tag: div): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
   def withComponent_dl(tag: dl): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[HTMLAttributes[HTMLDListElement], HTMLDListElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_dt(tag: dt): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_dt(tag: dt): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
-  def withComponent_ellipse(tag: ellipse): StyledComponent[SVGProps[SVGEllipseElement], StyleProps, Theme] = js.native
+  def withComponent_ellipse(tag: ellipse): StyledComponent[ComponentProps, SVGProps[SVGEllipseElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_em(tag: em): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_em(tag: em): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
   def withComponent_embed(tag: embed): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[EmbedHTMLAttributes[HTMLEmbedElement], HTMLEmbedElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_feBlend(tag: feBlend): StyledComponent[SVGProps[SVGFEBlendElement], StyleProps, Theme] = js.native
+  def withComponent_feBlend(tag: feBlend): StyledComponent[ComponentProps, SVGProps[SVGFEBlendElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_feColorMatrix(tag: feColorMatrix): StyledComponent[SVGProps[SVGFEColorMatrixElement], StyleProps, Theme] = js.native
+  def withComponent_feColorMatrix(tag: feColorMatrix): StyledComponent[ComponentProps, SVGProps[SVGFEColorMatrixElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_feComponentTransfer(tag: feComponentTransfer): StyledComponent[SVGProps[SVGFEComponentTransferElement], StyleProps, Theme] = js.native
+  def withComponent_feComponentTransfer(tag: feComponentTransfer): StyledComponent[ComponentProps, SVGProps[SVGFEComponentTransferElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_feComposite(tag: feComposite): StyledComponent[SVGProps[SVGFECompositeElement], StyleProps, Theme] = js.native
+  def withComponent_feComposite(tag: feComposite): StyledComponent[ComponentProps, SVGProps[SVGFECompositeElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_feConvolveMatrix(tag: feConvolveMatrix): StyledComponent[SVGProps[SVGFEConvolveMatrixElement], StyleProps, Theme] = js.native
+  def withComponent_feConvolveMatrix(tag: feConvolveMatrix): StyledComponent[ComponentProps, SVGProps[SVGFEConvolveMatrixElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_feDiffuseLighting(tag: feDiffuseLighting): StyledComponent[SVGProps[SVGFEDiffuseLightingElement], StyleProps, Theme] = js.native
+  def withComponent_feDiffuseLighting(tag: feDiffuseLighting): StyledComponent[ComponentProps, SVGProps[SVGFEDiffuseLightingElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_feDisplacementMap(tag: feDisplacementMap): StyledComponent[SVGProps[SVGFEDisplacementMapElement], StyleProps, Theme] = js.native
+  def withComponent_feDisplacementMap(tag: feDisplacementMap): StyledComponent[ComponentProps, SVGProps[SVGFEDisplacementMapElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_feDistantLight(tag: feDistantLight): StyledComponent[SVGProps[SVGFEDistantLightElement], StyleProps, Theme] = js.native
+  def withComponent_feDistantLight(tag: feDistantLight): StyledComponent[ComponentProps, SVGProps[SVGFEDistantLightElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_feDropShadow(tag: feDropShadow): StyledComponent[SVGProps[SVGFEDropShadowElement], StyleProps, Theme] = js.native
+  def withComponent_feDropShadow(tag: feDropShadow): StyledComponent[ComponentProps, SVGProps[SVGFEDropShadowElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_feFlood(tag: feFlood): StyledComponent[SVGProps[SVGFEFloodElement], StyleProps, Theme] = js.native
+  def withComponent_feFlood(tag: feFlood): StyledComponent[ComponentProps, SVGProps[SVGFEFloodElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_feFuncA(tag: feFuncA): StyledComponent[SVGProps[SVGFEFuncAElement], StyleProps, Theme] = js.native
+  def withComponent_feFuncA(tag: feFuncA): StyledComponent[ComponentProps, SVGProps[SVGFEFuncAElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_feFuncB(tag: feFuncB): StyledComponent[SVGProps[SVGFEFuncBElement], StyleProps, Theme] = js.native
+  def withComponent_feFuncB(tag: feFuncB): StyledComponent[ComponentProps, SVGProps[SVGFEFuncBElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_feFuncG(tag: feFuncG): StyledComponent[SVGProps[SVGFEFuncGElement], StyleProps, Theme] = js.native
+  def withComponent_feFuncG(tag: feFuncG): StyledComponent[ComponentProps, SVGProps[SVGFEFuncGElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_feFuncR(tag: feFuncR): StyledComponent[SVGProps[SVGFEFuncRElement], StyleProps, Theme] = js.native
+  def withComponent_feFuncR(tag: feFuncR): StyledComponent[ComponentProps, SVGProps[SVGFEFuncRElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_feGaussianBlur(tag: feGaussianBlur): StyledComponent[SVGProps[SVGFEGaussianBlurElement], StyleProps, Theme] = js.native
+  def withComponent_feGaussianBlur(tag: feGaussianBlur): StyledComponent[ComponentProps, SVGProps[SVGFEGaussianBlurElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_feImage(tag: feImage): StyledComponent[SVGProps[SVGFEImageElement], StyleProps, Theme] = js.native
+  def withComponent_feImage(tag: feImage): StyledComponent[ComponentProps, SVGProps[SVGFEImageElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_feMerge(tag: feMerge): StyledComponent[SVGProps[SVGFEMergeElement], StyleProps, Theme] = js.native
+  def withComponent_feMerge(tag: feMerge): StyledComponent[ComponentProps, SVGProps[SVGFEMergeElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_feMergeNode(tag: feMergeNode): StyledComponent[SVGProps[SVGFEMergeNodeElement], StyleProps, Theme] = js.native
+  def withComponent_feMergeNode(tag: feMergeNode): StyledComponent[ComponentProps, SVGProps[SVGFEMergeNodeElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_feMorphology(tag: feMorphology): StyledComponent[SVGProps[SVGFEMorphologyElement], StyleProps, Theme] = js.native
+  def withComponent_feMorphology(tag: feMorphology): StyledComponent[ComponentProps, SVGProps[SVGFEMorphologyElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_feOffset(tag: feOffset): StyledComponent[SVGProps[SVGFEOffsetElement], StyleProps, Theme] = js.native
+  def withComponent_feOffset(tag: feOffset): StyledComponent[ComponentProps, SVGProps[SVGFEOffsetElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_fePointLight(tag: fePointLight): StyledComponent[SVGProps[SVGFEPointLightElement], StyleProps, Theme] = js.native
+  def withComponent_fePointLight(tag: fePointLight): StyledComponent[ComponentProps, SVGProps[SVGFEPointLightElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_feSpecularLighting(tag: feSpecularLighting): StyledComponent[SVGProps[SVGFESpecularLightingElement], StyleProps, Theme] = js.native
+  def withComponent_feSpecularLighting(tag: feSpecularLighting): StyledComponent[ComponentProps, SVGProps[SVGFESpecularLightingElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_feSpotLight(tag: feSpotLight): StyledComponent[SVGProps[SVGFESpotLightElement], StyleProps, Theme] = js.native
+  def withComponent_feSpotLight(tag: feSpotLight): StyledComponent[ComponentProps, SVGProps[SVGFESpotLightElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_feTile(tag: feTile): StyledComponent[SVGProps[SVGFETileElement], StyleProps, Theme] = js.native
+  def withComponent_feTile(tag: feTile): StyledComponent[ComponentProps, SVGProps[SVGFETileElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_feTurbulence(tag: feTurbulence): StyledComponent[SVGProps[SVGFETurbulenceElement], StyleProps, Theme] = js.native
+  def withComponent_feTurbulence(tag: feTurbulence): StyledComponent[ComponentProps, SVGProps[SVGFETurbulenceElement], js.Object] = js.native
   @JSName("withComponent")
   def withComponent_fieldset(tag: fieldset): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[FieldsetHTMLAttributes[HTMLFieldSetElement], HTMLFieldSetElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_figcaption(tag: figcaption): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_figcaption(tag: figcaption): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
-  def withComponent_figure(tag: figure): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_figure(tag: figure): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
-  def withComponent_filter(tag: filter): StyledComponent[SVGProps[SVGFilterElement], StyleProps, Theme] = js.native
+  def withComponent_filter(tag: filter): StyledComponent[ComponentProps, SVGProps[SVGFilterElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_footer(tag: footer): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_footer(tag: footer): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
-  def withComponent_foreignObject(tag: foreignObject): StyledComponent[SVGProps[SVGForeignObjectElement], StyleProps, Theme] = js.native
+  def withComponent_foreignObject(tag: foreignObject): StyledComponent[ComponentProps, SVGProps[SVGForeignObjectElement], js.Object] = js.native
   @JSName("withComponent")
   def withComponent_form(tag: form): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_g(tag: g): StyledComponent[SVGProps[SVGGElement], StyleProps, Theme] = js.native
+  def withComponent_g(tag: g): StyledComponent[ComponentProps, SVGProps[SVGGElement], js.Object] = js.native
   @JSName("withComponent")
   def withComponent_h1(tag: h1): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_h2(tag: h2): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_h3(tag: h3): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_h4(tag: h4): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_h5(tag: h5): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_h6(tag: h6): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_head(tag: head): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[HTMLAttributes[HTMLHeadElement], HTMLHeadElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_header(tag: header): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_header(tag: header): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
-  def withComponent_hgroup(tag: hgroup): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_hgroup(tag: hgroup): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
-  def withComponent_hr(tag: hr): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLHRElement], HTMLHRElement], StyleProps, Theme] = js.native
+  def withComponent_hr(tag: hr): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLHRElement], HTMLHRElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
   def withComponent_html(tag: html): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[HtmlHTMLAttributes[HTMLHtmlElement], HTMLHtmlElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_i(tag: i_): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_i(tag: i_): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
   def withComponent_iframe(tag: iframe): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[IframeHTMLAttributes[HTMLIFrameElement], HTMLIFrameElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_image(tag: image): StyledComponent[SVGProps[SVGImageElement], StyleProps, Theme] = js.native
+  def withComponent_image(tag: image): StyledComponent[ComponentProps, SVGProps[SVGImageElement], js.Object] = js.native
   @JSName("withComponent")
   def withComponent_img(tag: img): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_input(tag: input): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_ins(tag: ins): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[InsHTMLAttributes[HTMLModElement], HTMLModElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_kbd(tag: kbd): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_kbd(tag: kbd): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
-  def withComponent_keygen(tag: keygen): StyledComponent[DetailedHTMLProps[KeygenHTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_keygen(tag: keygen): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[KeygenHTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
   def withComponent_label(tag: label): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[LabelHTMLAttributes[HTMLLabelElement], HTMLLabelElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_legend(tag: legend): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[HTMLAttributes[HTMLLegendElement], HTMLLegendElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_li(tag: li): StyledComponent[DetailedHTMLProps[LiHTMLAttributes[HTMLLIElement], HTMLLIElement], StyleProps, Theme] = js.native
+  def withComponent_li(tag: li): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[LiHTMLAttributes[HTMLLIElement], HTMLLIElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
-  def withComponent_line(tag: line): StyledComponent[SVGProps[SVGLineElement], StyleProps, Theme] = js.native
+  def withComponent_line(tag: line): StyledComponent[ComponentProps, SVGLineElementAttributes[SVGLineElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_linearGradient(tag: linearGradient): StyledComponent[SVGProps[SVGLinearGradientElement], StyleProps, Theme] = js.native
+  def withComponent_linearGradient(tag: linearGradient): StyledComponent[ComponentProps, SVGProps[SVGLinearGradientElement], js.Object] = js.native
   @JSName("withComponent")
   def withComponent_link(tag: link): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[LinkHTMLAttributes[HTMLLinkElement], HTMLLinkElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_main(tag: main): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_main(tag: main): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
   def withComponent_map(tag: map): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[MapHTMLAttributes[HTMLMapElement], HTMLMapElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_mark(tag: mark): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_mark(tag: mark): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
-  def withComponent_marker(tag: marker): StyledComponent[SVGProps[SVGMarkerElement], StyleProps, Theme] = js.native
+  def withComponent_marker(tag: marker): StyledComponent[ComponentProps, SVGProps[SVGMarkerElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_mask(tag: mask): StyledComponent[SVGProps[SVGMaskElement], StyleProps, Theme] = js.native
+  def withComponent_mask(tag: mask): StyledComponent[ComponentProps, SVGProps[SVGMaskElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_menu(tag: menu_): StyledComponent[DetailedHTMLProps[MenuHTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_menu(tag: menu_): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[MenuHTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
-  def withComponent_menuitem(tag: menuitem): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_menuitem(tag: menuitem): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
   def withComponent_meta(tag: meta): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_metadata(tag: metadata): StyledComponent[SVGProps[SVGMetadataElement], StyleProps, Theme] = js.native
+  def withComponent_metadata(tag: metadata): StyledComponent[ComponentProps, SVGProps[SVGMetadataElement], js.Object] = js.native
   @JSName("withComponent")
   def withComponent_meter(tag: meter): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[MeterHTMLAttributes[HTMLMeterElement], HTMLMeterElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_mpath(tag: mpath): StyledComponent[SVGProps[SVGElement], StyleProps, Theme] = js.native
+  def withComponent_mpath(tag: mpath): StyledComponent[ComponentProps, SVGProps[SVGElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_nav(tag: nav): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_nav(tag: nav): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
-  def withComponent_noindex(tag: noindex): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_noindex(tag: noindex): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
-  def withComponent_noscript(tag: noscript): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_noscript(tag: noscript): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
   def withComponent_object(tag: `object`): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[ObjectHTMLAttributes[HTMLObjectElement], HTMLObjectElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_ol(tag: ol): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[OlHTMLAttributes[HTMLOListElement], HTMLOListElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_optgroup(tag: optgroup): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[OptgroupHTMLAttributes[HTMLOptGroupElement], HTMLOptGroupElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_option(tag: option): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[OptionHTMLAttributes[HTMLOptionElement], HTMLOptionElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_output(tag: output): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[OutputHTMLAttributes[HTMLOutputElement], HTMLOutputElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_p(tag: p): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_param(tag: param): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[ParamHTMLAttributes[HTMLParamElement], HTMLParamElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_path(tag: path): StyledComponent[SVGProps[SVGPathElement], StyleProps, Theme] = js.native
+  def withComponent_path(tag: path): StyledComponent[ComponentProps, SVGProps[SVGPathElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_pattern(tag: pattern): StyledComponent[SVGProps[SVGPatternElement], StyleProps, Theme] = js.native
+  def withComponent_pattern(tag: pattern): StyledComponent[ComponentProps, SVGProps[SVGPatternElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_picture(tag: picture): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_picture(tag: picture): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
-  def withComponent_polygon(tag: polygon): StyledComponent[SVGProps[SVGPolygonElement], StyleProps, Theme] = js.native
+  def withComponent_polygon(tag: polygon): StyledComponent[ComponentProps, SVGProps[SVGPolygonElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_polyline(tag: polyline): StyledComponent[SVGProps[SVGPolylineElement], StyleProps, Theme] = js.native
+  def withComponent_polyline(tag: polyline): StyledComponent[ComponentProps, SVGProps[SVGPolylineElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_pre(tag: pre): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLPreElement], HTMLPreElement], StyleProps, Theme] = js.native
+  def withComponent_pre(tag: pre): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLPreElement], HTMLPreElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
   def withComponent_progress(tag: progress): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[ProgressHTMLAttributes[HTMLProgressElement], HTMLProgressElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_q(tag: q): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[QuoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_radialGradient(tag: radialGradient): StyledComponent[SVGProps[SVGRadialGradientElement], StyleProps, Theme] = js.native
+  def withComponent_radialGradient(tag: radialGradient): StyledComponent[ComponentProps, SVGProps[SVGRadialGradientElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_rect(tag: rect): StyledComponent[SVGProps[SVGRectElement], StyleProps, Theme] = js.native
+  def withComponent_rect(tag: rect): StyledComponent[ComponentProps, SVGProps[SVGRectElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_rp(tag: rp): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_rp(tag: rp): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
-  def withComponent_rt(tag: rt): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_rt(tag: rt): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
-  def withComponent_ruby(tag: ruby): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_ruby(tag: ruby): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
-  def withComponent_s(tag: s): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_s(tag: s): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
-  def withComponent_samp(tag: samp): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_samp(tag: samp): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
   def withComponent_script(tag: script): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[ScriptHTMLAttributes[HTMLScriptElement], HTMLScriptElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_section(tag: section): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_section(tag: section): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
   def withComponent_select(tag: select): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[SelectHTMLAttributes[HTMLSelectElement], HTMLSelectElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_slot(tag: slot): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[SlotHTMLAttributes[HTMLSlotElement], HTMLSlotElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_small(tag: small): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_small(tag: small): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
   def withComponent_source(tag: source): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[SourceHTMLAttributes[HTMLSourceElement], HTMLSourceElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_span(tag: span): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[HTMLAttributes[HTMLSpanElement], HTMLSpanElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_stop(tag: stop): StyledComponent[SVGProps[SVGStopElement], StyleProps, Theme] = js.native
+  def withComponent_stop(tag: stop): StyledComponent[ComponentProps, SVGProps[SVGStopElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_strong(tag: strong): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_strong(tag: strong): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
   def withComponent_style(tag: style): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[StyleHTMLAttributes[HTMLStyleElement], HTMLStyleElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_sub(tag: sub): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_sub(tag: sub): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
-  def withComponent_summary(tag: summary): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_summary(tag: summary): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
-  def withComponent_sup(tag: sup): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_sup(tag: sup): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
-  def withComponent_svg(tag: svg): StyledComponent[SVGProps[SVGSVGElement], StyleProps, Theme] = js.native
+  def withComponent_svg(tag: svg): StyledComponent[ComponentProps, SVGProps[SVGSVGElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_switch(tag: switch): StyledComponent[SVGProps[SVGSwitchElement], StyleProps, Theme] = js.native
+  def withComponent_switch(tag: switch): StyledComponent[ComponentProps, SVGProps[SVGSwitchElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_symbol(tag: symbol): StyledComponent[SVGProps[SVGSymbolElement], StyleProps, Theme] = js.native
+  def withComponent_symbol(tag: symbol): StyledComponent[ComponentProps, SVGProps[SVGSymbolElement], js.Object] = js.native
   @JSName("withComponent")
   def withComponent_table(tag: table): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_tbody(tag: tbody): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_td(tag: td): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_template(tag: template): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[HTMLAttributes[HTMLTemplateElement], HTMLTemplateElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_text(tag: text): StyledComponent[SVGProps[SVGTextElement], StyleProps, Theme] = js.native
+  def withComponent_text(tag: text): StyledComponent[ComponentProps, SVGTextElementAttributes[SVGTextElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_textPath(tag: textPath): StyledComponent[SVGProps[SVGTextPathElement], StyleProps, Theme] = js.native
+  def withComponent_textPath(tag: textPath): StyledComponent[ComponentProps, SVGProps[SVGTextPathElement], js.Object] = js.native
   @JSName("withComponent")
   def withComponent_textarea(tag: textarea): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_tfoot(tag: tfoot): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_th(tag: th): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[ThHTMLAttributes[HTMLTableHeaderCellElement], HTMLTableHeaderCellElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_thead(tag: thead): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_time(tag: time): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[TimeHTMLAttributes[HTMLTimeElement], HTMLTimeElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_title(tag: title): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[HTMLAttributes[HTMLTitleElement], HTMLTitleElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_tr(tag: tr): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
   def withComponent_track(tag: track): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[TrackHTMLAttributes[HTMLTrackElement], HTMLTrackElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_tspan(tag: tspan): StyledComponent[SVGProps[SVGTSpanElement], StyleProps, Theme] = js.native
+  def withComponent_tspan(tag: tspan): StyledComponent[ComponentProps, SVGProps[SVGTSpanElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_u(tag: u): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_u(tag: u): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
   def withComponent_ul(tag: ul): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_use(tag: use): StyledComponent[SVGProps[SVGUseElement], StyleProps, Theme] = js.native
+  def withComponent_use(tag: use): StyledComponent[ComponentProps, SVGProps[SVGUseElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_var(tag: `var`): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_var(tag: `var`): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
   def withComponent_video(tag: video): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
   @JSName("withComponent")
-  def withComponent_view(tag: view): StyledComponent[SVGProps[SVGViewElement], StyleProps, Theme] = js.native
+  def withComponent_view(tag: view): StyledComponent[ComponentProps, SVGProps[SVGViewElement], js.Object] = js.native
   @JSName("withComponent")
-  def withComponent_wbr(tag: wbr): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+  def withComponent_wbr(tag: wbr): StyledComponent[
+    ComponentProps, 
+    DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+    js.Object
+  ] = js.native
   @JSName("withComponent")
   def withComponent_webview(tag: webview): StyledComponent[
+    ComponentProps, 
     DetailedHTMLProps[WebViewHTMLAttributes[HTMLWebViewElement], HTMLWebViewElement], 
-    StyleProps, 
-    Theme
+    js.Object
   ] = js.native
 }

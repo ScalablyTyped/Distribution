@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.FontStretch
+import typings.csstype.mod.Property.ColorScheme
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `498` extends StObject {
   
   var value: js.UndefOr[
-    FontStretch | (js.Array[
-      (Extract[js.UndefOr[FontStretch | js.Array[NonNullable[js.UndefOr[FontStretch]]]], String]) | NonNullable[js.UndefOr[FontStretch]]
+    ColorScheme | (js.Array[
+      (Extract[js.UndefOr[ColorScheme | js.Array[NonNullable[js.UndefOr[ColorScheme]]]], String]) | NonNullable[js.UndefOr[ColorScheme]]
     ])
   ] = js.native
 }

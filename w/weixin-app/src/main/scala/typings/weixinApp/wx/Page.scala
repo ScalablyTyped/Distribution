@@ -27,7 +27,7 @@ trait Page[D, P]
   /**
     * 字段可以获取到当前页面的路径。
     */
-  def route(): Unit = js.native
+  var route: String = js.native
   
   /**
     * 更新

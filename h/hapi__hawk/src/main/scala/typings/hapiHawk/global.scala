@@ -3,6 +3,7 @@ package typings.hapiHawk
 import typings.hapiBoom.mod.Boom
 import typings.hapiBoom.mod.unauthorized.Attributes
 import typings.hapiBoom.mod.unauthorized.MissingAuth
+import typings.hapiHapi.libTypesServerServerMod.ServerApplicationState
 import typings.hapiHapi.mod.Server_
 import typings.hapiHawk.libClientMod.AuthenticateOptions
 import typings.hapiHawk.libClientMod.Authentication
@@ -98,7 +99,7 @@ object global {
         @js.native
         val pkg: Record[String, Any] = js.native
         
-        inline def register(server: Server_): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(server.asInstanceOf[js.Any]).asInstanceOf[Unit]
+        inline def register(server: Server_[ServerApplicationState]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(server.asInstanceOf[js.Any]).asInstanceOf[Unit]
         
         @JSGlobal("hawk.plugin.plugin.requirements")
         @js.native

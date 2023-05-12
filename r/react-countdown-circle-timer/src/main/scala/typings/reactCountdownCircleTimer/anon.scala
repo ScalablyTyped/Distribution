@@ -14,7 +14,6 @@ import typings.reactCountdownCircleTimer.reactCountdownCircleTimerStrings.round
 import typings.reactCountdownCircleTimer.reactCountdownCircleTimerStrings.square
 import typings.std.FlatArray
 import typings.std.IterableIterator
-import typings.std.anon.CopyWithin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -172,35 +171,6 @@ object anon {
       predicate: js.Function3[/* value */ ColorHex, /* index */ Double, /* obj */ js.Array[ColorHex], Any],
       thisArg: Any
     ): js.UndefOr[ColorHex] = js.native
-    /**
-      * Returns the value of the first element in the array where predicate is true, and undefined
-      * otherwise.
-      * @param predicate find calls predicate once for each element of the array, in ascending
-      * order, until it finds one where predicate returns true. If such an element is found, find
-      * immediately returns that element value. Otherwise, find returns undefined.
-      * @param thisArg If provided, it will be used as the this value for each invocation of
-      * predicate. If it is not provided, undefined is used instead.
-      */
-    /* standard es2015.core */
-    def find[S /* <: ColorHex */](
-      predicate: js.ThisFunction3[
-          /* this */ Unit, 
-          /* value */ ColorHex, 
-          /* index */ Double, 
-          /* obj */ js.Array[ColorHex], 
-          /* is S */ Boolean
-        ]
-    ): js.UndefOr[S] = js.native
-    def find[S /* <: ColorHex */](
-      predicate: js.ThisFunction3[
-          /* this */ Unit, 
-          /* value */ ColorHex, 
-          /* index */ Double, 
-          /* obj */ js.Array[ColorHex], 
-          /* is S */ Boolean
-        ],
-      thisArg: Any
-    ): js.UndefOr[S] = js.native
     
     /**
       * Returns the index of the first element in the array where predicate is true, and -1
@@ -219,6 +189,93 @@ object anon {
       predicate: js.Function3[/* value */ ColorHex, /* index */ Double, /* obj */ js.Array[ColorHex], Any],
       thisArg: Any
     ): Double = js.native
+    
+    /* standard es2023.array */
+    def findLast(
+      predicate: js.Function3[/* value */ ColorHex, /* index */ Double, /* array */ js.Array[ColorHex], Any]
+    ): js.UndefOr[ColorHex] = js.native
+    def findLast(
+      predicate: js.Function3[/* value */ ColorHex, /* index */ Double, /* array */ js.Array[ColorHex], Any],
+      thisArg: Any
+    ): js.UndefOr[ColorHex] = js.native
+    
+    /**
+      * Returns the index of the last element in the array where predicate is true, and -1
+      * otherwise.
+      * @param predicate findLastIndex calls predicate once for each element of the array, in descending
+      * order, until it finds one where predicate returns true. If such an element is found,
+      * findLastIndex immediately returns that element index. Otherwise, findLastIndex returns -1.
+      * @param thisArg If provided, it will be used as the this value for each invocation of
+      * predicate. If it is not provided, undefined is used instead.
+      */
+    /* standard es2023.array */
+    def findLastIndex(
+      predicate: js.Function3[/* value */ ColorHex, /* index */ Double, /* array */ js.Array[ColorHex], Any]
+    ): Double = js.native
+    def findLastIndex(
+      predicate: js.Function3[/* value */ ColorHex, /* index */ Double, /* array */ js.Array[ColorHex], Any],
+      thisArg: Any
+    ): Double = js.native
+    
+    /**
+      * Returns the value of the last element in the array where predicate is true, and undefined
+      * otherwise.
+      * @param predicate findLast calls predicate once for each element of the array, in descending
+      * order, until it finds one where predicate returns true. If such an element is found, findLast
+      * immediately returns that element value. Otherwise, findLast returns undefined.
+      * @param thisArg If provided, it will be used as the this value for each invocation of
+      * predicate. If it is not provided, undefined is used instead.
+      */
+    /* standard es2023.array */
+    @JSName("findLast")
+    def findLast_S[S /* <: ColorHex */](
+      predicate: js.Function3[
+          /* value */ ColorHex, 
+          /* index */ Double, 
+          /* array */ js.Array[ColorHex], 
+          /* is S */ Boolean
+        ]
+    ): js.UndefOr[S] = js.native
+    @JSName("findLast")
+    def findLast_S[S /* <: ColorHex */](
+      predicate: js.Function3[
+          /* value */ ColorHex, 
+          /* index */ Double, 
+          /* array */ js.Array[ColorHex], 
+          /* is S */ Boolean
+        ],
+      thisArg: Any
+    ): js.UndefOr[S] = js.native
+    
+    /**
+      * Returns the value of the first element in the array where predicate is true, and undefined
+      * otherwise.
+      * @param predicate find calls predicate once for each element of the array, in ascending
+      * order, until it finds one where predicate returns true. If such an element is found, find
+      * immediately returns that element value. Otherwise, find returns undefined.
+      * @param thisArg If provided, it will be used as the this value for each invocation of
+      * predicate. If it is not provided, undefined is used instead.
+      */
+    /* standard es2015.core */
+    @JSName("find")
+    def find_S[S /* <: ColorHex */](
+      predicate: js.Function3[
+          /* value */ ColorHex, 
+          /* index */ Double, 
+          /* obj */ js.Array[ColorHex], 
+          /* is S */ Boolean
+        ]
+    ): js.UndefOr[S] = js.native
+    @JSName("find")
+    def find_S[S /* <: ColorHex */](
+      predicate: js.Function3[
+          /* value */ ColorHex, 
+          /* index */ Double, 
+          /* obj */ js.Array[ColorHex], 
+          /* is S */ Boolean
+        ],
+      thisArg: Any
+    ): js.UndefOr[S] = js.native
     
     /**
       * Returns a new array with all sub-array elements concatenated into it recursively up to the
@@ -521,12 +578,12 @@ object anon {
     def splice(start: Double, deleteCount: Double, items: ColorHex*): js.Array[ColorHex] = js.native
     
     /**
-      * Returns an object whose properties have the value 'true'
+      * Is an object whose properties have the value 'true'
       * when they will be absent when used in a 'with' statement.
       */
     /* standard es2015.symbol.wellknown */
     @JSName(js.Symbol.unscopables)
-    var unscopables: js.Function0[CopyWithin] = js.native
+    val unscopables: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in std.Array<keyof any> ]:? boolean} */ js.Any = js.native
     
     /**
       * Inserts new elements at the start of an array, and returns the new length of the array.
@@ -687,35 +744,6 @@ object anon {
       predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ js.Array[Double], Any],
       thisArg: Any
     ): js.UndefOr[Double] = js.native
-    /**
-      * Returns the value of the first element in the array where predicate is true, and undefined
-      * otherwise.
-      * @param predicate find calls predicate once for each element of the array, in ascending
-      * order, until it finds one where predicate returns true. If such an element is found, find
-      * immediately returns that element value. Otherwise, find returns undefined.
-      * @param thisArg If provided, it will be used as the this value for each invocation of
-      * predicate. If it is not provided, undefined is used instead.
-      */
-    /* standard es2015.core */
-    def find[S /* <: Double */](
-      predicate: js.ThisFunction3[
-          /* this */ Unit, 
-          /* value */ Double, 
-          /* index */ Double, 
-          /* obj */ js.Array[Double], 
-          /* is S */ Boolean
-        ]
-    ): js.UndefOr[S] = js.native
-    def find[S /* <: Double */](
-      predicate: js.ThisFunction3[
-          /* this */ Unit, 
-          /* value */ Double, 
-          /* index */ Double, 
-          /* obj */ js.Array[Double], 
-          /* is S */ Boolean
-        ],
-      thisArg: Any
-    ): js.UndefOr[S] = js.native
     
     /**
       * Returns the index of the first element in the array where predicate is true, and -1
@@ -732,6 +760,79 @@ object anon {
       predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ js.Array[Double], Any],
       thisArg: Any
     ): Double = js.native
+    
+    /* standard es2023.array */
+    def findLast(predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ js.Array[Double], Any]): js.UndefOr[Double] = js.native
+    def findLast(
+      predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ js.Array[Double], Any],
+      thisArg: Any
+    ): js.UndefOr[Double] = js.native
+    
+    /**
+      * Returns the index of the last element in the array where predicate is true, and -1
+      * otherwise.
+      * @param predicate findLastIndex calls predicate once for each element of the array, in descending
+      * order, until it finds one where predicate returns true. If such an element is found,
+      * findLastIndex immediately returns that element index. Otherwise, findLastIndex returns -1.
+      * @param thisArg If provided, it will be used as the this value for each invocation of
+      * predicate. If it is not provided, undefined is used instead.
+      */
+    /* standard es2023.array */
+    def findLastIndex(predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ js.Array[Double], Any]): Double = js.native
+    def findLastIndex(
+      predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ js.Array[Double], Any],
+      thisArg: Any
+    ): Double = js.native
+    
+    /**
+      * Returns the value of the last element in the array where predicate is true, and undefined
+      * otherwise.
+      * @param predicate findLast calls predicate once for each element of the array, in descending
+      * order, until it finds one where predicate returns true. If such an element is found, findLast
+      * immediately returns that element value. Otherwise, findLast returns undefined.
+      * @param thisArg If provided, it will be used as the this value for each invocation of
+      * predicate. If it is not provided, undefined is used instead.
+      */
+    /* standard es2023.array */
+    @JSName("findLast")
+    def findLast_S[S /* <: Double */](
+      predicate: js.Function3[
+          /* value */ Double, 
+          /* index */ Double, 
+          /* array */ js.Array[Double], 
+          /* is S */ Boolean
+        ]
+    ): js.UndefOr[S] = js.native
+    @JSName("findLast")
+    def findLast_S[S /* <: Double */](
+      predicate: js.Function3[
+          /* value */ Double, 
+          /* index */ Double, 
+          /* array */ js.Array[Double], 
+          /* is S */ Boolean
+        ],
+      thisArg: Any
+    ): js.UndefOr[S] = js.native
+    
+    /**
+      * Returns the value of the first element in the array where predicate is true, and undefined
+      * otherwise.
+      * @param predicate find calls predicate once for each element of the array, in ascending
+      * order, until it finds one where predicate returns true. If such an element is found, find
+      * immediately returns that element value. Otherwise, find returns undefined.
+      * @param thisArg If provided, it will be used as the this value for each invocation of
+      * predicate. If it is not provided, undefined is used instead.
+      */
+    /* standard es2015.core */
+    @JSName("find")
+    def find_S[S /* <: Double */](
+      predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ js.Array[Double], /* is S */ Boolean]
+    ): js.UndefOr[S] = js.native
+    @JSName("find")
+    def find_S[S /* <: Double */](
+      predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ js.Array[Double], /* is S */ Boolean],
+      thisArg: Any
+    ): js.UndefOr[S] = js.native
     
     /**
       * Returns a new array with all sub-array elements concatenated into it recursively up to the
@@ -1030,12 +1131,12 @@ object anon {
     def splice(start: Double, deleteCount: Double, items: Double*): js.Array[Double] = js.native
     
     /**
-      * Returns an object whose properties have the value 'true'
+      * Is an object whose properties have the value 'true'
       * when they will be absent when used in a 'with' statement.
       */
     /* standard es2015.symbol.wellknown */
     @JSName(js.Symbol.unscopables)
-    var unscopables: js.Function0[CopyWithin] = js.native
+    val unscopables: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in std.Array<keyof any> ]:? boolean} */ js.Any = js.native
     
     /**
       * Inserts new elements at the start of an array, and returns the new length of the array.
@@ -1111,7 +1212,7 @@ object anon {
     }
   }
   
-  /* Inlined react-countdown-circle-timer.react-countdown-circle-timer/lib.MultipleColors & {  duration :number,   initialRemainingTime :number | undefined,   updateInterval :number | undefined,   size :number | undefined,   strokeWidth :number | undefined,   trailStrokeWidth :number | undefined,   strokeLinecap :'round' | 'square' | 'butt' | undefined,   rotation :'clockwise' | 'counterclockwise' | undefined,   trailColor :react-countdown-circle-timer.react-countdown-circle-timer/lib.ColorFormat | undefined,   isPlaying :boolean | undefined,   isSmoothColorTransition :boolean | undefined,   children :(props : react-countdown-circle-timer.react-countdown-circle-timer/lib.TimeProps): react.react.ReactNode | undefined,   onComplete :(totalElapsedTime : number): react-countdown-circle-timer.react-countdown-circle-timer/lib.OnComplete | void | undefined,   onUpdate :(remainingTime : number): void | undefined} */
+  /* Inlined react-countdown-circle-timer.react-countdown-circle-timer/lib.MultipleColors & {  duration :number,   initialRemainingTime :number | undefined,   updateInterval :number | undefined,   size :number | undefined,   strokeWidth :number | undefined,   trailStrokeWidth :number | undefined,   strokeLinecap :'round' | 'square' | 'butt' | undefined,   rotation :'clockwise' | 'counterclockwise' | undefined,   trailColor :react-countdown-circle-timer.react-countdown-circle-timer/lib.ColorFormat | undefined,   isPlaying :boolean | undefined,   isSmoothColorTransition :boolean | undefined,   isGrowing :boolean | undefined,   children :(props : react-countdown-circle-timer.react-countdown-circle-timer/lib.TimeProps): react.react.ReactNode | undefined,   onComplete :(totalElapsedTime : number): react-countdown-circle-timer.react-countdown-circle-timer/lib.OnComplete | void | undefined,   onUpdate :(remainingTime : number): void | undefined} */
   trait MultipleColorsdurationnum
     extends StObject
        with Props {
@@ -1130,6 +1231,9 @@ object anon {
     
     /** Set the initial remaining time if it is different than the duration */
     var initialRemainingTime: js.UndefOr[Double] = js.undefined
+    
+    /** Indicates if the progress path should be growing instead of shrinking. Default: false */
+    var isGrowing: js.UndefOr[Boolean] = js.undefined
     
     /** Play or pause animation. Default: false */
     var isPlaying: js.UndefOr[Boolean] = js.undefined
@@ -1188,6 +1292,10 @@ object anon {
       
       inline def setInitialRemainingTimeUndefined: Self = StObject.set(x, "initialRemainingTime", js.undefined)
       
+      inline def setIsGrowing(value: Boolean): Self = StObject.set(x, "isGrowing", value.asInstanceOf[js.Any])
+      
+      inline def setIsGrowingUndefined: Self = StObject.set(x, "isGrowing", js.undefined)
+      
       inline def setIsPlaying(value: Boolean): Self = StObject.set(x, "isPlaying", value.asInstanceOf[js.Any])
       
       inline def setIsPlayingUndefined: Self = StObject.set(x, "isPlaying", js.undefined)
@@ -1234,7 +1342,7 @@ object anon {
     }
   }
   
-  /* Inlined react-countdown-circle-timer.react-countdown-circle-timer/lib.SingleColor & {  duration :number,   initialRemainingTime :number | undefined,   updateInterval :number | undefined,   size :number | undefined,   strokeWidth :number | undefined,   trailStrokeWidth :number | undefined,   strokeLinecap :'round' | 'square' | 'butt' | undefined,   rotation :'clockwise' | 'counterclockwise' | undefined,   trailColor :react-countdown-circle-timer.react-countdown-circle-timer/lib.ColorFormat | undefined,   isPlaying :boolean | undefined,   isSmoothColorTransition :boolean | undefined,   children :(props : react-countdown-circle-timer.react-countdown-circle-timer/lib.TimeProps): react.react.ReactNode | undefined,   onComplete :(totalElapsedTime : number): react-countdown-circle-timer.react-countdown-circle-timer/lib.OnComplete | void | undefined,   onUpdate :(remainingTime : number): void | undefined} */
+  /* Inlined react-countdown-circle-timer.react-countdown-circle-timer/lib.SingleColor & {  duration :number,   initialRemainingTime :number | undefined,   updateInterval :number | undefined,   size :number | undefined,   strokeWidth :number | undefined,   trailStrokeWidth :number | undefined,   strokeLinecap :'round' | 'square' | 'butt' | undefined,   rotation :'clockwise' | 'counterclockwise' | undefined,   trailColor :react-countdown-circle-timer.react-countdown-circle-timer/lib.ColorFormat | undefined,   isPlaying :boolean | undefined,   isSmoothColorTransition :boolean | undefined,   isGrowing :boolean | undefined,   children :(props : react-countdown-circle-timer.react-countdown-circle-timer/lib.TimeProps): react.react.ReactNode | undefined,   onComplete :(totalElapsedTime : number): react-countdown-circle-timer.react-countdown-circle-timer/lib.OnComplete | void | undefined,   onUpdate :(remainingTime : number): void | undefined} */
   trait SingleColordurationnumber
     extends StObject
        with Props {
@@ -1253,6 +1361,9 @@ object anon {
     
     /** Set the initial remaining time if it is different than the duration */
     var initialRemainingTime: js.UndefOr[Double] = js.undefined
+    
+    /** Indicates if the progress path should be growing instead of shrinking. Default: false */
+    var isGrowing: js.UndefOr[Boolean] = js.undefined
     
     /** Play or pause animation. Default: false */
     var isPlaying: js.UndefOr[Boolean] = js.undefined
@@ -1308,6 +1419,10 @@ object anon {
       inline def setInitialRemainingTime(value: Double): Self = StObject.set(x, "initialRemainingTime", value.asInstanceOf[js.Any])
       
       inline def setInitialRemainingTimeUndefined: Self = StObject.set(x, "initialRemainingTime", js.undefined)
+      
+      inline def setIsGrowing(value: Boolean): Self = StObject.set(x, "isGrowing", value.asInstanceOf[js.Any])
+      
+      inline def setIsGrowingUndefined: Self = StObject.set(x, "isGrowing", js.undefined)
       
       inline def setIsPlaying(value: Boolean): Self = StObject.set(x, "isPlaying", value.asInstanceOf[js.Any])
       

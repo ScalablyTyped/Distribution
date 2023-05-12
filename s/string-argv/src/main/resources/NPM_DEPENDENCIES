@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "string-argv" : "0.3.1"
+      "string-argv" : "0.3.2"
     }
   ],
   "test-dependencies" : [
     {
-      "string-argv" : "0.3.1"
+      "string-argv" : "0.3.2"
     }
   ],
   "compile-devDependencies" : [

@@ -14,6 +14,9 @@ object distTypesCommandsMod {
   @js.native
   open class CreateTokenCommand protected ()
     extends typings.awsSdkClientSsoOidc.distTypesCommandsCreateTokenCommandMod.CreateTokenCommand {
+    /**
+      * @public
+      */
     def this(input: CreateTokenCommandInput) = this()
   }
   /* static members */
@@ -30,6 +33,9 @@ object distTypesCommandsMod {
   @js.native
   open class RegisterClientCommand protected ()
     extends typings.awsSdkClientSsoOidc.distTypesCommandsRegisterClientCommandMod.RegisterClientCommand {
+    /**
+      * @public
+      */
     def this(input: RegisterClientCommandInput) = this()
   }
   /* static members */
@@ -46,6 +52,9 @@ object distTypesCommandsMod {
   @js.native
   open class StartDeviceAuthorizationCommand protected ()
     extends typings.awsSdkClientSsoOidc.distTypesCommandsStartDeviceAuthorizationCommandMod.StartDeviceAuthorizationCommand {
+    /**
+      * @public
+      */
     def this(input: StartDeviceAuthorizationCommandInput) = this()
   }
   /* static members */

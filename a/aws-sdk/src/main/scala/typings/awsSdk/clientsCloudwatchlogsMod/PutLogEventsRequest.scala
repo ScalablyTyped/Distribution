@@ -22,7 +22,7 @@ trait PutLogEventsRequest extends StObject {
   var logStreamName: LogStreamName
   
   /**
-    * The sequence token obtained from the response of the previous PutLogEvents call. An upload in a newly created log stream does not require a sequence token. You can also get the sequence token using DescribeLogStreams. If you call PutLogEvents twice within a narrow time period using the same value for sequenceToken, both calls might be successful or one might be rejected.
+    * The sequence token obtained from the response of the previous PutLogEvents call.  The sequenceToken parameter is now ignored in PutLogEvents actions. PutLogEvents actions are now accepted and never return InvalidSequenceTokenException or DataAlreadyAcceptedException even if the sequence token is not valid. 
     */
   var sequenceToken: js.UndefOr[SequenceToken] = js.undefined
 }

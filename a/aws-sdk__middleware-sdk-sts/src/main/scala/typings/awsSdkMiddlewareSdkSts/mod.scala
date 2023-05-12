@@ -3,9 +3,10 @@ package typings.awsSdkMiddlewareSdkSts
 import org.scalablytyped.runtime.Instantiable1
 import typings.awsSdkMiddlewareSigning.distTypesConfigurationsMod.AwsAuthInputConfig
 import typings.awsSdkMiddlewareSigning.distTypesConfigurationsMod.AwsAuthResolvedConfig
+import typings.awsSdkTypes.distTypesChecksumMod.ChecksumConstructor
 import typings.awsSdkTypes.distTypesClientMod.Client
-import typings.awsSdkTypes.distTypesCredentialsMod.Credentials
 import typings.awsSdkTypes.distTypesCryptoMod.HashConstructor
+import typings.awsSdkTypes.distTypesIdentityAwsCredentialIdentityMod.AwsCredentialIdentity
 import typings.awsSdkTypes.distTypesUtilMod.Provider
 import typings.awsSdkTypes.distTypesUtilMod.RegionInfo
 import typings.awsSdkTypes.distTypesUtilMod.RegionInfoProvider
@@ -24,7 +25,7 @@ object mod {
   
   trait PreviouslyResolved extends StObject {
     
-    def credentialDefaultProvider(input: Any): Provider[Credentials]
+    def credentialDefaultProvider(input: Any): Provider[AwsCredentialIdentity]
     
     var region: String | Provider[String]
     
@@ -32,7 +33,7 @@ object mod {
     
     var serviceId: String
     
-    var sha256: HashConstructor
+    var sha256: ChecksumConstructor | HashConstructor
     
     var signingName: js.UndefOr[String] = js.undefined
     
@@ -47,10 +48,10 @@ object mod {
   object PreviouslyResolved {
     
     inline def apply(
-      credentialDefaultProvider: Any => Provider[Credentials],
+      credentialDefaultProvider: Any => Provider[AwsCredentialIdentity],
       region: String | Provider[String],
       serviceId: String,
-      sha256: HashConstructor,
+      sha256: ChecksumConstructor | HashConstructor,
       useDualstackEndpoint: () => js.Promise[Boolean],
       useFipsEndpoint: () => js.Promise[Boolean]
     ): PreviouslyResolved = {
@@ -61,7 +62,7 @@ object mod {
     @scala.inline
     implicit open class MutableBuilder[Self <: PreviouslyResolved] (val x: Self) extends AnyVal {
       
-      inline def setCredentialDefaultProvider(value: Any => Provider[Credentials]): Self = StObject.set(x, "credentialDefaultProvider", js.Any.fromFunction1(value))
+      inline def setCredentialDefaultProvider(value: Any => Provider[AwsCredentialIdentity]): Self = StObject.set(x, "credentialDefaultProvider", js.Any.fromFunction1(value))
       
       inline def setRegion(value: String | Provider[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,7 @@ object mod {
       
       inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
       
-      inline def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
+      inline def setSha256(value: ChecksumConstructor | HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
       
       inline def setSigningName(value: String): Self = StObject.set(x, "signingName", value.asInstanceOf[js.Any])
       

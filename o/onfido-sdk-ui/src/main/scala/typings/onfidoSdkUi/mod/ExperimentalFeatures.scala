@@ -1,6 +1,7 @@
 package typings.onfidoSdkUi.mod
 
 import typings.onfidoSdkUi.anon.Enabled
+import typings.onfidoSdkUi.anon.Threshold
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,6 +13,8 @@ trait ExperimentalFeatures extends StObject {
   var enable_multi_frame_capture: js.UndefOr[Boolean] = js.undefined
   
   var motion_experiment: js.UndefOr[Enabled] = js.undefined
+  
+  var performance_benchmark: js.UndefOr[Threshold] = js.undefined
 }
 object ExperimentalFeatures {
   
@@ -34,5 +37,9 @@ object ExperimentalFeatures {
     inline def setMotion_experiment(value: Enabled): Self = StObject.set(x, "motion_experiment", value.asInstanceOf[js.Any])
     
     inline def setMotion_experimentUndefined: Self = StObject.set(x, "motion_experiment", js.undefined)
+    
+    inline def setPerformance_benchmark(value: Threshold): Self = StObject.set(x, "performance_benchmark", value.asInstanceOf[js.Any])
+    
+    inline def setPerformance_benchmarkUndefined: Self = StObject.set(x, "performance_benchmark", js.undefined)
   }
 }

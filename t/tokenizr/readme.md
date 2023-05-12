@@ -1,7 +1,7 @@
 
 # Scala.js typings for tokenizr
 
-Typings are for version 1.6.7
+Typings are for version 1.6.9
 
 ## Library description:
 String Tokenization Library for JavaScript

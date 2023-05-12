@@ -431,6 +431,10 @@ object babelWalkStrings {
   inline def ImportNamespaceSpecifier: ImportNamespaceSpecifier = "ImportNamespaceSpecifier".asInstanceOf[ImportNamespaceSpecifier]
   
   @js.native
+  sealed trait ImportOrExportDeclaration extends StObject
+  inline def ImportOrExportDeclaration: ImportOrExportDeclaration = "ImportOrExportDeclaration".asInstanceOf[ImportOrExportDeclaration]
+  
+  @js.native
   sealed trait ImportSpecifier extends StObject
   inline def ImportSpecifier: ImportSpecifier = "ImportSpecifier".asInstanceOf[ImportSpecifier]
   

@@ -6,7 +6,6 @@ import typings.std.PointerEvent
 import typings.std.TouchEvent
 import typings.std.WheelEvent
 import typings.swiper.typesSwiperClassMod.default
-import typings.swiper.typesSwiperOptionsMod.SwiperOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined {[ event in keyof swiper.swiper/types/swiper-events.SwiperEvents ]:? swiper.swiper/types/swiper-events.SwiperEvents[event]} */
 trait eventinkeyofSwiperEventsSActiveIndexChange extends StObject {
   
-  var _beforeBreakpoint: js.UndefOr[js.Function2[/* swiper */ default, /* breakpointParams */ SwiperOptions, Unit]] = js.undefined
+  var _beforeBreakpoint: js.UndefOr[js.Function2[/* swiper */ default, /* breakpointParams */ this.type, Unit]] = js.undefined
   
   var _containerClasses: js.UndefOr[js.Function2[/* swiper */ default, /* classNames */ String, Unit]] = js.undefined
   
@@ -42,6 +41,10 @@ trait eventinkeyofSwiperEventsSActiveIndexChange extends StObject {
   
   var autoplayStop: js.UndefOr[js.Function1[/* swiper */ default, Unit]] = js.undefined
   
+  var autoplayTimeLeft: js.UndefOr[
+    js.Function3[/* swiper */ default, /* timeLeft */ Double, /* percentage */ Double, Unit]
+  ] = js.undefined
+  
   var beforeDestroy: js.UndefOr[js.Function1[/* swiper */ default, Unit]] = js.undefined
   
   var beforeInit: js.UndefOr[js.Function1[/* swiper */ default, Unit]] = js.undefined
@@ -54,7 +57,7 @@ trait eventinkeyofSwiperEventsSActiveIndexChange extends StObject {
   
   var beforeTransitionStart: js.UndefOr[js.Function3[/* swiper */ default, /* speed */ Double, /* internal */ Any, Unit]] = js.undefined
   
-  var breakpoint: js.UndefOr[js.Function2[/* swiper */ default, /* breakpointParams */ SwiperOptions, Unit]] = js.undefined
+  var breakpoint: js.UndefOr[js.Function2[/* swiper */ default, /* breakpointParams */ this.type, Unit]] = js.undefined
   
   var changeDirection: js.UndefOr[js.Function1[/* swiper */ default, Unit]] = js.undefined
   
@@ -78,19 +81,9 @@ trait eventinkeyofSwiperEventsSActiveIndexChange extends StObject {
   
   var hashSet: js.UndefOr[js.Function1[/* swiper */ default, Unit]] = js.undefined
   
-  var imagesReady: js.UndefOr[js.Function1[/* swiper */ default, Unit]] = js.undefined
-  
   var init: js.UndefOr[js.Function1[/* swiper */ default, Any]] = js.undefined
   
   var keyPress: js.UndefOr[js.Function2[/* swiper */ default, /* keyCode */ String, Unit]] = js.undefined
-  
-  var lazyImageLoad: js.UndefOr[
-    js.Function3[/* swiper */ default, /* slideEl */ HTMLElement, /* imageEl */ HTMLElement, Unit]
-  ] = js.undefined
-  
-  var lazyImageReady: js.UndefOr[
-    js.Function3[/* swiper */ default, /* slideEl */ HTMLElement, /* imageEl */ HTMLElement, Unit]
-  ] = js.undefined
   
   var lock: js.UndefOr[js.Function1[/* swiper */ default, Unit]] = js.undefined
   
@@ -254,6 +247,10 @@ object eventinkeyofSwiperEventsSActiveIndexChange {
     
     inline def setAutoplayStopUndefined: Self = StObject.set(x, "autoplayStop", js.undefined)
     
+    inline def setAutoplayTimeLeft(value: (/* swiper */ default, /* timeLeft */ Double, /* percentage */ Double) => Unit): Self = StObject.set(x, "autoplayTimeLeft", js.Any.fromFunction3(value))
+    
+    inline def setAutoplayTimeLeftUndefined: Self = StObject.set(x, "autoplayTimeLeft", js.undefined)
+    
     inline def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
     
     inline def setBeforeDestroy(value: /* swiper */ default => Unit): Self = StObject.set(x, "beforeDestroy", js.Any.fromFunction1(value))
@@ -280,7 +277,7 @@ object eventinkeyofSwiperEventsSActiveIndexChange {
     
     inline def setBeforeTransitionStartUndefined: Self = StObject.set(x, "beforeTransitionStart", js.undefined)
     
-    inline def setBreakpoint(value: (/* swiper */ default, /* breakpointParams */ SwiperOptions) => Unit): Self = StObject.set(x, "breakpoint", js.Any.fromFunction2(value))
+    inline def setBreakpoint(value: (/* swiper */ default, eventinkeyofSwiperEventsSActiveIndexChange) => Unit): Self = StObject.set(x, "breakpoint", js.Any.fromFunction2(value))
     
     inline def setBreakpointUndefined: Self = StObject.set(x, "breakpoint", js.undefined)
     
@@ -316,10 +313,6 @@ object eventinkeyofSwiperEventsSActiveIndexChange {
     
     inline def setHashSetUndefined: Self = StObject.set(x, "hashSet", js.undefined)
     
-    inline def setImagesReady(value: /* swiper */ default => Unit): Self = StObject.set(x, "imagesReady", js.Any.fromFunction1(value))
-    
-    inline def setImagesReadyUndefined: Self = StObject.set(x, "imagesReady", js.undefined)
-    
     inline def setInit(value: /* swiper */ default => Any): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
     inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
@@ -327,14 +320,6 @@ object eventinkeyofSwiperEventsSActiveIndexChange {
     inline def setKeyPress(value: (/* swiper */ default, /* keyCode */ String) => Unit): Self = StObject.set(x, "keyPress", js.Any.fromFunction2(value))
     
     inline def setKeyPressUndefined: Self = StObject.set(x, "keyPress", js.undefined)
-    
-    inline def setLazyImageLoad(value: (/* swiper */ default, /* slideEl */ HTMLElement, /* imageEl */ HTMLElement) => Unit): Self = StObject.set(x, "lazyImageLoad", js.Any.fromFunction3(value))
-    
-    inline def setLazyImageLoadUndefined: Self = StObject.set(x, "lazyImageLoad", js.undefined)
-    
-    inline def setLazyImageReady(value: (/* swiper */ default, /* slideEl */ HTMLElement, /* imageEl */ HTMLElement) => Unit): Self = StObject.set(x, "lazyImageReady", js.Any.fromFunction3(value))
-    
-    inline def setLazyImageReadyUndefined: Self = StObject.set(x, "lazyImageReady", js.undefined)
     
     inline def setLock(value: /* swiper */ default => Unit): Self = StObject.set(x, "lock", js.Any.fromFunction1(value))
     
@@ -538,7 +523,7 @@ object eventinkeyofSwiperEventsSActiveIndexChange {
     
     inline def setZoomChangeUndefined: Self = StObject.set(x, "zoomChange", js.undefined)
     
-    inline def set_beforeBreakpoint(value: (/* swiper */ default, /* breakpointParams */ SwiperOptions) => Unit): Self = StObject.set(x, "_beforeBreakpoint", js.Any.fromFunction2(value))
+    inline def set_beforeBreakpoint(value: (/* swiper */ default, eventinkeyofSwiperEventsSActiveIndexChange) => Unit): Self = StObject.set(x, "_beforeBreakpoint", js.Any.fromFunction2(value))
     
     inline def set_beforeBreakpointUndefined: Self = StObject.set(x, "_beforeBreakpoint", js.undefined)
     

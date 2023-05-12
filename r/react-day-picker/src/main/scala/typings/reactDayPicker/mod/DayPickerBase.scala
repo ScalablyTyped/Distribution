@@ -6,6 +6,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.TouchEvent
 import typings.reactDayPicker.anon.PartialFormatters
@@ -39,16 +40,20 @@ trait DayPickerBase extends StObject {
   /**
     * Change the layout of the caption:
     *
-    * - `buttons` (default): display prev/right buttons
+    * - `buttons`: display prev/right buttons
     * - `dropdown`: display drop-downs to change the month and the year
     *
     * **Note:** the `dropdown` layout is available only when `fromDate`,
     * `fromMonth` or`fromYear` and `toDate`, `toMonth` or `toYear` are set.
     *
+    * @defaultValue buttons
     */
   var captionLayout: js.UndefOr[CaptionLayout] = js.undefined
   
-  /** The CSS class to add to the container element. To change the name of the class instead, use `classNames.root`. */
+  /**
+    * The CSS class to add to the container element. To change the name of the
+    * class instead, use `classNames.root`.
+    */
   var className: js.UndefOr[String] = js.undefined
   
   /**
@@ -60,14 +65,18 @@ trait DayPickerBase extends StObject {
   var classNames: js.UndefOr[ClassNames] = js.undefined
   
   /**
-    * Map of components used to create the layout. Look at the [components source](https://github.com/gpbl/react-day-picker/tree/master/packages/react-day-picker/src/components) to understand how internal components are built.
+    * Map of components used to create the layout. Look at the [components
+    * source](https://github.com/gpbl/react-day-picker/tree/master/packages/react-day-picker/src/components)
+    * to understand how internal components are built and provide your custom components.
     */
   var components: js.UndefOr[CustomComponents] = js.undefined
   
   /**
-    * The initial month to show in the calendar. Default is the current month.
+    * The initial month to show in the calendar. Use this prop to let DayPicker
+    * control the current month. If you need to set the month programmatically,
+    * use {@link month]] and [[onMonthChange}.
     *
-    * Use this prop to let DayPicker control the current month. If you need to set the month programmatically, use {@link month]] and [[onMonthChange}.
+    * @defaultValue The current month
     */
   var defaultMonth: js.UndefOr[js.Date] = js.undefined
   
@@ -79,6 +88,8 @@ trait DayPickerBase extends StObject {
   
   /**
     * Disable the navigation between months.
+    *
+    * @defaultValue false
     */
   var disableNavigation: js.UndefOr[Boolean] = js.undefined
   
@@ -96,11 +107,15 @@ trait DayPickerBase extends StObject {
   
   /**
     * Display six weeks per months, regardless the month’s number of weeks.
-    * To use this prop, {@link showOutsideDays} must be set. Default to `false`.
+    * To use this prop, {@link showOutsideDays} must be set.
+    *
+    * @defaultValue false
     */
   var fixedWeeks: js.UndefOr[Boolean] = js.undefined
   
-  /** Content to add to the `tfoot` element. */
+  /**
+    * Content to add to the table footer element.
+    */
   var footer: js.UndefOr[ReactNode] = js.undefined
   
   /**
@@ -132,11 +147,14 @@ trait DayPickerBase extends StObject {
   
   /**
     * Hide the month’s head displaying the weekday names.
+    *
+    * @defaultValue false
     */
   var hideHead: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * An unique id to replace the random generated id, used by DayPicker for accessibility.
+    * A unique id to replace the random generated id – used by DayPicker for
+    * accessibility.
     */
   var id: js.UndefOr[String] = js.undefined
   
@@ -155,7 +173,11 @@ trait DayPickerBase extends StObject {
     */
   var labels: js.UndefOr[PartialLabels] = js.undefined
   
-  /** The date-fns locale object used to localize dates. Defaults to* `en-US`. */
+  /**
+    * The date-fns locale object used to localize dates.
+    *
+    * @defaultValue en-US
+    */
   var locale: js.UndefOr[Locale] = js.undefined
   
   /**
@@ -176,13 +198,15 @@ trait DayPickerBase extends StObject {
   /**
     * The month displayed in the calendar.
     *
-    * As opposed to {@link DayPickerBase.defaultMonth}, use this prop with {@link DayPickerBase.onMonthChange} to
-    * change the month programmatically.
+    * As opposed to {@link DayPickerBase.defaultMonth}, use this prop with
+    * {@link DayPickerBase.onMonthChange} to change the month programmatically.
     */
   var month: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The number of displayed months. Defaults to `1`.
+    * The number of displayed months.
+    *
+    * @defaultValue 1
     */
   var numberOfMonths: js.UndefOr[Double] = js.undefined
   
@@ -201,6 +225,10 @@ trait DayPickerBase extends StObject {
   var onDayMouseEnter: js.UndefOr[DayMouseEventHandler] = js.undefined
   
   var onDayMouseLeave: js.UndefOr[DayMouseEventHandler] = js.undefined
+  
+  var onDayPointerEnter: js.UndefOr[DayPointerEventHandler] = js.undefined
+  
+  var onDayPointerLeave: js.UndefOr[DayPointerEventHandler] = js.undefined
   
   var onDayTouchCancel: js.UndefOr[DayTouchEventHandler] = js.undefined
   
@@ -222,22 +250,31 @@ trait DayPickerBase extends StObject {
   var onWeekNumberClick: js.UndefOr[WeekNumberClickEventHandler] = js.undefined
   
   /**
-    * Paginate the month navigation displaying the {@link numberOfMonths} at time.
+    * Paginate the month navigation displaying the {@link numberOfMonths} at
+    * time.
+    *
+    * @defaultValue false
     */
   var pagedNavigation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Render the months in reversed order (when {@link numberOfMonths} is greater
     * than `1`) to display the most recent month first.
+    *
+    * @defaultValue false
     */
   var reverseMonths: js.UndefOr[Boolean] = js.undefined
   
-  /** Apply the `selected` modifier to the matching days. */
+  /**
+    * Apply the `selected` modifier to the matching days.
+    */
   var selected: js.UndefOr[Matcher | js.Array[Matcher]] = js.undefined
   
   /**
     * Show the outside days.  An outside day is a day falling in the next or the
-    * previous month. Default is `false`.
+    * previous month.
+    *
+    * @defaultValue false
     */
   var showOutsideDays: js.UndefOr[Boolean] = js.undefined
   
@@ -255,7 +292,7 @@ trait DayPickerBase extends StObject {
   var style: js.UndefOr[CSSProperties] = js.undefined
   
   /**
-    * Change the inline styles for each UIElement.
+    * Change the inline styles of the HTML elements.
     */
   var styles: js.UndefOr[Styles] = js.undefined
   
@@ -458,6 +495,18 @@ object DayPickerBase {
     ): Self = StObject.set(x, "onDayMouseLeave", js.Any.fromFunction3(value))
     
     inline def setOnDayMouseLeaveUndefined: Self = StObject.set(x, "onDayMouseLeave", js.undefined)
+    
+    inline def setOnDayPointerEnter(
+      value: (/* day */ js.Date, /* activeModifiers */ ActiveModifiers, /* e */ PointerEvent[Element]) => Unit
+    ): Self = StObject.set(x, "onDayPointerEnter", js.Any.fromFunction3(value))
+    
+    inline def setOnDayPointerEnterUndefined: Self = StObject.set(x, "onDayPointerEnter", js.undefined)
+    
+    inline def setOnDayPointerLeave(
+      value: (/* day */ js.Date, /* activeModifiers */ ActiveModifiers, /* e */ PointerEvent[Element]) => Unit
+    ): Self = StObject.set(x, "onDayPointerLeave", js.Any.fromFunction3(value))
+    
+    inline def setOnDayPointerLeaveUndefined: Self = StObject.set(x, "onDayPointerLeave", js.undefined)
     
     inline def setOnDayTouchCancel(
       value: (/* day */ js.Date, /* activeModifiers */ ActiveModifiers, /* e */ TouchEvent[Element]) => Unit

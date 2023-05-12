@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A Place details query to be sent to the <code>PlacesService</code>.
-  */
 trait PlaceDetailsRequest extends StObject {
   
   /**

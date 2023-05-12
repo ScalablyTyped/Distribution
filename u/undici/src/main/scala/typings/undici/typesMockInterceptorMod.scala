@@ -1,14 +1,14 @@
 package typings.undici
 
 import typings.node.bufferMod.global.Buffer
-import typings.node.httpMod.IncomingHttpHeaders
 import typings.node.streamMod.Readable
 import typings.std.Record
 import typings.undici.anon.Data
-import typings.undici.typesDispatcherMod.^
+import typings.undici.typesDispatcherMod.default
 import typings.undici.typesFetchMod.BodyInit
 import typings.undici.typesFetchMod.Headers
 import typings.undici.typesFormdataMod.FormData
+import typings.undici.typesHeaderMod.IncomingHttpHeaders
 import typings.undici.typesMockInterceptorMod.MockInterceptor.MockDispatch
 import typings.undici.typesMockInterceptorMod.MockInterceptor.MockReplyOptionsCallback
 import typings.undici.typesMockInterceptorMod.MockInterceptor.MockResponseDataHandler
@@ -283,7 +283,7 @@ object typesMockInterceptorMod {
   }
   
   @js.native
-  trait Interceptable extends ^ {
+  trait Interceptable extends default {
     
     /** Intercepts any matching requests that use the same origin as this mock client. */
     def intercept(options: Options): MockInterceptor = js.native

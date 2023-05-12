@@ -1,6 +1,7 @@
 package typings.gridstack
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.gridstack.anon.Nonce
 import typings.gridstack.anon.Target
 import typings.gridstack.distEs5TypesMod.GridStackElement
 import typings.gridstack.distEs5TypesMod.GridStackNode
@@ -11,11 +12,11 @@ import typings.gridstack.distEs5TypesMod.numberOrString
 import typings.gridstack.gridstackInts.`-1`
 import typings.gridstack.gridstackInts.`1`
 import typings.std.CSSStyleSheet
+import typings.std.Document
 import typings.std.DragEvent
 import typings.std.EventTarget
 import typings.std.HTMLElement
 import typings.std.MouseEvent
-import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,7 +44,6 @@ object distEs5UtilsMod {
     
     inline def appendTo(el: HTMLElement, parent: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendTo")(el.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def appendTo(el: HTMLElement, parent: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendTo")(el.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def appendTo(el: HTMLElement, parent: Node): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendTo")(el.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** returns the area */
     inline def area(a: GridStackPosition): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("area")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
@@ -77,16 +77,22 @@ object distEs5UtilsMod {
       * if none supplied it will be appended to the document head instead.
       */
     inline def createStylesheet(id: String): CSSStyleSheet = ^.asInstanceOf[js.Dynamic].applyDynamic("createStylesheet")(id.asInstanceOf[js.Any]).asInstanceOf[CSSStyleSheet]
+    inline def createStylesheet(id: String, parent: Unit, options: Nonce): CSSStyleSheet = (^.asInstanceOf[js.Dynamic].applyDynamic("createStylesheet")(id.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CSSStyleSheet]
     inline def createStylesheet(id: String, parent: HTMLElement): CSSStyleSheet = (^.asInstanceOf[js.Dynamic].applyDynamic("createStylesheet")(id.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[CSSStyleSheet]
+    inline def createStylesheet(id: String, parent: HTMLElement, options: Nonce): CSSStyleSheet = (^.asInstanceOf[js.Dynamic].applyDynamic("createStylesheet")(id.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CSSStyleSheet]
     
     /** copies unset fields in target to use the given default sources values */
     inline def defaults(target: Any, sources: Any*): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(scala.List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Object]
     
-    /** convert a potential selector into actual single element */
+    /** convert a potential selector into actual single element. optional root which defaults to document (for shadow dom) */
     inline def getElement(els: GridStackElement): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(els.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+    inline def getElement(els: GridStackElement, root: Document): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(els.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+    inline def getElement(els: GridStackElement, root: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(els.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
     
-    /** convert a potential selector into actual list of html elements */
+    /** convert a potential selector into actual list of html elements. optional root which defaults to document (for shadow dom) */
     inline def getElements(els: GridStackElement): js.Array[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElements")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLElement]]
+    inline def getElements(els: GridStackElement, root: Document): js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getElements")(els.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLElement]]
+    inline def getElements(els: GridStackElement, root: HTMLElement): js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getElements")(els.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLElement]]
     
     inline def initEvent[T](e: DragEvent, info: Target): T = (^.asInstanceOf[js.Dynamic].applyDynamic("initEvent")(e.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[T]
     inline def initEvent[T](e: MouseEvent, info: Target): T = (^.asInstanceOf[js.Dynamic].applyDynamic("initEvent")(e.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[T]
@@ -116,6 +122,9 @@ object distEs5UtilsMod {
     
     /** true if a and b has same size & position */
     inline def samePos(a: GridStackPosition, b: GridStackPosition): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("samePos")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    /** given a node, makes sure it's min/max are valid */
+    inline def sanitizeMinMax(node: GridStackNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeMinMax")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** copies the MouseEvent properties and sends it as another event to the given target */
     inline def simulateMouseEvent(e: MouseEvent, simulatedType: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("simulateMouseEvent")(e.asInstanceOf[js.Any], simulatedType.asInstanceOf[js.Any])).asInstanceOf[Unit]

@@ -1,7 +1,7 @@
 
 # Scala.js typings for wix__wix-ui-icons-common
 
-Typings are for version 3.0.10
+Typings are for version 3.0.34
 
 ## Library description:
 A set of commonly used icons for the Wix UI design system. [Storybook](https://wix-pages.com/wix-ui-icons-common)

@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BackgroundOrigin
+import typings.csstype.mod.Property.RubyMerge
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `82` extends StObject {
   
   var value: js.UndefOr[
-    BackgroundOrigin | (js.Array[
-      (Extract[
-        js.UndefOr[BackgroundOrigin | js.Array[NonNullable[js.UndefOr[BackgroundOrigin]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[BackgroundOrigin]]
+    RubyMerge | (js.Array[
+      (Extract[js.UndefOr[RubyMerge | js.Array[NonNullable[js.UndefOr[RubyMerge]]]], String]) | NonNullable[js.UndefOr[RubyMerge]]
     ])
   ] = js.native
 }

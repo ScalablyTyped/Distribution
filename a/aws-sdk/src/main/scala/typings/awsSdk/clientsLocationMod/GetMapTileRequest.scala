@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetMapTileRequest extends StObject {
   
   /**
+    * The optional API key to authorize the request.
+    */
+  var Key: js.UndefOr[ApiKey] = js.undefined
+  
+  /**
     * The map resource to retrieve the map tiles from.
     */
   var MapName: ResourceName
@@ -40,6 +45,10 @@ object GetMapTileRequest {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: GetMapTileRequest] (val x: Self) extends AnyVal {
+    
+    inline def setKey(value: ApiKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
     inline def setMapName(value: ResourceName): Self = StObject.set(x, "MapName", value.asInstanceOf[js.Any])
     

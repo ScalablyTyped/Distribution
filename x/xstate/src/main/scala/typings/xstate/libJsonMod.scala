@@ -5,6 +5,7 @@ import typings.std.Record
 import typings.xstate.anon.ContextAny
 import typings.xstate.libTypegenTypesMod.TypegenDisabled
 import typings.xstate.libTypesMod.ActionObject
+import typings.xstate.libTypesMod.BaseActionObject
 import typings.xstate.libTypesMod.EventObject
 import typings.xstate.libTypesMod.Guard
 import typings.xstate.libTypesMod.InvokeDefinition
@@ -56,9 +57,9 @@ object libJsonMod {
   
   trait StateNodeConfig extends StObject {
     
-    var entry: js.Array[ActionObject[Any, Any]]
+    var entry: js.Array[ActionObject[Any, Any, Any, BaseActionObject]]
     
-    var exit: js.Array[ActionObject[Any, Any]]
+    var exit: js.Array[ActionObject[Any, Any, Any, BaseActionObject]]
     
     var id: String
     
@@ -77,8 +78,8 @@ object libJsonMod {
   object StateNodeConfig {
     
     inline def apply(
-      entry: js.Array[ActionObject[Any, Any]],
-      exit: js.Array[ActionObject[Any, Any]],
+      entry: js.Array[ActionObject[Any, Any, Any, BaseActionObject]],
+      exit: js.Array[ActionObject[Any, Any, Any, BaseActionObject]],
       id: String,
       invoke: js.Array[InvokeDefinition[Any, Any]],
       key: String,
@@ -94,13 +95,13 @@ object libJsonMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: StateNodeConfig] (val x: Self) extends AnyVal {
       
-      inline def setEntry(value: js.Array[ActionObject[Any, Any]]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+      inline def setEntry(value: js.Array[ActionObject[Any, Any, Any, BaseActionObject]]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
       
-      inline def setEntryVarargs(value: (ActionObject[Any, Any])*): Self = StObject.set(x, "entry", js.Array(value*))
+      inline def setEntryVarargs(value: (ActionObject[Any, Any, Any, BaseActionObject])*): Self = StObject.set(x, "entry", js.Array(value*))
       
-      inline def setExit(value: js.Array[ActionObject[Any, Any]]): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
+      inline def setExit(value: js.Array[ActionObject[Any, Any, Any, BaseActionObject]]): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
       
-      inline def setExitVarargs(value: (ActionObject[Any, Any])*): Self = StObject.set(x, "exit", js.Array(value*))
+      inline def setExitVarargs(value: (ActionObject[Any, Any, Any, BaseActionObject])*): Self = StObject.set(x, "exit", js.Array(value*))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,7 @@ object libJsonMod {
   
   trait TransitionConfig extends StObject {
     
-    var actions: js.Array[ActionObject[Any, Any]]
+    var actions: js.Array[ActionObject[Any, Any, Any, BaseActionObject]]
     
     var cond: js.UndefOr[Guard[Any, Any]] = js.undefined
     
@@ -137,7 +138,7 @@ object libJsonMod {
   object TransitionConfig {
     
     inline def apply(
-      actions: js.Array[ActionObject[Any, Any]],
+      actions: js.Array[ActionObject[Any, Any, Any, BaseActionObject]],
       eventType: String,
       source: String,
       target: js.Array[String]
@@ -149,9 +150,9 @@ object libJsonMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: TransitionConfig] (val x: Self) extends AnyVal {
       
-      inline def setActions(value: js.Array[ActionObject[Any, Any]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: js.Array[ActionObject[Any, Any, Any, BaseActionObject]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      inline def setActionsVarargs(value: (ActionObject[Any, Any])*): Self = StObject.set(x, "actions", js.Array(value*))
+      inline def setActionsVarargs(value: (ActionObject[Any, Any, Any, BaseActionObject])*): Self = StObject.set(x, "actions", js.Array(value*))
       
       inline def setCond(value: Guard[Any, Any]): Self = StObject.set(x, "cond", value.asInstanceOf[js.Any])
       

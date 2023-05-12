@@ -25,8 +25,14 @@ object distTypesCommandsSetIdentityPoolRolesCommandMod {
           Any, 
           Any
         ] {
+    /**
+      * @public
+      */
     def this(input: SetIdentityPoolRolesCommandInput) = this()
     
+    /**
+      * @internal
+      */
     /* private */ var deserialize: Any = js.native
     
     /**
@@ -42,6 +48,9 @@ object distTypesCommandsSetIdentityPoolRolesCommandMod {
       options: HttpHandlerOptions
     ): Handler[SetIdentityPoolRolesCommandInput, SetIdentityPoolRolesCommandOutput] = js.native
     
+    /**
+      * @internal
+      */
     /* private */ var serialize: Any = js.native
   }
   /* static members */

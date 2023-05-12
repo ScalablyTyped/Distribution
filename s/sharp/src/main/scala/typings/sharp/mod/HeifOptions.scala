@@ -10,6 +10,9 @@ trait HeifOptions
   extends StObject
      with OutputOptions {
   
+  /** set to '4:2:0' to use chroma subsampling (optional, default '4:4:4') */
+  var chromaSubsampling: js.UndefOr[String] = js.undefined
+  
   /** compression format: av1, hevc (optional, default 'av1') */
   var compression: js.UndefOr[av1 | hevc] = js.undefined
   
@@ -31,6 +34,10 @@ object HeifOptions {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: HeifOptions] (val x: Self) extends AnyVal {
+    
+    inline def setChromaSubsampling(value: String): Self = StObject.set(x, "chromaSubsampling", value.asInstanceOf[js.Any])
+    
+    inline def setChromaSubsamplingUndefined: Self = StObject.set(x, "chromaSubsampling", js.undefined)
     
     inline def setCompression(value: av1 | hevc): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     

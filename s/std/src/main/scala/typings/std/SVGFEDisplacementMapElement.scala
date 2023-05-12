@@ -1,5 +1,10 @@
 package typings.std
 
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
+import typings.std.stdInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,19 +17,19 @@ trait SVGFEDisplacementMapElement
      with SVGFilterPrimitiveStandardAttributes {
   
   /* standard dom */
-  val SVG_CHANNEL_A: Double = js.native
+  val SVG_CHANNEL_A: `4` = js.native
   
   /* standard dom */
-  val SVG_CHANNEL_B: Double = js.native
+  val SVG_CHANNEL_B: `3` = js.native
   
   /* standard dom */
-  val SVG_CHANNEL_G: Double = js.native
+  val SVG_CHANNEL_G: `2` = js.native
   
   /* standard dom */
-  val SVG_CHANNEL_R: Double = js.native
+  val SVG_CHANNEL_R: `1` = js.native
   
   /* standard dom */
-  val SVG_CHANNEL_UNKNOWN: Double = js.native
+  val SVG_CHANNEL_UNKNOWN: `0` = js.native
   
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for migrate-mongo
 
-Typings are for version 8.2
+Typings are for version 10.0
 
 ## Library description:
 A database migration tool for MongoDB in Node

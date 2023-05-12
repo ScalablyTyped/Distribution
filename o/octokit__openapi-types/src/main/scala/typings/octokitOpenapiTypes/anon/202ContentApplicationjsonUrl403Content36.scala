@@ -1,0 +1,35 @@
+package typings.octokitOpenapiTypes.anon
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait `202ContentApplicationjsonUrl403Content36` extends StObject {
+  
+  /** @description Response */
+  var `202`: ContentApplicationjsonUrl
+  
+  var `403`: Content36
+  
+  var `422`: Content346
+}
+object `202ContentApplicationjsonUrl403Content36` {
+  
+  inline def apply(`202`: ContentApplicationjsonUrl, `403`: Content36, `422`: Content346): `202ContentApplicationjsonUrl403Content36` = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("202")(`202`.asInstanceOf[js.Any])
+    __obj.updateDynamic("403")(`403`.asInstanceOf[js.Any])
+    __obj.updateDynamic("422")(`422`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[`202ContentApplicationjsonUrl403Content36`]
+  }
+  
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `202ContentApplicationjsonUrl403Content36`] (val x: Self) extends AnyVal {
+    
+    inline def set202(value: ContentApplicationjsonUrl): Self = StObject.set(x, "202", value.asInstanceOf[js.Any])
+    
+    inline def set403(value: Content36): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+    
+    inline def set422(value: Content346): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
+  }
+}

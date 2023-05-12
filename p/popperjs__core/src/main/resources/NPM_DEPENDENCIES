@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@popperjs/core" : "2.11.6"
+      "@popperjs/core" : "2.11.7"
     }
   ],
   "test-dependencies" : [
     {
-      "@popperjs/core" : "2.11.6"
+      "@popperjs/core" : "2.11.7"
     }
   ],
   "compile-devDependencies" : [

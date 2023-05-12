@@ -27,7 +27,7 @@ trait UpdateEnvironmentInput extends StObject {
   var description: js.UndefOr[Description] = js.undefined
   
   /**
-    * The ID of the environment account connection that you provide if you want Proton to provision infrastructure resources for your environment or for any of the service instances running in it in an environment account. For more information, see Environment account connections in the Proton User guide. You can only update to a new environment account connection if it was created in the same environment account that the current environment account connection was created in and is associated with the current environment.
+    * The ID of the environment account connection. You can only update to a new environment account connection if it was created in the same environment account that the current environment account connection was created in and is associated with the current environment.
     */
   var environmentAccountConnectionId: js.UndefOr[EnvironmentAccountConnectionId] = js.undefined
   
@@ -37,7 +37,7 @@ trait UpdateEnvironmentInput extends StObject {
   var name: ResourceName
   
   /**
-    * The Amazon Resource Name (ARN) of the IAM service role that allows Proton to provision infrastructure using Amazon Web Services-managed provisioning and CloudFormation on your behalf.
+    * The Amazon Resource Name (ARN) of the Proton service role that allows Proton to make API calls to other services your behalf.
     */
   var protonServiceRoleArn: js.UndefOr[Arn] = js.undefined
   

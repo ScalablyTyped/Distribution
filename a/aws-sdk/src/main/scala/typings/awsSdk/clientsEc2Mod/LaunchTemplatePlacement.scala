@@ -47,7 +47,7 @@ trait LaunchTemplatePlacement extends StObject {
   var SpreadDomain: js.UndefOr[String] = js.undefined
   
   /**
-    * The tenancy of the instance (if the instance is running in a VPC). An instance with a tenancy of dedicated runs on single-tenant hardware. 
+    * The tenancy of the instance. An instance with a tenancy of dedicated runs on single-tenant hardware. 
     */
   var Tenancy: js.UndefOr[typings.awsSdk.clientsEc2Mod.Tenancy] = js.undefined
 }

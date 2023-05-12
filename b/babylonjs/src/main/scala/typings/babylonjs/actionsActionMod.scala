@@ -5,6 +5,7 @@ import typings.babylonjs.actionsActionEventMod.ActionEvent
 import typings.babylonjs.actionsActionManagerMod.ActionManager
 import typings.babylonjs.actionsConditionMod.Condition
 import typings.babylonjs.anon.Name
+import typings.babylonjs.materialsMaterialMod.Material
 import typings.babylonjs.miscObservableMod.Observable
 import typings.babylonjs.nodeMod.Node
 import typings.babylonjs.sceneMod.Scene
@@ -110,6 +111,7 @@ object actionsActionMod {
     @js.native
     val ^ : js.Any = js.native
     
+    inline def _GetTargetProperty(target: Material): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetTargetProperty")(target.asInstanceOf[js.Any]).asInstanceOf[Name]
     inline def _GetTargetProperty(target: Node): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetTargetProperty")(target.asInstanceOf[js.Any]).asInstanceOf[Name]
     /**
       * Internal only

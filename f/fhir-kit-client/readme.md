@@ -1,7 +1,7 @@
 
 # Scala.js typings for fhir-kit-client
 
-Typings are for version 1.1
+Typings are for version 1.9.2
 
 ## Library description:
 FHIR Client
@@ -24,7 +24,7 @@ FHIR Client
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DebugAdapter extends Disposable {
   
   /**
-    * Handle a Debug Adapter Protocol message.
-    * Messages can be requests, responses, or events.
-    * Results or errors are returned via onSendMessage events.
-    * @param message A Debug Adapter Protocol message
-    */
+  		 * Handle a Debug Adapter Protocol message.
+  		 * Messages can be requests, responses, or events.
+  		 * Results or errors are returned via onSendMessage events.
+  		 * @param message A Debug Adapter Protocol message
+  		 */
   def handleMessage(message: DebugProtocolMessage): Unit = js.native
   
   /**
-    * An event which fires after the debug adapter has sent a Debug Adapter Protocol message to the editor.
-    * Messages can be requests, responses, or events.
-    */
+  		 * An event which fires after the debug adapter has sent a Debug Adapter Protocol message to the editor.
+  		 * Messages can be requests, responses, or events.
+  		 */
   def onDidSendMessage(listener: js.Function1[/* e */ DebugProtocolMessage, Any]): Disposable = js.native
   def onDidSendMessage(listener: js.Function1[/* e */ DebugProtocolMessage, Any], thisArgs: Any): Disposable = js.native
   def onDidSendMessage(

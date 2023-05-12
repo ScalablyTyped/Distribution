@@ -1,7 +1,7 @@
 
 # Scala.js typings for cloudfour__simple-svg-placeholder
 
-Typings are for version 1.0
+Typings are for version 1.1
 
 ## Library description:
 A very simple placeholder image generator with zero dependencies. Returns a data URI (or raw SVG source) as a string for use in templates.

@@ -29,7 +29,7 @@ trait AddAssignees extends StObject {
     * Adds up to 10 assignees to an issue. Users already assigned to an issue are not replaced.
     */
   @JSName("addAssignees")
-  var addAssignees_Original: `311`
+  var addAssignees_Original: `331`
   
   def addLabels(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/issues/{issue_number}/labels']['response'] */ js.Any
@@ -43,7 +43,7 @@ trait AddAssignees extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/issues/{issue_number}/labels']['response'] */ js.Any
   ]
   @JSName("addLabels")
-  var addLabels_Original: `312`
+  var addLabels_Original: `332`
   
   /**
     * Checks if a user has permission to be assigned to an issue in this repository.
@@ -63,6 +63,35 @@ trait AddAssignees extends StObject {
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/assignees/{assignee}']['response'] */ js.Any
   ]
+  
+  /**
+    * Checks if a user has permission to be assigned to a specific issue.
+    *
+    * If the `assignee` can be assigned to this issue, a `204` status code with no content is returned.
+    *
+    * Otherwise a `404` status code is returned.
+    */
+  def checkUserCanBeAssignedToIssue(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/issues/{issue_number}/assignees/{assignee}']['response'] */ js.Any
+  ]
+  def checkUserCanBeAssignedToIssue(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/issues/{issue_number}/assignees/{assignee}']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/issues/{issue_number}/assignees/{assignee}']['response'] */ js.Any
+  ]
+  /**
+    * Checks if a user has permission to be assigned to a specific issue.
+    *
+    * If the `assignee` can be assigned to this issue, a `204` status code with no content is returned.
+    *
+    * Otherwise a `404` status code is returned.
+    */
+  @JSName("checkUserCanBeAssignedToIssue")
+  var checkUserCanBeAssignedToIssue_Original: `334`
+  
   /**
     * Checks if a user has permission to be assigned to an issue in this repository.
     *
@@ -71,7 +100,7 @@ trait AddAssignees extends StObject {
     * Otherwise a `404` status code is returned.
     */
   @JSName("checkUserCanBeAssigned")
-  var checkUserCanBeAssigned_Original: `313`
+  var checkUserCanBeAssigned_Original: `333`
   
   /**
     * Any user with pull access to a repository can create an issue. If [issues are disabled in the repository](https://docs.github.com/articles/disabling-issues/), the API returns a `410 Gone` status.
@@ -108,7 +137,7 @@ trait AddAssignees extends StObject {
     * This endpoint triggers [notifications](https://docs.github.com/github/managing-subscriptions-and-notifications-on-github/about-notifications). Creating content too quickly using this endpoint may result in secondary rate limiting. See "[Secondary rate limits](https://docs.github.com/rest/overview/resources-in-the-rest-api#secondary-rate-limits)" and "[Dealing with secondary rate limits](https://docs.github.com/rest/guides/best-practices-for-integrators#dealing-with-secondary-rate-limits)" for details.
     */
   @JSName("createComment")
-  var createComment_Original: `315`
+  var createComment_Original: `336`
   
   def createLabel(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/labels']['response'] */ js.Any
@@ -122,7 +151,7 @@ trait AddAssignees extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/labels']['response'] */ js.Any
   ]
   @JSName("createLabel")
-  var createLabel_Original: `316`
+  var createLabel_Original: `337`
   
   def createMilestone(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/milestones']['response'] */ js.Any
@@ -136,7 +165,7 @@ trait AddAssignees extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/milestones']['response'] */ js.Any
   ]
   @JSName("createMilestone")
-  var createMilestone_Original: `317`
+  var createMilestone_Original: `338`
   
   /**
     * Any user with pull access to a repository can create an issue. If [issues are disabled in the repository](https://docs.github.com/articles/disabling-issues/), the API returns a `410 Gone` status.
@@ -144,7 +173,7 @@ trait AddAssignees extends StObject {
     * This endpoint triggers [notifications](https://docs.github.com/github/managing-subscriptions-and-notifications-on-github/about-notifications). Creating content too quickly using this endpoint may result in secondary rate limiting. See "[Secondary rate limits](https://docs.github.com/rest/overview/resources-in-the-rest-api#secondary-rate-limits)" and "[Dealing with secondary rate limits](https://docs.github.com/rest/guides/best-practices-for-integrators#dealing-with-secondary-rate-limits)" for details.
     */
   @JSName("create")
-  var create_Original: `314`
+  var create_Original: `335`
   
   def deleteComment(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/issues/comments/{comment_id}']['response'] */ js.Any
@@ -158,7 +187,7 @@ trait AddAssignees extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/issues/comments/{comment_id}']['response'] */ js.Any
   ]
   @JSName("deleteComment")
-  var deleteComment_Original: `318`
+  var deleteComment_Original: `339`
   
   def deleteLabel(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/labels/{name}']['response'] */ js.Any
@@ -172,7 +201,7 @@ trait AddAssignees extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/labels/{name}']['response'] */ js.Any
   ]
   @JSName("deleteLabel")
-  var deleteLabel_Original: `319`
+  var deleteLabel_Original: `340`
   
   def deleteMilestone(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/milestones/{milestone_number}']['response'] */ js.Any
@@ -186,7 +215,7 @@ trait AddAssignees extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/milestones/{milestone_number}']['response'] */ js.Any
   ]
   @JSName("deleteMilestone")
-  var deleteMilestone_Original: `320`
+  var deleteMilestone_Original: `341`
   
   /**
     * The API returns a [`301 Moved Permanently` status](https://docs.github.com/rest/overview/resources-in-the-rest-api#http-redirects-redirects) if the issue was
@@ -196,7 +225,7 @@ trait AddAssignees extends StObject {
     * access, the API returns a `410 Gone` status. To receive webhook events for transferred and deleted issues, subscribe
     * to the [`issues`](https://docs.github.com/webhooks/event-payloads/#issues) webhook.
     *
-    * **Note**: GitHub's REST API v3 considers every pull request an issue, but not every issue is a pull request. For this
+    * **Note**: GitHub's REST API considers every pull request an issue, but not every issue is a pull request. For this
     * reason, "Issues" endpoints may return both issues and pull requests in the response. You can identify pull requests by
     * the `pull_request` key. Be aware that the `id` of a pull request returned from "Issues" endpoints will be an _issue id_. To find out the pull
     * request id, use the "[List pull requests](https://docs.github.com/rest/reference/pulls#list-pull-requests)" endpoint.
@@ -225,7 +254,7 @@ trait AddAssignees extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/issues/comments/{comment_id}']['response'] */ js.Any
   ]
   @JSName("getComment")
-  var getComment_Original: `322`
+  var getComment_Original: `343`
   
   def getEvent(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/issues/events/{event_id}']['response'] */ js.Any
@@ -239,7 +268,7 @@ trait AddAssignees extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/issues/events/{event_id}']['response'] */ js.Any
   ]
   @JSName("getEvent")
-  var getEvent_Original: `323`
+  var getEvent_Original: `344`
   
   def getLabel(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/labels/{name}']['response'] */ js.Any
@@ -253,7 +282,7 @@ trait AddAssignees extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/labels/{name}']['response'] */ js.Any
   ]
   @JSName("getLabel")
-  var getLabel_Original: `324`
+  var getLabel_Original: `345`
   
   def getMilestone(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/milestones/{milestone_number}']['response'] */ js.Any
@@ -267,7 +296,7 @@ trait AddAssignees extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/milestones/{milestone_number}']['response'] */ js.Any
   ]
   @JSName("getMilestone")
-  var getMilestone_Original: `325`
+  var getMilestone_Original: `346`
   
   /**
     * The API returns a [`301 Moved Permanently` status](https://docs.github.com/rest/overview/resources-in-the-rest-api#http-redirects-redirects) if the issue was
@@ -277,13 +306,13 @@ trait AddAssignees extends StObject {
     * access, the API returns a `410 Gone` status. To receive webhook events for transferred and deleted issues, subscribe
     * to the [`issues`](https://docs.github.com/webhooks/event-payloads/#issues) webhook.
     *
-    * **Note**: GitHub's REST API v3 considers every pull request an issue, but not every issue is a pull request. For this
+    * **Note**: GitHub's REST API considers every pull request an issue, but not every issue is a pull request. For this
     * reason, "Issues" endpoints may return both issues and pull requests in the response. You can identify pull requests by
     * the `pull_request` key. Be aware that the `id` of a pull request returned from "Issues" endpoints will be an _issue id_. To find out the pull
     * request id, use the "[List pull requests](https://docs.github.com/rest/reference/pulls#list-pull-requests)" endpoint.
     */
   @JSName("get")
-  var get_Original: `321`
+  var get_Original: `342`
   
   /**
     * List issues assigned to the authenticated user across all visible repositories including owned repositories, member
@@ -291,7 +320,7 @@ trait AddAssignees extends StObject {
     * necessarily assigned to you.
     *
     *
-    * **Note**: GitHub's REST API v3 considers every pull request an issue, but not every issue is a pull request. For this
+    * **Note**: GitHub's REST API considers every pull request an issue, but not every issue is a pull request. For this
     * reason, "Issues" endpoints may return both issues and pull requests in the response. You can identify pull requests by
     * the `pull_request` key. Be aware that the `id` of a pull request returned from "Issues" endpoints will be an _issue id_. To find out the pull
     * request id, use the "[List pull requests](https://docs.github.com/rest/reference/pulls#list-pull-requests)" endpoint.
@@ -326,7 +355,7 @@ trait AddAssignees extends StObject {
     * Lists the [available assignees](https://docs.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/) for issues in a repository.
     */
   @JSName("listAssignees")
-  var listAssignees_Original: `327`
+  var listAssignees_Original: `348`
   
   /**
     * Issue Comments are ordered by ascending ID.
@@ -361,13 +390,13 @@ trait AddAssignees extends StObject {
     * By default, Issue Comments are ordered by ascending ID.
     */
   @JSName("listCommentsForRepo")
-  var listCommentsForRepo_Original: `329`
+  var listCommentsForRepo_Original: `350`
   
   /**
     * Issue Comments are ordered by ascending ID.
     */
   @JSName("listComments")
-  var listComments_Original: `328`
+  var listComments_Original: `349`
   
   def listEvents(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/issues/{issue_number}/events']['response'] */ js.Any
@@ -393,7 +422,7 @@ trait AddAssignees extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/issues/events']['response'] */ js.Any
   ]
   @JSName("listEventsForRepo")
-  var listEventsForRepo_Original: `331`
+  var listEventsForRepo_Original: `352`
   
   def listEventsForTimeline(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/issues/{issue_number}/timeline']['response'] */ js.Any
@@ -407,15 +436,15 @@ trait AddAssignees extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/issues/{issue_number}/timeline']['response'] */ js.Any
   ]
   @JSName("listEventsForTimeline")
-  var listEventsForTimeline_Original: `332`
+  var listEventsForTimeline_Original: `353`
   
   @JSName("listEvents")
-  var listEvents_Original: `330`
+  var listEvents_Original: `351`
   
   /**
     * List issues across owned and member repositories assigned to the authenticated user.
     *
-    * **Note**: GitHub's REST API v3 considers every pull request an issue, but not every issue is a pull request. For this
+    * **Note**: GitHub's REST API considers every pull request an issue, but not every issue is a pull request. For this
     * reason, "Issues" endpoints may return both issues and pull requests in the response. You can identify pull requests by
     * the `pull_request` key. Be aware that the `id` of a pull request returned from "Issues" endpoints will be an _issue id_. To find out the pull
     * request id, use the "[List pull requests](https://docs.github.com/rest/reference/pulls#list-pull-requests)" endpoint.
@@ -434,18 +463,18 @@ trait AddAssignees extends StObject {
   /**
     * List issues across owned and member repositories assigned to the authenticated user.
     *
-    * **Note**: GitHub's REST API v3 considers every pull request an issue, but not every issue is a pull request. For this
+    * **Note**: GitHub's REST API considers every pull request an issue, but not every issue is a pull request. For this
     * reason, "Issues" endpoints may return both issues and pull requests in the response. You can identify pull requests by
     * the `pull_request` key. Be aware that the `id` of a pull request returned from "Issues" endpoints will be an _issue id_. To find out the pull
     * request id, use the "[List pull requests](https://docs.github.com/rest/reference/pulls#list-pull-requests)" endpoint.
     */
   @JSName("listForAuthenticatedUser")
-  var listForAuthenticatedUser_Original: `333`
+  var listForAuthenticatedUser_Original: `354`
   
   /**
     * List issues in an organization assigned to the authenticated user.
     *
-    * **Note**: GitHub's REST API v3 considers every pull request an issue, but not every issue is a pull request. For this
+    * **Note**: GitHub's REST API considers every pull request an issue, but not every issue is a pull request. For this
     * reason, "Issues" endpoints may return both issues and pull requests in the response. You can identify pull requests by
     * the `pull_request` key. Be aware that the `id` of a pull request returned from "Issues" endpoints will be an _issue id_. To find out the pull
     * request id, use the "[List pull requests](https://docs.github.com/rest/reference/pulls#list-pull-requests)" endpoint.
@@ -464,18 +493,18 @@ trait AddAssignees extends StObject {
   /**
     * List issues in an organization assigned to the authenticated user.
     *
-    * **Note**: GitHub's REST API v3 considers every pull request an issue, but not every issue is a pull request. For this
+    * **Note**: GitHub's REST API considers every pull request an issue, but not every issue is a pull request. For this
     * reason, "Issues" endpoints may return both issues and pull requests in the response. You can identify pull requests by
     * the `pull_request` key. Be aware that the `id` of a pull request returned from "Issues" endpoints will be an _issue id_. To find out the pull
     * request id, use the "[List pull requests](https://docs.github.com/rest/reference/pulls#list-pull-requests)" endpoint.
     */
   @JSName("listForOrg")
-  var listForOrg_Original: `334`
+  var listForOrg_Original: `355`
   
   /**
-    * List issues in a repository.
+    * List issues in a repository. Only open issues will be listed.
     *
-    * **Note**: GitHub's REST API v3 considers every pull request an issue, but not every issue is a pull request. For this
+    * **Note**: GitHub's REST API considers every pull request an issue, but not every issue is a pull request. For this
     * reason, "Issues" endpoints may return both issues and pull requests in the response. You can identify pull requests by
     * the `pull_request` key. Be aware that the `id` of a pull request returned from "Issues" endpoints will be an _issue id_. To find out the pull
     * request id, use the "[List pull requests](https://docs.github.com/rest/reference/pulls#list-pull-requests)" endpoint.
@@ -492,15 +521,15 @@ trait AddAssignees extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/issues']['response'] */ js.Any
   ]
   /**
-    * List issues in a repository.
+    * List issues in a repository. Only open issues will be listed.
     *
-    * **Note**: GitHub's REST API v3 considers every pull request an issue, but not every issue is a pull request. For this
+    * **Note**: GitHub's REST API considers every pull request an issue, but not every issue is a pull request. For this
     * reason, "Issues" endpoints may return both issues and pull requests in the response. You can identify pull requests by
     * the `pull_request` key. Be aware that the `id` of a pull request returned from "Issues" endpoints will be an _issue id_. To find out the pull
     * request id, use the "[List pull requests](https://docs.github.com/rest/reference/pulls#list-pull-requests)" endpoint.
     */
   @JSName("listForRepo")
-  var listForRepo_Original: `335`
+  var listForRepo_Original: `356`
   
   def listLabelsForMilestone(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/milestones/{milestone_number}/labels']['response'] */ js.Any
@@ -514,7 +543,7 @@ trait AddAssignees extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/milestones/{milestone_number}/labels']['response'] */ js.Any
   ]
   @JSName("listLabelsForMilestone")
-  var listLabelsForMilestone_Original: `336`
+  var listLabelsForMilestone_Original: `357`
   
   def listLabelsForRepo(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/labels']['response'] */ js.Any
@@ -528,7 +557,7 @@ trait AddAssignees extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/labels']['response'] */ js.Any
   ]
   @JSName("listLabelsForRepo")
-  var listLabelsForRepo_Original: `337`
+  var listLabelsForRepo_Original: `358`
   
   def listLabelsOnIssue(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/issues/{issue_number}/labels']['response'] */ js.Any
@@ -542,7 +571,7 @@ trait AddAssignees extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/issues/{issue_number}/labels']['response'] */ js.Any
   ]
   @JSName("listLabelsOnIssue")
-  var listLabelsOnIssue_Original: `338`
+  var listLabelsOnIssue_Original: `359`
   
   def listMilestones(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/milestones']['response'] */ js.Any
@@ -556,7 +585,7 @@ trait AddAssignees extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/milestones']['response'] */ js.Any
   ]
   @JSName("listMilestones")
-  var listMilestones_Original: `339`
+  var listMilestones_Original: `360`
   
   /**
     * List issues assigned to the authenticated user across all visible repositories including owned repositories, member
@@ -564,13 +593,13 @@ trait AddAssignees extends StObject {
     * necessarily assigned to you.
     *
     *
-    * **Note**: GitHub's REST API v3 considers every pull request an issue, but not every issue is a pull request. For this
+    * **Note**: GitHub's REST API considers every pull request an issue, but not every issue is a pull request. For this
     * reason, "Issues" endpoints may return both issues and pull requests in the response. You can identify pull requests by
     * the `pull_request` key. Be aware that the `id` of a pull request returned from "Issues" endpoints will be an _issue id_. To find out the pull
     * request id, use the "[List pull requests](https://docs.github.com/rest/reference/pulls#list-pull-requests)" endpoint.
     */
   @JSName("list")
-  var list_Original: `326`
+  var list_Original: `347`
   
   /**
     * Users with push access can lock an issue or pull request's conversation.
@@ -594,7 +623,7 @@ trait AddAssignees extends StObject {
     * Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://docs.github.com/rest/overview/resources-in-the-rest-api#http-verbs)."
     */
   @JSName("lock")
-  var lock_Original: `340`
+  var lock_Original: `361`
   
   def removeAllLabels(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/issues/{issue_number}/labels']['response'] */ js.Any
@@ -608,7 +637,7 @@ trait AddAssignees extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/issues/{issue_number}/labels']['response'] */ js.Any
   ]
   @JSName("removeAllLabels")
-  var removeAllLabels_Original: `341`
+  var removeAllLabels_Original: `362`
   
   /**
     * Removes one or more assignees from an issue.
@@ -628,7 +657,7 @@ trait AddAssignees extends StObject {
     * Removes one or more assignees from an issue.
     */
   @JSName("removeAssignees")
-  var removeAssignees_Original: `342`
+  var removeAssignees_Original: `363`
   
   /**
     * Removes the specified label from the issue, and returns the remaining labels on the issue. This endpoint returns a `404 Not Found` status if the label does not exist.
@@ -648,7 +677,7 @@ trait AddAssignees extends StObject {
     * Removes the specified label from the issue, and returns the remaining labels on the issue. This endpoint returns a `404 Not Found` status if the label does not exist.
     */
   @JSName("removeLabel")
-  var removeLabel_Original: `343`
+  var removeLabel_Original: `364`
   
   /**
     * Removes any previous labels and sets the new labels for an issue.
@@ -668,7 +697,7 @@ trait AddAssignees extends StObject {
     * Removes any previous labels and sets the new labels for an issue.
     */
   @JSName("setLabels")
-  var setLabels_Original: `344`
+  var setLabels_Original: `365`
   
   /**
     * Users with push access can unlock an issue's conversation.
@@ -688,7 +717,7 @@ trait AddAssignees extends StObject {
     * Users with push access can unlock an issue's conversation.
     */
   @JSName("unlock")
-  var unlock_Original: `345`
+  var unlock_Original: `366`
   
   /**
     * Issue owners and users with push access can edit an issue.
@@ -717,7 +746,7 @@ trait AddAssignees extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/issues/comments/{comment_id}']['response'] */ js.Any
   ]
   @JSName("updateComment")
-  var updateComment_Original: `347`
+  var updateComment_Original: `368`
   
   def updateLabel(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/labels/{name}']['response'] */ js.Any
@@ -731,7 +760,7 @@ trait AddAssignees extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/labels/{name}']['response'] */ js.Any
   ]
   @JSName("updateLabel")
-  var updateLabel_Original: `348`
+  var updateLabel_Original: `369`
   
   def updateMilestone(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/milestones/{milestone_number}']['response'] */ js.Any
@@ -745,140 +774,143 @@ trait AddAssignees extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/milestones/{milestone_number}']['response'] */ js.Any
   ]
   @JSName("updateMilestone")
-  var updateMilestone_Original: `349`
+  var updateMilestone_Original: `370`
   
   /**
     * Issue owners and users with push access can edit an issue.
     */
   @JSName("update")
-  var update_Original: `346`
+  var update_Original: `367`
 }
 object AddAssignees {
   
   inline def apply(
-    addAssignees: `311`,
-    addLabels: `312`,
-    checkUserCanBeAssigned: `313`,
-    create: `314`,
-    createComment: `315`,
-    createLabel: `316`,
-    createMilestone: `317`,
-    deleteComment: `318`,
-    deleteLabel: `319`,
-    deleteMilestone: `320`,
-    get: `321`,
-    getComment: `322`,
-    getEvent: `323`,
-    getLabel: `324`,
-    getMilestone: `325`,
-    list: `326`,
-    listAssignees: `327`,
-    listComments: `328`,
-    listCommentsForRepo: `329`,
-    listEvents: `330`,
-    listEventsForRepo: `331`,
-    listEventsForTimeline: `332`,
-    listForAuthenticatedUser: `333`,
-    listForOrg: `334`,
-    listForRepo: `335`,
-    listLabelsForMilestone: `336`,
-    listLabelsForRepo: `337`,
-    listLabelsOnIssue: `338`,
-    listMilestones: `339`,
-    lock: `340`,
-    removeAllLabels: `341`,
-    removeAssignees: `342`,
-    removeLabel: `343`,
-    setLabels: `344`,
-    unlock: `345`,
-    update: `346`,
-    updateComment: `347`,
-    updateLabel: `348`,
-    updateMilestone: `349`
+    addAssignees: `331`,
+    addLabels: `332`,
+    checkUserCanBeAssigned: `333`,
+    checkUserCanBeAssignedToIssue: `334`,
+    create: `335`,
+    createComment: `336`,
+    createLabel: `337`,
+    createMilestone: `338`,
+    deleteComment: `339`,
+    deleteLabel: `340`,
+    deleteMilestone: `341`,
+    get: `342`,
+    getComment: `343`,
+    getEvent: `344`,
+    getLabel: `345`,
+    getMilestone: `346`,
+    list: `347`,
+    listAssignees: `348`,
+    listComments: `349`,
+    listCommentsForRepo: `350`,
+    listEvents: `351`,
+    listEventsForRepo: `352`,
+    listEventsForTimeline: `353`,
+    listForAuthenticatedUser: `354`,
+    listForOrg: `355`,
+    listForRepo: `356`,
+    listLabelsForMilestone: `357`,
+    listLabelsForRepo: `358`,
+    listLabelsOnIssue: `359`,
+    listMilestones: `360`,
+    lock: `361`,
+    removeAllLabels: `362`,
+    removeAssignees: `363`,
+    removeLabel: `364`,
+    setLabels: `365`,
+    unlock: `366`,
+    update: `367`,
+    updateComment: `368`,
+    updateLabel: `369`,
+    updateMilestone: `370`
   ): AddAssignees = {
-    val __obj = js.Dynamic.literal(addAssignees = addAssignees.asInstanceOf[js.Any], addLabels = addLabels.asInstanceOf[js.Any], checkUserCanBeAssigned = checkUserCanBeAssigned.asInstanceOf[js.Any], create = create.asInstanceOf[js.Any], createComment = createComment.asInstanceOf[js.Any], createLabel = createLabel.asInstanceOf[js.Any], createMilestone = createMilestone.asInstanceOf[js.Any], deleteComment = deleteComment.asInstanceOf[js.Any], deleteLabel = deleteLabel.asInstanceOf[js.Any], deleteMilestone = deleteMilestone.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], getComment = getComment.asInstanceOf[js.Any], getEvent = getEvent.asInstanceOf[js.Any], getLabel = getLabel.asInstanceOf[js.Any], getMilestone = getMilestone.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], listAssignees = listAssignees.asInstanceOf[js.Any], listComments = listComments.asInstanceOf[js.Any], listCommentsForRepo = listCommentsForRepo.asInstanceOf[js.Any], listEvents = listEvents.asInstanceOf[js.Any], listEventsForRepo = listEventsForRepo.asInstanceOf[js.Any], listEventsForTimeline = listEventsForTimeline.asInstanceOf[js.Any], listForAuthenticatedUser = listForAuthenticatedUser.asInstanceOf[js.Any], listForOrg = listForOrg.asInstanceOf[js.Any], listForRepo = listForRepo.asInstanceOf[js.Any], listLabelsForMilestone = listLabelsForMilestone.asInstanceOf[js.Any], listLabelsForRepo = listLabelsForRepo.asInstanceOf[js.Any], listLabelsOnIssue = listLabelsOnIssue.asInstanceOf[js.Any], listMilestones = listMilestones.asInstanceOf[js.Any], lock = lock.asInstanceOf[js.Any], removeAllLabels = removeAllLabels.asInstanceOf[js.Any], removeAssignees = removeAssignees.asInstanceOf[js.Any], removeLabel = removeLabel.asInstanceOf[js.Any], setLabels = setLabels.asInstanceOf[js.Any], unlock = unlock.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any], updateComment = updateComment.asInstanceOf[js.Any], updateLabel = updateLabel.asInstanceOf[js.Any], updateMilestone = updateMilestone.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addAssignees = addAssignees.asInstanceOf[js.Any], addLabels = addLabels.asInstanceOf[js.Any], checkUserCanBeAssigned = checkUserCanBeAssigned.asInstanceOf[js.Any], checkUserCanBeAssignedToIssue = checkUserCanBeAssignedToIssue.asInstanceOf[js.Any], create = create.asInstanceOf[js.Any], createComment = createComment.asInstanceOf[js.Any], createLabel = createLabel.asInstanceOf[js.Any], createMilestone = createMilestone.asInstanceOf[js.Any], deleteComment = deleteComment.asInstanceOf[js.Any], deleteLabel = deleteLabel.asInstanceOf[js.Any], deleteMilestone = deleteMilestone.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], getComment = getComment.asInstanceOf[js.Any], getEvent = getEvent.asInstanceOf[js.Any], getLabel = getLabel.asInstanceOf[js.Any], getMilestone = getMilestone.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], listAssignees = listAssignees.asInstanceOf[js.Any], listComments = listComments.asInstanceOf[js.Any], listCommentsForRepo = listCommentsForRepo.asInstanceOf[js.Any], listEvents = listEvents.asInstanceOf[js.Any], listEventsForRepo = listEventsForRepo.asInstanceOf[js.Any], listEventsForTimeline = listEventsForTimeline.asInstanceOf[js.Any], listForAuthenticatedUser = listForAuthenticatedUser.asInstanceOf[js.Any], listForOrg = listForOrg.asInstanceOf[js.Any], listForRepo = listForRepo.asInstanceOf[js.Any], listLabelsForMilestone = listLabelsForMilestone.asInstanceOf[js.Any], listLabelsForRepo = listLabelsForRepo.asInstanceOf[js.Any], listLabelsOnIssue = listLabelsOnIssue.asInstanceOf[js.Any], listMilestones = listMilestones.asInstanceOf[js.Any], lock = lock.asInstanceOf[js.Any], removeAllLabels = removeAllLabels.asInstanceOf[js.Any], removeAssignees = removeAssignees.asInstanceOf[js.Any], removeLabel = removeLabel.asInstanceOf[js.Any], setLabels = setLabels.asInstanceOf[js.Any], unlock = unlock.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any], updateComment = updateComment.asInstanceOf[js.Any], updateLabel = updateLabel.asInstanceOf[js.Any], updateMilestone = updateMilestone.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddAssignees]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: AddAssignees] (val x: Self) extends AnyVal {
     
-    inline def setAddAssignees(value: `311`): Self = StObject.set(x, "addAssignees", value.asInstanceOf[js.Any])
+    inline def setAddAssignees(value: `331`): Self = StObject.set(x, "addAssignees", value.asInstanceOf[js.Any])
     
-    inline def setAddLabels(value: `312`): Self = StObject.set(x, "addLabels", value.asInstanceOf[js.Any])
+    inline def setAddLabels(value: `332`): Self = StObject.set(x, "addLabels", value.asInstanceOf[js.Any])
     
-    inline def setCheckUserCanBeAssigned(value: `313`): Self = StObject.set(x, "checkUserCanBeAssigned", value.asInstanceOf[js.Any])
+    inline def setCheckUserCanBeAssigned(value: `333`): Self = StObject.set(x, "checkUserCanBeAssigned", value.asInstanceOf[js.Any])
     
-    inline def setCreate(value: `314`): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCheckUserCanBeAssignedToIssue(value: `334`): Self = StObject.set(x, "checkUserCanBeAssignedToIssue", value.asInstanceOf[js.Any])
     
-    inline def setCreateComment(value: `315`): Self = StObject.set(x, "createComment", value.asInstanceOf[js.Any])
+    inline def setCreate(value: `335`): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    inline def setCreateLabel(value: `316`): Self = StObject.set(x, "createLabel", value.asInstanceOf[js.Any])
+    inline def setCreateComment(value: `336`): Self = StObject.set(x, "createComment", value.asInstanceOf[js.Any])
     
-    inline def setCreateMilestone(value: `317`): Self = StObject.set(x, "createMilestone", value.asInstanceOf[js.Any])
+    inline def setCreateLabel(value: `337`): Self = StObject.set(x, "createLabel", value.asInstanceOf[js.Any])
     
-    inline def setDeleteComment(value: `318`): Self = StObject.set(x, "deleteComment", value.asInstanceOf[js.Any])
+    inline def setCreateMilestone(value: `338`): Self = StObject.set(x, "createMilestone", value.asInstanceOf[js.Any])
     
-    inline def setDeleteLabel(value: `319`): Self = StObject.set(x, "deleteLabel", value.asInstanceOf[js.Any])
+    inline def setDeleteComment(value: `339`): Self = StObject.set(x, "deleteComment", value.asInstanceOf[js.Any])
     
-    inline def setDeleteMilestone(value: `320`): Self = StObject.set(x, "deleteMilestone", value.asInstanceOf[js.Any])
+    inline def setDeleteLabel(value: `340`): Self = StObject.set(x, "deleteLabel", value.asInstanceOf[js.Any])
     
-    inline def setGet(value: `321`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setDeleteMilestone(value: `341`): Self = StObject.set(x, "deleteMilestone", value.asInstanceOf[js.Any])
     
-    inline def setGetComment(value: `322`): Self = StObject.set(x, "getComment", value.asInstanceOf[js.Any])
+    inline def setGet(value: `342`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setGetEvent(value: `323`): Self = StObject.set(x, "getEvent", value.asInstanceOf[js.Any])
+    inline def setGetComment(value: `343`): Self = StObject.set(x, "getComment", value.asInstanceOf[js.Any])
     
-    inline def setGetLabel(value: `324`): Self = StObject.set(x, "getLabel", value.asInstanceOf[js.Any])
+    inline def setGetEvent(value: `344`): Self = StObject.set(x, "getEvent", value.asInstanceOf[js.Any])
     
-    inline def setGetMilestone(value: `325`): Self = StObject.set(x, "getMilestone", value.asInstanceOf[js.Any])
+    inline def setGetLabel(value: `345`): Self = StObject.set(x, "getLabel", value.asInstanceOf[js.Any])
     
-    inline def setList(value: `326`): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setGetMilestone(value: `346`): Self = StObject.set(x, "getMilestone", value.asInstanceOf[js.Any])
     
-    inline def setListAssignees(value: `327`): Self = StObject.set(x, "listAssignees", value.asInstanceOf[js.Any])
+    inline def setList(value: `347`): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
-    inline def setListComments(value: `328`): Self = StObject.set(x, "listComments", value.asInstanceOf[js.Any])
+    inline def setListAssignees(value: `348`): Self = StObject.set(x, "listAssignees", value.asInstanceOf[js.Any])
     
-    inline def setListCommentsForRepo(value: `329`): Self = StObject.set(x, "listCommentsForRepo", value.asInstanceOf[js.Any])
+    inline def setListComments(value: `349`): Self = StObject.set(x, "listComments", value.asInstanceOf[js.Any])
     
-    inline def setListEvents(value: `330`): Self = StObject.set(x, "listEvents", value.asInstanceOf[js.Any])
+    inline def setListCommentsForRepo(value: `350`): Self = StObject.set(x, "listCommentsForRepo", value.asInstanceOf[js.Any])
     
-    inline def setListEventsForRepo(value: `331`): Self = StObject.set(x, "listEventsForRepo", value.asInstanceOf[js.Any])
+    inline def setListEvents(value: `351`): Self = StObject.set(x, "listEvents", value.asInstanceOf[js.Any])
     
-    inline def setListEventsForTimeline(value: `332`): Self = StObject.set(x, "listEventsForTimeline", value.asInstanceOf[js.Any])
+    inline def setListEventsForRepo(value: `352`): Self = StObject.set(x, "listEventsForRepo", value.asInstanceOf[js.Any])
     
-    inline def setListForAuthenticatedUser(value: `333`): Self = StObject.set(x, "listForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListEventsForTimeline(value: `353`): Self = StObject.set(x, "listEventsForTimeline", value.asInstanceOf[js.Any])
     
-    inline def setListForOrg(value: `334`): Self = StObject.set(x, "listForOrg", value.asInstanceOf[js.Any])
+    inline def setListForAuthenticatedUser(value: `354`): Self = StObject.set(x, "listForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setListForRepo(value: `335`): Self = StObject.set(x, "listForRepo", value.asInstanceOf[js.Any])
+    inline def setListForOrg(value: `355`): Self = StObject.set(x, "listForOrg", value.asInstanceOf[js.Any])
     
-    inline def setListLabelsForMilestone(value: `336`): Self = StObject.set(x, "listLabelsForMilestone", value.asInstanceOf[js.Any])
+    inline def setListForRepo(value: `356`): Self = StObject.set(x, "listForRepo", value.asInstanceOf[js.Any])
     
-    inline def setListLabelsForRepo(value: `337`): Self = StObject.set(x, "listLabelsForRepo", value.asInstanceOf[js.Any])
+    inline def setListLabelsForMilestone(value: `357`): Self = StObject.set(x, "listLabelsForMilestone", value.asInstanceOf[js.Any])
     
-    inline def setListLabelsOnIssue(value: `338`): Self = StObject.set(x, "listLabelsOnIssue", value.asInstanceOf[js.Any])
+    inline def setListLabelsForRepo(value: `358`): Self = StObject.set(x, "listLabelsForRepo", value.asInstanceOf[js.Any])
     
-    inline def setListMilestones(value: `339`): Self = StObject.set(x, "listMilestones", value.asInstanceOf[js.Any])
+    inline def setListLabelsOnIssue(value: `359`): Self = StObject.set(x, "listLabelsOnIssue", value.asInstanceOf[js.Any])
     
-    inline def setLock(value: `340`): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
+    inline def setListMilestones(value: `360`): Self = StObject.set(x, "listMilestones", value.asInstanceOf[js.Any])
     
-    inline def setRemoveAllLabels(value: `341`): Self = StObject.set(x, "removeAllLabels", value.asInstanceOf[js.Any])
+    inline def setLock(value: `361`): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
     
-    inline def setRemoveAssignees(value: `342`): Self = StObject.set(x, "removeAssignees", value.asInstanceOf[js.Any])
+    inline def setRemoveAllLabels(value: `362`): Self = StObject.set(x, "removeAllLabels", value.asInstanceOf[js.Any])
     
-    inline def setRemoveLabel(value: `343`): Self = StObject.set(x, "removeLabel", value.asInstanceOf[js.Any])
+    inline def setRemoveAssignees(value: `363`): Self = StObject.set(x, "removeAssignees", value.asInstanceOf[js.Any])
     
-    inline def setSetLabels(value: `344`): Self = StObject.set(x, "setLabels", value.asInstanceOf[js.Any])
+    inline def setRemoveLabel(value: `364`): Self = StObject.set(x, "removeLabel", value.asInstanceOf[js.Any])
     
-    inline def setUnlock(value: `345`): Self = StObject.set(x, "unlock", value.asInstanceOf[js.Any])
+    inline def setSetLabels(value: `365`): Self = StObject.set(x, "setLabels", value.asInstanceOf[js.Any])
     
-    inline def setUpdate(value: `346`): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUnlock(value: `366`): Self = StObject.set(x, "unlock", value.asInstanceOf[js.Any])
     
-    inline def setUpdateComment(value: `347`): Self = StObject.set(x, "updateComment", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: `367`): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    inline def setUpdateLabel(value: `348`): Self = StObject.set(x, "updateLabel", value.asInstanceOf[js.Any])
+    inline def setUpdateComment(value: `368`): Self = StObject.set(x, "updateComment", value.asInstanceOf[js.Any])
     
-    inline def setUpdateMilestone(value: `349`): Self = StObject.set(x, "updateMilestone", value.asInstanceOf[js.Any])
+    inline def setUpdateLabel(value: `369`): Self = StObject.set(x, "updateLabel", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMilestone(value: `370`): Self = StObject.set(x, "updateMilestone", value.asInstanceOf[js.Any])
   }
 }

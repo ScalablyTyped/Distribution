@@ -12,6 +12,11 @@ trait UserAuthConfigInfo extends StObject {
   var AuthScheme: js.UndefOr[typings.awsSdk.clientsRdsMod.AuthScheme] = js.undefined
   
   /**
+    * The type of authentication the proxy uses for connections from clients.
+    */
+  var ClientPasswordAuthType: js.UndefOr[typings.awsSdk.clientsRdsMod.ClientPasswordAuthType] = js.undefined
+  
+  /**
     * A user-specified description about the authentication used by a proxy to log in as a specific database user.
     */
   var Description: js.UndefOr[String] = js.undefined
@@ -44,6 +49,10 @@ object UserAuthConfigInfo {
     inline def setAuthScheme(value: AuthScheme): Self = StObject.set(x, "AuthScheme", value.asInstanceOf[js.Any])
     
     inline def setAuthSchemeUndefined: Self = StObject.set(x, "AuthScheme", js.undefined)
+    
+    inline def setClientPasswordAuthType(value: ClientPasswordAuthType): Self = StObject.set(x, "ClientPasswordAuthType", value.asInstanceOf[js.Any])
+    
+    inline def setClientPasswordAuthTypeUndefined: Self = StObject.set(x, "ClientPasswordAuthType", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

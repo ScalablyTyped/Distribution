@@ -4,10 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.angularRouter.mod.Event2 because Already inherited */ @JSImport("@angular/router", "GuardsCheckStart")
+@JSImport("@angular/router", "GuardsCheckStart")
 @js.native
-open class GuardsCheckStart protected () extends RouterEvent {
+open class GuardsCheckStart protected ()
+  extends RouterEvent
+     with Event2 {
   def this(
     /** @docsNotRequired */
   id: Double,

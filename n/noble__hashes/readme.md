@@ -1,7 +1,7 @@
 
 # Scala.js typings for noble__hashes
 
-Typings are for version 1.1.2
+Typings are for version 1.3.0
 
 ## Library description:
 Audited & minimal 0-dependency JS implementation of SHA2, SHA3, RIPEMD, BLAKE2/3, HMAC, HKDF, PBKDF2, Scrypt

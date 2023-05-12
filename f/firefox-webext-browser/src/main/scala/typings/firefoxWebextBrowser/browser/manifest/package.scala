@@ -5,6 +5,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.firefoxWebextBrowser.anon.Basepath
 import typings.firefoxWebextBrowser.anon.Chromeresources
 import typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Lessthansignall_urlsGreaterthansign
+import typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.declarativeNetRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,14 +45,16 @@ type OptionalPermissionNoPrompt = _OptionalPermissionNoPrompt
 
 type OptionalPermissionOrOrigin = OptionalPermission | MatchPattern
 
-type Permission = String | PermissionNoPrompt | OptionalPermission
+type Permission = String | PermissionNoPrompt | OptionalPermission | declarativeNetRequest
 
-/* _manifest types */
-type PermissionNoPrompt = OptionalPermission | _PermissionNoPrompt
+type PermissionNoPrompt = OptionalPermissionNoPrompt | PermissionPrivileged | _PermissionNoPrompt
 
 type PermissionOrOrigin = Permission | MatchPattern
 
-type PersistentBackgroundProperty = Boolean
+/* _manifest types */
+type PermissionPrivileged = _PermissionPrivileged
+
+type SitePermission = _SitePermission
 
 type ThemeColor = String | (js.Tuple3[Double, Double, Double]) | (js.Tuple4[Double, Double, Double, Double])
 

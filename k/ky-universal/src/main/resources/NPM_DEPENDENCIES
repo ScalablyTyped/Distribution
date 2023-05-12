@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ky-universal" : "0.10.1"
+      "ky-universal" : "0.11.0"
     }
   ],
   "test-dependencies" : [
     {
-      "ky-universal" : "0.10.1"
+      "ky-universal" : "0.11.0"
     }
   ],
   "compile-devDependencies" : [

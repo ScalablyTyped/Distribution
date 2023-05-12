@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ColumnSpan
+import typings.csstype.mod.Property.BackfaceVisibility
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `130` extends StObject {
   
   var value: js.UndefOr[
-    ColumnSpan | (js.Array[
-      (Extract[js.UndefOr[ColumnSpan | js.Array[NonNullable[js.UndefOr[ColumnSpan]]]], String]) | NonNullable[js.UndefOr[ColumnSpan]]
+    BackfaceVisibility | (js.Array[
+      (Extract[
+        js.UndefOr[BackfaceVisibility | js.Array[NonNullable[js.UndefOr[BackfaceVisibility]]]], 
+        String
+      ]) | NonNullable[js.UndefOr[BackfaceVisibility]]
     ])
   ] = js.native
 }

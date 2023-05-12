@@ -9,6 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 
 /* static member */
+inline def constants: Constants_ = ^.asInstanceOf[js.Dynamic].selectDynamic("constants").asInstanceOf[Constants_]
+inline def constants_=(x: Constants_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("constants")(x.asInstanceOf[js.Any])
+
+/* static member */
+inline def lib: Lib_ = ^.asInstanceOf[js.Dynamic].selectDynamic("lib").asInstanceOf[Lib_]
+inline def lib_=(x: Lib_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lib")(x.asInstanceOf[js.Any])
+
+/* static member */
 inline def modes: Modes_ = ^.asInstanceOf[js.Dynamic].selectDynamic("modes").asInstanceOf[Modes_]
 inline def modes_=(x: Modes_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modes")(x.asInstanceOf[js.Any])
 

@@ -52,13 +52,13 @@ trait PlotTreemapLevelsOptions extends StObject {
   /**
     * (Highcharts) Can set the layoutAlgorithm option on a specific level.
     */
-  var layoutAlgorithm: js.UndefOr[String] = js.undefined
+  var layoutAlgorithm: js.UndefOr[OptionsLayoutAlgorithmValue] = js.undefined
   
   /**
     * (Highcharts) Can set the layoutStartingDirection option on a specific
     * level.
     */
-  var layoutStartingDirection: js.UndefOr[String] = js.undefined
+  var layoutStartingDirection: js.UndefOr[OptionsLayoutStartingDirectionValue] = js.undefined
   
   /**
     * (Highcharts) Decides which level takes effect from the options set in the
@@ -102,11 +102,11 @@ object PlotTreemapLevelsOptions {
     
     inline def setDataLabelsVarargs(value: PlotTreemapLevelsDataLabelsOptions*): Self = StObject.set(x, "dataLabels", js.Array(value*))
     
-    inline def setLayoutAlgorithm(value: String): Self = StObject.set(x, "layoutAlgorithm", value.asInstanceOf[js.Any])
+    inline def setLayoutAlgorithm(value: OptionsLayoutAlgorithmValue): Self = StObject.set(x, "layoutAlgorithm", value.asInstanceOf[js.Any])
     
     inline def setLayoutAlgorithmUndefined: Self = StObject.set(x, "layoutAlgorithm", js.undefined)
     
-    inline def setLayoutStartingDirection(value: String): Self = StObject.set(x, "layoutStartingDirection", value.asInstanceOf[js.Any])
+    inline def setLayoutStartingDirection(value: OptionsLayoutStartingDirectionValue): Self = StObject.set(x, "layoutStartingDirection", value.asInstanceOf[js.Any])
     
     inline def setLayoutStartingDirectionUndefined: Self = StObject.set(x, "layoutStartingDirection", js.undefined)
     

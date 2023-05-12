@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "css-prefers-color-scheme" : "7.0.1"
+      "css-prefers-color-scheme" : "8.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "css-prefers-color-scheme" : "7.0.1"
+      "css-prefers-color-scheme" : "8.0.2"
     }
   ],
   "compile-devDependencies" : [

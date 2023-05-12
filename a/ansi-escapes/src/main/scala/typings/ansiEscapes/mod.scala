@@ -145,6 +145,14 @@ object mod {
     inline def cursorUp(count: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cursorUp")(count.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
+    	Enter the [alternative screen](https://terminalguide.namepad.de/mode/p47/).
+    	*/
+    @JSImport("ansi-escapes", "default.enterAlternativeScreen")
+    @js.native
+    def enterAlternativeScreen: String = js.native
+    inline def enterAlternativeScreen_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enterAlternativeScreen")(x.asInstanceOf[js.Any])
+    
+    /**
     	Erase the screen from the current line down to the bottom of the screen.
     	*/
     @JSImport("ansi-escapes", "default.eraseDown")
@@ -197,6 +205,14 @@ object mod {
     @js.native
     def eraseUp: String = js.native
     inline def eraseUp_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("eraseUp")(x.asInstanceOf[js.Any])
+    
+    /**
+    	Exit the [alternative screen](https://terminalguide.namepad.de/mode/p47/), assuming `enterAlternativeScreen` was called before.
+    	*/
+    @JSImport("ansi-escapes", "default.exitAlternativeScreen")
+    @js.native
+    def exitAlternativeScreen: String = js.native
+    inline def exitAlternativeScreen_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exitAlternativeScreen")(x.asInstanceOf[js.Any])
     
     @JSImport("ansi-escapes", "default.iTerm")
     @js.native

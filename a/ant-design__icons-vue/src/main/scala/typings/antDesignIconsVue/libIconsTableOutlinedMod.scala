@@ -16,7 +16,7 @@ object libIconsTableOutlinedMod extends Shortcut {
   @js.native
   trait TableOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_TableOutlinedIconType: String = js.native

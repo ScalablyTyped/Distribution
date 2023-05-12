@@ -1,6 +1,15 @@
 package typings.primereact
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.primereact.primereactStrings.`to-end`
+import typings.primereact.primereactStrings.`to-start`
+import typings.primereact.primereactStrings.auto
+import typings.primereact.primereactStrings.both
+import typings.primereact.primereactStrings.horizontal
+import typings.primereact.primereactStrings.smooth
+import typings.primereact.primereactStrings.vertical
+import typings.primereact.utilsUtilsMod.IconOptions
+import typings.primereact.utilsUtilsMod.IconType
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.NativeUIEvent
@@ -22,106 +31,209 @@ object virtualscrollerVirtualscrollerMod {
     def this(props: VirtualScrollerProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: VirtualScrollerProps, context: Any) = this()
     
+    /**
+      * Returns the reference of virtualScroller's container.
+      * @return {React.Ref<HTMLDivElement>} Ref Div element
+      */
     def getElementRef(): Ref[HTMLDivElement] = js.native
     
+    /**
+      * Returns the range of items added to the DOM.
+      */
     def getRenderedRange(): VirtualScrollerRenderedRange = js.native
     
-    def scrollInView(index: VirtualScrollerToIndexType, to: VirtualScrollerToType): Unit = js.native
-    def scrollInView(
-      index: VirtualScrollerToIndexType,
-      to: VirtualScrollerToType,
-      behavior: VirtualScrollerScrollBehavior
-    ): Unit = js.native
+    def scrollInView(index: js.Array[Double], to: `to-start` | `to-end`): Unit = js.native
+    def scrollInView(index: js.Array[Double], to: `to-start` | `to-end`, behavior: auto | smooth): Unit = js.native
+    /**
+      * It is used to move the specified index into the view. It is a method that will usually be needed when keyboard support is added to the virtualScroller component.
+      * @param {number} index - Index of item according to orientation mode.
+      * @param {'to-start' | 'to-end'} to - Defines the location of the item in view, valid values are 'to-start' and 'to-end'.
+      * @param {'auto' | 'smooth'} behavior - Behavior of scroll, valid values are 'auto' and 'smooth'
+      */
+    def scrollInView(index: Double, to: `to-start` | `to-end`): Unit = js.native
+    def scrollInView(index: Double, to: `to-start` | `to-end`, behavior: auto | smooth): Unit = js.native
     
+    /**
+      * Scroll to move to a specific position.
+      * @param {VirtualScrollerOptionsType} options - Custom virtual scroller options.
+      */
     def scrollTo(options: VirtualScrollerOptionsType): Unit = js.native
     
-    def scrollToIndex(index: VirtualScrollerToIndexType): Unit = js.native
-    def scrollToIndex(index: VirtualScrollerToIndexType, behavior: VirtualScrollerScrollBehavior): Unit = js.native
+    def scrollToIndex(index: js.Array[Double]): Unit = js.native
+    def scrollToIndex(index: js.Array[Double], behavior: auto | smooth): Unit = js.native
+    /**
+      * Scroll to move to a specific item.
+      * @param {number} index - Index of item according to orientation mode.
+      * @param {'auto' | 'smooth'} behavior - Behavior of scroll, valid values are 'auto' and 'smooth'
+      */
+    def scrollToIndex(index: Double): Unit = js.native
+    def scrollToIndex(index: Double, behavior: auto | smooth): Unit = js.native
   }
   
-  trait VirtualScrollerChangeParams extends StObject {
+  /**
+    * Custom change event.
+    * @see {@link VirtualScrollerProps.onScrollIndexChange}
+    * @event
+    */
+  trait VirtualScrollerChangeEvent extends StObject {
     
-    var first: VirtualScrollerStateType
+    /**
+      * First index of the new data range to be loaded.
+      */
+    var first: Double | VirtualScrollerState
     
-    var last: VirtualScrollerStateType
+    /**
+      * Last index of the new data range to be loaded.
+      */
+    var last: Double | VirtualScrollerState
   }
-  object VirtualScrollerChangeParams {
+  object VirtualScrollerChangeEvent {
     
-    inline def apply(first: VirtualScrollerStateType, last: VirtualScrollerStateType): VirtualScrollerChangeParams = {
+    inline def apply(first: Double | VirtualScrollerState, last: Double | VirtualScrollerState): VirtualScrollerChangeEvent = {
       val __obj = js.Dynamic.literal(first = first.asInstanceOf[js.Any], last = last.asInstanceOf[js.Any])
-      __obj.asInstanceOf[VirtualScrollerChangeParams]
+      __obj.asInstanceOf[VirtualScrollerChangeEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: VirtualScrollerChangeParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: VirtualScrollerChangeEvent] (val x: Self) extends AnyVal {
       
-      inline def setFirst(value: VirtualScrollerStateType): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+      inline def setFirst(value: Double | VirtualScrollerState): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
       
-      inline def setLast(value: VirtualScrollerStateType): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+      inline def setLast(value: Double | VirtualScrollerState): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
     }
   }
   
+  /**
+    * Custom content template options.
+    */
   @js.native
   trait VirtualScrollerContentTemplateOptions extends StObject {
     
+    /**
+      * Whether the orientation is both.
+      */
     var both: Boolean = js.native
     
+    /**
+      * Items of wrapper element.
+      */
     var children: Any = js.native
     
+    /**
+      * Style class of the wrapper element.
+      */
     var className: String = js.native
     
+    /**
+      * Columns of the virtual scroller.
+      */
     var columns: js.Array[Any] = js.native
     
+    /**
+      * Ref of wrapper element.
+      */
     var contentRef: Any = js.native
     
+    /**
+      * Default wrapper element.
+      */
     var element: Element = js.native
     
+    /**
+      * Information of any item.
+      * @param {number} index - Index of the template item.
+      */
     def getItemOptions(index: Double): VirtualScrollerTemplateOptions = js.native
     
+    /**
+      * Information of any item during the loading.
+      * @param {number} index - Index of the item.
+      * @param {object} ext - The extra options to pass to the content.
+      */
     def getLoaderOptions(index: Double): VirtualScrollerLoadingTemplateOptions = js.native
     def getLoaderOptions(index: Double, ext: js.Object): VirtualScrollerLoadingTemplateOptions = js.native
     
+    /**
+      * Whether the orientation is horizontal.
+      */
     var horizontal: Boolean = js.native
     
-    var itemSize: VirtualScrollerItemSizeType = js.native
+    /**
+      * The height/width of item according to orientation.
+      */
+    var itemSize: Double | js.Array[Double] = js.native
     
-    var items: VirtualScrollerItemsType = js.native
+    /**
+      * Loaded data.
+      */
+    var items: js.UndefOr[(js.Array[Any | js.Array[Any]]) | Null] = js.native
     
+    /**
+      * Whether the data is loaded.
+      */
     var loading: Boolean = js.native
     
-    var loadingTemplate: VirtualScrollerLoadingTemplateType = js.native
+    /**
+      * Template of loading item.
+      */
+    var loadingTemplate: ReactNode | (js.Function1[/* options */ VirtualScrollerLoadingTemplateOptions, ReactNode]) = js.native
     
+    /**
+      * Props of VirtualScroller component.
+      */
     var props: VirtualScrollerProps = js.native
     
+    /**
+      * Rows of the virtual scroller.
+      */
     var rows: js.Array[Any] = js.native
     
+    /**
+      * Ref of spacer element.
+      */
     var spacerRef: Any = js.native
     
+    /**
+      * Ref of sticky element in content.
+      */
     var stickyRef: Any = js.native
     
+    /**
+      * Whether the orientation is vertical.
+      */
     var vertical: Boolean = js.native
   }
   
-  type VirtualScrollerContentTemplateType = ReactNode | (js.Function1[/* options */ VirtualScrollerContentTemplateOptions, ReactNode])
+  /**
+    * Custom lazy load event.
+    * @see {@link VirtualScrollerProps.onLazyLoad}
+    * @extends {VirtualScrollerChangeEvent}
+    * @event
+    */
+  type VirtualScrollerLazyEvent = VirtualScrollerChangeEvent
   
-  type VirtualScrollerItemSizeType = Double | js.Array[Double]
-  
-  type VirtualScrollerItemTemplateType = ReactNode | (js.Function2[/* item */ Any, /* options */ VirtualScrollerTemplateOptions, ReactNode])
-  
-  type VirtualScrollerItemsType = js.UndefOr[(js.Array[Any | js.Array[Any]]) | Null]
-  
-  type VirtualScrollerLazyParams = VirtualScrollerChangeParams
-  
+  /**
+    * Custom loader icon template props.
+    */
   trait VirtualScrollerLoaderIconTemplateOptions extends StObject {
     
+    /**
+      * Style class of the loader icon.
+      */
     var className: String
     
+    /**
+      * The JSX element that represents the loader icon.
+      */
     var element: Element
     
+    /**
+      * The props of the VirtualScroller component.
+      */
     var props: VirtualScrollerProps
   }
   object VirtualScrollerLoaderIconTemplateOptions {
@@ -142,13 +254,21 @@ object virtualscrollerVirtualscrollerMod {
     }
   }
   
-  type VirtualScrollerLoaderIconTemplateType = ReactNode | (js.Function1[/* options */ VirtualScrollerLoaderIconTemplateOptions, ReactNode])
-  
+  /**
+    * Custom template options.
+    * @extends VirtualScrollerTemplateOptions
+    */
   trait VirtualScrollerLoadingTemplateOptions
     extends StObject
        with VirtualScrollerTemplateOptions
-       with /* key */ StringDictionary[Any] {
+       with /**
+    * Extra options.
+    */
+  /* key */ StringDictionary[Any] {
     
+    /**
+      * Total number of columns in a row in 'both' orientation mode in view.
+      */
     var numCols: Double
   }
   object VirtualScrollerLoadingTemplateOptions {
@@ -174,19 +294,29 @@ object virtualscrollerVirtualscrollerMod {
     }
   }
   
-  type VirtualScrollerLoadingTemplateType = ReactNode | (js.Function1[/* options */ VirtualScrollerLoadingTemplateOptions, ReactNode])
-  
+  /**
+    * Custom virtual scroller options type.
+    */
   trait VirtualScrollerOptionsType extends StObject {
     
-    var behavior: VirtualScrollerScrollBehavior
+    /**
+      * Behavior of scroll, valid values are 'auto' and 'smooth'
+      */
+    var behavior: auto | smooth
     
+    /**
+      * Left position of scroll.
+      */
     var left: Double
     
+    /**
+      * Top position of scroll
+      */
     var top: Double
   }
   object VirtualScrollerOptionsType {
     
-    inline def apply(behavior: VirtualScrollerScrollBehavior, left: Double, top: Double): VirtualScrollerOptionsType = {
+    inline def apply(behavior: auto | smooth, left: Double, top: Double): VirtualScrollerOptionsType = {
       val __obj = js.Dynamic.literal(behavior = behavior.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[VirtualScrollerOptionsType]
     }
@@ -194,7 +324,7 @@ object virtualscrollerVirtualscrollerMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: VirtualScrollerOptionsType] (val x: Self) extends AnyVal {
       
-      inline def setBehavior(value: VirtualScrollerScrollBehavior): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
+      inline def setBehavior(value: auto | smooth): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -202,76 +332,194 @@ object virtualscrollerVirtualscrollerMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.vertical
-    - typings.primereact.primereactStrings.horizontal
-    - typings.primereact.primereactStrings.both
-  */
-  trait VirtualScrollerOrientationType extends StObject
-  object VirtualScrollerOrientationType {
-    
-    inline def both: typings.primereact.primereactStrings.both = "both".asInstanceOf[typings.primereact.primereactStrings.both]
-    
-    inline def horizontal: typings.primereact.primereactStrings.horizontal = "horizontal".asInstanceOf[typings.primereact.primereactStrings.horizontal]
-    
-    inline def vertical: typings.primereact.primereactStrings.vertical = "vertical".asInstanceOf[typings.primereact.primereactStrings.vertical]
-  }
-  
   trait VirtualScrollerProps extends StObject {
     
+    /**
+      * Used to append each loaded item to top without removing any items from the DOM. Using very large data may cause the browser to crash.
+      * @defaultValue false
+      */
+    var appendOnly: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Whether to dynamically change the height or width of scrollable container.
+      * @defaultValue false
+      */
     var autoSize: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * Style class of the component.
+      */
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * Columns of the virtual scroller for vertical option.
+      */
     var columns: js.UndefOr[Any] = js.undefined
     
-    var contentTemplate: js.UndefOr[VirtualScrollerContentTemplateType] = js.undefined
+    /**
+      * The template of item's wrapper element.
+      */
+    var contentTemplate: js.UndefOr[
+        ReactNode | (js.Function1[/* options */ VirtualScrollerContentTemplateOptions, ReactNode])
+      ] = js.undefined
     
+    /**
+      * Delay in scroll before new data is loaded.
+      * @defaultValue 0
+      */
     var delay: js.UndefOr[Double] = js.undefined
     
+    /**
+      * If disabled, the VirtualScroller feature is eliminated and the content is displayed directly.
+      * @defaultValue false
+      */
     var disabled: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Unique identifier of the element.
+      */
     var id: js.UndefOr[String] = js.undefined
     
-    var itemSize: js.UndefOr[VirtualScrollerItemSizeType] = js.undefined
+    /**
+      * When enabled, positions the content as inline.
+      * @defaultValue false
+      */
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
-    var itemTemplate: js.UndefOr[VirtualScrollerItemTemplateType] = js.undefined
+    /**
+      * The height/width of item according to orientation.
+      */
+    var itemSize: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
-    var items: js.UndefOr[VirtualScrollerItemsType] = js.undefined
+    /**
+      * The template of item.
+      */
+    var itemTemplate: js.UndefOr[
+        ReactNode | (js.Function2[/* item */ Any, /* options */ VirtualScrollerTemplateOptions, ReactNode])
+      ] = js.undefined
     
+    /**
+      * An array of objects to display.
+      */
+    var items: js.UndefOr[(js.Array[Any | js.Array[Any]]) | Null] = js.undefined
+    
+    /**
+      * Defines if data is loaded and interacted with in lazy manner.
+      * @defaultValue false
+      */
     var `lazy`: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Used to implement a custom loader instead of using the loader feature in the VirtualScroller.
+      * @defaultValue false
+      */
     var loaderDisabled: js.UndefOr[Boolean] = js.undefined
     
-    var loaderIconTemplate: js.UndefOr[VirtualScrollerLoaderIconTemplateType] = js.undefined
+    /**
+      * The template of loader's icon.
+      * @deprecated Since v9.2.3, use `loadingIcon` instead.
+      */
+    var loaderIconTemplate: js.UndefOr[
+        ReactNode | (js.Function1[/* options */ VirtualScrollerLoaderIconTemplateOptions, ReactNode])
+      ] = js.undefined
     
+    /**
+      * Whether the data is loaded.
+      * @defaultValue false
+      */
     var loading: js.UndefOr[Boolean] = js.undefined
     
-    var loadingTemplate: js.UndefOr[VirtualScrollerLoadingTemplateType] = js.undefined
+    /**
+      * The icon to show while indicating data load is in progress.
+      */
+    var loadingIcon: js.UndefOr[IconType[VirtualScrollerProps]] = js.undefined
     
+    /**
+      * The template of loader.
+      */
+    var loadingTemplate: js.UndefOr[
+        ReactNode | (js.Function1[/* options */ VirtualScrollerLoadingTemplateOptions, ReactNode])
+      ] = js.undefined
+    
+    /**
+      * Determines how many additional elements to add to the DOM outside of the view. According to the scrolls made up and down, extra items are added in a certain algorithm in the form of multiples of this number. Default value is half the number of items shown in the view.
+      */
     var numToleratedItems: js.UndefOr[Double] = js.undefined
     
-    var onLazyLoad: js.UndefOr[js.Function1[/* e */ VirtualScrollerLazyParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke in lazy mode to load new data.
+      * @param {VirtualScrollerLazyEvent} event - Custom lazy load event.
+      */
+    var onLazyLoad: js.UndefOr[js.Function1[/* event */ VirtualScrollerLazyEvent, Unit]] = js.undefined
     
-    var onScroll: js.UndefOr[js.Function1[/* e */ UIEvent[HTMLElement, NativeUIEvent], Unit]] = js.undefined
+    /**
+      * Callback to invoke when scroll position changes.
+      * @param {React.UIEvent<HTMLElement>} event - Browser event
+      */
+    var onScroll: js.UndefOr[js.Function1[/* event */ UIEvent[HTMLElement, NativeUIEvent], Unit]] = js.undefined
     
-    var onScrollIndexChange: js.UndefOr[js.Function1[/* e */ VirtualScrollerChangeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when scroll position and item's range in view changes.
+      * @param {VirtualScrollerChangeEvent} event - Custom change event
+      */
+    var onScrollIndexChange: js.UndefOr[js.Function1[/* event */ VirtualScrollerChangeEvent, Unit]] = js.undefined
     
-    var orientation: js.UndefOr[VirtualScrollerOrientationType] = js.undefined
+    /**
+      * The orientation of scrollbar, valid values are 'vertical', 'horizontal' and 'both'.
+      * @defaultValue 'vertical'
+      */
+    var orientation: js.UndefOr[vertical | horizontal | both] = js.undefined
     
+    /**
+      * Delay after window's resize finishes.
+      * @defaultValue 10
+      */
     var resizeDelay: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Height of the scroll viewport.
+      */
     var scrollHeight: js.UndefOr[String] = js.undefined
     
+    /**
+      * Width of the scroll viewport.
+      */
     var scrollWidth: js.UndefOr[String] = js.undefined
     
+    /**
+      * Whether to show loader.
+      * @defaultValue false
+      */
     var showLoader: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Used to implement a custom spacer instead of using the spacer feature in the VirtualScroller.
+      * @defaultValue true
+      */
     var showSpacer: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Used to specify how many items to load in each load method in lazy mode.
+      * @defaultValue 0
+      */
+    var step: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Inline style of the component.
+      */
     var style: js.UndefOr[CSSProperties] = js.undefined
+    
+    /**
+      * Index of the element in tabbing order.
+      * @defaultValue 0
+      */
+    var tabIndex: js.UndefOr[Double] = js.undefined
   }
   object VirtualScrollerProps {
     
@@ -282,6 +530,10 @@ object virtualscrollerVirtualscrollerMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: VirtualScrollerProps] (val x: Self) extends AnyVal {
+      
+      inline def setAppendOnly(value: Boolean): Self = StObject.set(x, "appendOnly", value.asInstanceOf[js.Any])
+      
+      inline def setAppendOnlyUndefined: Self = StObject.set(x, "appendOnly", js.undefined)
       
       inline def setAutoSize(value: Boolean): Self = StObject.set(x, "autoSize", value.asInstanceOf[js.Any])
       
@@ -299,7 +551,7 @@ object virtualscrollerVirtualscrollerMod {
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setContentTemplate(value: VirtualScrollerContentTemplateType): Self = StObject.set(x, "contentTemplate", value.asInstanceOf[js.Any])
+      inline def setContentTemplate(value: ReactNode | (js.Function1[/* options */ VirtualScrollerContentTemplateOptions, ReactNode])): Self = StObject.set(x, "contentTemplate", value.asInstanceOf[js.Any])
       
       inline def setContentTemplateFunction1(value: /* options */ VirtualScrollerContentTemplateOptions => ReactNode): Self = StObject.set(x, "contentTemplate", js.Any.fromFunction1(value))
       
@@ -317,19 +569,25 @@ object virtualscrollerVirtualscrollerMod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setItemSize(value: VirtualScrollerItemSizeType): Self = StObject.set(x, "itemSize", value.asInstanceOf[js.Any])
+      inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      
+      inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+      
+      inline def setItemSize(value: Double | js.Array[Double]): Self = StObject.set(x, "itemSize", value.asInstanceOf[js.Any])
       
       inline def setItemSizeUndefined: Self = StObject.set(x, "itemSize", js.undefined)
       
       inline def setItemSizeVarargs(value: Double*): Self = StObject.set(x, "itemSize", js.Array(value*))
       
-      inline def setItemTemplate(value: VirtualScrollerItemTemplateType): Self = StObject.set(x, "itemTemplate", value.asInstanceOf[js.Any])
+      inline def setItemTemplate(
+        value: ReactNode | (js.Function2[/* item */ Any, /* options */ VirtualScrollerTemplateOptions, ReactNode])
+      ): Self = StObject.set(x, "itemTemplate", value.asInstanceOf[js.Any])
       
       inline def setItemTemplateFunction2(value: (/* item */ Any, /* options */ VirtualScrollerTemplateOptions) => ReactNode): Self = StObject.set(x, "itemTemplate", js.Any.fromFunction2(value))
       
       inline def setItemTemplateUndefined: Self = StObject.set(x, "itemTemplate", js.undefined)
       
-      inline def setItems(value: VirtualScrollerItemsType): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[Any | js.Array[Any]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       inline def setItemsNull: Self = StObject.set(x, "items", null)
       
@@ -345,7 +603,9 @@ object virtualscrollerVirtualscrollerMod {
       
       inline def setLoaderDisabledUndefined: Self = StObject.set(x, "loaderDisabled", js.undefined)
       
-      inline def setLoaderIconTemplate(value: VirtualScrollerLoaderIconTemplateType): Self = StObject.set(x, "loaderIconTemplate", value.asInstanceOf[js.Any])
+      inline def setLoaderIconTemplate(
+        value: ReactNode | (js.Function1[/* options */ VirtualScrollerLoaderIconTemplateOptions, ReactNode])
+      ): Self = StObject.set(x, "loaderIconTemplate", value.asInstanceOf[js.Any])
       
       inline def setLoaderIconTemplateFunction1(value: /* options */ VirtualScrollerLoaderIconTemplateOptions => ReactNode): Self = StObject.set(x, "loaderIconTemplate", js.Any.fromFunction1(value))
       
@@ -353,7 +613,13 @@ object virtualscrollerVirtualscrollerMod {
       
       inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      inline def setLoadingTemplate(value: VirtualScrollerLoadingTemplateType): Self = StObject.set(x, "loadingTemplate", value.asInstanceOf[js.Any])
+      inline def setLoadingIcon(value: IconType[VirtualScrollerProps]): Self = StObject.set(x, "loadingIcon", value.asInstanceOf[js.Any])
+      
+      inline def setLoadingIconFunction1(value: /* options */ IconOptions[VirtualScrollerProps] => ReactNode): Self = StObject.set(x, "loadingIcon", js.Any.fromFunction1(value))
+      
+      inline def setLoadingIconUndefined: Self = StObject.set(x, "loadingIcon", js.undefined)
+      
+      inline def setLoadingTemplate(value: ReactNode | (js.Function1[/* options */ VirtualScrollerLoadingTemplateOptions, ReactNode])): Self = StObject.set(x, "loadingTemplate", value.asInstanceOf[js.Any])
       
       inline def setLoadingTemplateFunction1(value: /* options */ VirtualScrollerLoadingTemplateOptions => ReactNode): Self = StObject.set(x, "loadingTemplate", js.Any.fromFunction1(value))
       
@@ -365,19 +631,19 @@ object virtualscrollerVirtualscrollerMod {
       
       inline def setNumToleratedItemsUndefined: Self = StObject.set(x, "numToleratedItems", js.undefined)
       
-      inline def setOnLazyLoad(value: /* e */ VirtualScrollerLazyParams => Unit): Self = StObject.set(x, "onLazyLoad", js.Any.fromFunction1(value))
+      inline def setOnLazyLoad(value: /* event */ VirtualScrollerLazyEvent => Unit): Self = StObject.set(x, "onLazyLoad", js.Any.fromFunction1(value))
       
       inline def setOnLazyLoadUndefined: Self = StObject.set(x, "onLazyLoad", js.undefined)
       
-      inline def setOnScroll(value: /* e */ UIEvent[HTMLElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+      inline def setOnScroll(value: /* event */ UIEvent[HTMLElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
-      inline def setOnScrollIndexChange(value: /* e */ VirtualScrollerChangeParams => Unit): Self = StObject.set(x, "onScrollIndexChange", js.Any.fromFunction1(value))
+      inline def setOnScrollIndexChange(value: /* event */ VirtualScrollerChangeEvent => Unit): Self = StObject.set(x, "onScrollIndexChange", js.Any.fromFunction1(value))
       
       inline def setOnScrollIndexChangeUndefined: Self = StObject.set(x, "onScrollIndexChange", js.undefined)
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
-      inline def setOrientation(value: VirtualScrollerOrientationType): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: vertical | horizontal | both): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
       inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       
@@ -401,18 +667,38 @@ object virtualscrollerVirtualscrollerMod {
       
       inline def setShowSpacerUndefined: Self = StObject.set(x, "showSpacer", js.undefined)
       
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      
+      inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+      
+      inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
     }
   }
   
+  /**
+    * Virtual scroller rendered range.
+    */
   trait VirtualScrollerRenderedRange extends StObject {
     
+    /**
+      * First index of the new data range to be rendered.
+      */
     var first: Double
     
+    /**
+      * Last index of the new data range to be rendered.
+      */
     var last: Double
     
+    /**
+      * Viewport of the rendered range.
+      */
     var viewport: VirtualScrollerViewportRenderedRange
   }
   object VirtualScrollerRenderedRange {
@@ -433,22 +719,19 @@ object virtualscrollerVirtualscrollerMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.auto
-    - typings.primereact.primereactStrings.smooth
-  */
-  trait VirtualScrollerScrollBehavior extends StObject
-  object VirtualScrollerScrollBehavior {
-    
-    inline def auto: typings.primereact.primereactStrings.auto = "auto".asInstanceOf[typings.primereact.primereactStrings.auto]
-    
-    inline def smooth: typings.primereact.primereactStrings.smooth = "smooth".asInstanceOf[typings.primereact.primereactStrings.smooth]
-  }
-  
+  /**
+    * Custom virtual scroller state.
+    */
   trait VirtualScrollerState extends StObject {
     
+    /**
+      * Number of columns to be rendered.
+      */
     var cols: Double
     
+    /**
+      * Number of rows to be rendered.
+      */
     var rows: Double
   }
   object VirtualScrollerState {
@@ -467,22 +750,44 @@ object virtualscrollerVirtualscrollerMod {
     }
   }
   
-  type VirtualScrollerStateType = Double | VirtualScrollerState
-  
+  /**
+    * Custom template options.
+    */
   trait VirtualScrollerTemplateOptions extends StObject {
     
+    /**
+      * Total numbers of items.
+      */
     var count: Double
     
+    /**
+      * Whether the index is even.
+      */
     var even: Boolean
     
+    /**
+      * Whether this is the first item.
+      */
     var first: Boolean
     
+    /**
+      * Index of the item.
+      */
     var index: Double
     
+    /**
+      * Whether this is the last item.
+      */
     var last: Boolean
     
+    /**
+      * Whether the index is odd.
+      */
     var odd: Boolean
     
+    /**
+      * The props of the virtual scroller.
+      */
     var props: VirtualScrollerProps
   }
   object VirtualScrollerTemplateOptions {
@@ -519,24 +824,19 @@ object virtualscrollerVirtualscrollerMod {
     }
   }
   
-  type VirtualScrollerToIndexType = Double | js.Array[Double]
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.`to-start`
-    - typings.primereact.primereactStrings.`to-end`
-  */
-  trait VirtualScrollerToType extends StObject
-  object VirtualScrollerToType {
-    
-    inline def `to-end`: typings.primereact.primereactStrings.`to-end` = "to-end".asInstanceOf[typings.primereact.primereactStrings.`to-end`]
-    
-    inline def `to-start`: typings.primereact.primereactStrings.`to-start` = "to-start".asInstanceOf[typings.primereact.primereactStrings.`to-start`]
-  }
-  
+  /**
+    * Viewport rendered range.
+    */
   trait VirtualScrollerViewportRenderedRange extends StObject {
     
+    /**
+      * The first number of the current viewport.
+      */
     var first: Double
     
+    /**
+      * The last number of the current viewport.
+      */
     var last: Double
   }
   object VirtualScrollerViewportRenderedRange {

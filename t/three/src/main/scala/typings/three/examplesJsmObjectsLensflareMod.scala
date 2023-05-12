@@ -1,6 +1,7 @@
 package typings.three
 
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.Color
 import typings.three.srcThreeMod.Mesh
@@ -15,7 +16,7 @@ object examplesJsmObjectsLensflareMod {
   @JSImport("three/examples/jsm/objects/Lensflare", "Lensflare")
   @js.native
   open class Lensflare ()
-    extends Mesh[BufferGeometry, Material | js.Array[Material]] {
+    extends Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]] {
     
     def addElement(element: LensflareElement): Unit = js.native
     

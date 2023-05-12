@@ -1,15 +1,16 @@
 package typings.angularCli
 
 import typings.angularCli.angularCliBooleans.`false`
+import typings.angularCli.srcAnalyticsAnalyticsCollectorMod.AnalyticsCollector
+import typings.angularCli.srcAnalyticsAnalyticsParametersMod.EventCustomDimension
+import typings.angularCli.srcAnalyticsAnalyticsParametersMod.EventCustomMetric
 import typings.angularCli.srcCommandBuilderUtilitiesJsonSchemaMod.Option
 import typings.angularCli.srcUtilitiesConfigMod.AngularWorkspace
 import typings.angularCli.srcUtilitiesPackageManagerMod.PackageManagerUtils
 import typings.angularDevkitCore.mod.logging.Logger
-import typings.angularDevkitCore.srcAnalyticsApiMod.Analytics
 import typings.std.Error
+import typings.std.Partial
 import typings.std.Record
-import typings.yargs.mod.ArgumentsCamelCase
-import typings.yargs.mod.Argv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,21 +28,26 @@ object srcCommandBuilderCommandModuleMod {
       * Adds schema options to a command also this keeps track of options that are required for analytics.
       * **Note:** This method should be called from the command bundler method.
       */
-    /* protected */ def addSchemaOptionsToCommand[T](localYargs: Argv[T], options: js.Array[Option]): Argv[T] = js.native
+    /* protected */ def addSchemaOptionsToCommand[T](
+      localYargs: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Argv<T> */ Any,
+      options: js.Array[Option]
+    ): Any = js.native
     
     /** Object declaring the options the command accepts, or a function accepting and returning a yargs instance. */
     /* CompleteClass */
-    override def builder(argv: Argv[js.Object]): js.Promise[Argv[T]] | Argv[T] = js.native
+    override def builder(
+      argv: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Argv */ Any
+    ): (js.Promise[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Argv<T> */ Any
+      ]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Argv<T> */ Any) = js.native
+    
+    val command: String = js.native
     
     /* protected */ def commandName: String = js.native
     
-    @JSName("command")
-    val command_CommandModule: String = js.native
-    
     /* protected */ val context: CommandContext = js.native
     
-    @JSName("describe")
-    val describe_CommandModule: String | `false` = js.native
+    val describe: String | `false` = js.native
     
     /**
       * Description object which contains the long command descroption.
@@ -51,13 +57,7 @@ object srcCommandBuilderCommandModuleMod {
       */
     def fullDescribe: FullDescribe | `false` = js.native
     
-    /* protected */ def getAnalytics(): js.Promise[Analytics] = js.native
-    
-    /* protected */ def getWorkspaceOrThrow(): AngularWorkspace = js.native
-    
-    def handler(args: ArgumentsCamelCase[T] & OtherOptions): js.Promise[Unit] = js.native
-    
-    /* private */ val optionsWithAnalytics: Any = js.native
+    /* protected */ def getAnalytics(): js.Promise[js.UndefOr[AnalyticsCollector]] = js.native
     
     /**
       * Flush on an interval (if the event loop is waiting).
@@ -65,39 +65,19 @@ object srcCommandBuilderCommandModuleMod {
       * @returns a method that when called will terminate the periodic
       * flush and call flush one last time.
       */
-    /* private */ var periodicAnalyticsFlush: Any = js.native
+    /* protected */ def getAnalyticsParameters(options: (Options[T] & OtherOptions) | OtherOptions): Partial[Record[EventCustomDimension | EventCustomMetric, String | Boolean | Double]] = js.native
     
-    def reportAnalytics(options: (Options[T] & OtherOptions) | OtherOptions): js.Promise[Unit] = js.native
-    def reportAnalytics(options: (Options[T] & OtherOptions) | OtherOptions, paths: js.Array[String]): js.Promise[Unit] = js.native
-    def reportAnalytics(
-      options: (Options[T] & OtherOptions) | OtherOptions,
-      paths: js.Array[String],
-      dimensions: js.Array[Boolean | Double | String]
+    /* protected */ def getWorkspaceOrThrow(): AngularWorkspace = js.native
+    
+    def handler(
+      args: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ArgumentsCamelCase<T> */ Any) & OtherOptions
     ): js.Promise[Unit] = js.native
-    def reportAnalytics(
-      options: (Options[T] & OtherOptions) | OtherOptions,
-      paths: js.Array[String],
-      dimensions: js.Array[Boolean | Double | String],
-      title: String
-    ): js.Promise[Unit] = js.native
-    def reportAnalytics(
-      options: (Options[T] & OtherOptions) | OtherOptions,
-      paths: js.Array[String],
-      dimensions: Unit,
-      title: String
-    ): js.Promise[Unit] = js.native
-    def reportAnalytics(
-      options: (Options[T] & OtherOptions) | OtherOptions,
-      paths: Unit,
-      dimensions: js.Array[Boolean | Double | String]
-    ): js.Promise[Unit] = js.native
-    def reportAnalytics(
-      options: (Options[T] & OtherOptions) | OtherOptions,
-      paths: Unit,
-      dimensions: js.Array[Boolean | Double | String],
-      title: String
-    ): js.Promise[Unit] = js.native
-    def reportAnalytics(options: (Options[T] & OtherOptions) | OtherOptions, paths: Unit, dimensions: Unit, title: String): js.Promise[Unit] = js.native
+    
+    /* private */ val optionsWithAnalytics: Any = js.native
+    
+    /* private */ var reportCommandRunAnalytics: Any = js.native
+    
+    /* private */ var reportWorkspaceInfoAnalytics: Any = js.native
     
     /** A function which will be passed the parsed argv. */
     /* CompleteClass */
@@ -208,19 +188,15 @@ object srcCommandBuilderCommandModuleMod {
     }
   }
   
-  /* Inlined parent std.Omit<yargs.yargs.CommandModule<{}, T>, 'builder' | 'handler'> */
-  trait CommandModuleImplementation[T /* <: js.Object */] extends StObject {
-    
-    var aliases: js.UndefOr[js.Array[String] | String] = js.undefined
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in std.Exclude<keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify YargsCommandModule<{}, T> * / any, 'builder' | 'handler'> ]: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify YargsCommandModule<{}, T> * / any[P]} */ trait CommandModuleImplementation[T /* <: js.Object */] extends StObject {
     
     /** Object declaring the options the command accepts, or a function accepting and returning a yargs instance. */
-    def builder(argv: Argv[js.Object]): js.Promise[Argv[T]] | Argv[T]
-    
-    var command: js.UndefOr[js.Array[String] | String] = js.undefined
-    
-    var deprecated: js.UndefOr[Boolean | String] = js.undefined
-    
-    var describe: js.UndefOr[String | `false`] = js.undefined
+    def builder(
+      argv: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Argv */ Any
+    ): (js.Promise[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Argv<T> */ Any
+      ]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Argv<T> */ Any)
     
     /** Path used to load the long description for the command in JSON help text. */
     var longDescriptionPath: js.UndefOr[String] = js.undefined
@@ -234,7 +210,9 @@ object srcCommandBuilderCommandModuleMod {
   object CommandModuleImplementation {
     
     inline def apply[T /* <: js.Object */](
-      builder: Argv[js.Object] => js.Promise[Argv[T]] | Argv[T],
+      builder: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Argv */ Any => (js.Promise[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Argv<T> */ Any
+        ]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Argv<T> */ Any),
       run: Options[T] & OtherOptions => (js.Promise[Double | Unit]) | Double | Unit,
       scope: CommandScope
     ): CommandModuleImplementation[T] = {
@@ -245,27 +223,11 @@ object srcCommandBuilderCommandModuleMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: CommandModuleImplementation[?], T /* <: js.Object */] (val x: Self & CommandModuleImplementation[T]) extends AnyVal {
       
-      inline def setAliases(value: js.Array[String] | String): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
-      
-      inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
-      
-      inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value*))
-      
-      inline def setBuilder(value: Argv[js.Object] => js.Promise[Argv[T]] | Argv[T]): Self = StObject.set(x, "builder", js.Any.fromFunction1(value))
-      
-      inline def setCommand(value: js.Array[String] | String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
-      
-      inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
-      
-      inline def setCommandVarargs(value: String*): Self = StObject.set(x, "command", js.Array(value*))
-      
-      inline def setDeprecated(value: Boolean | String): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
-      
-      inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
-      
-      inline def setDescribe(value: String | `false`): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
-      
-      inline def setDescribeUndefined: Self = StObject.set(x, "describe", js.undefined)
+      inline def setBuilder(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Argv */ Any => (js.Promise[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Argv<T> */ Any
+            ]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Argv<T> */ Any)
+      ): Self = StObject.set(x, "builder", js.Any.fromFunction1(value))
       
       inline def setLongDescriptionPath(value: String): Self = StObject.set(x, "longDescriptionPath", value.asInstanceOf[js.Any])
       
@@ -313,7 +275,7 @@ object srcCommandBuilderCommandModuleMod {
     * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
     * You'll have to cast your way around this structure, unfortunately. 
     * TS definition: {{{
-    {[ key in keyof T as yargs.yargs.CamelCaseKey<key> ]: T[key]}
+    {[ key in keyof T as / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CamelCaseKey<key> * / any ]: T[key]}
     }}}
     */
   @js.native

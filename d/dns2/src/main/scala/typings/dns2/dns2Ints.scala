@@ -1,5 +1,6 @@
 package typings.dns2
 
+import typings.dns2.mod.PacketClass
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,19 +8,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object dns2Ints {
   
   @js.native
-  sealed trait `0x01` extends StObject
+  sealed trait `0x01`
+    extends StObject
+       with PacketClass
   inline def `0x01`: `0x01` = 0x01.asInstanceOf[`0x01`]
   
   @js.native
-  sealed trait `0x02` extends StObject
+  sealed trait `0x02`
+    extends StObject
+       with PacketClass
   inline def `0x02`: `0x02` = 0x02.asInstanceOf[`0x02`]
   
   @js.native
-  sealed trait `0x03` extends StObject
+  sealed trait `0x03`
+    extends StObject
+       with PacketClass
   inline def `0x03`: `0x03` = 0x03.asInstanceOf[`0x03`]
   
   @js.native
-  sealed trait `0x04` extends StObject
+  sealed trait `0x04`
+    extends StObject
+       with PacketClass
   inline def `0x04`: `0x04` = 0x04.asInstanceOf[`0x04`]
   
   @js.native
@@ -103,6 +112,8 @@ object dns2Ints {
   inline def `0xfe`: `0xfe` = 0xfe.asInstanceOf[`0xfe`]
   
   @js.native
-  sealed trait `0xff` extends StObject
+  sealed trait `0xff`
+    extends StObject
+       with PacketClass
   inline def `0xff`: `0xff` = 0xff.asInstanceOf[`0xff`]
 }

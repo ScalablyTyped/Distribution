@@ -22,7 +22,7 @@ trait TargetCapacitySpecification extends StObject {
   var SpotTargetCapacity: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The unit for the target capacity. Default: units (translates to number of instances)
+    * The unit for the target capacity. TargetCapacityUnitType can only be specified when InstanceRequirements is specified. Default: units (translates to number of instances)
     */
   var TargetCapacityUnitType: js.UndefOr[typings.awsSdk.clientsEc2Mod.TargetCapacityUnitType] = js.undefined
   

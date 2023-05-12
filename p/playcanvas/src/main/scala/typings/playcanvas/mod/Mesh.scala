@@ -22,8 +22,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * form a single triangle.
   *
   * ```javascript
-  * var mesh = new pc.Mesh(device);
-  * var positions = [
+  * const mesh = new pc.Mesh(device);
+  * const positions = [
   *     0, 0, 0, // pos 0
   *     1, 0, 0, // pos 1
   *     1, 1, 0  // pos 2
@@ -36,20 +36,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * channel 0, and an index buffer to form two triangles. Float32Array is used for positions and uvs.
   *
   * ```javascript
-  * var mesh = new pc.Mesh(device);
-  * var positions = new Float32Array([
+  * const mesh = new pc.Mesh(device);
+  * const positions = new Float32Array([
   *     0, 0, 0, // pos 0
   *     1, 0, 0, // pos 1
   *     1, 1, 0, // pos 2
   *     0, 1, 0  // pos 3
   * ]);
-  * var uvs = new Float32Array([
+  * const uvs = new Float32Array([
   *     0, 0, // uv 0
   *     1, 0, // uv 1
   *     1, 1, // uv 2
   *     0, 1  // uv 3
   * ]);
-  * var indices = [
+  * const indices = [
   *     0, 1, 2, // triangle 0
   *     0, 2, 3  // triangle 1
   * ];
@@ -83,8 +83,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Create a new Mesh instance.
   *
-  * @param {GraphicsDevice} [graphicsDevice] - The graphics device used to manage this mesh. If
-  * it is not provided, a device is obtained from the {@link Application}.
+  * @param {import('../platform/graphics/graphics-device.js').GraphicsDevice} [graphicsDevice] -
+  * The graphics device used to manage this mesh. If it is not provided, a device is obtained
+  * from the {@link Application}.
   */
 open class Mesh ()
   extends StObject
@@ -287,7 +288,7 @@ open class Mesh ()
   /**
     * The morph data (if any) that drives morph target animations for this mesh.
     *
-    * @type {Morph|null}
+    * @type {import('./morph.js').Morph|null}
     */
   def morph_=(arg: Any): Unit = js.native
   
@@ -584,7 +585,7 @@ open class Mesh ()
   /**
     * The skin data (if any) that drives skinned mesh animations for this mesh.
     *
-    * @type {Skin|null}
+    * @type {import('./skin.js').Skin|null}
     */
   var skin: Skin | Null = js.native
   

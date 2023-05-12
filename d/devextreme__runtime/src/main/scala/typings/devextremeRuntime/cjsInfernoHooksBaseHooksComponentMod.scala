@@ -1,6 +1,6 @@
 package typings.devextremeRuntime
 
-import typings.devextremeRuntime.anon.RenderFn
+import typings.devextremeRuntime.anon.Pure
 import typings.devextremeRuntime.cjsInfernoHooksContainerMod.HookContainer
 import typings.std.Element
 import typings.std.Record
@@ -13,9 +13,9 @@ object cjsInfernoHooksBaseHooksComponentMod {
   @JSImport("@devextreme/runtime/cjs/inferno-hooks/base-hooks-component", "InfernoWrapperComponent")
   @js.native
   open class InfernoWrapperComponent () extends HookContainer {
-    def this(props: RenderFn) = this()
+    def this(props: Pure) = this()
     def this(props: Unit, context: Any) = this()
-    def this(props: RenderFn, context: Any) = this()
+    def this(props: Pure, context: Any) = this()
     
     @JSName("componentDidMount")
     def componentDidMount_MInfernoWrapperComponent(): Unit = js.native

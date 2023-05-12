@@ -1,7 +1,6 @@
 package typings.monacoEditor.mod.editor
 
 import typings.monacoEditor.mod.IPosition
-import typings.monacoEditor.mod.IRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,8 +8,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IContentWidgetPosition extends StObject {
   
   /**
-    * Desired position for the content widget.
-    * `preference` will also affect the placement.
+    * Desired position which serves as an anchor for placing the content widget.
+    * The widget will be placed above, at, or below the specified position, based on the
+    * provided preference. The widget will always touch this position.
+    *
+    * Given sufficient horizontal space, the widget will be placed to the right of the
+    * passed in position. This can be tweaked by providing a `secondaryPosition`.
+    *
+    * @see preference
+    * @see secondaryPosition
     */
   var position: IPosition | Null
   
@@ -26,10 +32,12 @@ trait IContentWidgetPosition extends StObject {
   var preference: js.Array[ContentWidgetPositionPreference]
   
   /**
-    * Optionally, a range can be provided to further
-    * define the position of the content widget.
+    * Optionally, a secondary position can be provided to further define the placing of
+    * the content widget. The secondary position must have the same line number as the
+    * primary position. If possible, the widget will be placed such that it also touches
+    * the secondary position.
     */
-  var range: js.UndefOr[IRange | Null] = js.undefined
+  var secondaryPosition: js.UndefOr[IPosition | Null] = js.undefined
 }
 object IContentWidgetPosition {
   
@@ -53,10 +61,10 @@ object IContentWidgetPosition {
     
     inline def setPreferenceVarargs(value: ContentWidgetPositionPreference*): Self = StObject.set(x, "preference", js.Array(value*))
     
-    inline def setRange(value: IRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setSecondaryPosition(value: IPosition): Self = StObject.set(x, "secondaryPosition", value.asInstanceOf[js.Any])
     
-    inline def setRangeNull: Self = StObject.set(x, "range", null)
+    inline def setSecondaryPositionNull: Self = StObject.set(x, "secondaryPosition", null)
     
-    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setSecondaryPositionUndefined: Self = StObject.set(x, "secondaryPosition", js.undefined)
   }
 }

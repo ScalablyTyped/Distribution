@@ -59,6 +59,11 @@ trait CSSStyleSheetHeader extends StObject {
   var length: Double
   
   /**
+    * If the style sheet was loaded from a network resource, this indicates when the resource failed to load
+    */
+  var loadingFailed: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Stylesheet origin.
     */
   var origin: StyleSheetOrigin
@@ -144,6 +149,10 @@ object CSSStyleSheetHeader {
     inline def setIsMutable(value: Boolean): Self = StObject.set(x, "isMutable", value.asInstanceOf[js.Any])
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    
+    inline def setLoadingFailed(value: Boolean): Self = StObject.set(x, "loadingFailed", value.asInstanceOf[js.Any])
+    
+    inline def setLoadingFailedUndefined: Self = StObject.set(x, "loadingFailed", js.undefined)
     
     inline def setOrigin(value: StyleSheetOrigin): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     

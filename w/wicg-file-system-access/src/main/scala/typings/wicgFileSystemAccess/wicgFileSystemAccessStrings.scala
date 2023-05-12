@@ -42,16 +42,4 @@ object wicgFileSystemAccessStrings {
   @js.native
   sealed trait `save-file` extends StObject
   inline def `save-file`: `save-file` = "save-file".asInstanceOf[`save-file`]
-  
-  @js.native
-  sealed trait seek extends StObject
-  inline def seek: seek = "seek".asInstanceOf[seek]
-  
-  @js.native
-  sealed trait truncate extends StObject
-  inline def truncate: truncate = "truncate".asInstanceOf[truncate]
-  
-  @js.native
-  sealed trait write extends StObject
-  inline def write: write = "write".asInstanceOf[write]
 }

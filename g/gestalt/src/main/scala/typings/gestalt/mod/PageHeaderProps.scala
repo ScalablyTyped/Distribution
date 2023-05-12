@@ -1,27 +1,27 @@
 package typings.gestalt.mod
 
-import typings.gestalt.anon.OnClick
+import typings.gestalt.anon.AccessibilityControls
+import typings.gestalt.anon.AccessibilityLabelHref
 import typings.gestalt.gestaltStrings.none
 import typings.gestalt.gestaltStrings.sm
 import typings.react.mod.ReactElement
-import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait PageHeaderProps extends StObject {
   
-  var badge: js.UndefOr[PageHeaderBadge] = js.undefined
+  var badge: js.UndefOr[typings.gestalt.anon.Text] = js.undefined
   
   var borderStyle: js.UndefOr[sm | none] = js.undefined
   
   var dropdownAccessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var helperIconButton: js.UndefOr[PageHeaderHelperIconButton] = js.undefined
+  var helperIconButton: js.UndefOr[AccessibilityControls] = js.undefined
   
-  var helperLink: js.UndefOr[OnClick] = js.undefined
+  var helperLink: js.UndefOr[AccessibilityLabelHref] = js.undefined
   
-  var items: js.UndefOr[js.Array[ReactNode]] = js.undefined
+  var items: js.UndefOr[js.Array[Node]] = js.undefined
   
   var maxWidth: js.UndefOr[Double | String] = js.undefined
   
@@ -45,7 +45,7 @@ object PageHeaderProps {
   @scala.inline
   implicit open class MutableBuilder[Self <: PageHeaderProps] (val x: Self) extends AnyVal {
     
-    inline def setBadge(value: PageHeaderBadge): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+    inline def setBadge(value: typings.gestalt.anon.Text): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     
     inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
     
@@ -57,19 +57,19 @@ object PageHeaderProps {
     
     inline def setDropdownAccessibilityLabelUndefined: Self = StObject.set(x, "dropdownAccessibilityLabel", js.undefined)
     
-    inline def setHelperIconButton(value: PageHeaderHelperIconButton): Self = StObject.set(x, "helperIconButton", value.asInstanceOf[js.Any])
+    inline def setHelperIconButton(value: AccessibilityControls): Self = StObject.set(x, "helperIconButton", value.asInstanceOf[js.Any])
     
     inline def setHelperIconButtonUndefined: Self = StObject.set(x, "helperIconButton", js.undefined)
     
-    inline def setHelperLink(value: OnClick): Self = StObject.set(x, "helperLink", value.asInstanceOf[js.Any])
+    inline def setHelperLink(value: AccessibilityLabelHref): Self = StObject.set(x, "helperLink", value.asInstanceOf[js.Any])
     
     inline def setHelperLinkUndefined: Self = StObject.set(x, "helperLink", js.undefined)
     
-    inline def setItems(value: js.Array[ReactNode]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[Node]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: ReactNode*): Self = StObject.set(x, "items", js.Array(value*))
+    inline def setItemsVarargs(value: Node*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setMaxWidth(value: Double | String): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     

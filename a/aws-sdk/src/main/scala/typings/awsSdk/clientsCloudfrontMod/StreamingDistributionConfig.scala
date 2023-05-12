@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StreamingDistributionConfig extends StObject {
   
   /**
-    * A complex type that contains information about CNAMEs (alternate domain names), if any, for this streaming distribution. 
+    * A complex type that contains information about CNAMEs (alternate domain names), if any, for this streaming distribution.
     */
   var Aliases: js.UndefOr[typings.awsSdk.clientsCloudfrontMod.Aliases] = js.undefined
   
@@ -17,7 +17,7 @@ trait StreamingDistributionConfig extends StObject {
   var CallerReference: String
   
   /**
-    * Any comments you want to include about the streaming distribution. 
+    * Any comments you want to include about the streaming distribution.
     */
   var Comment: String
   
@@ -27,22 +27,22 @@ trait StreamingDistributionConfig extends StObject {
   var Enabled: Boolean
   
   /**
-    * A complex type that controls whether access logs are written for the streaming distribution. 
+    * A complex type that controls whether access logs are written for the streaming distribution.
     */
   var Logging: js.UndefOr[StreamingLoggingConfig] = js.undefined
   
   /**
-    * A complex type that contains information about price class for this streaming distribution. 
+    * A complex type that contains information about price class for this streaming distribution.
     */
   var PriceClass: js.UndefOr[typings.awsSdk.clientsCloudfrontMod.PriceClass] = js.undefined
   
   /**
-    * A complex type that contains information about the Amazon S3 bucket from which you want CloudFront to get your media files for distribution. 
+    * A complex type that contains information about the Amazon S3 bucket from which you want CloudFront to get your media files for distribution.
     */
   var S3Origin: typings.awsSdk.clientsCloudfrontMod.S3Origin
   
   /**
-    * A complex type that specifies any Amazon Web Services accounts that you want to permit to create signed URLs for private content. If you want the distribution to use signed URLs, include this element; if you want the distribution to use public URLs, remove this element. For more information, see Serving Private Content through CloudFront in the Amazon CloudFront Developer Guide. 
+    * A complex type that specifies any Amazon Web Services accounts that you want to permit to create signed URLs for private content. If you want the distribution to use signed URLs, include this element; if you want the distribution to use public URLs, remove this element. For more information, see Serving Private Content through CloudFront in the Amazon CloudFront Developer Guide.
     */
   var TrustedSigners: typings.awsSdk.clientsCloudfrontMod.TrustedSigners
 }

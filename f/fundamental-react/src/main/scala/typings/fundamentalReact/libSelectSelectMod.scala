@@ -1,15 +1,14 @@
 package typings.fundamentalReact
 
-import typings.fundamentalReact.anon.PartialSelectProps
+import org.scalablytyped.runtime.Shortcut
+import typings.fundamentalReact.anon.DisplayName
+import typings.fundamentalReact.anon.SelectedKey
 import typings.fundamentalReact.anon.State
-import typings.fundamentalReact.anon.WeakValidationMapSelectPr
-import typings.fundamentalReact.fundamentalReactStrings.Select
 import typings.react.mod.FocusEvent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.NativeMouseEvent
-import typings.react.mod.ReactElement
-import typings.react.mod.ValidationMap
-import typings.std.Element
+import typings.react.mod.Ref
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLLIElement
@@ -19,62 +18,35 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object libSelectSelectMod {
+object libSelectSelectMod extends Shortcut {
   
-  /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/Select/Select.SelectProps> & {  displayName :'Select'} */
-  object default {
-    
-    inline def apply(props: SelectProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    inline def apply(props: SelectProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
-    
-    @JSImport("fundamental-react/lib/Select/Select", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("fundamental-react/lib/Select/Select", "default.contextTypes")
-    @js.native
-    def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
-    inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
-    
-    @JSImport("fundamental-react/lib/Select/Select", "default.defaultProps")
-    @js.native
-    def defaultProps: js.UndefOr[PartialSelectProps] = js.native
-    inline def defaultProps_=(x: js.UndefOr[PartialSelectProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
-    
-    @JSImport("fundamental-react/lib/Select/Select", "default.displayName")
-    @js.native
-    def displayName: js.UndefOr[Select | String] = js.native
-    inline def displayName_=(x: js.UndefOr[Select | String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
-    
-    @JSImport("fundamental-react/lib/Select/Select", "default.propTypes")
-    @js.native
-    def propTypes: js.UndefOr[WeakValidationMapSelectPr] = js.native
-    inline def propTypes_=(x: js.UndefOr[WeakValidationMapSelectPr]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
-  }
+  @JSImport("fundamental-react/lib/Select/Select", JSImport.Default)
+  @js.native
+  val default: (js.Function1[/* props */ SelectProps[String] & SelectedKey[String], Element]) & DisplayName = js.native
   
-  trait Option extends StObject {
+  trait Option[T /* <: String */] extends StObject {
     
-    var key: String
+    var key: T
     
     var text: String
   }
   object Option {
     
-    inline def apply(key: String, text: String): Option = {
+    inline def apply[T /* <: String */](key: T, text: String): Option[T] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Option]
+      __obj.asInstanceOf[Option[T]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: Option[?], T /* <: String */] (val x: Self & Option[T]) extends AnyVal {
       
-      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: T): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
-  trait SelectProps extends StObject {
+  trait SelectProps[T /* <: String */] extends StObject {
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -100,7 +72,7 @@ object libSelectSelectMod {
     
     var listItemTextClassName: js.UndefOr[String] = js.undefined
     
-    var onBlur: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLDivElement, Element], Unit]] = js.undefined
+    var onBlur: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLDivElement, typings.std.Element], Unit]] = js.undefined
     
     var onClick: js.UndefOr[
         js.Function1[/* event */ typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent], Unit]
@@ -109,12 +81,12 @@ object libSelectSelectMod {
     var onSelect: js.UndefOr[
         js.Function2[
           /* event */ (typings.react.mod.MouseEvent[HTMLLIElement, NativeMouseEvent]) | KeyboardEvent[HTMLLIElement], 
-          /* selectedOption */ Option, 
+          /* selectedOption */ Option[T], 
           Unit
         ]
       ] = js.undefined
     
-    var options: js.UndefOr[js.Array[Option]] = js.undefined
+    var options: js.UndefOr[js.Array[Option[T]]] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
     
@@ -122,9 +94,11 @@ object libSelectSelectMod {
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
+    var ref: js.UndefOr[Ref[HTMLDivElement]] = js.undefined
+    
     var referenceClassName: js.UndefOr[String] = js.undefined
     
-    var selectedKey: js.UndefOr[String] = js.undefined
+    var selectedKey: js.UndefOr[T] = js.undefined
     
     var textContentClassName: js.UndefOr[String] = js.undefined
     
@@ -136,13 +110,13 @@ object libSelectSelectMod {
   }
   object SelectProps {
     
-    inline def apply(): SelectProps = {
+    inline def apply[T /* <: String */](): SelectProps[T] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[SelectProps]
+      __obj.asInstanceOf[SelectProps[T]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: SelectProps] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: SelectProps[?], T /* <: String */] (val x: Self & SelectProps[T]) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -192,7 +166,7 @@ object libSelectSelectMod {
       
       inline def setListItemTextClassNameUndefined: Self = StObject.set(x, "listItemTextClassName", js.undefined)
       
-      inline def setOnBlur(value: /* event */ FocusEvent[HTMLDivElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: /* event */ FocusEvent[HTMLDivElement, typings.std.Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -201,16 +175,16 @@ object libSelectSelectMod {
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
       inline def setOnSelect(
-        value: (/* event */ (typings.react.mod.MouseEvent[HTMLLIElement, NativeMouseEvent]) | KeyboardEvent[HTMLLIElement], /* selectedOption */ Option) => Unit
+        value: (/* event */ (typings.react.mod.MouseEvent[HTMLLIElement, NativeMouseEvent]) | KeyboardEvent[HTMLLIElement], /* selectedOption */ Option[T]) => Unit
       ): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      inline def setOptions(value: js.Array[Option]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[Option[T]]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setOptionsVarargs(value: Option*): Self = StObject.set(x, "options", js.Array(value*))
+      inline def setOptionsVarargs(value: Option[T]*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
@@ -224,11 +198,19 @@ object libSelectSelectMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ HTMLDivElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      
       inline def setReferenceClassName(value: String): Self = StObject.set(x, "referenceClassName", value.asInstanceOf[js.Any])
       
       inline def setReferenceClassNameUndefined: Self = StObject.set(x, "referenceClassName", js.undefined)
       
-      inline def setSelectedKey(value: String): Self = StObject.set(x, "selectedKey", value.asInstanceOf[js.Any])
+      inline def setSelectedKey(value: T): Self = StObject.set(x, "selectedKey", value.asInstanceOf[js.Any])
       
       inline def setSelectedKeyUndefined: Self = StObject.set(x, "selectedKey", js.undefined)
       
@@ -249,4 +231,9 @@ object libSelectSelectMod {
       inline def setWrapperPropsUndefined: Self = StObject.set(x, "wrapperProps", js.undefined)
     }
   }
+  
+  type _To = (js.Function1[/* props */ SelectProps[String] & SelectedKey[String], Element]) & DisplayName
+  
+  /* This means you don't have to write `default`, but can instead just say `libSelectSelectMod.foo` */
+  override def _to: (js.Function1[/* props */ SelectProps[String] & SelectedKey[String], Element]) & DisplayName = default
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "mobx-state-tree" : "5.1.6"
+      "mobx-state-tree" : "5.1.8"
     }
   ],
   "test-dependencies" : [
     {
-      "mobx-state-tree" : "5.1.6"
+      "mobx-state-tree" : "5.1.8"
     }
   ],
   "compile-devDependencies" : [

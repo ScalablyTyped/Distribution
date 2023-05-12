@@ -1,5 +1,6 @@
 package typings.csvStringify
 
+import typings.csvStringify.anon.Bigint
 import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
@@ -49,7 +50,7 @@ object mod {
     
     var quoted_empty: js.UndefOr[Boolean] = js.undefined
     
-    var quoted_match: js.UndefOr[String | js.RegExp] = js.undefined
+    var quoted_match: js.UndefOr[String | js.RegExp | (js.Array[String | js.RegExp])] = js.undefined
     
     var quoted_string: js.UndefOr[Boolean] = js.undefined
     
@@ -87,9 +88,11 @@ object mod {
       
       inline def setQuoted_emptyUndefined: Self = StObject.set(x, "quoted_empty", js.undefined)
       
-      inline def setQuoted_match(value: String | js.RegExp): Self = StObject.set(x, "quoted_match", value.asInstanceOf[js.Any])
+      inline def setQuoted_match(value: String | js.RegExp | (js.Array[String | js.RegExp])): Self = StObject.set(x, "quoted_match", value.asInstanceOf[js.Any])
       
       inline def setQuoted_matchUndefined: Self = StObject.set(x, "quoted_match", js.undefined)
+      
+      inline def setQuoted_matchVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "quoted_match", js.Array(value*))
       
       inline def setQuoted_string(value: Boolean): Self = StObject.set(x, "quoted_string", value.asInstanceOf[js.Any])
       
@@ -173,7 +176,7 @@ object mod {
     /**
       * Key-value object which defines custom cast for certain data types
       */
-    var cast: js.UndefOr[typings.csvStringify.anon.Boolean] = js.undefined
+    var cast: js.UndefOr[Bigint] = js.undefined
     
     /**
       * List of fields, applied when `transform` returns an object
@@ -201,6 +204,11 @@ object mod {
     var escape: js.UndefOr[String | Buffer] = js.undefined
     
     /**
+      * Boolean, default to false, if true, fields that begin with `=`, `+`, `-`, `@`, `\t`, or `\r` will be prepended with a `'` to protected agains csv injection attacks
+      */
+    var escape_formulas: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Display the column names on the first line if the columns option is provided or discovered.
       */
     var header: js.UndefOr[Boolean] = js.undefined
@@ -223,7 +231,7 @@ object mod {
     /**
       * String or RegExp, no default, quote all fields matching a regular expression.
       */
-    var quoted_match: js.UndefOr[String | js.RegExp] = js.undefined
+    var quoted_match: js.UndefOr[String | js.RegExp | (js.Array[String | js.RegExp])] = js.undefined
     
     /**
       * Boolean, default to false, quote all fields of type string even if not required.
@@ -251,7 +259,7 @@ object mod {
       
       inline def setBomUndefined: Self = StObject.set(x, "bom", js.undefined)
       
-      inline def setCast(value: typings.csvStringify.anon.Boolean): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
+      inline def setCast(value: Bigint): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
       
       inline def setCastUndefined: Self = StObject.set(x, "cast", js.undefined)
       
@@ -273,6 +281,10 @@ object mod {
       
       inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
       
+      inline def setEscape_formulas(value: Boolean): Self = StObject.set(x, "escape_formulas", value.asInstanceOf[js.Any])
+      
+      inline def setEscape_formulasUndefined: Self = StObject.set(x, "escape_formulas", js.undefined)
+      
       inline def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
       inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
@@ -289,9 +301,11 @@ object mod {
       
       inline def setQuoted_emptyUndefined: Self = StObject.set(x, "quoted_empty", js.undefined)
       
-      inline def setQuoted_match(value: String | js.RegExp): Self = StObject.set(x, "quoted_match", value.asInstanceOf[js.Any])
+      inline def setQuoted_match(value: String | js.RegExp | (js.Array[String | js.RegExp])): Self = StObject.set(x, "quoted_match", value.asInstanceOf[js.Any])
       
       inline def setQuoted_matchUndefined: Self = StObject.set(x, "quoted_match", js.undefined)
+      
+      inline def setQuoted_matchVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "quoted_match", js.Array(value*))
       
       inline def setQuoted_string(value: Boolean): Self = StObject.set(x, "quoted_string", value.asInstanceOf[js.Any])
       

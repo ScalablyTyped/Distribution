@@ -37,7 +37,7 @@ trait StartChildWorkflowExecutionDecisionAttributes extends StObject {
   var tagList: js.UndefOr[TagList] = js.undefined
   
   /**
-    * The name of the task list to be used for decision tasks of the child workflow execution.  A task list for this workflow execution must be specified either as a default for the workflow type or through this parameter. If neither this parameter is set nor a default task list was specified at registration time then a fault is returned.  The specified string must not start or end with whitespace. It must not contain a : (colon), / (slash), | (vertical bar), or any control characters (\\u0000-\\u001f | \\u007f-\\u009f). Also, it must not contain the literal string arn.
+    * The name of the task list to be used for decision tasks of the child workflow execution.  A task list for this workflow execution must be specified either as a default for the workflow type or through this parameter. If neither this parameter is set nor a default task list was specified at registration time then a fault is returned.  The specified string must not start or end with whitespace. It must not contain a : (colon), / (slash), | (vertical bar), or any control characters (\\u0000-\\u001f | \\u007f-\\u009f). Also, it must not be the literal string arn.
     */
   var taskList: js.UndefOr[TaskList] = js.undefined
   
@@ -52,7 +52,7 @@ trait StartChildWorkflowExecutionDecisionAttributes extends StObject {
   var taskStartToCloseTimeout: js.UndefOr[DurationInSecondsOptional] = js.undefined
   
   /**
-    *  The workflowId of the workflow execution. The specified string must not start or end with whitespace. It must not contain a : (colon), / (slash), | (vertical bar), or any control characters (\\u0000-\\u001f | \\u007f-\\u009f). Also, it must not contain the literal string arn.
+    *  The workflowId of the workflow execution. The specified string must not contain a : (colon), / (slash), | (vertical bar), or any control characters (\\u0000-\\u001f | \\u007f-\\u009f). Also, it must not be the literal string arn.
     */
   var workflowId: WorkflowId
   

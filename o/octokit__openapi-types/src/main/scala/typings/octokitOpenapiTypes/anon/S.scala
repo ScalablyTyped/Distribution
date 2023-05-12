@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait S extends StObject {
   
-  /** The words to show in Octocat's speech bubble */
+  /** @description The words to show in Octocat's speech bubble */
   var s: js.UndefOr[String] = js.undefined
 }
 object S {

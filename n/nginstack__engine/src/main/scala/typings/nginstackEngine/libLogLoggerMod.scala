@@ -25,18 +25,18 @@ object libLogLoggerMod {
   trait Logger extends StObject {
     
     def debug(log: String): Unit = js.native
-    def debug(log: String, opt_formatArgs: js.Array[Any]): Unit = js.native
+    def debug(log: String, formatArgs: js.Array[Any]): Unit = js.native
     
     def error(log: String): Unit = js.native
-    def error(log: String, opt_formatArgs: js.Array[Any]): Unit = js.native
+    def error(log: String, formatArgs: js.Array[Any]): Unit = js.native
     
     def fatal(log: String): Unit = js.native
-    def fatal(log: String, opt_formatArgs: js.Array[Any]): Unit = js.native
+    def fatal(log: String, formatArgs: js.Array[Any]): Unit = js.native
     
     def info(log: String): Unit = js.native
-    def info(log: String, opt_formatArgs: js.Array[Any]): Unit = js.native
+    def info(log: String, formatArgs: js.Array[Any]): Unit = js.native
     
     def warn(log: String): Unit = js.native
-    def warn(log: String, opt_formatArgs: js.Array[Any]): Unit = js.native
+    def warn(log: String, formatArgs: js.Array[Any]): Unit = js.native
   }
 }

@@ -1,7 +1,5 @@
 package typings.nginstackDatasource
 
-import typings.nginstackDatasource.anon.ClassDef
-import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,8 +56,7 @@ object libDataSourceFiltersMod {
     def hasFilter(name: String): Boolean = js.native
     
     def importFields(classKey: Double, prefix: String): Unit = js.native
-    def importFields(classKey: Double, prefix: String, opt_options: ClassDef): Unit = js.native
-    def importFields(classKey: Double, prefix: String, opt_options: Record[Any, Any]): Unit = js.native
+    def importFields(classKey: Double, prefix: String, opt_options: Any): Unit = js.native
     
     def importVisibleFields(classKey: Double): Unit = js.native
     def importVisibleFields(classKey: Double, fieldNamesPrefix: String): Unit = js.native

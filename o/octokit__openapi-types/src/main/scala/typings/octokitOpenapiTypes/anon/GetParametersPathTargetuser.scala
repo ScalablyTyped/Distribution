@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersPathTargetuser extends StObject {
   
+  /** Check if a user follows another user */
   var get: ParametersPathTargetuser
 }
 object GetParametersPathTargetuser {

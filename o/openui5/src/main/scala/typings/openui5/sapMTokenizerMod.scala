@@ -488,6 +488,7 @@ object sapMTokenizerMod {
     
     /**
       * @deprecated (since 1.82) - replaced by `tokenDelete` event.
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:tokenChange tokenChange} to attached listeners.
       *
@@ -501,6 +502,7 @@ object sapMTokenizerMod {
     
     /**
       * @SINCE 1.82
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:tokenDelete tokenDelete} to attached listeners.
       *
@@ -515,6 +517,7 @@ object sapMTokenizerMod {
     /**
       * @SINCE 1.46
       * @deprecated (since 1.82) - replaced by `tokenDelete` event.
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:tokenUpdate tokenUpdate} to attached listeners.
       *
@@ -551,6 +554,15 @@ object sapMTokenizerMod {
       * @returns Value of property `editable`
       */
     def getEditable(): Boolean = js.native
+    
+    /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
+      * Flag indicating if tabindex attribute should be rendered
+      *
+      * @returns True if tabindex should be rendered and false if not
+      */
+    def getEffectiveTabIndex(): Boolean = js.native
     
     /**
       * @SINCE 1.80
@@ -616,6 +628,8 @@ object sapMTokenizerMod {
     def getTokens(): js.Array[typings.openui5.sapMTokenMod.default] = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Gets the accessibility text aggregation id.
       *
       * @returns Returns the InvisibleText control id
@@ -632,6 +646,8 @@ object sapMTokenizerMod {
     def getWidth(): CSSSize = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Checks if the token is one and truncated.
       */
     def hasOneTruncatedToken(): Boolean = js.native
@@ -666,6 +682,8 @@ object sapMTokenizerMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Handle the focus event on the control.
       */
     def onclick(/**
@@ -809,6 +827,8 @@ object sapMTokenizerMod {
     bEditable: Boolean): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets the first token truncation.
       *
       * @returns `this` instance for method chaining
@@ -862,6 +882,16 @@ object sapMTokenizerMod {
       * New value for property `renderMode`
       */
     sRenderMode: String): this.type = js.native
+    
+    /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
+      * Method for handling the state for tabindex rendering
+      */
+    def setShouldRenderTabIndex(/**
+      * If tabindex should be rendered
+      */
+    bShouldRenderTabIndex: Boolean): Unit = js.native
     
     /**
       * Sets a new value for property {@link #getWidth width}.

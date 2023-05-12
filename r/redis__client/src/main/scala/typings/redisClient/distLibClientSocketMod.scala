@@ -38,9 +38,7 @@ object distLibClientSocketMod {
     
     /* private */ var `private`: Any = js.native
     
-    def quit(fn: js.Function0[js.Promise[Any]]): js.Promise[Unit] = js.native
-    
-    def reconnectStrategy(retries: Double): Double | js.Error = js.native
+    def quit[T](fn: js.Function0[js.Promise[T]]): js.Promise[T] = js.native
     
     def ref(): Unit = js.native
     
@@ -53,13 +51,31 @@ object distLibClientSocketMod {
   
   trait RedisSocketCommonOptions extends StObject {
     
+    /**
+      * Connection Timeout (in milliseconds)
+      */
     var connectTimeout: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Toggle [`keep-alive`](https://nodejs.org/api/net.html#net_socket_setkeepalive_enable_initialdelay)
+      */
     var keepAlive: js.UndefOr[Double | `false`] = js.undefined
     
+    /**
+      * Toggle [`Nagle's algorithm`](https://nodejs.org/api/net.html#net_socket_setnodelay_nodelay)
+      */
     var noDelay: js.UndefOr[Boolean] = js.undefined
     
-    var reconnectStrategy: js.UndefOr[js.Function1[/* retries */ Double, Double | js.Error]] = js.undefined
+    /**
+      * When the socket closes unexpectedly (without calling `.quit()`/`.disconnect()`), the client uses `reconnectStrategy` to decide what to do. The following values are supported:
+      * 1. `false` -> do not reconnect, close the client and flush the command queue.
+      * 2. `number` -> wait for `X` milliseconds before reconnecting.
+      * 3. `(retries: number, cause: Error) => false | number | Error` -> `number` is the same as configuring a `number` directly, `Error` is the same as `false`, but with a custom error.
+      * Defaults to `retries => Math.min(retries * 50, 500)`
+      */
+    var reconnectStrategy: js.UndefOr[
+        `false` | Double | (js.Function2[/* retries */ Double, /* cause */ js.Error, `false` | js.Error | Double])
+      ] = js.undefined
   }
   object RedisSocketCommonOptions {
     
@@ -83,7 +99,11 @@ object distLibClientSocketMod {
       
       inline def setNoDelayUndefined: Self = StObject.set(x, "noDelay", js.undefined)
       
-      inline def setReconnectStrategy(value: /* retries */ Double => Double | js.Error): Self = StObject.set(x, "reconnectStrategy", js.Any.fromFunction1(value))
+      inline def setReconnectStrategy(
+        value: `false` | Double | (js.Function2[/* retries */ Double, /* cause */ js.Error, `false` | js.Error | Double])
+      ): Self = StObject.set(x, "reconnectStrategy", value.asInstanceOf[js.Any])
+      
+      inline def setReconnectStrategyFunction2(value: (/* retries */ Double, /* cause */ js.Error) => `false` | js.Error | Double): Self = StObject.set(x, "reconnectStrategy", js.Any.fromFunction2(value))
       
       inline def setReconnectStrategyUndefined: Self = StObject.set(x, "reconnectStrategy", js.undefined)
     }

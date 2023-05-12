@@ -4,7 +4,7 @@ import typings.node.bufferMod.global.Buffer
 import typings.oracledb.mod.DBCredentials
 import typings.oracledb.mod.DBObjectClass
 import typings.oracledb.mod.DBObjectIN
-import typings.oracledb.mod.SubscriptionTables
+import typings.oracledb.mod.SubscriptionTable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -445,20 +445,24 @@ object anon {
   
   trait Tables extends StObject {
     
-    /** Array of objects specifying the queries which were affected by the Query Change notification. */
-    var tables: SubscriptionTables
+    /** Array of objects specifying the tables which were affected by the notification. */
+    var tables: js.UndefOr[js.Array[SubscriptionTable]] = js.undefined
   }
   object Tables {
     
-    inline def apply(tables: SubscriptionTables): Tables = {
-      val __obj = js.Dynamic.literal(tables = tables.asInstanceOf[js.Any])
+    inline def apply(): Tables = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Tables]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: Tables] (val x: Self) extends AnyVal {
       
-      inline def setTables(value: SubscriptionTables): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
+      inline def setTables(value: js.Array[SubscriptionTable]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
+      
+      inline def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
+      
+      inline def setTablesVarargs(value: SubscriptionTable*): Self = StObject.set(x, "tables", js.Array(value*))
     }
   }
   

@@ -8,9 +8,8 @@ import typings.opentelemetryApi.buildSrcTraceLinkMod.Link
 import typings.opentelemetryApi.buildSrcTraceSpanContextMod.SpanContext
 import typings.opentelemetryApi.buildSrcTraceSpanKindMod.SpanKind
 import typings.opentelemetryApi.buildSrcTraceStatusMod.SpanStatus
-import typings.opentelemetryCore.buildSrcCommonAnchoredClockMod.Clock
 import typings.opentelemetryCore.buildSrcCommonTypesMod.InstrumentationLibrary
-import typings.opentelemetryResources.mod.Resource
+import typings.opentelemetryResources.buildSrcIresourceMod.IResource
 import typings.opentelemetrySdkTraceBase.buildSrcExportReadableSpanMod.ReadableSpan
 import typings.opentelemetrySdkTraceBase.buildSrcTimedEventMod.TimedEvent
 import typings.opentelemetrySdkTraceBase.buildSrcTracerMod.Tracer
@@ -107,7 +106,7 @@ object buildSrcSpanMod {
       parentSpanId: String,
       links: js.Array[Link],
       startTime: Unit,
-      clock: Clock
+      _deprecatedClock: Any
     ) = this()
     def this(
       parentTracer: Tracer,
@@ -118,7 +117,7 @@ object buildSrcSpanMod {
       parentSpanId: String,
       links: js.Array[Link],
       startTime: TimeInput,
-      clock: Clock
+      _deprecatedClock: Any
     ) = this()
     def this(
       parentTracer: Tracer,
@@ -129,7 +128,7 @@ object buildSrcSpanMod {
       parentSpanId: String,
       links: Unit,
       startTime: Unit,
-      clock: Clock
+      _deprecatedClock: Any
     ) = this()
     def this(
       parentTracer: Tracer,
@@ -140,7 +139,7 @@ object buildSrcSpanMod {
       parentSpanId: String,
       links: Unit,
       startTime: TimeInput,
-      clock: Clock
+      _deprecatedClock: Any
     ) = this()
     def this(
       parentTracer: Tracer,
@@ -151,7 +150,7 @@ object buildSrcSpanMod {
       parentSpanId: Unit,
       links: js.Array[Link],
       startTime: Unit,
-      clock: Clock
+      _deprecatedClock: Any
     ) = this()
     def this(
       parentTracer: Tracer,
@@ -162,7 +161,7 @@ object buildSrcSpanMod {
       parentSpanId: Unit,
       links: js.Array[Link],
       startTime: TimeInput,
-      clock: Clock
+      _deprecatedClock: Any
     ) = this()
     def this(
       parentTracer: Tracer,
@@ -173,7 +172,7 @@ object buildSrcSpanMod {
       parentSpanId: Unit,
       links: Unit,
       startTime: Unit,
-      clock: Clock
+      _deprecatedClock: Any
     ) = this()
     def this(
       parentTracer: Tracer,
@@ -184,24 +183,36 @@ object buildSrcSpanMod {
       parentSpanId: Unit,
       links: Unit,
       startTime: TimeInput,
-      clock: Clock
+      _deprecatedClock: Any
     ) = this()
     
     /* private */ val _attributeValueLengthLimit: Any = js.native
     
-    /* private */ val _clock: Any = js.native
+    /* private */ var _droppedAttributesCount: Any = js.native
+    
+    /* private */ var _droppedEventsCount: Any = js.native
+    
+    /* private */ var _droppedLinksCount: Any = js.native
     
     /* private */ var _duration: Any = js.native
     
     /* private */ var _ended: Any = js.native
     
+    /* private */ var _getTime: Any = js.native
+    
     /* private */ var _isSpanEnded: Any = js.native
+    
+    /* private */ val _performanceOffset: Any = js.native
+    
+    /* private */ val _performanceStartTime: Any = js.native
     
     /* private */ val _spanContext: Any = js.native
     
     /* private */ val _spanLimits: Any = js.native
     
     /* private */ val _spanProcessor: Any = js.native
+    
+    /* private */ val _startTimeProvided: Any = js.native
     
     /* private */ var _truncateToLimitUtil: Any = js.native
     
@@ -221,6 +232,15 @@ object buildSrcSpanMod {
     
     /* CompleteClass */
     override val attributes: SpanAttributes = js.native
+    
+    /* CompleteClass */
+    override val droppedAttributesCount: Double = js.native
+    
+    /* CompleteClass */
+    override val droppedEventsCount: Double = js.native
+    
+    /* CompleteClass */
+    override val droppedLinksCount: Double = js.native
     
     /* CompleteClass */
     override val duration: HrTime = js.native
@@ -247,7 +267,7 @@ object buildSrcSpanMod {
     override val name: String = js.native
     
     /* CompleteClass */
-    override val resource: Resource = js.native
+    override val resource: IResource = js.native
     
     def setAttribute(key: String): this.type = js.native
     

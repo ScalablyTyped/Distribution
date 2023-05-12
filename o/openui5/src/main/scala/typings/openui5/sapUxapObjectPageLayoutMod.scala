@@ -766,6 +766,8 @@ object sapUxapObjectPageLayoutMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:editHeaderButtonPress editHeaderButtonPress} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -778,6 +780,7 @@ object sapUxapObjectPageLayoutMod {
     
     /**
       * @SINCE 1.93
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:headerContentPinnedStateChange headerContentPinnedStateChange} to attached
       * listeners.
@@ -792,6 +795,7 @@ object sapUxapObjectPageLayoutMod {
     
     /**
       * @SINCE 1.40
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:navigate navigate} to attached listeners.
       *
@@ -805,6 +809,7 @@ object sapUxapObjectPageLayoutMod {
     
     /**
       * @SINCE 1.73
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:sectionChange sectionChange} to attached listeners.
       *
@@ -818,6 +823,7 @@ object sapUxapObjectPageLayoutMod {
     
     /**
       * @SINCE 1.77
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:subSectionVisibilityChange subSectionVisibilityChange} to attached listeners.
       *
@@ -830,6 +836,8 @@ object sapUxapObjectPageLayoutMod {
     mParameters: VisibleSubSections): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:toggleAnchorBar toggleAnchorBar} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

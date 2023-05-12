@@ -20,7 +20,6 @@ object global {
   }
   /**
     * [ZeroClipboard description]
-    * @type {ZC.ZeroClipboardStatic}
     */
   @JSGlobal("ZeroClipboard")
   @js.native

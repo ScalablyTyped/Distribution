@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CurrentScreenBlock
   extends StObject
-     with NodeMaterialBlock {
+     with NodeMaterialBlock
+     with NodeMaterialTextureBlocks {
   
   /* private */ var _gammaDefineName: Any = js.native
   

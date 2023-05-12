@@ -51,13 +51,13 @@ object libStringStringListMod {
     override def getAllObjects(): js.Array[Any] = js.native
     
     /* CompleteClass */
-    override def getText(separator: Any): String = js.native
+    override def getText(separator: Any): Any = js.native
     
     /* CompleteClass */
-    override def indexOf(string: Any): Double = js.native
+    override def indexOf(string: Any): Any = js.native
     
     /* CompleteClass */
-    override def indexOfObject(`object`: Any): Double = js.native
+    override def indexOfObject(`object`: Any): Any = js.native
     
     /* CompleteClass */
     override def insert(index: Any, string: Any): Unit = js.native
@@ -113,11 +113,11 @@ object libStringStringListMod {
     
     def getAllObjects(): js.Array[Any]
     
-    def getText(separator: Any): String
+    def getText(separator: Any): Any
     
-    def indexOf(string: Any): Double
+    def indexOf(string: Any): Any
     
-    def indexOfObject(`object`: Any): Double
+    def indexOfObject(`object`: Any): Any
     
     def insert(index: Any, string: Any): Unit
     
@@ -150,9 +150,9 @@ object libStringStringListMod {
       find: Any => js.Array[Double | Boolean],
       findObjectsByString: Any => Any,
       getAllObjects: () => js.Array[Any],
-      getText: Any => String,
-      indexOf: Any => Double,
-      indexOfObject: Any => Double,
+      getText: Any => Any,
+      indexOf: Any => Any,
+      indexOfObject: Any => Any,
       insert: (Any, Any) => Unit,
       insertObject: (Any, Any, Any) => Unit,
       objects: Any => Any,
@@ -195,11 +195,11 @@ object libStringStringListMod {
       
       inline def setGetAllObjects(value: () => js.Array[Any]): Self = StObject.set(x, "getAllObjects", js.Any.fromFunction0(value))
       
-      inline def setGetText(value: Any => String): Self = StObject.set(x, "getText", js.Any.fromFunction1(value))
+      inline def setGetText(value: Any => Any): Self = StObject.set(x, "getText", js.Any.fromFunction1(value))
       
-      inline def setIndexOf(value: Any => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
+      inline def setIndexOf(value: Any => Any): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
       
-      inline def setIndexOfObject(value: Any => Double): Self = StObject.set(x, "indexOfObject", js.Any.fromFunction1(value))
+      inline def setIndexOfObject(value: Any => Any): Self = StObject.set(x, "indexOfObject", js.Any.fromFunction1(value))
       
       inline def setInsert(value: (Any, Any) => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
       

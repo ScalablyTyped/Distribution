@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Interface for the Xrm.WebApi.online API
+  * Interface for the {@link Xrm.WebApi.online} API
   * Execute and ExecuteMultiple are only available when online, not offline.
   */
 @js.native
@@ -16,7 +16,7 @@ trait WebApiOnline
   
   /**
     * Execute a single action, function, or CRUD operation.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-webapi/execute External Link: execute (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-webapi/online/execute External Link: Xrm.WebApi.online.execute (Client API reference)}
     * @param request Object that will be passed to the Web API endpoint to execute an action, function, or CRUD request.
     * @remarks The object exposes a getMetadata method that lets you define the metadata for the action, function or CRUD request you want to execute.<BR>
     * **The getMetadata method has the following parameters**:
@@ -44,7 +44,7 @@ trait WebApiOnline
   
   /**
     * Execute a collection of action, function, or CRUD operations.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-webapi/executemultiple External Link: executeMultiple (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-webapi/online/executemultiple External Link: Xrm.WebApi.online.executeMultiple (Client API reference)}
     * @param request   An array of one of one of the following types:
     *    -objects where each object is an action, function, or CRUD request that you want to execute
     *        * against the Web API endpoint. Each object exposes a getMetadata method that lets you define

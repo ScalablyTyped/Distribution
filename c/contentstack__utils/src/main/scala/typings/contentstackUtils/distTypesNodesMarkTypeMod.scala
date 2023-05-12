@@ -15,6 +15,8 @@ object distTypesNodesMarkTypeMod {
     
     /* "bold" */ val BOLD: typings.contentstackUtils.distTypesNodesMarkTypeMod.MarkType.BOLD & String = js.native
     
+    /* "break" */ val BREAK: typings.contentstackUtils.distTypesNodesMarkTypeMod.MarkType.BREAK & String = js.native
+    
     /* "inlineCode" */ val INLINE_CODE: typings.contentstackUtils.distTypesNodesMarkTypeMod.MarkType.INLINE_CODE & String = js.native
     
     /* "italic" */ val ITALIC: typings.contentstackUtils.distTypesNodesMarkTypeMod.MarkType.ITALIC & String = js.native
@@ -36,6 +38,11 @@ object distTypesNodesMarkTypeMod {
     
     @js.native
     sealed trait BOLD
+      extends StObject
+         with MarkType
+    
+    @js.native
+    sealed trait BREAK
       extends StObject
          with MarkType
     

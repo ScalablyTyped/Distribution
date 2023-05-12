@@ -14,6 +14,7 @@ trait MetadataResource
   
   /**
     * The 'date' element may be more recent than the approval date because of minor changes or editorial corrections.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var approvalDate: js.UndefOr[String] = js.undefined
   
@@ -29,11 +30,12 @@ trait MetadataResource
   
   /**
     * The effective period for a {{title}}  determines when the content is applicable for usage and is independent of publication and review dates. For example, a measure intended to be used for the year 2016 might be published in 2015.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var effectivePeriod: js.UndefOr[Period] = js.undefined
   
   /**
-    * An individual or organization responsible for officially endorsing the {{title}} for use in some setting.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var endorser: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
@@ -48,12 +50,13 @@ trait MetadataResource
   var relatedArtifact: js.UndefOr[js.Array[RelatedArtifact]] = js.undefined
   
   /**
-    * An individual or organization primarily responsible for review of some aspect of the {{title}}.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var reviewer: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
   /**
-    * This element provides a topical categorization of the {{title}}, as opposed to the more structured context-of-use information provided in the useContext element
+    * This element provides topical categorization and keywords for the {{title}}, as opposed to the more structured context-of-use information provided in the useContext element.
+    * DEPRECATION NOTE: For consistency, implementations are encouraged to migrate to using the new 'topic' code in the useContext element.  (I.e. useContext.code indicating http://terminology.hl7.org/CodeSystem/usage-context-type#topic and useContext.valueCodeableConcept indicating the topic)
     */
   var topic: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
 }

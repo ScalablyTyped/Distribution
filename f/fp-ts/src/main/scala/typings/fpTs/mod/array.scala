@@ -21,7 +21,7 @@ import typings.fpTs.libFilterableWithIndexMod.RefinementWithIndex
 import typings.fpTs.libFoldableMod.Foldable1
 import typings.fpTs.libFoldableWithIndexMod.FoldableWithIndex1
 import typings.fpTs.libFromEitherMod.FromEither1
-import typings.fpTs.libFunctionMod.Lazy
+import typings.fpTs.libFunctionMod.LazyArg
 import typings.fpTs.libFunctorMod.Functor1
 import typings.fpTs.libFunctorWithIndexMod.FunctorWithIndex1
 import typings.fpTs.libMagmaMod.Magma
@@ -158,9 +158,9 @@ object array {
   @js.native
   val Zero_ : Zero1[typings.fpTs.libArrayMod.URI] = js.native
   
-  inline def alt[A](that: Lazy[js.Array[A]]): js.Function1[/* fa */ js.Array[A], js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ js.Array[A], js.Array[A]]]
+  inline def alt[A](that: LazyArg[js.Array[A]]): js.Function1[/* fa */ js.Array[A], js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ js.Array[A], js.Array[A]]]
   
-  inline def altW[B](that: Lazy[js.Array[B]]): js.Function1[/* fa */ js.Array[Any], js.Array[B | Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("altW")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ js.Array[Any], js.Array[B | Any]]]
+  inline def altW[B](that: LazyArg[js.Array[B]]): js.Function1[/* fa */ js.Array[Any], js.Array[B | Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("altW")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ js.Array[Any], js.Array[B | Any]]]
   
   inline def ap[A](fa: js.Array[A]): js.Function1[/* fab */ js.Array[js.Function1[/* a */ A, Any]], js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ap")(fa.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ js.Array[js.Function1[/* a */ A, Any]], js.Array[Any]]]
   
@@ -332,9 +332,12 @@ object array {
   
   inline def flap[A](a: A): js.Function1[/* fab */ js.Array[js.Function1[/* a */ A, Any]], js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flap")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ js.Array[js.Function1[/* a */ A, Any]], js.Array[Any]]]
   
+  inline def flatMap[A, B](f: js.Function2[/* a */ A, /* i */ Double, js.Array[B]]): js.Function1[/* ma */ js.Array[A], js.Array[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ js.Array[A], js.Array[B]]]
+  inline def flatMap[A, B](ma: js.Array[A], f: js.Function2[/* a */ A, /* i */ Double, js.Array[B]]): js.Array[B] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(ma.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Array[B]]
+  
   inline def flatten[A](mma: js.Array[js.Array[A]]): js.Array[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(mma.asInstanceOf[js.Any]).asInstanceOf[js.Array[A]]
   
-  inline def foldLeft[A, B](onEmpty: Lazy[B], onNonEmpty: js.Function2[/* head */ A, /* tail */ js.Array[A], B]): js.Function1[/* as */ js.Array[A], B] = (^.asInstanceOf[js.Dynamic].applyDynamic("foldLeft")(onEmpty.asInstanceOf[js.Any], onNonEmpty.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* as */ js.Array[A], B]]
+  inline def foldLeft[A, B](onEmpty: LazyArg[B], onNonEmpty: js.Function2[/* head */ A, /* tail */ js.Array[A], B]): js.Function1[/* as */ js.Array[A], B] = (^.asInstanceOf[js.Dynamic].applyDynamic("foldLeft")(onEmpty.asInstanceOf[js.Any], onNonEmpty.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* as */ js.Array[A], B]]
   
   inline def foldMap[M](M: Monoid[M]): js.Function1[/* f */ js.Function1[/* a */ Any, M], js.Function1[/* fa */ js.Array[Any], M]] = ^.asInstanceOf[js.Dynamic].applyDynamic("foldMap")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* f */ js.Function1[/* a */ Any, M], js.Function1[/* fa */ js.Array[Any], M]]]
   
@@ -346,7 +349,7 @@ object array {
     js.Function1[/* fa */ js.Array[Any], M]
   ]]
   
-  inline def foldRight[A, B](onEmpty: Lazy[B], onNonEmpty: js.Function2[/* init */ js.Array[A], /* last */ A, B]): js.Function1[/* as */ js.Array[A], B] = (^.asInstanceOf[js.Dynamic].applyDynamic("foldRight")(onEmpty.asInstanceOf[js.Any], onNonEmpty.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* as */ js.Array[A], B]]
+  inline def foldRight[A, B](onEmpty: LazyArg[B], onNonEmpty: js.Function2[/* init */ js.Array[A], /* last */ A, B]): js.Function1[/* as */ js.Array[A], B] = (^.asInstanceOf[js.Dynamic].applyDynamic("foldRight")(onEmpty.asInstanceOf[js.Any], onNonEmpty.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* as */ js.Array[A], B]]
   
   inline def fromEither[A](fa: Either_[Any, A]): js.Array[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEither")(fa.asInstanceOf[js.Any]).asInstanceOf[js.Array[A]]
   
@@ -423,17 +426,17 @@ object array {
   
   inline def mapWithIndex[A, B](f: js.Function2[/* i */ Double, /* a */ A, B]): js.Function1[/* fa */ js.Array[A], js.Array[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapWithIndex")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ js.Array[A], js.Array[B]]]
   
-  inline def `match`[B, A](onEmpty: Lazy[B], onNonEmpty: js.Function1[/* as */ NonEmptyArray_[A], B]): js.Function1[/* as */ js.Array[A], B] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(onEmpty.asInstanceOf[js.Any], onNonEmpty.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* as */ js.Array[A], B]]
+  inline def `match`[B, A](onEmpty: LazyArg[B], onNonEmpty: js.Function1[/* as */ NonEmptyArray_[A], B]): js.Function1[/* as */ js.Array[A], B] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(onEmpty.asInstanceOf[js.Any], onNonEmpty.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* as */ js.Array[A], B]]
   
-  inline def matchLeft[B, A](onEmpty: Lazy[B], onNonEmpty: js.Function2[/* head */ A, /* tail */ js.Array[A], B]): js.Function1[/* as */ js.Array[A], B] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchLeft")(onEmpty.asInstanceOf[js.Any], onNonEmpty.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* as */ js.Array[A], B]]
+  inline def matchLeft[B, A](onEmpty: LazyArg[B], onNonEmpty: js.Function2[/* head */ A, /* tail */ js.Array[A], B]): js.Function1[/* as */ js.Array[A], B] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchLeft")(onEmpty.asInstanceOf[js.Any], onNonEmpty.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* as */ js.Array[A], B]]
   
-  inline def matchLeftW[B, A, C](onEmpty: Lazy[B], onNonEmpty: js.Function2[/* head */ A, /* tail */ js.Array[A], C]): js.Function1[/* as */ js.Array[A], B | C] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchLeftW")(onEmpty.asInstanceOf[js.Any], onNonEmpty.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* as */ js.Array[A], B | C]]
+  inline def matchLeftW[B, A, C](onEmpty: LazyArg[B], onNonEmpty: js.Function2[/* head */ A, /* tail */ js.Array[A], C]): js.Function1[/* as */ js.Array[A], B | C] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchLeftW")(onEmpty.asInstanceOf[js.Any], onNonEmpty.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* as */ js.Array[A], B | C]]
   
-  inline def matchRight[B, A](onEmpty: Lazy[B], onNonEmpty: js.Function2[/* init */ js.Array[A], /* last */ A, B]): js.Function1[/* as */ js.Array[A], B] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchRight")(onEmpty.asInstanceOf[js.Any], onNonEmpty.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* as */ js.Array[A], B]]
+  inline def matchRight[B, A](onEmpty: LazyArg[B], onNonEmpty: js.Function2[/* init */ js.Array[A], /* last */ A, B]): js.Function1[/* as */ js.Array[A], B] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchRight")(onEmpty.asInstanceOf[js.Any], onNonEmpty.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* as */ js.Array[A], B]]
   
-  inline def matchRightW[B, A, C](onEmpty: Lazy[B], onNonEmpty: js.Function2[/* init */ js.Array[A], /* last */ A, C]): js.Function1[/* as */ js.Array[A], B | C] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchRightW")(onEmpty.asInstanceOf[js.Any], onNonEmpty.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* as */ js.Array[A], B | C]]
+  inline def matchRightW[B, A, C](onEmpty: LazyArg[B], onNonEmpty: js.Function2[/* init */ js.Array[A], /* last */ A, C]): js.Function1[/* as */ js.Array[A], B | C] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchRightW")(onEmpty.asInstanceOf[js.Any], onNonEmpty.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* as */ js.Array[A], B | C]]
   
-  inline def matchW[B, A, C](onEmpty: Lazy[B], onNonEmpty: js.Function1[/* as */ NonEmptyArray_[A], C]): js.Function1[/* as */ js.Array[A], B | C] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchW")(onEmpty.asInstanceOf[js.Any], onNonEmpty.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* as */ js.Array[A], B | C]]
+  inline def matchW[B, A, C](onEmpty: LazyArg[B], onNonEmpty: js.Function1[/* as */ NonEmptyArray_[A], C]): js.Function1[/* as */ js.Array[A], B | C] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchW")(onEmpty.asInstanceOf[js.Any], onNonEmpty.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* as */ js.Array[A], B | C]]
   
   inline def modifyAt[A](i: Double, f: js.Function1[/* a */ A, A]): js.Function1[/* as */ js.Array[A], Option_[js.Array[A]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("modifyAt")(i.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* as */ js.Array[A], Option_[js.Array[A]]]]
   

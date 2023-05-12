@@ -1,6 +1,5 @@
 package typings.grpcGrpcJs
 
-import typings.grpcProtoLoader.mod.Long
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,9 @@ object buildSrcGeneratedGoogleProtobufTimestampMod {
     
     var nanos: js.UndefOr[Double] = js.undefined
     
-    var seconds: js.UndefOr[Double | String | Long] = js.undefined
+    var seconds: js.UndefOr[
+        Double | String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any)
+      ] = js.undefined
   }
   object Timestamp {
     
@@ -27,7 +28,9 @@ object buildSrcGeneratedGoogleProtobufTimestampMod {
       
       inline def setNanosUndefined: Self = StObject.set(x, "nanos", js.undefined)
       
-      inline def setSeconds(value: Double | String | Long): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+      inline def setSeconds(
+        value: Double | String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any)
+      ): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
       
       inline def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
     }

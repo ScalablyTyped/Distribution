@@ -1,9 +1,10 @@
 package typings.rcSelect
 
 import org.scalablytyped.runtime.Shortcut
+import typings.rcComponentTrigger.esInterfaceMod.AlignType
+import typings.rcComponentTrigger.esInterfaceMod.BuildInPlacements
 import typings.rcSelect.libBaseSelectMod.Placement
 import typings.rcSelect.libBaseSelectMod.RenderDOMFunc
-import typings.rcTrigger.esInterfaceMod.AlignType
 import typings.react.mod.CSSProperties
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.ReactElement
@@ -41,6 +42,8 @@ object libSelectTriggerMod extends Shortcut {
   trait SelectTriggerProps extends StObject {
     
     var animation: js.UndefOr[String] = js.undefined
+    
+    var builtinPlacements: js.UndefOr[BuildInPlacements] = js.undefined
     
     var children: ReactElement
     
@@ -107,6 +110,10 @@ object libSelectTriggerMod extends Shortcut {
       inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
       inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      
+      inline def setBuiltinPlacements(value: BuildInPlacements): Self = StObject.set(x, "builtinPlacements", value.asInstanceOf[js.Any])
+      
+      inline def setBuiltinPlacementsUndefined: Self = StObject.set(x, "builtinPlacements", js.undefined)
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

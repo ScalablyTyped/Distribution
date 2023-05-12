@@ -27,6 +27,11 @@ trait ListShardsInput extends StObject {
   var ShardFilter: js.UndefOr[typings.awsSdk.clientsKinesisMod.ShardFilter] = js.undefined
   
   /**
+    * The ARN of the stream.
+    */
+  var StreamARN: js.UndefOr[typings.awsSdk.clientsKinesisMod.StreamARN] = js.undefined
+  
+  /**
     * Specify this input parameter to distinguish data streams that have the same name. For example, if you create a data stream and then delete it, and you later create another data stream with the same name, you can use this input parameter to specify which of the two streams you want to list the shards for. You cannot specify this parameter if you specify the NextToken parameter.
     */
   var StreamCreationTimestamp: js.UndefOr[js.Date] = js.undefined
@@ -61,6 +66,10 @@ object ListShardsInput {
     inline def setShardFilter(value: ShardFilter): Self = StObject.set(x, "ShardFilter", value.asInstanceOf[js.Any])
     
     inline def setShardFilterUndefined: Self = StObject.set(x, "ShardFilter", js.undefined)
+    
+    inline def setStreamARN(value: StreamARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
+    
+    inline def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
     
     inline def setStreamCreationTimestamp(value: js.Date): Self = StObject.set(x, "StreamCreationTimestamp", value.asInstanceOf[js.Any])
     

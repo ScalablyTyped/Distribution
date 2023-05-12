@@ -1,11 +1,9 @@
 package typings.angularCompilerCli
 
-import typings.angularCompilerCli.ngccSrcExecutionTasksApiMod.TaskProcessingOutcome
 import typings.angularCompilerCli.srcNgtscAnnotationsComponentSrcResourcesMod.ResourceTypeForDiagnostics
 import typings.angularCompilerCli.srcNgtscCyclesSrcAnalyzerMod.CycleHandlingStrategy
 import typings.angularCompilerCli.srcNgtscImportsSrcEmitterMod.ReferenceEmitKind
 import typings.angularCompilerCli.srcNgtscPartialEvaluatorSrcDynamicMod.DynamicValueReason
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationKind
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.TypeValueReferenceKind
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ValueUnavailableKind
 import org.scalablytyped.runtime.StObject
@@ -22,11 +20,9 @@ object angularCompilerCliInts {
   sealed trait `0`
     extends StObject
        with CycleHandlingStrategy
-       with DeclarationKind
        with DynamicValueReason
        with ReferenceEmitKind
        with ResourceTypeForDiagnostics
-       with TaskProcessingOutcome
        with TypeValueReferenceKind
        with ValueUnavailableKind
   inline def `0`: `0` = 0.asInstanceOf[`0`]
@@ -35,11 +31,9 @@ object angularCompilerCliInts {
   sealed trait `1`
     extends StObject
        with CycleHandlingStrategy
-       with DeclarationKind
        with DynamicValueReason
        with ReferenceEmitKind
        with ResourceTypeForDiagnostics
-       with TaskProcessingOutcome
        with TypeValueReferenceKind
        with ValueUnavailableKind
   inline def `1`: `1` = 1.asInstanceOf[`1`]

@@ -2,12 +2,12 @@ package typings.undici.anon
 
 import typings.node.AbortSignal
 import typings.node.netMod.OnReadOpts
-import typings.undici.typesConnectorMod.BuildOptions
+import typings.undici.typesConnectorMod.buildConnector.BuildOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined node.net.IpcNetConnectOpts & {  maxCachedSessions :number | null | undefined,   socketPath :string | null | undefined,   timeout :number | null | undefined,   port :number | undefined} */
+/* Inlined node.net.IpcNetConnectOpts & {  maxCachedSessions :number | null | undefined,   socketPath :string | null | undefined,   timeout :number | null | undefined,   port :number | undefined,   keepAlive :boolean | null | undefined,   keepAliveInitialDelay :number | null | undefined} */
 trait IpcNetConnectOptsmaxCache
   extends StObject
      with BuildOptions {
@@ -15,6 +15,10 @@ trait IpcNetConnectOptsmaxCache
   var allowHalfOpen: js.UndefOr[Boolean] = js.undefined
   
   var fd: js.UndefOr[Double] = js.undefined
+  
+  var keepAlive: js.UndefOr[Boolean | Null] = js.undefined
+  
+  var keepAliveInitialDelay: js.UndefOr[Double | Null] = js.undefined
   
   var maxCachedSessions: js.UndefOr[Double | Null] = js.undefined
   
@@ -56,6 +60,18 @@ object IpcNetConnectOptsmaxCache {
     inline def setFd(value: Double): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
     
     inline def setFdUndefined: Self = StObject.set(x, "fd", js.undefined)
+    
+    inline def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
+    
+    inline def setKeepAliveInitialDelay(value: Double): Self = StObject.set(x, "keepAliveInitialDelay", value.asInstanceOf[js.Any])
+    
+    inline def setKeepAliveInitialDelayNull: Self = StObject.set(x, "keepAliveInitialDelay", null)
+    
+    inline def setKeepAliveInitialDelayUndefined: Self = StObject.set(x, "keepAliveInitialDelay", js.undefined)
+    
+    inline def setKeepAliveNull: Self = StObject.set(x, "keepAlive", null)
+    
+    inline def setKeepAliveUndefined: Self = StObject.set(x, "keepAlive", js.undefined)
     
     inline def setMaxCachedSessions(value: Double): Self = StObject.set(x, "maxCachedSessions", value.asInstanceOf[js.Any])
     

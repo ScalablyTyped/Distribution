@@ -86,6 +86,22 @@ trait ZWJSBridge extends StObject {
     */
   def directShare(options: Channel): js.Promise[Any] = js.native
   
+  /**
+    * 文件下载
+    *
+    * @param options - 文件下载参数 {@link DownloadFileOptions}
+    *
+    * @returns 异步返回 {@link DownloadFileResult} 对象
+    *
+    * @example
+    * ZWJSBridge.downloadFile({
+    *   url: 'https://xxx.com.cn/079898a47d1249f4bf509928b2afbf83.xls'
+    * }).then(res => {
+    *   console.log(res)
+    * })
+    */
+  def downloadFile(options: DownloadFileOptions): js.Promise[DownloadFileResult] = js.native
+  
   /***********    请求类     ***********/
   /**
     * 无线网关
@@ -264,6 +280,24 @@ trait ZWJSBridge extends StObject {
     * 弱提示
     */
   def toast(options: Duration): js.Promise[Any] = js.native
+  
+  /**
+    * 文件上传
+    *
+    * @param options - 文件上传参数 {@link UploadFileOptions}
+    *
+    * @returns 异步返回 {@link UploadFileResult} 对象
+    *
+    * @example
+    * ZWJSBridge.uploadFile({
+    *   type: 'image/ *',
+    *   url: 'https://xxx.com.cn/uploadFile',
+    *   count: 1
+    * }).then(res => {
+    *   console.log(res)
+    *  })
+    */
+  def uploadFile(options: UploadFileOptions): js.Promise[UploadFileResult] = js.native
   
   /**
     * 支付宝扫脸认证

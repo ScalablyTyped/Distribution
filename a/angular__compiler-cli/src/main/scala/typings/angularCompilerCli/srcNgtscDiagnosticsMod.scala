@@ -71,11 +71,25 @@ object srcNgtscDiagnosticsMod {
     
     /* 5001 */ val HOST_BINDING_PARSE_ERROR: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.HOST_BINDING_PARSE_ERROR & Double = js.native
     
+    /* 2015 */ val HOST_DIRECTIVE_COMPONENT: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.HOST_DIRECTIVE_COMPONENT & Double = js.native
+    
+    /* 2018 */ val HOST_DIRECTIVE_CONFLICTING_ALIAS: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.HOST_DIRECTIVE_CONFLICTING_ALIAS & Double = js.native
+    
+    /* 2013 */ val HOST_DIRECTIVE_INVALID: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.HOST_DIRECTIVE_INVALID & Double = js.native
+    
+    /* 2019 */ val HOST_DIRECTIVE_MISSING_REQUIRED_BINDING: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.HOST_DIRECTIVE_MISSING_REQUIRED_BINDING & Double = js.native
+    
+    /* 2014 */ val HOST_DIRECTIVE_NOT_STANDALONE: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.HOST_DIRECTIVE_NOT_STANDALONE & Double = js.native
+    
+    /* 2017 */ val HOST_DIRECTIVE_UNDEFINED_BINDING: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.HOST_DIRECTIVE_UNDEFINED_BINDING & Double = js.native
+    
     /* 3003 */ val IMPORT_CYCLE_DETECTED: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.IMPORT_CYCLE_DETECTED & Double = js.native
     
     /* 3004 */ val IMPORT_GENERATION_FAILURE: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.IMPORT_GENERATION_FAILURE & Double = js.native
     
     /* 9001 */ val INJECTABLE_DUPLICATE_PROV: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.INJECTABLE_DUPLICATE_PROV & Double = js.native
+    
+    /* 2016 */ val INJECTABLE_INHERITS_INVALID_CONSTRUCTOR: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.INJECTABLE_INHERITS_INVALID_CONSTRUCTOR & Double = js.native
     
     /* 8900 */ val INLINE_TCB_REQUIRED: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.INLINE_TCB_REQUIRED & Double = js.native
     
@@ -90,6 +104,8 @@ object srcNgtscDiagnosticsMod {
     /* 8004 */ val MISSING_PIPE: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.MISSING_PIPE & Double = js.native
     
     /* 8003 */ val MISSING_REFERENCE_TARGET: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.MISSING_REFERENCE_TARGET & Double = js.native
+    
+    /* 8008 */ val MISSING_REQUIRED_INPUTS: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.MISSING_REQUIRED_INPUTS & Double = js.native
     
     /* 6009 */ val NGMODULE_BOOTSTRAP_IS_STANDALONE: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.NGMODULE_BOOTSTRAP_IS_STANDALONE & Double = js.native
     
@@ -122,6 +138,8 @@ object srcNgtscDiagnosticsMod {
     /* 8002 */ val SCHEMA_INVALID_ATTRIBUTE: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.SCHEMA_INVALID_ATTRIBUTE & Double = js.native
     
     /* 8001 */ val SCHEMA_INVALID_ELEMENT: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.SCHEMA_INVALID_ELEMENT & Double = js.native
+    
+    /* 8108 */ val SKIP_HYDRATION_NOT_STATIC: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.SKIP_HYDRATION_NOT_STATIC & Double = js.native
     
     /* 8007 */ val SPLIT_TWO_WAY_BINDING: typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode.SPLIT_TWO_WAY_BINDING & Double = js.native
     
@@ -169,6 +187,8 @@ object srcNgtscDiagnosticsMod {
     
     /* "optionalChainNotNullable" */ val OPTIONAL_CHAIN_NOT_NULLABLE: typings.angularCompilerCli.srcNgtscDiagnosticsSrcExtendedTemplateDiagnosticNameMod.ExtendedTemplateDiagnosticName.OPTIONAL_CHAIN_NOT_NULLABLE & String = js.native
     
+    /* "skipHydrationNotStatic" */ val SKIP_HYDRATION_NOT_STATIC: typings.angularCompilerCli.srcNgtscDiagnosticsSrcExtendedTemplateDiagnosticNameMod.ExtendedTemplateDiagnosticName.SKIP_HYDRATION_NOT_STATIC & String = js.native
+    
     /* "suffixNotSupported" */ val SUFFIX_NOT_SUPPORTED: typings.angularCompilerCli.srcNgtscDiagnosticsSrcExtendedTemplateDiagnosticNameMod.ExtendedTemplateDiagnosticName.SUFFIX_NOT_SUPPORTED & String = js.native
     
     /* "textAttributeNotBinding" */ val TEXT_ATTRIBUTE_NOT_BINDING: typings.angularCompilerCli.srcNgtscDiagnosticsSrcExtendedTemplateDiagnosticNameMod.ExtendedTemplateDiagnosticName.TEXT_ATTRIBUTE_NOT_BINDING & String = js.native
@@ -193,6 +213,9 @@ object srcNgtscDiagnosticsMod {
       relatedInformation: js.Array[DiagnosticRelatedInformation]
     ) = this()
   }
+  
+  inline def addDiagnosticChain(messageText: String, add: js.Array[DiagnosticMessageChain]): DiagnosticMessageChain = (^.asInstanceOf[js.Dynamic].applyDynamic("addDiagnosticChain")(messageText.asInstanceOf[js.Any], add.asInstanceOf[js.Any])).asInstanceOf[DiagnosticMessageChain]
+  inline def addDiagnosticChain(messageText: DiagnosticMessageChain, add: js.Array[DiagnosticMessageChain]): DiagnosticMessageChain = (^.asInstanceOf[js.Dynamic].applyDynamic("addDiagnosticChain")(messageText.asInstanceOf[js.Any], add.asInstanceOf[js.Any])).asInstanceOf[DiagnosticMessageChain]
   
   inline def isFatalDiagnosticError(err: Any): /* is @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/diagnostics/src/error.FatalDiagnosticError */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFatalDiagnosticError")(err.asInstanceOf[js.Any]).asInstanceOf[/* is @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/diagnostics/src/error.FatalDiagnosticError */ Boolean]
   

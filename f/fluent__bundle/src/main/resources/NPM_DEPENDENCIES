@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@fluent/bundle" : "0.17.1"
+      "@fluent/bundle" : "0.18.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@fluent/bundle" : "0.17.1"
+      "@fluent/bundle" : "0.18.0"
     }
   ],
   "compile-devDependencies" : [

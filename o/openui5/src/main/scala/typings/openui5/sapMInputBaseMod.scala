@@ -6,6 +6,7 @@ import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
 import typings.openui5.sapUiCoreLibraryMod.CSSSize
+import typings.openui5.sapUiCoreLibraryMod.FocusInfo
 import typings.openui5.sapUiCoreLibraryMod.ID
 import typings.openui5.sapUiCoreLibraryMod.IFormContent
 import typings.openui5.sapUiCoreLibraryMod.TextAlign
@@ -171,6 +172,8 @@ object sapMInputBaseMod {
     vAriaLabelledBy: ID): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Adds an icon to the beginning of the input
       * See:
       * 	sap.ui.core.IconPool.createControlByURI
@@ -181,6 +184,8 @@ object sapMInputBaseMod {
     oIconSettings: js.Object): Null | typings.openui5.sapUiCoreIconMod.default = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Adds an icon to the end of the input
       * See:
       * 	sap.ui.core.IconPool.createControlByURI
@@ -197,11 +202,16 @@ object sapMInputBaseMod {
     ): Null | typings.openui5.sapUiCoreIconMod.default = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Applies the focus info. To be overwritten by subclasses.
       *
       * @returns Returns `this` to allow method chaining
       */
-    def applyFocusInfo(oFocusInfo: js.Object): this.type = js.native
+    def applyFocusInfo(/**
+      * An object representing the serialized focus information.
+      */
+    oFocusInfo: FocusInfo): this.type = js.native
     
     /**
       * Attaches event handler `fnFunction` to the {@link #event:change change} event of this `sap.m.InputBase`.
@@ -269,11 +279,15 @@ object sapMInputBaseMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Indicates whether the input field is in the rendering phase.
       */
     var bRenderingPhase: Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Use labels as placeholder configuration. It can be necessary for the subclasses to overwrite this when
       * native placeholder usage causes undesired input events or when placeholder attribute is not supported
       * for the specified type. https://html.spec.whatwg.org/multipage/forms.html#input-type-attr-summary
@@ -297,6 +311,7 @@ object sapMInputBaseMod {
     
     /**
       * @SINCE 1.26
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Close value state message popup.
       */
@@ -338,6 +353,8 @@ object sapMInputBaseMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -350,6 +367,7 @@ object sapMInputBaseMod {
     
     /**
       * @SINCE 1.22.1
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires the change event for the listeners
       */
@@ -386,6 +404,7 @@ object sapMInputBaseMod {
     
     /**
       * @SINCE 1.26
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Gets the DOM element reference where the message popup is attached.
       *
@@ -433,6 +452,7 @@ object sapMInputBaseMod {
     
     /**
       * @SINCE 1.48
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Gets the labels referencing this control.
       *
@@ -443,6 +463,7 @@ object sapMInputBaseMod {
     
     /**
       * @SINCE 1.78
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Gets the last value of the InputBase
       */
@@ -483,6 +504,7 @@ object sapMInputBaseMod {
     
     /**
       * @SINCE 1.32
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Retrieves the selected text. Only supported for input control's type of Text, Url, Tel and Password.
       *
@@ -539,6 +561,8 @@ object sapMInputBaseMod {
     def getValue(): String = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Gets the value of the accessibility description info field.
       *
       * @returns The value of the accessibility description info
@@ -581,6 +605,8 @@ object sapMInputBaseMod {
     def getWidth(): CSSSize = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * indicating if a character is currently composing.
       *
       * @returns Whether or not a character is composing. True if after "compositionstart" event and before "compositionend"
@@ -589,12 +615,17 @@ object sapMInputBaseMod {
     def isComposingCharacter(): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Handles the change event.
       *
       * @returns true when change event is fired
       */
     def onChange(
-      oEvent: js.Object,
+      /**
+      * The event
+      */
+    oEvent: Event,
       /**
       * Additional event parameters to be passed in to the change event handler if the value has changed
       */
@@ -605,17 +636,23 @@ object sapMInputBaseMod {
     sNewValue: String
     ): js.UndefOr[Boolean] = js.native
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Handles the change event.
       *
       * @returns true when change event is fired
       */
-    def onChange(oEvent: js.Object, /**
+    def onChange(/**
+      * The event
+      */
+    oEvent: Event, /**
       * Passed value on change
       */
     sNewValue: String): js.UndefOr[Boolean] = js.native
     
     /**
       * @SINCE 1.26
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Hook method that gets called when the input value is reverted with hitting escape. It may require to
       * re-implement this method from sub classes for control specific behaviour.
@@ -627,6 +664,7 @@ object sapMInputBaseMod {
     
     /**
       * @SINCE 1.26
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Open value state message popup.
       */
@@ -634,6 +672,7 @@ object sapMInputBaseMod {
     
     /**
       * @SINCE 1.46
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Hook method to prevent the change event from being fired when the text input field loses focus.
       *
@@ -709,6 +748,7 @@ object sapMInputBaseMod {
     
     /**
       * @SINCE 1.22.1
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Selects the text within the input field between the specified start and end positions. Only supported
       * for input control's type of Text, Url, Tel and Password.
@@ -782,6 +822,7 @@ object sapMInputBaseMod {
     
     /**
       * @SINCE 1.78
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Sets the last value of the InputBase
       */
@@ -987,6 +1028,7 @@ object sapMInputBaseMod {
     
     /**
       * @SINCE 1.22
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Sets the DOM value of the input field and handles placeholder visibility.
       *

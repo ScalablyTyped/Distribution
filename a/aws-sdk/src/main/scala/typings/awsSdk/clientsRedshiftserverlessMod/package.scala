@@ -39,6 +39,8 @@ type ListRecoveryPointsRequestMaxResultsInteger = scala.Double
 
 type ListSnapshotsRequestMaxResultsInteger = scala.Double
 
+type ListTableRestoreStatusRequestMaxResultsInteger = scala.Double
+
 type ListUsageLimitsRequestMaxResultsInteger = scala.Double
 
 type ListWorkgroupsRequestMaxResultsInteger = scala.Double
@@ -101,6 +103,8 @@ type SubnetId = java.lang.String
 type SubnetIdList = js.Array[SubnetId]
 
 type SyntheticTimestampDateTime = js.Date
+
+type TableRestoreStatusList = js.Array[TableRestoreStatus]
 
 type TagKey = java.lang.String
 

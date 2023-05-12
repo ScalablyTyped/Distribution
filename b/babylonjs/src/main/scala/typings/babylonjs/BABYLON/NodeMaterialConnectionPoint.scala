@@ -47,6 +47,12 @@ trait NodeMaterialConnectionPoint extends StObject {
   var acceptedConnectionPointTypes: js.Array[NodeMaterialBlockConnectionPointTypes] = js.native
   
   /**
+    * Fill the list of excluded connection point types with all types other than those passed in the parameter
+    * @param mask Types (ORed values of NodeMaterialBlockConnectionPointTypes) that are allowed, and thus will not be pushed to the excluded list
+    */
+  def addExcludedConnectionPointFromAllowedTypes(mask: Double): Unit = js.native
+  
+  /**
     * Gets or sets the associated variable name in the shader
     */
   def associatedVariableName: String = js.native

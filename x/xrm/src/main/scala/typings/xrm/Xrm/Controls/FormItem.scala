@@ -35,7 +35,7 @@ trait FormItem extends StObject {
   /**
     * Sets a value that indicates whether the form is visible.
     * @param isVisible Specify true to show the form; false to hide the form.
-    * @see {@link https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/formcontext-ui-formselector/setvisible External Link: setVisible (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/formcontext-ui-formselector/setvisible External Link: setVisible (Client API reference)}
     */
   def setVisible(isVisible: Boolean): Unit
 }

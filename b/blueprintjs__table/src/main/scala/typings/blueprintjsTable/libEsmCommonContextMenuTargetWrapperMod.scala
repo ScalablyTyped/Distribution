@@ -21,7 +21,7 @@ object libEsmCommonContextMenuTargetWrapperMod {
     def this(props: IContextMenuTargetWrapper) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: IContextMenuTargetWrapper, context: Any) = this()
     

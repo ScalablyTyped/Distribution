@@ -8,11 +8,11 @@ trait ParametersQueryPerpageSince extends StObject {
   
   var parameters: QueryPerpageSince
   
-  var responses: `200Content56`
+  var responses: `200Content271`
 }
 object ParametersQueryPerpageSince {
   
-  inline def apply(parameters: QueryPerpageSince, responses: `200Content56`): ParametersQueryPerpageSince = {
+  inline def apply(parameters: QueryPerpageSince, responses: `200Content271`): ParametersQueryPerpageSince = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryPerpageSince]
   }
@@ -22,6 +22,6 @@ object ParametersQueryPerpageSince {
     
     inline def setParameters(value: QueryPerpageSince): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content56`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content271`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

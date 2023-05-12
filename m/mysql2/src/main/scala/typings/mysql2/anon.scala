@@ -6,6 +6,10 @@ import typings.mysql2.mysql2Strings.FieldPacket
 import typings.mysql2.mysql2Strings.OkPacket
 import typings.mysql2.mysql2Strings.ResultSetHeader
 import typings.mysql2.mysql2Strings.RowDataPacket
+import typings.node.bufferMod.global.Buffer
+import typings.node.cryptoMod.KeyLike
+import typings.node.cryptoMod.RsaPrivateKey
+import typings.node.cryptoMod.RsaPublicKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -106,6 +110,64 @@ object anon {
     }
   }
   
+  trait JoinServerPublicKey extends StObject {
+    
+    var joinServerPublicKey: js.UndefOr[js.Function1[/* data */ Buffer, Unit]] = js.undefined
+    
+    var serverPublicKey: js.UndefOr[RsaPublicKey | RsaPrivateKey | KeyLike] = js.undefined
+  }
+  object JoinServerPublicKey {
+    
+    inline def apply(): JoinServerPublicKey = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[JoinServerPublicKey]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JoinServerPublicKey] (val x: Self) extends AnyVal {
+      
+      inline def setJoinServerPublicKey(value: /* data */ Buffer => Unit): Self = StObject.set(x, "joinServerPublicKey", js.Any.fromFunction1(value))
+      
+      inline def setJoinServerPublicKeyUndefined: Self = StObject.set(x, "joinServerPublicKey", js.undefined)
+      
+      inline def setServerPublicKey(value: RsaPublicKey | RsaPrivateKey | KeyLike): Self = StObject.set(x, "serverPublicKey", value.asInstanceOf[js.Any])
+      
+      inline def setServerPublicKeyUndefined: Self = StObject.set(x, "serverPublicKey", js.undefined)
+    }
+  }
+  
+  trait JonServerPublicKey extends StObject {
+    
+    var jonServerPublicKey: js.UndefOr[js.Function1[/* data */ Buffer, Unit]] = js.undefined
+    
+    var overrideIsSecure: js.UndefOr[Boolean] = js.undefined
+    
+    var serverPublicKey: js.UndefOr[RsaPublicKey | RsaPrivateKey | KeyLike] = js.undefined
+  }
+  object JonServerPublicKey {
+    
+    inline def apply(): JonServerPublicKey = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[JonServerPublicKey]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JonServerPublicKey] (val x: Self) extends AnyVal {
+      
+      inline def setJonServerPublicKey(value: /* data */ Buffer => Unit): Self = StObject.set(x, "jonServerPublicKey", js.Any.fromFunction1(value))
+      
+      inline def setJonServerPublicKeyUndefined: Self = StObject.set(x, "jonServerPublicKey", js.undefined)
+      
+      inline def setOverrideIsSecure(value: Boolean): Self = StObject.set(x, "overrideIsSecure", value.asInstanceOf[js.Any])
+      
+      inline def setOverrideIsSecureUndefined: Self = StObject.set(x, "overrideIsSecure", js.undefined)
+      
+      inline def setServerPublicKey(value: RsaPublicKey | RsaPrivateKey | KeyLike): Self = StObject.set(x, "serverPublicKey", value.asInstanceOf[js.Any])
+      
+      inline def setServerPublicKeyUndefined: Self = StObject.set(x, "serverPublicKey", js.undefined)
+    }
+  }
+  
   trait Name extends StObject {
     
     var name: Field
@@ -121,6 +183,70 @@ object anon {
     implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: Field): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Password extends StObject {
+    
+    var password: js.UndefOr[String] = js.undefined
+  }
+  object Password {
+    
+    inline def apply(): Password = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Password]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Password] (val x: Self) extends AnyVal {
+      
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    }
+  }
+  
+  trait PasswordSha1 extends StObject {
+    
+    var password: js.UndefOr[String] = js.undefined
+    
+    var passwordSha1: js.UndefOr[String] = js.undefined
+  }
+  object PasswordSha1 {
+    
+    inline def apply(): PasswordSha1 = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PasswordSha1]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PasswordSha1] (val x: Self) extends AnyVal {
+      
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      
+      inline def setPasswordSha1(value: String): Self = StObject.set(x, "passwordSha1", value.asInstanceOf[js.Any])
+      
+      inline def setPasswordSha1Undefined: Self = StObject.set(x, "passwordSha1", js.undefined)
+      
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    }
+  }
+  
+  trait ToSqlString extends StObject {
+    
+    def toSqlString(): String
+  }
+  object ToSqlString {
+    
+    inline def apply(toSqlString: () => String): ToSqlString = {
+      val __obj = js.Dynamic.literal(toSqlString = js.Any.fromFunction0(toSqlString))
+      __obj.asInstanceOf[ToSqlString]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToSqlString] (val x: Self) extends AnyVal {
+      
+      inline def setToSqlString(value: () => String): Self = StObject.set(x, "toSqlString", js.Any.fromFunction0(value))
     }
   }
 }

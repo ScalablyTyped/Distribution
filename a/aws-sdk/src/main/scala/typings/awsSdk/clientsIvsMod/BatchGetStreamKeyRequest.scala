@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BatchGetStreamKeyRequest extends StObject {
   
   /**
-    * Array of ARNs, one per channel.
+    * Array of ARNs, one per stream key.
     */
   var arns: StreamKeyArnList
 }

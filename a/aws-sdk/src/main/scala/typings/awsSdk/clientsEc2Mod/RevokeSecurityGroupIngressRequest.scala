@@ -17,7 +17,7 @@ trait RevokeSecurityGroupIngressRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The start of port range for the TCP and UDP protocols, or an ICMP type number. For the ICMP type number, use -1 to specify all ICMP types.
+    * If the protocol is TCP or UDP, this is the start of the port range. If the protocol is ICMP, this is the type number. A value of -1 indicates all ICMP types.
     */
   var FromPort: js.UndefOr[Integer] = js.undefined
   
@@ -57,7 +57,7 @@ trait RevokeSecurityGroupIngressRequest extends StObject {
   var SourceSecurityGroupOwnerId: js.UndefOr[String] = js.undefined
   
   /**
-    * The end of port range for the TCP and UDP protocols, or an ICMP code number. For the ICMP code number, use -1 to specify all ICMP codes for the ICMP type.
+    * If the protocol is TCP or UDP, this is the end of the port range. If the protocol is ICMP, this is the code. A value of -1 indicates all ICMP codes.
     */
   var ToPort: js.UndefOr[Integer] = js.undefined
 }

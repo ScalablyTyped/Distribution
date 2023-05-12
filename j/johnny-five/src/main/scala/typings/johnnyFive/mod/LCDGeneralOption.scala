@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LCDGeneralOption extends StObject {
   
+  var board: js.UndefOr[Board] = js.undefined
+  
   var cols: js.UndefOr[Double] = js.undefined
   
   var rows: js.UndefOr[Double] = js.undefined
@@ -19,6 +21,10 @@ object LCDGeneralOption {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: LCDGeneralOption] (val x: Self) extends AnyVal {
+    
+    inline def setBoard(value: Board): Self = StObject.set(x, "board", value.asInstanceOf[js.Any])
+    
+    inline def setBoardUndefined: Self = StObject.set(x, "board", js.undefined)
     
     inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     

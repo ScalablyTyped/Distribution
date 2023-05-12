@@ -41,6 +41,11 @@ object BackgroundService {
     var serviceWorkerRegistrationId: RegistrationID
     
     /**
+      * Storage key this event belongs to.
+      */
+    var storageKey: String
+    
+    /**
       * Timestamp of the event (in seconds).
       */
     var timestamp: TimeSinceEpoch
@@ -54,9 +59,10 @@ object BackgroundService {
       origin: String,
       service: ServiceName,
       serviceWorkerRegistrationId: RegistrationID,
+      storageKey: String,
       timestamp: TimeSinceEpoch
     ): BackgroundServiceEvent = {
-      val __obj = js.Dynamic.literal(eventMetadata = eventMetadata.asInstanceOf[js.Any], eventName = eventName.asInstanceOf[js.Any], instanceId = instanceId.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], serviceWorkerRegistrationId = serviceWorkerRegistrationId.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(eventMetadata = eventMetadata.asInstanceOf[js.Any], eventName = eventName.asInstanceOf[js.Any], instanceId = instanceId.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], serviceWorkerRegistrationId = serviceWorkerRegistrationId.asInstanceOf[js.Any], storageKey = storageKey.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[BackgroundServiceEvent]
     }
     
@@ -76,6 +82,8 @@ object BackgroundService {
       inline def setService(value: ServiceName): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
       
       inline def setServiceWorkerRegistrationId(value: RegistrationID): Self = StObject.set(x, "serviceWorkerRegistrationId", value.asInstanceOf[js.Any])
+      
+      inline def setStorageKey(value: String): Self = StObject.set(x, "storageKey", value.asInstanceOf[js.Any])
       
       inline def setTimestamp(value: TimeSinceEpoch): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }

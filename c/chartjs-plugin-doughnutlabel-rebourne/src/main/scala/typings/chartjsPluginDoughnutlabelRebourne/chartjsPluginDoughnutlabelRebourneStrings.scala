@@ -123,8 +123,8 @@ object chartjsPluginDoughnutlabelRebourneStrings {
   inline def beforeUpdate: beforeUpdate = "beforeUpdate".asInstanceOf[beforeUpdate]
   
   @js.native
-  sealed trait destroy extends StObject
-  inline def destroy: destroy = "destroy".asInstanceOf[destroy]
+  sealed trait defaults extends StObject
+  inline def defaults: defaults = "defaults".asInstanceOf[defaults]
   
   @js.native
   sealed trait doughnut extends StObject

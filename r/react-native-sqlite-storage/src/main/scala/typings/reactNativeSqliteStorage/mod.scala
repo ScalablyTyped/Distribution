@@ -299,12 +299,14 @@ object mod {
     def close(): js.Promise[Unit] = js.native
     def close(success: js.Function0[Unit], error: js.Function1[/* err */ SQLError, Unit]): Unit = js.native
     
-    def dettach(alias: String): Unit = js.native
-    def dettach(alias: String, success: js.Function0[Unit]): Unit = js.native
-    def dettach(alias: String, success: js.Function0[Unit], error: js.Function1[/* err */ SQLError, Unit]): Unit = js.native
-    def dettach(alias: String, success: Unit, error: js.Function1[/* err */ SQLError, Unit]): Unit = js.native
-    @JSName("dettach")
-    def dettach_Promise(alias: String): js.Promise[Unit] = js.native
+    var dbName: String = js.native
+    
+    def detach(alias: String): Unit = js.native
+    def detach(alias: String, success: js.Function0[Unit]): Unit = js.native
+    def detach(alias: String, success: js.Function0[Unit], error: js.Function1[/* err */ SQLError, Unit]): Unit = js.native
+    def detach(alias: String, success: Unit, error: js.Function1[/* err */ SQLError, Unit]): Unit = js.native
+    @JSName("detach")
+    def detach_Promise(alias: String): js.Promise[Unit] = js.native
     
     def executeSql(statement: String): Unit = js.native
     def executeSql(statement: String, params: js.Array[Any]): Unit = js.native
@@ -333,7 +335,7 @@ object mod {
       success: TransactionCallback
     ): Unit = js.native
     @JSName("readTransaction")
-    def readTransaction_Promise(scope: js.Function1[/* tx */ Transaction, Unit]): js.Promise[TransactionCallback] = js.native
+    def readTransaction_Promise(scope: js.Function1[/* tx */ Transaction, Unit]): js.Promise[Transaction] = js.native
     
     def transaction(scope: js.Function1[/* tx */ Transaction, Unit]): Unit = js.native
     def transaction(scope: js.Function1[/* tx */ Transaction, Unit], error: Unit, success: TransactionCallback): Unit = js.native

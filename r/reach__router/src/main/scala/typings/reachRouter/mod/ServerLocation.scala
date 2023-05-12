@@ -12,7 +12,7 @@ open class ServerLocation protected ()
   def this(props: ServerLocationProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: ServerLocationProps, context: Any) = this()
 }

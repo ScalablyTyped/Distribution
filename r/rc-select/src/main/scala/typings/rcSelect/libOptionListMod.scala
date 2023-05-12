@@ -7,7 +7,6 @@ import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.RefAttributes
 import typings.std.Element
-import typings.std.Pick
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,7 +16,7 @@ object libOptionListMod extends Shortcut {
   
   @JSImport("rc-select/lib/OptionList", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[(Pick[OptionListProps, String]) & RefAttributes[RefOptionListProps]] = js.native
+  val default: ForwardRefExoticComponent[RefAttributes[RefOptionListProps]] = js.native
   
   type OptionListProps = Record[String, scala.Nothing]
   
@@ -49,8 +48,8 @@ object libOptionListMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[(Pick[OptionListProps, String]) & RefAttributes[RefOptionListProps]]
+  type _To = ForwardRefExoticComponent[RefAttributes[RefOptionListProps]]
   
   /* This means you don't have to write `default`, but can instead just say `libOptionListMod.foo` */
-  override def _to: ForwardRefExoticComponent[(Pick[OptionListProps, String]) & RefAttributes[RefOptionListProps]] = default
+  override def _to: ForwardRefExoticComponent[RefAttributes[RefOptionListProps]] = default
 }

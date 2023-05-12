@@ -1,32 +1,42 @@
 package typings.photoshop.domConstantsMod
 
-import typings.photoshop.photoshopStrings.optimizedbaseline
-import typings.photoshop.photoshopStrings.progressive
-import typings.photoshop.photoshopStrings.standardbaseline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.photoshop.photoshopStrings.standardbaseline
-  - typings.photoshop.photoshopStrings.progressive
-  - typings.photoshop.photoshopStrings.optimizedbaseline
-*/
-trait JPEGFormatOptions extends StObject
-object JPEGFormatOptions {
+@js.native
+sealed trait JPEGFormatOptions extends StObject
+@JSImport("photoshop/dom/Constants", "JPEGFormatOptions")
+@js.native
+object JPEGFormatOptions extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: String): js.UndefOr[JPEGFormatOptions & String] = js.native
   
   /**
     * Optimized color and a slightly reduced file size.
     */
-  inline def OPTIMIZEDBASELINE: optimizedbaseline = "optimizedbaseline".asInstanceOf[optimizedbaseline]
+  @js.native
+  sealed trait OPTIMIZEDBASELINE
+    extends StObject
+       with JPEGFormatOptions
+  /* "optimizedbaseline" */ val OPTIMIZEDBASELINE: typings.photoshop.domConstantsMod.JPEGFormatOptions.OPTIMIZEDBASELINE & String = js.native
   
   /**
     * Displays a series of increasing detailed scans as the image downloads.
     */
-  inline def PROGRESSIVE: progressive = "progressive".asInstanceOf[progressive]
+  @js.native
+  sealed trait PROGRESSIVE
+    extends StObject
+       with JPEGFormatOptions
+  /* "progressive" */ val PROGRESSIVE: typings.photoshop.domConstantsMod.JPEGFormatOptions.PROGRESSIVE & String = js.native
   
   /**
     * Format recognized by most web browsers.
     */
-  inline def STANDARDBASELINE: standardbaseline = "standardbaseline".asInstanceOf[standardbaseline]
+  @js.native
+  sealed trait STANDARDBASELINE
+    extends StObject
+       with JPEGFormatOptions
+  /* "standardbaseline" */ val STANDARDBASELINE: typings.photoshop.domConstantsMod.JPEGFormatOptions.STANDARDBASELINE & String = js.native
 }

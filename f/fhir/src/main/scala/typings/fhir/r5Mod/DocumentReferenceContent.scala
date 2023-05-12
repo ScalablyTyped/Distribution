@@ -14,14 +14,10 @@ trait DocumentReferenceContent
   var attachment: Attachment
   
   /**
-    * Note that while IHE mostly issues URNs for format types, not all documents can be identified by a URI.
+    * Note that IHE often issues URNs for formatCode codes, not all documents can be identified by a URI.
+    * For FHIR content, .profile should indicate the structureDefinition profile canonical URI(s) that the content complies with.
     */
-  var format: js.UndefOr[Coding] = js.undefined
-  
-  /**
-    * CDA Document Id extension and root.
-    */
-  var identifier: js.UndefOr[Identifier] = js.undefined
+  var profile: js.UndefOr[js.Array[DocumentReferenceContentProfile]] = js.undefined
 }
 object DocumentReferenceContent {
   
@@ -35,12 +31,10 @@ object DocumentReferenceContent {
     
     inline def setAttachment(value: Attachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     
-    inline def setFormat(value: Coding): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setProfile(value: js.Array[DocumentReferenceContentProfile]): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
-    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
-    inline def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
-    
-    inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    inline def setProfileVarargs(value: DocumentReferenceContentProfile*): Self = StObject.set(x, "profile", js.Array(value*))
   }
 }

@@ -1,16 +1,17 @@
 package typings.firebaseFirestore
 
 import typings.firebaseFirestore.anon.TrackRemovals
+import typings.firebaseFirestore.distPackagesFirestoreSrcCoreQueryMod.Query
 import typings.firebaseFirestore.distPackagesFirestoreSrcCoreSnapshotVersionMod.SnapshotVersion
 import typings.firebaseFirestore.distPackagesFirestoreSrcLocalIndexManagerMod.IndexManager
 import typings.firebaseFirestore.distPackagesFirestoreSrcLocalPersistenceMod.Persistence
 import typings.firebaseFirestore.distPackagesFirestoreSrcLocalRemoteDocumentChangeBufferMod.RemoteDocumentChangeBuffer
 import typings.firebaseFirestore.distPackagesFirestoreSrcModelCollectionsMod.DocumentKeySet_
 import typings.firebaseFirestore.distPackagesFirestoreSrcModelCollectionsMod.MutableDocumentMap_
+import typings.firebaseFirestore.distPackagesFirestoreSrcModelCollectionsMod.OverlayMap
 import typings.firebaseFirestore.distPackagesFirestoreSrcModelDocumentKeyMod.DocumentKey
 import typings.firebaseFirestore.distPackagesFirestoreSrcModelDocumentMod.MutableDocument
 import typings.firebaseFirestore.distPackagesFirestoreSrcModelFieldIndexMod.IndexOffset
-import typings.firebaseFirestore.distPackagesFirestoreSrcModelPathMod.ResourcePath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,9 +37,9 @@ object distPackagesFirestoreTestUnitLocalTestRemoteDocumentCacheMod {
     
     /* private */ val cache: Any = js.native
     
-    def getAllFromCollection(collection: ResourcePath, offset: IndexOffset): js.Promise[MutableDocumentMap_] = js.native
-    
     def getAllFromCollectionGroup(collectionGroup: String, offset: IndexOffset, limit: Double): js.Promise[MutableDocumentMap_] = js.native
+    
+    def getDocumentsMatchingQuery(query: Query, offset: IndexOffset, mutatedDocs: OverlayMap): js.Promise[MutableDocumentMap_] = js.native
     
     def getEntries(documentKeys: DocumentKeySet_): js.Promise[MutableDocumentMap_] = js.native
     

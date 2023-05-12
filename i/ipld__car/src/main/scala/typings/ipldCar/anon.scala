@@ -1,5 +1,8 @@
 package typings.ipldCar
 
+import typings.ipldCar.distSrcBufferDecoderMod.Block
+import typings.ipldCar.distSrcBufferDecoderMod.CarHeader
+import typings.ipldCar.distSrcBufferDecoderMod.CarV2Header
 import typings.multiformats.distTypesSrcCidMod.CID
 import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
 import org.scalablytyped.runtime.StObject
@@ -7,6 +10,30 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
+  
+  trait Blocks extends StObject {
+    
+    var blocks: js.Array[Block]
+    
+    var header: CarHeader | CarV2Header
+  }
+  object Blocks {
+    
+    inline def apply(blocks: js.Array[Block], header: CarHeader | CarV2Header): Blocks = {
+      val __obj = js.Dynamic.literal(blocks = blocks.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Blocks]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Blocks] (val x: Self) extends AnyVal {
+      
+      inline def setBlocks(value: js.Array[Block]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
+      
+      inline def setBlocksVarargs(value: Block*): Self = StObject.set(x, "blocks", js.Array(value*))
+      
+      inline def setHeader(value: CarHeader | CarV2Header): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    }
+  }
   
   trait ByteLength extends StObject {
     

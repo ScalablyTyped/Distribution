@@ -1,11 +1,11 @@
 package typings.nivoHeatmap.anon
 
-import typings.reactSpringTypes.interpolationMod.EasingFunction
+import typings.reactSpringTypes.mod.EasingFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<@react-spring/core.@react-spring/core/dist/declarations/src/AnimationConfig.AnimationConfig> */
+/* Inlined std.Partial<@react-spring/core.@react-spring/core.AnimationConfig> */
 trait PartialAnimationConfig extends StObject {
   
   var bounce: js.UndefOr[Double] = js.undefined

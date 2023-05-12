@@ -1,7 +1,7 @@
 
 # Scala.js typings for esm-utils
 
-Typings are for version 2.0
+Typings are for version 4.1.2
 
 ## Library description:
 Utilities you'll need when migrating to ESModule.
@@ -24,7 +24,7 @@ Utilities you'll need when migrating to ESModule.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

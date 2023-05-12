@@ -1,5 +1,6 @@
 package typings.openui5.anon
 
+import typings.openui5.sapMUploadUploadSetItemMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `31` extends StObject {
   
   /**
-    * Received data from the server
+    * The file whose upload has just been terminated.
     */
-  var data: js.UndefOr[String] = js.undefined
+  var item: js.UndefOr[default] = js.undefined
 }
 object `31` {
   
@@ -21,8 +22,8 @@ object `31` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `31`] (val x: Self) extends AnyVal {
     
-    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setItem(value: default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
   }
 }

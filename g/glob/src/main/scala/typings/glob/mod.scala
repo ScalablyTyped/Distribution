@@ -1,362 +1,1170 @@
 package typings.glob
 
-import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.StringDictionary
-import typings.glob.anon.IsDirectory
-import typings.glob.anon.Typeoffs
-import typings.glob.globBooleans.`false`
-import typings.glob.globStrings.DIR
-import typings.glob.globStrings.FILE
-import typings.minimatch.mod.IMinimatch
-import typings.node.eventsMod.EventEmitter
+import typings.glob.anon.Fn0
+import typings.glob.anon.Fn1
+import typings.glob.anon.Fn2
+import typings.glob.anon.Fn3
+import typings.glob.anon.FnCall
+import typings.glob.anon.FnCallPatternOptions
+import typings.glob.anon.NonepatternstringArraystr
+import typings.glob.anon.NonepatternstringArraystrCall
+import typings.glob.anon.NonepatternstringArraystrSync
+import typings.glob.distMjsGlobMod.Glob
+import typings.glob.distMjsGlobMod.GlobOptions
+import typings.glob.distMjsGlobMod.GlobOptionsWithFileTypesFalse
+import typings.glob.distMjsGlobMod.GlobOptionsWithFileTypesTrue
+import typings.glob.distMjsGlobMod.GlobOptionsWithFileTypesUnset
+import typings.minimatch.anon.PickMinimatchOptionswindo
+import typings.minipass.mod.Minipass
+import typings.std.AsyncGenerator
+import typings.std.Generator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(pattern: String, cb: js.Function2[/* err */ js.Error | Null, /* matches */ js.Array[String], Unit]): IGlob = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[IGlob]
-  inline def apply(
-    pattern: String,
-    options: IOptions,
-    cb: js.Function2[/* err */ js.Error | Null, /* matches */ js.Array[String], Unit]
-  ): IGlob = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[IGlob]
-  
   @JSImport("glob", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-  @JSImport("glob", "GlobSync")
-  @js.native
-  open class GlobSync protected ()
-    extends StObject
-       with IGlobBase {
-    def this(pattern: String) = this()
-    def this(pattern: String, options: IOptions) = this()
-    
-    /* CompleteClass */
-    var aborted: Boolean = js.native
-    
-    /* CompleteClass */
-    var cache: StringDictionary[Boolean | DIR | FILE | js.Array[String]] = js.native
-    
-    /* CompleteClass */
-    var found: js.Array[String] = js.native
-    
-    /* CompleteClass */
-    var minimatch: IMinimatch = js.native
-    
-    /* CompleteClass */
-    var options: IOptions = js.native
-    
-    /* CompleteClass */
-    var realpathCache: StringDictionary[String] = js.native
-    
-    /* CompleteClass */
-    var statCache: StringDictionary[js.UndefOr[`false` | IsDirectory]] = js.native
-    
-    /* CompleteClass */
-    var symlinks: StringDictionary[js.UndefOr[Boolean]] = js.native
-  }
-  @JSImport("glob", "GlobSync")
-  @js.native
-  def GlobSync: IGlobSyncStatic = js.native
-  inline def GlobSync_=(x: IGlobSyncStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GlobSync")(x.asInstanceOf[js.Any])
-  
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("glob", "Glob")
   @js.native
-  open class Glob_ protected () extends IGlob {
-    def this(pattern: String) = this()
-    def this(pattern: String, cb: js.Function2[/* err */ js.Error | Null, /* matches */ js.Array[String], Unit]) = this()
-    def this(pattern: String, options: IOptions) = this()
-    def this(
-      pattern: String,
-      options: IOptions,
-      cb: js.Function2[/* err */ js.Error | Null, /* matches */ js.Array[String], Unit]
-    ) = this()
-    
-    /* CompleteClass */
-    var aborted: Boolean = js.native
-    
-    /* CompleteClass */
-    var cache: StringDictionary[Boolean | DIR | FILE | js.Array[String]] = js.native
-    
-    /* CompleteClass */
-    var found: js.Array[String] = js.native
-    
-    /* CompleteClass */
-    var minimatch: IMinimatch = js.native
-    
-    /* CompleteClass */
-    var options: IOptions = js.native
-    
-    /* CompleteClass */
-    var realpathCache: StringDictionary[String] = js.native
-    
-    /* CompleteClass */
-    var statCache: StringDictionary[js.UndefOr[`false` | IsDirectory]] = js.native
-    
-    /* CompleteClass */
-    var symlinks: StringDictionary[js.UndefOr[Boolean]] = js.native
+  open class Glob_[Opts /* <: GlobOptions */] protected () extends Glob[Opts] {
+    /**
+      * All options are stored as properties on the `Glob` object.
+      *
+      * See {@link GlobOptions} for full options descriptions.
+      *
+      * Note that a previous `Glob` object can be passed as the
+      * `GlobOptions` to another `Glob` instantiation to re-use settings
+      * and caches with a new pattern.
+      *
+      * Traversal functions can be called multiple times to run the walk
+      * again.
+      */
+    def this(pattern: String, opts: Opts) = this()
+    def this(pattern: js.Array[String], opts: Opts) = this()
   }
   
-  @JSImport("glob", "Glob")
-  @js.native
-  def Glob_ : IGlobStatic = js.native
+  inline def escape(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def escape(s: String, param1: PickMinimatchOptionswindo): String = (^.asInstanceOf[js.Dynamic].applyDynamic("escape")(s.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def Glob__=(x: IGlobStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Glob")(x.asInstanceOf[js.Any])
+  /* Inlined {None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): std.Promise<std.Array</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any> | std.Array<string>>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): std.Promise<std.Array<string>>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): std.Promise<std.Array</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any>>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset | undefined): std.Promise<std.Array<string>>} & {  glob :{None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): std.Promise<std.Array</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any> | std.Array<string>>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): std.Promise<std.Array<string>>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): std.Promise<std.Array</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any>>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset | undefined): std.Promise<std.Array<string>>},   globSync :{None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): std.Array</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any> | std.Array<string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset | undefined): std.Array<string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): std.Array</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): std.Array<string>},   sync :{None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): std.Array</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any> | std.Array<string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset | undefined): std.Array<string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): std.Array</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): std.Array<string>} & {  stream :{None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any> | minipass.minipass.Minipass<string, string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset): minipass.minipass.Minipass<string, string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): minipass.minipass.Minipass<string, string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any>},   iterate :{None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): std.Generator</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, void, void> | std.Generator<string, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): std.Generator<string, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): std.Generator</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset | undefined): std.Generator<string, void, void>}},   globStream :{None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any> | minipass.minipass.Minipass<string, string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset | undefined): minipass.minipass.Minipass<string, string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): minipass.minipass.Minipass<string, string>},   stream :{None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any> | minipass.minipass.Minipass<string, string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset | undefined): minipass.minipass.Minipass<string, string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): minipass.minipass.Minipass<string, string>} & {  sync :{None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any> | minipass.minipass.Minipass<string, string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset): minipass.minipass.Minipass<string, string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): minipass.minipass.Minipass<string, string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any>}},   globStreamSync :{None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any> | minipass.minipass.Minipass<string, string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset): minipass.minipass.Minipass<string, string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): minipass.minipass.Minipass<string, string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any>},   streamSync :{None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any> | minipass.minipass.Minipass<string, string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset): minipass.minipass.Minipass<string, string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): minipass.minipass.Minipass<string, string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any>},   globIterate :{None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): std.AsyncGenerator</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, void, void> | std.AsyncGenerator<string, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): std.AsyncGenerator<string, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): std.AsyncGenerator</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset | undefined): std.AsyncGenerator<string, void, void>},   iterate :{None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): std.AsyncGenerator</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, void, void> | std.AsyncGenerator<string, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): std.AsyncGenerator<string, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): std.AsyncGenerator</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset | undefined): std.AsyncGenerator<string, void, void>} & {  sync :{None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): std.Generator</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, void, void> | std.Generator<string, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): std.Generator<string, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): std.Generator</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset | undefined): std.Generator<string, void, void>}},   globIterateSync :{None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): std.Generator</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, void, void> | std.Generator<string, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): std.Generator<string, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): std.Generator</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset | undefined): std.Generator<string, void, void>},   iterateSync :{None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): std.Generator</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, void, void> | std.Generator<string, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): std.Generator<string, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): std.Generator</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset | undefined): std.Generator<string, void, void>},   Glob :new <Opts extends glob.glob/dist/mjs/glob.GlobOptions>(pattern : string | std.Array<string>, opts : / * import warning: RewrittenClass.unapply cls was tparam Opts * / any): glob.glob/dist/mjs/glob.Glob<Opts>, hasMagic (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions | undefined): boolean, escape (s : string, param1 : std.Pick<minimatch.minimatch.MinimatchOptions, 'windowsPathsNoEscape'> | undefined): string, unescape (s : string, param1 : std.Pick<minimatch.minimatch.MinimatchOptions, 'windowsPathsNoEscape'> | undefined): string} */
+  object glob {
+    
+    inline def apply(pattern: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+    inline def apply(pattern: String, options: GlobOptions): js.Promise[
+        js.Array[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        ]
+      ] = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        js.Array[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        ]
+      ]]
+    inline def apply(pattern: String, options: GlobOptionsWithFileTypesFalse): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+    inline def apply(pattern: String, options: GlobOptionsWithFileTypesTrue): js.Promise[
+        js.Array[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        ]
+      ] = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        js.Array[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        ]
+      ]]
+    inline def apply(pattern: String, options: GlobOptionsWithFileTypesUnset): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+    inline def apply(pattern: js.Array[String]): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+    inline def apply(pattern: js.Array[String], options: GlobOptions): js.Promise[
+        js.Array[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        ]
+      ] = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        js.Array[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        ]
+      ]]
+    inline def apply(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+    inline def apply(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): js.Promise[
+        js.Array[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        ]
+      ] = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        js.Array[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        ]
+      ]]
+    inline def apply(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+    
+    @JSImport("glob", "glob")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+    @JSImport("glob", "glob.Glob")
+    @js.native
+    open class GlobCls[Opts /* <: GlobOptions */] protected () extends Glob[Opts] {
+      /**
+        * All options are stored as properties on the `Glob` object.
+        *
+        * See {@link GlobOptions} for full options descriptions.
+        *
+        * Note that a previous `Glob` object can be passed as the
+        * `GlobOptions` to another `Glob` instantiation to re-use settings
+        * and caches with a new pattern.
+        *
+        * Traversal functions can be called multiple times to run the walk
+        * again.
+        */
+      def this(pattern: String, opts: /* import warning: RewrittenClass.unapply cls was tparam Opts */ Any) = this()
+      def this(
+        pattern: js.Array[String],
+        opts: /* import warning: RewrittenClass.unapply cls was tparam Opts */ Any
+      ) = this()
+    }
+    
+    @JSImport("glob", "glob.Glob")
+    @js.native
+    def Glob_ : Instantiable2[
+        /* pattern */ String | js.Array[String], 
+        /* import warning: RewrittenClass.unapply cls was tparam Opts */ /* opts */ Any, 
+        Glob[GlobOptions]
+      ] = js.native
+    
+    inline def Glob__=(
+      x: Instantiable2[
+          /* pattern */ String | js.Array[String], 
+          /* import warning: RewrittenClass.unapply cls was tparam Opts */ /* opts */ Any, 
+          Glob[GlobOptions]
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Glob")(x.asInstanceOf[js.Any])
+    
+    inline def escape(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def escape(s: String, param1: typings.glob.anon.PickMinimatchOptionswindo): String = (^.asInstanceOf[js.Dynamic].applyDynamic("escape")(s.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    @JSImport("glob", "glob.glob")
+    @js.native
+    def glob: Fn0 = js.native
+    inline def glob(pattern: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("glob")(pattern.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+    inline def glob(pattern: String, options: GlobOptions): js.Promise[
+        js.Array[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        ]
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("glob")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        js.Array[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        ]
+      ]]
+    inline def glob(pattern: String, options: GlobOptionsWithFileTypesFalse): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("glob")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+    inline def glob(pattern: String, options: GlobOptionsWithFileTypesTrue): js.Promise[
+        js.Array[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        ]
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("glob")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        js.Array[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        ]
+      ]]
+    inline def glob(pattern: String, options: GlobOptionsWithFileTypesUnset): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("glob")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+    inline def glob(pattern: js.Array[String]): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("glob")(pattern.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+    inline def glob(pattern: js.Array[String], options: GlobOptions): js.Promise[
+        js.Array[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        ]
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("glob")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        js.Array[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+        ]
+      ]]
+    inline def glob(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("glob")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+    inline def glob(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): js.Promise[
+        js.Array[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        ]
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("glob")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        js.Array[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+        ]
+      ]]
+    inline def glob(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("glob")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+    
+    @JSImport("glob", "glob.globIterate")
+    @js.native
+    def globIterate: Fn3 = js.native
+    inline def globIterate(pattern: String): AsyncGenerator[String, Unit, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("globIterate")(pattern.asInstanceOf[js.Any]).asInstanceOf[AsyncGenerator[String, Unit, Unit]]
+    inline def globIterate(pattern: String, options: GlobOptions): AsyncGenerator[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Unit, 
+        Unit
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globIterate")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Unit, 
+        Unit
+      ]]
+    inline def globIterate(pattern: String, options: GlobOptionsWithFileTypesFalse): AsyncGenerator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("globIterate")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[String, Unit, Unit]]
+    inline def globIterate(pattern: String, options: GlobOptionsWithFileTypesTrue): AsyncGenerator[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Unit, 
+        Unit
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globIterate")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Unit, 
+        Unit
+      ]]
+    inline def globIterate(pattern: String, options: GlobOptionsWithFileTypesUnset): AsyncGenerator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("globIterate")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[String, Unit, Unit]]
+    inline def globIterate(pattern: js.Array[String]): AsyncGenerator[String, Unit, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("globIterate")(pattern.asInstanceOf[js.Any]).asInstanceOf[AsyncGenerator[String, Unit, Unit]]
+    inline def globIterate(pattern: js.Array[String], options: GlobOptions): AsyncGenerator[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Unit, 
+        Unit
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globIterate")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Unit, 
+        Unit
+      ]]
+    inline def globIterate(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): AsyncGenerator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("globIterate")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[String, Unit, Unit]]
+    inline def globIterate(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): AsyncGenerator[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Unit, 
+        Unit
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globIterate")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Unit, 
+        Unit
+      ]]
+    inline def globIterate(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): AsyncGenerator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("globIterate")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[String, Unit, Unit]]
+    
+    @JSImport("glob", "glob.globIterateSync")
+    @js.native
+    def globIterateSync: FnCallPatternOptions = js.native
+    inline def globIterateSync(pattern: String): Generator[String, Unit, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("globIterateSync")(pattern.asInstanceOf[js.Any]).asInstanceOf[Generator[String, Unit, Unit]]
+    inline def globIterateSync(pattern: String, options: GlobOptions): Generator[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Unit, 
+        Unit
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globIterateSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Unit, 
+        Unit
+      ]]
+    inline def globIterateSync(pattern: String, options: GlobOptionsWithFileTypesFalse): Generator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("globIterateSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[String, Unit, Unit]]
+    inline def globIterateSync(pattern: String, options: GlobOptionsWithFileTypesTrue): Generator[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Unit, 
+        Unit
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globIterateSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Unit, 
+        Unit
+      ]]
+    inline def globIterateSync(pattern: String, options: GlobOptionsWithFileTypesUnset): Generator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("globIterateSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[String, Unit, Unit]]
+    inline def globIterateSync(pattern: js.Array[String]): Generator[String, Unit, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("globIterateSync")(pattern.asInstanceOf[js.Any]).asInstanceOf[Generator[String, Unit, Unit]]
+    inline def globIterateSync(pattern: js.Array[String], options: GlobOptions): Generator[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Unit, 
+        Unit
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globIterateSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Unit, 
+        Unit
+      ]]
+    inline def globIterateSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Generator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("globIterateSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[String, Unit, Unit]]
+    inline def globIterateSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): Generator[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Unit, 
+        Unit
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globIterateSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Unit, 
+        Unit
+      ]]
+    inline def globIterateSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Generator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("globIterateSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[String, Unit, Unit]]
+    inline def globIterateSync_=(x: FnCallPatternOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globIterateSync")(x.asInstanceOf[js.Any])
+    
+    inline def globIterate_=(x: Fn3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globIterate")(x.asInstanceOf[js.Any])
+    
+    @JSImport("glob", "glob.globStream")
+    @js.native
+    def globStream: Fn2 = js.native
+    inline def globStream(pattern: String): Minipass[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("globStream")(pattern.asInstanceOf[js.Any]).asInstanceOf[Minipass[String, String]]
+    inline def globStream(pattern: String, options: GlobOptions): Minipass[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globStream")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ]]
+    inline def globStream(pattern: String, options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("globStream")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+    inline def globStream(pattern: String, options: GlobOptionsWithFileTypesTrue): Minipass[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globStream")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ]]
+    inline def globStream(pattern: String, options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("globStream")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+    inline def globStream(pattern: js.Array[String]): Minipass[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("globStream")(pattern.asInstanceOf[js.Any]).asInstanceOf[Minipass[String, String]]
+    inline def globStream(pattern: js.Array[String], options: GlobOptions): Minipass[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globStream")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ]]
+    inline def globStream(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("globStream")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+    inline def globStream(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): Minipass[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globStream")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ]]
+    inline def globStream(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("globStream")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+    
+    @JSImport("glob", "glob.globStreamSync")
+    @js.native
+    def globStreamSync: FnCall = js.native
+    inline def globStreamSync(pattern: String, options: GlobOptions): Minipass[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globStreamSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ]]
+    inline def globStreamSync(pattern: String, options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("globStreamSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+    inline def globStreamSync(pattern: String, options: GlobOptionsWithFileTypesTrue): Minipass[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globStreamSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ]]
+    inline def globStreamSync(pattern: String, options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("globStreamSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+    inline def globStreamSync(pattern: js.Array[String], options: GlobOptions): Minipass[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globStreamSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ]]
+    inline def globStreamSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("globStreamSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+    inline def globStreamSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): Minipass[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globStreamSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ]]
+    inline def globStreamSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("globStreamSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+    inline def globStreamSync_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globStreamSync")(x.asInstanceOf[js.Any])
+    
+    inline def globStream_=(x: Fn2): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globStream")(x.asInstanceOf[js.Any])
+    
+    @JSImport("glob", "glob.globSync")
+    @js.native
+    def globSync: Fn1 = js.native
+    inline def globSync(pattern: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("globSync")(pattern.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def globSync(pattern: String, options: GlobOptions): js.Array[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ]]
+    inline def globSync(pattern: String, options: GlobOptionsWithFileTypesFalse): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("globSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def globSync(pattern: String, options: GlobOptionsWithFileTypesTrue): js.Array[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ]]
+    inline def globSync(pattern: String, options: GlobOptionsWithFileTypesUnset): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("globSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def globSync(pattern: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("globSync")(pattern.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def globSync(pattern: js.Array[String], options: GlobOptions): js.Array[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ]]
+    inline def globSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("globSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def globSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): js.Array[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ]]
+    inline def globSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("globSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def globSync_=(x: Fn1): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globSync")(x.asInstanceOf[js.Any])
+    
+    inline def glob_=(x: Fn0): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("glob")(x.asInstanceOf[js.Any])
+    
+    inline def hasMagic(pattern: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasMagic")(pattern.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def hasMagic(pattern: String, options: GlobOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasMagic")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def hasMagic(pattern: js.Array[String]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasMagic")(pattern.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def hasMagic(pattern: js.Array[String], options: GlobOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasMagic")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @JSImport("glob", "glob.iterate")
+    @js.native
+    def iterate: NonepatternstringArraystrSync = js.native
+    inline def iterate(pattern: String): AsyncGenerator[String, Unit, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(pattern.asInstanceOf[js.Any]).asInstanceOf[AsyncGenerator[String, Unit, Unit]]
+    inline def iterate(pattern: String, options: GlobOptions): AsyncGenerator[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Unit, 
+        Unit
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Unit, 
+        Unit
+      ]]
+    inline def iterate(pattern: String, options: GlobOptionsWithFileTypesFalse): AsyncGenerator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[String, Unit, Unit]]
+    inline def iterate(pattern: String, options: GlobOptionsWithFileTypesTrue): AsyncGenerator[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Unit, 
+        Unit
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Unit, 
+        Unit
+      ]]
+    inline def iterate(pattern: String, options: GlobOptionsWithFileTypesUnset): AsyncGenerator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[String, Unit, Unit]]
+    inline def iterate(pattern: js.Array[String]): AsyncGenerator[String, Unit, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(pattern.asInstanceOf[js.Any]).asInstanceOf[AsyncGenerator[String, Unit, Unit]]
+    inline def iterate(pattern: js.Array[String], options: GlobOptions): AsyncGenerator[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Unit, 
+        Unit
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Unit, 
+        Unit
+      ]]
+    inline def iterate(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): AsyncGenerator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[String, Unit, Unit]]
+    inline def iterate(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): AsyncGenerator[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Unit, 
+        Unit
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Unit, 
+        Unit
+      ]]
+    inline def iterate(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): AsyncGenerator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[String, Unit, Unit]]
+    
+    @JSImport("glob", "glob.iterateSync")
+    @js.native
+    def iterateSync: FnCallPatternOptions = js.native
+    inline def iterateSync(pattern: String): Generator[String, Unit, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("iterateSync")(pattern.asInstanceOf[js.Any]).asInstanceOf[Generator[String, Unit, Unit]]
+    inline def iterateSync(pattern: String, options: GlobOptions): Generator[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Unit, 
+        Unit
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Unit, 
+        Unit
+      ]]
+    inline def iterateSync(pattern: String, options: GlobOptionsWithFileTypesFalse): Generator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[String, Unit, Unit]]
+    inline def iterateSync(pattern: String, options: GlobOptionsWithFileTypesTrue): Generator[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Unit, 
+        Unit
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Unit, 
+        Unit
+      ]]
+    inline def iterateSync(pattern: String, options: GlobOptionsWithFileTypesUnset): Generator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[String, Unit, Unit]]
+    inline def iterateSync(pattern: js.Array[String]): Generator[String, Unit, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("iterateSync")(pattern.asInstanceOf[js.Any]).asInstanceOf[Generator[String, Unit, Unit]]
+    inline def iterateSync(pattern: js.Array[String], options: GlobOptions): Generator[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Unit, 
+        Unit
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Unit, 
+        Unit
+      ]]
+    inline def iterateSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Generator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[String, Unit, Unit]]
+    inline def iterateSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): Generator[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Unit, 
+        Unit
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Unit, 
+        Unit
+      ]]
+    inline def iterateSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Generator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[String, Unit, Unit]]
+    inline def iterateSync_=(x: FnCallPatternOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("iterateSync")(x.asInstanceOf[js.Any])
+    
+    inline def iterate_=(x: NonepatternstringArraystrSync): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("iterate")(x.asInstanceOf[js.Any])
+    
+    @JSImport("glob", "glob.stream")
+    @js.native
+    def stream: NonepatternstringArraystrCall = js.native
+    inline def stream(pattern: String): Minipass[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(pattern.asInstanceOf[js.Any]).asInstanceOf[Minipass[String, String]]
+    inline def stream(pattern: String, options: GlobOptions): Minipass[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ]]
+    inline def stream(pattern: String, options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+    inline def stream(pattern: String, options: GlobOptionsWithFileTypesTrue): Minipass[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ]]
+    inline def stream(pattern: String, options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+    inline def stream(pattern: js.Array[String]): Minipass[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(pattern.asInstanceOf[js.Any]).asInstanceOf[Minipass[String, String]]
+    inline def stream(pattern: js.Array[String], options: GlobOptions): Minipass[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ]]
+    inline def stream(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+    inline def stream(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): Minipass[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ]]
+    inline def stream(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+    
+    @JSImport("glob", "glob.streamSync")
+    @js.native
+    def streamSync: FnCall = js.native
+    inline def streamSync(pattern: String, options: GlobOptions): Minipass[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ]]
+    inline def streamSync(pattern: String, options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+    inline def streamSync(pattern: String, options: GlobOptionsWithFileTypesTrue): Minipass[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ]]
+    inline def streamSync(pattern: String, options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+    inline def streamSync(pattern: js.Array[String], options: GlobOptions): Minipass[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ]]
+    inline def streamSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+    inline def streamSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): Minipass[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ]]
+    inline def streamSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+    inline def streamSync_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("streamSync")(x.asInstanceOf[js.Any])
+    
+    inline def stream_=(x: NonepatternstringArraystrCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stream")(x.asInstanceOf[js.Any])
+    
+    @JSImport("glob", "glob.sync")
+    @js.native
+    def sync: NonepatternstringArraystr = js.native
+    inline def sync(pattern: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def sync(pattern: String, options: GlobOptions): js.Array[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ]]
+    inline def sync(pattern: String, options: GlobOptionsWithFileTypesFalse): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def sync(pattern: String, options: GlobOptionsWithFileTypesTrue): js.Array[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ]]
+    inline def sync(pattern: String, options: GlobOptionsWithFileTypesUnset): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def sync(pattern: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def sync(pattern: js.Array[String], options: GlobOptions): js.Array[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ]]
+    inline def sync(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def sync(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): js.Array[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ]]
+    inline def sync(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def sync_=(x: NonepatternstringArraystr): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sync")(x.asInstanceOf[js.Any])
+    
+    inline def unescape(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescape")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def unescape(s: String, param1: typings.glob.anon.PickMinimatchOptionswindo): String = (^.asInstanceOf[js.Dynamic].applyDynamic("unescape")(s.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
+  }
   
-  @JSImport("glob", "glob")
-  @js.native
-  def glob: js.Function3[
-    /* pattern */ String, 
-    /* options */ IOptions, 
-    /* cb */ js.Function2[/* err */ js.Error | Null, /* matches */ js.Array[String], Unit], 
-    IGlob
-  ] = js.native
-  inline def glob_=(
-    x: js.Function3[
-      /* pattern */ String, 
-      /* options */ IOptions, 
-      /* cb */ js.Function2[/* err */ js.Error | Null, /* matches */ js.Array[String], Unit], 
-      IGlob
-    ]
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("glob")(x.asInstanceOf[js.Any])
+  inline def globIterate(pattern: String): AsyncGenerator[String, Unit, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("globIterate")(pattern.asInstanceOf[js.Any]).asInstanceOf[AsyncGenerator[String, Unit, Unit]]
+  inline def globIterate(pattern: String, options: GlobOptions): AsyncGenerator[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+    Unit, 
+    Unit
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globIterate")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+    Unit, 
+    Unit
+  ]]
+  inline def globIterate(pattern: String, options: GlobOptionsWithFileTypesFalse): AsyncGenerator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("globIterate")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[String, Unit, Unit]]
+  inline def globIterate(pattern: String, options: GlobOptionsWithFileTypesTrue): AsyncGenerator[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+    Unit, 
+    Unit
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globIterate")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+    Unit, 
+    Unit
+  ]]
+  inline def globIterate(pattern: String, options: GlobOptionsWithFileTypesUnset): AsyncGenerator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("globIterate")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[String, Unit, Unit]]
+  inline def globIterate(pattern: js.Array[String]): AsyncGenerator[String, Unit, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("globIterate")(pattern.asInstanceOf[js.Any]).asInstanceOf[AsyncGenerator[String, Unit, Unit]]
+  inline def globIterate(pattern: js.Array[String], options: GlobOptions): AsyncGenerator[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+    Unit, 
+    Unit
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globIterate")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+    Unit, 
+    Unit
+  ]]
+  inline def globIterate(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): AsyncGenerator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("globIterate")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[String, Unit, Unit]]
+  inline def globIterate(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): AsyncGenerator[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+    Unit, 
+    Unit
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globIterate")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+    Unit, 
+    Unit
+  ]]
+  inline def globIterate(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): AsyncGenerator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("globIterate")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[String, Unit, Unit]]
+  
+  inline def globIterateSync(pattern: String): Generator[String, Unit, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("globIterateSync")(pattern.asInstanceOf[js.Any]).asInstanceOf[Generator[String, Unit, Unit]]
+  inline def globIterateSync(pattern: String, options: GlobOptions): Generator[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+    Unit, 
+    Unit
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globIterateSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+    Unit, 
+    Unit
+  ]]
+  inline def globIterateSync(pattern: String, options: GlobOptionsWithFileTypesFalse): Generator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("globIterateSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[String, Unit, Unit]]
+  inline def globIterateSync(pattern: String, options: GlobOptionsWithFileTypesTrue): Generator[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+    Unit, 
+    Unit
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globIterateSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+    Unit, 
+    Unit
+  ]]
+  inline def globIterateSync(pattern: String, options: GlobOptionsWithFileTypesUnset): Generator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("globIterateSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[String, Unit, Unit]]
+  inline def globIterateSync(pattern: js.Array[String]): Generator[String, Unit, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("globIterateSync")(pattern.asInstanceOf[js.Any]).asInstanceOf[Generator[String, Unit, Unit]]
+  inline def globIterateSync(pattern: js.Array[String], options: GlobOptions): Generator[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+    Unit, 
+    Unit
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globIterateSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+    Unit, 
+    Unit
+  ]]
+  inline def globIterateSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Generator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("globIterateSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[String, Unit, Unit]]
+  inline def globIterateSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): Generator[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+    Unit, 
+    Unit
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globIterateSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+    Unit, 
+    Unit
+  ]]
+  inline def globIterateSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Generator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("globIterateSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[String, Unit, Unit]]
+  
+  inline def globStream(pattern: String): Minipass[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("globStream")(pattern.asInstanceOf[js.Any]).asInstanceOf[Minipass[String, String]]
+  inline def globStream(pattern: String, options: GlobOptions): Minipass[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globStream")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+  ]]
+  inline def globStream(pattern: String, options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("globStream")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+  inline def globStream(pattern: String, options: GlobOptionsWithFileTypesTrue): Minipass[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globStream")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+  ]]
+  inline def globStream(pattern: String, options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("globStream")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+  inline def globStream(pattern: js.Array[String]): Minipass[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("globStream")(pattern.asInstanceOf[js.Any]).asInstanceOf[Minipass[String, String]]
+  inline def globStream(pattern: js.Array[String], options: GlobOptions): Minipass[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globStream")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+  ]]
+  inline def globStream(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("globStream")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+  inline def globStream(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): Minipass[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globStream")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+  ]]
+  inline def globStream(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("globStream")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+  
+  inline def globStreamSync(pattern: String, options: GlobOptions): Minipass[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globStreamSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+  ]]
+  inline def globStreamSync(pattern: String, options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("globStreamSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+  inline def globStreamSync(pattern: String, options: GlobOptionsWithFileTypesTrue): Minipass[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globStreamSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+  ]]
+  inline def globStreamSync(pattern: String, options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("globStreamSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+  inline def globStreamSync(pattern: js.Array[String], options: GlobOptions): Minipass[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globStreamSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+  ]]
+  inline def globStreamSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("globStreamSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+  inline def globStreamSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): Minipass[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globStreamSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+  ]]
+  inline def globStreamSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("globStreamSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+  
+  inline def globSync(pattern: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("globSync")(pattern.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def globSync(pattern: String, options: GlobOptions): js.Array[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+  ]]
+  inline def globSync(pattern: String, options: GlobOptionsWithFileTypesFalse): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("globSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def globSync(pattern: String, options: GlobOptionsWithFileTypesTrue): js.Array[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+  ]]
+  inline def globSync(pattern: String, options: GlobOptionsWithFileTypesUnset): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("globSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def globSync(pattern: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("globSync")(pattern.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def globSync(pattern: js.Array[String], options: GlobOptions): js.Array[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+  ]]
+  inline def globSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("globSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def globSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): js.Array[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("globSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+  ]]
+  inline def globSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("globSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   inline def hasMagic(pattern: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasMagic")(pattern.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def hasMagic(pattern: String, options: IOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasMagic")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def hasMagic(pattern: String, options: GlobOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasMagic")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def hasMagic(pattern: js.Array[String]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasMagic")(pattern.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasMagic(pattern: js.Array[String], options: GlobOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasMagic")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def sync(pattern: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-  inline def sync(pattern: String, options: IOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  
-  @js.native
-  trait IGlob
-    extends EventEmitter
-       with IGlobBase {
+  /* Inlined {None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): std.AsyncGenerator</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, void, void> | std.AsyncGenerator<string, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): std.AsyncGenerator<string, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): std.AsyncGenerator</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset | undefined): std.AsyncGenerator<string, void, void>} & {  sync :{None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): std.Generator</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, void, void> | std.Generator<string, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): std.Generator<string, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): std.Generator</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset | undefined): std.Generator<string, void, void>}} */
+  object iterate {
     
-    def abort(): Unit = js.native
+    inline def apply(pattern: String): AsyncGenerator[String, Unit, Unit] = ^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any]).asInstanceOf[AsyncGenerator[String, Unit, Unit]]
+    inline def apply(pattern: String, options: GlobOptions): AsyncGenerator[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Unit, 
+        Unit
+      ] = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Unit, 
+        Unit
+      ]]
+    inline def apply(pattern: String, options: GlobOptionsWithFileTypesFalse): AsyncGenerator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[String, Unit, Unit]]
+    inline def apply(pattern: String, options: GlobOptionsWithFileTypesTrue): AsyncGenerator[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Unit, 
+        Unit
+      ] = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Unit, 
+        Unit
+      ]]
+    inline def apply(pattern: String, options: GlobOptionsWithFileTypesUnset): AsyncGenerator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[String, Unit, Unit]]
+    inline def apply(pattern: js.Array[String]): AsyncGenerator[String, Unit, Unit] = ^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any]).asInstanceOf[AsyncGenerator[String, Unit, Unit]]
+    inline def apply(pattern: js.Array[String], options: GlobOptions): AsyncGenerator[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Unit, 
+        Unit
+      ] = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Unit, 
+        Unit
+      ]]
+    inline def apply(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): AsyncGenerator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[String, Unit, Unit]]
+    inline def apply(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): AsyncGenerator[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Unit, 
+        Unit
+      ] = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Unit, 
+        Unit
+      ]]
+    inline def apply(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): AsyncGenerator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[String, Unit, Unit]]
     
-    def pause(): Unit = js.native
+    @JSImport("glob", "iterate")
+    @js.native
+    val ^ : js.Any = js.native
     
-    def resume(): Unit = js.native
+    @JSImport("glob", "iterate.sync")
+    @js.native
+    def sync: FnCallPatternOptions = js.native
+    inline def sync(pattern: String): Generator[String, Unit, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any]).asInstanceOf[Generator[String, Unit, Unit]]
+    inline def sync(pattern: String, options: GlobOptions): Generator[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Unit, 
+        Unit
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Unit, 
+        Unit
+      ]]
+    inline def sync(pattern: String, options: GlobOptionsWithFileTypesFalse): Generator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[String, Unit, Unit]]
+    inline def sync(pattern: String, options: GlobOptionsWithFileTypesTrue): Generator[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Unit, 
+        Unit
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Unit, 
+        Unit
+      ]]
+    inline def sync(pattern: String, options: GlobOptionsWithFileTypesUnset): Generator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[String, Unit, Unit]]
+    inline def sync(pattern: js.Array[String]): Generator[String, Unit, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any]).asInstanceOf[Generator[String, Unit, Unit]]
+    inline def sync(pattern: js.Array[String], options: GlobOptions): Generator[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Unit, 
+        Unit
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Unit, 
+        Unit
+      ]]
+    inline def sync(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Generator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[String, Unit, Unit]]
+    inline def sync(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): Generator[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Unit, 
+        Unit
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Unit, 
+        Unit
+      ]]
+    inline def sync(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Generator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[String, Unit, Unit]]
+    inline def sync_=(x: FnCallPatternOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sync")(x.asInstanceOf[js.Any])
   }
   
-  trait IGlobBase extends StObject {
+  inline def iterateSync(pattern: String): Generator[String, Unit, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("iterateSync")(pattern.asInstanceOf[js.Any]).asInstanceOf[Generator[String, Unit, Unit]]
+  inline def iterateSync(pattern: String, options: GlobOptions): Generator[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+    Unit, 
+    Unit
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+    Unit, 
+    Unit
+  ]]
+  inline def iterateSync(pattern: String, options: GlobOptionsWithFileTypesFalse): Generator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[String, Unit, Unit]]
+  inline def iterateSync(pattern: String, options: GlobOptionsWithFileTypesTrue): Generator[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+    Unit, 
+    Unit
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+    Unit, 
+    Unit
+  ]]
+  inline def iterateSync(pattern: String, options: GlobOptionsWithFileTypesUnset): Generator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[String, Unit, Unit]]
+  inline def iterateSync(pattern: js.Array[String]): Generator[String, Unit, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("iterateSync")(pattern.asInstanceOf[js.Any]).asInstanceOf[Generator[String, Unit, Unit]]
+  inline def iterateSync(pattern: js.Array[String], options: GlobOptions): Generator[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+    Unit, 
+    Unit
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+    Unit, 
+    Unit
+  ]]
+  inline def iterateSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Generator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[String, Unit, Unit]]
+  inline def iterateSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): Generator[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+    Unit, 
+    Unit
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+    Unit, 
+    Unit
+  ]]
+  inline def iterateSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Generator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[String, Unit, Unit]]
+  
+  /* Inlined {None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any> | minipass.minipass.Minipass<string, string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset | undefined): minipass.minipass.Minipass<string, string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): minipass.minipass.Minipass<string, string>} & {  sync :{None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any> | minipass.minipass.Minipass<string, string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset): minipass.minipass.Minipass<string, string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): minipass.minipass.Minipass<string, string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any>}} */
+  object stream {
     
-    var aborted: Boolean
+    inline def apply(pattern: String): Minipass[String, String] = ^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any]).asInstanceOf[Minipass[String, String]]
+    inline def apply(pattern: String, options: GlobOptions): Minipass[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ] = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ]]
+    inline def apply(pattern: String, options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+    inline def apply(pattern: String, options: GlobOptionsWithFileTypesTrue): Minipass[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ] = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ]]
+    inline def apply(pattern: String, options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+    inline def apply(pattern: js.Array[String]): Minipass[String, String] = ^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any]).asInstanceOf[Minipass[String, String]]
+    inline def apply(pattern: js.Array[String], options: GlobOptions): Minipass[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ] = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ]]
+    inline def apply(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+    inline def apply(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): Minipass[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ] = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ]]
+    inline def apply(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
     
-    var cache: StringDictionary[Boolean | DIR | FILE | js.Array[String]]
+    @JSImport("glob", "stream")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var found: js.Array[String]
-    
-    var minimatch: IMinimatch
-    
-    var options: IOptions
-    
-    var realpathCache: StringDictionary[String]
-    
-    var statCache: StringDictionary[js.UndefOr[`false` | IsDirectory]]
-    
-    var symlinks: StringDictionary[js.UndefOr[Boolean]]
-  }
-  object IGlobBase {
-    
-    inline def apply(
-      aborted: Boolean,
-      cache: StringDictionary[Boolean | DIR | FILE | js.Array[String]],
-      found: js.Array[String],
-      minimatch: IMinimatch,
-      options: IOptions,
-      realpathCache: StringDictionary[String],
-      statCache: StringDictionary[js.UndefOr[`false` | IsDirectory]],
-      symlinks: StringDictionary[js.UndefOr[Boolean]]
-    ): IGlobBase = {
-      val __obj = js.Dynamic.literal(aborted = aborted.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], found = found.asInstanceOf[js.Any], minimatch = minimatch.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], realpathCache = realpathCache.asInstanceOf[js.Any], statCache = statCache.asInstanceOf[js.Any], symlinks = symlinks.asInstanceOf[js.Any])
-      __obj.asInstanceOf[IGlobBase]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: IGlobBase] (val x: Self) extends AnyVal {
-      
-      inline def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
-      
-      inline def setCache(value: StringDictionary[Boolean | DIR | FILE | js.Array[String]]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
-      
-      inline def setFound(value: js.Array[String]): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
-      
-      inline def setFoundVarargs(value: String*): Self = StObject.set(x, "found", js.Array(value*))
-      
-      inline def setMinimatch(value: IMinimatch): Self = StObject.set(x, "minimatch", value.asInstanceOf[js.Any])
-      
-      inline def setOptions(value: IOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
-      
-      inline def setRealpathCache(value: StringDictionary[String]): Self = StObject.set(x, "realpathCache", value.asInstanceOf[js.Any])
-      
-      inline def setStatCache(value: StringDictionary[js.UndefOr[`false` | IsDirectory]]): Self = StObject.set(x, "statCache", value.asInstanceOf[js.Any])
-      
-      inline def setSymlinks(value: StringDictionary[js.UndefOr[Boolean]]): Self = StObject.set(x, "symlinks", value.asInstanceOf[js.Any])
-    }
+    @JSImport("glob", "stream.sync")
+    @js.native
+    def sync: FnCall = js.native
+    inline def sync(pattern: String, options: GlobOptions): Minipass[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ]]
+    inline def sync(pattern: String, options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+    inline def sync(pattern: String, options: GlobOptionsWithFileTypesTrue): Minipass[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ]]
+    inline def sync(pattern: String, options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+    inline def sync(pattern: js.Array[String], options: GlobOptions): Minipass[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ]]
+    inline def sync(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+    inline def sync(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): Minipass[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ]]
+    inline def sync(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+    inline def sync_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sync")(x.asInstanceOf[js.Any])
   }
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - scala.Any because Inheritance from two classes. Inlined 
-  - scala.AnyRef because Inheritance from two classes. Inlined 
-  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
-  - js.Any because Inheritance from two classes. Inlined 
-  - scala.AnyRef because Inheritance from two classes. Inlined 
-  - js.Object because Inheritance from two classes. Inlined 
-  - js.Any because Inheritance from two classes. Inlined 
-  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
-  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
-  - org.scalablytyped.runtime.Instantiable3 because Inheritance from two classes. Inlined 
-  - org.scalablytyped.runtime.Instantiable2 because Inheritance from two classes. Inlined 
-  - org.scalablytyped.runtime.Instantiable1 because Inheritance from two classes. Inlined  */ @js.native
-  trait IGlobStatic extends EventEmitter
+  inline def streamSync(pattern: String, options: GlobOptions): Minipass[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+  ]]
+  inline def streamSync(pattern: String, options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+  inline def streamSync(pattern: String, options: GlobOptionsWithFileTypesTrue): Minipass[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+  ]]
+  inline def streamSync(pattern: String, options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+  inline def streamSync(pattern: js.Array[String], options: GlobOptions): Minipass[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+  ]]
+  inline def streamSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+  inline def streamSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): Minipass[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+  ]]
+  inline def streamSync(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamSync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
   
-  @js.native
-  trait IGlobSyncStatic
-    extends StObject
-       with Instantiable1[/* pattern */ String, IGlobBase]
-       with Instantiable2[/* pattern */ String, /* options */ IOptions, IGlobBase]
+  /* Inlined {None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): std.Array</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any> | std.Array<string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset | undefined): std.Array<string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): std.Array</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): std.Array<string>} & {  stream :{None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any> | minipass.minipass.Minipass<string, string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset): minipass.minipass.Minipass<string, string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): minipass.minipass.Minipass<string, string>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): minipass.minipass.Minipass</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any>},   iterate :{None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptions): std.Generator</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, void, void> | std.Generator<string, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesFalse): std.Generator<string, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesTrue): std.Generator</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path * / any, void, void>, None (pattern : string | std.Array<string>, options : glob.glob/dist/mjs/glob.GlobOptionsWithFileTypesUnset | undefined): std.Generator<string, void, void>}} */
+  object sync {
+    
+    inline def apply(pattern: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def apply(pattern: String, options: GlobOptions): js.Array[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ] = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ]]
+    inline def apply(pattern: String, options: GlobOptionsWithFileTypesFalse): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def apply(pattern: String, options: GlobOptionsWithFileTypesTrue): js.Array[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ] = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ]]
+    inline def apply(pattern: String, options: GlobOptionsWithFileTypesUnset): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def apply(pattern: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def apply(pattern: js.Array[String], options: GlobOptions): js.Array[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ] = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ]]
+    inline def apply(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def apply(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): js.Array[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ] = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ]]
+    inline def apply(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    
+    @JSImport("glob", "sync")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("glob", "sync.iterate")
+    @js.native
+    def iterate: FnCallPatternOptions = js.native
+    inline def iterate(pattern: String): Generator[String, Unit, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(pattern.asInstanceOf[js.Any]).asInstanceOf[Generator[String, Unit, Unit]]
+    inline def iterate(pattern: String, options: GlobOptions): Generator[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Unit, 
+        Unit
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Unit, 
+        Unit
+      ]]
+    inline def iterate(pattern: String, options: GlobOptionsWithFileTypesFalse): Generator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[String, Unit, Unit]]
+    inline def iterate(pattern: String, options: GlobOptionsWithFileTypesTrue): Generator[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Unit, 
+        Unit
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Unit, 
+        Unit
+      ]]
+    inline def iterate(pattern: String, options: GlobOptionsWithFileTypesUnset): Generator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[String, Unit, Unit]]
+    inline def iterate(pattern: js.Array[String]): Generator[String, Unit, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(pattern.asInstanceOf[js.Any]).asInstanceOf[Generator[String, Unit, Unit]]
+    inline def iterate(pattern: js.Array[String], options: GlobOptions): Generator[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Unit, 
+        Unit
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        Unit, 
+        Unit
+      ]]
+    inline def iterate(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Generator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[String, Unit, Unit]]
+    inline def iterate(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): Generator[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Unit, 
+        Unit
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        Unit, 
+        Unit
+      ]]
+    inline def iterate(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Generator[String, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[String, Unit, Unit]]
+    inline def iterate_=(x: FnCallPatternOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("iterate")(x.asInstanceOf[js.Any])
+    
+    @JSImport("glob", "sync.stream")
+    @js.native
+    def stream: FnCall = js.native
+    inline def stream(pattern: String, options: GlobOptions): Minipass[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ]]
+    inline def stream(pattern: String, options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+    inline def stream(pattern: String, options: GlobOptionsWithFileTypesTrue): Minipass[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ]]
+    inline def stream(pattern: String, options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+    inline def stream(pattern: js.Array[String], options: GlobOptions): Minipass[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String, 
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any) | String
+      ]]
+    inline def stream(pattern: js.Array[String], options: GlobOptionsWithFileTypesFalse): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+    inline def stream(pattern: js.Array[String], options: GlobOptionsWithFileTypesTrue): Minipass[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
+      ]]
+    inline def stream(pattern: js.Array[String], options: GlobOptionsWithFileTypesUnset): Minipass[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Minipass[String, String]]
+    inline def stream_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stream")(x.asInstanceOf[js.Any])
+  }
   
-  trait IOptions
-    extends StObject
-       with typings.minimatch.mod.IOptions {
-    
-    var absolute: js.UndefOr[Boolean] = js.undefined
-    
-    var cache: js.UndefOr[StringDictionary[Boolean | DIR | FILE | js.Array[String]]] = js.undefined
-    
-    var cwd: js.UndefOr[String] = js.undefined
-    
-    var follow: js.UndefOr[Boolean] = js.undefined
-    
-    var fs: js.UndefOr[Typeoffs] = js.undefined
-    
-    var ignore: js.UndefOr[String | js.Array[String]] = js.undefined
-    
-    var mark: js.UndefOr[Boolean] = js.undefined
-    
-    var nodir: js.UndefOr[Boolean] = js.undefined
-    
-    var nomount: js.UndefOr[Boolean] = js.undefined
-    
-    var nosort: js.UndefOr[Boolean] = js.undefined
-    
-    var nounique: js.UndefOr[Boolean] = js.undefined
-    
-    var realpath: js.UndefOr[Boolean] = js.undefined
-    
-    var realpathCache: js.UndefOr[StringDictionary[String]] = js.undefined
-    
-    var root: js.UndefOr[String] = js.undefined
-    
-    var silent: js.UndefOr[Boolean] = js.undefined
-    
-    var stat: js.UndefOr[Boolean] = js.undefined
-    
-    var statCache: js.UndefOr[StringDictionary[js.UndefOr[`false` | IsDirectory]]] = js.undefined
-    
-    var strict: js.UndefOr[Boolean] = js.undefined
-    
-    var symlinks: js.UndefOr[StringDictionary[js.UndefOr[Boolean]]] = js.undefined
-    
-    var sync: js.UndefOr[Boolean] = js.undefined
-  }
-  object IOptions {
-    
-    inline def apply(): IOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[IOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
-      
-      inline def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
-      
-      inline def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
-      
-      inline def setCache(value: StringDictionary[Boolean | DIR | FILE | js.Array[String]]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
-      
-      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
-      
-      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
-      
-      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
-      
-      inline def setFollow(value: Boolean): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
-      
-      inline def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
-      
-      inline def setFs(value: Typeoffs): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
-      
-      inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
-      
-      inline def setIgnore(value: String | js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
-      
-      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
-      
-      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value*))
-      
-      inline def setMark(value: Boolean): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
-      
-      inline def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
-      
-      inline def setNodir(value: Boolean): Self = StObject.set(x, "nodir", value.asInstanceOf[js.Any])
-      
-      inline def setNodirUndefined: Self = StObject.set(x, "nodir", js.undefined)
-      
-      inline def setNomount(value: Boolean): Self = StObject.set(x, "nomount", value.asInstanceOf[js.Any])
-      
-      inline def setNomountUndefined: Self = StObject.set(x, "nomount", js.undefined)
-      
-      inline def setNosort(value: Boolean): Self = StObject.set(x, "nosort", value.asInstanceOf[js.Any])
-      
-      inline def setNosortUndefined: Self = StObject.set(x, "nosort", js.undefined)
-      
-      inline def setNounique(value: Boolean): Self = StObject.set(x, "nounique", value.asInstanceOf[js.Any])
-      
-      inline def setNouniqueUndefined: Self = StObject.set(x, "nounique", js.undefined)
-      
-      inline def setRealpath(value: Boolean): Self = StObject.set(x, "realpath", value.asInstanceOf[js.Any])
-      
-      inline def setRealpathCache(value: StringDictionary[String]): Self = StObject.set(x, "realpathCache", value.asInstanceOf[js.Any])
-      
-      inline def setRealpathCacheUndefined: Self = StObject.set(x, "realpathCache", js.undefined)
-      
-      inline def setRealpathUndefined: Self = StObject.set(x, "realpath", js.undefined)
-      
-      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
-      
-      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
-      
-      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
-      
-      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
-      
-      inline def setStat(value: Boolean): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
-      
-      inline def setStatCache(value: StringDictionary[js.UndefOr[`false` | IsDirectory]]): Self = StObject.set(x, "statCache", value.asInstanceOf[js.Any])
-      
-      inline def setStatCacheUndefined: Self = StObject.set(x, "statCache", js.undefined)
-      
-      inline def setStatUndefined: Self = StObject.set(x, "stat", js.undefined)
-      
-      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
-      
-      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
-      
-      inline def setSymlinks(value: StringDictionary[js.UndefOr[Boolean]]): Self = StObject.set(x, "symlinks", value.asInstanceOf[js.Any])
-      
-      inline def setSymlinksUndefined: Self = StObject.set(x, "symlinks", js.undefined)
-      
-      inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
-      
-      inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
-    }
-  }
+  inline def unescape(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescape")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def unescape(s: String, param1: PickMinimatchOptionswindo): String = (^.asInstanceOf[js.Dynamic].applyDynamic("unescape")(s.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
 }

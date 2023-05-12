@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ExtrudedHeight extends StObject {
   
-  var center: Cartesian3
+  var cornerType: js.UndefOr[typings.cesium.mod.CornerType] = js.undefined
   
   var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
@@ -17,21 +17,23 @@ trait ExtrudedHeight extends StObject {
   
   var height: js.UndefOr[Double] = js.undefined
   
-  var numberOfVerticalLines: js.UndefOr[Double] = js.undefined
+  var positions: js.Array[Cartesian3]
   
-  var radius: Double
+  var width: Double
 }
 object ExtrudedHeight {
   
-  inline def apply(center: Cartesian3, radius: Double): ExtrudedHeight = {
-    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any])
+  inline def apply(positions: js.Array[Cartesian3], width: Double): ExtrudedHeight = {
+    val __obj = js.Dynamic.literal(positions = positions.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtrudedHeight]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: ExtrudedHeight] (val x: Self) extends AnyVal {
     
-    inline def setCenter(value: Cartesian3): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCornerType(value: typings.cesium.mod.CornerType): Self = StObject.set(x, "cornerType", value.asInstanceOf[js.Any])
+    
+    inline def setCornerTypeUndefined: Self = StObject.set(x, "cornerType", js.undefined)
     
     inline def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
     
@@ -49,10 +51,10 @@ object ExtrudedHeight {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setNumberOfVerticalLines(value: Double): Self = StObject.set(x, "numberOfVerticalLines", value.asInstanceOf[js.Any])
+    inline def setPositions(value: js.Array[Cartesian3]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     
-    inline def setNumberOfVerticalLinesUndefined: Self = StObject.set(x, "numberOfVerticalLines", js.undefined)
+    inline def setPositionsVarargs(value: Cartesian3*): Self = StObject.set(x, "positions", js.Array(value*))
     
-    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

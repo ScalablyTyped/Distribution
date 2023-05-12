@@ -12,17 +12,17 @@ trait CompleteLayerUploadResponse extends StObject {
   var layerDigest: js.UndefOr[LayerDigest] = js.undefined
   
   /**
-    * The public registry ID associated with the request.
+    * The public registry ID that's associated with the request.
     */
   var registryId: js.UndefOr[RegistryId] = js.undefined
   
   /**
-    * The repository name associated with the request.
+    * The repository name that's associated with the request.
     */
   var repositoryName: js.UndefOr[RepositoryName] = js.undefined
   
   /**
-    * The upload ID associated with the layer.
+    * The upload ID that's associated with the layer.
     */
   var uploadId: js.UndefOr[UploadId] = js.undefined
 }

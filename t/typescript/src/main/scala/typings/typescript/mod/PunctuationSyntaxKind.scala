@@ -43,8 +43,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.typescript.mod.SyntaxKind.ExclamationToken
   - typings.typescript.mod.SyntaxKind.TildeToken
   - typings.typescript.mod.SyntaxKind.AmpersandAmpersandToken
+  - typings.typescript.mod.SyntaxKind.AmpersandAmpersandEqualsToken
   - typings.typescript.mod.SyntaxKind.BarBarToken
+  - typings.typescript.mod.SyntaxKind.BarBarEqualsToken
   - typings.typescript.mod.SyntaxKind.QuestionQuestionToken
+  - typings.typescript.mod.SyntaxKind.QuestionQuestionEqualsToken
   - typings.typescript.mod.SyntaxKind.QuestionToken
   - typings.typescript.mod.SyntaxKind.ColonToken
   - typings.typescript.mod.SyntaxKind.AtToken

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@libp2p/interface-peer-discovery" : "1.0.1"
+      "@libp2p/interface-peer-discovery" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@libp2p/interface-peer-discovery" : "1.0.1"
+      "@libp2p/interface-peer-discovery" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

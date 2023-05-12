@@ -14,11 +14,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * There are many ways to format schedules of public transport routes.
-  * This one tries to balance the amount of data and consumability.
-  * It is specifically geared towards urban public transport, with frequent trains and homogenous travels.
-  */
 trait Schedule extends StObject {
   
   var id: String

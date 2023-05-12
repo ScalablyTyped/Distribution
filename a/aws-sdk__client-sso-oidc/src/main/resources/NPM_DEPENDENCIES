@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/client-sso-oidc" : "3.211.0"
+      "@aws-sdk/client-sso-oidc" : "3.332.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/client-sso-oidc" : "3.211.0"
+      "@aws-sdk/client-sso-oidc" : "3.332.0"
     }
   ],
   "compile-devDependencies" : [

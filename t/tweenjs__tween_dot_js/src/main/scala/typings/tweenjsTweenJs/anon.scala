@@ -1,80 +1,11 @@
 package typings.tweenjsTweenJs
 
+import typings.tweenjsTweenJs.mod.EasingFunctionGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
-  
-  trait Back extends StObject {
-    
-    var Back: In
-    
-    var Bounce: In
-    
-    var Circular: In
-    
-    var Cubic: In
-    
-    var Elastic: In
-    
-    var Exponential: In
-    
-    var Linear: None
-    
-    var Quadratic: In
-    
-    var Quartic: In
-    
-    var Quintic: In
-    
-    var Sinusoidal: In
-  }
-  object Back {
-    
-    inline def apply(
-      Back: In,
-      Bounce: In,
-      Circular: In,
-      Cubic: In,
-      Elastic: In,
-      Exponential: In,
-      Linear: None,
-      Quadratic: In,
-      Quartic: In,
-      Quintic: In,
-      Sinusoidal: In
-    ): Back = {
-      val __obj = js.Dynamic.literal(Back = Back.asInstanceOf[js.Any], Bounce = Bounce.asInstanceOf[js.Any], Circular = Circular.asInstanceOf[js.Any], Cubic = Cubic.asInstanceOf[js.Any], Elastic = Elastic.asInstanceOf[js.Any], Exponential = Exponential.asInstanceOf[js.Any], Linear = Linear.asInstanceOf[js.Any], Quadratic = Quadratic.asInstanceOf[js.Any], Quartic = Quartic.asInstanceOf[js.Any], Quintic = Quintic.asInstanceOf[js.Any], Sinusoidal = Sinusoidal.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Back]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Back] (val x: Self) extends AnyVal {
-      
-      inline def setBack(value: In): Self = StObject.set(x, "Back", value.asInstanceOf[js.Any])
-      
-      inline def setBounce(value: In): Self = StObject.set(x, "Bounce", value.asInstanceOf[js.Any])
-      
-      inline def setCircular(value: In): Self = StObject.set(x, "Circular", value.asInstanceOf[js.Any])
-      
-      inline def setCubic(value: In): Self = StObject.set(x, "Cubic", value.asInstanceOf[js.Any])
-      
-      inline def setElastic(value: In): Self = StObject.set(x, "Elastic", value.asInstanceOf[js.Any])
-      
-      inline def setExponential(value: In): Self = StObject.set(x, "Exponential", value.asInstanceOf[js.Any])
-      
-      inline def setLinear(value: None): Self = StObject.set(x, "Linear", value.asInstanceOf[js.Any])
-      
-      inline def setQuadratic(value: In): Self = StObject.set(x, "Quadratic", value.asInstanceOf[js.Any])
-      
-      inline def setQuartic(value: In): Self = StObject.set(x, "Quartic", value.asInstanceOf[js.Any])
-      
-      inline def setQuintic(value: In): Self = StObject.set(x, "Quintic", value.asInstanceOf[js.Any])
-      
-      inline def setSinusoidal(value: In): Self = StObject.set(x, "Sinusoidal", value.asInstanceOf[js.Any])
-    }
-  }
   
   trait Bernstein extends StObject {
     
@@ -146,7 +77,8 @@ object anon {
     }
   }
   
-  trait In extends StObject {
+  /* Inlined std.Readonly<@tweenjs/tween.js.@tweenjs/tween.js.EasingFunctionGroup> */
+  trait ReadonlyEasingFunctionGro extends StObject {
     
     def In(amount: Double): Double
     
@@ -154,15 +86,15 @@ object anon {
     
     def Out(amount: Double): Double
   }
-  object In {
+  object ReadonlyEasingFunctionGro {
     
-    inline def apply(In: Double => Double, InOut: Double => Double, Out: Double => Double): In = {
+    inline def apply(In: Double => Double, InOut: Double => Double, Out: Double => Double): ReadonlyEasingFunctionGro = {
       val __obj = js.Dynamic.literal(In = js.Any.fromFunction1(In), InOut = js.Any.fromFunction1(InOut), Out = js.Any.fromFunction1(Out))
-      __obj.asInstanceOf[In]
+      __obj.asInstanceOf[ReadonlyEasingFunctionGro]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: In] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: ReadonlyEasingFunctionGro] (val x: Self) extends AnyVal {
       
       inline def setIn(value: Double => Double): Self = StObject.set(x, "In", js.Any.fromFunction1(value))
       
@@ -172,22 +104,65 @@ object anon {
     }
   }
   
-  trait None extends StObject {
+  /* Inlined std.Readonly<@tweenjs/tween.js.@tweenjs/tween.js.EasingFunctionGroup & {  None :@tweenjs/tween.js.@tweenjs/tween.js.EasingFunction}> */
+  trait ReadonlyEasingFunctionGroIn extends StObject {
+    
+    def In(amount: Double): Double
+    
+    def InOut(amount: Double): Double
     
     def None(amount: Double): Double
-  }
-  object None {
     
-    inline def apply(None: Double => Double): None = {
-      val __obj = js.Dynamic.literal(None = js.Any.fromFunction1(None))
-      __obj.asInstanceOf[None]
+    def Out(amount: Double): Double
+  }
+  object ReadonlyEasingFunctionGroIn {
+    
+    inline def apply(In: Double => Double, InOut: Double => Double, None: Double => Double, Out: Double => Double): ReadonlyEasingFunctionGroIn = {
+      val __obj = js.Dynamic.literal(In = js.Any.fromFunction1(In), InOut = js.Any.fromFunction1(InOut), None = js.Any.fromFunction1(None), Out = js.Any.fromFunction1(Out))
+      __obj.asInstanceOf[ReadonlyEasingFunctionGroIn]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: None] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: ReadonlyEasingFunctionGroIn] (val x: Self) extends AnyVal {
+      
+      inline def setIn(value: Double => Double): Self = StObject.set(x, "In", js.Any.fromFunction1(value))
+      
+      inline def setInOut(value: Double => Double): Self = StObject.set(x, "InOut", js.Any.fromFunction1(value))
       
       inline def setNone(value: Double => Double): Self = StObject.set(x, "None", js.Any.fromFunction1(value))
+      
+      inline def setOut(value: Double => Double): Self = StObject.set(x, "Out", js.Any.fromFunction1(value))
     }
+  }
+  
+  /* Inlined std.Readonly<{  Linear :std.Readonly<@tweenjs/tween.js.@tweenjs/tween.js.EasingFunctionGroup & {  None :@tweenjs/tween.js.@tweenjs/tween.js.EasingFunction}>,   Quadratic :std.Readonly<@tweenjs/tween.js.@tweenjs/tween.js.EasingFunctionGroup>,   Cubic :std.Readonly<@tweenjs/tween.js.@tweenjs/tween.js.EasingFunctionGroup>,   Quartic :std.Readonly<@tweenjs/tween.js.@tweenjs/tween.js.EasingFunctionGroup>,   Quintic :std.Readonly<@tweenjs/tween.js.@tweenjs/tween.js.EasingFunctionGroup>,   Sinusoidal :std.Readonly<@tweenjs/tween.js.@tweenjs/tween.js.EasingFunctionGroup>,   Exponential :std.Readonly<@tweenjs/tween.js.@tweenjs/tween.js.EasingFunctionGroup>,   Circular :std.Readonly<@tweenjs/tween.js.@tweenjs/tween.js.EasingFunctionGroup>,   Elastic :std.Readonly<@tweenjs/tween.js.@tweenjs/tween.js.EasingFunctionGroup>,   Back :std.Readonly<@tweenjs/tween.js.@tweenjs/tween.js.EasingFunctionGroup>,   Bounce :std.Readonly<@tweenjs/tween.js.@tweenjs/tween.js.EasingFunctionGroup>, generatePow (power : number | undefined): @tweenjs/tween.js.@tweenjs/tween.js.EasingFunctionGroup}> */
+  @js.native
+  trait ReadonlyLinearReadonlyEas extends StObject {
+    
+    val Back: ReadonlyEasingFunctionGro = js.native
+    
+    val Bounce: ReadonlyEasingFunctionGro = js.native
+    
+    val Circular: ReadonlyEasingFunctionGro = js.native
+    
+    val Cubic: ReadonlyEasingFunctionGro = js.native
+    
+    val Elastic: ReadonlyEasingFunctionGro = js.native
+    
+    val Exponential: ReadonlyEasingFunctionGro = js.native
+    
+    val Linear: ReadonlyEasingFunctionGroIn = js.native
+    
+    val Quadratic: ReadonlyEasingFunctionGro = js.native
+    
+    val Quartic: ReadonlyEasingFunctionGro = js.native
+    
+    val Quintic: ReadonlyEasingFunctionGro = js.native
+    
+    val Sinusoidal: ReadonlyEasingFunctionGro = js.native
+    
+    def generatePow(): EasingFunctionGroup = js.native
+    def generatePow(power: Double): EasingFunctionGroup = js.native
   }
   
   trait TypeofSequence extends StObject {

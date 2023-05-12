@@ -8,5 +8,5 @@ object distVersionMod {
   
   @JSImport("@tensorflow-models/face-detection/dist/version", "version")
   @js.native
-  val version: /* "1.0.1" */ String = js.native
+  val version: /* "1.0.2" */ String = js.native
 }

@@ -1,46 +1,60 @@
 package typings.photoshop.domConstantsMod
 
-import typings.photoshop.photoshopStrings.placeAfter
-import typings.photoshop.photoshopStrings.placeAtBeginning
-import typings.photoshop.photoshopStrings.placeAtEnd
-import typings.photoshop.photoshopStrings.placeBefore
-import typings.photoshop.photoshopStrings.placeInside
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.photoshop.photoshopStrings.placeBefore
-  - typings.photoshop.photoshopStrings.placeAtBeginning
-  - typings.photoshop.photoshopStrings.placeAtEnd
-  - typings.photoshop.photoshopStrings.placeAfter
-  - typings.photoshop.photoshopStrings.placeInside
-*/
-trait ElementPlacement extends StObject
-object ElementPlacement {
+@js.native
+sealed trait ElementPlacement extends StObject
+@JSImport("photoshop/dom/Constants", "ElementPlacement")
+@js.native
+object ElementPlacement extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: String): js.UndefOr[ElementPlacement & String] = js.native
   
   /**
     * Place below a layer, below group if group layer
     */
-  inline def PLACEAFTER: placeAfter = "placeAfter".asInstanceOf[placeAfter]
+  @js.native
+  sealed trait PLACEAFTER
+    extends StObject
+       with ElementPlacement
+  /* "placeAfter" */ val PLACEAFTER: typings.photoshop.domConstantsMod.ElementPlacement.PLACEAFTER & String = js.native
   
   /**
     * Place at the top
     */
-  inline def PLACEATBEGINNING: placeAtBeginning = "placeAtBeginning".asInstanceOf[placeAtBeginning]
+  @js.native
+  sealed trait PLACEATBEGINNING
+    extends StObject
+       with ElementPlacement
+  /* "placeAtBeginning" */ val PLACEATBEGINNING: typings.photoshop.domConstantsMod.ElementPlacement.PLACEATBEGINNING & String = js.native
   
   /**
     * Place at the bottom, above background if background layer exists
     */
-  inline def PLACEATEND: placeAtEnd = "placeAtEnd".asInstanceOf[placeAtEnd]
+  @js.native
+  sealed trait PLACEATEND
+    extends StObject
+       with ElementPlacement
+  /* "placeAtEnd" */ val PLACEATEND: typings.photoshop.domConstantsMod.ElementPlacement.PLACEATEND & String = js.native
   
   /**
     * Place above a layer, above group if group layer
     */
-  inline def PLACEBEFORE: placeBefore = "placeBefore".asInstanceOf[placeBefore]
+  @js.native
+  sealed trait PLACEBEFORE
+    extends StObject
+       with ElementPlacement
+  /* "placeBefore" */ val PLACEBEFORE: typings.photoshop.domConstantsMod.ElementPlacement.PLACEBEFORE & String = js.native
   
   /**
     * Place inside a group layer, throws error if not group layer
     */
-  inline def PLACEINSIDE: placeInside = "placeInside".asInstanceOf[placeInside]
+  @js.native
+  sealed trait PLACEINSIDE
+    extends StObject
+       with ElementPlacement
+  /* "placeInside" */ val PLACEINSIDE: typings.photoshop.domConstantsMod.ElementPlacement.PLACEINSIDE & String = js.native
 }

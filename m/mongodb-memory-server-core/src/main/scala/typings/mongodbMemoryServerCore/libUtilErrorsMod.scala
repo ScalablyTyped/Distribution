@@ -406,6 +406,24 @@ object libUtilErrorsMod {
     var platform: String = js.native
   }
   
+  @JSImport("mongodb-memory-server-core/lib/util/errors", "UnknownVersionError")
+  @js.native
+  open class UnknownVersionError protected ()
+    extends StObject
+       with Error {
+    def this(version: String) = this()
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var name: String = js.native
+    
+    var version: String = js.native
+  }
+  
   @JSImport("mongodb-memory-server-core/lib/util/errors", "WaitForPrimaryTimeoutError")
   @js.native
   open class WaitForPrimaryTimeoutError protected ()

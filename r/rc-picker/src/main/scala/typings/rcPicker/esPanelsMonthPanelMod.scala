@@ -1,7 +1,7 @@
 package typings.rcPicker
 
+import typings.rcPicker.esInterfaceMod.CellRender
 import typings.rcPicker.esInterfaceMod.PanelSharedProps
-import typings.rcPicker.esPanelsMonthPanelMonthBodyMod.MonthCellRender
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,6 +20,6 @@ object esPanelsMonthPanelMod {
     extends StObject
        with PanelSharedProps[DateType] {
     
-    var monthCellContentRender: js.UndefOr[MonthCellRender[DateType]] = js.native
+    var cellRender: js.UndefOr[CellRender[DateType, DateType]] = js.native
   }
 }

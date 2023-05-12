@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RecommendationJobContainerConfig extends StObject {
   
   /**
+    * Specifies the name and shape of the expected data inputs for your trained model with a JSON dictionary form. This field is used for optimizing your model using SageMaker Neo. For more information, see DataInputConfig.
+    */
+  var DataInputConfig: js.UndefOr[RecommendationJobDataInputConfig] = js.undefined
+  
+  /**
     * The machine learning domain of the model and its components. Valid Values: COMPUTER_VISION | NATURAL_LANGUAGE_PROCESSING | MACHINE_LEARNING 
     */
   var Domain: js.UndefOr[String] = js.undefined
@@ -50,6 +55,10 @@ object RecommendationJobContainerConfig {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: RecommendationJobContainerConfig] (val x: Self) extends AnyVal {
+    
+    inline def setDataInputConfig(value: RecommendationJobDataInputConfig): Self = StObject.set(x, "DataInputConfig", value.asInstanceOf[js.Any])
+    
+    inline def setDataInputConfigUndefined: Self = StObject.set(x, "DataInputConfig", js.undefined)
     
     inline def setDomain(value: String): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     

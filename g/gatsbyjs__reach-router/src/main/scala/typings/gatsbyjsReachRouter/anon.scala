@@ -1,5 +1,6 @@
 package typings.gatsbyjsReachRouter
 
+import typings.gatsbyjsReachRouter.gatsbyjsReachRouterStrings._empty
 import typings.gatsbyjsReachRouter.gatsbyjsReachRouterStrings.`additions removals`
 import typings.gatsbyjsReachRouter.gatsbyjsReachRouterStrings.`additions text`
 import typings.gatsbyjsReachRouter.gatsbyjsReachRouterStrings.`inline`
@@ -7,8 +8,10 @@ import typings.gatsbyjsReachRouter.gatsbyjsReachRouterStrings.`removals addition
 import typings.gatsbyjsReachRouter.gatsbyjsReachRouterStrings.`removals text`
 import typings.gatsbyjsReachRouter.gatsbyjsReachRouterStrings.`text additions`
 import typings.gatsbyjsReachRouter.gatsbyjsReachRouterStrings.`text removals`
+import typings.gatsbyjsReachRouter.gatsbyjsReachRouterStrings.`use-credentials`
 import typings.gatsbyjsReachRouter.gatsbyjsReachRouterStrings.additions
 import typings.gatsbyjsReachRouter.gatsbyjsReachRouterStrings.all
+import typings.gatsbyjsReachRouter.gatsbyjsReachRouterStrings.anonymous
 import typings.gatsbyjsReachRouter.gatsbyjsReachRouterStrings.ascending
 import typings.gatsbyjsReachRouter.gatsbyjsReachRouterStrings.assertive
 import typings.gatsbyjsReachRouter.gatsbyjsReachRouterStrings.both
@@ -52,9 +55,6 @@ import typings.gatsbyjsReachRouter.gatsbyjsReachRouterStrings.url
 import typings.gatsbyjsReachRouter.gatsbyjsReachRouterStrings.user
 import typings.gatsbyjsReachRouter.gatsbyjsReachRouterStrings.vertical
 import typings.gatsbyjsReachRouter.gatsbyjsReachRouterStrings.yes
-import typings.reachRouter.mod.History
-import typings.reachRouter.mod.LocationContext
-import typings.reachRouter.mod.LocationProviderRenderFn
 import typings.reachRouter.mod.WindowLocation
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
@@ -96,60 +96,13 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
-  
-  /* Inlined std.Readonly<@reach/router.@reach/router.LocationProps> */
-  trait ReadonlyLocationProps extends StObject {
-    
-    def children(context: LocationContext): ReactNode
-  }
-  object ReadonlyLocationProps {
-    
-    inline def apply(children: LocationContext => ReactNode): ReadonlyLocationProps = {
-      val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-      __obj.asInstanceOf[ReadonlyLocationProps]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: ReadonlyLocationProps] (val x: Self) extends AnyVal {
-      
-      inline def setChildren(value: LocationContext => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
-    }
-  }
-  
-  /* Inlined std.Readonly<@reach/router.@reach/router.LocationProviderProps> */
-  trait ReadonlyLocationProviderP extends StObject {
-    
-    val children: js.UndefOr[ReactNode | LocationProviderRenderFn] = js.undefined
-    
-    val history: js.UndefOr[History] = js.undefined
-  }
-  object ReadonlyLocationProviderP {
-    
-    inline def apply(): ReadonlyLocationProviderP = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ReadonlyLocationProviderP]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: ReadonlyLocationProviderP] (val x: Self) extends AnyVal {
-      
-      inline def setChildren(value: ReactNode | LocationProviderRenderFn): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenFunction1(value: /* context */ LocationContext => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      inline def setHistory(value: History): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
-      
-      inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
-    }
-  }
   
   /* Inlined std.Readonly<@reach/router.@reach/router.RouterProps & react.react.HTMLProps<std.HTMLDivElement>> */
   trait ReadonlyRouterPropsHTMLPr extends StObject {
@@ -164,7 +117,7 @@ object anon {
     
     val accessKey: js.UndefOr[String] = js.undefined
     
-    val action: js.UndefOr[String] = js.undefined
+    val action: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     val allowFullScreen: js.UndefOr[Boolean] = js.undefined
     
@@ -330,7 +283,7 @@ object anon {
     
     val coords: js.UndefOr[String] = js.undefined
     
-    val crossOrigin: js.UndefOr[String] = js.undefined
+    val crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
     val dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
@@ -358,7 +311,7 @@ object anon {
     
     val form: js.UndefOr[String] = js.undefined
     
-    val formAction: js.UndefOr[String] = js.undefined
+    val formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     val formEncType: js.UndefOr[String] = js.undefined
     
@@ -650,6 +603,8 @@ object anon {
     
     val results: js.UndefOr[Double] = js.undefined
     
+    val rev: js.UndefOr[String] = js.undefined
+    
     val reversed: js.UndefOr[Boolean] = js.undefined
     
     val role: js.UndefOr[AriaRole] = js.undefined
@@ -756,7 +711,9 @@ object anon {
       
       inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      
+      inline def setActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
@@ -1078,7 +1035,7 @@ object anon {
       
       inline def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
       
-      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -1138,7 +1095,9 @@ object anon {
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      
+      inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
       
       inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
@@ -1729,6 +1688,10 @@ object anon {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
       

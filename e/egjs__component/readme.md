@@ -1,7 +1,7 @@
 
 # Scala.js typings for egjs__component
 
-Typings are for version 3.0.2
+Typings are for version 3.0.4
 
 ## Library description:
 A base class utility that manages events and options in modules.

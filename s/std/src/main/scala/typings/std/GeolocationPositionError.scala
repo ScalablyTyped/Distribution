@@ -1,5 +1,8 @@
 package typings.std
 
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,13 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GeolocationPositionError extends StObject {
   
   /* standard dom */
-  val PERMISSION_DENIED: Double
+  val PERMISSION_DENIED: `1`
   
   /* standard dom */
-  val POSITION_UNAVAILABLE: Double
+  val POSITION_UNAVAILABLE: `2`
   
   /* standard dom */
-  val TIMEOUT: Double
+  val TIMEOUT: `3`
   
   /* standard dom */
   val code: Double
@@ -23,14 +26,8 @@ trait GeolocationPositionError extends StObject {
 }
 object GeolocationPositionError {
   
-  inline def apply(
-    PERMISSION_DENIED: Double,
-    POSITION_UNAVAILABLE: Double,
-    TIMEOUT: Double,
-    code: Double,
-    message: java.lang.String
-  ): GeolocationPositionError = {
-    val __obj = js.Dynamic.literal(PERMISSION_DENIED = PERMISSION_DENIED.asInstanceOf[js.Any], POSITION_UNAVAILABLE = POSITION_UNAVAILABLE.asInstanceOf[js.Any], TIMEOUT = TIMEOUT.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+  inline def apply(code: Double, message: java.lang.String): GeolocationPositionError = {
+    val __obj = js.Dynamic.literal(PERMISSION_DENIED = 1, POSITION_UNAVAILABLE = 2, TIMEOUT = 3, code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeolocationPositionError]
   }
   
@@ -41,10 +38,10 @@ object GeolocationPositionError {
     
     inline def setMessage(value: java.lang.String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    inline def setPERMISSION_DENIED(value: Double): Self = StObject.set(x, "PERMISSION_DENIED", value.asInstanceOf[js.Any])
+    inline def setPERMISSION_DENIED(value: `1`): Self = StObject.set(x, "PERMISSION_DENIED", value.asInstanceOf[js.Any])
     
-    inline def setPOSITION_UNAVAILABLE(value: Double): Self = StObject.set(x, "POSITION_UNAVAILABLE", value.asInstanceOf[js.Any])
+    inline def setPOSITION_UNAVAILABLE(value: `2`): Self = StObject.set(x, "POSITION_UNAVAILABLE", value.asInstanceOf[js.Any])
     
-    inline def setTIMEOUT(value: Double): Self = StObject.set(x, "TIMEOUT", value.asInstanceOf[js.Any])
+    inline def setTIMEOUT(value: `3`): Self = StObject.set(x, "TIMEOUT", value.asInstanceOf[js.Any])
   }
 }

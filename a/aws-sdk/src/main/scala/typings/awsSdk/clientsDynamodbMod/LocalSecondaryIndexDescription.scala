@@ -19,12 +19,12 @@ trait LocalSecondaryIndexDescription extends StObject {
   /**
     * The total size of the specified index, in bytes. DynamoDB updates this value approximately every six hours. Recent changes might not be reflected in this value.
     */
-  var IndexSizeBytes: js.UndefOr[Long] = js.undefined
+  var IndexSizeBytes: js.UndefOr[LongObject] = js.undefined
   
   /**
     * The number of items in the specified index. DynamoDB updates this value approximately every six hours. Recent changes might not be reflected in this value.
     */
-  var ItemCount: js.UndefOr[Long] = js.undefined
+  var ItemCount: js.UndefOr[LongObject] = js.undefined
   
   /**
     * The complete key schema for the local secondary index, consisting of one or more pairs of attribute names and key types:    HASH - partition key    RANGE - sort key    The partition key of an item is also known as its hash attribute. The term "hash attribute" derives from DynamoDB's usage of an internal hash function to evenly distribute data items across partitions, based on their partition key values. The sort key of an item is also known as its range attribute. The term "range attribute" derives from the way DynamoDB stores items with the same partition key physically close together, in sorted order by the sort key value. 
@@ -54,11 +54,11 @@ object LocalSecondaryIndexDescription {
     
     inline def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
     
-    inline def setIndexSizeBytes(value: Long): Self = StObject.set(x, "IndexSizeBytes", value.asInstanceOf[js.Any])
+    inline def setIndexSizeBytes(value: LongObject): Self = StObject.set(x, "IndexSizeBytes", value.asInstanceOf[js.Any])
     
     inline def setIndexSizeBytesUndefined: Self = StObject.set(x, "IndexSizeBytes", js.undefined)
     
-    inline def setItemCount(value: Long): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
+    inline def setItemCount(value: LongObject): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
     
     inline def setItemCountUndefined: Self = StObject.set(x, "ItemCount", js.undefined)
     

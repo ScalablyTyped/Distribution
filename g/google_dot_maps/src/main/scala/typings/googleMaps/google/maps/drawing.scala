@@ -8,12 +8,6 @@ object drawing {
   
   @js.native
   sealed trait OverlayType extends StObject
-  /**
-    * The types of overlay that may be created by the
-    * <code>DrawingManager</code>. Specify these by value, or by using the
-    * constant&#39;s name. For example, <code>'polygon'</code> or
-    * <code>google.maps.drawing.OverlayType.POLYGON</code>.
-    */
   @JSGlobal("google.maps.drawing.OverlayType")
   @js.native
   object OverlayType extends StObject {
@@ -66,9 +60,6 @@ object drawing {
          with OverlayType
   }
   
-  /**
-    * Options for the rendering of the drawing control.
-    */
   trait DrawingControlOptions extends StObject {
     
     /**
@@ -117,12 +108,6 @@ object drawing {
     }
   }
   
-  /**
-    * Allows users to draw markers, polygons, polylines, rectangles, and circles
-    * on the map. The <code>DrawingManager</code>&#39;s drawing mode defines the
-    * type of overlay that will be created by the user. Adds a control to the
-    * map, allowing the user to switch drawing mode.
-    */
   @js.native
   trait DrawingManager
     extends StObject
@@ -165,9 +150,6 @@ object drawing {
     def setOptions(options: DrawingManagerOptions): Unit = js.native
   }
   
-  /**
-    * Options for the drawing manager.
-    */
   trait DrawingManagerOptions extends StObject {
     
     /**
@@ -305,10 +287,6 @@ object drawing {
     }
   }
   
-  /**
-    * The properties of an overlaycomplete event on a
-    * <code>DrawingManager</code>.
-    */
   trait OverlayCompleteEvent extends StObject {
     
     /**

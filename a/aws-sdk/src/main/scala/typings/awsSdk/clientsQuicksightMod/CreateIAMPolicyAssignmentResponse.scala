@@ -12,7 +12,7 @@ trait CreateIAMPolicyAssignmentResponse extends StObject {
   var AssignmentId: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the assignment. This name must be unique within the Amazon Web Services account.
+    * The name of the assignment. The name must be unique within the Amazon Web Services account.
     */
   var AssignmentName: js.UndefOr[IAMPolicyAssignmentName] = js.undefined
   

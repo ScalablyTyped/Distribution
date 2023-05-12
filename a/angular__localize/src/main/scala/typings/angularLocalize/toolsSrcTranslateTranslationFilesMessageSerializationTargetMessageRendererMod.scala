@@ -1,6 +1,6 @@
 package typings.angularLocalize
 
-import typings.angularLocalize.mod.ɵParsedTranslation
+import typings.angularLocalize.localizeMod.ɵParsedTranslation
 import typings.angularLocalize.toolsSrcTranslateTranslationFilesMessageSerializationMessageRendererMod.MessageRenderer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

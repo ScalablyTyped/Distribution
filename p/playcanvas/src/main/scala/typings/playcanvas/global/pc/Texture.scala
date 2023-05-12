@@ -16,9 +16,10 @@ open class Texture protected ()
   /**
     * Create a new Texture instance.
     *
-    * @param {GraphicsDevice} graphicsDevice - The graphics device used to manage this texture.
+    * @param {import('./graphics-device.js').GraphicsDevice} graphicsDevice - The graphics device
+    * used to manage this texture.
     * @param {object} [options] - Object for passing optional arguments.
-    * @param {string} [options.name] - The name of the texture.
+    * @param {string} [options.name] - The name of the texture. Defaults to null.
     * @param {number} [options.width] - The width of the texture in pixels. Defaults to 4.
     * @param {number} [options.height] - The height of the texture in pixels. Defaults to 4.
     * @param {number} [options.depth] - The number of depth slices in a 3D texture (WebGL2 only).
@@ -27,12 +28,12 @@ open class Texture protected ()
     *
     * - {@link PIXELFORMAT_A8}
     * - {@link PIXELFORMAT_L8}
-    * - {@link PIXELFORMAT_L8_A8}
-    * - {@link PIXELFORMAT_R5_G6_B5}
-    * - {@link PIXELFORMAT_R5_G5_B5_A1}
-    * - {@link PIXELFORMAT_R4_G4_B4_A4}
-    * - {@link PIXELFORMAT_R8_G8_B8}
-    * - {@link PIXELFORMAT_R8_G8_B8_A8}
+    * - {@link PIXELFORMAT_LA8}
+    * - {@link PIXELFORMAT_RGB565}
+    * - {@link PIXELFORMAT_RGBA5551}
+    * - {@link PIXELFORMAT_RGBA4}
+    * - {@link PIXELFORMAT_RGB8}
+    * - {@link PIXELFORMAT_RGBA8}
     * - {@link PIXELFORMAT_DXT1}
     * - {@link PIXELFORMAT_DXT3}
     * - {@link PIXELFORMAT_DXT5}
@@ -46,11 +47,11 @@ open class Texture protected ()
     * - {@link PIXELFORMAT_PVRTC_4BPP_RGB_1}
     * - {@link PIXELFORMAT_PVRTC_4BPP_RGBA_1}
     * - {@link PIXELFORMAT_111110F}
-    * - {@link PIXELFORMAT_ASTC_4x4}>/li>
+    * - {@link PIXELFORMAT_ASTC_4x4}
     * - {@link PIXELFORMAT_ATC_RGB}
     * - {@link PIXELFORMAT_ATC_RGBA}
     *
-    * Defaults to {@link PIXELFORMAT_R8_G8_B8_A8}.
+    * Defaults to {@link PIXELFORMAT_RGBA8}.
     * @param {string} [options.projection] - The projection type of the texture, used when the
     * texture represents an environment. Can be:
     *
@@ -59,7 +60,7 @@ open class Texture protected ()
     * - {@link TEXTUREPROJECTION_EQUIRECT}
     * - {@link TEXTUREPROJECTION_OCTAHEDRAL}
     *
-    * Defaults to {@link TEXTUREPROJECTION_CUBE} if options.cubemap is specified, otherwise
+    * Defaults to {@link TEXTUREPROJECTION_CUBE} if options.cubemap is true, otherwise
     * {@link TEXTUREPROJECTION_NONE}.
     * @param {number} [options.minFilter] - The minification filter type to use. Defaults to
     * {@link FILTER_LINEAR_MIPMAP_LINEAR}.
@@ -79,7 +80,15 @@ open class Texture protected ()
     * Defaults to false.
     * @param {boolean} [options.volume] - Specifies whether the texture is to be a 3D volume
     * (WebGL2 only). Defaults to false.
-    * @param {string} [options.type] - Specifies the image type, see {@link TEXTURETYPE_DEFAULT}.
+    * @param {string} [options.type] - Specifies the texture type.  Can be:
+    *
+    * - {@link TEXTURETYPE_DEFAULT}
+    * - {@link TEXTURETYPE_RGBM}
+    * - {@link TEXTURETYPE_RGBE}
+    * - {@link TEXTURETYPE_RGBP}
+    * - {@link TEXTURETYPE_SWIZZLEGGGR}
+    *
+    * Defaults to {@link TEXTURETYPE_DEFAULT}.
     * @param {boolean} [options.fixCubemapSeams] - Specifies whether this cubemap texture requires
     * special seam fixing shader code to look right. Defaults to false.
     * @param {boolean} [options.flipY] - Specifies whether the texture should be flipped in the
@@ -106,17 +115,17 @@ open class Texture protected ()
     * @param {Uint8Array[]} [options.levels] - Array of Uint8Array.
     * @example
     * // Create a 8x8x24-bit texture
-    * var texture = new pc.Texture(graphicsDevice, {
+    * const texture = new pc.Texture(graphicsDevice, {
     *     width: 8,
     *     height: 8,
-    *     format: pc.PIXELFORMAT_R8_G8_B8
+    *     format: pc.PIXELFORMAT_RGB8
     * });
     *
     * // Fill the texture with a gradient
-    * var pixels = texture.lock();
-    * var count = 0;
-    * for (var i = 0; i < 8; i++) {
-    *     for (var j = 0; j < 8; j++) {
+    * const pixels = texture.lock();
+    * const count = 0;
+    * for (let i = 0; i < 8; i++) {
+    *     for (let j = 0; j < 8; j++) {
     *         pixels[count++] = i * 32;
     *         pixels[count++] = j * 32;
     *         pixels[count++] = 255;

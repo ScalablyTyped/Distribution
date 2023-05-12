@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.TouchAction
+import typings.csstype.mod.Property.ScrollPaddingBottom
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `173` extends StObject {
   
   var value: js.UndefOr[
-    TouchAction | (js.Array[
-      (Extract[js.UndefOr[TouchAction | js.Array[NonNullable[js.UndefOr[TouchAction]]]], String]) | NonNullable[js.UndefOr[TouchAction]]
+    (ScrollPaddingBottom[Double | String]) | (js.Array[
+      (Extract[
+        js.UndefOr[
+          (ScrollPaddingBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[ScrollPaddingBottom[Double | String]]]])
+        ], 
+        String
+      ]) | (NonNullable[js.UndefOr[ScrollPaddingBottom[Double | String]]])
     ])
   ] = js.native
 }

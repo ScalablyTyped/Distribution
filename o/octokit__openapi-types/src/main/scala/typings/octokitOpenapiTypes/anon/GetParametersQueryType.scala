@@ -7,14 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetParametersQueryType extends StObject {
   
   /**
-    * Lists repositories that the authenticated user has explicit permission (`:read`, `:write`, or `:admin`) to access.
+    * List repositories for the authenticated user
+    * @description Lists repositories that the authenticated user has explicit permission (`:read`, `:write`, or `:admin`) to access.
     *
     * The authenticated user has explicit permission to access repositories they own, repositories where they are a collaborator, and repositories that they can access through an organization membership.
     */
   var get: ParametersQueryType
   
   /**
-    * Creates a new repository for the authenticated user.
+    * Create a repository for the authenticated user
+    * @description Creates a new repository for the authenticated user.
     *
     * **OAuth scope requirements**
     *

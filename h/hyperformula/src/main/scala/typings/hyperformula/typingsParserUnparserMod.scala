@@ -4,7 +4,7 @@ import typings.hyperformula.typingsCellMod.SimpleCellAddress_
 import typings.hyperformula.typingsNamedExpressionsMod.NamedExpressions
 import typings.hyperformula.typingsParserAddressRepresentationConvertersMod.SheetIndexMappingFn
 import typings.hyperformula.typingsParserAstMod.Ast
-import typings.hyperformula.typingsParserLexerConfigMod.ILexerConfig
+import typings.hyperformula.typingsParserLexerConfigMod.LexerConfig
 import typings.hyperformula.typingsParserParserConfigMod.ParserConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +21,7 @@ object typingsParserUnparserMod {
   open class Unparser protected () extends StObject {
     def this(
       config: ParserConfig,
-      lexerConfig: ILexerConfig,
+      lexerConfig: LexerConfig,
       sheetMappingFn: SheetIndexMappingFn,
       namedExpressions: NamedExpressions
     ) = this()

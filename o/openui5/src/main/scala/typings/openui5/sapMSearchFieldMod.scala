@@ -13,6 +13,8 @@ import typings.openui5.sapUiCoreLibraryMod.CSSSize
 import typings.openui5.sapUiCoreLibraryMod.ID
 import typings.openui5.sapUiCoreLibraryMod.IFormContent
 import typings.std.Element
+import typings.std.Object
+import typings.std.PropertyKey
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -66,6 +68,27 @@ object sapMSearchFieldMod {
     
     /* CompleteClass */
     var __implements__sap_ui_core_IFormContent: Boolean = js.native
+    
+    /** The initial value of Object.prototype.constructor is the standard built-in Object constructor. */
+    /* standard es5 */
+    /* CompleteClass */
+    var constructor: js.Function = js.native
+    
+    /**
+      * Determines whether an object has a property with the specified name.
+      * @param v A property name.
+      */
+    /* standard es5 */
+    /* CompleteClass */
+    override def hasOwnProperty(v: PropertyKey): Boolean = js.native
+    
+    /**
+      * Determines whether a specified property is enumerable.
+      * @param v A property name.
+      */
+    /* standard es5 */
+    /* CompleteClass */
+    override def propertyIsEnumerable(v: PropertyKey): Boolean = js.native
   }
   /* static members */
   object default {
@@ -139,7 +162,10 @@ object sapMSearchFieldMod {
   trait SearchField
     extends typings.openui5.sapUiCoreControlMod.default
        with IFormContent
-       with IShellBar {
+       with IShellBar
+       with /* was: sap.m.IToolbarInteractiveControl */ Object {
+    
+    var __implements__sap_m_IToolbarInteractiveControl: Boolean = js.native
     
     def addAriaDescribedBy(
       /**
@@ -585,6 +611,7 @@ object sapMSearchFieldMod {
     
     /**
       * @SINCE 1.77
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
@@ -598,6 +625,7 @@ object sapMSearchFieldMod {
     
     /**
       * @SINCE 1.9.1
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:liveChange liveChange} to attached listeners.
       *
@@ -610,6 +638,8 @@ object sapMSearchFieldMod {
     mParameters: NewValue): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:search search} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -622,6 +652,7 @@ object sapMSearchFieldMod {
     
     /**
       * @SINCE 1.34
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:suggest suggest} to attached listeners.
       *
@@ -650,8 +681,9 @@ object sapMSearchFieldMod {
       *
       * Gets current value of property {@link #getEnableSuggestions enableSuggestions}.
       *
-      * If true, a `suggest` event is fired when user types in the input and when the input is focused. On a
-      * phone device, a full screen dialog with suggestions is always shown even if the suggestions list is empty.
+      * If `true`, a `suggest` event is fired when user types in the input and when the input is focused. On
+      * a phone device, a full screen dialog with suggestions is always shown even if the suggestions list is
+      * empty.
       *
       * Default value is `false`.
       *
@@ -694,6 +726,7 @@ object sapMSearchFieldMod {
     
     /**
       * @SINCE 1.34
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Function returns DOM element which acts as reference point for the opening suggestion menu
       *
@@ -703,6 +736,7 @@ object sapMSearchFieldMod {
     
     /**
       * @SINCE 1.16
+      * @deprecated (since 1.110.0)
       *
       * Gets current value of property {@link #getRefreshButtonTooltip refreshButtonTooltip}.
       *
@@ -721,7 +755,7 @@ object sapMSearchFieldMod {
       * Gets current value of property {@link #getSelectOnFocus selectOnFocus}.
       *
       * Normally, search text is selected for copy when the SearchField is focused by keyboard navigation. If
-      * an application re-renders the SearchField during the liveChange event, set this property to false to
+      * an application re-renders the SearchField during the liveChange event, set this property to `false` to
       * disable text selection by focus.
       *
       * Default value is `true`.
@@ -735,7 +769,7 @@ object sapMSearchFieldMod {
       *
       * Gets current value of property {@link #getShowMagnifier showMagnifier}.
       *
-      * Set to false to hide the magnifier icon.
+      * Set to `false` to hide the magnifier icon.
       *
       * Default value is `true`.
       *
@@ -748,8 +782,10 @@ object sapMSearchFieldMod {
       *
       * Gets current value of property {@link #getShowRefreshButton showRefreshButton}.
       *
-      * Set to true to display a refresh button in place of the search icon. By pressing the refresh button or
-      * F5 key on keyboard, the user can reload the results list without changing the search string.
+      * Set to `true` to display a refresh button in place of the search icon. By pressing the refresh button
+      * or F5 key on keyboard, the user can reload the results list without changing the search string. Note:
+      * if "showSearchButton" property is set to `false`, both the search and refresh buttons are not displayed
+      * even if the "showRefreshButton" property is true.
       *
       * Default value is `false`.
       *
@@ -762,8 +798,8 @@ object sapMSearchFieldMod {
       *
       * Gets current value of property {@link #getShowSearchButton showSearchButton}.
       *
-      * Set to true to show the search button with the magnifier icon. If false, both the search and refresh
-      * buttons are not displayed even if the "showRefreshButton" property is true.
+      * Set to `true` to show the search button with the magnifier icon. If `false`, both the search and refresh
+      * buttons are not displayed even if the "showRefreshButton" property is `true`.
       *
       * Default value is `true`.
       *
@@ -930,8 +966,9 @@ object sapMSearchFieldMod {
       *
       * Sets a new value for property {@link #getEnableSuggestions enableSuggestions}.
       *
-      * If true, a `suggest` event is fired when user types in the input and when the input is focused. On a
-      * phone device, a full screen dialog with suggestions is always shown even if the suggestions list is empty.
+      * If `true`, a `suggest` event is fired when user types in the input and when the input is focused. On
+      * a phone device, a full screen dialog with suggestions is always shown even if the suggestions list is
+      * empty.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -998,6 +1035,7 @@ object sapMSearchFieldMod {
     
     /**
       * @SINCE 1.16
+      * @deprecated (since 1.110.0)
       *
       * Sets a new value for property {@link #getRefreshButtonTooltip refreshButtonTooltip}.
       *
@@ -1022,7 +1060,7 @@ object sapMSearchFieldMod {
       * Sets a new value for property {@link #getSelectOnFocus selectOnFocus}.
       *
       * Normally, search text is selected for copy when the SearchField is focused by keyboard navigation. If
-      * an application re-renders the SearchField during the liveChange event, set this property to false to
+      * an application re-renders the SearchField during the liveChange event, set this property to `false` to
       * disable text selection by focus.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
@@ -1042,7 +1080,7 @@ object sapMSearchFieldMod {
       *
       * Sets a new value for property {@link #getShowMagnifier showMagnifier}.
       *
-      * Set to false to hide the magnifier icon.
+      * Set to `false` to hide the magnifier icon.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -1061,8 +1099,10 @@ object sapMSearchFieldMod {
       *
       * Sets a new value for property {@link #getShowRefreshButton showRefreshButton}.
       *
-      * Set to true to display a refresh button in place of the search icon. By pressing the refresh button or
-      * F5 key on keyboard, the user can reload the results list without changing the search string.
+      * Set to `true` to display a refresh button in place of the search icon. By pressing the refresh button
+      * or F5 key on keyboard, the user can reload the results list without changing the search string. Note:
+      * if "showSearchButton" property is set to `false`, both the search and refresh buttons are not displayed
+      * even if the "showRefreshButton" property is true.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -1081,8 +1121,8 @@ object sapMSearchFieldMod {
       *
       * Sets a new value for property {@link #getShowSearchButton showSearchButton}.
       *
-      * Set to true to show the search button with the magnifier icon. If false, both the search and refresh
-      * buttons are not displayed even if the "showRefreshButton" property is true.
+      * Set to `true` to show the search button with the magnifier icon. If `false`, both the search and refresh
+      * buttons are not displayed even if the "showRefreshButton" property is `true`.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -1179,8 +1219,9 @@ object sapMSearchFieldMod {
     /**
       * @SINCE 1.34
       *
-      * If true, a `suggest` event is fired when user types in the input and when the input is focused. On a
-      * phone device, a full screen dialog with suggestions is always shown even if the suggestions list is empty.
+      * If `true`, a `suggest` event is fired when user types in the input and when the input is focused. On
+      * a phone device, a full screen dialog with suggestions is always shown even if the suggestions list is
+      * empty.
       */
     var enableSuggestions: js.UndefOr[
         Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
@@ -1215,6 +1256,7 @@ object sapMSearchFieldMod {
     
     /**
       * @SINCE 1.16
+      * @deprecated (since 1.110.0)
       *
       * Tooltip text of the refresh button. If it is not set, the Default tooltip text is the word "Refresh"
       * in the current local language (if supported) or in English. Tooltips are not displayed on touch devices.
@@ -1232,7 +1274,7 @@ object sapMSearchFieldMod {
       * of a focused search field is restored after re-rendering automatically.
       *
       * Normally, search text is selected for copy when the SearchField is focused by keyboard navigation. If
-      * an application re-renders the SearchField during the liveChange event, set this property to false to
+      * an application re-renders the SearchField during the liveChange event, set this property to `false` to
       * disable text selection by focus.
       */
     var selectOnFocus: js.UndefOr[
@@ -1242,7 +1284,7 @@ object sapMSearchFieldMod {
     /**
       * @deprecated (since 1.16.0) - This parameter is deprecated. Use "showSearchButton" instead.
       *
-      * Set to false to hide the magnifier icon.
+      * Set to `false` to hide the magnifier icon.
       */
     var showMagnifier: js.UndefOr[
         Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
@@ -1251,8 +1293,10 @@ object sapMSearchFieldMod {
     /**
       * @SINCE 1.16
       *
-      * Set to true to display a refresh button in place of the search icon. By pressing the refresh button or
-      * F5 key on keyboard, the user can reload the results list without changing the search string.
+      * Set to `true` to display a refresh button in place of the search icon. By pressing the refresh button
+      * or F5 key on keyboard, the user can reload the results list without changing the search string. Note:
+      * if "showSearchButton" property is set to `false`, both the search and refresh buttons are not displayed
+      * even if the "showRefreshButton" property is true.
       */
     var showRefreshButton: js.UndefOr[
         Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
@@ -1261,8 +1305,8 @@ object sapMSearchFieldMod {
     /**
       * @SINCE 1.23
       *
-      * Set to true to show the search button with the magnifier icon. If false, both the search and refresh
-      * buttons are not displayed even if the "showRefreshButton" property is true.
+      * Set to `true` to show the search button with the magnifier icon. If `false`, both the search and refresh
+      * buttons are not displayed even if the "showRefreshButton" property is `true`.
       */
     var showSearchButton: js.UndefOr[
         Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)

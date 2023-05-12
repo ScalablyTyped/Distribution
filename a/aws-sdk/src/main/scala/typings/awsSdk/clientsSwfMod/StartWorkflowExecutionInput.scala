@@ -12,7 +12,7 @@ trait StartWorkflowExecutionInput extends StObject {
   var childPolicy: js.UndefOr[ChildPolicy] = js.undefined
   
   /**
-    * The name of the domain in which the workflow execution is created.
+    * The name of the domain in which the workflow execution is created. The specified string must not contain a : (colon), / (slash), | (vertical bar), or any control characters (\\u0000-\\u001f | \\u007f-\\u009f). Also, it must not be the literal string arn.
     */
   var domain: DomainName
   
@@ -37,7 +37,7 @@ trait StartWorkflowExecutionInput extends StObject {
   var tagList: js.UndefOr[TagList] = js.undefined
   
   /**
-    * The task list to use for the decision tasks generated for this workflow execution. This overrides the defaultTaskList specified when registering the workflow type.  A task list for this workflow execution must be specified either as a default for the workflow type or through this parameter. If neither this parameter is set nor a default task list was specified at registration time then a fault is returned.  The specified string must not start or end with whitespace. It must not contain a : (colon), / (slash), | (vertical bar), or any control characters (\\u0000-\\u001f | \\u007f-\\u009f). Also, it must not be the literal string arn.
+    * The task list to use for the decision tasks generated for this workflow execution. This overrides the defaultTaskList specified when registering the workflow type.  A task list for this workflow execution must be specified either as a default for the workflow type or through this parameter. If neither this parameter is set nor a default task list was specified at registration time then a fault is returned.  The specified string must not contain a : (colon), / (slash), | (vertical bar), or any control characters (\\u0000-\\u001f | \\u007f-\\u009f). Also, it must not be the literal string arn.
     */
   var taskList: js.UndefOr[TaskList] = js.undefined
   
@@ -52,7 +52,7 @@ trait StartWorkflowExecutionInput extends StObject {
   var taskStartToCloseTimeout: js.UndefOr[DurationInSecondsOptional] = js.undefined
   
   /**
-    * The user defined identifier associated with the workflow execution. You can use this to associate a custom identifier with the workflow execution. You may specify the same identifier if a workflow execution is logically a restart of a previous execution. You cannot have two open workflow executions with the same workflowId at the same time within the same domain. The specified string must not start or end with whitespace. It must not contain a : (colon), / (slash), | (vertical bar), or any control characters (\\u0000-\\u001f | \\u007f-\\u009f). Also, it must not be the literal string arn.
+    * The user defined identifier associated with the workflow execution. You can use this to associate a custom identifier with the workflow execution. You may specify the same identifier if a workflow execution is logically a restart of a previous execution. You cannot have two open workflow executions with the same workflowId at the same time within the same domain. The specified string must not contain a : (colon), / (slash), | (vertical bar), or any control characters (\\u0000-\\u001f | \\u007f-\\u009f). Also, it must not be the literal string arn.
     */
   var workflowId: WorkflowId
   

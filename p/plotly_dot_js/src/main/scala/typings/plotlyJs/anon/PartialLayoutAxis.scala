@@ -4,6 +4,7 @@ import typings.plotlyJs.mod.AxisName
 import typings.plotlyJs.mod.AxisType
 import typings.plotlyJs.mod.Calendar
 import typings.plotlyJs.mod.DTickValue
+import typings.plotlyJs.mod.Datum
 import typings.plotlyJs.plotlyJsBooleans.`false`
 import typings.plotlyJs.plotlyJsBooleans.`true`
 import typings.plotlyJs.plotlyJsStrings.B
@@ -117,6 +118,8 @@ trait PartialLayoutAxis extends StObject {
   var gridwidth: js.UndefOr[Double] = js.undefined
   
   var hoverformat: js.UndefOr[String] = js.undefined
+  
+  var l2p: js.UndefOr[js.Function1[/* v */ Datum, Double]] = js.undefined
   
   var layer: js.UndefOr[(`above traces`) | (`below traces`)] = js.undefined
   
@@ -329,6 +332,10 @@ object PartialLayoutAxis {
     inline def setHoverformat(value: String): Self = StObject.set(x, "hoverformat", value.asInstanceOf[js.Any])
     
     inline def setHoverformatUndefined: Self = StObject.set(x, "hoverformat", js.undefined)
+    
+    inline def setL2p(value: /* v */ Datum => Double): Self = StObject.set(x, "l2p", js.Any.fromFunction1(value))
+    
+    inline def setL2pUndefined: Self = StObject.set(x, "l2p", js.undefined)
     
     inline def setLayer(value: (`above traces`) | (`below traces`)): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     

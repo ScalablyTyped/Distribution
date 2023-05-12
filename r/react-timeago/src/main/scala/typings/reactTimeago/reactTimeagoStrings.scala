@@ -99,6 +99,10 @@ object reactTimeagoStrings {
   inline def caption: caption = "caption".asInstanceOf[caption]
   
   @js.native
+  sealed trait center extends StObject
+  inline def center: center = "center".asInstanceOf[center]
+  
+  @js.native
   sealed trait circle extends StObject
   inline def circle: circle = "circle".asInstanceOf[circle]
   

@@ -26,12 +26,12 @@ trait ServiceCatalogAppRegistry extends Service {
   ): Request[AssociateAttributeGroupResponse, AWSError] = js.native
   
   /**
-    * Associates a resource with an application. Both the resource and the application can be specified either by ID or name.
+    *  Associates a resource with an application. The resource can be specified by its ARN or name. The application can be specified by ARN, ID, or name. 
     */
   def associateResource(): Request[AssociateResourceResponse, AWSError] = js.native
   def associateResource(callback: js.Function2[/* err */ AWSError, /* data */ AssociateResourceResponse, Unit]): Request[AssociateResourceResponse, AWSError] = js.native
   /**
-    * Associates a resource with an application. Both the resource and the application can be specified either by ID or name.
+    *  Associates a resource with an application. The resource can be specified by its ARN or name. The application can be specified by ARN, ID, or name. 
     */
   def associateResource(params: AssociateResourceRequest): Request[AssociateResourceResponse, AWSError] = js.native
   def associateResource(
@@ -71,12 +71,12 @@ trait ServiceCatalogAppRegistry extends Service {
   ): Request[CreateAttributeGroupResponse, AWSError] = js.native
   
   /**
-    * Deletes an application that is specified either by its application ID or name. All associated attribute groups and resources must be disassociated from it before deleting an application.
+    * Deletes an application that is specified either by its application ID, name, or ARN. All associated attribute groups and resources must be disassociated from it before deleting an application.
     */
   def deleteApplication(): Request[DeleteApplicationResponse, AWSError] = js.native
   def deleteApplication(callback: js.Function2[/* err */ AWSError, /* data */ DeleteApplicationResponse, Unit]): Request[DeleteApplicationResponse, AWSError] = js.native
   /**
-    * Deletes an application that is specified either by its application ID or name. All associated attribute groups and resources must be disassociated from it before deleting an application.
+    * Deletes an application that is specified either by its application ID, name, or ARN. All associated attribute groups and resources must be disassociated from it before deleting an application.
     */
   def deleteApplication(params: DeleteApplicationRequest): Request[DeleteApplicationResponse, AWSError] = js.native
   def deleteApplication(
@@ -85,12 +85,12 @@ trait ServiceCatalogAppRegistry extends Service {
   ): Request[DeleteApplicationResponse, AWSError] = js.native
   
   /**
-    * Deletes an attribute group, specified either by its attribute group ID or name.
+    * Deletes an attribute group, specified either by its attribute group ID, name, or ARN.
     */
   def deleteAttributeGroup(): Request[DeleteAttributeGroupResponse, AWSError] = js.native
   def deleteAttributeGroup(callback: js.Function2[/* err */ AWSError, /* data */ DeleteAttributeGroupResponse, Unit]): Request[DeleteAttributeGroupResponse, AWSError] = js.native
   /**
-    * Deletes an attribute group, specified either by its attribute group ID or name.
+    * Deletes an attribute group, specified either by its attribute group ID, name, or ARN.
     */
   def deleteAttributeGroup(params: DeleteAttributeGroupRequest): Request[DeleteAttributeGroupResponse, AWSError] = js.native
   def deleteAttributeGroup(
@@ -127,12 +127,12 @@ trait ServiceCatalogAppRegistry extends Service {
   ): Request[DisassociateResourceResponse, AWSError] = js.native
   
   /**
-    * Retrieves metadata information about one of your applications. The application can be specified either by its unique ID or by its name (which is unique within one account in one region at a given point in time). Specify by ID in automated workflows if you want to make sure that the exact same application is returned or a ResourceNotFoundException is thrown, avoiding the ABA addressing problem.
+    *  Retrieves metadata information about one of your applications. The application can be specified by its ARN, ID, or name (which is unique within one account in one region at a given point in time). Specify by ARN or ID in automated workflows if you want to make sure that the exact same application is returned or a ResourceNotFoundException is thrown, avoiding the ABA addressing problem. 
     */
   def getApplication(): Request[GetApplicationResponse, AWSError] = js.native
   def getApplication(callback: js.Function2[/* err */ AWSError, /* data */ GetApplicationResponse, Unit]): Request[GetApplicationResponse, AWSError] = js.native
   /**
-    * Retrieves metadata information about one of your applications. The application can be specified either by its unique ID or by its name (which is unique within one account in one region at a given point in time). Specify by ID in automated workflows if you want to make sure that the exact same application is returned or a ResourceNotFoundException is thrown, avoiding the ABA addressing problem.
+    *  Retrieves metadata information about one of your applications. The application can be specified by its ARN, ID, or name (which is unique within one account in one region at a given point in time). Specify by ARN or ID in automated workflows if you want to make sure that the exact same application is returned or a ResourceNotFoundException is thrown, avoiding the ABA addressing problem. 
     */
   def getApplication(params: GetApplicationRequest): Request[GetApplicationResponse, AWSError] = js.native
   def getApplication(
@@ -155,18 +155,24 @@ trait ServiceCatalogAppRegistry extends Service {
   ): Request[GetAssociatedResourceResponse, AWSError] = js.native
   
   /**
-    * Retrieves an attribute group, either by its name or its ID. The attribute group can be specified either by its unique ID or by its name.
+    *  Retrieves an attribute group by its ARN, ID, or name. The attribute group can be specified by its ARN, ID, or name. 
     */
   def getAttributeGroup(): Request[GetAttributeGroupResponse, AWSError] = js.native
   def getAttributeGroup(callback: js.Function2[/* err */ AWSError, /* data */ GetAttributeGroupResponse, Unit]): Request[GetAttributeGroupResponse, AWSError] = js.native
   /**
-    * Retrieves an attribute group, either by its name or its ID. The attribute group can be specified either by its unique ID or by its name.
+    *  Retrieves an attribute group by its ARN, ID, or name. The attribute group can be specified by its ARN, ID, or name. 
     */
   def getAttributeGroup(params: GetAttributeGroupRequest): Request[GetAttributeGroupResponse, AWSError] = js.native
   def getAttributeGroup(
     params: GetAttributeGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetAttributeGroupResponse, Unit]
   ): Request[GetAttributeGroupResponse, AWSError] = js.native
+  
+  /**
+    *  Retrieves a TagKey configuration from an account. 
+    */
+  def getConfiguration(): Request[GetConfigurationResponse, AWSError] = js.native
+  def getConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ GetConfigurationResponse, Unit]): Request[GetConfigurationResponse, AWSError] = js.native
   
   /**
     * Retrieves a list of all of your applications. Results are paginated.
@@ -197,12 +203,12 @@ trait ServiceCatalogAppRegistry extends Service {
   ): Request[ListAssociatedAttributeGroupsResponse, AWSError] = js.native
   
   /**
-    * Lists all resources that are associated with specified application. Results are paginated.
+    *  Lists all of the resources that are associated with the specified application. Results are paginated.    If you share an application, and a consumer account associates a tag query to the application, all of the users who can access the application can also view the tag values in all accounts that are associated with it using this API.  
     */
   def listAssociatedResources(): Request[ListAssociatedResourcesResponse, AWSError] = js.native
   def listAssociatedResources(callback: js.Function2[/* err */ AWSError, /* data */ ListAssociatedResourcesResponse, Unit]): Request[ListAssociatedResourcesResponse, AWSError] = js.native
   /**
-    * Lists all resources that are associated with specified application. Results are paginated.
+    *  Lists all of the resources that are associated with the specified application. Results are paginated.    If you share an application, and a consumer account associates a tag query to the application, all of the users who can access the application can also view the tag values in all accounts that are associated with it using this API.  
     */
   def listAssociatedResources(params: ListAssociatedResourcesRequest): Request[ListAssociatedResourcesResponse, AWSError] = js.native
   def listAssociatedResources(
@@ -253,6 +259,20 @@ trait ServiceCatalogAppRegistry extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
+  /**
+    *  Associates a TagKey configuration to an account. 
+    */
+  def putConfiguration(): Request[js.Object, AWSError] = js.native
+  def putConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    *  Associates a TagKey configuration to an account. 
+    */
+  def putConfiguration(params: PutConfigurationRequest): Request[js.Object, AWSError] = js.native
+  def putConfiguration(
+    params: PutConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
   
   /**
     * Syncs the resource with current AppRegistry records. Specifically, the resource’s AppRegistry system tags sync with its associated application. We remove the resource's AppRegistry system tags if it does not associate with the application. The caller must have permissions to read and update the resource.

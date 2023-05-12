@@ -30,6 +30,8 @@ object stringMod {
   
   inline def fromCodePoint(codePoints: Double*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCodePoint")(codePoints.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
   
+  inline def repeat(source: String, n: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("repeat")(source.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   inline def splice(str: String, index: Double, remove: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")(str.asInstanceOf[js.Any], index.asInstanceOf[js.Any], remove.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def splice(str: String, index: Double, remove: Double, insert: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")(str.asInstanceOf[js.Any], index.asInstanceOf[js.Any], remove.asInstanceOf[js.Any], insert.asInstanceOf[js.Any])).asInstanceOf[String]
   

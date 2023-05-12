@@ -12,9 +12,13 @@ open class Paginator protected () extends Component[PaginatorProps, Any, Any] {
   def this(props: PaginatorProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: PaginatorProps, context: Any) = this()
   
+  /**
+    * Used to get container element.
+    * @return {HTMLDivElement} Container element
+    */
   def getElement(): HTMLDivElement = js.native
 }

@@ -10,6 +10,8 @@ object sapUiModelTreeBindingAdapterMod {
   @JSImport("sap/ui/model/TreeBindingAdapter", JSImport.Default)
   @js.native
   /**
+    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    *
     * Adapter for TreeBindings to add the ListBinding functionality and use the tree structure in list based
     * controls.
     */
@@ -23,6 +25,7 @@ object sapUiModelTreeBindingAdapterMod {
     /**
       * @deprecated (since 1.52) - This method is marked as 'protected' which was meant to be overwritten by
       * its subclasses. It may be renamed or deleted and should only be called from this class or its subclasses.
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Calculate the request length based on the given information.
       *
@@ -126,6 +129,8 @@ object sapUiModelTreeBindingAdapterMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:selectionChanged selectionChanged} to attached listeners.
       *
       * Expects following event parameters:
@@ -140,6 +145,8 @@ object sapUiModelTreeBindingAdapterMod {
     oParameters: LeadIndex): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Gets an array of contexts for the requested part of the tree.
       *
       * @returns The requested tree contexts

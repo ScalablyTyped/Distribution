@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "it-pair" : "2.0.3"
+      "it-pair" : "2.0.6"
     }
   ],
   "test-dependencies" : [
     {
-      "it-pair" : "2.0.3"
+      "it-pair" : "2.0.6"
     }
   ],
   "compile-devDependencies" : [

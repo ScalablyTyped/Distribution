@@ -255,15 +255,15 @@ object layersIndexMod {
       
       /**
         * The list of effect layers (highlights/glow) added to the scene
-        * @see https://doc.babylonjs.com/how_to/highlight_layer
-        * @see https://doc.babylonjs.com/how_to/glow_layer
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/highlightLayer
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/glowLayer
         */
       var effectLayers: js.Array[typings.babylonjs.layersEffectLayerMod.EffectLayer]
       
       /**
-        * Return a the first highlight layer of the scene with a given name.
-        * @param name The name of the highlight layer to look for.
-        * @returns The highlight layer if found otherwise null.
+        * Return the first glow layer of the scene with a given name.
+        * @param name The name of the glow layer to look for.
+        * @returns The glow layer if found otherwise null.
         */
       def getGlowLayerByName(name: String): Nullable[typings.babylonjs.layersGlowLayerMod.GlowLayer]
       

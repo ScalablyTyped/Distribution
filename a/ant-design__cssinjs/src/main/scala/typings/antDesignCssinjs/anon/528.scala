@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.Inset
+import typings.csstype.mod.Property.BorderBlockStart
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `528` extends StObject {
   
   var value: js.UndefOr[
-    (Inset[Double | String]) | (js.Array[
+    (BorderBlockStart[Double | String]) | (js.Array[
       (Extract[
         js.UndefOr[
-          (Inset[Double | String]) | (js.Array[NonNullable[js.UndefOr[Inset[Double | String]]]])
+          (BorderBlockStart[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderBlockStart[Double | String]]]])
         ], 
         String
-      ]) | (NonNullable[js.UndefOr[Inset[Double | String]]])
+      ]) | (NonNullable[js.UndefOr[BorderBlockStart[Double | String]]])
     ])
   ] = js.native
 }

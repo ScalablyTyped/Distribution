@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.AnimationTimeline
+import typings.csstype.mod.Property.MsContentZoomSnapType
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `219` extends StObject {
   
   var value: js.UndefOr[
-    AnimationTimeline | (js.Array[
+    MsContentZoomSnapType | (js.Array[
       (Extract[
-        js.UndefOr[AnimationTimeline | js.Array[NonNullable[js.UndefOr[AnimationTimeline]]]], 
+        js.UndefOr[MsContentZoomSnapType | js.Array[NonNullable[js.UndefOr[MsContentZoomSnapType]]]], 
         String
-      ]) | NonNullable[js.UndefOr[AnimationTimeline]]
+      ]) | NonNullable[js.UndefOr[MsContentZoomSnapType]]
     ])
   ] = js.native
 }

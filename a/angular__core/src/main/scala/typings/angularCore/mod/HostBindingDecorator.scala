@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HostBindingDecorator
   extends StObject
      with Instantiable0[Any]
-     with Instantiable1[/* bindingPropertyName */ String, Any] {
+     with Instantiable1[/* hostPropertyName */ String, Any] {
   
   /**
     * Decorator that marks a DOM property as a host-binding property and supplies configuration

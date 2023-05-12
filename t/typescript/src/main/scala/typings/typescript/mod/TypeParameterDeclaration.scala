@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeParameterDeclaration
   extends StObject
      with NamedDeclaration
+     with JSDocContainer
+     with HasJSDoc
      with HasModifiers {
   
   val default: js.UndefOr[TypeNode] = js.native
@@ -20,8 +22,7 @@ trait TypeParameterDeclaration
   @JSName("kind")
   val kind_TypeParameterDeclaration: typings.typescript.mod.SyntaxKind.TypeParameter = js.native
   
-  @JSName("modifiers")
-  val modifiers_TypeParameterDeclaration: js.UndefOr[NodeArray[Modifier]] = js.native
+  val modifiers: js.UndefOr[NodeArray[Modifier]] = js.native
   
   @JSName("name")
   val name_TypeParameterDeclaration: Identifier = js.native

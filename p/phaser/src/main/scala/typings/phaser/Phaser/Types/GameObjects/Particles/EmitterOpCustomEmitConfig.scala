@@ -12,7 +12,7 @@ trait EmitterOpCustomEmitConfig
   /**
     * A callback that is invoked each time the emitter emits a particle.
     */
-  def onEmit(particle: Particle, key: String, value: Double): Unit
+  def onEmit(particle: Particle, key: String, value: Double): Double
   /**
     * A callback that is invoked each time the emitter emits a particle.
     */
@@ -21,7 +21,7 @@ trait EmitterOpCustomEmitConfig
 }
 object EmitterOpCustomEmitConfig {
   
-  inline def apply(onEmit: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): EmitterOpCustomEmitConfig = {
+  inline def apply(onEmit: (/* particle */ Particle, /* key */ String, /* value */ Double) => Double): EmitterOpCustomEmitConfig = {
     val __obj = js.Dynamic.literal(onEmit = js.Any.fromFunction3(onEmit))
     __obj.asInstanceOf[EmitterOpCustomEmitConfig]
   }
@@ -29,6 +29,6 @@ object EmitterOpCustomEmitConfig {
   @scala.inline
   implicit open class MutableBuilder[Self <: EmitterOpCustomEmitConfig] (val x: Self) extends AnyVal {
     
-    inline def setOnEmit(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "onEmit", js.Any.fromFunction3(value))
+    inline def setOnEmit(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Double): Self = StObject.set(x, "onEmit", js.Any.fromFunction3(value))
   }
 }

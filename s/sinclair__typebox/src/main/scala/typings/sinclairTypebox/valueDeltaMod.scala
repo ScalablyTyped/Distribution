@@ -1,13 +1,37 @@
 package typings.sinclairTypebox
 
-import typings.sinclairTypebox.sinclairTypeboxStrings.delete
-import typings.sinclairTypebox.sinclairTypeboxStrings.insert
-import typings.sinclairTypebox.sinclairTypeboxStrings.update
+import typings.sinclairTypebox.anon.Path
+import typings.sinclairTypebox.anon.PathType
+import typings.sinclairTypebox.anon.Type
+import typings.sinclairTypebox.mod.Static
+import typings.sinclairTypebox.mod.TObject
+import typings.sinclairTypebox.mod.TUnion
+import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object valueDeltaMod {
+  
+  @JSImport("@sinclair/typebox/value/delta", "Delete")
+  @js.native
+  val Delete: TObject[PathType] = js.native
+  type Delete = Static[TObject[PathType], js.Array[Any]]
+  
+  @JSImport("@sinclair/typebox/value/delta", "Edit")
+  @js.native
+  val Edit: TUnion[js.Tuple3[TObject[Path], TObject[Type], TObject[PathType]]] = js.native
+  type Edit = Static[TUnion[js.Tuple3[TObject[Path], TObject[Type], TObject[PathType]]], js.Array[Any]]
+  
+  @JSImport("@sinclair/typebox/value/delta", "Insert")
+  @js.native
+  val Insert: TObject[Path] = js.native
+  type Insert = Static[TObject[Path], js.Array[Any]]
+  
+  @JSImport("@sinclair/typebox/value/delta", "Update")
+  @js.native
+  val Update: TObject[Type] = js.native
+  type Update = Static[TObject[Type], js.Array[Any]]
   
   object ValueDelta {
     
@@ -15,130 +39,44 @@ object valueDeltaMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def Diff[T](current: T, next: T): js.Array[Edit[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Diff")(current.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.Array[Edit[T]]]
+    inline def Diff(current: Any, next: Any): js.Array[typings.sinclairTypebox.valueDeltaMod.Edit] = (^.asInstanceOf[js.Dynamic].applyDynamic("Diff")(current.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.sinclairTypebox.valueDeltaMod.Edit]]
     
-    inline def Patch[T](current: T, edits: js.Array[Edit[T]]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("Patch")(current.asInstanceOf[js.Any], edits.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def Patch[T](current: Any, edits: js.Array[typings.sinclairTypebox.valueDeltaMod.Edit]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("Patch")(current.asInstanceOf[js.Any], edits.asInstanceOf[js.Any])).asInstanceOf[T]
   }
   
-  trait Delete[T]
+  @JSImport("@sinclair/typebox/value/delta", "ValueDeltaObjectWithSymbolKeyError")
+  @js.native
+  open class ValueDeltaObjectWithSymbolKeyError protected ()
     extends StObject
-       with Edit[T] {
+       with Error {
+    def this(key: Any) = this()
     
-    var brand: T
+    val key: Any = js.native
     
-    var path: String
+    /* standard es5 */
+    /* CompleteClass */
+    var message: String = js.native
     
-    var `type`: delete
-  }
-  object Delete {
-    
-    inline def apply[T](brand: T, path: String): Delete[T] = {
-      val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("delete")
-      __obj.asInstanceOf[Delete[T]]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Delete[?], T] (val x: Self & Delete[T]) extends AnyVal {
-      
-      inline def setBrand(value: T): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
-      
-      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
-      
-      inline def setType(value: delete): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
+    /* standard es5 */
+    /* CompleteClass */
+    var name: String = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.sinclairTypebox.valueDeltaMod.Insert[T]
-    - typings.sinclairTypebox.valueDeltaMod.Update[T]
-    - typings.sinclairTypebox.valueDeltaMod.Delete[T]
-  */
-  trait Edit[T] extends StObject
-  object Edit {
-    
-    inline def Delete[T](brand: T, path: String): typings.sinclairTypebox.valueDeltaMod.Delete[T] = {
-      val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("delete")
-      __obj.asInstanceOf[typings.sinclairTypebox.valueDeltaMod.Delete[T]]
-    }
-    
-    inline def Insert[T](brand: T, path: String, value: Any): typings.sinclairTypebox.valueDeltaMod.Insert[T] = {
-      val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("insert")
-      __obj.asInstanceOf[typings.sinclairTypebox.valueDeltaMod.Insert[T]]
-    }
-    
-    inline def Update[T](brand: T, path: String, value: Any): typings.sinclairTypebox.valueDeltaMod.Update[T] = {
-      val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("update")
-      __obj.asInstanceOf[typings.sinclairTypebox.valueDeltaMod.Update[T]]
-    }
-  }
-  
-  trait Insert[T]
+  @JSImport("@sinclair/typebox/value/delta", "ValueDeltaUnableToDiffUnknownValue")
+  @js.native
+  open class ValueDeltaUnableToDiffUnknownValue protected ()
     extends StObject
-       with Edit[T] {
+       with Error {
+    def this(value: Any) = this()
     
-    var brand: T
+    /* standard es5 */
+    /* CompleteClass */
+    var message: String = js.native
     
-    var path: String
+    /* standard es5 */
+    /* CompleteClass */
+    var name: String = js.native
     
-    var `type`: insert
-    
-    var value: Any
-  }
-  object Insert {
-    
-    inline def apply[T](brand: T, path: String, value: Any): Insert[T] = {
-      val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("insert")
-      __obj.asInstanceOf[Insert[T]]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Insert[?], T] (val x: Self & Insert[T]) extends AnyVal {
-      
-      inline def setBrand(value: T): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
-      
-      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
-      
-      inline def setType(value: insert): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      
-      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Update[T]
-    extends StObject
-       with Edit[T] {
-    
-    var brand: T
-    
-    var path: String
-    
-    var `type`: update
-    
-    var value: Any
-  }
-  object Update {
-    
-    inline def apply[T](brand: T, path: String, value: Any): Update[T] = {
-      val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("update")
-      __obj.asInstanceOf[Update[T]]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Update[?], T] (val x: Self & Update[T]) extends AnyVal {
-      
-      inline def setBrand(value: T): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
-      
-      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
-      
-      inline def setType(value: update): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      
-      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-    }
+    val value: Any = js.native
   }
 }

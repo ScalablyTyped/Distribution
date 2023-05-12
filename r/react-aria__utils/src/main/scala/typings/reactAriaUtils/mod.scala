@@ -187,6 +187,8 @@ object mod {
   
   inline def isMac(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMac")().asInstanceOf[Boolean]
   
+  inline def isScrollable(node: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScrollable")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   inline def isVirtualClick(event: MouseEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVirtualClick")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def isVirtualClick(event: PointerEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVirtualClick")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
@@ -196,7 +198,7 @@ object mod {
   
   inline def mergeIds(idA: String, idB: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeIds")(idA.asInstanceOf[js.Any], idB.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def mergeProps[T /* <: js.Array[Props] */](
+  inline def mergeProps[T /* <: js.Array[PropsArg] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type T is not an array type */ args: T
   ): UnionToIntersection[TupleTypes[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeProps")(args.asInstanceOf[js.Any]).asInstanceOf[UnionToIntersection[TupleTypes[T]]]
   
@@ -205,6 +207,9 @@ object mod {
   inline def runAfterTransition(fn: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("runAfterTransition")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def scrollIntoView(scrollView: HTMLElement, element: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollIntoView")(scrollView.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def scrollIntoViewport(targetElement: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("scrollIntoViewport")(targetElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def scrollIntoViewport(targetElement: Element, opts: ScrollIntoViewportOpts): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollIntoViewport")(targetElement.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def snapValueToStep(value: Double, min: Double, max: Double, step: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("snapValueToStep")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[Double]
   
@@ -536,6 +541,24 @@ object mod {
     options: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEvent")(ref.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def useEvent_copy(
+    ref: RefObject[EventTarget],
+    event: copy,
+    handler: js.ThisFunction1[/* this */ Document, /* ev */ ClipboardEvent, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEvent")(ref.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEvent_copy(
+    ref: RefObject[EventTarget],
+    event: copy,
+    handler: js.ThisFunction1[/* this */ Document, /* ev */ ClipboardEvent, Any],
+    options: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEvent")(ref.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEvent_copy(
+    ref: RefObject[EventTarget],
+    event: copy,
+    handler: js.ThisFunction1[/* this */ Document, /* ev */ ClipboardEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEvent")(ref.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   inline def useEvent_cuechange(
     ref: RefObject[EventTarget],
     event: cuechange,
@@ -551,6 +574,24 @@ object mod {
     ref: RefObject[EventTarget],
     event: cuechange,
     handler: js.ThisFunction1[/* this */ Document, /* ev */ Event, Any],
+    options: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEvent")(ref.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def useEvent_cut(
+    ref: RefObject[EventTarget],
+    event: cut,
+    handler: js.ThisFunction1[/* this */ Document, /* ev */ ClipboardEvent, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEvent")(ref.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEvent_cut(
+    ref: RefObject[EventTarget],
+    event: cut,
+    handler: js.ThisFunction1[/* this */ Document, /* ev */ ClipboardEvent, Any],
+    options: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEvent")(ref.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEvent_cut(
+    ref: RefObject[EventTarget],
+    event: cut,
+    handler: js.ThisFunction1[/* this */ Document, /* ev */ ClipboardEvent, Any],
     options: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEvent")(ref.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -1163,6 +1204,24 @@ object mod {
     ref: RefObject[EventTarget],
     event: mouseup,
     handler: js.ThisFunction1[/* this */ Document, /* ev */ MouseEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEvent")(ref.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def useEvent_paste(
+    ref: RefObject[EventTarget],
+    event: paste,
+    handler: js.ThisFunction1[/* this */ Document, /* ev */ ClipboardEvent, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEvent")(ref.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEvent_paste(
+    ref: RefObject[EventTarget],
+    event: paste,
+    handler: js.ThisFunction1[/* this */ Document, /* ev */ ClipboardEvent, Any],
+    options: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEvent")(ref.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEvent_paste(
+    ref: RefObject[EventTarget],
+    event: paste,
+    handler: js.ThisFunction1[/* this */ Document, /* ev */ ClipboardEvent, Any],
     options: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEvent")(ref.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -6253,6 +6312,15 @@ object mod {
     ): Unit = js.native
   }
   
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+    * TS definition: {{{
+    T extends null | undefined ? {} : T
+    }}}
+    */
+  type NullToObject[T] = T
+  
   trait Options extends StObject {
     
     /**
@@ -6287,13 +6355,36 @@ object mod {
   
   type Props = StringDictionary[Any]
   
+  type PropsArg = js.UndefOr[Props | Null]
+  
+  trait ScrollIntoViewportOpts extends StObject {
+    
+    /** The optional containing element of the target to be centered in the viewport. */
+    var containingElement: js.UndefOr[Element] = js.undefined
+  }
+  object ScrollIntoViewportOpts {
+    
+    inline def apply(): ScrollIntoViewportOpts = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ScrollIntoViewportOpts]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollIntoViewportOpts] (val x: Self) extends AnyVal {
+      
+      inline def setContainingElement(value: Element): Self = StObject.set(x, "containingElement", value.asInstanceOf[js.Any])
+      
+      inline def setContainingElementUndefined: Self = StObject.set(x, "containingElement", js.undefined)
+    }
+  }
+  
   type SetValueAction[S] = js.Function1[/* prev */ S, Generator[Any, Unit, Any]]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
     * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
-    {[ P in keyof T ]: T[P]} extends {[key: number] : infer V} ? V : never
+    {[ P in keyof T ]: T[P]} extends {[key: number] : infer V} ? @react-aria/utils.@react-aria/utils.NullToObject<V> : never
     }}}
     */
   @js.native

@@ -3,9 +3,6 @@ package typings.octokitPluginRestEndpointMethods.anon
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.baseUrl
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.headers
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.mediaType
-import typings.octokitTypes.distTypesGeneratedEndpointsMod.ExtractOctokitResponse
-import typings.octokitTypes.distTypesGeneratedEndpointsMod.RequiredPreview
-import typings.octokitTypes.distTypesGeneratedEndpointsMod.ToOctokitParameters
 import typings.octokitTypes.distTypesRequestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
@@ -15,28 +12,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `1092` extends StObject {
   
   var parameters: RequestParameters & (Omit[
-    (ToOctokitParameters[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/user/interaction-limits']['delete'] */ js.Any
-    ]) & RequiredPreview[Any], 
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /enterprises/{enterprise}/actions/permissions/organizations/{org_id}']['parameters'] */ js.Any, 
     baseUrl | headers | mediaType
   ])
   
-  var response: ExtractOctokitResponse[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/user/interaction-limits']['delete'] */ js.Any
-  ]
+  var response: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /enterprises/{enterprise}/actions/permissions/organizations/{org_id}']['response'] */ js.Any
 }
 object `1092` {
   
   inline def apply(
     parameters: RequestParameters & (Omit[
-      (ToOctokitParameters[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/user/interaction-limits']['delete'] */ js.Any
-      ]) & RequiredPreview[Any], 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /enterprises/{enterprise}/actions/permissions/organizations/{org_id}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ]),
-    response: ExtractOctokitResponse[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/user/interaction-limits']['delete'] */ js.Any
-    ]
+    response: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /enterprises/{enterprise}/actions/permissions/organizations/{org_id}']['response'] */ js.Any
   ): `1092` = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[`1092`]
@@ -47,17 +36,13 @@ object `1092` {
     
     inline def setParameters(
       value: RequestParameters & (Omit[
-          (ToOctokitParameters[
-            /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/user/interaction-limits']['delete'] */ js.Any
-          ]) & RequiredPreview[Any], 
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /enterprises/{enterprise}/actions/permissions/organizations/{org_id}']['parameters'] */ js.Any, 
           baseUrl | headers | mediaType
         ])
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setResponse(
-      value: ExtractOctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/user/interaction-limits']['delete'] */ js.Any
-        ]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /enterprises/{enterprise}/actions/permissions/organizations/{org_id}']['response'] */ js.Any
     ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

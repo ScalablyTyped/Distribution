@@ -3,8 +3,10 @@ package typings.blueprintjsSelect
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.Ref
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
+import typings.std.HTMLLIElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +15,7 @@ object libEsmCommonItemRendererMod {
   
   type IItemModifiers = ItemModifiers
   
-  type IItemRendererProps = ItemRendererProps
+  type IItemRendererProps = ItemRendererProps[HTMLLIElement]
   
   trait ItemModifiers extends StObject {
     
@@ -44,9 +46,9 @@ object libEsmCommonItemRendererMod {
     }
   }
   
-  type ItemRenderer[T] = js.Function2[/* item */ T, /* itemProps */ ItemRendererProps, Element | Null]
+  type ItemRenderer[T] = js.Function2[/* item */ T, /* itemProps */ ItemRendererProps[HTMLLIElement], Element | Null]
   
-  trait ItemRendererProps extends StObject {
+  trait ItemRendererProps[T /* <: HTMLElement */] extends StObject {
     
     /** Click event handler to select this item. */
     var handleClick: MouseEventHandler[HTMLElement]
@@ -54,7 +56,7 @@ object libEsmCommonItemRendererMod {
     /**
       * Focus event handler to set this as the "active" item.
       *
-      * N.B. this is optional to preserve back-compat; it will become required in the next major version.
+      * N.B. this is optional to preserve backwards-compatibility with @blueprintjs/select version < 4.2.0
       */
     var handleFocus: js.UndefOr[js.Function0[Unit]] = js.undefined
     
@@ -65,20 +67,27 @@ object libEsmCommonItemRendererMod {
     
     /** The current query string used to filter the items. */
     var query: String
+    
+    /**
+      * A ref attached the native HTML element rendered by this item.
+      *
+      * N.B. this is optional to preserve backwards-compatibilty with @blueprintjs/select version < 4.9.0
+      */
+    var ref: js.UndefOr[Ref[T]] = js.undefined
   }
   object ItemRendererProps {
     
-    inline def apply(
+    inline def apply[T /* <: HTMLElement */](
       handleClick: MouseEvent[HTMLElement, NativeMouseEvent] => Unit,
       modifiers: ItemModifiers,
       query: String
-    ): ItemRendererProps = {
+    ): ItemRendererProps[T] = {
       val __obj = js.Dynamic.literal(handleClick = js.Any.fromFunction1(handleClick), modifiers = modifiers.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ItemRendererProps]
+      __obj.asInstanceOf[ItemRendererProps[T]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: ItemRendererProps] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: ItemRendererProps[?], T /* <: HTMLElement */] (val x: Self & ItemRendererProps[T]) extends AnyVal {
       
       inline def setHandleClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "handleClick", js.Any.fromFunction1(value))
       
@@ -93,6 +102,14 @@ object libEsmCommonItemRendererMod {
       inline def setModifiers(value: ItemModifiers): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
       
       inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      
+      inline def setRef(value: Ref[T]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ T | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     }
   }
 }

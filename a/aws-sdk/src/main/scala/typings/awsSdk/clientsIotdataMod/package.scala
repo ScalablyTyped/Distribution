@@ -6,9 +6,15 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
+type ContentType = String
+
+type CorrelationData = String
+
 type JsonDocument = Buffer | js.typedarray.Uint8Array | Blob | String
 
 type MaxResults = Double
+
+type MessageExpiry = Double
 
 type NamedShadowList = js.Array[ShadowName]
 
@@ -18,9 +24,18 @@ type PageSize = Double
 
 type Payload = Buffer | js.typedarray.Uint8Array | Blob | String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.UNSPECIFIED_BYTES
+  - typings.awsSdk.awsSdkStrings.UTF8_DATA
+  - java.lang.String
+*/
+type PayloadFormatIndicator = _PayloadFormatIndicator | String
+
 type PayloadSize = Double
 
 type Qos = Double
+
+type ResponseTopic = String
 
 type Retain = Boolean
 
@@ -33,6 +48,10 @@ type ThingName = String
 type Timestamp = Double
 
 type Topic = String
+
+type UserProperties = String
+
+type UserPropertiesBlob = Buffer | js.typedarray.Uint8Array | Blob | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2015-05-28`

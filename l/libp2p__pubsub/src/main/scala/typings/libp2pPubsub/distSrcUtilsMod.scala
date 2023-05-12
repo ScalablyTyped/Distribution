@@ -2,7 +2,6 @@ package typings.libp2pPubsub
 
 import typings.libp2pInterfacePubsub.mod.Message
 import typings.libp2pInterfacePubsub.mod.PubSubRPCMessage
-import typings.multiformats.distTypesSrcHashesHasherMod.Await
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,11 +27,11 @@ object distSrcUtilsMod {
   
   inline def msgId(key: js.typedarray.Uint8Array, seqno: js.BigInt): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("msgId")(key.asInstanceOf[js.Any], seqno.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def noSignMsgId(data: js.typedarray.Uint8Array): Await[js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("noSignMsgId")(data.asInstanceOf[js.Any]).asInstanceOf[Await[js.typedarray.Uint8Array]]
+  inline def noSignMsgId(data: js.typedarray.Uint8Array): js.typedarray.Uint8Array | js.Promise[js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("noSignMsgId")(data.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array | js.Promise[js.typedarray.Uint8Array]]
   
   inline def randomSeqno(): js.BigInt = ^.asInstanceOf[js.Dynamic].applyDynamic("randomSeqno")().asInstanceOf[js.BigInt]
   
-  inline def toMessage(message: PubSubRPCMessage): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("toMessage")(message.asInstanceOf[js.Any]).asInstanceOf[Message]
+  inline def toMessage(message: PubSubRPCMessage): js.Promise[Message] = ^.asInstanceOf[js.Dynamic].applyDynamic("toMessage")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Message]]
   
   inline def toRpcMessage(message: Message): PubSubRPCMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("toRpcMessage")(message.asInstanceOf[js.Any]).asInstanceOf[PubSubRPCMessage]
 }

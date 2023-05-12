@@ -127,6 +127,11 @@ trait DBCluster extends StObject {
   var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
+    * Contains a user-supplied global database cluster identifier. This identifier is the unique key that identifies a global database.
+    */
+  var GlobalClusterIdentifier: js.UndefOr[typings.awsSdk.clientsNeptuneMod.GlobalClusterIdentifier] = js.undefined
+  
+  /**
     * Specifies the ID that Amazon Route 53 assigns when you create a hosted zone.
     */
   var HostedZoneId: js.UndefOr[String] = js.undefined
@@ -155,6 +160,11 @@ trait DBCluster extends StObject {
     * Specifies whether the DB cluster has instances in multiple Availability Zones.
     */
   var MultiAZ: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * This data type is used as a response element in the ModifyDBCluster operation and contains changes that will be applied during the next maintenance window.
+    */
+  var PendingModifiedValues: js.UndefOr[ClusterPendingModifiedValues] = js.undefined
   
   /**
     * Specifies the progress of the operation as a percentage.
@@ -324,6 +334,10 @@ object DBCluster {
     
     inline def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
     
+    inline def setGlobalClusterIdentifier(value: GlobalClusterIdentifier): Self = StObject.set(x, "GlobalClusterIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setGlobalClusterIdentifierUndefined: Self = StObject.set(x, "GlobalClusterIdentifier", js.undefined)
+    
     inline def setHostedZoneId(value: String): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
     
     inline def setHostedZoneIdUndefined: Self = StObject.set(x, "HostedZoneId", js.undefined)
@@ -347,6 +361,10 @@ object DBCluster {
     inline def setMultiAZ(value: Boolean): Self = StObject.set(x, "MultiAZ", value.asInstanceOf[js.Any])
     
     inline def setMultiAZUndefined: Self = StObject.set(x, "MultiAZ", js.undefined)
+    
+    inline def setPendingModifiedValues(value: ClusterPendingModifiedValues): Self = StObject.set(x, "PendingModifiedValues", value.asInstanceOf[js.Any])
+    
+    inline def setPendingModifiedValuesUndefined: Self = StObject.set(x, "PendingModifiedValues", js.undefined)
     
     inline def setPercentProgress(value: String): Self = StObject.set(x, "PercentProgress", value.asInstanceOf[js.Any])
     

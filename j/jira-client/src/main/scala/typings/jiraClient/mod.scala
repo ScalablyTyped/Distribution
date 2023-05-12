@@ -1918,12 +1918,12 @@ object mod {
     var startAt: js.UndefOr[Double] = js.undefined
     
     /** (DEPRECATED) A query string used to search username, name or e-mail address */
-    var username: String
+    var username: js.UndefOr[String] = js.undefined
   }
   object SearchUserOptions {
     
-    inline def apply(query: String, username: String): SearchUserOptions = {
-      val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    inline def apply(query: String): SearchUserOptions = {
+      val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
       __obj.asInstanceOf[SearchUserOptions]
     }
     
@@ -1949,6 +1949,8 @@ object mod {
       inline def setStartAtUndefined: Self = StObject.set(x, "startAt", js.undefined)
       
       inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     }
   }
   

@@ -9,6 +9,8 @@ trait Buttons extends StObject {
   var buttons: js.UndefOr[Double] = js.undefined
   
   var capture: js.UndefOr[Boolean] = js.undefined
+  
+  var keys: js.UndefOr[Boolean] = js.undefined
 }
 object Buttons {
   
@@ -27,5 +29,9 @@ object Buttons {
     inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
     inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
+    
+    inline def setKeys(value: Boolean): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    
+    inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
   }
 }

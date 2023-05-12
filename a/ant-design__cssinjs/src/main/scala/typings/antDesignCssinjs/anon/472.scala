@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderBlockColor
+import typings.csstype.mod.Property.BreakInside
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `472` extends StObject {
   
   var value: js.UndefOr[
-    BorderBlockColor | (js.Array[
-      (Extract[
-        js.UndefOr[BorderBlockColor | js.Array[NonNullable[js.UndefOr[BorderBlockColor]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[BorderBlockColor]]
+    BreakInside | (js.Array[
+      (Extract[js.UndefOr[BreakInside | js.Array[NonNullable[js.UndefOr[BreakInside]]]], String]) | NonNullable[js.UndefOr[BreakInside]]
     ])
   ] = js.native
 }

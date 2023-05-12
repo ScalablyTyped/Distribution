@@ -129,7 +129,6 @@ object builtPtorMod {
     @js.native
     // region Constructors
     /**
-      * @constructor
       */
     open class Builder ()
       extends typings.seleniumWebdriver.mod.Builder
@@ -150,7 +149,6 @@ object builtPtorMod {
     @js.native
     // region Constructors
     /**
-      * @constructor
       */
     open class EventEmitter ()
       extends typings.seleniumWebdriver.mod.EventEmitter
@@ -158,7 +156,6 @@ object builtPtorMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("protractor/built/ptor", "protractor.FileDetector")
     @js.native
-    /** @constructor */
     open class FileDetector ()
       extends typings.seleniumWebdriver.mod.FileDetector
     
@@ -172,7 +169,6 @@ object builtPtorMod {
         * @param {string} id The session ID.
         * @param {!(Object|Capabilities)} capabilities The session
         *     capabilities.
-        * @constructor
         */
       def this(id: String, capabilities: typings.seleniumWebdriver.libCapabilitiesMod.Capabilities) = this()
     }

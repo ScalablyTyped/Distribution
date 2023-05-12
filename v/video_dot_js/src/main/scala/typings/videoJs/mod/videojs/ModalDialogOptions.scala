@@ -21,6 +21,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [label]
   *        A text label for the modal, primarily for accessibility.
   *
+  * @param [pauseOnOpen=true]
+  *        If `true`, playback will will be paused if playing when
+  *        the modal opens, and resumed when it closes.
+  *
   * @param [temporary=true]
   *        If `true`, the modal can only be opened once; it will be
   *        disposed as soon as it's closed.
@@ -41,6 +45,8 @@ trait ModalDialogOptions
   var fillAlways: js.UndefOr[Boolean] = js.undefined
   
   var label: js.UndefOr[String] = js.undefined
+  
+  var pauseOnOpen: js.UndefOr[Boolean] = js.undefined
   
   var temporary: js.UndefOr[Boolean] = js.undefined
   
@@ -71,6 +77,10 @@ object ModalDialogOptions {
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setPauseOnOpen(value: Boolean): Self = StObject.set(x, "pauseOnOpen", value.asInstanceOf[js.Any])
+    
+    inline def setPauseOnOpenUndefined: Self = StObject.set(x, "pauseOnOpen", js.undefined)
     
     inline def setTemporary(value: Boolean): Self = StObject.set(x, "temporary", value.asInstanceOf[js.Any])
     

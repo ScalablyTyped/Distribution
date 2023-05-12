@@ -19,10 +19,105 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
+  /* Inlined socket.io-adapter.socket.io-adapter.BroadcastFlags & {  expectSingleResponse :boolean | undefined} */
+  trait BroadcastFlagsexpectSingl extends StObject {
+    
+    var binary: js.UndefOr[Boolean] = js.undefined
+    
+    var broadcast: js.UndefOr[Boolean] = js.undefined
+    
+    var compress: js.UndefOr[Boolean] = js.undefined
+    
+    var expectSingleResponse: js.UndefOr[Boolean] = js.undefined
+    
+    var local: js.UndefOr[Boolean] = js.undefined
+    
+    var timeout: js.UndefOr[Double] = js.undefined
+    
+    var volatile: js.UndefOr[Boolean] = js.undefined
+  }
+  object BroadcastFlagsexpectSingl {
+    
+    inline def apply(): BroadcastFlagsexpectSingl = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[BroadcastFlagsexpectSingl]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BroadcastFlagsexpectSingl] (val x: Self) extends AnyVal {
+      
+      inline def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+      
+      inline def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
+      
+      inline def setBroadcast(value: Boolean): Self = StObject.set(x, "broadcast", value.asInstanceOf[js.Any])
+      
+      inline def setBroadcastUndefined: Self = StObject.set(x, "broadcast", js.undefined)
+      
+      inline def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
+      
+      inline def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
+      
+      inline def setExpectSingleResponse(value: Boolean): Self = StObject.set(x, "expectSingleResponse", value.asInstanceOf[js.Any])
+      
+      inline def setExpectSingleResponseUndefined: Self = StObject.set(x, "expectSingleResponse", js.undefined)
+      
+      inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+      
+      inline def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
+      
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      
+      inline def setVolatile(value: Boolean): Self = StObject.set(x, "volatile", value.asInstanceOf[js.Any])
+      
+      inline def setVolatileUndefined: Self = StObject.set(x, "volatile", js.undefined)
+    }
+  }
+  
+  trait MaxDisconnectionDuration extends StObject {
+    
+    /**
+      * The backup duration of the sessions and the packets.
+      *
+      * @default 120000 (2 minutes)
+      */
+    var maxDisconnectionDuration: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Whether to skip middlewares upon successful connection state recovery.
+      *
+      * @default true
+      */
+    var skipMiddlewares: js.UndefOr[Boolean] = js.undefined
+  }
+  object MaxDisconnectionDuration {
+    
+    inline def apply(): MaxDisconnectionDuration = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MaxDisconnectionDuration]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxDisconnectionDuration] (val x: Self) extends AnyVal {
+      
+      inline def setMaxDisconnectionDuration(value: Double): Self = StObject.set(x, "maxDisconnectionDuration", value.asInstanceOf[js.Any])
+      
+      inline def setMaxDisconnectionDurationUndefined: Self = StObject.set(x, "maxDisconnectionDuration", js.undefined)
+      
+      inline def setSkipMiddlewares(value: Boolean): Self = StObject.set(x, "skipMiddlewares", value.asInstanceOf[js.Any])
+      
+      inline def setSkipMiddlewaresUndefined: Self = StObject.set(x, "skipMiddlewares", js.undefined)
+    }
+  }
+  
   /* Inlined std.Partial<socket.io.socket.io.ServerOptions> */
   trait PartialServerOptions extends StObject {
     
     var adapter: js.UndefOr[AdapterConstructor] = js.undefined
+    
+    var addTrailingSlash: js.UndefOr[Boolean] = js.undefined
     
     var allowEIO3: js.UndefOr[Boolean] = js.undefined
     
@@ -36,7 +131,11 @@ object anon {
     
     var allowUpgrades: js.UndefOr[Boolean] = js.undefined
     
+    var cleanupEmptyChildNamespaces: js.UndefOr[Boolean] = js.undefined
+    
     var connectTimeout: js.UndefOr[Double] = js.undefined
+    
+    var connectionStateRecovery: js.UndefOr[MaxDisconnectionDuration] = js.undefined
     
     var cookie: js.UndefOr[CookieSerializeOptionsnam | Boolean] = js.undefined
     
@@ -86,6 +185,10 @@ object anon {
       
       inline def setAdapterUndefined: Self = StObject.set(x, "adapter", js.undefined)
       
+      inline def setAddTrailingSlash(value: Boolean): Self = StObject.set(x, "addTrailingSlash", value.asInstanceOf[js.Any])
+      
+      inline def setAddTrailingSlashUndefined: Self = StObject.set(x, "addTrailingSlash", js.undefined)
+      
       inline def setAllowEIO3(value: Boolean): Self = StObject.set(x, "allowEIO3", value.asInstanceOf[js.Any])
       
       inline def setAllowEIO3Undefined: Self = StObject.set(x, "allowEIO3", js.undefined)
@@ -100,9 +203,17 @@ object anon {
       
       inline def setAllowUpgradesUndefined: Self = StObject.set(x, "allowUpgrades", js.undefined)
       
+      inline def setCleanupEmptyChildNamespaces(value: Boolean): Self = StObject.set(x, "cleanupEmptyChildNamespaces", value.asInstanceOf[js.Any])
+      
+      inline def setCleanupEmptyChildNamespacesUndefined: Self = StObject.set(x, "cleanupEmptyChildNamespaces", js.undefined)
+      
       inline def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
       
       inline def setConnectTimeoutUndefined: Self = StObject.set(x, "connectTimeout", js.undefined)
+      
+      inline def setConnectionStateRecovery(value: MaxDisconnectionDuration): Self = StObject.set(x, "connectionStateRecovery", value.asInstanceOf[js.Any])
+      
+      inline def setConnectionStateRecoveryUndefined: Self = StObject.set(x, "connectionStateRecovery", js.undefined)
       
       inline def setCookie(value: CookieSerializeOptionsnam | Boolean): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       

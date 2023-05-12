@@ -16,6 +16,8 @@ trait Cookie extends StObject {
   
   var path: js.UndefOr[String] = js.undefined
   
+  var sameSite: js.UndefOr[String] = js.undefined
+  
   var secure: js.UndefOr[Boolean] = js.undefined
   
   var value: String
@@ -47,6 +49,10 @@ object Cookie {
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    
+    inline def setSameSite(value: String): Self = StObject.set(x, "sameSite", value.asInstanceOf[js.Any])
+    
+    inline def setSameSiteUndefined: Self = StObject.set(x, "sameSite", js.undefined)
     
     inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
     

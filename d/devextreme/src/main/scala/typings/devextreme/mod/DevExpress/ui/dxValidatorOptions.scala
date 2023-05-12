@@ -34,7 +34,7 @@ trait dxValidatorOptions
   /**
     * An array of validation rules to be checked for the editor with which the dxValidator object is associated.
     */
-  var validationRules: js.UndefOr[js.Array[ValidationRule]] = js.undefined
+  var validationRules: js.UndefOr[js.Array[typings.devextreme.mod.DevExpress.common.ValidationRule]] = js.undefined
 }
 object dxValidatorOptions {
   
@@ -62,10 +62,10 @@ object dxValidatorOptions {
     
     inline def setValidationGroupUndefined: Self = StObject.set(x, "validationGroup", js.undefined)
     
-    inline def setValidationRules(value: js.Array[ValidationRule]): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
+    inline def setValidationRules(value: js.Array[typings.devextreme.mod.DevExpress.common.ValidationRule]): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
     
     inline def setValidationRulesUndefined: Self = StObject.set(x, "validationRules", js.undefined)
     
-    inline def setValidationRulesVarargs(value: ValidationRule*): Self = StObject.set(x, "validationRules", js.Array(value*))
+    inline def setValidationRulesVarargs(value: typings.devextreme.mod.DevExpress.common.ValidationRule*): Self = StObject.set(x, "validationRules", js.Array(value*))
   }
 }

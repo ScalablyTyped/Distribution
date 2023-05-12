@@ -1,7 +1,7 @@
 
 # Scala.js typings for forge-apis
 
-Typings are for version 0.8
+Typings are for version 0.9
 
 ## Library description:
 The Forge Platform contains an expanding collection of web service components that can be used with Autodesk cloud-based products or your own technologies. Take advantage of Autodesk’s expertise in design and engineering.

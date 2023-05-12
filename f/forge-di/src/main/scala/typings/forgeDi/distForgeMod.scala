@@ -22,9 +22,9 @@ object distForgeMod {
   @js.native
   trait Forge extends StObject {
     
-    def bind(name: String): typings.forgeDi.distFrameworkBindingMod.default = js.native
+    def bind[T](name: String): typings.forgeDi.distFrameworkBindingMod.default[T] = js.native
     
-    var bindings: StringDictionary[js.Array[typings.forgeDi.distFrameworkBindingMod.default]] = js.native
+    var bindings: StringDictionary[js.Array[typings.forgeDi.distFrameworkBindingMod.default[Any]]] = js.native
     
     def get[T](name: String): T = js.native
     def get[T](name: String, hint: Any): T = js.native
@@ -45,7 +45,7 @@ object distForgeMod {
     
     var inspector: Inspector = js.native
     
-    def rebind(name: String): typings.forgeDi.distFrameworkBindingMod.default = js.native
+    def rebind(name: String): typings.forgeDi.distFrameworkBindingMod.default[Any] = js.native
     
     def resolve(name: String, context: typings.forgeDi.distFrameworkContextMod.default, hint: Any, args: Arguments): Any = js.native
     def resolve(

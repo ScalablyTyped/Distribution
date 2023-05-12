@@ -31,6 +31,8 @@ trait PBRMetallicRoughnessBlock
   
   /* private */ var _scene: Any = js.native
   
+  /* private */ var _setTarget: Any = js.native
+  
   /* private */ var _vMetallicReflectanceFactorsName: Any = js.native
   
   /* private */ var _vNormalWName: Any = js.native
@@ -143,6 +145,9 @@ trait PBRMetallicRoughnessBlock
     * Force normal to face away from face.
     */
   var forceNormalForward: Boolean = js.native
+  
+  /** Indicates that no code should be generated in the vertex shader. Can be useful in some specific circumstances (like when doing ray marching for eg) */
+  var generateOnlyFragmentCode: Boolean = js.native
   
   /**
     * Gets the index of refraction input component

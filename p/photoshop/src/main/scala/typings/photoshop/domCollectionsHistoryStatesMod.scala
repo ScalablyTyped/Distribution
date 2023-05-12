@@ -1,8 +1,8 @@
 package typings.photoshop
 
-import org.scalablytyped.runtime.NumberDictionary
 import typings.photoshop.anon.Get
 import typings.photoshop.domHistoryStateMod.HistoryState
+import typings.std.Array
 import typings.std.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,10 +14,7 @@ object domCollectionsHistoryStatesMod {
   @js.native
   open class HistoryStates protected ()
     extends StObject
-       with /**
-    * Used to access the history states in the collection
-    */
-  /* index */ NumberDictionary[HistoryState] {
+       with Array[HistoryState] {
     /**
       * @ignore
       */
@@ -29,7 +26,8 @@ object domCollectionsHistoryStatesMod {
     val _docId: Double = js.native
     
     /**
-      * Find the first history state with the matching name
+      * Find the first history state with the matching name.
+      * @minVersion 22.5
       */
     def getByName(name: String): HistoryState = js.native
     
@@ -39,12 +37,15 @@ object domCollectionsHistoryStatesMod {
     def handler(): Get = js.native
     
     /**
-      * Number of [[HistoryState]] elements in this collection
+      * Number of [[HistoryState]] elements in this collection.
+      * @minVersion 22.5
       */
-    def length: Double = js.native
+    @JSName("length")
+    def length_MHistoryStates: Double = js.native
     
     /**
-      * The owner document of this HistoryState collection
+      * The owner document of this HistoryState collection.
+      * @minVersion 22.5
       */
     def parent: Document = js.native
     

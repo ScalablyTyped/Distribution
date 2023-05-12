@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "agent-base" : "6.0.2"
+      "agent-base" : "7.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "agent-base" : "6.0.2"
+      "agent-base" : "7.0.1"
     }
   ],
   "compile-devDependencies" : [

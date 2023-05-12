@@ -12,6 +12,11 @@ trait ListAnomaliesForInsightRequest extends StObject {
   var AccountId: js.UndefOr[AwsAccountId] = js.undefined
   
   /**
+    *  Specifies one or more service names that are used to list anomalies. 
+    */
+  var Filters: js.UndefOr[ListAnomaliesForInsightFilters] = js.undefined
+  
+  /**
     *  The ID of the insight. The returned anomalies belong to this insight. 
     */
   var InsightId: typings.awsSdk.clientsDevopsguruMod.InsightId
@@ -44,6 +49,10 @@ object ListAnomaliesForInsightRequest {
     inline def setAccountId(value: AwsAccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
     inline def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
+    
+    inline def setFilters(value: ListAnomaliesForInsightFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
     inline def setInsightId(value: InsightId): Self = StObject.set(x, "InsightId", value.asInstanceOf[js.Any])
     

@@ -7,6 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AnalysisRouteTableRoute extends StObject {
   
   /**
+    * The ID of a carrier gateway.
+    */
+  var CarrierGatewayId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The Amazon Resource Name (ARN) of a core network.
+    */
+  var CoreNetworkArn: js.UndefOr[ResourceArn] = js.undefined
+  
+  /**
     * The destination IPv4 address, in CIDR notation.
     */
   var DestinationCidr: js.UndefOr[String] = js.undefined
@@ -30,6 +40,11 @@ trait AnalysisRouteTableRoute extends StObject {
     * The ID of the instance, such as a NAT instance.
     */
   var InstanceId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The ID of a local gateway.
+    */
+  var LocalGatewayId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of a NAT gateway.
@@ -71,6 +86,14 @@ object AnalysisRouteTableRoute {
   @scala.inline
   implicit open class MutableBuilder[Self <: AnalysisRouteTableRoute] (val x: Self) extends AnyVal {
     
+    inline def setCarrierGatewayId(value: String): Self = StObject.set(x, "CarrierGatewayId", value.asInstanceOf[js.Any])
+    
+    inline def setCarrierGatewayIdUndefined: Self = StObject.set(x, "CarrierGatewayId", js.undefined)
+    
+    inline def setCoreNetworkArn(value: ResourceArn): Self = StObject.set(x, "CoreNetworkArn", value.asInstanceOf[js.Any])
+    
+    inline def setCoreNetworkArnUndefined: Self = StObject.set(x, "CoreNetworkArn", js.undefined)
+    
     inline def setDestinationCidr(value: String): Self = StObject.set(x, "DestinationCidr", value.asInstanceOf[js.Any])
     
     inline def setDestinationCidrUndefined: Self = StObject.set(x, "DestinationCidr", js.undefined)
@@ -90,6 +113,10 @@ object AnalysisRouteTableRoute {
     inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    
+    inline def setLocalGatewayId(value: String): Self = StObject.set(x, "LocalGatewayId", value.asInstanceOf[js.Any])
+    
+    inline def setLocalGatewayIdUndefined: Self = StObject.set(x, "LocalGatewayId", js.undefined)
     
     inline def setNatGatewayId(value: String): Self = StObject.set(x, "NatGatewayId", value.asInstanceOf[js.Any])
     

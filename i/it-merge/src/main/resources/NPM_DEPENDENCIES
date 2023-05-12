@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "it-merge" : "2.0.0"
+      "it-merge" : "3.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "it-merge" : "2.0.0"
+      "it-merge" : "3.0.1"
     }
   ],
   "compile-devDependencies" : [

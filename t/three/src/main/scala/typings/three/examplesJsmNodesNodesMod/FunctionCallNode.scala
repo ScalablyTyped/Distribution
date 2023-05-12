@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three/examples/jsm/nodes/Nodes", "FunctionCallNode")
 @js.native
 open class FunctionCallNode[P /* <: js.Array[default] | StringDictionary[default] */] ()
-  extends typings.three.examplesJsmNodesCoreFunctionCallNodeMod.default[P] {
-  def this(functionNode: typings.three.examplesJsmNodesCoreFunctionNodeMod.default[P]) = this()
+  extends typings.three.examplesJsmNodesCodeFunctionCallNodeMod.default[P] {
+  def this(functionNode: typings.three.examplesJsmNodesCodeFunctionNodeMod.default[P]) = this()
   def this(functionNode: Unit, parameters: P) = this()
-  def this(functionNode: typings.three.examplesJsmNodesCoreFunctionNodeMod.default[P], parameters: P) = this()
+  def this(functionNode: typings.three.examplesJsmNodesCodeFunctionNodeMod.default[P], parameters: P) = this()
 }

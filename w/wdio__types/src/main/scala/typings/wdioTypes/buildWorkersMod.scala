@@ -2,11 +2,12 @@ package typings.wdioTypes
 
 import typings.node.eventsMod.EventEmitter
 import typings.std.Record
-import typings.wdioTypes.anon.IsMultiremote
+import typings.wdioTypes.anon.Capabilities
 import typings.wdioTypes.buildCapabilitiesMod.DesiredCapabilities
 import typings.wdioTypes.buildCapabilitiesMod.MultiRemoteCapabilities
 import typings.wdioTypes.buildCapabilitiesMod.RemoteCapability
 import typings.wdioTypes.buildCapabilitiesMod.W3CCapabilities
+import typings.wdioTypes.buildOptionsMod.Testrunner
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,7 +47,7 @@ object buildWorkersMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in std.Exclude<keyof @wdio/types.@wdio/types/build/Options.Testrunner, 'capabilities' | 'specs'> ]: @wdio/types.@wdio/types/build/Options.Testrunner[P]} */ @js.native
+  - Dropped {[ P in std.Exclude<keyof @wdio/types.@wdio/types/build/Options.Testrunner, 'capabilities' | 'specs' | 'rootDir'> ]: @wdio/types.@wdio/types/build/Options.Testrunner[P]} */ @js.native
   trait Worker extends EventEmitter {
     
     var capabilities: RemoteCapability = js.native
@@ -54,6 +55,8 @@ object buildWorkersMod {
     var caps: RemoteCapability = js.native
     
     var cid: String = js.native
+    
+    var config: Testrunner = js.native
     
     var isBusy: js.UndefOr[Boolean] = js.native
     
@@ -119,7 +122,7 @@ object buildWorkersMod {
   
   trait WorkerMessage extends StObject {
     
-    var content: IsMultiremote
+    var content: Capabilities
     
     var name: String
     
@@ -129,7 +132,7 @@ object buildWorkersMod {
   }
   object WorkerMessage {
     
-    inline def apply(content: IsMultiremote, name: String, origin: String, params: Record[String, String]): WorkerMessage = {
+    inline def apply(content: Capabilities, name: String, origin: String, params: Record[String, String]): WorkerMessage = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
       __obj.asInstanceOf[WorkerMessage]
     }
@@ -137,7 +140,7 @@ object buildWorkersMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: WorkerMessage] (val x: Self) extends AnyVal {
       
-      inline def setContent(value: IsMultiremote): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: Capabilities): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

@@ -1,6 +1,7 @@
 package typings.phaser.global.Phaser.GameObjects
 
 import typings.phaser.Phaser.Scene
+import typings.phaser.Phaser.Types.GameObjects.BitmapText.BitmapFontData
 import typings.phaser.Phaser.Types.GameObjects.BitmapText.RetroFontConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,7 +19,7 @@ object RetroFont {
     * @param scene A reference to the Phaser Scene.
     * @param config The font configuration object.
     */
-  inline def Parse(scene: Scene, config: RetroFontConfig): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(scene.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def Parse(scene: Scene, config: RetroFontConfig): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(scene.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
   
   /**
     * Text Set 1 =  !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~

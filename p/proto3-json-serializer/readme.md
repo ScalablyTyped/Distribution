@@ -1,7 +1,7 @@
 
 # Scala.js typings for proto3-json-serializer
 
-Typings are for version 1.1.0
+Typings are for version 1.1.1
 
 ## Library description:
 Support for proto3 JSON serialiazation/deserialization for protobuf.js

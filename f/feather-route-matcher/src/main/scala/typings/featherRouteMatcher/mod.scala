@@ -15,29 +15,29 @@ object mod {
   
   trait Match[T] extends StObject {
     
-    var page: T
-    
     var params: StringDictionary[String] | Null
     
     var url: String
+    
+    var value: T
   }
   object Match {
     
-    inline def apply[T](page: T, url: String): Match[T] = {
-      val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], params = null)
+    inline def apply[T](url: String, value: T): Match[T] = {
+      val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], params = null)
       __obj.asInstanceOf[Match[T]]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: Match[?], T] (val x: Self & Match[T]) extends AnyVal {
       
-      inline def setPage(value: T): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
-      
       inline def setParams(value: StringDictionary[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsNull: Self = StObject.set(x, "params", null)
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

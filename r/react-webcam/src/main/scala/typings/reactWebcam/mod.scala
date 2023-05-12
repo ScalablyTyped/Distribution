@@ -22,6 +22,7 @@ import typings.react.mod.TransitionEventHandler
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEventHandler
 import typings.reactWebcam.anon.Audio
+import typings.reactWebcam.reactWebcamStrings._empty
 import typings.reactWebcam.reactWebcamStrings.`additions removals`
 import typings.reactWebcam.reactWebcamStrings.`additions text`
 import typings.reactWebcam.reactWebcamStrings.`inline`
@@ -29,8 +30,10 @@ import typings.reactWebcam.reactWebcamStrings.`removals additions`
 import typings.reactWebcam.reactWebcamStrings.`removals text`
 import typings.reactWebcam.reactWebcamStrings.`text additions`
 import typings.reactWebcam.reactWebcamStrings.`text removals`
+import typings.reactWebcam.reactWebcamStrings.`use-credentials`
 import typings.reactWebcam.reactWebcamStrings.additions
 import typings.reactWebcam.reactWebcamStrings.all
+import typings.reactWebcam.reactWebcamStrings.anonymous
 import typings.reactWebcam.reactWebcamStrings.ascending
 import typings.reactWebcam.reactWebcamStrings.assertive
 import typings.reactWebcam.reactWebcamStrings.both
@@ -78,6 +81,7 @@ import typings.reactWebcam.reactWebcamStrings.user
 import typings.reactWebcam.reactWebcamStrings.vertical
 import typings.reactWebcam.reactWebcamStrings.yes
 import typings.std.DOMException
+import typings.std.FormData
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLVideoElement
 import typings.std.MediaStream
@@ -191,7 +195,7 @@ object mod {
     
     var accessKey: js.UndefOr[String] = js.native
     
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.native
     
     var allowFullScreen: js.UndefOr[Boolean] = js.native
     
@@ -353,7 +357,7 @@ object mod {
     
     var coords: js.UndefOr[String] = js.native
     
-    var crossOrigin: js.UndefOr[String] = js.native
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.native
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
     
@@ -383,7 +387,7 @@ object mod {
     
     var form: js.UndefOr[String] = js.native
     
-    var formAction: js.UndefOr[String] = js.native
+    var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.native
     
     var formEncType: js.UndefOr[String] = js.native
     
@@ -681,6 +685,8 @@ object mod {
     var resource: js.UndefOr[String] = js.native
     
     var results: js.UndefOr[Double] = js.native
+    
+    var rev: js.UndefOr[String] = js.native
     
     var reversed: js.UndefOr[Boolean] = js.native
     

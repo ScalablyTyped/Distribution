@@ -7,7 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AvailSuppression extends StObject {
   
   /**
-    * Sets the ad suppression mode. By default, ad suppression is off and all ad breaks are filled with ads or slate. When Mode is set to BEHIND_LIVE_EDGE, ad suppression is active and MediaTailor won't fill ad breaks on or behind the ad suppression Value time in the manifest lookback window.
+    * Defines the policy to apply to the avail suppression mode. BEHIND_LIVE_EDGE will always use the full avail suppression policy. AFTER_LIVE_EDGE mode can be used to invoke partial ad break fills when a session starts mid-break.
+    */
+  var FillPolicy: js.UndefOr[typings.awsSdk.clientsMediatailorMod.FillPolicy] = js.undefined
+  
+  /**
+    * Sets the ad suppression mode. By default, ad suppression is off and all ad breaks are filled with ads or slate. When Mode is set to BEHIND_LIVE_EDGE, ad suppression is active and MediaTailor won't fill ad breaks on or behind the ad suppression Value time in the manifest lookback window. When Mode is set to AFTER_LIVE_EDGE, ad suppression is active and MediaTailor won't fill ad breaks that are within the live edge plus the avail suppression value.
     */
   var Mode: js.UndefOr[typings.awsSdk.clientsMediatailorMod.Mode] = js.undefined
   
@@ -25,6 +30,10 @@ object AvailSuppression {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: AvailSuppression] (val x: Self) extends AnyVal {
+    
+    inline def setFillPolicy(value: FillPolicy): Self = StObject.set(x, "FillPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setFillPolicyUndefined: Self = StObject.set(x, "FillPolicy", js.undefined)
     
     inline def setMode(value: Mode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     

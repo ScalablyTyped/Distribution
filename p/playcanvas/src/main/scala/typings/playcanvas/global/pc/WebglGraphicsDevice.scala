@@ -27,7 +27,7 @@ open class WebglGraphicsDevice protected ()
     * alpha buffer.
     * @param {boolean} [options.depth=true] - Boolean that indicates that the drawing buffer is
     * requested to have a depth buffer of at least 16 bits.
-    * @param {boolean} [options.stencil=false] - Boolean that indicates that the drawing buffer is
+    * @param {boolean} [options.stencil=true] - Boolean that indicates that the drawing buffer is
     * requested to have a stencil buffer of at least 8 bits.
     * @param {boolean} [options.antialias=true] - Boolean that indicates whether or not to perform
     * anti-aliasing if possible.
@@ -53,6 +53,8 @@ open class WebglGraphicsDevice protected ()
     * reduce the latency by desynchronizing the canvas paint cycle from the event loop.
     * @param {boolean} [options.xrCompatible] - Boolean that hints to the user agent to use a
     * compatible graphics adapter for an immersive XR device.
+    * @param {WebGLRenderingContext | WebGL2RenderingContext} [options.gl] - The rendering context
+    * to use. If not specified, a new context will be created.
     */
   def this(canvas: HTMLCanvasElement) = this()
   def this(canvas: HTMLCanvasElement, options: Alpha) = this()

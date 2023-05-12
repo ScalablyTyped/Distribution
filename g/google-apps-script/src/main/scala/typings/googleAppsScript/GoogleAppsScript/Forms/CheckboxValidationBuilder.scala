@@ -31,6 +31,8 @@ trait CheckboxValidationBuilder extends StObject {
   def requireSelectAtMost(number: Integer): CheckboxValidationBuilder
   
   def requireSelectExactly(number: Integer): CheckboxValidationBuilder
+  
+  def setHelpText(text: String): CheckboxValidationBuilder
 }
 object CheckboxValidationBuilder {
   
@@ -38,9 +40,10 @@ object CheckboxValidationBuilder {
     build: () => CheckboxValidation,
     requireSelectAtLeast: Integer => CheckboxValidationBuilder,
     requireSelectAtMost: Integer => CheckboxValidationBuilder,
-    requireSelectExactly: Integer => CheckboxValidationBuilder
+    requireSelectExactly: Integer => CheckboxValidationBuilder,
+    setHelpText: String => CheckboxValidationBuilder
   ): CheckboxValidationBuilder = {
-    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), requireSelectAtLeast = js.Any.fromFunction1(requireSelectAtLeast), requireSelectAtMost = js.Any.fromFunction1(requireSelectAtMost), requireSelectExactly = js.Any.fromFunction1(requireSelectExactly))
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), requireSelectAtLeast = js.Any.fromFunction1(requireSelectAtLeast), requireSelectAtMost = js.Any.fromFunction1(requireSelectAtMost), requireSelectExactly = js.Any.fromFunction1(requireSelectExactly), setHelpText = js.Any.fromFunction1(setHelpText))
     __obj.asInstanceOf[CheckboxValidationBuilder]
   }
   
@@ -54,5 +57,7 @@ object CheckboxValidationBuilder {
     inline def setRequireSelectAtMost(value: Integer => CheckboxValidationBuilder): Self = StObject.set(x, "requireSelectAtMost", js.Any.fromFunction1(value))
     
     inline def setRequireSelectExactly(value: Integer => CheckboxValidationBuilder): Self = StObject.set(x, "requireSelectExactly", js.Any.fromFunction1(value))
+    
+    inline def setSetHelpText(value: String => CheckboxValidationBuilder): Self = StObject.set(x, "setHelpText", js.Any.fromFunction1(value))
   }
 }

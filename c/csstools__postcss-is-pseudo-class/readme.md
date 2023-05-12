@@ -1,7 +1,7 @@
 
 # Scala.js typings for csstools__postcss-is-pseudo-class
 
-Typings are for version 2.0.7
+Typings are for version 3.2.0
 
 ## Library description:
 A pseudo-class for matching elements in a selector list

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Arguments for `completions` request. */
 trait CompletionsArguments extends StObject {
   
-  /** The character position for which to determine the completion proposals. */
+  /** The position within `text` for which to determine the completion proposals. It is measured in UTF-16 code units and the client capability `columnsStartAt1` determines whether it is 0- or 1-based. */
   var column: Double
   
   /** Returns completions in the scope of this stack frame. If not specified, the completions are returned for the global scope. */
@@ -16,7 +16,7 @@ trait CompletionsArguments extends StObject {
   /** A line for which to determine the completion proposals. If missing the first line of the text is assumed. */
   var line: js.UndefOr[Double] = js.undefined
   
-  /** One or more source lines. Typically this is the text a user has typed into the debug console before he asked for completion. */
+  /** One or more source lines. Typically this is the text users have typed into the debug console before they asked for completion. */
   var text: String
 }
 object CompletionsArguments {

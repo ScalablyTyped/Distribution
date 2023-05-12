@@ -7,6 +7,7 @@ import typings.angularRouter.angularRouterInts.`12`
 import typings.angularRouter.angularRouterInts.`13`
 import typings.angularRouter.angularRouterInts.`14`
 import typings.angularRouter.angularRouterInts.`15`
+import typings.angularRouter.angularRouterInts.`16`
 import typings.angularRouter.angularRouterInts.`1`
 import typings.angularRouter.angularRouterInts.`2`
 import typings.angularRouter.angularRouterInts.`3`
@@ -37,6 +38,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.angularRouter.angularRouterInts.`13`
   - typings.angularRouter.angularRouterInts.`14`
   - typings.angularRouter.angularRouterInts.`15`
+  - typings.angularRouter.angularRouterInts.`16`
 */
 trait EventType extends StObject
 object EventType {
@@ -58,6 +60,8 @@ object EventType {
   inline def NavigationEnd: `1` = 1.asInstanceOf[`1`]
   
   inline def NavigationError: `3` = 3.asInstanceOf[`3`]
+  
+  inline def NavigationSkipped: `16` = 16.asInstanceOf[`16`]
   
   inline def NavigationStart: `0` = 0.asInstanceOf[`0`]
   

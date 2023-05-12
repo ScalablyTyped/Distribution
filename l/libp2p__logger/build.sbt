@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "libp2p__logger"
-version := "2.0.2-f3e9e0"
+version := "2.0.7-a82d2a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

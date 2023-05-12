@@ -24,8 +24,6 @@ trait ChargeItem
   
   var _occurrenceDateTime: js.UndefOr[Element] = js.undefined
   
-  var _overrideReason: js.UndefOr[Element] = js.undefined
-  
   var _status: js.UndefOr[Element] = js.undefined
   
   /**
@@ -34,7 +32,7 @@ trait ChargeItem
   var account: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * Only used if not implicit in code found in Condition.code. If the use case requires attributes from the BodySite resource (e.g. to identify and track separately) then use the standard extension [bodySite](extension-bodysite.html).  May be a summary code, or a reference to a very precise definition of the location, or both.
+    * Only used if not implicit in code found in Condition.code. If the use case requires attributes from the BodySite resource (e.g. to identify and track separately) then use the standard extension [http://hl7.org/fhir/StructureDefinition/bodySite](http://hl7.org/fhir/extensions/StructureDefinition-bodySite.html).  May be a summary code, or a reference to a very precise definition of the location, or both.
     */
   var bodysite: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
@@ -42,11 +40,6 @@ trait ChargeItem
     * A code that identifies the charge, like a billing code.
     */
   var code: CodeableConcept
-  
-  /**
-    * The encounter or episode of care that establishes the context for this event.
-    */
-  var context: js.UndefOr[Reference] = js.undefined
   
   /**
     * The costCenter could either be given as a reference to an Organization(Role) resource or as the identifier of the cost center determined by Reference.identifier.value and Reference.identifier.system, depending on use case requirements.
@@ -64,6 +57,11 @@ trait ChargeItem
   var definitionUri: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
+    * This ChargeItem may be recorded during planning, execution or after the actual encounter takes place.
+    */
+  var encounter: js.UndefOr[Reference] = js.undefined
+  
+  /**
     * The actual date when the service associated with the charge has been rendered is captured in occurrence[x].
     */
   var enteredDate: js.UndefOr[String] = js.undefined
@@ -72,11 +70,6 @@ trait ChargeItem
     * The enterer is also the person considered responsible for factor/price overrides if applicable.
     */
   var enterer: js.UndefOr[Reference] = js.undefined
-  
-  /**
-    * There is no reason to carry the factor in the instance of a ChargeItem unless special circumstances require a manual override. The factors are usually defined by a set of rules in a back catalogue of the billing codes  (see ChargeItem.definition). Derived profiles may require a ChargeItem.overrideReason to be provided if either factor or price are manually overridden.
-    */
-  var factorOverride: js.UndefOr[Double] = js.undefined
   
   /**
     * Identifiers assigned to this event performer or other systems.
@@ -104,9 +97,9 @@ trait ChargeItem
   var occurrenceTiming: js.UndefOr[Timing] = js.undefined
   
   /**
-    * Derived Profiles may choose to add invariants requiring this field to be populated if either priceOverride or factorOverride have been filled.
+    * If the list price or the rule-based factor associated with the code is overridden, this attribute can capture a text to indicate the  reason for this action.
     */
-  var overrideReason: js.UndefOr[String] = js.undefined
+  var overrideReason: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * ChargeItems can be grouped to larger ChargeItems covering the whole set.
@@ -122,11 +115,6 @@ trait ChargeItem
     * Practitioners and Devices can be associated with multiple organizations. It has to be made clear, on behalf of which Organization the services have been rendered.
     */
   var performingOrganization: js.UndefOr[Reference] = js.undefined
-  
-  /**
-    * There is no reason to carry the price in the instance of a ChargeItem unless circumstances require a manual override. The list prices or are usually defined in a back catalogue of the billing codes  (see ChargeItem.definition). Derived profiles may require a ChargeItem.overrideReason to be provided if either factor or price are manually overridden.
-    */
-  var priceOverride: js.UndefOr[Money] = js.undefined
   
   /**
     * Identifies the device, food, drug or other product being charged either by type code or reference to an instance.
@@ -155,7 +143,7 @@ trait ChargeItem
   /**
     * Indicated the rendered service that caused this charge.
     */
-  var service: js.UndefOr[js.Array[Reference]] = js.undefined
+  var service: js.UndefOr[js.Array[CodeableReference]] = js.undefined
   
   /**
     * Unknown does not represent "other" - one of the defined statuses must apply.  Unknown is used when the authoring system is not sure what the current status is.
@@ -172,6 +160,16 @@ trait ChargeItem
     * Further information supporting this charge.
     */
   var supportingInformation: js.UndefOr[js.Array[Reference]] = js.undefined
+  
+  /**
+    *  Often, the total price may be be calculated and recorded on the Invoice, but if a calculated total price must be exchanged prior to Invoice creation, it can be communicated in this property.
+    */
+  var totalPriceComponent: js.UndefOr[MonetaryComponent] = js.undefined
+  
+  /**
+    * This could be communicated in ChargeItemDefinition. But if ChargeItemDefinition is not supported or not available, the unit price can be communicated in this property.
+    */
+  var unitPriceComponent: js.UndefOr[MonetaryComponent] = js.undefined
 }
 object ChargeItem {
   
@@ -201,10 +199,6 @@ object ChargeItem {
     
     inline def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    inline def setContext(value: Reference): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
-    
-    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
-    
     inline def setCostCenter(value: Reference): Self = StObject.set(x, "costCenter", value.asInstanceOf[js.Any])
     
     inline def setCostCenterUndefined: Self = StObject.set(x, "costCenter", js.undefined)
@@ -221,6 +215,10 @@ object ChargeItem {
     
     inline def setDefinitionUriVarargs(value: String*): Self = StObject.set(x, "definitionUri", js.Array(value*))
     
+    inline def setEncounter(value: Reference): Self = StObject.set(x, "encounter", value.asInstanceOf[js.Any])
+    
+    inline def setEncounterUndefined: Self = StObject.set(x, "encounter", js.undefined)
+    
     inline def setEnteredDate(value: String): Self = StObject.set(x, "enteredDate", value.asInstanceOf[js.Any])
     
     inline def setEnteredDateUndefined: Self = StObject.set(x, "enteredDate", js.undefined)
@@ -228,10 +226,6 @@ object ChargeItem {
     inline def setEnterer(value: Reference): Self = StObject.set(x, "enterer", value.asInstanceOf[js.Any])
     
     inline def setEntererUndefined: Self = StObject.set(x, "enterer", js.undefined)
-    
-    inline def setFactorOverride(value: Double): Self = StObject.set(x, "factorOverride", value.asInstanceOf[js.Any])
-    
-    inline def setFactorOverrideUndefined: Self = StObject.set(x, "factorOverride", js.undefined)
     
     inline def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
@@ -257,7 +251,7 @@ object ChargeItem {
     
     inline def setOccurrenceTimingUndefined: Self = StObject.set(x, "occurrenceTiming", js.undefined)
     
-    inline def setOverrideReason(value: String): Self = StObject.set(x, "overrideReason", value.asInstanceOf[js.Any])
+    inline def setOverrideReason(value: CodeableConcept): Self = StObject.set(x, "overrideReason", value.asInstanceOf[js.Any])
     
     inline def setOverrideReasonUndefined: Self = StObject.set(x, "overrideReason", js.undefined)
     
@@ -276,10 +270,6 @@ object ChargeItem {
     inline def setPerformingOrganization(value: Reference): Self = StObject.set(x, "performingOrganization", value.asInstanceOf[js.Any])
     
     inline def setPerformingOrganizationUndefined: Self = StObject.set(x, "performingOrganization", js.undefined)
-    
-    inline def setPriceOverride(value: Money): Self = StObject.set(x, "priceOverride", value.asInstanceOf[js.Any])
-    
-    inline def setPriceOverrideUndefined: Self = StObject.set(x, "priceOverride", js.undefined)
     
     inline def setProduct(value: js.Array[CodeableReference]): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
@@ -303,11 +293,11 @@ object ChargeItem {
     
     inline def setResourceType(value: typings.fhir.fhirStrings.ChargeItem): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    inline def setService(value: js.Array[Reference]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: js.Array[CodeableReference]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
     inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
     
-    inline def setServiceVarargs(value: Reference*): Self = StObject.set(x, "service", js.Array(value*))
+    inline def setServiceVarargs(value: CodeableReference*): Self = StObject.set(x, "service", js.Array(value*))
     
     inline def setStatus(value: planned | billable | `not-billable` | aborted | billed | `entered-in-error` | unknown): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
@@ -318,6 +308,14 @@ object ChargeItem {
     inline def setSupportingInformationUndefined: Self = StObject.set(x, "supportingInformation", js.undefined)
     
     inline def setSupportingInformationVarargs(value: Reference*): Self = StObject.set(x, "supportingInformation", js.Array(value*))
+    
+    inline def setTotalPriceComponent(value: MonetaryComponent): Self = StObject.set(x, "totalPriceComponent", value.asInstanceOf[js.Any])
+    
+    inline def setTotalPriceComponentUndefined: Self = StObject.set(x, "totalPriceComponent", js.undefined)
+    
+    inline def setUnitPriceComponent(value: MonetaryComponent): Self = StObject.set(x, "unitPriceComponent", value.asInstanceOf[js.Any])
+    
+    inline def setUnitPriceComponentUndefined: Self = StObject.set(x, "unitPriceComponent", js.undefined)
     
     inline def set_definitionCanonical(value: js.Array[Element]): Self = StObject.set(x, "_definitionCanonical", value.asInstanceOf[js.Any])
     
@@ -338,10 +336,6 @@ object ChargeItem {
     inline def set_occurrenceDateTime(value: Element): Self = StObject.set(x, "_occurrenceDateTime", value.asInstanceOf[js.Any])
     
     inline def set_occurrenceDateTimeUndefined: Self = StObject.set(x, "_occurrenceDateTime", js.undefined)
-    
-    inline def set_overrideReason(value: Element): Self = StObject.set(x, "_overrideReason", value.asInstanceOf[js.Any])
-    
-    inline def set_overrideReasonUndefined: Self = StObject.set(x, "_overrideReason", js.undefined)
     
     inline def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     

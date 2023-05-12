@@ -3,8 +3,6 @@ package typings.socketIoClient
 import org.scalablytyped.runtime.StringDictionary
 import typings.engineIoClient.anon.Threshold
 import typings.socketIoParser.mod.PacketType
-import typings.std.CloseEvent
-import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +11,7 @@ object anon {
   
   trait Context extends StObject {
     
-    var context: js.UndefOr[CloseEvent | XMLHttpRequest] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     var description: String
   }
@@ -27,7 +25,7 @@ object anon {
     @scala.inline
     implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
-      inline def setContext(value: CloseEvent | XMLHttpRequest): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
@@ -37,6 +35,8 @@ object anon {
   
   /* Inlined std.Partial<socket.io-client.socket.io-client/build/esm/manager.ManagerOptions> */
   trait PartialManagerOptions extends StObject {
+    
+    var addTrailingSlash: js.UndefOr[Boolean] = js.undefined
     
     var agent: js.UndefOr[String | Boolean] = js.undefined
     
@@ -77,8 +77,6 @@ object anon {
     var perMessageDeflate: js.UndefOr[Threshold] = js.undefined
     
     var pfx: js.UndefOr[String] = js.undefined
-    
-    var policyPost: js.UndefOr[Double] = js.undefined
     
     var port: js.UndefOr[String | Double] = js.undefined
     
@@ -129,6 +127,10 @@ object anon {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: PartialManagerOptions] (val x: Self) extends AnyVal {
+      
+      inline def setAddTrailingSlash(value: Boolean): Self = StObject.set(x, "addTrailingSlash", value.asInstanceOf[js.Any])
+      
+      inline def setAddTrailingSlashUndefined: Self = StObject.set(x, "addTrailingSlash", js.undefined)
       
       inline def setAgent(value: String | Boolean): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -211,10 +213,6 @@ object anon {
       inline def setPfx(value: String): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
       
       inline def setPfxUndefined: Self = StObject.set(x, "pfx", js.undefined)
-      
-      inline def setPolicyPost(value: Double): Self = StObject.set(x, "policyPost", value.asInstanceOf[js.Any])
-      
-      inline def setPolicyPostUndefined: Self = StObject.set(x, "policyPost", js.undefined)
       
       inline def setPort(value: String | Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
@@ -305,6 +303,10 @@ object anon {
   /* Inlined std.Partial<socket.io-client.socket.io-client/build/esm/manager.ManagerOptions & socket.io-client.socket.io-client/build/esm/socket.SocketOptions> */
   trait PartialManagerOptionsSock extends StObject {
     
+    var ackTimeout: js.UndefOr[Double] = js.undefined
+    
+    var addTrailingSlash: js.UndefOr[Boolean] = js.undefined
+    
     var agent: js.UndefOr[String | Boolean] = js.undefined
     
     var auth: js.UndefOr[
@@ -349,8 +351,6 @@ object anon {
     
     var pfx: js.UndefOr[String] = js.undefined
     
-    var policyPost: js.UndefOr[Double] = js.undefined
-    
     var port: js.UndefOr[String | Double] = js.undefined
     
     var protocols: js.UndefOr[String | js.Array[String]] = js.undefined
@@ -372,6 +372,8 @@ object anon {
     var rememberUpgrade: js.UndefOr[Boolean] = js.undefined
     
     var requestTimeout: js.UndefOr[Double] = js.undefined
+    
+    var retries: js.UndefOr[Double] = js.undefined
     
     var secure: js.UndefOr[Boolean] = js.undefined
     
@@ -400,6 +402,14 @@ object anon {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: PartialManagerOptionsSock] (val x: Self) extends AnyVal {
+      
+      inline def setAckTimeout(value: Double): Self = StObject.set(x, "ackTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setAckTimeoutUndefined: Self = StObject.set(x, "ackTimeout", js.undefined)
+      
+      inline def setAddTrailingSlash(value: Boolean): Self = StObject.set(x, "addTrailingSlash", value.asInstanceOf[js.Any])
+      
+      inline def setAddTrailingSlashUndefined: Self = StObject.set(x, "addTrailingSlash", js.undefined)
       
       inline def setAgent(value: String | Boolean): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -491,10 +501,6 @@ object anon {
       
       inline def setPfxUndefined: Self = StObject.set(x, "pfx", js.undefined)
       
-      inline def setPolicyPost(value: Double): Self = StObject.set(x, "policyPost", value.asInstanceOf[js.Any])
-      
-      inline def setPolicyPostUndefined: Self = StObject.set(x, "policyPost", js.undefined)
-      
       inline def setPort(value: String | Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
       inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
@@ -540,6 +546,10 @@ object anon {
       inline def setRequestTimeout(value: Double): Self = StObject.set(x, "requestTimeout", value.asInstanceOf[js.Any])
       
       inline def setRequestTimeoutUndefined: Self = StObject.set(x, "requestTimeout", js.undefined)
+      
+      inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+      
+      inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
       
       inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       
@@ -641,9 +651,13 @@ object anon {
   /* Inlined std.Partial<socket.io-client.socket.io-client/build/esm/socket.SocketOptions> */
   trait PartialSocketOptions extends StObject {
     
+    var ackTimeout: js.UndefOr[Double] = js.undefined
+    
     var auth: js.UndefOr[
         StringDictionary[Any] | (js.Function1[/* cb */ js.Function1[/* data */ js.Object, Unit], Unit])
       ] = js.undefined
+    
+    var retries: js.UndefOr[Double] = js.undefined
   }
   object PartialSocketOptions {
     
@@ -655,6 +669,10 @@ object anon {
     @scala.inline
     implicit open class MutableBuilder[Self <: PartialSocketOptions] (val x: Self) extends AnyVal {
       
+      inline def setAckTimeout(value: Double): Self = StObject.set(x, "ackTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setAckTimeoutUndefined: Self = StObject.set(x, "ackTimeout", js.undefined)
+      
       inline def setAuth(
         value: StringDictionary[Any] | (js.Function1[/* cb */ js.Function1[/* data */ js.Object, Unit], Unit])
       ): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
@@ -662,6 +680,10 @@ object anon {
       inline def setAuthFunction1(value: /* cb */ js.Function1[/* data */ js.Object, Unit] => Unit): Self = StObject.set(x, "auth", js.Any.fromFunction1(value))
       
       inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+      
+      inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+      
+      inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
     }
   }
 }

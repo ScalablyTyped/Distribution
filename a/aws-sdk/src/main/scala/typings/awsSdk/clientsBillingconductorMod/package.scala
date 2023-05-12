@@ -14,6 +14,8 @@ type AccountEmail = java.lang.String
 
 type AccountId = java.lang.String
 
+type AccountIdFilterList = js.Array[AccountId]
+
 type AccountIdList = js.Array[AccountId]
 
 type AccountName = java.lang.String
@@ -33,6 +35,8 @@ type AssociateResourceErrorReason = _AssociateResourceErrorReason | java.lang.St
 type AssociateResourcesResponseList = js.Array[AssociateResourceResponseElement]
 
 type Association = java.lang.String
+
+type BillingEntity = java.lang.String
 
 type BillingGroupArn = java.lang.String
 
@@ -54,6 +58,8 @@ type BillingGroupName = java.lang.String
   - java.lang.String
 */
 type BillingGroupStatus = _BillingGroupStatus | java.lang.String
+
+type BillingGroupStatusList = js.Array[BillingGroupStatus]
 
 type BillingGroupStatusReason = java.lang.String
 
@@ -140,6 +146,8 @@ type NumberOfAssociations = Double
 
 type NumberOfPricingPlansAssociatedWith = Double
 
+type Operation = java.lang.String
+
 type PricingPlanArn = java.lang.String
 
 type PricingPlanArns = js.Array[PricingPlanArn]
@@ -169,6 +177,8 @@ type PricingRuleName = java.lang.String
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.GLOBAL
   - typings.awsSdk.awsSdkStrings.SERVICE
+  - typings.awsSdk.awsSdkStrings.BILLING_ENTITY
+  - typings.awsSdk.awsSdkStrings.SKU
   - java.lang.String
 */
 type PricingRuleScope = _PricingRuleScope | java.lang.String
@@ -176,6 +186,7 @@ type PricingRuleScope = _PricingRuleScope | java.lang.String
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MARKUP
   - typings.awsSdk.awsSdkStrings.DISCOUNT
+  - typings.awsSdk.awsSdkStrings.TIERING
   - java.lang.String
 */
 type PricingRuleType = _PricingRuleType | java.lang.String
@@ -194,7 +205,11 @@ type TagMap = StringDictionary[TagValue]
 
 type TagValue = java.lang.String
 
+type TieringActivated = Boolean
+
 type Token = java.lang.String
+
+type UsageType = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2021-07-30`

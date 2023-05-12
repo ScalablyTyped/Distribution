@@ -1,11 +1,11 @@
 package typings.slate
 
-import typings.slate.distInterfacesCustomTypesMod.ExtendedType
 import typings.slate.distInterfacesOperationMod.Operation
 import typings.slate.distInterfacesPathMod.Path
 import typings.slate.distInterfacesPointMod.Point
 import typings.slate.distInterfacesPointMod.PointEntry
-import typings.slate.distInterfacesTypesMod.RangeDirection
+import typings.slate.distTypesCustomTypesMod.ExtendedType
+import typings.slate.distTypesTypesMod.RangeDirection
 import typings.std.Generator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -63,16 +63,29 @@ object distInterfacesRangeMod {
   @js.native
   trait RangeInterface extends StObject {
     
+    /**
+      * Get the start and end points of a range, in the order in which they appear
+      * in the document.
+      */
     def edges(range: typings.slate.distInterfacesRangeMod.Range): js.Tuple2[Point, Point] = js.native
     def edges(range: typings.slate.distInterfacesRangeMod.Range, options: RangeEdgesOptions): js.Tuple2[Point, Point] = js.native
     
+    /**
+      * Get the end point of a range.
+      */
     def end(range: typings.slate.distInterfacesRangeMod.Range): Point = js.native
     
+    /**
+      * Check if a range is exactly equal to another.
+      */
     def equals(
       range: typings.slate.distInterfacesRangeMod.Range,
       another: typings.slate.distInterfacesRangeMod.Range
     ): Boolean = js.native
     
+    /**
+      * Check if a range includes a path, a point or part of another range.
+      */
     def includes(range: typings.slate.distInterfacesRangeMod.Range, target: Path): Boolean = js.native
     def includes(range: typings.slate.distInterfacesRangeMod.Range, target: Point): Boolean = js.native
     def includes(
@@ -80,25 +93,58 @@ object distInterfacesRangeMod {
       target: typings.slate.distInterfacesRangeMod.Range
     ): Boolean = js.native
     
+    /**
+      * Get the intersection of a range with another.
+      */
     def intersection(
       range: typings.slate.distInterfacesRangeMod.Range,
       another: typings.slate.distInterfacesRangeMod.Range
     ): typings.slate.distInterfacesRangeMod.Range | Null = js.native
     
+    /**
+      * Check if a range is backward, meaning that its anchor point appears in the
+      * document _after_ its focus point.
+      */
     def isBackward(range: typings.slate.distInterfacesRangeMod.Range): Boolean = js.native
     
+    /**
+      * Check if a range is collapsed, meaning that both its anchor and focus
+      * points refer to the exact same position in the document.
+      */
     def isCollapsed(range: typings.slate.distInterfacesRangeMod.Range): Boolean = js.native
     
+    /**
+      * Check if a range is expanded.
+      *
+      * This is the opposite of [[Range.isCollapsed]] and is provided for legibility.
+      */
     def isExpanded(range: typings.slate.distInterfacesRangeMod.Range): Boolean = js.native
     
+    /**
+      * Check if a range is forward.
+      *
+      * This is the opposite of [[Range.isBackward]] and is provided for legibility.
+      */
     def isForward(range: typings.slate.distInterfacesRangeMod.Range): Boolean = js.native
     
+    /**
+      * Check if a value implements the [[Range]] interface.
+      */
     def isRange(value: Any): /* is slate.slate/dist/interfaces/range.Range */ Boolean = js.native
     
+    /**
+      * Iterate through all of the point entries in a range.
+      */
     def points(range: typings.slate.distInterfacesRangeMod.Range): Generator[PointEntry, Unit, Unit] = js.native
     
+    /**
+      * Get the start point of a range.
+      */
     def start(range: typings.slate.distInterfacesRangeMod.Range): Point = js.native
     
+    /**
+      * Transform a range by an operation.
+      */
     def transform(range: typings.slate.distInterfacesRangeMod.Range, op: Operation): typings.slate.distInterfacesRangeMod.Range | Null = js.native
     def transform(range: typings.slate.distInterfacesRangeMod.Range, op: Operation, options: RangeTransformOptions): typings.slate.distInterfacesRangeMod.Range | Null = js.native
   }

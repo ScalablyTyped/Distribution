@@ -40,7 +40,8 @@ trait ICodeEditor
   
   /**
     * All decorations added through this call will get the ownerId of this editor.
-    * @deprecated
+    * @deprecated Use `createDecorationsCollection`
+    * @see createDecorationsCollection
     */
   def deltaDecorations(oldDecorations: js.Array[String], newDecorations: js.Array[IModelDeltaDecoration]): js.Array[String] = js.native
   
@@ -101,7 +102,7 @@ trait ICodeEditor
     * @id Unique identifier of the contribution.
     * @return The action or null if action not found.
     */
-  def getAction(id: String): IEditorAction = js.native
+  def getAction(id: String): IEditorAction | Null = js.native
   
   /**
     * Get the vertical position (top offset) for the line's bottom w.r.t. to the first line.
@@ -233,6 +234,11 @@ trait ICodeEditor
     * Does not account for horizontal scrolling.
     */
   def getVisibleRanges(): js.Array[Range] = js.native
+  
+  /**
+    * Check if the editor is currently scrolling towards a different scroll position.
+    */
+  def hasPendingScrollAnimation(): Boolean = js.native
   
   /**
     * Returns true if the text inside this editor or an editor widget has focus.
@@ -506,4 +512,9 @@ trait ICodeEditor
     * @see {@link ITextModel.setValue}
     */
   def setValue(newValue: String): Unit = js.native
+  
+  /**
+    * Write the screen reader content to be the current selection
+    */
+  def writeScreenReaderContent(reason: String): Unit = js.native
 }

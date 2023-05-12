@@ -130,7 +130,7 @@ object distSrcUtilMod {
   
   inline def byString(el: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("byString")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def byTag(a: Any, b: Any): `0` | `1` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("byTag")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[`0` | `1` | `-1`]
+  inline def byTag(a: Any, b: Any): `1` | `-1` | `0` = (^.asInstanceOf[js.Dynamic].applyDynamic("byTag")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[`1` | `-1` | `0`]
   
   inline def copy(obj: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
   

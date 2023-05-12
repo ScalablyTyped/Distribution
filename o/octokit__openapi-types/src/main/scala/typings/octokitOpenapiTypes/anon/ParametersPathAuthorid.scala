@@ -8,14 +8,14 @@ trait ParametersPathAuthorid extends StObject {
   
   var parameters: PathAuthorid
   
-  var requestBody: ContentApplicationjson251
+  var requestBody: js.UndefOr[ContentApplicationjson264] = js.undefined
   
-  var responses: `200Content250`
+  var responses: `200404422503`
 }
 object ParametersPathAuthorid {
   
-  inline def apply(parameters: PathAuthorid, requestBody: ContentApplicationjson251, responses: `200Content250`): ParametersPathAuthorid = {
-    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
+  inline def apply(parameters: PathAuthorid, responses: `200404422503`): ParametersPathAuthorid = {
+    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathAuthorid]
   }
   
@@ -24,8 +24,10 @@ object ParametersPathAuthorid {
     
     inline def setParameters(value: PathAuthorid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setRequestBody(value: ContentApplicationjson251): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: ContentApplicationjson264): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content250`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    
+    inline def setResponses(value: `200404422503`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

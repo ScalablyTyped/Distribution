@@ -12,7 +12,7 @@ trait ResultConfigurationUpdates extends StObject {
   var AclConfiguration: js.UndefOr[typings.awsSdk.clientsAthenaMod.AclConfiguration] = js.undefined
   
   /**
-    * The encryption configuration for the query results.
+    * The encryption configuration for query and calculation results.
     */
   var EncryptionConfiguration: js.UndefOr[typings.awsSdk.clientsAthenaMod.EncryptionConfiguration] = js.undefined
   
@@ -22,7 +22,7 @@ trait ResultConfigurationUpdates extends StObject {
   var ExpectedBucketOwner: js.UndefOr[AwsAccountId] = js.undefined
   
   /**
-    * The location in Amazon S3 where your query results are stored, such as s3://path/to/query/bucket/. For more information, see Query Results If workgroup settings override client-side settings, then the query uses the location for the query results and the encryption configuration that are specified for the workgroup. The "workgroup settings override" is specified in EnforceWorkGroupConfiguration (true/false) in the WorkGroupConfiguration. See WorkGroupConfiguration$EnforceWorkGroupConfiguration.
+    * The location in Amazon S3 where your query and calculation results are stored, such as s3://path/to/query/bucket/. For more information, see Working with query results, recent queries, and output files. If workgroup settings override client-side settings, then the query uses the location for the query results and the encryption configuration that are specified for the workgroup. The "workgroup settings override" is specified in EnforceWorkGroupConfiguration (true/false) in the WorkGroupConfiguration. See WorkGroupConfiguration$EnforceWorkGroupConfiguration.
     */
   var OutputLocation: js.UndefOr[ResultOutputLocation] = js.undefined
   

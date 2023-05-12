@@ -12,7 +12,7 @@ trait EngineVersion extends StObject {
   var EffectiveEngineVersion: js.UndefOr[NameString] = js.undefined
   
   /**
-    * The engine version requested by the user. Possible values are determined by the output of ListEngineVersions, including Auto. The default is Auto.
+    * The engine version requested by the user. Possible values are determined by the output of ListEngineVersions, including AUTO. The default is AUTO.
     */
   var SelectedEngineVersion: js.UndefOr[NameString] = js.undefined
 }

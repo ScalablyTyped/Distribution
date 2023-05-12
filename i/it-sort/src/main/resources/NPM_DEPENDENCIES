@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "it-sort" : "2.0.0"
+      "it-sort" : "3.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "it-sort" : "2.0.0"
+      "it-sort" : "3.0.2"
     }
   ],
   "compile-devDependencies" : [

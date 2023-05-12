@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FirestoreSettings extends StObject {
   
   /**
+    * NOTE: This field will be deprecated in a future major release. Use `cache` field
+    * instead to specify cache size, and other cache configurations.
+    *
     * An approximate cache size threshold for the on-disk data. If the cache
     * grows beyond this size, Firestore will start removing data that hasn't been
     * recently used. The size is not a guarantee that the cache will stay below
@@ -58,6 +61,18 @@ trait FirestoreSettings extends StObject {
   var ignoreUndefinedProperties: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the cache used by the SDK. Available options are `MemoryLocalCache`
+    * and `IndexedDbLocalCache`, each with different configuration options.
+    *
+    * When unspecified, `MemoryLocalCache` will be used by default.
+    *
+    * NOTE: setting this field and `cacheSizeBytes` at the same time will throw
+    * exception during SDK initialization. Instead, using the configuration in
+    * the `FirestoreLocalCache` object to specify the cache size.
+    */
+  var localCache: js.UndefOr[FirestoreLocalCache] = js.undefined
+  
+  /**
     * Whether to use SSL when connecting.
     */
   var ssl: js.UndefOr[Boolean] = js.undefined
@@ -91,6 +106,10 @@ object FirestoreSettings {
     inline def setIgnoreUndefinedProperties(value: Boolean): Self = StObject.set(x, "ignoreUndefinedProperties", value.asInstanceOf[js.Any])
     
     inline def setIgnoreUndefinedPropertiesUndefined: Self = StObject.set(x, "ignoreUndefinedProperties", js.undefined)
+    
+    inline def setLocalCache(value: FirestoreLocalCache): Self = StObject.set(x, "localCache", value.asInstanceOf[js.Any])
+    
+    inline def setLocalCacheUndefined: Self = StObject.set(x, "localCache", js.undefined)
     
     inline def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
     

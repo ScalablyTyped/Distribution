@@ -15,7 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ColumnDescription[T /* <: js.Object */, E] extends StObject {
   
-  var align: js.UndefOr[CellAlignment] = js.undefined
+  var align: js.UndefOr[
+    CellAlignment | (js.Function4[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* cell */ js.Any, 
+      /* row */ T, 
+      /* rowIndex */ Double, 
+      /* colIndex */ Double, 
+      CellAlignment
+    ])
+  ] = js.undefined
   
   var classes: js.UndefOr[
     String | (js.Function4[
@@ -167,7 +175,19 @@ object ColumnDescription {
   @scala.inline
   implicit open class MutableBuilder[Self <: ColumnDescription[?, ?], T /* <: js.Object */, E] (val x: Self & (ColumnDescription[T, E])) extends AnyVal {
     
-    inline def setAlign(value: CellAlignment): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(
+      value: CellAlignment | (js.Function4[
+          /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* cell */ js.Any, 
+          /* row */ T, 
+          /* rowIndex */ Double, 
+          /* colIndex */ Double, 
+          CellAlignment
+        ])
+    ): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    
+    inline def setAlignFunction4(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* cell */ js.Any, /* row */ T, /* rowIndex */ Double, /* colIndex */ Double) => CellAlignment
+    ): Self = StObject.set(x, "align", js.Any.fromFunction4(value))
     
     inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     

@@ -70,6 +70,9 @@ object messages {
     @JSName("o:deliverytime")
     var oColondeliverytime: js.UndefOr[String] = js.undefined
     
+    @JSName("o:deliverytime-optimize-period")
+    var `oColondeliverytime-optimize-period`: js.UndefOr[String] = js.undefined
+    
     @JSName("o:dkim")
     var oColondkim: js.UndefOr[yes | no | Boolean] = js.undefined
     
@@ -164,6 +167,10 @@ object messages {
       inline def setInlineVarargs(value: AttachmentData*): Self = StObject.set(x, "inline", js.Array(value*))
       
       inline def setOColondeliverytime(value: String): Self = StObject.set(x, "o:deliverytime", value.asInstanceOf[js.Any])
+      
+      inline def `setOColondeliverytime-optimize-period`(value: String): Self = StObject.set(x, "o:deliverytime-optimize-period", value.asInstanceOf[js.Any])
+      
+      inline def `setOColondeliverytime-optimize-periodUndefined`: Self = StObject.set(x, "o:deliverytime-optimize-period", js.undefined)
       
       inline def setOColondeliverytimeUndefined: Self = StObject.set(x, "o:deliverytime", js.undefined)
       

@@ -11,8 +11,8 @@ trait OutputFile extends StObject {
   
   var path: String
   
-  /** "contents" as text */
-  var text: String
+  /** "contents" as text (changes automatically with "contents") */
+  val text: String
 }
 object OutputFile {
   

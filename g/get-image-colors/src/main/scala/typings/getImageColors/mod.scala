@@ -10,13 +10,19 @@ object mod {
   
   inline def apply(input: String): js.Promise[js.Array[Color]] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Color]]]
   inline def apply(input: String, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(input: String, options: Options): js.Promise[js.Array[Color]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Color]]]
+  inline def apply(input: String, typeOrOptions: String): js.Promise[js.Array[Color]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], typeOrOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Color]]]
+  inline def apply(input: String, typeOrOptions: String, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], typeOrOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(input: String, typeOrOptions: Options): js.Promise[js.Array[Color]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], typeOrOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Color]]]
+  inline def apply(input: String, typeOrOptions: Options, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], typeOrOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(input: Buffer): js.Promise[js.Array[Color]] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Color]]]
+  inline def apply(input: Buffer, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(input: Buffer, typeOrOptions: String): js.Promise[js.Array[Color]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], typeOrOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Color]]]
   /**
     * Extract colors from images. Supports GIF, JPG, PNG, and even SVG!
     */
-  inline def apply(input: Buffer, options: Options, callback: js.Array[Color]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(input: Buffer, `type`: String): js.Promise[js.Array[Color]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Color]]]
-  inline def apply(input: Buffer, `type`: String, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(input: Buffer, typeOrOptions: String, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], typeOrOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(input: Buffer, typeOrOptions: Options): js.Promise[js.Array[Color]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], typeOrOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Color]]]
+  inline def apply(input: Buffer, typeOrOptions: Options, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], typeOrOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("get-image-colors", JSImport.Namespace)
   @js.native

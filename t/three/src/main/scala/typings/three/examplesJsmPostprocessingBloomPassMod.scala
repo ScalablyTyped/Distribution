@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.examplesJsmPostprocessingPassMod.FullScreenQuad
 import typings.three.examplesJsmPostprocessingPassMod.Pass
 import typings.three.srcThreeMod.ShaderMaterial
 import typings.three.srcThreeMod.WebGLRenderTarget
@@ -24,7 +25,7 @@ object examplesJsmPostprocessingBloomPassMod {
     
     var copyUniforms: js.Object = js.native
     
-    var fsQuad: js.Object = js.native
+    var fsQuad: FullScreenQuad = js.native
     
     var materialConvolution: ShaderMaterial = js.native
     

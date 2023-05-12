@@ -1,8 +1,8 @@
 package typings.pixiCore
 
+import typings.pixiCore.libTexturesBaseTextureMod.BaseTexture
 import typings.pixiCore.libTexturesResourcesAutoDetectResourceMod.IAutoDetectOptions
 import typings.pixiCore.libTexturesResourcesResourceMod.Resource
-import typings.pixiCore.mod.BaseTexture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

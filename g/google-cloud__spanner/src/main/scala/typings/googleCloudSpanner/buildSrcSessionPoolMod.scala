@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.googleCloudSpanner.buildSrcCommonMod.NormalCallback
 import typings.googleCloudSpanner.buildSrcDatabaseMod.Database
 import typings.googleCloudSpanner.buildSrcSessionMod.Session
-import typings.googleCloudSpanner.buildSrcSessionMod.types
 import typings.googleCloudSpanner.buildSrcTransactionMod.Transaction
 import typings.googleGax.mod.GoogleError
 import typings.grpcGrpcJs.buildSrcCallMod.ServiceError
@@ -57,10 +56,9 @@ object buildSrcSessionPoolMod {
       *
       * @private
       *
-      * @param {string} type The desired type to borrow.
       * @returns {Promise<Session>}
       */
-    def _acquire(`type`: types): js.Promise[Session] = js.native
+    def _acquire(): js.Promise[Session] = js.native
     
     var _acquires: typings.pQueue.mod.default[default, QueueAddOptions] = js.native
     
@@ -74,46 +72,42 @@ object buildSrcSessionPoolMod {
     def _borrow(session: Session): Unit = js.native
     
     /**
-      * Borrows the first session from specific group. This method may only be called if the inventory
-      * actually contains a session of the desired type.
+      * Borrows the first session from the inventory.
       *
       * @private
       *
-      * @param {string} type The desired session type.
       * @return {Session}
       */
-    def _borrowFrom(`type`: types): Session = js.native
+    def _borrowFrom(): Session = js.native
     
     /**
       * Grabs the next available session.
       *
       * @private
       *
-      * @param {string} type The desired session type.
       * @returns {Promise<Session>}
       */
-    def _borrowNextAvailableSession(`type`: types): Session = js.native
+    def _borrowNextAvailableSession(): Session = js.native
     
     /**
-      * Attempts to create a single session of a certain type.
+      * Attempts to create a single session.
       *
       * @private
       *
-      * @param {string} type The desired type to create.
       * @returns {Promise}
       */
-    def _createSession(`type`: types): js.Promise[Unit] = js.native
+    def _createSession(): js.Promise[Unit] = js.native
     
     /**
-      * Batch creates sessions and prepares any necessary transactions.
+      * Batch creates sessions.
       *
       * @private
       *
-      * @param {object} [options] Config specifying how many sessions to create.
+      * @param {number} [amount] Config specifying how many sessions to create.
       * @returns {Promise}
       * @emits SessionPool#createError
       */
-    def _createSessions(param0: CreateSessionsOptions): js.Promise[Unit] = js.native
+    def _createSessions(amount: Double): js.Promise[Unit] = js.native
     
     /**
       * Attempts to delete a session, optionally creating a new one of the same
@@ -160,27 +154,20 @@ object buildSrcSessionPoolMod {
     def _getLeaks(): js.Array[String] = js.native
     
     /**
-      * Attempts to get a session of a specific type. If the type is unavailable it
-      * may try to use a different type.
+      * Attempts to get a session.
       *
       * @private
       *
-      * @param {string} type The desired session type.
       * @param {number} startTime Timestamp to use when determining timeouts.
       * @returns {Promise<Session>}
       */
-    def _getSession(`type`: types, startTime: Double): js.Promise[Session] = js.native
+    def _getSession(startTime: Double): js.Promise[Session] = js.native
     
     /**
-      * Returns true if the pool has a session that is usable for the specified
-      * type, i.e. if a read-only session is requested, it returns true if the
-      * pool has a read-only or a read/write session. If a read/write session is
-      * requested, the method only returns true if the pool has a read/write
-      * session available.
-      * @param type The type of session.
+      * Returns true if the pool has a usable session.
       * @private
       */
-    def _hasSessionUsableFor(`type`: types): Boolean = js.native
+    def _hasSessionUsableFor(): Boolean = js.native
     
     var _inventory: SessionInventory = js.native
     
@@ -192,13 +179,9 @@ object buildSrcSessionPoolMod {
       */
     def _isValidSession(session: Session): Boolean = js.native
     
-    var _numInProcessPrepare: Double = js.native
-    
     var _onClose: js.Promise[Unit] = js.native
     
     var _pending: Double = js.native
-    
-    var _pendingPrepare: Double = js.native
     
     /**
       * Pings an individual session.
@@ -228,9 +211,8 @@ object buildSrcSessionPoolMod {
       *
       * @param {Session} session The session object.
       * @param {object} options The transaction options.
-      * @returns {Promise}
       */
-    def _prepareTransaction(session: Session): js.Promise[Unit] = js.native
+    def _prepareTransaction(session: Session): Unit = js.native
     
     /**
       * Releases a session back into the pool.
@@ -238,8 +220,9 @@ object buildSrcSessionPoolMod {
       * @private
       *
       * @fires SessionPool#available
-      * @fires SessionPool#readonly-available
-      * @fires SessionPool#readwrite-available
+      * @fires SessionPool#session-available
+      * @fires @deprecated SessionPool#readonly-available
+      * @fires @deprecated SessionPool#readwrite-available
       * @param {Session} session The session object.
       */
     def _release(session: Session): Unit = js.native
@@ -262,7 +245,7 @@ object buildSrcSessionPoolMod {
     
     var _traces: Map[String, js.Array[StackFrame]] = js.native
     
-    var _waiters: Waiters = js.native
+    var _waiters: Double = js.native
     
     /**
       * Total number of available sessions.
@@ -276,9 +259,8 @@ object buildSrcSessionPoolMod {
       */
     def borrowed: Double = js.native
     
-    /**
-      * Current fraction of write-prepared sessions in the pool.
-      * @type {number}
+    /** @deprecated Starting from v6.5.0 the same session can be reused for
+      * different types of transactions.
       */
     def currentWriteFraction: Double = js.native
     
@@ -292,33 +274,18 @@ object buildSrcSessionPoolMod {
     
     var isOpen: Boolean = js.native
     
-    /**
-      * Current number of waiters for a read-only session.
-      * @type {number}
-      */
+    /** @deprecated Use totalWaiters instead. */
     def numReadWaiters: Double = js.native
     
-    /**
-      * Current number of waiters for a read/write session.
-      * @type {number}
-      */
+    /** @deprecated Use totalWaiters instead. */
     def numWriteWaiters: Double = js.native
     
     var options: SessionPoolOptions = js.native
     
-    /**
-      * Number of sessions currently being prepared for a read/write transaction
-      * before being released into the pool. This number does not include the
-      * number of sessions being prepared for a read/write transaction that have
-      * already been checked out of the pool.
-      * @type {number}
-      */
+    /** @deprecated Starting v6.5.0 the pending prepare state is obsolete. */
     def pendingPrepare: Double = js.native
     
-    /**
-      * Total number of read sessions.
-      * @type {number}
-      */
+    /** @deprecated Use `size()` instead. */
     def reads: Double = js.native
     
     /**
@@ -339,10 +306,7 @@ object buildSrcSessionPoolMod {
       */
     def totalWaiters: Double = js.native
     
-    /**
-      * Total number of write sessions.
-      * @type {number}
-      */
+    /** @deprecated Use `size()` instead. */
     def writes: Double = js.native
   }
   /* static members */
@@ -415,6 +379,13 @@ object buildSrcSessionPoolMod {
   
   type GetReadSessionCallback = NormalCallback[Session]
   
+  type GetSessionCallback = js.Function3[
+    /* err */ js.Error | Null, 
+    /* session */ js.UndefOr[Session | Null], 
+    /* transaction */ js.UndefOr[Transaction | Null], 
+    Unit
+  ]
+  
   type GetWriteSessionCallback = js.Function3[
     /* err */ js.Error | Null, 
     /* session */ js.UndefOr[Session | Null], 
@@ -422,10 +393,28 @@ object buildSrcSessionPoolMod {
     Unit
   ]
   
-  @js.native
   trait SessionInventory extends StObject {
     
-    var borrowed: Set[Session] = js.native
+    var borrowed: Set[Session]
+    
+    var sessions: js.Array[Session]
+  }
+  object SessionInventory {
+    
+    inline def apply(borrowed: Set[Session], sessions: js.Array[Session]): SessionInventory = {
+      val __obj = js.Dynamic.literal(borrowed = borrowed.asInstanceOf[js.Any], sessions = sessions.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SessionInventory]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionInventory] (val x: Self) extends AnyVal {
+      
+      inline def setBorrowed(value: Set[Session]): Self = StObject.set(x, "borrowed", value.asInstanceOf[js.Any])
+      
+      inline def setSessions(value: js.Array[Session]): Self = StObject.set(x, "sessions", value.asInstanceOf[js.Any])
+      
+      inline def setSessionsVarargs(value: Session*): Self = StObject.set(x, "sessions", js.Array(value*))
+    }
   }
   
   type SessionPoolCloseCallback = js.Function1[/* error */ js.UndefOr[SessionLeakError], Unit]
@@ -447,14 +436,22 @@ object buildSrcSessionPoolMod {
       * @name SessionPoolInterface#open
       */
     /**
-      * When called returns a read-only session.
+      * When called returns a session.
       *
+      * @name SessionPoolInterface#getSession
+      * @param {GetSessionCallback} callback The callback function.
+      */
+    /**
+      * When called returns a session.
+      *
+      * @deprecated Use getSession instead.
       * @name SessionPoolInterface#getReadSession
       * @param {GetReadSessionCallback} callback The callback function.
       */
     /**
-      * When called returns a read-write session with prepared transaction.
+      * When called returns a session.
       *
+      * @deprecated Use getSession instead.
       * @name SessionPoolInterface#getWriteSession
       * @param {GetWriteSessionCallback} callback The callback function.
       */
@@ -468,6 +465,8 @@ object buildSrcSessionPoolMod {
     
     def getReadSession(callback: GetReadSessionCallback): Unit = js.native
     
+    def getSession(callback: GetSessionCallback): Unit = js.native
+    
     def getWriteSession(callback: GetWriteSessionCallback): Unit = js.native
     
     def open(): Unit = js.native
@@ -480,6 +479,8 @@ object buildSrcSessionPoolMod {
     var acquireTimeout: js.UndefOr[Double] = js.undefined
     
     var concurrency: js.UndefOr[Double] = js.undefined
+    
+    var databaseRole: js.UndefOr[String | Null] = js.undefined
     
     var fail: js.UndefOr[Boolean] = js.undefined
     
@@ -497,6 +498,10 @@ object buildSrcSessionPoolMod {
     
     var min: js.UndefOr[Double] = js.undefined
     
+    /**
+      * @deprecated. Starting from v6.5.0 the same session can be reused for
+      * different types of transactions.
+      */
     var writes: js.UndefOr[Double] = js.undefined
   }
   object SessionPoolOptions {
@@ -516,6 +521,12 @@ object buildSrcSessionPoolMod {
       inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       
       inline def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
+      
+      inline def setDatabaseRole(value: String): Self = StObject.set(x, "databaseRole", value.asInstanceOf[js.Any])
+      
+      inline def setDatabaseRoleNull: Self = StObject.set(x, "databaseRole", null)
+      
+      inline def setDatabaseRoleUndefined: Self = StObject.set(x, "databaseRole", js.undefined)
       
       inline def setFail(value: Boolean): Self = StObject.set(x, "fail", value.asInstanceOf[js.Any])
       
@@ -554,7 +565,4 @@ object buildSrcSessionPoolMod {
       inline def setWritesUndefined: Self = StObject.set(x, "writes", js.undefined)
     }
   }
-  
-  @js.native
-  trait Waiters extends StObject
 }

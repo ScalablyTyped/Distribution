@@ -42,6 +42,11 @@ trait Workspace extends StObject {
   var ModificationStates: js.UndefOr[ModificationStateList] = js.undefined
   
   /**
+    * The standby WorkSpace or primary WorkSpace related to the specified WorkSpace.
+    */
+  var RelatedWorkspaces: js.UndefOr[typings.awsSdk.clientsWorkspacesMod.RelatedWorkspaces] = js.undefined
+  
+  /**
     * Indicates whether the data stored on the root volume is encrypted.
     */
   var RootVolumeEncryptionEnabled: js.UndefOr[BooleanObject] = js.undefined
@@ -120,6 +125,12 @@ object Workspace {
     inline def setModificationStatesUndefined: Self = StObject.set(x, "ModificationStates", js.undefined)
     
     inline def setModificationStatesVarargs(value: ModificationState*): Self = StObject.set(x, "ModificationStates", js.Array(value*))
+    
+    inline def setRelatedWorkspaces(value: RelatedWorkspaces): Self = StObject.set(x, "RelatedWorkspaces", value.asInstanceOf[js.Any])
+    
+    inline def setRelatedWorkspacesUndefined: Self = StObject.set(x, "RelatedWorkspaces", js.undefined)
+    
+    inline def setRelatedWorkspacesVarargs(value: RelatedWorkspaceProperties*): Self = StObject.set(x, "RelatedWorkspaces", js.Array(value*))
     
     inline def setRootVolumeEncryptionEnabled(value: BooleanObject): Self = StObject.set(x, "RootVolumeEncryptionEnabled", value.asInstanceOf[js.Any])
     

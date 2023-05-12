@@ -21,7 +21,14 @@ object mod {
   val equals_ : EqualsFunction = js.native
   
   inline def getObjectSubset(`object`: Any, subset: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getObjectSubset")(`object`.asInstanceOf[js.Any], subset.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def getObjectSubset(`object`: Any, subset: Any, seenReferences: WeakMap[js.Object, Boolean]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getObjectSubset")(`object`.asInstanceOf[js.Any], subset.asInstanceOf[js.Any], seenReferences.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def getObjectSubset(`object`: Any, subset: Any, customTesters: js.Array[Tester]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getObjectSubset")(`object`.asInstanceOf[js.Any], subset.asInstanceOf[js.Any], customTesters.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def getObjectSubset(
+    `object`: Any,
+    subset: Any,
+    customTesters: js.Array[Tester],
+    seenReferences: WeakMap[js.Object, Boolean]
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getObjectSubset")(`object`.asInstanceOf[js.Any], subset.asInstanceOf[js.Any], customTesters.asInstanceOf[js.Any], seenReferences.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def getObjectSubset(`object`: Any, subset: Any, customTesters: Unit, seenReferences: WeakMap[js.Object, Boolean]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getObjectSubset")(`object`.asInstanceOf[js.Any], subset.asInstanceOf[js.Any], customTesters.asInstanceOf[js.Any], seenReferences.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def getPath(`object`: Record[String, Any], propertyPath: String): GetPath_ = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(`object`.asInstanceOf[js.Any], propertyPath.asInstanceOf[js.Any])).asInstanceOf[GetPath_]
   inline def getPath(`object`: Record[String, Any], propertyPath: js.Array[String]): GetPath_ = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(`object`.asInstanceOf[js.Any], propertyPath.asInstanceOf[js.Any])).asInstanceOf[GetPath_]
@@ -33,17 +40,23 @@ object mod {
   inline def isOneline(expected: Any, received: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isOneline")(expected.asInstanceOf[js.Any], received.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def iterableEquality(a: Any, b: Any): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterableEquality")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
-  inline def iterableEquality(a: Any, b: Any, aStack: js.Array[Any]): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterableEquality")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], aStack.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
-  inline def iterableEquality(a: Any, b: Any, aStack: js.Array[Any], bStack: js.Array[Any]): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterableEquality")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], aStack.asInstanceOf[js.Any], bStack.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
-  inline def iterableEquality(a: Any, b: Any, aStack: Unit, bStack: js.Array[Any]): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterableEquality")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], aStack.asInstanceOf[js.Any], bStack.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
+  inline def iterableEquality(a: Any, b: Any, customTesters: js.Array[Tester]): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterableEquality")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], customTesters.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
+  inline def iterableEquality(a: Any, b: Any, customTesters: js.Array[Tester], aStack: js.Array[Any]): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterableEquality")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], customTesters.asInstanceOf[js.Any], aStack.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
+  inline def iterableEquality(a: Any, b: Any, customTesters: js.Array[Tester], aStack: js.Array[Any], bStack: js.Array[Any]): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterableEquality")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], customTesters.asInstanceOf[js.Any], aStack.asInstanceOf[js.Any], bStack.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
+  inline def iterableEquality(a: Any, b: Any, customTesters: js.Array[Tester], aStack: Unit, bStack: js.Array[Any]): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterableEquality")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], customTesters.asInstanceOf[js.Any], aStack.asInstanceOf[js.Any], bStack.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
+  inline def iterableEquality(a: Any, b: Any, customTesters: Unit, aStack: js.Array[Any]): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterableEquality")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], customTesters.asInstanceOf[js.Any], aStack.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
+  inline def iterableEquality(a: Any, b: Any, customTesters: Unit, aStack: js.Array[Any], bStack: js.Array[Any]): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterableEquality")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], customTesters.asInstanceOf[js.Any], aStack.asInstanceOf[js.Any], bStack.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
+  inline def iterableEquality(a: Any, b: Any, customTesters: Unit, aStack: Unit, bStack: js.Array[Any]): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterableEquality")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], customTesters.asInstanceOf[js.Any], aStack.asInstanceOf[js.Any], bStack.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
   
   inline def partition[T](items: js.Array[T], predicate: js.Function1[/* arg */ T, Boolean]): js.Tuple2[js.Array[T], js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("partition")(items.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[T], js.Array[T]]]
   
   inline def pathAsArray(propertyPath: String): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("pathAsArray")(propertyPath.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
   
   inline def sparseArrayEquality(a: Any, b: Any): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseArrayEquality")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
+  inline def sparseArrayEquality(a: Any, b: Any, customTesters: js.Array[Tester]): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseArrayEquality")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], customTesters.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
   
   inline def subsetEquality(`object`: Any, subset: Any): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("subsetEquality")(`object`.asInstanceOf[js.Any], subset.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
+  inline def subsetEquality(`object`: Any, subset: Any, customTesters: js.Array[Tester]): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("subsetEquality")(`object`.asInstanceOf[js.Any], subset.asInstanceOf[js.Any], customTesters.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
   
   inline def typeEquality(a: Any, b: Any): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("typeEquality")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
   
@@ -55,13 +68,6 @@ object mod {
     Boolean
   ]
   
-  /**
-    * Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved.
-    *
-    * This source code is licensed under the MIT license found in the
-    * LICENSE file in the root directory of this source tree.
-    *
-    */
   trait GetPath_ extends StObject {
     
     var endPropIsDefined: js.UndefOr[Boolean] = js.undefined
@@ -104,5 +110,46 @@ object mod {
     }
   }
   
-  type Tester = js.Function2[/* a */ Any, /* b */ Any, js.UndefOr[Boolean]]
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Tester = (this : @jest/expect-utils.@jest/expect-utils.TesterContext, a : any, b : any, customTesters : std.Array<@jest/expect-utils.@jest/expect-utils.Tester>): boolean | undefined
+  }}}
+  to avoid circular code involving: 
+  - @jest/expect-utils.@jest/expect-utils.EqualsFunction
+  - @jest/expect-utils.@jest/expect-utils.Tester
+  */
+  @js.native
+  trait Tester extends StObject {
+    
+    def apply(a: Any, b: Any, customTesters: js.Array[Tester]): js.UndefOr[Boolean] = js.native
+  }
+  
+  trait TesterContext extends StObject {
+    
+    def equals(a: Any, b: Any): Boolean
+    def equals(a: Any, b: Any, customTesters: js.Array[Tester]): Boolean
+    def equals(a: Any, b: Any, customTesters: js.Array[Tester], strictCheck: Boolean): Boolean
+    def equals(a: Any, b: Any, customTesters: Unit, strictCheck: Boolean): Boolean
+    @JSName("equals")
+    var equals_Original: EqualsFunction
+  }
+  object TesterContext {
+    
+    inline def apply(
+      equals_ : (/* a */ Any, /* b */ Any, /* customTesters */ js.UndefOr[js.Array[Tester]], /* strictCheck */ js.UndefOr[Boolean]) => Boolean
+    ): TesterContext = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("equals")(js.Any.fromFunction4(equals_))
+      __obj.asInstanceOf[TesterContext]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TesterContext] (val x: Self) extends AnyVal {
+      
+      inline def setEquals_(
+        value: (/* a */ Any, /* b */ Any, /* customTesters */ js.UndefOr[js.Array[Tester]], /* strictCheck */ js.UndefOr[Boolean]) => Boolean
+      ): Self = StObject.set(x, "equals", js.Any.fromFunction4(value))
+    }
+  }
 }

@@ -20,6 +20,12 @@ object jestTestResultStrings {
   inline def failed: failed = "failed".asInstanceOf[failed]
   
   @js.native
+  sealed trait focused
+    extends StObject
+       with Status
+  inline def focused: focused = "focused".asInstanceOf[focused]
+  
+  @js.native
   sealed trait passed
     extends StObject
        with Status

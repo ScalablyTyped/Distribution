@@ -22,5 +22,5 @@ object mod {
   inline def unpackFrom(format: String, data: Buffer, checkBounds: Boolean, position: Double): DataType = (^.asInstanceOf[js.Dynamic].applyDynamic("unpackFrom")(format.asInstanceOf[js.Any], data.asInstanceOf[js.Any], checkBounds.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[DataType]
   inline def unpackFrom(format: String, data: Buffer, checkBounds: Unit, position: Double): DataType = (^.asInstanceOf[js.Dynamic].applyDynamic("unpackFrom")(format.asInstanceOf[js.Any], data.asInstanceOf[js.Any], checkBounds.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[DataType]
   
-  type DataType = Double | typings.long.mod.^ | String | Boolean
+  type DataType = Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any) | String | Boolean
 }

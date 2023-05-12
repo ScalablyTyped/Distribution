@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.PaddingBottom
+import typings.csstype.mod.Property.Overflow
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `399` extends StObject {
   
   var value: js.UndefOr[
-    (PaddingBottom[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (PaddingBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingBottom[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[PaddingBottom[Double | String]]])
+    Overflow | (js.Array[
+      (Extract[js.UndefOr[Overflow | js.Array[NonNullable[js.UndefOr[Overflow]]]], String]) | NonNullable[js.UndefOr[Overflow]]
     ])
   ] = js.native
 }

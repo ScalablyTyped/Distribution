@@ -57,6 +57,13 @@ object mod {
   
   inline def AsnChoiceType(): AsnTypeDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("AsnChoiceType")().asInstanceOf[AsnTypeDecorator]
   
+  @JSImport("@peculiar/asn1-schema", "AsnConstructedOctetStringConverter")
+  @js.native
+  val AsnConstructedOctetStringConverter: IAsnConverter[
+    typings.peculiarAsn1Schema.buildTypesTypesIndexMod.OctetString, 
+    typings.asn1js.mod.OctetString
+  ] = js.native
+  
   @JSImport("@peculiar/asn1-schema", "AsnConvert")
   @js.native
   open class AsnConvert ()

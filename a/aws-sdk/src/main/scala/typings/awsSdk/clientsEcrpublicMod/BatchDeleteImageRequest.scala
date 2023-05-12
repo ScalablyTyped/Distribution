@@ -12,9 +12,9 @@ trait BatchDeleteImageRequest extends StObject {
   var imageIds: ImageIdentifierList
   
   /**
-    * The AWS account ID associated with the registry that contains the image to delete. If you do not specify a registry, the default public registry is assumed.
+    * The Amazon Web Services account ID, or registry alias, that's associated with the registry that contains the image to delete. If you do not specify a registry, the default public registry is assumed.
     */
-  var registryId: js.UndefOr[RegistryId] = js.undefined
+  var registryId: js.UndefOr[RegistryIdOrAlias] = js.undefined
   
   /**
     * The repository in a public registry that contains the image to delete.
@@ -35,7 +35,7 @@ object BatchDeleteImageRequest {
     
     inline def setImageIdsVarargs(value: ImageIdentifier*): Self = StObject.set(x, "imageIds", js.Array(value*))
     
-    inline def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
+    inline def setRegistryId(value: RegistryIdOrAlias): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     
     inline def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
     

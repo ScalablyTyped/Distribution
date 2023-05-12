@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ContentTypeProfiles extends StObject {
   
   /**
-    * Items in a field-level encryption content type-profile mapping. 
+    * Items in a field-level encryption content type-profile mapping.
     */
   var Items: js.UndefOr[ContentTypeProfileList] = js.undefined
   
   /**
-    * The number of field-level encryption content type-profile mappings. 
+    * The number of field-level encryption content type-profile mappings.
     */
   var Quantity: integer
 }

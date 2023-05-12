@@ -16,11 +16,13 @@ trait TypeofPaymentMethodOptionAcssDebit extends StObject {
   
   val CustomerBalance: TypeofCustomerBalanceBankTransfer
   
+  val Klarna: Any
+  
+  val Link: Any
+  
   val SepaDebit: Any
   
   val UsBankAccount: TypeofUsBankAccount
-  
-  val WechatPay: Any
 }
 object TypeofPaymentMethodOptionAcssDebit {
   
@@ -30,11 +32,12 @@ object TypeofPaymentMethodOptionAcssDebit {
     Boleto: Any,
     Card: Any,
     CustomerBalance: TypeofCustomerBalanceBankTransfer,
+    Klarna: Any,
+    Link: Any,
     SepaDebit: Any,
-    UsBankAccount: TypeofUsBankAccount,
-    WechatPay: Any
+    UsBankAccount: TypeofUsBankAccount
   ): TypeofPaymentMethodOptionAcssDebit = {
-    val __obj = js.Dynamic.literal(AcssDebit = AcssDebit.asInstanceOf[js.Any], BacsDebit = BacsDebit.asInstanceOf[js.Any], Boleto = Boleto.asInstanceOf[js.Any], Card = Card.asInstanceOf[js.Any], CustomerBalance = CustomerBalance.asInstanceOf[js.Any], SepaDebit = SepaDebit.asInstanceOf[js.Any], UsBankAccount = UsBankAccount.asInstanceOf[js.Any], WechatPay = WechatPay.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AcssDebit = AcssDebit.asInstanceOf[js.Any], BacsDebit = BacsDebit.asInstanceOf[js.Any], Boleto = Boleto.asInstanceOf[js.Any], Card = Card.asInstanceOf[js.Any], CustomerBalance = CustomerBalance.asInstanceOf[js.Any], Klarna = Klarna.asInstanceOf[js.Any], Link = Link.asInstanceOf[js.Any], SepaDebit = SepaDebit.asInstanceOf[js.Any], UsBankAccount = UsBankAccount.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofPaymentMethodOptionAcssDebit]
   }
   
@@ -51,10 +54,12 @@ object TypeofPaymentMethodOptionAcssDebit {
     
     inline def setCustomerBalance(value: TypeofCustomerBalanceBankTransfer): Self = StObject.set(x, "CustomerBalance", value.asInstanceOf[js.Any])
     
+    inline def setKlarna(value: Any): Self = StObject.set(x, "Klarna", value.asInstanceOf[js.Any])
+    
+    inline def setLink(value: Any): Self = StObject.set(x, "Link", value.asInstanceOf[js.Any])
+    
     inline def setSepaDebit(value: Any): Self = StObject.set(x, "SepaDebit", value.asInstanceOf[js.Any])
     
     inline def setUsBankAccount(value: TypeofUsBankAccount): Self = StObject.set(x, "UsBankAccount", value.asInstanceOf[js.Any])
-    
-    inline def setWechatPay(value: Any): Self = StObject.set(x, "WechatPay", value.asInstanceOf[js.Any])
   }
 }

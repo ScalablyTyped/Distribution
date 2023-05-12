@@ -16,13 +16,13 @@ trait SpecConfig extends StObject {
   /** The number of active clients for this test run. */
   var numClients: Double
   
-  /** A boolean to enable / disable GC. */
-  var useGarbageCollection: Boolean
+  /** A boolean to enable / disable eager GC for memory persistence. */
+  var useEagerGCForMemory: Boolean
 }
 object SpecConfig {
   
-  inline def apply(numClients: Double, useGarbageCollection: Boolean): SpecConfig = {
-    val __obj = js.Dynamic.literal(numClients = numClients.asInstanceOf[js.Any], useGarbageCollection = useGarbageCollection.asInstanceOf[js.Any])
+  inline def apply(numClients: Double, useEagerGCForMemory: Boolean): SpecConfig = {
+    val __obj = js.Dynamic.literal(numClients = numClients.asInstanceOf[js.Any], useEagerGCForMemory = useEagerGCForMemory.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpecConfig]
   }
   
@@ -35,6 +35,6 @@ object SpecConfig {
     
     inline def setNumClients(value: Double): Self = StObject.set(x, "numClients", value.asInstanceOf[js.Any])
     
-    inline def setUseGarbageCollection(value: Boolean): Self = StObject.set(x, "useGarbageCollection", value.asInstanceOf[js.Any])
+    inline def setUseEagerGCForMemory(value: Boolean): Self = StObject.set(x, "useEagerGCForMemory", value.asInstanceOf[js.Any])
   }
 }

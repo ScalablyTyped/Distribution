@@ -1,7 +1,7 @@
 
 # Scala.js typings for just-safe-get
 
-Typings are for version 4.1.1
+Typings are for version 4.2.0
 
 ## Library description:
 get value at property, don't throw if parent is undefined

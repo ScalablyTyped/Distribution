@@ -1,7 +1,7 @@
 
 # Scala.js typings for use-latest-callback
 
-Typings are for version 0.1.5
+Typings are for version 0.1.6
 
 ## Library description:
 React hook which returns the latest callback without changing the reference

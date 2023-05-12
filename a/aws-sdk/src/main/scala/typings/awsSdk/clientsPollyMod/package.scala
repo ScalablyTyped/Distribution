@@ -68,6 +68,8 @@ type IncludeAdditionalLanguageCodes = Boolean
   - typings.awsSdk.awsSdkStrings.`ca-ES`
   - typings.awsSdk.awsSdkStrings.`de-AT`
   - typings.awsSdk.awsSdkStrings.`yue-CN`
+  - typings.awsSdk.awsSdkStrings.`ar-AE`
+  - typings.awsSdk.awsSdkStrings.`fi-FI`
   - java.lang.String
 */
 type LanguageCode = _LanguageCode | String
@@ -230,6 +232,17 @@ type TextType = _TextType | String
   - typings.awsSdk.awsSdkStrings.Elin
   - typings.awsSdk.awsSdkStrings.Ida
   - typings.awsSdk.awsSdkStrings.Suvi
+  - typings.awsSdk.awsSdkStrings.Ola
+  - typings.awsSdk.awsSdkStrings.Hala
+  - typings.awsSdk.awsSdkStrings.Andres
+  - typings.awsSdk.awsSdkStrings.Sergio
+  - typings.awsSdk.awsSdkStrings.Remi
+  - typings.awsSdk.awsSdkStrings.Adriano
+  - typings.awsSdk.awsSdkStrings.Thiago
+  - typings.awsSdk.awsSdkStrings.Ruth
+  - typings.awsSdk.awsSdkStrings.Stephen
+  - typings.awsSdk.awsSdkStrings.Kazuha
+  - typings.awsSdk.awsSdkStrings.Tomoko
   - java.lang.String
 */
 type VoiceId = _VoiceId | String

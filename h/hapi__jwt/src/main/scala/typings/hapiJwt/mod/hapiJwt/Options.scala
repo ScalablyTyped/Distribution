@@ -1,8 +1,8 @@
 package typings.hapiJwt.mod.hapiJwt
 
-import typings.hapiHapi.mod.ReqRefDefaults
-import typings.hapiHapi.mod.Request
-import typings.hapiHapi.mod.ResponseToolkit
+import typings.hapiHapi.libTypesRequestMod.ReqRefDefaults
+import typings.hapiHapi.libTypesRequestMod.Request
+import typings.hapiHapi.libTypesResponseMod.ResponseToolkit
 import typings.hapiJwt.hapiJwtBooleans.`false`
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject

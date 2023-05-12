@@ -20,6 +20,11 @@ trait CreateOriginEndpointResponse extends StObject {
   
   var CmafPackage: js.UndefOr[typings.awsSdk.clientsMediapackageMod.CmafPackage] = js.undefined
   
+  /**
+    * The date and time the OriginEndpoint was created.
+    */
+  var CreatedAt: js.UndefOr[string] = js.undefined
+  
   var DashPackage: js.UndefOr[typings.awsSdk.clientsMediapackageMod.DashPackage] = js.undefined
   
   /**
@@ -97,6 +102,10 @@ object CreateOriginEndpointResponse {
     inline def setCmafPackage(value: CmafPackage): Self = StObject.set(x, "CmafPackage", value.asInstanceOf[js.Any])
     
     inline def setCmafPackageUndefined: Self = StObject.set(x, "CmafPackage", js.undefined)
+    
+    inline def setCreatedAt(value: string): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
     inline def setDashPackage(value: DashPackage): Self = StObject.set(x, "DashPackage", value.asInstanceOf[js.Any])
     

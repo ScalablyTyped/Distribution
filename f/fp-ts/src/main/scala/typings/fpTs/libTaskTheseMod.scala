@@ -11,7 +11,7 @@ import typings.fpTs.libFromEitherMod.FromEither2
 import typings.fpTs.libFromIOMod.FromIO2
 import typings.fpTs.libFromTaskMod.FromTask2
 import typings.fpTs.libFromTheseMod.FromThese2
-import typings.fpTs.libFunctionMod.Lazy
+import typings.fpTs.libFunctionMod.LazyArg
 import typings.fpTs.libFunctorMod.Functor2
 import typings.fpTs.libIOMod.IO_
 import typings.fpTs.libIoeitherMod.IOEither_
@@ -102,9 +102,9 @@ object libTaskTheseMod {
   
   inline def fromIOK[A /* <: js.Array[Any] */, B](f: js.Function1[/* a */ A, IO_[B]]): js.Function1[/* a */ A, TaskThese_[scala.Nothing, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIOK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, TaskThese_[scala.Nothing, B]]]
   
-  inline def fromOption[E](onNone: Lazy[E]): js.Function1[/* fa */ Option_[Any], TaskThese_[E, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOption")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[Any], TaskThese_[E, Any]]]
+  inline def fromOption[E](onNone: LazyArg[E]): js.Function1[/* fa */ Option_[Any], TaskThese_[E, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOption")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[Any], TaskThese_[E, Any]]]
   
-  inline def fromOptionK[E](onNone: Lazy[E]): js.Function1[
+  inline def fromOptionK[E](onNone: LazyArg[E]): js.Function1[
     /* f */ js.Function1[/* a */ js.Array[Any], Option_[Any]], 
     js.Function1[/* a */ js.Array[Any], TaskThese_[E, Any]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOptionK")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -188,7 +188,7 @@ object libTaskTheseMod {
   
   inline def toTuple[E, A](e: E, a: A): js.Function1[/* fa */ TaskThese_[E, A], Task_[js.Tuple2[E, A]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toTuple")(e.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* fa */ TaskThese_[E, A], Task_[js.Tuple2[E, A]]]]
   
-  inline def toTuple2[E, A](e: Lazy[E], a: Lazy[A]): js.Function1[/* fa */ TaskThese_[E, A], Task_[js.Tuple2[E, A]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toTuple2")(e.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* fa */ TaskThese_[E, A], Task_[js.Tuple2[E, A]]]]
+  inline def toTuple2[E, A](e: LazyArg[E], a: LazyArg[A]): js.Function1[/* fa */ TaskThese_[E, A], Task_[js.Tuple2[E, A]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toTuple2")(e.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* fa */ TaskThese_[E, A], Task_[js.Tuple2[E, A]]]]
   
   inline def traverseReadonlyArrayWithIndex[E](S: Semigroup[E]): js.Function1[
     /* f */ js.Function2[/* index */ Double, /* a */ Any, TaskThese_[E, Any]], 

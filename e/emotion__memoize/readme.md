@@ -1,7 +1,7 @@
 
 # Scala.js typings for emotion__memoize
 
-Typings are for version 0.8.0
+Typings are for version 0.8.1
 
 ## Library description:
 emotion's memoize utility

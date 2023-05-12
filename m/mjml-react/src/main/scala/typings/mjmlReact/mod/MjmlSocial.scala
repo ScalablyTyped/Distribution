@@ -12,7 +12,7 @@ open class MjmlSocial protected ()
   def this(props: MjmlSocialProps & PaddingProps & ClassNameProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: MjmlSocialProps & PaddingProps & ClassNameProps, context: Any) = this()
 }

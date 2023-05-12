@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<@wordpress/blocks.@wordpress/blocks.ColorProps> */
+/* Inlined std.Partial<@wordpress/blocks.ColorProps> */
 trait PartialColorProps extends StObject {
   
   var background: js.UndefOr[Boolean] = js.undefined

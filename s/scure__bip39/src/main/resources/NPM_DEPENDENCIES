@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@scure/bip39" : "1.1.0"
+      "@scure/bip39" : "1.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@scure/bip39" : "1.1.0"
+      "@scure/bip39" : "1.2.0"
     }
   ],
   "compile-devDependencies" : [

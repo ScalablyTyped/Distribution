@@ -2,6 +2,10 @@ package typings.interactjsTypes
 
 import typings.interactjsTypes.anon.Add
 import typings.interactjsTypes.coreScopeMod.Scope
+import typings.interactjsTypes.interactjsTypesInts.`0`
+import typings.interactjsTypes.interactjsTypesInts.`1`
+import typings.interactjsTypes.interactjsTypesInts.`2`
+import typings.interactjsTypes.interactjsTypesInts.`3`
 import typings.std.DOMHighResTimeStamp
 import typings.std.Event
 import typings.std.EventTarget
@@ -35,13 +39,13 @@ object coreEventsMod {
   @js.native
   trait FakeEvent extends StObject {
     
-    var AT_TARGET: js.UndefOr[Double] = js.native
+    var AT_TARGET: js.UndefOr[`2`] = js.native
     
-    var BUBBLING_PHASE: js.UndefOr[Double] = js.native
+    var BUBBLING_PHASE: js.UndefOr[`3`] = js.native
     
-    var CAPTURING_PHASE: js.UndefOr[Double] = js.native
+    var CAPTURING_PHASE: js.UndefOr[`1`] = js.native
     
-    var NONE: js.UndefOr[Double] = js.native
+    var NONE: js.UndefOr[`0`] = js.native
     
     var bubbles: js.UndefOr[Boolean] = js.native
     

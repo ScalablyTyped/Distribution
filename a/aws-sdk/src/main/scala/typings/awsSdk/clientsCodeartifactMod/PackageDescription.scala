@@ -17,7 +17,7 @@ trait PackageDescription extends StObject {
   var name: js.UndefOr[PackageName] = js.undefined
   
   /**
-    * The namespace of the package. The package component that specifies its namespace depends on its type. For example:    The namespace of a Maven package is its groupId.     The namespace of an npm package is its scope.     Python and NuGet packages do not contain a corresponding component, packages of those formats do not have a namespace.   
+    * The namespace of the package. The package component that specifies its namespace depends on its type. For example:    The namespace of a Maven package is its groupId.     The namespace of an npm package is its scope.     Python and NuGet packages do not contain a corresponding component, packages of those formats do not have a namespace.     The namespace of a generic package is its namespace.   
     */
   var namespace: js.UndefOr[PackageNamespace] = js.undefined
   

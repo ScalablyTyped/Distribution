@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Fraudster extends StObject {
   
   /**
-    * The timestamp when Voice ID identified the fraudster.
+    * The timestamp of when Voice ID identified the fraudster.
     */
   var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The identifier for the domain containing the fraudster.
+    * The identifier of the domain that contains the fraudster.
     */
   var DomainId: js.UndefOr[typings.awsSdk.clientsVoiceidMod.DomainId] = js.undefined
   
@@ -20,6 +20,11 @@ trait Fraudster extends StObject {
     * The service-generated identifier for the fraudster.
     */
   var GeneratedFraudsterId: js.UndefOr[typings.awsSdk.clientsVoiceidMod.GeneratedFraudsterId] = js.undefined
+  
+  /**
+    * The identifier of the watchlists the fraudster is a part of.
+    */
+  var WatchlistIds: js.UndefOr[ResponseWatchlistIds] = js.undefined
 }
 object Fraudster {
   
@@ -42,5 +47,11 @@ object Fraudster {
     inline def setGeneratedFraudsterId(value: GeneratedFraudsterId): Self = StObject.set(x, "GeneratedFraudsterId", value.asInstanceOf[js.Any])
     
     inline def setGeneratedFraudsterIdUndefined: Self = StObject.set(x, "GeneratedFraudsterId", js.undefined)
+    
+    inline def setWatchlistIds(value: ResponseWatchlistIds): Self = StObject.set(x, "WatchlistIds", value.asInstanceOf[js.Any])
+    
+    inline def setWatchlistIdsUndefined: Self = StObject.set(x, "WatchlistIds", js.undefined)
+    
+    inline def setWatchlistIdsVarargs(value: WatchlistId*): Self = StObject.set(x, "WatchlistIds", js.Array(value*))
   }
 }

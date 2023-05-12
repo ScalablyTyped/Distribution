@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Dimension extends StObject {
   
   /**
-    * The data type of the dimension for the time series data point.
+    * The data type of the dimension for the time-series data point.
     */
   var DimensionValueType: js.UndefOr[typings.awsSdk.clientsTimestreamwriteMod.DimensionValueType] = js.undefined
   
   /**
-    *  Dimension represents the meta data attributes of the time series. For example, the name and availability zone of an EC2 instance or the name of the manufacturer of a wind turbine are dimensions.  For constraints on Dimension names, see Naming Constraints.
+    *  Dimension represents the metadata attributes of the time series. For example, the name and Availability Zone of an EC2 instance or the name of the manufacturer of a wind turbine are dimensions.  For constraints on dimension names, see Naming Constraints.
     */
   var Name: SchemaName
   

@@ -197,10 +197,15 @@ trait BrowserWindow extends EventEmitter {
     * Resolves with a NativeImage
     *
     * Captures a snapshot of the page within `rect`. Omitting `rect` will capture the
-    * whole visible page. If the page is not visible, `rect` may be empty.
+    * whole visible page. If the page is not visible, `rect` may be empty. The page is
+    * considered visible when its browser window is hidden and the capturer count is
+    * non-zero. If you would like the page to stay hidden, you should ensure that
+    * `stayHidden` is set to true.
     */
   def capturePage(): js.Promise[NativeImage_] = js.native
+  def capturePage(rect: Unit, opts: Opts): js.Promise[NativeImage_] = js.native
   def capturePage(rect: Rectangle): js.Promise[NativeImage_] = js.native
+  def capturePage(rect: Rectangle, opts: Opts): js.Promise[NativeImage_] = js.native
   
   /**
     * Moves window to the center of the screen.
@@ -433,7 +438,7 @@ trait BrowserWindow extends EventEmitter {
     *
     * @platform win32
     */
-  def hookWindowMessage(message: Double, callback: js.Function2[/* wParam */ Any, /* lParam */ Any, Unit]): Unit = js.native
+  def hookWindowMessage(message: Double, callback: js.Function2[/* wParam */ Buffer, /* lParam */ Buffer, Unit]): Unit = js.native
   
   /**
     * A `Integer` property representing the unique ID of the window. Each ID is unique
@@ -441,6 +446,18 @@ trait BrowserWindow extends EventEmitter {
     *
     */
   val id: Double = js.native
+  
+  /**
+    * Invalidates the window shadow so that it is recomputed based on the current
+    * window shape.
+    *
+    * `BrowserWindows` that are transparent can sometimes leave behind visual
+    * artifacts on macOS. This method can be used to clear these artifacts when, for
+    * example, performing an animation.
+    *
+    * @platform darwin
+    */
+  def invalidateShadow(): Unit = js.native
   
   /**
     * Whether the window is always on top of other windows.
@@ -474,11 +491,11 @@ trait BrowserWindow extends EventEmitter {
   def isEnabled(): Boolean = js.native
   
   /**
-    * Returns whether the window can be focused.
+    * Whether the window can be focused.
     *
     * @platform darwin,win32
     */
-  def isFocusable(): Unit = js.native
+  def isFocusable(): Boolean = js.native
   
   /**
     * Whether the window is focused.
@@ -495,6 +512,13 @@ trait BrowserWindow extends EventEmitter {
     * window.
     */
   def isFullScreenable(): Boolean = js.native
+  
+  /**
+    * Whether the window will be hidden when the user toggles into mission control.
+    *
+    * @platform darwin
+    */
+  def isHiddenInMissionControl(): Boolean = js.native
   
   /**
     * Whether the window is in kiosk mode.
@@ -827,7 +851,7 @@ trait BrowserWindow extends EventEmitter {
   /**
     * Emitted once when the window is moved to a new position.
     *
-    * __Note__: On macOS this event is an alias of `move`.
+    * **Note**: On macOS this event is an alias of `move`.
     *
     * @platform darwin,win32
     */
@@ -900,6 +924,11 @@ trait BrowserWindow extends EventEmitter {
   /**
     * Emitted when scroll wheel event phase has begun.
     *
+    * > **Note** This event is deprecated beginning in Electron 22.0.0. See Breaking
+    * Changes for details of how to migrate to using the WebContents `input-event`
+    * event.
+    *
+    * @deprecated
     * @platform darwin
     */
   @JSName("on")
@@ -907,6 +936,11 @@ trait BrowserWindow extends EventEmitter {
   /**
     * Emitted when scroll wheel event phase filed upon reaching the edge of element.
     *
+    * > **Note** This event is deprecated beginning in Electron 22.0.0. See Breaking
+    * Changes for details of how to migrate to using the WebContents `input-event`
+    * event.
+    *
+    * @deprecated
     * @platform darwin
     */
   @JSName("on")
@@ -914,6 +948,11 @@ trait BrowserWindow extends EventEmitter {
   /**
     * Emitted when scroll wheel event phase has ended.
     *
+    * > **Note** This event is deprecated beginning in Electron 22.0.0. See Breaking
+    * Changes for details of how to migrate to using the WebContents `input-event`
+    * event.
+    *
+    * @deprecated
     * @platform darwin
     */
   @JSName("on")
@@ -1282,6 +1321,9 @@ trait BrowserWindow extends EventEmitter {
     *
     * The aspect ratio is not respected when window is resized programmatically with
     * APIs like `win.setSize`.
+    *
+    * To reset an aspect ratio, pass 0 as the `aspectRatio` value:
+    * `win.setAspectRatio(0)`.
     */
   def setAspectRatio(aspectRatio: Double): Unit = js.native
   def setAspectRatio(aspectRatio: Double, extraSize: Size): Unit = js.native
@@ -1399,6 +1441,10 @@ trait BrowserWindow extends EventEmitter {
   
   /**
     * Sets whether the window should be in fullscreen mode.
+    *
+    * **Note:** On macOS, fullscreen transitions take place asynchronously. If further
+    * actions depend on the fullscreen state, use the 'enter-full-screen' or
+    * 'leave-full-screen' events.
     */
   def setFullScreen(flag: Boolean): Unit = js.native
   
@@ -1412,6 +1458,14 @@ trait BrowserWindow extends EventEmitter {
     * Sets whether the window should have a shadow.
     */
   def setHasShadow(hasShadow: Boolean): Unit = js.native
+  
+  /**
+    * Sets whether the window will be hidden when the user toggles into mission
+    * control.
+    *
+    * @platform darwin
+    */
+  def setHiddenInMissionControl(hidden: Boolean): Unit = js.native
   
   def setIcon(icon: String): Unit = js.native
   /**
@@ -1670,7 +1724,7 @@ trait BrowserWindow extends EventEmitter {
   /**
     * Sets the touchBar layout for the current window. Specifying `null` or
     * `undefined` clears the touch bar. This method only has an effect if the machine
-    * has a touch bar and is running on macOS 10.12.1+.
+    * has a touch bar.
     *
     * **Note:** The TouchBar API is currently experimental and may change or be
     * removed in future Electron releases.

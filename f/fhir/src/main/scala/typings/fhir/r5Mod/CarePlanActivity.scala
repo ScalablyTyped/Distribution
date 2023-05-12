@@ -14,12 +14,7 @@ trait CarePlanActivity
   var performedActivity: js.UndefOr[js.Array[CodeableReference]] = js.undefined
   
   /**
-    * A simple summary of a planned activity suitable for a general care plan system (e.g. form driven) that doesn't know about specific resources such as procedure etc.
-    */
-  var plannedActivityDetail: js.UndefOr[CarePlanActivityPlannedActivityDetail] = js.undefined
-  
-  /**
-    * Standard extension exists ([resource-pertainsToGoal](extension-resource-pertainstogoal.html)) that allows goals to be referenced from any of the referenced resources in CarePlan.activity.plannedActivityReference.
+    * Standard extension exists ([http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal](http://hl7.org/fhir/extensions/StructureDefinition-resource-pertainsToGoal.html)) that allows goals to be referenced from any of the referenced resources in CarePlan.activity.plannedActivityReference.
     * The goal should be visible when the resource referenced by CarePlan.activity.plannedActivityReference is viewed independently from the CarePlan.  Requests that are pointed to by a CarePlan using this element should *not* point to this CarePlan using the "basedOn" element.  i.e. Requests that are part of a CarePlan are not "based on" the CarePlan.
     */
   var plannedActivityReference: js.UndefOr[Reference] = js.undefined
@@ -44,10 +39,6 @@ object CarePlanActivity {
     inline def setPerformedActivityUndefined: Self = StObject.set(x, "performedActivity", js.undefined)
     
     inline def setPerformedActivityVarargs(value: CodeableReference*): Self = StObject.set(x, "performedActivity", js.Array(value*))
-    
-    inline def setPlannedActivityDetail(value: CarePlanActivityPlannedActivityDetail): Self = StObject.set(x, "plannedActivityDetail", value.asInstanceOf[js.Any])
-    
-    inline def setPlannedActivityDetailUndefined: Self = StObject.set(x, "plannedActivityDetail", js.undefined)
     
     inline def setPlannedActivityReference(value: Reference): Self = StObject.set(x, "plannedActivityReference", value.asInstanceOf[js.Any])
     

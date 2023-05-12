@@ -13,8 +13,8 @@ open class SingleContactResult protected () extends StObject {
   /**
     * Create a new SingleContactResult instance.
     *
-    * @param {Entity} a - The first entity involved in the contact.
-    * @param {Entity} b - The second entity involved in the contact.
+    * @param {import('../../entity.js').Entity} a - The first entity involved in the contact.
+    * @param {import('../../entity.js').Entity} b - The second entity involved in the contact.
     * @param {ContactPoint} contactPoint - The contact point between the two entities.
     * @hideconstructor
     */
@@ -23,14 +23,14 @@ open class SingleContactResult protected () extends StObject {
   /**
     * The first entity involved in the contact.
     *
-    * @type {Entity}
+    * @type {import('../../entity.js').Entity}
     */
   var a: Entity = js.native
   
   /**
     * The second entity involved in the contact.
     *
-    * @type {Entity}
+    * @type {import('../../entity.js').Entity}
     */
   var b: Entity = js.native
   

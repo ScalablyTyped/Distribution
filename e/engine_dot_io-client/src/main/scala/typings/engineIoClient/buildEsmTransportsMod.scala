@@ -23,7 +23,7 @@ object buildEsmTransportsMod {
         * XHR Polling constructor.
         *
         * @param {Object} opts
-        * @api public
+        * @package
         */
       def this(opts: Any) = this()
     }
@@ -39,8 +39,8 @@ object buildEsmTransportsMod {
       /**
         * WebSocket transport constructor.
         *
-        * @api {Object} connection options
-        * @api public
+        * @param {Object} opts - connection options
+        * @protected
         */
       def this(opts: Any) = this()
     }

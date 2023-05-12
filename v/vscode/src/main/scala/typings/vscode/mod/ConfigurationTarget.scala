@@ -14,8 +14,8 @@ object ConfigurationTarget extends StObject {
   def apply(value: Double): js.UndefOr[ConfigurationTarget & Double] = js.native
   
   /**
-    * Global configuration
-    */
+  		 * Global configuration
+  		*/
   @js.native
   sealed trait Global
     extends StObject
@@ -23,8 +23,8 @@ object ConfigurationTarget extends StObject {
   /* 1 */ val Global: typings.vscode.mod.ConfigurationTarget.Global & Double = js.native
   
   /**
-    * Workspace configuration
-    */
+  		 * Workspace configuration
+  		 */
   @js.native
   sealed trait Workspace
     extends StObject
@@ -32,8 +32,8 @@ object ConfigurationTarget extends StObject {
   /* 2 */ val Workspace: typings.vscode.mod.ConfigurationTarget.Workspace & Double = js.native
   
   /**
-    * Workspace folder configuration
-    */
+  		 * Workspace folder configuration
+  		 */
   @js.native
   sealed trait WorkspaceFolder
     extends StObject

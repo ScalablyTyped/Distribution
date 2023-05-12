@@ -19,10 +19,10 @@ trait Stat extends StObject {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.Stats */ Any
   ] = js.native
   
-  def unwant(cid: js.Array[CID[Any, Double, Double, Version]]): js.Promise[Unit] = js.native
-  def unwant(cid: js.Array[CID[Any, Double, Double, Version]], options: AbortOptions & HTTPClientExtraOptions): js.Promise[Unit] = js.native
-  def unwant(cid: CID[Any, Double, Double, Version]): js.Promise[Unit] = js.native
-  def unwant(cid: CID[Any, Double, Double, Version], options: AbortOptions & HTTPClientExtraOptions): js.Promise[Unit] = js.native
+  def unwant(cids: js.Array[CID[Any, Double, Double, Version]]): js.Promise[Unit] = js.native
+  def unwant(cids: js.Array[CID[Any, Double, Double, Version]], options: AbortOptions & HTTPClientExtraOptions): js.Promise[Unit] = js.native
+  def unwant(cids: CID[Any, Double, Double, Version]): js.Promise[Unit] = js.native
+  def unwant(cids: CID[Any, Double, Double, Version], options: AbortOptions & HTTPClientExtraOptions): js.Promise[Unit] = js.native
   
   def wantlist(): js.Promise[js.Array[CID[Any, Double, Double, Version]]] = js.native
   def wantlist(options: AbortOptions & HTTPClientExtraOptions): js.Promise[js.Array[CID[Any, Double, Double, Version]]] = js.native

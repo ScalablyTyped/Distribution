@@ -28,6 +28,18 @@ open class OpenUserTaskClientAction protected () extends ClientAction {
     unit: ModelUnit[IAbstractModel],
     container: AbstractElement[IAbstractModel, Container]
   ) = this()
+  
+  /**
+    * In version 9.20.0: introduced
+    */
+  def assignOnOpen: Boolean = js.native
+  def assignOnOpen_=(newValue: Boolean): Unit = js.native
+  
+  /**
+    * In version 9.20.0: introduced
+    */
+  def openWhenAssigned: Boolean = js.native
+  def openWhenAssigned_=(newValue: Boolean): Unit = js.native
 }
 object OpenUserTaskClientAction {
   

@@ -1,5 +1,6 @@
 package typings.nivoCore.mod
 
+import typings.reactSpringCore.mod.SpringConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,13 +11,7 @@ trait ContainerProps extends StObject {
   
   var isInteractive: js.UndefOr[Boolean] = js.undefined
   
-  var motionConfig: js.UndefOr[
-    String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-  ] = js.undefined
-  
-  var motionDamping: js.UndefOr[Double] = js.undefined
-  
-  var motionStiffness: js.UndefOr[Double] = js.undefined
+  var motionConfig: js.UndefOr[String | SpringConfig] = js.undefined
   
   var renderWrapper: js.UndefOr[Boolean] = js.undefined
   
@@ -40,19 +35,9 @@ object ContainerProps {
     
     inline def setIsInteractiveUndefined: Self = StObject.set(x, "isInteractive", js.undefined)
     
-    inline def setMotionConfig(
-      value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-    ): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
+    inline def setMotionConfig(value: String | SpringConfig): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
     
     inline def setMotionConfigUndefined: Self = StObject.set(x, "motionConfig", js.undefined)
-    
-    inline def setMotionDamping(value: Double): Self = StObject.set(x, "motionDamping", value.asInstanceOf[js.Any])
-    
-    inline def setMotionDampingUndefined: Self = StObject.set(x, "motionDamping", js.undefined)
-    
-    inline def setMotionStiffness(value: Double): Self = StObject.set(x, "motionStiffness", value.asInstanceOf[js.Any])
-    
-    inline def setMotionStiffnessUndefined: Self = StObject.set(x, "motionStiffness", js.undefined)
     
     inline def setRenderWrapper(value: Boolean): Self = StObject.set(x, "renderWrapper", value.asInstanceOf[js.Any])
     

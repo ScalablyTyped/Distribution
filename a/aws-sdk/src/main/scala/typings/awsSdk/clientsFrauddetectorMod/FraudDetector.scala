@@ -113,6 +113,20 @@ trait FraudDetector extends Service {
   ): Request[CreateDetectorVersionResult, AWSError] = js.native
   
   /**
+    *  Creates a list.  List is a set of input data for a variable in your event dataset. You use the input data in a rule that's associated with your detector. For more information, see Lists.
+    */
+  def createList(): Request[CreateListResult, AWSError] = js.native
+  def createList(callback: js.Function2[/* err */ AWSError, /* data */ CreateListResult, Unit]): Request[CreateListResult, AWSError] = js.native
+  /**
+    *  Creates a list.  List is a set of input data for a variable in your event dataset. You use the input data in a rule that's associated with your detector. For more information, see Lists.
+    */
+  def createList(params: CreateListRequest): Request[CreateListResult, AWSError] = js.native
+  def createList(
+    params: CreateListRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateListResult, Unit]
+  ): Request[CreateListResult, AWSError] = js.native
+  
+  /**
     * Creates a model using the specified model type.
     */
   def createModel(): Request[CreateModelResult, AWSError] = js.native
@@ -307,6 +321,20 @@ trait FraudDetector extends Service {
     params: DeleteLabelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteLabelResult, Unit]
   ): Request[DeleteLabelResult, AWSError] = js.native
+  
+  /**
+    *  Deletes the list, provided it is not used in a rule.   When you delete a list, Amazon Fraud Detector permanently deletes that list and the elements in the list.
+    */
+  def deleteList(): Request[DeleteListResult, AWSError] = js.native
+  def deleteList(callback: js.Function2[/* err */ AWSError, /* data */ DeleteListResult, Unit]): Request[DeleteListResult, AWSError] = js.native
+  /**
+    *  Deletes the list, provided it is not used in a rule.   When you delete a list, Amazon Fraud Detector permanently deletes that list and the elements in the list.
+    */
+  def deleteList(params: DeleteListRequest): Request[DeleteListResult, AWSError] = js.native
+  def deleteList(
+    params: DeleteListRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteListResult, Unit]
+  ): Request[DeleteListResult, AWSError] = js.native
   
   /**
     * Deletes a model. You can delete models and model versions in Amazon Fraud Detector, provided that they are not associated with a detector version.  When you delete a model, Amazon Fraud Detector permanently deletes that model and the data is no longer stored in Amazon Fraud Detector.
@@ -581,6 +609,34 @@ trait FraudDetector extends Service {
     params: GetLabelsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetLabelsResult, Unit]
   ): Request[GetLabelsResult, AWSError] = js.native
+  
+  /**
+    *  Gets all the elements in the specified list. 
+    */
+  def getListElements(): Request[GetListElementsResult, AWSError] = js.native
+  def getListElements(callback: js.Function2[/* err */ AWSError, /* data */ GetListElementsResult, Unit]): Request[GetListElementsResult, AWSError] = js.native
+  /**
+    *  Gets all the elements in the specified list. 
+    */
+  def getListElements(params: GetListElementsRequest): Request[GetListElementsResult, AWSError] = js.native
+  def getListElements(
+    params: GetListElementsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetListElementsResult, Unit]
+  ): Request[GetListElementsResult, AWSError] = js.native
+  
+  /**
+    *  Gets the metadata of either all the lists under the account or the specified list. 
+    */
+  def getListsMetadata(): Request[GetListsMetadataResult, AWSError] = js.native
+  def getListsMetadata(callback: js.Function2[/* err */ AWSError, /* data */ GetListsMetadataResult, Unit]): Request[GetListsMetadataResult, AWSError] = js.native
+  /**
+    *  Gets the metadata of either all the lists under the account or the specified list. 
+    */
+  def getListsMetadata(params: GetListsMetadataRequest): Request[GetListsMetadataResult, AWSError] = js.native
+  def getListsMetadata(
+    params: GetListsMetadataRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetListsMetadataResult, Unit]
+  ): Request[GetListsMetadataResult, AWSError] = js.native
   
   /**
     * Gets the details of the specified model version.
@@ -875,6 +931,20 @@ trait FraudDetector extends Service {
     params: UpdateEventLabelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateEventLabelResult, Unit]
   ): Request[UpdateEventLabelResult, AWSError] = js.native
+  
+  /**
+    *  Updates a list. 
+    */
+  def updateList(): Request[UpdateListResult, AWSError] = js.native
+  def updateList(callback: js.Function2[/* err */ AWSError, /* data */ UpdateListResult, Unit]): Request[UpdateListResult, AWSError] = js.native
+  /**
+    *  Updates a list. 
+    */
+  def updateList(params: UpdateListRequest): Request[UpdateListResult, AWSError] = js.native
+  def updateList(
+    params: UpdateListRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateListResult, Unit]
+  ): Request[UpdateListResult, AWSError] = js.native
   
   /**
     * Updates model description.

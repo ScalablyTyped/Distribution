@@ -17,6 +17,10 @@ object distCjsUtilsConstantsMod {
   @js.native
   val defaultIndexes: js.Array[js.Array[TermName]] = js.native
   
+  @JSImport("quadstore/dist/cjs/utils/constants", "emptyValue")
+  @js.native
+  val emptyValue: js.typedarray.Uint8Array = js.native
+  
   @JSImport("quadstore/dist/cjs/utils/constants", "levelDelOpts")
   @js.native
   val levelDelOpts: AbstractChainedBatchDelOptions[Any, Any] = js.native

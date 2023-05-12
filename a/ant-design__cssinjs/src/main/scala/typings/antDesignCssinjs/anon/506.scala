@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderImageRepeat
+import typings.csstype.mod.Property.AspectRatio
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `506` extends StObject {
   
   var value: js.UndefOr[
-    BorderImageRepeat | (js.Array[
-      (Extract[
-        js.UndefOr[BorderImageRepeat | js.Array[NonNullable[js.UndefOr[BorderImageRepeat]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[BorderImageRepeat]]
+    AspectRatio | (js.Array[
+      (Extract[js.UndefOr[AspectRatio | js.Array[NonNullable[js.UndefOr[AspectRatio]]]], String]) | NonNullable[js.UndefOr[AspectRatio]]
     ])
   ] = js.native
 }

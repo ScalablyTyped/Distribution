@@ -10333,7 +10333,7 @@ trait JQuery[TElement]
   def parent(): this.type = js.native
   def parent(selector: Selector): this.type = js.native
   
-  // tslint:disable-next-line:no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   def parents[E /* <: HTMLElement */](): JQuery[E] = js.native
   def parents[E /* <: HTMLElement */](selector: Selector): JQuery[E] = js.native
   

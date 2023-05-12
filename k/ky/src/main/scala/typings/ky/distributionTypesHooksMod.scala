@@ -104,7 +104,7 @@ object distributionTypesHooksMod {
       const {response} = error;
       if (response && response.body) {
       error.name = 'GitHubError';
-      error.message = `${response.body.message} (${response.statusCode})`;
+      error.message = `${response.body.message} (${response.status})`;
       }
       return error;
       }

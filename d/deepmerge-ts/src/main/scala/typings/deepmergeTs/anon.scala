@@ -210,16 +210,16 @@ object anon {
     ): js.Array[S]
     
     def find[S /* <: Any */](
-      predicate: js.ThisFunction3[
-          /* this */ Unit, 
-          /* value */ Any, 
-          /* index */ Double, 
-          /* obj */ js.Array[Any], 
-          /* is S */ Boolean
-        ]
+      predicate: js.Function3[/* value */ Any, /* index */ Double, /* obj */ js.Array[Any], /* is S */ Boolean]
     ): js.UndefOr[S]
     
     def findIndex(predicate: js.Function3[/* value */ Any, /* index */ Double, /* obj */ js.Array[Any], Any]): Double
+    
+    def findLast[S /* <: Any */](
+      predicate: js.Function3[/* value */ Any, /* index */ Double, /* array */ js.Array[Any], /* is S */ Boolean]
+    ): js.UndefOr[S]
+    
+    def findLastIndex(predicate: js.Function3[/* value */ Any, /* index */ Double, /* array */ js.Array[Any], Any]): Double
     
     def flat[A, D /* <: Double */](): js.Array[FlatArray[A, D]]
     
@@ -283,14 +283,10 @@ object anon {
       entries: () => IterableIterator[js.Tuple2[Double, Any]],
       every: js.Function3[/* value */ Any, /* index */ Double, /* array */ js.Array[Any], /* is S */ Boolean] => /* is std.Array<S> */ Boolean,
       filter: js.Function3[/* value */ Any, /* index */ Double, /* array */ js.Array[Any], /* is S */ Boolean] => js.Array[Any],
-      find: js.ThisFunction3[
-          /* this */ Unit, 
-          /* value */ Any, 
-          /* index */ Double, 
-          /* obj */ js.Array[Any], 
-          /* is S */ Boolean
-        ] => js.UndefOr[Any],
+      find: js.Function3[/* value */ Any, /* index */ Double, /* obj */ js.Array[Any], /* is S */ Boolean] => js.UndefOr[Any],
       findIndex: js.Function3[/* value */ Any, /* index */ Double, /* obj */ js.Array[Any], Any] => Double,
+      findLast: js.Function3[/* value */ Any, /* index */ Double, /* array */ js.Array[Any], /* is S */ Boolean] => js.UndefOr[Any],
+      findLastIndex: js.Function3[/* value */ Any, /* index */ Double, /* array */ js.Array[Any], Any] => Double,
       flat: () => js.Array[FlatArray[Any, Any]],
       flatMap: js.ThisFunction3[Any, /* value */ Any, /* index */ Double, /* array */ js.Array[Any], Any | js.Array[Any]] => js.Array[Any],
       forEach: js.Function3[/* value */ Any, /* index */ Double, /* array */ js.Array[Any], Unit] => Unit,
@@ -319,7 +315,7 @@ object anon {
       some: js.Function3[/* value */ Any, /* index */ Double, /* array */ js.Array[Any], Any] => Boolean,
       values: () => IterableIterator[Any]
     ): ReadonlyReadonlyArrayunkn = {
-      val __obj = js.Dynamic.literal(at = js.Any.fromFunction1(at), concat = js.Any.fromFunction1(concat), entries = js.Any.fromFunction0(entries), every = js.Any.fromFunction1(every), filter = js.Any.fromFunction1(filter), find = js.Any.fromFunction1(find), findIndex = js.Any.fromFunction1(findIndex), flat = js.Any.fromFunction0(flat), flatMap = js.Any.fromFunction1(flatMap), forEach = js.Any.fromFunction1(forEach), includes = js.Any.fromFunction1(includes), indexOf = js.Any.fromFunction1(indexOf), join = js.Any.fromFunction0(join), keys = js.Any.fromFunction0(keys), lastIndexOf = js.Any.fromFunction1(lastIndexOf), length = length.asInstanceOf[js.Any], map = js.Any.fromFunction1(map), reduce = js.Any.fromFunction1(reduce), reduceRight = js.Any.fromFunction1(reduceRight), slice = js.Any.fromFunction0(slice), some = js.Any.fromFunction1(some), values = js.Any.fromFunction0(values))
+      val __obj = js.Dynamic.literal(at = js.Any.fromFunction1(at), concat = js.Any.fromFunction1(concat), entries = js.Any.fromFunction0(entries), every = js.Any.fromFunction1(every), filter = js.Any.fromFunction1(filter), find = js.Any.fromFunction1(find), findIndex = js.Any.fromFunction1(findIndex), findLast = js.Any.fromFunction1(findLast), findLastIndex = js.Any.fromFunction1(findLastIndex), flat = js.Any.fromFunction0(flat), flatMap = js.Any.fromFunction1(flatMap), forEach = js.Any.fromFunction1(forEach), includes = js.Any.fromFunction1(includes), indexOf = js.Any.fromFunction1(indexOf), join = js.Any.fromFunction0(join), keys = js.Any.fromFunction0(keys), lastIndexOf = js.Any.fromFunction1(lastIndexOf), length = length.asInstanceOf[js.Any], map = js.Any.fromFunction1(map), reduce = js.Any.fromFunction1(reduce), reduceRight = js.Any.fromFunction1(reduceRight), slice = js.Any.fromFunction0(slice), some = js.Any.fromFunction1(some), values = js.Any.fromFunction0(values))
       __obj.asInstanceOf[ReadonlyReadonlyArrayunkn]
     }
     
@@ -341,16 +337,16 @@ object anon {
       ): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
       inline def setFind(
-        value: js.ThisFunction3[
-              /* this */ Unit, 
-              /* value */ Any, 
-              /* index */ Double, 
-              /* obj */ js.Array[Any], 
-              /* is S */ Boolean
-            ] => js.UndefOr[Any]
+        value: js.Function3[/* value */ Any, /* index */ Double, /* obj */ js.Array[Any], /* is S */ Boolean] => js.UndefOr[Any]
       ): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
       
       inline def setFindIndex(value: js.Function3[/* value */ Any, /* index */ Double, /* obj */ js.Array[Any], Any] => Double): Self = StObject.set(x, "findIndex", js.Any.fromFunction1(value))
+      
+      inline def setFindLast(
+        value: js.Function3[/* value */ Any, /* index */ Double, /* array */ js.Array[Any], /* is S */ Boolean] => js.UndefOr[Any]
+      ): Self = StObject.set(x, "findLast", js.Any.fromFunction1(value))
+      
+      inline def setFindLastIndex(value: js.Function3[/* value */ Any, /* index */ Double, /* array */ js.Array[Any], Any] => Double): Self = StObject.set(x, "findLastIndex", js.Any.fromFunction1(value))
       
       inline def setFlat(value: () => js.Array[FlatArray[Any, Any]]): Self = StObject.set(x, "flat", js.Any.fromFunction0(value))
       

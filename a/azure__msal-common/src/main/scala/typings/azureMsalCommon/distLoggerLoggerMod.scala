@@ -148,6 +148,18 @@ object distLoggerLoggerMod {
     def warningPii(message: String): Unit = js.native
     def warningPii(message: String, correlationId: String): Unit = js.native
   }
+  /* static members */
+  object Logger {
+    
+    @JSImport("@azure/msal-common/dist/logger/Logger", "Logger")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@azure/msal-common/dist/logger/Logger", "Logger.createDefaultLoggerOptions")
+    @js.native
+    def createDefaultLoggerOptions: Any = js.native
+    inline def createDefaultLoggerOptions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createDefaultLoggerOptions")(x.asInstanceOf[js.Any])
+  }
   
   type ILoggerCallback = js.Function3[/* level */ LogLevel, /* message */ String, /* containsPii */ Boolean, Unit]
   

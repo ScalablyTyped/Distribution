@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FinalHyperParameterTuningJobObjectiveMetric extends StObject {
   
   /**
-    * The name of the objective metric.
+    * The name of the objective metric. For SageMaker built-in algorithms, metrics are defined per algorithm. See the metrics for XGBoost as an example. You can also use a custom algorithm for training and define your own metrics. For more information, see Define metrics and environment variables.
     */
   var MetricName: typings.awsSdk.clientsSagemakerMod.MetricName
   
   /**
-    * Whether to minimize or maximize the objective metric. Valid values are Minimize and Maximize.
+    * Select if you want to minimize or maximize the objective metric during hyperparameter tuning. 
     */
   var Type: js.UndefOr[HyperParameterTuningJobObjectiveType] = js.undefined
   

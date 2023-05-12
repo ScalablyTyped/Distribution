@@ -22,12 +22,14 @@ object domCollectionsChannelsMod {
     val _docId: Double = js.native
     
     /**
-      * Create a new alpha channel in this document
+      * Create a new alpha channel in this document.
+      * @minVersion 23.0
       */
     def add(): Channel = js.native
     
     /**
-      * Find the first channel with the matching name
+      * Find the first channel with the matching name.
+      * @minVersion 23.0
       */
     def getByName(name: String): Channel = js.native
     
@@ -35,13 +37,15 @@ object domCollectionsChannelsMod {
     def handler(): Get = js.native
     
     /**
-      * Number of Channel elements in this collection
+      * Number of Channel elements in this collection.
+      * @minVersion 23.0
       */
     @JSName("length")
     def length_MChannels: Double = js.native
     
     /**
-      * The owner document of this Channel collection
+      * The owner document of this Channel collection.
+      * @minVersion 23.0
       */
     def parent: Document = js.native
     
@@ -49,13 +53,15 @@ object domCollectionsChannelsMod {
     /* private */ var proxy: Any = js.native
     
     /**
-      * Remove all Alpha channels in the parent document
+      * Remove all Alpha channels in the parent document.
+      * @minVersion 23.0
       */
     def removeAll(): Unit = js.native
     
     /**
-      * The name for this object collection: Channels
+      * The name for this object collection: Channels.
+      * @minVersion 23.0
       */
-    def typename: String = js.native
+    def typename: typings.photoshop.photoshopStrings.Channels = js.native
   }
 }

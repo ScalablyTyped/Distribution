@@ -1,6 +1,7 @@
 package typings.atlaskitMotion
 
 import typings.atlaskitMotion.distTypesEnteringKeyframesMotionMod.KeyframesMotionProps
+import typings.emotionSerialize.mod.CSSObject
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,7 +24,7 @@ object distTypesEnteringZoomInMod {
   @js.native
   val default: FC[KeyframesMotionProps] = js.native
   
-  inline def shrinkOutAnimation(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("shrinkOutAnimation")().asInstanceOf[Any]
+  inline def shrinkOutAnimation(): CSSObject = ^.asInstanceOf[js.Dynamic].applyDynamic("shrinkOutAnimation")().asInstanceOf[CSSObject]
   
-  inline def zoomInAnimation(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("zoomInAnimation")().asInstanceOf[Any]
+  inline def zoomInAnimation(): CSSObject = ^.asInstanceOf[js.Dynamic].applyDynamic("zoomInAnimation")().asInstanceOf[CSSObject]
 }

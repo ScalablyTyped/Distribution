@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import typings.konva.libShapesPathMod.Path
 import typings.konva.libShapesPathMod.PathConfig
+import typings.konva.libTypesMod.PathSegment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,6 +21,10 @@ trait TypeofPath
   
   def getLineLength(x1: Any, y1: Any, x2: Any, y2: Any): Double = js.native
   
+  def getPathLength(dataArray: js.Array[PathSegment]): Double = js.native
+  
+  def getPointAtLengthOfDataArray(length: Double, dataArray: Any): Any = js.native
+  
   def getPointOnCubicBezier(pct: Any, P1x: Any, P1y: Any, P2x: Any, P2y: Any, P3x: Any, P3y: Any, P4x: Any, P4y: Any): X = js.native
   
   def getPointOnEllipticalArc(cx: Any, cy: Any, rx: Any, ry: Any, theta: Any, psi: Any): XY = js.native
@@ -31,5 +36,5 @@ trait TypeofPath
   
   def getPointOnQuadraticBezier(pct: Any, P1x: Any, P1y: Any, P2x: Any, P2y: Any, P3x: Any, P3y: Any): X = js.native
   
-  def parsePathData(data: Any): js.Array[Any] = js.native
+  def parsePathData(data: Any): js.Array[PathSegment] = js.native
 }

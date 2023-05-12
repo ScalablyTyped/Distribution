@@ -7,32 +7,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateEnvironmentInput extends StObject {
   
   /**
-    * A list of key-value pairs containing the Apache Airflow configuration options you want to attach to your environment. To learn more, see Apache Airflow configuration options.
+    * A list of key-value pairs containing the Apache Airflow configuration options you want to attach to your environment. For more information, see Apache Airflow configuration options.
     */
   var AirflowConfigurationOptions: js.UndefOr[typings.awsSdk.clientsMwaaMod.AirflowConfigurationOptions] = js.undefined
   
   /**
-    * The Apache Airflow version for your environment. If no value is specified, it defaults to the latest version. Valid values: 1.10.12, 2.0.2, and 2.2.2. To learn more, see Apache Airflow versions on Amazon Managed Workflows for Apache Airflow (MWAA).
+    * The Apache Airflow version for your environment. If no value is specified, it defaults to the latest version. Valid values: 1.10.12, 2.0.2, 2.2.2, and 2.4.3. For more information, see Apache Airflow versions on Amazon Managed Workflows for Apache Airflow (MWAA).
     */
   var AirflowVersion: js.UndefOr[typings.awsSdk.clientsMwaaMod.AirflowVersion] = js.undefined
   
   /**
-    * The relative path to the DAGs folder on your Amazon S3 bucket. For example, dags. To learn more, see Adding or updating DAGs.
+    * The relative path to the DAGs folder on your Amazon S3 bucket. For example, dags. For more information, see Adding or updating DAGs.
     */
   var DagS3Path: RelativePath
   
   /**
-    * The environment class type. Valid values: mw1.small, mw1.medium, mw1.large. To learn more, see Amazon MWAA environment class.
+    * The environment class type. Valid values: mw1.small, mw1.medium, mw1.large. For more information, see Amazon MWAA environment class.
     */
   var EnvironmentClass: js.UndefOr[typings.awsSdk.clientsMwaaMod.EnvironmentClass] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the execution role for your environment. An execution role is an Amazon Web Services Identity and Access Management (IAM) role that grants MWAA permission to access Amazon Web Services services and resources used by your environment. For example, arn:aws:iam::123456789:role/my-execution-role. To learn more, see Amazon MWAA Execution role.
+    * The Amazon Resource Name (ARN) of the execution role for your environment. An execution role is an Amazon Web Services Identity and Access Management (IAM) role that grants MWAA permission to access Amazon Web Services services and resources used by your environment. For example, arn:aws:iam::123456789:role/my-execution-role. For more information, see Amazon MWAA Execution role.
     */
   var ExecutionRoleArn: IamRoleArn
   
   /**
-    * The Amazon Web Services Key Management Service (KMS) key to encrypt the data in your environment. You can use an Amazon Web Services owned CMK, or a Customer managed CMK (advanced). To learn more, see Create an Amazon MWAA environment.
+    * The Amazon Web Services Key Management Service (KMS) key to encrypt the data in your environment. You can use an Amazon Web Services owned CMK, or a Customer managed CMK (advanced). For more information, see Create an Amazon MWAA environment.
     */
   var KmsKey: js.UndefOr[typings.awsSdk.clientsMwaaMod.KmsKey] = js.undefined
   
@@ -57,27 +57,27 @@ trait CreateEnvironmentInput extends StObject {
   var Name: EnvironmentName
   
   /**
-    * The VPC networking components used to secure and enable network traffic between the Amazon Web Services resources for your environment. To learn more, see About networking on Amazon MWAA.
+    * The VPC networking components used to secure and enable network traffic between the Amazon Web Services resources for your environment. For more information, see About networking on Amazon MWAA.
     */
   var NetworkConfiguration: typings.awsSdk.clientsMwaaMod.NetworkConfiguration
   
   /**
-    * The version of the plugins.zip file on your Amazon S3 bucket. A version must be specified each time a plugins.zip file is updated. To learn more, see How S3 Versioning works.
+    * The version of the plugins.zip file on your Amazon S3 bucket. You must specify a version each time a plugins.zip file is updated. For more information, see How S3 Versioning works.
     */
   var PluginsS3ObjectVersion: js.UndefOr[S3ObjectVersion] = js.undefined
   
   /**
-    * The relative path to the plugins.zip file on your Amazon S3 bucket. For example, plugins.zip. If specified, then the plugins.zip version is required. To learn more, see Installing custom plugins.
+    * The relative path to the plugins.zip file on your Amazon S3 bucket. For example, plugins.zip. If specified, then the plugins.zip version is required. For more information, see Installing custom plugins.
     */
   var PluginsS3Path: js.UndefOr[RelativePath] = js.undefined
   
   /**
-    * The version of the requirements.txt file on your Amazon S3 bucket. A version must be specified each time a requirements.txt file is updated. To learn more, see How S3 Versioning works.
+    * The version of the requirements.txt file on your Amazon S3 bucket. You must specify a version each time a requirements.txt file is updated. For more information, see How S3 Versioning works.
     */
   var RequirementsS3ObjectVersion: js.UndefOr[S3ObjectVersion] = js.undefined
   
   /**
-    * The relative path to the requirements.txt file on your Amazon S3 bucket. For example, requirements.txt. If specified, then a file version is required. To learn more, see Installing Python dependencies.
+    * The relative path to the requirements.txt file on your Amazon S3 bucket. For example, requirements.txt. If specified, then a version is required. For more information, see Installing Python dependencies.
     */
   var RequirementsS3Path: js.UndefOr[RelativePath] = js.undefined
   
@@ -87,17 +87,27 @@ trait CreateEnvironmentInput extends StObject {
   var Schedulers: js.UndefOr[typings.awsSdk.clientsMwaaMod.Schedulers] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the Amazon S3 bucket where your DAG code and supporting files are stored. For example, arn:aws:s3:::my-airflow-bucket-unique-name. To learn more, see Create an Amazon S3 bucket for Amazon MWAA.
+    * The Amazon Resource Name (ARN) of the Amazon S3 bucket where your DAG code and supporting files are stored. For example, arn:aws:s3:::my-airflow-bucket-unique-name. For more information, see Create an Amazon S3 bucket for Amazon MWAA.
     */
   var SourceBucketArn: S3BucketArn
   
   /**
-    * The key-value tag pairs you want to associate to your environment. For example, "Environment": "Staging". To learn more, see Tagging Amazon Web Services resources.
+    * The version of the startup shell script in your Amazon S3 bucket. You must specify the version ID that Amazon S3 assigns to the file every time you update the script.   Version IDs are Unicode, UTF-8 encoded, URL-ready, opaque strings that are no more than 1,024 bytes long. The following is an example:   3sL4kqtJlcpXroDTDmJ+rmSpXd3dIbrHY+MTRCxf3vjVBH40Nr8X8gdRQBpUMLUo   For more information, see Using a startup script. 
+    */
+  var StartupScriptS3ObjectVersion: js.UndefOr[S3ObjectVersion] = js.undefined
+  
+  /**
+    * The relative path to the startup shell script in your Amazon S3 bucket. For example, s3://mwaa-environment/startup.sh.  Amazon MWAA runs the script as your environment starts, and before running the Apache Airflow process. You can use this script to install dependencies, modify Apache Airflow configuration options, and set environment variables. For more information, see Using a startup script. 
+    */
+  var StartupScriptS3Path: js.UndefOr[RelativePath] = js.undefined
+  
+  /**
+    * The key-value tag pairs you want to associate to your environment. For example, "Environment": "Staging". For more information, see Tagging Amazon Web Services resources.
     */
   var Tags: js.UndefOr[TagMap] = js.undefined
   
   /**
-    * The Apache Airflow Web server access mode. To learn more, see Apache Airflow access modes.
+    * The Apache Airflow Web server access mode. For more information, see Apache Airflow access modes.
     */
   var WebserverAccessMode: js.UndefOr[typings.awsSdk.clientsMwaaMod.WebserverAccessMode] = js.undefined
   
@@ -179,6 +189,14 @@ object CreateEnvironmentInput {
     inline def setSchedulersUndefined: Self = StObject.set(x, "Schedulers", js.undefined)
     
     inline def setSourceBucketArn(value: S3BucketArn): Self = StObject.set(x, "SourceBucketArn", value.asInstanceOf[js.Any])
+    
+    inline def setStartupScriptS3ObjectVersion(value: S3ObjectVersion): Self = StObject.set(x, "StartupScriptS3ObjectVersion", value.asInstanceOf[js.Any])
+    
+    inline def setStartupScriptS3ObjectVersionUndefined: Self = StObject.set(x, "StartupScriptS3ObjectVersion", js.undefined)
+    
+    inline def setStartupScriptS3Path(value: RelativePath): Self = StObject.set(x, "StartupScriptS3Path", value.asInstanceOf[js.Any])
+    
+    inline def setStartupScriptS3PathUndefined: Self = StObject.set(x, "StartupScriptS3Path", js.undefined)
     
     inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

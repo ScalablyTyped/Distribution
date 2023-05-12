@@ -8,6 +8,7 @@ trait ClientSecretCredentialOptions
   extends StObject
      with MultiTenantTokenCredentialOptions
      with CredentialPersistenceOptions
+     with AuthorityValidationOptions
 object ClientSecretCredentialOptions {
   
   inline def apply(): ClientSecretCredentialOptions = {

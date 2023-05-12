@@ -159,6 +159,24 @@ object StandardDynamicDateRangeKeys extends StObject {
   /* "LASTDAYYEAR" */ val LASTDAYYEAR: typings.openui5.sapMLibraryMod.StandardDynamicDateRangeKeys.LASTDAYYEAR & String = js.native
   
   /**
+    * The range will contain the last X hours. The count of the hours is selected from a StepInput.
+    */
+  @js.native
+  sealed trait LASTHOURS
+    extends StObject
+       with StandardDynamicDateRangeKeys
+  /* "LASTHOURS" */ val LASTHOURS: typings.openui5.sapMLibraryMod.StandardDynamicDateRangeKeys.LASTHOURS & String = js.native
+  
+  /**
+    * The range will contain the last X minutes. The count of the minutes is selected from a StepInput.
+    */
+  @js.native
+  sealed trait LASTMINUTES
+    extends StObject
+       with StandardDynamicDateRangeKeys
+  /* "LASTMINUTES" */ val LASTMINUTES: typings.openui5.sapMLibraryMod.StandardDynamicDateRangeKeys.LASTMINUTES & String = js.native
+  
+  /**
     * The range will contain the days in the last month.
     */
   @js.native
@@ -238,6 +256,24 @@ object StandardDynamicDateRangeKeys extends StObject {
     extends StObject
        with StandardDynamicDateRangeKeys
   /* "NEXTDAYS" */ val NEXTDAYS: typings.openui5.sapMLibraryMod.StandardDynamicDateRangeKeys.NEXTDAYS & String = js.native
+  
+  /**
+    * The range will contain the next X hours. The count of the hours is selected from a StepInput.
+    */
+  @js.native
+  sealed trait NEXTHOURS
+    extends StObject
+       with StandardDynamicDateRangeKeys
+  /* "NEXTHOURS" */ val NEXTHOURS: typings.openui5.sapMLibraryMod.StandardDynamicDateRangeKeys.NEXTHOURS & String = js.native
+  
+  /**
+    * The range will contain the next X minutes. The count of the minutes is selected from a StepInput.
+    */
+  @js.native
+  sealed trait NEXTMINUTES
+    extends StObject
+       with StandardDynamicDateRangeKeys
+  /* "NEXTMINUTES" */ val NEXTMINUTES: typings.openui5.sapMLibraryMod.StandardDynamicDateRangeKeys.NEXTMINUTES & String = js.native
   
   /**
     * The range will contain the days in the next month.

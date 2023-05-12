@@ -13,7 +13,6 @@ open class Session protected () extends StObject {
     * @param {string} id The session ID.
     * @param {!(Object|Capabilities)} capabilities The session
     *     capabilities.
-    * @constructor
     */
   def this(id: String, capabilities: typings.seleniumWebdriver.libCapabilitiesMod.Capabilities) = this()
   

@@ -1,6 +1,6 @@
 package typings.openui5
 
-import typings.openui5.anon.`12`
+import typings.openui5.anon.`14`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -241,6 +241,8 @@ object sapUiWebcMainFileUploaderMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -249,7 +251,7 @@ object sapUiWebcMainFileUploaderMod {
     def fireChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: `12`): this.type = js.native
+    mParameters: `14`): this.type = js.native
     
     /**
       * Gets current value of property {@link #getAccept accept}.

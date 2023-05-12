@@ -1,10 +1,14 @@
 package typings.expressValidator.srcOptionsMod
 
+import typings.expressValidator.expressValidatorStrings.`48`
+import typings.expressValidator.expressValidatorStrings.`64`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IsMACAddressOptions extends StObject {
+  
+  var eui: js.UndefOr[`48` | `64`] = js.undefined
   
   /**
     * @deprecated use `no_separators` instead
@@ -22,6 +26,10 @@ object IsMACAddressOptions {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: IsMACAddressOptions] (val x: Self) extends AnyVal {
+    
+    inline def setEui(value: `48` | `64`): Self = StObject.set(x, "eui", value.asInstanceOf[js.Any])
+    
+    inline def setEuiUndefined: Self = StObject.set(x, "eui", js.undefined)
     
     inline def setNo_colons(value: Boolean): Self = StObject.set(x, "no_colons", value.asInstanceOf[js.Any])
     

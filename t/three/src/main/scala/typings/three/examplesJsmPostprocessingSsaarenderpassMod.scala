@@ -1,11 +1,12 @@
 package typings.three
 
+import typings.three.examplesJsmPostprocessingPassMod.FullScreenQuad
 import typings.three.examplesJsmPostprocessingPassMod.Pass
+import typings.three.srcMathColorMod.ColorRepresentation
 import typings.three.srcThreeMod.Camera
 import typings.three.srcThreeMod.Scene
 import typings.three.srcThreeMod.ShaderMaterial
 import typings.three.srcThreeMod.WebGLRenderTarget
-import typings.three.srcUtilsMod.ColorRepresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +31,7 @@ object examplesJsmPostprocessingSsaarenderpassMod {
     
     var copyUniforms: js.Object = js.native
     
-    var fsQuad: js.Object = js.native
+    var fsQuad: FullScreenQuad = js.native
     
     var sampleLevel: Double = js.native
     

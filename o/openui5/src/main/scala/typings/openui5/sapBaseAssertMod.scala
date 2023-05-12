@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// For Library Version: 1.108.0
+// For Library Version: 1.113.0
 object sapBaseAssertMod {
   
   @JSImport("sap/base/assert", JSImport.Namespace)

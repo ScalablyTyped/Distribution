@@ -15,9 +15,12 @@ object builtScriptMod {
     def this(lua: String) = this()
     def this(lua: String, numberOfKeys: Double) = this()
     def this(lua: String, numberOfKeys: Double, keyPrefix: String) = this()
+    def this(lua: String, numberOfKeys: Null, keyPrefix: String) = this()
     def this(lua: String, numberOfKeys: Unit, keyPrefix: String) = this()
     def this(lua: String, numberOfKeys: Double, keyPrefix: String, readOnly: Boolean) = this()
     def this(lua: String, numberOfKeys: Double, keyPrefix: Unit, readOnly: Boolean) = this()
+    def this(lua: String, numberOfKeys: Null, keyPrefix: String, readOnly: Boolean) = this()
+    def this(lua: String, numberOfKeys: Null, keyPrefix: Unit, readOnly: Boolean) = this()
     def this(lua: String, numberOfKeys: Unit, keyPrefix: String, readOnly: Boolean) = this()
     def this(lua: String, numberOfKeys: Unit, keyPrefix: Unit, readOnly: Boolean) = this()
   }

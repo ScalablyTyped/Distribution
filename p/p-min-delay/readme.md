@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-min-delay
 
-Typings are for version 4.0.1
+Typings are for version 4.0.2
 
 ## Library description:
 Delay a promise a minimum amount of time

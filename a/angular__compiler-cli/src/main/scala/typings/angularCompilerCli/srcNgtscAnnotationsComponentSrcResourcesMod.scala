@@ -9,12 +9,12 @@ import typings.angularCompilerCli.angularCompilerCliBooleans.`true`
 import typings.angularCompilerCli.angularCompilerCliInts.`0`
 import typings.angularCompilerCli.angularCompilerCliInts.`1`
 import typings.angularCompilerCli.angularCompilerCliInts.`2`
+import typings.angularCompilerCli.anon.ClassDeclarationDeclarati
 import typings.angularCompilerCli.srcNgtscAnnotationsCommonSrcApiMod.ResourceLoader
 import typings.angularCompilerCli.srcNgtscDiagnosticsMod.FatalDiagnosticError
 import typings.angularCompilerCli.srcNgtscIncrementalApiMod.DependencyTracker
 import typings.angularCompilerCli.srcNgtscMetadataSrcResourceRegistryMod.Resource
 import typings.angularCompilerCli.srcNgtscPartialEvaluatorMod.PartialEvaluator
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.Decorator
 import typings.angularCompilerCli.srcNgtscTypecheckApiApiMod.TemplateSourceMapping
@@ -38,7 +38,7 @@ object srcNgtscAnnotationsComponentSrcResourcesMod {
   inline def extractStyleResources(resourceLoader: ResourceLoader, component: Map[String, Expression], containingFile: String): ReadonlySet[Resource] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractStyleResources")(resourceLoader.asInstanceOf[js.Any], component.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any])).asInstanceOf[ReadonlySet[Resource]]
   
   inline def extractTemplate(
-    node: ClassDeclaration[DeclarationNode],
+    node: ClassDeclarationDeclarati,
     template: TemplateDeclaration,
     evaluator: PartialEvaluator,
     depTracker: Null,
@@ -46,7 +46,7 @@ object srcNgtscAnnotationsComponentSrcResourcesMod {
     options: ExtractTemplateOptions
   ): ParsedTemplateWithSource = (^.asInstanceOf[js.Dynamic].applyDynamic("extractTemplate")(node.asInstanceOf[js.Any], template.asInstanceOf[js.Any], evaluator.asInstanceOf[js.Any], depTracker.asInstanceOf[js.Any], resourceLoader.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedTemplateWithSource]
   inline def extractTemplate(
-    node: ClassDeclaration[DeclarationNode],
+    node: ClassDeclarationDeclarati,
     template: TemplateDeclaration,
     evaluator: PartialEvaluator,
     depTracker: DependencyTracker[SourceFile],
@@ -61,20 +61,32 @@ object srcNgtscAnnotationsComponentSrcResourcesMod {
   inline def makeResourceNotFoundError(file: String, nodeForError: Node, resourceType: ResourceTypeForDiagnostics): FatalDiagnosticError = (^.asInstanceOf[js.Dynamic].applyDynamic("makeResourceNotFoundError")(file.asInstanceOf[js.Any], nodeForError.asInstanceOf[js.Any], resourceType.asInstanceOf[js.Any])).asInstanceOf[FatalDiagnosticError]
   
   inline def parseTemplateDeclaration(
+    node: ClassDeclarationDeclarati,
     decorator: Decorator,
     component: Map[String, Expression],
     containingFile: String,
     evaluator: PartialEvaluator,
+    depTracker: Null,
     resourceLoader: ResourceLoader,
     defaultPreserveWhitespaces: Boolean
-  ): TemplateDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("parseTemplateDeclaration")(decorator.asInstanceOf[js.Any], component.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], evaluator.asInstanceOf[js.Any], resourceLoader.asInstanceOf[js.Any], defaultPreserveWhitespaces.asInstanceOf[js.Any])).asInstanceOf[TemplateDeclaration]
+  ): TemplateDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("parseTemplateDeclaration")(node.asInstanceOf[js.Any], decorator.asInstanceOf[js.Any], component.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], evaluator.asInstanceOf[js.Any], depTracker.asInstanceOf[js.Any], resourceLoader.asInstanceOf[js.Any], defaultPreserveWhitespaces.asInstanceOf[js.Any])).asInstanceOf[TemplateDeclaration]
+  inline def parseTemplateDeclaration(
+    node: ClassDeclarationDeclarati,
+    decorator: Decorator,
+    component: Map[String, Expression],
+    containingFile: String,
+    evaluator: PartialEvaluator,
+    depTracker: DependencyTracker[SourceFile],
+    resourceLoader: ResourceLoader,
+    defaultPreserveWhitespaces: Boolean
+  ): TemplateDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("parseTemplateDeclaration")(node.asInstanceOf[js.Any], decorator.asInstanceOf[js.Any], component.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], evaluator.asInstanceOf[js.Any], depTracker.asInstanceOf[js.Any], resourceLoader.asInstanceOf[js.Any], defaultPreserveWhitespaces.asInstanceOf[js.Any])).asInstanceOf[TemplateDeclaration]
   
   inline def preloadAndParseTemplate(
     evaluator: PartialEvaluator,
     resourceLoader: ResourceLoader,
     depTracker: Null,
     preanalyzeTemplateCache: Map[DeclarationNode, ParsedTemplateWithSource],
-    node: ClassDeclaration[DeclarationNode],
+    node: ClassDeclarationDeclarati,
     decorator: Decorator,
     component: Map[String, Expression],
     containingFile: String,
@@ -86,7 +98,7 @@ object srcNgtscAnnotationsComponentSrcResourcesMod {
     resourceLoader: ResourceLoader,
     depTracker: DependencyTracker[SourceFile],
     preanalyzeTemplateCache: Map[DeclarationNode, ParsedTemplateWithSource],
-    node: ClassDeclaration[DeclarationNode],
+    node: ClassDeclarationDeclarati,
     decorator: Decorator,
     component: Map[String, Expression],
     containingFile: String,

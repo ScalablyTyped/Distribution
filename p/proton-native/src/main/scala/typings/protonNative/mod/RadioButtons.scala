@@ -13,7 +13,7 @@ open class RadioButtons protected ()
   def this(props: RadioButtonsProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: RadioButtonsProps, context: Any) = this()
 }

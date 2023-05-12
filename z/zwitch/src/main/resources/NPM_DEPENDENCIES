@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "zwitch" : "2.0.2"
+      "zwitch" : "2.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "zwitch" : "2.0.2"
+      "zwitch" : "2.0.4"
     }
   ],
   "compile-devDependencies" : [

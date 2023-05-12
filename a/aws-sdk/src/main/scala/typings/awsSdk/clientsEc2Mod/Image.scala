@@ -17,7 +17,7 @@ trait Image extends StObject {
   var BlockDeviceMappings: js.UndefOr[BlockDeviceMappingList] = js.undefined
   
   /**
-    * The boot mode of the image. For more information, see Boot modes in the Amazon Elastic Compute Cloud User Guide.
+    * The boot mode of the image. For more information, see Boot modes in the Amazon EC2 User Guide.
     */
   var BootMode: js.UndefOr[BootModeValues] = js.undefined
   
@@ -67,7 +67,7 @@ trait Image extends StObject {
   var ImageType: js.UndefOr[ImageTypeValues] = js.undefined
   
   /**
-    * If v2.0, it indicates that IMDSv2 is specified in the AMI. Instances launched from this AMI will have HttpTokens automatically set to required so that, by default, the instance requires that IMDSv2 is used when requesting instance metadata. In addition, HttpPutResponseHopLimit is set to 2. For more information, see Configure the AMI in the Amazon Elastic Compute Cloud User Guide.
+    * If v2.0, it indicates that IMDSv2 is specified in the AMI. Instances launched from this AMI will have HttpTokens automatically set to required so that, by default, the instance requires that IMDSv2 is used when requesting instance metadata. In addition, HttpPutResponseHopLimit is set to 2. For more information, see Configure the AMI in the Amazon EC2 User Guide.
     */
   var ImdsSupport: js.UndefOr[ImdsSupportValues] = js.undefined
   
@@ -92,7 +92,7 @@ trait Image extends StObject {
   var Platform: js.UndefOr[PlatformValues] = js.undefined
   
   /**
-    * The platform details associated with the billing code of the AMI. For more information, see Understanding AMI billing in the Amazon Elastic Compute Cloud User Guide.
+    * The platform details associated with the billing code of the AMI. For more information, see Understand AMI billing information in the Amazon EC2 User Guide.
     */
   var PlatformDetails: js.UndefOr[String] = js.undefined
   
@@ -142,7 +142,7 @@ trait Image extends StObject {
   var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
-    * If the image is configured for NitroTPM support, the value is v2.0. For more information, see NitroTPM in the Amazon Elastic Compute Cloud User Guide.
+    * If the image is configured for NitroTPM support, the value is v2.0. For more information, see NitroTPM in the Amazon EC2 User Guide.
     */
   var TpmSupport: js.UndefOr[TpmSupportValues] = js.undefined
   

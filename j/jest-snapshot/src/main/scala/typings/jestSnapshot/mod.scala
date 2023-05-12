@@ -4,7 +4,7 @@ import typings.expect.anon.readonlyprintExpectedvalu
 import typings.expect.mod.MatcherContext
 import typings.expect.mod.MatcherFunctionWithContext
 import typings.jestExpectUtils.mod.EqualsFunction
-import typings.jestHasteMap.mod.IHasteFS
+import typings.jestExpectUtils.mod.Tester
 import typings.jestSnapshot.anon.FilesRemoved
 import typings.jestTypes.mod.ProjectConfig
 import typings.jestTypes.mod.SnapshotUpdateState
@@ -91,13 +91,13 @@ object mod {
   inline def buildSnapshotResolver(config: ProjectConfig, localRequire: js.Promise[LocalRequire]): js.Promise[SnapshotResolver] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSnapshotResolver")(config.asInstanceOf[js.Any], localRequire.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SnapshotResolver]]
   inline def buildSnapshotResolver(config: ProjectConfig, localRequire: LocalRequire): js.Promise[SnapshotResolver] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSnapshotResolver")(config.asInstanceOf[js.Any], localRequire.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SnapshotResolver]]
   
-  inline def cleanup(hasteFS: IHasteFS, update: SnapshotUpdateState, snapshotResolver: SnapshotResolver): FilesRemoved = (^.asInstanceOf[js.Dynamic].applyDynamic("cleanup")(hasteFS.asInstanceOf[js.Any], update.asInstanceOf[js.Any], snapshotResolver.asInstanceOf[js.Any])).asInstanceOf[FilesRemoved]
+  inline def cleanup(fileSystem: FileSystem2, update: SnapshotUpdateState, snapshotResolver: SnapshotResolver): FilesRemoved = (^.asInstanceOf[js.Dynamic].applyDynamic("cleanup")(fileSystem.asInstanceOf[js.Any], update.asInstanceOf[js.Any], snapshotResolver.asInstanceOf[js.Any])).asInstanceOf[FilesRemoved]
   inline def cleanup(
-    hasteFS: IHasteFS,
+    fileSystem: FileSystem2,
     update: SnapshotUpdateState,
     snapshotResolver: SnapshotResolver,
     testPathIgnorePatterns: js.Array[String]
-  ): FilesRemoved = (^.asInstanceOf[js.Dynamic].applyDynamic("cleanup")(hasteFS.asInstanceOf[js.Any], update.asInstanceOf[js.Any], snapshotResolver.asInstanceOf[js.Any], testPathIgnorePatterns.asInstanceOf[js.Any])).asInstanceOf[FilesRemoved]
+  ): FilesRemoved = (^.asInstanceOf[js.Dynamic].applyDynamic("cleanup")(fileSystem.asInstanceOf[js.Any], update.asInstanceOf[js.Any], snapshotResolver.asInstanceOf[js.Any], testPathIgnorePatterns.asInstanceOf[js.Any])).asInstanceOf[FilesRemoved]
   
   inline def getSerializers(): Plugins_ = ^.asInstanceOf[js.Dynamic].applyDynamic("getSerializers")().asInstanceOf[Plugins_]
   
@@ -147,14 +147,16 @@ object mod {
     
     inline def apply(
       assertionCalls: Double,
+      customTesters: js.Array[Tester],
       dontThrow: () => Unit,
       equals_ : EqualsFunction,
       isExpectingAssertions: Boolean,
+      numPassingAsserts: Double,
       snapshotState: SnapshotState,
       suppressedErrors: js.Array[js.Error],
       utils: readonlyprintExpectedvalu
     ): Context = {
-      val __obj = js.Dynamic.literal(assertionCalls = assertionCalls.asInstanceOf[js.Any], dontThrow = js.Any.fromFunction0(dontThrow), isExpectingAssertions = isExpectingAssertions.asInstanceOf[js.Any], snapshotState = snapshotState.asInstanceOf[js.Any], suppressedErrors = suppressedErrors.asInstanceOf[js.Any], utils = utils.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(assertionCalls = assertionCalls.asInstanceOf[js.Any], customTesters = customTesters.asInstanceOf[js.Any], dontThrow = js.Any.fromFunction0(dontThrow), isExpectingAssertions = isExpectingAssertions.asInstanceOf[js.Any], numPassingAsserts = numPassingAsserts.asInstanceOf[js.Any], snapshotState = snapshotState.asInstanceOf[js.Any], suppressedErrors = suppressedErrors.asInstanceOf[js.Any], utils = utils.asInstanceOf[js.Any])
       __obj.updateDynamic("equals")(equals_.asInstanceOf[js.Any])
       __obj.asInstanceOf[Context]
     }
@@ -164,6 +166,15 @@ object mod {
       
       inline def setSnapshotState(value: SnapshotState): Self = StObject.set(x, "snapshotState", value.asInstanceOf[js.Any])
     }
+  }
+  
+  @js.native
+  trait FileSystem2 extends StObject {
+    
+    def exists(path: String): Boolean = js.native
+    
+    def matchFiles(pattern: String): js.Array[String] = js.native
+    def matchFiles(pattern: js.RegExp): js.Array[String] = js.native
   }
   
   type LocalRequire = js.Function1[/* module */ String, Any]

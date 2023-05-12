@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class SignatureHelp () extends StObject {
   
   /**
-    * The active parameter of the active signature.
-    */
+  		 * The active parameter of the active signature.
+  		 */
   var activeParameter: Double = js.native
   
   /**
-    * The active signature.
-    */
+  		 * The active signature.
+  		 */
   var activeSignature: Double = js.native
   
   /**
-    * One or more signatures.
-    */
+  		 * One or more signatures.
+  		 */
   var signatures: js.Array[SignatureInformation] = js.native
 }

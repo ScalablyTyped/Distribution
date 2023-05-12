@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_groupsmigration-v1"
-version := "0.0-dt-20220912Z-bb7569"
+version := "0.0-dt-20230214Z-bb7569"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

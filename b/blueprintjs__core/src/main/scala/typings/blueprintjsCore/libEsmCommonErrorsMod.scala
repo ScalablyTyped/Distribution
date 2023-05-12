@@ -170,6 +170,14 @@ object libEsmCommonErrorsMod {
   @js.native
   val RANGESLIDER_NULL_VALUE: String = js.native
   
+  @JSImport("@blueprintjs/core/lib/esm/common/errors", "SLIDER_MAX")
+  @js.native
+  val SLIDER_MAX: String = js.native
+  
+  @JSImport("@blueprintjs/core/lib/esm/common/errors", "SLIDER_MIN")
+  @js.native
+  val SLIDER_MIN: String = js.native
+  
   @JSImport("@blueprintjs/core/lib/esm/common/errors", "SLIDER_ZERO_LABEL_STEP")
   @js.native
   val SLIDER_ZERO_LABEL_STEP: String = js.native

@@ -46,7 +46,7 @@ object libTexturesResourcesImageResourceMod {
     var alphaMode: ALPHA_MODES = js.native
     
     /**
-      * The ImageBitmap element created for a {@code HTMLImageElement}.
+      * The ImageBitmap element created for a {@link HTMLImageElement}.
       * @default null
       */
     var bitmap: ImageBitmap = js.native
@@ -57,7 +57,7 @@ object libTexturesResourcesImageResourceMod {
       */
     var createBitmap: Boolean = js.native
     
-    def load(createBitmap: Boolean): js.Promise[ImageResource] = js.native
+    def load(createBitmap: Boolean): js.Promise[this.type] = js.native
     
     /**
       * If the image should be disposed after upload
@@ -70,7 +70,7 @@ object libTexturesResourcesImageResourceMod {
       * Can be called multiple times, real promise is cached inside.
       * @returns - Cached promise to fill that bitmap
       */
-    def process(): js.Promise[ImageResource] = js.native
+    def process(): js.Promise[this.type] = js.native
     
     /** URL of the image source */
     var url: String = js.native

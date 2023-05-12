@@ -13,6 +13,14 @@ object sapUiModelFilterMod {
   @JSImport("sap/ui/model/Filter", JSImport.Default)
   @js.native
   open class default protected () extends Filter {
+    def this(/**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: String) = this()
+    def this(/**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: js.Array[Filter]) = this()
     /**
       * Constructor for Filter.
       *
@@ -33,27 +41,768 @@ object sapUiModelFilterMod {
       * "All"} are only supported in V4 OData models. When creating a filter instance with these filter operators,
       * the argument `variable` only accepts a string identifier and `condition` needs to be another filter instance.
       */
+    def this(/**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: And) = this()
     def this(
       /**
       * Filter info object or a path or an array of filters
       */
-    vFilterInfo: And | String | js.Array[Filter],
+    vFilterInfo: String,
       /**
       * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
       * multiple filters
       */
-    vOperator: js.UndefOr[
-            FilterOperator | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FilterOperator * / any */ String) | (js.Function1[/* p1 */ Any, Boolean]) | Boolean
-          ],
+    vOperator: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FilterOperator * / any */ String
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: String,
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: js.Function1[/* p1 */ Any, Boolean]
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: String,
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: FilterOperator
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: js.Array[Filter],
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FilterOperator * / any */ String
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: js.Array[Filter],
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: js.Function1[/* p1 */ Any, Boolean]
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: js.Array[Filter],
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: FilterOperator
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: And,
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FilterOperator * / any */ String
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: And,
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: js.Function1[/* p1 */ Any, Boolean]
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: And,
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: FilterOperator
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: String,
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FilterOperator * / any */ String,
       /**
       * First value to use with the given filter operator
       */
-    vValue1: js.UndefOr[Any],
+    vValue1: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: String,
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: js.Function1[/* p1 */ Any, Boolean],
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: String,
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: Unit,
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: String,
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: FilterOperator,
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: js.Array[Filter],
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FilterOperator * / any */ String,
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: js.Array[Filter],
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: js.Function1[/* p1 */ Any, Boolean],
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: js.Array[Filter],
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: Unit,
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: js.Array[Filter],
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: FilterOperator,
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: And,
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FilterOperator * / any */ String,
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: And,
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: js.Function1[/* p1 */ Any, Boolean],
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: And,
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: Unit,
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: And,
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: FilterOperator,
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: String,
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FilterOperator * / any */ String,
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Any,
       /**
       * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
       * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
       */
-    vValue2: js.UndefOr[Any]
+    vValue2: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: String,
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FilterOperator * / any */ String,
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Unit,
+      /**
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
+      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      */
+    vValue2: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: String,
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: js.Function1[/* p1 */ Any, Boolean],
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Any,
+      /**
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
+      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      */
+    vValue2: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: String,
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: js.Function1[/* p1 */ Any, Boolean],
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Unit,
+      /**
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
+      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      */
+    vValue2: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: String,
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: Unit,
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Any,
+      /**
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
+      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      */
+    vValue2: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: String,
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: Unit,
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Unit,
+      /**
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
+      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      */
+    vValue2: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: String,
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: FilterOperator,
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Any,
+      /**
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
+      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      */
+    vValue2: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: String,
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: FilterOperator,
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Unit,
+      /**
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
+      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      */
+    vValue2: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: js.Array[Filter],
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FilterOperator * / any */ String,
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Any,
+      /**
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
+      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      */
+    vValue2: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: js.Array[Filter],
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FilterOperator * / any */ String,
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Unit,
+      /**
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
+      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      */
+    vValue2: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: js.Array[Filter],
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: js.Function1[/* p1 */ Any, Boolean],
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Any,
+      /**
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
+      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      */
+    vValue2: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: js.Array[Filter],
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: js.Function1[/* p1 */ Any, Boolean],
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Unit,
+      /**
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
+      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      */
+    vValue2: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: js.Array[Filter],
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: Unit,
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Any,
+      /**
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
+      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      */
+    vValue2: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: js.Array[Filter],
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: Unit,
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Unit,
+      /**
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
+      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      */
+    vValue2: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: js.Array[Filter],
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: FilterOperator,
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Any,
+      /**
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
+      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      */
+    vValue2: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: js.Array[Filter],
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: FilterOperator,
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Unit,
+      /**
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
+      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      */
+    vValue2: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: And,
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FilterOperator * / any */ String,
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Any,
+      /**
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
+      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      */
+    vValue2: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: And,
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FilterOperator * / any */ String,
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Unit,
+      /**
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
+      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      */
+    vValue2: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: And,
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: js.Function1[/* p1 */ Any, Boolean],
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Any,
+      /**
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
+      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      */
+    vValue2: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: And,
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: js.Function1[/* p1 */ Any, Boolean],
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Unit,
+      /**
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
+      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      */
+    vValue2: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: And,
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: Unit,
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Any,
+      /**
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
+      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      */
+    vValue2: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: And,
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: Unit,
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Unit,
+      /**
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
+      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      */
+    vValue2: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: And,
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: FilterOperator,
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Any,
+      /**
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
+      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      */
+    vValue2: Any
+    ) = this()
+    def this(
+      /**
+      * Filter info object or a path or an array of filters
+      */
+    vFilterInfo: And,
+      /**
+      * Either a filter operator or a custom filter function or a `boolean` flag that defines how to combine
+      * multiple filters
+      */
+    vOperator: FilterOperator,
+      /**
+      * First value to use with the given filter operator
+      */
+    vValue1: Unit,
+      /**
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
+      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      */
+    vValue2: Any
     ) = this()
   }
   /* static members */
@@ -155,7 +904,7 @@ object sapUiModelFilterMod {
       *
       * @returns The comparator function
       */
-    def getComparator(): js.UndefOr[js.Function1[/* p1 */ Any, Boolean]] = js.native
+    def getComparator(): js.Function1[/* p1 */ Any, js.UndefOr[Boolean]] = js.native
     
     /**
       * @SINCE 1.96.0
@@ -207,7 +956,7 @@ object sapUiModelFilterMod {
       *
       * @returns The test function
       */
-    def getTest(): js.UndefOr[js.Function2[/* p1 */ Any, /* p2 */ Any, Boolean]] = js.native
+    def getTest(): js.Function2[/* p1 */ Any, /* p2 */ Any, js.UndefOr[Boolean]] = js.native
     
     /**
       * @SINCE 1.96.0

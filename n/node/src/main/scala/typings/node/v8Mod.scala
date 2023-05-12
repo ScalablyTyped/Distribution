@@ -1,6 +1,7 @@
 package typings.node
 
 import typings.node.NodeJS.TypedArray
+import typings.node.anon.AfterGC
 import typings.node.bufferMod.global.Buffer
 import typings.node.nodeColonstreamMod.Readable
 import org.scalablytyped.runtime.StObject
@@ -60,7 +61,7 @@ object v8Mod {
     def readHeader(): Boolean = js.native
     
     /**
-      * Read raw bytes from the deserializer’s internal buffer. The `length` parameter
+      * Read raw bytes from the deserializer's internal buffer. The `length` parameter
       * must correspond to the length of the buffer that was passed to `serializer.writeRawBytes()`.
       * For use inside of a custom `deserializer._readHostObject()`.
       */
@@ -91,6 +92,101 @@ object v8Mod {
       * @param arrayBuffer An `ArrayBuffer` instance.
       */
     def transferArrayBuffer(id: Double, arrayBuffer: js.typedarray.ArrayBuffer): Unit = js.native
+  }
+  
+  /**
+    * This API collects GC data in current thread.
+    * @since v19.6.0, v18.15.0
+    */
+  @JSImport("v8", "GCProfiler")
+  @js.native
+  open class GCProfiler () extends StObject {
+    
+    /**
+      * Start collecting GC data.
+      * @since v19.6.0, v18.15.0
+      */
+    def start(): Unit = js.native
+    
+    /**
+      * Stop collecting GC data and return an object.The content of object
+      * is as follows.
+      *
+      * ```json
+      * {
+      *   "version": 1,
+      *   "startTime": 1674059033862,
+      *   "statistics": [
+      *     {
+      *       "gcType": "Scavenge",
+      *       "beforeGC": {
+      *         "heapStatistics": {
+      *           "totalHeapSize": 5005312,
+      *           "totalHeapSizeExecutable": 524288,
+      *           "totalPhysicalSize": 5226496,
+      *           "totalAvailableSize": 4341325216,
+      *           "totalGlobalHandlesSize": 8192,
+      *           "usedGlobalHandlesSize": 2112,
+      *           "usedHeapSize": 4883840,
+      *           "heapSizeLimit": 4345298944,
+      *           "mallocedMemory": 254128,
+      *           "externalMemory": 225138,
+      *           "peakMallocedMemory": 181760
+      *         },
+      *         "heapSpaceStatistics": [
+      *           {
+      *             "spaceName": "read_only_space",
+      *             "spaceSize": 0,
+      *             "spaceUsedSize": 0,
+      *             "spaceAvailableSize": 0,
+      *             "physicalSpaceSize": 0
+      *           }
+      *         ]
+      *       },
+      *       "cost": 1574.14,
+      *       "afterGC": {
+      *         "heapStatistics": {
+      *           "totalHeapSize": 6053888,
+      *           "totalHeapSizeExecutable": 524288,
+      *           "totalPhysicalSize": 5500928,
+      *           "totalAvailableSize": 4341101384,
+      *           "totalGlobalHandlesSize": 8192,
+      *           "usedGlobalHandlesSize": 2112,
+      *           "usedHeapSize": 4059096,
+      *           "heapSizeLimit": 4345298944,
+      *           "mallocedMemory": 254128,
+      *           "externalMemory": 225138,
+      *           "peakMallocedMemory": 181760
+      *         },
+      *         "heapSpaceStatistics": [
+      *           {
+      *             "spaceName": "read_only_space",
+      *             "spaceSize": 0,
+      *             "spaceUsedSize": 0,
+      *             "spaceAvailableSize": 0,
+      *             "physicalSpaceSize": 0
+      *           }
+      *         ]
+      *       }
+      *     }
+      *   ],
+      *   "endTime": 1674059036865
+      * }
+      * ```
+      *
+      * Here's an example.
+      *
+      * ```js
+      * const { GCProfiler } = require('v8');
+      * const profiler = new GCProfiler();
+      * profiler.start();
+      * setTimeout(() => {
+      *   console.log(profiler.stop());
+      * }, 1000);
+      * ```
+      * @since v19.6.0, v18.15.0
+      */
+    def stop(): GCProfilerResult = js.native
   }
   
   /**
@@ -127,7 +223,7 @@ object v8Mod {
     def writeHeader(): Unit = js.native
     
     /**
-      * Write raw bytes into the serializer’s internal buffer. The deserializer
+      * Write raw bytes into the serializer's internal buffer. The deserializer
       * will require a way to compute the length of the buffer.
       * For use inside of a custom `serializer._writeHostObject()`.
       */
@@ -181,13 +277,16 @@ object v8Mod {
   inline def deserialize(buffer: TypedArray): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(buffer.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /**
-    * Returns an object with the following properties:
+    * Get statistics about code and its metadata in the heap, see
+    * V8[`GetHeapCodeAndMetadataStatistics`](https://v8docs.nodesource.com/node-13.2/d5/dda/classv8_1_1_isolate.html#a6079122af17612ef54ef3348ce170866) API. Returns an object with the
+    * following properties:
     *
     * ```js
     * {
     *   code_and_metadata_size: 212208,
     *   bytecode_and_metadata_size: 161368,
-    *   external_script_source_size: 1410794
+    *   external_script_source_size: 1410794,
+    *   cpu_profiler_metadata_size: 0,
     * }
     * ```
     * @since v12.8.0
@@ -210,12 +309,12 @@ object v8Mod {
     *
     * ```js
     * // Print heap snapshot to the console
-    * const v8 = require('v8');
+    * const v8 = require('node:v8');
     * const stream = v8.getHeapSnapshot();
     * stream.pipe(process.stdout);
     * ```
     * @since v11.13.0
-    * @return A Readable Stream containing the V8 heap snapshot
+    * @return A Readable containing the V8 heap snapshot.
     */
   inline def getHeapSnapshot(): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("getHeapSnapshot")().asInstanceOf[Readable]
   
@@ -287,6 +386,15 @@ object v8Mod {
     * of contexts that were detached and not yet garbage collected. This number
     * being non-zero indicates a potential memory leak.
     *
+    * `total_global_handles_size` The value of total\_global\_handles\_size is the
+    * total memory size of V8 global handles.
+    *
+    * `used_global_handles_size` The value of used\_global\_handles\_size is the
+    * used memory size of V8 global handles.
+    *
+    * `external_memory` The value of external\_memory is the memory size of array
+    * buffers and external strings.
+    *
     * ```js
     * {
     *   total_heap_size: 7326976,
@@ -299,12 +407,23 @@ object v8Mod {
     *   peak_malloced_memory: 1127496,
     *   does_zap_garbage: 0,
     *   number_of_native_contexts: 1,
-    *   number_of_detached_contexts: 0
+    *   number_of_detached_contexts: 0,
+    *   total_global_handles_size: 8192,
+    *   used_global_handles_size: 3296,
+    *   external_memory: 318824
     * }
     * ```
     * @since v1.0.0
     */
   inline def getHeapStatistics(): HeapInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getHeapStatistics")().asInstanceOf[HeapInfo]
+  
+  /**
+    * The `promiseHooks` interface can be used to track promise lifecycle events.
+    * @since v17.1.0, v16.14.0
+    */
+  @JSImport("v8", "promiseHooks")
+  @js.native
+  val promiseHooks: PromiseHooks_ = js.native
   
   /**
     * Uses a `DefaultSerializer` to serialize `value` into a buffer.
@@ -328,7 +447,7 @@ object v8Mod {
     *
     * ```js
     * // Print GC events to stdout for one minute.
-    * const v8 = require('v8');
+    * const v8 = require('node:v8');
     * v8.setFlagsFromString('--trace_gc');
     * setTimeout(() => { v8.setFlagsFromString('--notrace_gc'); }, 60e3);
     * ```
@@ -373,12 +492,12 @@ object v8Mod {
     * for a duration depending on the heap size.
     *
     * ```js
-    * const { writeHeapSnapshot } = require('v8');
+    * const { writeHeapSnapshot } = require('node:v8');
     * const {
     *   Worker,
     *   isMainThread,
-    *   parentPort
-    * } = require('worker_threads');
+    *   parentPort,
+    * } = require('node:worker_threads');
     *
     * if (isMainThread) {
     *   const worker = new Worker(__filename);
@@ -410,6 +529,21 @@ object v8Mod {
   inline def writeHeapSnapshot(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("writeHeapSnapshot")().asInstanceOf[String]
   inline def writeHeapSnapshot(filename: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("writeHeapSnapshot")(filename.asInstanceOf[js.Any]).asInstanceOf[String]
   
+  /**
+    * Called immediately after a promise continuation executes. This may be after a `then()`, `catch()`, or `finally()` handler or before an await after another await.
+    * @since v17.1.0, v16.14.0
+    */
+  type After = js.Function1[/* promise */ js.Promise[Any], Unit]
+  
+  /**
+    * Called before a promise continuation executes. This can be in the form of `then()`, `catch()`, or `finally()` handlers or an await resuming.
+    *
+    * The before callback will be called 0 to N times. The before callback will typically be called 0 times if no continuation was ever made for the promise.
+    * The before callback may be called many times in the case where many continuations have been made from the same promise.
+    * @since v17.1.0, v16.14.0
+    */
+  type Before = js.Function1[/* promise */ js.Promise[Any], Unit]
+  
   // ** Signifies if the --zap_code_space option is enabled or not.  1 == enabled, 0 == disabled. */
   /* Rewritten from type alias, can be one of: 
     - typings.node.nodeInts.`0`
@@ -421,6 +555,38 @@ object v8Mod {
     inline def `0`: typings.node.nodeInts.`0` = 0.asInstanceOf[typings.node.nodeInts.`0`]
     
     inline def `1`: typings.node.nodeInts.`1` = 1.asInstanceOf[typings.node.nodeInts.`1`]
+  }
+  
+  trait GCProfilerResult extends StObject {
+    
+    var endTime: Double
+    
+    var startTime: Double
+    
+    var statistics: js.Array[AfterGC]
+    
+    var version: Double
+  }
+  object GCProfilerResult {
+    
+    inline def apply(endTime: Double, startTime: Double, statistics: js.Array[AfterGC], version: Double): GCProfilerResult = {
+      val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], statistics = statistics.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GCProfilerResult]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GCProfilerResult] (val x: Self) extends AnyVal {
+      
+      inline def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+      
+      inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      
+      inline def setStatistics(value: js.Array[AfterGC]): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
+      
+      inline def setStatisticsVarargs(value: AfterGC*): Self = StObject.set(x, "statistics", js.Array(value*))
+      
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    }
   }
   
   trait HeapCodeStatistics extends StObject {
@@ -457,6 +623,8 @@ object v8Mod {
     
     var does_zap_garbage: DoesZapCodeSpaceFlag
     
+    var external_memory: Double
+    
     var heap_size_limit: Double
     
     var malloced_memory: Double
@@ -469,11 +637,15 @@ object v8Mod {
     
     var total_available_size: Double
     
+    var total_global_handles_size: Double
+    
     var total_heap_size: Double
     
     var total_heap_size_executable: Double
     
     var total_physical_size: Double
+    
+    var used_global_handles_size: Double
     
     var used_heap_size: Double
   }
@@ -481,18 +653,21 @@ object v8Mod {
     
     inline def apply(
       does_zap_garbage: DoesZapCodeSpaceFlag,
+      external_memory: Double,
       heap_size_limit: Double,
       malloced_memory: Double,
       number_of_detached_contexts: Double,
       number_of_native_contexts: Double,
       peak_malloced_memory: Double,
       total_available_size: Double,
+      total_global_handles_size: Double,
       total_heap_size: Double,
       total_heap_size_executable: Double,
       total_physical_size: Double,
+      used_global_handles_size: Double,
       used_heap_size: Double
     ): HeapInfo = {
-      val __obj = js.Dynamic.literal(does_zap_garbage = does_zap_garbage.asInstanceOf[js.Any], heap_size_limit = heap_size_limit.asInstanceOf[js.Any], malloced_memory = malloced_memory.asInstanceOf[js.Any], number_of_detached_contexts = number_of_detached_contexts.asInstanceOf[js.Any], number_of_native_contexts = number_of_native_contexts.asInstanceOf[js.Any], peak_malloced_memory = peak_malloced_memory.asInstanceOf[js.Any], total_available_size = total_available_size.asInstanceOf[js.Any], total_heap_size = total_heap_size.asInstanceOf[js.Any], total_heap_size_executable = total_heap_size_executable.asInstanceOf[js.Any], total_physical_size = total_physical_size.asInstanceOf[js.Any], used_heap_size = used_heap_size.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(does_zap_garbage = does_zap_garbage.asInstanceOf[js.Any], external_memory = external_memory.asInstanceOf[js.Any], heap_size_limit = heap_size_limit.asInstanceOf[js.Any], malloced_memory = malloced_memory.asInstanceOf[js.Any], number_of_detached_contexts = number_of_detached_contexts.asInstanceOf[js.Any], number_of_native_contexts = number_of_native_contexts.asInstanceOf[js.Any], peak_malloced_memory = peak_malloced_memory.asInstanceOf[js.Any], total_available_size = total_available_size.asInstanceOf[js.Any], total_global_handles_size = total_global_handles_size.asInstanceOf[js.Any], total_heap_size = total_heap_size.asInstanceOf[js.Any], total_heap_size_executable = total_heap_size_executable.asInstanceOf[js.Any], total_physical_size = total_physical_size.asInstanceOf[js.Any], used_global_handles_size = used_global_handles_size.asInstanceOf[js.Any], used_heap_size = used_heap_size.asInstanceOf[js.Any])
       __obj.asInstanceOf[HeapInfo]
     }
     
@@ -500,6 +675,8 @@ object v8Mod {
     implicit open class MutableBuilder[Self <: HeapInfo] (val x: Self) extends AnyVal {
       
       inline def setDoes_zap_garbage(value: DoesZapCodeSpaceFlag): Self = StObject.set(x, "does_zap_garbage", value.asInstanceOf[js.Any])
+      
+      inline def setExternal_memory(value: Double): Self = StObject.set(x, "external_memory", value.asInstanceOf[js.Any])
       
       inline def setHeap_size_limit(value: Double): Self = StObject.set(x, "heap_size_limit", value.asInstanceOf[js.Any])
       
@@ -513,11 +690,15 @@ object v8Mod {
       
       inline def setTotal_available_size(value: Double): Self = StObject.set(x, "total_available_size", value.asInstanceOf[js.Any])
       
+      inline def setTotal_global_handles_size(value: Double): Self = StObject.set(x, "total_global_handles_size", value.asInstanceOf[js.Any])
+      
       inline def setTotal_heap_size(value: Double): Self = StObject.set(x, "total_heap_size", value.asInstanceOf[js.Any])
       
       inline def setTotal_heap_size_executable(value: Double): Self = StObject.set(x, "total_heap_size_executable", value.asInstanceOf[js.Any])
       
       inline def setTotal_physical_size(value: Double): Self = StObject.set(x, "total_physical_size", value.asInstanceOf[js.Any])
+      
+      inline def setUsed_global_handles_size(value: Double): Self = StObject.set(x, "used_global_handles_size", value.asInstanceOf[js.Any])
       
       inline def setUsed_heap_size(value: Double): Self = StObject.set(x, "used_heap_size", value.asInstanceOf[js.Any])
     }
@@ -562,4 +743,249 @@ object v8Mod {
       inline def setSpace_used_size(value: Double): Self = StObject.set(x, "space_used_size", value.asInstanceOf[js.Any])
     }
   }
+  
+  trait HeapSpaceStatistics extends StObject {
+    
+    var physicalSpaceSize: Double
+    
+    var spaceAvailableSize: Double
+    
+    var spaceName: String
+    
+    var spaceSize: Double
+    
+    var spaceUsedSize: Double
+  }
+  object HeapSpaceStatistics {
+    
+    inline def apply(
+      physicalSpaceSize: Double,
+      spaceAvailableSize: Double,
+      spaceName: String,
+      spaceSize: Double,
+      spaceUsedSize: Double
+    ): HeapSpaceStatistics = {
+      val __obj = js.Dynamic.literal(physicalSpaceSize = physicalSpaceSize.asInstanceOf[js.Any], spaceAvailableSize = spaceAvailableSize.asInstanceOf[js.Any], spaceName = spaceName.asInstanceOf[js.Any], spaceSize = spaceSize.asInstanceOf[js.Any], spaceUsedSize = spaceUsedSize.asInstanceOf[js.Any])
+      __obj.asInstanceOf[HeapSpaceStatistics]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeapSpaceStatistics] (val x: Self) extends AnyVal {
+      
+      inline def setPhysicalSpaceSize(value: Double): Self = StObject.set(x, "physicalSpaceSize", value.asInstanceOf[js.Any])
+      
+      inline def setSpaceAvailableSize(value: Double): Self = StObject.set(x, "spaceAvailableSize", value.asInstanceOf[js.Any])
+      
+      inline def setSpaceName(value: String): Self = StObject.set(x, "spaceName", value.asInstanceOf[js.Any])
+      
+      inline def setSpaceSize(value: Double): Self = StObject.set(x, "spaceSize", value.asInstanceOf[js.Any])
+      
+      inline def setSpaceUsedSize(value: Double): Self = StObject.set(x, "spaceUsedSize", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait HeapStatistics extends StObject {
+    
+    var externalMemory: Double
+    
+    var heapSizeLimit: Double
+    
+    var mallocedMemory: Double
+    
+    var peakMallocedMemory: Double
+    
+    var totalAvailableSize: Double
+    
+    var totalGlobalHandlesSize: Double
+    
+    var totalHeapSize: Double
+    
+    var totalHeapSizeExecutable: Double
+    
+    var totalPhysicalSize: Double
+    
+    var usedGlobalHandlesSize: Double
+    
+    var usedHeapSize: Double
+  }
+  object HeapStatistics {
+    
+    inline def apply(
+      externalMemory: Double,
+      heapSizeLimit: Double,
+      mallocedMemory: Double,
+      peakMallocedMemory: Double,
+      totalAvailableSize: Double,
+      totalGlobalHandlesSize: Double,
+      totalHeapSize: Double,
+      totalHeapSizeExecutable: Double,
+      totalPhysicalSize: Double,
+      usedGlobalHandlesSize: Double,
+      usedHeapSize: Double
+    ): HeapStatistics = {
+      val __obj = js.Dynamic.literal(externalMemory = externalMemory.asInstanceOf[js.Any], heapSizeLimit = heapSizeLimit.asInstanceOf[js.Any], mallocedMemory = mallocedMemory.asInstanceOf[js.Any], peakMallocedMemory = peakMallocedMemory.asInstanceOf[js.Any], totalAvailableSize = totalAvailableSize.asInstanceOf[js.Any], totalGlobalHandlesSize = totalGlobalHandlesSize.asInstanceOf[js.Any], totalHeapSize = totalHeapSize.asInstanceOf[js.Any], totalHeapSizeExecutable = totalHeapSizeExecutable.asInstanceOf[js.Any], totalPhysicalSize = totalPhysicalSize.asInstanceOf[js.Any], usedGlobalHandlesSize = usedGlobalHandlesSize.asInstanceOf[js.Any], usedHeapSize = usedHeapSize.asInstanceOf[js.Any])
+      __obj.asInstanceOf[HeapStatistics]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeapStatistics] (val x: Self) extends AnyVal {
+      
+      inline def setExternalMemory(value: Double): Self = StObject.set(x, "externalMemory", value.asInstanceOf[js.Any])
+      
+      inline def setHeapSizeLimit(value: Double): Self = StObject.set(x, "heapSizeLimit", value.asInstanceOf[js.Any])
+      
+      inline def setMallocedMemory(value: Double): Self = StObject.set(x, "mallocedMemory", value.asInstanceOf[js.Any])
+      
+      inline def setPeakMallocedMemory(value: Double): Self = StObject.set(x, "peakMallocedMemory", value.asInstanceOf[js.Any])
+      
+      inline def setTotalAvailableSize(value: Double): Self = StObject.set(x, "totalAvailableSize", value.asInstanceOf[js.Any])
+      
+      inline def setTotalGlobalHandlesSize(value: Double): Self = StObject.set(x, "totalGlobalHandlesSize", value.asInstanceOf[js.Any])
+      
+      inline def setTotalHeapSize(value: Double): Self = StObject.set(x, "totalHeapSize", value.asInstanceOf[js.Any])
+      
+      inline def setTotalHeapSizeExecutable(value: Double): Self = StObject.set(x, "totalHeapSizeExecutable", value.asInstanceOf[js.Any])
+      
+      inline def setTotalPhysicalSize(value: Double): Self = StObject.set(x, "totalPhysicalSize", value.asInstanceOf[js.Any])
+      
+      inline def setUsedGlobalHandlesSize(value: Double): Self = StObject.set(x, "usedGlobalHandlesSize", value.asInstanceOf[js.Any])
+      
+      inline def setUsedHeapSize(value: Double): Self = StObject.set(x, "usedHeapSize", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /**
+    * Key events in the lifetime of a promise have been categorized into four areas: creation of a promise, before/after a continuation handler is called or
+    * around an await, and when the promise resolves or rejects.
+    *
+    * Because promises are asynchronous resources whose lifecycle is tracked via the promise hooks mechanism, the `init()`, `before()`, `after()`, and
+    * `settled()` callbacks must not be async functions as they create more promises which would produce an infinite loop.
+    * @since v17.1.0, v16.14.0
+    */
+  trait HookCallbacks extends StObject {
+    
+    var after: js.UndefOr[After] = js.undefined
+    
+    var before: js.UndefOr[Before] = js.undefined
+    
+    var init: js.UndefOr[Init] = js.undefined
+    
+    var settled: js.UndefOr[Settled] = js.undefined
+  }
+  object HookCallbacks {
+    
+    inline def apply(): HookCallbacks = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[HookCallbacks]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HookCallbacks] (val x: Self) extends AnyVal {
+      
+      inline def setAfter(value: /* promise */ js.Promise[Any] => Unit): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
+      
+      inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+      
+      inline def setBefore(value: /* promise */ js.Promise[Any] => Unit): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
+      
+      inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+      
+      inline def setInit(value: (/* promise */ js.Promise[Any], /* parent */ js.Promise[Any]) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
+      
+      inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+      
+      inline def setSettled(value: /* promise */ js.Promise[Any] => Unit): Self = StObject.set(x, "settled", js.Any.fromFunction1(value))
+      
+      inline def setSettledUndefined: Self = StObject.set(x, "settled", js.undefined)
+    }
+  }
+  
+  /**
+    * Called when a promise is constructed. This does not mean that corresponding before/after events will occur, only that the possibility exists. This will
+    * happen if a promise is created without ever getting a continuation.
+    * @since v17.1.0, v16.14.0
+    * @param promise The promise being created.
+    * @param parent The promise continued from, if applicable.
+    */
+  type Init = js.Function2[/* promise */ js.Promise[Any], /* parent */ js.Promise[Any], Unit]
+  
+  trait PromiseHooks_ extends StObject {
+    
+    /**
+      * Registers functions to be called for different lifetime events of each promise.
+      * The callbacks `init()`/`before()`/`after()`/`settled()` are called for the respective events during a promise's lifetime.
+      * All callbacks are optional. For example, if only promise creation needs to be tracked, then only the init callback needs to be passed.
+      * The hook callbacks must be plain functions. Providing async functions will throw as it would produce an infinite microtask loop.
+      * @since v17.1.0, v16.14.0
+      * @param callbacks The {@link HookCallbacks | Hook Callbacks} to register
+      * @return Used for disabling hooks
+      */
+    def createHook(callbacks: HookCallbacks): js.Function
+    
+    /**
+      * The `after` hook must be a plain function. Providing an async function will throw as it would produce an infinite microtask loop.
+      * @since v17.1.0, v16.14.0
+      * @param after The {@link After | `after` callback} to call after a promise continuation executes.
+      * @return Call to stop the hook.
+      */
+    def onAfter(after: After): js.Function
+    
+    /**
+      * The `before` hook must be a plain function. Providing an async function will throw as it would produce an infinite microtask loop.
+      * @since v17.1.0, v16.14.0
+      * @param before The {@link Before | `before` callback} to call before a promise continuation executes.
+      * @return Call to stop the hook.
+      */
+    def onBefore(before: Before): js.Function
+    
+    /**
+      * The `init` hook must be a plain function. Providing an async function will throw as it would produce an infinite microtask loop.
+      * @since v17.1.0, v16.14.0
+      * @param init The {@link Init | `init` callback} to call when a promise is created.
+      * @return Call to stop the hook.
+      */
+    def onInit(init: Init): js.Function
+    
+    /**
+      * The `settled` hook must be a plain function. Providing an async function will throw as it would produce an infinite microtask loop.
+      * @since v17.1.0, v16.14.0
+      * @param settled The {@link Settled | `settled` callback} to call when a promise is created.
+      * @return Call to stop the hook.
+      */
+    def onSettled(settled: Settled): js.Function
+  }
+  object PromiseHooks_ {
+    
+    inline def apply(
+      createHook: HookCallbacks => js.Function,
+      onAfter: After => js.Function,
+      onBefore: Before => js.Function,
+      onInit: Init => js.Function,
+      onSettled: Settled => js.Function
+    ): PromiseHooks_ = {
+      val __obj = js.Dynamic.literal(createHook = js.Any.fromFunction1(createHook), onAfter = js.Any.fromFunction1(onAfter), onBefore = js.Any.fromFunction1(onBefore), onInit = js.Any.fromFunction1(onInit), onSettled = js.Any.fromFunction1(onSettled))
+      __obj.asInstanceOf[PromiseHooks_]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromiseHooks_] (val x: Self) extends AnyVal {
+      
+      inline def setCreateHook(value: HookCallbacks => js.Function): Self = StObject.set(x, "createHook", js.Any.fromFunction1(value))
+      
+      inline def setOnAfter(value: After => js.Function): Self = StObject.set(x, "onAfter", js.Any.fromFunction1(value))
+      
+      inline def setOnBefore(value: Before => js.Function): Self = StObject.set(x, "onBefore", js.Any.fromFunction1(value))
+      
+      inline def setOnInit(value: Init => js.Function): Self = StObject.set(x, "onInit", js.Any.fromFunction1(value))
+      
+      inline def setOnSettled(value: Settled => js.Function): Self = StObject.set(x, "onSettled", js.Any.fromFunction1(value))
+    }
+  }
+  
+  /**
+    * Called when the promise receives a resolution or rejection value. This may occur synchronously in the case of {@link Promise.resolve()} or
+    * {@link Promise.reject()}.
+    * @since v17.1.0, v16.14.0
+    */
+  type Settled = js.Function1[/* promise */ js.Promise[Any], Unit]
 }

@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait XRSessionInit extends StObject {
   
+  var depthSensing: js.UndefOr[XRDepthStateInit] = js.undefined
+  
   var domOverlay: js.UndefOr[XRDOMOverlayInit] = js.undefined
   
   var optionalFeatures: js.UndefOr[js.Array[String]] = js.undefined
@@ -26,6 +28,10 @@ object XRSessionInit {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: XRSessionInit] (val x: Self) extends AnyVal {
+    
+    inline def setDepthSensing(value: XRDepthStateInit): Self = StObject.set(x, "depthSensing", value.asInstanceOf[js.Any])
+    
+    inline def setDepthSensingUndefined: Self = StObject.set(x, "depthSensing", js.undefined)
     
     inline def setDomOverlay(value: XRDOMOverlayInit): Self = StObject.set(x, "domOverlay", value.asInstanceOf[js.Any])
     

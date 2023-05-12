@@ -1,6 +1,7 @@
 package typings.svgSprite
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.vinyl.mod.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -91,12 +92,34 @@ object anon {
     }
   }
   
+  trait Data extends StObject {
+    
+    var data: Any
+    
+    var result: Any
+  }
+  object Data {
+    
+    inline def apply(data: Any, result: Any): Data = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Data]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+      
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Generator extends StObject {
     
     /**
       * SVG shape ID generator callback
       */
-    var generator: js.UndefOr[String | (js.Function1[/* svg */ String, String])] = js.undefined
+    var generator: js.UndefOr[String | (js.Function2[/* svg */ String, /* file */ File, String])] = js.undefined
     
     /**
       * File name separator for shape states (e.g. ':hover')
@@ -123,9 +146,9 @@ object anon {
     @scala.inline
     implicit open class MutableBuilder[Self <: Generator] (val x: Self) extends AnyVal {
       
-      inline def setGenerator(value: String | (js.Function1[/* svg */ String, String])): Self = StObject.set(x, "generator", value.asInstanceOf[js.Any])
+      inline def setGenerator(value: String | (js.Function2[/* svg */ String, /* file */ File, String])): Self = StObject.set(x, "generator", value.asInstanceOf[js.Any])
       
-      inline def setGeneratorFunction1(value: /* svg */ String => String): Self = StObject.set(x, "generator", js.Any.fromFunction1(value))
+      inline def setGeneratorFunction2(value: (/* svg */ String, /* file */ File) => String): Self = StObject.set(x, "generator", js.Any.fromFunction2(value))
       
       inline def setGeneratorUndefined: Self = StObject.set(x, "generator", js.undefined)
       

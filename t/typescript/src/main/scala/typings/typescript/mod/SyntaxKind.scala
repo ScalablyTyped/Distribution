@@ -35,6 +35,7 @@ object SyntaxKind extends StObject {
        with SyntaxKind
        with CompoundAssignmentOperator
        with LogicalOrCoalescingAssignmentOperator
+       with PunctuationSyntaxKind
   /* 76 */ val AmpersandAmpersandEqualsToken: typings.typescript.mod.SyntaxKind.AmpersandAmpersandEqualsToken & Double = js.native
   
   @js.native
@@ -208,6 +209,7 @@ object SyntaxKind extends StObject {
        with SyntaxKind
        with CompoundAssignmentOperator
        with LogicalOrCoalescingAssignmentOperator
+       with PunctuationSyntaxKind
   /* 75 */ val BarBarEqualsToken: typings.typescript.mod.SyntaxKind.BarBarEqualsToken & Double = js.native
   
   @js.native
@@ -413,7 +415,7 @@ object SyntaxKind extends StObject {
   sealed trait CommaListExpression
     extends StObject
        with SyntaxKind
-  /* 354 */ val CommaListExpression: typings.typescript.mod.SyntaxKind.CommaListExpression & Double = js.native
+  /* 357 */ val CommaListExpression: typings.typescript.mod.SyntaxKind.CommaListExpression & Double = js.native
   
   @js.native
   sealed trait CommaToken
@@ -500,7 +502,7 @@ object SyntaxKind extends StObject {
   sealed trait Count
     extends StObject
        with SyntaxKind
-  /* 358 */ val Count: typings.typescript.mod.SyntaxKind.Count & Double = js.native
+  /* 361 */ val Count: typings.typescript.mod.SyntaxKind.Count & Double = js.native
   
   @js.native
   sealed trait DebuggerKeyword
@@ -607,7 +609,7 @@ object SyntaxKind extends StObject {
   sealed trait EndOfDeclarationMarker
     extends StObject
        with SyntaxKind
-  /* 356 */ val EndOfDeclarationMarker: typings.typescript.mod.SyntaxKind.EndOfDeclarationMarker & Double = js.native
+  /* 359 */ val EndOfDeclarationMarker: typings.typescript.mod.SyntaxKind.EndOfDeclarationMarker & Double = js.native
   
   @js.native
   sealed trait EndOfFileToken
@@ -1100,7 +1102,7 @@ object SyntaxKind extends StObject {
        with SyntaxKind
   /* 192 */ val InferType: typings.typescript.mod.SyntaxKind.InferType & Double = js.native
   
-  @js.native
+  /** @deprecated */ @js.native
   sealed trait InputFiles
     extends StObject
        with SyntaxKind
@@ -1201,7 +1203,7 @@ object SyntaxKind extends StObject {
   sealed trait JSDocEnumTag
     extends StObject
        with SyntaxKind
-  /* 342 */ val JSDocEnumTag: typings.typescript.mod.SyntaxKind.JSDocEnumTag & Double = js.native
+  /* 343 */ val JSDocEnumTag: typings.typescript.mod.SyntaxKind.JSDocEnumTag & Double = js.native
   
   @js.native
   sealed trait JSDocFunctionType
@@ -1270,6 +1272,12 @@ object SyntaxKind extends StObject {
   /* 319 */ val JSDocOptionalType: typings.typescript.mod.SyntaxKind.JSDocOptionalType & Double = js.native
   
   @js.native
+  sealed trait JSDocOverloadTag
+    extends StObject
+       with SyntaxKind
+  /* 342 */ val JSDocOverloadTag: typings.typescript.mod.SyntaxKind.JSDocOverloadTag & Double = js.native
+  
+  @js.native
   sealed trait JSDocOverrideTag
     extends StObject
        with SyntaxKind
@@ -1279,7 +1287,7 @@ object SyntaxKind extends StObject {
   sealed trait JSDocParameterTag
     extends StObject
        with SyntaxKind
-  /* 343 */ val JSDocParameterTag: typings.typescript.mod.SyntaxKind.JSDocParameterTag & Double = js.native
+  /* 344 */ val JSDocParameterTag: typings.typescript.mod.SyntaxKind.JSDocParameterTag & Double = js.native
   
   @js.native
   sealed trait JSDocPrivateTag
@@ -1291,7 +1299,7 @@ object SyntaxKind extends StObject {
   sealed trait JSDocPropertyTag
     extends StObject
        with SyntaxKind
-  /* 350 */ val JSDocPropertyTag: typings.typescript.mod.SyntaxKind.JSDocPropertyTag & Double = js.native
+  /* 351 */ val JSDocPropertyTag: typings.typescript.mod.SyntaxKind.JSDocPropertyTag & Double = js.native
   
   @js.native
   sealed trait JSDocProtectedTag
@@ -1315,13 +1323,19 @@ object SyntaxKind extends StObject {
   sealed trait JSDocReturnTag
     extends StObject
        with SyntaxKind
-  /* 344 */ val JSDocReturnTag: typings.typescript.mod.SyntaxKind.JSDocReturnTag & Double = js.native
+  /* 345 */ val JSDocReturnTag: typings.typescript.mod.SyntaxKind.JSDocReturnTag & Double = js.native
+  
+  @js.native
+  sealed trait JSDocSatisfiesTag
+    extends StObject
+       with SyntaxKind
+  /* 353 */ val JSDocSatisfiesTag: typings.typescript.mod.SyntaxKind.JSDocSatisfiesTag & Double = js.native
   
   @js.native
   sealed trait JSDocSeeTag
     extends StObject
        with SyntaxKind
-  /* 349 */ val JSDocSeeTag: typings.typescript.mod.SyntaxKind.JSDocSeeTag & Double = js.native
+  /* 350 */ val JSDocSeeTag: typings.typescript.mod.SyntaxKind.JSDocSeeTag & Double = js.native
   
   @js.native
   sealed trait JSDocSignature
@@ -1339,7 +1353,7 @@ object SyntaxKind extends StObject {
   sealed trait JSDocTemplateTag
     extends StObject
        with SyntaxKind
-  /* 347 */ val JSDocTemplateTag: typings.typescript.mod.SyntaxKind.JSDocTemplateTag & Double = js.native
+  /* 348 */ val JSDocTemplateTag: typings.typescript.mod.SyntaxKind.JSDocTemplateTag & Double = js.native
   
   @js.native
   sealed trait JSDocText
@@ -1351,7 +1365,13 @@ object SyntaxKind extends StObject {
   sealed trait JSDocThisTag
     extends StObject
        with SyntaxKind
-  /* 345 */ val JSDocThisTag: typings.typescript.mod.SyntaxKind.JSDocThisTag & Double = js.native
+  /* 346 */ val JSDocThisTag: typings.typescript.mod.SyntaxKind.JSDocThisTag & Double = js.native
+  
+  @js.native
+  sealed trait JSDocThrowsTag
+    extends StObject
+       with SyntaxKind
+  /* 352 */ val JSDocThrowsTag: typings.typescript.mod.SyntaxKind.JSDocThrowsTag & Double = js.native
   
   @js.native
   sealed trait JSDocTypeExpression
@@ -1369,13 +1389,13 @@ object SyntaxKind extends StObject {
   sealed trait JSDocTypeTag
     extends StObject
        with SyntaxKind
-  /* 346 */ val JSDocTypeTag: typings.typescript.mod.SyntaxKind.JSDocTypeTag & Double = js.native
+  /* 347 */ val JSDocTypeTag: typings.typescript.mod.SyntaxKind.JSDocTypeTag & Double = js.native
   
   @js.native
   sealed trait JSDocTypedefTag
     extends StObject
        with SyntaxKind
-  /* 348 */ val JSDocTypedefTag: typings.typescript.mod.SyntaxKind.JSDocTypedefTag & Double = js.native
+  /* 349 */ val JSDocTypedefTag: typings.typescript.mod.SyntaxKind.JSDocTypedefTag & Double = js.native
   
   @js.native
   sealed trait JSDocUnknownType
@@ -1512,13 +1532,13 @@ object SyntaxKind extends StObject {
   sealed trait LastJSDocNode
     extends StObject
        with SyntaxKind
-  /* 350 */ val LastJSDocNode: typings.typescript.mod.SyntaxKind.LastJSDocNode & Double = js.native
+  /* 353 */ val LastJSDocNode: typings.typescript.mod.SyntaxKind.LastJSDocNode & Double = js.native
   
   @js.native
   sealed trait LastJSDocTagNode
     extends StObject
        with SyntaxKind
-  /* 350 */ val LastJSDocTagNode: typings.typescript.mod.SyntaxKind.LastJSDocTagNode & Double = js.native
+  /* 353 */ val LastJSDocTagNode: typings.typescript.mod.SyntaxKind.LastJSDocTagNode & Double = js.native
   
   @js.native
   sealed trait LastKeyword
@@ -1639,7 +1659,7 @@ object SyntaxKind extends StObject {
   sealed trait MergeDeclarationMarker
     extends StObject
        with SyntaxKind
-  /* 355 */ val MergeDeclarationMarker: typings.typescript.mod.SyntaxKind.MergeDeclarationMarker & Double = js.native
+  /* 358 */ val MergeDeclarationMarker: typings.typescript.mod.SyntaxKind.MergeDeclarationMarker & Double = js.native
   
   @js.native
   sealed trait MetaProperty
@@ -1807,7 +1827,7 @@ object SyntaxKind extends StObject {
   sealed trait NotEmittedStatement
     extends StObject
        with SyntaxKind
-  /* 352 */ val NotEmittedStatement: typings.typescript.mod.SyntaxKind.NotEmittedStatement & Double = js.native
+  /* 355 */ val NotEmittedStatement: typings.typescript.mod.SyntaxKind.NotEmittedStatement & Double = js.native
   
   @js.native
   sealed trait NullKeyword
@@ -1939,7 +1959,7 @@ object SyntaxKind extends StObject {
   sealed trait PartiallyEmittedExpression
     extends StObject
        with SyntaxKind
-  /* 353 */ val PartiallyEmittedExpression: typings.typescript.mod.SyntaxKind.PartiallyEmittedExpression & Double = js.native
+  /* 356 */ val PartiallyEmittedExpression: typings.typescript.mod.SyntaxKind.PartiallyEmittedExpression & Double = js.native
   
   @js.native
   sealed trait PercentEqualsToken
@@ -2068,6 +2088,7 @@ object SyntaxKind extends StObject {
        with SyntaxKind
        with CompoundAssignmentOperator
        with LogicalOrCoalescingAssignmentOperator
+       with PunctuationSyntaxKind
   /* 77 */ val QuestionQuestionEqualsToken: typings.typescript.mod.SyntaxKind.QuestionQuestionEqualsToken & Double = js.native
   
   @js.native
@@ -2275,7 +2296,7 @@ object SyntaxKind extends StObject {
   sealed trait SyntaxList
     extends StObject
        with SyntaxKind
-  /* 351 */ val SyntaxList: typings.typescript.mod.SyntaxKind.SyntaxList & Double = js.native
+  /* 354 */ val SyntaxList: typings.typescript.mod.SyntaxKind.SyntaxList & Double = js.native
   
   @js.native
   sealed trait SyntheticExpression
@@ -2287,7 +2308,7 @@ object SyntaxKind extends StObject {
   sealed trait SyntheticReferenceExpression
     extends StObject
        with SyntaxKind
-  /* 357 */ val SyntheticReferenceExpression: typings.typescript.mod.SyntaxKind.SyntheticReferenceExpression & Double = js.native
+  /* 360 */ val SyntheticReferenceExpression: typings.typescript.mod.SyntaxKind.SyntheticReferenceExpression & Double = js.native
   
   @js.native
   sealed trait TaggedTemplateExpression
@@ -2505,37 +2526,37 @@ object SyntaxKind extends StObject {
        with KeywordTypeSyntaxKind
   /* 157 */ val UnknownKeyword: typings.typescript.mod.SyntaxKind.UnknownKeyword & Double = js.native
   
-  @js.native
+  /** @deprecated */ @js.native
   sealed trait UnparsedInternalText
     extends StObject
        with SyntaxKind
   /* 306 */ val UnparsedInternalText: typings.typescript.mod.SyntaxKind.UnparsedInternalText & Double = js.native
   
-  @js.native
+  /** @deprecated */ @js.native
   sealed trait UnparsedPrepend
     extends StObject
        with SyntaxKind
   /* 304 */ val UnparsedPrepend: typings.typescript.mod.SyntaxKind.UnparsedPrepend & Double = js.native
   
-  @js.native
+  /** @deprecated */ @js.native
   sealed trait UnparsedPrologue
     extends StObject
        with SyntaxKind
   /* 303 */ val UnparsedPrologue: typings.typescript.mod.SyntaxKind.UnparsedPrologue & Double = js.native
   
-  @js.native
+  /** @deprecated */ @js.native
   sealed trait UnparsedSource
     extends StObject
        with SyntaxKind
   /* 310 */ val UnparsedSource: typings.typescript.mod.SyntaxKind.UnparsedSource & Double = js.native
   
-  @js.native
+  /** @deprecated */ @js.native
   sealed trait UnparsedSyntheticReference
     extends StObject
        with SyntaxKind
   /* 307 */ val UnparsedSyntheticReference: typings.typescript.mod.SyntaxKind.UnparsedSyntheticReference & Double = js.native
   
-  @js.native
+  /** @deprecated */ @js.native
   sealed trait UnparsedText
     extends StObject
        with SyntaxKind

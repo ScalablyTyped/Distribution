@@ -12,7 +12,7 @@ open class ScatterChart protected ()
   def this(props: ScatterChartProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: ScatterChartProps, context: Any) = this()
 }

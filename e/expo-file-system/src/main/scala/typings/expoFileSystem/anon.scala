@@ -5,8 +5,7 @@ import typings.expoFileSystem.buildFileSystemDottypesMod.FileSystemAcceptedUploa
 import typings.expoFileSystem.buildFileSystemDottypesMod.FileSystemRequestDirectoryPermissionsResult
 import typings.expoFileSystem.buildFileSystemDottypesMod.FileSystemSessionType
 import typings.expoFileSystem.buildFileSystemDottypesMod.FileSystemUploadOptions
-import typings.expoFileSystem.buildFileSystemDottypesMod.FileSystemUploadType.BINARY_CONTENT
-import typings.expoFileSystem.buildFileSystemDottypesMod.FileSystemUploadType.MULTIPART
+import typings.expoFileSystem.buildFileSystemDottypesMod.FileSystemUploadType
 import typings.expoFileSystem.expoFileSystemBooleans.`false`
 import typings.expoFileSystem.expoFileSystemBooleans.`true`
 import typings.std.Record
@@ -16,10 +15,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
+  /**
+    * If the permissions were granted.
+    */
   trait DirectoryUri
     extends StObject
        with FileSystemRequestDirectoryPermissionsResult {
     
+    /**
+      * The [SAF URI](#saf-uri) to the user's selected directory. Available only if permissions were granted.
+      */
     var directoryUri: String
     
     var granted: `true`
@@ -40,20 +45,41 @@ object anon {
     }
   }
   
+  /**
+    * Object returned when file exist.
+    */
   trait Exists
     extends StObject
        with FileInfo {
     
+    /**
+      * Signifies that the requested file exist.
+      */
     var exists: `true`
     
+    /**
+      * Boolean set to `true` if this is a directory and `false` if it is a file.
+      */
     var isDirectory: Boolean
     
+    /**
+      * Present if the `md5` option was truthy. Contains the MD5 hash of the file.
+      */
     var md5: js.UndefOr[String] = js.undefined
     
+    /**
+      * The last modification time of the file expressed in seconds since epoch.
+      */
     var modificationTime: Double
     
+    /**
+      * The size of the file in bytes. If operating on a source such as an iCloud file, only present if the `size` option was truthy.
+      */
     var size: Double
     
+    /**
+      * A `file://` URI pointing to the file. This is the same as the `fileUri` input parameter.
+      */
     var uri: String
   }
   object Exists {
@@ -82,28 +108,9 @@ object anon {
     }
   }
   
-  trait From extends StObject {
-    
-    var from: String
-    
-    var to: String
-  }
-  object From {
-    
-    inline def apply(from: String, to: String): From = {
-      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
-      __obj.asInstanceOf[From]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: From] (val x: Self) extends AnyVal {
-      
-      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
-      
-      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
-    }
-  }
-  
+  /**
+    * If the permissions were not granted.
+    */
   trait Granted
     extends StObject
        with FileSystemRequestDirectoryPermissionsResult {
@@ -124,46 +131,9 @@ object anon {
     }
   }
   
-  trait Idempotent extends StObject {
-    
-    var idempotent: js.UndefOr[Boolean] = js.undefined
-  }
-  object Idempotent {
-    
-    inline def apply(): Idempotent = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Idempotent]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Idempotent] (val x: Self) extends AnyVal {
-      
-      inline def setIdempotent(value: Boolean): Self = StObject.set(x, "idempotent", value.asInstanceOf[js.Any])
-      
-      inline def setIdempotentUndefined: Self = StObject.set(x, "idempotent", js.undefined)
-    }
-  }
-  
-  trait Intermediates extends StObject {
-    
-    var intermediates: js.UndefOr[Boolean] = js.undefined
-  }
-  object Intermediates {
-    
-    inline def apply(): Intermediates = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Intermediates]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Intermediates] (val x: Self) extends AnyVal {
-      
-      inline def setIntermediates(value: Boolean): Self = StObject.set(x, "intermediates", value.asInstanceOf[js.Any])
-      
-      inline def setIntermediatesUndefined: Self = StObject.set(x, "intermediates", js.undefined)
-    }
-  }
-  
+  /**
+    * Object returned when file do not exist.
+    */
   trait IsDirectory
     extends StObject
        with FileInfo {
@@ -172,18 +142,12 @@ object anon {
     
     var isDirectory: `false`
     
-    var md5: Unit
-    
-    var modificationTime: Unit
-    
-    var size: Unit
-    
     var uri: String
   }
   object IsDirectory {
     
-    inline def apply(md5: Unit, modificationTime: Unit, size: Unit, uri: String): IsDirectory = {
-      val __obj = js.Dynamic.literal(exists = false, isDirectory = false, md5 = md5.asInstanceOf[js.Any], modificationTime = modificationTime.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    inline def apply(uri: String): IsDirectory = {
+      val __obj = js.Dynamic.literal(exists = false, isDirectory = false, uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[IsDirectory]
     }
     
@@ -194,64 +158,49 @@ object anon {
       
       inline def setIsDirectory(value: `false`): Self = StObject.set(x, "isDirectory", value.asInstanceOf[js.Any])
       
-      inline def setMd5(value: Unit): Self = StObject.set(x, "md5", value.asInstanceOf[js.Any])
-      
-      inline def setModificationTime(value: Unit): Self = StObject.set(x, "modificationTime", value.asInstanceOf[js.Any])
-      
-      inline def setSize(value: Unit): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
       inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
   }
   
-  trait Md5 extends StObject {
-    
-    var md5: js.UndefOr[Boolean] = js.undefined
-    
-    var size: js.UndefOr[Boolean] = js.undefined
-  }
-  object Md5 {
-    
-    inline def apply(): Md5 = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Md5]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Md5] (val x: Self) extends AnyVal {
-      
-      inline def setMd5(value: Boolean): Self = StObject.set(x, "md5", value.asInstanceOf[js.Any])
-      
-      inline def setMd5Undefined: Self = StObject.set(x, "md5", js.undefined)
-      
-      inline def setSize(value: Boolean): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
-  
-  /* Inlined {  uploadType :expo-file-system.expo-file-system/build/FileSystem.types.FileSystemUploadType.BINARY_CONTENT | undefined} & {  headers :std.Record<string, string> | undefined,   httpMethod :expo-file-system.expo-file-system/build/FileSystem.types.FileSystemAcceptedUploadHttpMethod | undefined,   sessionType :expo-file-system.expo-file-system/build/FileSystem.types.FileSystemSessionType | undefined} */
-  trait uploadTypeBINARYCONTENTun
+  /* Inlined expo-file-system.expo-file-system/build/FileSystem.types.UploadOptionsBinary & {  headers :std.Record<string, string> | undefined,   httpMethod :expo-file-system.expo-file-system/build/FileSystem.types.FileSystemAcceptedUploadHttpMethod | undefined,   sessionType :expo-file-system.expo-file-system/build/FileSystem.types.FileSystemSessionType | undefined} */
+  trait UploadOptionsBinaryheader
     extends StObject
        with FileSystemUploadOptions {
     
+    /**
+      * An object containing all the HTTP header fields and their values for the upload network request.
+      * The keys and values of the object are the header names and values respectively.
+      */
     var headers: js.UndefOr[Record[String, String]] = js.undefined
     
+    /**
+      * The request method.
+      * @default FileSystemAcceptedUploadHttpMethod.POST
+      */
     var httpMethod: js.UndefOr[FileSystemAcceptedUploadHttpMethod] = js.undefined
     
+    /**
+      * A session type. Determines if tasks can be handled in the background. On Android, sessions always work in the background and you can't change it.
+      * @default FileSystemSessionType.BACKGROUND
+      * @platform ios
+      */
     var sessionType: js.UndefOr[FileSystemSessionType] = js.undefined
     
-    var uploadType: js.UndefOr[BINARY_CONTENT] = js.undefined
+    /**
+      * Upload type determines how the file will be sent to the server.
+      * Value will be `FileSystemUploadType.BINARY_CONTENT`.
+      */
+    var uploadType: js.UndefOr[FileSystemUploadType] = js.undefined
   }
-  object uploadTypeBINARYCONTENTun {
+  object UploadOptionsBinaryheader {
     
-    inline def apply(): uploadTypeBINARYCONTENTun = {
+    inline def apply(): UploadOptionsBinaryheader = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[uploadTypeBINARYCONTENTun]
+      __obj.asInstanceOf[UploadOptionsBinaryheader]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: uploadTypeBINARYCONTENTun] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: UploadOptionsBinaryheader] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -265,40 +214,66 @@ object anon {
       
       inline def setSessionTypeUndefined: Self = StObject.set(x, "sessionType", js.undefined)
       
-      inline def setUploadType(value: BINARY_CONTENT): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
+      inline def setUploadType(value: FileSystemUploadType): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
       
       inline def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
     }
   }
   
-  /* Inlined {  uploadType :expo-file-system.expo-file-system/build/FileSystem.types.FileSystemUploadType.MULTIPART,   fieldName :string | undefined,   mimeType :string | undefined,   parameters :std.Record<string, string> | undefined} & {  headers :std.Record<string, string> | undefined,   httpMethod :expo-file-system.expo-file-system/build/FileSystem.types.FileSystemAcceptedUploadHttpMethod | undefined,   sessionType :expo-file-system.expo-file-system/build/FileSystem.types.FileSystemSessionType | undefined} */
-  trait uploadTypeMULTIPARTfieldN
+  /* Inlined expo-file-system.expo-file-system/build/FileSystem.types.UploadOptionsMultipart & {  headers :std.Record<string, string> | undefined,   httpMethod :expo-file-system.expo-file-system/build/FileSystem.types.FileSystemAcceptedUploadHttpMethod | undefined,   sessionType :expo-file-system.expo-file-system/build/FileSystem.types.FileSystemSessionType | undefined} */
+  trait UploadOptionsMultiparthea
     extends StObject
        with FileSystemUploadOptions {
     
+    /**
+      * The name of the field which will hold uploaded file. Defaults to the file name without an extension.
+      */
     var fieldName: js.UndefOr[String] = js.undefined
     
+    /**
+      * An object containing all the HTTP header fields and their values for the upload network request.
+      * The keys and values of the object are the header names and values respectively.
+      */
     var headers: js.UndefOr[Record[String, String]] = js.undefined
     
+    /**
+      * The request method.
+      * @default FileSystemAcceptedUploadHttpMethod.POST
+      */
     var httpMethod: js.UndefOr[FileSystemAcceptedUploadHttpMethod] = js.undefined
     
+    /**
+      * The MIME type of the provided file. If not provided, the module will try to guess it based on the extension.
+      */
     var mimeType: js.UndefOr[String] = js.undefined
     
+    /**
+      * Additional form properties. They will be located in the request body.
+      */
     var parameters: js.UndefOr[Record[String, String]] = js.undefined
     
+    /**
+      * A session type. Determines if tasks can be handled in the background. On Android, sessions always work in the background and you can't change it.
+      * @default FileSystemSessionType.BACKGROUND
+      * @platform ios
+      */
     var sessionType: js.UndefOr[FileSystemSessionType] = js.undefined
     
-    var uploadType: MULTIPART
+    /**
+      * Upload type determines how the file will be sent to the server.
+      * Value will be `FileSystemUploadType.MULTIPART`.
+      */
+    var uploadType: FileSystemUploadType
   }
-  object uploadTypeMULTIPARTfieldN {
+  object UploadOptionsMultiparthea {
     
-    inline def apply(uploadType: MULTIPART): uploadTypeMULTIPARTfieldN = {
+    inline def apply(uploadType: FileSystemUploadType): UploadOptionsMultiparthea = {
       val __obj = js.Dynamic.literal(uploadType = uploadType.asInstanceOf[js.Any])
-      __obj.asInstanceOf[uploadTypeMULTIPARTfieldN]
+      __obj.asInstanceOf[UploadOptionsMultiparthea]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: uploadTypeMULTIPARTfieldN] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: UploadOptionsMultiparthea] (val x: Self) extends AnyVal {
       
       inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
       
@@ -324,7 +299,7 @@ object anon {
       
       inline def setSessionTypeUndefined: Self = StObject.set(x, "sessionType", js.undefined)
       
-      inline def setUploadType(value: MULTIPART): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
+      inline def setUploadType(value: FileSystemUploadType): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     }
   }
 }

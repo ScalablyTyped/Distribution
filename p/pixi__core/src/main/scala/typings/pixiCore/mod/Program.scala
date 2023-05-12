@@ -39,6 +39,29 @@ object Program {
   val ^ : js.Any = js.native
   
   /**
+    * Default specify float precision in fragment shader.
+    * iOS is best set at highp due to https://github.com/pixijs/pixijs/issues/3742
+    * @static
+    * @type {PIXI.PRECISION}
+    * @default PIXI.PRECISION.MEDIUM
+    */
+  @JSImport("@pixi/core", "Program.defaultFragmentPrecision")
+  @js.native
+  def defaultFragmentPrecision: typings.pixiConstants.mod.PRECISION = js.native
+  inline def defaultFragmentPrecision_=(x: typings.pixiConstants.mod.PRECISION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultFragmentPrecision")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Default specify float precision in vertex shader.
+    * @static
+    * @type {PIXI.PRECISION}
+    * @default PIXI.PRECISION.HIGH
+    */
+  @JSImport("@pixi/core", "Program.defaultVertexPrecision")
+  @js.native
+  def defaultVertexPrecision: typings.pixiConstants.mod.PRECISION = js.native
+  inline def defaultVertexPrecision_=(x: typings.pixiConstants.mod.PRECISION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultVertexPrecision")(x.asInstanceOf[js.Any])
+  
+  /**
     * A short hand function to create a program based of a vertex and fragment shader.
     *
     * This method will also check to see if there is a cached program.

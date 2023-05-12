@@ -4,12 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Describes the type of location returned from a geocode. Specify these by
-  * value, or by using the constant&#39;s name. For example,
-  * <code>'ROOFTOP'</code> or
-  * <code>google.maps.GeocoderLocationType.ROOFTOP</code>.
-  */
 @JSGlobal("google.maps.GeocoderLocationType")
 @js.native
 object GeocoderLocationType extends StObject {

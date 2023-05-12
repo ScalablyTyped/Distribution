@@ -1,7 +1,7 @@
 
 # Scala.js typings for gulp-replace
 
-Typings are for version 1.1.3
+Typings are for version 1.1.4
 
 ## Library description:
 A string replace plugin for gulp

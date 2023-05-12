@@ -10,6 +10,8 @@ trait Encoding extends StObject {
   
   var encoding: buffer_
   
+  var recursive: js.UndefOr[Boolean] = js.undefined
+  
   var withFileTypes: js.UndefOr[`false`] = js.undefined
 }
 object Encoding {
@@ -23,6 +25,10 @@ object Encoding {
   implicit open class MutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: buffer_): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    
+    inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    
+    inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
     
     inline def setWithFileTypes(value: `false`): Self = StObject.set(x, "withFileTypes", value.asInstanceOf[js.Any])
     

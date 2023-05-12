@@ -1,6 +1,7 @@
 package typings.googleCloudTextToSpeech.buildProtosProtosMod.google.protobuf
 
 import typings.googleCloudTextToSpeech.buildProtosProtosMod.google.api.IHttpRule
+import typings.googleCloudTextToSpeech.buildProtosProtosMod.google.longrunning.IOperationInfo
 import typings.googleCloudTextToSpeech.buildProtosProtosMod.google.protobuf.MethodOptions.IdempotencyLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,6 +17,10 @@ trait IMethodOptions extends StObject {
   /** MethodOptions .google.api.methodSignature */
   @JSName(".google.api.methodSignature")
   var DotgoogleDotapiDotmethodSignature: js.UndefOr[js.Array[String] | Null] = js.undefined
+  
+  /** MethodOptions .google.longrunning.operationInfo */
+  @JSName(".google.longrunning.operationInfo")
+  var DotgoogleDotlongrunningDotoperationInfo: js.UndefOr[IOperationInfo | Null] = js.undefined
   
   /** MethodOptions deprecated */
   var deprecated: js.UndefOr[Boolean | Null] = js.undefined
@@ -57,6 +62,12 @@ object IMethodOptions {
     inline def setDotgoogleDotapiDotmethodSignatureUndefined: Self = StObject.set(x, ".google.api.methodSignature", js.undefined)
     
     inline def setDotgoogleDotapiDotmethodSignatureVarargs(value: String*): Self = StObject.set(x, ".google.api.methodSignature", js.Array(value*))
+    
+    inline def setDotgoogleDotlongrunningDotoperationInfo(value: IOperationInfo): Self = StObject.set(x, ".google.longrunning.operationInfo", value.asInstanceOf[js.Any])
+    
+    inline def setDotgoogleDotlongrunningDotoperationInfoNull: Self = StObject.set(x, ".google.longrunning.operationInfo", null)
+    
+    inline def setDotgoogleDotlongrunningDotoperationInfoUndefined: Self = StObject.set(x, ".google.longrunning.operationInfo", js.undefined)
     
     inline def setIdempotencyLevel(
       value: IdempotencyLevel | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.MethodOptions.IdempotencyLevel * / any */ String)

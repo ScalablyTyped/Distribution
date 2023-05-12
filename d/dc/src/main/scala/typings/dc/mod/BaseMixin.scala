@@ -22,57 +22,12 @@ trait BaseMixin[T] extends StObject {
   @JSName("addFilterHandler")
   var addFilterHandler_Original: IGetSet[js.Function1[/* filters */ js.Array[Any], js.Array[Any]], T] = js.native
   
-  def anchor(anchor: String): Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ] = js.native
-  def anchor(anchor: String, chartGroup: String): Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ] = js.native
-  def anchor(
-    anchor: Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ]
-  ): Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ] = js.native
-  def anchor(
-    anchor: Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ],
-    chartGroup: String
-  ): Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ] = js.native
-  def anchor(anchor: BaseMixin[Any]): Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ] = js.native
-  def anchor(anchor: BaseMixin[Any], chartGroup: String): Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ] = js.native
+  def anchor(anchor: String): Selection_[BaseType, Any, BaseType, Any] = js.native
+  def anchor(anchor: String, chartGroup: String): Selection_[BaseType, Any, BaseType, Any] = js.native
+  def anchor(anchor: Selection_[BaseType, Any, BaseType, Any]): Selection_[BaseType, Any, BaseType, Any] = js.native
+  def anchor(anchor: Selection_[BaseType, Any, BaseType, Any], chartGroup: String): Selection_[BaseType, Any, BaseType, Any] = js.native
+  def anchor(anchor: BaseMixin[Any]): Selection_[BaseType, Any, BaseType, Any] = js.native
+  def anchor(anchor: BaseMixin[Any], chartGroup: String): Selection_[BaseType, Any, BaseType, Any] = js.native
   
   def anchorName(): String = js.native
   
@@ -226,82 +181,18 @@ trait BaseMixin[T] extends StObject {
   @JSName("resetFilterHandler")
   var resetFilterHandler_Original: IGetSet[js.Function1[/* filters */ js.Array[Any], js.Array[Any]], T] = js.native
   
-  def resetSvg(): Unit = js.native
+  def resetSvg(): Selection_[BaseType, Any, BaseType, Any] = js.native
   
-  def select(selector: String): Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ] = js.native
-  def select(
-    selector: Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ]
-  ): Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ] = js.native
+  def select(selector: String): Selection_[BaseType, Any, BaseType, Any] = js.native
+  def select(selector: Selection_[BaseType, Any, BaseType, Any]): Selection_[BaseType, Any, BaseType, Any] = js.native
   
-  def selectAll(selector: String): Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ] = js.native
-  def selectAll(
-    selector: Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ]
-  ): Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ] = js.native
+  def selectAll(selector: String): Selection_[BaseType, Any, BaseType, Any] = js.native
+  def selectAll(selector: Selection_[BaseType, Any, BaseType, Any]): Selection_[BaseType, Any, BaseType, Any] = js.native
   
-  def svg(): Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ] = js.native
-  def svg(
-    t: Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ]
-  ): Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ] = js.native
+  def svg(): Selection_[BaseType, Any, BaseType, Any] = js.native
+  def svg(t: Selection_[BaseType, Any, BaseType, Any]): Selection_[BaseType, Any, BaseType, Any] = js.native
   @JSName("svg")
-  var svg_Original: IGetSet[
-    Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ], 
-    Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ]
-  ] = js.native
+  var svg_Original: IGetSet[Selection_[BaseType, Any, BaseType, Any], Selection_[BaseType, Any, BaseType, Any]] = js.native
   
   def title(): Accessor[Any, String] = js.native
   def title(t: Accessor[Any, String]): T = js.native

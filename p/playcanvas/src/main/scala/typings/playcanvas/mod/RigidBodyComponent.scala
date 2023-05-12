@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ```javascript
   * // Create a static 1x1x1 box-shaped rigid body
   * const entity = pc.Entity();
-  * entity.addComponent("rigidbody"); // With no options specified, this defaults to a 'static' body
-  * entity.addComponent("collision"); // With no options specified, this defaults to a 1x1x1 box shape
+  * entity.addComponent("rigidbody"); // Without options, this defaults to a 'static' body
+  * entity.addComponent("collision"); // Without options, this defaults to a 1x1x1 box shape
   * ```
   *
   * To create a dynamic sphere with mass of 10, do:
@@ -46,20 +46,26 @@ open class RigidBodyComponent protected () extends Component {
   /**
     * Create a new RigidBodyComponent instance.
     *
-    * @param {RigidBodyComponentSystem} system - The ComponentSystem that created this component.
-    * @param {Entity} entity - The entity this component is attached to.
+    * @param {import('./system.js').RigidBodyComponentSystem} system - The ComponentSystem that
+    * created this component.
+    * @param {import('../../entity.js').Entity} entity - The entity this component is attached to.
     */
   def this(system: RigidBodyComponentSystem, entity: Entity) = this()
   
-  var _angularDamping: Double = js.native
+  /** @private */
+  /* private */ var _angularDamping: Any = js.native
   
-  var _angularFactor: Vec3 = js.native
+  /** @private */
+  /* private */ var _angularFactor: Any = js.native
   
-  var _angularVelocity: Vec3 = js.native
+  /** @private */
+  /* private */ var _angularVelocity: Any = js.native
   
-  var _body: Any = js.native
+  /** @private */
+  /* private */ var _body: Any = js.native
   
-  var _friction: Double = js.native
+  /** @private */
+  /* private */ var _friction: Any = js.native
   
   /**
     * Writes an entity transform into an Ammo.btTransform but ignoring scale.
@@ -69,25 +75,35 @@ open class RigidBodyComponent protected () extends Component {
     */
   /* private */ var _getEntityTransform: Any = js.native
   
-  var _group: Double = js.native
+  /** @private */
+  /* private */ var _group: Any = js.native
   
-  var _linearDamping: Double = js.native
+  /** @private */
+  /* private */ var _linearDamping: Any = js.native
   
-  var _linearFactor: Vec3 = js.native
+  /** @private */
+  /* private */ var _linearFactor: Any = js.native
   
-  var _linearVelocity: Vec3 = js.native
+  /** @private */
+  /* private */ var _linearVelocity: Any = js.native
   
-  var _mask: Double = js.native
+  /** @private */
+  /* private */ var _mask: Any = js.native
   
-  var _mass: Double = js.native
+  /** @private */
+  /* private */ var _mass: Any = js.native
   
-  var _restitution: Double = js.native
+  /** @private */
+  /* private */ var _restitution: Any = js.native
   
-  var _rollingFriction: Double = js.native
+  /** @private */
+  /* private */ var _rollingFriction: Any = js.native
   
-  var _simulationEnabled: Boolean = js.native
+  /** @private */
+  /* private */ var _simulationEnabled: Any = js.native
   
-  var _type: String = js.native
+  /** @private */
+  /* private */ var _type: Any = js.native
   
   /**
     * Sets an entity's transform to match that of the world transformation matrix of a dynamic
@@ -162,24 +178,31 @@ open class RigidBodyComponent protected () extends Component {
     * @example
     * // Apply a force at the body's center
     * // Calculate a force vector pointing in the world space direction of the entity
-    * var force = this.entity.forward.clone().mulScalar(100);
+    * const force = this.entity.forward.clone().mulScalar(100);
     *
     * // Apply the force
     * this.entity.rigidbody.applyForce(force);
     * @example
     * // Apply a force at some relative offset from the body's center
     * // Calculate a force vector pointing in the world space direction of the entity
-    * var force = this.entity.forward.clone().mulScalar(100);
+    * const force = this.entity.forward.clone().mulScalar(100);
     *
     * // Calculate the world space relative offset
-    * var relativePos = new pc.Vec3();
-    * var childEntity = this.entity.findByName('Engine');
+    * const relativePos = new pc.Vec3();
+    * const childEntity = this.entity.findByName('Engine');
     * relativePos.sub2(childEntity.getPosition(), this.entity.getPosition());
     *
     * // Apply the force
     * this.entity.rigidbody.applyForce(force, relativePos);
     */
-  def applyForce(args: Any*): Unit = js.native
+  def applyForce(
+    x: Vec3 | Double,
+    y: js.UndefOr[Vec3 | Double],
+    z: js.UndefOr[Double],
+    px: js.UndefOr[Double],
+    py: js.UndefOr[Double],
+    pz: js.UndefOr[Double]
+  ): Unit = js.native
   
   /**
     * Apply an impulse (instantaneous change of velocity) to the body at a point. This function
@@ -192,21 +215,21 @@ open class RigidBodyComponent protected () extends Component {
     * at which to apply the impulse in the local-space of the entity or the y-component of the
     * impulse to apply in world-space.
     * @param {number} [z] - The z-component of the impulse to apply in world-space.
-    * @param {number} [px=0] - The x-component of the point at which to apply the impulse in the
+    * @param {number} [px] - The x-component of the point at which to apply the impulse in the
     * local-space of the entity.
-    * @param {number} [py=0] - The y-component of the point at which to apply the impulse in the
+    * @param {number} [py] - The y-component of the point at which to apply the impulse in the
     * local-space of the entity.
-    * @param {number} [pz=0] - The z-component of the point at which to apply the impulse in the
+    * @param {number} [pz] - The z-component of the point at which to apply the impulse in the
     * local-space of the entity.
     * @example
     * // Apply an impulse along the world-space positive y-axis at the entity's position.
-    * var impulse = new pc.Vec3(0, 10, 0);
+    * const impulse = new pc.Vec3(0, 10, 0);
     * entity.rigidbody.applyImpulse(impulse);
     * @example
     * // Apply an impulse along the world-space positive y-axis at 1 unit down the positive
     * // z-axis of the entity's local-space.
-    * var impulse = new pc.Vec3(0, 10, 0);
-    * var relativePoint = new pc.Vec3(0, 0, 1);
+    * const impulse = new pc.Vec3(0, 10, 0);
+    * const relativePoint = new pc.Vec3(0, 0, 1);
     * entity.rigidbody.applyImpulse(impulse, relativePoint);
     * @example
     * // Apply an impulse along the world-space positive y-axis at the entity's position.
@@ -216,8 +239,19 @@ open class RigidBodyComponent protected () extends Component {
     * // z-axis of the entity's local-space.
     * entity.rigidbody.applyImpulse(0, 10, 0, 0, 0, 1);
     */
-  def applyImpulse(args: Any*): Unit = js.native
+  def applyImpulse(
+    x: Vec3 | Double,
+    y: js.UndefOr[Vec3 | Double],
+    z: js.UndefOr[Double],
+    px: js.UndefOr[Double],
+    py: js.UndefOr[Double],
+    pz: js.UndefOr[Double]
+  ): Unit = js.native
   
+  def applyTorque(x: Double): Unit = js.native
+  def applyTorque(x: Double, y: Double): Unit = js.native
+  def applyTorque(x: Double, y: Double, z: Double): Unit = js.native
+  def applyTorque(x: Double, y: Unit, z: Double): Unit = js.native
   /**
     * Apply torque (rotational force) to the body. This function has two valid signatures. You can
     * either specify the torque force with a 3D-vector or with 3 numbers.
@@ -228,14 +262,21 @@ open class RigidBodyComponent protected () extends Component {
     * @param {number} [z] - The z-component of the torque force in world-space.
     * @example
     * // Apply via vector
-    * var torque = new pc.Vec3(0, 10, 0);
+    * const torque = new pc.Vec3(0, 10, 0);
     * entity.rigidbody.applyTorque(torque);
     * @example
     * // Apply via numbers
     * entity.rigidbody.applyTorque(0, 10, 0);
     */
-  def applyTorque(args: Any*): Unit = js.native
+  def applyTorque(x: Vec3): Unit = js.native
+  def applyTorque(x: Vec3, y: Double): Unit = js.native
+  def applyTorque(x: Vec3, y: Double, z: Double): Unit = js.native
+  def applyTorque(x: Vec3, y: Unit, z: Double): Unit = js.native
   
+  def applyTorqueImpulse(x: Double): Unit = js.native
+  def applyTorqueImpulse(x: Double, y: Double): Unit = js.native
+  def applyTorqueImpulse(x: Double, y: Double, z: Double): Unit = js.native
+  def applyTorqueImpulse(x: Double, y: Unit, z: Double): Unit = js.native
   /**
     * Apply a torque impulse (rotational force applied instantaneously) to the body. This function
     * has two valid signatures. You can either specify the torque force with a 3D-vector or with 3
@@ -247,13 +288,16 @@ open class RigidBodyComponent protected () extends Component {
     * @param {number} [z] - The z-component of the torque impulse in world-space.
     * @example
     * // Apply via vector
-    * var torque = new pc.Vec3(0, 10, 0);
+    * const torque = new pc.Vec3(0, 10, 0);
     * entity.rigidbody.applyTorqueImpulse(torque);
     * @example
     * // Apply via numbers
     * entity.rigidbody.applyTorqueImpulse(0, 10, 0);
     */
-  def applyTorqueImpulse(args: Any*): Unit = js.native
+  def applyTorqueImpulse(x: Vec3): Unit = js.native
+  def applyTorqueImpulse(x: Vec3, y: Double): Unit = js.native
+  def applyTorqueImpulse(x: Vec3, y: Double, z: Double): Unit = js.native
+  def applyTorqueImpulse(x: Vec3, y: Unit, z: Double): Unit = js.native
   
   def body: Any = js.native
   def body_=(arg: Any): Unit = js.native
@@ -266,8 +310,18 @@ open class RigidBodyComponent protected () extends Component {
     */
   /* private */ var createBody: Any = js.native
   
+  /**
+    * Remove a body from the simulation.
+    *
+    * @ignore
+    */
   def disableSimulation(): Unit = js.native
   
+  /**
+    * Add a body to the simulation.
+    *
+    * @ignore
+    */
   def enableSimulation(): Unit = js.native
   
   def friction: Double = js.native
@@ -397,8 +451,8 @@ open class RigidBodyComponent protected () extends Component {
     *
     * @param {Vec3|number} x - A 3-dimensional vector holding the new position or the new position
     * x-coordinate.
-    * @param {Vec3|Quat|number} y - A 3-dimensional vector or quaternion holding the new rotation
-    * or the new position y-coordinate.
+    * @param {Quat|Vec3|number} [y] - A 3-dimensional vector or quaternion holding the new
+    * rotation or the new position y-coordinate.
     * @param {number} [z] - The new position z-coordinate.
     * @param {number} [rx] - The new Euler x-angle value.
     * @param {number} [ry] - The new Euler y-angle value.
@@ -411,13 +465,20 @@ open class RigidBodyComponent protected () extends Component {
     * entity.rigidbody.teleport(0, 0, 0);
     * @example
     * // Teleport the entity to world-space coordinate [1, 2, 3] and reset orientation
-    * var position = new pc.Vec3(1, 2, 3);
+    * const position = new pc.Vec3(1, 2, 3);
     * entity.rigidbody.teleport(position, pc.Vec3.ZERO);
     * @example
     * // Teleport the entity to world-space coordinate [1, 2, 3] and reset orientation
     * entity.rigidbody.teleport(1, 2, 3, 0, 0, 0);
     */
-  def teleport(args: Any*): Unit = js.native
+  def teleport(
+    x: Vec3 | Double,
+    y: js.UndefOr[Quat | Vec3 | Double],
+    z: js.UndefOr[Double],
+    rx: js.UndefOr[Double],
+    ry: js.UndefOr[Double],
+    rz: js.UndefOr[Double]
+  ): Unit = js.native
   
   def `type`: String = js.native
   /**
@@ -456,20 +517,21 @@ object RigidBodyComponent {
     * Fired when two rigid bodies stop touching.
     *
     * @event RigidBodyComponent#collisionend
-    * @param {Entity} other - The {@link Entity} that stopped touching this rigid body.
+    * @param {import('../../entity.js').Entity} other - The {@link Entity} that stopped touching this rigid body.
     */
   /**
     * Fired when a rigid body enters a trigger volume.
     *
     * @event RigidBodyComponent#triggerenter
-    * @param {Entity} other - The {@link Entity} with trigger volume that this rigid body entered.
+    * @param {import('../../entity.js').Entity} other - The {@link Entity} with trigger volume that this rigid body entered.
     */
   /**
     * Fired when a rigid body exits a trigger volume.
     *
     * @event RigidBodyComponent#triggerleave
-    * @param {Entity} other - The {@link Entity} with trigger volume that this rigid body exited.
+    * @param {import('../../entity.js').Entity} other - The {@link Entity} with trigger volume that this rigid body exited.
     */
+  /** @ignore */
   /* static member */
   inline def onLibraryLoaded(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onLibraryLoaded")().asInstanceOf[Unit]
 }

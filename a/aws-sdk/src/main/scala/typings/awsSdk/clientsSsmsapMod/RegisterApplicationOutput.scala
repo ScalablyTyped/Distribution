@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RegisterApplicationOutput extends StObject {
   
   /**
-    * 
+    * The application registered with AWS Systems Manager for SAP.
     */
   var Application: js.UndefOr[typings.awsSdk.clientsSsmsapMod.Application] = js.undefined
   
   /**
-    * 
+    * The ID of the operation.
     */
   var OperationId: js.UndefOr[typings.awsSdk.clientsSsmsapMod.OperationId] = js.undefined
 }

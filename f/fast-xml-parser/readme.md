@@ -1,7 +1,7 @@
 
 # Scala.js typings for fast-xml-parser
 
-Typings are for version 4.0.11
+Typings are for version 4.2.2
 
 ## Library description:
 Validate XML, Parse XML, Build XML without C/C++ based libraries

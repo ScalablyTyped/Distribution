@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "it-multipart" : "3.0.0"
+      "it-multipart" : "3.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "it-multipart" : "3.0.0"
+      "it-multipart" : "3.0.3"
     }
   ],
   "compile-devDependencies" : [

@@ -28,8 +28,14 @@ object distTypesCommandsListIdentitiesCommandMod {
           Any, 
           Any
         ] {
+    /**
+      * @public
+      */
     def this(input: ListIdentitiesCommandInput) = this()
     
+    /**
+      * @internal
+      */
     /* private */ var deserialize: Any = js.native
     
     /**
@@ -45,6 +51,9 @@ object distTypesCommandsListIdentitiesCommandMod {
       options: HttpHandlerOptions
     ): Handler[ListIdentitiesCommandInput, ListIdentitiesCommandOutput] = js.native
     
+    /**
+      * @internal
+      */
     /* private */ var serialize: Any = js.native
   }
   /* static members */

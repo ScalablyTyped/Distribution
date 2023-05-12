@@ -1,10 +1,10 @@
 package typings.hyperformula
 
-import typings.hyperformula.anon.DATE
 import typings.hyperformula.typingsInterpreterInterpreterMod.Interpreter
 import typings.hyperformula.typingsInterpreterInterpreterStateMod.InterpreterState
 import typings.hyperformula.typingsInterpreterInterpreterValueMod.InterpreterValue
 import typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.FunctionPlugin
+import typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.ImplementedFunctions
 import typings.hyperformula.typingsParserAstMod.ProcedureAst
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -44,6 +44,9 @@ object typingsInterpreterPluginDateTimePluginMod {
     
     def edate(ast: ProcedureAst, state: InterpreterState): InterpreterValue = js.native
     
+    /**
+      * Implementation for the EOMONTH function
+      */
     def eomonth(ast: ProcedureAst, state: InterpreterState): InterpreterValue = js.native
     
     def hour(ast: ProcedureAst, state: InterpreterState): InterpreterValue = js.native
@@ -125,7 +128,7 @@ object typingsInterpreterPluginDateTimePluginMod {
     
     @JSImport("hyperformula/typings/interpreter/plugin/DateTimePlugin", "DateTimePlugin.implementedFunctions")
     @js.native
-    def implementedFunctions: DATE = js.native
-    inline def implementedFunctions_=(x: DATE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("implementedFunctions")(x.asInstanceOf[js.Any])
+    def implementedFunctions: ImplementedFunctions = js.native
+    inline def implementedFunctions_=(x: ImplementedFunctions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("implementedFunctions")(x.asInstanceOf[js.Any])
   }
 }

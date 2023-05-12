@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ImageResolution
+import typings.csstype.mod.Property.BorderLeftWidth
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `263` extends StObject {
   
   var value: js.UndefOr[
-    ImageResolution | (js.Array[
+    (BorderLeftWidth[Double | String]) | (js.Array[
       (Extract[
-        js.UndefOr[ImageResolution | js.Array[NonNullable[js.UndefOr[ImageResolution]]]], 
+        js.UndefOr[
+          (BorderLeftWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderLeftWidth[Double | String]]]])
+        ], 
         String
-      ]) | NonNullable[js.UndefOr[ImageResolution]]
+      ]) | (NonNullable[js.UndefOr[BorderLeftWidth[Double | String]]])
     ])
   ] = js.native
 }

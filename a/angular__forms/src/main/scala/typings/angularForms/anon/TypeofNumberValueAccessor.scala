@@ -22,7 +22,8 @@ trait TypeofNumberValueAccessor
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    `false`, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[NumberValueAccessor, scala.Nothing] = js.native

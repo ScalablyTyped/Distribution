@@ -137,16 +137,16 @@ object libContainerMod {
     def sortChildren(): Unit = js.native
     
     /**
-      * If set to true, the container will sort its children by zIndex value
-      * when updateTransform() is called, or manually if sortChildren() is called.
+      * If set to true, the container will sort its children by `zIndex` value
+      * when `updateTransform()` is called, or manually if `sortChildren()` is called.
       *
       * This actually changes the order of elements in the array, so should be treated
       * as a basic solution that is not performant compared to other solutions,
-      * such as @link https://github.com/pixijs/pixi-display
+      * such as {@link https://github.com/pixijs/layers PixiJS Layers}
       *
-      * Also be aware of that this may not work nicely with the addChildAt() function,
-      * as the zIndex sorting may cause the child to automatically sorted to another position.
-      * @see PIXI.settings.SORTABLE_CHILDREN
+      * Also be aware of that this may not work nicely with the `addChildAt()` function,
+      * as the `zIndex` sorting may cause the child to automatically sorted to another position.
+      * @see PIXI.Container.defaultSortableChildren
       */
     var sortableChildren: Boolean = js.native
     
@@ -160,5 +160,30 @@ object libContainerMod {
     /** The width of the Container, setting this will actually modify the scale to achieve the value set. */
     def width: Double = js.native
     def width_=(value: Double): Unit = js.native
+  }
+  /* static members */
+  object Container {
+    
+    @JSImport("@pixi/display/lib/Container", "Container")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Sets the default value for the container property `sortableChildren`.
+      * If set to true, the container will sort its children by zIndex value
+      * when `updateTransform()` is called, or manually if `sortChildren()` is called.
+      *
+      * This actually changes the order of elements in the array, so should be treated
+      * as a basic solution that is not performant compared to other solutions,
+      * such as {@link https://github.com/pixijs/layers PixiJS Layers}.
+      *
+      * Also be aware of that this may not work nicely with the `addChildAt()` function,
+      * as the `zIndex` sorting may cause the child to automatically sorted to another position.
+      * @static
+      */
+    @JSImport("@pixi/display/lib/Container", "Container.defaultSortableChildren")
+    @js.native
+    def defaultSortableChildren: Boolean = js.native
+    inline def defaultSortableChildren_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultSortableChildren")(x.asInstanceOf[js.Any])
   }
 }

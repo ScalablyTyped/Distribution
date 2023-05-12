@@ -7,18 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait WebDriverProtocolDocumentHandling extends StObject {
   
-  def execute[T](body: String): Awaitable[this.type, T] = js.native
-  def execute[T](body: String, args: js.Array[Any]): Awaitable[this.type, T] = js.native
-  def execute[T](
+  def execute[ReturnValue](body: String): Awaitable[this.type, VoidToNull[ReturnValue]] = js.native
+  def execute[ReturnValue](
     body: String,
-    args: js.Array[Any],
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[T], Unit]
-  ): Awaitable[this.type, T] = js.native
-  def execute[T](
-    body: String,
-    args: Unit,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[T], Unit]
-  ): Awaitable[this.type, T] = js.native
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[VoidToNull[ReturnValue]], 
+      Unit
+    ]
+  ): Awaitable[this.type, VoidToNull[ReturnValue]] = js.native
   /**
     * Inject a snippet of JavaScript into the page for execution in the context of the currently selected frame. The executed script is assumed to be synchronous.
     * The script argument defines the script to execute in the form of a function body. The value returned by that function will be returned to the client.
@@ -32,39 +29,53 @@ trait WebDriverProtocolDocumentHandling extends StObject {
     *
     * @example
     *  this.demoTest = function (browser) {
-    *    browser.execute(function(imageData) {
+    *    browser.execute(function(imageData: string) {
     *      // resize operation
     *      return true;
     *    }, [imageData], function(result) {
     *      // result.value === true
     *    });
     * }
+    *
+    * @see https://nightwatchjs.org/api/execute.html#apimethod-container
+    *
+    * @alias executeScript
     */
-  def execute[T](body: js.ThisFunction1[/* this */ Unit, /* repeated */ Any, T]): Awaitable[this.type, T] = js.native
-  def execute[T](body: js.ThisFunction1[/* this */ Unit, /* repeated */ Any, T], args: js.Array[Any]): Awaitable[this.type, T] = js.native
-  def execute[T](
-    body: js.ThisFunction1[/* this */ Unit, /* repeated */ Any, T],
-    args: js.Array[Any],
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[T], Unit]
-  ): Awaitable[this.type, T] = js.native
-  def execute[T](
-    body: js.ThisFunction1[/* this */ Unit, /* repeated */ Any, T],
-    args: Unit,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[T], Unit]
-  ): Awaitable[this.type, T] = js.native
+  def execute[ReturnValue](body: ExecuteScriptFunction[js.Array[Any], ReturnValue]): Awaitable[this.type, VoidToNull[ReturnValue]] = js.native
+  def execute[ReturnValue](
+    body: ExecuteScriptFunction[js.Array[Any], ReturnValue],
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[VoidToNull[ReturnValue]], 
+      Unit
+    ]
+  ): Awaitable[this.type, VoidToNull[ReturnValue]] = js.native
+  def execute[ArgType /* <: js.Array[Any] */, ReturnValue](body: String, args: ArgType): Awaitable[this.type, VoidToNull[ReturnValue]] = js.native
+  def execute[ArgType /* <: js.Array[Any] */, ReturnValue](
+    body: String,
+    args: ArgType,
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[VoidToNull[ReturnValue]], 
+      Unit
+    ]
+  ): Awaitable[this.type, VoidToNull[ReturnValue]] = js.native
+  def execute[ArgType /* <: js.Array[Any] */, ReturnValue](body: ExecuteScriptFunction[ArgType, ReturnValue], args: ArgType): Awaitable[this.type, VoidToNull[ReturnValue]] = js.native
+  def execute[ArgType /* <: js.Array[Any] */, ReturnValue](
+    body: ExecuteScriptFunction[ArgType, ReturnValue],
+    args: ArgType,
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[VoidToNull[ReturnValue]], 
+      Unit
+    ]
+  ): Awaitable[this.type, VoidToNull[ReturnValue]] = js.native
   
-  def executeAsync(script: String): this.type = js.native
-  def executeAsync(script: String, args: js.Array[Any]): this.type = js.native
-  def executeAsync(
+  def executeAsync[ReturnValue](script: String): Awaitable[this.type, ReturnValue] = js.native
+  def executeAsync[ReturnValue](
     script: String,
-    args: js.Array[Any],
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Any], Unit]
-  ): this.type = js.native
-  def executeAsync(
-    script: String,
-    args: Unit,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Any], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ReturnValue], Unit]
+  ): Awaitable[this.type, ReturnValue] = js.native
   /**
     * Inject a snippet of JavaScript into the page for execution in the context of the currently selected frame. The executed script is assumed to be asynchronous.
     *
@@ -76,7 +87,7 @@ trait WebDriverProtocolDocumentHandling extends StObject {
     *
     * @example
     *  this.demoTest = function (browser) {
-    *    browser.executeAsync(function(done) {
+    *    browser.executeAsync(function(done: (result: true) => void) {
     *      setTimeout(function() {
     *        done(true);
     *      }, 500);
@@ -84,28 +95,42 @@ trait WebDriverProtocolDocumentHandling extends StObject {
     *      // result.value === true
     *    });
     *
-    *    browser.executeAsync(function(arg1, arg2, done) {
+    *    browser.executeAsync(function(arg1: string, arg2: number, done: (result: string) => void) {
     *      setTimeout(function() {
-    *        done(true);
+    *        done(arg1);
     *      }, 500);
     *    }, [arg1, arg2], function(result) {
-    *      // result.value === true
+    *      // result.value === arg1
     *    });
     * }
+    *
+    * @see https://nightwatchjs.org/api/executeAsyncScript.html
+    *
+    * @alias executeAsyncScript
     */
-  def executeAsync(script: js.ThisFunction1[/* this */ Unit, /* repeated */ Any, Any]): this.type = js.native
-  def executeAsync(script: js.ThisFunction1[/* this */ Unit, /* repeated */ Any, Any], args: js.Array[Any]): this.type = js.native
-  def executeAsync(
-    script: js.ThisFunction1[/* this */ Unit, /* repeated */ Any, Any],
-    args: js.Array[Any],
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Any], Unit]
-  ): this.type = js.native
-  def executeAsync(
-    script: js.ThisFunction1[/* this */ Unit, /* repeated */ Any, Any],
-    args: Unit,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Any], Unit]
-  ): this.type = js.native
+  def executeAsync[ReturnValue](script: ExecuteAsyncScriptFunction[js.Array[Any], ReturnValue]): Awaitable[this.type, ReturnValue] = js.native
+  def executeAsync[ReturnValue](
+    script: ExecuteAsyncScriptFunction[js.Array[Any], ReturnValue],
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ReturnValue], Unit]
+  ): Awaitable[this.type, ReturnValue] = js.native
+  def executeAsync[ArgType /* <: js.Array[Any] */, ReturnValue](script: String, args: ArgType): Awaitable[this.type, ReturnValue] = js.native
+  def executeAsync[ArgType /* <: js.Array[Any] */, ReturnValue](
+    script: String,
+    args: ArgType,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ReturnValue], Unit]
+  ): Awaitable[this.type, ReturnValue] = js.native
+  def executeAsync[ArgType /* <: js.Array[Any] */, ReturnValue](script: ExecuteAsyncScriptFunction[ArgType, ReturnValue], args: ArgType): Awaitable[this.type, ReturnValue] = js.native
+  def executeAsync[ArgType /* <: js.Array[Any] */, ReturnValue](
+    script: ExecuteAsyncScriptFunction[ArgType, ReturnValue],
+    args: ArgType,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ReturnValue], Unit]
+  ): Awaitable[this.type, ReturnValue] = js.native
   
+  def executeAsyncScript[ReturnValue](script: String): Awaitable[this.type, ReturnValue] = js.native
+  def executeAsyncScript[ReturnValue](
+    script: String,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ReturnValue], Unit]
+  ): Awaitable[this.type, ReturnValue] = js.native
   /**
     *
     * Inject a snippet of JavaScript into the page for execution in the context of the currently selected frame.
@@ -121,7 +146,7 @@ trait WebDriverProtocolDocumentHandling extends StObject {
     *
     * @example
     *  this.demoTest = function (browser) {
-    *    browser.executeAsyncScript(function(done) {
+    *    browser.executeAsyncScript(function(done: (result: true) => void) {
     *      setTimeout(function() {
     *        done(true);
     *      }, 500);
@@ -129,61 +154,111 @@ trait WebDriverProtocolDocumentHandling extends StObject {
     *      // result.value === true
     *    });
     *
-    *    browser.executeAsyncScript(function(arg1, arg2, done) {
+    *    browser.executeAsyncScript(function(arg1: string, arg2: number, done: (result: string) => void) {
     *      setTimeout(function() {
-    *        done(true);
+    *        done(arg1);
     *      }, 500);
     *    }, [arg1, arg2], function(result) {
+    *      // result.value === arg1
+    *    });
+    * }
+    *
+    * @see https://nightwatchjs.org/api/executeAsyncScript.html
+    *
+    * @alias executeAsync
+    */
+  def executeAsyncScript[ReturnValue](script: ExecuteAsyncScriptFunction[js.Array[Any], ReturnValue]): Awaitable[this.type, ReturnValue] = js.native
+  def executeAsyncScript[ReturnValue](
+    script: ExecuteAsyncScriptFunction[js.Array[Any], ReturnValue],
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ReturnValue], Unit]
+  ): Awaitable[this.type, ReturnValue] = js.native
+  def executeAsyncScript[ArgType /* <: js.Array[Any] */, ReturnValue](script: String, args: ArgType): Awaitable[this.type, ReturnValue] = js.native
+  def executeAsyncScript[ArgType /* <: js.Array[Any] */, ReturnValue](
+    script: String,
+    args: ArgType,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ReturnValue], Unit]
+  ): Awaitable[this.type, ReturnValue] = js.native
+  def executeAsyncScript[ArgType /* <: js.Array[Any] */, ReturnValue](script: ExecuteAsyncScriptFunction[ArgType, ReturnValue], args: ArgType): Awaitable[this.type, ReturnValue] = js.native
+  def executeAsyncScript[ArgType /* <: js.Array[Any] */, ReturnValue](
+    script: ExecuteAsyncScriptFunction[ArgType, ReturnValue],
+    args: ArgType,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ReturnValue], Unit]
+  ): Awaitable[this.type, ReturnValue] = js.native
+  
+  def executeScript[ReturnValue](body: String): Awaitable[this.type, VoidToNull[ReturnValue]] = js.native
+  def executeScript[ReturnValue](
+    body: String,
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[VoidToNull[ReturnValue]], 
+      Unit
+    ]
+  ): Awaitable[this.type, VoidToNull[ReturnValue]] = js.native
+  /**
+    * Inject a snippet of JavaScript into the page for execution in the context of the currently selected frame. The executed script is assumed to be synchronous.
+    * The script argument defines the script to execute in the form of a function body. The value returned by that function will be returned to the client.
+    *
+    * The function will be invoked with the provided args array and the values may be accessed via the arguments object in the order specified.
+    *
+    * Under the hood, if the `body` param is a function it is converted to a string with `<function>.toString()`. Any references to your current scope are ignored.
+    *
+    * To ensure cross-browser compatibility, the specified function should not be in ES6 format (i.e. `() => {}`).
+    * If the execution of the function fails, the first argument of the callback contains error information.
+    *
+    * @example
+    *  this.demoTest = function (browser) {
+    *    browser.executeScript(function(imageData: string) {
+    *      // resize operation
+    *      return true;
+    *    }, [imageData], function(result) {
     *      // result.value === true
     *    });
     * }
+    *
+    * @see https://nightwatchjs.org/api/execute.html#apimethod-container
+    *
+    * @alias execute
     */
-  def executeAsyncScript[T](script: String, args: js.Array[Any]): this.type = js.native
-  def executeAsyncScript[T](
-    script: String,
-    args: js.Array[Any],
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[T], Unit]
-  ): this.type = js.native
-  def executeAsyncScript[T](script: js.ThisFunction1[/* this */ Unit, /* repeated */ Any, T], args: js.Array[Any]): this.type = js.native
-  def executeAsyncScript[T](
-    script: js.ThisFunction1[/* this */ Unit, /* repeated */ Any, T],
-    args: js.Array[Any],
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[T], Unit]
-  ): this.type = js.native
-  
-  def executeScript[T](body: String): Awaitable[this.type, T] = js.native
-  def executeScript[T](body: String, args: js.Array[Any]): Awaitable[this.type, T] = js.native
-  def executeScript[T](
+  def executeScript[ReturnValue](body: ExecuteScriptFunction[js.Array[Any], ReturnValue]): Awaitable[this.type, VoidToNull[ReturnValue]] = js.native
+  def executeScript[ReturnValue](
+    body: ExecuteScriptFunction[js.Array[Any], ReturnValue],
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[VoidToNull[ReturnValue]], 
+      Unit
+    ]
+  ): Awaitable[this.type, VoidToNull[ReturnValue]] = js.native
+  def executeScript[ArgType /* <: js.Array[Any] */, ReturnValue](body: String, args: ArgType): Awaitable[this.type, VoidToNull[ReturnValue]] = js.native
+  def executeScript[ArgType /* <: js.Array[Any] */, ReturnValue](
     body: String,
-    args: js.Array[Any],
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[T], Unit]
-  ): Awaitable[this.type, T] = js.native
-  def executeScript[T](
-    body: String,
-    args: Unit,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[T], Unit]
-  ): Awaitable[this.type, T] = js.native
-  def executeScript[T](body: js.ThisFunction1[/* this */ Unit, /* repeated */ Any, T]): Awaitable[this.type, T] = js.native
-  def executeScript[T](body: js.ThisFunction1[/* this */ Unit, /* repeated */ Any, T], args: js.Array[Any]): Awaitable[this.type, T] = js.native
-  def executeScript[T](
-    body: js.ThisFunction1[/* this */ Unit, /* repeated */ Any, T],
-    args: js.Array[Any],
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[T], Unit]
-  ): Awaitable[this.type, T] = js.native
-  def executeScript[T](
-    body: js.ThisFunction1[/* this */ Unit, /* repeated */ Any, T],
-    args: Unit,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[T], Unit]
-  ): Awaitable[this.type, T] = js.native
+    args: ArgType,
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[VoidToNull[ReturnValue]], 
+      Unit
+    ]
+  ): Awaitable[this.type, VoidToNull[ReturnValue]] = js.native
+  def executeScript[ArgType /* <: js.Array[Any] */, ReturnValue](body: ExecuteScriptFunction[ArgType, ReturnValue], args: ArgType): Awaitable[this.type, VoidToNull[ReturnValue]] = js.native
+  def executeScript[ArgType /* <: js.Array[Any] */, ReturnValue](
+    body: ExecuteScriptFunction[ArgType, ReturnValue],
+    args: ArgType,
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[VoidToNull[ReturnValue]], 
+      Unit
+    ]
+  ): Awaitable[this.type, VoidToNull[ReturnValue]] = js.native
   
   /**
     * Returns a string serialisation of the DOM of the current page.
     *
     * @example
     * browser.source();
+    *
+    * @see https://nightwatchjs.org/api/source.html#apimethod-container
     */
-  def source(): this.type = js.native
+  def source(): Awaitable[this.type, String] = js.native
   def source(
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
-  ): this.type = js.native
+  ): Awaitable[this.type, String] = js.native
 }

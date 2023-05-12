@@ -8,25 +8,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Checkname extends StObject {
   
-  /** Returns check runs with the specified `name`. */
   var check_name: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['check-name'] */ js.Any
   ] = js.undefined
   
-  /** Filters check runs by their `completed_at` timestamp. `latest` returns the most recent check runs. */
+  /** @description Filters check runs by their `completed_at` timestamp. `latest` returns the most recent check runs. */
   var filter: js.UndefOr[latest | all] = js.undefined
   
-  /** Page number of the results to fetch. */
   var page: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['page'] */ js.Any
   ] = js.undefined
   
-  /** The number of results per page (max 100). */
   var per_page: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['per-page'] */ js.Any
   ] = js.undefined
   
-  /** Returns check runs with the specified `status`. */
   var status: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['status'] */ js.Any
   ] = js.undefined

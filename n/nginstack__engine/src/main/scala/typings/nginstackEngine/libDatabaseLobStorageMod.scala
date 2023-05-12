@@ -47,9 +47,13 @@ object libDatabaseLobStorageMod {
     
     def endBatch(): typings.nginstackEngine.libDatasetDataSetMod.^ = js.native
     
+    /* private */ var getDataSetForUpdate_ : Any = js.native
+    
     def getLob(key: Double): typings.nginstackEngine.libDatabaseLargeObjectMod.^ = js.native
     
     def getLobExtraAttributes(key: Double): Any = js.native
+    
+    var logChanges: Boolean = js.native
     
     /* private */ var prepareContent_ : Any = js.native
     

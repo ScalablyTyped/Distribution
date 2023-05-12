@@ -37,12 +37,17 @@ trait GetApplicationResponse extends StObject {
   var engineType: EngineType
   
   /**
-    * The identifier of the environment where the application will be deployed.
+    * The identifier of the runtime environment where you want to deploy the application.
     */
   var environmentId: js.UndefOr[Identifier] = js.undefined
   
   /**
-    * The timestamp when the application was last started. Null until the application has started running for the first time.
+    * The identifier of a customer managed key.
+    */
+  var kmsKeyId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The timestamp when you last started the application. Null until the application runs for the first time.
     */
   var lastStartTime: js.UndefOr[js.Date] = js.undefined
   
@@ -52,7 +57,7 @@ trait GetApplicationResponse extends StObject {
   var latestVersion: ApplicationVersionSummary
   
   /**
-    * The Amazon Resource Name (ARN) for the network load balancer listener created in your Amazon Web Services account. Amazon Web Services Mainframe Modernization creates this listener on your behalf the first time you deploy an application.
+    * The Amazon Resource Name (ARN) for the network load balancer listener created in your Amazon Web Services account. Amazon Web Services Mainframe Modernization creates this listener for you the first time you deploy an application.
     */
   var listenerArns: js.UndefOr[ArnList] = js.undefined
   
@@ -67,7 +72,7 @@ trait GetApplicationResponse extends StObject {
   var loadBalancerDnsName: js.UndefOr[String100] = js.undefined
   
   /**
-    * The list of log summaries. Each log summary includes the log type as well as the log group identifier. These are CloudWatch logs. The Amazon Web Services Mainframe Modernization application log is pushed to CloudWatch under the customer's account.
+    * The list of log summaries. Each log summary includes the log type as well as the log group identifier. These are CloudWatch logs. Amazon Web Services Mainframe Modernization pushes the application log to CloudWatch under the customer's account.
     */
   var logGroups: js.UndefOr[LogGroupSummaries] = js.undefined
   
@@ -133,6 +138,10 @@ object GetApplicationResponse {
     inline def setEnvironmentId(value: Identifier): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
     
     inline def setEnvironmentIdUndefined: Self = StObject.set(x, "environmentId", js.undefined)
+    
+    inline def setKmsKeyId(value: String): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+    
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
     
     inline def setLastStartTime(value: js.Date): Self = StObject.set(x, "lastStartTime", value.asInstanceOf[js.Any])
     

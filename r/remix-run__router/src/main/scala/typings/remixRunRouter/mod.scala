@@ -10,6 +10,8 @@ import typings.remixRunRouter.distHistoryMod.MemoryHistory
 import typings.remixRunRouter.distHistoryMod.MemoryHistoryOptions
 import typings.remixRunRouter.distHistoryMod.Path
 import typings.remixRunRouter.distHistoryMod.To
+import typings.remixRunRouter.distRouterMod.BlockerUnblocked
+import typings.remixRunRouter.distRouterMod.CreateStaticHandlerOptions
 import typings.remixRunRouter.distRouterMod.Router
 import typings.remixRunRouter.distRouterMod.RouterInit
 import typings.remixRunRouter.distRouterMod.StaticHandler
@@ -17,15 +19,18 @@ import typings.remixRunRouter.distRouterMod.StaticHandlerContext
 import typings.remixRunRouter.distUtilsMod.AgnosticDataRouteObject
 import typings.remixRunRouter.distUtilsMod.AgnosticRouteMatch
 import typings.remixRunRouter.distUtilsMod.AgnosticRouteObject
+import typings.remixRunRouter.distUtilsMod.DeferFunction
 import typings.remixRunRouter.distUtilsMod.DeferredData
 import typings.remixRunRouter.distUtilsMod.JsonFunction
+import typings.remixRunRouter.distUtilsMod.MapRoutePropertiesFunction
 import typings.remixRunRouter.distUtilsMod.ParamParseKey
 import typings.remixRunRouter.distUtilsMod.PathMatch
 import typings.remixRunRouter.distUtilsMod.PathPattern
 import typings.remixRunRouter.distUtilsMod.RedirectFunction
+import typings.remixRunRouter.distUtilsMod.RouteManifest
 import typings.remixRunRouter.remixRunRouterStrings.idle
 import typings.std.Record
-import typings.std.Set
+import typings.std.ResponseInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,7 +66,13 @@ object mod {
     extends typings.remixRunRouter.distUtilsMod.ErrorResponse {
     def this(status: Double, statusText: String, data: Any) = this()
     def this(status: Double, statusText: Unit, data: Any) = this()
+    def this(status: Double, statusText: String, data: Any, internal: Boolean) = this()
+    def this(status: Double, statusText: Unit, data: Any, internal: Boolean) = this()
   }
+  
+  @JSImport("@remix-run/router", "IDLE_BLOCKER")
+  @js.native
+  val IDLE_BLOCKER: BlockerUnblocked = js.native
   
   object IDLE_FETCHER {
     
@@ -93,6 +104,12 @@ object mod {
     @js.native
     def formMethod: /* undefined */ Any = js.native
     inline def formMethod_=(x: /* undefined */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formMethod")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@remix-run/router", "IDLE_FETCHER. _hasFetcherDoneAnything ")
+    @js.native
+    def hasFetcherDoneAnything: js.UndefOr[Boolean] = js.native
+    
+    inline def hasFetcherDoneAnything_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic(" _hasFetcherDoneAnything ")(x.asInstanceOf[js.Any])
     
     @JSImport("@remix-run/router", "IDLE_FETCHER.state")
     @js.native
@@ -137,10 +154,47 @@ object mod {
     inline def state_=(x: idle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("state")(x.asInstanceOf[js.Any])
   }
   
-  inline def UNSAFEConvertRoutesToDataRoutes(routes: js.Array[AgnosticRouteObject]): js.Array[AgnosticDataRouteObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_convertRoutesToDataRoutes")(routes.asInstanceOf[js.Any]).asInstanceOf[js.Array[AgnosticDataRouteObject]]
-  inline def UNSAFEConvertRoutesToDataRoutes(routes: js.Array[AgnosticRouteObject], parentPath: js.Array[Double]): js.Array[AgnosticDataRouteObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_convertRoutesToDataRoutes")(routes.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[js.Array[AgnosticDataRouteObject]]
-  inline def UNSAFEConvertRoutesToDataRoutes(routes: js.Array[AgnosticRouteObject], parentPath: js.Array[Double], allIds: Set[String]): js.Array[AgnosticDataRouteObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_convertRoutesToDataRoutes")(routes.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any], allIds.asInstanceOf[js.Any])).asInstanceOf[js.Array[AgnosticDataRouteObject]]
-  inline def UNSAFEConvertRoutesToDataRoutes(routes: js.Array[AgnosticRouteObject], parentPath: Unit, allIds: Set[String]): js.Array[AgnosticDataRouteObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_convertRoutesToDataRoutes")(routes.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any], allIds.asInstanceOf[js.Any])).asInstanceOf[js.Array[AgnosticDataRouteObject]]
+  inline def UNSAFEConvertRoutesToDataRoutes(routes: js.Array[AgnosticRouteObject], mapRouteProperties: MapRoutePropertiesFunction): js.Array[AgnosticDataRouteObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_convertRoutesToDataRoutes")(routes.asInstanceOf[js.Any], mapRouteProperties.asInstanceOf[js.Any])).asInstanceOf[js.Array[AgnosticDataRouteObject]]
+  inline def UNSAFEConvertRoutesToDataRoutes(
+    routes: js.Array[AgnosticRouteObject],
+    mapRouteProperties: MapRoutePropertiesFunction,
+    parentPath: js.Array[Double]
+  ): js.Array[AgnosticDataRouteObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_convertRoutesToDataRoutes")(routes.asInstanceOf[js.Any], mapRouteProperties.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[js.Array[AgnosticDataRouteObject]]
+  inline def UNSAFEConvertRoutesToDataRoutes(
+    routes: js.Array[AgnosticRouteObject],
+    mapRouteProperties: MapRoutePropertiesFunction,
+    parentPath: js.Array[Double],
+    manifest: RouteManifest
+  ): js.Array[AgnosticDataRouteObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_convertRoutesToDataRoutes")(routes.asInstanceOf[js.Any], mapRouteProperties.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any], manifest.asInstanceOf[js.Any])).asInstanceOf[js.Array[AgnosticDataRouteObject]]
+  inline def UNSAFEConvertRoutesToDataRoutes(
+    routes: js.Array[AgnosticRouteObject],
+    mapRouteProperties: MapRoutePropertiesFunction,
+    parentPath: Unit,
+    manifest: RouteManifest
+  ): js.Array[AgnosticDataRouteObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_convertRoutesToDataRoutes")(routes.asInstanceOf[js.Any], mapRouteProperties.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any], manifest.asInstanceOf[js.Any])).asInstanceOf[js.Array[AgnosticDataRouteObject]]
+  
+  @JSImport("@remix-run/router", "UNSAFE_DeferredData")
+  @js.native
+  open class UNSAFEDeferredData protected () extends DeferredData {
+    def this(data: Record[String, Any]) = this()
+    def this(data: Record[String, Any], responseInit: ResponseInit) = this()
+  }
+  
+  inline def UNSAFEGetPathContributingMatches[T /* <: AgnosticRouteMatch[String, AgnosticRouteObject] */](matches: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_getPathContributingMatches")(matches.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  
+  inline def UNSAFEInvariant(value: Boolean): /* asserts value */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_invariant")(value.asInstanceOf[js.Any]).asInstanceOf[/* asserts value */ Boolean]
+  inline def UNSAFEInvariant(value: Boolean, message: String): /* asserts value */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_invariant")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[/* asserts value */ Boolean]
+  inline def UNSAFEInvariant[T](): /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_invariant")().asInstanceOf[/* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean]
+  inline def UNSAFEInvariant[T](value: T): /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_invariant")(value.asInstanceOf[js.Any]).asInstanceOf[/* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean]
+  inline def UNSAFEInvariant[T](value: T, message: String): /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_invariant")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[/* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean]
+  inline def UNSAFEInvariant[T](value: Null, message: String): /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_invariant")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[/* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean]
+  inline def UNSAFEInvariant[T](value: Unit, message: String): /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_invariant")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[/* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean]
+  
+  inline def UNSAFEWarning(cond: Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_warning")(cond.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @JSImport("@remix-run/router", "UNSAFE_DEFERRED_SYMBOL")
+  @js.native
+  val UNSAFE_DEFERRED_SYMBOL: js.Symbol = js.native
   
   inline def createBrowserHistory(): BrowserHistory = ^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserHistory")().asInstanceOf[BrowserHistory]
   inline def createBrowserHistory(options: BrowserHistoryOptions): BrowserHistory = ^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserHistory")(options.asInstanceOf[js.Any]).asInstanceOf[BrowserHistory]
@@ -155,27 +209,26 @@ object mod {
   
   inline def createRouter(init: RouterInit): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("createRouter")(init.asInstanceOf[js.Any]).asInstanceOf[Router]
   
-  inline def defer(data: Record[String, Any]): DeferredData = ^.asInstanceOf[js.Dynamic].applyDynamic("defer")(data.asInstanceOf[js.Any]).asInstanceOf[DeferredData]
+  inline def createStaticHandler(routes: js.Array[AgnosticRouteObject]): StaticHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("createStaticHandler")(routes.asInstanceOf[js.Any]).asInstanceOf[StaticHandler]
+  inline def createStaticHandler(routes: js.Array[AgnosticRouteObject], opts: CreateStaticHandlerOptions): StaticHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("createStaticHandler")(routes.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[StaticHandler]
   
-  inline def generatePath[Path /* <: String */](path: Path): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generatePath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  @JSImport("@remix-run/router", "defer")
+  @js.native
+  val defer: DeferFunction = js.native
+  
+  inline def generatePath[Path /* <: String */](originalPath: Path): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generatePath")(originalPath.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def generatePath[Path /* <: String */](
-    path: Path,
-    params: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in @remix-run/router.@remix-run/router/dist/utils.PathParam<Path> ]: string} */ js.Any
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generatePath")(path.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
+    originalPath: Path,
+    params: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in @remix-run/router.@remix-run/router/dist/utils.PathParam<Path> ]: string | null} */ js.Any
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generatePath")(originalPath.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def getStaticContextFromError(routes: js.Array[AgnosticDataRouteObject], context: StaticHandlerContext, error: Any): StaticHandlerContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getStaticContextFromError")(routes.asInstanceOf[js.Any], context.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[StaticHandlerContext]
   
   inline def getToPathname(to: To): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getToPathname")(to.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
-  inline def invariant(value: Boolean): /* asserts value */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("invariant")(value.asInstanceOf[js.Any]).asInstanceOf[/* asserts value */ Boolean]
-  inline def invariant(value: Boolean, message: String): /* asserts value */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("invariant")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[/* asserts value */ Boolean]
-  inline def invariant[T](): /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("invariant")().asInstanceOf[/* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean]
-  inline def invariant[T](value: T): /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("invariant")(value.asInstanceOf[js.Any]).asInstanceOf[/* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean]
-  inline def invariant[T](value: T, message: String): /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("invariant")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[/* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean]
-  inline def invariant[T](value: Null, message: String): /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("invariant")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[/* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean]
-  inline def invariant[T](value: Unit, message: String): /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("invariant")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[/* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean]
+  inline def isDeferredData(value: Any): /* is @remix-run/router.@remix-run/router/dist/utils.DeferredData */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDeferredData")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @remix-run/router.@remix-run/router/dist/utils.DeferredData */ Boolean]
   
-  inline def isRouteErrorResponse(e: Any): /* is @remix-run/router.@remix-run/router/dist/utils.ErrorResponse */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRouteErrorResponse")(e.asInstanceOf[js.Any]).asInstanceOf[/* is @remix-run/router.@remix-run/router/dist/utils.ErrorResponse */ Boolean]
+  inline def isRouteErrorResponse(error: Any): /* is @remix-run/router.@remix-run/router/dist/utils.ErrorResponse */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRouteErrorResponse")(error.asInstanceOf[js.Any]).asInstanceOf[/* is @remix-run/router.@remix-run/router/dist/utils.ErrorResponse */ Boolean]
   
   inline def joinPaths(paths: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("joinPaths")(paths.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -206,8 +259,4 @@ object mod {
   inline def resolveTo(toArg: To, routePathnames: js.Array[String], locationPathname: String, isPathRelative: Boolean): Path = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveTo")(toArg.asInstanceOf[js.Any], routePathnames.asInstanceOf[js.Any], locationPathname.asInstanceOf[js.Any], isPathRelative.asInstanceOf[js.Any])).asInstanceOf[Path]
   
   inline def stripBasename(pathname: String, basename: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("stripBasename")(pathname.asInstanceOf[js.Any], basename.asInstanceOf[js.Any])).asInstanceOf[String | Null]
-  
-  inline def unstableCreateStaticHandler(routes: js.Array[AgnosticRouteObject]): StaticHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_createStaticHandler")(routes.asInstanceOf[js.Any]).asInstanceOf[StaticHandler]
-  
-  inline def warning(cond: Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warning")(cond.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -27,7 +27,7 @@ trait Flow extends StObject {
   var Entitlements: listOfEntitlement
   
   /**
-    * The Amazon Resource Name (ARN), a unique identifier for any AWS resource, of the flow.
+    * The Amazon Resource Name (ARN) of the flow.
     */
   var FlowArn: string
   

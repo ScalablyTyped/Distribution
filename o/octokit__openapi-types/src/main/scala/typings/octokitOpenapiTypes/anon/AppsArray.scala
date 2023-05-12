@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AppsArray extends StObject {
   
-  /** @description apps parameter */
+  /** @description The GitHub Apps that have push access to this branch. Use the slugified version of the app name. **Note**: The list of users, apps, and teams in total is limited to 100 items. */
   var apps: js.Array[String]
 }
 object AppsArray {

@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PhiStart extends StObject {
   
-  var heightSegments: Double
+  val heightSegments: Double
   
-  var phiLength: Double
+  val phiLength: Double
   
-  var phiStart: Double
+  val phiStart: Double
   
-  var radius: Double
+  val radius: Double
   
-  var thetaLength: Double
+  val thetaLength: Double
   
-  var thetaStart: Double
+  val thetaStart: Double
   
-  var widthSegments: Double
+  val widthSegments: Double
 }
 object PhiStart {
   

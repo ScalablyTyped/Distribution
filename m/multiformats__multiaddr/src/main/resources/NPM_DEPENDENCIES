@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@multiformats/multiaddr" : "11.0.5"
+      "@multiformats/multiaddr" : "12.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@multiformats/multiaddr" : "11.0.5"
+      "@multiformats/multiaddr" : "12.1.2"
     }
   ],
   "compile-devDependencies" : [

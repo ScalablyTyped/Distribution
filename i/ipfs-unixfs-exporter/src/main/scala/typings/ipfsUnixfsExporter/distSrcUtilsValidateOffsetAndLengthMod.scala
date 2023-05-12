@@ -11,13 +11,22 @@ object distSrcUtilsValidateOffsetAndLengthMod {
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-    * @param {number} size
-    * @param {number} [offset]
-    * @param {number} [length]
-    */
+  inline def default(size: js.BigInt): Length = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(size.asInstanceOf[js.Any]).asInstanceOf[Length]
+  inline def default(size: js.BigInt, offset: js.BigInt): Length = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(size.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Length]
+  inline def default(size: js.BigInt, offset: js.BigInt, length: js.BigInt): Length = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(size.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Length]
+  inline def default(size: js.BigInt, offset: js.BigInt, length: Double): Length = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(size.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Length]
+  inline def default(size: js.BigInt, offset: Double): Length = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(size.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Length]
+  inline def default(size: js.BigInt, offset: Double, length: js.BigInt): Length = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(size.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Length]
+  inline def default(size: js.BigInt, offset: Double, length: Double): Length = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(size.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Length]
+  inline def default(size: js.BigInt, offset: Unit, length: js.BigInt): Length = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(size.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Length]
+  inline def default(size: js.BigInt, offset: Unit, length: Double): Length = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(size.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Length]
   inline def default(size: Double): Length = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(size.asInstanceOf[js.Any]).asInstanceOf[Length]
+  inline def default(size: Double, offset: js.BigInt): Length = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(size.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Length]
+  inline def default(size: Double, offset: js.BigInt, length: js.BigInt): Length = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(size.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Length]
+  inline def default(size: Double, offset: js.BigInt, length: Double): Length = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(size.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Length]
   inline def default(size: Double, offset: Double): Length = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(size.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Length]
+  inline def default(size: Double, offset: Double, length: js.BigInt): Length = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(size.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Length]
   inline def default(size: Double, offset: Double, length: Double): Length = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(size.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Length]
+  inline def default(size: Double, offset: Unit, length: js.BigInt): Length = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(size.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Length]
   inline def default(size: Double, offset: Unit, length: Double): Length = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(size.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Length]
 }

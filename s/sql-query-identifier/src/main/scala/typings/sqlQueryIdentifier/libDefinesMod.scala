@@ -74,6 +74,7 @@ object libDefinesMod {
   /* Rewritten from type alias, can be one of: 
     - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.LISTING
     - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.MODIFICATION
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.INFORMATION
     - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.ANON_BLOCK
     - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.UNKNOWN
   */
@@ -81,6 +82,8 @@ object libDefinesMod {
   object ExecutionType {
     
     inline def ANON_BLOCK: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.ANON_BLOCK = "ANON_BLOCK".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.ANON_BLOCK]
+    
+    inline def INFORMATION: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.INFORMATION = "INFORMATION".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.INFORMATION]
     
     inline def LISTING: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.LISTING = "LISTING".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.LISTING]
     
@@ -316,6 +319,39 @@ object libDefinesMod {
     - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.CREATE_FUNCTION
     - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.CREATE_INDEX
     - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.CREATE_PROCEDURE
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_BINARY
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_BINLOG
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_CHARACTER
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_COLLATION
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_CREATE
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_ENGINE
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_ENGINES
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_ERRORS
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_EVENTS
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_FUNCTION
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_GRANTS
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_MASTER
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_OPEN
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_PLUGINS
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_PRIVILEGES
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_PROCEDURE
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_PROCESSLIST
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_PROFILE
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_PROFILES
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_RELAYLOG
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_REPLICAS
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_SLAVE
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_REPLICA
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_STATUS
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_TRIGGERS
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_VARIABLES
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_WARNINGS
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_DATABASES
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_KEYS
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_INDEX
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_TABLE
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_TABLES
+    - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_COLUMNS
     - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.DROP_DATABASE
     - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.DROP_SCHEMA
     - typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.DROP_TABLE
@@ -393,6 +429,72 @@ object libDefinesMod {
     inline def INSERT: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.INSERT = "INSERT".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.INSERT]
     
     inline def SELECT: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SELECT = "SELECT".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SELECT]
+    
+    inline def SHOW_BINARY: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_BINARY = "SHOW_BINARY".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_BINARY]
+    
+    inline def SHOW_BINLOG: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_BINLOG = "SHOW_BINLOG".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_BINLOG]
+    
+    inline def SHOW_CHARACTER: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_CHARACTER = "SHOW_CHARACTER".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_CHARACTER]
+    
+    inline def SHOW_COLLATION: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_COLLATION = "SHOW_COLLATION".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_COLLATION]
+    
+    inline def SHOW_COLUMNS: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_COLUMNS = "SHOW_COLUMNS".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_COLUMNS]
+    
+    inline def SHOW_CREATE: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_CREATE = "SHOW_CREATE".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_CREATE]
+    
+    inline def SHOW_DATABASES: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_DATABASES = "SHOW_DATABASES".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_DATABASES]
+    
+    inline def SHOW_ENGINE: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_ENGINE = "SHOW_ENGINE".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_ENGINE]
+    
+    inline def SHOW_ENGINES: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_ENGINES = "SHOW_ENGINES".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_ENGINES]
+    
+    inline def SHOW_ERRORS: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_ERRORS = "SHOW_ERRORS".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_ERRORS]
+    
+    inline def SHOW_EVENTS: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_EVENTS = "SHOW_EVENTS".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_EVENTS]
+    
+    inline def SHOW_FUNCTION: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_FUNCTION = "SHOW_FUNCTION".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_FUNCTION]
+    
+    inline def SHOW_GRANTS: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_GRANTS = "SHOW_GRANTS".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_GRANTS]
+    
+    inline def SHOW_INDEX: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_INDEX = "SHOW_INDEX".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_INDEX]
+    
+    inline def SHOW_KEYS: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_KEYS = "SHOW_KEYS".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_KEYS]
+    
+    inline def SHOW_MASTER: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_MASTER = "SHOW_MASTER".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_MASTER]
+    
+    inline def SHOW_OPEN: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_OPEN = "SHOW_OPEN".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_OPEN]
+    
+    inline def SHOW_PLUGINS: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_PLUGINS = "SHOW_PLUGINS".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_PLUGINS]
+    
+    inline def SHOW_PRIVILEGES: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_PRIVILEGES = "SHOW_PRIVILEGES".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_PRIVILEGES]
+    
+    inline def SHOW_PROCEDURE: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_PROCEDURE = "SHOW_PROCEDURE".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_PROCEDURE]
+    
+    inline def SHOW_PROCESSLIST: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_PROCESSLIST = "SHOW_PROCESSLIST".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_PROCESSLIST]
+    
+    inline def SHOW_PROFILE: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_PROFILE = "SHOW_PROFILE".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_PROFILE]
+    
+    inline def SHOW_PROFILES: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_PROFILES = "SHOW_PROFILES".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_PROFILES]
+    
+    inline def SHOW_RELAYLOG: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_RELAYLOG = "SHOW_RELAYLOG".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_RELAYLOG]
+    
+    inline def SHOW_REPLICA: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_REPLICA = "SHOW_REPLICA".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_REPLICA]
+    
+    inline def SHOW_REPLICAS: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_REPLICAS = "SHOW_REPLICAS".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_REPLICAS]
+    
+    inline def SHOW_SLAVE: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_SLAVE = "SHOW_SLAVE".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_SLAVE]
+    
+    inline def SHOW_STATUS: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_STATUS = "SHOW_STATUS".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_STATUS]
+    
+    inline def SHOW_TABLE: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_TABLE = "SHOW_TABLE".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_TABLE]
+    
+    inline def SHOW_TABLES: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_TABLES = "SHOW_TABLES".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_TABLES]
+    
+    inline def SHOW_TRIGGERS: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_TRIGGERS = "SHOW_TRIGGERS".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_TRIGGERS]
+    
+    inline def SHOW_VARIABLES: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_VARIABLES = "SHOW_VARIABLES".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_VARIABLES]
+    
+    inline def SHOW_WARNINGS: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_WARNINGS = "SHOW_WARNINGS".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.SHOW_WARNINGS]
     
     inline def TRUNCATE: typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.TRUNCATE = "TRUNCATE".asInstanceOf[typings.sqlQueryIdentifier.sqlQueryIdentifierStrings.TRUNCATE]
     

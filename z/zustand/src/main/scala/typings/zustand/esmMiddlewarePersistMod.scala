@@ -9,15 +9,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object esmMiddlewarePersistMod {
   
+  @JSImport("zustand/esm/middleware/persist", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def createJSONStorage[S](getStorage: js.Function0[StateStorage]): js.UndefOr[PersistStorage[S]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createJSONStorage")(getStorage.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[PersistStorage[S]]]
+  inline def createJSONStorage[S](getStorage: js.Function0[StateStorage], options: JsonStorageOptions): js.UndefOr[PersistStorage[S]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSONStorage")(getStorage.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[PersistStorage[S]]]
+  
   @JSImport("zustand/esm/middleware/persist", "persist")
   @js.native
   val persist: Persist_ = js.native
+  
+  trait JsonStorageOptions extends StObject {
+    
+    var replacer: js.UndefOr[js.Function2[/* key */ String, /* value */ Any, Any]] = js.undefined
+    
+    var reviver: js.UndefOr[js.Function2[/* key */ String, /* value */ Any, Any]] = js.undefined
+  }
+  object JsonStorageOptions {
+    
+    inline def apply(): JsonStorageOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[JsonStorageOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonStorageOptions] (val x: Self) extends AnyVal {
+      
+      inline def setReplacer(value: (/* key */ String, /* value */ Any) => Any): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
+      
+      inline def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
+      
+      inline def setReviver(value: (/* key */ String, /* value */ Any) => Any): Self = StObject.set(x, "reviver", js.Any.fromFunction2(value))
+      
+      inline def setReviverUndefined: Self = StObject.set(x, "reviver", js.undefined)
+    }
+  }
   
   type PersistListener[S] = js.Function1[/* state */ S, Unit]
   
   trait PersistOptions[S, PersistedState] extends StObject {
     
     /**
+      * @deprecated Use `storage` instead.
       * Use a custom deserializer.
       * Must return an object matching StorageValue<S>
       *
@@ -32,6 +66,7 @@ object esmMiddlewarePersistMod {
       ] = js.undefined
     
     /**
+      * @deprecated Use `storage` instead.
       * A function returning a storage.
       * The storage must fit `window.localStorage`'s api (or an async version of it).
       * For example the storage could be `AsyncStorage` from React Native.
@@ -75,12 +110,33 @@ object esmMiddlewarePersistMod {
     var partialize: js.UndefOr[js.Function1[/* state */ S, PersistedState]] = js.undefined
     
     /**
+      * @deprecated Use `storage` instead.
       * Use a custom serializer.
       * The returned string will be stored in the storage.
       *
       * @default JSON.stringify
       */
     var serialize: js.UndefOr[js.Function1[/* state */ StorageValue[S], String | js.Promise[String]]] = js.undefined
+    
+    /**
+      * An optional boolean that will prevent the persist middleware from triggering hydration on initialization,
+      * This allows you to call `rehydrate()` at a specific point in your apps rendering life-cycle.
+      *
+      * This is useful in SSR application.
+      *
+      * @default false
+      */
+    var skipHydration: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Use a custom persist storage.
+      *
+      * Combining `createJSONStorage` helps creating a persist storage
+      * with JSON.parse and JSON.stringify.
+      *
+      * @default createJSONStorage(() => localStorage)
+      */
+    var storage: js.UndefOr[PersistStorage[PersistedState]] = js.undefined
     
     /**
       * If the stored state's version mismatch the one specified here, the storage will not be used.
@@ -130,9 +186,47 @@ object esmMiddlewarePersistMod {
       
       inline def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
       
+      inline def setSkipHydration(value: Boolean): Self = StObject.set(x, "skipHydration", value.asInstanceOf[js.Any])
+      
+      inline def setSkipHydrationUndefined: Self = StObject.set(x, "skipHydration", js.undefined)
+      
+      inline def setStorage(value: PersistStorage[PersistedState]): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+      
+      inline def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
+      
       inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
       inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    }
+  }
+  
+  trait PersistStorage[S] extends StObject {
+    
+    def getItem(name: String): StorageValue[S] | Null | (js.Promise[StorageValue[S] | Null])
+    
+    def removeItem(name: String): Unit | js.Promise[Unit]
+    
+    def setItem(name: String, value: StorageValue[S]): Unit | js.Promise[Unit]
+  }
+  object PersistStorage {
+    
+    inline def apply[S](
+      getItem: String => StorageValue[S] | Null | (js.Promise[StorageValue[S] | Null]),
+      removeItem: String => Unit | js.Promise[Unit],
+      setItem: (String, StorageValue[S]) => Unit | js.Promise[Unit]
+    ): PersistStorage[S] = {
+      val __obj = js.Dynamic.literal(getItem = js.Any.fromFunction1(getItem), removeItem = js.Any.fromFunction1(removeItem), setItem = js.Any.fromFunction2(setItem))
+      __obj.asInstanceOf[PersistStorage[S]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PersistStorage[?], S] (val x: Self & PersistStorage[S]) extends AnyVal {
+      
+      inline def setGetItem(value: String => StorageValue[S] | Null | (js.Promise[StorageValue[S] | Null])): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
+      
+      inline def setRemoveItem(value: String => Unit | js.Promise[Unit]): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
+      
+      inline def setSetItem(value: (String, StorageValue[S]) => Unit | js.Promise[Unit]): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
     }
   }
   
@@ -143,7 +237,7 @@ object esmMiddlewarePersistMod {
       js.Array[Any], 
       Any
     ], 
-    /* options */ js.UndefOr[PersistOptions[Any, Any]], 
+    /* options */ PersistOptions[Any, Any], 
     StateCreator[
       Any, 
       js.Array[Any], 

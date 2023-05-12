@@ -6,8 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Rawurl extends StObject {
   
-  var content: js.UndefOr[String] = js.undefined
-  
   var filename: js.UndefOr[String] = js.undefined
   
   var language: js.UndefOr[String] = js.undefined
@@ -15,8 +13,6 @@ trait Rawurl extends StObject {
   var raw_url: js.UndefOr[String] = js.undefined
   
   var size: js.UndefOr[Double] = js.undefined
-  
-  var truncated: js.UndefOr[Boolean] = js.undefined
   
   var `type`: js.UndefOr[String] = js.undefined
 }
@@ -29,10 +25,6 @@ object Rawurl {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Rawurl] (val x: Self) extends AnyVal {
-    
-    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
-    
-    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
@@ -49,10 +41,6 @@ object Rawurl {
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    
-    inline def setTruncated(value: Boolean): Self = StObject.set(x, "truncated", value.asInstanceOf[js.Any])
-    
-    inline def setTruncatedUndefined: Self = StObject.set(x, "truncated", js.undefined)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -2,6 +2,7 @@ package typings.meteor.global
 
 import typings.meteor.Accounts.HashedStampedLoginToken
 import typings.meteor.Accounts.LoginMethodOptions
+import typings.meteor.Accounts.LoginMethodResult
 import typings.meteor.Accounts.Password
 import typings.meteor.Accounts.StampedLoginToken
 import typings.meteor.EmailTemplates
@@ -15,10 +16,11 @@ import typings.meteor.anon.Algorithm
 import typings.meteor.anon.AmbiguousErrorMessages
 import typings.meteor.anon.Connection
 import typings.meteor.anon.Fields
-import typings.meteor.anon.ForceApprovalPrompt
 import typings.meteor.anon.Logout
+import typings.meteor.anon.PasswordSignupFields
 import typings.meteor.anon.Profile
 import typings.meteor.anon.Stop
+import typings.meteor.anon.UserId
 import typings.meteor.anon.`0`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -78,7 +80,7 @@ object Accounts {
     * properties `digest` and `algorithm` (in which case we bcrypt
     * `password.digest`).
     */
-  inline def checkPassword(user: User, password: Password): typings.meteor.anon.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("_checkPassword")(user.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.meteor.anon.Error]
+  inline def checkPassword(user: User, password: Password): UserId = (^.asInstanceOf[js.Dynamic].applyDynamic("_checkPassword")(user.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[UserId]
   
   inline def config(options: AmbiguousErrorMessages): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -87,6 +89,12 @@ object Accounts {
     options: typings.meteor.anon.Email,
     callback: js.Function1[/* error */ js.UndefOr[js.Error | Error | TypedError], Unit]
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createUser")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def createUserAsync(options: typings.meteor.anon.Email): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createUserAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def createUserAsync(
+    options: typings.meteor.anon.Email,
+    callback: js.Function1[/* error */ js.UndefOr[js.Error | Error | TypedError], Unit]
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUserAsync")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   @JSGlobal("Accounts.emailTemplates")
   @js.native
@@ -159,7 +167,8 @@ object Accounts {
     * - `undefined`, meaning don't handle;
     * - a login method result object
     **/
-  inline def registerLoginHandler(name: String, handler: js.Function1[/* options */ Any, js.UndefOr[js.Object]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLoginHandler")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerLoginHandler(handler: js.Function1[/* options */ Any, js.UndefOr[LoginMethodResult]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerLoginHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerLoginHandler(name: String, handler: js.Function1[/* options */ Any, js.UndefOr[LoginMethodResult]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLoginHandler")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def removeEmail(userId: String, email: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEmail")(userId.asInstanceOf[js.Any], email.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -215,6 +224,9 @@ object Accounts {
   inline def setPassword(userId: String, newPassword: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPassword")(userId.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def setPassword(userId: String, newPassword: String, options: Logout): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPassword")(userId.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def setPasswordAsync(userId: String, newPassword: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setPasswordAsync")(userId.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def setPasswordAsync(userId: String, newPassword: String, options: Logout): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setPasswordAsync")(userId.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
   inline def setUsername(userId: String, newUsername: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUsername")(userId.asInstanceOf[js.Any], newUsername.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object ui {
@@ -223,7 +235,7 @@ object Accounts {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def config(options: ForceApprovalPrompt): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def config(options: PasswordSignupFields): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSGlobal("Accounts.urls")
@@ -233,6 +245,9 @@ object Accounts {
   
   inline def user(): User | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("user")().asInstanceOf[User | Null]
   inline def user(options: Fields): User | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("user")(options.asInstanceOf[js.Any]).asInstanceOf[User | Null]
+  
+  inline def userAsync(): js.Promise[User | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("userAsync")().asInstanceOf[js.Promise[User | Null]]
+  inline def userAsync(options: Fields): js.Promise[User | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("userAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[User | Null]]
   
   inline def userId(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("userId")().asInstanceOf[String | Null]
   

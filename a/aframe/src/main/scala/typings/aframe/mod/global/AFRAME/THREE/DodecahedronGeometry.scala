@@ -8,8 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("AFRAME.THREE.DodecahedronGeometry")
 @js.native
 /**
-  * @param [radius=1]
-  * @param [detail=0]
+  * Create a new instance of {@link DodecahedronGeometry}
+  * @param radius Radius of the dodecahedron. Expects a `Float`. Default `1`
+  * @param detail Setting this to a value greater than 0 adds vertices making it no longer a dodecahedron. Expects a `Integer`. Default `0`
   */
 open class DodecahedronGeometry ()
   extends typings.three.mod.DodecahedronGeometry

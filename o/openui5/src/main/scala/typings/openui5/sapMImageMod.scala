@@ -136,6 +136,8 @@ object sapMImageMod {
        with IFormContent {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Checks if the given value is valid for the `background-position` CSS property
       *
       * @returns the check result
@@ -146,6 +148,8 @@ object sapMImageMod {
     sValue: String): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Checks if the given value is valid for the `background-size` CSS property
       *
       * @returns the check result
@@ -405,6 +409,8 @@ object sapMImageMod {
     ): this.type = js.native
     
     /**
+      * @deprecated (since 1.107.0)
+      *
       * Attaches event handler `fnFunction` to the {@link #event:tap tap} event of this `sap.m.Image`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -431,6 +437,8 @@ object sapMImageMod {
     oListener: js.Object
     ): this.type = js.native
     /**
+      * @deprecated (since 1.107.0)
+      *
       * Attaches event handler `fnFunction` to the {@link #event:tap tap} event of this `sap.m.Image`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -564,6 +572,8 @@ object sapMImageMod {
     ): this.type = js.native
     
     /**
+      * @deprecated (since 1.107.0)
+      *
       * Detaches event handler `fnFunction` from the {@link #event:tap tap} event of this `sap.m.Image`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -589,6 +599,7 @@ object sapMImageMod {
     
     /**
       * @SINCE 1.36.2
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:error error} to attached listeners.
       *
@@ -602,6 +613,7 @@ object sapMImageMod {
     
     /**
       * @SINCE 1.36.2
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:load load} to attached listeners.
       *
@@ -614,6 +626,8 @@ object sapMImageMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:press press} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -625,6 +639,9 @@ object sapMImageMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @deprecated (since 1.107.0)
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:tap tap} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1462,6 +1479,8 @@ object sapMImageMod {
     var src: js.UndefOr[URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
+      * @deprecated (since 1.107.0)
+      *
       * Event is fired when the user clicks on the control. (This event is deprecated, use the press event instead)
       */
     var tap: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined

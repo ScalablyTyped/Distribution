@@ -2,7 +2,7 @@ package typings.angularLocalize
 
 import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.AbsoluteFsPath
 import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.PathManipulation
-import typings.angularLocalize.mod.ɵParsedMessage
+import typings.angularLocalize.localizeMod.ɵParsedMessage
 import typings.angularLocalize.toolsSrcDiagnosticsMod.DiagnosticHandlingStrategy
 import typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics
 import org.scalablytyped.runtime.StObject

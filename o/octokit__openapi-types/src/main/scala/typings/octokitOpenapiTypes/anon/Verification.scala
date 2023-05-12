@@ -20,7 +20,7 @@ trait Verification extends StObject {
   
   var sha: js.UndefOr[String] = js.undefined
   
-  var tree: js.UndefOr[`389`] = js.undefined
+  var tree: js.UndefOr[`439`] = js.undefined
   
   var url: js.UndefOr[String] = js.undefined
   
@@ -66,7 +66,7 @@ object Verification {
     
     inline def setShaUndefined: Self = StObject.set(x, "sha", js.undefined)
     
-    inline def setTree(value: `389`): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+    inline def setTree(value: `439`): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
     
     inline def setTreeUndefined: Self = StObject.set(x, "tree", js.undefined)
     

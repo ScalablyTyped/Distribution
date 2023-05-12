@@ -233,7 +233,6 @@ open class WebDriver protected () extends StObject {
     * @param {!(WebDriver|WebElement)} context The search context.
     * @return {!Promise<!WebElement>} A promise that will resolve to a list of
     *     WebElements.
-    * @private
     */
   def findElementInternal_(locatorFn: js.Function, context: WebDriver): js.Promise[WebElement] = js.native
   def findElementInternal_(locatorFn: js.Function, context: WebElement): js.Promise[WebElement] = js.native
@@ -252,7 +251,6 @@ open class WebDriver protected () extends StObject {
     * @param {!(WebDriver|WebElement)} context The search context.
     * @return {!Promise<!Array<!WebElement>>} A promise that will resolve to an
     *     array of WebElements.
-    * @private
     */
   def findElementsInternal_(locatorFn: js.Function, context: WebDriver): js.Promise[js.Array[WebElement]] = js.native
   def findElementsInternal_(locatorFn: js.Function, context: WebElement): js.Promise[js.Array[WebElement]] = js.native
@@ -478,7 +476,8 @@ open class WebDriver protected () extends StObject {
     * @param {number=} opt_timeout How long to wait for the condition to be true.
     * @param {string=} opt_message An optional message to use if the wait times
     *     out.
-    * @param {number=} opt_pollTimeout How long to wait between polling the condition.
+    * @param {number=} opt_pollTimeout Duration in milliseconds to wait between
+    *     polling the condition.
     * @return {!WebElementPromise} A promise that will be fulfilled
     *     with the first truthy value returned by the condition function, or
     *     rejected if the condition times out.
@@ -502,16 +501,48 @@ open class WebDriver protected () extends StObject {
   ): js.Promise[T] = js.native
   def wait[T](
     condition: js.Function1[/* driver */ this.type, T | PromiseLike[T]],
+    opt_timeout: Double,
+    opt_message: String,
+    opt_pollTimeout: Double
+  ): js.Promise[T] = js.native
+  def wait[T](
+    condition: js.Function1[/* driver */ this.type, T | PromiseLike[T]],
+    opt_timeout: Double,
+    opt_message: Unit,
+    opt_pollTimeout: Double
+  ): js.Promise[T] = js.native
+  def wait[T](
+    condition: js.Function1[/* driver */ this.type, T | PromiseLike[T]],
     opt_timeout: Unit,
     opt_message: String
   ): js.Promise[T] = js.native
+  def wait[T](
+    condition: js.Function1[/* driver */ this.type, T | PromiseLike[T]],
+    opt_timeout: Unit,
+    opt_message: String,
+    opt_pollTimeout: Double
+  ): js.Promise[T] = js.native
+  def wait[T](
+    condition: js.Function1[/* driver */ this.type, T | PromiseLike[T]],
+    opt_timeout: Unit,
+    opt_message: Unit,
+    opt_pollTimeout: Double
+  ): js.Promise[T] = js.native
   def wait[T](condition: js.Function, opt_timeout: Double): js.Promise[T] = js.native
   def wait[T](condition: js.Function, opt_timeout: Double, opt_message: String): js.Promise[T] = js.native
+  def wait[T](condition: js.Function, opt_timeout: Double, opt_message: String, opt_pollTimeout: Double): js.Promise[T] = js.native
+  def wait[T](condition: js.Function, opt_timeout: Double, opt_message: Unit, opt_pollTimeout: Double): js.Promise[T] = js.native
   def wait[T](condition: js.Function, opt_timeout: Unit, opt_message: String): js.Promise[T] = js.native
+  def wait[T](condition: js.Function, opt_timeout: Unit, opt_message: String, opt_pollTimeout: Double): js.Promise[T] = js.native
+  def wait[T](condition: js.Function, opt_timeout: Unit, opt_message: Unit, opt_pollTimeout: Double): js.Promise[T] = js.native
   def wait[T](condition: Condition[T]): js.Promise[T] = js.native
   def wait[T](condition: Condition[T], opt_timeout: Double): js.Promise[T] = js.native
   def wait[T](condition: Condition[T], opt_timeout: Double, opt_message: String): js.Promise[T] = js.native
+  def wait[T](condition: Condition[T], opt_timeout: Double, opt_message: String, opt_pollTimeout: Double): js.Promise[T] = js.native
+  def wait[T](condition: Condition[T], opt_timeout: Double, opt_message: Unit, opt_pollTimeout: Double): js.Promise[T] = js.native
   def wait[T](condition: Condition[T], opt_timeout: Unit, opt_message: String): js.Promise[T] = js.native
+  def wait[T](condition: Condition[T], opt_timeout: Unit, opt_message: String, opt_pollTimeout: Double): js.Promise[T] = js.native
+  def wait[T](condition: Condition[T], opt_timeout: Unit, opt_message: Unit, opt_pollTimeout: Double): js.Promise[T] = js.native
   /**
     * Schedules a command to wait for a condition to hold. The condition may be
     * specified by a {@link webdriver.Condition}, as a custom function, or
@@ -557,6 +588,8 @@ open class WebDriver protected () extends StObject {
     * @param {number=} opt_timeout How long to wait for the condition to be true.
     * @param {string=} opt_message An optional message to use if the wait times
     *     out.
+    * @param {number=} opt_pollTimeout Duration in milliseconds to wait between
+    *     polling the condition.
     * @return {!Promise<T>} A promise that will be fulfilled
     *     with the first truthy value returned by the condition function, or
     *     rejected if the condition times out.
@@ -565,7 +598,11 @@ open class WebDriver protected () extends StObject {
   def wait[T](condition: PromiseLike[T]): js.Promise[T] = js.native
   def wait[T](condition: PromiseLike[T], opt_timeout: Double): js.Promise[T] = js.native
   def wait[T](condition: PromiseLike[T], opt_timeout: Double, opt_message: String): js.Promise[T] = js.native
+  def wait[T](condition: PromiseLike[T], opt_timeout: Double, opt_message: String, opt_pollTimeout: Double): js.Promise[T] = js.native
+  def wait[T](condition: PromiseLike[T], opt_timeout: Double, opt_message: Unit, opt_pollTimeout: Double): js.Promise[T] = js.native
   def wait[T](condition: PromiseLike[T], opt_timeout: Unit, opt_message: String): js.Promise[T] = js.native
+  def wait[T](condition: PromiseLike[T], opt_timeout: Unit, opt_message: String, opt_pollTimeout: Double): js.Promise[T] = js.native
+  def wait[T](condition: PromiseLike[T], opt_timeout: Unit, opt_message: Unit, opt_pollTimeout: Double): js.Promise[T] = js.native
 }
 /* static members */
 object WebDriver {

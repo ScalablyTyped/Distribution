@@ -8,7 +8,6 @@ trait RepositoryidNumber extends StObject {
   
   var repository_id: Double
   
-  /** The name of the secret. */
   var secret_name: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['secret-name'] */ js.Any
 }
 object RepositoryidNumber {

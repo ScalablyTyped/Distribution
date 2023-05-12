@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NetworkConfiguration extends StObject {
   
   /**
-    * A list of security group IDs. To learn more, see Security in your VPC on Amazon MWAA.
+    * A list of security group IDs. For more information, see Security in your VPC on Amazon MWAA.
     */
   var SecurityGroupIds: js.UndefOr[SecurityGroupList] = js.undefined
   
   /**
-    * A list of subnet IDs. To learn more, see About networking on Amazon MWAA.
+    * A list of subnet IDs. For more information, see About networking on Amazon MWAA.
     */
   var SubnetIds: js.UndefOr[SubnetList] = js.undefined
 }

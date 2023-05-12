@@ -1,0 +1,8 @@
+package typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1beta1
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/** Properties of a SynthesizeLongAudioResponse. */
+trait ISynthesizeLongAudioResponse extends StObject

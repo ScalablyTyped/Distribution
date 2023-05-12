@@ -1,6 +1,6 @@
 package typings.pgPromise.anon
 
-import typings.pgPromise.mod.isolationLevel
+import typings.pgPromise.mod._txMode.isolationLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

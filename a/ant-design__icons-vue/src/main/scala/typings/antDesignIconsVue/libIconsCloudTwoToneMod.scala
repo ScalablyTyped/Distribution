@@ -16,7 +16,7 @@ object libIconsCloudTwoToneMod extends Shortcut {
   @js.native
   trait CloudTwoToneIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_CloudTwoToneIconType: String = js.native

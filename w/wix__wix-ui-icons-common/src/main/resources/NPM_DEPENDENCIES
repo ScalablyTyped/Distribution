@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@wix/wix-ui-icons-common" : "3.0.10"
+      "@wix/wix-ui-icons-common" : "3.0.34"
     }
   ],
   "test-dependencies" : [
     {
-      "@wix/wix-ui-icons-common" : "3.0.10"
+      "@wix/wix-ui-icons-common" : "3.0.34"
     }
   ],
   "compile-devDependencies" : [

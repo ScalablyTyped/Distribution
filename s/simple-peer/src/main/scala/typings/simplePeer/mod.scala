@@ -63,8 +63,6 @@ object mod extends Shortcut {
     // events
     // ******
     def addListener(event: connect | close | end | pause | readable | resume, listener: js.Function0[Unit]): this.type = js.native
-    def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("addListener")
     def addListener_data(event: data, listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
     @JSName("addListener")
@@ -107,8 +105,6 @@ object mod extends Shortcut {
     def destroy(error: js.Error): Any = js.native
     
     def emit(event: connect | close | end | pause | readable | resume): Boolean = js.native
-    def emit(event: String, args: Any*): Boolean = js.native
-    def emit(event: js.Symbol, args: Any*): Boolean = js.native
     @JSName("emit")
     def emit_data(event: data, chunk: Any): Boolean = js.native
     @JSName("emit")
@@ -121,8 +117,6 @@ object mod extends Shortcut {
     def emit_track(event: track, track: MediaStreamTrack, stream: MediaStream): this.type = js.native
     
     def on(event: connect | close | end | pause | readable | resume, listener: js.Function0[Unit]): this.type = js.native
-    def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    def on(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("on")
     def on_data(event: data, listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
     @JSName("on")
@@ -135,8 +129,6 @@ object mod extends Shortcut {
     def on_track(event: track, listener: js.Function2[/* track */ MediaStreamTrack, /* stream */ MediaStream, Unit]): this.type = js.native
     
     def once(event: connect | close | end | pause | readable | resume, listener: js.Function0[Unit]): this.type = js.native
-    def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    def once(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("once")
     def once_data(event: data, listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
     @JSName("once")
@@ -149,8 +141,6 @@ object mod extends Shortcut {
     def once_track(event: track, listener: js.Function2[/* track */ MediaStreamTrack, /* stream */ MediaStream, Unit]): this.type = js.native
     
     def prependListener(event: connect | close | end | pause | readable | resume, listener: js.Function0[Unit]): this.type = js.native
-    def prependListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("prependListener")
     def prependListener_data(event: data, listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
     @JSName("prependListener")
@@ -163,8 +153,6 @@ object mod extends Shortcut {
     def prependListener_track(event: track, listener: js.Function2[/* track */ MediaStreamTrack, /* stream */ MediaStream, Unit]): this.type = js.native
     
     def prependOnceListener(event: connect | close | end | pause | readable | resume, listener: js.Function0[Unit]): this.type = js.native
-    def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("prependOnceListener")
     def prependOnceListener_data(event: data, listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
     @JSName("prependOnceListener")
@@ -177,8 +165,6 @@ object mod extends Shortcut {
     def prependOnceListener_track(event: track, listener: js.Function2[/* track */ MediaStreamTrack, /* stream */ MediaStream, Unit]): this.type = js.native
     
     def removeListener(event: connect | close | end | pause | readable | resume, listener: js.Function0[Unit]): this.type = js.native
-    def removeListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("removeListener")
     def removeListener_data(event: data, listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
     @JSName("removeListener")

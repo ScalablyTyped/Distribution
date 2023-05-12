@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@csstools/postcss-nested-calc" : "1.0.0"
+      "@csstools/postcss-nested-calc" : "2.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@csstools/postcss-nested-calc" : "1.0.0"
+      "@csstools/postcss-nested-calc" : "2.0.2"
     }
   ],
   "compile-devDependencies" : [

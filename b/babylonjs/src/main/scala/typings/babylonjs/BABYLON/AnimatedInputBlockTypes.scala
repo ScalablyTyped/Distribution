@@ -16,7 +16,13 @@ object AnimatedInputBlockTypes extends StObject {
     extends StObject
        with AnimatedInputBlockTypes
   
-  /** Time based animation. Will only work for floats */
+  /** Time elapsed (in seconds) since the engine was initialized. Will only work for floats */
+  @js.native
+  sealed trait RealTime
+    extends StObject
+       with AnimatedInputBlockTypes
+  
+  /** Time based animation (is incremented by 0.6 each second). Will only work for floats */
   @js.native
   sealed trait Time
     extends StObject

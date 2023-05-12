@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object boxenStrings {
   
   @js.native
-  sealed trait arrow extends StObject
-  inline def arrow: arrow = "arrow".asInstanceOf[arrow]
-  
-  @js.native
   sealed trait black extends StObject
   inline def black: black = "black".asInstanceOf[black]
   
@@ -27,16 +23,8 @@ object boxenStrings {
   inline def blueBright: blueBright = "blueBright".asInstanceOf[blueBright]
   
   @js.native
-  sealed trait bold extends StObject
-  inline def bold: bold = "bold".asInstanceOf[bold]
-  
-  @js.native
   sealed trait center extends StObject
   inline def center: center = "center".asInstanceOf[center]
-  
-  @js.native
-  sealed trait classic extends StObject
-  inline def classic: classic = "classic".asInstanceOf[classic]
   
   @js.native
   sealed trait cyan extends StObject
@@ -45,14 +33,6 @@ object boxenStrings {
   @js.native
   sealed trait cyanBright extends StObject
   inline def cyanBright: cyanBright = "cyanBright".asInstanceOf[cyanBright]
-  
-  @js.native
-  sealed trait double extends StObject
-  inline def double: double = "double".asInstanceOf[double]
-  
-  @js.native
-  sealed trait doubleSingle extends StObject
-  inline def doubleSingle: doubleSingle = "doubleSingle".asInstanceOf[doubleSingle]
   
   @js.native
   sealed trait gray extends StObject
@@ -83,6 +63,10 @@ object boxenStrings {
   inline def magentaBright: magentaBright = "magentaBright".asInstanceOf[magentaBright]
   
   @js.native
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
+  
+  @js.native
   sealed trait red extends StObject
   inline def red: red = "red".asInstanceOf[red]
   
@@ -93,18 +77,6 @@ object boxenStrings {
   @js.native
   sealed trait right extends StObject
   inline def right: right = "right".asInstanceOf[right]
-  
-  @js.native
-  sealed trait round extends StObject
-  inline def round: round = "round".asInstanceOf[round]
-  
-  @js.native
-  sealed trait single extends StObject
-  inline def single: single = "single".asInstanceOf[single]
-  
-  @js.native
-  sealed trait singleDouble extends StObject
-  inline def singleDouble: singleDouble = "singleDouble".asInstanceOf[singleDouble]
   
   @js.native
   sealed trait white extends StObject

@@ -12,33 +12,45 @@ trait MedicinalProductDefinitionCharacteristic
   
   var _valueDate: js.UndefOr[Element] = js.undefined
   
+  var _valueMarkdown: js.UndefOr[Element] = js.undefined
+  
   /**
     * A code expressing the type of characteristic.
     */
   var `type`: CodeableConcept
   
   /**
-    * A value for the characteristic.
+    * Text, as markdown, is intended to be used only when the item cannot ever reasonably be coded. Otherwise, for cases where a code is not available, but is feasible, use CodeableConcept.text.
     */
   var valueAttachment: js.UndefOr[Attachment] = js.undefined
   
   /**
-    * A value for the characteristic.
+    * Text, as markdown, is intended to be used only when the item cannot ever reasonably be coded. Otherwise, for cases where a code is not available, but is feasible, use CodeableConcept.text.
     */
   var valueBoolean: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A value for the characteristic.
+    * Text, as markdown, is intended to be used only when the item cannot ever reasonably be coded. Otherwise, for cases where a code is not available, but is feasible, use CodeableConcept.text.
     */
   var valueCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * A value for the characteristic.
+    * Text, as markdown, is intended to be used only when the item cannot ever reasonably be coded. Otherwise, for cases where a code is not available, but is feasible, use CodeableConcept.text.
     */
   var valueDate: js.UndefOr[String] = js.undefined
   
   /**
-    * A value for the characteristic.
+    * Text, as markdown, is intended to be used only when the item cannot ever reasonably be coded. Otherwise, for cases where a code is not available, but is feasible, use CodeableConcept.text.
+    */
+  var valueInteger: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Text, as markdown, is intended to be used only when the item cannot ever reasonably be coded. Otherwise, for cases where a code is not available, but is feasible, use CodeableConcept.text.
+    */
+  var valueMarkdown: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Text, as markdown, is intended to be used only when the item cannot ever reasonably be coded. Otherwise, for cases where a code is not available, but is feasible, use CodeableConcept.text.
     */
   var valueQuantity: js.UndefOr[Quantity] = js.undefined
 }
@@ -71,6 +83,14 @@ object MedicinalProductDefinitionCharacteristic {
     
     inline def setValueDateUndefined: Self = StObject.set(x, "valueDate", js.undefined)
     
+    inline def setValueInteger(value: Double): Self = StObject.set(x, "valueInteger", value.asInstanceOf[js.Any])
+    
+    inline def setValueIntegerUndefined: Self = StObject.set(x, "valueInteger", js.undefined)
+    
+    inline def setValueMarkdown(value: String): Self = StObject.set(x, "valueMarkdown", value.asInstanceOf[js.Any])
+    
+    inline def setValueMarkdownUndefined: Self = StObject.set(x, "valueMarkdown", js.undefined)
+    
     inline def setValueQuantity(value: Quantity): Self = StObject.set(x, "valueQuantity", value.asInstanceOf[js.Any])
     
     inline def setValueQuantityUndefined: Self = StObject.set(x, "valueQuantity", js.undefined)
@@ -82,5 +102,9 @@ object MedicinalProductDefinitionCharacteristic {
     inline def set_valueDate(value: Element): Self = StObject.set(x, "_valueDate", value.asInstanceOf[js.Any])
     
     inline def set_valueDateUndefined: Self = StObject.set(x, "_valueDate", js.undefined)
+    
+    inline def set_valueMarkdown(value: Element): Self = StObject.set(x, "_valueMarkdown", value.asInstanceOf[js.Any])
+    
+    inline def set_valueMarkdownUndefined: Self = StObject.set(x, "_valueMarkdown", js.undefined)
   }
 }

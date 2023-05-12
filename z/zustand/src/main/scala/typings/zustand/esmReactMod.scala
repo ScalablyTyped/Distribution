@@ -2,6 +2,7 @@ package typings.zustand
 
 import typings.zustand.anon.FnCall
 import typings.zustand.anon.GetServerState
+import typings.zustand.anon.WithReactReadonlyStoreApi
 import typings.zustand.anon.WithReactStoreApiunknown
 import typings.zustand.esmVanillaMod.Mutate
 import typings.zustand.esmVanillaMod.StateCreator
@@ -17,9 +18,16 @@ object esmReactMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    * @deprecated Use `import { create } from 'zustand'`
+    */
   @JSImport("zustand/esm/react", JSImport.Default)
   @js.native
-  val default: Create = js.native
+  val default: Create_ = js.native
+  
+  @JSImport("zustand/esm/react", "create")
+  @js.native
+  val create: Create_ = js.native
   
   inline def useStore[S /* <: WithReactStoreApiunknown */](api: S): ExtractState[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("useStore")(api.asInstanceOf[js.Any]).asInstanceOf[ExtractState[S]]
   inline def useStore[S /* <: WithReactStoreApiunknown */, U](api: S, selector: js.Function1[/* state */ ExtractState[S], U]): U = (^.asInstanceOf[js.Dynamic].applyDynamic("useStore")(api.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[U]
@@ -30,12 +38,15 @@ object esmReactMod {
   ): U = (^.asInstanceOf[js.Dynamic].applyDynamic("useStore")(api.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], equalityFn.asInstanceOf[js.Any])).asInstanceOf[U]
   
   @js.native
-  trait Create extends StObject {
+  trait Create_ extends StObject {
     
     def apply[T](): js.Function1[
         /* initializer */ StateCreator[T, js.Array[Any], js.Array[Any], T], 
         UseBoundStore[Mutate[StoreApi[T], js.Array[Any]]]
       ] = js.native
+    /**
+      * @deprecated Use `useStore` hook to bind store
+      */
     def apply[S /* <: StoreApi[Any] */](store: S): UseBoundStore[S] = js.native
     def apply[T, Mos /* <: js.Array[js.Tuple2[StoreMutatorIdentifier, Any]] */](initializer: StateCreator[T, js.Array[Any], Mos, T]): UseBoundStore[Mutate[StoreApi[T], Mos]] = js.native
   }
@@ -50,7 +61,36 @@ object esmReactMod {
   @js.native
   trait ExtractState[S] extends StObject
   
-  type UseBoundStore[S /* <: WithReactStoreApiunknown */] = FnCall[S] & S
+  /* Inlined std.Pick<zustand.zustand/esm/vanilla.StoreApi<T>, 'getState' | 'subscribe'> */
+  trait ReadonlyStoreApi[T] extends StObject {
+    
+    var getState: js.Function0[T]
+    
+    var subscribe: js.Function1[
+        /* listener */ js.Function2[/* state */ T, /* prevState */ T, Unit], 
+        js.Function0[Unit]
+      ]
+  }
+  object ReadonlyStoreApi {
+    
+    inline def apply[T](
+      getState: () => T,
+      subscribe: /* listener */ js.Function2[/* state */ T, /* prevState */ T, Unit] => js.Function0[Unit]
+    ): ReadonlyStoreApi[T] = {
+      val __obj = js.Dynamic.literal(getState = js.Any.fromFunction0(getState), subscribe = js.Any.fromFunction1(subscribe))
+      __obj.asInstanceOf[ReadonlyStoreApi[T]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyStoreApi[?], T] (val x: Self & ReadonlyStoreApi[T]) extends AnyVal {
+      
+      inline def setGetState(value: () => T): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+      
+      inline def setSubscribe(value: /* listener */ js.Function2[/* state */ T, /* prevState */ T, Unit] => js.Function0[Unit]): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
+    }
+  }
   
-  type WithReact[S /* <: StoreApi[Any] */] = S & GetServerState[S]
+  type UseBoundStore[S /* <: WithReactReadonlyStoreApi */] = FnCall[S] & S
+  
+  type WithReact[S /* <: ReadonlyStoreApi[Any] */] = S & GetServerState[S]
 }

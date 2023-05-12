@@ -80,6 +80,10 @@ trait PartialITableQuadrantStac extends StObject {
   
   var quadrantRef: js.UndefOr[Ref[HTMLDivElement]] = js.undefined
   
+  var renderScrollIndicatorOverlay: js.UndefOr[
+    js.Function2[/* scrollBarWidth */ Double, /* columnHeaderHeight */ Double, js.UndefOr[Element]]
+  ] = js.undefined
+  
   var rowHeaderRef: js.UndefOr[Ref[HTMLDivElement]] = js.undefined
   
   var rowHeaderRenderer: js.UndefOr[
@@ -221,6 +225,10 @@ object PartialITableQuadrantStac {
     inline def setQuadrantRefNull: Self = StObject.set(x, "quadrantRef", null)
     
     inline def setQuadrantRefUndefined: Self = StObject.set(x, "quadrantRef", js.undefined)
+    
+    inline def setRenderScrollIndicatorOverlay(value: (/* scrollBarWidth */ Double, /* columnHeaderHeight */ Double) => js.UndefOr[Element]): Self = StObject.set(x, "renderScrollIndicatorOverlay", js.Any.fromFunction2(value))
+    
+    inline def setRenderScrollIndicatorOverlayUndefined: Self = StObject.set(x, "renderScrollIndicatorOverlay", js.undefined)
     
     inline def setRowHeaderRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "rowHeaderRef", value.asInstanceOf[js.Any])
     

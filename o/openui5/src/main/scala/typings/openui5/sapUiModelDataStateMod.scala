@@ -84,6 +84,8 @@ object sapUiModelDataStateMod {
     extends typings.openui5.sapUiBaseObjectMod.default {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns whether the data state is changed, or resets the data state in case the parameter `bNewState`
       * is false; reset data state means that the data state properties are replaced with the changed properties.
       * As long as there was no call to this method with `bNewState` set to false, the data state is dirty, and
@@ -186,6 +188,8 @@ object sapUiModelDataStateMod {
     def isLaundering(): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets an array of control state messages.
       *
       * @returns `this` to allow method chaining
@@ -196,6 +200,8 @@ object sapUiModelDataStateMod {
     aMessages: js.Array[typings.openui5.sapUiCoreMessageMod.default]): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets the dirty value that was rejected by the type validation.
       *
       * @returns `this` to allow method chaining
@@ -208,6 +214,8 @@ object sapUiModelDataStateMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets the laundering state of the data state.
       *
       * @returns `this` to allow method chaining
@@ -231,6 +239,8 @@ object sapUiModelDataStateMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets the formatted original value of the data.
       *
       * @returns `this` to allow method chaining
@@ -241,6 +251,8 @@ object sapUiModelDataStateMod {
     vOriginalValue: Boolean): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets the formatted value of the data state,
       *
       * @returns `this` to allow method chaining

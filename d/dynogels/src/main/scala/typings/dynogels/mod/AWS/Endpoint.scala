@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("dynogels", "AWS.Endpoint")
 @js.native
 open class Endpoint protected ()
-  extends typings.awsSdk.mod.Endpoint {
+  extends typings.awsSdk2Types.mod.Endpoint {
   /**
     * Constructs a new endpoint given an endpoint URL.
     */

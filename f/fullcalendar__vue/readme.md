@@ -1,7 +1,7 @@
 
 # Scala.js typings for fullcalendar__vue
 
-Typings are for version 5.11.2
+Typings are for version 6.1.7
 
 ## Library description:
 The official Vue 2 component for FullCalendar

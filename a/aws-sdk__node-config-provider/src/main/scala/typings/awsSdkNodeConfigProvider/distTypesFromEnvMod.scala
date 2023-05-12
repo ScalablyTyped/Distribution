@@ -1,7 +1,7 @@
 package typings.awsSdkNodeConfigProvider
 
 import typings.awsSdkTypes.distTypesUtilMod.Provider
-import typings.node.processMod.global.NodeJS.ProcessEnv
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,5 +14,5 @@ object distTypesFromEnvMod {
   
   inline def fromEnv[T](envVarSelector: GetterFromEnv[T]): Provider[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEnv")(envVarSelector.asInstanceOf[js.Any]).asInstanceOf[Provider[T]]
   
-  type GetterFromEnv[T] = js.Function1[/* env */ ProcessEnv, js.UndefOr[T]]
+  type GetterFromEnv[T] = js.Function1[/* env */ Record[String, js.UndefOr[String]], js.UndefOr[T]]
 }

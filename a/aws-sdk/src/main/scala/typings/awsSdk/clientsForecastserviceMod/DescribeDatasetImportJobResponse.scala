@@ -17,7 +17,7 @@ trait DescribeDatasetImportJobResponse extends StObject {
   var DataSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * The location of the training data to import and an AWS Identity and Access Management (IAM) role that Amazon Forecast can assume to access the data. If encryption is used, DataSource includes an AWS Key Management Service (KMS) key.
+    * The location of the training data to import and an Identity and Access Management (IAM) role that Amazon Forecast can assume to access the data. If encryption is used, DataSource includes an Key Management Service (KMS) key.
     */
   var DataSource: js.UndefOr[typings.awsSdk.clientsForecastserviceMod.DataSource] = js.undefined
   
@@ -55,6 +55,11 @@ trait DescribeDatasetImportJobResponse extends StObject {
     * The format of the geolocation attribute. Valid Values:"LAT_LONG" and "CC_POSTALCODE".
     */
   var GeolocationFormat: js.UndefOr[typings.awsSdk.clientsForecastserviceMod.GeolocationFormat] = js.undefined
+  
+  /**
+    * The import mode of the dataset import job, FULL or INCREMENTAL.
+    */
+  var ImportMode: js.UndefOr[typings.awsSdk.clientsForecastserviceMod.ImportMode] = js.undefined
   
   /**
     * The last time the resource was modified. The timestamp depends on the status of the job:    CREATE_PENDING - The CreationTime.    CREATE_IN_PROGRESS - The current timestamp.    CREATE_STOPPING - The current timestamp.    CREATE_STOPPED - When the job stopped.    ACTIVE or CREATE_FAILED - When the job finished or failed.  
@@ -135,6 +140,10 @@ object DescribeDatasetImportJobResponse {
     inline def setGeolocationFormat(value: GeolocationFormat): Self = StObject.set(x, "GeolocationFormat", value.asInstanceOf[js.Any])
     
     inline def setGeolocationFormatUndefined: Self = StObject.set(x, "GeolocationFormat", js.undefined)
+    
+    inline def setImportMode(value: ImportMode): Self = StObject.set(x, "ImportMode", value.asInstanceOf[js.Any])
+    
+    inline def setImportModeUndefined: Self = StObject.set(x, "ImportMode", js.undefined)
     
     inline def setLastModificationTime(value: js.Date): Self = StObject.set(x, "LastModificationTime", value.asInstanceOf[js.Any])
     

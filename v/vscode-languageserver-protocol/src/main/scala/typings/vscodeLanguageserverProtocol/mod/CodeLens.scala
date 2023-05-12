@@ -18,7 +18,7 @@ object CodeLens {
   inline def create(range: typings.vscodeLanguageserverTypes.mod.Range, data: LSPAny): typings.vscodeLanguageserverTypes.mod.CodeLens = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.CodeLens]
   
   /**
-    * Checks whether the given literal conforms to the [CodeLens](#CodeLens) interface.
+    * Checks whether the given literal conforms to the {@link CodeLens} interface.
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.CodeLens */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.CodeLens */ Boolean]
 }

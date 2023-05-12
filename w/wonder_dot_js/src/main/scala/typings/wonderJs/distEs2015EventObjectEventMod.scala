@@ -17,6 +17,7 @@ object distEs2015EventObjectEventMod {
   open class Event protected () extends StObject {
     /* protected */ def this(eventName: EEventName) = this()
     
+    // eslint-disable-next-line no-single-element-tuple-type
     /* protected */ def copyMember(destination: Event, source: Event, memberArr: js.Array[Any]): Event = js.native
     
     var currentTarget: HTMLElement | EntityObject = js.native

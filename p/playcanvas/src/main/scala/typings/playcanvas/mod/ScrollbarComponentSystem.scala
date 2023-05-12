@@ -2,7 +2,7 @@ package typings.playcanvas.mod
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable2
-import typings.playcanvas.anon.Name
+import typings.playcanvas.anon.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ open class ScrollbarComponentSystem protected () extends ComponentSystem {
   /**
     * Create a new ComponentSystem instance.
     *
-    * @param {AppBase} app - The application managing this system.
+    * @param {import('../app-base.js').AppBase} app - The application managing this system.
     */
   def this(app: AppBase) = this()
   
@@ -33,5 +33,5 @@ open class ScrollbarComponentSystem protected () extends ComponentSystem {
   def initializeComponentData(component: Any, data: Any, properties: Any): Unit = js.native
   
   @JSName("schema")
-  var schema_ScrollbarComponentSystem: js.Array[Name] = js.native
+  var schema_ScrollbarComponentSystem: js.Array[Type] = js.native
 }

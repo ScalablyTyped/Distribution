@@ -6,15 +6,19 @@ import typings.sharp.sharpStrings.`b-w`
 import typings.sharp.sharpStrings.av1
 import typings.sharp.sharpStrings.avif
 import typings.sharp.sharpStrings.bw
+import typings.sharp.sharpStrings.cm
 import typings.sharp.sharpStrings.cmyk
 import typings.sharp.sharpStrings.dz
 import typings.sharp.sharpStrings.fits
 import typings.sharp.sharpStrings.gif
 import typings.sharp.sharpStrings.heif
 import typings.sharp.sharpStrings.hevc
+import typings.sharp.sharpStrings.inch
 import typings.sharp.sharpStrings.input
+import typings.sharp.sharpStrings.jp2
 import typings.sharp.sharpStrings.jpeg
 import typings.sharp.sharpStrings.jpg
+import typings.sharp.sharpStrings.jxl
 import typings.sharp.sharpStrings.magick
 import typings.sharp.sharpStrings.multiband
 import typings.sharp.sharpStrings.openslide
@@ -60,8 +64,11 @@ trait Metadata extends StObject {
   
   /** Name of decoder used to decompress image data e.g. jpeg, png, webp, gif, svg */
   var format: js.UndefOr[
-    avif | dz | fits | gif | heif | input | jpeg | jpg | magick | openslide | pdf | png | ppm | raw | svg | tiff | tif | v | webp
+    avif | dz | fits | gif | heif | input | jpeg | jpg | jp2 | jxl | magick | openslide | pdf | png | ppm | raw | svg | tiff | tif | v | webp
   ] = js.undefined
+  
+  /** String containing format for images loaded via *magick */
+  var formatMagick: js.UndefOr[String] = js.undefined
   
   /** Boolean indicating the presence of an alpha transparency channel */
   var hasAlpha: js.UndefOr[Boolean] = js.undefined
@@ -81,6 +88,9 @@ trait Metadata extends StObject {
   /** Boolean indicating whether the image is interlaced using a progressive scan */
   var isProgressive: js.UndefOr[Boolean] = js.undefined
   
+  /** Details of each level in a multi-level image provided as an array of objects, requires libvips compiled with support for OpenSlide */
+  var levels: js.UndefOr[js.Array[LevelMetadata]] = js.undefined
+  
   /** Number of times to loop an animated image, zero refers to a continuous loop. */
   var loop: js.UndefOr[Double] = js.undefined
   
@@ -96,11 +106,17 @@ trait Metadata extends StObject {
   /** Number of pages/frames contained within the image, with support for TIFF, HEIF, PDF, animated GIF and animated WebP */
   var pages: js.UndefOr[Double] = js.undefined
   
+  /** The unit of resolution (density) */
+  var resolutionUnit: js.UndefOr[inch | cm] = js.undefined
+  
   /** Total size of image in bytes, for Stream and Buffer input only */
   var size: js.UndefOr[Double] = js.undefined
   
   /** Name of colour space interpretation */
   var space: js.UndefOr[multiband | `b-w` | bw | cmyk | srgb] = js.undefined
+  
+  /** Number of Sub Image File Directories in an OME-TIFF image */
+  var subifds: js.UndefOr[Double] = js.undefined
   
   /** Buffer containing raw TIFFTAG_PHOTOSHOP data, if present */
   var tifftagPhotoshop: js.UndefOr[Buffer] = js.undefined
@@ -154,8 +170,12 @@ object Metadata {
     inline def setExifUndefined: Self = StObject.set(x, "exif", js.undefined)
     
     inline def setFormat(
-      value: avif | dz | fits | gif | heif | input | jpeg | jpg | magick | openslide | pdf | png | ppm | raw | svg | tiff | tif | v | webp
+      value: avif | dz | fits | gif | heif | input | jpeg | jpg | jp2 | jxl | magick | openslide | pdf | png | ppm | raw | svg | tiff | tif | v | webp
     ): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatMagick(value: String): Self = StObject.set(x, "formatMagick", value.asInstanceOf[js.Any])
+    
+    inline def setFormatMagickUndefined: Self = StObject.set(x, "formatMagick", js.undefined)
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
@@ -183,6 +203,12 @@ object Metadata {
     
     inline def setIsProgressiveUndefined: Self = StObject.set(x, "isProgressive", js.undefined)
     
+    inline def setLevels(value: js.Array[LevelMetadata]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+    
+    inline def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
+    
+    inline def setLevelsVarargs(value: LevelMetadata*): Self = StObject.set(x, "levels", js.Array(value*))
+    
     inline def setLoop(value: Double): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
     inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
@@ -203,6 +229,10 @@ object Metadata {
     
     inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
+    inline def setResolutionUnit(value: inch | cm): Self = StObject.set(x, "resolutionUnit", value.asInstanceOf[js.Any])
+    
+    inline def setResolutionUnitUndefined: Self = StObject.set(x, "resolutionUnit", js.undefined)
+    
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
@@ -210,6 +240,10 @@ object Metadata {
     inline def setSpace(value: multiband | `b-w` | bw | cmyk | srgb): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
     
     inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
+    
+    inline def setSubifds(value: Double): Self = StObject.set(x, "subifds", value.asInstanceOf[js.Any])
+    
+    inline def setSubifdsUndefined: Self = StObject.set(x, "subifds", js.undefined)
     
     inline def setTifftagPhotoshop(value: Buffer): Self = StObject.set(x, "tifftagPhotoshop", value.asInstanceOf[js.Any])
     

@@ -7,32 +7,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TranscriptFilter extends StObject {
   
   /**
-    * Allows you to specify a time range (in milliseconds) in your audio, during which you want to search for the specified key words or phrases. See for more detail.
+    * Makes it possible to specify a time range (in milliseconds) in your audio, during which you want to search for the specified key words or phrases. See for more detail.
     */
   var AbsoluteTimeRange: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.AbsoluteTimeRange] = js.undefined
   
   /**
-    * Set to TRUE to flag the absence of the phrase you specified in your request. Set to FALSE to flag the presence of the phrase you specified in your request.
+    * Set to TRUE to flag the absence of the phrase that you specified in your request. Set to FALSE to flag the presence of the phrase that you specified in your request.
     */
   var Negate: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specify the participant you want to flag. Omitting this parameter is equivalent to specifying both participants.
+    * Specify the participant that you want to flag. Omitting this parameter is equivalent to specifying both participants.
     */
   var ParticipantRole: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.ParticipantRole] = js.undefined
   
   /**
-    * Allows you to specify a time range (in percentage) in your media file, during which you want to search for the specified key words or phrases. See for more detail.
+    * Makes it possible to specify a time range (in percentage) in your media file, during which you want to search for the specified key words or phrases. See for more detail.
     */
   var RelativeTimeRange: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.RelativeTimeRange] = js.undefined
   
   /**
-    * Specify the phrases you want to flag.
+    * Specify the phrases that you want to flag.
     */
   var Targets: StringTargetList
   
   /**
-    * Flag the presence or absence of an exact match to the phrases you specify. For example, if you specify the phrase "speak to a manager" as your Targets value, only that exact phrase is flagged. Note that semantic matching is not supported. For example, if your customer says "speak to the manager", instead of "speak to a manager", your content is not flagged.
+    * Flag the presence or absence of an exact match to the phrases that you specify. For example, if you specify the phrase "speak to a manager" as your Targets value, only that exact phrase is flagged. Note that semantic matching is not supported. For example, if your customer says "speak to the manager", instead of "speak to a manager", your content is not flagged.
     */
   var TranscriptFilterType: typings.awsSdk.clientsTranscribeserviceMod.TranscriptFilterType
 }

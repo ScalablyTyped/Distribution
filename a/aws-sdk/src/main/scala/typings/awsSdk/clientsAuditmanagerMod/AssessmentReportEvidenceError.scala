@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssessmentReportEvidenceError extends StObject {
   
   /**
-    *  The error code that the AssessmentReportEvidence API returned. 
+    *  The error code that was returned. 
     */
   var errorCode: js.UndefOr[ErrorCode] = js.undefined
   
   /**
-    *  The error message that the AssessmentReportEvidence API returned. 
+    *  The error message that was returned. 
     */
   var errorMessage: js.UndefOr[ErrorMessage] = js.undefined
   

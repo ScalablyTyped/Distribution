@@ -14,13 +14,7 @@ open class Motion protected () extends StObject {
   def this(option: Double) = this()
   def this(option: MotionOption) = this()
   
-  def on(event: String, cb: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_calibrated(event: calibrated, cb: js.Function0[Unit]): this.type = js.native
+  def on(event: calibrated | motionstart | motionend, cb: js.Function0[Unit]): this.type = js.native
   @JSName("on")
   def on_data(event: data, cb: js.Function1[/* data */ Any, Unit]): this.type = js.native
-  @JSName("on")
-  def on_motionend(event: motionend, cb: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_motionstart(event: motionstart, cb: js.Function0[Unit]): this.type = js.native
 }

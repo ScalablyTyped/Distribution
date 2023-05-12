@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rx-lite-joinpatterns"
-version := "4.0-dt-20211202Z-d23fc4"
+version := "4.0-dt-20230322Z-d23fc4"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

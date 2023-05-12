@@ -10,6 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class UnlinkIdentityCommand protected ()
   extends typings.awsSdkClientCognitoIdentity.distTypesCommandsMod.UnlinkIdentityCommand {
+  /**
+    * @public
+    */
   def this(input: UnlinkIdentityCommandInput) = this()
 }
 /* static members */

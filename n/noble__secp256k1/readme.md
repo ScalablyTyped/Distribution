@@ -1,7 +1,7 @@
 
 # Scala.js typings for noble__secp256k1
 
-Typings are for version 1.7.0
+Typings are for version 2.0.0
 
 ## Library description:
 Fastest JS implementation of secp256k1. Independently audited, high-security, 0-dependency ECDSA & Schnorr signatures

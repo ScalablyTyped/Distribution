@@ -3,6 +3,7 @@ package typings.babylonjs
 import typings.babylonjs.materialsNodeNodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPoint
 import typings.babylonjs.materialsNodeNodeMaterialBlockMod.NodeMaterialBlock
 import typings.babylonjs.materialsNodeNodeMaterialBuildStateMod.NodeMaterialBuildState
+import typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterialTextureBlocks
 import typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
@@ -13,7 +14,9 @@ object materialsNodeBlocksPbrRefractionBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/PBR/refractionBlock", "RefractionBlock")
   @js.native
-  open class RefractionBlock protected () extends NodeMaterialBlock {
+  open class RefractionBlock protected ()
+    extends NodeMaterialBlock
+       with NodeMaterialTextureBlocks {
     /**
       * Create a new RefractionBlock
       * @param name defines the block name

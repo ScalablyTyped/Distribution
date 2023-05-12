@@ -37,6 +37,11 @@ trait RecoveryInstanceFailback extends StObject {
   var failbackJobID: js.UndefOr[JobID] = js.undefined
   
   /**
+    * The launch type (Recovery / Drill) of the last launch for the failback replication of this recovery instance.
+    */
+  var failbackLaunchType: js.UndefOr[FailbackLaunchType] = js.undefined
+  
+  /**
     * Whether we are failing back to the original Source Server for this Recovery Instance.
     */
   var failbackToOriginalServer: js.UndefOr[Boolean] = js.undefined
@@ -84,6 +89,10 @@ object RecoveryInstanceFailback {
     inline def setFailbackJobID(value: JobID): Self = StObject.set(x, "failbackJobID", value.asInstanceOf[js.Any])
     
     inline def setFailbackJobIDUndefined: Self = StObject.set(x, "failbackJobID", js.undefined)
+    
+    inline def setFailbackLaunchType(value: FailbackLaunchType): Self = StObject.set(x, "failbackLaunchType", value.asInstanceOf[js.Any])
+    
+    inline def setFailbackLaunchTypeUndefined: Self = StObject.set(x, "failbackLaunchType", js.undefined)
     
     inline def setFailbackToOriginalServer(value: Boolean): Self = StObject.set(x, "failbackToOriginalServer", value.asInstanceOf[js.Any])
     

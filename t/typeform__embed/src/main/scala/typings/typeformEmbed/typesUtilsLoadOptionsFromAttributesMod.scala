@@ -36,11 +36,14 @@ object typesUtilsLoadOptionsFromAttributesMod {
     - typings.typeformEmbed.typeformEmbedStrings.record
     - typings.typeformEmbed.typeformEmbedStrings.integerOrBoolean
     - typings.typeformEmbed.typeformEmbedStrings.stringOrBoolean
+    - typings.typeformEmbed.typeformEmbedStrings.arrayOrBoolean
   */
   trait Transformation extends StObject
   object Transformation {
     
     inline def array: typings.typeformEmbed.typeformEmbedStrings.array = "array".asInstanceOf[typings.typeformEmbed.typeformEmbedStrings.array]
+    
+    inline def arrayOrBoolean: typings.typeformEmbed.typeformEmbedStrings.arrayOrBoolean = "arrayOrBoolean".asInstanceOf[typings.typeformEmbed.typeformEmbedStrings.arrayOrBoolean]
     
     inline def boolean: typings.typeformEmbed.typeformEmbedStrings.boolean = "boolean".asInstanceOf[typings.typeformEmbed.typeformEmbedStrings.boolean]
     

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SecretStorageChangeEvent extends StObject {
   
   /**
-    * The key of the secret that has changed.
-    */
+  		 * The key of the secret that has changed.
+  		 */
   val key: String
 }
 object SecretStorageChangeEvent {

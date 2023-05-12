@@ -56,13 +56,13 @@ object Spatial {
   
   /**
     * Data to used as rendering hint for a label
-    * @property x {number} - The X coordinate of the first line's starting point
-    * @property y {number} - The Y coordinate of the first line's base line
-    * @property angle {number} - The clockwise rotation angle in radians
-    * @property font {string} - The CSS font-family
-    * @property size {number} - The CSS font-size
-    * @property color {string} - The CSS color
-    * @property text {string} - The text content, new line characters (\\u000A) are interpreted as line breaks
+    * x {number} - The X coordinate of the first line's starting point
+    * y {number} - The Y coordinate of the first line's base line
+    * angle {number} - The clockwise rotation angle in radians
+    * font {string} - The CSS font-family
+    * size {number} - The CSS font-size
+    * color {string} - The CSS color
+    * text {string} - The text content, new line characters (\\u000A) are interpreted as line breaks
     */
   trait Label extends StObject {
     
@@ -108,15 +108,15 @@ object Spatial {
   
   /**
     * Options which are used to initialize spatial object object
-    * @property style {(H.map.SpatialStyle | H.map.SpatialStyle.Options)=} - the style to be used when tracing the spatial object
-    * @property arrows {(H.map.ArrowStyle | H.map.ArrowStyle.Options)=} - The arrows style to be used when rendering the spatial.
-    * @property visibility {boolean=} - An optional boolean value indicating whether this map object is visible, default is true
-    * @property zIndex {number=} - The z-index value of the map object, default is 0
-    * @property min {number=} - The minimum zoom level for which the object is visible, default is -Infinity
-    * @property max {number=} - The maximum zoom level for which the object is visible, default is Infinity
-    * @property provider {(H.map.provider.Provider | null)=} - The provider of this object. This property is only needed if a customized Implementation of ObjectProvider wants to instantiate
+    * style {(H.map.SpatialStyle | H.map.SpatialStyle.Options)=} - the style to be used when tracing the spatial object
+    * arrows {(H.map.ArrowStyle | H.map.ArrowStyle.Options)=} - The arrows style to be used when rendering the spatial.
+    * visibility {boolean=} - An optional boolean value indicating whether this map object is visible, default is true
+    * zIndex {number=} - The z-index value of the map object, default is 0
+    * min {number=} - The minimum zoom level for which the object is visible, default is -Infinity
+    * max {number=} - The maximum zoom level for which the object is visible, default is Infinity
+    * provider {(H.map.provider.Provider | null)=} - The provider of this object. This property is only needed if a customized Implementation of ObjectProvider wants to instantiate
     * an object.
-    * @property data {*} - Optional arbitrary data to be stored with this map object. This data can be retrieved by calling getData.
+    * data {*} - Optional arbitrary data to be stored with this map object. This data can be retrieved by calling getData.
     */
   trait Options extends StObject {
     

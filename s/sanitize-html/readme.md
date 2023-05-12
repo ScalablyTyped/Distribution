@@ -1,7 +1,7 @@
 
 # Scala.js typings for sanitize-html
 
-Typings are for version 2.6
+Typings are for version 2.9
 
 ## Library description:
 Clean up user-submitted HTML, preserving allowlisted elements and allowlisted attributes on a per-element basis

@@ -58,8 +58,8 @@ object distTypesHttpMod {
       * Returns a new instance of Headers with the specified header set to the
       * provided value. Does not modify the original Headers instance.
       *
-      * @param headerName    The name of the header to add or overwrite
-      * @param headerValue   The value to which the header should be set
+      * @param headerName - The name of the header to add or overwrite
+      * @param headerValue - The value to which the header should be set
       */
     def withHeader(headerName: String, headerValue: String): Headers = js.native
     
@@ -67,7 +67,7 @@ object distTypesHttpMod {
       * Returns a new instance of Headers without the specified header. Does not
       * modify the original Headers instance.
       *
-      * @param headerName    The name of the header to remove
+      * @param headerName - The name of the header to remove
       */
     def withoutHeader(headerName: String): Headers = js.native
   }
@@ -75,6 +75,12 @@ object distTypesHttpMod {
   trait HttpHandlerOptions extends StObject {
     
     var abortSignal: js.UndefOr[AbortSignal] = js.undefined
+    
+    /**
+      * The maximum time in milliseconds that the connection phase of a request
+      * may take before the connection attempt is abandoned.
+      */
+    var requestTimeout: js.UndefOr[Double] = js.undefined
   }
   object HttpHandlerOptions {
     
@@ -89,6 +95,10 @@ object distTypesHttpMod {
       inline def setAbortSignal(value: AbortSignal): Self = StObject.set(x, "abortSignal", value.asInstanceOf[js.Any])
       
       inline def setAbortSignalUndefined: Self = StObject.set(x, "abortSignal", js.undefined)
+      
+      inline def setRequestTimeout(value: Double): Self = StObject.set(x, "requestTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setRequestTimeoutUndefined: Self = StObject.set(x, "requestTimeout", js.undefined)
     }
   }
   

@@ -7,6 +7,8 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.PointerEvent
+import typings.react.mod.PointerEventHandler
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
 import typings.std.Element
@@ -31,6 +33,10 @@ trait DayEventHandlers extends StObject {
   var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
   
   var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
+  
+  var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLButtonElement]] = js.undefined
+  
+  var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLButtonElement]] = js.undefined
   
   var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLButtonElement]] = js.undefined
   
@@ -77,6 +83,14 @@ object DayEventHandlers {
     inline def setOnMouseLeave(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
     
     inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
+    
+    inline def setOnPointerEnter(value: PointerEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onPointerEnter", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerEnterUndefined: Self = StObject.set(x, "onPointerEnter", js.undefined)
+    
+    inline def setOnPointerLeave(value: PointerEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerLeaveUndefined: Self = StObject.set(x, "onPointerLeave", js.undefined)
     
     inline def setOnTouchCancel(value: TouchEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1(value))
     

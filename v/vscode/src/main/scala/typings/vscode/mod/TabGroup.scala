@@ -7,32 +7,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TabGroup extends StObject {
   
   /**
-    * The active {@link Tab tab} in the group. This is the tab whose contents are currently
-    * being rendered.
-    *
-    * *Note* that there can be one active tab per group but there can only be one {@link TabGroups.activeTabGroup active group}.
-    */
+  		 * The active {@link Tab tab} in the group. This is the tab whose contents are currently
+  		 * being rendered.
+  		 *
+  		 * *Note* that there can be one active tab per group but there can only be one {@link TabGroups.activeTabGroup active group}.
+  		 */
   val activeTab: js.UndefOr[Tab] = js.undefined
   
   /**
-    * Whether or not the group is currently active.
-    *
-    * *Note* that only one tab group is active at a time, but that multiple tab
-    * groups can have an {@link TabGroup.aciveTab active tab}.
-    *
-    * @see {@link Tab.isActive}
-    */
+  		 * Whether or not the group is currently active.
+  		 *
+  		 * *Note* that only one tab group is active at a time, but that multiple tab
+  		 * groups can have an {@link activeTab active tab}.
+  		 *
+  		 * @see {@link Tab.isActive}
+  		 */
   val isActive: Boolean
   
   /**
-    * The list of tabs contained within the group.
-    * This can be empty if the group has no tabs open.
-    */
+  		 * The list of tabs contained within the group.
+  		 * This can be empty if the group has no tabs open.
+  		 */
   val tabs: js.Array[Tab]
   
   /**
-    * The view column of the group.
-    */
+  		 * The view column of the group.
+  		 */
   val viewColumn: ViewColumn
 }
 object TabGroup {

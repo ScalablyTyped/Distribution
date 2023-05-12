@@ -15,6 +15,11 @@ trait StartCopyJobOutput extends StObject {
     * The date and time that a copy job is created, in Unix format and Coordinated Universal Time (UTC). The value of CreationDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
   var CreationDate: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * This is a returned boolean value indicating this is a parent (composite) copy job.
+    */
+  var IsParent: js.UndefOr[scala.Boolean] = js.undefined
 }
 object StartCopyJobOutput {
   
@@ -33,5 +38,9 @@ object StartCopyJobOutput {
     inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+    
+    inline def setIsParent(value: scala.Boolean): Self = StObject.set(x, "IsParent", value.asInstanceOf[js.Any])
+    
+    inline def setIsParentUndefined: Self = StObject.set(x, "IsParent", js.undefined)
   }
 }

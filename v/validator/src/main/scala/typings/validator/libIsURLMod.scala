@@ -85,6 +85,11 @@ object libIsURLMod {
       * @default true
       */
     var require_valid_protocol: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * @default true
+      */
+    var validate_length: js.UndefOr[Boolean] = js.undefined
   }
   object IsURLOptions {
     
@@ -157,6 +162,10 @@ object libIsURLMod {
       inline def setRequire_valid_protocol(value: Boolean): Self = StObject.set(x, "require_valid_protocol", value.asInstanceOf[js.Any])
       
       inline def setRequire_valid_protocolUndefined: Self = StObject.set(x, "require_valid_protocol", js.undefined)
+      
+      inline def setValidate_length(value: Boolean): Self = StObject.set(x, "validate_length", value.asInstanceOf[js.Any])
+      
+      inline def setValidate_lengthUndefined: Self = StObject.set(x, "validate_length", js.undefined)
     }
   }
 }

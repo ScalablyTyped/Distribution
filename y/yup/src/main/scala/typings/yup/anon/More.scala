@@ -15,7 +15,8 @@ object More {
     __obj.asInstanceOf[More]
   }
   
-  extension [Self <: More](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: More] (val x: Self) extends AnyVal {
     
     inline def setMore(value: Double): Self = StObject.set(x, "more", value.asInstanceOf[js.Any])
   }

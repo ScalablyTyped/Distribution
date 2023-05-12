@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeThesaurusResponse extends StObject {
   
   /**
-    * The Unix datetime that the thesaurus was created.
+    * The Unix timestamp when the thesaurus was created.
     */
   var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
@@ -64,7 +64,7 @@ trait DescribeThesaurusResponse extends StObject {
   var TermCount: js.UndefOr[Long] = js.undefined
   
   /**
-    * The Unix datetime that the thesaurus was last updated.
+    * The Unix timestamp when the thesaurus was last updated.
     */
   var UpdatedAt: js.UndefOr[js.Date] = js.undefined
 }

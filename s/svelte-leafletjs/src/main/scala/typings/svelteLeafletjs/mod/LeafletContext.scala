@@ -1,5 +1,6 @@
 package typings.svelteLeafletjs.mod
 
+import typings.geojson.mod.GeometryObject
 import typings.geojson.mod.LineString
 import typings.geojson.mod.MultiLineString
 import typings.leaflet.mod.CircleMarker_
@@ -54,11 +55,11 @@ object LeafletContext {
   
   trait GeoJSON extends StObject {
     
-    def getLayer(): GeoJSON__[Any]
+    def getLayer(): GeoJSON__[Any, GeometryObject]
   }
   object GeoJSON {
     
-    inline def apply(getLayer: () => GeoJSON__[Any]): typings.svelteLeafletjs.mod.LeafletContext.GeoJSON = {
+    inline def apply(getLayer: () => GeoJSON__[Any, GeometryObject]): typings.svelteLeafletjs.mod.LeafletContext.GeoJSON = {
       val __obj = js.Dynamic.literal(getLayer = js.Any.fromFunction0(getLayer))
       __obj.asInstanceOf[typings.svelteLeafletjs.mod.LeafletContext.GeoJSON]
     }
@@ -66,7 +67,7 @@ object LeafletContext {
     @scala.inline
     implicit open class MutableBuilder[Self <: typings.svelteLeafletjs.mod.LeafletContext.GeoJSON] (val x: Self) extends AnyVal {
       
-      inline def setGetLayer(value: () => GeoJSON__[Any]): Self = StObject.set(x, "getLayer", js.Any.fromFunction0(value))
+      inline def setGetLayer(value: () => GeoJSON__[Any, GeometryObject]): Self = StObject.set(x, "getLayer", js.Any.fromFunction0(value))
     }
   }
   

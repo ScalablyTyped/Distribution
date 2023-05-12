@@ -1,28 +1,28 @@
 package typings.atlaskitTokens.anon
 
-import typings.atlaskitTokens.distTypesTypesMod.PaintToken
+import typings.atlaskitTokens.atlaskitTokensStrings.`2rem`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `15`[BaseToken] extends StObject {
+trait `15` extends StObject {
   
-  var hover: PaintToken[BaseToken]
+  val attributes: `7`
   
-  var pressed: PaintToken[BaseToken]
+  val value: `2rem`
 }
 object `15` {
   
-  inline def apply[BaseToken](hover: PaintToken[BaseToken], pressed: PaintToken[BaseToken]): `15`[BaseToken] = {
-    val __obj = js.Dynamic.literal(hover = hover.asInstanceOf[js.Any], pressed = pressed.asInstanceOf[js.Any])
-    __obj.asInstanceOf[`15`[BaseToken]]
+  inline def apply(attributes: `7`): `15` = {
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], value = "2rem")
+    __obj.asInstanceOf[`15`]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: `15`[?], BaseToken] (val x: Self & `15`[BaseToken]) extends AnyVal {
+  implicit open class MutableBuilder[Self <: `15`] (val x: Self) extends AnyVal {
     
-    inline def setHover(value: PaintToken[BaseToken]): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: `7`): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    inline def setPressed(value: PaintToken[BaseToken]): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
+    inline def setValue(value: `2rem`): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

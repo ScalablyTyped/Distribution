@@ -10,6 +10,11 @@ trait TFIModelPerformance extends StObject {
     *  The area under the curve (auc). This summarizes the total positive rate (tpr) and false positive rate (FPR) across all possible model score thresholds. 
     */
   var auc: js.UndefOr[float] = js.undefined
+  
+  /**
+    *  Indicates the range of area under curve (auc) expected from the TFI model. A range greater than 0.1 indicates higher model uncertainity. 
+    */
+  var uncertaintyRange: js.UndefOr[UncertaintyRange] = js.undefined
 }
 object TFIModelPerformance {
   
@@ -24,5 +29,9 @@ object TFIModelPerformance {
     inline def setAuc(value: float): Self = StObject.set(x, "auc", value.asInstanceOf[js.Any])
     
     inline def setAucUndefined: Self = StObject.set(x, "auc", js.undefined)
+    
+    inline def setUncertaintyRange(value: UncertaintyRange): Self = StObject.set(x, "uncertaintyRange", value.asInstanceOf[js.Any])
+    
+    inline def setUncertaintyRangeUndefined: Self = StObject.set(x, "uncertaintyRange", js.undefined)
   }
 }

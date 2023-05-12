@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BucketCountBySharedAccessType extends StObject {
   
   /**
-    * The total number of buckets that are shared with an Amazon Web Services account that isn't part of the same Amazon Macie organization.
+    * The total number of buckets that are shared with one or more of the following or any combination of the following: an Amazon CloudFront OAI, a CloudFront OAC, or an Amazon Web Services account that isn't in the same Amazon Macie organization.
     */
   var external: js.UndefOr[long] = js.undefined
   
   /**
-    * The total number of buckets that are shared with an Amazon Web Services account that's part of the same Amazon Macie organization.
+    * The total number of buckets that are shared with one or more Amazon Web Services accounts in the same Amazon Macie organization. These buckets aren't shared with Amazon CloudFront OAIs or OACs.
     */
   var internal: js.UndefOr[long] = js.undefined
   
   /**
-    * The total number of buckets that aren't shared with other Amazon Web Services accounts.
+    * The total number of buckets that aren't shared with other Amazon Web Services accounts, Amazon CloudFront OAIs, or CloudFront OACs.
     */
   var notShared: js.UndefOr[long] = js.undefined
   
   /**
-    * The total number of buckets that Amazon Macie wasn't able to evaluate shared access settings for. Macie can't determine whether these buckets are shared with other Amazon Web Services accounts.
+    * The total number of buckets that Amazon Macie wasn't able to evaluate shared access settings for. Macie can't determine whether these buckets are shared with other Amazon Web Services accounts, Amazon CloudFront OAIs, or CloudFront OACs.
     */
   var unknown: js.UndefOr[long] = js.undefined
 }

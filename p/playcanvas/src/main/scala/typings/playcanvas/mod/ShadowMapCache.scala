@@ -9,6 +9,8 @@ trait ShadowMapCache extends StObject {
   
   def add(light: Any, shadowMap: Any): Unit
   
+  var cache: Map[Any, Any]
+  
   def clear(): Unit
   
   def destroy(): Unit
@@ -16,20 +18,18 @@ trait ShadowMapCache extends StObject {
   def get(device: Any, light: Any): Any
   
   def getKey(light: Any): String
-  
-  var shadowMapCache: Map[Any, Any]
 }
 object ShadowMapCache {
   
   inline def apply(
     add: (Any, Any) => Unit,
+    cache: Map[Any, Any],
     clear: () => Unit,
     destroy: () => Unit,
     get: (Any, Any) => Any,
-    getKey: Any => String,
-    shadowMapCache: Map[Any, Any]
+    getKey: Any => String
   ): ShadowMapCache = {
-    val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), clear = js.Any.fromFunction0(clear), destroy = js.Any.fromFunction0(destroy), get = js.Any.fromFunction2(get), getKey = js.Any.fromFunction1(getKey), shadowMapCache = shadowMapCache.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), cache = cache.asInstanceOf[js.Any], clear = js.Any.fromFunction0(clear), destroy = js.Any.fromFunction0(destroy), get = js.Any.fromFunction2(get), getKey = js.Any.fromFunction1(getKey))
     __obj.asInstanceOf[ShadowMapCache]
   }
   
@@ -38,6 +38,8 @@ object ShadowMapCache {
     
     inline def setAdd(value: (Any, Any) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
+    inline def setCache(value: Map[Any, Any]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
@@ -45,7 +47,5 @@ object ShadowMapCache {
     inline def setGet(value: (Any, Any) => Any): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     
     inline def setGetKey(value: Any => String): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
-    
-    inline def setShadowMapCache(value: Map[Any, Any]): Self = StObject.set(x, "shadowMapCache", value.asInstanceOf[js.Any])
   }
 }

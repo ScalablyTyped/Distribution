@@ -22,7 +22,7 @@ trait QueryRequest extends StObject {
   var Facets: js.UndefOr[FacetList] = js.undefined
   
   /**
-    * The unique identifier of the index to search. The identifier is returned in the response from the CreateIndex API.
+    * The identifier of the index to search. The identifier is returned in the response from the CreateIndex API.
     */
   var IndexId: typings.awsSdk.clientsKendraMod.IndexId
   
@@ -42,7 +42,7 @@ trait QueryRequest extends StObject {
   var QueryResultTypeFilter: js.UndefOr[QueryResultType] = js.undefined
   
   /**
-    * The text to search for.
+    * The input query text for the search. Amazon Kendra truncates queries at 30 token words, which excludes punctuation and stop words. Truncation still applies if you use Boolean or more advanced, complex queries. 
     */
   var QueryText: js.UndefOr[typings.awsSdk.clientsKendraMod.QueryText] = js.undefined
   

@@ -16,6 +16,9 @@ trait GPUAdapter extends StObject {
   // https://michalzalecki.com/nominal-typing-in-typescript/#approach-1-class-with-a-private-property
   val name: String = js.native
   
+  def requestAdapterInfo(): js.Promise[GPUAdapterInfo] = js.native
+  def requestAdapterInfo(unmaskHints: js.Array[String]): js.Promise[GPUAdapterInfo] = js.native
+  
   def requestDevice(): js.Promise[GPUDevice] = js.native
   def requestDevice(descriptor: GPUDeviceDescriptor): js.Promise[GPUDevice] = js.native
 }

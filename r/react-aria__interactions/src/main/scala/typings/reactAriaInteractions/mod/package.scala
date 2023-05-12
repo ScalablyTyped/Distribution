@@ -24,7 +24,7 @@ inline def isFocusVisible(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("
 
 inline def setInteractionModality(modality: Modality): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setInteractionModality")(modality.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def useFocus(props: FocusProps): FocusResult = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocus")(props.asInstanceOf[js.Any]).asInstanceOf[FocusResult]
+inline def useFocus[Target /* <: FocusableElement */](props: FocusProps[Target]): FocusResult[Target] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocus")(props.asInstanceOf[js.Any]).asInstanceOf[FocusResult[Target]]
 
 inline def useFocusVisible(): FocusVisibleResult = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusVisible")().asInstanceOf[FocusVisibleResult]
 inline def useFocusVisible(props: FocusVisibleProps): FocusVisibleResult = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusVisible")(props.asInstanceOf[js.Any]).asInstanceOf[FocusVisibleResult]

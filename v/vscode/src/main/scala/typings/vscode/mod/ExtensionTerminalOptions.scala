@@ -8,37 +8,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExtensionTerminalOptions extends StObject {
   
   /**
-    * The icon {@link ThemeColor} for the terminal.
-    * The standard `terminal.ansi*` theme keys are
-    * recommended for the best contrast and consistency across themes.
-    */
+  		 * The icon {@link ThemeColor} for the terminal.
+  		 * The standard `terminal.ansi*` theme keys are
+  		 * recommended for the best contrast and consistency across themes.
+  		 */
   var color: js.UndefOr[ThemeColor] = js.undefined
   
   /**
-    * The icon path or {@link ThemeIcon} for the terminal.
-    */
+  		 * The icon path or {@link ThemeIcon} for the terminal.
+  		 */
   var iconPath: js.UndefOr[Uri | Dark | ThemeIcon] = js.undefined
   
   /**
-    * Opt-out of the default terminal persistence on restart and reload.
-    * This will only take effect when `terminal.integrated.enablePersistentSessions` is enabled.
-    */
+  		 * Opt-out of the default terminal persistence on restart and reload.
+  		 * This will only take effect when `terminal.integrated.enablePersistentSessions` is enabled.
+  		 */
   var isTransient: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The {@link TerminalLocation} or {@link TerminalEditorLocationOptions} or {@link TerminalSplitLocationOptions} for the terminal.
-    */
+  		 * The {@link TerminalLocation} or {@link TerminalEditorLocationOptions} or {@link TerminalSplitLocationOptions} for the terminal.
+  		 */
   var location: js.UndefOr[TerminalLocation | TerminalEditorLocationOptions | TerminalSplitLocationOptions] = js.undefined
   
   /**
-    * A human-readable string which will be used to represent the terminal in the UI.
-    */
+  		 * A human-readable string which will be used to represent the terminal in the UI.
+  		 */
   var name: String
   
   /**
-    * An implementation of {@link Pseudoterminal} that allows an extension to
-    * control a terminal.
-    */
+  		 * An implementation of {@link Pseudoterminal} that allows an extension to
+  		 * control a terminal.
+  		 */
   var pty: Pseudoterminal
 }
 object ExtensionTerminalOptions {

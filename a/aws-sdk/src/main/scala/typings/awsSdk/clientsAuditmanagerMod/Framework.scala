@@ -27,12 +27,12 @@ trait Framework extends StObject {
   var controlSources: js.UndefOr[ControlSources] = js.undefined
   
   /**
-    *  Specifies when the framework was created. 
+    *  The time when the framework was created. 
     */
   var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    *  The IAM user or role that created the framework. 
+    *  The user or role that created the framework. 
     */
   var createdBy: js.UndefOr[CreatedBy] = js.undefined
   
@@ -47,12 +47,12 @@ trait Framework extends StObject {
   var id: js.UndefOr[UUID] = js.undefined
   
   /**
-    *  Specifies when the framework was most recently updated. 
+    *  The time when the framework was most recently updated. 
     */
   var lastUpdatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    *  The IAM user or role that most recently updated the framework. 
+    *  The user or role that most recently updated the framework. 
     */
   var lastUpdatedBy: js.UndefOr[LastUpdatedBy] = js.undefined
   

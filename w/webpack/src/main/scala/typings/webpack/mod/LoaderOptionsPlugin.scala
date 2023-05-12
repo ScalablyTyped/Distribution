@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("webpack", "LoaderOptionsPlugin")
 @js.native
 open class LoaderOptionsPlugin () extends StObject {
-  def this(options: LoaderOptionsPluginOptions) = this()
+  def this(options: LoaderOptionsPluginOptions & MatchObject) = this()
   
   /**
   	 * Apply the plugin
@@ -15,5 +15,5 @@ open class LoaderOptionsPlugin () extends StObject {
   @JSName("apply")
   def apply(compiler: Compiler): Unit = js.native
   
-  var options: LoaderOptionsPluginOptions = js.native
+  var options: LoaderOptionsPluginOptions & MatchObject = js.native
 }

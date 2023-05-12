@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `18` extends StObject {
   
-  var appName: js.UndefOr[typings.firebaseAuth.distNodeSrcModelAuthMod.AppName] = js.undefined
+  var appName: js.UndefOr[typings.firebaseAuth.distNodeEsmSrcModelAuthMod.AppName] = js.undefined
 }
 object `18` {
   
@@ -18,7 +18,7 @@ object `18` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `18`] (val x: Self) extends AnyVal {
     
-    inline def setAppName(value: typings.firebaseAuth.distNodeSrcModelAuthMod.AppName): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+    inline def setAppName(value: typings.firebaseAuth.distNodeEsmSrcModelAuthMod.AppName): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     
     inline def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
   }

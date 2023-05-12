@@ -13,18 +13,27 @@ object SAMPLER_TYPES extends StObject {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SAMPLER_TYPES & Double] = js.native
   
+  /**
+    * @default 0
+    */
   @js.native
   sealed trait FLOAT
     extends StObject
        with SAMPLER_TYPES
   /* 0 */ val FLOAT: typings.pixiConstants.mod.SAMPLER_TYPES.FLOAT & Double = js.native
   
+  /**
+    * @default 1
+    */
   @js.native
   sealed trait INT
     extends StObject
        with SAMPLER_TYPES
   /* 1 */ val INT: typings.pixiConstants.mod.SAMPLER_TYPES.INT & Double = js.native
   
+  /**
+    * @default 2
+    */
   @js.native
   sealed trait UINT
     extends StObject

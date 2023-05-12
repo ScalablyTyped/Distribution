@@ -16,6 +16,11 @@ trait NightwatchApiCommands extends StObject {
   
   def isAndroid(): Boolean
   
+  /**
+    * Whether or not Nightwatch is being used to connect to an Appium server.
+    */
+  def isAppiumClient(): Boolean
+  
   def isChrome(): Boolean
   
   def isEdge(): Boolean
@@ -42,6 +47,7 @@ object NightwatchApiCommands {
     __isPlatformName: String => Boolean,
     browserName: String,
     isAndroid: () => Boolean,
+    isAppiumClient: () => Boolean,
     isChrome: () => Boolean,
     isEdge: () => Boolean,
     isFirefox: () => Boolean,
@@ -52,7 +58,7 @@ object NightwatchApiCommands {
     isSafari: () => Boolean,
     platformName: String
   ): NightwatchApiCommands = {
-    val __obj = js.Dynamic.literal(WEBDRIVER_ELEMENT_ID = WEBDRIVER_ELEMENT_ID.asInstanceOf[js.Any], __isBrowserName = js.Any.fromFunction2(__isBrowserName), __isPlatformName = js.Any.fromFunction1(__isPlatformName), browserName = browserName.asInstanceOf[js.Any], isAndroid = js.Any.fromFunction0(isAndroid), isChrome = js.Any.fromFunction0(isChrome), isEdge = js.Any.fromFunction0(isEdge), isFirefox = js.Any.fromFunction0(isFirefox), isIOS = js.Any.fromFunction0(isIOS), isInternetExplorer = js.Any.fromFunction0(isInternetExplorer), isMobile = js.Any.fromFunction0(isMobile), isOpera = js.Any.fromFunction0(isOpera), isSafari = js.Any.fromFunction0(isSafari), platformName = platformName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(WEBDRIVER_ELEMENT_ID = WEBDRIVER_ELEMENT_ID.asInstanceOf[js.Any], __isBrowserName = js.Any.fromFunction2(__isBrowserName), __isPlatformName = js.Any.fromFunction1(__isPlatformName), browserName = browserName.asInstanceOf[js.Any], isAndroid = js.Any.fromFunction0(isAndroid), isAppiumClient = js.Any.fromFunction0(isAppiumClient), isChrome = js.Any.fromFunction0(isChrome), isEdge = js.Any.fromFunction0(isEdge), isFirefox = js.Any.fromFunction0(isFirefox), isIOS = js.Any.fromFunction0(isIOS), isInternetExplorer = js.Any.fromFunction0(isInternetExplorer), isMobile = js.Any.fromFunction0(isMobile), isOpera = js.Any.fromFunction0(isOpera), isSafari = js.Any.fromFunction0(isSafari), platformName = platformName.asInstanceOf[js.Any])
     __obj.asInstanceOf[NightwatchApiCommands]
   }
   
@@ -62,6 +68,8 @@ object NightwatchApiCommands {
     inline def setBrowserName(value: String): Self = StObject.set(x, "browserName", value.asInstanceOf[js.Any])
     
     inline def setIsAndroid(value: () => Boolean): Self = StObject.set(x, "isAndroid", js.Any.fromFunction0(value))
+    
+    inline def setIsAppiumClient(value: () => Boolean): Self = StObject.set(x, "isAppiumClient", js.Any.fromFunction0(value))
     
     inline def setIsChrome(value: () => Boolean): Self = StObject.set(x, "isChrome", js.Any.fromFunction0(value))
     

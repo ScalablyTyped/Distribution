@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SharePointConfiguration extends StObject {
   
   /**
-    * Whether you want to connect to SharePoint using basic authentication of user name and password, or OAuth authentication of user name, password, client ID, and client secret. You can use OAuth authentication for SharePoint Online.
+    * Whether you want to connect to SharePoint Online using basic authentication of user name and password, or OAuth authentication of user name, password, client ID, and client secret, or AD App-only authentication of client secret.
     */
   var AuthenticationType: js.UndefOr[SharePointOnlineAuthenticationType] = js.undefined
   
@@ -47,7 +47,7 @@ trait SharePointConfiguration extends StObject {
   var ProxyConfiguration: js.UndefOr[typings.awsSdk.clientsKendraMod.ProxyConfiguration] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of an Secrets Manager secret that contains the user name and password required to connect to the SharePoint instance. If you use SharePoint Server, you also need to provide the sever domain name as part of the credentials. For more information, see Using a Microsoft SharePoint Data Source. You can also provide OAuth authentication credentials of user name, password, client ID, and client secret. For more information, see Authentication for a SharePoint data source.
+    * The Amazon Resource Name (ARN) of an Secrets Manager secret that contains the user name and password required to connect to the SharePoint instance. For more information, see Microsoft SharePoint.
     */
   var SecretArn: typings.awsSdk.clientsKendraMod.SecretArn
   
@@ -57,7 +57,7 @@ trait SharePointConfiguration extends StObject {
   var SharePointVersion: typings.awsSdk.clientsKendraMod.SharePointVersion
   
   /**
-    * The path to the SSL certificate stored in an Amazon S3 bucket. You use this to connect to SharePoint Server if you require a secure SSL connection. You can simply generate a self-signed X509 certificate on any computer using OpenSSL. For an example of using OpenSSL to create an X509 certificate, see Create and sign an X509 certificate.
+    * The path to the SSL certificate stored in an Amazon S3 bucket. You use this to connect to SharePoint Server if you require a secure SSL connection. You can generate a self-signed X509 certificate on any computer using OpenSSL. For an example of using OpenSSL to create an X509 certificate, see Create and sign an X509 certificate.
     */
   var SslCertificateS3Path: js.UndefOr[S3Path] = js.undefined
   

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "terser-webpack-plugin" : "5.3.6"
+      "terser-webpack-plugin" : "5.3.8"
     }
   ],
   "test-dependencies" : [
     {
-      "terser-webpack-plugin" : "5.3.6"
+      "terser-webpack-plugin" : "5.3.8"
     }
   ],
   "compile-devDependencies" : [

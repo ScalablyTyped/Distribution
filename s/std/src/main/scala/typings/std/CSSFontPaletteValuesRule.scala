@@ -23,16 +23,6 @@ trait CSSFontPaletteValuesRule
 object CSSFontPaletteValuesRule {
   
   inline def apply(
-    CHARSET_RULE: Double,
-    FONT_FACE_RULE: Double,
-    IMPORT_RULE: Double,
-    KEYFRAMES_RULE: Double,
-    KEYFRAME_RULE: Double,
-    MEDIA_RULE: Double,
-    NAMESPACE_RULE: Double,
-    PAGE_RULE: Double,
-    STYLE_RULE: Double,
-    SUPPORTS_RULE: Double,
     basePalette: java.lang.String,
     cssText: java.lang.String,
     fontFamily: java.lang.String,
@@ -40,7 +30,7 @@ object CSSFontPaletteValuesRule {
     overrideColors: java.lang.String,
     `type`: Double
   ): CSSFontPaletteValuesRule = {
-    val __obj = js.Dynamic.literal(CHARSET_RULE = CHARSET_RULE.asInstanceOf[js.Any], FONT_FACE_RULE = FONT_FACE_RULE.asInstanceOf[js.Any], IMPORT_RULE = IMPORT_RULE.asInstanceOf[js.Any], KEYFRAMES_RULE = KEYFRAMES_RULE.asInstanceOf[js.Any], KEYFRAME_RULE = KEYFRAME_RULE.asInstanceOf[js.Any], MEDIA_RULE = MEDIA_RULE.asInstanceOf[js.Any], NAMESPACE_RULE = NAMESPACE_RULE.asInstanceOf[js.Any], PAGE_RULE = PAGE_RULE.asInstanceOf[js.Any], STYLE_RULE = STYLE_RULE.asInstanceOf[js.Any], SUPPORTS_RULE = SUPPORTS_RULE.asInstanceOf[js.Any], basePalette = basePalette.asInstanceOf[js.Any], cssText = cssText.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], overrideColors = overrideColors.asInstanceOf[js.Any], parentRule = null, parentStyleSheet = null)
+    val __obj = js.Dynamic.literal(CHARSET_RULE = 2, FONT_FACE_RULE = 5, IMPORT_RULE = 3, KEYFRAMES_RULE = 7, KEYFRAME_RULE = 8, MEDIA_RULE = 4, NAMESPACE_RULE = 10, PAGE_RULE = 6, STYLE_RULE = 1, SUPPORTS_RULE = 12, basePalette = basePalette.asInstanceOf[js.Any], cssText = cssText.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], overrideColors = overrideColors.asInstanceOf[js.Any], parentRule = null, parentStyleSheet = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CSSFontPaletteValuesRule]
   }

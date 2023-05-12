@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "pino-std-serializers" : "6.0.0"
+      "pino-std-serializers" : "6.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "pino-std-serializers" : "6.0.0"
+      "pino-std-serializers" : "6.2.1"
     }
   ],
   "compile-devDependencies" : [

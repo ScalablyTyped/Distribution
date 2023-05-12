@@ -261,14 +261,14 @@ object fridaGumStrings {
   inline def `9`: `9` = "9".asInstanceOf[`9`]
   
   @js.native
-  sealed trait DUK
-    extends StObject
-       with ScriptRuntime
-  inline def DUK: DUK = "DUK".asInstanceOf[DUK]
-  
-  @js.native
   sealed trait DotDotDot extends StObject
   inline def DotDotDot: DotDotDot = "...".asInstanceOf[DotDotDot]
+  
+  @js.native
+  sealed trait QJS
+    extends StObject
+       with ScriptRuntime
+  inline def QJS: QJS = "QJS".asInstanceOf[QJS]
   
   @js.native
   sealed trait V8
@@ -1231,6 +1231,12 @@ object fridaGumStrings {
     extends StObject
        with X86BranchHint
   inline def `no-hint`: `no-hint` = "no-hint".asInstanceOf[`no-hint`]
+  
+  @js.native
+  sealed trait none
+    extends StObject
+       with CodeTraps
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait nv

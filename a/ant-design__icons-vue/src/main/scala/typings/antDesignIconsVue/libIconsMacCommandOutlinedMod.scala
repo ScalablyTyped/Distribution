@@ -16,7 +16,7 @@ object libIconsMacCommandOutlinedMod extends Shortcut {
   @js.native
   trait MacCommandOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_MacCommandOutlinedIconType: String = js.native

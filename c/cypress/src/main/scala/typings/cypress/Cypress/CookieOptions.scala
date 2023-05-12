@@ -9,7 +9,7 @@ trait CookieOptions extends StObject {
   
   /**
     * Domain to set cookies on or get cookies from
-    * @default superdomain of the current app under test
+    * @default hostname of the current app under test
     */
   var domain: js.UndefOr[String] = js.undefined
   

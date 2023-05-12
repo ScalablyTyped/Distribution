@@ -1,5 +1,6 @@
 package typings.webAnimationsJs
 
+import typings.std.CSSNumberish
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ trait AnimationPlaybackEvent extends StObject {
   
   var currentTarget: Animation
   
-  val currentTime: Double | Null
+  val currentTime: CSSNumberish | Null
   
   var defaultPrevented: Boolean
   
@@ -22,7 +23,7 @@ trait AnimationPlaybackEvent extends StObject {
   
   var timeStamp: Double
   
-  val timelineTime: Double | Null
+  val timelineTime: CSSNumberish | Null
   
   var `type`: String
 }
@@ -52,7 +53,7 @@ object AnimationPlaybackEvent {
     
     inline def setCurrentTarget(value: Animation): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
     
-    inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
+    inline def setCurrentTime(value: CSSNumberish): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
     inline def setCurrentTimeNull: Self = StObject.set(x, "currentTime", null)
     
@@ -64,7 +65,7 @@ object AnimationPlaybackEvent {
     
     inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     
-    inline def setTimelineTime(value: Double): Self = StObject.set(x, "timelineTime", value.asInstanceOf[js.Any])
+    inline def setTimelineTime(value: CSSNumberish): Self = StObject.set(x, "timelineTime", value.asInstanceOf[js.Any])
     
     inline def setTimelineTimeNull: Self = StObject.set(x, "timelineTime", null)
     

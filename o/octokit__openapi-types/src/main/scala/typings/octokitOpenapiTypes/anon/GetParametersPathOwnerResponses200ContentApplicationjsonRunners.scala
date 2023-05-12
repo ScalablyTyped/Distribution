@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersPathOwnerResponses200ContentApplicationjsonRunners extends StObject {
   
-  /** Lists all self-hosted runners configured in a repository. You must authenticate using an access token with the `repo` scope to use this endpoint. */
+  /**
+    * List self-hosted runners for a repository
+    * @description Lists all self-hosted runners configured in a repository. You must authenticate using an access token with the `repo` scope to use this endpoint.
+    */
   var get: ParametersPathOwnerResponses200ContentApplicationjsonRunners
 }
 object GetParametersPathOwnerResponses200ContentApplicationjsonRunners {

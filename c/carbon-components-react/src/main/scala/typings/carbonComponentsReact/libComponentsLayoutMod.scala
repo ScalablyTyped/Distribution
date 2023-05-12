@@ -23,6 +23,7 @@ import typings.carbonComponentsReact.carbonComponentsReactStrings.br
 import typings.carbonComponentsReact.carbonComponentsReactStrings.button
 import typings.carbonComponentsReact.carbonComponentsReactStrings.canvas
 import typings.carbonComponentsReact.carbonComponentsReactStrings.caption
+import typings.carbonComponentsReact.carbonComponentsReactStrings.center
 import typings.carbonComponentsReact.carbonComponentsReactStrings.circle
 import typings.carbonComponentsReact.carbonComponentsReactStrings.cite
 import typings.carbonComponentsReact.carbonComponentsReactStrings.clipPath
@@ -240,6 +241,8 @@ object libComponentsLayoutMod {
   inline def LayoutDirection_canvas(props: LayoutDirectionIntrinsicProps[canvas]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("LayoutDirection")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def LayoutDirection_caption(props: LayoutDirectionIntrinsicProps[caption]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("LayoutDirection")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def LayoutDirection_center(props: LayoutDirectionIntrinsicProps[center]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("LayoutDirection")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def LayoutDirection_circle(props: LayoutDirectionIntrinsicProps[circle]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("LayoutDirection")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   

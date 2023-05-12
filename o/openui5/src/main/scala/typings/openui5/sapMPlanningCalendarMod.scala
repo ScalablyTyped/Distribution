@@ -9,6 +9,7 @@ import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreCalendarTypeMod.CalendarType
 import typings.openui5.sapUiCoreControlMod.ControlSettings
+import typings.openui5.sapUiCoreDateCalendarWeekNumberingMod.CalendarWeekNumbering
 import typings.openui5.sapUiCoreLibraryMod.CSSSize
 import typings.openui5.sapUiCoreLibraryMod.ID
 import typings.openui5.sapUiUnifiedLibraryMod.CalendarAppointmentHeight
@@ -779,6 +780,8 @@ object sapMPlanningCalendarMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:appointmentSelect appointmentSelect} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -790,6 +793,8 @@ object sapMPlanningCalendarMod {
     mParameters: Appointment): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:intervalSelect intervalSelect} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -802,6 +807,7 @@ object sapMPlanningCalendarMod {
     
     /**
       * @SINCE 1.46.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:rowHeaderClick rowHeaderClick} to attached listeners.
       *
@@ -814,6 +820,8 @@ object sapMPlanningCalendarMod {
     mParameters: HeaderId): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:rowSelectionChange rowSelectionChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -825,6 +833,8 @@ object sapMPlanningCalendarMod {
     mParameters: Rows): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:startDateChange startDateChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -836,6 +846,8 @@ object sapMPlanningCalendarMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:viewChange viewChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -929,6 +941,18 @@ object sapMPlanningCalendarMod {
       * @returns Value of property `builtInViews`
       */
     def getBuiltInViews(): js.Array[String] = js.native
+    
+    /**
+      * @SINCE 1.110.0
+      *
+      * Gets current value of property {@link #getCalendarWeekNumbering calendarWeekNumbering}.
+      *
+      * If set, the calendar week numbering is used for display. If not set, the calendar week numbering of the
+      * global configuration is used.
+      *
+      * @returns Value of property `calendarWeekNumbering`
+      */
+    def getCalendarWeekNumbering(): CalendarWeekNumbering | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String) = js.native
     
     /**
       * @SINCE 1.54
@@ -1070,6 +1094,19 @@ object sapMPlanningCalendarMod {
       * Rows of the `PlanningCalendar`.
       */
     def getRows(): js.Array[typings.openui5.sapMPlanningCalendarRowMod.default] = js.native
+    
+    /**
+      * @SINCE 1.109.0
+      *
+      * Gets current value of property {@link #getSecondaryCalendarType secondaryCalendarType}.
+      *
+      * If set, the days are also represented in this calendar type. If not set, the dates are only represented
+      * in the primary calendar type. Note: The second calendar type won't be represented in the DOM when this
+      * property is not set explicitly.
+      *
+      * @returns Value of property `secondaryCalendarType`
+      */
+    def getSecondaryCalendarType(): CalendarType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String) = js.native
     
     /**
       * @SINCE 1.54
@@ -1683,6 +1720,32 @@ object sapMPlanningCalendarMod {
     sBuiltInViews: js.Array[String]): this.type = js.native
     
     /**
+      * @SINCE 1.110.0
+      *
+      * Sets a new value for property {@link #getCalendarWeekNumbering calendarWeekNumbering}.
+      *
+      * If set, the calendar week numbering is used for display. If not set, the calendar week numbering of the
+      * global configuration is used.
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setCalendarWeekNumbering(): this.type = js.native
+    def setCalendarWeekNumbering(
+      /**
+      * New value for property `calendarWeekNumbering`
+      */
+    sCalendarWeekNumbering: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String
+    ): this.type = js.native
+    def setCalendarWeekNumbering(
+      /**
+      * New value for property `calendarWeekNumbering`
+      */
+    sCalendarWeekNumbering: CalendarWeekNumbering
+    ): this.type = js.native
+    
+    /**
       * @SINCE 1.54
       *
       * Setter for custom sorting of appointments. If not used, the appointments will be sorted according to
@@ -1785,46 +1848,26 @@ object sapMPlanningCalendarMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.38.0
+      * Set maximum date that can be shown and selected in the `PlanningCalendar`. This must be a JavaScript
+      * date object.
       *
-      * Sets a new value for property {@link #getMaxDate maxDate}.
-      *
-      * Defines the maximum date that can be displayed and selected in the `PlanningCalendar`. This must be a
-      * JavaScript date object.
-      *
-      * **Note:** If the `maxDate` is set to be before the current `minDate`, the `minDate` is set to the first
-      * date of the month in which the `maxDate` belongs.
-      *
-      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
-      *
-      * @returns Reference to `this` in order to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
-    def setMaxDate(): this.type = js.native
     def setMaxDate(/**
-      * New value for property `maxDate`
+      * A JavaScript Date
       */
-    oMaxDate: js.Object): this.type = js.native
+    oDate: js.Date): this.type = js.native
     
     /**
-      * @SINCE 1.38.0
+      * Set minimum date that can be shown and selected in the `PlanningCalendar`. This must be a JavaScript
+      * date object.
       *
-      * Sets a new value for property {@link #getMinDate minDate}.
-      *
-      * Defines the minimum date that can be displayed and selected in the `PlanningCalendar`. This must be a
-      * JavaScript date object.
-      *
-      * **Note:** If the `minDate` is set to be after the current `maxDate`, the `maxDate` is set to the last
-      * date of the month in which the `minDate` belongs.
-      *
-      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
-      *
-      * @returns Reference to `this` in order to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
-    def setMinDate(): this.type = js.native
     def setMinDate(/**
-      * New value for property `minDate`
+      * A JavaScript Date
       */
-    oMinDate: js.Object): this.type = js.native
+    oDate: js.Date): this.type = js.native
     
     /**
       * @SINCE 1.97
@@ -1881,6 +1924,24 @@ object sapMPlanningCalendarMod {
       * the `sap.ui.core.CalendarType` to set as `sap.m.PlanningCalendar` `primaryCalendarType`.
       */
     sPrimaryCalendarType: CalendarType
+    ): this.type = js.native
+    
+    def setSecondaryCalendarType(
+      /**
+      * the `sap.ui.core.CalendarType` to set as `sap.m.PlanningCalendar` `secondaryCalendarType`.
+      */
+    sSecondaryCalendarType: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String
+    ): this.type = js.native
+    /**
+      * Sets the secondaryCalendarType.
+      *
+      * @returns `this` to allow method chaining
+      */
+    def setSecondaryCalendarType(
+      /**
+      * the `sap.ui.core.CalendarType` to set as `sap.m.PlanningCalendar` `secondaryCalendarType`.
+      */
+    sSecondaryCalendarType: CalendarType
     ): this.type = js.native
     
     /**
@@ -2130,6 +2191,16 @@ object sapMPlanningCalendarMod {
       ] = js.undefined
     
     /**
+      * @SINCE 1.110.0
+      *
+      * If set, the calendar week numbering is used for display. If not set, the calendar week numbering of the
+      * global configuration is used.
+      */
+    var calendarWeekNumbering: js.UndefOr[
+        CalendarWeekNumbering | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String) | PropertyBindingInfo
+      ] = js.undefined
+    
+    /**
       * @SINCE 1.94
       *
       * If set, the first day of the displayed week is this day. Valid values are 0 to 6 starting on Sunday.
@@ -2245,6 +2316,17 @@ object sapMPlanningCalendarMod {
       */
     var rows: js.UndefOr[
         js.Array[typings.openui5.sapMPlanningCalendarRowMod.default] | typings.openui5.sapMPlanningCalendarRowMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)
+      ] = js.undefined
+    
+    /**
+      * @SINCE 1.109.0
+      *
+      * If set, the days are also represented in this calendar type. If not set, the dates are only represented
+      * in the primary calendar type. Note: The second calendar type won't be represented in the DOM when this
+      * property is not set explicitly.
+      */
+    var secondaryCalendarType: js.UndefOr[
+        CalendarType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String) | PropertyBindingInfo
       ] = js.undefined
     
     /**
@@ -2443,6 +2525,12 @@ object sapMPlanningCalendarMod {
       
       inline def setBuiltInViewsVarargs(value: String*): Self = StObject.set(x, "builtInViews", js.Array(value*))
       
+      inline def setCalendarWeekNumbering(
+        value: CalendarWeekNumbering | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String) | PropertyBindingInfo
+      ): Self = StObject.set(x, "calendarWeekNumbering", value.asInstanceOf[js.Any])
+      
+      inline def setCalendarWeekNumberingUndefined: Self = StObject.set(x, "calendarWeekNumbering", js.undefined)
+      
       inline def setFirstDayOfWeek(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "firstDayOfWeek", value.asInstanceOf[js.Any])
       
       inline def setFirstDayOfWeekUndefined: Self = StObject.set(x, "firstDayOfWeek", js.undefined)
@@ -2502,6 +2590,12 @@ object sapMPlanningCalendarMod {
       inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
       
       inline def setRowsVarargs(value: typings.openui5.sapMPlanningCalendarRowMod.default*): Self = StObject.set(x, "rows", js.Array(value*))
+      
+      inline def setSecondaryCalendarType(
+        value: CalendarType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String) | PropertyBindingInfo
+      ): Self = StObject.set(x, "secondaryCalendarType", value.asInstanceOf[js.Any])
+      
+      inline def setSecondaryCalendarTypeUndefined: Self = StObject.set(x, "secondaryCalendarType", js.undefined)
       
       inline def setShowDayNamesLine(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "showDayNamesLine", value.asInstanceOf[js.Any])
       

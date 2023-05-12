@@ -14,7 +14,7 @@ trait MedicinalProductDefinitionCrossReference
   var product: CodeableReference
   
   /**
-    * The type of relationship, for instance branded to generic, product to development product (investigational), parallel import version.
+    * The type of relationship, for instance branded to generic, virtual to actual product, product to development product (investigational), parallel import version.
     */
   var `type`: js.UndefOr[CodeableConcept] = js.undefined
 }

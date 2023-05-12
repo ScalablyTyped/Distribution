@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Shortcut
 import typings.rcImage.anon.Close
 import typings.rcImage.anon.X
 import typings.rcImage.rcImageBooleans.`false`
-import typings.rcUtil.libPortalWrapperMod.GetContainer
+import typings.rcUtil.esPortalWrapperMod.GetContainer
 import typings.react.mod.CSSProperties
 import typings.react.mod.Context
 import typings.react.mod.Dispatch
@@ -94,6 +94,8 @@ object libPreviewGroupMod extends Shortcut {
   /* Inlined parent std.Omit<rc-image.rc-image/lib/Image.ImagePreviewType, 'icons' | 'mask' | 'maskClassName'> */
   trait PreviewGroupPreview extends StObject {
     
+    var afterOpenChange: js.UndefOr[js.Function1[/* open */ Boolean, Unit]] = js.undefined
+    
     var animation: js.UndefOr[Any] = js.undefined
     
     var bodyProps: js.UndefOr[Any] = js.undefined
@@ -142,7 +144,16 @@ object libPreviewGroupMod extends Shortcut {
     
     var mousePosition: js.UndefOr[typings.rcDialog.anon.X | Null] = js.undefined
     
-    var onVisibleChange: js.UndefOr[js.Function2[/* value */ Boolean, /* prevValue */ Boolean, Unit]] = js.undefined
+    var onChange: js.UndefOr[js.Function2[/* current */ Double, /* prevCurrent */ Double, Unit]] = js.undefined
+    
+    var onVisibleChange: js.UndefOr[
+        js.Function3[
+          /* value */ Boolean, 
+          /* prevValue */ Boolean, 
+          /* currentIndex */ js.UndefOr[Double], 
+          Unit
+        ]
+      ] = js.undefined
     
     var rootClassName: js.UndefOr[String] = js.undefined
     
@@ -175,6 +186,10 @@ object libPreviewGroupMod extends Shortcut {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: PreviewGroupPreview] (val x: Self) extends AnyVal {
+      
+      inline def setAfterOpenChange(value: /* open */ Boolean => Unit): Self = StObject.set(x, "afterOpenChange", js.Any.fromFunction1(value))
+      
+      inline def setAfterOpenChangeUndefined: Self = StObject.set(x, "afterOpenChange", js.undefined)
       
       inline def setAnimation(value: Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -268,7 +283,13 @@ object libPreviewGroupMod extends Shortcut {
       
       inline def setMousePositionUndefined: Self = StObject.set(x, "mousePosition", js.undefined)
       
-      inline def setOnVisibleChange(value: (/* value */ Boolean, /* prevValue */ Boolean) => Unit): Self = StObject.set(x, "onVisibleChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* current */ Double, /* prevCurrent */ Double) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      
+      inline def setOnVisibleChange(
+        value: (/* value */ Boolean, /* prevValue */ Boolean, /* currentIndex */ js.UndefOr[Double]) => Unit
+      ): Self = StObject.set(x, "onVisibleChange", js.Any.fromFunction3(value))
       
       inline def setOnVisibleChangeUndefined: Self = StObject.set(x, "onVisibleChange", js.undefined)
       

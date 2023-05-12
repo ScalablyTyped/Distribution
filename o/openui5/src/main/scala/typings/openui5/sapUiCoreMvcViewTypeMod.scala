@@ -10,6 +10,9 @@ object sapUiCoreMvcViewTypeMod {
     * Specifies possible view types.
     *
     * **Note:** Typed views do not rely on a `ViewType`, it must be omitted in the view settings.
+    *
+    * See the {@link topic:91f27e3e6f4d1014b6dd926db0e91070 documentation} for more information on the different
+    * view types.
     */
   @JSImport("sap/ui/core/mvc/ViewType", JSImport.Default)
   @js.native
@@ -35,12 +38,18 @@ object sapUiCoreMvcViewTypeMod {
     * Specifies possible view types.
     *
     * **Note:** Typed views do not rely on a `ViewType`, it must be omitted in the view settings.
+    *
+    * See the {@link topic:91f27e3e6f4d1014b6dd926db0e91070 documentation} for more information on the different
+    * view types.
     */
   @JSImport("sap/ui/core/mvc/ViewType", "ViewType")
   @js.native
   object ViewType extends StObject {
     
     /**
+      * @deprecated (since 1.108) - Consider using {@link sap.ui.core.mvx.XMLView XMLViews} or "typed views"
+      * (view classes written in JavaScript) instead.
+      *
       * HTML view
       */
     @js.native

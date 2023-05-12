@@ -15,6 +15,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.awsSdk.awsSdkStrings.BOTTLEROCKET_x86_64
   - typings.awsSdk.awsSdkStrings.BOTTLEROCKET_ARM_64_NVIDIA
   - typings.awsSdk.awsSdkStrings.BOTTLEROCKET_x86_64_NVIDIA
+  - typings.awsSdk.awsSdkStrings.WINDOWS_CORE_2019_x86_64
+  - typings.awsSdk.awsSdkStrings.WINDOWS_FULL_2019_x86_64
+  - typings.awsSdk.awsSdkStrings.WINDOWS_CORE_2022_x86_64
+  - typings.awsSdk.awsSdkStrings.WINDOWS_FULL_2022_x86_64
   - java.lang.String
 */
 type AMITypes = _AMITypes | java.lang.String

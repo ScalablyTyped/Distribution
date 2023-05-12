@@ -1,5 +1,6 @@
 package typings.svelteLeafletjs.mod
 
+import typings.geojson.mod.GeometryObject
 import typings.leaflet.mod.GeoJSON__
 import typings.svelte.mod.SvelteComponentTyped
 import typings.svelte.typesRuntimeInternalDevMod.ComponentConstructorOptions
@@ -14,5 +15,5 @@ open class GeoJSON protected ()
   extends SvelteComponentTyped[GetGeoJSON, PathEvents, scala.Nothing] {
   def this(options: ComponentConstructorOptions[GetGeoJSON]) = this()
   
-  def getGeoJSON(): GeoJSON__[Any] = js.native
+  def getGeoJSON(): GeoJSON__[Any, GeometryObject] = js.native
 }

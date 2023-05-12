@@ -36,7 +36,9 @@ object Category {
     
     inline def setCreationFunction(value: CreationFunction | Command): Self = StObject.set(x, "creationFunction", value.asInstanceOf[js.Any])
     
-    inline def setCreationFunctionFunction0(value: () => ImageryProvider | TerrainProvider | (js.Array[ImageryProvider | TerrainProvider])): Self = StObject.set(x, "creationFunction", js.Any.fromFunction0(value))
+    inline def setCreationFunctionFunction0(
+      value: () => ImageryProvider | TerrainProvider | (js.Array[ImageryProvider | TerrainProvider]) | (js.Promise[js.Array[TerrainProvider] | TerrainProvider])
+    ): Self = StObject.set(x, "creationFunction", js.Any.fromFunction0(value))
     
     inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     

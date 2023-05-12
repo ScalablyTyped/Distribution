@@ -1,7 +1,7 @@
 
 # Scala.js typings for vega-expression
 
-Typings are for version 5.0.0
+Typings are for version 5.1.0
 
 ## Library description:
 Vega expression parser and code generator.

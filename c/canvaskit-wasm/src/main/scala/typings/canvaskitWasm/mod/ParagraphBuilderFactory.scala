@@ -15,11 +15,24 @@ trait ParagraphBuilderFactory extends StObject {
   def Make(style: ParagraphStyle, fontManager: FontMgr): ParagraphBuilder = js.native
   
   /**
+    * Creates a ParagraphBuilder using the given font collection.
+    * @param style
+    * @param fontCollection
+    */
+  def MakeFromFontCollection(style: ParagraphStyle, fontCollection: FontCollection): ParagraphBuilder = js.native
+  
+  /**
     * Creates a ParagraphBuilder using the fonts available from the given font provider.
     * @param style
     * @param fontSrc
     */
   def MakeFromFontProvider(style: ParagraphStyle, fontSrc: TypefaceFontProvider): ParagraphBuilder = js.native
+  
+  /**
+    * Whether the paragraph builder requires ICU data to be provided by the
+    * client.
+    */
+  def RequiresClientICU(): Boolean = js.native
   
   /**
     * Return a shaped array of lines

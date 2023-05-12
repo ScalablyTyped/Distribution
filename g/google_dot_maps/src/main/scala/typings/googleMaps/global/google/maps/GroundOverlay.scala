@@ -6,9 +6,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A rectangular image overlay on the map.
-  */
 @JSGlobal("google.maps.GroundOverlay")
 @js.native
 open class GroundOverlay protected ()
@@ -16,6 +13,10 @@ open class GroundOverlay protected ()
      with typings.googleMaps.google.maps.GroundOverlay {
   /**
     * A rectangular image overlay on the map.
+    *
+    * Access by calling `const {GroundOverlay} = await
+    * google.maps.importLibrary("maps")`. See
+    * https://developers.google.com/maps/documentation/javascript/libraries.
     */
   def this(url: String) = this()
   def this(url: String, bounds: typings.googleMaps.google.maps.LatLngBounds) = this()

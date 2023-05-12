@@ -73,21 +73,21 @@ object Scale {
       */
     @JSGlobal("Phaser.Scale.Events.ENTER_FULLSCREEN")
     @js.native
-    val ENTER_FULLSCREEN: Any = js.native
+    val ENTER_FULLSCREEN: String = js.native
     
     /**
       * The Scale Manager tried to enter fullscreen mode but failed.
       */
     @JSGlobal("Phaser.Scale.Events.FULLSCREEN_FAILED")
     @js.native
-    val FULLSCREEN_FAILED: Any = js.native
+    val FULLSCREEN_FAILED: String = js.native
     
     /**
       * The Scale Manager tried to enter fullscreen mode, but it is unsupported by the browser.
       */
     @JSGlobal("Phaser.Scale.Events.FULLSCREEN_UNSUPPORTED")
     @js.native
-    val FULLSCREEN_UNSUPPORTED: Any = js.native
+    val FULLSCREEN_UNSUPPORTED: String = js.native
     
     /**
       * The Scale Manager was in fullscreen mode, but has since left, either directly via game code,
@@ -95,7 +95,7 @@ object Scale {
       */
     @JSGlobal("Phaser.Scale.Events.LEAVE_FULLSCREEN")
     @js.native
-    val LEAVE_FULLSCREEN: Any = js.native
+    val LEAVE_FULLSCREEN: String = js.native
     
     /**
       * The Scale Manager Orientation Change Event.
@@ -104,7 +104,7 @@ object Scale {
       */
     @JSGlobal("Phaser.Scale.Events.ORIENTATION_CHANGE")
     @js.native
-    val ORIENTATION_CHANGE: Any = js.native
+    val ORIENTATION_CHANGE: String = js.native
     
     /**
       * The Scale Manager Resize Event.
@@ -116,7 +116,7 @@ object Scale {
       */
     @JSGlobal("Phaser.Scale.Events.RESIZE")
     @js.native
-    val RESIZE: Any = js.native
+    val RESIZE: String = js.native
   }
   
   /**

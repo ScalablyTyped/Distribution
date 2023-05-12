@@ -1,7 +1,7 @@
 package typings.openui5
 
 import typings.openui5.anon.Source
-import typings.openui5.anon.`38`
+import typings.openui5.anon.`47`
 import typings.openui5.sap.ClassInfo
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -18,28 +18,28 @@ object sapUiModelTypeFloatMod {
   open class default ()
     extends typings.openui5.sapUiModelSimpleTypeMod.default {
     def this(/**
-      * Formatting options. For a list of all available options, see {@link sap.ui.core.format.NumberFormat NumberFormat}.
+      * Format options as defined in {@link sap.ui.core.format.NumberFormat.getFloatInstance}
       */
     oFormatOptions: Source) = this()
     def this(
       /**
-      * Formatting options. For a list of all available options, see {@link sap.ui.core.format.NumberFormat NumberFormat}.
+      * Format options as defined in {@link sap.ui.core.format.NumberFormat.getFloatInstance}
       */
     oFormatOptions: Unit,
       /**
       * Value constraints
       */
-    oConstraints: `38`
+    oConstraints: `47`
     ) = this()
     def this(
       /**
-      * Formatting options. For a list of all available options, see {@link sap.ui.core.format.NumberFormat NumberFormat}.
+      * Format options as defined in {@link sap.ui.core.format.NumberFormat.getFloatInstance}
       */
     oFormatOptions: Source,
       /**
       * Value constraints
       */
-    oConstraints: `38`
+    oConstraints: `47`
     ) = this()
   }
   /* static members */

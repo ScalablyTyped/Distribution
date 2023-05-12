@@ -6,98 +6,47 @@ import typings.postcss.libNodeMod.AnyNode
 import typings.postcss.libNodeMod.ChildNode
 import typings.postcss.libNodeMod.ChildProps
 import typings.postcss.postcssStrings.decl
+import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libDeclarationMod {
   
+  @JSImport("postcss/lib/declaration", JSImport.Namespace)
+  @js.native
+  open class ^ ()
+    extends StObject
+       with Declaration_
+  
+  /**
+    * Represents a CSS declaration.
+    *
+    * ```js
+    * Once (root, { Declaration }) {
+    *   let color = new Declaration({ prop: 'color', value: 'black' })
+    *   root.append(color)
+    * }
+    * ```
+    *
+    * ```js
+    * const root = postcss.parse('a { color: black }')
+    * const decl = root.first.first
+    * decl.type       //=> 'decl'
+    * decl.toString() //=> ' color: black'
+    * ```
+    */
   @JSImport("postcss/lib/declaration", JSImport.Default)
   @js.native
   open class default ()
-    extends Declaration
+    extends StObject
+       with Declaration_
        with AnyNode
        with ChildNode {
     def this(defaults: DeclarationProps) = this()
   }
   
-  @js.native
-  trait Declaration
-    extends typings.postcss.libNodeMod.default {
-    
-    def assign(overrides: DeclarationProps): this.type = js.native
-    
-    def clone(overrides: PartialDeclarationProps): this.type = js.native
-    
-    def cloneAfter(overrides: PartialDeclarationProps): this.type = js.native
-    
-    def cloneBefore(overrides: PartialDeclarationProps): this.type = js.native
-    
-    /**
-      * `true` if the declaration has an `!important` annotation.
-      *
-      * ```js
-      * const root = postcss.parse('a { color: black !important; color: red }')
-      * root.first.first.important //=> true
-      * root.first.last.important  //=> undefined
-      * ```
-      */
-    var important: Boolean = js.native
-    
-    @JSName("parent")
-    var parent_Declaration: js.UndefOr[typings.postcss.libContainerMod.default[ChildNode]] = js.native
-    
-    /**
-      * The declaration's property name.
-      *
-      * ```js
-      * const root = postcss.parse('a { color: black }')
-      * const decl = root.first.first
-      * decl.prop //=> 'color'
-      * ```
-      */
-    var prop: String = js.native
-    
-    @JSName("raws")
-    var raws_Declaration: DeclarationRaws = js.native
-    
-    @JSName("type")
-    var type_Declaration: decl = js.native
-    
-    /**
-      * The declaration’s value.
-      *
-      * This value will be cleaned of comments. If the source value contained
-      * comments, those comments will be available in the `raws` property.
-      * If you have not changed the value, the result of `decl.toString()`
-      * will include the original raws value (comments and all).
-      *
-      * ```js
-      * const root = postcss.parse('a { color: black }')
-      * const decl = root.first.first
-      * decl.value //=> 'black'
-      * ```
-      */
-    var value: String = js.native
-    
-    /**
-      * `true` if declaration is declaration of CSS Custom Property
-      * or Sass variable.
-      *
-      * ```js
-      * const root = postcss.parse(':root { --one: 1 }')
-      * let one = root.first.first
-      * one.variable //=> true
-      * ```
-      *
-      * ```js
-      * const root = postcss.parse('$one: 1')
-      * let one = root.first
-      * one.variable //=> true
-      * ```
-      */
-    var variable: Boolean = js.native
-  }
+  type Declaration = Declaration_
   
   trait DeclarationProps
     extends StObject
@@ -189,5 +138,101 @@ object libDeclarationMod {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
+  }
+  
+  /**
+    * Represents a CSS declaration.
+    *
+    * ```js
+    * Once (root, { Declaration }) {
+    *   let color = new Declaration({ prop: 'color', value: 'black' })
+    *   root.append(color)
+    * }
+    * ```
+    *
+    * ```js
+    * const root = postcss.parse('a { color: black }')
+    * const decl = root.first.first
+    * decl.type       //=> 'decl'
+    * decl.toString() //=> ' color: black'
+    * ```
+    */
+  @js.native
+  trait Declaration_
+    extends StObject
+       with Node {
+    
+    def assign(overrides: js.Object): this.type = js.native
+    def assign(overrides: DeclarationProps): this.type = js.native
+    
+    def clone(overrides: PartialDeclarationProps): this.type = js.native
+    
+    def cloneAfter(): this.type = js.native
+    def cloneAfter(overrides: PartialDeclarationProps): this.type = js.native
+    
+    def cloneBefore(): this.type = js.native
+    def cloneBefore(overrides: PartialDeclarationProps): this.type = js.native
+    
+    /**
+      * `true` if the declaration has an `!important` annotation.
+      *
+      * ```js
+      * const root = postcss.parse('a { color: black !important; color: red }')
+      * root.first.first.important //=> true
+      * root.first.last.important  //=> undefined
+      * ```
+      */
+    var important: Boolean = js.native
+    
+    var parent: js.UndefOr[typings.postcss.libContainerMod.default[typings.std.ChildNode]] = js.native
+    
+    /**
+      * The declaration's property name.
+      *
+      * ```js
+      * const root = postcss.parse('a { color: black }')
+      * const decl = root.first.first
+      * decl.prop //=> 'color'
+      * ```
+      */
+    var prop: String = js.native
+    
+    var raws: DeclarationRaws = js.native
+    
+    var `type`: decl = js.native
+    
+    /**
+      * The declaration’s value.
+      *
+      * This value will be cleaned of comments. If the source value contained
+      * comments, those comments will be available in the `raws` property.
+      * If you have not changed the value, the result of `decl.toString()`
+      * will include the original raws value (comments and all).
+      *
+      * ```js
+      * const root = postcss.parse('a { color: black }')
+      * const decl = root.first.first
+      * decl.value //=> 'black'
+      * ```
+      */
+    var value: String = js.native
+    
+    /**
+      * `true` if declaration is declaration of CSS Custom Property
+      * or Sass variable.
+      *
+      * ```js
+      * const root = postcss.parse(':root { --one: 1 }')
+      * let one = root.first.first
+      * one.variable //=> true
+      * ```
+      *
+      * ```js
+      * const root = postcss.parse('$one: 1')
+      * let one = root.first
+      * one.variable //=> true
+      * ```
+      */
+    var variable: Boolean = js.native
   }
 }

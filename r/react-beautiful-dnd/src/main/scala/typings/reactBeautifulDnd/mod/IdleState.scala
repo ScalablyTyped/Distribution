@@ -9,7 +9,7 @@ trait IdleState
   extends StObject
      with State {
   
-  var completed: js.UndefOr[CompletedDrag] = js.undefined
+  var completed: js.UndefOr[CompletedDrag | Null] = js.undefined
   
   var phase: IDLE
   
@@ -26,6 +26,8 @@ object IdleState {
   implicit open class MutableBuilder[Self <: IdleState] (val x: Self) extends AnyVal {
     
     inline def setCompleted(value: CompletedDrag): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
+    
+    inline def setCompletedNull: Self = StObject.set(x, "completed", null)
     
     inline def setCompletedUndefined: Self = StObject.set(x, "completed", js.undefined)
     

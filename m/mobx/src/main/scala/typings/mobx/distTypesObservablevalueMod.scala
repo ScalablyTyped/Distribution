@@ -47,11 +47,22 @@ object distTypesObservablevalueMod {
     /* private */ @JSName("equals")
     var equals_FObservableValue: Any = js.native
     
+    /* CompleteClass */
+    override def get(): T = js.native
+    
     var hasUnreportedChange_ : Boolean = js.native
+    
+    def intercept_(handler: IInterceptor[IValueWillChange[T]]): Lambda = js.native
+    
+    def observe_(listener: js.Function1[/* change */ IValueDidChange[T], Unit]): Lambda = js.native
+    def observe_(listener: js.Function1[/* change */ IValueDidChange[T], Unit], fireImmediately: Boolean): Lambda = js.native
     
     /* private */ var prepareNewValue_ : Any = js.native
     
     def raw(): Any = js.native
+    
+    /* CompleteClass */
+    override def set(value: T): Unit = js.native
     
     def setNewValue_(newValue: T): Unit = js.native
     
@@ -72,14 +83,14 @@ object distTypesObservablevalueMod {
   trait IBoxDidChange[T] extends StObject
   object IBoxDidChange {
     
-    inline def IValueDidChange[T](debugObjectName: String, newValue: Any, `object`: IObservableValue[T], oldValue: Any): typings.mobx.distTypesObservablevalueMod.IValueDidChange[T] = {
-      val __obj = js.Dynamic.literal(debugObjectName = debugObjectName.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], observableKind = "value", oldValue = oldValue.asInstanceOf[js.Any])
+    inline def IValueDidChange[T](debugObjectName: String, newValue: T, `object`: IObservableValue[T]): typings.mobx.distTypesObservablevalueMod.IValueDidChange[T] = {
+      val __obj = js.Dynamic.literal(debugObjectName = debugObjectName.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], observableKind = "value")
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("update")
       __obj.asInstanceOf[typings.mobx.distTypesObservablevalueMod.IValueDidChange[T]]
     }
     
-    inline def ObjectObservableKind[T](debugObjectName: String, newValue: Any, `object`: IObservableValue[T]): typings.mobx.anon.ObjectObservableKind[T] = {
+    inline def ObjectObservableKind[T](debugObjectName: String, newValue: T, `object`: IObservableValue[T]): typings.mobx.anon.ObjectObservableKind[T] = {
       val __obj = js.Dynamic.literal(debugObjectName = debugObjectName.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], observableKind = "value")
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("create")
@@ -87,17 +98,26 @@ object distTypesObservablevalueMod {
     }
   }
   
-  @js.native
   trait IObservableValue[T] extends StObject {
     
-    def get(): T = js.native
+    def get(): T
     
-    def intercept_(handler: IInterceptor[IValueWillChange[T]]): Lambda = js.native
+    def set(value: T): Unit
+  }
+  object IObservableValue {
     
-    def observe_(listener: js.Function1[/* change */ IValueDidChange[T], Unit]): Lambda = js.native
-    def observe_(listener: js.Function1[/* change */ IValueDidChange[T], Unit], fireImmediately: Boolean): Lambda = js.native
+    inline def apply[T](get: () => T, set: T => Unit): IObservableValue[T] = {
+      val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), set = js.Any.fromFunction1(set))
+      __obj.asInstanceOf[IObservableValue[T]]
+    }
     
-    def set(value: T): Unit = js.native
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IObservableValue[?], T] (val x: Self & IObservableValue[T]) extends AnyVal {
+      
+      inline def setGet(value: () => T): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      
+      inline def setSet(value: T => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+    }
   }
   
   trait IValueDidChange[T]
@@ -106,20 +126,20 @@ object distTypesObservablevalueMod {
     
     var debugObjectName: String
     
-    var newValue: Any
+    var newValue: T
     
     var `object`: IObservableValue[T]
     
     var observableKind: value
     
-    var oldValue: Any
+    var oldValue: js.UndefOr[T] = js.undefined
     
     var `type`: update
   }
   object IValueDidChange {
     
-    inline def apply[T](debugObjectName: String, newValue: Any, `object`: IObservableValue[T], oldValue: Any): IValueDidChange[T] = {
-      val __obj = js.Dynamic.literal(debugObjectName = debugObjectName.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], observableKind = "value", oldValue = oldValue.asInstanceOf[js.Any])
+    inline def apply[T](debugObjectName: String, newValue: T, `object`: IObservableValue[T]): IValueDidChange[T] = {
+      val __obj = js.Dynamic.literal(debugObjectName = debugObjectName.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], observableKind = "value")
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("update")
       __obj.asInstanceOf[IValueDidChange[T]]
@@ -130,13 +150,15 @@ object distTypesObservablevalueMod {
       
       inline def setDebugObjectName(value: String): Self = StObject.set(x, "debugObjectName", value.asInstanceOf[js.Any])
       
-      inline def setNewValue(value: Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+      inline def setNewValue(value: T): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
       inline def setObject(value: IObservableValue[T]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       inline def setObservableKind(value: value): Self = StObject.set(x, "observableKind", value.asInstanceOf[js.Any])
       
-      inline def setOldValue(value: Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+      inline def setOldValue(value: T): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+      
+      inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
       
       inline def setType(value: update): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

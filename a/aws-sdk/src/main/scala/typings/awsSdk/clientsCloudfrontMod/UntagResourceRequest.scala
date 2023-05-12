@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UntagResourceRequest extends StObject {
   
   /**
-    *  An ARN of a CloudFront resource.
+    * An ARN of a CloudFront resource.
     */
   var Resource: ResourceARN
   
   /**
-    *  A complex type that contains zero or more Tag key elements.
+    * A complex type that contains zero or more Tag key elements.
     */
   var TagKeys: typings.awsSdk.clientsCloudfrontMod.TagKeys
 }

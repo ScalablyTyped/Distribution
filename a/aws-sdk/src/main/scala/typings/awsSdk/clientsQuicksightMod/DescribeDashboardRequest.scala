@@ -19,7 +19,7 @@ trait DescribeDashboardRequest extends StObject {
   /**
     * The ID for the dashboard.
     */
-  var DashboardId: RestrictiveResourceId
+  var DashboardId: ShortRestrictiveResourceId
   
   /**
     * The version number for the dashboard. If a version number isn't passed, the latest published dashboard version is described. 
@@ -28,7 +28,7 @@ trait DescribeDashboardRequest extends StObject {
 }
 object DescribeDashboardRequest {
   
-  inline def apply(AwsAccountId: AwsAccountId, DashboardId: RestrictiveResourceId): DescribeDashboardRequest = {
+  inline def apply(AwsAccountId: AwsAccountId, DashboardId: ShortRestrictiveResourceId): DescribeDashboardRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], DashboardId = DashboardId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDashboardRequest]
   }
@@ -42,7 +42,7 @@ object DescribeDashboardRequest {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    inline def setDashboardId(value: RestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
+    inline def setDashboardId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
     
     inline def setVersionNumber(value: VersionNumber): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
     

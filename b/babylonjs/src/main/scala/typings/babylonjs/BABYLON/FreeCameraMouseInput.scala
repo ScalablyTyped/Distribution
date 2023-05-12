@@ -11,6 +11,8 @@ trait FreeCameraMouseInput
   extends StObject
      with ICameraInput[FreeCamera] {
   
+  /* private */ var _activePointerId: Any = js.native
+  
   /**
     * @internal
     * If the camera should be rotated automatically based on pointer movement

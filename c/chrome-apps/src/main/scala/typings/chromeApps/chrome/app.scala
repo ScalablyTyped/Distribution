@@ -316,7 +316,6 @@ object app {
        with AppWindow {
     
     /**
-      * @enum
       * Window state enum
       */
     val State: FULLSCREEN = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__code
 
-Typings are for version 9.0.1
+Typings are for version 9.0.3
 
 ## Library description:
 assertion library

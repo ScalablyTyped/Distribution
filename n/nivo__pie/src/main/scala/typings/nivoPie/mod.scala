@@ -11,9 +11,9 @@ import typings.nivoPie.anon.Datum
 import typings.nivoPie.anon.From
 import typings.nivoPie.anon.InnerRadius
 import typings.nivoPie.anon.Theme
-import typings.nivoPie.distTypesHooksMod.MayHaveLabel
 import typings.nivoPie.distTypesTypesMod.CompletePieSvgProps
 import typings.nivoPie.distTypesTypesMod.ComputedDatum
+import typings.nivoPie.distTypesTypesMod.MayHaveLabel
 import typings.nivoPie.distTypesTypesMod.PieCanvasProps
 import typings.nivoPie.distTypesTypesMod.PieCustomLayerProps
 import typings.nivoPie.distTypesTypesMod.PieSvgProps
@@ -53,13 +53,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Pie[RawDatum](param0: PieSvgProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Pie")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Pie[RawDatum /* <: MayHaveLabel */](param0: PieSvgProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Pie")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def PieCanvas[RawDatum](param0: PieCanvasProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PieCanvas")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def PieCanvas[RawDatum /* <: MayHaveLabel */](param0: PieCanvasProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PieCanvas")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def ResponsivePie[RawDatum](props: Omit[PieSvgProps[RawDatum], width | height]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ResponsivePie")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ResponsivePie[RawDatum /* <: MayHaveLabel */](props: Omit[PieSvgProps[RawDatum], width | height]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ResponsivePie")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def ResponsivePieCanvas[RawDatum](props: Omit[PieCanvasProps[RawDatum], width | height]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ResponsivePieCanvas")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ResponsivePieCanvas[RawDatum /* <: MayHaveLabel */](props: Omit[PieCanvasProps[RawDatum], width | height]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ResponsivePieCanvas")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   object defaultProps {
     

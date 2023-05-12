@@ -12,7 +12,7 @@ trait DeleteOriginRequestPolicyRequest extends StObject {
   var Id: String
   
   /**
-    * The version of the origin request policy that you are deleting. The version is the origin request policy’s ETag value, which you can get using ListOriginRequestPolicies, GetOriginRequestPolicy, or GetOriginRequestPolicyConfig.
+    * The version of the origin request policy that you are deleting. The version is the origin request policy's ETag value, which you can get using ListOriginRequestPolicies, GetOriginRequestPolicy, or GetOriginRequestPolicyConfig.
     */
   var IfMatch: js.UndefOr[String] = js.undefined
 }

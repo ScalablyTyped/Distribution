@@ -140,6 +140,13 @@ trait FeatureLayerBaseProperties extends StObject {
   var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
+    * The title of the layer used to identify it in places such as the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) and [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widgets.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#title)
+    */
+  var title: js.UndefOr[String] = js.undefined
+  
+  /**
     * The absolute URL of the REST endpoint of the layer, non-spatial table or service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#url)
@@ -223,6 +230,10 @@ object FeatureLayerBaseProperties {
     inline def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
     inline def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

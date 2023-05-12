@@ -70,6 +70,7 @@ import typings.sentryTypes.typesTransactionMod.TransactionContext
 import typings.sentryTypes.typesTransportMod.BaseTransportOptions
 import typings.sentryTypes.typesTransportMod.InternalBaseTransportOptions
 import typings.sentryTypes.typesTransportMod.Transport
+import typings.sentryTypes.typesTransportMod.TransportMakeRequestResponse
 import typings.sentryTypes.typesTransportMod.TransportRequestExecutor
 import typings.sentryTypes.typesUserMod.User
 import typings.sentryUtils.typesPromisebufferMod.PromiseBuffer
@@ -348,7 +349,7 @@ object mod {
   
   @JSImport("@sentry/node", "SDK_VERSION")
   @js.native
-  val SDK_VERSION: /* "7.19.0" */ String = js.native
+  val SDK_VERSION: /* "7.51.2" */ String = js.native
   
   @JSImport("@sentry/node", "Scope")
   @js.native
@@ -411,7 +412,7 @@ object mod {
   inline def createTransport(
     options: InternalBaseTransportOptions,
     makeRequest: TransportRequestExecutor,
-    buffer: PromiseBuffer[Unit]
+    buffer: PromiseBuffer[Unit | TransportMakeRequestResponse]
   ): Transport = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(options.asInstanceOf[js.Any], makeRequest.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Transport]
   
   inline def deepReadDirSync(targetDir: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepReadDirSync")(targetDir.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]

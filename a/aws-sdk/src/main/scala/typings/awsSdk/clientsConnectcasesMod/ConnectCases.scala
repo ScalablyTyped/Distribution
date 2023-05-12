@@ -43,12 +43,12 @@ trait ConnectCases extends Service {
   var config_ConnectCases: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Creates a case in the specified Cases domain. Case system and custom fields are taken as an array id/value pairs with a declared data types.   customer_id is a required field when creating a case. 
+    * Creates a case in the specified Cases domain. Case system and custom fields are taken as an array id/value pairs with a declared data types.  The following fields are required when creating a case:  &lt;ul&gt; &lt;li&gt; &lt;p&gt; &lt;code&gt;customer_id&lt;/code&gt; - You must provide the full customer profile ARN in this format: &lt;code&gt;arn:aws:profile:your AWS Region:your AWS account ID:domains/profiles domain name/profiles/profile ID&lt;/code&gt; &lt;/p&gt; &lt;/li&gt; &lt;li&gt; &lt;p&gt; &lt;code&gt;title&lt;/code&gt; &lt;/p&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/note&gt; 
     */
   def createCase(): Request[CreateCaseResponse, AWSError] = js.native
   def createCase(callback: js.Function2[/* err */ AWSError, /* data */ CreateCaseResponse, Unit]): Request[CreateCaseResponse, AWSError] = js.native
   /**
-    * Creates a case in the specified Cases domain. Case system and custom fields are taken as an array id/value pairs with a declared data types.   customer_id is a required field when creating a case. 
+    * Creates a case in the specified Cases domain. Case system and custom fields are taken as an array id/value pairs with a declared data types.  The following fields are required when creating a case:  &lt;ul&gt; &lt;li&gt; &lt;p&gt; &lt;code&gt;customer_id&lt;/code&gt; - You must provide the full customer profile ARN in this format: &lt;code&gt;arn:aws:profile:your AWS Region:your AWS account ID:domains/profiles domain name/profiles/profile ID&lt;/code&gt; &lt;/p&gt; &lt;/li&gt; &lt;li&gt; &lt;p&gt; &lt;code&gt;title&lt;/code&gt; &lt;/p&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/note&gt; 
     */
   def createCase(params: CreateCaseRequest): Request[CreateCaseResponse, AWSError] = js.native
   def createCase(
@@ -57,12 +57,12 @@ trait ConnectCases extends Service {
   ): Request[CreateCaseResponse, AWSError] = js.native
   
   /**
-    * Creates a domain, which is a container for all case data, such as cases, fields, templates and layouts. Each Amazon Connect instance can be associated with only one Cases domain.  This will not associate your connect instance to Cases domain. Instead, use the Amazon Connect CreateIntegrationAssociation API. 
+    * Creates a domain, which is a container for all case data, such as cases, fields, templates and layouts. Each Amazon Connect instance can be associated with only one Cases domain.  This will not associate your connect instance to Cases domain. Instead, use the Amazon Connect CreateIntegrationAssociation API. You need specific IAM permissions to successfully associate the Cases domain. For more information, see Onboard to Cases. 
     */
   def createDomain(): Request[CreateDomainResponse, AWSError] = js.native
   def createDomain(callback: js.Function2[/* err */ AWSError, /* data */ CreateDomainResponse, Unit]): Request[CreateDomainResponse, AWSError] = js.native
   /**
-    * Creates a domain, which is a container for all case data, such as cases, fields, templates and layouts. Each Amazon Connect instance can be associated with only one Cases domain.  This will not associate your connect instance to Cases domain. Instead, use the Amazon Connect CreateIntegrationAssociation API. 
+    * Creates a domain, which is a container for all case data, such as cases, fields, templates and layouts. Each Amazon Connect instance can be associated with only one Cases domain.  This will not associate your connect instance to Cases domain. Instead, use the Amazon Connect CreateIntegrationAssociation API. You need specific IAM permissions to successfully associate the Cases domain. For more information, see Onboard to Cases. 
     */
   def createDomain(params: CreateDomainRequest): Request[CreateDomainResponse, AWSError] = js.native
   def createDomain(
@@ -125,6 +125,20 @@ trait ConnectCases extends Service {
     params: CreateTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateTemplateResponse, Unit]
   ): Request[CreateTemplateResponse, AWSError] = js.native
+  
+  /**
+    * Deletes a domain.
+    */
+  def deleteDomain(): Request[DeleteDomainResponse, AWSError] = js.native
+  def deleteDomain(callback: js.Function2[/* err */ AWSError, /* data */ DeleteDomainResponse, Unit]): Request[DeleteDomainResponse, AWSError] = js.native
+  /**
+    * Deletes a domain.
+    */
+  def deleteDomain(params: DeleteDomainRequest): Request[DeleteDomainResponse, AWSError] = js.native
+  def deleteDomain(
+    params: DeleteDomainRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteDomainResponse, Unit]
+  ): Request[DeleteDomainResponse, AWSError] = js.native
   
   /**
     * Returns information about a specific case if it exists. 
@@ -309,12 +323,12 @@ trait ConnectCases extends Service {
   ): Request[PutCaseEventConfigurationResponse, AWSError] = js.native
   
   /**
-    * Searches for cases within their associated Cases domain. Search results are returned as a paginated list of abridged case documents.
+    * Searches for cases within their associated Cases domain. Search results are returned as a paginated list of abridged case documents.  For customer_id you must provide the full customer profile ARN in this format:  arn:aws:profile:your AWS Region:your AWS account ID:domains/profiles domain name/profiles/profile ID.  
     */
   def searchCases(): Request[SearchCasesResponse, AWSError] = js.native
   def searchCases(callback: js.Function2[/* err */ AWSError, /* data */ SearchCasesResponse, Unit]): Request[SearchCasesResponse, AWSError] = js.native
   /**
-    * Searches for cases within their associated Cases domain. Search results are returned as a paginated list of abridged case documents.
+    * Searches for cases within their associated Cases domain. Search results are returned as a paginated list of abridged case documents.  For customer_id you must provide the full customer profile ARN in this format:  arn:aws:profile:your AWS Region:your AWS account ID:domains/profiles domain name/profiles/profile ID.  
     */
   def searchCases(params: SearchCasesRequest): Request[SearchCasesResponse, AWSError] = js.native
   def searchCases(

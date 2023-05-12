@@ -8,39 +8,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InputBoxOptions extends StObject {
   
   /**
-    * Set to `true` to keep the input box open when focus moves to another part of the editor or to another window.
-    * This setting is ignored on iPad and is always false.
-    */
+  		 * Set to `true` to keep the input box open when focus moves to another part of the editor or to another window.
+  		 * This setting is ignored on iPad and is always false.
+  		 */
   var ignoreFocusOut: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Controls if a password input is shown. Password input hides the typed text.
-    */
+  		 * Controls if a password input is shown. Password input hides the typed text.
+  		 */
   var password: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * An optional string to show as placeholder in the input box to guide the user what to type.
-    */
+  		 * An optional string to show as placeholder in the input box to guide the user what to type.
+  		 */
   var placeHolder: js.UndefOr[String] = js.undefined
   
   /**
-    * The text to display underneath the input box.
-    */
+  		 * The text to display underneath the input box.
+  		 */
   var prompt: js.UndefOr[String] = js.undefined
   
   /**
-    * An optional string that represents the title of the input box.
-    */
+  		 * An optional string that represents the title of the input box.
+  		 */
   var title: js.UndefOr[String] = js.undefined
   
   /**
-    * An optional function that will be called to validate input and to give a hint
-    * to the user.
-    *
-    * @param value The current value of the input box.
-    * @return Either a human-readable string which is presented as an error message or an {@link InputBoxValidationMessage}
-    *  which can provide a specific message severity. Return `undefined`, `null`, or the empty string when 'value' is valid.
-    */
+  		 * An optional function that will be called to validate input and to give a hint
+  		 * to the user.
+  		 *
+  		 * @param value The current value of the input box.
+  		 * @return Either a human-readable string which is presented as an error message or an {@link InputBoxValidationMessage}
+  		 *  which can provide a specific message severity. Return `undefined`, `null`, or the empty string when 'value' is valid.
+  		 */
   var validateInput: js.UndefOr[
     js.Function1[
       /* value */ String, 
@@ -51,16 +51,16 @@ trait InputBoxOptions extends StObject {
   ] = js.undefined
   
   /**
-    * The value to pre-fill in the input box.
-    */
+  		 * The value to pre-fill in the input box.
+  		 */
   var value: js.UndefOr[String] = js.undefined
   
   /**
-    * Selection of the pre-filled {@linkcode InputBoxOptions.value value}. Defined as tuple of two number where the
-    * first is the inclusive start index and the second the exclusive end index. When `undefined` the whole
-    * pre-filled value will be selected, when empty (start equals end) only the cursor will be set,
-    * otherwise the defined range will be selected.
-    */
+  		 * Selection of the pre-filled {@linkcode InputBoxOptions.value value}. Defined as tuple of two number where the
+  		 * first is the inclusive start index and the second the exclusive end index. When `undefined` the whole
+  		 * pre-filled value will be selected, when empty (start equals end) only the cursor will be set,
+  		 * otherwise the defined range will be selected.
+  		 */
   var valueSelection: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
 }
 object InputBoxOptions {

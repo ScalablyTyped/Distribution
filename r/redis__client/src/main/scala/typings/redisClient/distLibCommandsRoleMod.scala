@@ -2,7 +2,7 @@ package typings.redisClient
 
 import typings.redisClient.anon.Ip
 import typings.redisClient.anon.Port
-import typings.redisClient.redisClientStrings.master
+import typings.redisClient.redisClientStrings.master_
 import typings.redisClient.redisClientStrings.sentinel
 import typings.redisClient.redisClientStrings.slave
 import typings.redisClient.redisClientStrings.sync_
@@ -24,11 +24,11 @@ object distLibCommandsRoleMod {
   
   inline def transformReply(reply: RoleRawReply): RoleReply = ^.asInstanceOf[js.Dynamic].applyDynamic("transformReply")(reply.asInstanceOf[js.Any]).asInstanceOf[RoleReply]
   
-  type RoleMasterRawReply = js.Tuple3[master, Double, js.Array[js.Tuple3[String, String, String]]]
+  type RoleMasterRawReply = js.Tuple3[master_, Double, js.Array[js.Tuple3[String, String, String]]]
   
   trait RoleMasterReply
     extends StObject
-       with RoleReplyInterface[master]
+       with RoleReplyInterface[master_]
        with RoleReply {
     
     var replicas: js.Array[Ip]

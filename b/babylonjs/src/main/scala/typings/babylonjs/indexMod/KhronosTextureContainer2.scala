@@ -25,6 +25,15 @@ object KhronosTextureContainer2 {
   val ^ : js.Any = js.native
   
   /**
+    * Default configuration for the KTX2 decoder.
+    * The options defined in this way have priority over those passed when creating a KTX2 texture with new Texture(...).
+    */
+  @JSImport("babylonjs/index", "KhronosTextureContainer2.DefaultDecoderOptions")
+  @js.native
+  def DefaultDecoderOptions: typings.babylonjs.miscKhronosTextureContainer2Mod.DefaultKTX2DecoderOptions = js.native
+  inline def DefaultDecoderOptions_=(x: typings.babylonjs.miscKhronosTextureContainer2Mod.DefaultKTX2DecoderOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultDecoderOptions")(x.asInstanceOf[js.Any])
+  
+  /**
     * Default number of workers used to handle data decoding
     */
   @JSImport("babylonjs/index", "KhronosTextureContainer2.DefaultNumWorkers")
@@ -54,6 +63,8 @@ object KhronosTextureContainer2 {
     *     URLConfig.wasmUASTCToBC7
     *     URLConfig.wasmUASTCToRGBA_UNORM
     *     URLConfig.wasmUASTCToRGBA_SRGB
+    *     URLConfig.wasmUASTCToR8_UNORM
+    *     URLConfig.wasmUASTCToRG8_UNORM
     *     URLConfig.jsMSCTranscoder
     *     URLConfig.wasmMSCTranscoder
     *     URLConfig.wasmZSTDDecoder

@@ -21,22 +21,22 @@ object FormatNode {
     __obj.asInstanceOf[typings.ecmarkdown.distNodeTypesMod.PipeNode]
   }
   
-  inline def StarNode(contents: js.Array[FragmentNode], location: LocationRange): typings.ecmarkdown.distNodeTypesMod.StarNode = {
+  inline def StarNode(contents: js.Array[TextNode | CommentNode | TagNode], location: LocationRange): typings.ecmarkdown.distNodeTypesMod.StarNode = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "star")
     __obj.asInstanceOf[typings.ecmarkdown.distNodeTypesMod.StarNode]
   }
   
-  inline def TickNode(contents: js.Array[FragmentNode], location: LocationRange): typings.ecmarkdown.distNodeTypesMod.TickNode = {
+  inline def TickNode(contents: js.Array[TextNode | CommentNode | TagNode], location: LocationRange): typings.ecmarkdown.distNodeTypesMod.TickNode = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "tick")
     __obj.asInstanceOf[typings.ecmarkdown.distNodeTypesMod.TickNode]
   }
   
-  inline def TildeNode(contents: js.Array[FragmentNode], location: LocationRange): typings.ecmarkdown.distNodeTypesMod.TildeNode = {
+  inline def TildeNode(contents: js.Array[TextNode | CommentNode | TagNode], location: LocationRange): typings.ecmarkdown.distNodeTypesMod.TildeNode = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "tilde")
     __obj.asInstanceOf[typings.ecmarkdown.distNodeTypesMod.TildeNode]
   }
   
-  inline def UnderscoreNode(contents: js.Array[FragmentNode], location: LocationRange): typings.ecmarkdown.distNodeTypesMod.UnderscoreNode = {
+  inline def UnderscoreNode(contents: String, location: LocationRange): typings.ecmarkdown.distNodeTypesMod.UnderscoreNode = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "underscore")
     __obj.asInstanceOf[typings.ecmarkdown.distNodeTypesMod.UnderscoreNode]
   }

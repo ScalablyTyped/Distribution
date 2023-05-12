@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteResourceSetRequest extends StObject {
   
   /**
-    * A unique identifier for the resource set, used in a TODO to refer to the resource set.
+    * A unique identifier for the resource set, used in a request to refer to the resource set.
     */
   var Identifier: Base62Id
 }

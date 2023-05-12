@@ -18,6 +18,11 @@ type AttributeList = js.Array[Attribute]
   - typings.awsSdk.awsSdkStrings.SYMPTOM
   - typings.awsSdk.awsSdkStrings.DIAGNOSIS
   - typings.awsSdk.awsSdkStrings.NEGATION
+  - typings.awsSdk.awsSdkStrings.PERTAINS_TO_FAMILY
+  - typings.awsSdk.awsSdkStrings.HYPOTHETICAL
+  - typings.awsSdk.awsSdkStrings.LOW_CONFIDENCE
+  - typings.awsSdk.awsSdkStrings.PAST_HISTORY
+  - typings.awsSdk.awsSdkStrings.FUTURE
   - java.lang.String
 */
 type AttributeName = _AttributeName | java.lang.String
@@ -69,6 +74,13 @@ type EntityList = js.Array[Entity]
   - typings.awsSdk.awsSdkStrings.TIME_TO_TEST_NAME
   - typings.awsSdk.awsSdkStrings.TIME_TO_PROCEDURE_NAME
   - typings.awsSdk.awsSdkStrings.TIME_TO_TREATMENT_NAME
+  - typings.awsSdk.awsSdkStrings.AMOUNT
+  - typings.awsSdk.awsSdkStrings.GENDER
+  - typings.awsSdk.awsSdkStrings.RACE_ETHNICITY
+  - typings.awsSdk.awsSdkStrings.ALLERGIES
+  - typings.awsSdk.awsSdkStrings.TOBACCO_USE
+  - typings.awsSdk.awsSdkStrings.ALCOHOL_CONSUMPTION
+  - typings.awsSdk.awsSdkStrings.REC_DRUG_USE
   - java.lang.String
 */
 type EntitySubType = _EntitySubType | java.lang.String
@@ -80,6 +92,7 @@ type EntitySubType = _EntitySubType | java.lang.String
   - typings.awsSdk.awsSdkStrings.TEST_TREATMENT_PROCEDURE
   - typings.awsSdk.awsSdkStrings.ANATOMY
   - typings.awsSdk.awsSdkStrings.TIME_EXPRESSION
+  - typings.awsSdk.awsSdkStrings.BEHAVIORAL_ENVIRONMENTAL_SOCIAL
   - java.lang.String
 */
 type EntityType = _EntityType | java.lang.String
@@ -127,6 +140,9 @@ type ICD10CMTraitList = js.Array[ICD10CMTrait]
   - typings.awsSdk.awsSdkStrings.DIAGNOSIS
   - typings.awsSdk.awsSdkStrings.SIGN
   - typings.awsSdk.awsSdkStrings.SYMPTOM
+  - typings.awsSdk.awsSdkStrings.PERTAINS_TO_FAMILY
+  - typings.awsSdk.awsSdkStrings.HYPOTHETICAL
+  - typings.awsSdk.awsSdkStrings.LOW_CONFIDENCE
   - java.lang.String
 */
 type ICD10CMTraitName = _ICD10CMTraitName | java.lang.String
@@ -183,6 +199,7 @@ type OntologyLinkingBoundedLengthString = java.lang.String
   - typings.awsSdk.awsSdkStrings.TEST_UNIT
   - typings.awsSdk.awsSdkStrings.DIRECTION
   - typings.awsSdk.awsSdkStrings.SYSTEM_ORGAN_SITE
+  - typings.awsSdk.awsSdkStrings.AMOUNT
   - java.lang.String
 */
 type RelationshipType = _RelationshipType | java.lang.String
@@ -274,6 +291,11 @@ type SNOMEDCTTraitList = js.Array[SNOMEDCTTrait]
   - typings.awsSdk.awsSdkStrings.DIAGNOSIS
   - typings.awsSdk.awsSdkStrings.SIGN
   - typings.awsSdk.awsSdkStrings.SYMPTOM
+  - typings.awsSdk.awsSdkStrings.PERTAINS_TO_FAMILY
+  - typings.awsSdk.awsSdkStrings.HYPOTHETICAL
+  - typings.awsSdk.awsSdkStrings.LOW_CONFIDENCE
+  - typings.awsSdk.awsSdkStrings.PAST_HISTORY
+  - typings.awsSdk.awsSdkStrings.FUTURE
   - java.lang.String
 */
 type SNOMEDCTTraitName = _SNOMEDCTTraitName | java.lang.String

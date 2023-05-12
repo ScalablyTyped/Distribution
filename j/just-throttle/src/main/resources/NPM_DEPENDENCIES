@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "just-throttle" : "4.1.1"
+      "just-throttle" : "4.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "just-throttle" : "4.1.1"
+      "just-throttle" : "4.2.0"
     }
   ],
   "compile-devDependencies" : [

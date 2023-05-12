@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "get-npm-tarball-url" : "2.0.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "get-npm-tarball-url" : "2.0.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

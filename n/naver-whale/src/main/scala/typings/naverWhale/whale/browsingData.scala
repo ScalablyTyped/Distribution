@@ -22,6 +22,9 @@ object browsingData {
     /** Optional. The browser's cache. Note: when removing data, this clears the entire cache: it is not limited to the range you specify.  */
     var cache: js.UndefOr[Boolean] = js.undefined
     
+    /** Optional. The browser's cacheStorage.  */
+    var cacheStorage: js.UndefOr[Boolean] = js.undefined
+    
     /** Optional. The browser's cookies.  */
     var cookies: js.UndefOr[Boolean] = js.undefined
     
@@ -87,6 +90,10 @@ object browsingData {
       inline def setAppcacheUndefined: Self = StObject.set(x, "appcache", js.undefined)
       
       inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      
+      inline def setCacheStorage(value: Boolean): Self = StObject.set(x, "cacheStorage", value.asInstanceOf[js.Any])
+      
+      inline def setCacheStorageUndefined: Self = StObject.set(x, "cacheStorage", js.undefined)
       
       inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       

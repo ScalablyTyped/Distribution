@@ -36,7 +36,7 @@ object mod {
       body: Any,
       timeout: Double,
       ontimeout: Any,
-      callback: js.Function1[/* response */ js.UndefOr[Any], Unit]
+      callback: js.Function1[/* response */ js.UndefOr[Any], Unit | js.Promise[Unit]]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def request(
       method: String,
@@ -45,7 +45,7 @@ object mod {
       body: Any,
       timeout: Double,
       ontimeout: Unit,
-      callback: js.Function1[/* response */ js.UndefOr[Any], Unit]
+      callback: js.Function1[/* response */ js.UndefOr[Any], Unit | js.Promise[Unit]]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def request(method: String, endPoint: String, accept: String, body: Any, timeout: Unit, ontimeout: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def request(
@@ -55,7 +55,7 @@ object mod {
       body: Any,
       timeout: Unit,
       ontimeout: Any,
-      callback: js.Function1[/* response */ js.UndefOr[Any], Unit]
+      callback: js.Function1[/* response */ js.UndefOr[Any], Unit | js.Promise[Unit]]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def request(
       method: String,
@@ -64,7 +64,7 @@ object mod {
       body: Any,
       timeout: Unit,
       ontimeout: Unit,
-      callback: js.Function1[/* response */ js.UndefOr[Any], Unit]
+      callback: js.Function1[/* response */ js.UndefOr[Any], Unit | js.Promise[Unit]]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def serialize(obj: Any, parentKey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(obj.asInstanceOf[js.Any], parentKey.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -84,7 +84,7 @@ object mod {
       body: Any,
       timeout: Double,
       ontimeout: Any,
-      callback: js.Function1[/* response */ js.UndefOr[Any], Unit]
+      callback: js.Function1[/* response */ js.UndefOr[Any], Unit | js.Promise[Unit]]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xdomainRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def xdomainRequest(
       req: Any,
@@ -93,7 +93,7 @@ object mod {
       body: Any,
       timeout: Double,
       ontimeout: Unit,
-      callback: js.Function1[/* response */ js.UndefOr[Any], Unit]
+      callback: js.Function1[/* response */ js.UndefOr[Any], Unit | js.Promise[Unit]]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xdomainRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def xdomainRequest(req: Any, method: String, endPoint: String, body: Any, timeout: Unit, ontimeout: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xdomainRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def xdomainRequest(
@@ -103,7 +103,7 @@ object mod {
       body: Any,
       timeout: Unit,
       ontimeout: Any,
-      callback: js.Function1[/* response */ js.UndefOr[Any], Unit]
+      callback: js.Function1[/* response */ js.UndefOr[Any], Unit | js.Promise[Unit]]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xdomainRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def xdomainRequest(
       req: Any,
@@ -112,7 +112,7 @@ object mod {
       body: Any,
       timeout: Unit,
       ontimeout: Unit,
-      callback: js.Function1[/* response */ js.UndefOr[Any], Unit]
+      callback: js.Function1[/* response */ js.UndefOr[Any], Unit | js.Promise[Unit]]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xdomainRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def xhrRequest(req: Any, method: String, endPoint: String, accept: String, body: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xhrRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -134,7 +134,7 @@ object mod {
       body: Any,
       timeout: Double,
       ontimeout: Any,
-      callback: js.Function1[/* response */ js.UndefOr[Any], Unit]
+      callback: js.Function1[/* response */ js.UndefOr[Any], Unit | js.Promise[Unit]]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xhrRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def xhrRequest(
       req: Any,
@@ -144,7 +144,7 @@ object mod {
       body: Any,
       timeout: Double,
       ontimeout: Unit,
-      callback: js.Function1[/* response */ js.UndefOr[Any], Unit]
+      callback: js.Function1[/* response */ js.UndefOr[Any], Unit | js.Promise[Unit]]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xhrRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def xhrRequest(
       req: Any,
@@ -163,7 +163,7 @@ object mod {
       body: Any,
       timeout: Unit,
       ontimeout: Any,
-      callback: js.Function1[/* response */ js.UndefOr[Any], Unit]
+      callback: js.Function1[/* response */ js.UndefOr[Any], Unit | js.Promise[Unit]]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xhrRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def xhrRequest(
       req: Any,
@@ -173,7 +173,7 @@ object mod {
       body: Any,
       timeout: Unit,
       ontimeout: Unit,
-      callback: js.Function1[/* response */ js.UndefOr[Any], Unit]
+      callback: js.Function1[/* response */ js.UndefOr[Any], Unit | js.Promise[Unit]]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("xhrRequest")(req.asInstanceOf[js.Any], method.asInstanceOf[js.Any], endPoint.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], body.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], ontimeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
@@ -196,11 +196,13 @@ object mod {
     def off(event: String): Unit = js.native
     def off(event: String, ref: Double): Unit = js.native
     
-    def on(event: String, callback: js.Function1[/* response */ js.UndefOr[Any], Unit]): Double = js.native
+    def on(event: String, callback: js.Function1[/* response */ js.UndefOr[Any], Unit | js.Promise[Unit]]): Double = js.native
     
-    def onClose(callback: js.Function3[/* payload */ Any, /* ref */ Any, /* joinRef */ Any, Unit]): Unit = js.native
+    def onClose(
+      callback: js.Function3[/* payload */ Any, /* ref */ Any, /* joinRef */ Any, Unit | js.Promise[Unit]]
+    ): Unit = js.native
     
-    def onError(callback: js.Function1[/* reason */ js.UndefOr[Any], Unit]): Unit = js.native
+    def onError(callback: js.Function1[/* reason */ js.UndefOr[Any], Unit | js.Promise[Unit]]): Unit = js.native
     
     def onMessage(event: String, payload: Any, ref: Any): Any = js.native
     
@@ -208,6 +210,8 @@ object mod {
     def push(event: String, payload: js.Object, timeout: Double): Push = js.native
     
     var state: ChannelState = js.native
+    
+    var topic: String = js.native
   }
   
   @JSImport("phoenix", "LongPoll")
@@ -248,7 +252,7 @@ object mod {
     
     def onLeave(callback: PresenceOnLeaveCallback): Unit = js.native
     
-    def onSync(callback: js.Function0[Unit]): Unit = js.native
+    def onSync(callback: js.Function0[Unit | js.Promise[Unit]]): Unit = js.native
   }
   /* static members */
   object Presence {
@@ -308,10 +312,10 @@ object mod {
     def connectionState(): ConnectionState = js.native
     
     def disconnect(): Unit = js.native
-    def disconnect(callback: js.Function0[Unit]): Unit = js.native
-    def disconnect(callback: js.Function0[Unit], code: Double): Unit = js.native
-    def disconnect(callback: js.Function0[Unit], code: Double, reason: String): Unit = js.native
-    def disconnect(callback: js.Function0[Unit], code: Unit, reason: String): Unit = js.native
+    def disconnect(callback: js.Function0[Unit | js.Promise[Unit]]): Unit = js.native
+    def disconnect(callback: js.Function0[Unit | js.Promise[Unit]], code: Double): Unit = js.native
+    def disconnect(callback: js.Function0[Unit | js.Promise[Unit]], code: Double, reason: String): Unit = js.native
+    def disconnect(callback: js.Function0[Unit | js.Promise[Unit]], code: Unit, reason: String): Unit = js.native
     def disconnect(callback: Unit, code: Double): Unit = js.native
     def disconnect(callback: Unit, code: Double, reason: String): Unit = js.native
     def disconnect(callback: Unit, code: Unit, reason: String): Unit = js.native
@@ -328,13 +332,13 @@ object mod {
     
     def off(refs: js.Array[MessageRef]): Unit = js.native
     
-    def onClose(callback: js.Function1[/* cb */ Any, Unit]): MessageRef = js.native
+    def onClose(callback: js.Function1[/* cb */ Any, Unit | js.Promise[Unit]]): MessageRef = js.native
     
-    def onError(callback: js.Function1[/* cb */ Any, Unit]): MessageRef = js.native
+    def onError(callback: js.Function1[/* cb */ Any, Unit | js.Promise[Unit]]): MessageRef = js.native
     
-    def onMessage(callback: js.Function1[/* cb */ Any, Unit]): MessageRef = js.native
+    def onMessage(callback: js.Function1[/* cb */ Any, Unit | js.Promise[Unit]]): MessageRef = js.native
     
-    def onOpen(callback: js.Function1[/* cb */ Any, Unit]): MessageRef = js.native
+    def onOpen(callback: js.Function1[/* cb */ Any, Unit | js.Promise[Unit]]): MessageRef = js.native
     
     def protocol(): String = js.native
     
@@ -346,7 +350,10 @@ object mod {
   @JSImport("phoenix", "Timer")
   @js.native
   open class Timer protected () extends StObject {
-    def this(callback: js.Function0[Unit], timerCalc: js.Function1[/* tries */ Double, Double]) = this()
+    def this(
+      callback: js.Function0[Unit | js.Promise[Unit]],
+      timerCalc: js.Function1[/* tries */ Double, Double]
+    ) = this()
     
     def reset(): Unit = js.native
     
@@ -459,9 +466,9 @@ object mod {
     
     var binaryType: BinaryType
     
-    def decode(payload: String, callback: js.Function1[/* decoded */ Any, Unit]): Unit
+    def decode(payload: String, callback: js.Function1[/* decoded */ Any, Unit | js.Promise[Unit]]): Unit
     
-    def encode(payload: js.Object, callback: js.Function1[/* encoded */ Any, Unit]): Unit
+    def encode(payload: js.Object, callback: js.Function1[/* encoded */ Any, Unit | js.Promise[Unit]]): Unit
     
     var heartbeatIntervalMs: Double
     
@@ -485,8 +492,8 @@ object mod {
     
     inline def apply(
       binaryType: BinaryType,
-      decode: (String, js.Function1[/* decoded */ Any, Unit]) => Unit,
-      encode: (js.Object, js.Function1[/* encoded */ Any, Unit]) => Unit,
+      decode: (String, js.Function1[/* decoded */ Any, Unit | js.Promise[Unit]]) => Unit,
+      encode: (js.Object, js.Function1[/* encoded */ Any, Unit | js.Promise[Unit]]) => Unit,
       heartbeatIntervalMs: Double,
       logger: (String, String, Any) => Unit,
       longpollerTimeout: Double,
@@ -506,9 +513,9 @@ object mod {
       
       inline def setBinaryType(value: BinaryType): Self = StObject.set(x, "binaryType", value.asInstanceOf[js.Any])
       
-      inline def setDecode(value: (String, js.Function1[/* decoded */ Any, Unit]) => Unit): Self = StObject.set(x, "decode", js.Any.fromFunction2(value))
+      inline def setDecode(value: (String, js.Function1[/* decoded */ Any, Unit | js.Promise[Unit]]) => Unit): Self = StObject.set(x, "decode", js.Any.fromFunction2(value))
       
-      inline def setEncode(value: (js.Object, js.Function1[/* encoded */ Any, Unit]) => Unit): Self = StObject.set(x, "encode", js.Any.fromFunction2(value))
+      inline def setEncode(value: (js.Object, js.Function1[/* encoded */ Any, Unit | js.Promise[Unit]]) => Unit): Self = StObject.set(x, "encode", js.Any.fromFunction2(value))
       
       inline def setHeartbeatIntervalMs(value: Double): Self = StObject.set(x, "heartbeatIntervalMs", value.asInstanceOf[js.Any])
       

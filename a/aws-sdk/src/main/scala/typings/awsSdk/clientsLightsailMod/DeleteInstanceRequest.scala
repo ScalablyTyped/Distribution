@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteInstanceRequest extends StObject {
   
   /**
-    * A Boolean value to indicate whether to delete the enabled add-ons for the disk.
+    * A Boolean value to indicate whether to delete all add-ons for the instance.
     */
   var forceDeleteAddOns: js.UndefOr[Boolean] = js.undefined
   

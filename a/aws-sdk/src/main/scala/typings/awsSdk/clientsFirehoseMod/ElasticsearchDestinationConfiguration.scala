@@ -22,7 +22,7 @@ trait ElasticsearchDestinationConfiguration extends StObject {
   var ClusterEndpoint: js.UndefOr[ElasticsearchClusterEndpoint] = js.undefined
   
   /**
-    * The ARN of the Amazon ES domain. The IAM role must have permissions for DescribeElasticsearchDomain, DescribeElasticsearchDomains, and DescribeElasticsearchDomainConfig after assuming the role specified in RoleARN. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces. Specify either ClusterEndpoint or DomainARN.
+    * The ARN of the Amazon ES domain. The IAM role must have permissions for DescribeDomain, DescribeDomains, and DescribeDomainConfig after assuming the role specified in RoleARN. For more information, see Amazon Resource Names (ARNs) and Amazon Web Services Service Namespaces. Specify either ClusterEndpoint or DomainARN.
     */
   var DomainARN: js.UndefOr[ElasticsearchDomainARN] = js.undefined
   
@@ -47,12 +47,12 @@ trait ElasticsearchDestinationConfiguration extends StObject {
   var RetryOptions: js.UndefOr[ElasticsearchRetryOptions] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the IAM role to be assumed by Kinesis Data Firehose for calling the Amazon ES Configuration API and for indexing documents. For more information, see Grant Kinesis Data Firehose Access to an Amazon S3 Destination and Amazon Resource Names (ARNs) and AWS Service Namespaces.
+    * The Amazon Resource Name (ARN) of the IAM role to be assumed by Kinesis Data Firehose for calling the Amazon ES Configuration API and for indexing documents. For more information, see Grant Kinesis Data Firehose Access to an Amazon S3 Destination and Amazon Resource Names (ARNs) and Amazon Web Services Service Namespaces.
     */
   var RoleARN: typings.awsSdk.clientsFirehoseMod.RoleARN
   
   /**
-    * Defines how documents should be delivered to Amazon S3. When it is set to FailedDocumentsOnly, Kinesis Data Firehose writes any documents that could not be indexed to the configured Amazon S3 destination, with elasticsearch-failed/ appended to the key prefix. When set to AllDocuments, Kinesis Data Firehose delivers all incoming records to Amazon S3, and also writes failed documents with elasticsearch-failed/ appended to the prefix. For more information, see Amazon S3 Backup for the Amazon ES Destination. Default value is FailedDocumentsOnly. You can't change this backup mode after you create the delivery stream. 
+    * Defines how documents should be delivered to Amazon S3. When it is set to FailedDocumentsOnly, Kinesis Data Firehose writes any documents that could not be indexed to the configured Amazon S3 destination, with AmazonOpenSearchService-failed/ appended to the key prefix. When set to AllDocuments, Kinesis Data Firehose delivers all incoming records to Amazon S3, and also writes failed documents with AmazonOpenSearchService-failed/ appended to the prefix. For more information, see Amazon S3 Backup for the Amazon ES Destination. Default value is FailedDocumentsOnly. You can't change this backup mode after you create the delivery stream. 
     */
   var S3BackupMode: js.UndefOr[ElasticsearchS3BackupMode] = js.undefined
   

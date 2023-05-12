@@ -26,6 +26,8 @@ trait CapabilityStatementRestResource
   
   var _conditionalDelete: js.UndefOr[Element] = js.undefined
   
+  var _conditionalPatch: js.UndefOr[Element] = js.undefined
+  
   var _conditionalRead: js.UndefOr[Element] = js.undefined
   
   var _conditionalUpdate: js.UndefOr[Element] = js.undefined
@@ -61,6 +63,11 @@ trait CapabilityStatementRestResource
   var conditionalDelete: js.UndefOr[`not-supported` | single | multiple] = js.undefined
   
   /**
+    * Conditional Patch is mainly appropriate for interface engine scripts converting from other formats, such as v2.
+    */
+  var conditionalPatch: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Conditional Read is mainly appropriate for interface engine scripts converting from other formats, such as v2.
     */
   var conditionalRead: js.UndefOr[`not-supported` | `modified-since` | `not-match` | `full-support`] = js.undefined
@@ -87,7 +94,7 @@ trait CapabilityStatementRestResource
   var operation: js.UndefOr[js.Array[CapabilityStatementRestResourceOperation]] = js.undefined
   
   /**
-    * The profile applies to all  resources of this type - i.e. it is the superset of what is supported by the system.
+    * All other profiles for this type that are listed in `.rest.resource.supportedProfile` must conform to this profile.
     */
   var profile: js.UndefOr[String] = js.undefined
   
@@ -102,7 +109,11 @@ trait CapabilityStatementRestResource
   var referencePolicy: js.UndefOr[js.Array[literal | logical | resolves | enforced | local]] = js.undefined
   
   /**
-    * If this list is empty, the server does not support includes.
+    * Documenting [`_include`](http://hl7.org/fhir/R5/search.html#revinclude) support helps set conformance expectations for the desired system. Still, it is a level of detail that might not be exposed by production servers or clients when using CapabilityStatement to describe an actual implementation. If this list is empty, the server does not support includes. Support for *iterative* (a.k.a., recursive) `_include` is communicated by listing the iterative includes values supported by the server in the `searchInclude` element of the "root" resource type. For example, to support the following search:
+    * `GET [base]/CarePlan?_include=CarePlan:activity-reference:DeviceRequest&_include:iterate=DeviceRequest:device`
+    * These values would be listed as part of capabilities for "CarePlan":
+    * "searchInclude" : ["CarePlan:activity-reference:DeviceRequest","DeviceRequest:device"],
+    *
     */
   var searchInclude: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -112,12 +123,12 @@ trait CapabilityStatementRestResource
   var searchParam: js.UndefOr[js.Array[CapabilityStatementRestResourceSearchParam]] = js.undefined
   
   /**
-    * If this list is empty, the server does not support reverse includes.
+    * See `CapabilityStatement.rest.resource.searchInclude` comments.
     */
   var searchRevInclude: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Supported profiles are different than the profile that applies to a particular resource in .rest.resource.profile. The resource profile is a general statement of what features of the resource are supported overall by the system - the sum total of the facilities it supports. A supported profile is a deeper statement about the functionality of the data and services provided by the server (or used by the client). A typical case is a laboratory system that produces a set of different reports - this is the list of types of data that it publishes. A key aspect of declaring profiles here is the question of how the client converts knowledge that the server publishes this data into working with the data; the client can inspect individual resources to determine whether they conform to a particular profile, but how does it find the ones that do? It does so by searching using the _profile parameter, so any resources listed here must be valid values for the _profile resource (using the identifier in the target profile).
+    * Supported profiles must conform to the resource profile in the `.rest.resource.profile` element if it is present. The resource profile is a system-wide profile applied across *all* instances of the resource supported by the system. A supported profile is a statement about the functionality of the data and services provided by the server (or used by the client) for a particular set of use cases and will not necessarily apply to all data consumed or exposed by the server.
     */
   var supportedProfile: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -154,6 +165,10 @@ object CapabilityStatementRestResource {
     inline def setConditionalDelete(value: `not-supported` | single | multiple): Self = StObject.set(x, "conditionalDelete", value.asInstanceOf[js.Any])
     
     inline def setConditionalDeleteUndefined: Self = StObject.set(x, "conditionalDelete", js.undefined)
+    
+    inline def setConditionalPatch(value: Boolean): Self = StObject.set(x, "conditionalPatch", value.asInstanceOf[js.Any])
+    
+    inline def setConditionalPatchUndefined: Self = StObject.set(x, "conditionalPatch", js.undefined)
     
     inline def setConditionalRead(value: `not-supported` | `modified-since` | `not-match` | `full-support`): Self = StObject.set(x, "conditionalRead", value.asInstanceOf[js.Any])
     
@@ -234,6 +249,10 @@ object CapabilityStatementRestResource {
     inline def set_conditionalDelete(value: Element): Self = StObject.set(x, "_conditionalDelete", value.asInstanceOf[js.Any])
     
     inline def set_conditionalDeleteUndefined: Self = StObject.set(x, "_conditionalDelete", js.undefined)
+    
+    inline def set_conditionalPatch(value: Element): Self = StObject.set(x, "_conditionalPatch", value.asInstanceOf[js.Any])
+    
+    inline def set_conditionalPatchUndefined: Self = StObject.set(x, "_conditionalPatch", js.undefined)
     
     inline def set_conditionalRead(value: Element): Self = StObject.set(x, "_conditionalRead", value.asInstanceOf[js.Any])
     

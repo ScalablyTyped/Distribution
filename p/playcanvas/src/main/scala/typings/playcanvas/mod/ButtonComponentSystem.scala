@@ -2,7 +2,7 @@ package typings.playcanvas.mod
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable2
-import typings.playcanvas.anon.Name
+import typings.playcanvas.anon.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ open class ButtonComponentSystem protected () extends ComponentSystem {
   /**
     * Create a new ComponentSystem instance.
     *
-    * @param {AppBase} app - The application managing this system.
+    * @param {import('../app-base.js').AppBase} app - The application managing this system.
     */
   def this(app: AppBase) = this()
   
@@ -35,5 +35,5 @@ open class ButtonComponentSystem protected () extends ComponentSystem {
   def onUpdate(dt: Any): Unit = js.native
   
   @JSName("schema")
-  var schema_ButtonComponentSystem: js.Array[String | Name] = js.native
+  var schema_ButtonComponentSystem: js.Array[String | Type] = js.native
 }

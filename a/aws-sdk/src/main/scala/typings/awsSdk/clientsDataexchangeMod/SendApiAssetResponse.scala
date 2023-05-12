@@ -9,7 +9,7 @@ trait SendApiAssetResponse extends StObject {
   /**
     * The response body from the underlying API tracked by the API asset.
     */
-  var Body: js.UndefOr[string] = js.undefined
+  var Body: js.UndefOr[_String] = js.undefined
   
   /**
     * The response headers from the underlying API tracked by the API asset.
@@ -26,7 +26,7 @@ object SendApiAssetResponse {
   @scala.inline
   implicit open class MutableBuilder[Self <: SendApiAssetResponse] (val x: Self) extends AnyVal {
     
-    inline def setBody(value: string): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
+    inline def setBody(value: _String): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     
     inline def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
     

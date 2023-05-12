@@ -1,6 +1,6 @@
 package typings.devextreme.mod.DevExpress.viz
 
-import typings.devextreme.anon.`5`
+import typings.devextreme.anon.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ trait dxLinearGaugeOptions
   /**
     * Specifies the properties required to set the geometry of the LinearGauge UI component.
     */
-  var geometry: js.UndefOr[`5`] = js.undefined
+  var geometry: js.UndefOr[`6`] = js.undefined
   
   /**
     * Specifies gauge range container properties.
@@ -46,7 +46,7 @@ object dxLinearGaugeOptions {
   @scala.inline
   implicit open class MutableBuilder[Self <: dxLinearGaugeOptions] (val x: Self) extends AnyVal {
     
-    inline def setGeometry(value: `5`): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: `6`): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
     inline def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
     

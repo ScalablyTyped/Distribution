@@ -5,7 +5,6 @@ import typings.fhir.fhirStrings.active
 import typings.fhir.fhirStrings.error
 import typings.fhir.fhirStrings.off
 import typings.fhir.fhirStrings.suspended
-import typings.fhir.fhirStrings.test
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,11 +16,11 @@ trait Endpoint
   
   var _address: js.UndefOr[Element] = js.undefined
   
+  var _description: js.UndefOr[Element] = js.undefined
+  
   var _header: js.UndefOr[js.Array[Element]] = js.undefined
   
   var _name: js.UndefOr[Element] = js.undefined
-  
-  var _payloadMimeType: js.UndefOr[js.Array[Element]] = js.undefined
   
   var _status: js.UndefOr[Element] = js.undefined
   
@@ -34,14 +33,24 @@ trait Endpoint
   var address: String
   
   /**
-    * For additional connectivity details for the protocol, extensions will be used at this point, as in the XDS example.
+    * For additional connectivity details for the protocol, extensions will be used at this point, as in the XDS example. If there are multiple payload types or mimetypes they are all applicable for all connection types, and all have the same status.
     */
-  var connectionType: Coding
+  var connectionType: js.Array[CodeableConcept]
   
   /**
-    * Contact details for a human to contact about the subscription. The primary use of this for system administrator troubleshooting.
+    * Contact details for a human to contact about the endpoint. The primary use of this for system administrator troubleshooting.
     */
   var contact: js.UndefOr[js.Array[ContactPoint]] = js.undefined
+  
+  /**
+    * The description of the endpoint and what it is for (typically used as supplemental information in an endpoint directory describing its usage/purpose).
+    */
+  var description: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The type of environment(s) exposed at this endpoint (dev, prod, test, etc.).
+    */
+  var environmentType: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * Exactly what these mean depends on the channel type. The can convey additional information to the recipient and/or meet security requirements.
@@ -64,17 +73,12 @@ trait Endpoint
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * Sending the payload has obvious security consequences. The server is responsible for ensuring that the content is appropriately secured.
+    * Note that not all mimetypes or types will be listed under the one endpoint resource, there may be multiple instances that information for cases where other header data such as the endpoint address, active status/period etc. is different.
     */
-  var payloadMimeType: js.UndefOr[js.Array[String]] = js.undefined
+  var payload: js.UndefOr[js.Array[EndpointPayload]] = js.undefined
   
   /**
-    * The payloadFormat describes the serialization format of the data, where the payloadType indicates the specific document/schema that is being transferred; e.g. DischargeSummary or CarePlan.
-    */
-  var payloadType: js.Array[CodeableConcept]
-  
-  /**
-    * The interval during which the endpoint is expected to be operational.
+    * Temporary downtimes or other short-term changes in availability would not be represented in this property.
     */
   var period: js.UndefOr[Period] = js.undefined
   
@@ -83,19 +87,18 @@ trait Endpoint
   val resourceType_Endpoint: typings.fhir.fhirStrings.Endpoint
   
   /**
-    * This element is labeled as a modifier because the status contains codes that mark the endpoint as not currently valid.
+    * This element is labeled as a modifier because the status contains codes that mark the endpoint as not currently valid. Temporary downtimes or other unexpected short-term changes in availability would not be represented in this property.
     */
-  var status: active | suspended | error | off | `entered-in-error` | test
+  var status: active | suspended | error | off | `entered-in-error`
 }
 object Endpoint {
   
   inline def apply(
     address: String,
-    connectionType: Coding,
-    payloadType: js.Array[CodeableConcept],
-    status: active | suspended | error | off | `entered-in-error` | test
+    connectionType: js.Array[CodeableConcept],
+    status: active | suspended | error | off | `entered-in-error`
   ): Endpoint = {
-    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], connectionType = connectionType.asInstanceOf[js.Any], payloadType = payloadType.asInstanceOf[js.Any], resourceType = "Endpoint", status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], connectionType = connectionType.asInstanceOf[js.Any], resourceType = "Endpoint", status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Endpoint]
   }
   
@@ -104,13 +107,25 @@ object Endpoint {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    inline def setConnectionType(value: Coding): Self = StObject.set(x, "connectionType", value.asInstanceOf[js.Any])
+    inline def setConnectionType(value: js.Array[CodeableConcept]): Self = StObject.set(x, "connectionType", value.asInstanceOf[js.Any])
+    
+    inline def setConnectionTypeVarargs(value: CodeableConcept*): Self = StObject.set(x, "connectionType", js.Array(value*))
     
     inline def setContact(value: js.Array[ContactPoint]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
     inline def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
     
     inline def setContactVarargs(value: ContactPoint*): Self = StObject.set(x, "contact", js.Array(value*))
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setEnvironmentType(value: js.Array[CodeableConcept]): Self = StObject.set(x, "environmentType", value.asInstanceOf[js.Any])
+    
+    inline def setEnvironmentTypeUndefined: Self = StObject.set(x, "environmentType", js.undefined)
+    
+    inline def setEnvironmentTypeVarargs(value: CodeableConcept*): Self = StObject.set(x, "environmentType", js.Array(value*))
     
     inline def setHeader(value: js.Array[String]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
@@ -132,15 +147,11 @@ object Endpoint {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setPayloadMimeType(value: js.Array[String]): Self = StObject.set(x, "payloadMimeType", value.asInstanceOf[js.Any])
+    inline def setPayload(value: js.Array[EndpointPayload]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    inline def setPayloadMimeTypeUndefined: Self = StObject.set(x, "payloadMimeType", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
-    inline def setPayloadMimeTypeVarargs(value: String*): Self = StObject.set(x, "payloadMimeType", js.Array(value*))
-    
-    inline def setPayloadType(value: js.Array[CodeableConcept]): Self = StObject.set(x, "payloadType", value.asInstanceOf[js.Any])
-    
-    inline def setPayloadTypeVarargs(value: CodeableConcept*): Self = StObject.set(x, "payloadType", js.Array(value*))
+    inline def setPayloadVarargs(value: EndpointPayload*): Self = StObject.set(x, "payload", js.Array(value*))
     
     inline def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
@@ -148,11 +159,15 @@ object Endpoint {
     
     inline def setResourceType(value: typings.fhir.fhirStrings.Endpoint): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    inline def setStatus(value: active | suspended | error | off | `entered-in-error` | test): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: active | suspended | error | off | `entered-in-error`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     inline def set_address(value: Element): Self = StObject.set(x, "_address", value.asInstanceOf[js.Any])
     
     inline def set_addressUndefined: Self = StObject.set(x, "_address", js.undefined)
+    
+    inline def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
+    
+    inline def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
     inline def set_header(value: js.Array[Element]): Self = StObject.set(x, "_header", value.asInstanceOf[js.Any])
     
@@ -163,12 +178,6 @@ object Endpoint {
     inline def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
     inline def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
-    
-    inline def set_payloadMimeType(value: js.Array[Element]): Self = StObject.set(x, "_payloadMimeType", value.asInstanceOf[js.Any])
-    
-    inline def set_payloadMimeTypeUndefined: Self = StObject.set(x, "_payloadMimeType", js.undefined)
-    
-    inline def set_payloadMimeTypeVarargs(value: Element*): Self = StObject.set(x, "_payloadMimeType", js.Array(value*))
     
     inline def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     

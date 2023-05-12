@@ -41,6 +41,8 @@ object libClassdefViewDefMod {
     
     var defaultOpenInteraction: String = js.native
     
+    var defaultOpenInteractionParameters: js.Array[String] = js.native
+    
     var defaultProcess: Double = js.native
     
     def defineGrid(gridName: String, func: js.Function1[/* arg0 */ Any, Any]): Unit = js.native
@@ -56,6 +58,10 @@ object libClassdefViewDefMod {
     
     def fileAttributes(vfsKey: Double): Display = js.native
     
+    var globalActions: typings.nginstackWebFramework.libClassdefGlobalActionSetMod.^ = js.native
+    
+    var gridDefinition: Any = js.native
+    
     var imageHeight: Double = js.native
     
     var imageWidth: Double = js.native
@@ -65,6 +71,34 @@ object libClassdefViewDefMod {
     var lookupTableViewWidth: Double | Null = js.native
     
     var lookupWidth: Double = js.native
+    
+    var onAfterChange: typings.nginstackEngine.libEventLegacyEventMod.^ = js.native
+    
+    var onAfterDuplicate: Any = js.native
+    
+    var onAfterScroll: Any = js.native
+    
+    var onBeforeChange: typings.nginstackEngine.libEventLegacyEventMod.^ = js.native
+    
+    var onBeforeDuplicate: Any = js.native
+    
+    var onBeforeScroll: Any = js.native
+    
+    var onCalculate: typings.nginstackEngine.libEventLegacyEventMod.^ = js.native
+    
+    var onChangeView: Any = js.native
+    
+    var onDefineClassesGrid: Any = js.native
+    
+    var onDefinePermissionsGrid: Any = js.native
+    
+    var onLocate: Any = js.native
+    
+    var onOpenKey: Any = js.native
+    
+    var onShowLog: Any = js.native
+    
+    var thumbnail: typings.nginstackWebFramework.libClassdefCellThumbnailMod.^ = js.native
     
     var tooltip: String = js.native
     

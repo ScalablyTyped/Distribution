@@ -3,7 +3,7 @@ package typings.tensorflowTfjsBackendCpu
 import typings.tensorflowTfjsBackendCpu.anon.AttrsProdAttrs
 import typings.tensorflowTfjsBackendCpu.anon.OutDtype
 import typings.tensorflowTfjsCore.distKernelRegistryMod.KernelConfig
-import typings.tensorflowTfjsCore.distKernelRegistryMod.TensorInfo
+import typings.tensorflowTfjsCore.distTensorInfoMod.TensorInfo
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
 import org.scalablytyped.runtime.StObject

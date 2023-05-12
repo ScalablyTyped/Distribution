@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__util-defaults-mode-node
 
-Typings are for version 3.209.0
+Typings are for version 3.329.0
 
 ## Library description:
 [![NPM version](https://img.shields.io/npm/v/@aws-sdk/util-defaults-mode-node/latest.svg)](https://www.npmjs.com/package/@aws-sdk/util-defaults-mode-node) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/util-defaults-mode-node.svg)](https://www.n

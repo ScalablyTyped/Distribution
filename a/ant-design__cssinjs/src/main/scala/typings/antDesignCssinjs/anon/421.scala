@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MarkerEnd
+import typings.csstype.mod.Property.OverflowBlock
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `421` extends StObject {
   
   var value: js.UndefOr[
-    MarkerEnd | (js.Array[
-      (Extract[js.UndefOr[MarkerEnd | js.Array[NonNullable[js.UndefOr[MarkerEnd]]]], String]) | NonNullable[js.UndefOr[MarkerEnd]]
+    OverflowBlock | (js.Array[
+      (Extract[
+        js.UndefOr[OverflowBlock | js.Array[NonNullable[js.UndefOr[OverflowBlock]]]], 
+        String
+      ]) | NonNullable[js.UndefOr[OverflowBlock]]
     ])
   ] = js.native
 }

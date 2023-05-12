@@ -8,11 +8,11 @@ trait ParametersQueryToolname extends StObject {
   
   var parameters: QueryToolname
   
-  var responses: `200Content414`
+  var responses: `200Content509`
 }
 object ParametersQueryToolname {
   
-  inline def apply(parameters: QueryToolname, responses: `200Content414`): ParametersQueryToolname = {
+  inline def apply(parameters: QueryToolname, responses: `200Content509`): ParametersQueryToolname = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryToolname]
   }
@@ -22,6 +22,6 @@ object ParametersQueryToolname {
     
     inline def setParameters(value: QueryToolname): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content414`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content509`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

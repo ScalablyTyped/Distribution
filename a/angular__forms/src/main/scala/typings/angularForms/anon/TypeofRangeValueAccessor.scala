@@ -22,7 +22,8 @@ trait TypeofRangeValueAccessor
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    `false`, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[RangeValueAccessor, scala.Nothing] = js.native

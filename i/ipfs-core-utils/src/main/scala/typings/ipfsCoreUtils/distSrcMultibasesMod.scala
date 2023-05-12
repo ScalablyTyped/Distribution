@@ -19,20 +19,12 @@ object distSrcMultibasesMod {
     def this(options: Bases) = this()
     
     /** @type {Record<string, MultibaseCodec>}} */
-    var _basesByName: Record[
-        String, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.MultibaseCodec<any> */ Any
-      ] = js.native
+    var _basesByName: Record[String, typings.multiformats.distTypesSrcBasesInterfaceMod.MultibaseCodec[Any]] = js.native
     
     /** @type {Record<string, MultibaseCodec>}} */
-    var _basesByPrefix: Record[
-        String, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.MultibaseCodec<any> */ Any
-      ] = js.native
+    var _basesByPrefix: Record[String, typings.multiformats.distTypesSrcBasesInterfaceMod.MultibaseCodec[Any]] = js.native
     
-    def _loadBase(codeOrName: String): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MultibaseCodec<any> */ Any
-      ] = js.native
+    def _loadBase(codeOrName: String): js.Promise[typings.multiformats.distTypesSrcBasesInterfaceMod.MultibaseCodec[Any]] = js.native
     @JSName("_loadBase")
     var _loadBase_Original: typings.ipfsCoreUtils.distSrcTypesMod.LoadBaseFn = js.native
     
@@ -41,34 +33,26 @@ object distSrcMultibasesMod {
       *
       * @param {MultibaseCodec} base
       */
-    def addBase(
-      base: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.MultibaseCodec<any> */ Any
-    ): Unit = js.native
+    def addBase(base: typings.multiformats.distTypesSrcBasesInterfaceMod.MultibaseCodec[Any]): Unit = js.native
     
     /**
       * @param {string} nameOrPrefix
       */
-    def getBase(nameOrPrefix: String): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.MultibaseCodec<any> */ Any
-      ] = js.native
+    def getBase(nameOrPrefix: String): js.Promise[typings.multiformats.distTypesSrcBasesInterfaceMod.MultibaseCodec[Any]] = js.native
     
-    def listBases(): js.Array[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.MultibaseCodec<any> */ Any
-      ] = js.native
+    def listBases(): js.Array[typings.multiformats.distTypesSrcBasesInterfaceMod.MultibaseCodec[Any]] = js.native
     
     /**
       * Remove support for a multibase codec
       *
       * @param {MultibaseCodec} base
       */
-    def removeBase(
-      base: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.MultibaseCodec<any> */ Any
-    ): Unit = js.native
+    def removeBase(base: typings.multiformats.distTypesSrcBasesInterfaceMod.MultibaseCodec[Any]): Unit = js.native
   }
   
   type AbortOptions = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.AbortOptions */ Any
   
   type LoadBaseFn = typings.ipfsCoreUtils.distSrcTypesMod.LoadBaseFn
   
-  type MultibaseCodec = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.MultibaseCodec<any> */ Any
+  type MultibaseCodec = typings.multiformats.distTypesSrcBasesInterfaceMod.MultibaseCodec[Any]
 }

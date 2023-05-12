@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {number} [radius] - The radius of the bounding sphere. Defaults to 0.5.
   * @example
   * // Create a new bounding sphere centered on the origin with a radius of 0.5
-  * var sphere = new pc.BoundingSphere();
+  * const sphere = new pc.BoundingSphere();
   */
 open class BoundingSphere () extends StObject {
   def this(center: Vec3) = this()
@@ -44,7 +44,7 @@ open class BoundingSphere () extends StObject {
   /**
     * Test if a ray intersects with the sphere.
     *
-    * @param {Ray} ray - Ray to test against (direction must be normalized).
+    * @param {import('./ray.js').Ray} ray - Ray to test against (direction must be normalized).
     * @param {Vec3} [point] - If there is an intersection, the intersection point will be copied
     * into here.
     * @returns {boolean} True if there is an intersection.

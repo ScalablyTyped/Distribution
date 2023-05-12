@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TraceRouteHop extends StObject {
   
-  // The network path count of this hop that was used to compute the round-trip time.
+  // The network path count of this hop that was used to compute the RTT.
   var hopCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // IP address used for this hop in the network trace.

@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetTableResponse extends StObject {
   
   /**
-    * The read/write throughput capacity mode for a table. The options are: • throughputMode:PAY_PER_REQUEST  • throughputMode:PROVISIONED 
+    * The read/write throughput capacity mode for a table. The options are:    throughputMode:PAY_PER_REQUEST     throughputMode:PROVISIONED   
     */
   var capacitySpecification: js.UndefOr[CapacitySpecificationSummary] = js.undefined
+  
+  /**
+    *  The client-side timestamps setting of the table.
+    */
+  var clientSideTimestamps: js.UndefOr[ClientSideTimestamps] = js.undefined
   
   /**
     * The the description of the specified table.
@@ -22,7 +27,7 @@ trait GetTableResponse extends StObject {
   var creationTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The default Time to Live settings of the specified table.
+    * The default Time to Live settings in seconds of the specified table.
     */
   var defaultTimeToLive: js.UndefOr[DefaultTimeToLive] = js.undefined
   
@@ -79,6 +84,10 @@ object GetTableResponse {
     inline def setCapacitySpecification(value: CapacitySpecificationSummary): Self = StObject.set(x, "capacitySpecification", value.asInstanceOf[js.Any])
     
     inline def setCapacitySpecificationUndefined: Self = StObject.set(x, "capacitySpecification", js.undefined)
+    
+    inline def setClientSideTimestamps(value: ClientSideTimestamps): Self = StObject.set(x, "clientSideTimestamps", value.asInstanceOf[js.Any])
+    
+    inline def setClientSideTimestampsUndefined: Self = StObject.set(x, "clientSideTimestamps", js.undefined)
     
     inline def setComment(value: Comment): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

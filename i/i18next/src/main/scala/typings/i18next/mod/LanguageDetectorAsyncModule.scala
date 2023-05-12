@@ -13,12 +13,19 @@ trait LanguageDetectorAsyncModule
   /** Set to true to enable async detection */
   var async: `true`
   
-  def cacheUserLanguage(lng: String): Unit
+  var cacheUserLanguage: js.UndefOr[js.Function1[/* lng */ String, Unit | js.Promise[Unit]]] = js.undefined
   
-  /** Must call callback passing detected language */
-  def detect(callback: js.Function1[/* lng */ js.UndefOr[String | js.Array[String]], Unit]): Unit
+  /** Must call callback passing detected language or return a Promise*/
+  def detect(callback: js.Function1[/* lng */ js.UndefOr[String | js.Array[String]], js.UndefOr[Unit]]): Unit | (js.Promise[js.UndefOr[String | js.Array[String]]])
   
-  def init(services: Services, detectorOptions: js.Object, i18nextOptions: InitOptions): Unit
+  var init: js.UndefOr[
+    js.Function3[
+      /* services */ Services, 
+      /* detectorOptions */ js.Object, 
+      /* i18nextOptions */ InitOptions[js.Object], 
+      Unit
+    ]
+  ] = js.undefined
   
   @JSName("type")
   var type_LanguageDetectorAsyncModule: languageDetector
@@ -26,11 +33,9 @@ trait LanguageDetectorAsyncModule
 object LanguageDetectorAsyncModule {
   
   inline def apply(
-    cacheUserLanguage: String => Unit,
-    detect: js.Function1[/* lng */ js.UndefOr[String | js.Array[String]], Unit] => Unit,
-    init: (Services, js.Object, InitOptions) => Unit
+    detect: js.Function1[/* lng */ js.UndefOr[String | js.Array[String]], js.UndefOr[Unit]] => Unit | (js.Promise[js.UndefOr[String | js.Array[String]]])
   ): LanguageDetectorAsyncModule = {
-    val __obj = js.Dynamic.literal(async = true, cacheUserLanguage = js.Any.fromFunction1(cacheUserLanguage), detect = js.Any.fromFunction1(detect), init = js.Any.fromFunction3(init))
+    val __obj = js.Dynamic.literal(async = true, detect = js.Any.fromFunction1(detect))
     __obj.updateDynamic("type")("languageDetector")
     __obj.asInstanceOf[LanguageDetectorAsyncModule]
   }
@@ -40,11 +45,19 @@ object LanguageDetectorAsyncModule {
     
     inline def setAsync(value: `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
-    inline def setCacheUserLanguage(value: String => Unit): Self = StObject.set(x, "cacheUserLanguage", js.Any.fromFunction1(value))
+    inline def setCacheUserLanguage(value: /* lng */ String => Unit | js.Promise[Unit]): Self = StObject.set(x, "cacheUserLanguage", js.Any.fromFunction1(value))
     
-    inline def setDetect(value: js.Function1[/* lng */ js.UndefOr[String | js.Array[String]], Unit] => Unit): Self = StObject.set(x, "detect", js.Any.fromFunction1(value))
+    inline def setCacheUserLanguageUndefined: Self = StObject.set(x, "cacheUserLanguage", js.undefined)
     
-    inline def setInit(value: (Services, js.Object, InitOptions) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
+    inline def setDetect(
+      value: js.Function1[/* lng */ js.UndefOr[String | js.Array[String]], js.UndefOr[Unit]] => Unit | (js.Promise[js.UndefOr[String | js.Array[String]]])
+    ): Self = StObject.set(x, "detect", js.Any.fromFunction1(value))
+    
+    inline def setInit(
+      value: (/* services */ Services, /* detectorOptions */ js.Object, /* i18nextOptions */ InitOptions[js.Object]) => Unit
+    ): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
+    
+    inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
     inline def setType(value: languageDetector): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

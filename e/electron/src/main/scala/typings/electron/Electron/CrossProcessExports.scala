@@ -64,6 +64,8 @@ object CrossProcessExports {
   
   type Clipboard = typings.electron.Electron.Clipboard
   
+  type CloseOpts = typings.electron.Electron.CloseOpts
+  
   type CommandLine = typings.electron.Electron.CommandLine
   
   type Config = typings.electron.Electron.Config
@@ -118,6 +120,8 @@ object CrossProcessExports {
   
   type DevicePermissionHandlerHandlerDetails = typings.electron.Electron.DevicePermissionHandlerHandlerDetails
   
+  type DevtoolsOpenUrlEvent = typings.electron.Electron.DevtoolsOpenUrlEvent
+  
   type Dialog = typings.electron.Electron.Dialog
   
   type DidChangeThemeColorEvent = typings.electron.Electron.DidChangeThemeColorEvent
@@ -142,6 +146,8 @@ object CrossProcessExports {
   
   type DisplayBalloonOptions = typings.electron.Electron.DisplayBalloonOptions
   
+  type DisplayMediaRequestHandlerHandlerRequest = typings.electron.Electron.DisplayMediaRequestHandlerHandlerRequest
+  
   type Dock = typings.electron.Electron.Dock
   
   type DownloadItem = typings.electron.Electron.DownloadItem
@@ -149,6 +155,8 @@ object CrossProcessExports {
   type EditFlags = typings.electron.Electron.EditFlags
   
   type EnableNetworkEmulationOptions = typings.electron.Electron.EnableNetworkEmulationOptions
+  
+  type Env = typings.electron.Electron.Env
   
   type Event = typings.electron.Electron.Event
   
@@ -167,6 +175,8 @@ object CrossProcessExports {
   type FindInPageOptions = typings.electron.Electron.FindInPageOptions
   
   type FocusOptions = typings.electron.Electron.FocusOptions
+  
+  type ForkOptions = typings.electron.Electron.ForkOptions
   
   type FoundInPageEvent = typings.electron.Electron.FoundInPageEvent
   
@@ -294,10 +304,6 @@ object CrossProcessExports {
   
   type NetLog = typings.electron.Electron.NetLog
   
-  type NewWindowEvent = typings.electron.Electron.NewWindowEvent
-  
-  type NewWindowWebContentsEvent = typings.electron.Electron.NewWindowWebContentsEvent
-  
   type Notification = typings.electron.Electron.Notification
   
   type NotificationAction = typings.electron.Electron.NotificationAction
@@ -333,6 +339,8 @@ object CrossProcessExports {
   type OpenExternalOptions = typings.electron.Electron.OpenExternalOptions
   
   type Options = typings.electron.Electron.Options
+  
+  type Opts = typings.electron.Electron.Opts
   
   type PageFaviconUpdatedEvent = typings.electron.Electron.PageFaviconUpdatedEvent
   
@@ -394,6 +402,8 @@ object CrossProcessExports {
   
   type Provider = typings.electron.Electron.Provider
   
+  type PurchaseProductOpts = typings.electron.Electron.PurchaseProductOpts
+  
   type PushNotifications = typings.electron.Electron.PushNotifications
   
   type ReadBookmark = typings.electron.Electron.ReadBookmark
@@ -411,6 +421,12 @@ object CrossProcessExports {
   type Request = typings.electron.Electron.Request
   
   type ResizeOptions = typings.electron.Electron.ResizeOptions
+  
+  type ResolveHostOptions = typings.electron.Electron.ResolveHostOptions
+  
+  type ResolvedEndpoint = typings.electron.Electron.ResolvedEndpoint
+  
+  type ResolvedHost = typings.electron.Electron.ResolvedHost
   
   type ResourceUsage = typings.electron.Electron.ResourceUsage
   
@@ -436,7 +452,11 @@ object CrossProcessExports {
   
   type SelectHidDeviceDetails = typings.electron.Electron.SelectHidDeviceDetails
   
+  type SelectUsbDeviceDetails = typings.electron.Electron.SelectUsbDeviceDetails
+  
   type SerialPort = typings.electron.Electron.SerialPort
+  
+  type SerialPortRevokedDetails = typings.electron.Electron.SerialPortRevokedDetails
   
   type ServiceWorkerInfo = typings.electron.Electron.ServiceWorkerInfo
   
@@ -461,6 +481,8 @@ object CrossProcessExports {
   type SourcesOptions = typings.electron.Electron.SourcesOptions
   
   type StartLoggingOptions = typings.electron.Electron.StartLoggingOptions
+  
+  type Streams = typings.electron.Electron.Streams
   
   type SystemMemoryInfo = typings.electron.Electron.SystemMemoryInfo
   
@@ -534,6 +556,8 @@ object CrossProcessExports {
   
   type Tray = typings.electron.Electron.Tray
   
+  type USBDevice = typings.electron.Electron.USBDevice
+  
   type UpdateTargetUrlEvent = typings.electron.Electron.UpdateTargetUrlEvent
   
   type UploadData = typings.electron.Electron.UploadData
@@ -544,7 +568,17 @@ object CrossProcessExports {
   
   type UploadRawData = typings.electron.Electron.UploadRawData
   
+  type UsbDeviceAddedDetails = typings.electron.Electron.UsbDeviceAddedDetails
+  
+  type UsbDeviceRemovedDetails = typings.electron.Electron.UsbDeviceRemovedDetails
+  
+  type UsbDeviceRevokedDetails = typings.electron.Electron.UsbDeviceRevokedDetails
+  
   type UserDefaultTypes = typings.electron.Electron.UserDefaultTypes
+  
+  type UtilityProcess_ = typings.electron.Electron.UtilityProcess_
+  
+  type Video = typings.electron.Electron.Video
   
   type VisibleOnAllWorkspacesOptions = typings.electron.Electron.VisibleOnAllWorkspacesOptions
   
@@ -575,6 +609,9 @@ object CrossProcessExports {
   
   /* was `typeof Session` */
   type session = typings.electron.Electron.Session_
+  
+  /* was `typeof UtilityProcess` */
+  type utilityProcess = typings.electron.Electron.UtilityProcess_
   
   /* was `typeof WebContents` */
   type webContents = typings.electron.Electron.WebContents_

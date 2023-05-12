@@ -1,28 +1,27 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__mathjax2"
-version := "3.5.0-9f9be6"
+version := "3.6.3-126b21"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "jupyterlab__coreutils" % "5.5.0-75f6b2",
-  "org.scalablytyped" %%% "jupyterlab__nbformat" % "3.5.0-70fd98",
-  "org.scalablytyped" %%% "jupyterlab__observables" % "4.5.0-25de33",
-  "org.scalablytyped" %%% "jupyterlab__rendermime-interfaces" % "3.5.0-568536",
-  "org.scalablytyped" %%% "jupyterlab__services" % "6.5.0-1d78ae",
-  "org.scalablytyped" %%% "jupyterlab__settingregistry" % "3.5.0-9a0015",
-  "org.scalablytyped" %%% "jupyterlab__statedb" % "3.5.0-8c93c0",
-  "org.scalablytyped" %%% "jupyterlab__translation" % "3.5.0-9a8702",
-  "org.scalablytyped" %%% "lumino__algorithm" % "1.9.2-8eb917",
-  "org.scalablytyped" %%% "lumino__commands" % "1.20.1-c0f796",
-  "org.scalablytyped" %%% "lumino__coreutils" % "1.12.1-6c186c",
-  "org.scalablytyped" %%% "lumino__disposable" % "1.10.2-95b5ad",
-  "org.scalablytyped" %%% "lumino__messaging" % "1.10.3-6f793b",
-  "org.scalablytyped" %%% "lumino__polling" % "1.11.2-e41266",
-  "org.scalablytyped" %%% "lumino__signaling" % "1.10.2-0e4ba5",
-  "org.scalablytyped" %%% "lumino__virtualdom" % "1.14.2-f07ffa",
-  "org.scalablytyped" %%% "lumino__widgets" % "1.34.1-f4a806",
-  "org.scalablytyped" %%% "std" % "4.9-ecb5eb")
+  "org.scalablytyped" %%% "jupyterlab__coreutils" % "5.6.3-a85304",
+  "org.scalablytyped" %%% "jupyterlab__nbformat" % "3.6.3-ed7867",
+  "org.scalablytyped" %%% "jupyterlab__observables" % "4.6.3-6e01b0",
+  "org.scalablytyped" %%% "jupyterlab__rendermime-interfaces" % "3.6.3-85c052",
+  "org.scalablytyped" %%% "jupyterlab__services" % "6.6.3-df59eb",
+  "org.scalablytyped" %%% "jupyterlab__settingregistry" % "3.6.3-7a1a07",
+  "org.scalablytyped" %%% "jupyterlab__statedb" % "3.6.3-d3852c",
+  "org.scalablytyped" %%% "jupyterlab__translation" % "3.6.3-bf5ba0",
+  "org.scalablytyped" %%% "lumino__commands" % "2.1.1-05e88e",
+  "org.scalablytyped" %%% "lumino__coreutils" % "2.1.1-0e89ba",
+  "org.scalablytyped" %%% "lumino__disposable" % "2.1.1-1b84cf",
+  "org.scalablytyped" %%% "lumino__messaging" % "2.0.0-4ed37a",
+  "org.scalablytyped" %%% "lumino__polling" % "2.1.1-b637ba",
+  "org.scalablytyped" %%% "lumino__signaling" % "2.1.1-1de98e",
+  "org.scalablytyped" %%% "lumino__virtualdom" % "2.0.0-584dda",
+  "org.scalablytyped" %%% "lumino__widgets" % "2.1.1-bfdb9d",
+  "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -168,22 +168,13 @@ object Engine {
   
   /**
     * Moves the simulation forward in time by `delta` ms.
-    * The `correction` argument is an optional `Number` that specifies the time correction factor to apply to the update.
-    * This can help improve the accuracy of the simulation in cases where `delta` is changing between updates.
-    * The value of `correction` is defined as `delta / lastDelta`, i.e. the percentage change of `delta` over the last step.
-    * Therefore the value is always `1` (no correction) when `delta` constant (or when no correction is desired, which is the default).
-    * See the paper on <a href="http://lonesock.net/article/verlet.html">Time Corrected Verlet</a> for more information.
-    *
     * Triggers `beforeUpdate` and `afterUpdate` events.
     * Triggers `collisionStart`, `collisionActive` and `collisionEnd` events.
     * @method update
     * @param {engine} engine
     * @param {number} [delta=16.666]
-    * @param {number} [correction=1]
     */
   /* static member */
   inline def update(engine: typings.phaser.MatterJS.Engine): typings.phaser.MatterJS.Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(engine.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.Engine]
   inline def update(engine: typings.phaser.MatterJS.Engine, delta: Double): typings.phaser.MatterJS.Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(engine.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Engine]
-  inline def update(engine: typings.phaser.MatterJS.Engine, delta: Double, correction: Double): typings.phaser.MatterJS.Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(engine.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], correction.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Engine]
-  inline def update(engine: typings.phaser.MatterJS.Engine, delta: Unit, correction: Double): typings.phaser.MatterJS.Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(engine.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], correction.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Engine]
 }

@@ -54,6 +54,10 @@ object nivoArcsStrings {
   inline def outerRadius: outerRadius = "outerRadius".asInstanceOf[outerRadius]
   
   @js.native
+  sealed trait path extends StObject
+  inline def path: path = "path".asInstanceOf[path]
+  
+  @js.native
   sealed trait points extends StObject
   inline def points: points = "points".asInstanceOf[points]
   

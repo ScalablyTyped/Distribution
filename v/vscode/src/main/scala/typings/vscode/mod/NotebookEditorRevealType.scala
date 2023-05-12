@@ -14,8 +14,8 @@ object NotebookEditorRevealType extends StObject {
   def apply(value: Double): js.UndefOr[NotebookEditorRevealType & Double] = js.native
   
   /**
-    * The range will always be revealed at the top of the viewport.
-    */
+  		 * The range will always be revealed at the top of the viewport.
+  		 */
   @js.native
   sealed trait AtTop
     extends StObject
@@ -23,8 +23,8 @@ object NotebookEditorRevealType extends StObject {
   /* 3 */ val AtTop: typings.vscode.mod.NotebookEditorRevealType.AtTop & Double = js.native
   
   /**
-    * The range will be revealed with as little scrolling as possible.
-    */
+  		 * The range will be revealed with as little scrolling as possible.
+  		 */
   @js.native
   sealed trait Default
     extends StObject
@@ -32,8 +32,8 @@ object NotebookEditorRevealType extends StObject {
   /* 0 */ val Default: typings.vscode.mod.NotebookEditorRevealType.Default & Double = js.native
   
   /**
-    * The range will always be revealed in the center of the viewport.
-    */
+  		 * The range will always be revealed in the center of the viewport.
+  		 */
   @js.native
   sealed trait InCenter
     extends StObject
@@ -41,9 +41,9 @@ object NotebookEditorRevealType extends StObject {
   /* 1 */ val InCenter: typings.vscode.mod.NotebookEditorRevealType.InCenter & Double = js.native
   
   /**
-    * If the range is outside the viewport, it will be revealed in the center of the viewport.
-    * Otherwise, it will be revealed with as little scrolling as possible.
-    */
+  		 * If the range is outside the viewport, it will be revealed in the center of the viewport.
+  		 * Otherwise, it will be revealed with as little scrolling as possible.
+  		 */
   @js.native
   sealed trait InCenterIfOutsideViewport
     extends StObject

@@ -1,6 +1,6 @@
 package typings.plotlyJs.anon
 
-import typings.plotlyJs.libTracesOhclMod.HoverInfo
+import typings.plotlyJs.libTracesOhlcMod.HoverInfo
 import typings.plotlyJs.mod.Data
 import typings.plotlyJs.plotlyJsStrings.candlestick
 import typings.plotlyJs.plotlyJsStrings.end
@@ -37,7 +37,7 @@ trait PartialCandlestickData
   var low: js.UndefOr[js.Array[Double]] = js.undefined
   
   var meta: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/ohcl.OhclData['meta'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/ohlc.OhlcData['meta'] */ js.Any
   ] = js.undefined
   
   var name: js.UndefOr[String] = js.undefined
@@ -61,11 +61,11 @@ trait PartialCandlestickData
   var xaxis: js.UndefOr[String] = js.undefined
   
   var xperiod: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/ohcl.OhclData['xperiod'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/ohlc.OhlcData['xperiod'] */ js.Any
   ] = js.undefined
   
   var xperiod0: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/ohcl.OhclData['xperiod0'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/ohlc.OhlcData['xperiod0'] */ js.Any
   ] = js.undefined
   
   var xperiodalignment: js.UndefOr[start | middle | end] = js.undefined
@@ -131,7 +131,7 @@ object PartialCandlestickData {
     inline def setLowVarargs(value: Double*): Self = StObject.set(x, "low", js.Array(value*))
     
     inline def setMeta(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/ohcl.OhclData['meta'] */ js.Any
+      value: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/ohlc.OhlcData['meta'] */ js.Any
     ): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
@@ -183,11 +183,11 @@ object PartialCandlestickData {
     inline def setXaxisUndefined: Self = StObject.set(x, "xaxis", js.undefined)
     
     inline def setXperiod(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/ohcl.OhclData['xperiod'] */ js.Any
+      value: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/ohlc.OhlcData['xperiod'] */ js.Any
     ): Self = StObject.set(x, "xperiod", value.asInstanceOf[js.Any])
     
     inline def setXperiod0(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/ohcl.OhclData['xperiod0'] */ js.Any
+      value: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/ohlc.OhlcData['xperiod0'] */ js.Any
     ): Self = StObject.set(x, "xperiod0", value.asInstanceOf[js.Any])
     
     inline def setXperiod0Undefined: Self = StObject.set(x, "xperiod0", js.undefined)

@@ -233,7 +233,7 @@ object mod {
   
   inline def createLocalAudioTrack(): js.Promise[typings.twilioVideo.tsdefLocalAudioTrackMod.LocalAudioTrack] = ^.asInstanceOf[js.Dynamic].applyDynamic("createLocalAudioTrack")().asInstanceOf[js.Promise[typings.twilioVideo.tsdefLocalAudioTrackMod.LocalAudioTrack]]
   inline def createLocalAudioTrack(options: CreateLocalAudioTrackOptions): js.Promise[typings.twilioVideo.tsdefLocalAudioTrackMod.LocalAudioTrack] = ^.asInstanceOf[js.Dynamic].applyDynamic("createLocalAudioTrack")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.twilioVideo.tsdefLocalAudioTrackMod.LocalAudioTrack]]
-  inline def createLocalAudioTrack(options: CreateLocalTracksOptions): js.Promise[typings.twilioVideo.tsdefLocalAudioTrackMod.LocalAudioTrack] = ^.asInstanceOf[js.Dynamic].applyDynamic("createLocalAudioTrack")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.twilioVideo.tsdefLocalAudioTrackMod.LocalAudioTrack]]
+  inline def createLocalAudioTrack(options: CreateLocalTrackOptions): js.Promise[typings.twilioVideo.tsdefLocalAudioTrackMod.LocalAudioTrack] = ^.asInstanceOf[js.Dynamic].applyDynamic("createLocalAudioTrack")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.twilioVideo.tsdefLocalAudioTrackMod.LocalAudioTrack]]
   
   inline def createLocalTracks(): js.Promise[js.Array[LocalTrack]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createLocalTracks")().asInstanceOf[js.Promise[js.Array[LocalTrack]]]
   inline def createLocalTracks(options: CreateLocalTracksOptions): js.Promise[js.Array[LocalTrack]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createLocalTracks")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[LocalTrack]]]

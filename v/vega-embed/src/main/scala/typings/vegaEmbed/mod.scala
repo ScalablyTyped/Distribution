@@ -20,6 +20,7 @@ import typings.vega.mod.View
 import typings.vegaEmbed.anon.Bottom
 import typings.vegaEmbed.anon.PartialCLICKTOVIEWACTIONS
 import typings.vegaEmbed.anon.Png
+import typings.vegaEmbed.anon.PngSvg
 import typings.vegaEmbed.anon.Svg
 import typings.vegaEmbed.anon.TypeofexpressionInterpret
 import typings.vegaEmbed.vegaEmbedBooleans.`false`
@@ -732,7 +733,7 @@ object mod {
     
     var renderer: js.UndefOr[R] = js.undefined
     
-    var scaleFactor: js.UndefOr[Double] = js.undefined
+    var scaleFactor: js.UndefOr[Double | PngSvg] = js.undefined
     
     var sourceFooter: js.UndefOr[String] = js.undefined
     
@@ -838,7 +839,7 @@ object mod {
       
       inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
       
-      inline def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
+      inline def setScaleFactor(value: Double | PngSvg): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
       
       inline def setScaleFactorUndefined: Self = StObject.set(x, "scaleFactor", js.undefined)
       

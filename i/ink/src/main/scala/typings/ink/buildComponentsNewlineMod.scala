@@ -1,19 +1,17 @@
 package typings.ink
 
-import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.FC
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object buildComponentsNewlineMod extends Shortcut {
+object buildComponentsNewlineMod {
   
-  /**
-    * Adds one or more newline (\n) characters. Must be used within <Text> components.
-    */
-  @JSImport("ink/build/components/Newline", JSImport.Default)
+  @JSImport("ink/build/components/Newline", JSImport.Namespace)
   @js.native
-  val default: FC[Props] = js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(param0: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait Props extends StObject {
     
@@ -39,9 +37,4 @@ object buildComponentsNewlineMod extends Shortcut {
       inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     }
   }
-  
-  type _To = FC[Props]
-  
-  /* This means you don't have to write `default`, but can instead just say `buildComponentsNewlineMod.foo` */
-  override def _to: FC[Props] = default
 }

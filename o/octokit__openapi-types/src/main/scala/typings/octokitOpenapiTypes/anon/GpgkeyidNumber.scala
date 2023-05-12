@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GpgkeyidNumber extends StObject {
   
-  /** The unique identifier of the GPG key. */
   var gpg_key_id: Double
 }
 object GpgkeyidNumber {

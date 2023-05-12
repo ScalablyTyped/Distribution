@@ -25,6 +25,11 @@ trait dxToolbarOptions[TItem /* <: ItemLike */, TKey]
       String | UserDefinedElement[Element]
     ])
   ] = js.undefined
+  
+  /**
+    * 
+    */
+  var multiline: js.UndefOr[Boolean] = js.undefined
 }
 object dxToolbarOptions {
   
@@ -50,5 +55,9 @@ object dxToolbarOptions {
     ): Self = StObject.set(x, "menuItemTemplate", js.Any.fromFunction3(value))
     
     inline def setMenuItemTemplateUndefined: Self = StObject.set(x, "menuItemTemplate", js.undefined)
+    
+    inline def setMultiline(value: Boolean): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
+    
+    inline def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
   }
 }

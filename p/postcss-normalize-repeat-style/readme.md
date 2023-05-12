@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-normalize-repeat-style
 
-Typings are for version 5.1.1
+Typings are for version 6.0.0
 
 ## Library description:
 Convert two value syntax for repeat-style into one value.

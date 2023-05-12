@@ -18,6 +18,8 @@ trait IsEmailOptions extends StObject {
   
   var host_blacklist: js.UndefOr[js.Array[String]] = js.undefined
   
+  var host_whitelist: js.UndefOr[js.Array[String]] = js.undefined
+  
   var ignore_max_length: js.UndefOr[Boolean] = js.undefined
   
   var require_tld: js.UndefOr[Boolean] = js.undefined
@@ -57,6 +59,12 @@ object IsEmailOptions {
     inline def setHost_blacklistUndefined: Self = StObject.set(x, "host_blacklist", js.undefined)
     
     inline def setHost_blacklistVarargs(value: String*): Self = StObject.set(x, "host_blacklist", js.Array(value*))
+    
+    inline def setHost_whitelist(value: js.Array[String]): Self = StObject.set(x, "host_whitelist", value.asInstanceOf[js.Any])
+    
+    inline def setHost_whitelistUndefined: Self = StObject.set(x, "host_whitelist", js.undefined)
+    
+    inline def setHost_whitelistVarargs(value: String*): Self = StObject.set(x, "host_whitelist", js.Array(value*))
     
     inline def setIgnore_max_length(value: Boolean): Self = StObject.set(x, "ignore_max_length", value.asInstanceOf[js.Any])
     

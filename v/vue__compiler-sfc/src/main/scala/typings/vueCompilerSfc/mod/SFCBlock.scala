@@ -1,6 +1,6 @@
 package typings.vueCompilerSfc.mod
 
-import typings.sourceMap.mod.RawSourceMap
+import typings.sourceMapJs.mod.RawSourceMap
 import typings.std.Record
 import typings.vueCompilerCore.mod.SourceLocation
 import typings.vueCompilerSfc.vueCompilerSfcBooleans.`true`

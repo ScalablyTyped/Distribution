@@ -32,7 +32,12 @@ trait ListAppsRequest extends StObject {
   var SortOrder: js.UndefOr[typings.awsSdk.clientsSagemakerMod.SortOrder] = js.undefined
   
   /**
-    * A parameter to search by user profile name.
+    * A parameter to search by space name. If UserProfileNameEquals is set, then this value cannot be set.
+    */
+  var SpaceNameEquals: js.UndefOr[SpaceName] = js.undefined
+  
+  /**
+    * A parameter to search by user profile name. If SpaceNameEquals is set, then this value cannot be set.
     */
   var UserProfileNameEquals: js.UndefOr[UserProfileName] = js.undefined
 }
@@ -65,6 +70,10 @@ object ListAppsRequest {
     inline def setSortOrder(value: SortOrder): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
     
     inline def setSortOrderUndefined: Self = StObject.set(x, "SortOrder", js.undefined)
+    
+    inline def setSpaceNameEquals(value: SpaceName): Self = StObject.set(x, "SpaceNameEquals", value.asInstanceOf[js.Any])
+    
+    inline def setSpaceNameEqualsUndefined: Self = StObject.set(x, "SpaceNameEquals", js.undefined)
     
     inline def setUserProfileNameEquals(value: UserProfileName): Self = StObject.set(x, "UserProfileNameEquals", value.asInstanceOf[js.Any])
     

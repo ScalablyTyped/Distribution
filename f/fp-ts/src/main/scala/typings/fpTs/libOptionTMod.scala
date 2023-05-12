@@ -24,7 +24,7 @@ import typings.fpTs.libChainMod.Chain3
 import typings.fpTs.libChainMod.Chain3C
 import typings.fpTs.libChainMod.Chain4
 import typings.fpTs.libEitherMod.Either_
-import typings.fpTs.libFunctionMod.Lazy
+import typings.fpTs.libFunctionMod.LazyArg
 import typings.fpTs.libFunctorMod.Functor
 import typings.fpTs.libFunctorMod.Functor1
 import typings.fpTs.libFunctorMod.Functor2
@@ -59,7 +59,7 @@ object libOptionTMod {
   val ^ : js.Any = js.native
   
   inline def alt[M](M: Monad[M]): js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, Option<A>> */ Any
     ], 
     js.Function1[
@@ -67,7 +67,7 @@ object libOptionTMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, Option<A>> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, Option<A>> */ Any
     ], 
     js.Function1[
@@ -76,7 +76,7 @@ object libOptionTMod {
     ]
   ]]
   inline def alt[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](M: Monad1[M]): js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, Option<A>> */ Any
     ], 
     js.Function1[
@@ -84,7 +84,7 @@ object libOptionTMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, Option<A>> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, Option<A>> */ Any
     ], 
     js.Function1[
@@ -93,7 +93,7 @@ object libOptionTMod {
     ]
   ]]
   inline def alt[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](M: Monad2[M]): js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, Option<A>> */ Any
     ], 
     js.Function1[
@@ -101,7 +101,7 @@ object libOptionTMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, Option<A>> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, Option<A>> */ Any
     ], 
     js.Function1[
@@ -110,7 +110,7 @@ object libOptionTMod {
     ]
   ]]
   inline def alt[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](M: Monad3[M]): js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, Option<A>> */ Any
     ], 
     js.Function1[
@@ -118,7 +118,7 @@ object libOptionTMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, Option<A>> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, Option<A>> */ Any
     ], 
     js.Function1[
@@ -127,7 +127,7 @@ object libOptionTMod {
     ]
   ]]
   inline def alt[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](M: Monad4[M]): js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<M, S, R, E, Option<A>> */ Any
     ], 
     js.Function1[
@@ -135,7 +135,7 @@ object libOptionTMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<M, S, R, E, Option<A>> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<M, S, R, E, Option<A>> */ Any
     ], 
     js.Function1[
@@ -144,7 +144,7 @@ object libOptionTMod {
     ]
   ]]
   inline def alt[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](M: Monad2C[M, E]): js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, Option<A>> */ Any
     ], 
     js.Function1[
@@ -152,7 +152,7 @@ object libOptionTMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, Option<A>> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, Option<A>> */ Any
     ], 
     js.Function1[
@@ -161,7 +161,7 @@ object libOptionTMod {
     ]
   ]]
   inline def alt[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](M: Monad3C[M, E]): js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, Option<A>> */ Any
     ], 
     js.Function1[
@@ -169,7 +169,7 @@ object libOptionTMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, Option<A>> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, Option<A>> */ Any
     ], 
     js.Function1[
@@ -936,7 +936,7 @@ object libOptionTMod {
   inline def getOptionM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](M: Monad2C[M, E]): OptionM2C[M, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptionM")(M.asInstanceOf[js.Any]).asInstanceOf[OptionM2C[M, E]]
   
   inline def getOrElse[M](M: Monad[M]): js.Function1[
-    /* onNone */ Lazy[
+    /* onNone */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, A> */ Any
     ], 
     js.Function1[
@@ -944,7 +944,7 @@ object libOptionTMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, A> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElse")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* onNone */ Lazy[
+    /* onNone */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, A> */ Any
     ], 
     js.Function1[
@@ -953,7 +953,7 @@ object libOptionTMod {
     ]
   ]]
   inline def getOrElse[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](M: Monad1[M]): js.Function1[
-    /* onNone */ Lazy[
+    /* onNone */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, A> */ Any
     ], 
     js.Function1[
@@ -961,7 +961,7 @@ object libOptionTMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, A> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElse")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* onNone */ Lazy[
+    /* onNone */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, A> */ Any
     ], 
     js.Function1[
@@ -970,7 +970,7 @@ object libOptionTMod {
     ]
   ]]
   inline def getOrElse[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](M: Monad2[M]): js.Function1[
-    /* onNone */ Lazy[
+    /* onNone */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ Any
     ], 
     js.Function1[
@@ -978,7 +978,7 @@ object libOptionTMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElse")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* onNone */ Lazy[
+    /* onNone */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ Any
     ], 
     js.Function1[
@@ -987,7 +987,7 @@ object libOptionTMod {
     ]
   ]]
   inline def getOrElse[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](M: Monad3[M]): js.Function1[
-    /* onNone */ Lazy[
+    /* onNone */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, A> */ Any
     ], 
     js.Function1[
@@ -995,7 +995,7 @@ object libOptionTMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, A> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElse")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* onNone */ Lazy[
+    /* onNone */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, A> */ Any
     ], 
     js.Function1[
@@ -1004,7 +1004,7 @@ object libOptionTMod {
     ]
   ]]
   inline def getOrElse[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](M: Monad4[M]): js.Function1[
-    /* onNone */ Lazy[
+    /* onNone */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<M, S, R, E, A> */ Any
     ], 
     js.Function1[
@@ -1012,7 +1012,7 @@ object libOptionTMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<M, S, R, E, A> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElse")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* onNone */ Lazy[
+    /* onNone */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<M, S, R, E, A> */ Any
     ], 
     js.Function1[
@@ -1021,7 +1021,7 @@ object libOptionTMod {
     ]
   ]]
   inline def getOrElse[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](M: Monad2C[M, E]): js.Function1[
-    /* onNone */ Lazy[
+    /* onNone */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ Any
     ], 
     js.Function1[
@@ -1029,7 +1029,7 @@ object libOptionTMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElse")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* onNone */ Lazy[
+    /* onNone */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ Any
     ], 
     js.Function1[
@@ -1038,7 +1038,7 @@ object libOptionTMod {
     ]
   ]]
   inline def getOrElse[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](M: Monad3C[M, E]): js.Function1[
-    /* onNone */ Lazy[
+    /* onNone */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, A> */ Any
     ], 
     js.Function1[
@@ -1046,7 +1046,7 @@ object libOptionTMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, A> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElse")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* onNone */ Lazy[
+    /* onNone */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, A> */ Any
     ], 
     js.Function1[
@@ -1519,13 +1519,13 @@ object libOptionTMod {
     extends StObject
        with ApplicativeCompositionHKT1[M, URI] {
     
-    def alt[A](fa: OptionT[M, A], that: Lazy[OptionT[M, A]]): OptionT[M, A]
+    def alt[A](fa: OptionT[M, A], that: LazyArg[OptionT[M, A]]): OptionT[M, A]
     
     def chain[A, B](ma: OptionT[M, A], f: js.Function1[/* a */ A, OptionT[M, B]]): OptionT[M, B]
     
     def fold[A, R](
       ma: OptionT[M, A],
-      onNone: Lazy[
+      onNone: LazyArg[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, R> */ Any
         ],
       onSome: js.Function1[
@@ -1540,7 +1540,7 @@ object libOptionTMod {
     
     def getOrElse[A](
       ma: OptionT[M, A],
-      onNone: Lazy[
+      onNone: LazyArg[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, A> */ Any
         ]
     ): Any
@@ -1550,17 +1550,17 @@ object libOptionTMod {
   object OptionM {
     
     inline def apply[M](
-      alt: (OptionT[M, Any], Lazy[OptionT[M, Any]]) => OptionT[M, Any],
+      alt: (OptionT[M, Any], LazyArg[OptionT[M, Any]]) => OptionT[M, Any],
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Kind<G, (a : A): B>> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Kind<G, A>> */ Any) => Any,
       chain: (OptionT[M, Any], js.Function1[Any, OptionT[M, Any]]) => OptionT[M, Any],
-      fold: (OptionT[M, Any], Lazy[
+      fold: (OptionT[M, Any], LazyArg[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, R> */ Any
         ], js.Function1[
           Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, R> */ Any
         ]) => Any,
       fromM: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, A> */ Any => OptionT[M, Any],
-      getOrElse: (OptionT[M, Any], Lazy[
+      getOrElse: (OptionT[M, Any], LazyArg[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, A> */ Any
         ]) => Any,
       map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Kind<G, A>> */ Any, js.Function1[Any, Any]) => Any,
@@ -1574,12 +1574,12 @@ object libOptionTMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: OptionM[?], M] (val x: Self & OptionM[M]) extends AnyVal {
       
-      inline def setAlt(value: (OptionT[M, Any], Lazy[OptionT[M, Any]]) => OptionT[M, Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
+      inline def setAlt(value: (OptionT[M, Any], LazyArg[OptionT[M, Any]]) => OptionT[M, Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
       
       inline def setChain(value: (OptionT[M, Any], js.Function1[Any, OptionT[M, Any]]) => OptionT[M, Any]): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
       
       inline def setFold(
-        value: (OptionT[M, Any], Lazy[
+        value: (OptionT[M, Any], LazyArg[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, R> */ Any
             ], js.Function1[
               Any, 
@@ -1592,7 +1592,7 @@ object libOptionTMod {
       ): Self = StObject.set(x, "fromM", js.Any.fromFunction1(value))
       
       inline def setGetOrElse(
-        value: (OptionT[M, Any], Lazy[
+        value: (OptionT[M, Any], LazyArg[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, A> */ Any
             ]) => Any
       ): Self = StObject.set(x, "getOrElse", js.Any.fromFunction2(value))
@@ -1605,13 +1605,13 @@ object libOptionTMod {
     extends StObject
        with ApplicativeComposition11[M, URI] {
     
-    def alt[A](fa: OptionT1[M, A], that: Lazy[OptionT1[M, A]]): OptionT1[M, A]
+    def alt[A](fa: OptionT1[M, A], that: LazyArg[OptionT1[M, A]]): OptionT1[M, A]
     
     def chain[A, B](ma: OptionT1[M, A], f: js.Function1[/* a */ A, OptionT1[M, B]]): OptionT1[M, B]
     
     def fold[A, R](
       ma: OptionT1[M, A],
-      onNone: Lazy[
+      onNone: LazyArg[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, R> */ Any
         ],
       onSome: js.Function1[
@@ -1626,7 +1626,7 @@ object libOptionTMod {
     
     def getOrElse[A](
       ma: OptionT1[M, A],
-      onNone: Lazy[
+      onNone: LazyArg[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, A> */ Any
         ]
     ): Any
@@ -1636,17 +1636,17 @@ object libOptionTMod {
   object OptionM1 {
     
     inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](
-      alt: (OptionT1[M, Any], Lazy[OptionT1[M, Any]]) => OptionT1[M, Any],
+      alt: (OptionT1[M, Any], LazyArg[OptionT1[M, Any]]) => OptionT1[M, Any],
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, Kind<G, (a : A): B>> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, Kind<G, A>> */ Any) => Any,
       chain: (OptionT1[M, Any], js.Function1[Any, OptionT1[M, Any]]) => OptionT1[M, Any],
-      fold: (OptionT1[M, Any], Lazy[
+      fold: (OptionT1[M, Any], LazyArg[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, R> */ Any
         ], js.Function1[
           Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, R> */ Any
         ]) => Any,
       fromM: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, A> */ Any => OptionT1[M, Any],
-      getOrElse: (OptionT1[M, Any], Lazy[
+      getOrElse: (OptionT1[M, Any], LazyArg[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, A> */ Any
         ]) => Any,
       map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, Kind<G, A>> */ Any, js.Function1[Any, Any]) => Any,
@@ -1660,12 +1660,12 @@ object libOptionTMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: OptionM1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & OptionM1[M]) extends AnyVal {
       
-      inline def setAlt(value: (OptionT1[M, Any], Lazy[OptionT1[M, Any]]) => OptionT1[M, Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
+      inline def setAlt(value: (OptionT1[M, Any], LazyArg[OptionT1[M, Any]]) => OptionT1[M, Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
       
       inline def setChain(value: (OptionT1[M, Any], js.Function1[Any, OptionT1[M, Any]]) => OptionT1[M, Any]): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
       
       inline def setFold(
-        value: (OptionT1[M, Any], Lazy[
+        value: (OptionT1[M, Any], LazyArg[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, R> */ Any
             ], js.Function1[
               Any, 
@@ -1678,7 +1678,7 @@ object libOptionTMod {
       ): Self = StObject.set(x, "fromM", js.Any.fromFunction1(value))
       
       inline def setGetOrElse(
-        value: (OptionT1[M, Any], Lazy[
+        value: (OptionT1[M, Any], LazyArg[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, A> */ Any
             ]) => Any
       ): Self = StObject.set(x, "getOrElse", js.Any.fromFunction2(value))
@@ -1691,13 +1691,13 @@ object libOptionTMod {
     extends StObject
        with ApplicativeComposition21[M, URI] {
     
-    def alt[E, A](fa: OptionT2[M, E, A], that: Lazy[OptionT2[M, E, A]]): OptionT2[M, E, A]
+    def alt[E, A](fa: OptionT2[M, E, A], that: LazyArg[OptionT2[M, E, A]]): OptionT2[M, E, A]
     
     def chain[E, A, B](ma: OptionT2[M, E, A], f: js.Function1[/* a */ A, OptionT2[M, E, B]]): OptionT2[M, E, B]
     
     def fold[E, A, R](
       ma: OptionT2[M, E, A],
-      onNone: Lazy[
+      onNone: LazyArg[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, R> */ Any
         ],
       onSome: js.Function1[
@@ -1712,7 +1712,7 @@ object libOptionTMod {
     
     def getOrElse[E, A](
       ma: OptionT2[M, E, A],
-      onNone: Lazy[
+      onNone: LazyArg[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ Any
         ]
     ): Any
@@ -1722,17 +1722,17 @@ object libOptionTMod {
   object OptionM2 {
     
     inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](
-      alt: (OptionT2[M, Any, Any], Lazy[OptionT2[M, Any, Any]]) => OptionT2[M, Any, Any],
+      alt: (OptionT2[M, Any, Any], LazyArg[OptionT2[M, Any, Any]]) => OptionT2[M, Any, Any],
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, Kind<G, (a : A): B>> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, Kind<G, A>> */ Any) => Any,
       chain: (OptionT2[M, Any, Any], js.Function1[Any, OptionT2[M, Any, Any]]) => OptionT2[M, Any, Any],
-      fold: (OptionT2[M, Any, Any], Lazy[
+      fold: (OptionT2[M, Any, Any], LazyArg[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, R> */ Any
         ], js.Function1[
           Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, R> */ Any
         ]) => Any,
       fromM: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ Any => OptionT2[M, Any, Any],
-      getOrElse: (OptionT2[M, Any, Any], Lazy[
+      getOrElse: (OptionT2[M, Any, Any], LazyArg[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ Any
         ]) => Any,
       map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, Kind<G, A>> */ Any, js.Function1[Any, Any]) => Any,
@@ -1746,12 +1746,12 @@ object libOptionTMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: OptionM2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & OptionM2[M]) extends AnyVal {
       
-      inline def setAlt(value: (OptionT2[M, Any, Any], Lazy[OptionT2[M, Any, Any]]) => OptionT2[M, Any, Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
+      inline def setAlt(value: (OptionT2[M, Any, Any], LazyArg[OptionT2[M, Any, Any]]) => OptionT2[M, Any, Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
       
       inline def setChain(value: (OptionT2[M, Any, Any], js.Function1[Any, OptionT2[M, Any, Any]]) => OptionT2[M, Any, Any]): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
       
       inline def setFold(
-        value: (OptionT2[M, Any, Any], Lazy[
+        value: (OptionT2[M, Any, Any], LazyArg[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, R> */ Any
             ], js.Function1[
               Any, 
@@ -1764,7 +1764,7 @@ object libOptionTMod {
       ): Self = StObject.set(x, "fromM", js.Any.fromFunction1(value))
       
       inline def setGetOrElse(
-        value: (OptionT2[M, Any, Any], Lazy[
+        value: (OptionT2[M, Any, Any], LazyArg[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ Any
             ]) => Any
       ): Self = StObject.set(x, "getOrElse", js.Any.fromFunction2(value))
@@ -1777,13 +1777,13 @@ object libOptionTMod {
     extends StObject
        with ApplicativeComposition2C1[M, URI, E] {
     
-    def alt[A](fa: OptionT2[M, E, A], that: Lazy[OptionT2[M, E, A]]): OptionT2[M, E, A]
+    def alt[A](fa: OptionT2[M, E, A], that: LazyArg[OptionT2[M, E, A]]): OptionT2[M, E, A]
     
     def chain[A, B](ma: OptionT2[M, E, A], f: js.Function1[/* a */ A, OptionT2[M, E, B]]): OptionT2[M, E, B]
     
     def fold[A, R](
       ma: OptionT2[M, E, A],
-      onNone: Lazy[
+      onNone: LazyArg[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, R> */ Any
         ],
       onSome: js.Function1[
@@ -1798,7 +1798,7 @@ object libOptionTMod {
     
     def getOrElse[A](
       ma: OptionT2[M, E, A],
-      onNone: Lazy[
+      onNone: LazyArg[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ Any
         ]
     ): Any
@@ -1808,17 +1808,17 @@ object libOptionTMod {
   object OptionM2C {
     
     inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](
-      alt: (OptionT2[M, E, Any], Lazy[OptionT2[M, E, Any]]) => OptionT2[M, E, Any],
+      alt: (OptionT2[M, E, Any], LazyArg[OptionT2[M, E, Any]]) => OptionT2[M, E, Any],
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, Kind<G, (a : A): B>> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, Kind<G, A>> */ Any) => Any,
       chain: (OptionT2[M, E, Any], js.Function1[Any, OptionT2[M, E, Any]]) => OptionT2[M, E, Any],
-      fold: (OptionT2[M, E, Any], Lazy[
+      fold: (OptionT2[M, E, Any], LazyArg[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, R> */ Any
         ], js.Function1[
           Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, R> */ Any
         ]) => Any,
       fromM: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ Any => OptionT2[M, E, Any],
-      getOrElse: (OptionT2[M, E, Any], Lazy[
+      getOrElse: (OptionT2[M, E, Any], LazyArg[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ Any
         ]) => Any,
       map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, Kind<G, A>> */ Any, js.Function1[Any, Any]) => Any,
@@ -1832,12 +1832,12 @@ object libOptionTMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: OptionM2C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (OptionM2C[M, E])) extends AnyVal {
       
-      inline def setAlt(value: (OptionT2[M, E, Any], Lazy[OptionT2[M, E, Any]]) => OptionT2[M, E, Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
+      inline def setAlt(value: (OptionT2[M, E, Any], LazyArg[OptionT2[M, E, Any]]) => OptionT2[M, E, Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
       
       inline def setChain(value: (OptionT2[M, E, Any], js.Function1[Any, OptionT2[M, E, Any]]) => OptionT2[M, E, Any]): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
       
       inline def setFold(
-        value: (OptionT2[M, E, Any], Lazy[
+        value: (OptionT2[M, E, Any], LazyArg[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, R> */ Any
             ], js.Function1[
               Any, 
@@ -1850,7 +1850,7 @@ object libOptionTMod {
       ): Self = StObject.set(x, "fromM", js.Any.fromFunction1(value))
       
       inline def setGetOrElse(
-        value: (OptionT2[M, E, Any], Lazy[
+        value: (OptionT2[M, E, Any], LazyArg[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ Any
             ]) => Any
       ): Self = StObject.set(x, "getOrElse", js.Any.fromFunction2(value))

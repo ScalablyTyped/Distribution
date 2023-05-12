@@ -8,8 +8,10 @@ import typings.firebaseAnalytics.firebaseAnalyticsStrings.`fetch-throttle`
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.`indexeddb-unavailable`
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.`interop-component-reg-failed`
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.`invalid-analytics-context`
+import typings.firebaseAnalytics.firebaseAnalyticsStrings.`invalid-gtag-resource`
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.`no-api-key`
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.`no-app-id`
+import typings.firebaseAnalytics.firebaseAnalyticsStrings.`no-client-id`
 import typings.firebaseUtil.mod.ErrorFactory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -32,6 +34,8 @@ object distEsmSrcErrorsMod {
     - typings.firebaseAnalytics.firebaseAnalyticsStrings.`config-fetch-failed`
     - typings.firebaseAnalytics.firebaseAnalyticsStrings.`no-api-key`
     - typings.firebaseAnalytics.firebaseAnalyticsStrings.`no-app-id`
+    - typings.firebaseAnalytics.firebaseAnalyticsStrings.`no-client-id`
+    - typings.firebaseAnalytics.firebaseAnalyticsStrings.`invalid-gtag-resource`
   */
   trait AnalyticsError extends StObject
   object AnalyticsError {
@@ -52,9 +56,13 @@ object distEsmSrcErrorsMod {
     
     inline def INVALID_ANALYTICS_CONTEXT: `invalid-analytics-context` = "invalid-analytics-context".asInstanceOf[`invalid-analytics-context`]
     
+    inline def INVALID_GTAG_RESOURCE: `invalid-gtag-resource` = "invalid-gtag-resource".asInstanceOf[`invalid-gtag-resource`]
+    
     inline def NO_API_KEY: `no-api-key` = "no-api-key".asInstanceOf[`no-api-key`]
     
     inline def NO_APP_ID: `no-app-id` = "no-app-id".asInstanceOf[`no-app-id`]
+    
+    inline def NO_CLIENT_ID: `no-client-id` = "no-client-id".asInstanceOf[`no-client-id`]
   }
   
   @js.native

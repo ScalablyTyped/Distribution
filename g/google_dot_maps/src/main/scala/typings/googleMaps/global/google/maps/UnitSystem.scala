@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The valid unit systems that can be specified in a <i><code><a
-  * href="#DirectionsRequest">DirectionsRequest</a></code></i>.
-  */
 @JSGlobal("google.maps.UnitSystem")
 @js.native
 object UnitSystem extends StObject {

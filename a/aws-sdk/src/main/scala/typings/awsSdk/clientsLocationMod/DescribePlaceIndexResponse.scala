@@ -12,7 +12,7 @@ trait DescribePlaceIndexResponse extends StObject {
   var CreateTime: js.Date
   
   /**
-    * The data provider of geospatial data. Values can be one of the following:    Esri     Here    For more information about data providers, see Amazon Location Service data providers.
+    * The data provider of geospatial data. Values can be one of the following:    Esri     Grab     Here    For more information about data providers, see Amazon Location Service data providers.
     */
   var DataSource: String
   
@@ -27,7 +27,7 @@ trait DescribePlaceIndexResponse extends StObject {
   var Description: ResourceDescription
   
   /**
-    * The Amazon Resource Name (ARN) for the place index resource. Used to specify a resource across AWS.    Format example: arn:aws:geo:region:account-id:place-index/ExamplePlaceIndex   
+    * The Amazon Resource Name (ARN) for the place index resource. Used to specify a resource across Amazon Web Services.    Format example: arn:aws:geo:region:account-id:place-index/ExamplePlaceIndex   
     */
   var IndexArn: Arn
   

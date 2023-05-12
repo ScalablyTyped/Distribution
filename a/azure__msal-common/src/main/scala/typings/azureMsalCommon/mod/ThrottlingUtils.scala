@@ -69,11 +69,11 @@ object ThrottlingUtils {
     cacheManager: typings.azureMsalCommon.distCacheCacheManagerMod.CacheManager,
     clientId: String,
     request: BaseAuthRequest
-  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("removeThrottle")(cacheManager.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeThrottle")(cacheManager.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def removeThrottle(
     cacheManager: typings.azureMsalCommon.distCacheCacheManagerMod.CacheManager,
     clientId: String,
     request: BaseAuthRequest,
     homeAccountIdentifier: String
-  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("removeThrottle")(cacheManager.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], request.asInstanceOf[js.Any], homeAccountIdentifier.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeThrottle")(cacheManager.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], request.asInstanceOf[js.Any], homeAccountIdentifier.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

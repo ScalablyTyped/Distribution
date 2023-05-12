@@ -1,7 +1,7 @@
 
 # Scala.js typings for process-warning
 
-Typings are for version 2.0.0
+Typings are for version 2.2.0
 
 ## Library description:
 A small utility for creating warnings and emitting them.

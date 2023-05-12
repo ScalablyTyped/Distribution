@@ -16,7 +16,7 @@ object libIconsHddOutlinedMod extends Shortcut {
   @js.native
   trait HddOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_HddOutlinedIconType: String = js.native

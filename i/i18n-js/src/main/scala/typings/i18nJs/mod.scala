@@ -33,7 +33,7 @@ object mod {
   def fallbacks: Boolean | String | (StringDictionary[String | js.Array[String]]) = js.native
   inline def fallbacks_=(x: Boolean | String | (StringDictionary[String | js.Array[String]])): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fallbacks")(x.asInstanceOf[js.Any])
   
-  // tslint:disable-next-line prefer-declare-function
+  // eslint-disable-next-line prefer-declare-function
   @JSImport("i18n-js", "getFullScope")
   @js.native
   def getFullScope: js.Function2[
@@ -86,7 +86,7 @@ object mod {
   def missingBehaviour: message | guess = js.native
   inline def missingBehaviour_=(x: message | guess): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("missingBehaviour")(x.asInstanceOf[js.Any])
   
-  // tslint:disable-next-line prefer-declare-function
+  // eslint-disable-next-line prefer-declare-function
   @JSImport("i18n-js", "missingPlaceholder")
   @js.native
   def missingPlaceholder: js.Function3[
@@ -104,7 +104,7 @@ object mod {
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("missingPlaceholder")(x.asInstanceOf[js.Any])
   
-  // tslint:disable-next-line prefer-declare-function
+  // eslint-disable-next-line prefer-declare-function
   @JSImport("i18n-js", "missingTranslation")
   @js.native
   def missingTranslation: js.Function2[
@@ -126,7 +126,7 @@ object mod {
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("missingTranslation")(x.asInstanceOf[js.Any])
   
-  // tslint:disable-next-line prefer-declare-function
+  // eslint-disable-next-line prefer-declare-function
   @JSImport("i18n-js", "nullPlaceholder")
   @js.native
   def nullPlaceholder: js.Function3[

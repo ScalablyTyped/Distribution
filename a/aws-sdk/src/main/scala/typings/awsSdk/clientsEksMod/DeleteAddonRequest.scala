@@ -17,7 +17,7 @@ trait DeleteAddonRequest extends StObject {
   var clusterName: ClusterName
   
   /**
-    * Specifying this option preserves the add-on software on your cluster but Amazon EKS stops managing any settings for the add-on. If an IAM account is associated with the add-on, it is not removed.
+    * Specifying this option preserves the add-on software on your cluster but Amazon EKS stops managing any settings for the add-on. If an IAM account is associated with the add-on, it isn't removed.
     */
   var preserve: js.UndefOr[Boolean] = js.undefined
 }

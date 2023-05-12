@@ -13,19 +13,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PerpageSortState extends StObject {
   
-  /** The direction of the sort. Either `asc` or `desc`. */
+  /** @description The direction of the sort. Either `asc` or `desc`. */
   var direction: js.UndefOr[asc | desc] = js.undefined
   
-  /** Page number of the results to fetch. */
   var page: js.UndefOr[Double] = js.undefined
   
-  /** The number of results per page (max 100). */
   var per_page: js.UndefOr[Double] = js.undefined
   
-  /** What to sort results by. Either `due_on` or `completeness`. */
+  /** @description What to sort results by. Either `due_on` or `completeness`. */
   var sort: js.UndefOr[due_on | completeness] = js.undefined
   
-  /** The state of the milestone. Either `open`, `closed`, or `all`. */
+  /** @description The state of the milestone. Either `open`, `closed`, or `all`. */
   var state: js.UndefOr[open | closed | all] = js.undefined
 }
 object PerpageSortState {

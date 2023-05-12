@@ -53,6 +53,13 @@ trait AutoExpandSelect extends StObject {
   var httpHeaders: js.UndefOr[js.Object] = js.undefined
   
   /**
+    * Whether to ignore all annotations from service metadata and "cross-service references"; only the value
+    * `true` is allowed. Only annotations from annotation files (see parameter "annotationURI") are loaded.
+    * This parameter is not inherited by value list models. @experimental as of version 1.111.0
+    */
+  var ignoreAnnotationsFromMetadata: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Additional map of URL parameters used specifically for $metadata requests. Note that "sap-context-token"
     * applies only to the service's root $metadata, but not to "cross-service references". Supported since
     * 1.81.0
@@ -99,11 +106,12 @@ trait AutoExpandSelect extends StObject {
   var supportReferences: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Controls synchronization between different bindings which refer to the same data for the case data changes
+    * (Controls synchronization between different bindings which refer to the same data for the case data changes
     * in one binding. Must be set to 'None' which means bindings are not synchronized at all; all other values
-    * are not supported and lead to an error.
+    * are not supported and lead to an error.) **deprecated:** As of version 1.110.0, this parameter is optional;
+    * see also {@link topic:648e360fa22d46248ca783dc6eb44531 Data Reuse}
     */
-  var synchronizationMode: String
+  var synchronizationMode: js.UndefOr[String] = js.undefined
   
   /**
     * The group ID that is used for update requests. If no update group ID is specified, `mParameters.groupId`
@@ -113,8 +121,8 @@ trait AutoExpandSelect extends StObject {
 }
 object AutoExpandSelect {
   
-  inline def apply(serviceUrl: String, synchronizationMode: String): AutoExpandSelect = {
-    val __obj = js.Dynamic.literal(serviceUrl = serviceUrl.asInstanceOf[js.Any], synchronizationMode = synchronizationMode.asInstanceOf[js.Any])
+  inline def apply(serviceUrl: String): AutoExpandSelect = {
+    val __obj = js.Dynamic.literal(serviceUrl = serviceUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoExpandSelect]
   }
   
@@ -147,6 +155,10 @@ object AutoExpandSelect {
     
     inline def setHttpHeadersUndefined: Self = StObject.set(x, "httpHeaders", js.undefined)
     
+    inline def setIgnoreAnnotationsFromMetadata(value: Boolean): Self = StObject.set(x, "ignoreAnnotationsFromMetadata", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreAnnotationsFromMetadataUndefined: Self = StObject.set(x, "ignoreAnnotationsFromMetadata", js.undefined)
+    
     inline def setMetadataUrlParams(value: js.Object): Self = StObject.set(x, "metadataUrlParams", value.asInstanceOf[js.Any])
     
     inline def setMetadataUrlParamsUndefined: Self = StObject.set(x, "metadataUrlParams", js.undefined)
@@ -172,6 +184,8 @@ object AutoExpandSelect {
     inline def setSupportReferencesUndefined: Self = StObject.set(x, "supportReferences", js.undefined)
     
     inline def setSynchronizationMode(value: String): Self = StObject.set(x, "synchronizationMode", value.asInstanceOf[js.Any])
+    
+    inline def setSynchronizationModeUndefined: Self = StObject.set(x, "synchronizationMode", js.undefined)
     
     inline def setUpdateGroupId(value: String): Self = StObject.set(x, "updateGroupId", value.asInstanceOf[js.Any])
     

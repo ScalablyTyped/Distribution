@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@wordpress/keycodes" : "3.33.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@wordpress/keycodes" : "3.33.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

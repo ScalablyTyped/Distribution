@@ -27,6 +27,11 @@ trait CreateSceneRequest extends StObject {
   var sceneId: Id
   
   /**
+    * The request metadata.
+    */
+  var sceneMetadata: js.UndefOr[SceneMetadataMap] = js.undefined
+  
+  /**
     * Metadata that you can use to manage the scene.
     */
   var tags: js.UndefOr[TagMap] = js.undefined
@@ -59,6 +64,10 @@ object CreateSceneRequest {
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setSceneId(value: Id): Self = StObject.set(x, "sceneId", value.asInstanceOf[js.Any])
+    
+    inline def setSceneMetadata(value: SceneMetadataMap): Self = StObject.set(x, "sceneMetadata", value.asInstanceOf[js.Any])
+    
+    inline def setSceneMetadataUndefined: Self = StObject.set(x, "sceneMetadata", js.undefined)
     
     inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

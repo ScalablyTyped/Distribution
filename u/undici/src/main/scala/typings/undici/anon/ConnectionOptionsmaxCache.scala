@@ -11,12 +11,12 @@ import typings.node.tlsMod.PeerCertificate
 import typings.node.tlsMod.PxfObject
 import typings.node.tlsMod.SecureContext
 import typings.node.tlsMod.SecureVersion
-import typings.undici.typesConnectorMod.BuildOptions
+import typings.undici.typesConnectorMod.buildConnector.BuildOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined node.tls.ConnectionOptions & {  maxCachedSessions :number | null | undefined,   socketPath :string | null | undefined,   timeout :number | null | undefined,   port :number | undefined} */
+/* Inlined node.tls.ConnectionOptions & {  maxCachedSessions :number | null | undefined,   socketPath :string | null | undefined,   timeout :number | null | undefined,   port :number | undefined,   keepAlive :boolean | null | undefined,   keepAliveInitialDelay :number | null | undefined} */
 trait ConnectionOptionsmaxCache
   extends StObject
      with BuildOptions {
@@ -88,12 +88,9 @@ trait ConnectionOptionsmaxCache
   var crl: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
   
   /**
-    * Diffie Hellman parameters, required for Perfect Forward Secrecy. Use
-    * openssl dhparam to create the parameters. The key length must be
-    * greater than or equal to 1024 bits or else an error will be thrown.
-    * Although 1024 bits is permissible, use 2048 bits or larger for
-    * stronger security. If omitted or invalid, the parameters are
-    * silently discarded and DHE ciphers will not be available.
+    * `'auto'` or custom Diffie-Hellman parameters, required for non-ECDHE perfect forward secrecy.
+    * If omitted or invalid, the parameters are silently discarded and DHE ciphers will not be available.
+    * ECDHE-based perfect forward secrecy will still be available.
     */
   var dhparam: js.UndefOr[String | Buffer] = js.undefined
   
@@ -123,6 +120,10 @@ trait ConnectionOptionsmaxCache
   var honorCipherOrder: js.UndefOr[Boolean] = js.undefined
   
   var host: js.UndefOr[String] = js.undefined
+  
+  var keepAlive: js.UndefOr[Boolean | Null] = js.undefined
+  
+  var keepAliveInitialDelay: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * Private keys in PEM format. PEM allows the option of private keys
@@ -362,6 +363,18 @@ object ConnectionOptionsmaxCache {
     inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    
+    inline def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
+    
+    inline def setKeepAliveInitialDelay(value: Double): Self = StObject.set(x, "keepAliveInitialDelay", value.asInstanceOf[js.Any])
+    
+    inline def setKeepAliveInitialDelayNull: Self = StObject.set(x, "keepAliveInitialDelay", null)
+    
+    inline def setKeepAliveInitialDelayUndefined: Self = StObject.set(x, "keepAliveInitialDelay", js.undefined)
+    
+    inline def setKeepAliveNull: Self = StObject.set(x, "keepAlive", null)
+    
+    inline def setKeepAliveUndefined: Self = StObject.set(x, "keepAlive", js.undefined)
     
     inline def setKey(value: String | Buffer | (js.Array[String | Buffer | KeyObject])): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

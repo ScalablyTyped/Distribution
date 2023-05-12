@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListResourceSetResourcesRequest extends StObject {
   
   /**
-    * A unique identifier for the resource set, used in a TODO to refer to the resource set.
+    * A unique identifier for the resource set, used in a request to refer to the resource set.
     */
   var Identifier: ResourceId
   

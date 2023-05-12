@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SelectedCompletionInfo extends StObject {
   
   /**
-    * The range that will be replaced if this completion item is accepted.
-    */
+  		 * The range that will be replaced if this completion item is accepted.
+  		 */
   val range: Range
   
   /**
-    * The text the range will be replaced with if this completion is accepted.
-    */
+  		 * The text the range will be replaced with if this completion is accepted.
+  		 */
   val text: String
 }
 object SelectedCompletionInfo {

@@ -23,7 +23,6 @@ object Binding {
   //#region Constructors
   /**
     * Creates a List object.
-    * @constructor
     * @param list The array containing the elements to initalize the list.
     * @param options You can set two Boolean options: binding and proxy. If options.binding is true, the list contains the result of calling as on the element values. If options.proxy is true, the list specified as the first parameter is used as the storage for the List. This option should be used with care, because uncoordinated edits to the data storage may result in errors.
     **/
@@ -61,7 +60,6 @@ object Binding {
     //#region Constructors
     /**
       * Creates a template that provides a reusable declarative binding element.
-      * @constructor
       * @param element The DOM element to convert to a template.
       * @param options If this parameter is supplied, the template is loaded from the URI and the content of the element parameter is ignored. You can add the following options: href.
       **/

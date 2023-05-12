@@ -42,6 +42,9 @@ object examplesJsmLoadersBasisTextureLoaderMod {
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): Unit = js.native
     
+    def loadAsync(url: String): js.Promise[CompressedTexture] = js.native
+    def loadAsync(url: String, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[CompressedTexture] = js.native
+    
     def setTranscoderPath(path: String): this.type = js.native
     
     def setWorkerLimit(workerLimit: Double): this.type = js.native

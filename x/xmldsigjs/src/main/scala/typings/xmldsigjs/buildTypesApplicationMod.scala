@@ -37,7 +37,12 @@ object buildTypesApplicationMod {
   }
   object CryptoEx {
     
-    inline def apply(getRandomValues: Any => Any, name: String, randomUUID: () => String, subtle: SubtleCrypto): CryptoEx = {
+    inline def apply(
+      getRandomValues: Any => Any,
+      name: String,
+      randomUUID: () => /* template literal string: ${string}-${string}-${string}-${string}-${string} */ String,
+      subtle: SubtleCrypto
+    ): CryptoEx = {
       val __obj = js.Dynamic.literal(getRandomValues = js.Any.fromFunction1(getRandomValues), name = name.asInstanceOf[js.Any], randomUUID = js.Any.fromFunction0(randomUUID), subtle = subtle.asInstanceOf[js.Any])
       __obj.asInstanceOf[CryptoEx]
     }

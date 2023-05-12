@@ -12,7 +12,7 @@ trait CreateTrackerRequest extends StObject {
   var Description: js.UndefOr[ResourceDescription] = js.undefined
   
   /**
-    * A key identifier for an AWS KMS customer managed key. Enter a key ID, key ARN, alias name, or alias ARN.
+    * A key identifier for an Amazon Web Services KMS customer managed key. Enter a key ID, key ARN, alias name, or alias ARN.
     */
   var KmsKeyId: js.UndefOr[typings.awsSdk.clientsLocationMod.KmsKeyId] = js.undefined
   

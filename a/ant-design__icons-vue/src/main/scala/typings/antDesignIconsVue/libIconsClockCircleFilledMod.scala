@@ -16,7 +16,7 @@ object libIconsClockCircleFilledMod extends Shortcut {
   @js.native
   trait ClockCircleFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_ClockCircleFilledIconType: String = js.native

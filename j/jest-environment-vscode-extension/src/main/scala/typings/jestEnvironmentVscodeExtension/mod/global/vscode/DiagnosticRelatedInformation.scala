@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class DiagnosticRelatedInformation protected ()
   extends typings.vscode.mod.DiagnosticRelatedInformation {
   /**
-    * Creates a new related diagnostic information object.
-    *
-    * @param location The location.
-    * @param message The message.
-    */
+  		 * Creates a new related diagnostic information object.
+  		 *
+  		 * @param location The location.
+  		 * @param message The message.
+  		 */
   def this(location: typings.vscode.mod.Location, message: String) = this()
 }

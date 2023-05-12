@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MsContentZoomSnap
+import typings.csstype.mod.Property.GridTemplateRows
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `279` extends StObject {
   
   var value: js.UndefOr[
-    MsContentZoomSnap | (js.Array[
+    (GridTemplateRows[Double | String]) | (js.Array[
       (Extract[
-        js.UndefOr[MsContentZoomSnap | js.Array[NonNullable[js.UndefOr[MsContentZoomSnap]]]], 
+        js.UndefOr[
+          (GridTemplateRows[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridTemplateRows[Double | String]]]])
+        ], 
         String
-      ]) | NonNullable[js.UndefOr[MsContentZoomSnap]]
+      ]) | (NonNullable[js.UndefOr[GridTemplateRows[Double | String]]])
     ])
   ] = js.native
 }

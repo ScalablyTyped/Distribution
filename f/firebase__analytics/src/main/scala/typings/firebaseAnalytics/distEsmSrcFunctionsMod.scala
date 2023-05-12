@@ -25,6 +25,8 @@ object distEsmSrcFunctionsMod {
   def defaultEventParametersForInit: js.UndefOr[CustomParams] = js.native
   inline def defaultEventParametersForInit_=(x: js.UndefOr[CustomParams]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultEventParametersForInit")(x.asInstanceOf[js.Any])
   
+  inline def internalGetGoogleAnalyticsClientId(gtagFunction: Gtag, initializationPromise: js.Promise[String]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("internalGetGoogleAnalyticsClientId")(gtagFunction.asInstanceOf[js.Any], initializationPromise.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  
   inline def logEvent(gtagFunction: Gtag, initializationPromise: js.Promise[String], eventName: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(gtagFunction.asInstanceOf[js.Any], initializationPromise.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def logEvent(
     gtagFunction: Gtag,

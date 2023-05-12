@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@rc-component/mini-decimal" : "1.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@rc-component/mini-decimal" : "1.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

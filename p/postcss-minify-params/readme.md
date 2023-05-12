@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-minify-params
 
-Typings are for version 5.1.4
+Typings are for version 6.0.0
 
 ## Library description:
 Minify at-rule params with PostCSS

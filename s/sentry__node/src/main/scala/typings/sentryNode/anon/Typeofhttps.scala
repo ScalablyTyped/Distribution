@@ -42,12 +42,12 @@ trait Typeofhttps extends StObject {
   /**
     * ```js
     * // curl -k https://localhost:8000/
-    * const https = require('https');
-    * const fs = require('fs');
+    * const https = require('node:https');
+    * const fs = require('node:fs');
     *
     * const options = {
     *   key: fs.readFileSync('test/fixtures/keys/agent2-key.pem'),
-    *   cert: fs.readFileSync('test/fixtures/keys/agent2-cert.pem')
+    *   cert: fs.readFileSync('test/fixtures/keys/agent2-cert.pem'),
     * };
     *
     * https.createServer(options, (req, res) => {
@@ -59,12 +59,12 @@ trait Typeofhttps extends StObject {
     * Or
     *
     * ```js
-    * const https = require('https');
-    * const fs = require('fs');
+    * const https = require('node:https');
+    * const fs = require('node:fs');
     *
     * const options = {
     *   pfx: fs.readFileSync('test/fixtures/test_cert.pfx'),
-    *   passphrase: 'sample'
+    *   passphrase: 'sample',
     * };
     *
     * https.createServer(options, (req, res) => {
@@ -102,7 +102,7 @@ trait Typeofhttps extends StObject {
     * string, it is automatically parsed with `new URL()`. If it is a `URL` object, it will be automatically converted to an ordinary `options` object.
     *
     * ```js
-    * const https = require('https');
+    * const https = require('node:https');
     *
     * https.get('https://encrypted.google.com/', (res) => {
     *   console.log('statusCode:', res.statusCode);
@@ -145,13 +145,13 @@ trait Typeofhttps extends StObject {
     * upload a file with a POST request, then write to the `ClientRequest` object.
     *
     * ```js
-    * const https = require('https');
+    * const https = require('node:https');
     *
     * const options = {
     *   hostname: 'encrypted.google.com',
     *   port: 443,
     *   path: '/',
-    *   method: 'GET'
+    *   method: 'GET',
     * };
     *
     * const req = https.request(options, (res) => {
@@ -178,7 +178,7 @@ trait Typeofhttps extends StObject {
     *   path: '/',
     *   method: 'GET',
     *   key: fs.readFileSync('test/fixtures/keys/agent2-key.pem'),
-    *   cert: fs.readFileSync('test/fixtures/keys/agent2-cert.pem')
+    *   cert: fs.readFileSync('test/fixtures/keys/agent2-cert.pem'),
     * };
     * options.agent = new https.Agent(options);
     *
@@ -197,7 +197,7 @@ trait Typeofhttps extends StObject {
     *   method: 'GET',
     *   key: fs.readFileSync('test/fixtures/keys/agent2-key.pem'),
     *   cert: fs.readFileSync('test/fixtures/keys/agent2-cert.pem'),
-    *   agent: false
+    *   agent: false,
     * };
     *
     * const req = https.request(options, (res) => {
@@ -218,9 +218,9 @@ trait Typeofhttps extends StObject {
     * Example pinning on certificate fingerprint, or the public key (similar to`pin-sha256`):
     *
     * ```js
-    * const tls = require('tls');
-    * const https = require('https');
-    * const crypto = require('crypto');
+    * const tls = require('node:tls');
+    * const https = require('node:https');
+    * const crypto = require('node:crypto');
     *
     * function sha256(s) {
     *   return crypto.createHash('sha256').update(s).digest('base64');
@@ -237,7 +237,7 @@ trait Typeofhttps extends StObject {
     *       return err;
     *     }
     *
-    *     // Pin the public key, similar to HPKP pin-sha25 pinning
+    *     // Pin the public key, similar to HPKP pin-sha256 pinning
     *     const pubkey256 = 'pL1+qb9HTMRZJmuC/bB/ZI9d302BYrrqiVuRyW+DGrU=';
     *     if (sha256(cert.pubkey) !== pubkey256) {
     *       const msg = 'Certificate verification error: ' +

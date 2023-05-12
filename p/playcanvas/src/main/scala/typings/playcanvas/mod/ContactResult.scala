@@ -13,7 +13,8 @@ open class ContactResult protected () extends StObject {
   /**
     * Create a new ContactResult instance.
     *
-    * @param {Entity} other - The entity that was involved in the contact with this entity.
+    * @param {import('../../entity.js').Entity} other - The entity that was involved in the
+    * contact with this entity.
     * @param {ContactPoint[]} contacts - An array of ContactPoints with the other entity.
     * @hideconstructor
     */
@@ -29,7 +30,7 @@ open class ContactResult protected () extends StObject {
   /**
     * The entity that was involved in the contact with this entity.
     *
-    * @type {Entity}
+    * @type {import('../../entity.js').Entity}
     */
   var other: Entity = js.native
 }

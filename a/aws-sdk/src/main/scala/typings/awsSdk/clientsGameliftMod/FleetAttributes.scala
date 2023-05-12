@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FleetAttributes extends StObject {
   
+  var AnywhereConfiguration: js.UndefOr[typings.awsSdk.clientsGameliftMod.AnywhereConfiguration] = js.undefined
+  
   /**
-    *  The Amazon Resource Name (ARN) associated with the GameLift build resource that is deployed on instances in this fleet. In a GameLift build ARN, the resource ID matches the BuildId value.
+    *  The Amazon Resource Name (ARN) associated with the Amazon GameLift build resource that is deployed on instances in this fleet. In a GameLift build ARN, the resource ID matches the BuildId value.
     */
   var BuildArn: js.UndefOr[typings.awsSdk.clientsGameliftMod.BuildArn] = js.undefined
   
@@ -16,10 +18,12 @@ trait FleetAttributes extends StObject {
     */
   var BuildId: js.UndefOr[typings.awsSdk.clientsGameliftMod.BuildId] = js.undefined
   
-  /**
-    * Indicates whether a TLS/SSL certificate was generated for the fleet. 
-    */
   var CertificateConfiguration: js.UndefOr[typings.awsSdk.clientsGameliftMod.CertificateConfiguration] = js.undefined
+  
+  /**
+    * The type of compute resource used to host your game servers. You can use your own compute resources with Amazon GameLift Anywhere or use Amazon EC2 instances with managed Amazon GameLift.
+    */
+  var ComputeType: js.UndefOr[typings.awsSdk.clientsGameliftMod.ComputeType] = js.undefined
   
   /**
     * A time stamp indicating when this data object was created. Format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
@@ -32,7 +36,7 @@ trait FleetAttributes extends StObject {
   var Description: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) that is assigned to a GameLift fleet resource and uniquely identifies it. ARNs are unique across all Regions. Format is arn:aws:gamelift:&lt;region&gt;::fleet/fleet-a1234567-b8c9-0d1e-2fa3-b45c6d7e8912. In a GameLift fleet ARN, the resource ID matches the FleetId value.
+    * The Amazon Resource Name (ARN) that is assigned to a Amazon GameLift fleet resource and uniquely identifies it. ARNs are unique across all Regions. Format is arn:aws:gamelift:&lt;region&gt;::fleet/fleet-a1234567-b8c9-0d1e-2fa3-b45c6d7e8912. In a GameLift fleet ARN, the resource ID matches the FleetId value.
     */
   var FleetArn: js.UndefOr[typings.awsSdk.clientsGameliftMod.FleetArn] = js.undefined
   
@@ -42,7 +46,7 @@ trait FleetAttributes extends StObject {
   var FleetId: js.UndefOr[typings.awsSdk.clientsGameliftMod.FleetId] = js.undefined
   
   /**
-    * The kind of instances, On-Demand or Spot, that this fleet uses.
+    * Indicates whether to use On-Demand or Spot instances for this fleet. By default, this property is set to ON_DEMAND. Learn more about when to use  On-Demand versus Spot Instances. This property cannot be changed after the fleet is created.
     */
   var FleetType: js.UndefOr[typings.awsSdk.clientsGameliftMod.FleetType] = js.undefined
   
@@ -57,7 +61,7 @@ trait FleetAttributes extends StObject {
   var InstanceType: js.UndefOr[EC2InstanceType] = js.undefined
   
   /**
-    *  This parameter is no longer used. Game session log paths are now defined using the GameLift server API ProcessReady() logParameters. See more information in the Server API Reference. 
+    *  This parameter is no longer used. Game session log paths are now defined using the Amazon GameLift server API ProcessReady() logParameters. See more information in the Server API Reference. 
     */
   var LogPaths: js.UndefOr[StringList] = js.undefined
   
@@ -81,9 +85,6 @@ trait FleetAttributes extends StObject {
     */
   var OperatingSystem: js.UndefOr[typings.awsSdk.clientsGameliftMod.OperatingSystem] = js.undefined
   
-  /**
-    * The fleet policy that limits the number of game sessions an individual player can create over a span of time.
-    */
   var ResourceCreationLimitPolicy: js.UndefOr[typings.awsSdk.clientsGameliftMod.ResourceCreationLimitPolicy] = js.undefined
   
   /**
@@ -97,22 +98,22 @@ trait FleetAttributes extends StObject {
   var ScriptId: js.UndefOr[typings.awsSdk.clientsGameliftMod.ScriptId] = js.undefined
   
   /**
-    *  This parameter is no longer used. Server launch parameters are now defined using the fleet's RuntimeConfiguration parameter. Requests that use this parameter instead continue to be valid.
+    *  This parameter is no longer used. Server launch parameters are now defined using the fleet's runtime configuration . Requests that use this parameter instead continue to be valid.
     */
   var ServerLaunchParameters: js.UndefOr[LaunchParametersStringModel] = js.undefined
   
   /**
-    *  This parameter is no longer used. Server launch paths are now defined using the fleet's RuntimeConfiguration parameter. Requests that use this parameter instead continue to be valid.
+    *  This parameter is no longer used. Server launch paths are now defined using the fleet's RuntimeConfiguration . Requests that use this parameter instead continue to be valid.
     */
   var ServerLaunchPath: js.UndefOr[LaunchPathStringModel] = js.undefined
   
   /**
-    * Current status of the fleet. Possible fleet statuses include the following:    NEW -- A new fleet has been defined and desired instances is set to 1.     DOWNLOADING/VALIDATING/BUILDING/ACTIVATING -- GameLift is setting up the new fleet, creating new instances with the game build or Realtime script and starting server processes.    ACTIVE -- Hosts can now accept game sessions.    ERROR -- An error occurred when downloading, validating, building, or activating the fleet.    DELETING -- Hosts are responding to a delete fleet request.    TERMINATED -- The fleet no longer exists.  
+    * Current status of the fleet. Possible fleet statuses include the following:    NEW -- A new fleet has been defined and desired instances is set to 1.     DOWNLOADING/VALIDATING/BUILDING/ACTIVATING -- Amazon GameLift is setting up the new fleet, creating new instances with the game build or Realtime script and starting server processes.    ACTIVE -- Hosts can now accept game sessions.    ERROR -- An error occurred when downloading, validating, building, or activating the fleet.    DELETING -- Hosts are responding to a delete fleet request.    TERMINATED -- The fleet no longer exists.  
     */
   var Status: js.UndefOr[FleetStatus] = js.undefined
   
   /**
-    * A list of fleet activity that has been suspended using StopFleetActions. This includes fleet auto-scaling.
+    * A list of fleet activity that has been suspended using StopFleetActions . This includes fleet auto-scaling.
     */
   var StoppedActions: js.UndefOr[FleetActionList] = js.undefined
   
@@ -131,6 +132,10 @@ object FleetAttributes {
   @scala.inline
   implicit open class MutableBuilder[Self <: FleetAttributes] (val x: Self) extends AnyVal {
     
+    inline def setAnywhereConfiguration(value: AnywhereConfiguration): Self = StObject.set(x, "AnywhereConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setAnywhereConfigurationUndefined: Self = StObject.set(x, "AnywhereConfiguration", js.undefined)
+    
     inline def setBuildArn(value: BuildArn): Self = StObject.set(x, "BuildArn", value.asInstanceOf[js.Any])
     
     inline def setBuildArnUndefined: Self = StObject.set(x, "BuildArn", js.undefined)
@@ -142,6 +147,10 @@ object FleetAttributes {
     inline def setCertificateConfiguration(value: CertificateConfiguration): Self = StObject.set(x, "CertificateConfiguration", value.asInstanceOf[js.Any])
     
     inline def setCertificateConfigurationUndefined: Self = StObject.set(x, "CertificateConfiguration", js.undefined)
+    
+    inline def setComputeType(value: ComputeType): Self = StObject.set(x, "ComputeType", value.asInstanceOf[js.Any])
+    
+    inline def setComputeTypeUndefined: Self = StObject.set(x, "ComputeType", js.undefined)
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     

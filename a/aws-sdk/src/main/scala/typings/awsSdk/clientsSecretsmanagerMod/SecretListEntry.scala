@@ -52,6 +52,11 @@ trait SecretListEntry extends StObject {
   var Name: js.UndefOr[SecretNameType] = js.undefined
   
   /**
+    * The next date and time that Secrets Manager will attempt to rotate the secret, rounded to the nearest hour. This value is null if the secret is not set up for rotation.
+    */
+  var NextRotationDate: js.UndefOr[js.Date] = js.undefined
+  
+  /**
     * Returns the name of the service that created the secret.
     */
   var OwningService: js.UndefOr[OwningServiceType] = js.undefined
@@ -131,6 +136,10 @@ object SecretListEntry {
     inline def setName(value: SecretNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    
+    inline def setNextRotationDate(value: js.Date): Self = StObject.set(x, "NextRotationDate", value.asInstanceOf[js.Any])
+    
+    inline def setNextRotationDateUndefined: Self = StObject.set(x, "NextRotationDate", js.undefined)
     
     inline def setOwningService(value: OwningServiceType): Self = StObject.set(x, "OwningService", value.asInstanceOf[js.Any])
     

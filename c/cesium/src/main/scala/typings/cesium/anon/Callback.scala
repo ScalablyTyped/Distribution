@@ -1,5 +1,6 @@
 package typings.cesium.anon
 
+import typings.cesium.mod.Credit
 import typings.cesium.mod.CustomHeightmapTerrainProvider.GeometryCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +16,7 @@ trait Callback extends StObject {
   @JSName("callback")
   var callback_Original: GeometryCallback
   
-  var credit: js.UndefOr[typings.cesium.mod.Credit | String] = js.undefined
+  var credit: js.UndefOr[Credit | String] = js.undefined
   
   var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
@@ -51,7 +52,7 @@ object Callback {
         ]
     ): Self = StObject.set(x, "callback", js.Any.fromFunction3(value))
     
-    inline def setCredit(value: typings.cesium.mod.Credit | String): Self = StObject.set(x, "credit", value.asInstanceOf[js.Any])
+    inline def setCredit(value: Credit | String): Self = StObject.set(x, "credit", value.asInstanceOf[js.Any])
     
     inline def setCreditUndefined: Self = StObject.set(x, "credit", js.undefined)
     

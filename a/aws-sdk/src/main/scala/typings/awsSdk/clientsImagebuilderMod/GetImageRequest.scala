@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetImageRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the image that you want to retrieve.
+    * The Amazon Resource Name (ARN) of the image that you want to get.
     */
   var imageBuildVersionArn: ImageVersionArnOrBuildVersionArn
 }

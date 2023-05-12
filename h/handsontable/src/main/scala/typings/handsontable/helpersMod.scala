@@ -195,9 +195,6 @@ object helpersMod {
   
   inline def cancelAnimationFrame(id: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelAnimationFrame")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def cellMethodLookupFactory(methodName: String): js.Function2[/* row */ Double, /* col */ Double, js.Function1[/* prop */ String, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("cellMethodLookupFactory")(methodName.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* row */ Double, /* col */ Double, js.Function1[/* prop */ String, Any]]]
-  inline def cellMethodLookupFactory(methodName: String, allowUndefined: Boolean): js.Function2[/* row */ Double, /* col */ Double, js.Function1[/* prop */ String, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("cellMethodLookupFactory")(methodName.asInstanceOf[js.Any], allowUndefined.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* row */ Double, /* col */ Double, js.Function1[/* prop */ String, Any]]]
-  
   inline def clone_(`object`: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
   inline def countFirstRowKeys(data: js.Array[CellValue]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("countFirstRowKeys")(data.asInstanceOf[js.Any]).asInstanceOf[Double]

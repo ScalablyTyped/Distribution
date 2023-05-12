@@ -4,35 +4,52 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Uh
-  extends StObject
-     with Oh {
+/**
+  * @license
+  * Copyright 2020 Google LLC
+  *
+  * Licensed under the Apache License, Version 2.0 (the "License");
+  * you may not use this file except in compliance with the License.
+  * You may obtain a copy of the License at
+  *
+  *   http://www.apache.org/licenses/LICENSE-2.0
+  *
+  * Unless required by applicable law or agreed to in writing, software
+  * distributed under the License is distributed on an "AS IS" BASIS,
+  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  * See the License for the specific language governing permissions and
+  * limitations under the License.
+  */
+/**
+  * A `FieldPath` refers to a field in a document. The path may consist of a
+  * single field name (referring to a top-level field in the document), or a
+  * list of field names (referring to a nested field in the document).
+  *
+  * Create a `FieldPath` by providing field names. If more than one field
+  * name is provided, the path will point to a nested field in a document.
+  */ trait Uh extends StObject {
   
-  var Ia: Any
+  var _internalPath: at
   
-  var Ta: Any
-  
-  def _apply(t: Any): Zc
-  
-  var `type`: Any
+  /**
+    * Returns true if this `FieldPath` is equal to the provided one.
+    *
+    * @param other - The `FieldPath` to compare against.
+    * @returns true if this `FieldPath` is equal to the provided one.
+    */ def isEqual(t: Any): Boolean
 }
 object Uh {
   
-  inline def apply(Ia: Any, Ta: Any, _apply: Any => Zc, `type`: Any): Uh = {
-    val __obj = js.Dynamic.literal(Ia = Ia.asInstanceOf[js.Any], Ta = Ta.asInstanceOf[js.Any], _apply = js.Any.fromFunction1(_apply))
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  inline def apply(_internalPath: at, isEqual: Any => Boolean): Uh = {
+    val __obj = js.Dynamic.literal(_internalPath = _internalPath.asInstanceOf[js.Any], isEqual = js.Any.fromFunction1(isEqual))
     __obj.asInstanceOf[Uh]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Uh] (val x: Self) extends AnyVal {
     
-    inline def setIa(value: Any): Self = StObject.set(x, "Ia", value.asInstanceOf[js.Any])
+    inline def setIsEqual(value: Any => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
     
-    inline def setTa(value: Any): Self = StObject.set(x, "Ta", value.asInstanceOf[js.Any])
-    
-    inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    
-    inline def set_apply(value: Any => Zc): Self = StObject.set(x, "_apply", js.Any.fromFunction1(value))
+    inline def set_internalPath(value: at): Self = StObject.set(x, "_internalPath", value.asInstanceOf[js.Any])
   }
 }

@@ -26,6 +26,8 @@ object materialsNodeBlocksFragmentPerturbNormalBlockMod {
     
     /* private */ var _tangentSpaceParameterName: Any = js.native
     
+    /* private */ var _worldMatrixName: Any = js.native
+    
     /** Gets or sets a boolean indicating that normal should be inverted on X axis */
     var invertX: Boolean = js.native
     
@@ -57,6 +59,9 @@ object materialsNodeBlocksFragmentPerturbNormalBlockMod {
       */
     def strength: NodeMaterialConnectionPoint = js.native
     
+    /** Gets or sets a boolean indicating that sampling mode is in Object space */
+    var useObjectSpaceNormalMap: Boolean = js.native
+    
     /** Gets or sets a boolean indicating that parallax occlusion should be enabled */
     var useParallaxOcclusion: Boolean = js.native
     
@@ -74,6 +79,11 @@ object materialsNodeBlocksFragmentPerturbNormalBlockMod {
       * Gets the view direction input component
       */
     def viewDirection: NodeMaterialConnectionPoint = js.native
+    
+    /**
+      * Gets the World input component
+      */
+    def world: NodeMaterialConnectionPoint = js.native
     
     /**
       * Gets the world normal input component

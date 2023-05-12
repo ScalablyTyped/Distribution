@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TextCallNode
   extends StObject
-     with Node2
+     with Node
      with TemplateChildNode {
   
   var codegenNode: CallExpression | SimpleExpressionNode

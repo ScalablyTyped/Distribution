@@ -104,6 +104,28 @@ object distTypesMod {
     }
   }
   
+  trait PlayerSize extends StObject {
+    
+    var height: Double
+    
+    var width: Double
+  }
+  object PlayerSize {
+    
+    inline def apply(height: Double, width: Double): PlayerSize = {
+      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PlayerSize]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlayerSize] (val x: Self) extends AnyVal {
+      
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    }
+  }
+  
   @js.native
   trait YouTubePlayer extends StObject {
     
@@ -165,6 +187,8 @@ object distTypesMod {
     def getPlaylist(): js.Promise[js.Array[String]] = js.native
     
     def getPlaylistIndex(): js.Promise[Double] = js.native
+    
+    def getSize(): js.Promise[PlayerSize] = js.native
     
     def getVideoEmbedCode(): js.Promise[String] = js.native
     

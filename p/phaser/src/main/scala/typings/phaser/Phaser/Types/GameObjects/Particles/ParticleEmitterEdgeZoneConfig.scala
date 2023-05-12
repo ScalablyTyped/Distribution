@@ -4,7 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ParticleEmitterEdgeZoneConfig extends StObject {
+trait ParticleEmitterEdgeZoneConfig
+  extends StObject
+     with EmitZoneObject {
   
   /**
     * The number of particles to place on the source edge. Set to 0 to use `stepRate` instead.
@@ -25,6 +27,11 @@ trait ParticleEmitterEdgeZoneConfig extends StObject {
     * The distance between each particle. When set, `quantity` is implied and should be set to 0.
     */
   var stepRate: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * The total number of particles this zone will emit before passing over to the next emission zone in the Emitter.
+    */
+  var total: js.UndefOr[Double] = js.undefined
   
   /**
     * 'edge'.
@@ -58,6 +65,10 @@ object ParticleEmitterEdgeZoneConfig {
     inline def setStepRate(value: Double): Self = StObject.set(x, "stepRate", value.asInstanceOf[js.Any])
     
     inline def setStepRateUndefined: Self = StObject.set(x, "stepRate", js.undefined)
+    
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    
+    inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

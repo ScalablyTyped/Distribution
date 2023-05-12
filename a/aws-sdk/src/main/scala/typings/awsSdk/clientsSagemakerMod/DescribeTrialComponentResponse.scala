@@ -69,6 +69,11 @@ trait DescribeTrialComponentResponse extends StObject {
   var Source: js.UndefOr[TrialComponentSource] = js.undefined
   
   /**
+    * A list of ARNs and, if applicable, job types for multiple sources of an experiment run.
+    */
+  var Sources: js.UndefOr[TrialComponentSources] = js.undefined
+  
+  /**
     * When the component started.
     */
   var StartTime: js.UndefOr[js.Date] = js.undefined
@@ -151,6 +156,12 @@ object DescribeTrialComponentResponse {
     inline def setSource(value: TrialComponentSource): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
     inline def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
+    
+    inline def setSources(value: TrialComponentSources): Self = StObject.set(x, "Sources", value.asInstanceOf[js.Any])
+    
+    inline def setSourcesUndefined: Self = StObject.set(x, "Sources", js.undefined)
+    
+    inline def setSourcesVarargs(value: TrialComponentSource*): Self = StObject.set(x, "Sources", js.Array(value*))
     
     inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     

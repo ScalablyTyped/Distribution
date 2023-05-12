@@ -1,12 +1,12 @@
 package typings.firebaseAuth.anon
 
-import typings.firebaseAuth.distRnSrcModelPopupRedirectMod.AuthEventError
-import typings.firebaseAuth.distRnSrcModelPopupRedirectMod.AuthEventType
+import typings.firebaseAuth.distNodeSrcModelPopupRedirectMod.AuthEventError
+import typings.firebaseAuth.distNodeSrcModelPopupRedirectMod.AuthEventType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<@firebase/auth.@firebase/auth/dist/rn/src/model/popup_redirect.AuthEvent> */
+/* Inlined std.Partial<@firebase/auth.@firebase/auth/dist/node/src/model/popup_redirect.AuthEvent> */
 trait PartialAuthEventTenantId extends StObject {
   
   var error: js.UndefOr[AuthEventError] = js.undefined

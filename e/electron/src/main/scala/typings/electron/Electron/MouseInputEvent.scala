@@ -38,7 +38,8 @@ trait MouseInputEvent
     * The type of the event, can be `mouseDown`, `mouseUp`, `mouseEnter`,
     * `mouseLeave`, `contextMenu`, `mouseWheel` or `mouseMove`.
     */
-  var `type`: mouseDown | mouseUp | mouseEnter | mouseLeave | contextMenu | mouseWheel | mouseMove
+  @JSName("type")
+  var type_MouseInputEvent: mouseDown | mouseUp | mouseEnter | mouseLeave | contextMenu | mouseWheel | mouseMove
   
   var x: Double
   

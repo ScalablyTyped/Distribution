@@ -7,6 +7,7 @@ import typings.fhir.fhirStrings.`on-hold`
 import typings.fhir.fhirStrings.`original-order`
 import typings.fhir.fhirStrings.`reflex-order`
 import typings.fhir.fhirStrings.active
+import typings.fhir.fhirStrings.asap
 import typings.fhir.fhirStrings.completed
 import typings.fhir.fhirStrings.directive
 import typings.fhir.fhirStrings.draft
@@ -15,7 +16,10 @@ import typings.fhir.fhirStrings.order_
 import typings.fhir.fhirStrings.plan
 import typings.fhir.fhirStrings.proposal
 import typings.fhir.fhirStrings.revoked
+import typings.fhir.fhirStrings.routine
+import typings.fhir.fhirStrings.stat
 import typings.fhir.fhirStrings.unknown
+import typings.fhir.fhirStrings.urgent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,12 +39,21 @@ trait NutritionOrder
   
   var _intent: js.UndefOr[Element] = js.undefined
   
+  var _outsideFoodAllowed: js.UndefOr[Element] = js.undefined
+  
+  var _priority: js.UndefOr[Element] = js.undefined
+  
   var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * Information on a patient's food allergies and intolerances to inform healthcare personnel about the type of foods that the patient shouldn't receive or consume.
     */
   var allergyIntolerance: js.UndefOr[js.Array[Reference]] = js.undefined
+  
+  /**
+    * A plan or request that is fulfilled in whole or in part by this nutrition order.
+    */
+  var basedOn: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * The date and time that this nutrition order was requested.
@@ -66,6 +79,11 @@ trait NutritionOrder
     * Information on a patient's food preferences that inform healthcare personnel about the food that the patient should receive or consume.
     */
   var foodPreferenceModifier: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  
+  /**
+    * A shared identifier common to all nutrition orders that were authorized more or less simultaneously by a single author, representing the composite or group identifier.
+    */
+  var groupIdentifier: js.UndefOr[Identifier] = js.undefined
   
   /**
     * The Identifier.type element can be to indicate filler vs. placer if needed.  This is explained in further detail [here](servicerequest.html#notes).
@@ -108,9 +126,19 @@ trait NutritionOrder
   var orderer: js.UndefOr[Reference] = js.undefined
   
   /**
-    * The person (patient) who needs the nutrition order for an oral diet, nutritional supplement and/or enteral or formula feeding.
+    * This modifier is used to convey whether a food item is allowed to be brought in by the patient and/or family.  If set to true, indicates that the receiving system does not need to supply the food item.
     */
-  var patient: Reference
+  var outsideFoodAllowed: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The specified desired performer of the nutrition order.
+    */
+  var performer: js.UndefOr[js.Array[CodeableReference]] = js.undefined
+  
+  /**
+    * Indicates how quickly the Nutrition Order should be addressed with respect to other        requests.
+    */
+  var priority: js.UndefOr[routine | urgent | asap | stat] = js.undefined
   
   /** Resource Type Name (for serialization) */
   @JSName("resourceType")
@@ -122,19 +150,29 @@ trait NutritionOrder
   var status: draft | active | `on-hold` | revoked | completed | `entered-in-error` | unknown
   
   /**
+    * The person or set of individuals who needs the nutrition order for an oral diet, nutritional supplement and/or enteral or formula feeding.
+    */
+  var subject: Reference
+  
+  /**
     * Oral nutritional products given in order to add further nutritional value to the patient's diet.
     */
   var supplement: js.UndefOr[js.Array[NutritionOrderSupplement]] = js.undefined
+  
+  /**
+    * Information to support fulfilling (i.e. dispensing or administering) of the nutrition,        for example, patient height and weight).
+    */
+  var supportingInformation: js.UndefOr[js.Array[Reference]] = js.undefined
 }
 object NutritionOrder {
   
   inline def apply(
     dateTime: String,
     intent: proposal | plan | directive | order_ | `original-order` | `reflex-order` | `filler-order` | `instance-order` | option,
-    patient: Reference,
-    status: draft | active | `on-hold` | revoked | completed | `entered-in-error` | unknown
+    status: draft | active | `on-hold` | revoked | completed | `entered-in-error` | unknown,
+    subject: Reference
   ): NutritionOrder = {
-    val __obj = js.Dynamic.literal(dateTime = dateTime.asInstanceOf[js.Any], intent = intent.asInstanceOf[js.Any], patient = patient.asInstanceOf[js.Any], resourceType = "NutritionOrder", status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dateTime = dateTime.asInstanceOf[js.Any], intent = intent.asInstanceOf[js.Any], resourceType = "NutritionOrder", status = status.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[NutritionOrder]
   }
   
@@ -146,6 +184,12 @@ object NutritionOrder {
     inline def setAllergyIntoleranceUndefined: Self = StObject.set(x, "allergyIntolerance", js.undefined)
     
     inline def setAllergyIntoleranceVarargs(value: Reference*): Self = StObject.set(x, "allergyIntolerance", js.Array(value*))
+    
+    inline def setBasedOn(value: js.Array[Reference]): Self = StObject.set(x, "basedOn", value.asInstanceOf[js.Any])
+    
+    inline def setBasedOnUndefined: Self = StObject.set(x, "basedOn", js.undefined)
+    
+    inline def setBasedOnVarargs(value: Reference*): Self = StObject.set(x, "basedOn", js.Array(value*))
     
     inline def setDateTime(value: String): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
     
@@ -168,6 +212,10 @@ object NutritionOrder {
     inline def setFoodPreferenceModifierUndefined: Self = StObject.set(x, "foodPreferenceModifier", js.undefined)
     
     inline def setFoodPreferenceModifierVarargs(value: CodeableConcept*): Self = StObject.set(x, "foodPreferenceModifier", js.Array(value*))
+    
+    inline def setGroupIdentifier(value: Identifier): Self = StObject.set(x, "groupIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setGroupIdentifierUndefined: Self = StObject.set(x, "groupIdentifier", js.undefined)
     
     inline def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
@@ -211,17 +259,37 @@ object NutritionOrder {
     
     inline def setOrdererUndefined: Self = StObject.set(x, "orderer", js.undefined)
     
-    inline def setPatient(value: Reference): Self = StObject.set(x, "patient", value.asInstanceOf[js.Any])
+    inline def setOutsideFoodAllowed(value: Boolean): Self = StObject.set(x, "outsideFoodAllowed", value.asInstanceOf[js.Any])
+    
+    inline def setOutsideFoodAllowedUndefined: Self = StObject.set(x, "outsideFoodAllowed", js.undefined)
+    
+    inline def setPerformer(value: js.Array[CodeableReference]): Self = StObject.set(x, "performer", value.asInstanceOf[js.Any])
+    
+    inline def setPerformerUndefined: Self = StObject.set(x, "performer", js.undefined)
+    
+    inline def setPerformerVarargs(value: CodeableReference*): Self = StObject.set(x, "performer", js.Array(value*))
+    
+    inline def setPriority(value: routine | urgent | asap | stat): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     inline def setResourceType(value: typings.fhir.fhirStrings.NutritionOrder): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     inline def setStatus(value: draft | active | `on-hold` | revoked | completed | `entered-in-error` | unknown): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setSubject(value: Reference): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     inline def setSupplement(value: js.Array[NutritionOrderSupplement]): Self = StObject.set(x, "supplement", value.asInstanceOf[js.Any])
     
     inline def setSupplementUndefined: Self = StObject.set(x, "supplement", js.undefined)
     
     inline def setSupplementVarargs(value: NutritionOrderSupplement*): Self = StObject.set(x, "supplement", js.Array(value*))
+    
+    inline def setSupportingInformation(value: js.Array[Reference]): Self = StObject.set(x, "supportingInformation", value.asInstanceOf[js.Any])
+    
+    inline def setSupportingInformationUndefined: Self = StObject.set(x, "supportingInformation", js.undefined)
+    
+    inline def setSupportingInformationVarargs(value: Reference*): Self = StObject.set(x, "supportingInformation", js.Array(value*))
     
     inline def set_dateTime(value: Element): Self = StObject.set(x, "_dateTime", value.asInstanceOf[js.Any])
     
@@ -248,6 +316,14 @@ object NutritionOrder {
     inline def set_intent(value: Element): Self = StObject.set(x, "_intent", value.asInstanceOf[js.Any])
     
     inline def set_intentUndefined: Self = StObject.set(x, "_intent", js.undefined)
+    
+    inline def set_outsideFoodAllowed(value: Element): Self = StObject.set(x, "_outsideFoodAllowed", value.asInstanceOf[js.Any])
+    
+    inline def set_outsideFoodAllowedUndefined: Self = StObject.set(x, "_outsideFoodAllowed", js.undefined)
+    
+    inline def set_priority(value: Element): Self = StObject.set(x, "_priority", value.asInstanceOf[js.Any])
+    
+    inline def set_priorityUndefined: Self = StObject.set(x, "_priority", js.undefined)
     
     inline def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     

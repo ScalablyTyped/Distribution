@@ -46,13 +46,17 @@ object buildSrcSubchannelInterfaceMod {
     override def startConnecting(): Unit = js.native
     
     /* CompleteClass */
+    override def throttleKeepalive(newKeepaliveTime: Double): Unit = js.native
+    
+    /* CompleteClass */
     override def unref(): Unit = js.native
   }
   
-  type ConnectivityStateListener = js.Function3[
+  type ConnectivityStateListener = js.Function4[
     /* subchannel */ SubchannelInterface, 
     /* previousState */ ConnectivityState, 
     /* newState */ ConnectivityState, 
+    /* keepaliveTime */ Double, 
     Unit
   ]
   
@@ -77,6 +81,8 @@ object buildSrcSubchannelInterfaceMod {
     
     def startConnecting(): Unit
     
+    def throttleKeepalive(newKeepaliveTime: Double): Unit
+    
     def unref(): Unit
   }
   object SubchannelInterface {
@@ -90,9 +96,10 @@ object buildSrcSubchannelInterfaceMod {
       ref: () => Unit,
       removeConnectivityStateListener: ConnectivityStateListener => Unit,
       startConnecting: () => Unit,
+      throttleKeepalive: Double => Unit,
       unref: () => Unit
     ): SubchannelInterface = {
-      val __obj = js.Dynamic.literal(addConnectivityStateListener = js.Any.fromFunction1(addConnectivityStateListener), getAddress = js.Any.fromFunction0(getAddress), getChannelzRef = js.Any.fromFunction0(getChannelzRef), getConnectivityState = js.Any.fromFunction0(getConnectivityState), getRealSubchannel = js.Any.fromFunction0(getRealSubchannel), ref = js.Any.fromFunction0(ref), removeConnectivityStateListener = js.Any.fromFunction1(removeConnectivityStateListener), startConnecting = js.Any.fromFunction0(startConnecting), unref = js.Any.fromFunction0(unref))
+      val __obj = js.Dynamic.literal(addConnectivityStateListener = js.Any.fromFunction1(addConnectivityStateListener), getAddress = js.Any.fromFunction0(getAddress), getChannelzRef = js.Any.fromFunction0(getChannelzRef), getConnectivityState = js.Any.fromFunction0(getConnectivityState), getRealSubchannel = js.Any.fromFunction0(getRealSubchannel), ref = js.Any.fromFunction0(ref), removeConnectivityStateListener = js.Any.fromFunction1(removeConnectivityStateListener), startConnecting = js.Any.fromFunction0(startConnecting), throttleKeepalive = js.Any.fromFunction1(throttleKeepalive), unref = js.Any.fromFunction0(unref))
       __obj.asInstanceOf[SubchannelInterface]
     }
     
@@ -114,6 +121,8 @@ object buildSrcSubchannelInterfaceMod {
       inline def setRemoveConnectivityStateListener(value: ConnectivityStateListener => Unit): Self = StObject.set(x, "removeConnectivityStateListener", js.Any.fromFunction1(value))
       
       inline def setStartConnecting(value: () => Unit): Self = StObject.set(x, "startConnecting", js.Any.fromFunction0(value))
+      
+      inline def setThrottleKeepalive(value: Double => Unit): Self = StObject.set(x, "throttleKeepalive", js.Any.fromFunction1(value))
       
       inline def setUnref(value: () => Unit): Self = StObject.set(x, "unref", js.Any.fromFunction0(value))
     }

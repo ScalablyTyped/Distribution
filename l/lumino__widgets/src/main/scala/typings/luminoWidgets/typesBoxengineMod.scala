@@ -87,7 +87,7 @@ object typesBoxengineMod {
       *   small, and positive if the available space is too large.
       *
       * #### Notes
-      * The [[size]] of each sizer is updated with the computed size.
+      * The {@link BoxSizer.size} of each sizer is updated with the computed size.
       *
       * This function can be called at any time to recompute the layout for
       * an existing sequence of sizers. The previously computed results will
@@ -119,7 +119,7 @@ object typesBoxengineMod {
       * it means the sizer will underflow the available layout space.
       *
       * It is assumed that this value lies in the range `[0, Infinity]`
-      * and that it is `>=` to [[minSize]]. Failure to adhere to this
+      * and that it is `>=` to {@link minSize}. Failure to adhere to this
       * constraint will yield undefined results.
       *
       * The default value is `Infinity`.
@@ -134,7 +134,7 @@ object typesBoxengineMod {
       * it means the sizer will overflow the available layout space.
       *
       * It is assumed that this value lies in the range `[0, Infinity)`
-      * and that it is `<=` to [[maxSize]]. Failure to adhere to this
+      * and that it is `<=` to {@link maxSize}. Failure to adhere to this
       * constraint will yield undefined results.
       *
       * The default value is `0`.
@@ -145,7 +145,7 @@ object typesBoxengineMod {
       * The computed size of the sizer.
       *
       * #### Notes
-      * This value is the output of a call to [[boxCalc]]. It represents
+      * This value is the output of a call to {@link BoxEngine.calc}. It represents
       * the computed size for the object along the layout orientation,
       * and will always lie in the range `[minSize, maxSize]`.
       *
@@ -164,7 +164,7 @@ object typesBoxengineMod {
       * deviation is required to fit into the available layout space.
       *
       * There is no limit to this value, but it will be clamped to the
-      * bounds defined by [[minSize]] and [[maxSize]].
+      * bounds defined by {@link minSize} and {@link maxSize}.
       *
       * The default value is `0`.
       */

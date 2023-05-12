@@ -7,26 +7,62 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ColumnBodyRowEditorOptions extends StObject {
   
+  /**
+    * Class name of the cancel button.
+    */
   var cancelClassName: js.UndefOr[String] = js.undefined
   
+  /**
+    * Class name of the cancel icon.
+    */
   var cancelIconClassName: js.UndefOr[String] = js.undefined
   
+  /**
+    * Whether row is in editing mode.
+    */
   var editing: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Custom JSX element for the options.
+    */
   var element: js.UndefOr[Element] = js.undefined
   
+  /**
+    * Class name of the init button.
+    */
   var initClassName: js.UndefOr[String] = js.undefined
   
+  /**
+    * Class name of the init icon.
+    */
   var initIconClassName: js.UndefOr[String] = js.undefined
   
-  var onCancelClick: js.UndefOr[js.Function1[/* e */ Any, Unit]] = js.undefined
+  /**
+    * Event on cancel click of the row editor.
+    * @param {*} event  - Browser event.
+    */
+  var onCancelClick: js.UndefOr[js.Function1[/* event */ Any, Unit]] = js.undefined
   
-  var onInitClick: js.UndefOr[js.Function1[/* e */ Any, Unit]] = js.undefined
+  /**
+    * Event on init click of the row editor.
+    * @param {*} event  - Browser event.
+    */
+  var onInitClick: js.UndefOr[js.Function1[/* event */ Any, Unit]] = js.undefined
   
-  var onSaveClick: js.UndefOr[js.Function1[/* e */ Any, Unit]] = js.undefined
+  /**
+    * Event on save click of the row editor.
+    * @param {*} event  - Browser event.
+    */
+  var onSaveClick: js.UndefOr[js.Function1[/* event */ Any, Unit]] = js.undefined
   
+  /**
+    * Class name of the save button.
+    */
   var saveClassName: js.UndefOr[String] = js.undefined
   
+  /**
+    * Class name of the save icon.
+    */
   var saveIconClassName: js.UndefOr[String] = js.undefined
 }
 object ColumnBodyRowEditorOptions {
@@ -63,15 +99,15 @@ object ColumnBodyRowEditorOptions {
     
     inline def setInitIconClassNameUndefined: Self = StObject.set(x, "initIconClassName", js.undefined)
     
-    inline def setOnCancelClick(value: /* e */ Any => Unit): Self = StObject.set(x, "onCancelClick", js.Any.fromFunction1(value))
+    inline def setOnCancelClick(value: /* event */ Any => Unit): Self = StObject.set(x, "onCancelClick", js.Any.fromFunction1(value))
     
     inline def setOnCancelClickUndefined: Self = StObject.set(x, "onCancelClick", js.undefined)
     
-    inline def setOnInitClick(value: /* e */ Any => Unit): Self = StObject.set(x, "onInitClick", js.Any.fromFunction1(value))
+    inline def setOnInitClick(value: /* event */ Any => Unit): Self = StObject.set(x, "onInitClick", js.Any.fromFunction1(value))
     
     inline def setOnInitClickUndefined: Self = StObject.set(x, "onInitClick", js.undefined)
     
-    inline def setOnSaveClick(value: /* e */ Any => Unit): Self = StObject.set(x, "onSaveClick", js.Any.fromFunction1(value))
+    inline def setOnSaveClick(value: /* event */ Any => Unit): Self = StObject.set(x, "onSaveClick", js.Any.fromFunction1(value))
     
     inline def setOnSaveClickUndefined: Self = StObject.set(x, "onSaveClick", js.undefined)
     

@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Subtitle extends StObject {
   
   /**
+    * Unique identifier for each subtitle, if you have more than one subtitle with the same language, the id will differentiate them.
+    */
+  var id: String
+  
+  /**
     * Language code for the subtitle, if a valid ISO 639-2 code is not sent, the text of this value will be used instead.
     */
   var lang: String
@@ -18,13 +23,15 @@ trait Subtitle extends StObject {
 }
 object Subtitle {
   
-  inline def apply(lang: String, url: String): Subtitle = {
-    val __obj = js.Dynamic.literal(lang = lang.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  inline def apply(id: String, lang: String, url: String): Subtitle = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], lang = lang.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Subtitle]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Subtitle] (val x: Self) extends AnyVal {
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     

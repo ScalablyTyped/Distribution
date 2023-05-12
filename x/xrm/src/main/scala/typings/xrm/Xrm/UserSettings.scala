@@ -58,7 +58,7 @@ trait UserSettings extends StObject {
   /**
     * Returns an array of strings that represent the GUID values of each of the security role that the user is associated with or any teams that the user is associated with.
     * @deprecated Deprecated in v9.1; use {@link Xrm.UserSettings.roles globalContext.userSettings.roles} instead to display names of security roles or teams along with the ID.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
+    * @see {@link https://learn.microsoft.com/en-us/power-platform/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     */
   var securityRoles: js.Array[String]
   

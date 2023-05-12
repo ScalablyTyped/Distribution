@@ -31,203 +31,16 @@ object libTexturesTextureMod {
       * @param trim - Trimmed rectangle of original texture
       * @param rotate - indicates how the texture was rotated by texture packer. See {@link PIXI.groupD8}
       * @param anchor - Default anchor point used for sprite placement / rotation
+      * @param borders - Default borders used for 9-slice scaling. See {@link PIXI.NineSlicePlane}
       */
-    def this(baseTexture: BaseTexture[R, IAutoDetectOptions]) = this()
-    def this(baseTexture: BaseTexture[R, IAutoDetectOptions], frame: Rectangle) = this()
-    def this(baseTexture: BaseTexture[R, IAutoDetectOptions], frame: Unit, orig: Rectangle) = this()
-    def this(baseTexture: BaseTexture[R, IAutoDetectOptions], frame: Rectangle, orig: Rectangle) = this()
-    def this(baseTexture: BaseTexture[R, IAutoDetectOptions], frame: Unit, orig: Unit, trim: Rectangle) = this()
-    def this(baseTexture: BaseTexture[R, IAutoDetectOptions], frame: Unit, orig: Rectangle, trim: Rectangle) = this()
-    def this(baseTexture: BaseTexture[R, IAutoDetectOptions], frame: Rectangle, orig: Unit, trim: Rectangle) = this()
     def this(
       baseTexture: BaseTexture[R, IAutoDetectOptions],
-      frame: Rectangle,
-      orig: Rectangle,
-      trim: Rectangle
-    ) = this()
-    def this(
-      baseTexture: BaseTexture[R, IAutoDetectOptions],
-      frame: Unit,
-      orig: Unit,
-      trim: Unit,
-      rotate: Double
-    ) = this()
-    def this(
-      baseTexture: BaseTexture[R, IAutoDetectOptions],
-      frame: Unit,
-      orig: Unit,
-      trim: Rectangle,
-      rotate: Double
-    ) = this()
-    def this(
-      baseTexture: BaseTexture[R, IAutoDetectOptions],
-      frame: Unit,
-      orig: Rectangle,
-      trim: Unit,
-      rotate: Double
-    ) = this()
-    def this(
-      baseTexture: BaseTexture[R, IAutoDetectOptions],
-      frame: Unit,
-      orig: Rectangle,
-      trim: Rectangle,
-      rotate: Double
-    ) = this()
-    def this(
-      baseTexture: BaseTexture[R, IAutoDetectOptions],
-      frame: Rectangle,
-      orig: Unit,
-      trim: Unit,
-      rotate: Double
-    ) = this()
-    def this(
-      baseTexture: BaseTexture[R, IAutoDetectOptions],
-      frame: Rectangle,
-      orig: Unit,
-      trim: Rectangle,
-      rotate: Double
-    ) = this()
-    def this(
-      baseTexture: BaseTexture[R, IAutoDetectOptions],
-      frame: Rectangle,
-      orig: Rectangle,
-      trim: Unit,
-      rotate: Double
-    ) = this()
-    def this(
-      baseTexture: BaseTexture[R, IAutoDetectOptions],
-      frame: Rectangle,
-      orig: Rectangle,
-      trim: Rectangle,
-      rotate: Double
-    ) = this()
-    def this(
-      baseTexture: BaseTexture[R, IAutoDetectOptions],
-      frame: Unit,
-      orig: Unit,
-      trim: Unit,
-      rotate: Double,
-      anchor: IPointData
-    ) = this()
-    def this(
-      baseTexture: BaseTexture[R, IAutoDetectOptions],
-      frame: Unit,
-      orig: Unit,
-      trim: Unit,
-      rotate: Unit,
-      anchor: IPointData
-    ) = this()
-    def this(
-      baseTexture: BaseTexture[R, IAutoDetectOptions],
-      frame: Unit,
-      orig: Unit,
-      trim: Rectangle,
-      rotate: Double,
-      anchor: IPointData
-    ) = this()
-    def this(
-      baseTexture: BaseTexture[R, IAutoDetectOptions],
-      frame: Unit,
-      orig: Unit,
-      trim: Rectangle,
-      rotate: Unit,
-      anchor: IPointData
-    ) = this()
-    def this(
-      baseTexture: BaseTexture[R, IAutoDetectOptions],
-      frame: Unit,
-      orig: Rectangle,
-      trim: Unit,
-      rotate: Double,
-      anchor: IPointData
-    ) = this()
-    def this(
-      baseTexture: BaseTexture[R, IAutoDetectOptions],
-      frame: Unit,
-      orig: Rectangle,
-      trim: Unit,
-      rotate: Unit,
-      anchor: IPointData
-    ) = this()
-    def this(
-      baseTexture: BaseTexture[R, IAutoDetectOptions],
-      frame: Unit,
-      orig: Rectangle,
-      trim: Rectangle,
-      rotate: Double,
-      anchor: IPointData
-    ) = this()
-    def this(
-      baseTexture: BaseTexture[R, IAutoDetectOptions],
-      frame: Unit,
-      orig: Rectangle,
-      trim: Rectangle,
-      rotate: Unit,
-      anchor: IPointData
-    ) = this()
-    def this(
-      baseTexture: BaseTexture[R, IAutoDetectOptions],
-      frame: Rectangle,
-      orig: Unit,
-      trim: Unit,
-      rotate: Double,
-      anchor: IPointData
-    ) = this()
-    def this(
-      baseTexture: BaseTexture[R, IAutoDetectOptions],
-      frame: Rectangle,
-      orig: Unit,
-      trim: Unit,
-      rotate: Unit,
-      anchor: IPointData
-    ) = this()
-    def this(
-      baseTexture: BaseTexture[R, IAutoDetectOptions],
-      frame: Rectangle,
-      orig: Unit,
-      trim: Rectangle,
-      rotate: Double,
-      anchor: IPointData
-    ) = this()
-    def this(
-      baseTexture: BaseTexture[R, IAutoDetectOptions],
-      frame: Rectangle,
-      orig: Unit,
-      trim: Rectangle,
-      rotate: Unit,
-      anchor: IPointData
-    ) = this()
-    def this(
-      baseTexture: BaseTexture[R, IAutoDetectOptions],
-      frame: Rectangle,
-      orig: Rectangle,
-      trim: Unit,
-      rotate: Double,
-      anchor: IPointData
-    ) = this()
-    def this(
-      baseTexture: BaseTexture[R, IAutoDetectOptions],
-      frame: Rectangle,
-      orig: Rectangle,
-      trim: Unit,
-      rotate: Unit,
-      anchor: IPointData
-    ) = this()
-    def this(
-      baseTexture: BaseTexture[R, IAutoDetectOptions],
-      frame: Rectangle,
-      orig: Rectangle,
-      trim: Rectangle,
-      rotate: Double,
-      anchor: IPointData
-    ) = this()
-    def this(
-      baseTexture: BaseTexture[R, IAutoDetectOptions],
-      frame: Rectangle,
-      orig: Rectangle,
-      trim: Rectangle,
-      rotate: Unit,
-      anchor: IPointData
+      frame: js.UndefOr[Rectangle],
+      orig: js.UndefOr[Rectangle],
+      trim: js.UndefOr[Rectangle],
+      rotate: js.UndefOr[Double],
+      anchor: js.UndefOr[IPointData],
+      borders: js.UndefOr[ITextureBorders]
     ) = this()
     
     /**
@@ -263,6 +76,13 @@ object libTexturesTextureMod {
       * @default {0,0}
       */
     var defaultAnchor: Point = js.native
+    
+    /**
+      * Default width of the non-scalable border that is used if 9-slice plane is created with this texture.
+      * @since 7.2.0
+      * @see PIXI.NineSlicePlane
+      */
+    var defaultBorders: js.UndefOr[ITextureBorders] = js.native
     
     /**
       * Destroys this texture
@@ -466,6 +286,40 @@ object libTexturesTextureMod {
       */
     inline def removeFromCache(texture: String): Texture[Resource] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFromCache")(texture.asInstanceOf[js.Any]).asInstanceOf[Texture[Resource] | Null]
     inline def removeFromCache(texture: Texture[Resource]): Texture[Resource] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFromCache")(texture.asInstanceOf[js.Any]).asInstanceOf[Texture[Resource] | Null]
+  }
+  
+  trait ITextureBorders extends StObject {
+    
+    /** bottom border in pixels */
+    var bottom: Double
+    
+    /** left border in pixels */
+    var left: Double
+    
+    /** right border in pixels */
+    var right: Double
+    
+    /** top border in pixels */
+    var top: Double
+  }
+  object ITextureBorders {
+    
+    inline def apply(bottom: Double, left: Double, right: Double, top: Double): ITextureBorders = {
+      val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ITextureBorders]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITextureBorders] (val x: Self) extends AnyVal {
+      
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    }
   }
   
   type TextureSource = String | (BaseTexture[Resource, IAutoDetectOptions]) | ImageSource

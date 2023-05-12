@@ -1,24 +1,24 @@
 organization := "org.scalablytyped"
 name := "meteor-persistent-session"
-version := "0.0-unknown-dt-20221103Z-75a122"
+version := "0.0-unknown-dt-20221230Z-2138a1"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "bson" % "4.7.0-e61bbb",
-  "org.scalablytyped" %%% "buffer" % "6.0.3-34b6a7",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20220818Z-4bfaa3",
-  "org.scalablytyped" %%% "csstype" % "3.1.1-9b270c",
-  "org.scalablytyped" %%% "jquery" % "3.5-dt-20221103Z-33f6f2",
-  "org.scalablytyped" %%% "meteor" % "2.8-dt-20221107Z-5bbb7d",
-  "org.scalablytyped" %%% "mongodb" % "4.11.0-e6152b",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-874609",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-9c1d48",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-c1aa2f",
-  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-fd69ea",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20211202Z-62291b",
-  "org.scalablytyped" %%% "std" % "4.9-ecb5eb",
-  "org.scalablytyped" %%% "underscore" % "1.11-dt-20220722Z-19c570")
+  "org.scalablytyped" %%% "bson" % "5.3.0-6510cf",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20220818Z-02afba",
+  "org.scalablytyped" %%% "csstype" % "3.1.2-5927f3",
+  "org.scalablytyped" %%% "jquery" % "3.5-dt-20221231Z-60047c",
+  "org.scalablytyped" %%% "meteor" % "2.9-dt-20230414Z-1b805c",
+  "org.scalablytyped" %%% "mongodb" % "5.5.0-399267",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "nodemailer" % "6.4-dt-20230130Z-96dde9",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4446ee",
+  "org.scalablytyped" %%% "react" % "18.2-dt-20230506Z-14ab9d",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20230322Z-da1b40",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20211202Z-227892",
+  "org.scalablytyped" %%% "std" % "5.0-e63739",
+  "org.scalablytyped" %%% "underscore" % "1.11-dt-20221230Z-78d9c7")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

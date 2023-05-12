@@ -1,7 +1,7 @@
 
 # Scala.js typings for python-shell
 
-Typings are for version 3.0.1
+Typings are for version 5.0.0
 
 ## Library description:
 Run Python scripts from Node.js with simple (but efficient) inter-process communication through stdio

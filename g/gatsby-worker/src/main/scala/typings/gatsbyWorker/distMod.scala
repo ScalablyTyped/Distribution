@@ -28,6 +28,8 @@ object distMod {
     
     /* private */ var checkForWork: Any = js.native
     
+    /* private */ var counter: Any = js.native
+    
     /* private */ var doWork: Any = js.native
     
     /**

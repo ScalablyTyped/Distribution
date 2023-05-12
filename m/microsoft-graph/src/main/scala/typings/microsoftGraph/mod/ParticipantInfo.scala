@@ -13,8 +13,8 @@ trait ParticipantInfo extends StObject {
   var countryCode: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
-    * The type of endpoint the participant is using. Possible values are: default, voicemail, skypeForBusiness,
-    * skypeForBusinessVoipPhone and unknownFutureValue. Read-only.
+    * The type of endpoint the participant is using. Possible values are: default, skypeForBusiness, or
+    * skypeForBusinessVoipPhone. Read-only.
     */
   var endpointType: js.UndefOr[NullableOption[EndpointType]] = js.undefined
   

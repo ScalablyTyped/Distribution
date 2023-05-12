@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Resource extends StObject {
   
   /**
-    * The Amazon Resoure Name (ARN) of the resource.
+    * The Amazon Resource Name (ARN) of the resource.
     */
   var arn: js.UndefOr[String] = js.undefined
   
@@ -17,12 +17,12 @@ trait Resource extends StObject {
   var creationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The date an time when the association was last updated.
+    * The date an time when the association between the resource and the resource share was last updated.
     */
   var lastUpdatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The Amazon Resoure Name (ARN) of the resource group. This value is available only if the resource is part of a resource group.
+    * The Amazon Resource Name (ARN) of the resource group. This value is available only if the resource is part of a resource group.
     */
   var resourceGroupArn: js.UndefOr[String] = js.undefined
   
@@ -32,7 +32,7 @@ trait Resource extends StObject {
   var resourceRegionScope: js.UndefOr[ResourceRegionScope] = js.undefined
   
   /**
-    * The Amazon Resoure Name (ARN) of the resource share this resource is associated with.
+    * The Amazon Resource Name (ARN) of the resource share this resource is associated with.
     */
   var resourceShareArn: js.UndefOr[String] = js.undefined
   
@@ -47,7 +47,7 @@ trait Resource extends StObject {
   var statusMessage: js.UndefOr[String] = js.undefined
   
   /**
-    * The resource type. This takes the form of: service-code:resource-code 
+    * The resource type. This takes the form of: service-code:resource-code, and is case-insensitive. For example, an Amazon EC2 Subnet would be represented by the string ec2:subnet.
     */
   var `type`: js.UndefOr[String] = js.undefined
 }

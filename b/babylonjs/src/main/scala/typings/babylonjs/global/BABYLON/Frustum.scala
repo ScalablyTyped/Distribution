@@ -93,4 +93,15 @@ object Frustum {
     transform: DeepImmutable[typings.babylonjs.BABYLON.Matrix],
     frustumPlane: typings.babylonjs.BABYLON.Plane
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("GetTopPlaneToRef")(transform.asInstanceOf[js.Any], frustumPlane.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
+    * Tests if a point is located between the frustum planes.
+    * @param point defines the point to test
+    * @param frustumPlanes defines the frustum planes to test
+    * @returns true if the point is located between the frustum planes
+    */
+  inline def IsPointInFrustum(
+    point: typings.babylonjs.BABYLON.Vector3,
+    frustumPlanes: js.Array[DeepImmutable[typings.babylonjs.BABYLON.Plane]]
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("IsPointInFrustum")(point.asInstanceOf[js.Any], frustumPlanes.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

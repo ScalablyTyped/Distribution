@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `21` extends StObject {
   
   /**
-    * The new start date, as a JavaScript date object. It is considered as a local date.
+    * DOM reference of the object identifier's title.
     */
-  var date: js.UndefOr[js.Object] = js.undefined
+  var domRef: js.UndefOr[js.Object] = js.undefined
 }
 object `21` {
   
@@ -21,8 +21,8 @@ object `21` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `21`] (val x: Self) extends AnyVal {
     
-    inline def setDate(value: js.Object): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDomRef(value: js.Object): Self = StObject.set(x, "domRef", value.asInstanceOf[js.Any])
     
-    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDomRefUndefined: Self = StObject.set(x, "domRef", js.undefined)
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeGeofenceCollectionResponse extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) for the geofence collection resource. Used when you need to specify a resource across all AWS.    Format example: arn:aws:geo:region:account-id:geofence-collection/ExampleGeofenceCollection   
+    * The Amazon Resource Name (ARN) for the geofence collection resource. Used when you need to specify a resource across all Amazon Web Services.    Format example: arn:aws:geo:region:account-id:geofence-collection/ExampleGeofenceCollection   
     */
   var CollectionArn: Arn
   
@@ -27,7 +27,7 @@ trait DescribeGeofenceCollectionResponse extends StObject {
   var Description: ResourceDescription
   
   /**
-    * A key identifier for an AWS KMS customer managed key assigned to the Amazon Location resource
+    * A key identifier for an Amazon Web Services KMS customer managed key assigned to the Amazon Location resource
     */
   var KmsKeyId: js.UndefOr[typings.awsSdk.clientsLocationMod.KmsKeyId] = js.undefined
   

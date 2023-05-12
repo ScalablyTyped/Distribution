@@ -10,5 +10,11 @@ object isSupportedMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    * @return {boolean} Whether or not the current browser supports enabling
+    * navigation preload.
+    *
+    * @memberof workbox-navigation-preload
+    */
   inline def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
 }

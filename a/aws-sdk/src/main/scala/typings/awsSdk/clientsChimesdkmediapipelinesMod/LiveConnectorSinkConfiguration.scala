@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LiveConnectorSinkConfiguration extends StObject {
   
   /**
-    * The sink configuration's RTMP configuration setttings.
+    * The sink configuration's RTMP configuration settings.
     */
   var RTMPConfiguration: LiveConnectorRTMPConfiguration
   

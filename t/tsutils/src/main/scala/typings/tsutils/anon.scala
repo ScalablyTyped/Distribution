@@ -14,7 +14,6 @@ import typings.typescript.mod.Expression
 import typings.typescript.mod.GenericType
 import typings.typescript.mod.Identifier
 import typings.typescript.mod.LeftHandSideExpression
-import typings.typescript.mod.Modifier
 import typings.typescript.mod.ModifierLike
 import typings.typescript.mod.ModuleBlock
 import typings.typescript.mod.ModuleReference
@@ -56,17 +55,7 @@ object anon {
     
     var _declarationBrand: Any = js.native
     
-    /**
-      * @deprecated `decorators` has been removed from `Node` and merged with `modifiers` on the `Node` subtypes that support them.
-      * Use `ts.canHaveDecorators()` to test whether a `Node` can have decorators.
-      * Use `ts.getDecorators()` to get the decorators of a `Node`.
-      *
-      * For example:
-      * ```ts
-      * const decorators = ts.canHaveDecorators(node) ? ts.getDecorators(node) : undefined;
-      * ```
-      */
-    val decorators: Unit = js.native
+    var _flowContainerBrand: Any = js.native
     
     val dotDotDotToken: js.UndefOr[DotDotDotToken] = js.native
     
@@ -124,18 +113,6 @@ object anon {
     
     val kind: BindingElement = js.native
     
-    /**
-      * @deprecated `modifiers` has been removed from `Node` and moved to the `Node` subtypes that support them.
-      * Use `ts.canHaveModifiers()` to test whether a `Node` can have modifiers.
-      * Use `ts.getModifiers()` to get the modifiers of a `Node`.
-      *
-      * For example:
-      * ```ts
-      * const modifiers = ts.canHaveModifiers(node) ? ts.getModifiers(node) : undefined;
-      * ```
-      */
-    val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
-    
     val name: BindingName = js.native
     
     val parent: BindingPattern = js.native
@@ -164,18 +141,6 @@ object anon {
     var _updateExpressionBrand: Any = js.native
     
     val arguments: NodeArray[Expression] = js.native
-    
-    /**
-      * @deprecated `decorators` has been removed from `Node` and merged with `modifiers` on the `Node` subtypes that support them.
-      * Use `ts.canHaveDecorators()` to test whether a `Node` can have decorators.
-      * Use `ts.getDecorators()` to get the decorators of a `Node`.
-      *
-      * For example:
-      * ```ts
-      * const decorators = ts.canHaveDecorators(node) ? ts.getDecorators(node) : undefined;
-      * ```
-      */
-    val decorators: Unit = js.native
     
     val end: Double = js.native
     
@@ -231,18 +196,6 @@ object anon {
     
     val kind: CallExpression = js.native
     
-    /**
-      * @deprecated `modifiers` has been removed from `Node` and moved to the `Node` subtypes that support them.
-      * Use `ts.canHaveModifiers()` to test whether a `Node` can have modifiers.
-      * Use `ts.getModifiers()` to get the modifiers of a `Node`.
-      *
-      * For example:
-      * ```ts
-      * const modifiers = ts.canHaveModifiers(node) ? ts.getModifiers(node) : undefined;
-      * ```
-      */
-    val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
-    
     val parent: Node = js.native
     
     val pos: Double = js.native
@@ -260,21 +213,11 @@ object anon {
     
     var _declarationBrand: Any = js.native
     
+    var _jsdocContainerBrand: Any = js.native
+    
     var _statementBrand: Any = js.native
     
     val assertClause: js.UndefOr[AssertClause] = js.native
-    
-    /**
-      * @deprecated `decorators` has been removed from `Node` and merged with `modifiers` on the `Node` subtypes that support them.
-      * Use `ts.canHaveDecorators()` to test whether a `Node` can have decorators.
-      * Use `ts.getDecorators()` to get the decorators of a `Node`.
-      *
-      * For example:
-      * ```ts
-      * const decorators = ts.canHaveDecorators(node) ? ts.getDecorators(node) : undefined;
-      * ```
-      */
-    val decorators: Unit = js.native
     
     val end: Double = js.native
     
@@ -333,7 +276,7 @@ object anon {
     
     val kind: ExportDeclaration = js.native
     
-    val modifiers: js.UndefOr[NodeArray[Modifier]] = js.native
+    val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
     
     /** If this is not a StringLiteral it will be a grammar error. */
     val moduleSpecifier: js.UndefOr[Expression] = js.native
@@ -349,19 +292,11 @@ object anon {
   @js.native
   trait ExpressionStatementexpres extends StObject {
     
-    var _statementBrand: Any = js.native
+    var _flowContainerBrand: Any = js.native
     
-    /**
-      * @deprecated `decorators` has been removed from `Node` and merged with `modifiers` on the `Node` subtypes that support them.
-      * Use `ts.canHaveDecorators()` to test whether a `Node` can have decorators.
-      * Use `ts.getDecorators()` to get the decorators of a `Node`.
-      *
-      * For example:
-      * ```ts
-      * const decorators = ts.canHaveDecorators(node) ? ts.getDecorators(node) : undefined;
-      * ```
-      */
-    val decorators: Unit = js.native
+    var _jsdocContainerBrand: Any = js.native
+    
+    var _statementBrand: Any = js.native
     
     val end: Double = js.native
     
@@ -417,18 +352,6 @@ object anon {
     
     val kind: ExpressionStatement = js.native
     
-    /**
-      * @deprecated `modifiers` has been removed from `Node` and moved to the `Node` subtypes that support them.
-      * Use `ts.canHaveModifiers()` to test whether a `Node` can have modifiers.
-      * Use `ts.getModifiers()` to get the modifiers of a `Node`.
-      *
-      * For example:
-      * ```ts
-      * const modifiers = ts.canHaveModifiers(node) ? ts.getModifiers(node) : undefined;
-      * ```
-      */
-    val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
-    
     val parent: Node = js.native
     
     val pos: Double = js.native
@@ -442,6 +365,10 @@ object anon {
     
     var _expressionBrand: Any = js.native
     
+    var _flowContainerBrand: Any = js.native
+    
+    var _jsdocContainerBrand: Any = js.native
+    
     var _leftHandSideExpressionBrand: Any = js.native
     
     var _memberExpressionBrand: Any = js.native
@@ -451,18 +378,6 @@ object anon {
     var _unaryExpressionBrand: Any = js.native
     
     var _updateExpressionBrand: Any = js.native
-    
-    /**
-      * @deprecated `decorators` has been removed from `Node` and merged with `modifiers` on the `Node` subtypes that support them.
-      * Use `ts.canHaveDecorators()` to test whether a `Node` can have decorators.
-      * Use `ts.getDecorators()` to get the decorators of a `Node`.
-      *
-      * For example:
-      * ```ts
-      * const decorators = ts.canHaveDecorators(node) ? ts.getDecorators(node) : undefined;
-      * ```
-      */
-    val decorators: Unit = js.native
     
     val end: Double = js.native
     
@@ -520,22 +435,12 @@ object anon {
     def getWidth(): Double = js.native
     def getWidth(sourceFile: SourceFileLike): Double = js.native
     
-    var isInJSDocNamespace: js.UndefOr[Boolean] = js.native
+    /** @deprecated Use `.parent` or the surrounding context to determine this instead. */
+    val isInJSDocNamespace: js.UndefOr[Boolean] = js.native
     
     val kind: typings.typescript.mod.SyntaxKind.Identifier = js.native
     
-    /**
-      * @deprecated `modifiers` has been removed from `Node` and moved to the `Node` subtypes that support them.
-      * Use `ts.canHaveModifiers()` to test whether a `Node` can have modifiers.
-      * Use `ts.getModifiers()` to get the modifiers of a `Node`.
-      *
-      * For example:
-      * ```ts
-      * const modifiers = ts.canHaveModifiers(node) ? ts.getModifiers(node) : undefined;
-      * ```
-      */
-    val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
-    
+    /** @deprecated Use `idKeyword(identifier)` instead. */
     val originalKeywordKind: js.UndefOr[SyntaxKind] = js.native
     
     val parent: Node = js.native
@@ -553,6 +458,10 @@ object anon {
     
     var _expressionBrand: Any = js.native
     
+    var _flowContainerBrand: Any = js.native
+    
+    var _jsdocContainerBrand: Any = js.native
+    
     var _leftHandSideExpressionBrand: Any = js.native
     
     var _memberExpressionBrand: Any = js.native
@@ -562,18 +471,6 @@ object anon {
     var _unaryExpressionBrand: Any = js.native
     
     var _updateExpressionBrand: Any = js.native
-    
-    /**
-      * @deprecated `decorators` has been removed from `Node` and merged with `modifiers` on the `Node` subtypes that support them.
-      * Use `ts.canHaveDecorators()` to test whether a `Node` can have decorators.
-      * Use `ts.getDecorators()` to get the decorators of a `Node`.
-      *
-      * For example:
-      * ```ts
-      * const decorators = ts.canHaveDecorators(node) ? ts.getDecorators(node) : undefined;
-      * ```
-      */
-    val decorators: Unit = js.native
     
     val end: Double = js.native
     
@@ -631,22 +528,12 @@ object anon {
     def getWidth(): Double = js.native
     def getWidth(sourceFile: SourceFileLike): Double = js.native
     
-    var isInJSDocNamespace: js.UndefOr[Boolean] = js.native
+    /** @deprecated Use `.parent` or the surrounding context to determine this instead. */
+    val isInJSDocNamespace: js.UndefOr[Boolean] = js.native
     
     val kind: typings.typescript.mod.SyntaxKind.Identifier = js.native
     
-    /**
-      * @deprecated `modifiers` has been removed from `Node` and moved to the `Node` subtypes that support them.
-      * Use `ts.canHaveModifiers()` to test whether a `Node` can have modifiers.
-      * Use `ts.getModifiers()` to get the modifiers of a `Node`.
-      *
-      * For example:
-      * ```ts
-      * const modifiers = ts.canHaveModifiers(node) ? ts.getModifiers(node) : undefined;
-      * ```
-      */
-    val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
-    
+    /** @deprecated Use `idKeyword(identifier)` instead. */
     val originalKeywordKind: js.UndefOr[SyntaxKind] = js.native
     
     val parent: Node = js.native
@@ -664,19 +551,9 @@ object anon {
     
     var _declarationBrand: Any = js.native
     
-    var _statementBrand: Any = js.native
+    var _jsdocContainerBrand: Any = js.native
     
-    /**
-      * @deprecated `decorators` has been removed from `Node` and merged with `modifiers` on the `Node` subtypes that support them.
-      * Use `ts.canHaveDecorators()` to test whether a `Node` can have decorators.
-      * Use `ts.getDecorators()` to get the decorators of a `Node`.
-      *
-      * For example:
-      * ```ts
-      * const decorators = ts.canHaveDecorators(node) ? ts.getDecorators(node) : undefined;
-      * ```
-      */
-    val decorators: Unit = js.native
+    var _statementBrand: Any = js.native
     
     val end: Double = js.native
     
@@ -732,7 +609,7 @@ object anon {
     
     val kind: ImportEqualsDeclaration = js.native
     
-    val modifiers: js.UndefOr[NodeArray[Modifier]] = js.native
+    val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
     
     val moduleReference: ModuleReference = js.native
     
@@ -934,17 +811,7 @@ object anon {
     
     var _declarationBrand: Any = js.native
     
-    /**
-      * @deprecated `decorators` has been removed from `Node` and merged with `modifiers` on the `Node` subtypes that support them.
-      * Use `ts.canHaveDecorators()` to test whether a `Node` can have decorators.
-      * Use `ts.getDecorators()` to get the decorators of a `Node`.
-      *
-      * For example:
-      * ```ts
-      * const decorators = ts.canHaveDecorators(node) ? ts.getDecorators(node) : undefined;
-      * ```
-      */
-    val decorators: Unit = js.native
+    var _jsdocContainerBrand: Any = js.native
     
     val end: Double = js.native
     
@@ -1001,18 +868,6 @@ object anon {
     val initializer: js.UndefOr[Expression] = js.native
     
     val kind: VariableDeclaration = js.native
-    
-    /**
-      * @deprecated `modifiers` has been removed from `Node` and moved to the `Node` subtypes that support them.
-      * Use `ts.canHaveModifiers()` to test whether a `Node` can have modifiers.
-      * Use `ts.getModifiers()` to get the modifiers of a `Node`.
-      *
-      * For example:
-      * ```ts
-      * const modifiers = ts.canHaveModifiers(node) ? ts.getModifiers(node) : undefined;
-      * ```
-      */
-    val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
     
     val name: BindingName = js.native
     

@@ -1,11 +1,14 @@
 package typings.luxon
 
 import typings.luxon.anon.Floor
+import typings.luxon.luxonBooleans.`false`
+import typings.luxon.luxonStrings.`Invalid Duration`
 import typings.luxon.luxonStrings.long
 import typings.luxon.luxonStrings.narrow
 import typings.luxon.luxonStrings.short
 import typings.luxon.srcDatetimeMod.ConversionAccuracy
 import typings.luxon.srcMiscMod.NumberingSystem
+import typings.luxon.srcUtilMod.IfInvalid
 import typings.std.Intl.NumberFormatOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -33,20 +36,18 @@ object srcDurationMod {
       * @example
       * Duration.fromObject({hours: 60}).as('days') //=> 2.5
       */
-    def as(unit: DurationUnit): Double = js.native
+    def as(unit: DurationUnit): Double | IfInvalid[Double] = js.native
     
     /**
       * Get the days.
       */
-    def days: Double = js.native
+    def days: Double | IfInvalid[Double] = js.native
     
     /**
       * Equality check
       * Two Durations are equal iff they have the same units and the same values for each unit.
-      *
-      * @param other
       */
-    def equals(other: Duration): Boolean = js.native
+    def equals(other: Duration): Boolean | IfInvalid[`false`] = js.native
     
     /**
       * Get the value of unit.
@@ -60,33 +61,33 @@ object srcDurationMod {
       * @example
       * Duration.fromObject({years: 2, days: 3}).get('days') //=> 3
       */
-    def get(unit: DurationUnit): Double = js.native
+    def get(unit: DurationUnit): Double | IfInvalid[Double] = js.native
     
     /**
       * Get the hours.
       */
-    def hours: Double = js.native
+    def hours: Double | IfInvalid[Double] = js.native
     
     /**
       * Returns an explanation of why this Duration became invalid, or null if the Duration is valid
       */
-    def invalidExplanation: String = js.native
+    def invalidExplanation: String | Null = js.native
     
     /**
       * Returns an error code if this Duration became invalid, or null if the Duration is valid
       */
-    def invalidReason: String = js.native
+    def invalidReason: String | Null = js.native
     
     /**
-      * Returns whether the Duration is invalid. Invalid durations are returned by diff operations
-      * on invalid DateTimes or Intervals.
+      * Returns whether the Duration is invalid.
+      * Diff operations on invalid DateTimes or Intervals return invalid Durations.
       */
     def isValid: Boolean = js.native
     
     /**
-      * Get  the locale of a Duration, such 'en-GB'
+      * Get the locale of a Duration, such as 'en-GB'
       */
-    def locale: String = js.native
+    def locale: String | IfInvalid[Null] = js.native
     
     /**
       * Scale this Duration by the specified amount. Return a newly-constructed Duration.
@@ -101,7 +102,7 @@ object srcDurationMod {
     /**
       * Get the milliseconds.
       */
-    def milliseconds: Double = js.native
+    def milliseconds: Double | IfInvalid[Double] = js.native
     
     /**
       * Make this Duration shorter by the specified amount. Return a newly-constructed Duration.
@@ -113,12 +114,12 @@ object srcDurationMod {
     /**
       * Get the minutes.
       */
-    def minutes: Double = js.native
+    def minutes: Double | IfInvalid[Double] = js.native
     
     /**
       * Get the months.
       */
-    def months: Double = js.native
+    def months: Double | IfInvalid[Double] = js.native
     
     /**
       * Return the negative of this Duration.
@@ -139,9 +140,9 @@ object srcDurationMod {
     def normalize(): Duration = js.native
     
     /**
-      * Get the numbering system of a Duration, such 'beng'. The numbering system is used when formatting the Duration
+      * Get the numbering system of a Duration, such as 'beng'. The numbering system is used when formatting the Duration
       */
-    def numberingSystem: String = js.native
+    def numberingSystem: String | IfInvalid[Null] = js.native
     
     /**
       * Make this Duration longer by the specified amount. Return a newly-constructed Duration.
@@ -153,7 +154,7 @@ object srcDurationMod {
     /**
       * Get the quarters.
       */
-    def quarters: Double = js.native
+    def quarters: Double | IfInvalid[Double] = js.native
     
     /**
       * "Set" the locale and/or numberingSystem.  Returns a newly-constructed Duration.
@@ -175,7 +176,7 @@ object srcDurationMod {
     /**
       * Get the seconds.
       */
-    def seconds: Double = js.native
+    def seconds: Double | IfInvalid[Double] = js.native
     
     /**
       * "Set" the values of specified units. Return a newly-constructed Duration.
@@ -214,7 +215,7 @@ object srcDurationMod {
       * * `y` for years
       * Notes:
       * * Add padding by repeating the token, e.g. "yy" pads the years to two digits, "hhhh" pads the hours out to four digits
-      * * The duration will be converted to the set of units in the format string using {@link Duration.shiftTo} and the Durations's conversion accuracy setting.
+      * * The duration will be converted to the set of units in the format string using {@link Duration.shiftTo} and the Duration's conversion accuracy setting.
       *
       * @param fmt - the format string
       * @param opts - options
@@ -227,13 +228,13 @@ object srcDurationMod {
       * @example
       * Duration.fromObject({ years: 1, days: 6, seconds: 2 }).toFormat("M S") //=> "12 518402000"
       */
-    def toFormat(fmt: String): String = js.native
-    def toFormat(fmt: String, opts: Floor): String = js.native
+    def toFormat(fmt: String): String | (IfInvalid[`Invalid Duration`]) = js.native
+    def toFormat(fmt: String, opts: Floor): String | (IfInvalid[`Invalid Duration`]) = js.native
     
     /**
       * Returns a string representation of a Duration with all units included
       * To modify its behavior use the `listStyle` and any Intl.NumberFormat option, though `unitDisplay` is especially relevant. See {@link Intl.NumberFormat}.
-      * @param opts - On option object to override the formatting. Accepts the same keys as the options parameter of the native `Int.NumberFormat` constructor, as well as `listStyle`.
+      *
       * @example
       * ```js
       * var dur = Duration.fromObject({ days: 1, hours: 5, minutes: 6 })
@@ -260,14 +261,14 @@ object srcDurationMod {
       * @example
       * Duration.fromObject({ milliseconds: 6 }).toISO() //=> 'PT0.006S'
       */
-    def toISO(): String = js.native
+    def toISO(): String | IfInvalid[Null] = js.native
     
     /**
       * Returns an ISO 8601-compliant string representation of this Duration, formatted as a time of day.
       * @see https://en.wikipedia.org/wiki/ISO_8601#Times
       *
       * @param opts - options
-      * @param opts.suppressMilliseconds - exclude milliseconds from the format if they're 0. Defaults to false.
+      * @param opts.suppressMilliseconds - exclude milliseconds from the format if they are 0. Defaults to false.
       * @param opts.suppressSeconds - exclude seconds from the format if they're 0. Defaults to false.
       * @param opts.includePrefix - include the `T` prefix. Defaults to false.
       * @param opts.format - choose between the basic and extended format. Defaults to 'extended'.
@@ -283,18 +284,18 @@ object srcDurationMod {
       * @example
       * Duration.fromObject({ hours: 11 }).toISOTime({ format: 'basic' }) //=> '110000.000'
       */
-    def toISOTime(): String = js.native
-    def toISOTime(opts: ToISOTimeDurationOptions): String = js.native
+    def toISOTime(): String | IfInvalid[Null] = js.native
+    def toISOTime(opts: ToISOTimeDurationOptions): String | IfInvalid[Null] = js.native
     
     /**
       * Returns an ISO 8601 representation of this Duration appropriate for use in JSON.
       */
-    def toJSON(): String = js.native
+    def toJSON(): String | IfInvalid[Null] = js.native
     
     /**
-      * Returns an milliseconds value of this Duration.
+      * Returns a millisecond value of this Duration.
       */
-    def toMillis(): Double = js.native
+    def toMillis(): Double | IfInvalid[Double] = js.native
     
     /**
       * Returns a JavaScript object with this Duration's values.
@@ -307,12 +308,12 @@ object srcDurationMod {
     /**
       * Get the weeks
       */
-    def weeks: Double = js.native
+    def weeks: Double | IfInvalid[Double] = js.native
     
     /**
       * Get the years.
       */
-    def years: Double = js.native
+    def years: Double | IfInvalid[Double] = js.native
   }
   /* static members */
   object Duration {
@@ -674,13 +675,13 @@ object srcDurationMod {
     var includePrefix: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Exclude milliseconds from the format if they're 0
+      * Exclude milliseconds from the format if they are 0
       * @default false
       */
     var suppressMilliseconds: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Exclude seconds from the format if they're 0
+      * Exclude seconds from the format if they are 0
       * @default false
       */
     var suppressSeconds: js.UndefOr[Boolean] = js.undefined

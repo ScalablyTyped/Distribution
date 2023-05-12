@@ -92,6 +92,12 @@ object TypeFlags extends StObject {
   /* 1024 */ val EnumLiteral: typings.typescript.mod.TypeFlags.EnumLiteral & Double = js.native
   
   @js.native
+  sealed trait Freshable
+    extends StObject
+       with TypeFlags
+  /* 2976 */ val Freshable: typings.typescript.mod.TypeFlags.Freshable & Double = js.native
+  
+  @js.native
   sealed trait Index
     extends StObject
        with TypeFlags
@@ -281,7 +287,7 @@ object TypeFlags extends StObject {
   sealed trait Unit
     extends StObject
        with TypeFlags
-  /* 109440 */ val Unit: typings.typescript.mod.TypeFlags.Unit & Double = js.native
+  /* 109472 */ val Unit: typings.typescript.mod.TypeFlags.Unit & Double = js.native
   
   @js.native
   sealed trait Unknown

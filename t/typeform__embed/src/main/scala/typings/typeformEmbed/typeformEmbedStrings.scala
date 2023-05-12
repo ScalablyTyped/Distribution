@@ -36,6 +36,12 @@ object typeformEmbedStrings {
   inline def array: array = "array".asInstanceOf[array]
   
   @js.native
+  sealed trait arrayOrBoolean
+    extends StObject
+       with Transformation
+  inline def arrayOrBoolean: arrayOrBoolean = "arrayOrBoolean".asInstanceOf[arrayOrBoolean]
+  
+  @js.native
   sealed trait boolean
     extends StObject
        with Transformation

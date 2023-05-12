@@ -12,6 +12,8 @@ object sapMInputRendererMod extends Shortcut {
   val default: InputRenderer = js.native
   
   /**
+    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    *
     * Input renderer.
     *
     * InputRenderer extends the InputBaseRenderer
@@ -19,6 +21,8 @@ object sapMInputRendererMod extends Shortcut {
   trait InputRenderer extends StObject {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Adds inner css classes to the input field
       */
     def addInnerClasses(
@@ -33,6 +37,8 @@ object sapMInputRendererMod extends Shortcut {
     ): Unit
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Adds control specific class
       */
     def addOuterClasses(
@@ -47,6 +53,8 @@ object sapMInputRendererMod extends Shortcut {
     ): Unit
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Adds extra styles to the wrapper of the input field.
       */
     def addWrapperStyles(
@@ -61,6 +69,8 @@ object sapMInputRendererMod extends Shortcut {
     ): Unit
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns the inner aria describedby ids for the accessibility.
       */
     def getAriaDescribedBy(
@@ -71,6 +81,8 @@ object sapMInputRendererMod extends Shortcut {
     ): js.UndefOr[String]
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns aria accessibility role for the control. Hook for the subclasses.
       */
     def getAriaRole(
@@ -81,6 +93,8 @@ object sapMInputRendererMod extends Shortcut {
     ): String
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Write the decorations of the input - description and value-help icon.
       */
     def writeDecorations(
@@ -95,6 +109,8 @@ object sapMInputRendererMod extends Shortcut {
     ): Unit
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * add extra attributes to Input
       */
     def writeInnerAttributes(

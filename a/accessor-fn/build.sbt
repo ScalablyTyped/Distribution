@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "accessor-fn"
-version := "1.3.2-b331f1"
+version := "1.4.1-2c98bc"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

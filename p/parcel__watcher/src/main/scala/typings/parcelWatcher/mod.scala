@@ -101,11 +101,13 @@ object mod {
   
   type FilePath = String
   
+  type GlobPattern = String
+  
   trait Options extends StObject {
     
     var backend: js.UndefOr[BackendType] = js.undefined
     
-    var ignore: js.UndefOr[js.Array[FilePath]] = js.undefined
+    var ignore: js.UndefOr[js.Array[FilePath | GlobPattern]] = js.undefined
   }
   object Options {
     
@@ -121,11 +123,11 @@ object mod {
       
       inline def setBackendUndefined: Self = StObject.set(x, "backend", js.undefined)
       
-      inline def setIgnore(value: js.Array[FilePath]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: js.Array[FilePath | GlobPattern]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setIgnoreVarargs(value: FilePath*): Self = StObject.set(x, "ignore", js.Array(value*))
+      inline def setIgnoreVarargs(value: (FilePath | GlobPattern)*): Self = StObject.set(x, "ignore", js.Array(value*))
     }
   }
   

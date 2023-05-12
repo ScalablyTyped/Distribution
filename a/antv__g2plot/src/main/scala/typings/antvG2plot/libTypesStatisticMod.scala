@@ -256,6 +256,16 @@ object libTypesStatisticMod {
     
     var contain: js.UndefOr[String] = js.undefined
     
+    var containIntrinsicBlockSize: js.UndefOr[String] = js.undefined
+    
+    var containIntrinsicHeight: js.UndefOr[String] = js.undefined
+    
+    var containIntrinsicInlineSize: js.UndefOr[String] = js.undefined
+    
+    var containIntrinsicSize: js.UndefOr[String] = js.undefined
+    
+    var containIntrinsicWidth: js.UndefOr[String] = js.undefined
+    
     var container: js.UndefOr[String] = js.undefined
     
     var containerName: js.UndefOr[String] = js.undefined
@@ -263,6 +273,8 @@ object libTypesStatisticMod {
     var containerType: js.UndefOr[String] = js.undefined
     
     var content: js.UndefOr[String] = js.undefined
+    
+    var contentVisibility: js.UndefOr[String] = js.undefined
     
     var counterIncrement: js.UndefOr[String] = js.undefined
     
@@ -505,6 +517,8 @@ object libTypesStatisticMod {
     var maskSize: js.UndefOr[String] = js.undefined
     
     var maskType: js.UndefOr[String] = js.undefined
+    
+    var mathStyle: js.UndefOr[String] = js.undefined
     
     var maxBlockSize: js.UndefOr[String] = js.undefined
     
@@ -1455,6 +1469,26 @@ object libTypesStatisticMod {
       
       inline def setContain(value: String): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
       
+      inline def setContainIntrinsicBlockSize(value: String): Self = StObject.set(x, "containIntrinsicBlockSize", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicBlockSizeUndefined: Self = StObject.set(x, "containIntrinsicBlockSize", js.undefined)
+      
+      inline def setContainIntrinsicHeight(value: String): Self = StObject.set(x, "containIntrinsicHeight", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicHeightUndefined: Self = StObject.set(x, "containIntrinsicHeight", js.undefined)
+      
+      inline def setContainIntrinsicInlineSize(value: String): Self = StObject.set(x, "containIntrinsicInlineSize", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicInlineSizeUndefined: Self = StObject.set(x, "containIntrinsicInlineSize", js.undefined)
+      
+      inline def setContainIntrinsicSize(value: String): Self = StObject.set(x, "containIntrinsicSize", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicSizeUndefined: Self = StObject.set(x, "containIntrinsicSize", js.undefined)
+      
+      inline def setContainIntrinsicWidth(value: String): Self = StObject.set(x, "containIntrinsicWidth", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicWidthUndefined: Self = StObject.set(x, "containIntrinsicWidth", js.undefined)
+      
       inline def setContainUndefined: Self = StObject.set(x, "contain", js.undefined)
       
       inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
@@ -1472,6 +1506,10 @@ object libTypesStatisticMod {
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
+      inline def setContentVisibility(value: String): Self = StObject.set(x, "contentVisibility", value.asInstanceOf[js.Any])
+      
+      inline def setContentVisibilityUndefined: Self = StObject.set(x, "contentVisibility", js.undefined)
       
       inline def setCounterIncrement(value: String): Self = StObject.set(x, "counterIncrement", value.asInstanceOf[js.Any])
       
@@ -1944,6 +1982,10 @@ object libTypesStatisticMod {
       inline def setMaskTypeUndefined: Self = StObject.set(x, "maskType", js.undefined)
       
       inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+      
+      inline def setMathStyle(value: String): Self = StObject.set(x, "mathStyle", value.asInstanceOf[js.Any])
+      
+      inline def setMathStyleUndefined: Self = StObject.set(x, "mathStyle", js.undefined)
       
       inline def setMaxBlockSize(value: String): Self = StObject.set(x, "maxBlockSize", value.asInstanceOf[js.Any])
       

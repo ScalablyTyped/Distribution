@@ -12,7 +12,7 @@ open class SearchBox protected ()
   def this(props: SearchBoxProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: SearchBoxProps, context: Any) = this()
 }

@@ -6,12 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait ElevationStatus extends StObject
-/**
-  * The status returned by the <code>ElevationService</code> upon completion of
-  * an elevation request. Specify these by value, or by using the
-  * constant&#39;s name. For example, <code>'OK'</code> or
-  * <code>google.maps.ElevationStatus.OK</code>.
-  */
 @JSGlobal("google.maps.ElevationStatus")
 @js.native
 object ElevationStatus extends StObject {

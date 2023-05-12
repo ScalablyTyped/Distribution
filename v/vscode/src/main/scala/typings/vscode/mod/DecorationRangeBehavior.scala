@@ -14,8 +14,8 @@ object DecorationRangeBehavior extends StObject {
   def apply(value: Double): js.UndefOr[DecorationRangeBehavior & Double] = js.native
   
   /**
-    * The decoration's range will not widen when edits occur at the start of end.
-    */
+  		 * The decoration's range will not widen when edits occur at the start or end.
+  		 */
   @js.native
   sealed trait ClosedClosed
     extends StObject
@@ -23,8 +23,8 @@ object DecorationRangeBehavior extends StObject {
   /* 1 */ val ClosedClosed: typings.vscode.mod.DecorationRangeBehavior.ClosedClosed & Double = js.native
   
   /**
-    * The decoration's range will widen when edits occur at the end, but not at the start.
-    */
+  		 * The decoration's range will widen when edits occur at the end, but not at the start.
+  		 */
   @js.native
   sealed trait ClosedOpen
     extends StObject
@@ -32,8 +32,8 @@ object DecorationRangeBehavior extends StObject {
   /* 3 */ val ClosedOpen: typings.vscode.mod.DecorationRangeBehavior.ClosedOpen & Double = js.native
   
   /**
-    * The decoration's range will widen when edits occur at the start, but not at the end.
-    */
+  		 * The decoration's range will widen when edits occur at the start, but not at the end.
+  		 */
   @js.native
   sealed trait OpenClosed
     extends StObject
@@ -41,8 +41,8 @@ object DecorationRangeBehavior extends StObject {
   /* 2 */ val OpenClosed: typings.vscode.mod.DecorationRangeBehavior.OpenClosed & Double = js.native
   
   /**
-    * The decoration's range will widen when edits occur at the start or end.
-    */
+  		 * The decoration's range will widen when edits occur at the start or end.
+  		 */
   @js.native
   sealed trait OpenOpen
     extends StObject

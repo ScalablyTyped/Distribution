@@ -22,6 +22,11 @@ trait OrganizationAffiliation
   var code: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
+    * The contact details of communication devices available at the participatingOrganization relevant to this Affiliation.
+    */
+  var contact: js.UndefOr[js.Array[ExtendedContactDetail]] = js.undefined
+  
+  /**
     * Technical endpoints providing access to services operated for this role.
     */
   var endpoint: js.UndefOr[js.Array[Reference]] = js.undefined
@@ -42,17 +47,17 @@ trait OrganizationAffiliation
   var location: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * Health insurance provider network in which the participatingOrganization provides the role's services (if defined) at the indicated locations (if defined).
+    * e.g. Commonly used for Health Insurance provider networks.
     */
   var network: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * Organization where the role is available (primary organization/has members).
+    * For example, a Spotless Cleaning Services (participatingOrganization) is a supplier (code) to General Hospital (organization).   Similarly, General Hospital (participatingOrganization) is a member (code) of Eastern HIE (organization).  If there are two organizations that do not have a directional relationship, there would normally be a third organization that represents the joint partnership, and the two organizations would have a relationship to that joint Organization via two OrganizationAffiliations.
     */
   var organization: js.UndefOr[Reference] = js.undefined
   
   /**
-    * The Participating Organization provides/performs the role(s) defined by the code to the Primary Organization (e.g. providing services or is a member of).
+    * See comments for OrganizationAffiliation.organization above.
     */
   var participatingOrganization: js.UndefOr[Reference] = js.undefined
   
@@ -69,11 +74,6 @@ trait OrganizationAffiliation
     * Specific specialty of the participatingOrganization in the context of the role.
     */
   var specialty: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
-  
-  /**
-    * Contact details at the participatingOrganization relevant to this Affiliation.
-    */
-  var telecom: js.UndefOr[js.Array[ContactPoint]] = js.undefined
 }
 object OrganizationAffiliation {
   
@@ -94,6 +94,12 @@ object OrganizationAffiliation {
     inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     inline def setCodeVarargs(value: CodeableConcept*): Self = StObject.set(x, "code", js.Array(value*))
+    
+    inline def setContact(value: js.Array[ExtendedContactDetail]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
+    
+    inline def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
+    
+    inline def setContactVarargs(value: ExtendedContactDetail*): Self = StObject.set(x, "contact", js.Array(value*))
     
     inline def setEndpoint(value: js.Array[Reference]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
@@ -144,12 +150,6 @@ object OrganizationAffiliation {
     inline def setSpecialtyUndefined: Self = StObject.set(x, "specialty", js.undefined)
     
     inline def setSpecialtyVarargs(value: CodeableConcept*): Self = StObject.set(x, "specialty", js.Array(value*))
-    
-    inline def setTelecom(value: js.Array[ContactPoint]): Self = StObject.set(x, "telecom", value.asInstanceOf[js.Any])
-    
-    inline def setTelecomUndefined: Self = StObject.set(x, "telecom", js.undefined)
-    
-    inline def setTelecomVarargs(value: ContactPoint*): Self = StObject.set(x, "telecom", js.Array(value*))
     
     inline def set_active(value: Element): Self = StObject.set(x, "_active", value.asInstanceOf[js.Any])
     

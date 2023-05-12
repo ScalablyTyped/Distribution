@@ -14,7 +14,7 @@ object distSrcTypesMod {
   
   type BidirectionalStreamingEndpoint[InputMessage, OutputMessage, Metadata] = js.Function3[
     /* source */ AsyncIterable[InputMessage], 
-    /* sink */ Pushable_[OutputMessage], 
+    /* sink */ Pushable_[OutputMessage, Unit, Any], 
     /* metadata */ Metadata, 
     js.Promise[Unit]
   ]
@@ -47,7 +47,7 @@ object distSrcTypesMod {
   
   type ServerStreamingEndpoint[InputMessage, OutputMessage, Metadata] = js.Function3[
     /* input */ InputMessage, 
-    /* sink */ Pushable_[OutputMessage], 
+    /* sink */ Pushable_[OutputMessage, Unit, Any], 
     /* metadata */ Metadata, 
     js.Promise[Unit]
   ]

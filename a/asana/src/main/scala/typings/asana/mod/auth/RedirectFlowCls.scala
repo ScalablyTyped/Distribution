@@ -15,7 +15,6 @@ open class RedirectFlowCls protected ()
     * redirecting to an authorization page on Asana, and redirecting back with
     * the credentials.
     * @param {Object} options See `BaseBrowserFlow` for options.
-    * @constructor
     */
   def this(options: Any) = this()
   

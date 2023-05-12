@@ -1,8 +1,8 @@
 package typings.jose
 
 import typings.jose.distTypesTypesMod.FlattenedJWSInput
-import typings.jose.distTypesTypesMod.GetKeyFunction
 import typings.jose.distTypesTypesMod.JWSHeaderParameters
+import typings.jose.distTypesTypesMod.KeyLike
 import typings.std.Record
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
@@ -15,17 +15,33 @@ object distTypesJwksRemoteMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createRemoteJWKSet(url: URL): GetKeyFunction[JWSHeaderParameters, FlattenedJWSInput] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRemoteJWKSet")(url.asInstanceOf[js.Any]).asInstanceOf[GetKeyFunction[JWSHeaderParameters, FlattenedJWSInput]]
-  inline def createRemoteJWKSet(url: URL, options: RemoteJWKSetOptions): GetKeyFunction[JWSHeaderParameters, FlattenedJWSInput] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRemoteJWKSet")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GetKeyFunction[JWSHeaderParameters, FlattenedJWSInput]]
+  inline def createRemoteJWKSet[T /* <: KeyLike */](url: URL): js.Function2[
+    /* protectedHeader */ js.UndefOr[JWSHeaderParameters], 
+    /* token */ js.UndefOr[FlattenedJWSInput], 
+    js.Promise[T]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRemoteJWKSet")(url.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* protectedHeader */ js.UndefOr[JWSHeaderParameters], 
+    /* token */ js.UndefOr[FlattenedJWSInput], 
+    js.Promise[T]
+  ]]
+  inline def createRemoteJWKSet[T /* <: KeyLike */](url: URL, options: RemoteJWKSetOptions): js.Function2[
+    /* protectedHeader */ js.UndefOr[JWSHeaderParameters], 
+    /* token */ js.UndefOr[FlattenedJWSInput], 
+    js.Promise[T]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRemoteJWKSet")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
+    /* protectedHeader */ js.UndefOr[JWSHeaderParameters], 
+    /* token */ js.UndefOr[FlattenedJWSInput], 
+    js.Promise[T]
+  ]]
   
   trait RemoteJWKSetOptions extends StObject {
     
     /**
-      * An instance of [http.Agent](https://nodejs.org/api/http.html#class-httpagent) or
-      * [https.Agent](https://nodejs.org/api/https.html#class-httpsagent) to pass to the
-      * [http.get](https://nodejs.org/api/http.html#httpgetoptions-callback) or
-      * [https.get](https://nodejs.org/api/https.html#httpsgetoptions-callback) method's options. Use
-      * when behind an http(s) proxy. This is a Node.js runtime specific option, it is ignored when
+      * An instance of {@link https://nodejs.org/api/http.html#class-httpagent http.Agent} or
+      * {@link https://nodejs.org/api/https.html#class-httpsagent https.Agent} to pass to the
+      * {@link https://nodejs.org/api/http.html#httpgetoptions-callback http.get} or
+      * {@link https://nodejs.org/api/https.html#httpsgetoptions-callback https.get} method's options.
+      * Use when behind an http(s) proxy. This is a Node.js runtime specific option, it is ignored when
       * used outside of Node.js runtime.
       */
     var agent: js.UndefOr[Any] = js.undefined

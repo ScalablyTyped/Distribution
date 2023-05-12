@@ -11,22 +11,22 @@ trait PractitionerRole
   
   var _active: js.UndefOr[Element] = js.undefined
   
-  var _availabilityExceptions: js.UndefOr[Element] = js.undefined
-  
   /**
     * If this value is false, you may refer to the period to see when the role was in active use. If there is no period specified, no inference can be made about when it was active.
     */
   var active: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A description of site availability exceptions, e.g. public holiday availability. Succinctly describing all possible exceptions to normal site availability as details in the available Times and not available Times.
+    * More detailed availability information may be provided in associated Schedule/Slot resources.
+    * Systems may choose to render availability differently than it is exchanged on the interface. For example, rather than "Mon, Tue, Wed, Thur, Fri from 9am-12am; Mon, Tue, Wed, Thur, Fri from 1pm-5pm" as would be implied by two availableTime repetitions, an application could render this information as "Mon-Fri 9-12am and 1-5pm".
+    * The NotAvailableTime(s) included indicate the general days/periods where the practitioner is not available (for things such as vacation time, or public holidays).
     */
-  var availabilityExceptions: js.UndefOr[String] = js.undefined
+  var availability: js.UndefOr[js.Array[Availability]] = js.undefined
   
   /**
-    * More detailed availability information may be provided in associated Schedule/Slot resources.
+    * These could be such things as is the service mode used by this role.
     */
-  var availableTime: js.UndefOr[js.Array[PractitionerRoleAvailableTime]] = js.undefined
+  var characteristic: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * A person may have more than one role.
@@ -34,7 +34,18 @@ trait PractitionerRole
   var code: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
-    * Technical endpoints providing access to services operated for the practitioner with this role.
+    * The structure aa-BB with this exact casing is one the most widely used notations for locale. However not all systems code this but instead have it as free text. Hence CodeableConcept instead of code as the data type.
+    * Note that for non-patient oriented communication, see Practitioner.communication.  Note that all 'person' type resources (Person, RelatedPerson, Patient, Practitioner) have a communication structure that includes preferences.  Role or service oriented resources such as HealthcareService and PractitionerRole only include languages that are available for interacting with patients.
+    */
+  var communication: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  
+  /**
+    * The contact details of communication devices available relevant to the specific PractitionerRole. This can include addresses, phone numbers, fax numbers, mobile numbers, email addresses and web sites.
+    */
+  var contact: js.UndefOr[js.Array[ExtendedContactDetail]] = js.undefined
+  
+  /**
+    *  Technical endpoints providing access to services operated for the practitioner with this role. Commonly used for locating scheduling services, or identifying where to send referrals electronically.
     */
   var endpoint: js.UndefOr[js.Array[Reference]] = js.undefined
   
@@ -44,7 +55,7 @@ trait PractitionerRole
   var healthcareService: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * Business Identifiers that are specific to a role/location.
+    * A specific identifier value (e.g. Minnesota Registration ID) may appear on multiple PractitionerRole instances which could be for different periods, or different Roles (or other reasons).  A specific identifier may be included multiple times in the same PractitionerRole instance with different identifier validity periods.
     */
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
@@ -54,17 +65,12 @@ trait PractitionerRole
   var location: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * The practitioner is not available or performing this role during this period of time due to the provided reason.
-    */
-  var notAvailable: js.UndefOr[js.Array[PractitionerRoleNotAvailable]] = js.undefined
-  
-  /**
     * The organization where the Practitioner performs the roles associated.
     */
   var organization: js.UndefOr[Reference] = js.undefined
   
   /**
-    * The period during which the person is authorized to act as a practitioner in these role(s) for the organization.
+    * If a practitioner is performing a role within an organization over multiple, non-adjacent periods, there should be a distinct PractitionerRole instance for each period.  For example, if a nurse is employed at a hospital, leaves the organization for a period of time due to pandemic related stress, but returns post-pandemic to the same job role, there would be two PractitionerRole instances for the different periods of employment.
     */
   var period: js.UndefOr[Period] = js.undefined
   
@@ -78,14 +84,9 @@ trait PractitionerRole
   val resourceType_PractitionerRole: typings.fhir.fhirStrings.PractitionerRole
   
   /**
-    * Specific specialty of the practitioner.
+    * The specialty represents the functional role a practitioner is playing within an organization/location. This role may require the individual have certain qualifications, which would be represented in the Practitioner.qualifications property.  Note that qualifications may or might not relate to or be required by the practicing specialty.
     */
   var specialty: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
-  
-  /**
-    * Contact details that are specific to the role/location/service.
-    */
-  var telecom: js.UndefOr[js.Array[ContactPoint]] = js.undefined
 }
 object PractitionerRole {
   
@@ -101,21 +102,35 @@ object PractitionerRole {
     
     inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    inline def setAvailabilityExceptions(value: String): Self = StObject.set(x, "availabilityExceptions", value.asInstanceOf[js.Any])
+    inline def setAvailability(value: js.Array[Availability]): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
     
-    inline def setAvailabilityExceptionsUndefined: Self = StObject.set(x, "availabilityExceptions", js.undefined)
+    inline def setAvailabilityUndefined: Self = StObject.set(x, "availability", js.undefined)
     
-    inline def setAvailableTime(value: js.Array[PractitionerRoleAvailableTime]): Self = StObject.set(x, "availableTime", value.asInstanceOf[js.Any])
+    inline def setAvailabilityVarargs(value: Availability*): Self = StObject.set(x, "availability", js.Array(value*))
     
-    inline def setAvailableTimeUndefined: Self = StObject.set(x, "availableTime", js.undefined)
+    inline def setCharacteristic(value: js.Array[CodeableConcept]): Self = StObject.set(x, "characteristic", value.asInstanceOf[js.Any])
     
-    inline def setAvailableTimeVarargs(value: PractitionerRoleAvailableTime*): Self = StObject.set(x, "availableTime", js.Array(value*))
+    inline def setCharacteristicUndefined: Self = StObject.set(x, "characteristic", js.undefined)
+    
+    inline def setCharacteristicVarargs(value: CodeableConcept*): Self = StObject.set(x, "characteristic", js.Array(value*))
     
     inline def setCode(value: js.Array[CodeableConcept]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     inline def setCodeVarargs(value: CodeableConcept*): Self = StObject.set(x, "code", js.Array(value*))
+    
+    inline def setCommunication(value: js.Array[CodeableConcept]): Self = StObject.set(x, "communication", value.asInstanceOf[js.Any])
+    
+    inline def setCommunicationUndefined: Self = StObject.set(x, "communication", js.undefined)
+    
+    inline def setCommunicationVarargs(value: CodeableConcept*): Self = StObject.set(x, "communication", js.Array(value*))
+    
+    inline def setContact(value: js.Array[ExtendedContactDetail]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
+    
+    inline def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
+    
+    inline def setContactVarargs(value: ExtendedContactDetail*): Self = StObject.set(x, "contact", js.Array(value*))
     
     inline def setEndpoint(value: js.Array[Reference]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
@@ -141,12 +156,6 @@ object PractitionerRole {
     
     inline def setLocationVarargs(value: Reference*): Self = StObject.set(x, "location", js.Array(value*))
     
-    inline def setNotAvailable(value: js.Array[PractitionerRoleNotAvailable]): Self = StObject.set(x, "notAvailable", value.asInstanceOf[js.Any])
-    
-    inline def setNotAvailableUndefined: Self = StObject.set(x, "notAvailable", js.undefined)
-    
-    inline def setNotAvailableVarargs(value: PractitionerRoleNotAvailable*): Self = StObject.set(x, "notAvailable", js.Array(value*))
-    
     inline def setOrganization(value: Reference): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     
     inline def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
@@ -167,18 +176,8 @@ object PractitionerRole {
     
     inline def setSpecialtyVarargs(value: CodeableConcept*): Self = StObject.set(x, "specialty", js.Array(value*))
     
-    inline def setTelecom(value: js.Array[ContactPoint]): Self = StObject.set(x, "telecom", value.asInstanceOf[js.Any])
-    
-    inline def setTelecomUndefined: Self = StObject.set(x, "telecom", js.undefined)
-    
-    inline def setTelecomVarargs(value: ContactPoint*): Self = StObject.set(x, "telecom", js.Array(value*))
-    
     inline def set_active(value: Element): Self = StObject.set(x, "_active", value.asInstanceOf[js.Any])
     
     inline def set_activeUndefined: Self = StObject.set(x, "_active", js.undefined)
-    
-    inline def set_availabilityExceptions(value: Element): Self = StObject.set(x, "_availabilityExceptions", value.asInstanceOf[js.Any])
-    
-    inline def set_availabilityExceptionsUndefined: Self = StObject.set(x, "_availabilityExceptions", js.undefined)
   }
 }

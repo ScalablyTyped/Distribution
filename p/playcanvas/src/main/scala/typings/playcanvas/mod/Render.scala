@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('./mesh.js').Mesh} Mesh */
 /**
   * A render contains an array of meshes that are referenced by a single hierarchy node in a GLB
   * model, and are accessible using {@link ContainerResource#renders} property. The render is the
@@ -20,7 +19,7 @@ trait Render extends EventHandler {
     * Meshes are reference counted, and this class owns the references and is responsible for
     * releasing the meshes when they are no longer referenced.
     *
-    * @type {Mesh[]}
+    * @type {import('./mesh.js').Mesh[]}
     * @private
     */
   /* private */ var _meshes: Any = js.native
@@ -36,13 +35,13 @@ trait Render extends EventHandler {
     * Fired when the meshes are set.
     *
     * @event Render#set:meshes
-    * @param {Mesh[]} meshes - The meshes.
+    * @param {import('./mesh.js').Mesh[]} meshes - The meshes.
     * @ignore
     */
   /**
     * The meshes that the render contains.
     *
-    * @type {Mesh[]}
+    * @type {import('./mesh.js').Mesh[]}
     */
   def meshes_=(arg: js.Array[Mesh]): Unit = js.native
 }

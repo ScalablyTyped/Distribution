@@ -1,9 +1,12 @@
 package typings.fhir.r5Mod
 
 import typings.fhir.fhirStrings.`entered-in-error`
+import typings.fhir.fhirStrings.`not-done`
 import typings.fhir.fhirStrings.active
+import typings.fhir.fhirStrings.deny
 import typings.fhir.fhirStrings.draft
 import typings.fhir.fhirStrings.inactive
+import typings.fhir.fhirStrings.permit
 import typings.fhir.fhirStrings.unknown
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +17,9 @@ trait Consent
      with DomainResource
      with _FhirResource {
   
-  var _dateTime: js.UndefOr[Element] = js.undefined
+  var _date: js.UndefOr[Element] = js.undefined
+  
+  var _decision: js.UndefOr[Element] = js.undefined
   
   var _status: js.UndefOr[Element] = js.undefined
   
@@ -29,9 +34,14 @@ trait Consent
   var controller: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * Date and time the consent instance was agreed to.
+    * Date the consent instance was agreed to.
     */
-  var dateTime: js.UndefOr[String] = js.undefined
+  var date: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Action to take - permit or deny - as default.
+    */
+  var decision: js.UndefOr[deny | permit] = js.undefined
   
   /**
     * In a fully computable consent, both grantee and grantor  will be listed as actors within the consent. The Grantee and Grantor elements are for ease of search only.
@@ -54,20 +64,29 @@ trait Consent
   var manager: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * if policy and policyRule are not present, the resource must include the policy being agreed to, or complied with, and that policy and/or policyRule SHOULD be populated as soon as is practical to support workflows that require computability. In addition, the policy could be indicated via the sourceReference or sourceAttachment content.
-    * Alternately, creating an invariant for individual scopes that forces one or more of the elements to be populated as part of a profile or Implementation Guide may be advisable.
+    * Effective period for this Consent Resource and all provisions unless specified in that provision.
     */
-  var policy: js.UndefOr[js.Array[ConsentPolicy]] = js.undefined
+  var period: js.UndefOr[Period] = js.undefined
   
   /**
-    * If the policyRule is absent, computable consent would need to be constructed from the elements of the Consent resource.
+    * A Reference or URL used to uniquely identify the policy the organization will enforce for this Consent. This Reference or URL should be specific to the version of the policy and should be dereferencable to a computable policy of some form.
     */
-  var policyRule: js.UndefOr[CodeableConcept] = js.undefined
+  var policyBasis: js.UndefOr[ConsentPolicyBasis] = js.undefined
+  
+  /**
+    * A Reference to the human readable policy explaining the basis for the Consent.
+    */
+  var policyText: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * An exception to the base policy of this consent. An exception can be an addition or removal of access permissions.
     */
-  var provision: js.UndefOr[ConsentProvision] = js.undefined
+  var provision: js.UndefOr[js.Array[ConsentProvision]] = js.undefined
+  
+  /**
+    * A set of codes that indicate the regulatory basis (if any) that this consent supports.
+    */
+  var regulatoryBasis: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /** Resource Type Name (for serialization) */
   @JSName("resourceType")
@@ -86,7 +105,7 @@ trait Consent
   /**
     * This element is labeled as a modifier because the status contains the codes rejected and entered-in-error that mark the Consent as not currently valid.
     */
-  var status: draft | active | inactive | `entered-in-error` | unknown
+  var status: draft | active | inactive | `not-done` | `entered-in-error` | unknown
   
   /**
     * The patient/healthcare practitioner or group of persons to whom this consent applies.
@@ -94,13 +113,13 @@ trait Consent
   var subject: js.UndefOr[Reference] = js.undefined
   
   /**
-    * Whether a treatment instruction (e.g. artificial respiration yes or no) was verified with the patient, his/her family or another authorized person.
+    * Whether a treatment instruction (e.g. artificial respiration: yes or no) was verified with the patient, his/her family or another authorized person.
     */
   var verification: js.UndefOr[js.Array[ConsentVerification]] = js.undefined
 }
 object Consent {
   
-  inline def apply(status: draft | active | inactive | `entered-in-error` | unknown): Consent = {
+  inline def apply(status: draft | active | inactive | `not-done` | `entered-in-error` | unknown): Consent = {
     val __obj = js.Dynamic.literal(resourceType = "Consent", status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Consent]
   }
@@ -120,9 +139,13 @@ object Consent {
     
     inline def setControllerVarargs(value: Reference*): Self = StObject.set(x, "controller", js.Array(value*))
     
-    inline def setDateTime(value: String): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
+    inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    inline def setDateTimeUndefined: Self = StObject.set(x, "dateTime", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    
+    inline def setDecision(value: deny | permit): Self = StObject.set(x, "decision", value.asInstanceOf[js.Any])
+    
+    inline def setDecisionUndefined: Self = StObject.set(x, "decision", js.undefined)
     
     inline def setGrantee(value: js.Array[Reference]): Self = StObject.set(x, "grantee", value.asInstanceOf[js.Any])
     
@@ -148,19 +171,31 @@ object Consent {
     
     inline def setManagerVarargs(value: Reference*): Self = StObject.set(x, "manager", js.Array(value*))
     
-    inline def setPolicy(value: js.Array[ConsentPolicy]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    inline def setPolicyRule(value: CodeableConcept): Self = StObject.set(x, "policyRule", value.asInstanceOf[js.Any])
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
-    inline def setPolicyRuleUndefined: Self = StObject.set(x, "policyRule", js.undefined)
+    inline def setPolicyBasis(value: ConsentPolicyBasis): Self = StObject.set(x, "policyBasis", value.asInstanceOf[js.Any])
     
-    inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+    inline def setPolicyBasisUndefined: Self = StObject.set(x, "policyBasis", js.undefined)
     
-    inline def setPolicyVarargs(value: ConsentPolicy*): Self = StObject.set(x, "policy", js.Array(value*))
+    inline def setPolicyText(value: js.Array[Reference]): Self = StObject.set(x, "policyText", value.asInstanceOf[js.Any])
     
-    inline def setProvision(value: ConsentProvision): Self = StObject.set(x, "provision", value.asInstanceOf[js.Any])
+    inline def setPolicyTextUndefined: Self = StObject.set(x, "policyText", js.undefined)
+    
+    inline def setPolicyTextVarargs(value: Reference*): Self = StObject.set(x, "policyText", js.Array(value*))
+    
+    inline def setProvision(value: js.Array[ConsentProvision]): Self = StObject.set(x, "provision", value.asInstanceOf[js.Any])
     
     inline def setProvisionUndefined: Self = StObject.set(x, "provision", js.undefined)
+    
+    inline def setProvisionVarargs(value: ConsentProvision*): Self = StObject.set(x, "provision", js.Array(value*))
+    
+    inline def setRegulatoryBasis(value: js.Array[CodeableConcept]): Self = StObject.set(x, "regulatoryBasis", value.asInstanceOf[js.Any])
+    
+    inline def setRegulatoryBasisUndefined: Self = StObject.set(x, "regulatoryBasis", js.undefined)
+    
+    inline def setRegulatoryBasisVarargs(value: CodeableConcept*): Self = StObject.set(x, "regulatoryBasis", js.Array(value*))
     
     inline def setResourceType(value: typings.fhir.fhirStrings.Consent): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
@@ -176,7 +211,7 @@ object Consent {
     
     inline def setSourceReferenceVarargs(value: Reference*): Self = StObject.set(x, "sourceReference", js.Array(value*))
     
-    inline def setStatus(value: draft | active | inactive | `entered-in-error` | unknown): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: draft | active | inactive | `not-done` | `entered-in-error` | unknown): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     inline def setSubject(value: Reference): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
@@ -188,9 +223,13 @@ object Consent {
     
     inline def setVerificationVarargs(value: ConsentVerification*): Self = StObject.set(x, "verification", js.Array(value*))
     
-    inline def set_dateTime(value: Element): Self = StObject.set(x, "_dateTime", value.asInstanceOf[js.Any])
+    inline def set_date(value: Element): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
     
-    inline def set_dateTimeUndefined: Self = StObject.set(x, "_dateTime", js.undefined)
+    inline def set_dateUndefined: Self = StObject.set(x, "_date", js.undefined)
+    
+    inline def set_decision(value: Element): Self = StObject.set(x, "_decision", value.asInstanceOf[js.Any])
+    
+    inline def set_decisionUndefined: Self = StObject.set(x, "_decision", js.undefined)
     
     inline def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     

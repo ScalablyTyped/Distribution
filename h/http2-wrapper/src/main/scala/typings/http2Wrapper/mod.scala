@@ -31,6 +31,7 @@ import typings.node.nodeColonurlMod.URL
 import typings.node.streamMod.ReadableOptions
 import typings.node.tlsMod.ConnectionOptions
 import typings.node.tlsMod.KeyObject
+import typings.node.tlsMod.PeerCertificate
 import typings.node.tlsMod.PxfObject
 import typings.node.tlsMod.SecureVersion
 import typings.node.tlsMod.TLSSocket
@@ -173,8 +174,11 @@ object mod {
     *
     * For backward compatibility, `res` will only emit `'error'` if there is an`'error'` listener registered.
     *
-    * Node.js does not check whether Content-Length and the length of the
-    * body which has been transmitted are equal or not.
+    * Set `Content-Length` header to limit the response body size.
+    * If `response.strictContentLength` is set to `true`, mismatching the`Content-Length` header value will result in an `Error` being thrown,
+    * identified by `code:``'ERR_HTTP_CONTENT_LENGTH_MISMATCH'`.
+    *
+    * `Content-Length` value should be in bytes, not characters. Use `Buffer.byteLength()` to determine the length of the body in bytes.
     * @since v0.1.17
     */
   @JSImport("http2-wrapper", "ClientRequest")
@@ -211,7 +215,7 @@ object mod {
   /**
     * An `IncomingMessage` object is created by {@link Server} or {@link ClientRequest} and passed as the first argument to the `'request'` and `'response'` event respectively. It may be used to
     * access response
-    * status, headers and data.
+    * status, headers, and data.
     *
     * Different from its `socket` value which is a subclass of `stream.Duplex`, the`IncomingMessage` itself extends `stream.Readable` and is created separately to
     * parse and emit the incoming HTTP headers and payload, as the underlying socket
@@ -1287,6 +1291,10 @@ object mod {
     
     var cert: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
     
+    var checkServerIdentity: js.UndefOr[
+        js.Function2[/* hostname */ String, /* cert */ PeerCertificate, js.UndefOr[js.Error]]
+      ] = js.undefined
+    
     var ciphers: js.UndefOr[String] = js.undefined
     
     var clientCertEngine: js.UndefOr[String] = js.undefined
@@ -1311,15 +1319,23 @@ object mod {
     
     var headers: js.UndefOr[OutgoingHttpHeaders] = js.undefined
     
+    var hints: js.UndefOr[Double] = js.undefined
+    
     var honorCipherOrder: js.UndefOr[Boolean] = js.undefined
     
     var host: js.UndefOr[String | Null] = js.undefined
     
     var hostname: js.UndefOr[String | Null] = js.undefined
     
+    var insecureHTTPParser: js.UndefOr[Boolean] = js.undefined
+    
+    var joinDuplicateHeaders: js.UndefOr[Boolean] = js.undefined
+    
     var key: js.UndefOr[String | Buffer | (js.Array[String | Buffer | KeyObject])] = js.undefined
     
     var localAddress: js.UndefOr[String] = js.undefined
+    
+    var localPort: js.UndefOr[Double] = js.undefined
     
     var lookup: js.UndefOr[LookupFunction] = js.undefined
     
@@ -1372,6 +1388,8 @@ object mod {
     var timeout: js.UndefOr[Double] = js.undefined
     
     var tlsSession: js.UndefOr[Buffer] = js.undefined
+    
+    var uniqueHeaders: js.UndefOr[js.Array[String | js.Array[String]]] = js.undefined
   }
   object AutoRequestOptions {
     
@@ -1410,6 +1428,10 @@ object mod {
       inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
       
       inline def setCertVarargs(value: (String | Buffer)*): Self = StObject.set(x, "cert", js.Array(value*))
+      
+      inline def setCheckServerIdentity(value: (/* hostname */ String, /* cert */ PeerCertificate) => js.UndefOr[js.Error]): Self = StObject.set(x, "checkServerIdentity", js.Any.fromFunction2(value))
+      
+      inline def setCheckServerIdentityUndefined: Self = StObject.set(x, "checkServerIdentity", js.undefined)
       
       inline def setCiphers(value: String): Self = StObject.set(x, "ciphers", value.asInstanceOf[js.Any])
       
@@ -1451,6 +1473,10 @@ object mod {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
+      inline def setHints(value: Double): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
+      
+      inline def setHintsUndefined: Self = StObject.set(x, "hints", js.undefined)
+      
       inline def setHonorCipherOrder(value: Boolean): Self = StObject.set(x, "honorCipherOrder", value.asInstanceOf[js.Any])
       
       inline def setHonorCipherOrderUndefined: Self = StObject.set(x, "honorCipherOrder", js.undefined)
@@ -1467,6 +1493,14 @@ object mod {
       
       inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
       
+      inline def setInsecureHTTPParser(value: Boolean): Self = StObject.set(x, "insecureHTTPParser", value.asInstanceOf[js.Any])
+      
+      inline def setInsecureHTTPParserUndefined: Self = StObject.set(x, "insecureHTTPParser", js.undefined)
+      
+      inline def setJoinDuplicateHeaders(value: Boolean): Self = StObject.set(x, "joinDuplicateHeaders", value.asInstanceOf[js.Any])
+      
+      inline def setJoinDuplicateHeadersUndefined: Self = StObject.set(x, "joinDuplicateHeaders", js.undefined)
+      
       inline def setKey(value: String | Buffer | (js.Array[String | Buffer | KeyObject])): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
@@ -1476,6 +1510,10 @@ object mod {
       inline def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
       
       inline def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
+      
+      inline def setLocalPort(value: Double): Self = StObject.set(x, "localPort", value.asInstanceOf[js.Any])
+      
+      inline def setLocalPortUndefined: Self = StObject.set(x, "localPort", js.undefined)
       
       inline def setLookup(
         value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit
@@ -1591,6 +1629,12 @@ object mod {
       
       inline def setTlsSessionUndefined: Self = StObject.set(x, "tlsSession", js.undefined)
       
+      inline def setUniqueHeaders(value: js.Array[String | js.Array[String]]): Self = StObject.set(x, "uniqueHeaders", value.asInstanceOf[js.Any])
+      
+      inline def setUniqueHeadersUndefined: Self = StObject.set(x, "uniqueHeaders", js.undefined)
+      
+      inline def setUniqueHeadersVarargs(value: (String | js.Array[String])*): Self = StObject.set(x, "uniqueHeaders", js.Array(value*))
+      
       inline def set_defaultAgent(value: typings.node.httpMod.Agent): Self = StObject.set(x, "_defaultAgent", value.asInstanceOf[js.Any])
       
       inline def set_defaultAgentUndefined: Self = StObject.set(x, "_defaultAgent", js.undefined)
@@ -1694,6 +1738,10 @@ object mod {
     
     var cert: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
     
+    var checkServerIdentity: js.UndefOr[
+        js.Function2[/* hostname */ String, /* cert */ PeerCertificate, js.UndefOr[js.Error]]
+      ] = js.undefined
+    
     var ciphers: js.UndefOr[String] = js.undefined
     
     var clientCertEngine: js.UndefOr[String] = js.undefined
@@ -1720,15 +1768,23 @@ object mod {
     
     var headers: js.UndefOr[OutgoingHttpHeaders] = js.undefined
     
+    var hints: js.UndefOr[Double] = js.undefined
+    
     var honorCipherOrder: js.UndefOr[Boolean] = js.undefined
     
     var host: js.UndefOr[String | Null] = js.undefined
     
     var hostname: js.UndefOr[String | Null] = js.undefined
     
+    var insecureHTTPParser: js.UndefOr[Boolean] = js.undefined
+    
+    var joinDuplicateHeaders: js.UndefOr[Boolean] = js.undefined
+    
     var key: js.UndefOr[String | Buffer | (js.Array[String | Buffer | KeyObject])] = js.undefined
     
     var localAddress: js.UndefOr[String] = js.undefined
+    
+    var localPort: js.UndefOr[Double] = js.undefined
     
     var lookup: js.UndefOr[LookupFunction] = js.undefined
     
@@ -1779,6 +1835,8 @@ object mod {
     var timeout: js.UndefOr[Double] = js.undefined
     
     var tlsSession: js.UndefOr[Buffer] = js.undefined
+    
+    var uniqueHeaders: js.UndefOr[js.Array[String | js.Array[String]]] = js.undefined
   }
   object RequestOptions {
     
@@ -1817,6 +1875,10 @@ object mod {
       inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
       
       inline def setCertVarargs(value: (String | Buffer)*): Self = StObject.set(x, "cert", js.Array(value*))
+      
+      inline def setCheckServerIdentity(value: (/* hostname */ String, /* cert */ PeerCertificate) => js.UndefOr[js.Error]): Self = StObject.set(x, "checkServerIdentity", js.Any.fromFunction2(value))
+      
+      inline def setCheckServerIdentityUndefined: Self = StObject.set(x, "checkServerIdentity", js.undefined)
       
       inline def setCiphers(value: String): Self = StObject.set(x, "ciphers", value.asInstanceOf[js.Any])
       
@@ -1862,6 +1924,10 @@ object mod {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
+      inline def setHints(value: Double): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
+      
+      inline def setHintsUndefined: Self = StObject.set(x, "hints", js.undefined)
+      
       inline def setHonorCipherOrder(value: Boolean): Self = StObject.set(x, "honorCipherOrder", value.asInstanceOf[js.Any])
       
       inline def setHonorCipherOrderUndefined: Self = StObject.set(x, "honorCipherOrder", js.undefined)
@@ -1878,6 +1944,14 @@ object mod {
       
       inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
       
+      inline def setInsecureHTTPParser(value: Boolean): Self = StObject.set(x, "insecureHTTPParser", value.asInstanceOf[js.Any])
+      
+      inline def setInsecureHTTPParserUndefined: Self = StObject.set(x, "insecureHTTPParser", js.undefined)
+      
+      inline def setJoinDuplicateHeaders(value: Boolean): Self = StObject.set(x, "joinDuplicateHeaders", value.asInstanceOf[js.Any])
+      
+      inline def setJoinDuplicateHeadersUndefined: Self = StObject.set(x, "joinDuplicateHeaders", js.undefined)
+      
       inline def setKey(value: String | Buffer | (js.Array[String | Buffer | KeyObject])): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
@@ -1887,6 +1961,10 @@ object mod {
       inline def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
       
       inline def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
+      
+      inline def setLocalPort(value: Double): Self = StObject.set(x, "localPort", value.asInstanceOf[js.Any])
+      
+      inline def setLocalPortUndefined: Self = StObject.set(x, "localPort", js.undefined)
       
       inline def setLookup(
         value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit
@@ -1997,6 +2075,12 @@ object mod {
       inline def setTlsSession(value: Buffer): Self = StObject.set(x, "tlsSession", value.asInstanceOf[js.Any])
       
       inline def setTlsSessionUndefined: Self = StObject.set(x, "tlsSession", js.undefined)
+      
+      inline def setUniqueHeaders(value: js.Array[String | js.Array[String]]): Self = StObject.set(x, "uniqueHeaders", value.asInstanceOf[js.Any])
+      
+      inline def setUniqueHeadersUndefined: Self = StObject.set(x, "uniqueHeaders", js.undefined)
+      
+      inline def setUniqueHeadersVarargs(value: (String | js.Array[String])*): Self = StObject.set(x, "uniqueHeaders", js.Array(value*))
       
       inline def set_defaultAgent(value: typings.node.httpMod.Agent): Self = StObject.set(x, "_defaultAgent", value.asInstanceOf[js.Any])
       

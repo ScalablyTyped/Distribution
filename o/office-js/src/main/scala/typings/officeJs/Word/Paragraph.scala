@@ -278,7 +278,7 @@ trait Paragraph
   def insertBreak(breakType: BreakType, insertLocation: before): Unit = js.native
   
   /**
-    * Wraps the paragraph object with a rich text content control.
+    * Wraps the Paragraph object with a rich text content control.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -286,31 +286,18 @@ trait Paragraph
   def insertContentControl(): ContentControl = js.native
   
   def insertFileFromBase64(base64File: String, insertLocation: Replace | Start | End): Range = js.native
-  def insertFileFromBase64(base64File: String, insertLocation: Replace | Start | End, asNewParagraph: Boolean): Range = js.native
   def insertFileFromBase64(base64File: String, insertLocation: typings.officeJs.Word.InsertLocation.end): Range = js.native
-  def insertFileFromBase64(
-    base64File: String,
-    insertLocation: typings.officeJs.Word.InsertLocation.end,
-    asNewParagraph: Boolean
-  ): Range = js.native
   /**
     * Inserts a document into the paragraph at the specified location.
     *
     * @remarks
     * [Api set: WordApi 1.1]
     *
-    * @param base64File Required. The base64 encoded content of a .docx file.
+    * @param base64File Required. The Base64-encoded content of a .docx file.
     * @param insertLocation Required. The value must be 'Replace', 'Start', or 'End'.
-    * @param asNewParagraph Optional. Indicates whether to insert the content as new paragraphs. Default is false which indicates that the base64 content is merged as inline text into the existing paragraph.
     */
   def insertFileFromBase64(base64File: String, insertLocation: replace): Range = js.native
-  def insertFileFromBase64(base64File: String, insertLocation: replace, asNewParagraph: Boolean): Range = js.native
   def insertFileFromBase64(base64File: String, insertLocation: typings.officeJs.Word.InsertLocation.start): Range = js.native
-  def insertFileFromBase64(
-    base64File: String,
-    insertLocation: typings.officeJs.Word.InsertLocation.start,
-    asNewParagraph: Boolean
-  ): Range = js.native
   
   def insertHtml(html: String, insertLocation: Replace | Start | End): Range = js.native
   def insertHtml(html: String, insertLocation: typings.officeJs.Word.InsertLocation.end): Range = js.native
@@ -334,16 +321,14 @@ trait Paragraph
     * @remarks
     * [Api set: WordApi 1.1]
     *
-    * @param base64EncodedImage Required. The base64 encoded image to be inserted.
+    * @param base64EncodedImage Required. The Base64-encoded image to be inserted.
     * @param insertLocation Required. The value must be 'Replace', 'Start', or 'End'.
     */
   def insertInlinePictureFromBase64(base64EncodedImage: String, insertLocation: replace): InlinePicture = js.native
   def insertInlinePictureFromBase64(base64EncodedImage: String, insertLocation: typings.officeJs.Word.InsertLocation.start): InlinePicture = js.native
   
   def insertOoxml(ooxml: String, insertLocation: Replace | Start | End): Range = js.native
-  def insertOoxml(ooxml: String, insertLocation: Replace | Start | End, asNewParagraph: Boolean): Range = js.native
   def insertOoxml(ooxml: String, insertLocation: typings.officeJs.Word.InsertLocation.end): Range = js.native
-  def insertOoxml(ooxml: String, insertLocation: typings.officeJs.Word.InsertLocation.end, asNewParagraph: Boolean): Range = js.native
   /**
     * Inserts OOXML into the paragraph at the specified location.
     *
@@ -352,12 +337,9 @@ trait Paragraph
     *
     * @param ooxml Required. The OOXML to be inserted in the paragraph.
     * @param insertLocation Required. The value must be 'Replace', 'Start', or 'End'.
-    * @param asNewParagraph Optional. Indicates whether to insert the OOXML as new paragraphs. Default is false which indicates that the OOXML is merged as inline text into the existing paragraph.
     */
   def insertOoxml(ooxml: String, insertLocation: replace): Range = js.native
-  def insertOoxml(ooxml: String, insertLocation: replace, asNewParagraph: Boolean): Range = js.native
   def insertOoxml(ooxml: String, insertLocation: typings.officeJs.Word.InsertLocation.start): Range = js.native
-  def insertOoxml(ooxml: String, insertLocation: typings.officeJs.Word.InsertLocation.start, asNewParagraph: Boolean): Range = js.native
   
   def insertParagraph(paragraphText: String, insertLocation: Before | After): Paragraph = js.native
   def insertParagraph(paragraphText: String, insertLocation: typings.officeJs.Word.InsertLocation.after): Paragraph = js.native

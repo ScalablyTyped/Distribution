@@ -13,6 +13,13 @@ type ARN = String
 
 type ArnList = js.Array[ARN]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Standard_
+  - typings.awsSdk.awsSdkStrings.IAM_Identity_Center
+  - java.lang.String
+*/
+type AuthenticationType = _AuthenticationType | String
+
 type BrowserPolicy = String
 
 type BrowserSettingsList = js.Array[BrowserSettingsSummary]

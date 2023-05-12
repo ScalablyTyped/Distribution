@@ -1,7 +1,7 @@
 
 # Scala.js typings for undici
 
-Typings are for version 5.12.0
+Typings are for version 5.22.0
 
 ## Library description:
 An HTTP/1.1 client, written from scratch for Node.js

@@ -4,14 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.reactBeautifulDnd.mod.DraggableRubric because var conflicts: draggableId, mode. Inlined source */ trait DragStart
+trait DragStart
   extends StObject
-     with BeforeCapture {
+     with DraggableRubric {
   
-  var source: DraggableLocation
-  
-  var `type`: TypeId
+  var mode: MovementMode
 }
 object DragStart {
   
@@ -24,8 +21,6 @@ object DragStart {
   @scala.inline
   implicit open class MutableBuilder[Self <: DragStart] (val x: Self) extends AnyVal {
     
-    inline def setSource(value: DraggableLocation): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
-    
-    inline def setType(value: TypeId): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setMode(value: MovementMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
   }
 }

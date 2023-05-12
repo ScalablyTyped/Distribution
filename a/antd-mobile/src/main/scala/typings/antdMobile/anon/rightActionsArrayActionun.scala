@@ -314,6 +314,11 @@ trait rightActionsArrayActionun extends StObject {
   
   var onActionsReveal: js.UndefOr[js.Function1[/* side */ left | right, Unit]] = js.undefined
   
+  /**
+    * Allows getting a ref to the component instance.
+    * Once the component unmounts, React will set `ref.current` to `null` (or call the ref with `null` if you passed a callback ref).
+    * @see https://react.dev/learn/referencing-values-with-refs#refs-and-the-dom
+    */
   var ref: js.UndefOr[Ref[SwipeActionRef]] = js.undefined
   
   var rightActions: js.UndefOr[js.Array[typings.antdMobile.esComponentsSwipeActionSwipeActionMod.Action]] = js.undefined

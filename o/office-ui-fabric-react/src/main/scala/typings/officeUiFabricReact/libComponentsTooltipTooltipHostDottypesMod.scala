@@ -99,7 +99,8 @@ object libComponentsTooltipTooltipHostDottypesMod {
     /**
       * Content to display in the Tooltip.
       */
-    var content: js.UndefOr[String | Element | js.Array[Element]] = js.undefined
+    @JSName("content")
+    var content_ITooltipHostProps: js.UndefOr[String | Element | js.Array[Element]] = js.undefined
     
     /**
       * Length of delay before showing the tooltip on hover.

@@ -1,0 +1,28 @@
+package typings.awsSdk.clientsImagebuilderMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait Remediation extends StObject {
+  
+  /**
+    * An object that contains information about the recommended course of action to remediate the finding.
+    */
+  var recommendation: js.UndefOr[RemediationRecommendation] = js.undefined
+}
+object Remediation {
+  
+  inline def apply(): Remediation = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[Remediation]
+  }
+  
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Remediation] (val x: Self) extends AnyVal {
+    
+    inline def setRecommendation(value: RemediationRecommendation): Self = StObject.set(x, "recommendation", value.asInstanceOf[js.Any])
+    
+    inline def setRecommendationUndefined: Self = StObject.set(x, "recommendation", js.undefined)
+  }
+}

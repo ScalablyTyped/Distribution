@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-downloader-helper
 
-Typings are for version 2.1.4
+Typings are for version 2.1.7
 
 ## Library description:
 A simple http/s file downloader for node.js

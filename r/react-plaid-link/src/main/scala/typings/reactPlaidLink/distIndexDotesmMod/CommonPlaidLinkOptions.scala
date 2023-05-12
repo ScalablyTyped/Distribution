@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CommonPlaidLinkOptions extends StObject {
+trait CommonPlaidLinkOptions[T] extends StObject {
   
   // A callback that is called during a user's flow in Link.
   // See all values for eventName here https://plaid.com/docs/link/web/#link-web-onevent-eventName
@@ -20,17 +20,17 @@ trait CommonPlaidLinkOptions extends StObject {
   
   // A function that is called when a user has successfully connecter an Item.
   // The function should expect two arguments, the public_key and a metadata object
-  var onSuccess: PlaidLinkOnSuccess
+  var onSuccess: T
 }
 object CommonPlaidLinkOptions {
   
-  inline def apply(onSuccess: (/* public_token */ String, /* metadata */ PlaidLinkOnSuccessMetadata) => Unit): CommonPlaidLinkOptions = {
-    val __obj = js.Dynamic.literal(onSuccess = js.Any.fromFunction2(onSuccess))
-    __obj.asInstanceOf[CommonPlaidLinkOptions]
+  inline def apply[T](onSuccess: T): CommonPlaidLinkOptions[T] = {
+    val __obj = js.Dynamic.literal(onSuccess = onSuccess.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CommonPlaidLinkOptions[T]]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: CommonPlaidLinkOptions] (val x: Self) extends AnyVal {
+  implicit open class MutableBuilder[Self <: CommonPlaidLinkOptions[?], T] (val x: Self & CommonPlaidLinkOptions[T]) extends AnyVal {
     
     inline def setOnEvent(
       value: (/* eventName */ PlaidLinkStableEvent | String, /* metadata */ PlaidLinkOnEventMetadata) => Unit
@@ -46,6 +46,6 @@ object CommonPlaidLinkOptions {
     
     inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
     
-    inline def setOnSuccess(value: (/* public_token */ String, /* metadata */ PlaidLinkOnSuccessMetadata) => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction2(value))
+    inline def setOnSuccess(value: T): Self = StObject.set(x, "onSuccess", value.asInstanceOf[js.Any])
   }
 }

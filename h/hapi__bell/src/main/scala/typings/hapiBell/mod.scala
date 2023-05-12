@@ -10,12 +10,12 @@ import typings.hapiBell.hapiBellStrings.bell
 import typings.hapiBell.hapiBellStrings.custom
 import typings.hapiBell.hapiBellStrings.oauth
 import typings.hapiBell.hapiBellStrings.oauth2
-import typings.hapiHapi.mod.AppCredentials
-import typings.hapiHapi.mod.AuthCredentials
-import typings.hapiHapi.mod.Plugin
-import typings.hapiHapi.mod.ReqRefDefaults
-import typings.hapiHapi.mod.Request
-import typings.hapiHapi.mod.UserCredentials
+import typings.hapiHapi.libTypesPluginMod.Plugin
+import typings.hapiHapi.libTypesRequestMod.AppCredentials
+import typings.hapiHapi.libTypesRequestMod.AuthCredentials
+import typings.hapiHapi.libTypesRequestMod.ReqRefDefaults
+import typings.hapiHapi.libTypesRequestMod.Request
+import typings.hapiHapi.libTypesRequestMod.UserCredentials
 import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -29,7 +29,7 @@ object mod {
   
   @JSImport("@hapi/bell", "plugin")
   @js.native
-  val plugin: Plugin[BellOptions] = js.native
+  val plugin: Plugin[BellOptions, Unit] = js.native
   
   inline def simulate(credentialsFunc: RequestPassThrough): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("simulate")(credentialsFunc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

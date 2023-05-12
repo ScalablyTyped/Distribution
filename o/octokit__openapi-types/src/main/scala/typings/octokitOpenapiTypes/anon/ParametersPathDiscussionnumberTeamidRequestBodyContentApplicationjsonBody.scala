@@ -10,14 +10,14 @@ trait ParametersPathDiscussionnumberTeamidRequestBodyContentApplicationjsonBody 
   
   var requestBody: ContentApplicationjsonBody
   
-  var responses: `201Content111`
+  var responses: `201Content117`
 }
 object ParametersPathDiscussionnumberTeamidRequestBodyContentApplicationjsonBody {
   
   inline def apply(
     parameters: PathDiscussionnumberTeamid,
     requestBody: ContentApplicationjsonBody,
-    responses: `201Content111`
+    responses: `201Content117`
   ): ParametersPathDiscussionnumberTeamidRequestBodyContentApplicationjsonBody = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathDiscussionnumberTeamidRequestBodyContentApplicationjsonBody]
@@ -30,6 +30,6 @@ object ParametersPathDiscussionnumberTeamidRequestBodyContentApplicationjsonBody
     
     inline def setRequestBody(value: ContentApplicationjsonBody): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `201Content111`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `201Content117`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

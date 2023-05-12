@@ -182,6 +182,8 @@ object distEncodingMod {
   
   inline def createEncoder(): Encoder = ^.asInstanceOf[js.Dynamic].applyDynamic("createEncoder")().asInstanceOf[Encoder]
   
+  inline def hasContent(encoder: Encoder): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasContent")(encoder.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   inline def length(encoder: Encoder): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("length")(encoder.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   inline def set(encoder: Encoder, pos: Double, num: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(encoder.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], num.asInstanceOf[js.Any])).asInstanceOf[Unit]

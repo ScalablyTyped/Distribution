@@ -12,7 +12,7 @@ trait VpcConfig extends StObject {
   var SecurityGroupIds: typings.awsSdk.clientsComprehendMod.SecurityGroupIds
   
   /**
-    * The ID for each subnet being used in your private VPC. This subnet is a subset of the a range of IPv4 addresses used by the VPC and is specific to a given availability zone in the VPC’s region. This ID number is preceded by "subnet-", for instance: "subnet-04ccf456919e69055". For more information, see VPCs and Subnets. 
+    * The ID for each subnet being used in your private VPC. This subnet is a subset of the a range of IPv4 addresses used by the VPC and is specific to a given availability zone in the VPC’s Region. This ID number is preceded by "subnet-", for instance: "subnet-04ccf456919e69055". For more information, see VPCs and Subnets. 
     */
   var Subnets: typings.awsSdk.clientsComprehendMod.Subnets
 }

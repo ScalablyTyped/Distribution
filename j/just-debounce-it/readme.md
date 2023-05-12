@@ -1,7 +1,7 @@
 
 # Scala.js typings for just-debounce-it
 
-Typings are for version 3.1.1
+Typings are for version 3.2.0
 
 ## Library description:
 return a debounced function

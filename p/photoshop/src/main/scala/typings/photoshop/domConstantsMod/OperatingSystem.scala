@@ -1,18 +1,27 @@
 package typings.photoshop.domConstantsMod
 
-import typings.photoshop.photoshopStrings.windows
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.photoshop.photoshopStrings.windows
-  - typings.photoshop.photoshopStrings.OS2
-*/
-trait OperatingSystem extends StObject
-object OperatingSystem {
+@js.native
+sealed trait OperatingSystem extends StObject
+@JSImport("photoshop/dom/Constants", "OperatingSystem")
+@js.native
+object OperatingSystem extends StObject {
   
-  inline def OS2: typings.photoshop.photoshopStrings.OS2 = "OS2".asInstanceOf[typings.photoshop.photoshopStrings.OS2]
+  @JSBracketAccess
+  def apply(value: String): js.UndefOr[OperatingSystem & String] = js.native
   
-  inline def WINDOWS: windows = "windows".asInstanceOf[windows]
+  @js.native
+  sealed trait OS2
+    extends StObject
+       with OperatingSystem
+  /* "OS2" */ val OS2: typings.photoshop.domConstantsMod.OperatingSystem.OS2 & String = js.native
+  
+  @js.native
+  sealed trait WINDOWS
+    extends StObject
+       with OperatingSystem
+  /* "windows" */ val WINDOWS: typings.photoshop.domConstantsMod.OperatingSystem.WINDOWS & String = js.native
 }

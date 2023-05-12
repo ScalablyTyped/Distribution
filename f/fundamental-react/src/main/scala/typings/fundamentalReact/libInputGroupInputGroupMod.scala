@@ -7,6 +7,7 @@ import typings.fundamentalReact.anon.WeakValidationMapInputGro
 import typings.fundamentalReact.fundamentalReactStrings.InputGroupDotAddon
 import typings.react.mod.Component
 import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -79,6 +80,8 @@ object libInputGroupInputGroupMod {
   
   trait InputGroupAddonProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var compact: js.UndefOr[Boolean] = js.undefined
@@ -94,6 +97,10 @@ object libInputGroupInputGroupMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: InputGroupAddonProps] (val x: Self) extends AnyVal {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

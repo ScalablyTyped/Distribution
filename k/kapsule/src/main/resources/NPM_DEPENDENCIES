@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "kapsule" : "1.13.8"
+      "kapsule" : "1.14.2"
     }
   ],
   "test-dependencies" : [
     {
-      "kapsule" : "1.13.8"
+      "kapsule" : "1.14.2"
     }
   ],
   "compile-devDependencies" : [

@@ -76,8 +76,8 @@ object Actions {
     * @param compare The comparison object. Each property in this object will be checked against the items of the array.
     * @param index An optional offset to start searching from within the items array. Default 0.
     */
-  inline def GetFirst[G /* <: js.Array[GameObject] */](items: G, compare: js.Object): js.Object | GameObject = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(items.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[js.Object | GameObject]
-  inline def GetFirst[G /* <: js.Array[GameObject] */](items: G, compare: js.Object, index: Double): js.Object | GameObject = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(items.asInstanceOf[js.Any], compare.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Object | GameObject]
+  inline def GetFirst[G /* <: js.Array[GameObject] */](items: G, compare: js.Object): js.Object | GameObject | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(items.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[js.Object | GameObject | Null]
+  inline def GetFirst[G /* <: js.Array[GameObject] */](items: G, compare: js.Object, index: Double): js.Object | GameObject | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(items.asInstanceOf[js.Any], compare.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Object | GameObject | Null]
   
   /**
     * Takes an array of objects and returns the last element in the array that has properties which match
@@ -89,8 +89,8 @@ object Actions {
     * @param compare The comparison object. Each property in this object will be checked against the items of the array.
     * @param index An optional offset to start searching from within the items array. Default 0.
     */
-  inline def GetLast[G /* <: js.Array[GameObject] */](items: G, compare: js.Object): js.Object | GameObject = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLast")(items.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[js.Object | GameObject]
-  inline def GetLast[G /* <: js.Array[GameObject] */](items: G, compare: js.Object, index: Double): js.Object | GameObject = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLast")(items.asInstanceOf[js.Any], compare.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Object | GameObject]
+  inline def GetLast[G /* <: js.Array[GameObject] */](items: G, compare: js.Object): js.Object | GameObject | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLast")(items.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[js.Object | GameObject | Null]
+  inline def GetLast[G /* <: js.Array[GameObject] */](items: G, compare: js.Object, index: Double): js.Object | GameObject | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLast")(items.asInstanceOf[js.Any], compare.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Object | GameObject | Null]
   
   /**
     * Takes an array of Game Objects, or any objects that have public `x` and `y` properties,
@@ -1386,17 +1386,29 @@ object Actions {
   inline def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Unit, index: Unit, direction: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("SetY")(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any], index.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[G]
   
   /**
-    * Iterate through the items array changing the position of each element to be that of the element that came before
-    * it in the array (or after it if direction = 1)
+    * Takes an array of items, such as Game Objects, or any objects with public `x` and
+    * `y` properties and then iterates through them. As this function iterates, it moves
+    * the position of the current element to be that of the previous entry in the array.
+    * This repeats until all items have been moved.
     * 
-    * The first items position is set to x/y.
+    * The direction controls the order of iteration. A value of 0 (the default) assumes
+    * that the final item in the array is the 'head' item.
     * 
-    * The final x/y coords are returned
-    * @param items An array of Game Objects. The contents of this array are updated by this Action.
-    * @param x The x coordinate to place the first item in the array at.
-    * @param y The y coordinate to place the first item in the array at.
+    * A direction value of 1 assumes that the first item in the array is the 'head' item.
+    * 
+    * The position of the 'head' item is set to the x/y values given to this function.
+    * Every other item in the array is then updated, in sequence, to be that of the
+    * previous (or next) entry in the array.
+    * 
+    * The final x/y coords are returned, or set in the 'output' Vector2.
+    * 
+    * Think of it as being like the game Snake, where the 'head' is moved and then
+    * each body piece is moved into the space of the previous piece.
+    * @param items An array of Game Objects, or objects with public x and y positions. The contents of this array are updated by this Action.
+    * @param x The x coordinate to place the head item at.
+    * @param y The y coordinate to place the head item at.
     * @param direction The iteration direction. 0 = first to last and 1 = last to first. Default 0.
-    * @param output An optional objec to store the final objects position in.
+    * @param output An optional Vec2Like object to store the final position in.
     */
   inline def ShiftPosition[G /* <: js.Array[GameObject] */, O /* <: Vector2 */](items: G, x: Double, y: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("ShiftPosition")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[O]
   inline def ShiftPosition[G /* <: js.Array[GameObject] */, O /* <: Vector2 */](items: G, x: Double, y: Double, direction: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("ShiftPosition")(items.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[O]
@@ -1463,9 +1475,11 @@ object Actions {
   inline def ToggleVisible[G /* <: js.Array[GameObject] */](items: G): G = ^.asInstanceOf[js.Dynamic].applyDynamic("ToggleVisible")(items.asInstanceOf[js.Any]).asInstanceOf[G]
   
   /**
-    * Wrap each item's coordinates within a rectangle's area.
+    * Iterates through the given array and makes sure that each objects x and y
+    * properties are wrapped to keep them contained within the given Rectangles
+    * area.
     * @param items An array of Game Objects. The contents of this array are updated by this Action.
-    * @param rect The rectangle.
+    * @param rect The rectangle which the objects will be wrapped to remain within.
     * @param padding An amount added to each side of the rectangle during the operation. Default 0.
     */
   inline def WrapInRectangle[G /* <: js.Array[GameObject] */](items: G, rect: Rectangle): G = (^.asInstanceOf[js.Dynamic].applyDynamic("WrapInRectangle")(items.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[G]

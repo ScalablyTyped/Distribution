@@ -26,6 +26,7 @@ import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEventHandler
 import typings.reactWidgets.esmLocalizationMod.Localizer
 import typings.reactWidgets.esmLocalizationMod.RequiredDateMethods
+import typings.reactWidgets.reactWidgetsStrings._empty
 import typings.reactWidgets.reactWidgetsStrings.`additions removals`
 import typings.reactWidgets.reactWidgetsStrings.`additions text`
 import typings.reactWidgets.reactWidgetsStrings.`inline`
@@ -33,8 +34,10 @@ import typings.reactWidgets.reactWidgetsStrings.`removals additions`
 import typings.reactWidgets.reactWidgetsStrings.`removals text`
 import typings.reactWidgets.reactWidgetsStrings.`text additions`
 import typings.reactWidgets.reactWidgetsStrings.`text removals`
+import typings.reactWidgets.reactWidgetsStrings.`use-credentials`
 import typings.reactWidgets.reactWidgetsStrings.additions
 import typings.reactWidgets.reactWidgetsStrings.all
+import typings.reactWidgets.reactWidgetsStrings.anonymous
 import typings.reactWidgets.reactWidgetsStrings.ascending
 import typings.reactWidgets.reactWidgetsStrings.assertive
 import typings.reactWidgets.reactWidgetsStrings.both
@@ -79,6 +82,7 @@ import typings.reactWidgets.reactWidgetsStrings.user
 import typings.reactWidgets.reactWidgetsStrings.vertical
 import typings.reactWidgets.reactWidgetsStrings.yes
 import typings.std.Element
+import typings.std.FormData
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -104,7 +108,7 @@ object esmDatePickerInputMod extends Shortcut {
     
     var accessKey: js.UndefOr[String] = js.native
     
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.native
     
     var allowFullScreen: js.UndefOr[Boolean] = js.native
     
@@ -264,7 +268,7 @@ object esmDatePickerInputMod extends Shortcut {
     
     var coords: js.UndefOr[String] = js.native
     
-    var crossOrigin: js.UndefOr[String] = js.native
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.native
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
     
@@ -298,7 +302,7 @@ object esmDatePickerInputMod extends Shortcut {
     
     var form: js.UndefOr[String] = js.native
     
-    var formAction: js.UndefOr[String] = js.native
+    var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.native
     
     var formEncType: js.UndefOr[String] = js.native
     
@@ -588,6 +592,8 @@ object esmDatePickerInputMod extends Shortcut {
     var resource: js.UndefOr[String] = js.native
     
     var results: js.UndefOr[Double] = js.native
+    
+    var rev: js.UndefOr[String] = js.native
     
     var reversed: js.UndefOr[Boolean] = js.native
     

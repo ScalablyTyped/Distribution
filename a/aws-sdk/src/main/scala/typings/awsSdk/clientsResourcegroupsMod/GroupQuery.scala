@@ -12,7 +12,7 @@ trait GroupQuery extends StObject {
   var GroupName: typings.awsSdk.clientsResourcegroupsMod.GroupName
   
   /**
-    * The resource query that determines which AWS resources are members of the associated resource group.
+    * The resource query that determines which Amazon Web Services resources are members of the associated resource group.
     */
   var ResourceQuery: typings.awsSdk.clientsResourcegroupsMod.ResourceQuery
 }

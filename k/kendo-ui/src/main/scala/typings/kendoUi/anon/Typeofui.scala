@@ -17,6 +17,8 @@ import typings.kendoUi.kendo.ui.CaptchaOptions
 import typings.kendoUi.kendo.ui.ChatOptions
 import typings.kendoUi.kendo.ui.CheckBoxGroupOptions
 import typings.kendoUi.kendo.ui.CheckBoxOptions
+import typings.kendoUi.kendo.ui.ChipListOptions
+import typings.kendoUi.kendo.ui.ChipOptions
 import typings.kendoUi.kendo.ui.CircularProgressBarOptions
 import typings.kendoUi.kendo.ui.ColorGradientOptions
 import typings.kendoUi.kendo.ui.ColorPaletteOptions
@@ -31,6 +33,7 @@ import typings.kendoUi.kendo.ui.DateTimePickerOptions
 import typings.kendoUi.kendo.ui.DialogOptions
 import typings.kendoUi.kendo.ui.DraggableOptions
 import typings.kendoUi.kendo.ui.DrawerOptions
+import typings.kendoUi.kendo.ui.DropDownButtonOptions
 import typings.kendoUi.kendo.ui.DropDownListOptions
 import typings.kendoUi.kendo.ui.DropDownTreeOptions
 import typings.kendoUi.kendo.ui.DropTargetAreaOptions
@@ -80,9 +83,11 @@ import typings.kendoUi.kendo.ui.RatingOptions
 import typings.kendoUi.kendo.ui.ResponsivePanelOptions
 import typings.kendoUi.kendo.ui.SchedulerOptions
 import typings.kendoUi.kendo.ui.ScrollViewOptions
+import typings.kendoUi.kendo.ui.SignatureOptions
 import typings.kendoUi.kendo.ui.SkeletonContainerOptions
 import typings.kendoUi.kendo.ui.SliderOptions
 import typings.kendoUi.kendo.ui.SortableOptions
+import typings.kendoUi.kendo.ui.SplitButtonOptions
 import typings.kendoUi.kendo.ui.SplitterOptions
 import typings.kendoUi.kendo.ui.SpreadsheetOptions
 import typings.kendoUi.kendo.ui.StepperOptions
@@ -93,8 +98,10 @@ import typings.kendoUi.kendo.ui.TaskBoard_
 import typings.kendoUi.kendo.ui.TextAreaOptions
 import typings.kendoUi.kendo.ui.TextBoxOptions
 import typings.kendoUi.kendo.ui.TileLayoutOptions
+import typings.kendoUi.kendo.ui.TimeDurationPickerOptions
 import typings.kendoUi.kendo.ui.TimePickerOptions
 import typings.kendoUi.kendo.ui.TimelineOptions
+import typings.kendoUi.kendo.ui.ToggleButtonOptions
 import typings.kendoUi.kendo.ui.ToolBarOptions
 import typings.kendoUi.kendo.ui.TooltipOptions
 import typings.kendoUi.kendo.ui.TouchOptions
@@ -202,6 +209,18 @@ trait Typeofui extends StObject {
     typings.kendoUi.kendo.ui.CheckBoxGroup
   ] = js.native
   
+  var Chip: Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[ChipOptions], 
+    typings.kendoUi.kendo.ui.Chip
+  ] = js.native
+  
+  var ChipList: Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[ChipListOptions], 
+    typings.kendoUi.kendo.ui.ChipList
+  ] = js.native
+  
   var CircularProgressBar: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[CircularProgressBarOptions], 
@@ -284,6 +303,12 @@ trait Typeofui extends StObject {
     /* element */ Element, 
     /* options */ js.UndefOr[DrawerOptions], 
     typings.kendoUi.kendo.ui.Drawer
+  ] = js.native
+  
+  var DropDownButton: Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[DropDownButtonOptions], 
+    typings.kendoUi.kendo.ui.DropDownButton
   ] = js.native
   
   var DropDownList: Instantiable2[
@@ -560,6 +585,12 @@ trait Typeofui extends StObject {
     typings.kendoUi.kendo.ui.ScrollView
   ] = js.native
   
+  var Signature: Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[SignatureOptions], 
+    typings.kendoUi.kendo.ui.Signature
+  ] = js.native
+  
   var SkeletonContainer: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[SkeletonContainerOptions], 
@@ -576,6 +607,12 @@ trait Typeofui extends StObject {
     /* element */ Element, 
     /* options */ js.UndefOr[SortableOptions], 
     typings.kendoUi.kendo.ui.Sortable
+  ] = js.native
+  
+  var SplitButton: Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[SplitButtonOptions], 
+    typings.kendoUi.kendo.ui.SplitButton
   ] = js.native
   
   var Splitter: Instantiable2[
@@ -628,6 +665,12 @@ trait Typeofui extends StObject {
     typings.kendoUi.kendo.ui.TileLayout
   ] = js.native
   
+  var TimeDurationPicker: Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[TimeDurationPickerOptions], 
+    typings.kendoUi.kendo.ui.TimeDurationPicker
+  ] = js.native
+  
   var TimePicker: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[TimePickerOptions], 
@@ -638,6 +681,12 @@ trait Typeofui extends StObject {
     /* element */ Element, 
     /* options */ js.UndefOr[TimelineOptions], 
     typings.kendoUi.kendo.ui.Timeline
+  ] = js.native
+  
+  var ToggleButton: Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[ToggleButtonOptions], 
+    typings.kendoUi.kendo.ui.ToggleButton
   ] = js.native
   
   var ToolBar: Instantiable2[

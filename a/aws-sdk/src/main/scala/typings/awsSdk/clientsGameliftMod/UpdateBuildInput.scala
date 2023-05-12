@@ -12,12 +12,12 @@ trait UpdateBuildInput extends StObject {
   var BuildId: BuildIdOrArn
   
   /**
-    * A descriptive label that is associated with a build. Build names do not need to be unique. 
+    * A descriptive label associated with a build. Build names don't need to be unique. 
     */
   var Name: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
-    * Version information that is associated with a build or script. Version strings do not need to be unique.
+    * Version information associated with a build or script. Version strings don't need to be unique.
     */
   var Version: js.UndefOr[NonZeroAndMaxString] = js.undefined
 }

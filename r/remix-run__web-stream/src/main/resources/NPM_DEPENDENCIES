@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@remix-run/web-stream" : "1.0.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@remix-run/web-stream" : "1.0.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

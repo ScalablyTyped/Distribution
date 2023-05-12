@@ -81,6 +81,10 @@ object inkStrings {
   inline def foreground: foreground = "foreground".asInstanceOf[foreground]
   
   @js.native
+  sealed trait hidden extends StObject
+  inline def hidden: hidden = "hidden".asInstanceOf[hidden]
+  
+  @js.native
   sealed trait `ink-box`
     extends StObject
        with ElementNames
@@ -111,6 +115,10 @@ object inkStrings {
   @js.native
   sealed trait none extends StObject
   inline def none: none = "none".asInstanceOf[none]
+  
+  @js.native
+  sealed trait nowrap extends StObject
+  inline def nowrap: nowrap = "nowrap".asInstanceOf[nowrap]
   
   @js.native
   sealed trait relative extends StObject
@@ -149,6 +157,10 @@ object inkStrings {
   inline def stretch: stretch = "stretch".asInstanceOf[stretch]
   
   @js.native
+  sealed trait textWrap extends StObject
+  inline def textWrap: textWrap = "textWrap".asInstanceOf[textWrap]
+  
+  @js.native
   sealed trait truncate extends StObject
   inline def truncate: truncate = "truncate".asInstanceOf[truncate]
   
@@ -165,6 +177,14 @@ object inkStrings {
   inline def `truncate-start`: `truncate-start` = "truncate-start".asInstanceOf[`truncate-start`]
   
   @js.native
+  sealed trait visible extends StObject
+  inline def visible: visible = "visible".asInstanceOf[visible]
+  
+  @js.native
   sealed trait wrap extends StObject
   inline def wrap: wrap = "wrap".asInstanceOf[wrap]
+  
+  @js.native
+  sealed trait `wrap-reverse` extends StObject
+  inline def `wrap-reverse`: `wrap-reverse` = "wrap-reverse".asInstanceOf[`wrap-reverse`]
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "redux-persist-transform-filter" : "0.0.20"
+      "redux-persist-transform-filter" : "0.0.22"
     }
   ],
   "test-dependencies" : [
     {
-      "redux-persist-transform-filter" : "0.0.20"
+      "redux-persist-transform-filter" : "0.0.22"
     }
   ],
   "compile-devDependencies" : [

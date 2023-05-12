@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Studio extends StObject {
   
   /**
-    * Specifies whether the Amazon EMR Studio authenticates users using IAM or Amazon Web Services SSO.
+    * Specifies whether the Amazon EMR Studio authenticates users with IAM or IAM Identity Center.
     */
   var AuthMode: js.UndefOr[typings.awsSdk.clientsEmrMod.AuthMode] = js.undefined
   

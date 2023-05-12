@@ -8,5 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("AFRAME.THREE.Object3D")
 @js.native
+/**
+  * This creates a new {@link Object3D} object.
+  */
 open class Object3D[E /* <: BaseEvent */] ()
   extends typings.three.mod.Object3D[E]

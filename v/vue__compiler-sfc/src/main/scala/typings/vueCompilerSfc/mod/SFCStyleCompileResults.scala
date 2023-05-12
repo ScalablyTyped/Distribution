@@ -2,7 +2,7 @@ package typings.vueCompilerSfc.mod
 
 import typings.postcss.mod.LazyResult
 import typings.postcss.mod.Result
-import typings.sourceMap.mod.RawSourceMap
+import typings.sourceMapJs.mod.RawSourceMap
 import typings.std.Record
 import typings.std.Set
 import org.scalablytyped.runtime.StObject

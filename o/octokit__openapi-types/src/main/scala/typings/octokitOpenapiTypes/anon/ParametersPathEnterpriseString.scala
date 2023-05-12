@@ -8,11 +8,11 @@ trait ParametersPathEnterpriseString extends StObject {
   
   var parameters: PathEnterpriseString
   
-  var responses: `200ContentApplicationjsonTotalactivecachescount`
+  var responses: `200304403404422`
 }
 object ParametersPathEnterpriseString {
   
-  inline def apply(parameters: PathEnterpriseString, responses: `200ContentApplicationjsonTotalactivecachescount`): ParametersPathEnterpriseString = {
+  inline def apply(parameters: PathEnterpriseString, responses: `200304403404422`): ParametersPathEnterpriseString = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathEnterpriseString]
   }
@@ -22,6 +22,6 @@ object ParametersPathEnterpriseString {
     
     inline def setParameters(value: PathEnterpriseString): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200ContentApplicationjsonTotalactivecachescount`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200304403404422`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

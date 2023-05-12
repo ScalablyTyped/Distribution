@@ -1,7 +1,7 @@
 
 # Scala.js typings for monday-sdk-js
 
-Typings are for version 0.1
+Typings are for version 0.3.2
 
 ## Library description:
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mondaycom/monday-sdk-js/blob/master/LICENSE) &nbsp; [![npm version](https://img.shields.io/npm/v/monday-sdk-js.svg?style=flat)](https://www.npmjs.com/package/monday-
@@ -24,7 +24,7 @@ Typings are for version 0.1
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

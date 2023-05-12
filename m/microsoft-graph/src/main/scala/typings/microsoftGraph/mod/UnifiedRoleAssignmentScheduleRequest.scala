@@ -63,7 +63,10 @@ trait UnifiedRoleAssignmentScheduleRequest
   // The principal that's getting a role assignment through the request. Supports $expand.
   var principal: js.UndefOr[NullableOption[DirectoryObject]] = js.undefined
   
-  // Identifier of the principal that has been granted the assignment. Supports $filter (eq, ne).
+  /**
+    * Identifier of the principal that has been granted the assignment. Can be a user, role-assignable group, or a service
+    * principal. Supports $filter (eq, ne).
+    */
   var principalId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**

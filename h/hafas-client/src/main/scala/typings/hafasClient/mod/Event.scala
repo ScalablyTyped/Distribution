@@ -8,13 +8,13 @@ trait Event extends StObject {
   
   var end: js.UndefOr[String] = js.undefined
   
-  var fromLoc: js.UndefOr[Station | Stop | Location] = js.undefined
+  var fromLocation: js.UndefOr[Station | Stop | Location] = js.undefined
   
   var sections: js.UndefOr[js.Array[String]] = js.undefined
   
   var start: js.UndefOr[String] = js.undefined
   
-  var toLoc: js.UndefOr[Station | Stop | Location] = js.undefined
+  var toLocation: js.UndefOr[Station | Stop | Location] = js.undefined
 }
 object Event {
   
@@ -30,9 +30,9 @@ object Event {
     
     inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    inline def setFromLoc(value: Station | Stop | Location): Self = StObject.set(x, "fromLoc", value.asInstanceOf[js.Any])
+    inline def setFromLocation(value: Station | Stop | Location): Self = StObject.set(x, "fromLocation", value.asInstanceOf[js.Any])
     
-    inline def setFromLocUndefined: Self = StObject.set(x, "fromLoc", js.undefined)
+    inline def setFromLocationUndefined: Self = StObject.set(x, "fromLocation", js.undefined)
     
     inline def setSections(value: js.Array[String]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
     
@@ -44,8 +44,8 @@ object Event {
     
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    inline def setToLoc(value: Station | Stop | Location): Self = StObject.set(x, "toLoc", value.asInstanceOf[js.Any])
+    inline def setToLocation(value: Station | Stop | Location): Self = StObject.set(x, "toLocation", value.asInstanceOf[js.Any])
     
-    inline def setToLocUndefined: Self = StObject.set(x, "toLoc", js.undefined)
+    inline def setToLocationUndefined: Self = StObject.set(x, "toLocation", js.undefined)
   }
 }

@@ -7,29 +7,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateFleetInput extends StObject {
   
   /**
-    * The unique identifier for a custom game server build to be deployed on fleet instances. You can use either the build ID or ARN. The build must be uploaded to GameLift and in READY status. This fleet property cannot be changed later.
+    * Amazon GameLift Anywhere configuration options.
+    */
+  var AnywhereConfiguration: js.UndefOr[typings.awsSdk.clientsGameliftMod.AnywhereConfiguration] = js.undefined
+  
+  /**
+    * The unique identifier for a custom game server build to be deployed on fleet instances. You can use either the build ID or ARN. The build must be uploaded to Amazon GameLift and in READY status. This fleet property cannot be changed later.
     */
   var BuildId: js.UndefOr[BuildIdOrArn] = js.undefined
   
   /**
-    * Prompts GameLift to generate a TLS/SSL certificate for the fleet. TLS certificates are used for encrypting traffic between game clients and the game servers that are running on GameLift. By default, the CertificateConfiguration is set to DISABLED. This property cannot be changed after the fleet is created.  Note: This feature requires the Amazon Web Services Certificate Manager (ACM) service, which is not available in all Amazon Web Services regions. When working in a region that does not support this feature, a fleet creation request with certificate generation fails with a 4xx error.
+    * Prompts Amazon GameLift to generate a TLS/SSL certificate for the fleet. Amazon GameLift uses the certificates to encrypt traffic between game clients and the game servers running on Amazon GameLift. By default, the CertificateConfiguration is DISABLED. You can't change this property after you create the fleet.  Certificate Manager (ACM) certificates expire after 13 months. Certificate expiration can cause fleets to fail, preventing players from connecting to instances in the fleet. We recommend you replace fleets before 13 months, consider using fleet aliases for a smooth transition.  ACM isn't available in all Amazon Web Services regions. A fleet creation request with certificate generation enabled in an unsupported Region, fails with a 4xx error. For more information about the supported Regions, see Supported Regions in the Certificate Manager User Guide. 
     */
   var CertificateConfiguration: js.UndefOr[typings.awsSdk.clientsGameliftMod.CertificateConfiguration] = js.undefined
   
   /**
-    * A human-readable description of the fleet.
+    * The type of compute resource used to host your game servers. You can use your own compute resources with Amazon GameLift Anywhere or use Amazon EC2 instances with managed Amazon GameLift. By default, this property is set to EC2.
+    */
+  var ComputeType: js.UndefOr[typings.awsSdk.clientsGameliftMod.ComputeType] = js.undefined
+  
+  /**
+    * A description for the fleet.
     */
   var Description: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
-    * The allowed IP address ranges and port settings that allow inbound traffic to access game sessions on this fleet. If the fleet is hosting a custom game build, this property must be set before players can connect to game sessions. For Realtime Servers fleets, GameLift automatically sets TCP and UDP ranges. 
+    * The allowed IP address ranges and port settings that allow inbound traffic to access game sessions on this fleet. If the fleet is hosting a custom game build, this property must be set before players can connect to game sessions. For Realtime Servers fleets, Amazon GameLift automatically sets TCP and UDP ranges. 
     */
   var EC2InboundPermissions: js.UndefOr[IpPermissionsList] = js.undefined
   
   /**
-    * The GameLift-supported Amazon EC2 instance type to use for all fleet instances. Instance type determines the computing resources that will be used to host your game servers, including CPU, memory, storage, and networking capacity. See Amazon Elastic Compute Cloud Instance Types for detailed descriptions of Amazon EC2 instance types.
+    * The Amazon GameLift-supported Amazon EC2 instance type to use for all fleet instances. Instance type determines the computing resources that will be used to host your game servers, including CPU, memory, storage, and networking capacity. See Amazon Elastic Compute Cloud Instance Types for detailed descriptions of Amazon EC2 instance types.
     */
-  var EC2InstanceType: typings.awsSdk.clientsGameliftMod.EC2InstanceType
+  var EC2InstanceType: js.UndefOr[typings.awsSdk.clientsGameliftMod.EC2InstanceType] = js.undefined
   
   /**
     * Indicates whether to use On-Demand or Spot instances for this fleet. By default, this property is set to ON_DEMAND. Learn more about when to use  On-Demand versus Spot Instances. This property cannot be changed after the fleet is created.
@@ -42,12 +52,12 @@ trait CreateFleetInput extends StObject {
   var InstanceRoleArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * A set of remote locations to deploy additional instances to and manage as part of the fleet. This parameter can only be used when creating fleets in Amazon Web Services Regions that support multiple locations. You can add any GameLift-supported Amazon Web Services Region as a remote location, in the form of an Amazon Web Services Region code such as us-west-2. To create a fleet with instances in the home Region only, omit this parameter. 
+    * A set of remote locations to deploy additional instances to and manage as part of the fleet. This parameter can only be used when creating fleets in Amazon Web Services Regions that support multiple locations. You can add any Amazon GameLift-supported Amazon Web Services Region as a remote location, in the form of an Amazon Web Services Region code such as us-west-2. To create a fleet with instances in the home Region only, don't use this parameter.  To use this parameter, Amazon GameLift requires you to use your home location in the request.
     */
   var Locations: js.UndefOr[LocationConfigurationList] = js.undefined
   
   /**
-    *  This parameter is no longer used. To specify where GameLift should store log files once a server process shuts down, use the GameLift server API ProcessReady() and specify one or more directory paths in logParameters. See more information in the Server API Reference. 
+    *  This parameter is no longer used. To specify where Amazon GameLift should store log files once a server process shuts down, use the Amazon GameLift server API ProcessReady() and specify one or more directory paths in logParameters. For more information, see Initialize the server process in the Amazon GameLift Developer Guide. 
     */
   var LogPaths: js.UndefOr[StringList] = js.undefined
   
@@ -67,12 +77,12 @@ trait CreateFleetInput extends StObject {
   var NewGameSessionProtectionPolicy: js.UndefOr[ProtectionPolicy] = js.undefined
   
   /**
-    * Used when peering your GameLift fleet with a VPC, the unique identifier for the Amazon Web Services account that owns the VPC. You can find your account ID in the Amazon Web Services Management Console under account settings. 
+    * Used when peering your Amazon GameLift fleet with a VPC, the unique identifier for the Amazon Web Services account that owns the VPC. You can find your account ID in the Amazon Web Services Management Console under account settings. 
     */
   var PeerVpcAwsAccountId: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
-    * A unique identifier for a VPC with resources to be accessed by your GameLift fleet. The VPC must be in the same Region as your fleet. To look up a VPC ID, use the VPC Dashboard in the Amazon Web Services Management Console. Learn more about VPC peering in VPC Peering with GameLift Fleets. 
+    * A unique identifier for a VPC with resources to be accessed by your Amazon GameLift fleet. The VPC must be in the same Region as your fleet. To look up a VPC ID, use the VPC Dashboard in the Amazon Web Services Management Console. Learn more about VPC peering in VPC Peering with Amazon GameLift Fleets.
     */
   var PeerVpcId: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
@@ -87,7 +97,7 @@ trait CreateFleetInput extends StObject {
   var RuntimeConfiguration: js.UndefOr[typings.awsSdk.clientsGameliftMod.RuntimeConfiguration] = js.undefined
   
   /**
-    * The unique identifier for a Realtime configuration script to be deployed on fleet instances. You can use either the script ID or ARN. Scripts must be uploaded to GameLift prior to creating the fleet. This fleet property cannot be changed later.
+    * The unique identifier for a Realtime configuration script to be deployed on fleet instances. You can use either the script ID or ARN. Scripts must be uploaded to Amazon GameLift prior to creating the fleet. This fleet property cannot be changed later.
     */
   var ScriptId: js.UndefOr[ScriptIdOrArn] = js.undefined
   
@@ -102,19 +112,23 @@ trait CreateFleetInput extends StObject {
   var ServerLaunchPath: js.UndefOr[LaunchPathStringModel] = js.undefined
   
   /**
-    * A list of labels to assign to the new fleet resource. Tags are developer-defined key-value pairs. Tagging Amazon Web Services resources are useful for resource management, access management and cost allocation. For more information, see  Tagging Amazon Web Services Resources in the Amazon Web Services General Reference. Once the fleet is created, you can use TagResource, UntagResource, and ListTagsForResource to add, remove, and view tags. The maximum tag limit may be lower than stated. See the Amazon Web Services General Reference for actual tagging limits.
+    * A list of labels to assign to the new fleet resource. Tags are developer-defined key-value pairs. Tagging Amazon Web Services resources are useful for resource management, access management and cost allocation. For more information, see  Tagging Amazon Web Services Resources in the Amazon Web Services General Reference.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateFleetInput {
   
-  inline def apply(EC2InstanceType: EC2InstanceType, Name: NonZeroAndMaxString): CreateFleetInput = {
-    val __obj = js.Dynamic.literal(EC2InstanceType = EC2InstanceType.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
+  inline def apply(Name: NonZeroAndMaxString): CreateFleetInput = {
+    val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFleetInput]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: CreateFleetInput] (val x: Self) extends AnyVal {
+    
+    inline def setAnywhereConfiguration(value: AnywhereConfiguration): Self = StObject.set(x, "AnywhereConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setAnywhereConfigurationUndefined: Self = StObject.set(x, "AnywhereConfiguration", js.undefined)
     
     inline def setBuildId(value: BuildIdOrArn): Self = StObject.set(x, "BuildId", value.asInstanceOf[js.Any])
     
@@ -123,6 +137,10 @@ object CreateFleetInput {
     inline def setCertificateConfiguration(value: CertificateConfiguration): Self = StObject.set(x, "CertificateConfiguration", value.asInstanceOf[js.Any])
     
     inline def setCertificateConfigurationUndefined: Self = StObject.set(x, "CertificateConfiguration", js.undefined)
+    
+    inline def setComputeType(value: ComputeType): Self = StObject.set(x, "ComputeType", value.asInstanceOf[js.Any])
+    
+    inline def setComputeTypeUndefined: Self = StObject.set(x, "ComputeType", js.undefined)
     
     inline def setDescription(value: NonZeroAndMaxString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
@@ -135,6 +153,8 @@ object CreateFleetInput {
     inline def setEC2InboundPermissionsVarargs(value: IpPermission*): Self = StObject.set(x, "EC2InboundPermissions", js.Array(value*))
     
     inline def setEC2InstanceType(value: EC2InstanceType): Self = StObject.set(x, "EC2InstanceType", value.asInstanceOf[js.Any])
+    
+    inline def setEC2InstanceTypeUndefined: Self = StObject.set(x, "EC2InstanceType", js.undefined)
     
     inline def setFleetType(value: FleetType): Self = StObject.set(x, "FleetType", value.asInstanceOf[js.Any])
     

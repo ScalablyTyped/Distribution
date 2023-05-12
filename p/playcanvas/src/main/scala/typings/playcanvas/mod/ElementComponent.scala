@@ -51,16 +51,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * - [Wrapping text](http://playcanvas.github.io/#user-interface/text-wrap)
   * - [Typewriter text](http://playcanvas.github.io/#user-interface/text-typewriter)
   *
-  * @property {Color} color The color of the image for {@link ELEMENTTYPE_IMAGE} types or the color
-  * of the text for {@link ELEMENTTYPE_TEXT} types.
+  * @property {import('../../../core/math/color.js').Color} color The color of the image for
+  * {@link ELEMENTTYPE_IMAGE} types or the color of the text for {@link ELEMENTTYPE_TEXT} types.
   * @property {number} opacity The opacity of the image for {@link ELEMENTTYPE_IMAGE} types or the
   * text for {@link ELEMENTTYPE_TEXT} types.
-  * @property {Color} outlineColor The text outline effect color and opacity. Only works for
-  * {@link ELEMENTTYPE_TEXT} types.
+  * @property {import('../../../core/math/color.js').Color} outlineColor The text outline effect
+  * color and opacity. Only works for {@link ELEMENTTYPE_TEXT} types.
   * @property {number} outlineThickness The width of the text outline effect. Only works for
   * {@link ELEMENTTYPE_TEXT} types.
-  * @property {Color} shadowColor The text shadow effect color and opacity. Only works for
-  * {@link ELEMENTTYPE_TEXT} types.
+  * @property {import('../../../core/math/color.js').Color} shadowColor The text shadow effect color
+  * and opacity. Only works for {@link ELEMENTTYPE_TEXT} types.
   * @property {Vec2} shadowOffset The text shadow effect shift amount from original text. Only works
   * for {@link ELEMENTTYPE_TEXT} types.
   * @property {boolean} autoWidth Automatically set the width of the component to be the same as the
@@ -71,8 +71,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the source texture or sprite. Only works for {@link ELEMENTTYPE_IMAGE} types.
   * @property {number} fontAsset The id of the font asset used for rendering the text. Only works
   * for {@link ELEMENTTYPE_TEXT} types.
-  * @property {Font} font The font used for rendering the text. Only works for
-  * {@link ELEMENTTYPE_TEXT} types.
+  * @property {import('../../font/font.js').Font} font The font used for rendering the text. Only
+  * works for {@link ELEMENTTYPE_TEXT} types.
   * @property {number} fontSize The size of the font. Only works for {@link ELEMENTTYPE_TEXT} types.
   * @property {boolean} autoFitWidth When true the font size and line height will scale so that the
   * text fits inside the width of the Element. The font size will be scaled between minFontSize and
@@ -115,20 +115,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {@link Application#i18n}. Only works for {@link ELEMENTTYPE_TEXT} types.
   * @property {number} textureAsset The id of the texture asset to render. Only works for
   * {@link ELEMENTTYPE_IMAGE} types.
-  * @property {Texture} texture The texture to render. Only works for {@link ELEMENTTYPE_IMAGE}
-  * types.
+  * @property {import('../../../platform/graphics/texture.js').Texture} texture The texture to
+  * render. Only works for {@link ELEMENTTYPE_IMAGE} types.
   * @property {number} spriteAsset The id of the sprite asset to render. Only works for
   * {@link ELEMENTTYPE_IMAGE} types which can render either a texture or a sprite.
-  * @property {Sprite} sprite The sprite to render. Only works for {@link ELEMENTTYPE_IMAGE} types
-  * which can render either a texture or a sprite.
+  * @property {import('../../../scene/sprite.js').Sprite} sprite The sprite to render. Only works
+  * for {@link ELEMENTTYPE_IMAGE} types which can render either a texture or a sprite.
   * @property {number} spriteFrame The frame of the sprite to render. Only works for
   * {@link ELEMENTTYPE_IMAGE} types who have a sprite assigned.
   * @property {number} pixelsPerUnit The number of pixels that map to one PlayCanvas unit. Only
   * works for {@link ELEMENTTYPE_IMAGE} types who have a sliced sprite assigned.
   * @property {number} materialAsset The id of the material asset to use when rendering an image.
   * Only works for {@link ELEMENTTYPE_IMAGE} types.
-  * @property {Material} material The material to use when rendering an image. Only works for
-  * {@link ELEMENTTYPE_IMAGE} types.
+  * @property {import('../../../scene/materials/material.js').Material} material The material to use
+  * when rendering an image. Only works for {@link ELEMENTTYPE_IMAGE} types.
   * @property {Vec4} rect Specifies which region of the texture to use in order to render an image.
   * Values range from 0 to 1 and indicate u, v, width, height. Only works for
   * {@link ELEMENTTYPE_IMAGE} types.
@@ -152,7 +152,8 @@ open class ElementComponent protected () extends Component {
   /**
     * Create a new ElementComponent instance.
     *
-    * @param {ElementComponentSystem} system - The ComponentSystem that created this Component.
+    * @param {import('./system.js').ElementComponentSystem} system - The ComponentSystem that
+    * created this Component.
     * @param {Entity} entity - The Entity that this Component is attached to.
     */
   def this(system: ElementComponentSystem, entity: Entity) = this()

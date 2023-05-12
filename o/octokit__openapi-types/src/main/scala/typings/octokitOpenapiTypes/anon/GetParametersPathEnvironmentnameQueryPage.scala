@@ -7,22 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetParametersPathEnvironmentnameQueryPage extends StObject {
   
   /**
-    * Lists the deployment branch policies for an environment.
+    * List deployment branch policies
+    * @description Lists the deployment branch policies for an environment.
     *
     * Anyone with read access to the repository can use this endpoint. If the repository is private, you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
     */
   var get: ParametersPathEnvironmentnameQueryPage
   
   /**
-    * Creates a deployment branch policy for an environment.
+    * Create a deployment branch policy
+    * @description Creates a deployment branch policy for an environment.
     *
     * You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `administration:write` permission for the repository to use this endpoint.
     */
-  var post: RequestBodyContent227
+  var post: RequestBodyContent240
 }
 object GetParametersPathEnvironmentnameQueryPage {
   
-  inline def apply(get: ParametersPathEnvironmentnameQueryPage, post: RequestBodyContent227): GetParametersPathEnvironmentnameQueryPage = {
+  inline def apply(get: ParametersPathEnvironmentnameQueryPage, post: RequestBodyContent240): GetParametersPathEnvironmentnameQueryPage = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetParametersPathEnvironmentnameQueryPage]
   }
@@ -32,6 +34,6 @@ object GetParametersPathEnvironmentnameQueryPage {
     
     inline def setGet(value: ParametersPathEnvironmentnameQueryPage): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPost(value: RequestBodyContent227): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+    inline def setPost(value: RequestBodyContent240): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
   }
 }

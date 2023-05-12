@@ -11,6 +11,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(stream: js.Iterable[js.typedarray.Uint8Array]): js.Promise[js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(stream.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
-  inline def default(stream: AsyncIterable[js.typedarray.Uint8Array]): js.Promise[js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(stream.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
+  inline def default(source: js.Iterable[js.typedarray.Uint8Array]): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def default(source: AsyncIterable[js.typedarray.Uint8Array]): js.Promise[js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
+  
+  inline def default_Promise(source: js.Iterable[js.typedarray.Uint8Array]): js.Promise[js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
 }

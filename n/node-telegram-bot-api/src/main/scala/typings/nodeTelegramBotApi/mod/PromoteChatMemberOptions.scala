@@ -14,6 +14,10 @@ trait PromoteChatMemberOptions extends StObject {
   
   var can_invite_users: js.UndefOr[Boolean] = js.undefined
   
+  var can_manage_chat: js.UndefOr[Boolean] = js.undefined
+  
+  var can_manage_topics: js.UndefOr[Boolean] = js.undefined
+  
   var can_manage_video_chats: js.UndefOr[Boolean] = js.undefined
   
   var can_pin_messages: js.UndefOr[Boolean] = js.undefined
@@ -23,6 +27,8 @@ trait PromoteChatMemberOptions extends StObject {
   var can_promote_members: js.UndefOr[Boolean] = js.undefined
   
   var can_restrict_members: js.UndefOr[Boolean] = js.undefined
+  
+  var is_anonymous: js.UndefOr[Boolean] = js.undefined
 }
 object PromoteChatMemberOptions {
   
@@ -50,6 +56,14 @@ object PromoteChatMemberOptions {
     
     inline def setCan_invite_usersUndefined: Self = StObject.set(x, "can_invite_users", js.undefined)
     
+    inline def setCan_manage_chat(value: Boolean): Self = StObject.set(x, "can_manage_chat", value.asInstanceOf[js.Any])
+    
+    inline def setCan_manage_chatUndefined: Self = StObject.set(x, "can_manage_chat", js.undefined)
+    
+    inline def setCan_manage_topics(value: Boolean): Self = StObject.set(x, "can_manage_topics", value.asInstanceOf[js.Any])
+    
+    inline def setCan_manage_topicsUndefined: Self = StObject.set(x, "can_manage_topics", js.undefined)
+    
     inline def setCan_manage_video_chats(value: Boolean): Self = StObject.set(x, "can_manage_video_chats", value.asInstanceOf[js.Any])
     
     inline def setCan_manage_video_chatsUndefined: Self = StObject.set(x, "can_manage_video_chats", js.undefined)
@@ -69,5 +83,9 @@ object PromoteChatMemberOptions {
     inline def setCan_restrict_members(value: Boolean): Self = StObject.set(x, "can_restrict_members", value.asInstanceOf[js.Any])
     
     inline def setCan_restrict_membersUndefined: Self = StObject.set(x, "can_restrict_members", js.undefined)
+    
+    inline def setIs_anonymous(value: Boolean): Self = StObject.set(x, "is_anonymous", value.asInstanceOf[js.Any])
+    
+    inline def setIs_anonymousUndefined: Self = StObject.set(x, "is_anonymous", js.undefined)
   }
 }

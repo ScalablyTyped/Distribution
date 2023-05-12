@@ -1,27 +1,54 @@
 package typings.antdMobile.anon
 
+import typings.antdMobile.antdMobileInts.`0x01`
+import typings.antdMobile.antdMobileInts.`0x02`
+import typings.antdMobile.antdMobileInts.`0x04`
+import typings.antdMobile.antdMobileInts.`0x08`
+import typings.antdMobile.antdMobileInts.`0x10`
+import typings.antdMobile.antdMobileInts.`0x20`
+import typings.antdMobile.antdMobileInts.`10`
+import typings.antdMobile.antdMobileInts.`11`
+import typings.antdMobile.antdMobileInts.`12`
+import typings.antdMobile.antdMobileInts.`1`
+import typings.antdMobile.antdMobileInts.`2`
+import typings.antdMobile.antdMobileInts.`3`
+import typings.antdMobile.antdMobileInts.`4`
+import typings.antdMobile.antdMobileInts.`5`
+import typings.antdMobile.antdMobileInts.`6`
+import typings.antdMobile.antdMobileInts.`7`
+import typings.antdMobile.antdMobileInts.`8`
+import typings.antdMobile.antdMobileInts.`9`
+import typings.antdMobile.antdMobileStrings.`annotation-xml`
 import typings.antdMobile.antdMobileStrings.`object`
 import typings.antdMobile.antdMobileStrings.`var`
 import typings.antdMobile.antdMobileStrings.a
 import typings.antdMobile.antdMobileStrings.abbr
+import typings.antdMobile.antdMobileStrings.acronym
 import typings.antdMobile.antdMobileStrings.address
 import typings.antdMobile.antdMobileStrings.animate
 import typings.antdMobile.antdMobileStrings.animateMotion
 import typings.antdMobile.antdMobileStrings.animateTransform
+import typings.antdMobile.antdMobileStrings.annotation
+import typings.antdMobile.antdMobileStrings.applet
 import typings.antdMobile.antdMobileStrings.area
 import typings.antdMobile.antdMobileStrings.article
 import typings.antdMobile.antdMobileStrings.aside
 import typings.antdMobile.antdMobileStrings.audio
 import typings.antdMobile.antdMobileStrings.b
 import typings.antdMobile.antdMobileStrings.base
+import typings.antdMobile.antdMobileStrings.basefont
 import typings.antdMobile.antdMobileStrings.bdi
 import typings.antdMobile.antdMobileStrings.bdo
+import typings.antdMobile.antdMobileStrings.bgsound
+import typings.antdMobile.antdMobileStrings.big
+import typings.antdMobile.antdMobileStrings.blink
 import typings.antdMobile.antdMobileStrings.blockquote
 import typings.antdMobile.antdMobileStrings.body
 import typings.antdMobile.antdMobileStrings.br
 import typings.antdMobile.antdMobileStrings.button
 import typings.antdMobile.antdMobileStrings.canvas
 import typings.antdMobile.antdMobileStrings.caption
+import typings.antdMobile.antdMobileStrings.center
 import typings.antdMobile.antdMobileStrings.circle
 import typings.antdMobile.antdMobileStrings.cite
 import typings.antdMobile.antdMobileStrings.clipPath
@@ -37,6 +64,7 @@ import typings.antdMobile.antdMobileStrings.desc
 import typings.antdMobile.antdMobileStrings.details
 import typings.antdMobile.antdMobileStrings.dfn
 import typings.antdMobile.antdMobileStrings.dialog
+import typings.antdMobile.antdMobileStrings.dir
 import typings.antdMobile.antdMobileStrings.div
 import typings.antdMobile.antdMobileStrings.dl
 import typings.antdMobile.antdMobileStrings.dt
@@ -72,9 +100,12 @@ import typings.antdMobile.antdMobileStrings.fieldset
 import typings.antdMobile.antdMobileStrings.figcaption
 import typings.antdMobile.antdMobileStrings.figure
 import typings.antdMobile.antdMobileStrings.filter
+import typings.antdMobile.antdMobileStrings.font
 import typings.antdMobile.antdMobileStrings.footer
 import typings.antdMobile.antdMobileStrings.foreignObject
 import typings.antdMobile.antdMobileStrings.form
+import typings.antdMobile.antdMobileStrings.frame
+import typings.antdMobile.antdMobileStrings.frameset
 import typings.antdMobile.antdMobileStrings.g
 import typings.antdMobile.antdMobileStrings.h1
 import typings.antdMobile.antdMobileStrings.h2
@@ -93,54 +124,98 @@ import typings.antdMobile.antdMobileStrings.image
 import typings.antdMobile.antdMobileStrings.img
 import typings.antdMobile.antdMobileStrings.input
 import typings.antdMobile.antdMobileStrings.ins
+import typings.antdMobile.antdMobileStrings.isindex
 import typings.antdMobile.antdMobileStrings.kbd
+import typings.antdMobile.antdMobileStrings.keygen
 import typings.antdMobile.antdMobileStrings.label
 import typings.antdMobile.antdMobileStrings.legend
 import typings.antdMobile.antdMobileStrings.li
 import typings.antdMobile.antdMobileStrings.line
 import typings.antdMobile.antdMobileStrings.linearGradient
 import typings.antdMobile.antdMobileStrings.link
+import typings.antdMobile.antdMobileStrings.listing
+import typings.antdMobile.antdMobileStrings.maction
 import typings.antdMobile.antdMobileStrings.main
 import typings.antdMobile.antdMobileStrings.map
 import typings.antdMobile.antdMobileStrings.mark
 import typings.antdMobile.antdMobileStrings.marker
+import typings.antdMobile.antdMobileStrings.marquee
 import typings.antdMobile.antdMobileStrings.mask
+import typings.antdMobile.antdMobileStrings.math
 import typings.antdMobile.antdMobileStrings.menu
+import typings.antdMobile.antdMobileStrings.menuitem
+import typings.antdMobile.antdMobileStrings.merror
 import typings.antdMobile.antdMobileStrings.meta
 import typings.antdMobile.antdMobileStrings.metadata
 import typings.antdMobile.antdMobileStrings.meter
+import typings.antdMobile.antdMobileStrings.mfrac
+import typings.antdMobile.antdMobileStrings.mi
+import typings.antdMobile.antdMobileStrings.mmultiscripts
+import typings.antdMobile.antdMobileStrings.mn
+import typings.antdMobile.antdMobileStrings.mo
+import typings.antdMobile.antdMobileStrings.mover
+import typings.antdMobile.antdMobileStrings.mpadded
 import typings.antdMobile.antdMobileStrings.mpath
+import typings.antdMobile.antdMobileStrings.mphantom
+import typings.antdMobile.antdMobileStrings.mprescripts
+import typings.antdMobile.antdMobileStrings.mroot
+import typings.antdMobile.antdMobileStrings.mrow
+import typings.antdMobile.antdMobileStrings.ms
+import typings.antdMobile.antdMobileStrings.mspace
+import typings.antdMobile.antdMobileStrings.msqrt
+import typings.antdMobile.antdMobileStrings.mstyle
+import typings.antdMobile.antdMobileStrings.msub
+import typings.antdMobile.antdMobileStrings.msubsup
+import typings.antdMobile.antdMobileStrings.msup
+import typings.antdMobile.antdMobileStrings.mtable
+import typings.antdMobile.antdMobileStrings.mtd
+import typings.antdMobile.antdMobileStrings.mtext
+import typings.antdMobile.antdMobileStrings.mtr
+import typings.antdMobile.antdMobileStrings.multicol
+import typings.antdMobile.antdMobileStrings.munder
+import typings.antdMobile.antdMobileStrings.munderover
 import typings.antdMobile.antdMobileStrings.nav
+import typings.antdMobile.antdMobileStrings.nextid
+import typings.antdMobile.antdMobileStrings.nobr
+import typings.antdMobile.antdMobileStrings.noembed
+import typings.antdMobile.antdMobileStrings.noframes
 import typings.antdMobile.antdMobileStrings.noscript
 import typings.antdMobile.antdMobileStrings.ol
 import typings.antdMobile.antdMobileStrings.optgroup
 import typings.antdMobile.antdMobileStrings.option
 import typings.antdMobile.antdMobileStrings.output
 import typings.antdMobile.antdMobileStrings.p
+import typings.antdMobile.antdMobileStrings.param
 import typings.antdMobile.antdMobileStrings.path
 import typings.antdMobile.antdMobileStrings.pattern
 import typings.antdMobile.antdMobileStrings.picture
+import typings.antdMobile.antdMobileStrings.plaintext
 import typings.antdMobile.antdMobileStrings.polygon
 import typings.antdMobile.antdMobileStrings.polyline
 import typings.antdMobile.antdMobileStrings.pre
 import typings.antdMobile.antdMobileStrings.progress
 import typings.antdMobile.antdMobileStrings.q
 import typings.antdMobile.antdMobileStrings.radialGradient
+import typings.antdMobile.antdMobileStrings.rb
 import typings.antdMobile.antdMobileStrings.rect
 import typings.antdMobile.antdMobileStrings.rp
 import typings.antdMobile.antdMobileStrings.rt
+import typings.antdMobile.antdMobileStrings.rtc
 import typings.antdMobile.antdMobileStrings.ruby
 import typings.antdMobile.antdMobileStrings.s
 import typings.antdMobile.antdMobileStrings.samp
 import typings.antdMobile.antdMobileStrings.script
 import typings.antdMobile.antdMobileStrings.section
 import typings.antdMobile.antdMobileStrings.select
+import typings.antdMobile.antdMobileStrings.semantics
 import typings.antdMobile.antdMobileStrings.set
 import typings.antdMobile.antdMobileStrings.slot
 import typings.antdMobile.antdMobileStrings.small
 import typings.antdMobile.antdMobileStrings.source
+import typings.antdMobile.antdMobileStrings.spacer
 import typings.antdMobile.antdMobileStrings.span
 import typings.antdMobile.antdMobileStrings.stop
+import typings.antdMobile.antdMobileStrings.strike
 import typings.antdMobile.antdMobileStrings.strong
 import typings.antdMobile.antdMobileStrings.style
 import typings.antdMobile.antdMobileStrings.sub
@@ -164,12 +239,14 @@ import typings.antdMobile.antdMobileStrings.title
 import typings.antdMobile.antdMobileStrings.tr
 import typings.antdMobile.antdMobileStrings.track
 import typings.antdMobile.antdMobileStrings.tspan
+import typings.antdMobile.antdMobileStrings.tt
 import typings.antdMobile.antdMobileStrings.u
 import typings.antdMobile.antdMobileStrings.ul
 import typings.antdMobile.antdMobileStrings.use
 import typings.antdMobile.antdMobileStrings.video
 import typings.antdMobile.antdMobileStrings.view
 import typings.antdMobile.antdMobileStrings.wbr
+import typings.antdMobile.antdMobileStrings.xmp
 import typings.antdMobile.esUtilsRenderMod.ContainerType
 import typings.std.AddEventListenerOptions
 import typings.std.ChildNode
@@ -193,11 +270,15 @@ import typings.std.HTMLDataElement
 import typings.std.HTMLDataListElement
 import typings.std.HTMLDetailsElement
 import typings.std.HTMLDialogElement
+import typings.std.HTMLDirectoryElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLEmbedElement
 import typings.std.HTMLFieldSetElement
+import typings.std.HTMLFontElement
 import typings.std.HTMLFormElement
+import typings.std.HTMLFrameElement
+import typings.std.HTMLFrameSetElement
 import typings.std.HTMLHRElement
 import typings.std.HTMLHeadElement
 import typings.std.HTMLHeadingElement
@@ -210,6 +291,7 @@ import typings.std.HTMLLabelElement
 import typings.std.HTMLLegendElement
 import typings.std.HTMLLinkElement
 import typings.std.HTMLMapElement
+import typings.std.HTMLMarqueeElement
 import typings.std.HTMLMenuElement
 import typings.std.HTMLMetaElement
 import typings.std.HTMLMeterElement
@@ -220,6 +302,7 @@ import typings.std.HTMLOptGroupElement
 import typings.std.HTMLOptionElement
 import typings.std.HTMLOutputElement
 import typings.std.HTMLParagraphElement
+import typings.std.HTMLParamElement
 import typings.std.HTMLPictureElement
 import typings.std.HTMLPreElement
 import typings.std.HTMLProgressElement
@@ -242,7 +325,9 @@ import typings.std.HTMLTimeElement
 import typings.std.HTMLTitleElement
 import typings.std.HTMLTrackElement
 import typings.std.HTMLUListElement
+import typings.std.HTMLUnknownElement
 import typings.std.HTMLVideoElement
+import typings.std.MathMLElement
 import typings.std.Node
 import typings.std.NodeListOf
 import typings.std.ParentNode
@@ -316,71 +401,71 @@ trait DocumentFragmentMARKRootu
      with ContainerType {
   
   /* standard dom */
-  val ATTRIBUTE_NODE: Double = js.native
+  val ATTRIBUTE_NODE: `2` = js.native
   
   /** node is a CDATASection node. */
   /* standard dom */
-  val CDATA_SECTION_NODE: Double = js.native
+  val CDATA_SECTION_NODE: `4` = js.native
   
   /** node is a Comment node. */
   /* standard dom */
-  val COMMENT_NODE: Double = js.native
+  val COMMENT_NODE: `8` = js.native
   
   /** node is a DocumentFragment node. */
   /* standard dom */
-  val DOCUMENT_FRAGMENT_NODE: Double = js.native
+  val DOCUMENT_FRAGMENT_NODE: `11` = js.native
   
   /** node is a document. */
   /* standard dom */
-  val DOCUMENT_NODE: Double = js.native
+  val DOCUMENT_NODE: `9` = js.native
   
   /** Set when other is a descendant of node. */
   /* standard dom */
-  val DOCUMENT_POSITION_CONTAINED_BY: Double = js.native
+  val DOCUMENT_POSITION_CONTAINED_BY: `0x10` = js.native
   
   /** Set when other is an ancestor of node. */
   /* standard dom */
-  val DOCUMENT_POSITION_CONTAINS: Double = js.native
+  val DOCUMENT_POSITION_CONTAINS: `0x08` = js.native
   
   /** Set when node and other are not in the same tree. */
   /* standard dom */
-  val DOCUMENT_POSITION_DISCONNECTED: Double = js.native
+  val DOCUMENT_POSITION_DISCONNECTED: `0x01` = js.native
   
   /** Set when other is following node. */
   /* standard dom */
-  val DOCUMENT_POSITION_FOLLOWING: Double = js.native
+  val DOCUMENT_POSITION_FOLLOWING: `0x04` = js.native
   
   /* standard dom */
-  val DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC: Double = js.native
+  val DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC: `0x20` = js.native
   
   /** Set when other is preceding node. */
   /* standard dom */
-  val DOCUMENT_POSITION_PRECEDING: Double = js.native
+  val DOCUMENT_POSITION_PRECEDING: `0x02` = js.native
   
   /** node is a doctype. */
   /* standard dom */
-  val DOCUMENT_TYPE_NODE: Double = js.native
+  val DOCUMENT_TYPE_NODE: `10` = js.native
   
   /** node is an element. */
   /* standard dom */
-  val ELEMENT_NODE: Double = js.native
+  val ELEMENT_NODE: `1` = js.native
   
   /* standard dom */
-  val ENTITY_NODE: Double = js.native
+  val ENTITY_NODE: `6` = js.native
   
   /* standard dom */
-  val ENTITY_REFERENCE_NODE: Double = js.native
+  val ENTITY_REFERENCE_NODE: `5` = js.native
   
   /* standard dom */
-  val NOTATION_NODE: Double = js.native
+  val NOTATION_NODE: `12` = js.native
   
   /** node is a ProcessingInstruction node. */
   /* standard dom */
-  val PROCESSING_INSTRUCTION_NODE: Double = js.native
+  val PROCESSING_INSTRUCTION_NODE: `7` = js.native
   
   /** node is a Text node. */
   /* standard dom */
-  val TEXT_NODE: Double = js.native
+  val TEXT_NODE: `3` = js.native
   
   /**
     * Appends an event listener for events whose type attribute value is type. The callback argument sets the callback that will be invoked when the event is dispatched.
@@ -560,6 +645,10 @@ trait DocumentFragmentMARKRootu
   def querySelectorAll_a(selectors: a): NodeListOf[HTMLAnchorElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_abbr(selectors: abbr): NodeListOf[HTMLElement] = js.native
+  /** @deprecated */
+  /* standard dom */
+  @JSName("querySelectorAll")
+  def querySelectorAll_acronym(selectors: acronym): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_address(selectors: address): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
@@ -568,6 +657,13 @@ trait DocumentFragmentMARKRootu
   def querySelectorAll_animateMotion(selectors: animateMotion): NodeListOf[SVGAnimateMotionElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_animateTransform(selectors: animateTransform): NodeListOf[SVGAnimateTransformElement] = js.native
+  /* standard dom */
+  @JSName("querySelectorAll")
+  def querySelectorAll_annotation(selectors: annotation): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_annotationxml(selectors: `annotation-xml`): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_applet(selectors: applet): NodeListOf[HTMLUnknownElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_area(selectors: area): NodeListOf[HTMLAreaElement] = js.native
   @JSName("querySelectorAll")
@@ -581,9 +677,17 @@ trait DocumentFragmentMARKRootu
   @JSName("querySelectorAll")
   def querySelectorAll_base(selectors: base): NodeListOf[HTMLBaseElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_basefont(selectors: basefont): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_bdi(selectors: bdi): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_bdo(selectors: bdo): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_bgsound(selectors: bgsound): NodeListOf[HTMLUnknownElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_big(selectors: big): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_blink(selectors: blink): NodeListOf[HTMLUnknownElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_blockquote(selectors: blockquote): NodeListOf[HTMLQuoteElement] = js.native
   @JSName("querySelectorAll")
@@ -596,6 +700,8 @@ trait DocumentFragmentMARKRootu
   def querySelectorAll_canvas(selectors: canvas): NodeListOf[HTMLCanvasElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_caption(selectors: caption): NodeListOf[HTMLTableCaptionElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_center(selectors: center): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_circle(selectors: circle): NodeListOf[SVGCircleElement] = js.native
   @JSName("querySelectorAll")
@@ -626,6 +732,8 @@ trait DocumentFragmentMARKRootu
   def querySelectorAll_dfn(selectors: dfn): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_dialog(selectors: dialog): NodeListOf[HTMLDialogElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_dir(selectors: dir): NodeListOf[HTMLDirectoryElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_div(selectors: div): NodeListOf[HTMLDivElement] = js.native
   @JSName("querySelectorAll")
@@ -697,11 +805,17 @@ trait DocumentFragmentMARKRootu
   @JSName("querySelectorAll")
   def querySelectorAll_filter(selectors: filter): NodeListOf[SVGFilterElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_font(selectors: font): NodeListOf[HTMLFontElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_footer(selectors: footer): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_foreignObject(selectors: foreignObject): NodeListOf[SVGForeignObjectElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_form(selectors: form): NodeListOf[HTMLFormElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_frame(selectors: frame): NodeListOf[HTMLFrameElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_frameset(selectors: frameset): NodeListOf[HTMLFrameSetElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_g(selectors: g): NodeListOf[SVGGElement] = js.native
   @JSName("querySelectorAll")
@@ -739,7 +853,11 @@ trait DocumentFragmentMARKRootu
   @JSName("querySelectorAll")
   def querySelectorAll_ins(selectors: ins): NodeListOf[HTMLModElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_isindex(selectors: isindex): NodeListOf[HTMLUnknownElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_kbd(selectors: kbd): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_keygen(selectors: keygen): NodeListOf[HTMLUnknownElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_label(selectors: label): NodeListOf[HTMLLabelElement] = js.native
   @JSName("querySelectorAll")
@@ -753,6 +871,10 @@ trait DocumentFragmentMARKRootu
   @JSName("querySelectorAll")
   def querySelectorAll_link(selectors: link): NodeListOf[HTMLLinkElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_listing(selectors: listing): NodeListOf[HTMLPreElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_maction(selectors: maction): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_main(selectors: main): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_map(selectors: map): NodeListOf[HTMLMapElement] = js.native
@@ -761,9 +883,17 @@ trait DocumentFragmentMARKRootu
   @JSName("querySelectorAll")
   def querySelectorAll_marker(selectors: marker): NodeListOf[SVGMarkerElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_marquee(selectors: marquee): NodeListOf[HTMLMarqueeElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_mask(selectors: mask): NodeListOf[SVGMaskElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_math(selectors: math): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_menu(selectors: menu): NodeListOf[HTMLMenuElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_menuitem(selectors: menuitem): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_merror(selectors: merror): NodeListOf[MathMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_meta(selectors: meta): NodeListOf[HTMLMetaElement] = js.native
   @JSName("querySelectorAll")
@@ -771,9 +901,67 @@ trait DocumentFragmentMARKRootu
   @JSName("querySelectorAll")
   def querySelectorAll_meter(selectors: meter): NodeListOf[HTMLMeterElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_mfrac(selectors: mfrac): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mi(selectors: mi): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mmultiscripts(selectors: mmultiscripts): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mn(selectors: mn): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mo(selectors: mo): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mover(selectors: mover): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mpadded(selectors: mpadded): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_mpath(selectors: mpath): NodeListOf[SVGMPathElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_mphantom(selectors: mphantom): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mprescripts(selectors: mprescripts): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mroot(selectors: mroot): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mrow(selectors: mrow): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_ms(selectors: ms): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mspace(selectors: mspace): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_msqrt(selectors: msqrt): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mstyle(selectors: mstyle): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_msub(selectors: msub): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_msubsup(selectors: msubsup): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_msup(selectors: msup): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mtable(selectors: mtable): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mtd(selectors: mtd): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mtext(selectors: mtext): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mtr(selectors: mtr): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_multicol(selectors: multicol): NodeListOf[HTMLUnknownElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_munder(selectors: munder): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_munderover(selectors: munderover): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_nav(selectors: nav): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_nextid(selectors: nextid): NodeListOf[HTMLUnknownElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_nobr(selectors: nobr): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_noembed(selectors: noembed): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_noframes(selectors: noframes): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_noscript(selectors: noscript): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
@@ -789,11 +977,15 @@ trait DocumentFragmentMARKRootu
   @JSName("querySelectorAll")
   def querySelectorAll_p(selectors: p): NodeListOf[HTMLParagraphElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_param(selectors: param): NodeListOf[HTMLParamElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_path(selectors: path): NodeListOf[SVGPathElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_pattern(selectors: pattern): NodeListOf[SVGPatternElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_picture(selectors: picture): NodeListOf[HTMLPictureElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_plaintext(selectors: plaintext): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_polygon(selectors: polygon): NodeListOf[SVGPolygonElement] = js.native
   @JSName("querySelectorAll")
@@ -807,11 +999,15 @@ trait DocumentFragmentMARKRootu
   @JSName("querySelectorAll")
   def querySelectorAll_radialGradient(selectors: radialGradient): NodeListOf[SVGRadialGradientElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_rb(selectors: rb): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_rect(selectors: rect): NodeListOf[SVGRectElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_rp(selectors: rp): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_rt(selectors: rt): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_rtc(selectors: rtc): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_ruby(selectors: ruby): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
@@ -825,6 +1021,8 @@ trait DocumentFragmentMARKRootu
   @JSName("querySelectorAll")
   def querySelectorAll_select(selectors: select): NodeListOf[HTMLSelectElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_semantics(selectors: semantics): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_set(selectors: set): NodeListOf[SVGSetElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_slot(selectors: slot): NodeListOf[HTMLSlotElement] = js.native
@@ -833,9 +1031,13 @@ trait DocumentFragmentMARKRootu
   @JSName("querySelectorAll")
   def querySelectorAll_source(selectors: source): NodeListOf[HTMLSourceElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_spacer(selectors: spacer): NodeListOf[HTMLUnknownElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_span(selectors: span): NodeListOf[HTMLSpanElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_stop(selectors: stop): NodeListOf[SVGStopElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_strike(selectors: strike): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_strong(selectors: strong): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
@@ -883,6 +1085,8 @@ trait DocumentFragmentMARKRootu
   @JSName("querySelectorAll")
   def querySelectorAll_tspan(selectors: tspan): NodeListOf[SVGTSpanElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_tt(selectors: tt): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_u(selectors: u): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_ul(selectors: ul): NodeListOf[HTMLUListElement] = js.native
@@ -896,6 +1100,8 @@ trait DocumentFragmentMARKRootu
   def querySelectorAll_view(selectors: view): NodeListOf[SVGViewElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_wbr(selectors: wbr): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_xmp(selectors: xmp): NodeListOf[HTMLPreElement] = js.native
   
   /** Returns the first element that is a descendant of node that matches selectors. */
   /* standard dom */
@@ -903,6 +1109,10 @@ trait DocumentFragmentMARKRootu
   def querySelector_a(selectors: a): HTMLAnchorElement | Null = js.native
   @JSName("querySelector")
   def querySelector_abbr(selectors: abbr): HTMLElement | Null = js.native
+  /** @deprecated */
+  /* standard dom */
+  @JSName("querySelector")
+  def querySelector_acronym(selectors: acronym): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_address(selectors: address): HTMLElement | Null = js.native
   @JSName("querySelector")
@@ -911,6 +1121,13 @@ trait DocumentFragmentMARKRootu
   def querySelector_animateMotion(selectors: animateMotion): SVGAnimateMotionElement | Null = js.native
   @JSName("querySelector")
   def querySelector_animateTransform(selectors: animateTransform): SVGAnimateTransformElement | Null = js.native
+  /* standard dom */
+  @JSName("querySelector")
+  def querySelector_annotation(selectors: annotation): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_annotationxml(selectors: `annotation-xml`): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_applet(selectors: applet): HTMLUnknownElement | Null = js.native
   @JSName("querySelector")
   def querySelector_area(selectors: area): HTMLAreaElement | Null = js.native
   @JSName("querySelector")
@@ -924,9 +1141,17 @@ trait DocumentFragmentMARKRootu
   @JSName("querySelector")
   def querySelector_base(selectors: base): HTMLBaseElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_basefont(selectors: basefont): HTMLElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_bdi(selectors: bdi): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_bdo(selectors: bdo): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_bgsound(selectors: bgsound): HTMLUnknownElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_big(selectors: big): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_blink(selectors: blink): HTMLUnknownElement | Null = js.native
   @JSName("querySelector")
   def querySelector_blockquote(selectors: blockquote): HTMLQuoteElement | Null = js.native
   @JSName("querySelector")
@@ -939,6 +1164,8 @@ trait DocumentFragmentMARKRootu
   def querySelector_canvas(selectors: canvas): HTMLCanvasElement | Null = js.native
   @JSName("querySelector")
   def querySelector_caption(selectors: caption): HTMLTableCaptionElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_center(selectors: center): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_circle(selectors: circle): SVGCircleElement | Null = js.native
   @JSName("querySelector")
@@ -969,6 +1196,8 @@ trait DocumentFragmentMARKRootu
   def querySelector_dfn(selectors: dfn): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_dialog(selectors: dialog): HTMLDialogElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_dir(selectors: dir): HTMLDirectoryElement | Null = js.native
   @JSName("querySelector")
   def querySelector_div(selectors: div): HTMLDivElement | Null = js.native
   @JSName("querySelector")
@@ -1040,11 +1269,17 @@ trait DocumentFragmentMARKRootu
   @JSName("querySelector")
   def querySelector_filter(selectors: filter): SVGFilterElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_font(selectors: font): HTMLFontElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_footer(selectors: footer): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_foreignObject(selectors: foreignObject): SVGForeignObjectElement | Null = js.native
   @JSName("querySelector")
   def querySelector_form(selectors: form): HTMLFormElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_frame(selectors: frame): HTMLFrameElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_frameset(selectors: frameset): HTMLFrameSetElement | Null = js.native
   @JSName("querySelector")
   def querySelector_g(selectors: g): SVGGElement | Null = js.native
   @JSName("querySelector")
@@ -1082,7 +1317,11 @@ trait DocumentFragmentMARKRootu
   @JSName("querySelector")
   def querySelector_ins(selectors: ins): HTMLModElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_isindex(selectors: isindex): HTMLUnknownElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_kbd(selectors: kbd): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_keygen(selectors: keygen): HTMLUnknownElement | Null = js.native
   @JSName("querySelector")
   def querySelector_label(selectors: label): HTMLLabelElement | Null = js.native
   @JSName("querySelector")
@@ -1096,6 +1335,10 @@ trait DocumentFragmentMARKRootu
   @JSName("querySelector")
   def querySelector_link(selectors: link): HTMLLinkElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_listing(selectors: listing): HTMLPreElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_maction(selectors: maction): MathMLElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_main(selectors: main): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_map(selectors: map): HTMLMapElement | Null = js.native
@@ -1104,9 +1347,17 @@ trait DocumentFragmentMARKRootu
   @JSName("querySelector")
   def querySelector_marker(selectors: marker): SVGMarkerElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_marquee(selectors: marquee): HTMLMarqueeElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_mask(selectors: mask): SVGMaskElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_math(selectors: math): MathMLElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_menu(selectors: menu): HTMLMenuElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_menuitem(selectors: menuitem): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_merror(selectors: merror): MathMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_meta(selectors: meta): HTMLMetaElement | Null = js.native
   @JSName("querySelector")
@@ -1114,9 +1365,67 @@ trait DocumentFragmentMARKRootu
   @JSName("querySelector")
   def querySelector_meter(selectors: meter): HTMLMeterElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_mfrac(selectors: mfrac): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mi(selectors: mi): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mmultiscripts(selectors: mmultiscripts): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mn(selectors: mn): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mo(selectors: mo): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mover(selectors: mover): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mpadded(selectors: mpadded): MathMLElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_mpath(selectors: mpath): SVGMPathElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_mphantom(selectors: mphantom): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mprescripts(selectors: mprescripts): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mroot(selectors: mroot): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mrow(selectors: mrow): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_ms(selectors: ms): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mspace(selectors: mspace): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_msqrt(selectors: msqrt): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mstyle(selectors: mstyle): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_msub(selectors: msub): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_msubsup(selectors: msubsup): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_msup(selectors: msup): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mtable(selectors: mtable): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mtd(selectors: mtd): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mtext(selectors: mtext): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mtr(selectors: mtr): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_multicol(selectors: multicol): HTMLUnknownElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_munder(selectors: munder): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_munderover(selectors: munderover): MathMLElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_nav(selectors: nav): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_nextid(selectors: nextid): HTMLUnknownElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_nobr(selectors: nobr): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_noembed(selectors: noembed): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_noframes(selectors: noframes): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_noscript(selectors: noscript): HTMLElement | Null = js.native
   @JSName("querySelector")
@@ -1132,11 +1441,15 @@ trait DocumentFragmentMARKRootu
   @JSName("querySelector")
   def querySelector_p(selectors: p): HTMLParagraphElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_param(selectors: param): HTMLParamElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_path(selectors: path): SVGPathElement | Null = js.native
   @JSName("querySelector")
   def querySelector_pattern(selectors: pattern): SVGPatternElement | Null = js.native
   @JSName("querySelector")
   def querySelector_picture(selectors: picture): HTMLPictureElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_plaintext(selectors: plaintext): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_polygon(selectors: polygon): SVGPolygonElement | Null = js.native
   @JSName("querySelector")
@@ -1150,11 +1463,15 @@ trait DocumentFragmentMARKRootu
   @JSName("querySelector")
   def querySelector_radialGradient(selectors: radialGradient): SVGRadialGradientElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_rb(selectors: rb): HTMLElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_rect(selectors: rect): SVGRectElement | Null = js.native
   @JSName("querySelector")
   def querySelector_rp(selectors: rp): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_rt(selectors: rt): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_rtc(selectors: rtc): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_ruby(selectors: ruby): HTMLElement | Null = js.native
   @JSName("querySelector")
@@ -1168,6 +1485,8 @@ trait DocumentFragmentMARKRootu
   @JSName("querySelector")
   def querySelector_select(selectors: select): HTMLSelectElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_semantics(selectors: semantics): MathMLElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_set(selectors: set): SVGSetElement | Null = js.native
   @JSName("querySelector")
   def querySelector_slot(selectors: slot): HTMLSlotElement | Null = js.native
@@ -1176,9 +1495,13 @@ trait DocumentFragmentMARKRootu
   @JSName("querySelector")
   def querySelector_source(selectors: source): HTMLSourceElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_spacer(selectors: spacer): HTMLUnknownElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_span(selectors: span): HTMLSpanElement | Null = js.native
   @JSName("querySelector")
   def querySelector_stop(selectors: stop): SVGStopElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_strike(selectors: strike): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_strong(selectors: strong): HTMLElement | Null = js.native
   @JSName("querySelector")
@@ -1226,6 +1549,8 @@ trait DocumentFragmentMARKRootu
   @JSName("querySelector")
   def querySelector_tspan(selectors: tspan): SVGTSpanElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_tt(selectors: tt): HTMLElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_u(selectors: u): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_ul(selectors: ul): HTMLUListElement | Null = js.native
@@ -1239,6 +1564,8 @@ trait DocumentFragmentMARKRootu
   def querySelector_view(selectors: view): SVGViewElement | Null = js.native
   @JSName("querySelector")
   def querySelector_wbr(selectors: wbr): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_xmp(selectors: xmp): HTMLPreElement | Null = js.native
   
   /* standard dom */
   def removeChild[T /* <: Node */](child: T): T = js.native

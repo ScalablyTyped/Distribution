@@ -110,7 +110,7 @@ object _Node {
     left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression_ | TSSatisfiesExpression_ | TSTypeAssertion_ | TSNonNullExpression_,
     right: Expression
   ): typings.babelTypes.mod.AssignmentPattern_ = {
-    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeAnnotation = null)
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, optional = null, start = null, trailingComments = null, typeAnnotation = null)
     __obj.updateDynamic("type")("AssignmentPattern")
     __obj.asInstanceOf[typings.babelTypes.mod.AssignmentPattern_]
   }
@@ -336,7 +336,7 @@ object _Node {
   }
   
   inline def DeclareInterface_(body: ObjectTypeAnnotation_, id: Identifier_): typings.babelTypes.mod.DeclareInterface_ = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], end = null, implements = null, innerComments = null, leadingComments = null, loc = null, mixins = null, start = null, trailingComments = null, typeParameters = null)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("DeclareInterface")
     __obj.updateDynamic("extends")(null)
     __obj.asInstanceOf[typings.babelTypes.mod.DeclareInterface_]
@@ -655,7 +655,7 @@ object _Node {
   }
   
   inline def InterfaceDeclaration_(body: ObjectTypeAnnotation_, id: Identifier_): typings.babelTypes.mod.InterfaceDeclaration_ = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], end = null, implements = null, innerComments = null, leadingComments = null, loc = null, mixins = null, start = null, trailingComments = null, typeParameters = null)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("InterfaceDeclaration")
     __obj.updateDynamic("extends")(null)
     __obj.asInstanceOf[typings.babelTypes.mod.InterfaceDeclaration_]
@@ -909,7 +909,7 @@ object _Node {
   }
   
   inline def ObjectPattern_(properties: js.Array[RestElement_ | ObjectProperty_]): typings.babelTypes.mod.ObjectPattern_ = {
-    val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeAnnotation = null)
+    val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, optional = null, start = null, trailingComments = null, typeAnnotation = null)
     __obj.updateDynamic("type")("ObjectPattern")
     __obj.asInstanceOf[typings.babelTypes.mod.ObjectPattern_]
   }
@@ -1511,7 +1511,7 @@ object _Node {
   }
   
   inline def TSTypeParameter_(name: String): typings.babelTypes.mod.TSTypeParameter_ = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], constraint = null, default = null, end = null, in = null, innerComments = null, leadingComments = null, loc = null, out = null, start = null, trailingComments = null)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], const = null, constraint = null, default = null, end = null, in = null, innerComments = null, leadingComments = null, loc = null, out = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSTypeParameter")
     __obj.asInstanceOf[typings.babelTypes.mod.TSTypeParameter_]
   }

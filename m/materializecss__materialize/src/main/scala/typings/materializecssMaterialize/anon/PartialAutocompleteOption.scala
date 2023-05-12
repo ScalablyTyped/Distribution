@@ -13,6 +13,8 @@ trait PartialAutocompleteOption extends StObject {
   
   var data: js.UndefOr[AutocompleteData] = js.undefined
   
+  var dropdownOptions: js.UndefOr[PartialDropdownOptions] = js.undefined
+  
   var limit: js.UndefOr[Double] = js.undefined
   
   var minLength: js.UndefOr[Double] = js.undefined
@@ -38,6 +40,10 @@ object PartialAutocompleteOption {
     inline def setData(value: AutocompleteData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setDropdownOptions(value: PartialDropdownOptions): Self = StObject.set(x, "dropdownOptions", value.asInstanceOf[js.Any])
+    
+    inline def setDropdownOptionsUndefined: Self = StObject.set(x, "dropdownOptions", js.undefined)
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

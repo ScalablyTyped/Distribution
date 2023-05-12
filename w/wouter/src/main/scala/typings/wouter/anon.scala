@@ -234,6 +234,8 @@ object anon {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -241,6 +243,8 @@ object anon {
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -465,6 +469,8 @@ object anon {
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -716,6 +722,10 @@ object anon {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -732,9 +742,13 @@ object anon {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -1182,6 +1196,10 @@ object anon {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
+      
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
@@ -1241,59 +1259,6 @@ object anon {
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
-    }
-  }
-  
-  /* Inlined std.Partial<wouter.wouter.RouterProps> & {  children :wouter.wouter.ReactNode} */
-  trait PartialRouterPropschildre extends StObject {
-    
-    var base: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
-      ] = js.undefined
-    
-    var children: typings.wouter.mod.ReactNode
-    
-    var hook: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BaseLocationHook */ Any
-      ] = js.undefined
-    
-    var matcher: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MatcherFn */ Any
-      ] = js.undefined
-  }
-  object PartialRouterPropschildre {
-    
-    inline def apply(): PartialRouterPropschildre = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PartialRouterPropschildre]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: PartialRouterPropschildre] (val x: Self) extends AnyVal {
-      
-      inline def setBase(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
-      ): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
-      
-      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
-      
-      inline def setChildren(value: typings.wouter.mod.ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenNull: Self = StObject.set(x, "children", null)
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      inline def setHook(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BaseLocationHook */ Any
-      ): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
-      
-      inline def setHookUndefined: Self = StObject.set(x, "hook", js.undefined)
-      
-      inline def setMatcher(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MatcherFn */ Any
-      ): Self = StObject.set(x, "matcher", value.asInstanceOf[js.Any])
-      
-      inline def setMatcherUndefined: Self = StObject.set(x, "matcher", js.undefined)
     }
   }
   

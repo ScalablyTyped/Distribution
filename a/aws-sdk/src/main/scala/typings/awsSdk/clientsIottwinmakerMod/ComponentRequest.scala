@@ -20,6 +20,11 @@ trait ComponentRequest extends StObject {
     * An object that maps strings to the properties to set in the component type. Each string in the mapping must be unique to this object.
     */
   var properties: js.UndefOr[PropertyRequests] = js.undefined
+  
+  /**
+    * The property groups.
+    */
+  var propertyGroups: js.UndefOr[ComponentPropertyGroupRequests] = js.undefined
 }
 object ComponentRequest {
   
@@ -42,5 +47,9 @@ object ComponentRequest {
     inline def setProperties(value: PropertyRequests): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    
+    inline def setPropertyGroups(value: ComponentPropertyGroupRequests): Self = StObject.set(x, "propertyGroups", value.asInstanceOf[js.Any])
+    
+    inline def setPropertyGroupsUndefined: Self = StObject.set(x, "propertyGroups", js.undefined)
   }
 }

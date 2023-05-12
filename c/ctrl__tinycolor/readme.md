@@ -1,7 +1,7 @@
 
 # Scala.js typings for ctrl__tinycolor
 
-Typings are for version 3.4.1
+Typings are for version 3.6.0
 
 ## Library description:
 Fast, small color manipulation and conversion for JavaScript

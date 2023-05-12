@@ -4,6 +4,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.apolloProtobufjs.mod.IConversionOptions
 import typings.apolloProtobufjs.mod.Reader
 import typings.apolloProtobufjs.mod.Writer
+import typings.apolloReportingProtobuf.apolloReportingProtobufStrings.condition
+import typings.apolloReportingProtobuf.apolloReportingProtobufStrings.defer
 import typings.apolloReportingProtobuf.apolloReportingProtobufStrings.fetch
 import typings.apolloReportingProtobuf.apolloReportingProtobufStrings.fieldName
 import typings.apolloReportingProtobuf.apolloReportingProtobufStrings.flatten
@@ -14,6 +16,8 @@ import typings.apolloReportingProtobuf.apolloReportingProtobufStrings.sequence
 import typings.apolloReportingProtobuf.generatedProtobufMod.Trace.CachePolicy.Scope
 import typings.apolloReportingProtobuf.generatedProtobufMod.Trace.HTTP.IValues
 import typings.apolloReportingProtobuf.generatedProtobufMod.Trace.HTTP.Method
+import typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.IConditionNode
+import typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.IDeferNode
 import typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.IFetchNode
 import typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.IFlattenNode
 import typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.IParallelNode
@@ -57,6 +61,10 @@ open class Trace ()
   /** Trace fullQueryCacheHit. */
   @JSName("fullQueryCacheHit")
   var fullQueryCacheHit_Trace: Boolean = js.native
+  
+  /** Trace isIncomplete. */
+  @JSName("isIncomplete")
+  var isIncomplete_Trace: Boolean = js.native
   
   /** Trace persistedQueryHit. */
   @JSName("persistedQueryHit")
@@ -459,21 +467,9 @@ object Trace {
        with IHTTP {
     def this(properties: IHTTP) = this()
     
-    /** HTTP host. */
-    @JSName("host")
-    var host_HTTP: String = js.native
-    
     /** HTTP method. */
     @JSName("method")
     var method_HTTP: Method = js.native
-    
-    /** HTTP path. */
-    @JSName("path")
-    var path_HTTP: String = js.native
-    
-    /** HTTP protocol. */
-    @JSName("protocol")
-    var protocol_HTTP: String = js.native
     
     /** HTTP requestHeaders. */
     @JSName("requestHeaders")
@@ -482,10 +478,6 @@ object Trace {
     /** HTTP responseHeaders. */
     @JSName("responseHeaders")
     var responseHeaders_HTTP: StringDictionary[IValues] = js.native
-    
-    /** HTTP secure. */
-    @JSName("secure")
-    var secure_HTTP: Boolean = js.native
     
     /** HTTP statusCode. */
     @JSName("statusCode")
@@ -1028,7 +1020,7 @@ object Trace {
     def this(properties: IQueryPlanNode) = this()
     
     /** QueryPlanNode node. */
-    var node: js.UndefOr[sequence | parallel | fetch | flatten] = js.native
+    var node: js.UndefOr[sequence | parallel | fetch | flatten | defer | condition] = js.native
     
     /**
       * Converts this QueryPlanNode to JSON.
@@ -1041,6 +1033,519 @@ object Trace {
     @JSImport("apollo-reporting-protobuf/generated/protobuf", "Trace.QueryPlanNode")
     @js.native
     val ^ : js.Any = js.native
+    
+    /** Represents a ConditionNode. */
+    @JSImport("apollo-reporting-protobuf/generated/protobuf", "Trace.QueryPlanNode.ConditionNode")
+    @js.native
+    /**
+      * Constructs a new ConditionNode.
+      * @param [properties] Properties to set
+      */
+    open class ConditionNode ()
+      extends StObject
+         with IConditionNode {
+      def this(properties: IConditionNode) = this()
+      
+      /** ConditionNode condition. */
+      @JSName("condition")
+      var condition_ConditionNode: String = js.native
+      
+      /**
+        * Converts this ConditionNode to JSON.
+        * @returns JSON object
+        */
+      def toJSON(): StringDictionary[Any] = js.native
+    }
+    object ConditionNode {
+      
+      @JSImport("apollo-reporting-protobuf/generated/protobuf", "Trace.QueryPlanNode.ConditionNode")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /**
+        * Creates a new ConditionNode instance using the specified properties.
+        * @param [properties] Properties to set
+        * @returns ConditionNode instance
+        */
+      /* static member */
+      inline def create(): ConditionNode = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ConditionNode]
+      inline def create(properties: IConditionNode): ConditionNode = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ConditionNode]
+      
+      inline def decode(reader: js.typedarray.Uint8Array): ConditionNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConditionNode]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): ConditionNode = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConditionNode]
+      /**
+        * Decodes a ConditionNode message from the specified reader or buffer.
+        * @param reader Reader or buffer to decode from
+        * @param [length] Message length if known beforehand
+        * @returns ConditionNode
+        * @throws {Error} If the payload is not a reader or valid buffer
+        * @throws {$protobuf.util.ProtocolError} If required fields are missing
+        */
+      /* static member */
+      inline def decode(reader: Reader): ConditionNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConditionNode]
+      inline def decode(reader: Reader, length: Double): ConditionNode = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConditionNode]
+      
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): ConditionNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConditionNode]
+      /**
+        * Decodes a ConditionNode message from the specified reader or buffer, length delimited.
+        * @param reader Reader or buffer to decode from
+        * @returns ConditionNode
+        * @throws {Error} If the payload is not a reader or valid buffer
+        * @throws {$protobuf.util.ProtocolError} If required fields are missing
+        */
+      /* static member */
+      inline def decodeDelimited(reader: Reader): ConditionNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConditionNode]
+      
+      /**
+        * Encodes the specified ConditionNode message. Does not implicitly {@link Trace.QueryPlanNode.ConditionNode.verify|verify} messages.
+        * @param message ConditionNode message or plain object to encode
+        * @param [writer] Writer to encode to
+        * @returns Writer
+        */
+      /* static member */
+      inline def encode(message: IConditionNode): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encode(message: IConditionNode, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      
+      /**
+        * Encodes the specified ConditionNode message, length delimited. Does not implicitly {@link Trace.QueryPlanNode.ConditionNode.verify|verify} messages.
+        * @param message ConditionNode message or plain object to encode
+        * @param [writer] Writer to encode to
+        * @returns Writer
+        */
+      /* static member */
+      inline def encodeDelimited(message: IConditionNode): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encodeDelimited(message: IConditionNode, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      
+      /**
+        * Creates a plain object from a ConditionNode message. Also converts values to other types if specified.
+        * @param message ConditionNode
+        * @param [options] Conversion options
+        * @returns Plain object
+        */
+      /* static member */
+      inline def toObject(message: ConditionNode): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: ConditionNode, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+      
+      /**
+        * Verifies a ConditionNode message.
+        * @param message Plain object to verify
+        * @returns `null` if valid, otherwise the reason why it is not
+        */
+      /* static member */
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    }
+    
+    /** Represents a DeferNode. */
+    @JSImport("apollo-reporting-protobuf/generated/protobuf", "Trace.QueryPlanNode.DeferNode")
+    @js.native
+    /**
+      * Constructs a new DeferNode.
+      * @param [properties] Properties to set
+      */
+    open class DeferNode ()
+      extends StObject
+         with IDeferNode {
+      def this(properties: IDeferNode) = this()
+      
+      /** DeferNode deferred. */
+      @JSName("deferred")
+      var deferred_DeferNode: js.Array[IDeferredNode] = js.native
+      
+      /**
+        * Converts this DeferNode to JSON.
+        * @returns JSON object
+        */
+      def toJSON(): StringDictionary[Any] = js.native
+    }
+    object DeferNode {
+      
+      @JSImport("apollo-reporting-protobuf/generated/protobuf", "Trace.QueryPlanNode.DeferNode")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /**
+        * Creates a new DeferNode instance using the specified properties.
+        * @param [properties] Properties to set
+        * @returns DeferNode instance
+        */
+      /* static member */
+      inline def create(): DeferNode = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[DeferNode]
+      inline def create(properties: IDeferNode): DeferNode = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[DeferNode]
+      
+      inline def decode(reader: js.typedarray.Uint8Array): DeferNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DeferNode]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): DeferNode = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DeferNode]
+      /**
+        * Decodes a DeferNode message from the specified reader or buffer.
+        * @param reader Reader or buffer to decode from
+        * @param [length] Message length if known beforehand
+        * @returns DeferNode
+        * @throws {Error} If the payload is not a reader or valid buffer
+        * @throws {$protobuf.util.ProtocolError} If required fields are missing
+        */
+      /* static member */
+      inline def decode(reader: Reader): DeferNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DeferNode]
+      inline def decode(reader: Reader, length: Double): DeferNode = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DeferNode]
+      
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): DeferNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DeferNode]
+      /**
+        * Decodes a DeferNode message from the specified reader or buffer, length delimited.
+        * @param reader Reader or buffer to decode from
+        * @returns DeferNode
+        * @throws {Error} If the payload is not a reader or valid buffer
+        * @throws {$protobuf.util.ProtocolError} If required fields are missing
+        */
+      /* static member */
+      inline def decodeDelimited(reader: Reader): DeferNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DeferNode]
+      
+      /**
+        * Encodes the specified DeferNode message. Does not implicitly {@link Trace.QueryPlanNode.DeferNode.verify|verify} messages.
+        * @param message DeferNode message or plain object to encode
+        * @param [writer] Writer to encode to
+        * @returns Writer
+        */
+      /* static member */
+      inline def encode(message: IDeferNode): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encode(message: IDeferNode, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      
+      /**
+        * Encodes the specified DeferNode message, length delimited. Does not implicitly {@link Trace.QueryPlanNode.DeferNode.verify|verify} messages.
+        * @param message DeferNode message or plain object to encode
+        * @param [writer] Writer to encode to
+        * @returns Writer
+        */
+      /* static member */
+      inline def encodeDelimited(message: IDeferNode): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encodeDelimited(message: IDeferNode, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      
+      /**
+        * Creates a plain object from a DeferNode message. Also converts values to other types if specified.
+        * @param message DeferNode
+        * @param [options] Conversion options
+        * @returns Plain object
+        */
+      /* static member */
+      inline def toObject(message: DeferNode): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: DeferNode, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+      
+      /**
+        * Verifies a DeferNode message.
+        * @param message Plain object to verify
+        * @returns `null` if valid, otherwise the reason why it is not
+        */
+      /* static member */
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    }
+    
+    /** Represents a DeferNodePrimary. */
+    @JSImport("apollo-reporting-protobuf/generated/protobuf", "Trace.QueryPlanNode.DeferNodePrimary")
+    @js.native
+    /**
+      * Constructs a new DeferNodePrimary.
+      * @param [properties] Properties to set
+      */
+    open class DeferNodePrimary ()
+      extends StObject
+         with IDeferNodePrimary {
+      def this(properties: IDeferNodePrimary) = this()
+      
+      /**
+        * Converts this DeferNodePrimary to JSON.
+        * @returns JSON object
+        */
+      def toJSON(): StringDictionary[Any] = js.native
+    }
+    object DeferNodePrimary {
+      
+      @JSImport("apollo-reporting-protobuf/generated/protobuf", "Trace.QueryPlanNode.DeferNodePrimary")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /**
+        * Creates a new DeferNodePrimary instance using the specified properties.
+        * @param [properties] Properties to set
+        * @returns DeferNodePrimary instance
+        */
+      /* static member */
+      inline def create(): DeferNodePrimary = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[DeferNodePrimary]
+      inline def create(properties: IDeferNodePrimary): DeferNodePrimary = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[DeferNodePrimary]
+      
+      inline def decode(reader: js.typedarray.Uint8Array): DeferNodePrimary = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DeferNodePrimary]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): DeferNodePrimary = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DeferNodePrimary]
+      /**
+        * Decodes a DeferNodePrimary message from the specified reader or buffer.
+        * @param reader Reader or buffer to decode from
+        * @param [length] Message length if known beforehand
+        * @returns DeferNodePrimary
+        * @throws {Error} If the payload is not a reader or valid buffer
+        * @throws {$protobuf.util.ProtocolError} If required fields are missing
+        */
+      /* static member */
+      inline def decode(reader: Reader): DeferNodePrimary = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DeferNodePrimary]
+      inline def decode(reader: Reader, length: Double): DeferNodePrimary = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DeferNodePrimary]
+      
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): DeferNodePrimary = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DeferNodePrimary]
+      /**
+        * Decodes a DeferNodePrimary message from the specified reader or buffer, length delimited.
+        * @param reader Reader or buffer to decode from
+        * @returns DeferNodePrimary
+        * @throws {Error} If the payload is not a reader or valid buffer
+        * @throws {$protobuf.util.ProtocolError} If required fields are missing
+        */
+      /* static member */
+      inline def decodeDelimited(reader: Reader): DeferNodePrimary = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DeferNodePrimary]
+      
+      /**
+        * Encodes the specified DeferNodePrimary message. Does not implicitly {@link Trace.QueryPlanNode.DeferNodePrimary.verify|verify} messages.
+        * @param message DeferNodePrimary message or plain object to encode
+        * @param [writer] Writer to encode to
+        * @returns Writer
+        */
+      /* static member */
+      inline def encode(message: IDeferNodePrimary): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encode(message: IDeferNodePrimary, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      
+      /**
+        * Encodes the specified DeferNodePrimary message, length delimited. Does not implicitly {@link Trace.QueryPlanNode.DeferNodePrimary.verify|verify} messages.
+        * @param message DeferNodePrimary message or plain object to encode
+        * @param [writer] Writer to encode to
+        * @returns Writer
+        */
+      /* static member */
+      inline def encodeDelimited(message: IDeferNodePrimary): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encodeDelimited(message: IDeferNodePrimary, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      
+      /**
+        * Creates a plain object from a DeferNodePrimary message. Also converts values to other types if specified.
+        * @param message DeferNodePrimary
+        * @param [options] Conversion options
+        * @returns Plain object
+        */
+      /* static member */
+      inline def toObject(message: DeferNodePrimary): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: DeferNodePrimary, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+      
+      /**
+        * Verifies a DeferNodePrimary message.
+        * @param message Plain object to verify
+        * @returns `null` if valid, otherwise the reason why it is not
+        */
+      /* static member */
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    }
+    
+    /** Represents a DeferredNode. */
+    @JSImport("apollo-reporting-protobuf/generated/protobuf", "Trace.QueryPlanNode.DeferredNode")
+    @js.native
+    /**
+      * Constructs a new DeferredNode.
+      * @param [properties] Properties to set
+      */
+    open class DeferredNode ()
+      extends StObject
+         with IDeferredNode {
+      def this(properties: IDeferredNode) = this()
+      
+      /** DeferredNode depends. */
+      @JSName("depends")
+      var depends_DeferredNode: js.Array[IDeferredNodeDepends] = js.native
+      
+      /** DeferredNode label. */
+      @JSName("label")
+      var label_DeferredNode: String = js.native
+      
+      /** DeferredNode path. */
+      @JSName("path")
+      var path_DeferredNode: js.Array[IResponsePathElement] = js.native
+      
+      /**
+        * Converts this DeferredNode to JSON.
+        * @returns JSON object
+        */
+      def toJSON(): StringDictionary[Any] = js.native
+    }
+    object DeferredNode {
+      
+      @JSImport("apollo-reporting-protobuf/generated/protobuf", "Trace.QueryPlanNode.DeferredNode")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /**
+        * Creates a new DeferredNode instance using the specified properties.
+        * @param [properties] Properties to set
+        * @returns DeferredNode instance
+        */
+      /* static member */
+      inline def create(): DeferredNode = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[DeferredNode]
+      inline def create(properties: IDeferredNode): DeferredNode = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[DeferredNode]
+      
+      inline def decode(reader: js.typedarray.Uint8Array): DeferredNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DeferredNode]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): DeferredNode = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DeferredNode]
+      /**
+        * Decodes a DeferredNode message from the specified reader or buffer.
+        * @param reader Reader or buffer to decode from
+        * @param [length] Message length if known beforehand
+        * @returns DeferredNode
+        * @throws {Error} If the payload is not a reader or valid buffer
+        * @throws {$protobuf.util.ProtocolError} If required fields are missing
+        */
+      /* static member */
+      inline def decode(reader: Reader): DeferredNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DeferredNode]
+      inline def decode(reader: Reader, length: Double): DeferredNode = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DeferredNode]
+      
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): DeferredNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DeferredNode]
+      /**
+        * Decodes a DeferredNode message from the specified reader or buffer, length delimited.
+        * @param reader Reader or buffer to decode from
+        * @returns DeferredNode
+        * @throws {Error} If the payload is not a reader or valid buffer
+        * @throws {$protobuf.util.ProtocolError} If required fields are missing
+        */
+      /* static member */
+      inline def decodeDelimited(reader: Reader): DeferredNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DeferredNode]
+      
+      /**
+        * Encodes the specified DeferredNode message. Does not implicitly {@link Trace.QueryPlanNode.DeferredNode.verify|verify} messages.
+        * @param message DeferredNode message or plain object to encode
+        * @param [writer] Writer to encode to
+        * @returns Writer
+        */
+      /* static member */
+      inline def encode(message: IDeferredNode): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encode(message: IDeferredNode, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      
+      /**
+        * Encodes the specified DeferredNode message, length delimited. Does not implicitly {@link Trace.QueryPlanNode.DeferredNode.verify|verify} messages.
+        * @param message DeferredNode message or plain object to encode
+        * @param [writer] Writer to encode to
+        * @returns Writer
+        */
+      /* static member */
+      inline def encodeDelimited(message: IDeferredNode): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encodeDelimited(message: IDeferredNode, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      
+      /**
+        * Creates a plain object from a DeferredNode message. Also converts values to other types if specified.
+        * @param message DeferredNode
+        * @param [options] Conversion options
+        * @returns Plain object
+        */
+      /* static member */
+      inline def toObject(message: DeferredNode): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: DeferredNode, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+      
+      /**
+        * Verifies a DeferredNode message.
+        * @param message Plain object to verify
+        * @returns `null` if valid, otherwise the reason why it is not
+        */
+      /* static member */
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    }
+    
+    /** Represents a DeferredNodeDepends. */
+    @JSImport("apollo-reporting-protobuf/generated/protobuf", "Trace.QueryPlanNode.DeferredNodeDepends")
+    @js.native
+    /**
+      * Constructs a new DeferredNodeDepends.
+      * @param [properties] Properties to set
+      */
+    open class DeferredNodeDepends ()
+      extends StObject
+         with IDeferredNodeDepends {
+      def this(properties: IDeferredNodeDepends) = this()
+      
+      /** DeferredNodeDepends deferLabel. */
+      @JSName("deferLabel")
+      var deferLabel_DeferredNodeDepends: String = js.native
+      
+      /** DeferredNodeDepends id. */
+      @JSName("id")
+      var id_DeferredNodeDepends: String = js.native
+      
+      /**
+        * Converts this DeferredNodeDepends to JSON.
+        * @returns JSON object
+        */
+      def toJSON(): StringDictionary[Any] = js.native
+    }
+    object DeferredNodeDepends {
+      
+      @JSImport("apollo-reporting-protobuf/generated/protobuf", "Trace.QueryPlanNode.DeferredNodeDepends")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /**
+        * Creates a new DeferredNodeDepends instance using the specified properties.
+        * @param [properties] Properties to set
+        * @returns DeferredNodeDepends instance
+        */
+      /* static member */
+      inline def create(): DeferredNodeDepends = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[DeferredNodeDepends]
+      inline def create(properties: IDeferredNodeDepends): DeferredNodeDepends = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[DeferredNodeDepends]
+      
+      inline def decode(reader: js.typedarray.Uint8Array): DeferredNodeDepends = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DeferredNodeDepends]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): DeferredNodeDepends = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DeferredNodeDepends]
+      /**
+        * Decodes a DeferredNodeDepends message from the specified reader or buffer.
+        * @param reader Reader or buffer to decode from
+        * @param [length] Message length if known beforehand
+        * @returns DeferredNodeDepends
+        * @throws {Error} If the payload is not a reader or valid buffer
+        * @throws {$protobuf.util.ProtocolError} If required fields are missing
+        */
+      /* static member */
+      inline def decode(reader: Reader): DeferredNodeDepends = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DeferredNodeDepends]
+      inline def decode(reader: Reader, length: Double): DeferredNodeDepends = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DeferredNodeDepends]
+      
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): DeferredNodeDepends = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DeferredNodeDepends]
+      /**
+        * Decodes a DeferredNodeDepends message from the specified reader or buffer, length delimited.
+        * @param reader Reader or buffer to decode from
+        * @returns DeferredNodeDepends
+        * @throws {Error} If the payload is not a reader or valid buffer
+        * @throws {$protobuf.util.ProtocolError} If required fields are missing
+        */
+      /* static member */
+      inline def decodeDelimited(reader: Reader): DeferredNodeDepends = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DeferredNodeDepends]
+      
+      /**
+        * Encodes the specified DeferredNodeDepends message. Does not implicitly {@link Trace.QueryPlanNode.DeferredNodeDepends.verify|verify} messages.
+        * @param message DeferredNodeDepends message or plain object to encode
+        * @param [writer] Writer to encode to
+        * @returns Writer
+        */
+      /* static member */
+      inline def encode(message: IDeferredNodeDepends): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encode(message: IDeferredNodeDepends, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      
+      /**
+        * Encodes the specified DeferredNodeDepends message, length delimited. Does not implicitly {@link Trace.QueryPlanNode.DeferredNodeDepends.verify|verify} messages.
+        * @param message DeferredNodeDepends message or plain object to encode
+        * @param [writer] Writer to encode to
+        * @returns Writer
+        */
+      /* static member */
+      inline def encodeDelimited(message: IDeferredNodeDepends): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encodeDelimited(message: IDeferredNodeDepends, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      
+      /**
+        * Creates a plain object from a DeferredNodeDepends message. Also converts values to other types if specified.
+        * @param message DeferredNodeDepends
+        * @param [options] Conversion options
+        * @returns Plain object
+        */
+      /* static member */
+      inline def toObject(message: DeferredNodeDepends): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(message: DeferredNodeDepends, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+      
+      /**
+        * Verifies a DeferredNodeDepends message.
+        * @param message Plain object to verify
+        * @returns `null` if valid, otherwise the reason why it is not
+        */
+      /* static member */
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    }
     
     /** Represents a FetchNode. */
     @JSImport("apollo-reporting-protobuf/generated/protobuf", "Trace.QueryPlanNode.FetchNode")
@@ -1634,6 +2139,195 @@ object Trace {
     /* static member */
     inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     
+    /** Properties of a ConditionNode. */
+    trait IConditionNode extends StObject {
+      
+      /** ConditionNode condition */
+      var condition: js.UndefOr[String | Null] = js.undefined
+      
+      /** ConditionNode elseClause */
+      var elseClause: js.UndefOr[IQueryPlanNode | Null] = js.undefined
+      
+      /** ConditionNode ifClause */
+      var ifClause: js.UndefOr[IQueryPlanNode | Null] = js.undefined
+    }
+    object IConditionNode {
+      
+      inline def apply(): IConditionNode = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[IConditionNode]
+      }
+      
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IConditionNode] (val x: Self) extends AnyVal {
+        
+        inline def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+        
+        inline def setConditionNull: Self = StObject.set(x, "condition", null)
+        
+        inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+        
+        inline def setElseClause(value: IQueryPlanNode): Self = StObject.set(x, "elseClause", value.asInstanceOf[js.Any])
+        
+        inline def setElseClauseNull: Self = StObject.set(x, "elseClause", null)
+        
+        inline def setElseClauseUndefined: Self = StObject.set(x, "elseClause", js.undefined)
+        
+        inline def setIfClause(value: IQueryPlanNode): Self = StObject.set(x, "ifClause", value.asInstanceOf[js.Any])
+        
+        inline def setIfClauseNull: Self = StObject.set(x, "ifClause", null)
+        
+        inline def setIfClauseUndefined: Self = StObject.set(x, "ifClause", js.undefined)
+      }
+    }
+    
+    /** Properties of a DeferNode. */
+    trait IDeferNode extends StObject {
+      
+      /** DeferNode deferred */
+      var deferred: js.UndefOr[js.Array[IDeferredNode] | Null] = js.undefined
+      
+      /** DeferNode primary */
+      var primary: js.UndefOr[IDeferNodePrimary | Null] = js.undefined
+    }
+    object IDeferNode {
+      
+      inline def apply(): IDeferNode = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[IDeferNode]
+      }
+      
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IDeferNode] (val x: Self) extends AnyVal {
+        
+        inline def setDeferred(value: js.Array[IDeferredNode]): Self = StObject.set(x, "deferred", value.asInstanceOf[js.Any])
+        
+        inline def setDeferredNull: Self = StObject.set(x, "deferred", null)
+        
+        inline def setDeferredUndefined: Self = StObject.set(x, "deferred", js.undefined)
+        
+        inline def setDeferredVarargs(value: IDeferredNode*): Self = StObject.set(x, "deferred", js.Array(value*))
+        
+        inline def setPrimary(value: IDeferNodePrimary): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+        
+        inline def setPrimaryNull: Self = StObject.set(x, "primary", null)
+        
+        inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+      }
+    }
+    
+    /** Properties of a DeferNodePrimary. */
+    trait IDeferNodePrimary extends StObject {
+      
+      /** DeferNodePrimary node */
+      var node: js.UndefOr[IQueryPlanNode | Null] = js.undefined
+    }
+    object IDeferNodePrimary {
+      
+      inline def apply(): IDeferNodePrimary = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[IDeferNodePrimary]
+      }
+      
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IDeferNodePrimary] (val x: Self) extends AnyVal {
+        
+        inline def setNode(value: IQueryPlanNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+        
+        inline def setNodeNull: Self = StObject.set(x, "node", null)
+        
+        inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+      }
+    }
+    
+    /** Properties of a DeferredNode. */
+    trait IDeferredNode extends StObject {
+      
+      /** DeferredNode depends */
+      var depends: js.UndefOr[js.Array[IDeferredNodeDepends] | Null] = js.undefined
+      
+      /** DeferredNode label */
+      var label: js.UndefOr[String | Null] = js.undefined
+      
+      /** DeferredNode node */
+      var node: js.UndefOr[IQueryPlanNode | Null] = js.undefined
+      
+      /** DeferredNode path */
+      var path: js.UndefOr[js.Array[IResponsePathElement] | Null] = js.undefined
+    }
+    object IDeferredNode {
+      
+      inline def apply(): IDeferredNode = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[IDeferredNode]
+      }
+      
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IDeferredNode] (val x: Self) extends AnyVal {
+        
+        inline def setDepends(value: js.Array[IDeferredNodeDepends]): Self = StObject.set(x, "depends", value.asInstanceOf[js.Any])
+        
+        inline def setDependsNull: Self = StObject.set(x, "depends", null)
+        
+        inline def setDependsUndefined: Self = StObject.set(x, "depends", js.undefined)
+        
+        inline def setDependsVarargs(value: IDeferredNodeDepends*): Self = StObject.set(x, "depends", js.Array(value*))
+        
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        
+        inline def setLabelNull: Self = StObject.set(x, "label", null)
+        
+        inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+        
+        inline def setNode(value: IQueryPlanNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+        
+        inline def setNodeNull: Self = StObject.set(x, "node", null)
+        
+        inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+        
+        inline def setPath(value: js.Array[IResponsePathElement]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        
+        inline def setPathNull: Self = StObject.set(x, "path", null)
+        
+        inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+        
+        inline def setPathVarargs(value: IResponsePathElement*): Self = StObject.set(x, "path", js.Array(value*))
+      }
+    }
+    
+    /** Properties of a DeferredNodeDepends. */
+    trait IDeferredNodeDepends extends StObject {
+      
+      /** DeferredNodeDepends deferLabel */
+      var deferLabel: js.UndefOr[String | Null] = js.undefined
+      
+      /** DeferredNodeDepends id */
+      var id: js.UndefOr[String | Null] = js.undefined
+    }
+    object IDeferredNodeDepends {
+      
+      inline def apply(): IDeferredNodeDepends = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[IDeferredNodeDepends]
+      }
+      
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IDeferredNodeDepends] (val x: Self) extends AnyVal {
+        
+        inline def setDeferLabel(value: String): Self = StObject.set(x, "deferLabel", value.asInstanceOf[js.Any])
+        
+        inline def setDeferLabelNull: Self = StObject.set(x, "deferLabel", null)
+        
+        inline def setDeferLabelUndefined: Self = StObject.set(x, "deferLabel", js.undefined)
+        
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        
+        inline def setIdNull: Self = StObject.set(x, "id", null)
+        
+        inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      }
+    }
+    
     /** Properties of a FetchNode. */
     trait IFetchNode extends StObject {
       
@@ -2011,26 +2705,14 @@ object Trace {
   /** Properties of a HTTP. */
   trait IHTTP extends StObject {
     
-    /** HTTP host */
-    var host: js.UndefOr[String | Null] = js.undefined
-    
     /** HTTP method */
     var method: js.UndefOr[Method | Null] = js.undefined
-    
-    /** HTTP path */
-    var path: js.UndefOr[String | Null] = js.undefined
-    
-    /** HTTP protocol */
-    var protocol: js.UndefOr[String | Null] = js.undefined
     
     /** HTTP requestHeaders */
     var requestHeaders: js.UndefOr[StringDictionary[IValues] | Null] = js.undefined
     
     /** HTTP responseHeaders */
     var responseHeaders: js.UndefOr[StringDictionary[IValues] | Null] = js.undefined
-    
-    /** HTTP secure */
-    var secure: js.UndefOr[Boolean | Null] = js.undefined
     
     /** HTTP statusCode */
     var statusCode: js.UndefOr[Double | Null] = js.undefined
@@ -2045,29 +2727,11 @@ object Trace {
     @scala.inline
     implicit open class MutableBuilder[Self <: IHTTP] (val x: Self) extends AnyVal {
       
-      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
-      
-      inline def setHostNull: Self = StObject.set(x, "host", null)
-      
-      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
-      
       inline def setMethod(value: Method): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
       inline def setMethodNull: Self = StObject.set(x, "method", null)
       
       inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
-      
-      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
-      
-      inline def setPathNull: Self = StObject.set(x, "path", null)
-      
-      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
-      
-      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
-      
-      inline def setProtocolNull: Self = StObject.set(x, "protocol", null)
-      
-      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
       inline def setRequestHeaders(value: StringDictionary[IValues]): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
       
@@ -2080,12 +2744,6 @@ object Trace {
       inline def setResponseHeadersNull: Self = StObject.set(x, "responseHeaders", null)
       
       inline def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
-      
-      inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
-      
-      inline def setSecureNull: Self = StObject.set(x, "secure", null)
-      
-      inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
       
       inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
@@ -2240,6 +2898,12 @@ object Trace {
   /** Properties of a QueryPlanNode. */
   trait IQueryPlanNode extends StObject {
     
+    /** QueryPlanNode condition */
+    var condition: js.UndefOr[IConditionNode | Null] = js.undefined
+    
+    /** QueryPlanNode defer */
+    var defer: js.UndefOr[IDeferNode | Null] = js.undefined
+    
     /** QueryPlanNode fetch */
     var fetch: js.UndefOr[IFetchNode | Null] = js.undefined
     
@@ -2261,6 +2925,18 @@ object Trace {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: IQueryPlanNode] (val x: Self) extends AnyVal {
+      
+      inline def setCondition(value: IConditionNode): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+      
+      inline def setConditionNull: Self = StObject.set(x, "condition", null)
+      
+      inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+      
+      inline def setDefer(value: IDeferNode): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+      
+      inline def setDeferNull: Self = StObject.set(x, "defer", null)
+      
+      inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
       
       inline def setFetch(value: IFetchNode): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
       

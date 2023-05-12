@@ -1,7 +1,7 @@
 
 # Scala.js typings for string-strip-html
 
-Typings are for version 12.0.0
+Typings are for version 13.2.3
 
 ## Library description:
 Strip HTML tags from strings. No parser, accepts mixed sources.

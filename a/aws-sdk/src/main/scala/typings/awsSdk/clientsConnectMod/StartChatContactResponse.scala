@@ -12,6 +12,11 @@ trait StartChatContactResponse extends StObject {
   var ContactId: js.UndefOr[typings.awsSdk.clientsConnectMod.ContactId] = js.undefined
   
   /**
+    * The contactId from which a persistent chat session is started. This field is populated only for persistent chats.
+    */
+  var ContinuedFromContactId: js.UndefOr[ContactId] = js.undefined
+  
+  /**
     * The identifier for a chat participant. The participantId for a chat participant is the same throughout the chat lifecycle.
     */
   var ParticipantId: js.UndefOr[typings.awsSdk.clientsConnectMod.ParticipantId] = js.undefined
@@ -34,6 +39,10 @@ object StartChatContactResponse {
     inline def setContactId(value: ContactId): Self = StObject.set(x, "ContactId", value.asInstanceOf[js.Any])
     
     inline def setContactIdUndefined: Self = StObject.set(x, "ContactId", js.undefined)
+    
+    inline def setContinuedFromContactId(value: ContactId): Self = StObject.set(x, "ContinuedFromContactId", value.asInstanceOf[js.Any])
+    
+    inline def setContinuedFromContactIdUndefined: Self = StObject.set(x, "ContinuedFromContactId", js.undefined)
     
     inline def setParticipantId(value: ParticipantId): Self = StObject.set(x, "ParticipantId", value.asInstanceOf[js.Any])
     

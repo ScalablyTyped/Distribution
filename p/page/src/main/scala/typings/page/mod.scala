@@ -15,7 +15,6 @@ object mod {
     
     /**
       * Export Context
-      * @type {Context}
       */
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("page", "default.Context")
@@ -34,7 +33,6 @@ object mod {
     
     /**
       * Expose Route
-      * @type {Route}
       */
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("page", "default.Route")

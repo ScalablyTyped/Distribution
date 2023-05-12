@@ -9,11 +9,15 @@ trait ConsumerConfig extends StObject {
   
   var ackTimeoutMs: js.UndefOr[Double] = js.undefined
   
+  var autoAckOldestChunkedMessageOnQueueFull: js.UndefOr[Double] = js.undefined
+  
   var consumerName: js.UndefOr[String] = js.undefined
   
   var cryptoFailureAction: js.UndefOr[ConsumerCryptoFailureAction] = js.undefined
   
   var listener: js.UndefOr[js.Function2[/* message */ Message, /* consumer */ Consumer, Unit]] = js.undefined
+  
+  var maxPendingChunkedMessage: js.UndefOr[Double] = js.undefined
   
   var nAckRedeliverTimeoutMs: js.UndefOr[Double] = js.undefined
   
@@ -53,6 +57,10 @@ object ConsumerConfig {
     
     inline def setAckTimeoutMsUndefined: Self = StObject.set(x, "ackTimeoutMs", js.undefined)
     
+    inline def setAutoAckOldestChunkedMessageOnQueueFull(value: Double): Self = StObject.set(x, "autoAckOldestChunkedMessageOnQueueFull", value.asInstanceOf[js.Any])
+    
+    inline def setAutoAckOldestChunkedMessageOnQueueFullUndefined: Self = StObject.set(x, "autoAckOldestChunkedMessageOnQueueFull", js.undefined)
+    
     inline def setConsumerName(value: String): Self = StObject.set(x, "consumerName", value.asInstanceOf[js.Any])
     
     inline def setConsumerNameUndefined: Self = StObject.set(x, "consumerName", js.undefined)
@@ -64,6 +72,10 @@ object ConsumerConfig {
     inline def setListener(value: (/* message */ Message, /* consumer */ Consumer) => Unit): Self = StObject.set(x, "listener", js.Any.fromFunction2(value))
     
     inline def setListenerUndefined: Self = StObject.set(x, "listener", js.undefined)
+    
+    inline def setMaxPendingChunkedMessage(value: Double): Self = StObject.set(x, "maxPendingChunkedMessage", value.asInstanceOf[js.Any])
+    
+    inline def setMaxPendingChunkedMessageUndefined: Self = StObject.set(x, "maxPendingChunkedMessage", js.undefined)
     
     inline def setNAckRedeliverTimeoutMs(value: Double): Self = StObject.set(x, "nAckRedeliverTimeoutMs", value.asInstanceOf[js.Any])
     

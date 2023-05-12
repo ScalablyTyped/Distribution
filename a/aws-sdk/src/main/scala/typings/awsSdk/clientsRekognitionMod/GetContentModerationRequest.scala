@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetContentModerationRequest extends StObject {
   
   /**
+    * Defines how to aggregate results of the StartContentModeration request. Default aggregation option is TIMESTAMPS. SEGMENTS mode aggregates moderation labels over time.
+    */
+  var AggregateBy: js.UndefOr[ContentModerationAggregateBy] = js.undefined
+  
+  /**
     * The identifier for the inappropriate, unwanted, or offensive content moderation job. Use JobId to identify the job in a subsequent call to GetContentModeration.
     */
   var JobId: typings.awsSdk.clientsRekognitionMod.JobId
@@ -35,6 +40,10 @@ object GetContentModerationRequest {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: GetContentModerationRequest] (val x: Self) extends AnyVal {
+    
+    inline def setAggregateBy(value: ContentModerationAggregateBy): Self = StObject.set(x, "AggregateBy", value.asInstanceOf[js.Any])
+    
+    inline def setAggregateByUndefined: Self = StObject.set(x, "AggregateBy", js.undefined)
     
     inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     

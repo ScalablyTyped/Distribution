@@ -1,5 +1,6 @@
 package typings.xstate.libTypesMod
 
+import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -7,6 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BaseActionObject
   extends StObject
+     with /* notAnArrayLike */ NumberDictionary[scala.Nothing]
      with /* other */ StringDictionary[Any] {
   
   /**

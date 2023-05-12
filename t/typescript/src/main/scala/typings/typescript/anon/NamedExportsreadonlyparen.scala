@@ -2,7 +2,6 @@ package typings.typescript.anon
 
 import typings.typescript.mod.ExportDeclaration
 import typings.typescript.mod.ExportSpecifier
-import typings.typescript.mod.ModifierLike
 import typings.typescript.mod.Node
 import typings.typescript.mod.NodeArray
 import typings.typescript.mod.NodeFlags
@@ -16,18 +15,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined typescript.typescript.NamedExports & { readonly parent :typescript.typescript.ExportDeclaration & { readonly isTypeOnly :true}} */
 @js.native
 trait NamedExportsreadonlyparen extends StObject {
-  
-  /**
-    * @deprecated `decorators` has been removed from `Node` and merged with `modifiers` on the `Node` subtypes that support them.
-    * Use `ts.canHaveDecorators()` to test whether a `Node` can have decorators.
-    * Use `ts.getDecorators()` to get the decorators of a `Node`.
-    *
-    * For example:
-    * ```ts
-    * const decorators = ts.canHaveDecorators(node) ? ts.getDecorators(node) : undefined;
-    * ```
-    */
-  val decorators: Unit = js.native
   
   val elements: NodeArray[ExportSpecifier] = js.native
   
@@ -82,18 +69,6 @@ trait NamedExportsreadonlyparen extends StObject {
   def getWidth(sourceFile: SourceFileLike): Double = js.native
   
   val kind: NamedExports = js.native
-  
-  /**
-    * @deprecated `modifiers` has been removed from `Node` and moved to the `Node` subtypes that support them.
-    * Use `ts.canHaveModifiers()` to test whether a `Node` can have modifiers.
-    * Use `ts.getModifiers()` to get the modifiers of a `Node`.
-    *
-    * For example:
-    * ```ts
-    * const modifiers = ts.canHaveModifiers(node) ? ts.getModifiers(node) : undefined;
-    * ```
-    */
-  val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
   
   val parent: ExportDeclaration = js.native
   

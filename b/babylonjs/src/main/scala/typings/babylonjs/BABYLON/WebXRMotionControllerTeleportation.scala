@@ -11,6 +11,10 @@ trait WebXRMotionControllerTeleportation
   
   /* private */ var _attachController: Any = js.native
   
+  /* private */ var _blockedRayColor: Any = js.native
+  
+  /* private */ var _cachedColor4White: Any = js.native
+  
   /* private */ var _controllers: Any = js.native
   
   /* private */ var _createDefaultTargetMesh: Any = js.native
@@ -18,6 +22,8 @@ trait WebXRMotionControllerTeleportation
   /* private */ var _currentTeleportationControllerId: Any = js.native
   
   /* private */ var _detachController: Any = js.native
+  
+  /* private */ var _disposeBezierCurve: Any = js.native
   
   /* private */ var _findClosestSnapPointWithRadius: Any = js.native
   

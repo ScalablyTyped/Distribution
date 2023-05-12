@@ -17,13 +17,13 @@ trait XrJoint extends StObject {
   /* private */ var _dirtyLocal: Any = js.native
   
   /**
-    * @type {XrFinger}
+    * @type {import('./xr-finger.js').XrFinger}
     * @private
     */
   /* private */ var _finger: Any = js.native
   
   /**
-    * @type {XrHand}
+    * @type {import('./xr-hand.js').XrHand}
     * @private
     */
   /* private */ var _hand: Any = js.native
@@ -100,7 +100,7 @@ trait XrJoint extends StObject {
   /**
     * Finger that joint relates to.
     *
-    * @type {XrFinger|null}
+    * @type {import('./xr-finger.js').XrFinger|null}
     */
   def finger: XrFinger = js.native
   
@@ -121,7 +121,7 @@ trait XrJoint extends StObject {
   /**
     * Hand that joint relates to.
     *
-    * @type {XrHand}
+    * @type {import('./xr-hand.js').XrHand}
     */
   def hand: XrHand = js.native
   

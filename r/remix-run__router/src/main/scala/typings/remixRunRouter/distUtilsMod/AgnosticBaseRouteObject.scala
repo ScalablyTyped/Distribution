@@ -1,7 +1,7 @@
 package typings.remixRunRouter.distUtilsMod
 
 import typings.remixRunRouter.anon.ActionResult
-import typings.std.Response
+import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,6 +21,8 @@ trait AgnosticBaseRouteObject extends StObject {
   
   var id: js.UndefOr[String] = js.undefined
   
+  var `lazy`: js.UndefOr[LazyRouteFunction[AgnosticBaseRouteObject]] = js.undefined
+  
   var loader: js.UndefOr[LoaderFunction] = js.undefined
   
   var path: js.UndefOr[String] = js.undefined
@@ -37,7 +39,7 @@ object AgnosticBaseRouteObject {
   @scala.inline
   implicit open class MutableBuilder[Self <: AgnosticBaseRouteObject] (val x: Self) extends AnyVal {
     
-    inline def setAction(value: /* args */ ActionFunctionArgs => (js.Promise[Any | Response]) | Response | Any): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
+    inline def setAction(value: /* args */ ActionFunctionArgs => js.Promise[DataFunctionValue] | DataFunctionValue): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
     
     inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
@@ -57,7 +59,11 @@ object AgnosticBaseRouteObject {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setLoader(value: /* args */ LoaderFunctionArgs => (js.Promise[Any | Response]) | Response | Any): Self = StObject.set(x, "loader", js.Any.fromFunction1(value))
+    inline def setLazy(value: () => js.Promise[Omit[AgnosticBaseRouteObject, ImmutableRouteKey]]): Self = StObject.set(x, "lazy", js.Any.fromFunction0(value))
+    
+    inline def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
+    
+    inline def setLoader(value: /* args */ LoaderFunctionArgs => js.Promise[DataFunctionValue] | DataFunctionValue): Self = StObject.set(x, "loader", js.Any.fromFunction1(value))
     
     inline def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
     

@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AutocompleteResultPoi extends StObject {
   
-  var City: String
-  
   var business: String
   
-  // wtf
+  var city: String
+  
+  // The offical doc says `City`, but actual code is `city`
   var district: String
   
   var province: String
@@ -22,14 +22,14 @@ trait AutocompleteResultPoi extends StObject {
 object AutocompleteResultPoi {
   
   inline def apply(
-    City: String,
     business: String,
+    city: String,
     district: String,
     province: String,
     street: String,
     streetNumber: String
   ): AutocompleteResultPoi = {
-    val __obj = js.Dynamic.literal(City = City.asInstanceOf[js.Any], business = business.asInstanceOf[js.Any], district = district.asInstanceOf[js.Any], province = province.asInstanceOf[js.Any], street = street.asInstanceOf[js.Any], streetNumber = streetNumber.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(business = business.asInstanceOf[js.Any], city = city.asInstanceOf[js.Any], district = district.asInstanceOf[js.Any], province = province.asInstanceOf[js.Any], street = street.asInstanceOf[js.Any], streetNumber = streetNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutocompleteResultPoi]
   }
   
@@ -38,7 +38,7 @@ object AutocompleteResultPoi {
     
     inline def setBusiness(value: String): Self = StObject.set(x, "business", value.asInstanceOf[js.Any])
     
-    inline def setCity(value: String): Self = StObject.set(x, "City", value.asInstanceOf[js.Any])
+    inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
     inline def setDistrict(value: String): Self = StObject.set(x, "district", value.asInstanceOf[js.Any])
     

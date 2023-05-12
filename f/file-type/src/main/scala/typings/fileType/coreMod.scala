@@ -1,6 +1,7 @@
 package typings.fileType
 
 import typings.node.nodeColonstreamMod.Readable
+import typings.std.Blob
 import typings.std.ReadonlySet
 import typings.strtok3.libTypesMod.ITokenizer
 import org.scalablytyped.runtime.StObject
@@ -12,6 +13,8 @@ object coreMod {
   @JSImport("file-type/core", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def fileTypeFromBlob(blob: Blob): js.Promise[js.UndefOr[FileTypeResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fileTypeFromBlob")(blob.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[FileTypeResult]]]
   
   inline def fileTypeFromBuffer(buffer: js.typedarray.ArrayBuffer): js.Promise[js.UndefOr[FileTypeResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fileTypeFromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[FileTypeResult]]]
   inline def fileTypeFromBuffer(buffer: js.typedarray.Uint8Array): js.Promise[js.UndefOr[FileTypeResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fileTypeFromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[FileTypeResult]]]
@@ -113,6 +116,7 @@ object coreMod {
     - typings.fileType.fileTypeStrings.xlsx
     - typings.fileType.fileTypeStrings.`3gp`
     - typings.fileType.fileTypeStrings.`3g2`
+    - typings.fileType.fileTypeStrings.j2c
     - typings.fileType.fileTypeStrings.jp2
     - typings.fileType.fileTypeStrings.jpm
     - typings.fileType.fileTypeStrings.jpx
@@ -171,6 +175,15 @@ object coreMod {
     - typings.fileType.fileTypeStrings.zst
     - typings.fileType.fileTypeStrings.jxl
     - typings.fileType.fileTypeStrings.vcf
+    - typings.fileType.fileTypeStrings.jls
+    - typings.fileType.fileTypeStrings.pst
+    - typings.fileType.fileTypeStrings.dwg
+    - typings.fileType.fileTypeStrings.parquet
+    - typings.fileType.fileTypeStrings.`class`
+    - typings.fileType.fileTypeStrings.arj
+    - typings.fileType.fileTypeStrings.cpio
+    - typings.fileType.fileTypeStrings.ace
+    - typings.fileType.fileTypeStrings.avro
   */
   trait FileExtension extends StObject
   object FileExtension {
@@ -189,6 +202,8 @@ object coreMod {
     
     inline def ac3: typings.fileType.fileTypeStrings.ac3 = "ac3".asInstanceOf[typings.fileType.fileTypeStrings.ac3]
     
+    inline def ace: typings.fileType.fileTypeStrings.ace = "ace".asInstanceOf[typings.fileType.fileTypeStrings.ace]
+    
     inline def ai: typings.fileType.fileTypeStrings.ai = "ai".asInstanceOf[typings.fileType.fileTypeStrings.ai]
     
     inline def aif: typings.fileType.fileTypeStrings.aif = "aif".asInstanceOf[typings.fileType.fileTypeStrings.aif]
@@ -203,6 +218,8 @@ object coreMod {
     
     inline def ar: typings.fileType.fileTypeStrings.ar = "ar".asInstanceOf[typings.fileType.fileTypeStrings.ar]
     
+    inline def arj: typings.fileType.fileTypeStrings.arj = "arj".asInstanceOf[typings.fileType.fileTypeStrings.arj]
+    
     inline def arrow: typings.fileType.fileTypeStrings.arrow = "arrow".asInstanceOf[typings.fileType.fileTypeStrings.arrow]
     
     inline def arw: typings.fileType.fileTypeStrings.arw = "arw".asInstanceOf[typings.fileType.fileTypeStrings.arw]
@@ -214,6 +231,8 @@ object coreMod {
     inline def avi: typings.fileType.fileTypeStrings.avi = "avi".asInstanceOf[typings.fileType.fileTypeStrings.avi]
     
     inline def avif: typings.fileType.fileTypeStrings.avif = "avif".asInstanceOf[typings.fileType.fileTypeStrings.avif]
+    
+    inline def avro: typings.fileType.fileTypeStrings.avro = "avro".asInstanceOf[typings.fileType.fileTypeStrings.avro]
     
     inline def blend: typings.fileType.fileTypeStrings.blend = "blend".asInstanceOf[typings.fileType.fileTypeStrings.blend]
     
@@ -228,6 +247,10 @@ object coreMod {
     inline def cfb: typings.fileType.fileTypeStrings.cfb = "cfb".asInstanceOf[typings.fileType.fileTypeStrings.cfb]
     
     inline def chm: typings.fileType.fileTypeStrings.chm = "chm".asInstanceOf[typings.fileType.fileTypeStrings.chm]
+    
+    inline def `class`: typings.fileType.fileTypeStrings.`class` = "class".asInstanceOf[typings.fileType.fileTypeStrings.`class`]
+    
+    inline def cpio: typings.fileType.fileTypeStrings.cpio = "cpio".asInstanceOf[typings.fileType.fileTypeStrings.cpio]
     
     inline def cr2: typings.fileType.fileTypeStrings.cr2 = "cr2".asInstanceOf[typings.fileType.fileTypeStrings.cr2]
     
@@ -248,6 +271,8 @@ object coreMod {
     inline def docx: typings.fileType.fileTypeStrings.docx = "docx".asInstanceOf[typings.fileType.fileTypeStrings.docx]
     
     inline def dsf: typings.fileType.fileTypeStrings.dsf = "dsf".asInstanceOf[typings.fileType.fileTypeStrings.dsf]
+    
+    inline def dwg: typings.fileType.fileTypeStrings.dwg = "dwg".asInstanceOf[typings.fileType.fileTypeStrings.dwg]
     
     inline def elf: typings.fileType.fileTypeStrings.elf = "elf".asInstanceOf[typings.fileType.fileTypeStrings.elf]
     
@@ -290,6 +315,10 @@ object coreMod {
     inline def indd: typings.fileType.fileTypeStrings.indd = "indd".asInstanceOf[typings.fileType.fileTypeStrings.indd]
     
     inline def it: typings.fileType.fileTypeStrings.it = "it".asInstanceOf[typings.fileType.fileTypeStrings.it]
+    
+    inline def j2c: typings.fileType.fileTypeStrings.j2c = "j2c".asInstanceOf[typings.fileType.fileTypeStrings.j2c]
+    
+    inline def jls: typings.fileType.fileTypeStrings.jls = "jls".asInstanceOf[typings.fileType.fileTypeStrings.jls]
     
     inline def jp2: typings.fileType.fileTypeStrings.jp2 = "jp2".asInstanceOf[typings.fileType.fileTypeStrings.jp2]
     
@@ -373,6 +402,8 @@ object coreMod {
     
     inline def otf: typings.fileType.fileTypeStrings.otf = "otf".asInstanceOf[typings.fileType.fileTypeStrings.otf]
     
+    inline def parquet: typings.fileType.fileTypeStrings.parquet = "parquet".asInstanceOf[typings.fileType.fileTypeStrings.parquet]
+    
     inline def pcap: typings.fileType.fileTypeStrings.pcap = "pcap".asInstanceOf[typings.fileType.fileTypeStrings.pcap]
     
     inline def pdf: typings.fileType.fileTypeStrings.pdf = "pdf".asInstanceOf[typings.fileType.fileTypeStrings.pdf]
@@ -386,6 +417,8 @@ object coreMod {
     inline def ps: typings.fileType.fileTypeStrings.ps = "ps".asInstanceOf[typings.fileType.fileTypeStrings.ps]
     
     inline def psd: typings.fileType.fileTypeStrings.psd = "psd".asInstanceOf[typings.fileType.fileTypeStrings.psd]
+    
+    inline def pst: typings.fileType.fileTypeStrings.pst = "pst".asInstanceOf[typings.fileType.fileTypeStrings.pst]
     
     inline def qcp: typings.fileType.fileTypeStrings.qcp = "qcp".asInstanceOf[typings.fileType.fileTypeStrings.qcp]
     
@@ -484,6 +517,8 @@ object coreMod {
   
   object MimeType {
     
+    inline def applicationSlashavro: typings.fileType.fileTypeStrings.applicationSlashavro = "application/avro".asInstanceOf[typings.fileType.fileTypeStrings.applicationSlashavro]
+    
     inline def applicationSlashdicom: typings.fileType.fileTypeStrings.applicationSlashdicom = "application/dicom".asInstanceOf[typings.fileType.fileTypeStrings.applicationSlashdicom]
     
     inline def applicationSlasheps: typings.fileType.fileTypeStrings.applicationSlasheps = "application/eps".asInstanceOf[typings.fileType.fileTypeStrings.applicationSlasheps]
@@ -491,6 +526,8 @@ object coreMod {
     inline def applicationSlashepubPlussignzip: typings.fileType.fileTypeStrings.applicationSlashepubPlussignzip = "application/epub+zip".asInstanceOf[typings.fileType.fileTypeStrings.applicationSlashepubPlussignzip]
     
     inline def applicationSlashgzip: typings.fileType.fileTypeStrings.applicationSlashgzip = "application/gzip".asInstanceOf[typings.fileType.fileTypeStrings.applicationSlashgzip]
+    
+    inline def `applicationSlashjava-vm`: typings.fileType.fileTypeStrings.`applicationSlashjava-vm` = "application/java-vm".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashjava-vm`]
     
     inline def applicationSlashmxf: typings.fileType.fileTypeStrings.applicationSlashmxf = "application/mxf".asInstanceOf[typings.fileType.fileTypeStrings.applicationSlashmxf]
     
@@ -512,6 +549,8 @@ object coreMod {
     
     inline def `applicationSlashvndDotms-htmlhelp`: typings.fileType.fileTypeStrings.`applicationSlashvndDotms-htmlhelp` = "application/vnd.ms-htmlhelp".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashvndDotms-htmlhelp`]
     
+    inline def `applicationSlashvndDotms-outlook`: typings.fileType.fileTypeStrings.`applicationSlashvndDotms-outlook` = "application/vnd.ms-outlook".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashvndDotms-outlook`]
+    
     inline def applicationSlashvndDotoasisDotopendocumentDotpresentation: typings.fileType.fileTypeStrings.applicationSlashvndDotoasisDotopendocumentDotpresentation = "application/vnd.oasis.opendocument.presentation".asInstanceOf[typings.fileType.fileTypeStrings.applicationSlashvndDotoasisDotopendocumentDotpresentation]
     
     inline def applicationSlashvndDotoasisDotopendocumentDotspreadsheet: typings.fileType.fileTypeStrings.applicationSlashvndDotoasisDotopendocumentDotspreadsheet = "application/vnd.oasis.opendocument.spreadsheet".asInstanceOf[typings.fileType.fileTypeStrings.applicationSlashvndDotoasisDotopendocumentDotspreadsheet]
@@ -532,9 +571,13 @@ object coreMod {
     
     inline def `applicationSlashx-7z-compressed`: typings.fileType.fileTypeStrings.`applicationSlashx-7z-compressed` = "application/x-7z-compressed".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashx-7z-compressed`]
     
+    inline def `applicationSlashx-ace-compressed`: typings.fileType.fileTypeStrings.`applicationSlashx-ace-compressed` = "application/x-ace-compressed".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashx-ace-compressed`]
+    
     inline def `applicationSlashx-apache-arrow`: typings.fileType.fileTypeStrings.`applicationSlashx-apache-arrow` = "application/x-apache-arrow".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashx-apache-arrow`]
     
     inline def `applicationSlashx-apple-diskimage`: typings.fileType.fileTypeStrings.`applicationSlashx-apple-diskimage` = "application/x-apple-diskimage".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashx-apple-diskimage`]
+    
+    inline def `applicationSlashx-arj`: typings.fileType.fileTypeStrings.`applicationSlashx-arj` = "application/x-arj".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashx-arj`]
     
     inline def `applicationSlashx-asar`: typings.fileType.fileTypeStrings.`applicationSlashx-asar` = "application/x-asar".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashx-asar`]
     
@@ -545,6 +588,8 @@ object coreMod {
     inline def `applicationSlashx-cfb`: typings.fileType.fileTypeStrings.`applicationSlashx-cfb` = "application/x-cfb".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashx-cfb`]
     
     inline def `applicationSlashx-compress`: typings.fileType.fileTypeStrings.`applicationSlashx-compress` = "application/x-compress".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashx-compress`]
+    
+    inline def `applicationSlashx-cpio`: typings.fileType.fileTypeStrings.`applicationSlashx-cpio` = "application/x-cpio".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashx-cpio`]
     
     inline def `applicationSlashx-deb`: typings.fileType.fileTypeStrings.`applicationSlashx-deb` = "application/x-deb".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashx-deb`]
     
@@ -567,6 +612,8 @@ object coreMod {
     inline def `applicationSlashx-msdownload`: typings.fileType.fileTypeStrings.`applicationSlashx-msdownload` = "application/x-msdownload".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashx-msdownload`]
     
     inline def `applicationSlashx-nintendo-nes-rom`: typings.fileType.fileTypeStrings.`applicationSlashx-nintendo-nes-rom` = "application/x-nintendo-nes-rom".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashx-nintendo-nes-rom`]
+    
+    inline def `applicationSlashx-parquet`: typings.fileType.fileTypeStrings.`applicationSlashx-parquet` = "application/x-parquet".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashx-parquet`]
     
     inline def `applicationSlashx-rar-compressed`: typings.fileType.fileTypeStrings.`applicationSlashx-rar-compressed` = "application/x-rar-compressed".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashx-rar-compressed`]
     
@@ -668,6 +715,10 @@ object coreMod {
     
     inline def imageSlashicns: typings.fileType.fileTypeStrings.imageSlashicns = "image/icns".asInstanceOf[typings.fileType.fileTypeStrings.imageSlashicns]
     
+    inline def imageSlashj2c: typings.fileType.fileTypeStrings.imageSlashj2c = "image/j2c".asInstanceOf[typings.fileType.fileTypeStrings.imageSlashj2c]
+    
+    inline def imageSlashjls: typings.fileType.fileTypeStrings.imageSlashjls = "image/jls".asInstanceOf[typings.fileType.fileTypeStrings.imageSlashjls]
+    
     inline def imageSlashjp2: typings.fileType.fileTypeStrings.imageSlashjp2 = "image/jp2".asInstanceOf[typings.fileType.fileTypeStrings.imageSlashjp2]
     
     inline def imageSlashjpeg: typings.fileType.fileTypeStrings.imageSlashjpeg = "image/jpeg".asInstanceOf[typings.fileType.fileTypeStrings.imageSlashjpeg]
@@ -687,6 +738,8 @@ object coreMod {
     inline def imageSlashtiff: typings.fileType.fileTypeStrings.imageSlashtiff = "image/tiff".asInstanceOf[typings.fileType.fileTypeStrings.imageSlashtiff]
     
     inline def imageSlashvndDotadobeDotphotoshop: typings.fileType.fileTypeStrings.imageSlashvndDotadobeDotphotoshop = "image/vnd.adobe.photoshop".asInstanceOf[typings.fileType.fileTypeStrings.imageSlashvndDotadobeDotphotoshop]
+    
+    inline def imageSlashvndDotdwg: typings.fileType.fileTypeStrings.imageSlashvndDotdwg = "image/vnd.dwg".asInstanceOf[typings.fileType.fileTypeStrings.imageSlashvndDotdwg]
     
     inline def `imageSlashvndDotms-photo`: typings.fileType.fileTypeStrings.`imageSlashvndDotms-photo` = "image/vnd.ms-photo".asInstanceOf[typings.fileType.fileTypeStrings.`imageSlashvndDotms-photo`]
     
@@ -835,6 +888,7 @@ object coreMod {
     - typings.fileType.fileTypeStrings.videoSlashmp2t
     - typings.fileType.fileTypeStrings.`applicationSlashx-blender`
     - typings.fileType.fileTypeStrings.imageSlashbpg
+    - typings.fileType.fileTypeStrings.imageSlashj2c
     - typings.fileType.fileTypeStrings.imageSlashjp2
     - typings.fileType.fileTypeStrings.imageSlashjpx
     - typings.fileType.fileTypeStrings.imageSlashjpm
@@ -885,6 +939,15 @@ object coreMod {
     - typings.fileType.fileTypeStrings.modelSlash3mf
     - typings.fileType.fileTypeStrings.imageSlashjxl
     - typings.fileType.fileTypeStrings.applicationSlashzstd
+    - typings.fileType.fileTypeStrings.imageSlashjls
+    - typings.fileType.fileTypeStrings.`applicationSlashvndDotms-outlook`
+    - typings.fileType.fileTypeStrings.imageSlashvndDotdwg
+    - typings.fileType.fileTypeStrings.`applicationSlashx-parquet`
+    - typings.fileType.fileTypeStrings.`applicationSlashjava-vm`
+    - typings.fileType.fileTypeStrings.`applicationSlashx-arj`
+    - typings.fileType.fileTypeStrings.`applicationSlashx-cpio`
+    - typings.fileType.fileTypeStrings.`applicationSlashx-ace-compressed`
+    - typings.fileType.fileTypeStrings.applicationSlashavro
   */
   type MimeType = _MimeType | (/* application/vnd.openxmlformats-officedocument.wordprocessingml.document */ String)
   

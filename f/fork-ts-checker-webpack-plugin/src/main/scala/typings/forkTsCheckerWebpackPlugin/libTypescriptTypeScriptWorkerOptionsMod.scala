@@ -1,7 +1,6 @@
 package typings.forkTsCheckerWebpackPlugin
 
 import typings.forkTsCheckerWebpackPlugin.anon.PartialTypeScriptDiagnost
-import typings.forkTsCheckerWebpackPlugin.anon.`0`
 import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.`write-dts`
 import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.`write-references`
 import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.`write-tsbuildinfo`
@@ -24,8 +23,6 @@ object libTypescriptTypeScriptWorkerOptionsMod {
     var context: js.UndefOr[String] = js.undefined
     
     var diagnosticOptions: js.UndefOr[PartialTypeScriptDiagnost] = js.undefined
-    
-    var extensions: js.UndefOr[`0`] = js.undefined
     
     var memoryLimit: js.UndefOr[Double] = js.undefined
     
@@ -64,10 +61,6 @@ object libTypescriptTypeScriptWorkerOptionsMod {
       inline def setDiagnosticOptions(value: PartialTypeScriptDiagnost): Self = StObject.set(x, "diagnosticOptions", value.asInstanceOf[js.Any])
       
       inline def setDiagnosticOptionsUndefined: Self = StObject.set(x, "diagnosticOptions", js.undefined)
-      
-      inline def setExtensions(value: `0`): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
-      
-      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
       inline def setMemoryLimit(value: Double): Self = StObject.set(x, "memoryLimit", value.asInstanceOf[js.Any])
       

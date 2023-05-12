@@ -3,35 +3,38 @@ package typings.wdioTypes.buildCapabilitiesMod
 import typings.wdioTypes.anon.AllowAllCookies
 import typings.wdioTypes.anon.Arch
 import typings.wdioTypes.anon.Browser
+import typings.wdioTypes.anon.CaptureContent
 import typings.wdioTypes.anon.Driver
 import typings.wdioTypes.anon.EnablePopups
 import typings.wdioTypes.wdioTypesInts.`0`
 import typings.wdioTypes.wdioTypesInts.`1`
+import typings.wdioTypes.wdioTypesStrings.`true`
 import typings.wdioTypes.wdioTypesStrings.disable
+import typings.wdioTypes.wdioTypesStrings.error
 import typings.wdioTypes.wdioTypesStrings.errors
 import typings.wdioTypes.wdioTypesStrings.info_
 import typings.wdioTypes.wdioTypesStrings.landscape
 import typings.wdioTypes.wdioTypesStrings.portrait
 import typings.wdioTypes.wdioTypesStrings.verbose
+import typings.wdioTypes.wdioTypesStrings.warn
 import typings.wdioTypes.wdioTypesStrings.warnings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.wdioTypes.buildCapabilitiesMod.AppiumXCUITestCapabilities because var conflicts: appiumColonapp, appiumColondeviceName, appiumColonenablePerformanceLogging, appiumColonnativeWebTap, appiumColonplatformName, appiumColonudid. Inlined appiumColonbrowserName, appiumColoncalendarFormat, appiumColonbundleId, appiumColonautoAcceptAlerts, appiumColonautoDismissAlerts, appiumColonsafariInitialUrl, appiumColonsafariAllowPopups, appiumColonsafariIgnoreFraudWarning, appiumColonsafariOpenLinksInBackground, appiumColonsafariShowFullResponse, appiumColonkeepKeyChains, appiumColonlocationServicesEnabled, appiumColonlocationServicesAuthorized, appiumColonresetLocationService, appiumColonlocalizableStringsDir, appiumColonprocessArguments, appiumColonshowIOSLog, appiumColonwebviewConnectRetries, appiumColonclearSystemFiles, appiumColoncustomSSLCert, appiumColonwebkitResponseTimeout, appiumColonwebkitDebugProxyPort, appiumColonremoteDebugProxy, appiumColonenableAsyncExecuteFromHttps, appiumColonfullContextList, appiumColonignoreAboutBlankUrl, appiumColonskipLogCapture, appiumColonshowXcodeLog, appiumColonwdaLocalPort, appiumColonwdaBaseUrl, appiumColoniosInstallPause, appiumColonxcodeConfigFile, appiumColonxcodeOrgId, appiumColonxcodeSigningId, appiumColonkeychainPath, appiumColonkeychainPassword, appiumColonbootstrapPath, appiumColonagentPath, appiumColontapWithShortPressDuration, appiumColonscaleFactor, appiumColonusePrebuiltWDA, appiumColonwebDriverAgentUrl, appiumColonderivedDataPath, appiumColonlaunchWithIDB, appiumColonuseNewWDA, appiumColonwdaLaunchTimeout, appiumColonwdaConnectionTimeout, appiumColonupdatedWDABundleId, appiumColonresetOnSessionStartOnly, appiumColoncommandTimeouts, appiumColonwdaStartupRetries, appiumColonwdaStartupRetryInterval, appiumColonprebuildWDA, appiumColonconnectHardwareKeyboard, appiumColonforceTurnOnSoftwareKeyboardSimulator, appiumColonsimulatorPasteboardAutomaticSync, appiumColonsimulatorDevicesSetPath, appiumColoncalendarAccessAuthorized, appiumColonuseSimpleBuildTest, appiumColonwaitForQuiescence, appiumColonmaxTypingFrequency, appiumColonnativeTyping, appiumColonsimpleIsVisibleCheck, appiumColonshouldUseSingletonTestManager, appiumColonisHeadless, appiumColonuseXctestrunFile, appiumColonabsoluteWebLocations, appiumColonsimulatorWindowCenter, appiumColonsimulatorStartupTimeout, appiumColonsimulatorTracePointer, appiumColonuseJSONSource, appiumColonenforceFreshSimulatorCreation, appiumColonshutdownOtherSimulators, appiumColonkeychainsExcludePatterns, appiumColonshowSafariConsoleLog, appiumColonshowSafariNetworkLog, appiumColonsafariGarbageCollect, appiumColonsafariGlobalPreferences, appiumColonsafariLogAllCommunication, appiumColonsafariLogAllCommunicationHexDump, appiumColonsafariSocketChunkSize, appiumColonmjpegServerPort, appiumColonreduceMotion, appiumColonmjpegScreenshotUrl, appiumColonpermissions, appiumColonscreenshotQuality, appiumColonwdaEventloopIdleDelay, appiumColonotherApps, appiumColonincludeSafariInWebviews, appiumColonadditionalWebviewBundleIds, appiumColonwebviewConnectTimeout, appiumColoniosSimulatorLogsPredicate, appiumColonappPushTimeout, appiumColonnativeWebTapStrict, appiumColonsafariWebInspectorMaxFrameLength, appiumColonallowProvisioningDeviceRegistration, appiumColonwaitForIdleTimeout, appiumColonresultBundlePath, appiumColonresultBundleVersion, appiumColonsafariIgnoreWebHostnames, appiumColonincludeDeviceCapsToSessionInfo, appiumColondisableAutomaticScreenshots, appiumColonshouldTerminateApp, appiumColonforceAppLaunch, appiumColonuseNativeCachingStrategy, appiumColonappInstallStrategy, appiumColonappArguments
-- typings.wdioTypes.buildCapabilitiesMod.BrowserStackCapabilities because var conflicts: appiumVersion, browserName, browserVersion, deviceName, idleTimeout, projectName, seleniumVersion. Inlined browser, browser_version, os, os_version, osVersion, desired, device, buildName, sessionName, local, debug, networkLogs, ie, userName, accessKey, localIdentifier, consoleLogs, appiumLogs, video, seleniumLogs, geoLocation, timezone, resolution, browserstackDotmaskCommands, maskBasicAuth, autoWait, hosts, bfcache, wsLocalSupport, disableCorsRestrictions, buildTag, realMobile, deviceOrientation, customNetwork, networkProfile, chrome, edge, browserstackDotsendKeys, safari, firefox, acceptSslCerts, wdioService
+- typings.wdioTypes.buildCapabilitiesMod.LambdaTestCapabilities because var conflicts: accessKey, browserName, browserVersion, build, name, platformName, resolution, tags, video. Inlined username, selenium_version, headless, seCdp, project, buildTags, smartUiProject, visual, tunnel, console, network
+- typings.wdioTypes.buildCapabilitiesMod.AppiumXCUITestCapabilities because var conflicts: appiumColonapp, appiumColonautoGrantPermissions, appiumColondeviceName, appiumColonenablePerformanceLogging, appiumColonisHeadless, appiumColonnativeWebTap, appiumColonotherApps, appiumColonplatformName, appiumColonudid. Inlined appiumColonbrowserName, appiumColoncalendarFormat, appiumColonbundleId, appiumColonlaunchTimeout, appiumColonappName, appiumColonwaitForAppScript, appiumColonsendKeyStrategy, appiumColonscreenshotWaitTimeout, appiumColoninterKeyDelay, appiumColonnativeInstrumentsLib, appiumColonautoAcceptAlerts, appiumColonautoDismissAlerts, appiumColonsafariInitialUrl, appiumColonsafariAllowPopups, appiumColonsafariIgnoreFraudWarning, appiumColonsafariOpenLinksInBackground, appiumColonsafariShowFullResponse, appiumColonkeepKeyChains, appiumColonlocationServicesEnabled, appiumColonlocationServicesAuthorized, appiumColonresetLocationService, appiumColonlocalizableStringsDir, appiumColonprocessArguments, appiumColonshowIOSLog, appiumColonwebviewConnectRetries, appiumColonclearSystemFiles, appiumColoncustomSSLCert, appiumColonwebkitResponseTimeout, appiumColonwebkitDebugProxyPort, appiumColonremoteDebugProxy, appiumColonenableAsyncExecuteFromHttps, appiumColonfullContextList, appiumColonignoreAboutBlankUrl, appiumColonskipLogCapture, appiumColonshowXcodeLog, appiumColonwdaLocalPort, appiumColonwdaBaseUrl, appiumColoniosInstallPause, appiumColonxcodeConfigFile, appiumColonxcodeOrgId, appiumColonxcodeSigningId, appiumColonkeychainPath, appiumColonkeychainPassword, appiumColonbootstrapPath, appiumColonagentPath, appiumColontapWithShortPressDuration, appiumColonscaleFactor, appiumColonusePrebuiltWDA, appiumColonwebDriverAgentUrl, appiumColonderivedDataPath, appiumColonlaunchWithIDB, appiumColonuseNewWDA, appiumColonwdaLaunchTimeout, appiumColonwdaConnectionTimeout, appiumColonupdatedWDABundleId, appiumColonresetOnSessionStartOnly, appiumColoncommandTimeouts, appiumColonwdaStartupRetries, appiumColonwdaStartupRetryInterval, appiumColonprebuildWDA, appiumColonconnectHardwareKeyboard, appiumColonforceTurnOnSoftwareKeyboardSimulator, appiumColonsimulatorPasteboardAutomaticSync, appiumColonsimulatorDevicesSetPath, appiumColoncalendarAccessAuthorized, appiumColonuseSimpleBuildTest, appiumColonwaitForQuiescence, appiumColonmaxTypingFrequency, appiumColonnativeTyping, appiumColonsimpleIsVisibleCheck, appiumColonshouldUseSingletonTestManager, appiumColonuseXctestrunFile, appiumColonabsoluteWebLocations, appiumColonsimulatorWindowCenter, appiumColonsimulatorStartupTimeout, appiumColonsimulatorTracePointer, appiumColonuseJSONSource, appiumColonenforceFreshSimulatorCreation, appiumColonshutdownOtherSimulators, appiumColonkeychainsExcludePatterns, appiumColonshowSafariConsoleLog, appiumColonshowSafariNetworkLog, appiumColonsafariGarbageCollect, appiumColonsafariGlobalPreferences, appiumColonsafariLogAllCommunication, appiumColonsafariLogAllCommunicationHexDump, appiumColonsafariSocketChunkSize, appiumColonmjpegServerPort, appiumColonreduceMotion, appiumColonmjpegScreenshotUrl, appiumColonpermissions, appiumColonscreenshotQuality, appiumColonwdaEventloopIdleDelay, appiumColonincludeSafariInWebviews, appiumColonadditionalWebviewBundleIds, appiumColonwebviewConnectTimeout, appiumColoniosSimulatorLogsPredicate, appiumColonappPushTimeout, appiumColonnativeWebTapStrict, appiumColonsafariWebInspectorMaxFrameLength, appiumColonallowProvisioningDeviceRegistration, appiumColonwaitForIdleTimeout, appiumColonresultBundlePath, appiumColonresultBundleVersion, appiumColonsafariIgnoreWebHostnames, appiumColonincludeDeviceCapsToSessionInfo, appiumColondisableAutomaticScreenshots, appiumColonshouldTerminateApp, appiumColonforceAppLaunch, appiumColonuseNativeCachingStrategy, appiumColonappInstallStrategy, appiumColonappArguments
+- typings.wdioTypes.buildCapabilitiesMod.BrowserStackCapabilities because var conflicts: appiumVersion, browserName, browserVersion, browserstackDotbuildIdentifier, browserstackDotlocalIdentifier, idleTimeout, projectName, seleniumVersion. Inlined browser, browser_version, os, os_version, osVersion, desired, device, buildName, sessionName, local, debug, networkLogs, networkLogsOptions, interactiveDebugging, seleniumCdp, ie, userName, accessKey, localIdentifier, consoleLogs, appiumLogs, video, seleniumLogs, geoLocation, timezone, resolution, browserstackDotmaskCommands, maskBasicAuth, autoWait, hosts, bfcache, wsLocalSupport, disableCorsRestrictions, buildTag, deviceName, realMobile, deviceOrientation, customNetwork, networkProfile, chrome, edge, browserstackDotsendKeys, safari, firefox, acceptSslCerts, wdioService, buildIdentifier
+- typings.wdioTypes.buildCapabilitiesMod.AppiumAndroidCapabilities because var conflicts: appiumColonappPackage, appiumColonappWaitActivity. Inlined appiumColonappiumVersion, appiumColonappActivity, appiumColonappWaitPackage, appiumColonappWaitDuration, appiumColondeviceReadyTimeout, appiumColonallowTestPackages, appiumColonandroidCoverage, appiumColonandroidCoverageEndIntent, appiumColonandroidDeviceReadyTimeout, appiumColonandroidInstallTimeout, appiumColonandroidInstallPath, appiumColonadbPort, appiumColonsystemPort, appiumColonremoteAdbHost, appiumColonandroidDeviceSocket, appiumColonavd, appiumColonavdLaunchTimeout, appiumColonavdReadyTimeout, appiumColonavdArgs, appiumColonuseKeystore, appiumColonkeystorePath, appiumColonkeystorePassword, appiumColonkeyAlias, appiumColonkeyPassword, appiumColonchromedriverExecutable, appiumColonchromedriverArgs, appiumColonchromedriverExecutableDir, appiumColonchromedriverChromeMappingFile, appiumColonchromedriverUseSystemExecutable, appiumColonautoWebviewTimeout, appiumColonchromedriverPort, appiumColonchromedriverPorts, appiumColonintentAction, appiumColonintentCategory, appiumColonintentFlags, appiumColonoptionalIntentArguments, appiumColondontStopAppOnReset, appiumColonunicodeKeyboard, appiumColonresetKeyboard, appiumColonnoSign, appiumColonignoreUnimportantViews, appiumColondisableAndroidWatchers, appiumColonrecreateChromeDriverSessions, appiumColonnativeWebScreenshot, appiumColonandroidScreenshotPath, appiumColonautoGrantPermissions, appiumColonnetworkSpeed, appiumColongpsEnabled, appiumColonisHeadless, appiumColonadbExecTimeout, appiumColonlocaleScript, appiumColonskipDeviceInitialization, appiumColonchromedriverDisableBuildCheck, appiumColonskipUnlock, appiumColonunlockType, appiumColonunlockKey, appiumColonautoLaunch, appiumColonskipLogcatCapture, appiumColonuninstallOtherPackages, appiumColondisableWindowAnimation, appiumColonotherApps, appiumColonuiautomator2ServerLaunchTimeout, appiumColonuiautomator2ServerInstallTimeout, appiumColonskipServerInstallation, appiumColonespressoServerLaunchTimeout, appiumColondisableSuppressAccessibilityService
 - typings.wdioTypes.buildCapabilitiesMod.SeleniumRCCapabilities because var conflicts: avoidProxy. Inlined commandLineFlags, executablePath, timeoutInSeconds, onlyProxySeleniumTraffic, proxyEverything, proxyRequired, browserSideLog, optionsSet, singleWindow, dontInjectRegex, userJSInjection, userExtensions
-- typings.wdioTypes.buildCapabilitiesMod.TestingbotCapabilities because var conflicts: build, name, public, tags. Inlined `tunnel-identifier` */ trait DesiredCapabilities
+- typings.wdioTypes.buildCapabilitiesMod.TestingbotCapabilities because var conflicts: build, chromedriverVersion, geckodriverVersion, iedriverVersion, name, public, tags, timeZone. Inlined `tunnel-identifier`, realDevice, `selenium-version`, edgedriverVersion, operaDriverVersion, upload, testingbotDotgeoCountryCode, idletimeout, `load-extension` */ trait DesiredCapabilities
   extends StObject
      with Capabilities
      with SauceLabsCapabilities
      with SauceLabsVisualCapabilities
-     with AppiumIOSCapabilities
      with GeckodriverCapabilities
      with IECapabilities
-     with AppiumAndroidCapabilities
-     with AppiumCapabilities
      with GridCapabilities
      with ChromeCapabilities
      with _RemoteCapability {
@@ -43,6 +46,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   @JSName("appium:absoluteWebLocations")
   var appiumColonabsoluteWebLocations: js.UndefOr[Boolean] = js.undefined
   
+  @JSName("appium:adbExecTimeout")
+  var appiumColonadbExecTimeout: js.UndefOr[Double] = js.undefined
+  
+  @JSName("appium:adbPort")
+  var appiumColonadbPort: js.UndefOr[Double] = js.undefined
+  
   @JSName("appium:additionalWebviewBundleIds")
   var appiumColonadditionalWebviewBundleIds: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -51,6 +60,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   @JSName("appium:allowProvisioningDeviceRegistration")
   var appiumColonallowProvisioningDeviceRegistration: js.UndefOr[Boolean] = js.undefined
+  
+  @JSName("appium:allowTestPackages")
+  var appiumColonallowTestPackages: js.UndefOr[Boolean] = js.undefined
+  
+  @JSName("appium:androidCoverage")
+  var appiumColonandroidCoverage: js.UndefOr[String] = js.undefined
+  
+  @JSName("appium:androidCoverageEndIntent")
+  var appiumColonandroidCoverageEndIntent: js.UndefOr[String] = js.undefined
+  
+  @JSName("appium:androidDeviceReadyTimeout")
+  var appiumColonandroidDeviceReadyTimeout: js.UndefOr[Double] = js.undefined
+  
+  @JSName("appium:androidDeviceSocket")
+  var appiumColonandroidDeviceSocket: js.UndefOr[String] = js.undefined
+  
+  @JSName("appium:androidInstallPath")
+  var appiumColonandroidInstallPath: js.UndefOr[String] = js.undefined
+  
+  @JSName("appium:androidInstallTimeout")
+  var appiumColonandroidInstallTimeout: js.UndefOr[Double] = js.undefined
+  
+  @JSName("appium:androidScreenshotPath")
+  var appiumColonandroidScreenshotPath: js.UndefOr[String] = js.undefined
+  
+  @JSName("appium:appActivity")
+  var appiumColonappActivity: js.UndefOr[String] = js.undefined
   
   /**
     * Windows Application Driver capabilities
@@ -61,14 +97,47 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   @JSName("appium:appInstallStrategy")
   var appiumColonappInstallStrategy: js.UndefOr[String] = js.undefined
   
+  @JSName("appium:appName")
+  var appiumColonappName: js.UndefOr[String] = js.undefined
+  
   @JSName("appium:appPushTimeout")
   var appiumColonappPushTimeout: js.UndefOr[Double] = js.undefined
+  
+  @JSName("appium:appWaitDuration")
+  var appiumColonappWaitDuration: js.UndefOr[Double] = js.undefined
+  
+  @JSName("appium:appWaitPackage")
+  var appiumColonappWaitPackage: js.UndefOr[String] = js.undefined
+  
+  @JSName("appium:appiumVersion")
+  var appiumColonappiumVersion: js.UndefOr[String] = js.undefined
   
   @JSName("appium:autoAcceptAlerts")
   var appiumColonautoAcceptAlerts: js.UndefOr[Boolean] = js.undefined
   
   @JSName("appium:autoDismissAlerts")
   var appiumColonautoDismissAlerts: js.UndefOr[Boolean] = js.undefined
+  
+  @JSName("appium:autoGrantPermissions")
+  var appiumColonautoGrantPermissions: js.UndefOr[Boolean] = js.undefined
+  
+  @JSName("appium:autoLaunch")
+  var appiumColonautoLaunch: js.UndefOr[Boolean] = js.undefined
+  
+  @JSName("appium:autoWebviewTimeout")
+  var appiumColonautoWebviewTimeout: js.UndefOr[Double] = js.undefined
+  
+  @JSName("appium:avd")
+  var appiumColonavd: js.UndefOr[String] = js.undefined
+  
+  @JSName("appium:avdArgs")
+  var appiumColonavdArgs: js.UndefOr[String] = js.undefined
+  
+  @JSName("appium:avdLaunchTimeout")
+  var appiumColonavdLaunchTimeout: js.UndefOr[Double] = js.undefined
+  
+  @JSName("appium:avdReadyTimeout")
+  var appiumColonavdReadyTimeout: js.UndefOr[Double] = js.undefined
   
   @JSName("appium:bootstrapPath")
   var appiumColonbootstrapPath: js.UndefOr[String] = js.undefined
@@ -85,6 +154,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   @JSName("appium:calendarFormat")
   var appiumColoncalendarFormat: js.UndefOr[String] = js.undefined
   
+  @JSName("appium:chromedriverArgs")
+  var appiumColonchromedriverArgs: js.UndefOr[js.Array[String]] = js.undefined
+  
+  @JSName("appium:chromedriverChromeMappingFile")
+  var appiumColonchromedriverChromeMappingFile: js.UndefOr[String] = js.undefined
+  
+  @JSName("appium:chromedriverDisableBuildCheck")
+  var appiumColonchromedriverDisableBuildCheck: js.UndefOr[Boolean] = js.undefined
+  
+  @JSName("appium:chromedriverExecutable")
+  var appiumColonchromedriverExecutable: js.UndefOr[String] = js.undefined
+  
+  @JSName("appium:chromedriverExecutableDir")
+  var appiumColonchromedriverExecutableDir: js.UndefOr[String] = js.undefined
+  
+  @JSName("appium:chromedriverPort")
+  var appiumColonchromedriverPort: js.UndefOr[Double] = js.undefined
+  
+  @JSName("appium:chromedriverPorts")
+  var appiumColonchromedriverPorts: js.UndefOr[js.Array[Double | js.Array[Double]]] = js.undefined
+  
+  @JSName("appium:chromedriverUseSystemExecutable")
+  var appiumColonchromedriverUseSystemExecutable: js.UndefOr[Boolean] = js.undefined
+  
   @JSName("appium:clearSystemFiles")
   var appiumColonclearSystemFiles: js.UndefOr[Boolean] = js.undefined
   
@@ -100,14 +193,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   @JSName("appium:derivedDataPath")
   var appiumColonderivedDataPath: js.UndefOr[String] = js.undefined
   
+  @JSName("appium:deviceReadyTimeout")
+  var appiumColondeviceReadyTimeout: js.UndefOr[Double] = js.undefined
+  
+  @JSName("appium:disableAndroidWatchers")
+  var appiumColondisableAndroidWatchers: js.UndefOr[Boolean] = js.undefined
+  
   @JSName("appium:disableAutomaticScreenshots")
   var appiumColondisableAutomaticScreenshots: js.UndefOr[Boolean] = js.undefined
+  
+  @JSName("appium:disableSuppressAccessibilityService")
+  var appiumColondisableSuppressAccessibilityService: js.UndefOr[Boolean] = js.undefined
+  
+  @JSName("appium:disableWindowAnimation")
+  var appiumColondisableWindowAnimation: js.UndefOr[Boolean] = js.undefined
+  
+  @JSName("appium:dontStopAppOnReset")
+  var appiumColondontStopAppOnReset: js.UndefOr[Boolean] = js.undefined
   
   @JSName("appium:enableAsyncExecuteFromHttps")
   var appiumColonenableAsyncExecuteFromHttps: js.UndefOr[Boolean] = js.undefined
   
   @JSName("appium:enforceFreshSimulatorCreation")
   var appiumColonenforceFreshSimulatorCreation: js.UndefOr[Boolean] = js.undefined
+  
+  @JSName("appium:espressoServerLaunchTimeout")
+  var appiumColonespressoServerLaunchTimeout: js.UndefOr[Double] = js.undefined
   
   @JSName("appium:forceAppLaunch")
   var appiumColonforceAppLaunch: js.UndefOr[Boolean] = js.undefined
@@ -118,14 +229,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   @JSName("appium:fullContextList")
   var appiumColonfullContextList: js.UndefOr[Boolean] = js.undefined
   
+  @JSName("appium:gpsEnabled")
+  var appiumColongpsEnabled: js.UndefOr[Boolean] = js.undefined
+  
   @JSName("appium:ignoreAboutBlankUrl")
   var appiumColonignoreAboutBlankUrl: js.UndefOr[Boolean] = js.undefined
+  
+  @JSName("appium:ignoreUnimportantViews")
+  var appiumColonignoreUnimportantViews: js.UndefOr[Boolean] = js.undefined
   
   @JSName("appium:includeDeviceCapsToSessionInfo")
   var appiumColonincludeDeviceCapsToSessionInfo: js.UndefOr[Boolean] = js.undefined
   
   @JSName("appium:includeSafariInWebviews")
   var appiumColonincludeSafariInWebviews: js.UndefOr[Boolean] = js.undefined
+  
+  @JSName("appium:intentAction")
+  var appiumColonintentAction: js.UndefOr[String] = js.undefined
+  
+  @JSName("appium:intentCategory")
+  var appiumColonintentCategory: js.UndefOr[String] = js.undefined
+  
+  @JSName("appium:intentFlags")
+  var appiumColonintentFlags: js.UndefOr[String] = js.undefined
+  
+  @JSName("appium:interKeyDelay")
+  var appiumColoninterKeyDelay: js.UndefOr[Double] = js.undefined
   
   @JSName("appium:iosInstallPause")
   var appiumColoniosInstallPause: js.UndefOr[Double] = js.undefined
@@ -139,6 +268,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   @JSName("appium:keepKeyChains")
   var appiumColonkeepKeyChains: js.UndefOr[Boolean] = js.undefined
   
+  @JSName("appium:keyAlias")
+  var appiumColonkeyAlias: js.UndefOr[String] = js.undefined
+  
+  @JSName("appium:keyPassword")
+  var appiumColonkeyPassword: js.UndefOr[String] = js.undefined
+  
   @JSName("appium:keychainPassword")
   var appiumColonkeychainPassword: js.UndefOr[String] = js.undefined
   
@@ -148,8 +283,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   @JSName("appium:keychainsExcludePatterns")
   var appiumColonkeychainsExcludePatterns: js.UndefOr[String] = js.undefined
   
+  @JSName("appium:keystorePassword")
+  var appiumColonkeystorePassword: js.UndefOr[String] = js.undefined
+  
+  @JSName("appium:keystorePath")
+  var appiumColonkeystorePath: js.UndefOr[String] = js.undefined
+  
+  @JSName("appium:launchTimeout")
+  var appiumColonlaunchTimeout: js.UndefOr[Double] = js.undefined
+  
   @JSName("appium:launchWithIDB")
   var appiumColonlaunchWithIDB: js.UndefOr[Boolean] = js.undefined
+  
+  @JSName("appium:localeScript")
+  var appiumColonlocaleScript: js.UndefOr[String] = js.undefined
   
   @JSName("appium:localizableStringsDir")
   var appiumColonlocalizableStringsDir: js.UndefOr[String] = js.undefined
@@ -169,14 +316,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   @JSName("appium:mjpegServerPort")
   var appiumColonmjpegServerPort: js.UndefOr[Double] = js.undefined
   
+  @JSName("appium:nativeInstrumentsLib")
+  var appiumColonnativeInstrumentsLib: js.UndefOr[Boolean] = js.undefined
+  
   @JSName("appium:nativeTyping")
   var appiumColonnativeTyping: js.UndefOr[Boolean] = js.undefined
+  
+  @JSName("appium:nativeWebScreenshot")
+  var appiumColonnativeWebScreenshot: js.UndefOr[Boolean] = js.undefined
   
   @JSName("appium:nativeWebTapStrict")
   var appiumColonnativeWebTapStrict: js.UndefOr[Boolean] = js.undefined
   
+  @JSName("appium:networkSpeed")
+  var appiumColonnetworkSpeed: js.UndefOr[String] = js.undefined
+  
+  @JSName("appium:noSign")
+  var appiumColonnoSign: js.UndefOr[Boolean] = js.undefined
+  
+  @JSName("appium:optionalIntentArguments")
+  var appiumColonoptionalIntentArguments: js.UndefOr[String] = js.undefined
+  
   @JSName("appium:otherApps")
-  var appiumColonotherApps: js.UndefOr[String] = js.undefined
+  var appiumColonotherApps: js.UndefOr[String | js.Array[String]] = js.undefined
   
   @JSName("appium:permissions")
   var appiumColonpermissions: js.UndefOr[String] = js.undefined
@@ -187,11 +349,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   @JSName("appium:processArguments")
   var appiumColonprocessArguments: js.UndefOr[String | AppiumXCUIProcessArguments] = js.undefined
   
+  @JSName("appium:recreateChromeDriverSessions")
+  var appiumColonrecreateChromeDriverSessions: js.UndefOr[Boolean] = js.undefined
+  
   @JSName("appium:reduceMotion")
   var appiumColonreduceMotion: js.UndefOr[Boolean] = js.undefined
   
+  @JSName("appium:remoteAdbHost")
+  var appiumColonremoteAdbHost: js.UndefOr[String] = js.undefined
+  
   @JSName("appium:remoteDebugProxy")
   var appiumColonremoteDebugProxy: js.UndefOr[String] = js.undefined
+  
+  @JSName("appium:resetKeyboard")
+  var appiumColonresetKeyboard: js.UndefOr[Boolean] = js.undefined
   
   @JSName("appium:resetLocationService")
   var appiumColonresetLocationService: js.UndefOr[Boolean] = js.undefined
@@ -247,6 +418,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   @JSName("appium:screenshotQuality")
   var appiumColonscreenshotQuality: js.UndefOr[Double] = js.undefined
   
+  @JSName("appium:screenshotWaitTimeout")
+  var appiumColonscreenshotWaitTimeout: js.UndefOr[Double] = js.undefined
+  
+  @JSName("appium:sendKeyStrategy")
+  var appiumColonsendKeyStrategy: js.UndefOr[String] = js.undefined
+  
   @JSName("appium:shouldTerminateApp")
   var appiumColonshouldTerminateApp: js.UndefOr[Boolean] = js.undefined
   
@@ -286,17 +463,53 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   @JSName("appium:simulatorWindowCenter")
   var appiumColonsimulatorWindowCenter: js.UndefOr[String] = js.undefined
   
+  @JSName("appium:skipDeviceInitialization")
+  var appiumColonskipDeviceInitialization: js.UndefOr[Boolean] = js.undefined
+  
   @JSName("appium:skipLogCapture")
   var appiumColonskipLogCapture: js.UndefOr[Boolean] = js.undefined
   
+  @JSName("appium:skipLogcatCapture")
+  var appiumColonskipLogcatCapture: js.UndefOr[Boolean] = js.undefined
+  
+  @JSName("appium:skipServerInstallation")
+  var appiumColonskipServerInstallation: js.UndefOr[Boolean] = js.undefined
+  
+  @JSName("appium:skipUnlock")
+  var appiumColonskipUnlock: js.UndefOr[Boolean] = js.undefined
+  
+  @JSName("appium:systemPort")
+  var appiumColonsystemPort: js.UndefOr[Double] = js.undefined
+  
   @JSName("appium:tapWithShortPressDuration")
   var appiumColontapWithShortPressDuration: js.UndefOr[Double] = js.undefined
+  
+  @JSName("appium:uiautomator2ServerInstallTimeout")
+  var appiumColonuiautomator2ServerInstallTimeout: js.UndefOr[Double] = js.undefined
+  
+  @JSName("appium:uiautomator2ServerLaunchTimeout")
+  var appiumColonuiautomator2ServerLaunchTimeout: js.UndefOr[Double] = js.undefined
+  
+  @JSName("appium:unicodeKeyboard")
+  var appiumColonunicodeKeyboard: js.UndefOr[Boolean] = js.undefined
+  
+  @JSName("appium:uninstallOtherPackages")
+  var appiumColonuninstallOtherPackages: js.UndefOr[String] = js.undefined
+  
+  @JSName("appium:unlockKey")
+  var appiumColonunlockKey: js.UndefOr[String] = js.undefined
+  
+  @JSName("appium:unlockType")
+  var appiumColonunlockType: js.UndefOr[String] = js.undefined
   
   @JSName("appium:updatedWDABundleId")
   var appiumColonupdatedWDABundleId: js.UndefOr[String] = js.undefined
   
   @JSName("appium:useJSONSource")
   var appiumColonuseJSONSource: js.UndefOr[Boolean] = js.undefined
+  
+  @JSName("appium:useKeystore")
+  var appiumColonuseKeystore: js.UndefOr[Boolean] = js.undefined
   
   @JSName("appium:useNativeCachingStrategy")
   var appiumColonuseNativeCachingStrategy: js.UndefOr[Boolean] = js.undefined
@@ -312,6 +525,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   @JSName("appium:useXctestrunFile")
   var appiumColonuseXctestrunFile: js.UndefOr[Boolean] = js.undefined
+  
+  @JSName("appium:waitForAppScript")
+  var appiumColonwaitForAppScript: js.UndefOr[String] = js.undefined
   
   @JSName("appium:waitForIdleTimeout")
   var appiumColonwaitForIdleTimeout: js.UndefOr[Double] = js.undefined
@@ -403,6 +619,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var browserstackDotsendKeys: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specify an identifier for a build consists group of tests.
+    */
+  var buildIdentifier: js.UndefOr[String] = js.undefined
+  
+  /**
     * Specify a name for a logical group of tests.
     */
   var buildName: js.UndefOr[String] = js.undefined
@@ -413,9 +634,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var buildTag: js.UndefOr[String] = js.undefined
   
+  /**
+    * Use this capability to add a custom tag to the builds.
+    * These tags can be used to filter the builds on the Automate dashboard.
+    */
+  var buildTags: js.UndefOr[js.Array[String]] = js.undefined
+  
   var chrome: js.UndefOr[Driver] = js.undefined
   
   var commandLineFlags: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Capture browser console logs at various steps in the test.
+    */
+  var console: js.UndefOr[warn | error | info_ | `true`] = js.undefined
   
   /**
     * Capture browser console logs at various steps in the test.
@@ -443,6 +675,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var device: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specify a particular mobile device for the test environment.
+    */
+  var deviceName: js.UndefOr[String] = js.undefined
+  
   var deviceOrientation: js.UndefOr[portrait | landscape] = js.undefined
   
   /**
@@ -456,6 +693,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var dontInjectRegex: js.UndefOr[js.RegExp] = js.undefined
   
   var edge: js.UndefOr[EnablePopups] = js.undefined
+  
+  var edgedriverVersion: js.UndefOr[String] = js.undefined
   
   var elementScrollBehavior: js.UndefOr[Double] = js.undefined
   
@@ -471,6 +710,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var handlesAlerts: js.UndefOr[Boolean] = js.undefined
   
+  var headless: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Add a host entry (/etc/hosts) to the remote BrowserStack machine.
     *
@@ -480,9 +721,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var hosts: js.UndefOr[String] = js.undefined
   
+  var idletimeout: js.UndefOr[Double] = js.undefined
+  
   var ie: js.UndefOr[Arch] = js.undefined
   
+  /**
+    * https://www.browserstack.com/docs/app-automate/appium/debug-failed-tests/interactive-session
+    * Enable an interactive debugging session while your test session is running
+    */
+  var interactiveDebugging: js.UndefOr[Boolean] = js.undefined
+  
   var javascriptEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  var `load-extension`: js.UndefOr[String] = js.undefined
   
   /**
     * Test locally hosted websites on BrowserStack.
@@ -504,11 +755,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var nativeEvents: js.UndefOr[Boolean] = js.undefined
   
+  var network: js.UndefOr[Boolean] = js.undefined
+  
   var networkLogs: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * https://www.browserstack.com/docs/app-automate/appium/debug-failed-tests/network-logs
+    * Enable viewing the response data in the Network Logs tab on your session
+    */
+  var networkLogsOptions: js.UndefOr[CaptureContent] = js.undefined
   
   var networkProfile: js.UndefOr[String] = js.undefined
   
   var onlyProxySeleniumTraffic: js.UndefOr[Boolean] = js.undefined
+  
+  var operaDriverVersion: js.UndefOr[String] = js.undefined
   
   var optionsSet: js.UndefOr[Boolean] = js.undefined
   
@@ -520,12 +781,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var platform: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specify a name for a logical group of builds.
+    */
+  var project: js.UndefOr[String] = js.undefined
+  
   var proxyEverything: js.UndefOr[Boolean] = js.undefined
   
   var proxyRequired: js.UndefOr[Boolean] = js.undefined
   
   @JSName("public")
   var public_DesiredCapabilities: js.UndefOr[Any] = js.undefined
+  
+  var realDevice: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Use this flag to test on a physical mobile device.
@@ -543,10 +811,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var safari: js.UndefOr[AllowAllCookies] = js.undefined
   
+  var seCdp: js.UndefOr[Boolean] = js.undefined
+  
+  var `selenium-version`: js.UndefOr[String] = js.undefined
+  
+  var seleniumCdp: js.UndefOr[Boolean] = js.undefined
+  
   @JSName("selenium.server.url")
   var seleniumDotserverDoturl: js.UndefOr[String] = js.undefined
   
   var seleniumLogs: js.UndefOr[Boolean] = js.undefined
+  
+  var selenium_version: js.UndefOr[String] = js.undefined
   
   /**
     * Specify an identifier for the test run.
@@ -555,15 +831,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var singleWindow: js.UndefOr[Boolean] = js.undefined
   
+  var smartUiProject: js.UndefOr[String] = js.undefined
+  
   var specs: js.UndefOr[js.Array[String]] = js.undefined
+  
+  @JSName("testingbot.geoCountryCode")
+  var testingbotDotgeoCountryCode: js.UndefOr[String] = js.undefined
   
   var timeoutInSeconds: js.UndefOr[Double] = js.undefined
   
   var timezone: js.UndefOr[String] = js.undefined
   
+  /**
+    * Test locally hosted websites on LambdaTest.
+    * To enable access to the local machine you need to setup the
+    * LambdaTest Tunnel (https://www.lambdatest.com/support/docs/testing-locally-hosted-pages).
+    */
+  var tunnel: js.UndefOr[Boolean] = js.undefined
+  
   var `tunnel-identifier`: js.UndefOr[String] = js.undefined
   
   var unexpectedAlertBehaviour: js.UndefOr[String] = js.undefined
+  
+  var upload: js.UndefOr[String] = js.undefined
   
   var userExtensions: js.UndefOr[String] = js.undefined
   
@@ -571,9 +861,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var userName: js.UndefOr[String] = js.undefined
   
+  var username: js.UndefOr[String] = js.undefined
+  
   var version: js.UndefOr[String] = js.undefined
   
   var video: js.UndefOr[Boolean] = js.undefined
+  
+  var visual: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @private
@@ -600,8 +894,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object DesiredCapabilities {
   
-  inline def apply(): DesiredCapabilities = {
+  inline def apply(Object: js.Object): DesiredCapabilities = {
     val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, Object)
     __obj.asInstanceOf[DesiredCapabilities]
   }
   
@@ -620,6 +915,14 @@ object DesiredCapabilities {
     
     inline def setAppiumColonabsoluteWebLocationsUndefined: Self = StObject.set(x, "appium:absoluteWebLocations", js.undefined)
     
+    inline def setAppiumColonadbExecTimeout(value: Double): Self = StObject.set(x, "appium:adbExecTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonadbExecTimeoutUndefined: Self = StObject.set(x, "appium:adbExecTimeout", js.undefined)
+    
+    inline def setAppiumColonadbPort(value: Double): Self = StObject.set(x, "appium:adbPort", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonadbPortUndefined: Self = StObject.set(x, "appium:adbPort", js.undefined)
+    
     inline def setAppiumColonadditionalWebviewBundleIds(value: js.Array[String]): Self = StObject.set(x, "appium:additionalWebviewBundleIds", value.asInstanceOf[js.Any])
     
     inline def setAppiumColonadditionalWebviewBundleIdsUndefined: Self = StObject.set(x, "appium:additionalWebviewBundleIds", js.undefined)
@@ -634,6 +937,42 @@ object DesiredCapabilities {
     
     inline def setAppiumColonallowProvisioningDeviceRegistrationUndefined: Self = StObject.set(x, "appium:allowProvisioningDeviceRegistration", js.undefined)
     
+    inline def setAppiumColonallowTestPackages(value: Boolean): Self = StObject.set(x, "appium:allowTestPackages", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonallowTestPackagesUndefined: Self = StObject.set(x, "appium:allowTestPackages", js.undefined)
+    
+    inline def setAppiumColonandroidCoverage(value: String): Self = StObject.set(x, "appium:androidCoverage", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonandroidCoverageEndIntent(value: String): Self = StObject.set(x, "appium:androidCoverageEndIntent", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonandroidCoverageEndIntentUndefined: Self = StObject.set(x, "appium:androidCoverageEndIntent", js.undefined)
+    
+    inline def setAppiumColonandroidCoverageUndefined: Self = StObject.set(x, "appium:androidCoverage", js.undefined)
+    
+    inline def setAppiumColonandroidDeviceReadyTimeout(value: Double): Self = StObject.set(x, "appium:androidDeviceReadyTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonandroidDeviceReadyTimeoutUndefined: Self = StObject.set(x, "appium:androidDeviceReadyTimeout", js.undefined)
+    
+    inline def setAppiumColonandroidDeviceSocket(value: String): Self = StObject.set(x, "appium:androidDeviceSocket", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonandroidDeviceSocketUndefined: Self = StObject.set(x, "appium:androidDeviceSocket", js.undefined)
+    
+    inline def setAppiumColonandroidInstallPath(value: String): Self = StObject.set(x, "appium:androidInstallPath", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonandroidInstallPathUndefined: Self = StObject.set(x, "appium:androidInstallPath", js.undefined)
+    
+    inline def setAppiumColonandroidInstallTimeout(value: Double): Self = StObject.set(x, "appium:androidInstallTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonandroidInstallTimeoutUndefined: Self = StObject.set(x, "appium:androidInstallTimeout", js.undefined)
+    
+    inline def setAppiumColonandroidScreenshotPath(value: String): Self = StObject.set(x, "appium:androidScreenshotPath", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonandroidScreenshotPathUndefined: Self = StObject.set(x, "appium:androidScreenshotPath", js.undefined)
+    
+    inline def setAppiumColonappActivity(value: String): Self = StObject.set(x, "appium:appActivity", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonappActivityUndefined: Self = StObject.set(x, "appium:appActivity", js.undefined)
+    
     inline def setAppiumColonappArguments(value: String): Self = StObject.set(x, "appium:appArguments", value.asInstanceOf[js.Any])
     
     inline def setAppiumColonappArgumentsUndefined: Self = StObject.set(x, "appium:appArguments", js.undefined)
@@ -642,9 +981,25 @@ object DesiredCapabilities {
     
     inline def setAppiumColonappInstallStrategyUndefined: Self = StObject.set(x, "appium:appInstallStrategy", js.undefined)
     
+    inline def setAppiumColonappName(value: String): Self = StObject.set(x, "appium:appName", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonappNameUndefined: Self = StObject.set(x, "appium:appName", js.undefined)
+    
     inline def setAppiumColonappPushTimeout(value: Double): Self = StObject.set(x, "appium:appPushTimeout", value.asInstanceOf[js.Any])
     
     inline def setAppiumColonappPushTimeoutUndefined: Self = StObject.set(x, "appium:appPushTimeout", js.undefined)
+    
+    inline def setAppiumColonappWaitDuration(value: Double): Self = StObject.set(x, "appium:appWaitDuration", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonappWaitDurationUndefined: Self = StObject.set(x, "appium:appWaitDuration", js.undefined)
+    
+    inline def setAppiumColonappWaitPackage(value: String): Self = StObject.set(x, "appium:appWaitPackage", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonappWaitPackageUndefined: Self = StObject.set(x, "appium:appWaitPackage", js.undefined)
+    
+    inline def setAppiumColonappiumVersion(value: String): Self = StObject.set(x, "appium:appiumVersion", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonappiumVersionUndefined: Self = StObject.set(x, "appium:appiumVersion", js.undefined)
     
     inline def setAppiumColonautoAcceptAlerts(value: Boolean): Self = StObject.set(x, "appium:autoAcceptAlerts", value.asInstanceOf[js.Any])
     
@@ -653,6 +1008,34 @@ object DesiredCapabilities {
     inline def setAppiumColonautoDismissAlerts(value: Boolean): Self = StObject.set(x, "appium:autoDismissAlerts", value.asInstanceOf[js.Any])
     
     inline def setAppiumColonautoDismissAlertsUndefined: Self = StObject.set(x, "appium:autoDismissAlerts", js.undefined)
+    
+    inline def setAppiumColonautoGrantPermissions(value: Boolean): Self = StObject.set(x, "appium:autoGrantPermissions", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonautoGrantPermissionsUndefined: Self = StObject.set(x, "appium:autoGrantPermissions", js.undefined)
+    
+    inline def setAppiumColonautoLaunch(value: Boolean): Self = StObject.set(x, "appium:autoLaunch", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonautoLaunchUndefined: Self = StObject.set(x, "appium:autoLaunch", js.undefined)
+    
+    inline def setAppiumColonautoWebviewTimeout(value: Double): Self = StObject.set(x, "appium:autoWebviewTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonautoWebviewTimeoutUndefined: Self = StObject.set(x, "appium:autoWebviewTimeout", js.undefined)
+    
+    inline def setAppiumColonavd(value: String): Self = StObject.set(x, "appium:avd", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonavdArgs(value: String): Self = StObject.set(x, "appium:avdArgs", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonavdArgsUndefined: Self = StObject.set(x, "appium:avdArgs", js.undefined)
+    
+    inline def setAppiumColonavdLaunchTimeout(value: Double): Self = StObject.set(x, "appium:avdLaunchTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonavdLaunchTimeoutUndefined: Self = StObject.set(x, "appium:avdLaunchTimeout", js.undefined)
+    
+    inline def setAppiumColonavdReadyTimeout(value: Double): Self = StObject.set(x, "appium:avdReadyTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonavdReadyTimeoutUndefined: Self = StObject.set(x, "appium:avdReadyTimeout", js.undefined)
+    
+    inline def setAppiumColonavdUndefined: Self = StObject.set(x, "appium:avd", js.undefined)
     
     inline def setAppiumColonbootstrapPath(value: String): Self = StObject.set(x, "appium:bootstrapPath", value.asInstanceOf[js.Any])
     
@@ -674,6 +1057,42 @@ object DesiredCapabilities {
     
     inline def setAppiumColoncalendarFormatUndefined: Self = StObject.set(x, "appium:calendarFormat", js.undefined)
     
+    inline def setAppiumColonchromedriverArgs(value: js.Array[String]): Self = StObject.set(x, "appium:chromedriverArgs", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonchromedriverArgsUndefined: Self = StObject.set(x, "appium:chromedriverArgs", js.undefined)
+    
+    inline def setAppiumColonchromedriverArgsVarargs(value: String*): Self = StObject.set(x, "appium:chromedriverArgs", js.Array(value*))
+    
+    inline def setAppiumColonchromedriverChromeMappingFile(value: String): Self = StObject.set(x, "appium:chromedriverChromeMappingFile", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonchromedriverChromeMappingFileUndefined: Self = StObject.set(x, "appium:chromedriverChromeMappingFile", js.undefined)
+    
+    inline def setAppiumColonchromedriverDisableBuildCheck(value: Boolean): Self = StObject.set(x, "appium:chromedriverDisableBuildCheck", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonchromedriverDisableBuildCheckUndefined: Self = StObject.set(x, "appium:chromedriverDisableBuildCheck", js.undefined)
+    
+    inline def setAppiumColonchromedriverExecutable(value: String): Self = StObject.set(x, "appium:chromedriverExecutable", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonchromedriverExecutableDir(value: String): Self = StObject.set(x, "appium:chromedriverExecutableDir", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonchromedriverExecutableDirUndefined: Self = StObject.set(x, "appium:chromedriverExecutableDir", js.undefined)
+    
+    inline def setAppiumColonchromedriverExecutableUndefined: Self = StObject.set(x, "appium:chromedriverExecutable", js.undefined)
+    
+    inline def setAppiumColonchromedriverPort(value: Double): Self = StObject.set(x, "appium:chromedriverPort", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonchromedriverPortUndefined: Self = StObject.set(x, "appium:chromedriverPort", js.undefined)
+    
+    inline def setAppiumColonchromedriverPorts(value: js.Array[Double | js.Array[Double]]): Self = StObject.set(x, "appium:chromedriverPorts", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonchromedriverPortsUndefined: Self = StObject.set(x, "appium:chromedriverPorts", js.undefined)
+    
+    inline def setAppiumColonchromedriverPortsVarargs(value: (Double | js.Array[Double])*): Self = StObject.set(x, "appium:chromedriverPorts", js.Array(value*))
+    
+    inline def setAppiumColonchromedriverUseSystemExecutable(value: Boolean): Self = StObject.set(x, "appium:chromedriverUseSystemExecutable", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonchromedriverUseSystemExecutableUndefined: Self = StObject.set(x, "appium:chromedriverUseSystemExecutable", js.undefined)
+    
     inline def setAppiumColonclearSystemFiles(value: Boolean): Self = StObject.set(x, "appium:clearSystemFiles", value.asInstanceOf[js.Any])
     
     inline def setAppiumColonclearSystemFilesUndefined: Self = StObject.set(x, "appium:clearSystemFiles", js.undefined)
@@ -694,9 +1113,29 @@ object DesiredCapabilities {
     
     inline def setAppiumColonderivedDataPathUndefined: Self = StObject.set(x, "appium:derivedDataPath", js.undefined)
     
+    inline def setAppiumColondeviceReadyTimeout(value: Double): Self = StObject.set(x, "appium:deviceReadyTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColondeviceReadyTimeoutUndefined: Self = StObject.set(x, "appium:deviceReadyTimeout", js.undefined)
+    
+    inline def setAppiumColondisableAndroidWatchers(value: Boolean): Self = StObject.set(x, "appium:disableAndroidWatchers", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColondisableAndroidWatchersUndefined: Self = StObject.set(x, "appium:disableAndroidWatchers", js.undefined)
+    
     inline def setAppiumColondisableAutomaticScreenshots(value: Boolean): Self = StObject.set(x, "appium:disableAutomaticScreenshots", value.asInstanceOf[js.Any])
     
     inline def setAppiumColondisableAutomaticScreenshotsUndefined: Self = StObject.set(x, "appium:disableAutomaticScreenshots", js.undefined)
+    
+    inline def setAppiumColondisableSuppressAccessibilityService(value: Boolean): Self = StObject.set(x, "appium:disableSuppressAccessibilityService", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColondisableSuppressAccessibilityServiceUndefined: Self = StObject.set(x, "appium:disableSuppressAccessibilityService", js.undefined)
+    
+    inline def setAppiumColondisableWindowAnimation(value: Boolean): Self = StObject.set(x, "appium:disableWindowAnimation", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColondisableWindowAnimationUndefined: Self = StObject.set(x, "appium:disableWindowAnimation", js.undefined)
+    
+    inline def setAppiumColondontStopAppOnReset(value: Boolean): Self = StObject.set(x, "appium:dontStopAppOnReset", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColondontStopAppOnResetUndefined: Self = StObject.set(x, "appium:dontStopAppOnReset", js.undefined)
     
     inline def setAppiumColonenableAsyncExecuteFromHttps(value: Boolean): Self = StObject.set(x, "appium:enableAsyncExecuteFromHttps", value.asInstanceOf[js.Any])
     
@@ -705,6 +1144,10 @@ object DesiredCapabilities {
     inline def setAppiumColonenforceFreshSimulatorCreation(value: Boolean): Self = StObject.set(x, "appium:enforceFreshSimulatorCreation", value.asInstanceOf[js.Any])
     
     inline def setAppiumColonenforceFreshSimulatorCreationUndefined: Self = StObject.set(x, "appium:enforceFreshSimulatorCreation", js.undefined)
+    
+    inline def setAppiumColonespressoServerLaunchTimeout(value: Double): Self = StObject.set(x, "appium:espressoServerLaunchTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonespressoServerLaunchTimeoutUndefined: Self = StObject.set(x, "appium:espressoServerLaunchTimeout", js.undefined)
     
     inline def setAppiumColonforceAppLaunch(value: Boolean): Self = StObject.set(x, "appium:forceAppLaunch", value.asInstanceOf[js.Any])
     
@@ -718,9 +1161,17 @@ object DesiredCapabilities {
     
     inline def setAppiumColonfullContextListUndefined: Self = StObject.set(x, "appium:fullContextList", js.undefined)
     
+    inline def setAppiumColongpsEnabled(value: Boolean): Self = StObject.set(x, "appium:gpsEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColongpsEnabledUndefined: Self = StObject.set(x, "appium:gpsEnabled", js.undefined)
+    
     inline def setAppiumColonignoreAboutBlankUrl(value: Boolean): Self = StObject.set(x, "appium:ignoreAboutBlankUrl", value.asInstanceOf[js.Any])
     
     inline def setAppiumColonignoreAboutBlankUrlUndefined: Self = StObject.set(x, "appium:ignoreAboutBlankUrl", js.undefined)
+    
+    inline def setAppiumColonignoreUnimportantViews(value: Boolean): Self = StObject.set(x, "appium:ignoreUnimportantViews", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonignoreUnimportantViewsUndefined: Self = StObject.set(x, "appium:ignoreUnimportantViews", js.undefined)
     
     inline def setAppiumColonincludeDeviceCapsToSessionInfo(value: Boolean): Self = StObject.set(x, "appium:includeDeviceCapsToSessionInfo", value.asInstanceOf[js.Any])
     
@@ -729,6 +1180,22 @@ object DesiredCapabilities {
     inline def setAppiumColonincludeSafariInWebviews(value: Boolean): Self = StObject.set(x, "appium:includeSafariInWebviews", value.asInstanceOf[js.Any])
     
     inline def setAppiumColonincludeSafariInWebviewsUndefined: Self = StObject.set(x, "appium:includeSafariInWebviews", js.undefined)
+    
+    inline def setAppiumColonintentAction(value: String): Self = StObject.set(x, "appium:intentAction", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonintentActionUndefined: Self = StObject.set(x, "appium:intentAction", js.undefined)
+    
+    inline def setAppiumColonintentCategory(value: String): Self = StObject.set(x, "appium:intentCategory", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonintentCategoryUndefined: Self = StObject.set(x, "appium:intentCategory", js.undefined)
+    
+    inline def setAppiumColonintentFlags(value: String): Self = StObject.set(x, "appium:intentFlags", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonintentFlagsUndefined: Self = StObject.set(x, "appium:intentFlags", js.undefined)
+    
+    inline def setAppiumColoninterKeyDelay(value: Double): Self = StObject.set(x, "appium:interKeyDelay", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColoninterKeyDelayUndefined: Self = StObject.set(x, "appium:interKeyDelay", js.undefined)
     
     inline def setAppiumColoniosInstallPause(value: Double): Self = StObject.set(x, "appium:iosInstallPause", value.asInstanceOf[js.Any])
     
@@ -746,6 +1213,14 @@ object DesiredCapabilities {
     
     inline def setAppiumColonkeepKeyChainsUndefined: Self = StObject.set(x, "appium:keepKeyChains", js.undefined)
     
+    inline def setAppiumColonkeyAlias(value: String): Self = StObject.set(x, "appium:keyAlias", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonkeyAliasUndefined: Self = StObject.set(x, "appium:keyAlias", js.undefined)
+    
+    inline def setAppiumColonkeyPassword(value: String): Self = StObject.set(x, "appium:keyPassword", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonkeyPasswordUndefined: Self = StObject.set(x, "appium:keyPassword", js.undefined)
+    
     inline def setAppiumColonkeychainPassword(value: String): Self = StObject.set(x, "appium:keychainPassword", value.asInstanceOf[js.Any])
     
     inline def setAppiumColonkeychainPasswordUndefined: Self = StObject.set(x, "appium:keychainPassword", js.undefined)
@@ -758,9 +1233,25 @@ object DesiredCapabilities {
     
     inline def setAppiumColonkeychainsExcludePatternsUndefined: Self = StObject.set(x, "appium:keychainsExcludePatterns", js.undefined)
     
+    inline def setAppiumColonkeystorePassword(value: String): Self = StObject.set(x, "appium:keystorePassword", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonkeystorePasswordUndefined: Self = StObject.set(x, "appium:keystorePassword", js.undefined)
+    
+    inline def setAppiumColonkeystorePath(value: String): Self = StObject.set(x, "appium:keystorePath", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonkeystorePathUndefined: Self = StObject.set(x, "appium:keystorePath", js.undefined)
+    
+    inline def setAppiumColonlaunchTimeout(value: Double): Self = StObject.set(x, "appium:launchTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonlaunchTimeoutUndefined: Self = StObject.set(x, "appium:launchTimeout", js.undefined)
+    
     inline def setAppiumColonlaunchWithIDB(value: Boolean): Self = StObject.set(x, "appium:launchWithIDB", value.asInstanceOf[js.Any])
     
     inline def setAppiumColonlaunchWithIDBUndefined: Self = StObject.set(x, "appium:launchWithIDB", js.undefined)
+    
+    inline def setAppiumColonlocaleScript(value: String): Self = StObject.set(x, "appium:localeScript", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonlocaleScriptUndefined: Self = StObject.set(x, "appium:localeScript", js.undefined)
     
     inline def setAppiumColonlocalizableStringsDir(value: String): Self = StObject.set(x, "appium:localizableStringsDir", value.asInstanceOf[js.Any])
     
@@ -786,17 +1277,39 @@ object DesiredCapabilities {
     
     inline def setAppiumColonmjpegServerPortUndefined: Self = StObject.set(x, "appium:mjpegServerPort", js.undefined)
     
+    inline def setAppiumColonnativeInstrumentsLib(value: Boolean): Self = StObject.set(x, "appium:nativeInstrumentsLib", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonnativeInstrumentsLibUndefined: Self = StObject.set(x, "appium:nativeInstrumentsLib", js.undefined)
+    
     inline def setAppiumColonnativeTyping(value: Boolean): Self = StObject.set(x, "appium:nativeTyping", value.asInstanceOf[js.Any])
     
     inline def setAppiumColonnativeTypingUndefined: Self = StObject.set(x, "appium:nativeTyping", js.undefined)
+    
+    inline def setAppiumColonnativeWebScreenshot(value: Boolean): Self = StObject.set(x, "appium:nativeWebScreenshot", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonnativeWebScreenshotUndefined: Self = StObject.set(x, "appium:nativeWebScreenshot", js.undefined)
     
     inline def setAppiumColonnativeWebTapStrict(value: Boolean): Self = StObject.set(x, "appium:nativeWebTapStrict", value.asInstanceOf[js.Any])
     
     inline def setAppiumColonnativeWebTapStrictUndefined: Self = StObject.set(x, "appium:nativeWebTapStrict", js.undefined)
     
-    inline def setAppiumColonotherApps(value: String): Self = StObject.set(x, "appium:otherApps", value.asInstanceOf[js.Any])
+    inline def setAppiumColonnetworkSpeed(value: String): Self = StObject.set(x, "appium:networkSpeed", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonnetworkSpeedUndefined: Self = StObject.set(x, "appium:networkSpeed", js.undefined)
+    
+    inline def setAppiumColonnoSign(value: Boolean): Self = StObject.set(x, "appium:noSign", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonnoSignUndefined: Self = StObject.set(x, "appium:noSign", js.undefined)
+    
+    inline def setAppiumColonoptionalIntentArguments(value: String): Self = StObject.set(x, "appium:optionalIntentArguments", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonoptionalIntentArgumentsUndefined: Self = StObject.set(x, "appium:optionalIntentArguments", js.undefined)
+    
+    inline def setAppiumColonotherApps(value: String | js.Array[String]): Self = StObject.set(x, "appium:otherApps", value.asInstanceOf[js.Any])
     
     inline def setAppiumColonotherAppsUndefined: Self = StObject.set(x, "appium:otherApps", js.undefined)
+    
+    inline def setAppiumColonotherAppsVarargs(value: String*): Self = StObject.set(x, "appium:otherApps", js.Array(value*))
     
     inline def setAppiumColonpermissions(value: String): Self = StObject.set(x, "appium:permissions", value.asInstanceOf[js.Any])
     
@@ -810,13 +1323,25 @@ object DesiredCapabilities {
     
     inline def setAppiumColonprocessArgumentsUndefined: Self = StObject.set(x, "appium:processArguments", js.undefined)
     
+    inline def setAppiumColonrecreateChromeDriverSessions(value: Boolean): Self = StObject.set(x, "appium:recreateChromeDriverSessions", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonrecreateChromeDriverSessionsUndefined: Self = StObject.set(x, "appium:recreateChromeDriverSessions", js.undefined)
+    
     inline def setAppiumColonreduceMotion(value: Boolean): Self = StObject.set(x, "appium:reduceMotion", value.asInstanceOf[js.Any])
     
     inline def setAppiumColonreduceMotionUndefined: Self = StObject.set(x, "appium:reduceMotion", js.undefined)
     
+    inline def setAppiumColonremoteAdbHost(value: String): Self = StObject.set(x, "appium:remoteAdbHost", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonremoteAdbHostUndefined: Self = StObject.set(x, "appium:remoteAdbHost", js.undefined)
+    
     inline def setAppiumColonremoteDebugProxy(value: String): Self = StObject.set(x, "appium:remoteDebugProxy", value.asInstanceOf[js.Any])
     
     inline def setAppiumColonremoteDebugProxyUndefined: Self = StObject.set(x, "appium:remoteDebugProxy", js.undefined)
+    
+    inline def setAppiumColonresetKeyboard(value: Boolean): Self = StObject.set(x, "appium:resetKeyboard", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonresetKeyboardUndefined: Self = StObject.set(x, "appium:resetKeyboard", js.undefined)
     
     inline def setAppiumColonresetLocationService(value: Boolean): Self = StObject.set(x, "appium:resetLocationService", value.asInstanceOf[js.Any])
     
@@ -890,6 +1415,14 @@ object DesiredCapabilities {
     
     inline def setAppiumColonscreenshotQualityUndefined: Self = StObject.set(x, "appium:screenshotQuality", js.undefined)
     
+    inline def setAppiumColonscreenshotWaitTimeout(value: Double): Self = StObject.set(x, "appium:screenshotWaitTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonscreenshotWaitTimeoutUndefined: Self = StObject.set(x, "appium:screenshotWaitTimeout", js.undefined)
+    
+    inline def setAppiumColonsendKeyStrategy(value: String): Self = StObject.set(x, "appium:sendKeyStrategy", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonsendKeyStrategyUndefined: Self = StObject.set(x, "appium:sendKeyStrategy", js.undefined)
+    
     inline def setAppiumColonshouldTerminateApp(value: Boolean): Self = StObject.set(x, "appium:shouldTerminateApp", value.asInstanceOf[js.Any])
     
     inline def setAppiumColonshouldTerminateAppUndefined: Self = StObject.set(x, "appium:shouldTerminateApp", js.undefined)
@@ -942,13 +1475,57 @@ object DesiredCapabilities {
     
     inline def setAppiumColonsimulatorWindowCenterUndefined: Self = StObject.set(x, "appium:simulatorWindowCenter", js.undefined)
     
+    inline def setAppiumColonskipDeviceInitialization(value: Boolean): Self = StObject.set(x, "appium:skipDeviceInitialization", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonskipDeviceInitializationUndefined: Self = StObject.set(x, "appium:skipDeviceInitialization", js.undefined)
+    
     inline def setAppiumColonskipLogCapture(value: Boolean): Self = StObject.set(x, "appium:skipLogCapture", value.asInstanceOf[js.Any])
     
     inline def setAppiumColonskipLogCaptureUndefined: Self = StObject.set(x, "appium:skipLogCapture", js.undefined)
     
+    inline def setAppiumColonskipLogcatCapture(value: Boolean): Self = StObject.set(x, "appium:skipLogcatCapture", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonskipLogcatCaptureUndefined: Self = StObject.set(x, "appium:skipLogcatCapture", js.undefined)
+    
+    inline def setAppiumColonskipServerInstallation(value: Boolean): Self = StObject.set(x, "appium:skipServerInstallation", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonskipServerInstallationUndefined: Self = StObject.set(x, "appium:skipServerInstallation", js.undefined)
+    
+    inline def setAppiumColonskipUnlock(value: Boolean): Self = StObject.set(x, "appium:skipUnlock", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonskipUnlockUndefined: Self = StObject.set(x, "appium:skipUnlock", js.undefined)
+    
+    inline def setAppiumColonsystemPort(value: Double): Self = StObject.set(x, "appium:systemPort", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonsystemPortUndefined: Self = StObject.set(x, "appium:systemPort", js.undefined)
+    
     inline def setAppiumColontapWithShortPressDuration(value: Double): Self = StObject.set(x, "appium:tapWithShortPressDuration", value.asInstanceOf[js.Any])
     
     inline def setAppiumColontapWithShortPressDurationUndefined: Self = StObject.set(x, "appium:tapWithShortPressDuration", js.undefined)
+    
+    inline def setAppiumColonuiautomator2ServerInstallTimeout(value: Double): Self = StObject.set(x, "appium:uiautomator2ServerInstallTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonuiautomator2ServerInstallTimeoutUndefined: Self = StObject.set(x, "appium:uiautomator2ServerInstallTimeout", js.undefined)
+    
+    inline def setAppiumColonuiautomator2ServerLaunchTimeout(value: Double): Self = StObject.set(x, "appium:uiautomator2ServerLaunchTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonuiautomator2ServerLaunchTimeoutUndefined: Self = StObject.set(x, "appium:uiautomator2ServerLaunchTimeout", js.undefined)
+    
+    inline def setAppiumColonunicodeKeyboard(value: Boolean): Self = StObject.set(x, "appium:unicodeKeyboard", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonunicodeKeyboardUndefined: Self = StObject.set(x, "appium:unicodeKeyboard", js.undefined)
+    
+    inline def setAppiumColonuninstallOtherPackages(value: String): Self = StObject.set(x, "appium:uninstallOtherPackages", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonuninstallOtherPackagesUndefined: Self = StObject.set(x, "appium:uninstallOtherPackages", js.undefined)
+    
+    inline def setAppiumColonunlockKey(value: String): Self = StObject.set(x, "appium:unlockKey", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonunlockKeyUndefined: Self = StObject.set(x, "appium:unlockKey", js.undefined)
+    
+    inline def setAppiumColonunlockType(value: String): Self = StObject.set(x, "appium:unlockType", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonunlockTypeUndefined: Self = StObject.set(x, "appium:unlockType", js.undefined)
     
     inline def setAppiumColonupdatedWDABundleId(value: String): Self = StObject.set(x, "appium:updatedWDABundleId", value.asInstanceOf[js.Any])
     
@@ -957,6 +1534,10 @@ object DesiredCapabilities {
     inline def setAppiumColonuseJSONSource(value: Boolean): Self = StObject.set(x, "appium:useJSONSource", value.asInstanceOf[js.Any])
     
     inline def setAppiumColonuseJSONSourceUndefined: Self = StObject.set(x, "appium:useJSONSource", js.undefined)
+    
+    inline def setAppiumColonuseKeystore(value: Boolean): Self = StObject.set(x, "appium:useKeystore", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonuseKeystoreUndefined: Self = StObject.set(x, "appium:useKeystore", js.undefined)
     
     inline def setAppiumColonuseNativeCachingStrategy(value: Boolean): Self = StObject.set(x, "appium:useNativeCachingStrategy", value.asInstanceOf[js.Any])
     
@@ -977,6 +1558,10 @@ object DesiredCapabilities {
     inline def setAppiumColonuseXctestrunFile(value: Boolean): Self = StObject.set(x, "appium:useXctestrunFile", value.asInstanceOf[js.Any])
     
     inline def setAppiumColonuseXctestrunFileUndefined: Self = StObject.set(x, "appium:useXctestrunFile", js.undefined)
+    
+    inline def setAppiumColonwaitForAppScript(value: String): Self = StObject.set(x, "appium:waitForAppScript", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonwaitForAppScriptUndefined: Self = StObject.set(x, "appium:waitForAppScript", js.undefined)
     
     inline def setAppiumColonwaitForIdleTimeout(value: Double): Self = StObject.set(x, "appium:waitForIdleTimeout", value.asInstanceOf[js.Any])
     
@@ -1088,6 +1673,10 @@ object DesiredCapabilities {
     
     inline def setBrowserstackDotsendKeysUndefined: Self = StObject.set(x, "browserstack.sendKeys", js.undefined)
     
+    inline def setBuildIdentifier(value: String): Self = StObject.set(x, "buildIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setBuildIdentifierUndefined: Self = StObject.set(x, "buildIdentifier", js.undefined)
+    
     inline def setBuildName(value: String): Self = StObject.set(x, "buildName", value.asInstanceOf[js.Any])
     
     inline def setBuildNameUndefined: Self = StObject.set(x, "buildName", js.undefined)
@@ -1095,6 +1684,12 @@ object DesiredCapabilities {
     inline def setBuildTag(value: String): Self = StObject.set(x, "buildTag", value.asInstanceOf[js.Any])
     
     inline def setBuildTagUndefined: Self = StObject.set(x, "buildTag", js.undefined)
+    
+    inline def setBuildTags(value: js.Array[String]): Self = StObject.set(x, "buildTags", value.asInstanceOf[js.Any])
+    
+    inline def setBuildTagsUndefined: Self = StObject.set(x, "buildTags", js.undefined)
+    
+    inline def setBuildTagsVarargs(value: String*): Self = StObject.set(x, "buildTags", js.Array(value*))
     
     inline def setChrome(value: Driver): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
     
@@ -1104,9 +1699,13 @@ object DesiredCapabilities {
     
     inline def setCommandLineFlagsUndefined: Self = StObject.set(x, "commandLineFlags", js.undefined)
     
+    inline def setConsole(value: warn | error | info_ | `true`): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
+    
     inline def setConsoleLogs(value: disable | errors | warnings | info_ | verbose): Self = StObject.set(x, "consoleLogs", value.asInstanceOf[js.Any])
     
     inline def setConsoleLogsUndefined: Self = StObject.set(x, "consoleLogs", js.undefined)
+    
+    inline def setConsoleUndefined: Self = StObject.set(x, "console", js.undefined)
     
     inline def setCssSelectorsEnabled(value: Boolean): Self = StObject.set(x, "cssSelectorsEnabled", value.asInstanceOf[js.Any])
     
@@ -1130,6 +1729,10 @@ object DesiredCapabilities {
     
     inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
+    inline def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
+    
     inline def setDeviceOrientation(value: portrait | landscape): Self = StObject.set(x, "deviceOrientation", value.asInstanceOf[js.Any])
     
     inline def setDeviceOrientationUndefined: Self = StObject.set(x, "deviceOrientation", js.undefined)
@@ -1147,6 +1750,10 @@ object DesiredCapabilities {
     inline def setEdge(value: EnablePopups): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
     
     inline def setEdgeUndefined: Self = StObject.set(x, "edge", js.undefined)
+    
+    inline def setEdgedriverVersion(value: String): Self = StObject.set(x, "edgedriverVersion", value.asInstanceOf[js.Any])
+    
+    inline def setEdgedriverVersionUndefined: Self = StObject.set(x, "edgedriverVersion", js.undefined)
     
     inline def setElementScrollBehavior(value: Double): Self = StObject.set(x, "elementScrollBehavior", value.asInstanceOf[js.Any])
     
@@ -1180,17 +1787,33 @@ object DesiredCapabilities {
     
     inline def setHandlesAlertsUndefined: Self = StObject.set(x, "handlesAlerts", js.undefined)
     
+    inline def setHeadless(value: Boolean): Self = StObject.set(x, "headless", value.asInstanceOf[js.Any])
+    
+    inline def setHeadlessUndefined: Self = StObject.set(x, "headless", js.undefined)
+    
     inline def setHosts(value: String): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
     
     inline def setHostsUndefined: Self = StObject.set(x, "hosts", js.undefined)
+    
+    inline def setIdletimeout(value: Double): Self = StObject.set(x, "idletimeout", value.asInstanceOf[js.Any])
+    
+    inline def setIdletimeoutUndefined: Self = StObject.set(x, "idletimeout", js.undefined)
     
     inline def setIe(value: Arch): Self = StObject.set(x, "ie", value.asInstanceOf[js.Any])
     
     inline def setIeUndefined: Self = StObject.set(x, "ie", js.undefined)
     
+    inline def setInteractiveDebugging(value: Boolean): Self = StObject.set(x, "interactiveDebugging", value.asInstanceOf[js.Any])
+    
+    inline def setInteractiveDebuggingUndefined: Self = StObject.set(x, "interactiveDebugging", js.undefined)
+    
     inline def setJavascriptEnabled(value: Boolean): Self = StObject.set(x, "javascriptEnabled", value.asInstanceOf[js.Any])
     
     inline def setJavascriptEnabledUndefined: Self = StObject.set(x, "javascriptEnabled", js.undefined)
+    
+    inline def `setLoad-extension`(value: String): Self = StObject.set(x, "load-extension", value.asInstanceOf[js.Any])
+    
+    inline def `setLoad-extensionUndefined`: Self = StObject.set(x, "load-extension", js.undefined)
     
     inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
@@ -1216,7 +1839,13 @@ object DesiredCapabilities {
     
     inline def setNativeEventsUndefined: Self = StObject.set(x, "nativeEvents", js.undefined)
     
+    inline def setNetwork(value: Boolean): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    
     inline def setNetworkLogs(value: Boolean): Self = StObject.set(x, "networkLogs", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkLogsOptions(value: CaptureContent): Self = StObject.set(x, "networkLogsOptions", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkLogsOptionsUndefined: Self = StObject.set(x, "networkLogsOptions", js.undefined)
     
     inline def setNetworkLogsUndefined: Self = StObject.set(x, "networkLogs", js.undefined)
     
@@ -1224,9 +1853,15 @@ object DesiredCapabilities {
     
     inline def setNetworkProfileUndefined: Self = StObject.set(x, "networkProfile", js.undefined)
     
+    inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+    
     inline def setOnlyProxySeleniumTraffic(value: Boolean): Self = StObject.set(x, "onlyProxySeleniumTraffic", value.asInstanceOf[js.Any])
     
     inline def setOnlyProxySeleniumTrafficUndefined: Self = StObject.set(x, "onlyProxySeleniumTraffic", js.undefined)
+    
+    inline def setOperaDriverVersion(value: String): Self = StObject.set(x, "operaDriverVersion", value.asInstanceOf[js.Any])
+    
+    inline def setOperaDriverVersionUndefined: Self = StObject.set(x, "operaDriverVersion", js.undefined)
     
     inline def setOptionsSet(value: Boolean): Self = StObject.set(x, "optionsSet", value.asInstanceOf[js.Any])
     
@@ -1248,6 +1883,10 @@ object DesiredCapabilities {
     
     inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
+    inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    
+    inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+    
     inline def setProxyEverything(value: Boolean): Self = StObject.set(x, "proxyEverything", value.asInstanceOf[js.Any])
     
     inline def setProxyEverythingUndefined: Self = StObject.set(x, "proxyEverything", js.undefined)
@@ -1259,6 +1898,10 @@ object DesiredCapabilities {
     inline def setPublic(value: Any): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     
     inline def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
+    
+    inline def setRealDevice(value: Boolean): Self = StObject.set(x, "realDevice", value.asInstanceOf[js.Any])
+    
+    inline def setRealDeviceUndefined: Self = StObject.set(x, "realDevice", js.undefined)
     
     inline def setRealMobile(value: Boolean): Self = StObject.set(x, "realMobile", value.asInstanceOf[js.Any])
     
@@ -1276,6 +1919,18 @@ object DesiredCapabilities {
     
     inline def setSafariUndefined: Self = StObject.set(x, "safari", js.undefined)
     
+    inline def setSeCdp(value: Boolean): Self = StObject.set(x, "seCdp", value.asInstanceOf[js.Any])
+    
+    inline def setSeCdpUndefined: Self = StObject.set(x, "seCdp", js.undefined)
+    
+    inline def `setSelenium-version`(value: String): Self = StObject.set(x, "selenium-version", value.asInstanceOf[js.Any])
+    
+    inline def `setSelenium-versionUndefined`: Self = StObject.set(x, "selenium-version", js.undefined)
+    
+    inline def setSeleniumCdp(value: Boolean): Self = StObject.set(x, "seleniumCdp", value.asInstanceOf[js.Any])
+    
+    inline def setSeleniumCdpUndefined: Self = StObject.set(x, "seleniumCdp", js.undefined)
+    
     inline def setSeleniumDotserverDoturl(value: String): Self = StObject.set(x, "selenium.server.url", value.asInstanceOf[js.Any])
     
     inline def setSeleniumDotserverDoturlUndefined: Self = StObject.set(x, "selenium.server.url", js.undefined)
@@ -1283,6 +1938,10 @@ object DesiredCapabilities {
     inline def setSeleniumLogs(value: Boolean): Self = StObject.set(x, "seleniumLogs", value.asInstanceOf[js.Any])
     
     inline def setSeleniumLogsUndefined: Self = StObject.set(x, "seleniumLogs", js.undefined)
+    
+    inline def setSelenium_version(value: String): Self = StObject.set(x, "selenium_version", value.asInstanceOf[js.Any])
+    
+    inline def setSelenium_versionUndefined: Self = StObject.set(x, "selenium_version", js.undefined)
     
     inline def setSessionName(value: String): Self = StObject.set(x, "sessionName", value.asInstanceOf[js.Any])
     
@@ -1292,11 +1951,19 @@ object DesiredCapabilities {
     
     inline def setSingleWindowUndefined: Self = StObject.set(x, "singleWindow", js.undefined)
     
+    inline def setSmartUiProject(value: String): Self = StObject.set(x, "smartUiProject", value.asInstanceOf[js.Any])
+    
+    inline def setSmartUiProjectUndefined: Self = StObject.set(x, "smartUiProject", js.undefined)
+    
     inline def setSpecs(value: js.Array[String]): Self = StObject.set(x, "specs", value.asInstanceOf[js.Any])
     
     inline def setSpecsUndefined: Self = StObject.set(x, "specs", js.undefined)
     
     inline def setSpecsVarargs(value: String*): Self = StObject.set(x, "specs", js.Array(value*))
+    
+    inline def setTestingbotDotgeoCountryCode(value: String): Self = StObject.set(x, "testingbot.geoCountryCode", value.asInstanceOf[js.Any])
+    
+    inline def setTestingbotDotgeoCountryCodeUndefined: Self = StObject.set(x, "testingbot.geoCountryCode", js.undefined)
     
     inline def setTimeoutInSeconds(value: Double): Self = StObject.set(x, "timeoutInSeconds", value.asInstanceOf[js.Any])
     
@@ -1306,13 +1973,21 @@ object DesiredCapabilities {
     
     inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
     
+    inline def setTunnel(value: Boolean): Self = StObject.set(x, "tunnel", value.asInstanceOf[js.Any])
+    
     inline def `setTunnel-identifier`(value: String): Self = StObject.set(x, "tunnel-identifier", value.asInstanceOf[js.Any])
     
     inline def `setTunnel-identifierUndefined`: Self = StObject.set(x, "tunnel-identifier", js.undefined)
     
+    inline def setTunnelUndefined: Self = StObject.set(x, "tunnel", js.undefined)
+    
     inline def setUnexpectedAlertBehaviour(value: String): Self = StObject.set(x, "unexpectedAlertBehaviour", value.asInstanceOf[js.Any])
     
     inline def setUnexpectedAlertBehaviourUndefined: Self = StObject.set(x, "unexpectedAlertBehaviour", js.undefined)
+    
+    inline def setUpload(value: String): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
+    
+    inline def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
     
     inline def setUserExtensions(value: String): Self = StObject.set(x, "userExtensions", value.asInstanceOf[js.Any])
     
@@ -1333,6 +2008,10 @@ object DesiredCapabilities {
     inline def setVideo(value: Boolean): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
     inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
+    
+    inline def setVisual(value: Boolean): Self = StObject.set(x, "visual", value.asInstanceOf[js.Any])
+    
+    inline def setVisualUndefined: Self = StObject.set(x, "visual", js.undefined)
     
     inline def setWdioService(value: String): Self = StObject.set(x, "wdioService", value.asInstanceOf[js.Any])
     

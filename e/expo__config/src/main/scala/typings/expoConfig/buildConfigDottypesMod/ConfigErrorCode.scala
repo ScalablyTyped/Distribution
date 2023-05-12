@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.expoConfig.expoConfigStrings.NOT_OBJECT
   - typings.expoConfig.expoConfigStrings.NO_EXPO
   - typings.expoConfig.expoConfigStrings.MODULE_NOT_FOUND
+  - typings.expoConfig.expoConfigStrings.DEPRECATED
   - typings.expoConfig.expoConfigStrings.INVALID_MODE
   - typings.expoConfig.expoConfigStrings.INVALID_FORMAT
   - typings.expoConfig.expoConfigStrings.INVALID_PLUGIN
@@ -16,6 +17,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 */
 trait ConfigErrorCode extends StObject
 object ConfigErrorCode {
+  
+  inline def DEPRECATED: typings.expoConfig.expoConfigStrings.DEPRECATED = "DEPRECATED".asInstanceOf[typings.expoConfig.expoConfigStrings.DEPRECATED]
   
   inline def INVALID_CONFIG: typings.expoConfig.expoConfigStrings.INVALID_CONFIG = "INVALID_CONFIG".asInstanceOf[typings.expoConfig.expoConfigStrings.INVALID_CONFIG]
   

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "it-length" : "2.0.0"
+      "it-length" : "3.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "it-length" : "2.0.0"
+      "it-length" : "3.0.2"
     }
   ],
   "compile-devDependencies" : [

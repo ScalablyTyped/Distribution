@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-focus-within
 
-Typings are for version 6.1.1
+Typings are for version 7.0.2
 
 ## Library description:
 Use the :focus-within pseudo-selector in CSS

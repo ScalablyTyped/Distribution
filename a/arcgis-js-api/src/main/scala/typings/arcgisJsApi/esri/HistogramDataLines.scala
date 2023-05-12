@@ -9,7 +9,7 @@ trait HistogramDataLines extends StObject {
   /**
     * The label associated with the line.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#dataLines)
+    * [Read more...](global.html)
     */
   var label: js.UndefOr[String | Double] = js.undefined
   

@@ -1,6 +1,8 @@
 package typings.rcPicker
 
 import typings.rcPicker.esGenerateMod.GenerateConfig
+import typings.rcPicker.esInterfaceMod.CellRender
+import typings.rcPicker.esInterfaceMod.CellRenderInfo
 import typings.rcPicker.esInterfaceMod.Locale
 import typings.rcPicker.esInterfaceMod.OnSelect
 import typings.rcPicker.esPanelsTimePanelMod.SharedTimeProps
@@ -8,6 +10,7 @@ import typings.rcPicker.rcPickerStrings.key
 import typings.rcPicker.rcPickerStrings.mouse
 import typings.rcPicker.rcPickerStrings.submit
 import typings.react.mod.MutableRefObject
+import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -45,6 +48,8 @@ object esPanelsTimePanelTimeBodyMod {
     
     var activeColumnIndex: Double
     
+    var cellRender: js.UndefOr[CellRender[DateType, Double]] = js.undefined
+    
     var generateConfig: GenerateConfig[DateType]
     
     var locale: Locale
@@ -75,6 +80,10 @@ object esPanelsTimePanelTimeBodyMod {
     implicit open class MutableBuilder[Self <: TimeBodyProps[?], DateType] (val x: Self & TimeBodyProps[DateType]) extends AnyVal {
       
       inline def setActiveColumnIndex(value: Double): Self = StObject.set(x, "activeColumnIndex", value.asInstanceOf[js.Any])
+      
+      inline def setCellRender(value: (Double, /* info */ CellRenderInfo[DateType]) => ReactNode): Self = StObject.set(x, "cellRender", js.Any.fromFunction2(value))
+      
+      inline def setCellRenderUndefined: Self = StObject.set(x, "cellRender", js.undefined)
       
       inline def setGenerateConfig(value: GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
       

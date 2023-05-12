@@ -33,14 +33,24 @@ trait Device
   var _url: js.UndefOr[Element] = js.undefined
   
   /**
-    * The state of the usage or application of the device - whether the device is implanted, or explanted, or attached to the patient.
+    * The availability of the device.
     */
-  var associationStatus: js.UndefOr[DeviceAssociationStatus] = js.undefined
+  var availabilityStatus: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * Necessary to support mandatory requirements for traceability from donor/source to recipient and vice versa.  The element is defined consistently across BiologicallyDerivedProduct, NutritionProduct, and Device. For example, this applies to devices in the United States regulated under *Code of Federal Regulation 21CFR§1271.290(c)*.
+    * Necessary to support mandatory requirements for traceability from donor/source to recipient and vice versa, while also satisfying donor anonymity requirements. The element is defined consistently across BiologicallyDerivedProduct, NutritionProduct, and Device.  The identifier references an event that links to a single biological entity such as a blood donor, or to multiple biological entities (e.g. when the product is an embryo or a pooled platelet product).  A single biologicalSourceEvent identifier may appear on multiple products of many types derived from a single donation event or source extraction.  As an example, a single donation event may provide 2 kidneys and a liver for organ transplantation, 2 corneas for eye surgery, heart valves and arterial tissue for cardiovascular surgery, multiple skin grafts, tendons, multiple shaped bone grafts and a large number of bone putty/paste products; and each of them may be assigned to the same biological source event identifier.
     */
-  var biologicalSource: js.UndefOr[Identifier] = js.undefined
+  var biologicalSourceEvent: js.UndefOr[Identifier] = js.undefined
+  
+  /**
+    * Devices may be associated with one or more categories.
+    */
+  var category: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  
+  /**
+    * Identifies the standards, specifications, or formal guidances for the capabilities supported by the device. The device may be certified as conformant to these specifications e.g., communication, performance, process, measurement, or specialization standards.
+    */
+  var conformsTo: js.UndefOr[js.Array[DeviceConformsTo]] = js.undefined
   
   /**
     * used for troubleshooting etc.
@@ -48,19 +58,24 @@ trait Device
   var contact: js.UndefOr[js.Array[ContactPoint]] = js.undefined
   
   /**
+    * The series of occurrences that repeats during the operation of the device.
+    */
+  var cycle: js.UndefOr[Count] = js.undefined
+  
+  /**
     * The reference to the definition for the device.
     */
   var definition: js.UndefOr[CodeableReference] = js.undefined
   
   /**
-    * This represents the manufacturer's name of the device as provided by the device, from a UDI label, or by a person describing the Device.  This typically would be used when a person provides the name(s) or when the device represents one of the names available from DeviceDefinition.
-    */
-  var deviceName: js.UndefOr[js.Array[DeviceDeviceName]] = js.undefined
-  
-  /**
-    * The name used to display by default when the device is referenced. Based on intent of use by the resource creator, this may reflect one of the names in Device.deviceName, or may be another simple name.
+    * The name used to display by default when the device is referenced. Based on intent of use by the resource creator, this may reflect one of the names in Device.name, or may be another simple name.
     */
   var displayName: js.UndefOr[String] = js.undefined
+  
+  /**
+    * A measurement of time during the device's operation (e.g., days, hours, mins, etc.).
+    */
+  var duration: js.UndefOr[Duration] = js.undefined
   
   /**
     * Technical endpoints providing access to services provided by the device defined at this resource.
@@ -73,14 +88,14 @@ trait Device
   var expirationDate: js.UndefOr[String] = js.undefined
   
   /**
+    * The Device.gateway may be used when the Device being referenced has a gateway and/or to capture one or more gateways associated with the device. If the Gateway is included in the Observation resource, the Observation.gatewayDevice should be used instead.
+    */
+  var gateway: js.UndefOr[js.Array[CodeableReference]] = js.undefined
+  
+  /**
     * Certain attributes, like serial number and UDI Carrier (the HRF or AIDC barcode string) are not device instance identifiers as they are not consistently able to uniquely identify the instance of a device, thus are not appropriate to be used to value Device.identifier. The barcode string from a barcode present on a device label or package may identify the instance, include names given to the device in local usage, or may identify the type of device. If the identifier identifies the type of device, Device.type element should be used. The identifier is typically valued if the serialNumber or lotNumber is not valued and represents a different type of identifier.  However, it is permissible to still include those identifiers in DeviceDefinition.identifier with the appropriate identifier.type.
     */
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
-  
-  /**
-    * An associated device, attached to, used with, communicating with or linking a previous or new device model to the focal device.
-    */
-  var link: js.UndefOr[js.Array[DeviceLink]] = js.undefined
   
   /**
     * The place where the device can be found.
@@ -103,9 +118,19 @@ trait Device
   var manufacturer: js.UndefOr[String] = js.undefined
   
   /**
+    * The designated condition for performing a task with the device.
+    */
+  var mode: js.UndefOr[CodeableConcept] = js.undefined
+  
+  /**
     * The manufacturer's model number for the device.
     */
   var modelNumber: js.UndefOr[String] = js.undefined
+  
+  /**
+    * This represents the manufacturer's name of the device as provided by the device, from a UDI label, or by a person describing the Device.  This typically would be used when a person provides the name(s) or when the device represents one of the names available from DeviceDefinition.
+    */
+  var name: js.UndefOr[js.Array[DeviceName]] = js.undefined
   
   /**
     * Descriptive information, usage information or implantation information that is not captured in an existing element.
@@ -113,17 +138,12 @@ trait Device
   var note: js.UndefOr[js.Array[Annotation]] = js.undefined
   
   /**
-    * The status of the device itself - whether it is switched on, or activated, etc.
-    */
-  var operationalStatus: js.UndefOr[DeviceOperationalStatus] = js.undefined
-  
-  /**
     * An organization that is responsible for the provision and ongoing maintenance of the device.
     */
   var owner: js.UndefOr[Reference] = js.undefined
   
   /**
-    * The device that this device is attached to or is part of.
+    * For example a vital signs monitor (parent) where three separate modules can be plugged into such as interchangeable blood pressure, oximeter, temperature modules.  These modules are represented as devices with the .parent valued to the vital signs monitor when plugged in.
     */
   var parent: js.UndefOr[Reference] = js.undefined
   
@@ -133,7 +153,7 @@ trait Device
   var partNumber: js.UndefOr[String] = js.undefined
   
   /**
-    * The actual configuration settings of a device as it actually operates, e.g., regulation status, time properties.
+    * Dynamic or current properties, such as settings, of an individual device are described using a Device instance-specific [DeviceMetric] and recorded using [Observation].  Static characteristics of a device could also be documented in an associated [DeviceDefinition] instance. The Device instance's properties, and their values, could be, but need not be, the same as those described in an associated DeviceDefinition.
     */
   var property: js.UndefOr[js.Array[DeviceProperty]] = js.undefined
   
@@ -152,19 +172,9 @@ trait Device
   var serialNumber: js.UndefOr[String] = js.undefined
   
   /**
-    * This element is labeled as a modifier because the status contains the codes inactive and entered-in-error that mark the device (record)as not currently valid.
+    * The Device record status. This is not the status of the device like availability.
     */
   var status: js.UndefOr[active | inactive | `entered-in-error`] = js.undefined
-  
-  /**
-    * Reason for the status of the Device record. For example, why is the record not active.
-    */
-  var statusReason: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
-  
-  /**
-    * Patient information, if the device is affixed to, or associated to a patient for their specific use, irrespective of the procedure, use, observation, or other activity that the device is involved in.
-    */
-  var subject: js.UndefOr[Reference] = js.undefined
   
   /**
     * Multiple device types are use when a device is categorized in more than one context – for example, hybrid devices in which the device is both of type gateway and sensor.
@@ -196,13 +206,25 @@ object Device {
   @scala.inline
   implicit open class MutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
     
-    inline def setAssociationStatus(value: DeviceAssociationStatus): Self = StObject.set(x, "associationStatus", value.asInstanceOf[js.Any])
+    inline def setAvailabilityStatus(value: CodeableConcept): Self = StObject.set(x, "availabilityStatus", value.asInstanceOf[js.Any])
     
-    inline def setAssociationStatusUndefined: Self = StObject.set(x, "associationStatus", js.undefined)
+    inline def setAvailabilityStatusUndefined: Self = StObject.set(x, "availabilityStatus", js.undefined)
     
-    inline def setBiologicalSource(value: Identifier): Self = StObject.set(x, "biologicalSource", value.asInstanceOf[js.Any])
+    inline def setBiologicalSourceEvent(value: Identifier): Self = StObject.set(x, "biologicalSourceEvent", value.asInstanceOf[js.Any])
     
-    inline def setBiologicalSourceUndefined: Self = StObject.set(x, "biologicalSource", js.undefined)
+    inline def setBiologicalSourceEventUndefined: Self = StObject.set(x, "biologicalSourceEvent", js.undefined)
+    
+    inline def setCategory(value: js.Array[CodeableConcept]): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    
+    inline def setCategoryVarargs(value: CodeableConcept*): Self = StObject.set(x, "category", js.Array(value*))
+    
+    inline def setConformsTo(value: js.Array[DeviceConformsTo]): Self = StObject.set(x, "conformsTo", value.asInstanceOf[js.Any])
+    
+    inline def setConformsToUndefined: Self = StObject.set(x, "conformsTo", js.undefined)
+    
+    inline def setConformsToVarargs(value: DeviceConformsTo*): Self = StObject.set(x, "conformsTo", js.Array(value*))
     
     inline def setContact(value: js.Array[ContactPoint]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
@@ -210,19 +232,21 @@ object Device {
     
     inline def setContactVarargs(value: ContactPoint*): Self = StObject.set(x, "contact", js.Array(value*))
     
+    inline def setCycle(value: Count): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
+    
+    inline def setCycleUndefined: Self = StObject.set(x, "cycle", js.undefined)
+    
     inline def setDefinition(value: CodeableReference): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
     inline def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
     
-    inline def setDeviceName(value: js.Array[DeviceDeviceName]): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
-    
-    inline def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
-    
-    inline def setDeviceNameVarargs(value: DeviceDeviceName*): Self = StObject.set(x, "deviceName", js.Array(value*))
-    
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setDuration(value: Duration): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     inline def setEndpoint(value: js.Array[Reference]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
@@ -234,17 +258,17 @@ object Device {
     
     inline def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
     
+    inline def setGateway(value: js.Array[CodeableReference]): Self = StObject.set(x, "gateway", value.asInstanceOf[js.Any])
+    
+    inline def setGatewayUndefined: Self = StObject.set(x, "gateway", js.undefined)
+    
+    inline def setGatewayVarargs(value: CodeableReference*): Self = StObject.set(x, "gateway", js.Array(value*))
+    
     inline def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     inline def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value*))
-    
-    inline def setLink(value: js.Array[DeviceLink]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
-    
-    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
-    
-    inline def setLinkVarargs(value: DeviceLink*): Self = StObject.set(x, "link", js.Array(value*))
     
     inline def setLocation(value: Reference): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
@@ -262,19 +286,25 @@ object Device {
     
     inline def setManufacturerUndefined: Self = StObject.set(x, "manufacturer", js.undefined)
     
+    inline def setMode(value: CodeableConcept): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
     inline def setModelNumber(value: String): Self = StObject.set(x, "modelNumber", value.asInstanceOf[js.Any])
     
     inline def setModelNumberUndefined: Self = StObject.set(x, "modelNumber", js.undefined)
+    
+    inline def setName(value: js.Array[DeviceName]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setNameVarargs(value: DeviceName*): Self = StObject.set(x, "name", js.Array(value*))
     
     inline def setNote(value: js.Array[Annotation]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
     inline def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
     
     inline def setNoteVarargs(value: Annotation*): Self = StObject.set(x, "note", js.Array(value*))
-    
-    inline def setOperationalStatus(value: DeviceOperationalStatus): Self = StObject.set(x, "operationalStatus", value.asInstanceOf[js.Any])
-    
-    inline def setOperationalStatusUndefined: Self = StObject.set(x, "operationalStatus", js.undefined)
     
     inline def setOwner(value: Reference): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
@@ -308,17 +338,7 @@ object Device {
     
     inline def setStatus(value: active | inactive | `entered-in-error`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    inline def setStatusReason(value: js.Array[CodeableConcept]): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
-    
-    inline def setStatusReasonUndefined: Self = StObject.set(x, "statusReason", js.undefined)
-    
-    inline def setStatusReasonVarargs(value: CodeableConcept*): Self = StObject.set(x, "statusReason", js.Array(value*))
-    
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
-    
-    inline def setSubject(value: Reference): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
-    
-    inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
     inline def setType(value: js.Array[CodeableConcept]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateLocationSmbResponse extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the source SMB file system location that is created.
+    * The ARN of the SMB location that you created.
     */
   var LocationArn: js.UndefOr[typings.awsSdk.clientsDatasyncMod.LocationArn] = js.undefined
 }

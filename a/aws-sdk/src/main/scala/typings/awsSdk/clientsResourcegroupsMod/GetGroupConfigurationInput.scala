@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetGroupConfigurationInput extends StObject {
   
   /**
-    * The name or the ARN of the resource group.
+    * The name or the ARN of the resource group for which you want to retrive the service configuration.
     */
   var Group: js.UndefOr[GroupString] = js.undefined
 }

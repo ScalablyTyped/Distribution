@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "immutable" : "4.1.0"
+      "immutable" : "4.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "immutable" : "4.1.0"
+      "immutable" : "4.3.0"
     }
   ],
   "compile-devDependencies" : [

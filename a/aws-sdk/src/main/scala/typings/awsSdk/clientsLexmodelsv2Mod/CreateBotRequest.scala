@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateBotRequest extends StObject {
   
   /**
+    * The list of bot members in a network to be created.
+    */
+  var botMembers: js.UndefOr[BotMembers] = js.undefined
+  
+  /**
     * The name of the bot. The bot name must be unique in the account that creates the bot.
     */
   var botName: Name
@@ -15,6 +20,11 @@ trait CreateBotRequest extends StObject {
     * A list of tags to add to the bot. You can only add tags when you create a bot. You can't use the UpdateBot operation to update tags. To update tags, use the TagResource operation.
     */
   var botTags: js.UndefOr[TagMap] = js.undefined
+  
+  /**
+    * The type of a bot to create.
+    */
+  var botType: js.UndefOr[BotType] = js.undefined
   
   /**
     * Provides information on additional privacy protections Amazon Lex should use with the bot's data.
@@ -51,11 +61,21 @@ object CreateBotRequest {
   @scala.inline
   implicit open class MutableBuilder[Self <: CreateBotRequest] (val x: Self) extends AnyVal {
     
+    inline def setBotMembers(value: BotMembers): Self = StObject.set(x, "botMembers", value.asInstanceOf[js.Any])
+    
+    inline def setBotMembersUndefined: Self = StObject.set(x, "botMembers", js.undefined)
+    
+    inline def setBotMembersVarargs(value: BotMember*): Self = StObject.set(x, "botMembers", js.Array(value*))
+    
     inline def setBotName(value: Name): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
     
     inline def setBotTags(value: TagMap): Self = StObject.set(x, "botTags", value.asInstanceOf[js.Any])
     
     inline def setBotTagsUndefined: Self = StObject.set(x, "botTags", js.undefined)
+    
+    inline def setBotType(value: BotType): Self = StObject.set(x, "botType", value.asInstanceOf[js.Any])
+    
+    inline def setBotTypeUndefined: Self = StObject.set(x, "botType", js.undefined)
     
     inline def setDataPrivacy(value: DataPrivacy): Self = StObject.set(x, "dataPrivacy", value.asInstanceOf[js.Any])
     

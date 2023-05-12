@@ -6,9 +6,9 @@ import typings.angularCompiler.mod.TmplAstBoundAttribute
 import typings.angularCompiler.mod.TmplAstBoundEvent
 import typings.angularCompiler.mod.TmplAstElement
 import typings.angularCompiler.mod.TmplAstReference
+import typings.angularCompiler.mod.TmplAstTemplate
 import typings.angularCompiler.mod.TmplAstVariable
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
+import typings.angularCompilerCli.anon.ClassDeclarationDeclarati
 import typings.angularCompilerCli.srcNgtscTypecheckApiApiMod.TemplateDiagnostic
 import typings.angularCompilerCli.srcNgtscTypecheckApiApiMod.TemplateId
 import typings.angularCompilerCli.srcNgtscTypecheckSrcTcbUtilMod.TemplateSourceResolver
@@ -76,19 +76,35 @@ object srcNgtscTypecheckSrcOobMod {
       */
     def missingReferenceTarget(templateId: TemplateId, ref: TmplAstReference): Unit = js.native
     
-    def requiresInlineTcb(templateId: TemplateId, node: ClassDeclaration[DeclarationNode]): Unit = js.native
+    /** Reports required inputs that haven't been bound. */
+    def missingRequiredInputs(
+      templateId: TemplateId,
+      element: TmplAstElement,
+      directiveName: String,
+      isComponent: Boolean,
+      inputAliases: js.Array[String]
+    ): Unit = js.native
+    def missingRequiredInputs(
+      templateId: TemplateId,
+      element: TmplAstTemplate,
+      directiveName: String,
+      isComponent: Boolean,
+      inputAliases: js.Array[String]
+    ): Unit = js.native
+    
+    def requiresInlineTcb(templateId: TemplateId, node: ClassDeclarationDeclarati): Unit = js.native
     
     def requiresInlineTypeConstructors(
       templateId: TemplateId,
-      node: ClassDeclaration[DeclarationNode],
-      directives: js.Array[ClassDeclaration[DeclarationNode]]
+      node: ClassDeclarationDeclarati,
+      directives: js.Array[ClassDeclarationDeclarati]
     ): Unit = js.native
     
     def splitTwoWayBinding(
       templateId: TemplateId,
       input: TmplAstBoundAttribute,
       output: TmplAstBoundEvent,
-      inputConsumer: ClassDeclaration[DeclarationNode],
+      inputConsumer: ClassDeclarationDeclarati,
       outputConsumer: TmplAstElement
     ): Unit = js.native
     /**
@@ -98,8 +114,8 @@ object srcNgtscTypecheckSrcOobMod {
       templateId: TemplateId,
       input: TmplAstBoundAttribute,
       output: TmplAstBoundEvent,
-      inputConsumer: ClassDeclaration[DeclarationNode],
-      outputConsumer: ClassDeclaration[DeclarationNode]
+      inputConsumer: ClassDeclarationDeclarati,
+      outputConsumer: ClassDeclarationDeclarati
     ): Unit = js.native
     
     /**

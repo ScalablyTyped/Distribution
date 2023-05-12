@@ -4,18 +4,18 @@ import typings.devextreme.anon.AllDay
 import typings.devextreme.mod.DevExpress.DOMComponent
 import typings.devextreme.mod.DevExpress.DOMComponentOptions
 import typings.devextreme.mod.DevExpress.ExternalFormat
+import typings.devextreme.mod.DevExpress.common.grids.ColumnBase
+import typings.devextreme.mod.DevExpress.common.grids.ColumnButtonBase
+import typings.devextreme.mod.DevExpress.common.grids.EditingBase
+import typings.devextreme.mod.DevExpress.common.grids.EditingTextsBase
+import typings.devextreme.mod.DevExpress.common.grids.PagingBase
+import typings.devextreme.mod.DevExpress.common.grids.ScrollingBase
+import typings.devextreme.mod.DevExpress.common.grids.SelectionBase
 import typings.devextreme.mod.DevExpress.core.template
 import typings.devextreme.mod.DevExpress.ui.CollectionWidget.ItemLike
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.ColumnBase
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.ColumnButtonBase
 import typings.devextreme.mod.DevExpress.ui.dxDataGrid.Editing
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.EditingBase
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.EditingTextsBase
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.PagingBase
 import typings.devextreme.mod.DevExpress.ui.dxDataGrid.Scrolling
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.ScrollingBase
 import typings.devextreme.mod.DevExpress.ui.dxDataGrid.Selection
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.SelectionBase
 import typings.devextreme.mod.DevExpress.ui.dxTreeList.EditingTexts
 import typings.devextreme.mod.DevExpress.ui.dxTreeList.Node
 import typings.devextreme.mod.DevExpress.ui.dxTreeList.Paging
@@ -25,9 +25,17 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
+type AsyncRule = typings.devextreme.mod.DevExpress.common.AsyncRule
+
 type CollectionWidgetItemTemplate = CollectionWidgetItem
 
+type CompareRule = typings.devextreme.mod.DevExpress.common.CompareRule
+
+type CustomRule = typings.devextreme.mod.DevExpress.common.CustomRule
+
 type DataExpressionMixinItemTemplate = CollectionWidgetItem
+
+type EmailRule = typings.devextreme.mod.DevExpress.common.EmailRule
 
 /* Rewritten from type alias, can be one of: 
   - typings.devextreme.mod.DevExpress.FormatObject
@@ -37,6 +45,8 @@ type DataExpressionMixinItemTemplate = CollectionWidgetItem
   - typings.devextreme.mod.DevExpress.ExternalFormat
 */
 type Format = _Format | (js.Function1[js.Date | Double, String]) | String | ExternalFormat
+
+type GridBase[TRowData, TKey] = typings.devextreme.mod.DevExpress.common.grids.GridBase[TRowData, TKey]
 
 type GridBaseColumn[TRowData] = ColumnBase[TRowData]
 
@@ -54,7 +64,23 @@ type GridBaseSelection = SelectionBase
 
 type HierarchicalCollectionWidget[TProperties /* <: HierarchicalCollectionWidgetOptions[Any, TItem, TKey] */, TItem /* <: ItemLike */, TKey] = CollectionWidget[TProperties, TItem, TKey]
 
+type NumericRule = typings.devextreme.mod.DevExpress.common.NumericRule
+
+type PatternRule = typings.devextreme.mod.DevExpress.common.PatternRule
+
+type RangeRule = typings.devextreme.mod.DevExpress.common.RangeRule
+
+type RequiredRule = typings.devextreme.mod.DevExpress.common.RequiredRule
+
+type StringLengthRule = typings.devextreme.mod.DevExpress.common.StringLengthRule
+
 type Template = template
+
+type ValidationCallbackData = typings.devextreme.mod.DevExpress.common.ValidationCallbackData
+
+type ValidationRule = typings.devextreme.mod.DevExpress.common.ValidationRule
+
+type ValidationRuleType = typings.devextreme.mod.DevExpress.common.ValidationRuleType
 
 type dxAccordionItemTemplate = dxAccordionItem
 
@@ -106,10 +132,6 @@ type dxMultiViewItem = CollectionWidgetItem
 
 type dxMultiViewItemTemplate = dxMultiViewItem
 
-type dxNavBar[TItem /* <: typings.devextreme.mod.DevExpress.ui.dxNavBar.ItemLike */, TKey] = dxTabs[dxNavBarOptions[TItem, TKey], TItem, TKey]
-
-type dxNavBarItemTemplate = dxNavBarItem
-
 type dxNumberBox = dxTextEditor[dxNumberBoxOptions]
 
 type dxPopup[TProperties] = dxOverlay[TProperties]
@@ -131,8 +153,6 @@ type dxSchedulerAppointment = CollectionWidgetItem & AllDay & (Record[String, An
 type dxSchedulerAppointmentTemplate = dxSchedulerAppointment
 
 type dxSelectBox[TProperties] = dxDropDownList[TProperties]
-
-type dxSlideOutItemTemplate = dxSlideOutItem
 
 type dxSlider = dxTrackBar[dxSliderOptions]
 

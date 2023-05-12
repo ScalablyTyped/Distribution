@@ -32,7 +32,7 @@ trait Substance
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * This identifier is associated with the kind of substance in contrast to the Substance.instance.identifier which is associated with the package/container.
+    * This identifier is associated with the kind of substance in contrast to the  Substance.instance.identifier which is associated with the package/container.
     */
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   

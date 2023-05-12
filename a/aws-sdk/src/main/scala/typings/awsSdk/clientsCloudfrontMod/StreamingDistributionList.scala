@@ -17,17 +17,17 @@ trait StreamingDistributionList extends StObject {
   var Items: js.UndefOr[StreamingDistributionSummaryList] = js.undefined
   
   /**
-    * The value you provided for the Marker request parameter. 
+    * The value you provided for the Marker request parameter.
     */
   var Marker: String
   
   /**
-    * The value you provided for the MaxItems request parameter. 
+    * The value you provided for the MaxItems request parameter.
     */
   var MaxItems: integer
   
   /**
-    * If IsTruncated is true, this element is present and contains the value you can use for the Marker request parameter to continue listing your RTMP distributions where they left off. 
+    * If IsTruncated is true, this element is present and contains the value you can use for the Marker request parameter to continue listing your RTMP distributions where they left off.
     */
   var NextMarker: js.UndefOr[String] = js.undefined
   

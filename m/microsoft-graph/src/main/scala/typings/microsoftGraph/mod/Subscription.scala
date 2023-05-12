@@ -15,12 +15,13 @@ trait Subscription
     * Required. Indicates the type of change in the subscribed resource that will raise a change notification. The supported
     * values are: created, updated, deleted. Multiple values can be combined using a comma-separated list. Note: Drive root
     * item and list change notifications support only the updated changeType. User and group change notifications support
-    * updated and deleted changeType.
+    * updated and deleted changeType. Use updated to receive notifications when user or group is created, updated or soft
+    * deleted. Use deleted to receive notifications when user or group is permanently deleted.
     */
   var changeType: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional. Specifies the value of the clientState property sent by the service in each change notification. The maximum
+    * Required. Specifies the value of the clientState property sent by the service in each change notification. The maximum
     * length is 128 characters. The client can check that the change notification came from the service by comparing the
     * value of the clientState property sent with the subscription with the value of the clientState property received with
     * each change notification.
@@ -66,8 +67,8 @@ trait Subscription
   var latestSupportedTlsVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
-    * Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved and missed
-    * notifications. This URL must make use of the HTTPS protocol.
+    * Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved,
+    * reauthorizationRequired, and missed notifications. This URL must make use of the HTTPS protocol.
     */
   var lifecycleNotificationUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
@@ -76,13 +77,15 @@ trait Subscription
     * resource reaches the state matching the query options provided here. With this new property in the subscription
     * creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches
     * the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or
-    * when a print job resource isFetchable property value becomes true etc.
+    * when a print job resource isFetchable property value becomes true etc. Supported only for Universal Print Service. For
+    * more information, see Subscribe to change notifications from cloud printing APIs using Microsoft Graph.
     */
   var notificationQueryOptions: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Required. The URL of the endpoint that will receive the change notifications. This URL must make use of the HTTPS
-    * protocol.
+    * protocol. Any query string parameter included in the notificationUrl property will be included in the HTTP POST request
+    * when Microsoft Graph sends the change notifications.
     */
   var notificationUrl: js.UndefOr[String] = js.undefined
   

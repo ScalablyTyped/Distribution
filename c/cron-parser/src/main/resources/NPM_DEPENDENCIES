@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cron-parser" : "4.6.0"
+      "cron-parser" : "4.8.1"
     }
   ],
   "test-dependencies" : [
     {
-      "cron-parser" : "4.6.0"
+      "cron-parser" : "4.8.1"
     }
   ],
   "compile-devDependencies" : [

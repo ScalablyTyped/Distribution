@@ -1,5 +1,6 @@
 package typings.rcPicker
 
+import typings.rcPicker.esInterfaceMod.CellRender
 import typings.rcPicker.esInterfaceMod.PanelMode
 import typings.rcPicker.esInterfaceMod.PanelSharedProps
 import typings.react.mod.global.JSX.Element
@@ -23,6 +24,8 @@ object esPanelsYearPanelMod {
   trait YearPanelProps[DateType]
     extends StObject
        with PanelSharedProps[DateType] {
+    
+    var cellRender: js.UndefOr[CellRender[DateType, DateType]] = js.native
     
     var sourceMode: PanelMode = js.native
   }

@@ -2,6 +2,7 @@ package typings.webAnimationsJs
 
 import typings.std.AnimationEffect
 import typings.std.AnimationPlayState
+import typings.std.CSSNumberish
 import typings.std.EventListener
 import typings.std.EventTarget
 import typings.webAnimationsJs.webAnimationsJsStrings.cancel
@@ -19,7 +20,7 @@ trait Animation
   
   def cancel(): Unit = js.native
   
-  var currentTime: Double | Null = js.native
+  var currentTime: CSSNumberish | Null = js.native
   
   var effect: AnimationEffect | Null = js.native
   
@@ -47,7 +48,7 @@ trait Animation
   
   def reverse(): Unit = js.native
   
-  var startTime: Double | Null = js.native
+  var startTime: CSSNumberish | Null = js.native
   
   var timeline: AnimationTimeline | Null = js.native
 }

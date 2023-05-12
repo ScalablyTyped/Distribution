@@ -9,12 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Manifestpath extends StObject {
   
   @JSName("package")
-  var _package: js.UndefOr[EcosystemName] = js.undefined
+  val _package: js.UndefOr[EcosystemName] = js.undefined
   
-  /** @description The path to the manifest filename. */
-  var manifest_path: js.UndefOr[String] = js.undefined
+  /** @description The full path to the dependency manifest file, relative to the root of the repository. */
+  val manifest_path: js.UndefOr[String] = js.undefined
   
-  var scope: js.UndefOr[development | runtime | Null] = js.undefined
+  /**
+    * @description The execution scope of the vulnerable dependency.
+    * @enum {string|null}
+    */
+  val scope: js.UndefOr[development | runtime | Null] = js.undefined
 }
 object Manifestpath {
   

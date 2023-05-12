@@ -1,14 +1,14 @@
 package typings.hyperformula
 
-import typings.hyperformula.anon.HLOOKUP
 import typings.hyperformula.typingsInterpreterInterpreterMod.Interpreter
 import typings.hyperformula.typingsInterpreterInterpreterStateMod.InterpreterState
 import typings.hyperformula.typingsInterpreterInterpreterValueMod.InterpreterValue
 import typings.hyperformula.typingsInterpreterInterpreterValueMod.RawNoErrorScalarValue
 import typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.FunctionPlugin
-import typings.hyperformula.typingsInterpreterSimpleRangeValueMod.SimpleRangeValue
+import typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.ImplementedFunctions
 import typings.hyperformula.typingsLookupSearchStrategyMod.SearchStrategy
 import typings.hyperformula.typingsParserAstMod.ProcedureAst
+import typings.hyperformula.typingsSimpleRangeValueMod.SimpleRangeValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +31,7 @@ object typingsInterpreterPluginLookupPluginMod {
       * Corresponds to HLOOKUP(key, range, index, [sorted])
       *
       * @param ast
-      * @param formulaAddress
+      * @param state
       */
     def hlookup(ast: ProcedureAst, state: InterpreterState): InterpreterValue = js.native
     
@@ -63,7 +63,7 @@ object typingsInterpreterPluginLookupPluginMod {
     
     @JSImport("hyperformula/typings/interpreter/plugin/LookupPlugin", "LookupPlugin.implementedFunctions")
     @js.native
-    def implementedFunctions: HLOOKUP = js.native
-    inline def implementedFunctions_=(x: HLOOKUP): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("implementedFunctions")(x.asInstanceOf[js.Any])
+    def implementedFunctions: ImplementedFunctions = js.native
+    inline def implementedFunctions_=(x: ImplementedFunctions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("implementedFunctions")(x.asInstanceOf[js.Any])
   }
 }

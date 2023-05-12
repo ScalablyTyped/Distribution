@@ -45,7 +45,7 @@ object mod {
     def this(props: PartialDraggableCoreProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: PartialDraggableCoreProps, context: Any) = this()
   }

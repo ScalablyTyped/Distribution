@@ -10,22 +10,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `215` extends StObject {
   
   var parameters: (ToOctokitParameters[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/user/codespaces']['get'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/teams/{team_id}/projects']['get'] */ js.Any
   ]) & RequiredPreview[Any]
   
-  var response: (ExtractOctokitResponse[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/user/codespaces']['get'] */ js.Any
-  ]) & `214`
+  var response: ExtractOctokitResponse[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/teams/{team_id}/projects']['get'] */ js.Any
+  ]
 }
 object `215` {
   
   inline def apply(
     parameters: (ToOctokitParameters[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/user/codespaces']['get'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/teams/{team_id}/projects']['get'] */ js.Any
     ]) & RequiredPreview[Any],
-    response: (ExtractOctokitResponse[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/user/codespaces']['get'] */ js.Any
-    ]) & `214`
+    response: ExtractOctokitResponse[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/teams/{team_id}/projects']['get'] */ js.Any
+    ]
   ): `215` = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[`215`]
@@ -36,14 +36,14 @@ object `215` {
     
     inline def setParameters(
       value: (ToOctokitParameters[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/user/codespaces']['get'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/teams/{team_id}/projects']['get'] */ js.Any
         ]) & RequiredPreview[Any]
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setResponse(
-      value: (ExtractOctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/user/codespaces']['get'] */ js.Any
-        ]) & `214`
+      value: ExtractOctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/teams/{team_id}/projects']['get'] */ js.Any
+        ]
     ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

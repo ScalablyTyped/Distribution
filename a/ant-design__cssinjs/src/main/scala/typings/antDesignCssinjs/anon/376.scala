@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.TextJustify
+import typings.csstype.mod.Property.MarginBlockStart
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `376` extends StObject {
   
   var value: js.UndefOr[
-    TextJustify | (js.Array[
-      (Extract[js.UndefOr[TextJustify | js.Array[NonNullable[js.UndefOr[TextJustify]]]], String]) | NonNullable[js.UndefOr[TextJustify]]
+    (MarginBlockStart[Double | String]) | (js.Array[
+      (Extract[
+        js.UndefOr[
+          (MarginBlockStart[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginBlockStart[Double | String]]]])
+        ], 
+        String
+      ]) | (NonNullable[js.UndefOr[MarginBlockStart[Double | String]]])
     ])
   ] = js.native
 }

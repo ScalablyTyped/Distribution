@@ -9,38 +9,50 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
-inline def apply(context: Any): Unit = ^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any]).asInstanceOf[Unit]
-inline def apply(context: Any, path: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def apply(context: Any, path: Any, request: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def apply(context: Any, path: Any, request: Any, resolveContext: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], resolveContext.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def apply(context: Any, path: Any, request: Any, resolveContext: Any, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], resolveContext.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def apply(context: Any, path: Any, request: Any, resolveContext: Unit, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], resolveContext.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def apply(context: Any, path: Any, request: Unit, resolveContext: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], resolveContext.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def apply(context: Any, path: Any, request: Unit, resolveContext: Any, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], resolveContext.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def apply(context: Any, path: Any, request: Unit, resolveContext: Unit, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], resolveContext.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def apply(context: Any, path: Unit, request: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def apply(context: Any, path: Unit, request: Any, resolveContext: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], resolveContext.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def apply(context: Any, path: Unit, request: Any, resolveContext: Any, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], resolveContext.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def apply(context: Any, path: Unit, request: Any, resolveContext: Unit, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], resolveContext.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def apply(context: Any, path: Unit, request: Unit, resolveContext: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], resolveContext.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def apply(context: Any, path: Unit, request: Unit, resolveContext: Any, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], resolveContext.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def apply(context: Any, path: Unit, request: Unit, resolveContext: Unit, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], resolveContext.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def apply(context: Unit, path: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def apply(context: Unit, path: Any, request: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def apply(context: Unit, path: Any, request: Any, resolveContext: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], resolveContext.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def apply(context: Unit, path: Any, request: Any, resolveContext: Any, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], resolveContext.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def apply(context: Unit, path: Any, request: Any, resolveContext: Unit, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], resolveContext.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def apply(context: Unit, path: Any, request: Unit, resolveContext: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], resolveContext.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def apply(context: Unit, path: Any, request: Unit, resolveContext: Any, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], resolveContext.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def apply(context: Unit, path: Any, request: Unit, resolveContext: Unit, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], resolveContext.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def apply(context: Unit, path: Unit, request: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def apply(context: Unit, path: Unit, request: Any, resolveContext: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], resolveContext.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def apply(context: Unit, path: Unit, request: Any, resolveContext: Any, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], resolveContext.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def apply(context: Unit, path: Unit, request: Any, resolveContext: Unit, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], resolveContext.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def apply(context: Unit, path: Unit, request: Unit, resolveContext: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], resolveContext.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def apply(context: Unit, path: Unit, request: Unit, resolveContext: Any, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], resolveContext.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def apply(context: Unit, path: Unit, request: Unit, resolveContext: Unit, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], resolveContext.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def apply(
+  context: js.Object,
+  path: String,
+  request: String,
+  callback: js.Function3[
+  /* err */ Null | ErrorWithDetail, 
+  /* res */ js.UndefOr[String | `false`], 
+  /* req */ js.UndefOr[ResolveRequest], 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def apply(
+  context: js.Object,
+  path: String,
+  request: String,
+  resolveContext: ResolveContext,
+  callback: js.Function3[
+  /* err */ Null | ErrorWithDetail, 
+  /* res */ js.UndefOr[String | `false`], 
+  /* req */ js.UndefOr[ResolveRequest], 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], resolveContext.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def apply(
+  path: String,
+  request: String,
+  callback: js.Function3[
+  /* err */ Null | ErrorWithDetail, 
+  /* res */ js.UndefOr[String | `false`], 
+  /* req */ js.UndefOr[ResolveRequest], 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def apply(
+  path: String,
+  request: String,
+  resolveContext: ResolveContext,
+  callback: js.Function3[
+  /* err */ Null | ErrorWithDetail, 
+  /* res */ js.UndefOr[String | `false`], 
+  /* req */ js.UndefOr[ResolveRequest], 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], resolveContext.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def forEachBail(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("forEachBail")().asInstanceOf[Any]
 inline def forEachBail(array: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("forEachBail")(array.asInstanceOf[js.Any]).asInstanceOf[Any]
@@ -51,14 +63,7 @@ inline def forEachBail(array: Unit, iterator: Any): Any = (^.asInstanceOf[js.Dyn
 inline def forEachBail(array: Unit, iterator: Any, callback: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachBail")(array.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
 inline def forEachBail(array: Unit, iterator: Unit, callback: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachBail")(array.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
 
-inline def sync(): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[String | `false`]
-inline def sync(context: Any): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(context.asInstanceOf[js.Any]).asInstanceOf[String | `false`]
-inline def sync(context: Any, path: Any): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
-inline def sync(context: Any, path: Any, request: Any): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
-inline def sync(context: Any, path: Unit, request: Any): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
-inline def sync(context: Unit, path: Any): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
-inline def sync(context: Unit, path: Any, request: Any): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
-inline def sync(context: Unit, path: Unit, request: Any): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+inline def sync: ResolveFunction = ^.asInstanceOf[js.Dynamic].selectDynamic("sync").asInstanceOf[ResolveFunction]
 
 type AliasOptionNewRequest = String | `false` | js.Array[String]
 
@@ -72,3 +77,9 @@ type FileSystemCallback[T] = js.Function2[
 Any]
 
 type Plugin = Apply | (js.ThisFunction1[/* this */ Resolver, /* arg1 */ Resolver, Unit])
+
+type ResolveCallback = js.Function3[
+/* err */ Null | ErrorWithDetail, 
+/* res */ js.UndefOr[String | `false`], 
+/* req */ js.UndefOr[ResolveRequest], 
+Unit]

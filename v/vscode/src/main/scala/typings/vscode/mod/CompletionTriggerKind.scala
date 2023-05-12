@@ -14,8 +14,8 @@ object CompletionTriggerKind extends StObject {
   def apply(value: Double): js.UndefOr[CompletionTriggerKind & Double] = js.native
   
   /**
-    * Completion was triggered normally.
-    */
+  		 * Completion was triggered normally.
+  		 */
   @js.native
   sealed trait Invoke
     extends StObject
@@ -23,8 +23,8 @@ object CompletionTriggerKind extends StObject {
   /* 0 */ val Invoke: typings.vscode.mod.CompletionTriggerKind.Invoke & Double = js.native
   
   /**
-    * Completion was triggered by a trigger character.
-    */
+  		 * Completion was triggered by a trigger character.
+  		 */
   @js.native
   sealed trait TriggerCharacter
     extends StObject
@@ -32,8 +32,8 @@ object CompletionTriggerKind extends StObject {
   /* 1 */ val TriggerCharacter: typings.vscode.mod.CompletionTriggerKind.TriggerCharacter & Double = js.native
   
   /**
-    * Completion was re-triggered as current completion list is incomplete
-    */
+  		 * Completion was re-triggered as current completion list is incomplete
+  		 */
   @js.native
   sealed trait TriggerForIncompleteCompletions
     extends StObject

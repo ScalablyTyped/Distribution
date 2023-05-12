@@ -48,7 +48,8 @@ trait TypeofNgIf
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `true`
+    `true`, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[typings.angularCommon.mod.NgIf[Any], scala.Nothing] = js.native

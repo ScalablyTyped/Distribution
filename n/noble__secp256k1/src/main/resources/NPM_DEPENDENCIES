@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@noble/secp256k1" : "1.7.0"
+      "@noble/secp256k1" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@noble/secp256k1" : "1.7.0"
+      "@noble/secp256k1" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

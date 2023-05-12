@@ -18,9 +18,20 @@ object distSrcMigrationsMigration9PinSetMod {
   
   inline def storeSet(blockstore: Blockstore, `type`: String, cids: js.Array[CID[Any, Double, Double, Version]]): js.Promise[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("storeSet")(blockstore.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], cids.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Hash]]
   
-  type Blockstore = typings.interfaceBlockstore.mod.Blockstore
+  type Blockstore = typings.interfaceBlockstore.mod.Blockstore[js.Object, js.Object, js.Object, js.Object, js.Object, js.Object, js.Object, js.Object]
   
-  type Datastore = typings.interfaceDatastore.mod.Datastore
+  type Datastore = typings.interfaceDatastore.mod.Datastore[
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object
+  ]
   
   type PBNode = typings.ipldDagPb.mod.PBNode
   

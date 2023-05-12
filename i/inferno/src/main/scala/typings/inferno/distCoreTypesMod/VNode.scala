@@ -1,6 +1,5 @@
 package typings.inferno.distCoreTypesMod
 
-import typings.inferno.distCoreTypesMod.Inferno.InfernoNode
 import typings.infernoVnodeFlags.mod.ChildFlags
 import typings.infernoVnodeFlags.mod.VNodeFlags
 import typings.std.Element
@@ -22,7 +21,7 @@ trait VNode extends StObject {
   
   var isValidated: js.UndefOr[Boolean] = js.undefined
   
-  var key: Null | Double | String
+  var key: Key
   
   var props: Any
   
@@ -33,7 +32,7 @@ trait VNode extends StObject {
 object VNode {
   
   inline def apply(childFlags: ChildFlags, flags: VNodeFlags, props: Any, ref: Any, `type`: Any): VNode = {
-    val __obj = js.Dynamic.literal(childFlags = childFlags.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], dom = null, key = null)
+    val __obj = js.Dynamic.literal(childFlags = childFlags.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], dom = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VNode]
   }
@@ -65,9 +64,11 @@ object VNode {
     
     inline def setIsValidatedUndefined: Self = StObject.set(x, "isValidated", js.undefined)
     
-    inline def setKey(value: Double | String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyNull: Self = StObject.set(x, "key", null)
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     inline def setProps(value: Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

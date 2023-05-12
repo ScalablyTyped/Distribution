@@ -108,10 +108,10 @@ object serversocketMod {
     
     def decode(message: Any): Any = js.native
     
-    def disconnect(): Unit = js.native
-    def disconnect(code: Double): Unit = js.native
-    def disconnect(code: Double, reason: String): Unit = js.native
-    def disconnect(code: Unit, reason: String): Unit = js.native
+    def disconnect(): js.Promise[Unit] = js.native
+    def disconnect(code: Double): js.Promise[Unit] = js.native
+    def disconnect(code: Double, reason: String): js.Promise[Unit] = js.native
+    def disconnect(code: Unit, reason: String): js.Promise[Unit] = js.native
     
     def emit(eventName: message | raw): typings.consumableStream.mod.^[Message] = js.native
     def emit(eventName: message | raw, data: Message): Unit = js.native
@@ -241,10 +241,12 @@ object serversocketMod {
     
     def isSubscribed(channel: String): Boolean = js.native
     
-    def kickOut(): Any = js.native
-    def kickOut(channel: String): Any = js.native
-    def kickOut(channel: String, message: String): Any = js.native
-    def kickOut(channel: Unit, message: String): Any = js.native
+    def kickOut(): js.Promise[Any] = js.native
+    def kickOut(channel: String): js.Promise[Any] = js.native
+    def kickOut(channel: String, message: String): js.Promise[Any] = js.native
+    def kickOut(channel: js.Array[String]): js.Promise[Any] = js.native
+    def kickOut(channel: js.Array[String], message: String): js.Promise[Any] = js.native
+    def kickOut(channel: Unit, message: String): js.Promise[Any] = js.native
     
     def killAllMiddlewares(): Unit = js.native
     

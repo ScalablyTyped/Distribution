@@ -51,6 +51,11 @@ object ClientAuthErrorMessage {
   def appendScopeSetError: Code = js.native
   inline def appendScopeSetError_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("appendScopeSetError")(x.asInstanceOf[js.Any])
   
+  @JSImport("@azure/msal-common", "ClientAuthErrorMessage.authTimeNotFoundError")
+  @js.native
+  def authTimeNotFoundError: Code = js.native
+  inline def authTimeNotFoundError_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("authTimeNotFoundError")(x.asInstanceOf[js.Any])
+  
   @JSImport("@azure/msal-common", "ClientAuthErrorMessage.bindingKeyNotRemovedError")
   @js.native
   def bindingKeyNotRemovedError: Code = js.native
@@ -126,6 +131,11 @@ object ClientAuthErrorMessage {
   def logoutNotSupported: Code = js.native
   inline def logoutNotSupported_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logoutNotSupported")(x.asInstanceOf[js.Any])
   
+  @JSImport("@azure/msal-common", "ClientAuthErrorMessage.maxAgeTranspiredError")
+  @js.native
+  def maxAgeTranspiredError: Code = js.native
+  inline def maxAgeTranspiredError_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxAgeTranspiredError")(x.asInstanceOf[js.Any])
+  
   @JSImport("@azure/msal-common", "ClientAuthErrorMessage.multipleMatchingAccounts")
   @js.native
   def multipleMatchingAccounts: Code = js.native
@@ -165,6 +175,11 @@ object ClientAuthErrorMessage {
   @js.native
   def noCryptoObj: Code = js.native
   inline def noCryptoObj_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noCryptoObj")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@azure/msal-common", "ClientAuthErrorMessage.noNetworkConnectivity")
+  @js.native
+  def noNetworkConnectivity: Code = js.native
+  inline def noNetworkConnectivity_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noNetworkConnectivity")(x.asInstanceOf[js.Any])
   
   @JSImport("@azure/msal-common", "ClientAuthErrorMessage.noTokensFoundError")
   @js.native
@@ -235,6 +250,11 @@ object ClientAuthErrorMessage {
   @js.native
   def unexpectedCredentialType: Code = js.native
   inline def unexpectedCredentialType_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unexpectedCredentialType")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@azure/msal-common", "ClientAuthErrorMessage.userCanceledError")
+  @js.native
+  def userCanceledError: Code = js.native
+  inline def userCanceledError_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("userCanceledError")(x.asInstanceOf[js.Any])
   
   @JSImport("@azure/msal-common", "ClientAuthErrorMessage.userTimeoutReached")
   @js.native

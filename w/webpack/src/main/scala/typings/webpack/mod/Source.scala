@@ -11,8 +11,8 @@ trait Source extends StObject {
   
   def buffer(): Buffer = js.native
   
-  def map(): js.Object = js.native
-  def map(options: MapOptions): js.Object = js.native
+  def map(): Null | RawSourceMap = js.native
+  def map(options: MapOptions): Null | RawSourceMap = js.native
   
   def size(): Double = js.native
   

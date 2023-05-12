@@ -33,6 +33,11 @@ trait HyperParameterTrainingJobDefinition extends StObject {
     */
   var EnableNetworkIsolation: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * An environment variable that you can pass into the SageMaker CreateTrainingJob API. You can use an existing environment variable from the training container or use your own. See Define metrics and variables for more information.  The maximum number of items specified for Map Entries refers to the maximum number of environment variables for each TrainingJobDefinition and also the maximum for the hyperparameter tuning job itself. That is, the sum of the number of environment variables for all the training job definitions can't exceed the maximum number specified. 
+    */
+  var Environment: js.UndefOr[HyperParameterTrainingJobEnvironmentMap] = js.undefined
+  
   var HyperParameterRanges: js.UndefOr[ParameterRanges] = js.undefined
   
   /**
@@ -118,6 +123,10 @@ object HyperParameterTrainingJobDefinition {
     inline def setEnableNetworkIsolation(value: Boolean): Self = StObject.set(x, "EnableNetworkIsolation", value.asInstanceOf[js.Any])
     
     inline def setEnableNetworkIsolationUndefined: Self = StObject.set(x, "EnableNetworkIsolation", js.undefined)
+    
+    inline def setEnvironment(value: HyperParameterTrainingJobEnvironmentMap): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
+    
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "Environment", js.undefined)
     
     inline def setHyperParameterRanges(value: ParameterRanges): Self = StObject.set(x, "HyperParameterRanges", value.asInstanceOf[js.Any])
     

@@ -14,13 +14,17 @@ object columngroupColumngroupMod {
     def this(props: ColumnGroupProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ColumnGroupProps, context: Any) = this()
   }
   
   trait ColumnGroupProps extends StObject {
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
   }
   object ColumnGroupProps {

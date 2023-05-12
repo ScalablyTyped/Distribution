@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ScrollPaddingBlock
+import typings.csstype.mod.Property.BorderInlineStartStyle
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `395` extends StObject {
   
   var value: js.UndefOr[
-    (ScrollPaddingBlock[Double | String]) | (js.Array[
+    BorderInlineStartStyle | (js.Array[
       (Extract[
         js.UndefOr[
-          (ScrollPaddingBlock[Double | String]) | (js.Array[NonNullable[js.UndefOr[ScrollPaddingBlock[Double | String]]]])
+          BorderInlineStartStyle | js.Array[NonNullable[js.UndefOr[BorderInlineStartStyle]]]
         ], 
         String
-      ]) | (NonNullable[js.UndefOr[ScrollPaddingBlock[Double | String]]])
+      ]) | NonNullable[js.UndefOr[BorderInlineStartStyle]]
     ])
   ] = js.native
 }

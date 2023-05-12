@@ -1,7 +1,7 @@
 
 # Scala.js typings for enhanced-resolve
 
-Typings are for version 5.10.0
+Typings are for version 5.14.0
 
 ## Library description:
 Offers a async require.resolve function. It's highly configurable.

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "babylonjs" : "5.32.1"
+      "babylonjs" : "6.3.1"
     }
   ],
   "test-dependencies" : [
     {
-      "babylonjs" : "5.32.1"
+      "babylonjs" : "6.3.1"
     }
   ],
   "compile-devDependencies" : [

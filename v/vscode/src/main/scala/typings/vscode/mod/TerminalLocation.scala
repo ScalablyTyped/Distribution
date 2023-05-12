@@ -14,8 +14,8 @@ object TerminalLocation extends StObject {
   def apply(value: Double): js.UndefOr[TerminalLocation & Double] = js.native
   
   /**
-    * In the editor area
-    */
+  		 * In the editor area
+  		 */
   @js.native
   sealed trait Editor
     extends StObject
@@ -23,8 +23,8 @@ object TerminalLocation extends StObject {
   /* 2 */ val Editor: typings.vscode.mod.TerminalLocation.Editor & Double = js.native
   
   /**
-    * In the terminal view
-    */
+  		 * In the terminal view
+  		 */
   @js.native
   sealed trait Panel
     extends StObject

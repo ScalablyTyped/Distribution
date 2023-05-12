@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "plotly_dot_js-basic-dist"
-version := "1.54-dt-20220924Z-c41e7c"
+version := "1.54-dt-20220924Z-ec5ddd"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "plotly_dot_js" % "2.12-dt-20221026Z-d06af3",
-  "org.scalablytyped" %%% "std" % "4.9-ecb5eb")
+  "org.scalablytyped" %%% "plotly_dot_js" % "2.12-dt-20230220Z-3c8a03",
+  "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -52,7 +52,7 @@ object distOutlineMod {
         js.Function1[
           /* outline */ Awaited[
             ReturnType[
-              /* import warning: importer.ImportType#apply Failed type conversion: react-pdf.react-pdf/dist/Outline.Awaited<std.ReturnType<(src : pdfjs-dist.pdfjs-dist/types/src/display/api.GetDocumentParameters): pdfjs-dist.pdfjs-dist/types/src/display/api.PDFDocumentLoadingTask>['promise']>['getOutline'] */ js.Any
+              /* import warning: importer.ImportType#apply Failed type conversion: react-pdf.react-pdf/dist/Outline.Awaited<std.ReturnType<react-pdf.anon.FnCall>['promise']>['getOutline'] */ js.Any
             ]
           ], 
           Unit
@@ -86,7 +86,7 @@ object distOutlineMod {
       inline def setOnLoadSuccess(
         value: /* outline */ Awaited[
               ReturnType[
-                /* import warning: importer.ImportType#apply Failed type conversion: react-pdf.react-pdf/dist/Outline.Awaited<std.ReturnType<(src : pdfjs-dist.pdfjs-dist/types/src/display/api.GetDocumentParameters): pdfjs-dist.pdfjs-dist/types/src/display/api.PDFDocumentLoadingTask>['promise']>['getOutline'] */ js.Any
+                /* import warning: importer.ImportType#apply Failed type conversion: react-pdf.react-pdf/dist/Outline.Awaited<std.ReturnType<react-pdf.anon.FnCall>['promise']>['getOutline'] */ js.Any
               ]
             ] => Unit
       ): Self = StObject.set(x, "onLoadSuccess", js.Any.fromFunction1(value))

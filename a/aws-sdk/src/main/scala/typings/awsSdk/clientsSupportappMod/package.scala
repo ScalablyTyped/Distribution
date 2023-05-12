@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.management
-  - typings.awsSdk.awsSdkStrings.member_
+  - typings.awsSdk.awsSdkStrings.member__
   - java.lang.String
 */
 type AccountType = _AccountType | String

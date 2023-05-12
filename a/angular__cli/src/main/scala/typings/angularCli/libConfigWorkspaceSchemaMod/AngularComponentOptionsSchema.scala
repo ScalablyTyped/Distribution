@@ -62,7 +62,7 @@ trait AngularComponentOptionsSchema extends StObject {
   /**
     * The name of the project.
     */
-  var project: js.UndefOr[String] = js.undefined
+  var project: String
   
   /**
     * The HTML selector to use for this component.
@@ -107,8 +107,8 @@ trait AngularComponentOptionsSchema extends StObject {
 }
 object AngularComponentOptionsSchema {
   
-  inline def apply(name: String): AngularComponentOptionsSchema = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  inline def apply(name: String, project: String): AngularComponentOptionsSchema = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any])
     __obj.asInstanceOf[AngularComponentOptionsSchema]
   }
   
@@ -154,8 +154,6 @@ object AngularComponentOptionsSchema {
     inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
     inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
-    
-    inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
     
     inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     

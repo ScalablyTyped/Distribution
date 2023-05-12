@@ -42,7 +42,8 @@ object materialsTexturesHdrCubeTextureMod {
             Nullable[
               js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
             ]
-          ]
+          ],
+      supersample: js.UndefOr[Boolean]
     ) = this()
     
     /* private */ var _boundingBoxSize: Any = js.native
@@ -67,6 +68,8 @@ object materialsTexturesHdrCubeTextureMod {
     /* protected */ var _rotationY: Double = js.native
     
     /* private */ var _size: Any = js.native
+    
+    /* private */ var _supersample: Any = js.native
     
     /* private */ var _textureMatrix: Any = js.native
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for rdfjs__sink-map
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
 Map for RDF/JS Sinks including shortcut methods

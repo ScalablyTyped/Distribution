@@ -15,6 +15,12 @@ trait EncounterLocation
   var _status: js.UndefOr[Element] = js.undefined
   
   /**
+    * This information is de-normalized from the Location resource to support the easier understanding of the encounter resource and processing in messaging or query.
+    * There may be many levels in the hierachy, and this may only pic specific levels that are required for a specific usage scenario.
+    */
+  var form: js.UndefOr[CodeableConcept] = js.undefined
+  
+  /**
     * The location where the encounter takes place.
     */
   var location: Reference
@@ -23,12 +29,6 @@ trait EncounterLocation
     * Time period during which the patient was present at the location.
     */
   var period: js.UndefOr[Period] = js.undefined
-  
-  /**
-    * This information is de-normalized from the Location resource to support the easier understanding of the encounter resource and processing in messaging or query.
-    * There may be many levels in the hierachy, and this may only pic specific levels that are required for a specific usage scenario.
-    */
-  var physicalType: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * When the patient is no longer active at a location, then the period end date is entered, and the status may be changed to completed.
@@ -45,15 +45,15 @@ object EncounterLocation {
   @scala.inline
   implicit open class MutableBuilder[Self <: EncounterLocation] (val x: Self) extends AnyVal {
     
+    inline def setForm(value: CodeableConcept): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+    
+    inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
+    
     inline def setLocation(value: Reference): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     inline def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
-    
-    inline def setPhysicalType(value: CodeableConcept): Self = StObject.set(x, "physicalType", value.asInstanceOf[js.Any])
-    
-    inline def setPhysicalTypeUndefined: Self = StObject.set(x, "physicalType", js.undefined)
     
     inline def setStatus(value: planned | active | reserved | completed): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

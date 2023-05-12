@@ -280,6 +280,26 @@ object dxForm {
   
   type SimpleItem = dxFormSimpleItem
   
+  trait SimpleItemLabelTemplateData
+    extends StObject
+       with SimpleItemTemplateData {
+    
+    var text: String
+  }
+  object SimpleItemLabelTemplateData {
+    
+    inline def apply(component: dxForm, text: String): SimpleItemLabelTemplateData = {
+      val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SimpleItemLabelTemplateData]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleItemLabelTemplateData] (val x: Self) extends AnyVal {
+      
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait SimpleItemTemplateData extends StObject {
     
     val component: dxForm

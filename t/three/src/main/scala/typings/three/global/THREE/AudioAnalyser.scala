@@ -10,8 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class AudioAnalyser protected ()
   extends typings.three.mod.AudioAnalyser {
   /**
+    * Create a new {@link {@link AudioAnalyser} | AudioAnalyser}.
     * @param audio
-    * @param [fftSize=2048]
+    * @param fftSize See {@link https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/fftSize | AnalyserNode.fftSize }. Expects a `unsigned integer`. Default `2048`.
     */
   def this(audio: typings.three.srcAudioAudioMod.Audio[AudioNode]) = this()
   def this(audio: typings.three.srcAudioAudioMod.Audio[AudioNode], fftSize: Double) = this()

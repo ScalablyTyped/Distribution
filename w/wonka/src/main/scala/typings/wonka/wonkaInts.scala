@@ -1,7 +1,5 @@
 package typings.wonka
 
-import typings.wonka.distTypesTypesMod.SignalKind
-import typings.wonka.distTypesTypesMod.TalkbackKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,17 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object wonkaInts {
   
   @js.native
-  sealed trait `0`
-    extends StObject
-       with SignalKind
-       with TalkbackKind
+  sealed trait `0` extends StObject
   inline def `0`: `0` = 0.asInstanceOf[`0`]
   
   @js.native
-  sealed trait `1`
-    extends StObject
-       with SignalKind
-       with TalkbackKind
+  sealed trait `1` extends StObject
   inline def `1`: `1` = 1.asInstanceOf[`1`]
   
   @js.native

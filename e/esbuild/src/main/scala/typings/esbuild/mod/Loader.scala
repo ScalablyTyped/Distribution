@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.esbuild.esbuildStrings.js_
-  - typings.esbuild.esbuildStrings.jsx
-  - typings.esbuild.esbuildStrings.ts
-  - typings.esbuild.esbuildStrings.tsx
-  - typings.esbuild.esbuildStrings.css
-  - typings.esbuild.esbuildStrings.json
-  - typings.esbuild.esbuildStrings.text
   - typings.esbuild.esbuildStrings.base64
-  - typings.esbuild.esbuildStrings.file
-  - typings.esbuild.esbuildStrings.dataurl
   - typings.esbuild.esbuildStrings.binary
   - typings.esbuild.esbuildStrings.copy
+  - typings.esbuild.esbuildStrings.css
+  - typings.esbuild.esbuildStrings.dataurl
   - typings.esbuild.esbuildStrings.default
+  - typings.esbuild.esbuildStrings.empty
+  - typings.esbuild.esbuildStrings.file
+  - typings.esbuild.esbuildStrings.js_
+  - typings.esbuild.esbuildStrings.json
+  - typings.esbuild.esbuildStrings.jsx
+  - typings.esbuild.esbuildStrings.text
+  - typings.esbuild.esbuildStrings.ts
+  - typings.esbuild.esbuildStrings.tsx
 */
 trait Loader extends StObject
 object Loader {
@@ -33,6 +34,8 @@ object Loader {
   inline def css: typings.esbuild.esbuildStrings.css = "css".asInstanceOf[typings.esbuild.esbuildStrings.css]
   
   inline def dataurl: typings.esbuild.esbuildStrings.dataurl = "dataurl".asInstanceOf[typings.esbuild.esbuildStrings.dataurl]
+  
+  inline def empty: typings.esbuild.esbuildStrings.empty = "empty".asInstanceOf[typings.esbuild.esbuildStrings.empty]
   
   inline def file: typings.esbuild.esbuildStrings.file = "file".asInstanceOf[typings.esbuild.esbuildStrings.file]
   

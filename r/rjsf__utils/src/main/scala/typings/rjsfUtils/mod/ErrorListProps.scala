@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The properties that are passed to an `ErrorListTemplate` implementation */
-trait ErrorListProps[T, F] extends StObject {
+trait ErrorListProps[T, S /* <: StrictRJSFSchema */, F /* <: FormContextType */] extends StObject {
   
   /** The errorSchema constructed by `Form` */
   var errorSchema: ErrorSchema[T]
@@ -16,21 +16,29 @@ trait ErrorListProps[T, F] extends StObject {
   /** The `formContext` object that was passed to `Form` */
   var formContext: js.UndefOr[F] = js.undefined
   
+  /** The `registry` object */
+  var registry: Registry[T, S, F]
+  
   /** The schema that was passed to `Form` */
-  var schema: RJSFSchema
+  var schema: S
   
   /** The uiSchema that was passed to `Form` */
-  var uiSchema: js.UndefOr[UiSchema[T, F]] = js.undefined
+  var uiSchema: js.UndefOr[UiSchema[T, S, F]] = js.undefined
 }
 object ErrorListProps {
   
-  inline def apply[T, F](errorSchema: ErrorSchema[T], errors: js.Array[RJSFValidationError], schema: RJSFSchema): ErrorListProps[T, F] = {
-    val __obj = js.Dynamic.literal(errorSchema = errorSchema.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ErrorListProps[T, F]]
+  inline def apply[T, S /* <: StrictRJSFSchema */, F /* <: FormContextType */](
+    errorSchema: ErrorSchema[T],
+    errors: js.Array[RJSFValidationError],
+    registry: Registry[T, S, F],
+    schema: S
+  ): ErrorListProps[T, S, F] = {
+    val __obj = js.Dynamic.literal(errorSchema = errorSchema.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], registry = registry.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ErrorListProps[T, S, F]]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: ErrorListProps[?, ?], T, F] (val x: Self & (ErrorListProps[T, F])) extends AnyVal {
+  implicit open class MutableBuilder[Self <: ErrorListProps[?, ?, ?], T, S /* <: StrictRJSFSchema */, F /* <: FormContextType */] (val x: Self & (ErrorListProps[T, S, F])) extends AnyVal {
     
     inline def setErrorSchema(value: ErrorSchema[T]): Self = StObject.set(x, "errorSchema", value.asInstanceOf[js.Any])
     
@@ -42,9 +50,11 @@ object ErrorListProps {
     
     inline def setFormContextUndefined: Self = StObject.set(x, "formContext", js.undefined)
     
-    inline def setSchema(value: RJSFSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setRegistry(value: Registry[T, S, F]): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
     
-    inline def setUiSchema(value: UiSchema[T, F]): Self = StObject.set(x, "uiSchema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: S): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    
+    inline def setUiSchema(value: UiSchema[T, S, F]): Self = StObject.set(x, "uiSchema", value.asInstanceOf[js.Any])
     
     inline def setUiSchemaUndefined: Self = StObject.set(x, "uiSchema", js.undefined)
   }

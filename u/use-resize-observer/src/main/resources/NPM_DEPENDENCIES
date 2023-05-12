@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "use-resize-observer" : "9.0.2"
+      "use-resize-observer" : "9.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "use-resize-observer" : "9.0.2"
+      "use-resize-observer" : "9.1.0"
     }
   ],
   "compile-devDependencies" : [

@@ -12,7 +12,7 @@ open class Container protected ()
   def this(props: ContainerProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: ContainerProps, context: Any) = this()
 }

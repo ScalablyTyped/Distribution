@@ -1,6 +1,5 @@
 package typings.nightwatch.mod
 
-import typings.nightwatch.anon.ELEMENTKEY
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,16 +38,19 @@ trait WebDriverProtocolElements extends StObject {
     *     });
     *   }
     * }
+    *
+    * @see https://nightwatchjs.org/api/element.html
     */
-  def element(`using`: LocateStrategy, value: String): Awaitable[this.type, ELEMENTKEY] = js.native
+  def element(`using`: LocateStrategy, value: String): Awaitable[this.type, ElementResult] = js.native
   def element(
     `using`: LocateStrategy,
     value: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ELEMENTKEY], Unit]
-  ): Awaitable[this.type, ELEMENTKEY] = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ElementResult], Unit]
+  ): Awaitable[this.type, ElementResult] = js.native
   
   /**
-    * Get the element on the page that currently has focus. The element will be returned as a [Web Element](https://www.w3.org/TR/webdriver1/#dfn-web-elements) JSON object.
+    * Get the element on the page that currently has focus.
+    * The element will be returned as a [Web Element](https://www.w3.org/TR/webdriver1/#dfn-web-elements) id.
     *
     * @example
     * module.exports = {
@@ -58,22 +60,24 @@ trait WebDriverProtocolElements extends StObject {
     *     });
     *   }
     * }
+    *
+    * @see https://nightwatchjs.org/api/elementActive.html
     */
-  def elementActive(): this.type = js.native
+  def elementActive(): Awaitable[this.type, String] = js.native
   def elementActive(
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ELEMENTKEY], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
+  ): Awaitable[this.type, String] = js.native
   
   /**
     * Move to the element and performs a double-click in the middle of the given element if
     * element is given else double-clicks at the current mouse coordinates (set by `.moveTo()`).
     *
     */
-  def elementIdDoubleClick(webElementId: String): this.type = js.native
+  def elementIdDoubleClick(webElementId: String): Awaitable[this.type, Null] = js.native
   def elementIdDoubleClick(
     webElementId: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   
   /**
     * Search for an element on the page, starting from the identified element. The located element will be returned as a Web Element JSON object.
@@ -84,24 +88,33 @@ trait WebDriverProtocolElements extends StObject {
     * @example
     * module.exports = {
     *  'demo Test' : function(browser) {
-    *     browser.elementIdElement('<WebElementId>', 'css selector', '.new-element', function(result) {
-    *       console.log(result.value)
+    *     browser.findElement('.some-element', (result) => {
+    *       this.elementIdElement(result.value.getId(), 'css selector', '.new-element', function(result) {
+    *         console.log(result.value);
+    *       });
     *     });
     *   },
     *
     *   'es6 async demo Test': async function(browser) {
-    *     const result = await browser.elementIdElement('<WebElementId>', 'css selector', '.new-element');
-    *     console.log(result.value);
+    *     const elementObject = await browser.findElement('.some-element');
+    *     const result = await browser.elementIdElement(elementId.getId(), 'css selector', '.new-element');
+    *     console.log(result);
     *   }
     * }
+    *
+    * @see https://nightwatchjs.org/api/elementIdElement.html
     */
-  def elementIdElement(id: String, `using`: LocateStrategy, value: String): this.type = js.native
+  def elementIdElement(id: String, `using`: LocateStrategy, value: String): Awaitable[this.type, ElementResult | js.Array[Any]] = js.native
   def elementIdElement(
     id: String,
     `using`: LocateStrategy,
     value: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ELEMENTKEY], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[ElementResult | js.Array[Any]], 
+      Unit
+    ]
+  ): Awaitable[this.type, ElementResult | js.Array[Any]] = js.native
   
   /**
     * Search for multiple elements on the page, starting from the identified element. The located element will be returned as a web element JSON objects.
@@ -109,28 +122,33 @@ trait WebDriverProtocolElements extends StObject {
     * @example
     * module.exports = {
     *  'demo Test' : function(browser) {
-    *     browser.elementIdElements('<WebElementId>', 'css selector', 'ul li', function(result) {
-    *       console.log(result.value)
+    *     browser.findElement('#main', (result) => {
+    *       browser.elementIdElements(result.value.getId(), 'css selector', 'ul li', function(result) {
+    *         console.log(result.value)
+    *       });
     *     });
     *   },
     *
     *   'es6 async demo Test': async function(browser) {
-    *     const result = await browser.elementIdElements('<WebElementId>', 'css selector', 'ul li');
-    *     console.log(result.value);
+    *     const elementObject = await browser.findElement('#main');
+    *     const result = await browser.elementIdElements(elementObject.getId(), 'css selector', 'ul li');
+    *     console.log(result);
     *   }
     * }
+    *
+    * @see https://nightwatchjs.org/api/elementIdElements.html
     */
-  def elementIdElements(id: String, `using`: LocateStrategy, value: String): this.type = js.native
+  def elementIdElements(id: String, `using`: LocateStrategy, value: String): Awaitable[this.type, js.Array[ElementResult]] = js.native
   def elementIdElements(
     id: String,
     `using`: LocateStrategy,
     value: String,
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[js.Array[ELEMENTKEY]], 
+      /* result */ NightwatchCallbackResult[js.Array[ElementResult]], 
       Unit
     ]
-  ): this.type = js.native
+  ): Awaitable[this.type, js.Array[ElementResult]] = js.native
   
   /**
     * Test if two web element IDs refer to the same DOM element.
@@ -145,25 +163,29 @@ trait WebDriverProtocolElements extends StObject {
     *     });
     *   }
     * }
+    *
+    * @see https://nightwatchjs.org/api/elementIdEquals.html
+    *
+    * @deprecated In favour of WebElement.equals(a, b) from Selenium Webdriver.
     */
-  def elementIdEquals(id: String, otherId: String): this.type = js.native
+  def elementIdEquals(id: String, otherId: String): Awaitable[this.type, Boolean] = js.native
   def elementIdEquals(
     id: String,
     otherId: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Boolean], Unit]
-  ): this.type = js.native
+  ): Awaitable[this.type, Boolean] = js.native
   
   /**
     *
     * Retrieve the value of a specified DOM property for the given element.
     * For all the available DOM element properties, consult the [Element doc at MDN](https://developer.mozilla.org/en-US/docs/Web/API/element).
     */
-  def elementIdProperty(webElementId: String, DOMPropertyName: String): this.type = js.native
+  def elementIdProperty(webElementId: String, DOMPropertyName: String): Awaitable[this.type, Any] = js.native
   def elementIdProperty(
     webElementId: String,
     DOMPropertyName: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Any], Unit]
+  ): Awaitable[this.type, Any] = js.native
   
   /**
     * Search for multiple elements on the page, starting from the document root. The located elements will be returned as web element JSON objects.
@@ -202,15 +224,17 @@ trait WebDriverProtocolElements extends StObject {
     *      browser.end();
     *   }
     * }
+    *
+    * @see https://nightwatchjs.org/api/elements.html
     */
-  def elements(`using`: LocateStrategy, value: String): Awaitable[this.type, js.Array[ELEMENTKEY]] = js.native
+  def elements(`using`: LocateStrategy, value: String): Awaitable[this.type, js.Array[ElementResult]] = js.native
   def elements(
     `using`: LocateStrategy,
     value: String,
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[js.Array[ELEMENTKEY]], 
+      /* result */ NightwatchCallbackResult[js.Array[ElementResult]], 
       Unit
     ]
-  ): Awaitable[this.type, js.Array[ELEMENTKEY]] = js.native
+  ): Awaitable[this.type, js.Array[ElementResult]] = js.native
 }

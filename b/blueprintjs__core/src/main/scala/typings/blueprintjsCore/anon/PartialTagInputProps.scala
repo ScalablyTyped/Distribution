@@ -6,7 +6,7 @@ import typings.blueprintjsCore.libEsmCommonPropsMod.HTMLInputProps
 import typings.blueprintjsCore.libEsmCommonPropsMod.MaybeElement
 import typings.blueprintjsCore.libEsmComponentsTagInputTagInputMod.TagInputAddMethod
 import typings.blueprintjsCore.libEsmComponentsTagTagMod.TagProps
-import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsIcons.libEsmGeneratedIcons16pxBlueprintIcons16Mod.BlueprintIcons16Id
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
 import typings.react.mod.KeyboardEvent
@@ -25,6 +25,8 @@ trait PartialTagInputProps extends StObject {
   var addOnBlur: js.UndefOr[Boolean] = js.undefined
   
   var addOnPaste: js.UndefOr[Boolean] = js.undefined
+  
+  var autoResize: js.UndefOr[Boolean] = js.undefined
   
   var children: js.UndefOr[ReactNode] = js.undefined
   
@@ -91,6 +93,10 @@ object PartialTagInputProps {
     inline def setAddOnPaste(value: Boolean): Self = StObject.set(x, "addOnPaste", value.asInstanceOf[js.Any])
     
     inline def setAddOnPasteUndefined: Self = StObject.set(x, "addOnPaste", js.undefined)
+    
+    inline def setAutoResize(value: Boolean): Self = StObject.set(x, "autoResize", value.asInstanceOf[js.Any])
+    
+    inline def setAutoResizeUndefined: Self = StObject.set(x, "autoResize", js.undefined)
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

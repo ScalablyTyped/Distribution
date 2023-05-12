@@ -53,4 +53,37 @@ object anon {
       inline def setPubKeyUndefined: Self = StObject.set(x, "pubKey", js.undefined)
     }
   }
+  
+  /* Inlined std.Partial<@libp2p/peer-id-factory.@libp2p/peer-id-factory/dist/src/proto.PeerIdProto> */
+  trait PartialPeerIdProto extends StObject {
+    
+    var id: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
+    
+    var privKey: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
+    
+    var pubKey: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
+  }
+  object PartialPeerIdProto {
+    
+    inline def apply(): PartialPeerIdProto = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialPeerIdProto]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPeerIdProto] (val x: Self) extends AnyVal {
+      
+      inline def setId(value: js.typedarray.Uint8Array): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      
+      inline def setPrivKey(value: js.typedarray.Uint8Array): Self = StObject.set(x, "privKey", value.asInstanceOf[js.Any])
+      
+      inline def setPrivKeyUndefined: Self = StObject.set(x, "privKey", js.undefined)
+      
+      inline def setPubKey(value: js.typedarray.Uint8Array): Self = StObject.set(x, "pubKey", value.asInstanceOf[js.Any])
+      
+      inline def setPubKeyUndefined: Self = StObject.set(x, "pubKey", js.undefined)
+    }
+  }
 }

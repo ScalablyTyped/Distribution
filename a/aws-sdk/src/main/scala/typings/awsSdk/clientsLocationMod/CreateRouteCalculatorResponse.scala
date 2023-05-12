@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateRouteCalculatorResponse extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) for the route calculator resource. Use the ARN when you specify a resource across all AWS.   Format example: arn:aws:geo:region:account-id:route-calculator/ExampleCalculator   
+    * The Amazon Resource Name (ARN) for the route calculator resource. Use the ARN when you specify a resource across all Amazon Web Services.   Format example: arn:aws:geo:region:account-id:route-calculator/ExampleCalculator   
     */
   var CalculatorArn: Arn
   

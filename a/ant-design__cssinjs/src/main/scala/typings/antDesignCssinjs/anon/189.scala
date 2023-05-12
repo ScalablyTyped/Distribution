@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.OverflowInline
+import typings.csstype.mod.Property.ScrollSnapStop
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `189` extends StObject {
   
   var value: js.UndefOr[
-    OverflowInline | (js.Array[
+    ScrollSnapStop | (js.Array[
       (Extract[
-        js.UndefOr[OverflowInline | js.Array[NonNullable[js.UndefOr[OverflowInline]]]], 
+        js.UndefOr[ScrollSnapStop | js.Array[NonNullable[js.UndefOr[ScrollSnapStop]]]], 
         String
-      ]) | NonNullable[js.UndefOr[OverflowInline]]
+      ]) | NonNullable[js.UndefOr[ScrollSnapStop]]
     ])
   ] = js.native
 }

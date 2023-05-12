@@ -14,8 +14,8 @@ object FileChangeType extends StObject {
   def apply(value: Double): js.UndefOr[FileChangeType & Double] = js.native
   
   /**
-    * The contents or metadata of a file have changed.
-    */
+  		 * The contents or metadata of a file have changed.
+  		 */
   @js.native
   sealed trait Changed
     extends StObject
@@ -23,8 +23,8 @@ object FileChangeType extends StObject {
   /* 1 */ val Changed: typings.vscode.mod.FileChangeType.Changed & Double = js.native
   
   /**
-    * A file has been created.
-    */
+  		 * A file has been created.
+  		 */
   @js.native
   sealed trait Created
     extends StObject
@@ -32,8 +32,8 @@ object FileChangeType extends StObject {
   /* 2 */ val Created: typings.vscode.mod.FileChangeType.Created & Double = js.native
   
   /**
-    * A file has been deleted.
-    */
+  		 * A file has been deleted.
+  		 */
   @js.native
   sealed trait Deleted
     extends StObject

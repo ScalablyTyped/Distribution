@@ -27,6 +27,7 @@ import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.MsgIdFn
 import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.MsgIdStr
 import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.MsgIdToStrFn
 import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.PeerIdStr
+import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.PublishOpts
 import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.TopicStr
 import typings.libp2pInterfaceConnectionManager.mod.ConnectionManager
 import typings.libp2pInterfacePeerId.mod.PeerId
@@ -35,9 +36,11 @@ import typings.libp2pInterfacePubsub.mod.Message
 import typings.libp2pInterfacePubsub.mod.PubSub
 import typings.libp2pInterfacePubsub.mod.PubSubEvents
 import typings.libp2pInterfacePubsub.mod.PubSubInit
+import typings.libp2pInterfacePubsub.mod.PublishResult
 import typings.libp2pInterfacePubsub.mod.SubscriptionChangeData
 import typings.libp2pInterfacePubsub.mod.TopicValidatorResult
 import typings.libp2pInterfaceRegistrar.mod.Registrar
+import typings.libp2pLogger.mod.Logger_
 import typings.std.CustomEvent
 import typings.std.Map
 import typings.std.Set
@@ -238,6 +241,12 @@ object mod {
     /* private */ var handleIWant: Any = js.native
     
     /**
+      * Handle error when read stream pipe throws, less of the functional use but more
+      * to for testing purposes to spy on the error handling
+      * */
+    /* private */ var handlePeerReadStreamError: Any = js.native
+    
+    /**
       * Handles Prune messages
       */
     /* private */ var handlePrune: Any = js.native
@@ -286,7 +295,15 @@ object mod {
       */
     /* private */ var leave: Any = js.native
     
-    /* private */ val log: Any = js.native
+    /**
+      * Make this protected so child class may want to redirect to its own log.
+      */
+    /* protected */ def log(formatter: Any, args: Any*): Unit = js.native
+    /**
+      * Make this protected so child class may want to redirect to its own log.
+      */
+    /* protected */ @JSName("log")
+    val log_Original: Logger_ = js.native
     
     /**
       * Make a PRUNE control message for a peer in a topic
@@ -359,6 +376,8 @@ object mod {
       * Responsible for processing each RPC message received by other peers.
       */
     /* private */ var pipePeerReadStream: Any = js.native
+    
+    def publish(topic: TopicStr, data: js.typedarray.Uint8Array, opts: PublishOpts): js.Promise[PublishResult] = js.native
     
     /* private */ var publishConfig: Any = js.native
     
@@ -532,6 +551,7 @@ object mod {
       floodPublish: Boolean,
       gossipsubIWantFollowupMs: Double,
       heartbeatInterval: Double,
+      ignoreDuplicatePublishError: Boolean,
       mcacheGossip: Double,
       mcacheLength: Double,
       messageCache: MessageCache,
@@ -541,7 +561,7 @@ object mod {
       scoreThresholds: PeerScoreThresholds,
       seenTTL: Double
     ): GossipOptions = {
-      val __obj = js.Dynamic.literal(D = D.asInstanceOf[js.Any], Dhi = Dhi.asInstanceOf[js.Any], Dlazy = Dlazy.asInstanceOf[js.Any], Dlo = Dlo.asInstanceOf[js.Any], Dout = Dout.asInstanceOf[js.Any], Dscore = Dscore.asInstanceOf[js.Any], allowPublishToZeroPeers = allowPublishToZeroPeers.asInstanceOf[js.Any], asyncValidation = asyncValidation.asInstanceOf[js.Any], awaitRpcHandler = awaitRpcHandler.asInstanceOf[js.Any], awaitRpcMessageHandler = awaitRpcMessageHandler.asInstanceOf[js.Any], directPeers = directPeers.asInstanceOf[js.Any], doPX = doPX.asInstanceOf[js.Any], fallbackToFloodsub = fallbackToFloodsub.asInstanceOf[js.Any], fanoutTTL = fanoutTTL.asInstanceOf[js.Any], fastMsgIdFn = js.Any.fromFunction1(fastMsgIdFn), floodPublish = floodPublish.asInstanceOf[js.Any], gossipsubIWantFollowupMs = gossipsubIWantFollowupMs.asInstanceOf[js.Any], heartbeatInterval = heartbeatInterval.asInstanceOf[js.Any], mcacheGossip = mcacheGossip.asInstanceOf[js.Any], mcacheLength = mcacheLength.asInstanceOf[js.Any], messageCache = messageCache.asInstanceOf[js.Any], msgIdFn = js.Any.fromFunction1(msgIdFn), msgIdToStrFn = js.Any.fromFunction1(msgIdToStrFn), scoreParams = scoreParams.asInstanceOf[js.Any], scoreThresholds = scoreThresholds.asInstanceOf[js.Any], seenTTL = seenTTL.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(D = D.asInstanceOf[js.Any], Dhi = Dhi.asInstanceOf[js.Any], Dlazy = Dlazy.asInstanceOf[js.Any], Dlo = Dlo.asInstanceOf[js.Any], Dout = Dout.asInstanceOf[js.Any], Dscore = Dscore.asInstanceOf[js.Any], allowPublishToZeroPeers = allowPublishToZeroPeers.asInstanceOf[js.Any], asyncValidation = asyncValidation.asInstanceOf[js.Any], awaitRpcHandler = awaitRpcHandler.asInstanceOf[js.Any], awaitRpcMessageHandler = awaitRpcMessageHandler.asInstanceOf[js.Any], directPeers = directPeers.asInstanceOf[js.Any], doPX = doPX.asInstanceOf[js.Any], fallbackToFloodsub = fallbackToFloodsub.asInstanceOf[js.Any], fanoutTTL = fanoutTTL.asInstanceOf[js.Any], fastMsgIdFn = js.Any.fromFunction1(fastMsgIdFn), floodPublish = floodPublish.asInstanceOf[js.Any], gossipsubIWantFollowupMs = gossipsubIWantFollowupMs.asInstanceOf[js.Any], heartbeatInterval = heartbeatInterval.asInstanceOf[js.Any], ignoreDuplicatePublishError = ignoreDuplicatePublishError.asInstanceOf[js.Any], mcacheGossip = mcacheGossip.asInstanceOf[js.Any], mcacheLength = mcacheLength.asInstanceOf[js.Any], messageCache = messageCache.asInstanceOf[js.Any], msgIdFn = js.Any.fromFunction1(msgIdFn), msgIdToStrFn = js.Any.fromFunction1(msgIdToStrFn), scoreParams = scoreParams.asInstanceOf[js.Any], scoreThresholds = scoreThresholds.asInstanceOf[js.Any], seenTTL = seenTTL.asInstanceOf[js.Any])
       __obj.asInstanceOf[GossipOptions]
     }
     
@@ -705,6 +725,16 @@ object mod {
     
     var graftFloodThreshold: js.UndefOr[Double] = js.undefined
     
+    /** Do not throw `PublishError.Duplicate` if publishing duplicate messages */
+    var ignoreDuplicatePublishError: Boolean
+    
+    /**
+      * Specify max size to skip decoding messages whose data
+      * section exceeds this size.
+      *
+      */
+    var maxInboundDataLength: js.UndefOr[Double] = js.undefined
+    
     /**
       * Specify max buffer size in bytes for OutboundStream.
       * If full it will throw and reject sending any more data.
@@ -766,6 +796,7 @@ object mod {
       floodPublish: Boolean,
       gossipsubIWantFollowupMs: Double,
       heartbeatInterval: Double,
+      ignoreDuplicatePublishError: Boolean,
       mcacheGossip: Double,
       mcacheLength: Double,
       messageCache: MessageCache,
@@ -775,7 +806,7 @@ object mod {
       scoreThresholds: PartialPeerScoreThreshold,
       seenTTL: Double
     ): GossipsubOpts = {
-      val __obj = js.Dynamic.literal(D = D.asInstanceOf[js.Any], Dhi = Dhi.asInstanceOf[js.Any], Dlazy = Dlazy.asInstanceOf[js.Any], Dlo = Dlo.asInstanceOf[js.Any], Dout = Dout.asInstanceOf[js.Any], Dscore = Dscore.asInstanceOf[js.Any], allowPublishToZeroPeers = allowPublishToZeroPeers.asInstanceOf[js.Any], asyncValidation = asyncValidation.asInstanceOf[js.Any], awaitRpcHandler = awaitRpcHandler.asInstanceOf[js.Any], awaitRpcMessageHandler = awaitRpcMessageHandler.asInstanceOf[js.Any], directPeers = directPeers.asInstanceOf[js.Any], doPX = doPX.asInstanceOf[js.Any], fallbackToFloodsub = fallbackToFloodsub.asInstanceOf[js.Any], fanoutTTL = fanoutTTL.asInstanceOf[js.Any], fastMsgIdFn = js.Any.fromFunction1(fastMsgIdFn), floodPublish = floodPublish.asInstanceOf[js.Any], gossipsubIWantFollowupMs = gossipsubIWantFollowupMs.asInstanceOf[js.Any], heartbeatInterval = heartbeatInterval.asInstanceOf[js.Any], mcacheGossip = mcacheGossip.asInstanceOf[js.Any], mcacheLength = mcacheLength.asInstanceOf[js.Any], messageCache = messageCache.asInstanceOf[js.Any], msgIdFn = js.Any.fromFunction1(msgIdFn), msgIdToStrFn = js.Any.fromFunction1(msgIdToStrFn), scoreParams = scoreParams.asInstanceOf[js.Any], scoreThresholds = scoreThresholds.asInstanceOf[js.Any], seenTTL = seenTTL.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(D = D.asInstanceOf[js.Any], Dhi = Dhi.asInstanceOf[js.Any], Dlazy = Dlazy.asInstanceOf[js.Any], Dlo = Dlo.asInstanceOf[js.Any], Dout = Dout.asInstanceOf[js.Any], Dscore = Dscore.asInstanceOf[js.Any], allowPublishToZeroPeers = allowPublishToZeroPeers.asInstanceOf[js.Any], asyncValidation = asyncValidation.asInstanceOf[js.Any], awaitRpcHandler = awaitRpcHandler.asInstanceOf[js.Any], awaitRpcMessageHandler = awaitRpcMessageHandler.asInstanceOf[js.Any], directPeers = directPeers.asInstanceOf[js.Any], doPX = doPX.asInstanceOf[js.Any], fallbackToFloodsub = fallbackToFloodsub.asInstanceOf[js.Any], fanoutTTL = fanoutTTL.asInstanceOf[js.Any], fastMsgIdFn = js.Any.fromFunction1(fastMsgIdFn), floodPublish = floodPublish.asInstanceOf[js.Any], gossipsubIWantFollowupMs = gossipsubIWantFollowupMs.asInstanceOf[js.Any], heartbeatInterval = heartbeatInterval.asInstanceOf[js.Any], ignoreDuplicatePublishError = ignoreDuplicatePublishError.asInstanceOf[js.Any], mcacheGossip = mcacheGossip.asInstanceOf[js.Any], mcacheLength = mcacheLength.asInstanceOf[js.Any], messageCache = messageCache.asInstanceOf[js.Any], msgIdFn = js.Any.fromFunction1(msgIdFn), msgIdToStrFn = js.Any.fromFunction1(msgIdToStrFn), scoreParams = scoreParams.asInstanceOf[js.Any], scoreThresholds = scoreThresholds.asInstanceOf[js.Any], seenTTL = seenTTL.asInstanceOf[js.Any])
       __obj.asInstanceOf[GossipsubOpts]
     }
     
@@ -829,6 +860,12 @@ object mod {
       inline def setGraftFloodThreshold(value: Double): Self = StObject.set(x, "graftFloodThreshold", value.asInstanceOf[js.Any])
       
       inline def setGraftFloodThresholdUndefined: Self = StObject.set(x, "graftFloodThreshold", js.undefined)
+      
+      inline def setIgnoreDuplicatePublishError(value: Boolean): Self = StObject.set(x, "ignoreDuplicatePublishError", value.asInstanceOf[js.Any])
+      
+      inline def setMaxInboundDataLength(value: Double): Self = StObject.set(x, "maxInboundDataLength", value.asInstanceOf[js.Any])
+      
+      inline def setMaxInboundDataLengthUndefined: Self = StObject.set(x, "maxInboundDataLength", js.undefined)
       
       inline def setMaxOutboundBufferSize(value: Double): Self = StObject.set(x, "maxOutboundBufferSize", value.asInstanceOf[js.Any])
       

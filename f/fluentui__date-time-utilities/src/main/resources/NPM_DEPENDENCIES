@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@fluentui/date-time-utilities" : "8.5.2"
+      "@fluentui/date-time-utilities" : "8.5.10"
     }
   ],
   "test-dependencies" : [
     {
-      "@fluentui/date-time-utilities" : "8.5.2"
+      "@fluentui/date-time-utilities" : "8.5.10"
     }
   ],
   "compile-devDependencies" : [

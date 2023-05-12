@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "sdk-base" : "3.6.0"
+      "sdk-base" : "4.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "sdk-base" : "3.6.0"
+      "sdk-base" : "4.2.1"
     }
   ],
   "compile-devDependencies" : [

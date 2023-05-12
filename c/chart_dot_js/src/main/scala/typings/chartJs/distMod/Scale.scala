@@ -1,0 +1,12 @@
+package typings.chartJs.distMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("chart.js/dist", "Scale")
+@js.native
+open class Scale protected ()
+  extends typings.chartJs.distCoreMod.Scale {
+  def this(cfg: Any) = this()
+}

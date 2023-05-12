@@ -289,6 +289,7 @@ object sapMTreeMod {
     
     /**
       * @SINCE 1.50
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:toggleOpenState toggleOpenState} to attached listeners.
       *

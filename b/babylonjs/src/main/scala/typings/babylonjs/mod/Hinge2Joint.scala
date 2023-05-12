@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.physicsPhysicsJointMod.PhysicsJointData
+import typings.babylonjs.physicsV1PhysicsJointMod.PhysicsJointData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

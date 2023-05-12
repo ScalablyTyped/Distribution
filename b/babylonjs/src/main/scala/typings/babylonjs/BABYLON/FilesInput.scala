@@ -51,6 +51,8 @@ trait FilesInput extends StObject {
   
   /* private */ var _traverseFolder: Any = js.native
   
+  var displyLoadingUI: Boolean = js.native
+  
   /**
     * Release all associated resources
     */
@@ -92,4 +94,6 @@ trait FilesInput extends StObject {
     * Reload the current scene from the loaded files
     */
   def reload(): Unit = js.native
+  
+  val useAppend: Boolean = js.native
 }

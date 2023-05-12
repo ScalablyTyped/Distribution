@@ -1,5 +1,15 @@
 package typings.std
 
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
+import typings.std.stdInts.`4`
+import typings.std.stdInts.`5`
+import typings.std.stdInts.`6`
+import typings.std.stdInts.`7`
+import typings.std.stdInts.`8`
+import typings.std.stdInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,34 +18,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XPathResult extends StObject {
   
   /* standard dom */
-  val ANY_TYPE: Double
+  val ANY_TYPE: `0`
   
   /* standard dom */
-  val ANY_UNORDERED_NODE_TYPE: Double
+  val ANY_UNORDERED_NODE_TYPE: `8`
   
   /* standard dom */
-  val BOOLEAN_TYPE: Double
+  val BOOLEAN_TYPE: `3`
   
   /* standard dom */
-  val FIRST_ORDERED_NODE_TYPE: Double
+  val FIRST_ORDERED_NODE_TYPE: `9`
   
   /* standard dom */
-  val NUMBER_TYPE: Double
+  val NUMBER_TYPE: `1`
   
   /* standard dom */
-  val ORDERED_NODE_ITERATOR_TYPE: Double
+  val ORDERED_NODE_ITERATOR_TYPE: `5`
   
   /* standard dom */
-  val ORDERED_NODE_SNAPSHOT_TYPE: Double
+  val ORDERED_NODE_SNAPSHOT_TYPE: `7`
   
   /* standard dom */
-  val STRING_TYPE: Double
+  val STRING_TYPE: `2`
   
   /* standard dom */
-  val UNORDERED_NODE_ITERATOR_TYPE: Double
+  val UNORDERED_NODE_ITERATOR_TYPE: `4`
   
   /* standard dom */
-  val UNORDERED_NODE_SNAPSHOT_TYPE: Double
+  val UNORDERED_NODE_SNAPSHOT_TYPE: `6`
   
   /* standard dom */
   val booleanValue: scala.Boolean
@@ -67,16 +77,6 @@ trait XPathResult extends StObject {
 object XPathResult {
   
   inline def apply(
-    ANY_TYPE: Double,
-    ANY_UNORDERED_NODE_TYPE: Double,
-    BOOLEAN_TYPE: Double,
-    FIRST_ORDERED_NODE_TYPE: Double,
-    NUMBER_TYPE: Double,
-    ORDERED_NODE_ITERATOR_TYPE: Double,
-    ORDERED_NODE_SNAPSHOT_TYPE: Double,
-    STRING_TYPE: Double,
-    UNORDERED_NODE_ITERATOR_TYPE: Double,
-    UNORDERED_NODE_SNAPSHOT_TYPE: Double,
     booleanValue: scala.Boolean,
     invalidIteratorState: scala.Boolean,
     iterateNext: () => Node | Null,
@@ -86,38 +86,38 @@ object XPathResult {
     snapshotLength: Double,
     stringValue: java.lang.String
   ): XPathResult = {
-    val __obj = js.Dynamic.literal(ANY_TYPE = ANY_TYPE.asInstanceOf[js.Any], ANY_UNORDERED_NODE_TYPE = ANY_UNORDERED_NODE_TYPE.asInstanceOf[js.Any], BOOLEAN_TYPE = BOOLEAN_TYPE.asInstanceOf[js.Any], FIRST_ORDERED_NODE_TYPE = FIRST_ORDERED_NODE_TYPE.asInstanceOf[js.Any], NUMBER_TYPE = NUMBER_TYPE.asInstanceOf[js.Any], ORDERED_NODE_ITERATOR_TYPE = ORDERED_NODE_ITERATOR_TYPE.asInstanceOf[js.Any], ORDERED_NODE_SNAPSHOT_TYPE = ORDERED_NODE_SNAPSHOT_TYPE.asInstanceOf[js.Any], STRING_TYPE = STRING_TYPE.asInstanceOf[js.Any], UNORDERED_NODE_ITERATOR_TYPE = UNORDERED_NODE_ITERATOR_TYPE.asInstanceOf[js.Any], UNORDERED_NODE_SNAPSHOT_TYPE = UNORDERED_NODE_SNAPSHOT_TYPE.asInstanceOf[js.Any], booleanValue = booleanValue.asInstanceOf[js.Any], invalidIteratorState = invalidIteratorState.asInstanceOf[js.Any], iterateNext = js.Any.fromFunction0(iterateNext), numberValue = numberValue.asInstanceOf[js.Any], resultType = resultType.asInstanceOf[js.Any], snapshotItem = js.Any.fromFunction1(snapshotItem), snapshotLength = snapshotLength.asInstanceOf[js.Any], stringValue = stringValue.asInstanceOf[js.Any], singleNodeValue = null)
+    val __obj = js.Dynamic.literal(ANY_TYPE = 0, ANY_UNORDERED_NODE_TYPE = 8, BOOLEAN_TYPE = 3, FIRST_ORDERED_NODE_TYPE = 9, NUMBER_TYPE = 1, ORDERED_NODE_ITERATOR_TYPE = 5, ORDERED_NODE_SNAPSHOT_TYPE = 7, STRING_TYPE = 2, UNORDERED_NODE_ITERATOR_TYPE = 4, UNORDERED_NODE_SNAPSHOT_TYPE = 6, booleanValue = booleanValue.asInstanceOf[js.Any], invalidIteratorState = invalidIteratorState.asInstanceOf[js.Any], iterateNext = js.Any.fromFunction0(iterateNext), numberValue = numberValue.asInstanceOf[js.Any], resultType = resultType.asInstanceOf[js.Any], snapshotItem = js.Any.fromFunction1(snapshotItem), snapshotLength = snapshotLength.asInstanceOf[js.Any], stringValue = stringValue.asInstanceOf[js.Any], singleNodeValue = null)
     __obj.asInstanceOf[XPathResult]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: XPathResult] (val x: Self) extends AnyVal {
     
-    inline def setANY_TYPE(value: Double): Self = StObject.set(x, "ANY_TYPE", value.asInstanceOf[js.Any])
+    inline def setANY_TYPE(value: `0`): Self = StObject.set(x, "ANY_TYPE", value.asInstanceOf[js.Any])
     
-    inline def setANY_UNORDERED_NODE_TYPE(value: Double): Self = StObject.set(x, "ANY_UNORDERED_NODE_TYPE", value.asInstanceOf[js.Any])
+    inline def setANY_UNORDERED_NODE_TYPE(value: `8`): Self = StObject.set(x, "ANY_UNORDERED_NODE_TYPE", value.asInstanceOf[js.Any])
     
-    inline def setBOOLEAN_TYPE(value: Double): Self = StObject.set(x, "BOOLEAN_TYPE", value.asInstanceOf[js.Any])
+    inline def setBOOLEAN_TYPE(value: `3`): Self = StObject.set(x, "BOOLEAN_TYPE", value.asInstanceOf[js.Any])
     
     inline def setBooleanValue(value: scala.Boolean): Self = StObject.set(x, "booleanValue", value.asInstanceOf[js.Any])
     
-    inline def setFIRST_ORDERED_NODE_TYPE(value: Double): Self = StObject.set(x, "FIRST_ORDERED_NODE_TYPE", value.asInstanceOf[js.Any])
+    inline def setFIRST_ORDERED_NODE_TYPE(value: `9`): Self = StObject.set(x, "FIRST_ORDERED_NODE_TYPE", value.asInstanceOf[js.Any])
     
     inline def setInvalidIteratorState(value: scala.Boolean): Self = StObject.set(x, "invalidIteratorState", value.asInstanceOf[js.Any])
     
     inline def setIterateNext(value: () => Node | Null): Self = StObject.set(x, "iterateNext", js.Any.fromFunction0(value))
     
-    inline def setNUMBER_TYPE(value: Double): Self = StObject.set(x, "NUMBER_TYPE", value.asInstanceOf[js.Any])
+    inline def setNUMBER_TYPE(value: `1`): Self = StObject.set(x, "NUMBER_TYPE", value.asInstanceOf[js.Any])
     
     inline def setNumberValue(value: Double): Self = StObject.set(x, "numberValue", value.asInstanceOf[js.Any])
     
-    inline def setORDERED_NODE_ITERATOR_TYPE(value: Double): Self = StObject.set(x, "ORDERED_NODE_ITERATOR_TYPE", value.asInstanceOf[js.Any])
+    inline def setORDERED_NODE_ITERATOR_TYPE(value: `5`): Self = StObject.set(x, "ORDERED_NODE_ITERATOR_TYPE", value.asInstanceOf[js.Any])
     
-    inline def setORDERED_NODE_SNAPSHOT_TYPE(value: Double): Self = StObject.set(x, "ORDERED_NODE_SNAPSHOT_TYPE", value.asInstanceOf[js.Any])
+    inline def setORDERED_NODE_SNAPSHOT_TYPE(value: `7`): Self = StObject.set(x, "ORDERED_NODE_SNAPSHOT_TYPE", value.asInstanceOf[js.Any])
     
     inline def setResultType(value: Double): Self = StObject.set(x, "resultType", value.asInstanceOf[js.Any])
     
-    inline def setSTRING_TYPE(value: Double): Self = StObject.set(x, "STRING_TYPE", value.asInstanceOf[js.Any])
+    inline def setSTRING_TYPE(value: `2`): Self = StObject.set(x, "STRING_TYPE", value.asInstanceOf[js.Any])
     
     inline def setSingleNodeValue(value: Node): Self = StObject.set(x, "singleNodeValue", value.asInstanceOf[js.Any])
     
@@ -129,8 +129,8 @@ object XPathResult {
     
     inline def setStringValue(value: java.lang.String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
     
-    inline def setUNORDERED_NODE_ITERATOR_TYPE(value: Double): Self = StObject.set(x, "UNORDERED_NODE_ITERATOR_TYPE", value.asInstanceOf[js.Any])
+    inline def setUNORDERED_NODE_ITERATOR_TYPE(value: `4`): Self = StObject.set(x, "UNORDERED_NODE_ITERATOR_TYPE", value.asInstanceOf[js.Any])
     
-    inline def setUNORDERED_NODE_SNAPSHOT_TYPE(value: Double): Self = StObject.set(x, "UNORDERED_NODE_SNAPSHOT_TYPE", value.asInstanceOf[js.Any])
+    inline def setUNORDERED_NODE_SNAPSHOT_TYPE(value: `6`): Self = StObject.set(x, "UNORDERED_NODE_SNAPSHOT_TYPE", value.asInstanceOf[js.Any])
   }
 }

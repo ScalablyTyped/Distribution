@@ -2,6 +2,7 @@ package typings.cypress
 
 import org.scalablytyped.runtime.Shortcut
 import typings.cypress.Cypress.ConfigOptions
+import typings.cypress.Cypress.ThirdPartyComponentFrameworkDefinition
 import typings.cypress.CypressCommandLine.CypressCliParser
 import typings.cypress.CypressCommandLine.CypressFailedRunResult
 import typings.cypress.CypressCommandLine.CypressRunResult
@@ -34,6 +35,21 @@ object mod extends Shortcut {
       * Cypress does
       */
     var cli: CypressCliParser = js.native
+    
+    /**
+      * Provides automatic code completion for Component Frameworks Definitions.
+      * While it's not strictly necessary for Cypress to parse your configuration, we
+      * recommend wrapping your Component Framework Definition object with `defineComponentFramework()`
+      * @example
+      * module.exports = defineComponentFramework({
+      *   type: 'cypress-ct-solid-js'
+      * })
+      *
+      * @see ../types/cypress-npm-api.d.ts
+      * @param {Cypress.ThirdPartyComponentFrameworkDefinition} config
+      * @returns {Cypress.ThirdPartyComponentFrameworkDefinition} the configuration passed in parameter
+      */
+    def defineComponentFramework(config: ThirdPartyComponentFrameworkDefinition): ThirdPartyComponentFrameworkDefinition = js.native
     
     /**
       * Provides automatic code completion for configuration in many popular code editors.

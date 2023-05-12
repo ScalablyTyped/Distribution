@@ -1,6 +1,7 @@
 package typings.three
 
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.Camera
@@ -23,7 +24,7 @@ object examplesJsmInteractiveSelectionBoxMod {
     
     var camera: Camera = js.native
     
-    var collection: js.Array[Mesh[BufferGeometry, Material | js.Array[Material]]] = js.native
+    var collection: js.Array[Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]] = js.native
     
     var deep: Double = js.native
     
@@ -33,10 +34,10 @@ object examplesJsmInteractiveSelectionBoxMod {
     
     def searchChildInFrustum(frustum: Frustum, `object`: Object3D[Event]): Unit = js.native
     
-    def select(): js.Array[Mesh[BufferGeometry, Material | js.Array[Material]]] = js.native
-    def select(startPoint: Unit, endPoint: Vector3): js.Array[Mesh[BufferGeometry, Material | js.Array[Material]]] = js.native
-    def select(startPoint: Vector3): js.Array[Mesh[BufferGeometry, Material | js.Array[Material]]] = js.native
-    def select(startPoint: Vector3, endPoint: Vector3): js.Array[Mesh[BufferGeometry, Material | js.Array[Material]]] = js.native
+    def select(): js.Array[Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]] = js.native
+    def select(startPoint: Unit, endPoint: Vector3): js.Array[Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]] = js.native
+    def select(startPoint: Vector3): js.Array[Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]] = js.native
+    def select(startPoint: Vector3, endPoint: Vector3): js.Array[Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]] = js.native
     
     var startPoint: Vector3 = js.native
     

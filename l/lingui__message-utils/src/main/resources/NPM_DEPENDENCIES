@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@lingui/message-utils" : "4.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@lingui/message-utils" : "4.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

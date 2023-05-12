@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NotebookEditorSelectionChangeEvent extends StObject {
   
   /**
-    * The {@link NotebookEditor notebook editor} for which the selections have changed.
-    */
+  		 * The {@link NotebookEditor notebook editor} for which the selections have changed.
+  		 */
   val notebookEditor: NotebookEditor
   
   /**
-    * The new value for the {@link NotebookEditor.selections notebook editor's selections}.
-    */
+  		 * The new value for the {@link NotebookEditor.selections notebook editor's selections}.
+  		 */
   val selections: js.Array[NotebookRange]
 }
 object NotebookEditorSelectionChangeEvent {

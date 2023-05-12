@@ -18,6 +18,26 @@ object libEsmCommonClassesMod {
   @js.native
   val TABLE_BODY_CELLS: String = js.native
   
+  @JSImport("@blueprintjs/table/lib/esm/common/classes", "TABLE_BODY_IS_SCROLLING_BOTTOM")
+  @js.native
+  val TABLE_BODY_IS_SCROLLING_BOTTOM: String = js.native
+  
+  @JSImport("@blueprintjs/table/lib/esm/common/classes", "TABLE_BODY_IS_SCROLLING_LEFT")
+  @js.native
+  val TABLE_BODY_IS_SCROLLING_LEFT: String = js.native
+  
+  @JSImport("@blueprintjs/table/lib/esm/common/classes", "TABLE_BODY_IS_SCROLLING_RIGHT")
+  @js.native
+  val TABLE_BODY_IS_SCROLLING_RIGHT: String = js.native
+  
+  @JSImport("@blueprintjs/table/lib/esm/common/classes", "TABLE_BODY_IS_SCROLLING_TOP")
+  @js.native
+  val TABLE_BODY_IS_SCROLLING_TOP: String = js.native
+  
+  @JSImport("@blueprintjs/table/lib/esm/common/classes", "TABLE_BODY_SCROLLING_INDICATOR_OVERLAY")
+  @js.native
+  val TABLE_BODY_SCROLLING_INDICATOR_OVERLAY: String = js.native
+  
   @JSImport("@blueprintjs/table/lib/esm/common/classes", "TABLE_BODY_SCROLL_CLIENT")
   @js.native
   val TABLE_BODY_SCROLL_CLIENT: String = js.native
@@ -321,6 +341,10 @@ object libEsmCommonClassesMod {
   @JSImport("@blueprintjs/table/lib/esm/common/classes", "TABLE_TH_MENU_OPEN")
   @js.native
   val TABLE_TH_MENU_OPEN: String = js.native
+  
+  @JSImport("@blueprintjs/table/lib/esm/common/classes", "TABLE_TH_MENU_SELECT_CELLS")
+  @js.native
+  val TABLE_TH_MENU_SELECT_CELLS: String = js.native
   
   @JSImport("@blueprintjs/table/lib/esm/common/classes", "TABLE_TOP_CONTAINER")
   @js.native

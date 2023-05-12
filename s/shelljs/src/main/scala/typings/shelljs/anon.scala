@@ -68,7 +68,7 @@ object anon {
     var uid: js.UndefOr[Double] = js.undefined
     
     /**
-      * @default true
+      * @default false
       */
     var windowsHide: js.UndefOr[Boolean] = js.undefined
   }
@@ -198,7 +198,7 @@ object anon {
     var uid: js.UndefOr[Double] = js.undefined
     
     /**
-      * @default true
+      * @default false
       */
     var windowsHide: js.UndefOr[Boolean] = js.undefined
   }

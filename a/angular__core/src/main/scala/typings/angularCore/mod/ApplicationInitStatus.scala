@@ -1,14 +1,12 @@
 package typings.angularCore.mod
 
-import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "ApplicationInitStatus")
 @js.native
-open class ApplicationInitStatus protected () extends StObject {
-  def this(appInits: js.Array[js.Function0[Observable_[Any] | js.Promise[Any] | Unit]]) = this()
+open class ApplicationInitStatus () extends StObject {
   
   /* private */ val appInits: Any = js.native
   
@@ -31,8 +29,8 @@ object ApplicationInitStatus {
   
   @JSImport("@angular/core", "ApplicationInitStatus.\u0275fac")
   @js.native
-  def ɵfac: ɵɵFactoryDeclaration[ApplicationInitStatus, js.Array[typings.angularCore.anon.Optional]] = js.native
-  inline def ɵfac_=(x: ɵɵFactoryDeclaration[ApplicationInitStatus, js.Array[typings.angularCore.anon.Optional]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+  def ɵfac: ɵɵFactoryDeclaration[ApplicationInitStatus, scala.Nothing] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[ApplicationInitStatus, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
   
   @JSImport("@angular/core", "ApplicationInitStatus.\u0275prov")
   @js.native

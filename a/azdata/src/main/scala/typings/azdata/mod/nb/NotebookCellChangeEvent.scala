@@ -7,18 +7,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NotebookCellChangeEvent extends StObject {
   
   /**
-    * The new value for the [notebook document's cells](#NotebookDocument.cells).
+    * The new value for the {@link NotebookDocument.cells}.
     */
   var cells: js.Array[NotebookCell]
   
   /**
-    * The [change kind](#NotebookChangeKind) which has triggered this
+    * The {@link NotebookChangeKind} which has triggered this
     * event. Can be `undefined`.
     */
   var kind: js.UndefOr[NotebookChangeKind] = js.undefined
   
   /**
-    * The [notebook document](#NotebookDocument) for which the selections have changed.
+    * The {@link NotebookDocument} for which the selections have changed.
     */
   var notebook: NotebookDocument
 }

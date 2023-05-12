@@ -10,24 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Typeofalarms extends StObject {
   
-  def clear(): Unit = js.native
+  def clear(): js.Promise[Boolean] = js.native
   def clear(callback: js.Function1[/* wasCleared */ Boolean, Unit]): Unit = js.native
-  def clear(name: String): Unit = js.native
+  def clear(name: String): js.Promise[Boolean] = js.native
   def clear(name: String, callback: js.Function1[/* wasCleared */ Boolean, Unit]): Unit = js.native
-  def clear(name: Unit, callback: js.Function1[/* wasCleared */ Boolean, Unit]): Unit = js.native
   
-  def clearAll(): Unit = js.native
+  def clearAll(): js.Promise[Boolean] = js.native
   def clearAll(callback: js.Function1[/* wasCleared */ Boolean, Unit]): Unit = js.native
-  @JSName("clearAll")
-  def clearAll_Promise(): js.Promise[Boolean] = js.native
   
-  @JSName("clear")
-  def clear_Promise(): js.Promise[Boolean] = js.native
-  @JSName("clear")
-  def clear_Promise(name: String): js.Promise[Boolean] = js.native
-  
-  def create(alarmInfo: AlarmCreateInfo): Unit = js.native
-  def create(name: String, alarmInfo: AlarmCreateInfo): Unit = js.native
+  def create(alarmInfo: AlarmCreateInfo): js.Promise[Unit] = js.native
+  def create(alarmInfo: AlarmCreateInfo, callback: js.Function0[Unit]): Unit = js.native
+  def create(name: String, alarmInfo: AlarmCreateInfo): js.Promise[Unit] = js.native
+  def create(name: String, alarmInfo: AlarmCreateInfo, callback: js.Function0[Unit]): Unit = js.native
   
   def get(): js.Promise[Alarm] = js.native
   def get(callback: js.Function1[/* alarm */ Alarm, Unit]): Unit = js.native

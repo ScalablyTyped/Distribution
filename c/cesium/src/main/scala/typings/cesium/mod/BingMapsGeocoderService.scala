@@ -12,6 +12,12 @@ open class BingMapsGeocoderService protected () extends StObject {
   def this(options: Culture) = this()
   
   /**
+    * Gets the credit to display after a geocode is performed. Typically this is used to credit
+    * the geocoder service.
+    */
+  val credit: js.UndefOr[Credit] = js.native
+  
+  /**
     * @param query - The query to be sent to the geocoder service
     */
   def geocode(query: String): js.Promise[js.Array[Result]] = js.native

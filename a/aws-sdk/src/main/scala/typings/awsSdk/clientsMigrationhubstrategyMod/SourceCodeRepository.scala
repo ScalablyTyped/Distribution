@@ -12,6 +12,11 @@ trait SourceCodeRepository extends StObject {
   var branch: js.UndefOr[String] = js.undefined
   
   /**
+    * The name of the project.
+    */
+  var projectName: js.UndefOr[String] = js.undefined
+  
+  /**
     *  The repository name for the source code. 
     */
   var repository: js.UndefOr[String] = js.undefined
@@ -34,6 +39,10 @@ object SourceCodeRepository {
     inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
     inline def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
+    
+    inline def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
+    
+    inline def setProjectNameUndefined: Self = StObject.set(x, "projectName", js.undefined)
     
     inline def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     

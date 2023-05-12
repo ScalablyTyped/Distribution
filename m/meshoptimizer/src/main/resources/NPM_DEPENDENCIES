@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "meshoptimizer" : "0.18.1"
+      "meshoptimizer" : "0.19.0"
     }
   ],
   "test-dependencies" : [
     {
-      "meshoptimizer" : "0.18.1"
+      "meshoptimizer" : "0.19.0"
     }
   ],
   "compile-devDependencies" : [

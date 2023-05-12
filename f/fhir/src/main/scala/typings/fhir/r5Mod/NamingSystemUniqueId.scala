@@ -1,5 +1,6 @@
 package typings.fhir.r5Mod
 
+import typings.fhir.fhirStrings.`iri-stem`
 import typings.fhir.fhirStrings.oid
 import typings.fhir.fhirStrings.other
 import typings.fhir.fhirStrings.uri
@@ -35,6 +36,7 @@ trait NamingSystemUniqueId
   
   /**
     * Within a registry, a given identifier should only be "active" for a single namespace at a time.  (Ideally, an identifier should only ever be associated with a single namespace across all time).
+    * The nuance of identifier deprecation is not represented with a separate element. When a determination is made that an identifier should not be used, the validity period end date is updated with the date the identifier is deemed to be deprecated. The identifier should no longer be used once the period end date is reached.
     */
   var period: js.UndefOr[Period] = js.undefined
   
@@ -44,9 +46,9 @@ trait NamingSystemUniqueId
   var preferred: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Different identifier types may be used in different types of communications (OIDs for v3, URIs for FHIR, etc.).  Other includes RUIDs from v3, standard v2 code name strings, etc.
+    * Different identifier types may be used in different types of communications (OIDs for v3, URIs for FHIR, etc.).  Other includes RUIDs from v3, standard v2 code name strings, etc. Preferred identifiers for the same identifier type SHOULD NOT overlap by period.
     */
-  var `type`: oid | uuid | uri | v2csmnemonic | other
+  var `type`: oid | uuid | uri | `iri-stem` | v2csmnemonic | other
   
   /**
     * If the value is a URI intended for use as FHIR system identifier, the URI should not contain "\" or "?" or "," since this makes escaping very difficult.
@@ -55,7 +57,7 @@ trait NamingSystemUniqueId
 }
 object NamingSystemUniqueId {
   
-  inline def apply(`type`: oid | uuid | uri | v2csmnemonic | other, value: String): NamingSystemUniqueId = {
+  inline def apply(`type`: oid | uuid | uri | `iri-stem` | v2csmnemonic | other, value: String): NamingSystemUniqueId = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamingSystemUniqueId]
@@ -80,7 +82,7 @@ object NamingSystemUniqueId {
     
     inline def setPreferredUndefined: Self = StObject.set(x, "preferred", js.undefined)
     
-    inline def setType(value: oid | uuid | uri | v2csmnemonic | other): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: oid | uuid | uri | `iri-stem` | v2csmnemonic | other): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

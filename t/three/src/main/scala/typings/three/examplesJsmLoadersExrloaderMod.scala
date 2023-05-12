@@ -2,6 +2,7 @@ package typings.three
 
 import typings.three.srcConstantsMod.PixelFormat
 import typings.three.srcConstantsMod.TextureDataType
+import typings.three.srcConstantsMod.TextureEncoding
 import typings.three.srcThreeMod.DataTextureLoader
 import typings.three.srcThreeMod.LoadingManager
 import org.scalablytyped.runtime.StObject
@@ -24,7 +25,9 @@ object examplesJsmLoadersExrloaderMod {
   
   trait EXR extends StObject {
     
-    var data: js.typedarray.Float32Array
+    var data: js.typedarray.Float32Array | js.typedarray.Uint16Array
+    
+    var encoding: TextureEncoding
     
     var format: PixelFormat
     
@@ -39,14 +42,15 @@ object examplesJsmLoadersExrloaderMod {
   object EXR {
     
     inline def apply(
-      data: js.typedarray.Float32Array,
+      data: js.typedarray.Float32Array | js.typedarray.Uint16Array,
+      encoding: TextureEncoding,
       format: PixelFormat,
       header: js.Object,
       height: Double,
       `type`: TextureDataType,
       width: Double
     ): EXR = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[EXR]
     }
@@ -54,7 +58,9 @@ object examplesJsmLoadersExrloaderMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: EXR] (val x: Self) extends AnyVal {
       
-      inline def setData(value: js.typedarray.Float32Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.typedarray.Float32Array | js.typedarray.Uint16Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setEncoding(value: TextureEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
       inline def setFormat(value: PixelFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

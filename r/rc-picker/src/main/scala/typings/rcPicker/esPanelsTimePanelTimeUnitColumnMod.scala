@@ -1,5 +1,10 @@
 package typings.rcPicker
 
+import typings.rcPicker.anon.CellRender
+import typings.rcPicker.rcPickerStrings.hour
+import typings.rcPicker.rcPickerStrings.meridiem
+import typings.rcPicker.rcPickerStrings.minute
+import typings.rcPicker.rcPickerStrings.second
 import typings.react.mod.ReactText
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
@@ -12,17 +17,21 @@ object esPanelsTimePanelTimeUnitColumnMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(props: TimeUnitColumnProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default[DateType](props: TimeUnitColumnProps[DateType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  trait TimeUnitColumnProps extends StObject {
+  trait TimeUnitColumnProps[DateType] extends StObject {
     
     var active: js.UndefOr[Boolean] = js.undefined
     
     var hideDisabledOptions: js.UndefOr[Boolean] = js.undefined
     
+    var info: CellRender[DateType]
+    
     var onSelect: js.UndefOr[js.Function1[/* value */ Double, scala.Unit]] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
+    
+    var `type`: hour | minute | second | meridiem
     
     var units: js.UndefOr[js.Array[Unit]] = js.undefined
     
@@ -30,13 +39,14 @@ object esPanelsTimePanelTimeUnitColumnMod {
   }
   object TimeUnitColumnProps {
     
-    inline def apply(): TimeUnitColumnProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[TimeUnitColumnProps]
+    inline def apply[DateType](info: CellRender[DateType], `type`: hour | minute | second | meridiem): TimeUnitColumnProps[DateType] = {
+      val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TimeUnitColumnProps[DateType]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: TimeUnitColumnProps] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: TimeUnitColumnProps[?], DateType] (val x: Self & TimeUnitColumnProps[DateType]) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -46,6 +56,8 @@ object esPanelsTimePanelTimeUnitColumnMod {
       
       inline def setHideDisabledOptionsUndefined: Self = StObject.set(x, "hideDisabledOptions", js.undefined)
       
+      inline def setInfo(value: CellRender[DateType]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      
       inline def setOnSelect(value: /* value */ Double => scala.Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
@@ -53,6 +65,8 @@ object esPanelsTimePanelTimeUnitColumnMod {
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      
+      inline def setType(value: hour | minute | second | meridiem): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setUnits(value: js.Array[Unit]): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
       

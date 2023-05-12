@@ -1,5 +1,6 @@
 package typings.pixiParticleContainer
 
+import typings.pixiColor.libColorMod.ColorSource
 import typings.pixiConstants.mod.BLEND_MODES
 import typings.pixiCore.libTexturesResourcesAutoDetectResourceMod.IAutoDetectOptions
 import typings.pixiCore.libTexturesResourcesResourceMod.Resource
@@ -72,7 +73,7 @@ object libParticleContainerMod {
       * This is a hex value. A value of 0xFFFFFF will remove any tint effect.
       * @default 0xFFFFFF
       */
-    /* private */ var _tint: Any = js.native
+    /* private */ var _tintColor: Any = js.native
     
     /**
       * When child inserted, removed or changes position this number goes up.
@@ -122,11 +123,11 @@ object libParticleContainerMod {
       * IMPORTANT: This is a WebGL only feature and will be ignored by the canvas renderer.
       * @default 0xFFFFFF
       */
-    def tint: Double = js.native
+    def tint: ColorSource = js.native
     
     var tintRgb: js.typedarray.Float32Array = js.native
     
-    def tint_=(value: Double): Unit = js.native
+    def tint_=(value: ColorSource): Unit = js.native
   }
   
   trait IParticleProperties extends StObject {

@@ -67,6 +67,8 @@ object declarationInputTypeWheelInputMod {
   
   trait WheelInputOption extends StObject {
     
+    var inputKey: js.UndefOr[js.Array[String]] = js.undefined
+    
     var releaseDelay: js.UndefOr[Double] = js.undefined
     
     var scale: js.UndefOr[Double] = js.undefined
@@ -84,6 +86,12 @@ object declarationInputTypeWheelInputMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: WheelInputOption] (val x: Self) extends AnyVal {
+      
+      inline def setInputKey(value: js.Array[String]): Self = StObject.set(x, "inputKey", value.asInstanceOf[js.Any])
+      
+      inline def setInputKeyUndefined: Self = StObject.set(x, "inputKey", js.undefined)
+      
+      inline def setInputKeyVarargs(value: String*): Self = StObject.set(x, "inputKey", js.Array(value*))
       
       inline def setReleaseDelay(value: Double): Self = StObject.set(x, "releaseDelay", value.asInstanceOf[js.Any])
       

@@ -1,7 +1,7 @@
 
 # Scala.js typings for azure__core-paging
 
-Typings are for version 1.3.0
+Typings are for version 1.5.0
 
 
 

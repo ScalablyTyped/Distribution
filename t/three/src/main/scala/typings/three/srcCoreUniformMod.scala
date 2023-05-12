@@ -8,28 +8,16 @@ object srcCoreUniformMod {
   
   @JSImport("three/src/core/Uniform", "Uniform")
   @js.native
-  open class Uniform protected () extends StObject {
-    def this(value: Any) = this()
+  open class Uniform[T] protected () extends StObject {
     /**
-      * @deprecated
+      * Create a new instance of {@link THREE.Uniform | Uniform}
+      * @param value An object containing the value to set up the uniform. It's type must be one of the Uniform Types described above.
       */
-    def this(`type`: String, value: Any) = this()
+    def this(value: T) = this()
     
     /**
-      * @deprecated Use {@link Object3D#onBeforeRender object.onBeforeRender()} instead.
+      * Current value of the uniform.
       */
-    var dynamic: Boolean = js.native
-    
-    /**
-      * @deprecated Use {@link Object3D#onBeforeRender object.onBeforeRender()} instead.
-      */
-    def onUpdate(callback: js.Function0[Unit]): Uniform = js.native
-    
-    /**
-      * @deprecated
-      */
-    var `type`: String = js.native
-    
-    var value: Any = js.native
+    var value: T = js.native
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EphemeralStorage extends StObject {
   
   /**
-    * The size of the function’s /tmp directory.
+    * The size of the function's /tmp directory.
     */
   var Size: EphemeralStorageSize
 }

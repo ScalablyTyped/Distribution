@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WebviewPanelOnDidChangeViewStateEvent extends StObject {
   
   /**
-    * Webview panel whose view state changed.
-    */
+  		 * Webview panel whose view state changed.
+  		 */
   val webviewPanel: WebviewPanel
 }
 object WebviewPanelOnDidChangeViewStateEvent {

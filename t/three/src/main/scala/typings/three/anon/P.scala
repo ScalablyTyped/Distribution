@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait P extends StObject {
   
-  var p: Double
+  val p: Double
   
-  var q: Double
+  val q: Double
   
-  var radialSegments: Double
+  val radialSegments: Double
   
-  var radius: Double
+  val radius: Double
   
-  var tube: Double
+  val tube: Double
   
-  var tubularSegments: Double
+  val tubularSegments: Double
 }
 object P {
   

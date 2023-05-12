@@ -1,7 +1,7 @@
 package typings.mdastUtilFrontmatter
 
-import typings.mdastUtilFromMarkdown.mod.Extension
-import typings.mdastUtilFromMarkdown.mod.Handle
+import typings.mdastUtilFromMarkdown.libMod.Extension
+import typings.mdastUtilFromMarkdown.libMod.Handle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,10 @@ object mod {
   
   type Literal = typings.mdast.mod.Literal
   
-  type Map = typings.mdastUtilToMarkdown.libUtilIndentLinesMod.Map
+  type Map = typings.std.Map[
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for K */ Any, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ Any
+  ]
   
   type Matter = typings.micromarkExtensionFrontmatter.mattersMod.Matter
   

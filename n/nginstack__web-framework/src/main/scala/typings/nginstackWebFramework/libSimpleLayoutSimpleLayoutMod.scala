@@ -59,7 +59,7 @@ object libSimpleLayoutSimpleLayoutMod {
     
     /* private */ var _prepareExport: Any = js.native
     
-    /* private */ var _prepareImgTagsToSendMail: Any = js.native
+    /* private */ var _prepareImgTagsToSendEmail: Any = js.native
     
     /* private */ var accumulator: Any = js.native
     
@@ -116,7 +116,7 @@ object libSimpleLayoutSimpleLayoutMod {
     
     /* private */ var countSeqColumn: Any = js.native
     
-    /* private */ var cssContentForMail_ : Any = js.native
+    /* private */ var cssContentForEmail_ : Any = js.native
     
     /* private */ var cssExtractor_ : Any = js.native
     
@@ -186,7 +186,7 @@ object libSimpleLayoutSimpleLayoutMod {
     
     /* private */ var getCurrentColumnToWrite_ : Any = js.native
     
-    /* private */ var getMailObject: Any = js.native
+    /* private */ var getEmailObject: Any = js.native
     
     def group(name: String, link: typings.nginstackWebFramework.libAnchorLinkMod.^, displayFormat: String): Any = js.native
     
@@ -394,7 +394,7 @@ object libSimpleLayoutSimpleLayoutMod {
       opt_convertToHtmlString: js.UndefOr[Boolean]
     ): Unit = js.native
     
-    var writingMail: Boolean = js.native
+    var writingEmail: Boolean = js.native
   }
   
   trait SimpleLayoutStats extends StObject {

@@ -10,6 +10,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def normalizeUri(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeUri")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   inline def sanitizeUri(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeUri")().asInstanceOf[String]
   inline def sanitizeUri(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeUri")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def sanitizeUri(url: String, protocol: js.RegExp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeUri")(url.asInstanceOf[js.Any], protocol.asInstanceOf[js.Any])).asInstanceOf[String]

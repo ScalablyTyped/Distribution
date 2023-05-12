@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "postcss-image-set-function" : "4.0.7"
+      "postcss-image-set-function" : "5.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "postcss-image-set-function" : "4.0.7"
+      "postcss-image-set-function" : "5.0.2"
     }
   ],
   "compile-devDependencies" : [

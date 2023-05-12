@@ -16,7 +16,7 @@ object libIconsCopyOutlinedMod extends Shortcut {
   @js.native
   trait CopyOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_CopyOutlinedIconType: String = js.native

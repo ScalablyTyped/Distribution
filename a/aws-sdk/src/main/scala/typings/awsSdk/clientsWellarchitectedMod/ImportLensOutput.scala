@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImportLensOutput extends StObject {
   
   /**
-    * The ARN for the lens.
+    * The ARN for the lens that was created or updated.
     */
   var LensArn: js.UndefOr[typings.awsSdk.clientsWellarchitectedMod.LensArn] = js.undefined
   

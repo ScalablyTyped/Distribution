@@ -1,5 +1,6 @@
 package typings.ipfsHttpGateway
 
+import typings.hapiHapi.libTypesServerServerMod.ServerApplicationState
 import typings.hapiHapi.mod.Server_
 import typings.libp2pLogger.mod.Logger_
 import org.scalablytyped.runtime.StObject
@@ -21,7 +22,7 @@ object mod {
       * @param {string} port
       * @param {IPFS} ipfs
       */
-    def _createGatewayServer(host: String, port: String, ipfs: IPFS): js.Promise[Server_] = js.native
+    def _createGatewayServer(host: String, port: String, ipfs: IPFS): js.Promise[Server_[ServerApplicationState]] = js.native
     
     /** @type {Server[]} */
     var _gatewayServers: js.Array[Server] = js.native
@@ -39,5 +40,5 @@ object mod {
   
   type IPFS = typings.ipfsCoreTypes.mod.IPFS[js.Object]
   
-  type Server = typings.ipfsHttpGateway.distSrcTypesMod.Server
+  type Server = typings.ipfsHttpGateway.distSrcTypesMod.Server[ServerApplicationState]
 }

@@ -66,6 +66,17 @@ trait IViewZone extends StObject {
   var onDomNodeTop: js.UndefOr[js.Function1[/* top */ Double, Unit]] = js.undefined
   
   /**
+    * Tiebreaker that is used when multiple view zones want to be after the same line.
+    * Defaults to `afterColumn` otherwise 10000;
+    */
+  var ordinal: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Render the zone even when its line is hidden.
+    */
+  var showInHiddenAreas: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Suppress mouse down events.
     * If set, the editor will attach a mouse down listener to the view zone and .preventDefault on it.
     * Defaults to false
@@ -119,6 +130,14 @@ object IViewZone {
     inline def setOnDomNodeTop(value: /* top */ Double => Unit): Self = StObject.set(x, "onDomNodeTop", js.Any.fromFunction1(value))
     
     inline def setOnDomNodeTopUndefined: Self = StObject.set(x, "onDomNodeTop", js.undefined)
+    
+    inline def setOrdinal(value: Double): Self = StObject.set(x, "ordinal", value.asInstanceOf[js.Any])
+    
+    inline def setOrdinalUndefined: Self = StObject.set(x, "ordinal", js.undefined)
+    
+    inline def setShowInHiddenAreas(value: Boolean): Self = StObject.set(x, "showInHiddenAreas", value.asInstanceOf[js.Any])
+    
+    inline def setShowInHiddenAreasUndefined: Self = StObject.set(x, "showInHiddenAreas", js.undefined)
     
     inline def setSuppressMouseDown(value: Boolean): Self = StObject.set(x, "suppressMouseDown", value.asInstanceOf[js.Any])
     

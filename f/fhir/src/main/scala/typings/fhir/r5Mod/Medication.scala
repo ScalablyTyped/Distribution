@@ -25,6 +25,11 @@ trait Medication
   var code: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
+    * A reference to a knowledge resource that provides more information about this medication.
+    */
+  var definition: js.UndefOr[Reference] = js.undefined
+  
+  /**
     * When Medication is referenced from MedicationRequest, this is the ordered form.  When Medication is referenced within MedicationDispense, this is the dispensed form.  When Medication is referenced within MedicationAdministration, this is administered form.
     */
   var doseForm: js.UndefOr[CodeableConcept] = js.undefined
@@ -40,7 +45,7 @@ trait Medication
   var ingredient: js.UndefOr[js.Array[MedicationIngredient]] = js.undefined
   
   /**
-    * Describes the organization that is responsible for the manufacturing of the item and holds the registration to market the product in a jurisdiction. This might not be the company that physically manufactures the product.  May be known as "Sponsor" and is commonly called "Manufacturer".
+    * The company or other legal entity that has authorization, from the appropriate drug regulatory authority,  to market a medicine in one or more jurisdictions.  Typically abbreviated MAH.Note:  The MAH may manufacture the product and may also contract the manufacturing of the product to one or more companies (organizations).
     */
   var marketingAuthorizationHolder: js.UndefOr[Reference] = js.undefined
   
@@ -56,7 +61,7 @@ trait Medication
   /**
     * When the specified product code does not infer a package size, this is the specific amount of drug in the product.  For example, when specifying a product that has the same strength (For example, Insulin glargine 100 unit per mL solution for injection), this attribute provides additional clarification of the package amount (For example, 3 mL, 10mL, etc.).
     */
-  var totalVolume: js.UndefOr[Ratio] = js.undefined
+  var totalVolume: js.UndefOr[Quantity] = js.undefined
 }
 object Medication {
   
@@ -75,6 +80,10 @@ object Medication {
     inline def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    
+    inline def setDefinition(value: Reference): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    
+    inline def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
     
     inline def setDoseForm(value: CodeableConcept): Self = StObject.set(x, "doseForm", value.asInstanceOf[js.Any])
     
@@ -102,7 +111,7 @@ object Medication {
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    inline def setTotalVolume(value: Ratio): Self = StObject.set(x, "totalVolume", value.asInstanceOf[js.Any])
+    inline def setTotalVolume(value: Quantity): Self = StObject.set(x, "totalVolume", value.asInstanceOf[js.Any])
     
     inline def setTotalVolumeUndefined: Self = StObject.set(x, "totalVolume", js.undefined)
     

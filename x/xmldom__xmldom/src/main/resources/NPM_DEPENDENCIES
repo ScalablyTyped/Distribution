@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@xmldom/xmldom" : "0.8.6"
+      "@xmldom/xmldom" : "0.8.7"
     }
   ],
   "test-dependencies" : [
     {
-      "@xmldom/xmldom" : "0.8.6"
+      "@xmldom/xmldom" : "0.8.7"
     }
   ],
   "compile-devDependencies" : [

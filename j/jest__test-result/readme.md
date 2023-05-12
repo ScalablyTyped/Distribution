@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest__test-result
 
-Typings are for version 29.3.1
+Typings are for version 29.5.0
 
 
 

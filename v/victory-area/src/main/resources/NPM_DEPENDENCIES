@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "victory-area" : "36.6.8"
+      "victory-area" : "36.6.10"
     }
   ],
   "test-dependencies" : [
     {
-      "victory-area" : "36.6.8"
+      "victory-area" : "36.6.10"
     }
   ],
   "compile-devDependencies" : [

@@ -10,7 +10,7 @@ trait TickNode
      with FormatNode
      with Node {
   
-  var contents: js.Array[FragmentNode]
+  var contents: js.Array[TextNode | CommentNode | TagNode]
   
   var location: LocationRange
   
@@ -18,7 +18,7 @@ trait TickNode
 }
 object TickNode {
   
-  inline def apply(contents: js.Array[FragmentNode], location: LocationRange): TickNode = {
+  inline def apply(contents: js.Array[TextNode | CommentNode | TagNode], location: LocationRange): TickNode = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "tick")
     __obj.asInstanceOf[TickNode]
   }
@@ -26,9 +26,9 @@ object TickNode {
   @scala.inline
   implicit open class MutableBuilder[Self <: TickNode] (val x: Self) extends AnyVal {
     
-    inline def setContents(value: js.Array[FragmentNode]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+    inline def setContents(value: js.Array[TextNode | CommentNode | TagNode]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
-    inline def setContentsVarargs(value: FragmentNode*): Self = StObject.set(x, "contents", js.Array(value*))
+    inline def setContentsVarargs(value: (TextNode | CommentNode | TagNode)*): Self = StObject.set(x, "contents", js.Array(value*))
     
     inline def setLocation(value: LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

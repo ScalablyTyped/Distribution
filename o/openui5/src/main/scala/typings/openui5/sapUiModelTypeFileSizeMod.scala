@@ -1,7 +1,7 @@
 package typings.openui5
 
-import typings.openui5.anon.`37`
-import typings.openui5.anon.`38`
+import typings.openui5.anon.`45`
+import typings.openui5.anon.`47`
 import typings.openui5.sap.ClassInfo
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -18,31 +18,28 @@ object sapUiModelTypeFileSizeMod {
   open class default ()
     extends typings.openui5.sapUiModelSimpleTypeMod.default {
     def this(/**
-      * formatting options. Supports the same options as {@link sap.ui.core.format.FileSizeFormat.getInstance
-      * FileSizeFormat.getInstance}
+      * Format options as defined in {@link sap.ui.core.format.FileSizeFormat.getInstance}
       */
-    oFormatOptions: `37`) = this()
+    oFormatOptions: `45`) = this()
     def this(
       /**
-      * formatting options. Supports the same options as {@link sap.ui.core.format.FileSizeFormat.getInstance
-      * FileSizeFormat.getInstance}
+      * Format options as defined in {@link sap.ui.core.format.FileSizeFormat.getInstance}
       */
     oFormatOptions: Unit,
       /**
       * value constraints.
       */
-    oConstraints: `38`
+    oConstraints: `47`
     ) = this()
     def this(
       /**
-      * formatting options. Supports the same options as {@link sap.ui.core.format.FileSizeFormat.getInstance
-      * FileSizeFormat.getInstance}
+      * Format options as defined in {@link sap.ui.core.format.FileSizeFormat.getInstance}
       */
-    oFormatOptions: `37`,
+    oFormatOptions: `45`,
       /**
       * value constraints.
       */
-    oConstraints: `38`
+    oConstraints: `47`
     ) = this()
   }
   /* static members */

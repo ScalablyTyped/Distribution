@@ -18,7 +18,7 @@ trait CitationCitedArtifactPublicationFormPublishedIn
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
-    * Name of the publisher.
+    * Name of or resource describing the publisher.
     */
   var publisher: js.UndefOr[Reference] = js.undefined
   

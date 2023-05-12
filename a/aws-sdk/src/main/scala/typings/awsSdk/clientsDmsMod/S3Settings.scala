@@ -47,7 +47,7 @@ trait S3Settings extends StObject {
   var CdcMaxBatchInterval: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * Minimum file size, defined in megabytes, to reach for a file output to Amazon S3. When CdcMinFileSize and CdcMaxBatchInterval are both specified, the file write is triggered by whichever parameter condition is met first within an DMS CloudFormation template. The default value is 32 MB.
+    * Minimum file size, defined in kilobytes, to reach for a file output to Amazon S3. When CdcMinFileSize and CdcMaxBatchInterval are both specified, the file write is triggered by whichever parameter condition is met first within an DMS CloudFormation template. The default value is 32 MB.
     */
   var CdcMinFileSize: js.UndefOr[IntegerOptional] = js.undefined
   
@@ -140,6 +140,11 @@ trait S3Settings extends StObject {
     *  Specifies how tables are defined in the S3 source files only. 
     */
   var ExternalTableDefinition: js.UndefOr[String] = js.undefined
+  
+  /**
+    * When true, allows Glue to catalog your S3 bucket. Creating an Glue catalog lets you use Athena to query your data.
+    */
+  var GlueCatalogGeneration: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * When this value is set to 1, DMS ignores the first row header in a .csv file. A value of 1 turns on the feature; a value of 0 turns off the feature. The default is 0.
@@ -323,6 +328,10 @@ object S3Settings {
     inline def setExternalTableDefinition(value: String): Self = StObject.set(x, "ExternalTableDefinition", value.asInstanceOf[js.Any])
     
     inline def setExternalTableDefinitionUndefined: Self = StObject.set(x, "ExternalTableDefinition", js.undefined)
+    
+    inline def setGlueCatalogGeneration(value: BooleanOptional): Self = StObject.set(x, "GlueCatalogGeneration", value.asInstanceOf[js.Any])
+    
+    inline def setGlueCatalogGenerationUndefined: Self = StObject.set(x, "GlueCatalogGeneration", js.undefined)
     
     inline def setIgnoreHeaderRows(value: IntegerOptional): Self = StObject.set(x, "IgnoreHeaderRows", value.asInstanceOf[js.Any])
     

@@ -12,4 +12,8 @@ object cacheManagerStrings {
     extends StObject
        with _Stores[Any, Any]
   inline def memory: memory = "memory".asInstanceOf[memory]
+  
+  @js.native
+  sealed trait ttlAutopurge extends StObject
+  inline def ttlAutopurge: ttlAutopurge = "ttlAutopurge".asInstanceOf[ttlAutopurge]
 }

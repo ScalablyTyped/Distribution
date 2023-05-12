@@ -1,5 +1,16 @@
 package typings.std
 
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`10`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
+import typings.std.stdInts.`4`
+import typings.std.stdInts.`5`
+import typings.std.stdInts.`6`
+import typings.std.stdInts.`7`
+import typings.std.stdInts.`8`
+import typings.std.stdInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,37 +19,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SVGLength extends StObject {
   
   /* standard dom */
-  val SVG_LENGTHTYPE_CM: Double
+  val SVG_LENGTHTYPE_CM: `6`
   
   /* standard dom */
-  val SVG_LENGTHTYPE_EMS: Double
+  val SVG_LENGTHTYPE_EMS: `3`
   
   /* standard dom */
-  val SVG_LENGTHTYPE_EXS: Double
+  val SVG_LENGTHTYPE_EXS: `4`
   
   /* standard dom */
-  val SVG_LENGTHTYPE_IN: Double
+  val SVG_LENGTHTYPE_IN: `8`
   
   /* standard dom */
-  val SVG_LENGTHTYPE_MM: Double
+  val SVG_LENGTHTYPE_MM: `7`
   
   /* standard dom */
-  val SVG_LENGTHTYPE_NUMBER: Double
+  val SVG_LENGTHTYPE_NUMBER: `1`
   
   /* standard dom */
-  val SVG_LENGTHTYPE_PC: Double
+  val SVG_LENGTHTYPE_PC: `10`
   
   /* standard dom */
-  val SVG_LENGTHTYPE_PERCENTAGE: Double
+  val SVG_LENGTHTYPE_PERCENTAGE: `2`
   
   /* standard dom */
-  val SVG_LENGTHTYPE_PT: Double
+  val SVG_LENGTHTYPE_PT: `9`
   
   /* standard dom */
-  val SVG_LENGTHTYPE_PX: Double
+  val SVG_LENGTHTYPE_PX: `5`
   
   /* standard dom */
-  val SVG_LENGTHTYPE_UNKNOWN: Double
+  val SVG_LENGTHTYPE_UNKNOWN: `0`
   
   /* standard dom */
   def convertToSpecifiedUnits(unitType: Double): Unit
@@ -61,17 +72,6 @@ trait SVGLength extends StObject {
 object SVGLength {
   
   inline def apply(
-    SVG_LENGTHTYPE_CM: Double,
-    SVG_LENGTHTYPE_EMS: Double,
-    SVG_LENGTHTYPE_EXS: Double,
-    SVG_LENGTHTYPE_IN: Double,
-    SVG_LENGTHTYPE_MM: Double,
-    SVG_LENGTHTYPE_NUMBER: Double,
-    SVG_LENGTHTYPE_PC: Double,
-    SVG_LENGTHTYPE_PERCENTAGE: Double,
-    SVG_LENGTHTYPE_PT: Double,
-    SVG_LENGTHTYPE_PX: Double,
-    SVG_LENGTHTYPE_UNKNOWN: Double,
     convertToSpecifiedUnits: Double => Unit,
     newValueSpecifiedUnits: (Double, Double) => Unit,
     unitType: Double,
@@ -79,7 +79,7 @@ object SVGLength {
     valueAsString: java.lang.String,
     valueInSpecifiedUnits: Double
   ): SVGLength = {
-    val __obj = js.Dynamic.literal(SVG_LENGTHTYPE_CM = SVG_LENGTHTYPE_CM.asInstanceOf[js.Any], SVG_LENGTHTYPE_EMS = SVG_LENGTHTYPE_EMS.asInstanceOf[js.Any], SVG_LENGTHTYPE_EXS = SVG_LENGTHTYPE_EXS.asInstanceOf[js.Any], SVG_LENGTHTYPE_IN = SVG_LENGTHTYPE_IN.asInstanceOf[js.Any], SVG_LENGTHTYPE_MM = SVG_LENGTHTYPE_MM.asInstanceOf[js.Any], SVG_LENGTHTYPE_NUMBER = SVG_LENGTHTYPE_NUMBER.asInstanceOf[js.Any], SVG_LENGTHTYPE_PC = SVG_LENGTHTYPE_PC.asInstanceOf[js.Any], SVG_LENGTHTYPE_PERCENTAGE = SVG_LENGTHTYPE_PERCENTAGE.asInstanceOf[js.Any], SVG_LENGTHTYPE_PT = SVG_LENGTHTYPE_PT.asInstanceOf[js.Any], SVG_LENGTHTYPE_PX = SVG_LENGTHTYPE_PX.asInstanceOf[js.Any], SVG_LENGTHTYPE_UNKNOWN = SVG_LENGTHTYPE_UNKNOWN.asInstanceOf[js.Any], convertToSpecifiedUnits = js.Any.fromFunction1(convertToSpecifiedUnits), newValueSpecifiedUnits = js.Any.fromFunction2(newValueSpecifiedUnits), unitType = unitType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueAsString = valueAsString.asInstanceOf[js.Any], valueInSpecifiedUnits = valueInSpecifiedUnits.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(SVG_LENGTHTYPE_CM = 6, SVG_LENGTHTYPE_EMS = 3, SVG_LENGTHTYPE_EXS = 4, SVG_LENGTHTYPE_IN = 8, SVG_LENGTHTYPE_MM = 7, SVG_LENGTHTYPE_NUMBER = 1, SVG_LENGTHTYPE_PC = 10, SVG_LENGTHTYPE_PERCENTAGE = 2, SVG_LENGTHTYPE_PT = 9, SVG_LENGTHTYPE_PX = 5, SVG_LENGTHTYPE_UNKNOWN = 0, convertToSpecifiedUnits = js.Any.fromFunction1(convertToSpecifiedUnits), newValueSpecifiedUnits = js.Any.fromFunction2(newValueSpecifiedUnits), unitType = unitType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueAsString = valueAsString.asInstanceOf[js.Any], valueInSpecifiedUnits = valueInSpecifiedUnits.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGLength]
   }
   
@@ -90,27 +90,27 @@ object SVGLength {
     
     inline def setNewValueSpecifiedUnits(value: (Double, Double) => Unit): Self = StObject.set(x, "newValueSpecifiedUnits", js.Any.fromFunction2(value))
     
-    inline def setSVG_LENGTHTYPE_CM(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_CM", value.asInstanceOf[js.Any])
+    inline def setSVG_LENGTHTYPE_CM(value: `6`): Self = StObject.set(x, "SVG_LENGTHTYPE_CM", value.asInstanceOf[js.Any])
     
-    inline def setSVG_LENGTHTYPE_EMS(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_EMS", value.asInstanceOf[js.Any])
+    inline def setSVG_LENGTHTYPE_EMS(value: `3`): Self = StObject.set(x, "SVG_LENGTHTYPE_EMS", value.asInstanceOf[js.Any])
     
-    inline def setSVG_LENGTHTYPE_EXS(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_EXS", value.asInstanceOf[js.Any])
+    inline def setSVG_LENGTHTYPE_EXS(value: `4`): Self = StObject.set(x, "SVG_LENGTHTYPE_EXS", value.asInstanceOf[js.Any])
     
-    inline def setSVG_LENGTHTYPE_IN(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_IN", value.asInstanceOf[js.Any])
+    inline def setSVG_LENGTHTYPE_IN(value: `8`): Self = StObject.set(x, "SVG_LENGTHTYPE_IN", value.asInstanceOf[js.Any])
     
-    inline def setSVG_LENGTHTYPE_MM(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_MM", value.asInstanceOf[js.Any])
+    inline def setSVG_LENGTHTYPE_MM(value: `7`): Self = StObject.set(x, "SVG_LENGTHTYPE_MM", value.asInstanceOf[js.Any])
     
-    inline def setSVG_LENGTHTYPE_NUMBER(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_NUMBER", value.asInstanceOf[js.Any])
+    inline def setSVG_LENGTHTYPE_NUMBER(value: `1`): Self = StObject.set(x, "SVG_LENGTHTYPE_NUMBER", value.asInstanceOf[js.Any])
     
-    inline def setSVG_LENGTHTYPE_PC(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_PC", value.asInstanceOf[js.Any])
+    inline def setSVG_LENGTHTYPE_PC(value: `10`): Self = StObject.set(x, "SVG_LENGTHTYPE_PC", value.asInstanceOf[js.Any])
     
-    inline def setSVG_LENGTHTYPE_PERCENTAGE(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_PERCENTAGE", value.asInstanceOf[js.Any])
+    inline def setSVG_LENGTHTYPE_PERCENTAGE(value: `2`): Self = StObject.set(x, "SVG_LENGTHTYPE_PERCENTAGE", value.asInstanceOf[js.Any])
     
-    inline def setSVG_LENGTHTYPE_PT(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_PT", value.asInstanceOf[js.Any])
+    inline def setSVG_LENGTHTYPE_PT(value: `9`): Self = StObject.set(x, "SVG_LENGTHTYPE_PT", value.asInstanceOf[js.Any])
     
-    inline def setSVG_LENGTHTYPE_PX(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_PX", value.asInstanceOf[js.Any])
+    inline def setSVG_LENGTHTYPE_PX(value: `5`): Self = StObject.set(x, "SVG_LENGTHTYPE_PX", value.asInstanceOf[js.Any])
     
-    inline def setSVG_LENGTHTYPE_UNKNOWN(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_UNKNOWN", value.asInstanceOf[js.Any])
+    inline def setSVG_LENGTHTYPE_UNKNOWN(value: `0`): Self = StObject.set(x, "SVG_LENGTHTYPE_UNKNOWN", value.asInstanceOf[js.Any])
     
     inline def setUnitType(value: Double): Self = StObject.set(x, "unitType", value.asInstanceOf[js.Any])
     

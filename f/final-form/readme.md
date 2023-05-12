@@ -1,7 +1,7 @@
 
 # Scala.js typings for final-form
 
-Typings are for version 4.20.7
+Typings are for version 4.20.9
 
 ## Library description:
 🏁 Framework agnostic, high performance, subscription-based form state management

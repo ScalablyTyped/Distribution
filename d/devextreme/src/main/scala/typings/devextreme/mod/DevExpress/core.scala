@@ -10,10 +10,9 @@ import typings.devextreme.mod.global.JQueryEventObject
 import typings.devextreme.mod.global.JQueryPromise
 import typings.std.BigInteger
 import typings.std.Element
-import typings.std.Exclude
 import typings.std.HTMLElement
 import typings.std.Number
-import typings.std.Pick
+import typings.std.Omit
 import typings.std.Record
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -137,6 +136,8 @@ object core {
     }
   }
   
+  type OmitInternal[T] = Omit[T, /* template literal string: ${_|$}${any} */ String]
+  
   /**
     * @deprecated Attention! This type is for internal purposes only. If you used it previously, please submit a ticket to our {@link https://supportcenter.devexpress.com/ticket/create Support Center}. We will check if there is an alternative solution.
     */
@@ -145,8 +146,6 @@ object core {
   type Scalar = js.UndefOr[
     Null | String | Double | Number | js.BigInt | BigInteger | Boolean | js.Date | js.Function | js.Symbol | js.Array[Any]
   ]
-  
-  type Skip[T, K /* <: /* keyof T */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
   
   trait TemplateManager extends StObject {
     

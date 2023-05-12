@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssociatePrincipalWithPortfolioInput extends StObject {
   
   /**
-    * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
+    * The language code.    jp - Japanese    zh - Chinese  
     */
   var AcceptLanguage: js.UndefOr[typings.awsSdk.clientsServicecatalogMod.AcceptLanguage] = js.undefined
   
@@ -17,12 +17,12 @@ trait AssociatePrincipalWithPortfolioInput extends StObject {
   var PortfolioId: Id
   
   /**
-    * The ARN of the principal (IAM user, role, or group).
+    * The ARN of the principal (user, role, or group). This field allows an ARN with no accountID if PrincipalType is IAM_PATTERN.  You can associate multiple IAM patterns even if the account has no principal with that name. This is useful in Principal Name Sharing if you want to share a principal without creating it in the account that owns the portfolio. 
     */
   var PrincipalARN: typings.awsSdk.clientsServicecatalogMod.PrincipalARN
   
   /**
-    * The principal type. The supported value is IAM.
+    * The principal type. The supported value is IAM if you use a fully defined ARN, or IAM_PATTERN if you use an ARN with no accountID. 
     */
   var PrincipalType: typings.awsSdk.clientsServicecatalogMod.PrincipalType
 }

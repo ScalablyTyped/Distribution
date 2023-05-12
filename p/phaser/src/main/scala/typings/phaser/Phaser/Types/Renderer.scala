@@ -4,6 +4,7 @@ import typings.phaser.Phaser.Display.Color
 import typings.phaser.Phaser.Game
 import typings.std.GLenum
 import typings.std.HTMLImageElement
+import typings.std.WebGLTexture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -142,6 +143,11 @@ object Renderer {
       var autoClear: js.UndefOr[Boolean] = js.undefined
       
       /**
+        * The height of the Render Target. This is optional. If not given, it will be set to the same as the `width` value.
+        */
+      var height: js.UndefOr[Double] = js.undefined
+      
+      /**
         * The minFilter mode of the texture. 0 is `LINEAR`, 1 is `NEAREST`.
         */
       var minFilter: js.UndefOr[Double] = js.undefined
@@ -150,6 +156,11 @@ object Renderer {
         * A value between 0 and 1. Controls the size of this Render Target in relation to the Renderer. A value of 1 matches it. 0.5 makes the Render Target half the size of the renderer, etc.
         */
       var scale: js.UndefOr[Double] = js.undefined
+      
+      /**
+        * The width of the Render Target. This is optional. If given it overrides the `scale` property.
+        */
+      var width: js.UndefOr[Double] = js.undefined
     }
     object RenderTargetConfig {
       
@@ -165,6 +176,10 @@ object Renderer {
         
         inline def setAutoClearUndefined: Self = StObject.set(x, "autoClear", js.undefined)
         
+        inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+        
+        inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+        
         inline def setMinFilter(value: Double): Self = StObject.set(x, "minFilter", value.asInstanceOf[js.Any])
         
         inline def setMinFilterUndefined: Self = StObject.set(x, "minFilter", js.undefined)
@@ -172,6 +187,10 @@ object Renderer {
         inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
         
         inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+        
+        inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+        
+        inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       }
     }
     
@@ -318,6 +337,57 @@ object Renderer {
         inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
         
         inline def setType(value: WebGLConst): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      }
+    }
+    
+    trait WebGLPipelineBatchEntry extends StObject {
+      
+      /**
+        * The total number of vertices in this batch entry.
+        */
+      var count: Double
+      
+      /**
+        * The maximum number of texture units in this batch entry.
+        */
+      var maxUnit: Double
+      
+      /**
+        * The vertext count this batch entry starts from.
+        */
+      var start: Double
+      
+      /**
+        * An array of WebGLTexture references used in this batch entry.
+        */
+      var texture: js.Array[WebGLTexture]
+      
+      /**
+        * The current texture unit of the batch entry.
+        */
+      var unit: Double
+    }
+    object WebGLPipelineBatchEntry {
+      
+      inline def apply(count: Double, maxUnit: Double, start: Double, texture: js.Array[WebGLTexture], unit: Double): WebGLPipelineBatchEntry = {
+        val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], maxUnit = maxUnit.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], texture = texture.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any])
+        __obj.asInstanceOf[WebGLPipelineBatchEntry]
+      }
+      
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WebGLPipelineBatchEntry] (val x: Self) extends AnyVal {
+        
+        inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+        
+        inline def setMaxUnit(value: Double): Self = StObject.set(x, "maxUnit", value.asInstanceOf[js.Any])
+        
+        inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+        
+        inline def setTexture(value: js.Array[WebGLTexture]): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
+        
+        inline def setTextureVarargs(value: WebGLTexture*): Self = StObject.set(x, "texture", js.Array(value*))
+        
+        inline def setUnit(value: Double): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
       }
     }
     
@@ -568,41 +638,104 @@ object Renderer {
     trait WebGLTextureCompression extends StObject {
       
       /**
-        * Indicates if ETC1 compression is supported on current device (mostly Android).
+        * Indicates if ASTC compression is supported (mostly iOS).
         */
-      var ETC1: js.Object | Null
+      var ASTC: js.UndefOr[js.Object] = js.undefined
       
       /**
-        * Indicates if PVRTC compression is supported on current device (mostly iOS).
+        * Indicates if ATC compression is supported.
         */
-      var PVRTC: js.Object | Null
+      var ATC: js.UndefOr[js.Object] = js.undefined
       
       /**
-        * Indicates if S3TC compression is supported on current device.
+        * Indicates if BPTC compression is supported.
         */
-      var S3TC: js.Object | Null
+      var BPTC: js.UndefOr[js.Object] = js.undefined
+      
+      /**
+        * Indicates if ETC compression is supported (mostly Android).
+        */
+      var ETC: js.UndefOr[js.Object] = js.undefined
+      
+      /**
+        * Indicates if ETC1 compression is supported (mostly Android).
+        */
+      var ETC1: js.UndefOr[js.Object] = js.undefined
+      
+      /**
+        * Indicates the browser supports true color images (all browsers).
+        */
+      var IMG: js.UndefOr[js.Object] = js.undefined
+      
+      /**
+        * Indicates if PVRTC compression is supported (mostly iOS).
+        */
+      var PVRTC: js.UndefOr[js.Object] = js.undefined
+      
+      /**
+        * Indicates if RGTC compression is supported (mostly iOS).
+        */
+      var RGTC: js.UndefOr[js.Object] = js.undefined
+      
+      /**
+        * Indicates if S3TC compression is supported on current device (mostly Windows).
+        */
+      var S3TC: js.UndefOr[js.Object] = js.undefined
+      
+      /**
+        * Indicates if S3TCRGB compression is supported on current device (mostly Windows).
+        */
+      var S3TCRGB: js.UndefOr[js.Object] = js.undefined
     }
     object WebGLTextureCompression {
       
       inline def apply(): WebGLTextureCompression = {
-        val __obj = js.Dynamic.literal(ETC1 = null, PVRTC = null, S3TC = null)
+        val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[WebGLTextureCompression]
       }
       
       @scala.inline
       implicit open class MutableBuilder[Self <: WebGLTextureCompression] (val x: Self) extends AnyVal {
         
+        inline def setASTC(value: js.Object): Self = StObject.set(x, "ASTC", value.asInstanceOf[js.Any])
+        
+        inline def setASTCUndefined: Self = StObject.set(x, "ASTC", js.undefined)
+        
+        inline def setATC(value: js.Object): Self = StObject.set(x, "ATC", value.asInstanceOf[js.Any])
+        
+        inline def setATCUndefined: Self = StObject.set(x, "ATC", js.undefined)
+        
+        inline def setBPTC(value: js.Object): Self = StObject.set(x, "BPTC", value.asInstanceOf[js.Any])
+        
+        inline def setBPTCUndefined: Self = StObject.set(x, "BPTC", js.undefined)
+        
+        inline def setETC(value: js.Object): Self = StObject.set(x, "ETC", value.asInstanceOf[js.Any])
+        
         inline def setETC1(value: js.Object): Self = StObject.set(x, "ETC1", value.asInstanceOf[js.Any])
         
-        inline def setETC1Null: Self = StObject.set(x, "ETC1", null)
+        inline def setETC1Undefined: Self = StObject.set(x, "ETC1", js.undefined)
+        
+        inline def setETCUndefined: Self = StObject.set(x, "ETC", js.undefined)
+        
+        inline def setIMG(value: js.Object): Self = StObject.set(x, "IMG", value.asInstanceOf[js.Any])
+        
+        inline def setIMGUndefined: Self = StObject.set(x, "IMG", js.undefined)
         
         inline def setPVRTC(value: js.Object): Self = StObject.set(x, "PVRTC", value.asInstanceOf[js.Any])
         
-        inline def setPVRTCNull: Self = StObject.set(x, "PVRTC", null)
+        inline def setPVRTCUndefined: Self = StObject.set(x, "PVRTC", js.undefined)
+        
+        inline def setRGTC(value: js.Object): Self = StObject.set(x, "RGTC", value.asInstanceOf[js.Any])
+        
+        inline def setRGTCUndefined: Self = StObject.set(x, "RGTC", js.undefined)
         
         inline def setS3TC(value: js.Object): Self = StObject.set(x, "S3TC", value.asInstanceOf[js.Any])
         
-        inline def setS3TCNull: Self = StObject.set(x, "S3TC", null)
+        inline def setS3TCRGB(value: js.Object): Self = StObject.set(x, "S3TCRGB", value.asInstanceOf[js.Any])
+        
+        inline def setS3TCRGBUndefined: Self = StObject.set(x, "S3TCRGB", js.undefined)
+        
+        inline def setS3TCUndefined: Self = StObject.set(x, "S3TC", js.undefined)
       }
     }
   }

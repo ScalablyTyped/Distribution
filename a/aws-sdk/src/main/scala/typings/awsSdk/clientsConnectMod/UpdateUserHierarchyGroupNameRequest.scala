@@ -12,7 +12,7 @@ trait UpdateUserHierarchyGroupNameRequest extends StObject {
   var HierarchyGroupId: typings.awsSdk.clientsConnectMod.HierarchyGroupId
   
   /**
-    * The identifier of the Amazon Connect instance. You can find the instanceId in the ARN of the instance.
+    * The identifier of the Amazon Connect instance. You can find the instance ID in the Amazon Resource Name (ARN) of the instance.
     */
   var InstanceId: typings.awsSdk.clientsConnectMod.InstanceId
   

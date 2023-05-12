@@ -6,14 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SmsAttributes extends StObject {
   
+  /** action - Action URL */
   var action: js.UndefOr[String] = js.undefined
   
+  /** from - Number to send message from */
   var from: js.UndefOr[String] = js.undefined
   
+  /** method - Action URL method */
   var method: js.UndefOr[String] = js.undefined
   
+  /** statusCallback - Status callback URL */
   var statusCallback: js.UndefOr[String] = js.undefined
   
+  /** to - Number to send message to */
   var to: js.UndefOr[String] = js.undefined
 }
 object SmsAttributes {

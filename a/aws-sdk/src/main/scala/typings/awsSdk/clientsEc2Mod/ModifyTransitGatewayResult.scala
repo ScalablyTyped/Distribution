@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ModifyTransitGatewayResult extends StObject {
   
+  /**
+    * Information about the transit gateway.
+    */
   var TransitGateway: js.UndefOr[typings.awsSdk.clientsEc2Mod.TransitGateway] = js.undefined
 }
 object ModifyTransitGatewayResult {

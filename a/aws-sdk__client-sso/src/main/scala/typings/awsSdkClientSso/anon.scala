@@ -11,6 +11,7 @@ import typings.awsSdkTypes.distTypesEndpointMod.EndpointV2
 import typings.awsSdkTypes.distTypesHttpMod.Endpoint
 import typings.awsSdkTypes.distTypesHttpMod.HttpHandlerOptions
 import typings.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import typings.awsSdkTypes.distTypesRetryMod.RetryStrategyV2
 import typings.awsSdkTypes.distTypesSerdeMod.StreamCollector
 import typings.awsSdkTypes.distTypesTransferMod.RequestHandler
 import typings.awsSdkTypes.distTypesUtilMod.BodyLengthCalculator
@@ -73,7 +74,7 @@ object anon {
     
     var retryMode: String | Provider[String] = js.native
     
-    var retryStrategy: js.UndefOr[RetryStrategy] = js.native
+    var retryStrategy: js.UndefOr[RetryStrategy | RetryStrategyV2] = js.native
     
     var runtime: String = js.native
     
@@ -151,7 +152,7 @@ object anon {
     
     var retryMode: String | Provider[String] = js.native
     
-    var retryStrategy: js.UndefOr[RetryStrategy] = js.native
+    var retryStrategy: js.UndefOr[RetryStrategy | RetryStrategyV2] = js.native
     
     var runtime: String = js.native
     
@@ -225,7 +226,7 @@ object anon {
     
     var retryMode: String | Provider[String] = js.native
     
-    var retryStrategy: js.UndefOr[RetryStrategy] = js.native
+    var retryStrategy: js.UndefOr[RetryStrategy | RetryStrategyV2] = js.native
     
     var runtime: String = js.native
     
@@ -301,6 +302,14 @@ object anon {
     def urlParser(url: URL): Endpoint = js.native
     @JSName("urlParser")
     var urlParser_Original: UrlParser = js.native
+    
+    def utf8Decoder(input: String): js.typedarray.Uint8Array = js.native
+    @JSName("utf8Decoder")
+    var utf8Decoder_Original: Decoder = js.native
+    
+    def utf8Encoder(input: js.typedarray.Uint8Array): String = js.native
+    @JSName("utf8Encoder")
+    var utf8Encoder_Original: Encoder = js.native
   }
   
   /* Inlined @aws-sdk/smithy-client.@aws-sdk/smithy-client.ExceptionOptionType<@aws-sdk/client-sso.@aws-sdk/client-sso/dist-types/models/models_0.InvalidRequestException, @aws-sdk/client-sso.@aws-sdk/client-sso/dist-types/models/SSOServiceException.SSOServiceException> */

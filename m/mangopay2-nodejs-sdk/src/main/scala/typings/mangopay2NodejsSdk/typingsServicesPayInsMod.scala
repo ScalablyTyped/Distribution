@@ -7,10 +7,12 @@ import typings.mangopay2NodejsSdk.typingsBaseMod.base.TwoArgsMethodOverload
 import typings.mangopay2NodejsSdk.typingsBaseMod.base.WithResponse
 import typings.mangopay2NodejsSdk.typingsModelsPayInMod.payIn.BankWireDirectPayInData
 import typings.mangopay2NodejsSdk.typingsModelsPayInMod.payIn.CardDirectPayInData
+import typings.mangopay2NodejsSdk.typingsModelsPayInMod.payIn.CardPreAuthorizedDepositPayInData
 import typings.mangopay2NodejsSdk.typingsModelsPayInMod.payIn.CardPreAuthorizedPayInData
 import typings.mangopay2NodejsSdk.typingsModelsPayInMod.payIn.CardWebPayInData
 import typings.mangopay2NodejsSdk.typingsModelsPayInMod.payIn.CreateBankWireDirectPayIn
 import typings.mangopay2NodejsSdk.typingsModelsPayInMod.payIn.CreateCardDirectPayIn
+import typings.mangopay2NodejsSdk.typingsModelsPayInMod.payIn.CreateCardPreAuthorizedDepositPayIn
 import typings.mangopay2NodejsSdk.typingsModelsPayInMod.payIn.CreateCardPreAuthorizedPayIn
 import typings.mangopay2NodejsSdk.typingsModelsPayInMod.payIn.CreateCardWebPayIn
 import typings.mangopay2NodejsSdk.typingsModelsPayInMod.payIn.CreateDirectDebitDirectPayIn
@@ -282,6 +284,26 @@ object typingsServicesPayInsMod {
       */
     def create(data: CreatePayconiqWebPayInData, options: MethodOptionWithResponse): js.Promise[WithResponse[PayconiqWebPayInData]] = js.native
     def create(data: CreatePayconiqWebPayInData, options: MethodOptionWithoutResponse): js.Promise[PayconiqWebPayInData] = js.native
+    
+    def createCardPreAuthorizedDepositPayIn(data: CreateCardPreAuthorizedDepositPayIn): js.Promise[CardPreAuthorizedDepositPayInData] = js.native
+    def createCardPreAuthorizedDepositPayIn(
+      data: CreateCardPreAuthorizedDepositPayIn,
+      callback: js.Function1[/* data */ CardPreAuthorizedDepositPayInData, Unit]
+    ): Unit = js.native
+    def createCardPreAuthorizedDepositPayIn(
+      data: CreateCardPreAuthorizedDepositPayIn,
+      callback: js.Function1[/* data */ WithResponse[CardPreAuthorizedDepositPayInData], Unit],
+      options: MethodOptionWithResponse
+    ): Unit = js.native
+    def createCardPreAuthorizedDepositPayIn(
+      data: CreateCardPreAuthorizedDepositPayIn,
+      callback: js.Function1[/* data */ CardPreAuthorizedDepositPayInData, Unit],
+      options: MethodOptionWithoutResponse
+    ): Unit = js.native
+    def createCardPreAuthorizedDepositPayIn(data: CreateCardPreAuthorizedDepositPayIn, options: MethodOptionWithResponse): js.Promise[WithResponse[CardPreAuthorizedDepositPayInData]] = js.native
+    def createCardPreAuthorizedDepositPayIn(data: CreateCardPreAuthorizedDepositPayIn, options: MethodOptionWithoutResponse): js.Promise[CardPreAuthorizedDepositPayInData] = js.native
+    @JSName("createCardPreAuthorizedDepositPayIn")
+    var createCardPreAuthorizedDepositPayIn_Original: MethodOverload[CreateCardPreAuthorizedDepositPayIn, CardPreAuthorizedDepositPayInData] = js.native
     
     def createRecurringPayInRegistrationCIT(data: CreateRecurringPayInCIT): js.Promise[RecurringPayInData] = js.native
     def createRecurringPayInRegistrationCIT(data: CreateRecurringPayInCIT, callback: js.Function1[/* data */ RecurringPayInData, Unit]): Unit = js.native

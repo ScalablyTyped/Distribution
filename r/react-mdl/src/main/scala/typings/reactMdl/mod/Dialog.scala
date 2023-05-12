@@ -10,7 +10,7 @@ open class Dialog protected () extends _MDLComponent[DialogProps] {
   def this(props: DialogProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: DialogProps, context: Any) = this()
 }

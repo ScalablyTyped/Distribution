@@ -1,12 +1,13 @@
 package typings.wdioTypes.buildOptionsMod
 
 import typings.wdioTypes.wdioTypesStrings.info_
+import typings.wdioTypes.wdioTypesStrings.trace_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.wdioTypes.wdioTypesStrings.trace
+  - typings.wdioTypes.wdioTypesStrings.trace_
   - typings.wdioTypes.wdioTypesStrings.debug
   - typings.wdioTypes.wdioTypesStrings.info_
   - typings.wdioTypes.wdioTypesStrings.warn
@@ -24,7 +25,7 @@ object WebDriverLogTypes {
   
   inline def silent: typings.wdioTypes.wdioTypesStrings.silent = "silent".asInstanceOf[typings.wdioTypes.wdioTypesStrings.silent]
   
-  inline def trace: typings.wdioTypes.wdioTypesStrings.trace = "trace".asInstanceOf[typings.wdioTypes.wdioTypesStrings.trace]
+  inline def trace: trace_ = "trace".asInstanceOf[trace_]
   
   inline def warn: typings.wdioTypes.wdioTypesStrings.warn = "warn".asInstanceOf[typings.wdioTypes.wdioTypesStrings.warn]
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi__mixin-get-global-position
 
-Typings are for version 7.0.4
+Typings are for version 7.2.4
 
 ## Library description:
 Mixin to find the global position of a DisplayObject

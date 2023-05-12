@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jridgewell/resolve-uri" : "3.1.0"
+      "@jridgewell/resolve-uri" : "3.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@jridgewell/resolve-uri" : "3.1.0"
+      "@jridgewell/resolve-uri" : "3.1.1"
     }
   ],
   "compile-devDependencies" : [

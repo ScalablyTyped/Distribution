@@ -2,6 +2,7 @@ package typings.dc.mod
 
 import typings.d3Selection.mod.BaseType
 import typings.d3Selection.mod.Selection_
+import typings.d3Shape.mod.Symbol_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,30 +12,10 @@ trait ScatterPlot
   extends StObject
      with CoordinateGridMixin[ScatterPlot] {
   
-  def canvas(): Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ] = js.native
-  def canvas(
-    t: Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ]
-  ): ScatterPlot = js.native
+  def canvas(): Selection_[BaseType, Any, BaseType, Any] = js.native
+  def canvas(t: Selection_[BaseType, Any, BaseType, Any]): ScatterPlot = js.native
   @JSName("canvas")
-  var canvas_Original: IGetSet[
-    Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ], 
-    ScatterPlot
-  ] = js.native
+  var canvas_Original: IGetSet[Selection_[BaseType, Any, BaseType, Any], ScatterPlot] = js.native
   
   def customSymbol(): String | js.Function = js.native
   def customSymbol(t: String): ScatterPlot = js.native
@@ -89,10 +70,8 @@ trait ScatterPlot
   
   def resizeCanvas(): Unit = js.native
   
-  def symbol(): Any = js.native
-  def symbol(
-    t: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Symbol<any> */ Any
-  ): ScatterPlot = js.native
+  def symbol(): Symbol_[Any, Any] = js.native
+  def symbol(t: Symbol_[Any, Any]): ScatterPlot = js.native
   
   def symbolSize(): Double = js.native
   def symbolSize(t: Double): ScatterPlot = js.native
@@ -100,10 +79,7 @@ trait ScatterPlot
   var symbolSize_Original: IGetSet[Double, ScatterPlot] = js.native
   
   @JSName("symbol")
-  var symbol_Original: IGetSet[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Symbol<any> */ Any, 
-    ScatterPlot
-  ] = js.native
+  var symbol_Original: IGetSet[Symbol_[Any, Any], ScatterPlot] = js.native
   
   def useCanvas(): Boolean = js.native
   def useCanvas(t: Boolean): ScatterPlot = js.native

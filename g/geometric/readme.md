@@ -1,7 +1,7 @@
 
 # Scala.js typings for geometric
 
-Typings are for version 2.2
+Typings are for version 2.5
 
 ## Library description:
 A JavaScript library with geometric functions.

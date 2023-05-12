@@ -16,8 +16,10 @@ trait Schedule
   // Indicates whether offer shift requests are enabled for the schedule.
   var offerShiftRequestsEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
+  // The open shift requests in the schedule.
   var openShiftChangeRequests: js.UndefOr[NullableOption[js.Array[OpenShiftChangeRequest]]] = js.undefined
   
+  // The set of open shifts in a scheduling group in the schedule.
   var openShifts: js.UndefOr[NullableOption[js.Array[OpenShift]]] = js.undefined
   
   // Indicates whether open shifts are enabled for the schedule.

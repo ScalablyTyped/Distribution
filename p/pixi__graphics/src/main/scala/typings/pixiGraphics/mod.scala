@@ -4,10 +4,10 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.pixiCore.mod.BatchDrawCall
 import typings.pixiCore.mod.Matrix
 import typings.pixiCore.mod.Point
+import typings.pixiGraphics.anon.Adaptive
 import typings.pixiGraphics.anon.TypeofArcUtils
 import typings.pixiGraphics.anon.TypeofBezierUtils
 import typings.pixiGraphics.anon.TypeofQuadraticUtils
-import typings.pixiGraphics.libConstMod.IGraphicsCurvesSettings
 import typings.pixiGraphics.libUtilsIshapebuildcommandMod.IShapeBuildCommand
 import typings.pixiMath.libConstMod.SHAPES
 import typings.pixiMath.mod.IShape
@@ -23,9 +23,40 @@ object mod {
   open class FillStyle ()
     extends typings.pixiGraphics.libStylesFillStyleMod.FillStyle
   
-  @JSImport("@pixi/graphics", "GRAPHICS_CURVES")
-  @js.native
-  val GRAPHICS_CURVES: IGraphicsCurvesSettings = js.native
+  object GRAPHICS_CURVES {
+    
+    @JSImport("@pixi/graphics", "GRAPHICS_CURVES")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@pixi/graphics", "GRAPHICS_CURVES.adaptive")
+    @js.native
+    def adaptive: Boolean = js.native
+    inline def adaptive_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("adaptive")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@pixi/graphics", "GRAPHICS_CURVES.epsilon")
+    @js.native
+    def epsilon: Double = js.native
+    inline def epsilon_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("epsilon")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@pixi/graphics", "GRAPHICS_CURVES.maxLength")
+    @js.native
+    def maxLength: Double = js.native
+    inline def maxLength_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxLength")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@pixi/graphics", "GRAPHICS_CURVES.maxSegments")
+    @js.native
+    def maxSegments: Double = js.native
+    inline def maxSegments_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxSegments")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@pixi/graphics", "GRAPHICS_CURVES.minSegments")
+    @js.native
+    def minSegments: Double = js.native
+    inline def minSegments_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minSegments")(x.asInstanceOf[js.Any])
+    
+    inline def segmentsCount(length: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("_segmentsCount")(length.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def segmentsCount(length: Double, defaultSegments: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("_segmentsCount")(length.asInstanceOf[js.Any], defaultSegments.asInstanceOf[js.Any])).asInstanceOf[Double]
+  }
   
   @JSImport("@pixi/graphics", "Graphics")
   @js.native
@@ -51,6 +82,21 @@ object mod {
     @js.native
     def _TEMP_POINT: Point = js.native
     inline def _TEMP_POINT_=(x: Point): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TEMP_POINT")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Graphics curves resolution settings. If `adaptive` flag is set to `true`,
+      * the resolution is calculated based on the curve's length to ensure better visual quality.
+      * Adaptive draw works with `bezierCurveTo` and `quadraticCurveTo`.
+      * @static
+      * @property {boolean} [adaptive=true] - flag indicating if the resolution should be adaptive
+      * @property {number} [maxLength=10] - maximal length of a single segment of the curve (if adaptive = false, ignored)
+      * @property {number} [minSegments=8] - minimal number of segments in the curve (if adaptive = false, ignored)
+      * @property {number} [maxSegments=2048] - maximal number of segments in the curve (if adaptive = false, ignored)
+      * @property {number} [epsilon=0.0001] - precision of the curve fitting
+      */
+    @JSImport("@pixi/graphics", "Graphics.curves")
+    @js.native
+    val curves: Adaptive = js.native
   }
   
   @JSImport("@pixi/graphics", "GraphicsData")
@@ -103,11 +149,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    /**
-      * The maximum number of points to consider an object "batchable",
-      * able to be batched by the renderer's batch system.
-    \
-      */
+    /** The maximum number of points to consider an object "batchable", able to be batched by the renderer's batch system. */
     @JSImport("@pixi/graphics", "GraphicsGeometry.BATCHABLE_SIZE")
     @js.native
     def BATCHABLE_SIZE: Double = js.native
@@ -146,6 +188,41 @@ object mod {
   @js.native
   open class LineStyle ()
     extends typings.pixiGraphics.libStylesLineStyleMod.LineStyle
+  
+  object curves {
+    
+    @JSImport("@pixi/graphics", "curves")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@pixi/graphics", "curves.adaptive")
+    @js.native
+    def adaptive: Boolean = js.native
+    inline def adaptive_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("adaptive")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@pixi/graphics", "curves.epsilon")
+    @js.native
+    def epsilon: Double = js.native
+    inline def epsilon_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("epsilon")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@pixi/graphics", "curves.maxLength")
+    @js.native
+    def maxLength: Double = js.native
+    inline def maxLength_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxLength")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@pixi/graphics", "curves.maxSegments")
+    @js.native
+    def maxSegments: Double = js.native
+    inline def maxSegments_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxSegments")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@pixi/graphics", "curves.minSegments")
+    @js.native
+    def minSegments: Double = js.native
+    inline def minSegments_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minSegments")(x.asInstanceOf[js.Any])
+    
+    inline def segmentsCount(length: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("_segmentsCount")(length.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def segmentsCount(length: Double, defaultSegments: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("_segmentsCount")(length.asInstanceOf[js.Any], defaultSegments.asInstanceOf[js.Any])).asInstanceOf[Double]
+  }
   
   object graphicsUtils {
     

@@ -155,6 +155,8 @@ object dns {
   @js.native
   val V4MAPPED: Double = js.native
   
+  inline def getDefaultResultOrder(): ipv4first | verbatim = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultResultOrder")().asInstanceOf[ipv4first | verbatim]
+  
   inline def getServers(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getServers")().asInstanceOf[js.Array[String]]
   
   inline def lookup(hostname: String): js.Promise[js.Tuple2[String, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple2[String, Double]]]
@@ -207,6 +209,49 @@ object dns {
     @js.native
     val ^ : js.Any = js.native
     
+    /**
+      * An independent resolver for DNS requests.
+      *
+      * Creating a new resolver uses the default server settings. Setting
+      * the servers used for a resolver using `resolver.setServers()` does not affect
+      * other resolvers:
+      *
+      * ```js
+      * const { Resolver } = require('node:dns').promises;
+      * const resolver = new Resolver();
+      * resolver.setServers(['4.4.4.4']);
+      *
+      * // This request will use the server at 4.4.4.4, independent of global settings.
+      * resolver.resolve4('example.org').then((addresses) => {
+      *   // ...
+      * });
+      *
+      * // Alternatively, the same code can be written using async-await style.
+      * (async function() {
+      *   const addresses = await resolver.resolve4('example.org');
+      * })();
+      * ```
+      *
+      * The following methods from the `dnsPromises` API are available:
+      *
+      * * `resolver.getServers()`
+      * * `resolver.resolve()`
+      * * `resolver.resolve4()`
+      * * `resolver.resolve6()`
+      * * `resolver.resolveAny()`
+      * * `resolver.resolveCaa()`
+      * * `resolver.resolveCname()`
+      * * `resolver.resolveMx()`
+      * * `resolver.resolveNaptr()`
+      * * `resolver.resolveNs()`
+      * * `resolver.resolvePtr()`
+      * * `resolver.resolveSoa()`
+      * * `resolver.resolveSrv()`
+      * * `resolver.resolveTxt()`
+      * * `resolver.reverse()`
+      * * `resolver.setServers()`
+      * @since v10.6.0
+      */
     @JSImport("mz", "dns.promises.Resolver")
     @js.native
     open class Resolver ()
@@ -247,7 +292,7 @@ object dns {
       *
       * `dnsPromises.lookup()` does not necessarily have anything to do with the DNS
       * protocol. The implementation uses an operating system facility that can
-      * associate names with addresses, and vice versa. This implementation can have
+      * associate names with addresses and vice versa. This implementation can have
       * subtle but important consequences on the behavior of any Node.js program. Please
       * take some time to consult the `Implementation considerations section` before
       * using `dnsPromises.lookup()`.
@@ -255,7 +300,7 @@ object dns {
       * Example usage:
       *
       * ```js
-      * const dns = require('dns');
+      * const dns = require('node:dns');
       * const dnsPromises = dns.promises;
       * const options = {
       *   family: 6,
@@ -291,7 +336,7 @@ object dns {
       * On error, the `Promise` is rejected with an `Error` object, where `err.code`is the error code.
       *
       * ```js
-      * const dnsPromises = require('dns').promises;
+      * const dnsPromises = require('node:dns').promises;
       * dnsPromises.lookupService('127.0.0.1', 22).then((result) => {
       *   console.log(result.hostname, result.service);
       *   // Prints: localhost ssh
@@ -395,7 +440,7 @@ object dns {
     inline def resolveMx(hostname: String): js.Promise[js.Array[MxRecord]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveMx")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[MxRecord]]]
     
     /**
-      * Uses the DNS protocol to resolve regular expression based records (`NAPTR`records) for the `hostname`. On success, the `Promise` is resolved with an array
+      * Uses the DNS protocol to resolve regular expression-based records (`NAPTR`records) for the `hostname`. On success, the `Promise` is resolved with an array
       * of objects with the following properties:
       *
       * * `flags`
@@ -530,7 +575,7 @@ object dns {
       * * `ipv4first`: sets default `verbatim` `false`.
       * * `verbatim`: sets default `verbatim` `true`.
       *
-      * The default is `ipv4first` and `dnsPromises.setDefaultResultOrder()` have
+      * The default is `verbatim` and `dnsPromises.setDefaultResultOrder()` have
       * higher priority than `--dns-result-order`. When using `worker threads`,`dnsPromises.setDefaultResultOrder()` from the main thread won't affect the
       * default dns orders in workers.
       * @since v16.4.0, v14.18.0

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("dynogels", "AWS.HttpRequest")
 @js.native
 open class HttpRequest protected ()
-  extends typings.awsSdk.mod.HttpRequest {
+  extends typings.awsSdk2Types.mod.HttpRequest {
   /**
     * Constructs HttpRequest object with provided endpoint and region
     */
-  def this(endpoint: typings.awsSdk.libEndpointMod.Endpoint, region: String) = this()
+  def this(endpoint: typings.awsSdk2Types.libEndpointMod.Endpoint, region: String) = this()
 }

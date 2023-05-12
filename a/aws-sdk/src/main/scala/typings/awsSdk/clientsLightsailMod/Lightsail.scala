@@ -329,6 +329,20 @@ trait Lightsail extends Service {
   ): Request[CreateDomainEntryResult, AWSError] = js.native
   
   /**
+    * Creates two URLs that are used to access a virtual computer’s graphical user interface (GUI) session. The primary URL initiates a web-based NICE DCV session to the virtual computer's application. The secondary URL initiates a web-based NICE DCV session to the virtual computer's operating session.  Use StartGUISession to open the session.
+    */
+  def createGUISessionAccessDetails(): Request[CreateGUISessionAccessDetailsResult, AWSError] = js.native
+  def createGUISessionAccessDetails(callback: js.Function2[/* err */ AWSError, /* data */ CreateGUISessionAccessDetailsResult, Unit]): Request[CreateGUISessionAccessDetailsResult, AWSError] = js.native
+  /**
+    * Creates two URLs that are used to access a virtual computer’s graphical user interface (GUI) session. The primary URL initiates a web-based NICE DCV session to the virtual computer's application. The secondary URL initiates a web-based NICE DCV session to the virtual computer's operating session.  Use StartGUISession to open the session.
+    */
+  def createGUISessionAccessDetails(params: CreateGUISessionAccessDetailsRequest): Request[CreateGUISessionAccessDetailsResult, AWSError] = js.native
+  def createGUISessionAccessDetails(
+    params: CreateGUISessionAccessDetailsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateGUISessionAccessDetailsResult, Unit]
+  ): Request[CreateGUISessionAccessDetailsResult, AWSError] = js.native
+  
+  /**
     * Creates a snapshot of a specific virtual private server, or instance. You can use a snapshot to create a new instance that is based on that snapshot. The create instance snapshot operation supports tag-based access control via request tags. For more information, see the Amazon Lightsail Developer Guide.
     */
   def createInstanceSnapshot(): Request[CreateInstanceSnapshotResult, AWSError] = js.native
@@ -1139,6 +1153,20 @@ trait Lightsail extends Service {
   ): Request[ContainerServicesListResult, AWSError] = js.native
   
   /**
+    * Retrieves information about the cost estimate for a specified resource. A cost estimate will not generate for a resource that has been deleted.
+    */
+  def getCostEstimate(): Request[GetCostEstimateResult, AWSError] = js.native
+  def getCostEstimate(callback: js.Function2[/* err */ AWSError, /* data */ GetCostEstimateResult, Unit]): Request[GetCostEstimateResult, AWSError] = js.native
+  /**
+    * Retrieves information about the cost estimate for a specified resource. A cost estimate will not generate for a resource that has been deleted.
+    */
+  def getCostEstimate(params: GetCostEstimateRequest): Request[GetCostEstimateResult, AWSError] = js.native
+  def getCostEstimate(
+    params: GetCostEstimateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetCostEstimateResult, Unit]
+  ): Request[GetCostEstimateResult, AWSError] = js.native
+  
+  /**
     * Returns information about a specific block storage disk.
     */
   def getDisk(): Request[GetDiskResult, AWSError] = js.native
@@ -1947,6 +1975,20 @@ trait Lightsail extends Service {
   ): Request[SetResourceAccessForBucketResult, AWSError] = js.native
   
   /**
+    * Initiates a graphical user interface (GUI) session that’s used to access a virtual computer’s operating system and application. The session will be active for 1 hour. Use this action to resume the session after it expires. 
+    */
+  def startGUISession(): Request[StartGUISessionResult, AWSError] = js.native
+  def startGUISession(callback: js.Function2[/* err */ AWSError, /* data */ StartGUISessionResult, Unit]): Request[StartGUISessionResult, AWSError] = js.native
+  /**
+    * Initiates a graphical user interface (GUI) session that’s used to access a virtual computer’s operating system and application. The session will be active for 1 hour. Use this action to resume the session after it expires. 
+    */
+  def startGUISession(params: StartGUISessionRequest): Request[StartGUISessionResult, AWSError] = js.native
+  def startGUISession(
+    params: StartGUISessionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartGUISessionResult, Unit]
+  ): Request[StartGUISessionResult, AWSError] = js.native
+  
+  /**
     * Starts a specific Amazon Lightsail instance from a stopped state. To restart an instance, use the reboot instance operation.  When you start a stopped instance, Lightsail assigns a new public IP address to the instance. To use the same IP address after stopping and starting an instance, create a static IP address and attach it to the instance. For more information, see the Amazon Lightsail Developer Guide.  The start instance operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def startInstance(): Request[StartInstanceResult, AWSError] = js.native
@@ -1973,6 +2015,20 @@ trait Lightsail extends Service {
     params: StartRelationalDatabaseRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartRelationalDatabaseResult, Unit]
   ): Request[StartRelationalDatabaseResult, AWSError] = js.native
+  
+  /**
+    * Terminates a web-based NICE DCV session that’s used to access a virtual computer’s operating system or application. The session will close and any unsaved data will be lost.
+    */
+  def stopGUISession(): Request[StopGUISessionResult, AWSError] = js.native
+  def stopGUISession(callback: js.Function2[/* err */ AWSError, /* data */ StopGUISessionResult, Unit]): Request[StopGUISessionResult, AWSError] = js.native
+  /**
+    * Terminates a web-based NICE DCV session that’s used to access a virtual computer’s operating system or application. The session will close and any unsaved data will be lost.
+    */
+  def stopGUISession(params: StopGUISessionRequest): Request[StopGUISessionResult, AWSError] = js.native
+  def stopGUISession(
+    params: StopGUISessionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StopGUISessionResult, Unit]
+  ): Request[StopGUISessionResult, AWSError] = js.native
   
   /**
     * Stops a specific Amazon Lightsail instance that is currently running.  When you start a stopped instance, Lightsail assigns a new public IP address to the instance. To use the same IP address after stopping and starting an instance, create a static IP address and attach it to the instance. For more information, see the Amazon Lightsail Developer Guide.  The stop instance operation supports tag-based access control via resource tags applied to the resource identified by instance name. For more information, see the Amazon Lightsail Developer Guide.

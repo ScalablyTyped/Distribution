@@ -17,7 +17,7 @@ trait DescribeTaskResponse extends StObject {
   var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the task execution that is syncing files.
+    * The Amazon Resource Name (ARN) of the task execution that is transferring files.
     */
   var CurrentTaskExecutionArn: js.UndefOr[TaskExecutionArn] = js.undefined
   
@@ -27,7 +27,7 @@ trait DescribeTaskResponse extends StObject {
   var DestinationLocationArn: js.UndefOr[LocationArn] = js.undefined
   
   /**
-    * The Amazon Resource Names (ARNs) of the destination elastic network interfaces (ENIs) that were created for your subnet.
+    * The Amazon Resource Names (ARNs) of the network interfaces created for your destination location. For more information, see Network interface requirements.
     */
   var DestinationNetworkInterfaceArns: js.UndefOr[typings.awsSdk.clientsDatasyncMod.DestinationNetworkInterfaceArns] = js.undefined
   
@@ -42,12 +42,12 @@ trait DescribeTaskResponse extends StObject {
   var ErrorDetail: js.UndefOr[String] = js.undefined
   
   /**
-    * A list of filter rules that determines which files to exclude from a task. The list should contain a single filter string that consists of the patterns to exclude. The patterns are delimited by "|" (that is, a pipe), for example, "/folder1|/folder2".   
+    * A list of filter rules that exclude specific data during your transfer. For more information and examples, see Filtering data transferred by DataSync.
     */
   var Excludes: js.UndefOr[FilterList] = js.undefined
   
   /**
-    * A list of filter rules that determines which files to include when running a task. The pattern contains a single filter string that consists of the patterns to include. The patterns are delimited by "|" (that is, a pipe), for example, "/folder1|/folder2".
+    * A list of filter rules that include specific data during your transfer. For more information and examples, see Filtering data transferred by DataSync.
     */
   var Includes: js.UndefOr[FilterList] = js.undefined
   
@@ -57,7 +57,7 @@ trait DescribeTaskResponse extends StObject {
   var Name: js.UndefOr[TagValue] = js.undefined
   
   /**
-    * The set of configuration options that control the behavior of a single execution of the task that occurs when you call StartTaskExecution. You can configure these options to preserve metadata such as user ID (UID) and group (GID), file permissions, data integrity verification, and so on. For each individual task execution, you can override these options by specifying the overriding OverrideOptions value to StartTaskExecution operation. 
+    * The configuration options that control the behavior of the StartTaskExecution operation. Some options include preserving file or object metadata and verifying data integrity. You can override these options for each task execution. For more information, see StartTaskExecution.
     */
   var Options: js.UndefOr[typings.awsSdk.clientsDatasyncMod.Options] = js.undefined
   
@@ -72,7 +72,7 @@ trait DescribeTaskResponse extends StObject {
   var SourceLocationArn: js.UndefOr[LocationArn] = js.undefined
   
   /**
-    * The Amazon Resource Names (ARNs) of the source elastic network interfaces (ENIs) that were created for your subnet.
+    * The Amazon Resource Names (ARNs) of the network interfaces created for your source location. For more information, see Network interface requirements.
     */
   var SourceNetworkInterfaceArns: js.UndefOr[typings.awsSdk.clientsDatasyncMod.SourceNetworkInterfaceArns] = js.undefined
   

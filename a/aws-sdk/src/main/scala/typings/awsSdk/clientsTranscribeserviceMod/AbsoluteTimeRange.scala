@@ -12,12 +12,12 @@ trait AbsoluteTimeRange extends StObject {
   var EndTime: js.UndefOr[TimestampMilliseconds] = js.undefined
   
   /**
-    * The time, in milliseconds, from the start of your media file until the value you specify in which Amazon Transcribe searches for your specified criteria.
+    * The time, in milliseconds, from the start of your media file until the specified value. Amazon Transcribe searches for your specified criteria in this time segment.
     */
   var First: js.UndefOr[TimestampMilliseconds] = js.undefined
   
   /**
-    * The time, in milliseconds, from the value you specify until the end of your media file in which Amazon Transcribe searches for your specified criteria.
+    * The time, in milliseconds, from the specified value until the end of your media file. Amazon Transcribe searches for your specified criteria in this time segment.
     */
   var Last: js.UndefOr[TimestampMilliseconds] = js.undefined
   

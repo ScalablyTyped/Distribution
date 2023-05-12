@@ -16,9 +16,7 @@ trait MedicationAdministration
      with DomainResource
      with _FhirResource {
   
-  var _instantiatesCanonical: js.UndefOr[js.Array[Element]] = js.undefined
-  
-  var _instantiatesUri: js.UndefOr[js.Array[Element]] = js.undefined
+  var _isSubPotent: js.UndefOr[Element] = js.undefined
   
   var _occurenceDateTime: js.UndefOr[Element] = js.undefined
   
@@ -37,9 +35,9 @@ trait MedicationAdministration
   var category: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
-    * The device used in administering the medication to the patient.  For example, a particular infusion pump.
+    * The device that is to be used for the administration of the medication (for example, PCA Pump).
     */
-  var device: js.UndefOr[js.Array[Reference]] = js.undefined
+  var device: js.UndefOr[js.Array[CodeableReference]] = js.undefined
   
   /**
     * Describes the medication dosage information details e.g. dose, rate, site, route, etc.
@@ -62,14 +60,9 @@ trait MedicationAdministration
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
-    * A protocol, guideline, orderset, or other definition that was adhered to in whole or in part by this event.
+    * An indication that the full dose was not administered.
     */
-  var instantiatesCanonical: js.UndefOr[js.Array[String]] = js.undefined
-  
-  /**
-    * The URL pointing to an externally maintained protocol, guideline, orderset or other definition that is adhered to in whole or in part by this MedicationAdministration.
-    */
-  var instantiatesUri: js.UndefOr[js.Array[String]] = js.undefined
+  var isSubPotent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If only a code is specified, then it needs to be a code for a specific product. If more information is required, then the use of the medication resource is recommended.  For example, if you require form or lot number, then you must reference the Medication resource.
@@ -92,12 +85,17 @@ trait MedicationAdministration
   var occurencePeriod: js.UndefOr[Period] = js.undefined
   
   /**
-    * A larger event of which this particular event is a component or step.
+    * A specific date/time or interval of time during which the administration took place (or did not take place). For many administrations, such as swallowing a tablet the use of dateTime is more appropriate.
+    */
+  var occurenceTiming: js.UndefOr[Timing] = js.undefined
+  
+  /**
+    * MedicationDispense will be used to indicate waste.
     */
   var partOf: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * Indicates who or what performed the medication administration and how they were involved.
+    * The performer of the medication treatment.  For devices this is the device that performed the administration of the medication.  An IV Pump would be an example of a device that is performing the administration. Both the IV Pump and the practitioner that set the rate or bolus on the pump can be listed as performers.
     */
   var performer: js.UndefOr[js.Array[MedicationAdministrationPerformer]] = js.undefined
   
@@ -129,6 +127,11 @@ trait MedicationAdministration
     * A code indicating why the administration was not performed.
     */
   var statusReason: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  
+  /**
+    * The reason or reasons why the full dose was not administered.
+    */
+  var subPotentReason: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * The person or animal or group receiving the medication.
@@ -166,11 +169,11 @@ object MedicationAdministration {
     
     inline def setCategoryVarargs(value: CodeableConcept*): Self = StObject.set(x, "category", js.Array(value*))
     
-    inline def setDevice(value: js.Array[Reference]): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: js.Array[CodeableReference]): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
-    inline def setDeviceVarargs(value: Reference*): Self = StObject.set(x, "device", js.Array(value*))
+    inline def setDeviceVarargs(value: CodeableReference*): Self = StObject.set(x, "device", js.Array(value*))
     
     inline def setDosage(value: MedicationAdministrationDosage): Self = StObject.set(x, "dosage", value.asInstanceOf[js.Any])
     
@@ -192,17 +195,9 @@ object MedicationAdministration {
     
     inline def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value*))
     
-    inline def setInstantiatesCanonical(value: js.Array[String]): Self = StObject.set(x, "instantiatesCanonical", value.asInstanceOf[js.Any])
+    inline def setIsSubPotent(value: Boolean): Self = StObject.set(x, "isSubPotent", value.asInstanceOf[js.Any])
     
-    inline def setInstantiatesCanonicalUndefined: Self = StObject.set(x, "instantiatesCanonical", js.undefined)
-    
-    inline def setInstantiatesCanonicalVarargs(value: String*): Self = StObject.set(x, "instantiatesCanonical", js.Array(value*))
-    
-    inline def setInstantiatesUri(value: js.Array[String]): Self = StObject.set(x, "instantiatesUri", value.asInstanceOf[js.Any])
-    
-    inline def setInstantiatesUriUndefined: Self = StObject.set(x, "instantiatesUri", js.undefined)
-    
-    inline def setInstantiatesUriVarargs(value: String*): Self = StObject.set(x, "instantiatesUri", js.Array(value*))
+    inline def setIsSubPotentUndefined: Self = StObject.set(x, "isSubPotent", js.undefined)
     
     inline def setMedication(value: CodeableReference): Self = StObject.set(x, "medication", value.asInstanceOf[js.Any])
     
@@ -219,6 +214,10 @@ object MedicationAdministration {
     inline def setOccurencePeriod(value: Period): Self = StObject.set(x, "occurencePeriod", value.asInstanceOf[js.Any])
     
     inline def setOccurencePeriodUndefined: Self = StObject.set(x, "occurencePeriod", js.undefined)
+    
+    inline def setOccurenceTiming(value: Timing): Self = StObject.set(x, "occurenceTiming", value.asInstanceOf[js.Any])
+    
+    inline def setOccurenceTimingUndefined: Self = StObject.set(x, "occurenceTiming", js.undefined)
     
     inline def setPartOf(value: js.Array[Reference]): Self = StObject.set(x, "partOf", value.asInstanceOf[js.Any])
     
@@ -256,6 +255,12 @@ object MedicationAdministration {
     
     inline def setStatusReasonVarargs(value: CodeableConcept*): Self = StObject.set(x, "statusReason", js.Array(value*))
     
+    inline def setSubPotentReason(value: js.Array[CodeableConcept]): Self = StObject.set(x, "subPotentReason", value.asInstanceOf[js.Any])
+    
+    inline def setSubPotentReasonUndefined: Self = StObject.set(x, "subPotentReason", js.undefined)
+    
+    inline def setSubPotentReasonVarargs(value: CodeableConcept*): Self = StObject.set(x, "subPotentReason", js.Array(value*))
+    
     inline def setSubject(value: Reference): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     inline def setSupportingInformation(value: js.Array[Reference]): Self = StObject.set(x, "supportingInformation", value.asInstanceOf[js.Any])
@@ -264,17 +269,9 @@ object MedicationAdministration {
     
     inline def setSupportingInformationVarargs(value: Reference*): Self = StObject.set(x, "supportingInformation", js.Array(value*))
     
-    inline def set_instantiatesCanonical(value: js.Array[Element]): Self = StObject.set(x, "_instantiatesCanonical", value.asInstanceOf[js.Any])
+    inline def set_isSubPotent(value: Element): Self = StObject.set(x, "_isSubPotent", value.asInstanceOf[js.Any])
     
-    inline def set_instantiatesCanonicalUndefined: Self = StObject.set(x, "_instantiatesCanonical", js.undefined)
-    
-    inline def set_instantiatesCanonicalVarargs(value: Element*): Self = StObject.set(x, "_instantiatesCanonical", js.Array(value*))
-    
-    inline def set_instantiatesUri(value: js.Array[Element]): Self = StObject.set(x, "_instantiatesUri", value.asInstanceOf[js.Any])
-    
-    inline def set_instantiatesUriUndefined: Self = StObject.set(x, "_instantiatesUri", js.undefined)
-    
-    inline def set_instantiatesUriVarargs(value: Element*): Self = StObject.set(x, "_instantiatesUri", js.Array(value*))
+    inline def set_isSubPotentUndefined: Self = StObject.set(x, "_isSubPotent", js.undefined)
     
     inline def set_occurenceDateTime(value: Element): Self = StObject.set(x, "_occurenceDateTime", value.asInstanceOf[js.Any])
     

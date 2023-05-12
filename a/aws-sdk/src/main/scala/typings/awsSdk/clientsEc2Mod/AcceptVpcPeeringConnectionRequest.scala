@@ -14,12 +14,12 @@ trait AcceptVpcPeeringConnectionRequest extends StObject {
   /**
     * The ID of the VPC peering connection. You must specify this parameter in the request.
     */
-  var VpcPeeringConnectionId: js.UndefOr[typings.awsSdk.clientsEc2Mod.VpcPeeringConnectionId] = js.undefined
+  var VpcPeeringConnectionId: VpcPeeringConnectionIdWithResolver
 }
 object AcceptVpcPeeringConnectionRequest {
   
-  inline def apply(): AcceptVpcPeeringConnectionRequest = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(VpcPeeringConnectionId: VpcPeeringConnectionIdWithResolver): AcceptVpcPeeringConnectionRequest = {
+    val __obj = js.Dynamic.literal(VpcPeeringConnectionId = VpcPeeringConnectionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceptVpcPeeringConnectionRequest]
   }
   
@@ -30,8 +30,6 @@ object AcceptVpcPeeringConnectionRequest {
     
     inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    inline def setVpcPeeringConnectionId(value: VpcPeeringConnectionId): Self = StObject.set(x, "VpcPeeringConnectionId", value.asInstanceOf[js.Any])
-    
-    inline def setVpcPeeringConnectionIdUndefined: Self = StObject.set(x, "VpcPeeringConnectionId", js.undefined)
+    inline def setVpcPeeringConnectionId(value: VpcPeeringConnectionIdWithResolver): Self = StObject.set(x, "VpcPeeringConnectionId", value.asInstanceOf[js.Any])
   }
 }

@@ -21,10 +21,10 @@ trait ZoomControl
 object ZoomControl {
   
   /**
-    * @property zoomSpeed {number=} - the speed if zooming in and out in levels per millisecond, defaults to 0.05
-    * @property alignment {H.ui.LayoutAlignment=} - the layout alignment which should be applied to this control, defaults to H.ui.LayoutAlignment.RIGHT_MIDDLE
-    * @property slider {boolean=} - flag whether to show the slider (true) or not, defaults to false
-    * @property sliderSnaps {boolean=} - flag whether slider should snap to the integer values or not, defaults to false. This option has effect only if slider is enabled.
+    * zoomSpeed {number=} - the speed if zooming in and out in levels per millisecond, defaults to 0.05
+    * alignment {H.ui.LayoutAlignment=} - the layout alignment which should be applied to this control, defaults to H.ui.LayoutAlignment.RIGHT_MIDDLE
+    * slider {boolean=} - flag whether to show the slider (true) or not, defaults to false
+    * sliderSnaps {boolean=} - flag whether slider should snap to the integer values or not, defaults to false. This option has effect only if slider is enabled.
     */
   trait Options extends StObject {
     

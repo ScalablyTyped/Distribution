@@ -151,7 +151,7 @@ open class FormBuilder () extends StObject {
   
   /**
     * @description
-    * Returns a FormBuilder in which automatically constructed @see FormControl} elements
+    * Returns a FormBuilder in which automatically constructed `FormControl` elements
     * have `{nonNullable: true}` and are non-nullable.
     *
     * **Constructing non-nullable controls**

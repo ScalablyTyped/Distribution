@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateText extends StObject {
   
   /** Text alignment ('left', 'centre', 'center', 'right'). (optional, default 'left') */
-  var align: js.UndefOr[String] = js.undefined
+  var align: js.UndefOr[TextAlign] = js.undefined
   
   /** The resolution (size) at which to render the text. Does not take effect if `height` is specified. (optional, default `72`) */
   var dpi: js.UndefOr[Double] = js.undefined
@@ -41,6 +41,9 @@ trait CreateText extends StObject {
   
   /** Integral number of pixels to word-wrap at. Lines of text wider than this will be broken at word boundaries. (optional, default `0`) */
   var width: js.UndefOr[Double] = js.undefined
+  
+  /** Word wrapping style when width is provided, one of: 'word', 'char', 'charWord' (prefer char, fallback to word) or 'none' */
+  var wrap: js.UndefOr[TextWrap] = js.undefined
 }
 object CreateText {
   
@@ -52,7 +55,7 @@ object CreateText {
   @scala.inline
   implicit open class MutableBuilder[Self <: CreateText] (val x: Self) extends AnyVal {
     
-    inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: TextAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
@@ -89,5 +92,9 @@ object CreateText {
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    
+    inline def setWrap(value: TextWrap): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+    
+    inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
   }
 }

@@ -5,16 +5,29 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * The `CustomProperties` object represents custom properties that are specific to a particular item and specific to a mail add-in for Outlook.
-  * For example, there might be a need for a mail add-in to save some data that is specific to the current email message that activated the add-in.
-  * If the user revisits the same message in the future and activates the mail add-in again, the add-in will be able to retrieve the data that had
-  * been saved as custom properties. **Important**: The maximum length of a `CustomProperties` JSON object is 2500 characters.
+  * The `CustomProperties` object represents custom properties that are specific to a particular mail item and specific to an Outlook add-in.
+  * For example, there might be a need for an add-in to save some data that's specific to the current message that activated the add-in.
+  * If the user revisits the same message in the future and activates the add-in again, the add-in will be able to retrieve the data that had
+  * been saved as custom properties. 
   *
-  * Because Outlook on Mac doesn't cache custom properties, if the user's network goes down, mail add-ins cannot access their custom properties.
+  * To learn more about `CustomProperties`, see
+  * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/metadata-for-an-outlook-add-in | Get and set add-in metadata for an Outlook add-in}.
   *
   * @remarks
+  * [Api set: Mailbox 1.1]
+  * 
+  * When using custom properties in your add-in, keep in mind that:
+  * 
+  * - Custom properties saved while in compose mode aren't transmitted to recipients of the mail item. When a message or appointment with custom
+  * properties is sent, its properties can be accessed from the item in the Sent Items folder.
+  * If you want to make custom data accessible to recipients, consider using
+  * {@link https://learn.microsoft.com/javascript/api/outlook/office.internetheaders | InternetHeaders} instead.
+  * 
+  * - The maximum length of a `CustomProperties` JSON object is 2500 characters.
   *
-  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+  * - Outlook on Mac doesn't cache custom properties. If the user's network goes down, mail add-ins can't access their custom properties.
+  * 
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
   *
   * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
@@ -27,8 +40,9 @@ trait CustomProperties extends StObject {
     * @returns The value of the specified custom property.
     *
     * @remarks
-    *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * [Api set: Mailbox 1.1]
+    * 
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
@@ -50,7 +64,7 @@ trait CustomProperties extends StObject {
     * @remarks
     * [Api set: Mailbox 1.9]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
@@ -63,7 +77,7 @@ trait CustomProperties extends StObject {
     *
     * @remarks
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
@@ -72,7 +86,7 @@ trait CustomProperties extends StObject {
   def remove(name: String): Unit = js.native
   
   /**
-    * Saves item-specific custom properties to the server.
+    * Saves custom properties to a message or appointment.
     *
     * You must call the `saveAsync` method to persist any changes made with the `set` method or the `remove` method of the `CustomProperties` object.
     * The saving action is asynchronous.
@@ -84,8 +98,9 @@ trait CustomProperties extends StObject {
     * Your callback function should handle this error accordingly.
     *
     * @remarks
-    *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * [Api set: Mailbox 1.1]
+    * 
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
@@ -94,7 +109,7 @@ trait CustomProperties extends StObject {
   def saveAsync(): Unit = js.native
   def saveAsync(asyncContext: Any): Unit = js.native
   /**
-    * Saves item-specific custom properties to the server.
+    * Saves custom properties to a message or appointment.
     *
     * You must call the `saveAsync` method to persist any changes made with the `set` method or the `remove` method of the `CustomProperties` object.
     * The saving action is asynchronous.
@@ -106,8 +121,12 @@ trait CustomProperties extends StObject {
     * Your callback function should handle this error accordingly.
     *
     * @remarks
-    *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * [Api set: Mailbox 1.1]
+    * 
+    * **Important**: In Outlook on Windows, custom properties saved while in compose mode only persist after the item being composed is closed or
+    * after `Office.context.mailbox.item.saveAsync` is called.
+    * 
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
@@ -121,15 +140,17 @@ trait CustomProperties extends StObject {
   /**
     * Sets the specified property to the specified value.
     *
-    * The `set` method sets the specified property to the specified value. You must use the `saveAsync` method to save the property to the server.
+    * The `set` method sets the specified property to the specified value. To ensure that the set property and value persist on the mail item,
+    * you must call the `saveAsync` method.
     *
     * The `set` method creates a new property if the specified property does not already exist;
     * otherwise, the existing value is replaced with the new value.
     * The `value` parameter can be of any type; however, it is always passed to the server as a string.
     *
     * @remarks
-    *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * [Api set: Mailbox 1.1]
+    * 
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *

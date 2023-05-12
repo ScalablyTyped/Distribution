@@ -17,6 +17,11 @@ trait RepositorySummary extends StObject {
   var arn: js.UndefOr[Arn] = js.undefined
   
   /**
+    * A timestamp that represents the date and time the repository was created.
+    */
+  var createdTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
     *  The description of the repository. 
     */
   var description: js.UndefOr[Description] = js.undefined
@@ -53,6 +58,10 @@ object RepositorySummary {
     inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "createdTime", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedTimeUndefined: Self = StObject.set(x, "createdTime", js.undefined)
     
     inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

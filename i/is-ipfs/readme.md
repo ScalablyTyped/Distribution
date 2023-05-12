@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-ipfs
 
-Typings are for version 7.0.3
+Typings are for version 8.0.1
 
 ## Library description:
 A set of utilities to help identify IPFS resources on the web

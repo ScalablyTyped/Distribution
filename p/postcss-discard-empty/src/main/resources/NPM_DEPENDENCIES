@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "postcss-discard-empty" : "5.1.1"
+      "postcss-discard-empty" : "6.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "postcss-discard-empty" : "5.1.1"
+      "postcss-discard-empty" : "6.0.0"
     }
   ],
   "compile-devDependencies" : [

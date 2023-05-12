@@ -501,6 +501,7 @@ object sapMPluginsDataStateIndicatorMod {
     
     /**
       * @SINCE 1.89
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:applyFilter applyFilter} to attached listeners.
       *
@@ -517,6 +518,7 @@ object sapMPluginsDataStateIndicatorMod {
     
     /**
       * @SINCE 1.89
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:clearFilter clearFilter} to attached listeners.
       *
@@ -533,6 +535,7 @@ object sapMPluginsDataStateIndicatorMod {
     
     /**
       * @SINCE 1.103
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:close close} to attached listeners.
       *
@@ -545,6 +548,8 @@ object sapMPluginsDataStateIndicatorMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:dataStateChange dataStateChange} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the

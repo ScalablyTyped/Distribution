@@ -1,6 +1,6 @@
 package typings.dynogels.mod.AWS
 
-import typings.awsSdk.libCredentialsMod.CredentialsOptions
+import typings.awsSdk2Types.libCredentialsMod.CredentialsOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("dynogels", "AWS.Credentials")
 @js.native
 open class Credentials protected ()
-  extends typings.awsSdk.mod.Credentials {
+  extends typings.awsSdk2Types.mod.Credentials {
   /**
     * Creates a Credentials object with a given set of credential information as an options hash.
     *

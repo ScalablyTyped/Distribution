@@ -2,8 +2,8 @@ package typings.openui5
 
 import typings.openui5.anon.ClearTextFirst
 import typings.openui5.anon.DomElement
-import typings.openui5.anon.Interval
-import typings.openui5.anon.Selector
+import typings.openui5.anon.SelectorControlSelector
+import typings.openui5.anon.Timeout
 import typings.openui5.sap.ClassInfo
 import typings.std.Element
 import typings.std.Record
@@ -87,7 +87,7 @@ object sapUiTestRecordReplayMod {
     inline def findAllDOMElementsByControlSelector(/**
       * Options for the search
       */
-    oOptions: Selector): js.Promise[js.Array[Any] | js.Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllDOMElementsByControlSelector")(oOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Any] | js.Error]]
+    oOptions: SelectorControlSelector): js.Promise[js.Array[Any] | js.Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllDOMElementsByControlSelector")(oOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Any] | js.Error]]
     
     /**
       * Find the best control selector for a DOM element. A selector uniquely represents a single element. The
@@ -110,7 +110,7 @@ object sapUiTestRecordReplayMod {
     inline def findDOMElementByControlSelector(/**
       * Options for the search
       */
-    oOptions: Selector): js.Promise[Element | js.Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("findDOMElementByControlSelector")(oOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Element | js.Error]]
+    oOptions: SelectorControlSelector): js.Promise[Element | js.Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("findDOMElementByControlSelector")(oOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Element | js.Error]]
     
     /**
       * Returns a metadata object for class sap.ui.test.RecordReplay.
@@ -138,7 +138,7 @@ object sapUiTestRecordReplayMod {
     inline def waitForUI5(/**
       * Override default wait options like polling timeout and interval
       */
-    oOptions: Interval): js.Promise[js.UndefOr[js.Error]] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForUI5")(oOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[js.Error]]]
+    oOptions: Timeout): js.Promise[js.UndefOr[js.Error]] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForUI5")(oOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[js.Error]]]
   }
   
   @js.native

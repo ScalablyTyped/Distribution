@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseParticleSystem extends StObject {
+trait BaseParticleSystem
+  extends StObject
+     with IClipPlanesHolder {
   
   /* protected */ var _alphaRemapGradients: Nullable[js.Array[FactorGradient]] = js.native
   

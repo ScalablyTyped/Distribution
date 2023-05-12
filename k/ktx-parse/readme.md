@@ -1,7 +1,7 @@
 
 # Scala.js typings for ktx-parse
 
-Typings are for version 0.4.5
+Typings are for version 0.5.0
 
 ## Library description:
 KTX 2.0 (.ktx2) parser and serializer.

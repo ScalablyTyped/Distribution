@@ -2,6 +2,7 @@ package typings.chainsafeLibp2pGossipsub
 
 import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.TopicStr
 import typings.std.Record
+import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,8 +20,8 @@ object distSrcScorePeerStatsMod {
     /** expiration time of the score stats for disconnected peers */
     var expire: Double
     
-    /** IP tracking; store as string for easy processing */
-    var ips: js.Array[String]
+    /** IP tracking; store as set for easy processing */
+    var knownIPs: Set[String]
     
     /** per topic stats */
     var topics: Record[TopicStr, TopicStats]
@@ -31,10 +32,10 @@ object distSrcScorePeerStatsMod {
       behaviourPenalty: Double,
       connected: Boolean,
       expire: Double,
-      ips: js.Array[String],
+      knownIPs: Set[String],
       topics: Record[TopicStr, TopicStats]
     ): PeerStats = {
-      val __obj = js.Dynamic.literal(behaviourPenalty = behaviourPenalty.asInstanceOf[js.Any], connected = connected.asInstanceOf[js.Any], expire = expire.asInstanceOf[js.Any], ips = ips.asInstanceOf[js.Any], topics = topics.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(behaviourPenalty = behaviourPenalty.asInstanceOf[js.Any], connected = connected.asInstanceOf[js.Any], expire = expire.asInstanceOf[js.Any], knownIPs = knownIPs.asInstanceOf[js.Any], topics = topics.asInstanceOf[js.Any])
       __obj.asInstanceOf[PeerStats]
     }
     
@@ -47,9 +48,7 @@ object distSrcScorePeerStatsMod {
       
       inline def setExpire(value: Double): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
       
-      inline def setIps(value: js.Array[String]): Self = StObject.set(x, "ips", value.asInstanceOf[js.Any])
-      
-      inline def setIpsVarargs(value: String*): Self = StObject.set(x, "ips", js.Array(value*))
+      inline def setKnownIPs(value: Set[String]): Self = StObject.set(x, "knownIPs", value.asInstanceOf[js.Any])
       
       inline def setTopics(value: Record[TopicStr, TopicStats]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
     }

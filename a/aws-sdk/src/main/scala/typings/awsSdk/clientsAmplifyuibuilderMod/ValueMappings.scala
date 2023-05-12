@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ValueMappings extends StObject {
   
   /**
+    * The information to bind fields to data at runtime.
+    */
+  var bindingProperties: js.UndefOr[FormInputBindingProperties] = js.undefined
+  
+  /**
     * The value and display value pairs.
     */
   var values: ValueMappingList
@@ -20,6 +25,10 @@ object ValueMappings {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: ValueMappings] (val x: Self) extends AnyVal {
+    
+    inline def setBindingProperties(value: FormInputBindingProperties): Self = StObject.set(x, "bindingProperties", value.asInstanceOf[js.Any])
+    
+    inline def setBindingPropertiesUndefined: Self = StObject.set(x, "bindingProperties", js.undefined)
     
     inline def setValues(value: ValueMappingList): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     

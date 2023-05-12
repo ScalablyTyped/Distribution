@@ -4,8 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../binder/anim-binder.js').AnimBinder} AnimBinder */
-/** @typedef {import('./anim-clip.js').AnimClip} AnimClip */
 /**
   * AnimEvaluator blends multiple sets of animation clips together.
   *
@@ -17,7 +15,8 @@ open class AnimEvaluator protected () extends StObject {
   /**
     * Create a new animation evaluator.
     *
-    * @param {AnimBinder} binder - interface resolves curve paths to instances of {@link AnimTarget}.
+    * @param {import('../binder/anim-binder.js').AnimBinder} binder - interface resolves curve
+    * paths to instances of {@link AnimTarget}.
     */
   def this(binder: AnimBinder) = this()
   
@@ -32,7 +31,7 @@ open class AnimEvaluator protected () extends StObject {
   /**
     * Add a clip to the evaluator.
     *
-    * @param {AnimClip} clip - The clip to add to the evaluator.
+    * @param {import('./anim-clip.js').AnimClip} clip - The clip to add to the evaluator.
     */
   def addClip(clip: AnimClip): Unit = js.native
   
@@ -41,7 +40,7 @@ open class AnimEvaluator protected () extends StObject {
   /**
     * The list of animation clips.
     *
-    * @type {AnimClip[]}
+    * @type {import('./anim-clip.js').AnimClip[]}
     */
   def clips: js.Array[AnimClip] = js.native
   
@@ -49,7 +48,7 @@ open class AnimEvaluator protected () extends StObject {
     * Returns the first clip which matches the given name, or null if no such clip was found.
     *
     * @param {string} name - Name of the clip to find.
-    * @returns {AnimClip|null} - The clip with the given name or null if no such clip was found.
+    * @returns {import('./anim-clip.js').AnimClip|null} - The clip with the given name or null if no such clip was found.
     */
   def findClip(name: String): AnimClip | Null = js.native
   
@@ -73,6 +72,10 @@ open class AnimEvaluator protected () extends StObject {
     *
     * @param {number} deltaTime - The amount of time that has passed since the last update, in
     * seconds.
+    * @param {number} outputAnimation - Whether the evaluator should output the results of the update to the bound animation targets.
     */
   def update(deltaTime: Double): Unit = js.native
+  def update(deltaTime: Double, outputAnimation: Double): Unit = js.native
+  
+  def updateClipTrack(name: Any, animTrack: Any): Unit = js.native
 }

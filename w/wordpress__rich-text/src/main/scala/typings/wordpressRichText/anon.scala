@@ -1,13 +1,45 @@
 package typings.wordpressRichText
 
+import typings.react.mod.RefObject
+import typings.std.HTMLElement
 import typings.std.Range
-import typings.wordpressRichText.mod.NamedFormatConfiguration
-import typings.wordpressRichText.mod.Value
+import typings.wordpressRichText.createMod.Format
+import typings.wordpressRichText.createMod.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
+  
+  trait EditableContentElement extends StObject {
+    
+    var editableContentElement: HTMLElement | Null
+    
+    var settings: js.UndefOr[Format] = js.undefined
+    
+    var value: Value
+  }
+  object EditableContentElement {
+    
+    inline def apply(value: Value): EditableContentElement = {
+      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], editableContentElement = null)
+      __obj.asInstanceOf[EditableContentElement]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditableContentElement] (val x: Self) extends AnyVal {
+      
+      inline def setEditableContentElement(value: HTMLElement): Self = StObject.set(x, "editableContentElement", value.asInstanceOf[js.Any])
+      
+      inline def setEditableContentElementNull: Self = StObject.set(x, "editableContentElement", null)
+      
+      inline def setSettings(value: Format): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      
+      inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+      
+      inline def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    }
+  }
   
   trait Element extends StObject {
     
@@ -102,6 +134,34 @@ object anon {
       ): Self = StObject.set(x, "multilineTag", value.asInstanceOf[js.Any])
       
       inline def setMultilineTagUndefined: Self = StObject.set(x, "multilineTag", js.undefined)
+      
+      inline def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Ref extends StObject {
+    
+    var ref: RefObject[HTMLElement]
+    
+    var settings: js.UndefOr[NamedFormatConfiguration] = js.undefined
+    
+    var value: Value
+  }
+  object Ref {
+    
+    inline def apply(ref: RefObject[HTMLElement], value: Value): Ref = {
+      val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Ref]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ref] (val x: Self) extends AnyVal {
+      
+      inline def setRef(value: RefObject[HTMLElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setSettings(value: NamedFormatConfiguration): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      
+      inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
       
       inline def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

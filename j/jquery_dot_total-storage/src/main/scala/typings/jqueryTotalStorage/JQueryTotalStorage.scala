@@ -5,11 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-* @desc Set the value of a key to a string
+* @description Set the value of a key to a string
 * @example $.totalStorage('the_key', 'the_value');
-* @desc Set the value of a key to a number
+* @description Set the value of a key to a number
 * @example $.totalStorage('the_key', 800.2);
-* @desc Set the value of a key to a complex Array
+* @description Set the value of a key to a complex Array
 * @example    var myArray = new Array();
 *       myArray.push({name:'Jared', company:'Upstatement', zip:63124});
 *       myArray.push({name:'McGruff', company:'Police', zip:60652};
@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JQueryTotalStorage extends StObject {
   
   /**
-    * @desc Set or get a key's value
+    * @description Set or get a key's value
     * @param key Key to set.
     * @param value Value to set for key. If ommited, current value for key is returned.
     * @param options Not implemented.
@@ -33,24 +33,24 @@ trait JQueryTotalStorage extends StObject {
   def apply(key: String, value: Unit, options: JQueryTotalStorageOptions): Any = js.native
   
   /**
-    * @desc Delete item by key
+    * @description Delete item by key
     * @param key Key of item to delete
     */
   def deleteItem(key: String): Boolean = js.native
   
   /**
-    * @desc Get all set values
+    * @description Get all set values
     */
   def getAll(): js.Array[Any] = js.native
   
   /**
-    * @desc Get a key's value
+    * @description Get a key's value
     * @param key Key to get.
     */
   def getItem(key: String): Any = js.native
   
   /**
-    * @desc Set a key's value
+    * @description Set a key's value
     * @param key Key to set.
     * @param value Value to set for key.
     */

@@ -54,6 +54,27 @@ trait GetBootstrapBrokersResponse extends StObject {
     
     */
   var BootstrapBrokerStringTls: js.UndefOr[string] = js.undefined
+  
+  /**
+    * 
+    A string containing one or more DNS names (or IP) and SASL/IAM port pairs for VPC connectivity.
+    
+    */
+  var BootstrapBrokerStringVpcConnectivitySaslIam: js.UndefOr[string] = js.undefined
+  
+  /**
+    * 
+    A string containing one or more DNS names (or IP) and SASL/SCRAM port pairs for VPC connectivity.
+    
+    */
+  var BootstrapBrokerStringVpcConnectivitySaslScram: js.UndefOr[string] = js.undefined
+  
+  /**
+    * 
+    A string containing one or more DNS names (or IP) and TLS port pairs for VPC connectivity.
+    
+    */
+  var BootstrapBrokerStringVpcConnectivityTls: js.UndefOr[string] = js.undefined
 }
 object GetBootstrapBrokersResponse {
   
@@ -92,5 +113,17 @@ object GetBootstrapBrokersResponse {
     inline def setBootstrapBrokerStringTlsUndefined: Self = StObject.set(x, "BootstrapBrokerStringTls", js.undefined)
     
     inline def setBootstrapBrokerStringUndefined: Self = StObject.set(x, "BootstrapBrokerString", js.undefined)
+    
+    inline def setBootstrapBrokerStringVpcConnectivitySaslIam(value: string): Self = StObject.set(x, "BootstrapBrokerStringVpcConnectivitySaslIam", value.asInstanceOf[js.Any])
+    
+    inline def setBootstrapBrokerStringVpcConnectivitySaslIamUndefined: Self = StObject.set(x, "BootstrapBrokerStringVpcConnectivitySaslIam", js.undefined)
+    
+    inline def setBootstrapBrokerStringVpcConnectivitySaslScram(value: string): Self = StObject.set(x, "BootstrapBrokerStringVpcConnectivitySaslScram", value.asInstanceOf[js.Any])
+    
+    inline def setBootstrapBrokerStringVpcConnectivitySaslScramUndefined: Self = StObject.set(x, "BootstrapBrokerStringVpcConnectivitySaslScram", js.undefined)
+    
+    inline def setBootstrapBrokerStringVpcConnectivityTls(value: string): Self = StObject.set(x, "BootstrapBrokerStringVpcConnectivityTls", value.asInstanceOf[js.Any])
+    
+    inline def setBootstrapBrokerStringVpcConnectivityTlsUndefined: Self = StObject.set(x, "BootstrapBrokerStringVpcConnectivityTls", js.undefined)
   }
 }

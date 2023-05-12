@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
   * You'll have to cast your way around this structure, unfortunately. 
   * TS definition: {{{
-  {[ K in TEvent['type'] | '' | '*' ]:? K extends '' | '*'? xstate.xstate/lib/types.TransitionConfigOrTarget<TContext, TEvent> : xstate.xstate/lib/types.TransitionConfigOrTarget<TContext, xstate.xstate/lib/types.ExtractEvent<TEvent, K>>}
+  {[ K in TEvent['type'] | '' | '*' ]:? K extends '' | '*'? xstate.xstate/lib/types.TransitionConfigOrTarget<TContext, TEvent, TEvent> : xstate.xstate/lib/types.TransitionConfigOrTarget<TContext, xstate.xstate/lib/types.ExtractEvent<TEvent, K>, TEvent>}
   }}}
   */
 @js.native

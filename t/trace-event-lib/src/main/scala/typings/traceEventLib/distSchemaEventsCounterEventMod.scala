@@ -1,6 +1,7 @@
 package typings.traceEventLib
 
 import typings.traceEventLib.distSchemaEventsEventMod.Event
+import typings.traceEventLib.distSchemaEventsTraceEventMod.TraceEvent
 import typings.traceEventLib.traceEventLibStrings.C
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +11,8 @@ object distSchemaEventsCounterEventMod {
   
   trait CounterEvent
     extends StObject
-       with Event {
+       with Event
+       with TraceEvent {
     
     /**
       * Reportedly, counter events do not have categories.

@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PostRequestBodyContentApplicationjsonEncoding extends StObject {
   
+  /** Create a blob */
   var post: RequestBodyContentApplicationjsonEncoding
 }
 object PostRequestBodyContentApplicationjsonEncoding {

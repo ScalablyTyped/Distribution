@@ -113,7 +113,7 @@ trait Response extends ServerResponse[IncomingMessage] {
     * @param    code the status code
     * @param    url to redirect to
     * @param    next - mandatory, to complete the response and trigger audit logger
-    * @emits    redirect
+    * @fires    redirect
     */
   def redirect(code: Double, url: String, next: Next): Unit = js.native
   /**
@@ -122,7 +122,7 @@ trait Response extends ServerResponse[IncomingMessage] {
     * `next` is mandatory, to complete the response and trigger audit logger.
     * @param    url to redirect to or options object to configure a redirect or
     * @param    next - mandatory, to complete the response and trigger audit logger
-    * @emits    redirect
+    * @fires    redirect
     */
   def redirect(opts: String, next: Next): Unit = js.native
   def redirect(opts: RedirectOptions, next: Next): Unit = js.native

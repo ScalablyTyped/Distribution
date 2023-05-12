@@ -62,6 +62,10 @@ object wavesurferJsStrings {
   inline def chrome: chrome = "chrome".asInstanceOf[chrome]
   
   @js.native
+  sealed trait contentEdited extends StObject
+  inline def contentEdited: contentEdited = "contentEdited".asInstanceOf[contentEdited]
+  
+  @js.native
   sealed trait cosine
     extends StObject
        with WindowFunction

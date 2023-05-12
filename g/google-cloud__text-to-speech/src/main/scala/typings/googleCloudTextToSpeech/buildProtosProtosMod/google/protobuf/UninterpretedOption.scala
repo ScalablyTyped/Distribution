@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.googleCloudTextToSpeech.buildProtosProtosMod.google.protobuf.UninterpretedOption.INamePart
 import typings.googleGax.mod.protobuf.Reader
 import typings.googleGax.mod.protobuf.Writer
-import typings.long.mod.^
 import typings.protobufjs.mod.IConversionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -40,11 +39,11 @@ open class UninterpretedOption ()
   
   /** UninterpretedOption negativeIntValue. */
   @JSName("negativeIntValue")
-  var negativeIntValue_UninterpretedOption: Double | ^ | String = js.native
+  var negativeIntValue_UninterpretedOption: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ scala.Any) | String = js.native
   
   /** UninterpretedOption positiveIntValue. */
   @JSName("positiveIntValue")
-  var positiveIntValue_UninterpretedOption: Double | ^ | String = js.native
+  var positiveIntValue_UninterpretedOption: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ scala.Any) | String = js.native
   
   /** UninterpretedOption stringValue. */
   @JSName("stringValue")
@@ -54,7 +53,7 @@ open class UninterpretedOption ()
     * Converts this UninterpretedOption to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[Any] = js.native
+  def toJSON(): StringDictionary[scala.Any] = js.native
 }
 object UninterpretedOption {
   
@@ -86,7 +85,7 @@ object UninterpretedOption {
       * Converts this NamePart to JSON.
       * @returns JSON object
       */
-    def toJSON(): StringDictionary[Any] = js.native
+    def toJSON(): StringDictionary[scala.Any] = js.native
   }
   object NamePart {
     
@@ -154,7 +153,7 @@ object UninterpretedOption {
       * @returns NamePart
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[Any]): NamePart = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[NamePart]
+    inline def fromObject(`object`: StringDictionary[scala.Any]): NamePart = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[NamePart]
     
     /**
       * Gets the default type url for NamePart
@@ -172,8 +171,8 @@ object UninterpretedOption {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: NamePart): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
-    inline def toObject(message: NamePart, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: NamePart): StringDictionary[scala.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[scala.Any]]
+    inline def toObject(message: NamePart, options: IConversionOptions): StringDictionary[scala.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[scala.Any]]
     
     /**
       * Verifies a NamePart message.
@@ -181,7 +180,7 @@ object UninterpretedOption {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[scala.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /**
@@ -244,7 +243,7 @@ object UninterpretedOption {
     * @returns UninterpretedOption
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[Any]): UninterpretedOption = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[UninterpretedOption]
+  inline def fromObject(`object`: StringDictionary[scala.Any]): UninterpretedOption = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[UninterpretedOption]
   
   /**
     * Gets the default type url for UninterpretedOption
@@ -262,8 +261,8 @@ object UninterpretedOption {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: UninterpretedOption): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
-  inline def toObject(message: UninterpretedOption, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: UninterpretedOption): StringDictionary[scala.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[scala.Any]]
+  inline def toObject(message: UninterpretedOption, options: IConversionOptions): StringDictionary[scala.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[scala.Any]]
   
   /**
     * Verifies an UninterpretedOption message.
@@ -271,7 +270,7 @@ object UninterpretedOption {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[scala.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of a NamePart. */
   trait INamePart extends StObject {

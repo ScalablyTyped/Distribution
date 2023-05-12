@@ -664,10 +664,8 @@ object sapUiModelOdataV2OdataannotationsMod {
       * @deprecated (since 1.37.0) - only kept for compatibility with V1 API, use {@link #getData} instead.
       *
       * Returns the parsed and merged annotation data object.
-      *
-      * @returns The annotation data
       */
-    def getAnnotationsData(): js.Object = js.native
+    var getAnnotationsData: Unit = js.native
     
     /**
       * Returns the parsed and merged annotation data object.
@@ -810,7 +808,7 @@ object sapUiModelOdataV2OdataannotationsMod {
   trait loadedParameters extends StObject {
     
     /**
-      * An array of results and Errors (@see sap.ui.model.v2.ODataAnnotations#success and @see sap.ui.model.v2.ODataAnnotations#error)
+      * An array of results and Errors (see {@link sap.ui.model.v2.ODataAnnotations#success} and {@link sap.ui.model.v2.ODataAnnotations#error})
       * that occurred while loading a group of annotations
       */
     var result: (js.Array[js.Error | Source]) | Any

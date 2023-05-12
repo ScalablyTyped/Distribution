@@ -1,596 +1,560 @@
 package typings.swiper.anon
 
-import typings.swiper.swiperStrings.`class`
-import typings.swiper.swiperStrings.`lazy`
-import typings.swiper.swiperStrings.a11y
-import typings.swiper.swiperStrings.allowSlideNext
-import typings.swiper.swiperStrings.allowSlidePrev
-import typings.swiper.swiperStrings.allowTouchMove
-import typings.swiper.swiperStrings.autoHeight
-import typings.swiper.swiperStrings.autoplay
-import typings.swiper.swiperStrings.breakpoints
-import typings.swiper.swiperStrings.cardsEffect
-import typings.swiper.swiperStrings.centerInsufficientSlides
-import typings.swiper.swiperStrings.centeredSlides
-import typings.swiper.swiperStrings.centeredSlidesBounds
-import typings.swiper.swiperStrings.config
-import typings.swiper.swiperStrings.containerModifierClass
-import typings.swiper.swiperStrings.controller
-import typings.swiper.swiperStrings.coverflowEffect
-import typings.swiper.swiperStrings.creativeEffect
-import typings.swiper.swiperStrings.cssMode
-import typings.swiper.swiperStrings.cubeEffect
-import typings.swiper.swiperStrings.direction
-import typings.swiper.swiperStrings.edgeSwipeDetection
-import typings.swiper.swiperStrings.edgeSwipeThreshold
-import typings.swiper.swiperStrings.effect
-import typings.swiper.swiperStrings.enabled
-import typings.swiper.swiperStrings.fadeEffect
-import typings.swiper.swiperStrings.flipEffect
-import typings.swiper.swiperStrings.focusableElements
-import typings.swiper.swiperStrings.followFinger
-import typings.swiper.swiperStrings.freeMode
-import typings.swiper.swiperStrings.grabCursor
-import typings.swiper.swiperStrings.grid
-import typings.swiper.swiperStrings.hashNavigation
-import typings.swiper.swiperStrings.height
-import typings.swiper.swiperStrings.history
-import typings.swiper.swiperStrings.id
-import typings.swiper.swiperStrings.initialSlide
-import typings.swiper.swiperStrings.keyboard
-import typings.swiper.swiperStrings.longSwipes
-import typings.swiper.swiperStrings.longSwipesMs
-import typings.swiper.swiperStrings.longSwipesRatio
-import typings.swiper.swiperStrings.loop
-import typings.swiper.swiperStrings.loopAdditionalSlides
-import typings.swiper.swiperStrings.loopFillGroupWithBlank
-import typings.swiper.swiperStrings.loopPreventsSlide
-import typings.swiper.swiperStrings.loopedSlides
-import typings.swiper.swiperStrings.loopedSlidesLimit
-import typings.swiper.swiperStrings.maxBackfaceHiddenSlides
-import typings.swiper.swiperStrings.mousewheel
-import typings.swiper.swiperStrings.navigation
-import typings.swiper.swiperStrings.nested
-import typings.swiper.swiperStrings.noSwiping
-import typings.swiper.swiperStrings.noSwipingClass
-import typings.swiper.swiperStrings.noSwipingSelector
-import typings.swiper.swiperStrings.normalizeSlideIndex
-import typings.swiper.swiperStrings.observeParents
-import typings.swiper.swiperStrings.observeSlideChildren
-import typings.swiper.swiperStrings.on
-import typings.swiper.swiperStrings.pagination
-import typings.swiper.swiperStrings.parallax
-import typings.swiper.swiperStrings.passiveListeners
-import typings.swiper.swiperStrings.preloadImages
-import typings.swiper.swiperStrings.preventClicks
-import typings.swiper.swiperStrings.preventClicksPropagation
-import typings.swiper.swiperStrings.preventInteractionOnTransition
-import typings.swiper.swiperStrings.resistance
-import typings.swiper.swiperStrings.resistanceRatio
-import typings.swiper.swiperStrings.resizeObserver
-import typings.swiper.swiperStrings.rewind
-import typings.swiper.swiperStrings.roundLengths
-import typings.swiper.swiperStrings.runCallbacksOnInit
-import typings.swiper.swiperStrings.scrollbar
-import typings.swiper.swiperStrings.setWrapperSize
-import typings.swiper.swiperStrings.shortSwipes
-import typings.swiper.swiperStrings.simulateTouch
-import typings.swiper.swiperStrings.slideActiveClass
-import typings.swiper.swiperStrings.slideBlankClass
-import typings.swiper.swiperStrings.slideClass
-import typings.swiper.swiperStrings.slideDuplicateActiveClass
-import typings.swiper.swiperStrings.slideDuplicateClass
-import typings.swiper.swiperStrings.slideDuplicateNextClass
-import typings.swiper.swiperStrings.slideDuplicatePrevClass
-import typings.swiper.swiperStrings.slideNextClass
-import typings.swiper.swiperStrings.slidePrevClass
-import typings.swiper.swiperStrings.slideToClickedSlide
-import typings.swiper.swiperStrings.slideVisibleClass
-import typings.swiper.swiperStrings.slidesOffsetAfter
-import typings.swiper.swiperStrings.slidesOffsetBefore
-import typings.swiper.swiperStrings.slidesPerGroup
-import typings.swiper.swiperStrings.slidesPerGroupSkip
-import typings.swiper.swiperStrings.slidesPerView
-import typings.swiper.swiperStrings.spaceBetween
-import typings.swiper.swiperStrings.speed
-import typings.swiper.swiperStrings.swipeHandler
-import typings.swiper.swiperStrings.threshold
-import typings.swiper.swiperStrings.thumbs
-import typings.swiper.swiperStrings.touchAngle
-import typings.swiper.swiperStrings.touchEventsTarget
-import typings.swiper.swiperStrings.touchMoveStopPropagation
-import typings.swiper.swiperStrings.touchRatio
-import typings.swiper.swiperStrings.touchReleaseOnEdges
-import typings.swiper.swiperStrings.touchStartForcePreventDefault
-import typings.swiper.swiperStrings.touchStartPreventDefault
-import typings.swiper.swiperStrings.uniqueNavElements
-import typings.swiper.swiperStrings.updateOnImagesReady
-import typings.swiper.swiperStrings.updateOnWindowResize
-import typings.swiper.swiperStrings.url
-import typings.swiper.swiperStrings.userAgent
-import typings.swiper.swiperStrings.virtual
-import typings.swiper.swiperStrings.virtualTranslate
-import typings.swiper.swiperStrings.watchOverflow
-import typings.swiper.swiperStrings.watchSlidesProgress
-import typings.swiper.swiperStrings.width
-import typings.swiper.swiperStrings.wrapperClass
-import typings.swiper.swiperStrings.zoom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait A11y extends StObject {
   
-  var a11y: typings.swiper.swiperStrings.a11y
+  var a11y: `3`
   
-  var allowSlideNext: typings.swiper.swiperStrings.allowSlideNext
+  var allowSlideNext: DefaultType
   
-  var allowSlidePrev: typings.swiper.swiperStrings.allowSlidePrev
+  var allowSlidePrev: DefaultType
   
-  var allowTouchMove: typings.swiper.swiperStrings.allowTouchMove
+  var allowTouchMove: DefaultType
   
-  var autoHeight: typings.swiper.swiperStrings.autoHeight
+  var autoHeight: DefaultType
   
-  var autoplay: typings.swiper.swiperStrings.autoplay
+  var autoplay: `4`
   
-  var breakpoints: typings.swiper.swiperStrings.breakpoints
+  var breakpoints: `0`
   
-  var cardsEffect: typings.swiper.swiperStrings.cardsEffect
+  var cardsEffect: `11`
   
-  var centerInsufficientSlides: typings.swiper.swiperStrings.centerInsufficientSlides
+  var centerInsufficientSlides: DefaultType
   
-  var centeredSlides: typings.swiper.swiperStrings.centeredSlides
+  var centeredSlides: DefaultType
   
-  var centeredSlidesBounds: typings.swiper.swiperStrings.centeredSlidesBounds
+  var centeredSlidesBounds: DefaultType
   
-  var `class`: typings.swiper.swiperStrings.`class`
+  var containerModifierClass: TypeStringConstructor
   
-  var config: typings.swiper.swiperStrings.config
+  var controller: `5`
   
-  var containerModifierClass: typings.swiper.swiperStrings.containerModifierClass
+  var coverflowEffect: `6`
   
-  var controller: typings.swiper.swiperStrings.controller
+  var creativeEffect: `10`
   
-  var coverflowEffect: typings.swiper.swiperStrings.coverflowEffect
+  var cssMode: DefaultType
   
-  var creativeEffect: typings.swiper.swiperStrings.creativeEffect
+  var cubeEffect: `7`
   
-  var cssMode: typings.swiper.swiperStrings.cssMode
+  var direction: TypePropType
   
-  var cubeEffect: typings.swiper.swiperStrings.cubeEffect
+  var edgeSwipeDetection: DefaultUndefinedType
   
-  var direction: typings.swiper.swiperStrings.direction
+  var edgeSwipeThreshold: TypeNumberConstructor
   
-  var edgeSwipeDetection: typings.swiper.swiperStrings.edgeSwipeDetection
+  var effect: DefaultUndefinedTypePropType
   
-  var edgeSwipeThreshold: typings.swiper.swiperStrings.edgeSwipeThreshold
+  var fadeEffect: `8`
   
-  var effect: typings.swiper.swiperStrings.effect
+  var flipEffect: `9`
   
-  var enabled: typings.swiper.swiperStrings.enabled
+  var focusableElements: TypeStringConstructor
   
-  var fadeEffect: typings.swiper.swiperStrings.fadeEffect
+  var followFinger: DefaultType
   
-  var flipEffect: typings.swiper.swiperStrings.flipEffect
+  var freeMode: `23`
   
-  var focusableElements: typings.swiper.swiperStrings.focusableElements
+  var grabCursor: DefaultType
   
-  var followFinger: typings.swiper.swiperStrings.followFinger
+  var grid: `24`
   
-  var freeMode: typings.swiper.swiperStrings.freeMode
+  var hashNavigation: `12`
   
-  var grabCursor: typings.swiper.swiperStrings.grabCursor
+  var height: TypeNumberConstructor
   
-  var grid: typings.swiper.swiperStrings.grid
+  var history: `13`
   
-  var hashNavigation: typings.swiper.swiperStrings.hashNavigation
+  var init: DefaultType
   
-  var height: typings.swiper.swiperStrings.height
+  var initialSlide: TypeNumberConstructor
   
-  var history: typings.swiper.swiperStrings.history
+  var keyboard: `14`
   
-  var id: typings.swiper.swiperStrings.id
+  var lazyPreloadPrevNext: TypeNumberConstructor
   
-  var initialSlide: typings.swiper.swiperStrings.initialSlide
+  var lazyPreloaderClass: TypeStringConstructor
   
-  var keyboard: typings.swiper.swiperStrings.keyboard
+  var longSwipes: DefaultType
   
-  var `lazy`: typings.swiper.swiperStrings.`lazy`
+  var longSwipesMs: TypeNumberConstructor
   
-  var longSwipes: typings.swiper.swiperStrings.longSwipes
+  var longSwipesRatio: TypeNumberConstructor
   
-  var longSwipesMs: typings.swiper.swiperStrings.longSwipesMs
+  var loop: DefaultType
   
-  var longSwipesRatio: typings.swiper.swiperStrings.longSwipesRatio
+  var loopPreventsSliding: DefaultType
   
-  var loop: typings.swiper.swiperStrings.loop
+  var loopedSlides: TypeNumberConstructor
   
-  var loopAdditionalSlides: typings.swiper.swiperStrings.loopAdditionalSlides
+  var maxBackfaceHiddenSlides: TypeNumberConstructor
   
-  var loopFillGroupWithBlank: typings.swiper.swiperStrings.loopFillGroupWithBlank
+  var modules: Type
   
-  var loopPreventsSlide: typings.swiper.swiperStrings.loopPreventsSlide
+  var mousewheel: `15`
   
-  var loopedSlides: typings.swiper.swiperStrings.loopedSlides
+  var navigation: `16`
   
-  var loopedSlidesLimit: typings.swiper.swiperStrings.loopedSlidesLimit
+  var nested: DefaultType
   
-  var maxBackfaceHiddenSlides: typings.swiper.swiperStrings.maxBackfaceHiddenSlides
+  var noSwiping: DefaultType
   
-  var mousewheel: typings.swiper.swiperStrings.mousewheel
+  var noSwipingClass: TypeStringConstructor
   
-  var navigation: typings.swiper.swiperStrings.navigation
+  var noSwipingSelector: TypeStringConstructor
   
-  var nested: typings.swiper.swiperStrings.nested
+  var normalizeSlideIndex: DefaultType
   
-  var noSwiping: typings.swiper.swiperStrings.noSwiping
+  var observeParents: DefaultType
   
-  var noSwipingClass: typings.swiper.swiperStrings.noSwipingClass
+  var observeSlideChildren: DefaultType
   
-  var noSwipingSelector: typings.swiper.swiperStrings.noSwipingSelector
+  var observer: DefaultType
   
-  var normalizeSlideIndex: typings.swiper.swiperStrings.normalizeSlideIndex
+  var oneWayMovement: DefaultTypePropType
   
-  var observeParents: typings.swiper.swiperStrings.observeParents
+  var pagination: `17`
   
-  var observeSlideChildren: typings.swiper.swiperStrings.observeSlideChildren
+  var parallax: `18`
   
-  var on: typings.swiper.swiperStrings.on
+  var passiveListeners: DefaultType
   
-  var pagination: typings.swiper.swiperStrings.pagination
+  var preventClicks: DefaultType
   
-  var parallax: typings.swiper.swiperStrings.parallax
+  var preventClicksPropagation: DefaultType
   
-  var passiveListeners: typings.swiper.swiperStrings.passiveListeners
+  var preventInteractionOnTransition: DefaultType
   
-  var preloadImages: typings.swiper.swiperStrings.preloadImages
+  var resistance: DefaultType
   
-  var preventClicks: typings.swiper.swiperStrings.preventClicks
+  var resistanceRatio: TypeNumberConstructor
   
-  var preventClicksPropagation: typings.swiper.swiperStrings.preventClicksPropagation
+  var resizeObserver: DefaultType
   
-  var preventInteractionOnTransition: typings.swiper.swiperStrings.preventInteractionOnTransition
+  var rewind: DefaultType
   
-  var resistance: typings.swiper.swiperStrings.resistance
+  var roundLengths: DefaultType
   
-  var resistanceRatio: typings.swiper.swiperStrings.resistanceRatio
+  var runCallbacksOnInit: DefaultType
   
-  var resizeObserver: typings.swiper.swiperStrings.resizeObserver
+  var scrollbar: `19`
   
-  var rewind: typings.swiper.swiperStrings.rewind
+  var setWrapperSize: DefaultType
   
-  var roundLengths: typings.swiper.swiperStrings.roundLengths
+  var shortSwipes: DefaultType
   
-  var runCallbacksOnInit: typings.swiper.swiperStrings.runCallbacksOnInit
+  var simulateTouch: DefaultType
   
-  var scrollbar: typings.swiper.swiperStrings.scrollbar
+  var slideActiveClass: TypeStringConstructor
   
-  var setWrapperSize: typings.swiper.swiperStrings.setWrapperSize
+  var slideClass: TypeStringConstructor
   
-  var shortSwipes: typings.swiper.swiperStrings.shortSwipes
+  var slideNextClass: TypeStringConstructor
   
-  var simulateTouch: typings.swiper.swiperStrings.simulateTouch
+  var slidePrevClass: TypeStringConstructor
   
-  var slideActiveClass: typings.swiper.swiperStrings.slideActiveClass
+  var slideToClickedSlide: DefaultType
   
-  var slideBlankClass: typings.swiper.swiperStrings.slideBlankClass
+  var slideVisibleClass: TypeStringConstructor
   
-  var slideClass: typings.swiper.swiperStrings.slideClass
+  var slidesOffsetAfter: TypeNumberConstructor
   
-  var slideDuplicateActiveClass: typings.swiper.swiperStrings.slideDuplicateActiveClass
+  var slidesOffsetBefore: TypeNumberConstructor
   
-  var slideDuplicateClass: typings.swiper.swiperStrings.slideDuplicateClass
+  var slidesPerGroup: TypeNumberConstructor
   
-  var slideDuplicateNextClass: typings.swiper.swiperStrings.slideDuplicateNextClass
+  var slidesPerGroupAuto: DefaultType
   
-  var slideDuplicatePrevClass: typings.swiper.swiperStrings.slideDuplicatePrevClass
+  var slidesPerGroupSkip: TypeNumberConstructor
   
-  var slideNextClass: typings.swiper.swiperStrings.slideNextClass
+  var slidesPerView: `2`
   
-  var slidePrevClass: typings.swiper.swiperStrings.slidePrevClass
+  var spaceBetween: `1`
   
-  var slideToClickedSlide: typings.swiper.swiperStrings.slideToClickedSlide
+  var speed: TypeNumberConstructor
   
-  var slideVisibleClass: typings.swiper.swiperStrings.slideVisibleClass
+  var swipeHandler: DefaultType
   
-  var slidesOffsetAfter: typings.swiper.swiperStrings.slidesOffsetAfter
+  var tag: Default
   
-  var slidesOffsetBefore: typings.swiper.swiperStrings.slidesOffsetBefore
+  var threshold: TypeNumberConstructor
   
-  var slidesPerGroup: typings.swiper.swiperStrings.slidesPerGroup
+  var thumbs: `20`
   
-  var slidesPerGroupSkip: typings.swiper.swiperStrings.slidesPerGroupSkip
+  var touchAngle: TypeNumberConstructor
   
-  var slidesPerView: typings.swiper.swiperStrings.slidesPerView
+  var touchEventsTarget: DefaultUndefined
   
-  var spaceBetween: typings.swiper.swiperStrings.spaceBetween
+  var touchMoveStopPropagation: DefaultType
   
-  var speed: typings.swiper.swiperStrings.speed
+  var touchRatio: TypeNumberConstructor
   
-  var swipeHandler: typings.swiper.swiperStrings.swipeHandler
+  var touchReleaseOnEdges: DefaultType
   
-  var threshold: typings.swiper.swiperStrings.threshold
+  var touchStartForcePreventDefault: DefaultType
   
-  var thumbs: typings.swiper.swiperStrings.thumbs
+  var touchStartPreventDefault: DefaultType
   
-  var touchAngle: typings.swiper.swiperStrings.touchAngle
+  var uniqueNavElements: DefaultType
   
-  var touchEventsTarget: typings.swiper.swiperStrings.touchEventsTarget
+  var updateOnWindowResize: DefaultType
   
-  var touchMoveStopPropagation: typings.swiper.swiperStrings.touchMoveStopPropagation
+  var url: TypeStringConstructor
   
-  var touchRatio: typings.swiper.swiperStrings.touchRatio
+  var userAgent: TypeStringConstructor
   
-  var touchReleaseOnEdges: typings.swiper.swiperStrings.touchReleaseOnEdges
+  var virtual: `21`
   
-  var touchStartForcePreventDefault: typings.swiper.swiperStrings.touchStartForcePreventDefault
+  var virtualTranslate: DefaultType
   
-  var touchStartPreventDefault: typings.swiper.swiperStrings.touchStartPreventDefault
+  var watchOverflow: DefaultType
   
-  var uniqueNavElements: typings.swiper.swiperStrings.uniqueNavElements
+  var watchSlidesProgress: DefaultType
   
-  var updateOnImagesReady: typings.swiper.swiperStrings.updateOnImagesReady
+  var width: TypeNumberConstructor
   
-  var updateOnWindowResize: typings.swiper.swiperStrings.updateOnWindowResize
+  var wrapperClass: TypeStringConstructor
   
-  var url: typings.swiper.swiperStrings.url
+  var wrapperTag: Default
   
-  var userAgent: typings.swiper.swiperStrings.userAgent
-  
-  var virtual: typings.swiper.swiperStrings.virtual
-  
-  var virtualTranslate: typings.swiper.swiperStrings.virtualTranslate
-  
-  var watchOverflow: typings.swiper.swiperStrings.watchOverflow
-  
-  var watchSlidesProgress: typings.swiper.swiperStrings.watchSlidesProgress
-  
-  var width: typings.swiper.swiperStrings.width
-  
-  var wrapperClass: typings.swiper.swiperStrings.wrapperClass
-  
-  var zoom: typings.swiper.swiperStrings.zoom
+  var zoom: `22`
 }
 object A11y {
   
-  inline def apply(): A11y = {
-    val __obj = js.Dynamic.literal(a11y = "a11y", allowSlideNext = "allowSlideNext", allowSlidePrev = "allowSlidePrev", allowTouchMove = "allowTouchMove", autoHeight = "autoHeight", autoplay = "autoplay", breakpoints = "breakpoints", cardsEffect = "cardsEffect", centerInsufficientSlides = "centerInsufficientSlides", centeredSlides = "centeredSlides", centeredSlidesBounds = "centeredSlidesBounds", config = "config", containerModifierClass = "containerModifierClass", controller = "controller", coverflowEffect = "coverflowEffect", creativeEffect = "creativeEffect", cssMode = "cssMode", cubeEffect = "cubeEffect", direction = "direction", edgeSwipeDetection = "edgeSwipeDetection", edgeSwipeThreshold = "edgeSwipeThreshold", effect = "effect", enabled = "enabled", fadeEffect = "fadeEffect", flipEffect = "flipEffect", focusableElements = "focusableElements", followFinger = "followFinger", freeMode = "freeMode", grabCursor = "grabCursor", grid = "grid", hashNavigation = "hashNavigation", height = "height", history = "history", id = "id", initialSlide = "initialSlide", keyboard = "keyboard", longSwipes = "longSwipes", longSwipesMs = "longSwipesMs", longSwipesRatio = "longSwipesRatio", loop = "loop", loopAdditionalSlides = "loopAdditionalSlides", loopFillGroupWithBlank = "loopFillGroupWithBlank", loopPreventsSlide = "loopPreventsSlide", loopedSlides = "loopedSlides", loopedSlidesLimit = "loopedSlidesLimit", maxBackfaceHiddenSlides = "maxBackfaceHiddenSlides", mousewheel = "mousewheel", navigation = "navigation", nested = "nested", noSwiping = "noSwiping", noSwipingClass = "noSwipingClass", noSwipingSelector = "noSwipingSelector", normalizeSlideIndex = "normalizeSlideIndex", observeParents = "observeParents", observeSlideChildren = "observeSlideChildren", on = "on", pagination = "pagination", parallax = "parallax", passiveListeners = "passiveListeners", preloadImages = "preloadImages", preventClicks = "preventClicks", preventClicksPropagation = "preventClicksPropagation", preventInteractionOnTransition = "preventInteractionOnTransition", resistance = "resistance", resistanceRatio = "resistanceRatio", resizeObserver = "resizeObserver", rewind = "rewind", roundLengths = "roundLengths", runCallbacksOnInit = "runCallbacksOnInit", scrollbar = "scrollbar", setWrapperSize = "setWrapperSize", shortSwipes = "shortSwipes", simulateTouch = "simulateTouch", slideActiveClass = "slideActiveClass", slideBlankClass = "slideBlankClass", slideClass = "slideClass", slideDuplicateActiveClass = "slideDuplicateActiveClass", slideDuplicateClass = "slideDuplicateClass", slideDuplicateNextClass = "slideDuplicateNextClass", slideDuplicatePrevClass = "slideDuplicatePrevClass", slideNextClass = "slideNextClass", slidePrevClass = "slidePrevClass", slideToClickedSlide = "slideToClickedSlide", slideVisibleClass = "slideVisibleClass", slidesOffsetAfter = "slidesOffsetAfter", slidesOffsetBefore = "slidesOffsetBefore", slidesPerGroup = "slidesPerGroup", slidesPerGroupSkip = "slidesPerGroupSkip", slidesPerView = "slidesPerView", spaceBetween = "spaceBetween", speed = "speed", swipeHandler = "swipeHandler", threshold = "threshold", thumbs = "thumbs", touchAngle = "touchAngle", touchEventsTarget = "touchEventsTarget", touchMoveStopPropagation = "touchMoveStopPropagation", touchRatio = "touchRatio", touchReleaseOnEdges = "touchReleaseOnEdges", touchStartForcePreventDefault = "touchStartForcePreventDefault", touchStartPreventDefault = "touchStartPreventDefault", uniqueNavElements = "uniqueNavElements", updateOnImagesReady = "updateOnImagesReady", updateOnWindowResize = "updateOnWindowResize", url = "url", userAgent = "userAgent", virtual = "virtual", virtualTranslate = "virtualTranslate", watchOverflow = "watchOverflow", watchSlidesProgress = "watchSlidesProgress", width = "width", wrapperClass = "wrapperClass", zoom = "zoom")
-    __obj.updateDynamic("class")("class")
-    __obj.updateDynamic("lazy")("lazy")
+  inline def apply(
+    a11y: `3`,
+    allowSlideNext: DefaultType,
+    allowSlidePrev: DefaultType,
+    allowTouchMove: DefaultType,
+    autoHeight: DefaultType,
+    autoplay: `4`,
+    breakpoints: `0`,
+    cardsEffect: `11`,
+    centerInsufficientSlides: DefaultType,
+    centeredSlides: DefaultType,
+    centeredSlidesBounds: DefaultType,
+    containerModifierClass: TypeStringConstructor,
+    controller: `5`,
+    coverflowEffect: `6`,
+    creativeEffect: `10`,
+    cssMode: DefaultType,
+    cubeEffect: `7`,
+    direction: TypePropType,
+    edgeSwipeDetection: DefaultUndefinedType,
+    edgeSwipeThreshold: TypeNumberConstructor,
+    effect: DefaultUndefinedTypePropType,
+    fadeEffect: `8`,
+    flipEffect: `9`,
+    focusableElements: TypeStringConstructor,
+    followFinger: DefaultType,
+    freeMode: `23`,
+    grabCursor: DefaultType,
+    grid: `24`,
+    hashNavigation: `12`,
+    height: TypeNumberConstructor,
+    history: `13`,
+    init: DefaultType,
+    initialSlide: TypeNumberConstructor,
+    keyboard: `14`,
+    lazyPreloadPrevNext: TypeNumberConstructor,
+    lazyPreloaderClass: TypeStringConstructor,
+    longSwipes: DefaultType,
+    longSwipesMs: TypeNumberConstructor,
+    longSwipesRatio: TypeNumberConstructor,
+    loop: DefaultType,
+    loopPreventsSliding: DefaultType,
+    loopedSlides: TypeNumberConstructor,
+    maxBackfaceHiddenSlides: TypeNumberConstructor,
+    modules: Type,
+    mousewheel: `15`,
+    navigation: `16`,
+    nested: DefaultType,
+    noSwiping: DefaultType,
+    noSwipingClass: TypeStringConstructor,
+    noSwipingSelector: TypeStringConstructor,
+    normalizeSlideIndex: DefaultType,
+    observeParents: DefaultType,
+    observeSlideChildren: DefaultType,
+    observer: DefaultType,
+    oneWayMovement: DefaultTypePropType,
+    pagination: `17`,
+    parallax: `18`,
+    passiveListeners: DefaultType,
+    preventClicks: DefaultType,
+    preventClicksPropagation: DefaultType,
+    preventInteractionOnTransition: DefaultType,
+    resistance: DefaultType,
+    resistanceRatio: TypeNumberConstructor,
+    resizeObserver: DefaultType,
+    rewind: DefaultType,
+    roundLengths: DefaultType,
+    runCallbacksOnInit: DefaultType,
+    scrollbar: `19`,
+    setWrapperSize: DefaultType,
+    shortSwipes: DefaultType,
+    simulateTouch: DefaultType,
+    slideActiveClass: TypeStringConstructor,
+    slideClass: TypeStringConstructor,
+    slideNextClass: TypeStringConstructor,
+    slidePrevClass: TypeStringConstructor,
+    slideToClickedSlide: DefaultType,
+    slideVisibleClass: TypeStringConstructor,
+    slidesOffsetAfter: TypeNumberConstructor,
+    slidesOffsetBefore: TypeNumberConstructor,
+    slidesPerGroup: TypeNumberConstructor,
+    slidesPerGroupAuto: DefaultType,
+    slidesPerGroupSkip: TypeNumberConstructor,
+    slidesPerView: `2`,
+    spaceBetween: `1`,
+    speed: TypeNumberConstructor,
+    swipeHandler: DefaultType,
+    tag: Default,
+    threshold: TypeNumberConstructor,
+    thumbs: `20`,
+    touchAngle: TypeNumberConstructor,
+    touchEventsTarget: DefaultUndefined,
+    touchMoveStopPropagation: DefaultType,
+    touchRatio: TypeNumberConstructor,
+    touchReleaseOnEdges: DefaultType,
+    touchStartForcePreventDefault: DefaultType,
+    touchStartPreventDefault: DefaultType,
+    uniqueNavElements: DefaultType,
+    updateOnWindowResize: DefaultType,
+    url: TypeStringConstructor,
+    userAgent: TypeStringConstructor,
+    virtual: `21`,
+    virtualTranslate: DefaultType,
+    watchOverflow: DefaultType,
+    watchSlidesProgress: DefaultType,
+    width: TypeNumberConstructor,
+    wrapperClass: TypeStringConstructor,
+    wrapperTag: Default,
+    zoom: `22`
+  ): A11y = {
+    val __obj = js.Dynamic.literal(a11y = a11y.asInstanceOf[js.Any], allowSlideNext = allowSlideNext.asInstanceOf[js.Any], allowSlidePrev = allowSlidePrev.asInstanceOf[js.Any], allowTouchMove = allowTouchMove.asInstanceOf[js.Any], autoHeight = autoHeight.asInstanceOf[js.Any], autoplay = autoplay.asInstanceOf[js.Any], breakpoints = breakpoints.asInstanceOf[js.Any], cardsEffect = cardsEffect.asInstanceOf[js.Any], centerInsufficientSlides = centerInsufficientSlides.asInstanceOf[js.Any], centeredSlides = centeredSlides.asInstanceOf[js.Any], centeredSlidesBounds = centeredSlidesBounds.asInstanceOf[js.Any], containerModifierClass = containerModifierClass.asInstanceOf[js.Any], controller = controller.asInstanceOf[js.Any], coverflowEffect = coverflowEffect.asInstanceOf[js.Any], creativeEffect = creativeEffect.asInstanceOf[js.Any], cssMode = cssMode.asInstanceOf[js.Any], cubeEffect = cubeEffect.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], edgeSwipeDetection = edgeSwipeDetection.asInstanceOf[js.Any], edgeSwipeThreshold = edgeSwipeThreshold.asInstanceOf[js.Any], effect = effect.asInstanceOf[js.Any], fadeEffect = fadeEffect.asInstanceOf[js.Any], flipEffect = flipEffect.asInstanceOf[js.Any], focusableElements = focusableElements.asInstanceOf[js.Any], followFinger = followFinger.asInstanceOf[js.Any], freeMode = freeMode.asInstanceOf[js.Any], grabCursor = grabCursor.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], hashNavigation = hashNavigation.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], history = history.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], initialSlide = initialSlide.asInstanceOf[js.Any], keyboard = keyboard.asInstanceOf[js.Any], lazyPreloadPrevNext = lazyPreloadPrevNext.asInstanceOf[js.Any], lazyPreloaderClass = lazyPreloaderClass.asInstanceOf[js.Any], longSwipes = longSwipes.asInstanceOf[js.Any], longSwipesMs = longSwipesMs.asInstanceOf[js.Any], longSwipesRatio = longSwipesRatio.asInstanceOf[js.Any], loop = loop.asInstanceOf[js.Any], loopPreventsSliding = loopPreventsSliding.asInstanceOf[js.Any], loopedSlides = loopedSlides.asInstanceOf[js.Any], maxBackfaceHiddenSlides = maxBackfaceHiddenSlides.asInstanceOf[js.Any], modules = modules.asInstanceOf[js.Any], mousewheel = mousewheel.asInstanceOf[js.Any], navigation = navigation.asInstanceOf[js.Any], nested = nested.asInstanceOf[js.Any], noSwiping = noSwiping.asInstanceOf[js.Any], noSwipingClass = noSwipingClass.asInstanceOf[js.Any], noSwipingSelector = noSwipingSelector.asInstanceOf[js.Any], normalizeSlideIndex = normalizeSlideIndex.asInstanceOf[js.Any], observeParents = observeParents.asInstanceOf[js.Any], observeSlideChildren = observeSlideChildren.asInstanceOf[js.Any], observer = observer.asInstanceOf[js.Any], oneWayMovement = oneWayMovement.asInstanceOf[js.Any], pagination = pagination.asInstanceOf[js.Any], parallax = parallax.asInstanceOf[js.Any], passiveListeners = passiveListeners.asInstanceOf[js.Any], preventClicks = preventClicks.asInstanceOf[js.Any], preventClicksPropagation = preventClicksPropagation.asInstanceOf[js.Any], preventInteractionOnTransition = preventInteractionOnTransition.asInstanceOf[js.Any], resistance = resistance.asInstanceOf[js.Any], resistanceRatio = resistanceRatio.asInstanceOf[js.Any], resizeObserver = resizeObserver.asInstanceOf[js.Any], rewind = rewind.asInstanceOf[js.Any], roundLengths = roundLengths.asInstanceOf[js.Any], runCallbacksOnInit = runCallbacksOnInit.asInstanceOf[js.Any], scrollbar = scrollbar.asInstanceOf[js.Any], setWrapperSize = setWrapperSize.asInstanceOf[js.Any], shortSwipes = shortSwipes.asInstanceOf[js.Any], simulateTouch = simulateTouch.asInstanceOf[js.Any], slideActiveClass = slideActiveClass.asInstanceOf[js.Any], slideClass = slideClass.asInstanceOf[js.Any], slideNextClass = slideNextClass.asInstanceOf[js.Any], slidePrevClass = slidePrevClass.asInstanceOf[js.Any], slideToClickedSlide = slideToClickedSlide.asInstanceOf[js.Any], slideVisibleClass = slideVisibleClass.asInstanceOf[js.Any], slidesOffsetAfter = slidesOffsetAfter.asInstanceOf[js.Any], slidesOffsetBefore = slidesOffsetBefore.asInstanceOf[js.Any], slidesPerGroup = slidesPerGroup.asInstanceOf[js.Any], slidesPerGroupAuto = slidesPerGroupAuto.asInstanceOf[js.Any], slidesPerGroupSkip = slidesPerGroupSkip.asInstanceOf[js.Any], slidesPerView = slidesPerView.asInstanceOf[js.Any], spaceBetween = spaceBetween.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any], swipeHandler = swipeHandler.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], threshold = threshold.asInstanceOf[js.Any], thumbs = thumbs.asInstanceOf[js.Any], touchAngle = touchAngle.asInstanceOf[js.Any], touchEventsTarget = touchEventsTarget.asInstanceOf[js.Any], touchMoveStopPropagation = touchMoveStopPropagation.asInstanceOf[js.Any], touchRatio = touchRatio.asInstanceOf[js.Any], touchReleaseOnEdges = touchReleaseOnEdges.asInstanceOf[js.Any], touchStartForcePreventDefault = touchStartForcePreventDefault.asInstanceOf[js.Any], touchStartPreventDefault = touchStartPreventDefault.asInstanceOf[js.Any], uniqueNavElements = uniqueNavElements.asInstanceOf[js.Any], updateOnWindowResize = updateOnWindowResize.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], userAgent = userAgent.asInstanceOf[js.Any], virtual = virtual.asInstanceOf[js.Any], virtualTranslate = virtualTranslate.asInstanceOf[js.Any], watchOverflow = watchOverflow.asInstanceOf[js.Any], watchSlidesProgress = watchSlidesProgress.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], wrapperClass = wrapperClass.asInstanceOf[js.Any], wrapperTag = wrapperTag.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[A11y]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: A11y] (val x: Self) extends AnyVal {
     
-    inline def setA11y(value: a11y): Self = StObject.set(x, "a11y", value.asInstanceOf[js.Any])
+    inline def setA11y(value: `3`): Self = StObject.set(x, "a11y", value.asInstanceOf[js.Any])
     
-    inline def setAllowSlideNext(value: allowSlideNext): Self = StObject.set(x, "allowSlideNext", value.asInstanceOf[js.Any])
+    inline def setAllowSlideNext(value: DefaultType): Self = StObject.set(x, "allowSlideNext", value.asInstanceOf[js.Any])
     
-    inline def setAllowSlidePrev(value: allowSlidePrev): Self = StObject.set(x, "allowSlidePrev", value.asInstanceOf[js.Any])
+    inline def setAllowSlidePrev(value: DefaultType): Self = StObject.set(x, "allowSlidePrev", value.asInstanceOf[js.Any])
     
-    inline def setAllowTouchMove(value: allowTouchMove): Self = StObject.set(x, "allowTouchMove", value.asInstanceOf[js.Any])
+    inline def setAllowTouchMove(value: DefaultType): Self = StObject.set(x, "allowTouchMove", value.asInstanceOf[js.Any])
     
-    inline def setAutoHeight(value: autoHeight): Self = StObject.set(x, "autoHeight", value.asInstanceOf[js.Any])
+    inline def setAutoHeight(value: DefaultType): Self = StObject.set(x, "autoHeight", value.asInstanceOf[js.Any])
     
-    inline def setAutoplay(value: autoplay): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
+    inline def setAutoplay(value: `4`): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
     
-    inline def setBreakpoints(value: breakpoints): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
+    inline def setBreakpoints(value: `0`): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
     
-    inline def setCardsEffect(value: cardsEffect): Self = StObject.set(x, "cardsEffect", value.asInstanceOf[js.Any])
+    inline def setCardsEffect(value: `11`): Self = StObject.set(x, "cardsEffect", value.asInstanceOf[js.Any])
     
-    inline def setCenterInsufficientSlides(value: centerInsufficientSlides): Self = StObject.set(x, "centerInsufficientSlides", value.asInstanceOf[js.Any])
+    inline def setCenterInsufficientSlides(value: DefaultType): Self = StObject.set(x, "centerInsufficientSlides", value.asInstanceOf[js.Any])
     
-    inline def setCenteredSlides(value: centeredSlides): Self = StObject.set(x, "centeredSlides", value.asInstanceOf[js.Any])
+    inline def setCenteredSlides(value: DefaultType): Self = StObject.set(x, "centeredSlides", value.asInstanceOf[js.Any])
     
-    inline def setCenteredSlidesBounds(value: centeredSlidesBounds): Self = StObject.set(x, "centeredSlidesBounds", value.asInstanceOf[js.Any])
+    inline def setCenteredSlidesBounds(value: DefaultType): Self = StObject.set(x, "centeredSlidesBounds", value.asInstanceOf[js.Any])
     
-    inline def setClass(value: `class`): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+    inline def setContainerModifierClass(value: TypeStringConstructor): Self = StObject.set(x, "containerModifierClass", value.asInstanceOf[js.Any])
     
-    inline def setConfig(value: config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setController(value: `5`): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
-    inline def setContainerModifierClass(value: containerModifierClass): Self = StObject.set(x, "containerModifierClass", value.asInstanceOf[js.Any])
+    inline def setCoverflowEffect(value: `6`): Self = StObject.set(x, "coverflowEffect", value.asInstanceOf[js.Any])
     
-    inline def setController(value: controller): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    inline def setCreativeEffect(value: `10`): Self = StObject.set(x, "creativeEffect", value.asInstanceOf[js.Any])
     
-    inline def setCoverflowEffect(value: coverflowEffect): Self = StObject.set(x, "coverflowEffect", value.asInstanceOf[js.Any])
+    inline def setCssMode(value: DefaultType): Self = StObject.set(x, "cssMode", value.asInstanceOf[js.Any])
     
-    inline def setCreativeEffect(value: creativeEffect): Self = StObject.set(x, "creativeEffect", value.asInstanceOf[js.Any])
+    inline def setCubeEffect(value: `7`): Self = StObject.set(x, "cubeEffect", value.asInstanceOf[js.Any])
     
-    inline def setCssMode(value: cssMode): Self = StObject.set(x, "cssMode", value.asInstanceOf[js.Any])
+    inline def setDirection(value: TypePropType): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    inline def setCubeEffect(value: cubeEffect): Self = StObject.set(x, "cubeEffect", value.asInstanceOf[js.Any])
+    inline def setEdgeSwipeDetection(value: DefaultUndefinedType): Self = StObject.set(x, "edgeSwipeDetection", value.asInstanceOf[js.Any])
     
-    inline def setDirection(value: direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setEdgeSwipeThreshold(value: TypeNumberConstructor): Self = StObject.set(x, "edgeSwipeThreshold", value.asInstanceOf[js.Any])
     
-    inline def setEdgeSwipeDetection(value: edgeSwipeDetection): Self = StObject.set(x, "edgeSwipeDetection", value.asInstanceOf[js.Any])
+    inline def setEffect(value: DefaultUndefinedTypePropType): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
-    inline def setEdgeSwipeThreshold(value: edgeSwipeThreshold): Self = StObject.set(x, "edgeSwipeThreshold", value.asInstanceOf[js.Any])
+    inline def setFadeEffect(value: `8`): Self = StObject.set(x, "fadeEffect", value.asInstanceOf[js.Any])
     
-    inline def setEffect(value: effect): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
+    inline def setFlipEffect(value: `9`): Self = StObject.set(x, "flipEffect", value.asInstanceOf[js.Any])
     
-    inline def setEnabled(value: enabled): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setFocusableElements(value: TypeStringConstructor): Self = StObject.set(x, "focusableElements", value.asInstanceOf[js.Any])
     
-    inline def setFadeEffect(value: fadeEffect): Self = StObject.set(x, "fadeEffect", value.asInstanceOf[js.Any])
+    inline def setFollowFinger(value: DefaultType): Self = StObject.set(x, "followFinger", value.asInstanceOf[js.Any])
     
-    inline def setFlipEffect(value: flipEffect): Self = StObject.set(x, "flipEffect", value.asInstanceOf[js.Any])
+    inline def setFreeMode(value: `23`): Self = StObject.set(x, "freeMode", value.asInstanceOf[js.Any])
     
-    inline def setFocusableElements(value: focusableElements): Self = StObject.set(x, "focusableElements", value.asInstanceOf[js.Any])
+    inline def setGrabCursor(value: DefaultType): Self = StObject.set(x, "grabCursor", value.asInstanceOf[js.Any])
     
-    inline def setFollowFinger(value: followFinger): Self = StObject.set(x, "followFinger", value.asInstanceOf[js.Any])
+    inline def setGrid(value: `24`): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
-    inline def setFreeMode(value: freeMode): Self = StObject.set(x, "freeMode", value.asInstanceOf[js.Any])
+    inline def setHashNavigation(value: `12`): Self = StObject.set(x, "hashNavigation", value.asInstanceOf[js.Any])
     
-    inline def setGrabCursor(value: grabCursor): Self = StObject.set(x, "grabCursor", value.asInstanceOf[js.Any])
+    inline def setHeight(value: TypeNumberConstructor): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    inline def setGrid(value: grid): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    inline def setHistory(value: `13`): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
-    inline def setHashNavigation(value: hashNavigation): Self = StObject.set(x, "hashNavigation", value.asInstanceOf[js.Any])
+    inline def setInit(value: DefaultType): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
-    inline def setHeight(value: height): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setInitialSlide(value: TypeNumberConstructor): Self = StObject.set(x, "initialSlide", value.asInstanceOf[js.Any])
     
-    inline def setHistory(value: history): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setKeyboard(value: `14`): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
     
-    inline def setId(value: id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setLazyPreloadPrevNext(value: TypeNumberConstructor): Self = StObject.set(x, "lazyPreloadPrevNext", value.asInstanceOf[js.Any])
     
-    inline def setInitialSlide(value: initialSlide): Self = StObject.set(x, "initialSlide", value.asInstanceOf[js.Any])
+    inline def setLazyPreloaderClass(value: TypeStringConstructor): Self = StObject.set(x, "lazyPreloaderClass", value.asInstanceOf[js.Any])
     
-    inline def setKeyboard(value: keyboard): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
+    inline def setLongSwipes(value: DefaultType): Self = StObject.set(x, "longSwipes", value.asInstanceOf[js.Any])
     
-    inline def setLazy(value: `lazy`): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
+    inline def setLongSwipesMs(value: TypeNumberConstructor): Self = StObject.set(x, "longSwipesMs", value.asInstanceOf[js.Any])
     
-    inline def setLongSwipes(value: longSwipes): Self = StObject.set(x, "longSwipes", value.asInstanceOf[js.Any])
+    inline def setLongSwipesRatio(value: TypeNumberConstructor): Self = StObject.set(x, "longSwipesRatio", value.asInstanceOf[js.Any])
     
-    inline def setLongSwipesMs(value: longSwipesMs): Self = StObject.set(x, "longSwipesMs", value.asInstanceOf[js.Any])
+    inline def setLoop(value: DefaultType): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
-    inline def setLongSwipesRatio(value: longSwipesRatio): Self = StObject.set(x, "longSwipesRatio", value.asInstanceOf[js.Any])
+    inline def setLoopPreventsSliding(value: DefaultType): Self = StObject.set(x, "loopPreventsSliding", value.asInstanceOf[js.Any])
     
-    inline def setLoop(value: loop): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    inline def setLoopedSlides(value: TypeNumberConstructor): Self = StObject.set(x, "loopedSlides", value.asInstanceOf[js.Any])
     
-    inline def setLoopAdditionalSlides(value: loopAdditionalSlides): Self = StObject.set(x, "loopAdditionalSlides", value.asInstanceOf[js.Any])
+    inline def setMaxBackfaceHiddenSlides(value: TypeNumberConstructor): Self = StObject.set(x, "maxBackfaceHiddenSlides", value.asInstanceOf[js.Any])
     
-    inline def setLoopFillGroupWithBlank(value: loopFillGroupWithBlank): Self = StObject.set(x, "loopFillGroupWithBlank", value.asInstanceOf[js.Any])
+    inline def setModules(value: Type): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
     
-    inline def setLoopPreventsSlide(value: loopPreventsSlide): Self = StObject.set(x, "loopPreventsSlide", value.asInstanceOf[js.Any])
+    inline def setMousewheel(value: `15`): Self = StObject.set(x, "mousewheel", value.asInstanceOf[js.Any])
     
-    inline def setLoopedSlides(value: loopedSlides): Self = StObject.set(x, "loopedSlides", value.asInstanceOf[js.Any])
+    inline def setNavigation(value: `16`): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
-    inline def setLoopedSlidesLimit(value: loopedSlidesLimit): Self = StObject.set(x, "loopedSlidesLimit", value.asInstanceOf[js.Any])
+    inline def setNested(value: DefaultType): Self = StObject.set(x, "nested", value.asInstanceOf[js.Any])
     
-    inline def setMaxBackfaceHiddenSlides(value: maxBackfaceHiddenSlides): Self = StObject.set(x, "maxBackfaceHiddenSlides", value.asInstanceOf[js.Any])
+    inline def setNoSwiping(value: DefaultType): Self = StObject.set(x, "noSwiping", value.asInstanceOf[js.Any])
     
-    inline def setMousewheel(value: mousewheel): Self = StObject.set(x, "mousewheel", value.asInstanceOf[js.Any])
+    inline def setNoSwipingClass(value: TypeStringConstructor): Self = StObject.set(x, "noSwipingClass", value.asInstanceOf[js.Any])
     
-    inline def setNavigation(value: navigation): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+    inline def setNoSwipingSelector(value: TypeStringConstructor): Self = StObject.set(x, "noSwipingSelector", value.asInstanceOf[js.Any])
     
-    inline def setNested(value: nested): Self = StObject.set(x, "nested", value.asInstanceOf[js.Any])
+    inline def setNormalizeSlideIndex(value: DefaultType): Self = StObject.set(x, "normalizeSlideIndex", value.asInstanceOf[js.Any])
     
-    inline def setNoSwiping(value: noSwiping): Self = StObject.set(x, "noSwiping", value.asInstanceOf[js.Any])
+    inline def setObserveParents(value: DefaultType): Self = StObject.set(x, "observeParents", value.asInstanceOf[js.Any])
     
-    inline def setNoSwipingClass(value: noSwipingClass): Self = StObject.set(x, "noSwipingClass", value.asInstanceOf[js.Any])
+    inline def setObserveSlideChildren(value: DefaultType): Self = StObject.set(x, "observeSlideChildren", value.asInstanceOf[js.Any])
     
-    inline def setNoSwipingSelector(value: noSwipingSelector): Self = StObject.set(x, "noSwipingSelector", value.asInstanceOf[js.Any])
+    inline def setObserver(value: DefaultType): Self = StObject.set(x, "observer", value.asInstanceOf[js.Any])
     
-    inline def setNormalizeSlideIndex(value: normalizeSlideIndex): Self = StObject.set(x, "normalizeSlideIndex", value.asInstanceOf[js.Any])
+    inline def setOneWayMovement(value: DefaultTypePropType): Self = StObject.set(x, "oneWayMovement", value.asInstanceOf[js.Any])
     
-    inline def setObserveParents(value: observeParents): Self = StObject.set(x, "observeParents", value.asInstanceOf[js.Any])
+    inline def setPagination(value: `17`): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
     
-    inline def setObserveSlideChildren(value: observeSlideChildren): Self = StObject.set(x, "observeSlideChildren", value.asInstanceOf[js.Any])
+    inline def setParallax(value: `18`): Self = StObject.set(x, "parallax", value.asInstanceOf[js.Any])
     
-    inline def setOn(value: on): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+    inline def setPassiveListeners(value: DefaultType): Self = StObject.set(x, "passiveListeners", value.asInstanceOf[js.Any])
     
-    inline def setPagination(value: pagination): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+    inline def setPreventClicks(value: DefaultType): Self = StObject.set(x, "preventClicks", value.asInstanceOf[js.Any])
     
-    inline def setParallax(value: parallax): Self = StObject.set(x, "parallax", value.asInstanceOf[js.Any])
+    inline def setPreventClicksPropagation(value: DefaultType): Self = StObject.set(x, "preventClicksPropagation", value.asInstanceOf[js.Any])
     
-    inline def setPassiveListeners(value: passiveListeners): Self = StObject.set(x, "passiveListeners", value.asInstanceOf[js.Any])
+    inline def setPreventInteractionOnTransition(value: DefaultType): Self = StObject.set(x, "preventInteractionOnTransition", value.asInstanceOf[js.Any])
     
-    inline def setPreloadImages(value: preloadImages): Self = StObject.set(x, "preloadImages", value.asInstanceOf[js.Any])
+    inline def setResistance(value: DefaultType): Self = StObject.set(x, "resistance", value.asInstanceOf[js.Any])
     
-    inline def setPreventClicks(value: preventClicks): Self = StObject.set(x, "preventClicks", value.asInstanceOf[js.Any])
+    inline def setResistanceRatio(value: TypeNumberConstructor): Self = StObject.set(x, "resistanceRatio", value.asInstanceOf[js.Any])
     
-    inline def setPreventClicksPropagation(value: preventClicksPropagation): Self = StObject.set(x, "preventClicksPropagation", value.asInstanceOf[js.Any])
+    inline def setResizeObserver(value: DefaultType): Self = StObject.set(x, "resizeObserver", value.asInstanceOf[js.Any])
     
-    inline def setPreventInteractionOnTransition(value: preventInteractionOnTransition): Self = StObject.set(x, "preventInteractionOnTransition", value.asInstanceOf[js.Any])
+    inline def setRewind(value: DefaultType): Self = StObject.set(x, "rewind", value.asInstanceOf[js.Any])
     
-    inline def setResistance(value: resistance): Self = StObject.set(x, "resistance", value.asInstanceOf[js.Any])
+    inline def setRoundLengths(value: DefaultType): Self = StObject.set(x, "roundLengths", value.asInstanceOf[js.Any])
     
-    inline def setResistanceRatio(value: resistanceRatio): Self = StObject.set(x, "resistanceRatio", value.asInstanceOf[js.Any])
+    inline def setRunCallbacksOnInit(value: DefaultType): Self = StObject.set(x, "runCallbacksOnInit", value.asInstanceOf[js.Any])
     
-    inline def setResizeObserver(value: resizeObserver): Self = StObject.set(x, "resizeObserver", value.asInstanceOf[js.Any])
+    inline def setScrollbar(value: `19`): Self = StObject.set(x, "scrollbar", value.asInstanceOf[js.Any])
     
-    inline def setRewind(value: rewind): Self = StObject.set(x, "rewind", value.asInstanceOf[js.Any])
+    inline def setSetWrapperSize(value: DefaultType): Self = StObject.set(x, "setWrapperSize", value.asInstanceOf[js.Any])
     
-    inline def setRoundLengths(value: roundLengths): Self = StObject.set(x, "roundLengths", value.asInstanceOf[js.Any])
+    inline def setShortSwipes(value: DefaultType): Self = StObject.set(x, "shortSwipes", value.asInstanceOf[js.Any])
     
-    inline def setRunCallbacksOnInit(value: runCallbacksOnInit): Self = StObject.set(x, "runCallbacksOnInit", value.asInstanceOf[js.Any])
+    inline def setSimulateTouch(value: DefaultType): Self = StObject.set(x, "simulateTouch", value.asInstanceOf[js.Any])
     
-    inline def setScrollbar(value: scrollbar): Self = StObject.set(x, "scrollbar", value.asInstanceOf[js.Any])
+    inline def setSlideActiveClass(value: TypeStringConstructor): Self = StObject.set(x, "slideActiveClass", value.asInstanceOf[js.Any])
     
-    inline def setSetWrapperSize(value: setWrapperSize): Self = StObject.set(x, "setWrapperSize", value.asInstanceOf[js.Any])
+    inline def setSlideClass(value: TypeStringConstructor): Self = StObject.set(x, "slideClass", value.asInstanceOf[js.Any])
     
-    inline def setShortSwipes(value: shortSwipes): Self = StObject.set(x, "shortSwipes", value.asInstanceOf[js.Any])
+    inline def setSlideNextClass(value: TypeStringConstructor): Self = StObject.set(x, "slideNextClass", value.asInstanceOf[js.Any])
     
-    inline def setSimulateTouch(value: simulateTouch): Self = StObject.set(x, "simulateTouch", value.asInstanceOf[js.Any])
+    inline def setSlidePrevClass(value: TypeStringConstructor): Self = StObject.set(x, "slidePrevClass", value.asInstanceOf[js.Any])
     
-    inline def setSlideActiveClass(value: slideActiveClass): Self = StObject.set(x, "slideActiveClass", value.asInstanceOf[js.Any])
+    inline def setSlideToClickedSlide(value: DefaultType): Self = StObject.set(x, "slideToClickedSlide", value.asInstanceOf[js.Any])
     
-    inline def setSlideBlankClass(value: slideBlankClass): Self = StObject.set(x, "slideBlankClass", value.asInstanceOf[js.Any])
+    inline def setSlideVisibleClass(value: TypeStringConstructor): Self = StObject.set(x, "slideVisibleClass", value.asInstanceOf[js.Any])
     
-    inline def setSlideClass(value: slideClass): Self = StObject.set(x, "slideClass", value.asInstanceOf[js.Any])
+    inline def setSlidesOffsetAfter(value: TypeNumberConstructor): Self = StObject.set(x, "slidesOffsetAfter", value.asInstanceOf[js.Any])
     
-    inline def setSlideDuplicateActiveClass(value: slideDuplicateActiveClass): Self = StObject.set(x, "slideDuplicateActiveClass", value.asInstanceOf[js.Any])
+    inline def setSlidesOffsetBefore(value: TypeNumberConstructor): Self = StObject.set(x, "slidesOffsetBefore", value.asInstanceOf[js.Any])
     
-    inline def setSlideDuplicateClass(value: slideDuplicateClass): Self = StObject.set(x, "slideDuplicateClass", value.asInstanceOf[js.Any])
+    inline def setSlidesPerGroup(value: TypeNumberConstructor): Self = StObject.set(x, "slidesPerGroup", value.asInstanceOf[js.Any])
     
-    inline def setSlideDuplicateNextClass(value: slideDuplicateNextClass): Self = StObject.set(x, "slideDuplicateNextClass", value.asInstanceOf[js.Any])
+    inline def setSlidesPerGroupAuto(value: DefaultType): Self = StObject.set(x, "slidesPerGroupAuto", value.asInstanceOf[js.Any])
     
-    inline def setSlideDuplicatePrevClass(value: slideDuplicatePrevClass): Self = StObject.set(x, "slideDuplicatePrevClass", value.asInstanceOf[js.Any])
+    inline def setSlidesPerGroupSkip(value: TypeNumberConstructor): Self = StObject.set(x, "slidesPerGroupSkip", value.asInstanceOf[js.Any])
     
-    inline def setSlideNextClass(value: slideNextClass): Self = StObject.set(x, "slideNextClass", value.asInstanceOf[js.Any])
+    inline def setSlidesPerView(value: `2`): Self = StObject.set(x, "slidesPerView", value.asInstanceOf[js.Any])
     
-    inline def setSlidePrevClass(value: slidePrevClass): Self = StObject.set(x, "slidePrevClass", value.asInstanceOf[js.Any])
+    inline def setSpaceBetween(value: `1`): Self = StObject.set(x, "spaceBetween", value.asInstanceOf[js.Any])
     
-    inline def setSlideToClickedSlide(value: slideToClickedSlide): Self = StObject.set(x, "slideToClickedSlide", value.asInstanceOf[js.Any])
+    inline def setSpeed(value: TypeNumberConstructor): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
-    inline def setSlideVisibleClass(value: slideVisibleClass): Self = StObject.set(x, "slideVisibleClass", value.asInstanceOf[js.Any])
+    inline def setSwipeHandler(value: DefaultType): Self = StObject.set(x, "swipeHandler", value.asInstanceOf[js.Any])
     
-    inline def setSlidesOffsetAfter(value: slidesOffsetAfter): Self = StObject.set(x, "slidesOffsetAfter", value.asInstanceOf[js.Any])
+    inline def setTag(value: Default): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    inline def setSlidesOffsetBefore(value: slidesOffsetBefore): Self = StObject.set(x, "slidesOffsetBefore", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: TypeNumberConstructor): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
-    inline def setSlidesPerGroup(value: slidesPerGroup): Self = StObject.set(x, "slidesPerGroup", value.asInstanceOf[js.Any])
+    inline def setThumbs(value: `20`): Self = StObject.set(x, "thumbs", value.asInstanceOf[js.Any])
     
-    inline def setSlidesPerGroupSkip(value: slidesPerGroupSkip): Self = StObject.set(x, "slidesPerGroupSkip", value.asInstanceOf[js.Any])
+    inline def setTouchAngle(value: TypeNumberConstructor): Self = StObject.set(x, "touchAngle", value.asInstanceOf[js.Any])
     
-    inline def setSlidesPerView(value: slidesPerView): Self = StObject.set(x, "slidesPerView", value.asInstanceOf[js.Any])
+    inline def setTouchEventsTarget(value: DefaultUndefined): Self = StObject.set(x, "touchEventsTarget", value.asInstanceOf[js.Any])
     
-    inline def setSpaceBetween(value: spaceBetween): Self = StObject.set(x, "spaceBetween", value.asInstanceOf[js.Any])
+    inline def setTouchMoveStopPropagation(value: DefaultType): Self = StObject.set(x, "touchMoveStopPropagation", value.asInstanceOf[js.Any])
     
-    inline def setSpeed(value: speed): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    inline def setTouchRatio(value: TypeNumberConstructor): Self = StObject.set(x, "touchRatio", value.asInstanceOf[js.Any])
     
-    inline def setSwipeHandler(value: swipeHandler): Self = StObject.set(x, "swipeHandler", value.asInstanceOf[js.Any])
+    inline def setTouchReleaseOnEdges(value: DefaultType): Self = StObject.set(x, "touchReleaseOnEdges", value.asInstanceOf[js.Any])
     
-    inline def setThreshold(value: threshold): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    inline def setTouchStartForcePreventDefault(value: DefaultType): Self = StObject.set(x, "touchStartForcePreventDefault", value.asInstanceOf[js.Any])
     
-    inline def setThumbs(value: thumbs): Self = StObject.set(x, "thumbs", value.asInstanceOf[js.Any])
+    inline def setTouchStartPreventDefault(value: DefaultType): Self = StObject.set(x, "touchStartPreventDefault", value.asInstanceOf[js.Any])
     
-    inline def setTouchAngle(value: touchAngle): Self = StObject.set(x, "touchAngle", value.asInstanceOf[js.Any])
+    inline def setUniqueNavElements(value: DefaultType): Self = StObject.set(x, "uniqueNavElements", value.asInstanceOf[js.Any])
     
-    inline def setTouchEventsTarget(value: touchEventsTarget): Self = StObject.set(x, "touchEventsTarget", value.asInstanceOf[js.Any])
+    inline def setUpdateOnWindowResize(value: DefaultType): Self = StObject.set(x, "updateOnWindowResize", value.asInstanceOf[js.Any])
     
-    inline def setTouchMoveStopPropagation(value: touchMoveStopPropagation): Self = StObject.set(x, "touchMoveStopPropagation", value.asInstanceOf[js.Any])
+    inline def setUrl(value: TypeStringConstructor): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def setTouchRatio(value: touchRatio): Self = StObject.set(x, "touchRatio", value.asInstanceOf[js.Any])
+    inline def setUserAgent(value: TypeStringConstructor): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     
-    inline def setTouchReleaseOnEdges(value: touchReleaseOnEdges): Self = StObject.set(x, "touchReleaseOnEdges", value.asInstanceOf[js.Any])
+    inline def setVirtual(value: `21`): Self = StObject.set(x, "virtual", value.asInstanceOf[js.Any])
     
-    inline def setTouchStartForcePreventDefault(value: touchStartForcePreventDefault): Self = StObject.set(x, "touchStartForcePreventDefault", value.asInstanceOf[js.Any])
+    inline def setVirtualTranslate(value: DefaultType): Self = StObject.set(x, "virtualTranslate", value.asInstanceOf[js.Any])
     
-    inline def setTouchStartPreventDefault(value: touchStartPreventDefault): Self = StObject.set(x, "touchStartPreventDefault", value.asInstanceOf[js.Any])
+    inline def setWatchOverflow(value: DefaultType): Self = StObject.set(x, "watchOverflow", value.asInstanceOf[js.Any])
     
-    inline def setUniqueNavElements(value: uniqueNavElements): Self = StObject.set(x, "uniqueNavElements", value.asInstanceOf[js.Any])
+    inline def setWatchSlidesProgress(value: DefaultType): Self = StObject.set(x, "watchSlidesProgress", value.asInstanceOf[js.Any])
     
-    inline def setUpdateOnImagesReady(value: updateOnImagesReady): Self = StObject.set(x, "updateOnImagesReady", value.asInstanceOf[js.Any])
+    inline def setWidth(value: TypeNumberConstructor): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    inline def setUpdateOnWindowResize(value: updateOnWindowResize): Self = StObject.set(x, "updateOnWindowResize", value.asInstanceOf[js.Any])
+    inline def setWrapperClass(value: TypeStringConstructor): Self = StObject.set(x, "wrapperClass", value.asInstanceOf[js.Any])
     
-    inline def setUrl(value: url): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setWrapperTag(value: Default): Self = StObject.set(x, "wrapperTag", value.asInstanceOf[js.Any])
     
-    inline def setUserAgent(value: userAgent): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
-    
-    inline def setVirtual(value: virtual): Self = StObject.set(x, "virtual", value.asInstanceOf[js.Any])
-    
-    inline def setVirtualTranslate(value: virtualTranslate): Self = StObject.set(x, "virtualTranslate", value.asInstanceOf[js.Any])
-    
-    inline def setWatchOverflow(value: watchOverflow): Self = StObject.set(x, "watchOverflow", value.asInstanceOf[js.Any])
-    
-    inline def setWatchSlidesProgress(value: watchSlidesProgress): Self = StObject.set(x, "watchSlidesProgress", value.asInstanceOf[js.Any])
-    
-    inline def setWidth(value: width): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-    
-    inline def setWrapperClass(value: wrapperClass): Self = StObject.set(x, "wrapperClass", value.asInstanceOf[js.Any])
-    
-    inline def setZoom(value: zoom): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: `22`): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
   }
 }

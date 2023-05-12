@@ -18,9 +18,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * }
   * ```
   * 
-  * When this is added, Phaser will automatically create a DOM Container div that is positioned over the top
-  * of the game canvas. This div is sized to match the canvas, and if the canvas size changes, as a result of
-  * settings within the Scale Manager, the dom container is resized accordingly.
+  * You must also have a parent container for Phaser. This is specified by the `parent` property in the
+  * game config.
+  * 
+  * When these two things are added, Phaser will automatically create a DOM Container div that is positioned
+  * over the top of the game canvas. This div is sized to match the canvas, and if the canvas size changes,
+  * as a result of settings within the Scale Manager, the dom container is resized accordingly.
   * 
   * If you have not already done so, you have to provide a `parent` in the Game Configuration, or the DOM
   * Container will fail to be created.
@@ -89,7 +92,7 @@ open class DOMElement protected ()
   ) = this()
   
   /**
-    * The depth of this Game Object within the Scene.
+    * The depth of this Game Object within the Scene. Ensure this value is only ever set to a number data-type.
     * 
     * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
     * of Game Objects, without actually moving their position in the display list.
@@ -112,7 +115,7 @@ open class DOMElement protected ()
     * value will always render in front of one with a lower value.
     * 
     * Setting the depth will queue a depth sort event within the Scene.
-    * @param value The depth of this Game Object.
+    * @param value The depth of this Game Object. Ensure this value is only ever a number data-type.
     */
   /* CompleteClass */
   override def setDepth(value: Double): this.type = js.native

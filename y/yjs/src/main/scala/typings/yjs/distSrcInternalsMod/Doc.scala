@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("yjs/dist/src/internals", "Doc")
 @js.native
 /**
-  * @param {DocOpts} [opts] configuration
+  * @param {DocOpts} opts configuration
   */
 open class Doc ()
   extends typings.yjs.distSrcUtilsDocMod.Doc {

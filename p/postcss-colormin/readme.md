@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-colormin
 
-Typings are for version 5.3.0
+Typings are for version 6.0.0
 
 ## Library description:
 Minify colors in your CSS files with PostCSS.

@@ -127,6 +127,8 @@ object anon {
         ]
       ] = js.undefined
     
+    var hooks: js.UndefOr[Postprocess] = js.undefined
+    
     var langPrefix: js.UndefOr[String] = js.undefined
     
     var mangle: js.UndefOr[Boolean] = js.undefined
@@ -199,6 +201,10 @@ object anon {
       
       inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
       
+      inline def setHooks(value: Postprocess): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+      
+      inline def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
+      
       inline def setLangPrefix(value: String): Self = StObject.set(x, "langPrefix", value.asInstanceOf[js.Any])
       
       inline def setLangPrefixUndefined: Self = StObject.set(x, "langPrefix", js.undefined)
@@ -246,6 +252,32 @@ object anon {
       inline def setXhtml(value: Boolean): Self = StObject.set(x, "xhtml", value.asInstanceOf[js.Any])
       
       inline def setXhtmlUndefined: Self = StObject.set(x, "xhtml", js.undefined)
+    }
+  }
+  
+  trait Postprocess extends StObject {
+    
+    var postprocess: js.UndefOr[js.Function1[/* html */ String, String]] = js.undefined
+    
+    var preprocess: js.UndefOr[js.Function1[/* markdown */ String, String]] = js.undefined
+  }
+  object Postprocess {
+    
+    inline def apply(): Postprocess = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Postprocess]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Postprocess] (val x: Self) extends AnyVal {
+      
+      inline def setPostprocess(value: /* html */ String => String): Self = StObject.set(x, "postprocess", js.Any.fromFunction1(value))
+      
+      inline def setPostprocessUndefined: Self = StObject.set(x, "postprocess", js.undefined)
+      
+      inline def setPreprocess(value: /* markdown */ String => String): Self = StObject.set(x, "preprocess", js.Any.fromFunction1(value))
+      
+      inline def setPreprocessUndefined: Self = StObject.set(x, "preprocess", js.undefined)
     }
   }
 }

@@ -116,6 +116,11 @@ trait MedicationKnowledge
     * This status is intended to identify if the medication in a local system is in active use within a drug database or inventory.  For example, a pharmacy system may create a new drug file record for a compounded product "ABC Hospital Special Cream" with an active status.  At some point in the future, it may be determined that the drug record was created with an error and the status is changed to "entered in error".   This status is not intended to specify if a medication is part of a particular formulary.  It is possible that the drug record may be referenced by multiple formularies or catalogues and each of those entries would have a separate status.
     */
   var status: js.UndefOr[active | `entered-in-error` | inactive] = js.undefined
+  
+  /**
+    * Information on how the medication should be stored, for example, refrigeration temperatures and length of stability at a given temperature.
+    */
+  var storageGuideline: js.UndefOr[js.Array[MedicationKnowledgeStorageGuideline]] = js.undefined
 }
 object MedicationKnowledge {
   
@@ -232,6 +237,12 @@ object MedicationKnowledge {
     inline def setStatus(value: active | `entered-in-error` | inactive): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    
+    inline def setStorageGuideline(value: js.Array[MedicationKnowledgeStorageGuideline]): Self = StObject.set(x, "storageGuideline", value.asInstanceOf[js.Any])
+    
+    inline def setStorageGuidelineUndefined: Self = StObject.set(x, "storageGuideline", js.undefined)
+    
+    inline def setStorageGuidelineVarargs(value: MedicationKnowledgeStorageGuideline*): Self = StObject.set(x, "storageGuideline", js.Array(value*))
     
     inline def set_name(value: js.Array[Element]): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     

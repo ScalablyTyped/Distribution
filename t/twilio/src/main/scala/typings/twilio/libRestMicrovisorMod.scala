@@ -8,23 +8,20 @@ object libRestMicrovisorMod {
   
   @JSImport("twilio/lib/rest/Microvisor", JSImport.Namespace)
   @js.native
-  open class ^ protected () extends Microvisor {
-    /**
-      * Initialize microvisor domain
-      *
-      * @param twilio - The twilio client
-      */
-    def this(twilio: typings.twilio.libRestTwilioMod.^) = this()
-  }
+  open class ^ () extends Microvisor
   
   @js.native
   trait Microvisor
-    extends typings.twilio.libBaseDomainMod.^ {
+    extends typings.twilio.libRestMicrovisorBaseMod.^ {
     
-    val apps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AppListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.apps instead
+      */
+    def apps: Any = js.native
     
-    val devices: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DeviceListInstance */ Any = js.native
-    
-    val v1: typings.twilio.libRestMicrovisorV1Mod.^ = js.native
+    /**
+      * @deprecated - Use v1.devices instead
+      */
+    def devices: Any = js.native
   }
 }

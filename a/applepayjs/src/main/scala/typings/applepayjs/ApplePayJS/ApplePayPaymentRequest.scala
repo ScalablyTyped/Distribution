@@ -15,6 +15,11 @@ trait ApplePayPaymentRequest extends StObject {
   var applicationData: js.UndefOr[String] = js.undefined
   
   /**
+    * A property that requests an automatic reload payment, such as a store card top-up.
+    */
+  var automaticReloadPaymentRequest: js.UndefOr[ApplePayAutomaticReloadPaymentRequest] = js.undefined
+  
+  /**
     * Billing contact information for the user.
     */
   var billingContact: js.UndefOr[ApplePayPaymentContact] = js.undefined
@@ -39,6 +44,22 @@ trait ApplePayPaymentRequest extends StObject {
     * The value must at least contain ApplePayMerchantCapability.supports3DS.
     */
   var merchantCapabilities: js.Array[ApplePayMerchantCapability]
+  
+  /**
+    * An array of payment token contexts that requests multiple payment tokens to support a multimerchant payment.
+    */
+  var multiTokenContexts: js.UndefOr[js.Array[ApplePayPaymentTokenContext]] = js.undefined
+  
+  /**
+    * This property is optional. Use it to indicate that the payment request is for a recurring payment.
+    * Apple Pay issues an Apple Pay Merchant Token if the user’s payment network supports merchant-specific payment tokens.
+    * Otherwise, Apple Pay issues a device token for the payment request.
+    *
+    * Important
+    * You can’t use this property with multiTokenContexts or automaticReloadPaymentRequest properties.
+    * Simultaneous use of these properties results in an error and cancels the payment request.
+    */
+  var recurringPaymentRequest: js.UndefOr[ApplePayRecurringPaymentRequest] = js.undefined
   
   /**
     * The billing information that you require from the user in order to process the transaction.
@@ -100,6 +121,10 @@ object ApplePayPaymentRequest {
     
     inline def setApplicationDataUndefined: Self = StObject.set(x, "applicationData", js.undefined)
     
+    inline def setAutomaticReloadPaymentRequest(value: ApplePayAutomaticReloadPaymentRequest): Self = StObject.set(x, "automaticReloadPaymentRequest", value.asInstanceOf[js.Any])
+    
+    inline def setAutomaticReloadPaymentRequestUndefined: Self = StObject.set(x, "automaticReloadPaymentRequest", js.undefined)
+    
     inline def setBillingContact(value: ApplePayPaymentContact): Self = StObject.set(x, "billingContact", value.asInstanceOf[js.Any])
     
     inline def setBillingContactUndefined: Self = StObject.set(x, "billingContact", js.undefined)
@@ -117,6 +142,16 @@ object ApplePayPaymentRequest {
     inline def setMerchantCapabilities(value: js.Array[ApplePayMerchantCapability]): Self = StObject.set(x, "merchantCapabilities", value.asInstanceOf[js.Any])
     
     inline def setMerchantCapabilitiesVarargs(value: ApplePayMerchantCapability*): Self = StObject.set(x, "merchantCapabilities", js.Array(value*))
+    
+    inline def setMultiTokenContexts(value: js.Array[ApplePayPaymentTokenContext]): Self = StObject.set(x, "multiTokenContexts", value.asInstanceOf[js.Any])
+    
+    inline def setMultiTokenContextsUndefined: Self = StObject.set(x, "multiTokenContexts", js.undefined)
+    
+    inline def setMultiTokenContextsVarargs(value: ApplePayPaymentTokenContext*): Self = StObject.set(x, "multiTokenContexts", js.Array(value*))
+    
+    inline def setRecurringPaymentRequest(value: ApplePayRecurringPaymentRequest): Self = StObject.set(x, "recurringPaymentRequest", value.asInstanceOf[js.Any])
+    
+    inline def setRecurringPaymentRequestUndefined: Self = StObject.set(x, "recurringPaymentRequest", js.undefined)
     
     inline def setRequiredBillingContactFields(value: js.Array[ApplePayContactField]): Self = StObject.set(x, "requiredBillingContactFields", value.asInstanceOf[js.Any])
     

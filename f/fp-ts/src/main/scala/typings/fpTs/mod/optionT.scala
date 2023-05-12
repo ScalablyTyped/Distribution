@@ -20,7 +20,7 @@ import typings.fpTs.libChainMod.Chain3
 import typings.fpTs.libChainMod.Chain3C
 import typings.fpTs.libChainMod.Chain4
 import typings.fpTs.libEitherMod.Either_
-import typings.fpTs.libFunctionMod.Lazy
+import typings.fpTs.libFunctionMod.LazyArg
 import typings.fpTs.libFunctorMod.Functor
 import typings.fpTs.libFunctorMod.Functor1
 import typings.fpTs.libFunctorMod.Functor2
@@ -58,7 +58,7 @@ object optionT {
   val ^ : js.Any = js.native
   
   inline def alt[M](M: Monad[M]): js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, Option<A>> */ Any
     ], 
     js.Function1[
@@ -66,7 +66,7 @@ object optionT {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, Option<A>> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, Option<A>> */ Any
     ], 
     js.Function1[
@@ -75,7 +75,7 @@ object optionT {
     ]
   ]]
   inline def alt[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](M: Monad1[M]): js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, Option<A>> */ Any
     ], 
     js.Function1[
@@ -83,7 +83,7 @@ object optionT {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, Option<A>> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, Option<A>> */ Any
     ], 
     js.Function1[
@@ -92,7 +92,7 @@ object optionT {
     ]
   ]]
   inline def alt[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](M: Monad2[M]): js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, Option<A>> */ Any
     ], 
     js.Function1[
@@ -100,7 +100,7 @@ object optionT {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, Option<A>> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, Option<A>> */ Any
     ], 
     js.Function1[
@@ -109,7 +109,7 @@ object optionT {
     ]
   ]]
   inline def alt[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](M: Monad3[M]): js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, Option<A>> */ Any
     ], 
     js.Function1[
@@ -117,7 +117,7 @@ object optionT {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, Option<A>> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, Option<A>> */ Any
     ], 
     js.Function1[
@@ -126,7 +126,7 @@ object optionT {
     ]
   ]]
   inline def alt[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](M: Monad4[M]): js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<M, S, R, E, Option<A>> */ Any
     ], 
     js.Function1[
@@ -134,7 +134,7 @@ object optionT {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<M, S, R, E, Option<A>> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<M, S, R, E, Option<A>> */ Any
     ], 
     js.Function1[
@@ -143,7 +143,7 @@ object optionT {
     ]
   ]]
   inline def alt[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](M: Monad2C[M, E]): js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, Option<A>> */ Any
     ], 
     js.Function1[
@@ -151,7 +151,7 @@ object optionT {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, Option<A>> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, Option<A>> */ Any
     ], 
     js.Function1[
@@ -160,7 +160,7 @@ object optionT {
     ]
   ]]
   inline def alt[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](M: Monad3C[M, E]): js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, Option<A>> */ Any
     ], 
     js.Function1[
@@ -168,7 +168,7 @@ object optionT {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, Option<A>> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* second */ Lazy[
+    /* second */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, Option<A>> */ Any
     ], 
     js.Function1[
@@ -935,7 +935,7 @@ object optionT {
   inline def getOptionM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](M: Monad2C[M, E]): OptionM2C[M, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptionM")(M.asInstanceOf[js.Any]).asInstanceOf[OptionM2C[M, E]]
   
   inline def getOrElse[M](M: Monad[M]): js.Function1[
-    /* onNone */ Lazy[
+    /* onNone */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, A> */ Any
     ], 
     js.Function1[
@@ -943,7 +943,7 @@ object optionT {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, A> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElse")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* onNone */ Lazy[
+    /* onNone */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, A> */ Any
     ], 
     js.Function1[
@@ -952,7 +952,7 @@ object optionT {
     ]
   ]]
   inline def getOrElse[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](M: Monad1[M]): js.Function1[
-    /* onNone */ Lazy[
+    /* onNone */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, A> */ Any
     ], 
     js.Function1[
@@ -960,7 +960,7 @@ object optionT {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, A> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElse")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* onNone */ Lazy[
+    /* onNone */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, A> */ Any
     ], 
     js.Function1[
@@ -969,7 +969,7 @@ object optionT {
     ]
   ]]
   inline def getOrElse[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](M: Monad2[M]): js.Function1[
-    /* onNone */ Lazy[
+    /* onNone */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ Any
     ], 
     js.Function1[
@@ -977,7 +977,7 @@ object optionT {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElse")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* onNone */ Lazy[
+    /* onNone */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ Any
     ], 
     js.Function1[
@@ -986,7 +986,7 @@ object optionT {
     ]
   ]]
   inline def getOrElse[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](M: Monad3[M]): js.Function1[
-    /* onNone */ Lazy[
+    /* onNone */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, A> */ Any
     ], 
     js.Function1[
@@ -994,7 +994,7 @@ object optionT {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, A> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElse")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* onNone */ Lazy[
+    /* onNone */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, A> */ Any
     ], 
     js.Function1[
@@ -1003,7 +1003,7 @@ object optionT {
     ]
   ]]
   inline def getOrElse[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](M: Monad4[M]): js.Function1[
-    /* onNone */ Lazy[
+    /* onNone */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<M, S, R, E, A> */ Any
     ], 
     js.Function1[
@@ -1011,7 +1011,7 @@ object optionT {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<M, S, R, E, A> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElse")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* onNone */ Lazy[
+    /* onNone */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<M, S, R, E, A> */ Any
     ], 
     js.Function1[
@@ -1020,7 +1020,7 @@ object optionT {
     ]
   ]]
   inline def getOrElse[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](M: Monad2C[M, E]): js.Function1[
-    /* onNone */ Lazy[
+    /* onNone */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ Any
     ], 
     js.Function1[
@@ -1028,7 +1028,7 @@ object optionT {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElse")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* onNone */ Lazy[
+    /* onNone */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ Any
     ], 
     js.Function1[
@@ -1037,7 +1037,7 @@ object optionT {
     ]
   ]]
   inline def getOrElse[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](M: Monad3C[M, E]): js.Function1[
-    /* onNone */ Lazy[
+    /* onNone */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, A> */ Any
     ], 
     js.Function1[
@@ -1045,7 +1045,7 @@ object optionT {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, A> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElse")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* onNone */ Lazy[
+    /* onNone */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, A> */ Any
     ], 
     js.Function1[

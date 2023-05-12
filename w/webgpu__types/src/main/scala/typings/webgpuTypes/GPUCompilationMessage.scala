@@ -23,11 +23,11 @@ trait GPUCompilationMessage extends StObject {
   /**
     * The line number in the shader {@link GPUShaderModuleDescriptor#code} the
     * {@link GPUCompilationMessage#message} corresponds to. Value is one-based, such that a lineNum of
-    * `1` indicates the first line of the shader {@link GPUShaderModuleDescriptor#code}.
+    * `1` indicates the first line of the shader {@link GPUShaderModuleDescriptor#code}. Lines are
+    * delimited by line breaks.
     * If the {@link GPUCompilationMessage#message} corresponds to a substring this points to
     * the line on which the substring begins. Must be `0` if the {@link GPUCompilationMessage#message}
     * does not correspond to any specific point in the shader {@link GPUShaderModuleDescriptor#code}.
-    * Issue(gpuweb/gpuweb#2435): Reference WGSL spec when it [defines what a line is](https://gpuweb.github.io/gpuweb/wgsl/#comments).
     */
   val lineNum: Double
   
@@ -43,7 +43,13 @@ trait GPUCompilationMessage extends StObject {
   val linePos: Double
   
   /**
-    * A human-readable string containing the message generated during the shader compilation.
+    * The human-readable, localizable text for this compilation message.
+    * Note: The {@link GPUCompilationMessage#message} should follow the best practices for language
+    * and direction information. This includes making use of any future standards which may
+    * emerge regarding the reporting of string language and direction metadata.
+    * <p class="note editorial">Editorial:
+    * At the time of this writing, no language/direction recommendation is available that provides
+    * compatibility and consistency with legacy APIs, but when there is, adopt it formally.
     */
   val message: String
   
@@ -58,8 +64,8 @@ trait GPUCompilationMessage extends StObject {
   
   /**
     * The severity level of the message.
-    * If the {@link GPUCompilationMessage#type} is "error", it corresponds to a
-    * shader-creation error.
+    * If the {@link GPUCompilationMessage#type} is {@link GPUCompilationMessageType#"error"}, it
+    * corresponds to a shader-creation error.
     */
   val `type`: GPUCompilationMessageType
 }

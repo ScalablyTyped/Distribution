@@ -4,20 +4,30 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A `DocumentSnapshot` contains data read from a document in your Firestore
-  * database. The data can be extracted with `.data()` or `.get(<field>)` to
-  * get a specific field.
-  *
-  * For a `DocumentSnapshot` that points to a non-existing document, any data
-  * access will return 'undefined'. You can use the `exists()` method to
-  * explicitly verify a document's existence.
-  */ @js.native
 trait il
   extends StObject
-     with Ch {
+     with Gh {
   
-  var _firestoreImpl: Any = js.native
+  def _toFieldTransform(t: Any): Ms
   
-  var metadata: Any = js.native
+  def isEqual(t: Any): Boolean
+  
+  var ya: Any
+}
+object il {
+  
+  inline def apply(_methodName: Any, _toFieldTransform: Any => Ms, isEqual: Any => Boolean, ya: Any): il = {
+    val __obj = js.Dynamic.literal(_methodName = _methodName.asInstanceOf[js.Any], _toFieldTransform = js.Any.fromFunction1(_toFieldTransform), isEqual = js.Any.fromFunction1(isEqual), ya = ya.asInstanceOf[js.Any])
+    __obj.asInstanceOf[il]
+  }
+  
+  @scala.inline
+  implicit open class MutableBuilder[Self <: il] (val x: Self) extends AnyVal {
+    
+    inline def setIsEqual(value: Any => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
+    
+    inline def setYa(value: Any): Self = StObject.set(x, "ya", value.asInstanceOf[js.Any])
+    
+    inline def set_toFieldTransform(value: Any => Ms): Self = StObject.set(x, "_toFieldTransform", js.Any.fromFunction1(value))
+  }
 }

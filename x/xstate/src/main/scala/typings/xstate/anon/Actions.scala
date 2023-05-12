@@ -1,35 +1,33 @@
 package typings.xstate.anon
 
+import typings.xstate.libTypesMod.ActionObject
+import typings.xstate.libTypesMod.BaseActionObject
+import typings.xstate.libTypesMod.EventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Actions extends StObject {
+trait Actions[TContext, TEvent /* <: EventObject */] extends StObject {
   
-  var actions: String
+  var actions: js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]]
   
-  var delays: String
-  
-  var guards: String
-  
-  var services: String
+  var `type`: String
 }
 object Actions {
   
-  inline def apply(actions: String, delays: String, guards: String, services: String): Actions = {
-    val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], delays = delays.asInstanceOf[js.Any], guards = guards.asInstanceOf[js.Any], services = services.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Actions]
+  inline def apply[TContext, TEvent /* <: EventObject */](actions: js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]], `type`: String): Actions[TContext, TEvent] = {
+    val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Actions[TContext, TEvent]]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: Actions] (val x: Self) extends AnyVal {
+  implicit open class MutableBuilder[Self <: Actions[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (Actions[TContext, TEvent])) extends AnyVal {
     
-    inline def setActions(value: String): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    inline def setDelays(value: String): Self = StObject.set(x, "delays", value.asInstanceOf[js.Any])
+    inline def setActionsVarargs(value: (ActionObject[TContext, TEvent, TEvent, BaseActionObject])*): Self = StObject.set(x, "actions", js.Array(value*))
     
-    inline def setGuards(value: String): Self = StObject.set(x, "guards", value.asInstanceOf[js.Any])
-    
-    inline def setServices(value: String): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

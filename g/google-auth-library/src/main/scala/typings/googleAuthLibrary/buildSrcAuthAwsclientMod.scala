@@ -63,11 +63,36 @@ object buildSrcAuthAwsclientMod {
     
     /* private */ var region: Any = js.native
     
+    /* private */ def regionFromEnv: Any = js.native
+    
     /* private */ val regionUrl: Any = js.native
     
     /* private */ val regionalCredVerificationUrl: Any = js.native
     
+    /* private */ def securityCredentialsFromEnv: Any = js.native
+    
     /* private */ val securityCredentialsUrl: Any = js.native
+    
+    /* private */ var shouldUseMetadataServer: Any = js.native
+    
+    /* private */ var validateEnvironmentId: Any = js.native
+  }
+  /* static members */
+  object AwsClient {
+    
+    @JSImport("google-auth-library/build/src/auth/awsclient", "AwsClient")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("google-auth-library/build/src/auth/awsclient", "AwsClient.AWS_EC2_METADATA_IPV4_ADDRESS")
+    @js.native
+    def AWS_EC2_METADATA_IPV4_ADDRESS: String = js.native
+    inline def AWS_EC2_METADATA_IPV4_ADDRESS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AWS_EC2_METADATA_IPV4_ADDRESS")(x.asInstanceOf[js.Any])
+    
+    @JSImport("google-auth-library/build/src/auth/awsclient", "AwsClient.AWS_EC2_METADATA_IPV6_ADDRESS")
+    @js.native
+    def AWS_EC2_METADATA_IPV6_ADDRESS: String = js.native
+    inline def AWS_EC2_METADATA_IPV6_ADDRESS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AWS_EC2_METADATA_IPV6_ADDRESS")(x.asInstanceOf[js.Any])
   }
   
   trait AwsClientOptions

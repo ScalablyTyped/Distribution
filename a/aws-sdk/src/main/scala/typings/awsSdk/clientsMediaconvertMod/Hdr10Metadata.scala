@@ -27,7 +27,7 @@ trait Hdr10Metadata extends StObject {
   var GreenPrimaryY: js.UndefOr[integerMin0Max50000] = js.undefined
   
   /**
-    * Maximum light level among all samples in the coded video sequence, in units of candelas per square meter.  This setting doesn't have a default value; you must specify a value that is suitable for the content.
+    * Maximum light level among all samples in the coded video sequence, in units of candelas per square meter. This setting doesn't have a default value; you must specify a value that is suitable for the content.
     */
   var MaxContentLightLevel: js.UndefOr[integerMin0Max65535] = js.undefined
   

@@ -1,7 +1,6 @@
 package typings.inferno.distCoreTypesMod
 
 import typings.inferno.anon.Children
-import typings.inferno.distCoreTypesMod.Inferno.InfernoNode
 import typings.std.Element
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
@@ -22,6 +21,10 @@ trait IComponent[P, S] extends StObject {
   var componentWillDisappear: js.UndefOr[js.Function2[/* domNode */ Element, /* callback */ js.Function, Unit]] = js.native
   
   var componentWillMount: js.UndefOr[js.Function0[Unit]] = js.native
+  
+  var componentWillMove: js.UndefOr[
+    js.Function3[/* parentVNode */ VNode, /* parentDOM */ Element, /* dom */ Element, Unit]
+  ] = js.native
   
   var componentWillReceiveProps: js.UndefOr[js.Function2[/* nextProps */ Children & P, /* nextContext */ Any, Unit]] = js.native
   

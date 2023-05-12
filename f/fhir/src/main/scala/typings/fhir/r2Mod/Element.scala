@@ -6,12 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Element extends StObject {
   
+  var _fhirComments: js.UndefOr[js.Array[Element]] = js.undefined
+  
   var _id: js.UndefOr[Element] = js.undefined
   
   /**
     * May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.
     */
   var `extension`: js.UndefOr[js.Array[Extension]] = js.undefined
+  
+  /**
+    * JSON Serialization Comments - not an actual element
+    */
+  var fhirComments: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * unique id for the element within a resource (for internal references).
@@ -34,9 +41,21 @@ object Element {
     
     inline def setExtensionVarargs(value: Extension*): Self = StObject.set(x, "extension", js.Array(value*))
     
+    inline def setFhirComments(value: js.Array[String]): Self = StObject.set(x, "fhirComments", value.asInstanceOf[js.Any])
+    
+    inline def setFhirCommentsUndefined: Self = StObject.set(x, "fhirComments", js.undefined)
+    
+    inline def setFhirCommentsVarargs(value: String*): Self = StObject.set(x, "fhirComments", js.Array(value*))
+    
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def set_fhirComments(value: js.Array[Element]): Self = StObject.set(x, "_fhirComments", value.asInstanceOf[js.Any])
+    
+    inline def set_fhirCommentsUndefined: Self = StObject.set(x, "_fhirComments", js.undefined)
+    
+    inline def set_fhirCommentsVarargs(value: Element*): Self = StObject.set(x, "_fhirComments", js.Array(value*))
     
     inline def set_id(value: Element): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     

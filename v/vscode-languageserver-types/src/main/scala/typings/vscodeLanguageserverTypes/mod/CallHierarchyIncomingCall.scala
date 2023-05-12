@@ -13,7 +13,7 @@ trait CallHierarchyIncomingCall extends StObject {
   
   /**
     * The ranges at which the calls appear. This is relative to the caller
-    * denoted by [`this.from`](#CallHierarchyIncomingCall.from).
+    * denoted by {@link CallHierarchyIncomingCall.from `this.from`}.
     */
   var fromRanges: js.Array[Range]
 }

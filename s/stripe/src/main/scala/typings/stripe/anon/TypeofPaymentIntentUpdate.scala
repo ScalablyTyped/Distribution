@@ -8,14 +8,11 @@ trait TypeofPaymentIntentUpdate extends StObject {
   
   val PaymentMethodData: TypeofPaymentMethodData
   
-  val PaymentMethodOptions: TypeofPaymentMethodOptionBacsDebit
+  val PaymentMethodOptions: TypeofPaymentMethodOptionAlipay
 }
 object TypeofPaymentIntentUpdate {
   
-  inline def apply(
-    PaymentMethodData: TypeofPaymentMethodData,
-    PaymentMethodOptions: TypeofPaymentMethodOptionBacsDebit
-  ): TypeofPaymentIntentUpdate = {
+  inline def apply(PaymentMethodData: TypeofPaymentMethodData, PaymentMethodOptions: TypeofPaymentMethodOptionAlipay): TypeofPaymentIntentUpdate = {
     val __obj = js.Dynamic.literal(PaymentMethodData = PaymentMethodData.asInstanceOf[js.Any], PaymentMethodOptions = PaymentMethodOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofPaymentIntentUpdate]
   }
@@ -25,6 +22,6 @@ object TypeofPaymentIntentUpdate {
     
     inline def setPaymentMethodData(value: TypeofPaymentMethodData): Self = StObject.set(x, "PaymentMethodData", value.asInstanceOf[js.Any])
     
-    inline def setPaymentMethodOptions(value: TypeofPaymentMethodOptionBacsDebit): Self = StObject.set(x, "PaymentMethodOptions", value.asInstanceOf[js.Any])
+    inline def setPaymentMethodOptions(value: TypeofPaymentMethodOptionAlipay): Self = StObject.set(x, "PaymentMethodOptions", value.asInstanceOf[js.Any])
   }
 }

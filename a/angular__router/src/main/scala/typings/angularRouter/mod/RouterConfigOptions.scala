@@ -5,8 +5,6 @@ import typings.angularRouter.angularRouterStrings.computed
 import typings.angularRouter.angularRouterStrings.deferred
 import typings.angularRouter.angularRouterStrings.eager
 import typings.angularRouter.angularRouterStrings.emptyOnly
-import typings.angularRouter.angularRouterStrings.ignore
-import typings.angularRouter.angularRouterStrings.reload
 import typings.angularRouter.angularRouterStrings.replace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -38,13 +36,13 @@ trait RouterConfigOptions extends StObject {
   var canceledNavigationResolution: js.UndefOr[replace | computed] = js.undefined
   
   /**
-    * Define what the router should do if it receives a navigation request to the current URL.
-    * Default is `ignore`, which causes the router ignores the navigation.
-    * This can disable features such as a "refresh" button.
-    * Use this option to configure the behavior when navigating to the
-    * current URL. Default is 'ignore'.
+    * Configures the default for handling a navigation request to the current URL.
+    *
+    * If unset, the `Router` will use `'ignore'`.
+    *
+    * @see `OnSameUrlNavigation`
     */
-  var onSameUrlNavigation: js.UndefOr[reload | ignore] = js.undefined
+  var onSameUrlNavigation: js.UndefOr[OnSameUrlNavigation] = js.undefined
   
   /**
     * Defines how the router merges parameters, data, and resolved data from parent to child
@@ -85,7 +83,7 @@ object RouterConfigOptions {
     
     inline def setCanceledNavigationResolutionUndefined: Self = StObject.set(x, "canceledNavigationResolution", js.undefined)
     
-    inline def setOnSameUrlNavigation(value: reload | ignore): Self = StObject.set(x, "onSameUrlNavigation", value.asInstanceOf[js.Any])
+    inline def setOnSameUrlNavigation(value: OnSameUrlNavigation): Self = StObject.set(x, "onSameUrlNavigation", value.asInstanceOf[js.Any])
     
     inline def setOnSameUrlNavigationUndefined: Self = StObject.set(x, "onSameUrlNavigation", js.undefined)
     

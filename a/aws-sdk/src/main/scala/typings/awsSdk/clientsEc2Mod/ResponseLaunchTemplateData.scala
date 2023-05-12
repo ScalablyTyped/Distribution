@@ -27,7 +27,7 @@ trait ResponseLaunchTemplateData extends StObject {
   var CreditSpecification: js.UndefOr[typings.awsSdk.clientsEc2Mod.CreditSpecification] = js.undefined
   
   /**
-    * Indicates whether the instance is enabled for stop protection. For more information, see Stop Protection.
+    * Indicates whether the instance is enabled for stop protection. For more information, see Stop protection in the Amazon Elastic Compute Cloud User Guide.
     */
   var DisableApiStop: js.UndefOr[Boolean] = js.undefined
   
@@ -67,7 +67,7 @@ trait ResponseLaunchTemplateData extends StObject {
   var IamInstanceProfile: js.UndefOr[LaunchTemplateIamInstanceProfileSpecification] = js.undefined
   
   /**
-    * The ID of the AMI that was used to launch the instance.
+    * The ID of the AMI or a Systems Manager parameter. The Systems Manager parameter will resolve to the ID of the AMI at instance launch. The value depends on what you specified in the request. The possible values are:   If an AMI ID was specified in the request, then this is the AMI ID.   If a Systems Manager parameter was specified in the request, and ResolveAlias was configured as true, then this is the AMI ID that the parameter is mapped to in the Parameter Store.   If a Systems Manager parameter was specified in the request, and ResolveAlias was configured as false, then this is the parameter value.   For more information, see Use a Systems Manager parameter instead of an AMI ID in the Amazon Elastic Compute Cloud User Guide.
     */
   var ImageId: js.UndefOr[String] = js.undefined
   
@@ -159,7 +159,7 @@ trait ResponseLaunchTemplateData extends StObject {
   /**
     * The user data for the instance. 
     */
-  var UserData: js.UndefOr[String] = js.undefined
+  var UserData: js.UndefOr[SensitiveUserData] = js.undefined
 }
 object ResponseLaunchTemplateData {
   
@@ -307,7 +307,7 @@ object ResponseLaunchTemplateData {
     
     inline def setTagSpecificationsVarargs(value: LaunchTemplateTagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value*))
     
-    inline def setUserData(value: String): Self = StObject.set(x, "UserData", value.asInstanceOf[js.Any])
+    inline def setUserData(value: SensitiveUserData): Self = StObject.set(x, "UserData", value.asInstanceOf[js.Any])
     
     inline def setUserDataUndefined: Self = StObject.set(x, "UserData", js.undefined)
   }

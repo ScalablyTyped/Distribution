@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeChannelMembershipForAppInstanceUserRequest extends StObject {
   
   /**
-    * The ARN of the user in a channel.
+    * The ARN of the user or bot in a channel.
     */
   var AppInstanceUserArn: ChimeArn
   
@@ -17,7 +17,7 @@ trait DescribeChannelMembershipForAppInstanceUserRequest extends StObject {
   var ChannelArn: ChimeArn
   
   /**
-    * The AppInstanceUserArn of the user that makes the API call.
+    * The ARN of the AppInstanceUser or AppInstanceBot that makes the API call.
     */
   var ChimeBearer: ChimeArn
 }

@@ -8,6 +8,7 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.InternalError
 import typings.devtoolsProtocol.devtoolsProtocolStrings.InvalidArgument
 import typings.devtoolsProtocol.devtoolsProtocolStrings.Ok
 import typings.devtoolsProtocol.devtoolsProtocolStrings.ResourceExhausted
+import typings.devtoolsProtocol.devtoolsProtocolStrings.Unauthorized
 import typings.devtoolsProtocol.devtoolsProtocolStrings.Unavailable
 import typings.devtoolsProtocol.devtoolsProtocolStrings.UnknownError
 import typings.devtoolsProtocol.mod.Protocol.integer
@@ -35,7 +36,7 @@ trait TrustTokenOperationDoneEvent extends StObject {
     * of the operation already exists und thus, the operation was abort
     * preemptively (e.g. a cache hit). (TrustTokenOperationDoneEventStatus enum)
     */
-  var status: Ok | InvalidArgument | FailedPrecondition | ResourceExhausted | AlreadyExists | Unavailable | BadResponse | InternalError | UnknownError | FulfilledLocally
+  var status: Ok | InvalidArgument | FailedPrecondition | ResourceExhausted | AlreadyExists | Unavailable | Unauthorized | BadResponse | InternalError | UnknownError | FulfilledLocally
   
   /**
     * Top level origin. The context in which the operation was attempted.
@@ -48,7 +49,7 @@ object TrustTokenOperationDoneEvent {
   
   inline def apply(
     requestId: RequestId,
-    status: Ok | InvalidArgument | FailedPrecondition | ResourceExhausted | AlreadyExists | Unavailable | BadResponse | InternalError | UnknownError | FulfilledLocally,
+    status: Ok | InvalidArgument | FailedPrecondition | ResourceExhausted | AlreadyExists | Unavailable | Unauthorized | BadResponse | InternalError | UnknownError | FulfilledLocally,
     `type`: TrustTokenOperationType
   ): TrustTokenOperationDoneEvent = {
     val __obj = js.Dynamic.literal(requestId = requestId.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
@@ -70,7 +71,7 @@ object TrustTokenOperationDoneEvent {
     inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     inline def setStatus(
-      value: Ok | InvalidArgument | FailedPrecondition | ResourceExhausted | AlreadyExists | Unavailable | BadResponse | InternalError | UnknownError | FulfilledLocally
+      value: Ok | InvalidArgument | FailedPrecondition | ResourceExhausted | AlreadyExists | Unavailable | Unauthorized | BadResponse | InternalError | UnknownError | FulfilledLocally
     ): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     inline def setTopLevelOrigin(value: String): Self = StObject.set(x, "topLevelOrigin", value.asInstanceOf[js.Any])

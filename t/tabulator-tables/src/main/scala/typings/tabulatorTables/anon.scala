@@ -425,7 +425,9 @@ object anon {
       
       inline def setBottomCalcFunction3(value: (/* values */ js.Array[Any], /* data */ js.Array[Any], /* calcParams */ js.Object) => Any): Self = StObject.set(x, "bottomCalc", js.Any.fromFunction3(value))
       
-      inline def setBottomCalcParams(value: (/* values */ Any, /* data */ Any) => Any): Self = StObject.set(x, "bottomCalcParams", js.Any.fromFunction2(value))
+      inline def setBottomCalcParams(value: ColumnCalcParams): Self = StObject.set(x, "bottomCalcParams", value.asInstanceOf[js.Any])
+      
+      inline def setBottomCalcParamsFunction2(value: (/* values */ Any, /* data */ Any) => Any): Self = StObject.set(x, "bottomCalcParams", js.Any.fromFunction2(value))
       
       inline def setBottomCalcParamsUndefined: Self = StObject.set(x, "bottomCalcParams", js.undefined)
       
@@ -961,7 +963,9 @@ object anon {
       
       inline def setTopCalcFunction3(value: (/* values */ js.Array[Any], /* data */ js.Array[Any], /* calcParams */ js.Object) => Any): Self = StObject.set(x, "topCalc", js.Any.fromFunction3(value))
       
-      inline def setTopCalcParams(value: (/* values */ Any, /* data */ Any) => Any): Self = StObject.set(x, "topCalcParams", js.Any.fromFunction2(value))
+      inline def setTopCalcParams(value: ColumnCalcParams): Self = StObject.set(x, "topCalcParams", value.asInstanceOf[js.Any])
+      
+      inline def setTopCalcParamsFunction2(value: (/* values */ Any, /* data */ Any) => Any): Self = StObject.set(x, "topCalcParams", js.Any.fromFunction2(value))
       
       inline def setTopCalcParamsUndefined: Self = StObject.set(x, "topCalcParams", js.undefined)
       
@@ -1019,6 +1023,24 @@ object anon {
       inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
       inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Precision extends StObject {
+    
+    var precision: Double
+  }
+  object Precision {
+    
+    inline def apply(precision: Double): Precision = {
+      val __obj = js.Dynamic.literal(precision = precision.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Precision]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Precision] (val x: Self) extends AnyVal {
+      
+      inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     }
   }
 }

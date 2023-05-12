@@ -15,7 +15,7 @@ trait NotebookDocument extends StObject {
   
   /**
     * The file system path of the associated resource. Shorthand
-    * notation for [TextDocument.uri.fsPath](#TextDocument.uri). Independent of the uri scheme.
+    * notation for {@link vscode.TextDocument.uri}. Independent of the uri scheme.
     */
   val fileName: String
   
@@ -32,8 +32,8 @@ trait NotebookDocument extends StObject {
   
   /**
     * Is this document representing an untitled file which has never been saved yet. *Note* that
-    * this does not mean the document will be saved to disk, use [`uri.scheme`](#Uri.scheme)
-    * to figure out where a document will be [saved](#FileSystemProvider), e.g. `file`, `ftp` etc.
+    * this does not mean the document will be saved to disk, use {@link vscode.Uri.scheme}
+    * to figure out where a document will be {@link vscode.FileSystemProvider}, e.g. `file`, `ftp` etc.
     */
   val isUntitled: Boolean
   

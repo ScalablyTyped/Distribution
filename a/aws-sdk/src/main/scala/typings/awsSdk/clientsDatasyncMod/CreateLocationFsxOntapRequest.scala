@@ -14,12 +14,12 @@ trait CreateLocationFsxOntapRequest extends StObject {
   var SecurityGroupArns: Ec2SecurityGroupArnList
   
   /**
-    * Specifies the ARN of the storage virtual machine (SVM) on your file system where you're copying data to or from.
+    * Specifies the ARN of the storage virtual machine (SVM) in your file system where you want to copy data to or from.
     */
   var StorageVirtualMachineArn: typings.awsSdk.clientsDatasyncMod.StorageVirtualMachineArn
   
   /**
-    * Specifies the junction path (also known as a mount point) in the SVM volume where you're copying data to or from (for example, /vol1).  Don't specify a junction path in the SVM's root volume. For more information, see Managing FSx for ONTAP storage virtual machines in the Amazon FSx for NetApp ONTAP User Guide. 
+    * Specifies a path to the file share in the SVM where you'll copy your data. You can specify a junction path (also known as a mount point), qtree path (for NFS file shares), or share name (for SMB file shares). For example, your mount path might be /vol1, /vol1/tree1, or /share1.  Don't specify a junction path in the SVM's root volume. For more information, see Managing FSx for ONTAP storage virtual machines in the Amazon FSx for NetApp ONTAP User Guide. 
     */
   var Subdirectory: js.UndefOr[FsxOntapSubdirectory] = js.undefined
   

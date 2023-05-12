@@ -10,6 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class DeleteIdentityPoolCommand protected ()
   extends typings.awsSdkClientCognitoIdentity.distTypesCommandsDeleteIdentityPoolCommandMod.DeleteIdentityPoolCommand {
+  /**
+    * @public
+    */
   def this(input: DeleteIdentityPoolCommandInput) = this()
 }
 /* static members */

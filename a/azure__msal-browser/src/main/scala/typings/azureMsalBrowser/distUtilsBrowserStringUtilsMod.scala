@@ -17,6 +17,12 @@ object distUtilsBrowserStringUtilsMod {
     val ^ : js.Any = js.native
     
     /**
+      * Returns stringified jwk.
+      * @param jwk
+      */
+    inline def getSortedObjectString(obj: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSortedObjectString")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    /**
       * Converst string to ArrayBuffer
       * @param dataString
       */

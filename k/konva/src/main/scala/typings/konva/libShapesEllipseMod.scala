@@ -1,5 +1,6 @@
 package typings.konva
 
+import typings.konva.libContextMod.Context
 import typings.konva.libShapeMod.Shape
 import typings.konva.libShapeMod.ShapeConfig
 import typings.konva.libTypesMod.GetSet
@@ -15,7 +16,7 @@ object libShapesEllipseMod {
   open class Ellipse () extends Shape[EllipseConfig] {
     def this(config: EllipseConfig) = this()
     
-    def _sceneFunc(context: Any): Unit = js.native
+    def _sceneFunc(context: Context): Unit = js.native
     
     def getHeight(): Double = js.native
     
@@ -37,9 +38,9 @@ object libShapesEllipseMod {
     @JSName("radius")
     var radius_Original: GetSet[Vector2d, this.type] = js.native
     
-    def setHeight(height: Any): Unit = js.native
+    def setHeight(height: Double): Unit = js.native
     
-    def setWidth(width: Any): Unit = js.native
+    def setWidth(width: Double): Unit = js.native
   }
   
   trait EllipseConfig

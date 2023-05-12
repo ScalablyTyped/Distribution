@@ -16,7 +16,7 @@ object libIconsYuqueOutlinedMod extends Shortcut {
   @js.native
   trait YuqueOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_YuqueOutlinedIconType: String = js.native

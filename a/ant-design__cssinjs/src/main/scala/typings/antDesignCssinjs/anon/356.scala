@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.TextEmphasisPosition
+import typings.csstype.mod.Property.MsContentZoomLimitMin
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `356` extends StObject {
   
   var value: js.UndefOr[
-    TextEmphasisPosition | (js.Array[
+    MsContentZoomLimitMin | (js.Array[
       (Extract[
-        js.UndefOr[TextEmphasisPosition | js.Array[NonNullable[js.UndefOr[TextEmphasisPosition]]]], 
+        js.UndefOr[MsContentZoomLimitMin | js.Array[NonNullable[js.UndefOr[MsContentZoomLimitMin]]]], 
         String
-      ]) | NonNullable[js.UndefOr[TextEmphasisPosition]]
+      ]) | NonNullable[js.UndefOr[MsContentZoomLimitMin]]
     ])
   ] = js.native
 }

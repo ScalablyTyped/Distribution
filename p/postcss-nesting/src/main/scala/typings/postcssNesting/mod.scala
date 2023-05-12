@@ -19,6 +19,7 @@ object mod extends Shortcut {
   
   trait pluginOptions extends StObject {
     
+    /** Avoid the `:is()` pseudo class as much as possible. default: false */
     var noIsPseudoSelector: js.UndefOr[Boolean] = js.undefined
   }
   object pluginOptions {

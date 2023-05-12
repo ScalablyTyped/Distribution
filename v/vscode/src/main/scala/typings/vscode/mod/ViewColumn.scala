@@ -14,10 +14,10 @@ object ViewColumn extends StObject {
   def apply(value: Double): js.UndefOr[ViewColumn & Double] = js.native
   
   /**
-    * A *symbolic* editor column representing the currently active column. This value
-    * can be used when opening editors, but the *resolved* {@link TextEditor.viewColumn viewColumn}-value
-    * of editors will always be `One`, `Two`, `Three`,... or `undefined` but never `Active`.
-    */
+  		 * A *symbolic* editor column representing the currently active column. This value
+  		 * can be used when opening editors, but the *resolved* {@link TextEditor.viewColumn viewColumn}-value
+  		 * of editors will always be `One`, `Two`, `Three`,... or `undefined` but never `Active`.
+  		 */
   @js.native
   sealed trait Active
     extends StObject
@@ -25,10 +25,10 @@ object ViewColumn extends StObject {
   /* -1 */ val Active: typings.vscode.mod.ViewColumn.Active & Double = js.native
   
   /**
-    * A *symbolic* editor column representing the column to the side of the active one. This value
-    * can be used when opening editors, but the *resolved* {@link TextEditor.viewColumn viewColumn}-value
-    * of editors will always be `One`, `Two`, `Three`,... or `undefined` but never `Beside`.
-    */
+  		 * A *symbolic* editor column representing the column to the side of the active one. This value
+  		 * can be used when opening editors, but the *resolved* {@link TextEditor.viewColumn viewColumn}-value
+  		 * of editors will always be `One`, `Two`, `Three`,... or `undefined` but never `Beside`.
+  		 */
   @js.native
   sealed trait Beside
     extends StObject
@@ -36,8 +36,8 @@ object ViewColumn extends StObject {
   /* -2 */ val Beside: typings.vscode.mod.ViewColumn.Beside & Double = js.native
   
   /**
-    * The eighth editor column.
-    */
+  		 * The eighth editor column.
+  		 */
   @js.native
   sealed trait Eight
     extends StObject
@@ -45,8 +45,8 @@ object ViewColumn extends StObject {
   /* 8 */ val Eight: typings.vscode.mod.ViewColumn.Eight & Double = js.native
   
   /**
-    * The fifth editor column.
-    */
+  		 * The fifth editor column.
+  		 */
   @js.native
   sealed trait Five
     extends StObject
@@ -54,8 +54,8 @@ object ViewColumn extends StObject {
   /* 5 */ val Five: typings.vscode.mod.ViewColumn.Five & Double = js.native
   
   /**
-    * The fourth editor column.
-    */
+  		 * The fourth editor column.
+  		 */
   @js.native
   sealed trait Four
     extends StObject
@@ -63,8 +63,8 @@ object ViewColumn extends StObject {
   /* 4 */ val Four: typings.vscode.mod.ViewColumn.Four & Double = js.native
   
   /**
-    * The ninth editor column.
-    */
+  		 * The ninth editor column.
+  		 */
   @js.native
   sealed trait Nine
     extends StObject
@@ -72,8 +72,8 @@ object ViewColumn extends StObject {
   /* 9 */ val Nine: typings.vscode.mod.ViewColumn.Nine & Double = js.native
   
   /**
-    * The first editor column.
-    */
+  		 * The first editor column.
+  		 */
   @js.native
   sealed trait One
     extends StObject
@@ -81,8 +81,8 @@ object ViewColumn extends StObject {
   /* 1 */ val One: typings.vscode.mod.ViewColumn.One & Double = js.native
   
   /**
-    * The seventh editor column.
-    */
+  		 * The seventh editor column.
+  		 */
   @js.native
   sealed trait Seven
     extends StObject
@@ -90,8 +90,8 @@ object ViewColumn extends StObject {
   /* 7 */ val Seven: typings.vscode.mod.ViewColumn.Seven & Double = js.native
   
   /**
-    * The sixth editor column.
-    */
+  		 * The sixth editor column.
+  		 */
   @js.native
   sealed trait Six
     extends StObject
@@ -99,8 +99,8 @@ object ViewColumn extends StObject {
   /* 6 */ val Six: typings.vscode.mod.ViewColumn.Six & Double = js.native
   
   /**
-    * The third editor column.
-    */
+  		 * The third editor column.
+  		 */
   @js.native
   sealed trait Three
     extends StObject
@@ -108,8 +108,8 @@ object ViewColumn extends StObject {
   /* 3 */ val Three: typings.vscode.mod.ViewColumn.Three & Double = js.native
   
   /**
-    * The second editor column.
-    */
+  		 * The second editor column.
+  		 */
   @js.native
   sealed trait Two
     extends StObject

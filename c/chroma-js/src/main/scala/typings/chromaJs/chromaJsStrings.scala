@@ -118,6 +118,18 @@ object chromaJsStrings {
   inline def name: name = "name".asInstanceOf[name]
   
   @js.native
+  sealed trait oklab
+    extends StObject
+       with InterpolationMode
+  inline def oklab: oklab = "oklab".asInstanceOf[oklab]
+  
+  @js.native
+  sealed trait oklch
+    extends StObject
+       with InterpolationMode
+  inline def oklch: oklch = "oklch".asInstanceOf[oklch]
+  
+  @js.native
   sealed trait overlay extends StObject
   inline def overlay: overlay = "overlay".asInstanceOf[overlay]
   

@@ -283,6 +283,7 @@ import typings.babelTypes.mod.Function
 import typings.babelTypes.mod.FunctionParent
 import typings.babelTypes.mod.Identifier_
 import typings.babelTypes.mod.Immutable
+import typings.babelTypes.mod.ImportOrExportDeclaration
 import typings.babelTypes.mod.JSX
 import typings.babelTypes.mod.LVal
 import typings.babelTypes.mod.Literal
@@ -2806,6 +2807,7 @@ object mod {
     - typings.babelTraverse.babelTraverseStrings.YieldExpression
     - typings.babelTraverse.babelTraverseStrings.ObjectTypeCallProperty
     - typings.babelTraverse.babelTraverseStrings.TupleTypeAnnotation
+    - typings.babelTraverse.babelTraverseStrings.ImportOrExportDeclaration
     - typings.babelTraverse.babelTraverseStrings.Standardized
     - typings.babelTraverse.babelTraverseStrings.TypeParameterDeclaration
     - typings.babelTraverse.babelTraverseStrings.TSModuleDeclaration
@@ -3301,6 +3303,8 @@ object mod {
     inline def ImportDefaultSpecifier: typings.babelTraverse.babelTraverseStrings.ImportDefaultSpecifier = "ImportDefaultSpecifier".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ImportDefaultSpecifier]
     
     inline def ImportNamespaceSpecifier: typings.babelTraverse.babelTraverseStrings.ImportNamespaceSpecifier = "ImportNamespaceSpecifier".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ImportNamespaceSpecifier]
+    
+    inline def ImportOrExportDeclaration: typings.babelTraverse.babelTraverseStrings.ImportOrExportDeclaration = "ImportOrExportDeclaration".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ImportOrExportDeclaration]
     
     inline def ImportSpecifier: typings.babelTraverse.babelTraverseStrings.ImportSpecifier = "ImportSpecifier".asInstanceOf[typings.babelTraverse.babelTraverseStrings.ImportSpecifier]
     
@@ -4008,6 +4012,8 @@ object mod {
     var ImportDefaultSpecifier: js.UndefOr[VisitNode[S, Extract[Node, `19`]]] = js.undefined
     
     var ImportNamespaceSpecifier: js.UndefOr[VisitNode[S, Extract[Node, `202`]]] = js.undefined
+    
+    var ImportOrExportDeclaration: js.UndefOr[VisitNode[S, typings.babelTypes.mod.ImportOrExportDeclaration]] = js.undefined
     
     var ImportSpecifier: js.UndefOr[VisitNode[S, Extract[Node, `114`]]] = js.undefined
     
@@ -4855,6 +4861,10 @@ object mod {
       inline def setImportNamespaceSpecifier(value: VisitNode[S, Extract[Node, `202`]]): Self = StObject.set(x, "ImportNamespaceSpecifier", value.asInstanceOf[js.Any])
       
       inline def setImportNamespaceSpecifierUndefined: Self = StObject.set(x, "ImportNamespaceSpecifier", js.undefined)
+      
+      inline def setImportOrExportDeclaration(value: VisitNode[S, ImportOrExportDeclaration]): Self = StObject.set(x, "ImportOrExportDeclaration", value.asInstanceOf[js.Any])
+      
+      inline def setImportOrExportDeclarationUndefined: Self = StObject.set(x, "ImportOrExportDeclaration", js.undefined)
       
       inline def setImportSpecifier(value: VisitNode[S, Extract[Node, `114`]]): Self = StObject.set(x, "ImportSpecifier", value.asInstanceOf[js.Any])
       

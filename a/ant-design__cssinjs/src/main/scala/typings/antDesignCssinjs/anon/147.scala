@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MsGridColumns
+import typings.csstype.mod.Property.MarginRight
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `147` extends StObject {
   
   var value: js.UndefOr[
-    (MsGridColumns[Double | String]) | (js.Array[
+    (MarginRight[Double | String]) | (js.Array[
       (Extract[
         js.UndefOr[
-          (MsGridColumns[Double | String]) | (js.Array[NonNullable[js.UndefOr[MsGridColumns[Double | String]]]])
+          (MarginRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginRight[Double | String]]]])
         ], 
         String
-      ]) | (NonNullable[js.UndefOr[MsGridColumns[Double | String]]])
+      ]) | (NonNullable[js.UndefOr[MarginRight[Double | String]]])
     ])
   ] = js.native
 }

@@ -28,7 +28,7 @@ trait ConsentVerification
   var verified: Boolean
   
   /**
-    * The person who conducted the verification/validation of the Grantee decision.
+    * The person who conducted the verification/validation of the Grantor decision.
     */
   var verifiedBy: js.UndefOr[Reference] = js.undefined
   

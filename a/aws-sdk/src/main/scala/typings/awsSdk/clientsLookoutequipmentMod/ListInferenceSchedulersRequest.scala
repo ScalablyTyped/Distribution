@@ -25,6 +25,11 @@ trait ListInferenceSchedulersRequest extends StObject {
     *  An opaque pagination token indicating where to continue the listing of inference schedulers. 
     */
   var NextToken: js.UndefOr[typings.awsSdk.clientsLookoutequipmentMod.NextToken] = js.undefined
+  
+  /**
+    * Specifies the current status of the inference schedulers to list.
+    */
+  var Status: js.UndefOr[InferenceSchedulerStatus] = js.undefined
 }
 object ListInferenceSchedulersRequest {
   
@@ -51,5 +56,9 @@ object ListInferenceSchedulersRequest {
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    
+    inline def setStatus(value: InferenceSchedulerStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

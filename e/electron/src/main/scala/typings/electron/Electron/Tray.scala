@@ -155,6 +155,9 @@ trait Tray extends EventEmitter {
   def on_balloonshow(event: `balloon-show`, listener: js.Function): this.type = js.native
   /**
     * Emitted when the tray icon is clicked.
+    *
+    * Note that on Linux this event is emitted when the tray icon receives an
+    * activation, which might not necessarily be left mouse click.
     */
   @JSName("on")
   def on_click(

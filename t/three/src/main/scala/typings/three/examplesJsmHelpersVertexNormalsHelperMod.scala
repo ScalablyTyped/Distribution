@@ -1,6 +1,7 @@
 package typings.three
 
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.LineSegments
@@ -14,7 +15,7 @@ object examplesJsmHelpersVertexNormalsHelperMod {
   @JSImport("three/examples/jsm/helpers/VertexNormalsHelper", "VertexNormalsHelper")
   @js.native
   open class VertexNormalsHelper protected ()
-    extends LineSegments[BufferGeometry, Material | js.Array[Material]] {
+    extends LineSegments[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]] {
     def this(`object`: Object3D[Event]) = this()
     def this(`object`: Object3D[Event], size: Double) = this()
     def this(`object`: Object3D[Event], size: Double, hex: Double) = this()

@@ -496,6 +496,17 @@ object distMod {
     
     inline def getLibusbCapability(capability: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("_getLibusbCapability")(capability.asInstanceOf[js.Any]).asInstanceOf[Double]
     
+    @JSImport("usb/dist", "usb.pollHotplug")
+    @js.native
+    def pollHotplug: Boolean = js.native
+    
+    @JSImport("usb/dist", "usb.pollHotplugDelay")
+    @js.native
+    def pollHotplugDelay: Double = js.native
+    inline def pollHotplugDelay_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pollHotplugDelay")(x.asInstanceOf[js.Any])
+    
+    inline def pollHotplug_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pollHotplug")(x.asInstanceOf[js.Any])
+    
     inline def refHotplugEvents(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refHotplugEvents")().asInstanceOf[Unit]
     
     inline def setDebugLevel(level: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDebugLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]

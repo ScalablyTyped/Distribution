@@ -46,7 +46,7 @@ object libModuleComponentsMod {
     def this(props: Props) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Props, context: Any) = this()
   }
@@ -75,7 +75,7 @@ object libModuleComponentsMod {
     def this(props: typings.reactSketchapp.libModuleComponentsDocumentMod.Props) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: typings.reactSketchapp.libModuleComponentsDocumentMod.Props, context: Any) = this()
   }
@@ -99,7 +99,7 @@ object libModuleComponentsMod {
     def this(props: typings.reactSketchapp.libModuleComponentsImageMod.Props) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: typings.reactSketchapp.libModuleComponentsImageMod.Props, context: Any) = this()
   }
@@ -128,7 +128,7 @@ object libModuleComponentsMod {
     def this(props: typings.reactSketchapp.libModuleComponentsPageMod.Props) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: typings.reactSketchapp.libModuleComponentsPageMod.Props, context: Any) = this()
   }
@@ -152,7 +152,7 @@ object libModuleComponentsMod {
     def this(props: typings.reactSketchapp.libModuleComponentsRedBoxMod.Props) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: typings.reactSketchapp.libModuleComponentsRedBoxMod.Props, context: Any) = this()
   }
@@ -180,7 +180,7 @@ object libModuleComponentsMod {
     def this(props: typings.reactSketchapp.libModuleComponentsSvgSvgMod.Props) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: typings.reactSketchapp.libModuleComponentsSvgSvgMod.Props, context: Any) = this()
   }
@@ -314,7 +314,7 @@ object libModuleComponentsMod {
     def this(props: typings.reactSketchapp.libModuleComponentsTextMod.Props) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: typings.reactSketchapp.libModuleComponentsTextMod.Props, context: Any) = this()
   }
@@ -338,7 +338,7 @@ object libModuleComponentsMod {
     def this(props: typings.reactSketchapp.libModuleComponentsViewMod.Props) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: typings.reactSketchapp.libModuleComponentsViewMod.Props, context: Any) = this()
   }

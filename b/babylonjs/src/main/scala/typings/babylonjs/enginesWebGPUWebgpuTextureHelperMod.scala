@@ -5,6 +5,7 @@ import typings.babylonjs.anon.Width
 import typings.babylonjs.enginesWebGPUWebgpuBufferManagerMod.WebGPUBufferManager
 import typings.babylonjs.enginesWebGPUWebgpuHardwareTextureMod.WebGPUHardwareTexture
 import typings.babylonjs.enginesWebGPUWebgpuTintWASMMod.WebGPUTintWASM
+import typings.babylonjs.materialsTexturesExternalTextureMod.ExternalTexture
 import typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture
 import typings.babylonjs.typesMod.Nullable
 import typings.std.ImageBitmap
@@ -36,6 +37,8 @@ object enginesWebGPUWebgpuTextureHelperMod {
     
     /* private */ var _getPipeline: Any = js.native
     
+    /* private */ var _getVideoPipeline: Any = js.native
+    
     /* private */ var _glslang: Any = js.native
     
     /* private */ var _mipmapSampler: Any = js.native
@@ -45,6 +48,29 @@ object enginesWebGPUWebgpuTextureHelperMod {
     /* private */ var _tintWASM: Any = js.native
     
     /* private */ var _ubCopyWithOfst: Any = js.native
+    
+    /* private */ var _videoCompiledShaders: Any = js.native
+    
+    /* private */ var _videoPipelines: Any = js.native
+    
+    /* private */ var _videoSampler: Any = js.native
+    
+    def copyVideoToTexture(video: ExternalTexture, texture: InternalTexture, format: GPUTextureFormat): Unit = js.native
+    def copyVideoToTexture(video: ExternalTexture, texture: InternalTexture, format: GPUTextureFormat, invertY: Boolean): Unit = js.native
+    def copyVideoToTexture(
+      video: ExternalTexture,
+      texture: InternalTexture,
+      format: GPUTextureFormat,
+      invertY: Boolean,
+      commandEncoder: GPUCommandEncoder
+    ): Unit = js.native
+    def copyVideoToTexture(
+      video: ExternalTexture,
+      texture: InternalTexture,
+      format: GPUTextureFormat,
+      invertY: Unit,
+      commandEncoder: GPUCommandEncoder
+    ): Unit = js.native
     
     def copyWithInvertY(
       srcTextureView: GPUTextureView,
@@ -68,7 +94,8 @@ object enginesWebGPUWebgpuTextureHelperMod {
       sampleCount: js.UndefOr[Double],
       commandEncoder: js.UndefOr[GPUCommandEncoder],
       usage: js.UndefOr[Double],
-      additionalUsages: js.UndefOr[Double]
+      additionalUsages: js.UndefOr[Double],
+      label: js.UndefOr[String]
     ): GPUTexture = js.native
     
     def createGPUTextureForInternalTexture(texture: InternalTexture): WebGPUHardwareTexture = js.native
@@ -89,6 +116,9 @@ object enginesWebGPUWebgpuTextureHelperMod {
     def createGPUTextureForInternalTexture(texture: InternalTexture, width: Unit, height: Unit, depth: Unit, creationFlags: Double): WebGPUHardwareTexture = js.native
     
     def createMSAATexture(texture: InternalTexture, samples: Double): Unit = js.native
+    def createMSAATexture(texture: InternalTexture, samples: Double, releaseExisting: Boolean): Unit = js.native
+    def createMSAATexture(texture: InternalTexture, samples: Double, releaseExisting: Boolean, index: Double): Unit = js.native
+    def createMSAATexture(texture: InternalTexture, samples: Double, releaseExisting: Unit, index: Double): Unit = js.native
     
     def createTexture(
       imageBitmap: ImageBitmap | Width,
@@ -101,7 +131,8 @@ object enginesWebGPUWebgpuTextureHelperMod {
       sampleCount: js.UndefOr[Double],
       commandEncoder: js.UndefOr[GPUCommandEncoder],
       usage: js.UndefOr[Double],
-      additionalUsages: js.UndefOr[Double]
+      additionalUsages: js.UndefOr[Double],
+      label: js.UndefOr[String]
     ): GPUTexture = js.native
     
     def destroyDeferredTextures(): Unit = js.native
@@ -539,6 +570,8 @@ object enginesWebGPUWebgpuTextureHelperMod {
     val ^ : js.Any = js.native
     
     inline def ComputeNumMipmapLevels(width: Double, height: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ComputeNumMipmapLevels")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    inline def GetDepthFormatOnly(format: GPUTextureFormat): GPUTextureFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("GetDepthFormatOnly")(format.asInstanceOf[js.Any]).asInstanceOf[GPUTextureFormat]
     
     inline def GetNumChannelsFromWebGPUTextureFormat(format: GPUTextureFormat): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetNumChannelsFromWebGPUTextureFormat")(format.asInstanceOf[js.Any]).asInstanceOf[Double]
     

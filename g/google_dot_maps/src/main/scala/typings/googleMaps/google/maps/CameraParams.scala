@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Used for retrieving camera parameters, such as that of the GL camera used
-  * for the {@link google.maps.WebGLOverlayView}.
-  */
 trait CameraParams
   extends StObject
      with CameraOptions {

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ActivateContactChannelRequest extends StObject {
   
   /**
-    * The code sent to the contact channel when it was created in the contact. 
+    * The code sent to the contact channel when it was created in the contact.
     */
   var ActivationCode: typings.awsSdk.clientsSsmcontactsMod.ActivationCode
   

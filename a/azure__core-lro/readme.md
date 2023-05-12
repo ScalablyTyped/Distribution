@@ -1,7 +1,7 @@
 
 # Scala.js typings for azure__core-lro
 
-Typings are for version 2.3.1
+Typings are for version 2.5.3
 
 
 

@@ -13,13 +13,15 @@ object distTypesObjectMappingMod {
   
   inline def convertMap(target: Any): Record[String, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertMap")(target.asInstanceOf[js.Any]).asInstanceOf[Record[String, Any]]
   
-  inline def map(instructions: Record[String, ObjectMappingInstruction]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(instructions.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def map(instructions: ObjectMappingInstructions): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(instructions.asInstanceOf[js.Any]).asInstanceOf[Any]
   inline def map(
     target: Any,
     filter: js.Function1[/* value */ Any, Boolean],
     instructions: Record[String, ValueSupplier | Value]
   ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(target.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], instructions.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def map(target: Any, instructions: Record[String, ObjectMappingInstruction]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(target.asInstanceOf[js.Any], instructions.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def map(target: Any, instructions: ObjectMappingInstructions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(target.asInstanceOf[js.Any], instructions.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  inline def take(source: Any, instructions: SourceMappingInstructions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("take")(source.asInstanceOf[js.Any], instructions.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   type ConditionalLazyValueInstruction = js.Tuple2[FilterStatusSupplier, ValueSupplier]
   
@@ -37,11 +39,21 @@ object distTypesObjectMappingMod {
   
   type SimpleValueInstruction = js.Tuple2[FilterStatus, Value]
   
+  type SourceMappingInstruction = js.Tuple3[
+    js.UndefOr[ValueFilteringFunction | FilterStatus], 
+    js.UndefOr[ValueMapper], 
+    js.UndefOr[String]
+  ]
+  
+  type SourceMappingInstructions = Record[String, ValueMapper | SourceMappingInstruction]
+  
   type UnfilteredValue = Any
   
   type Value = Any
   
   type ValueFilteringFunction = js.Function1[/* value */ Any, Boolean]
+  
+  type ValueMapper = js.Function1[/* value */ Any, Any]
   
   type ValueSupplier = js.Function0[Any]
 }

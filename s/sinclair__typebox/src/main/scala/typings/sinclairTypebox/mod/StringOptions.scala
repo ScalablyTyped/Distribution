@@ -9,7 +9,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StringOptions[Format /* <: String */]
+trait StringOptions
   extends StObject
      with SchemaOptions {
   
@@ -17,7 +17,7 @@ trait StringOptions[Format /* <: String */]
   
   var contentMediaType: js.UndefOr[String] = js.undefined
   
-  var format: js.UndefOr[Format] = js.undefined
+  var format: js.UndefOr[String] = js.undefined
   
   var maxLength: js.UndefOr[Double] = js.undefined
   
@@ -27,13 +27,13 @@ trait StringOptions[Format /* <: String */]
 }
 object StringOptions {
   
-  inline def apply[Format /* <: String */](): StringOptions[Format] = {
+  inline def apply(): StringOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[StringOptions[Format]]
+    __obj.asInstanceOf[StringOptions]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: StringOptions[?], Format /* <: String */] (val x: Self & StringOptions[Format]) extends AnyVal {
+  implicit open class MutableBuilder[Self <: StringOptions] (val x: Self) extends AnyVal {
     
     inline def setContentEncoding(value: `7bit` | `8bit` | binary | `quoted-printable` | base64): Self = StObject.set(x, "contentEncoding", value.asInstanceOf[js.Any])
     
@@ -43,7 +43,7 @@ object StringOptions {
     
     inline def setContentMediaTypeUndefined: Self = StObject.set(x, "contentMediaType", js.undefined)
     
-    inline def setFormat(value: Format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     

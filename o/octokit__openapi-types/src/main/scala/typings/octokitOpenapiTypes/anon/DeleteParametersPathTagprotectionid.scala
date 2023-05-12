@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteParametersPathTagprotectionid extends StObject {
   
   /**
-    * This deletes a tag protection state for a repository.
+    * Delete a tag protection state for a repository
+    * @description This deletes a tag protection state for a repository.
     * This endpoint is only available to repository administrators.
     */
   var delete: ParametersPathTagprotectionid

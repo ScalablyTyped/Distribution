@@ -41,7 +41,9 @@ object srcProgressSchemaMod {
     /* "waiting" */ val Waiting: typings.angularDevkitArchitect.srcProgressSchemaMod.State.Waiting & String = js.native
   }
   
-  trait Schema extends StObject {
+  trait Schema
+    extends StObject
+       with /* property */ StringDictionary[Any] {
     
     var builder: StringDictionary[Any]
     

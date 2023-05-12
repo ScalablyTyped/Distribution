@@ -5,9 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../platform/graphics/render-pass.js').RenderPass} RenderPass */
-/** @typedef {import('../platform/graphics/render-target.js').RenderTarget} RenderTarget */
-/** @typedef {import('../platform/graphics/texture.js').Texture} Texture */
 /**
   * A frame graph represents a single rendering frame as a sequence of render passes.
   *
@@ -18,23 +15,22 @@ trait FrameGraph extends StObject {
   /**
     * Add a render pass to the frame.
     *
-    * @param {RenderPass} renderPass - The render pass to add.
+    * @param {import('../platform/graphics/render-pass.js').RenderPass} renderPass - The render
+    * pass to add.
     */
   def addRenderPass(renderPass: RenderPass): Unit
   
   def compile(): Unit
   
-  def log(): Unit
+  def render(device: Any): Unit
   
-  def render(): Unit
-  
-  /** @type {RenderPass[]} */
+  /** @type {import('../platform/graphics/render-pass.js').RenderPass[]} */
   var renderPasses: js.Array[RenderPass]
   
   /**
     * Map used during frame graph compilation. It maps a render target to its previous occurrence.
     *
-    *  @type {Map<RenderTarget, RenderPass>}
+    *  @type {Map<import('../platform/graphics/render-target.js').RenderTarget, import('../platform/graphics/render-pass.js').RenderPass>}
     */
   var renderTargetMap: Map[RenderTarget, RenderPass]
   
@@ -45,13 +41,12 @@ object FrameGraph {
   inline def apply(
     addRenderPass: RenderPass => Unit,
     compile: () => Unit,
-    log: () => Unit,
-    render: () => Unit,
+    render: Any => Unit,
     renderPasses: js.Array[RenderPass],
     renderTargetMap: Map[RenderTarget, RenderPass],
     reset: () => Unit
   ): FrameGraph = {
-    val __obj = js.Dynamic.literal(addRenderPass = js.Any.fromFunction1(addRenderPass), compile = js.Any.fromFunction0(compile), log = js.Any.fromFunction0(log), render = js.Any.fromFunction0(render), renderPasses = renderPasses.asInstanceOf[js.Any], renderTargetMap = renderTargetMap.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset))
+    val __obj = js.Dynamic.literal(addRenderPass = js.Any.fromFunction1(addRenderPass), compile = js.Any.fromFunction0(compile), render = js.Any.fromFunction1(render), renderPasses = renderPasses.asInstanceOf[js.Any], renderTargetMap = renderTargetMap.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset))
     __obj.asInstanceOf[FrameGraph]
   }
   
@@ -62,9 +57,7 @@ object FrameGraph {
     
     inline def setCompile(value: () => Unit): Self = StObject.set(x, "compile", js.Any.fromFunction0(value))
     
-    inline def setLog(value: () => Unit): Self = StObject.set(x, "log", js.Any.fromFunction0(value))
-    
-    inline def setRender(value: () => Unit): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
+    inline def setRender(value: Any => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     
     inline def setRenderPasses(value: js.Array[RenderPass]): Self = StObject.set(x, "renderPasses", value.asInstanceOf[js.Any])
     

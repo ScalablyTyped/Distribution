@@ -88,5 +88,5 @@ object mod {
   
   @JSImport("@tensorflow/tfjs-converter", "version_converter")
   @js.native
-  val versionConverter: /* "4.0.0" */ String = js.native
+  val versionConverter: /* "4.5.0" */ String = js.native
 }

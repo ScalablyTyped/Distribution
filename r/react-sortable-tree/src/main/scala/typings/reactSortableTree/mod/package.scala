@@ -23,13 +23,13 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-// tslint:disable-next-line:no-unnecessary-generics
+// eslint-disable-next-line no-unnecessary-generics
 inline def default[T](props: PropsWithChildren[ReactSortableTreeProps[T]]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 
-// tslint:disable-next-line:no-unnecessary-generics
+// eslint-disable-next-line no-unnecessary-generics
 inline def SortableTree[T](props: PropsWithChildren[ReactSortableTreeProps[T]]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SortableTree")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 
-// tslint:disable-next-line:no-unnecessary-generics
+// eslint-disable-next-line no-unnecessary-generics
 inline def SortableTreeWithoutDndContext[T](props: PropsWithChildren[ReactSortableTreeProps[T]]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SortableTreeWithoutDndContext")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 
 inline def addNodeUnderParent[T](data: FullTree[T] & AddAsFirstChild[T]): FullTree[T] & TreeIndex = ^.asInstanceOf[js.Dynamic].applyDynamic("addNodeUnderParent")(data.asInstanceOf[js.Any]).asInstanceOf[FullTree[T] & TreeIndex]

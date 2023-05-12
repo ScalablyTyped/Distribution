@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MozFloatEdge
+import typings.csstype.mod.Property.ListStylePosition
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `351` extends StObject {
   
   var value: js.UndefOr[
-    MozFloatEdge | (js.Array[
-      (Extract[js.UndefOr[MozFloatEdge | js.Array[NonNullable[js.UndefOr[MozFloatEdge]]]], String]) | NonNullable[js.UndefOr[MozFloatEdge]]
+    ListStylePosition | (js.Array[
+      (Extract[
+        js.UndefOr[ListStylePosition | js.Array[NonNullable[js.UndefOr[ListStylePosition]]]], 
+        String
+      ]) | NonNullable[js.UndefOr[ListStylePosition]]
     ])
   ] = js.native
 }

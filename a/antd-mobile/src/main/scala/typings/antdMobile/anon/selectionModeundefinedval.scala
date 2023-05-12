@@ -53,7 +53,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  selectionMode :undefined,   value :undefined,   defaultValue :undefined,   onChange :undefined} & {  prevMonthButton :react.react.ReactNode | undefined,   prevYearButton :react.react.ReactNode | undefined,   nextMonthButton :react.react.ReactNode | undefined,   nextYearButton :react.react.ReactNode | undefined,   onPageChange :(year : number, month : number): void | undefined,   weekStartsOn :'Monday' | 'Sunday' | undefined,   renderLabel :(date : std.Date): react.react.ReactNode | undefined,   allowClear :boolean | undefined,   max :std.Date | undefined,   min :std.Date | undefined,   shouldDisableDate :(date : std.Date): boolean | undefined,   minPage :antd-mobile.antd-mobile/es/components/calendar/convert.Page | undefined,   maxPage :antd-mobile.antd-mobile/es/components/calendar/convert.Page | undefined} & antd-mobile.antd-mobile/es/utils/native-props.NativeProps<never> */
+/* Inlined {  selectionMode :undefined,   value :undefined,   defaultValue :undefined,   onChange :undefined} & {  prevMonthButton :react.react.ReactNode | undefined,   prevYearButton :react.react.ReactNode | undefined,   nextMonthButton :react.react.ReactNode | undefined,   nextYearButton :react.react.ReactNode | undefined,   onPageChange :(year : number, month : number): void | undefined,   weekStartsOn :'Monday' | 'Sunday' | undefined,   renderLabel :(date : std.Date): react.react.ReactNode | undefined,   renderDate :(date : std.Date): react.react.ReactNode | undefined,   allowClear :boolean | undefined,   max :std.Date | undefined,   min :std.Date | undefined,   shouldDisableDate :(date : std.Date): boolean | undefined,   minPage :antd-mobile.antd-mobile/es/components/calendar/convert.Page | undefined,   maxPage :antd-mobile.antd-mobile/es/components/calendar/convert.Page | undefined} & antd-mobile.antd-mobile/es/utils/native-props.NativeProps<never> */
 trait selectionModeundefinedval
   extends StObject
      with CalendarProps {
@@ -317,6 +317,8 @@ trait selectionModeundefinedval
   var prevMonthButton: js.UndefOr[ReactNode] = js.undefined
   
   var prevYearButton: js.UndefOr[ReactNode] = js.undefined
+  
+  var renderDate: js.UndefOr[js.Function1[/* date */ js.Date, ReactNode]] = js.undefined
   
   var renderLabel: js.UndefOr[js.Function1[/* date */ js.Date, ReactNode]] = js.undefined
   
@@ -583,6 +585,10 @@ object selectionModeundefinedval {
     inline def setPrevYearButton(value: ReactNode): Self = StObject.set(x, "prevYearButton", value.asInstanceOf[js.Any])
     
     inline def setPrevYearButtonUndefined: Self = StObject.set(x, "prevYearButton", js.undefined)
+    
+    inline def setRenderDate(value: /* date */ js.Date => ReactNode): Self = StObject.set(x, "renderDate", js.Any.fromFunction1(value))
+    
+    inline def setRenderDateUndefined: Self = StObject.set(x, "renderDate", js.undefined)
     
     inline def setRenderLabel(value: /* date */ js.Date => ReactNode): Self = StObject.set(x, "renderLabel", js.Any.fromFunction1(value))
     

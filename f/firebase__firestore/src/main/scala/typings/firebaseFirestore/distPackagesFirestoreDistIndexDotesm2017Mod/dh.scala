@@ -4,26 +4,25 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * A `CollectionReference` object can be used for adding documents, getting
+  * document references, and querying for documents (using {@link (query:1)}).
+  */ @js.native
 trait dh
   extends StObject
-     with sh {
+     with fh {
   
-  def _toFieldTransform(t: Any): Null
+  var _path: Any = js.native
   
-  def isEqual(t: Any): Boolean
-}
-object dh {
+  /** The collection's identifier. */ def id: Any = js.native
   
-  inline def apply(_methodName: Any, _toFieldTransform: Any => Null, isEqual: Any => Boolean): dh = {
-    val __obj = js.Dynamic.literal(_methodName = _methodName.asInstanceOf[js.Any], _toFieldTransform = js.Any.fromFunction1(_toFieldTransform), isEqual = js.Any.fromFunction1(isEqual))
-    __obj.asInstanceOf[dh]
-  }
+  /**
+    * A reference to the containing `DocumentReference` if this is a
+    * subcollection. If this isn't a subcollection, the reference is null.
+    */ def parent: lh | Null = js.native
   
-  @scala.inline
-  implicit open class MutableBuilder[Self <: dh] (val x: Self) extends AnyVal {
-    
-    inline def setIsEqual(value: Any => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
-    
-    inline def set_toFieldTransform(value: Any => Null): Self = StObject.set(x, "_toFieldTransform", js.Any.fromFunction1(value))
-  }
+  /**
+    * A string representing the path of the referenced collection (relative
+    * to the root of the database).
+    */ def path: Any = js.native
 }

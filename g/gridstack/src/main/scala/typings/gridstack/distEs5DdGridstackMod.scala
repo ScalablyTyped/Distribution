@@ -49,16 +49,6 @@ object distEs5DdGridstackMod {
     def resizable(el: GridItemHTMLElement, opts: DDOpts, key: DDKey): DDGridStack = js.native
     def resizable(el: GridItemHTMLElement, opts: DDOpts, key: DDKey, value: DDValue): DDGridStack = js.native
   }
-  /* static members */
-  object DDGridStack {
-    
-    @JSImport("gridstack/dist/es5/dd-gridstack", "DDGridStack")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /** get the global (but static to this code) DD implementation */
-    inline def get(): DDGridStack = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[DDGridStack]
-  }
   
   type DDCallback = js.Function3[
     /* event */ Event, 

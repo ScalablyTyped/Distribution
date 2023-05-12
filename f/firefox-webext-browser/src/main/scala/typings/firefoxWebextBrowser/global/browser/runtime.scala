@@ -57,12 +57,18 @@ object runtime {
   /* runtime functions */
   /**
     * Retrieves the JavaScript 'window' object for the background page running inside the current extension/app. If the background page is an event page, the system will ensure it is loaded before calling the callback. If there is no background page, an error is set.
-    * Not supported on manifest versions above 2.
     */
   inline def getBackgroundPage(): js.Promise[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBackgroundPage")().asInstanceOf[js.Promise[Window]]
   
   /** Returns information about the current browser. */
   inline def getBrowserInfo(): js.Promise[BrowserInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBrowserInfo")().asInstanceOf[js.Promise[BrowserInfo]]
+  
+  /**
+    * Get the frameId of any window global or frame element.
+    * @param target A WindowProxy or a Browsing Context container element (IFrame, Frame, Embed, Object) for the target frame.
+    * @returns The frameId of the target frame, or -1 if it doesn't exist.
+    */
+  inline def getFrameId(target: Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getFrameId")(target.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Returns details about the app or extension from the manifest. The object returned is a serialization of the full manifest file.
@@ -174,19 +180,15 @@ object runtime {
   
   /**
     * Sent to the event page just before it is unloaded. This gives the extension opportunity to do some clean up. Note that since the page is unloading, any asynchronous operations started while handling this event are not guaranteed to complete. If more activity for the event page occurs before it gets unloaded the onSuspendCanceled event will be sent and the page won't be unloaded.
-    * @deprecated Unsupported on Firefox at this time.
     */
   @JSGlobal("browser.runtime.onSuspend")
   @js.native
-  val onSuspend: js.UndefOr[WebExtEvent[js.Function0[Unit]]] = js.native
+  val onSuspend: WebExtEvent[js.Function0[Unit]] = js.native
   
-  /**
-    * Sent after onSuspend to indicate that the app won't be unloaded after all.
-    * @deprecated Unsupported on Firefox at this time.
-    */
+  /** Sent after onSuspend to indicate that the app won't be unloaded after all. */
   @JSGlobal("browser.runtime.onSuspendCanceled")
   @js.native
-  val onSuspendCanceled: js.UndefOr[WebExtEvent[js.Function0[Unit]]] = js.native
+  val onSuspendCanceled: WebExtEvent[js.Function0[Unit]] = js.native
   
   /**
     * Fired when an update is available, but isn't installed immediately because the app is currently running. If you do nothing, the update will be installed the next time the background page gets unloaded, if you want it to be installed sooner you can explicitly call `runtime.reload`. If your extension is using a persistent background page, the background page of course never gets unloaded, so unless you call `runtime.reload` manually in response to this event the update will not get installed until the next time the browser itself restarts. If no handlers are listening for this event, and your extension has a persistent background page, it behaves as if `runtime.reload` is called in response to this event.

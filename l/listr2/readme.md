@@ -1,7 +1,7 @@
 
 # Scala.js typings for listr2
 
-Typings are for version 5.0.5
+Typings are for version 6.4.2
 
 ## Library description:
 Terminal task list reborn! Create beautiful CLI interfaces via easy and logical to implement task lists that feel alive and interactive.

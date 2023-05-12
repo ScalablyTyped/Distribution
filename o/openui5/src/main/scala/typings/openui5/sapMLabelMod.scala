@@ -3,6 +3,7 @@ package typings.openui5
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.IOverflowToolbarContent
 import typings.openui5.sapMLibraryMod.LabelDesign
+import typings.openui5.sapMLibraryMod.OverflowToolbarConfig
 import typings.openui5.sapMLibraryMod.WrappingType
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
@@ -13,6 +14,8 @@ import typings.openui5.sapUiCoreLibraryMod.IShrinkable
 import typings.openui5.sapUiCoreLibraryMod.TextAlign
 import typings.openui5.sapUiCoreLibraryMod.TextDirection
 import typings.openui5.sapUiCoreLibraryMod.VerticalAlign
+import typings.std.Object
+import typings.std.PropertyKey
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -72,6 +75,27 @@ object sapMLabelMod {
     
     /* CompleteClass */
     var __implements__sap_ui_core_Label: Boolean = js.native
+    
+    /** The initial value of Object.prototype.constructor is the standard built-in Object constructor. */
+    /* standard es5 */
+    /* CompleteClass */
+    var constructor: js.Function = js.native
+    
+    /**
+      * Determines whether an object has a property with the specified name.
+      * @param v A property name.
+      */
+    /* standard es5 */
+    /* CompleteClass */
+    override def hasOwnProperty(v: PropertyKey): Boolean = js.native
+    
+    /**
+      * Determines whether a specified property is enumerable.
+      * @param v A property name.
+      */
+    /* standard es5 */
+    /* CompleteClass */
+    override def propertyIsEnumerable(v: PropertyKey): Boolean = js.native
   }
   /* static members */
   object default {
@@ -147,7 +171,10 @@ object sapMLabelMod {
        with typings.openui5.sapUiCoreLibraryMod.Label
        with IShrinkable
        with IAccessKeySupport
-       with IOverflowToolbarContent {
+       with IOverflowToolbarContent
+       with /* was: sap.m.IToolbarInteractiveControl */ Object {
+    
+    var __implements__sap_m_IToolbarInteractiveControl: Boolean = js.native
     
     /**
       * Gets current value of property {@link #getDesign design}.
@@ -186,7 +213,7 @@ object sapMLabelMod {
       *
       * @returns Configuration information for the `sap.m.IOverflowToolbarContent` interface.
       */
-    def getOverflowToolbarConfig(): js.Object = js.native
+    def getOverflowToolbarConfig(): OverflowToolbarConfig = js.native
     
     /**
       * Gets current value of property {@link #getRequired required}.

@@ -17,6 +17,8 @@ object distTypesRetryMiddlewareMod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def getRetryAfterHint(response: Any): js.UndefOr[js.Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRetryAfterHint")(response.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Date]]
+  
   inline def getRetryPlugin(options: RetryResolvedConfig): Pluggable[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRetryPlugin")(options.asInstanceOf[js.Any]).asInstanceOf[Pluggable[Any, Any]]
   
   inline def retryMiddleware(options: RetryResolvedConfig): js.Function2[

@@ -14,7 +14,7 @@ object libFormSectionMod {
     def this(props: FormSectionProps[P] & P) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: FormSectionProps[P] & P, context: Any) = this()
   }
@@ -26,7 +26,7 @@ object libFormSectionMod {
     def this(props: FormSectionProps[P] & P) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: FormSectionProps[P] & P, context: Any) = this()
   }

@@ -357,7 +357,7 @@ trait BodyType
   
   /**
     * A callback that is invoked for the duration that this Body is colliding with any other Body.
-    * 
+    *
     * You can register callbacks by providing a function of type `( pair: Matter.Pair) => void`.
     *
     * @property onCollideActiveCallback
@@ -368,7 +368,7 @@ trait BodyType
   
   /**
     * A callback that is invoked when this Body starts colliding with any other Body.
-    * 
+    *
     * You can register callbacks by providing a function of type `( pair: Matter.Pair) => void`.
     *
     * @property onCollideCallback
@@ -379,7 +379,7 @@ trait BodyType
   
   /**
     * A callback that is invoked when this Body stops colliding with any other Body.
-    * 
+    *
     * You can register callbacks by providing a function of type `( pair: Matter.Pair) => void`.
     *
     * @property onCollideEndCallback
@@ -408,7 +408,7 @@ trait BodyType
   var parent: BodyType
   
   /**
-    * An array of bodies that make up this body. 
+    * An array of bodies that make up this body.
     * The first body in the array must always be a self reference to the current body instance.
     * All bodies in the `parts` array together form a single rigid compound body.
     * Parts are allowed to overlap, have gaps or holes or even form concave bodies.
@@ -589,7 +589,7 @@ trait BodyType
     *     [{ x: 0, y: 0 }, { x: 25, y: 50 }, { x: 50, y: 0 }]
     *
     * When passed via `Body.create`, the vertices are translated relative to `body.position` (i.e. world-space, and constantly updated by `Body.update` during simulation).
-    * The `Vector` objects are also augmented with additional properties required for efficient collision detection. 
+    * The `Vector` objects are also augmented with additional properties required for efficient collision detection.
     *
     * Other properties such as `inertia` and `bounds` are automatically calculated from the passed vertices (unless provided via `options`).
     * Concave hulls are not currently supported. The module `Matter.Vertices` contains useful methods for working with vertices.

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 /**
   * Creates the {@link Data64URIWriter} instance
-  * 
+  *
   * @param mimeString The MIME type of the content.
   */
 open class Data64URIWriter () extends Writer[String] {

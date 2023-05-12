@@ -81,7 +81,7 @@ trait AnnotationsVerticalLineLabelOptions extends StObject {
     * (Highstock) How to handle the annotation's label that flow outside the
     * plot area. The justify option aligns the label inside the plot area.
     */
-  var overflow: js.UndefOr[String] = js.undefined
+  var overflow: js.UndefOr[OptionsOverflowValue] = js.undefined
   
   /**
     * (Highstock) When either the borderWidth or the backgroundColor is set,
@@ -198,7 +198,7 @@ object AnnotationsVerticalLineLabelOptions {
     
     inline def setIncludeInDataExportUndefined: Self = StObject.set(x, "includeInDataExport", js.undefined)
     
-    inline def setOverflow(value: String): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+    inline def setOverflow(value: OptionsOverflowValue): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
     inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
     

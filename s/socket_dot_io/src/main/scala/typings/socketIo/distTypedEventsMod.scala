@@ -84,6 +84,45 @@ object distTypedEventsMod {
     def once[Ev /* <: ReservedOrUserEventNames[ReservedEvents, ListenEvents] */](ev: Ev, listener: ReservedOrUserListener[ReservedEvents, ListenEvents, Ev]): this.type = js.native
   }
   
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+    * TS definition: {{{
+    T extends [...infer H, infer L] ? H : std.Array<any>
+    }}}
+    */
+  type AllButLast[T /* <: js.Array[Any] */] = js.Array[Any]
+  
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof E ]: E[K] extends (args : infer Params): infer Result? (args : socket.io.socket.io/dist/typed-events.PrependTimeoutError<Params>): Result : E[K]}
+    }}}
+    */
+  @js.native
+  trait DecorateAcknowledgements[E] extends StObject
+  
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof E ]: E[K] extends (args : infer Params): infer Result? (args : socket.io.socket.io/dist/typed-events.ExpectMultipleResponses<Params>): Result : E[K]}
+    }}}
+    */
+  @js.native
+  trait DecorateAcknowledgementsWithMultipleResponses[E] extends StObject
+  
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof E ]: E[K] extends (args : infer Params): infer Result? (args : socket.io.socket.io/dist/typed-events.ExpectMultipleResponses<socket.io.socket.io/dist/typed-events.PrependTimeoutError<Params>>): Result : E[K]}
+    }}}
+    */
+  @js.native
+  trait DecorateAcknowledgementsWithTimeoutAndMultipleResponses[E] extends StObject
+  
   type DefaultEventsMap = StringDictionary[js.Function1[/* repeated */ Any, Unit]]
   
   type EventNames[Map /* <: EventsMap */] = (String & (/* keyof Map */ clear | delete | forEach | get | has | set | size | entries | keys | values)) | (js.Symbol & (/* keyof Map */ clear | delete | forEach | get | has | set | size | entries | keys | values))
@@ -93,6 +132,16 @@ object distTypedEventsMod {
   ]
   
   type EventsMap = StringDictionary[Any]
+  
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof T ]: T[K] extends (err : std.Error, arg : infer Param): infer Result? (err : std.Error, arg : std.Array<Param>): Result : T[K]}
+    }}}
+    */
+  @js.native
+  trait ExpectMultipleResponses[T /* <: js.Array[Any] */] extends StObject
   
   /**
     * Returns an untyped listener type if `T` is `never`; otherwise, returns `T`.
@@ -109,11 +158,51 @@ object distTypedEventsMod {
     */
   type FallbackToUntypedListener[T] = T
   
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately.
+    * TS definition: {{{
+    T extends (arg : infer Param): infer Result ? Param : any
+    }}}
+    */
+  @js.native
+  trait FirstArg[T] extends StObject
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately.
+    * TS definition: {{{
+    T extends [...infer H, infer L] ? L : any
+    }}}
+    */
+  @js.native
+  trait Last[T /* <: js.Array[Any] */] extends StObject
+  
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof T ]: T[K] extends (args : infer Params): infer Result? (err : std.Error, args : Params): Result : T[K]}
+    }}}
+    */
+  @js.native
+  trait PrependTimeoutError[T /* <: js.Array[Any] */] extends StObject
+  
   type ReservedOrUserEventNames[ReservedEventsMap /* <: EventsMap */, UserEvents /* <: EventsMap */] = EventNames[ReservedEventsMap | UserEvents]
   
   type ReservedOrUserListener[ReservedEvents /* <: EventsMap */, UserEvents /* <: EventsMap */, Ev /* <: ReservedOrUserEventNames[ReservedEvents, UserEvents] */] = FallbackToUntypedListener[
     /* import warning: importer.ImportType#apply Failed type conversion: Ev extends socket.io.socket.io/dist/typed-events.EventNames<ReservedEvents> ? ReservedEvents[Ev] : Ev extends socket.io.socket.io/dist/typed-events.EventNames<UserEvents> ? UserEvents[Ev] : never */ js.Any
   ]
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately.
+    * TS definition: {{{
+    T extends (err : std.Error, arg : infer Param): infer Result ? Param : any
+    }}}
+    */
+  @js.native
+  trait SecondArg[T] extends StObject
   
   trait TypedEventBroadcaster[EmitEvents /* <: EventsMap */] extends StObject {
     

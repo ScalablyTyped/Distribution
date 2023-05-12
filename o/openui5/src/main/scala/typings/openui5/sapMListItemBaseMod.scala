@@ -509,6 +509,8 @@ object sapMListItemBaseMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:detailPress detailPress} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -521,6 +523,7 @@ object sapMListItemBaseMod {
     
     /**
       * @deprecated (since 1.20.0) - Instead, use `detailPress` event.
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:detailTap detailTap} to attached listeners.
       *
@@ -533,6 +536,8 @@ object sapMListItemBaseMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:press press} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -545,6 +550,7 @@ object sapMListItemBaseMod {
     
     /**
       * @deprecated (since 1.20.0) - Instead, use `press` event.
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:tap tap} to attached listeners.
       *
@@ -565,6 +571,8 @@ object sapMListItemBaseMod {
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns the accessibility announcement for the content.
       *
       * Hook for the subclasses.
@@ -645,6 +653,7 @@ object sapMListItemBaseMod {
     
     /**
       * @SINCE 1.26
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Returns the tabbable DOM elements as a jQuery collection
       *

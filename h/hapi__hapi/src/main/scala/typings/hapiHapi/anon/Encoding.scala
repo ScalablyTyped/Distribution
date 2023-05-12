@@ -4,15 +4,15 @@ import typings.hapiHapi.hapiHapiStrings.base64
 import typings.hapiHapi.hapiHapiStrings.base64json
 import typings.hapiHapi.hapiHapiStrings.form
 import typings.hapiHapi.hapiHapiStrings.iron
-import typings.hapiHapi.hapiHapiStrings.none_
-import typings.hapiHapi.mod.SameSitePolicy
+import typings.hapiHapi.hapiHapiStrings.none
+import typings.hapiStatehood.mod.SameSitePolicy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Encoding extends StObject {
   
-  var encoding: js.UndefOr[none_ | base64 | base64json | form | iron] = js.undefined
+  var encoding: js.UndefOr[none | base64 | base64json | form | iron] = js.undefined
   
   var ignoreErrors: js.UndefOr[Boolean] = js.undefined
   
@@ -34,7 +34,7 @@ object Encoding {
   @scala.inline
   implicit open class MutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
     
-    inline def setEncoding(value: none_ | base64 | base64json | form | iron): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: none | base64 | base64json | form | iron): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     

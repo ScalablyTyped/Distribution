@@ -1,7 +1,7 @@
 
 # Scala.js typings for victory-voronoi
 
-Typings are for version 36.6.8
+Typings are for version 36.6.10
 
 ## Library description:
 Voronoi Component for Victory

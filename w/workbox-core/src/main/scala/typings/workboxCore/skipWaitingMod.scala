@@ -10,5 +10,12 @@ object skipWaitingMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    * This method is deprecated, and will be removed in Workbox v7.
+    *
+    * Calling self.skipWaiting() is equivalent, and should be used instead.
+    *
+    * @memberof workbox-core
+    */
   inline def skipWaiting(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("skipWaiting")().asInstanceOf[Unit]
 }

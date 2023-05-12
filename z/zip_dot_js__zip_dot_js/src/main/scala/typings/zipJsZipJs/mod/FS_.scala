@@ -10,7 +10,7 @@ open class FS_ () extends ZipDirectoryEntry {
   
   /**
     * Returns a {@link ZipEntry} instance from its full filename
-    * 
+    *
     * @param fullname The full filename.
     * @returns The {@link ZipEntry} instance.
     */
@@ -18,7 +18,7 @@ open class FS_ () extends ZipDirectoryEntry {
   
   /**
     * Returns a {@link ZipEntry} instance from the value of {@link ZipEntry#id}
-    * 
+    *
     * @param id The id of the {@link ZipEntry} instance.
     * @returns The {@link ZipEntry} instance.
     */
@@ -26,7 +26,7 @@ open class FS_ () extends ZipDirectoryEntry {
   
   /**
     * Moves a {@link ZipEntry} instance and its children into a {@link ZipDirectoryEntry} instance
-    * 
+    *
     * @param entry The {@link ZipEntry} instance to move.
     * @param destination The {@link ZipDirectoryEntry} instance.
     */
@@ -34,7 +34,7 @@ open class FS_ () extends ZipDirectoryEntry {
   
   /**
     * Removes a {@link ZipEntry} instance and its children
-    * 
+    *
     * @param entry The {@link ZipEntry} instance to remove.
     */
   def remove(entry: ZipEntry): Unit = js.native

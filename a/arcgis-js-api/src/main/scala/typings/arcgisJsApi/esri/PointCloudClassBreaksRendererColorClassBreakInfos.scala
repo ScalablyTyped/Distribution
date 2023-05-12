@@ -16,7 +16,7 @@ trait PointCloudClassBreaksRendererColorClassBreakInfos extends StObject {
   /**
     * The label used to describe point in the break.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudClassBreaksRenderer.html#colorClassBreakInfos)
+    * [Read more...](global.html)
     */
   var label: js.UndefOr[String] = js.undefined
   

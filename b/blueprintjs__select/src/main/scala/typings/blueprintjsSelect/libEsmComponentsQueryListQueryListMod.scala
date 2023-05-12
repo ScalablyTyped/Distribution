@@ -74,6 +74,10 @@ object libEsmComponentsQueryListQueryListMod {
     
     /* private */ var isCreateItemFirst: Any = js.native
     
+    /**
+      * @param createNewItem Checks if this item would match the current query. Cannot check this.state.createNewItem
+      *  every time since state may not have been updated yet.
+      */
     /* private */ var isCreateItemRendered: Any = js.native
     
     /**
@@ -90,6 +94,8 @@ object libEsmComponentsQueryListQueryListMod {
       * this flag in handleKeyDown.
       */
     /* private */ var isEnterKeyPressed: Any = js.native
+    
+    /* private */ var itemRefs: Any = js.native
     
     /* private */ var itemsParentRef: Any = js.native
     

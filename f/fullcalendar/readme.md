@@ -1,23 +1,23 @@
 
 # Scala.js typings for fullcalendar
 
-Typings are for version 3.10.2
+Typings are for version 6.1.7
 
 ## Library description:
-Full-sized drag & drop event calendar
+Easily render a full-sized drag & drop calendar with a combination of standard plugins
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | fullcalendar |
-| Keywords           | calendar, event, full-sized, jquery-plugin |
-| # releases         | 10 |
-| # dependents       | 136 |
-| # downloads        | 4275353 |
-| # stars            | 17 |
+| Keywords           | calendar, event, full-sized, fullcalendar |
+| # releases         | 24 |
+| # dependents       | 0.0 |
+| # downloads        | 626727.3333333334 |
+| # stars            | 15831.0 |
 
 ## Links
-- [Homepage](https://fullcalendar.io/)
-- [Bugs](https://fullcalendar.io/wiki/Reporting-Bugs/)
+- [Homepage](https://fullcalendar.io/docs/initialize-globals)
+- [Bugs](https://fullcalendar.io/reporting-bugs)
 - [Repository](https://github.com/fullcalendar/fullcalendar)
 - [Npm](https://www.npmjs.com/package/fullcalendar)
     

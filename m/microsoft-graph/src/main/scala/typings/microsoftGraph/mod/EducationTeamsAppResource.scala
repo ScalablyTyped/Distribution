@@ -8,12 +8,16 @@ trait EducationTeamsAppResource
   extends StObject
      with EducationResource {
   
+  // URL that points to the icon of the app.
   var appIconWebUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // Teams app ID of the application.
   var appId: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // URL for the app resource that will be opened by Teams.
   var teamsEmbeddedContentUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // URL for the app resource that can be opened in the browser.
   var webUrl: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object EducationTeamsAppResource {

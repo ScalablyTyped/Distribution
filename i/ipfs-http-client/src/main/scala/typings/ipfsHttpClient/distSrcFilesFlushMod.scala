@@ -12,7 +12,7 @@ object distSrcFilesFlushMod {
   @js.native
   val createFlush: Factory[
     js.Function2[
-      /* path */ String, 
+      /* ipfsPath */ String, 
       /* options */ js.UndefOr[AbortOptions & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions], 
       js.Promise[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID<unknown, number, number, imported_cid.Version> */ Any

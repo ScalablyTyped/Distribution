@@ -7,23 +7,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SourceControlInputBox extends StObject {
   
   /**
-    * Controls whether the input box is enabled (default is `true`).
-    */
+  		 * Controls whether the input box is enabled (default is `true`).
+  		 */
   var enabled: Boolean
   
   /**
-    * A string to show as placeholder in the input box to guide the user.
-    */
+  		 * A string to show as placeholder in the input box to guide the user.
+  		 */
   var placeholder: String
   
   /**
-    * Setter and getter for the contents of the input box.
-    */
+  		 * Setter and getter for the contents of the input box.
+  		 */
   var value: String
   
   /**
-    * Controls whether the input box is visible (default is `true`).
-    */
+  		 * Controls whether the input box is visible (default is `true`).
+  		 */
   var visible: Boolean
 }
 object SourceControlInputBox {

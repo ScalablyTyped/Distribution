@@ -18,9 +18,13 @@ trait FormatEnum extends StObject {
   
   var input: AvailableFormatInfo
   
+  var jp2: AvailableFormatInfo
+  
   var jpeg: AvailableFormatInfo
   
   var jpg: AvailableFormatInfo
+  
+  var jxl: AvailableFormatInfo
   
   var magick: AvailableFormatInfo
   
@@ -53,8 +57,10 @@ object FormatEnum {
     gif: AvailableFormatInfo,
     heif: AvailableFormatInfo,
     input: AvailableFormatInfo,
+    jp2: AvailableFormatInfo,
     jpeg: AvailableFormatInfo,
     jpg: AvailableFormatInfo,
+    jxl: AvailableFormatInfo,
     magick: AvailableFormatInfo,
     openslide: AvailableFormatInfo,
     pdf: AvailableFormatInfo,
@@ -67,7 +73,7 @@ object FormatEnum {
     v: AvailableFormatInfo,
     webp: AvailableFormatInfo
   ): FormatEnum = {
-    val __obj = js.Dynamic.literal(avif = avif.asInstanceOf[js.Any], dz = dz.asInstanceOf[js.Any], fits = fits.asInstanceOf[js.Any], gif = gif.asInstanceOf[js.Any], heif = heif.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], jpeg = jpeg.asInstanceOf[js.Any], jpg = jpg.asInstanceOf[js.Any], magick = magick.asInstanceOf[js.Any], openslide = openslide.asInstanceOf[js.Any], pdf = pdf.asInstanceOf[js.Any], png = png.asInstanceOf[js.Any], ppm = ppm.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any], tif = tif.asInstanceOf[js.Any], tiff = tiff.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any], webp = webp.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(avif = avif.asInstanceOf[js.Any], dz = dz.asInstanceOf[js.Any], fits = fits.asInstanceOf[js.Any], gif = gif.asInstanceOf[js.Any], heif = heif.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], jp2 = jp2.asInstanceOf[js.Any], jpeg = jpeg.asInstanceOf[js.Any], jpg = jpg.asInstanceOf[js.Any], jxl = jxl.asInstanceOf[js.Any], magick = magick.asInstanceOf[js.Any], openslide = openslide.asInstanceOf[js.Any], pdf = pdf.asInstanceOf[js.Any], png = png.asInstanceOf[js.Any], ppm = ppm.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any], tif = tif.asInstanceOf[js.Any], tiff = tiff.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any], webp = webp.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatEnum]
   }
   
@@ -86,9 +92,13 @@ object FormatEnum {
     
     inline def setInput(value: AvailableFormatInfo): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
+    inline def setJp2(value: AvailableFormatInfo): Self = StObject.set(x, "jp2", value.asInstanceOf[js.Any])
+    
     inline def setJpeg(value: AvailableFormatInfo): Self = StObject.set(x, "jpeg", value.asInstanceOf[js.Any])
     
     inline def setJpg(value: AvailableFormatInfo): Self = StObject.set(x, "jpg", value.asInstanceOf[js.Any])
+    
+    inline def setJxl(value: AvailableFormatInfo): Self = StObject.set(x, "jxl", value.asInstanceOf[js.Any])
     
     inline def setMagick(value: AvailableFormatInfo): Self = StObject.set(x, "magick", value.asInstanceOf[js.Any])
     

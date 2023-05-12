@@ -1,6 +1,7 @@
 package typings.awsSdk.clientsMediatailorMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.AS_RUN
 import typings.awsSdk.awsSdkStrings.EQUALS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,9 +26,22 @@ type ConfigurationAliasesRequest = StringDictionary[mapOfString]
 
 type ConfigurationAliasesResponse = StringDictionary[mapOfString]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.FULL_AVAIL_ONLY
+  - typings.awsSdk.awsSdkStrings.PARTIAL_AVAIL
+  - java.lang.String
+*/
+type FillPolicy = _FillPolicy | java.lang.String
+
 type HttpPackageConfigurations = js.Array[HttpPackageConfiguration]
 
 type Integer = Double
+
+type LogType = AS_RUN | java.lang.String
+
+type LogTypes = js.Array[LogType]
+
+type Long = Double
 
 type MaxResults = Double
 
@@ -41,6 +55,7 @@ type MessageType = _MessageType | java.lang.String
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.OFF
   - typings.awsSdk.awsSdkStrings.BEHIND_LIVE_EDGE
+  - typings.awsSdk.awsSdkStrings.AFTER_LIVE_EDGE
   - java.lang.String
 */
 type Mode = _Mode | java.lang.String
@@ -99,6 +114,8 @@ type Type = _Type | java.lang.String
 
 type _Integer = Double
 
+type _Long = Double
+
 type _String = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
@@ -139,8 +156,6 @@ type listOfSourceLocation = js.Array[SourceLocation]
 type listOfString = js.Array[_String]
 
 type listOfVodSource = js.Array[VodSource]
-
-type long = Double
 
 type mapOfString = StringDictionary[_String]
 

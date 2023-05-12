@@ -1,7 +1,7 @@
 
 # Scala.js typings for filenamify
 
-Typings are for version 5.1.1
+Typings are for version 6.0.0
 
 ## Library description:
 Convert a string to a valid safe filename

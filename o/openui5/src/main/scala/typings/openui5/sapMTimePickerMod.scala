@@ -339,6 +339,7 @@ object sapMTimePickerMod {
     
     /**
       * @SINCE 1.102.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:afterValueHelpClose afterValueHelpClose} to attached listeners.
       *
@@ -352,6 +353,7 @@ object sapMTimePickerMod {
     
     /**
       * @SINCE 1.102.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:afterValueHelpOpen afterValueHelpOpen} to attached listeners.
       *
@@ -649,7 +651,7 @@ object sapMTimePickerMod {
       * Used for parsing and formatting the time values in languages different than English. Necessary for translation
       * and auto-complete of the day periods, such as AM and PM.
       *
-      * @returns this instance, used for chaining
+      * @returns Reference to `this` for method chaining
       */
     def setLocaleId(/**
       * A locale identifier like 'en_US'
@@ -711,12 +713,12 @@ object sapMTimePickerMod {
     /**
       * Sets the minutes step of clocks and inputs.
       *
-      * @returns this
+      * @returns Reference to `this` for method chaining
       */
     def setMinutesStep(/**
       * The step used to generate values for the minutes clock/input
       */
-    step: int): Any = js.native
+    step: int): this.type = js.native
     
     /**
       * Sets a new value for property {@link #getPlaceholderSymbol placeholderSymbol}.
@@ -738,7 +740,7 @@ object sapMTimePickerMod {
     /**
       * Sets the seconds step of clocks and inputs.
       *
-      * @returns `this` to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def setSecondsStep(/**
       * The step used to generate values for the seconds clock/input
@@ -769,7 +771,7 @@ object sapMTimePickerMod {
       *
       * Allows the control to use 24-hour format. Recommended usage is to not use it with am/pm format.
       *
-      * @returns this instance, used for chaining
+      * @returns Reference to `this` for method chaining
       */
     def setSupport2400(bSupport2400: Boolean): this.type = js.native
   }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ajv
 
-Typings are for version 8.11.2
+Typings are for version 8.12.0
 
 ## Library description:
 Another JSON Schema Validator

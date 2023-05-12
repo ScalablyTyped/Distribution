@@ -72,7 +72,7 @@ trait FunctionPluginHooks extends StObject {
   @JSName("resolveImportMeta")
   var resolveImportMeta_Original: ResolveImportMetaHook = js.native
   
-  def shouldTransformCachedModule(options: Ast): Boolean = js.native
+  def shouldTransformCachedModule(options: Ast): Boolean | NullValue = js.native
   @JSName("shouldTransformCachedModule")
   var shouldTransformCachedModule_Original: ShouldTransformCachedModuleHook = js.native
   

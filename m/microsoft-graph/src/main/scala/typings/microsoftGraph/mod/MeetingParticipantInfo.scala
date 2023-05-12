@@ -9,10 +9,7 @@ trait MeetingParticipantInfo extends StObject {
   // Identity information of the participant.
   var identity: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
   
-  /**
-    * Specifies the participant's role in the meeting. Possible values are attendee, presenter, producer, and
-    * unknownFutureValue.
-    */
+  // Specifies the participant's role in the meeting.
   var role: js.UndefOr[NullableOption[OnlineMeetingRole]] = js.undefined
   
   // User principal name of the participant.

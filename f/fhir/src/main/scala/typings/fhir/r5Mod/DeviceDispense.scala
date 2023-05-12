@@ -91,6 +91,11 @@ trait DeviceDispense
     */
   var quantity: js.UndefOr[Quantity] = js.undefined
   
+  /**
+    * Identifies the person who picked up the device or the person or location where the device was delivered.  This may be a patient or their caregiver, but some cases exist where it can be a healthcare professional or a location.
+    */
+  var receiver: js.UndefOr[Reference] = js.undefined
+  
   /** Resource Type Name (for serialization) */
   @JSName("resourceType")
   val resourceType_DeviceDispense: typings.fhir.fhirStrings.DeviceDispense
@@ -207,6 +212,10 @@ object DeviceDispense {
     inline def setQuantity(value: Quantity): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
     inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+    
+    inline def setReceiver(value: Reference): Self = StObject.set(x, "receiver", value.asInstanceOf[js.Any])
+    
+    inline def setReceiverUndefined: Self = StObject.set(x, "receiver", js.undefined)
     
     inline def setResourceType(value: typings.fhir.fhirStrings.DeviceDispense): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     

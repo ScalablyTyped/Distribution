@@ -51,7 +51,6 @@ import typings.jupyterlabServices.libKernelRestapiMod.IKernelOptions
 import typings.jupyterlabServices.libKernelRestapiMod.IModel
 import typings.jupyterlabServices.libKernelspecRestapiMod.ISpecModel
 import typings.jupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
-import typings.luminoAlgorithm.typesIterMod.IIterator
 import typings.luminoCoreutils.typesJsonMod.JSONObject
 import typings.luminoCoreutils.typesJsonMod.JSONValue
 import typings.luminoDisposable.mod.IDisposable
@@ -936,7 +935,7 @@ object libKernelKernelMod {
       *
       * @returns A new iterator over the running kernels.
       */
-    def running(): IIterator[IModel] = js.native
+    def running(): Any = js.native
     
     /**
       * A signal emitted when the running kernels change.

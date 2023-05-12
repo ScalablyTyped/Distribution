@@ -27,7 +27,7 @@ trait SubmitJobRequest extends StObject {
   var eksPropertiesOverride: js.UndefOr[EksPropertiesOverride] = js.undefined
   
   /**
-    * The job definition used by this job. This value can be one of name, name:revision, or the Amazon Resource Name (ARN) for the job definition. If name is specified without a revision then the latest active revision is used.
+    * The job definition used by this job. This value can be one of definition-name, definition-name:revision, or the Amazon Resource Name (ARN) for the job definition, with or without the revision (arn:aws:batch:region:account:job-definition/definition-name:revision , or arn:aws:batch:region:account:job-definition/definition-name ). If the revision is not specified, then the latest active revision is used.
     */
   var jobDefinition: String
   

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@libp2p/interface-peer-routing" : "1.0.1"
+      "@libp2p/interface-peer-routing" : "1.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@libp2p/interface-peer-routing" : "1.0.1"
+      "@libp2p/interface-peer-routing" : "1.1.1"
     }
   ],
   "compile-devDependencies" : [

@@ -17,7 +17,7 @@ trait ExecutionStepResult extends StObject {
   var Outputs: js.UndefOr[StepResultOutputsJson] = js.undefined
   
   /**
-    * One of the available step types.    COPY: Copy the file to another location.    CUSTOM: Perform a custom step with an Lambda function target.    DELETE: Delete the file.    TAG: Add a tag to the file.  
+    * One of the available step types.     COPY  - Copy the file to another location.     CUSTOM  - Perform a custom step with an Lambda function target.     DECRYPT  - Decrypt a file that was encrypted before it was uploaded.     DELETE  - Delete the file.     TAG  - Add a tag to the file.  
     */
   var StepType: js.UndefOr[WorkflowStepType] = js.undefined
 }

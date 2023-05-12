@@ -17,6 +17,11 @@ trait ComponentTypeSummary extends StObject {
   var componentTypeId: ComponentTypeId
   
   /**
+    * The component type name.
+    */
+  var componentTypeName: js.UndefOr[ComponentTypeName] = js.undefined
+  
+  /**
     * The date and time when the component type was created.
     */
   var creationDateTime: js.Date
@@ -54,6 +59,10 @@ object ComponentTypeSummary {
     inline def setArn(value: TwinMakerArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     inline def setComponentTypeId(value: ComponentTypeId): Self = StObject.set(x, "componentTypeId", value.asInstanceOf[js.Any])
+    
+    inline def setComponentTypeName(value: ComponentTypeName): Self = StObject.set(x, "componentTypeName", value.asInstanceOf[js.Any])
+    
+    inline def setComponentTypeNameUndefined: Self = StObject.set(x, "componentTypeName", js.undefined)
     
     inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
     

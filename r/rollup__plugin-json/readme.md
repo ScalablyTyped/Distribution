@@ -1,7 +1,7 @@
 
 # Scala.js typings for rollup__plugin-json
 
-Typings are for version 5.0.1
+Typings are for version 6.0.0
 
 ## Library description:
 Convert .json files to ES6 modules

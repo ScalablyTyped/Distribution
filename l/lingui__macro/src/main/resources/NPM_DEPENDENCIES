@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@lingui/macro" : "4.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@lingui/macro" : "4.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

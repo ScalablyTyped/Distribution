@@ -1,6 +1,7 @@
 package typings.ol
 
 import typings.ol.extentMod.Extent
+import typings.ol.projMod.Projection
 import typings.ol.tilegridTileGridMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,5 +17,5 @@ object loadingstrategyMod {
   
   inline def bbox(extent: Extent, resolution: Double): js.Array[Extent] = (^.asInstanceOf[js.Dynamic].applyDynamic("bbox")(extent.asInstanceOf[js.Any], resolution.asInstanceOf[js.Any])).asInstanceOf[js.Array[Extent]]
   
-  inline def tile(tileGrid: default): js.Function2[/* p0 */ Extent, /* p1 */ Double, js.Array[Extent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tile")(tileGrid.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* p0 */ Extent, /* p1 */ Double, js.Array[Extent]]]
+  inline def tile(tileGrid: default): js.Function3[/* arg0 */ Extent, /* arg1 */ Double, /* arg2 */ Projection, js.Array[Extent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tile")(tileGrid.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* arg0 */ Extent, /* arg1 */ Double, /* arg2 */ Projection, js.Array[Extent]]]
 }

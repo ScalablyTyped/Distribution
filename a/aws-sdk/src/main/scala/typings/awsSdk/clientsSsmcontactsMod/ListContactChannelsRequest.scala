@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListContactChannelsRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the contact. 
+    * The Amazon Resource Name (ARN) of the contact.
     */
   var ContactId: SsmContactsArn
   

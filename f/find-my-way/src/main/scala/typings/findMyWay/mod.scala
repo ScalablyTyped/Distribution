@@ -114,7 +114,7 @@ object mod {
     
     def storage(): Del[T, V] = js.native
     
-    def validate(value: Any): Unit = js.native
+    var validate: js.UndefOr[js.Function1[/* value */ Any, Unit]] = js.native
   }
   
   trait FindResult[V /* <: HTTPVersion */] extends StObject {

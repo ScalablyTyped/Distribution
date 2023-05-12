@@ -1,8 +1,8 @@
 package typings.s3Streams
 
-import typings.awsSdk.clientsS3Mod.CreateMultipartUploadRequest
-import typings.awsSdk.clientsS3Mod.GetObjectRequest
-import typings.awsSdk.mod.S3
+import typings.awsSdk2Types.clientsS3Mod.CreateMultipartUploadRequest
+import typings.awsSdk2Types.clientsS3Mod.GetObjectRequest
+import typings.awsSdk2Types.mod.S3
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
 import org.scalablytyped.runtime.StObject

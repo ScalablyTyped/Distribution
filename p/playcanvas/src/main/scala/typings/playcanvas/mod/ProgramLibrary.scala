@@ -18,9 +18,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class ProgramLibrary protected () extends StObject {
   def this(device: Any, standardMaterial: Any) = this()
   
+  var _defaultStdMatOption: StandardMaterialOptions = js.native
+  
+  var _defaultStdMatOptionMin: StandardMaterialOptions = js.native
+  
   var _device: Any = js.native
   
-  def _getDefaultStdMatOptions(pass: Any): js.Object = js.native
+  def _getDefaultStdMatOptions(pass: Any): StandardMaterialOptions = js.native
   
   var _isClearingCache: Boolean = js.native
   

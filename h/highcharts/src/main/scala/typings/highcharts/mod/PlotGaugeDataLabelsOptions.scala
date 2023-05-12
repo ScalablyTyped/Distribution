@@ -26,22 +26,24 @@ trait PlotGaugeDataLabelsOptions extends StObject {
     * (Highcharts) Enable or disable the initial animation when a series is
     * displayed for the `dataLabels`. The animation can also be set as a
     * configuration object. Please note that this option only applies to the
-    * initial animation. For other animations, see chart.animation and the
-    * animation parameter under the API methods. The following properties are
-    * supported:
+    * initial animation.
+    *
+    * For other animations, see chart.animation and the animation parameter
+    * under the API methods. The following properties are supported:
     *
     * - `defer`: The animation delay time in milliseconds.
     */
   var animation: js.UndefOr[Boolean | PlotGaugeDataLabelsAnimationOptions | PartialAnimationOptionsOb] = js.undefined
   
   /**
-    * (Highcharts) The background color or gradient for the data label.
+    * (Highcharts) The background color or gradient for the data label. Setting
+    * it to `auto` will use the point's color.
     */
   var backgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
-    * (Highcharts) The border color for the data label. Defaults to
-    * `undefined`.
+    * (Highcharts) The border color for the data label. Setting it to `auto`
+    * will use the point's color. Defaults to `undefined`.
     */
   var borderColor: js.UndefOr[String] = js.undefined
   
@@ -89,8 +91,7 @@ trait PlotGaugeDataLabelsOptions extends StObject {
     * (Highcharts, Highstock, Gantt) Whether to defer displaying the data
     * labels until the initial series animation has finished. Setting to
     * `false` renders the data label immediately. If set to `true` inherits the
-    * defer time set in plotOptions.series.animation. If set to a number, a
-    * defer time is specified in milliseconds.
+    * defer time set in plotOptions.series.animation.
     */
   var defer: js.UndefOr[Boolean] = js.undefined
   

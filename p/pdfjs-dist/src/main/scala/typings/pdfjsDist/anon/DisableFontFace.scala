@@ -8,18 +8,16 @@ trait DisableFontFace extends StObject {
   
   var disableFontFace: js.UndefOr[Boolean] = js.undefined
   
-  var fontRegistry: js.UndefOr[Null] = js.undefined
-  
   var ignoreErrors: js.UndefOr[Boolean] = js.undefined
   
-  var isEvalSupported: js.UndefOr[Boolean] = js.undefined
+  var inspectFont: js.UndefOr[Null] = js.undefined
   
-  var onUnsupportedFeature: Any
+  var isEvalSupported: js.UndefOr[Boolean] = js.undefined
 }
 object DisableFontFace {
   
-  inline def apply(onUnsupportedFeature: Any): DisableFontFace = {
-    val __obj = js.Dynamic.literal(onUnsupportedFeature = onUnsupportedFeature.asInstanceOf[js.Any])
+  inline def apply(): DisableFontFace = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisableFontFace]
   }
   
@@ -37,7 +35,5 @@ object DisableFontFace {
     inline def setIsEvalSupported(value: Boolean): Self = StObject.set(x, "isEvalSupported", value.asInstanceOf[js.Any])
     
     inline def setIsEvalSupportedUndefined: Self = StObject.set(x, "isEvalSupported", js.undefined)
-    
-    inline def setOnUnsupportedFeature(value: Any): Self = StObject.set(x, "onUnsupportedFeature", value.asInstanceOf[js.Any])
   }
 }

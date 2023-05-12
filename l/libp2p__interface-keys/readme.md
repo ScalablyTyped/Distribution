@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__interface-keys
 
-Typings are for version 1.0.3
+Typings are for version 1.0.8
 
 ## Library description:
 Keys interface for libp2p

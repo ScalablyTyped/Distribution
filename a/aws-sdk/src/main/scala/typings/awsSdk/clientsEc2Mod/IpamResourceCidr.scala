@@ -12,7 +12,7 @@ trait IpamResourceCidr extends StObject {
   var ComplianceStatus: js.UndefOr[IpamComplianceStatus] = js.undefined
   
   /**
-    * The percentage of IP address space in use. To convert the decimal to a percentage, multiply the decimal by 100. Note the following:   For a resources that are VPCs, this is the percentage of IP address space in the VPC that's taken up by subnet CIDRs.    For resources that are subnets, if the subnet has an IPv4 CIDR provisioned to it, this is the percentage of IPv4 address space in the subnet that's in use. If the subnet has an IPv6 CIDR provisioned to it, the percentage of IPv6 address space in use is not represented. The percentage of IPv6 address space in use cannot currently be calculated.    For resources that are public IPv4 pools, this is the percentage of IP address space in the pool that's been allocated to Elastic IP addresses (EIPs).   
+    * The percentage of IP address space in use. To convert the decimal to a percentage, multiply the decimal by 100. Note the following:   For resources that are VPCs, this is the percentage of IP address space in the VPC that's taken up by subnet CIDRs.    For resources that are subnets, if the subnet has an IPv4 CIDR provisioned to it, this is the percentage of IPv4 address space in the subnet that's in use. If the subnet has an IPv6 CIDR provisioned to it, the percentage of IPv6 address space in use is not represented. The percentage of IPv6 address space in use cannot currently be calculated.    For resources that are public IPv4 pools, this is the percentage of IP address space in the pool that's been allocated to Elastic IP addresses (EIPs).   
     */
   var IpUsage: js.UndefOr[BoxedDouble] = js.undefined
   

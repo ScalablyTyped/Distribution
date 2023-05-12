@@ -1,7 +1,7 @@
 package typings.firebaseDatabase
 
 import org.scalablytyped.runtime.Instantiable10
-import org.scalablytyped.runtime.Instantiable7
+import org.scalablytyped.runtime.Instantiable8
 import typings.firebaseDatabase.distSrcCoreAppCheckTokenProviderMod.AppCheckTokenProvider
 import typings.firebaseDatabase.distSrcCoreAuthTokenProviderMod.AuthTokenProvider
 import typings.firebaseDatabase.distSrcCorePersistentConnectionMod.PersistentConnection
@@ -83,10 +83,90 @@ object distSrcApiTestAccessMod {
       persistenceKey: Unit,
       includeNamespaceInQueryParams: Boolean
     ) = this()
+    def this(
+      host: String,
+      secure: Boolean,
+      namespace: String,
+      webSocketOnly: Boolean,
+      nodeAdmin: Boolean,
+      persistenceKey: String,
+      includeNamespaceInQueryParams: Boolean,
+      isUsingEmulator: Boolean
+    ) = this()
+    def this(
+      host: String,
+      secure: Boolean,
+      namespace: String,
+      webSocketOnly: Boolean,
+      nodeAdmin: Boolean,
+      persistenceKey: String,
+      includeNamespaceInQueryParams: Unit,
+      isUsingEmulator: Boolean
+    ) = this()
+    def this(
+      host: String,
+      secure: Boolean,
+      namespace: String,
+      webSocketOnly: Boolean,
+      nodeAdmin: Boolean,
+      persistenceKey: Unit,
+      includeNamespaceInQueryParams: Boolean,
+      isUsingEmulator: Boolean
+    ) = this()
+    def this(
+      host: String,
+      secure: Boolean,
+      namespace: String,
+      webSocketOnly: Boolean,
+      nodeAdmin: Boolean,
+      persistenceKey: Unit,
+      includeNamespaceInQueryParams: Unit,
+      isUsingEmulator: Boolean
+    ) = this()
+    def this(
+      host: String,
+      secure: Boolean,
+      namespace: String,
+      webSocketOnly: Boolean,
+      nodeAdmin: Unit,
+      persistenceKey: String,
+      includeNamespaceInQueryParams: Boolean,
+      isUsingEmulator: Boolean
+    ) = this()
+    def this(
+      host: String,
+      secure: Boolean,
+      namespace: String,
+      webSocketOnly: Boolean,
+      nodeAdmin: Unit,
+      persistenceKey: String,
+      includeNamespaceInQueryParams: Unit,
+      isUsingEmulator: Boolean
+    ) = this()
+    def this(
+      host: String,
+      secure: Boolean,
+      namespace: String,
+      webSocketOnly: Boolean,
+      nodeAdmin: Unit,
+      persistenceKey: Unit,
+      includeNamespaceInQueryParams: Boolean,
+      isUsingEmulator: Boolean
+    ) = this()
+    def this(
+      host: String,
+      secure: Boolean,
+      namespace: String,
+      webSocketOnly: Boolean,
+      nodeAdmin: Unit,
+      persistenceKey: Unit,
+      includeNamespaceInQueryParams: Unit,
+      isUsingEmulator: Boolean
+    ) = this()
   }
   @JSImport("@firebase/database/dist/src/api/test_access", "ConnectionTarget")
   @js.native
-  val ConnectionTarget: Instantiable7[
+  val ConnectionTarget: Instantiable8[
     /* host */ String, 
     /* secure */ Boolean, 
     /* namespace */ String, 
@@ -94,6 +174,7 @@ object distSrcApiTestAccessMod {
     /* nodeAdmin */ js.UndefOr[Boolean], 
     /* persistenceKey */ js.UndefOr[String], 
     /* includeNamespaceInQueryParams */ js.UndefOr[Boolean], 
+    /* isUsingEmulator */ js.UndefOr[Boolean], 
     RepoInfo
   ] = js.native
   

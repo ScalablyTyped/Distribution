@@ -78,6 +78,11 @@ type ChannelSplitterNode = AudioNode
 
 type ClassDecorator = js.Function1[/* target */ js.Function, js.Function | Unit]
 
+/**
+  * The decorator context types provided to class element decorators.
+  */
+type ClassMemberDecoratorContext = (ClassMethodDecoratorContext[Any, js.ThisFunction1[/* this */ Any, /* args */ Any, Any]]) | (ClassGetterDecoratorContext[Any, Any]) | (ClassSetterDecoratorContext[Any, Any]) | (ClassFieldDecoratorContext[Any, Any]) | (ClassAccessorDecoratorContext[Any, Any])
+
 /** @deprecated */
 type ClientRect = DOMRect
 
@@ -105,6 +110,11 @@ StringDictionary[js.UndefOr[java.lang.String]]
 type DecodeErrorCallback = js.Function1[/* error */ DOMException, Unit]
 
 type DecodeSuccessCallback = js.Function1[/* decodedData */ AudioBuffer, Unit]
+
+/**
+  * The decorator context types provided to any decorator.
+  */
+type DecoratorContext = (ClassDecoratorContext[Instantiable1[/* args */ Any, Any]]) | ClassMemberDecoratorContext
 
 type DocumentTimeline = AnimationTimeline
 
@@ -294,7 +304,7 @@ Any]
 
 type ParameterDecorator = js.Function3[
 /* target */ js.Object, 
-/* propertyKey */ java.lang.String | js.Symbol, 
+/* propertyKey */ js.UndefOr[java.lang.String | js.Symbol], 
 /* parameterIndex */ Double, 
 Unit]
 

@@ -12,7 +12,7 @@ trait ClusterConfig extends StObject {
   var ColdStorageOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.ColdStorageOptions] = js.undefined
   
   /**
-    * Number of dedicated master nodes in the cluster. This number must be greater than 1, otherwise you receive a validation exception.
+    * Number of dedicated master nodes in the cluster. This number must be greater than 2 and not 4, otherwise you receive a validation exception.
     */
   var DedicatedMasterCount: js.UndefOr[IntegerClass] = js.undefined
   
@@ -35,6 +35,11 @@ trait ClusterConfig extends StObject {
     * Instance type of data nodes in the cluster.
     */
   var InstanceType: js.UndefOr[OpenSearchPartitionInstanceType] = js.undefined
+  
+  /**
+    * A boolean that indicates whether a multi-AZ domain is turned on with a standby AZ. For more information, see Configuring a multi-AZ domain in Amazon OpenSearch Service. 
+    */
+  var MultiAZWithStandbyEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The number of warm nodes in the cluster.
@@ -94,6 +99,10 @@ object ClusterConfig {
     inline def setInstanceType(value: OpenSearchPartitionInstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
     inline def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
+    
+    inline def setMultiAZWithStandbyEnabled(value: Boolean): Self = StObject.set(x, "MultiAZWithStandbyEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setMultiAZWithStandbyEnabledUndefined: Self = StObject.set(x, "MultiAZWithStandbyEnabled", js.undefined)
     
     inline def setWarmCount(value: IntegerClass): Self = StObject.set(x, "WarmCount", value.asInstanceOf[js.Any])
     

@@ -193,7 +193,7 @@ object window {
       * Set the informational message shown in the dialog. Hidden when the message is
       * undefined or the text is empty or undefined. The default level is error.
       */
-    var message: DialogMessage = js.native
+    var message: js.UndefOr[DialogMessage] = js.native
     
     /**
       * The ok button

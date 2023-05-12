@@ -1,7 +1,7 @@
 
 # Scala.js typings for he
 
-Typings are for version v1.1.1
+Typings are for version v1.2
 
 ## Library description:
 A robust HTML entities encoder/decoder with full Unicode support.

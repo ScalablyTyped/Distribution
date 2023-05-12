@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Theme extends StObject {
   
-  var theme: js.UndefOr[typings.storybookTheming.`distTs3Dot9Modules@emotionReactTypesIndexMod`.Theme] = js.undefined
+  var theme: js.UndefOr[typings.storybookTheming.mod.Theme] = js.undefined
 }
 object Theme {
   
@@ -18,7 +18,7 @@ object Theme {
   @scala.inline
   implicit open class MutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
     
-    inline def setTheme(value: typings.storybookTheming.`distTs3Dot9Modules@emotionReactTypesIndexMod`.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.storybookTheming.mod.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }

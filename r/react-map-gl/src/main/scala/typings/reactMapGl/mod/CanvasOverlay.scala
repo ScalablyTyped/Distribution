@@ -11,7 +11,7 @@ open class CanvasOverlay protected () extends BaseControl[CanvasOverlayProps, HT
   def this(props: CanvasOverlayProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: CanvasOverlayProps, context: Any) = this()
 }

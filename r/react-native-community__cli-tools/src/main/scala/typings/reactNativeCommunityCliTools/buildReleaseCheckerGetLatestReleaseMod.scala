@@ -10,7 +10,7 @@ object buildReleaseCheckerGetLatestReleaseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(name: String, currentVersion: String): js.Promise[Release | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], currentVersion.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Release | Unit]]
+  inline def default(name: String, currentVersion: String): js.Promise[js.UndefOr[Release]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], currentVersion.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[Release]]]
   
   trait Release extends StObject {
     

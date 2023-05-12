@@ -1,5 +1,6 @@
 package typings.onfidoActiveVideoCapture
 
+import typings.std.Blob
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -161,31 +162,65 @@ object distTypesMod {
     }
   }
   
+  trait SuccessData extends StObject {
+    
+    var videoPayload: Blob
+  }
+  object SuccessData {
+    
+    inline def apply(videoPayload: Blob): SuccessData = {
+      val __obj = js.Dynamic.literal(videoPayload = videoPayload.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SuccessData]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuccessData] (val x: Self) extends AnyVal {
+      
+      inline def setVideoPayload(value: Blob): Self = StObject.set(x, "videoPayload", value.asInstanceOf[js.Any])
+    }
+  }
+  
   type TrackingCallback = js.Function2[/* event */ TrackingEvent, /* properties */ js.UndefOr[Record[String, Any]], Unit]
   
   type TranslateCallback = js.Function2[/* key */ String, /* options */ js.UndefOr[Record[String, Any]], String]
   
-  trait Vertex extends StObject {
+  trait Vector2 extends StObject {
     
     var x: Double
     
     var y: Double
-    
-    var z: Double
   }
-  object Vertex {
+  object Vector2 {
     
-    inline def apply(x: Double, y: Double, z: Double): Vertex = {
-      val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Vertex]
+    inline def apply(x: Double, y: Double): Vector2 = {
+      val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Vector2]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Vertex] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: Vector2] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
       inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Vector3
+    extends StObject
+       with Vector2 {
+    
+    var z: Double
+  }
+  object Vector3 {
+    
+    inline def apply(x: Double, y: Double, z: Double): Vector3 = {
+      val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Vector3]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Vector3] (val x: Self) extends AnyVal {
       
       inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     }

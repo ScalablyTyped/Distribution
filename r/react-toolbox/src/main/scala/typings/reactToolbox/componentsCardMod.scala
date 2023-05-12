@@ -18,7 +18,7 @@ object componentsCardMod {
     def this(props: CardProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: CardProps, context: Any) = this()
   }
@@ -30,7 +30,7 @@ object componentsCardMod {
     def this(props: CardProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: CardProps, context: Any) = this()
   }
@@ -42,7 +42,7 @@ object componentsCardMod {
     def this(props: CardActionsProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: CardActionsProps, context: Any) = this()
   }
@@ -54,7 +54,7 @@ object componentsCardMod {
     def this(props: CardMediaProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: CardMediaProps, context: Any) = this()
   }
@@ -66,7 +66,7 @@ object componentsCardMod {
     def this(props: CardTextProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: CardTextProps, context: Any) = this()
   }
@@ -78,7 +78,7 @@ object componentsCardMod {
     def this(props: CardTitleProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: CardTitleProps, context: Any) = this()
   }

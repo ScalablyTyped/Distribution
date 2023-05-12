@@ -7,10 +7,10 @@ import typings.blueprintjsCore.blueprintjsCoreStrings.reset
 import typings.blueprintjsCore.blueprintjsCoreStrings.submit
 import typings.blueprintjsCore.libEsmCommonAlignmentMod.Alignment
 import typings.blueprintjsCore.libEsmCommonMod.AbstractPureComponent2
-import typings.blueprintjsCore.libEsmCommonPropsMod.IActionProps
+import typings.blueprintjsCore.libEsmCommonPropsMod.ActionProps
 import typings.blueprintjsCore.libEsmCommonPropsMod.IElementRefProps
 import typings.blueprintjsCore.libEsmCommonPropsMod.MaybeElement
-import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsIcons.libEsmGeneratedIcons16pxBlueprintIcons16Mod.BlueprintIcons16Id
 import typings.react.mod.FocusEvent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.ReactNode
@@ -58,13 +58,9 @@ object libEsmComponentsButtonAbstractButtonMod {
   
   type AnchorButtonProps = IAnchorButtonProps
   
-  type ButtonProps[E /* <: HTMLButtonElement | HTMLAnchorElement */] = IButtonProps[E]
-  
-  type IAnchorButtonProps = ButtonProps[HTMLAnchorElement]
-  
-  trait IButtonProps[E /* <: HTMLButtonElement | HTMLAnchorElement */]
+  trait ButtonProps[E /* <: HTMLButtonElement | HTMLAnchorElement */]
     extends StObject
-       with IActionProps
+       with ActionProps[HTMLElement]
        with IElementRefProps[E] {
     
     /**
@@ -123,15 +119,15 @@ object libEsmComponentsButtonAbstractButtonMod {
       */
     var `type`: js.UndefOr[submit | reset | button] = js.undefined
   }
-  object IButtonProps {
+  object ButtonProps {
     
-    inline def apply[E /* <: HTMLButtonElement | HTMLAnchorElement */](): IButtonProps[E] = {
+    inline def apply[E /* <: HTMLButtonElement | HTMLAnchorElement */](): ButtonProps[E] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[IButtonProps[E]]
+      __obj.asInstanceOf[ButtonProps[E]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: IButtonProps[?], E /* <: HTMLButtonElement | HTMLAnchorElement */] (val x: Self & IButtonProps[E]) extends AnyVal {
+    implicit open class MutableBuilder[Self <: ButtonProps[?], E /* <: HTMLButtonElement | HTMLAnchorElement */] (val x: Self & ButtonProps[E]) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -180,6 +176,10 @@ object libEsmComponentsButtonAbstractButtonMod {
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
+  
+  type IAnchorButtonProps = ButtonProps[HTMLAnchorElement]
+  
+  type IButtonProps[E /* <: HTMLButtonElement | HTMLAnchorElement */] = ButtonProps[E]
   
   trait IButtonState extends StObject {
     

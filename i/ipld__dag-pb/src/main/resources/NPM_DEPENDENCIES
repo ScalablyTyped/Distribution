@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ipld/dag-pb" : "3.0.0"
+      "@ipld/dag-pb" : "4.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@ipld/dag-pb" : "3.0.0"
+      "@ipld/dag-pb" : "4.0.2"
     }
   ],
   "compile-devDependencies" : [

@@ -48,9 +48,9 @@ trait MatterWorldConfig extends StObject {
   var getDelta: js.UndefOr[js.Function] = js.undefined
   
   /**
-    * Sets {@link Phaser.Physics.Matter.World#gravity}. If `false` Gravity will be set to zero.
+    * Sets {@link Phaser.Physics.Matter.World#gravity}.
     */
-  var gravity: js.UndefOr[Vector2Like | Boolean] = js.undefined
+  var gravity: js.UndefOr[Vector2Like] = js.undefined
   
   /**
     * Should the Matter Attractor Plugin be enabled? An attractors plugin that makes it easy to apply continual forces on bodies. It's possible to simulate effects such as wind, gravity and magnetism.
@@ -218,7 +218,7 @@ object MatterWorldConfig {
     
     inline def setGetDeltaUndefined: Self = StObject.set(x, "getDelta", js.undefined)
     
-    inline def setGravity(value: Vector2Like | Boolean): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
+    inline def setGravity(value: Vector2Like): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
     
     inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
     

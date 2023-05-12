@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.StrokeOpacity
+import typings.csstype.mod.Property.BorderBlock
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `306` extends StObject {
   
   var value: js.UndefOr[
-    StrokeOpacity | (js.Array[
+    (BorderBlock[Double | String]) | (js.Array[
       (Extract[
-        js.UndefOr[StrokeOpacity | js.Array[NonNullable[js.UndefOr[StrokeOpacity]]]], 
+        js.UndefOr[
+          (BorderBlock[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderBlock[Double | String]]]])
+        ], 
         String
-      ]) | NonNullable[js.UndefOr[StrokeOpacity]]
+      ]) | (NonNullable[js.UndefOr[BorderBlock[Double | String]]])
     ])
   ] = js.native
 }

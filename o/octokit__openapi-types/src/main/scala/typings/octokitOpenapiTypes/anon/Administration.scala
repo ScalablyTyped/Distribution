@@ -70,7 +70,13 @@ trait Administration extends StObject {
   var organization_administration: js.UndefOr[read | write] = js.undefined
   
   /**
-    * @description The level of permission to grant the access token for custom roles management. This property is in beta and is subject to change.
+    * @description The level of permission to grant the access token to view and manage announcement banners for an organization.
+    * @enum {string}
+    */
+  var organization_announcement_banners: js.UndefOr[read | write] = js.undefined
+  
+  /**
+    * @description The level of permission to grant the access token for custom repository roles management. This property is in beta and is subject to change.
     * @enum {string}
     */
   var organization_custom_roles: js.UndefOr[read | write] = js.undefined
@@ -86,6 +92,18 @@ trait Administration extends StObject {
     * @enum {string}
     */
   var organization_packages: js.UndefOr[read | write] = js.undefined
+  
+  /**
+    * @description The level of permission to grant the access token for viewing and managing fine-grained personal access tokens that have been approved by an organization.
+    * @enum {string}
+    */
+  var organization_personal_access_token_requests: js.UndefOr[read | write] = js.undefined
+  
+  /**
+    * @description The level of permission to grant the access token for viewing and managing fine-grained personal access token requests to an organization.
+    * @enum {string}
+    */
+  var organization_personal_access_tokens: js.UndefOr[read | write] = js.undefined
   
   /**
     * @description The level of permission to grant the access token for viewing an organization's plan.
@@ -245,6 +263,10 @@ object Administration {
     
     inline def setOrganization_administrationUndefined: Self = StObject.set(x, "organization_administration", js.undefined)
     
+    inline def setOrganization_announcement_banners(value: read | write): Self = StObject.set(x, "organization_announcement_banners", value.asInstanceOf[js.Any])
+    
+    inline def setOrganization_announcement_bannersUndefined: Self = StObject.set(x, "organization_announcement_banners", js.undefined)
+    
     inline def setOrganization_custom_roles(value: read | write): Self = StObject.set(x, "organization_custom_roles", value.asInstanceOf[js.Any])
     
     inline def setOrganization_custom_rolesUndefined: Self = StObject.set(x, "organization_custom_roles", js.undefined)
@@ -256,6 +278,14 @@ object Administration {
     inline def setOrganization_packages(value: read | write): Self = StObject.set(x, "organization_packages", value.asInstanceOf[js.Any])
     
     inline def setOrganization_packagesUndefined: Self = StObject.set(x, "organization_packages", js.undefined)
+    
+    inline def setOrganization_personal_access_token_requests(value: read | write): Self = StObject.set(x, "organization_personal_access_token_requests", value.asInstanceOf[js.Any])
+    
+    inline def setOrganization_personal_access_token_requestsUndefined: Self = StObject.set(x, "organization_personal_access_token_requests", js.undefined)
+    
+    inline def setOrganization_personal_access_tokens(value: read | write): Self = StObject.set(x, "organization_personal_access_tokens", value.asInstanceOf[js.Any])
+    
+    inline def setOrganization_personal_access_tokensUndefined: Self = StObject.set(x, "organization_personal_access_tokens", js.undefined)
     
     inline def setOrganization_plan(value: read): Self = StObject.set(x, "organization_plan", value.asInstanceOf[js.Any])
     

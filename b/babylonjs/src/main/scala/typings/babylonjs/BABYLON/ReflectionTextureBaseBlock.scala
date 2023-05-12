@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ReflectionTextureBaseBlock
   extends StObject
-     with NodeMaterialBlock {
+     with NodeMaterialBlock
+     with NodeMaterialTextureBlocks {
   
   /** @internal */
   var _2DSamplerName: String = js.native
@@ -55,6 +56,8 @@ trait ReflectionTextureBaseBlock
   
   /* protected */ def _getTexture(): Nullable[BaseTexture] = js.native
   
+  /* protected */ def _onGenerateOnlyFragmentCodeChanged(): Boolean = js.native
+  
   /* protected */ var _positionUVWName: String = js.native
   
   /* protected */ var _reflectionColorName: String = js.native
@@ -73,12 +76,19 @@ trait ReflectionTextureBaseBlock
   
   /* protected */ var _reflectionVectorName: String = js.native
   
+  /* protected */ def _setTarget(): Unit = js.native
+  
   /* protected */ var _texture: Nullable[BaseTexture] = js.native
+  
+  /* protected */ var _worldPositionNameInFragmentOnlyMode: String = js.native
   
   /**
     * Gets the camera (or eye) position component
     */
   def cameraPosition: NodeMaterialConnectionPoint = js.native
+  
+  /** Indicates that no code should be generated in the vertex shader. Can be useful in some specific circumstances (like when doing ray marching for eg) */
+  var generateOnlyFragmentCode: Boolean = js.native
   
   /**
     * Generates the reflection color code for the fragment code path

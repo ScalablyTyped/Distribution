@@ -42,7 +42,11 @@ import typings.firebase.firebaseStrings.`authSlashinvalid-oauth-provider`
 import typings.firebase.firebaseStrings.`authSlashinvalid-persistence-type`
 import typings.firebase.firebaseStrings.`authSlashinvalid-phone-number`
 import typings.firebase.firebaseStrings.`authSlashinvalid-provider-id`
+import typings.firebase.firebaseStrings.`authSlashinvalid-recaptcha-action`
+import typings.firebase.firebaseStrings.`authSlashinvalid-recaptcha-token`
+import typings.firebase.firebaseStrings.`authSlashinvalid-recaptcha-version`
 import typings.firebase.firebaseStrings.`authSlashinvalid-recipient-email`
+import typings.firebase.firebaseStrings.`authSlashinvalid-req-type`
 import typings.firebase.firebaseStrings.`authSlashinvalid-sender`
 import typings.firebase.firebaseStrings.`authSlashinvalid-tenant-id`
 import typings.firebase.firebaseStrings.`authSlashinvalid-user-token`
@@ -51,6 +55,7 @@ import typings.firebase.firebaseStrings.`authSlashinvalid-verification-id`
 import typings.firebase.firebaseStrings.`authSlashmaximum-second-factor-count-exceeded`
 import typings.firebase.firebaseStrings.`authSlashmissing-android-pkg-name`
 import typings.firebase.firebaseStrings.`authSlashmissing-app-credential`
+import typings.firebase.firebaseStrings.`authSlashmissing-client-type`
 import typings.firebase.firebaseStrings.`authSlashmissing-continue-uri`
 import typings.firebase.firebaseStrings.`authSlashmissing-iframe-start`
 import typings.firebase.firebaseStrings.`authSlashmissing-ios-bundle-id`
@@ -58,6 +63,8 @@ import typings.firebase.firebaseStrings.`authSlashmissing-multi-factor-info`
 import typings.firebase.firebaseStrings.`authSlashmissing-multi-factor-session`
 import typings.firebase.firebaseStrings.`authSlashmissing-or-invalid-nonce`
 import typings.firebase.firebaseStrings.`authSlashmissing-phone-number`
+import typings.firebase.firebaseStrings.`authSlashmissing-recaptcha-token`
+import typings.firebase.firebaseStrings.`authSlashmissing-recaptcha-version`
 import typings.firebase.firebaseStrings.`authSlashmissing-verification-code`
 import typings.firebase.firebaseStrings.`authSlashmissing-verification-id`
 import typings.firebase.firebaseStrings.`authSlashmulti-factor-auth-required`
@@ -72,6 +79,7 @@ import typings.firebase.firebaseStrings.`authSlashpopup-blocked`
 import typings.firebase.firebaseStrings.`authSlashpopup-closed-by-user`
 import typings.firebase.firebaseStrings.`authSlashprovider-already-linked`
 import typings.firebase.firebaseStrings.`authSlashquota-exceeded`
+import typings.firebase.firebaseStrings.`authSlashrecaptcha-not-enabled`
 import typings.firebase.firebaseStrings.`authSlashredirect-cancelled-by-user`
 import typings.firebase.firebaseStrings.`authSlashredirect-operation-pending`
 import typings.firebase.firebaseStrings.`authSlashrejected-credential`
@@ -104,6 +112,7 @@ import typings.firebase.firebaseStrings.password
 import typings.firebase.firebaseStrings.phone
 import typings.firebase.firebaseStrings.reauthenticate
 import typings.firebase.firebaseStrings.signIn
+import typings.firebase.firebaseStrings.totp
 import typings.firebase.firebaseStrings.twitterDotcom
 import typings.firebaseApp.mod.FirebaseApp
 import typings.firebaseAuth.anon.DisableWarnings
@@ -406,9 +415,25 @@ object compatFunctionsDistAuthCordovaMod {
     @js.native
     val INVALID_PROVIDER_ID: `authSlashinvalid-provider-id` = js.native
     
+    @JSImport("firebase/compat/functions/dist/auth/cordova", "AuthErrorCodes.INVALID_RECAPTCHA_ACTION")
+    @js.native
+    val INVALID_RECAPTCHA_ACTION: `authSlashinvalid-recaptcha-action` = js.native
+    
+    @JSImport("firebase/compat/functions/dist/auth/cordova", "AuthErrorCodes.INVALID_RECAPTCHA_TOKEN")
+    @js.native
+    val INVALID_RECAPTCHA_TOKEN: `authSlashinvalid-recaptcha-token` = js.native
+    
+    @JSImport("firebase/compat/functions/dist/auth/cordova", "AuthErrorCodes.INVALID_RECAPTCHA_VERSION")
+    @js.native
+    val INVALID_RECAPTCHA_VERSION: `authSlashinvalid-recaptcha-version` = js.native
+    
     @JSImport("firebase/compat/functions/dist/auth/cordova", "AuthErrorCodes.INVALID_RECIPIENT_EMAIL")
     @js.native
     val INVALID_RECIPIENT_EMAIL: `authSlashinvalid-recipient-email` = js.native
+    
+    @JSImport("firebase/compat/functions/dist/auth/cordova", "AuthErrorCodes.INVALID_REQ_TYPE")
+    @js.native
+    val INVALID_REQ_TYPE: `authSlashinvalid-req-type` = js.native
     
     @JSImport("firebase/compat/functions/dist/auth/cordova", "AuthErrorCodes.INVALID_SENDER")
     @js.native
@@ -442,6 +467,10 @@ object compatFunctionsDistAuthCordovaMod {
     @js.native
     val MISSING_AUTH_DOMAIN: `authSlashauth-domain-config-required` = js.native
     
+    @JSImport("firebase/compat/functions/dist/auth/cordova", "AuthErrorCodes.MISSING_CLIENT_TYPE")
+    @js.native
+    val MISSING_CLIENT_TYPE: `authSlashmissing-client-type` = js.native
+    
     @JSImport("firebase/compat/functions/dist/auth/cordova", "AuthErrorCodes.MISSING_CODE")
     @js.native
     val MISSING_CODE: `authSlashmissing-verification-code` = js.native
@@ -473,6 +502,14 @@ object compatFunctionsDistAuthCordovaMod {
     @JSImport("firebase/compat/functions/dist/auth/cordova", "AuthErrorCodes.MISSING_PHONE_NUMBER")
     @js.native
     val MISSING_PHONE_NUMBER: `authSlashmissing-phone-number` = js.native
+    
+    @JSImport("firebase/compat/functions/dist/auth/cordova", "AuthErrorCodes.MISSING_RECAPTCHA_TOKEN")
+    @js.native
+    val MISSING_RECAPTCHA_TOKEN: `authSlashmissing-recaptcha-token` = js.native
+    
+    @JSImport("firebase/compat/functions/dist/auth/cordova", "AuthErrorCodes.MISSING_RECAPTCHA_VERSION")
+    @js.native
+    val MISSING_RECAPTCHA_VERSION: `authSlashmissing-recaptcha-version` = js.native
     
     @JSImport("firebase/compat/functions/dist/auth/cordova", "AuthErrorCodes.MISSING_SESSION_INFO")
     @js.native
@@ -525,6 +562,10 @@ object compatFunctionsDistAuthCordovaMod {
     @JSImport("firebase/compat/functions/dist/auth/cordova", "AuthErrorCodes.QUOTA_EXCEEDED")
     @js.native
     val QUOTA_EXCEEDED: `authSlashquota-exceeded` = js.native
+    
+    @JSImport("firebase/compat/functions/dist/auth/cordova", "AuthErrorCodes.RECAPTCHA_NOT_ENABLED")
+    @js.native
+    val RECAPTCHA_NOT_ENABLED: `authSlashrecaptcha-not-enabled` = js.native
     
     @JSImport("firebase/compat/functions/dist/auth/cordova", "AuthErrorCodes.REDIRECT_CANCELLED_BY_USER")
     @js.native
@@ -781,6 +822,10 @@ object compatFunctionsDistAuthCordovaMod {
     @JSImport("firebase/compat/functions/dist/auth/cordova", "FactorId.PHONE")
     @js.native
     val PHONE: phone = js.native
+    
+    @JSImport("firebase/compat/functions/dist/auth/cordova", "FactorId.TOTP")
+    @js.native
+    val TOTP: totp = js.native
   }
   
   @JSImport("firebase/compat/functions/dist/auth/cordova", "GithubAuthProvider")
@@ -1267,6 +1312,8 @@ object compatFunctionsDistAuthCordovaMod {
   
   inline def initializeAuth(app: FirebaseApp): Auth = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeAuth")(app.asInstanceOf[js.Any]).asInstanceOf[Auth]
   inline def initializeAuth(app: FirebaseApp, deps: Dependencies): Auth = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeAuth")(app.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Auth]
+  
+  inline def initializeRecaptchaConfig(auth: Auth): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeRecaptchaConfig")(auth.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   inline def isSignInWithEmailLink(auth: Auth, emailLink: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSignInWithEmailLink")(auth.asInstanceOf[js.Any], emailLink.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   

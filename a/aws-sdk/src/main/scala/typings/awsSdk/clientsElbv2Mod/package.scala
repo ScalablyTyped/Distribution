@@ -140,7 +140,7 @@ type IpAddress = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ipv4__
-  - typings.awsSdk.awsSdkStrings.dualstack
+  - typings.awsSdk.awsSdkStrings.dualstack_
   - java.lang.String
 */
 type IpAddressType = _IpAddressType | java.lang.String
@@ -356,9 +356,9 @@ type TargetHealthReasonEnum = _TargetHealthReasonEnum | java.lang.String
   - typings.awsSdk.awsSdkStrings.initial__
   - typings.awsSdk.awsSdkStrings.healthy__
   - typings.awsSdk.awsSdkStrings.unhealthy__
-  - typings.awsSdk.awsSdkStrings.unused
+  - typings.awsSdk.awsSdkStrings.unused_
   - typings.awsSdk.awsSdkStrings.draining_
-  - typings.awsSdk.awsSdkStrings.unavailable__
+  - typings.awsSdk.awsSdkStrings.unavailable___
   - java.lang.String
 */
 type TargetHealthStateEnum = _TargetHealthStateEnum | java.lang.String
@@ -369,7 +369,7 @@ type TargetId = java.lang.String
   - typings.awsSdk.awsSdkStrings.instance__
   - typings.awsSdk.awsSdkStrings.ip_
   - typings.awsSdk.awsSdkStrings.lambda__
-  - typings.awsSdk.awsSdkStrings.alb
+  - typings.awsSdk.awsSdkStrings.alb_
   - java.lang.String
 */
 type TargetTypeEnum = _TargetTypeEnum | java.lang.String

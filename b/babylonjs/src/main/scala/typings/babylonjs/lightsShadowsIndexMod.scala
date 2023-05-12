@@ -57,14 +57,16 @@ object lightsShadowsIndexMod {
       */
     @JSImport("babylonjs/Lights/Shadows/index", "CascadedShadowGenerator.MAX_CASCADES_COUNT")
     @js.native
-    val MAX_CASCADES_COUNT: Double = js.native
+    def MAX_CASCADES_COUNT: Double = js.native
+    inline def MAX_CASCADES_COUNT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_CASCADES_COUNT")(x.asInstanceOf[js.Any])
     
     /**
       * Defines the minimum number of cascades used by the CSM.
       */
     @JSImport("babylonjs/Lights/Shadows/index", "CascadedShadowGenerator.MIN_CASCADES_COUNT")
     @js.native
-    val MIN_CASCADES_COUNT: Double = js.native
+    def MIN_CASCADES_COUNT: Double = js.native
+    inline def MIN_CASCADES_COUNT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_CASCADES_COUNT")(x.asInstanceOf[js.Any])
     
     /**
       * Parses a serialized ShadowGenerator and returns a new ShadowGenerator.
@@ -92,7 +94,7 @@ object lightsShadowsIndexMod {
       * Creates a ShadowGenerator object.
       * A ShadowGenerator is the required tool to use the shadows.
       * Each light casting shadows needs to use its own ShadowGenerator.
-      * Documentation : https://doc.babylonjs.com/babylon101/shadows
+      * Documentation : https://doc.babylonjs.com/features/featuresDeepDive/lights/shadows
       * @param mapSize The size of the texture what stores the shadows. Example : 1024.
       * @param light The light object generating the shadows.
       * @param usefullFloatFirst By default the generator will try to use half float textures but if you need precision (for self shadowing for instance), you can use this option to enforce full float texture.

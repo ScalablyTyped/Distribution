@@ -8,6 +8,7 @@ import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularForms.angularFormsBooleans.`false`
 import typings.angularForms.angularFormsStrings.ngForm
 import typings.angularForms.anon.NgSubmit
+import typings.angularForms.anon.Optional
 import typings.angularForms.anon.Options
 import typings.angularForms.anon.Self
 import typings.angularForms.anon.UpdateOn
@@ -25,6 +26,11 @@ open class NgForm protected ()
   def this(
     validators: js.Array[Validator | ValidatorFn],
     asyncValidators: js.Array[AsyncValidator | AsyncValidatorFn]
+  ) = this()
+  def this(
+    validators: js.Array[Validator | ValidatorFn],
+    asyncValidators: js.Array[AsyncValidator | AsyncValidatorFn],
+    callSetDisabledState: SetDisabledStateOption
   ) = this()
   
   /* private */ var _directives: Any = js.native
@@ -65,6 +71,8 @@ open class NgForm protected ()
     * @param dir The `NgModelGroup` directive instance.
     */
   def addFormGroup(dir: NgModelGroup): Unit = js.native
+  
+  /* private */ var callSetDisabledState: Any = js.native
   
   /**
     * @description
@@ -233,7 +241,8 @@ object NgForm {
     NgSubmit, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    `false`, 
+    scala.Nothing
   ] = js.native
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
@@ -244,12 +253,13 @@ object NgForm {
       NgSubmit, 
       scala.Nothing, 
       scala.Nothing, 
-      `false`
+      `false`, 
+      scala.Nothing
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
   
   @JSImport("@angular/forms", "NgForm.\u0275fac")
   @js.native
-  def ɵfac: ɵɵFactoryDeclaration[NgForm, js.Tuple2[Self, Self]] = js.native
-  inline def ɵfac_=(x: ɵɵFactoryDeclaration[NgForm, js.Tuple2[Self, Self]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+  def ɵfac: ɵɵFactoryDeclaration[NgForm, js.Tuple3[Self, Self, Optional]] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[NgForm, js.Tuple3[Self, Self, Optional]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
 }

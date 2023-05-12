@@ -27,6 +27,10 @@ object interactjsTypesInts {
   inline def `2`: `2` = 2.asInstanceOf[`2`]
   
   @js.native
+  sealed trait `3` extends StObject
+  inline def `3`: `3` = 3.asInstanceOf[`3`]
+  
+  @js.native
   sealed trait `4` extends StObject
   inline def `4`: `4` = 4.asInstanceOf[`4`]
   

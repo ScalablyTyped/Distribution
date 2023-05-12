@@ -2,6 +2,12 @@ package typings.phaser.Phaser.Types
 
 import typings.phaser.Phaser.Sound.BaseSound
 import typings.phaser.Phaser.Sound.BaseSoundManager
+import typings.phaser.Phaser.Types.Math.Vector2Like
+import typings.phaser.phaserStrings.HRTF
+import typings.phaser.phaserStrings.equalpower
+import typings.phaser.phaserStrings.exponential
+import typings.phaser.phaserStrings.inverse
+import typings.phaser.phaserStrings.linear
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -115,6 +121,11 @@ object Sound {
     var seek: js.UndefOr[Double] = js.undefined
     
     /**
+      * An optional config object containing default spatial sound settings.
+      */
+    var source: js.UndefOr[SpatialSoundConfig] = js.undefined
+    
+    /**
       * A value between 0 (silence) and 1 (full volume).
       */
     var volume: js.UndefOr[Double] = js.undefined
@@ -156,6 +167,10 @@ object Sound {
       inline def setSeek(value: Double): Self = StObject.set(x, "seek", value.asInstanceOf[js.Any])
       
       inline def setSeekUndefined: Self = StObject.set(x, "seek", js.undefined)
+      
+      inline def setSource(value: SpatialSoundConfig): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
       inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
       
@@ -211,6 +226,205 @@ object Sound {
       inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
       inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    }
+  }
+  
+  /**
+    * Config object containing settings for the source of the spatial sound.
+    * 
+    * See https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Web_audio_spatialization_basics
+    */
+  trait SpatialSoundConfig extends StObject {
+    
+    /**
+      * The angle, in degrees, of a cone inside of which there will be no volume reduction.
+      */
+    var coneInnerAngle: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * The angle, in degrees, of a cone outside of which the volume will be reduced by a constant value, defined by the `coneOuterGain` property.
+      */
+    var coneOuterAngle: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * The amount of volume reduction outside the cone defined by the `coneOuterAngle` attribute. Its default value is 0, meaning that no sound can be heard. A value between 0 and 1.
+      */
+    var coneOuterGain: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Which algorithm to use to reduce the volume of the audio source as it moves away from the listener. Possible values are "linear", "inverse" and "exponential". The default value is "inverse".
+      */
+    var distanceModel: js.UndefOr[linear | inverse | exponential] = js.undefined
+    
+    /**
+      * Set this Sound object to automatically track the x/y position of this object. Can be a Phaser Game Object, Vec2 or anything that exposes public x/y properties.
+      */
+    var follow: js.UndefOr[Vector2Like] = js.undefined
+    
+    /**
+      * The maximum distance between the audio source and the listener, after which the volume is not reduced any further.
+      */
+    var maxDistance: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * The horizontal position of the audio source's vector in a right-hand Cartesian coordinate system.
+      */
+    var orientationX: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * The vertical position of the audio source's vector in a right-hand Cartesian coordinate system.
+      */
+    var orientationY: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Represents the longitudinal (back and forth) position of the audio source's vector in a right-hand Cartesian coordinate system.
+      */
+    var orientationZ: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * An enumerated value determining which spatialization algorithm to use to position the audio in 3D space.
+      */
+    var panningModel: js.UndefOr[equalpower | HRTF] = js.undefined
+    
+    /**
+      * A double value representing the reference distance for reducing volume as the audio source moves further from the listener. For distances greater than this the volume will be reduced based on `rolloffFactor` and `distanceModel`.
+      */
+    var refDistance: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * A double value describing how quickly the volume is reduced as the source moves away from the listener. This value is used by all distance models.
+      */
+    var rolloffFactor: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * The horizontal position of the audio in a right-hand Cartesian coordinate system.
+      */
+    var x: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * The vertical position of the audio in a right-hand Cartesian coordinate system.
+      */
+    var y: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Represents the longitudinal (back and forth) position of the audio in a right-hand Cartesian coordinate system.
+      */
+    var z: js.UndefOr[Double] = js.undefined
+  }
+  object SpatialSoundConfig {
+    
+    inline def apply(): SpatialSoundConfig = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SpatialSoundConfig]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpatialSoundConfig] (val x: Self) extends AnyVal {
+      
+      inline def setConeInnerAngle(value: Double): Self = StObject.set(x, "coneInnerAngle", value.asInstanceOf[js.Any])
+      
+      inline def setConeInnerAngleUndefined: Self = StObject.set(x, "coneInnerAngle", js.undefined)
+      
+      inline def setConeOuterAngle(value: Double): Self = StObject.set(x, "coneOuterAngle", value.asInstanceOf[js.Any])
+      
+      inline def setConeOuterAngleUndefined: Self = StObject.set(x, "coneOuterAngle", js.undefined)
+      
+      inline def setConeOuterGain(value: Double): Self = StObject.set(x, "coneOuterGain", value.asInstanceOf[js.Any])
+      
+      inline def setConeOuterGainUndefined: Self = StObject.set(x, "coneOuterGain", js.undefined)
+      
+      inline def setDistanceModel(value: linear | inverse | exponential): Self = StObject.set(x, "distanceModel", value.asInstanceOf[js.Any])
+      
+      inline def setDistanceModelUndefined: Self = StObject.set(x, "distanceModel", js.undefined)
+      
+      inline def setFollow(value: Vector2Like): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
+      
+      inline def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
+      
+      inline def setMaxDistance(value: Double): Self = StObject.set(x, "maxDistance", value.asInstanceOf[js.Any])
+      
+      inline def setMaxDistanceUndefined: Self = StObject.set(x, "maxDistance", js.undefined)
+      
+      inline def setOrientationX(value: Double): Self = StObject.set(x, "orientationX", value.asInstanceOf[js.Any])
+      
+      inline def setOrientationXUndefined: Self = StObject.set(x, "orientationX", js.undefined)
+      
+      inline def setOrientationY(value: Double): Self = StObject.set(x, "orientationY", value.asInstanceOf[js.Any])
+      
+      inline def setOrientationYUndefined: Self = StObject.set(x, "orientationY", js.undefined)
+      
+      inline def setOrientationZ(value: Double): Self = StObject.set(x, "orientationZ", value.asInstanceOf[js.Any])
+      
+      inline def setOrientationZUndefined: Self = StObject.set(x, "orientationZ", js.undefined)
+      
+      inline def setPanningModel(value: equalpower | HRTF): Self = StObject.set(x, "panningModel", value.asInstanceOf[js.Any])
+      
+      inline def setPanningModelUndefined: Self = StObject.set(x, "panningModel", js.undefined)
+      
+      inline def setRefDistance(value: Double): Self = StObject.set(x, "refDistance", value.asInstanceOf[js.Any])
+      
+      inline def setRefDistanceUndefined: Self = StObject.set(x, "refDistance", js.undefined)
+      
+      inline def setRolloffFactor(value: Double): Self = StObject.set(x, "rolloffFactor", value.asInstanceOf[js.Any])
+      
+      inline def setRolloffFactorUndefined: Self = StObject.set(x, "rolloffFactor", js.undefined)
+      
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      
+      inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+      
+      inline def setZUndefined: Self = StObject.set(x, "z", js.undefined)
+    }
+  }
+  
+  /**
+    * An entry in the Web Audio Decoding Queue.
+    */
+  trait WebAudioDecodeEntry extends StObject {
+    
+    /**
+      * Has the decoding of this sound file started?
+      */
+    var decoding: Boolean
+    
+    /**
+      * The callback to invoke if the decoding fails.
+      */
+    var failure: js.Function
+    
+    /**
+      * The key of the sound.
+      */
+    var key: String
+    
+    /**
+      * The callback to invoke on successful decoding.
+      */
+    var success: js.Function
+  }
+  object WebAudioDecodeEntry {
+    
+    inline def apply(decoding: Boolean, failure: js.Function, key: String, success: js.Function): WebAudioDecodeEntry = {
+      val __obj = js.Dynamic.literal(decoding = decoding.asInstanceOf[js.Any], failure = failure.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
+      __obj.asInstanceOf[WebAudioDecodeEntry]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebAudioDecodeEntry] (val x: Self) extends AnyVal {
+      
+      inline def setDecoding(value: Boolean): Self = StObject.set(x, "decoding", value.asInstanceOf[js.Any])
+      
+      inline def setFailure(value: js.Function): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
+      
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setSuccess(value: js.Function): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     }
   }
 }

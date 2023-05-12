@@ -18,7 +18,7 @@ trait ExampleScenarioProcessStepAlternative
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * What happens in each alternative option.
+    * Indicates the operation, sub-process or scenario that happens if the alternative option is selected.
     */
   var step: js.UndefOr[js.Array[ExampleScenarioProcessStep]] = js.undefined
   

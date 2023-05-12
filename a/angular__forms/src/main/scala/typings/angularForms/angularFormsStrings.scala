@@ -2,6 +2,7 @@ package typings.angularForms
 
 import typings.angularForms.mod.FormControlStatus
 import typings.angularForms.mod.FormHooks
+import typings.angularForms.mod.SetDisabledStateOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,7 +66,9 @@ object angularFormsStrings {
   inline def `[ngModelGroup]`: `[ngModelGroup]` = "[ngModelGroup]".asInstanceOf[`[ngModelGroup]`]
   
   @js.native
-  sealed trait always extends StObject
+  sealed trait always
+    extends StObject
+       with SetDisabledStateOption
   inline def always: always = "always".asInstanceOf[always]
   
   @js.native
@@ -193,4 +196,10 @@ object angularFormsStrings {
   @js.native
   sealed trait value extends StObject
   inline def value: value = "value".asInstanceOf[value]
+  
+  @js.native
+  sealed trait whenDisabledForLegacyCode
+    extends StObject
+       with SetDisabledStateOption
+  inline def whenDisabledForLegacyCode: whenDisabledForLegacyCode = "whenDisabledForLegacyCode".asInstanceOf[whenDisabledForLegacyCode]
 }

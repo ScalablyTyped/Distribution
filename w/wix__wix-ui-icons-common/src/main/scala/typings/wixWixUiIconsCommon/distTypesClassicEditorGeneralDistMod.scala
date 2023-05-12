@@ -2,9 +2,12 @@ package typings.wixWixUiIconsCommon
 
 import typings.react.mod.FC
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsAccessibilityMod.AccessibilityProps
+import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsAccordionMod.AccordionProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsAddBoldMod.AddBoldProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsAddCircleMod.AddCircleProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsAddCircleSmallMod.AddCircleSmallProps
+import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsAddMenuFolderMod.AddMenuFolderProps
+import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsAddMenuItemMod.AddMenuItemProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsAddMod.AddProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsAddPackageMod.AddPackageProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsAddSmallMod.AddSmallProps
@@ -32,6 +35,8 @@ import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsAr
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsBackgroundMod.BackgroundProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsBadgeMod.BadgeProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsBlockQuoteMod.BlockQuoteProps
+import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsBlockedCircleMod.BlockedCircleProps
+import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsBlockedCircleSmallMod.BlockedCircleSmallProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsBloggerMod.BloggerProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsBoldMod.BoldProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsBookBoldMod.BookBoldProps
@@ -85,6 +90,7 @@ import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsCo
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsConfirmBoldMod.ConfirmBoldProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsConfirmCircleBoldMod.ConfirmCircleBoldProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsConfirmCircleMod.ConfirmCircleProps
+import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsConfirmMod.ConfirmProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsContextMenuMod.ContextMenuProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsContextMenuSmallMod.ContextMenuSmallProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsContextMenuVerticalMod.ContextMenuVerticalProps
@@ -147,6 +153,7 @@ import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsFi
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsFlashMod.FlashProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsFlickrMod.FlickrProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsFolderAddMod.FolderAddProps
+import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsFolderAddSmallMod.FolderAddSmallProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsFolderMod.FolderProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsFolderOpenAddMod.FolderOpenAddProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsFolderOpenMod.FolderOpenProps
@@ -209,6 +216,7 @@ import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsJS
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsJslockedMod.JSLockedProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsJswMod.JSWProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsLightboxMod.LightboxProps
+import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsLineShareMod.LineShareProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsLineSpacingMod.LineSpacingProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsLinkPropertiesMod.LinkPropertiesProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsLinkPropertiesSmallMod.LinkPropertiesSmallProps
@@ -232,6 +240,7 @@ import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsMa
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsMasterMod.MasterProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsMaximizeMod.MaximizeProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsMenuBoldMod.MenuBoldProps
+import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsMenuFolderMod.MenuFolderProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsMenuMod.MenuProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsMinimizeAllMod.MinimizeAllProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsMinimizeMod.MinimizeProps
@@ -244,6 +253,8 @@ import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsMo
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsMoveForwardBoldMod.MoveForwardBoldProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsMoveForwardMod.MoveForwardProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsMoveToTrashMod.MoveToTrashProps
+import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsMultiStateBoxMod.MultiStateBoxProps
+import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsMultilingualMod.MultilingualProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsMusicBoldMod.MusicBoldProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsMusicMod.MusicProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsNewspaperMod.NewspaperProps
@@ -252,12 +263,15 @@ import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsNu
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsPackageMod.PackageProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsPageAddMod.PageAddProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsPageBackgroundMod.PageBackgroundProps
+import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsPageBodyMod.PageBodyProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsPageBoldMod.PageBoldProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsPageCodeMod.PageCodeProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsPageDynamicMod.PageDynamicProps
+import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsPageDynamicSmallMod.PageDynamicSmallProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsPageMod.PageProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsPageSpecialMod.PageSpecialProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsPagesBoldMod.PagesBoldProps
+import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsPagesMod.PagesProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsPaginationBoldMod.PaginationBoldProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsPaginationMod.PaginationProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsParagraphBoldMod.ParagraphBoldProps
@@ -309,6 +323,7 @@ import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsSa
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsScrollMod.ScrollProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsSearchBoldMod.SearchBoldProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsSearchMod.SearchProps
+import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsSectionLayoutMod.SectionLayoutProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsSectionMod.SectionProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsSelectedCircleSmallMod.SelectedCircleSmallProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsSendToBackBoldMod.SendToBackBoldProps
@@ -355,6 +370,7 @@ import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsSu
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsSuccessSmallMod.SuccessSmallProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsSwitchBoldMod.SwitchBoldProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsSwitchMod.SwitchProps
+import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsTSMod.TSProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsTableBoldMod.TableBoldProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsTableMod.TableProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsTabsMod.TabsProps
@@ -378,6 +394,7 @@ import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsTe
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsTextRtlIncreaseMod.TextRtlIncreaseProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsTextRtlMod.TextRtlProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsTextSmallMod.TextSmallProps
+import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsTimeInputMod.TimeInputProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsTumblrMod.TumblrProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsTwitterMod.TwitterProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorGeneralDistComponentsUnderlineMod.UnderlineProps
@@ -458,6 +475,10 @@ object distTypesClassicEditorGeneralDistMod {
   @js.native
   val Accessibility: FC[AccessibilityProps] = js.native
   
+  @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "Accordion")
+  @js.native
+  val Accordion: FC[AccordionProps] = js.native
+  
   @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "Add")
   @js.native
   val Add: FC[AddProps] = js.native
@@ -473,6 +494,14 @@ object distTypesClassicEditorGeneralDistMod {
   @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "AddCircleSmall")
   @js.native
   val AddCircleSmall: FC[AddCircleSmallProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "AddMenuFolder")
+  @js.native
+  val AddMenuFolder: FC[AddMenuFolderProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "AddMenuItem")
+  @js.native
+  val AddMenuItem: FC[AddMenuItemProps] = js.native
   
   @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "AddPackage")
   @js.native
@@ -577,6 +606,14 @@ object distTypesClassicEditorGeneralDistMod {
   @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "BlockQuote")
   @js.native
   val BlockQuote: FC[BlockQuoteProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "BlockedCircle")
+  @js.native
+  val BlockedCircle: FC[BlockedCircleProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "BlockedCircleSmall")
+  @js.native
+  val BlockedCircleSmall: FC[BlockedCircleSmallProps] = js.native
   
   @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "Blogger")
   @js.native
@@ -781,6 +818,10 @@ object distTypesClassicEditorGeneralDistMod {
   @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "ColumnBold")
   @js.native
   val ColumnBold: FC[ColumnBoldProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "Confirm")
+  @js.native
+  val Confirm: FC[ConfirmProps] = js.native
   
   @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "ConfirmBold")
   @js.native
@@ -1042,6 +1083,10 @@ object distTypesClassicEditorGeneralDistMod {
   @js.native
   val FolderAdd: FC[FolderAddProps] = js.native
   
+  @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "FolderAddSmall")
+  @js.native
+  val FolderAddSmall: FC[FolderAddSmallProps] = js.native
+  
   @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "FolderOpen")
   @js.native
   val FolderOpen: FC[FolderOpenProps] = js.native
@@ -1286,6 +1331,10 @@ object distTypesClassicEditorGeneralDistMod {
   @js.native
   val Lightbox: FC[LightboxProps] = js.native
   
+  @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "LineShare")
+  @js.native
+  val LineShare: FC[LineShareProps] = js.native
+  
   @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "LineSpacing")
   @js.native
   val LineSpacing: FC[LineSpacingProps] = js.native
@@ -1382,6 +1431,10 @@ object distTypesClassicEditorGeneralDistMod {
   @js.native
   val MenuBold: FC[MenuBoldProps] = js.native
   
+  @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "MenuFolder")
+  @js.native
+  val MenuFolder: FC[MenuFolderProps] = js.native
+  
   @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "Minimize")
   @js.native
   val Minimize: FC[MinimizeProps] = js.native
@@ -1426,6 +1479,14 @@ object distTypesClassicEditorGeneralDistMod {
   @js.native
   val MoveToTrash: FC[MoveToTrashProps] = js.native
   
+  @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "MultiStateBox")
+  @js.native
+  val MultiStateBox: FC[MultiStateBoxProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "Multilingual")
+  @js.native
+  val Multilingual: FC[MultilingualProps] = js.native
+  
   @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "Music")
   @js.native
   val Music: FC[MusicProps] = js.native
@@ -1462,6 +1523,10 @@ object distTypesClassicEditorGeneralDistMod {
   @js.native
   val PageBackground: FC[PageBackgroundProps] = js.native
   
+  @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "PageBody")
+  @js.native
+  val PageBody: FC[PageBodyProps] = js.native
+  
   @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "PageBold")
   @js.native
   val PageBold: FC[PageBoldProps] = js.native
@@ -1474,9 +1539,17 @@ object distTypesClassicEditorGeneralDistMod {
   @js.native
   val PageDynamic: FC[PageDynamicProps] = js.native
   
+  @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "PageDynamicSmall")
+  @js.native
+  val PageDynamicSmall: FC[PageDynamicSmallProps] = js.native
+  
   @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "PageSpecial")
   @js.native
   val PageSpecial: FC[PageSpecialProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "Pages")
+  @js.native
+  val Pages: FC[PagesProps] = js.native
   
   @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "PagesBold")
   @js.native
@@ -1690,6 +1763,10 @@ object distTypesClassicEditorGeneralDistMod {
   @js.native
   val Section: FC[SectionProps] = js.native
   
+  @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "SectionLayout")
+  @js.native
+  val SectionLayout: FC[SectionLayoutProps] = js.native
+  
   @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "SelectedCircleSmall")
   @js.native
   val SelectedCircleSmall: FC[SelectedCircleSmallProps] = js.native
@@ -1870,6 +1947,10 @@ object distTypesClassicEditorGeneralDistMod {
   @js.native
   val SwitchBold: FC[SwitchBoldProps] = js.native
   
+  @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "TS")
+  @js.native
+  val TS: FC[TSProps] = js.native
+  
   @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "Table")
   @js.native
   val Table: FC[TableProps] = js.native
@@ -1961,6 +2042,10 @@ object distTypesClassicEditorGeneralDistMod {
   @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "TextSmall")
   @js.native
   val TextSmall: FC[TextSmallProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "TimeInput")
+  @js.native
+  val TimeInput: FC[TimeInputProps] = js.native
   
   @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/general/dist", "Tumblr")
   @js.native

@@ -3867,6 +3867,10 @@ object officeJsStrings {
   inline def RichValue: RichValue = "RichValue".asInstanceOf[RichValue]
   
   @js.native
+  sealed trait RichValueRelMissingFilePart extends StObject
+  inline def RichValueRelMissingFilePart: RichValueRelMissingFilePart = "RichValueRelMissingFilePart".asInstanceOf[RichValueRelMissingFilePart]
+  
+  @js.native
   sealed trait Right extends StObject
   inline def Right: Right = "Right".asInstanceOf[Right]
   

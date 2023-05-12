@@ -21,6 +21,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
+    inline def getLimitedUseToken(appCheckInstance: FirebaseAppCheck): js.Promise[AppCheckTokenResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLimitedUseToken")(appCheckInstance.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AppCheckTokenResult]]
+    
     inline def getToken(appCheckInstance: FirebaseAppCheck, forceRefresh: js.UndefOr[Boolean]): js.Promise[AppCheckTokenResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getToken")(appCheckInstance.asInstanceOf[js.Any], forceRefresh.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AppCheckTokenResult]]
     
     inline def onTokenChanged(appCheckInstance: FirebaseAppCheck, observer: PartialObserver[AppCheckTokenResult]): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onTokenChanged")(appCheckInstance.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "engine.io-client" : "6.2.3"
+      "engine.io-client" : "6.4.0"
     }
   ],
   "test-dependencies" : [
     {
-      "engine.io-client" : "6.2.3"
+      "engine.io-client" : "6.4.0"
     }
   ],
   "compile-devDependencies" : [

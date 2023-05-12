@@ -19,6 +19,8 @@ object srcRenderersWebxrWebXRControllerMod {
   @js.native
   open class WebXRController () extends StObject {
     
+    def connect(inputSource: XRInputSource): this.type = js.native
+    
     def disconnect(inputSource: XRInputSource): this.type = js.native
     
     def dispatchEvent(event: DataType): this.type = js.native
@@ -34,6 +36,9 @@ object srcRenderersWebxrWebXRControllerMod {
   
   @JSImport("three/src/renderers/webxr/WebXRController", "XRGripSpace")
   @js.native
+  /**
+    * Creates a new {@link Bone}.
+    */
   open class XRGripSpace () extends Group {
     
     val angularVelocity: Vector3 = js.native
@@ -47,6 +52,9 @@ object srcRenderersWebxrWebXRControllerMod {
   
   @JSImport("three/src/renderers/webxr/WebXRController", "XRHandSpace")
   @js.native
+  /**
+    * Creates a new {@link Bone}.
+    */
   open class XRHandSpace () extends Group {
     
     val inputState: XRHandInputState = js.native
@@ -54,8 +62,21 @@ object srcRenderersWebxrWebXRControllerMod {
     val joints: PartialXRHandJoints = js.native
   }
   
+  @JSImport("three/src/renderers/webxr/WebXRController", "XRJointSpace")
+  @js.native
+  /**
+    * Creates a new {@link Bone}.
+    */
+  open class XRJointSpace () extends Group {
+    
+    val jointRadius: js.UndefOr[Double] = js.native
+  }
+  
   @JSImport("three/src/renderers/webxr/WebXRController", "XRTargetRaySpace")
   @js.native
+  /**
+    * Creates a new {@link Bone}.
+    */
   open class XRTargetRaySpace () extends Group {
     
     val angularVelocity: Vector3 = js.native
@@ -93,87 +114,87 @@ object srcRenderersWebxrWebXRControllerMod {
     }
   }
   
-  /* Inlined std.Record<webxr.XRHandJoint, number> */
+  /* Inlined std.Record<webxr.XRHandJoint, three.three/src/renderers/webxr/WebXRController.XRJointSpace> */
   trait XRHandJoints extends StObject {
     
-    var `index-finger-metacarpal`: Double
+    var `index-finger-metacarpal`: XRJointSpace
     
-    var `index-finger-phalanx-distal`: Double
+    var `index-finger-phalanx-distal`: XRJointSpace
     
-    var `index-finger-phalanx-intermediate`: Double
+    var `index-finger-phalanx-intermediate`: XRJointSpace
     
-    var `index-finger-phalanx-proximal`: Double
+    var `index-finger-phalanx-proximal`: XRJointSpace
     
-    var `index-finger-tip`: Double
+    var `index-finger-tip`: XRJointSpace
     
-    var `middle-finger-metacarpal`: Double
+    var `middle-finger-metacarpal`: XRJointSpace
     
-    var `middle-finger-phalanx-distal`: Double
+    var `middle-finger-phalanx-distal`: XRJointSpace
     
-    var `middle-finger-phalanx-intermediate`: Double
+    var `middle-finger-phalanx-intermediate`: XRJointSpace
     
-    var `middle-finger-phalanx-proximal`: Double
+    var `middle-finger-phalanx-proximal`: XRJointSpace
     
-    var `middle-finger-tip`: Double
+    var `middle-finger-tip`: XRJointSpace
     
-    var `pinky-finger-metacarpal`: Double
+    var `pinky-finger-metacarpal`: XRJointSpace
     
-    var `pinky-finger-phalanx-distal`: Double
+    var `pinky-finger-phalanx-distal`: XRJointSpace
     
-    var `pinky-finger-phalanx-intermediate`: Double
+    var `pinky-finger-phalanx-intermediate`: XRJointSpace
     
-    var `pinky-finger-phalanx-proximal`: Double
+    var `pinky-finger-phalanx-proximal`: XRJointSpace
     
-    var `pinky-finger-tip`: Double
+    var `pinky-finger-tip`: XRJointSpace
     
-    var `ring-finger-metacarpal`: Double
+    var `ring-finger-metacarpal`: XRJointSpace
     
-    var `ring-finger-phalanx-distal`: Double
+    var `ring-finger-phalanx-distal`: XRJointSpace
     
-    var `ring-finger-phalanx-intermediate`: Double
+    var `ring-finger-phalanx-intermediate`: XRJointSpace
     
-    var `ring-finger-phalanx-proximal`: Double
+    var `ring-finger-phalanx-proximal`: XRJointSpace
     
-    var `ring-finger-tip`: Double
+    var `ring-finger-tip`: XRJointSpace
     
-    var `thumb-metacarpal`: Double
+    var `thumb-metacarpal`: XRJointSpace
     
-    var `thumb-phalanx-distal`: Double
+    var `thumb-phalanx-distal`: XRJointSpace
     
-    var `thumb-phalanx-proximal`: Double
+    var `thumb-phalanx-proximal`: XRJointSpace
     
-    var `thumb-tip`: Double
+    var `thumb-tip`: XRJointSpace
     
-    var wrist: Double
+    var wrist: XRJointSpace
   }
   object XRHandJoints {
     
     inline def apply(
-      `index-finger-metacarpal`: Double,
-      `index-finger-phalanx-distal`: Double,
-      `index-finger-phalanx-intermediate`: Double,
-      `index-finger-phalanx-proximal`: Double,
-      `index-finger-tip`: Double,
-      `middle-finger-metacarpal`: Double,
-      `middle-finger-phalanx-distal`: Double,
-      `middle-finger-phalanx-intermediate`: Double,
-      `middle-finger-phalanx-proximal`: Double,
-      `middle-finger-tip`: Double,
-      `pinky-finger-metacarpal`: Double,
-      `pinky-finger-phalanx-distal`: Double,
-      `pinky-finger-phalanx-intermediate`: Double,
-      `pinky-finger-phalanx-proximal`: Double,
-      `pinky-finger-tip`: Double,
-      `ring-finger-metacarpal`: Double,
-      `ring-finger-phalanx-distal`: Double,
-      `ring-finger-phalanx-intermediate`: Double,
-      `ring-finger-phalanx-proximal`: Double,
-      `ring-finger-tip`: Double,
-      `thumb-metacarpal`: Double,
-      `thumb-phalanx-distal`: Double,
-      `thumb-phalanx-proximal`: Double,
-      `thumb-tip`: Double,
-      wrist: Double
+      `index-finger-metacarpal`: XRJointSpace,
+      `index-finger-phalanx-distal`: XRJointSpace,
+      `index-finger-phalanx-intermediate`: XRJointSpace,
+      `index-finger-phalanx-proximal`: XRJointSpace,
+      `index-finger-tip`: XRJointSpace,
+      `middle-finger-metacarpal`: XRJointSpace,
+      `middle-finger-phalanx-distal`: XRJointSpace,
+      `middle-finger-phalanx-intermediate`: XRJointSpace,
+      `middle-finger-phalanx-proximal`: XRJointSpace,
+      `middle-finger-tip`: XRJointSpace,
+      `pinky-finger-metacarpal`: XRJointSpace,
+      `pinky-finger-phalanx-distal`: XRJointSpace,
+      `pinky-finger-phalanx-intermediate`: XRJointSpace,
+      `pinky-finger-phalanx-proximal`: XRJointSpace,
+      `pinky-finger-tip`: XRJointSpace,
+      `ring-finger-metacarpal`: XRJointSpace,
+      `ring-finger-phalanx-distal`: XRJointSpace,
+      `ring-finger-phalanx-intermediate`: XRJointSpace,
+      `ring-finger-phalanx-proximal`: XRJointSpace,
+      `ring-finger-tip`: XRJointSpace,
+      `thumb-metacarpal`: XRJointSpace,
+      `thumb-phalanx-distal`: XRJointSpace,
+      `thumb-phalanx-proximal`: XRJointSpace,
+      `thumb-tip`: XRJointSpace,
+      wrist: XRJointSpace
     ): XRHandJoints = {
       val __obj = js.Dynamic.literal(wrist = wrist.asInstanceOf[js.Any])
       __obj.updateDynamic("index-finger-metacarpal")(`index-finger-metacarpal`.asInstanceOf[js.Any])
@@ -206,55 +227,55 @@ object srcRenderersWebxrWebXRControllerMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: XRHandJoints] (val x: Self) extends AnyVal {
       
-      inline def `setIndex-finger-metacarpal`(value: Double): Self = StObject.set(x, "index-finger-metacarpal", value.asInstanceOf[js.Any])
+      inline def `setIndex-finger-metacarpal`(value: XRJointSpace): Self = StObject.set(x, "index-finger-metacarpal", value.asInstanceOf[js.Any])
       
-      inline def `setIndex-finger-phalanx-distal`(value: Double): Self = StObject.set(x, "index-finger-phalanx-distal", value.asInstanceOf[js.Any])
+      inline def `setIndex-finger-phalanx-distal`(value: XRJointSpace): Self = StObject.set(x, "index-finger-phalanx-distal", value.asInstanceOf[js.Any])
       
-      inline def `setIndex-finger-phalanx-intermediate`(value: Double): Self = StObject.set(x, "index-finger-phalanx-intermediate", value.asInstanceOf[js.Any])
+      inline def `setIndex-finger-phalanx-intermediate`(value: XRJointSpace): Self = StObject.set(x, "index-finger-phalanx-intermediate", value.asInstanceOf[js.Any])
       
-      inline def `setIndex-finger-phalanx-proximal`(value: Double): Self = StObject.set(x, "index-finger-phalanx-proximal", value.asInstanceOf[js.Any])
+      inline def `setIndex-finger-phalanx-proximal`(value: XRJointSpace): Self = StObject.set(x, "index-finger-phalanx-proximal", value.asInstanceOf[js.Any])
       
-      inline def `setIndex-finger-tip`(value: Double): Self = StObject.set(x, "index-finger-tip", value.asInstanceOf[js.Any])
+      inline def `setIndex-finger-tip`(value: XRJointSpace): Self = StObject.set(x, "index-finger-tip", value.asInstanceOf[js.Any])
       
-      inline def `setMiddle-finger-metacarpal`(value: Double): Self = StObject.set(x, "middle-finger-metacarpal", value.asInstanceOf[js.Any])
+      inline def `setMiddle-finger-metacarpal`(value: XRJointSpace): Self = StObject.set(x, "middle-finger-metacarpal", value.asInstanceOf[js.Any])
       
-      inline def `setMiddle-finger-phalanx-distal`(value: Double): Self = StObject.set(x, "middle-finger-phalanx-distal", value.asInstanceOf[js.Any])
+      inline def `setMiddle-finger-phalanx-distal`(value: XRJointSpace): Self = StObject.set(x, "middle-finger-phalanx-distal", value.asInstanceOf[js.Any])
       
-      inline def `setMiddle-finger-phalanx-intermediate`(value: Double): Self = StObject.set(x, "middle-finger-phalanx-intermediate", value.asInstanceOf[js.Any])
+      inline def `setMiddle-finger-phalanx-intermediate`(value: XRJointSpace): Self = StObject.set(x, "middle-finger-phalanx-intermediate", value.asInstanceOf[js.Any])
       
-      inline def `setMiddle-finger-phalanx-proximal`(value: Double): Self = StObject.set(x, "middle-finger-phalanx-proximal", value.asInstanceOf[js.Any])
+      inline def `setMiddle-finger-phalanx-proximal`(value: XRJointSpace): Self = StObject.set(x, "middle-finger-phalanx-proximal", value.asInstanceOf[js.Any])
       
-      inline def `setMiddle-finger-tip`(value: Double): Self = StObject.set(x, "middle-finger-tip", value.asInstanceOf[js.Any])
+      inline def `setMiddle-finger-tip`(value: XRJointSpace): Self = StObject.set(x, "middle-finger-tip", value.asInstanceOf[js.Any])
       
-      inline def `setPinky-finger-metacarpal`(value: Double): Self = StObject.set(x, "pinky-finger-metacarpal", value.asInstanceOf[js.Any])
+      inline def `setPinky-finger-metacarpal`(value: XRJointSpace): Self = StObject.set(x, "pinky-finger-metacarpal", value.asInstanceOf[js.Any])
       
-      inline def `setPinky-finger-phalanx-distal`(value: Double): Self = StObject.set(x, "pinky-finger-phalanx-distal", value.asInstanceOf[js.Any])
+      inline def `setPinky-finger-phalanx-distal`(value: XRJointSpace): Self = StObject.set(x, "pinky-finger-phalanx-distal", value.asInstanceOf[js.Any])
       
-      inline def `setPinky-finger-phalanx-intermediate`(value: Double): Self = StObject.set(x, "pinky-finger-phalanx-intermediate", value.asInstanceOf[js.Any])
+      inline def `setPinky-finger-phalanx-intermediate`(value: XRJointSpace): Self = StObject.set(x, "pinky-finger-phalanx-intermediate", value.asInstanceOf[js.Any])
       
-      inline def `setPinky-finger-phalanx-proximal`(value: Double): Self = StObject.set(x, "pinky-finger-phalanx-proximal", value.asInstanceOf[js.Any])
+      inline def `setPinky-finger-phalanx-proximal`(value: XRJointSpace): Self = StObject.set(x, "pinky-finger-phalanx-proximal", value.asInstanceOf[js.Any])
       
-      inline def `setPinky-finger-tip`(value: Double): Self = StObject.set(x, "pinky-finger-tip", value.asInstanceOf[js.Any])
+      inline def `setPinky-finger-tip`(value: XRJointSpace): Self = StObject.set(x, "pinky-finger-tip", value.asInstanceOf[js.Any])
       
-      inline def `setRing-finger-metacarpal`(value: Double): Self = StObject.set(x, "ring-finger-metacarpal", value.asInstanceOf[js.Any])
+      inline def `setRing-finger-metacarpal`(value: XRJointSpace): Self = StObject.set(x, "ring-finger-metacarpal", value.asInstanceOf[js.Any])
       
-      inline def `setRing-finger-phalanx-distal`(value: Double): Self = StObject.set(x, "ring-finger-phalanx-distal", value.asInstanceOf[js.Any])
+      inline def `setRing-finger-phalanx-distal`(value: XRJointSpace): Self = StObject.set(x, "ring-finger-phalanx-distal", value.asInstanceOf[js.Any])
       
-      inline def `setRing-finger-phalanx-intermediate`(value: Double): Self = StObject.set(x, "ring-finger-phalanx-intermediate", value.asInstanceOf[js.Any])
+      inline def `setRing-finger-phalanx-intermediate`(value: XRJointSpace): Self = StObject.set(x, "ring-finger-phalanx-intermediate", value.asInstanceOf[js.Any])
       
-      inline def `setRing-finger-phalanx-proximal`(value: Double): Self = StObject.set(x, "ring-finger-phalanx-proximal", value.asInstanceOf[js.Any])
+      inline def `setRing-finger-phalanx-proximal`(value: XRJointSpace): Self = StObject.set(x, "ring-finger-phalanx-proximal", value.asInstanceOf[js.Any])
       
-      inline def `setRing-finger-tip`(value: Double): Self = StObject.set(x, "ring-finger-tip", value.asInstanceOf[js.Any])
+      inline def `setRing-finger-tip`(value: XRJointSpace): Self = StObject.set(x, "ring-finger-tip", value.asInstanceOf[js.Any])
       
-      inline def `setThumb-metacarpal`(value: Double): Self = StObject.set(x, "thumb-metacarpal", value.asInstanceOf[js.Any])
+      inline def `setThumb-metacarpal`(value: XRJointSpace): Self = StObject.set(x, "thumb-metacarpal", value.asInstanceOf[js.Any])
       
-      inline def `setThumb-phalanx-distal`(value: Double): Self = StObject.set(x, "thumb-phalanx-distal", value.asInstanceOf[js.Any])
+      inline def `setThumb-phalanx-distal`(value: XRJointSpace): Self = StObject.set(x, "thumb-phalanx-distal", value.asInstanceOf[js.Any])
       
-      inline def `setThumb-phalanx-proximal`(value: Double): Self = StObject.set(x, "thumb-phalanx-proximal", value.asInstanceOf[js.Any])
+      inline def `setThumb-phalanx-proximal`(value: XRJointSpace): Self = StObject.set(x, "thumb-phalanx-proximal", value.asInstanceOf[js.Any])
       
-      inline def `setThumb-tip`(value: Double): Self = StObject.set(x, "thumb-tip", value.asInstanceOf[js.Any])
+      inline def `setThumb-tip`(value: XRJointSpace): Self = StObject.set(x, "thumb-tip", value.asInstanceOf[js.Any])
       
-      inline def setWrist(value: Double): Self = StObject.set(x, "wrist", value.asInstanceOf[js.Any])
+      inline def setWrist(value: XRJointSpace): Self = StObject.set(x, "wrist", value.asInstanceOf[js.Any])
     }
   }
   

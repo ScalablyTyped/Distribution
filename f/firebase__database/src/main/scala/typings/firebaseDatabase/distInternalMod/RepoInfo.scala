@@ -41,6 +41,8 @@ trait RepoInfo extends StObject {
   
   def isCustomHost(): Boolean = js.native
   
+  val isUsingEmulator: Boolean = js.native
+  
   val namespace: String = js.native
   
   val nodeAdmin: Boolean = js.native

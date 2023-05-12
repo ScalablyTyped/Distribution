@@ -1,7 +1,7 @@
 
 # Scala.js typings for monaco-editor
 
-Typings are for version 0.34.1
+Typings are for version 0.38.0
 
 ## Library description:
 A browser based code editor

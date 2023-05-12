@@ -8,20 +8,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libNamedNodeMod {
   
-  // tslint:disable-next-line:no-unnecessary-class
-  @JSImport("rdf-ext/lib/NamedNode", JSImport.Namespace)
+  @JSImport("rdf-ext/lib/NamedNode", JSImport.Default)
   @js.native
-  open class ^[Iri /* <: String */] protected ()
-    extends StObject
-       with NamedNodeExt[Iri] {
+  open class default[Iri /* <: String */] protected () extends NamedNodeExt[Iri] {
     def this(iri: Iri) = this()
   }
   
-  // tslint:disable-next-line:no-unnecessary-class
+  @JSImport("rdf-ext/lib/NamedNode", "NamedNodeExt")
   @js.native
-  trait NamedNodeExt[Iri /* <: String */]
+  open class NamedNodeExt[Iri /* <: String */] protected ()
     extends StObject
        with NamedNode[Iri] {
+    def this(iri: Iri) = this()
     
     def toCanonical(): String = js.native
     

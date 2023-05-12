@@ -18,8 +18,8 @@ object mod {
     * @param configuration itemsjs
     * @template I The type of items being indexed
     */
-  inline def apply[I /* <: js.Object */, S /* <: String */, A /* <: String */](items: js.Array[I]): ItemsJs[I, S, A] = ^.asInstanceOf[js.Dynamic].apply(items.asInstanceOf[js.Any]).asInstanceOf[ItemsJs[I, S, A]]
-  inline def apply[I /* <: js.Object */, S /* <: String */, A /* <: String */](items: js.Array[I], configuration: Configuration[I, S, A]): ItemsJs[I, S, A] = (^.asInstanceOf[js.Dynamic].apply(items.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[ItemsJs[I, S, A]]
+  inline def apply[I /* <: js.Object */, S /* <: String */, A /* <: /* keyof I */ String */](items: js.Array[I]): ItemsJs[I, S, A] = ^.asInstanceOf[js.Dynamic].apply(items.asInstanceOf[js.Any]).asInstanceOf[ItemsJs[I, S, A]]
+  inline def apply[I /* <: js.Object */, S /* <: String */, A /* <: /* keyof I */ String */](items: js.Array[I], configuration: Configuration[I, S, A]): ItemsJs[I, S, A] = (^.asInstanceOf[js.Dynamic].apply(items.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[ItemsJs[I, S, A]]
   
   @JSImport("itemsjs", JSImport.Namespace)
   @js.native
@@ -27,7 +27,13 @@ object mod {
   
   trait Aggregation extends StObject {
     
+    /** @default true */
+    var chosen_filters_on_top: js.UndefOr[Boolean] = js.undefined
+    
     var conjunction: js.UndefOr[Boolean] = js.undefined
+    
+    /** @default false */
+    var hide_zero_doc_count: js.UndefOr[Boolean] = js.undefined
     
     /** @default 'asc' */
     var order: js.UndefOr[Order] = js.undefined
@@ -53,9 +59,17 @@ object mod {
     @scala.inline
     implicit open class MutableBuilder[Self <: Aggregation] (val x: Self) extends AnyVal {
       
+      inline def setChosen_filters_on_top(value: Boolean): Self = StObject.set(x, "chosen_filters_on_top", value.asInstanceOf[js.Any])
+      
+      inline def setChosen_filters_on_topUndefined: Self = StObject.set(x, "chosen_filters_on_top", js.undefined)
+      
       inline def setConjunction(value: Boolean): Self = StObject.set(x, "conjunction", value.asInstanceOf[js.Any])
       
       inline def setConjunctionUndefined: Self = StObject.set(x, "conjunction", js.undefined)
+      
+      inline def setHide_zero_doc_count(value: Boolean): Self = StObject.set(x, "hide_zero_doc_count", value.asInstanceOf[js.Any])
+      
+      inline def setHide_zero_doc_countUndefined: Self = StObject.set(x, "hide_zero_doc_count", js.undefined)
       
       inline def setOrder(value: Order): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
@@ -121,36 +135,36 @@ object mod {
     }
   }
   
-  trait Bucket[I /* <: js.Object */] extends StObject {
+  trait Bucket[K] extends StObject {
     
     var doc_count: Double
     
-    var key: /* keyof I */ String
+    var key: K
     
     var selected: Boolean
   }
   object Bucket {
     
-    inline def apply[I /* <: js.Object */](doc_count: Double, key: /* keyof I */ String, selected: Boolean): Bucket[I] = {
+    inline def apply[K](doc_count: Double, key: K, selected: Boolean): Bucket[K] = {
       val __obj = js.Dynamic.literal(doc_count = doc_count.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Bucket[I]]
+      __obj.asInstanceOf[Bucket[K]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Bucket[?], I /* <: js.Object */] (val x: Self & Bucket[I]) extends AnyVal {
+    implicit open class MutableBuilder[Self <: Bucket[?], K] (val x: Self & Bucket[K]) extends AnyVal {
       
       inline def setDoc_count(value: Double): Self = StObject.set(x, "doc_count", value.asInstanceOf[js.Any])
       
-      inline def setKey(value: /* keyof I */ String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     }
   }
   
-  type Buckets[I /* <: js.Object */] = js.Array[Bucket[I]]
+  type Buckets[K] = js.Array[Bucket[K]]
   
   /** Configuration for itemsjs */
-  trait Configuration[I /* <: js.Object */, S /* <: String */, A /* <: String */] extends StObject {
+  trait Configuration[I /* <: js.Object */, S /* <: String */, A /* <: /* keyof I */ String */] extends StObject {
     
     var aggregations: js.UndefOr[Record[A, Aggregation]] = js.undefined
     
@@ -164,13 +178,13 @@ object mod {
   }
   object Configuration {
     
-    inline def apply[I /* <: js.Object */, S /* <: String */, A /* <: String */](): Configuration[I, S, A] = {
+    inline def apply[I /* <: js.Object */, S /* <: String */, A /* <: /* keyof I */ String */](): Configuration[I, S, A] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Configuration[I, S, A]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Configuration[?, ?, ?], I /* <: js.Object */, S /* <: String */, A /* <: String */] (val x: Self & (Configuration[I, S, A])) extends AnyVal {
+    implicit open class MutableBuilder[Self <: Configuration[?, ?, ?], I /* <: js.Object */, S /* <: String */, A /* <: /* keyof I */ String */] (val x: Self & (Configuration[I, S, A])) extends AnyVal {
       
       inline def setAggregations(value: Record[A, Aggregation]): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
       
@@ -193,10 +207,10 @@ object mod {
   }
   
   @js.native
-  trait ItemsJs[I /* <: js.Object */, S /* <: String */, A /* <: String */] extends StObject {
+  trait ItemsJs[I /* <: js.Object */, S /* <: String */, A /* <: /* keyof I */ String */] extends StObject {
     
     /** Get data for aggregation */
-    def aggregation(options: AggregationOptions[A]): typings.itemsjs.anon.Pagination[I] = js.native
+    def aggregation(options: AggregationOptions[A]): typings.itemsjs.anon.Pagination[I, A] = js.native
     
     /** Reindex with an entirely new list of items */
     def reindex(data: js.Array[I]): Unit = js.native
@@ -253,9 +267,11 @@ object mod {
     }
   }
   
-  trait SearchAggregation[I /* <: js.Object */, A /* <: String */] extends StObject {
+  trait SearchAggregation[I /* <: js.Object */, A /* <: /* keyof I */ String */] extends StObject {
     
-    var buckets: Buckets[I]
+    var buckets: Buckets[
+        /* import warning: importer.ImportType#apply Failed type conversion: I[A] */ js.Any
+      ]
     
     var name: A
     
@@ -265,17 +281,32 @@ object mod {
   }
   object SearchAggregation {
     
-    inline def apply[I /* <: js.Object */, A /* <: String */](buckets: Buckets[I], name: A, position: Double, title: String): SearchAggregation[I, A] = {
+    inline def apply[I /* <: js.Object */, A /* <: /* keyof I */ String */](
+      buckets: Buckets[
+          /* import warning: importer.ImportType#apply Failed type conversion: I[A] */ js.Any
+        ],
+      name: A,
+      position: Double,
+      title: String
+    ): SearchAggregation[I, A] = {
       val __obj = js.Dynamic.literal(buckets = buckets.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[SearchAggregation[I, A]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: SearchAggregation[?, ?], I /* <: js.Object */, A /* <: String */] (val x: Self & (SearchAggregation[I, A])) extends AnyVal {
+    implicit open class MutableBuilder[Self <: SearchAggregation[?, ?], I /* <: js.Object */, A /* <: /* keyof I */ String */] (val x: Self & (SearchAggregation[I, A])) extends AnyVal {
       
-      inline def setBuckets(value: Buckets[I]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
+      inline def setBuckets(
+        value: Buckets[
+              /* import warning: importer.ImportType#apply Failed type conversion: I[A] */ js.Any
+            ]
+      ): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
       
-      inline def setBucketsVarargs(value: Bucket[I]*): Self = StObject.set(x, "buckets", js.Array(value*))
+      inline def setBucketsVarargs(
+        value: (Bucket[
+              /* import warning: importer.ImportType#apply Failed type conversion: I[A] */ js.Any
+            ])*
+      ): Self = StObject.set(x, "buckets", js.Array(value*))
       
       inline def setName(value: A): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -285,7 +316,7 @@ object mod {
     }
   }
   
-  trait SearchOptions[I /* <: js.Object */, S /* <: String */, A /* <: String */] extends StObject {
+  trait SearchOptions[I /* <: js.Object */, S /* <: String */, A /* <: /* keyof I */ String */] extends StObject {
     
     /** A custom function to filter values */
     var filter: js.UndefOr[js.Function1[/* item */ I, Boolean]] = js.undefined
@@ -314,13 +345,13 @@ object mod {
   }
   object SearchOptions {
     
-    inline def apply[I /* <: js.Object */, S /* <: String */, A /* <: String */](): SearchOptions[I, S, A] = {
+    inline def apply[I /* <: js.Object */, S /* <: String */, A /* <: /* keyof I */ String */](): SearchOptions[I, S, A] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SearchOptions[I, S, A]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: SearchOptions[?, ?, ?], I /* <: js.Object */, S /* <: String */, A /* <: String */] (val x: Self & (SearchOptions[I, S, A])) extends AnyVal {
+    implicit open class MutableBuilder[Self <: SearchOptions[?, ?, ?], I /* <: js.Object */, S /* <: String */, A /* <: /* keyof I */ String */] (val x: Self & (SearchOptions[I, S, A])) extends AnyVal {
       
       inline def setFilter(value: /* item */ I => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       

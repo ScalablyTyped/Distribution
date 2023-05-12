@@ -14,6 +14,8 @@ trait PointerDragBehavior
   
   /* private */ var _activeDragButton: Any = js.native
   
+  /* private */ var _activePointerInfo: Any = js.native
+  
   /* private */ var _alternatePickedPoint: Any = js.native
   
   /* private */ var _attachedToElement: Any = js.native
@@ -24,7 +26,7 @@ trait PointerDragBehavior
   
   /* private */ var _dragDelta: Any = js.native
   
-  /* private */ var _dragPlane: Any = js.native
+  /* protected */ var _dragPlane: Mesh = js.native
   
   /* private */ var _enabled: Any = js.native
   
@@ -140,6 +142,9 @@ trait PointerDragBehavior
   
   /**
     *  Fires each time a drag ends (eg. mouse release after drag)
+    *  * dragPlanePoint in world space where the drag intersects the drag plane
+    *
+    *  (if validatedDrag is used, the position of the attached mesh might not equal dragPlanePoint)
     */
   var onDragEndObservable: Observable[PointerId] = js.native
   
@@ -149,11 +154,16 @@ trait PointerDragBehavior
     *  * dragDistance along the drag axis
     *  * dragPlaneNormal normal of the current drag plane used during the drag
     *  * dragPlanePoint in world space where the drag intersects the drag plane
+    *
+    *  (if validatedDrag is used, the position of the attached mesh might not equal dragPlanePoint)
     */
   var onDragObservable: Observable[DragPlaneNormal] = js.native
   
   /**
     *  Fires each time a drag begins (eg. mouse down on mesh)
+    *  * dragPlanePoint in world space where the drag intersects the drag plane
+    *
+    *  (if validatedDrag is used, the position of the attached mesh might not equal dragPlanePoint)
     */
   var onDragStartObservable: Observable[PointerId] = js.native
   

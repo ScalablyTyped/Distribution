@@ -22,7 +22,9 @@ trait Resolved extends StObject {
   /** @description A collection of resolved package dependencies. */
   var resolved: js.UndefOr[
     StringDictionary[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['dependency'] */ js.Any
+      js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['dependency'] */ js.Any
+      ]
     ]
   ] = js.undefined
 }
@@ -50,7 +52,9 @@ object Resolved {
     
     inline def setResolved(
       value: StringDictionary[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['dependency'] */ js.Any
+          js.UndefOr[
+            /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['dependency'] */ js.Any
+          ]
         ]
     ): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__tracked-map
 
-Typings are for version 2.0.2
+Typings are for version 3.0.2
 
 ## Library description:
 Allows tracking of statistics while libp2p is running

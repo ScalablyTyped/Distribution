@@ -32,6 +32,8 @@ object mod extends Shortcut {
     def del(id: String): Client = js.native
     def del(id: String, cb: CallbackT[Unit]): Client = js.native
     
+    def quit(): Unit = js.native
+    
     def send(message: String): Client = js.native
     def send(message: String, cb: CallbackT[String]): Client = js.native
     def send(message: String, delay: Double): Client = js.native

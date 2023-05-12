@@ -3,7 +3,6 @@ package typings.opentelemetryInstrumentationGrpc
 import typings.grpc.mod.ClientReadableStream
 import typings.grpc.mod.handleCall
 import typings.opentelemetryApi.buildSrcTraceSpanMod.Span
-import typings.opentelemetryInstrumentationGrpc.anon.TypeofgrpcTypes
 import typings.opentelemetryInstrumentationGrpc.buildSrcGrpcTypesMod.SendUnaryDataCallback
 import typings.opentelemetryInstrumentationGrpc.buildSrcGrpcTypesMod.ServerCallWithMeta
 import org.scalablytyped.runtime.StObject
@@ -17,21 +16,19 @@ object buildSrcGrpcServerUtilsMod {
   val ^ : js.Any = js.native
   
   inline def clientStreamAndUnaryHandler[RequestType, ResponseType_1](
-    grpcClient: TypeofgrpcTypes,
     span: Span,
     call: ServerCallWithMeta,
     callback: SendUnaryDataCallback,
     original: ClientReadableStream[RequestType],
     self: js.Object
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("clientStreamAndUnaryHandler")(grpcClient.asInstanceOf[js.Any], span.asInstanceOf[js.Any], call.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], original.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[Any]
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("clientStreamAndUnaryHandler")(span.asInstanceOf[js.Any], call.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], original.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def clientStreamAndUnaryHandler[RequestType, ResponseType_1](
-    grpcClient: TypeofgrpcTypes,
     span: Span,
     call: ServerCallWithMeta,
     callback: SendUnaryDataCallback,
     original: handleCall[RequestType, ResponseType_1],
     self: js.Object
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("clientStreamAndUnaryHandler")(grpcClient.asInstanceOf[js.Any], span.asInstanceOf[js.Any], call.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], original.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[Any]
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("clientStreamAndUnaryHandler")(span.asInstanceOf[js.Any], call.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], original.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def serverStreamAndBidiHandler[RequestType, ResponseType_1](
     span: Span,

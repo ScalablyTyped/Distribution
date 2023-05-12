@@ -28,6 +28,7 @@ object typingsModelsBillingMod {
       }
     }
     
+    // todo: replace with CompleteBillingData
     trait BillingOrShippingRecurringPayInData extends StObject {
       
       var Address: AddressData
@@ -45,6 +46,32 @@ object typingsModelsBillingMod {
       
       @scala.inline
       implicit open class MutableBuilder[Self <: BillingOrShippingRecurringPayInData] (val x: Self) extends AnyVal {
+        
+        inline def setAddress(value: AddressData): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
+        
+        inline def setFirstName(value: String): Self = StObject.set(x, "FirstName", value.asInstanceOf[js.Any])
+        
+        inline def setLastName(value: String): Self = StObject.set(x, "LastName", value.asInstanceOf[js.Any])
+      }
+    }
+    
+    trait CompleteBillingData extends StObject {
+      
+      var Address: AddressData
+      
+      var FirstName: String
+      
+      var LastName: String
+    }
+    object CompleteBillingData {
+      
+      inline def apply(Address: AddressData, FirstName: String, LastName: String): CompleteBillingData = {
+        val __obj = js.Dynamic.literal(Address = Address.asInstanceOf[js.Any], FirstName = FirstName.asInstanceOf[js.Any], LastName = LastName.asInstanceOf[js.Any])
+        __obj.asInstanceOf[CompleteBillingData]
+      }
+      
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CompleteBillingData] (val x: Self) extends AnyVal {
         
         inline def setAddress(value: AddressData): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
         

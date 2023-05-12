@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Get extends StObject {
   
-  /** Get Hypermedia links to resources accessible in GitHub's REST API */
+  /**
+    * GitHub API Root
+    * @description Get Hypermedia links to resources accessible in GitHub's REST API
+    */
   var get: Responses
 }
 object Get {

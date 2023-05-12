@@ -74,6 +74,7 @@ object mod {
       * event listener to the beginning of the listeners array.
       *
       * ```js
+      * import { EventEmitter } from 'node:events';
       * const myEE = new EventEmitter();
       * myEE.on('foo', () => console.log('a'));
       * myEE.prependListener('foo', () => console.log('b'));
@@ -137,6 +138,7 @@ object mod {
       * event listener to the beginning of the listeners array.
       *
       * ```js
+      * import { EventEmitter } from 'node:events';
       * const myEE = new EventEmitter();
       * myEE.once('foo', () => console.log('a'));
       * myEE.prependOnceListener('foo', () => console.log('b'));

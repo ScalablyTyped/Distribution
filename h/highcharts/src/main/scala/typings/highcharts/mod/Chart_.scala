@@ -1,7 +1,6 @@
 package typings.highcharts.mod
 
 import typings.highcharts.anon.PartialAnimationOptionsOb
-import typings.highcharts.modulesBoostCanvasMod.highchartsAugmentingMod.Chart
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -70,7 +69,9 @@ open class Chart_ protected () extends StObject {
     *        Whether to redraw the chart after adding.
     *
     * @param animation
-    *        Whether and how to apply animation in the redraw.
+    *        Whether and how to apply animation in the redraw. When
+    *        `undefined`, it applies the animation that is set in the
+    *        `chart.animation` option.
     *
     * @return The newly generated Axis object.
     */
@@ -101,16 +102,18 @@ open class Chart_ protected () extends StObject {
     *        Whether to redraw the chart after adding.
     *
     * @param animation
-    *        Whether and how to apply animation in the redraw.
+    *        Whether and how to apply animation in the redraw. When
+    *        `undefined`, it applies the animation that is set in the
+    *        `chart.animation` option.
     *
     * @return The newly generated Axis object.
     */
-  def addColorAxis(options: ColorAxisOptions): ColorAxis = js.native
-  def addColorAxis(options: ColorAxisOptions, redraw: Boolean): ColorAxis = js.native
-  def addColorAxis(options: ColorAxisOptions, redraw: Boolean, animation: Boolean): ColorAxis = js.native
-  def addColorAxis(options: ColorAxisOptions, redraw: Boolean, animation: PartialAnimationOptionsOb): ColorAxis = js.native
-  def addColorAxis(options: ColorAxisOptions, redraw: Unit, animation: Boolean): ColorAxis = js.native
-  def addColorAxis(options: ColorAxisOptions, redraw: Unit, animation: PartialAnimationOptionsOb): ColorAxis = js.native
+  def addColorAxis(options: ColorAxisOptions): Axis = js.native
+  def addColorAxis(options: ColorAxisOptions, redraw: Boolean): Axis = js.native
+  def addColorAxis(options: ColorAxisOptions, redraw: Boolean, animation: Boolean): Axis = js.native
+  def addColorAxis(options: ColorAxisOptions, redraw: Boolean, animation: PartialAnimationOptionsOb): Axis = js.native
+  def addColorAxis(options: ColorAxisOptions, redraw: Unit, animation: Boolean): Axis = js.native
+  def addColorAxis(options: ColorAxisOptions, redraw: Unit, animation: PartialAnimationOptionsOb): Axis = js.native
   
   /**
     * Set a new credits label for the chart.
@@ -136,7 +139,8 @@ open class Chart_ protected () extends StObject {
     *
     * @param animation
     *        Whether to apply animation, and optionally animation
-    *        configuration.
+    *        configuration. When `undefined`, it applies the animation that is
+    *        set in the `chart.animation` option.
     *
     * @return The newly created series object.
     *
@@ -172,15 +176,6 @@ open class Chart_ protected () extends StObject {
     * All the axes in the chart.
     */
   var axes: js.Array[Axis] = js.native
-  
-  /**
-    * Cancel current sonification and reset cursor.
-    *
-    * @param fadeOut
-    *        Fade out as we pause to avoid clicks.
-    */
-  def cancelSonify(): Unit = js.native
-  def cancelSonify(fadeOut: Boolean): Unit = js.native
   
   /**
     * The current pixel height of the chart.
@@ -282,7 +277,7 @@ open class Chart_ protected () extends StObject {
     *
     * @return X and Y coordinates in terms of projected values
     */
-  def fromLatLonToPoint(lonLat: typings.highcharts.modulesMapMod.highchartsAugmentingMod.MapLonLatObject): typings.highcharts.modulesMapMod.highchartsAugmentingMod.ProjectedXY = js.native
+  def fromLatLonToPoint(lonLat: MapLonLatObject): typings.highcharts.modulesMapMod.highchartsAugmentingMod.ProjectedXY = js.native
   
   /**
     * Deprecated. Use `MapView.projectedUnitsToLonLat` instead.
@@ -293,8 +288,8 @@ open class Chart_ protected () extends StObject {
     *
     * @return An object with `lat` and `lon` properties.
     */
-  def fromPointToLatLon(point: typings.highcharts.modulesMapMod.highchartsAugmentingMod.Point): js.UndefOr[typings.highcharts.modulesMapMod.highchartsAugmentingMod.MapLonLatObject] = js.native
-  def fromPointToLatLon(point: typings.highcharts.modulesMapMod.highchartsAugmentingMod.ProjectedXY): js.UndefOr[typings.highcharts.modulesMapMod.highchartsAugmentingMod.MapLonLatObject] = js.native
+  def fromPointToLatLon(point: typings.highcharts.modulesMapMod.highchartsAugmentingMod.Point): js.UndefOr[MapLonLatObject] = js.native
+  def fromPointToLatLon(point: typings.highcharts.modulesMapMod.highchartsAugmentingMod.ProjectedXY): js.UndefOr[MapLonLatObject] = js.native
   
   var fullscreen: typings.highcharts.modulesExportingMod.highchartsAugmentingMod.Fullscreen = js.native
   
@@ -331,13 +326,6 @@ open class Chart_ protected () extends StObject {
     * @return The unfiltered SVG of the chart.
     */
   def getChartHTML(): String = js.native
-  
-  /**
-    * Get a list of the points currently under cursor.
-    *
-    * @return The points currently under the cursor.
-    */
-  def getCurrentSonifyPoints(): js.Array[typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Point] = js.native
   
   /**
     * Export-data module required. Returns a two-dimensional array
@@ -474,25 +462,6 @@ open class Chart_ protected () extends StObject {
   var inverted: js.UndefOr[Boolean] = js.native
   
   /**
-    * Returns true if the chart is in series boost mode.
-    *
-    * @param chart
-    *        the chart to check
-    *
-    * @return true if the chart is in series boost mode
-    */
-  def isChartSeriesBoosting(chart: Chart): Boolean = js.native
-  /**
-    * Returns true if the chart is in series boost mode.
-    *
-    * @param chart
-    *        the chart to check
-    *
-    * @return true if the chart is in series boost mode
-    */
-  def isChartSeriesBoosting(chart: typings.highcharts.modulesBoostMod.highchartsAugmentingMod.Chart): Boolean = js.native
-  
-  /**
     * Check whether a given point is within the plot area.
     *
     * @param plotX
@@ -523,7 +492,9 @@ open class Chart_ protected () extends StObject {
   def langFormat(langKey: String, context: Dictionary[Any]): String = js.native
   
   /**
-    * The overview of the chart's series.
+    * The legend contains an interactive overview over chart items, usually
+    * individual series or points depending on the series type. The color axis
+    * and bubble legend are also rendered in the chart legend.
     */
   var legend: Legend = js.native
   
@@ -611,15 +582,6 @@ open class Chart_ protected () extends StObject {
   var options: Options = js.native
   
   /**
-    * Pause the running sonification.
-    *
-    * @param fadeOut
-    *        Fade out as we pause to avoid clicks.
-    */
-  def pauseSonify(): Unit = js.native
-  def pauseSonify(fadeOut: Boolean): Unit = js.native
-  
-  /**
     * The current height of the plot area in pixels.
     */
   var plotHeight: Double = js.native
@@ -665,7 +627,8 @@ open class Chart_ protected () extends StObject {
     * added. So you add the points and call `chart.redraw()` after.
     *
     * @param animation
-    *        If or how to apply animation to the redraw.
+    *        If or how to apply animation to the redraw. When `undefined`, it
+    *        applies the animation that is set in the `chart.animation` option.
     *
     * @fires Highcharts.Chart#afterSetExtremes
     * @fires Highcharts.Chart#beforeRedraw
@@ -679,11 +642,9 @@ open class Chart_ protected () extends StObject {
   def redraw(animation: PartialAnimationOptionsOb): Unit = js.native
   
   /**
-    * Reflows the chart to its container. By default, the chart reflows
-    * automatically to its container following a `window.resize` event, as per
-    * the chart.reflow option. However, there are no reliable events for div
-    * resize, so if the container is resized without a window resize event,
-    * this must be called explicitly.
+    * Reflows the chart to its container. By default, the Resize Observer is
+    * attached to the chart's div which allows to reflows the chart
+    * automatically to its container, as per the chart.reflow option.
     *
     * @param e
     *        Event arguments. Used primarily when the function is called
@@ -707,36 +668,6 @@ open class Chart_ protected () extends StObject {
     * associated renderer.
     */
   var renderer: SVGRenderer = js.native
-  
-  /**
-    * Reset cursor to start. Requires series.sonify or chart.sonify to have
-    * been played at some point earlier.
-    */
-  def resetSonifyCursor(): Unit = js.native
-  
-  /**
-    * Reset cursor to end. Requires series.sonify or chart.sonify to have
-    * been played at some point earlier.
-    */
-  def resetSonifyCursorEnd(): Unit = js.native
-  
-  /**
-    * Resume the currently running sonification. Requires series.sonify or
-    * chart.sonify to have been played at some point earlier.
-    *
-    * @param onEnd
-    *        Callback to call when play finished.
-    */
-  def resumeSonify(onEnd: js.Function): Unit = js.native
-  
-  /**
-    * Play backwards from cursor. Requires series.sonify or chart.sonify to
-    * have been played at some point earlier.
-    *
-    * @param onEnd
-    *        Callback to call when play finished.
-    */
-  def rewindSonify(onEnd: js.Function): Unit = js.native
   
   /**
     * All the current series in the chart.
@@ -779,7 +710,8 @@ open class Chart_ protected () extends StObject {
     *        in order to adapt to the height of the containing element.
     *
     * @param animation
-    *        Whether and how to apply animation.
+    *        Whether and how to apply animation. When `undefined`, it applies
+    *        the animation that is set in the `chart.animation` option.
     *
     * @fires Highcharts.Chart#endResize
     * @fires Highcharts.Chart#resize
@@ -807,17 +739,6 @@ open class Chart_ protected () extends StObject {
   def setSize(width: Unit, height: Null, animation: PartialAnimationOptionsOb): Unit = js.native
   def setSize(width: Unit, height: Unit, animation: Boolean): Unit = js.native
   def setSize(width: Unit, height: Unit, animation: PartialAnimationOptionsOb): Unit = js.native
-  
-  def setSonifyCursor(points: js.Array[typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Point]): Unit = js.native
-  /**
-    * Set the cursor to a point or set of points in different series.
-    *
-    * @param points
-    *        The point or points to set the cursor to. If setting multiple
-    *        points under the cursor, the points have to be in different
-    *        series that are being played simultaneously.
-    */
-  def setSonifyCursor(points: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Point): Unit = js.native
   
   /**
     * Shortcut to set the subtitle options. This can also be done from
@@ -874,17 +795,23 @@ open class Chart_ protected () extends StObject {
   def showResetZoom(): Unit = js.native
   
   /**
-    * Sonify a chart.
-    *
-    * @param options
-    *        The options for sonifying this chart. If not provided, uses
-    *        options set on chart and series.
+    * Sonification capabilities for the chart.
     */
-  def sonify(): Unit = js.native
-  def sonify(options: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.SonificationOptions): Unit = js.native
+  var sonification: js.UndefOr[typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Sonification] = js.native
   
   /**
-    * Whether the chart is in styled mode, meaning all presentatinoal
+    * Play a sonification of a chart.
+    *
+    * @param onEnd
+    *        Callback to call after play completed
+    */
+  def sonify(): Unit = js.native
+  def sonify(
+    onEnd: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.SonificationChartEventCallback
+  ): Unit = js.native
+  
+  /**
+    * Whether the chart is in styled mode, meaning all presentational
     * attributes are avoided.
     */
   var styledMode: Boolean = js.native
@@ -909,6 +836,27 @@ open class Chart_ protected () extends StObject {
   var title: TitleObject = js.native
   
   /**
+    * Play/pause sonification of a chart.
+    *
+    * @param reset
+    *        Reset the playing cursor after play completed. Defaults to
+    *        `true`.
+    *
+    * @param onEnd
+    *        Callback to call after play completed
+    */
+  def toggleSonify(): Unit = js.native
+  def toggleSonify(reset: Boolean): Unit = js.native
+  def toggleSonify(
+    reset: Boolean,
+    onEnd: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.SonificationChartEventCallback
+  ): Unit = js.native
+  def toggleSonify(
+    reset: Unit,
+    onEnd: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.SonificationChartEventCallback
+  ): Unit = js.native
+  
+  /**
     * Tooltip object for points of series.
     */
   var tooltip: Tooltip = js.native
@@ -926,7 +874,7 @@ open class Chart_ protected () extends StObject {
     *
     * @return An object with `x` and `y` properties.
     */
-  def transformFromLatLon(latLon: typings.highcharts.modulesMapMod.highchartsAugmentingMod.MapLonLatObject, transform: Any): typings.highcharts.modulesMapMod.highchartsAugmentingMod.ProjectedXY = js.native
+  def transformFromLatLon(latLon: MapLonLatObject, transform: Any): typings.highcharts.modulesMapMod.highchartsAugmentingMod.ProjectedXY = js.native
   
   /**
     * Highcharts Maps only. Get latLon from point using specified transform
@@ -943,8 +891,8 @@ open class Chart_ protected () extends StObject {
     *
     * @return An object with `lat` and `lon` properties.
     */
-  def transformToLatLon(point: typings.highcharts.modulesMapMod.highchartsAugmentingMod.Point, transform: Any): js.UndefOr[typings.highcharts.modulesMapMod.highchartsAugmentingMod.MapLonLatObject] = js.native
-  def transformToLatLon(point: typings.highcharts.modulesMapMod.highchartsAugmentingMod.ProjectedXY, transform: Any): js.UndefOr[typings.highcharts.modulesMapMod.highchartsAugmentingMod.MapLonLatObject] = js.native
+  def transformToLatLon(point: typings.highcharts.modulesMapMod.highchartsAugmentingMod.Point, transform: Any): js.UndefOr[MapLonLatObject] = js.native
+  def transformToLatLon(point: typings.highcharts.modulesMapMod.highchartsAugmentingMod.ProjectedXY, transform: Any): js.UndefOr[MapLonLatObject] = js.native
   
   /**
     * A generic function to update any element of the chart. Elements can be
@@ -986,7 +934,8 @@ open class Chart_ protected () extends StObject {
     *
     * @param animation
     *        Whether to apply animation, and optionally animation
-    *        configuration.
+    *        configuration. When `undefined`, it applies the animation that is
+    *        set in the `chart.animation` option.
     *
     * @fires Highcharts.Chart#update
     * @fires Highcharts.Chart#afterUpdate

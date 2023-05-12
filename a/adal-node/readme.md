@@ -1,7 +1,7 @@
 
 # Scala.js typings for adal-node
 
-Typings are for version 0.2.3
+Typings are for version 0.2.4
 
 ## Library description:
 Windows Azure Active Directory Client Library for node

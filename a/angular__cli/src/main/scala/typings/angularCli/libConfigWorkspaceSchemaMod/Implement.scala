@@ -32,8 +32,8 @@ object Implement extends StObject {
   /* "CanDeactivate" */ val CanDeactivate: typings.angularCli.libConfigWorkspaceSchemaMod.Implement.CanDeactivate & String = js.native
   
   @js.native
-  sealed trait CanLoad
+  sealed trait CanMatch
     extends StObject
        with Implement
-  /* "CanLoad" */ val CanLoad: typings.angularCli.libConfigWorkspaceSchemaMod.Implement.CanLoad & String = js.native
+  /* "CanMatch" */ val CanMatch: typings.angularCli.libConfigWorkspaceSchemaMod.Implement.CanMatch & String = js.native
 }

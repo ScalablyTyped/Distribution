@@ -12,7 +12,7 @@ trait UntagResourceRequest extends StObject {
   var resourceArn: Arn
   
   /**
-    * The keys of the tags to remove.
+    * The keys of the tags you want to remove.
     */
   var tagKeys: TagKeyList
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "umami"
-version := "0.1-dt-20211202Z-99b45c"
+version := "0.1-dt-20230322Z-7022f2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Pick<mongodb.mongodb.MongoClientOptions, 'autoEncryption' | 'connectTimeoutMS' | 'directConnection' | 'driverInfo' | 'forceServerObjectId' | 'minHeartbeatFrequencyMS' | 'heartbeatFrequencyMS' | 'keepAlive' | 'keepAliveInitialDelay' | 'localThresholdMS' | 'logger' | 'maxConnecting' | 'maxIdleTimeMS' | 'maxPoolSize' | 'minPoolSize' | 'monitorCommands' | 'noDelay' | 'pkFactory' | 'promiseLibrary' | 'raw' | 'replicaSet' | 'retryReads' | 'retryWrites' | 'serverSelectionTimeoutMS' | 'socketTimeoutMS' | 'srvMaxHosts' | 'srvServiceName' | 'tlsAllowInvalidCertificates' | 'tlsAllowInvalidHostnames' | 'tlsInsecure' | 'waitQueueTimeoutMS' | 'zlibCompressionLevel'> */
+/* Inlined std.Pick<mongodb.mongodb.MongoClientOptions, 'autoEncryption' | 'connectTimeoutMS' | 'directConnection' | 'driverInfo' | 'forceServerObjectId' | 'minHeartbeatFrequencyMS' | 'heartbeatFrequencyMS' | 'keepAlive' | 'keepAliveInitialDelay' | 'localThresholdMS' | 'maxConnecting' | 'maxIdleTimeMS' | 'maxPoolSize' | 'minPoolSize' | 'monitorCommands' | 'noDelay' | 'pkFactory' | 'raw' | 'replicaSet' | 'retryReads' | 'retryWrites' | 'serverSelectionTimeoutMS' | 'socketTimeoutMS' | 'srvMaxHosts' | 'srvServiceName' | 'tlsAllowInvalidCertificates' | 'tlsAllowInvalidHostnames' | 'tlsInsecure' | 'waitQueueTimeoutMS' | 'zlibCompressionLevel'> */
 trait PickMongoClientOptionsaut extends StObject {
   
   var autoEncryption: js.UndefOr[Any] = js.undefined
@@ -25,8 +25,6 @@ trait PickMongoClientOptionsaut extends StObject {
   
   var localThresholdMS: js.UndefOr[Any] = js.undefined
   
-  var logger: js.UndefOr[Any] = js.undefined
-  
   var maxConnecting: js.UndefOr[Any] = js.undefined
   
   var maxIdleTimeMS: js.UndefOr[Any] = js.undefined
@@ -42,8 +40,6 @@ trait PickMongoClientOptionsaut extends StObject {
   var noDelay: js.UndefOr[Any] = js.undefined
   
   var pkFactory: js.UndefOr[Any] = js.undefined
-  
-  var promiseLibrary: js.UndefOr[Any] = js.undefined
   
   var raw: js.UndefOr[Any] = js.undefined
   
@@ -117,10 +113,6 @@ object PickMongoClientOptionsaut {
     
     inline def setLocalThresholdMSUndefined: Self = StObject.set(x, "localThresholdMS", js.undefined)
     
-    inline def setLogger(value: Any): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
-    
-    inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
-    
     inline def setMaxConnecting(value: Any): Self = StObject.set(x, "maxConnecting", value.asInstanceOf[js.Any])
     
     inline def setMaxConnectingUndefined: Self = StObject.set(x, "maxConnecting", js.undefined)
@@ -152,10 +144,6 @@ object PickMongoClientOptionsaut {
     inline def setPkFactory(value: Any): Self = StObject.set(x, "pkFactory", value.asInstanceOf[js.Any])
     
     inline def setPkFactoryUndefined: Self = StObject.set(x, "pkFactory", js.undefined)
-    
-    inline def setPromiseLibrary(value: Any): Self = StObject.set(x, "promiseLibrary", value.asInstanceOf[js.Any])
-    
-    inline def setPromiseLibraryUndefined: Self = StObject.set(x, "promiseLibrary", js.undefined)
     
     inline def setRaw(value: Any): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     

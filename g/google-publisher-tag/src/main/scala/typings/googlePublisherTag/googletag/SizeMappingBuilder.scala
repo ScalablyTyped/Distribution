@@ -17,23 +17,23 @@ trait SizeMappingBuilder extends StObject {
     * a single- or multi-size array representing the slot.
     *
     * @example
-    *   var mapping1 =
-    *       googletag.sizeMapping()
-    *                .addSize([1024, 768], [970, 250])
-    *                .addSize([980, 690], [728, 90])
-    *                .addSize([640, 480], 'fluid')
-    *                .addSize([0, 0], [88, 31]) // All viewports &lt; 640x480
-    *                .build();
+    *   // Mapping 1
+    *   googletag.sizeMapping()
+    *            .addSize([1024, 768], [970, 250])
+    *            .addSize([980, 690], [728, 90])
+    *            .addSize([640, 480], 'fluid')
+    *            .addSize([0, 0], [88, 31]) // All viewports &lt; 640x480
+    *            .build();
     *
-    *   var mapping2 =
-    *       googletag.sizeMapping()
-    *                .addSize([1024, 768], [970, 250])
-    *                .addSize([980, 690], [])
-    *                .addSize([640, 480], [120, 60])
-    *                .addSize([0, 0], [])
-    *                .build();
+    *   // Mapping 2
+    *   googletag.sizeMapping()
+    *            .addSize([1024, 768], [970, 250])
+    *            .addSize([980, 690], [])
+    *            .addSize([640, 480], [120, 60])
+    *            .addSize([0, 0], [])
+    *            .build();
     *
-    *   // mapping2 will not show any ads for the following viewport sizes:
+    *   // Mapping 2 will not show any ads for the following viewport sizes:
     *   // [1024, 768] > size >= [980, 690] and
     *   // [640, 480] > size >= [0, 0]
     *

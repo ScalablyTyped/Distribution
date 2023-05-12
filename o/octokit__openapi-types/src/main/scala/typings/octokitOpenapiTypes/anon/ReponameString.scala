@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ReponameString extends StObject {
   
-  /** The unique identifier of the migration. */
   var migration_id: Double
   
-  /** repo_name parameter */
   var repo_name: String
 }
 object ReponameString {

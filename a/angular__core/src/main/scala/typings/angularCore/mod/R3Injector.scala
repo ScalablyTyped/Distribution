@@ -17,7 +17,7 @@ trait R3Injector extends EnvironmentInjector {
   
   /* private */ var _onDestroyHooks: Any = js.native
   
-  /* private */ var assertNotDestroyed: Any = js.native
+  def assertNotDestroyed(): Unit = js.native
   
   /**
     * Flag indicating that this injector was previously destroyed.
@@ -30,7 +30,7 @@ trait R3Injector extends EnvironmentInjector {
   
   /* private */ var injectorDefTypes: Any = js.native
   
-  def onDestroy(callback: js.Function0[Unit]): Unit = js.native
+  def onDestroy(callback: js.Function0[Unit]): js.Function0[Unit] = js.native
   
   val parent: Injector = js.native
   
@@ -45,6 +45,8 @@ trait R3Injector extends EnvironmentInjector {
     * to prevent further searches.
     */
   /* private */ var records: Any = js.native
+  
+  /* private */ var removeOnDestroy: Any = js.native
   
   val scopes: Set[InjectorScope] = js.native
   

@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PauseAttributes extends StObject {
   
+  /** length - Length in seconds to pause */
   var length: js.UndefOr[Double] = js.undefined
 }
 object PauseAttributes {

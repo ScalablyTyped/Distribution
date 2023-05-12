@@ -13,5 +13,8 @@ object distTypesJwkEmbeddedMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def EmbeddedJWK(protectedHeader: JWSHeaderParameters, token: FlattenedJWSInput): js.Promise[KeyLike] = (^.asInstanceOf[js.Dynamic].applyDynamic("EmbeddedJWK")(protectedHeader.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KeyLike]]
+  inline def EmbeddedJWK[T /* <: KeyLike */](): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("EmbeddedJWK")().asInstanceOf[js.Promise[T]]
+  inline def EmbeddedJWK[T /* <: KeyLike */](protectedHeader: Unit, token: FlattenedJWSInput): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("EmbeddedJWK")(protectedHeader.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def EmbeddedJWK[T /* <: KeyLike */](protectedHeader: JWSHeaderParameters): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("EmbeddedJWK")(protectedHeader.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  inline def EmbeddedJWK[T /* <: KeyLike */](protectedHeader: JWSHeaderParameters, token: FlattenedJWSInput): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("EmbeddedJWK")(protectedHeader.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
 }

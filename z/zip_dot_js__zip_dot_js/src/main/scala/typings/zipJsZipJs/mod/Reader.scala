@@ -13,14 +13,14 @@ open class Reader[Type] protected ()
      with ReadableReader {
   /**
     * Creates the {@link Reader} instance
-    * 
+    *
     * @param value The data to read.
     */
   def this(value: Type) = this()
   
   /**
     * Reads a chunk of data
-    * 
+    *
     * @param index The byte index of the data to read.
     * @param length The length of the data to read in bytes.
     * @returns A promise resolving to a chunk of data.

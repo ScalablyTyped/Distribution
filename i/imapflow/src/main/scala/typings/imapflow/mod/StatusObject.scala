@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait StatusObject extends StObject {
   
-  var highestModSeq: js.UndefOr[js.BigInt] = js.undefined
+  var highestModseq: js.UndefOr[js.BigInt] = js.undefined
   
-  var message: js.UndefOr[Double] = js.undefined
+  var messages: js.UndefOr[Double] = js.undefined
   
   var path: String
   
@@ -30,13 +30,13 @@ object StatusObject {
   @scala.inline
   implicit open class MutableBuilder[Self <: StatusObject] (val x: Self) extends AnyVal {
     
-    inline def setHighestModSeq(value: js.BigInt): Self = StObject.set(x, "highestModSeq", value.asInstanceOf[js.Any])
+    inline def setHighestModseq(value: js.BigInt): Self = StObject.set(x, "highestModseq", value.asInstanceOf[js.Any])
     
-    inline def setHighestModSeqUndefined: Self = StObject.set(x, "highestModSeq", js.undefined)
+    inline def setHighestModseqUndefined: Self = StObject.set(x, "highestModseq", js.undefined)
     
-    inline def setMessage(value: Double): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessages(value: Double): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

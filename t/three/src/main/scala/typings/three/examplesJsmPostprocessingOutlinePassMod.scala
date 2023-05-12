@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.examplesJsmPostprocessingPassMod.FullScreenQuad
 import typings.three.examplesJsmPostprocessingPassMod.Pass
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcThreeMod.Camera
@@ -43,7 +44,7 @@ object examplesJsmPostprocessingOutlinePassMod {
     
     var edgeThickness: Double = js.native
     
-    var fsQuad: js.Object = js.native
+    var fsQuad: FullScreenQuad = js.native
     
     def getEdgeDetectionMaterial(): ShaderMaterial = js.native
     

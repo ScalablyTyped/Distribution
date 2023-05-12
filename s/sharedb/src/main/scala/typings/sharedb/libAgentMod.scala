@@ -30,6 +30,12 @@ object libAgentMod {
     /* CompleteClass */
     var backend: typings.sharedb.mod.^ = js.native
     
+    /* CompleteClass */
+    var clientId: String = js.native
+    
+    /* CompleteClass */
+    var connectTime: Double = js.native
+    
     /**
       * Object for custom use in middleware to store app-specific state for a
       * given client session. It is in memory only as long as the session is
@@ -45,6 +51,9 @@ object libAgentMod {
       */
     /* CompleteClass */
     override def send(message: JSONObject): Unit = js.native
+    
+    /* CompleteClass */
+    var src: String = js.native
     
     /* CompleteClass */
     var stream: Duplex & IsServer = js.native
@@ -66,6 +75,10 @@ object libAgentMod {
     
     var backend: typings.sharedb.mod.^
     
+    var clientId: String
+    
+    var connectTime: Double
+    
     /**
       * Object for custom use in middleware to store app-specific state for a
       * given client session. It is in memory only as long as the session is
@@ -80,17 +93,22 @@ object libAgentMod {
       */
     def send(message: JSONObject): Unit
     
+    var src: String
+    
     var stream: Duplex & IsServer
   }
   object Agent {
     
     inline def apply[TCustom](
       backend: typings.sharedb.mod.^,
+      clientId: String,
+      connectTime: Double,
       custom: TCustom,
       send: JSONObject => Unit,
+      src: String,
       stream: Duplex & IsServer
     ): Agent[TCustom] = {
-      val __obj = js.Dynamic.literal(backend = backend.asInstanceOf[js.Any], custom = custom.asInstanceOf[js.Any], send = js.Any.fromFunction1(send), stream = stream.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(backend = backend.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], connectTime = connectTime.asInstanceOf[js.Any], custom = custom.asInstanceOf[js.Any], send = js.Any.fromFunction1(send), src = src.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any])
       __obj.asInstanceOf[Agent[TCustom]]
     }
     
@@ -99,9 +117,15 @@ object libAgentMod {
       
       inline def setBackend(value: typings.sharedb.mod.^): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
       
+      inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+      
+      inline def setConnectTime(value: Double): Self = StObject.set(x, "connectTime", value.asInstanceOf[js.Any])
+      
       inline def setCustom(value: TCustom): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
       inline def setSend(value: JSONObject => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+      
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
       inline def setStream(value: Duplex & IsServer): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }

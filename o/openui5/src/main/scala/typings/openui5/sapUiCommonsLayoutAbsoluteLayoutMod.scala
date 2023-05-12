@@ -1,5 +1,6 @@
 package typings.openui5
 
+import typings.openui5.anon.Right
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -143,7 +144,7 @@ object sapUiCommonsLayoutAbsoluteLayoutMod {
       * JSON-like object which defines the position of the child control in the layout. The object is expected
       * to have one or more from the attribute set top, bottom, left, right; each with a value of type sap.ui.core.CSSSize.
       */
-    oPos: js.Object
+    oPos: Right
     ): this.type = js.native
     
     /**
@@ -151,10 +152,12 @@ object sapUiCommonsLayoutAbsoluteLayoutMod {
       *
       * @returns `this` Control reference for chaining.
       */
-    def addPosition(/**
+    def addPosition(
+      /**
       * Element which must be positioned in the layout.
       */
-    oPosition: js.Object): this.type = js.native
+    oPosition: typings.openui5.sapUiCoreControlMod.default
+    ): this.type = js.native
     
     /**
       * Destroys all aggregated position containers and their child controls. Returns 'this' to allow method
@@ -280,7 +283,7 @@ object sapUiCommonsLayoutAbsoluteLayoutMod {
       * JSON-like object which defines the position of the child control in the layout. The object is expected
       * to have one or more from the attribute set top, bottom, left, right; each with a value of type sap.ui.core.CSSSize.
       */
-    oPos: js.Object
+    oPos: Right
     ): this.type = js.native
     
     /**
@@ -292,7 +295,7 @@ object sapUiCommonsLayoutAbsoluteLayoutMod {
       /**
       * Element which must be positioned in the layout.
       */
-    oPosition: js.Object,
+    oPosition: typings.openui5.sapUiCoreControlMod.default,
       /**
       * Index of the element which is to be positioned.
       */
@@ -310,7 +313,7 @@ object sapUiCommonsLayoutAbsoluteLayoutMod {
       *
       * @returns Removed elements.
       */
-    def removeAllPositions(): js.Object = js.native
+    def removeAllPositions(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
       * Removes the given control and its corresponding position container from the aggregation named 'positions'.
@@ -320,7 +323,14 @@ object sapUiCommonsLayoutAbsoluteLayoutMod {
       * The content control to remove, its ID, or the index of the corresponding position container in the 'positions'
       * aggregation.
       */
-    oContent: js.Object
+    vContent: String
+    ): typings.openui5.sapUiCoreControlMod.default = js.native
+    def removeContent(
+      /**
+      * The content control to remove, its ID, or the index of the corresponding position container in the 'positions'
+      * aggregation.
+      */
+    vContent: typings.openui5.sapUiCoreControlMod.default
     ): typings.openui5.sapUiCoreControlMod.default = js.native
     
     /**
@@ -333,7 +343,7 @@ object sapUiCommonsLayoutAbsoluteLayoutMod {
       * Element which must be removed from the positions element within the layout.
       */
     vPosition: Any
-    ): js.Object = js.native
+    ): typings.openui5.sapUiCoreControlMod.default = js.native
     
     /**
       * Sets the `height` property.
@@ -345,6 +355,12 @@ object sapUiCommonsLayoutAbsoluteLayoutMod {
       */
     sHeight: String): this.type = js.native
     
+    def setHorizontalScrolling(
+      /**
+      * Object that contains settings for Horizontal scrolling.
+      */
+    oHorizontalScrolling: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Scrolling * / any */ String
+    ): this.type = js.native
     /**
       * Sets the `horizontalScrolling` property.
       *
@@ -354,7 +370,7 @@ object sapUiCommonsLayoutAbsoluteLayoutMod {
       /**
       * Object that contains settings for Horizontal scrolling.
       */
-    oHorizontalScrolling: js.Object
+    oHorizontalScrolling: Scrolling
     ): this.type = js.native
     
     /**
@@ -377,9 +393,15 @@ object sapUiCommonsLayoutAbsoluteLayoutMod {
       * JSON-like object which defines the position of the child control in the layout. The object is expected
       * to have one or more from the attribute set top, bottom, left, right; each with a value of type sap.ui.core.CSSSize.
       */
-    oPos: js.Object
+    oPos: Right
     ): Boolean = js.native
     
+    def setVerticalScrolling(
+      /**
+      * Object that contains settings for Vertical scrolling.
+      */
+    oVerticalScrolling: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Scrolling * / any */ String
+    ): this.type = js.native
     /**
       * Sets the `verticalScrolling` property.
       *
@@ -388,7 +410,7 @@ object sapUiCommonsLayoutAbsoluteLayoutMod {
     def setVerticalScrolling(/**
       * Object that contains settings for Vertical scrolling.
       */
-    oVerticalScrolling: js.Object): this.type = js.native
+    oVerticalScrolling: Scrolling): this.type = js.native
     
     /**
       * Sets the `width` property.

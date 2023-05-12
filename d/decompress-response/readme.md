@@ -1,7 +1,7 @@
 
 # Scala.js typings for decompress-response
 
-Typings are for version 8.0.0
+Typings are for version 8.1.0
 
 ## Library description:
 Decompress a HTTP response if needed

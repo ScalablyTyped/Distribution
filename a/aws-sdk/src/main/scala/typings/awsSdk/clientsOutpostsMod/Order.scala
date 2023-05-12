@@ -27,6 +27,11 @@ trait Order extends StObject {
   var OrderSubmissionDate: js.UndefOr[js.Date] = js.undefined
   
   /**
+    * The type of order.
+    */
+  var OrderType: js.UndefOr[typings.awsSdk.clientsOutpostsMod.OrderType] = js.undefined
+  
+  /**
     *  The ID of the Outpost in the order. 
     */
   var OutpostId: js.UndefOr[OutpostIdOnly] = js.undefined
@@ -35,6 +40,11 @@ trait Order extends StObject {
     * The payment option for the order.
     */
   var PaymentOption: js.UndefOr[typings.awsSdk.clientsOutpostsMod.PaymentOption] = js.undefined
+  
+  /**
+    * The payment term.
+    */
+  var PaymentTerm: js.UndefOr[typings.awsSdk.clientsOutpostsMod.PaymentTerm] = js.undefined
   
   /**
     * The status of the order.    PREPARING - Order is received and being prepared.    IN_PROGRESS - Order is either being built, shipped, or installed. To get more details, see the line item status.    COMPLETED - Order is complete.    CANCELLED - Order is cancelled.    ERROR - Customer should contact support.    The following status are deprecated: RECEIVED, PENDING, PROCESSING, INSTALLING, and FULFILLED.  
@@ -69,6 +79,10 @@ object Order {
     
     inline def setOrderSubmissionDateUndefined: Self = StObject.set(x, "OrderSubmissionDate", js.undefined)
     
+    inline def setOrderType(value: OrderType): Self = StObject.set(x, "OrderType", value.asInstanceOf[js.Any])
+    
+    inline def setOrderTypeUndefined: Self = StObject.set(x, "OrderType", js.undefined)
+    
     inline def setOutpostId(value: OutpostIdOnly): Self = StObject.set(x, "OutpostId", value.asInstanceOf[js.Any])
     
     inline def setOutpostIdUndefined: Self = StObject.set(x, "OutpostId", js.undefined)
@@ -76,6 +90,10 @@ object Order {
     inline def setPaymentOption(value: PaymentOption): Self = StObject.set(x, "PaymentOption", value.asInstanceOf[js.Any])
     
     inline def setPaymentOptionUndefined: Self = StObject.set(x, "PaymentOption", js.undefined)
+    
+    inline def setPaymentTerm(value: PaymentTerm): Self = StObject.set(x, "PaymentTerm", value.asInstanceOf[js.Any])
+    
+    inline def setPaymentTermUndefined: Self = StObject.set(x, "PaymentTerm", js.undefined)
     
     inline def setStatus(value: OrderStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,7 @@ object mod {
     def this(props: VerticalTimelineProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: VerticalTimelineProps, context: Any) = this()
   }
@@ -32,7 +32,7 @@ object mod {
     def this(props: VerticalTimelineElementProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: VerticalTimelineElementProps, context: Any) = this()
   }

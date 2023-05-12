@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class LoadBundleTask ()
   extends StObject
-     with Ma {
+     with Th {
   
   /**
     * Notifies all observers that bundle loading has completed, with a provided
@@ -31,7 +31,7 @@ open class LoadBundleTask ()
   var _lastProgress: BytesLoaded = js.native
   
   /* CompleteClass */
-  var _taskCompletionResolver: U = js.native
+  var _taskCompletionResolver: K = js.native
   
   /**
     * Notifies a progress update of loading a bundle.

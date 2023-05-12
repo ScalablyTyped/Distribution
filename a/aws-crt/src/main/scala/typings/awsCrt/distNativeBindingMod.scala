@@ -2,12 +2,33 @@ package typings.awsCrt
 
 import typings.awsCrt.anon.Payload
 import typings.awsCrt.distCommonHttpMod.HttpHeader
+import typings.awsCrt.distCommonMqtt5Mod.NegotiatedSettings
+import typings.awsCrt.distCommonMqtt5Mod.PublishCompletionResult
+import typings.awsCrt.distCommonMqtt5PacketMod.ConnackPacket
+import typings.awsCrt.distCommonMqtt5PacketMod.DisconnectPacket
+import typings.awsCrt.distCommonMqtt5PacketMod.PublishPacket
+import typings.awsCrt.distCommonMqtt5PacketMod.SubackPacket
+import typings.awsCrt.distCommonMqtt5PacketMod.SubscribePacket
+import typings.awsCrt.distCommonMqtt5PacketMod.UnsubackPacket
+import typings.awsCrt.distCommonMqtt5PacketMod.UnsubscribePacket
 import typings.awsCrt.distCommonMqttMod.OnMessageCallback
 import typings.awsCrt.distCommonMqttMod.QoS
 import typings.awsCrt.distNativeAuthMod.AwsSigningConfig
 import typings.awsCrt.distNativeAuthMod.CognitoCredentialsProviderConfig
+import typings.awsCrt.distNativeAuthMod.X509CredentialsConfig
+import typings.awsCrt.distNativeEventstreamMod.ActivateStreamOptions
+import typings.awsCrt.distNativeEventstreamMod.ClientConnection
+import typings.awsCrt.distNativeEventstreamMod.ClientConnectionOptions
+import typings.awsCrt.distNativeEventstreamMod.ClientStream
+import typings.awsCrt.distNativeEventstreamMod.Message
+import typings.awsCrt.distNativeEventstreamMod.ProtocolMessageOptions
+import typings.awsCrt.distNativeEventstreamMod.StreamMessageOptions
 import typings.awsCrt.distNativeIoMod.InputStream
 import typings.awsCrt.distNativeIoMod.TlsContextOptions.Pkcs11Options
+import typings.awsCrt.distNativeMqtt5Mod.ClientStatistics
+import typings.awsCrt.distNativeMqtt5Mod.Mqtt5Client
+import typings.awsCrt.distNativeMqtt5Mod.Mqtt5ClientConfig
+import typings.awsCrt.distNativeMqttMod.ConnectionStatistics
 import typings.node.bufferMod.global.Buffer
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
@@ -50,6 +71,9 @@ object distNativeBindingMod {
     
     inline def newStatic(access_key: StringLike, secret_key: StringLike): AwsCredentialsProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("newStatic")(access_key.asInstanceOf[js.Any], secret_key.asInstanceOf[js.Any])).asInstanceOf[AwsCredentialsProvider]
     inline def newStatic(access_key: StringLike, secret_key: StringLike, session_token: StringLike): AwsCredentialsProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("newStatic")(access_key.asInstanceOf[js.Any], secret_key.asInstanceOf[js.Any], session_token.asInstanceOf[js.Any])).asInstanceOf[AwsCredentialsProvider]
+    
+    inline def newX509(config: X509CredentialsConfig, tlsContext: NativeHandle): AwsCredentialsProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("newX509")(config.asInstanceOf[js.Any], tlsContext.asInstanceOf[js.Any])).asInstanceOf[AwsCredentialsProvider]
+    inline def newX509(config: X509CredentialsConfig, tlsContext: NativeHandle, httpProxyOptions: NativeHandle): AwsCredentialsProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("newX509")(config.asInstanceOf[js.Any], tlsContext.asInstanceOf[js.Any], httpProxyOptions.asInstanceOf[js.Any])).asInstanceOf[AwsCredentialsProvider]
   }
   
   @JSImport("aws-crt/dist/native/binding", "HttpHeaders")
@@ -109,6 +133,72 @@ object distNativeBindingMod {
   inline def errorCodeToName(error_code: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("error_code_to_name")(error_code.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def errorCodeToString(error_code: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("error_code_to_string")(error_code.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def eventStreamClientConnectionClose(connection: NativeHandle): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("event_stream_client_connection_close")(connection.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def eventStreamClientConnectionCloseInternal(connection: NativeHandle): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("event_stream_client_connection_close_internal")(connection.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def eventStreamClientConnectionConnect(
+    connection: NativeHandle,
+    completion_callback: js.Function2[/* connection */ ClientConnection, /* errorCode */ Double, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("event_stream_client_connection_connect")(connection.asInstanceOf[js.Any], completion_callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def eventStreamClientConnectionNew(
+    connection: ClientConnection,
+    config: ClientConnectionOptions,
+    on_disconnect_handler: js.Function2[/* connection */ ClientConnection, /* errorCode */ Double, Unit],
+    on_protocol_message_handler: js.Function2[/* connection */ ClientConnection, /* message */ Message, Unit]
+  ): NativeHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("event_stream_client_connection_new")(connection.asInstanceOf[js.Any], config.asInstanceOf[js.Any], on_disconnect_handler.asInstanceOf[js.Any], on_protocol_message_handler.asInstanceOf[js.Any])).asInstanceOf[NativeHandle]
+  inline def eventStreamClientConnectionNew(
+    connection: ClientConnection,
+    config: ClientConnectionOptions,
+    on_disconnect_handler: js.Function2[/* connection */ ClientConnection, /* errorCode */ Double, Unit],
+    on_protocol_message_handler: js.Function2[/* connection */ ClientConnection, /* message */ Message, Unit],
+    socket_options: Unit,
+    tls_ctx: NativeHandle
+  ): NativeHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("event_stream_client_connection_new")(connection.asInstanceOf[js.Any], config.asInstanceOf[js.Any], on_disconnect_handler.asInstanceOf[js.Any], on_protocol_message_handler.asInstanceOf[js.Any], socket_options.asInstanceOf[js.Any], tls_ctx.asInstanceOf[js.Any])).asInstanceOf[NativeHandle]
+  inline def eventStreamClientConnectionNew(
+    connection: ClientConnection,
+    config: ClientConnectionOptions,
+    on_disconnect_handler: js.Function2[/* connection */ ClientConnection, /* errorCode */ Double, Unit],
+    on_protocol_message_handler: js.Function2[/* connection */ ClientConnection, /* message */ Message, Unit],
+    socket_options: NativeHandle
+  ): NativeHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("event_stream_client_connection_new")(connection.asInstanceOf[js.Any], config.asInstanceOf[js.Any], on_disconnect_handler.asInstanceOf[js.Any], on_protocol_message_handler.asInstanceOf[js.Any], socket_options.asInstanceOf[js.Any])).asInstanceOf[NativeHandle]
+  inline def eventStreamClientConnectionNew(
+    connection: ClientConnection,
+    config: ClientConnectionOptions,
+    on_disconnect_handler: js.Function2[/* connection */ ClientConnection, /* errorCode */ Double, Unit],
+    on_protocol_message_handler: js.Function2[/* connection */ ClientConnection, /* message */ Message, Unit],
+    socket_options: NativeHandle,
+    tls_ctx: NativeHandle
+  ): NativeHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("event_stream_client_connection_new")(connection.asInstanceOf[js.Any], config.asInstanceOf[js.Any], on_disconnect_handler.asInstanceOf[js.Any], on_protocol_message_handler.asInstanceOf[js.Any], socket_options.asInstanceOf[js.Any], tls_ctx.asInstanceOf[js.Any])).asInstanceOf[NativeHandle]
+  
+  inline def eventStreamClientConnectionSendProtocolMessage(
+    connection: NativeHandle,
+    options: ProtocolMessageOptions,
+    completion_callback: js.Function1[/* errorCode */ Double, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("event_stream_client_connection_send_protocol_message")(connection.asInstanceOf[js.Any], options.asInstanceOf[js.Any], completion_callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def eventStreamClientStreamActivate(
+    stream: NativeHandle,
+    options: ActivateStreamOptions,
+    completion_callback: js.Function2[/* stream */ ClientStream, /* errorCode */ Double, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("event_stream_client_stream_activate")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any], completion_callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def eventStreamClientStreamClose(stream: NativeHandle): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("event_stream_client_stream_close")(stream.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def eventStreamClientStreamNew(
+    stream: ClientStream,
+    connection: NativeHandle,
+    on_stream_ended_handler: js.Function2[/* stream */ ClientStream, /* errorCode */ Double, Unit],
+    on_stream_message_handler: js.Function2[/* stream */ ClientStream, /* message */ Message, Unit]
+  ): NativeHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("event_stream_client_stream_new")(stream.asInstanceOf[js.Any], connection.asInstanceOf[js.Any], on_stream_ended_handler.asInstanceOf[js.Any], on_stream_message_handler.asInstanceOf[js.Any])).asInstanceOf[NativeHandle]
+  
+  inline def eventStreamClientStreamSendMessage(
+    stream: NativeHandle,
+    options: StreamMessageOptions,
+    completion_callback: js.Function1[/* errorCode */ Double, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("event_stream_client_stream_send_message")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any], completion_callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def hashDigest(handle: NativeHandle): js.typedarray.DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("hash_digest")(handle.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.DataView]
   inline def hashDigest(handle: NativeHandle, truncate_to: Double): js.typedarray.DataView = (^.asInstanceOf[js.Dynamic].applyDynamic("hash_digest")(handle.asInstanceOf[js.Any], truncate_to.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.DataView]
@@ -899,6 +989,498 @@ object distNativeBindingMod {
   
   inline def isAlpnAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is_alpn_available")().asInstanceOf[Boolean]
   
+  inline def mqtt5ClientClose(client: NativeHandle): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mqtt5_client_close")(client.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def mqtt5ClientGetQueueStatistics(client: NativeHandle): ClientStatistics = ^.asInstanceOf[js.Dynamic].applyDynamic("mqtt5_client_get_queue_statistics")(client.asInstanceOf[js.Any]).asInstanceOf[ClientStatistics]
+  
+  inline def mqtt5ClientNew(
+    client: Mqtt5Client,
+    config: Mqtt5ClientConfig,
+    on_stopped_event_handler: js.Function1[/* client */ Mqtt5Client, Unit],
+    on_attempt_connect_handler: js.Function1[/* client */ Mqtt5Client, Unit],
+    on_connection_success_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* connack */ ConnackPacket, 
+      /* settings */ NegotiatedSettings, 
+      Unit
+    ],
+    on_connection_failure_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* connack */ js.UndefOr[ConnackPacket], 
+      Unit
+    ],
+    on_disconnection_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* disconnect */ js.UndefOr[DisconnectPacket], 
+      Unit
+    ],
+    on_message_received_handler: js.Function2[/* client */ Mqtt5Client, /* message */ PublishPacket, Unit]
+  ): NativeHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("mqtt5_client_new")(client.asInstanceOf[js.Any], config.asInstanceOf[js.Any], on_stopped_event_handler.asInstanceOf[js.Any], on_attempt_connect_handler.asInstanceOf[js.Any], on_connection_success_handler.asInstanceOf[js.Any], on_connection_failure_handler.asInstanceOf[js.Any], on_disconnection_handler.asInstanceOf[js.Any], on_message_received_handler.asInstanceOf[js.Any])).asInstanceOf[NativeHandle]
+  inline def mqtt5ClientNew(
+    client: Mqtt5Client,
+    config: Mqtt5ClientConfig,
+    on_stopped_event_handler: js.Function1[/* client */ Mqtt5Client, Unit],
+    on_attempt_connect_handler: js.Function1[/* client */ Mqtt5Client, Unit],
+    on_connection_success_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* connack */ ConnackPacket, 
+      /* settings */ NegotiatedSettings, 
+      Unit
+    ],
+    on_connection_failure_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* connack */ js.UndefOr[ConnackPacket], 
+      Unit
+    ],
+    on_disconnection_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* disconnect */ js.UndefOr[DisconnectPacket], 
+      Unit
+    ],
+    on_message_received_handler: js.Function2[/* client */ Mqtt5Client, /* message */ PublishPacket, Unit],
+    client_bootstrap: Unit,
+    socket_options: Unit,
+    tls_ctx: Unit,
+    proxy_options: NativeHandle
+  ): NativeHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("mqtt5_client_new")(client.asInstanceOf[js.Any], config.asInstanceOf[js.Any], on_stopped_event_handler.asInstanceOf[js.Any], on_attempt_connect_handler.asInstanceOf[js.Any], on_connection_success_handler.asInstanceOf[js.Any], on_connection_failure_handler.asInstanceOf[js.Any], on_disconnection_handler.asInstanceOf[js.Any], on_message_received_handler.asInstanceOf[js.Any], client_bootstrap.asInstanceOf[js.Any], socket_options.asInstanceOf[js.Any], tls_ctx.asInstanceOf[js.Any], proxy_options.asInstanceOf[js.Any])).asInstanceOf[NativeHandle]
+  inline def mqtt5ClientNew(
+    client: Mqtt5Client,
+    config: Mqtt5ClientConfig,
+    on_stopped_event_handler: js.Function1[/* client */ Mqtt5Client, Unit],
+    on_attempt_connect_handler: js.Function1[/* client */ Mqtt5Client, Unit],
+    on_connection_success_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* connack */ ConnackPacket, 
+      /* settings */ NegotiatedSettings, 
+      Unit
+    ],
+    on_connection_failure_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* connack */ js.UndefOr[ConnackPacket], 
+      Unit
+    ],
+    on_disconnection_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* disconnect */ js.UndefOr[DisconnectPacket], 
+      Unit
+    ],
+    on_message_received_handler: js.Function2[/* client */ Mqtt5Client, /* message */ PublishPacket, Unit],
+    client_bootstrap: Unit,
+    socket_options: Unit,
+    tls_ctx: NativeHandle
+  ): NativeHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("mqtt5_client_new")(client.asInstanceOf[js.Any], config.asInstanceOf[js.Any], on_stopped_event_handler.asInstanceOf[js.Any], on_attempt_connect_handler.asInstanceOf[js.Any], on_connection_success_handler.asInstanceOf[js.Any], on_connection_failure_handler.asInstanceOf[js.Any], on_disconnection_handler.asInstanceOf[js.Any], on_message_received_handler.asInstanceOf[js.Any], client_bootstrap.asInstanceOf[js.Any], socket_options.asInstanceOf[js.Any], tls_ctx.asInstanceOf[js.Any])).asInstanceOf[NativeHandle]
+  inline def mqtt5ClientNew(
+    client: Mqtt5Client,
+    config: Mqtt5ClientConfig,
+    on_stopped_event_handler: js.Function1[/* client */ Mqtt5Client, Unit],
+    on_attempt_connect_handler: js.Function1[/* client */ Mqtt5Client, Unit],
+    on_connection_success_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* connack */ ConnackPacket, 
+      /* settings */ NegotiatedSettings, 
+      Unit
+    ],
+    on_connection_failure_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* connack */ js.UndefOr[ConnackPacket], 
+      Unit
+    ],
+    on_disconnection_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* disconnect */ js.UndefOr[DisconnectPacket], 
+      Unit
+    ],
+    on_message_received_handler: js.Function2[/* client */ Mqtt5Client, /* message */ PublishPacket, Unit],
+    client_bootstrap: Unit,
+    socket_options: Unit,
+    tls_ctx: NativeHandle,
+    proxy_options: NativeHandle
+  ): NativeHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("mqtt5_client_new")(client.asInstanceOf[js.Any], config.asInstanceOf[js.Any], on_stopped_event_handler.asInstanceOf[js.Any], on_attempt_connect_handler.asInstanceOf[js.Any], on_connection_success_handler.asInstanceOf[js.Any], on_connection_failure_handler.asInstanceOf[js.Any], on_disconnection_handler.asInstanceOf[js.Any], on_message_received_handler.asInstanceOf[js.Any], client_bootstrap.asInstanceOf[js.Any], socket_options.asInstanceOf[js.Any], tls_ctx.asInstanceOf[js.Any], proxy_options.asInstanceOf[js.Any])).asInstanceOf[NativeHandle]
+  inline def mqtt5ClientNew(
+    client: Mqtt5Client,
+    config: Mqtt5ClientConfig,
+    on_stopped_event_handler: js.Function1[/* client */ Mqtt5Client, Unit],
+    on_attempt_connect_handler: js.Function1[/* client */ Mqtt5Client, Unit],
+    on_connection_success_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* connack */ ConnackPacket, 
+      /* settings */ NegotiatedSettings, 
+      Unit
+    ],
+    on_connection_failure_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* connack */ js.UndefOr[ConnackPacket], 
+      Unit
+    ],
+    on_disconnection_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* disconnect */ js.UndefOr[DisconnectPacket], 
+      Unit
+    ],
+    on_message_received_handler: js.Function2[/* client */ Mqtt5Client, /* message */ PublishPacket, Unit],
+    client_bootstrap: Unit,
+    socket_options: NativeHandle
+  ): NativeHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("mqtt5_client_new")(client.asInstanceOf[js.Any], config.asInstanceOf[js.Any], on_stopped_event_handler.asInstanceOf[js.Any], on_attempt_connect_handler.asInstanceOf[js.Any], on_connection_success_handler.asInstanceOf[js.Any], on_connection_failure_handler.asInstanceOf[js.Any], on_disconnection_handler.asInstanceOf[js.Any], on_message_received_handler.asInstanceOf[js.Any], client_bootstrap.asInstanceOf[js.Any], socket_options.asInstanceOf[js.Any])).asInstanceOf[NativeHandle]
+  inline def mqtt5ClientNew(
+    client: Mqtt5Client,
+    config: Mqtt5ClientConfig,
+    on_stopped_event_handler: js.Function1[/* client */ Mqtt5Client, Unit],
+    on_attempt_connect_handler: js.Function1[/* client */ Mqtt5Client, Unit],
+    on_connection_success_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* connack */ ConnackPacket, 
+      /* settings */ NegotiatedSettings, 
+      Unit
+    ],
+    on_connection_failure_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* connack */ js.UndefOr[ConnackPacket], 
+      Unit
+    ],
+    on_disconnection_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* disconnect */ js.UndefOr[DisconnectPacket], 
+      Unit
+    ],
+    on_message_received_handler: js.Function2[/* client */ Mqtt5Client, /* message */ PublishPacket, Unit],
+    client_bootstrap: Unit,
+    socket_options: NativeHandle,
+    tls_ctx: Unit,
+    proxy_options: NativeHandle
+  ): NativeHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("mqtt5_client_new")(client.asInstanceOf[js.Any], config.asInstanceOf[js.Any], on_stopped_event_handler.asInstanceOf[js.Any], on_attempt_connect_handler.asInstanceOf[js.Any], on_connection_success_handler.asInstanceOf[js.Any], on_connection_failure_handler.asInstanceOf[js.Any], on_disconnection_handler.asInstanceOf[js.Any], on_message_received_handler.asInstanceOf[js.Any], client_bootstrap.asInstanceOf[js.Any], socket_options.asInstanceOf[js.Any], tls_ctx.asInstanceOf[js.Any], proxy_options.asInstanceOf[js.Any])).asInstanceOf[NativeHandle]
+  inline def mqtt5ClientNew(
+    client: Mqtt5Client,
+    config: Mqtt5ClientConfig,
+    on_stopped_event_handler: js.Function1[/* client */ Mqtt5Client, Unit],
+    on_attempt_connect_handler: js.Function1[/* client */ Mqtt5Client, Unit],
+    on_connection_success_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* connack */ ConnackPacket, 
+      /* settings */ NegotiatedSettings, 
+      Unit
+    ],
+    on_connection_failure_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* connack */ js.UndefOr[ConnackPacket], 
+      Unit
+    ],
+    on_disconnection_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* disconnect */ js.UndefOr[DisconnectPacket], 
+      Unit
+    ],
+    on_message_received_handler: js.Function2[/* client */ Mqtt5Client, /* message */ PublishPacket, Unit],
+    client_bootstrap: Unit,
+    socket_options: NativeHandle,
+    tls_ctx: NativeHandle
+  ): NativeHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("mqtt5_client_new")(client.asInstanceOf[js.Any], config.asInstanceOf[js.Any], on_stopped_event_handler.asInstanceOf[js.Any], on_attempt_connect_handler.asInstanceOf[js.Any], on_connection_success_handler.asInstanceOf[js.Any], on_connection_failure_handler.asInstanceOf[js.Any], on_disconnection_handler.asInstanceOf[js.Any], on_message_received_handler.asInstanceOf[js.Any], client_bootstrap.asInstanceOf[js.Any], socket_options.asInstanceOf[js.Any], tls_ctx.asInstanceOf[js.Any])).asInstanceOf[NativeHandle]
+  inline def mqtt5ClientNew(
+    client: Mqtt5Client,
+    config: Mqtt5ClientConfig,
+    on_stopped_event_handler: js.Function1[/* client */ Mqtt5Client, Unit],
+    on_attempt_connect_handler: js.Function1[/* client */ Mqtt5Client, Unit],
+    on_connection_success_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* connack */ ConnackPacket, 
+      /* settings */ NegotiatedSettings, 
+      Unit
+    ],
+    on_connection_failure_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* connack */ js.UndefOr[ConnackPacket], 
+      Unit
+    ],
+    on_disconnection_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* disconnect */ js.UndefOr[DisconnectPacket], 
+      Unit
+    ],
+    on_message_received_handler: js.Function2[/* client */ Mqtt5Client, /* message */ PublishPacket, Unit],
+    client_bootstrap: Unit,
+    socket_options: NativeHandle,
+    tls_ctx: NativeHandle,
+    proxy_options: NativeHandle
+  ): NativeHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("mqtt5_client_new")(client.asInstanceOf[js.Any], config.asInstanceOf[js.Any], on_stopped_event_handler.asInstanceOf[js.Any], on_attempt_connect_handler.asInstanceOf[js.Any], on_connection_success_handler.asInstanceOf[js.Any], on_connection_failure_handler.asInstanceOf[js.Any], on_disconnection_handler.asInstanceOf[js.Any], on_message_received_handler.asInstanceOf[js.Any], client_bootstrap.asInstanceOf[js.Any], socket_options.asInstanceOf[js.Any], tls_ctx.asInstanceOf[js.Any], proxy_options.asInstanceOf[js.Any])).asInstanceOf[NativeHandle]
+  inline def mqtt5ClientNew(
+    client: Mqtt5Client,
+    config: Mqtt5ClientConfig,
+    on_stopped_event_handler: js.Function1[/* client */ Mqtt5Client, Unit],
+    on_attempt_connect_handler: js.Function1[/* client */ Mqtt5Client, Unit],
+    on_connection_success_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* connack */ ConnackPacket, 
+      /* settings */ NegotiatedSettings, 
+      Unit
+    ],
+    on_connection_failure_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* connack */ js.UndefOr[ConnackPacket], 
+      Unit
+    ],
+    on_disconnection_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* disconnect */ js.UndefOr[DisconnectPacket], 
+      Unit
+    ],
+    on_message_received_handler: js.Function2[/* client */ Mqtt5Client, /* message */ PublishPacket, Unit],
+    client_bootstrap: NativeHandle
+  ): NativeHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("mqtt5_client_new")(client.asInstanceOf[js.Any], config.asInstanceOf[js.Any], on_stopped_event_handler.asInstanceOf[js.Any], on_attempt_connect_handler.asInstanceOf[js.Any], on_connection_success_handler.asInstanceOf[js.Any], on_connection_failure_handler.asInstanceOf[js.Any], on_disconnection_handler.asInstanceOf[js.Any], on_message_received_handler.asInstanceOf[js.Any], client_bootstrap.asInstanceOf[js.Any])).asInstanceOf[NativeHandle]
+  inline def mqtt5ClientNew(
+    client: Mqtt5Client,
+    config: Mqtt5ClientConfig,
+    on_stopped_event_handler: js.Function1[/* client */ Mqtt5Client, Unit],
+    on_attempt_connect_handler: js.Function1[/* client */ Mqtt5Client, Unit],
+    on_connection_success_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* connack */ ConnackPacket, 
+      /* settings */ NegotiatedSettings, 
+      Unit
+    ],
+    on_connection_failure_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* connack */ js.UndefOr[ConnackPacket], 
+      Unit
+    ],
+    on_disconnection_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* disconnect */ js.UndefOr[DisconnectPacket], 
+      Unit
+    ],
+    on_message_received_handler: js.Function2[/* client */ Mqtt5Client, /* message */ PublishPacket, Unit],
+    client_bootstrap: NativeHandle,
+    socket_options: Unit,
+    tls_ctx: Unit,
+    proxy_options: NativeHandle
+  ): NativeHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("mqtt5_client_new")(client.asInstanceOf[js.Any], config.asInstanceOf[js.Any], on_stopped_event_handler.asInstanceOf[js.Any], on_attempt_connect_handler.asInstanceOf[js.Any], on_connection_success_handler.asInstanceOf[js.Any], on_connection_failure_handler.asInstanceOf[js.Any], on_disconnection_handler.asInstanceOf[js.Any], on_message_received_handler.asInstanceOf[js.Any], client_bootstrap.asInstanceOf[js.Any], socket_options.asInstanceOf[js.Any], tls_ctx.asInstanceOf[js.Any], proxy_options.asInstanceOf[js.Any])).asInstanceOf[NativeHandle]
+  inline def mqtt5ClientNew(
+    client: Mqtt5Client,
+    config: Mqtt5ClientConfig,
+    on_stopped_event_handler: js.Function1[/* client */ Mqtt5Client, Unit],
+    on_attempt_connect_handler: js.Function1[/* client */ Mqtt5Client, Unit],
+    on_connection_success_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* connack */ ConnackPacket, 
+      /* settings */ NegotiatedSettings, 
+      Unit
+    ],
+    on_connection_failure_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* connack */ js.UndefOr[ConnackPacket], 
+      Unit
+    ],
+    on_disconnection_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* disconnect */ js.UndefOr[DisconnectPacket], 
+      Unit
+    ],
+    on_message_received_handler: js.Function2[/* client */ Mqtt5Client, /* message */ PublishPacket, Unit],
+    client_bootstrap: NativeHandle,
+    socket_options: Unit,
+    tls_ctx: NativeHandle
+  ): NativeHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("mqtt5_client_new")(client.asInstanceOf[js.Any], config.asInstanceOf[js.Any], on_stopped_event_handler.asInstanceOf[js.Any], on_attempt_connect_handler.asInstanceOf[js.Any], on_connection_success_handler.asInstanceOf[js.Any], on_connection_failure_handler.asInstanceOf[js.Any], on_disconnection_handler.asInstanceOf[js.Any], on_message_received_handler.asInstanceOf[js.Any], client_bootstrap.asInstanceOf[js.Any], socket_options.asInstanceOf[js.Any], tls_ctx.asInstanceOf[js.Any])).asInstanceOf[NativeHandle]
+  inline def mqtt5ClientNew(
+    client: Mqtt5Client,
+    config: Mqtt5ClientConfig,
+    on_stopped_event_handler: js.Function1[/* client */ Mqtt5Client, Unit],
+    on_attempt_connect_handler: js.Function1[/* client */ Mqtt5Client, Unit],
+    on_connection_success_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* connack */ ConnackPacket, 
+      /* settings */ NegotiatedSettings, 
+      Unit
+    ],
+    on_connection_failure_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* connack */ js.UndefOr[ConnackPacket], 
+      Unit
+    ],
+    on_disconnection_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* disconnect */ js.UndefOr[DisconnectPacket], 
+      Unit
+    ],
+    on_message_received_handler: js.Function2[/* client */ Mqtt5Client, /* message */ PublishPacket, Unit],
+    client_bootstrap: NativeHandle,
+    socket_options: Unit,
+    tls_ctx: NativeHandle,
+    proxy_options: NativeHandle
+  ): NativeHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("mqtt5_client_new")(client.asInstanceOf[js.Any], config.asInstanceOf[js.Any], on_stopped_event_handler.asInstanceOf[js.Any], on_attempt_connect_handler.asInstanceOf[js.Any], on_connection_success_handler.asInstanceOf[js.Any], on_connection_failure_handler.asInstanceOf[js.Any], on_disconnection_handler.asInstanceOf[js.Any], on_message_received_handler.asInstanceOf[js.Any], client_bootstrap.asInstanceOf[js.Any], socket_options.asInstanceOf[js.Any], tls_ctx.asInstanceOf[js.Any], proxy_options.asInstanceOf[js.Any])).asInstanceOf[NativeHandle]
+  inline def mqtt5ClientNew(
+    client: Mqtt5Client,
+    config: Mqtt5ClientConfig,
+    on_stopped_event_handler: js.Function1[/* client */ Mqtt5Client, Unit],
+    on_attempt_connect_handler: js.Function1[/* client */ Mqtt5Client, Unit],
+    on_connection_success_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* connack */ ConnackPacket, 
+      /* settings */ NegotiatedSettings, 
+      Unit
+    ],
+    on_connection_failure_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* connack */ js.UndefOr[ConnackPacket], 
+      Unit
+    ],
+    on_disconnection_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* disconnect */ js.UndefOr[DisconnectPacket], 
+      Unit
+    ],
+    on_message_received_handler: js.Function2[/* client */ Mqtt5Client, /* message */ PublishPacket, Unit],
+    client_bootstrap: NativeHandle,
+    socket_options: NativeHandle
+  ): NativeHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("mqtt5_client_new")(client.asInstanceOf[js.Any], config.asInstanceOf[js.Any], on_stopped_event_handler.asInstanceOf[js.Any], on_attempt_connect_handler.asInstanceOf[js.Any], on_connection_success_handler.asInstanceOf[js.Any], on_connection_failure_handler.asInstanceOf[js.Any], on_disconnection_handler.asInstanceOf[js.Any], on_message_received_handler.asInstanceOf[js.Any], client_bootstrap.asInstanceOf[js.Any], socket_options.asInstanceOf[js.Any])).asInstanceOf[NativeHandle]
+  inline def mqtt5ClientNew(
+    client: Mqtt5Client,
+    config: Mqtt5ClientConfig,
+    on_stopped_event_handler: js.Function1[/* client */ Mqtt5Client, Unit],
+    on_attempt_connect_handler: js.Function1[/* client */ Mqtt5Client, Unit],
+    on_connection_success_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* connack */ ConnackPacket, 
+      /* settings */ NegotiatedSettings, 
+      Unit
+    ],
+    on_connection_failure_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* connack */ js.UndefOr[ConnackPacket], 
+      Unit
+    ],
+    on_disconnection_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* disconnect */ js.UndefOr[DisconnectPacket], 
+      Unit
+    ],
+    on_message_received_handler: js.Function2[/* client */ Mqtt5Client, /* message */ PublishPacket, Unit],
+    client_bootstrap: NativeHandle,
+    socket_options: NativeHandle,
+    tls_ctx: Unit,
+    proxy_options: NativeHandle
+  ): NativeHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("mqtt5_client_new")(client.asInstanceOf[js.Any], config.asInstanceOf[js.Any], on_stopped_event_handler.asInstanceOf[js.Any], on_attempt_connect_handler.asInstanceOf[js.Any], on_connection_success_handler.asInstanceOf[js.Any], on_connection_failure_handler.asInstanceOf[js.Any], on_disconnection_handler.asInstanceOf[js.Any], on_message_received_handler.asInstanceOf[js.Any], client_bootstrap.asInstanceOf[js.Any], socket_options.asInstanceOf[js.Any], tls_ctx.asInstanceOf[js.Any], proxy_options.asInstanceOf[js.Any])).asInstanceOf[NativeHandle]
+  inline def mqtt5ClientNew(
+    client: Mqtt5Client,
+    config: Mqtt5ClientConfig,
+    on_stopped_event_handler: js.Function1[/* client */ Mqtt5Client, Unit],
+    on_attempt_connect_handler: js.Function1[/* client */ Mqtt5Client, Unit],
+    on_connection_success_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* connack */ ConnackPacket, 
+      /* settings */ NegotiatedSettings, 
+      Unit
+    ],
+    on_connection_failure_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* connack */ js.UndefOr[ConnackPacket], 
+      Unit
+    ],
+    on_disconnection_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* disconnect */ js.UndefOr[DisconnectPacket], 
+      Unit
+    ],
+    on_message_received_handler: js.Function2[/* client */ Mqtt5Client, /* message */ PublishPacket, Unit],
+    client_bootstrap: NativeHandle,
+    socket_options: NativeHandle,
+    tls_ctx: NativeHandle
+  ): NativeHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("mqtt5_client_new")(client.asInstanceOf[js.Any], config.asInstanceOf[js.Any], on_stopped_event_handler.asInstanceOf[js.Any], on_attempt_connect_handler.asInstanceOf[js.Any], on_connection_success_handler.asInstanceOf[js.Any], on_connection_failure_handler.asInstanceOf[js.Any], on_disconnection_handler.asInstanceOf[js.Any], on_message_received_handler.asInstanceOf[js.Any], client_bootstrap.asInstanceOf[js.Any], socket_options.asInstanceOf[js.Any], tls_ctx.asInstanceOf[js.Any])).asInstanceOf[NativeHandle]
+  inline def mqtt5ClientNew(
+    client: Mqtt5Client,
+    config: Mqtt5ClientConfig,
+    on_stopped_event_handler: js.Function1[/* client */ Mqtt5Client, Unit],
+    on_attempt_connect_handler: js.Function1[/* client */ Mqtt5Client, Unit],
+    on_connection_success_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* connack */ ConnackPacket, 
+      /* settings */ NegotiatedSettings, 
+      Unit
+    ],
+    on_connection_failure_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* connack */ js.UndefOr[ConnackPacket], 
+      Unit
+    ],
+    on_disconnection_handler: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* disconnect */ js.UndefOr[DisconnectPacket], 
+      Unit
+    ],
+    on_message_received_handler: js.Function2[/* client */ Mqtt5Client, /* message */ PublishPacket, Unit],
+    client_bootstrap: NativeHandle,
+    socket_options: NativeHandle,
+    tls_ctx: NativeHandle,
+    proxy_options: NativeHandle
+  ): NativeHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("mqtt5_client_new")(client.asInstanceOf[js.Any], config.asInstanceOf[js.Any], on_stopped_event_handler.asInstanceOf[js.Any], on_attempt_connect_handler.asInstanceOf[js.Any], on_connection_success_handler.asInstanceOf[js.Any], on_connection_failure_handler.asInstanceOf[js.Any], on_disconnection_handler.asInstanceOf[js.Any], on_message_received_handler.asInstanceOf[js.Any], client_bootstrap.asInstanceOf[js.Any], socket_options.asInstanceOf[js.Any], tls_ctx.asInstanceOf[js.Any], proxy_options.asInstanceOf[js.Any])).asInstanceOf[NativeHandle]
+  
+  inline def mqtt5ClientPublish(
+    client: NativeHandle,
+    publish_packet: PublishPacket,
+    on_resolution: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* result */ PublishCompletionResult, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mqtt5_client_publish")(client.asInstanceOf[js.Any], publish_packet.asInstanceOf[js.Any], on_resolution.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def mqtt5ClientStart(client: NativeHandle): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mqtt5_client_start")(client.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def mqtt5ClientStop(client: NativeHandle): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mqtt5_client_stop")(client.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def mqtt5ClientStop(client: NativeHandle, disconnect_packet: DisconnectPacket): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mqtt5_client_stop")(client.asInstanceOf[js.Any], disconnect_packet.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def mqtt5ClientSubscribe(
+    client: NativeHandle,
+    subscribe_packet: SubscribePacket,
+    on_resolution: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* suback */ js.UndefOr[SubackPacket], 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mqtt5_client_subscribe")(client.asInstanceOf[js.Any], subscribe_packet.asInstanceOf[js.Any], on_resolution.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def mqtt5ClientUnsubscribe(
+    client: NativeHandle,
+    unsubscribe_packet: UnsubscribePacket,
+    on_resolution: js.Function3[
+      /* client */ Mqtt5Client, 
+      /* errorCode */ Double, 
+      /* unsuback */ js.UndefOr[UnsubackPacket], 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mqtt5_client_unsubscribe")(client.asInstanceOf[js.Any], unsubscribe_packet.asInstanceOf[js.Any], on_resolution.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   inline def mqttClientConnectionClose(connection: NativeHandle): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mqtt_client_connection_close")(connection.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def mqttClientConnectionConnect(
@@ -916,6 +1498,8 @@ object distNativeBindingMod {
   
   inline def mqttClientConnectionDisconnect(connection: NativeHandle): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mqtt_client_connection_disconnect")(connection.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def mqttClientConnectionDisconnect(connection: NativeHandle, on_disconnect: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mqtt_client_connection_disconnect")(connection.asInstanceOf[js.Any], on_disconnect.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def mqttClientConnectionGetQueueStatistics(connection: NativeHandle): ConnectionStatistics = ^.asInstanceOf[js.Dynamic].applyDynamic("mqtt_client_connection_get_queue_statistics")(connection.asInstanceOf[js.Any]).asInstanceOf[ConnectionStatistics]
   
   inline def mqttClientConnectionNew(
     client: NativeHandle,

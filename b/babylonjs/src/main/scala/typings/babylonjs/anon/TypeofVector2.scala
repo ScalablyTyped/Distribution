@@ -249,6 +249,17 @@ trait TypeofVector2
   ): Boolean = js.native
   
   /**
+    * Returns a new Vector2 with random values between min and max
+    * @param min the minimum random value
+    * @param max the maximum random value
+    * @returns a Vector2 with random values between min and max
+    */
+  def Random(): Vector2 = js.native
+  def Random(min: Double): Vector2 = js.native
+  def Random(min: Double, max: Double): Vector2 = js.native
+  def Random(min: Unit, max: Double): Vector2 = js.native
+  
+  /**
     * Gets a new Vector2 set with the transformed coordinates of the given vector by the given transformation matrix
     * Example Playground https://playground.babylonjs.com/#QYBWV4#17
     * @param vector defines the vector to transform

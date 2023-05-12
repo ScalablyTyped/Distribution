@@ -29,12 +29,6 @@ trait UpdateUpdateProperties extends StObject {
   var pinned: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Whether the tab should be selected.
-    * @deprecated Please use _highlighted_.
-    */
-  var selected: js.UndefOr[Boolean] = js.undefined
-  
-  /**
     * The ID of this tab's successor. If specified, the successor tab must be in the same window as this tab.
     */
   var successorTabId: js.UndefOr[Double] = js.undefined
@@ -75,10 +69,6 @@ object UpdateUpdateProperties {
     inline def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
     
     inline def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
-    
-    inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
-    
-    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
     inline def setSuccessorTabId(value: Double): Self = StObject.set(x, "successorTabId", value.asInstanceOf[js.Any])
     

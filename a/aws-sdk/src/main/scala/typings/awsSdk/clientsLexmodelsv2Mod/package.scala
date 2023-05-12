@@ -63,6 +63,8 @@ type BotAliasId = java.lang.String
 
 type BotAliasLocaleSettingsMap = StringDictionary[BotAliasLocaleSettings]
 
+type BotAliasName = java.lang.String
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Creating_
   - typings.awsSdk.awsSdkStrings.Available_
@@ -74,11 +76,17 @@ type BotAliasStatus = _BotAliasStatus | java.lang.String
 
 type BotAliasSummaryList = js.Array[BotAliasSummary]
 
-type BotFilterName = BotName | java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.BotName
+  - typings.awsSdk.awsSdkStrings.BotType
+  - java.lang.String
+*/
+type BotFilterName = _BotFilterName | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CO
   - typings.awsSdk.awsSdkStrings.EQ
+  - typings.awsSdk.awsSdkStrings.NE
   - java.lang.String
 */
 type BotFilterOperator = _BotFilterOperator | java.lang.String
@@ -118,6 +126,8 @@ type BotLocaleStatus = _BotLocaleStatus | java.lang.String
 
 type BotLocaleSummaryList = js.Array[BotLocaleSummary]
 
+type BotMembers = js.Array[BotMember]
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Processing_
   - typings.awsSdk.awsSdkStrings.Deleting_
@@ -144,11 +154,19 @@ type BotSortAttribute = BotName | java.lang.String
   - typings.awsSdk.awsSdkStrings.Failed_
   - typings.awsSdk.awsSdkStrings.Versioning
   - typings.awsSdk.awsSdkStrings.Importing_
+  - typings.awsSdk.awsSdkStrings.Updating_
   - java.lang.String
 */
 type BotStatus = _BotStatus | java.lang.String
 
 type BotSummaryList = js.Array[BotSummary]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Bot_
+  - typings.awsSdk.awsSdkStrings.BotNetwork
+  - java.lang.String
+*/
+type BotType = _BotType | java.lang.String
 
 type BotVersion = java.lang.String
 
@@ -440,6 +458,8 @@ type Operation = java.lang.String
 type OperationList = js.Array[Operation]
 
 type OutputContextsList = js.Array[OutputContext]
+
+type ParentBotNetworks = js.Array[ParentBotNetwork]
 
 type Phrase = java.lang.String
 

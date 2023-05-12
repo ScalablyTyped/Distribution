@@ -12,6 +12,11 @@ trait WorkspaceBundle extends StObject {
   var BundleId: js.UndefOr[typings.awsSdk.clientsWorkspacesMod.BundleId] = js.undefined
   
   /**
+    * The type of WorkSpace bundle.
+    */
+  var BundleType: js.UndefOr[typings.awsSdk.clientsWorkspacesMod.BundleType] = js.undefined
+  
+  /**
     * The compute type of the bundle. For more information, see Amazon WorkSpaces Bundles.
     */
   var ComputeType: js.UndefOr[typings.awsSdk.clientsWorkspacesMod.ComputeType] = js.undefined
@@ -52,6 +57,11 @@ trait WorkspaceBundle extends StObject {
   var RootStorage: js.UndefOr[typings.awsSdk.clientsWorkspacesMod.RootStorage] = js.undefined
   
   /**
+    * The state of the WorkSpace bundle.
+    */
+  var State: js.UndefOr[WorkspaceBundleState] = js.undefined
+  
+  /**
     * The size of the user volume.
     */
   var UserStorage: js.UndefOr[typings.awsSdk.clientsWorkspacesMod.UserStorage] = js.undefined
@@ -69,6 +79,10 @@ object WorkspaceBundle {
     inline def setBundleId(value: BundleId): Self = StObject.set(x, "BundleId", value.asInstanceOf[js.Any])
     
     inline def setBundleIdUndefined: Self = StObject.set(x, "BundleId", js.undefined)
+    
+    inline def setBundleType(value: BundleType): Self = StObject.set(x, "BundleType", value.asInstanceOf[js.Any])
+    
+    inline def setBundleTypeUndefined: Self = StObject.set(x, "BundleType", js.undefined)
     
     inline def setComputeType(value: ComputeType): Self = StObject.set(x, "ComputeType", value.asInstanceOf[js.Any])
     
@@ -101,6 +115,10 @@ object WorkspaceBundle {
     inline def setRootStorage(value: RootStorage): Self = StObject.set(x, "RootStorage", value.asInstanceOf[js.Any])
     
     inline def setRootStorageUndefined: Self = StObject.set(x, "RootStorage", js.undefined)
+    
+    inline def setState(value: WorkspaceBundleState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     inline def setUserStorage(value: UserStorage): Self = StObject.set(x, "UserStorage", value.asInstanceOf[js.Any])
     

@@ -1,5 +1,8 @@
 package typings.dc.mod
 
+import typings.d3Geo.mod.GeoPath_
+import typings.d3Geo.mod.GeoPermissibleObjects
+import typings.d3Geo.mod.GeoProjection_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,19 +15,14 @@ trait GeoChoroplethChart
   
   def geoJsons(): js.Array[GeoChoroplethLayer] = js.native
   
-  def geoPath(): Any = js.native
+  def geoPath(): GeoPath_[Any, GeoPermissibleObjects] = js.native
   
   def overlayGeoJson(json: Any, name: String, keyAccessor: Accessor[Any, Any]): GeoChoroplethChart = js.native
   
-  def projection(): Any = js.native
-  def projection(
-    t: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.geo.Projection */ Any
-  ): GeoChoroplethChart = js.native
+  def projection(): GeoProjection_ = js.native
+  def projection(t: GeoProjection_): GeoChoroplethChart = js.native
   @JSName("projection")
-  var projection_Original: IGetSet[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.geo.Projection */ Any, 
-    GeoChoroplethChart
-  ] = js.native
+  var projection_Original: IGetSet[GeoProjection_, GeoChoroplethChart] = js.native
   
   def removeGeoJson(name: String): GeoChoroplethChart = js.native
 }

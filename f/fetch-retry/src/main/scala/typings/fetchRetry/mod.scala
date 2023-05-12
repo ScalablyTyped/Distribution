@@ -1,7 +1,6 @@
 package typings.fetchRetry
 
 import typings.fetchRetry.anon.FnCall
-import typings.std.RequestInfo
 import typings.std.RequestInit
 import typings.std.Response
 import org.scalablytyped.runtime.StObject
@@ -15,20 +14,20 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def default(fetch: FnCall): js.Function2[
-    /* input */ RequestInfo, 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<fetch-retry.anon.FnCall>[0] */ /* input */ js.Any, 
     /* init */ js.UndefOr[RequestInitWithRetry], 
     js.Promise[Response]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fetch.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* input */ RequestInfo, 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<fetch-retry.anon.FnCall>[0] */ /* input */ js.Any, 
     /* init */ js.UndefOr[RequestInitWithRetry], 
     js.Promise[Response]
   ]]
   inline def default(fetch: FnCall, defaults: js.Object): js.Function2[
-    /* input */ RequestInfo, 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<fetch-retry.anon.FnCall>[0] */ /* input */ js.Any, 
     /* init */ js.UndefOr[RequestInitWithRetry], 
     js.Promise[Response]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fetch.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
-    /* input */ RequestInfo, 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<fetch-retry.anon.FnCall>[0] */ /* input */ js.Any, 
     /* init */ js.UndefOr[RequestInitWithRetry], 
     js.Promise[Response]
   ]]

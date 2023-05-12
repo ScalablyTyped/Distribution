@@ -34,18 +34,18 @@ trait ExtremesObject extends StObject {
     * The user defined maximum, either from the `max` option or from a zoom or
     * `setExtremes` action.
     */
-  var userMax: Double
+  var userMax: js.UndefOr[Double] = js.undefined
   
   /**
     * The user defined minimum, either from the `min` option or from a zoom or
     * `setExtremes` action.
     */
-  var userMin: Double
+  var userMin: js.UndefOr[Double] = js.undefined
 }
 object ExtremesObject {
   
-  inline def apply(dataMax: Double, dataMin: Double, max: Double, min: Double, userMax: Double, userMin: Double): ExtremesObject = {
-    val __obj = js.Dynamic.literal(dataMax = dataMax.asInstanceOf[js.Any], dataMin = dataMin.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], userMax = userMax.asInstanceOf[js.Any], userMin = userMin.asInstanceOf[js.Any])
+  inline def apply(dataMax: Double, dataMin: Double, max: Double, min: Double): ExtremesObject = {
+    val __obj = js.Dynamic.literal(dataMax = dataMax.asInstanceOf[js.Any], dataMin = dataMin.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtremesObject]
   }
   
@@ -62,6 +62,10 @@ object ExtremesObject {
     
     inline def setUserMax(value: Double): Self = StObject.set(x, "userMax", value.asInstanceOf[js.Any])
     
+    inline def setUserMaxUndefined: Self = StObject.set(x, "userMax", js.undefined)
+    
     inline def setUserMin(value: Double): Self = StObject.set(x, "userMin", value.asInstanceOf[js.Any])
+    
+    inline def setUserMinUndefined: Self = StObject.set(x, "userMin", js.undefined)
   }
 }

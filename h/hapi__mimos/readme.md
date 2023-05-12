@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__mimos
 
-Typings are for version 7.0.0
+Typings are for version 7.0.1
 
 ## Library description:
 Mime database interface

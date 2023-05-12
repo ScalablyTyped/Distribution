@@ -9,7 +9,9 @@ import typings.babylonjs.mathsMathDotvectorMod.Quaternion
 import typings.babylonjs.mathsMathDotvectorMod.Vector3
 import typings.babylonjs.meshesAbstractMeshMod.AbstractMesh
 import typings.babylonjs.miscObservableMod.Observable
+import typings.babylonjs.miscObservableMod.Observer
 import typings.babylonjs.nodeMod.Node
+import typings.babylonjs.physicsV2PhysicsBodyMod.PhysicsBody
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.DeepImmutable
 import typings.babylonjs.typesMod.Nullable
@@ -19,6 +21,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object meshesTransformNodeMod {
   
+  /**
+    *
+    */
+  /** @internal */
   @JSImport("babylonjs/Meshes/transformNode", "TransformNode")
   @js.native
   open class TransformNode protected () extends Node {
@@ -37,7 +43,12 @@ object meshesTransformNodeMod {
     
     /* private */ var _billboardMode: Any = js.native
     
+    /* private */ var _computeUseBillboardPath: Any = js.native
+    
     /* private */ var _currentParentWhenAttachingToBone: Any = js.native
+    
+    /** @internal */
+    var _disposePhysicsObserver: Nullable[Observer[Node]] = js.native
     
     /* private */ var _forward: Any = js.native
     
@@ -59,6 +70,9 @@ object meshesTransformNodeMod {
     var _localMatrix: Matrix = js.native
     
     /* private */ var _nonUniformScaling: Any = js.native
+    
+    /** @internal */
+    var _physicsBody: Nullable[PhysicsBody] = js.native
     
     /* private */ var _pivotMatrix: Any = js.native
     
@@ -132,6 +146,13 @@ object meshesTransformNodeMod {
       */
     def addRotation(x: Double, y: Double, z: Double): TransformNode = js.native
     
+    /** Apply a physic impulse to the mesh
+      * @param force defines the force to apply
+      * @param contactPoint defines where to apply the force
+      * @returns the current mesh
+      */
+    def applyImpulse(force: Vector3, contactPoint: Vector3): typings.babylonjs.physicsV2PhysicsEngineComponentMod.babylonjsMeshesTransformNodeAugmentingMod.TransformNode = js.native
+    
     /**
       * Attach the current TransformNode to another TransformNode associated with a bone
       * @param bone Bone affecting the TransformNode
@@ -155,15 +176,8 @@ object meshesTransformNodeMod {
     def billboardMode: Double = js.native
     def billboardMode_=(value: Double): Unit = js.native
     
-    /**
-      * Clone the current transform node
-      * @param name Name of the new clone
-      * @param newParent New parent for the clone
-      * @param doNotCloneChildren Do not clone children hierarchy
-      * @returns the new transform node
-      */
-    def clone(name: String, newParent: Nullable[Node]): Nullable[TransformNode] = js.native
-    def clone(name: String, newParent: Nullable[Node], doNotCloneChildren: Boolean): Nullable[TransformNode] = js.native
+    def computeWorldMatrix(force: Boolean, camera: Nullable[Camera]): Matrix = js.native
+    def computeWorldMatrix(force: Unit, camera: Nullable[Camera]): Matrix = js.native
     
     /**
       * Detach the transform node if its associated with a bone
@@ -244,6 +258,11 @@ object meshesTransformNodeMod {
       */
     def getDistanceToCamera(): Double = js.native
     def getDistanceToCamera(camera: Nullable[Camera]): Double = js.native
+    
+    /**
+      *
+      */
+    def getPhysicsBody(): Nullable[PhysicsBody] = js.native
     
     /**
       * Returns the mesh pivot matrix.
@@ -337,6 +356,13 @@ object meshesTransformNodeMod {
     def isUsingPivotMatrix(): Boolean = js.native
     
     /**
+      * Returns whether the transform node world matrix computation needs the camera information to be computed.
+      * This is the case when the node is a billboard or has an infinite distance for instance.
+      * @returns true if the world matrix computation needs the camera information to be computed
+      */
+    def isWorldMatrixCameraDependent(): Boolean = js.native
+    
+    /**
       * True if the World matrix has been frozen.
       */
     def isWorldMatrixFrozen: Boolean = js.native
@@ -415,6 +441,11 @@ object meshesTransformNodeMod {
       * An event triggered after the world matrix is updated
       */
     var onAfterWorldMatrixUpdateObservable: Observable[TransformNode] = js.native
+    
+    /**
+      * @see
+      */
+    var physicsBody: Nullable[PhysicsBody] = js.native
     
     /**
       * Gets or set the node position (default is (0.0, 0.0, 0.0))

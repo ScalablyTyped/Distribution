@@ -15,6 +15,12 @@ trait NielsenNaesIiNw extends StObject {
     * Enter the Nielsen Source ID (SID) to include in the watermark
     */
   var Sid: doubleMin1Max65535
+  
+  /**
+    * Choose the timezone for the time stamps in the watermark. If not provided,
+  the timestamps will be in Coordinated Universal Time (UTC)
+    */
+  var Timezone: js.UndefOr[NielsenWatermarkTimezones] = js.undefined
 }
 object NielsenNaesIiNw {
   
@@ -29,5 +35,9 @@ object NielsenNaesIiNw {
     inline def setCheckDigitString(value: stringMin2Max2): Self = StObject.set(x, "CheckDigitString", value.asInstanceOf[js.Any])
     
     inline def setSid(value: doubleMin1Max65535): Self = StObject.set(x, "Sid", value.asInstanceOf[js.Any])
+    
+    inline def setTimezone(value: NielsenWatermarkTimezones): Self = StObject.set(x, "Timezone", value.asInstanceOf[js.Any])
+    
+    inline def setTimezoneUndefined: Self = StObject.set(x, "Timezone", js.undefined)
   }
 }

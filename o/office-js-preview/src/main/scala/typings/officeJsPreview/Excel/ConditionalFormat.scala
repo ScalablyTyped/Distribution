@@ -48,8 +48,7 @@ trait ConditionalFormat
     * Change the conditional format rule type to cell value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.17]
     *
     * @param properties The properties to set for the cell value conditional format rule.
     */
@@ -59,8 +58,7 @@ trait ConditionalFormat
     * Change the conditional format rule type to color scale.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.17]
     */
   def changeRuleToColorScale(): Unit = js.native
   
@@ -68,8 +66,7 @@ trait ConditionalFormat
     * Change the conditional format rule type to text comparison.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.17]
     *
     * @param properties The properties to set for the text comparison conditional format rule.
     */
@@ -79,8 +76,7 @@ trait ConditionalFormat
     * Change the conditional format rule type to custom.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.17]
     *
     * @param formula The formula to set for the custom conditional format rule.
     */
@@ -90,8 +86,7 @@ trait ConditionalFormat
     * Change the conditional format rule type to data bar.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.17]
     */
   def changeRuleToDataBar(): Unit = js.native
   
@@ -99,8 +94,7 @@ trait ConditionalFormat
     * Change the conditional format rule type to icon set.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.17]
     */
   def changeRuleToIconSet(): Unit = js.native
   
@@ -108,8 +102,7 @@ trait ConditionalFormat
     * Change the conditional format rule type to preset criteria.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.17]
     *
     * @param properties The properties to set for the preset criteria conditional format rule.
     */
@@ -119,8 +112,7 @@ trait ConditionalFormat
     * Change the conditional format rule type to top/bottom.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.17]
     *
     * @param properties The properties to set for the top/bottom conditional format rule.
     */
@@ -289,8 +281,7 @@ trait ConditionalFormat
     * Set the ranges that the conditonal format rule is applied to.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.17]
     *
     * @param ranges Collection of one or more ranges for this rule to be applied to.
     */

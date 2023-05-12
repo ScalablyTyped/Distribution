@@ -98,6 +98,14 @@ trait BindableResponseHeaders extends StObject {
   var headers: js.UndefOr[Record[String, String]] = js.undefined
   
   /**
+    * **Experimental** as of version 1.112.0; may change behavior or be removed in future versions. Whether
+    * to ignore all annotations from service metadata, so that they are not available as V4 annotations in
+    * this model's metamodel; see {@link #getMetaModel}. Only annotations from annotation files are loaded;
+    * see the `annotationURI` parameter.
+    */
+  var ignoreAnnotationsFromMetadata: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * If set to `true`, request payloads will be JSON, XML for `false`
     */
   var json: js.UndefOr[Boolean] = js.undefined
@@ -170,9 +178,10 @@ trait BindableResponseHeaders extends StObject {
   var serviceUrlParams: js.UndefOr[Record[String, String]] = js.undefined
   
   /**
-    * Whether to skip the automated loading of annotations from the metadata document. Loading annotations
-    * from metadata does not have any effects (except the lost performance by invoking the parser) if there
-    * are not annotations inside the metadata document
+    * **Deprecated** This parameter does not prevent creation of annotations from the metadata document in
+    * this model's metamodel. Whether to skip the automated loading of annotations from the metadata document.
+    * Loading annotations from metadata does not have any effects (except the lost performance by invoking
+    * the parser) if there are no annotations inside the metadata document
     */
   var skipMetadataAnnotationParsing: js.UndefOr[Boolean] = js.undefined
   
@@ -266,6 +275,10 @@ object BindableResponseHeaders {
     inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    
+    inline def setIgnoreAnnotationsFromMetadata(value: Boolean): Self = StObject.set(x, "ignoreAnnotationsFromMetadata", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreAnnotationsFromMetadataUndefined: Self = StObject.set(x, "ignoreAnnotationsFromMetadata", js.undefined)
     
     inline def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     

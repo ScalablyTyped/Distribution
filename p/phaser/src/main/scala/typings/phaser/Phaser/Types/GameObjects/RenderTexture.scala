@@ -9,19 +9,9 @@ object RenderTexture {
   trait RenderTextureConfig extends StObject {
     
     /**
-      * the frame to make the RenderTexture from.
-      */
-    var frame: js.UndefOr[String] = js.undefined
-    
-    /**
       * The height of the RenderTexture.
       */
     var height: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * The texture key to make the RenderTexture from.
-      */
-    var key: js.UndefOr[String] = js.undefined
     
     /**
       * The width of the RenderTexture.
@@ -48,17 +38,9 @@ object RenderTexture {
     @scala.inline
     implicit open class MutableBuilder[Self <: RenderTextureConfig] (val x: Self) extends AnyVal {
       
-      inline def setFrame(value: String): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
-      
-      inline def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
-      
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
-      
-      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-      
-      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       

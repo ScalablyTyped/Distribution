@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MigrationidNumber extends StObject {
   
-  /** The unique identifier of the migration. */
   var migration_id: Double
 }
 object MigrationidNumber {

@@ -1,7 +1,7 @@
 
 # Scala.js typings for unist-util-stringify-position
 
-Typings are for version 3.0.2
+Typings are for version 3.0.3
 
 ## Library description:
 unist utility to serialize a node, position, or point as a human readable location

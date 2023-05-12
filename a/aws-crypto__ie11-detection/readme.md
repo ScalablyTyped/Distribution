@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-crypto__ie11-detection
 
-Typings are for version 2.0.2
+Typings are for version 4.0.0
 
 ## Library description:
 Provides functions and types for detecting if the host environment is IE11

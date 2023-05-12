@@ -6,13 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AnonPage extends StObject {
   
-  /** Set to `1` or `true` to include anonymous contributors in results. */
+  /** @description Set to `1` or `true` to include anonymous contributors in results. */
   var anon: js.UndefOr[String] = js.undefined
   
-  /** Page number of the results to fetch. */
   var page: js.UndefOr[Double] = js.undefined
   
-  /** The number of results per page (max 100). */
   var per_page: js.UndefOr[Double] = js.undefined
 }
 object AnonPage {

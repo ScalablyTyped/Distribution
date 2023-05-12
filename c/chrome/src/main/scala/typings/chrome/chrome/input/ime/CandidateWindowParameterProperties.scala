@@ -20,6 +20,13 @@ trait CandidateWindowParameterProperties extends StObject {
   
   /**
     * Optional.
+    * The index of the current chosen candidate out of total candidates.
+    * @since Chrome 84.
+    */
+  var currentCandidateIndex: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Optional.
     * True to show the cursor, false to hide it.
     */
   var cursorVisible: js.UndefOr[Boolean] = js.undefined
@@ -29,6 +36,13 @@ trait CandidateWindowParameterProperties extends StObject {
     * The number of candidates to display per page.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Optional.
+    * The total number of candidates for the candidate window.
+    * @since Chrome 84.
+    */
+  var totalCandidates: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional.
@@ -67,6 +81,10 @@ object CandidateWindowParameterProperties {
     
     inline def setAuxiliaryTextVisibleUndefined: Self = StObject.set(x, "auxiliaryTextVisible", js.undefined)
     
+    inline def setCurrentCandidateIndex(value: Double): Self = StObject.set(x, "currentCandidateIndex", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentCandidateIndexUndefined: Self = StObject.set(x, "currentCandidateIndex", js.undefined)
+    
     inline def setCursorVisible(value: Boolean): Self = StObject.set(x, "cursorVisible", value.asInstanceOf[js.Any])
     
     inline def setCursorVisibleUndefined: Self = StObject.set(x, "cursorVisible", js.undefined)
@@ -74,6 +92,10 @@ object CandidateWindowParameterProperties {
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    
+    inline def setTotalCandidates(value: Double): Self = StObject.set(x, "totalCandidates", value.asInstanceOf[js.Any])
+    
+    inline def setTotalCandidatesUndefined: Self = StObject.set(x, "totalCandidates", js.undefined)
     
     inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     

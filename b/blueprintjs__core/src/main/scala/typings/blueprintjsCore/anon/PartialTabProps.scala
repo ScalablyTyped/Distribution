@@ -50,7 +50,9 @@ import typings.blueprintjsCore.blueprintjsCoreStrings.tree
 import typings.blueprintjsCore.blueprintjsCoreStrings.url
 import typings.blueprintjsCore.blueprintjsCoreStrings.vertical
 import typings.blueprintjsCore.blueprintjsCoreStrings.yes
+import typings.blueprintjsCore.libEsmCommonPropsMod.MaybeElement
 import typings.blueprintjsCore.libEsmComponentsTabsTabMod.TabId
+import typings.blueprintjsIcons.libEsmGeneratedIcons16pxBlueprintIcons16Mod.BlueprintIcons16Id
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
 import typings.react.mod.AriaRole
@@ -201,6 +203,8 @@ trait PartialTabProps extends StObject {
   
   var autoCorrect: js.UndefOr[String] = js.undefined
   
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
+  
   var autoSave: js.UndefOr[String] = js.undefined
   
   var children: js.UndefOr[ReactNode] = js.undefined
@@ -208,6 +212,8 @@ trait PartialTabProps extends StObject {
   var className: js.UndefOr[String] = js.undefined
   
   var color: js.UndefOr[String] = js.undefined
+  
+  var content: js.UndefOr[String] = js.undefined
   
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   
@@ -228,6 +234,8 @@ trait PartialTabProps extends StObject {
   var draggable: js.UndefOr[Booleanish] = js.undefined
   
   var hidden: js.UndefOr[Boolean] = js.undefined
+  
+  var icon: js.UndefOr[BlueprintIcons16Id | MaybeElement] = js.undefined
   
   var id: js.UndefOr[TabId] = js.undefined
   
@@ -421,9 +429,13 @@ trait PartialTabProps extends StObject {
   
   var radioGroup: js.UndefOr[String] = js.undefined
   
+  var rel: js.UndefOr[String] = js.undefined
+  
   var resource: js.UndefOr[String] = js.undefined
   
   var results: js.UndefOr[Double] = js.undefined
+  
+  var rev: js.UndefOr[String] = js.undefined
   
   var role: js.UndefOr[AriaRole] = js.undefined
   
@@ -440,6 +452,10 @@ trait PartialTabProps extends StObject {
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
   
   var tabIndex: js.UndefOr[Double] = js.undefined
+  
+  var tagContent: js.UndefOr[ReactNode] = js.undefined
+  
+  var tagProps: js.UndefOr[OmitTagPropschildren] = js.undefined
   
   var title: js.UndefOr[ReactNode] = js.undefined
   
@@ -671,6 +687,10 @@ object PartialTabProps {
     
     inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
     
+    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+    
     inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
     
     inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -687,9 +707,13 @@ object PartialTabProps {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
     inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
@@ -728,6 +752,12 @@ object PartialTabProps {
     inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    
+    inline def setIcon(value: BlueprintIcons16Id | MaybeElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconNull: Self = StObject.set(x, "icon", null)
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     inline def setId(value: TabId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -1113,6 +1143,10 @@ object PartialTabProps {
     
     inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
     
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1120,6 +1154,10 @@ object PartialTabProps {
     inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
@@ -1152,6 +1190,14 @@ object PartialTabProps {
     inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
     
     inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+    
+    inline def setTagContent(value: ReactNode): Self = StObject.set(x, "tagContent", value.asInstanceOf[js.Any])
+    
+    inline def setTagContentUndefined: Self = StObject.set(x, "tagContent", js.undefined)
+    
+    inline def setTagProps(value: OmitTagPropschildren): Self = StObject.set(x, "tagProps", value.asInstanceOf[js.Any])
+    
+    inline def setTagPropsUndefined: Self = StObject.set(x, "tagProps", js.undefined)
     
     inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

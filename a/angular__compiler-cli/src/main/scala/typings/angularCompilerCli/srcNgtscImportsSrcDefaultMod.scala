@@ -29,15 +29,10 @@ object srcNgtscImportsSrcDefaultMod {
     def recordUsedImport(importDecl: ImportDeclaration): Unit = js.native
     
     /**
-      * A `Map` which tracks the `Set` of `ts.ImportDeclaration`s for default imports that were used in
-      * a given `ts.SourceFile` and need to be preserved.
+      * A `Map` which tracks the `Set` of `ts.ImportClause`s for default imports that were used in
+      * a given file name.
       */
     /* private */ var sourceFileToUsedImports: Any = js.native
-    
-    /**
-      * Process a `ts.SourceFile` and replace any `ts.ImportDeclaration`s.
-      */
-    /* private */ var transformSourceFile: Any = js.native
   }
   
   inline def attachDefaultImportDeclaration(expr: WrappedNodeExpr[Any], importDecl: ImportDeclaration): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachDefaultImportDeclaration")(expr.asInstanceOf[js.Any], importDecl.asInstanceOf[js.Any])).asInstanceOf[Unit]

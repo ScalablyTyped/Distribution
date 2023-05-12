@@ -1,5 +1,7 @@
 package typings.reactBigCalendar
 
+import typings.reactBigCalendar.libAddonsDragAndDropMod.DragAction
+import typings.reactBigCalendar.libAddonsDragAndDropMod.DragDirection
 import typings.reactBigCalendar.mod.DayLayoutAlgorithm
 import typings.reactBigCalendar.mod.NavigateAction
 import typings.reactBigCalendar.mod.View
@@ -29,11 +31,15 @@ object reactBigCalendarStrings {
   inline def DAY: DAY = "DAY".asInstanceOf[DAY]
   
   @js.native
-  sealed trait DOWN extends StObject
+  sealed trait DOWN
+    extends StObject
+       with DragDirection
   inline def DOWN: DOWN = "DOWN".asInstanceOf[DOWN]
   
   @js.native
-  sealed trait LEFT extends StObject
+  sealed trait LEFT
+    extends StObject
+       with DragDirection
   inline def LEFT: LEFT = "LEFT".asInstanceOf[LEFT]
   
   @js.native
@@ -55,7 +61,9 @@ object reactBigCalendarStrings {
   inline def PREV: PREV = "PREV".asInstanceOf[PREV]
   
   @js.native
-  sealed trait RIGHT extends StObject
+  sealed trait RIGHT
+    extends StObject
+       with DragDirection
   inline def RIGHT: RIGHT = "RIGHT".asInstanceOf[RIGHT]
   
   @js.native
@@ -65,7 +73,9 @@ object reactBigCalendarStrings {
   inline def TODAY: TODAY = "TODAY".asInstanceOf[TODAY]
   
   @js.native
-  sealed trait UP extends StObject
+  sealed trait UP
+    extends StObject
+       with DragDirection
   inline def UP: UP = "UP".asInstanceOf[UP]
   
   @js.native
@@ -111,7 +121,9 @@ object reactBigCalendarStrings {
   inline def month_ : month_ = "month".asInstanceOf[month_]
   
   @js.native
-  sealed trait move extends StObject
+  sealed trait move
+    extends StObject
+       with DragAction
   inline def move: move = "move".asInstanceOf[move]
   
   @js.native
@@ -127,7 +139,9 @@ object reactBigCalendarStrings {
   inline def overlap: overlap = "overlap".asInstanceOf[overlap]
   
   @js.native
-  sealed trait resize extends StObject
+  sealed trait resize
+    extends StObject
+       with DragAction
   inline def resize: resize = "resize".asInstanceOf[resize]
   
   @js.native

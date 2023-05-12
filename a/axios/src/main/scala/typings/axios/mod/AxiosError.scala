@@ -13,31 +13,31 @@ open class AxiosError[T, D] ()
   def this(message: String) = this()
   def this(message: String, code: String) = this()
   def this(message: Unit, code: String) = this()
-  def this(message: String, code: String, config: AxiosRequestConfig[D]) = this()
-  def this(message: String, code: Unit, config: AxiosRequestConfig[D]) = this()
-  def this(message: Unit, code: String, config: AxiosRequestConfig[D]) = this()
-  def this(message: Unit, code: Unit, config: AxiosRequestConfig[D]) = this()
+  def this(message: String, code: String, config: InternalAxiosRequestConfig[D]) = this()
+  def this(message: String, code: Unit, config: InternalAxiosRequestConfig[D]) = this()
+  def this(message: Unit, code: String, config: InternalAxiosRequestConfig[D]) = this()
+  def this(message: Unit, code: Unit, config: InternalAxiosRequestConfig[D]) = this()
   def this(message: String, code: String, config: Unit, request: Any) = this()
-  def this(message: String, code: String, config: AxiosRequestConfig[D], request: Any) = this()
+  def this(message: String, code: String, config: InternalAxiosRequestConfig[D], request: Any) = this()
   def this(message: String, code: Unit, config: Unit, request: Any) = this()
-  def this(message: String, code: Unit, config: AxiosRequestConfig[D], request: Any) = this()
+  def this(message: String, code: Unit, config: InternalAxiosRequestConfig[D], request: Any) = this()
   def this(message: Unit, code: String, config: Unit, request: Any) = this()
-  def this(message: Unit, code: String, config: AxiosRequestConfig[D], request: Any) = this()
+  def this(message: Unit, code: String, config: InternalAxiosRequestConfig[D], request: Any) = this()
   def this(message: Unit, code: Unit, config: Unit, request: Any) = this()
-  def this(message: Unit, code: Unit, config: AxiosRequestConfig[D], request: Any) = this()
+  def this(message: Unit, code: Unit, config: InternalAxiosRequestConfig[D], request: Any) = this()
   def this(message: String, code: String, config: Unit, request: Any, response: AxiosResponse[T, D]) = this()
   def this(message: String, code: String, config: Unit, request: Unit, response: AxiosResponse[T, D]) = this()
   def this(
     message: String,
     code: String,
-    config: AxiosRequestConfig[D],
+    config: InternalAxiosRequestConfig[D],
     request: Any,
     response: AxiosResponse[T, D]
   ) = this()
   def this(
     message: String,
     code: String,
-    config: AxiosRequestConfig[D],
+    config: InternalAxiosRequestConfig[D],
     request: Unit,
     response: AxiosResponse[T, D]
   ) = this()
@@ -46,14 +46,14 @@ open class AxiosError[T, D] ()
   def this(
     message: String,
     code: Unit,
-    config: AxiosRequestConfig[D],
+    config: InternalAxiosRequestConfig[D],
     request: Any,
     response: AxiosResponse[T, D]
   ) = this()
   def this(
     message: String,
     code: Unit,
-    config: AxiosRequestConfig[D],
+    config: InternalAxiosRequestConfig[D],
     request: Unit,
     response: AxiosResponse[T, D]
   ) = this()
@@ -62,14 +62,14 @@ open class AxiosError[T, D] ()
   def this(
     message: Unit,
     code: String,
-    config: AxiosRequestConfig[D],
+    config: InternalAxiosRequestConfig[D],
     request: Any,
     response: AxiosResponse[T, D]
   ) = this()
   def this(
     message: Unit,
     code: String,
-    config: AxiosRequestConfig[D],
+    config: InternalAxiosRequestConfig[D],
     request: Unit,
     response: AxiosResponse[T, D]
   ) = this()
@@ -78,14 +78,14 @@ open class AxiosError[T, D] ()
   def this(
     message: Unit,
     code: Unit,
-    config: AxiosRequestConfig[D],
+    config: InternalAxiosRequestConfig[D],
     request: Any,
     response: AxiosResponse[T, D]
   ) = this()
   def this(
     message: Unit,
     code: Unit,
-    config: AxiosRequestConfig[D],
+    config: InternalAxiosRequestConfig[D],
     request: Unit,
     response: AxiosResponse[T, D]
   ) = this()
@@ -95,7 +95,7 @@ open class AxiosError[T, D] ()
   
   var code: js.UndefOr[String] = js.native
   
-  var config: js.UndefOr[AxiosRequestConfig[D]] = js.native
+  var config: js.UndefOr[InternalAxiosRequestConfig[D]] = js.native
   
   var isAxiosError: Boolean = js.native
   
@@ -117,6 +117,10 @@ open class AxiosError[T, D] ()
 }
 /* static members */
 object AxiosError {
+  
+  @JSImport("axios", "AxiosError")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("axios", "AxiosError.ECONNABORTED")
   @js.native
@@ -165,4 +169,13 @@ object AxiosError {
   @JSImport("axios", "AxiosError.ETIMEDOUT")
   @js.native
   val ETIMEDOUT: /* "ETIMEDOUT" */ String = js.native
+  
+  inline def from[T, D](
+    error: js.Error | Any,
+    code: js.UndefOr[String],
+    config: js.UndefOr[InternalAxiosRequestConfig[D]],
+    request: js.UndefOr[Any],
+    response: js.UndefOr[AxiosResponse[T, D]],
+    customProps: js.UndefOr[js.Object]
+  ): AxiosError[T, D] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(error.asInstanceOf[js.Any], code.asInstanceOf[js.Any], config.asInstanceOf[js.Any], request.asInstanceOf[js.Any], response.asInstanceOf[js.Any], customProps.asInstanceOf[js.Any])).asInstanceOf[AxiosError[T, D]]
 }

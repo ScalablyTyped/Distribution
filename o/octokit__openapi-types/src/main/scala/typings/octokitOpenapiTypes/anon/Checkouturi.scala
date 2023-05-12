@@ -28,6 +28,12 @@ trait Checkouturi extends StObject {
   
   /** @description The name of the tool used to generate the code scanning analysis. If this parameter is not used, the tool name defaults to "API". If the uploaded SARIF contains a tool GUID, this will be available for filtering using the `tool_guid` parameter of operations such as `GET /repos/{owner}/{repo}/code-scanning/alerts`. */
   var tool_name: js.UndefOr[String] = js.undefined
+  
+  /**
+    * @description Whether the SARIF file will be validated according to the code scanning specifications.
+    * This parameter is intended to help integrators ensure that the uploaded SARIF files are correctly rendered by code scanning.
+    */
+  var validate: js.UndefOr[Boolean] = js.undefined
 }
 object Checkouturi {
   
@@ -66,5 +72,9 @@ object Checkouturi {
     inline def setTool_name(value: String): Self = StObject.set(x, "tool_name", value.asInstanceOf[js.Any])
     
     inline def setTool_nameUndefined: Self = StObject.set(x, "tool_name", js.undefined)
+    
+    inline def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+    
+    inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
   }
 }

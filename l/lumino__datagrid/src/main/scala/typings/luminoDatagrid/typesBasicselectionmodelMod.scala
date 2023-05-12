@@ -25,5 +25,23 @@ object typesBasicselectionmodelMod {
     /* private */ var _cursorRow: Any = js.native
     
     /* private */ var _selections: Any = js.native
+    
+    /**
+      * The column index of the cursor.
+      */
+    @JSName("cursorColumn")
+    def cursorColumn_MBasicSelectionModel: Double = js.native
+    
+    /**
+      * The row index of the cursor.
+      */
+    @JSName("cursorRow")
+    def cursorRow_MBasicSelectionModel: Double = js.native
+    
+    /**
+      * Whether the selection model is empty.
+      */
+    @JSName("isEmpty")
+    def isEmpty_MBasicSelectionModel: Boolean = js.native
   }
 }

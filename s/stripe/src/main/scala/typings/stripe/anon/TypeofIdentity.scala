@@ -15,13 +15,13 @@ trait TypeofIdentity extends StObject {
   
   var VerificationReportsResource: Instantiable0[typings.stripe.mod.Stripe.Identity.VerificationReportsResource]
   
-  val VerificationSession: TypeofVerificationSession
+  val VerificationSession: TypeofVerificationSessionLastError
   
-  val VerificationSessionCreateParams: TypeofVerificationSessionOptions
+  val VerificationSessionCreateParams: TypeofVerificationSession
   
   val VerificationSessionListParams: Any
   
-  val VerificationSessionUpdateParams: TypeofVerificationSessionOptions
+  val VerificationSessionUpdateParams: TypeofVerificationSession
   
   var VerificationSessionsResource: Instantiable0[typings.stripe.mod.Stripe.Identity.VerificationSessionsResource]
 }
@@ -31,10 +31,10 @@ object TypeofIdentity {
     VerificationReport: TypeofVerificationReport,
     VerificationReportListParams: Any,
     VerificationReportsResource: Instantiable0[VerificationReportsResource],
-    VerificationSession: TypeofVerificationSession,
-    VerificationSessionCreateParams: TypeofVerificationSessionOptions,
+    VerificationSession: TypeofVerificationSessionLastError,
+    VerificationSessionCreateParams: TypeofVerificationSession,
     VerificationSessionListParams: Any,
-    VerificationSessionUpdateParams: TypeofVerificationSessionOptions,
+    VerificationSessionUpdateParams: TypeofVerificationSession,
     VerificationSessionsResource: Instantiable0[VerificationSessionsResource]
   ): TypeofIdentity = {
     val __obj = js.Dynamic.literal(VerificationReport = VerificationReport.asInstanceOf[js.Any], VerificationReportListParams = VerificationReportListParams.asInstanceOf[js.Any], VerificationReportsResource = VerificationReportsResource.asInstanceOf[js.Any], VerificationSession = VerificationSession.asInstanceOf[js.Any], VerificationSessionCreateParams = VerificationSessionCreateParams.asInstanceOf[js.Any], VerificationSessionListParams = VerificationSessionListParams.asInstanceOf[js.Any], VerificationSessionUpdateParams = VerificationSessionUpdateParams.asInstanceOf[js.Any], VerificationSessionsResource = VerificationSessionsResource.asInstanceOf[js.Any])
@@ -50,13 +50,13 @@ object TypeofIdentity {
     
     inline def setVerificationReportsResource(value: Instantiable0[VerificationReportsResource]): Self = StObject.set(x, "VerificationReportsResource", value.asInstanceOf[js.Any])
     
-    inline def setVerificationSession(value: TypeofVerificationSession): Self = StObject.set(x, "VerificationSession", value.asInstanceOf[js.Any])
+    inline def setVerificationSession(value: TypeofVerificationSessionLastError): Self = StObject.set(x, "VerificationSession", value.asInstanceOf[js.Any])
     
-    inline def setVerificationSessionCreateParams(value: TypeofVerificationSessionOptions): Self = StObject.set(x, "VerificationSessionCreateParams", value.asInstanceOf[js.Any])
+    inline def setVerificationSessionCreateParams(value: TypeofVerificationSession): Self = StObject.set(x, "VerificationSessionCreateParams", value.asInstanceOf[js.Any])
     
     inline def setVerificationSessionListParams(value: Any): Self = StObject.set(x, "VerificationSessionListParams", value.asInstanceOf[js.Any])
     
-    inline def setVerificationSessionUpdateParams(value: TypeofVerificationSessionOptions): Self = StObject.set(x, "VerificationSessionUpdateParams", value.asInstanceOf[js.Any])
+    inline def setVerificationSessionUpdateParams(value: TypeofVerificationSession): Self = StObject.set(x, "VerificationSessionUpdateParams", value.asInstanceOf[js.Any])
     
     inline def setVerificationSessionsResource(value: Instantiable0[VerificationSessionsResource]): Self = StObject.set(x, "VerificationSessionsResource", value.asInstanceOf[js.Any])
   }

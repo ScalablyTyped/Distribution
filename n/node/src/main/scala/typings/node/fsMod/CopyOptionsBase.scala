@@ -28,6 +28,11 @@ trait CopyOptionsBase extends StObject {
   var force: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Modifiers for copy operation. See `mode` flag of {@link copyFileSync()}
+    */
+  var mode: js.UndefOr[Double] = js.undefined
+  
+  /**
     * When `true` timestamps from `src` will
     * be preserved.
     * @default false
@@ -67,6 +72,10 @@ object CopyOptionsBase {
     inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
     inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    
+    inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     inline def setPreserveTimestamps(value: Boolean): Self = StObject.set(x, "preserveTimestamps", value.asInstanceOf[js.Any])
     

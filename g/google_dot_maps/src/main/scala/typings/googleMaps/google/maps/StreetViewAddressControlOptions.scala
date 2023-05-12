@@ -4,16 +4,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Options for the rendering of the Street View address control.
-  */
 trait StreetViewAddressControlOptions extends StObject {
   
   /**
     * Position id. This id is used to specify the position of the control on
     * the map. The default position is <code>TOP_LEFT</code>.
     */
-  var position: js.UndefOr[ControlPosition | Null] = js.undefined
+  var position: js.UndefOr[Null | ControlPosition] = js.undefined
 }
 object StreetViewAddressControlOptions {
   

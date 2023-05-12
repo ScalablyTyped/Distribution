@@ -10,7 +10,7 @@ import typings.nightwatch.anon.FnCallUsingSelectorCallback
 import typings.nightwatch.anon.FnCallUsingSelectorCssPropertyCallback
 import typings.nightwatch.anon.FnCallUsingSelectorInputValueCallback
 import typings.nightwatch.anon.FnCallUsingSelectorPropertyCallback
-import typings.nightwatch.anon.X
+import typings.nightwatch.anon.Width
 import typings.nightwatch.nightwatchStrings.string
 import typings.seleniumWebdriver.mod.By
 import typings.seleniumWebdriver.mod.WebElement
@@ -260,18 +260,18 @@ open class Element ()
   
   def isComponent(): Boolean = js.native
   
-  def isDisplayed(id: String): this.type = js.native
+  def isDisplayed(id: String): Awaitable[this.type, Boolean] = js.native
   def isDisplayed(
     id: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Boolean], Unit]
-  ): this.type = js.native
+  ): Awaitable[this.type, Boolean] = js.native
   @JSName("isDisplayed")
   var isDisplayed_Original: js.Function2[
     /* id */ String, 
     /* callback */ js.UndefOr[
       js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Boolean], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Boolean]
   ] = js.native
   
   def isEnabled(selector: Definition): Awaitable[this.type, Boolean] = js.native
@@ -316,7 +316,7 @@ open class Element ()
   
   var pseudoSelector: Null = js.native
   
-  def rect(): X = js.native
+  def rect(): Width = js.native
   
   var resolvedElement: Any = js.native
   
@@ -355,18 +355,18 @@ open class Element ()
   @JSName("sendKeys")
   var sendKeys_Original: FnCallUsingSelectorInputValueCallback = js.native
   
-  def submit(id: String): this.type = js.native
+  def submit(id: String): Awaitable[this.type, Null] = js.native
   def submit(
     id: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   @JSName("submit")
   var submit_Original: js.Function2[
     /* id */ String, 
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Null]
   ] = js.native
   
   var suppressNotFoundErrors: Boolean = js.native

@@ -12,7 +12,7 @@ trait ListRuleGroupsResponse extends StObject {
   var NextMarker: js.UndefOr[typings.awsSdk.clientsWafv2Mod.NextMarker] = js.undefined
   
   /**
-    * 
+    * Array of rule groups. If you specified a Limit in your request, this might not be the full list. 
     */
   var RuleGroups: js.UndefOr[RuleGroupSummaries] = js.undefined
 }

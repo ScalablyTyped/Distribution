@@ -17,6 +17,30 @@ object default {
   val ^ : js.Any = js.native
   
   /**
+    * Make async request.
+    * https://k6.io/docs/javascript-api/k6-http/asyncrequest/
+    * @param method - HTTP method.
+    * @param url - Request URL.
+    * @param body - Request body. Object form encoded.
+    * @param params - Request parameters.
+    * @returns Resulting response.
+    * @example
+    * let formData = {name: 'k6'};
+    * let headers = { 'Content-Type': 'application/x-www-form-urlencoded' };
+    * http.asyncRequest('POST', url, formData, { headers: headers });
+    */
+  inline def asyncRequest[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String): js.Promise[RefinedResponse[RT]] = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncRequest")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RefinedResponse[RT]]]
+  inline def asyncRequest[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: Null, params: RefinedParams[RT]): js.Promise[RefinedResponse[RT]] = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncRequest")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RefinedResponse[RT]]]
+  inline def asyncRequest[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: Unit, params: RefinedParams[RT]): js.Promise[RefinedResponse[RT]] = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncRequest")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RefinedResponse[RT]]]
+  inline def asyncRequest[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: RequestBody): js.Promise[RefinedResponse[RT]] = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncRequest")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RefinedResponse[RT]]]
+  inline def asyncRequest[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: RequestBody, params: RefinedParams[RT]): js.Promise[RefinedResponse[RT]] = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncRequest")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RefinedResponse[RT]]]
+  inline def asyncRequest[RT /* <: js.UndefOr[ResponseType] */](method: String, url: HttpURL): js.Promise[RefinedResponse[RT]] = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncRequest")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RefinedResponse[RT]]]
+  inline def asyncRequest[RT /* <: js.UndefOr[ResponseType] */](method: String, url: HttpURL, body: Null, params: RefinedParams[RT]): js.Promise[RefinedResponse[RT]] = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncRequest")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RefinedResponse[RT]]]
+  inline def asyncRequest[RT /* <: js.UndefOr[ResponseType] */](method: String, url: HttpURL, body: Unit, params: RefinedParams[RT]): js.Promise[RefinedResponse[RT]] = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncRequest")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RefinedResponse[RT]]]
+  inline def asyncRequest[RT /* <: js.UndefOr[ResponseType] */](method: String, url: HttpURL, body: RequestBody): js.Promise[RefinedResponse[RT]] = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncRequest")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RefinedResponse[RT]]]
+  inline def asyncRequest[RT /* <: js.UndefOr[ResponseType] */](method: String, url: HttpURL, body: RequestBody, params: RefinedParams[RT]): js.Promise[RefinedResponse[RT]] = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncRequest")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RefinedResponse[RT]]]
+  
+  /**
     * Batch multiple HTTP requests together,
     * to issue them in parallel over multiple TCP connections.
     * https://k6.io/docs/javascript-api/k6-http/batch-requests/

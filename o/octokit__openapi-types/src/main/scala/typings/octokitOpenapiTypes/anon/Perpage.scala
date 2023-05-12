@@ -6,19 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Perpage extends StObject {
   
-  /** Page number of the results to fetch. */
   var page: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['page'] */ js.Any
   ] = js.undefined
   
-  /** The number of results per page (max 100). */
   var per_page: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['per-page'] */ js.Any
   ] = js.undefined
   
-  /** Only return runner groups that are allowed to be used by this organization. */
-  var visible_to_organization: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['visible-to-organization'] */ js.Any
+  var since: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['since'] */ js.Any
   ] = js.undefined
 }
 object Perpage {
@@ -43,10 +40,10 @@ object Perpage {
     
     inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
     
-    inline def setVisible_to_organization(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['visible-to-organization'] */ js.Any
-    ): Self = StObject.set(x, "visible_to_organization", value.asInstanceOf[js.Any])
+    inline def setSince(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['since'] */ js.Any
+    ): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
-    inline def setVisible_to_organizationUndefined: Self = StObject.set(x, "visible_to_organization", js.undefined)
+    inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
   }
 }

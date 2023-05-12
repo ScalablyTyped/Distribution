@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** module Or Internal Object */
 /**
   * @brief ZeroMQ 套接口对象
-  * @detail 
+  * @detail
   */
 @JSGlobal("Class_ZmqSocket")
 @js.native
 /**
-  * 
+  *
   * @brief ZmqSocket 对象构造函数
   * @param type 指定 socket 类型，缺省为 zmq.PAIR
-  * 
-  * 
-  * 
+  *
+  *
+  *
   */
 open class ClassZmqSocket ()
   extends StObject

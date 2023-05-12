@@ -1,5 +1,12 @@
 package typings.std
 
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
+import typings.std.stdInts.`4`
+import typings.std.stdInts.`5`
+import typings.std.stdInts.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,25 +19,25 @@ trait SVGFECompositeElement
      with SVGFilterPrimitiveStandardAttributes {
   
   /* standard dom */
-  val SVG_FECOMPOSITE_OPERATOR_ARITHMETIC: Double = js.native
+  val SVG_FECOMPOSITE_OPERATOR_ARITHMETIC: `6` = js.native
   
   /* standard dom */
-  val SVG_FECOMPOSITE_OPERATOR_ATOP: Double = js.native
+  val SVG_FECOMPOSITE_OPERATOR_ATOP: `4` = js.native
   
   /* standard dom */
-  val SVG_FECOMPOSITE_OPERATOR_IN: Double = js.native
+  val SVG_FECOMPOSITE_OPERATOR_IN: `2` = js.native
   
   /* standard dom */
-  val SVG_FECOMPOSITE_OPERATOR_OUT: Double = js.native
+  val SVG_FECOMPOSITE_OPERATOR_OUT: `3` = js.native
   
   /* standard dom */
-  val SVG_FECOMPOSITE_OPERATOR_OVER: Double = js.native
+  val SVG_FECOMPOSITE_OPERATOR_OVER: `1` = js.native
   
   /* standard dom */
-  val SVG_FECOMPOSITE_OPERATOR_UNKNOWN: Double = js.native
+  val SVG_FECOMPOSITE_OPERATOR_UNKNOWN: `0` = js.native
   
   /* standard dom */
-  val SVG_FECOMPOSITE_OPERATOR_XOR: Double = js.native
+  val SVG_FECOMPOSITE_OPERATOR_XOR: `5` = js.native
   
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native

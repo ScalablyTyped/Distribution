@@ -151,9 +151,13 @@ object moduleMod extends Shortcut {
     * `path` is the resolved path for the file for which a corresponding source map
     * should be fetched.
     * @since v13.7.0, v12.17.0
+    * @return Returns `module.SourceMap` if a source map is found, `undefined` otherwise.
     */
   inline def findSourceMap(path: String): SourceMap = ^.asInstanceOf[js.Dynamic].applyDynamic("findSourceMap")(path.asInstanceOf[js.Any]).asInstanceOf[SourceMap]
   inline def findSourceMap(path: String, error: js.Error): SourceMap = (^.asInstanceOf[js.Dynamic].applyDynamic("findSourceMap")(path.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[SourceMap]
+  
+  /* static member */
+  inline def isBuiltin(moduleName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuiltin")(moduleName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
   inline def runMain(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("runMain")().asInstanceOf[Unit]
@@ -164,9 +168,9 @@ object moduleMod extends Shortcut {
     * does not add or remove exported names from the `ES Modules`.
     *
     * ```js
-    * const fs = require('fs');
-    * const assert = require('assert');
-    * const { syncBuiltinESMExports } = require('module');
+    * const fs = require('node:fs');
+    * const assert = require('node:assert');
+    * const { syncBuiltinESMExports } = require('node:module');
     *
     * fs.readFile = newAPI;
     *
@@ -180,7 +184,7 @@ object moduleMod extends Shortcut {
     *
     * syncBuiltinESMExports();
     *
-    * import('fs').then((esmFS) => {
+    * import('node:fs').then((esmFS) => {
     *   // It syncs the existing readFile property with the new value
     *   assert.strictEqual(esmFS.readFile, newAPI);
     *   // readFileSync has been deleted from the required fs

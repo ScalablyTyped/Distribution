@@ -1,7 +1,7 @@
 
 # Scala.js typings for csstools__postcss-normalize-display-values
 
-Typings are for version 1.0.1
+Typings are for version 2.0.1
 
 ## Library description:
 Use two values display syntax for inner and outer display types.

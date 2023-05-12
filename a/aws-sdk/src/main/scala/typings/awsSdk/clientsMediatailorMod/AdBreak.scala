@@ -14,7 +14,7 @@ trait AdBreak extends StObject {
   /**
     * How long (in milliseconds) after the beginning of the program that an ad starts. This value must fall within 100ms of a segment boundary, otherwise the ad break will be skipped.
     */
-  var OffsetMillis: js.UndefOr[long] = js.undefined
+  var OffsetMillis: js.UndefOr[_Long] = js.undefined
   
   /**
     * Ad break slate configuration.
@@ -45,7 +45,7 @@ object AdBreak {
     
     inline def setMessageTypeUndefined: Self = StObject.set(x, "MessageType", js.undefined)
     
-    inline def setOffsetMillis(value: long): Self = StObject.set(x, "OffsetMillis", value.asInstanceOf[js.Any])
+    inline def setOffsetMillis(value: _Long): Self = StObject.set(x, "OffsetMillis", value.asInstanceOf[js.Any])
     
     inline def setOffsetMillisUndefined: Self = StObject.set(x, "OffsetMillis", js.undefined)
     

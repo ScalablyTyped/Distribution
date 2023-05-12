@@ -1,14 +1,13 @@
 package typings.electronStore
 
-import typings.conf.distSourceTypesMod.BeforeEachMigrationCallback
-import typings.conf.distSourceTypesMod.BeforeEachMigrationContext
-import typings.conf.distSourceTypesMod.Deserialize
-import typings.conf.distSourceTypesMod.Migrations
-import typings.conf.distSourceTypesMod.Serialize
-import typings.conf.mod.default
-import typings.node.NodeJS.TypedArray
-import typings.node.bufferMod.global.Buffer
+import typings.electronStore.anon.Name
+import typings.electronStore.electronStoreStrings.configName
+import typings.electronStore.electronStoreStrings.projectName
+import typings.electronStore.electronStoreStrings.projectSuffix
+import typings.electronStore.electronStoreStrings.projectVersion
 import typings.std.Record
+import typings.typeFest.anon.RequireExactProps
+import typings.typeFest.sourceExceptMod.Except
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,8 +43,16 @@ object mod {
   	//=> undefined
   	```
   	*/
-  open class ^[T /* <: Record[String, Any] */] () extends ElectronStore[T] {
+  open class ^[T /* <: Record[String, Any] */] ()
+    extends StObject
+       with ElectronStore[T] {
     def this(options: Options[T]) = this()
+    
+    /**
+    	Open the storage file in the user's editor.
+    	*/
+    /* CompleteClass */
+    override def openInEditor(): Unit = js.native
   }
   @JSImport("electron-store", JSImport.Namespace)
   @js.native
@@ -60,142 +67,33 @@ object mod {
   /**
   Simple data persistence for your [Electron](https://electronjs.org) app or module - Save and load user preferences, app state, cache, etc.
   */
-  @js.native
-  trait ElectronStore[T /* <: Record[String, Any] */] extends default[T] {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Conf<T> * / any */ trait ElectronStore[T /* <: Record[String, Any] */] extends StObject {
     
     /**
     	Open the storage file in the user's editor.
     	*/
-    def openInEditor(): Unit = js.native
+    def openInEditor(): Unit
   }
-  
-  /* Inlined type-fest.type-fest.Except<conf.conf.Options<T>, 'configName' | 'projectName' | 'projectVersion' | 'projectSuffix'> & { readonly name :string | undefined} */
-  trait Options[T /* <: Record[String, Any] */] extends StObject {
+  object ElectronStore {
     
-    var accessPropertiesByDotNotation: js.UndefOr[Boolean] = js.undefined
-    
-    var beforeEachMigration: js.UndefOr[BeforeEachMigrationCallback[T]] = js.undefined
-    
-    var clearInvalidConfig: js.UndefOr[Boolean] = js.undefined
-    
-    var configFileMode: js.UndefOr[Double] = js.undefined
-    
-    var configName: js.UndefOr[String] = js.undefined
-    
-    var cwd: js.UndefOr[String] = js.undefined
-    
-    var defaults: js.UndefOr[T] = js.undefined
-    
-    var deserialize: js.UndefOr[Deserialize[T]] = js.undefined
-    
-    var encryptionKey: js.UndefOr[String | Buffer | TypedArray | js.typedarray.DataView] = js.undefined
-    
-    var fileExtension: js.UndefOr[String] = js.undefined
-    
-    var migrations: js.UndefOr[Migrations[T]] = js.undefined
-    
-    /**
-    		Name of the storage file (without extension).
-    		This is useful if you want multiple storage files for your app. Or if you're making a reusable Electron module that persists some data, in which case you should **not** use the name `config`.
-    		@default 'config'
-    		*/
-    val name: js.UndefOr[String] = js.undefined
-    
-    var projectName: js.UndefOr[String] = js.undefined
-    
-    var projectSuffix: js.UndefOr[String] = js.undefined
-    
-    var projectVersion: js.UndefOr[String] = js.undefined
-    
-    var schema: js.UndefOr[typings.conf.distSourceTypesMod.Schema[T]] = js.undefined
-    
-    var serialize: js.UndefOr[Serialize[T]] = js.undefined
-    
-    var watch: js.UndefOr[Boolean] = js.undefined
-  }
-  object Options {
-    
-    inline def apply[T /* <: Record[String, Any] */](): Options[T] = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Options[T]]
+    inline def apply[T /* <: Record[String, Any] */](openInEditor: () => Unit): ElectronStore[T] = {
+      val __obj = js.Dynamic.literal(openInEditor = js.Any.fromFunction0(openInEditor))
+      __obj.asInstanceOf[ElectronStore[T]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Options[?], T /* <: Record[String, Any] */] (val x: Self & Options[T]) extends AnyVal {
+    implicit open class MutableBuilder[Self <: ElectronStore[?], T /* <: Record[String, Any] */] (val x: Self & ElectronStore[T]) extends AnyVal {
       
-      inline def setAccessPropertiesByDotNotation(value: Boolean): Self = StObject.set(x, "accessPropertiesByDotNotation", value.asInstanceOf[js.Any])
-      
-      inline def setAccessPropertiesByDotNotationUndefined: Self = StObject.set(x, "accessPropertiesByDotNotation", js.undefined)
-      
-      inline def setBeforeEachMigration(value: (/* store */ default[T], /* context */ BeforeEachMigrationContext) => Unit): Self = StObject.set(x, "beforeEachMigration", js.Any.fromFunction2(value))
-      
-      inline def setBeforeEachMigrationUndefined: Self = StObject.set(x, "beforeEachMigration", js.undefined)
-      
-      inline def setClearInvalidConfig(value: Boolean): Self = StObject.set(x, "clearInvalidConfig", value.asInstanceOf[js.Any])
-      
-      inline def setClearInvalidConfigUndefined: Self = StObject.set(x, "clearInvalidConfig", js.undefined)
-      
-      inline def setConfigFileMode(value: Double): Self = StObject.set(x, "configFileMode", value.asInstanceOf[js.Any])
-      
-      inline def setConfigFileModeUndefined: Self = StObject.set(x, "configFileMode", js.undefined)
-      
-      inline def setConfigName(value: String): Self = StObject.set(x, "configName", value.asInstanceOf[js.Any])
-      
-      inline def setConfigNameUndefined: Self = StObject.set(x, "configName", js.undefined)
-      
-      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
-      
-      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
-      
-      inline def setDefaults(value: T): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
-      
-      inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
-      
-      inline def setDeserialize(value: /* text */ String => T): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
-      
-      inline def setDeserializeUndefined: Self = StObject.set(x, "deserialize", js.undefined)
-      
-      inline def setEncryptionKey(value: String | Buffer | TypedArray | js.typedarray.DataView): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
-      
-      inline def setEncryptionKeyUndefined: Self = StObject.set(x, "encryptionKey", js.undefined)
-      
-      inline def setFileExtension(value: String): Self = StObject.set(x, "fileExtension", value.asInstanceOf[js.Any])
-      
-      inline def setFileExtensionUndefined: Self = StObject.set(x, "fileExtension", js.undefined)
-      
-      inline def setMigrations(value: Migrations[T]): Self = StObject.set(x, "migrations", value.asInstanceOf[js.Any])
-      
-      inline def setMigrationsUndefined: Self = StObject.set(x, "migrations", js.undefined)
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
-      
-      inline def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
-      
-      inline def setProjectNameUndefined: Self = StObject.set(x, "projectName", js.undefined)
-      
-      inline def setProjectSuffix(value: String): Self = StObject.set(x, "projectSuffix", value.asInstanceOf[js.Any])
-      
-      inline def setProjectSuffixUndefined: Self = StObject.set(x, "projectSuffix", js.undefined)
-      
-      inline def setProjectVersion(value: String): Self = StObject.set(x, "projectVersion", value.asInstanceOf[js.Any])
-      
-      inline def setProjectVersionUndefined: Self = StObject.set(x, "projectVersion", js.undefined)
-      
-      inline def setSchema(value: typings.conf.distSourceTypesMod.Schema[T]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
-      
-      inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
-      
-      inline def setSerialize(value: T => String): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
-      
-      inline def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
-      
-      inline def setWatch(value: Boolean): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
-      
-      inline def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
+      inline def setOpenInEditor(value: () => Unit): Self = StObject.set(x, "openInEditor", js.Any.fromFunction0(value))
     }
   }
   
-  type Schema[T] = typings.conf.distSourceTypesMod.Schema[T]
+  type Options[T /* <: Record[String, Any] */] = (Except[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ConfOptions<T> */ Any, 
+    configName | projectName | projectVersion | projectSuffix, 
+    RequireExactProps
+  ]) & Name
+  
+  type Schema[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ConfSchema<T> */ Any
 }

@@ -16,7 +16,7 @@ object libIconsInteractionOutlinedMod extends Shortcut {
   @js.native
   trait InteractionOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_InteractionOutlinedIconType: String = js.native

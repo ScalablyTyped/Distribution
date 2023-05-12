@@ -1,6 +1,7 @@
 package typings.cesium.anon
 
 import typings.cesium.cesiumBooleans.`false`
+import typings.cesium.mod.ContextOptions
 import typings.cesium.mod.ImageryProvider
 import typings.cesium.mod.MapMode2D
 import typings.cesium.mod.MapProjection
@@ -8,6 +9,7 @@ import typings.cesium.mod.SceneMode
 import typings.cesium.mod.ShadowMode
 import typings.cesium.mod.SkyAtmosphere
 import typings.cesium.mod.SkyBox
+import typings.cesium.mod.Terrain
 import typings.cesium.mod.TerrainProvider
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
@@ -20,7 +22,7 @@ trait BlurActiveElementOnCanvasFocus extends StObject {
   
   var clock: js.UndefOr[typings.cesium.mod.Clock] = js.undefined
   
-  var contextOptions: js.UndefOr[Any] = js.undefined
+  var contextOptions: js.UndefOr[ContextOptions] = js.undefined
   
   var creditContainer: js.UndefOr[Element | String] = js.undefined
   
@@ -56,6 +58,8 @@ trait BlurActiveElementOnCanvasFocus extends StObject {
   
   var targetFrameRate: js.UndefOr[Double] = js.undefined
   
+  var terrain: js.UndefOr[Terrain] = js.undefined
+  
   var terrainProvider: js.UndefOr[TerrainProvider] = js.undefined
   
   var terrainShadows: js.UndefOr[ShadowMode] = js.undefined
@@ -82,7 +86,7 @@ object BlurActiveElementOnCanvasFocus {
     
     inline def setClockUndefined: Self = StObject.set(x, "clock", js.undefined)
     
-    inline def setContextOptions(value: Any): Self = StObject.set(x, "contextOptions", value.asInstanceOf[js.Any])
+    inline def setContextOptions(value: ContextOptions): Self = StObject.set(x, "contextOptions", value.asInstanceOf[js.Any])
     
     inline def setContextOptionsUndefined: Self = StObject.set(x, "contextOptions", js.undefined)
     
@@ -154,6 +158,8 @@ object BlurActiveElementOnCanvasFocus {
     
     inline def setTargetFrameRateUndefined: Self = StObject.set(x, "targetFrameRate", js.undefined)
     
+    inline def setTerrain(value: Terrain): Self = StObject.set(x, "terrain", value.asInstanceOf[js.Any])
+    
     inline def setTerrainProvider(value: TerrainProvider): Self = StObject.set(x, "terrainProvider", value.asInstanceOf[js.Any])
     
     inline def setTerrainProviderUndefined: Self = StObject.set(x, "terrainProvider", js.undefined)
@@ -161,6 +167,8 @@ object BlurActiveElementOnCanvasFocus {
     inline def setTerrainShadows(value: ShadowMode): Self = StObject.set(x, "terrainShadows", value.asInstanceOf[js.Any])
     
     inline def setTerrainShadowsUndefined: Self = StObject.set(x, "terrainShadows", js.undefined)
+    
+    inline def setTerrainUndefined: Self = StObject.set(x, "terrain", js.undefined)
     
     inline def setUseBrowserRecommendedResolution(value: Boolean): Self = StObject.set(x, "useBrowserRecommendedResolution", value.asInstanceOf[js.Any])
     

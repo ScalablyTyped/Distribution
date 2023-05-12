@@ -17,7 +17,8 @@ open class ScreenComponent protected ()
   /**
     * Create a new ScreenComponent.
     *
-    * @param {ScreenComponentSystem} system - The ComponentSystem that created this Component.
+    * @param {import('./system.js').ScreenComponentSystem} system - The ComponentSystem that
+    * created this Component.
     * @param {Entity} entity - The Entity that this Component is attached to.
     */
   def this(system: typings.playcanvas.mod.ScreenComponentSystem, entity: typings.playcanvas.mod.Entity) = this()

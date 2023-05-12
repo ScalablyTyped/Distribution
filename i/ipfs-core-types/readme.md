@@ -1,7 +1,7 @@
 
 # Scala.js typings for ipfs-core-types
 
-Typings are for version 0.13.0
+Typings are for version 0.14.0
 
 ## Library description:
 IPFS interface definitions used by implementations for API compatibility.

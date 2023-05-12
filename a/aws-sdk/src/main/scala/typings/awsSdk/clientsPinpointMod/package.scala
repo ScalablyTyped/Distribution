@@ -180,6 +180,15 @@ type Include = _Include | String
 type JobStatus = _JobStatus | String
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SCHEDULED
+  - typings.awsSdk.awsSdkStrings.RUNNING
+  - typings.awsSdk.awsSdkStrings.COMPLETED
+  - typings.awsSdk.awsSdkStrings.CANCELLED
+  - java.lang.String
+*/
+type JourneyRunStatus = _JourneyRunStatus | String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.BOTTOM_BANNER
   - typings.awsSdk.awsSdkStrings.TOP_BANNER
   - typings.awsSdk.awsSdkStrings.OVERLAYS
@@ -213,6 +222,8 @@ type ListOfInAppMessageCampaign = js.Array[InAppMessageCampaign]
 type ListOfInAppMessageContent = js.Array[InAppMessageContent]
 
 type ListOfJourneyResponse = js.Array[JourneyResponse]
+
+type ListOfJourneyRunResponse = js.Array[JourneyRunResponse]
 
 type ListOfMultiConditionalBranch = js.Array[MultiConditionalBranch]
 

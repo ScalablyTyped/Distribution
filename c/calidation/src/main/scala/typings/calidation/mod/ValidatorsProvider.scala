@@ -12,7 +12,7 @@ open class ValidatorsProvider[T /* <: js.Object */] protected ()
   def this(props: ValidatorsProviderProps[T]) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: ValidatorsProviderProps[T], context: Any) = this()
 }

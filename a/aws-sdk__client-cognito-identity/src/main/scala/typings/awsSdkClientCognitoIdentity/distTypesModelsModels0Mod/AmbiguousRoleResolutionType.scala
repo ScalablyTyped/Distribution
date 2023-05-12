@@ -1,27 +1,24 @@
 package typings.awsSdkClientCognitoIdentity.distTypesModelsModels0Mod
 
+import typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.AuthenticatedRole
+import typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.Deny
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait AmbiguousRoleResolutionType extends StObject
-@JSImport("@aws-sdk/client-cognito-identity/dist-types/models/models_0", "AmbiguousRoleResolutionType")
-@js.native
-object AmbiguousRoleResolutionType extends StObject {
+/* Inlined { readonly AUTHENTICATED_ROLE :'AuthenticatedRole',  readonly DENY :'Deny'}[keyof { readonly AUTHENTICATED_ROLE :'AuthenticatedRole',  readonly DENY :'Deny'}] */
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.AuthenticatedRole
+  - typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.Deny
+*/
+trait AmbiguousRoleResolutionType extends StObject
+object AmbiguousRoleResolutionType {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[AmbiguousRoleResolutionType & String] = js.native
-  
+  @JSImport("@aws-sdk/client-cognito-identity/dist-types/models/models_0", "AmbiguousRoleResolutionType.AUTHENTICATED_ROLE")
   @js.native
-  sealed trait AUTHENTICATED_ROLE
-    extends StObject
-       with AmbiguousRoleResolutionType
-  /* "AuthenticatedRole" */ val AUTHENTICATED_ROLE: typings.awsSdkClientCognitoIdentity.distTypesModelsModels0Mod.AmbiguousRoleResolutionType.AUTHENTICATED_ROLE & String = js.native
+  val AUTHENTICATED_ROLE: AuthenticatedRole = js.native
   
+  @JSImport("@aws-sdk/client-cognito-identity/dist-types/models/models_0", "AmbiguousRoleResolutionType.DENY")
   @js.native
-  sealed trait DENY
-    extends StObject
-       with AmbiguousRoleResolutionType
-  /* "Deny" */ val DENY: typings.awsSdkClientCognitoIdentity.distTypesModelsModels0Mod.AmbiguousRoleResolutionType.DENY & String = js.native
+  val DENY: Deny = js.native
 }

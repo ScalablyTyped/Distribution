@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateNamespaceRequest extends StObject {
   
   /**
-    * The password of the administrator for the first database created in the namespace.
+    * The password of the administrator for the first database created in the namespace. This parameter must be updated together with adminUsername.
     */
   var adminUserPassword: js.UndefOr[DbPassword] = js.undefined
   
   /**
-    * The username of the administrator for the first database created in the namespace.
+    * The username of the administrator for the first database created in the namespace. This parameter must be updated together with adminUserPassword.
     */
   var adminUsername: js.UndefOr[DbUser] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the IAM role to set as a default in the namespace.
+    * The Amazon Resource Name (ARN) of the IAM role to set as a default in the namespace. This parameter must be updated together with iamRoles.
     */
   var defaultIamRoleArn: js.UndefOr[String] = js.undefined
   
   /**
-    * A list of IAM roles to associate with the namespace.
+    * A list of IAM roles to associate with the namespace. This parameter must be updated together with defaultIamRoleArn.
     */
   var iamRoles: js.UndefOr[IamRoleArnList] = js.undefined
   
@@ -37,7 +37,7 @@ trait UpdateNamespaceRequest extends StObject {
   var logExports: js.UndefOr[LogExportList] = js.undefined
   
   /**
-    * The name of the namespace.
+    * The name of the namespace to update. You can't update the name of a namespace once it is created.
     */
   var namespaceName: NamespaceName
 }

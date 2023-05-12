@@ -26,8 +26,8 @@ object buildCommandsSaucelabsMod {
       * })
       * ```
       */
-    def assertPerformance(name: String): ProtocolCommandResponse = js.native
-    def assertPerformance(name: String, metrics: js.Array[String]): ProtocolCommandResponse = js.native
+    def assertPerformance(name: String): js.Promise[ProtocolCommandResponse] = js.native
+    def assertPerformance(name: String, metrics: js.Array[String]): js.Promise[ProtocolCommandResponse] = js.native
     
     /**
       * Saucelabs Protocol Command
@@ -36,8 +36,8 @@ object buildCommandsSaucelabsMod {
       * @ref https://wiki.saucelabs.com/display/DOCS/Custom+Sauce+Labs+WebDriver+Extensions+for+Network+and+Log+Commands
       *
       */
-    def clearMockCalls(mockId: String): Unit = js.native
-    def clearMockCalls(mockId: String, restore: Boolean): Unit = js.native
+    def clearMockCalls(mockId: String): js.Promise[Unit] = js.native
+    def clearMockCalls(mockId: String, restore: Boolean): js.Promise[Unit] = js.native
     
     /**
       * Saucelabs Protocol Command
@@ -46,7 +46,7 @@ object buildCommandsSaucelabsMod {
       * @ref https://wiki.saucelabs.com/display/DOCS/Custom+Sauce+Labs+WebDriver+Extensions+for+Network+and+Log+Commands
       *
       */
-    def getMockCalls(mockId: String): ProtocolCommandResponse = js.native
+    def getMockCalls(mockId: String): js.Promise[ProtocolCommandResponse] = js.native
     
     /**
       * Saucelabs Protocol Command
@@ -93,7 +93,7 @@ object buildCommandsSaucelabsMod {
       * //
       * ```
       */
-    def getPageLogs(`type`: String): ProtocolCommandResponse = js.native
+    def getPageLogs(`type`: String): js.Promise[ProtocolCommandResponse] = js.native
     
     /**
       * Saucelabs Protocol Command
@@ -136,7 +136,7 @@ object buildCommandsSaucelabsMod {
       * })
       * ```
       */
-    def interceptRequest(rule: js.Object): Unit = js.native
+    def interceptRequest(rule: js.Object): js.Promise[Unit] = js.native
     
     /**
       * Saucelabs Protocol Command
@@ -151,7 +151,7 @@ object buildCommandsSaucelabsMod {
       * browser.jankinessCheck()
       * ```
       */
-    def jankinessCheck(): ProtocolCommandResponse = js.native
+    def jankinessCheck(): js.Promise[ProtocolCommandResponse] = js.native
     
     /**
       * Saucelabs Protocol Command
@@ -160,8 +160,8 @@ object buildCommandsSaucelabsMod {
       * @ref https://wiki.saucelabs.com/display/DOCS/Custom+Sauce+Labs+WebDriver+Extensions+for+Network+and+Log+Commands
       *
       */
-    def mockRequest(url: String): ProtocolCommandResponse = js.native
-    def mockRequest(url: String, filterOptions: js.Object): ProtocolCommandResponse = js.native
+    def mockRequest(url: String): js.Promise[ProtocolCommandResponse] = js.native
+    def mockRequest(url: String, filterOptions: js.Object): js.Promise[ProtocolCommandResponse] = js.native
     
     /**
       * Saucelabs Protocol Command
@@ -170,7 +170,7 @@ object buildCommandsSaucelabsMod {
       * @ref https://wiki.saucelabs.com/display/DOCS/Custom+Sauce+Labs+WebDriver+Extensions+for+Network+and+Log+Commands
       *
       */
-    def respondMock(mockId: String, payload: js.Object): Unit = js.native
+    def respondMock(mockId: String, payload: js.Object): js.Promise[Unit] = js.native
     
     /**
       * Saucelabs Protocol Command
@@ -189,7 +189,7 @@ object buildCommandsSaucelabsMod {
       * browser.throttleCPU(0)
       * ```
       */
-    def throttleCPU(rate: Double): Unit = js.native
+    def throttleCPU(rate: Double): js.Promise[Unit] = js.native
     
     /**
       * Saucelabs Protocol Command
@@ -212,7 +212,7 @@ object buildCommandsSaucelabsMod {
       * })
       * ```
       */
-    def throttleNetwork(condition: String): Unit = js.native
-    def throttleNetwork(condition: js.Object): Unit = js.native
+    def throttleNetwork(condition: String): js.Promise[Unit] = js.native
+    def throttleNetwork(condition: js.Object): js.Promise[Unit] = js.native
   }
 }

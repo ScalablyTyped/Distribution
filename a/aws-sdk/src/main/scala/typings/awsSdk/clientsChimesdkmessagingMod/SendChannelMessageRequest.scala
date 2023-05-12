@@ -12,7 +12,7 @@ trait SendChannelMessageRequest extends StObject {
   var ChannelArn: ChimeArn
   
   /**
-    * The AppInstanceUserArn of the user that makes the API call.
+    * The ARN of the AppInstanceUser or AppInstanceBot that makes the API call.
     */
   var ChimeBearer: ChimeArn
   
@@ -25,6 +25,11 @@ trait SendChannelMessageRequest extends StObject {
     * The content of the message.
     */
   var Content: NonEmptyContent
+  
+  /**
+    * The content type of the channel message.
+    */
+  var ContentType: js.UndefOr[typings.awsSdk.clientsChimesdkmessagingMod.ContentType] = js.undefined
   
   /**
     * The attributes for the message, used for message filtering along with a FilterRule defined in the PushNotificationPreferences.
@@ -80,6 +85,10 @@ object SendChannelMessageRequest {
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
     inline def setContent(value: NonEmptyContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    
+    inline def setContentType(value: ContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
+    
+    inline def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
     
     inline def setMessageAttributes(value: MessageAttributeMap): Self = StObject.set(x, "MessageAttributes", value.asInstanceOf[js.Any])
     

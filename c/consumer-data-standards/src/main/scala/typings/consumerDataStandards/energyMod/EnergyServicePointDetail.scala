@@ -87,7 +87,7 @@ trait EnergyServicePointDetail
   var servicePointStatus: ACTIVE | DE_ENERGISED | EXTINCT | GREENFIELD | OFF_MARKET
   
   /**
-    * The start date from which this service point first became valid
+    * The latest start date from which the constituent data sets of this service point became valid
     */
   var validFromDate: String
 }

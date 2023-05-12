@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "https-proxy-agent" : "5.0.1"
+      "https-proxy-agent" : "6.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "https-proxy-agent" : "5.0.1"
+      "https-proxy-agent" : "6.1.0"
     }
   ],
   "compile-devDependencies" : [

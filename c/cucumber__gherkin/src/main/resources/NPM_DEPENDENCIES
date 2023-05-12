@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@cucumber/gherkin" : "25.0.2"
+      "@cucumber/gherkin" : "26.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@cucumber/gherkin" : "25.0.2"
+      "@cucumber/gherkin" : "26.2.0"
     }
   ],
   "compile-devDependencies" : [

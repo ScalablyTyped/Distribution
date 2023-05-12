@@ -49,7 +49,7 @@ object libDataSourceColumnMod {
     var format: Any = js.native
     
     /* CompleteClass */
-    override def formatDimension(value: Any): String = js.native
+    override def formatDimension(value: Any): Any = js.native
     
     /* private */ /* CompleteClass */
     var format_ : Any = js.native
@@ -219,7 +219,7 @@ object libDataSourceColumnMod {
     
     /* private */ var format: Any
     
-    def formatDimension(value: Any): String
+    def formatDimension(value: Any): Any
     
     /* private */ var format_ : Any
     
@@ -291,7 +291,7 @@ object libDataSourceColumnMod {
       fieldName: String,
       fieldName_ : Any,
       format: Any,
-      formatDimension: Any => String,
+      formatDimension: Any => Any,
       format_ : Any,
       getBackDepth: Any,
       getDepth: Any,
@@ -346,7 +346,7 @@ object libDataSourceColumnMod {
       
       inline def setFormat(value: Any): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      inline def setFormatDimension(value: Any => String): Self = StObject.set(x, "formatDimension", js.Any.fromFunction1(value))
+      inline def setFormatDimension(value: Any => Any): Self = StObject.set(x, "formatDimension", js.Any.fromFunction1(value))
       
       inline def setFormat_(value: Any): Self = StObject.set(x, "format_", value.asInstanceOf[js.Any])
       

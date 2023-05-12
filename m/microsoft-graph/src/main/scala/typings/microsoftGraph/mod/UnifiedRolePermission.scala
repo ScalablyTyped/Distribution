@@ -9,7 +9,7 @@ trait UnifiedRolePermission extends StObject {
   // Set of tasks that can be performed on a resource. Required.
   var allowedResourceActions: js.UndefOr[js.Array[String]] = js.undefined
   
-  // Optional constraints that must be met for the permission to be effective.
+  // Optional constraints that must be met for the permission to be effective. Not supported for custom roles.
   var condition: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Set of tasks that may not be performed on a resource. Not yet supported.

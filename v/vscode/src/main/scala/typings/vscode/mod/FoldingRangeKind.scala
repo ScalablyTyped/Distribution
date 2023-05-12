@@ -14,8 +14,8 @@ object FoldingRangeKind extends StObject {
   def apply(value: Double): js.UndefOr[FoldingRangeKind & Double] = js.native
   
   /**
-    * Kind for folding range representing a comment.
-    */
+  		 * Kind for folding range representing a comment.
+  		 */
   @js.native
   sealed trait Comment
     extends StObject
@@ -23,8 +23,8 @@ object FoldingRangeKind extends StObject {
   /* 1 */ val Comment: typings.vscode.mod.FoldingRangeKind.Comment & Double = js.native
   
   /**
-    * Kind for folding range representing a import.
-    */
+  		 * Kind for folding range representing a import.
+  		 */
   @js.native
   sealed trait Imports
     extends StObject
@@ -32,8 +32,8 @@ object FoldingRangeKind extends StObject {
   /* 2 */ val Imports: typings.vscode.mod.FoldingRangeKind.Imports & Double = js.native
   
   /**
-    * Kind for folding range representing regions originating from folding markers like `#region` and `#endregion`.
-    */
+  		 * Kind for folding range representing regions originating from folding markers like `#region` and `#endregion`.
+  		 */
   @js.native
   sealed trait Region
     extends StObject

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "hpagent" : "1.0.0"
+      "hpagent" : "1.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "hpagent" : "1.0.0"
+      "hpagent" : "1.2.0"
     }
   ],
   "compile-devDependencies" : [

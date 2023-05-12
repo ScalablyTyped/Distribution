@@ -1,63 +1,41 @@
 package typings.twilio
 
+import typings.twilio.anon.Command
 import typings.twilio.libBasePageMod.TwilioResponsePayload
-import typings.twilio.libInterfacesMod.SerializableClass
+import typings.twilio.libRestPreviewWirelessMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libRestPreviewWirelessCommandMod {
   
-  @JSImport("twilio/lib/rest/preview/wireless/command", JSImport.Namespace)
+  @JSImport("twilio/lib/rest/preview/wireless/command", "CommandContextImpl")
   @js.native
-  val ^ : js.Any = js.native
-  
-  @JSImport("twilio/lib/rest/preview/wireless/command", "CommandContext")
-  @js.native
-  open class CommandContext protected () extends StObject {
-    /**
-      * Initialize the CommandContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param sid - The sid
-      */
-    def this(version: typings.twilio.libRestPreviewWirelessMod.^, sid: String) = this()
+  open class CommandContextImpl protected ()
+    extends StObject
+       with CommandContext {
+    def this(_version: default, sid: String) = this()
     
-    /**
-      * fetch a CommandInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def fetch(): js.Promise[CommandInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ CommandInstance, Any]): js.Promise[CommandInstance] = js.native
+    /* protected */ var _solution: CommandContextSolution = js.native
     
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
+    /* protected */ var _uri: String = js.native
+    
+    /* protected */ var _version: default = js.native
   }
   
   @JSImport("twilio/lib/rest/preview/wireless/command", "CommandInstance")
   @js.native
-  open class CommandInstance protected () extends SerializableClass {
-    /**
-      * Initialize the CommandContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param payload - The instance payload
-      * @param sid - The sid
-      */
-    def this(version: typings.twilio.libRestPreviewWirelessMod.^, payload: CommandPayload, sid: String) = this()
+  open class CommandInstance protected () extends StObject {
+    def this(_version: default, payload: CommandResource) = this()
+    def this(_version: default, payload: CommandResource, sid: String) = this()
     
-    /* private */ var _proxy: CommandContext = js.native
+    /* protected */ var _context: js.UndefOr[CommandContext] = js.native
+    
+    /* private */ def _proxy: Any = js.native
+    
+    /* protected */ var _solution: CommandContextSolution = js.native
+    
+    /* protected */ var _version: default = js.native
     
     var accountSid: String = js.native
     
@@ -74,12 +52,14 @@ object libRestPreviewWirelessCommandMod {
     var direction: String = js.native
     
     /**
-      * fetch a CommandInstance
+      * Fetch a CommandInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed CommandInstance
       */
     def fetch(): js.Promise[CommandInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[CommandInstance] = js.native
+    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]): js.Promise[CommandInstance] = js.native
     
     var sid: String = js.native
     
@@ -87,77 +67,39 @@ object libRestPreviewWirelessCommandMod {
     
     var status: String = js.native
     
-    var url: String = js.native
-  }
-  
-  /**
-    * Initialize the CommandList
-    *
-    * PLEASE NOTE that this class contains preview products that are subject to
-    * change. Use them with caution. If you currently do not have developer preview
-    * access, please contact help@twilio.com.
-    *
-    * @param version - Version of the resource
-    */
-  inline def CommandList(version: typings.twilio.libRestPreviewWirelessMod.^): CommandListInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("CommandList")(version.asInstanceOf[js.Any]).asInstanceOf[CommandListInstance]
-  
-  @JSImport("twilio/lib/rest/preview/wireless/command", "CommandPage")
-  @js.native
-  open class CommandPage protected ()
-    extends typings.twilio.libBasePageMod.^[
-          typings.twilio.libRestPreviewWirelessMod.^, 
-          CommandPayload, 
-          CommandResource, 
-          CommandInstance
-        ] {
-    /**
-      * Initialize the CommandPage
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param response - Response from the API
-      * @param solution - Path solution
-      */
-    def this(
-      version: typings.twilio.libRestPreviewWirelessMod.^,
-      response: typings.twilio.libHttpResponseMod.^[String],
-      solution: CommandSolution
-    ) = this()
-    
-    /**
-      * Build an instance of CommandInstance
-      *
-      * @param payload - Payload response from the API
-      */
-    def getInstance(payload: CommandPayload): CommandInstance = js.native
-    
     /**
       * Provide a user-friendly representation
+      *
+      * @returns Object
       */
-    def toJSON(): Any = js.native
+    def toJSON(): Command = js.native
+    
+    var url: String = js.native
   }
   
   @js.native
   trait CommandListInstance extends StObject {
     
-    /**
-      * @param sid - sid of instance
-      */
     def apply(sid: String): CommandContext = js.native
     
+    var _solution: CommandSolution = js.native
+    
+    var _uri: String = js.native
+    
+    var _version: default = js.native
+    
     /**
-      * create a CommandInstance
+      * Create a CommandInstance
       *
-      * @param opts - Options for request
+      * @param params - Parameter for request
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed CommandInstance
       */
-    def create(opts: CommandListInstanceCreateOptions): js.Promise[CommandInstance] = js.native
+    def create(params: CommandListInstanceCreateOptions): js.Promise[CommandInstance] = js.native
     def create(
-      opts: CommandListInstanceCreateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* item */ CommandInstance, Any]
+      params: CommandListInstanceCreateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[CommandInstance], Any]
     ): js.Promise[CommandInstance] = js.native
     
     /**
@@ -172,7 +114,8 @@ object libRestPreviewWirelessCommandMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Function to process each record
+      * @param { CommandListInstanceEachOptions } [params] - Options for request
+      * @param { function } [callback] - Function to process each record
       */
     def each(): Unit = js.native
     def each(
@@ -182,17 +125,9 @@ object libRestPreviewWirelessCommandMod {
           Unit
         ]
     ): Unit = js.native
+    def each(params: CommandListInstanceEachOptions): Unit = js.native
     def each(
-      opts: Unit,
-      callback: js.Function2[
-          /* item */ CommandInstance, 
-          /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
-          Unit
-        ]
-    ): Unit = js.native
-    def each(opts: CommandListInstanceEachOptions): Unit = js.native
-    def each(
-      opts: CommandListInstanceEachOptions,
+      params: CommandListInstanceEachOptions,
       callback: js.Function2[
           /* item */ CommandInstance, 
           /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
@@ -200,11 +135,6 @@ object libRestPreviewWirelessCommandMod {
         ]
     ): Unit = js.native
     
-    /**
-      * Constructs a command
-      *
-      * @param sid - The sid
-      */
     def get(sid: String): CommandContext = js.native
     
     /**
@@ -212,19 +142,14 @@ object libRestPreviewWirelessCommandMod {
       *
       * The request is executed immediately.
       *
-      * If a function is passed as the first argument, it will be used as the callback
-      * function.
-      *
-      * @param callback - Callback to handle list of records
+      * @param { string } [targetUrl] - API-generated URL for the requested results page
+      * @param { function } [callback] - Callback to handle list of records
       */
-    def getPage(): js.Promise[CommandPage] = js.native
-    def getPage(callback: js.Function2[/* error */ js.Error | Null, /* items */ CommandPage, Any]): js.Promise[CommandPage] = js.native
     def getPage(targetUrl: String): js.Promise[CommandPage] = js.native
     def getPage(
       targetUrl: String,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ CommandPage, Any]
     ): js.Promise[CommandPage] = js.native
-    def getPage(targetUrl: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ CommandPage, Any]): js.Promise[CommandPage] = js.native
     
     /**
       * Lists CommandInstance records from the API as a list.
@@ -232,17 +157,14 @@ object libRestPreviewWirelessCommandMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { CommandListInstanceOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def list(): js.Promise[js.Array[CommandInstance]] = js.native
     def list(callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[CommandInstance], Any]): js.Promise[js.Array[CommandInstance]] = js.native
+    def list(params: CommandListInstanceOptions): js.Promise[js.Array[CommandInstance]] = js.native
     def list(
-      opts: Unit,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[CommandInstance], Any]
-    ): js.Promise[js.Array[CommandInstance]] = js.native
-    def list(opts: CommandListInstanceOptions): js.Promise[js.Array[CommandInstance]] = js.native
-    def list(
-      opts: CommandListInstanceOptions,
+      params: CommandListInstanceOptions,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[CommandInstance], Any]
     ): js.Promise[js.Array[CommandInstance]] = js.native
     
@@ -254,14 +176,14 @@ object libRestPreviewWirelessCommandMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { CommandListInstancePageOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def page(): js.Promise[CommandPage] = js.native
     def page(callback: js.Function2[/* error */ js.Error | Null, /* items */ CommandPage, Any]): js.Promise[CommandPage] = js.native
-    def page(opts: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ CommandPage, Any]): js.Promise[CommandPage] = js.native
-    def page(opts: CommandListInstancePageOptions): js.Promise[CommandPage] = js.native
+    def page(params: CommandListInstancePageOptions): js.Promise[CommandPage] = js.native
     def page(
-      opts: CommandListInstancePageOptions,
+      params: CommandListInstancePageOptions,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ CommandPage, Any]
     ): js.Promise[CommandPage] = js.native
     
@@ -270,32 +192,96 @@ object libRestPreviewWirelessCommandMod {
       */
     def toJSON(): Any = js.native
   }
+  object CommandListInstance {
+    
+    @JSImport("twilio/lib/rest/preview/wireless/command", "CommandListInstance")
+    @js.native
+    def apply(version: default): CommandListInstance = js.native
+  }
   
-  /**
-    * Options to pass to create
-    *
-    * @property callbackMethod - The callback_method
-    * @property callbackUrl - The callback_url
-    * @property command - The command
-    * @property commandMode - The command_mode
-    * @property device - The device
-    * @property includeSid - The include_sid
-    * @property sim - The sim
-    */
+  @JSImport("twilio/lib/rest/preview/wireless/command", "CommandPage")
+  @js.native
+  open class CommandPage protected ()
+    extends typings.twilio.libBasePageMod.default[default, CommandPayload, CommandResource, CommandInstance] {
+    /**
+      * Initialize the CommandPage
+      *
+      * @param version - Version of the resource
+      * @param response - Response from the API
+      * @param solution - Path solution
+      */
+    def this(
+      version: default,
+      response: typings.twilio.libHttpResponseMod.default[String],
+      solution: CommandSolution
+    ) = this()
+    
+    /**
+      * Build an instance of CommandInstance
+      *
+      * @param payload - Payload response from the API
+      */
+    def getInstance(payload: CommandResource): CommandInstance = js.native
+  }
+  
+  @js.native
+  trait CommandContext extends StObject {
+    
+    /**
+      * Fetch a CommandInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed CommandInstance
+      */
+    def fetch(): js.Promise[CommandInstance] = js.native
+    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[CommandInstance], Any]): js.Promise[CommandInstance] = js.native
+    
+    /**
+      * Provide a user-friendly representation
+      */
+    def toJSON(): Any = js.native
+  }
+  
+  trait CommandContextSolution extends StObject {
+    
+    var sid: String
+  }
+  object CommandContextSolution {
+    
+    inline def apply(sid: String): CommandContextSolution = {
+      val __obj = js.Dynamic.literal(sid = sid.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CommandContextSolution]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandContextSolution] (val x: Self) extends AnyVal {
+      
+      inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait CommandListInstanceCreateOptions extends StObject {
     
+    /**  */
     var callbackMethod: js.UndefOr[String] = js.undefined
     
+    /**  */
     var callbackUrl: js.UndefOr[String] = js.undefined
     
+    /**  */
     var command: String
     
+    /**  */
     var commandMode: js.UndefOr[String] = js.undefined
     
+    /**  */
     var device: js.UndefOr[String] = js.undefined
     
+    /**  */
     var includeSid: js.UndefOr[String] = js.undefined
     
+    /**  */
     var sim: js.UndefOr[String] = js.undefined
   }
   object CommandListInstanceCreateOptions {
@@ -336,30 +322,9 @@ object libRestPreviewWirelessCommandMod {
     }
   }
   
-  /**
-    * Options to pass to each
-    *
-    * @property callback -
-    *                         Function to process each record. If this and a positional
-    *                         callback are passed, this one will be used
-    * @property device - The device
-    * @property direction - The direction
-    * @property done - Function to be called upon completion of streaming
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         each() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no pageSize is defined but a limit is defined,
-    *                         each() will attempt to read the limit with the most efficient
-    *                         page size, i.e. min(limit, 1000)
-    * @property sim - The sim
-    * @property status - The status
-    */
   trait CommandListInstanceEachOptions extends StObject {
     
+    /** Function to process each record. If this and a positional callback are passed, this one will be used */
     var callback: js.UndefOr[
         js.Function2[
           /* item */ CommandInstance, 
@@ -368,18 +333,25 @@ object libRestPreviewWirelessCommandMod {
         ]
       ] = js.undefined
     
+    /**  */
     var device: js.UndefOr[String] = js.undefined
     
+    /**  */
     var direction: js.UndefOr[String] = js.undefined
     
+    /** Function to be called upon completion of streaming */
     var done: js.UndefOr[js.Function] = js.undefined
     
+    /** Upper limit for the number of records to return. each() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
     
+    /**  */
     var sim: js.UndefOr[String] = js.undefined
     
+    /**  */
     var status: js.UndefOr[String] = js.undefined
   }
   object CommandListInstanceEachOptions {
@@ -428,36 +400,24 @@ object libRestPreviewWirelessCommandMod {
     }
   }
   
-  /**
-    * Options to pass to list
-    *
-    * @property device - The device
-    * @property direction - The direction
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         list() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no page_size is defined but a limit is defined,
-    *                         list() will attempt to read the limit with the most
-    *                         efficient page size, i.e. min(limit, 1000)
-    * @property sim - The sim
-    * @property status - The status
-    */
   trait CommandListInstanceOptions extends StObject {
     
+    /**  */
     var device: js.UndefOr[String] = js.undefined
     
+    /**  */
     var direction: js.UndefOr[String] = js.undefined
     
+    /** Upper limit for the number of records to return. list() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
     
+    /**  */
     var sim: js.UndefOr[String] = js.undefined
     
+    /**  */
     var status: js.UndefOr[String] = js.undefined
   }
   object CommandListInstanceOptions {
@@ -496,31 +456,27 @@ object libRestPreviewWirelessCommandMod {
     }
   }
   
-  /**
-    * Options to pass to page
-    *
-    * @property device - The device
-    * @property direction - The direction
-    * @property pageNumber - Page Number, this value is simply for client state
-    * @property pageSize - Number of records to return, defaults to 50
-    * @property pageToken - PageToken provided by the API
-    * @property sim - The sim
-    * @property status - The status
-    */
   trait CommandListInstancePageOptions extends StObject {
     
+    /**  */
     var device: js.UndefOr[String] = js.undefined
     
+    /**  */
     var direction: js.UndefOr[String] = js.undefined
     
+    /** Page Number, this value is simply for client state */
     var pageNumber: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
     
+    /** PageToken provided by the API */
     var pageToken: js.UndefOr[String] = js.undefined
     
+    /**  */
     var sim: js.UndefOr[String] = js.undefined
     
+    /**  */
     var status: js.UndefOr[String] = js.undefined
   }
   object CommandListInstancePageOptions {
@@ -565,31 +521,31 @@ object libRestPreviewWirelessCommandMod {
   
   trait CommandPayload
     extends StObject
-       with CommandResource
-       with TwilioResponsePayload
+       with TwilioResponsePayload {
+    
+    var commands: js.Array[CommandResource]
+  }
   object CommandPayload {
     
     inline def apply(
-      account_sid: String,
-      command: String,
-      command_mode: String,
-      date_created: js.Date,
-      date_updated: js.Date,
-      device_sid: String,
-      direction: String,
+      commands: js.Array[CommandResource],
       first_page_uri: String,
       next_page_uri: String,
       page: Double,
       page_size: Double,
       previous_page_uri: String,
-      sid: String,
-      sim_sid: String,
-      status: String,
-      uri: String,
-      url: String
+      uri: String
     ): CommandPayload = {
-      val __obj = js.Dynamic.literal(account_sid = account_sid.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], command_mode = command_mode.asInstanceOf[js.Any], date_created = date_created.asInstanceOf[js.Any], date_updated = date_updated.asInstanceOf[js.Any], device_sid = device_sid.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], first_page_uri = first_page_uri.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any], sim_sid = sim_sid.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any], first_page_uri = first_page_uri.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommandPayload]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandPayload] (val x: Self) extends AnyVal {
+      
+      inline def setCommands(value: js.Array[CommandResource]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+      
+      inline def setCommandsVarargs(value: CommandResource*): Self = StObject.set(x, "commands", js.Array(value*))
     }
   }
   

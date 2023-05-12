@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.TextEmphasisStyle
+import typings.csstype.mod.Property.MixBlendMode
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `374` extends StObject {
   
   var value: js.UndefOr[
-    TextEmphasisStyle | (js.Array[
-      (Extract[
-        js.UndefOr[TextEmphasisStyle | js.Array[NonNullable[js.UndefOr[TextEmphasisStyle]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[TextEmphasisStyle]]
+    MixBlendMode | (js.Array[
+      (Extract[js.UndefOr[MixBlendMode | js.Array[NonNullable[js.UndefOr[MixBlendMode]]]], String]) | NonNullable[js.UndefOr[MixBlendMode]]
     ])
   ] = js.native
 }

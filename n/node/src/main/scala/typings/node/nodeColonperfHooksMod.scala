@@ -17,6 +17,7 @@ object nodeColonperfHooksMod {
   val ^ : js.Any = js.native
   
   /**
+    * The constructor of this class is not exposed to users directly.
     * @since v8.5.0
     */
   @JSImport("node:perf_hooks", "PerformanceEntry")
@@ -24,11 +25,21 @@ object nodeColonperfHooksMod {
   /* protected */ open class PerformanceEntry ()
     extends typings.node.perfHooksMod.PerformanceEntry
   
+  /**
+    * Exposes marks created via the `Performance.mark()` method.
+    * @since v18.2.0, v16.17.0
+    */
   @JSImport("node:perf_hooks", "PerformanceMark")
   @js.native
   /* protected */ open class PerformanceMark ()
     extends typings.node.perfHooksMod.PerformanceMark
   
+  /**
+    * Exposes measures created via the `Performance.measure()` method.
+    *
+    * The constructor of this class is not exposed to users directly.
+    * @since v18.2.0, v16.17.0
+    */
   @JSImport("node:perf_hooks", "PerformanceMeasure")
   @js.native
   /* protected */ open class PerformanceMeasure ()
@@ -46,6 +57,9 @@ object nodeColonperfHooksMod {
   /* protected */ open class PerformanceNodeTiming ()
     extends typings.node.perfHooksMod.PerformanceNodeTiming
   
+  /**
+    * @since v8.5.0
+    */
   @JSImport("node:perf_hooks", "PerformanceObserver")
   @js.native
   open class PerformanceObserver protected ()
@@ -120,7 +134,7 @@ object nodeColonperfHooksMod {
     * detect.
     *
     * ```js
-    * const { monitorEventLoopDelay } = require('perf_hooks');
+    * const { monitorEventLoopDelay } = require('node:perf_hooks');
     * const h = monitorEventLoopDelay({ resolution: 20 });
     * h.enable();
     * // Do something.

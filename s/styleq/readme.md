@@ -1,7 +1,7 @@
 
 # Scala.js typings for styleq
 
-Typings are for version 0.1.2
+Typings are for version 0.1.3
 
 ## Library description:
 A quick JavaScript runtime for Atomic CSS compilers.

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "listr2" : "5.0.5"
+      "listr2" : "6.4.2"
     }
   ],
   "test-dependencies" : [
     {
-      "listr2" : "5.0.5"
+      "listr2" : "6.4.2"
     }
   ],
   "compile-devDependencies" : [

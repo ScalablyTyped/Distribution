@@ -19,7 +19,7 @@ object global {
   
   /**
     * Xrm Namespace
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference External Link: Client API Reference}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference External Link: Client API Reference}
     */
   @JSGlobal("Xrm")
   @js.native

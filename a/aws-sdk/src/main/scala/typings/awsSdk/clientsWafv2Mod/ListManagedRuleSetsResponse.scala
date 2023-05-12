@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListManagedRuleSetsResponse extends StObject {
   
   /**
-    * Your managed rule sets. 
+    * Your managed rule sets. If you specified a Limit in your request, this might not be the full list. 
     */
   var ManagedRuleSets: js.UndefOr[ManagedRuleSetSummaries] = js.undefined
   

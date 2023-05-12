@@ -18,7 +18,7 @@ object provider {
   
   /**
     * This class represents invalidation states of a renderable object. A renderer can optimize its rendering strategies based on the information in this object.
-    * @property MARK_INITIAL {H.map.provider.Invalidations.Mark} - This constant represents the initial invalidation mark an invalidations object has.
+    * MARK_INITIAL {H.map.provider.Invalidations.Mark} - This constant represents the initial invalidation mark an invalidations object has.
     */
   trait Invalidations extends StObject {
     
@@ -161,7 +161,7 @@ object provider {
   
   /**
     * An ImageTileProvider uses network service to provide bitmap images as tiles.
-    * @property tileSize {number} - Size of a tile image supported by the provider
+    * tileSize {number} - Size of a tile image supported by the provider
     */
   @js.native
   trait ImageTileProvider
@@ -174,14 +174,14 @@ object provider {
     
     /**
       * Options to initialize an ImageTileProvider instance
-      * @property uri {string=} - The provider's unique resource identifier which must not contain an underscore "_". If omitted an auto-generated unique Session ID is used. If a cross
+      * uri {string=} - The provider's unique resource identifier which must not contain an underscore "_". If omitted an auto-generated unique Session ID is used. If a cross
       * sessions consistent IDs is needed (e.g. for storing provider data) this property must be specified.
-      * @property min {number=} - The minimal supported zoom level, default is 0
-      * @property max {number=} - The maximal supported zoom level, default is 22
-      * @property getCopyrights {(function(H.geo.Rect, number): ?Array<H.map.ICopyright>)=} - A function to replace the default implementation of H.map.provider.Provider#getCopyrights
-      * @property tileSize {number=} - The size of a tile as edge length in pixels. It must be 2^n where n is in range [0 ... 30], default is 256
-      * @property getURL {function(number, number, number)} - The function to create an URL for the specified tile. If it returns a falsy the tile is not requested.
-      * @property crossOrigin {(string | boolean=)} - The CORS settings to use for the crossOrigin attribute for the image, if omitted or if the value evaluates to false no CORS settings
+      * min {number=} - The minimal supported zoom level, default is 0
+      * max {number=} - The maximal supported zoom level, default is 22
+      * getCopyrights {(function(H.geo.Rect, number): ?Array<H.map.ICopyright>)=} - A function to replace the default implementation of H.map.provider.Provider#getCopyrights
+      * tileSize {number=} - The size of a tile as edge length in pixels. It must be 2^n where n is in range [0 ... 30], default is 256
+      * getURL {function(number, number, number)} - The function to create an URL for the specified tile. If it returns a falsy the tile is not requested.
+      * crossOrigin {(string | boolean=)} - The CORS settings to use for the crossOrigin attribute for the image, if omitted or if the value evaluates to false no CORS settings
       * are used.
       */
     trait Options extends StObject {
@@ -263,13 +263,13 @@ object provider {
   
   /**
     * A MarkerTileProvider uses network service to provide markers on tile basis.
-    * @property requestTile {} - Request data on a tile basis
-    * @property cancelTile {} - Cancels tile from being requested using x, y, z coordinates (column, row, zoom)
-    * @property cancelTileByKey {} - Cancels tile from being requested using a tile-key
-    * @property uri {string} - This provider's unique resource identifier, if not provided at construction time it defaults to provider's uid
-    * @property min {number} - Minimum zoom level at which provider can serve data, set at construction time
-    * @property max {number} - Maximum zoom level at which provider can server data, set at construction time
-    * @property uid {string} - Provider instance unique identifier, generated at construction time
+    * requestTile {} - Request data on a tile basis
+    * cancelTile {} - Cancels tile from being requested using x, y, z coordinates (column, row, zoom)
+    * cancelTileByKey {} - Cancels tile from being requested using a tile-key
+    * uri {string} - This provider's unique resource identifier, if not provided at construction time it defaults to provider's uid
+    * min {number} - Minimum zoom level at which provider can serve data, set at construction time
+    * max {number} - Maximum zoom level at which provider can server data, set at construction time
+    * uid {string} - Provider instance unique identifier, generated at construction time
     */
   @js.native
   trait MarkerTileProvider
@@ -293,11 +293,11 @@ object provider {
     
     /**
       * Options which are used to initialize the MarkerTileProvider object.
-      * @property min {number=} - The minimal supported zoom level, default is 0
-      * @property max {number=} - The maximal supported zoom level, default is 22
-      * @property requestData {function(number, number, number, function(Array<H.map.AbstractMarker>), Function): H.util.ICancelable} - function that fetches marker data and creates array
+      * min {number=} - The minimal supported zoom level, default is 0
+      * max {number=} - The maximal supported zoom level, default is 22
+      * requestData {function(number, number, number, function(Array<H.map.AbstractMarker>), Function): H.util.ICancelable} - function that fetches marker data and creates array
       * of H.map.AbstractMarker that is passed success callback, if function fails to fetch data onError callback must be called
-      * @property providesDomMarkers {boolean=} - indicates if markers provided are of type H.map.DomMarker or H.map.Marker, default is H.map.Marker
+      * providesDomMarkers {boolean=} - indicates if markers provided are of type H.map.DomMarker or H.map.Marker, default is H.map.Marker
       */
     trait Options extends StObject {
       
@@ -446,10 +446,10 @@ object provider {
   /**
     * A Provider defines an object which works as a database for the map. Providers can exists in different forms they can implement client side object storage or they can request data from
     * the remote service.
-    * @property uri {string} - This provider's unique resource identifier, if not provided at construction time it defaults to provider's uid
-    * @property min {number} - Minimum zoom level at which provider can serve data, set at construction time
-    * @property max {number} - Maximum zoom level at which provider can server data, set at construction time
-    * @property uid {string} - Provider instance unique identifier, generated at construction time
+    * uri {string} - This provider's unique resource identifier, if not provided at construction time it defaults to provider's uid
+    * min {number} - Minimum zoom level at which provider can serve data, set at construction time
+    * max {number} - Maximum zoom level at which provider can server data, set at construction time
+    * uid {string} - Provider instance unique identifier, generated at construction time
     */
   @js.native
   trait Provider
@@ -478,11 +478,11 @@ object provider {
     
     /**
       * Options to initialize a Provider instance
-      * @property uri {string=} - The provider's unique resource identifier which must not contain an underscore "_". If omitted an auto-generated unique Session ID is used. If a cross
+      * uri {string=} - The provider's unique resource identifier which must not contain an underscore "_". If omitted an auto-generated unique Session ID is used. If a cross
       * sessions consistent IDs is needed (e.g. for storing provider data) this property must be specified.
-      * @property min {number=} - The minimal supported zoom level, default is 0
-      * @property max {number=} - The maximal supported zoom level, default is 22
-      * @property getCopyrights {(function(H.geo.Rect, number): ?Array<H.map.ICopyright>)=} - A function to replace the default implementation of H.map.provider.Provider#getCopyrights
+      * min {number=} - The minimal supported zoom level, default is 0
+      * max {number=} - The maximal supported zoom level, default is 22
+      * getCopyrights {(function(H.geo.Rect, number): ?Array<H.map.ICopyright>)=} - A function to replace the default implementation of H.map.provider.Provider#getCopyrights
       */
     trait Options extends StObject {
       
@@ -617,12 +617,12 @@ object provider {
   /**
     * Generic Tile object which represents a part of the world fiting into the Tile area represented by the Tiel coordinates (x - row, y - column) and the zoom level (z). Number of tiles
     * at particular zoom level (which means number of areas into world is being splitted) is defined as following: numberOfRows &#x3D; numberOfColumns &#x3D; 2^zoomlevel
-    * @property key {string} - Unique tile key generated by provider
-    * @property data {*} - Tile data (an image for example)
-    * @property valid {boolean} - This property holds a boolean flag indicating whether this tile is still valid (true) or whether it should be re-fetched (false)
-    * @property x {number} - Tile column
-    * @property y {number} - Tile row
-    * @property z {number} - Tile zoom level
+    * key {string} - Unique tile key generated by provider
+    * data {*} - Tile data (an image for example)
+    * valid {boolean} - This property holds a boolean flag indicating whether this tile is still valid (true) or whether it should be re-fetched (false)
+    * x {number} - Tile column
+    * y {number} - Tile row
+    * z {number} - Tile zoom level
     */
   trait Tile extends StObject {
     
@@ -664,13 +664,13 @@ object provider {
   
   /**
     * TileProvider is an abstract class to provide data on a tile basis
-    * @property requestTile {} - Request data on a tile basis
-    * @property cancelTile {} - Cancels tile from being requested using x, y, z coordinates (column, row, zoom)
-    * @property cancelTileByKey {} - Cancels tile from being requested using a tile-key
-    * @property uri {string} - This provider&#x27;s unique resource identifier, if not provided at construction time it defaults to provider&#x27;s uid
-    * @property min {number} - Minimum zoom level at which provider can serve data, set at construction time
-    * @property max {number} - Maximum zoom level at which provider can server data, set at construction time
-    * @property uid {string} - Provider instance unique identifier, generated at construction time
+    * requestTile {} - Request data on a tile basis
+    * cancelTile {} - Cancels tile from being requested using x, y, z coordinates (column, row, zoom)
+    * cancelTileByKey {} - Cancels tile from being requested using a tile-key
+    * uri {string} - This provider&#x27;s unique resource identifier, if not provided at construction time it defaults to provider&#x27;s uid
+    * min {number} - Minimum zoom level at which provider can serve data, set at construction time
+    * max {number} - Maximum zoom level at which provider can server data, set at construction time
+    * uid {string} - Provider instance unique identifier, generated at construction time
     */
   @js.native
   trait TileProvider
@@ -709,12 +709,12 @@ object provider {
   object TileProvider {
     
     /**
-      * @property uri {string=} - The provider&#x27;s unique resource identifier which must not contain an underscore &quot;_&quot;. If omitted an auto-generated unique Session ID is used.
+      * uri {string=} - The provider&#x27;s unique resource identifier which must not contain an underscore &quot;_&quot;. If omitted an auto-generated unique Session ID is used.
       * If a cross sessions consistent IDs is needed (e.g. for storing provider data) this property must be specified.
-      * @property min {number=} - The minimal supported zoom level, default is 0
-      * @property max {number=} - The maximal supported zoom level, default is 22
-      * @property getCopyrights {(function(H.geo.Rect, number): Array<H.map.ICopyright>)=} - A function to replace the default implememtation of H.map.provider.Provider#getCopyrights
-      * @property tileSize {number=} - The size of a tile as edge length in pixels. It must be 2^n where n is in range [0 ... 30], default is 256
+      * min {number=} - The minimal supported zoom level, default is 0
+      * max {number=} - The maximal supported zoom level, default is 22
+      * getCopyrights {(function(H.geo.Rect, number): Array<H.map.ICopyright>)=} - A function to replace the default implememtation of H.map.provider.Provider#getCopyrights
+      * tileSize {number=} - The size of a tile as edge length in pixels. It must be 2^n where n is in range [0 ... 30], default is 256
       */
     trait Options extends StObject {
       

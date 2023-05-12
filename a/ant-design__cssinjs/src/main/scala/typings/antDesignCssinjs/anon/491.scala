@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ScrollbarGutter
+import typings.csstype.mod.Property.WebkitMaskRepeatY
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `491` extends StObject {
   
   var value: js.UndefOr[
-    ScrollbarGutter | (js.Array[
+    WebkitMaskRepeatY | (js.Array[
       (Extract[
-        js.UndefOr[ScrollbarGutter | js.Array[NonNullable[js.UndefOr[ScrollbarGutter]]]], 
+        js.UndefOr[WebkitMaskRepeatY | js.Array[NonNullable[js.UndefOr[WebkitMaskRepeatY]]]], 
         String
-      ]) | NonNullable[js.UndefOr[ScrollbarGutter]]
+      ]) | NonNullable[js.UndefOr[WebkitMaskRepeatY]]
     ])
   ] = js.native
 }

@@ -106,7 +106,9 @@ import typings.csstype.mod.Property.BreakAfter
 import typings.csstype.mod.Property.BreakBefore
 import typings.csstype.mod.Property.BreakInside
 import typings.csstype.mod.Property.CaptionSide
+import typings.csstype.mod.Property.Caret
 import typings.csstype.mod.Property.CaretColor
+import typings.csstype.mod.Property.CaretShape
 import typings.csstype.mod.Property.Clear
 import typings.csstype.mod.Property.Clip
 import typings.csstype.mod.Property.ClipPath
@@ -126,6 +128,14 @@ import typings.csstype.mod.Property.ColumnSpan
 import typings.csstype.mod.Property.ColumnWidth
 import typings.csstype.mod.Property.Columns
 import typings.csstype.mod.Property.Contain
+import typings.csstype.mod.Property.ContainIntrinsicBlockSize
+import typings.csstype.mod.Property.ContainIntrinsicHeight
+import typings.csstype.mod.Property.ContainIntrinsicInlineSize
+import typings.csstype.mod.Property.ContainIntrinsicSize
+import typings.csstype.mod.Property.ContainIntrinsicWidth
+import typings.csstype.mod.Property.Container
+import typings.csstype.mod.Property.ContainerName
+import typings.csstype.mod.Property.ContainerType
 import typings.csstype.mod.Property.Content
 import typings.csstype.mod.Property.ContentVisibility
 import typings.csstype.mod.Property.CounterIncrement
@@ -156,6 +166,7 @@ import typings.csstype.mod.Property.FontFeatureSettings
 import typings.csstype.mod.Property.FontKerning
 import typings.csstype.mod.Property.FontLanguageOverride
 import typings.csstype.mod.Property.FontOpticalSizing
+import typings.csstype.mod.Property.FontPalette
 import typings.csstype.mod.Property.FontSize
 import typings.csstype.mod.Property.FontSizeAdjust
 import typings.csstype.mod.Property.FontSmooth
@@ -166,6 +177,7 @@ import typings.csstype.mod.Property.FontVariant
 import typings.csstype.mod.Property.FontVariantAlternates
 import typings.csstype.mod.Property.FontVariantCaps
 import typings.csstype.mod.Property.FontVariantEastAsian
+import typings.csstype.mod.Property.FontVariantEmoji
 import typings.csstype.mod.Property.FontVariantLigatures
 import typings.csstype.mod.Property.FontVariantNumeric
 import typings.csstype.mod.Property.FontVariantPosition
@@ -192,6 +204,7 @@ import typings.csstype.mod.Property.GridTemplateRows
 import typings.csstype.mod.Property.HangingPunctuation
 import typings.csstype.mod.Property.Height
 import typings.csstype.mod.Property.HyphenateCharacter
+import typings.csstype.mod.Property.HyphenateLimitChars
 import typings.csstype.mod.Property.Hyphens
 import typings.csstype.mod.Property.ImageOrientation
 import typings.csstype.mod.Property.ImageRendering
@@ -233,6 +246,7 @@ import typings.csstype.mod.Property.MarginInlineStart
 import typings.csstype.mod.Property.MarginLeft
 import typings.csstype.mod.Property.MarginRight
 import typings.csstype.mod.Property.MarginTop
+import typings.csstype.mod.Property.MarginTrim
 import typings.csstype.mod.Property.Marker
 import typings.csstype.mod.Property.MarkerEnd
 import typings.csstype.mod.Property.MarkerMid
@@ -268,6 +282,7 @@ import typings.csstype.mod.Property.MinInlineSize
 import typings.csstype.mod.Property.MinWidth
 import typings.csstype.mod.Property.MixBlendMode
 import typings.csstype.mod.Property.MozAppearance
+import typings.csstype.mod.Property.MozBinding
 import typings.csstype.mod.Property.MozBorderBottomColors
 import typings.csstype.mod.Property.MozBorderLeftColors
 import typings.csstype.mod.Property.MozBorderRightColors
@@ -335,6 +350,7 @@ import typings.csstype.mod.Property.Offset
 import typings.csstype.mod.Property.OffsetAnchor
 import typings.csstype.mod.Property.OffsetDistance
 import typings.csstype.mod.Property.OffsetPath
+import typings.csstype.mod.Property.OffsetPosition
 import typings.csstype.mod.Property.OffsetRotate
 import typings.csstype.mod.Property.Opacity
 import typings.csstype.mod.Property.Order
@@ -369,6 +385,7 @@ import typings.csstype.mod.Property.PaddingInlineStart
 import typings.csstype.mod.Property.PaddingLeft
 import typings.csstype.mod.Property.PaddingRight
 import typings.csstype.mod.Property.PaddingTop
+import typings.csstype.mod.Property.Page
 import typings.csstype.mod.Property.PageBreakAfter
 import typings.csstype.mod.Property.PageBreakBefore
 import typings.csstype.mod.Property.PageBreakInside
@@ -416,6 +433,9 @@ import typings.csstype.mod.Property.ScrollPaddingTop
 import typings.csstype.mod.Property.ScrollSnapAlign
 import typings.csstype.mod.Property.ScrollSnapStop
 import typings.csstype.mod.Property.ScrollSnapType
+import typings.csstype.mod.Property.ScrollTimeline
+import typings.csstype.mod.Property.ScrollTimelineAxis
+import typings.csstype.mod.Property.ScrollTimelineName
 import typings.csstype.mod.Property.ScrollbarColor
 import typings.csstype.mod.Property.ScrollbarGutter
 import typings.csstype.mod.Property.ScrollbarWidth
@@ -476,6 +496,7 @@ import typings.csstype.mod.Property.UnicodeBidi
 import typings.csstype.mod.Property.UserSelect
 import typings.csstype.mod.Property.VectorEffect
 import typings.csstype.mod.Property.VerticalAlign
+import typings.csstype.mod.Property.ViewTransitionName
 import typings.csstype.mod.Property.Visibility
 import typings.csstype.mod.Property.WebkitAppearance
 import typings.csstype.mod.Property.WebkitBorderBefore
@@ -570,6 +591,13 @@ trait SystemCssProperties
   
   var MozBackfaceVisibility: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BackfaceVisibility]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[BackfaceVisibility]]]) | SystemStyleObject
+  ] = js.undefined
+  
+  var MozBinding: js.UndefOr[
+    ResponsiveStyleValue[js.UndefOr[typings.csstype.mod.Property.MozBinding]] | (js.Function1[
+      /* theme */ Any, 
+      ResponsiveStyleValue[js.UndefOr[typings.csstype.mod.Property.MozBinding]]
+    ]) | SystemStyleObject
   ] = js.undefined
   
   var MozBorderBottomColors: js.UndefOr[
@@ -1948,8 +1976,16 @@ trait SystemCssProperties
     ResponsiveStyleValue[js.UndefOr[CaptionSide]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[CaptionSide]]]) | SystemStyleObject
   ] = js.undefined
   
+  var caret: js.UndefOr[
+    ResponsiveStyleValue[js.UndefOr[Caret]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[Caret]]]) | SystemStyleObject
+  ] = js.undefined
+  
   var caretColor: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[CaretColor]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[CaretColor]]]) | SystemStyleObject
+  ] = js.undefined
+  
+  var caretShape: js.UndefOr[
+    ResponsiveStyleValue[js.UndefOr[CaretShape]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[CaretShape]]]) | SystemStyleObject
   ] = js.undefined
   
   var clear: js.UndefOr[
@@ -2033,6 +2069,53 @@ trait SystemCssProperties
   
   var contain: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[Contain]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[Contain]]]) | SystemStyleObject
+  ] = js.undefined
+  
+  var containIntrinsicBlockSize: js.UndefOr[
+    (ResponsiveStyleValue[js.UndefOr[ContainIntrinsicBlockSize[Double | String]]]) | (js.Function1[
+      /* theme */ Any, 
+      ResponsiveStyleValue[js.UndefOr[ContainIntrinsicBlockSize[Double | String]]]
+    ]) | SystemStyleObject
+  ] = js.undefined
+  
+  var containIntrinsicHeight: js.UndefOr[
+    (ResponsiveStyleValue[js.UndefOr[ContainIntrinsicHeight[Double | String]]]) | (js.Function1[
+      /* theme */ Any, 
+      ResponsiveStyleValue[js.UndefOr[ContainIntrinsicHeight[Double | String]]]
+    ]) | SystemStyleObject
+  ] = js.undefined
+  
+  var containIntrinsicInlineSize: js.UndefOr[
+    (ResponsiveStyleValue[js.UndefOr[ContainIntrinsicInlineSize[Double | String]]]) | (js.Function1[
+      /* theme */ Any, 
+      ResponsiveStyleValue[js.UndefOr[ContainIntrinsicInlineSize[Double | String]]]
+    ]) | SystemStyleObject
+  ] = js.undefined
+  
+  var containIntrinsicSize: js.UndefOr[
+    (ResponsiveStyleValue[js.UndefOr[ContainIntrinsicSize[Double | String]]]) | (js.Function1[
+      /* theme */ Any, 
+      ResponsiveStyleValue[js.UndefOr[ContainIntrinsicSize[Double | String]]]
+    ]) | SystemStyleObject
+  ] = js.undefined
+  
+  var containIntrinsicWidth: js.UndefOr[
+    (ResponsiveStyleValue[js.UndefOr[ContainIntrinsicWidth[Double | String]]]) | (js.Function1[
+      /* theme */ Any, 
+      ResponsiveStyleValue[js.UndefOr[ContainIntrinsicWidth[Double | String]]]
+    ]) | SystemStyleObject
+  ] = js.undefined
+  
+  var container: js.UndefOr[
+    ResponsiveStyleValue[js.UndefOr[Container]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[Container]]]) | SystemStyleObject
+  ] = js.undefined
+  
+  var containerName: js.UndefOr[
+    ResponsiveStyleValue[js.UndefOr[ContainerName]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[ContainerName]]]) | SystemStyleObject
+  ] = js.undefined
+  
+  var containerType: js.UndefOr[
+    ResponsiveStyleValue[js.UndefOr[ContainerType]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[ContainerType]]]) | SystemStyleObject
   ] = js.undefined
   
   var content: js.UndefOr[
@@ -2155,6 +2238,10 @@ trait SystemCssProperties
     ResponsiveStyleValue[js.UndefOr[FontOpticalSizing]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[FontOpticalSizing]]]) | SystemStyleObject
   ] = js.undefined
   
+  var fontPalette: js.UndefOr[
+    ResponsiveStyleValue[js.UndefOr[FontPalette]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[FontPalette]]]) | SystemStyleObject
+  ] = js.undefined
+  
   var fontSize: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[FontSize[Double | String]]]) | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[FontSize[Double | String]]]]) | SystemStyleObject
   ] = js.undefined
@@ -2193,6 +2280,10 @@ trait SystemCssProperties
   
   var fontVariantEastAsian: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[FontVariantEastAsian]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[FontVariantEastAsian]]]) | SystemStyleObject
+  ] = js.undefined
+  
+  var fontVariantEmoji: js.UndefOr[
+    ResponsiveStyleValue[js.UndefOr[FontVariantEmoji]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[FontVariantEmoji]]]) | SystemStyleObject
   ] = js.undefined
   
   var fontVariantLigatures: js.UndefOr[
@@ -2306,6 +2397,10 @@ trait SystemCssProperties
   
   var hyphenateCharacter: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[HyphenateCharacter]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[HyphenateCharacter]]]) | SystemStyleObject
+  ] = js.undefined
+  
+  var hyphenateLimitChars: js.UndefOr[
+    ResponsiveStyleValue[js.UndefOr[HyphenateLimitChars]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[HyphenateLimitChars]]]) | SystemStyleObject
   ] = js.undefined
   
   var hyphens: js.UndefOr[
@@ -2500,6 +2595,10 @@ trait SystemCssProperties
   
   var marginTop: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[MarginTop[Double | String]]]) | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[MarginTop[Double | String]]]]) | SystemStyleObject
+  ] = js.undefined
+  
+  var marginTrim: js.UndefOr[
+    ResponsiveStyleValue[js.UndefOr[MarginTrim]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[MarginTrim]]]) | SystemStyleObject
   ] = js.undefined
   
   var marginX: js.UndefOr[
@@ -3094,6 +3193,10 @@ trait SystemCssProperties
     ResponsiveStyleValue[js.UndefOr[OffsetPath]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[OffsetPath]]]) | SystemStyleObject
   ] = js.undefined
   
+  var offsetPosition: js.UndefOr[
+    (ResponsiveStyleValue[js.UndefOr[OffsetPosition[Double | String]]]) | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[OffsetPosition[Double | String]]]]) | SystemStyleObject
+  ] = js.undefined
+  
   var offsetRotate: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[OffsetRotate]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[OffsetRotate]]]) | SystemStyleObject
   ] = js.undefined
@@ -3292,6 +3395,10 @@ trait SystemCssProperties
         ]
       ]
     ]) | SystemStyleObject
+  ] = js.undefined
+  
+  var page: js.UndefOr[
+    ResponsiveStyleValue[js.UndefOr[Page]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[Page]]]) | SystemStyleObject
   ] = js.undefined
   
   var pageBreakAfter: js.UndefOr[
@@ -3667,6 +3774,18 @@ trait SystemCssProperties
     ResponsiveStyleValue[js.UndefOr[ScrollSnapType]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[ScrollSnapType]]]) | SystemStyleObject
   ] = js.undefined
   
+  var scrollTimeline: js.UndefOr[
+    ResponsiveStyleValue[js.UndefOr[ScrollTimeline]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[ScrollTimeline]]]) | SystemStyleObject
+  ] = js.undefined
+  
+  var scrollTimelineAxis: js.UndefOr[
+    ResponsiveStyleValue[js.UndefOr[ScrollTimelineAxis]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[ScrollTimelineAxis]]]) | SystemStyleObject
+  ] = js.undefined
+  
+  var scrollTimelineName: js.UndefOr[
+    ResponsiveStyleValue[js.UndefOr[ScrollTimelineName]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[ScrollTimelineName]]]) | SystemStyleObject
+  ] = js.undefined
+  
   var scrollbarColor: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ScrollbarColor]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[ScrollbarColor]]]) | SystemStyleObject
   ] = js.undefined
@@ -3935,6 +4054,10 @@ trait SystemCssProperties
   
   var verticalAlign: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[VerticalAlign[Double | String]]]) | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[VerticalAlign[Double | String]]]]) | SystemStyleObject
+  ] = js.undefined
+  
+  var viewTransitionName: js.UndefOr[
+    ResponsiveStyleValue[js.UndefOr[ViewTransitionName]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[ViewTransitionName]]]) | SystemStyleObject
   ] = js.undefined
   
   var visibility: js.UndefOr[
@@ -5367,6 +5490,10 @@ object SystemCssProperties {
     
     inline def setCaptionSideVarargs(value: (js.UndefOr[CaptionSide] | Null)*): Self = StObject.set(x, "captionSide", js.Array(value*))
     
+    inline def setCaret(
+      value: ResponsiveStyleValue[js.UndefOr[Caret]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[Caret]]]) | SystemStyleObject
+    ): Self = StObject.set(x, "caret", value.asInstanceOf[js.Any])
+    
     inline def setCaretColor(
       value: ResponsiveStyleValue[js.UndefOr[CaretColor]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[CaretColor]]]) | SystemStyleObject
     ): Self = StObject.set(x, "caretColor", value.asInstanceOf[js.Any])
@@ -5378,6 +5505,26 @@ object SystemCssProperties {
     inline def setCaretColorUndefined: Self = StObject.set(x, "caretColor", js.undefined)
     
     inline def setCaretColorVarargs(value: (js.UndefOr[CaretColor] | Null)*): Self = StObject.set(x, "caretColor", js.Array(value*))
+    
+    inline def setCaretFunction1(value: /* theme */ Any => ResponsiveStyleValue[js.UndefOr[Caret]]): Self = StObject.set(x, "caret", js.Any.fromFunction1(value))
+    
+    inline def setCaretNull: Self = StObject.set(x, "caret", null)
+    
+    inline def setCaretShape(
+      value: ResponsiveStyleValue[js.UndefOr[CaretShape]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[CaretShape]]]) | SystemStyleObject
+    ): Self = StObject.set(x, "caretShape", value.asInstanceOf[js.Any])
+    
+    inline def setCaretShapeFunction1(value: /* theme */ Any => ResponsiveStyleValue[js.UndefOr[CaretShape]]): Self = StObject.set(x, "caretShape", js.Any.fromFunction1(value))
+    
+    inline def setCaretShapeNull: Self = StObject.set(x, "caretShape", null)
+    
+    inline def setCaretShapeUndefined: Self = StObject.set(x, "caretShape", js.undefined)
+    
+    inline def setCaretShapeVarargs(value: (js.UndefOr[CaretShape] | Null)*): Self = StObject.set(x, "caretShape", js.Array(value*))
+    
+    inline def setCaretUndefined: Self = StObject.set(x, "caret", js.undefined)
+    
+    inline def setCaretVarargs(value: (js.UndefOr[Caret] | Null)*): Self = StObject.set(x, "caret", js.Array(value*))
     
     inline def setClear(
       value: ResponsiveStyleValue[js.UndefOr[Clear]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[Clear]]]) | SystemStyleObject
@@ -5616,11 +5763,128 @@ object SystemCssProperties {
     
     inline def setContainFunction1(value: /* theme */ Any => ResponsiveStyleValue[js.UndefOr[Contain]]): Self = StObject.set(x, "contain", js.Any.fromFunction1(value))
     
+    inline def setContainIntrinsicBlockSize(
+      value: (ResponsiveStyleValue[js.UndefOr[ContainIntrinsicBlockSize[Double | String]]]) | (js.Function1[
+          /* theme */ Any, 
+          ResponsiveStyleValue[js.UndefOr[ContainIntrinsicBlockSize[Double | String]]]
+        ]) | SystemStyleObject
+    ): Self = StObject.set(x, "containIntrinsicBlockSize", value.asInstanceOf[js.Any])
+    
+    inline def setContainIntrinsicBlockSizeFunction1(
+      value: /* theme */ Any => ResponsiveStyleValue[js.UndefOr[ContainIntrinsicBlockSize[Double | String]]]
+    ): Self = StObject.set(x, "containIntrinsicBlockSize", js.Any.fromFunction1(value))
+    
+    inline def setContainIntrinsicBlockSizeNull: Self = StObject.set(x, "containIntrinsicBlockSize", null)
+    
+    inline def setContainIntrinsicBlockSizeUndefined: Self = StObject.set(x, "containIntrinsicBlockSize", js.undefined)
+    
+    inline def setContainIntrinsicBlockSizeVarargs(value: ((js.UndefOr[ContainIntrinsicBlockSize[Double | String]]) | Null)*): Self = StObject.set(x, "containIntrinsicBlockSize", js.Array(value*))
+    
+    inline def setContainIntrinsicHeight(
+      value: (ResponsiveStyleValue[js.UndefOr[ContainIntrinsicHeight[Double | String]]]) | (js.Function1[
+          /* theme */ Any, 
+          ResponsiveStyleValue[js.UndefOr[ContainIntrinsicHeight[Double | String]]]
+        ]) | SystemStyleObject
+    ): Self = StObject.set(x, "containIntrinsicHeight", value.asInstanceOf[js.Any])
+    
+    inline def setContainIntrinsicHeightFunction1(
+      value: /* theme */ Any => ResponsiveStyleValue[js.UndefOr[ContainIntrinsicHeight[Double | String]]]
+    ): Self = StObject.set(x, "containIntrinsicHeight", js.Any.fromFunction1(value))
+    
+    inline def setContainIntrinsicHeightNull: Self = StObject.set(x, "containIntrinsicHeight", null)
+    
+    inline def setContainIntrinsicHeightUndefined: Self = StObject.set(x, "containIntrinsicHeight", js.undefined)
+    
+    inline def setContainIntrinsicHeightVarargs(value: ((js.UndefOr[ContainIntrinsicHeight[Double | String]]) | Null)*): Self = StObject.set(x, "containIntrinsicHeight", js.Array(value*))
+    
+    inline def setContainIntrinsicInlineSize(
+      value: (ResponsiveStyleValue[js.UndefOr[ContainIntrinsicInlineSize[Double | String]]]) | (js.Function1[
+          /* theme */ Any, 
+          ResponsiveStyleValue[js.UndefOr[ContainIntrinsicInlineSize[Double | String]]]
+        ]) | SystemStyleObject
+    ): Self = StObject.set(x, "containIntrinsicInlineSize", value.asInstanceOf[js.Any])
+    
+    inline def setContainIntrinsicInlineSizeFunction1(
+      value: /* theme */ Any => ResponsiveStyleValue[js.UndefOr[ContainIntrinsicInlineSize[Double | String]]]
+    ): Self = StObject.set(x, "containIntrinsicInlineSize", js.Any.fromFunction1(value))
+    
+    inline def setContainIntrinsicInlineSizeNull: Self = StObject.set(x, "containIntrinsicInlineSize", null)
+    
+    inline def setContainIntrinsicInlineSizeUndefined: Self = StObject.set(x, "containIntrinsicInlineSize", js.undefined)
+    
+    inline def setContainIntrinsicInlineSizeVarargs(value: ((js.UndefOr[ContainIntrinsicInlineSize[Double | String]]) | Null)*): Self = StObject.set(x, "containIntrinsicInlineSize", js.Array(value*))
+    
+    inline def setContainIntrinsicSize(
+      value: (ResponsiveStyleValue[js.UndefOr[ContainIntrinsicSize[Double | String]]]) | (js.Function1[
+          /* theme */ Any, 
+          ResponsiveStyleValue[js.UndefOr[ContainIntrinsicSize[Double | String]]]
+        ]) | SystemStyleObject
+    ): Self = StObject.set(x, "containIntrinsicSize", value.asInstanceOf[js.Any])
+    
+    inline def setContainIntrinsicSizeFunction1(value: /* theme */ Any => ResponsiveStyleValue[js.UndefOr[ContainIntrinsicSize[Double | String]]]): Self = StObject.set(x, "containIntrinsicSize", js.Any.fromFunction1(value))
+    
+    inline def setContainIntrinsicSizeNull: Self = StObject.set(x, "containIntrinsicSize", null)
+    
+    inline def setContainIntrinsicSizeUndefined: Self = StObject.set(x, "containIntrinsicSize", js.undefined)
+    
+    inline def setContainIntrinsicSizeVarargs(value: ((js.UndefOr[ContainIntrinsicSize[Double | String]]) | Null)*): Self = StObject.set(x, "containIntrinsicSize", js.Array(value*))
+    
+    inline def setContainIntrinsicWidth(
+      value: (ResponsiveStyleValue[js.UndefOr[ContainIntrinsicWidth[Double | String]]]) | (js.Function1[
+          /* theme */ Any, 
+          ResponsiveStyleValue[js.UndefOr[ContainIntrinsicWidth[Double | String]]]
+        ]) | SystemStyleObject
+    ): Self = StObject.set(x, "containIntrinsicWidth", value.asInstanceOf[js.Any])
+    
+    inline def setContainIntrinsicWidthFunction1(value: /* theme */ Any => ResponsiveStyleValue[js.UndefOr[ContainIntrinsicWidth[Double | String]]]): Self = StObject.set(x, "containIntrinsicWidth", js.Any.fromFunction1(value))
+    
+    inline def setContainIntrinsicWidthNull: Self = StObject.set(x, "containIntrinsicWidth", null)
+    
+    inline def setContainIntrinsicWidthUndefined: Self = StObject.set(x, "containIntrinsicWidth", js.undefined)
+    
+    inline def setContainIntrinsicWidthVarargs(value: ((js.UndefOr[ContainIntrinsicWidth[Double | String]]) | Null)*): Self = StObject.set(x, "containIntrinsicWidth", js.Array(value*))
+    
     inline def setContainNull: Self = StObject.set(x, "contain", null)
     
     inline def setContainUndefined: Self = StObject.set(x, "contain", js.undefined)
     
     inline def setContainVarargs(value: (js.UndefOr[Contain] | Null)*): Self = StObject.set(x, "contain", js.Array(value*))
+    
+    inline def setContainer(
+      value: ResponsiveStyleValue[js.UndefOr[Container]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[Container]]]) | SystemStyleObject
+    ): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerFunction1(value: /* theme */ Any => ResponsiveStyleValue[js.UndefOr[Container]]): Self = StObject.set(x, "container", js.Any.fromFunction1(value))
+    
+    inline def setContainerName(
+      value: ResponsiveStyleValue[js.UndefOr[ContainerName]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[ContainerName]]]) | SystemStyleObject
+    ): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+    
+    inline def setContainerNameFunction1(value: /* theme */ Any => ResponsiveStyleValue[js.UndefOr[ContainerName]]): Self = StObject.set(x, "containerName", js.Any.fromFunction1(value))
+    
+    inline def setContainerNameNull: Self = StObject.set(x, "containerName", null)
+    
+    inline def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
+    
+    inline def setContainerNameVarargs(value: (js.UndefOr[ContainerName] | Null)*): Self = StObject.set(x, "containerName", js.Array(value*))
+    
+    inline def setContainerNull: Self = StObject.set(x, "container", null)
+    
+    inline def setContainerType(
+      value: ResponsiveStyleValue[js.UndefOr[ContainerType]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[ContainerType]]]) | SystemStyleObject
+    ): Self = StObject.set(x, "containerType", value.asInstanceOf[js.Any])
+    
+    inline def setContainerTypeFunction1(value: /* theme */ Any => ResponsiveStyleValue[js.UndefOr[ContainerType]]): Self = StObject.set(x, "containerType", js.Any.fromFunction1(value))
+    
+    inline def setContainerTypeNull: Self = StObject.set(x, "containerType", null)
+    
+    inline def setContainerTypeUndefined: Self = StObject.set(x, "containerType", js.undefined)
+    
+    inline def setContainerTypeVarargs(value: (js.UndefOr[ContainerType] | Null)*): Self = StObject.set(x, "containerType", js.Array(value*))
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    
+    inline def setContainerVarargs(value: (js.UndefOr[Container] | Null)*): Self = StObject.set(x, "container", js.Array(value*))
     
     inline def setContent(
       value: ResponsiveStyleValue[js.UndefOr[Content]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[Content]]]) | SystemStyleObject
@@ -5978,6 +6242,18 @@ object SystemCssProperties {
     
     inline def setFontOpticalSizingVarargs(value: (js.UndefOr[FontOpticalSizing] | Null)*): Self = StObject.set(x, "fontOpticalSizing", js.Array(value*))
     
+    inline def setFontPalette(
+      value: ResponsiveStyleValue[js.UndefOr[FontPalette]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[FontPalette]]]) | SystemStyleObject
+    ): Self = StObject.set(x, "fontPalette", value.asInstanceOf[js.Any])
+    
+    inline def setFontPaletteFunction1(value: /* theme */ Any => ResponsiveStyleValue[js.UndefOr[FontPalette]]): Self = StObject.set(x, "fontPalette", js.Any.fromFunction1(value))
+    
+    inline def setFontPaletteNull: Self = StObject.set(x, "fontPalette", null)
+    
+    inline def setFontPaletteUndefined: Self = StObject.set(x, "fontPalette", js.undefined)
+    
+    inline def setFontPaletteVarargs(value: (js.UndefOr[FontPalette] | Null)*): Self = StObject.set(x, "fontPalette", js.Array(value*))
+    
     inline def setFontSize(
       value: (ResponsiveStyleValue[js.UndefOr[FontSize[Double | String]]]) | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[FontSize[Double | String]]]]) | SystemStyleObject
     ): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
@@ -6093,6 +6369,18 @@ object SystemCssProperties {
     inline def setFontVariantEastAsianUndefined: Self = StObject.set(x, "fontVariantEastAsian", js.undefined)
     
     inline def setFontVariantEastAsianVarargs(value: (js.UndefOr[FontVariantEastAsian] | Null)*): Self = StObject.set(x, "fontVariantEastAsian", js.Array(value*))
+    
+    inline def setFontVariantEmoji(
+      value: ResponsiveStyleValue[js.UndefOr[FontVariantEmoji]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[FontVariantEmoji]]]) | SystemStyleObject
+    ): Self = StObject.set(x, "fontVariantEmoji", value.asInstanceOf[js.Any])
+    
+    inline def setFontVariantEmojiFunction1(value: /* theme */ Any => ResponsiveStyleValue[js.UndefOr[FontVariantEmoji]]): Self = StObject.set(x, "fontVariantEmoji", js.Any.fromFunction1(value))
+    
+    inline def setFontVariantEmojiNull: Self = StObject.set(x, "fontVariantEmoji", null)
+    
+    inline def setFontVariantEmojiUndefined: Self = StObject.set(x, "fontVariantEmoji", js.undefined)
+    
+    inline def setFontVariantEmojiVarargs(value: (js.UndefOr[FontVariantEmoji] | Null)*): Self = StObject.set(x, "fontVariantEmoji", js.Array(value*))
     
     inline def setFontVariantFunction1(value: /* theme */ Any => ResponsiveStyleValue[js.UndefOr[FontVariant]]): Self = StObject.set(x, "fontVariant", js.Any.fromFunction1(value))
     
@@ -6422,6 +6710,18 @@ object SystemCssProperties {
     inline def setHyphenateCharacterUndefined: Self = StObject.set(x, "hyphenateCharacter", js.undefined)
     
     inline def setHyphenateCharacterVarargs(value: (js.UndefOr[HyphenateCharacter] | Null)*): Self = StObject.set(x, "hyphenateCharacter", js.Array(value*))
+    
+    inline def setHyphenateLimitChars(
+      value: ResponsiveStyleValue[js.UndefOr[HyphenateLimitChars]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[HyphenateLimitChars]]]) | SystemStyleObject
+    ): Self = StObject.set(x, "hyphenateLimitChars", value.asInstanceOf[js.Any])
+    
+    inline def setHyphenateLimitCharsFunction1(value: /* theme */ Any => ResponsiveStyleValue[js.UndefOr[HyphenateLimitChars]]): Self = StObject.set(x, "hyphenateLimitChars", js.Any.fromFunction1(value))
+    
+    inline def setHyphenateLimitCharsNull: Self = StObject.set(x, "hyphenateLimitChars", null)
+    
+    inline def setHyphenateLimitCharsUndefined: Self = StObject.set(x, "hyphenateLimitChars", js.undefined)
+    
+    inline def setHyphenateLimitCharsVarargs(value: (js.UndefOr[HyphenateLimitChars] | Null)*): Self = StObject.set(x, "hyphenateLimitChars", js.Array(value*))
     
     inline def setHyphens(
       value: ResponsiveStyleValue[js.UndefOr[Hyphens]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[Hyphens]]]) | SystemStyleObject
@@ -6958,6 +7258,18 @@ object SystemCssProperties {
     inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
     
     inline def setMarginTopVarargs(value: ((js.UndefOr[MarginTop[Double | String]]) | Null)*): Self = StObject.set(x, "marginTop", js.Array(value*))
+    
+    inline def setMarginTrim(
+      value: ResponsiveStyleValue[js.UndefOr[MarginTrim]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[MarginTrim]]]) | SystemStyleObject
+    ): Self = StObject.set(x, "marginTrim", value.asInstanceOf[js.Any])
+    
+    inline def setMarginTrimFunction1(value: /* theme */ Any => ResponsiveStyleValue[js.UndefOr[MarginTrim]]): Self = StObject.set(x, "marginTrim", js.Any.fromFunction1(value))
+    
+    inline def setMarginTrimNull: Self = StObject.set(x, "marginTrim", null)
+    
+    inline def setMarginTrimUndefined: Self = StObject.set(x, "marginTrim", js.undefined)
+    
+    inline def setMarginTrimVarargs(value: (js.UndefOr[MarginTrim] | Null)*): Self = StObject.set(x, "marginTrim", js.Array(value*))
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
@@ -7688,6 +8000,18 @@ object SystemCssProperties {
     inline def setMozBackfaceVisibilityUndefined: Self = StObject.set(x, "MozBackfaceVisibility", js.undefined)
     
     inline def setMozBackfaceVisibilityVarargs(value: (js.UndefOr[BackfaceVisibility] | Null)*): Self = StObject.set(x, "MozBackfaceVisibility", js.Array(value*))
+    
+    inline def setMozBinding(
+      value: ResponsiveStyleValue[js.UndefOr[MozBinding]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[MozBinding]]]) | SystemStyleObject
+    ): Self = StObject.set(x, "MozBinding", value.asInstanceOf[js.Any])
+    
+    inline def setMozBindingFunction1(value: /* theme */ Any => ResponsiveStyleValue[js.UndefOr[MozBinding]]): Self = StObject.set(x, "MozBinding", js.Any.fromFunction1(value))
+    
+    inline def setMozBindingNull: Self = StObject.set(x, "MozBinding", null)
+    
+    inline def setMozBindingUndefined: Self = StObject.set(x, "MozBinding", js.undefined)
+    
+    inline def setMozBindingVarargs(value: (js.UndefOr[MozBinding] | Null)*): Self = StObject.set(x, "MozBinding", js.Array(value*))
     
     inline def setMozBorderBottomColors(
       value: ResponsiveStyleValue[js.UndefOr[MozBorderBottomColors]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[MozBorderBottomColors]]]) | SystemStyleObject
@@ -9323,6 +9647,18 @@ object SystemCssProperties {
     
     inline def setOffsetPathVarargs(value: (js.UndefOr[OffsetPath] | Null)*): Self = StObject.set(x, "offsetPath", js.Array(value*))
     
+    inline def setOffsetPosition(
+      value: (ResponsiveStyleValue[js.UndefOr[OffsetPosition[Double | String]]]) | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[OffsetPosition[Double | String]]]]) | SystemStyleObject
+    ): Self = StObject.set(x, "offsetPosition", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetPositionFunction1(value: /* theme */ Any => ResponsiveStyleValue[js.UndefOr[OffsetPosition[Double | String]]]): Self = StObject.set(x, "offsetPosition", js.Any.fromFunction1(value))
+    
+    inline def setOffsetPositionNull: Self = StObject.set(x, "offsetPosition", null)
+    
+    inline def setOffsetPositionUndefined: Self = StObject.set(x, "offsetPosition", js.undefined)
+    
+    inline def setOffsetPositionVarargs(value: ((js.UndefOr[OffsetPosition[Double | String]]) | Null)*): Self = StObject.set(x, "offsetPosition", js.Array(value*))
+    
     inline def setOffsetRotate(
       value: ResponsiveStyleValue[js.UndefOr[OffsetRotate]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[OffsetRotate]]]) | SystemStyleObject
     ): Self = StObject.set(x, "offsetRotate", value.asInstanceOf[js.Any])
@@ -9861,6 +10197,10 @@ object SystemCssProperties {
         ])*
     ): Self = StObject.set(x, "paddingY", js.Array(value*))
     
+    inline def setPage(
+      value: ResponsiveStyleValue[js.UndefOr[Page]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[Page]]]) | SystemStyleObject
+    ): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    
     inline def setPageBreakAfter(
       value: ResponsiveStyleValue[js.UndefOr[PageBreakAfter]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[PageBreakAfter]]]) | SystemStyleObject
     ): Self = StObject.set(x, "pageBreakAfter", value.asInstanceOf[js.Any])
@@ -9896,6 +10236,14 @@ object SystemCssProperties {
     inline def setPageBreakInsideUndefined: Self = StObject.set(x, "pageBreakInside", js.undefined)
     
     inline def setPageBreakInsideVarargs(value: (js.UndefOr[PageBreakInside] | Null)*): Self = StObject.set(x, "pageBreakInside", js.Array(value*))
+    
+    inline def setPageFunction1(value: /* theme */ Any => ResponsiveStyleValue[js.UndefOr[Page]]): Self = StObject.set(x, "page", js.Any.fromFunction1(value))
+    
+    inline def setPageNull: Self = StObject.set(x, "page", null)
+    
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    
+    inline def setPageVarargs(value: (js.UndefOr[Page] | Null)*): Self = StObject.set(x, "page", js.Array(value*))
     
     inline def setPaintOrder(
       value: ResponsiveStyleValue[js.UndefOr[PaintOrder]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[PaintOrder]]]) | SystemStyleObject
@@ -10768,6 +11116,42 @@ object SystemCssProperties {
     
     inline def setScrollSnapTypeVarargs(value: (js.UndefOr[ScrollSnapType] | Null)*): Self = StObject.set(x, "scrollSnapType", js.Array(value*))
     
+    inline def setScrollTimeline(
+      value: ResponsiveStyleValue[js.UndefOr[ScrollTimeline]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[ScrollTimeline]]]) | SystemStyleObject
+    ): Self = StObject.set(x, "scrollTimeline", value.asInstanceOf[js.Any])
+    
+    inline def setScrollTimelineAxis(
+      value: ResponsiveStyleValue[js.UndefOr[ScrollTimelineAxis]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[ScrollTimelineAxis]]]) | SystemStyleObject
+    ): Self = StObject.set(x, "scrollTimelineAxis", value.asInstanceOf[js.Any])
+    
+    inline def setScrollTimelineAxisFunction1(value: /* theme */ Any => ResponsiveStyleValue[js.UndefOr[ScrollTimelineAxis]]): Self = StObject.set(x, "scrollTimelineAxis", js.Any.fromFunction1(value))
+    
+    inline def setScrollTimelineAxisNull: Self = StObject.set(x, "scrollTimelineAxis", null)
+    
+    inline def setScrollTimelineAxisUndefined: Self = StObject.set(x, "scrollTimelineAxis", js.undefined)
+    
+    inline def setScrollTimelineAxisVarargs(value: (js.UndefOr[ScrollTimelineAxis] | Null)*): Self = StObject.set(x, "scrollTimelineAxis", js.Array(value*))
+    
+    inline def setScrollTimelineFunction1(value: /* theme */ Any => ResponsiveStyleValue[js.UndefOr[ScrollTimeline]]): Self = StObject.set(x, "scrollTimeline", js.Any.fromFunction1(value))
+    
+    inline def setScrollTimelineName(
+      value: ResponsiveStyleValue[js.UndefOr[ScrollTimelineName]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[ScrollTimelineName]]]) | SystemStyleObject
+    ): Self = StObject.set(x, "scrollTimelineName", value.asInstanceOf[js.Any])
+    
+    inline def setScrollTimelineNameFunction1(value: /* theme */ Any => ResponsiveStyleValue[js.UndefOr[ScrollTimelineName]]): Self = StObject.set(x, "scrollTimelineName", js.Any.fromFunction1(value))
+    
+    inline def setScrollTimelineNameNull: Self = StObject.set(x, "scrollTimelineName", null)
+    
+    inline def setScrollTimelineNameUndefined: Self = StObject.set(x, "scrollTimelineName", js.undefined)
+    
+    inline def setScrollTimelineNameVarargs(value: (js.UndefOr[ScrollTimelineName] | Null)*): Self = StObject.set(x, "scrollTimelineName", js.Array(value*))
+    
+    inline def setScrollTimelineNull: Self = StObject.set(x, "scrollTimeline", null)
+    
+    inline def setScrollTimelineUndefined: Self = StObject.set(x, "scrollTimeline", js.undefined)
+    
+    inline def setScrollTimelineVarargs(value: (js.UndefOr[ScrollTimeline] | Null)*): Self = StObject.set(x, "scrollTimeline", js.Array(value*))
+    
     inline def setScrollbarColor(
       value: ResponsiveStyleValue[js.UndefOr[ScrollbarColor]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[ScrollbarColor]]]) | SystemStyleObject
     ): Self = StObject.set(x, "scrollbarColor", value.asInstanceOf[js.Any])
@@ -11537,6 +11921,18 @@ object SystemCssProperties {
     inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
     
     inline def setVerticalAlignVarargs(value: ((js.UndefOr[VerticalAlign[Double | String]]) | Null)*): Self = StObject.set(x, "verticalAlign", js.Array(value*))
+    
+    inline def setViewTransitionName(
+      value: ResponsiveStyleValue[js.UndefOr[ViewTransitionName]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[ViewTransitionName]]]) | SystemStyleObject
+    ): Self = StObject.set(x, "viewTransitionName", value.asInstanceOf[js.Any])
+    
+    inline def setViewTransitionNameFunction1(value: /* theme */ Any => ResponsiveStyleValue[js.UndefOr[ViewTransitionName]]): Self = StObject.set(x, "viewTransitionName", js.Any.fromFunction1(value))
+    
+    inline def setViewTransitionNameNull: Self = StObject.set(x, "viewTransitionName", null)
+    
+    inline def setViewTransitionNameUndefined: Self = StObject.set(x, "viewTransitionName", js.undefined)
+    
+    inline def setViewTransitionNameVarargs(value: (js.UndefOr[ViewTransitionName] | Null)*): Self = StObject.set(x, "viewTransitionName", js.Array(value*))
     
     inline def setVisibility(
       value: ResponsiveStyleValue[js.UndefOr[Visibility]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[Visibility]]]) | SystemStyleObject

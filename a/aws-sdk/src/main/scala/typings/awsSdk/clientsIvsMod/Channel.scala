@@ -22,6 +22,11 @@ trait Channel extends StObject {
   var ingestEndpoint: js.UndefOr[IngestEndpoint] = js.undefined
   
   /**
+    * Whether the channel allows insecure RTMP ingest. Default: false.
+    */
+  var insecureIngest: js.UndefOr[InsecureIngest] = js.undefined
+  
+  /**
     * Channel latency mode. Use NORMAL to broadcast and deliver live video up to Full HD. Use LOW for near-real-time interaction with viewers. Default: LOW. (Note: In the Amazon IVS console, LOW and NORMAL correspond to Ultra-low and Standard, respectively.)
     */
   var latencyMode: js.UndefOr[ChannelLatencyMode] = js.undefined
@@ -42,7 +47,7 @@ trait Channel extends StObject {
   var recordingConfigurationArn: js.UndefOr[ChannelRecordingConfigurationArn] = js.undefined
   
   /**
-    * Array of 1-50 maps, each of the form string:string (key:value). See Tagging Amazon Web Services Resources for more information, including restrictions that apply to tags and "Tag naming limits and requirements"; Amazon IVS has no service-specific constraints beyond what is documented there.
+    * Tags attached to the resource. Array of 1-50 maps, each of the form string:string (key:value). See Tagging Amazon Web Services Resources for more information, including restrictions that apply to tags and "Tag naming limits and requirements"; Amazon IVS has no service-specific constraints beyond what is documented there.
     */
   var tags: js.UndefOr[Tags] = js.undefined
   
@@ -72,6 +77,10 @@ object Channel {
     inline def setIngestEndpoint(value: IngestEndpoint): Self = StObject.set(x, "ingestEndpoint", value.asInstanceOf[js.Any])
     
     inline def setIngestEndpointUndefined: Self = StObject.set(x, "ingestEndpoint", js.undefined)
+    
+    inline def setInsecureIngest(value: InsecureIngest): Self = StObject.set(x, "insecureIngest", value.asInstanceOf[js.Any])
+    
+    inline def setInsecureIngestUndefined: Self = StObject.set(x, "insecureIngest", js.undefined)
     
     inline def setLatencyMode(value: ChannelLatencyMode): Self = StObject.set(x, "latencyMode", value.asInstanceOf[js.Any])
     

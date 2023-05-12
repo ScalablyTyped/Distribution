@@ -13,9 +13,9 @@ object libUtilCheckStrongMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def checkStrong(context: Context): Exclude[js.UndefOr[Asterisk | _underscore], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkStrong")(context.asInstanceOf[js.Any]).asInstanceOf[Exclude[js.UndefOr[Asterisk | _underscore], Unit]]
-  
-  type Context = typings.mdastUtilToMarkdown.libTypesMod.Context
+  inline def checkStrong(state: State): Exclude[js.UndefOr[_underscore | Asterisk | Null], js.UndefOr[Null]] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkStrong")(state.asInstanceOf[js.Any]).asInstanceOf[Exclude[js.UndefOr[_underscore | Asterisk | Null], js.UndefOr[Null]]]
   
   type Options = typings.mdastUtilToMarkdown.libTypesMod.Options
+  
+  type State = typings.mdastUtilToMarkdown.libTypesMod.State
 }

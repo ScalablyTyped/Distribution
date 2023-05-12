@@ -6,24 +6,22 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped new (low : unknown, high : number | undefined, unsigned : boolean | undefined): bson.anon.PinExcludekeyofLongTimest */ @JSImport("mongodb", "Timestamp")
+- Dropped new (low : unknown, high : number | boolean | undefined, unsigned : boolean | undefined): bson.anon.PinExcludekeyofLongTimest */ @JSImport("mongodb", "Timestamp")
 @js.native
 open class Timestamp protected ()
   extends typings.bson.mod.Timestamp {
   /**
-    * @param low - A 64-bit Long representing the Timestamp.
+    * @param int - A 64-bit bigint representing the Timestamp.
+    */
+  def this(int: js.BigInt) = this()
+  /**
+    * @param long - A 64-bit Long representing the Timestamp.
     */
   def this(long: typings.bson.mod.Long) = this()
   /**
     * @param value - A pair of two values indicating timestamp and increment.
     */
   def this(value: I) = this()
-  /**
-    * @param low - the low (signed) 32 bits of the Timestamp.
-    * @param high - the high (signed) 32 bits of the Timestamp.
-    * @deprecated Please use `Timestamp({ t: high, i: low })` or `Timestamp(Long(low, high))` instead.
-    */
-  def this(low: scala.Double, high: scala.Double) = this()
 }
 /* static members */
 object Timestamp {

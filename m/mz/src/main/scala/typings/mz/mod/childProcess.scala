@@ -415,7 +415,7 @@ object childProcess {
     *     console.log(`Hello from ${process.argv[2]}!`);
     *   }, 1_000);
     * } else {
-    *   const { fork } = require('child_process');
+    *   const { fork } = require('node:child_process');
     *   const controller = new AbortController();
     *   const { signal } = controller;
     *   const child = fork(__filename, ['child'], { signal });
@@ -448,7 +448,7 @@ object childProcess {
     * ```js
     * const defaults = {
     *   cwd: undefined,
-    *   env: process.env
+    *   env: process.env,
     * };
     * ```
     *
@@ -467,7 +467,7 @@ object childProcess {
     * exit code:
     *
     * ```js
-    * const { spawn } = require('child_process');
+    * const { spawn } = require('node:child_process');
     * const ls = spawn('ls', ['-lh', '/usr']);
     *
     * ls.stdout.on('data', (data) => {
@@ -486,7 +486,7 @@ object childProcess {
     * Example: A very elaborate way to run `ps ax | grep ssh`
     *
     * ```js
-    * const { spawn } = require('child_process');
+    * const { spawn } = require('node:child_process');
     * const ps = spawn('ps', ['ax']);
     * const grep = spawn('grep', ['ssh']);
     *
@@ -523,7 +523,7 @@ object childProcess {
     * Example of checking for failed `spawn`:
     *
     * ```js
-    * const { spawn } = require('child_process');
+    * const { spawn } = require('node:child_process');
     * const subprocess = spawn('bad_command');
     *
     * subprocess.on('error', (err) => {
@@ -534,14 +534,14 @@ object childProcess {
     * Certain platforms (macOS, Linux) will use the value of `argv[0]` for the process
     * title while others (Windows, SunOS) will use `command`.
     *
-    * Node.js currently overwrites `argv[0]` with `process.execPath` on startup, so`process.argv[0]` in a Node.js child process will not match the `argv0`parameter passed to `spawn` from the parent,
-    * retrieve it with the`process.argv0` property instead.
+    * Node.js overwrites `argv[0]` with `process.execPath` on startup, so`process.argv[0]` in a Node.js child process will not match the `argv0`parameter passed to `spawn` from the parent. Retrieve
+    * it with the`process.argv0` property instead.
     *
     * If the `signal` option is enabled, calling `.abort()` on the corresponding`AbortController` is similar to calling `.kill()` on the child process except
     * the error passed to the callback will be an `AbortError`:
     *
     * ```js
-    * const { spawn } = require('child_process');
+    * const { spawn } = require('node:child_process');
     * const controller = new AbortController();
     * const { signal } = controller;
     * const grep = spawn('grep', ['ssh'], { signal });

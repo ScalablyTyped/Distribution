@@ -31,9 +31,9 @@ object distSrcTypesAbstractTypeMod {
       * Must be implemented by each type.
       *
       * @param {Transaction} transaction
-      * @param {Set<null|string>} parentSubs Keys changed on this type. `null` if list was modified.
+      * @param {Set<null|string>} _parentSubs Keys changed on this type. `null` if list was modified.
       */
-    def _callObserver(transaction: Transaction, parentSubs: Set[Null | String]): Unit = js.native
+    def _callObserver(transaction: Transaction, _parentSubs: Set[Null | String]): Unit = js.native
     
     /**
       * @return {AbstractType<EventType>}
@@ -93,10 +93,10 @@ object distSrcTypesAbstractTypeMod {
     var _start: Item | Null = js.native
     
     /**
-      * @param {UpdateEncoderV1 | UpdateEncoderV2} encoder
+      * @param {UpdateEncoderV1 | UpdateEncoderV2} _encoder
       */
-    def _write(encoder: UpdateEncoderV1): Unit = js.native
-    def _write(encoder: UpdateEncoderV2): Unit = js.native
+    def _write(_encoder: UpdateEncoderV1): Unit = js.native
+    def _write(_encoder: UpdateEncoderV2): Unit = js.native
     
     /**
       * @type {Doc|null}

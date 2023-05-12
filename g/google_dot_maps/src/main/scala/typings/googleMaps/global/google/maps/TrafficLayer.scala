@@ -5,13 +5,14 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A traffic layer.
-  */
 @JSGlobal("google.maps.TrafficLayer")
 @js.native
 /**
   * A traffic layer.
+  *
+  * Access by calling `const {TrafficLayer} = await
+  * google.maps.importLibrary("maps")`. See
+  * https://developers.google.com/maps/documentation/javascript/libraries.
   */
 open class TrafficLayer ()
   extends StObject

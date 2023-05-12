@@ -1,88 +1,60 @@
 package typings.twilio
 
-import typings.twilio.libBasePageMod.TwilioResponsePayload
-import typings.twilio.libInterfacesMod.SerializableClass
+import typings.twilio.anon.AssistantSid
+import typings.twilio.libRestPreviewUnderstandMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libRestPreviewUnderstandAssistantAssistantFallbackActionsMod {
   
-  @JSImport("twilio/lib/rest/preview/understand/assistant/assistantFallbackActions", JSImport.Namespace)
+  @JSImport("twilio/lib/rest/preview/understand/assistant/assistantFallbackActions", "AssistantFallbackActionsContextImpl")
   @js.native
-  val ^ : js.Any = js.native
-  
-  @JSImport("twilio/lib/rest/preview/understand/assistant/assistantFallbackActions", "AssistantFallbackActionsContext")
-  @js.native
-  open class AssistantFallbackActionsContext protected () extends StObject {
-    /**
-      * Initialize the AssistantFallbackActionsContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param assistantSid - The assistant_sid
-      */
-    def this(version: typings.twilio.libRestPreviewUnderstandMod.^, assistantSid: String) = this()
+  open class AssistantFallbackActionsContextImpl protected ()
+    extends StObject
+       with AssistantFallbackActionsContext {
+    def this(_version: default, assistantSid: String) = this()
     
-    /**
-      * fetch a AssistantFallbackActionsInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def fetch(): js.Promise[AssistantFallbackActionsInstance] = js.native
-    def fetch(
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ AssistantFallbackActionsInstance, Any]
-    ): js.Promise[AssistantFallbackActionsInstance] = js.native
+    /* protected */ var _solution: AssistantFallbackActionsContextSolution = js.native
     
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
+    /* protected */ var _uri: String = js.native
     
-    /**
-      * update a AssistantFallbackActionsInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def update(): js.Promise[AssistantFallbackActionsInstance] = js.native
+    /* protected */ var _version: default = js.native
+    
     def update(
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ AssistantFallbackActionsInstance, Any]
+      params: js.Function2[
+          /* error */ js.Error | Null, 
+          /* item */ js.UndefOr[AssistantFallbackActionsInstance], 
+          Any
+        ],
+      callback: js.Function2[
+          /* error */ js.Error | Null, 
+          /* item */ js.UndefOr[AssistantFallbackActionsInstance], 
+          Any
+        ]
     ): js.Promise[AssistantFallbackActionsInstance] = js.native
     def update(
-      opts: Unit,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ AssistantFallbackActionsInstance, Any]
-    ): js.Promise[AssistantFallbackActionsInstance] = js.native
-    def update(opts: AssistantFallbackActionsInstanceUpdateOptions): js.Promise[AssistantFallbackActionsInstance] = js.native
-    def update(
-      opts: AssistantFallbackActionsInstanceUpdateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ AssistantFallbackActionsInstance, Any]
+      params: Unit,
+      callback: js.Function2[
+          /* error */ js.Error | Null, 
+          /* item */ js.UndefOr[AssistantFallbackActionsInstance], 
+          Any
+        ]
     ): js.Promise[AssistantFallbackActionsInstance] = js.native
   }
   
   @JSImport("twilio/lib/rest/preview/understand/assistant/assistantFallbackActions", "AssistantFallbackActionsInstance")
   @js.native
-  open class AssistantFallbackActionsInstance protected () extends SerializableClass {
-    /**
-      * Initialize the AssistantFallbackActionsContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param payload - The instance payload
-      * @param assistantSid - The assistant_sid
-      */
-    def this(
-      version: typings.twilio.libRestPreviewUnderstandMod.^,
-      payload: AssistantFallbackActionsPayload,
-      assistantSid: String
-    ) = this()
+  open class AssistantFallbackActionsInstance protected () extends StObject {
+    def this(_version: default, payload: AssistantFallbackActionsResource, assistantSid: String) = this()
     
-    /* private */ var _proxy: AssistantFallbackActionsContext = js.native
+    /* protected */ var _context: js.UndefOr[AssistantFallbackActionsContext] = js.native
+    
+    /* private */ def _proxy: Any = js.native
+    
+    /* protected */ var _solution: AssistantFallbackActionsContextSolution = js.native
+    
+    /* protected */ var _version: default = js.native
     
     var accountSid: String = js.native
     
@@ -91,117 +63,59 @@ object libRestPreviewUnderstandAssistantAssistantFallbackActionsMod {
     var data: Any = js.native
     
     /**
-      * fetch a AssistantFallbackActionsInstance
+      * Fetch a AssistantFallbackActionsInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed AssistantFallbackActionsInstance
       */
     def fetch(): js.Promise[AssistantFallbackActionsInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[AssistantFallbackActionsInstance] = js.native
+    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]): js.Promise[AssistantFallbackActionsInstance] = js.native
     
     /**
-      * update a AssistantFallbackActionsInstance
+      * Provide a user-friendly representation
+      *
+      * @returns Object
+      */
+    def toJSON(): AssistantSid = js.native
+    
+    /**
+      * Update a AssistantFallbackActionsInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed AssistantFallbackActionsInstance
       */
     def update(): js.Promise[AssistantFallbackActionsInstance] = js.native
-    def update(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[AssistantFallbackActionsInstance] = js.native
-    def update(opts: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[AssistantFallbackActionsInstance] = js.native
-    def update(opts: AssistantFallbackActionsInstanceUpdateOptions): js.Promise[AssistantFallbackActionsInstance] = js.native
+    def update(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]): js.Promise[AssistantFallbackActionsInstance] = js.native
+    /**
+      * Update a AssistantFallbackActionsInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed AssistantFallbackActionsInstance
+      */
+    def update(params: AssistantFallbackActionsContextUpdateOptions): js.Promise[AssistantFallbackActionsInstance] = js.native
     def update(
-      opts: AssistantFallbackActionsInstanceUpdateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]
+      params: AssistantFallbackActionsContextUpdateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]
     ): js.Promise[AssistantFallbackActionsInstance] = js.native
     
     var url: String = js.native
   }
   
-  /**
-    * Initialize the AssistantFallbackActionsList
-    *
-    * PLEASE NOTE that this class contains preview products that are subject to
-    * change. Use them with caution. If you currently do not have developer preview
-    * access, please contact help@twilio.com.
-    *
-    * @param version - Version of the resource
-    * @param assistantSid - The assistant_sid
-    */
-  inline def AssistantFallbackActionsList(version: typings.twilio.libRestPreviewUnderstandMod.^, assistantSid: String): AssistantFallbackActionsListInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("AssistantFallbackActionsList")(version.asInstanceOf[js.Any], assistantSid.asInstanceOf[js.Any])).asInstanceOf[AssistantFallbackActionsListInstance]
-  
-  @JSImport("twilio/lib/rest/preview/understand/assistant/assistantFallbackActions", "AssistantFallbackActionsPage")
-  @js.native
-  open class AssistantFallbackActionsPage protected ()
-    extends typings.twilio.libBasePageMod.^[
-          typings.twilio.libRestPreviewUnderstandMod.^, 
-          AssistantFallbackActionsPayload, 
-          AssistantFallbackActionsResource, 
-          AssistantFallbackActionsInstance
-        ] {
-    /**
-      * Initialize the AssistantFallbackActionsPage
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param response - Response from the API
-      * @param solution - Path solution
-      */
-    def this(
-      version: typings.twilio.libRestPreviewUnderstandMod.^,
-      response: typings.twilio.libHttpResponseMod.^[String],
-      solution: AssistantFallbackActionsSolution
-    ) = this()
-    
-    /**
-      * Build an instance of AssistantFallbackActionsInstance
-      *
-      * @param payload - Payload response from the API
-      */
-    def getInstance(payload: AssistantFallbackActionsPayload): AssistantFallbackActionsInstance = js.native
-    
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
-  }
-  
-  /**
-    * Options to pass to update
-    *
-    * @property fallbackActions - The fallback_actions
-    */
-  trait AssistantFallbackActionsInstanceUpdateOptions extends StObject {
-    
-    var fallbackActions: js.UndefOr[js.Object] = js.undefined
-  }
-  object AssistantFallbackActionsInstanceUpdateOptions {
-    
-    inline def apply(): AssistantFallbackActionsInstanceUpdateOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[AssistantFallbackActionsInstanceUpdateOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: AssistantFallbackActionsInstanceUpdateOptions] (val x: Self) extends AnyVal {
-      
-      inline def setFallbackActions(value: js.Object): Self = StObject.set(x, "fallbackActions", value.asInstanceOf[js.Any])
-      
-      inline def setFallbackActionsUndefined: Self = StObject.set(x, "fallbackActions", js.undefined)
-    }
-  }
-  
   @js.native
   trait AssistantFallbackActionsListInstance extends StObject {
     
-    /**
-      * @param sid - sid of instance
-      */
-    def apply(sid: String): AssistantFallbackActionsContext = js.native
+    def apply(): AssistantFallbackActionsContext = js.native
     
-    /**
-      * Constructs a assistant_fallback_actions
-      */
+    var _solution: AssistantFallbackActionsSolution = js.native
+    
+    var _uri: String = js.native
+    
+    var _version: default = js.native
+    
     def get(): AssistantFallbackActionsContext = js.native
     
     /**
@@ -209,27 +123,107 @@ object libRestPreviewUnderstandAssistantAssistantFallbackActionsMod {
       */
     def toJSON(): Any = js.native
   }
-  
-  trait AssistantFallbackActionsPayload
-    extends StObject
-       with AssistantFallbackActionsResource
-       with TwilioResponsePayload
-  object AssistantFallbackActionsPayload {
+  object AssistantFallbackActionsListInstance {
     
-    inline def apply(
-      account_sid: String,
-      assistant_sid: String,
-      data: js.Object,
-      first_page_uri: String,
-      next_page_uri: String,
-      page: Double,
-      page_size: Double,
-      previous_page_uri: String,
-      uri: String,
-      url: String
-    ): AssistantFallbackActionsPayload = {
-      val __obj = js.Dynamic.literal(account_sid = account_sid.asInstanceOf[js.Any], assistant_sid = assistant_sid.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], first_page_uri = first_page_uri.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-      __obj.asInstanceOf[AssistantFallbackActionsPayload]
+    @JSImport("twilio/lib/rest/preview/understand/assistant/assistantFallbackActions", "AssistantFallbackActionsListInstance")
+    @js.native
+    def apply(version: default, assistantSid: String): AssistantFallbackActionsListInstance = js.native
+  }
+  
+  @js.native
+  trait AssistantFallbackActionsContext extends StObject {
+    
+    /**
+      * Fetch a AssistantFallbackActionsInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed AssistantFallbackActionsInstance
+      */
+    def fetch(): js.Promise[AssistantFallbackActionsInstance] = js.native
+    def fetch(
+      callback: js.Function2[
+          /* error */ js.Error | Null, 
+          /* item */ js.UndefOr[AssistantFallbackActionsInstance], 
+          Any
+        ]
+    ): js.Promise[AssistantFallbackActionsInstance] = js.native
+    
+    /**
+      * Provide a user-friendly representation
+      */
+    def toJSON(): Any = js.native
+    
+    /**
+      * Update a AssistantFallbackActionsInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed AssistantFallbackActionsInstance
+      */
+    def update(): js.Promise[AssistantFallbackActionsInstance] = js.native
+    def update(
+      callback: js.Function2[
+          /* error */ js.Error | Null, 
+          /* item */ js.UndefOr[AssistantFallbackActionsInstance], 
+          Any
+        ]
+    ): js.Promise[AssistantFallbackActionsInstance] = js.native
+    /**
+      * Update a AssistantFallbackActionsInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed AssistantFallbackActionsInstance
+      */
+    def update(params: AssistantFallbackActionsContextUpdateOptions): js.Promise[AssistantFallbackActionsInstance] = js.native
+    def update(
+      params: AssistantFallbackActionsContextUpdateOptions,
+      callback: js.Function2[
+          /* error */ js.Error | Null, 
+          /* item */ js.UndefOr[AssistantFallbackActionsInstance], 
+          Any
+        ]
+    ): js.Promise[AssistantFallbackActionsInstance] = js.native
+  }
+  
+  trait AssistantFallbackActionsContextSolution extends StObject {
+    
+    var assistantSid: String
+  }
+  object AssistantFallbackActionsContextSolution {
+    
+    inline def apply(assistantSid: String): AssistantFallbackActionsContextSolution = {
+      val __obj = js.Dynamic.literal(assistantSid = assistantSid.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AssistantFallbackActionsContextSolution]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssistantFallbackActionsContextSolution] (val x: Self) extends AnyVal {
+      
+      inline def setAssistantSid(value: String): Self = StObject.set(x, "assistantSid", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait AssistantFallbackActionsContextUpdateOptions extends StObject {
+    
+    /**  */
+    var fallbackActions: js.UndefOr[Any] = js.undefined
+  }
+  object AssistantFallbackActionsContextUpdateOptions {
+    
+    inline def apply(): AssistantFallbackActionsContextUpdateOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[AssistantFallbackActionsContextUpdateOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssistantFallbackActionsContextUpdateOptions] (val x: Self) extends AnyVal {
+      
+      inline def setFallbackActions(value: Any): Self = StObject.set(x, "fallbackActions", value.asInstanceOf[js.Any])
+      
+      inline def setFallbackActionsUndefined: Self = StObject.set(x, "fallbackActions", js.undefined)
     }
   }
   
@@ -239,13 +233,13 @@ object libRestPreviewUnderstandAssistantAssistantFallbackActionsMod {
     
     var assistant_sid: String
     
-    var data: js.Object
+    var data: Any
     
     var url: String
   }
   object AssistantFallbackActionsResource {
     
-    inline def apply(account_sid: String, assistant_sid: String, data: js.Object, url: String): AssistantFallbackActionsResource = {
+    inline def apply(account_sid: String, assistant_sid: String, data: Any, url: String): AssistantFallbackActionsResource = {
       val __obj = js.Dynamic.literal(account_sid = account_sid.asInstanceOf[js.Any], assistant_sid = assistant_sid.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[AssistantFallbackActionsResource]
     }
@@ -257,7 +251,7 @@ object libRestPreviewUnderstandAssistantAssistantFallbackActionsMod {
       
       inline def setAssistant_sid(value: String): Self = StObject.set(x, "assistant_sid", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
@@ -265,12 +259,12 @@ object libRestPreviewUnderstandAssistantAssistantFallbackActionsMod {
   
   trait AssistantFallbackActionsSolution extends StObject {
     
-    var assistantSid: js.UndefOr[String] = js.undefined
+    var assistantSid: String
   }
   object AssistantFallbackActionsSolution {
     
-    inline def apply(): AssistantFallbackActionsSolution = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(assistantSid: String): AssistantFallbackActionsSolution = {
+      val __obj = js.Dynamic.literal(assistantSid = assistantSid.asInstanceOf[js.Any])
       __obj.asInstanceOf[AssistantFallbackActionsSolution]
     }
     
@@ -278,8 +272,6 @@ object libRestPreviewUnderstandAssistantAssistantFallbackActionsMod {
     implicit open class MutableBuilder[Self <: AssistantFallbackActionsSolution] (val x: Self) extends AnyVal {
       
       inline def setAssistantSid(value: String): Self = StObject.set(x, "assistantSid", value.asInstanceOf[js.Any])
-      
-      inline def setAssistantSidUndefined: Self = StObject.set(x, "assistantSid", js.undefined)
     }
   }
 }

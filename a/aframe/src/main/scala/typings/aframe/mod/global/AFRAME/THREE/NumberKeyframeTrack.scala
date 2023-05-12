@@ -1,5 +1,6 @@
 package typings.aframe.mod.global.AFRAME.THREE
 
+import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,5 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class NumberKeyframeTrack protected ()
   extends typings.three.mod.NumberKeyframeTrack {
-  def this(name: String, times: js.Array[Any], values: js.Array[Any]) = this()
+  def this(name: String, times: ArrayLike[Double], values: ArrayLike[Double]) = this()
 }

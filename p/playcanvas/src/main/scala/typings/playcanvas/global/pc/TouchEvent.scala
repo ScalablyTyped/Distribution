@@ -15,7 +15,8 @@ open class TouchEvent protected ()
   /**
     * Create a new TouchEvent instance. It is created from an existing browser event.
     *
-    * @param {TouchDevice} device - The source device of the touch events.
+    * @param {import('./touch-device.js').TouchDevice} device - The source device of the touch
+    * events.
     * @param {globalThis.TouchEvent} event - The original browser TouchEvent.
     */
   def this(

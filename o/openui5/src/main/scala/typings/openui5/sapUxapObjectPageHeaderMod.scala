@@ -484,6 +484,8 @@ object sapUxapObjectPageHeaderMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:markChangesPress markChangesPress} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -495,6 +497,8 @@ object sapUxapObjectPageHeaderMod {
     mParameters: DomRef_): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:markLockedPress markLockedPress} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -506,6 +510,8 @@ object sapUxapObjectPageHeaderMod {
     mParameters: DomRef_): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:titleSelectorPress titleSelectorPress} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -932,32 +938,6 @@ object sapUxapObjectPageHeaderMod {
       * The breadcrumbs to set
       */
     oBreadcrumbs: typings.openui5.sapMBreadcrumbsMod.default): this.type = js.native
-    
-    /**
-      * @deprecated (since 1.40.1)
-      *
-      * Sets a new value for property {@link #getHeaderDesign headerDesign}.
-      *
-      * Determines the design of the header - Light or Dark. **Note: **This property is deprecated. It will continue
-      * to work in the Blue Crystal theme, but it will not be taken into account for the Belize themes.
-      *
-      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
-      *
-      * Default value is `Light`.
-      *
-      * @returns Reference to `this` in order to allow method chaining
-      */
-    def setHeaderDesign(): this.type = js.native
-    def setHeaderDesign(
-      /**
-      * New value for property `headerDesign`
-      */
-    sHeaderDesign: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ObjectPageHeaderDesign * / any */ String
-    ): this.type = js.native
-    def setHeaderDesign(/**
-      * New value for property `headerDesign`
-      */
-    sHeaderDesign: ObjectPageHeaderDesign): this.type = js.native
     
     /**
       * Sets a new value for property {@link #getIsActionAreaAlwaysVisible isActionAreaAlwaysVisible}.

@@ -12,15 +12,6 @@ trait R3PipeMetadata extends StObject {
   var deps: js.Array[R3DependencyMetadata] | Null
   
   /**
-    * An expression representing the pipe being compiled, intended for use within a class definition
-    * itself.
-    *
-    * This can differ from the outer `type` if the class is being compiled by ngcc and is inside an
-    * IIFE structure that uses a different name internally.
-    */
-  var internalType: Expression
-  
-  /**
     * Whether the pipe is standalone.
     */
   var isStandalone: Boolean
@@ -53,7 +44,6 @@ trait R3PipeMetadata extends StObject {
 object R3PipeMetadata {
   
   inline def apply(
-    internalType: Expression,
     isStandalone: Boolean,
     name: String,
     pipeName: String,
@@ -61,7 +51,7 @@ object R3PipeMetadata {
     `type`: R3Reference,
     typeArgumentCount: Double
   ): R3PipeMetadata = {
-    val __obj = js.Dynamic.literal(internalType = internalType.asInstanceOf[js.Any], isStandalone = isStandalone.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pipeName = pipeName.asInstanceOf[js.Any], pure = pure.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], deps = null)
+    val __obj = js.Dynamic.literal(isStandalone = isStandalone.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pipeName = pipeName.asInstanceOf[js.Any], pure = pure.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], deps = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3PipeMetadata]
   }
@@ -74,8 +64,6 @@ object R3PipeMetadata {
     inline def setDepsNull: Self = StObject.set(x, "deps", null)
     
     inline def setDepsVarargs(value: R3DependencyMetadata*): Self = StObject.set(x, "deps", js.Array(value*))
-    
-    inline def setInternalType(value: Expression): Self = StObject.set(x, "internalType", value.asInstanceOf[js.Any])
     
     inline def setIsStandalone(value: Boolean): Self = StObject.set(x, "isStandalone", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for amqp-connection-manager
 
-Typings are for version 4.1.9
+Typings are for version 4.1.13
 
 ## Library description:
 Auto-reconnect and round robin support for amqplib.

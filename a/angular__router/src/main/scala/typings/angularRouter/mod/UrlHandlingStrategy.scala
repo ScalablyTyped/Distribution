@@ -1,5 +1,7 @@
 package typings.angularRouter.mod
 
+import typings.angularCore.mod.ɵɵFactoryDeclaration
+import typings.angularCore.mod.ɵɵInjectableDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,4 +30,21 @@ open class UrlHandlingStrategy () extends StObject {
     *
     */
   def shouldProcessUrl(url: UrlTree): Boolean = js.native
+}
+/* static members */
+object UrlHandlingStrategy {
+  
+  @JSImport("@angular/router", "UrlHandlingStrategy")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@angular/router", "UrlHandlingStrategy.\u0275fac")
+  @js.native
+  def ɵfac: ɵɵFactoryDeclaration[UrlHandlingStrategy, scala.Nothing] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[UrlHandlingStrategy, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@angular/router", "UrlHandlingStrategy.\u0275prov")
+  @js.native
+  def ɵprov: ɵɵInjectableDeclaration[UrlHandlingStrategy] = js.native
+  inline def ɵprov_=(x: ɵɵInjectableDeclaration[UrlHandlingStrategy]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275prov")(x.asInstanceOf[js.Any])
 }

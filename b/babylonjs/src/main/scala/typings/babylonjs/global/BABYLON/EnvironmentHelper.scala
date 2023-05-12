@@ -34,6 +34,7 @@ object EnvironmentHelper {
   
   /**
     * Creates the default options for the helper.
+    * @param scene The scene the environment helper belongs to.
     */
   @JSGlobal("BABYLON.EnvironmentHelper._GetDefaultOptions")
   @js.native

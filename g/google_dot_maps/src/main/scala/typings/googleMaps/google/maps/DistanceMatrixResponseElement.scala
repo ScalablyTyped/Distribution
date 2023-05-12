@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A single element of a response to a <code>DistanceMatrixService</code>
-  * request, which contains the duration and distance from one origin to one
-  * destination.
-  */
 trait DistanceMatrixResponseElement extends StObject {
   
   /**

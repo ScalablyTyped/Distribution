@@ -91,14 +91,6 @@ trait Options extends StObject {
     * In styled mode, the colors option doesn't exist. Instead, colors are
     * defined in CSS and applied either through series or point class names, or
     * through the chart.colorCount option.
-    *
-    * ### Legacy
-    *
-    * In Highcharts 3.x, the default colors were: (see online documentation for
-    * example)
-    *
-    * In Highcharts 2.x, the default colors were: (see online documentation for
-    * example)
     */
   var colors: js.UndefOr[js.Array[ColorString | GradientColorObject | PatternObject]] = js.undefined
   
@@ -158,7 +150,7 @@ trait Options extends StObject {
     */
   var exporting: js.UndefOr[ExportingOptions] = js.undefined
   
-  var global: js.UndefOr[GlobalOptions] = js.undefined
+  var global: js.UndefOr[Any] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Language object. The language
@@ -281,6 +273,13 @@ trait Options extends StObject {
     * specific series types, to get all possible options for a series.
     */
   var series: js.UndefOr[js.Array[SeriesOptionsType]] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Options for configuring
+    * sonification and audio charts. Requires the sonification module to be
+    * loaded.
+    */
+  var sonification: js.UndefOr[SonificationOptions] = js.undefined
   
   /**
     * (Highstock) Configure the stockTools gui strings in the chart. Requires
@@ -419,7 +418,7 @@ object Options {
     
     inline def setExportingUndefined: Self = StObject.set(x, "exporting", js.undefined)
     
-    inline def setGlobal(value: GlobalOptions): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+    inline def setGlobal(value: Any): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     
     inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
     
@@ -480,6 +479,10 @@ object Options {
     inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
     inline def setSeriesVarargs(value: SeriesOptionsType*): Self = StObject.set(x, "series", js.Array(value*))
+    
+    inline def setSonification(value: SonificationOptions): Self = StObject.set(x, "sonification", value.asInstanceOf[js.Any])
+    
+    inline def setSonificationUndefined: Self = StObject.set(x, "sonification", js.undefined)
     
     inline def setStockTools(value: StockToolsOptions): Self = StObject.set(x, "stockTools", value.asInstanceOf[js.Any])
     

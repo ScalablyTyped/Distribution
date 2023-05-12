@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__credential-provider-process
 
-Typings are for version 3.209.0
+Typings are for version 3.329.0
 
 ## Library description:
 AWS credential provider that sources credential_process from ~/.aws/credentials and ~/.aws/config

@@ -79,6 +79,20 @@ object reactOverlaysStrings {
   inline def findIndex: findIndex = "findIndex".asInstanceOf[findIndex]
   
   @js.native
+  sealed trait findLast
+    extends StObject
+       with Modifiers
+       with typings.reactOverlays.cjsUsePopperMod.Modifiers
+  inline def findLast: findLast = "findLast".asInstanceOf[findLast]
+  
+  @js.native
+  sealed trait findLastIndex
+    extends StObject
+       with Modifiers
+       with typings.reactOverlays.cjsUsePopperMod.Modifiers
+  inline def findLastIndex: findLastIndex = "findLastIndex".asInstanceOf[findLastIndex]
+  
+  @js.native
   sealed trait flat
     extends StObject
        with Modifiers

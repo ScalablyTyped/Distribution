@@ -14,6 +14,11 @@ trait SubstanceDefinition
   var _version: js.UndefOr[Element] = js.undefined
   
   /**
+    * General specifications for this substance.
+    */
+  var characterization: js.UndefOr[js.Array[SubstanceDefinitionCharacterization]] = js.undefined
+  
+  /**
     * A high level categorization, e.g. polymer or nucleic acid, or food, chemical, biological, or a lower level such as the general types of polymer (linear or branch chain) or type of impurity (process related or contaminant).
     */
   var classification: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
@@ -29,7 +34,7 @@ trait SubstanceDefinition
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * If the substance applies to only human or veterinary use.
+    * If the substance applies to human or veterinary use.
     */
   var domain: js.UndefOr[CodeableConcept] = js.undefined
   
@@ -49,7 +54,7 @@ trait SubstanceDefinition
   var informationSource: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * A company that makes this substance.
+    * The entity that creates, makes, produces or fabricates the substance. This is a set of potential manufacturers but is not necessarily comprehensive.
     */
   var manufacturer: js.UndefOr[js.Array[Reference]] = js.undefined
   
@@ -59,7 +64,7 @@ trait SubstanceDefinition
   var moiety: js.UndefOr[js.Array[SubstanceDefinitionMoiety]] = js.undefined
   
   /**
-    * The molecular weight or weight range (for proteins, polymers or nucleic acids).
+    * The average mass of a molecule of a compound compared to 1/12 the mass of carbon 12 and calculated as the sum of the atomic weights of the constituent atoms.
     */
   var molecularWeight: js.UndefOr[js.Array[SubstanceDefinitionMolecularWeight]] = js.undefined
   
@@ -113,7 +118,7 @@ trait SubstanceDefinition
   var sourceMaterial: js.UndefOr[SubstanceDefinitionSourceMaterial] = js.undefined
   
   /**
-    * Status of substance within the catalogue e.g. approved.
+    * Status of substance within the catalogue e.g. active, retired.
     */
   var status: js.UndefOr[CodeableConcept] = js.undefined
   
@@ -123,12 +128,12 @@ trait SubstanceDefinition
   var structure: js.UndefOr[SubstanceDefinitionStructure] = js.undefined
   
   /**
-    * A company that supplies this substance.
+    * An entity that is the source for the substance. It may be different from the manufacturer. Supplier is synonymous to a distributor.
     */
   var supplier: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * A business level identifier of the substance.
+    * A business level version identifier of the substance.
     */
   var version: js.UndefOr[String] = js.undefined
 }
@@ -141,6 +146,12 @@ object SubstanceDefinition {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: SubstanceDefinition] (val x: Self) extends AnyVal {
+    
+    inline def setCharacterization(value: js.Array[SubstanceDefinitionCharacterization]): Self = StObject.set(x, "characterization", value.asInstanceOf[js.Any])
+    
+    inline def setCharacterizationUndefined: Self = StObject.set(x, "characterization", js.undefined)
+    
+    inline def setCharacterizationVarargs(value: SubstanceDefinitionCharacterization*): Self = StObject.set(x, "characterization", js.Array(value*))
     
     inline def setClassification(value: js.Array[CodeableConcept]): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
     

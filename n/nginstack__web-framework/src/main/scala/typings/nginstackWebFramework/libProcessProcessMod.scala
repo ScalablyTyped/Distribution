@@ -181,6 +181,8 @@ object libProcessProcessMod {
     
     /* private */ var buttons: Any = js.native
     
+    var canDoHistory: Boolean = js.native
+    
     var canExport: Boolean = js.native
     
     /* private */ var canRun: Any = js.native
@@ -272,7 +274,7 @@ object libProcessProcessMod {
     
     /* private */ var getLabelChanges: Any = js.native
     
-    def getLinks(): Record[String, Link] = js.native
+    def getLinks(): Record[String, typings.nginstackWebFramework.libAnchorLinkMod.^] = js.native
     
     /* private */ var getLinksChanges: Any = js.native
     

@@ -1,6 +1,6 @@
 package typings.openui5.anon
 
-import typings.openui5.sapUiCoreControlMod.default
+import typings.openui5.sapUiBaseManagedObjectMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Control extends StObject {
   
   /**
-    * The control instance that is personalized by this controller
+    * Variant management control for which the URL technical parameter has to be cleared
     */
   var control: default
 }

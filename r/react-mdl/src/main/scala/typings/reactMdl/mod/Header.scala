@@ -10,7 +10,7 @@ open class Header protected () extends _MDLComponent[HeaderProps] {
   def this(props: HeaderProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: HeaderProps, context: Any) = this()
 }

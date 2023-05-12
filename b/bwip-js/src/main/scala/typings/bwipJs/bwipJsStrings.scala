@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object bwipJsStrings {
   
   @js.native
+  sealed trait C extends StObject
+  inline def C: C = "C".asInstanceOf[C]
+  
+  @js.native
   sealed trait I extends StObject
   inline def I: I = "I".asInstanceOf[I]
   
@@ -15,8 +19,16 @@ object bwipJsStrings {
   inline def L: L = "L".asInstanceOf[L]
   
   @js.native
+  sealed trait M extends StObject
+  inline def M: M = "M".asInstanceOf[M]
+  
+  @js.native
   sealed trait N extends StObject
   inline def N: N = "N".asInstanceOf[N]
+  
+  @js.native
+  sealed trait Q extends StObject
+  inline def Q: Q = "Q".asInstanceOf[Q]
   
   @js.native
   sealed trait R extends StObject

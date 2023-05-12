@@ -8,18 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object vueCompilerDomInts {
   
   @js.native
-  sealed trait `51`
-    extends StObject
-       with DOMErrorCodes
-  inline def `51`: `51` = 51.asInstanceOf[`51`]
-  
-  @js.native
-  sealed trait `52`
-    extends StObject
-       with DOMErrorCodes
-  inline def `52`: `52` = 52.asInstanceOf[`52`]
-  
-  @js.native
   sealed trait `53`
     extends StObject
        with DOMErrorCodes
@@ -78,4 +66,16 @@ object vueCompilerDomInts {
     extends StObject
        with DOMErrorCodes
   inline def `62`: `62` = 62.asInstanceOf[`62`]
+  
+  @js.native
+  sealed trait `63`
+    extends StObject
+       with DOMErrorCodes
+  inline def `63`: `63` = 63.asInstanceOf[`63`]
+  
+  @js.native
+  sealed trait `64`
+    extends StObject
+       with DOMErrorCodes
+  inline def `64`: `64` = 64.asInstanceOf[`64`]
 }

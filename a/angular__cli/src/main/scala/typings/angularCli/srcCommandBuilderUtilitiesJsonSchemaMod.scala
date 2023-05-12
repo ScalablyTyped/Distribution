@@ -2,7 +2,6 @@ package typings.angularCli
 
 import typings.angularDevkitCore.srcJsonSchemaInterfaceMod.SchemaRegistry
 import typings.angularDevkitCore.srcJsonUtilsMod.JsonObject
-import typings.yargs.mod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,14 +15,18 @@ object srcCommandBuilderUtilitiesJsonSchemaMod {
   inline def parseJsonSchemaToOptions(registry: SchemaRegistry, schema: JsonObject): js.Promise[js.Array[Option]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseJsonSchemaToOptions")(registry.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Option]]]
   inline def parseJsonSchemaToOptions(registry: SchemaRegistry, schema: JsonObject, interactive: Boolean): js.Promise[js.Array[Option]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseJsonSchemaToOptions")(registry.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], interactive.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Option]]]
   
-  trait Option
-    extends StObject
-       with Options {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify yargs.Options * / any */ trait Option extends StObject {
     
     /**
       * Format field of this option.
       */
     var format: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Whether this option should be hidden from the help output. It will still show up in JSON help.
+      */
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The name of the option.
@@ -38,14 +41,13 @@ object srcCommandBuilderUtilitiesJsonSchemaMod {
     /**
       * Whether this option is required or not.
       */
-    @JSName("required")
-    var required_Option: js.UndefOr[Boolean] = js.undefined
+    var required: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to report this option to the Angular Team, and which custom field to use.
       * If this is falsey, do not report this option.
       */
-    var userAnalytics: js.UndefOr[Double] = js.undefined
+    var userAnalytics: js.UndefOr[String] = js.undefined
   }
   object Option {
     
@@ -61,6 +63,10 @@ object srcCommandBuilderUtilitiesJsonSchemaMod {
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+      
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setPositional(value: Double): Self = StObject.set(x, "positional", value.asInstanceOf[js.Any])
@@ -71,7 +77,7 @@ object srcCommandBuilderUtilitiesJsonSchemaMod {
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      inline def setUserAnalytics(value: Double): Self = StObject.set(x, "userAnalytics", value.asInstanceOf[js.Any])
+      inline def setUserAnalytics(value: String): Self = StObject.set(x, "userAnalytics", value.asInstanceOf[js.Any])
       
       inline def setUserAnalyticsUndefined: Self = StObject.set(x, "userAnalytics", js.undefined)
     }

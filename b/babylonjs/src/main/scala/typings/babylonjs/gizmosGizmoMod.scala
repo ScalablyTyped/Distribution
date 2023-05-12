@@ -81,22 +81,16 @@ object gizmosGizmoMod {
       */
     /* protected */ def _setGizmoMeshMaterial(gizmoMeshes: js.Array[Mesh], material: StandardMaterial): Unit = js.native
     
-    /* private */ var _tempMatrix1: Any = js.native
-    
-    /* private */ var _tempMatrix2: Any = js.native
-    
-    /* private */ var _tempQuaternion: Any = js.native
-    
-    /* private */ var _tempVector: Any = js.native
-    
-    /* private */ var _tempVector2: Any = js.native
-    
     /**
       * Updates the gizmo to match the attached mesh's position/rotation
       */
     /* protected */ def _update(): Unit = js.native
     
+    /* protected */ var _updateGizmoPositionToMatchAttachedMesh: Boolean = js.native
+    
     /* protected */ var _updateGizmoRotationToMatchAttachedMesh: Boolean = js.native
+    
+    /* protected */ var _updateScale: Boolean = js.native
     
     /**
       * Mesh that the gizmo will be attached to. (eg. on a drag gizmo the mesh that will be dragged)
@@ -171,6 +165,8 @@ object gizmosGizmoMod {
       */
     /* CompleteClass */
     var updateGizmoPositionToMatchAttachedMesh: Boolean = js.native
+    @JSName("updateGizmoPositionToMatchAttachedMesh")
+    def updateGizmoPositionToMatchAttachedMesh_MGizmo: Boolean = js.native
     
     /**
       * If set the gizmo's rotation will be updated to match the attached mesh each frame (Default: true)
@@ -185,6 +181,8 @@ object gizmosGizmoMod {
       */
     /* CompleteClass */
     var updateScale: Boolean = js.native
+    @JSName("updateScale")
+    def updateScale_MGizmo: Boolean = js.native
   }
   /* static members */
   object Gizmo {

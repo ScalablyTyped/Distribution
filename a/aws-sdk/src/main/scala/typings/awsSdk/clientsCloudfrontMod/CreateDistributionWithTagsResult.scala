@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateDistributionWithTagsResult extends StObject {
   
   /**
-    * The distribution's information. 
+    * The distribution's information.
     */
   var Distribution: js.UndefOr[typings.awsSdk.clientsCloudfrontMod.Distribution] = js.undefined
   

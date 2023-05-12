@@ -1,13 +1,16 @@
 package typings.listr2.mod
 
-import typings.rxjs.mod.Subject
 import typings.std.PropertyKey
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** The bones of a listr renderer. */
+/**
+  * The definition of a ListrRenderer.
+  *
+  * @see {@link https://listr2.kilic.dev/renderer/renderer.html}
+  */
 @JSImport("listr2", "ListrRenderer")
 @js.native
 open class ListrRenderer protected () extends StObject {
@@ -16,7 +19,7 @@ open class ListrRenderer protected () extends StObject {
   def this(
     tasks: js.Array[Task[Any, ListrRendererFactory]],
     options: Record[PropertyKey, Any],
-    renderHook$: Subject[Unit]
+    events: ListrEventManager
   ) = this()
   
   /** A function to what to do on end of the render */
@@ -24,7 +27,7 @@ open class ListrRenderer protected () extends StObject {
   def end(err: js.Error): Unit = js.native
   
   /** A function to what to do on render */
-  def render(): Unit = js.native
+  def render(): Unit | js.Promise[Unit] = js.native
 }
 object ListrRenderer {
   

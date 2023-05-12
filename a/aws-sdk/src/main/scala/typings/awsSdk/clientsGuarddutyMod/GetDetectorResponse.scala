@@ -17,6 +17,11 @@ trait GetDetectorResponse extends StObject {
   var DataSources: js.UndefOr[DataSourceConfigurationsResult] = js.undefined
   
   /**
+    * Describes the features that have been enabled for the detector.
+    */
+  var Features: js.UndefOr[DetectorFeatureConfigurationsResults] = js.undefined
+  
+  /**
     * The publishing frequency of the finding.
     */
   var FindingPublishingFrequency: js.UndefOr[typings.awsSdk.clientsGuarddutyMod.FindingPublishingFrequency] = js.undefined
@@ -58,6 +63,12 @@ object GetDetectorResponse {
     inline def setDataSources(value: DataSourceConfigurationsResult): Self = StObject.set(x, "DataSources", value.asInstanceOf[js.Any])
     
     inline def setDataSourcesUndefined: Self = StObject.set(x, "DataSources", js.undefined)
+    
+    inline def setFeatures(value: DetectorFeatureConfigurationsResults): Self = StObject.set(x, "Features", value.asInstanceOf[js.Any])
+    
+    inline def setFeaturesUndefined: Self = StObject.set(x, "Features", js.undefined)
+    
+    inline def setFeaturesVarargs(value: DetectorFeatureConfigurationResult*): Self = StObject.set(x, "Features", js.Array(value*))
     
     inline def setFindingPublishingFrequency(value: FindingPublishingFrequency): Self = StObject.set(x, "FindingPublishingFrequency", value.asInstanceOf[js.Any])
     

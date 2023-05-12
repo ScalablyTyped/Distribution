@@ -1,12 +1,14 @@
 package typings.i18next.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.i18next.anon.PickInitOptionsfallbackLn
+import typings.i18next.anon.PickInitOptionsobjectfall
 import typings.i18next.i18nextBooleans.`false`
 import typings.i18next.i18nextBooleans.`true`
 import typings.i18next.i18nextStrings.Colon
 import typings.i18next.i18nextStrings.Dot
 import typings.i18next.i18nextStrings._empty
+import typings.i18next.i18nextStrings.ltr
+import typings.i18next.i18nextStrings.rtl
 import typings.i18next.i18nextStrings.translation
 import typings.i18next.mod.^
 import typings.std.Exclude
@@ -21,32 +23,152 @@ inline def default: i18n = ^.asInstanceOf[js.Dynamic].selectDynamic("default").a
 inline def changeLanguage: js.Function2[
 /* lng */ js.UndefOr[String], 
 /* callback */ js.UndefOr[Callback], 
-js.Promise[TFunction[DefaultNamespace, Unit]]] = ^.asInstanceOf[js.Dynamic].selectDynamic("changeLanguage").asInstanceOf[js.Function2[
+js.Promise[
+  TFunction[
+    DefaultNamespace, 
+    Unit, 
+    /* import warning: importer.ImportType#apply Failed type conversion: i18next.i18next.DefaultNamespace extends null ? i18next.i18next.DefaultNamespace : i18next.i18next.DefaultNamespace */ js.Any
+  ]
+]] = ^.asInstanceOf[js.Dynamic].selectDynamic("changeLanguage").asInstanceOf[js.Function2[
 /* lng */ js.UndefOr[String], 
 /* callback */ js.UndefOr[Callback], 
-js.Promise[TFunction[DefaultNamespace, Unit]]]]
+js.Promise[
+  TFunction[
+    DefaultNamespace, 
+    Unit, 
+    /* import warning: importer.ImportType#apply Failed type conversion: i18next.i18next.DefaultNamespace extends null ? i18next.i18next.DefaultNamespace : i18next.i18next.DefaultNamespace */ js.Any
+  ]
+]]]
 
-inline def createInstance: js.Function2[/* options */ js.UndefOr[InitOptions], /* callback */ js.UndefOr[Callback], i18n] = ^.asInstanceOf[js.Dynamic].selectDynamic("createInstance").asInstanceOf[js.Function2[/* options */ js.UndefOr[InitOptions], /* callback */ js.UndefOr[Callback], i18n]]
+inline def createInstance: js.Function2[
+/* options */ js.UndefOr[InitOptions[js.Object]], 
+/* callback */ js.UndefOr[Callback], 
+i18n] = ^.asInstanceOf[js.Dynamic].selectDynamic("createInstance").asInstanceOf[js.Function2[
+/* options */ js.UndefOr[InitOptions[js.Object]], 
+/* callback */ js.UndefOr[Callback], 
+i18n]]
+
+inline def dir: js.Function1[/* lng */ js.UndefOr[String], ltr | rtl] = ^.asInstanceOf[js.Dynamic].selectDynamic("dir").asInstanceOf[js.Function1[/* lng */ js.UndefOr[String], ltr | rtl]]
 
 inline def exists: ExistsFunction[String, StringMap] = ^.asInstanceOf[js.Dynamic].selectDynamic("exists").asInstanceOf[ExistsFunction[String, StringMap]]
 
-inline def getFixedT[N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix /* <: KeyPrefix[N] */](lng: String): TFunction[N, TKPrefix] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any]).asInstanceOf[TFunction[N, TKPrefix]]
-inline def getFixedT[N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix /* <: KeyPrefix[N] */](lng: String, ns: N): TFunction[N, TKPrefix] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any])).asInstanceOf[TFunction[N, TKPrefix]]
-inline def getFixedT[N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix /* <: KeyPrefix[N] */](lng: String, ns: N, keyPrefix: TKPrefix): TFunction[N, TKPrefix] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any], keyPrefix.asInstanceOf[js.Any])).asInstanceOf[TFunction[N, TKPrefix]]
-inline def getFixedT[N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix /* <: KeyPrefix[N] */](lng: String, ns: Unit, keyPrefix: TKPrefix): TFunction[N, TKPrefix] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any], keyPrefix.asInstanceOf[js.Any])).asInstanceOf[TFunction[N, TKPrefix]]
-inline def getFixedT[N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix /* <: KeyPrefix[N] */](lng: js.Array[String]): TFunction[N, TKPrefix] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any]).asInstanceOf[TFunction[N, TKPrefix]]
-inline def getFixedT[N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix /* <: KeyPrefix[N] */](lng: js.Array[String], ns: N): TFunction[N, TKPrefix] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any])).asInstanceOf[TFunction[N, TKPrefix]]
-inline def getFixedT[N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix /* <: KeyPrefix[N] */](lng: js.Array[String], ns: N, keyPrefix: TKPrefix): TFunction[N, TKPrefix] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any], keyPrefix.asInstanceOf[js.Any])).asInstanceOf[TFunction[N, TKPrefix]]
-inline def getFixedT[N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix /* <: KeyPrefix[N] */](lng: js.Array[String], ns: Unit, keyPrefix: TKPrefix): TFunction[N, TKPrefix] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any], keyPrefix.asInstanceOf[js.Any])).asInstanceOf[TFunction[N, TKPrefix]]
-inline def getFixedT[N /* <: (Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]]) | Null */, TKPrefix /* <: KeyPrefix[ActualNS] */, ActualNS /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */](lng: Null, ns: N): TFunction[ActualNS, TKPrefix] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any])).asInstanceOf[TFunction[ActualNS, TKPrefix]]
-inline def getFixedT[N /* <: (Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]]) | Null */, TKPrefix /* <: KeyPrefix[ActualNS] */, ActualNS /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */](lng: Null, ns: N, keyPrefix: TKPrefix): TFunction[ActualNS, TKPrefix] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any], keyPrefix.asInstanceOf[js.Any])).asInstanceOf[TFunction[ActualNS, TKPrefix]]
+inline def getFixedT[N /* <: (Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]]) | Null */, TKPrefix /* <: KeyPrefix[ActualNS] */, ActualNS /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */](lng: String): TFunction[
+ActualNS, 
+TKPrefix, 
+/* import warning: importer.ImportType#apply Failed type conversion: ActualNS extends null ? i18next.i18next.DefaultNamespace : ActualNS */ js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any]).asInstanceOf[TFunction[
+ActualNS, 
+TKPrefix, 
+/* import warning: importer.ImportType#apply Failed type conversion: ActualNS extends null ? i18next.i18next.DefaultNamespace : ActualNS */ js.Any]]
+inline def getFixedT[N /* <: (Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]]) | Null */, TKPrefix /* <: KeyPrefix[ActualNS] */, ActualNS /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */](lng: String, ns: N): TFunction[
+ActualNS, 
+TKPrefix, 
+/* import warning: importer.ImportType#apply Failed type conversion: ActualNS extends null ? i18next.i18next.DefaultNamespace : ActualNS */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any])).asInstanceOf[TFunction[
+ActualNS, 
+TKPrefix, 
+/* import warning: importer.ImportType#apply Failed type conversion: ActualNS extends null ? i18next.i18next.DefaultNamespace : ActualNS */ js.Any]]
+inline def getFixedT[N /* <: (Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]]) | Null */, TKPrefix /* <: KeyPrefix[ActualNS] */, ActualNS /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */](lng: String, ns: N, keyPrefix: TKPrefix): TFunction[
+ActualNS, 
+TKPrefix, 
+/* import warning: importer.ImportType#apply Failed type conversion: ActualNS extends null ? i18next.i18next.DefaultNamespace : ActualNS */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any], keyPrefix.asInstanceOf[js.Any])).asInstanceOf[TFunction[
+ActualNS, 
+TKPrefix, 
+/* import warning: importer.ImportType#apply Failed type conversion: ActualNS extends null ? i18next.i18next.DefaultNamespace : ActualNS */ js.Any]]
+inline def getFixedT[N /* <: (Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]]) | Null */, TKPrefix /* <: KeyPrefix[ActualNS] */, ActualNS /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */](lng: String, ns: Unit, keyPrefix: TKPrefix): TFunction[
+ActualNS, 
+TKPrefix, 
+/* import warning: importer.ImportType#apply Failed type conversion: ActualNS extends null ? i18next.i18next.DefaultNamespace : ActualNS */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any], keyPrefix.asInstanceOf[js.Any])).asInstanceOf[TFunction[
+ActualNS, 
+TKPrefix, 
+/* import warning: importer.ImportType#apply Failed type conversion: ActualNS extends null ? i18next.i18next.DefaultNamespace : ActualNS */ js.Any]]
+inline def getFixedT[N /* <: (Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]]) | Null */, TKPrefix /* <: KeyPrefix[ActualNS] */, ActualNS /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */](lng: js.Array[String]): TFunction[
+ActualNS, 
+TKPrefix, 
+/* import warning: importer.ImportType#apply Failed type conversion: ActualNS extends null ? i18next.i18next.DefaultNamespace : ActualNS */ js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any]).asInstanceOf[TFunction[
+ActualNS, 
+TKPrefix, 
+/* import warning: importer.ImportType#apply Failed type conversion: ActualNS extends null ? i18next.i18next.DefaultNamespace : ActualNS */ js.Any]]
+inline def getFixedT[N /* <: (Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]]) | Null */, TKPrefix /* <: KeyPrefix[ActualNS] */, ActualNS /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */](lng: js.Array[String], ns: N): TFunction[
+ActualNS, 
+TKPrefix, 
+/* import warning: importer.ImportType#apply Failed type conversion: ActualNS extends null ? i18next.i18next.DefaultNamespace : ActualNS */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any])).asInstanceOf[TFunction[
+ActualNS, 
+TKPrefix, 
+/* import warning: importer.ImportType#apply Failed type conversion: ActualNS extends null ? i18next.i18next.DefaultNamespace : ActualNS */ js.Any]]
+inline def getFixedT[N /* <: (Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]]) | Null */, TKPrefix /* <: KeyPrefix[ActualNS] */, ActualNS /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */](lng: js.Array[String], ns: N, keyPrefix: TKPrefix): TFunction[
+ActualNS, 
+TKPrefix, 
+/* import warning: importer.ImportType#apply Failed type conversion: ActualNS extends null ? i18next.i18next.DefaultNamespace : ActualNS */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any], keyPrefix.asInstanceOf[js.Any])).asInstanceOf[TFunction[
+ActualNS, 
+TKPrefix, 
+/* import warning: importer.ImportType#apply Failed type conversion: ActualNS extends null ? i18next.i18next.DefaultNamespace : ActualNS */ js.Any]]
+inline def getFixedT[N /* <: (Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]]) | Null */, TKPrefix /* <: KeyPrefix[ActualNS] */, ActualNS /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */](lng: js.Array[String], ns: Unit, keyPrefix: TKPrefix): TFunction[
+ActualNS, 
+TKPrefix, 
+/* import warning: importer.ImportType#apply Failed type conversion: ActualNS extends null ? i18next.i18next.DefaultNamespace : ActualNS */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any], keyPrefix.asInstanceOf[js.Any])).asInstanceOf[TFunction[
+ActualNS, 
+TKPrefix, 
+/* import warning: importer.ImportType#apply Failed type conversion: ActualNS extends null ? i18next.i18next.DefaultNamespace : ActualNS */ js.Any]]
+inline def getFixedT[N /* <: (Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]]) | Null */, TKPrefix /* <: KeyPrefix[ActualNS] */, ActualNS /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */](lng: Null, ns: N): TFunction[
+ActualNS, 
+TKPrefix, 
+/* import warning: importer.ImportType#apply Failed type conversion: ActualNS extends null ? i18next.i18next.DefaultNamespace : ActualNS */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any])).asInstanceOf[TFunction[
+ActualNS, 
+TKPrefix, 
+/* import warning: importer.ImportType#apply Failed type conversion: ActualNS extends null ? i18next.i18next.DefaultNamespace : ActualNS */ js.Any]]
+inline def getFixedT[N /* <: (Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]]) | Null */, TKPrefix /* <: KeyPrefix[ActualNS] */, ActualNS /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */](lng: Null, ns: N, keyPrefix: TKPrefix): TFunction[
+ActualNS, 
+TKPrefix, 
+/* import warning: importer.ImportType#apply Failed type conversion: ActualNS extends null ? i18next.i18next.DefaultNamespace : ActualNS */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any], keyPrefix.asInstanceOf[js.Any])).asInstanceOf[TFunction[
+ActualNS, 
+TKPrefix, 
+/* import warning: importer.ImportType#apply Failed type conversion: ActualNS extends null ? i18next.i18next.DefaultNamespace : ActualNS */ js.Any]]
 
-inline def hasLoadedNamespace: js.Function2[/* ns */ String, /* options */ js.UndefOr[PickInitOptionsfallbackLn], Boolean] = ^.asInstanceOf[js.Dynamic].selectDynamic("hasLoadedNamespace").asInstanceOf[js.Function2[/* ns */ String, /* options */ js.UndefOr[PickInitOptionsfallbackLn], Boolean]]
+inline def hasLoadedNamespace: js.Function2[/* ns */ String, /* options */ js.UndefOr[PickInitOptionsobjectfall], Boolean] = ^.asInstanceOf[js.Dynamic].selectDynamic("hasLoadedNamespace").asInstanceOf[js.Function2[/* ns */ String, /* options */ js.UndefOr[PickInitOptionsobjectfall], Boolean]]
 
-inline def init(): js.Promise[TFunction[DefaultNamespace, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[js.Promise[TFunction[DefaultNamespace, Unit]]]
-inline def init(callback: Callback): js.Promise[TFunction[DefaultNamespace, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TFunction[DefaultNamespace, Unit]]]
-inline def init(options: InitOptions): js.Promise[TFunction[DefaultNamespace, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TFunction[DefaultNamespace, Unit]]]
-inline def init(options: InitOptions, callback: Callback): js.Promise[TFunction[DefaultNamespace, Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TFunction[DefaultNamespace, Unit]]]
+inline def init(): js.Promise[
+TFunction[
+  DefaultNamespace, 
+  Unit, 
+  /* import warning: importer.ImportType#apply Failed type conversion: i18next.i18next.DefaultNamespace extends null ? i18next.i18next.DefaultNamespace : i18next.i18next.DefaultNamespace */ js.Any
+]] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[js.Promise[
+TFunction[
+  DefaultNamespace, 
+  Unit, 
+  /* import warning: importer.ImportType#apply Failed type conversion: i18next.i18next.DefaultNamespace extends null ? i18next.i18next.DefaultNamespace : i18next.i18next.DefaultNamespace */ js.Any
+]]]
+inline def init(callback: Callback): js.Promise[
+TFunction[
+  DefaultNamespace, 
+  Unit, 
+  /* import warning: importer.ImportType#apply Failed type conversion: i18next.i18next.DefaultNamespace extends null ? i18next.i18next.DefaultNamespace : i18next.i18next.DefaultNamespace */ js.Any
+]] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
+TFunction[
+  DefaultNamespace, 
+  Unit, 
+  /* import warning: importer.ImportType#apply Failed type conversion: i18next.i18next.DefaultNamespace extends null ? i18next.i18next.DefaultNamespace : i18next.i18next.DefaultNamespace */ js.Any
+]]]
+inline def init[T](options: InitOptions[T]): js.Promise[
+TFunction[
+  DefaultNamespace, 
+  Unit, 
+  /* import warning: importer.ImportType#apply Failed type conversion: i18next.i18next.DefaultNamespace extends null ? i18next.i18next.DefaultNamespace : i18next.i18next.DefaultNamespace */ js.Any
+]] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
+TFunction[
+  DefaultNamespace, 
+  Unit, 
+  /* import warning: importer.ImportType#apply Failed type conversion: i18next.i18next.DefaultNamespace extends null ? i18next.i18next.DefaultNamespace : i18next.i18next.DefaultNamespace */ js.Any
+]]]
+inline def init[T](options: InitOptions[T], callback: Callback): js.Promise[
+TFunction[
+  DefaultNamespace, 
+  Unit, 
+  /* import warning: importer.ImportType#apply Failed type conversion: i18next.i18next.DefaultNamespace extends null ? i18next.i18next.DefaultNamespace : i18next.i18next.DefaultNamespace */ js.Any
+]] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+TFunction[
+  DefaultNamespace, 
+  Unit, 
+  /* import warning: importer.ImportType#apply Failed type conversion: i18next.i18next.DefaultNamespace extends null ? i18next.i18next.DefaultNamespace : i18next.i18next.DefaultNamespace */ js.Any
+]]]
 
 inline def loadLanguages: js.Function2[
 /* lngs */ String | js.Array[String], 
@@ -91,13 +213,26 @@ inline def reloadResources(lngs: Unit, ns: Unit, callback: js.Function0[Unit]): 
 
 inline def setDefaultNamespace: js.Function1[/* ns */ String, Unit] = ^.asInstanceOf[js.Dynamic].selectDynamic("setDefaultNamespace").asInstanceOf[js.Function1[/* ns */ String, Unit]]
 
-inline def t: TFunction[js.Array[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]], Unit] = ^.asInstanceOf[js.Dynamic].selectDynamic("t").asInstanceOf[TFunction[js.Array[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]], Unit]]
+inline def t: TFunction[
+js.Array[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]], 
+Unit, 
+/* import warning: importer.ImportType#apply Failed type conversion: std.Array<i18next.i18next.FallbackOrNS<string, keyof i18next.i18next.Resources>> extends null ? i18next.i18next.DefaultNamespace : std.Array<i18next.i18next.FallbackOrNS<string, keyof i18next.i18next.Resources>> */ js.Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("t").asInstanceOf[TFunction[
+js.Array[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]], 
+Unit, 
+/* import warning: importer.ImportType#apply Failed type conversion: std.Array<i18next.i18next.FallbackOrNS<string, keyof i18next.i18next.Resources>> extends null ? i18next.i18next.DefaultNamespace : std.Array<i18next.i18next.FallbackOrNS<string, keyof i18next.i18next.Resources>> */ js.Any]]
 
 inline def use: js.Function1[/* module */ Module | NewableModule[Module] | Newable[Module], this.type] = ^.asInstanceOf[js.Dynamic].selectDynamic("use").asInstanceOf[js.Function1[/* module */ Module | NewableModule[Module] | Newable[Module], this.type]]
 
-type Callback = js.Function2[/* error */ Any, /* t */ TFunction[DefaultNamespace, Unit], Unit]
+type Callback = js.Function2[
+/* error */ Any, 
+/* t */ TFunction[
+  DefaultNamespace, 
+  Unit, 
+  /* import warning: importer.ImportType#apply Failed type conversion: i18next.i18next.DefaultNamespace extends null ? i18next.i18next.DefaultNamespace : i18next.i18next.DefaultNamespace */ js.Any
+], 
+Unit]
 
-type CallbackError = js.UndefOr[js.Error | Null]
+type CallbackError = js.UndefOr[js.Error | String | Null]
 
 type DefaultNamespace = translation
 

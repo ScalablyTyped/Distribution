@@ -1,6 +1,5 @@
 package typings.cesium.mod
 
-import typings.cesium.anon.ExtrudedHeight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("cesium", "CircleOutlineGeometry")
 @js.native
 open class CircleOutlineGeometry protected () extends StObject {
-  def this(options: ExtrudedHeight) = this()
+  def this(options: typings.cesium.anon.Ellipsoid) = this()
 }
 /* static members */
 object CircleOutlineGeometry {

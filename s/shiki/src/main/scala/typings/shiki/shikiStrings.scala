@@ -51,6 +51,12 @@ object shikiStrings {
   inline def applescript: applescript = "applescript".asInstanceOf[applescript]
   
   @js.native
+  sealed trait ara
+    extends StObject
+       with Lang
+  inline def ara: ara = "ara".asInstanceOf[ara]
+  
+  @js.native
   sealed trait asm
     extends StObject
        with Lang
@@ -195,6 +201,12 @@ object shikiStrings {
   inline def coffee: coffee = "coffee".asInstanceOf[coffee]
   
   @js.native
+  sealed trait console
+    extends StObject
+       with Lang
+  inline def console: console = "console".asInstanceOf[console]
+  
+  @js.native
   sealed trait cpp
     extends StObject
        with Lang
@@ -205,6 +217,12 @@ object shikiStrings {
     extends StObject
        with Lang
   inline def crystal: crystal = "crystal".asInstanceOf[crystal]
+  
+  @js.native
+  sealed trait cs
+    extends StObject
+       with Lang
+  inline def cs: cs = "cs".asInstanceOf[cs]
   
   @js.native
   sealed trait csharp
@@ -253,6 +271,12 @@ object shikiStrings {
   inline def dart: dart = "dart".asInstanceOf[dart]
   
   @js.native
+  sealed trait dax
+    extends StObject
+       with Lang
+  inline def dax: dax = "dax".asInstanceOf[dax]
+  
+  @js.native
   sealed trait diff
     extends StObject
        with Lang
@@ -263,6 +287,12 @@ object shikiStrings {
     extends StObject
        with Lang
   inline def docker: docker = "docker".asInstanceOf[docker]
+  
+  @js.native
+  sealed trait dockerfile
+    extends StObject
+       with Lang
+  inline def dockerfile: dockerfile = "dockerfile".asInstanceOf[dockerfile]
   
   @js.native
   sealed trait dracula
@@ -301,6 +331,12 @@ object shikiStrings {
   inline def erb: erb = "erb".asInstanceOf[erb]
   
   @js.native
+  sealed trait erl
+    extends StObject
+       with Lang
+  inline def erl: erl = "erl".asInstanceOf[erl]
+  
+  @js.native
   sealed trait erlang
     extends StObject
        with Lang
@@ -319,6 +355,12 @@ object shikiStrings {
   inline def fish: fish = "fish".asInstanceOf[fish]
   
   @js.native
+  sealed trait fs
+    extends StObject
+       with Lang
+  inline def fs: fs = "fs".asInstanceOf[fs]
+  
+  @js.native
   sealed trait fsharp
     extends StObject
        with Lang
@@ -329,6 +371,24 @@ object shikiStrings {
     extends StObject
        with Lang
   inline def fsl: fsl = "fsl".asInstanceOf[fsl]
+  
+  @js.native
+  sealed trait gdresource
+    extends StObject
+       with Lang
+  inline def gdresource: gdresource = "gdresource".asInstanceOf[gdresource]
+  
+  @js.native
+  sealed trait gdscript
+    extends StObject
+       with Lang
+  inline def gdscript: gdscript = "gdscript".asInstanceOf[gdscript]
+  
+  @js.native
+  sealed trait gdshader
+    extends StObject
+       with Lang
+  inline def gdshader: gdshader = "gdshader".asInstanceOf[gdshader]
   
   @js.native
   sealed trait gherkin
@@ -445,10 +505,28 @@ object shikiStrings {
   inline def hlsl: hlsl = "hlsl".asInstanceOf[hlsl]
   
   @js.native
+  sealed trait hs
+    extends StObject
+       with Lang
+  inline def hs: hs = "hs".asInstanceOf[hs]
+  
+  @js.native
   sealed trait html
     extends StObject
        with Lang
   inline def html: html = "html".asInstanceOf[html]
+  
+  @js.native
+  sealed trait http
+    extends StObject
+       with Lang
+  inline def http: http = "http".asInstanceOf[http]
+  
+  @js.native
+  sealed trait imba
+    extends StObject
+       with Lang
+  inline def imba: imba = "imba".asInstanceOf[imba]
   
   @js.native
   sealed trait ini
@@ -481,6 +559,12 @@ object shikiStrings {
   inline def `jinja-html`: `jinja-html` = "jinja-html".asInstanceOf[`jinja-html`]
   
   @js.native
+  sealed trait jison
+    extends StObject
+       with Lang
+  inline def jison: jison = "jison".asInstanceOf[jison]
+  
+  @js.native
   sealed trait js_
     extends StObject
        with Lang
@@ -491,6 +575,12 @@ object shikiStrings {
     extends StObject
        with Lang
   inline def json: json = "json".asInstanceOf[json]
+  
+  @js.native
+  sealed trait json5
+    extends StObject
+       with Lang
+  inline def json5: json5 = "json5".asInstanceOf[json5]
   
   @js.native
   sealed trait jsonc
@@ -527,6 +617,18 @@ object shikiStrings {
     extends StObject
        with Lang
   inline def kotlin: kotlin = "kotlin".asInstanceOf[kotlin]
+  
+  @js.native
+  sealed trait kql
+    extends StObject
+       with Lang
+  inline def kql: kql = "kql".asInstanceOf[kql]
+  
+  @js.native
+  sealed trait kusto
+    extends StObject
+       with Lang
+  inline def kusto: kusto = "kusto".asInstanceOf[kusto]
   
   @js.native
   sealed trait latex
@@ -599,34 +701,34 @@ object shikiStrings {
   inline def marko: marko = "marko".asInstanceOf[marko]
   
   @js.native
-  sealed trait `material-darker`
+  sealed trait `material-theme`
     extends StObject
        with Theme
-  inline def `material-darker`: `material-darker` = "material-darker".asInstanceOf[`material-darker`]
+  inline def `material-theme`: `material-theme` = "material-theme".asInstanceOf[`material-theme`]
   
   @js.native
-  sealed trait `material-default`
+  sealed trait `material-theme-darker`
     extends StObject
        with Theme
-  inline def `material-default`: `material-default` = "material-default".asInstanceOf[`material-default`]
+  inline def `material-theme-darker`: `material-theme-darker` = "material-theme-darker".asInstanceOf[`material-theme-darker`]
   
   @js.native
-  sealed trait `material-lighter`
+  sealed trait `material-theme-lighter`
     extends StObject
        with Theme
-  inline def `material-lighter`: `material-lighter` = "material-lighter".asInstanceOf[`material-lighter`]
+  inline def `material-theme-lighter`: `material-theme-lighter` = "material-theme-lighter".asInstanceOf[`material-theme-lighter`]
   
   @js.native
-  sealed trait `material-ocean`
+  sealed trait `material-theme-ocean`
     extends StObject
        with Theme
-  inline def `material-ocean`: `material-ocean` = "material-ocean".asInstanceOf[`material-ocean`]
+  inline def `material-theme-ocean`: `material-theme-ocean` = "material-theme-ocean".asInstanceOf[`material-theme-ocean`]
   
   @js.native
-  sealed trait `material-palenight`
+  sealed trait `material-theme-palenight`
     extends StObject
        with Theme
-  inline def `material-palenight`: `material-palenight` = "material-palenight".asInstanceOf[`material-palenight`]
+  inline def `material-theme-palenight`: `material-theme-palenight` = "material-theme-palenight".asInstanceOf[`material-theme-palenight`]
   
   @js.native
   sealed trait matlab
@@ -767,6 +869,12 @@ object shikiStrings {
   inline def postcss: postcss = "postcss".asInstanceOf[postcss]
   
   @js.native
+  sealed trait powerquery
+    extends StObject
+       with Lang
+  inline def powerquery: powerquery = "powerquery".asInstanceOf[powerquery]
+  
+  @js.native
   sealed trait powershell
     extends StObject
        with Lang
@@ -783,6 +891,18 @@ object shikiStrings {
     extends StObject
        with Lang
   inline def prolog: prolog = "prolog".asInstanceOf[prolog]
+  
+  @js.native
+  sealed trait properties
+    extends StObject
+       with Lang
+  inline def properties: properties = "properties".asInstanceOf[properties]
+  
+  @js.native
+  sealed trait proto
+    extends StObject
+       with Lang
+  inline def proto: proto = "proto".asInstanceOf[proto]
   
   @js.native
   sealed trait ps
@@ -855,6 +975,12 @@ object shikiStrings {
     extends StObject
        with Lang
   inline def rb: rb = "rb".asInstanceOf[rb]
+  
+  @js.native
+  sealed trait reg
+    extends StObject
+       with Lang
+  inline def reg: reg = "reg".asInstanceOf[reg]
   
   @js.native
   sealed trait rel
@@ -1115,6 +1241,12 @@ object shikiStrings {
   inline def typescript: typescript = "typescript".asInstanceOf[typescript]
   
   @js.native
+  sealed trait v
+    extends StObject
+       with Lang
+  inline def v: v = "v".asInstanceOf[v]
+  
+  @js.native
   sealed trait vb
     extends StObject
        with Lang
@@ -1187,6 +1319,18 @@ object shikiStrings {
   inline def wenyan: wenyan = "wenyan".asInstanceOf[wenyan]
   
   @js.native
+  sealed trait wgsl
+    extends StObject
+       with Lang
+  inline def wgsl: wgsl = "wgsl".asInstanceOf[wgsl]
+  
+  @js.native
+  sealed trait wolfram
+    extends StObject
+       with Lang
+  inline def wolfram: wolfram = "wolfram".asInstanceOf[wolfram]
+  
+  @js.native
   sealed trait xml
     extends StObject
        with Lang
@@ -1203,6 +1347,12 @@ object shikiStrings {
     extends StObject
        with Lang
   inline def yaml: yaml = "yaml".asInstanceOf[yaml]
+  
+  @js.native
+  sealed trait yml
+    extends StObject
+       with Lang
+  inline def yml: yml = "yml".asInstanceOf[yml]
   
   @js.native
   sealed trait zenscript

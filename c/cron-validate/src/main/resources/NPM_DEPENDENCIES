@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "cron-validate" : "1.4.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "cron-validate" : "1.4.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

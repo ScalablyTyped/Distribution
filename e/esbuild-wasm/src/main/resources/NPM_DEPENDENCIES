@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "esbuild-wasm" : "0.15.12"
+      "esbuild-wasm" : "0.17.18"
     }
   ],
   "test-dependencies" : [
     {
-      "esbuild-wasm" : "0.15.12"
+      "esbuild-wasm" : "0.17.18"
     }
   ],
   "compile-devDependencies" : [

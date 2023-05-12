@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateGameSessionQueueInput extends StObject {
   
   /**
-    *  Information to be added to all events that are related to this game session queue. 
+    * Information to be added to all events that are related to this game session queue.
     */
   var CustomEventData: js.UndefOr[QueueCustomEventData] = js.undefined
   

@@ -6,22 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `456` extends StObject {
   
-  @JSName("application/json")
-  var applicationSlashjson: js.Array[Deletedat]
+  var name: js.UndefOr[FromString] = js.undefined
 }
 object `456` {
   
-  inline def apply(applicationSlashjson: js.Array[Deletedat]): `456` = {
+  inline def apply(): `456` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`456`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `456`] (val x: Self) extends AnyVal {
     
-    inline def setApplicationSlashjson(value: js.Array[Deletedat]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    inline def setName(value: FromString): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setApplicationSlashjsonVarargs(value: Deletedat*): Self = StObject.set(x, "application/json", js.Array(value*))
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

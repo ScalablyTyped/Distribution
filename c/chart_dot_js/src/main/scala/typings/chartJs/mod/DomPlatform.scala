@@ -6,4 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("chart.js", "DomPlatform")
 @js.native
-open class DomPlatform () extends BasePlatform
+open class DomPlatform ()
+  extends typings.chartJs.distTypesIndexMod.DomPlatform

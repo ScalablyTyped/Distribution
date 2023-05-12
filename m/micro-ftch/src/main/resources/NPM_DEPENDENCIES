@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "micro-ftch" : "0.3.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "micro-ftch" : "0.3.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

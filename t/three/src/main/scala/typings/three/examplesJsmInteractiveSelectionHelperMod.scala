@@ -15,6 +15,8 @@ object examplesJsmInteractiveSelectionHelperMod {
   open class SelectionHelper protected () extends StObject {
     def this(renderer: WebGLRenderer, cssClassName: String) = this()
     
+    def dispose(): Unit = js.native
+    
     var element: HTMLElement = js.native
     
     var isDown: Boolean = js.native

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "nkeys.js" : "1.0.3"
+      "nkeys.js" : "1.0.5"
     }
   ],
   "test-dependencies" : [
     {
-      "nkeys.js" : "1.0.3"
+      "nkeys.js" : "1.0.5"
     }
   ],
   "compile-devDependencies" : [

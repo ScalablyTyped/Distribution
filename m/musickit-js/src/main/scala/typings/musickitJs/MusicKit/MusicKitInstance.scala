@@ -158,7 +158,7 @@ trait MusicKitInstance extends StObject {
   /**
     * The current playback state of the music player.
     */
-  val playbackState: PlaybackState = js.native
+  val playbackState: PlaybackStates = js.native
   
   /**
     * A Boolean value that indicates if a playback target is available.

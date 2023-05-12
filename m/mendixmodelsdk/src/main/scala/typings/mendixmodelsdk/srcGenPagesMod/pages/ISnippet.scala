@@ -1,6 +1,7 @@
 package typings.mendixmodelsdk.srcGenPagesMod.pages
 
 import typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.IEntity
+import typings.mendixmodelsdk.srcSdkInternalInstancesMod.IList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +14,17 @@ trait ISnippet
   extends StObject
      with IFormBase {
   
+  /**
+    * In version 9.21.0: deleted
+    */
   val entity: IEntity | Null = js.native
   
   val entityQualifiedName: String | Null = js.native
+  
+  /**
+    * In version 9.21.0: introduced
+    */
+  val parameters: IList[ISnippetParameter] = js.native
   
   /**
     * In version 8.4.0: added public

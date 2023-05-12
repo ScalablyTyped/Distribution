@@ -52,6 +52,8 @@ trait MPConfiguration extends StObject {
   
   var sessionTimeout: js.UndefOr[Double] = js.undefined
   
+  var sideloadedKits: js.UndefOr[js.Array[MPForwarder]] = js.undefined
+  
   var useCookieStorage: js.UndefOr[Boolean] = js.undefined
   
   /**
@@ -134,6 +136,12 @@ object MPConfiguration {
     inline def setSessionTimeout(value: Double): Self = StObject.set(x, "sessionTimeout", value.asInstanceOf[js.Any])
     
     inline def setSessionTimeoutUndefined: Self = StObject.set(x, "sessionTimeout", js.undefined)
+    
+    inline def setSideloadedKits(value: js.Array[MPForwarder]): Self = StObject.set(x, "sideloadedKits", value.asInstanceOf[js.Any])
+    
+    inline def setSideloadedKitsUndefined: Self = StObject.set(x, "sideloadedKits", js.undefined)
+    
+    inline def setSideloadedKitsVarargs(value: MPForwarder*): Self = StObject.set(x, "sideloadedKits", js.Array(value*))
     
     inline def setUseCookieStorage(value: Boolean): Self = StObject.set(x, "useCookieStorage", value.asInstanceOf[js.Any])
     

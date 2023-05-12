@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('./xr-manager.js').XrManager} XrManager */
 /**
   * Plane Detection provides the ability to detect real world surfaces based on estimations of the
   * underlying AR system.
@@ -29,7 +28,7 @@ open class XrPlaneDetection protected ()
   /**
     * Create a new XrPlaneDetection instance.
     *
-    * @param {XrManager} manager - WebXR Manager.
+    * @param {import('./xr-manager.js').XrManager} manager - WebXR Manager.
     * @hideconstructor
     */
   def this(manager: typings.playcanvas.mod.XrManager) = this()

@@ -1,5 +1,6 @@
 package typings.azureMsalNode
 
+import typings.azureMsalCommon.distAccountAccountInfoMod.AccountInfo
 import typings.azureMsalCommon.distResponseAuthenticationResultMod.AuthenticationResult
 import typings.azureMsalCommon.mod.Logger
 import typings.azureMsalNode.distCacheTokenCacheMod.TokenCache
@@ -8,6 +9,7 @@ import typings.azureMsalNode.distRequestAuthorizationUrlRequestMod.Authorization
 import typings.azureMsalNode.distRequestDeviceCodeRequestMod.DeviceCodeRequest
 import typings.azureMsalNode.distRequestInteractiveRequestMod.InteractiveRequest
 import typings.azureMsalNode.distRequestRefreshTokenRequestMod.RefreshTokenRequest
+import typings.azureMsalNode.distRequestSignOutRequestMod.SignOutRequest
 import typings.azureMsalNode.distRequestSilentFlowRequestMod.SilentFlowRequest
 import typings.azureMsalNode.distRequestUsernamePasswordRequestMod.UsernamePasswordRequest
 import org.scalablytyped.runtime.StObject
@@ -39,6 +41,9 @@ object distClientIpublicclientapplicationMod {
     /** Clear the cache */
     def clearCache(): Unit
     
+    /** Gets all cached accounts */
+    def getAllAccounts(): js.Promise[js.Array[AccountInfo]]
+    
     /** Creates the URL of the authorization request */
     def getAuthCodeUrl(request: AuthorizationUrlRequest): js.Promise[String]
     
@@ -50,6 +55,9 @@ object distClientIpublicclientapplicationMod {
     
     /** Replaces the default logger set in configurations with new Logger with new configurations */
     def setLogger(logger: Logger): Unit
+    
+    /** Removes cache artifacts associated with the given account */
+    def signOut(request: SignOutRequest): js.Promise[Unit]
   }
   object IPublicClientApplication {
     
@@ -61,12 +69,14 @@ object distClientIpublicclientapplicationMod {
       acquireTokenInteractive: InteractiveRequest => js.Promise[AuthenticationResult],
       acquireTokenSilent: SilentFlowRequest => js.Promise[AuthenticationResult | Null],
       clearCache: () => Unit,
+      getAllAccounts: () => js.Promise[js.Array[AccountInfo]],
       getAuthCodeUrl: AuthorizationUrlRequest => js.Promise[String],
       getLogger: () => Logger,
       getTokenCache: () => TokenCache,
-      setLogger: Logger => Unit
+      setLogger: Logger => Unit,
+      signOut: SignOutRequest => js.Promise[Unit]
     ): IPublicClientApplication = {
-      val __obj = js.Dynamic.literal(acquireTokenByCode = js.Any.fromFunction1(acquireTokenByCode), acquireTokenByDeviceCode = js.Any.fromFunction1(acquireTokenByDeviceCode), acquireTokenByRefreshToken = js.Any.fromFunction1(acquireTokenByRefreshToken), acquireTokenByUsernamePassword = js.Any.fromFunction1(acquireTokenByUsernamePassword), acquireTokenInteractive = js.Any.fromFunction1(acquireTokenInteractive), acquireTokenSilent = js.Any.fromFunction1(acquireTokenSilent), clearCache = js.Any.fromFunction0(clearCache), getAuthCodeUrl = js.Any.fromFunction1(getAuthCodeUrl), getLogger = js.Any.fromFunction0(getLogger), getTokenCache = js.Any.fromFunction0(getTokenCache), setLogger = js.Any.fromFunction1(setLogger))
+      val __obj = js.Dynamic.literal(acquireTokenByCode = js.Any.fromFunction1(acquireTokenByCode), acquireTokenByDeviceCode = js.Any.fromFunction1(acquireTokenByDeviceCode), acquireTokenByRefreshToken = js.Any.fromFunction1(acquireTokenByRefreshToken), acquireTokenByUsernamePassword = js.Any.fromFunction1(acquireTokenByUsernamePassword), acquireTokenInteractive = js.Any.fromFunction1(acquireTokenInteractive), acquireTokenSilent = js.Any.fromFunction1(acquireTokenSilent), clearCache = js.Any.fromFunction0(clearCache), getAllAccounts = js.Any.fromFunction0(getAllAccounts), getAuthCodeUrl = js.Any.fromFunction1(getAuthCodeUrl), getLogger = js.Any.fromFunction0(getLogger), getTokenCache = js.Any.fromFunction0(getTokenCache), setLogger = js.Any.fromFunction1(setLogger), signOut = js.Any.fromFunction1(signOut))
       __obj.asInstanceOf[IPublicClientApplication]
     }
     
@@ -87,6 +97,8 @@ object distClientIpublicclientapplicationMod {
       
       inline def setClearCache(value: () => Unit): Self = StObject.set(x, "clearCache", js.Any.fromFunction0(value))
       
+      inline def setGetAllAccounts(value: () => js.Promise[js.Array[AccountInfo]]): Self = StObject.set(x, "getAllAccounts", js.Any.fromFunction0(value))
+      
       inline def setGetAuthCodeUrl(value: AuthorizationUrlRequest => js.Promise[String]): Self = StObject.set(x, "getAuthCodeUrl", js.Any.fromFunction1(value))
       
       inline def setGetLogger(value: () => Logger): Self = StObject.set(x, "getLogger", js.Any.fromFunction0(value))
@@ -94,6 +106,8 @@ object distClientIpublicclientapplicationMod {
       inline def setGetTokenCache(value: () => TokenCache): Self = StObject.set(x, "getTokenCache", js.Any.fromFunction0(value))
       
       inline def setSetLogger(value: Logger => Unit): Self = StObject.set(x, "setLogger", js.Any.fromFunction1(value))
+      
+      inline def setSignOut(value: SignOutRequest => js.Promise[Unit]): Self = StObject.set(x, "signOut", js.Any.fromFunction1(value))
     }
   }
 }

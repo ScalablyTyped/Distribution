@@ -12,6 +12,11 @@ trait CreateChannelRequest extends StObject {
   var authorized: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Whether the channel allows insecure RTMP ingest. Default: false.
+    */
+  var insecureIngest: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Channel latency mode. Use NORMAL to broadcast and deliver live video up to Full HD. Use LOW for near-real-time interaction with viewers. (Note: In the Amazon IVS console, LOW and NORMAL correspond to Ultra-low and Standard, respectively.) Default: LOW.
     */
   var latencyMode: js.UndefOr[ChannelLatencyMode] = js.undefined
@@ -49,6 +54,10 @@ object CreateChannelRequest {
     inline def setAuthorized(value: Boolean): Self = StObject.set(x, "authorized", value.asInstanceOf[js.Any])
     
     inline def setAuthorizedUndefined: Self = StObject.set(x, "authorized", js.undefined)
+    
+    inline def setInsecureIngest(value: Boolean): Self = StObject.set(x, "insecureIngest", value.asInstanceOf[js.Any])
+    
+    inline def setInsecureIngestUndefined: Self = StObject.set(x, "insecureIngest", js.undefined)
     
     inline def setLatencyMode(value: ChannelLatencyMode): Self = StObject.set(x, "latencyMode", value.asInstanceOf[js.Any])
     

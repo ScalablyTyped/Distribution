@@ -16,7 +16,7 @@ trait pieChartCreateRendererParamsAttributes extends StObject {
   /**
     * The label describing the field name (or pie slice) in the legend.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#createRenderer)
+    * [Read more...](global.html)
     */
   var label: js.UndefOr[String] = js.undefined
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Interface for a Timeline control.
-  * @see {@link Control}
+  * @see {@link Xrm.Controls.Control}
   */
 trait TimelineWall
   extends StObject

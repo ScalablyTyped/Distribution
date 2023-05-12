@@ -1,7 +1,7 @@
 
 # Scala.js typings for ecmarkdown
 
-Typings are for version 7.2.0
+Typings are for version 8.1.0
 
 ## Library description:
 A compiler for "Ecmarkdown" algorithm shorthand into HTML.

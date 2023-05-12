@@ -13,6 +13,7 @@ object esmResourceMod {
   open class FluentResource protected () extends StObject {
     def this(source: String) = this()
     
+    /** @ignore */
     var body: js.Array[Message | Term] = js.native
   }
 }

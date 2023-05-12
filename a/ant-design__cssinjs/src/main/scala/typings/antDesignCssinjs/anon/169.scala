@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ScrollPaddingBottom
+import typings.csstype.mod.Property.TabSize
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `169` extends StObject {
   
   var value: js.UndefOr[
-    (ScrollPaddingBottom[Double | String]) | (js.Array[
+    (TabSize[Double | String]) | (js.Array[
       (Extract[
         js.UndefOr[
-          (ScrollPaddingBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[ScrollPaddingBottom[Double | String]]]])
+          (TabSize[Double | String]) | (js.Array[NonNullable[js.UndefOr[TabSize[Double | String]]]])
         ], 
         String
-      ]) | (NonNullable[js.UndefOr[ScrollPaddingBottom[Double | String]]])
+      ]) | (NonNullable[js.UndefOr[TabSize[Double | String]]])
     ])
   ] = js.native
 }

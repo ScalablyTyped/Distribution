@@ -49,6 +49,14 @@ object testUtilsMod {
     @js.native
     val animationStart: EventSimulator = js.native
     
+    @JSImport("react-dom/test-utils", "Simulate.auxClick")
+    @js.native
+    val auxClick: EventSimulator = js.native
+    
+    @JSImport("react-dom/test-utils", "Simulate.beforeInput")
+    @js.native
+    val beforeInput: EventSimulator = js.native
+    
     @JSImport("react-dom/test-utils", "Simulate.blur")
     @js.native
     val blur: EventSimulator = js.native
@@ -61,6 +69,10 @@ object testUtilsMod {
     @js.native
     val canPlayThrough: EventSimulator = js.native
     
+    @JSImport("react-dom/test-utils", "Simulate.cancel")
+    @js.native
+    val cancel: EventSimulator = js.native
+    
     @JSImport("react-dom/test-utils", "Simulate.change")
     @js.native
     val change: EventSimulator = js.native
@@ -68,6 +80,10 @@ object testUtilsMod {
     @JSImport("react-dom/test-utils", "Simulate.click")
     @js.native
     val click: EventSimulator = js.native
+    
+    @JSImport("react-dom/test-utils", "Simulate.close")
+    @js.native
+    val close: EventSimulator = js.native
     
     @JSImport("react-dom/test-utils", "Simulate.compositionEnd")
     @js.native
@@ -153,6 +169,10 @@ object testUtilsMod {
     @js.native
     val focus: EventSimulator = js.native
     
+    @JSImport("react-dom/test-utils", "Simulate.gotPointerCapture")
+    @js.native
+    val gotPointerCapture: EventSimulator = js.native
+    
     @JSImport("react-dom/test-utils", "Simulate.input")
     @js.native
     val input: EventSimulator = js.native
@@ -188,6 +208,10 @@ object testUtilsMod {
     @JSImport("react-dom/test-utils", "Simulate.loadedMetadata")
     @js.native
     val loadedMetadata: EventSimulator = js.native
+    
+    @JSImport("react-dom/test-utils", "Simulate.lostPointerCapture")
+    @js.native
+    val lostPointerCapture: EventSimulator = js.native
     
     @JSImport("react-dom/test-utils", "Simulate.mouseDown")
     @js.native
@@ -233,6 +257,38 @@ object testUtilsMod {
     @js.native
     val playing: EventSimulator = js.native
     
+    @JSImport("react-dom/test-utils", "Simulate.pointerCancel")
+    @js.native
+    val pointerCancel: EventSimulator = js.native
+    
+    @JSImport("react-dom/test-utils", "Simulate.pointerDown")
+    @js.native
+    val pointerDown: EventSimulator = js.native
+    
+    @JSImport("react-dom/test-utils", "Simulate.pointerEnter")
+    @js.native
+    val pointerEnter: EventSimulator = js.native
+    
+    @JSImport("react-dom/test-utils", "Simulate.pointerLeave")
+    @js.native
+    val pointerLeave: EventSimulator = js.native
+    
+    @JSImport("react-dom/test-utils", "Simulate.pointerMove")
+    @js.native
+    val pointerMove: EventSimulator = js.native
+    
+    @JSImport("react-dom/test-utils", "Simulate.pointerOut")
+    @js.native
+    val pointerOut: EventSimulator = js.native
+    
+    @JSImport("react-dom/test-utils", "Simulate.pointerOver")
+    @js.native
+    val pointerOver: EventSimulator = js.native
+    
+    @JSImport("react-dom/test-utils", "Simulate.pointerUp")
+    @js.native
+    val pointerUp: EventSimulator = js.native
+    
     @JSImport("react-dom/test-utils", "Simulate.progress")
     @js.native
     val progress: EventSimulator = js.native
@@ -240,6 +296,14 @@ object testUtilsMod {
     @JSImport("react-dom/test-utils", "Simulate.rateChange")
     @js.native
     val rateChange: EventSimulator = js.native
+    
+    @JSImport("react-dom/test-utils", "Simulate.reset")
+    @js.native
+    val reset: EventSimulator = js.native
+    
+    @JSImport("react-dom/test-utils", "Simulate.resize")
+    @js.native
+    val resize: EventSimulator = js.native
     
     @JSImport("react-dom/test-utils", "Simulate.scroll")
     @js.native
@@ -272,6 +336,10 @@ object testUtilsMod {
     @JSImport("react-dom/test-utils", "Simulate.timeUpdate")
     @js.native
     val timeUpdate: EventSimulator = js.native
+    
+    @JSImport("react-dom/test-utils", "Simulate.toggle")
+    @js.native
+    val toggle: EventSimulator = js.native
     
     @JSImport("react-dom/test-utils", "Simulate.touchCancel")
     @js.native
@@ -306,9 +374,9 @@ object testUtilsMod {
     val wheel: EventSimulator = js.native
   }
   
-  inline def act(callback: js.Function0[VoidOrUndefinedOnly]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("act")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def act(callback: js.Function0[VoidOrUndefinedOnly]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("act")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def act_T[T](callback: js.Function0[T | js.Promise[T]]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("act")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  inline def act_T_Promise[T](callback: js.Function0[T | js.Promise[T]]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("act")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   
   inline def createRenderer(): ShallowRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("createRenderer")().asInstanceOf[ShallowRenderer]
   

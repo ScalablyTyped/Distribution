@@ -37,12 +37,12 @@ trait GameSession extends StObject {
   var FleetId: js.UndefOr[typings.awsSdk.clientsGameliftMod.FleetId] = js.undefined
   
   /**
-    * A set of custom properties for a game session, formatted as key:value pairs. These properties are passed to a game server process in the GameSession object with a request to start a new game session (see Start a Game Session). You can search for active game sessions based on this custom data with SearchGameSessions.
+    * A set of custom properties for a game session, formatted as key:value pairs. These properties are passed to a game server process with a request to start a new game session (see Start a Game Session).
     */
   var GameProperties: js.UndefOr[GamePropertyList] = js.undefined
   
   /**
-    * A set of custom game session properties, formatted as a single string value. This data is passed to a game server process in the GameSession object with a request to start a new game session (see Start a Game Session).
+    * A set of custom game session properties, formatted as a single string value. This data is passed to a game server process with a request to start a new game session (see Start a Game Session).
     */
   var GameSessionData: js.UndefOr[LargeGameSessionData] = js.undefined
   
@@ -52,7 +52,7 @@ trait GameSession extends StObject {
   var GameSessionId: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
-    * The IP address of the game session. To connect to a GameLift game server, an app needs both the IP address and port number.
+    * The IP address of the game session. To connect to a Amazon GameLift game server, an app needs both the IP address and port number.
     */
   var IpAddress: js.UndefOr[typings.awsSdk.clientsGameliftMod.IpAddress] = js.undefined
   
@@ -82,7 +82,7 @@ trait GameSession extends StObject {
   var PlayerSessionCreationPolicy: js.UndefOr[typings.awsSdk.clientsGameliftMod.PlayerSessionCreationPolicy] = js.undefined
   
   /**
-    * The port number for the game session. To connect to a GameLift game server, an app needs both the IP address and port number.
+    * The port number for the game session. To connect to a Amazon GameLift game server, an app needs both the IP address and port number.
     */
   var Port: js.UndefOr[PortNumber] = js.undefined
   

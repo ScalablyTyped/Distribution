@@ -21,7 +21,6 @@ object distSchemaTraceEventJSONMod {
     
     /**
       * String that specifies in which unit timestamps should be displayed.
-      *
       * @default 'ms'
       */
     var displayTimeUnit: js.UndefOr[ms | ns] = js.undefined
@@ -55,7 +54,6 @@ object distSchemaTraceEventJSONMod {
     /**
       * String of Linux ftrace data or Windows ETW trace data.
       * This data must start with # tracer: and adhere to the Linux ftrace format or adhere to Windows ETW format.
-      *
       * @see http://lwn.net/Articles/365835/
       */
     var systemTraceEvents: js.UndefOr[String] = js.undefined

@@ -800,5 +800,5 @@ object distSharedCalculatorsRenderUtilMod {
     * https://github.com/tensorflow/tfjs-models/blob/master/body-pix/src/output_rendering_util.ts
     * It is adapted to account for the generic segmentation interface.
     */
-  type ImageType = CanvasImageSource | PixelInput
+  type ImageType = CanvasImageSource | OffscreenCanvas | PixelInput
 }

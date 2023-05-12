@@ -6,16 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EnqueueAttributes extends StObject {
   
+  /** action - Action URL */
   var action: js.UndefOr[String] = js.undefined
   
+  /** maxQueueSize - Maximum size of queue */
   var maxQueueSize: js.UndefOr[Double] = js.undefined
   
+  /** method - Action URL method */
   var method: js.UndefOr[String] = js.undefined
   
+  /** waitUrl - Wait URL */
   var waitUrl: js.UndefOr[String] = js.undefined
   
+  /** waitUrlMethod - Wait URL method */
   var waitUrlMethod: js.UndefOr[String] = js.undefined
   
+  /** workflowSid - TaskRouter Workflow SID */
   var workflowSid: js.UndefOr[String] = js.undefined
 }
 object EnqueueAttributes {

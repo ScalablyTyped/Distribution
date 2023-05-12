@@ -123,7 +123,15 @@ object devtools {
     def elements: ElementsPanel = js.native
     inline def elements_=(x: ElementsPanel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("elements")(x.asInstanceOf[js.Any])
     
+    inline def openResource(url: String, lineNumber: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("openResource")(url.asInstanceOf[js.Any], lineNumber.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def openResource(url: String, lineNumber: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("openResource")(url.asInstanceOf[js.Any], lineNumber.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def openResource(url: String, lineNumber: Double, columnNumber: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("openResource")(url.asInstanceOf[js.Any], lineNumber.asInstanceOf[js.Any], columnNumber.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def openResource(
+      url: String,
+      lineNumber: Double,
+      columnNumber: Double,
+      callback: js.Function1[/* response */ Any, Any]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("openResource")(url.asInstanceOf[js.Any], lineNumber.asInstanceOf[js.Any], columnNumber.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def setOpenResourceHandler(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOpenResourceHandler")().asInstanceOf[Unit]
     inline def setOpenResourceHandler(callback: js.Function1[/* resource */ Resource, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOpenResourceHandler")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]

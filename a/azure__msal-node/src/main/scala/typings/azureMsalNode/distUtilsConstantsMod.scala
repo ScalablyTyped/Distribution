@@ -157,16 +157,46 @@ object distUtilsConstantsMod {
     def apply(value: Double): js.UndefOr[HttpStatus & Double] = js.native
     
     @js.native
-    sealed trait OK
+    sealed trait CLIENT_ERROR_RANGE_END
       extends StObject
          with HttpStatus
-    /* 200 */ val OK: typings.azureMsalNode.distUtilsConstantsMod.HttpStatus.OK & Double = js.native
+    /* 499 */ val CLIENT_ERROR_RANGE_END: typings.azureMsalNode.distUtilsConstantsMod.HttpStatus.CLIENT_ERROR_RANGE_END & Double = js.native
+    
+    @js.native
+    sealed trait CLIENT_ERROR_RANGE_START
+      extends StObject
+         with HttpStatus
+    /* 400 */ val CLIENT_ERROR_RANGE_START: typings.azureMsalNode.distUtilsConstantsMod.HttpStatus.CLIENT_ERROR_RANGE_START & Double = js.native
     
     @js.native
     sealed trait REDIRECT
       extends StObject
          with HttpStatus
     /* 302 */ val REDIRECT: typings.azureMsalNode.distUtilsConstantsMod.HttpStatus.REDIRECT & Double = js.native
+    
+    @js.native
+    sealed trait SERVER_ERROR_RANGE_END
+      extends StObject
+         with HttpStatus
+    /* 599 */ val SERVER_ERROR_RANGE_END: typings.azureMsalNode.distUtilsConstantsMod.HttpStatus.SERVER_ERROR_RANGE_END & Double = js.native
+    
+    @js.native
+    sealed trait SERVER_ERROR_RANGE_START
+      extends StObject
+         with HttpStatus
+    /* 500 */ val SERVER_ERROR_RANGE_START: typings.azureMsalNode.distUtilsConstantsMod.HttpStatus.SERVER_ERROR_RANGE_START & Double = js.native
+    
+    @js.native
+    sealed trait SUCCESS_RANGE_END
+      extends StObject
+         with HttpStatus
+    /* 299 */ val SUCCESS_RANGE_END: typings.azureMsalNode.distUtilsConstantsMod.HttpStatus.SUCCESS_RANGE_END & Double = js.native
+    
+    @js.native
+    sealed trait SUCCESS_RANGE_START
+      extends StObject
+         with HttpStatus
+    /* 200 */ val SUCCESS_RANGE_START: typings.azureMsalNode.distUtilsConstantsMod.HttpStatus.SUCCESS_RANGE_START & Double = js.native
   }
   
   object JwtConstants {
@@ -241,6 +271,34 @@ object distUtilsConstantsMod {
     @js.native
     def TIMEOUT_MS: Double = js.native
     inline def TIMEOUT_MS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TIMEOUT_MS")(x.asInstanceOf[js.Any])
+  }
+  
+  @js.native
+  sealed trait ProxyStatus extends StObject
+  @JSImport("@azure/msal-node/dist/utils/Constants", "ProxyStatus")
+  @js.native
+  object ProxyStatus extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[ProxyStatus & Double] = js.native
+    
+    @js.native
+    sealed trait SERVER_ERROR
+      extends StObject
+         with ProxyStatus
+    /* 500 */ val SERVER_ERROR: typings.azureMsalNode.distUtilsConstantsMod.ProxyStatus.SERVER_ERROR & Double = js.native
+    
+    @js.native
+    sealed trait SUCCESS_RANGE_END
+      extends StObject
+         with ProxyStatus
+    /* 299 */ val SUCCESS_RANGE_END: typings.azureMsalNode.distUtilsConstantsMod.ProxyStatus.SUCCESS_RANGE_END & Double = js.native
+    
+    @js.native
+    sealed trait SUCCESS_RANGE_START
+      extends StObject
+         with ProxyStatus
+    /* 200 */ val SUCCESS_RANGE_START: typings.azureMsalNode.distUtilsConstantsMod.ProxyStatus.SUCCESS_RANGE_START & Double = js.native
   }
   
   @JSImport("@azure/msal-node/dist/utils/Constants", "RANDOM_OCTET_SIZE")

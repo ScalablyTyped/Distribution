@@ -11,9 +11,9 @@ import typings.vegaLite.buildSrcCompositemarkMod.CompositeMark
 import typings.vegaLite.buildSrcCompositemarkMod.CompositeMarkDef
 import typings.vegaLite.buildSrcEncodingMod.Encoding
 import typings.vegaLite.buildSrcExprMod.ExprRef
+import typings.vegaLite.buildSrcMarkMod.AnyMarkConfig
 import typings.vegaLite.buildSrcMarkMod.ColorMixins
 import typings.vegaLite.buildSrcMarkMod.GenericMarkDef
-import typings.vegaLite.buildSrcMarkMod.MarkConfig
 import typings.vegaLite.buildSrcSelectionMod.SelectionParameter
 import typings.vegaLite.buildSrcSelectionMod.SelectionType
 import typings.vegaLite.buildSrcSpecUnitMod.GenericUnitSpec
@@ -152,5 +152,5 @@ object buildSrcCompositemarkCommonMod {
     }
   }
   
-  type PartsMixins[P /* <: String */] = Partial[Record[P, Boolean | (MarkConfig[ExprRef | SignalRef])]]
+  type PartsMixins[P /* <: String */] = Partial[Record[P, Boolean | (AnyMarkConfig[ExprRef | SignalRef])]]
 }

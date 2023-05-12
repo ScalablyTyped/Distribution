@@ -2,54 +2,38 @@ package typings.postcss
 
 import typings.postcss.libContainerMod.ContainerProps
 import typings.postcss.libNodeMod.AnyNode
-import typings.postcss.libNodeMod.ChildNode
 import typings.postcss.mod.ProcessOptions
 import typings.postcss.postcssStrings.root
+import typings.std.ChildNode
+import typings.std.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libRootMod {
   
+  @JSImport("postcss/lib/root", JSImport.Namespace)
+  @js.native
+  open class ^ () extends Root_
+  
+  /**
+    * Represents a CSS file and contains all its parsed nodes.
+    *
+    * ```js
+    * const root = postcss.parse('a{color:black} b{z-index:2}')
+    * root.type         //=> 'root'
+    * root.nodes.length //=> 2
+    * ```
+    */
   @JSImport("postcss/lib/root", JSImport.Default)
   @js.native
   open class default ()
-    extends Root
+    extends Root_
        with AnyNode {
     def this(defaults: RootProps) = this()
   }
   
-  @js.native
-  trait Root
-    extends typings.postcss.libContainerMod.default[ChildNode] {
-    
-    def assign(overrides: RootProps): this.type = js.native
-    
-    @JSName("parent")
-    var parent_Root: js.UndefOr[typings.postcss.libDocumentMod.default] = js.native
-    
-    @JSName("raws")
-    var raws_Root: RootRaws = js.native
-    
-    /**
-      * Returns a `Result` instance representing the root’s CSS.
-      *
-      * ```js
-      * const root1 = postcss.parse(css1, { from: 'a.css' })
-      * const root2 = postcss.parse(css2, { from: 'b.css' })
-      * root1.append(root2)
-      * const result = root1.toResult({ to: 'all.css', map: true })
-      * ```
-      *
-      * @param opts Options.
-      * @return Result with current root’s CSS.
-      */
-    def toResult(): typings.postcss.libResultMod.default = js.native
-    def toResult(options: ProcessOptions): typings.postcss.libResultMod.default = js.native
-    
-    @JSName("type")
-    var type_Root: root = js.native
-  }
+  type Root = Root_
   
   trait RootProps
     extends StObject
@@ -132,5 +116,44 @@ object libRootMod {
       
       inline def setSemicolonUndefined: Self = StObject.set(x, "semicolon", js.undefined)
     }
+  }
+  
+  /**
+    * Represents a CSS file and contains all its parsed nodes.
+    *
+    * ```js
+    * const root = postcss.parse('a{color:black} b{z-index:2}')
+    * root.type         //=> 'root'
+    * root.nodes.length //=> 2
+    * ```
+    */
+  @js.native
+  trait Root_
+    extends typings.postcss.libContainerMod.default[ChildNode] {
+    
+    def assign(overrides: js.Object): this.type = js.native
+    def assign(overrides: RootProps): this.type = js.native
+    
+    var parent: js.UndefOr[Document] = js.native
+    
+    var raws: RootRaws = js.native
+    
+    /**
+      * Returns a `Result` instance representing the root’s CSS.
+      *
+      * ```js
+      * const root1 = postcss.parse(css1, { from: 'a.css' })
+      * const root2 = postcss.parse(css2, { from: 'b.css' })
+      * root1.append(root2)
+      * const result = root1.toResult({ to: 'all.css', map: true })
+      * ```
+      *
+      * @param opts Options.
+      * @return Result with current root’s CSS.
+      */
+    def toResult(): typings.postcss.libResultMod.default = js.native
+    def toResult(options: ProcessOptions): typings.postcss.libResultMod.default = js.native
+    
+    var `type`: root = js.native
   }
 }

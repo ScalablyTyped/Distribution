@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetCurrentMetricDataResponse extends StObject {
   
   /**
+    * The total count of the result, regardless of the current page size. 
+    */
+  var ApproximateTotalCount: js.UndefOr[typings.awsSdk.clientsConnectMod.ApproximateTotalCount] = js.undefined
+  
+  /**
     * The time at which the metrics were retrieved and cached for pagination.
     */
   var DataSnapshotTime: js.UndefOr[js.Date] = js.undefined
@@ -30,6 +35,10 @@ object GetCurrentMetricDataResponse {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: GetCurrentMetricDataResponse] (val x: Self) extends AnyVal {
+    
+    inline def setApproximateTotalCount(value: ApproximateTotalCount): Self = StObject.set(x, "ApproximateTotalCount", value.asInstanceOf[js.Any])
+    
+    inline def setApproximateTotalCountUndefined: Self = StObject.set(x, "ApproximateTotalCount", js.undefined)
     
     inline def setDataSnapshotTime(value: js.Date): Self = StObject.set(x, "DataSnapshotTime", value.asInstanceOf[js.Any])
     

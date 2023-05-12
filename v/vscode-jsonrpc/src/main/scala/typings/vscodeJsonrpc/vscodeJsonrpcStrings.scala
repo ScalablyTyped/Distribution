@@ -26,6 +26,10 @@ object vscodeJsonrpcStrings {
   inline def compact: compact = "compact".asInstanceOf[compact]
   
   @js.native
+  sealed trait id extends StObject
+  inline def id: id = "id".asInstanceOf[id]
+  
+  @js.native
   sealed trait messages
     extends StObject
        with TraceValues
@@ -54,6 +58,10 @@ object vscodeJsonrpcStrings {
     extends StObject
        with LSPMessageType
   inline def `receive-response`: `receive-response` = "receive-response".asInstanceOf[`receive-response`]
+  
+  @js.native
+  sealed trait request extends StObject
+  inline def request: request = "request".asInstanceOf[request]
   
   @js.native
   sealed trait `send-notification`

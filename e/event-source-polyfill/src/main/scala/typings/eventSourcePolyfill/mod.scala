@@ -4,6 +4,9 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
+import typings.eventSourcePolyfill.eventSourcePolyfillInts.`0`
+import typings.eventSourcePolyfill.eventSourcePolyfillInts.`1`
+import typings.eventSourcePolyfill.eventSourcePolyfillInts.`2`
 import typings.eventSourcePolyfill.eventSourcePolyfillStrings.error
 import typings.eventSourcePolyfill.eventSourcePolyfillStrings.message
 import typings.eventSourcePolyfill.eventSourcePolyfillStrings.open
@@ -33,11 +36,11 @@ object mod {
     def this(url: String) = this()
     def this(url: String, options: EventSourcePolyfillInit) = this()
     
-    val CLOSED: Double = js.native
+    val CLOSED: `2` = js.native
     
-    val CONNECTING: Double = js.native
+    val CONNECTING: `0` = js.native
     
-    val OPEN: Double = js.native
+    val OPEN: `1` = js.native
     
     def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
     def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Any): Unit = js.native
@@ -120,15 +123,15 @@ object mod {
     
     @JSImport("event-source-polyfill", "EventSourcePolyfill.CLOSED")
     @js.native
-    val CLOSED: Double = js.native
+    val CLOSED: `2` = js.native
     
     @JSImport("event-source-polyfill", "EventSourcePolyfill.CONNECTING")
     @js.native
-    val CONNECTING: Double = js.native
+    val CONNECTING: `0` = js.native
     
     @JSImport("event-source-polyfill", "EventSourcePolyfill.OPEN")
     @js.native
-    val OPEN: Double = js.native
+    val OPEN: `1` = js.native
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */

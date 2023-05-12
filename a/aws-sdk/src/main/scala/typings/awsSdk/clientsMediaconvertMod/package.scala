@@ -148,6 +148,28 @@ type AccelerationMode = _AccelerationMode | String
 type AccelerationStatus = _AccelerationStatus | String
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type AdvancedInputFilter = _AdvancedInputFilter | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type AdvancedInputFilterAddTexture = _AdvancedInputFilterAddTexture | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.OFF
+  - typings.awsSdk.awsSdkStrings.LOW
+  - typings.awsSdk.awsSdkStrings.HIGH
+  - java.lang.String
+*/
+type AdvancedInputFilterSharpen = _AdvancedInputFilterSharpen | String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
   - typings.awsSdk.awsSdkStrings.AUTO
   - typings.awsSdk.awsSdkStrings.FIXED
@@ -393,6 +415,25 @@ type AvcIntraTelecine = _AvcIntraTelecine | String
 type AvcIntraUhdQualityTuningLevel = _AvcIntraUhdQualityTuningLevel | String
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.LOW
+  - typings.awsSdk.awsSdkStrings.MEDIUM
+  - typings.awsSdk.awsSdkStrings.HIGH
+  - typings.awsSdk.awsSdkStrings.OFF
+  - java.lang.String
+*/
+type BandwidthReductionFilterSharpening = _BandwidthReductionFilterSharpening | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.LOW
+  - typings.awsSdk.awsSdkStrings.MEDIUM
+  - typings.awsSdk.awsSdkStrings.HIGH
+  - typings.awsSdk.awsSdkStrings.AUTO
+  - typings.awsSdk.awsSdkStrings.OFF
+  - java.lang.String
+*/
+type BandwidthReductionFilterStrength = _BandwidthReductionFilterStrength | String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.QUEUE
   - typings.awsSdk.awsSdkStrings.PRESET
   - typings.awsSdk.awsSdkStrings.JOB_TEMPLATE
@@ -502,6 +543,13 @@ type BurninSubtitleTeletextSpacing = _BurninSubtitleTeletextSpacing | String
 type CaptionDestinationType = _CaptionDestinationType | String
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type CaptionSourceConvertPaintOnToPopOn = _CaptionSourceConvertPaintOnToPopOn | String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ANCILLARY
   - typings.awsSdk.awsSdkStrings.DVB_SUB
   - typings.awsSdk.awsSdkStrings.EMBEDDED
@@ -586,6 +634,13 @@ type CmafManifestCompression = _CmafManifestCompression | String
 type CmafManifestDurationFormat = _CmafManifestDurationFormat | String
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AVERAGE
+  - typings.awsSdk.awsSdkStrings.MAX
+  - java.lang.String
+*/
+type CmafMpdManifestBandwidthType = _CmafMpdManifestBandwidthType | String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MAIN_PROFILE
   - typings.awsSdk.awsSdkStrings.ON_DEMAND_PROFILE
   - java.lang.String
@@ -626,6 +681,13 @@ type CmafStreamInfResolution = _CmafStreamInfResolution | String
   - java.lang.String
 */
 type CmafTargetDurationCompatibilityMode = _CmafTargetDurationCompatibilityMode | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SIGNED
+  - typings.awsSdk.awsSdkStrings.UNSIGNED
+  - java.lang.String
+*/
+type CmafVideoCompositionOffsets = _CmafVideoCompositionOffsets | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
@@ -685,6 +747,13 @@ type CmfcIFrameOnlyManifest = _CmfcIFrameOnlyManifest | String
 type CmfcKlvMetadata = _CmfcKlvMetadata | String
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type CmfcManifestMetadataSignaling = _CmfcManifestMetadataSignaling | String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INSERT
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
@@ -706,6 +775,13 @@ type CmfcScte35Source = _CmfcScte35Source | String
 type CmfcTimedMetadata = _CmfcTimedMetadata | String
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.VERSION_0
+  - typings.awsSdk.awsSdkStrings.VERSION_1
+  - java.lang.String
+*/
+type CmfcTimedMetadataBoxVersion = _CmfcTimedMetadataBoxVersion | String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IGNORE
   - typings.awsSdk.awsSdkStrings.INSERT
   - java.lang.String
@@ -720,6 +796,7 @@ type ColorMetadata = _ColorMetadata | String
   - typings.awsSdk.awsSdkStrings.HLG_2020
   - typings.awsSdk.awsSdkStrings.P3DCI
   - typings.awsSdk.awsSdkStrings.P3D65_SDR
+  - typings.awsSdk.awsSdkStrings.P3D65_HDR
   - java.lang.String
 */
 type ColorSpace = _ColorSpace | String
@@ -732,6 +809,7 @@ type ColorSpace = _ColorSpace | String
   - typings.awsSdk.awsSdkStrings.FORCE_HLG_2020
   - typings.awsSdk.awsSdkStrings.FORCE_P3DCI
   - typings.awsSdk.awsSdkStrings.FORCE_P3D65_SDR
+  - typings.awsSdk.awsSdkStrings.FORCE_P3D65_HDR
   - java.lang.String
 */
 type ColorSpaceConversion = _ColorSpaceConversion | String
@@ -799,6 +877,13 @@ type DashIsoImageBasedTrickPlay = _DashIsoImageBasedTrickPlay | String
 type DashIsoIntervalCadence = _DashIsoIntervalCadence | String
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AVERAGE
+  - typings.awsSdk.awsSdkStrings.MAX
+  - java.lang.String
+*/
+type DashIsoMpdManifestBandwidthType = _DashIsoMpdManifestBandwidthType | String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MAIN_PROFILE
   - typings.awsSdk.awsSdkStrings.ON_DEMAND_PROFILE
   - java.lang.String
@@ -834,11 +919,26 @@ type DashIsoSegmentControl = _DashIsoSegmentControl | String
 type DashIsoSegmentLengthControl = _DashIsoSegmentLengthControl | String
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SIGNED
+  - typings.awsSdk.awsSdkStrings.UNSIGNED
+  - java.lang.String
+*/
+type DashIsoVideoCompositionOffsets = _DashIsoVideoCompositionOffsets | String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
 type DashIsoWriteSegmentTimelineInRepresentation = _DashIsoWriteSegmentTimelineInRepresentation | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.BASIC
+  - typings.awsSdk.awsSdkStrings.COMPACT
+  - typings.awsSdk.awsSdkStrings.DISTINCT
+  - java.lang.String
+*/
+type DashManifestStyle = _DashManifestStyle | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AES_CTR
@@ -853,6 +953,7 @@ type DecryptionMode = _DecryptionMode | String
   - typings.awsSdk.awsSdkStrings.INTERPOLATE_TICKER
   - typings.awsSdk.awsSdkStrings.BLEND
   - typings.awsSdk.awsSdkStrings.BLEND_TICKER
+  - typings.awsSdk.awsSdkStrings.LINEAR_INTERPOLATION
   - java.lang.String
 */
 type DeinterlaceAlgorithm = _DeinterlaceAlgorithm | String
@@ -1662,6 +1763,13 @@ type H265UnregisteredSeiTimecode = _H265UnregisteredSeiTimecode | String
 type H265WriteMp4PackagingType = _H265WriteMp4PackagingType | String
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PRESERVE_DETAILS
+  - typings.awsSdk.awsSdkStrings.VIBRANT
+  - java.lang.String
+*/
+type HDRToSDRToneMapper = _HDRToSDRToneMapper | String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ELEMENTAL
   - typings.awsSdk.awsSdkStrings.ELEMENTAL_SCTE35
   - java.lang.String
@@ -2405,6 +2513,13 @@ type MpdCaptionContainerType = _MpdCaptionContainerType | String
 type MpdKlvMetadata = _MpdKlvMetadata | String
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type MpdManifestMetadataSignaling = _MpdManifestMetadataSignaling | String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INSERT
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
@@ -2424,6 +2539,13 @@ type MpdScte35Source = _MpdScte35Source | String
   - java.lang.String
 */
 type MpdTimedMetadata = _MpdTimedMetadata | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.VERSION_0
+  - typings.awsSdk.awsSdkStrings.VERSION_1
+  - java.lang.String
+*/
+type MpdTimedMetadataBoxVersion = _MpdTimedMetadataBoxVersion | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.OFF
@@ -2856,6 +2978,7 @@ type S3ServerSideEncryptionType = _S3ServerSideEncryptionType | String
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.LIMITED_RANGE_SQUEEZE
   - typings.awsSdk.awsSdkStrings.NONE
+  - typings.awsSdk.awsSdkStrings.LIMITED_RANGE_CLIP
   - java.lang.String
 */
 type SampleRangeConversion = _SampleRangeConversion | String
@@ -3029,6 +3152,7 @@ type VchipAction = _VchipAction | String
   - typings.awsSdk.awsSdkStrings.H_264
   - typings.awsSdk.awsSdkStrings.H_265
   - typings.awsSdk.awsSdkStrings.MPEG2
+  - typings.awsSdk.awsSdkStrings.PASSTHROUGH
   - typings.awsSdk.awsSdkStrings.PRORES
   - typings.awsSdk.awsSdkStrings.VC3
   - typings.awsSdk.awsSdkStrings.VP8
@@ -3322,6 +3446,8 @@ type doubleMinNegative60MaxNegative1 = Double
 
 type doubleMinNegative6Max3 = Double
 
+type doubleMinNegative8Max0 = Double
+
 type integer = Double
 
 type integerMin0Max0 = Double
@@ -3365,6 +3491,8 @@ type integerMin0Max4000 = Double
 type integerMin0Max4194303 = Double
 
 type integerMin0Max47185920 = Double
+
+type integerMin0Max5 = Double
 
 type integerMin0Max500 = Double
 
@@ -3492,6 +3620,10 @@ type integerMin8Max12 = Double
 
 type integerMin8Max4096 = Double
 
+type integerMin90Max105 = Double
+
+type integerMin920Max1023 = Double
+
 type integerMin96Max600 = Double
 
 type integerMinNegative1000Max1000 = Double
@@ -3508,7 +3640,7 @@ type integerMinNegative2Max3 = Double
 
 type integerMinNegative50Max50 = Double
 
-type integerMinNegative5Max5 = Double
+type integerMinNegative5Max10 = Double
 
 type integerMinNegative60Max6 = Double
 
@@ -3592,6 +3724,8 @@ type listOfStringPatternS3ASSETMAPXml = js.Array[stringPatternS3ASSETMAPXml]
 
 type listOfTeletextPageType = js.Array[TeletextPageType]
 
+type listOfWarningGroup = js.Array[WarningGroup]
+
 type mapOfAudioSelector = StringDictionary[AudioSelector]
 
 type mapOfAudioSelectorGroup = StringDictionary[AudioSelectorGroup]
@@ -3601,6 +3735,8 @@ type mapOfCaptionSelector = StringDictionary[CaptionSelector]
 type mapOfString = StringDictionary[string]
 
 type string = String
+
+type stringMax1000 = String
 
 type stringMin0 = String
 
@@ -3672,7 +3808,7 @@ type stringPatternDD = String
 
 type stringPatternHttps = String
 
-type stringPatternHttpsKantarmediaCom = String
+type stringPatternHttpsKantarmediaComFr = String
 
 type stringPatternIdentityAZaZ26AZaZ09163 = String
 
@@ -3680,9 +3816,7 @@ type stringPatternS3 = String
 
 type stringPatternS3ASSETMAPXml = String
 
-type stringPatternS3MM2PPMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVaAAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8WWEEBBMMLLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMXXMMLLOOGGGGaAAATTMMOOSSHttpsMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVaAAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1 = String
-
-type stringPatternS3MM2PPWWEEBBMMMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVaAAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8LLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMAAAACCAAIIFFFFMMPP2AACC3EECC3DDTTSSEEAATTMMOOSSOOGGGGaAHttpsMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVaAAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDII = String
+type stringPatternS3Https = String
 
 type stringPatternSNManifestConfirmConditionNotificationNS = String
 

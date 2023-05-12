@@ -1,12 +1,12 @@
 package typings.wordpressBlockEditor.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.wordpressBlocks.mod.BlockInstance
+import typings.wordpressBlocks.BlockInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<@wordpress/blocks.@wordpress/blocks.BlockInstance<{[k: string] : any}>> */
+/* Inlined std.Partial<@wordpress/blocks.BlockInstance<{[k: string] : any}>> */
 trait PartialBlockInstancekstri extends StObject {
   
   var attributes: js.UndefOr[StringDictionary[Any]] = js.undefined

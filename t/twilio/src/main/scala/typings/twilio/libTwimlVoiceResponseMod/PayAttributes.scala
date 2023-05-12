@@ -6,40 +6,58 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PayAttributes extends StObject {
   
+  /** action - Action URL */
   var action: js.UndefOr[String] = js.undefined
   
+  /** bankAccountType - Bank account type for ach transactions. If set, payment method attribute must be provided and value should be set to ach-debit. defaults to consumer-checking */
   var bankAccountType: js.UndefOr[PayBankAccountType] = js.undefined
   
+  /** chargeAmount - Amount to process. If value is greater than 0 then make the payment else create a payment token */
   var chargeAmount: js.UndefOr[String] = js.undefined
   
+  /** currency - Currency of the amount attribute */
   var currency: js.UndefOr[String] = js.undefined
   
+  /** description - Details regarding the payment */
   var description: js.UndefOr[String] = js.undefined
   
+  /** input - Input type Twilio should accept */
   var input: js.UndefOr[PayInput] = js.undefined
   
+  /** language - Language to use */
   var language: js.UndefOr[PayLanguage] = js.undefined
   
+  /** maxAttempts - Maximum number of allowed retries when gathering input */
   var maxAttempts: js.UndefOr[Double] = js.undefined
   
+  /** minPostalCodeLength - Prompt for minimum postal code length */
   var minPostalCodeLength: js.UndefOr[Double] = js.undefined
   
+  /** paymentConnector - Unique name for payment connector */
   var paymentConnector: js.UndefOr[String] = js.undefined
   
+  /** paymentMethod - Payment method to be used. defaults to credit-card */
   var paymentMethod: js.UndefOr[PayPaymentMethod] = js.undefined
   
+  /** postalCode - Prompt for postal code and it should be true/false or default postal code */
   var postalCode: js.UndefOr[String] = js.undefined
   
+  /** securityCode - Prompt for security code */
   var securityCode: js.UndefOr[Boolean] = js.undefined
   
+  /** statusCallback - Status callback URL */
   var statusCallback: js.UndefOr[String] = js.undefined
   
+  /** statusCallbackMethod - Status callback method */
   var statusCallbackMethod: js.UndefOr[PayStatusCallbackMethod] = js.undefined
   
+  /** timeout - Time to wait to gather input */
   var timeout: js.UndefOr[Double] = js.undefined
   
+  /** tokenType - Type of token */
   var tokenType: js.UndefOr[PayTokenType] = js.undefined
   
+  /** validCardTypes - Comma separated accepted card types */
   var validCardTypes: js.UndefOr[js.Array[PayValidCardTypes]] = js.undefined
 }
 object PayAttributes {

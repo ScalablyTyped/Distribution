@@ -37,6 +37,11 @@ trait ExecutionRecord extends StObject {
   var lastUpdatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
+    * Describes the metadata catalog, metadata table, and data partitions that Amazon AppFlow used for the associated flow run.
+    */
+  var metadataCatalogDetails: js.UndefOr[MetadataCatalogDetails] = js.undefined
+  
+  /**
     *  Specifies the start time of the flow run. 
     */
   var startedAt: js.UndefOr[js.Date] = js.undefined
@@ -74,6 +79,12 @@ object ExecutionRecord {
     inline def setLastUpdatedAt(value: js.Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
+    
+    inline def setMetadataCatalogDetails(value: MetadataCatalogDetails): Self = StObject.set(x, "metadataCatalogDetails", value.asInstanceOf[js.Any])
+    
+    inline def setMetadataCatalogDetailsUndefined: Self = StObject.set(x, "metadataCatalogDetails", js.undefined)
+    
+    inline def setMetadataCatalogDetailsVarargs(value: MetadataCatalogDetail*): Self = StObject.set(x, "metadataCatalogDetails", js.Array(value*))
     
     inline def setStartedAt(value: js.Date): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
     

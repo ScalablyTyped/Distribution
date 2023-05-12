@@ -4,10 +4,10 @@ import typings.phaser.Phaser.Cameras.Scene2D.Camera
 import typings.phaser.Phaser.GameObjects.GameObject
 import typings.phaser.Phaser.GameObjects.Graphics
 import typings.phaser.Phaser.Renderer.Canvas.CanvasRenderer
+import typings.phaser.Phaser.Renderer.WebGL.RenderTarget
 import typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer
+import typings.phaser.Phaser.Textures.DynamicTexture
 import typings.phaser.Phaser.Types.Display.InputColorObject
-import typings.std.WebGLFramebuffer
-import typings.std.WebGLTexture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,7 +44,7 @@ object Display {
     /**
       * The default uniforms for this shader.
       */
-    var uniforms: Any
+    var uniforms: Any | Null
     
     /**
       * The source code, as a string, of the vertex shader being used.
@@ -53,8 +53,8 @@ object Display {
   }
   object BaseShader {
     
-    inline def apply(fragmentSrc: String, key: String, uniforms: Any, vertexSrc: String): BaseShader = {
-      val __obj = js.Dynamic.literal(fragmentSrc = fragmentSrc.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], uniforms = uniforms.asInstanceOf[js.Any], vertexSrc = vertexSrc.asInstanceOf[js.Any])
+    inline def apply(fragmentSrc: String, key: String, vertexSrc: String): BaseShader = {
+      val __obj = js.Dynamic.literal(fragmentSrc = fragmentSrc.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], vertexSrc = vertexSrc.asInstanceOf[js.Any], uniforms = null)
       __obj.asInstanceOf[BaseShader]
     }
     
@@ -66,6 +66,8 @@ object Display {
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setUniforms(value: Any): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
+      
+      inline def setUniformsNull: Self = StObject.set(x, "uniforms", null)
       
       inline def setVertexSrc(value: String): Self = StObject.set(x, "vertexSrc", value.asInstanceOf[js.Any])
     }
@@ -357,8 +359,10 @@ object Display {
     /**
       * Multiplies the two given matrices.
       * @param a The 5x4 array to multiply with ColorMatrix._matrix.
+      * @param multiply Multiply the resulting ColorMatrix (`true`), or set it (`false`) ? Default false.
       */
     def multiply(a: js.Array[Double]): this.type = js.native
+    def multiply(a: js.Array[Double], multiply: Boolean): this.type = js.native
     
     /**
       * Converts this ColorMatrix to have negative values.
@@ -385,7 +389,8 @@ object Display {
     def polaroid(multiply: Boolean): this.type = js.native
     
     /**
-      * Resets the ColorMatrix.
+      * Resets the ColorMatrix to default values and also resets
+      * the `alpha` property back to 1.
       */
     def reset(): this.type = js.native
     
@@ -415,9 +420,10 @@ object Display {
     
     /**
       * Sets this ColorMatrix from the given array of color values.
-      * @param value The ColorMatrix values to set.
+      * @param value The ColorMatrix values to set. Must have 20 elements.
       */
     def set(value: js.Array[Double]): this.type = js.native
+    def set(value: js.typedarray.Float32Array): this.type = js.native
     
     /**
       * Shifts the values of this ColorMatrix into BGR order.
@@ -448,15 +454,15 @@ object Display {
       * Unlike the Geometry Mask, which is a clipping path, a Bitmap Mask behaves like an alpha mask,
       * not a clipping path. It is only available when using the WebGL Renderer.
       * 
-      * A Bitmap Mask can use any Game Object to determine the alpha of each pixel of the masked Game Object(s).
+      * A Bitmap Mask can use any Game Object or Dynamic Texture to determine the alpha of each pixel of the masked Game Object(s).
       * For any given point of a masked Game Object's texture, the pixel's alpha will be multiplied by the alpha
       * of the pixel at the same position in the Bitmap Mask's Game Object. The color of the pixel from the
       * Bitmap Mask doesn't matter.
       * 
       * For example, if a pure blue pixel with an alpha of 0.95 is masked with a pure red pixel with an
       * alpha of 0.5, the resulting pixel will be pure blue with an alpha of 0.475. Naturally, this means
-      * that a pixel in the mask with an alpha of 0 will hide the corresponding pixel in all masked Game Objects
-      *  A pixel with an alpha of 1 in the masked Game Object will receive the same alpha as the
+      * that a pixel in the mask with an alpha of 0 will hide the corresponding pixel in all masked Game Objects.
+      * A pixel with an alpha of 1 in the masked Game Object will receive the same alpha as the
       * corresponding pixel in the mask.
       * 
       * Note: You cannot combine Bitmap Masks and Blend Modes on the same Game Object. You can, however,
@@ -476,24 +482,9 @@ object Display {
     trait BitmapMask extends StObject {
       
       /**
-        * A renderable Game Object that uses a texture, such as a Sprite.
+        * The Game Object that is used as the mask. Must use a texture, such as a Sprite.
         */
-      var bitmapMask: GameObject = js.native
-      
-      /**
-        * Deletes the `mainTexture` and `maskTexture` WebGL Textures and deletes
-        * the `mainFramebuffer` and `maskFramebuffer` too, nulling all references.
-        * 
-        * This is called when this mask is destroyed, or if you try to creat a new
-        * mask from this object when one is already set.
-        */
-      def clearMask(): Unit = js.native
-      
-      /**
-        * Creates the WebGL Texture2D objects and Framebuffers required for this
-        * mask. If this mask has already been created, then `clearMask` is called first.
-        */
-      def createMask(): Unit = js.native
+      var bitmapMask: GameObject | DynamicTexture = js.native
       
       /**
         * Destroys this BitmapMask and nulls any references it holds.
@@ -504,42 +495,18 @@ object Display {
       def destroy(): Unit = js.native
       
       /**
-        * Whether the Bitmap Mask is dirty and needs to be updated.
-        */
-      var dirty: Boolean = js.native
-      
-      /**
         * Whether to invert the masks alpha.
         * 
         * If `true`, the alpha of the masking pixel will be inverted before it's multiplied with the masked pixel.
+        * 
         * Essentially, this means that a masked area will be visible only if the corresponding area in the mask is invisible.
         */
       var invertAlpha: Boolean = js.native
       
       /**
-        * Is this mask a stencil mask?
+        * Is this mask a stencil mask? This is false by default and should not be changed.
         */
       val isStencil: Boolean = js.native
-      
-      /**
-        * The framebuffer to which a masked Game Object is rendered.
-        */
-      var mainFramebuffer: WebGLFramebuffer = js.native
-      
-      /**
-        * The texture used for the main framebuffer.
-        */
-      var mainTexture: WebGLTexture = js.native
-      
-      /**
-        * The framebuffer to which the Bitmap Mask's masking Game Object is rendered.
-        */
-      var maskFramebuffer: WebGLFramebuffer = js.native
-      
-      /**
-        * The texture used for the masks framebuffer.
-        */
-      var maskTexture: WebGLTexture = js.native
       
       /**
         * This is a NOOP method. Bitmap Masks are not supported by the Canvas Renderer.
@@ -553,9 +520,13 @@ object Display {
         * 
         * This resets the previously bound framebuffer and switches the WebGL Renderer to the Bitmap Mask Pipeline, which uses a special fragment shader to apply the masking effect.
         * @param renderer The WebGL Renderer to clean up.
+        * @param camera The Camera to render to.
+        * @param renderTarget Optional WebGL RenderTarget.
         */
-      def postRenderWebGL(renderer: CanvasRenderer): Unit = js.native
-      def postRenderWebGL(renderer: WebGLRenderer): Unit = js.native
+      def postRenderWebGL(renderer: CanvasRenderer, camera: Camera): Unit = js.native
+      def postRenderWebGL(renderer: CanvasRenderer, camera: Camera, renderTarget: RenderTarget): Unit = js.native
+      def postRenderWebGL(renderer: WebGLRenderer, camera: Camera): Unit = js.native
+      def postRenderWebGL(renderer: WebGLRenderer, camera: Camera, renderTarget: RenderTarget): Unit = js.native
       
       /**
         * This is a NOOP method. Bitmap Masks are not supported by the Canvas Renderer.
@@ -578,15 +549,15 @@ object Display {
       def preRenderWebGL(renderer: WebGLRenderer, maskedObject: GameObject, camera: Camera): Unit = js.native
       
       /**
-        * A reference to either the Canvas or WebGL Renderer that this Mask is using.
+        * Sets a new Game Object or Dynamic Texture for this Bitmap Mask to use.
+        * 
+        * If a Game Object it must have a texture, such as a Sprite.
+        * 
+        * You can update the source of the mask as often as you like.
+        * @param maskObject The Game Object or Dynamic Texture that will be used as the mask. If a Game Object, it must have a texture, such as a Sprite.
         */
-      var renderer: CanvasRenderer | WebGLRenderer = js.native
-      
-      /**
-        * Sets a new masking Game Object for the Bitmap Mask.
-        * @param renderable A renderable Game Object that uses a texture, such as a Sprite.
-        */
-      def setBitmap(renderable: GameObject): Unit = js.native
+      def setBitmap(maskObject: GameObject): Unit = js.native
+      def setBitmap(maskObject: DynamicTexture): Unit = js.native
     }
     
     /**
@@ -642,6 +613,12 @@ object Display {
         * Is this mask a stencil mask?
         */
       val isStencil: Boolean = js.native
+      
+      /**
+        * The current stencil level. This can change dynamically at runtime
+        * and is set in the applyStencil method.
+        */
+      var level: Boolean = js.native
       
       /**
         * Restore the canvas context's previous clipping path, thus turning off the mask for it.

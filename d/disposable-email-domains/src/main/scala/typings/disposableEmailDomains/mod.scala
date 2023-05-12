@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod extends Shortcut {
   
-  @JSImport("disposable-email-domains", JSImport.Default)
+  @JSImport("disposable-email-domains", JSImport.Namespace)
   @js.native
-  val default: js.Array[String] = js.native
+  val ^ : js.Array[String] = js.native
   
   type _To = js.Array[String]
   
-  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: js.Array[String] = default
+  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
+  override def _to: js.Array[String] = ^
 }

@@ -50,6 +50,8 @@ import typings.primereact.primereactStrings.tree
 import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.yes
+import typings.primereact.utilsUtilsMod.IconOptions
+import typings.primereact.utilsUtilsMod.IconType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -103,7 +105,7 @@ object tabviewTabviewMod {
     def this(props: TabPanelProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: TabPanelProps, context: Any) = this()
   }
@@ -114,39 +116,87 @@ object tabviewTabviewMod {
     def this(props: TabViewProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: TabViewProps, context: Any) = this()
     
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
     
+    /**
+      * Resets all states.
+      */
     def reset(): Unit = js.native
   }
   
+  /**
+    * Custom Tabpanel header template options
+    */
   trait TabPanelHeaderTemplateOptions extends StObject {
     
+    /**
+      * The aria-controls attribute of the tab header.
+      */
     var ariaControls: String
     
+    /**
+      * Style class of the header element.
+      */
     var className: String
     
+    /**
+      * The JSX element of the tab header.
+      */
     var element: Element
     
+    /**
+      * The index of the tab header.
+      */
     var index: Double
     
+    /**
+      * Left icon of the tab header.
+      */
     var leftIconElement: Element
     
+    /**
+      * Callback to invoke on click.
+      * @param {React.MouseEvent<HTMLElement>} event - Browser event.
+      */
     def onClick(event: MouseEvent[HTMLElement, NativeMouseEvent]): Unit
     
+    /**
+      * Callback to invoke when the key pressed.
+      * @param {React.KeyboardEvent<HTMLElement>} event - Browser event.
+      */
     def onKeyDown(event: KeyboardEvent[HTMLElement]): Unit
     
+    /**
+      * The props of the tab panel component.
+      */
     var props: TabPanelProps
     
+    /**
+      * Right icon of the tab header.
+      */
     var rightIconElement: Element
     
+    /**
+      * Whether the tab header is selected or not.
+      */
     var selected: Boolean
     
+    /**
+      * Style class of the header title element.
+      */
     var titleClassName: String
     
+    /**
+      * The title element of the tab header.
+      */
     var titleElement: Element
   }
   object TabPanelHeaderTemplateOptions {
@@ -198,34 +248,91 @@ object tabviewTabviewMod {
     }
   }
   
-  type TabPanelHeaderTemplateType = ReactNode | (js.Function1[/* options */ TabPanelHeaderTemplateOptions, ReactNode])
-  
   trait TabPanelProps extends StObject {
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * Style class of the tab header and content.
+      */
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * Defines if tab can be removed.
+      * @defaultValue false
+      */
     var closable: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Close button of the tab header.
+      */
+    var closeIcon: js.UndefOr[IconType[TabPanel]] = js.undefined
+    
+    /**
+      * Style class of the tab content.
+      */
     var contentClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Inline style of the tab content.
+      */
     var contentStyle: js.UndefOr[CSSProperties] = js.undefined
     
+    /**
+      * Whether the tab is disabled.
+      * @defaultValue false
+      */
     var disabled: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Orientation of tab headers.
+      */
     var header: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * Style class of the tab header.
+      */
     var headerClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Inline style of the tab header.
+      */
     var headerStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var headerTemplate: js.UndefOr[TabPanelHeaderTemplateType] = js.undefined
+    /**
+      * Header template of the tab to customize more.
+      */
+    var headerTemplate: js.UndefOr[
+        ReactNode | (js.Function1[/* options */ TabPanelHeaderTemplateOptions, ReactNode])
+      ] = js.undefined
     
-    var leftIcon: js.UndefOr[String] = js.undefined
+    /**
+      * Icons can be placed at left of a header.
+      */
+    var leftIcon: js.UndefOr[IconType[TabPanel]] = js.undefined
     
-    var rightIcon: js.UndefOr[String] = js.undefined
+    /**
+      * Next button of the tab header.
+      */
+    var nextButton: js.UndefOr[IconType[TabPanel]] = js.undefined
     
+    /**
+      * Previous button of the tab header.
+      */
+    var prevButton: js.UndefOr[IconType[TabPanel]] = js.undefined
+    
+    /**
+      * Icons can be placed at right of a header.
+      */
+    var rightIcon: js.UndefOr[IconType[TabPanel]] = js.undefined
+    
+    /**
+      * Inline style of the tab header and content.
+      */
     var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object TabPanelProps {
@@ -250,6 +357,12 @@ object tabviewTabviewMod {
       
       inline def setClosableUndefined: Self = StObject.set(x, "closable", js.undefined)
       
+      inline def setCloseIcon(value: IconType[TabPanel]): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
+      
+      inline def setCloseIconFunction1(value: /* options */ IconOptions[TabPanel] => ReactNode): Self = StObject.set(x, "closeIcon", js.Any.fromFunction1(value))
+      
+      inline def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
+      
       inline def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
       
       inline def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
@@ -272,7 +385,7 @@ object tabviewTabviewMod {
       
       inline def setHeaderStyleUndefined: Self = StObject.set(x, "headerStyle", js.undefined)
       
-      inline def setHeaderTemplate(value: TabPanelHeaderTemplateType): Self = StObject.set(x, "headerTemplate", value.asInstanceOf[js.Any])
+      inline def setHeaderTemplate(value: ReactNode | (js.Function1[/* options */ TabPanelHeaderTemplateOptions, ReactNode])): Self = StObject.set(x, "headerTemplate", value.asInstanceOf[js.Any])
       
       inline def setHeaderTemplateFunction1(value: /* options */ TabPanelHeaderTemplateOptions => ReactNode): Self = StObject.set(x, "headerTemplate", js.Any.fromFunction1(value))
       
@@ -280,11 +393,27 @@ object tabviewTabviewMod {
       
       inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      inline def setLeftIcon(value: String): Self = StObject.set(x, "leftIcon", value.asInstanceOf[js.Any])
+      inline def setLeftIcon(value: IconType[TabPanel]): Self = StObject.set(x, "leftIcon", value.asInstanceOf[js.Any])
+      
+      inline def setLeftIconFunction1(value: /* options */ IconOptions[TabPanel] => ReactNode): Self = StObject.set(x, "leftIcon", js.Any.fromFunction1(value))
       
       inline def setLeftIconUndefined: Self = StObject.set(x, "leftIcon", js.undefined)
       
-      inline def setRightIcon(value: String): Self = StObject.set(x, "rightIcon", value.asInstanceOf[js.Any])
+      inline def setNextButton(value: IconType[TabPanel]): Self = StObject.set(x, "nextButton", value.asInstanceOf[js.Any])
+      
+      inline def setNextButtonFunction1(value: /* options */ IconOptions[TabPanel] => ReactNode): Self = StObject.set(x, "nextButton", js.Any.fromFunction1(value))
+      
+      inline def setNextButtonUndefined: Self = StObject.set(x, "nextButton", js.undefined)
+      
+      inline def setPrevButton(value: IconType[TabPanel]): Self = StObject.set(x, "prevButton", value.asInstanceOf[js.Any])
+      
+      inline def setPrevButtonFunction1(value: /* options */ IconOptions[TabPanel] => ReactNode): Self = StObject.set(x, "prevButton", js.Any.fromFunction1(value))
+      
+      inline def setPrevButtonUndefined: Self = StObject.set(x, "prevButton", js.undefined)
+      
+      inline def setRightIcon(value: IconType[TabPanel]): Self = StObject.set(x, "rightIcon", value.asInstanceOf[js.Any])
+      
+      inline def setRightIconFunction1(value: /* options */ IconOptions[TabPanel] => ReactNode): Self = StObject.set(x, "rightIcon", js.Any.fromFunction1(value))
       
       inline def setRightIconUndefined: Self = StObject.set(x, "rightIcon", js.undefined)
       
@@ -301,6 +430,10 @@ object tabviewTabviewMod {
     
     var accessKey: js.UndefOr[String] = js.undefined
     
+    /**
+      * Active index of the TabView.
+      * @defaultValue 0
+      */
     var activeIndex: js.UndefOr[Double] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
@@ -405,13 +538,21 @@ object tabviewTabviewMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -467,9 +608,17 @@ object tabviewTabviewMod {
     
     var onBeforeInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
-    var onBeforeTabChange: js.UndefOr[js.Function1[/* e */ TabViewTabChangeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke before an active tab is changed. Return false to prevent tab from changing.
+      * @param {TabViewTabChangeEvent} event - Custom tab change event.
+      */
+    var onBeforeTabChange: js.UndefOr[js.Function1[/* event */ TabViewTabChangeEvent, Unit]] = js.undefined
     
-    var onBeforeTabClose: js.UndefOr[js.Function1[/* e */ TabViewTabCloseParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke before an active tab is close. Return false to prevent tab from closing.
+      * @param {TabViewTabCloseEvent} event - Custom tab close event.
+      */
+    var onBeforeTabClose: js.UndefOr[js.Function1[/* event */ TabViewTabCloseEvent, Unit]] = js.undefined
     
     var onBlur: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
     
@@ -601,9 +750,17 @@ object tabviewTabviewMod {
     
     var onSuspend: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onTabChange: js.UndefOr[js.Function1[/* e */ TabViewTabChangeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when an active tab is changed.
+      * @param {TabViewTabChangeEvent} event -  Custom tab change event.
+      */
+    var onTabChange: js.UndefOr[js.Function1[/* event */ TabViewTabChangeEvent, Unit]] = js.undefined
     
-    var onTabClose: js.UndefOr[js.Function1[/* e */ TabViewTabCloseParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when an active tab is closed.
+      * @param {TabViewTabCloseEvent} event - Custom tab close event.
+      */
+    var onTabClose: js.UndefOr[js.Function1[/* event */ TabViewTabCloseEvent, Unit]] = js.undefined
     
     var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
@@ -623,8 +780,14 @@ object tabviewTabviewMod {
     
     var onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Style class of the panels container of the tabview.
+      */
     var panelContainerClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Inline style of the panels container of the tabview.
+      */
     var panelContainerStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
@@ -635,14 +798,26 @@ object tabviewTabviewMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Whether to render the contents of the selected tab or all tabs.
+      * @defaultValue true
+      */
     var renderActiveOnly: js.UndefOr[Boolean] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
     
+    var rev: js.UndefOr[String] = js.undefined
+    
     var role: js.UndefOr[AriaRole] = js.undefined
     
+    /**
+      * When enabled displays buttons at each side of the tab headers to scroll the tab list.
+      * @defaultValue false
+      */
     var scrollable: js.UndefOr[Boolean] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
@@ -893,6 +1068,10 @@ object tabviewTabviewMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -909,9 +1088,13 @@ object tabviewTabviewMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -1021,11 +1204,11 @@ object tabviewTabviewMod {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBeforeTabChange(value: /* e */ TabViewTabChangeParams => Unit): Self = StObject.set(x, "onBeforeTabChange", js.Any.fromFunction1(value))
+      inline def setOnBeforeTabChange(value: /* event */ TabViewTabChangeEvent => Unit): Self = StObject.set(x, "onBeforeTabChange", js.Any.fromFunction1(value))
       
       inline def setOnBeforeTabChangeUndefined: Self = StObject.set(x, "onBeforeTabChange", js.undefined)
       
-      inline def setOnBeforeTabClose(value: /* e */ TabViewTabCloseParams => Unit): Self = StObject.set(x, "onBeforeTabClose", js.Any.fromFunction1(value))
+      inline def setOnBeforeTabClose(value: /* event */ TabViewTabCloseEvent => Unit): Self = StObject.set(x, "onBeforeTabClose", js.Any.fromFunction1(value))
       
       inline def setOnBeforeTabCloseUndefined: Self = StObject.set(x, "onBeforeTabClose", js.undefined)
       
@@ -1289,11 +1472,11 @@ object tabviewTabviewMod {
       
       inline def setOnSuspendUndefined: Self = StObject.set(x, "onSuspend", js.undefined)
       
-      inline def setOnTabChange(value: /* e */ TabViewTabChangeParams => Unit): Self = StObject.set(x, "onTabChange", js.Any.fromFunction1(value))
+      inline def setOnTabChange(value: /* event */ TabViewTabChangeEvent => Unit): Self = StObject.set(x, "onTabChange", js.Any.fromFunction1(value))
       
       inline def setOnTabChangeUndefined: Self = StObject.set(x, "onTabChange", js.undefined)
       
-      inline def setOnTabClose(value: /* e */ TabViewTabCloseParams => Unit): Self = StObject.set(x, "onTabClose", js.Any.fromFunction1(value))
+      inline def setOnTabClose(value: /* event */ TabViewTabCloseEvent => Unit): Self = StObject.set(x, "onTabClose", js.Any.fromFunction1(value))
       
       inline def setOnTabCloseUndefined: Self = StObject.set(x, "onTabClose", js.undefined)
       
@@ -1357,6 +1540,10 @@ object tabviewTabviewMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRenderActiveOnly(value: Boolean): Self = StObject.set(x, "renderActiveOnly", value.asInstanceOf[js.Any])
       
       inline def setRenderActiveOnlyUndefined: Self = StObject.set(x, "renderActiveOnly", js.undefined)
@@ -1368,6 +1555,10 @@ object tabviewTabviewMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1427,21 +1618,32 @@ object tabviewTabviewMod {
     }
   }
   
-  trait TabViewTabChangeParams extends StObject {
+  /**
+    * Custom change event.
+    * @see {@link TabViewProps.onTabChange}
+    * @event
+    */
+  trait TabViewTabChangeEvent extends StObject {
     
+    /**
+      * Index of the selected tab
+      */
     var index: Double
     
+    /**
+      * Browser event
+      */
     var originalEvent: SyntheticEvent[typings.std.Element, Event]
   }
-  object TabViewTabChangeParams {
+  object TabViewTabChangeEvent {
     
-    inline def apply(index: Double, originalEvent: SyntheticEvent[typings.std.Element, Event]): TabViewTabChangeParams = {
+    inline def apply(index: Double, originalEvent: SyntheticEvent[typings.std.Element, Event]): TabViewTabChangeEvent = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any])
-      __obj.asInstanceOf[TabViewTabChangeParams]
+      __obj.asInstanceOf[TabViewTabChangeEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: TabViewTabChangeParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: TabViewTabChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -1449,21 +1651,32 @@ object tabviewTabviewMod {
     }
   }
   
-  trait TabViewTabCloseParams extends StObject {
+  /**
+    * Custom close event.
+    * @see {@link TabViewProps.onTabClose}
+    * @event
+    */
+  trait TabViewTabCloseEvent extends StObject {
     
+    /**
+      * Index of the selected tab
+      */
     var index: Double
     
+    /**
+      * Browser event
+      */
     var originalEvent: SyntheticEvent[typings.std.Element, Event]
   }
-  object TabViewTabCloseParams {
+  object TabViewTabCloseEvent {
     
-    inline def apply(index: Double, originalEvent: SyntheticEvent[typings.std.Element, Event]): TabViewTabCloseParams = {
+    inline def apply(index: Double, originalEvent: SyntheticEvent[typings.std.Element, Event]): TabViewTabCloseEvent = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any])
-      __obj.asInstanceOf[TabViewTabCloseParams]
+      __obj.asInstanceOf[TabViewTabCloseEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: TabViewTabCloseParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: TabViewTabCloseEvent] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

@@ -12,7 +12,7 @@ trait UpdateKeyGroupRequest extends StObject {
   var Id: String
   
   /**
-    * The version of the key group that you are updating. The version is the key group’s ETag value.
+    * The version of the key group that you are updating. The version is the key group's ETag value.
     */
   var IfMatch: js.UndefOr[String] = js.undefined
   

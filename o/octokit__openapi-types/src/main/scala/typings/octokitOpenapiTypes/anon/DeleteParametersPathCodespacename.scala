@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteParametersPathCodespacename extends StObject {
   
   /**
-    * Deletes a user's codespace.
+    * Delete a codespace from the organization
+    * @description Deletes a user's codespace.
     *
     * You must authenticate using an access token with the `admin:org` scope to use this endpoint.
     */

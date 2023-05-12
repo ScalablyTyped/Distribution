@@ -5,11 +5,12 @@ import typings.unsplashJs.distMethodsSearchTypesRequestMod.ContentFilter
 import typings.unsplashJs.distMethodsSearchTypesRequestMod.Language
 import typings.unsplashJs.distMethodsSearchTypesRequestMod.SearchOrderBy
 import typings.unsplashJs.distTypesRequestMod.Orientation
+import typings.unsplashJs.distTypesRequestMod.Plus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  query :string,   orderBy :unsplash-js.unsplash-js/dist/methods/search/types/request.SearchOrderBy | undefined,   color :unsplash-js.unsplash-js/dist/methods/search/types/request.ColorId | undefined,   lang :unsplash-js.unsplash-js/dist/methods/search/types/request.Language | undefined,   contentFilter :unsplash-js.unsplash-js/dist/methods/search/types/request.ContentFilter | undefined,   collectionIds :std.Array<string> | undefined} & std.Pick<unsplash-js.unsplash-js/dist/types/request.PaginationParams, 'page' | 'perPage'> & unsplash-js.unsplash-js/dist/types/request.OrientationParam */
+/* Inlined {  query :string,   orderBy :unsplash-js.unsplash-js/dist/methods/search/types/request.SearchOrderBy | undefined,   color :unsplash-js.unsplash-js/dist/methods/search/types/request.ColorId | undefined,   plus :unsplash-js.unsplash-js/dist/types/request.Plus | undefined,   lang :unsplash-js.unsplash-js/dist/methods/search/types/request.Language | undefined,   contentFilter :unsplash-js.unsplash-js/dist/methods/search/types/request.ContentFilter | undefined,   collectionIds :std.Array<string> | undefined} & std.Pick<unsplash-js.unsplash-js/dist/types/request.PaginationParams, 'page' | 'perPage'> & unsplash-js.unsplash-js/dist/types/request.OrientationParam */
 trait querystringorderBySearchO extends StObject {
   
   var collectionIds: js.UndefOr[js.Array[String]] = js.undefined
@@ -27,6 +28,8 @@ trait querystringorderBySearchO extends StObject {
   var page: js.UndefOr[Double] = js.undefined
   
   var perPage: js.UndefOr[Double] = js.undefined
+  
+  var plus: js.UndefOr[Plus] = js.undefined
   
   var query: String
 }
@@ -73,6 +76,10 @@ object querystringorderBySearchO {
     inline def setPerPage(value: Double): Self = StObject.set(x, "perPage", value.asInstanceOf[js.Any])
     
     inline def setPerPageUndefined: Self = StObject.set(x, "perPage", js.undefined)
+    
+    inline def setPlus(value: Plus): Self = StObject.set(x, "plus", value.asInstanceOf[js.Any])
+    
+    inline def setPlusUndefined: Self = StObject.set(x, "plus", js.undefined)
     
     inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

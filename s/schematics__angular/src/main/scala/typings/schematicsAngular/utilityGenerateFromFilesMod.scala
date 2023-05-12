@@ -28,14 +28,16 @@ object utilityGenerateFromFilesMod {
     
     var prefix: js.UndefOr[String] = js.undefined
     
-    var project: js.UndefOr[String] = js.undefined
+    var project: String
     
     var skipTests: js.UndefOr[Boolean] = js.undefined
+    
+    var templateFilesDirectory: js.UndefOr[String] = js.undefined
   }
   object GenerateFromFilesOptions {
     
-    inline def apply(name: String): GenerateFromFilesOptions = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    inline def apply(name: String, project: String): GenerateFromFilesOptions = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenerateFromFilesOptions]
     }
     
@@ -58,11 +60,13 @@ object utilityGenerateFromFilesMod {
       
       inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
-      inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
-      
       inline def setSkipTests(value: Boolean): Self = StObject.set(x, "skipTests", value.asInstanceOf[js.Any])
       
       inline def setSkipTestsUndefined: Self = StObject.set(x, "skipTests", js.undefined)
+      
+      inline def setTemplateFilesDirectory(value: String): Self = StObject.set(x, "templateFilesDirectory", value.asInstanceOf[js.Any])
+      
+      inline def setTemplateFilesDirectoryUndefined: Self = StObject.set(x, "templateFilesDirectory", js.undefined)
     }
   }
 }

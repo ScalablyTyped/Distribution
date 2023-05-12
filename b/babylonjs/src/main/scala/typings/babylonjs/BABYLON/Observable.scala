@@ -27,6 +27,12 @@ trait Observable[T] extends StObject {
     */
   var _eventState: EventState = js.native
   
+  /* private */ var _hasNotified: Any = js.native
+  
+  /* private */ var _lastNotifiedValue: Any = js.native
+  
+  /* private */ var _numObserversMarkedAsDeleted: Any = js.native
+  
   /* private */ var _observers: Any = js.native
   
   /* private */ var _onObserverAdded: Any = js.native
@@ -148,6 +154,11 @@ trait Observable[T] extends StObject {
   def cancelAllCoroutines(): Unit = js.native
   
   /**
+    * Clean the last notified state - both the internal last value and the has-notified flag
+    */
+  def cleanLastNotifiedState(): Unit = js.native
+  
+  /**
     * Clear the list of observers
     */
   def clear(): Unit = js.native
@@ -177,6 +188,12 @@ trait Observable[T] extends StObject {
     * @param observer the observer to move
     */
   def makeObserverTopPriority(observer: Observer[T]): Unit = js.native
+  
+  /**
+    * If set to true the observable will notify when an observer was added if the observable was already triggered.
+    * This is helpful to single-state observables like the scene onReady or the dispose observable.
+    */
+  var notifyIfTriggered: Boolean = js.native
   
   /**
     * Notify a specific observer
@@ -247,6 +264,7 @@ trait Observable[T] extends StObject {
   
   /**
     * Gets the list of observers
+    * Note that observers that were recently deleted may still be present in the list because they are only really deleted on the next javascript tick!
     */
   def observers: js.Array[Observer[T]] = js.native
   

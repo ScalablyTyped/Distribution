@@ -1,31 +1,6 @@
 package typings.firebaseStorage
 
 import typings.firebaseStorage.anon.ServerResponse
-import typings.firebaseStorage.firebaseStorageStrings.`app-deleted`
-import typings.firebaseStorage.firebaseStorageStrings.`bucket-not-found`
-import typings.firebaseStorage.firebaseStorageStrings.`cannot-slice-blob`
-import typings.firebaseStorage.firebaseStorageStrings.`internal-error`
-import typings.firebaseStorage.firebaseStorageStrings.`invalid-argument-count`
-import typings.firebaseStorage.firebaseStorageStrings.`invalid-argument`
-import typings.firebaseStorage.firebaseStorageStrings.`invalid-checksum`
-import typings.firebaseStorage.firebaseStorageStrings.`invalid-default-bucket`
-import typings.firebaseStorage.firebaseStorageStrings.`invalid-event-name`
-import typings.firebaseStorage.firebaseStorageStrings.`invalid-format`
-import typings.firebaseStorage.firebaseStorageStrings.`invalid-root-operation`
-import typings.firebaseStorage.firebaseStorageStrings.`invalid-url`
-import typings.firebaseStorage.firebaseStorageStrings.`no-default-bucket`
-import typings.firebaseStorage.firebaseStorageStrings.`no-download-url`
-import typings.firebaseStorage.firebaseStorageStrings.`object-not-found`
-import typings.firebaseStorage.firebaseStorageStrings.`project-not-found`
-import typings.firebaseStorage.firebaseStorageStrings.`quota-exceeded`
-import typings.firebaseStorage.firebaseStorageStrings.`retry-limit-exceeded`
-import typings.firebaseStorage.firebaseStorageStrings.`server-file-wrong-size`
-import typings.firebaseStorage.firebaseStorageStrings.`unauthorized-app`
-import typings.firebaseStorage.firebaseStorageStrings.`unsupported-environment`
-import typings.firebaseStorage.firebaseStorageStrings.canceled
-import typings.firebaseStorage.firebaseStorageStrings.unauthenticated
-import typings.firebaseStorage.firebaseStorageStrings.unauthorized
-import typings.firebaseStorage.firebaseStorageStrings.unknown
 import typings.firebaseUtil.mod.FirebaseError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -41,7 +16,7 @@ object distNodeEsmSrcImplementationErrorMod {
   @js.native
   open class StorageError protected () extends FirebaseError {
     /**
-      * @param code - A StorageErrorCode string to be prefixed with 'storage/' and
+      * @param code - A `StorageErrorCode` string to be prefixed with 'storage/' and
       *  added to the end of the message.
       * @param message  - Error message.
       * @param status_ - Corresponding HTTP Status Code
@@ -52,12 +27,12 @@ object distNodeEsmSrcImplementationErrorMod {
     /* private */ val _baseMessage: Any = js.native
     
     /**
-      * Compares a StorageErrorCode against this error's code, filtering out the prefix.
+      * Compares a `StorageErrorCode` against this error's code, filtering out the prefix.
       */
     def _codeEquals(code: StorageErrorCode): Boolean = js.native
     
     /**
-      * Stores custom error data unque to StorageError.
+      * Stores custom error data unique to the `StorageError`.
       */
     @JSName("customData")
     var customData_StorageError: ServerResponse = js.native
@@ -73,6 +48,166 @@ object distNodeEsmSrcImplementationErrorMod {
     /* private */ var status_ : Any = js.native
     
     def status_=(status: Double): Unit = js.native
+  }
+  
+  @js.native
+  sealed trait StorageErrorCode extends StObject
+  @JSImport("@firebase/storage/dist/node-esm/src/implementation/error", "StorageErrorCode")
+  @js.native
+  object StorageErrorCode extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[StorageErrorCode & String] = js.native
+    
+    @js.native
+    sealed trait APP_DELETED
+      extends StObject
+         with StorageErrorCode
+    /* "app-deleted" */ val APP_DELETED: typings.firebaseStorage.distNodeEsmSrcImplementationErrorMod.StorageErrorCode.APP_DELETED & String = js.native
+    
+    @js.native
+    sealed trait BUCKET_NOT_FOUND
+      extends StObject
+         with StorageErrorCode
+    /* "bucket-not-found" */ val BUCKET_NOT_FOUND: typings.firebaseStorage.distNodeEsmSrcImplementationErrorMod.StorageErrorCode.BUCKET_NOT_FOUND & String = js.native
+    
+    @js.native
+    sealed trait CANCELED
+      extends StObject
+         with StorageErrorCode
+    /* "canceled" */ val CANCELED: typings.firebaseStorage.distNodeEsmSrcImplementationErrorMod.StorageErrorCode.CANCELED & String = js.native
+    
+    @js.native
+    sealed trait CANNOT_SLICE_BLOB
+      extends StObject
+         with StorageErrorCode
+    /* "cannot-slice-blob" */ val CANNOT_SLICE_BLOB: typings.firebaseStorage.distNodeEsmSrcImplementationErrorMod.StorageErrorCode.CANNOT_SLICE_BLOB & String = js.native
+    
+    @js.native
+    sealed trait INTERNAL_ERROR
+      extends StObject
+         with StorageErrorCode
+    /* "internal-error" */ val INTERNAL_ERROR: typings.firebaseStorage.distNodeEsmSrcImplementationErrorMod.StorageErrorCode.INTERNAL_ERROR & String = js.native
+    
+    @js.native
+    sealed trait INVALID_ARGUMENT
+      extends StObject
+         with StorageErrorCode
+    /* "invalid-argument" */ val INVALID_ARGUMENT: typings.firebaseStorage.distNodeEsmSrcImplementationErrorMod.StorageErrorCode.INVALID_ARGUMENT & String = js.native
+    
+    @js.native
+    sealed trait INVALID_ARGUMENT_COUNT
+      extends StObject
+         with StorageErrorCode
+    /* "invalid-argument-count" */ val INVALID_ARGUMENT_COUNT: typings.firebaseStorage.distNodeEsmSrcImplementationErrorMod.StorageErrorCode.INVALID_ARGUMENT_COUNT & String = js.native
+    
+    @js.native
+    sealed trait INVALID_CHECKSUM
+      extends StObject
+         with StorageErrorCode
+    /* "invalid-checksum" */ val INVALID_CHECKSUM: typings.firebaseStorage.distNodeEsmSrcImplementationErrorMod.StorageErrorCode.INVALID_CHECKSUM & String = js.native
+    
+    @js.native
+    sealed trait INVALID_DEFAULT_BUCKET
+      extends StObject
+         with StorageErrorCode
+    /* "invalid-default-bucket" */ val INVALID_DEFAULT_BUCKET: typings.firebaseStorage.distNodeEsmSrcImplementationErrorMod.StorageErrorCode.INVALID_DEFAULT_BUCKET & String = js.native
+    
+    @js.native
+    sealed trait INVALID_EVENT_NAME
+      extends StObject
+         with StorageErrorCode
+    /* "invalid-event-name" */ val INVALID_EVENT_NAME: typings.firebaseStorage.distNodeEsmSrcImplementationErrorMod.StorageErrorCode.INVALID_EVENT_NAME & String = js.native
+    
+    @js.native
+    sealed trait INVALID_FORMAT
+      extends StObject
+         with StorageErrorCode
+    /* "invalid-format" */ val INVALID_FORMAT: typings.firebaseStorage.distNodeEsmSrcImplementationErrorMod.StorageErrorCode.INVALID_FORMAT & String = js.native
+    
+    @js.native
+    sealed trait INVALID_ROOT_OPERATION
+      extends StObject
+         with StorageErrorCode
+    /* "invalid-root-operation" */ val INVALID_ROOT_OPERATION: typings.firebaseStorage.distNodeEsmSrcImplementationErrorMod.StorageErrorCode.INVALID_ROOT_OPERATION & String = js.native
+    
+    @js.native
+    sealed trait INVALID_URL
+      extends StObject
+         with StorageErrorCode
+    /* "invalid-url" */ val INVALID_URL: typings.firebaseStorage.distNodeEsmSrcImplementationErrorMod.StorageErrorCode.INVALID_URL & String = js.native
+    
+    @js.native
+    sealed trait NO_DEFAULT_BUCKET
+      extends StObject
+         with StorageErrorCode
+    /* "no-default-bucket" */ val NO_DEFAULT_BUCKET: typings.firebaseStorage.distNodeEsmSrcImplementationErrorMod.StorageErrorCode.NO_DEFAULT_BUCKET & String = js.native
+    
+    @js.native
+    sealed trait NO_DOWNLOAD_URL
+      extends StObject
+         with StorageErrorCode
+    /* "no-download-url" */ val NO_DOWNLOAD_URL: typings.firebaseStorage.distNodeEsmSrcImplementationErrorMod.StorageErrorCode.NO_DOWNLOAD_URL & String = js.native
+    
+    @js.native
+    sealed trait OBJECT_NOT_FOUND
+      extends StObject
+         with StorageErrorCode
+    /* "object-not-found" */ val OBJECT_NOT_FOUND: typings.firebaseStorage.distNodeEsmSrcImplementationErrorMod.StorageErrorCode.OBJECT_NOT_FOUND & String = js.native
+    
+    @js.native
+    sealed trait PROJECT_NOT_FOUND
+      extends StObject
+         with StorageErrorCode
+    /* "project-not-found" */ val PROJECT_NOT_FOUND: typings.firebaseStorage.distNodeEsmSrcImplementationErrorMod.StorageErrorCode.PROJECT_NOT_FOUND & String = js.native
+    
+    @js.native
+    sealed trait QUOTA_EXCEEDED
+      extends StObject
+         with StorageErrorCode
+    /* "quota-exceeded" */ val QUOTA_EXCEEDED: typings.firebaseStorage.distNodeEsmSrcImplementationErrorMod.StorageErrorCode.QUOTA_EXCEEDED & String = js.native
+    
+    @js.native
+    sealed trait RETRY_LIMIT_EXCEEDED
+      extends StObject
+         with StorageErrorCode
+    /* "retry-limit-exceeded" */ val RETRY_LIMIT_EXCEEDED: typings.firebaseStorage.distNodeEsmSrcImplementationErrorMod.StorageErrorCode.RETRY_LIMIT_EXCEEDED & String = js.native
+    
+    @js.native
+    sealed trait SERVER_FILE_WRONG_SIZE
+      extends StObject
+         with StorageErrorCode
+    /* "server-file-wrong-size" */ val SERVER_FILE_WRONG_SIZE: typings.firebaseStorage.distNodeEsmSrcImplementationErrorMod.StorageErrorCode.SERVER_FILE_WRONG_SIZE & String = js.native
+    
+    @js.native
+    sealed trait UNAUTHENTICATED
+      extends StObject
+         with StorageErrorCode
+    /* "unauthenticated" */ val UNAUTHENTICATED: typings.firebaseStorage.distNodeEsmSrcImplementationErrorMod.StorageErrorCode.UNAUTHENTICATED & String = js.native
+    
+    @js.native
+    sealed trait UNAUTHORIZED
+      extends StObject
+         with StorageErrorCode
+    /* "unauthorized" */ val UNAUTHORIZED: typings.firebaseStorage.distNodeEsmSrcImplementationErrorMod.StorageErrorCode.UNAUTHORIZED & String = js.native
+    
+    @js.native
+    sealed trait UNAUTHORIZED_APP
+      extends StObject
+         with StorageErrorCode
+    /* "unauthorized-app" */ val UNAUTHORIZED_APP: typings.firebaseStorage.distNodeEsmSrcImplementationErrorMod.StorageErrorCode.UNAUTHORIZED_APP & String = js.native
+    
+    @js.native
+    sealed trait UNKNOWN
+      extends StObject
+         with StorageErrorCode
+    /* "unknown" */ val UNKNOWN: typings.firebaseStorage.distNodeEsmSrcImplementationErrorMod.StorageErrorCode.UNKNOWN & String = js.native
+    
+    @js.native
+    sealed trait UNSUPPORTED_ENVIRONMENT
+      extends StObject
+         with StorageErrorCode
+    /* "unsupported-environment" */ val UNSUPPORTED_ENVIRONMENT: typings.firebaseStorage.distNodeEsmSrcImplementationErrorMod.StorageErrorCode.UNSUPPORTED_ENVIRONMENT & String = js.native
   }
   
   inline def appDeleted(): StorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("appDeleted")().asInstanceOf[StorageError]
@@ -128,85 +263,4 @@ object distNodeEsmSrcImplementationErrorMod {
   inline def unknown(): StorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("unknown")().asInstanceOf[StorageError]
   
   inline def unsupportedEnvironment(message: String): StorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("unsupportedEnvironment")(message.asInstanceOf[js.Any]).asInstanceOf[StorageError]
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.firebaseStorage.firebaseStorageStrings.unknown
-    - typings.firebaseStorage.firebaseStorageStrings.`object-not-found`
-    - typings.firebaseStorage.firebaseStorageStrings.`bucket-not-found`
-    - typings.firebaseStorage.firebaseStorageStrings.`project-not-found`
-    - typings.firebaseStorage.firebaseStorageStrings.`quota-exceeded`
-    - typings.firebaseStorage.firebaseStorageStrings.unauthenticated
-    - typings.firebaseStorage.firebaseStorageStrings.unauthorized
-    - typings.firebaseStorage.firebaseStorageStrings.`unauthorized-app`
-    - typings.firebaseStorage.firebaseStorageStrings.`retry-limit-exceeded`
-    - typings.firebaseStorage.firebaseStorageStrings.`invalid-checksum`
-    - typings.firebaseStorage.firebaseStorageStrings.canceled
-    - typings.firebaseStorage.firebaseStorageStrings.`invalid-event-name`
-    - typings.firebaseStorage.firebaseStorageStrings.`invalid-url`
-    - typings.firebaseStorage.firebaseStorageStrings.`invalid-default-bucket`
-    - typings.firebaseStorage.firebaseStorageStrings.`no-default-bucket`
-    - typings.firebaseStorage.firebaseStorageStrings.`cannot-slice-blob`
-    - typings.firebaseStorage.firebaseStorageStrings.`server-file-wrong-size`
-    - typings.firebaseStorage.firebaseStorageStrings.`no-download-url`
-    - typings.firebaseStorage.firebaseStorageStrings.`invalid-argument`
-    - typings.firebaseStorage.firebaseStorageStrings.`invalid-argument-count`
-    - typings.firebaseStorage.firebaseStorageStrings.`app-deleted`
-    - typings.firebaseStorage.firebaseStorageStrings.`invalid-root-operation`
-    - typings.firebaseStorage.firebaseStorageStrings.`invalid-format`
-    - typings.firebaseStorage.firebaseStorageStrings.`internal-error`
-    - typings.firebaseStorage.firebaseStorageStrings.`unsupported-environment`
-  */
-  trait StorageErrorCode extends StObject
-  object StorageErrorCode {
-    
-    inline def APP_DELETED: `app-deleted` = "app-deleted".asInstanceOf[`app-deleted`]
-    
-    inline def BUCKET_NOT_FOUND: `bucket-not-found` = "bucket-not-found".asInstanceOf[`bucket-not-found`]
-    
-    inline def CANCELED: canceled = "canceled".asInstanceOf[canceled]
-    
-    inline def CANNOT_SLICE_BLOB: `cannot-slice-blob` = "cannot-slice-blob".asInstanceOf[`cannot-slice-blob`]
-    
-    inline def INTERNAL_ERROR: `internal-error` = "internal-error".asInstanceOf[`internal-error`]
-    
-    inline def INVALID_ARGUMENT: `invalid-argument` = "invalid-argument".asInstanceOf[`invalid-argument`]
-    
-    inline def INVALID_ARGUMENT_COUNT: `invalid-argument-count` = "invalid-argument-count".asInstanceOf[`invalid-argument-count`]
-    
-    inline def INVALID_CHECKSUM: `invalid-checksum` = "invalid-checksum".asInstanceOf[`invalid-checksum`]
-    
-    inline def INVALID_DEFAULT_BUCKET: `invalid-default-bucket` = "invalid-default-bucket".asInstanceOf[`invalid-default-bucket`]
-    
-    inline def INVALID_EVENT_NAME: `invalid-event-name` = "invalid-event-name".asInstanceOf[`invalid-event-name`]
-    
-    inline def INVALID_FORMAT: `invalid-format` = "invalid-format".asInstanceOf[`invalid-format`]
-    
-    inline def INVALID_ROOT_OPERATION: `invalid-root-operation` = "invalid-root-operation".asInstanceOf[`invalid-root-operation`]
-    
-    inline def INVALID_URL: `invalid-url` = "invalid-url".asInstanceOf[`invalid-url`]
-    
-    inline def NO_DEFAULT_BUCKET: `no-default-bucket` = "no-default-bucket".asInstanceOf[`no-default-bucket`]
-    
-    inline def NO_DOWNLOAD_URL: `no-download-url` = "no-download-url".asInstanceOf[`no-download-url`]
-    
-    inline def OBJECT_NOT_FOUND: `object-not-found` = "object-not-found".asInstanceOf[`object-not-found`]
-    
-    inline def PROJECT_NOT_FOUND: `project-not-found` = "project-not-found".asInstanceOf[`project-not-found`]
-    
-    inline def QUOTA_EXCEEDED: `quota-exceeded` = "quota-exceeded".asInstanceOf[`quota-exceeded`]
-    
-    inline def RETRY_LIMIT_EXCEEDED: `retry-limit-exceeded` = "retry-limit-exceeded".asInstanceOf[`retry-limit-exceeded`]
-    
-    inline def SERVER_FILE_WRONG_SIZE: `server-file-wrong-size` = "server-file-wrong-size".asInstanceOf[`server-file-wrong-size`]
-    
-    inline def UNAUTHENTICATED: unauthenticated = "unauthenticated".asInstanceOf[unauthenticated]
-    
-    inline def UNAUTHORIZED: unauthorized = "unauthorized".asInstanceOf[unauthorized]
-    
-    inline def UNAUTHORIZED_APP: `unauthorized-app` = "unauthorized-app".asInstanceOf[`unauthorized-app`]
-    
-    inline def UNKNOWN: unknown = "unknown".asInstanceOf[unknown]
-    
-    inline def UNSUPPORTED_ENVIRONMENT: `unsupported-environment` = "unsupported-environment".asInstanceOf[`unsupported-environment`]
-  }
 }

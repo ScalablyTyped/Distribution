@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * This is the namespace that GPT uses for `config`.
+  * Main configuration interface for slot-level settings.
   */
 object config {
   
@@ -15,8 +15,7 @@ object config {
     *
     * **Experimental**: This feature may be changed or removed in a future release.
     *
-    * **See also**
-    * - [FLEDGE: Sellers Run On-Device Auctions](https://github.com/WICG/turtledove/blob/main/FLEDGE.md#2-sellers-run-on-device-auctions)
+    * @see [FLEDGE: Sellers Run On-Device Auctions](https://github.com/WICG/turtledove/blob/main/FLEDGE.md#2-sellers-run-on-device-auctions)
     */
   trait ComponentAuctionConfig extends StObject {
     
@@ -25,46 +24,40 @@ object config {
       *
       * If this value is set to `null`, any existing configuration for the specified `configKey` will be deleted.
       *
-      * **Example**
-      * ```
-      * var componentAuctionConfig = {
-      *   seller: 'https://testSeller.com', // should be https and the same as
-      *                                     // decisionLogicUrl's origin
-      *   decisionLogicUrl: 'https://testSeller.com/ssp/decision-logic.js',
-      *   interestGroupBuyers: [
-      *     'https://example-buyer.com',
-      *   ],
-      *   auctionSignals: {auction_signals: 'auction_signals'},
-      *   sellerSignals: {seller_signals: 'seller_signals'},
-      *   perBuyerSignals: {
-      *     // listed on interestGroupBuyers
-      *     'https://example-buyer.com': {
-      *       per_buyer_signals: 'per_buyer_signals',
+      * @example
+      *   var componentAuctionConfig = {
+      *     seller: 'https://testSeller.com', // should be https and the same as
+      *                                       // decisionLogicUrl's origin
+      *     decisionLogicUrl: 'https://testSeller.com/ssp/decision-logic.js',
+      *     interestGroupBuyers: [
+      *       'https://example-buyer.com',
+      *     ],
+      *     auctionSignals: {auction_signals: 'auction_signals'},
+      *     sellerSignals: {seller_signals: 'seller_signals'},
+      *     perBuyerSignals: {
+      *       // listed on interestGroupBuyers
+      *       'https://example-buyer.com': {
+      *         per_buyer_signals: 'per_buyer_signals',
+      *       },
       *     },
-      *   },
-      * };
+      *   };
+      *   var auctionSlot = googletag.defineSlot('/1234567/example', [160, 600]);
+      *   // To add configKey to the component auction:
+      *   auctionSlot.setConfig({
+      *     componentAuction: [{
+      *        configKey: 'https://testSeller.com',
+      *        auctionConfig: componentAuctionConfig
+      *     }]
+      *   });
+      *   // To remove configKey from the component auction:
+      *   auctionSlot.setConfig({
+      *     componentAuction: [{
+      *        configKey: 'https://testSeller.com',
+      *        auctionConfig: null
+      *     }]
+      *   });
       *
-      * var auctionSlot = googletag.defineSlot('/1234567/example', [160, 600]);
-      *
-      * // To add configKey to the component auction:
-      * auctionSlot.setConfig({
-      *   componentAuction: [{
-      *      configKey: 'https://testSeller.com',
-      *      auctionConfig: componentAuctionConfig
-      *   }]
-      * });
-      *
-      * // To remove configKey from the component auction:
-      * auctionSlot.setConfig({
-      *   componentAuction: [{
-      *      configKey: 'https://testSeller.com',
-      *      auctionConfig: null
-      *   }]
-      * });
-      * ```
-      *
-      * **See also**
-      * - [FLEDGE: Initiating an On-Device Auction](https://github.com/WICG/turtledove/blob/main/FLEDGE.md#21-initiating-an-on-device-auction)
+      * @see [FLEDGE: Initiating an On-Device Auction](https://github.com/WICG/turtledove/blob/main/FLEDGE.md#21-initiating-an-on-device-auction)
       */
     var auctionConfig: AuctionSignals | Null
     

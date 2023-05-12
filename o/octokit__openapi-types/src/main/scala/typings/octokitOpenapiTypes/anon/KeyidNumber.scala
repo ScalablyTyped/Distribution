@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait KeyidNumber extends StObject {
   
-  /** The unique identifier of the key. */
   var key_id: Double
 }
 object KeyidNumber {

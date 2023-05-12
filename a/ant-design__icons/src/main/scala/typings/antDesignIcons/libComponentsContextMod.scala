@@ -18,6 +18,8 @@ object libComponentsContextMod extends Shortcut {
     var csp: js.UndefOr[Nonce] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
+    
+    var rootClassName: js.UndefOr[String] = js.undefined
   }
   object IconContextProps {
     
@@ -36,6 +38,10 @@ object libComponentsContextMod extends Shortcut {
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      
+      inline def setRootClassName(value: String): Self = StObject.set(x, "rootClassName", value.asInstanceOf[js.Any])
+      
+      inline def setRootClassNameUndefined: Self = StObject.set(x, "rootClassName", js.undefined)
     }
   }
   

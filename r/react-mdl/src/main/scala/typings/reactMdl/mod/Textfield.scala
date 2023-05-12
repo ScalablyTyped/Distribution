@@ -11,7 +11,7 @@ open class Textfield protected () extends _MDLComponent[TextfieldProps] {
   def this(props: TextfieldProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: TextfieldProps, context: Any) = this()
   

@@ -7,6 +7,8 @@ import typings.googlePublisherTag.googletag.PubAdsService
 import typings.googlePublisherTag.googletag.SizeMappingBuilder
 import typings.googlePublisherTag.googletag.Slot
 import typings.googlePublisherTag.googletag.enums.OutOfPageFormat
+import typings.googlePublisherTag.googletag.secureSignals.SecureSignalProvider
+import typings.googlePublisherTag.googletag.secureSignals.SecureSignalProvidersArray
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -56,8 +58,8 @@ object global {
       * the page.
       *
       * @example
-      *   googletag.cmd.push(function() {
-      *     googletag.defineSlot('/1234567/sports', [160, 600])
+      *   googletag.cmd.push(() => {
+      *     googletag.defineSlot('/1234567/sports', [160, 600])!
       *              .addService(googletag.pubads());
       *   });
       */
@@ -150,15 +152,12 @@ object global {
       *
       * @example
       *   // The calls to construct an ad and display contents.
-      *   var slot1 =
-      *       googletag.defineSlot('/1234567/sports', [728, 90], 'div-1');
+      *   const slot1 =
+      *       googletag.defineSlot('/1234567/sports', [728, 90], 'div-1')!;
       *   googletag.display('div-1');
-      *   var slot2 =
-      *       googletag.defineSlot('/1234567/news', [160, 600], 'div-2');
+      *   const slot2 =
+      *       googletag.defineSlot('/1234567/news', [160, 600], 'div-2')!;
       *   googletag.display('div-2');
-      *   var slot3 =
-      *       googletag.defineSlot('/1234567/weather', [160, 600], 'div-3');
-      *   googletag.display('div-3');
       *
       *   // This call to destroy only slot1.
       *   googletag.destroySlots([slot1]);
@@ -199,7 +198,7 @@ object global {
       * @example
       *   &lt;div id="div-1" style="width: 728px; height: 90px"&gt;
       *     &lt;script type="text/javascript"&gt;
-      *       googletag.cmd.push(function() {
+      *       googletag.cmd.push(() => {
       *         googletag.display('div-1');
       *       });
       *     &lt;/script&gt;
@@ -310,6 +309,29 @@ object global {
     @JSGlobal("googletag.pubadsReady")
     @js.native
     val pubadsReady: js.UndefOr[Boolean] = js.native
+    
+    /**
+      * Reference to the secure signal providers array.
+      *
+      * The secure signal providers array accepts a sequence of signal-generating
+      * functions and invokes them in order. It is intended to replace a standard
+      * array that is used to enqueue signal-generating functions to be invoked
+      * once GPT is loaded.
+      *
+      * @example
+      *   window.googletag = window.googletag || {cmd: []};
+      *   googletag.secureSignalProviders = googletag.secureSignalProviders || [];
+      *   googletag.secureSignalProviders.push({
+      *     id: 'collector123',
+      *     collectorFunction: () => { return Promise.resolve('signal'); }
+      *   });
+      *
+      * @see [Share secure signals with bidders](https://support.google.com/admanager/answer/10488752)
+      */
+    @JSGlobal("googletag.secureSignalProviders")
+    @js.native
+    def secureSignalProviders: js.UndefOr[js.Array[SecureSignalProvider] | SecureSignalProvidersArray] = js.native
+    inline def secureSignalProviders_=(x: js.UndefOr[js.Array[SecureSignalProvider] | SecureSignalProvidersArray]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secureSignalProviders")(x.asInstanceOf[js.Any])
     
     /**
       * Sets the title for all ad container iframes created by

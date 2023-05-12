@@ -17,7 +17,6 @@ open class Gyro protected () extends StObject {
   
   val isCalibrated: Boolean = js.native
   
-  def on(event: String, cb: js.Function0[Unit]): this.type = js.native
   @JSName("on")
   def on_change(event: change, cb: js.Function0[Unit]): this.type = js.native
   @JSName("on")

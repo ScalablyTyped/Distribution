@@ -6,18 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `200ContentApplicationjsonErrorsArray` extends StObject {
   
-  /** Response */
+  /** @description Response */
   var `200`: ContentApplicationjsonErrorsArray
-  
-  /** Resource not found */
-  var `404`: Any
 }
 object `200ContentApplicationjsonErrorsArray` {
   
-  inline def apply(`200`: ContentApplicationjsonErrorsArray, `404`: Any): `200ContentApplicationjsonErrorsArray` = {
+  inline def apply(`200`: ContentApplicationjsonErrorsArray): `200ContentApplicationjsonErrorsArray` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
-    __obj.updateDynamic("404")(`404`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`200ContentApplicationjsonErrorsArray`]
   }
   
@@ -25,7 +21,5 @@ object `200ContentApplicationjsonErrorsArray` {
   implicit open class MutableBuilder[Self <: `200ContentApplicationjsonErrorsArray`] (val x: Self) extends AnyVal {
     
     inline def set200(value: ContentApplicationjsonErrorsArray): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
-    
-    inline def set404(value: Any): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WriteRecordsRequest extends StObject {
   
   /**
-    * A record containing the common measure, dimension, time, and version attributes shared across all the records in the request. The measure and dimension attributes specified will be merged with the measure and dimension attributes in the records object when the data is written into Timestream. Dimensions may not overlap, or a ValidationException will be thrown. In other words, a record must contain dimensions with unique names. 
+    * A record that contains the common measure, dimension, time, and version attributes shared across all the records in the request. The measure and dimension attributes specified will be merged with the measure and dimension attributes in the records object when the data is written into Timestream. Dimensions may not overlap, or a ValidationException will be thrown. In other words, a record must contain dimensions with unique names. 
     */
   var CommonAttributes: js.UndefOr[Record] = js.undefined
   
@@ -17,7 +17,7 @@ trait WriteRecordsRequest extends StObject {
   var DatabaseName: ResourceName
   
   /**
-    * An array of records containing the unique measure, dimension, time, and version attributes for each time series data point. 
+    * An array of records that contain the unique measure, dimension, time, and version attributes for each time-series data point. 
     */
   var Records: typings.awsSdk.clientsTimestreamwriteMod.Records
   

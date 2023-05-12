@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StartSpeakerEnrollmentJobRequest extends StObject {
   
   /**
-    * The idempotency token for starting a new speaker enrollment Job. If not provided, Amazon Web Services SDK populates this field.
+    * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request. If not provided, the Amazon Web Services SDK populates this field. For more information about idempotency, see Making retries safe with idempotent APIs.
     */
   var ClientToken: js.UndefOr[ClientTokenString] = js.undefined
   

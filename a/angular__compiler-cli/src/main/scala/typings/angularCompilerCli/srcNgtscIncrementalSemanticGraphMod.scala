@@ -1,9 +1,9 @@
 package typings.angularCompilerCli
 
+import typings.angularCompilerCli.anon.ClassDeclarationDeclarati
+import typings.angularCompilerCli.anon.ClassDeclarationDeclaratiGetChildren
 import typings.angularCompilerCli.srcNgtscIncrementalSemanticGraphSrcApiMod.SemanticReference
 import typings.angularCompilerCli.srcNgtscIncrementalSemanticGraphSrcTypeParametersMod.SemanticTypeParameter
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
 import typings.std.ReadonlySet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -38,7 +38,7 @@ object srcNgtscIncrementalSemanticGraphMod {
     def this(/**
       * The declaration for this symbol.
       */
-    decl: ClassDeclaration[DeclarationNode]) = this()
+    decl: ClassDeclarationDeclaratiGetChildren) = this()
   }
   
   inline def areTypeParametersEqual(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("areTypeParametersEqual")().asInstanceOf[Boolean]
@@ -46,7 +46,7 @@ object srcNgtscIncrementalSemanticGraphMod {
   inline def areTypeParametersEqual(current: js.Array[SemanticTypeParameter], previous: js.Array[SemanticTypeParameter]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areTypeParametersEqual")(current.asInstanceOf[js.Any], previous.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def areTypeParametersEqual(current: Null, previous: js.Array[SemanticTypeParameter]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areTypeParametersEqual")(current.asInstanceOf[js.Any], previous.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def extractSemanticTypeParameters(node: ClassDeclaration[DeclarationNode]): js.Array[SemanticTypeParameter] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("extractSemanticTypeParameters")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[SemanticTypeParameter] | Null]
+  inline def extractSemanticTypeParameters(node: ClassDeclarationDeclarati): js.Array[SemanticTypeParameter] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("extractSemanticTypeParameters")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[SemanticTypeParameter] | Null]
   
   inline def isArrayEqual[T](): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArrayEqual")().asInstanceOf[Boolean]
   inline def isArrayEqual[T](a: js.Array[T]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArrayEqual")(a.asInstanceOf[js.Any]).asInstanceOf[Boolean]

@@ -5,7 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ModeBarButton extends StObject {
+trait ModeBarButton
+  extends StObject
+     with ModeBarButtonAny {
   
   /**
     * attribute associated with button,

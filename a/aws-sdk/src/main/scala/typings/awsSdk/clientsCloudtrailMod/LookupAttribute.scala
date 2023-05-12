@@ -14,11 +14,11 @@ trait LookupAttribute extends StObject {
   /**
     * Specifies a value for the specified AttributeKey.
     */
-  var AttributeValue: String
+  var AttributeValue: LookupAttributeValue
 }
 object LookupAttribute {
   
-  inline def apply(AttributeKey: LookupAttributeKey, AttributeValue: String): LookupAttribute = {
+  inline def apply(AttributeKey: LookupAttributeKey, AttributeValue: LookupAttributeValue): LookupAttribute = {
     val __obj = js.Dynamic.literal(AttributeKey = AttributeKey.asInstanceOf[js.Any], AttributeValue = AttributeValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[LookupAttribute]
   }
@@ -28,6 +28,6 @@ object LookupAttribute {
     
     inline def setAttributeKey(value: LookupAttributeKey): Self = StObject.set(x, "AttributeKey", value.asInstanceOf[js.Any])
     
-    inline def setAttributeValue(value: String): Self = StObject.set(x, "AttributeValue", value.asInstanceOf[js.Any])
+    inline def setAttributeValue(value: LookupAttributeValue): Self = StObject.set(x, "AttributeValue", value.asInstanceOf[js.Any])
   }
 }

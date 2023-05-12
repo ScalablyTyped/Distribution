@@ -23,6 +23,7 @@ import typings.std.Intl.RelativeTimeFormatPart
 import typings.std.Intl.RelativeTimeFormatUnit
 import typings.std.Intl.ResolvedCollatorOptions
 import typings.std.Intl.ResolvedDisplayNamesOptions
+import typings.std.Intl.ResolvedListFormatOptions
 import typings.std.Intl.ResolvedPluralRulesOptions
 import typings.std.Intl.ResolvedRelativeTimeFormatOptions
 import typings.std.Intl.ResolvedSegmenterOptions
@@ -289,6 +290,17 @@ object Intl {
     /* standard es2021.intl */
     /* CompleteClass */
     override def formatToParts(list: js.Iterable[java.lang.String]): js.Array[TypeValue] = js.native
+    
+    /**
+      * Returns a new object with properties reflecting the locale and style
+      * formatting options computed during the construction of the current
+      * `Intl.ListFormat` object.
+      *
+      * [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/ListFormat/resolvedOptions).
+      */
+    /* standard es2021.intl */
+    /* CompleteClass */
+    override def resolvedOptions(): ResolvedListFormatOptions = js.native
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */

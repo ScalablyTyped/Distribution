@@ -117,7 +117,9 @@ import typings.csstype.mod.Property.BreakAfter
 import typings.csstype.mod.Property.BreakBefore
 import typings.csstype.mod.Property.BreakInside
 import typings.csstype.mod.Property.CaptionSide
+import typings.csstype.mod.Property.Caret
 import typings.csstype.mod.Property.CaretColor
+import typings.csstype.mod.Property.CaretShape
 import typings.csstype.mod.Property.Clear
 import typings.csstype.mod.Property.Clip
 import typings.csstype.mod.Property.ClipPath
@@ -137,6 +139,14 @@ import typings.csstype.mod.Property.ColumnSpan
 import typings.csstype.mod.Property.ColumnWidth
 import typings.csstype.mod.Property.Columns
 import typings.csstype.mod.Property.Contain
+import typings.csstype.mod.Property.ContainIntrinsicBlockSize
+import typings.csstype.mod.Property.ContainIntrinsicHeight
+import typings.csstype.mod.Property.ContainIntrinsicInlineSize
+import typings.csstype.mod.Property.ContainIntrinsicSize
+import typings.csstype.mod.Property.ContainIntrinsicWidth
+import typings.csstype.mod.Property.Container
+import typings.csstype.mod.Property.ContainerName
+import typings.csstype.mod.Property.ContainerType
 import typings.csstype.mod.Property.Content
 import typings.csstype.mod.Property.ContentVisibility
 import typings.csstype.mod.Property.CounterIncrement
@@ -167,6 +177,7 @@ import typings.csstype.mod.Property.FontFeatureSettings
 import typings.csstype.mod.Property.FontKerning
 import typings.csstype.mod.Property.FontLanguageOverride
 import typings.csstype.mod.Property.FontOpticalSizing
+import typings.csstype.mod.Property.FontPalette
 import typings.csstype.mod.Property.FontSize
 import typings.csstype.mod.Property.FontSizeAdjust
 import typings.csstype.mod.Property.FontSmooth
@@ -177,6 +188,7 @@ import typings.csstype.mod.Property.FontVariant
 import typings.csstype.mod.Property.FontVariantAlternates
 import typings.csstype.mod.Property.FontVariantCaps
 import typings.csstype.mod.Property.FontVariantEastAsian
+import typings.csstype.mod.Property.FontVariantEmoji
 import typings.csstype.mod.Property.FontVariantLigatures
 import typings.csstype.mod.Property.FontVariantNumeric
 import typings.csstype.mod.Property.FontVariantPosition
@@ -206,6 +218,7 @@ import typings.csstype.mod.Property.GridTemplateRows
 import typings.csstype.mod.Property.HangingPunctuation
 import typings.csstype.mod.Property.Height
 import typings.csstype.mod.Property.HyphenateCharacter
+import typings.csstype.mod.Property.HyphenateLimitChars
 import typings.csstype.mod.Property.Hyphens
 import typings.csstype.mod.Property.ImageOrientation
 import typings.csstype.mod.Property.ImageRendering
@@ -248,6 +261,7 @@ import typings.csstype.mod.Property.MarginInlineStart
 import typings.csstype.mod.Property.MarginLeft
 import typings.csstype.mod.Property.MarginRight
 import typings.csstype.mod.Property.MarginTop
+import typings.csstype.mod.Property.MarginTrim
 import typings.csstype.mod.Property.Marker
 import typings.csstype.mod.Property.MarkerEnd
 import typings.csstype.mod.Property.MarkerMid
@@ -359,6 +373,7 @@ import typings.csstype.mod.Property.Offset
 import typings.csstype.mod.Property.OffsetAnchor
 import typings.csstype.mod.Property.OffsetDistance
 import typings.csstype.mod.Property.OffsetPath
+import typings.csstype.mod.Property.OffsetPosition
 import typings.csstype.mod.Property.OffsetRotate
 import typings.csstype.mod.Property.Opacity
 import typings.csstype.mod.Property.Order
@@ -393,6 +408,7 @@ import typings.csstype.mod.Property.PaddingInlineStart
 import typings.csstype.mod.Property.PaddingLeft
 import typings.csstype.mod.Property.PaddingRight
 import typings.csstype.mod.Property.PaddingTop
+import typings.csstype.mod.Property.Page
 import typings.csstype.mod.Property.PageBreakAfter
 import typings.csstype.mod.Property.PageBreakBefore
 import typings.csstype.mod.Property.PageBreakInside
@@ -446,6 +462,9 @@ import typings.csstype.mod.Property.ScrollSnapStop
 import typings.csstype.mod.Property.ScrollSnapType
 import typings.csstype.mod.Property.ScrollSnapTypeX
 import typings.csstype.mod.Property.ScrollSnapTypeY
+import typings.csstype.mod.Property.ScrollTimeline
+import typings.csstype.mod.Property.ScrollTimelineAxis
+import typings.csstype.mod.Property.ScrollTimelineName
 import typings.csstype.mod.Property.ScrollbarColor
 import typings.csstype.mod.Property.ScrollbarGutter
 import typings.csstype.mod.Property.ScrollbarWidth
@@ -506,6 +525,7 @@ import typings.csstype.mod.Property.UnicodeBidi
 import typings.csstype.mod.Property.UserSelect
 import typings.csstype.mod.Property.VectorEffect
 import typings.csstype.mod.Property.VerticalAlign
+import typings.csstype.mod.Property.ViewTransitionName
 import typings.csstype.mod.Property.Visibility
 import typings.csstype.mod.Property.WebkitAppearance
 import typings.csstype.mod.Property.WebkitBorderBefore
@@ -4127,9 +4147,21 @@ object mod {
         ])
       ] = js.undefined
     
+    var caret: js.UndefOr[
+        Caret | (js.Array[
+          (Extract[js.UndefOr[Caret | js.Array[NonNullable[js.UndefOr[Caret]]]], String]) | NonNullable[js.UndefOr[Caret]]
+        ])
+      ] = js.undefined
+    
     var caretColor: js.UndefOr[
         CaretColor | (js.Array[
           (Extract[js.UndefOr[CaretColor | js.Array[NonNullable[js.UndefOr[CaretColor]]]], String]) | NonNullable[js.UndefOr[CaretColor]]
+        ])
+      ] = js.undefined
+    
+    var caretShape: js.UndefOr[
+        CaretShape | (js.Array[
+          (Extract[js.UndefOr[CaretShape | js.Array[NonNullable[js.UndefOr[CaretShape]]]], String]) | NonNullable[js.UndefOr[CaretShape]]
         ])
       ] = js.undefined
     
@@ -4290,6 +4322,85 @@ object mod {
     var contain: js.UndefOr[
         Contain | (js.Array[
           (Extract[js.UndefOr[Contain | js.Array[NonNullable[js.UndefOr[Contain]]]], String]) | NonNullable[js.UndefOr[Contain]]
+        ])
+      ] = js.undefined
+    
+    var containIntrinsicBlockSize: js.UndefOr[
+        (ContainIntrinsicBlockSize[Double | String]) | (js.Array[
+          (Extract[
+            js.UndefOr[
+              (ContainIntrinsicBlockSize[Double | String]) | (js.Array[NonNullable[js.UndefOr[ContainIntrinsicBlockSize[Double | String]]]])
+            ], 
+            String
+          ]) | (NonNullable[js.UndefOr[ContainIntrinsicBlockSize[Double | String]]])
+        ])
+      ] = js.undefined
+    
+    var containIntrinsicHeight: js.UndefOr[
+        (ContainIntrinsicHeight[Double | String]) | (js.Array[
+          (Extract[
+            js.UndefOr[
+              (ContainIntrinsicHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[ContainIntrinsicHeight[Double | String]]]])
+            ], 
+            String
+          ]) | (NonNullable[js.UndefOr[ContainIntrinsicHeight[Double | String]]])
+        ])
+      ] = js.undefined
+    
+    var containIntrinsicInlineSize: js.UndefOr[
+        (ContainIntrinsicInlineSize[Double | String]) | (js.Array[
+          (Extract[
+            js.UndefOr[
+              (ContainIntrinsicInlineSize[Double | String]) | (js.Array[NonNullable[js.UndefOr[ContainIntrinsicInlineSize[Double | String]]]])
+            ], 
+            String
+          ]) | (NonNullable[js.UndefOr[ContainIntrinsicInlineSize[Double | String]]])
+        ])
+      ] = js.undefined
+    
+    var containIntrinsicSize: js.UndefOr[
+        (ContainIntrinsicSize[Double | String]) | (js.Array[
+          (Extract[
+            js.UndefOr[
+              (ContainIntrinsicSize[Double | String]) | (js.Array[NonNullable[js.UndefOr[ContainIntrinsicSize[Double | String]]]])
+            ], 
+            String
+          ]) | (NonNullable[js.UndefOr[ContainIntrinsicSize[Double | String]]])
+        ])
+      ] = js.undefined
+    
+    var containIntrinsicWidth: js.UndefOr[
+        (ContainIntrinsicWidth[Double | String]) | (js.Array[
+          (Extract[
+            js.UndefOr[
+              (ContainIntrinsicWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[ContainIntrinsicWidth[Double | String]]]])
+            ], 
+            String
+          ]) | (NonNullable[js.UndefOr[ContainIntrinsicWidth[Double | String]]])
+        ])
+      ] = js.undefined
+    
+    var container: js.UndefOr[
+        Container | (js.Array[
+          (Extract[js.UndefOr[Container | js.Array[NonNullable[js.UndefOr[Container]]]], String]) | NonNullable[js.UndefOr[Container]]
+        ])
+      ] = js.undefined
+    
+    var containerName: js.UndefOr[
+        ContainerName | (js.Array[
+          (Extract[
+            js.UndefOr[ContainerName | js.Array[NonNullable[js.UndefOr[ContainerName]]]], 
+            String
+          ]) | NonNullable[js.UndefOr[ContainerName]]
+        ])
+      ] = js.undefined
+    
+    var containerType: js.UndefOr[
+        ContainerType | (js.Array[
+          (Extract[
+            js.UndefOr[ContainerType | js.Array[NonNullable[js.UndefOr[ContainerType]]]], 
+            String
+          ]) | NonNullable[js.UndefOr[ContainerType]]
         ])
       ] = js.undefined
     
@@ -4504,6 +4615,12 @@ object mod {
         ])
       ] = js.undefined
     
+    var fontPalette: js.UndefOr[
+        FontPalette | (js.Array[
+          (Extract[js.UndefOr[FontPalette | js.Array[NonNullable[js.UndefOr[FontPalette]]]], String]) | NonNullable[js.UndefOr[FontPalette]]
+        ])
+      ] = js.undefined
+    
     var fontSize: js.UndefOr[
         (FontSize[Double | String]) | (js.Array[
           (Extract[
@@ -4586,6 +4703,15 @@ object mod {
             js.UndefOr[FontVariantEastAsian | js.Array[NonNullable[js.UndefOr[FontVariantEastAsian]]]], 
             String
           ]) | NonNullable[js.UndefOr[FontVariantEastAsian]]
+        ])
+      ] = js.undefined
+    
+    var fontVariantEmoji: js.UndefOr[
+        FontVariantEmoji | (js.Array[
+          (Extract[
+            js.UndefOr[FontVariantEmoji | js.Array[NonNullable[js.UndefOr[FontVariantEmoji]]]], 
+            String
+          ]) | NonNullable[js.UndefOr[FontVariantEmoji]]
         ])
       ] = js.undefined
     
@@ -4840,6 +4966,15 @@ object mod {
             js.UndefOr[HyphenateCharacter | js.Array[NonNullable[js.UndefOr[HyphenateCharacter]]]], 
             String
           ]) | NonNullable[js.UndefOr[HyphenateCharacter]]
+        ])
+      ] = js.undefined
+    
+    var hyphenateLimitChars: js.UndefOr[
+        HyphenateLimitChars | (js.Array[
+          (Extract[
+            js.UndefOr[HyphenateLimitChars | js.Array[NonNullable[js.UndefOr[HyphenateLimitChars]]]], 
+            String
+          ]) | NonNullable[js.UndefOr[HyphenateLimitChars]]
         ])
       ] = js.undefined
     
@@ -5240,6 +5375,12 @@ object mod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[MarginTop[Double | String]]])
+        ])
+      ] = js.undefined
+    
+    var marginTrim: js.UndefOr[
+        MarginTrim | (js.Array[
+          (Extract[js.UndefOr[MarginTrim | js.Array[NonNullable[js.UndefOr[MarginTrim]]]], String]) | NonNullable[js.UndefOr[MarginTrim]]
         ])
       ] = js.undefined
     
@@ -6286,6 +6427,17 @@ object mod {
         ])
       ] = js.undefined
     
+    var offsetPosition: js.UndefOr[
+        (OffsetPosition[Double | String]) | (js.Array[
+          (Extract[
+            js.UndefOr[
+              (OffsetPosition[Double | String]) | (js.Array[NonNullable[js.UndefOr[OffsetPosition[Double | String]]]])
+            ], 
+            String
+          ]) | (NonNullable[js.UndefOr[OffsetPosition[Double | String]]])
+        ])
+      ] = js.undefined
+    
     var offsetRotate: js.UndefOr[
         OffsetRotate | (js.Array[
           (Extract[js.UndefOr[OffsetRotate | js.Array[NonNullable[js.UndefOr[OffsetRotate]]]], String]) | NonNullable[js.UndefOr[OffsetRotate]]
@@ -6599,6 +6751,12 @@ object mod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[PaddingTop[Double | String]]])
+        ])
+      ] = js.undefined
+    
+    var page: js.UndefOr[
+        Page | (js.Array[
+          (Extract[js.UndefOr[Page | js.Array[NonNullable[js.UndefOr[Page]]]], String]) | NonNullable[js.UndefOr[Page]]
         ])
       ] = js.undefined
     
@@ -7154,6 +7312,33 @@ object mod {
         ])
       ] = js.undefined
     
+    var scrollTimeline: js.UndefOr[
+        ScrollTimeline | (js.Array[
+          (Extract[
+            js.UndefOr[ScrollTimeline | js.Array[NonNullable[js.UndefOr[ScrollTimeline]]]], 
+            String
+          ]) | NonNullable[js.UndefOr[ScrollTimeline]]
+        ])
+      ] = js.undefined
+    
+    var scrollTimelineAxis: js.UndefOr[
+        ScrollTimelineAxis | (js.Array[
+          (Extract[
+            js.UndefOr[ScrollTimelineAxis | js.Array[NonNullable[js.UndefOr[ScrollTimelineAxis]]]], 
+            String
+          ]) | NonNullable[js.UndefOr[ScrollTimelineAxis]]
+        ])
+      ] = js.undefined
+    
+    var scrollTimelineName: js.UndefOr[
+        ScrollTimelineName | (js.Array[
+          (Extract[
+            js.UndefOr[ScrollTimelineName | js.Array[NonNullable[js.UndefOr[ScrollTimelineName]]]], 
+            String
+          ]) | NonNullable[js.UndefOr[ScrollTimelineName]]
+        ])
+      ] = js.undefined
+    
     var scrollbarColor: js.UndefOr[
         ScrollbarColor | (js.Array[
           (Extract[
@@ -7672,6 +7857,15 @@ object mod {
             ], 
             String
           ]) | (NonNullable[js.UndefOr[VerticalAlign[Double | String]]])
+        ])
+      ] = js.undefined
+    
+    var viewTransitionName: js.UndefOr[
+        ViewTransitionName | (js.Array[
+          (Extract[
+            js.UndefOr[ViewTransitionName | js.Array[NonNullable[js.UndefOr[ViewTransitionName]]]], 
+            String
+          ]) | NonNullable[js.UndefOr[ViewTransitionName]]
         ])
       ] = js.undefined
     
@@ -9873,6 +10067,12 @@ object mod {
         value: ((Extract[js.UndefOr[CaptionSide | js.Array[NonNullable[js.UndefOr[CaptionSide]]]], String]) | NonNullable[js.UndefOr[CaptionSide]])*
       ): Self = StObject.set(x, "captionSide", js.Array(value*))
       
+      inline def setCaret(
+        value: Caret | (js.Array[
+              (Extract[js.UndefOr[Caret | js.Array[NonNullable[js.UndefOr[Caret]]]], String]) | NonNullable[js.UndefOr[Caret]]
+            ])
+      ): Self = StObject.set(x, "caret", value.asInstanceOf[js.Any])
+      
       inline def setCaretColor(
         value: CaretColor | (js.Array[
               (Extract[js.UndefOr[CaretColor | js.Array[NonNullable[js.UndefOr[CaretColor]]]], String]) | NonNullable[js.UndefOr[CaretColor]]
@@ -9884,6 +10084,24 @@ object mod {
       inline def setCaretColorVarargs(
         value: ((Extract[js.UndefOr[CaretColor | js.Array[NonNullable[js.UndefOr[CaretColor]]]], String]) | NonNullable[js.UndefOr[CaretColor]])*
       ): Self = StObject.set(x, "caretColor", js.Array(value*))
+      
+      inline def setCaretShape(
+        value: CaretShape | (js.Array[
+              (Extract[js.UndefOr[CaretShape | js.Array[NonNullable[js.UndefOr[CaretShape]]]], String]) | NonNullable[js.UndefOr[CaretShape]]
+            ])
+      ): Self = StObject.set(x, "caretShape", value.asInstanceOf[js.Any])
+      
+      inline def setCaretShapeUndefined: Self = StObject.set(x, "caretShape", js.undefined)
+      
+      inline def setCaretShapeVarargs(
+        value: ((Extract[js.UndefOr[CaretShape | js.Array[NonNullable[js.UndefOr[CaretShape]]]], String]) | NonNullable[js.UndefOr[CaretShape]])*
+      ): Self = StObject.set(x, "caretShape", js.Array(value*))
+      
+      inline def setCaretUndefined: Self = StObject.set(x, "caret", js.undefined)
+      
+      inline def setCaretVarargs(
+        value: ((Extract[js.UndefOr[Caret | js.Array[NonNullable[js.UndefOr[Caret]]]], String]) | NonNullable[js.UndefOr[Caret]])*
+      ): Self = StObject.set(x, "caret", js.Array(value*))
       
       inline def setClear(
         value: Clear | (js.Array[
@@ -10199,11 +10417,169 @@ object mod {
             ])
       ): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
       
+      inline def setContainIntrinsicBlockSize(
+        value: (ContainIntrinsicBlockSize[Double | String]) | (js.Array[
+              (Extract[
+                js.UndefOr[
+                  (ContainIntrinsicBlockSize[Double | String]) | (js.Array[NonNullable[js.UndefOr[ContainIntrinsicBlockSize[Double | String]]]])
+                ], 
+                String
+              ]) | (NonNullable[js.UndefOr[ContainIntrinsicBlockSize[Double | String]]])
+            ])
+      ): Self = StObject.set(x, "containIntrinsicBlockSize", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicBlockSizeUndefined: Self = StObject.set(x, "containIntrinsicBlockSize", js.undefined)
+      
+      inline def setContainIntrinsicBlockSizeVarargs(
+        value: ((Extract[
+              js.UndefOr[
+                (ContainIntrinsicBlockSize[Double | String]) | (js.Array[NonNullable[js.UndefOr[ContainIntrinsicBlockSize[Double | String]]]])
+              ], 
+              String
+            ]) | (NonNullable[js.UndefOr[ContainIntrinsicBlockSize[Double | String]]]))*
+      ): Self = StObject.set(x, "containIntrinsicBlockSize", js.Array(value*))
+      
+      inline def setContainIntrinsicHeight(
+        value: (ContainIntrinsicHeight[Double | String]) | (js.Array[
+              (Extract[
+                js.UndefOr[
+                  (ContainIntrinsicHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[ContainIntrinsicHeight[Double | String]]]])
+                ], 
+                String
+              ]) | (NonNullable[js.UndefOr[ContainIntrinsicHeight[Double | String]]])
+            ])
+      ): Self = StObject.set(x, "containIntrinsicHeight", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicHeightUndefined: Self = StObject.set(x, "containIntrinsicHeight", js.undefined)
+      
+      inline def setContainIntrinsicHeightVarargs(
+        value: ((Extract[
+              js.UndefOr[
+                (ContainIntrinsicHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[ContainIntrinsicHeight[Double | String]]]])
+              ], 
+              String
+            ]) | (NonNullable[js.UndefOr[ContainIntrinsicHeight[Double | String]]]))*
+      ): Self = StObject.set(x, "containIntrinsicHeight", js.Array(value*))
+      
+      inline def setContainIntrinsicInlineSize(
+        value: (ContainIntrinsicInlineSize[Double | String]) | (js.Array[
+              (Extract[
+                js.UndefOr[
+                  (ContainIntrinsicInlineSize[Double | String]) | (js.Array[NonNullable[js.UndefOr[ContainIntrinsicInlineSize[Double | String]]]])
+                ], 
+                String
+              ]) | (NonNullable[js.UndefOr[ContainIntrinsicInlineSize[Double | String]]])
+            ])
+      ): Self = StObject.set(x, "containIntrinsicInlineSize", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicInlineSizeUndefined: Self = StObject.set(x, "containIntrinsicInlineSize", js.undefined)
+      
+      inline def setContainIntrinsicInlineSizeVarargs(
+        value: ((Extract[
+              js.UndefOr[
+                (ContainIntrinsicInlineSize[Double | String]) | (js.Array[NonNullable[js.UndefOr[ContainIntrinsicInlineSize[Double | String]]]])
+              ], 
+              String
+            ]) | (NonNullable[js.UndefOr[ContainIntrinsicInlineSize[Double | String]]]))*
+      ): Self = StObject.set(x, "containIntrinsicInlineSize", js.Array(value*))
+      
+      inline def setContainIntrinsicSize(
+        value: (ContainIntrinsicSize[Double | String]) | (js.Array[
+              (Extract[
+                js.UndefOr[
+                  (ContainIntrinsicSize[Double | String]) | (js.Array[NonNullable[js.UndefOr[ContainIntrinsicSize[Double | String]]]])
+                ], 
+                String
+              ]) | (NonNullable[js.UndefOr[ContainIntrinsicSize[Double | String]]])
+            ])
+      ): Self = StObject.set(x, "containIntrinsicSize", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicSizeUndefined: Self = StObject.set(x, "containIntrinsicSize", js.undefined)
+      
+      inline def setContainIntrinsicSizeVarargs(
+        value: ((Extract[
+              js.UndefOr[
+                (ContainIntrinsicSize[Double | String]) | (js.Array[NonNullable[js.UndefOr[ContainIntrinsicSize[Double | String]]]])
+              ], 
+              String
+            ]) | (NonNullable[js.UndefOr[ContainIntrinsicSize[Double | String]]]))*
+      ): Self = StObject.set(x, "containIntrinsicSize", js.Array(value*))
+      
+      inline def setContainIntrinsicWidth(
+        value: (ContainIntrinsicWidth[Double | String]) | (js.Array[
+              (Extract[
+                js.UndefOr[
+                  (ContainIntrinsicWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[ContainIntrinsicWidth[Double | String]]]])
+                ], 
+                String
+              ]) | (NonNullable[js.UndefOr[ContainIntrinsicWidth[Double | String]]])
+            ])
+      ): Self = StObject.set(x, "containIntrinsicWidth", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicWidthUndefined: Self = StObject.set(x, "containIntrinsicWidth", js.undefined)
+      
+      inline def setContainIntrinsicWidthVarargs(
+        value: ((Extract[
+              js.UndefOr[
+                (ContainIntrinsicWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[ContainIntrinsicWidth[Double | String]]]])
+              ], 
+              String
+            ]) | (NonNullable[js.UndefOr[ContainIntrinsicWidth[Double | String]]]))*
+      ): Self = StObject.set(x, "containIntrinsicWidth", js.Array(value*))
+      
       inline def setContainUndefined: Self = StObject.set(x, "contain", js.undefined)
       
       inline def setContainVarargs(
         value: ((Extract[js.UndefOr[Contain | js.Array[NonNullable[js.UndefOr[Contain]]]], String]) | NonNullable[js.UndefOr[Contain]])*
       ): Self = StObject.set(x, "contain", js.Array(value*))
+      
+      inline def setContainer(
+        value: Container | (js.Array[
+              (Extract[js.UndefOr[Container | js.Array[NonNullable[js.UndefOr[Container]]]], String]) | NonNullable[js.UndefOr[Container]]
+            ])
+      ): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      
+      inline def setContainerName(
+        value: ContainerName | (js.Array[
+              (Extract[
+                js.UndefOr[ContainerName | js.Array[NonNullable[js.UndefOr[ContainerName]]]], 
+                String
+              ]) | NonNullable[js.UndefOr[ContainerName]]
+            ])
+      ): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+      
+      inline def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
+      
+      inline def setContainerNameVarargs(
+        value: ((Extract[
+              js.UndefOr[ContainerName | js.Array[NonNullable[js.UndefOr[ContainerName]]]], 
+              String
+            ]) | NonNullable[js.UndefOr[ContainerName]])*
+      ): Self = StObject.set(x, "containerName", js.Array(value*))
+      
+      inline def setContainerType(
+        value: ContainerType | (js.Array[
+              (Extract[
+                js.UndefOr[ContainerType | js.Array[NonNullable[js.UndefOr[ContainerType]]]], 
+                String
+              ]) | NonNullable[js.UndefOr[ContainerType]]
+            ])
+      ): Self = StObject.set(x, "containerType", value.asInstanceOf[js.Any])
+      
+      inline def setContainerTypeUndefined: Self = StObject.set(x, "containerType", js.undefined)
+      
+      inline def setContainerTypeVarargs(
+        value: ((Extract[
+              js.UndefOr[ContainerType | js.Array[NonNullable[js.UndefOr[ContainerType]]]], 
+              String
+            ]) | NonNullable[js.UndefOr[ContainerType]])*
+      ): Self = StObject.set(x, "containerType", js.Array(value*))
+      
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      
+      inline def setContainerVarargs(
+        value: ((Extract[js.UndefOr[Container | js.Array[NonNullable[js.UndefOr[Container]]]], String]) | NonNullable[js.UndefOr[Container]])*
+      ): Self = StObject.set(x, "container", js.Array(value*))
       
       inline def setContent(
         value: Content | (js.Array[
@@ -10621,6 +10997,18 @@ object mod {
             ]) | NonNullable[js.UndefOr[FontOpticalSizing]])*
       ): Self = StObject.set(x, "fontOpticalSizing", js.Array(value*))
       
+      inline def setFontPalette(
+        value: FontPalette | (js.Array[
+              (Extract[js.UndefOr[FontPalette | js.Array[NonNullable[js.UndefOr[FontPalette]]]], String]) | NonNullable[js.UndefOr[FontPalette]]
+            ])
+      ): Self = StObject.set(x, "fontPalette", value.asInstanceOf[js.Any])
+      
+      inline def setFontPaletteUndefined: Self = StObject.set(x, "fontPalette", js.undefined)
+      
+      inline def setFontPaletteVarargs(
+        value: ((Extract[js.UndefOr[FontPalette | js.Array[NonNullable[js.UndefOr[FontPalette]]]], String]) | NonNullable[js.UndefOr[FontPalette]])*
+      ): Self = StObject.set(x, "fontPalette", js.Array(value*))
+      
       inline def setFontSize(
         value: (FontSize[Double | String]) | (js.Array[
               (Extract[
@@ -10790,6 +11178,24 @@ object mod {
               String
             ]) | NonNullable[js.UndefOr[FontVariantEastAsian]])*
       ): Self = StObject.set(x, "fontVariantEastAsian", js.Array(value*))
+      
+      inline def setFontVariantEmoji(
+        value: FontVariantEmoji | (js.Array[
+              (Extract[
+                js.UndefOr[FontVariantEmoji | js.Array[NonNullable[js.UndefOr[FontVariantEmoji]]]], 
+                String
+              ]) | NonNullable[js.UndefOr[FontVariantEmoji]]
+            ])
+      ): Self = StObject.set(x, "fontVariantEmoji", value.asInstanceOf[js.Any])
+      
+      inline def setFontVariantEmojiUndefined: Self = StObject.set(x, "fontVariantEmoji", js.undefined)
+      
+      inline def setFontVariantEmojiVarargs(
+        value: ((Extract[
+              js.UndefOr[FontVariantEmoji | js.Array[NonNullable[js.UndefOr[FontVariantEmoji]]]], 
+              String
+            ]) | NonNullable[js.UndefOr[FontVariantEmoji]])*
+      ): Self = StObject.set(x, "fontVariantEmoji", js.Array(value*))
       
       inline def setFontVariantLigatures(
         value: FontVariantLigatures | (js.Array[
@@ -11304,6 +11710,24 @@ object mod {
               String
             ]) | NonNullable[js.UndefOr[HyphenateCharacter]])*
       ): Self = StObject.set(x, "hyphenateCharacter", js.Array(value*))
+      
+      inline def setHyphenateLimitChars(
+        value: HyphenateLimitChars | (js.Array[
+              (Extract[
+                js.UndefOr[HyphenateLimitChars | js.Array[NonNullable[js.UndefOr[HyphenateLimitChars]]]], 
+                String
+              ]) | NonNullable[js.UndefOr[HyphenateLimitChars]]
+            ])
+      ): Self = StObject.set(x, "hyphenateLimitChars", value.asInstanceOf[js.Any])
+      
+      inline def setHyphenateLimitCharsUndefined: Self = StObject.set(x, "hyphenateLimitChars", js.undefined)
+      
+      inline def setHyphenateLimitCharsVarargs(
+        value: ((Extract[
+              js.UndefOr[HyphenateLimitChars | js.Array[NonNullable[js.UndefOr[HyphenateLimitChars]]]], 
+              String
+            ]) | NonNullable[js.UndefOr[HyphenateLimitChars]])*
+      ): Self = StObject.set(x, "hyphenateLimitChars", js.Array(value*))
       
       inline def setHyphens(
         value: Hyphens | (js.Array[
@@ -12231,6 +12655,18 @@ object mod {
               String
             ]) | (NonNullable[js.UndefOr[MarginTop[Double | String]]]))*
       ): Self = StObject.set(x, "marginTop", js.Array(value*))
+      
+      inline def setMarginTrim(
+        value: MarginTrim | (js.Array[
+              (Extract[js.UndefOr[MarginTrim | js.Array[NonNullable[js.UndefOr[MarginTrim]]]], String]) | NonNullable[js.UndefOr[MarginTrim]]
+            ])
+      ): Self = StObject.set(x, "marginTrim", value.asInstanceOf[js.Any])
+      
+      inline def setMarginTrimUndefined: Self = StObject.set(x, "marginTrim", js.undefined)
+      
+      inline def setMarginTrimVarargs(
+        value: ((Extract[js.UndefOr[MarginTrim | js.Array[NonNullable[js.UndefOr[MarginTrim]]]], String]) | NonNullable[js.UndefOr[MarginTrim]])*
+      ): Self = StObject.set(x, "marginTrim", js.Array(value*))
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
@@ -16430,6 +16866,28 @@ object mod {
         value: ((Extract[js.UndefOr[OffsetPath | js.Array[NonNullable[js.UndefOr[OffsetPath]]]], String]) | NonNullable[js.UndefOr[OffsetPath]])*
       ): Self = StObject.set(x, "offsetPath", js.Array(value*))
       
+      inline def setOffsetPosition(
+        value: (OffsetPosition[Double | String]) | (js.Array[
+              (Extract[
+                js.UndefOr[
+                  (OffsetPosition[Double | String]) | (js.Array[NonNullable[js.UndefOr[OffsetPosition[Double | String]]]])
+                ], 
+                String
+              ]) | (NonNullable[js.UndefOr[OffsetPosition[Double | String]]])
+            ])
+      ): Self = StObject.set(x, "offsetPosition", value.asInstanceOf[js.Any])
+      
+      inline def setOffsetPositionUndefined: Self = StObject.set(x, "offsetPosition", js.undefined)
+      
+      inline def setOffsetPositionVarargs(
+        value: ((Extract[
+              js.UndefOr[
+                (OffsetPosition[Double | String]) | (js.Array[NonNullable[js.UndefOr[OffsetPosition[Double | String]]]])
+              ], 
+              String
+            ]) | (NonNullable[js.UndefOr[OffsetPosition[Double | String]]]))*
+      ): Self = StObject.set(x, "offsetPosition", js.Array(value*))
+      
       inline def setOffsetRotate(
         value: OffsetRotate | (js.Array[
               (Extract[js.UndefOr[OffsetRotate | js.Array[NonNullable[js.UndefOr[OffsetRotate]]]], String]) | NonNullable[js.UndefOr[OffsetRotate]]
@@ -17073,6 +17531,12 @@ object mod {
             ]) | (NonNullable[js.UndefOr[Padding[Double | String]]]))*
       ): Self = StObject.set(x, "padding", js.Array(value*))
       
+      inline def setPage(
+        value: Page | (js.Array[
+              (Extract[js.UndefOr[Page | js.Array[NonNullable[js.UndefOr[Page]]]], String]) | NonNullable[js.UndefOr[Page]]
+            ])
+      ): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      
       inline def setPageBreakAfter(
         value: PageBreakAfter | (js.Array[
               (Extract[
@@ -17126,6 +17590,12 @@ object mod {
               String
             ]) | NonNullable[js.UndefOr[PageBreakInside]])*
       ): Self = StObject.set(x, "pageBreakInside", js.Array(value*))
+      
+      inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+      
+      inline def setPageVarargs(
+        value: ((Extract[js.UndefOr[Page | js.Array[NonNullable[js.UndefOr[Page]]]], String]) | NonNullable[js.UndefOr[Page]])*
+      ): Self = StObject.set(x, "page", js.Array(value*))
       
       inline def setPaintOrder(
         value: PaintOrder | (js.Array[
@@ -18177,6 +18647,60 @@ object mod {
             ]) | NonNullable[js.UndefOr[ScrollSnapTypeY]])*
       ): Self = StObject.set(x, "scrollSnapTypeY", js.Array(value*))
       
+      inline def setScrollTimeline(
+        value: ScrollTimeline | (js.Array[
+              (Extract[
+                js.UndefOr[ScrollTimeline | js.Array[NonNullable[js.UndefOr[ScrollTimeline]]]], 
+                String
+              ]) | NonNullable[js.UndefOr[ScrollTimeline]]
+            ])
+      ): Self = StObject.set(x, "scrollTimeline", value.asInstanceOf[js.Any])
+      
+      inline def setScrollTimelineAxis(
+        value: ScrollTimelineAxis | (js.Array[
+              (Extract[
+                js.UndefOr[ScrollTimelineAxis | js.Array[NonNullable[js.UndefOr[ScrollTimelineAxis]]]], 
+                String
+              ]) | NonNullable[js.UndefOr[ScrollTimelineAxis]]
+            ])
+      ): Self = StObject.set(x, "scrollTimelineAxis", value.asInstanceOf[js.Any])
+      
+      inline def setScrollTimelineAxisUndefined: Self = StObject.set(x, "scrollTimelineAxis", js.undefined)
+      
+      inline def setScrollTimelineAxisVarargs(
+        value: ((Extract[
+              js.UndefOr[ScrollTimelineAxis | js.Array[NonNullable[js.UndefOr[ScrollTimelineAxis]]]], 
+              String
+            ]) | NonNullable[js.UndefOr[ScrollTimelineAxis]])*
+      ): Self = StObject.set(x, "scrollTimelineAxis", js.Array(value*))
+      
+      inline def setScrollTimelineName(
+        value: ScrollTimelineName | (js.Array[
+              (Extract[
+                js.UndefOr[ScrollTimelineName | js.Array[NonNullable[js.UndefOr[ScrollTimelineName]]]], 
+                String
+              ]) | NonNullable[js.UndefOr[ScrollTimelineName]]
+            ])
+      ): Self = StObject.set(x, "scrollTimelineName", value.asInstanceOf[js.Any])
+      
+      inline def setScrollTimelineNameUndefined: Self = StObject.set(x, "scrollTimelineName", js.undefined)
+      
+      inline def setScrollTimelineNameVarargs(
+        value: ((Extract[
+              js.UndefOr[ScrollTimelineName | js.Array[NonNullable[js.UndefOr[ScrollTimelineName]]]], 
+              String
+            ]) | NonNullable[js.UndefOr[ScrollTimelineName]])*
+      ): Self = StObject.set(x, "scrollTimelineName", js.Array(value*))
+      
+      inline def setScrollTimelineUndefined: Self = StObject.set(x, "scrollTimeline", js.undefined)
+      
+      inline def setScrollTimelineVarargs(
+        value: ((Extract[
+              js.UndefOr[ScrollTimeline | js.Array[NonNullable[js.UndefOr[ScrollTimeline]]]], 
+              String
+            ]) | NonNullable[js.UndefOr[ScrollTimeline]])*
+      ): Self = StObject.set(x, "scrollTimeline", js.Array(value*))
+      
       inline def setScrollbarColor(
         value: ScrollbarColor | (js.Array[
               (Extract[
@@ -19218,6 +19742,24 @@ object mod {
               String
             ]) | (NonNullable[js.UndefOr[VerticalAlign[Double | String]]]))*
       ): Self = StObject.set(x, "verticalAlign", js.Array(value*))
+      
+      inline def setViewTransitionName(
+        value: ViewTransitionName | (js.Array[
+              (Extract[
+                js.UndefOr[ViewTransitionName | js.Array[NonNullable[js.UndefOr[ViewTransitionName]]]], 
+                String
+              ]) | NonNullable[js.UndefOr[ViewTransitionName]]
+            ])
+      ): Self = StObject.set(x, "viewTransitionName", value.asInstanceOf[js.Any])
+      
+      inline def setViewTransitionNameUndefined: Self = StObject.set(x, "viewTransitionName", js.undefined)
+      
+      inline def setViewTransitionNameVarargs(
+        value: ((Extract[
+              js.UndefOr[ViewTransitionName | js.Array[NonNullable[js.UndefOr[ViewTransitionName]]]], 
+              String
+            ]) | NonNullable[js.UndefOr[ViewTransitionName]])*
+      ): Self = StObject.set(x, "viewTransitionName", js.Array(value*))
       
       inline def setVisibility(
         value: Visibility | (js.Array[
@@ -21920,6 +22462,21 @@ object mod {
     @JSName("::target-text")
     var `ColonColontarget-text`: js.UndefOr[CSSObject] = js.undefined
     
+    @JSName("::view-transition")
+    var `ColonColonview-transition`: js.UndefOr[CSSObject] = js.undefined
+    
+    @JSName("::view-transition-group")
+    var `ColonColonview-transition-group`: js.UndefOr[CSSObject] = js.undefined
+    
+    @JSName("::view-transition-image-pair")
+    var `ColonColonview-transition-image-pair`: js.UndefOr[CSSObject] = js.undefined
+    
+    @JSName("::view-transition-new")
+    var `ColonColonview-transition-new`: js.UndefOr[CSSObject] = js.undefined
+    
+    @JSName("::view-transition-old")
+    var `ColonColonview-transition-old`: js.UndefOr[CSSObject] = js.undefined
+    
     @JSName(":active")
     var Colonactive: js.UndefOr[CSSObject] = js.undefined
     
@@ -22370,6 +22927,26 @@ object mod {
       inline def `setColonColontarget-text`(value: CSSObject): Self = StObject.set(x, "::target-text", value.asInstanceOf[js.Any])
       
       inline def `setColonColontarget-textUndefined`: Self = StObject.set(x, "::target-text", js.undefined)
+      
+      inline def `setColonColonview-transition`(value: CSSObject): Self = StObject.set(x, "::view-transition", value.asInstanceOf[js.Any])
+      
+      inline def `setColonColonview-transition-group`(value: CSSObject): Self = StObject.set(x, "::view-transition-group", value.asInstanceOf[js.Any])
+      
+      inline def `setColonColonview-transition-groupUndefined`: Self = StObject.set(x, "::view-transition-group", js.undefined)
+      
+      inline def `setColonColonview-transition-image-pair`(value: CSSObject): Self = StObject.set(x, "::view-transition-image-pair", value.asInstanceOf[js.Any])
+      
+      inline def `setColonColonview-transition-image-pairUndefined`: Self = StObject.set(x, "::view-transition-image-pair", js.undefined)
+      
+      inline def `setColonColonview-transition-new`(value: CSSObject): Self = StObject.set(x, "::view-transition-new", value.asInstanceOf[js.Any])
+      
+      inline def `setColonColonview-transition-newUndefined`: Self = StObject.set(x, "::view-transition-new", js.undefined)
+      
+      inline def `setColonColonview-transition-old`(value: CSSObject): Self = StObject.set(x, "::view-transition-old", value.asInstanceOf[js.Any])
+      
+      inline def `setColonColonview-transition-oldUndefined`: Self = StObject.set(x, "::view-transition-old", js.undefined)
+      
+      inline def `setColonColonview-transitionUndefined`: Self = StObject.set(x, "::view-transition", js.undefined)
       
       inline def setColonactive(value: CSSObject): Self = StObject.set(x, ":active", value.asInstanceOf[js.Any])
       

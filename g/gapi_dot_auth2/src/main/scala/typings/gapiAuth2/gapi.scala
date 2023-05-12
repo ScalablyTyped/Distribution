@@ -356,11 +356,11 @@ object gapi {
       /**
         * Listen for changes in currentUser.
         */
-      def listen(listener: js.Function1[/* user */ GoogleUser, Any]): Unit
+      def listen(listener: js.Function1[/* user */ GoogleUser, Any]): Listener
     }
     object CurrentUser {
       
-      inline def apply(get: () => GoogleUser, listen: js.Function1[/* user */ GoogleUser, Any] => Unit): CurrentUser = {
+      inline def apply(get: () => GoogleUser, listen: js.Function1[/* user */ GoogleUser, Any] => Listener): CurrentUser = {
         val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), listen = js.Any.fromFunction1(listen))
         __obj.asInstanceOf[CurrentUser]
       }
@@ -370,7 +370,7 @@ object gapi {
         
         inline def setGet(value: () => GoogleUser): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
         
-        inline def setListen(value: js.Function1[/* user */ GoogleUser, Any] => Unit): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
+        inline def setListen(value: js.Function1[/* user */ GoogleUser, Any] => Listener): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
       }
     }
     
@@ -515,11 +515,11 @@ object gapi {
       /**
         * Listen for changes in the current user's sign-in state.
         */
-      def listen(listener: js.Function1[/* signedIn */ Boolean, Any]): Unit
+      def listen(listener: js.Function1[/* signedIn */ Boolean, Any]): Listener
     }
     object IsSignedIn {
       
-      inline def apply(get: () => Boolean, listen: js.Function1[/* signedIn */ Boolean, Any] => Unit): IsSignedIn = {
+      inline def apply(get: () => Boolean, listen: js.Function1[/* signedIn */ Boolean, Any] => Listener): IsSignedIn = {
         val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), listen = js.Any.fromFunction1(listen))
         __obj.asInstanceOf[IsSignedIn]
       }
@@ -529,7 +529,43 @@ object gapi {
         
         inline def setGet(value: () => Boolean): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
         
-        inline def setListen(value: js.Function1[/* signedIn */ Boolean, Any] => Unit): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
+        inline def setListen(value: js.Function1[/* signedIn */ Boolean, Any] => Listener): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
+      }
+    }
+    
+    trait Listener extends StObject {
+      
+      /**
+        * Returns true if the listener is currently listening for changes.
+        * Returns false after remove() is called.
+        */
+      var isActive: Boolean
+      
+      /**
+        * Stops listening for changes.
+        */
+      def remove(): Unit
+      
+      /**
+        * Triggers the callback function.
+        */
+      def trigger(): Unit
+    }
+    object Listener {
+      
+      inline def apply(isActive: Boolean, remove: () => Unit, trigger: () => Unit): Listener = {
+        val __obj = js.Dynamic.literal(isActive = isActive.asInstanceOf[js.Any], remove = js.Any.fromFunction0(remove), trigger = js.Any.fromFunction0(trigger))
+        __obj.asInstanceOf[Listener]
+      }
+      
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Listener] (val x: Self) extends AnyVal {
+        
+        inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+        
+        inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+        
+        inline def setTrigger(value: () => Unit): Self = StObject.set(x, "trigger", js.Any.fromFunction0(value))
       }
     }
     

@@ -2,6 +2,7 @@ package typings.split2
 
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
+import typings.split2.anon.Split
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +25,7 @@ object mod {
   
   type Mapper = js.Function1[/* line */ String, Any]
   
-  type Matcher = String | js.RegExp
+  type Matcher = String | js.RegExp | Split
   
   trait Options
     extends StObject

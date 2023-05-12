@@ -17,6 +17,11 @@ trait ReplicationGroupPendingModifiedValues extends StObject {
   var AutomaticFailoverStatus: js.UndefOr[PendingAutomaticFailoverStatus] = js.undefined
   
   /**
+    * Enabled or Disabled. To modify cluster mode from Disabled to Enabled, you must first set the cluster mode to Compatible. Compatible mode allows your Redis clients to connect using both cluster mode enabled and cluster mode disabled. After you migrate all Redis clients to use cluster mode enabled, you can then complete cluster mode configuration and set the cluster mode to Enabled.
+    */
+  var ClusterMode: js.UndefOr[typings.awsSdk.clientsElasticacheMod.ClusterMode] = js.undefined
+  
+  /**
     * The log delivery configurations being modified 
     */
   var LogDeliveryConfigurations: js.UndefOr[PendingLogDeliveryConfigurationList] = js.undefined
@@ -30,6 +35,16 @@ trait ReplicationGroupPendingModifiedValues extends StObject {
     * The status of an online resharding operation.
     */
   var Resharding: js.UndefOr[ReshardingStatus] = js.undefined
+  
+  /**
+    * A flag that enables in-transit encryption when set to true.
+    */
+  var TransitEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
+    * A setting that allows you to migrate your clients to use in-transit encryption, with no downtime.
+    */
+  var TransitEncryptionMode: js.UndefOr[typings.awsSdk.clientsElasticacheMod.TransitEncryptionMode] = js.undefined
   
   /**
     * The user group being modified.
@@ -54,6 +69,10 @@ object ReplicationGroupPendingModifiedValues {
     
     inline def setAutomaticFailoverStatusUndefined: Self = StObject.set(x, "AutomaticFailoverStatus", js.undefined)
     
+    inline def setClusterMode(value: ClusterMode): Self = StObject.set(x, "ClusterMode", value.asInstanceOf[js.Any])
+    
+    inline def setClusterModeUndefined: Self = StObject.set(x, "ClusterMode", js.undefined)
+    
     inline def setLogDeliveryConfigurations(value: PendingLogDeliveryConfigurationList): Self = StObject.set(x, "LogDeliveryConfigurations", value.asInstanceOf[js.Any])
     
     inline def setLogDeliveryConfigurationsUndefined: Self = StObject.set(x, "LogDeliveryConfigurations", js.undefined)
@@ -67,6 +86,14 @@ object ReplicationGroupPendingModifiedValues {
     inline def setResharding(value: ReshardingStatus): Self = StObject.set(x, "Resharding", value.asInstanceOf[js.Any])
     
     inline def setReshardingUndefined: Self = StObject.set(x, "Resharding", js.undefined)
+    
+    inline def setTransitEncryptionEnabled(value: BooleanOptional): Self = StObject.set(x, "TransitEncryptionEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setTransitEncryptionEnabledUndefined: Self = StObject.set(x, "TransitEncryptionEnabled", js.undefined)
+    
+    inline def setTransitEncryptionMode(value: TransitEncryptionMode): Self = StObject.set(x, "TransitEncryptionMode", value.asInstanceOf[js.Any])
+    
+    inline def setTransitEncryptionModeUndefined: Self = StObject.set(x, "TransitEncryptionMode", js.undefined)
     
     inline def setUserGroups(value: UserGroupsUpdateStatus): Self = StObject.set(x, "UserGroups", value.asInstanceOf[js.Any])
     

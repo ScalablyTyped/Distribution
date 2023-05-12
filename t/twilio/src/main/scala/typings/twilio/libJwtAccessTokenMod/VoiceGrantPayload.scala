@@ -1,5 +1,6 @@
 package typings.twilio.libJwtAccessTokenMod
 
+import typings.twilio.anon.Allow
 import typings.twilio.anon.Applicationsid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,6 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VoiceGrantPayload extends StObject {
   
   var endpoint_id: js.UndefOr[String] = js.undefined
+  
+  var incoming: js.UndefOr[Allow] = js.undefined
   
   var outgoing: js.UndefOr[Applicationsid] = js.undefined
   
@@ -26,6 +29,10 @@ object VoiceGrantPayload {
     inline def setEndpoint_id(value: String): Self = StObject.set(x, "endpoint_id", value.asInstanceOf[js.Any])
     
     inline def setEndpoint_idUndefined: Self = StObject.set(x, "endpoint_id", js.undefined)
+    
+    inline def setIncoming(value: Allow): Self = StObject.set(x, "incoming", value.asInstanceOf[js.Any])
+    
+    inline def setIncomingUndefined: Self = StObject.set(x, "incoming", js.undefined)
     
     inline def setOutgoing(value: Applicationsid): Self = StObject.set(x, "outgoing", value.asInstanceOf[js.Any])
     

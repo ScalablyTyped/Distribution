@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResourceShare extends StObject {
   
   /**
-    * Indicates whether principals outside your organization in Organizations can be associated with a resource share.
+    * Indicates whether principals outside your organization in Organizations can be associated with a resource share.    True – the resource share can be shared with any Amazon Web Services account.    False – the resource share can be shared with only accounts in the same organization as the account that owns the resource share.  
     */
   var allowExternalPrincipals: js.UndefOr[Boolean] = js.undefined
   
@@ -17,7 +17,7 @@ trait ResourceShare extends StObject {
   var creationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Indicates how the resource share was created. Possible values include:    CREATED_FROM_POLICY - Indicates that the resource share was created from an Identity and Access Management (IAM) resource-based permission policy attached to the resource. This type of resource share is visible only to the Amazon Web Services account that created it. You can't modify it in RAM unless you promote it. For more information, see PromoteResourceShareCreatedFromPolicy.    PROMOTING_TO_STANDARD - The resource share is in the process of being promoted. For more information, see PromoteResourceShareCreatedFromPolicy.    STANDARD - Indicates that the resource share was created in RAM using the console or APIs. These resource shares are visible to all principals you share the resource share with. You can modify these resource shares in RAM using the console or APIs.  
+    * Indicates what features are available for this resource share. This parameter can have one of the following values:    STANDARD – A resource share that supports all functionality. These resource shares are visible to all principals you share the resource share with. You can modify these resource shares in RAM using the console or APIs. This resource share might have been created by RAM, or it might have been CREATED_FROM_POLICY and then promoted.    CREATED_FROM_POLICY – The customer manually shared a resource by attaching a resource-based policy. That policy did not match any existing managed permissions, so RAM created this customer managed permission automatically on the customer's behalf based on the attached policy document. This type of resource share is visible only to the Amazon Web Services account that created it. You can't modify it in RAM unless you promote it. For more information, see PromoteResourceShareCreatedFromPolicy.    PROMOTING_TO_STANDARD – This resource share was originally CREATED_FROM_POLICY, but the customer ran the PromoteResourceShareCreatedFromPolicy and that operation is still in progress. This value changes to STANDARD when complete.  
     */
   var featureSet: js.UndefOr[ResourceShareFeatureSet] = js.undefined
   
@@ -37,7 +37,7 @@ trait ResourceShare extends StObject {
   var owningAccountId: js.UndefOr[String] = js.undefined
   
   /**
-    * The Amazon Resoure Name (ARN) of the resource share
+    * The Amazon Resource Name (ARN) of the resource share
     */
   var resourceShareArn: js.UndefOr[String] = js.undefined
   

@@ -1,10 +1,12 @@
 package typings.xrm
 
+import typings.xrm.XrmEnum.AppNotificationLevel
 import typings.xrm.XrmEnum.AttributeRequiredLevel
 import typings.xrm.XrmEnum.AttributeTypeCode
 import typings.xrm.XrmEnum.ClientFormFactor
 import typings.xrm.XrmEnum.FormDataLoadState
 import typings.xrm.XrmEnum.FormType
+import typings.xrm.XrmEnum.GridClient
 import typings.xrm.XrmEnum.GridControlContext
 import typings.xrm.XrmEnum.OpenFileOptions
 import typings.xrm.XrmEnum.RelationshipType
@@ -26,6 +28,7 @@ object xrmInts {
        with AttributeTypeCode
        with ClientFormFactor
        with FormType
+       with GridClient
        with GridControlContext
        with RelationshipType
        with StageCategory
@@ -34,11 +37,13 @@ object xrmInts {
   @js.native
   sealed trait `1`
     extends StObject
+       with AppNotificationLevel
        with AttributeRequiredLevel
        with AttributeTypeCode
        with ClientFormFactor
        with FormDataLoadState
        with FormType
+       with GridClient
        with GridControlContext
        with OpenFileOptions
        with RelationshipType
@@ -120,6 +125,7 @@ object xrmInts {
   @js.native
   sealed trait `2`
     extends StObject
+       with AppNotificationLevel
        with AttributeRequiredLevel
        with AttributeTypeCode
        with ClientFormFactor
@@ -142,6 +148,7 @@ object xrmInts {
   @js.native
   sealed trait `3`
     extends StObject
+       with AppNotificationLevel
        with AttributeRequiredLevel
        with AttributeTypeCode
        with ClientFormFactor
@@ -154,6 +161,7 @@ object xrmInts {
   @js.native
   sealed trait `4`
     extends StObject
+       with AppNotificationLevel
        with AttributeTypeCode
        with FormType
        with GridControlContext

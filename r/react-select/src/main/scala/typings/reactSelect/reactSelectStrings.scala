@@ -131,6 +131,10 @@ object reactSelectStrings {
   inline def fixed: fixed = "fixed".asInstanceOf[fixed]
   
   @js.native
+  sealed trait getClassNames extends StObject
+  inline def getClassNames: getClassNames = "getClassNames".asInstanceOf[getClassNames]
+  
+  @js.native
   sealed trait getStyles extends StObject
   inline def getStyles: getStyles = "getStyles".asInstanceOf[getStyles]
   

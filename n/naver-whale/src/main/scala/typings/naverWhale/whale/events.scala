@@ -24,9 +24,6 @@ object events {
       * Registers rules to handle events.
       * @param rules Rules to be registered. These do not replace previously registered rules.
       * @param callback Called with registered rules.
-      * If you specify the callback parameter, it should be a function that looks like this:
-      * function(array of Rule rules) {...};
-      * Parameter rules: Rules that were registered, the optional parameters are filled with values.
       */
     def addRules(rules: js.Array[typings.chrome.chrome.events.Rule]): Unit = js.native
     def addRules(
@@ -37,18 +34,12 @@ object events {
     /**
       * Returns currently registered rules.
       * @param callback Called with registered rules.
-      * The callback parameter should be a function that looks like this:
-      * function(array of Rule rules) {...};
-      * Parameter rules: Rules that were registered, the optional parameters are filled with values.
       */
     def getRules(callback: js.Function1[/* rules */ js.Array[typings.chrome.chrome.events.Rule], Unit]): Unit = js.native
     /**
       * Returns currently registered rules.
       * @param ruleIdentifiers If an array is passed, only rules with identifiers contained in this array are returned.
       * @param callback Called with registered rules.
-      * The callback parameter should be a function that looks like this:
-      * function(array of Rule rules) {...};
-      * Parameter rules: Rules that were registered, the optional parameters are filled with values.
       */
     def getRules(
       ruleIdentifiers: js.Array[String],
@@ -65,8 +56,6 @@ object events {
     /**
       * Deregisters an event listener callback from an event.
       * @param callback Listener that shall be unregistered.
-      * The callback parameter should be a function that looks like this:
-      * function() {...};
       */
     def removeListener(callback: T): Unit = js.native
     
@@ -74,8 +63,6 @@ object events {
       * Unregisters currently registered rules.
       * @param ruleIdentifiers If an array is passed, only rules with identifiers contained in this array are unregistered.
       * @param callback Called when rules were unregistered.
-      * If you specify the callback parameter, it should be a function that looks like this:
-      * function() {...};
       */
     def removeRules(): Unit = js.native
     def removeRules(callback: js.Function0[Unit]): Unit = js.native

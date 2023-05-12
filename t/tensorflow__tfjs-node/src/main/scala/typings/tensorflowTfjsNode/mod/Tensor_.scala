@@ -1,6 +1,6 @@
 package typings.tensorflowTfjsNode.mod
 
-import typings.tensorflowTfjsCore.distTensorMod.DataId
+import typings.tensorflowTfjsCore.distTensorInfoMod.DataId
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import org.scalablytyped.runtime.StObject

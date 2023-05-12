@@ -6,6 +6,7 @@ import typings.devextreme.mod.DevExpress.animation.CollisionResolutionCombinatio
 import typings.devextreme.mod.DevExpress.common.ApplyValueMode
 import typings.devextreme.mod.DevExpress.common.ButtonStyle
 import typings.devextreme.mod.DevExpress.common.ButtonType
+import typings.devextreme.mod.DevExpress.common.ComparisonOperator
 import typings.devextreme.mod.DevExpress.common.DataStructure
 import typings.devextreme.mod.DevExpress.common.DataType
 import typings.devextreme.mod.DevExpress.common.Direction
@@ -33,7 +34,6 @@ import typings.devextreme.mod.DevExpress.common.SingleMultipleAllOrNone
 import typings.devextreme.mod.DevExpress.common.SingleMultipleOrNone
 import typings.devextreme.mod.DevExpress.common.SingleOrMultiple
 import typings.devextreme.mod.DevExpress.common.SingleOrNone
-import typings.devextreme.mod.DevExpress.common.SlideOutMenuPosition
 import typings.devextreme.mod.DevExpress.common.SortOrder
 import typings.devextreme.mod.DevExpress.common.StoreType
 import typings.devextreme.mod.DevExpress.common.SubmenuShowMode
@@ -42,38 +42,24 @@ import typings.devextreme.mod.DevExpress.common.ToolbarItemComponent
 import typings.devextreme.mod.DevExpress.common.ToolbarItemLocation
 import typings.devextreme.mod.DevExpress.common.TooltipShowMode
 import typings.devextreme.mod.DevExpress.common.ValidationMessageMode
+import typings.devextreme.mod.DevExpress.common.ValidationRuleType
 import typings.devextreme.mod.DevExpress.common.ValidationStatus
 import typings.devextreme.mod.DevExpress.common.VerticalAlignment
 import typings.devextreme.mod.DevExpress.common.VerticalEdge
 import typings.devextreme.mod.DevExpress.common.charts.AnimationEaseMode
 import typings.devextreme.mod.DevExpress.common.charts.AnnotationType
-import typings.devextreme.mod.DevExpress.common.charts.ApplyChangesMode
-import typings.devextreme.mod.DevExpress.common.charts.ApplyFilterMode
 import typings.devextreme.mod.DevExpress.common.charts.ArgumentAxisHoverMode
 import typings.devextreme.mod.DevExpress.common.charts.AxisScaleType
 import typings.devextreme.mod.DevExpress.common.charts.ChartsAxisLabelOverlap
 import typings.devextreme.mod.DevExpress.common.charts.ChartsDataType
 import typings.devextreme.mod.DevExpress.common.charts.ChartsLabelOverlap
-import typings.devextreme.mod.DevExpress.common.charts.ColumnChooserMode
 import typings.devextreme.mod.DevExpress.common.charts.DashStyle
-import typings.devextreme.mod.DevExpress.common.charts.DataChangeType
-import typings.devextreme.mod.DevExpress.common.charts.DataRenderMode
 import typings.devextreme.mod.DevExpress.common.charts.DiscreteAxisDivisionMode
-import typings.devextreme.mod.DevExpress.common.charts.EnterKeyAction
-import typings.devextreme.mod.DevExpress.common.charts.EnterKeyDirection
-import typings.devextreme.mod.DevExpress.common.charts.FilterOperation
-import typings.devextreme.mod.DevExpress.common.charts.FilterType
-import typings.devextreme.mod.DevExpress.common.charts.GridsEditMode
-import typings.devextreme.mod.DevExpress.common.charts.GridsEditRefreshMode
-import typings.devextreme.mod.DevExpress.common.charts.GroupExpandMode
 import typings.devextreme.mod.DevExpress.common.charts.HatchDirection
 import typings.devextreme.mod.DevExpress.common.charts.LabelOverlap
 import typings.devextreme.mod.DevExpress.common.charts.LabelPosition
 import typings.devextreme.mod.DevExpress.common.charts.LegendHoverMode
 import typings.devextreme.mod.DevExpress.common.charts.LegendMarkerState
-import typings.devextreme.mod.DevExpress.common.charts.NewRowPosition
-import typings.devextreme.mod.DevExpress.common.charts.PagerDisplayMode
-import typings.devextreme.mod.DevExpress.common.charts.PagerPageSize
 import typings.devextreme.mod.DevExpress.common.charts.Palette
 import typings.devextreme.mod.DevExpress.common.charts.PaletteColorSet
 import typings.devextreme.mod.DevExpress.common.charts.PaletteExtensionMode
@@ -81,13 +67,9 @@ import typings.devextreme.mod.DevExpress.common.charts.PointInteractionMode
 import typings.devextreme.mod.DevExpress.common.charts.PointSymbol
 import typings.devextreme.mod.DevExpress.common.charts.RelativePosition
 import typings.devextreme.mod.DevExpress.common.charts.ScaleBreakLineStyle
-import typings.devextreme.mod.DevExpress.common.charts.SelectedFilterOperation
-import typings.devextreme.mod.DevExpress.common.charts.SelectionColumnDisplayMode
 import typings.devextreme.mod.DevExpress.common.charts.SeriesHoverMode
 import typings.devextreme.mod.DevExpress.common.charts.SeriesSelectionMode
-import typings.devextreme.mod.DevExpress.common.charts.StartEditAction
-import typings.devextreme.mod.DevExpress.common.charts.StateStoreType
-import typings.devextreme.mod.DevExpress.common.charts.SummaryType
+import typings.devextreme.mod.DevExpress.common.charts.SeriesType
 import typings.devextreme.mod.DevExpress.common.charts.TextOverflow
 import typings.devextreme.mod.DevExpress.common.charts.Theme
 import typings.devextreme.mod.DevExpress.common.charts.TimeInterval
@@ -96,6 +78,28 @@ import typings.devextreme.mod.DevExpress.common.charts.ValueErrorBarType
 import typings.devextreme.mod.DevExpress.common.charts.VisualRangeUpdateMode
 import typings.devextreme.mod.DevExpress.common.charts.WordWrap
 import typings.devextreme.mod.DevExpress.common.charts.ZoomPanAction
+import typings.devextreme.mod.DevExpress.common.grids.ApplyChangesMode
+import typings.devextreme.mod.DevExpress.common.grids.ApplyFilterMode
+import typings.devextreme.mod.DevExpress.common.grids.ColumnChooserMode
+import typings.devextreme.mod.DevExpress.common.grids.ColumnResizeMode
+import typings.devextreme.mod.DevExpress.common.grids.DataChangeType
+import typings.devextreme.mod.DevExpress.common.grids.DataRenderMode
+import typings.devextreme.mod.DevExpress.common.grids.EnterKeyAction
+import typings.devextreme.mod.DevExpress.common.grids.EnterKeyDirection
+import typings.devextreme.mod.DevExpress.common.grids.FilterOperation
+import typings.devextreme.mod.DevExpress.common.grids.FilterType
+import typings.devextreme.mod.DevExpress.common.grids.GridsEditMode
+import typings.devextreme.mod.DevExpress.common.grids.GridsEditRefreshMode
+import typings.devextreme.mod.DevExpress.common.grids.GroupExpandMode
+import typings.devextreme.mod.DevExpress.common.grids.HeaderFilterGroupInterval
+import typings.devextreme.mod.DevExpress.common.grids.NewRowPosition
+import typings.devextreme.mod.DevExpress.common.grids.PagerDisplayMode
+import typings.devextreme.mod.DevExpress.common.grids.PagerPageSize
+import typings.devextreme.mod.DevExpress.common.grids.SelectedFilterOperation
+import typings.devextreme.mod.DevExpress.common.grids.SelectionColumnDisplayMode
+import typings.devextreme.mod.DevExpress.common.grids.StartEditAction
+import typings.devextreme.mod.DevExpress.common.grids.StateStoreType
+import typings.devextreme.mod.DevExpress.common.grids.SummaryType
 import typings.devextreme.mod.DevExpress.core.FloatingActionButtonDirection
 import typings.devextreme.mod.DevExpress.data.DataSource.EventName
 import typings.devextreme.mod.DevExpress.data.ODataContext.HttpMethod
@@ -107,24 +111,17 @@ import typings.devextreme.mod.DevExpress.data.PivotGridDataSource.PivotGridSortB
 import typings.devextreme.mod.DevExpress.data.PivotGridDataSource.PivotGridStoreType
 import typings.devextreme.mod.DevExpress.data.PivotGridDataSource.PivotGridSummaryDisplayMode
 import typings.devextreme.mod.DevExpress.data.SearchOperation
-import typings.devextreme.mod.DevExpress.exporter.ExcelUnderlineType
-import typings.devextreme.mod.DevExpress.ui.ComparisonOperator
-import typings.devextreme.mod.DevExpress.ui.ValidationRuleType
 import typings.devextreme.mod.DevExpress.ui.dxBox.BoxDirection
 import typings.devextreme.mod.DevExpress.ui.dxBox.CrosswiseDistribution
 import typings.devextreme.mod.DevExpress.ui.dxBox.Distribution
 import typings.devextreme.mod.DevExpress.ui.dxCalendar.CalendarZoomLevel
+import typings.devextreme.mod.DevExpress.ui.dxCalendar.WeekNumberRule
 import typings.devextreme.mod.DevExpress.ui.dxContextMenu.ContextSubmenuDirection
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.ColumnResizeMode
 import typings.devextreme.mod.DevExpress.ui.dxDataGrid.DataGridCommandColumnType
 import typings.devextreme.mod.DevExpress.ui.dxDataGrid.DataGridExportFormat
 import typings.devextreme.mod.DevExpress.ui.dxDataGrid.DataGridPredefinedColumnButton
 import typings.devextreme.mod.DevExpress.ui.dxDataGrid.DataGridPredefinedToolbarItem
 import typings.devextreme.mod.DevExpress.ui.dxDataGrid.DataGridScrollMode
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.ExcelCellHorizontalAlignment
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.ExcelCellPatternType
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.ExcelCellVerticalAlignment
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.HeaderFilterGroupInterval
 import typings.devextreme.mod.DevExpress.ui.dxDateBox.DatePickerType
 import typings.devextreme.mod.DevExpress.ui.dxDateBox.DateType
 import typings.devextreme.mod.DevExpress.ui.dxDiagram.DiagramAutoZoomMode
@@ -187,6 +184,7 @@ import typings.devextreme.mod.DevExpress.ui.dxScheduler.AllDayPanelMode
 import typings.devextreme.mod.DevExpress.ui.dxScheduler.CellAppointmentsLimit
 import typings.devextreme.mod.DevExpress.ui.dxScheduler.RecurrenceEditMode
 import typings.devextreme.mod.DevExpress.ui.dxScheduler.ViewType
+import typings.devextreme.mod.DevExpress.ui.dxSlider.ValueChangeMode
 import typings.devextreme.mod.DevExpress.ui.dxTextBox.TextBoxType
 import typings.devextreme.mod.DevExpress.ui.dxToast.ToastType
 import typings.devextreme.mod.DevExpress.ui.dxToolbar.LocateInMenuMode
@@ -198,7 +196,6 @@ import typings.devextreme.mod.DevExpress.ui.dxTreeList.TreeListPredefinedToolbar
 import typings.devextreme.mod.DevExpress.ui.dxTreeView.TreeViewCheckBoxMode
 import typings.devextreme.mod.DevExpress.ui.dxTreeView.TreeViewExpandEvent
 import typings.devextreme.mod.DevExpress.viz.BaseGauge.GaugeIndicatorType
-import typings.devextreme.mod.DevExpress.viz.SeriesType
 import typings.devextreme.mod.DevExpress.viz.VectorMapProjection
 import typings.devextreme.mod.DevExpress.viz.dxChart.AggregatedPointsPosition
 import typings.devextreme.mod.DevExpress.viz.dxChart.ChartBubbleSeriesAggregationMethod
@@ -804,6 +801,7 @@ object devextremeStrings {
        with ValueAxisVisualRangeUpdateMode
        with ValueErrorBarDisplayMode
        with VisualRangeUpdateMode
+       with WeekNumberRule
   inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
@@ -932,7 +930,6 @@ object devextremeStrings {
   sealed trait bottom
     extends StObject
        with Direction
-       with ExcelCellVerticalAlignment
        with PanelLocation
        with Position
        with PositionAlignment
@@ -1057,8 +1054,6 @@ object devextremeStrings {
        with CircularGaugeElementOrientation
        with CrosswiseDistribution
        with Distribution
-       with ExcelCellHorizontalAlignment
-       with ExcelCellVerticalAlignment
        with HorizontalAlignment
        with PieChartAnnotationLocation
        with PositionAlignment
@@ -1071,12 +1066,6 @@ object devextremeStrings {
     extends StObject
        with BackgroundImageLocation
   inline def centerBottom: centerBottom = "centerBottom".asInstanceOf[centerBottom]
-  
-  @js.native
-  sealed trait centerContinuous
-    extends StObject
-       with ExcelCellHorizontalAlignment
-  inline def centerContinuous: centerContinuous = "centerContinuous".asInstanceOf[centerContinuous]
   
   @js.native
   sealed trait centerTop
@@ -1392,48 +1381,6 @@ object devextremeStrings {
   inline def danger: danger = "danger".asInstanceOf[danger]
   
   @js.native
-  sealed trait darkDown
-    extends StObject
-       with ExcelCellPatternType
-  inline def darkDown: darkDown = "darkDown".asInstanceOf[darkDown]
-  
-  @js.native
-  sealed trait darkGray
-    extends StObject
-       with ExcelCellPatternType
-  inline def darkGray: darkGray = "darkGray".asInstanceOf[darkGray]
-  
-  @js.native
-  sealed trait darkGrid
-    extends StObject
-       with ExcelCellPatternType
-  inline def darkGrid: darkGrid = "darkGrid".asInstanceOf[darkGrid]
-  
-  @js.native
-  sealed trait darkHorizontal
-    extends StObject
-       with ExcelCellPatternType
-  inline def darkHorizontal: darkHorizontal = "darkHorizontal".asInstanceOf[darkHorizontal]
-  
-  @js.native
-  sealed trait darkTrellis
-    extends StObject
-       with ExcelCellPatternType
-  inline def darkTrellis: darkTrellis = "darkTrellis".asInstanceOf[darkTrellis]
-  
-  @js.native
-  sealed trait darkUp
-    extends StObject
-       with ExcelCellPatternType
-  inline def darkUp: darkUp = "darkUp".asInstanceOf[darkUp]
-  
-  @js.native
-  sealed trait darkVertical
-    extends StObject
-       with ExcelCellPatternType
-  inline def darkVertical: darkVertical = "darkVertical".asInstanceOf[darkVertical]
-  
-  @js.native
   sealed trait dash
     extends StObject
        with DashStyle
@@ -1655,13 +1602,6 @@ object devextremeStrings {
   inline def displayText: displayText = "displayText".asInstanceOf[displayText]
   
   @js.native
-  sealed trait distributed
-    extends StObject
-       with ExcelCellHorizontalAlignment
-       with ExcelCellVerticalAlignment
-  inline def distributed: distributed = "distributed".asInstanceOf[distributed]
-  
-  @js.native
   sealed trait document
     extends StObject
        with DiagramShapeType
@@ -1679,18 +1619,6 @@ object devextremeStrings {
        with DashStyle
        with VectorMapMarkerType
   inline def dot: dot = "dot".asInstanceOf[dot]
-  
-  @js.native
-  sealed trait double
-    extends StObject
-       with ExcelUnderlineType
-  inline def double: double = "double".asInstanceOf[double]
-  
-  @js.native
-  sealed trait doubleAccounting
-    extends StObject
-       with ExcelUnderlineType
-  inline def doubleAccounting: doubleAccounting = "doubleAccounting".asInstanceOf[doubleAccounting]
   
   @js.native
   sealed trait doughnut
@@ -2073,12 +2001,6 @@ object devextremeStrings {
   inline def file: file = "file".asInstanceOf[file]
   
   @js.native
-  sealed trait fill
-    extends StObject
-       with ExcelCellHorizontalAlignment
-  inline def fill: fill = "fill".asInstanceOf[fill]
-  
-  @js.native
   sealed trait fillColor
     extends StObject
        with DiagramCommand
@@ -2108,6 +2030,18 @@ object devextremeStrings {
        with CircularGaugeLabelOverlap
        with NewRowPosition
   inline def first: first = "first".asInstanceOf[first]
+  
+  @js.native
+  sealed trait firstDay
+    extends StObject
+       with WeekNumberRule
+  inline def firstDay: firstDay = "firstDay".asInstanceOf[firstDay]
+  
+  @js.native
+  sealed trait firstFourDays
+    extends StObject
+       with WeekNumberRule
+  inline def firstFourDays: firstFourDays = "firstFourDays".asInstanceOf[firstFourDays]
   
   @js.native
   sealed trait fit
@@ -2269,6 +2203,12 @@ object devextremeStrings {
   inline def fullScreen: fullScreen = "fullScreen".asInstanceOf[fullScreen]
   
   @js.native
+  sealed trait fullWeek
+    extends StObject
+       with WeekNumberRule
+  inline def fullWeek: fullWeek = "fullWeek".asInstanceOf[fullWeek]
+  
+  @js.native
   sealed trait fullstackedarea
     extends StObject
        with SeriesType
@@ -2302,7 +2242,6 @@ object devextremeStrings {
   sealed trait general
     extends StObject
        with DiagramShapeCategory
-       with ExcelCellHorizontalAlignment
   inline def general: general = "general".asInstanceOf[general]
   
   @js.native
@@ -2381,18 +2320,6 @@ object devextremeStrings {
     extends StObject
        with PaletteColorSet
   inline def gradientSet: gradientSet = "gradientSet".asInstanceOf[gradientSet]
-  
-  @js.native
-  sealed trait gray0625
-    extends StObject
-       with ExcelCellPatternType
-  inline def gray0625: gray0625 = "gray0625".asInstanceOf[gray0625]
-  
-  @js.native
-  sealed trait gray125
-    extends StObject
-       with ExcelCellPatternType
-  inline def gray125: gray125 = "gray125".asInstanceOf[gray125]
   
   @js.native
   sealed trait gridSize
@@ -2651,13 +2578,13 @@ object devextremeStrings {
   @js.native
   sealed trait inserted
     extends StObject
-       with typings.devextreme.mod.DevExpress.data.Store.EventName
+       with typings.devextreme.mod.DevExpress.data.AbstractStore.EventName
   inline def inserted: inserted = "inserted".asInstanceOf[inserted]
   
   @js.native
   sealed trait inserting
     extends StObject
-       with typings.devextreme.mod.DevExpress.data.Store.EventName
+       with typings.devextreme.mod.DevExpress.data.AbstractStore.EventName
   inline def inserting: inserting = "inserting".asInstanceOf[inserting]
   
   @js.native
@@ -2688,12 +2615,6 @@ object devextremeStrings {
     extends StObject
        with ValidationStatus
   inline def invalid: invalid = "invalid".asInstanceOf[invalid]
-  
-  @js.native
-  sealed trait inverted
-    extends StObject
-       with SlideOutMenuPosition
-  inline def inverted: inverted = "inverted".asInstanceOf[inverted]
   
   @js.native
   sealed trait ios extends StObject
@@ -2733,13 +2654,6 @@ object devextremeStrings {
     extends StObject
        with DiagramExportFormat
   inline def jpg: jpg = "jpg".asInstanceOf[jpg]
-  
-  @js.native
-  sealed trait justify
-    extends StObject
-       with ExcelCellHorizontalAlignment
-       with ExcelCellVerticalAlignment
-  inline def justify: justify = "justify".asInstanceOf[justify]
   
   @js.native
   sealed trait keep
@@ -2832,7 +2746,6 @@ object devextremeStrings {
     extends StObject
        with ContextSubmenuDirection
        with Direction
-       with ExcelCellHorizontalAlignment
        with HatchDirection
        with HorizontalAlignment
        with HorizontalEdge
@@ -2904,48 +2817,6 @@ object devextremeStrings {
   inline def leftTopRightBottom: leftTopRightBottom = "leftTopRightBottom".asInstanceOf[leftTopRightBottom]
   
   @js.native
-  sealed trait lightDown
-    extends StObject
-       with ExcelCellPatternType
-  inline def lightDown: lightDown = "lightDown".asInstanceOf[lightDown]
-  
-  @js.native
-  sealed trait lightGray
-    extends StObject
-       with ExcelCellPatternType
-  inline def lightGray: lightGray = "lightGray".asInstanceOf[lightGray]
-  
-  @js.native
-  sealed trait lightGrid
-    extends StObject
-       with ExcelCellPatternType
-  inline def lightGrid: lightGrid = "lightGrid".asInstanceOf[lightGrid]
-  
-  @js.native
-  sealed trait lightHorizontal
-    extends StObject
-       with ExcelCellPatternType
-  inline def lightHorizontal: lightHorizontal = "lightHorizontal".asInstanceOf[lightHorizontal]
-  
-  @js.native
-  sealed trait lightTrellis
-    extends StObject
-       with ExcelCellPatternType
-  inline def lightTrellis: lightTrellis = "lightTrellis".asInstanceOf[lightTrellis]
-  
-  @js.native
-  sealed trait lightUp
-    extends StObject
-       with ExcelCellPatternType
-  inline def lightUp: lightUp = "lightUp".asInstanceOf[lightUp]
-  
-  @js.native
-  sealed trait lightVertical
-    extends StObject
-       with ExcelCellPatternType
-  inline def lightVertical: lightVertical = "lightVertical".asInstanceOf[lightVertical]
-  
-  @js.native
   sealed trait line
     extends StObject
        with PolarChartSeriesType
@@ -3003,13 +2874,13 @@ object devextremeStrings {
   @js.native
   sealed trait loaded
     extends StObject
-       with typings.devextreme.mod.DevExpress.data.Store.EventName
+       with typings.devextreme.mod.DevExpress.data.AbstractStore.EventName
   inline def loaded: loaded = "loaded".asInstanceOf[loaded]
   
   @js.native
   sealed trait loading
     extends StObject
-       with typings.devextreme.mod.DevExpress.data.Store.EventName
+       with typings.devextreme.mod.DevExpress.data.AbstractStore.EventName
   inline def loading: loading = "loading".asInstanceOf[loading]
   
   @js.native
@@ -3146,12 +3017,6 @@ object devextremeStrings {
   inline def max: max = "max".asInstanceOf[max]
   
   @js.native
-  sealed trait mediumGray
-    extends StObject
-       with ExcelCellPatternType
-  inline def mediumGray: mediumGray = "mediumGray".asInstanceOf[mediumGray]
-  
-  @js.native
   sealed trait mercator
     extends StObject
        with VectorMapProjection
@@ -3224,13 +3089,13 @@ object devextremeStrings {
   @js.native
   sealed trait modified
     extends StObject
-       with typings.devextreme.mod.DevExpress.data.Store.EventName
+       with typings.devextreme.mod.DevExpress.data.AbstractStore.EventName
   inline def modified: modified = "modified".asInstanceOf[modified]
   
   @js.native
   sealed trait modifying
     extends StObject
-       with typings.devextreme.mod.DevExpress.data.Store.EventName
+       with typings.devextreme.mod.DevExpress.data.AbstractStore.EventName
   inline def modifying: modifying = "modifying".asInstanceOf[modifying]
   
   @js.native
@@ -3338,8 +3203,6 @@ object devextremeStrings {
        with CollisionResolutionCombination
        with DiagramConnectorLineEnd
        with EnterKeyDirection
-       with ExcelCellPatternType
-       with ExcelUnderlineType
        with FunnelLabelOverlap
        with GanttTaskTitlePosition
        with HatchDirection
@@ -3395,7 +3258,6 @@ object devextremeStrings {
     extends StObject
        with ButtonType
        with LegendMarkerState
-       with SlideOutMenuPosition
        with TreeViewCheckBoxMode
        with WordWrap
   inline def normal: normal = "normal".asInstanceOf[normal]
@@ -3493,6 +3355,18 @@ object devextremeStrings {
     extends StObject
        with MaskMode
   inline def onFocus: onFocus = "onFocus".asInstanceOf[onFocus]
+  
+  @js.native
+  sealed trait onHandleMove
+    extends StObject
+       with ValueChangeMode
+  inline def onHandleMove: onHandleMove = "onHandleMove".asInstanceOf[onHandleMove]
+  
+  @js.native
+  sealed trait onHandleRelease
+    extends StObject
+       with ValueChangeMode
+  inline def onHandleRelease: onHandleRelease = "onHandleRelease".asInstanceOf[onHandleRelease]
   
   @js.native
   sealed trait onHover
@@ -3801,7 +3675,7 @@ object devextremeStrings {
   sealed trait push
     extends StObject
        with DragHighlight
-       with typings.devextreme.mod.DevExpress.data.Store.EventName
+       with typings.devextreme.mod.DevExpress.data.AbstractStore.EventName
        with OpenedStateMode
   inline def push: push = "push".asInstanceOf[push]
   
@@ -3903,13 +3777,13 @@ object devextremeStrings {
   @js.native
   sealed trait removed
     extends StObject
-       with typings.devextreme.mod.DevExpress.data.Store.EventName
+       with typings.devextreme.mod.DevExpress.data.AbstractStore.EventName
   inline def removed: removed = "removed".asInstanceOf[removed]
   
   @js.native
   sealed trait removing
     extends StObject
-       with typings.devextreme.mod.DevExpress.data.Store.EventName
+       with typings.devextreme.mod.DevExpress.data.AbstractStore.EventName
   inline def removing: removing = "removing".asInstanceOf[removing]
   
   @js.native
@@ -3969,7 +3843,6 @@ object devextremeStrings {
     extends StObject
        with ContextSubmenuDirection
        with Direction
-       with ExcelCellHorizontalAlignment
        with HatchDirection
        with HorizontalAlignment
        with HorizontalEdge
@@ -4288,15 +4161,8 @@ object devextremeStrings {
   inline def simpleView: simpleView = "simpleView".asInstanceOf[simpleView]
   
   @js.native
-  sealed trait singleAccounting
-    extends StObject
-       with ExcelUnderlineType
-  inline def singleAccounting: singleAccounting = "singleAccounting".asInstanceOf[singleAccounting]
-  
-  @js.native
   sealed trait single_
     extends StObject
-       with ExcelUnderlineType
        with SingleMultipleAllOrNone
        with SingleMultipleOrNone
        with SingleOrMultiple
@@ -4371,7 +4237,6 @@ object devextremeStrings {
   sealed trait solid
     extends StObject
        with DashStyle
-       with ExcelCellPatternType
   inline def solid: solid = "solid".asInstanceOf[solid]
   
   @js.native
@@ -4791,7 +4656,6 @@ object devextremeStrings {
   sealed trait top
     extends StObject
        with Direction
-       with ExcelCellVerticalAlignment
        with LabelLocation
        with PanelLocation
        with Position
@@ -4950,13 +4814,13 @@ object devextremeStrings {
   @js.native
   sealed trait updated
     extends StObject
-       with typings.devextreme.mod.DevExpress.data.Store.EventName
+       with typings.devextreme.mod.DevExpress.data.AbstractStore.EventName
   inline def updated: updated = "updated".asInstanceOf[updated]
   
   @js.native
   sealed trait updating
     extends StObject
-       with typings.devextreme.mod.DevExpress.data.Store.EventName
+       with typings.devextreme.mod.DevExpress.data.AbstractStore.EventName
   inline def updating: updating = "updating".asInstanceOf[updating]
   
   @js.native

@@ -12,7 +12,7 @@ trait ListChannelModeratorsRequest extends StObject {
   var ChannelArn: ChimeArn
   
   /**
-    * The AppInstanceUserArn of the user that makes the API call.
+    * The ARN of the AppInstanceUser or AppInstanceBot that makes the API call.
     */
   var ChimeBearer: ChimeArn
   

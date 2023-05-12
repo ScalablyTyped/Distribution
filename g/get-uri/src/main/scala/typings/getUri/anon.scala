@@ -105,7 +105,7 @@ object anon {
       *   hostname: 'localhost',
       *   port: 80,
       *   path: '/',
-      *   agent: false  // Create a new agent just for this one request
+      *   agent: false,  // Create a new agent just for this one request
       * }, (res) => {
       *   // Do stuff with response
       * });
@@ -138,8 +138,11 @@ object anon {
       *
       * For backward compatibility, `res` will only emit `'error'` if there is an`'error'` listener registered.
       *
-      * Node.js does not check whether Content-Length and the length of the
-      * body which has been transmitted are equal or not.
+      * Set `Content-Length` header to limit the response body size.
+      * If `response.strictContentLength` is set to `true`, mismatching the`Content-Length` header value will result in an `Error` being thrown,
+      * identified by `code:``'ERR_HTTP_CONTENT_LENGTH_MISMATCH'`.
+      *
+      * `Content-Length` value should be in bytes, not characters. Use `Buffer.byteLength()` to determine the length of the body in bytes.
       * @since v0.1.17
       */
     var ClientRequest: Instantiable1[/* url */ String, typings.node.httpMod.ClientRequest] = js.native
@@ -147,7 +150,7 @@ object anon {
     /**
       * An `IncomingMessage` object is created by {@link Server} or {@link ClientRequest} and passed as the first argument to the `'request'` and `'response'` event respectively. It may be used to
       * access response
-      * status, headers and data.
+      * status, headers, and data.
       *
       * Different from its `socket` value which is a subclass of `stream.Duplex`, the`IncomingMessage` itself extends `stream.Readable` and is created separately to
       * parse and emit the incoming HTTP headers and payload, as the underlying socket
@@ -159,8 +162,8 @@ object anon {
     val METHODS: js.Array[String] = js.native
     
     /**
-      * This class serves as the parent class of {@link ClientRequest} and {@link ServerResponse}. It is an abstract of outgoing message from
-      * the perspective of the participants of HTTP transaction.
+      * This class serves as the parent class of {@link ClientRequest} and {@link ServerResponse}. It is an abstract outgoing message from
+      * the perspective of the participants of an HTTP transaction.
       * @since v0.1.17
       */
     var OutgoingMessage: Instantiable0[typings.node.httpMod.OutgoingMessage[IncomingMessage]] = js.native
@@ -267,7 +270,7 @@ object anon {
       * const server = http.createServer((req, res) => {
       *   res.writeHead(200, { 'Content-Type': 'application/json' });
       *   res.end(JSON.stringify({
-      *     data: 'Hello World!'
+      *     data: 'Hello World!',
       *   }));
       * });
       *
@@ -313,10 +316,10 @@ object anon {
       * upload a file with a POST request, then write to the `ClientRequest` object.
       *
       * ```js
-      * const http = require('http');
+      * const http = require('node:http');
       *
       * const postData = JSON.stringify({
-      *   'msg': 'Hello World!'
+      *   'msg': 'Hello World!',
       * });
       *
       * const options = {
@@ -326,8 +329,8 @@ object anon {
       *   method: 'POST',
       *   headers: {
       *     'Content-Type': 'application/json',
-      *     'Content-Length': Buffer.byteLength(postData)
-      *   }
+      *     'Content-Length': Buffer.byteLength(postData),
+      *   },
       * };
       *
       * const req = http.request(options, (res) => {
@@ -414,7 +417,7 @@ object anon {
       *    * `'data'` any number of times, on the `res` object
       * * (connection closed here)
       * * `'aborted'` on the `res` object
-      * * `'error'` on the `res` object with an error with message`'Error: aborted'` and code `'ECONNRESET'`.
+      * * `'error'` on the `res` object with an error with message`'Error: aborted'` and code `'ECONNRESET'`
       * * `'close'`
       * * `'close'` on the `res` object
       *
@@ -422,7 +425,7 @@ object anon {
       * events will be emitted in the following order:
       *
       * * (`req.destroy()` called here)
-      * * `'error'` with an error with message `'Error: socket hang up'` and code`'ECONNRESET'`
+      * * `'error'` with an error with message `'Error: socket hang up'` and code`'ECONNRESET'`, or the error with which `req.destroy()` was called
       * * `'close'`
       *
       * If `req.destroy()` is called before the connection succeeds, the following
@@ -430,7 +433,7 @@ object anon {
       *
       * * `'socket'`
       * * (`req.destroy()` called here)
-      * * `'error'` with an error with message `'Error: socket hang up'` and code`'ECONNRESET'`
+      * * `'error'` with an error with message `'Error: socket hang up'` and code`'ECONNRESET'`, or the error with which `req.destroy()` was called
       * * `'close'`
       *
       * If `req.destroy()` is called after the response is received, the following
@@ -441,7 +444,7 @@ object anon {
       *    * `'data'` any number of times, on the `res` object
       * * (`req.destroy()` called here)
       * * `'aborted'` on the `res` object
-      * * `'error'` on the `res` object with an error with message`'Error: aborted'` and code `'ECONNRESET'`.
+      * * `'error'` on the `res` object with an error with message `'Error: aborted'`and code `'ECONNRESET'`, or the error with which `req.destroy()` was called
       * * `'close'`
       * * `'close'` on the `res` object
       *
@@ -477,8 +480,9 @@ object anon {
       * Setting the `timeout` option or using the `setTimeout()` function will
       * not abort the request or do anything besides add a `'timeout'` event.
       *
-      * Passing an `AbortSignal` and then calling `abort` on the corresponding`AbortController` will behave the same way as calling `.destroy()` on the
-      * request itself.
+      * Passing an `AbortSignal` and then calling `abort()` on the corresponding`AbortController` will behave the same way as calling `.destroy()` on the
+      * request. Specifically, the `'error'` event will be emitted with an error with
+      * the message `'AbortError: The operation was aborted'`, the code `'ABORT_ERR'`and the `cause`, if one was provided.
       * @since v0.3.6
       */
     def request(options: RequestOptions): ClientRequest = js.native
@@ -491,28 +495,75 @@ object anon {
     def request(url: URL, options: RequestOptions, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = js.native
     
     /**
-      * Set the maximum number of idle HTTP parsers. Default: 1000.
-      * @param count
+      * Set the maximum number of idle HTTP parsers.
       * @since v18.8.0, v16.18.0
+      * @param [max=1000]
       */
-    def setMaxIdleHTTPParsers(count: Double): Unit = js.native
+    def setMaxIdleHTTPParsers(max: Double): Unit = js.native
     
     /**
-      * Performs the low-level validations on the provided name that are done when `res.setHeader(name, value)` is called.
-      * Passing illegal value as name will result in a TypeError being thrown, identified by `code: 'ERR_INVALID_HTTP_TOKEN'`.
-      * @param name Header name
+      * Performs the low-level validations on the provided `name` that are done when`res.setHeader(name, value)` is called.
+      *
+      * Passing illegal value as `name` will result in a `TypeError` being thrown,
+      * identified by `code: 'ERR_INVALID_HTTP_TOKEN'`.
+      *
+      * It is not necessary to use this method before passing headers to an HTTP request
+      * or response. The HTTP module will automatically validate such headers.
+      * Examples:
+      *
+      * Example:
+      *
+      * ```js
+      * const { validateHeaderName } = require('node:http');
+      *
+      * try {
+      *   validateHeaderName('');
+      * } catch (err) {
+      *   console.error(err instanceof TypeError); // --> true
+      *   console.error(err.code); // --> 'ERR_INVALID_HTTP_TOKEN'
+      *   console.error(err.message); // --> 'Header name must be a valid HTTP token [""]'
+      * }
+      * ```
       * @since v14.3.0
+      * @param [label='Header name'] Label for error message.
       */
     def validateHeaderName(name: String): Unit = js.native
     
     /**
-      * Performs the low-level validations on the provided value that are done when `res.setHeader(name, value)` is called.
-      * Passing illegal value as value will result in a TypeError being thrown.
-      * - Undefined value error is identified by `code: 'ERR_HTTP_INVALID_HEADER_VALUE'`.
-      * - Invalid value character error is identified by `code: 'ERR_INVALID_CHAR'`.
+      * Performs the low-level validations on the provided `value` that are done when`res.setHeader(name, value)` is called.
+      *
+      * Passing illegal value as `value` will result in a `TypeError` being thrown.
+      *
+      * * Undefined value error is identified by `code: 'ERR_HTTP_INVALID_HEADER_VALUE'`.
+      * * Invalid value character error is identified by `code: 'ERR_INVALID_CHAR'`.
+      *
+      * It is not necessary to use this method before passing headers to an HTTP request
+      * or response. The HTTP module will automatically validate such headers.
+      *
+      * Examples:
+      *
+      * ```js
+      * const { validateHeaderValue } = require('node:http');
+      *
+      * try {
+      *   validateHeaderValue('x-my-header', undefined);
+      * } catch (err) {
+      *   console.error(err instanceof TypeError); // --> true
+      *   console.error(err.code === 'ERR_HTTP_INVALID_HEADER_VALUE'); // --> true
+      *   console.error(err.message); // --> 'Invalid value "undefined" for header "x-my-header"'
+      * }
+      *
+      * try {
+      *   validateHeaderValue('x-my-header', 'oʊmɪɡə');
+      * } catch (err) {
+      *   console.error(err instanceof TypeError); // --> true
+      *   console.error(err.code === 'ERR_INVALID_CHAR'); // --> true
+      *   console.error(err.message); // --> 'Invalid character in header content ["x-my-header"]'
+      * }
+      * ```
+      * @since v14.3.0
       * @param name Header name
       * @param value Header value
-      * @since v14.3.0
       */
     def validateHeaderValue(name: String, value: String): Unit = js.native
   }
@@ -545,12 +596,12 @@ object anon {
     /**
       * ```js
       * // curl -k https://localhost:8000/
-      * const https = require('https');
-      * const fs = require('fs');
+      * const https = require('node:https');
+      * const fs = require('node:fs');
       *
       * const options = {
       *   key: fs.readFileSync('test/fixtures/keys/agent2-key.pem'),
-      *   cert: fs.readFileSync('test/fixtures/keys/agent2-cert.pem')
+      *   cert: fs.readFileSync('test/fixtures/keys/agent2-cert.pem'),
       * };
       *
       * https.createServer(options, (req, res) => {
@@ -562,12 +613,12 @@ object anon {
       * Or
       *
       * ```js
-      * const https = require('https');
-      * const fs = require('fs');
+      * const https = require('node:https');
+      * const fs = require('node:fs');
       *
       * const options = {
       *   pfx: fs.readFileSync('test/fixtures/test_cert.pfx'),
-      *   passphrase: 'sample'
+      *   passphrase: 'sample',
       * };
       *
       * https.createServer(options, (req, res) => {
@@ -611,7 +662,7 @@ object anon {
       * string, it is automatically parsed with `new URL()`. If it is a `URL` object, it will be automatically converted to an ordinary `options` object.
       *
       * ```js
-      * const https = require('https');
+      * const https = require('node:https');
       *
       * https.get('https://encrypted.google.com/', (res) => {
       *   console.log('statusCode:', res.statusCode);
@@ -671,13 +722,13 @@ object anon {
       * upload a file with a POST request, then write to the `ClientRequest` object.
       *
       * ```js
-      * const https = require('https');
+      * const https = require('node:https');
       *
       * const options = {
       *   hostname: 'encrypted.google.com',
       *   port: 443,
       *   path: '/',
-      *   method: 'GET'
+      *   method: 'GET',
       * };
       *
       * const req = https.request(options, (res) => {
@@ -704,7 +755,7 @@ object anon {
       *   path: '/',
       *   method: 'GET',
       *   key: fs.readFileSync('test/fixtures/keys/agent2-key.pem'),
-      *   cert: fs.readFileSync('test/fixtures/keys/agent2-cert.pem')
+      *   cert: fs.readFileSync('test/fixtures/keys/agent2-cert.pem'),
       * };
       * options.agent = new https.Agent(options);
       *
@@ -723,7 +774,7 @@ object anon {
       *   method: 'GET',
       *   key: fs.readFileSync('test/fixtures/keys/agent2-key.pem'),
       *   cert: fs.readFileSync('test/fixtures/keys/agent2-cert.pem'),
-      *   agent: false
+      *   agent: false,
       * };
       *
       * const req = https.request(options, (res) => {
@@ -744,9 +795,9 @@ object anon {
       * Example pinning on certificate fingerprint, or the public key (similar to`pin-sha256`):
       *
       * ```js
-      * const tls = require('tls');
-      * const https = require('https');
-      * const crypto = require('crypto');
+      * const tls = require('node:tls');
+      * const https = require('node:https');
+      * const crypto = require('node:crypto');
       *
       * function sha256(s) {
       *   return crypto.createHash('sha256').update(s).digest('base64');
@@ -763,7 +814,7 @@ object anon {
       *       return err;
       *     }
       *
-      *     // Pin the public key, similar to HPKP pin-sha25 pinning
+      *     // Pin the public key, similar to HPKP pin-sha256 pinning
       *     const pubkey256 = 'pL1+qb9HTMRZJmuC/bB/ZI9d302BYrrqiVuRyW+DGrU=';
       *     if (sha256(cert.pubkey) !== pubkey256) {
       *       const msg = 'Certificate verification error: ' +

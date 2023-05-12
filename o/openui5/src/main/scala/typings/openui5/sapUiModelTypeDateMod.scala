@@ -1,7 +1,7 @@
 package typings.openui5
 
 import typings.openui5.anon.MaximumMinimum
-import typings.openui5.anon.`37`
+import typings.openui5.anon.`45`
 import typings.openui5.sap.ClassInfo
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -20,7 +20,7 @@ object sapUiModelTypeDateMod {
       * Formatting options. For a list of all available options, see {@link sap.ui.core.format.DateFormat.getDateInstance
       * DateFormat}.
       */
-    oFormatOptions: `37`) = this()
+    oFormatOptions: `45`) = this()
     def this(
       /**
       * Formatting options. For a list of all available options, see {@link sap.ui.core.format.DateFormat.getDateInstance
@@ -37,7 +37,7 @@ object sapUiModelTypeDateMod {
       * Formatting options. For a list of all available options, see {@link sap.ui.core.format.DateFormat.getDateInstance
       * DateFormat}.
       */
-    oFormatOptions: `37`,
+    oFormatOptions: `45`,
       /**
       * Value constraints
       */
@@ -117,6 +117,8 @@ object sapUiModelTypeDateMod {
     extends typings.openui5.sapUiModelSimpleTypeMod.default {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns the output pattern.
       * See:
       * 	sap.ui.core.format.DateFormat.getDateInstance

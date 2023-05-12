@@ -70,7 +70,7 @@ trait TextStyle extends StObject {
   /**
     * The font size.
     */
-  var fontSize: String = js.native
+  var fontSize: String | Double = js.native
   
   /**
     * The font style.
@@ -164,7 +164,7 @@ trait TextStyle extends StObject {
   
   def setFontSize(size: String): Text = js.native
   /**
-    * Set the font size.
+    * Set the font size. Can be a string with a valid CSS unit, i.e. `16px`, or a number.
     * @param size The font size.
     */
   def setFontSize(size: Double): Text = js.native

@@ -34,7 +34,7 @@ trait AvatarGroupProps extends StObject {
   
   var href: js.UndefOr[String] = js.undefined
   
-  var onClick: js.UndefOr[OnTapType] = js.undefined
+  var onClick: js.UndefOr[TapAreaEventHandlerType] = js.undefined
   
   var role: js.UndefOr[button | link] = js.undefined
   

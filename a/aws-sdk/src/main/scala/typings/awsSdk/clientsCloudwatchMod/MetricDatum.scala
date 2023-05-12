@@ -12,7 +12,7 @@ trait MetricDatum extends StObject {
   var Counts: js.UndefOr[typings.awsSdk.clientsCloudwatchMod.Counts] = js.undefined
   
   /**
-    * The dimensions associated with the metric.
+    * The dimensions associated with the metric. 
     */
   var Dimensions: js.UndefOr[typings.awsSdk.clientsCloudwatchMod.Dimensions] = js.undefined
   

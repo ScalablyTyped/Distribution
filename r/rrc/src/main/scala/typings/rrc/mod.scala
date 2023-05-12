@@ -25,7 +25,7 @@ object mod {
     def this(props: SwitchProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SwitchProps, context: Any) = this()
   }
@@ -37,7 +37,7 @@ object mod {
     def this(props: OnUpdateProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: OnUpdateProps, context: Any) = this()
   }
@@ -49,7 +49,7 @@ object mod {
     def this(props: ScrollIntoViewProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ScrollIntoViewProps, context: Any) = this()
   }
@@ -61,7 +61,7 @@ object mod {
     def this(props: StatusProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: StatusProps, context: Any) = this()
   }

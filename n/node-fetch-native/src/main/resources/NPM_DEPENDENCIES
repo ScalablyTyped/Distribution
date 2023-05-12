@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "node-fetch-native" : "1.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "node-fetch-native" : "1.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

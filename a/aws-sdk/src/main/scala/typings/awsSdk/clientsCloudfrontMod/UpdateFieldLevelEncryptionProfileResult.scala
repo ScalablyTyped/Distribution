@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateFieldLevelEncryptionProfileResult extends StObject {
   
   /**
-    * The result of the field-level encryption profile request. 
+    * The result of the field-level encryption profile request.
     */
   var ETag: js.UndefOr[String] = js.undefined
   

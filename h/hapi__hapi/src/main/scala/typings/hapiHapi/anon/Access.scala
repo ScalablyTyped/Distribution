@@ -1,6 +1,6 @@
 package typings.hapiHapi.anon
 
-import typings.hapiHapi.mod.ReqRefDefaults
+import typings.hapiHapi.libTypesRequestMod.ReqRefDefaults
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,11 +17,11 @@ trait Access extends StObject {
     *     requires any authentication.
     * [See docs](https://hapijs.com/api/17.0.1#-requestrouteauthaccessrequest)
     */
-  def access(request: typings.hapiHapi.mod.Request[ReqRefDefaults]): Boolean
+  def access(request: typings.hapiHapi.libTypesRequestMod.Request[ReqRefDefaults]): Boolean
 }
 object Access {
   
-  inline def apply(access: typings.hapiHapi.mod.Request[ReqRefDefaults] => Boolean): Access = {
+  inline def apply(access: typings.hapiHapi.libTypesRequestMod.Request[ReqRefDefaults] => Boolean): Access = {
     val __obj = js.Dynamic.literal(access = js.Any.fromFunction1(access))
     __obj.asInstanceOf[Access]
   }
@@ -29,6 +29,6 @@ object Access {
   @scala.inline
   implicit open class MutableBuilder[Self <: Access] (val x: Self) extends AnyVal {
     
-    inline def setAccess(value: typings.hapiHapi.mod.Request[ReqRefDefaults] => Boolean): Self = StObject.set(x, "access", js.Any.fromFunction1(value))
+    inline def setAccess(value: typings.hapiHapi.libTypesRequestMod.Request[ReqRefDefaults] => Boolean): Self = StObject.set(x, "access", js.Any.fromFunction1(value))
   }
 }

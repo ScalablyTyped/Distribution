@@ -24,7 +24,6 @@ open class Polyline protected () extends Object {
   /**
     * Calculate the polygon min and max point from points array,
     * returning an object with left, top, width, height to measure the polygon size
-    * @private
     * @return {Object} object.left X coordinate of the polygon leftmost point
     * @return {Object} object.top Y coordinate of the polygon topmost point
     * @return {Object} object.width distance between X coordinates of the polygon leftmost and rightmost point

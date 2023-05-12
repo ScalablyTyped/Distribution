@@ -1,6 +1,8 @@
 package typings.rcPicker
 
 import typings.rcPicker.esGenerateMod.GenerateConfig
+import typings.rcPicker.esInterfaceMod.CellRender
+import typings.rcPicker.esInterfaceMod.CellRenderInfo
 import typings.rcPicker.esInterfaceMod.Locale
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
@@ -22,13 +24,13 @@ object esPanelsMonthPanelMonthBodyMod {
   
   trait MonthBodyProps[DateType] extends StObject {
     
+    var cellRender: js.UndefOr[CellRender[DateType, DateType]] = js.undefined
+    
     var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.undefined
     
     var generateConfig: GenerateConfig[DateType]
     
     var locale: Locale
-    
-    var monthCellRender: js.UndefOr[MonthCellRender[DateType]] = js.undefined
     
     def onSelect(value: DateType): Unit
     
@@ -54,6 +56,10 @@ object esPanelsMonthPanelMonthBodyMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: MonthBodyProps[?], DateType] (val x: Self & MonthBodyProps[DateType]) extends AnyVal {
       
+      inline def setCellRender(value: (DateType, /* info */ CellRenderInfo[DateType]) => ReactNode): Self = StObject.set(x, "cellRender", js.Any.fromFunction2(value))
+      
+      inline def setCellRenderUndefined: Self = StObject.set(x, "cellRender", js.undefined)
+      
       inline def setDisabledDate(value: /* date */ DateType => Boolean): Self = StObject.set(x, "disabledDate", js.Any.fromFunction1(value))
       
       inline def setDisabledDateUndefined: Self = StObject.set(x, "disabledDate", js.undefined)
@@ -61,10 +67,6 @@ object esPanelsMonthPanelMonthBodyMod {
       inline def setGenerateConfig(value: GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
       
       inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
-      
-      inline def setMonthCellRender(value: (DateType, /* locale */ Locale) => ReactNode): Self = StObject.set(x, "monthCellRender", js.Any.fromFunction2(value))
-      
-      inline def setMonthCellRenderUndefined: Self = StObject.set(x, "monthCellRender", js.undefined)
       
       inline def setOnSelect(value: DateType => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       

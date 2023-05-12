@@ -1,7 +1,7 @@
 package typings.fhir.r5Mod
 
-import typings.fhir.fhirStrings.entity
 import typings.fhir.fhirStrings.person_
+import typings.fhir.fhirStrings.system
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,38 +10,38 @@ trait ExampleScenarioActor
   extends StObject
      with BackboneElement {
   
-  var _actorId: js.UndefOr[Element] = js.undefined
-  
   var _description: js.UndefOr[Element] = js.undefined
   
-  var _name: js.UndefOr[Element] = js.undefined
+  var _key: js.UndefOr[Element] = js.undefined
+  
+  var _title: js.UndefOr[Element] = js.undefined
   
   var _type: js.UndefOr[Element] = js.undefined
   
   /**
-    * should this be called ID or acronym?
-    */
-  var actorId: String
-  
-  /**
-    * Cardinality: is name and description 1..1?
+    * An explanation of who/what the actor is and its role in the scenario.
     */
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * Cardinality: is name and description 1..1?
+    * A unique string within the scenario that is used to reference the actor.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var key: String
   
   /**
-    * The type of actor - person or system.
+    * The human-readable name for the actor used when rendering the scenario.
     */
-  var `type`: person_ | entity
+  var title: String
+  
+  /**
+    * The category of actor - person or system.
+    */
+  var `type`: person_ | system
 }
 object ExampleScenarioActor {
   
-  inline def apply(actorId: String, `type`: person_ | entity): ExampleScenarioActor = {
-    val __obj = js.Dynamic.literal(actorId = actorId.asInstanceOf[js.Any])
+  inline def apply(key: String, title: String, `type`: person_ | system): ExampleScenarioActor = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExampleScenarioActor]
   }
@@ -49,29 +49,27 @@ object ExampleScenarioActor {
   @scala.inline
   implicit open class MutableBuilder[Self <: ExampleScenarioActor] (val x: Self) extends AnyVal {
     
-    inline def setActorId(value: String): Self = StObject.set(x, "actorId", value.asInstanceOf[js.Any])
-    
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    inline def setType(value: person_ | entity): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    
-    inline def set_actorId(value: Element): Self = StObject.set(x, "_actorId", value.asInstanceOf[js.Any])
-    
-    inline def set_actorIdUndefined: Self = StObject.set(x, "_actorId", js.undefined)
+    inline def setType(value: person_ | system): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
     inline def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
-    inline def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
+    inline def set_key(value: Element): Self = StObject.set(x, "_key", value.asInstanceOf[js.Any])
     
-    inline def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
+    inline def set_keyUndefined: Self = StObject.set(x, "_key", js.undefined)
+    
+    inline def set_title(value: Element): Self = StObject.set(x, "_title", value.asInstanceOf[js.Any])
+    
+    inline def set_titleUndefined: Self = StObject.set(x, "_title", js.undefined)
     
     inline def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     

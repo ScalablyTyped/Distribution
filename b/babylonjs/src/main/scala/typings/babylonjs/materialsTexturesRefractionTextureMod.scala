@@ -15,7 +15,7 @@ object materialsTexturesRefractionTextureMod {
     /**
       * Creates a refraction texture used by refraction channel of the standard material.
       * It is like a mirror but to see through a material.
-      * @see https://doc.babylonjs.com/how_to/reflect#refraction
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/reflectionTexture#refraction
       * @param name Define the texture name
       * @param size Define the size of the underlying texture
       * @param scene Define the scene the refraction belongs to
@@ -34,7 +34,7 @@ object materialsTexturesRefractionTextureMod {
     /**
       * Define the reflection plane we want to use. The refractionPlane is usually set to the constructed refractor.
       * It is possible to directly set the refractionPlane by directly using a Plane(a, b, c, d) where a, b and c give the plane normal vector (a, b, c) and d is a scalar displacement from the refractionPlane to the origin. However in all but the very simplest of situations it is more straight forward to set it to the refractor as stated in the doc.
-      * @see https://doc.babylonjs.com/how_to/reflect#refraction
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/reflectionTexture#refraction
       */
     var refractionPlane: Plane = js.native
   }

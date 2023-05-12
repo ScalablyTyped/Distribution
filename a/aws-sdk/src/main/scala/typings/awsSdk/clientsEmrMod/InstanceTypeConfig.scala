@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InstanceTypeConfig extends StObject {
   
   /**
-    * The bid price for each EC2 Spot Instance type as defined by InstanceType. Expressed in USD. If neither BidPrice nor BidPriceAsPercentageOfOnDemandPrice is provided, BidPriceAsPercentageOfOnDemandPrice defaults to 100%. 
+    * The bid price for each Amazon EC2 Spot Instance type as defined by InstanceType. Expressed in USD. If neither BidPrice nor BidPriceAsPercentageOfOnDemandPrice is provided, BidPriceAsPercentageOfOnDemandPrice defaults to 100%. 
     */
   var BidPrice: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
-    * The bid price, as a percentage of On-Demand price, for each EC2 Spot Instance as defined by InstanceType. Expressed as a number (for example, 20 specifies 20%). If neither BidPrice nor BidPriceAsPercentageOfOnDemandPrice is provided, BidPriceAsPercentageOfOnDemandPrice defaults to 100%.
+    * The bid price, as a percentage of On-Demand price, for each Amazon EC2 Spot Instance as defined by InstanceType. Expressed as a number (for example, 20 specifies 20%). If neither BidPrice nor BidPriceAsPercentageOfOnDemandPrice is provided, BidPriceAsPercentageOfOnDemandPrice defaults to 100%.
     */
   var BidPriceAsPercentageOfOnDemandPrice: js.UndefOr[NonNegativeDouble] = js.undefined
   
@@ -32,7 +32,7 @@ trait InstanceTypeConfig extends StObject {
   var EbsConfiguration: js.UndefOr[typings.awsSdk.clientsEmrMod.EbsConfiguration] = js.undefined
   
   /**
-    * An EC2 instance type, such as m3.xlarge. 
+    * An Amazon EC2 instance type, such as m3.xlarge. 
     */
   var InstanceType: typings.awsSdk.clientsEmrMod.InstanceType
   

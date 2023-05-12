@@ -67,7 +67,7 @@ trait Task extends StObject {
   var desiredStatus: js.UndefOr[String] = js.undefined
   
   /**
-    * Determines whether execute command functionality is enabled for this task. If true, execute command functionality is enabled on all the containers in the task.
+    * Determines whether execute command functionality is turned on for this task. If true, execute command functionality is turned on all the containers in the task.
     */
   var enableExecuteCommand: js.UndefOr[Boolean] = js.undefined
   

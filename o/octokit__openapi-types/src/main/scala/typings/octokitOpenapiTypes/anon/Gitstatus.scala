@@ -2,7 +2,6 @@ package typings.octokitOpenapiTypes.anon
 
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Available
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Awaiting
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Deleted
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.EastUs
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Exporting
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Failed
@@ -25,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Gitstatus extends StObject {
   
-  var billable_owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
+  var billable_owner: Avatarurl
   
   /**
     * Format: date-time
@@ -67,12 +66,6 @@ trait Gitstatus extends StObject {
   var idle_timeout_notice: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * @description The text to display to a user when a codespace has been stopped for a potentially actionable reason.
-    * @example you've used 100% of your spending limit for Codespaces
-    */
-  var last_known_stop_notice: js.UndefOr[String | Null] = js.undefined
-  
-  /**
     * Format: date-time
     * @description Last known time this codespace was started.
     * @example 2011-01-26T19:01:12Z
@@ -80,13 +73,13 @@ trait Gitstatus extends StObject {
   var last_used_at: String
   
   /**
-    * @description The Azure region where this codespace is located.
+    * @description The initally assigned location of a new codespace.
     * @example WestUs2
     * @enum {string}
     */
   var location: EastUs | SouthEastAsia | WestEurope | WestUs2
   
-  var machine: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-codespace-machine'] */ js.Any
+  var machine: Cpus | Null
   
   /**
     * Format: uri
@@ -100,7 +93,7 @@ trait Gitstatus extends StObject {
     */
   var name: String
   
-  var owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
+  var owner: Avatarurl
   
   /** @description Whether or not a codespace has a pending async operation. This would mean that the codespace is temporarily unavailable. The only thing that you can do with a codespace in this state is delete it. */
   var pending_operation: js.UndefOr[Boolean | Null] = js.undefined
@@ -116,13 +109,19 @@ trait Gitstatus extends StObject {
   
   /**
     * Format: uri
+    * @description API URL to publish this codespace to a new repository.
+    */
+  var publish_url: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Format: uri
     * @description API URL for the Pull Request associated with this codespace, if any.
     */
   var pulls_url: String | Null
   
   var recent_folders: js.Array[String]
   
-  var repository: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['minimal-repository'] */ js.Any
+  var repository: Contributorsurl
   
   /**
     * Format: date-time
@@ -150,7 +149,7 @@ trait Gitstatus extends StObject {
     * @example Available
     * @enum {string}
     */
-  var state: Unknown | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Created | Queued | Provisioning | Available | Awaiting | Unavailable | Deleted | Moved | Shutdown | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Archived | Starting | ShuttingDown | Failed | Exporting | Updating | Rebuilding
+  var state: Unknown | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Created | Queued | Provisioning | Available | Awaiting | Unavailable | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Deleted | Moved | Shutdown | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Archived | Starting | ShuttingDown | Failed | Exporting | Updating | Rebuilding
   
   /**
     * Format: uri
@@ -179,35 +178,32 @@ trait Gitstatus extends StObject {
 object Gitstatus {
   
   inline def apply(
-    billable_owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any,
+    billable_owner: Avatarurl,
     created_at: String,
     git_status: Ahead,
     id: Double,
     last_used_at: String,
     location: EastUs | SouthEastAsia | WestEurope | WestUs2,
-    machine: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-codespace-machine'] */ js.Any,
     machines_url: String,
     name: String,
-    owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any,
+    owner: Avatarurl,
     recent_folders: js.Array[String],
-    repository: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['minimal-repository'] */ js.Any,
+    repository: Contributorsurl,
     start_url: String,
-    state: Unknown | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Created | Queued | Provisioning | Available | Awaiting | Unavailable | Deleted | Moved | Shutdown | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Archived | Starting | ShuttingDown | Failed | Exporting | Updating | Rebuilding,
+    state: Unknown | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Created | Queued | Provisioning | Available | Awaiting | Unavailable | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Deleted | Moved | Shutdown | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Archived | Starting | ShuttingDown | Failed | Exporting | Updating | Rebuilding,
     stop_url: String,
     updated_at: String,
     url: String,
     web_url: String
   ): Gitstatus = {
-    val __obj = js.Dynamic.literal(billable_owner = billable_owner.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], git_status = git_status.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last_used_at = last_used_at.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], machine = machine.asInstanceOf[js.Any], machines_url = machines_url.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], recent_folders = recent_folders.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any], start_url = start_url.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], stop_url = stop_url.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], web_url = web_url.asInstanceOf[js.Any], environment_id = null, idle_timeout_minutes = null, prebuild = null, pulls_url = null)
+    val __obj = js.Dynamic.literal(billable_owner = billable_owner.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], git_status = git_status.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last_used_at = last_used_at.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], machines_url = machines_url.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], recent_folders = recent_folders.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any], start_url = start_url.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], stop_url = stop_url.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], web_url = web_url.asInstanceOf[js.Any], environment_id = null, idle_timeout_minutes = null, machine = null, prebuild = null, pulls_url = null)
     __obj.asInstanceOf[Gitstatus]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Gitstatus] (val x: Self) extends AnyVal {
     
-    inline def setBillable_owner(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
-    ): Self = StObject.set(x, "billable_owner", value.asInstanceOf[js.Any])
+    inline def setBillable_owner(value: Avatarurl): Self = StObject.set(x, "billable_owner", value.asInstanceOf[js.Any])
     
     inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
@@ -241,27 +237,19 @@ object Gitstatus {
     
     inline def setIdle_timeout_noticeUndefined: Self = StObject.set(x, "idle_timeout_notice", js.undefined)
     
-    inline def setLast_known_stop_notice(value: String): Self = StObject.set(x, "last_known_stop_notice", value.asInstanceOf[js.Any])
-    
-    inline def setLast_known_stop_noticeNull: Self = StObject.set(x, "last_known_stop_notice", null)
-    
-    inline def setLast_known_stop_noticeUndefined: Self = StObject.set(x, "last_known_stop_notice", js.undefined)
-    
     inline def setLast_used_at(value: String): Self = StObject.set(x, "last_used_at", value.asInstanceOf[js.Any])
     
     inline def setLocation(value: EastUs | SouthEastAsia | WestEurope | WestUs2): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    inline def setMachine(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-codespace-machine'] */ js.Any
-    ): Self = StObject.set(x, "machine", value.asInstanceOf[js.Any])
+    inline def setMachine(value: Cpus): Self = StObject.set(x, "machine", value.asInstanceOf[js.Any])
+    
+    inline def setMachineNull: Self = StObject.set(x, "machine", null)
     
     inline def setMachines_url(value: String): Self = StObject.set(x, "machines_url", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setOwner(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
-    ): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Avatarurl): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setPending_operation(value: Boolean): Self = StObject.set(x, "pending_operation", value.asInstanceOf[js.Any])
     
@@ -279,6 +267,12 @@ object Gitstatus {
     
     inline def setPrebuildNull: Self = StObject.set(x, "prebuild", null)
     
+    inline def setPublish_url(value: String): Self = StObject.set(x, "publish_url", value.asInstanceOf[js.Any])
+    
+    inline def setPublish_urlNull: Self = StObject.set(x, "publish_url", null)
+    
+    inline def setPublish_urlUndefined: Self = StObject.set(x, "publish_url", js.undefined)
+    
     inline def setPulls_url(value: String): Self = StObject.set(x, "pulls_url", value.asInstanceOf[js.Any])
     
     inline def setPulls_urlNull: Self = StObject.set(x, "pulls_url", null)
@@ -287,9 +281,7 @@ object Gitstatus {
     
     inline def setRecent_foldersVarargs(value: String*): Self = StObject.set(x, "recent_folders", js.Array(value*))
     
-    inline def setRepository(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['minimal-repository'] */ js.Any
-    ): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: Contributorsurl): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
     inline def setRetention_expires_at(value: String): Self = StObject.set(x, "retention_expires_at", value.asInstanceOf[js.Any])
     
@@ -310,7 +302,7 @@ object Gitstatus {
     inline def setStart_url(value: String): Self = StObject.set(x, "start_url", value.asInstanceOf[js.Any])
     
     inline def setState(
-      value: Unknown | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Created | Queued | Provisioning | Available | Awaiting | Unavailable | Deleted | Moved | Shutdown | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Archived | Starting | ShuttingDown | Failed | Exporting | Updating | Rebuilding
+      value: Unknown | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Created | Queued | Provisioning | Available | Awaiting | Unavailable | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Deleted | Moved | Shutdown | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Archived | Starting | ShuttingDown | Failed | Exporting | Updating | Rebuilding
     ): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStop_url(value: String): Self = StObject.set(x, "stop_url", value.asInstanceOf[js.Any])

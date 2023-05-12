@@ -1,7 +1,7 @@
 
 # Scala.js typings for katex
 
-Typings are for version 0.14
+Typings are for version 0.16
 
 ## Library description:
 Fast math typesetting for the web.

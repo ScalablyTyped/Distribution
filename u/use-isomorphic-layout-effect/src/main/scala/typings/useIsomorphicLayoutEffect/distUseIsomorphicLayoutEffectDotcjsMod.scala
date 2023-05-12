@@ -23,7 +23,7 @@ object distUseIsomorphicLayoutEffectDotcjsMod {
     * `componentDidMount` and `componentDidUpdate`.
     *
     * @version 16.8.0
-    * @see https://reactjs.org/docs/hooks-reference.html#uselayouteffect
+    * @see https://react.dev/reference/react/useLayoutEffect
     */
   /* was `typeof useLayoutEffect` */
   inline def default(effect: EffectCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(effect.asInstanceOf[js.Any]).asInstanceOf[Unit]

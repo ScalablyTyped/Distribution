@@ -3,10 +3,10 @@ package typings.sentryBrowser
 import org.scalablytyped.runtime.StringDictionary
 import typings.sentryBrowser.anon.Email
 import typings.sentryBrowser.anon.Mechanism
+import typings.sentryBrowser.typesProfilingJsSelfProfilingMod.global.Window
 import typings.sentryTypes.typesDsnMod.DsnLike
 import typings.sentryTypes.typesWrappedfunctionMod.WrappedFunction
 import typings.sentryUtils.typesWorldwideMod.InternalGlobal
-import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,7 +55,7 @@ object typesHelpersMod {
     var lang: js.UndefOr[String] = js.undefined
     
     /** Callback after reportDialog showed up */
-    var onLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
+    var onLoad: js.UndefOr[js.ThisFunction0[/* this */ Unit, Unit]] = js.undefined
     
     var subtitle: js.UndefOr[String] = js.undefined
     
@@ -117,7 +117,7 @@ object typesHelpersMod {
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      inline def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
+      inline def setOnLoad(value: js.ThisFunction0[/* this */ Unit, Unit]): Self = StObject.set(x, "onLoad", value.asInstanceOf[js.Any])
       
       inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       

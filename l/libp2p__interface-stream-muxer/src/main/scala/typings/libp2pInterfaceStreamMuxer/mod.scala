@@ -1,9 +1,12 @@
 package typings.libp2pInterfaceStreamMuxer
 
 import typings.itStreamTypes.mod.Duplex
+import typings.itStreamTypes.mod.Source
 import typings.libp2pInterfaceConnection.mod.Direction
 import typings.libp2pInterfaceConnection.mod.Stream
 import typings.libp2pInterfaces.mod.AbortOptions
+import typings.std.AsyncGenerator
+import typings.uint8arraylist.mod.Uint8ArrayList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +16,11 @@ object mod {
   @js.native
   trait StreamMuxer
     extends StObject
-       with Duplex[js.typedarray.Uint8Array, js.typedarray.Uint8Array, js.Promise[Unit]] {
+       with Duplex[
+          AsyncGenerator[js.typedarray.Uint8Array, Any, Any], 
+          Source[Uint8ArrayList | js.typedarray.Uint8Array], 
+          js.Promise[Unit]
+        ] {
     
     /**
       * Close or abort all tracked streams and stop the muxer
@@ -28,17 +35,29 @@ object mod {
     def newStream(): Stream | js.Promise[Stream] = js.native
     def newStream(name: String): Stream | js.Promise[Stream] = js.native
     
+    /**
+      * The protocol used to select this muxer during connection opening
+      */
     var protocol: String = js.native
     
+    /**
+      * A list of streams that are currently open. Closed streams will not be returned.
+      */
     val streams: js.Array[Stream] = js.native
   }
   
   @js.native
   trait StreamMuxerFactory extends StObject {
     
+    /**
+      * Creates a new stream muxer to be used with a new connection
+      */
     def createStreamMuxer(): StreamMuxer = js.native
     def createStreamMuxer(init: StreamMuxerInit): StreamMuxer = js.native
     
+    /**
+      * The protocol used to select this muxer during connection opening
+      */
     var protocol: String = js.native
   }
   
@@ -51,8 +70,14 @@ object mod {
       */
     var direction: js.UndefOr[Direction] = js.undefined
     
+    /**
+      * A callback function invoked every time an incoming stream is opened
+      */
     var onIncomingStream: js.UndefOr[js.Function1[/* stream */ Stream, Unit]] = js.undefined
     
+    /**
+      * A callback function invoke every time a stream ends
+      */
     var onStreamEnd: js.UndefOr[js.Function1[/* stream */ Stream, Unit]] = js.undefined
   }
   object StreamMuxerInit {

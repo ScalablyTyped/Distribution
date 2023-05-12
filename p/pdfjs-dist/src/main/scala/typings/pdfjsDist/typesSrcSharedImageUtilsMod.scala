@@ -12,5 +12,9 @@ object typesSrcSharedImageUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def applyMaskImageData(param0: Dest): DestPos = ^.asInstanceOf[js.Dynamic].applyDynamic("applyMaskImageData")(param0.asInstanceOf[js.Any]).asInstanceOf[DestPos]
+  inline def convertBlackAndWhiteToRGBA(param0: Dest): DestPos = ^.asInstanceOf[js.Dynamic].applyDynamic("convertBlackAndWhiteToRGBA")(param0.asInstanceOf[js.Any]).asInstanceOf[DestPos]
+  
+  inline def convertToRGBA(params: Any): DestPos | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToRGBA")(params.asInstanceOf[js.Any]).asInstanceOf[DestPos | Null]
+  
+  inline def grayToRGBA(src: Any, dest: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("grayToRGBA")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

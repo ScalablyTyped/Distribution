@@ -206,7 +206,7 @@ type Exposes = (js.Array[String | ExposesObject]) | ExposesObject
   */
 type ExposesObject = StringDictionary[String | ExposesConfig | js.Array[String]]
 
-type Expression = UnaryExpression | ThisExpression | ArrayExpression | ObjectExpression | FunctionExpression | ArrowFunctionExpression | YieldExpression | SimpleLiteral | RegExpLiteral | BigIntLiteral | UpdateExpression | BinaryExpression | AssignmentExpression | LogicalExpression | MemberExpression | ConditionalExpression | SimpleCallExpression | NewExpression | SequenceExpression | TemplateLiteral | TaggedTemplateExpression | ClassExpression | MetaProperty | Identifier | AwaitExpression | ImportExpression | ChainExpression
+type Expression = UnaryExpression | ArrayExpression | ArrowFunctionExpression | AssignmentExpression | AwaitExpression | BinaryExpression | SimpleCallExpression | NewExpression | ChainExpression | ClassExpression | ConditionalExpression | FunctionExpression | Identifier | ImportExpression | SimpleLiteral | RegExpLiteral | BigIntLiteral | LogicalExpression | MemberExpression | MetaProperty | ObjectExpression | SequenceExpression | TaggedTemplateExpression | TemplateLiteral | ThisExpression | UpdateExpression | YieldExpression
 
 type ExtensionAliasOptions = StringDictionary[String | js.Array[String]]
 
@@ -277,13 +277,15 @@ type LoaderDefinitionFunction[OptionsType, ContextAdditions] = js.ThisFunction3[
 /* additionalData */ js.UndefOr[AdditionalData], 
 String | Unit | Buffer | (js.Promise[String | Buffer])]
 
+type Matcher = String | js.RegExp | (js.Array[js.RegExp | String])
+
 type ModuleFilterItemTypes = String | js.RegExp | (js.Function3[
 /* name */ String, 
 /* module */ StatsModule, 
 /* type */ module | chunk | `root-of-chunk` | nested, 
 Boolean])
 
-type NodeEstreeIndex = /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 74, starting with typings.estree.mod.UnaryExpression, typings.estree.mod.ThisExpression, typings.estree.mod.ArrayExpression */ Any
+type NodeEstreeIndex = /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 74, starting with typings.estree.mod.UnaryExpression, typings.estree.mod.ArrayExpression, typings.estree.mod.ArrowFunctionExpression */ Any
 
 type NormalizedStatsOptions = KnownNormalizedStatsOptions & OmitStatsOptionscontextch & (Record[String, Any])
 

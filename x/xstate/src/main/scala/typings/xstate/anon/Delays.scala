@@ -1,44 +1,35 @@
 package typings.xstate.anon
 
-import typings.xstate.libTypesMod.MachineOptionsDelays
-import typings.xstate.libTypesMod.Prop
-import typings.xstate.xstateStrings.eventsCausingDelays
-import typings.xstate.xstateStrings.indexedEvents
-import typings.xstate.xstateStrings.resolved
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Delays[TContext, TResolvedTypesMeta] extends StObject {
+trait Delays extends StObject {
   
-  var delays: js.UndefOr[
-    MachineOptionsDelays[
-      TContext, 
-      TResolvedTypesMeta, 
-      Prop[Prop[TResolvedTypesMeta, resolved], eventsCausingDelays], 
-      Prop[Prop[TResolvedTypesMeta, resolved], indexedEvents]
-    ]
-  ] = js.undefined
+  var actions: String
+  
+  var delays: String
+  
+  var guards: String
+  
+  var services: String
 }
 object Delays {
   
-  inline def apply[TContext, TResolvedTypesMeta](): Delays[TContext, TResolvedTypesMeta] = {
-    val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[Delays[TContext, TResolvedTypesMeta]]
+  inline def apply(actions: String, delays: String, guards: String, services: String): Delays = {
+    val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], delays = delays.asInstanceOf[js.Any], guards = guards.asInstanceOf[js.Any], services = services.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Delays]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: Delays[?, ?], TContext, TResolvedTypesMeta] (val x: Self & (Delays[TContext, TResolvedTypesMeta])) extends AnyVal {
+  implicit open class MutableBuilder[Self <: Delays] (val x: Self) extends AnyVal {
     
-    inline def setDelays(
-      value: MachineOptionsDelays[
-          TContext, 
-          TResolvedTypesMeta, 
-          Prop[Prop[TResolvedTypesMeta, resolved], eventsCausingDelays], 
-          Prop[Prop[TResolvedTypesMeta, resolved], indexedEvents]
-        ]
-    ): Self = StObject.set(x, "delays", value.asInstanceOf[js.Any])
+    inline def setActions(value: String): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    inline def setDelaysUndefined: Self = StObject.set(x, "delays", js.undefined)
+    inline def setDelays(value: String): Self = StObject.set(x, "delays", value.asInstanceOf[js.Any])
+    
+    inline def setGuards(value: String): Self = StObject.set(x, "guards", value.asInstanceOf[js.Any])
+    
+    inline def setServices(value: String): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
   }
 }

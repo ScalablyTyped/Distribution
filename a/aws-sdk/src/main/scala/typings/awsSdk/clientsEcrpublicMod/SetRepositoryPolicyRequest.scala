@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SetRepositoryPolicyRequest extends StObject {
   
   /**
-    * If the policy you are attempting to set on a repository policy would prevent you from setting another policy in the future, you must force the SetRepositoryPolicy operation. This is intended to prevent accidental repository lock outs.
+    * If the policy that you want to set on a repository policy would prevent you from setting another policy in the future, you must force the SetRepositoryPolicy operation. This prevents accidental repository lockouts.
     */
   var force: js.UndefOr[ForceFlag] = js.undefined
   
@@ -17,7 +17,7 @@ trait SetRepositoryPolicyRequest extends StObject {
   var policyText: RepositoryPolicyText
   
   /**
-    * The AWS account ID associated with the registry that contains the repository. If you do not specify a registry, the default public registry is assumed.
+    * The Amazon Web Services account ID that's associated with the registry that contains the repository. If you do not specify a registry, the default public registry is assumed.
     */
   var registryId: js.UndefOr[RegistryId] = js.undefined
   

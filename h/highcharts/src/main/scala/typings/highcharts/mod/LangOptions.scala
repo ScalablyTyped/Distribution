@@ -12,6 +12,10 @@ trait LangOptions extends StObject {
     * a description of the module and information on its features, see
     * Highcharts Accessibility.
     *
+    * The lang options use Format Strings with variables that are replaced at
+    * run time. These variables should be used when available, to avoid
+    * duplicating text that is defined elsewhere.
+    *
     * For more dynamic control over the accessibility functionality, see
     * accessibility.point.descriptionFormatter,
     * accessibility.series.descriptionFormatter, and
@@ -42,6 +46,12 @@ trait LangOptions extends StObject {
     * for the JPEG download menu item.
     */
   var downloadJPEG: js.UndefOr[String] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) The text for the MIDI download
+    * menu item in the export menu.
+    */
+  var downloadMIDI: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Exporting module only. The text
@@ -130,6 +140,12 @@ trait LangOptions extends StObject {
     * disables shortening altogether.
     */
   var numericSymbols: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) The text for the Play as sound
+    * menu item in the export menu.
+    */
+  var playAsSound: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Exporting module only. The text
@@ -255,6 +271,10 @@ object LangOptions {
     
     inline def setDownloadJPEGUndefined: Self = StObject.set(x, "downloadJPEG", js.undefined)
     
+    inline def setDownloadMIDI(value: String): Self = StObject.set(x, "downloadMIDI", value.asInstanceOf[js.Any])
+    
+    inline def setDownloadMIDIUndefined: Self = StObject.set(x, "downloadMIDI", js.undefined)
+    
     inline def setDownloadPDF(value: String): Self = StObject.set(x, "downloadPDF", value.asInstanceOf[js.Any])
     
     inline def setDownloadPDFUndefined: Self = StObject.set(x, "downloadPDF", js.undefined)
@@ -318,6 +338,10 @@ object LangOptions {
     inline def setNumericSymbolsUndefined: Self = StObject.set(x, "numericSymbols", js.undefined)
     
     inline def setNumericSymbolsVarargs(value: String*): Self = StObject.set(x, "numericSymbols", js.Array(value*))
+    
+    inline def setPlayAsSound(value: String): Self = StObject.set(x, "playAsSound", value.asInstanceOf[js.Any])
+    
+    inline def setPlayAsSoundUndefined: Self = StObject.set(x, "playAsSound", js.undefined)
     
     inline def setPrintChart(value: String): Self = StObject.set(x, "printChart", value.asInstanceOf[js.Any])
     

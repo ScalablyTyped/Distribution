@@ -47,7 +47,7 @@ open class Subscription () extends StObject {
   
   var numberOfBillingCycles: js.UndefOr[Double] = js.native
   
-  var paidThroughDate: js.Date = js.native
+  var paidThroughDate: js.UndefOr[js.Date] = js.native
   
   var paymentMethodToken: String = js.native
   

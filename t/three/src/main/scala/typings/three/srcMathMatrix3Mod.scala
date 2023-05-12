@@ -74,6 +74,53 @@ object srcMathMatrix3Mod {
     /* CompleteClass */
     override def invert(): Matrix = js.native
     
+    def makeRotation(theta: Double): Matrix3 = js.native
+    /**
+      * Sets this matrix as a 2D rotational transformation by theta radians. The resulting matrix will be:
+      *
+      * ```
+      * cos(θ) -sin(θ) 0
+      * sin(θ) cos(θ)  0
+      * 0      0       1
+      * ```
+      *
+      * @param theta Rotation angle in radians. Positive values rotate counterclockwise.
+      */
+    @JSName("makeRotation")
+    def makeRotation_This(theta: Double): this.type = js.native
+    
+    def makeScale(x: Double, y: Double): Matrix3 = js.native
+    /**
+      * Sets this matrix as a 2D scale transform:
+      *
+      * ```
+      * x, 0, 0,
+      * 0, y, 0,
+      * 0, 0, 1
+      * ```
+      *
+      * @param x the amount to scale in the X axis.
+      * @param y the amount to scale in the Y axis.
+      */
+    @JSName("makeScale")
+    def makeScale_This(x: Double, y: Double): this.type = js.native
+    
+    def makeTranslation(x: Double, y: Double): Matrix3 = js.native
+    /**
+      * Sets this matrix as a 2D translation transform:
+      *
+      * ```
+      * 1, 0, x,
+      * 0, 1, y,
+      * 0, 0, 1
+      * ```
+      *
+      * @param x the amount to translate in the X axis.
+      * @param y the amount to translate in the Y axis.
+      */
+    @JSName("makeTranslation")
+    def makeTranslation_This(x: Double, y: Double): this.type = js.native
+    
     /**
       * Multiplies this matrix by m.
       */

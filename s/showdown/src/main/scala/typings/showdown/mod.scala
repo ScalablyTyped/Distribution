@@ -167,7 +167,6 @@ object mod {
   @JSImport("showdown", "Converter")
   @js.native
   /**
-    * @constructor
     * @param converterOptions - Configuration object, describes which extensions to apply.
     */
   open class ConverterCls ()
@@ -493,7 +492,6 @@ object mod {
   trait ConverterStatic
     extends StObject
        with /**
-    * @constructor
     * @param converterOptions - Configuration object, describes which extensions to apply.
     */
   Instantiable0[Converter]

@@ -1,10 +1,10 @@
 package typings.reactDndPreview
 
 import typings.react.mod.ReactNode
-import typings.reactDndPreview.distEsmContextMod.PreviewState
-import typings.reactDndPreview.distEsmPreviewMod.PreviewGenerator
-import typings.reactDndPreview.distEsmPreviewMod.PreviewProps
-import typings.reactDndPreview.distEsmUsePreviewMod.usePreviewState
+import typings.reactDndPreview.distContextMod.PreviewState
+import typings.reactDndPreview.distPreviewMod.PreviewGenerator
+import typings.reactDndPreview.distPreviewMod.PreviewProps
+import typings.reactDndPreview.distUsePreviewMod.usePreviewState
 import typings.reactDndPreview.reactDndPreviewBooleans.`false`
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
@@ -13,35 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait `0`[T, El /* <: Element */]
+  trait Children[T, El /* <: Element */]
     extends StObject
        with PreviewProps[T, El] {
     
     var children: (PreviewGenerator[T, El]) | ReactNode
-  }
-  object `0` {
-    
-    inline def apply[T, El /* <: Element */](): `0`[T, El] = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[`0`[T, El]]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: `0`[?, ?], T, El /* <: Element */] (val x: Self & (`0`[T, El])) extends AnyVal {
-      
-      inline def setChildren(value: (PreviewGenerator[T, El]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenFunction1(value: /* state */ PreviewState[T, El] => typings.react.mod.global.JSX.Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-    }
-  }
-  
-  trait Children[T, El /* <: Element */]
-    extends StObject
-       with typings.reactDndPreview.distCjsPreviewMod.PreviewProps[T, El] {
-    
-    var children: (typings.reactDndPreview.distCjsPreviewMod.PreviewGenerator[T, El]) | ReactNode
   }
   object Children {
     
@@ -53,11 +29,9 @@ object anon {
     @scala.inline
     implicit open class MutableBuilder[Self <: Children[?, ?], T, El /* <: Element */] (val x: Self & (Children[T, El])) extends AnyVal {
       
-      inline def setChildren(value: (typings.reactDndPreview.distCjsPreviewMod.PreviewGenerator[T, El]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: (PreviewGenerator[T, El]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenFunction1(
-        value: /* state */ typings.reactDndPreview.distCjsContextMod.PreviewState[T, El] => typings.react.mod.global.JSX.Element
-      ): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildrenFunction1(value: /* state */ PreviewState[T, El] => typings.react.mod.global.JSX.Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
@@ -65,8 +39,7 @@ object anon {
   
   trait Display
     extends StObject
-       with usePreviewState[Any, Any]
-       with typings.reactDndPreview.distCjsUsePreviewMod.usePreviewState[Any, Any] {
+       with usePreviewState[Any, Any] {
     
     var display: `false`
   }
@@ -86,43 +59,19 @@ object anon {
   
   trait Generator[T, El /* <: Element */]
     extends StObject
-       with typings.reactDndPreview.distCjsPreviewMod.PreviewProps[T, El] {
+       with PreviewProps[T, El] {
     
-    var generator: typings.reactDndPreview.distCjsPreviewMod.PreviewGenerator[T, El]
+    var generator: PreviewGenerator[T, El]
   }
   object Generator {
     
-    inline def apply[T, El /* <: Element */](
-      generator: /* state */ typings.reactDndPreview.distCjsContextMod.PreviewState[T, El] => typings.react.mod.global.JSX.Element
-    ): Generator[T, El] = {
+    inline def apply[T, El /* <: Element */](generator: /* state */ PreviewState[T, El] => typings.react.mod.global.JSX.Element): Generator[T, El] = {
       val __obj = js.Dynamic.literal(generator = js.Any.fromFunction1(generator))
       __obj.asInstanceOf[Generator[T, El]]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: Generator[?, ?], T, El /* <: Element */] (val x: Self & (Generator[T, El])) extends AnyVal {
-      
-      inline def setGenerator(
-        value: /* state */ typings.reactDndPreview.distCjsContextMod.PreviewState[T, El] => typings.react.mod.global.JSX.Element
-      ): Self = StObject.set(x, "generator", js.Any.fromFunction1(value))
-    }
-  }
-  
-  trait GeneratorPreviewGenerator[T, El /* <: Element */]
-    extends StObject
-       with PreviewProps[T, El] {
-    
-    var generator: PreviewGenerator[T, El]
-  }
-  object GeneratorPreviewGenerator {
-    
-    inline def apply[T, El /* <: Element */](generator: /* state */ PreviewState[T, El] => typings.react.mod.global.JSX.Element): GeneratorPreviewGenerator[T, El] = {
-      val __obj = js.Dynamic.literal(generator = js.Any.fromFunction1(generator))
-      __obj.asInstanceOf[GeneratorPreviewGenerator[T, El]]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: GeneratorPreviewGenerator[?, ?], T, El /* <: Element */] (val x: Self & (GeneratorPreviewGenerator[T, El])) extends AnyVal {
       
       inline def setGenerator(value: /* state */ PreviewState[T, El] => typings.react.mod.global.JSX.Element): Self = StObject.set(x, "generator", js.Any.fromFunction1(value))
     }

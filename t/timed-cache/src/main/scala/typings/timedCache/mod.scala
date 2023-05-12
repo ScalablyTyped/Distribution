@@ -19,13 +19,12 @@ object mod {
     
     def clear(): Unit = js.native
     
-    def get(key: String): js.UndefOr[T] = js.native
-    def get(key: js.Object): js.UndefOr[T] = js.native
+    def get(key: Key): js.UndefOr[T] = js.native
     
-    def put(key: String, value: T): Unit = js.native
-    def put(key: String, value: T, options: PutOptions): Unit = js.native
+    def put(key: Key, value: T): Unit = js.native
+    def put(key: Key, value: T, options: PutOptions): Unit = js.native
     
-    def remove(key: String): Unit = js.native
+    def remove(key: Key): Unit = js.native
     
     def size(): Double = js.native
   }
@@ -47,6 +46,8 @@ object mod {
       inline def setDefaultTtl(value: Double): Self = StObject.set(x, "defaultTtl", value.asInstanceOf[js.Any])
     }
   }
+  
+  type Key = String | js.Object
   
   trait PutOptions extends StObject {
     

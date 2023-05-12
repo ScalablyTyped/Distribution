@@ -15,43 +15,42 @@ trait ClassFiber
      with ClassObject {
   
   /**
-    * class prop 
+    * class prop
     *
-    * 
+    *
     * @brief 查询纤程的调用纤程
-    * 
+    *
     * @readonly
-    * @type Fiber
     */
   var caller: ClassFiber = js.native
   
   /**
-    * class prop 
+    * class prop
     *
-    * 
+    *
     * @brief 查询纤程的唯一 id
-    * 
+    *
     * @readonly
-    * @type Long
+    * @note Assumed to be a long number.
     */
   var id: Double = js.native
   
   /**
-    * 
+    *
     * @brief 等待纤程结束
-    * 
-    * 
+    *
+    *
     */
   def join(): Unit = js.native
   
   /**
-    * class prop 
+    * class prop
     *
-    * 
+    *
     * @brief 查询纤程的调用堆栈
-    * 
+    *
     * @readonly
-    * @type String
+    *
     */
   var stack: String = js.native
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jss-plugin-rule-value-function" : "10.9.2"
+      "jss-plugin-rule-value-function" : "10.10.0"
     }
   ],
   "test-dependencies" : [
     {
-      "jss-plugin-rule-value-function" : "10.9.2"
+      "jss-plugin-rule-value-function" : "10.10.0"
     }
   ],
   "compile-devDependencies" : [

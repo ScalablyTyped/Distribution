@@ -22,7 +22,7 @@ trait Instance extends StObject {
   var Id: js.UndefOr[InstanceId] = js.undefined
   
   /**
-    * The unique identifier of the instance fleet to which an EC2 instance belongs.
+    * The unique identifier of the instance fleet to which an Amazon EC2 instance belongs.
     */
   var InstanceFleetId: js.UndefOr[typings.awsSdk.clientsEmrMod.InstanceFleetId] = js.undefined
   
@@ -32,7 +32,7 @@ trait Instance extends StObject {
   var InstanceGroupId: js.UndefOr[String] = js.undefined
   
   /**
-    * The EC2 instance type, for example m3.xlarge.
+    * The Amazon EC2 instance type, for example m3.xlarge.
     */
   var InstanceType: js.UndefOr[typings.awsSdk.clientsEmrMod.InstanceType] = js.undefined
   

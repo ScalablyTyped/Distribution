@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.srcSdkInternalElementsMod.IByNameReferrable because Already inherited
 - typings.mendixmodelsdk.srcGenProjectsMod.projects.IModuleDocument because Already inherited
 - typings.mendixmodelsdk.srcGenProjectsMod.projects.IDocument because Already inherited
-- typings.mendixmodelsdk.srcGenCodeactionsMod.codeactions.ICodeAction because var conflicts: containerAsFolderBase, documentation, excluded, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined actionTypeParameters, actionReturnType, modelerActionInfo, actionParameters */ @JSImport("mendixmodelsdk/src/gen/codeactions", "codeactions.CodeAction")
+- typings.mendixmodelsdk.srcGenCodeactionsMod.codeactions.ICodeAction because var conflicts: containerAsFolderBase, documentation, excluded, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined actionTypeParameters, actionReturnType, actionDefaultReturnName, modelerActionInfo, actionParameters */ @JSImport("mendixmodelsdk/src/gen/codeactions", "codeactions.CodeAction")
 @js.native
 open class CodeAction protected () extends Document {
   def this(
@@ -29,6 +29,17 @@ open class CodeAction protected () extends Document {
     isPartial: Boolean,
     container: IFolderBase
   ) = this()
+  
+  /**
+    * In version 9.23.0: introduced
+    */
+  def actionDefaultReturnName: String = js.native
+  def actionDefaultReturnName_=(newValue: String): Unit = js.native
+  /**
+    * In version 9.23.0: introduced
+    */
+  @JSName("actionDefaultReturnName")
+  val actionDefaultReturnName_FCodeAction: String = js.native
   
   /**
     * In version 7.21.0: introduced

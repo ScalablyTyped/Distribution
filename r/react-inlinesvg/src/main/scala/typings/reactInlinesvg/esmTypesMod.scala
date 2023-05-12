@@ -860,7 +860,7 @@ object esmTypesMod {
     
     var textRendering: js.UndefOr[Double | String] = js.undefined
     
-    var title: js.UndefOr[String] = js.undefined
+    var title: js.UndefOr[String | Null] = js.undefined
     
     var to: js.UndefOr[Double | String] = js.undefined
     
@@ -2375,6 +2375,8 @@ object esmTypesMod {
       inline def setTextRenderingUndefined: Self = StObject.set(x, "textRendering", js.undefined)
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleNull: Self = StObject.set(x, "title", null)
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       

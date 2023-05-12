@@ -15,7 +15,7 @@ object mod {
   @JSImport("uuid", "parse")
   @js.native
   val parse: typings.uuid.mod.parse = js.native
-  type parse = js.Function1[/* uuid */ String, OutputBuffer]
+  type parse = js.Function1[/* uuid */ String, js.typedarray.Uint8Array]
   
   @JSImport("uuid", "stringify")
   @js.native

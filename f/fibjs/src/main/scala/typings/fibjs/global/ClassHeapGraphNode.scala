@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** module Or Internal Object */
 /**
   * @brief HeapGraphNode表示堆视图中的一个节点
-  * @detail 
+  * @detail
   */
 @JSGlobal("Class_HeapGraphNode")
 @js.native

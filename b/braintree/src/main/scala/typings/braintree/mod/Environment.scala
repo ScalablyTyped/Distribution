@@ -4,36 +4,40 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait Environment extends StObject
 @JSImport("braintree", "Environment")
 @js.native
-object Environment extends StObject {
+open class Environment protected () extends StObject {
+  def this(
+    server: String,
+    port: String,
+    authUrl: String,
+    ssl: Boolean,
+    graphQLServer: String,
+    graphQLPort: String
+  ) = this()
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[Environment & String] = js.native
+  var baseGraphQLUrl: String = js.native
   
+  var baseUrl: String = js.native
+  
+  var uriScheme: String = js.native
+}
+/* static members */
+object Environment {
+  
+  @JSImport("braintree", "Environment.Development")
   @js.native
-  sealed trait Development
-    extends StObject
-       with Environment
-  /* "Development" */ val Development: typings.braintree.mod.Environment.Development & String = js.native
+  val Development: Environment = js.native
   
+  @JSImport("braintree", "Environment.Production")
   @js.native
-  sealed trait Production
-    extends StObject
-       with Environment
-  /* "Production" */ val Production: typings.braintree.mod.Environment.Production & String = js.native
+  val Production: Environment = js.native
   
+  @JSImport("braintree", "Environment.Qa")
   @js.native
-  sealed trait Qa
-    extends StObject
-       with Environment
-  /* "Qa" */ val Qa: typings.braintree.mod.Environment.Qa & String = js.native
+  val Qa: Environment = js.native
   
+  @JSImport("braintree", "Environment.Sandbox")
   @js.native
-  sealed trait Sandbox
-    extends StObject
-       with Environment
-  /* "Sandbox" */ val Sandbox: typings.braintree.mod.Environment.Sandbox & String = js.native
+  val Sandbox: Environment = js.native
 }

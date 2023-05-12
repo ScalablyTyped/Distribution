@@ -35,7 +35,7 @@ type Directionality = _Directionality | java.lang.String
   - typings.awsSdk.awsSdkStrings.ja_
   - typings.awsSdk.awsSdkStrings.ko_
   - typings.awsSdk.awsSdkStrings.pt_
-  - typings.awsSdk.awsSdkStrings.zh
+  - typings.awsSdk.awsSdkStrings.zh_
   - typings.awsSdk.awsSdkStrings.`zh-TW`
   - java.lang.String
 */
@@ -151,6 +151,8 @@ type TerminologyPropertiesList = js.Array[TerminologyProperties]
 type TextTranslationJobPropertiesList = js.Array[TextTranslationJobProperties]
 
 type Timestamp = js.Date
+
+type TranslatedTextString = java.lang.String
 
 type UnboundedLengthString = java.lang.String
 

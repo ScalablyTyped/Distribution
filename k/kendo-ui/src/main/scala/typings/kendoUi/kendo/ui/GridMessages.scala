@@ -10,7 +10,13 @@ trait GridMessages extends StObject {
   
   var expandCollapseColumnHeader: js.UndefOr[String] = js.undefined
   
+  var filterCellTitle: js.UndefOr[String] = js.undefined
+  
+  var groupingHeaderLabel: js.UndefOr[String] = js.undefined
+  
   var noRecords: js.UndefOr[String] = js.undefined
+  
+  var toolbarLabel: js.UndefOr[String] = js.undefined
 }
 object GridMessages {
   
@@ -30,8 +36,20 @@ object GridMessages {
     
     inline def setExpandCollapseColumnHeaderUndefined: Self = StObject.set(x, "expandCollapseColumnHeader", js.undefined)
     
+    inline def setFilterCellTitle(value: String): Self = StObject.set(x, "filterCellTitle", value.asInstanceOf[js.Any])
+    
+    inline def setFilterCellTitleUndefined: Self = StObject.set(x, "filterCellTitle", js.undefined)
+    
+    inline def setGroupingHeaderLabel(value: String): Self = StObject.set(x, "groupingHeaderLabel", value.asInstanceOf[js.Any])
+    
+    inline def setGroupingHeaderLabelUndefined: Self = StObject.set(x, "groupingHeaderLabel", js.undefined)
+    
     inline def setNoRecords(value: String): Self = StObject.set(x, "noRecords", value.asInstanceOf[js.Any])
     
     inline def setNoRecordsUndefined: Self = StObject.set(x, "noRecords", js.undefined)
+    
+    inline def setToolbarLabel(value: String): Self = StObject.set(x, "toolbarLabel", value.asInstanceOf[js.Any])
+    
+    inline def setToolbarLabelUndefined: Self = StObject.set(x, "toolbarLabel", js.undefined)
   }
 }

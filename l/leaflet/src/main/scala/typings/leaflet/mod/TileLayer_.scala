@@ -21,7 +21,8 @@ open class TileLayer_ protected () extends GridLayer_ {
   
   def getTileUrl(coords: Coords): String = js.native
   
-  var options: TileLayerOptions = js.native
+  @JSName("options")
+  var options_TileLayer_ : TileLayerOptions = js.native
   
   def setUrl(url: String): this.type = js.native
   def setUrl(url: String, noRedraw: Boolean): this.type = js.native

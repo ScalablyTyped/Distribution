@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait JSDocTypeLiteral
   extends StObject
-     with JSDocType {
+     with JSDocType
+     with Declaration {
   
   /** If true, then this type literal represents an *array* of its type. */
   val isArrayType: Boolean = js.native

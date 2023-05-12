@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeGameServerInstancesOutput extends StObject {
   
   /**
-    *  The collection of requested game server instances. 
+    * The collection of requested game server instances.
     */
   var GameServerInstances: js.UndefOr[typings.awsSdk.clientsGameliftMod.GameServerInstances] = js.undefined
   
   /**
-    *  A token that indicates where to resume retrieving results on the next call to this operation. If no token is returned, these results represent the end of the list. 
+    * A token that indicates where to resume retrieving results on the next call to this operation. If no token is returned, these results represent the end of the list.
     */
   var NextToken: js.UndefOr[NonZeroAndMaxString] = js.undefined
 }

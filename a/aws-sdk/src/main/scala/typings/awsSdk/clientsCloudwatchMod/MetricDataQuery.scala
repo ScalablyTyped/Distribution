@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MetricDataQuery extends StObject {
   
   /**
-    * The ID of the account where the metrics are located, if this is a cross-account alarm. Use this field only for PutMetricAlarm operations. It is not used in GetMetricData operations.
+    * The ID of the account where the metrics are located. If you are performing a GetMetricData operation in a monitoring account, use this to specify which account to retrieve this metric from. If you are performing a PutMetricAlarm operation, use this to specify which account contains the metric that the alarm is watching.
     */
   var AccountId: js.UndefOr[typings.awsSdk.clientsCloudwatchMod.AccountId] = js.undefined
   
@@ -37,7 +37,7 @@ trait MetricDataQuery extends StObject {
   var Period: js.UndefOr[typings.awsSdk.clientsCloudwatchMod.Period] = js.undefined
   
   /**
-    * When used in GetMetricData, this option indicates whether to return the timestamps and raw data values of this metric. If you are performing this call just to do math expressions and do not also need the raw data returned, you can specify False. If you omit this, the default of True is used. When used in PutMetricAlarm, specify True for the one expression result to use as the alarm. For all other metrics and expressions in the same PutMetricAlarm operation, specify ReturnData as False.
+    * When used in GetMetricData, this option indicates whether to return the timestamps and raw data values of this metric. If you are performing this call just to do math expressions and do not also need the raw data returned, you can specify false. If you omit this, the default of true is used. When used in PutMetricAlarm, specify true for the one expression result to use as the alarm. For all other metrics and expressions in the same PutMetricAlarm operation, specify ReturnData as False.
     */
   var ReturnData: js.UndefOr[typings.awsSdk.clientsCloudwatchMod.ReturnData] = js.undefined
 }

@@ -31,6 +31,10 @@ object semanticUiDropdownStrings {
   inline def both: both = "both".asInstanceOf[both]
   
   @js.native
+  sealed trait `change values` extends StObject
+  inline def `change values`: `change values` = ("change values").asInstanceOf[`change values`]
+  
+  @js.native
   sealed trait clear extends StObject
   inline def clear: clear = "clear".asInstanceOf[clear]
   

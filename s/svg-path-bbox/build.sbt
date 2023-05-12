@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "svg-path-bbox"
-version := "1.2.2-523818"
+version := "1.2.4-c5b0dc"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

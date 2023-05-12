@@ -31,6 +31,16 @@ trait JWTClaimVerificationOptions extends StObject {
     */
   var maxTokenAge: js.UndefOr[String | Double] = js.undefined
   
+  /**
+    * Array of required Claim Names that must be present in the JWT Claims Set. Default is that: if
+    * the {@link JWTClaimVerificationOptions.issuer issuer option} is set, then "iss" must be present;
+    * if the {@link JWTClaimVerificationOptions.audience audience option} is set, then "aud" must be
+    * present; if the {@link JWTClaimVerificationOptions.subject subject option} is set, then "sub"
+    * must be present; if the {@link JWTClaimVerificationOptions.maxTokenAge maxTokenAge option} is
+    * set, then "iat" must be present.
+    */
+  var requiredClaims: js.UndefOr[js.Array[String]] = js.undefined
+  
   /** Expected JWT "sub" (Subject) Claim value. */
   var subject: js.UndefOr[String] = js.undefined
   
@@ -70,6 +80,12 @@ object JWTClaimVerificationOptions {
     inline def setMaxTokenAge(value: String | Double): Self = StObject.set(x, "maxTokenAge", value.asInstanceOf[js.Any])
     
     inline def setMaxTokenAgeUndefined: Self = StObject.set(x, "maxTokenAge", js.undefined)
+    
+    inline def setRequiredClaims(value: js.Array[String]): Self = StObject.set(x, "requiredClaims", value.asInstanceOf[js.Any])
+    
+    inline def setRequiredClaimsUndefined: Self = StObject.set(x, "requiredClaims", js.undefined)
+    
+    inline def setRequiredClaimsVarargs(value: String*): Self = StObject.set(x, "requiredClaims", js.Array(value*))
     
     inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     

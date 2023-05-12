@@ -6,10 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetUnfilteredPartitionMetadataResponse extends StObject {
   
+  /**
+    * A list of column names that the user has been granted access to.
+    */
   var AuthorizedColumns: js.UndefOr[NameStringList] = js.undefined
   
+  /**
+    * A Boolean value that indicates whether the partition location is registered with Lake Formation.
+    */
   var IsRegisteredWithLakeFormation: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * A Partition object containing the partition metadata.
+    */
   var Partition: js.UndefOr[typings.awsSdk.clientsGlueMod.Partition] = js.undefined
 }
 object GetUnfilteredPartitionMetadataResponse {

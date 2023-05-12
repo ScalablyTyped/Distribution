@@ -1,7 +1,7 @@
 
 # Scala.js typings for countup_dot_js
 
-Typings are for version 2.3.2
+Typings are for version 2.6.2
 
 ## Library description:
 Animates a numerical value by counting to it

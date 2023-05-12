@@ -1,8 +1,8 @@
 package typings.openui5
 
 import typings.openui5.QUnit.Assert
-import typings.openui5.anon.AsyncPolling
 import typings.openui5.jQuery.Promise
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,8 +44,9 @@ object sapUiTestOpaMod {
     inline def assert_=(x: Assert): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("assert")(x.asInstanceOf[js.Any])
     
     /**
-      * The global configuration of Opa. All of the global values can be overwritten in an individual `waitFor`
-      * call. The default values are:
+      * The global configuration of Opa. The subset of the global values defined in {@link sap.ui.test.Opa.BaseParameters}.can
+      * be overwritten in an individual `waitFor` call. The default values for the global configuration are:
+      *
       * 	 - arrangements: A new Opa instance
       * 	 - actions: A new Opa instance
       * 	 - assertions: A new Opa instance
@@ -58,8 +59,8 @@ object sapUiTestOpaMod {
       */
     @JSImport("sap/ui/test/Opa", "default.config")
     @js.native
-    def config: /* undefined */ Any = js.native
-    inline def config_=(x: /* undefined */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("config")(x.asInstanceOf[js.Any])
+    def config: Config = js.native
+    inline def config_=(x: Config): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("config")(x.asInstanceOf[js.Any])
     
     /**
       * Waits until all waitFor calls are done.
@@ -103,7 +104,7 @@ object sapUiTestOpaMod {
     inline def extendConfig(/**
       * The values to be added to the existing config
       */
-    options: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extendConfig")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    options: Config): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extendConfig")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * @SINCE 1.29.0
@@ -112,7 +113,7 @@ object sapUiTestOpaMod {
       *
       * @returns the context object
       */
-    inline def getContext(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")().asInstanceOf[js.Object]
+    inline def getContext(): Record[String, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")().asInstanceOf[Record[String, Any]]
     
     /**
       * @SINCE 1.25
@@ -146,6 +147,127 @@ object sapUiTestOpaMod {
       * the success function of this waitFor will not be called.
       */
     inline def stopQueue(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopQueue")().asInstanceOf[Unit]
+  }
+  
+  trait BaseParameters extends StObject {
+    
+    /**
+      * @since 1.55 Enable asynchronous polling after success() call. This allows more stable autoWaiter synchronization
+      * with event flows originating from within success(). Especially useful to stabilize synchronization with
+      * overflow toolbars. False by default.
+      */
+    var asyncPolling: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * (seconds) @since 1.47 Specifies how long the waitFor function polls before it fails in debug mode. 0
+      * means it will wait forever.
+      */
+    var debugTimeout: js.UndefOr[int] = js.undefined
+    
+    /**
+      * (milliseconds) Specifies how often the waitFor function polls. The default is 400ms.
+      */
+    var pollingInterval: js.UndefOr[int] = js.undefined
+    
+    /**
+      * (seconds) Specifies how long the waitFor function polls before it fails. The default value is 15 seconds,
+      * 0 means it will wait forever.
+      */
+    var timeout: js.UndefOr[int] = js.undefined
+  }
+  object BaseParameters {
+    
+    inline def apply(): BaseParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[BaseParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAsyncPolling(value: Boolean): Self = StObject.set(x, "asyncPolling", value.asInstanceOf[js.Any])
+      
+      inline def setAsyncPollingUndefined: Self = StObject.set(x, "asyncPolling", js.undefined)
+      
+      inline def setDebugTimeout(value: int): Self = StObject.set(x, "debugTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setDebugTimeoutUndefined: Self = StObject.set(x, "debugTimeout", js.undefined)
+      
+      inline def setPollingInterval(value: int): Self = StObject.set(x, "pollingInterval", value.asInstanceOf[js.Any])
+      
+      inline def setPollingIntervalUndefined: Self = StObject.set(x, "pollingInterval", js.undefined)
+      
+      inline def setTimeout(value: int): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    }
+  }
+  
+  @js.native
+  trait Chain
+    extends StObject
+       with Opa {
+    
+    /**
+      * A reference to the same `sap.ui.test.Opa` instance that can be used for chaining statements
+      */
+    var and: Opa = js.native
+  }
+  
+  trait Config
+    extends StObject
+       with BaseParameters {
+    
+    /**
+      * A new Opa instance
+      */
+    var actions: js.UndefOr[Opa] = js.undefined
+    
+    /**
+      * A new Opa instance
+      */
+    var arrangements: js.UndefOr[Opa] = js.undefined
+    
+    /**
+      * A new Opa instance
+      */
+    var assertions: js.UndefOr[Opa] = js.undefined
+    
+    /**
+      * The value is a number representing milliseconds. The default values are 0 or 50 (depending on the browser).
+      * The executionDelay will slow down the execution of every single waitFor statement to be delayed by the
+      * number of milliseconds. This does not effect the polling interval it just adds an initial pause. Use
+      * this parameter to slow down OPA when you want to watch your test during development or checking the UI
+      * of your app. It is not recommended to use this parameter in any automated test executions.
+      */
+    var executionDelay: js.UndefOr[int] = js.undefined
+  }
+  object Config {
+    
+    inline def apply(): Config = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Config]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+      
+      inline def setActions(value: Opa): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      
+      inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+      
+      inline def setArrangements(value: Opa): Self = StObject.set(x, "arrangements", value.asInstanceOf[js.Any])
+      
+      inline def setArrangementsUndefined: Self = StObject.set(x, "arrangements", js.undefined)
+      
+      inline def setAssertions(value: Opa): Self = StObject.set(x, "assertions", value.asInstanceOf[js.Any])
+      
+      inline def setAssertionsUndefined: Self = StObject.set(x, "assertions", js.undefined)
+      
+      inline def setExecutionDelay(value: int): Self = StObject.set(x, "executionDelay", value.asInstanceOf[js.Any])
+      
+      inline def setExecutionDelayUndefined: Self = StObject.set(x, "executionDelay", js.undefined)
+    }
   }
   
   @js.native
@@ -200,8 +322,58 @@ object sapUiTestOpaMod {
       * case, options.errorMessage will contain a detailed error message containing the stack trace and Opa logs.
       */
     def waitFor(/**
-      * These contain check, success and error functions
+      * configuration options
       */
-    options: AsyncPolling): js.Object = js.native
+    options: WaitForOptions): Chain = js.native
+  }
+  
+  trait WaitForOptions
+    extends StObject
+       with BaseParameters {
+    
+    /**
+      * Will get invoked in every polling interval. If it returns true, the check is successful and the polling
+      * will stop. The first parameter passed into the function is the same value that gets passed to the success
+      * function. Returning something other than boolean in the check will not change the first parameter of
+      * success.
+      */
+    var check: js.UndefOr[js.Function1[/* p1 */ Any, Boolean]] = js.undefined
+    
+    /**
+      * Will be displayed as an errorMessage depending on your unit test framework. Currently the only adapter
+      * for Opa is QUnit. This message is displayed there if Opa has reached its timeout but QUnit has not yet
+      * reached it.
+      */
+    var errorMessage: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Will get invoked after the check function returns true. If there is no check function defined, it will
+      * be directly invoked. waitFor statements added in the success handler will be executed before previously
+      * added waitFor statements.
+      */
+    var success: js.UndefOr[js.Function] = js.undefined
+  }
+  object WaitForOptions {
+    
+    inline def apply(): WaitForOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[WaitForOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WaitForOptions] (val x: Self) extends AnyVal {
+      
+      inline def setCheck(value: /* p1 */ Any => Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
+      
+      inline def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
+      
+      inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+      
+      inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+      
+      inline def setSuccess(value: js.Function): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    }
   }
 }

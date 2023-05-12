@@ -25,6 +25,7 @@ import typings.react.mod.ComponentType
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
+import typings.reactSpringCore.mod.SpringConfig
 import typings.std.SVGLineElement
 import typings.std.SVGRectElement
 import org.scalablytyped.runtime.StObject
@@ -207,6 +208,28 @@ object anon {
     }
   }
   
+  trait MeasuresY extends StObject {
+    
+    var measuresY: Double
+    
+    var transform: String
+  }
+  object MeasuresY {
+    
+    inline def apply(measuresY: Double, transform: String): MeasuresY = {
+      val __obj = js.Dynamic.literal(measuresY = measuresY.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])
+      __obj.asInstanceOf[MeasuresY]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MeasuresY] (val x: Self) extends AnyVal {
+      
+      inline def setMeasuresY(value: Double): Self = StObject.set(x, "measuresY", value.asInstanceOf[js.Any])
+      
+      inline def setTransform(value: String): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    }
+  }
+  
   /* Inlined std.Omit<@nivo/bullet.@nivo/bullet/dist/types/types.BulletSvgProps, 'height' | 'width'> */
   trait OmitBulletSvgPropsheightw extends StObject {
     
@@ -242,9 +265,7 @@ object anon {
     
     var minValue: js.UndefOr[auto | Double] = js.undefined
     
-    var motionConfig: js.UndefOr[
-        String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-      ] = js.undefined
+    var motionConfig: js.UndefOr[String | SpringConfig] = js.undefined
     
     var onMarkerClick: js.UndefOr[MouseEventHandler[WithDatumIdComputedMarker, SVGLineElement]] = js.undefined
     
@@ -358,9 +379,7 @@ object anon {
       
       inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
       
-      inline def setMotionConfig(
-        value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-      ): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
+      inline def setMotionConfig(value: String | SpringConfig): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
       
       inline def setMotionConfigUndefined: Self = StObject.set(x, "motionConfig", js.undefined)
       

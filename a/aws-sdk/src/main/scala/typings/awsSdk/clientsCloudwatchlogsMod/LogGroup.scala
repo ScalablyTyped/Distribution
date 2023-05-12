@@ -17,7 +17,12 @@ trait LogGroup extends StObject {
   var creationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the CMK to use when encrypting log data.
+    * Displays whether this log group has a protection policy, or whether it had one in the past. For more information, see PutDataProtectionPolicy.
+    */
+  var dataProtectionStatus: js.UndefOr[DataProtectionStatus] = js.undefined
+  
+  /**
+    * The Amazon Resource Name (ARN) of the KMS key to use when encrypting log data.
     */
   var kmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   
@@ -55,6 +60,10 @@ object LogGroup {
     inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+    
+    inline def setDataProtectionStatus(value: DataProtectionStatus): Self = StObject.set(x, "dataProtectionStatus", value.asInstanceOf[js.Any])
+    
+    inline def setDataProtectionStatusUndefined: Self = StObject.set(x, "dataProtectionStatus", js.undefined)
     
     inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for hashids
 
-Typings are for version 2.2.10
+Typings are for version 2.2.11
 
 ## Library description:
 Generate YouTube-like ids from numbers. Use Hashids when you do not want to expose your database ids to the user.

@@ -45,6 +45,8 @@ type RenderSuggestion[TSuggestion] = js.Function2[/* suggestion */ TSuggestion, 
 
 type RenderSuggestionsContainer = js.Function1[/* params */ RenderSuggestionsContainerParams, ReactNode]
 
+type ShouldKeepSuggestionsOnSelect[TSuggestion] = js.Function1[/* suggestion */ js.UndefOr[TSuggestion], Boolean]
+
 type ShouldRenderSuggestions = js.Function2[/* value */ String, /* reason */ ShouldRenderReasons, Boolean]
 
 type SuggestionsFetchRequested = js.Function1[/* request */ SuggestionsFetchRequestedParams, Unit]

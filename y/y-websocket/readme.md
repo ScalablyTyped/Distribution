@@ -1,7 +1,7 @@
 
 # Scala.js typings for y-websocket
 
-Typings are for version 1.4.5
+Typings are for version 1.5.0
 
 ## Library description:
 Websockets provider for Yjs

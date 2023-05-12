@@ -17,7 +17,7 @@ trait ModifyReplicationTaskMessage extends StObject {
   var CdcStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Indicates when you want a change data capture (CDC) operation to stop. The value can be either server time or commit time. Server time example: --cdc-stop-position “server_time:2018-02-09T12:12:12” Commit time example: --cdc-stop-position “commit_time: 2018-02-09T12:12:12 “
+    * Indicates when you want a change data capture (CDC) operation to stop. The value can be either server time or commit time. Server time example: --cdc-stop-position “server_time:2018-02-09T12:12:12” Commit time example: --cdc-stop-position “commit_time: 2018-02-09T12:12:12“
     */
   var CdcStopPosition: js.UndefOr[String] = js.undefined
   

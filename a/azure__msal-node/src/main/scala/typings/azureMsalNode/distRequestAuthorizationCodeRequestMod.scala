@@ -30,6 +30,8 @@ object distRequestAuthorizationCodeRequestMod {
     
     var enableSpaAuthorizationCode: js.UndefOr[Boolean] = js.undefined
     
+    var maxAge: js.UndefOr[Double] = js.undefined
+    
     var redirectUri: String
     
     var scopes: js.Array[String]
@@ -91,6 +93,10 @@ object distRequestAuthorizationCodeRequestMod {
       inline def setEnableSpaAuthorizationCode(value: Boolean): Self = StObject.set(x, "enableSpaAuthorizationCode", value.asInstanceOf[js.Any])
       
       inline def setEnableSpaAuthorizationCodeUndefined: Self = StObject.set(x, "enableSpaAuthorizationCode", js.undefined)
+      
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
       inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
       

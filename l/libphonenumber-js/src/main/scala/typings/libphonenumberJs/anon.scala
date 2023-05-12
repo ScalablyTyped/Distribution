@@ -86,6 +86,64 @@ object anon {
     }
   }
   
+  trait DefaultCountryExtended extends StObject {
+    
+    var defaultCountry: js.UndefOr[CountryCode] = js.undefined
+    
+    var extended: js.UndefOr[Boolean] = js.undefined
+  }
+  object DefaultCountryExtended {
+    
+    inline def apply(): DefaultCountryExtended = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DefaultCountryExtended]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultCountryExtended] (val x: Self) extends AnyVal {
+      
+      inline def setDefaultCountry(value: CountryCode): Self = StObject.set(x, "defaultCountry", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultCountryUndefined: Self = StObject.set(x, "defaultCountry", js.undefined)
+      
+      inline def setExtended(value: Boolean): Self = StObject.set(x, "extended", value.asInstanceOf[js.Any])
+      
+      inline def setExtendedUndefined: Self = StObject.set(x, "extended", js.undefined)
+    }
+  }
+  
+  trait Extended extends StObject {
+    
+    var defaultCallingCode: js.UndefOr[String] = js.undefined
+    
+    var defaultCountry: js.UndefOr[CountryCode] = js.undefined
+    
+    var extended: js.UndefOr[Boolean] = js.undefined
+  }
+  object Extended {
+    
+    inline def apply(): Extended = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Extended]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extended] (val x: Self) extends AnyVal {
+      
+      inline def setDefaultCallingCode(value: String): Self = StObject.set(x, "defaultCallingCode", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultCallingCodeUndefined: Self = StObject.set(x, "defaultCallingCode", js.undefined)
+      
+      inline def setDefaultCountry(value: CountryCode): Self = StObject.set(x, "defaultCountry", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultCountryUndefined: Self = StObject.set(x, "defaultCountry", js.undefined)
+      
+      inline def setExtended(value: Boolean): Self = StObject.set(x, "extended", value.asInstanceOf[js.Any])
+      
+      inline def setExtendedUndefined: Self = StObject.set(x, "extended", js.undefined)
+    }
+  }
+  
   trait Tag[T] extends StObject {
     
     var __tag: js.UndefOr[T] = js.undefined

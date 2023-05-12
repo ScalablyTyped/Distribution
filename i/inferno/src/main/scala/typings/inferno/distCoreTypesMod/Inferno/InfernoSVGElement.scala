@@ -11,7 +11,7 @@ trait InfernoSVGElement
 object InfernoSVGElement {
   
   inline def apply(props: SVGAttributes[SVGElement], ref: /* instance */ SVGElement | Null => Any, `type`: String): InfernoSVGElement = {
-    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], ref = js.Any.fromFunction1(ref), key = null)
+    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], ref = js.Any.fromFunction1(ref))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InfernoSVGElement]
   }

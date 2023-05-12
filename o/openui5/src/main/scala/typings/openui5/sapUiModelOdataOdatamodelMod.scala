@@ -130,6 +130,8 @@ object sapUiModelOdataOdatamodelMod {
     extends typings.openui5.sapUiModelModelMod.default {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Adds (a) new URL(s) to the be parsed for OData annotations, which are then merged into the annotations
       * object which can be retrieved by calling the getServiceAnnotations()-method. If a $metadata url is passed
       * the data will also be merged into the metadata object, which can be reached by calling the getServiceMetadata()
@@ -151,6 +153,8 @@ object sapUiModelOdataOdatamodelMod {
     vUrl: js.Array[String]): js.Promise[Any] = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Adds new xml content to be parsed for OData annotations, which are then merged into the annotations object
       * which can be retrieved by calling the getServiceAnnotations()-method.
       *
@@ -1106,6 +1110,8 @@ object sapUiModelOdataOdatamodelMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:annotationsFailed annotationsFailed} to attached listeners.
       *
       * @returns `this` to allow method chaining
@@ -1117,6 +1123,8 @@ object sapUiModelOdataOdatamodelMod {
     oParameters: ResponseText): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:annotationsLoaded annotationsLoaded} to attached listeners.
       *
       * @returns `this` to allow method chaining
@@ -1128,6 +1136,8 @@ object sapUiModelOdataOdatamodelMod {
     oParameters: Annotations): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:metadataFailed metadataFailed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1139,6 +1149,8 @@ object sapUiModelOdataOdatamodelMod {
     oParameters: ResponseText): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:metadataLoaded metadataLoaded} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

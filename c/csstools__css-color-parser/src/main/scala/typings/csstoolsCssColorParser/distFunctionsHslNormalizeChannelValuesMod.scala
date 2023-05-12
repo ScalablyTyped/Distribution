@@ -1,0 +1,20 @@
+package typings.csstoolsCssColorParser
+
+import typings.csstoolsCssColorParser.csstoolsCssColorParserBooleans.`false`
+import typings.csstoolsCssColorParser.distColorDataMod.ColorData
+import typings.csstoolsCssTokenizer.distInterfacesTokenMod.CSSToken
+import typings.csstoolsCssTokenizer.distInterfacesTokenMod.TokenNumber
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object distFunctionsHslNormalizeChannelValuesMod {
+  
+  @JSImport("@csstools/css-color-parser/dist/functions/hsl-normalize-channel-values", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def normalizeLegacyHSLChannelValues(tokens: js.Array[CSSToken], colorData: ColorData): js.Array[TokenNumber] | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize_legacy_HSL_ChannelValues")(tokens.asInstanceOf[js.Any], colorData.asInstanceOf[js.Any])).asInstanceOf[js.Array[TokenNumber] | `false`]
+  
+  inline def normalizeModernHSLChannelValues(tokens: js.Array[CSSToken], colorData: ColorData): js.Array[TokenNumber] | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize_modern_HSL_ChannelValues")(tokens.asInstanceOf[js.Any], colorData.asInstanceOf[js.Any])).asInstanceOf[js.Array[TokenNumber] | `false`]
+}

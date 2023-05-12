@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SopRecommendation extends StObject {
   
   /**
-    * The application component name.
+    * The name of the Application Component.
     */
   var appComponentName: js.UndefOr[EntityId] = js.undefined
   

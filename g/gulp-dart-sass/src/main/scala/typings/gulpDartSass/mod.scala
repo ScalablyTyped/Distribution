@@ -2,10 +2,9 @@ package typings.gulpDartSass
 
 import org.scalablytyped.runtime.Shortcut
 import typings.gulpDartSass.anon.Duration
-import typings.gulpDartSass.gulpDartSassStrings.async
 import typings.gulpDartSass.gulpDartSassStrings.sync
 import typings.node.NodeJS.ReadWriteStream
-import typings.sass.typesOptionsMod.Options
+import typings.sass.typesLegacyOptionsMod.LegacySharedOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,7 +70,7 @@ object mod extends Shortcut {
   
   trait SassOptions
     extends StObject
-       with Options[sync | async] {
+       with LegacySharedOptions[sync] {
     
     var error: js.UndefOr[js.Function1[/* err */ js.Error, Any]] = js.undefined
     

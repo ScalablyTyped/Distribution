@@ -13,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#region Constructors
 /**
   * Initializes a new instance of a TimePicker control.
-  * @constructor
   * @param element The DOM element associated with the TimePicker control.
   * @param options The set of options to be applied initially to the TimePicker control. The options are the following: clock.
   **/

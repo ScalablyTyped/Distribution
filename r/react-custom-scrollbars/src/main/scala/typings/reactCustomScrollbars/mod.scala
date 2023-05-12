@@ -18,7 +18,7 @@ object mod {
     def this(props: ScrollbarProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ScrollbarProps, context: Any) = this()
   }
@@ -30,7 +30,7 @@ object mod {
     def this(props: ScrollbarProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ScrollbarProps, context: Any) = this()
     

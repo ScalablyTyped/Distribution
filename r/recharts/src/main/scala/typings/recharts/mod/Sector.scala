@@ -12,7 +12,7 @@ open class Sector protected ()
   def this(props: SectorProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: SectorProps, context: Any) = this()
 }

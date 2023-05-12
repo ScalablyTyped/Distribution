@@ -20,13 +20,14 @@ object mod {
   inline def compile(options: HtmlToTextOptions): compiledFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(options.asInstanceOf[js.Any]).asInstanceOf[compiledFunction]
   
   inline def convert(html: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(html.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def convert(html: String, options: Unit, metadata: metaData): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def convert(html: String, options: HtmlToTextOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  inline def fromString(html: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(html.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def fromString(html: String, options: HtmlToTextOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def convert(html: String, options: HtmlToTextOptions, metadata: metaData): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def htmlToText(html: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlToText")(html.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def htmlToText(html: String, options: Unit, metadata: metaData): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlToText")(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def htmlToText(html: String, options: HtmlToTextOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlToText")(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def htmlToText(html: String, options: HtmlToTextOptions, metadata: metaData): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlToText")(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait BaseElementsOptions extends StObject {
     
@@ -74,38 +75,6 @@ object mod {
       inline def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
       
       inline def setSelectorsVarargs(value: String*): Self = StObject.set(x, "selectors", js.Array(value*))
-    }
-  }
-  
-  trait DecodeOptions extends StObject {
-    
-    /**
-      * TLDR: If set to `true` - leave attribute values raw, don't parse them as text content.
-      */
-    var isAttributeValue: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * TLDR: If set to `true` - throw an error on invalid HTML input.
-      */
-    var strict: js.UndefOr[Boolean] = js.undefined
-  }
-  object DecodeOptions {
-    
-    inline def apply(): DecodeOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[DecodeOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: DecodeOptions] (val x: Self) extends AnyVal {
-      
-      inline def setIsAttributeValue(value: Boolean): Self = StObject.set(x, "isAttributeValue", value.asInstanceOf[js.Any])
-      
-      inline def setIsAttributeValueUndefined: Self = StObject.set(x, "isAttributeValue", js.undefined)
-      
-      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
-      
-      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     }
   }
   
@@ -270,9 +239,30 @@ object mod {
     var noLinkBrackets: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * (Only for: `anchor` and `image` formatters.) A function to rewrite link
+      * href attributes and image src attributes. Applied before baseUrl.
+      */
+    var pathRewrite: js.UndefOr[js.Function2[/* path */ String, /* meta */ metaData, String]] = js.undefined
+    
+    /**
+      * (Only for: `inlineSurround` formatter.) String prefix to be inserted before inline tag contents.
+      */
+    var prefix: js.UndefOr[String] = js.undefined
+    
+    /**
       * (Only for: `table`, `dataTable` formatter.) Number of empty lines between data table rows.
       */
     var rowSpacing: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * (Only for: `blockString`, `inlineString` formatters.) A string to be inserted in place of a tag.
+      */
+    var string: js.UndefOr[String] = js.undefined
+    
+    /**
+      * (Only for: `inlineSurround` formatter.) String suffix to be inserted after inline tag contents.
+      */
+    var suffix: js.UndefOr[String] = js.undefined
     
     /**
       * Number of line breaks to separate this block from the next one.
@@ -354,9 +344,25 @@ object mod {
       
       inline def setNoLinkBracketsUndefined: Self = StObject.set(x, "noLinkBrackets", js.undefined)
       
+      inline def setPathRewrite(value: (/* path */ String, /* meta */ metaData) => String): Self = StObject.set(x, "pathRewrite", js.Any.fromFunction2(value))
+      
+      inline def setPathRewriteUndefined: Self = StObject.set(x, "pathRewrite", js.undefined)
+      
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      
       inline def setRowSpacing(value: Double): Self = StObject.set(x, "rowSpacing", value.asInstanceOf[js.Any])
       
       inline def setRowSpacingUndefined: Self = StObject.set(x, "rowSpacing", js.undefined)
+      
+      inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+      
+      inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
+      
+      inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+      
+      inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
       
       inline def setTrailingLineBreaks(value: Double): Self = StObject.set(x, "trailingLineBreaks", value.asInstanceOf[js.Any])
       
@@ -392,11 +398,16 @@ object mod {
     var baseElements: js.UndefOr[BaseElementsOptions] = js.undefined
     
     /**
-      * Text decoding options given to `he.decode`.
-      *
-      * For more informations see the [he](https://github.com/mathiasbynens/he) module.
+      * Decode HTML entities found in the input HTML if true.
+      * Otherwise preserve in output text.
       */
-    var decodeOptions: js.UndefOr[DecodeOptions] = js.undefined
+    var decodeEntities: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * A dictionary with characters that should be replaced in the output
+      * text and corresponding escape sequences.
+      */
+    var encodeCharacters: js.UndefOr[Record[String, String]] = js.undefined
     
     /**
       * A dictionary with custom formatting functions for specific kinds of elements.
@@ -406,39 +417,14 @@ object mod {
     var formatters: js.UndefOr[Record[String, FormatCallback]] = js.undefined
     
     /**
-      *  @deprecated See the documentation.
-      */
-    var hideLinkHrefIfSameAsText: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      *  @deprecated See the documentation.
-      */
-    var ignoreHref: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      *  @deprecated See the documentation.
-      */
-    var ignoreImage: js.UndefOr[Boolean] = js.undefined
-    
-    /**
       * Options for handling complex documents and limiting the output size.
       */
     var limits: js.UndefOr[LimitsOptions] = js.undefined
     
     /**
-      *  @deprecated See the documentation.
-      */
-    var linkHrefBaseUrl: js.UndefOr[String] = js.undefined
-    
-    /**
       * Describes how to wrap long words.
       */
     var longWordSplit: js.UndefOr[LongWordSplitOptions] = js.undefined
-    
-    /**
-      *  @deprecated See the documentation.
-      */
-    var noLinkBrackets: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default, any newlines `\n` from the input HTML are dropped.
@@ -460,11 +446,6 @@ object mod {
     var selectors: js.UndefOr[js.Array[SelectorDefinition]] = js.undefined
     
     /**
-      *  @deprecated See the documentation.
-      */
-    var singleNewLineParagraphs: js.UndefOr[Boolean] = js.undefined
-    
-    /**
       * @deprecated. Use selectors with `format: 'dataTable'` instead.
       */
     var tables: js.UndefOr[js.Array[String] | Boolean] = js.undefined
@@ -473,16 +454,6 @@ object mod {
       * @deprecated. Use selectors instead.
       */
     var tags: js.UndefOr[TagDefinitions] = js.undefined
-    
-    /**
-      *  @deprecated See the documentation.
-      */
-    var unorderedListItemPrefix: js.UndefOr[String] = js.undefined
-    
-    /**
-      *  @deprecated See the documentation.
-      */
-    var uppercaseHeadings: js.UndefOr[Boolean] = js.undefined
     
     /**
       * All characters that are considered whitespace.
@@ -495,7 +466,7 @@ object mod {
       *
       * Set to `null` or `false` to disable word-wrapping.
       */
-    var wordwrap: js.UndefOr[Double | Boolean | Null] = js.undefined
+    var wordwrap: js.UndefOr[Double | `false` | Null] = js.undefined
   }
   object HtmlToTextOptions {
     
@@ -517,41 +488,25 @@ object mod {
       
       inline def setBaseElementsUndefined: Self = StObject.set(x, "baseElements", js.undefined)
       
-      inline def setDecodeOptions(value: DecodeOptions): Self = StObject.set(x, "decodeOptions", value.asInstanceOf[js.Any])
+      inline def setDecodeEntities(value: Boolean): Self = StObject.set(x, "decodeEntities", value.asInstanceOf[js.Any])
       
-      inline def setDecodeOptionsUndefined: Self = StObject.set(x, "decodeOptions", js.undefined)
+      inline def setDecodeEntitiesUndefined: Self = StObject.set(x, "decodeEntities", js.undefined)
+      
+      inline def setEncodeCharacters(value: Record[String, String]): Self = StObject.set(x, "encodeCharacters", value.asInstanceOf[js.Any])
+      
+      inline def setEncodeCharactersUndefined: Self = StObject.set(x, "encodeCharacters", js.undefined)
       
       inline def setFormatters(value: Record[String, FormatCallback]): Self = StObject.set(x, "formatters", value.asInstanceOf[js.Any])
       
       inline def setFormattersUndefined: Self = StObject.set(x, "formatters", js.undefined)
       
-      inline def setHideLinkHrefIfSameAsText(value: Boolean): Self = StObject.set(x, "hideLinkHrefIfSameAsText", value.asInstanceOf[js.Any])
-      
-      inline def setHideLinkHrefIfSameAsTextUndefined: Self = StObject.set(x, "hideLinkHrefIfSameAsText", js.undefined)
-      
-      inline def setIgnoreHref(value: Boolean): Self = StObject.set(x, "ignoreHref", value.asInstanceOf[js.Any])
-      
-      inline def setIgnoreHrefUndefined: Self = StObject.set(x, "ignoreHref", js.undefined)
-      
-      inline def setIgnoreImage(value: Boolean): Self = StObject.set(x, "ignoreImage", value.asInstanceOf[js.Any])
-      
-      inline def setIgnoreImageUndefined: Self = StObject.set(x, "ignoreImage", js.undefined)
-      
       inline def setLimits(value: LimitsOptions): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
       
       inline def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
       
-      inline def setLinkHrefBaseUrl(value: String): Self = StObject.set(x, "linkHrefBaseUrl", value.asInstanceOf[js.Any])
-      
-      inline def setLinkHrefBaseUrlUndefined: Self = StObject.set(x, "linkHrefBaseUrl", js.undefined)
-      
       inline def setLongWordSplit(value: LongWordSplitOptions): Self = StObject.set(x, "longWordSplit", value.asInstanceOf[js.Any])
       
       inline def setLongWordSplitUndefined: Self = StObject.set(x, "longWordSplit", js.undefined)
-      
-      inline def setNoLinkBrackets(value: Boolean): Self = StObject.set(x, "noLinkBrackets", value.asInstanceOf[js.Any])
-      
-      inline def setNoLinkBracketsUndefined: Self = StObject.set(x, "noLinkBrackets", js.undefined)
       
       inline def setPreserveNewlines(value: Boolean): Self = StObject.set(x, "preserveNewlines", value.asInstanceOf[js.Any])
       
@@ -567,10 +522,6 @@ object mod {
       
       inline def setSelectorsVarargs(value: SelectorDefinition*): Self = StObject.set(x, "selectors", js.Array(value*))
       
-      inline def setSingleNewLineParagraphs(value: Boolean): Self = StObject.set(x, "singleNewLineParagraphs", value.asInstanceOf[js.Any])
-      
-      inline def setSingleNewLineParagraphsUndefined: Self = StObject.set(x, "singleNewLineParagraphs", js.undefined)
-      
       inline def setTables(value: js.Array[String] | Boolean): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
       
       inline def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
@@ -581,19 +532,11 @@ object mod {
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      inline def setUnorderedListItemPrefix(value: String): Self = StObject.set(x, "unorderedListItemPrefix", value.asInstanceOf[js.Any])
-      
-      inline def setUnorderedListItemPrefixUndefined: Self = StObject.set(x, "unorderedListItemPrefix", js.undefined)
-      
-      inline def setUppercaseHeadings(value: Boolean): Self = StObject.set(x, "uppercaseHeadings", value.asInstanceOf[js.Any])
-      
-      inline def setUppercaseHeadingsUndefined: Self = StObject.set(x, "uppercaseHeadings", js.undefined)
-      
       inline def setWhitespaceCharacters(value: String): Self = StObject.set(x, "whitespaceCharacters", value.asInstanceOf[js.Any])
       
       inline def setWhitespaceCharactersUndefined: Self = StObject.set(x, "whitespaceCharacters", js.undefined)
       
-      inline def setWordwrap(value: Double | Boolean): Self = StObject.set(x, "wordwrap", value.asInstanceOf[js.Any])
+      inline def setWordwrap(value: Double | `false`): Self = StObject.set(x, "wordwrap", value.asInstanceOf[js.Any])
       
       inline def setWordwrapNull: Self = StObject.set(x, "wordwrap", null)
       
@@ -610,13 +553,15 @@ object mod {
     var ellipsis: js.UndefOr[String] = js.undefined
     
     /**
-      * Process only this many child nodes of any element.
+      * Stop looking for more base elements after reaching this amount.
       *
-      * Remaining nodes, if any, will be replaced with ellipsis.
-      *
-      * Text nodes are counted along with tags.
-      *
-      * No limit if undefined.
+      * Unlimited if undefined.
+      */
+    var maxBaseElements: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Maximum number of child nodes of a single node to be added to the
+      * output. Unlimited if undefined.
       */
     var maxChildNodes: js.UndefOr[Double] = js.undefined
     
@@ -650,6 +595,10 @@ object mod {
       inline def setEllipsis(value: String): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
       
       inline def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
+      
+      inline def setMaxBaseElements(value: Double): Self = StObject.set(x, "maxBaseElements", value.asInstanceOf[js.Any])
+      
+      inline def setMaxBaseElementsUndefined: Self = StObject.set(x, "maxBaseElements", js.undefined)
       
       inline def setMaxChildNodes(value: Double): Self = StObject.set(x, "maxChildNodes", value.asInstanceOf[js.Any])
       
@@ -944,4 +893,6 @@ object mod {
   }
   
   type compiledFunction = js.Function1[/* str */ String, String]
+  
+  type metaData = Any
 }

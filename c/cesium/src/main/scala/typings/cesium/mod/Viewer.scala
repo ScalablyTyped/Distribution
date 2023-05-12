@@ -78,6 +78,11 @@ open class Viewer protected () extends StObject {
   val container: Element = js.native
   
   /**
+    * Manages the list of credits to display on screen and in the lightbox.
+    */
+  var creditDisplay: CreditDisplay = js.native
+  
+  /**
     * Gets the display used for {@link DataSource} visualization.
     */
   val dataSourceDisplay: DataSourceDisplay = js.native
@@ -113,12 +118,12 @@ open class Viewer protected () extends StObject {
   def flyTo(target: js.Array[Entity], options: Duration): js.Promise[Boolean] = js.native
   def flyTo(
     target: js.Promise[
-      Entity | js.Array[Entity] | EntityCollection | DataSource | ImageryLayer | Cesium3DTileset | TimeDynamicPointCloud
+      Entity | js.Array[Entity] | EntityCollection | DataSource | ImageryLayer | Cesium3DTileset | TimeDynamicPointCloud | VoxelPrimitive
     ]
   ): js.Promise[Boolean] = js.native
   def flyTo(
     target: js.Promise[
-      Entity | js.Array[Entity] | EntityCollection | DataSource | ImageryLayer | Cesium3DTileset | TimeDynamicPointCloud
+      Entity | js.Array[Entity] | EntityCollection | DataSource | ImageryLayer | Cesium3DTileset | TimeDynamicPointCloud | VoxelPrimitive
     ],
     options: Duration
   ): js.Promise[Boolean] = js.native
@@ -206,6 +211,16 @@ open class Viewer protected () extends StObject {
     * Gets the ProjectionPicker.
     */
   val projectionPicker: ProjectionPicker = js.native
+  
+  /**
+    * The terrain provider providing surface geometry to a globe. Do not use until {@link Terrain.readyEvent} is raised.
+    */
+  val provider: TerrainProvider = js.native
+  
+  /**
+    * Returns true when the terrain provider has been successfully created. Otherwise, returns false.
+    */
+  val ready: Boolean = js.native
   
   /**
     * Renders the scene.  This function is called automatically
@@ -339,12 +354,12 @@ open class Viewer protected () extends StObject {
   def zoomTo(target: js.Array[Entity], offset: HeadingPitchRange): js.Promise[Boolean] = js.native
   def zoomTo(
     target: js.Promise[
-      Entity | js.Array[Entity] | EntityCollection | DataSource | ImageryLayer | Cesium3DTileset | TimeDynamicPointCloud
+      Entity | js.Array[Entity] | EntityCollection | DataSource | ImageryLayer | Cesium3DTileset | TimeDynamicPointCloud | VoxelPrimitive
     ]
   ): js.Promise[Boolean] = js.native
   def zoomTo(
     target: js.Promise[
-      Entity | js.Array[Entity] | EntityCollection | DataSource | ImageryLayer | Cesium3DTileset | TimeDynamicPointCloud
+      Entity | js.Array[Entity] | EntityCollection | DataSource | ImageryLayer | Cesium3DTileset | TimeDynamicPointCloud | VoxelPrimitive
     ],
     offset: HeadingPitchRange
   ): js.Promise[Boolean] = js.native
@@ -402,8 +417,10 @@ object Viewer {
     * @property [imageryProviderViewModels = createDefaultImageryProviderViewModels()] - The array of ProviderViewModels to be selectable from the BaseLayerPicker.  This value is only valid if `baseLayerPicker` is set to true.
     * @property [selectedTerrainProviderViewModel] - The view model for the current base terrain layer, if not supplied the first available base layer is used.  This value is only valid if `baseLayerPicker` is set to true.
     * @property [terrainProviderViewModels = createDefaultTerrainProviderViewModels()] - The array of ProviderViewModels to be selectable from the BaseLayerPicker.  This value is only valid if `baseLayerPicker` is set to true.
-    * @property [imageryProvider = createWorldImagery()] - The imagery provider to use.  This value is only valid if `baseLayerPicker` is set to false.
+    * @property [imageryProvider = createWorldImagery()] - The imagery provider to use.  This value is only valid if `baseLayerPicker` is set to false. Deprecated.
+    * @property [baseLayer = ImageryLayer.fromWorldImagery()] - The bottommost imagery layer applied to the globe. If set to <code>false</code>, no imagery provider will be added. This value is only valid if `baseLayerPicker` is set to false.
     * @property [terrainProvider = new EllipsoidTerrainProvider()] - The terrain provider to use
+    * @property [terrain] - A terrain object which handles asynchronous terrain provider. Can only specify if options.terrainProvider is undefined.
     * @property [skyBox] - The skybox used to render the stars.  When <code>undefined</code>, the default stars are used. If set to <code>false</code>, no skyBox, Sun, or Moon will be added.
     * @property [skyAtmosphere] - Blue sky, and the glow around the Earth's limb.  Set to <code>false</code> to turn it off.
     * @property [fullscreenElement = document.body] - The element or id to be placed into fullscreen mode when the full screen button is pressed.
@@ -412,7 +429,7 @@ object Viewer {
     * @property [showRenderLoopErrors = true] - If true, this widget will automatically display an HTML panel to the user containing the error, if a render loop error occurs.
     * @property [useBrowserRecommendedResolution = true] - If true, render at the browser's recommended resolution and ignore <code>window.devicePixelRatio</code>.
     * @property [automaticallyTrackDataSourceClocks = true] - If true, this widget will automatically track the clock settings of newly added DataSources, updating if the DataSource's clock changes.  Set this to false if you want to configure the clock independently.
-    * @property [contextOptions] - Context and WebGL creation properties corresponding to <code>options</code> passed to {@link Scene}.
+    * @property [contextOptions] - Context and WebGL creation properties passed to {@link Scene}.
     * @property [sceneMode = SceneMode.SCENE3D] - The initial scene mode.
     * @property [mapProjection = new GeographicProjection()] - The map projection to use in 2D and Columbus View modes.
     * @property [globe = new Globe(mapProjection.ellipsoid)] - The globe to use in the scene.  If set to <code>false</code>, no globe will be added.
@@ -437,13 +454,15 @@ object Viewer {
     
     var automaticallyTrackDataSourceClocks: js.UndefOr[Boolean] = js.undefined
     
+    var baseLayer: js.UndefOr[ImageryLayer | `false`] = js.undefined
+    
     var baseLayerPicker: js.UndefOr[Boolean] = js.undefined
     
     var blurActiveElementOnCanvasFocus: js.UndefOr[Boolean] = js.undefined
     
     var clockViewModel: js.UndefOr[ClockViewModel] = js.undefined
     
-    var contextOptions: js.UndefOr[Any] = js.undefined
+    var contextOptions: js.UndefOr[ContextOptions] = js.undefined
     
     var creditContainer: js.UndefOr[Element | String] = js.undefined
     
@@ -463,7 +482,7 @@ object Viewer {
     
     var homeButton: js.UndefOr[Boolean] = js.undefined
     
-    var imageryProvider: js.UndefOr[ImageryProvider] = js.undefined
+    var imageryProvider: js.UndefOr[ImageryProvider | `false`] = js.undefined
     
     var imageryProviderViewModels: js.UndefOr[js.Array[ProviderViewModel]] = js.undefined
     
@@ -511,6 +530,8 @@ object Viewer {
     
     var targetFrameRate: js.UndefOr[Double] = js.undefined
     
+    var terrain: js.UndefOr[Terrain] = js.undefined
+    
     var terrainProvider: js.UndefOr[TerrainProvider] = js.undefined
     
     var terrainProviderViewModels: js.UndefOr[js.Array[ProviderViewModel]] = js.undefined
@@ -543,9 +564,13 @@ object Viewer {
       
       inline def setAutomaticallyTrackDataSourceClocksUndefined: Self = StObject.set(x, "automaticallyTrackDataSourceClocks", js.undefined)
       
+      inline def setBaseLayer(value: ImageryLayer | `false`): Self = StObject.set(x, "baseLayer", value.asInstanceOf[js.Any])
+      
       inline def setBaseLayerPicker(value: Boolean): Self = StObject.set(x, "baseLayerPicker", value.asInstanceOf[js.Any])
       
       inline def setBaseLayerPickerUndefined: Self = StObject.set(x, "baseLayerPicker", js.undefined)
+      
+      inline def setBaseLayerUndefined: Self = StObject.set(x, "baseLayer", js.undefined)
       
       inline def setBlurActiveElementOnCanvasFocus(value: Boolean): Self = StObject.set(x, "blurActiveElementOnCanvasFocus", value.asInstanceOf[js.Any])
       
@@ -555,7 +580,7 @@ object Viewer {
       
       inline def setClockViewModelUndefined: Self = StObject.set(x, "clockViewModel", js.undefined)
       
-      inline def setContextOptions(value: Any): Self = StObject.set(x, "contextOptions", value.asInstanceOf[js.Any])
+      inline def setContextOptions(value: ContextOptions): Self = StObject.set(x, "contextOptions", value.asInstanceOf[js.Any])
       
       inline def setContextOptionsUndefined: Self = StObject.set(x, "contextOptions", js.undefined)
       
@@ -597,7 +622,7 @@ object Viewer {
       
       inline def setHomeButtonUndefined: Self = StObject.set(x, "homeButton", js.undefined)
       
-      inline def setImageryProvider(value: ImageryProvider): Self = StObject.set(x, "imageryProvider", value.asInstanceOf[js.Any])
+      inline def setImageryProvider(value: ImageryProvider | `false`): Self = StObject.set(x, "imageryProvider", value.asInstanceOf[js.Any])
       
       inline def setImageryProviderUndefined: Self = StObject.set(x, "imageryProvider", js.undefined)
       
@@ -695,6 +720,8 @@ object Viewer {
       
       inline def setTargetFrameRateUndefined: Self = StObject.set(x, "targetFrameRate", js.undefined)
       
+      inline def setTerrain(value: Terrain): Self = StObject.set(x, "terrain", value.asInstanceOf[js.Any])
+      
       inline def setTerrainProvider(value: TerrainProvider): Self = StObject.set(x, "terrainProvider", value.asInstanceOf[js.Any])
       
       inline def setTerrainProviderUndefined: Self = StObject.set(x, "terrainProvider", js.undefined)
@@ -708,6 +735,8 @@ object Viewer {
       inline def setTerrainShadows(value: ShadowMode): Self = StObject.set(x, "terrainShadows", value.asInstanceOf[js.Any])
       
       inline def setTerrainShadowsUndefined: Self = StObject.set(x, "terrainShadows", js.undefined)
+      
+      inline def setTerrainUndefined: Self = StObject.set(x, "terrain", js.undefined)
       
       inline def setTimeline(value: Boolean): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
       

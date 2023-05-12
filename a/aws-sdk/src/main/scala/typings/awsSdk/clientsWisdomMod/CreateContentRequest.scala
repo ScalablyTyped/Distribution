@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateContentRequest extends StObject {
   
   /**
-    * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
+    * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request. If not provided, the Amazon Web Services SDK populates this field. For more information about idempotency, see Making retries safe with idempotent APIs.
     */
   var clientToken: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -44,11 +44,11 @@ trait CreateContentRequest extends StObject {
   /**
     * A pointer to the uploaded asset. This value is returned by StartContentUpload.
     */
-  var uploadId: NonEmptyString
+  var uploadId: UploadId
 }
 object CreateContentRequest {
   
-  inline def apply(knowledgeBaseId: UuidOrArn, name: Name, uploadId: NonEmptyString): CreateContentRequest = {
+  inline def apply(knowledgeBaseId: UuidOrArn, name: Name, uploadId: UploadId): CreateContentRequest = {
     val __obj = js.Dynamic.literal(knowledgeBaseId = knowledgeBaseId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], uploadId = uploadId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateContentRequest]
   }
@@ -80,6 +80,6 @@ object CreateContentRequest {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setUploadId(value: NonEmptyString): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
+    inline def setUploadId(value: UploadId): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
   }
 }

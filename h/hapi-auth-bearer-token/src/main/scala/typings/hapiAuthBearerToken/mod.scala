@@ -2,16 +2,16 @@ package typings.hapiAuthBearerToken
 
 import org.scalablytyped.runtime.Shortcut
 import typings.hapiAuthBearerToken.hapiAuthBearerTokenStrings.`bearer-access-token`
-import typings.hapiHapi.mod.AppCredentials
-import typings.hapiHapi.mod.AuthArtifacts
-import typings.hapiHapi.mod.AuthCredentials
-import typings.hapiHapi.mod.AuthenticationData
-import typings.hapiHapi.mod.MergeType
-import typings.hapiHapi.mod.Plugin
-import typings.hapiHapi.mod.ReqRefDefaults
-import typings.hapiHapi.mod.Request
-import typings.hapiHapi.mod.ResponseToolkit
-import typings.hapiHapi.mod.UserCredentials
+import typings.hapiHapi.libTypesPluginMod.Plugin
+import typings.hapiHapi.libTypesRequestMod.AppCredentials
+import typings.hapiHapi.libTypesRequestMod.AuthArtifacts
+import typings.hapiHapi.libTypesRequestMod.AuthCredentials
+import typings.hapiHapi.libTypesRequestMod.MergeType
+import typings.hapiHapi.libTypesRequestMod.ReqRefDefaults
+import typings.hapiHapi.libTypesRequestMod.Request
+import typings.hapiHapi.libTypesRequestMod.UserCredentials
+import typings.hapiHapi.libTypesResponseMod.AuthenticationData
+import typings.hapiHapi.libTypesResponseMod.ResponseToolkit
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +21,7 @@ object mod extends Shortcut {
   
   @JSImport("hapi-auth-bearer-token", JSImport.Namespace)
   @js.native
-  val ^ : Plugin[js.Object] = js.native
+  val ^ : Plugin[js.Object, Unit] = js.native
   
   trait SchemaOptions extends StObject {
     
@@ -119,10 +119,10 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = Plugin[js.Object]
+  type _To = Plugin[js.Object, Unit]
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Plugin[js.Object] = ^
+  override def _to: Plugin[js.Object, Unit] = ^
   
   /* augmented module */
   object hapiHapiAugmentingMod {

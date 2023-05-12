@@ -96,6 +96,16 @@ trait XAxisOptions
   var crosshair: js.UndefOr[Boolean | AxisCrosshairOptions] = js.undefined
   
   /**
+    * (Highcharts, Highstock, Highmaps, Gantt) The value on a perpendicular
+    * axis where this axis should cross. This is typically used on mathematical
+    * plots where the axes cross at 0. When `crossing` is set, space will not
+    * be reserved at the sides of the chart for axis labels and title, so those
+    * may be clipped. In this case it is better to place the axes without the
+    * `crossing` option.
+    */
+  var crossing: js.UndefOr[Double] = js.undefined
+  
+  /**
     * (Gantt) Show an indicator on the axis for the current date and time. Can
     * be a boolean or a configuration object similar to xAxis.plotLines.
     */
@@ -158,7 +168,7 @@ trait XAxisOptions
     * either `circle` or `polygon`. Since v8.0.0 this option is also applicable
     * for X axis (inverted polar).
     */
-  var gridLineInterpolation: js.UndefOr[String] = js.undefined
+  var gridLineInterpolation: js.UndefOr[OptionsGridLineInterpolationValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The width of the grid lines
@@ -377,7 +387,7 @@ trait XAxisOptions
     * (Highcharts, Highstock, Highmaps, Gantt) The position of the minor tick
     * marks relative to the axis line. Can be one of `inside` and `outside`.
     */
-  var minorTickPosition: js.UndefOr[String] = js.undefined
+  var minorTickPosition: js.UndefOr[OptionsMinorTickPositionValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The pixel width of the minor
@@ -387,16 +397,23 @@ trait XAxisOptions
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enable or disable minor ticks.
-    * Unless minorTickInterval is set, the tick interval is calculated as a
-    * fifth of the `tickInterval`.
+    * The interval between the minor ticks can be controlled either by the
+    * minorTicksPerMajor setting, or as an absolute minorTickInterval value.
     *
     * On a logarithmic axis, minor ticks are laid out based on a best guess,
-    * attempting to enter approximately 5 minor ticks between each major tick.
+    * attempting to enter an approximate number of minor ticks between each
+    * major tick based on minorTicksPerMajor.
     *
-    * Prior to v6.0.0, ticks were unabled in auto layout by setting
+    * Prior to v6.0.0, ticks were enabled in auto layout by setting
     * `minorTickInterval` to `"auto"`.
     */
   var minorTicks: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) The number of minor ticks per
+    * major tick. Works for `linear`, `logarithmic` and `datetime` axes.
+    */
+  var minorTicksPerMajor: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The distance in pixels from the
@@ -612,7 +629,7 @@ trait XAxisOptions
     * (Highcharts, Highstock, Highmaps, Gantt) The position of the major tick
     * marks relative to the axis line. Can be one of `inside` and `outside`.
     */
-  var tickPosition: js.UndefOr[String] = js.undefined
+  var tickPosition: js.UndefOr[OptionsTickPositionValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A callback function returning
@@ -646,7 +663,7 @@ trait XAxisOptions
     * placed between categories. The default is `between` if the `tickInterval`
     * is 1, else `on`.
     */
-  var tickmarkPlacement: js.UndefOr[String] = js.undefined
+  var tickmarkPlacement: js.UndefOr[OptionsTickmarkPlacementValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The axis title, showing next to
@@ -775,6 +792,10 @@ object XAxisOptions {
     
     inline def setCrosshairUndefined: Self = StObject.set(x, "crosshair", js.undefined)
     
+    inline def setCrossing(value: Double): Self = StObject.set(x, "crossing", value.asInstanceOf[js.Any])
+    
+    inline def setCrossingUndefined: Self = StObject.set(x, "crossing", js.undefined)
+    
     inline def setCurrentDateIndicator(value: Boolean | CurrentDateIndicatorOptions): Self = StObject.set(x, "currentDateIndicator", value.asInstanceOf[js.Any])
     
     inline def setCurrentDateIndicatorUndefined: Self = StObject.set(x, "currentDateIndicator", js.undefined)
@@ -805,7 +826,7 @@ object XAxisOptions {
     
     inline def setGridLineDashStyleUndefined: Self = StObject.set(x, "gridLineDashStyle", js.undefined)
     
-    inline def setGridLineInterpolation(value: String): Self = StObject.set(x, "gridLineInterpolation", value.asInstanceOf[js.Any])
+    inline def setGridLineInterpolation(value: OptionsGridLineInterpolationValue): Self = StObject.set(x, "gridLineInterpolation", value.asInstanceOf[js.Any])
     
     inline def setGridLineInterpolationUndefined: Self = StObject.set(x, "gridLineInterpolation", js.undefined)
     
@@ -909,7 +930,7 @@ object XAxisOptions {
     
     inline def setMinorTickLengthUndefined: Self = StObject.set(x, "minorTickLength", js.undefined)
     
-    inline def setMinorTickPosition(value: String): Self = StObject.set(x, "minorTickPosition", value.asInstanceOf[js.Any])
+    inline def setMinorTickPosition(value: OptionsMinorTickPositionValue): Self = StObject.set(x, "minorTickPosition", value.asInstanceOf[js.Any])
     
     inline def setMinorTickPositionUndefined: Self = StObject.set(x, "minorTickPosition", js.undefined)
     
@@ -918,6 +939,10 @@ object XAxisOptions {
     inline def setMinorTickWidthUndefined: Self = StObject.set(x, "minorTickWidth", js.undefined)
     
     inline def setMinorTicks(value: Boolean): Self = StObject.set(x, "minorTicks", value.asInstanceOf[js.Any])
+    
+    inline def setMinorTicksPerMajor(value: Double): Self = StObject.set(x, "minorTicksPerMajor", value.asInstanceOf[js.Any])
+    
+    inline def setMinorTicksPerMajorUndefined: Self = StObject.set(x, "minorTicksPerMajor", js.undefined)
     
     inline def setMinorTicksUndefined: Self = StObject.set(x, "minorTicks", js.undefined)
     
@@ -1021,7 +1046,7 @@ object XAxisOptions {
     
     inline def setTickPixelIntervalUndefined: Self = StObject.set(x, "tickPixelInterval", js.undefined)
     
-    inline def setTickPosition(value: String): Self = StObject.set(x, "tickPosition", value.asInstanceOf[js.Any])
+    inline def setTickPosition(value: OptionsTickPositionValue): Self = StObject.set(x, "tickPosition", value.asInstanceOf[js.Any])
     
     inline def setTickPositionUndefined: Self = StObject.set(x, "tickPosition", js.undefined)
     
@@ -1039,7 +1064,7 @@ object XAxisOptions {
     
     inline def setTickWidthUndefined: Self = StObject.set(x, "tickWidth", js.undefined)
     
-    inline def setTickmarkPlacement(value: String): Self = StObject.set(x, "tickmarkPlacement", value.asInstanceOf[js.Any])
+    inline def setTickmarkPlacement(value: OptionsTickmarkPlacementValue): Self = StObject.set(x, "tickmarkPlacement", value.asInstanceOf[js.Any])
     
     inline def setTickmarkPlacementUndefined: Self = StObject.set(x, "tickmarkPlacement", js.undefined)
     

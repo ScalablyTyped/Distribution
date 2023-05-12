@@ -12,10 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Class_Message")
 @js.native
 /**
-  * 
+  *
   * @brief 消息对象构造函数
-  * 
-  * 
+  *
+  *
   */
 open class ClassMessage ()
   extends StObject

@@ -3,6 +3,7 @@ package typings.node
 import typings.node.NodeJS.Dict
 import typings.node.NodeJS.ErrnoException
 import typings.node.anon.Fatal
+import typings.node.anon.ToString
 import typings.node.utilMod.CustomPromisify
 import typings.node.utilMod.DebugLogger
 import typings.node.utilMod.DebugLoggerFunction
@@ -20,6 +21,26 @@ object nodeColonutilMod {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("node:util", "MIMEParams")
+  @js.native
+  open class MIMEParams ()
+    extends typings.node.utilMod.MIMEParams
+  
+  @JSImport("node:util", "MIMEType")
+  @js.native
+  open class MIMEType protected ()
+    extends typings.node.utilMod.MIMEType {
+    /**
+      * Creates a new MIMEType object by parsing the input.
+      *
+      * A `TypeError` will be thrown if the `input` is not a valid MIME.
+      * Note that an effort will be made to coerce the given values into strings.
+      * @param input The input MIME to parse.
+      */
+    def this(input: String) = this()
+    def this(input: ToString) = this()
+  }
+  
   @JSImport("node:util", "TextDecoder")
   @js.native
   open class TextDecoder ()
@@ -33,6 +54,8 @@ object nodeColonutilMod {
   @js.native
   open class TextEncoder ()
     extends typings.node.utilMod.TextEncoder
+  
+  inline def aborted(signal: AbortSignal, resource: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("aborted")(signal.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   inline def callbackify(fn: js.Function0[js.Promise[Unit]]): js.Function1[/* callback */ js.Function1[/* err */ ErrnoException, Unit], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("callbackify")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* callback */ js.Function1[/* err */ ErrnoException, Unit], Unit]]
   inline def callbackify[T1](fn: js.Function1[/* arg1 */ T1, js.Promise[Unit]]): js.Function2[/* arg1 */ T1, /* callback */ js.Function1[/* err */ ErrnoException, Unit], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("callbackify")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* arg1 */ T1, /* callback */ js.Function1[/* err */ ErrnoException, Unit], Unit]]
@@ -414,6 +437,7 @@ object nodeColonutilMod {
   
   inline def log(string: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(string.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
+  inline def parseArgs[T /* <: ParseArgsConfig */](): ParsedResults[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseArgs")().asInstanceOf[ParsedResults[T]]
   inline def parseArgs[T /* <: ParseArgsConfig */](config: T): ParsedResults[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseArgs")(config.asInstanceOf[js.Any]).asInstanceOf[ParsedResults[T]]
   
   object promisify {

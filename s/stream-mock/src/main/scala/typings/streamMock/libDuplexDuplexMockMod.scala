@@ -3,20 +3,8 @@ package typings.streamMock
 import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.global.Buffer
 import typings.node.bufferMod.global.BufferEncoding
-import typings.node.nodeStrings.close
-import typings.node.nodeStrings.data
-import typings.node.nodeStrings.drain
-import typings.node.nodeStrings.end
-import typings.node.nodeStrings.error
-import typings.node.nodeStrings.finish
-import typings.node.nodeStrings.pause
-import typings.node.nodeStrings.pipe
-import typings.node.nodeStrings.readable
-import typings.node.nodeStrings.resume
-import typings.node.nodeStrings.unpipe
 import typings.node.streamMod.Duplex
 import typings.node.streamMod.DuplexOptions
-import typings.node.streamMod.Readable
 import typings.std.ArrayLike
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
@@ -56,38 +44,10 @@ object libDuplexDuplexMockMod {
     
     /* private */ var _writableState: Any = js.native
     
-    /**
-      * Event emitter
-      * The defined events on documents including:
-      * 1. close
-      * 2. drain
-      * 3. error
-      * 4. finish
-      * 5. pipe
-      * 6. unpipe
-      */
-    @JSName("addListener")
-    def addListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_data(event: data, listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    /* InferMemberOverrides */
+    override def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    /* InferMemberOverrides */
+    override def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     
     var data: js.Array[Any] | Buffer = js.native
     
@@ -116,28 +76,10 @@ object libDuplexDuplexMockMod {
       */
     var destroyed: Boolean = js.native
     
-    @JSName("emit")
-    def emit_close(event: close): Boolean = js.native
-    @JSName("emit")
-    def emit_data(event: data, chunk: Any): Boolean = js.native
-    @JSName("emit")
-    def emit_drain(event: drain): Boolean = js.native
-    @JSName("emit")
-    def emit_end(event: end): Boolean = js.native
-    @JSName("emit")
-    def emit_error(event: error, err: js.Error): Boolean = js.native
-    @JSName("emit")
-    def emit_finish(event: finish): Boolean = js.native
-    @JSName("emit")
-    def emit_pause(event: pause): Boolean = js.native
-    @JSName("emit")
-    def emit_pipe(event: pipe, src: Readable): Boolean = js.native
-    @JSName("emit")
-    def emit_readable(event: readable): Boolean = js.native
-    @JSName("emit")
-    def emit_resume(event: resume): Boolean = js.native
-    @JSName("emit")
-    def emit_unpipe(event: unpipe, src: Readable): Boolean = js.native
+    /* InferMemberOverrides */
+    override def emit(event: String, args: Any*): Boolean = js.native
+    /* InferMemberOverrides */
+    override def emit(event: js.Symbol, args: Any*): Boolean = js.native
     
     var encoding: BufferEncoding = js.native
     
@@ -147,97 +89,25 @@ object libDuplexDuplexMockMod {
     
     var objectMode: Boolean = js.native
     
-    @JSName("on")
-    def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_data(event: data, listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
-    @JSName("on")
-    def on_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_end(event: end, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("on")
-    def on_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-    @JSName("on")
-    def on_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    /* InferMemberOverrides */
+    override def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    /* InferMemberOverrides */
+    override def on(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     
-    @JSName("once")
-    def once_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_data(event: data, listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
-    @JSName("once")
-    def once_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_end(event: end, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("once")
-    def once_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-    @JSName("once")
-    def once_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    /* InferMemberOverrides */
+    override def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    /* InferMemberOverrides */
+    override def once(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     
-    @JSName("prependListener")
-    def prependListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_data(event: data, listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    /* InferMemberOverrides */
+    override def prependListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    /* InferMemberOverrides */
+    override def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     
-    @JSName("prependOnceListener")
-    def prependOnceListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_data(event: data, listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    /* InferMemberOverrides */
+    override def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    /* InferMemberOverrides */
+    override def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     
     def push(chunk: Any): Boolean = js.native
     def push(chunk: Any, encoding: BufferEncoding): Boolean = js.native
@@ -291,28 +161,10 @@ object libDuplexDuplexMockMod {
     
     val readableObjectMode: Boolean = js.native
     
-    @JSName("removeListener")
-    def removeListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_data(event: data, listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    /* InferMemberOverrides */
+    override def removeListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    /* InferMemberOverrides */
+    override def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     
     /**
       * Passing `chunk` as `null` signals the end of the stream (EOF) and behaves the
@@ -335,7 +187,7 @@ object libDuplexDuplexMockMod {
       * // Pull off a header delimited by \n\n.
       * // Use unshift() if we get too much.
       * // Call the callback with (error, header, stream).
-      * const { StringDecoder } = require('string_decoder');
+      * const { StringDecoder } = require('node:string_decoder');
       * function parseHeader(stream, callback) {
       *   stream.on('error', callback);
       *   stream.on('readable', onReadable);
@@ -375,7 +227,7 @@ object libDuplexDuplexMockMod {
       * however it is best to simply avoid calling `readable.unshift()` while in the
       * process of performing a read.
       * @since v0.9.11
-      * @param chunk Chunk of data to unshift onto the read queue. For streams not operating in object mode, `chunk` must be a string, `Buffer`, `Uint8Array` or `null`. For object mode
+      * @param chunk Chunk of data to unshift onto the read queue. For streams not operating in object mode, `chunk` must be a string, `Buffer`, `Uint8Array`, or `null`. For object mode
       * streams, `chunk` may be any JavaScript value.
       * @param encoding Encoding of string chunks. Must be a valid `Buffer` encoding, such as `'utf8'` or `'ascii'`.
       */

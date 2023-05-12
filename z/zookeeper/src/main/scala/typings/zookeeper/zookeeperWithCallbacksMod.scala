@@ -273,10 +273,10 @@ object zookeeperWithCallbacksMod {
   }
   
   /**
-    * The `EventEmitter` class is defined and exposed by the `events` module:
+    * The `EventEmitter` class is defined and exposed by the `node:events` module:
     *
     * ```js
-    * const EventEmitter = require('events');
+    * import { EventEmitter } from 'node:events';
     * ```
     *
     * All `EventEmitter`s emit the event `'newListener'` when new listeners are

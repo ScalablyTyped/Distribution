@@ -10,9 +10,5 @@ object distSrcUtilsVarintEncoderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-    * @param {Array<number>} buf
-    * @returns {Uint8Array}
-    */
   inline def default(buf: js.Array[Double]): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(buf.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
 }

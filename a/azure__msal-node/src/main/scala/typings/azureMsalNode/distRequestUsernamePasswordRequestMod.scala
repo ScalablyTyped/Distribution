@@ -2,6 +2,7 @@ package typings.azureMsalNode
 
 import typings.azureMsalCommon.distConfigClientConfigurationMod.AzureCloudOptions
 import typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme
+import typings.azureMsalCommon.distUtilsMsalTypesMod.StringDict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,6 +22,8 @@ object distRequestUsernamePasswordRequestMod {
     
     var correlationId: js.UndefOr[String] = js.undefined
     
+    var maxAge: js.UndefOr[Double] = js.undefined
+    
     var password: String
     
     var scopes: js.Array[String]
@@ -32,6 +35,8 @@ object distRequestUsernamePasswordRequestMod {
     var sshJwk: js.UndefOr[String] = js.undefined
     
     var sshKid: js.UndefOr[String] = js.undefined
+    
+    var tokenQueryParameters: js.UndefOr[StringDict] = js.undefined
     
     var username: String
   }
@@ -65,6 +70,10 @@ object distRequestUsernamePasswordRequestMod {
       
       inline def setCorrelationIdUndefined: Self = StObject.set(x, "correlationId", js.undefined)
       
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
       inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
@@ -86,6 +95,10 @@ object distRequestUsernamePasswordRequestMod {
       inline def setSshKid(value: String): Self = StObject.set(x, "sshKid", value.asInstanceOf[js.Any])
       
       inline def setSshKidUndefined: Self = StObject.set(x, "sshKid", js.undefined)
+      
+      inline def setTokenQueryParameters(value: StringDict): Self = StObject.set(x, "tokenQueryParameters", value.asInstanceOf[js.Any])
+      
+      inline def setTokenQueryParametersUndefined: Self = StObject.set(x, "tokenQueryParameters", js.undefined)
       
       inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }

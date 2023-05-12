@@ -10,34 +10,34 @@ trait ClassFile
      with ClassSeekableStream {
   
   /**
-    * 
+    *
     * @brief 查询当前文件的访问权限，Windows 不支持此方法
     * @param mode 指定设定的访问权限
-    * 
-    * 
+    *
+    *
     * @async
     */
   def chmod(mode: Double): Unit = js.native
   
   /**
-    * class prop 
+    * class prop
     *
-    * 
+    *
     * @brief 查询当前文件描述符
-    * 
+    *
     * @readonly
-    * @type Integer
+    * @note Assumed to be an integer.
     */
   var fd: Double = js.native
   
   /**
-    * class prop 
+    * class prop
     *
-    * 
+    *
     * @brief 查询当前文件名
-    * 
+    *
     * @readonly
-    * @type String
+    *
     */
   var name: String = js.native
 }

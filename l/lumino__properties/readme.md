@@ -1,7 +1,7 @@
 
 # Scala.js typings for lumino__properties
 
-Typings are for version 1.8.2
+Typings are for version 2.0.0
 
 ## Library description:
 Lumino Attached Properties

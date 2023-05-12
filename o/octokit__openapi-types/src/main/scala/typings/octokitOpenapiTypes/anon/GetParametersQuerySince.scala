@@ -6,20 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersQuerySince extends StObject {
   
-  /** Lists the authenticated user's gists or if called anonymously, this endpoint returns all public gists: */
-  var get: ParametersQuerySince
-  
   /**
-    * Allows you to add a new gist with one or more files.
+    * List organizations
+    * @description Lists all organizations, in the order that they were created on GitHub.
     *
-    * **Note:** Don't name your files "gistfile" with a numerical suffix. This is the format of the automatic naming scheme that Gist uses internally.
+    * **Note:** Pagination is powered exclusively by the `since` parameter. Use the [Link header](https://docs.github.com/rest/guides/using-pagination-in-the-rest-api#using-link-headers) to get the URL for the next page of organizations.
     */
-  var post: RequestBodyContentApplicationjsonDescription
+  var get: ParametersQuerySince
 }
 object GetParametersQuerySince {
   
-  inline def apply(get: ParametersQuerySince, post: RequestBodyContentApplicationjsonDescription): GetParametersQuerySince = {
-    val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any])
+  inline def apply(get: ParametersQuerySince): GetParametersQuerySince = {
+    val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetParametersQuerySince]
   }
   
@@ -27,7 +25,5 @@ object GetParametersQuerySince {
   implicit open class MutableBuilder[Self <: GetParametersQuerySince] (val x: Self) extends AnyVal {
     
     inline def setGet(value: ParametersQuerySince): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
-    
-    inline def setPost(value: RequestBodyContentApplicationjsonDescription): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
   }
 }

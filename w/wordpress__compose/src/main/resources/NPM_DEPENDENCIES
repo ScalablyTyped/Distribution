@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@wordpress/compose" : "6.10.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@wordpress/compose" : "6.10.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

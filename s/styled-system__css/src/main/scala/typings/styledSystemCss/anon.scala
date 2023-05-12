@@ -115,7 +115,9 @@ import typings.csstype.mod.Property.BreakAfter
 import typings.csstype.mod.Property.BreakBefore
 import typings.csstype.mod.Property.BreakInside
 import typings.csstype.mod.Property.CaptionSide
+import typings.csstype.mod.Property.Caret
 import typings.csstype.mod.Property.CaretColor
+import typings.csstype.mod.Property.CaretShape
 import typings.csstype.mod.Property.Clear
 import typings.csstype.mod.Property.Clip
 import typings.csstype.mod.Property.ClipPath
@@ -135,6 +137,14 @@ import typings.csstype.mod.Property.ColumnSpan
 import typings.csstype.mod.Property.ColumnWidth
 import typings.csstype.mod.Property.Columns
 import typings.csstype.mod.Property.Contain
+import typings.csstype.mod.Property.ContainIntrinsicBlockSize
+import typings.csstype.mod.Property.ContainIntrinsicHeight
+import typings.csstype.mod.Property.ContainIntrinsicInlineSize
+import typings.csstype.mod.Property.ContainIntrinsicSize
+import typings.csstype.mod.Property.ContainIntrinsicWidth
+import typings.csstype.mod.Property.Container
+import typings.csstype.mod.Property.ContainerName
+import typings.csstype.mod.Property.ContainerType
 import typings.csstype.mod.Property.Content
 import typings.csstype.mod.Property.ContentVisibility
 import typings.csstype.mod.Property.CounterIncrement
@@ -165,6 +175,7 @@ import typings.csstype.mod.Property.FontFeatureSettings
 import typings.csstype.mod.Property.FontKerning
 import typings.csstype.mod.Property.FontLanguageOverride
 import typings.csstype.mod.Property.FontOpticalSizing
+import typings.csstype.mod.Property.FontPalette
 import typings.csstype.mod.Property.FontSize
 import typings.csstype.mod.Property.FontSizeAdjust
 import typings.csstype.mod.Property.FontSmooth
@@ -175,6 +186,7 @@ import typings.csstype.mod.Property.FontVariant
 import typings.csstype.mod.Property.FontVariantAlternates
 import typings.csstype.mod.Property.FontVariantCaps
 import typings.csstype.mod.Property.FontVariantEastAsian
+import typings.csstype.mod.Property.FontVariantEmoji
 import typings.csstype.mod.Property.FontVariantLigatures
 import typings.csstype.mod.Property.FontVariantNumeric
 import typings.csstype.mod.Property.FontVariantPosition
@@ -204,6 +216,7 @@ import typings.csstype.mod.Property.GridTemplateRows
 import typings.csstype.mod.Property.HangingPunctuation
 import typings.csstype.mod.Property.Height
 import typings.csstype.mod.Property.HyphenateCharacter
+import typings.csstype.mod.Property.HyphenateLimitChars
 import typings.csstype.mod.Property.Hyphens
 import typings.csstype.mod.Property.ImageOrientation
 import typings.csstype.mod.Property.ImageRendering
@@ -246,6 +259,7 @@ import typings.csstype.mod.Property.MarginInlineStart
 import typings.csstype.mod.Property.MarginLeft
 import typings.csstype.mod.Property.MarginRight
 import typings.csstype.mod.Property.MarginTop
+import typings.csstype.mod.Property.MarginTrim
 import typings.csstype.mod.Property.Marker
 import typings.csstype.mod.Property.MarkerEnd
 import typings.csstype.mod.Property.MarkerMid
@@ -357,6 +371,7 @@ import typings.csstype.mod.Property.Offset
 import typings.csstype.mod.Property.OffsetAnchor
 import typings.csstype.mod.Property.OffsetDistance
 import typings.csstype.mod.Property.OffsetPath
+import typings.csstype.mod.Property.OffsetPosition
 import typings.csstype.mod.Property.OffsetRotate
 import typings.csstype.mod.Property.Opacity
 import typings.csstype.mod.Property.Order
@@ -391,6 +406,7 @@ import typings.csstype.mod.Property.PaddingInlineStart
 import typings.csstype.mod.Property.PaddingLeft
 import typings.csstype.mod.Property.PaddingRight
 import typings.csstype.mod.Property.PaddingTop
+import typings.csstype.mod.Property.Page
 import typings.csstype.mod.Property.PageBreakAfter
 import typings.csstype.mod.Property.PageBreakBefore
 import typings.csstype.mod.Property.PageBreakInside
@@ -444,6 +460,9 @@ import typings.csstype.mod.Property.ScrollSnapStop
 import typings.csstype.mod.Property.ScrollSnapType
 import typings.csstype.mod.Property.ScrollSnapTypeX
 import typings.csstype.mod.Property.ScrollSnapTypeY
+import typings.csstype.mod.Property.ScrollTimeline
+import typings.csstype.mod.Property.ScrollTimelineAxis
+import typings.csstype.mod.Property.ScrollTimelineName
 import typings.csstype.mod.Property.ScrollbarColor
 import typings.csstype.mod.Property.ScrollbarGutter
 import typings.csstype.mod.Property.ScrollbarWidth
@@ -504,6 +523,7 @@ import typings.csstype.mod.Property.UnicodeBidi
 import typings.csstype.mod.Property.UserSelect
 import typings.csstype.mod.Property.VectorEffect
 import typings.csstype.mod.Property.VerticalAlign
+import typings.csstype.mod.Property.ViewTransitionName
 import typings.csstype.mod.Property.Visibility
 import typings.csstype.mod.Property.WebkitAppearance
 import typings.csstype.mod.Property.WebkitBorderBefore
@@ -2847,8 +2867,14 @@ object anon {
         ThemeValue[js.UndefOr[CaptionSide | js.Array[NonNullable[js.UndefOr[CaptionSide]]]]]
       ] = js.undefined
     
+    var caret: js.UndefOr[ThemeValue[js.UndefOr[Caret | js.Array[NonNullable[js.UndefOr[Caret]]]]]] = js.undefined
+    
     var caretColor: js.UndefOr[
         ThemeValue[js.UndefOr[CaretColor | js.Array[NonNullable[js.UndefOr[CaretColor]]]]]
+      ] = js.undefined
+    
+    var caretShape: js.UndefOr[
+        ThemeValue[js.UndefOr[CaretShape | js.Array[NonNullable[js.UndefOr[CaretShape]]]]]
       ] = js.undefined
     
     var clear: js.UndefOr[ThemeValue[js.UndefOr[Clear | js.Array[NonNullable[js.UndefOr[Clear]]]]]] = js.undefined
@@ -2942,6 +2968,56 @@ object anon {
       ] = js.undefined
     
     var contain: js.UndefOr[ThemeValue[js.UndefOr[Contain | js.Array[NonNullable[js.UndefOr[Contain]]]]]] = js.undefined
+    
+    var containIntrinsicBlockSize: js.UndefOr[
+        ThemeValue[
+          js.UndefOr[
+            (ContainIntrinsicBlockSize[Double | String]) | (js.Array[NonNullable[js.UndefOr[ContainIntrinsicBlockSize[Double | String]]]])
+          ]
+        ]
+      ] = js.undefined
+    
+    var containIntrinsicHeight: js.UndefOr[
+        ThemeValue[
+          js.UndefOr[
+            (ContainIntrinsicHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[ContainIntrinsicHeight[Double | String]]]])
+          ]
+        ]
+      ] = js.undefined
+    
+    var containIntrinsicInlineSize: js.UndefOr[
+        ThemeValue[
+          js.UndefOr[
+            (ContainIntrinsicInlineSize[Double | String]) | (js.Array[NonNullable[js.UndefOr[ContainIntrinsicInlineSize[Double | String]]]])
+          ]
+        ]
+      ] = js.undefined
+    
+    var containIntrinsicSize: js.UndefOr[
+        ThemeValue[
+          js.UndefOr[
+            (ContainIntrinsicSize[Double | String]) | (js.Array[NonNullable[js.UndefOr[ContainIntrinsicSize[Double | String]]]])
+          ]
+        ]
+      ] = js.undefined
+    
+    var containIntrinsicWidth: js.UndefOr[
+        ThemeValue[
+          js.UndefOr[
+            (ContainIntrinsicWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[ContainIntrinsicWidth[Double | String]]]])
+          ]
+        ]
+      ] = js.undefined
+    
+    var container: js.UndefOr[ThemeValue[js.UndefOr[Container | js.Array[NonNullable[js.UndefOr[Container]]]]]] = js.undefined
+    
+    var containerName: js.UndefOr[
+        ThemeValue[js.UndefOr[ContainerName | js.Array[NonNullable[js.UndefOr[ContainerName]]]]]
+      ] = js.undefined
+    
+    var containerType: js.UndefOr[
+        ThemeValue[js.UndefOr[ContainerType | js.Array[NonNullable[js.UndefOr[ContainerType]]]]]
+      ] = js.undefined
     
     var content: js.UndefOr[ThemeValue[js.UndefOr[Content | js.Array[NonNullable[js.UndefOr[Content]]]]]] = js.undefined
     
@@ -3059,6 +3135,10 @@ object anon {
         ]
       ] = js.undefined
     
+    var fontPalette: js.UndefOr[
+        ThemeValue[js.UndefOr[FontPalette | js.Array[NonNullable[js.UndefOr[FontPalette]]]]]
+      ] = js.undefined
+    
     var fontSize: js.UndefOr[
         ThemeValue[
           js.UndefOr[
@@ -3106,6 +3186,12 @@ object anon {
     var fontVariantEastAsian: js.UndefOr[
         ThemeValue[
           js.UndefOr[FontVariantEastAsian | js.Array[NonNullable[js.UndefOr[FontVariantEastAsian]]]]
+        ]
+      ] = js.undefined
+    
+    var fontVariantEmoji: js.UndefOr[
+        ThemeValue[
+          js.UndefOr[FontVariantEmoji | js.Array[NonNullable[js.UndefOr[FontVariantEmoji]]]]
         ]
       ] = js.undefined
     
@@ -3272,6 +3358,12 @@ object anon {
     var hyphenateCharacter: js.UndefOr[
         ThemeValue[
           js.UndefOr[HyphenateCharacter | js.Array[NonNullable[js.UndefOr[HyphenateCharacter]]]]
+        ]
+      ] = js.undefined
+    
+    var hyphenateLimitChars: js.UndefOr[
+        ThemeValue[
+          js.UndefOr[HyphenateLimitChars | js.Array[NonNullable[js.UndefOr[HyphenateLimitChars]]]]
         ]
       ] = js.undefined
     
@@ -3525,6 +3617,10 @@ object anon {
             (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
           ]
         ]
+      ] = js.undefined
+    
+    var marginTrim: js.UndefOr[
+        ThemeValue[js.UndefOr[MarginTrim | js.Array[NonNullable[js.UndefOr[MarginTrim]]]]]
       ] = js.undefined
     
     var marker: js.UndefOr[ThemeValue[js.UndefOr[Marker | js.Array[NonNullable[js.UndefOr[Marker]]]]]] = js.undefined
@@ -4181,6 +4277,14 @@ object anon {
         ThemeValue[js.UndefOr[OffsetPath | js.Array[NonNullable[js.UndefOr[OffsetPath]]]]]
       ] = js.undefined
     
+    var offsetPosition: js.UndefOr[
+        ThemeValue[
+          js.UndefOr[
+            (OffsetPosition[Double | String]) | (js.Array[NonNullable[js.UndefOr[OffsetPosition[Double | String]]]])
+          ]
+        ]
+      ] = js.undefined
+    
     var offsetRotate: js.UndefOr[
         ThemeValue[js.UndefOr[OffsetRotate | js.Array[NonNullable[js.UndefOr[OffsetRotate]]]]]
       ] = js.undefined
@@ -4382,6 +4486,8 @@ object anon {
           ]
         ]
       ] = js.undefined
+    
+    var page: js.UndefOr[ThemeValue[js.UndefOr[Page | js.Array[NonNullable[js.UndefOr[Page]]]]]] = js.undefined
     
     var pageBreakAfter: js.UndefOr[
         ThemeValue[js.UndefOr[PageBreakAfter | js.Array[NonNullable[js.UndefOr[PageBreakAfter]]]]]
@@ -4737,6 +4843,22 @@ object anon {
         ThemeValue[js.UndefOr[ScrollSnapTypeY | js.Array[NonNullable[js.UndefOr[ScrollSnapTypeY]]]]]
       ] = js.undefined
     
+    var scrollTimeline: js.UndefOr[
+        ThemeValue[js.UndefOr[ScrollTimeline | js.Array[NonNullable[js.UndefOr[ScrollTimeline]]]]]
+      ] = js.undefined
+    
+    var scrollTimelineAxis: js.UndefOr[
+        ThemeValue[
+          js.UndefOr[ScrollTimelineAxis | js.Array[NonNullable[js.UndefOr[ScrollTimelineAxis]]]]
+        ]
+      ] = js.undefined
+    
+    var scrollTimelineName: js.UndefOr[
+        ThemeValue[
+          js.UndefOr[ScrollTimelineName | js.Array[NonNullable[js.UndefOr[ScrollTimelineName]]]]
+        ]
+      ] = js.undefined
+    
     var scrollbarColor: js.UndefOr[
         ThemeValue[js.UndefOr[ScrollbarColor | js.Array[NonNullable[js.UndefOr[ScrollbarColor]]]]]
       ] = js.undefined
@@ -5058,6 +5180,12 @@ object anon {
           js.UndefOr[
             (VerticalAlign[Double | String]) | (js.Array[NonNullable[js.UndefOr[VerticalAlign[Double | String]]]])
           ]
+        ]
+      ] = js.undefined
+    
+    var viewTransitionName: js.UndefOr[
+        ThemeValue[
+          js.UndefOr[ViewTransitionName | js.Array[NonNullable[js.UndefOr[ViewTransitionName]]]]
         ]
       ] = js.undefined
     
@@ -6425,11 +6553,23 @@ object anon {
       
       inline def setCaptionSideVarargs(value: (js.UndefOr[CaptionSide | js.Array[NonNullable[js.UndefOr[CaptionSide]]]])*): Self = StObject.set(x, "captionSide", js.Array(value*))
       
+      inline def setCaret(value: ThemeValue[js.UndefOr[Caret | js.Array[NonNullable[js.UndefOr[Caret]]]]]): Self = StObject.set(x, "caret", value.asInstanceOf[js.Any])
+      
       inline def setCaretColor(value: ThemeValue[js.UndefOr[CaretColor | js.Array[NonNullable[js.UndefOr[CaretColor]]]]]): Self = StObject.set(x, "caretColor", value.asInstanceOf[js.Any])
       
       inline def setCaretColorUndefined: Self = StObject.set(x, "caretColor", js.undefined)
       
       inline def setCaretColorVarargs(value: (js.UndefOr[CaretColor | js.Array[NonNullable[js.UndefOr[CaretColor]]]])*): Self = StObject.set(x, "caretColor", js.Array(value*))
+      
+      inline def setCaretShape(value: ThemeValue[js.UndefOr[CaretShape | js.Array[NonNullable[js.UndefOr[CaretShape]]]]]): Self = StObject.set(x, "caretShape", value.asInstanceOf[js.Any])
+      
+      inline def setCaretShapeUndefined: Self = StObject.set(x, "caretShape", js.undefined)
+      
+      inline def setCaretShapeVarargs(value: (js.UndefOr[CaretShape | js.Array[NonNullable[js.UndefOr[CaretShape]]]])*): Self = StObject.set(x, "caretShape", js.Array(value*))
+      
+      inline def setCaretUndefined: Self = StObject.set(x, "caret", js.undefined)
+      
+      inline def setCaretVarargs(value: (js.UndefOr[Caret | js.Array[NonNullable[js.UndefOr[Caret]]]])*): Self = StObject.set(x, "caret", js.Array(value*))
       
       inline def setClear(value: ThemeValue[js.UndefOr[Clear | js.Array[NonNullable[js.UndefOr[Clear]]]]]): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       
@@ -6609,9 +6749,107 @@ object anon {
       
       inline def setContain(value: ThemeValue[js.UndefOr[Contain | js.Array[NonNullable[js.UndefOr[Contain]]]]]): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
       
+      inline def setContainIntrinsicBlockSize(
+        value: ThemeValue[
+              js.UndefOr[
+                (ContainIntrinsicBlockSize[Double | String]) | (js.Array[NonNullable[js.UndefOr[ContainIntrinsicBlockSize[Double | String]]]])
+              ]
+            ]
+      ): Self = StObject.set(x, "containIntrinsicBlockSize", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicBlockSizeUndefined: Self = StObject.set(x, "containIntrinsicBlockSize", js.undefined)
+      
+      inline def setContainIntrinsicBlockSizeVarargs(
+        value: (js.UndefOr[
+              (ContainIntrinsicBlockSize[Double | String]) | (js.Array[NonNullable[js.UndefOr[ContainIntrinsicBlockSize[Double | String]]]])
+            ])*
+      ): Self = StObject.set(x, "containIntrinsicBlockSize", js.Array(value*))
+      
+      inline def setContainIntrinsicHeight(
+        value: ThemeValue[
+              js.UndefOr[
+                (ContainIntrinsicHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[ContainIntrinsicHeight[Double | String]]]])
+              ]
+            ]
+      ): Self = StObject.set(x, "containIntrinsicHeight", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicHeightUndefined: Self = StObject.set(x, "containIntrinsicHeight", js.undefined)
+      
+      inline def setContainIntrinsicHeightVarargs(
+        value: (js.UndefOr[
+              (ContainIntrinsicHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[ContainIntrinsicHeight[Double | String]]]])
+            ])*
+      ): Self = StObject.set(x, "containIntrinsicHeight", js.Array(value*))
+      
+      inline def setContainIntrinsicInlineSize(
+        value: ThemeValue[
+              js.UndefOr[
+                (ContainIntrinsicInlineSize[Double | String]) | (js.Array[NonNullable[js.UndefOr[ContainIntrinsicInlineSize[Double | String]]]])
+              ]
+            ]
+      ): Self = StObject.set(x, "containIntrinsicInlineSize", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicInlineSizeUndefined: Self = StObject.set(x, "containIntrinsicInlineSize", js.undefined)
+      
+      inline def setContainIntrinsicInlineSizeVarargs(
+        value: (js.UndefOr[
+              (ContainIntrinsicInlineSize[Double | String]) | (js.Array[NonNullable[js.UndefOr[ContainIntrinsicInlineSize[Double | String]]]])
+            ])*
+      ): Self = StObject.set(x, "containIntrinsicInlineSize", js.Array(value*))
+      
+      inline def setContainIntrinsicSize(
+        value: ThemeValue[
+              js.UndefOr[
+                (ContainIntrinsicSize[Double | String]) | (js.Array[NonNullable[js.UndefOr[ContainIntrinsicSize[Double | String]]]])
+              ]
+            ]
+      ): Self = StObject.set(x, "containIntrinsicSize", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicSizeUndefined: Self = StObject.set(x, "containIntrinsicSize", js.undefined)
+      
+      inline def setContainIntrinsicSizeVarargs(
+        value: (js.UndefOr[
+              (ContainIntrinsicSize[Double | String]) | (js.Array[NonNullable[js.UndefOr[ContainIntrinsicSize[Double | String]]]])
+            ])*
+      ): Self = StObject.set(x, "containIntrinsicSize", js.Array(value*))
+      
+      inline def setContainIntrinsicWidth(
+        value: ThemeValue[
+              js.UndefOr[
+                (ContainIntrinsicWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[ContainIntrinsicWidth[Double | String]]]])
+              ]
+            ]
+      ): Self = StObject.set(x, "containIntrinsicWidth", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicWidthUndefined: Self = StObject.set(x, "containIntrinsicWidth", js.undefined)
+      
+      inline def setContainIntrinsicWidthVarargs(
+        value: (js.UndefOr[
+              (ContainIntrinsicWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[ContainIntrinsicWidth[Double | String]]]])
+            ])*
+      ): Self = StObject.set(x, "containIntrinsicWidth", js.Array(value*))
+      
       inline def setContainUndefined: Self = StObject.set(x, "contain", js.undefined)
       
       inline def setContainVarargs(value: (js.UndefOr[Contain | js.Array[NonNullable[js.UndefOr[Contain]]]])*): Self = StObject.set(x, "contain", js.Array(value*))
+      
+      inline def setContainer(value: ThemeValue[js.UndefOr[Container | js.Array[NonNullable[js.UndefOr[Container]]]]]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      
+      inline def setContainerName(value: ThemeValue[js.UndefOr[ContainerName | js.Array[NonNullable[js.UndefOr[ContainerName]]]]]): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+      
+      inline def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
+      
+      inline def setContainerNameVarargs(value: (js.UndefOr[ContainerName | js.Array[NonNullable[js.UndefOr[ContainerName]]]])*): Self = StObject.set(x, "containerName", js.Array(value*))
+      
+      inline def setContainerType(value: ThemeValue[js.UndefOr[ContainerType | js.Array[NonNullable[js.UndefOr[ContainerType]]]]]): Self = StObject.set(x, "containerType", value.asInstanceOf[js.Any])
+      
+      inline def setContainerTypeUndefined: Self = StObject.set(x, "containerType", js.undefined)
+      
+      inline def setContainerTypeVarargs(value: (js.UndefOr[ContainerType | js.Array[NonNullable[js.UndefOr[ContainerType]]]])*): Self = StObject.set(x, "containerType", js.Array(value*))
+      
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      
+      inline def setContainerVarargs(value: (js.UndefOr[Container | js.Array[NonNullable[js.UndefOr[Container]]]])*): Self = StObject.set(x, "container", js.Array(value*))
       
       inline def setContent(value: ThemeValue[js.UndefOr[Content | js.Array[NonNullable[js.UndefOr[Content]]]]]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -6835,6 +7073,12 @@ object anon {
       
       inline def setFontOpticalSizingVarargs(value: (js.UndefOr[FontOpticalSizing | js.Array[NonNullable[js.UndefOr[FontOpticalSizing]]]])*): Self = StObject.set(x, "fontOpticalSizing", js.Array(value*))
       
+      inline def setFontPalette(value: ThemeValue[js.UndefOr[FontPalette | js.Array[NonNullable[js.UndefOr[FontPalette]]]]]): Self = StObject.set(x, "fontPalette", value.asInstanceOf[js.Any])
+      
+      inline def setFontPaletteUndefined: Self = StObject.set(x, "fontPalette", js.undefined)
+      
+      inline def setFontPaletteVarargs(value: (js.UndefOr[FontPalette | js.Array[NonNullable[js.UndefOr[FontPalette]]]])*): Self = StObject.set(x, "fontPalette", js.Array(value*))
+      
       inline def setFontSize(
         value: ThemeValue[
               js.UndefOr[
@@ -6928,6 +7172,16 @@ object anon {
       inline def setFontVariantEastAsianVarargs(
         value: (js.UndefOr[FontVariantEastAsian | js.Array[NonNullable[js.UndefOr[FontVariantEastAsian]]]])*
       ): Self = StObject.set(x, "fontVariantEastAsian", js.Array(value*))
+      
+      inline def setFontVariantEmoji(
+        value: ThemeValue[
+              js.UndefOr[FontVariantEmoji | js.Array[NonNullable[js.UndefOr[FontVariantEmoji]]]]
+            ]
+      ): Self = StObject.set(x, "fontVariantEmoji", value.asInstanceOf[js.Any])
+      
+      inline def setFontVariantEmojiUndefined: Self = StObject.set(x, "fontVariantEmoji", js.undefined)
+      
+      inline def setFontVariantEmojiVarargs(value: (js.UndefOr[FontVariantEmoji | js.Array[NonNullable[js.UndefOr[FontVariantEmoji]]]])*): Self = StObject.set(x, "fontVariantEmoji", js.Array(value*))
       
       inline def setFontVariantLigatures(
         value: ThemeValue[
@@ -7244,6 +7498,16 @@ object anon {
       inline def setHyphenateCharacterUndefined: Self = StObject.set(x, "hyphenateCharacter", js.undefined)
       
       inline def setHyphenateCharacterVarargs(value: (js.UndefOr[HyphenateCharacter | js.Array[NonNullable[js.UndefOr[HyphenateCharacter]]]])*): Self = StObject.set(x, "hyphenateCharacter", js.Array(value*))
+      
+      inline def setHyphenateLimitChars(
+        value: ThemeValue[
+              js.UndefOr[HyphenateLimitChars | js.Array[NonNullable[js.UndefOr[HyphenateLimitChars]]]]
+            ]
+      ): Self = StObject.set(x, "hyphenateLimitChars", value.asInstanceOf[js.Any])
+      
+      inline def setHyphenateLimitCharsUndefined: Self = StObject.set(x, "hyphenateLimitChars", js.undefined)
+      
+      inline def setHyphenateLimitCharsVarargs(value: (js.UndefOr[HyphenateLimitChars | js.Array[NonNullable[js.UndefOr[HyphenateLimitChars]]]])*): Self = StObject.set(x, "hyphenateLimitChars", js.Array(value*))
       
       inline def setHyphens(value: ThemeValue[js.UndefOr[Hyphens | js.Array[NonNullable[js.UndefOr[Hyphens]]]]]): Self = StObject.set(x, "hyphens", value.asInstanceOf[js.Any])
       
@@ -7796,6 +8060,12 @@ object anon {
               (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
             ])*
       ): Self = StObject.set(x, "marginTop", js.Array(value*))
+      
+      inline def setMarginTrim(value: ThemeValue[js.UndefOr[MarginTrim | js.Array[NonNullable[js.UndefOr[MarginTrim]]]]]): Self = StObject.set(x, "marginTrim", value.asInstanceOf[js.Any])
+      
+      inline def setMarginTrimUndefined: Self = StObject.set(x, "marginTrim", js.undefined)
+      
+      inline def setMarginTrimVarargs(value: (js.UndefOr[MarginTrim | js.Array[NonNullable[js.UndefOr[MarginTrim]]]])*): Self = StObject.set(x, "marginTrim", js.Array(value*))
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
@@ -10371,6 +10641,22 @@ object anon {
       
       inline def setOffsetPathVarargs(value: (js.UndefOr[OffsetPath | js.Array[NonNullable[js.UndefOr[OffsetPath]]]])*): Self = StObject.set(x, "offsetPath", js.Array(value*))
       
+      inline def setOffsetPosition(
+        value: ThemeValue[
+              js.UndefOr[
+                (OffsetPosition[Double | String]) | (js.Array[NonNullable[js.UndefOr[OffsetPosition[Double | String]]]])
+              ]
+            ]
+      ): Self = StObject.set(x, "offsetPosition", value.asInstanceOf[js.Any])
+      
+      inline def setOffsetPositionUndefined: Self = StObject.set(x, "offsetPosition", js.undefined)
+      
+      inline def setOffsetPositionVarargs(
+        value: (js.UndefOr[
+              (OffsetPosition[Double | String]) | (js.Array[NonNullable[js.UndefOr[OffsetPosition[Double | String]]]])
+            ])*
+      ): Self = StObject.set(x, "offsetPosition", js.Array(value*))
+      
       inline def setOffsetRotate(value: ThemeValue[js.UndefOr[OffsetRotate | js.Array[NonNullable[js.UndefOr[OffsetRotate]]]]]): Self = StObject.set(x, "offsetRotate", value.asInstanceOf[js.Any])
       
       inline def setOffsetRotateUndefined: Self = StObject.set(x, "offsetRotate", js.undefined)
@@ -10773,6 +11059,8 @@ object anon {
             ])*
       ): Self = StObject.set(x, "padding", js.Array(value*))
       
+      inline def setPage(value: ThemeValue[js.UndefOr[Page | js.Array[NonNullable[js.UndefOr[Page]]]]]): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      
       inline def setPageBreakAfter(value: ThemeValue[js.UndefOr[PageBreakAfter | js.Array[NonNullable[js.UndefOr[PageBreakAfter]]]]]): Self = StObject.set(x, "pageBreakAfter", value.asInstanceOf[js.Any])
       
       inline def setPageBreakAfterUndefined: Self = StObject.set(x, "pageBreakAfter", js.undefined)
@@ -10794,6 +11082,10 @@ object anon {
       inline def setPageBreakInsideUndefined: Self = StObject.set(x, "pageBreakInside", js.undefined)
       
       inline def setPageBreakInsideVarargs(value: (js.UndefOr[PageBreakInside | js.Array[NonNullable[js.UndefOr[PageBreakInside]]]])*): Self = StObject.set(x, "pageBreakInside", js.Array(value*))
+      
+      inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+      
+      inline def setPageVarargs(value: (js.UndefOr[Page | js.Array[NonNullable[js.UndefOr[Page]]]])*): Self = StObject.set(x, "page", js.Array(value*))
       
       inline def setPaintOrder(value: ThemeValue[js.UndefOr[PaintOrder | js.Array[NonNullable[js.UndefOr[PaintOrder]]]]]): Self = StObject.set(x, "paintOrder", value.asInstanceOf[js.Any])
       
@@ -11473,6 +11765,32 @@ object anon {
       
       inline def setScrollSnapTypeYVarargs(value: (js.UndefOr[ScrollSnapTypeY | js.Array[NonNullable[js.UndefOr[ScrollSnapTypeY]]]])*): Self = StObject.set(x, "scrollSnapTypeY", js.Array(value*))
       
+      inline def setScrollTimeline(value: ThemeValue[js.UndefOr[ScrollTimeline | js.Array[NonNullable[js.UndefOr[ScrollTimeline]]]]]): Self = StObject.set(x, "scrollTimeline", value.asInstanceOf[js.Any])
+      
+      inline def setScrollTimelineAxis(
+        value: ThemeValue[
+              js.UndefOr[ScrollTimelineAxis | js.Array[NonNullable[js.UndefOr[ScrollTimelineAxis]]]]
+            ]
+      ): Self = StObject.set(x, "scrollTimelineAxis", value.asInstanceOf[js.Any])
+      
+      inline def setScrollTimelineAxisUndefined: Self = StObject.set(x, "scrollTimelineAxis", js.undefined)
+      
+      inline def setScrollTimelineAxisVarargs(value: (js.UndefOr[ScrollTimelineAxis | js.Array[NonNullable[js.UndefOr[ScrollTimelineAxis]]]])*): Self = StObject.set(x, "scrollTimelineAxis", js.Array(value*))
+      
+      inline def setScrollTimelineName(
+        value: ThemeValue[
+              js.UndefOr[ScrollTimelineName | js.Array[NonNullable[js.UndefOr[ScrollTimelineName]]]]
+            ]
+      ): Self = StObject.set(x, "scrollTimelineName", value.asInstanceOf[js.Any])
+      
+      inline def setScrollTimelineNameUndefined: Self = StObject.set(x, "scrollTimelineName", js.undefined)
+      
+      inline def setScrollTimelineNameVarargs(value: (js.UndefOr[ScrollTimelineName | js.Array[NonNullable[js.UndefOr[ScrollTimelineName]]]])*): Self = StObject.set(x, "scrollTimelineName", js.Array(value*))
+      
+      inline def setScrollTimelineUndefined: Self = StObject.set(x, "scrollTimeline", js.undefined)
+      
+      inline def setScrollTimelineVarargs(value: (js.UndefOr[ScrollTimeline | js.Array[NonNullable[js.UndefOr[ScrollTimeline]]]])*): Self = StObject.set(x, "scrollTimeline", js.Array(value*))
+      
       inline def setScrollbarColor(value: ThemeValue[js.UndefOr[ScrollbarColor | js.Array[NonNullable[js.UndefOr[ScrollbarColor]]]]]): Self = StObject.set(x, "scrollbarColor", value.asInstanceOf[js.Any])
       
       inline def setScrollbarColorUndefined: Self = StObject.set(x, "scrollbarColor", js.undefined)
@@ -12058,6 +12376,16 @@ object anon {
               (VerticalAlign[Double | String]) | (js.Array[NonNullable[js.UndefOr[VerticalAlign[Double | String]]]])
             ])*
       ): Self = StObject.set(x, "verticalAlign", js.Array(value*))
+      
+      inline def setViewTransitionName(
+        value: ThemeValue[
+              js.UndefOr[ViewTransitionName | js.Array[NonNullable[js.UndefOr[ViewTransitionName]]]]
+            ]
+      ): Self = StObject.set(x, "viewTransitionName", value.asInstanceOf[js.Any])
+      
+      inline def setViewTransitionNameUndefined: Self = StObject.set(x, "viewTransitionName", js.undefined)
+      
+      inline def setViewTransitionNameVarargs(value: (js.UndefOr[ViewTransitionName | js.Array[NonNullable[js.UndefOr[ViewTransitionName]]]])*): Self = StObject.set(x, "viewTransitionName", js.Array(value*))
       
       inline def setVisibility(value: ThemeValue[js.UndefOr[Visibility | js.Array[NonNullable[js.UndefOr[Visibility]]]]]): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
       

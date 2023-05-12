@@ -49,6 +49,8 @@ object mod extends Shortcut {
     
     var ALLOW_DATA_ATTR: js.UndefOr[Boolean] = js.undefined
     
+    var ALLOW_SELF_CLOSE_IN_ATTR: js.UndefOr[Boolean] = js.undefined
+    
     var ALLOW_UNKNOWN_PROTOCOLS: js.UndefOr[Boolean] = js.undefined
     
     var CUSTOM_ELEMENT_HANDLING: js.UndefOr[AllowCustomizedBuiltInElements] = js.undefined
@@ -159,6 +161,10 @@ object mod extends Shortcut {
       inline def setALLOW_DATA_ATTR(value: Boolean): Self = StObject.set(x, "ALLOW_DATA_ATTR", value.asInstanceOf[js.Any])
       
       inline def setALLOW_DATA_ATTRUndefined: Self = StObject.set(x, "ALLOW_DATA_ATTR", js.undefined)
+      
+      inline def setALLOW_SELF_CLOSE_IN_ATTR(value: Boolean): Self = StObject.set(x, "ALLOW_SELF_CLOSE_IN_ATTR", value.asInstanceOf[js.Any])
+      
+      inline def setALLOW_SELF_CLOSE_IN_ATTRUndefined: Self = StObject.set(x, "ALLOW_SELF_CLOSE_IN_ATTR", js.undefined)
       
       inline def setALLOW_UNKNOWN_PROTOCOLS(value: Boolean): Self = StObject.set(x, "ALLOW_UNKNOWN_PROTOCOLS", value.asInstanceOf[js.Any])
       
@@ -411,6 +417,69 @@ object mod extends Shortcut {
     }
   }
   
+  /* Inlined std.Pick</ * globalThis * / any, 'NodeFilter' | 'Node' | 'Element' | 'HTMLTemplateElement' | 'DocumentFragment' | 'HTMLFormElement' | 'DOMParser' | 'NamedNodeMap'> */
+  trait WindowLike extends StObject {
+    
+    var DOMParser: js.UndefOr[Any] = js.undefined
+    
+    var DocumentFragment: js.UndefOr[Any] = js.undefined
+    
+    var Element: js.UndefOr[Any] = js.undefined
+    
+    var HTMLFormElement: js.UndefOr[Any] = js.undefined
+    
+    var HTMLTemplateElement: js.UndefOr[Any] = js.undefined
+    
+    var NamedNodeMap: js.UndefOr[Any] = js.undefined
+    
+    var Node: js.UndefOr[Any] = js.undefined
+    
+    var NodeFilter: js.UndefOr[Any] = js.undefined
+  }
+  object WindowLike {
+    
+    inline def apply(): WindowLike = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[WindowLike]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WindowLike] (val x: Self) extends AnyVal {
+      
+      inline def setDOMParser(value: Any): Self = StObject.set(x, "DOMParser", value.asInstanceOf[js.Any])
+      
+      inline def setDOMParserUndefined: Self = StObject.set(x, "DOMParser", js.undefined)
+      
+      inline def setDocumentFragment(value: Any): Self = StObject.set(x, "DocumentFragment", value.asInstanceOf[js.Any])
+      
+      inline def setDocumentFragmentUndefined: Self = StObject.set(x, "DocumentFragment", js.undefined)
+      
+      inline def setElement(value: Any): Self = StObject.set(x, "Element", value.asInstanceOf[js.Any])
+      
+      inline def setElementUndefined: Self = StObject.set(x, "Element", js.undefined)
+      
+      inline def setHTMLFormElement(value: Any): Self = StObject.set(x, "HTMLFormElement", value.asInstanceOf[js.Any])
+      
+      inline def setHTMLFormElementUndefined: Self = StObject.set(x, "HTMLFormElement", js.undefined)
+      
+      inline def setHTMLTemplateElement(value: Any): Self = StObject.set(x, "HTMLTemplateElement", value.asInstanceOf[js.Any])
+      
+      inline def setHTMLTemplateElementUndefined: Self = StObject.set(x, "HTMLTemplateElement", js.undefined)
+      
+      inline def setNamedNodeMap(value: Any): Self = StObject.set(x, "NamedNodeMap", value.asInstanceOf[js.Any])
+      
+      inline def setNamedNodeMapUndefined: Self = StObject.set(x, "NamedNodeMap", js.undefined)
+      
+      inline def setNode(value: Any): Self = StObject.set(x, "Node", value.asInstanceOf[js.Any])
+      
+      inline def setNodeFilter(value: Any): Self = StObject.set(x, "NodeFilter", value.asInstanceOf[js.Any])
+      
+      inline def setNodeFilterUndefined: Self = StObject.set(x, "NodeFilter", js.undefined)
+      
+      inline def setNodeUndefined: Self = StObject.set(x, "Node", js.undefined)
+    }
+  }
+  
   trait _HookEvent extends StObject
   object _HookEvent {
     
@@ -441,6 +510,7 @@ object mod extends Shortcut {
        with DOMPurifyI {
     
     def apply(): DOMPurifyI = js.native
+    def apply(window: WindowLike): DOMPurifyI = js.native
     def apply(window: Window): DOMPurifyI = js.native
   }
 }

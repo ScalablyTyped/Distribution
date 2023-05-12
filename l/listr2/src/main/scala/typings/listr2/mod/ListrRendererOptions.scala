@@ -4,11 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Renderer options for the base class, including setup for selecting default and fallback renderers.  */
+/** Renderer options for the parent Listr class, including setup for selecting default and fallback renderers.  */
 trait ListrRendererOptions[Renderer /* <: ListrRendererValue */, FallbackRenderer /* <: ListrRendererValue */]
   extends StObject
-     with ListrDefaultRendererOptions[Renderer]
-     with ListrDefaultNonTTYRendererOptions[FallbackRenderer]
+     with ListrPrimaryRendererOptions[Renderer]
+     with ListrSecondaryRendererOptions[FallbackRenderer]
 object ListrRendererOptions {
   
   inline def apply[Renderer /* <: ListrRendererValue */, FallbackRenderer /* <: ListrRendererValue */](): ListrRendererOptions[Renderer, FallbackRenderer] = {

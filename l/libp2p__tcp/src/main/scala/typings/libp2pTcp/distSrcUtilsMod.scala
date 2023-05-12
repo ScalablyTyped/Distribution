@@ -20,5 +20,8 @@ object distSrcUtilsMod {
   
   inline def isAnyAddr(ip: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAnyAddr")(ip.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def multiaddrToNetConfig(addr: Multiaddr_): ListenOptions | (IpcSocketConnectOpts & TcpSocketConnectOpts) = ^.asInstanceOf[js.Dynamic].applyDynamic("multiaddrToNetConfig")(addr.asInstanceOf[js.Any]).asInstanceOf[ListenOptions | (IpcSocketConnectOpts & TcpSocketConnectOpts)]
+  inline def multiaddrToNetConfig(addr: Multiaddr_): NetConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("multiaddrToNetConfig")(addr.asInstanceOf[js.Any]).asInstanceOf[NetConfig]
+  inline def multiaddrToNetConfig(addr: Multiaddr_, config: NetConfig): NetConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("multiaddrToNetConfig")(addr.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[NetConfig]
+  
+  type NetConfig = ListenOptions | (IpcSocketConnectOpts & TcpSocketConnectOpts)
 }

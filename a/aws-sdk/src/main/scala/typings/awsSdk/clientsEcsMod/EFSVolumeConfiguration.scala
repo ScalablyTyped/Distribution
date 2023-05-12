@@ -22,7 +22,7 @@ trait EFSVolumeConfiguration extends StObject {
   var rootDirectory: js.UndefOr[String] = js.undefined
   
   /**
-    * Determines whether to use encryption for Amazon EFS data in transit between the Amazon ECS host and the Amazon EFS server. Transit encryption must be enabled if Amazon EFS IAM authorization is used. If this parameter is omitted, the default value of DISABLED is used. For more information, see Encrypting data in transit in the Amazon Elastic File System User Guide.
+    * Determines whether to use encryption for Amazon EFS data in transit between the Amazon ECS host and the Amazon EFS server. Transit encryption must be turned on if Amazon EFS IAM authorization is used. If this parameter is omitted, the default value of DISABLED is used. For more information, see Encrypting data in transit in the Amazon Elastic File System User Guide.
     */
   var transitEncryption: js.UndefOr[EFSTransitEncryption] = js.undefined
   

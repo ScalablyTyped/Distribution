@@ -1,5 +1,6 @@
 package typings.openui5
 
+import typings.openui5.anon.Details
 import typings.openui5.sapUiCoreItemMod.default
 import typings.std.Partial
 import typings.std.ThisType
@@ -720,6 +721,9 @@ object sap {
     @JSName("sap/m/OverflowToolbarLayoutData")
     var sapSlashmSlashOverflowToolbarLayoutData: Unit
     
+    @JSName("sap/m/OverflowToolbarMenuButton")
+    var sapSlashmSlashOverflowToolbarMenuButton: Unit
+    
     @JSName("sap/m/OverflowToolbarToggleButton")
     var sapSlashmSlashOverflowToolbarToggleButton: Unit
     
@@ -755,6 +759,9 @@ object sap {
     
     @JSName("sap/m/P13nItem")
     var sapSlashmSlashP13nItem: Unit
+    
+    @JSName("sap/m/P13nOperationsHelper")
+    var sapSlashmSlashP13nOperationsHelper: Unit
     
     @JSName("sap/m/P13nPanel")
     var sapSlashmSlashP13nPanel: Unit
@@ -1083,6 +1090,9 @@ object sap {
     @JSName("sap/m/p13n/GroupPanel")
     var sapSlashmSlashp13nSlashGroupPanel: Unit
     
+    @JSName("sap/m/p13n/MetadataHelper")
+    var sapSlashmSlashp13nSlashMetadataHelper: Unit
+    
     @JSName("sap/m/p13n/Popup")
     var sapSlashmSlashp13nSlashPopup: Unit
     
@@ -1101,20 +1111,20 @@ object sap {
     @JSName("sap/m/p13n/SortPanel")
     var sapSlashmSlashp13nSlashSortPanel: Unit
     
-    @JSName("sap/m/p13n/modification/FlexModificationHandler")
-    var sapSlashmSlashp13nSlashmodificationSlashFlexModificationHandler: Unit
+    @JSName("sap/m/p13n/enum/PersistenceMode")
+    var sapSlashmSlashp13nSlashenumSlashPersistenceMode: Unit
     
-    @JSName("sap/m/p13n/modification/LocalStorageModificationHandler")
-    var sapSlashmSlashp13nSlashmodificationSlashLocalStorageModificationHandler: Unit
-    
-    @JSName("sap/m/p13n/modification/ModificationHandler")
-    var sapSlashmSlashp13nSlashmodificationSlashModificationHandler: Unit
+    @JSName("sap/m/p13n/enum/ProcessingStrategy")
+    var sapSlashmSlashp13nSlashenumSlashProcessingStrategy: Unit
     
     @JSName("sap/m/p13n/modules/AdaptationProvider")
     var sapSlashmSlashp13nSlashmodulesSlashAdaptationProvider: Unit
     
     @JSName("sap/m/plugins/ColumnResizer")
     var sapSlashmSlashpluginsSlashColumnResizer: Unit
+    
+    @JSName("sap/m/plugins/CopyProvider")
+    var sapSlashmSlashpluginsSlashCopyProvider: Unit
     
     @JSName("sap/m/plugins/DataStateIndicator")
     var sapSlashmSlashpluginsSlashDataStateIndicator: Unit
@@ -1239,6 +1249,48 @@ object sap {
     @JSName("sap/m/table/Util")
     var sapSlashmSlashtableSlashUtil: Unit
     
+    @JSName("sap/m/table/columnmenu/ActionItem")
+    var sapSlashmSlashtableSlashcolumnmenuSlashActionItem: Unit
+    
+    @JSName("sap/m/table/columnmenu/Entry")
+    var sapSlashmSlashtableSlashcolumnmenuSlashEntry: Unit
+    
+    @JSName("sap/m/table/columnmenu/Item")
+    var sapSlashmSlashtableSlashcolumnmenuSlashItem: Unit
+    
+    @JSName("sap/m/table/columnmenu/ItemBase")
+    var sapSlashmSlashtableSlashcolumnmenuSlashItemBase: Unit
+    
+    @JSName("sap/m/table/columnmenu/Menu")
+    var sapSlashmSlashtableSlashcolumnmenuSlashMenu: Unit
+    
+    @JSName("sap/m/table/columnmenu/QuickAction")
+    var sapSlashmSlashtableSlashcolumnmenuSlashQuickAction: Unit
+    
+    @JSName("sap/m/table/columnmenu/QuickActionBase")
+    var sapSlashmSlashtableSlashcolumnmenuSlashQuickActionBase: Unit
+    
+    @JSName("sap/m/table/columnmenu/QuickActionItem")
+    var sapSlashmSlashtableSlashcolumnmenuSlashQuickActionItem: Unit
+    
+    @JSName("sap/m/table/columnmenu/QuickGroup")
+    var sapSlashmSlashtableSlashcolumnmenuSlashQuickGroup: Unit
+    
+    @JSName("sap/m/table/columnmenu/QuickGroupItem")
+    var sapSlashmSlashtableSlashcolumnmenuSlashQuickGroupItem: Unit
+    
+    @JSName("sap/m/table/columnmenu/QuickSort")
+    var sapSlashmSlashtableSlashcolumnmenuSlashQuickSort: Unit
+    
+    @JSName("sap/m/table/columnmenu/QuickSortItem")
+    var sapSlashmSlashtableSlashcolumnmenuSlashQuickSortItem: Unit
+    
+    @JSName("sap/m/table/columnmenu/QuickTotal")
+    var sapSlashmSlashtableSlashcolumnmenuSlashQuickTotal: Unit
+    
+    @JSName("sap/m/table/columnmenu/QuickTotalItem")
+    var sapSlashmSlashtableSlashcolumnmenuSlashQuickTotalItem: Unit
+    
     @JSName("sap/m/upload/UploadSet")
     var sapSlashmSlashuploadSlashUploadSet: Unit
     
@@ -1280,9 +1332,6 @@ object sap {
     
     @JSName("sap/ui/Device")
     var sapSlashuiSlashDevice: Unit
-    
-    @JSName("sap/ui/Global")
-    var sapSlashuiSlashGlobal: Unit
     
     @JSName("sap/ui/VersionInfo")
     var sapSlashuiSlashVersionInfo: Unit
@@ -1782,6 +1831,9 @@ object sap {
     @JSName("sap/ui/core/date/CalendarWeekNumbering")
     var sapSlashuiSlashcoreSlashdateSlashCalendarWeekNumbering: Unit
     
+    @JSName("sap/ui/core/date/UI5Date")
+    var sapSlashuiSlashcoreSlashdateSlashUI5Date: Unit
+    
     @JSName("sap/ui/core/date/UniversalDate")
     var sapSlashuiSlashcoreSlashdateSlashUniversalDate: Unit
     
@@ -2133,9 +2185,6 @@ object sap {
     @JSName("sap/ui/fl/Cache")
     var sapSlashuiSlashflSlashCache: Unit
     
-    @JSName("sap/ui/fl/Change")
-    var sapSlashuiSlashflSlashChange: Unit
-    
     @JSName("sap/ui/fl/ChangePersistenceFactory")
     var sapSlashuiSlashflSlashChangePersistenceFactory: Unit
     
@@ -2160,11 +2209,17 @@ object sap {
     @JSName("sap/ui/fl/apply/_internal/changes/descriptor/app/AddAnnotationsToOData")
     var sapSlashuiSlashflSlashapplySlash_internalSlashchangesSlashdescriptorSlashappSlashAddAnnotationsToOData: Unit
     
+    @JSName("sap/ui/fl/apply/_internal/changes/descriptor/app/AddNewInbound")
+    var sapSlashuiSlashflSlashapplySlash_internalSlashchangesSlashdescriptorSlashappSlashAddNewInbound: Unit
+    
     @JSName("sap/ui/fl/apply/_internal/changes/descriptor/app/ChangeDataSource")
     var sapSlashuiSlashflSlashapplySlash_internalSlashchangesSlashdescriptorSlashappSlashChangeDataSource: Unit
     
     @JSName("sap/ui/fl/apply/_internal/changes/descriptor/app/ChangeInbound")
     var sapSlashuiSlashflSlashapplySlash_internalSlashchangesSlashdescriptorSlashappSlashChangeInbound: Unit
+    
+    @JSName("sap/ui/fl/apply/_internal/changes/descriptor/app/RemoveAllInboundsExceptOne")
+    var sapSlashuiSlashflSlashapplySlash_internalSlashchangesSlashdescriptorSlashappSlashRemoveAllInboundsExceptOne: Unit
     
     @JSName("sap/ui/fl/apply/_internal/changes/descriptor/app/SetTitle")
     var sapSlashuiSlashflSlashapplySlash_internalSlashchangesSlashdescriptorSlashappSlashSetTitle: Unit
@@ -2214,9 +2269,6 @@ object sap {
     @JSName("sap/ui/fl/apply/_internal/flexObjects/CompVariant")
     var sapSlashuiSlashflSlashapplySlash_internalSlashflexObjectsSlashCompVariant: Unit
     
-    @JSName("sap/ui/fl/apply/_internal/flexObjects/CompVariantRevertData")
-    var sapSlashuiSlashflSlashapplySlash_internalSlashflexObjectsSlashCompVariantRevertData: Unit
-    
     @JSName("sap/ui/fl/apply/_internal/flexObjects/ControllerExtensionChange")
     var sapSlashuiSlashflSlashapplySlash_internalSlashflexObjectsSlashControllerExtensionChange: Unit
     
@@ -2229,8 +2281,8 @@ object sap {
     @JSName("sap/ui/fl/apply/_internal/flexObjects/FlexObjectFactory")
     var sapSlashuiSlashflSlashapplySlash_internalSlashflexObjectsSlashFlexObjectFactory: Unit
     
-    @JSName("sap/ui/fl/apply/_internal/flexObjects/RevertData")
-    var sapSlashuiSlashflSlashapplySlash_internalSlashflexObjectsSlashRevertData: Unit
+    @JSName("sap/ui/fl/apply/_internal/flexObjects/UIChange")
+    var sapSlashuiSlashflSlashapplySlash_internalSlashflexObjectsSlashUIChange: Unit
     
     @JSName("sap/ui/fl/apply/_internal/flexObjects/UpdatableChange")
     var sapSlashuiSlashflSlashapplySlash_internalSlashflexObjectsSlashUpdatableChange: Unit
@@ -2238,8 +2290,14 @@ object sap {
     @JSName("sap/ui/fl/apply/_internal/flexObjects/Variant")
     var sapSlashuiSlashflSlashapplySlash_internalSlashflexObjectsSlashVariant: Unit
     
+    @JSName("sap/ui/fl/apply/_internal/flexState/DataSelector")
+    var sapSlashuiSlashflSlashapplySlash_internalSlashflexStateSlashDataSelector: Unit
+    
     @JSName("sap/ui/fl/apply/_internal/flexState/FlexState")
     var sapSlashuiSlashflSlashapplySlash_internalSlashflexStateSlashFlexState: Unit
+    
+    @JSName("sap/ui/fl/apply/_internal/flexState/InitialPrepareFunctions")
+    var sapSlashuiSlashflSlashapplySlash_internalSlashflexStateSlashInitialPrepareFunctions: Unit
     
     @JSName("sap/ui/fl/apply/_internal/flexState/Loader")
     var sapSlashuiSlashflSlashapplySlash_internalSlashflexStateSlashLoader: Unit
@@ -2267,6 +2325,9 @@ object sap {
     
     @JSName("sap/ui/fl/apply/_internal/preprocessors/EventHistory")
     var sapSlashuiSlashflSlashapplySlash_internalSlashpreprocessorsSlashEventHistory: Unit
+    
+    @JSName("sap/ui/fl/apply/api/ControlVariantApplyAPI")
+    var sapSlashuiSlashflSlashapplySlashapiSlashControlVariantApplyAPI: Unit
     
     @JSName("sap/ui/fl/apply/api/DelegateMediatorAPI")
     var sapSlashuiSlashflSlashapplySlashapiSlashDelegateMediatorAPI: Unit
@@ -2321,9 +2382,6 @@ object sap {
     
     @JSName("sap/ui/fl/initial/_internal/connectors/Utils")
     var sapSlashuiSlashflSlashinitialSlash_internalSlashconnectorsSlashUtils: Unit
-    
-    @JSName("sap/ui/fl/initial/_internal/storageResultDisassemble")
-    var sapSlashuiSlashflSlashinitialSlash_internalSlashstorageResultDisassemble: Unit
     
     @JSName("sap/ui/fl/interfaces/BaseLoadConnector")
     var sapSlashuiSlashflSlashinterfacesSlashBaseLoadConnector: Unit
@@ -2538,9 +2596,6 @@ object sap {
     @JSName("sap/ui/integration/designtime/baseEditor/propertyEditor/iconEditor/IconEditor")
     var sapSlashuiSlashintegrationSlashdesigntimeSlashbaseEditorSlashpropertyEditorSlashiconEditorSlashIconEditor: Unit
     
-    @JSName("sap/ui/integration/designtime/baseEditor/propertyEditor/iconEditor/IsInIconPool.validator")
-    var sapSlashuiSlashintegrationSlashdesigntimeSlashbaseEditorSlashpropertyEditorSlashiconEditorSlashIsInIconPoolDotvalidator: Unit
-    
     @JSName("sap/ui/integration/designtime/baseEditor/propertyEditor/integerEditor/IntegerEditor")
     var sapSlashuiSlashintegrationSlashdesigntimeSlashbaseEditorSlashpropertyEditorSlashintegerEditorSlashIntegerEditor: Unit
     
@@ -2633,9 +2688,6 @@ object sap {
     
     @JSName("sap/ui/integration/editor/Editor")
     var sapSlashuiSlashintegrationSlasheditorSlashEditor: Unit
-    
-    @JSName("sap/ui/integration/editor/EditorResourceBundles")
-    var sapSlashuiSlashintegrationSlasheditorSlashEditorResourceBundles: Unit
     
     @JSName("sap/ui/integration/editor/Extension")
     var sapSlashuiSlashintegrationSlasheditorSlashExtension: Unit
@@ -2853,6 +2905,9 @@ object sap {
     @JSName("sap/ui/mdc/Chart")
     var sapSlashuiSlashmdcSlashChart: Unit
     
+    @JSName("sap/ui/mdc/ChartDelegate")
+    var sapSlashuiSlashmdcSlashChartDelegate: Unit
+    
     @JSName("sap/ui/mdc/Control")
     var sapSlashuiSlashmdcSlashControl: Unit
     
@@ -2919,6 +2974,9 @@ object sap {
     @JSName("sap/ui/mdc/condition/ConditionModelPropertyBinding")
     var sapSlashuiSlashmdcSlashconditionSlashConditionModelPropertyBinding: Unit
     
+    @JSName("sap/ui/mdc/condition/ConditionValidateException")
+    var sapSlashuiSlashmdcSlashconditionSlashConditionValidateException: Unit
+    
     @JSName("sap/ui/mdc/condition/FilterConverter")
     var sapSlashuiSlashmdcSlashconditionSlashFilterConverter: Unit
     
@@ -2952,8 +3010,8 @@ object sap {
     @JSName("sap/ui/mdc/enum/FieldDisplay")
     var sapSlashuiSlashmdcSlashenumSlashFieldDisplay: Unit
     
-    @JSName("sap/ui/mdc/enum/OutParameterMode")
-    var sapSlashuiSlashmdcSlashenumSlashOutParameterMode: Unit
+    @JSName("sap/ui/mdc/enum/FilterBarValidationStatus")
+    var sapSlashuiSlashmdcSlashenumSlashFilterBarValidationStatus: Unit
     
     @JSName("sap/ui/mdc/enum/PersistenceMode")
     var sapSlashuiSlashmdcSlashenumSlashPersistenceMode: Unit
@@ -2964,23 +3022,17 @@ object sap {
     @JSName("sap/ui/mdc/enum/PropagationReason")
     var sapSlashuiSlashmdcSlashenumSlashPropagationReason: Unit
     
+    @JSName("sap/ui/mdc/enum/ReasonMode")
+    var sapSlashuiSlashmdcSlashenumSlashReasonMode: Unit
+    
     @JSName("sap/ui/mdc/enum/SelectType")
     var sapSlashuiSlashmdcSlashenumSlashSelectType: Unit
-    
-    @JSName("sap/ui/mdc/field/BoolFieldHelp")
-    var sapSlashuiSlashmdcSlashfieldSlashBoolFieldHelp: Unit
-    
-    @JSName("sap/ui/mdc/field/ConditionFieldHelp")
-    var sapSlashuiSlashmdcSlashfieldSlashConditionFieldHelp: Unit
     
     @JSName("sap/ui/mdc/field/ConditionType")
     var sapSlashuiSlashmdcSlashfieldSlashConditionType: Unit
     
     @JSName("sap/ui/mdc/field/ConditionsType")
     var sapSlashuiSlashmdcSlashfieldSlashConditionsType: Unit
-    
-    @JSName("sap/ui/mdc/field/CustomFieldHelp")
-    var sapSlashuiSlashmdcSlashfieldSlashCustomFieldHelp: Unit
     
     @JSName("sap/ui/mdc/field/CustomFieldInfo")
     var sapSlashuiSlashmdcSlashfieldSlashCustomFieldInfo: Unit
@@ -2997,12 +3049,6 @@ object sap {
     @JSName("sap/ui/mdc/field/FieldBaseDelegate")
     var sapSlashuiSlashmdcSlashfieldSlashFieldBaseDelegate: Unit
     
-    @JSName("sap/ui/mdc/field/FieldHelpBase")
-    var sapSlashuiSlashmdcSlashfieldSlashFieldHelpBase: Unit
-    
-    @JSName("sap/ui/mdc/field/FieldHelpBaseDelegate")
-    var sapSlashuiSlashmdcSlashfieldSlashFieldHelpBaseDelegate: Unit
-    
     @JSName("sap/ui/mdc/field/FieldInfoBase")
     var sapSlashuiSlashmdcSlashfieldSlashFieldInfoBase: Unit
     
@@ -3011,30 +3057,6 @@ object sap {
     
     @JSName("sap/ui/mdc/field/FieldMultiInput")
     var sapSlashuiSlashmdcSlashfieldSlashFieldMultiInput: Unit
-    
-    @JSName("sap/ui/mdc/field/FieldValueHelp")
-    var sapSlashuiSlashmdcSlashfieldSlashFieldValueHelp: Unit
-    
-    @JSName("sap/ui/mdc/field/FieldValueHelpContentWrapperBase")
-    var sapSlashuiSlashmdcSlashfieldSlashFieldValueHelpContentWrapperBase: Unit
-    
-    @JSName("sap/ui/mdc/field/FieldValueHelpDelegate")
-    var sapSlashuiSlashmdcSlashfieldSlashFieldValueHelpDelegate: Unit
-    
-    @JSName("sap/ui/mdc/field/FieldValueHelpMTableWrapper")
-    var sapSlashuiSlashmdcSlashfieldSlashFieldValueHelpMTableWrapper: Unit
-    
-    @JSName("sap/ui/mdc/field/FieldValueHelpMdcTableWrapper")
-    var sapSlashuiSlashmdcSlashfieldSlashFieldValueHelpMdcTableWrapper: Unit
-    
-    @JSName("sap/ui/mdc/field/FieldValueHelpUITableWrapper")
-    var sapSlashuiSlashmdcSlashfieldSlashFieldValueHelpUITableWrapper: Unit
-    
-    @JSName("sap/ui/mdc/field/InParameter")
-    var sapSlashuiSlashmdcSlashfieldSlashInParameter: Unit
-    
-    @JSName("sap/ui/mdc/field/ListFieldHelp")
-    var sapSlashuiSlashmdcSlashfieldSlashListFieldHelp: Unit
     
     @JSName("sap/ui/mdc/field/ListFieldHelpItem")
     var sapSlashuiSlashmdcSlashfieldSlashListFieldHelpItem: Unit
@@ -3045,17 +3067,11 @@ object sap {
     @JSName("sap/ui/mdc/field/MultiValueFieldItem")
     var sapSlashuiSlashmdcSlashfieldSlashMultiValueFieldItem: Unit
     
-    @JSName("sap/ui/mdc/field/OutParameter")
-    var sapSlashuiSlashmdcSlashfieldSlashOutParameter: Unit
-    
     @JSName("sap/ui/mdc/field/TokenDisplay")
     var sapSlashuiSlashmdcSlashfieldSlashTokenDisplay: Unit
     
     @JSName("sap/ui/mdc/field/TokenizerDisplay")
     var sapSlashuiSlashmdcSlashfieldSlashTokenizerDisplay: Unit
-    
-    @JSName("sap/ui/mdc/field/ValueHelpPanel")
-    var sapSlashuiSlashmdcSlashfieldSlashValueHelpPanel: Unit
     
     @JSName("sap/ui/mdc/filterbar/FilterBarBase")
     var sapSlashuiSlashmdcSlashfilterbarSlashFilterBarBase: Unit
@@ -3065,6 +3081,9 @@ object sap {
     
     @JSName("sap/ui/mdc/filterbar/aligned/FilterItemLayout")
     var sapSlashuiSlashmdcSlashfilterbarSlashalignedSlashFilterItemLayout: Unit
+    
+    @JSName("sap/ui/mdc/filterbar/p13n/AdaptationFilterBar")
+    var sapSlashuiSlashmdcSlashfilterbarSlashp13nSlashAdaptationFilterBar: Unit
     
     @JSName("sap/ui/mdc/filterbar/vh/CollectiveSearchSelect")
     var sapSlashuiSlashmdcSlashfilterbarSlashvhSlashCollectiveSearchSelect: Unit
@@ -3077,6 +3096,9 @@ object sap {
     
     @JSName("sap/ui/mdc/library")
     var sapSlashuiSlashmdcSlashlibrary: Unit
+    
+    @JSName("sap/ui/mdc/link/LinkItem")
+    var sapSlashuiSlashmdcSlashlinkSlashLinkItem: Unit
     
     @JSName("sap/ui/mdc/mixin/AdaptationMixin")
     var sapSlashuiSlashmdcSlashmixinSlashAdaptationMixin: Unit
@@ -3093,23 +3115,20 @@ object sap {
     @JSName("sap/ui/mdc/mixin/PropertyHelperMixin")
     var sapSlashuiSlashmdcSlashmixinSlashPropertyHelperMixin: Unit
     
+    @JSName("sap/ui/mdc/odata/TypeUtil")
+    var sapSlashuiSlashmdcSlashodataSlashTypeUtil: Unit
+    
     @JSName("sap/ui/mdc/odata/v4/FieldBaseDelegate")
     var sapSlashuiSlashmdcSlashodataSlashv4SlashFieldBaseDelegate: Unit
-    
-    @JSName("sap/ui/mdc/odata/v4/FieldValueHelpDelegate")
-    var sapSlashuiSlashmdcSlashodataSlashv4SlashFieldValueHelpDelegate: Unit
     
     @JSName("sap/ui/mdc/odata/v4/TableDelegate")
     var sapSlashuiSlashmdcSlashodataSlashv4SlashTableDelegate: Unit
     
+    @JSName("sap/ui/mdc/odata/v4/TypeUtil")
+    var sapSlashuiSlashmdcSlashodataSlashv4SlashTypeUtil: Unit
+    
     @JSName("sap/ui/mdc/odata/v4/ValueHelpDelegate")
     var sapSlashuiSlashmdcSlashodataSlashv4SlashValueHelpDelegate: Unit
-    
-    @JSName("sap/ui/mdc/p13n/AdaptationProvider")
-    var sapSlashuiSlashmdcSlashp13nSlashAdaptationProvider: Unit
-    
-    @JSName("sap/ui/mdc/p13n/Engine")
-    var sapSlashuiSlashmdcSlashp13nSlashEngine: Unit
     
     @JSName("sap/ui/mdc/p13n/StateUtil")
     var sapSlashuiSlashmdcSlashp13nSlashStateUtil: Unit
@@ -3117,20 +3136,14 @@ object sap {
     @JSName("sap/ui/mdc/p13n/UIManager")
     var sapSlashuiSlashmdcSlashp13nSlashUIManager: Unit
     
-    @JSName("sap/ui/mdc/p13n/modification/ModificationHandler")
-    var sapSlashuiSlashmdcSlashp13nSlashmodificationSlashModificationHandler: Unit
-    
-    @JSName("sap/ui/mdc/p13n/modules/DefaultProviderRegistry")
-    var sapSlashuiSlashmdcSlashp13nSlashmodulesSlashDefaultProviderRegistry: Unit
-    
     @JSName("sap/ui/mdc/p13n/panels/FilterPanel")
     var sapSlashuiSlashmdcSlashp13nSlashpanelsSlashFilterPanel: Unit
     
-    @JSName("sap/ui/mdc/p13n/subcontroller/BaseController")
-    var sapSlashuiSlashmdcSlashp13nSlashsubcontrollerSlashBaseController: Unit
-    
     @JSName("sap/ui/mdc/table/Column")
     var sapSlashuiSlashmdcSlashtableSlashColumn: Unit
+    
+    @JSName("sap/ui/mdc/table/ColumnSettings")
+    var sapSlashuiSlashmdcSlashtableSlashColumnSettings: Unit
     
     @JSName("sap/ui/mdc/table/CreationRow")
     var sapSlashuiSlashmdcSlashtableSlashCreationRow: Unit
@@ -3140,6 +3153,9 @@ object sap {
     
     @JSName("sap/ui/mdc/table/PropertyHelper")
     var sapSlashuiSlashmdcSlashtableSlashPropertyHelper: Unit
+    
+    @JSName("sap/ui/mdc/table/ResponsiveColumnSettings")
+    var sapSlashuiSlashmdcSlashtableSlashResponsiveColumnSettings: Unit
     
     @JSName("sap/ui/mdc/table/ResponsiveTableType")
     var sapSlashuiSlashmdcSlashtableSlashResponsiveTableType: Unit
@@ -3153,6 +3169,9 @@ object sap {
     @JSName("sap/ui/mdc/table/TableTypeBase")
     var sapSlashuiSlashmdcSlashtableSlashTableTypeBase: Unit
     
+    @JSName("sap/ui/mdc/table/TreeTableType")
+    var sapSlashuiSlashmdcSlashtableSlashTreeTableType: Unit
+    
     @JSName("sap/ui/mdc/table/V4AnalyticsPropertyHelper")
     var sapSlashuiSlashmdcSlashtableSlashV4AnalyticsPropertyHelper: Unit
     
@@ -3161,6 +3180,9 @@ object sap {
     
     @JSName("sap/ui/mdc/util/FilterUtil")
     var sapSlashuiSlashmdcSlashutilSlashFilterUtil: Unit
+    
+    @JSName("sap/ui/mdc/util/InfoBar")
+    var sapSlashuiSlashmdcSlashutilSlashInfoBar: Unit
     
     @JSName("sap/ui/mdc/util/PromiseCache")
     var sapSlashuiSlashmdcSlashutilSlashPromiseCache: Unit
@@ -3323,9 +3345,6 @@ object sap {
     
     @JSName("sap/ui/model/analytics/BatchResponseCollector")
     var sapSlashuiSlashmodelSlashanalyticsSlashBatchResponseCollector: Unit
-    
-    @JSName("sap/ui/model/analytics/ODataModelAdapter")
-    var sapSlashuiSlashmodelSlashanalyticsSlashODataModelAdapter: Unit
     
     @JSName("sap/ui/model/analytics/odata4analytics")
     var sapSlashuiSlashmodelSlashanalyticsSlashodata4analytics: Unit
@@ -3630,11 +3649,11 @@ object sap {
     @JSName("sap/ui/support/RuleAnalyzer")
     var sapSlashuiSlashsupportSlashRuleAnalyzer: Unit
     
-    @JSName("sap/ui/support/jQuery.sap.support")
-    var sapSlashuiSlashsupportSlashjQueryDotsapDotsupport: Unit
-    
     @JSName("sap/ui/support/library")
     var sapSlashuiSlashsupportSlashlibrary: Unit
+    
+    @JSName("sap/ui/support/supportRules/CoreFacade")
+    var sapSlashuiSlashsupportSlashsupportRulesSlashCoreFacade: Unit
     
     @JSName("sap/ui/support/supportRules/ExecutionScope")
     var sapSlashuiSlashsupportSlashsupportRulesSlashExecutionScope: Unit
@@ -3642,8 +3661,8 @@ object sap {
     @JSName("sap/ui/support/supportRules/History")
     var sapSlashuiSlashsupportSlashsupportRulesSlashHistory: Unit
     
-    @JSName("sap/ui/support/supportRules/RuleSet")
-    var sapSlashuiSlashsupportSlashsupportRulesSlashRuleSet: Unit
+    @JSName("sap/ui/support/supportRules/IssueManager")
+    var sapSlashuiSlashsupportSlashsupportRulesSlashIssueManager: Unit
     
     @JSName("sap/ui/table/AnalyticalColumn")
     var sapSlashuiSlashtableSlashAnalyticalColumn: Unit
@@ -3810,6 +3829,12 @@ object sap {
     @JSName("sap/ui/testrecorder/library")
     var sapSlashuiSlashtestrecorderSlashlibrary: Unit
     
+    @JSName("sap/ui/thirdparty/jquery")
+    var sapSlashuiSlashthirdpartySlashjquery: Unit
+    
+    @JSName("sap/ui/thirdparty/qunit-2")
+    var `sapSlashuiSlashthirdpartySlashqunit-2`: Unit
+    
     @JSName("sap/ui/unified/Calendar")
     var sapSlashuiSlashunifiedSlashCalendar: Unit
     
@@ -3858,6 +3883,9 @@ object sap {
     @JSName("sap/ui/unified/FileUploader")
     var sapSlashuiSlashunifiedSlashFileUploader: Unit
     
+    @JSName("sap/ui/unified/FileUploaderHttpRequestMethod")
+    var sapSlashuiSlashunifiedSlashFileUploaderHttpRequestMethod: Unit
+    
     @JSName("sap/ui/unified/FileUploaderParameter")
     var sapSlashuiSlashunifiedSlashFileUploaderParameter: Unit
     
@@ -3893,9 +3921,6 @@ object sap {
     
     @JSName("sap/ui/unified/SplitContainer")
     var sapSlashuiSlashunifiedSlashSplitContainer: Unit
-    
-    @JSName("sap/ui/unified/calendar/CalendarUtils")
-    var sapSlashuiSlashunifiedSlashcalendarSlashCalendarUtils: Unit
     
     @JSName("sap/ui/unified/calendar/DatesRow")
     var sapSlashuiSlashunifiedSlashcalendarSlashDatesRow: Unit
@@ -4406,8 +4431,6 @@ object sap {
     
     @JSName("sap/uxap/library")
     var sapSlashuxapSlashlibrary: Unit
-    
-    var ui5loader: Unit
   }
   object IUI5DefineDependencyNames {
     
@@ -4646,6 +4669,7 @@ object sap {
       sapSlashmSlashOverflowToolbar: Unit,
       sapSlashmSlashOverflowToolbarButton: Unit,
       sapSlashmSlashOverflowToolbarLayoutData: Unit,
+      sapSlashmSlashOverflowToolbarMenuButton: Unit,
       sapSlashmSlashOverflowToolbarToggleButton: Unit,
       sapSlashmSlashP13nColumnsItem: Unit,
       sapSlashmSlashP13nColumnsPanel: Unit,
@@ -4658,14 +4682,13 @@ object sap {
       sapSlashmSlashP13nGroupItem: Unit,
       sapSlashmSlashP13nGroupPanel: Unit,
       sapSlashmSlashP13nItem: Unit,
+      sapSlashmSlashP13nOperationsHelper: Unit,
       sapSlashmSlashP13nPanel: Unit,
       sapSlashmSlashP13nSortItem: Unit,
       sapSlashmSlashP13nSortPanel: Unit,
       sapSlashmSlashPDFViewer: Unit,
       sapSlashmSlashPage: Unit,
-      sapSlashmSlashPageAccessibleLandmarkInfo: Unit,
-      sapSlashmSlashPagingButton: Unit,
-      sapSlashmSlashPanel: Unit
+      sapSlashmSlashPageAccessibleLandmarkInfo: Unit
     ): IUI5DefineDependencyNames = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("jquery.sap.act")(jqueryDotsapDotact.asInstanceOf[js.Any])
@@ -4902,6 +4925,7 @@ object sap {
       __obj.updateDynamic("sap/m/OverflowToolbar")(sapSlashmSlashOverflowToolbar.asInstanceOf[js.Any])
       __obj.updateDynamic("sap/m/OverflowToolbarButton")(sapSlashmSlashOverflowToolbarButton.asInstanceOf[js.Any])
       __obj.updateDynamic("sap/m/OverflowToolbarLayoutData")(sapSlashmSlashOverflowToolbarLayoutData.asInstanceOf[js.Any])
+      __obj.updateDynamic("sap/m/OverflowToolbarMenuButton")(sapSlashmSlashOverflowToolbarMenuButton.asInstanceOf[js.Any])
       __obj.updateDynamic("sap/m/OverflowToolbarToggleButton")(sapSlashmSlashOverflowToolbarToggleButton.asInstanceOf[js.Any])
       __obj.updateDynamic("sap/m/P13nColumnsItem")(sapSlashmSlashP13nColumnsItem.asInstanceOf[js.Any])
       __obj.updateDynamic("sap/m/P13nColumnsPanel")(sapSlashmSlashP13nColumnsPanel.asInstanceOf[js.Any])
@@ -4914,14 +4938,13 @@ object sap {
       __obj.updateDynamic("sap/m/P13nGroupItem")(sapSlashmSlashP13nGroupItem.asInstanceOf[js.Any])
       __obj.updateDynamic("sap/m/P13nGroupPanel")(sapSlashmSlashP13nGroupPanel.asInstanceOf[js.Any])
       __obj.updateDynamic("sap/m/P13nItem")(sapSlashmSlashP13nItem.asInstanceOf[js.Any])
+      __obj.updateDynamic("sap/m/P13nOperationsHelper")(sapSlashmSlashP13nOperationsHelper.asInstanceOf[js.Any])
       __obj.updateDynamic("sap/m/P13nPanel")(sapSlashmSlashP13nPanel.asInstanceOf[js.Any])
       __obj.updateDynamic("sap/m/P13nSortItem")(sapSlashmSlashP13nSortItem.asInstanceOf[js.Any])
       __obj.updateDynamic("sap/m/P13nSortPanel")(sapSlashmSlashP13nSortPanel.asInstanceOf[js.Any])
       __obj.updateDynamic("sap/m/PDFViewer")(sapSlashmSlashPDFViewer.asInstanceOf[js.Any])
       __obj.updateDynamic("sap/m/Page")(sapSlashmSlashPage.asInstanceOf[js.Any])
       __obj.updateDynamic("sap/m/PageAccessibleLandmarkInfo")(sapSlashmSlashPageAccessibleLandmarkInfo.asInstanceOf[js.Any])
-      __obj.updateDynamic("sap/m/PagingButton")(sapSlashmSlashPagingButton.asInstanceOf[js.Any])
-      __obj.updateDynamic("sap/m/Panel")(sapSlashmSlashPanel.asInstanceOf[js.Any])
       __obj.asInstanceOf[IUI5DefineDependencyNames]
     }
     
@@ -5396,6 +5419,8 @@ object sap {
       
       inline def setSapSlashmSlashOverflowToolbarLayoutData(value: Unit): Self = StObject.set(x, "sap/m/OverflowToolbarLayoutData", value.asInstanceOf[js.Any])
       
+      inline def setSapSlashmSlashOverflowToolbarMenuButton(value: Unit): Self = StObject.set(x, "sap/m/OverflowToolbarMenuButton", value.asInstanceOf[js.Any])
+      
       inline def setSapSlashmSlashOverflowToolbarToggleButton(value: Unit): Self = StObject.set(x, "sap/m/OverflowToolbarToggleButton", value.asInstanceOf[js.Any])
       
       inline def setSapSlashmSlashP13nColumnsItem(value: Unit): Self = StObject.set(x, "sap/m/P13nColumnsItem", value.asInstanceOf[js.Any])
@@ -5419,6 +5444,8 @@ object sap {
       inline def setSapSlashmSlashP13nGroupPanel(value: Unit): Self = StObject.set(x, "sap/m/P13nGroupPanel", value.asInstanceOf[js.Any])
       
       inline def setSapSlashmSlashP13nItem(value: Unit): Self = StObject.set(x, "sap/m/P13nItem", value.asInstanceOf[js.Any])
+      
+      inline def setSapSlashmSlashP13nOperationsHelper(value: Unit): Self = StObject.set(x, "sap/m/P13nOperationsHelper", value.asInstanceOf[js.Any])
       
       inline def setSapSlashmSlashP13nPanel(value: Unit): Self = StObject.set(x, "sap/m/P13nPanel", value.asInstanceOf[js.Any])
       
@@ -5638,6 +5665,8 @@ object sap {
       
       inline def setSapSlashmSlashp13nSlashGroupPanel(value: Unit): Self = StObject.set(x, "sap/m/p13n/GroupPanel", value.asInstanceOf[js.Any])
       
+      inline def setSapSlashmSlashp13nSlashMetadataHelper(value: Unit): Self = StObject.set(x, "sap/m/p13n/MetadataHelper", value.asInstanceOf[js.Any])
+      
       inline def setSapSlashmSlashp13nSlashPopup(value: Unit): Self = StObject.set(x, "sap/m/p13n/Popup", value.asInstanceOf[js.Any])
       
       inline def setSapSlashmSlashp13nSlashQueryPanel(value: Unit): Self = StObject.set(x, "sap/m/p13n/QueryPanel", value.asInstanceOf[js.Any])
@@ -5650,15 +5679,15 @@ object sap {
       
       inline def setSapSlashmSlashp13nSlashSortPanel(value: Unit): Self = StObject.set(x, "sap/m/p13n/SortPanel", value.asInstanceOf[js.Any])
       
-      inline def setSapSlashmSlashp13nSlashmodificationSlashFlexModificationHandler(value: Unit): Self = StObject.set(x, "sap/m/p13n/modification/FlexModificationHandler", value.asInstanceOf[js.Any])
+      inline def setSapSlashmSlashp13nSlashenumSlashPersistenceMode(value: Unit): Self = StObject.set(x, "sap/m/p13n/enum/PersistenceMode", value.asInstanceOf[js.Any])
       
-      inline def setSapSlashmSlashp13nSlashmodificationSlashLocalStorageModificationHandler(value: Unit): Self = StObject.set(x, "sap/m/p13n/modification/LocalStorageModificationHandler", value.asInstanceOf[js.Any])
-      
-      inline def setSapSlashmSlashp13nSlashmodificationSlashModificationHandler(value: Unit): Self = StObject.set(x, "sap/m/p13n/modification/ModificationHandler", value.asInstanceOf[js.Any])
+      inline def setSapSlashmSlashp13nSlashenumSlashProcessingStrategy(value: Unit): Self = StObject.set(x, "sap/m/p13n/enum/ProcessingStrategy", value.asInstanceOf[js.Any])
       
       inline def setSapSlashmSlashp13nSlashmodulesSlashAdaptationProvider(value: Unit): Self = StObject.set(x, "sap/m/p13n/modules/AdaptationProvider", value.asInstanceOf[js.Any])
       
       inline def setSapSlashmSlashpluginsSlashColumnResizer(value: Unit): Self = StObject.set(x, "sap/m/plugins/ColumnResizer", value.asInstanceOf[js.Any])
+      
+      inline def setSapSlashmSlashpluginsSlashCopyProvider(value: Unit): Self = StObject.set(x, "sap/m/plugins/CopyProvider", value.asInstanceOf[js.Any])
       
       inline def setSapSlashmSlashpluginsSlashDataStateIndicator(value: Unit): Self = StObject.set(x, "sap/m/plugins/DataStateIndicator", value.asInstanceOf[js.Any])
       
@@ -5742,6 +5771,34 @@ object sap {
       
       inline def setSapSlashmSlashtableSlashUtil(value: Unit): Self = StObject.set(x, "sap/m/table/Util", value.asInstanceOf[js.Any])
       
+      inline def setSapSlashmSlashtableSlashcolumnmenuSlashActionItem(value: Unit): Self = StObject.set(x, "sap/m/table/columnmenu/ActionItem", value.asInstanceOf[js.Any])
+      
+      inline def setSapSlashmSlashtableSlashcolumnmenuSlashEntry(value: Unit): Self = StObject.set(x, "sap/m/table/columnmenu/Entry", value.asInstanceOf[js.Any])
+      
+      inline def setSapSlashmSlashtableSlashcolumnmenuSlashItem(value: Unit): Self = StObject.set(x, "sap/m/table/columnmenu/Item", value.asInstanceOf[js.Any])
+      
+      inline def setSapSlashmSlashtableSlashcolumnmenuSlashItemBase(value: Unit): Self = StObject.set(x, "sap/m/table/columnmenu/ItemBase", value.asInstanceOf[js.Any])
+      
+      inline def setSapSlashmSlashtableSlashcolumnmenuSlashMenu(value: Unit): Self = StObject.set(x, "sap/m/table/columnmenu/Menu", value.asInstanceOf[js.Any])
+      
+      inline def setSapSlashmSlashtableSlashcolumnmenuSlashQuickAction(value: Unit): Self = StObject.set(x, "sap/m/table/columnmenu/QuickAction", value.asInstanceOf[js.Any])
+      
+      inline def setSapSlashmSlashtableSlashcolumnmenuSlashQuickActionBase(value: Unit): Self = StObject.set(x, "sap/m/table/columnmenu/QuickActionBase", value.asInstanceOf[js.Any])
+      
+      inline def setSapSlashmSlashtableSlashcolumnmenuSlashQuickActionItem(value: Unit): Self = StObject.set(x, "sap/m/table/columnmenu/QuickActionItem", value.asInstanceOf[js.Any])
+      
+      inline def setSapSlashmSlashtableSlashcolumnmenuSlashQuickGroup(value: Unit): Self = StObject.set(x, "sap/m/table/columnmenu/QuickGroup", value.asInstanceOf[js.Any])
+      
+      inline def setSapSlashmSlashtableSlashcolumnmenuSlashQuickGroupItem(value: Unit): Self = StObject.set(x, "sap/m/table/columnmenu/QuickGroupItem", value.asInstanceOf[js.Any])
+      
+      inline def setSapSlashmSlashtableSlashcolumnmenuSlashQuickSort(value: Unit): Self = StObject.set(x, "sap/m/table/columnmenu/QuickSort", value.asInstanceOf[js.Any])
+      
+      inline def setSapSlashmSlashtableSlashcolumnmenuSlashQuickSortItem(value: Unit): Self = StObject.set(x, "sap/m/table/columnmenu/QuickSortItem", value.asInstanceOf[js.Any])
+      
+      inline def setSapSlashmSlashtableSlashcolumnmenuSlashQuickTotal(value: Unit): Self = StObject.set(x, "sap/m/table/columnmenu/QuickTotal", value.asInstanceOf[js.Any])
+      
+      inline def setSapSlashmSlashtableSlashcolumnmenuSlashQuickTotalItem(value: Unit): Self = StObject.set(x, "sap/m/table/columnmenu/QuickTotalItem", value.asInstanceOf[js.Any])
+      
       inline def setSapSlashmSlashuploadSlashUploadSet(value: Unit): Self = StObject.set(x, "sap/m/upload/UploadSet", value.asInstanceOf[js.Any])
       
       inline def setSapSlashmSlashuploadSlashUploadSetItem(value: Unit): Self = StObject.set(x, "sap/m/upload/UploadSetItem", value.asInstanceOf[js.Any])
@@ -5769,8 +5826,6 @@ object sap {
       inline def setSapSlashtntSlashlibrary(value: Unit): Self = StObject.set(x, "sap/tnt/library", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashDevice(value: Unit): Self = StObject.set(x, "sap/ui/Device", value.asInstanceOf[js.Any])
-      
-      inline def setSapSlashuiSlashGlobal(value: Unit): Self = StObject.set(x, "sap/ui/Global", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashVersionInfo(value: Unit): Self = StObject.set(x, "sap/ui/VersionInfo", value.asInstanceOf[js.Any])
       
@@ -6104,6 +6159,8 @@ object sap {
       
       inline def setSapSlashuiSlashcoreSlashdateSlashCalendarWeekNumbering(value: Unit): Self = StObject.set(x, "sap/ui/core/date/CalendarWeekNumbering", value.asInstanceOf[js.Any])
       
+      inline def setSapSlashuiSlashcoreSlashdateSlashUI5Date(value: Unit): Self = StObject.set(x, "sap/ui/core/date/UI5Date", value.asInstanceOf[js.Any])
+      
       inline def setSapSlashuiSlashcoreSlashdateSlashUniversalDate(value: Unit): Self = StObject.set(x, "sap/ui/core/date/UniversalDate", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashcoreSlashdateSlashUniversalDateUtils(value: Unit): Self = StObject.set(x, "sap/ui/core/date/UniversalDateUtils", value.asInstanceOf[js.Any])
@@ -6338,8 +6395,6 @@ object sap {
       
       inline def setSapSlashuiSlashflSlashCache(value: Unit): Self = StObject.set(x, "sap/ui/fl/Cache", value.asInstanceOf[js.Any])
       
-      inline def setSapSlashuiSlashflSlashChange(value: Unit): Self = StObject.set(x, "sap/ui/fl/Change", value.asInstanceOf[js.Any])
-      
       inline def setSapSlashuiSlashflSlashChangePersistenceFactory(value: Unit): Self = StObject.set(x, "sap/ui/fl/ChangePersistenceFactory", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashflSlashFlexControllerFactory(value: Unit): Self = StObject.set(x, "sap/ui/fl/FlexControllerFactory", value.asInstanceOf[js.Any])
@@ -6356,9 +6411,13 @@ object sap {
       
       inline def setSapSlashuiSlashflSlashapplySlash_internalSlashchangesSlashdescriptorSlashappSlashAddAnnotationsToOData(value: Unit): Self = StObject.set(x, "sap/ui/fl/apply/_internal/changes/descriptor/app/AddAnnotationsToOData", value.asInstanceOf[js.Any])
       
+      inline def setSapSlashuiSlashflSlashapplySlash_internalSlashchangesSlashdescriptorSlashappSlashAddNewInbound(value: Unit): Self = StObject.set(x, "sap/ui/fl/apply/_internal/changes/descriptor/app/AddNewInbound", value.asInstanceOf[js.Any])
+      
       inline def setSapSlashuiSlashflSlashapplySlash_internalSlashchangesSlashdescriptorSlashappSlashChangeDataSource(value: Unit): Self = StObject.set(x, "sap/ui/fl/apply/_internal/changes/descriptor/app/ChangeDataSource", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashflSlashapplySlash_internalSlashchangesSlashdescriptorSlashappSlashChangeInbound(value: Unit): Self = StObject.set(x, "sap/ui/fl/apply/_internal/changes/descriptor/app/ChangeInbound", value.asInstanceOf[js.Any])
+      
+      inline def setSapSlashuiSlashflSlashapplySlash_internalSlashchangesSlashdescriptorSlashappSlashRemoveAllInboundsExceptOne(value: Unit): Self = StObject.set(x, "sap/ui/fl/apply/_internal/changes/descriptor/app/RemoveAllInboundsExceptOne", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashflSlashapplySlash_internalSlashchangesSlashdescriptorSlashappSlashSetTitle(value: Unit): Self = StObject.set(x, "sap/ui/fl/apply/_internal/changes/descriptor/app/SetTitle", value.asInstanceOf[js.Any])
       
@@ -6392,8 +6451,6 @@ object sap {
       
       inline def setSapSlashuiSlashflSlashapplySlash_internalSlashflexObjectsSlashCompVariant(value: Unit): Self = StObject.set(x, "sap/ui/fl/apply/_internal/flexObjects/CompVariant", value.asInstanceOf[js.Any])
       
-      inline def setSapSlashuiSlashflSlashapplySlash_internalSlashflexObjectsSlashCompVariantRevertData(value: Unit): Self = StObject.set(x, "sap/ui/fl/apply/_internal/flexObjects/CompVariantRevertData", value.asInstanceOf[js.Any])
-      
       inline def setSapSlashuiSlashflSlashapplySlash_internalSlashflexObjectsSlashControllerExtensionChange(value: Unit): Self = StObject.set(x, "sap/ui/fl/apply/_internal/flexObjects/ControllerExtensionChange", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashflSlashapplySlash_internalSlashflexObjectsSlashFlVariant(value: Unit): Self = StObject.set(x, "sap/ui/fl/apply/_internal/flexObjects/FlVariant", value.asInstanceOf[js.Any])
@@ -6402,13 +6459,17 @@ object sap {
       
       inline def setSapSlashuiSlashflSlashapplySlash_internalSlashflexObjectsSlashFlexObjectFactory(value: Unit): Self = StObject.set(x, "sap/ui/fl/apply/_internal/flexObjects/FlexObjectFactory", value.asInstanceOf[js.Any])
       
-      inline def setSapSlashuiSlashflSlashapplySlash_internalSlashflexObjectsSlashRevertData(value: Unit): Self = StObject.set(x, "sap/ui/fl/apply/_internal/flexObjects/RevertData", value.asInstanceOf[js.Any])
+      inline def setSapSlashuiSlashflSlashapplySlash_internalSlashflexObjectsSlashUIChange(value: Unit): Self = StObject.set(x, "sap/ui/fl/apply/_internal/flexObjects/UIChange", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashflSlashapplySlash_internalSlashflexObjectsSlashUpdatableChange(value: Unit): Self = StObject.set(x, "sap/ui/fl/apply/_internal/flexObjects/UpdatableChange", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashflSlashapplySlash_internalSlashflexObjectsSlashVariant(value: Unit): Self = StObject.set(x, "sap/ui/fl/apply/_internal/flexObjects/Variant", value.asInstanceOf[js.Any])
       
+      inline def setSapSlashuiSlashflSlashapplySlash_internalSlashflexStateSlashDataSelector(value: Unit): Self = StObject.set(x, "sap/ui/fl/apply/_internal/flexState/DataSelector", value.asInstanceOf[js.Any])
+      
       inline def setSapSlashuiSlashflSlashapplySlash_internalSlashflexStateSlashFlexState(value: Unit): Self = StObject.set(x, "sap/ui/fl/apply/_internal/flexState/FlexState", value.asInstanceOf[js.Any])
+      
+      inline def setSapSlashuiSlashflSlashapplySlash_internalSlashflexStateSlashInitialPrepareFunctions(value: Unit): Self = StObject.set(x, "sap/ui/fl/apply/_internal/flexState/InitialPrepareFunctions", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashflSlashapplySlash_internalSlashflexStateSlashLoader(value: Unit): Self = StObject.set(x, "sap/ui/fl/apply/_internal/flexState/Loader", value.asInstanceOf[js.Any])
       
@@ -6427,6 +6488,8 @@ object sap {
       inline def setSapSlashuiSlashflSlashapplySlash_internalSlashpreprocessorsSlashControllerExtension(value: Unit): Self = StObject.set(x, "sap/ui/fl/apply/_internal/preprocessors/ControllerExtension", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashflSlashapplySlash_internalSlashpreprocessorsSlashEventHistory(value: Unit): Self = StObject.set(x, "sap/ui/fl/apply/_internal/preprocessors/EventHistory", value.asInstanceOf[js.Any])
+      
+      inline def setSapSlashuiSlashflSlashapplySlashapiSlashControlVariantApplyAPI(value: Unit): Self = StObject.set(x, "sap/ui/fl/apply/api/ControlVariantApplyAPI", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashflSlashapplySlashapiSlashDelegateMediatorAPI(value: Unit): Self = StObject.set(x, "sap/ui/fl/apply/api/DelegateMediatorAPI", value.asInstanceOf[js.Any])
       
@@ -6463,8 +6526,6 @@ object sap {
       inline def setSapSlashuiSlashflSlashinitialSlash_internalSlashconnectorsSlashStaticFileConnector(value: Unit): Self = StObject.set(x, "sap/ui/fl/initial/_internal/connectors/StaticFileConnector", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashflSlashinitialSlash_internalSlashconnectorsSlashUtils(value: Unit): Self = StObject.set(x, "sap/ui/fl/initial/_internal/connectors/Utils", value.asInstanceOf[js.Any])
-      
-      inline def setSapSlashuiSlashflSlashinitialSlash_internalSlashstorageResultDisassemble(value: Unit): Self = StObject.set(x, "sap/ui/fl/initial/_internal/storageResultDisassemble", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashflSlashinterfacesSlashBaseLoadConnector(value: Unit): Self = StObject.set(x, "sap/ui/fl/interfaces/BaseLoadConnector", value.asInstanceOf[js.Any])
       
@@ -6608,8 +6669,6 @@ object sap {
       
       inline def setSapSlashuiSlashintegrationSlashdesigntimeSlashbaseEditorSlashpropertyEditorSlashiconEditorSlashIconEditor(value: Unit): Self = StObject.set(x, "sap/ui/integration/designtime/baseEditor/propertyEditor/iconEditor/IconEditor", value.asInstanceOf[js.Any])
       
-      inline def setSapSlashuiSlashintegrationSlashdesigntimeSlashbaseEditorSlashpropertyEditorSlashiconEditorSlashIsInIconPoolDotvalidator(value: Unit): Self = StObject.set(x, "sap/ui/integration/designtime/baseEditor/propertyEditor/iconEditor/IsInIconPool.validator", value.asInstanceOf[js.Any])
-      
       inline def setSapSlashuiSlashintegrationSlashdesigntimeSlashbaseEditorSlashpropertyEditorSlashintegerEditorSlashIntegerEditor(value: Unit): Self = StObject.set(x, "sap/ui/integration/designtime/baseEditor/propertyEditor/integerEditor/IntegerEditor", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashintegrationSlashdesigntimeSlashbaseEditorSlashpropertyEditorSlashjsonEditorSlashJsonEditor(value: Unit): Self = StObject.set(x, "sap/ui/integration/designtime/baseEditor/propertyEditor/jsonEditor/JsonEditor", value.asInstanceOf[js.Any])
@@ -6671,8 +6730,6 @@ object sap {
       inline def setSapSlashuiSlashintegrationSlashdesigntimeSlasheditorSlashCardPreview(value: Unit): Self = StObject.set(x, "sap/ui/integration/designtime/editor/CardPreview", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashintegrationSlasheditorSlashEditor(value: Unit): Self = StObject.set(x, "sap/ui/integration/editor/Editor", value.asInstanceOf[js.Any])
-      
-      inline def setSapSlashuiSlashintegrationSlasheditorSlashEditorResourceBundles(value: Unit): Self = StObject.set(x, "sap/ui/integration/editor/EditorResourceBundles", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashintegrationSlasheditorSlashExtension(value: Unit): Self = StObject.set(x, "sap/ui/integration/editor/Extension", value.asInstanceOf[js.Any])
       
@@ -6818,6 +6875,8 @@ object sap {
       
       inline def setSapSlashuiSlashmdcSlashChart(value: Unit): Self = StObject.set(x, "sap/ui/mdc/Chart", value.asInstanceOf[js.Any])
       
+      inline def setSapSlashuiSlashmdcSlashChartDelegate(value: Unit): Self = StObject.set(x, "sap/ui/mdc/ChartDelegate", value.asInstanceOf[js.Any])
+      
       inline def setSapSlashuiSlashmdcSlashControl(value: Unit): Self = StObject.set(x, "sap/ui/mdc/Control", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashmdcSlashElement(value: Unit): Self = StObject.set(x, "sap/ui/mdc/Element", value.asInstanceOf[js.Any])
@@ -6862,6 +6921,8 @@ object sap {
       
       inline def setSapSlashuiSlashmdcSlashconditionSlashConditionModelPropertyBinding(value: Unit): Self = StObject.set(x, "sap/ui/mdc/condition/ConditionModelPropertyBinding", value.asInstanceOf[js.Any])
       
+      inline def setSapSlashuiSlashmdcSlashconditionSlashConditionValidateException(value: Unit): Self = StObject.set(x, "sap/ui/mdc/condition/ConditionValidateException", value.asInstanceOf[js.Any])
+      
       inline def setSapSlashuiSlashmdcSlashconditionSlashFilterConverter(value: Unit): Self = StObject.set(x, "sap/ui/mdc/condition/FilterConverter", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashmdcSlashconditionSlashFilterOperatorUtil(value: Unit): Self = StObject.set(x, "sap/ui/mdc/condition/FilterOperatorUtil", value.asInstanceOf[js.Any])
@@ -6884,7 +6945,7 @@ object sap {
       
       inline def setSapSlashuiSlashmdcSlashenumSlashFieldDisplay(value: Unit): Self = StObject.set(x, "sap/ui/mdc/enum/FieldDisplay", value.asInstanceOf[js.Any])
       
-      inline def setSapSlashuiSlashmdcSlashenumSlashOutParameterMode(value: Unit): Self = StObject.set(x, "sap/ui/mdc/enum/OutParameterMode", value.asInstanceOf[js.Any])
+      inline def setSapSlashuiSlashmdcSlashenumSlashFilterBarValidationStatus(value: Unit): Self = StObject.set(x, "sap/ui/mdc/enum/FilterBarValidationStatus", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashmdcSlashenumSlashPersistenceMode(value: Unit): Self = StObject.set(x, "sap/ui/mdc/enum/PersistenceMode", value.asInstanceOf[js.Any])
       
@@ -6892,17 +6953,13 @@ object sap {
       
       inline def setSapSlashuiSlashmdcSlashenumSlashPropagationReason(value: Unit): Self = StObject.set(x, "sap/ui/mdc/enum/PropagationReason", value.asInstanceOf[js.Any])
       
+      inline def setSapSlashuiSlashmdcSlashenumSlashReasonMode(value: Unit): Self = StObject.set(x, "sap/ui/mdc/enum/ReasonMode", value.asInstanceOf[js.Any])
+      
       inline def setSapSlashuiSlashmdcSlashenumSlashSelectType(value: Unit): Self = StObject.set(x, "sap/ui/mdc/enum/SelectType", value.asInstanceOf[js.Any])
-      
-      inline def setSapSlashuiSlashmdcSlashfieldSlashBoolFieldHelp(value: Unit): Self = StObject.set(x, "sap/ui/mdc/field/BoolFieldHelp", value.asInstanceOf[js.Any])
-      
-      inline def setSapSlashuiSlashmdcSlashfieldSlashConditionFieldHelp(value: Unit): Self = StObject.set(x, "sap/ui/mdc/field/ConditionFieldHelp", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashmdcSlashfieldSlashConditionType(value: Unit): Self = StObject.set(x, "sap/ui/mdc/field/ConditionType", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashmdcSlashfieldSlashConditionsType(value: Unit): Self = StObject.set(x, "sap/ui/mdc/field/ConditionsType", value.asInstanceOf[js.Any])
-      
-      inline def setSapSlashuiSlashmdcSlashfieldSlashCustomFieldHelp(value: Unit): Self = StObject.set(x, "sap/ui/mdc/field/CustomFieldHelp", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashmdcSlashfieldSlashCustomFieldInfo(value: Unit): Self = StObject.set(x, "sap/ui/mdc/field/CustomFieldInfo", value.asInstanceOf[js.Any])
       
@@ -6914,31 +6971,11 @@ object sap {
       
       inline def setSapSlashuiSlashmdcSlashfieldSlashFieldBaseDelegate(value: Unit): Self = StObject.set(x, "sap/ui/mdc/field/FieldBaseDelegate", value.asInstanceOf[js.Any])
       
-      inline def setSapSlashuiSlashmdcSlashfieldSlashFieldHelpBase(value: Unit): Self = StObject.set(x, "sap/ui/mdc/field/FieldHelpBase", value.asInstanceOf[js.Any])
-      
-      inline def setSapSlashuiSlashmdcSlashfieldSlashFieldHelpBaseDelegate(value: Unit): Self = StObject.set(x, "sap/ui/mdc/field/FieldHelpBaseDelegate", value.asInstanceOf[js.Any])
-      
       inline def setSapSlashuiSlashmdcSlashfieldSlashFieldInfoBase(value: Unit): Self = StObject.set(x, "sap/ui/mdc/field/FieldInfoBase", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashmdcSlashfieldSlashFieldInput(value: Unit): Self = StObject.set(x, "sap/ui/mdc/field/FieldInput", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashmdcSlashfieldSlashFieldMultiInput(value: Unit): Self = StObject.set(x, "sap/ui/mdc/field/FieldMultiInput", value.asInstanceOf[js.Any])
-      
-      inline def setSapSlashuiSlashmdcSlashfieldSlashFieldValueHelp(value: Unit): Self = StObject.set(x, "sap/ui/mdc/field/FieldValueHelp", value.asInstanceOf[js.Any])
-      
-      inline def setSapSlashuiSlashmdcSlashfieldSlashFieldValueHelpContentWrapperBase(value: Unit): Self = StObject.set(x, "sap/ui/mdc/field/FieldValueHelpContentWrapperBase", value.asInstanceOf[js.Any])
-      
-      inline def setSapSlashuiSlashmdcSlashfieldSlashFieldValueHelpDelegate(value: Unit): Self = StObject.set(x, "sap/ui/mdc/field/FieldValueHelpDelegate", value.asInstanceOf[js.Any])
-      
-      inline def setSapSlashuiSlashmdcSlashfieldSlashFieldValueHelpMTableWrapper(value: Unit): Self = StObject.set(x, "sap/ui/mdc/field/FieldValueHelpMTableWrapper", value.asInstanceOf[js.Any])
-      
-      inline def setSapSlashuiSlashmdcSlashfieldSlashFieldValueHelpMdcTableWrapper(value: Unit): Self = StObject.set(x, "sap/ui/mdc/field/FieldValueHelpMdcTableWrapper", value.asInstanceOf[js.Any])
-      
-      inline def setSapSlashuiSlashmdcSlashfieldSlashFieldValueHelpUITableWrapper(value: Unit): Self = StObject.set(x, "sap/ui/mdc/field/FieldValueHelpUITableWrapper", value.asInstanceOf[js.Any])
-      
-      inline def setSapSlashuiSlashmdcSlashfieldSlashInParameter(value: Unit): Self = StObject.set(x, "sap/ui/mdc/field/InParameter", value.asInstanceOf[js.Any])
-      
-      inline def setSapSlashuiSlashmdcSlashfieldSlashListFieldHelp(value: Unit): Self = StObject.set(x, "sap/ui/mdc/field/ListFieldHelp", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashmdcSlashfieldSlashListFieldHelpItem(value: Unit): Self = StObject.set(x, "sap/ui/mdc/field/ListFieldHelpItem", value.asInstanceOf[js.Any])
       
@@ -6946,19 +6983,17 @@ object sap {
       
       inline def setSapSlashuiSlashmdcSlashfieldSlashMultiValueFieldItem(value: Unit): Self = StObject.set(x, "sap/ui/mdc/field/MultiValueFieldItem", value.asInstanceOf[js.Any])
       
-      inline def setSapSlashuiSlashmdcSlashfieldSlashOutParameter(value: Unit): Self = StObject.set(x, "sap/ui/mdc/field/OutParameter", value.asInstanceOf[js.Any])
-      
       inline def setSapSlashuiSlashmdcSlashfieldSlashTokenDisplay(value: Unit): Self = StObject.set(x, "sap/ui/mdc/field/TokenDisplay", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashmdcSlashfieldSlashTokenizerDisplay(value: Unit): Self = StObject.set(x, "sap/ui/mdc/field/TokenizerDisplay", value.asInstanceOf[js.Any])
-      
-      inline def setSapSlashuiSlashmdcSlashfieldSlashValueHelpPanel(value: Unit): Self = StObject.set(x, "sap/ui/mdc/field/ValueHelpPanel", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashmdcSlashfilterbarSlashFilterBarBase(value: Unit): Self = StObject.set(x, "sap/ui/mdc/filterbar/FilterBarBase", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashmdcSlashfilterbarSlashalignedSlashFilterContainer(value: Unit): Self = StObject.set(x, "sap/ui/mdc/filterbar/aligned/FilterContainer", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashmdcSlashfilterbarSlashalignedSlashFilterItemLayout(value: Unit): Self = StObject.set(x, "sap/ui/mdc/filterbar/aligned/FilterItemLayout", value.asInstanceOf[js.Any])
+      
+      inline def setSapSlashuiSlashmdcSlashfilterbarSlashp13nSlashAdaptationFilterBar(value: Unit): Self = StObject.set(x, "sap/ui/mdc/filterbar/p13n/AdaptationFilterBar", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashmdcSlashfilterbarSlashvhSlashCollectiveSearchSelect(value: Unit): Self = StObject.set(x, "sap/ui/mdc/filterbar/vh/CollectiveSearchSelect", value.asInstanceOf[js.Any])
       
@@ -6967,6 +7002,8 @@ object sap {
       inline def setSapSlashuiSlashmdcSlashfilterbarSlashvhSlashFilterContainer(value: Unit): Self = StObject.set(x, "sap/ui/mdc/filterbar/vh/FilterContainer", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashmdcSlashlibrary(value: Unit): Self = StObject.set(x, "sap/ui/mdc/library", value.asInstanceOf[js.Any])
+      
+      inline def setSapSlashuiSlashmdcSlashlinkSlashLinkItem(value: Unit): Self = StObject.set(x, "sap/ui/mdc/link/LinkItem", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashmdcSlashmixinSlashAdaptationMixin(value: Unit): Self = StObject.set(x, "sap/ui/mdc/mixin/AdaptationMixin", value.asInstanceOf[js.Any])
       
@@ -6978,37 +7015,33 @@ object sap {
       
       inline def setSapSlashuiSlashmdcSlashmixinSlashPropertyHelperMixin(value: Unit): Self = StObject.set(x, "sap/ui/mdc/mixin/PropertyHelperMixin", value.asInstanceOf[js.Any])
       
-      inline def setSapSlashuiSlashmdcSlashodataSlashv4SlashFieldBaseDelegate(value: Unit): Self = StObject.set(x, "sap/ui/mdc/odata/v4/FieldBaseDelegate", value.asInstanceOf[js.Any])
+      inline def setSapSlashuiSlashmdcSlashodataSlashTypeUtil(value: Unit): Self = StObject.set(x, "sap/ui/mdc/odata/TypeUtil", value.asInstanceOf[js.Any])
       
-      inline def setSapSlashuiSlashmdcSlashodataSlashv4SlashFieldValueHelpDelegate(value: Unit): Self = StObject.set(x, "sap/ui/mdc/odata/v4/FieldValueHelpDelegate", value.asInstanceOf[js.Any])
+      inline def setSapSlashuiSlashmdcSlashodataSlashv4SlashFieldBaseDelegate(value: Unit): Self = StObject.set(x, "sap/ui/mdc/odata/v4/FieldBaseDelegate", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashmdcSlashodataSlashv4SlashTableDelegate(value: Unit): Self = StObject.set(x, "sap/ui/mdc/odata/v4/TableDelegate", value.asInstanceOf[js.Any])
       
+      inline def setSapSlashuiSlashmdcSlashodataSlashv4SlashTypeUtil(value: Unit): Self = StObject.set(x, "sap/ui/mdc/odata/v4/TypeUtil", value.asInstanceOf[js.Any])
+      
       inline def setSapSlashuiSlashmdcSlashodataSlashv4SlashValueHelpDelegate(value: Unit): Self = StObject.set(x, "sap/ui/mdc/odata/v4/ValueHelpDelegate", value.asInstanceOf[js.Any])
-      
-      inline def setSapSlashuiSlashmdcSlashp13nSlashAdaptationProvider(value: Unit): Self = StObject.set(x, "sap/ui/mdc/p13n/AdaptationProvider", value.asInstanceOf[js.Any])
-      
-      inline def setSapSlashuiSlashmdcSlashp13nSlashEngine(value: Unit): Self = StObject.set(x, "sap/ui/mdc/p13n/Engine", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashmdcSlashp13nSlashStateUtil(value: Unit): Self = StObject.set(x, "sap/ui/mdc/p13n/StateUtil", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashmdcSlashp13nSlashUIManager(value: Unit): Self = StObject.set(x, "sap/ui/mdc/p13n/UIManager", value.asInstanceOf[js.Any])
       
-      inline def setSapSlashuiSlashmdcSlashp13nSlashmodificationSlashModificationHandler(value: Unit): Self = StObject.set(x, "sap/ui/mdc/p13n/modification/ModificationHandler", value.asInstanceOf[js.Any])
-      
-      inline def setSapSlashuiSlashmdcSlashp13nSlashmodulesSlashDefaultProviderRegistry(value: Unit): Self = StObject.set(x, "sap/ui/mdc/p13n/modules/DefaultProviderRegistry", value.asInstanceOf[js.Any])
-      
       inline def setSapSlashuiSlashmdcSlashp13nSlashpanelsSlashFilterPanel(value: Unit): Self = StObject.set(x, "sap/ui/mdc/p13n/panels/FilterPanel", value.asInstanceOf[js.Any])
       
-      inline def setSapSlashuiSlashmdcSlashp13nSlashsubcontrollerSlashBaseController(value: Unit): Self = StObject.set(x, "sap/ui/mdc/p13n/subcontroller/BaseController", value.asInstanceOf[js.Any])
-      
       inline def setSapSlashuiSlashmdcSlashtableSlashColumn(value: Unit): Self = StObject.set(x, "sap/ui/mdc/table/Column", value.asInstanceOf[js.Any])
+      
+      inline def setSapSlashuiSlashmdcSlashtableSlashColumnSettings(value: Unit): Self = StObject.set(x, "sap/ui/mdc/table/ColumnSettings", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashmdcSlashtableSlashCreationRow(value: Unit): Self = StObject.set(x, "sap/ui/mdc/table/CreationRow", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashmdcSlashtableSlashGridTableType(value: Unit): Self = StObject.set(x, "sap/ui/mdc/table/GridTableType", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashmdcSlashtableSlashPropertyHelper(value: Unit): Self = StObject.set(x, "sap/ui/mdc/table/PropertyHelper", value.asInstanceOf[js.Any])
+      
+      inline def setSapSlashuiSlashmdcSlashtableSlashResponsiveColumnSettings(value: Unit): Self = StObject.set(x, "sap/ui/mdc/table/ResponsiveColumnSettings", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashmdcSlashtableSlashResponsiveTableType(value: Unit): Self = StObject.set(x, "sap/ui/mdc/table/ResponsiveTableType", value.asInstanceOf[js.Any])
       
@@ -7018,11 +7051,15 @@ object sap {
       
       inline def setSapSlashuiSlashmdcSlashtableSlashTableTypeBase(value: Unit): Self = StObject.set(x, "sap/ui/mdc/table/TableTypeBase", value.asInstanceOf[js.Any])
       
+      inline def setSapSlashuiSlashmdcSlashtableSlashTreeTableType(value: Unit): Self = StObject.set(x, "sap/ui/mdc/table/TreeTableType", value.asInstanceOf[js.Any])
+      
       inline def setSapSlashuiSlashmdcSlashtableSlashV4AnalyticsPropertyHelper(value: Unit): Self = StObject.set(x, "sap/ui/mdc/table/V4AnalyticsPropertyHelper", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashmdcSlashutilSlashDateUtil(value: Unit): Self = StObject.set(x, "sap/ui/mdc/util/DateUtil", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashmdcSlashutilSlashFilterUtil(value: Unit): Self = StObject.set(x, "sap/ui/mdc/util/FilterUtil", value.asInstanceOf[js.Any])
+      
+      inline def setSapSlashuiSlashmdcSlashutilSlashInfoBar(value: Unit): Self = StObject.set(x, "sap/ui/mdc/util/InfoBar", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashmdcSlashutilSlashPromiseCache(value: Unit): Self = StObject.set(x, "sap/ui/mdc/util/PromiseCache", value.asInstanceOf[js.Any])
       
@@ -7131,8 +7168,6 @@ object sap {
       inline def setSapSlashuiSlashmodelSlashanalyticsSlashAnalyticalTreeBindingAdapter(value: Unit): Self = StObject.set(x, "sap/ui/model/analytics/AnalyticalTreeBindingAdapter", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashmodelSlashanalyticsSlashBatchResponseCollector(value: Unit): Self = StObject.set(x, "sap/ui/model/analytics/BatchResponseCollector", value.asInstanceOf[js.Any])
-      
-      inline def setSapSlashuiSlashmodelSlashanalyticsSlashODataModelAdapter(value: Unit): Self = StObject.set(x, "sap/ui/model/analytics/ODataModelAdapter", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashmodelSlashanalyticsSlashodata4analytics(value: Unit): Self = StObject.set(x, "sap/ui/model/analytics/odata4analytics", value.asInstanceOf[js.Any])
       
@@ -7336,15 +7371,15 @@ object sap {
       
       inline def setSapSlashuiSlashsupportSlashRuleAnalyzer(value: Unit): Self = StObject.set(x, "sap/ui/support/RuleAnalyzer", value.asInstanceOf[js.Any])
       
-      inline def setSapSlashuiSlashsupportSlashjQueryDotsapDotsupport(value: Unit): Self = StObject.set(x, "sap/ui/support/jQuery.sap.support", value.asInstanceOf[js.Any])
-      
       inline def setSapSlashuiSlashsupportSlashlibrary(value: Unit): Self = StObject.set(x, "sap/ui/support/library", value.asInstanceOf[js.Any])
+      
+      inline def setSapSlashuiSlashsupportSlashsupportRulesSlashCoreFacade(value: Unit): Self = StObject.set(x, "sap/ui/support/supportRules/CoreFacade", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashsupportSlashsupportRulesSlashExecutionScope(value: Unit): Self = StObject.set(x, "sap/ui/support/supportRules/ExecutionScope", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashsupportSlashsupportRulesSlashHistory(value: Unit): Self = StObject.set(x, "sap/ui/support/supportRules/History", value.asInstanceOf[js.Any])
       
-      inline def setSapSlashuiSlashsupportSlashsupportRulesSlashRuleSet(value: Unit): Self = StObject.set(x, "sap/ui/support/supportRules/RuleSet", value.asInstanceOf[js.Any])
+      inline def setSapSlashuiSlashsupportSlashsupportRulesSlashIssueManager(value: Unit): Self = StObject.set(x, "sap/ui/support/supportRules/IssueManager", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashtableSlashAnalyticalColumn(value: Unit): Self = StObject.set(x, "sap/ui/table/AnalyticalColumn", value.asInstanceOf[js.Any])
       
@@ -7456,6 +7491,10 @@ object sap {
       
       inline def setSapSlashuiSlashtestrecorderSlashlibrary(value: Unit): Self = StObject.set(x, "sap/ui/testrecorder/library", value.asInstanceOf[js.Any])
       
+      inline def setSapSlashuiSlashthirdpartySlashjquery(value: Unit): Self = StObject.set(x, "sap/ui/thirdparty/jquery", value.asInstanceOf[js.Any])
+      
+      inline def `setSapSlashuiSlashthirdpartySlashqunit-2`(value: Unit): Self = StObject.set(x, "sap/ui/thirdparty/qunit-2", value.asInstanceOf[js.Any])
+      
       inline def setSapSlashuiSlashunifiedSlashCalendar(value: Unit): Self = StObject.set(x, "sap/ui/unified/Calendar", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashunifiedSlashCalendarAppointment(value: Unit): Self = StObject.set(x, "sap/ui/unified/CalendarAppointment", value.asInstanceOf[js.Any])
@@ -7488,6 +7527,8 @@ object sap {
       
       inline def setSapSlashuiSlashunifiedSlashFileUploader(value: Unit): Self = StObject.set(x, "sap/ui/unified/FileUploader", value.asInstanceOf[js.Any])
       
+      inline def setSapSlashuiSlashunifiedSlashFileUploaderHttpRequestMethod(value: Unit): Self = StObject.set(x, "sap/ui/unified/FileUploaderHttpRequestMethod", value.asInstanceOf[js.Any])
+      
       inline def setSapSlashuiSlashunifiedSlashFileUploaderParameter(value: Unit): Self = StObject.set(x, "sap/ui/unified/FileUploaderParameter", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashunifiedSlashFileUploaderXHRSettings(value: Unit): Self = StObject.set(x, "sap/ui/unified/FileUploaderXHRSettings", value.asInstanceOf[js.Any])
@@ -7511,8 +7552,6 @@ object sap {
       inline def setSapSlashuiSlashunifiedSlashShellOverlay(value: Unit): Self = StObject.set(x, "sap/ui/unified/ShellOverlay", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashunifiedSlashSplitContainer(value: Unit): Self = StObject.set(x, "sap/ui/unified/SplitContainer", value.asInstanceOf[js.Any])
-      
-      inline def setSapSlashuiSlashunifiedSlashcalendarSlashCalendarUtils(value: Unit): Self = StObject.set(x, "sap/ui/unified/calendar/CalendarUtils", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashunifiedSlashcalendarSlashDatesRow(value: Unit): Self = StObject.set(x, "sap/ui/unified/calendar/DatesRow", value.asInstanceOf[js.Any])
       
@@ -7853,8 +7892,6 @@ object sap {
       inline def setSapSlashuxapSlashObjectPageSubSection(value: Unit): Self = StObject.set(x, "sap/uxap/ObjectPageSubSection", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuxapSlashlibrary(value: Unit): Self = StObject.set(x, "sap/uxap/library", value.asInstanceOf[js.Any])
-      
-      inline def setUi5loader(value: Unit): Self = StObject.set(x, "ui5loader", value.asInstanceOf[js.Any])
     }
   }
   
@@ -7875,6 +7912,8 @@ object sap {
     trait SelectionDetailsItemFacade extends StObject {
       
       /**
+        * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+        *
         * Adds some action to the aggregation {@link #getActions actions}.
         *
         * @returns Reference to `this` in order to allow method chaining
@@ -7885,6 +7924,8 @@ object sap {
       oAction: default): this.type = js.native
       
       /**
+        * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+        *
         * Gets current value of property {@link #getEnableNav enableNav}.
         *
         * Determines whether or not the item is active and a navigation event is triggered on press.
@@ -7900,6 +7941,8 @@ object sap {
         */
       vAction: String): default | Null = js.native
       /**
+        * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+        *
         * Removes a action from the aggregation {@link #getActions actions}.
         *
         * @returns The removed action or `null`
@@ -7914,6 +7957,8 @@ object sap {
       vAction: default): default | Null = js.native
       
       /**
+        * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+        *
         * Sets a new value for property {@link #getEnableNav enableNav}.
         *
         * Determines whether or not the item is active and a navigation event is triggered on press.
@@ -7949,25 +7994,81 @@ object sap {
     object support {
       
       /**
-        * @SINCE 1.48
+        * The CoreFacade interface allows rule developers to access the metadata, models, UI areas and components
+        * of the Core.
         *
-        * Allows to select the scope of analysis on an application.
-        *
-        * Overview:
-        *
-        * `ExecutionScope` is the third parameter of a rule check function. It provides access to internal UI5
-        * objects available for inspection. The `getElements` API method allows the user to select a specific subset
-        * of elements valid for their case. It accepts one query object argument.
-        *
-        * Usage:
-        *
-        * When a rule is executed, three parameters are passed: `oIssueManager`, `oCoreFacade` and `oScope`.
-        *
-        * An `ExecutionScope` instance is passed to every call of a rule check function. When you analyze your
-        * application, available objects are collected depending on the settings passed to the Support Assistant
-        * at the moment when you start it.
+        * Usage: The CoreFacade is passed as second argument to all rule check functions.
         */
-      trait ExecutionScope extends StObject
+      trait CoreFacade extends StObject {
+        
+        /**
+          * Gets the Components from the Core object.
+          */
+        def getComponents(): Unit
+        
+        /**
+          * Gets the Metadata from the Core object.
+          */
+        def getMetadata(): Unit
+        
+        /**
+          * Gets the Models from the Core object.
+          */
+        def getModels(): Unit
+        
+        /**
+          * Gets the UI areas from the Core object.
+          */
+        def getUIAreas(): Unit
+      }
+      object CoreFacade {
+        
+        inline def apply(getComponents: () => Unit, getMetadata: () => Unit, getModels: () => Unit, getUIAreas: () => Unit): CoreFacade = {
+          val __obj = js.Dynamic.literal(getComponents = js.Any.fromFunction0(getComponents), getMetadata = js.Any.fromFunction0(getMetadata), getModels = js.Any.fromFunction0(getModels), getUIAreas = js.Any.fromFunction0(getUIAreas))
+          __obj.asInstanceOf[CoreFacade]
+        }
+        
+        @scala.inline
+        implicit open class MutableBuilder[Self <: CoreFacade] (val x: Self) extends AnyVal {
+          
+          inline def setGetComponents(value: () => Unit): Self = StObject.set(x, "getComponents", js.Any.fromFunction0(value))
+          
+          inline def setGetMetadata(value: () => Unit): Self = StObject.set(x, "getMetadata", js.Any.fromFunction0(value))
+          
+          inline def setGetModels(value: () => Unit): Self = StObject.set(x, "getModels", js.Any.fromFunction0(value))
+          
+          inline def setGetUIAreas(value: () => Unit): Self = StObject.set(x, "getUIAreas", js.Any.fromFunction0(value))
+        }
+      }
+      
+      /**
+        * The IssueManagerFacade allows rule developers to add new issues.
+        *
+        * Usage: The IssueManagerFacade is passed as first argument to all rule check functions.
+        */
+      trait IssueManagerFacade extends StObject {
+        
+        /**
+          * Adds issue
+          */
+        def addIssue(/**
+          * Issue object to be added
+          */
+        oIssue: Details): Unit
+      }
+      object IssueManagerFacade {
+        
+        inline def apply(addIssue: Details => Unit): IssueManagerFacade = {
+          val __obj = js.Dynamic.literal(addIssue = js.Any.fromFunction1(addIssue))
+          __obj.asInstanceOf[IssueManagerFacade]
+        }
+        
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IssueManagerFacade] (val x: Self) extends AnyVal {
+          
+          inline def setAddIssue(value: Details => Unit): Self = StObject.set(x, "addIssue", js.Any.fromFunction1(value))
+        }
+      }
     }
   }
 }

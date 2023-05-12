@@ -159,6 +159,13 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
+    inline def architecture(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("architecture")().asInstanceOf[Double]
+    @JSImport("@fingerprintjs/fingerprintjs", "sources.architecture")
+    @js.native
+    def architecture_Fsources: js.Function0[Double] = js.native
+    
+    inline def architecture_Fsources_=(x: js.Function0[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("architecture")(x.asInstanceOf[js.Any])
+    
     inline def audio(): Double | js.Function0[js.Promise[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("audio")().asInstanceOf[Double | js.Function0[js.Promise[Double]]]
     @JSImport("@fingerprintjs/fingerprintjs", "sources.audio")
     @js.native
@@ -314,6 +321,13 @@ object mod {
     
     inline def osCpu_Fsources_=(x: js.Function0[js.UndefOr[String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("osCpu")(x.asInstanceOf[js.Any])
     
+    inline def pdfViewerEnabled(): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("pdfViewerEnabled")().asInstanceOf[js.UndefOr[Boolean]]
+    @JSImport("@fingerprintjs/fingerprintjs", "sources.pdfViewerEnabled")
+    @js.native
+    def pdfViewerEnabled_Fsources: js.Function0[js.UndefOr[Boolean]] = js.native
+    
+    inline def pdfViewerEnabled_Fsources_=(x: js.Function0[js.UndefOr[Boolean]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pdfViewerEnabled")(x.asInstanceOf[js.Any])
+    
     inline def platform(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("platform")().asInstanceOf[String]
     @JSImport("@fingerprintjs/fingerprintjs", "sources.platform")
     @js.native
@@ -384,6 +398,13 @@ object mod {
     def vendor_Fsources: js.Function0[String] = js.native
     
     inline def vendor_Fsources_=(x: js.Function0[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vendor")(x.asInstanceOf[js.Any])
+    
+    inline def videoCard(): js.UndefOr[VideoCard] = ^.asInstanceOf[js.Dynamic].applyDynamic("videoCard")().asInstanceOf[js.UndefOr[VideoCard]]
+    @JSImport("@fingerprintjs/fingerprintjs", "sources.videoCard")
+    @js.native
+    def videoCard_Fsources: js.Function0[js.UndefOr[VideoCard]] = js.native
+    
+    inline def videoCard_Fsources_=(x: js.Function0[js.UndefOr[VideoCard]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("videoCard")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -419,8 +440,14 @@ object mod {
     * compatibility within a major version. This is because browsers change constantly and therefore entropy sources have
     * to change too.
     */
-  /* Inlined @fingerprintjs/fingerprintjs.@fingerprintjs/fingerprintjs.SourcesToComponents<{  fonts :typeof getFonts,   domBlockers :typeof getDomBlockers,   fontPreferences :typeof getFontPreferences,   audio :typeof getAudioFingerprint,   screenFrame :typeof getRoundedScreenFrame,   osCpu :typeof getOsCpu,   languages :typeof getLanguages,   colorDepth :typeof getColorDepth,   deviceMemory :typeof getDeviceMemory,   screenResolution :typeof getScreenResolution,   hardwareConcurrency :typeof getHardwareConcurrency,   timezone :typeof getTimezone,   sessionStorage :typeof getSessionStorage,   localStorage :typeof getLocalStorage,   indexedDB :typeof getIndexedDB,   openDatabase :typeof getOpenDatabase,   cpuClass :typeof getCpuClass,   platform :typeof getPlatform,   plugins :typeof getPlugins,   canvas :typeof getCanvasFingerprint,   touchSupport :typeof getTouchSupport,   vendor :typeof getVendor,   vendorFlavors :typeof getVendorFlavors,   cookiesEnabled :typeof areCookiesEnabled,   colorGamut :typeof getColorGamut,   invertedColors :typeof areColorsInverted,   forcedColors :typeof areColorsForced,   monochrome :typeof getMonochromeDepth,   contrast :typeof getContrastPreference,   reducedMotion :typeof isMotionReduced,   hdr :typeof isHDR,   math :typeof getMathFingerprint}> */
+  /* Inlined @fingerprintjs/fingerprintjs.@fingerprintjs/fingerprintjs.SourcesToComponents<{  fonts :typeof getFonts,   domBlockers :typeof getDomBlockers,   fontPreferences :typeof getFontPreferences,   audio :typeof getAudioFingerprint,   screenFrame :typeof getRoundedScreenFrame,   osCpu :typeof getOsCpu,   languages :typeof getLanguages,   colorDepth :typeof getColorDepth,   deviceMemory :typeof getDeviceMemory,   screenResolution :typeof getScreenResolution,   hardwareConcurrency :typeof getHardwareConcurrency,   timezone :typeof getTimezone,   sessionStorage :typeof getSessionStorage,   localStorage :typeof getLocalStorage,   indexedDB :typeof getIndexedDB,   openDatabase :typeof getOpenDatabase,   cpuClass :typeof getCpuClass,   platform :typeof getPlatform,   plugins :typeof getPlugins,   canvas :typeof getCanvasFingerprint,   touchSupport :typeof getTouchSupport,   vendor :typeof getVendor,   vendorFlavors :typeof getVendorFlavors,   cookiesEnabled :typeof areCookiesEnabled,   colorGamut :typeof getColorGamut,   invertedColors :typeof areColorsInverted,   forcedColors :typeof areColorsForced,   monochrome :typeof getMonochromeDepth,   contrast :typeof getContrastPreference,   reducedMotion :typeof isMotionReduced,   hdr :typeof isHDR,   math :typeof getMathFingerprint,   videoCard :typeof getVideoCard,   pdfViewerEnabled :typeof isPdfViewerEnabled,   architecture :typeof getArchitecture}> */
   trait BuiltinComponents extends StObject {
+    
+    var architecture: Component[
+        SourceValue[
+          /* import warning: importer.ImportType#apply Failed type conversion: typeof getArchitecture */ js.Any
+        ]
+      ]
     
     var audio: Component[
         SourceValue[
@@ -554,6 +581,12 @@ object mod {
         ]
       ]
     
+    var pdfViewerEnabled: Component[
+        SourceValue[
+          /* import warning: importer.ImportType#apply Failed type conversion: typeof isPdfViewerEnabled */ js.Any
+        ]
+      ]
+    
     var platform: Component[
         SourceValue[
           /* import warning: importer.ImportType#apply Failed type conversion: typeof getPlatform */ js.Any
@@ -613,10 +646,21 @@ object mod {
           /* import warning: importer.ImportType#apply Failed type conversion: typeof getVendorFlavors */ js.Any
         ]
       ]
+    
+    var videoCard: Component[
+        SourceValue[
+          /* import warning: importer.ImportType#apply Failed type conversion: typeof getVideoCard */ js.Any
+        ]
+      ]
   }
   object BuiltinComponents {
     
     inline def apply(
+      architecture: Component[
+          SourceValue[
+            /* import warning: importer.ImportType#apply Failed type conversion: typeof getArchitecture */ js.Any
+          ]
+        ],
       audio: Component[
           SourceValue[
             /* import warning: importer.ImportType#apply Failed type conversion: typeof getAudioFingerprint */ js.Any
@@ -727,6 +771,11 @@ object mod {
             /* import warning: importer.ImportType#apply Failed type conversion: typeof getOsCpu */ js.Any
           ]
         ],
+      pdfViewerEnabled: Component[
+          SourceValue[
+            /* import warning: importer.ImportType#apply Failed type conversion: typeof isPdfViewerEnabled */ js.Any
+          ]
+        ],
       platform: Component[
           SourceValue[
             /* import warning: importer.ImportType#apply Failed type conversion: typeof getPlatform */ js.Any
@@ -776,14 +825,27 @@ object mod {
           SourceValue[
             /* import warning: importer.ImportType#apply Failed type conversion: typeof getVendorFlavors */ js.Any
           ]
+        ],
+      videoCard: Component[
+          SourceValue[
+            /* import warning: importer.ImportType#apply Failed type conversion: typeof getVideoCard */ js.Any
+          ]
         ]
     ): BuiltinComponents = {
-      val __obj = js.Dynamic.literal(audio = audio.asInstanceOf[js.Any], canvas = canvas.asInstanceOf[js.Any], colorDepth = colorDepth.asInstanceOf[js.Any], colorGamut = colorGamut.asInstanceOf[js.Any], contrast = contrast.asInstanceOf[js.Any], cookiesEnabled = cookiesEnabled.asInstanceOf[js.Any], cpuClass = cpuClass.asInstanceOf[js.Any], deviceMemory = deviceMemory.asInstanceOf[js.Any], domBlockers = domBlockers.asInstanceOf[js.Any], fontPreferences = fontPreferences.asInstanceOf[js.Any], fonts = fonts.asInstanceOf[js.Any], forcedColors = forcedColors.asInstanceOf[js.Any], hardwareConcurrency = hardwareConcurrency.asInstanceOf[js.Any], hdr = hdr.asInstanceOf[js.Any], indexedDB = indexedDB.asInstanceOf[js.Any], invertedColors = invertedColors.asInstanceOf[js.Any], languages = languages.asInstanceOf[js.Any], localStorage = localStorage.asInstanceOf[js.Any], math = math.asInstanceOf[js.Any], monochrome = monochrome.asInstanceOf[js.Any], openDatabase = openDatabase.asInstanceOf[js.Any], osCpu = osCpu.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], reducedMotion = reducedMotion.asInstanceOf[js.Any], screenFrame = screenFrame.asInstanceOf[js.Any], screenResolution = screenResolution.asInstanceOf[js.Any], sessionStorage = sessionStorage.asInstanceOf[js.Any], timezone = timezone.asInstanceOf[js.Any], touchSupport = touchSupport.asInstanceOf[js.Any], vendor = vendor.asInstanceOf[js.Any], vendorFlavors = vendorFlavors.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(architecture = architecture.asInstanceOf[js.Any], audio = audio.asInstanceOf[js.Any], canvas = canvas.asInstanceOf[js.Any], colorDepth = colorDepth.asInstanceOf[js.Any], colorGamut = colorGamut.asInstanceOf[js.Any], contrast = contrast.asInstanceOf[js.Any], cookiesEnabled = cookiesEnabled.asInstanceOf[js.Any], cpuClass = cpuClass.asInstanceOf[js.Any], deviceMemory = deviceMemory.asInstanceOf[js.Any], domBlockers = domBlockers.asInstanceOf[js.Any], fontPreferences = fontPreferences.asInstanceOf[js.Any], fonts = fonts.asInstanceOf[js.Any], forcedColors = forcedColors.asInstanceOf[js.Any], hardwareConcurrency = hardwareConcurrency.asInstanceOf[js.Any], hdr = hdr.asInstanceOf[js.Any], indexedDB = indexedDB.asInstanceOf[js.Any], invertedColors = invertedColors.asInstanceOf[js.Any], languages = languages.asInstanceOf[js.Any], localStorage = localStorage.asInstanceOf[js.Any], math = math.asInstanceOf[js.Any], monochrome = monochrome.asInstanceOf[js.Any], openDatabase = openDatabase.asInstanceOf[js.Any], osCpu = osCpu.asInstanceOf[js.Any], pdfViewerEnabled = pdfViewerEnabled.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], reducedMotion = reducedMotion.asInstanceOf[js.Any], screenFrame = screenFrame.asInstanceOf[js.Any], screenResolution = screenResolution.asInstanceOf[js.Any], sessionStorage = sessionStorage.asInstanceOf[js.Any], timezone = timezone.asInstanceOf[js.Any], touchSupport = touchSupport.asInstanceOf[js.Any], vendor = vendor.asInstanceOf[js.Any], vendorFlavors = vendorFlavors.asInstanceOf[js.Any], videoCard = videoCard.asInstanceOf[js.Any])
       __obj.asInstanceOf[BuiltinComponents]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: BuiltinComponents] (val x: Self) extends AnyVal {
+      
+      inline def setArchitecture(
+        value: Component[
+              SourceValue[
+                /* import warning: importer.ImportType#apply Failed type conversion: typeof getArchitecture */ js.Any
+              ]
+            ]
+      ): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
       
       inline def setAudio(
         value: Component[
@@ -961,6 +1023,14 @@ object mod {
             ]
       ): Self = StObject.set(x, "osCpu", value.asInstanceOf[js.Any])
       
+      inline def setPdfViewerEnabled(
+        value: Component[
+              SourceValue[
+                /* import warning: importer.ImportType#apply Failed type conversion: typeof isPdfViewerEnabled */ js.Any
+              ]
+            ]
+      ): Self = StObject.set(x, "pdfViewerEnabled", value.asInstanceOf[js.Any])
+      
       inline def setPlatform(
         value: Component[
               SourceValue[
@@ -1040,6 +1110,14 @@ object mod {
               ]
             ]
       ): Self = StObject.set(x, "vendorFlavors", value.asInstanceOf[js.Any])
+      
+      inline def setVideoCard(
+        value: Component[
+              SourceValue[
+                /* import warning: importer.ImportType#apply Failed type conversion: typeof getVideoCard */ js.Any
+              ]
+            ]
+      ): Self = StObject.set(x, "videoCard", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1401,4 +1479,26 @@ object mod {
     * Generic dictionary of unknown sources
     */
   type UnknownSources[TOptions] = Record[String, Source[TOptions, Any]]
+  
+  trait VideoCard extends StObject {
+    
+    var renderer: String
+    
+    var vendor: String
+  }
+  object VideoCard {
+    
+    inline def apply(renderer: String, vendor: String): VideoCard = {
+      val __obj = js.Dynamic.literal(renderer = renderer.asInstanceOf[js.Any], vendor = vendor.asInstanceOf[js.Any])
+      __obj.asInstanceOf[VideoCard]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VideoCard] (val x: Self) extends AnyVal {
+      
+      inline def setRenderer(value: String): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+      
+      inline def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
+    }
+  }
 }

@@ -14,11 +14,11 @@ trait Url_
   @JSName("type")
   var type_Url_ : Url
   
-  var value: StringNode | Raw
+  var value: String
 }
 object Url_ {
   
-  inline def apply(value: StringNode | Raw): Url_ = {
+  inline def apply(value: String): Url_ = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Url")
     __obj.asInstanceOf[Url_]
@@ -29,6 +29,6 @@ object Url_ {
     
     inline def setType(value: Url): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: StringNode | Raw): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

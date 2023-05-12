@@ -1,0 +1,28 @@
+package typings.awsSdk.clientsChimesdkvoiceMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait SipMediaApplicationCall extends StObject {
+  
+  /**
+    * The call's transaction ID.
+    */
+  var TransactionId: js.UndefOr[GuidString] = js.undefined
+}
+object SipMediaApplicationCall {
+  
+  inline def apply(): SipMediaApplicationCall = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[SipMediaApplicationCall]
+  }
+  
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SipMediaApplicationCall] (val x: Self) extends AnyVal {
+    
+    inline def setTransactionId(value: GuidString): Self = StObject.set(x, "TransactionId", value.asInstanceOf[js.Any])
+    
+    inline def setTransactionIdUndefined: Self = StObject.set(x, "TransactionId", js.undefined)
+  }
+}

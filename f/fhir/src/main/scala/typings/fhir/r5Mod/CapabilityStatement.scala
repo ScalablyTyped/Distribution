@@ -4,7 +4,7 @@ import typings.fhir.fhirStrings.active
 import typings.fhir.fhirStrings.capability
 import typings.fhir.fhirStrings.draft
 import typings.fhir.fhirStrings.instance
-import typings.fhir.fhirStrings.requirements
+import typings.fhir.fhirStrings.requirements_
 import typings.fhir.fhirStrings.retired
 import typings.fhir.fhirStrings.unknown
 import org.scalablytyped.runtime.StObject
@@ -16,7 +16,11 @@ trait CapabilityStatement
      with DomainResource
      with _FhirResource {
   
+  var _acceptLanguage: js.UndefOr[js.Array[Element]] = js.undefined
+  
   var _copyright: js.UndefOr[Element] = js.undefined
+  
+  var _copyrightLabel: js.UndefOr[Element] = js.undefined
   
   var _date: js.UndefOr[Element] = js.undefined
   
@@ -52,23 +56,37 @@ trait CapabilityStatement
   
   var _version: js.UndefOr[Element] = js.undefined
   
+  var _versionAlgorithmString: js.UndefOr[Element] = js.undefined
+  
+  /**
+    * In general, if a server gets a request with an Accept-Language that it doesn't support, it should still reutrn the resource, just in its default language for the resource.
+    */
+  var acceptLanguage: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
     * May be a web site, an email address, a telephone number, etc.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var contact: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
   /**
-    * A copyright statement relating to the capability statement and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the capability statement.
+    * ...
     */
   var copyright: js.UndefOr[String] = js.undefined
   
   /**
-    * Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the capability statement. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
+    * The (c) symbol should NOT be included in this string. It will be added by software when rendering the notation. Full details about licensing, restrictions, warrantees, etc. goes in the more general 'copyright' element.
+    */
+  var copyrightLabel: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The date is often not tracked until the resource is published, but may be present on draft content. Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the capability statement. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var date: String
   
   /**
-    * This description can be used to capture details such as why the capability statement was built, comments about misuse, instructions for clinical use and interpretation, literature references, examples from the paper world, etc. It is not a rendering of the capability statement as conveyed in the 'text' field of the resource itself. This item SHOULD be populated unless the information is available from context (e.g. the language of the capability statement is presumed to be the predominant language in the place the capability statement was created).This does not need to be populated if the description is adequately implied by the software or implementation details.
+    * This description can be used to capture details such as comments about misuse, instructions for clinical use and interpretation, literature references, examples from the paper world, etc. It is not a rendering of the capability statement as conveyed in the 'text' field of the resource itself. This item SHOULD be populated unless the information is available from context (e.g. the language of the capability statement is presumed to be the predominant language in the place the capability statement was created).This does not need to be populated if the description is adequately implied by the software or implementation details.
     */
   var description: js.UndefOr[String] = js.undefined
   
@@ -93,12 +111,17 @@ trait CapabilityStatement
   var format: js.Array[String]
   
   /**
+    * A formal identifier that is used to identify this CapabilityStatement when it is represented in other formats, or referenced in a specification, model, design or an instance.
+    */
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
+  
+  /**
     * Identifies a specific implementation instance that is described by the capability statement - i.e. a particular installation, rather than the capabilities of a software program.
     */
   var implementation: js.UndefOr[CapabilityStatementImplementation] = js.undefined
   
   /**
-    * A list of implementation guides that the server does (or should) support in their entirety.
+    * Note: this is primarily only relevant in terms of ImplementationGuides that don't define specific CapabilityStatements declaring the expectation of distinct roles.  (E.g. generic IGs that establish privacy policies.)  In situations where an ImplementationGuide does define CapabilityStatements, asserting CapabilityStatement.implementationGuide means that the implementation adheres to any Implementation.global definitions present in that IG as well as any textual requirements around security or other general interoperability behaviors. However, it does not make any assertions as to conformance with any of the CapabilityStatements defined in the IG. To assert conformance with CapabilityStatements in a referenced IG, it is necessary to use the CapabilityStatement.instantiates element.
     */
   var implementationGuide: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -116,13 +139,14 @@ trait CapabilityStatement
   
   /**
     * It may be possible for the capability statement to be used in jurisdictions other than those for which it was originally designed or intended.
+    * DEPRECATION NOTE: For consistency, implementations are encouraged to migrate to using the new 'jurisdiction' code in the useContext element.  (I.e. useContext.code indicating http://terminology.hl7.org/CodeSystem/usage-context-type#jurisdiction and useContext.valueCodeableConcept indicating the jurisdiction.)
     */
   var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * The way that this statement is intended to be used, to describe an actual running instance of software, a particular product (kind, not instance of software) or a class of implementation (e.g. a desired purchase).
     */
-  var kind: instance | capability | requirements
+  var kind: instance | capability | requirements_
   
   /**
     * Multiple repetitions allow the documentation of multiple endpoints per solution.
@@ -165,6 +189,7 @@ trait CapabilityStatement
   
   /**
     * Allows filtering of capability statements that are appropriate for use versus not.This is not intended for use with actual capability statements, but where capability statements are used to describe possible or desired systems.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var status: draft | active | retired | unknown
   
@@ -186,9 +211,19 @@ trait CapabilityStatement
   var useContext: js.UndefOr[js.Array[UsageContext]] = js.undefined
   
   /**
-    * There may be different capability statement instances that have the same identifier but different versions.  The version can be appended to the url in a reference to allow a reference to a particular business version of the capability statement with the format [url]|[version].
+    * There may be different capability statement instances that have the same identifier but different versions.  The version can be appended to the url in a reference to allow a reference to a particular business version of the capability statement with the format [url]|[version]. The version SHOULD NOT contain a '#' - see [Business Version](resource.html#bv-format).
     */
   var version: js.UndefOr[String] = js.undefined
+  
+  /**
+    * If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 and a 0 if the version ordering can't be successfully be determined.
+    */
+  var versionAlgorithmCoding: js.UndefOr[Coding] = js.undefined
+  
+  /**
+    * If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 and a 0 if the version ordering can't be successfully be determined.
+    */
+  var versionAlgorithmString: js.UndefOr[String] = js.undefined
 }
 object CapabilityStatement {
   
@@ -196,7 +231,7 @@ object CapabilityStatement {
     date: String,
     fhirVersion: String,
     format: js.Array[String],
-    kind: instance | capability | requirements,
+    kind: instance | capability | requirements_,
     status: draft | active | retired | unknown
   ): CapabilityStatement = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], fhirVersion = fhirVersion.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], resourceType = "CapabilityStatement", status = status.asInstanceOf[js.Any])
@@ -206,6 +241,12 @@ object CapabilityStatement {
   @scala.inline
   implicit open class MutableBuilder[Self <: CapabilityStatement] (val x: Self) extends AnyVal {
     
+    inline def setAcceptLanguage(value: js.Array[String]): Self = StObject.set(x, "acceptLanguage", value.asInstanceOf[js.Any])
+    
+    inline def setAcceptLanguageUndefined: Self = StObject.set(x, "acceptLanguage", js.undefined)
+    
+    inline def setAcceptLanguageVarargs(value: String*): Self = StObject.set(x, "acceptLanguage", js.Array(value*))
+    
     inline def setContact(value: js.Array[ContactDetail]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
     inline def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
@@ -213,6 +254,10 @@ object CapabilityStatement {
     inline def setContactVarargs(value: ContactDetail*): Self = StObject.set(x, "contact", js.Array(value*))
     
     inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightLabel(value: String): Self = StObject.set(x, "copyrightLabel", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightLabelUndefined: Self = StObject.set(x, "copyrightLabel", js.undefined)
     
     inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
@@ -237,6 +282,12 @@ object CapabilityStatement {
     inline def setFormat(value: js.Array[String]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     inline def setFormatVarargs(value: String*): Self = StObject.set(x, "format", js.Array(value*))
+    
+    inline def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    
+    inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    
+    inline def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value*))
     
     inline def setImplementation(value: CapabilityStatementImplementation): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
     
@@ -266,7 +317,7 @@ object CapabilityStatement {
     
     inline def setJurisdictionVarargs(value: CodeableConcept*): Self = StObject.set(x, "jurisdiction", js.Array(value*))
     
-    inline def setKind(value: instance | capability | requirements): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: instance | capability | requirements_): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setMessaging(value: js.Array[CapabilityStatementMessaging]): Self = StObject.set(x, "messaging", value.asInstanceOf[js.Any])
     
@@ -322,9 +373,27 @@ object CapabilityStatement {
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
+    inline def setVersionAlgorithmCoding(value: Coding): Self = StObject.set(x, "versionAlgorithmCoding", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmCodingUndefined: Self = StObject.set(x, "versionAlgorithmCoding", js.undefined)
+    
+    inline def setVersionAlgorithmString(value: String): Self = StObject.set(x, "versionAlgorithmString", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmStringUndefined: Self = StObject.set(x, "versionAlgorithmString", js.undefined)
+    
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
+    inline def set_acceptLanguage(value: js.Array[Element]): Self = StObject.set(x, "_acceptLanguage", value.asInstanceOf[js.Any])
+    
+    inline def set_acceptLanguageUndefined: Self = StObject.set(x, "_acceptLanguage", js.undefined)
+    
+    inline def set_acceptLanguageVarargs(value: Element*): Self = StObject.set(x, "_acceptLanguage", js.Array(value*))
+    
     inline def set_copyright(value: Element): Self = StObject.set(x, "_copyright", value.asInstanceOf[js.Any])
+    
+    inline def set_copyrightLabel(value: Element): Self = StObject.set(x, "_copyrightLabel", value.asInstanceOf[js.Any])
+    
+    inline def set_copyrightLabelUndefined: Self = StObject.set(x, "_copyrightLabel", js.undefined)
     
     inline def set_copyrightUndefined: Self = StObject.set(x, "_copyright", js.undefined)
     
@@ -403,6 +472,10 @@ object CapabilityStatement {
     inline def set_urlUndefined: Self = StObject.set(x, "_url", js.undefined)
     
     inline def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
+    
+    inline def set_versionAlgorithmString(value: Element): Self = StObject.set(x, "_versionAlgorithmString", value.asInstanceOf[js.Any])
+    
+    inline def set_versionAlgorithmStringUndefined: Self = StObject.set(x, "_versionAlgorithmString", js.undefined)
     
     inline def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
   }

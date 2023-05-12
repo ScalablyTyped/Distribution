@@ -32,6 +32,21 @@ trait SourceServer extends StObject {
   var recoveryInstanceId: js.UndefOr[RecoveryInstanceID] = js.undefined
   
   /**
+    * Replication direction of the Source Server.
+    */
+  var replicationDirection: js.UndefOr[ReplicationDirection] = js.undefined
+  
+  /**
+    * For EC2-originated Source Servers which have been failed over and then failed back, this value will mean the ARN of the Source Server on the opposite replication direction.
+    */
+  var reversedDirectionSourceServerArn: js.UndefOr[SourceServerARN] = js.undefined
+  
+  /**
+    * Source cloud properties of the Source Server.
+    */
+  var sourceCloudProperties: js.UndefOr[SourceCloudProperties] = js.undefined
+  
+  /**
     * The source properties of the Source Server.
     */
   var sourceProperties: js.UndefOr[SourceProperties] = js.undefined
@@ -80,6 +95,18 @@ object SourceServer {
     inline def setRecoveryInstanceId(value: RecoveryInstanceID): Self = StObject.set(x, "recoveryInstanceId", value.asInstanceOf[js.Any])
     
     inline def setRecoveryInstanceIdUndefined: Self = StObject.set(x, "recoveryInstanceId", js.undefined)
+    
+    inline def setReplicationDirection(value: ReplicationDirection): Self = StObject.set(x, "replicationDirection", value.asInstanceOf[js.Any])
+    
+    inline def setReplicationDirectionUndefined: Self = StObject.set(x, "replicationDirection", js.undefined)
+    
+    inline def setReversedDirectionSourceServerArn(value: SourceServerARN): Self = StObject.set(x, "reversedDirectionSourceServerArn", value.asInstanceOf[js.Any])
+    
+    inline def setReversedDirectionSourceServerArnUndefined: Self = StObject.set(x, "reversedDirectionSourceServerArn", js.undefined)
+    
+    inline def setSourceCloudProperties(value: SourceCloudProperties): Self = StObject.set(x, "sourceCloudProperties", value.asInstanceOf[js.Any])
+    
+    inline def setSourceCloudPropertiesUndefined: Self = StObject.set(x, "sourceCloudProperties", js.undefined)
     
     inline def setSourceProperties(value: SourceProperties): Self = StObject.set(x, "sourceProperties", value.asInstanceOf[js.Any])
     

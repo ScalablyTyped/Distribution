@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-phone-number-input" : "3.2.12"
+      "react-phone-number-input" : "3.2.23"
     }
   ],
   "test-dependencies" : [
     {
-      "react-phone-number-input" : "3.2.12"
+      "react-phone-number-input" : "3.2.23"
     }
   ],
   "compile-devDependencies" : [

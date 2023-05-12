@@ -21,6 +21,10 @@ object distLibCommandsHgetallMod {
   @js.native
   val IS_READ_ONLY: /* true */ Boolean = js.native
   
+  @JSImport("@redis/client/dist/lib/commands/HGETALL", "TRANSFORM_LEGACY_REPLY")
+  @js.native
+  val TRANSFORM_LEGACY_REPLY: /* true */ Boolean = js.native
+  
   inline def transformArguments(key: RedisCommandArgument): RedisCommandArguments = ^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(key.asInstanceOf[js.Any]).asInstanceOf[RedisCommandArguments]
   
   inline def transformReply(reply: js.Array[RedisCommandArgument]): Record[String, RedisCommandArgument] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformReply")(reply.asInstanceOf[js.Any]).asInstanceOf[Record[String, RedisCommandArgument]]

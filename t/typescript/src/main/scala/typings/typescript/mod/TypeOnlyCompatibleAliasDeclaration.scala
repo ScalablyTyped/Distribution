@@ -9,5 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.typescript.mod.ImportEqualsDeclaration
   - typings.typescript.mod.NamespaceImport
   - typings.typescript.mod.ImportOrExportSpecifier
+  - typings.typescript.mod.ExportDeclaration
+  - typings.typescript.mod.NamespaceExport
 */
 trait TypeOnlyCompatibleAliasDeclaration extends StObject

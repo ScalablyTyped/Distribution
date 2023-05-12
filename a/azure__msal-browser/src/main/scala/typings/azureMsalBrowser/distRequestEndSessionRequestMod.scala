@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distRequestEndSessionRequestMod {
   
-  /* Inlined std.Partial<@azure/msal-common.@azure/msal-common.CommonEndSessionRequest> & {  authority :string | undefined,   onRedirectNavigate :(url : string): boolean | void | undefined} */
+  /* Inlined std.Partial<std.Omit<@azure/msal-common.@azure/msal-common.CommonEndSessionRequest, 'tokenQueryParameters'>> & {  authority :string | undefined,   onRedirectNavigate :(url : string): boolean | void | undefined} */
   trait EndSessionRequest
     extends StObject
        with _EventPayload {

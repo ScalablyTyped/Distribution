@@ -2,6 +2,7 @@ package typings.esriLeaflet.mod
 
 import typings.esriLeaflet.esriLeafletStrings.client
 import typings.esriLeaflet.esriLeafletStrings.server
+import typings.geojson.mod.GeometryObject
 import typings.geojson.mod.LineString
 import typings.geojson.mod.MultiLineString
 import typings.geojson.mod.Point
@@ -1498,7 +1499,7 @@ object leafletAugmentingMod {
       }
     }
     
-    type LeafletGeometry = Marker_[Any] | Polygon_[Any] | (Polyline_[LineString | MultiLineString, Any]) | LatLngExpression | LatLngBounds_ | GeoJSON__[Any]
+    type LeafletGeometry = Marker_[Any] | Polygon_[Any] | (Polyline_[LineString | MultiLineString, Any]) | LatLngExpression | LatLngBounds_ | (GeoJSON__[Any, GeometryObject])
     
     /**
       * Options for MapService

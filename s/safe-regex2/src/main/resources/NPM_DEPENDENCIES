@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "safe-regex2" : "3.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "safe-regex2" : "3.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

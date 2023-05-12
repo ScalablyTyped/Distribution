@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LambdaEndpointInput extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the Lambda endpoint. 
+    * The Amazon Resource Name (ARN) of the Lambda function or alias.
     */
   var Arn: LambdaArn
 }

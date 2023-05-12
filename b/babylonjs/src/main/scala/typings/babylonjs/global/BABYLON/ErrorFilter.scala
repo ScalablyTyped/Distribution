@@ -11,6 +11,8 @@ object ErrorFilter extends StObject {
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.babylonjs.BABYLON.ErrorFilter & String] = js.native
   
+  /* "internal" */ val Internal: typings.babylonjs.BABYLON.ErrorFilter.Internal & String = js.native
+  
   /* "out-of-memory" */ val OutOfMemory: typings.babylonjs.BABYLON.ErrorFilter.OutOfMemory & String = js.native
   
   /* "validation" */ val Validation: typings.babylonjs.BABYLON.ErrorFilter.Validation & String = js.native

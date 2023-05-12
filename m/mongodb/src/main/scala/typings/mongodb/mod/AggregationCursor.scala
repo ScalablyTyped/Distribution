@@ -15,11 +15,9 @@ open class AggregationCursor[TSchema] () extends AbstractCursor[TSchema, Abstrac
   /* Excluded from this release type: _initialize */
   /** Execute the explain for the cursor */
   def explain(): js.Promise[Document] = js.native
-  /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  def explain(callback: Callback[Any]): Unit = js.native
   def explain(verbosity: ExplainVerbosityLike): js.Promise[Document] = js.native
   
-  /** @deprecated Add a geoNear stage to the aggregation pipeline */
+  /** Add a geoNear stage to the aggregation pipeline */
   def geoNear($geoNear: Document): this.type = js.native
   
   /** Add a group stage to the aggregation pipeline */

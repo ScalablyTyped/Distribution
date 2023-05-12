@@ -16,6 +16,31 @@ object mod {
   @js.native
   open class Container[T /* <: typings.pixiDisplay.libDisplayObjectMod.DisplayObject */] ()
     extends typings.pixiDisplay.libContainerMod.Container[T]
+  /* static members */
+  object Container {
+    
+    @JSImport("@pixi/display", "Container")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Sets the default value for the container property `sortableChildren`.
+      * If set to true, the container will sort its children by zIndex value
+      * when `updateTransform()` is called, or manually if `sortChildren()` is called.
+      *
+      * This actually changes the order of elements in the array, so should be treated
+      * as a basic solution that is not performant compared to other solutions,
+      * such as {@link https://github.com/pixijs/layers PixiJS Layers}.
+      *
+      * Also be aware of that this may not work nicely with the `addChildAt()` function,
+      * as the `zIndex` sorting may cause the child to automatically sorted to another position.
+      * @static
+      */
+    @JSImport("@pixi/display", "Container.defaultSortableChildren")
+    @js.native
+    def defaultSortableChildren: Boolean = js.native
+    inline def defaultSortableChildren_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultSortableChildren")(x.asInstanceOf[js.Any])
+  }
   
   /* note: abstract class */ @JSImport("@pixi/display", "DisplayObject")
   @js.native

@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderTopColor
+import typings.csstype.mod.Property.ScrollMarginInlineStart
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `329` extends StObject {
   
   var value: js.UndefOr[
-    BorderTopColor | (js.Array[
+    (ScrollMarginInlineStart[Double | String]) | (js.Array[
       (Extract[
-        js.UndefOr[BorderTopColor | js.Array[NonNullable[js.UndefOr[BorderTopColor]]]], 
+        js.UndefOr[
+          (ScrollMarginInlineStart[Double | String]) | (js.Array[NonNullable[js.UndefOr[ScrollMarginInlineStart[Double | String]]]])
+        ], 
         String
-      ]) | NonNullable[js.UndefOr[BorderTopColor]]
+      ]) | (NonNullable[js.UndefOr[ScrollMarginInlineStart[Double | String]]])
     ])
   ] = js.native
 }

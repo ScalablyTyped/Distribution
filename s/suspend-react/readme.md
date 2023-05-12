@@ -1,7 +1,7 @@
 
 # Scala.js typings for suspend-react
 
-Typings are for version 0.0.8
+Typings are for version 0.0.10
 
 ## Library description:
 Integrate React Suspense into your apps

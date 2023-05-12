@@ -27,6 +27,8 @@ trait AccessPackageAssignmentRequestRequirements extends StObject {
     */
   var policyId: js.UndefOr[NullableOption[String]] = js.undefined
   
+  var questions: js.UndefOr[NullableOption[js.Array[AccessPackageQuestion]]] = js.undefined
+  
   // Schedule restrictions enforced, if any.
   var schedule: js.UndefOr[NullableOption[EntitlementManagementSchedule]] = js.undefined
 }
@@ -75,6 +77,14 @@ object AccessPackageAssignmentRequestRequirements {
     inline def setPolicyIdNull: Self = StObject.set(x, "policyId", null)
     
     inline def setPolicyIdUndefined: Self = StObject.set(x, "policyId", js.undefined)
+    
+    inline def setQuestions(value: NullableOption[js.Array[AccessPackageQuestion]]): Self = StObject.set(x, "questions", value.asInstanceOf[js.Any])
+    
+    inline def setQuestionsNull: Self = StObject.set(x, "questions", null)
+    
+    inline def setQuestionsUndefined: Self = StObject.set(x, "questions", js.undefined)
+    
+    inline def setQuestionsVarargs(value: AccessPackageQuestion*): Self = StObject.set(x, "questions", js.Array(value*))
     
     inline def setSchedule(value: NullableOption[EntitlementManagementSchedule]): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     

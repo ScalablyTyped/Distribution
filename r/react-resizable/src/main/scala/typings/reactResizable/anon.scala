@@ -60,7 +60,7 @@ object anon {
     }
   }
   
-  /* Inlined {  width :number,   height :number,   axis :'both' | undefined} & {  children :react.react.ReactNode | undefined,   className :string | undefined,   handle :react.react.ReactNode | (resizeHandle : react-resizable.react-resizable.ResizeHandle, ref : react.react.RefObject<any>): react.react.ReactNode | undefined,   handleSize :[number, number] | undefined,   lockAspectRatio :boolean | undefined,   minConstraints :[number, number] | undefined,   maxConstraints :[number, number] | undefined,   onResizeStop :(e : react.react.SyntheticEvent<std.Element, std.Event>, data : react-resizable.react-resizable.ResizeCallbackData): any | undefined,   onResizeStart :(e : react.react.SyntheticEvent<std.Element, std.Event>, data : react-resizable.react-resizable.ResizeCallbackData): any | undefined,   onResize :(e : react.react.SyntheticEvent<std.Element, std.Event>, data : react-resizable.react-resizable.ResizeCallbackData): any | undefined,   draggableOpts :any | undefined,   resizeHandles :std.Array<react-resizable.react-resizable.ResizeHandle> | undefined,   transformScale :number | undefined} */
+  /* Inlined {  width :number,   height :number,   axis :'both' | undefined} & {  children :react.react.ReactNode | undefined,   className :string | undefined,   handle :react.react.ReactNode | (resizeHandle : react-resizable.react-resizable.ResizeHandle, ref : react.react.RefObject<any>): react.react.ReactNode | undefined,   handleSize :[number, number] | undefined,   lockAspectRatio :boolean | undefined,   minConstraints :[width: number, height: number] | undefined,   maxConstraints :[width: number, height: number] | undefined,   onResizeStop :(e : react.react.SyntheticEvent<std.Element, std.Event>, data : react-resizable.react-resizable.ResizeCallbackData): any | undefined,   onResizeStart :(e : react.react.SyntheticEvent<std.Element, std.Event>, data : react-resizable.react-resizable.ResizeCallbackData): any | undefined,   onResize :(e : react.react.SyntheticEvent<std.Element, std.Event>, data : react-resizable.react-resizable.ResizeCallbackData): any | undefined,   draggableOpts :any | undefined,   resizeHandles :std.Array<react-resizable.react-resizable.ResizeHandle> | undefined,   transformScale :number | undefined} */
   trait widthnumberheightnumberax
     extends StObject
        with ResizableProps {
@@ -83,9 +83,9 @@ object anon {
     
     var lockAspectRatio: js.UndefOr[Boolean] = js.undefined
     
-    var maxConstraints: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
+    var maxConstraints: js.UndefOr[js.Tuple2[/* width */ Double, /* height */ Double]] = js.undefined
     
-    var minConstraints: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
+    var minConstraints: js.UndefOr[js.Tuple2[/* width */ Double, /* height */ Double]] = js.undefined
     
     var onResize: js.UndefOr[
         js.Function2[/* e */ SyntheticEvent[Element, Event], /* data */ ResizeCallbackData, Any]
@@ -149,11 +149,11 @@ object anon {
       
       inline def setLockAspectRatioUndefined: Self = StObject.set(x, "lockAspectRatio", js.undefined)
       
-      inline def setMaxConstraints(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "maxConstraints", value.asInstanceOf[js.Any])
+      inline def setMaxConstraints(value: js.Tuple2[/* width */ Double, /* height */ Double]): Self = StObject.set(x, "maxConstraints", value.asInstanceOf[js.Any])
       
       inline def setMaxConstraintsUndefined: Self = StObject.set(x, "maxConstraints", js.undefined)
       
-      inline def setMinConstraints(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "minConstraints", value.asInstanceOf[js.Any])
+      inline def setMinConstraints(value: js.Tuple2[/* width */ Double, /* height */ Double]): Self = StObject.set(x, "minConstraints", value.asInstanceOf[js.Any])
       
       inline def setMinConstraintsUndefined: Self = StObject.set(x, "minConstraints", js.undefined)
       
@@ -183,7 +183,7 @@ object anon {
     }
   }
   
-  /* Inlined {  width :number,   height :number | undefined,   axis :'x'} & {  children :react.react.ReactNode | undefined,   className :string | undefined,   handle :react.react.ReactNode | (resizeHandle : react-resizable.react-resizable.ResizeHandle, ref : react.react.RefObject<any>): react.react.ReactNode | undefined,   handleSize :[number, number] | undefined,   lockAspectRatio :boolean | undefined,   minConstraints :[number, number] | undefined,   maxConstraints :[number, number] | undefined,   onResizeStop :(e : react.react.SyntheticEvent<std.Element, std.Event>, data : react-resizable.react-resizable.ResizeCallbackData): any | undefined,   onResizeStart :(e : react.react.SyntheticEvent<std.Element, std.Event>, data : react-resizable.react-resizable.ResizeCallbackData): any | undefined,   onResize :(e : react.react.SyntheticEvent<std.Element, std.Event>, data : react-resizable.react-resizable.ResizeCallbackData): any | undefined,   draggableOpts :any | undefined,   resizeHandles :std.Array<react-resizable.react-resizable.ResizeHandle> | undefined,   transformScale :number | undefined} */
+  /* Inlined {  width :number,   height :number | undefined,   axis :'x'} & {  children :react.react.ReactNode | undefined,   className :string | undefined,   handle :react.react.ReactNode | (resizeHandle : react-resizable.react-resizable.ResizeHandle, ref : react.react.RefObject<any>): react.react.ReactNode | undefined,   handleSize :[number, number] | undefined,   lockAspectRatio :boolean | undefined,   minConstraints :[width: number, height: number] | undefined,   maxConstraints :[width: number, height: number] | undefined,   onResizeStop :(e : react.react.SyntheticEvent<std.Element, std.Event>, data : react-resizable.react-resizable.ResizeCallbackData): any | undefined,   onResizeStart :(e : react.react.SyntheticEvent<std.Element, std.Event>, data : react-resizable.react-resizable.ResizeCallbackData): any | undefined,   onResize :(e : react.react.SyntheticEvent<std.Element, std.Event>, data : react-resizable.react-resizable.ResizeCallbackData): any | undefined,   draggableOpts :any | undefined,   resizeHandles :std.Array<react-resizable.react-resizable.ResizeHandle> | undefined,   transformScale :number | undefined} */
   trait widthnumberheightnumberun
     extends StObject
        with ResizableProps {
@@ -206,9 +206,9 @@ object anon {
     
     var lockAspectRatio: js.UndefOr[Boolean] = js.undefined
     
-    var maxConstraints: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
+    var maxConstraints: js.UndefOr[js.Tuple2[/* width */ Double, /* height */ Double]] = js.undefined
     
-    var minConstraints: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
+    var minConstraints: js.UndefOr[js.Tuple2[/* width */ Double, /* height */ Double]] = js.undefined
     
     var onResize: js.UndefOr[
         js.Function2[/* e */ SyntheticEvent[Element, Event], /* data */ ResizeCallbackData, Any]
@@ -272,11 +272,11 @@ object anon {
       
       inline def setLockAspectRatioUndefined: Self = StObject.set(x, "lockAspectRatio", js.undefined)
       
-      inline def setMaxConstraints(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "maxConstraints", value.asInstanceOf[js.Any])
+      inline def setMaxConstraints(value: js.Tuple2[/* width */ Double, /* height */ Double]): Self = StObject.set(x, "maxConstraints", value.asInstanceOf[js.Any])
       
       inline def setMaxConstraintsUndefined: Self = StObject.set(x, "maxConstraints", js.undefined)
       
-      inline def setMinConstraints(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "minConstraints", value.asInstanceOf[js.Any])
+      inline def setMinConstraints(value: js.Tuple2[/* width */ Double, /* height */ Double]): Self = StObject.set(x, "minConstraints", value.asInstanceOf[js.Any])
       
       inline def setMinConstraintsUndefined: Self = StObject.set(x, "minConstraints", js.undefined)
       
@@ -306,7 +306,7 @@ object anon {
     }
   }
   
-  /* Inlined {  width :number | undefined,   height :number,   axis :'y'} & {  children :react.react.ReactNode | undefined,   className :string | undefined,   handle :react.react.ReactNode | (resizeHandle : react-resizable.react-resizable.ResizeHandle, ref : react.react.RefObject<any>): react.react.ReactNode | undefined,   handleSize :[number, number] | undefined,   lockAspectRatio :boolean | undefined,   minConstraints :[number, number] | undefined,   maxConstraints :[number, number] | undefined,   onResizeStop :(e : react.react.SyntheticEvent<std.Element, std.Event>, data : react-resizable.react-resizable.ResizeCallbackData): any | undefined,   onResizeStart :(e : react.react.SyntheticEvent<std.Element, std.Event>, data : react-resizable.react-resizable.ResizeCallbackData): any | undefined,   onResize :(e : react.react.SyntheticEvent<std.Element, std.Event>, data : react-resizable.react-resizable.ResizeCallbackData): any | undefined,   draggableOpts :any | undefined,   resizeHandles :std.Array<react-resizable.react-resizable.ResizeHandle> | undefined,   transformScale :number | undefined} */
+  /* Inlined {  width :number | undefined,   height :number,   axis :'y'} & {  children :react.react.ReactNode | undefined,   className :string | undefined,   handle :react.react.ReactNode | (resizeHandle : react-resizable.react-resizable.ResizeHandle, ref : react.react.RefObject<any>): react.react.ReactNode | undefined,   handleSize :[number, number] | undefined,   lockAspectRatio :boolean | undefined,   minConstraints :[width: number, height: number] | undefined,   maxConstraints :[width: number, height: number] | undefined,   onResizeStop :(e : react.react.SyntheticEvent<std.Element, std.Event>, data : react-resizable.react-resizable.ResizeCallbackData): any | undefined,   onResizeStart :(e : react.react.SyntheticEvent<std.Element, std.Event>, data : react-resizable.react-resizable.ResizeCallbackData): any | undefined,   onResize :(e : react.react.SyntheticEvent<std.Element, std.Event>, data : react-resizable.react-resizable.ResizeCallbackData): any | undefined,   draggableOpts :any | undefined,   resizeHandles :std.Array<react-resizable.react-resizable.ResizeHandle> | undefined,   transformScale :number | undefined} */
   trait widthnumberundefinedheigh
     extends StObject
        with ResizableProps {
@@ -329,9 +329,9 @@ object anon {
     
     var lockAspectRatio: js.UndefOr[Boolean] = js.undefined
     
-    var maxConstraints: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
+    var maxConstraints: js.UndefOr[js.Tuple2[/* width */ Double, /* height */ Double]] = js.undefined
     
-    var minConstraints: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
+    var minConstraints: js.UndefOr[js.Tuple2[/* width */ Double, /* height */ Double]] = js.undefined
     
     var onResize: js.UndefOr[
         js.Function2[/* e */ SyntheticEvent[Element, Event], /* data */ ResizeCallbackData, Any]
@@ -393,11 +393,11 @@ object anon {
       
       inline def setLockAspectRatioUndefined: Self = StObject.set(x, "lockAspectRatio", js.undefined)
       
-      inline def setMaxConstraints(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "maxConstraints", value.asInstanceOf[js.Any])
+      inline def setMaxConstraints(value: js.Tuple2[/* width */ Double, /* height */ Double]): Self = StObject.set(x, "maxConstraints", value.asInstanceOf[js.Any])
       
       inline def setMaxConstraintsUndefined: Self = StObject.set(x, "maxConstraints", js.undefined)
       
-      inline def setMinConstraints(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "minConstraints", value.asInstanceOf[js.Any])
+      inline def setMinConstraints(value: js.Tuple2[/* width */ Double, /* height */ Double]): Self = StObject.set(x, "minConstraints", value.asInstanceOf[js.Any])
       
       inline def setMinConstraintsUndefined: Self = StObject.set(x, "minConstraints", js.undefined)
       

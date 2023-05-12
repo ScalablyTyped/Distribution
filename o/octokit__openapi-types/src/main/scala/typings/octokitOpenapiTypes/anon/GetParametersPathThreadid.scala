@@ -6,13 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersPathThreadid extends StObject {
   
+  /**
+    * Get a thread
+    * @description Gets information about a notification thread.
+    */
   var get: ParametersPathThreadid
   
-  var patch: Responses205304
+  /**
+    * Mark a thread as read
+    * @description Marks a thread as "read." Marking a thread as "read" is equivalent to clicking a notification in your notification inbox on GitHub: https://github.com/notifications.
+    */
+  var patch: Responses42
 }
 object GetParametersPathThreadid {
   
-  inline def apply(get: ParametersPathThreadid, patch: Responses205304): GetParametersPathThreadid = {
+  inline def apply(get: ParametersPathThreadid, patch: Responses42): GetParametersPathThreadid = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetParametersPathThreadid]
   }
@@ -22,6 +30,6 @@ object GetParametersPathThreadid {
     
     inline def setGet(value: ParametersPathThreadid): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPatch(value: Responses205304): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+    inline def setPatch(value: Responses42): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
   }
 }

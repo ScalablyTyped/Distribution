@@ -17,6 +17,11 @@ trait AttachNetworkInterfaceRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Configures ENA Express for the network interface that this action attaches to the instance.
+    */
+  var EnaSrdSpecification: js.UndefOr[typings.awsSdk.clientsEc2Mod.EnaSrdSpecification] = js.undefined
+  
+  /**
     * The ID of the instance.
     */
   var InstanceId: typings.awsSdk.clientsEc2Mod.InstanceId
@@ -46,6 +51,10 @@ object AttachNetworkInterfaceRequest {
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    
+    inline def setEnaSrdSpecification(value: EnaSrdSpecification): Self = StObject.set(x, "EnaSrdSpecification", value.asInstanceOf[js.Any])
+    
+    inline def setEnaSrdSpecificationUndefined: Self = StObject.set(x, "EnaSrdSpecification", js.undefined)
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

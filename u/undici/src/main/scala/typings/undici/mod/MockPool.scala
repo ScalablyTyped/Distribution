@@ -1,6 +1,6 @@
 package typings.undici.mod
 
-import typings.undici.typesMockPoolMod.Options
+import typings.undici.typesMockPoolMod.MockPool.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("undici", "MockPool")
 @js.native
 open class MockPool protected ()
-  extends typings.undici.typesMockPoolMod.^ {
+  extends typings.undici.typesMockPoolMod.default {
   def this(origin: String, options: Options) = this()
 }

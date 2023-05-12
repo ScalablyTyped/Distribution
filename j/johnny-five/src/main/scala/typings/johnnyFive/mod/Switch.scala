@@ -19,10 +19,7 @@ open class Switch protected () extends StObject {
   
   val isOpen: Boolean = js.native
   
-  @JSName("on")
-  def on_close(event: close, cb: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_open(event: open, cb: js.Function0[Unit]): this.type = js.native
+  def on(event: open | close, cb: js.Function0[Unit]): this.type = js.native
   
   var pin: Double | String = js.native
 }

@@ -32,12 +32,12 @@ trait FunctionConfiguration extends StObject {
   var Description: js.UndefOr[typings.awsSdk.clientsLambdaMod.Description] = js.undefined
   
   /**
-    * The function's environment variables.
+    * The function's environment variables. Omitted from CloudTrail logs.
     */
   var Environment: js.UndefOr[EnvironmentResponse] = js.undefined
   
   /**
-    * The size of the function’s /tmp directory in MB. The default value is 512, but can be any whole number between 512 and 10240 MB.
+    * The size of the function’s /tmp directory in MB. The default value is 512, but it can be any whole number between 512 and 10,240 MB.
     */
   var EphemeralStorage: js.UndefOr[typings.awsSdk.clientsLambdaMod.EphemeralStorage] = js.undefined
   
@@ -57,7 +57,7 @@ trait FunctionConfiguration extends StObject {
   var FunctionName: js.UndefOr[NamespacedFunctionName] = js.undefined
   
   /**
-    * The function that Lambda calls to begin executing your function.
+    * The function that Lambda calls to begin running your function.
     */
   var Handler: js.UndefOr[typings.awsSdk.clientsLambdaMod.Handler] = js.undefined
   
@@ -67,7 +67,7 @@ trait FunctionConfiguration extends StObject {
   var ImageConfigResponse: js.UndefOr[typings.awsSdk.clientsLambdaMod.ImageConfigResponse] = js.undefined
   
   /**
-    * The KMS key that's used to encrypt the function's environment variables. This key is only returned if you've configured a customer managed key.
+    * The KMS key that's used to encrypt the function's environment variables. When Lambda SnapStart is activated, this key is also used to encrypt the function's snapshot. This key is returned only if you've configured a customer managed key.
     */
   var KMSKeyArn: js.UndefOr[typings.awsSdk.clientsLambdaMod.KMSKeyArn] = js.undefined
   
@@ -92,7 +92,7 @@ trait FunctionConfiguration extends StObject {
   var LastUpdateStatusReasonCode: js.UndefOr[typings.awsSdk.clientsLambdaMod.LastUpdateStatusReasonCode] = js.undefined
   
   /**
-    * The function's  layers.
+    * The function's layers.
     */
   var Layers: js.UndefOr[LayersReferenceList] = js.undefined
   
@@ -102,7 +102,7 @@ trait FunctionConfiguration extends StObject {
   var MasterArn: js.UndefOr[FunctionArn] = js.undefined
   
   /**
-    * The amount of memory available to the function at runtime. 
+    * The amount of memory available to the function at runtime.
     */
   var MemorySize: js.UndefOr[typings.awsSdk.clientsLambdaMod.MemorySize] = js.undefined
   
@@ -122,9 +122,14 @@ trait FunctionConfiguration extends StObject {
   var Role: js.UndefOr[RoleArn] = js.undefined
   
   /**
-    * The runtime environment for the Lambda function.
+    * The identifier of the function's runtime. Runtime is required if the deployment package is a .zip file archive. The following list includes deprecated runtimes. For more information, see Runtime deprecation policy.
     */
   var Runtime: js.UndefOr[typings.awsSdk.clientsLambdaMod.Runtime] = js.undefined
+  
+  /**
+    * The ARN of the runtime and any errors that occured.
+    */
+  var RuntimeVersionConfig: js.UndefOr[typings.awsSdk.clientsLambdaMod.RuntimeVersionConfig] = js.undefined
   
   /**
     * The ARN of the signing job.
@@ -135,6 +140,11 @@ trait FunctionConfiguration extends StObject {
     * The ARN of the signing profile version.
     */
   var SigningProfileVersionArn: js.UndefOr[Arn] = js.undefined
+  
+  /**
+    * Set ApplyOn to PublishedVersions to create a snapshot of the initialized execution environment when you publish a function version. For more information, see Improving startup performance with Lambda SnapStart.
+    */
+  var SnapStart: js.UndefOr[SnapStartResponse] = js.undefined
   
   /**
     * The current state of the function. When the state is Inactive, you can reactivate the function by invoking it.
@@ -283,6 +293,10 @@ object FunctionConfiguration {
     
     inline def setRuntimeUndefined: Self = StObject.set(x, "Runtime", js.undefined)
     
+    inline def setRuntimeVersionConfig(value: RuntimeVersionConfig): Self = StObject.set(x, "RuntimeVersionConfig", value.asInstanceOf[js.Any])
+    
+    inline def setRuntimeVersionConfigUndefined: Self = StObject.set(x, "RuntimeVersionConfig", js.undefined)
+    
     inline def setSigningJobArn(value: Arn): Self = StObject.set(x, "SigningJobArn", value.asInstanceOf[js.Any])
     
     inline def setSigningJobArnUndefined: Self = StObject.set(x, "SigningJobArn", js.undefined)
@@ -290,6 +304,10 @@ object FunctionConfiguration {
     inline def setSigningProfileVersionArn(value: Arn): Self = StObject.set(x, "SigningProfileVersionArn", value.asInstanceOf[js.Any])
     
     inline def setSigningProfileVersionArnUndefined: Self = StObject.set(x, "SigningProfileVersionArn", js.undefined)
+    
+    inline def setSnapStart(value: SnapStartResponse): Self = StObject.set(x, "SnapStart", value.asInstanceOf[js.Any])
+    
+    inline def setSnapStartUndefined: Self = StObject.set(x, "SnapStart", js.undefined)
     
     inline def setState(value: State): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     

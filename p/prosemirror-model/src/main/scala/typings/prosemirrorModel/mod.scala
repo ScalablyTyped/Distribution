@@ -2252,6 +2252,12 @@ object mod {
     var attrs: js.UndefOr[Attrs] = js.undefined
     
     /**
+      [Style](https://prosemirror.net/docs/ref/#model.ParseRule.style) rules can remove marks from the
+      set of active marks.
+      */
+    var clearMark: js.UndefOr[js.Function1[/* mark */ Mark, Boolean]] = js.undefined
+    
+    /**
       When true, finding an element that matches this rule will close
       the current node.
       */
@@ -2329,10 +2335,11 @@ object mod {
     /**
       The name of the node type to create when this rule matches. Only
       valid for rules with a `tag` property, not for style rules. Each
-      rule should have one of a `node`, `mark`, or `ignore` property
-      (except when it appears in a [node](https://prosemirror.net/docs/ref/#model.NodeSpec.parseDOM) or
-      [mark spec](https://prosemirror.net/docs/ref/#model.MarkSpec.parseDOM), in which case the `node`
-      or `mark` property will be derived from its position).
+      rule should have one of a `node`, `mark`, `clearMark`, or
+      `ignore` property (except when it appears in a
+      [node](https://prosemirror.net/docs/ref/#model.NodeSpec.parseDOM) or [mark
+      spec](https://prosemirror.net/docs/ref/#model.MarkSpec.parseDOM), in which case the `node` or
+      `mark` property will be derived from its position).
       */
     var node: js.UndefOr[String] = js.undefined
     
@@ -2391,6 +2398,10 @@ object mod {
       inline def setAttrs(value: Attrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
       inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
+      
+      inline def setClearMark(value: /* mark */ Mark => Boolean): Self = StObject.set(x, "clearMark", js.Any.fromFunction1(value))
+      
+      inline def setClearMarkUndefined: Self = StObject.set(x, "clearMark", js.undefined)
       
       inline def setCloseParent(value: Boolean): Self = StObject.set(x, "closeParent", value.asInstanceOf[js.Any])
       

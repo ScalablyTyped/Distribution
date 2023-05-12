@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Build extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) that is assigned to a GameLift build resource and uniquely identifies it. ARNs are unique across all Regions. Format is arn:aws:gamelift:&lt;region&gt;::build/build-a1234567-b8c9-0d1e-2fa3-b45c6d7e8912. In a GameLift build ARN, the resource ID matches the BuildId value.
+    * The Amazon Resource Name (ARN) assigned to a Amazon GameLift build resource and uniquely identifies it. ARNs are unique across all Regions. Format is arn:aws:gamelift:&lt;region&gt;::build/build-a1234567-b8c9-0d1e-2fa3-b45c6d7e8912. In a GameLift build ARN, the resource ID matches the BuildId value.
     */
   var BuildArn: js.UndefOr[typings.awsSdk.clientsGameliftMod.BuildArn] = js.undefined
   
@@ -22,7 +22,7 @@ trait Build extends StObject {
   var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * A descriptive label that is associated with a build. Build names do not need to be unique. It can be set using CreateBuild or UpdateBuild.
+    * A descriptive label associated with a build. Build names don't need to be unique. It can be set using CreateBuild or UpdateBuild.
     */
   var Name: js.UndefOr[FreeText] = js.undefined
   
@@ -30,6 +30,11 @@ trait Build extends StObject {
     * Operating system that the game server binaries are built to run on. This value determines the type of fleet resources that you can use for this build.
     */
   var OperatingSystem: js.UndefOr[typings.awsSdk.clientsGameliftMod.OperatingSystem] = js.undefined
+  
+  /**
+    * The Amazon GameLift Server SDK version used to develop your game server.
+    */
+  var ServerSdkVersion: js.UndefOr[typings.awsSdk.clientsGameliftMod.ServerSdkVersion] = js.undefined
   
   /**
     * File size of the uploaded game build, expressed in bytes. When the build status is INITIALIZED or when using a custom Amazon S3 storage location, this value is 0.
@@ -42,7 +47,7 @@ trait Build extends StObject {
   var Status: js.UndefOr[BuildStatus] = js.undefined
   
   /**
-    * Version information that is associated with a build or script. Version strings do not need to be unique. This value can be set using CreateBuild or UpdateBuild.
+    * Version information associated with a build or script. Version strings don't need to be unique.
     */
   var Version: js.UndefOr[FreeText] = js.undefined
 }
@@ -75,6 +80,10 @@ object Build {
     inline def setOperatingSystem(value: OperatingSystem): Self = StObject.set(x, "OperatingSystem", value.asInstanceOf[js.Any])
     
     inline def setOperatingSystemUndefined: Self = StObject.set(x, "OperatingSystem", js.undefined)
+    
+    inline def setServerSdkVersion(value: ServerSdkVersion): Self = StObject.set(x, "ServerSdkVersion", value.asInstanceOf[js.Any])
+    
+    inline def setServerSdkVersionUndefined: Self = StObject.set(x, "ServerSdkVersion", js.undefined)
     
     inline def setSizeOnDisk(value: PositiveLong): Self = StObject.set(x, "SizeOnDisk", value.asInstanceOf[js.Any])
     

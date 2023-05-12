@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * - `single`: use DayPicker to select single days.
   * - `multiple`: allow selecting multiple days.
   * - `range`: use DayPicker to select a range of days
-  * - `default`: disable the built-in selection behavior. Customize what is selected by using {@link DayPickerBase.onDayClick}.
+  * - `default`: disable the built-in selection behavior. Customize what is
+  *   selected by using {@link DayPickerBase.onDayClick}.
   */
 /* Rewritten from type alias, can be one of: 
   - typings.reactDayPicker.reactDayPickerStrings.single

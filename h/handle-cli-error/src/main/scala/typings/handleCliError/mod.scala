@@ -17,6 +17,8 @@ object mod {
   inline def default(error: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(error.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def default(error: Any, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(error.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def validateOptions(options: Any): /* asserts options is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(handle-cli-error), TsIdentModule(None,List(handle-cli-error)), TsIdentSimple(Options))),IArray())*/ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validateOptions")(options.asInstanceOf[js.Any]).asInstanceOf[/* asserts options is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(handle-cli-error), TsIdentModule(None,List(handle-cli-error)), TsIdentSimple(Options))),IArray())*/ Boolean]
+  
   trait Options extends StObject {
     
     /**

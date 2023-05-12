@@ -5,10 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-  * Shows a Local Context experience with a {@link google.maps.Map}.
-  */
 trait LocalContextMapView
   extends StObject
      with LocalContextMapViewOptions {

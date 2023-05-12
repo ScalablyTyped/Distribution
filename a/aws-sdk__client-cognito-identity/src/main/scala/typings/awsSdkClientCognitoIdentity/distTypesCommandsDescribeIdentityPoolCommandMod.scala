@@ -28,8 +28,14 @@ object distTypesCommandsDescribeIdentityPoolCommandMod {
           Any, 
           Any
         ] {
+    /**
+      * @public
+      */
     def this(input: DescribeIdentityPoolCommandInput) = this()
     
+    /**
+      * @internal
+      */
     /* private */ var deserialize: Any = js.native
     
     /**
@@ -45,6 +51,9 @@ object distTypesCommandsDescribeIdentityPoolCommandMod {
       options: HttpHandlerOptions
     ): Handler[DescribeIdentityPoolCommandInput, DescribeIdentityPoolCommandOutput] = js.native
     
+    /**
+      * @internal
+      */
     /* private */ var serialize: Any = js.native
   }
   /* static members */

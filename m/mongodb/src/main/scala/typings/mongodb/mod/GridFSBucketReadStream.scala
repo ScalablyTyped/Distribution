@@ -20,11 +20,8 @@ open class GridFSBucketReadStream () extends Readable {
     * Marks this stream as aborted (will never push another `data` event)
     * and kills the underlying cursor. Will emit the 'end' event, and then
     * the 'close' event once the cursor is successfully killed.
-    *
-    * @param callback - called when the cursor is successfully closed or an error occurred.
     */
-  def abort(): Unit = js.native
-  def abort(callback: Callback[Unit]): Unit = js.native
+  def abort(): js.Promise[Unit] = js.native
   
   /**
     * Sets the 0-based offset in bytes to start streaming from. Throws

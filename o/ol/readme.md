@@ -1,7 +1,7 @@
 
 # Scala.js typings for ol
 
-Typings are for version 6.5
+Typings are for version 7.3.0
 
 ## Library description:
 OpenLayers mapping library
@@ -24,7 +24,7 @@ OpenLayers mapping library
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

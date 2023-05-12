@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CmafImageBasedTrickPlaySettings extends StObject {
   
   /**
-    * The cadence MediaConvert follows for generating thumbnails.  If set to FOLLOW_IFRAME, MediaConvert generates thumbnails for each IDR frame in the output (matching the GOP cadence).  If set to FOLLOW_CUSTOM, MediaConvert generates thumbnails according to the interval you specify in thumbnailInterval.
+    * The cadence MediaConvert follows for generating thumbnails. If set to FOLLOW_IFRAME, MediaConvert generates thumbnails for each IDR frame in the output (matching the GOP cadence). If set to FOLLOW_CUSTOM, MediaConvert generates thumbnails according to the interval you specify in thumbnailInterval.
     */
   var IntervalCadence: js.UndefOr[CmafIntervalCadence] = js.undefined
   
   /**
-    * Height of each thumbnail within each tile image, in pixels.  Leave blank to maintain aspect ratio with thumbnail width.  If following the aspect ratio would lead to a total tile height greater than 4096, then the job will be rejected.  Must be divisible by 2.
+    * Height of each thumbnail within each tile image, in pixels. Leave blank to maintain aspect ratio with thumbnail width. If following the aspect ratio would lead to a total tile height greater than 4096, then the job will be rejected. Must be divisible by 2.
     */
   var ThumbnailHeight: js.UndefOr[integerMin2Max4096] = js.undefined
   
   /**
-    * Enter the interval, in seconds, that MediaConvert uses to generate thumbnails.  If the interval you enter doesn't align with the output frame rate, MediaConvert automatically rounds the interval to align with the output frame rate.  For example, if the output frame rate is 29.97 frames per second and you enter 5, MediaConvert uses a 150 frame interval to generate thumbnails.
+    * Enter the interval, in seconds, that MediaConvert uses to generate thumbnails. If the interval you enter doesn't align with the output frame rate, MediaConvert automatically rounds the interval to align with the output frame rate. For example, if the output frame rate is 29.97 frames per second and you enter 5, MediaConvert uses a 150 frame interval to generate thumbnails.
     */
   var ThumbnailInterval: js.UndefOr[doubleMin0Max2147483647] = js.undefined
   
   /**
-    * Width of each thumbnail within each tile image, in pixels.  Default is 312.  Must be divisible by 8.
+    * Width of each thumbnail within each tile image, in pixels. Default is 312. Must be divisible by 8.
     */
   var ThumbnailWidth: js.UndefOr[integerMin8Max4096] = js.undefined
   
@@ -32,7 +32,7 @@ trait CmafImageBasedTrickPlaySettings extends StObject {
   var TileHeight: js.UndefOr[integerMin1Max2048] = js.undefined
   
   /**
-    * Number of thumbnails in each row of a tile image.  Set a value between 1 and 512.
+    * Number of thumbnails in each row of a tile image. Set a value between 1 and 512.
     */
   var TileWidth: js.UndefOr[integerMin1Max512] = js.undefined
 }

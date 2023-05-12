@@ -8,7 +8,7 @@ trait LocaleObject extends StObject {
   
   var array: js.UndefOr[ArrayLocale] = js.undefined
   
-  var boolean: js.UndefOr[js.Object] = js.undefined
+  var boolean: js.UndefOr[BooleanLocale] = js.undefined
   
   var date: js.UndefOr[DateLocale] = js.undefined
   
@@ -27,13 +27,14 @@ object LocaleObject {
     __obj.asInstanceOf[LocaleObject]
   }
   
-  extension [Self <: LocaleObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocaleObject] (val x: Self) extends AnyVal {
     
     inline def setArray(value: ArrayLocale): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
     inline def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
     
-    inline def setBoolean(value: js.Object): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
+    inline def setBoolean(value: BooleanLocale): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
     
     inline def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
     

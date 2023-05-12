@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "mirada" : "0.0.15"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "mirada" : "0.0.15"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

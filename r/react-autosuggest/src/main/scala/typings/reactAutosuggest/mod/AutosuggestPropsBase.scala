@@ -79,6 +79,13 @@ trait AutosuggestPropsBase[TSuggestion] extends StObject {
   var renderSuggestionsContainer: js.UndefOr[RenderSuggestionsContainer] = js.undefined
   
   /**
+    * When a suggestion is selected, Autosuggest will consult this function on whether to close the suggestions list.
+    * Use it, for example, if you want to make multiple selections at the same time. By default it will close every time
+    * a suggestion is selected.
+    */
+  var shouldKeepSuggestionsOnSelect: js.UndefOr[ShouldKeepSuggestionsOnSelect[TSuggestion]] = js.undefined
+  
+  /**
     * When the input is focused, Autosuggest will consult this function when to render suggestions.
     * Use it, for example, if you want to display suggestions when input value is at least 2 characters long.
     */
@@ -151,6 +158,10 @@ object AutosuggestPropsBase {
     inline def setRenderSuggestionsContainer(value: /* params */ RenderSuggestionsContainerParams => ReactNode): Self = StObject.set(x, "renderSuggestionsContainer", js.Any.fromFunction1(value))
     
     inline def setRenderSuggestionsContainerUndefined: Self = StObject.set(x, "renderSuggestionsContainer", js.undefined)
+    
+    inline def setShouldKeepSuggestionsOnSelect(value: /* suggestion */ js.UndefOr[TSuggestion] => Boolean): Self = StObject.set(x, "shouldKeepSuggestionsOnSelect", js.Any.fromFunction1(value))
+    
+    inline def setShouldKeepSuggestionsOnSelectUndefined: Self = StObject.set(x, "shouldKeepSuggestionsOnSelect", js.undefined)
     
     inline def setShouldRenderSuggestions(value: (/* value */ String, /* reason */ ShouldRenderReasons) => Boolean): Self = StObject.set(x, "shouldRenderSuggestions", js.Any.fromFunction2(value))
     

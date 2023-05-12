@@ -1,7 +1,7 @@
 
 # Scala.js typings for lumino__signaling
 
-Typings are for version 1.10.2
+Typings are for version 2.1.1
 
 ## Library description:
 Lumino Signals and Slots

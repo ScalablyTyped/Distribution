@@ -16,7 +16,7 @@ object libIconsAlignLeftOutlinedMod extends Shortcut {
   @js.native
   trait AlignLeftOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_AlignLeftOutlinedIconType: String = js.native

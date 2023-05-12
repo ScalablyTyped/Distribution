@@ -1,5 +1,7 @@
 package typings.twilio
 
+import typings.twilio.libTwimlTwiMLMod.default
+import typings.xmlbuilder.mod.XMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,32 +13,67 @@ object libTwimlFaxResponseMod {
   /**
     * <Response> TwiML for Faxes
     */
-  open class ^ ()
-    extends StObject
-       with FaxResponse
+  open class ^ () extends FaxResponse
+  
+  @JSImport("twilio/lib/twiml/FaxResponse", "Receive")
+  @js.native
+  open class Receive protected () extends default {
+    /**
+      * <Receive> TwiML Verb
+      */
+    def this(receive: XMLElement) = this()
+    
+    var receive: XMLElement = js.native
+  }
   
   @js.native
-  trait FaxResponse extends StObject {
+  trait FaxResponse extends default {
+    
+    /**
+      * Comments in <Response>
+      *
+      * @param comment - XML Comment
+      */
+    def comment(comment: String): XMLElement = js.native
+    
+    /**
+      * Comments after <Response>
+      *
+      * @param comment - XML Comment
+      */
+    def commentAfter(comment: String): XMLElement = js.native
+    
+    /**
+      * Comments before <Response>
+      *
+      * @param comment - XML Comment
+      */
+    def commentBefore(comment: String): XMLElement = js.native
     
     /**
       * <Receive> TwiML Verb
       *
       * @param attributes - TwiML attributes
       */
-    def receive(): Unit = js.native
-    def receive(attributes: ReceiveAttributes): Unit = js.native
+    def receive(): Receive = js.native
+    def receive(attributes: ReceiveAttributes): Receive = js.native
   }
   
   trait ReceiveAttributes extends StObject {
     
+    /** action - Receive action URL */
     var action: js.UndefOr[String] = js.undefined
     
+    /** mediaType - The media type used to store media in the fax media store */
     var mediaType: js.UndefOr[ReceiveMediaType] = js.undefined
     
+    /** method - Receive action URL method */
     var method: js.UndefOr[String] = js.undefined
     
+    /** pageSize - What size to interpret received pages as */
     var pageSize: js.UndefOr[ReceivePageSize] = js.undefined
     
+    /** storeMedia - Whether or not to store received media in the fax media store */
     var storeMedia: js.UndefOr[Boolean] = js.undefined
   }
   object ReceiveAttributes {

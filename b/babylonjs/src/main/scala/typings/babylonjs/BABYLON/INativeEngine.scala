@@ -2,8 +2,6 @@ package typings.babylonjs.BABYLON
 
 import typings.babylonjs.WebGLUniformLocation
 import typings.std.ImageBitmap
-import typings.std.WebGLFramebuffer
-import typings.std.WebGLTexture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,17 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait INativeEngine extends StObject {
   
-  def copyTexture(desination: Nullable[WebGLTexture], source: Nullable[WebGLTexture]): Unit = js.native
+  def copyTexture(desination: js.typedarray.Uint32Array, source: js.typedarray.Uint32Array): Unit = js.native
   
   def createFrameBuffer(
-    texture: WebGLTexture,
+    texture: Nullable[js.typedarray.Uint32Array],
     width: Double,
     height: Double,
-    format: Double,
     generateStencilBuffer: Boolean,
-    generateDepthBuffer: Boolean,
-    generateMips: Boolean
-  ): WebGLFramebuffer = js.native
+    generateDepthBuffer: Boolean
+  ): js.typedarray.Uint32Array = js.native
   
   def createImageBitmap(data: js.typedarray.ArrayBufferView): ImageBitmap = js.native
   def createImageBitmap(data: IImage): ImageBitmap = js.native
@@ -34,34 +30,49 @@ trait INativeEngine extends StObject {
     dynamic: Boolean
   ): js.typedarray.Uint32Array = js.native
   
-  def createProgram(vertexShader: String, fragmentShader: String): Any = js.native
+  def createProgram(vertexShader: String, fragmentShader: String): js.typedarray.Uint32Array = js.native
   
-  def createTexture(): WebGLTexture = js.native
+  def createProgramAsync(
+    vertexShader: String,
+    fragmentShader: String,
+    onSuccess: js.Function0[Unit],
+    onError: js.Function1[/* error */ js.Error, Unit]
+  ): js.typedarray.Uint32Array = js.native
+  
+  def createTexture(): js.typedarray.Uint32Array = js.native
   
   def createVertexArray(): js.typedarray.Uint32Array = js.native
   
   def createVertexBuffer(bytes: js.typedarray.ArrayBuffer, byteOffset: Double, byteLength: Double, dynamic: Boolean): js.typedarray.Uint32Array = js.native
   
-  def deleteTexture(texture: Nullable[WebGLTexture]): Unit = js.native
+  def deleteTexture(texture: js.typedarray.Uint32Array): Unit = js.native
   
   def dispose(): Unit = js.native
   
-  def getAttributes(shaderProgram: Any, attributeNames: js.Array[String]): js.Array[Double] = js.native
-  
-  def getHardwareScalingLevel(): Double = js.native
+  def getAttributes(shaderProgram: js.typedarray.Uint32Array, attributeNames: js.Array[String]): js.Array[Double] = js.native
   
   def getRenderHeight(): Double = js.native
   
   def getRenderWidth(): Double = js.native
   
-  def getTextureHeight(texture: WebGLTexture): Double = js.native
+  def getTextureHeight(texture: js.typedarray.Uint32Array): Double = js.native
   
-  def getTextureWidth(texture: WebGLTexture): Double = js.native
+  def getTextureWidth(texture: js.typedarray.Uint32Array): Double = js.native
   
-  def getUniforms(shaderProgram: Any, uniformsNames: js.Array[String]): js.Array[WebGLUniformLocation] = js.native
+  def getUniforms(shaderProgram: js.typedarray.Uint32Array, uniformsNames: js.Array[String]): js.Array[WebGLUniformLocation] = js.native
+  
+  def initializeTexture(
+    texture: js.typedarray.Uint32Array,
+    width: Double,
+    height: Double,
+    hasMips: Boolean,
+    format: Double,
+    renderTarget: Boolean,
+    srgb: Boolean
+  ): Unit = js.native
   
   def loadCubeTexture(
-    texture: WebGLTexture,
+    texture: js.typedarray.Uint32Array,
     data: js.Array[js.typedarray.ArrayBufferView],
     generateMips: Boolean,
     invertY: Boolean,
@@ -71,7 +82,7 @@ trait INativeEngine extends StObject {
   ): Unit = js.native
   
   def loadCubeTextureWithMips(
-    texture: WebGLTexture,
+    texture: js.typedarray.Uint32Array,
     data: js.Array[js.Array[js.typedarray.ArrayBufferView]],
     invertY: Boolean,
     srgb: Boolean,
@@ -80,7 +91,7 @@ trait INativeEngine extends StObject {
   ): Unit = js.native
   
   def loadRawTexture(
-    texture: WebGLTexture,
+    texture: js.typedarray.Uint32Array,
     data: js.typedarray.ArrayBufferView,
     width: Double,
     height: Double,
@@ -90,7 +101,7 @@ trait INativeEngine extends StObject {
   ): Unit = js.native
   
   def loadRawTexture2DArray(
-    texture: WebGLTexture,
+    texture: js.typedarray.Uint32Array,
     data: Nullable[js.typedarray.ArrayBufferView],
     width: Double,
     height: Double,
@@ -101,7 +112,7 @@ trait INativeEngine extends StObject {
   ): Unit = js.native
   
   def loadTexture(
-    texture: WebGLTexture,
+    texture: js.typedarray.Uint32Array,
     data: js.typedarray.ArrayBufferView,
     generateMips: Boolean,
     invertY: Boolean,
@@ -111,7 +122,7 @@ trait INativeEngine extends StObject {
   ): Unit = js.native
   
   def readTexture(
-    texture: WebGLTexture,
+    texture: js.typedarray.Uint32Array,
     mipLevel: Double,
     x: Double,
     y: Double,

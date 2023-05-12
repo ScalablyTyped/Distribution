@@ -3,6 +3,11 @@ package typings.seleniumWebdriver
 import typings.seleniumWebdriver.mod.CreateSessionCapabilities
 import typings.seleniumWebdriver.mod.ProxyConfig
 import typings.seleniumWebdriver.mod.logging.Preferences
+import typings.seleniumWebdriver.seleniumWebdriverStrings.MicrosoftEdge
+import typings.seleniumWebdriver.seleniumWebdriverStrings.`internet explorer`
+import typings.seleniumWebdriver.seleniumWebdriverStrings.chrome
+import typings.seleniumWebdriver.seleniumWebdriverStrings.firefox
+import typings.seleniumWebdriver.seleniumWebdriverStrings.safari
 import typings.std.IterableIterator
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
@@ -239,46 +244,35 @@ object libCapabilitiesMod {
   
   trait IBrowser extends StObject {
     
-    var CHROME: String
+    var CHROME: chrome
     
-    var EDGE: String
+    var EDGE: MicrosoftEdge
     
-    var FIREFOX: String
+    var FIREFOX: firefox
     
-    var IE: String
+    var INTERNET_EXPLORER: `internet explorer`
     
-    var INTERNET_EXPLORER: String
-    
-    var SAFARI: String
+    var SAFARI: safari
   }
   object IBrowser {
     
-    inline def apply(
-      CHROME: String,
-      EDGE: String,
-      FIREFOX: String,
-      IE: String,
-      INTERNET_EXPLORER: String,
-      SAFARI: String
-    ): IBrowser = {
-      val __obj = js.Dynamic.literal(CHROME = CHROME.asInstanceOf[js.Any], EDGE = EDGE.asInstanceOf[js.Any], FIREFOX = FIREFOX.asInstanceOf[js.Any], IE = IE.asInstanceOf[js.Any], INTERNET_EXPLORER = INTERNET_EXPLORER.asInstanceOf[js.Any], SAFARI = SAFARI.asInstanceOf[js.Any])
+    inline def apply(): IBrowser = {
+      val __obj = js.Dynamic.literal(CHROME = "chrome", EDGE = "MicrosoftEdge", FIREFOX = "firefox", INTERNET_EXPLORER = "internet explorer", SAFARI = "safari")
       __obj.asInstanceOf[IBrowser]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: IBrowser] (val x: Self) extends AnyVal {
       
-      inline def setCHROME(value: String): Self = StObject.set(x, "CHROME", value.asInstanceOf[js.Any])
+      inline def setCHROME(value: chrome): Self = StObject.set(x, "CHROME", value.asInstanceOf[js.Any])
       
-      inline def setEDGE(value: String): Self = StObject.set(x, "EDGE", value.asInstanceOf[js.Any])
+      inline def setEDGE(value: MicrosoftEdge): Self = StObject.set(x, "EDGE", value.asInstanceOf[js.Any])
       
-      inline def setFIREFOX(value: String): Self = StObject.set(x, "FIREFOX", value.asInstanceOf[js.Any])
+      inline def setFIREFOX(value: firefox): Self = StObject.set(x, "FIREFOX", value.asInstanceOf[js.Any])
       
-      inline def setIE(value: String): Self = StObject.set(x, "IE", value.asInstanceOf[js.Any])
+      inline def setINTERNET_EXPLORER(value: `internet explorer`): Self = StObject.set(x, "INTERNET_EXPLORER", value.asInstanceOf[js.Any])
       
-      inline def setINTERNET_EXPLORER(value: String): Self = StObject.set(x, "INTERNET_EXPLORER", value.asInstanceOf[js.Any])
-      
-      inline def setSAFARI(value: String): Self = StObject.set(x, "SAFARI", value.asInstanceOf[js.Any])
+      inline def setSAFARI(value: safari): Self = StObject.set(x, "SAFARI", value.asInstanceOf[js.Any])
     }
   }
   

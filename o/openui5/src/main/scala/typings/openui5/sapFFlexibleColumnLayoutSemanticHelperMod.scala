@@ -64,7 +64,7 @@ object sapFFlexibleColumnLayoutSemanticHelperMod {
     /* CompleteClass */
     override def getNextUIState(
       /**
-      * the view level that should be represented. 0 means initial (master only), 1 - master-detail, 2 - master-detail-detail,
+      * the view level that should be represented. 0 means initial (list only), 1 - list-detail, 2 - list-detail-detail,
       * 3 and above - subsequent views
       */
     iNextLevel: int
@@ -296,7 +296,7 @@ object sapFFlexibleColumnLayoutSemanticHelperMod {
       */
     def getNextUIState(
       /**
-      * the view level that should be represented. 0 means initial (master only), 1 - master-detail, 2 - master-detail-detail,
+      * the view level that should be represented. 0 means initial (list only), 1 - list-detail, 2 - list-detail-detail,
       * 3 and above - subsequent views
       */
     iNextLevel: int

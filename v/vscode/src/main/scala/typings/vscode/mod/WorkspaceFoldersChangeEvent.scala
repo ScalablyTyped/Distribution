@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WorkspaceFoldersChangeEvent extends StObject {
   
   /**
-    * Added workspace folders.
-    */
+  		 * Added workspace folders.
+  		 */
   val added: js.Array[WorkspaceFolder]
   
   /**
-    * Removed workspace folders.
-    */
+  		 * Removed workspace folders.
+  		 */
   val removed: js.Array[WorkspaceFolder]
 }
 object WorkspaceFoldersChangeEvent {

@@ -8,7 +8,7 @@ trait TripsByNameOptions extends StObject {
   
   var additionalFilters: js.UndefOr[js.Array[Filter]] = js.undefined
   
-  var currentlyStoppingAt: js.UndefOr[Null] = js.undefined
+  var currentlyStoppingAt: js.UndefOr[String] = js.undefined
   
   var fromWhen: js.UndefOr[js.Date] = js.undefined
   
@@ -43,6 +43,10 @@ object TripsByNameOptions {
     inline def setAdditionalFiltersUndefined: Self = StObject.set(x, "additionalFilters", js.undefined)
     
     inline def setAdditionalFiltersVarargs(value: Filter*): Self = StObject.set(x, "additionalFilters", js.Array(value*))
+    
+    inline def setCurrentlyStoppingAt(value: String): Self = StObject.set(x, "currentlyStoppingAt", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentlyStoppingAtUndefined: Self = StObject.set(x, "currentlyStoppingAt", js.undefined)
     
     inline def setFromWhen(value: js.Date): Self = StObject.set(x, "fromWhen", value.asInstanceOf[js.Any])
     

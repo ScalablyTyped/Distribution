@@ -12,6 +12,11 @@ trait UpdateAppMonitorRequest extends StObject {
   var AppMonitorConfiguration: js.UndefOr[typings.awsSdk.clientsRumMod.AppMonitorConfiguration] = js.undefined
   
   /**
+    * Specifies whether this app monitor allows the web client to define and send custom events. The default is for custom events to be DISABLED. For more information about custom events, see Send custom events.
+    */
+  var CustomEvents: js.UndefOr[typings.awsSdk.clientsRumMod.CustomEvents] = js.undefined
+  
+  /**
     * Data collected by RUM is kept by RUM for 30 days and then deleted. This parameter specifies whether RUM sends a copy of this telemetry data to Amazon CloudWatch Logs in your account. This enables you to keep the telemetry data for more than 30 days, but it does incur Amazon CloudWatch Logs charges.
     */
   var CwLogEnabled: js.UndefOr[Boolean] = js.undefined
@@ -39,6 +44,10 @@ object UpdateAppMonitorRequest {
     inline def setAppMonitorConfiguration(value: AppMonitorConfiguration): Self = StObject.set(x, "AppMonitorConfiguration", value.asInstanceOf[js.Any])
     
     inline def setAppMonitorConfigurationUndefined: Self = StObject.set(x, "AppMonitorConfiguration", js.undefined)
+    
+    inline def setCustomEvents(value: CustomEvents): Self = StObject.set(x, "CustomEvents", value.asInstanceOf[js.Any])
+    
+    inline def setCustomEventsUndefined: Self = StObject.set(x, "CustomEvents", js.undefined)
     
     inline def setCwLogEnabled(value: Boolean): Self = StObject.set(x, "CwLogEnabled", value.asInstanceOf[js.Any])
     

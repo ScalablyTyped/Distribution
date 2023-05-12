@@ -17,7 +17,7 @@ trait DescribePredictorResponse extends StObject {
   var AutoMLAlgorithmArns: js.UndefOr[ArnList] = js.undefined
   
   /**
-    *   The LatencyOptimized AutoML override strategy is only available in private beta. Contact AWS Support or your account manager to learn more about access privileges.   The AutoML strategy used to train the predictor. Unless LatencyOptimized is specified, the AutoML strategy optimizes predictor accuracy. This parameter is only valid for predictors trained using AutoML.
+    *   The LatencyOptimized AutoML override strategy is only available in private beta. Contact Amazon Web Services Support or your account manager to learn more about access privileges.   The AutoML strategy used to train the predictor. Unless LatencyOptimized is specified, the AutoML strategy optimizes predictor accuracy. This parameter is only valid for predictors trained using AutoML.
     */
   var AutoMLOverrideStrategy: js.UndefOr[typings.awsSdk.clientsForecastserviceMod.AutoMLOverrideStrategy] = js.undefined
   
@@ -32,7 +32,7 @@ trait DescribePredictorResponse extends StObject {
   var DatasetImportJobArns: js.UndefOr[ArnList] = js.undefined
   
   /**
-    * An AWS Key Management Service (KMS) key and the AWS Identity and Access Management (IAM) role that Amazon Forecast can assume to access the key.
+    * An Key Management Service (KMS) key and the Identity and Access Management (IAM) role that Amazon Forecast can assume to access the key.
     */
   var EncryptionConfig: js.UndefOr[typings.awsSdk.clientsForecastserviceMod.EncryptionConfig] = js.undefined
   

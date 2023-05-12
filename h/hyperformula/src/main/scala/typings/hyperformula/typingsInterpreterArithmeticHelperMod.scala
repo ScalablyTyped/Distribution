@@ -12,9 +12,9 @@ import typings.hyperformula.typingsInterpreterInterpreterValueMod.NumberTypeWith
 import typings.hyperformula.typingsInterpreterInterpreterValueMod.RawInterpreterValue
 import typings.hyperformula.typingsInterpreterInterpreterValueMod.RawNoErrorScalarValue
 import typings.hyperformula.typingsInterpreterInterpreterValueMod.RawScalarValue
-import typings.hyperformula.typingsInterpreterSimpleRangeValueMod.SimpleRangeValue
 import typings.hyperformula.typingsMaybeMod.Maybe
 import typings.hyperformula.typingsNumberLiteralHelperMod.NumberLiteralHelper
+import typings.hyperformula.typingsSimpleRangeValueMod.SimpleRangeValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

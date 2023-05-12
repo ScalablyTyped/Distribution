@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CodespacenameExportid extends StObject {
   
-  /** The name of the codespace. */
   var codespace_name: String
   
-  /** The ID of the export operation, or `latest`. Currently only `latest` is currently supported. */
   var export_id: String
 }
 object CodespacenameExportid {

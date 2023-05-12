@@ -1,7 +1,7 @@
 
 # Scala.js typings for umijs__route-utils
 
-Typings are for version 2.2.1
+Typings are for version 4.0.1
 
 ## Library description:
 Quickly process the routing of umi

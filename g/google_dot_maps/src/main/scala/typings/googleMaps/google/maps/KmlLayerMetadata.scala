@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Metadata for a single KML layer, in JSON format.
-  */
 trait KmlLayerMetadata extends StObject {
   
   /**

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Raised extends StObject {
   
-  var overflow: ShadowToken[BaseToken]
+  var overflow: Spread
   
   var overlay: ShadowToken[BaseToken]
   
@@ -16,7 +16,7 @@ trait Raised extends StObject {
 }
 object Raised {
   
-  inline def apply(overflow: ShadowToken[BaseToken], overlay: ShadowToken[BaseToken], raised: ShadowToken[BaseToken]): Raised = {
+  inline def apply(overflow: Spread, overlay: ShadowToken[BaseToken], raised: ShadowToken[BaseToken]): Raised = {
     val __obj = js.Dynamic.literal(overflow = overflow.asInstanceOf[js.Any], overlay = overlay.asInstanceOf[js.Any], raised = raised.asInstanceOf[js.Any])
     __obj.asInstanceOf[Raised]
   }
@@ -24,7 +24,7 @@ object Raised {
   @scala.inline
   implicit open class MutableBuilder[Self <: Raised] (val x: Self) extends AnyVal {
     
-    inline def setOverflow(value: ShadowToken[BaseToken]): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+    inline def setOverflow(value: Spread): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
     inline def setOverlay(value: ShadowToken[BaseToken]): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     

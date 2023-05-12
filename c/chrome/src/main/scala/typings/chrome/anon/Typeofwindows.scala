@@ -19,14 +19,10 @@ trait Typeofwindows extends StObject {
   
   var WINDOW_ID_NONE: `-1` = js.native
   
-  def create(): Unit = js.native
+  def create(): js.Promise[Window] = js.native
   def create(callback: js.Function1[/* window */ js.UndefOr[this.type], Unit]): Unit = js.native
-  def create(createData: CreateData): Unit = js.native
+  def create(createData: CreateData): js.Promise[Window] = js.native
   def create(createData: CreateData, callback: js.Function1[/* window */ js.UndefOr[this.type], Unit]): Unit = js.native
-  @JSName("create")
-  def create_Promise(): js.Promise[Window] = js.native
-  @JSName("create")
-  def create_Promise(createData: CreateData): js.Promise[Window] = js.native
   
   def get(windowId: Double): js.Promise[Window] = js.native
   def get(windowId: Double, callback: js.Function1[/* window */ this.type, Unit]): Unit = js.native
@@ -56,13 +52,9 @@ trait Typeofwindows extends StObject {
   
   var onRemoved: WindowIdEvent = js.native
   
-  def remove(windowId: Double): Unit = js.native
+  def remove(windowId: Double): js.Promise[Unit] = js.native
   def remove(windowId: Double, callback: js.Function): Unit = js.native
-  @JSName("remove")
-  def remove_Promise(windowId: Double): js.Promise[Unit] = js.native
   
-  def update(windowId: Double, updateInfo: UpdateInfo): Unit = js.native
+  def update(windowId: Double, updateInfo: UpdateInfo): js.Promise[Window] = js.native
   def update(windowId: Double, updateInfo: UpdateInfo, callback: js.Function1[/* window */ this.type, Unit]): Unit = js.native
-  @JSName("update")
-  def update_Promise(windowId: Double, updateInfo: UpdateInfo): js.Promise[Window] = js.native
 }

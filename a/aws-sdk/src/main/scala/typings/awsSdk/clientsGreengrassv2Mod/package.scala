@@ -150,6 +150,7 @@ type EffectiveDeploymentErrorTypeList = js.Array[EffectiveDeploymentErrorType]
   - typings.awsSdk.awsSdkStrings.TIMED_OUT
   - typings.awsSdk.awsSdkStrings.CANCELED
   - typings.awsSdk.awsSdkStrings.REJECTED
+  - typings.awsSdk.awsSdkStrings.SUCCEEDED
   - java.lang.String
 */
 type EffectiveDeploymentExecutionStatus = _EffectiveDeploymentExecutionStatus | java.lang.String

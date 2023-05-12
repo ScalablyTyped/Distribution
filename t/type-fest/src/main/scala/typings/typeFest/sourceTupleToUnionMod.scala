@@ -10,7 +10,7 @@ object sourceTupleToUnionMod {
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
     * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
-    ArrayType extends [infer Head, ...infer Rest] ? Head | type-fest.type-fest/source/tuple-to-union.TupleToUnion<Rest> : never
+    ArrayType extends std.Array<unknown> ? ArrayType[number] : never
     }}}
     */
   @js.native

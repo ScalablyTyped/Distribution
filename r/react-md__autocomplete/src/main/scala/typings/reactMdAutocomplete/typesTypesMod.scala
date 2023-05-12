@@ -38,6 +38,7 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
+import typings.reactMdAutocomplete.reactMdAutocompleteStrings._empty
 import typings.reactMdAutocomplete.reactMdAutocompleteStrings.`additions removals`
 import typings.reactMdAutocomplete.reactMdAutocompleteStrings.`additions text`
 import typings.reactMdAutocomplete.reactMdAutocompleteStrings.`inline`
@@ -45,8 +46,10 @@ import typings.reactMdAutocomplete.reactMdAutocompleteStrings.`removals addition
 import typings.reactMdAutocomplete.reactMdAutocompleteStrings.`removals text`
 import typings.reactMdAutocomplete.reactMdAutocompleteStrings.`text additions`
 import typings.reactMdAutocomplete.reactMdAutocompleteStrings.`text removals`
+import typings.reactMdAutocomplete.reactMdAutocompleteStrings.`use-credentials`
 import typings.reactMdAutocomplete.reactMdAutocompleteStrings.additions
 import typings.reactMdAutocomplete.reactMdAutocompleteStrings.all
+import typings.reactMdAutocomplete.reactMdAutocompleteStrings.anonymous
 import typings.reactMdAutocomplete.reactMdAutocompleteStrings.ascending
 import typings.reactMdAutocomplete.reactMdAutocompleteStrings.assertive
 import typings.reactMdAutocomplete.reactMdAutocompleteStrings.both
@@ -106,6 +109,7 @@ import typings.reactMdUtils.typesPositioningTypesMod.PositionWidth
 import typings.reactMdUtils.typesSearchCaseInsensitiveFilterMod.CaseInsensitiveOptions
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
@@ -424,11 +428,13 @@ object typesTypesMod {
     
     var containerRef: js.UndefOr[Ref[HTMLDivElement]] = js.undefined
     
+    var content: js.UndefOr[String] = js.undefined
+    
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
@@ -498,7 +504,7 @@ object typesTypesMod {
     
     var form: js.UndefOr[String] = js.undefined
     
-    var formAction: js.UndefOr[String] = js.undefined
+    var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     var formEncType: js.UndefOr[String] = js.undefined
     
@@ -865,11 +871,15 @@ object typesTypesMod {
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var required: js.UndefOr[Boolean] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var rightChildren: js.UndefOr[ReactNode] = js.undefined
     
@@ -1227,15 +1237,19 @@ object typesTypesMod {
       
       inline def setContainerRefUndefined: Self = StObject.set(x, "containerRef", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -1313,7 +1327,9 @@ object typesTypesMod {
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      
+      inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
       
       inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
@@ -1875,6 +1891,10 @@ object typesTypesMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -1886,6 +1906,10 @@ object typesTypesMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRightChildren(value: ReactNode): Self = StObject.set(x, "rightChildren", value.asInstanceOf[js.Any])
       

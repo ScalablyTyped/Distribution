@@ -17,7 +17,7 @@ trait CreateTableRequest extends StObject {
   var MagneticStoreWriteProperties: js.UndefOr[typings.awsSdk.clientsTimestreamwriteMod.MagneticStoreWriteProperties] = js.undefined
   
   /**
-    * The duration for which your time series data must be stored in the memory store and the magnetic store.
+    * The duration for which your time-series data must be stored in the memory store and the magnetic store.
     */
   var RetentionProperties: js.UndefOr[typings.awsSdk.clientsTimestreamwriteMod.RetentionProperties] = js.undefined
   

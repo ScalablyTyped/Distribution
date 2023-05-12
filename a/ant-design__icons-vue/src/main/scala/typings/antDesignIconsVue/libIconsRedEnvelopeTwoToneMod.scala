@@ -16,7 +16,7 @@ object libIconsRedEnvelopeTwoToneMod extends Shortcut {
   @js.native
   trait RedEnvelopeTwoToneIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_RedEnvelopeTwoToneIconType: String = js.native

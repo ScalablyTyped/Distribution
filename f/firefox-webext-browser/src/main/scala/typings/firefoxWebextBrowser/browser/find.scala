@@ -28,6 +28,9 @@ object find {
     /** Return rectangle data which describes visual position of search results. */
     var includeRectData: js.UndefOr[Boolean] = js.undefined
     
+    /** Find only ranges with diacritic sensitive match. */
+    var matchDiacritics: js.UndefOr[Boolean] = js.undefined
+    
     /** Tab to query. Defaults to the active tab. */
     var tabId: js.UndefOr[Double] = js.undefined
   }
@@ -56,6 +59,10 @@ object find {
       inline def setIncludeRectData(value: Boolean): Self = StObject.set(x, "includeRectData", value.asInstanceOf[js.Any])
       
       inline def setIncludeRectDataUndefined: Self = StObject.set(x, "includeRectData", js.undefined)
+      
+      inline def setMatchDiacritics(value: Boolean): Self = StObject.set(x, "matchDiacritics", value.asInstanceOf[js.Any])
+      
+      inline def setMatchDiacriticsUndefined: Self = StObject.set(x, "matchDiacritics", js.undefined)
       
       inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
       

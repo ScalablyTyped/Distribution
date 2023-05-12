@@ -244,6 +244,11 @@ object mod {
     
     val status: Status = js.native
     
+    /**
+      * Returns the current state of the circuit
+      */
+    def toJSON(): typings.opossum.anon.State = js.native
+    
     val volumeThreshold: Double = js.native
     
     val warmUp: Boolean = js.native
@@ -426,6 +431,61 @@ object mod {
       inline def setVolumeThreshold(value: Double): Self = StObject.set(x, "volumeThreshold", value.asInstanceOf[js.Any])
       
       inline def setVolumeThresholdUndefined: Self = StObject.set(x, "volumeThreshold", js.undefined)
+    }
+  }
+  
+  trait State extends StObject {
+    
+    var closed: Boolean
+    
+    var enabled: Boolean
+    
+    var halfOpen: Boolean
+    
+    var lastTimerAt: js.Symbol
+    
+    var name: String
+    
+    var open: Boolean
+    
+    var shutdown: Boolean
+    
+    var warmUp: Boolean
+  }
+  object State {
+    
+    inline def apply(
+      closed: Boolean,
+      enabled: Boolean,
+      halfOpen: Boolean,
+      lastTimerAt: js.Symbol,
+      name: String,
+      open: Boolean,
+      shutdown: Boolean,
+      warmUp: Boolean
+    ): State = {
+      val __obj = js.Dynamic.literal(closed = closed.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], halfOpen = halfOpen.asInstanceOf[js.Any], lastTimerAt = lastTimerAt.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], shutdown = shutdown.asInstanceOf[js.Any], warmUp = warmUp.asInstanceOf[js.Any])
+      __obj.asInstanceOf[State]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+      
+      inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
+      
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      
+      inline def setHalfOpen(value: Boolean): Self = StObject.set(x, "halfOpen", value.asInstanceOf[js.Any])
+      
+      inline def setLastTimerAt(value: js.Symbol): Self = StObject.set(x, "lastTimerAt", value.asInstanceOf[js.Any])
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      
+      inline def setShutdown(value: Boolean): Self = StObject.set(x, "shutdown", value.asInstanceOf[js.Any])
+      
+      inline def setWarmUp(value: Boolean): Self = StObject.set(x, "warmUp", value.asInstanceOf[js.Any])
     }
   }
   

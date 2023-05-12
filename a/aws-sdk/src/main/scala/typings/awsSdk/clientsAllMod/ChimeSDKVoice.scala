@@ -1,0 +1,16 @@
+package typings.awsSdk.clientsAllMod
+
+import typings.awsSdk.clientsChimesdkvoiceMod.ClientConfiguration
+import typings.awsSdk.clientsChimesdkvoiceMod.^
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("aws-sdk/clients/all", "ChimeSDKVoice")
+@js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
+open class ChimeSDKVoice () extends ^ {
+  def this(options: ClientConfiguration) = this()
+}

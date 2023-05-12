@@ -1,6 +1,5 @@
 package typings.axiosNtlm
 
-import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ object libHashMod {
   
   inline def createLMv2Response(type2message: Any, username: Any, ntlmhash: Any, nonce: Any, targetName: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createLMv2Response")(type2message.asInstanceOf[js.Any], username.asInstanceOf[js.Any], ntlmhash.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], targetName.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def createNTLMHash(password: Any): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("createNTLMHash")(password.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def createNTLMHash(password: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createNTLMHash")(password.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def createNTLMResponse(challenge: Any, ntlmhash: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createNTLMResponse")(challenge.asInstanceOf[js.Any], ntlmhash.asInstanceOf[js.Any])).asInstanceOf[Any]
   

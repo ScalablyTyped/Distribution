@@ -1,7 +1,7 @@
 
 # Scala.js typings for utility
 
-Typings are for version 1.17.0
+Typings are for version 1.18.0
 
 ## Library description:
 A collection of useful utilities.

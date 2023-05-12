@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Scopes extends StObject {
   
-  /** The scopes of the stackframe. If the array has length zero, there are no scopes available. */
+  /** The scopes of the stack frame. If the array has length zero, there are no scopes available. */
   var scopes: js.Array[Scope]
 }
 object Scopes {

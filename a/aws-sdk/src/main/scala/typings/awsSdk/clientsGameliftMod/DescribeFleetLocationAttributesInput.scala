@@ -12,7 +12,7 @@ trait DescribeFleetLocationAttributesInput extends StObject {
   var FleetId: FleetIdOrArn
   
   /**
-    * The maximum number of results to return. Use this parameter with NextToken to get results as a set of sequential pages. This limit is not currently enforced. 
+    * The maximum number of results to return. Use this parameter with NextToken to get results as a set of sequential pages. This limit is not currently enforced.
     */
   var Limit: js.UndefOr[PositiveInteger] = js.undefined
   

@@ -51,13 +51,6 @@ open class PDFDocumentLoadingTask () extends StObject {
   var onProgress: js.Function = js.native
   
   /**
-    * Callback for when an unsupported feature is used in the PDF document.
-    * The callback receives an {@link UNSUPPORTED_FEATURES} argument.
-    * @type {function}
-    */
-  var onUnsupportedFeature: js.Function = js.native
-  
-  /**
     * Promise for document loading task completion.
     * @type {Promise<PDFDocumentProxy>}
     */
@@ -66,7 +59,7 @@ open class PDFDocumentLoadingTask () extends StObject {
 /* static members */
 object PDFDocumentLoadingTask {
   
-  @JSImport("pdfjs-dist/types/src/display/api", "PDFDocumentLoadingTask.__#15@#docId")
+  @JSImport("pdfjs-dist/types/src/display/api", "PDFDocumentLoadingTask.__#18@#docId")
   @js.native
-  val `__Numbersign15@NumbersigndocId`: Double = js.native
+  val `__Numbersign18@NumbersigndocId`: Double = js.native
 }

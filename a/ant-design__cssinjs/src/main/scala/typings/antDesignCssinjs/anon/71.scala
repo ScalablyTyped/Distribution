@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.OverscrollBehaviorY
+import typings.csstype.mod.Property.Visibility
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `71` extends StObject {
   
   var value: js.UndefOr[
-    OverscrollBehaviorY | (js.Array[
-      (Extract[
-        js.UndefOr[OverscrollBehaviorY | js.Array[NonNullable[js.UndefOr[OverscrollBehaviorY]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[OverscrollBehaviorY]]
+    Visibility | (js.Array[
+      (Extract[js.UndefOr[Visibility | js.Array[NonNullable[js.UndefOr[Visibility]]]], String]) | NonNullable[js.UndefOr[Visibility]]
     ])
   ] = js.native
 }

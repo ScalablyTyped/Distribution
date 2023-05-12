@@ -15,7 +15,11 @@ trait ExampleScenario
   
   var _copyright: js.UndefOr[Element] = js.undefined
   
+  var _copyrightLabel: js.UndefOr[Element] = js.undefined
+  
   var _date: js.UndefOr[Element] = js.undefined
+  
+  var _description: js.UndefOr[Element] = js.undefined
   
   var _experimental: js.UndefOr[Element] = js.undefined
   
@@ -27,31 +31,45 @@ trait ExampleScenario
   
   var _status: js.UndefOr[Element] = js.undefined
   
+  var _title: js.UndefOr[Element] = js.undefined
+  
   var _url: js.UndefOr[Element] = js.undefined
   
   var _version: js.UndefOr[Element] = js.undefined
   
-  var _workflow: js.UndefOr[js.Array[Element]] = js.undefined
+  var _versionAlgorithmString: js.UndefOr[Element] = js.undefined
   
   /**
-    * Actor participating in the resource.
+    * A system or person who shares or receives an instance within the scenario.
     */
   var actor: js.UndefOr[js.Array[ExampleScenarioActor]] = js.undefined
   
   /**
     * May be a web site, an email address, a telephone number, etc.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var contact: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
   /**
-    * nullFrequently, the copyright differs between the value set and the codes that are included. The copyright statement should clearly differentiate between these when required.
+    * ...
     */
   var copyright: js.UndefOr[String] = js.undefined
   
   /**
-    * Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the example scenario. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
+    * The (c) symbol should NOT be included in this string. It will be added by software when rendering the notation. Full details about licensing, restrictions, warrantees, etc. goes in the more general 'copyright' element.
+    */
+  var copyrightLabel: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The date is often not tracked until the resource is published, but may be present on draft content. Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the example scenario. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var date: js.UndefOr[String] = js.undefined
+  
+  /**
+    * This description can be used to capture details such as comments about misuse. It is not a rendering of the ExampleScenario as conveyed in the 'text' field of the resource itself.
+    */
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Allows filtering of example scenarios that are appropriate for use versus not.
@@ -64,22 +82,23 @@ trait ExampleScenario
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
-    * Each resource and each version that is present in the workflow.
+    * A single data collection that is shared as part of the scenario.
     */
   var instance: js.UndefOr[js.Array[ExampleScenarioInstance]] = js.undefined
   
   /**
     * It may be possible for the example scenario to be used in jurisdictions other than those for which it was originally designed or intended.
+    * DEPRECATION NOTE: For consistency, implementations are encouraged to migrate to using the new 'jurisdiction' code in the useContext element.  (I.e. useContext.code indicating http://terminology.hl7.org/CodeSystem/usage-context-type#jurisdiction and useContext.valueCodeableConcept indicating the jurisdiction.)
     */
   var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
-    * The name is not expected to be globally unique. The name should be a simple alphanumeric type name to ensure that it is machine-processing friendly.
+    * Not needed as code will never be generated from one of these
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * Each major process - a group of operations.
+    * Some scenarios might describe only one process.
     */
   var process: js.UndefOr[js.Array[ExampleScenarioProcess]] = js.undefined
   
@@ -99,8 +118,14 @@ trait ExampleScenario
   
   /**
     * Allows filtering of example scenarios that are appropriate for use versus not.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var status: draft | active | retired | unknown
+  
+  /**
+    * This name does not need to be machine-processing friendly and may contain punctuation, white-space, etc.
+    */
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Can be a urn:uuid: or a urn:oid: but real http: addresses are preferred.  Multiple instances may share the same URL if they have a distinct version.
@@ -115,14 +140,19 @@ trait ExampleScenario
   var useContext: js.UndefOr[js.Array[UsageContext]] = js.undefined
   
   /**
-    * There may be different example scenario instances that have the same identifier but different versions.  The version can be appended to the url in a reference to allow a reference to a particular business version of the example scenario with the format [url]|[version].
+    * There may be different example scenario instances that have the same identifier but different versions.  The version can be appended to the url in a reference to allow a reference to a particular business version of the example scenario with the format [url]|[version]. The version SHOULD NOT contain a '#' - see [Business Version](resource.html#bv-format).
     */
   var version: js.UndefOr[String] = js.undefined
   
   /**
-    * Another nested workflow.
+    * If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 and a 0 if the version ordering can't be successfully be determined.
     */
-  var workflow: js.UndefOr[js.Array[String]] = js.undefined
+  var versionAlgorithmCoding: js.UndefOr[Coding] = js.undefined
+  
+  /**
+    * If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 and a 0 if the version ordering can't be successfully be determined.
+    */
+  var versionAlgorithmString: js.UndefOr[String] = js.undefined
 }
 object ExampleScenario {
   
@@ -148,11 +178,19 @@ object ExampleScenario {
     
     inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
+    inline def setCopyrightLabel(value: String): Self = StObject.set(x, "copyrightLabel", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightLabelUndefined: Self = StObject.set(x, "copyrightLabel", js.undefined)
+    
     inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
     inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setExperimental(value: Boolean): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
     
@@ -198,6 +236,10 @@ object ExampleScenario {
     
     inline def setStatus(value: draft | active | retired | unknown): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
@@ -210,21 +252,31 @@ object ExampleScenario {
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
+    inline def setVersionAlgorithmCoding(value: Coding): Self = StObject.set(x, "versionAlgorithmCoding", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmCodingUndefined: Self = StObject.set(x, "versionAlgorithmCoding", js.undefined)
+    
+    inline def setVersionAlgorithmString(value: String): Self = StObject.set(x, "versionAlgorithmString", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmStringUndefined: Self = StObject.set(x, "versionAlgorithmString", js.undefined)
+    
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
-    inline def setWorkflow(value: js.Array[String]): Self = StObject.set(x, "workflow", value.asInstanceOf[js.Any])
-    
-    inline def setWorkflowUndefined: Self = StObject.set(x, "workflow", js.undefined)
-    
-    inline def setWorkflowVarargs(value: String*): Self = StObject.set(x, "workflow", js.Array(value*))
-    
     inline def set_copyright(value: Element): Self = StObject.set(x, "_copyright", value.asInstanceOf[js.Any])
+    
+    inline def set_copyrightLabel(value: Element): Self = StObject.set(x, "_copyrightLabel", value.asInstanceOf[js.Any])
+    
+    inline def set_copyrightLabelUndefined: Self = StObject.set(x, "_copyrightLabel", js.undefined)
     
     inline def set_copyrightUndefined: Self = StObject.set(x, "_copyright", js.undefined)
     
     inline def set_date(value: Element): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
     
     inline def set_dateUndefined: Self = StObject.set(x, "_date", js.undefined)
+    
+    inline def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
+    
+    inline def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
     inline def set_experimental(value: Element): Self = StObject.set(x, "_experimental", value.asInstanceOf[js.Any])
     
@@ -246,18 +298,20 @@ object ExampleScenario {
     
     inline def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
     
+    inline def set_title(value: Element): Self = StObject.set(x, "_title", value.asInstanceOf[js.Any])
+    
+    inline def set_titleUndefined: Self = StObject.set(x, "_title", js.undefined)
+    
     inline def set_url(value: Element): Self = StObject.set(x, "_url", value.asInstanceOf[js.Any])
     
     inline def set_urlUndefined: Self = StObject.set(x, "_url", js.undefined)
     
     inline def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
     
+    inline def set_versionAlgorithmString(value: Element): Self = StObject.set(x, "_versionAlgorithmString", value.asInstanceOf[js.Any])
+    
+    inline def set_versionAlgorithmStringUndefined: Self = StObject.set(x, "_versionAlgorithmString", js.undefined)
+    
     inline def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
-    
-    inline def set_workflow(value: js.Array[Element]): Self = StObject.set(x, "_workflow", value.asInstanceOf[js.Any])
-    
-    inline def set_workflowUndefined: Self = StObject.set(x, "_workflow", js.undefined)
-    
-    inline def set_workflowVarargs(value: Element*): Self = StObject.set(x, "_workflow", js.Array(value*))
   }
 }

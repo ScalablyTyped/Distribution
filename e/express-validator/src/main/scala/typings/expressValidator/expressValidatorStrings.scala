@@ -1,6 +1,9 @@
 package typings.expressValidator
 
 import typings.expressValidator.srcBaseMod.Location
+import typings.expressValidator.srcContextMod.Optional
+import typings.expressValidator.srcMiddlewaresOneOfMod.OneOfErrorType
+import typings.expressValidator.srcMiddlewaresSchemaMod.DefaultSchemaKeys
 import typings.expressValidator.srcOptionsMod.AlphaLocale
 import typings.expressValidator.srcOptionsMod.AlphanumericLocale
 import typings.expressValidator.srcOptionsMod.HashAlgorithm
@@ -20,7 +23,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object expressValidatorStrings {
   
   @js.native
-  sealed trait default extends StObject
+  sealed trait default
+    extends StObject
+       with DefaultSchemaKeys
   inline def default: default = "default".asInstanceOf[default]
   
   @js.native
@@ -28,6 +33,14 @@ object expressValidatorStrings {
     extends StObject
        with UUIDVersion
   inline def `1`: `1` = "1".asInstanceOf[`1`]
+  
+  @js.native
+  sealed trait `10` extends StObject
+  inline def `10`: `10` = "10".asInstanceOf[`10`]
+  
+  @js.native
+  sealed trait `13` extends StObject
+  inline def `13`: `13` = "13".asInstanceOf[`13`]
   
   @js.native
   sealed trait `2`
@@ -48,16 +61,30 @@ object expressValidatorStrings {
   inline def `4`: `4` = "4".asInstanceOf[`4`]
   
   @js.native
+  sealed trait `48` extends StObject
+  inline def `48`: `48` = "48".asInstanceOf[`48`]
+  
+  @js.native
   sealed trait `5`
     extends StObject
        with UUIDVersion
   inline def `5`: `5` = "5".asInstanceOf[`5`]
   
   @js.native
+  sealed trait `64` extends StObject
+  inline def `64`: `64` = "64".asInstanceOf[`64`]
+  
+  @js.native
   sealed trait AD
     extends StObject
        with PostalCodeLocale
   inline def AD: AD = "AD".asInstanceOf[AD]
+  
+  @js.native
+  sealed trait AL
+    extends StObject
+       with VATCountryCode
+  inline def AL: AL = "AL".asInstanceOf[AL]
   
   @js.native
   sealed trait AM
@@ -69,6 +96,7 @@ object expressValidatorStrings {
   sealed trait AR
     extends StObject
        with PassportCountryCode
+       with VATCountryCode
   inline def AR: AR = "AR".asInstanceOf[AR]
   
   @js.native
@@ -76,6 +104,7 @@ object expressValidatorStrings {
     extends StObject
        with PassportCountryCode
        with PostalCodeLocale
+       with VATCountryCode
   inline def AT: AT = "AT".asInstanceOf[AT]
   
   @js.native
@@ -83,19 +112,28 @@ object expressValidatorStrings {
     extends StObject
        with PassportCountryCode
        with PostalCodeLocale
+       with VATCountryCode
   inline def AU: AU = "AU".asInstanceOf[AU]
   
   @js.native
   sealed trait AZ
     extends StObject
+       with PassportCountryCode
        with PostalCodeLocale
   inline def AZ: AZ = "AZ".asInstanceOf[AZ]
+  
+  @js.native
+  sealed trait BA
+    extends StObject
+       with PostalCodeLocale
+  inline def BA: BA = "BA".asInstanceOf[BA]
   
   @js.native
   sealed trait BE
     extends StObject
        with PassportCountryCode
        with PostalCodeLocale
+       with VATCountryCode
   inline def BE: BE = "BE".asInstanceOf[BE]
   
   @js.native
@@ -103,13 +141,21 @@ object expressValidatorStrings {
     extends StObject
        with PassportCountryCode
        with PostalCodeLocale
+       with VATCountryCode
   inline def BG: BG = "BG".asInstanceOf[BG]
+  
+  @js.native
+  sealed trait BO
+    extends StObject
+       with VATCountryCode
+  inline def BO: BO = "BO".asInstanceOf[BO]
   
   @js.native
   sealed trait BR
     extends StObject
        with PassportCountryCode
        with PostalCodeLocale
+       with VATCountryCode
   inline def BR: BR = "BR".asInstanceOf[BR]
   
   @js.native
@@ -117,6 +163,7 @@ object expressValidatorStrings {
     extends StObject
        with PassportCountryCode
        with PostalCodeLocale
+       with VATCountryCode
   inline def BY: BY = "BY".asInstanceOf[BY]
   
   @js.native
@@ -124,6 +171,7 @@ object expressValidatorStrings {
     extends StObject
        with PassportCountryCode
        with PostalCodeLocale
+       with VATCountryCode
   inline def CA: CA = "CA".asInstanceOf[CA]
   
   @js.native
@@ -131,7 +179,14 @@ object expressValidatorStrings {
     extends StObject
        with PassportCountryCode
        with PostalCodeLocale
+       with VATCountryCode
   inline def CH: CH = "CH".asInstanceOf[CH]
+  
+  @js.native
+  sealed trait CL
+    extends StObject
+       with VATCountryCode
+  inline def CL: CL = "CL".asInstanceOf[CL]
   
   @js.native
   sealed trait CN
@@ -141,9 +196,22 @@ object expressValidatorStrings {
   inline def CN: CN = "CN".asInstanceOf[CN]
   
   @js.native
+  sealed trait CO
+    extends StObject
+       with VATCountryCode
+  inline def CO: CO = "CO".asInstanceOf[CO]
+  
+  @js.native
+  sealed trait CR
+    extends StObject
+       with VATCountryCode
+  inline def CR: CR = "CR".asInstanceOf[CR]
+  
+  @js.native
   sealed trait CY
     extends StObject
        with PassportCountryCode
+       with VATCountryCode
   inline def CY: CY = "CY".asInstanceOf[CY]
   
   @js.native
@@ -151,6 +219,7 @@ object expressValidatorStrings {
     extends StObject
        with PassportCountryCode
        with PostalCodeLocale
+       with VATCountryCode
   inline def CZ: CZ = "CZ".asInstanceOf[CZ]
   
   @js.native
@@ -158,6 +227,7 @@ object expressValidatorStrings {
     extends StObject
        with PassportCountryCode
        with PostalCodeLocale
+       with VATCountryCode
   inline def DE: DE = "DE".asInstanceOf[DE]
   
   @js.native
@@ -165,12 +235,14 @@ object expressValidatorStrings {
     extends StObject
        with PassportCountryCode
        with PostalCodeLocale
+       with VATCountryCode
   inline def DK: DK = "DK".asInstanceOf[DK]
   
   @js.native
   sealed trait DO
     extends StObject
        with PostalCodeLocale
+       with VATCountryCode
   inline def DO: DO = "DO".asInstanceOf[DO]
   
   @js.native
@@ -181,11 +253,24 @@ object expressValidatorStrings {
   inline def DZ: DZ = "DZ".asInstanceOf[DZ]
   
   @js.native
+  sealed trait EC
+    extends StObject
+       with VATCountryCode
+  inline def EC: EC = "EC".asInstanceOf[EC]
+  
+  @js.native
   sealed trait EE
     extends StObject
        with PassportCountryCode
        with PostalCodeLocale
+       with VATCountryCode
   inline def EE: EE = "EE".asInstanceOf[EE]
+  
+  @js.native
+  sealed trait EL
+    extends StObject
+       with VATCountryCode
+  inline def EL: EL = "EL".asInstanceOf[EL]
   
   @js.native
   sealed trait ES
@@ -193,6 +278,7 @@ object expressValidatorStrings {
        with IdentityCardLocale
        with PassportCountryCode
        with PostalCodeLocale
+       with VATCountryCode
   inline def ES: ES = "ES".asInstanceOf[ES]
   
   @js.native
@@ -201,6 +287,7 @@ object expressValidatorStrings {
        with IdentityCardLocale
        with PassportCountryCode
        with PostalCodeLocale
+       with VATCountryCode
   inline def FI: FI = "FI".asInstanceOf[FI]
   
   @js.native
@@ -208,6 +295,7 @@ object expressValidatorStrings {
     extends StObject
        with PassportCountryCode
        with PostalCodeLocale
+       with VATCountryCode
   inline def FR: FR = "FR".asInstanceOf[FR]
   
   @js.native
@@ -226,10 +314,23 @@ object expressValidatorStrings {
   inline def GR: GR = "GR".asInstanceOf[GR]
   
   @js.native
+  sealed trait GT
+    extends StObject
+       with VATCountryCode
+  inline def GT: GT = "GT".asInstanceOf[GT]
+  
+  @js.native
+  sealed trait HN
+    extends StObject
+       with VATCountryCode
+  inline def HN: HN = "HN".asInstanceOf[HN]
+  
+  @js.native
   sealed trait HR
     extends StObject
        with PassportCountryCode
        with PostalCodeLocale
+       with VATCountryCode
   inline def HR: HR = "HR".asInstanceOf[HR]
   
   @js.native
@@ -243,6 +344,7 @@ object expressValidatorStrings {
     extends StObject
        with PassportCountryCode
        with PostalCodeLocale
+       with VATCountryCode
   inline def HU: HU = "HU".asInstanceOf[HU]
   
   @js.native
@@ -250,18 +352,21 @@ object expressValidatorStrings {
     extends StObject
        with PassportCountryCode
        with PostalCodeLocale
+       with VATCountryCode
   inline def ID: ID = "ID".asInstanceOf[ID]
   
   @js.native
   sealed trait IE
     extends StObject
        with PassportCountryCode
+       with VATCountryCode
   inline def IE: IE = "IE".asInstanceOf[IE]
   
   @js.native
   sealed trait IL
     extends StObject
        with PostalCodeLocale
+       with VATCountryCode
   inline def IL: IL = "IL".asInstanceOf[IL]
   
   @js.native
@@ -270,6 +375,7 @@ object expressValidatorStrings {
        with IdentityCardLocale
        with PassportCountryCode
        with PostalCodeLocale
+       with VATCountryCode
   inline def IN: IN = "IN".asInstanceOf[IN]
   
   @js.native
@@ -285,6 +391,7 @@ object expressValidatorStrings {
     extends StObject
        with PassportCountryCode
        with PostalCodeLocale
+       with VATCountryCode
   inline def IS: IS = "IS".asInstanceOf[IS]
   
   @js.native
@@ -295,6 +402,12 @@ object expressValidatorStrings {
        with PostalCodeLocale
        with VATCountryCode
   inline def IT: IT = "IT".asInstanceOf[IT]
+  
+  @js.native
+  sealed trait JM
+    extends StObject
+       with PassportCountryCode
+  inline def JM: JM = "JM".asInstanceOf[JM]
   
   @js.native
   sealed trait JP
@@ -317,8 +430,16 @@ object expressValidatorStrings {
   inline def KR: KR = "KR".asInstanceOf[KR]
   
   @js.native
+  sealed trait KZ
+    extends StObject
+       with PassportCountryCode
+       with VATCountryCode
+  inline def KZ: KZ = "KZ".asInstanceOf[KZ]
+  
+  @js.native
   sealed trait LI
     extends StObject
+       with PassportCountryCode
        with PostalCodeLocale
   inline def LI: LI = "LI".asInstanceOf[LI]
   
@@ -333,6 +454,7 @@ object expressValidatorStrings {
     extends StObject
        with PassportCountryCode
        with PostalCodeLocale
+       with VATCountryCode
   inline def LT: LT = "LT".asInstanceOf[LT]
   
   @js.native
@@ -340,6 +462,7 @@ object expressValidatorStrings {
     extends StObject
        with PassportCountryCode
        with PostalCodeLocale
+       with VATCountryCode
   inline def LU: LU = "LU".asInstanceOf[LU]
   
   @js.native
@@ -347,6 +470,7 @@ object expressValidatorStrings {
     extends StObject
        with PassportCountryCode
        with PostalCodeLocale
+       with VATCountryCode
   inline def LV: LV = "LV".asInstanceOf[LV]
   
   @js.native
@@ -356,16 +480,24 @@ object expressValidatorStrings {
   inline def LY: LY = "LY".asInstanceOf[LY]
   
   @js.native
+  sealed trait MK
+    extends StObject
+       with VATCountryCode
+  inline def MK: MK = "MK".asInstanceOf[MK]
+  
+  @js.native
   sealed trait MT
     extends StObject
        with PassportCountryCode
        with PostalCodeLocale
+       with VATCountryCode
   inline def MT: MT = "MT".asInstanceOf[MT]
   
   @js.native
   sealed trait MX
     extends StObject
        with PostalCodeLocale
+       with VATCountryCode
   inline def MX: MX = "MX".asInstanceOf[MX]
   
   @js.native
@@ -383,6 +515,18 @@ object expressValidatorStrings {
   inline def MZ: MZ = "MZ".asInstanceOf[MZ]
   
   @js.native
+  sealed trait NG
+    extends StObject
+       with VATCountryCode
+  inline def NG: NG = "NG".asInstanceOf[NG]
+  
+  @js.native
+  sealed trait NI
+    extends StObject
+       with VATCountryCode
+  inline def NI: NI = "NI".asInstanceOf[NI]
+  
+  @js.native
   sealed trait NL
     extends StObject
        with PassportCountryCode
@@ -395,6 +539,7 @@ object expressValidatorStrings {
     extends StObject
        with IdentityCardLocale
        with PostalCodeLocale
+       with VATCountryCode
   inline def NO: NO = "NO".asInstanceOf[NO]
   
   @js.native
@@ -406,8 +551,35 @@ object expressValidatorStrings {
   @js.native
   sealed trait NZ
     extends StObject
+       with PassportCountryCode
        with PostalCodeLocale
+       with VATCountryCode
   inline def NZ: NZ = "NZ".asInstanceOf[NZ]
+  
+  @js.native
+  sealed trait PA
+    extends StObject
+       with VATCountryCode
+  inline def PA: PA = "PA".asInstanceOf[PA]
+  
+  @js.native
+  sealed trait PE
+    extends StObject
+       with VATCountryCode
+  inline def PE: PE = "PE".asInstanceOf[PE]
+  
+  @js.native
+  sealed trait PH
+    extends StObject
+       with PassportCountryCode
+       with VATCountryCode
+  inline def PH: PH = "PH".asInstanceOf[PH]
+  
+  @js.native
+  sealed trait PK
+    extends StObject
+       with PassportCountryCode
+  inline def PK: PK = "PK".asInstanceOf[PK]
   
   @js.native
   sealed trait PL
@@ -415,6 +587,7 @@ object expressValidatorStrings {
        with IdentityCardLocale
        with PassportCountryCode
        with PostalCodeLocale
+       with VATCountryCode
   inline def PL: PL = "PL".asInstanceOf[PL]
   
   @js.native
@@ -434,26 +607,42 @@ object expressValidatorStrings {
     extends StObject
        with PassportCountryCode
        with PostalCodeLocale
+       with VATCountryCode
   inline def PT: PT = "PT".asInstanceOf[PT]
+  
+  @js.native
+  sealed trait PY
+    extends StObject
+       with VATCountryCode
+  inline def PY: PY = "PY".asInstanceOf[PY]
   
   @js.native
   sealed trait RO
     extends StObject
        with PassportCountryCode
        with PostalCodeLocale
+       with VATCountryCode
   inline def RO: RO = "RO".asInstanceOf[RO]
+  
+  @js.native
+  sealed trait RS
+    extends StObject
+       with VATCountryCode
+  inline def RS: RS = "RS".asInstanceOf[RS]
   
   @js.native
   sealed trait RU
     extends StObject
        with PassportCountryCode
        with PostalCodeLocale
+       with VATCountryCode
   inline def RU: RU = "RU".asInstanceOf[RU]
   
   @js.native
   sealed trait SA
     extends StObject
        with PostalCodeLocale
+       with VATCountryCode
   inline def SA: SA = "SA".asInstanceOf[SA]
   
   @js.native
@@ -461,6 +650,7 @@ object expressValidatorStrings {
     extends StObject
        with PassportCountryCode
        with PostalCodeLocale
+       with VATCountryCode
   inline def SE: SE = "SE".asInstanceOf[SE]
   
   @js.native
@@ -473,6 +663,7 @@ object expressValidatorStrings {
   sealed trait SI
     extends StObject
        with PostalCodeLocale
+       with VATCountryCode
   inline def SI: SI = "SI".asInstanceOf[SI]
   
   @js.native
@@ -480,6 +671,7 @@ object expressValidatorStrings {
     extends StObject
        with PassportCountryCode
        with PostalCodeLocale
+       with VATCountryCode
   inline def SK: SK = "SK".asInstanceOf[SK]
   
   @js.native
@@ -489,9 +681,22 @@ object expressValidatorStrings {
   inline def SL: SL = "SL".asInstanceOf[SL]
   
   @js.native
+  sealed trait SM
+    extends StObject
+       with VATCountryCode
+  inline def SM: SM = "SM".asInstanceOf[SM]
+  
+  @js.native
+  sealed trait SV
+    extends StObject
+       with VATCountryCode
+  inline def SV: SV = "SV".asInstanceOf[SV]
+  
+  @js.native
   sealed trait TH
     extends StObject
        with IdentityCardLocale
+       with PassportCountryCode
        with PostalCodeLocale
   inline def TH: TH = "TH".asInstanceOf[TH]
   
@@ -505,6 +710,7 @@ object expressValidatorStrings {
   sealed trait TR
     extends StObject
        with PassportCountryCode
+       with VATCountryCode
   inline def TR: TR = "TR".asInstanceOf[TR]
   
   @js.native
@@ -518,6 +724,7 @@ object expressValidatorStrings {
     extends StObject
        with PassportCountryCode
        with PostalCodeLocale
+       with VATCountryCode
   inline def UA: UA = "UA".asInstanceOf[UA]
   
   @js.native
@@ -526,6 +733,24 @@ object expressValidatorStrings {
        with PassportCountryCode
        with PostalCodeLocale
   inline def US: US = "US".asInstanceOf[US]
+  
+  @js.native
+  sealed trait UY
+    extends StObject
+       with VATCountryCode
+  inline def UY: UY = "UY".asInstanceOf[UY]
+  
+  @js.native
+  sealed trait UZ
+    extends StObject
+       with VATCountryCode
+  inline def UZ: UZ = "UZ".asInstanceOf[UZ]
+  
+  @js.native
+  sealed trait VE
+    extends StObject
+       with VATCountryCode
+  inline def VE: VE = "VE".asInstanceOf[VE]
   
   @js.native
   sealed trait ZA
@@ -540,20 +765,28 @@ object expressValidatorStrings {
   inline def ZM: ZM = "ZM".asInstanceOf[ZM]
   
   @js.native
-  sealed trait _error extends StObject
-  inline def _error: _error = "_error".asInstanceOf[_error]
-  
-  @js.native
   sealed trait all
     extends StObject
        with UUIDVersion
   inline def all: all = "all".asInstanceOf[all]
   
   @js.native
+  sealed trait alternative extends StObject
+  inline def alternative: alternative = "alternative".asInstanceOf[alternative]
+  
+  @js.native
+  sealed trait alternative_grouped extends StObject
+  inline def alternative_grouped: alternative_grouped = "alternative_grouped".asInstanceOf[alternative_grouped]
+  
+  @js.native
   sealed trait `am-AM`
     extends StObject
        with MobilePhoneLocale
   inline def `am-AM`: `am-AM` = "am-AM".asInstanceOf[`am-AM`]
+  
+  @js.native
+  sealed trait amex extends StObject
+  inline def amex: amex = "amex".asInstanceOf[amex]
   
   @js.native
   sealed trait any
@@ -595,6 +828,12 @@ object expressValidatorStrings {
        with AlphanumericLocale
        with MobilePhoneLocale
   inline def `ar-EG`: `ar-EG` = "ar-EG".asInstanceOf[`ar-EG`]
+  
+  @js.native
+  sealed trait `ar-EH`
+    extends StObject
+       with MobilePhoneLocale
+  inline def `ar-EH`: `ar-EH` = "ar-EH".asInstanceOf[`ar-EH`]
   
   @js.native
   sealed trait `ar-IQ`
@@ -708,6 +947,7 @@ object expressValidatorStrings {
     extends StObject
        with AlphaLocale
        with AlphanumericLocale
+       with MobilePhoneLocale
   inline def `ar-YE`: `ar-YE` = "ar-YE".asInstanceOf[`ar-YE`]
   
   @js.native
@@ -741,12 +981,16 @@ object expressValidatorStrings {
   inline def `bg-BG`: `bg-BG` = "bg-BG".asInstanceOf[`bg-BG`]
   
   @js.native
-  sealed trait blacklist extends StObject
+  sealed trait blacklist
+    extends StObject
+       with DefaultSchemaKeys
   inline def blacklist: blacklist = "blacklist".asInstanceOf[blacklist]
   
   @js.native
   sealed trait `bn-BD`
     extends StObject
+       with AlphaLocale
+       with AlphanumericLocale
        with MobilePhoneLocale
   inline def `bn-BD`: `bn-BD` = "bn-BD".asInstanceOf[`bn-BD`]
   
@@ -763,7 +1007,13 @@ object expressValidatorStrings {
   inline def `bs-BA`: `bs-BA` = "bs-BA".asInstanceOf[`bs-BA`]
   
   @js.native
-  sealed trait contains extends StObject
+  sealed trait chain extends StObject
+  inline def chain: chain = "chain".asInstanceOf[chain]
+  
+  @js.native
+  sealed trait contains
+    extends StObject
+       with DefaultSchemaKeys
   inline def contains: contains = "contains".asInstanceOf[contains]
   
   @js.native
@@ -795,11 +1045,15 @@ object expressValidatorStrings {
   inline def `cs-CZ`: `cs-CZ` = "cs-CZ".asInstanceOf[`cs-CZ`]
   
   @js.native
-  sealed trait custom extends StObject
+  sealed trait custom
+    extends StObject
+       with DefaultSchemaKeys
   inline def custom: custom = "custom".asInstanceOf[custom]
   
   @js.native
-  sealed trait customSanitizer extends StObject
+  sealed trait customSanitizer
+    extends StObject
+       with DefaultSchemaKeys
   inline def customSanitizer: customSanitizer = "customSanitizer".asInstanceOf[customSanitizer]
   
   @js.native
@@ -846,10 +1100,24 @@ object expressValidatorStrings {
   inline def `de-LU`: `de-LU` = "de-LU".asInstanceOf[`de-LU`]
   
   @js.native
+  sealed trait dinersclub extends StObject
+  inline def dinersclub: dinersclub = "dinersclub".asInstanceOf[dinersclub]
+  
+  @js.native
+  sealed trait discover extends StObject
+  inline def discover: discover = "discover".asInstanceOf[discover]
+  
+  @js.native
   sealed trait `dk-DK`
     extends StObject
        with TaxIDLocale
   inline def `dk-DK`: `dk-DK` = "dk-DK".asInstanceOf[`dk-DK`]
+  
+  @js.native
+  sealed trait `dv-MV`
+    extends StObject
+       with MobilePhoneLocale
+  inline def `dv-MV`: `dv-MV` = "dv-MV".asInstanceOf[`dv-MV`]
   
   @js.native
   sealed trait `dz-BT`
@@ -860,6 +1128,7 @@ object expressValidatorStrings {
   @js.native
   sealed trait `el-CY`
     extends StObject
+       with MobilePhoneLocale
        with TaxIDLocale
   inline def `el-CY`: `el-CY` = "el-CY".asInstanceOf[`el-CY`]
   
@@ -871,6 +1140,18 @@ object expressValidatorStrings {
        with MobilePhoneLocale
        with TaxIDLocale
   inline def `el-GR`: `el-GR` = "el-GR".asInstanceOf[`el-GR`]
+  
+  @js.native
+  sealed trait `en-AG`
+    extends StObject
+       with MobilePhoneLocale
+  inline def `en-AG`: `en-AG` = "en-AG".asInstanceOf[`en-AG`]
+  
+  @js.native
+  sealed trait `en-AI`
+    extends StObject
+       with MobilePhoneLocale
+  inline def `en-AI`: `en-AI` = "en-AI".asInstanceOf[`en-AI`]
   
   @js.native
   sealed trait `en-AU`
@@ -887,6 +1168,12 @@ object expressValidatorStrings {
   inline def `en-BM`: `en-BM` = "en-BM".asInstanceOf[`en-BM`]
   
   @js.native
+  sealed trait `en-BS`
+    extends StObject
+       with MobilePhoneLocale
+  inline def `en-BS`: `en-BS` = "en-BS".asInstanceOf[`en-BS`]
+  
+  @js.native
   sealed trait `en-BW`
     extends StObject
        with MobilePhoneLocale
@@ -896,6 +1183,7 @@ object expressValidatorStrings {
   sealed trait `en-CA`
     extends StObject
        with MobilePhoneLocale
+       with TaxIDLocale
   inline def `en-CA`: `en-CA` = "en-CA".asInstanceOf[`en-CA`]
   
   @js.native
@@ -955,6 +1243,12 @@ object expressValidatorStrings {
   inline def `en-IN`: `en-IN` = "en-IN".asInstanceOf[`en-IN`]
   
   @js.native
+  sealed trait `en-JM`
+    extends StObject
+       with MobilePhoneLocale
+  inline def `en-JM`: `en-JM` = "en-JM".asInstanceOf[`en-JM`]
+  
+  @js.native
   sealed trait `en-KE`
     extends StObject
        with MobilePhoneLocale
@@ -965,6 +1259,18 @@ object expressValidatorStrings {
     extends StObject
        with MobilePhoneLocale
   inline def `en-KI`: `en-KI` = "en-KI".asInstanceOf[`en-KI`]
+  
+  @js.native
+  sealed trait `en-KN`
+    extends StObject
+       with MobilePhoneLocale
+  inline def `en-KN`: `en-KN` = "en-KN".asInstanceOf[`en-KN`]
+  
+  @js.native
+  sealed trait `en-LS`
+    extends StObject
+       with MobilePhoneLocale
+  inline def `en-LS`: `en-LS` = "en-LS".asInstanceOf[`en-LS`]
   
   @js.native
   sealed trait `en-MT`
@@ -991,12 +1297,24 @@ object expressValidatorStrings {
   inline def `en-NG`: `en-NG` = "en-NG".asInstanceOf[`en-NG`]
   
   @js.native
+  sealed trait `en-NI`
+    extends StObject
+       with IsLicensePlateLocale
+  inline def `en-NI`: `en-NI` = "en-NI".asInstanceOf[`en-NI`]
+  
+  @js.native
   sealed trait `en-NZ`
     extends StObject
        with AlphaLocale
        with AlphanumericLocale
        with MobilePhoneLocale
   inline def `en-NZ`: `en-NZ` = "en-NZ".asInstanceOf[`en-NZ`]
+  
+  @js.native
+  sealed trait `en-PG`
+    extends StObject
+       with MobilePhoneLocale
+  inline def `en-PG`: `en-PG` = "en-PG".asInstanceOf[`en-PG`]
   
   @js.native
   sealed trait `en-PH`
@@ -1027,6 +1345,12 @@ object expressValidatorStrings {
     extends StObject
        with MobilePhoneLocale
   inline def `en-SL`: `en-SL` = "en-SL".asInstanceOf[`en-SL`]
+  
+  @js.native
+  sealed trait `en-SS`
+    extends StObject
+       with MobilePhoneLocale
+  inline def `en-SS`: `en-SS` = "en-SS".asInstanceOf[`en-SS`]
   
   @js.native
   sealed trait `en-TZ`
@@ -1072,12 +1396,21 @@ object expressValidatorStrings {
   inline def `en-ZW`: `en-ZW` = "en-ZW".asInstanceOf[`en-ZW`]
   
   @js.native
-  sealed trait equals extends StObject
+  sealed trait equals
+    extends StObject
+       with DefaultSchemaKeys
   inline def equals: equals = "equals".asInstanceOf[equals]
+  
+  @js.native
+  sealed trait errorMessage
+    extends StObject
+       with DefaultSchemaKeys
+  inline def errorMessage: errorMessage = "errorMessage".asInstanceOf[errorMessage]
   
   @js.native
   sealed trait `es-AR`
     extends StObject
+       with IsLicensePlateLocale
        with MobilePhoneLocale
   inline def `es-AR`: `es-AR` = "es-AR".asInstanceOf[`es-AR`]
   
@@ -1133,10 +1466,22 @@ object expressValidatorStrings {
   inline def `es-ES`: `es-ES` = "es-ES".asInstanceOf[`es-ES`]
   
   @js.native
+  sealed trait `es-HN`
+    extends StObject
+       with MobilePhoneLocale
+  inline def `es-HN`: `es-HN` = "es-HN".asInstanceOf[`es-HN`]
+  
+  @js.native
   sealed trait `es-MX`
     extends StObject
        with MobilePhoneLocale
   inline def `es-MX`: `es-MX` = "es-MX".asInstanceOf[`es-MX`]
+  
+  @js.native
+  sealed trait `es-NI`
+    extends StObject
+       with MobilePhoneLocale
+  inline def `es-NI`: `es-NI` = "es-NI".asInstanceOf[`es-NI`]
   
   @js.native
   sealed trait `es-PA`
@@ -1175,7 +1520,9 @@ object expressValidatorStrings {
   inline def `es-VE`: `es-VE` = "es-VE".asInstanceOf[`es-VE`]
   
   @js.native
-  sealed trait escape extends StObject
+  sealed trait escape
+    extends StObject
+       with DefaultSchemaKeys
   inline def escape: escape = "escape".asInstanceOf[escape]
   
   @js.native
@@ -1186,7 +1533,9 @@ object expressValidatorStrings {
   inline def `et-EE`: `et-EE` = "et-EE".asInstanceOf[`et-EE`]
   
   @js.native
-  sealed trait exists extends StObject
+  sealed trait exists
+    extends StObject
+       with DefaultSchemaKeys
   inline def exists: exists = "exists".asInstanceOf[exists]
   
   @js.native
@@ -1194,6 +1543,7 @@ object expressValidatorStrings {
     extends StObject
        with AlphaLocale
        with AlphanumericLocale
+       with MobilePhoneLocale
   inline def `fa-AF`: `fa-AF` = "fa-AF".asInstanceOf[`fa-AF`]
   
   @js.native
@@ -1203,6 +1553,12 @@ object expressValidatorStrings {
        with AlphanumericLocale
        with MobilePhoneLocale
   inline def `fa-IR`: `fa-IR` = "fa-IR".asInstanceOf[`fa-IR`]
+  
+  @js.native
+  sealed trait falsy
+    extends StObject
+       with Optional
+  inline def falsy: falsy = "falsy".asInstanceOf[falsy]
   
   @js.native
   sealed trait `fi-FI`
@@ -1215,10 +1571,20 @@ object expressValidatorStrings {
   inline def `fi-FI`: `fi-FI` = "fi-FI".asInstanceOf[`fi-FI`]
   
   @js.native
+  sealed trait field extends StObject
+  inline def field: field = "field".asInstanceOf[field]
+  
+  @js.native
   sealed trait `fj-FJ`
     extends StObject
        with MobilePhoneLocale
   inline def `fj-FJ`: `fj-FJ` = "fj-FJ".asInstanceOf[`fj-FJ`]
+  
+  @js.native
+  sealed trait flat
+    extends StObject
+       with OneOfErrorType
+  inline def flat: flat = "flat".asInstanceOf[flat]
   
   @js.native
   sealed trait `fo-FO`
@@ -1239,6 +1605,18 @@ object expressValidatorStrings {
     extends StObject
        with MobilePhoneLocale
   inline def `fr-BF`: `fr-BF` = "fr-BF".asInstanceOf[`fr-BF`]
+  
+  @js.native
+  sealed trait `fr-BJ`
+    extends StObject
+       with MobilePhoneLocale
+  inline def `fr-BJ`: `fr-BJ` = "fr-BJ".asInstanceOf[`fr-BJ`]
+  
+  @js.native
+  sealed trait `fr-CD`
+    extends StObject
+       with MobilePhoneLocale
+  inline def `fr-CD`: `fr-CD` = "fr-CD".asInstanceOf[`fr-CD`]
   
   @js.native
   sealed trait `fr-CH`
@@ -1310,6 +1688,12 @@ object expressValidatorStrings {
   inline def `ga-IE`: `ga-IE` = "ga-IE".asInstanceOf[`ga-IE`]
   
   @js.native
+  sealed trait grouped
+    extends StObject
+       with OneOfErrorType
+  inline def grouped: grouped = "grouped".asInstanceOf[grouped]
+  
+  @js.native
   sealed trait he
     extends StObject
        with AlphaLocale
@@ -1337,6 +1721,20 @@ object expressValidatorStrings {
   inline def `hi-IN`: `hi-IN` = "hi-IN".asInstanceOf[`hi-IN`]
   
   @js.native
+  sealed trait `hk-HK`
+    extends StObject
+       with IdentityCardLocale
+  inline def `hk-HK`: `hk-HK` = "hk-HK".asInstanceOf[`hk-HK`]
+  
+  @js.native
+  sealed trait hour12 extends StObject
+  inline def hour12: hour12 = "hour12".asInstanceOf[hour12]
+  
+  @js.native
+  sealed trait hour24 extends StObject
+  inline def hour24: hour24 = "hour24".asInstanceOf[hour24]
+  
+  @js.native
   sealed trait `hr-HR`
     extends StObject
        with TaxIDLocale
@@ -1359,6 +1757,7 @@ object expressValidatorStrings {
     extends StObject
        with AlphaLocale
        with AlphanumericLocale
+       with IsLicensePlateLocale
        with MobilePhoneLocale
        with TaxIDLocale
   inline def `hu-HU`: `hu-HU` = "hu-HU".asInstanceOf[`hu-HU`]
@@ -1372,323 +1771,513 @@ object expressValidatorStrings {
   inline def `id-ID`: `id-ID` = "id-ID".asInstanceOf[`id-ID`]
   
   @js.native
-  sealed trait isAfter extends StObject
+  sealed trait in_
+    extends StObject
+       with DefaultSchemaKeys
+  inline def in_ : in_ = "in".asInstanceOf[in_]
+  
+  @js.native
+  sealed trait `ir-IR`
+    extends StObject
+       with MobilePhoneLocale
+  inline def `ir-IR`: `ir-IR` = "ir-IR".asInstanceOf[`ir-IR`]
+  
+  @js.native
+  sealed trait isAfter
+    extends StObject
+       with DefaultSchemaKeys
   inline def isAfter: isAfter = "isAfter".asInstanceOf[isAfter]
   
   @js.native
-  sealed trait isAlpha extends StObject
+  sealed trait isAlpha
+    extends StObject
+       with DefaultSchemaKeys
   inline def isAlpha: isAlpha = "isAlpha".asInstanceOf[isAlpha]
   
   @js.native
-  sealed trait isAlphanumeric extends StObject
+  sealed trait isAlphanumeric
+    extends StObject
+       with DefaultSchemaKeys
   inline def isAlphanumeric: isAlphanumeric = "isAlphanumeric".asInstanceOf[isAlphanumeric]
   
   @js.native
-  sealed trait isArray extends StObject
+  sealed trait isArray
+    extends StObject
+       with DefaultSchemaKeys
   inline def isArray: isArray = "isArray".asInstanceOf[isArray]
   
   @js.native
-  sealed trait isAscii extends StObject
+  sealed trait isAscii
+    extends StObject
+       with DefaultSchemaKeys
   inline def isAscii: isAscii = "isAscii".asInstanceOf[isAscii]
   
   @js.native
-  sealed trait isBIC extends StObject
+  sealed trait isBIC
+    extends StObject
+       with DefaultSchemaKeys
   inline def isBIC: isBIC = "isBIC".asInstanceOf[isBIC]
   
   @js.native
-  sealed trait isBase32 extends StObject
+  sealed trait isBase32
+    extends StObject
+       with DefaultSchemaKeys
   inline def isBase32: isBase32 = "isBase32".asInstanceOf[isBase32]
   
   @js.native
-  sealed trait isBase58 extends StObject
+  sealed trait isBase58
+    extends StObject
+       with DefaultSchemaKeys
   inline def isBase58: isBase58 = "isBase58".asInstanceOf[isBase58]
   
   @js.native
-  sealed trait isBase64 extends StObject
+  sealed trait isBase64
+    extends StObject
+       with DefaultSchemaKeys
   inline def isBase64: isBase64 = "isBase64".asInstanceOf[isBase64]
   
   @js.native
-  sealed trait isBefore extends StObject
+  sealed trait isBefore
+    extends StObject
+       with DefaultSchemaKeys
   inline def isBefore: isBefore = "isBefore".asInstanceOf[isBefore]
   
   @js.native
-  sealed trait isBoolean extends StObject
+  sealed trait isBoolean
+    extends StObject
+       with DefaultSchemaKeys
   inline def isBoolean: isBoolean = "isBoolean".asInstanceOf[isBoolean]
   
   @js.native
-  sealed trait isBtcAddress extends StObject
+  sealed trait isBtcAddress
+    extends StObject
+       with DefaultSchemaKeys
   inline def isBtcAddress: isBtcAddress = "isBtcAddress".asInstanceOf[isBtcAddress]
   
   @js.native
-  sealed trait isByteLength extends StObject
+  sealed trait isByteLength
+    extends StObject
+       with DefaultSchemaKeys
   inline def isByteLength: isByteLength = "isByteLength".asInstanceOf[isByteLength]
   
   @js.native
-  sealed trait isCreditCard extends StObject
+  sealed trait isCreditCard
+    extends StObject
+       with DefaultSchemaKeys
   inline def isCreditCard: isCreditCard = "isCreditCard".asInstanceOf[isCreditCard]
   
   @js.native
-  sealed trait isCurrency extends StObject
+  sealed trait isCurrency
+    extends StObject
+       with DefaultSchemaKeys
   inline def isCurrency: isCurrency = "isCurrency".asInstanceOf[isCurrency]
   
   @js.native
-  sealed trait isDataURI extends StObject
+  sealed trait isDataURI
+    extends StObject
+       with DefaultSchemaKeys
   inline def isDataURI: isDataURI = "isDataURI".asInstanceOf[isDataURI]
   
   @js.native
-  sealed trait isDate extends StObject
+  sealed trait isDate
+    extends StObject
+       with DefaultSchemaKeys
   inline def isDate: isDate = "isDate".asInstanceOf[isDate]
   
   @js.native
-  sealed trait isDecimal extends StObject
+  sealed trait isDecimal
+    extends StObject
+       with DefaultSchemaKeys
   inline def isDecimal: isDecimal = "isDecimal".asInstanceOf[isDecimal]
   
   @js.native
-  sealed trait isDivisibleBy extends StObject
+  sealed trait isDivisibleBy
+    extends StObject
+       with DefaultSchemaKeys
   inline def isDivisibleBy: isDivisibleBy = "isDivisibleBy".asInstanceOf[isDivisibleBy]
   
   @js.native
-  sealed trait isEAN extends StObject
+  sealed trait isEAN
+    extends StObject
+       with DefaultSchemaKeys
   inline def isEAN: isEAN = "isEAN".asInstanceOf[isEAN]
   
   @js.native
-  sealed trait isEmail extends StObject
+  sealed trait isEmail
+    extends StObject
+       with DefaultSchemaKeys
   inline def isEmail: isEmail = "isEmail".asInstanceOf[isEmail]
   
   @js.native
-  sealed trait isEmpty extends StObject
+  sealed trait isEmpty
+    extends StObject
+       with DefaultSchemaKeys
   inline def isEmpty: isEmpty = "isEmpty".asInstanceOf[isEmpty]
   
   @js.native
-  sealed trait isEthereumAddress extends StObject
+  sealed trait isEthereumAddress
+    extends StObject
+       with DefaultSchemaKeys
   inline def isEthereumAddress: isEthereumAddress = "isEthereumAddress".asInstanceOf[isEthereumAddress]
   
   @js.native
-  sealed trait isFQDN extends StObject
+  sealed trait isFQDN
+    extends StObject
+       with DefaultSchemaKeys
   inline def isFQDN: isFQDN = "isFQDN".asInstanceOf[isFQDN]
   
   @js.native
-  sealed trait isFloat extends StObject
+  sealed trait isFloat
+    extends StObject
+       with DefaultSchemaKeys
   inline def isFloat: isFloat = "isFloat".asInstanceOf[isFloat]
   
   @js.native
-  sealed trait isFullWidth extends StObject
+  sealed trait isFullWidth
+    extends StObject
+       with DefaultSchemaKeys
   inline def isFullWidth: isFullWidth = "isFullWidth".asInstanceOf[isFullWidth]
   
   @js.native
-  sealed trait isHSL extends StObject
+  sealed trait isHSL
+    extends StObject
+       with DefaultSchemaKeys
   inline def isHSL: isHSL = "isHSL".asInstanceOf[isHSL]
   
   @js.native
-  sealed trait isHalfWidth extends StObject
+  sealed trait isHalfWidth
+    extends StObject
+       with DefaultSchemaKeys
   inline def isHalfWidth: isHalfWidth = "isHalfWidth".asInstanceOf[isHalfWidth]
   
   @js.native
-  sealed trait isHash extends StObject
+  sealed trait isHash
+    extends StObject
+       with DefaultSchemaKeys
   inline def isHash: isHash = "isHash".asInstanceOf[isHash]
   
   @js.native
-  sealed trait isHexColor extends StObject
+  sealed trait isHexColor
+    extends StObject
+       with DefaultSchemaKeys
   inline def isHexColor: isHexColor = "isHexColor".asInstanceOf[isHexColor]
   
   @js.native
-  sealed trait isHexadecimal extends StObject
+  sealed trait isHexadecimal
+    extends StObject
+       with DefaultSchemaKeys
   inline def isHexadecimal: isHexadecimal = "isHexadecimal".asInstanceOf[isHexadecimal]
   
   @js.native
-  sealed trait isIBAN extends StObject
+  sealed trait isIBAN
+    extends StObject
+       with DefaultSchemaKeys
   inline def isIBAN: isIBAN = "isIBAN".asInstanceOf[isIBAN]
   
   @js.native
-  sealed trait isIMEI extends StObject
+  sealed trait isIMEI
+    extends StObject
+       with DefaultSchemaKeys
   inline def isIMEI: isIMEI = "isIMEI".asInstanceOf[isIMEI]
   
   @js.native
-  sealed trait isIP extends StObject
+  sealed trait isIP
+    extends StObject
+       with DefaultSchemaKeys
   inline def isIP: isIP = "isIP".asInstanceOf[isIP]
   
   @js.native
-  sealed trait isIPRange extends StObject
+  sealed trait isIPRange
+    extends StObject
+       with DefaultSchemaKeys
   inline def isIPRange: isIPRange = "isIPRange".asInstanceOf[isIPRange]
   
   @js.native
-  sealed trait isISBN extends StObject
+  sealed trait isISBN
+    extends StObject
+       with DefaultSchemaKeys
   inline def isISBN: isISBN = "isISBN".asInstanceOf[isISBN]
   
   @js.native
-  sealed trait isISIN extends StObject
+  sealed trait isISIN
+    extends StObject
+       with DefaultSchemaKeys
   inline def isISIN: isISIN = "isISIN".asInstanceOf[isISIN]
   
   @js.native
-  sealed trait isISO31661Alpha2 extends StObject
+  sealed trait isISO31661Alpha2
+    extends StObject
+       with DefaultSchemaKeys
   inline def isISO31661Alpha2: isISO31661Alpha2 = "isISO31661Alpha2".asInstanceOf[isISO31661Alpha2]
   
   @js.native
-  sealed trait isISO31661Alpha3 extends StObject
+  sealed trait isISO31661Alpha3
+    extends StObject
+       with DefaultSchemaKeys
   inline def isISO31661Alpha3: isISO31661Alpha3 = "isISO31661Alpha3".asInstanceOf[isISO31661Alpha3]
   
   @js.native
-  sealed trait isISO4217 extends StObject
+  sealed trait isISO4217
+    extends StObject
+       with DefaultSchemaKeys
   inline def isISO4217: isISO4217 = "isISO4217".asInstanceOf[isISO4217]
   
   @js.native
-  sealed trait isISO8601 extends StObject
+  sealed trait isISO6391
+    extends StObject
+       with DefaultSchemaKeys
+  inline def isISO6391: isISO6391 = "isISO6391".asInstanceOf[isISO6391]
+  
+  @js.native
+  sealed trait isISO8601
+    extends StObject
+       with DefaultSchemaKeys
   inline def isISO8601: isISO8601 = "isISO8601".asInstanceOf[isISO8601]
   
   @js.native
-  sealed trait isISRC extends StObject
+  sealed trait isISRC
+    extends StObject
+       with DefaultSchemaKeys
   inline def isISRC: isISRC = "isISRC".asInstanceOf[isISRC]
   
   @js.native
-  sealed trait isISSN extends StObject
+  sealed trait isISSN
+    extends StObject
+       with DefaultSchemaKeys
   inline def isISSN: isISSN = "isISSN".asInstanceOf[isISSN]
   
   @js.native
-  sealed trait isIdentityCard extends StObject
+  sealed trait isIdentityCard
+    extends StObject
+       with DefaultSchemaKeys
   inline def isIdentityCard: isIdentityCard = "isIdentityCard".asInstanceOf[isIdentityCard]
   
   @js.native
-  sealed trait isIn extends StObject
+  sealed trait isIn
+    extends StObject
+       with DefaultSchemaKeys
   inline def isIn: isIn = "isIn".asInstanceOf[isIn]
   
   @js.native
-  sealed trait isInt extends StObject
+  sealed trait isInt
+    extends StObject
+       with DefaultSchemaKeys
   inline def isInt: isInt = "isInt".asInstanceOf[isInt]
   
   @js.native
-  sealed trait isJSON extends StObject
+  sealed trait isJSON
+    extends StObject
+       with DefaultSchemaKeys
   inline def isJSON: isJSON = "isJSON".asInstanceOf[isJSON]
   
   @js.native
-  sealed trait isJWT extends StObject
+  sealed trait isJWT
+    extends StObject
+       with DefaultSchemaKeys
   inline def isJWT: isJWT = "isJWT".asInstanceOf[isJWT]
   
   @js.native
-  sealed trait isLatLong extends StObject
+  sealed trait isLatLong
+    extends StObject
+       with DefaultSchemaKeys
   inline def isLatLong: isLatLong = "isLatLong".asInstanceOf[isLatLong]
   
   @js.native
-  sealed trait isLength extends StObject
+  sealed trait isLength
+    extends StObject
+       with DefaultSchemaKeys
   inline def isLength: isLength = "isLength".asInstanceOf[isLength]
   
   @js.native
-  sealed trait isLicensePlate extends StObject
+  sealed trait isLicensePlate
+    extends StObject
+       with DefaultSchemaKeys
   inline def isLicensePlate: isLicensePlate = "isLicensePlate".asInstanceOf[isLicensePlate]
   
   @js.native
-  sealed trait isLocale extends StObject
+  sealed trait isLocale
+    extends StObject
+       with DefaultSchemaKeys
   inline def isLocale: isLocale = "isLocale".asInstanceOf[isLocale]
   
   @js.native
-  sealed trait isLowercase extends StObject
+  sealed trait isLowercase
+    extends StObject
+       with DefaultSchemaKeys
   inline def isLowercase: isLowercase = "isLowercase".asInstanceOf[isLowercase]
   
   @js.native
-  sealed trait isMACAddress extends StObject
+  sealed trait isLuhnNumber
+    extends StObject
+       with DefaultSchemaKeys
+  inline def isLuhnNumber: isLuhnNumber = "isLuhnNumber".asInstanceOf[isLuhnNumber]
+  
+  @js.native
+  sealed trait isMACAddress
+    extends StObject
+       with DefaultSchemaKeys
   inline def isMACAddress: isMACAddress = "isMACAddress".asInstanceOf[isMACAddress]
   
   @js.native
-  sealed trait isMD5 extends StObject
+  sealed trait isMD5
+    extends StObject
+       with DefaultSchemaKeys
   inline def isMD5: isMD5 = "isMD5".asInstanceOf[isMD5]
   
   @js.native
-  sealed trait isMagnetURI extends StObject
+  sealed trait isMagnetURI
+    extends StObject
+       with DefaultSchemaKeys
   inline def isMagnetURI: isMagnetURI = "isMagnetURI".asInstanceOf[isMagnetURI]
   
   @js.native
-  sealed trait isMimeType extends StObject
+  sealed trait isMimeType
+    extends StObject
+       with DefaultSchemaKeys
   inline def isMimeType: isMimeType = "isMimeType".asInstanceOf[isMimeType]
   
   @js.native
-  sealed trait isMobilePhone extends StObject
+  sealed trait isMobilePhone
+    extends StObject
+       with DefaultSchemaKeys
   inline def isMobilePhone: isMobilePhone = "isMobilePhone".asInstanceOf[isMobilePhone]
   
   @js.native
-  sealed trait isMongoId extends StObject
+  sealed trait isMongoId
+    extends StObject
+       with DefaultSchemaKeys
   inline def isMongoId: isMongoId = "isMongoId".asInstanceOf[isMongoId]
   
   @js.native
-  sealed trait isMultibyte extends StObject
+  sealed trait isMultibyte
+    extends StObject
+       with DefaultSchemaKeys
   inline def isMultibyte: isMultibyte = "isMultibyte".asInstanceOf[isMultibyte]
   
   @js.native
-  sealed trait isNumeric extends StObject
+  sealed trait isNumeric
+    extends StObject
+       with DefaultSchemaKeys
   inline def isNumeric: isNumeric = "isNumeric".asInstanceOf[isNumeric]
   
   @js.native
-  sealed trait isObject extends StObject
+  sealed trait isObject
+    extends StObject
+       with DefaultSchemaKeys
   inline def isObject: isObject = "isObject".asInstanceOf[isObject]
   
   @js.native
-  sealed trait isOctal extends StObject
+  sealed trait isOctal
+    extends StObject
+       with DefaultSchemaKeys
   inline def isOctal: isOctal = "isOctal".asInstanceOf[isOctal]
   
   @js.native
-  sealed trait isPassportNumber extends StObject
+  sealed trait isPassportNumber
+    extends StObject
+       with DefaultSchemaKeys
   inline def isPassportNumber: isPassportNumber = "isPassportNumber".asInstanceOf[isPassportNumber]
   
   @js.native
-  sealed trait isPort extends StObject
+  sealed trait isPort
+    extends StObject
+       with DefaultSchemaKeys
   inline def isPort: isPort = "isPort".asInstanceOf[isPort]
   
   @js.native
-  sealed trait isPostalCode extends StObject
+  sealed trait isPostalCode
+    extends StObject
+       with DefaultSchemaKeys
   inline def isPostalCode: isPostalCode = "isPostalCode".asInstanceOf[isPostalCode]
   
   @js.native
-  sealed trait isRFC3339 extends StObject
+  sealed trait isRFC3339
+    extends StObject
+       with DefaultSchemaKeys
   inline def isRFC3339: isRFC3339 = "isRFC3339".asInstanceOf[isRFC3339]
   
   @js.native
-  sealed trait isRgbColor extends StObject
+  sealed trait isRgbColor
+    extends StObject
+       with DefaultSchemaKeys
   inline def isRgbColor: isRgbColor = "isRgbColor".asInstanceOf[isRgbColor]
   
   @js.native
-  sealed trait isSemVer extends StObject
+  sealed trait isSemVer
+    extends StObject
+       with DefaultSchemaKeys
   inline def isSemVer: isSemVer = "isSemVer".asInstanceOf[isSemVer]
   
   @js.native
-  sealed trait isSlug extends StObject
+  sealed trait isSlug
+    extends StObject
+       with DefaultSchemaKeys
   inline def isSlug: isSlug = "isSlug".asInstanceOf[isSlug]
   
   @js.native
-  sealed trait isString extends StObject
+  sealed trait isString
+    extends StObject
+       with DefaultSchemaKeys
   inline def isString: isString = "isString".asInstanceOf[isString]
   
   @js.native
-  sealed trait isStrongPassword extends StObject
+  sealed trait isStrongPassword
+    extends StObject
+       with DefaultSchemaKeys
   inline def isStrongPassword: isStrongPassword = "isStrongPassword".asInstanceOf[isStrongPassword]
   
   @js.native
-  sealed trait isSurrogatePair extends StObject
+  sealed trait isSurrogatePair
+    extends StObject
+       with DefaultSchemaKeys
   inline def isSurrogatePair: isSurrogatePair = "isSurrogatePair".asInstanceOf[isSurrogatePair]
   
   @js.native
-  sealed trait isTaxID extends StObject
+  sealed trait isTaxID
+    extends StObject
+       with DefaultSchemaKeys
   inline def isTaxID: isTaxID = "isTaxID".asInstanceOf[isTaxID]
   
   @js.native
-  sealed trait isURL extends StObject
+  sealed trait isTime
+    extends StObject
+       with DefaultSchemaKeys
+  inline def isTime: isTime = "isTime".asInstanceOf[isTime]
+  
+  @js.native
+  sealed trait isURL
+    extends StObject
+       with DefaultSchemaKeys
   inline def isURL: isURL = "isURL".asInstanceOf[isURL]
   
   @js.native
-  sealed trait isUUID extends StObject
+  sealed trait isUUID
+    extends StObject
+       with DefaultSchemaKeys
   inline def isUUID: isUUID = "isUUID".asInstanceOf[isUUID]
   
   @js.native
-  sealed trait isUppercase extends StObject
+  sealed trait isUppercase
+    extends StObject
+       with DefaultSchemaKeys
   inline def isUppercase: isUppercase = "isUppercase".asInstanceOf[isUppercase]
   
   @js.native
-  sealed trait isVAT extends StObject
+  sealed trait isVAT
+    extends StObject
+       with DefaultSchemaKeys
   inline def isVAT: isVAT = "isVAT".asInstanceOf[isVAT]
   
   @js.native
-  sealed trait isVariableWidth extends StObject
+  sealed trait isVariableWidth
+    extends StObject
+       with DefaultSchemaKeys
   inline def isVariableWidth: isVariableWidth = "isVariableWidth".asInstanceOf[isVariableWidth]
   
   @js.native
-  sealed trait isWhitelisted extends StObject
+  sealed trait isWhitelisted
+    extends StObject
+       with DefaultSchemaKeys
   inline def isWhitelisted: isWhitelisted = "isWhitelisted".asInstanceOf[isWhitelisted]
   
   @js.native
@@ -1715,8 +2304,14 @@ object expressValidatorStrings {
   @js.native
   sealed trait `ja-JP`
     extends StObject
+       with AlphaLocale
+       with AlphanumericLocale
        with MobilePhoneLocale
   inline def `ja-JP`: `ja-JP` = "ja-JP".asInstanceOf[`ja-JP`]
+  
+  @js.native
+  sealed trait jcb extends StObject
+  inline def jcb: jcb = "jcb".asInstanceOf[jcb]
   
   @js.native
   sealed trait `ka-GE`
@@ -1737,6 +2332,14 @@ object expressValidatorStrings {
   inline def `kl-GL`: `kl-GL` = "kl-GL".asInstanceOf[`kl-GL`]
   
   @js.native
+  sealed trait `ko-KR`
+    extends StObject
+       with AlphaLocale
+       with AlphanumericLocale
+       with MobilePhoneLocale
+  inline def `ko-KR`: `ko-KR` = "ko-KR".asInstanceOf[`ko-KR`]
+  
+  @js.native
   sealed trait `ku-IQ`
     extends StObject
        with AlphaLocale
@@ -1744,10 +2347,22 @@ object expressValidatorStrings {
   inline def `ku-IQ`: `ku-IQ` = "ku-IQ".asInstanceOf[`ku-IQ`]
   
   @js.native
+  sealed trait `ky-KG`
+    extends StObject
+       with MobilePhoneLocale
+  inline def `ky-KG`: `ky-KG` = "ky-KG".asInstanceOf[`ky-KG`]
+  
+  @js.native
   sealed trait `lb-LU`
     extends StObject
        with TaxIDLocale
   inline def `lb-LU`: `lb-LU` = "lb-LU".asInstanceOf[`lb-LU`]
+  
+  @js.native
+  sealed trait least_errored
+    extends StObject
+       with OneOfErrorType
+  inline def least_errored: least_errored = "least_errored".asInstanceOf[least_errored]
   
   @js.native
   sealed trait `lt-LT`
@@ -1757,7 +2372,9 @@ object expressValidatorStrings {
   inline def `lt-LT`: `lt-LT` = "lt-LT".asInstanceOf[`lt-LT`]
   
   @js.native
-  sealed trait ltrim extends StObject
+  sealed trait ltrim
+    extends StObject
+       with DefaultSchemaKeys
   inline def ltrim: ltrim = "ltrim".asInstanceOf[ltrim]
   
   @js.native
@@ -1768,7 +2385,13 @@ object expressValidatorStrings {
   inline def `lv-LV`: `lv-LV` = "lv-LV".asInstanceOf[`lv-LV`]
   
   @js.native
-  sealed trait matches extends StObject
+  sealed trait mastercard extends StObject
+  inline def mastercard: mastercard = "mastercard".asInstanceOf[mastercard]
+  
+  @js.native
+  sealed trait matches
+    extends StObject
+       with DefaultSchemaKeys
   inline def matches: matches = "matches".asInstanceOf[matches]
   
   @js.native
@@ -1784,6 +2407,18 @@ object expressValidatorStrings {
   inline def md5: md5 = "md5".asInstanceOf[md5]
   
   @js.native
+  sealed trait `mg-MG`
+    extends StObject
+       with MobilePhoneLocale
+  inline def `mg-MG`: `mg-MG` = "mg-MG".asInstanceOf[`mg-MG`]
+  
+  @js.native
+  sealed trait `mn-MN`
+    extends StObject
+       with MobilePhoneLocale
+  inline def `mn-MN`: `mn-MN` = "mn-MN".asInstanceOf[`mn-MN`]
+  
+  @js.native
   sealed trait `ms-MY`
     extends StObject
        with MobilePhoneLocale
@@ -1794,6 +2429,12 @@ object expressValidatorStrings {
     extends StObject
        with TaxIDLocale
   inline def `mt-MT`: `mt-MT` = "mt-MT".asInstanceOf[`mt-MT`]
+  
+  @js.native
+  sealed trait `my-MM`
+    extends StObject
+       with MobilePhoneLocale
+  inline def `my-MM`: `my-MM` = "my-MM".asInstanceOf[`my-MM`]
   
   @js.native
   sealed trait `mz-MZ`
@@ -1814,6 +2455,12 @@ object expressValidatorStrings {
     extends StObject
        with MobilePhoneLocale
   inline def `ne-NP`: `ne-NP` = "ne-NP".asInstanceOf[`ne-NP`]
+  
+  @js.native
+  sealed trait `nl-AW`
+    extends StObject
+       with MobilePhoneLocale
+  inline def `nl-AW`: `nl-AW` = "nl-AW".asInstanceOf[`nl-AW`]
   
   @js.native
   sealed trait `nl-BE`
@@ -1841,7 +2488,9 @@ object expressValidatorStrings {
   inline def `nn-NO`: `nn-NO` = "nn-NO".asInstanceOf[`nn-NO`]
   
   @js.native
-  sealed trait normalizeEmail extends StObject
+  sealed trait normalizeEmail
+    extends StObject
+       with DefaultSchemaKeys
   inline def normalizeEmail: normalizeEmail = "normalizeEmail".asInstanceOf[normalizeEmail]
   
   @js.native
@@ -1849,8 +2498,22 @@ object expressValidatorStrings {
   inline def not: not = "not".asInstanceOf[not]
   
   @js.native
-  sealed trait notEmpty extends StObject
+  sealed trait notEmpty
+    extends StObject
+       with DefaultSchemaKeys
   inline def notEmpty: notEmpty = "notEmpty".asInstanceOf[notEmpty]
+  
+  @js.native
+  sealed trait `null`
+    extends StObject
+       with Optional
+  inline def `null`: `null` = "null".asInstanceOf[`null`]
+  
+  @js.native
+  sealed trait optional
+    extends StObject
+       with DefaultSchemaKeys
+  inline def optional: optional = "optional".asInstanceOf[optional]
   
   @js.native
   sealed trait params
@@ -1900,8 +2563,14 @@ object expressValidatorStrings {
   inline def query: query = "query".asInstanceOf[query]
   
   @js.native
-  sealed trait replace extends StObject
+  sealed trait replace
+    extends StObject
+       with DefaultSchemaKeys
   inline def replace: replace = "replace".asInstanceOf[replace]
+  
+  @js.native
+  sealed trait request extends StObject
+  inline def request: request = "request".asInstanceOf[request]
   
   @js.native
   sealed trait ripemd128
@@ -1916,6 +2585,12 @@ object expressValidatorStrings {
   inline def ripemd160: ripemd160 = "ripemd160".asInstanceOf[ripemd160]
   
   @js.native
+  sealed trait `ro-MD`
+    extends StObject
+       with MobilePhoneLocale
+  inline def `ro-MD`: `ro-MD` = "ro-MD".asInstanceOf[`ro-MD`]
+  
+  @js.native
   sealed trait `ro-RO`
     extends StObject
        with MobilePhoneLocale
@@ -1923,7 +2598,9 @@ object expressValidatorStrings {
   inline def `ro-RO`: `ro-RO` = "ro-RO".asInstanceOf[`ro-RO`]
   
   @js.native
-  sealed trait rtrim extends StObject
+  sealed trait rtrim
+    extends StObject
+       with DefaultSchemaKeys
   inline def rtrim: rtrim = "rtrim".asInstanceOf[rtrim]
   
   @js.native
@@ -1961,6 +2638,8 @@ object expressValidatorStrings {
   @js.native
   sealed trait `si-LK`
     extends StObject
+       with AlphaLocale
+       with AlphanumericLocale
        with MobilePhoneLocale
   inline def `si-LK`: `si-LK` = "si-LK".asInstanceOf[`si-LK`]
   
@@ -2005,7 +2684,9 @@ object expressValidatorStrings {
   inline def `sr-RS@latin`: `sr-RS@latin` = "sr-RS@latin".asInstanceOf[`sr-RS@latin`]
   
   @js.native
-  sealed trait stripLow extends StObject
+  sealed trait stripLow
+    extends StObject
+       with DefaultSchemaKeys
   inline def stripLow: stripLow = "stripLow".asInstanceOf[stripLow]
   
   @js.native
@@ -2013,6 +2694,7 @@ object expressValidatorStrings {
     extends StObject
        with AlphaLocale
        with AlphanumericLocale
+       with IsLicensePlateLocale
        with MobilePhoneLocale
        with TaxIDLocale
   inline def `sv-SE`: `sv-SE` = "sv-SE".asInstanceOf[`sv-SE`]
@@ -2056,31 +2738,45 @@ object expressValidatorStrings {
   inline def `tk-TM`: `tk-TM` = "tk-TM".asInstanceOf[`tk-TM`]
   
   @js.native
-  sealed trait toArray extends StObject
+  sealed trait toArray
+    extends StObject
+       with DefaultSchemaKeys
   inline def toArray: toArray = "toArray".asInstanceOf[toArray]
   
   @js.native
-  sealed trait toBoolean extends StObject
+  sealed trait toBoolean
+    extends StObject
+       with DefaultSchemaKeys
   inline def toBoolean: toBoolean = "toBoolean".asInstanceOf[toBoolean]
   
   @js.native
-  sealed trait toDate extends StObject
+  sealed trait toDate
+    extends StObject
+       with DefaultSchemaKeys
   inline def toDate: toDate = "toDate".asInstanceOf[toDate]
   
   @js.native
-  sealed trait toFloat extends StObject
+  sealed trait toFloat
+    extends StObject
+       with DefaultSchemaKeys
   inline def toFloat: toFloat = "toFloat".asInstanceOf[toFloat]
   
   @js.native
-  sealed trait toInt extends StObject
+  sealed trait toInt
+    extends StObject
+       with DefaultSchemaKeys
   inline def toInt: toInt = "toInt".asInstanceOf[toInt]
   
   @js.native
-  sealed trait toLowerCase extends StObject
+  sealed trait toLowerCase
+    extends StObject
+       with DefaultSchemaKeys
   inline def toLowerCase: toLowerCase = "toLowerCase".asInstanceOf[toLowerCase]
   
   @js.native
-  sealed trait toUpperCase extends StObject
+  sealed trait toUpperCase
+    extends StObject
+       with DefaultSchemaKeys
   inline def toUpperCase: toUpperCase = "toUpperCase".asInstanceOf[toUpperCase]
   
   @js.native
@@ -2092,7 +2788,9 @@ object expressValidatorStrings {
   inline def `tr-TR`: `tr-TR` = "tr-TR".asInstanceOf[`tr-TR`]
   
   @js.native
-  sealed trait trim extends StObject
+  sealed trait trim
+    extends StObject
+       with DefaultSchemaKeys
   inline def trim: trim = "trim".asInstanceOf[trim]
   
   @js.native
@@ -2104,8 +2802,24 @@ object expressValidatorStrings {
   inline def `uk-UA`: `uk-UA` = "uk-UA".asInstanceOf[`uk-UA`]
   
   @js.native
-  sealed trait unescape extends StObject
+  sealed trait undefined
+    extends StObject
+       with Optional
+  inline def undefined: undefined = "undefined".asInstanceOf[undefined]
+  
+  @js.native
+  sealed trait unescape
+    extends StObject
+       with DefaultSchemaKeys
   inline def unescape: unescape = "unescape".asInstanceOf[unescape]
+  
+  @js.native
+  sealed trait unionpay extends StObject
+  inline def unionpay: unionpay = "unionpay".asInstanceOf[unionpay]
+  
+  @js.native
+  sealed trait unknown_fields extends StObject
+  inline def unknown_fields: unknown_fields = "unknown_fields".asInstanceOf[unknown_fields]
   
   @js.native
   sealed trait `uz-Uz`
@@ -2122,12 +2836,22 @@ object expressValidatorStrings {
   inline def `vi-VN`: `vi-VN` = "vi-VN".asInstanceOf[`vi-VN`]
   
   @js.native
-  sealed trait whitelist extends StObject
+  sealed trait visa extends StObject
+  inline def visa: visa = "visa".asInstanceOf[visa]
+  
+  @js.native
+  sealed trait whitelist
+    extends StObject
+       with DefaultSchemaKeys
   inline def whitelist: whitelist = "whitelist".asInstanceOf[whitelist]
   
   @js.native
   sealed trait withMessage extends StObject
   inline def withMessage: withMessage = "withMessage".asInstanceOf[withMessage]
+  
+  @js.native
+  sealed trait withSeconds extends StObject
+  inline def withSeconds: withSeconds = "withSeconds".asInstanceOf[withSeconds]
   
   @js.native
   sealed trait `zh-CN`

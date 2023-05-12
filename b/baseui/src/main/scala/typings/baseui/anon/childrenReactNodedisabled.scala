@@ -30,6 +30,11 @@ trait childrenReactNodedisabled extends StObject {
   
   var overrides: js.UndefOr[PanelOverrides] = js.undefined
   
+  /**
+    * Allows getting a ref to the component instance.
+    * Once the component unmounts, React will set `ref.current` to `null` (or call the ref with `null` if you passed a callback ref).
+    * @see https://react.dev/learn/referencing-values-with-refs#refs-and-the-dom
+    */
   var ref: js.UndefOr[typings.react.mod.Ref[HTMLElement]] = js.undefined
   
   var renderAll: js.UndefOr[Boolean] = js.undefined

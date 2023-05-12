@@ -174,6 +174,8 @@ type ValidatorTypeList = js.Array[ValidatorType]
 
 type Version = java.lang.String
 
+type VersionLabel = java.lang.String
+
 type _Blob = Buffer | js.typedarray.Uint8Array | Blob | java.lang.String
 
 /* Rewritten from type alias, can be one of: 

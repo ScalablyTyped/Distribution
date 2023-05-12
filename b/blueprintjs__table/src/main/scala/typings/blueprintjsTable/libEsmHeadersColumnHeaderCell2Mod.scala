@@ -2,6 +2,7 @@ package typings.blueprintjsTable
 
 import typings.blueprintjsCore.mod.AbstractPureComponent2
 import typings.blueprintjsTable.anon.IsActive
+import typings.blueprintjsTable.anon.OmitPopover2PropsDefaultP
 import typings.blueprintjsTable.libEsmHeadersColumnHeaderCellMod.IColumnHeaderCellProps
 import typings.blueprintjsTable.libEsmHeadersColumnHeaderCellMod.IColumnHeaderCellState
 import typings.std.HTMLElement
@@ -69,6 +70,20 @@ object libEsmHeadersColumnHeaderCell2Mod {
       * @default false
       */
     var enableColumnInteractionBar: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Optional props to forward to the dropdown menu popover.
+      * This has no effect if `menuRenderer` is undefined.
+      */
+    var menuPopoverProps: js.UndefOr[OmitPopover2PropsDefaultP] = js.undefined
+    
+    /**
+      * If `true`, clicks on the header menu target element will cause the column's
+      * cells to be selected.
+      *
+      * @default true
+      */
+    var selectCellsOnMenuClick: js.UndefOr[Boolean] = js.undefined
   }
   object ColumnHeaderCell2Props {
     
@@ -83,6 +98,14 @@ object libEsmHeadersColumnHeaderCell2Mod {
       inline def setEnableColumnInteractionBar(value: Boolean): Self = StObject.set(x, "enableColumnInteractionBar", value.asInstanceOf[js.Any])
       
       inline def setEnableColumnInteractionBarUndefined: Self = StObject.set(x, "enableColumnInteractionBar", js.undefined)
+      
+      inline def setMenuPopoverProps(value: OmitPopover2PropsDefaultP): Self = StObject.set(x, "menuPopoverProps", value.asInstanceOf[js.Any])
+      
+      inline def setMenuPopoverPropsUndefined: Self = StObject.set(x, "menuPopoverProps", js.undefined)
+      
+      inline def setSelectCellsOnMenuClick(value: Boolean): Self = StObject.set(x, "selectCellsOnMenuClick", value.asInstanceOf[js.Any])
+      
+      inline def setSelectCellsOnMenuClickUndefined: Self = StObject.set(x, "selectCellsOnMenuClick", js.undefined)
     }
   }
 }

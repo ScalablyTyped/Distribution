@@ -19,10 +19,12 @@ object mod {
   @js.native
   val isSupported: Boolean = js.native
   
-  @JSImport("wordcloud", "miniumFontSize")
+  @JSImport("wordcloud", "minFontSize")
   @js.native
-  def miniumFontSize: Double = js.native
-  inline def miniumFontSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("miniumFontSize")(x.asInstanceOf[js.Any])
+  val minFontSize: Double = js.native
+  
+  /** Stop rendering. */
+  inline def stop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[Unit]
   
   trait Dimension extends StObject {
     
@@ -56,7 +58,7 @@ object mod {
   
   type EventCallback = js.Function3[/* item */ ListEntry, /* dimension */ Dimension, /* event */ MouseEvent, Unit]
   
-  type ListEntry = js.Tuple2[String, Double]
+  type ListEntry = Array[String | Double | Any]
   
   trait Options extends StObject {
     
@@ -143,7 +145,7 @@ object mod {
       * List of words/text to paint on the canvas in a 2-d array, in the form of [word, size],
       * e.g. [['foo', 12] , ['bar', 6]].
       */
-    var list: js.UndefOr[js.Array[Any | ListEntry]] = js.undefined
+    var list: js.UndefOr[js.Array[ListEntry]] = js.undefined
     
     /** color of the mask squares. */
     var maskColor: js.UndefOr[String] = js.undefined
@@ -169,6 +171,9 @@ object mod {
     /** Probability for the word to rotate. Set the number to 1 to always rotate. */
     var rotateRatio: js.UndefOr[Double] = js.undefined
     
+    /** Force the use of a defined number of angles. Set the value equal to 2 in a -90°/90° range means just -90, 0 or 90 will be used. */
+    var rotationSteps: js.UndefOr[Double] = js.undefined
+    
     /**
       * The shape of the "cloud" to draw. Can be any polar equation represented as a callback function, or a
       * keyword present. Available presents are circle (default), cardioid (apple or heart shape curve, the most
@@ -176,6 +181,9 @@ object mod {
       * pentagon, and star.
       */
     var shape: js.UndefOr[String | (js.Function1[/* theta */ Double, Double])] = js.undefined
+    
+    /** set to `true` to shrink the word so it will fit into canvas. Best if `drawOutOfBound` is set to false. This word will now have lower weight. */
+    var shrinkToFit: js.UndefOr[Boolean] = js.undefined
     
     /** Shuffle the points to draw so the result will be different each time for the same list and settings. */
     var shuffle: js.UndefOr[Boolean] = js.undefined
@@ -279,11 +287,11 @@ object mod {
       
       inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
       
-      inline def setList(value: js.Array[Any | ListEntry]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+      inline def setList(value: js.Array[ListEntry]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
       inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
       
-      inline def setListVarargs(value: (Any | ListEntry)*): Self = StObject.set(x, "list", js.Array(value*))
+      inline def setListVarargs(value: ListEntry*): Self = StObject.set(x, "list", js.Array(value*))
       
       inline def setMaskColor(value: String): Self = StObject.set(x, "maskColor", value.asInstanceOf[js.Any])
       
@@ -313,11 +321,19 @@ object mod {
       
       inline def setRotateRatioUndefined: Self = StObject.set(x, "rotateRatio", js.undefined)
       
+      inline def setRotationSteps(value: Double): Self = StObject.set(x, "rotationSteps", value.asInstanceOf[js.Any])
+      
+      inline def setRotationStepsUndefined: Self = StObject.set(x, "rotationSteps", js.undefined)
+      
       inline def setShape(value: String | (js.Function1[/* theta */ Double, Double])): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
       inline def setShapeFunction1(value: /* theta */ Double => Double): Self = StObject.set(x, "shape", js.Any.fromFunction1(value))
       
       inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+      
+      inline def setShrinkToFit(value: Boolean): Self = StObject.set(x, "shrinkToFit", value.asInstanceOf[js.Any])
+      
+      inline def setShrinkToFitUndefined: Self = StObject.set(x, "shrinkToFit", js.undefined)
       
       inline def setShuffle(value: Boolean): Self = StObject.set(x, "shuffle", value.asInstanceOf[js.Any])
       

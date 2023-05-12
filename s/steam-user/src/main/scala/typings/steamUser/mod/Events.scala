@@ -2,6 +2,7 @@ package typings.steamUser.mod
 
 import typings.node.bufferMod.global.Buffer
 import typings.std.Record
+import typings.steamUser.anon.AppID
 import typings.steamUser.anon.ErroreresultEResult
 import typings.steamUser.anon.Flags
 import typings.steamUser.anon.Members
@@ -34,6 +35,10 @@ trait Events extends StObject {
   
   var appUpdate: js.Tuple2[/* appid */ Double, /* data */ ProductInfo]
   
+  var authTicketStatus: js.Array[AppID]
+  
+  var authTicketValidation: js.Array[AppID]
+  
   var changelist: js.Tuple3[
     /* changenumber */ Double, 
     /* apps */ js.Array[Double], 
@@ -41,6 +46,8 @@ trait Events extends StObject {
   ]
   
   var communityMessages: js.Array[/* count */ Double]
+  
+  var debug: js.Array[/* message */ String]
   
   var disconnected: js.Tuple2[/* eresult */ EResult, /* msg */ js.UndefOr[String]]
   
@@ -157,12 +164,15 @@ object Events {
     appLaunched: js.Array[/* appid */ Double],
     appQuit: js.Array[/* appid */ Double],
     appUpdate: js.Tuple2[/* appid */ Double, /* data */ ProductInfo],
+    authTicketStatus: js.Array[AppID],
+    authTicketValidation: js.Array[AppID],
     changelist: js.Tuple3[
       /* changenumber */ Double, 
       /* apps */ js.Array[Double], 
       /* packages */ js.Array[Double]
     ],
     communityMessages: js.Array[/* count */ Double],
+    debug: js.Array[/* message */ String],
     disconnected: js.Tuple2[/* eresult */ EResult, /* msg */ js.UndefOr[String]],
     emailInfo: js.Tuple2[/* adress */ String, /* validated */ Boolean],
     error: js.Array[/* err */ ErroreresultEResult],
@@ -219,7 +229,7 @@ object Events {
     wallet: js.Tuple3[/* hasWallet */ Boolean, /* currency */ ECurrencyCode, /* balance */ Double],
     webSession: js.Tuple2[/* sessionID */ String, /* cookies */ js.Array[String]]
   ): Events = {
-    val __obj = js.Dynamic.literal(accountInfo = accountInfo.asInstanceOf[js.Any], accountLimitations = accountLimitations.asInstanceOf[js.Any], appLaunched = appLaunched.asInstanceOf[js.Any], appQuit = appQuit.asInstanceOf[js.Any], appUpdate = appUpdate.asInstanceOf[js.Any], changelist = changelist.asInstanceOf[js.Any], communityMessages = communityMessages.asInstanceOf[js.Any], disconnected = disconnected.asInstanceOf[js.Any], emailInfo = emailInfo.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], friendPersonasLoad = friendPersonasLoad.asInstanceOf[js.Any], friendRelationship = friendRelationship.asInstanceOf[js.Any], friendsGroupList = friendsGroupList.asInstanceOf[js.Any], friendsList = friendsList.asInstanceOf[js.Any], gifts = gifts.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], groupAnnouncement = groupAnnouncement.asInstanceOf[js.Any], groupEvent = groupEvent.asInstanceOf[js.Any], groupList = groupList.asInstanceOf[js.Any], groupRelationship = groupRelationship.asInstanceOf[js.Any], licenses = licenses.asInstanceOf[js.Any], lobbyInvite = lobbyInvite.asInstanceOf[js.Any], loggedOn = loggedOn.asInstanceOf[js.Any], loginKey = loginKey.asInstanceOf[js.Any], marketingMessages = marketingMessages.asInstanceOf[js.Any], newComments = newComments.asInstanceOf[js.Any], newItems = newItems.asInstanceOf[js.Any], nickname = nickname.asInstanceOf[js.Any], nicknameList = nicknameList.asInstanceOf[js.Any], offlineMessages = offlineMessages.asInstanceOf[js.Any], ownershipCached = ownershipCached.asInstanceOf[js.Any], packageUpdate = packageUpdate.asInstanceOf[js.Any], playingState = playingState.asInstanceOf[js.Any], receivedFromGC = receivedFromGC.asInstanceOf[js.Any], sentry = sentry.asInstanceOf[js.Any], steamGuard = steamGuard.asInstanceOf[js.Any], tradeOffers = tradeOffers.asInstanceOf[js.Any], tradeRequest = tradeRequest.asInstanceOf[js.Any], tradeResponse = tradeResponse.asInstanceOf[js.Any], tradeStarted = tradeStarted.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], vacBans = vacBans.asInstanceOf[js.Any], vanityURL = vanityURL.asInstanceOf[js.Any], wallet = wallet.asInstanceOf[js.Any], webSession = webSession.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(accountInfo = accountInfo.asInstanceOf[js.Any], accountLimitations = accountLimitations.asInstanceOf[js.Any], appLaunched = appLaunched.asInstanceOf[js.Any], appQuit = appQuit.asInstanceOf[js.Any], appUpdate = appUpdate.asInstanceOf[js.Any], authTicketStatus = authTicketStatus.asInstanceOf[js.Any], authTicketValidation = authTicketValidation.asInstanceOf[js.Any], changelist = changelist.asInstanceOf[js.Any], communityMessages = communityMessages.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], disconnected = disconnected.asInstanceOf[js.Any], emailInfo = emailInfo.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], friendPersonasLoad = friendPersonasLoad.asInstanceOf[js.Any], friendRelationship = friendRelationship.asInstanceOf[js.Any], friendsGroupList = friendsGroupList.asInstanceOf[js.Any], friendsList = friendsList.asInstanceOf[js.Any], gifts = gifts.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], groupAnnouncement = groupAnnouncement.asInstanceOf[js.Any], groupEvent = groupEvent.asInstanceOf[js.Any], groupList = groupList.asInstanceOf[js.Any], groupRelationship = groupRelationship.asInstanceOf[js.Any], licenses = licenses.asInstanceOf[js.Any], lobbyInvite = lobbyInvite.asInstanceOf[js.Any], loggedOn = loggedOn.asInstanceOf[js.Any], loginKey = loginKey.asInstanceOf[js.Any], marketingMessages = marketingMessages.asInstanceOf[js.Any], newComments = newComments.asInstanceOf[js.Any], newItems = newItems.asInstanceOf[js.Any], nickname = nickname.asInstanceOf[js.Any], nicknameList = nicknameList.asInstanceOf[js.Any], offlineMessages = offlineMessages.asInstanceOf[js.Any], ownershipCached = ownershipCached.asInstanceOf[js.Any], packageUpdate = packageUpdate.asInstanceOf[js.Any], playingState = playingState.asInstanceOf[js.Any], receivedFromGC = receivedFromGC.asInstanceOf[js.Any], sentry = sentry.asInstanceOf[js.Any], steamGuard = steamGuard.asInstanceOf[js.Any], tradeOffers = tradeOffers.asInstanceOf[js.Any], tradeRequest = tradeRequest.asInstanceOf[js.Any], tradeResponse = tradeResponse.asInstanceOf[js.Any], tradeStarted = tradeStarted.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], vacBans = vacBans.asInstanceOf[js.Any], vanityURL = vanityURL.asInstanceOf[js.Any], wallet = wallet.asInstanceOf[js.Any], webSession = webSession.asInstanceOf[js.Any])
     __obj.asInstanceOf[Events]
   }
   
@@ -256,6 +266,14 @@ object Events {
     
     inline def setAppUpdate(value: js.Tuple2[/* appid */ Double, /* data */ ProductInfo]): Self = StObject.set(x, "appUpdate", value.asInstanceOf[js.Any])
     
+    inline def setAuthTicketStatus(value: js.Array[AppID]): Self = StObject.set(x, "authTicketStatus", value.asInstanceOf[js.Any])
+    
+    inline def setAuthTicketStatusVarargs(value: AppID*): Self = StObject.set(x, "authTicketStatus", js.Array(value*))
+    
+    inline def setAuthTicketValidation(value: js.Array[AppID]): Self = StObject.set(x, "authTicketValidation", value.asInstanceOf[js.Any])
+    
+    inline def setAuthTicketValidationVarargs(value: AppID*): Self = StObject.set(x, "authTicketValidation", js.Array(value*))
+    
     inline def setChangelist(
       value: js.Tuple3[
           /* changenumber */ Double, 
@@ -267,6 +285,10 @@ object Events {
     inline def setCommunityMessages(value: js.Array[/* count */ Double]): Self = StObject.set(x, "communityMessages", value.asInstanceOf[js.Any])
     
     inline def setCommunityMessagesVarargs(value: (/* count */ Double)*): Self = StObject.set(x, "communityMessages", js.Array(value*))
+    
+    inline def setDebug(value: js.Array[/* message */ String]): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    
+    inline def setDebugVarargs(value: (/* message */ String)*): Self = StObject.set(x, "debug", js.Array(value*))
     
     inline def setDisconnected(value: js.Tuple2[/* eresult */ EResult, /* msg */ js.UndefOr[String]]): Self = StObject.set(x, "disconnected", value.asInstanceOf[js.Any])
     

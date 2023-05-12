@@ -36,7 +36,11 @@ object examplesJsmControlsTrackballControlsMod {
     
     var maxDistance: Double = js.native
     
+    var maxZoom: Double = js.native
+    
     var minDistance: Double = js.native
+    
+    var minZoom: Double = js.native
     
     var mouseButtons: LEFT_ = js.native
     

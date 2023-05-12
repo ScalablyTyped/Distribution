@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "parse5-parser-stream" : "7.0.0"
+      "parse5-parser-stream" : "7.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "parse5-parser-stream" : "7.0.0"
+      "parse5-parser-stream" : "7.1.2"
     }
   ],
   "compile-devDependencies" : [

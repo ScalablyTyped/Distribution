@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@chainsafe/persistent-merkle-tree" : "0.6.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@chainsafe/persistent-merkle-tree" : "0.6.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

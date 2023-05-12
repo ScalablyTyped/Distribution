@@ -498,11 +498,11 @@ object mod {
     routine: Routine[
       TTriggerActionCreator, 
       TRequestActionCreator, 
-      // tslint:disable-line: no-unnecessary-generics
+      // eslint-disable-line no-unnecessary-generics
   TSuccessActionCreator, 
-      // tslint:disable-line: no-unnecessary-generics
+      // eslint-disable-line no-unnecessary-generics
   TFailureActionCreator, 
-      // tslint:disable-line: no-unnecessary-generics
+      // eslint-disable-line no-unnecessary-generics
   TFulfillActionCreator
     ]
   ): PromiseCreator[ResolvePayloadByActionCreator[TTriggerActionCreator]] = ^.asInstanceOf[js.Dynamic].applyDynamic("promisifyRoutine")(routine.asInstanceOf[js.Any]).asInstanceOf[PromiseCreator[ResolvePayloadByActionCreator[TTriggerActionCreator]]]

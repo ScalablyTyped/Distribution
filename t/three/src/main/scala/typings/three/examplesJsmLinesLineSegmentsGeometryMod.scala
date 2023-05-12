@@ -1,6 +1,7 @@
 package typings.three
 
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.EdgesGeometry
 import typings.three.srcThreeMod.InstancedBufferGeometry
@@ -21,13 +22,13 @@ object examplesJsmLinesLineSegmentsGeometryMod {
     
     def applyMatrix4(matrix: Matrix4): this.type = js.native
     
-    def fromEdgesGeometry(geometry: EdgesGeometry[BufferGeometry]): this.type = js.native
+    def fromEdgesGeometry(geometry: EdgesGeometry[BufferGeometry[NormalBufferAttributes]]): this.type = js.native
     
-    def fromLineSegments(lineSegments: LineSegments[BufferGeometry, Material | js.Array[Material]]): this.type = js.native
+    def fromLineSegments(lineSegments: LineSegments[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]): this.type = js.native
     
-    def fromMesh(mesh: Mesh[BufferGeometry, Material | js.Array[Material]]): this.type = js.native
+    def fromMesh(mesh: Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]): this.type = js.native
     
-    def fromWireframeGeometry(geometry: WireframeGeometry[BufferGeometry]): this.type = js.native
+    def fromWireframeGeometry(geometry: WireframeGeometry[BufferGeometry[NormalBufferAttributes]]): this.type = js.native
     
     val isLineSegmentsGeometry: `true` = js.native
     

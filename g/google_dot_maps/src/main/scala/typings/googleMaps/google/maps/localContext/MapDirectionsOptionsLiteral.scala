@@ -6,14 +6,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-  * Object literals are accepted in place of {@link
-  * google.maps.localContext.MapDirectionsOptions} objects, as a convenience,
-  * in many places. These are converted to {@link
-  * google.maps.localContext.MapDirectionsOptions} objects when the Maps API
-  * encounters them.
-  */
 trait MapDirectionsOptionsLiteral extends StObject {
   
   /**

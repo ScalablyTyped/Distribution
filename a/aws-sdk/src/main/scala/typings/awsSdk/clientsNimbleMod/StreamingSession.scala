@@ -7,12 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StreamingSession extends StObject {
   
   /**
-    * The ARN of the resource.
+    * The Amazon Resource Name (ARN) that is assigned to a studio resource and uniquely identifies it. ARNs are unique across all Regions.
     */
   var arn: js.UndefOr[String] = js.undefined
   
   /**
-    * The Unix epoch timestamp in seconds for when the resource was created.
+    * Indicates if a streaming session created from this launch profile should be terminated automatically or retained without termination after being in a STOPPED state.   When ACTIVATED, the streaming session is scheduled for termination after being in the STOPPED state for the time specified in maxStoppedSessionLengthInMinutes.   When DEACTIVATED, the streaming session can remain in the STOPPED state indefinitely.   This parameter is only allowed when sessionPersistenceMode is ACTIVATED. When allowed, the default value for this parameter is DEACTIVATED.
+    */
+  var automaticTerminationMode: js.UndefOr[AutomaticTerminationMode] = js.undefined
+  
+  /**
+    * Shows the current backup setting of the session.
+    */
+  var backupMode: js.UndefOr[SessionBackupMode] = js.undefined
+  
+  /**
+    * The ISO timestamp in seconds for when the resource was created.
     */
   var createdAt: js.UndefOr[js.Date] = js.undefined
   
@@ -32,6 +42,11 @@ trait StreamingSession extends StObject {
   var launchProfileId: js.UndefOr[String] = js.undefined
   
   /**
+    * The maximum number of backups of a streaming session that you can have. When the maximum number of backups is reached, the oldest backup is deleted.
+    */
+  var maxBackupsToRetain: js.UndefOr[StreamConfigurationMaxBackupsToRetain] = js.undefined
+  
+  /**
     * The user ID of the user that owns the streaming session. The user that owns the session will be logging into the session and interacting with the virtual workstation.
     */
   var ownedBy: js.UndefOr[String] = js.undefined
@@ -42,6 +57,11 @@ trait StreamingSession extends StObject {
   var sessionId: js.UndefOr[StreamingSessionId] = js.undefined
   
   /**
+    * Determine if a streaming session created from this launch profile can configure persistent storage. This means that volumeConfiguration and automaticTerminationMode are configured.
+    */
+  var sessionPersistenceMode: js.UndefOr[SessionPersistenceMode] = js.undefined
+  
+  /**
     * The time the session entered START_IN_PROGRESS state.
     */
   var startedAt: js.UndefOr[js.Date] = js.undefined
@@ -50,6 +70,11 @@ trait StreamingSession extends StObject {
     * The user ID of the user that started the streaming session.
     */
   var startedBy: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The backup ID used to restore a streaming session.
+    */
+  var startedFromBackupId: js.UndefOr[String] = js.undefined
   
   /**
     * The current state.
@@ -87,7 +112,7 @@ trait StreamingSession extends StObject {
   var streamingImageId: js.UndefOr[StreamingImageId] = js.undefined
   
   /**
-    * A collection of labels, in the form of key:value pairs, that apply to this resource.
+    * A collection of labels, in the form of key-value pairs, that apply to this resource.
     */
   var tags: js.UndefOr[Tags] = js.undefined
   
@@ -97,7 +122,7 @@ trait StreamingSession extends StObject {
   var terminateAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The Unix epoch timestamp in seconds for when the resource was updated.
+    * The ISO timestamp in seconds for when the resource was updated.
     */
   var updatedAt: js.UndefOr[js.Date] = js.undefined
   
@@ -105,6 +130,16 @@ trait StreamingSession extends StObject {
     * The user ID of the user that most recently updated the resource.
     */
   var updatedBy: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Custom volume configuration for the root volumes that are attached to streaming sessions. This parameter is only allowed when sessionPersistenceMode is ACTIVATED.
+    */
+  var volumeConfiguration: js.UndefOr[VolumeConfiguration] = js.undefined
+  
+  /**
+    * Determine if an EBS volume created from this streaming session will be backed up.
+    */
+  var volumeRetentionMode: js.UndefOr[VolumeRetentionMode] = js.undefined
 }
 object StreamingSession {
   
@@ -119,6 +154,14 @@ object StreamingSession {
     inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    
+    inline def setAutomaticTerminationMode(value: AutomaticTerminationMode): Self = StObject.set(x, "automaticTerminationMode", value.asInstanceOf[js.Any])
+    
+    inline def setAutomaticTerminationModeUndefined: Self = StObject.set(x, "automaticTerminationMode", js.undefined)
+    
+    inline def setBackupMode(value: SessionBackupMode): Self = StObject.set(x, "backupMode", value.asInstanceOf[js.Any])
+    
+    inline def setBackupModeUndefined: Self = StObject.set(x, "backupMode", js.undefined)
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
@@ -136,6 +179,10 @@ object StreamingSession {
     
     inline def setLaunchProfileIdUndefined: Self = StObject.set(x, "launchProfileId", js.undefined)
     
+    inline def setMaxBackupsToRetain(value: StreamConfigurationMaxBackupsToRetain): Self = StObject.set(x, "maxBackupsToRetain", value.asInstanceOf[js.Any])
+    
+    inline def setMaxBackupsToRetainUndefined: Self = StObject.set(x, "maxBackupsToRetain", js.undefined)
+    
     inline def setOwnedBy(value: String): Self = StObject.set(x, "ownedBy", value.asInstanceOf[js.Any])
     
     inline def setOwnedByUndefined: Self = StObject.set(x, "ownedBy", js.undefined)
@@ -144,6 +191,10 @@ object StreamingSession {
     
     inline def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
     
+    inline def setSessionPersistenceMode(value: SessionPersistenceMode): Self = StObject.set(x, "sessionPersistenceMode", value.asInstanceOf[js.Any])
+    
+    inline def setSessionPersistenceModeUndefined: Self = StObject.set(x, "sessionPersistenceMode", js.undefined)
+    
     inline def setStartedAt(value: js.Date): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
     
     inline def setStartedAtUndefined: Self = StObject.set(x, "startedAt", js.undefined)
@@ -151,6 +202,10 @@ object StreamingSession {
     inline def setStartedBy(value: String): Self = StObject.set(x, "startedBy", value.asInstanceOf[js.Any])
     
     inline def setStartedByUndefined: Self = StObject.set(x, "startedBy", js.undefined)
+    
+    inline def setStartedFromBackupId(value: String): Self = StObject.set(x, "startedFromBackupId", value.asInstanceOf[js.Any])
+    
+    inline def setStartedFromBackupIdUndefined: Self = StObject.set(x, "startedFromBackupId", js.undefined)
     
     inline def setState(value: StreamingSessionState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
@@ -195,5 +250,13 @@ object StreamingSession {
     inline def setUpdatedBy(value: String): Self = StObject.set(x, "updatedBy", value.asInstanceOf[js.Any])
     
     inline def setUpdatedByUndefined: Self = StObject.set(x, "updatedBy", js.undefined)
+    
+    inline def setVolumeConfiguration(value: VolumeConfiguration): Self = StObject.set(x, "volumeConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setVolumeConfigurationUndefined: Self = StObject.set(x, "volumeConfiguration", js.undefined)
+    
+    inline def setVolumeRetentionMode(value: VolumeRetentionMode): Self = StObject.set(x, "volumeRetentionMode", value.asInstanceOf[js.Any])
+    
+    inline def setVolumeRetentionModeUndefined: Self = StObject.set(x, "volumeRetentionMode", js.undefined)
   }
 }

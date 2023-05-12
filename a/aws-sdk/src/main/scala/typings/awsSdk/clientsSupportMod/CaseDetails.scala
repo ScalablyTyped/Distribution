@@ -27,7 +27,7 @@ trait CaseDetails extends StObject {
   var displayId: js.UndefOr[DisplayId] = js.undefined
   
   /**
-    * The ISO 639-1 code for the language in which Amazon Web Services provides support. Amazon Web Services Support currently supports English ("en") and Japanese ("ja"). Language parameters must be passed explicitly for operations that take them.
+    * The language in which Amazon Web Services Support handles the case. Amazon Web Services Support currently supports Chinese (“zh”), English ("en"), Japanese ("ja") and Korean (“ko”). You must specify the ISO 639-1 code for the language parameter if you want support in that language.
     */
   var language: js.UndefOr[Language] = js.undefined
   

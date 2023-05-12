@@ -11,6 +11,9 @@ trait AbstractScene extends StObject {
   /* protected */ var _environmentTexture: Nullable[BaseTexture] = js.native
   
   /** @internal (Backing field) */
+  var _fluidRenderer: Nullable[FluidRenderer] = js.native
+  
+  /** @internal (Backing field) */
   var _prePassRenderer: Nullable[PrePassRenderer] = js.native
   
   /** @internal (Backing field) */
@@ -42,7 +45,7 @@ trait AbstractScene extends StObject {
   
   /**
     * All of the animation groups added to this scene
-    * @see https://doc.babylonjs.com/divingDeeper/animation/groupAnimations
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/animation/groupAnimations
     */
   var animationGroups: js.Array[AnimationGroup] = js.native
   
@@ -52,9 +55,14 @@ trait AbstractScene extends StObject {
   var animations: js.Array[Animation] = js.native
   
   /** All of the cameras added to this scene
-    * @see https://doc.babylonjs.com/babylon101/cameras
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/cameras
     */
   var cameras: js.Array[Camera] = js.native
+  
+  /**
+    * Disables the fluid renderer associated with the scene
+    */
+  def disableFluidRenderer(): Unit = js.native
   
   /**
     * Disables the prepass associated with the scene
@@ -68,10 +76,16 @@ trait AbstractScene extends StObject {
   
   /**
     * The list of effect layers (highlights/glow) added to the scene
-    * @see https://doc.babylonjs.com/how_to/highlight_layer
-    * @see https://doc.babylonjs.com/how_to/glow_layer
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/highlightLayer
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/glowLayer
     */
   var effectLayers: js.Array[EffectLayer] = js.native
+  
+  /**
+    * Enables the fluid renderer and associates it with the scene
+    * @returns the FluidRenderer
+    */
+  def enableFluidRenderer(): Nullable[FluidRenderer] = js.native
   
   /**
     * Enables the prepass and associates it with the scene
@@ -94,14 +108,19 @@ trait AbstractScene extends StObject {
   def environmentTexture_=(value: Nullable[BaseTexture]): Unit = js.native
   
   /**
+    * Gets or Sets the fluid renderer associated to the scene.
+    */
+  var fluidRenderer: Nullable[FluidRenderer] = js.native
+  
+  /**
     * The list of geometries used in the scene.
     */
   var geometries: js.Array[Geometry] = js.native
   
   /**
-    * Return a the first highlight layer of the scene with a given name.
-    * @param name The name of the highlight layer to look for.
-    * @returns The highlight layer if found otherwise null.
+    * Return the first glow layer of the scene with a given name.
+    * @param name The name of the glow layer to look for.
+    * @returns The glow layer if found otherwise null.
     */
   def getGlowLayerByName(name: String): Nullable[GlowLayer] = js.native
   
@@ -146,13 +165,13 @@ trait AbstractScene extends StObject {
   
   /**
     * The list of lens flare system added to the scene
-    * @see https://doc.babylonjs.com/how_to/how_to_use_lens_flares
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/environment/lenseFlare
     */
   var lensFlareSystems: js.Array[LensFlareSystem] = js.native
   
   /**
     * All of the lights added to this scene
-    * @see https://doc.babylonjs.com/babylon101/lights
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/lights/lights_introduction
     */
   var lights: js.Array[Light] = js.native
   
@@ -161,7 +180,7 @@ trait AbstractScene extends StObject {
     * In the context of a Scene, it is not supposed to be modified manually.
     * Any addition or removal should be done using the addMaterial and removeMaterial Scene methods.
     * Note also that the order of the Material within the array is not significant and might change.
-    * @see https://doc.babylonjs.com/babylon101/materials
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/materials_introduction
     */
   var materials: js.Array[Material] = js.native
   
@@ -172,19 +191,19 @@ trait AbstractScene extends StObject {
   
   /**
     * The list of morph target managers added to the scene
-    * @see https://doc.babylonjs.com/how_to/how_to_dynamically_morph_a_mesh
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/dynamicMeshMorph
     */
   var morphTargetManagers: js.Array[MorphTargetManager] = js.native
   
   /**
     * All of the multi-materials added to this scene
-    * @see https://doc.babylonjs.com/how_to/multi_materials
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/multiMaterials
     */
   var multiMaterials: js.Array[MultiMaterial] = js.native
   
   /**
     * All of the particle systems added to this scene
-    * @see https://doc.babylonjs.com/babylon101/particles
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/particles/particle_system/particle_system_intro
     */
   var particleSystems: js.Array[IParticleSystem] = js.native
   
@@ -200,13 +219,13 @@ trait AbstractScene extends StObject {
   
   /**
     * The list of procedural textures added to the scene
-    * @see https://doc.babylonjs.com/how_to/how_to_use_procedural_textures
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/proceduralTextures
     */
   var proceduralTextures: js.Array[ProceduralTexture] = js.native
   
   /**
     * The list of reflection probes added to the scene
-    * @see https://doc.babylonjs.com/how_to/how_to_use_reflection_probes
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/environment/reflectionProbes
     */
   var reflectionProbes: js.Array[ReflectionProbe] = js.native
   
@@ -238,7 +257,7 @@ trait AbstractScene extends StObject {
   
   /**
     * The list of skeletons added to the scene
-    * @see https://doc.babylonjs.com/how_to/how_to_use_bones_and_skeletons
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/bonesSkeletons
     */
   var skeletons: js.Array[Skeleton] = js.native
   
@@ -262,7 +281,7 @@ trait AbstractScene extends StObject {
     * In the context of a Scene, it is not supposed to be modified manually.
     * Any addition or removal should be done using the addTransformNode and removeTransformNode Scene methods.
     * Note also that the order of the TransformNode within the array is not significant and might change.
-    * @see https://doc.babylonjs.com/how_to/transformnode
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/transforms/parent_pivot/transform_node
     */
   var transformNodes: js.Array[TransformNode] = js.native
 }

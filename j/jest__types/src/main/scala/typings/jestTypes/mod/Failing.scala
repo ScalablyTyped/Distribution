@@ -15,13 +15,13 @@ trait Failing[T /* <: TestFn */] extends StObject {
   
   def each[T](strings: TemplateStringsArray, expressions: (Any | T)*): js.Function3[
     /* name */ String | NameLike, 
-    /* fn */ js.Function1[/* arg */ Record[String, T], ReturnType[T]], 
+    /* fn */ js.Function2[/* arg */ Record[String, T], /* done */ DoneFn2, ReturnType[T]], 
     /* timeout */ js.UndefOr[Double], 
     Unit
   ] = js.native
   def each[T /* <: Record[String, Any] */](table: js.Array[T]): js.Function3[
     /* name */ String | NameLike, 
-    /* fn */ js.Function1[/* arg */ T, ReturnType[T]], 
+    /* fn */ js.Function2[/* arg */ T, /* done */ DoneFn2, ReturnType[T]], 
     /* timeout */ js.UndefOr[Double], 
     Unit
   ] = js.native

@@ -13,13 +13,12 @@ import typings.phaser.Phaser.Display.Masks.BitmapMask
 import typings.phaser.Phaser.Display.Masks.GeometryMask
 import typings.phaser.Phaser.Events.EventEmitter
 import typings.phaser.Phaser.GameObjects.Components.Alpha
-import typings.phaser.Phaser.GameObjects.Components.Flip
-import typings.phaser.Phaser.GameObjects.Components.Pipeline
-import typings.phaser.Phaser.GameObjects.Components.Tint
+import typings.phaser.Phaser.GameObjects.Components.PostPipeline
 import typings.phaser.Phaser.GameObjects.Components.Visible
 import typings.phaser.Phaser.GameObjects.DisplayList
 import typings.phaser.Phaser.GameObjects.GameObject
 import typings.phaser.Phaser.GameObjects.Group
+import typings.phaser.Phaser.GameObjects.Layer
 import typings.phaser.Phaser.Geom.Rectangle
 import typings.phaser.Phaser.Input.Keyboard.Key
 import typings.phaser.Phaser.Input.Pointer
@@ -76,7 +75,7 @@ object Cameras {
       /**
         * The Camera that this Control will update.
         */
-      var camera: Camera
+      var camera: Camera | Null
       
       /**
         * Destroys this Key Control.
@@ -86,12 +85,12 @@ object Cameras {
       /**
         * The Key to be pressed that will move the Camera down.
         */
-      var down: Key
+      var down: Key | Null
       
       /**
         * The Key to be pressed that will move the Camera left.
         */
-      var left: Key
+      var left: Key | Null
       
       /**
         * The largest zoom value the camera will reach when zoomed in.
@@ -106,7 +105,7 @@ object Cameras {
       /**
         * The Key to be pressed that will move the Camera right.
         */
-      var right: Key
+      var right: Key | Null
       
       /**
         * Binds this Key Control to a camera.
@@ -137,7 +136,7 @@ object Cameras {
       /**
         * The Key to be pressed that will move the Camera up.
         */
-      var up: Key
+      var up: Key | Null
       
       /**
         * Applies the results of pressing the control keys to the Camera.
@@ -150,12 +149,12 @@ object Cameras {
       /**
         * The Key to be pressed that will zoom the Camera in.
         */
-      var zoomIn: Key
+      var zoomIn: Key | Null
       
       /**
         * The Key to be pressed that will zoom the Camera out.
         */
-      var zoomOut: Key
+      var zoomOut: Key | Null
       
       /**
         * The speed at which the camera will zoom if the `zoomIn` or `zoomOut` keys are pressed.
@@ -166,25 +165,18 @@ object Cameras {
       
       inline def apply(
         active: Boolean,
-        camera: Camera,
         destroy: () => Unit,
-        down: Key,
-        left: Key,
         maxZoom: Double,
         minZoom: Double,
-        right: Key,
         setCamera: Camera => FixedKeyControl,
         speedX: Double,
         speedY: Double,
         start: () => FixedKeyControl,
         stop: () => FixedKeyControl,
-        up: Key,
         update: Double => Unit,
-        zoomIn: Key,
-        zoomOut: Key,
         zoomSpeed: Double
       ): FixedKeyControl = {
-        val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), down = down.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], maxZoom = maxZoom.asInstanceOf[js.Any], minZoom = minZoom.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], setCamera = js.Any.fromFunction1(setCamera), speedX = speedX.asInstanceOf[js.Any], speedY = speedY.asInstanceOf[js.Any], start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop), up = up.asInstanceOf[js.Any], update = js.Any.fromFunction1(update), zoomIn = zoomIn.asInstanceOf[js.Any], zoomOut = zoomOut.asInstanceOf[js.Any], zoomSpeed = zoomSpeed.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), maxZoom = maxZoom.asInstanceOf[js.Any], minZoom = minZoom.asInstanceOf[js.Any], setCamera = js.Any.fromFunction1(setCamera), speedX = speedX.asInstanceOf[js.Any], speedY = speedY.asInstanceOf[js.Any], start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop), update = js.Any.fromFunction1(update), zoomSpeed = zoomSpeed.asInstanceOf[js.Any], camera = null, down = null, left = null, right = null, up = null, zoomIn = null, zoomOut = null)
         __obj.asInstanceOf[FixedKeyControl]
       }
       
@@ -195,17 +187,25 @@ object Cameras {
         
         inline def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
         
+        inline def setCameraNull: Self = StObject.set(x, "camera", null)
+        
         inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
         
         inline def setDown(value: Key): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
         
+        inline def setDownNull: Self = StObject.set(x, "down", null)
+        
         inline def setLeft(value: Key): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+        
+        inline def setLeftNull: Self = StObject.set(x, "left", null)
         
         inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
         
         inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
         
         inline def setRight(value: Key): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+        
+        inline def setRightNull: Self = StObject.set(x, "right", null)
         
         inline def setSetCamera(value: Camera => FixedKeyControl): Self = StObject.set(x, "setCamera", js.Any.fromFunction1(value))
         
@@ -219,11 +219,17 @@ object Cameras {
         
         inline def setUp(value: Key): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
         
+        inline def setUpNull: Self = StObject.set(x, "up", null)
+        
         inline def setUpdate(value: Double => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
         
         inline def setZoomIn(value: Key): Self = StObject.set(x, "zoomIn", value.asInstanceOf[js.Any])
         
+        inline def setZoomInNull: Self = StObject.set(x, "zoomIn", null)
+        
         inline def setZoomOut(value: Key): Self = StObject.set(x, "zoomOut", value.asInstanceOf[js.Any])
+        
+        inline def setZoomOutNull: Self = StObject.set(x, "zoomOut", null)
         
         inline def setZoomSpeed(value: Double): Self = StObject.set(x, "zoomSpeed", value.asInstanceOf[js.Any])
       }
@@ -273,7 +279,7 @@ object Cameras {
       /**
         * The Camera that this Control will update.
         */
-      var camera: Camera
+      var camera: Camera | Null
       
       /**
         * Destroys this Key Control.
@@ -283,7 +289,7 @@ object Cameras {
       /**
         * The Key to be pressed that will move the Camera down.
         */
-      var down: Key
+      var down: Key | Null
       
       /**
         * The horizontal drag applied to the camera when it is moving.
@@ -298,7 +304,7 @@ object Cameras {
       /**
         * The Key to be pressed that will move the Camera left.
         */
-      var left: Key
+      var left: Key | Null
       
       /**
         * The maximum horizontal speed the camera will move.
@@ -323,7 +329,7 @@ object Cameras {
       /**
         * The Key to be pressed that will move the Camera right.
         */
-      var right: Key
+      var right: Key | Null
       
       /**
         * Binds this Key Control to a camera.
@@ -344,7 +350,7 @@ object Cameras {
       /**
         * The Key to be pressed that will move the Camera up.
         */
-      var up: Key
+      var up: Key | Null
       
       /**
         * Applies the results of pressing the control keys to the Camera.
@@ -357,12 +363,12 @@ object Cameras {
       /**
         * The Key to be pressed that will zoom the Camera in.
         */
-      var zoomIn: Key
+      var zoomIn: Key | Null
       
       /**
         * The Key to be pressed that will zoom the Camera out.
         */
-      var zoomOut: Key
+      var zoomOut: Key | Null
       
       /**
         * The speed at which the camera will zoom if the `zoomIn` or `zoomOut` keys are pressed.
@@ -375,27 +381,20 @@ object Cameras {
         accelX: Double,
         accelY: Double,
         active: Boolean,
-        camera: Camera,
         destroy: () => Unit,
-        down: Key,
         dragX: Double,
         dragY: Double,
-        left: Key,
         maxSpeedX: Double,
         maxSpeedY: Double,
         maxZoom: Double,
         minZoom: Double,
-        right: Key,
         setCamera: Camera => SmoothedKeyControl,
         start: () => SmoothedKeyControl,
         stop: () => SmoothedKeyControl,
-        up: Key,
         update: Double => Unit,
-        zoomIn: Key,
-        zoomOut: Key,
         zoomSpeed: Double
       ): SmoothedKeyControl = {
-        val __obj = js.Dynamic.literal(accelX = accelX.asInstanceOf[js.Any], accelY = accelY.asInstanceOf[js.Any], active = active.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), down = down.asInstanceOf[js.Any], dragX = dragX.asInstanceOf[js.Any], dragY = dragY.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], maxSpeedX = maxSpeedX.asInstanceOf[js.Any], maxSpeedY = maxSpeedY.asInstanceOf[js.Any], maxZoom = maxZoom.asInstanceOf[js.Any], minZoom = minZoom.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], setCamera = js.Any.fromFunction1(setCamera), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop), up = up.asInstanceOf[js.Any], update = js.Any.fromFunction1(update), zoomIn = zoomIn.asInstanceOf[js.Any], zoomOut = zoomOut.asInstanceOf[js.Any], zoomSpeed = zoomSpeed.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(accelX = accelX.asInstanceOf[js.Any], accelY = accelY.asInstanceOf[js.Any], active = active.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), dragX = dragX.asInstanceOf[js.Any], dragY = dragY.asInstanceOf[js.Any], maxSpeedX = maxSpeedX.asInstanceOf[js.Any], maxSpeedY = maxSpeedY.asInstanceOf[js.Any], maxZoom = maxZoom.asInstanceOf[js.Any], minZoom = minZoom.asInstanceOf[js.Any], setCamera = js.Any.fromFunction1(setCamera), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop), update = js.Any.fromFunction1(update), zoomSpeed = zoomSpeed.asInstanceOf[js.Any], camera = null, down = null, left = null, right = null, up = null, zoomIn = null, zoomOut = null)
         __obj.asInstanceOf[SmoothedKeyControl]
       }
       
@@ -410,15 +409,21 @@ object Cameras {
         
         inline def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
         
+        inline def setCameraNull: Self = StObject.set(x, "camera", null)
+        
         inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
         
         inline def setDown(value: Key): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
+        
+        inline def setDownNull: Self = StObject.set(x, "down", null)
         
         inline def setDragX(value: Double): Self = StObject.set(x, "dragX", value.asInstanceOf[js.Any])
         
         inline def setDragY(value: Double): Self = StObject.set(x, "dragY", value.asInstanceOf[js.Any])
         
         inline def setLeft(value: Key): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+        
+        inline def setLeftNull: Self = StObject.set(x, "left", null)
         
         inline def setMaxSpeedX(value: Double): Self = StObject.set(x, "maxSpeedX", value.asInstanceOf[js.Any])
         
@@ -430,6 +435,8 @@ object Cameras {
         
         inline def setRight(value: Key): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
         
+        inline def setRightNull: Self = StObject.set(x, "right", null)
+        
         inline def setSetCamera(value: Camera => SmoothedKeyControl): Self = StObject.set(x, "setCamera", js.Any.fromFunction1(value))
         
         inline def setStart(value: () => SmoothedKeyControl): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
@@ -438,11 +445,17 @@ object Cameras {
         
         inline def setUp(value: Key): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
         
+        inline def setUpNull: Self = StObject.set(x, "up", null)
+        
         inline def setUpdate(value: Double => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
         
         inline def setZoomIn(value: Key): Self = StObject.set(x, "zoomIn", value.asInstanceOf[js.Any])
         
+        inline def setZoomInNull: Self = StObject.set(x, "zoomIn", null)
+        
         inline def setZoomOut(value: Key): Self = StObject.set(x, "zoomOut", value.asInstanceOf[js.Any])
+        
+        inline def setZoomOutNull: Self = StObject.set(x, "zoomOut", null)
         
         inline def setZoomSpeed(value: Double): Self = StObject.set(x, "zoomSpeed", value.asInstanceOf[js.Any])
       }
@@ -656,7 +669,7 @@ object Cameras {
         */
       val id: Double = js.native
       
-      def ignore(entries: js.Array[GameObject]): this.type = js.native
+      def ignore(entries: js.Array[GameObject | Layer]): this.type = js.native
       /**
         * Given a Game Object, or an array of Game Objects, it will update all of their camera filter settings
         * so that they are ignored by this Camera. This means they will not be rendered by this Camera.
@@ -664,12 +677,19 @@ object Cameras {
         */
       def ignore(entries: GameObject): this.type = js.native
       def ignore(entries: Group): this.type = js.native
+      def ignore(entries: Layer): this.type = js.native
+      
+      /**
+        * Is this Camera a Scene Camera? (which is the default), or a Camera
+        * belonging to a Texture?
+        */
+      var isSceneCamera: Boolean = js.native
       
       /**
         * The Mask this Camera is using during render.
         * Set the mask using the `setMask` method. Remove the mask using the `clearMask` method.
         */
-      var mask: BitmapMask | GeometryMask = js.native
+      var mask: BitmapMask | GeometryMask | Null = js.native
       
       /**
         * The mid-point of the Camera in 'world' coordinates.
@@ -827,6 +847,13 @@ object Cameras {
       def setBounds(x: Double, y: Double, width: Double, height: Double, centerOn: Boolean): this.type = js.native
       
       /**
+        * Set if this Camera is being used as a Scene Camera, or a Texture
+        * Camera.
+        * @param value Is this being used as a Scene Camera, or a Texture camera?
+        */
+      def setIsSceneCamera(value: Boolean): Unit = js.native
+      
+      /**
         * Sets the mask to be applied to this Camera during rendering.
         * 
         * The mask must have been previously created and can be either a GeometryMask or a BitmapMask.
@@ -900,8 +927,10 @@ object Cameras {
       /**
         * Sets the Scene the Camera is bound to.
         * @param scene The Scene the camera is bound to.
+        * @param isSceneCamera Is this Camera being used for a Scene (true) or a Texture? (false) Default true.
         */
       def setScene(scene: Scene): this.type = js.native
+      def setScene(scene: Scene, isSceneCamera: Boolean): this.type = js.native
       
       /**
         * Set the position of where the Camera is looking within the game.
@@ -1084,9 +1113,7 @@ object Cameras {
     trait Camera
       extends StObject
          with BaseCamera
-         with Flip
-         with Tint
-         with Pipeline {
+         with PostPipeline {
       
       /**
         * The Camera dead zone.
@@ -1107,7 +1134,7 @@ object Cameras {
         * Calling `setDeadzone` with no arguments will reset an active deadzone, as will setting this property
         * to `null`.
         */
-      var deadzone: Rectangle = js.native
+      var deadzone: Rectangle | Null = js.native
       
       /**
         * Fades the Camera from transparent to the given color over the duration specified.
@@ -1860,8 +1887,8 @@ object Cameras {
         * @param camera The Camera to be added to the Camera Manager.
         * @param makeMain Set this Camera as being the 'main' camera. This just makes the property `main` a reference to it. Default false.
         */
-      def addExisting(camera: Camera): Camera = js.native
-      def addExisting(camera: Camera, makeMain: Boolean): Camera = js.native
+      def addExisting(camera: Camera): Camera | Null = js.native
+      def addExisting(camera: Camera, makeMain: Boolean): Camera | Null = js.native
       
       /**
         * An Array of the Camera objects being managed by this Camera Manager.
@@ -1887,7 +1914,7 @@ object Cameras {
         * have given your Cameras unique names.
         * @param name The name of the Camera.
         */
-      def getCamera(name: String): Camera = js.native
+      def getCamera(name: String): Camera | Null = js.native
       
       /**
         * Returns an array of all cameras below the given Pointer.
@@ -1911,7 +1938,7 @@ object Cameras {
         * containing only those Game Objects that pass the `willRender` test
         * against the given Camera.
         * @param children An array of Game Objects to be checked against the camera.
-        * @param camera The camera to filte the Game Objects against.
+        * @param camera The camera to filter the Game Objects against.
         */
       def getVisibleChildren(children: js.Array[GameObject], camera: Camera): js.Array[GameObject] = js.native
       
@@ -2180,6 +2207,12 @@ object Cameras {
       trait Flash extends StObject {
         
         /**
+          * The value of the alpha channel used during the flash effect.
+          * A value between 0 and 1.
+          */
+        var alpha: Double
+        
+        /**
           * The Camera this effect belongs to.
           */
         val camera: Camera
@@ -2259,6 +2292,7 @@ object Cameras {
       object Flash {
         
         inline def apply(
+          alpha: Double,
           camera: Camera,
           destroy: () => Unit,
           duration: Double,
@@ -2271,12 +2305,14 @@ object Cameras {
           start: (js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Boolean], js.UndefOr[CameraFlashCallback], js.UndefOr[Any]) => Camera,
           update: (Double, Double) => Unit
         ): Flash = {
-          val __obj = js.Dynamic.literal(camera = camera.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), duration = duration.asInstanceOf[js.Any], effectComplete = js.Any.fromFunction0(effectComplete), isRunning = isRunning.asInstanceOf[js.Any], postRenderCanvas = js.Any.fromFunction1(postRenderCanvas), postRenderWebGL = js.Any.fromFunction2(postRenderWebGL), progress = progress.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), start = js.Any.fromFunction7(start), update = js.Any.fromFunction2(update))
+          val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), duration = duration.asInstanceOf[js.Any], effectComplete = js.Any.fromFunction0(effectComplete), isRunning = isRunning.asInstanceOf[js.Any], postRenderCanvas = js.Any.fromFunction1(postRenderCanvas), postRenderWebGL = js.Any.fromFunction2(postRenderWebGL), progress = progress.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), start = js.Any.fromFunction7(start), update = js.Any.fromFunction2(update))
           __obj.asInstanceOf[Flash]
         }
         
         @scala.inline
         implicit open class MutableBuilder[Self <: Flash] (val x: Self) extends AnyVal {
+          
+          inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
           
           inline def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
           

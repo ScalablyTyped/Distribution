@@ -10,6 +10,9 @@ import typings.qunit.mod.global.QUnit.LogDetails
 import typings.qunit.mod.global.QUnit.ModuleDoneDetails
 import typings.qunit.mod.global.QUnit.ModuleStartDetails
 import typings.qunit.mod.global.QUnit.TestStartDetails
+import typings.qunit.qunitBooleans.`false`
+import typings.qunit.qunitBooleans.`true`
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +36,7 @@ trait QUnit extends StObject {
     *
     * `QUnit.begin()` is called once before running any tests.
     *
-    * @callback callback Callback to execute.
+    * callback Callback to execute.
     */
   def begin(callback: js.Function1[/* details */ BeginDetails, Unit | js.Promise[Unit]]): Unit = js.native
   
@@ -355,6 +358,8 @@ trait QUnit extends StObject {
   def todo(name: String): Unit = js.native
   def todo(name: String, callback: js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]]): Unit = js.native
   
+  var urlParams: Record[String, Any] = js.native
+  
   /**
     * QUnit version
     */
@@ -365,6 +370,34 @@ object QUnit extends Shortcut {
   @JSGlobal("QUnit")
   @js.native
   val ^ : QUnit = js.native
+  
+  trait AssertionTest
+    extends StObject
+       with TestBase
+       with Test {
+    
+    var assert: Assert
+  }
+  object AssertionTest {
+    
+    inline def apply(
+      assert: Assert,
+      finish: () => Any,
+      module: Module,
+      pushFailure: (String, String, Any) => Unit,
+      testId: String,
+      testName: String
+    ): AssertionTest = {
+      val __obj = js.Dynamic.literal(assert = assert.asInstanceOf[js.Any], finish = js.Any.fromFunction0(finish), module = module.asInstanceOf[js.Any], pushFailure = js.Any.fromFunction3(pushFailure), testId = testId.asInstanceOf[js.Any], testName = testName.asInstanceOf[js.Any], expected = null)
+      __obj.asInstanceOf[AssertionTest]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssertionTest] (val x: Self) extends AnyVal {
+      
+      inline def setAssert(value: Assert): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
+    }
+  }
   
   trait BeginDetails extends StObject {
     
@@ -477,6 +510,24 @@ object QUnit extends Shortcut {
     }
   }
   
+  trait Module extends StObject {
+    
+    var name: String
+  }
+  object Module {
+    
+    inline def apply(name: String): Module = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Module]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Module] (val x: Self) extends AnyVal {
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait ModuleDoneDetails extends StObject {
     
     var failed: Double
@@ -526,6 +577,172 @@ object QUnit extends Shortcut {
     implicit open class MutableBuilder[Self <: ModuleStartDetails] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait SkipTest
+    extends StObject
+       with TestBase
+       with Test {
+    
+    @JSName("async")
+    var async_SkipTest: `false`
+    
+    @JSName("skip")
+    var skip_SkipTest: `true`
+  }
+  object SkipTest {
+    
+    inline def apply(
+      finish: () => Any,
+      module: Module,
+      pushFailure: (String, String, Any) => Unit,
+      testId: String,
+      testName: String
+    ): SkipTest = {
+      val __obj = js.Dynamic.literal(async = false, finish = js.Any.fromFunction0(finish), module = module.asInstanceOf[js.Any], pushFailure = js.Any.fromFunction3(pushFailure), skip = true, testId = testId.asInstanceOf[js.Any], testName = testName.asInstanceOf[js.Any], expected = null)
+      __obj.asInstanceOf[SkipTest]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkipTest] (val x: Self) extends AnyVal {
+      
+      inline def setAsync(value: `false`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      
+      inline def setSkip(value: `true`): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.qunit.mod.global.QUnit.AssertionTest
+    - typings.qunit.mod.global.QUnit.SkipTest
+    - typings.qunit.mod.global.QUnit.TodoTest
+  */
+  trait Test extends StObject
+  object Test {
+    
+    inline def AssertionTest(
+      assert: Assert,
+      finish: () => Any,
+      module: Module,
+      pushFailure: (String, String, Any) => Unit,
+      testId: String,
+      testName: String
+    ): typings.qunit.mod.global.QUnit.AssertionTest = {
+      val __obj = js.Dynamic.literal(assert = assert.asInstanceOf[js.Any], finish = js.Any.fromFunction0(finish), module = module.asInstanceOf[js.Any], pushFailure = js.Any.fromFunction3(pushFailure), testId = testId.asInstanceOf[js.Any], testName = testName.asInstanceOf[js.Any], expected = null)
+      __obj.asInstanceOf[typings.qunit.mod.global.QUnit.AssertionTest]
+    }
+    
+    inline def SkipTest(
+      finish: () => Any,
+      module: Module,
+      pushFailure: (String, String, Any) => Unit,
+      testId: String,
+      testName: String
+    ): typings.qunit.mod.global.QUnit.SkipTest = {
+      val __obj = js.Dynamic.literal(async = false, finish = js.Any.fromFunction0(finish), module = module.asInstanceOf[js.Any], pushFailure = js.Any.fromFunction3(pushFailure), skip = true, testId = testId.asInstanceOf[js.Any], testName = testName.asInstanceOf[js.Any], expected = null)
+      __obj.asInstanceOf[typings.qunit.mod.global.QUnit.SkipTest]
+    }
+    
+    inline def TodoTest(
+      assert: Assert,
+      finish: () => Any,
+      module: Module,
+      pushFailure: (String, String, Any) => Unit,
+      testId: String,
+      testName: String
+    ): typings.qunit.mod.global.QUnit.TodoTest = {
+      val __obj = js.Dynamic.literal(assert = assert.asInstanceOf[js.Any], finish = js.Any.fromFunction0(finish), module = module.asInstanceOf[js.Any], pushFailure = js.Any.fromFunction3(pushFailure), testId = testId.asInstanceOf[js.Any], testName = testName.asInstanceOf[js.Any], todo = true, expected = null)
+      __obj.asInstanceOf[typings.qunit.mod.global.QUnit.TodoTest]
+    }
+  }
+  
+  trait TestBase extends StObject {
+    
+    var async: js.UndefOr[Boolean] = js.undefined
+    
+    var expected: Null | Double
+    
+    // steps: unknown[];
+    // timeout: undefined;
+    // data: unknown;
+    // withData: boolean;
+    // pauses: Map<string, unknown>;
+    // nextPauseId: 1;
+    // stackOffset: 0 | 1 | 2 | 3 | 5;
+    // errorForStack: Error;
+    // testReport: unknown;
+    // stack: string;
+    // before: () => unknown;
+    // run: () => unknown;
+    // after: () => void;
+    // queueGlobalHook: (hook: unknown, hookName: unknown) => () => unknown;
+    // queueHook: (
+    //   hook: unknown,
+    //   hookName: unknown,
+    //   hookOwner: unknown
+    // ) => () => unknown;
+    // hooks: (handler: unknown) => unknown;
+    def finish(): Any
+    
+    // assertions: Array<{ result: boolean; message: string }>;
+    var module: Module
+    
+    // preserveTestEnvironment: () => unknown;
+    // queue: () => void;
+    // pushResult: (resultInfo: unknown) => void;
+    def pushFailure(message: String, source: String, actual: Any): Unit
+    
+    var skip: js.UndefOr[`true`] = js.undefined
+    
+    var testId: String
+    
+    var testName: String
+    
+    // callback: ((assert: Assert) => void) | ((assert: Assert) => Promise<void>);
+    var todo: js.UndefOr[Boolean] = js.undefined
+  }
+  object TestBase {
+    
+    inline def apply(
+      finish: () => Any,
+      module: Module,
+      pushFailure: (String, String, Any) => Unit,
+      testId: String,
+      testName: String
+    ): TestBase = {
+      val __obj = js.Dynamic.literal(finish = js.Any.fromFunction0(finish), module = module.asInstanceOf[js.Any], pushFailure = js.Any.fromFunction3(pushFailure), testId = testId.asInstanceOf[js.Any], testName = testName.asInstanceOf[js.Any], expected = null)
+      __obj.asInstanceOf[TestBase]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestBase] (val x: Self) extends AnyVal {
+      
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      
+      inline def setExpected(value: Double): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+      
+      inline def setExpectedNull: Self = StObject.set(x, "expected", null)
+      
+      inline def setFinish(value: () => Any): Self = StObject.set(x, "finish", js.Any.fromFunction0(value))
+      
+      inline def setModule(value: Module): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      
+      inline def setPushFailure(value: (String, String, Any) => Unit): Self = StObject.set(x, "pushFailure", js.Any.fromFunction3(value))
+      
+      inline def setSkip(value: `true`): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+      
+      inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+      
+      inline def setTestId(value: String): Self = StObject.set(x, "testId", value.asInstanceOf[js.Any])
+      
+      inline def setTestName(value: String): Self = StObject.set(x, "testName", value.asInstanceOf[js.Any])
+      
+      inline def setTodo(value: Boolean): Self = StObject.set(x, "todo", value.asInstanceOf[js.Any])
+      
+      inline def setTodoUndefined: Self = StObject.set(x, "todo", js.undefined)
     }
   }
   
@@ -586,6 +803,39 @@ object QUnit extends Shortcut {
       inline def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait TodoTest
+    extends StObject
+       with TestBase
+       with Test {
+    
+    var assert: Assert
+    
+    @JSName("todo")
+    var todo_TodoTest: `true`
+  }
+  object TodoTest {
+    
+    inline def apply(
+      assert: Assert,
+      finish: () => Any,
+      module: Module,
+      pushFailure: (String, String, Any) => Unit,
+      testId: String,
+      testName: String
+    ): TodoTest = {
+      val __obj = js.Dynamic.literal(assert = assert.asInstanceOf[js.Any], finish = js.Any.fromFunction0(finish), module = module.asInstanceOf[js.Any], pushFailure = js.Any.fromFunction3(pushFailure), testId = testId.asInstanceOf[js.Any], testName = testName.asInstanceOf[js.Any], todo = true, expected = null)
+      __obj.asInstanceOf[TodoTest]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TodoTest] (val x: Self) extends AnyVal {
+      
+      inline def setAssert(value: Assert): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
+      
+      inline def setTodo(value: `true`): Self = StObject.set(x, "todo", value.asInstanceOf[js.Any])
     }
   }
   

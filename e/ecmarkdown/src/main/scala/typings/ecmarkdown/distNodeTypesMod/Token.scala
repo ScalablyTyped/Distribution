@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ecmarkdown.distNodeTypesMod.ParabreakToken
   - typings.ecmarkdown.distNodeTypesMod.LinebreakToken
   - typings.ecmarkdown.distNodeTypesMod.WhitespaceToken
+  - typings.ecmarkdown.distNodeTypesMod.DoubleBracketsToken
   - typings.ecmarkdown.distNodeTypesMod.TextToken
   - typings.ecmarkdown.distNodeTypesMod.CommentToken
   - typings.ecmarkdown.distNodeTypesMod.TagToken
@@ -23,6 +24,11 @@ object Token {
   inline def CommentToken(contents: String, location: LocationRange): typings.ecmarkdown.distNodeTypesMod.CommentToken = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "comment")
     __obj.asInstanceOf[typings.ecmarkdown.distNodeTypesMod.CommentToken]
+  }
+  
+  inline def DoubleBracketsToken(contents: String, location: LocationRange): typings.ecmarkdown.distNodeTypesMod.DoubleBracketsToken = {
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "double-brackets")
+    __obj.asInstanceOf[typings.ecmarkdown.distNodeTypesMod.DoubleBracketsToken]
   }
   
   inline def EOFToken(location: LocationRange): typings.ecmarkdown.distNodeTypesMod.EOFToken = {

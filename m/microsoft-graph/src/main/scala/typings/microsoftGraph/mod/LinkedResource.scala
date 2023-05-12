@@ -8,13 +8,13 @@ trait LinkedResource
   extends StObject
      with Entity {
   
-  // Field indicating the app name of the source that is sending the linkedResource.
+  // The app name of the source that sends the linkedResource.
   var applicationName: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Field indicating the title of the linkedResource.
+  // The title of the linkedResource.
   var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Id of the object that is associated with this task on the third-party/partner system.
+  // ID of the object that is associated with this task on the third-party/partner system.
   var externalId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Deep link to the linkedResource.

@@ -137,7 +137,7 @@ trait CSSApi extends StObject {
   
   /**
     * Fires whenever a web font is updated.  A non-empty font parameter indicates a successfully loaded
-    * web font
+    * web font.
     */
   @JSName("on")
   def on_fontsUpdated(event: fontsUpdated, listener: js.Function1[/* params */ FontsUpdatedEvent, Unit]): Unit = js.native
@@ -221,7 +221,7 @@ trait CSSApi extends StObject {
   
   /**
     * Stop tracking rule usage and return the list of rules that were used since last call to
-    * `takeCoverageDelta` (or since start of coverage instrumentation)
+    * `takeCoverageDelta` (or since start of coverage instrumentation).
     */
   def stopRuleUsageTracking(): js.Promise[StopRuleUsageTrackingResponse] = js.native
   
@@ -232,7 +232,7 @@ trait CSSApi extends StObject {
   
   /**
     * Obtain list of rules that became used since last call to this method (or since start of coverage
-    * instrumentation)
+    * instrumentation).
     */
   def takeCoverageDelta(): js.Promise[TakeCoverageDeltaResponse] = js.native
   

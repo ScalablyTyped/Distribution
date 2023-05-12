@@ -18,7 +18,7 @@ import typings.fpTs.libChainMod.Chain3
 import typings.fpTs.libChainMod.Chain3C
 import typings.fpTs.libChainMod.Chain4
 import typings.fpTs.libEitherMod.Either_
-import typings.fpTs.libFunctionMod.Lazy
+import typings.fpTs.libFunctionMod.LazyArg
 import typings.fpTs.libOptionMod.Option_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -215,7 +215,7 @@ object libFromEitherMod {
   ]]
   
   inline def chainOptionK[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](F: FromEither2[F], M: Chain2[F]): js.Function1[
-    /* onNone */ Lazy[Any], 
+    /* onNone */ LazyArg[Any], 
     js.Function1[
       /* f */ js.Function1[/* a */ Any, Option_[Any]], 
       js.Function1[
@@ -224,7 +224,7 @@ object libFromEitherMod {
       ]
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("chainOptionK")(F.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* onNone */ Lazy[Any], 
+    /* onNone */ LazyArg[Any], 
     js.Function1[
       /* f */ js.Function1[/* a */ Any, Option_[Any]], 
       js.Function1[
@@ -234,7 +234,7 @@ object libFromEitherMod {
     ]
   ]]
   inline def chainOptionK[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](F: FromEither3[F], M: Chain3[F]): js.Function1[
-    /* onNone */ Lazy[Any], 
+    /* onNone */ LazyArg[Any], 
     js.Function1[
       /* f */ js.Function1[/* a */ Any, Option_[Any]], 
       js.Function1[
@@ -243,7 +243,7 @@ object libFromEitherMod {
       ]
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("chainOptionK")(F.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* onNone */ Lazy[Any], 
+    /* onNone */ LazyArg[Any], 
     js.Function1[
       /* f */ js.Function1[/* a */ Any, Option_[Any]], 
       js.Function1[
@@ -253,7 +253,7 @@ object libFromEitherMod {
     ]
   ]]
   inline def chainOptionK[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](F: FromEither4[F], M: Chain4[F]): js.Function1[
-    /* onNone */ Lazy[Any], 
+    /* onNone */ LazyArg[Any], 
     js.Function1[
       /* f */ js.Function1[/* a */ Any, Option_[Any]], 
       js.Function1[
@@ -262,7 +262,7 @@ object libFromEitherMod {
       ]
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("chainOptionK")(F.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* onNone */ Lazy[Any], 
+    /* onNone */ LazyArg[Any], 
     js.Function1[
       /* f */ js.Function1[/* a */ Any, Option_[Any]], 
       js.Function1[
@@ -272,7 +272,7 @@ object libFromEitherMod {
     ]
   ]]
   inline def chainOptionK[F](F: FromEither[F], M: Chain[F]): js.Function1[
-    /* onNone */ Lazy[Any], 
+    /* onNone */ LazyArg[Any], 
     js.Function1[
       /* f */ js.Function1[/* a */ Any, Option_[Any]], 
       js.Function1[
@@ -281,7 +281,7 @@ object libFromEitherMod {
       ]
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("chainOptionK")(F.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* onNone */ Lazy[Any], 
+    /* onNone */ LazyArg[Any], 
     js.Function1[
       /* f */ js.Function1[/* a */ Any, Option_[Any]], 
       js.Function1[
@@ -291,7 +291,7 @@ object libFromEitherMod {
     ]
   ]]
   inline def chainOptionK[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](F: FromEither2C[F, E], M: Chain2C[F, E]): js.Function1[
-    /* onNone */ Lazy[E], 
+    /* onNone */ LazyArg[E], 
     js.Function1[
       /* f */ js.Function1[/* a */ Any, Option_[Any]], 
       js.Function1[
@@ -300,7 +300,7 @@ object libFromEitherMod {
       ]
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("chainOptionK")(F.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* onNone */ Lazy[E], 
+    /* onNone */ LazyArg[E], 
     js.Function1[
       /* f */ js.Function1[/* a */ Any, Option_[Any]], 
       js.Function1[
@@ -310,7 +310,7 @@ object libFromEitherMod {
     ]
   ]]
   inline def chainOptionK[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](F: FromEither3C[F, E], M: Chain3C[F, E]): js.Function1[
-    /* onNone */ Lazy[E], 
+    /* onNone */ LazyArg[E], 
     js.Function1[
       /* f */ js.Function1[/* a */ Any, Option_[Any]], 
       js.Function1[
@@ -319,7 +319,7 @@ object libFromEitherMod {
       ]
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("chainOptionK")(F.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* onNone */ Lazy[E], 
+    /* onNone */ LazyArg[E], 
     js.Function1[
       /* f */ js.Function1[/* a */ Any, Option_[Any]], 
       js.Function1[
@@ -429,78 +429,78 @@ object libFromEitherMod {
   ]]
   
   inline def fromOption[F](F: FromEither[F]): js.Function1[
-    /* onNone */ Lazy[Any], 
+    /* onNone */ LazyArg[Any], 
     js.Function1[
       /* ma */ Option_[Any], 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, E, A> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOption")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* onNone */ Lazy[Any], 
+    /* onNone */ LazyArg[Any], 
     js.Function1[
       /* ma */ Option_[Any], 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, E, A> */ Any
     ]
   ]]
   inline def fromOption[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](F: FromEither2[F]): js.Function1[
-    /* onNone */ Lazy[Any], 
+    /* onNone */ LazyArg[Any], 
     js.Function1[
       /* fa */ Option_[Any], 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOption")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* onNone */ Lazy[Any], 
+    /* onNone */ LazyArg[Any], 
     js.Function1[
       /* fa */ Option_[Any], 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any
     ]
   ]]
   inline def fromOption[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](F: FromEither3[F]): js.Function1[
-    /* onNone */ Lazy[Any], 
+    /* onNone */ LazyArg[Any], 
     js.Function1[
       /* fa */ Option_[Any], 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOption")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* onNone */ Lazy[Any], 
+    /* onNone */ LazyArg[Any], 
     js.Function1[
       /* fa */ Option_[Any], 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any
     ]
   ]]
   inline def fromOption[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](F: FromEither4[F]): js.Function1[
-    /* onNone */ Lazy[Any], 
+    /* onNone */ LazyArg[Any], 
     js.Function1[
       /* fa */ Option_[Any], 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOption")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* onNone */ Lazy[Any], 
+    /* onNone */ LazyArg[Any], 
     js.Function1[
       /* fa */ Option_[Any], 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ Any
     ]
   ]]
   inline def fromOption[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](F: FromEither2C[F, E]): js.Function1[
-    /* onNone */ Lazy[E], 
+    /* onNone */ LazyArg[E], 
     js.Function1[
       /* fa */ Option_[Any], 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOption")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* onNone */ Lazy[E], 
+    /* onNone */ LazyArg[E], 
     js.Function1[
       /* fa */ Option_[Any], 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any
     ]
   ]]
   inline def fromOption[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](F: FromEither3C[F, E]): js.Function1[
-    /* onNone */ Lazy[E], 
+    /* onNone */ LazyArg[E], 
     js.Function1[
       /* fa */ Option_[Any], 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOption")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* onNone */ Lazy[E], 
+    /* onNone */ LazyArg[E], 
     js.Function1[
       /* fa */ Option_[Any], 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any
@@ -508,7 +508,7 @@ object libFromEitherMod {
   ]]
   
   inline def fromOptionK[F](F: FromEither[F]): js.Function1[
-    /* onNone */ Lazy[Any], 
+    /* onNone */ LazyArg[Any], 
     js.Function1[
       /* f */ js.Function1[/* a */ js.Array[Any], Option_[Any]], 
       js.Function1[
@@ -517,7 +517,7 @@ object libFromEitherMod {
       ]
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOptionK")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* onNone */ Lazy[Any], 
+    /* onNone */ LazyArg[Any], 
     js.Function1[
       /* f */ js.Function1[/* a */ js.Array[Any], Option_[Any]], 
       js.Function1[
@@ -527,7 +527,7 @@ object libFromEitherMod {
     ]
   ]]
   inline def fromOptionK[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](F: FromEither2[F]): js.Function1[
-    /* onNone */ Lazy[Any], 
+    /* onNone */ LazyArg[Any], 
     js.Function1[
       /* f */ js.Function1[/* a */ js.Array[Any], Option_[Any]], 
       js.Function1[
@@ -536,7 +536,7 @@ object libFromEitherMod {
       ]
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOptionK")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* onNone */ Lazy[Any], 
+    /* onNone */ LazyArg[Any], 
     js.Function1[
       /* f */ js.Function1[/* a */ js.Array[Any], Option_[Any]], 
       js.Function1[
@@ -546,7 +546,7 @@ object libFromEitherMod {
     ]
   ]]
   inline def fromOptionK[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](F: FromEither3[F]): js.Function1[
-    /* onNone */ Lazy[Any], 
+    /* onNone */ LazyArg[Any], 
     js.Function1[
       /* f */ js.Function1[/* a */ js.Array[Any], Option_[Any]], 
       js.Function1[
@@ -555,7 +555,7 @@ object libFromEitherMod {
       ]
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOptionK")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* onNone */ Lazy[Any], 
+    /* onNone */ LazyArg[Any], 
     js.Function1[
       /* f */ js.Function1[/* a */ js.Array[Any], Option_[Any]], 
       js.Function1[
@@ -565,7 +565,7 @@ object libFromEitherMod {
     ]
   ]]
   inline def fromOptionK[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](F: FromEither4[F]): js.Function1[
-    /* onNone */ Lazy[Any], 
+    /* onNone */ LazyArg[Any], 
     js.Function1[
       /* f */ js.Function1[/* a */ js.Array[Any], Option_[Any]], 
       js.Function1[
@@ -574,7 +574,7 @@ object libFromEitherMod {
       ]
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOptionK")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* onNone */ Lazy[Any], 
+    /* onNone */ LazyArg[Any], 
     js.Function1[
       /* f */ js.Function1[/* a */ js.Array[Any], Option_[Any]], 
       js.Function1[
@@ -584,7 +584,7 @@ object libFromEitherMod {
     ]
   ]]
   inline def fromOptionK[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](F: FromEither2C[F, E]): js.Function1[
-    /* onNone */ Lazy[E], 
+    /* onNone */ LazyArg[E], 
     js.Function1[
       /* f */ js.Function1[/* a */ js.Array[Any], Option_[Any]], 
       js.Function1[
@@ -593,7 +593,7 @@ object libFromEitherMod {
       ]
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOptionK")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* onNone */ Lazy[E], 
+    /* onNone */ LazyArg[E], 
     js.Function1[
       /* f */ js.Function1[/* a */ js.Array[Any], Option_[Any]], 
       js.Function1[
@@ -603,7 +603,7 @@ object libFromEitherMod {
     ]
   ]]
   inline def fromOptionK[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](F: FromEither3C[F, E]): js.Function1[
-    /* onNone */ Lazy[E], 
+    /* onNone */ LazyArg[E], 
     js.Function1[
       /* f */ js.Function1[/* a */ js.Array[Any], Option_[Any]], 
       js.Function1[
@@ -612,7 +612,7 @@ object libFromEitherMod {
       ]
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOptionK")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* onNone */ Lazy[E], 
+    /* onNone */ LazyArg[E], 
     js.Function1[
       /* f */ js.Function1[/* a */ js.Array[Any], Option_[Any]], 
       js.Function1[

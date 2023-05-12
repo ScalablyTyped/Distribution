@@ -1,7 +1,7 @@
 
 # Scala.js typings for workbox-build
 
-Typings are for version 5.0
+Typings are for version 6.5.4
 
 ## Library description:
 A module that integrates into your build process, helping you generate a manifest of local files that workbox-sw should precache.
@@ -24,7 +24,7 @@ A module that integrates into your build process, helping you generate a manifes
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

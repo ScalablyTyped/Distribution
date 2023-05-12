@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AmiAggregationResponse extends StObject {
   
   /**
-    * The Amazon Web Services account ID that the AMI belongs.
+    * The Amazon Web Services account ID for the AMI.
     */
   var accountId: js.UndefOr[AccountId] = js.undefined
   

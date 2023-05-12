@@ -41,7 +41,6 @@ import typings.csstype.mod.Property.InsetInline
 import typings.csstype.mod.Property.InsetInlineEnd
 import typings.csstype.mod.Property.InsetInlineStart
 import typings.csstype.mod.Property.LineBreak
-import typings.csstype.mod.Property.MozBinding
 import typings.csstype.mod.Property.MozFloatEdge
 import typings.csstype.mod.Property.MozForceBrokenImageIcon
 import typings.csstype.mod.Property.MozOutlineRadius
@@ -116,8 +115,6 @@ trait ObsoletePropertiesHyphenFallback[TLength, TTime] extends StObject {
   var `-moz-background-size`: js.UndefOr[
     BackgroundSize[TLength] | js.Array[NonNullable[js.UndefOr[BackgroundSize[TLength]]]]
   ] = js.undefined
-  
-  var `-moz-binding`: js.UndefOr[MozBinding | js.Array[NonNullable[js.UndefOr[MozBinding]]]] = js.undefined
   
   var `-moz-border-radius`: js.UndefOr[BorderRadius[TLength] | js.Array[NonNullable[js.UndefOr[BorderRadius[TLength]]]]] = js.undefined
   
@@ -446,12 +443,6 @@ object ObsoletePropertiesHyphenFallback {
     inline def `set-moz-background-sizeUndefined`: Self = StObject.set(x, "-moz-background-size", js.undefined)
     
     inline def `set-moz-background-sizeVarargs`(value: NonNullable[js.UndefOr[BackgroundSize[TLength]]]*): Self = StObject.set(x, "-moz-background-size", js.Array(value*))
-    
-    inline def `set-moz-binding`(value: MozBinding | js.Array[NonNullable[js.UndefOr[MozBinding]]]): Self = StObject.set(x, "-moz-binding", value.asInstanceOf[js.Any])
-    
-    inline def `set-moz-bindingUndefined`: Self = StObject.set(x, "-moz-binding", js.undefined)
-    
-    inline def `set-moz-bindingVarargs`(value: NonNullable[js.UndefOr[MozBinding]]*): Self = StObject.set(x, "-moz-binding", js.Array(value*))
     
     inline def `set-moz-border-radius`(value: BorderRadius[TLength] | js.Array[NonNullable[js.UndefOr[BorderRadius[TLength]]]]): Self = StObject.set(x, "-moz-border-radius", value.asInstanceOf[js.Any])
     

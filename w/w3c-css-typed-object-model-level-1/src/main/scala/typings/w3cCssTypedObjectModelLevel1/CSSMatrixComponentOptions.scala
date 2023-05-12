@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CSSMatrixComponentOptions extends StObject {
   
-  var is2D: Boolean
+  var is2D: js.UndefOr[Boolean] = js.undefined
 }
 object CSSMatrixComponentOptions {
   
-  inline def apply(is2D: Boolean): CSSMatrixComponentOptions = {
-    val __obj = js.Dynamic.literal(is2D = is2D.asInstanceOf[js.Any])
+  inline def apply(): CSSMatrixComponentOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CSSMatrixComponentOptions]
   }
   
@@ -19,5 +19,7 @@ object CSSMatrixComponentOptions {
   implicit open class MutableBuilder[Self <: CSSMatrixComponentOptions] (val x: Self) extends AnyVal {
     
     inline def setIs2D(value: Boolean): Self = StObject.set(x, "is2D", value.asInstanceOf[js.Any])
+    
+    inline def setIs2DUndefined: Self = StObject.set(x, "is2D", js.undefined)
   }
 }

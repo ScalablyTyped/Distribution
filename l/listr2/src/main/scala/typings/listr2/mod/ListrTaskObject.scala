@@ -5,14 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Create a task from the given set of variables and make it runnable.
+  * Creates and handles a runnable instance of the Task.
   */
 @JSImport("listr2", "ListrTaskObject")
 @js.native
 open class ListrTaskObject[Ctx, Renderer /* <: ListrRendererFactory */] protected () extends Task[Ctx, Renderer] {
   def this(
     listr: Listr[Ctx, Any, Any],
-    tasks: ListrTask[Ctx, Any],
+    task: ListrTask[Ctx, Any],
     options: ListrOptions[ListrContext],
     rendererOptions: ListrGetRendererOptions[Renderer]
   ) = this()

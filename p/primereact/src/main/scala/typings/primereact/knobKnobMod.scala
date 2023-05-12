@@ -1,5 +1,6 @@
 package typings.primereact
 
+import typings.primereact.primereactStrings._empty
 import typings.primereact.primereactStrings.`additions removals`
 import typings.primereact.primereactStrings.`additions text`
 import typings.primereact.primereactStrings.`inline`
@@ -7,8 +8,10 @@ import typings.primereact.primereactStrings.`removals additions`
 import typings.primereact.primereactStrings.`removals text`
 import typings.primereact.primereactStrings.`text additions`
 import typings.primereact.primereactStrings.`text removals`
+import typings.primereact.primereactStrings.`use-credentials`
 import typings.primereact.primereactStrings.additions
 import typings.primereact.primereactStrings.all
+import typings.primereact.primereactStrings.anonymous
 import typings.primereact.primereactStrings.ascending
 import typings.primereact.primereactStrings.assertive
 import typings.primereact.primereactStrings.both
@@ -98,6 +101,7 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -111,26 +115,38 @@ object knobKnobMod {
     def this(props: KnobProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: KnobProps, context: Any) = this()
     
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
   }
   
-  trait KnobChangeParams extends StObject {
+  /**
+    * Custom change event.
+    * @see {@link KnobProps.onChange}
+    * @event
+    */
+  trait KnobChangeEvent extends StObject {
     
+    /**
+      * New value
+      */
     var value: Double
   }
-  object KnobChangeParams {
+  object KnobChangeEvent {
     
-    inline def apply(value: Double): KnobChangeParams = {
+    inline def apply(value: Double): KnobChangeEvent = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[KnobChangeParams]
+      __obj.asInstanceOf[KnobChangeEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: KnobChangeParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: KnobChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -259,17 +275,26 @@ object knobKnobMod {
     
     var checked: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * Style class of the element.
+      */
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
@@ -281,6 +306,10 @@ object knobKnobMod {
     
     var dir: js.UndefOr[String] = js.undefined
     
+    /**
+      * When present, it specifies that the component should be disabled.
+      * @defaultValue false
+      */
     var disabled: js.UndefOr[Boolean] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
@@ -289,7 +318,7 @@ object knobKnobMod {
     
     var form: js.UndefOr[String] = js.undefined
     
-    var formAction: js.UndefOr[String] = js.undefined
+    var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     var formEncType: js.UndefOr[String] = js.undefined
     
@@ -303,6 +332,9 @@ object knobKnobMod {
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Unique identifier of the element.
+      */
     var id: js.UndefOr[String] = js.undefined
     
     var inlist: js.UndefOr[Any] = js.undefined
@@ -327,16 +359,27 @@ object knobKnobMod {
     
     var list: js.UndefOr[String] = js.undefined
     
+    /**
+      * Maximum boundary value.
+      * @defaultValue 100
+      */
     var max: js.UndefOr[Double] = js.undefined
     
     var maxLength: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Mininum boundary value.
+      * @defaultValue 0
+      */
     var min: js.UndefOr[Double] = js.undefined
     
     var minLength: js.UndefOr[Double] = js.undefined
     
     var multiple: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Name of the input element.
+      */
     var name: js.UndefOr[String] = js.undefined
     
     var nonce: js.UndefOr[String] = js.undefined
@@ -359,7 +402,11 @@ object knobKnobMod {
     
     var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ KnobChangeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke on value change.
+      * @param {KnobChangeEvent} event - Custom change event
+      */
+    var onChange: js.UndefOr[js.Function1[/* event */ KnobChangeEvent, Unit]] = js.undefined
     
     var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
@@ -511,9 +558,19 @@ object knobKnobMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    /**
+      * Background color of the range.
+      * @defaultValue var(--surface-border, LightGray)
+      */
     var rangeColor: js.UndefOr[String] = js.undefined
     
+    /**
+      * When present, it specifies that the component value cannot be edited.
+      * @defaultValue false
+      */
     var readOnly: js.UndefOr[Boolean] = js.undefined
+    
+    var rel: js.UndefOr[String] = js.undefined
     
     var required: js.UndefOr[Boolean] = js.undefined
     
@@ -521,12 +578,22 @@ object knobKnobMod {
     
     var results: js.UndefOr[Double] = js.undefined
     
+    var rev: js.UndefOr[String] = js.undefined
+    
     var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
+    /**
+      * Whether the show the value inside the knob.
+      * @defaultValue true
+      */
     var showValue: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Size of the component in pixels.
+      * @defaultValue 100
+      */
     var size: js.UndefOr[Double] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
@@ -535,10 +602,21 @@ object knobKnobMod {
     
     var src: js.UndefOr[String] = js.undefined
     
+    /**
+      * Step factor to increment/decrement the value.
+      * @defaultValue 1
+      */
     var step: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Width of the knob stroke.
+      * @defaultValue 14
+      */
     var strokeWidth: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Inline style of the element.
+      */
     var style: js.UndefOr[CSSProperties] = js.undefined
     
     var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
@@ -547,6 +625,10 @@ object knobKnobMod {
     
     var tabIndex: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Color of the value text.
+      * @defaultValue var(--text-color-secondary, Black)
+      */
     var textColor: js.UndefOr[String] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
@@ -559,10 +641,21 @@ object knobKnobMod {
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
+    /**
+      * Value of the component.
+      */
     var value: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Background of the value.
+      * @defaultValue var(--primary-color, Black)
+      */
     var valueColor: js.UndefOr[String] = js.undefined
     
+    /**
+      * Template string of the value.
+      * @defaultValue &#123;value&#125;
+      */
     var valueTemplate: js.UndefOr[String] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
@@ -829,15 +922,19 @@ object knobKnobMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -877,7 +974,9 @@ object knobKnobMod {
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      
+      inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
       
       inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
@@ -1021,7 +1120,7 @@ object knobKnobMod {
       
       inline def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
       
-      inline def setOnChange(value: /* e */ KnobChangeParams => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* event */ KnobChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -1333,6 +1432,10 @@ object knobKnobMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -1344,6 +1447,10 @@ object knobKnobMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       

@@ -26,8 +26,8 @@ object buildRequestBrowserMod {
   trait BrowserRequest
     extends typings.webdriver.buildRequestMod.default {
     
-    /* protected */ def _createOptions(options: RequestOptions): RequestLibOptions = js.native
-    /* protected */ def _createOptions(options: RequestOptions, sessionId: String): RequestLibOptions = js.native
+    /* protected */ def _createOptions(options: RequestOptions): js.Promise[RequestLibOptions] = js.native
+    /* protected */ def _createOptions(options: RequestOptions, sessionId: String): js.Promise[RequestLibOptions] = js.native
     
     /* protected */ def _libRequest(url: URL, options: RequestLibOptions): js.Promise[Body] = js.native
   }

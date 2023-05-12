@@ -1,6 +1,6 @@
 package typings.dynogels.mod.AWS
 
-import typings.awsSdk.libCredentialsSharedIniFileCredentialsMod.SharedIniFileCredentialsOptions
+import typings.awsSdk2Types.libCredentialsSharedIniFileCredentialsMod.SharedIniFileCredentialsOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creates a new SharedIniFileCredentials object.
   */
 open class SharedIniFileCredentials ()
-  extends typings.awsSdk.mod.SharedIniFileCredentials {
+  extends typings.awsSdk2Types.mod.SharedIniFileCredentials {
   def this(options: SharedIniFileCredentialsOptions) = this()
 }

@@ -9,11 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Counter[T /* <: String */] protected ()
   extends StObject
-     with Metric_[T] {
+     with Metric[T] {
   /**
   	 * @param configuration Configuration when creating a Counter metric. Name and Help is required.
   	 */
   def this(configuration: CounterConfiguration[T]) = this()
+  
+  /**
+  	 * Get counter metric object
+  	 */
+  def get(): js.Promise[MetricObjectWithValues[MetricValue[T]]] = js.native
   
   /**
   	 * Increment with value

@@ -1,81 +1,42 @@
 package typings.atlaskitTokens.anon
 
-import typings.atlaskitTokens.distTypesTypesMod.SpacingToken
+import typings.atlaskitTokens.distTypesPalettesTypographyPaletteMod.FontWeightBaseToken
+import typings.atlaskitTokens.distTypesTypesMod.TypographyToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Medium[BaseToken] extends StObject {
+trait Medium extends StObject {
   
-  var large: SpacingToken[BaseToken]
+  var bold: TypographyToken[FontWeightBaseToken]
   
-  var medium: SpacingToken[BaseToken]
+  var medium: TypographyToken[FontWeightBaseToken]
   
-  var none: SpacingToken[BaseToken]
+  var regular: TypographyToken[FontWeightBaseToken]
   
-  var small: SpacingToken[BaseToken]
-  
-  var xlarge: SpacingToken[BaseToken]
-  
-  var xsmall: SpacingToken[BaseToken]
-  
-  var xxSmall: SpacingToken[BaseToken]
-  
-  var xxlarge: SpacingToken[BaseToken]
-  
-  var xxxSmall: SpacingToken[BaseToken]
-  
-  var xxxlarge: SpacingToken[BaseToken]
-  
-  var xxxxSmall: SpacingToken[BaseToken]
-  
-  var xxxxlarge: SpacingToken[BaseToken]
+  var semibold: TypographyToken[FontWeightBaseToken]
 }
 object Medium {
   
-  inline def apply[BaseToken](
-    large: SpacingToken[BaseToken],
-    medium: SpacingToken[BaseToken],
-    none: SpacingToken[BaseToken],
-    small: SpacingToken[BaseToken],
-    xlarge: SpacingToken[BaseToken],
-    xsmall: SpacingToken[BaseToken],
-    xxSmall: SpacingToken[BaseToken],
-    xxlarge: SpacingToken[BaseToken],
-    xxxSmall: SpacingToken[BaseToken],
-    xxxlarge: SpacingToken[BaseToken],
-    xxxxSmall: SpacingToken[BaseToken],
-    xxxxlarge: SpacingToken[BaseToken]
-  ): Medium[BaseToken] = {
-    val __obj = js.Dynamic.literal(large = large.asInstanceOf[js.Any], medium = medium.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], xlarge = xlarge.asInstanceOf[js.Any], xsmall = xsmall.asInstanceOf[js.Any], xxSmall = xxSmall.asInstanceOf[js.Any], xxlarge = xxlarge.asInstanceOf[js.Any], xxxSmall = xxxSmall.asInstanceOf[js.Any], xxxlarge = xxxlarge.asInstanceOf[js.Any], xxxxSmall = xxxxSmall.asInstanceOf[js.Any], xxxxlarge = xxxxlarge.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Medium[BaseToken]]
+  inline def apply(
+    bold: TypographyToken[FontWeightBaseToken],
+    medium: TypographyToken[FontWeightBaseToken],
+    regular: TypographyToken[FontWeightBaseToken],
+    semibold: TypographyToken[FontWeightBaseToken]
+  ): Medium = {
+    val __obj = js.Dynamic.literal(bold = bold.asInstanceOf[js.Any], medium = medium.asInstanceOf[js.Any], regular = regular.asInstanceOf[js.Any], semibold = semibold.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Medium]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: Medium[?], BaseToken] (val x: Self & Medium[BaseToken]) extends AnyVal {
+  implicit open class MutableBuilder[Self <: Medium] (val x: Self) extends AnyVal {
     
-    inline def setLarge(value: SpacingToken[BaseToken]): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
+    inline def setBold(value: TypographyToken[FontWeightBaseToken]): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     
-    inline def setMedium(value: SpacingToken[BaseToken]): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+    inline def setMedium(value: TypographyToken[FontWeightBaseToken]): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
-    inline def setNone(value: SpacingToken[BaseToken]): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setRegular(value: TypographyToken[FontWeightBaseToken]): Self = StObject.set(x, "regular", value.asInstanceOf[js.Any])
     
-    inline def setSmall(value: SpacingToken[BaseToken]): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
-    
-    inline def setXlarge(value: SpacingToken[BaseToken]): Self = StObject.set(x, "xlarge", value.asInstanceOf[js.Any])
-    
-    inline def setXsmall(value: SpacingToken[BaseToken]): Self = StObject.set(x, "xsmall", value.asInstanceOf[js.Any])
-    
-    inline def setXxSmall(value: SpacingToken[BaseToken]): Self = StObject.set(x, "xxSmall", value.asInstanceOf[js.Any])
-    
-    inline def setXxlarge(value: SpacingToken[BaseToken]): Self = StObject.set(x, "xxlarge", value.asInstanceOf[js.Any])
-    
-    inline def setXxxSmall(value: SpacingToken[BaseToken]): Self = StObject.set(x, "xxxSmall", value.asInstanceOf[js.Any])
-    
-    inline def setXxxlarge(value: SpacingToken[BaseToken]): Self = StObject.set(x, "xxxlarge", value.asInstanceOf[js.Any])
-    
-    inline def setXxxxSmall(value: SpacingToken[BaseToken]): Self = StObject.set(x, "xxxxSmall", value.asInstanceOf[js.Any])
-    
-    inline def setXxxxlarge(value: SpacingToken[BaseToken]): Self = StObject.set(x, "xxxxlarge", value.asInstanceOf[js.Any])
+    inline def setSemibold(value: TypographyToken[FontWeightBaseToken]): Self = StObject.set(x, "semibold", value.asInstanceOf[js.Any])
   }
 }

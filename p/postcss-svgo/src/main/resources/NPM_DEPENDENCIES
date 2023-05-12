@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "postcss-svgo" : "5.1.0"
+      "postcss-svgo" : "6.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "postcss-svgo" : "5.1.0"
+      "postcss-svgo" : "6.0.0"
     }
   ],
   "compile-devDependencies" : [

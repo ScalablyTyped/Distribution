@@ -6,6 +6,7 @@ import typings.fhir.fhirStrings.amended
 import typings.fhir.fhirStrings.appended
 import typings.fhir.fhirStrings.cancelled
 import typings.fhir.fhirStrings.corrected
+import typings.fhir.fhirStrings.modified
 import typings.fhir.fhirStrings.partial
 import typings.fhir.fhirStrings.preliminary
 import typings.fhir.fhirStrings.registered
@@ -43,7 +44,7 @@ trait DiagnosticReport
   var code: CodeableConcept
   
   /**
-    * The Composition provides structure to the content of the DiagnosticReport (and only contains contents referenced in the DiagnosticReport) - e.g., to order the sections of a anatomic pathology structured report.
+    * The Composition provides structure to the content of the DiagnosticReport (and only contains contents referenced in the DiagnosticReport) - e.g., to order the sections of an anatomic pathology structured report.
     */
   var composition: js.UndefOr[Reference] = js.undefined
   
@@ -76,11 +77,6 @@ trait DiagnosticReport
     * Usually assigned by the Information System of the diagnostic service provider (filler id).
     */
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
-  
-  /**
-    * ImagingStudy and the image element are somewhat overlapping - typically, the list of image references in the image element will also be found in one of the imaging study resources. However, each caters to different types of displays for different types of purposes. Neither, either, or both may be provided.
-    */
-  var imagingStudy: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * May be different from the update time of the resource itself, because that is the status of the record (potentially a secondary copy), not the actual release time of the report.
@@ -129,18 +125,28 @@ trait DiagnosticReport
   /**
     * The status of the diagnostic report.
     */
-  var status: registered | partial | preliminary | `final` | amended | corrected | appended | cancelled | `entered-in-error` | unknown
+  var status: registered | partial | preliminary | modified | `final` | amended | corrected | appended | cancelled | `entered-in-error` | unknown
+  
+  /**
+    * For laboratory-type studies like GenomeStudy, type resources will be used for tracking additional metadata and workflow aspects of complex studies. ImagingStudy and the media element are somewhat overlapping - typically, the list of image references in the media element will also be found in one of the imaging study resources. However, each caters to different types of displays for different types of purposes. Neither, either, or both may be provided.
+    */
+  var study: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * The subject of the report. Usually, but not always, this is a patient. However, diagnostic services also perform analyses on specimens collected from a variety of other sources.
     */
   var subject: js.UndefOr[Reference] = js.undefined
+  
+  /**
+    * This backbone element contains supporting information that was used in the creation of the report not included in the results already included in the report.
+    */
+  var supportingInfo: js.UndefOr[js.Array[DiagnosticReportSupportingInfo]] = js.undefined
 }
 object DiagnosticReport {
   
   inline def apply(
     code: CodeableConcept,
-    status: registered | partial | preliminary | `final` | amended | corrected | appended | cancelled | `entered-in-error` | unknown
+    status: registered | partial | preliminary | modified | `final` | amended | corrected | appended | cancelled | `entered-in-error` | unknown
   ): DiagnosticReport = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], resourceType = "DiagnosticReport", status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagnosticReport]
@@ -195,12 +201,6 @@ object DiagnosticReport {
     
     inline def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value*))
     
-    inline def setImagingStudy(value: js.Array[Reference]): Self = StObject.set(x, "imagingStudy", value.asInstanceOf[js.Any])
-    
-    inline def setImagingStudyUndefined: Self = StObject.set(x, "imagingStudy", js.undefined)
-    
-    inline def setImagingStudyVarargs(value: Reference*): Self = StObject.set(x, "imagingStudy", js.Array(value*))
-    
     inline def setIssued(value: String): Self = StObject.set(x, "issued", value.asInstanceOf[js.Any])
     
     inline def setIssuedUndefined: Self = StObject.set(x, "issued", js.undefined)
@@ -250,12 +250,24 @@ object DiagnosticReport {
     inline def setSpecimenVarargs(value: Reference*): Self = StObject.set(x, "specimen", js.Array(value*))
     
     inline def setStatus(
-      value: registered | partial | preliminary | `final` | amended | corrected | appended | cancelled | `entered-in-error` | unknown
+      value: registered | partial | preliminary | modified | `final` | amended | corrected | appended | cancelled | `entered-in-error` | unknown
     ): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStudy(value: js.Array[Reference]): Self = StObject.set(x, "study", value.asInstanceOf[js.Any])
+    
+    inline def setStudyUndefined: Self = StObject.set(x, "study", js.undefined)
+    
+    inline def setStudyVarargs(value: Reference*): Self = StObject.set(x, "study", js.Array(value*))
     
     inline def setSubject(value: Reference): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+    
+    inline def setSupportingInfo(value: js.Array[DiagnosticReportSupportingInfo]): Self = StObject.set(x, "supportingInfo", value.asInstanceOf[js.Any])
+    
+    inline def setSupportingInfoUndefined: Self = StObject.set(x, "supportingInfo", js.undefined)
+    
+    inline def setSupportingInfoVarargs(value: DiagnosticReportSupportingInfo*): Self = StObject.set(x, "supportingInfo", js.Array(value*))
     
     inline def set_conclusion(value: Element): Self = StObject.set(x, "_conclusion", value.asInstanceOf[js.Any])
     

@@ -22,8 +22,14 @@ object distTypesStoriesResponsiveEditorSystemIndexDotstoryMod {
     
     @JSImport("@wix/wix-ui-icons-common/dist/types/stories/responsive-editor/system/index.story", "default.sections")
     @js.native
-    def sections: js.Array[Any] = js.native
-    inline def sections_=(x: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sections")(x.asInstanceOf[js.Any])
+    def sections: js.Array[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_story-section.HeaderSection */ Any
+      ] = js.native
+    inline def sections_=(
+      x: js.Array[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_story-section.HeaderSection */ Any
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sections")(x.asInstanceOf[js.Any])
     
     @JSImport("@wix/wix-ui-icons-common/dist/types/stories/responsive-editor/system/index.story", "default.storyName")
     @js.native

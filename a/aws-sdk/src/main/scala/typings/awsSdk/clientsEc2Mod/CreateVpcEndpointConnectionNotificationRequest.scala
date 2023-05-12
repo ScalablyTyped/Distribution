@@ -12,7 +12,7 @@ trait CreateVpcEndpointConnectionNotificationRequest extends StObject {
   var ClientToken: js.UndefOr[String] = js.undefined
   
   /**
-    * One or more endpoint events for which to receive notifications. Valid values are Accept, Connect, Delete, and Reject.
+    * The endpoint events for which to receive notifications. Valid values are Accept, Connect, Delete, and Reject.
     */
   var ConnectionEvents: ValueStringList
   

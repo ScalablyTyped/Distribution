@@ -37,7 +37,7 @@ trait AppMonitorConfiguration extends StObject {
   var IdentityPoolId: js.UndefOr[typings.awsSdk.clientsRumMod.IdentityPoolId] = js.undefined
   
   /**
-    * If this app monitor is to collect data from only certain pages in your application, this structure lists those pages.   &lt;p&gt;You can't include both &lt;code&gt;ExcludedPages&lt;/code&gt; and &lt;code&gt;IncludedPages&lt;/code&gt; in the same operation.&lt;/p&gt; 
+    * If this app monitor is to collect data from only certain pages in your application, this structure lists those pages.  You can't include both ExcludedPages and IncludedPages in the same operation.
     */
   var IncludedPages: js.UndefOr[Pages] = js.undefined
   

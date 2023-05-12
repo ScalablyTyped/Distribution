@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetResponses304401 extends StObject {
   
-  /** List the authenticated user's starred gists: */
+  /**
+    * List starred gists
+    * @description List the authenticated user's starred gists:
+    */
   var get: Responses304401
 }
 object GetResponses304401 {

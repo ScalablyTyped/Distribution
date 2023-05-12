@@ -11,6 +11,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`georeferenced-image`
 import typings.arcgisJsApi.arcgisJsApiStrings.`hide-children`
 import typings.arcgisJsApi.arcgisJsApiStrings.`imagery-tile`
 import typings.arcgisJsApi.arcgisJsApiStrings.`integrated-mesh`
+import typings.arcgisJsApi.arcgisJsApiStrings.`knowledge-graph`
 import typings.arcgisJsApi.arcgisJsApiStrings.`layerview-create-error`
 import typings.arcgisJsApi.arcgisJsApiStrings.`layerview-create`
 import typings.arcgisJsApi.arcgisJsApiStrings.`layerview-destroy`
@@ -134,7 +135,7 @@ trait Layer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#type)
     */
-  val `type`: `base-dynamic` | `base-elevation` | `base-tile` | `bing-maps` | `building-scene` | csv | dimension | elevation | feature | geojson | `geo-rss` | graphics | group | imagery | `imagery-tile` | `integrated-mesh` | kml | `line-of-sight` | `map-image` | `map-notes` | media | `ogc-feature` | `open-street-map` | `point-cloud` | typings.arcgisJsApi.arcgisJsApiStrings.route | scene | `georeferenced-image` | stream | tile | unknown | unsupported | `vector-tile` | wcs | `web-tile` | wfs | wms | wmts | voxel | `subtype-group` = js.native
+  val `type`: `base-dynamic` | `base-elevation` | `base-tile` | `bing-maps` | `building-scene` | csv | dimension | elevation | feature | geojson | `geo-rss` | graphics | group | imagery | `imagery-tile` | `integrated-mesh` | kml | `line-of-sight` | `map-image` | `map-notes` | media | `ogc-feature` | `open-street-map` | `point-cloud` | typings.arcgisJsApi.arcgisJsApiStrings.route | scene | `georeferenced-image` | stream | tile | unknown | unsupported | `vector-tile` | wcs | `web-tile` | wfs | wms | wmts | voxel | `subtype-group` | `knowledge-graph` = js.native
   
   /**
     * Indicates if the layer is visible in the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html).

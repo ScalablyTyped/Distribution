@@ -4,6 +4,8 @@ import typings.std.HTMLElement
 import typings.std.Record
 import typings.tabulatorTables.tabulatorTablesBooleans.`true`
 import typings.tabulatorTables.tabulatorTablesStrings.page
+import typings.tabulatorTables.tabulatorTablesStrings.pages
+import typings.tabulatorTables.tabulatorTablesStrings.rows
 import typings.tabulatorTables.tabulatorTablesStrings.table
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -51,6 +53,35 @@ trait OptionsPagination extends StObject {
   /** The number of pagination page buttons shown in the footer using the paginationButtonCount option. By default this has a value of 5. */
   var paginationButtonCount: js.UndefOr[Double] = js.undefined
   
+  /**
+    * You can choose to display a pagination counter in the bottom left of the footer that shows a summary of the current number of rows shown out of the total.
+    * If you want to have a fully customized counter, then you can pass a function to the paginationCounter option
+    *
+    * The formatter function accepts 5 arguments:
+    *
+    * pageSize - Number of rows shown per page
+    * currentRow - First visible row position
+    * currentPage - Current page
+    * totalRows - Total rows in table
+    * totalPages - Total pages in table
+    * The function must return the contents of the counter, either the text value of the counter, valid HTML or a DOM node
+    */
+  var paginationCounter: js.UndefOr[
+    rows | pages | (js.Function5[
+      /* pageSize */ Double, 
+      /* currentRow */ Double, 
+      /* currentPage */ Double, 
+      /* totalRows */ Double, 
+      /* totalPages */ Double, 
+      String | HTMLElement
+    ])
+  ] = js.undefined
+  
+  /**
+    * By default the counter will be displayed in the left of the table footer. If you would like it displayed in another element pass a DOM node or a CSS selector for that element.
+    */
+  var paginationCounterElement: js.UndefOr[String | HTMLElement] = js.undefined
+  
   /** By default the pagination controls are added to the footer of the table. If you wish the controls to be created in another element pass a DOM node or a CSS selector for that element to the paginationElement option. */
   var paginationElement: js.UndefOr[HTMLElement | String] = js.undefined
   
@@ -96,6 +127,27 @@ object OptionsPagination {
     inline def setPaginationButtonCount(value: Double): Self = StObject.set(x, "paginationButtonCount", value.asInstanceOf[js.Any])
     
     inline def setPaginationButtonCountUndefined: Self = StObject.set(x, "paginationButtonCount", js.undefined)
+    
+    inline def setPaginationCounter(
+      value: rows | pages | (js.Function5[
+          /* pageSize */ Double, 
+          /* currentRow */ Double, 
+          /* currentPage */ Double, 
+          /* totalRows */ Double, 
+          /* totalPages */ Double, 
+          String | HTMLElement
+        ])
+    ): Self = StObject.set(x, "paginationCounter", value.asInstanceOf[js.Any])
+    
+    inline def setPaginationCounterElement(value: String | HTMLElement): Self = StObject.set(x, "paginationCounterElement", value.asInstanceOf[js.Any])
+    
+    inline def setPaginationCounterElementUndefined: Self = StObject.set(x, "paginationCounterElement", js.undefined)
+    
+    inline def setPaginationCounterFunction5(
+      value: (/* pageSize */ Double, /* currentRow */ Double, /* currentPage */ Double, /* totalRows */ Double, /* totalPages */ Double) => String | HTMLElement
+    ): Self = StObject.set(x, "paginationCounter", js.Any.fromFunction5(value))
+    
+    inline def setPaginationCounterUndefined: Self = StObject.set(x, "paginationCounter", js.undefined)
     
     inline def setPaginationElement(value: HTMLElement | String): Self = StObject.set(x, "paginationElement", value.asInstanceOf[js.Any])
     

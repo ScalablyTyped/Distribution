@@ -10,24 +10,24 @@ trait ClassHttpsServer
      with ClassHttpServer {
   
   /**
-    * class prop 
+    * class prop
     *
-    * 
+    *
     * @brief 客户端证书验证 ca
-    * 
+    *
     * @readonly
     * @type X509Cert
     */
   var ca: ClassX509Cert = js.native
   
   /**
-    * class prop 
+    * class prop
     *
-    * 
+    *
     * @brief 设定证书验证模式，缺省为 VERIFY_NONE
-    * 
-    * 
-    * @type Integer
+    *
+    *
+    * @note Assumed to be an integer.
     */
   var verification: Double = js.native
 }

@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An object containing a <code>points</code> property to describe the
-  * polyline of a {@link google.maps.DirectionsStep}.
-  */
 trait DirectionsPolyline extends StObject {
   
   /**

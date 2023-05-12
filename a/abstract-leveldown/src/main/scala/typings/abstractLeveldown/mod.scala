@@ -39,7 +39,7 @@ object mod {
   open class AbstractChainedBatchCls[K, V] protected ()
     extends StObject
        with typings.abstractLeveldown.mod.AbstractChainedBatch[K, V] {
-    // tslint:disable-next-line no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def this(db: Any) = this()
   }
   
@@ -76,7 +76,7 @@ object mod {
   open class AbstractIteratorCls[K, V] protected ()
     extends StObject
        with AbstractIterator[K, V] {
-    // tslint:disable-next-line no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def this(db: Any) = this()
     
     /* CompleteClass */
@@ -132,7 +132,7 @@ object mod {
   open class AbstractLevelDOWNCls[K, V] protected ()
     extends StObject
        with typings.abstractLeveldown.mod.AbstractLevelDOWN[K, V] {
-    // tslint:disable-next-line no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def this(location: String) = this()
   }
   
@@ -159,13 +159,13 @@ object mod {
   @js.native
   trait AbstractChainedBatchConstructor
     extends StObject
-       with // tslint:disable-next-line no-unnecessary-generics
+       with // eslint-disable-next-line no-unnecessary-generics
   Instantiable1[
           /* db */ Any, 
           typings.abstractLeveldown.mod.AbstractChainedBatch[js.Object, js.Object]
         ] {
     
-    // tslint:disable-next-line no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def apply[K, V](db: Any): typings.abstractLeveldown.mod.AbstractChainedBatch[K, V] = js.native
   }
   
@@ -194,10 +194,10 @@ object mod {
   @js.native
   trait AbstractIteratorConstructor
     extends StObject
-       with // tslint:disable-next-line no-unnecessary-generics
+       with // eslint-disable-next-line no-unnecessary-generics
   Instantiable1[/* db */ Any, AbstractIterator[js.Object, js.Object]] {
     
-    // tslint:disable-next-line no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def apply[K, V](db: Any): AbstractIterator[K, V] = js.native
   }
   
@@ -280,13 +280,13 @@ object mod {
   @js.native
   trait AbstractLevelDOWNConstructor
     extends StObject
-       with // tslint:disable-next-line no-unnecessary-generics
+       with // eslint-disable-next-line no-unnecessary-generics
   Instantiable1[
           /* location */ String, 
           typings.abstractLeveldown.mod.AbstractLevelDOWN[js.Object, js.Object]
         ] {
     
-    // tslint:disable-next-line no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def apply[K, V](location: String): typings.abstractLeveldown.mod.AbstractLevelDOWN[K, V] = js.native
   }
   

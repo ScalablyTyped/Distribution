@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Log extends StObject {
   
-  var log: js.UndefOr[js.Array[String] | `false`] = js.undefined
+  var log: js.UndefOr[String | js.Array[String] | `false`] = js.undefined
   
-  var request: js.UndefOr[js.Array[String] | `false`] = js.undefined
+  var request: js.UndefOr[String | js.Array[String] | `false`] = js.undefined
 }
 object Log {
   
@@ -21,13 +21,13 @@ object Log {
   @scala.inline
   implicit open class MutableBuilder[Self <: Log] (val x: Self) extends AnyVal {
     
-    inline def setLog(value: js.Array[String] | `false`): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    inline def setLog(value: String | js.Array[String] | `false`): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
     inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     
     inline def setLogVarargs(value: String*): Self = StObject.set(x, "log", js.Array(value*))
     
-    inline def setRequest(value: js.Array[String] | `false`): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: String | js.Array[String] | `false`): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     

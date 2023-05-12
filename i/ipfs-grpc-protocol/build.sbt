@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ipfs-grpc-protocol"
-version := "0.7.0-d67311"
+version := "0.8.0-1fb6ec"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

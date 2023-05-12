@@ -22,6 +22,7 @@ object mod {
     Any, 
     Any, 
     Any, 
+    Any, 
     Any
   ]) | TypeofVue = js.native
 }

@@ -3,12 +3,15 @@ package typings.intlTelInput.mod
 import typings.intlTelInput.mod.intlTelInputUtils.numberFormat
 import typings.intlTelInput.mod.intlTelInputUtils.numberType
 import typings.intlTelInput.mod.intlTelInputUtils.validationError
+import typings.std.HTMLUListElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Plugin extends StObject {
+  
+  var countryList: HTMLUListElement = js.native
   
   /**
     * Remove the plugin from the input, and unbind any event listeners.

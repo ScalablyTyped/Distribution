@@ -3,6 +3,7 @@ package typings.three
 import typings.three.anon.NeedsUpdate
 import typings.three.srcCamerasCameraMod.Camera
 import typings.three.srcMaterialsMaterialMod.Material
+import typings.three.srcMathPlaneMod.Plane
 import typings.three.srcRenderersWebglWebGLPropertiesMod.WebGLProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,7 +20,7 @@ object srcRenderersWebglWebGLClippingMod {
     
     def endShadows(): Unit = js.native
     
-    def init(planes: js.Array[Any], enableLocalClipping: Boolean, camera: Camera): Boolean = js.native
+    def init(planes: js.Array[Any], enableLocalClipping: Boolean): Boolean = js.native
     
     /**
       * @default 0
@@ -30,6 +31,8 @@ object srcRenderersWebglWebGLClippingMod {
       * @default 0
       */
     var numPlanes: Double = js.native
+    
+    def setGlobalState(planes: js.Array[Plane], camera: Camera): Unit = js.native
     
     def setState(material: Material, camera: Camera, useCache: Boolean): Unit = js.native
     

@@ -91,11 +91,9 @@ object typingsDependencyGraphMod {
   
   @JSImport("hyperformula/typings/DependencyGraph", "EmptyCellVertex")
   @js.native
-  open class EmptyCellVertex protected ()
+  open class EmptyCellVertex ()
     extends typings.hyperformula.typingsDependencyGraphEmptyCellVertexMod.EmptyCellVertex
-       with CellVertex {
-    def this(address: SimpleCellAddress_) = this()
-  }
+       with CellVertex
   
   @JSImport("hyperformula/typings/DependencyGraph", "FormulaCellVertex")
   @js.native

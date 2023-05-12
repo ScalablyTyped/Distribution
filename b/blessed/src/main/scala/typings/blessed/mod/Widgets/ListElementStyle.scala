@@ -1,10 +1,13 @@
 package typings.blessed.mod.Widgets
 
+import typings.blessed.mod.Widgets.Types.TStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ListElementStyle extends StObject {
+trait ListElementStyle
+  extends StObject
+     with TStyle {
   
   var item: js.UndefOr[Any] = js.undefined
   

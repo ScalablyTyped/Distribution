@@ -1,5 +1,6 @@
 package typings.playcanvas.global.pc
 
+import typings.playcanvas.anon.PreferHighPrecision
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,30 +15,21 @@ open class Morph protected ()
   /**
     * Create a new Morph instance.
     *
-    * @param {MorphTarget[]} targets - A list of morph targets.
-    * @param {GraphicsDevice} graphicsDevice - The graphics device used to manage this morph
-    * target. If it is not provided, a device is obtained from the {@link Application}.
+    * @param {import('./morph-target.js').MorphTarget[]} targets - A list of morph targets.
+    * @param {import('../platform/graphics/graphics-device.js').GraphicsDevice} graphicsDevice -
+    * The graphics device used to manage this morph target.
+    * @param {object} options - Object for passing optional arguments.
+    * @param {boolean} options.preferHighPrecision - True if high precision storage should be
+    * prefered. This is faster to create and allows higher precision, but takes more memory and
+    * might be slower to render. Defaults to false.
     */
   def this(
     targets: js.Array[typings.playcanvas.mod.MorphTarget],
     graphicsDevice: typings.playcanvas.mod.GraphicsDevice
   ) = this()
-}
-object Morph {
-  
-  @JSGlobal("pc.Morph")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  /* static member */
-  @JSGlobal("pc.Morph.FORMAT_FLOAT")
-  @js.native
-  def FORMAT_FLOAT: Double = js.native
-  inline def FORMAT_FLOAT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FORMAT_FLOAT")(x.asInstanceOf[js.Any])
-  
-  /* static member */
-  @JSGlobal("pc.Morph.FORMAT_HALF_FLOAT")
-  @js.native
-  def FORMAT_HALF_FLOAT: Double = js.native
-  inline def FORMAT_HALF_FLOAT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FORMAT_HALF_FLOAT")(x.asInstanceOf[js.Any])
+  def this(
+    targets: js.Array[typings.playcanvas.mod.MorphTarget],
+    graphicsDevice: typings.playcanvas.mod.GraphicsDevice,
+    options: PreferHighPrecision
+  ) = this()
 }

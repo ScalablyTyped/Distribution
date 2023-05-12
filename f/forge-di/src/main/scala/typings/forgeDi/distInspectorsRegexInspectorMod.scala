@@ -16,7 +16,7 @@ object distInspectorsRegexInspectorMod {
        with RegexInspector {
     
     /* CompleteClass */
-    override def findConstructor(func: Constructor): Constructor = js.native
+    override def findConstructor(func: Constructor[Any]): Constructor[Any] = js.native
     
     /* CompleteClass */
     override def getDependencies(func: js.Function): js.Array[Dependency] = js.native
@@ -34,7 +34,7 @@ object distInspectorsRegexInspectorMod {
   object RegexInspector {
     
     inline def apply(
-      findConstructor: Constructor => Constructor,
+      findConstructor: Constructor[Any] => Constructor[Any],
       getDependencies: js.Function => js.Array[Dependency],
       getParameterNames: Any
     ): RegexInspector = {

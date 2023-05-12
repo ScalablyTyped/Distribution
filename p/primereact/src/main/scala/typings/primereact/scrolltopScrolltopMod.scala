@@ -1,5 +1,9 @@
 package typings.primereact
 
+import typings.primereact.primereactStrings.auto
+import typings.primereact.primereactStrings.parent
+import typings.primereact.primereactStrings.smooth
+import typings.primereact.primereactStrings.window
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
@@ -16,35 +20,74 @@ object scrolltopScrolltopMod {
     def this(props: ScrollTopProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ScrollTopProps, context: Any) = this()
     
+    /**
+      * Used to get container element.
+      * @return {HTMLButtonElement} Container element
+      */
     def getElement(): HTMLButtonElement = js.native
   }
   
   trait ScrollTopProps extends StObject {
     
-    var behavior: js.UndefOr[ScrollTopScrollBehavior] = js.undefined
+    /**
+      * Defines the scrolling behavior, "smooth" adds an animation and "auto" scrolls with a jump.
+      * @defaultValue smooth
+      */
+    var behavior: js.UndefOr[auto | smooth] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * Style class of the component.
+      */
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * Name of the icon or JSX.Element for icon.
+      */
     var icon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<ScrollTopProps> */ Any
       ] = js.undefined
     
+    /**
+      * 	Callback to invoke when overlay becomes hidden.
+      */
     var onHide: js.UndefOr[js.Function0[Unit]] = js.undefined
     
+    /**
+      * Callback to invoke when overlay panel becomes visible.
+      */
     var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
+    /**
+      * Inline style of the component.
+      */
     var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var target: js.UndefOr[ScrollTopTargetType] = js.undefined
+    /**
+      * Target of the ScrollTop, valid values are "window" and "parent".
+      * @defaultValue window
+      */
+    var target: js.UndefOr[window | parent] = js.undefined
     
+    /**
+      * Defines the threshold value of the vertical scroll position of the target to toggle the visibility.
+      * @defaultValue 400
+      */
     var threshold: js.UndefOr[Double] = js.undefined
     
+    /**
+      * The properties of CSSTransition can be customized, except for "nodeRef" and "in" properties.
+      * @type {CSSTransitionProps}
+      */
     var transitionOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSTransitionProps */ Any
       ] = js.undefined
@@ -59,7 +102,7 @@ object scrolltopScrolltopMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: ScrollTopProps] (val x: Self) extends AnyVal {
       
-      inline def setBehavior(value: ScrollTopScrollBehavior): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
+      inline def setBehavior(value: auto | smooth): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
       
       inline def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
       
@@ -89,7 +132,7 @@ object scrolltopScrolltopMod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setTarget(value: ScrollTopTargetType): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: window | parent): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -103,29 +146,5 @@ object scrolltopScrolltopMod {
       
       inline def setTransitionOptionsUndefined: Self = StObject.set(x, "transitionOptions", js.undefined)
     }
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.auto
-    - typings.primereact.primereactStrings.smooth
-  */
-  trait ScrollTopScrollBehavior extends StObject
-  object ScrollTopScrollBehavior {
-    
-    inline def auto: typings.primereact.primereactStrings.auto = "auto".asInstanceOf[typings.primereact.primereactStrings.auto]
-    
-    inline def smooth: typings.primereact.primereactStrings.smooth = "smooth".asInstanceOf[typings.primereact.primereactStrings.smooth]
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.window
-    - typings.primereact.primereactStrings.parent
-  */
-  trait ScrollTopTargetType extends StObject
-  object ScrollTopTargetType {
-    
-    inline def parent: typings.primereact.primereactStrings.parent = "parent".asInstanceOf[typings.primereact.primereactStrings.parent]
-    
-    inline def window: typings.primereact.primereactStrings.window = "window".asInstanceOf[typings.primereact.primereactStrings.window]
   }
 }

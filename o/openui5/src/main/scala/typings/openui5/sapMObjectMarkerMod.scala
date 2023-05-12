@@ -1,5 +1,6 @@
 package typings.openui5
 
+import typings.openui5.anon.`22`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.ObjectMarkerType
 import typings.openui5.sapMLibraryMod.ObjectMarkerVisibility
@@ -160,93 +161,8 @@ object sapMObjectMarkerMod {
     vAriaLabelledBy: ID): this.type = js.native
     
     /**
-      * Attaches event handler `fnFunction` to the {@link #event:press press} event of this `sap.m.ObjectMarker`.
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
-      * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
-      * otherwise it will be bound to this `sap.m.ObjectMarker` itself.
-      *
-      * Event is fired when the `ObjectMarker` is interactive and the user taps/clicks on it.
-      *
-      * @returns Reference to `this` in order to allow method chaining
-      */
-    def attachPress(
-      /**
-      * The function to be called when the event occurs
-      */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
-    ): this.type = js.native
-    def attachPress(
-      /**
-      * The function to be called when the event occurs
-      */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
-      /**
-      * Context object to call the event handler with. Defaults to this `sap.m.ObjectMarker` itself
-      */
-    oListener: js.Object
-    ): this.type = js.native
-    /**
-      * Attaches event handler `fnFunction` to the {@link #event:press press} event of this `sap.m.ObjectMarker`.
-      *
-      * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
-      * otherwise it will be bound to this `sap.m.ObjectMarker` itself.
-      *
-      * Event is fired when the `ObjectMarker` is interactive and the user taps/clicks on it.
-      *
-      * @returns Reference to `this` in order to allow method chaining
-      */
-    def attachPress(
-      /**
-      * An application-specific payload object that will be passed to the event handler along with the event
-      * object when firing the event
-      */
-    oData: js.Object,
-      /**
-      * The function to be called when the event occurs
-      */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
-    ): this.type = js.native
-    def attachPress(
-      /**
-      * An application-specific payload object that will be passed to the event handler along with the event
-      * object when firing the event
-      */
-    oData: js.Object,
-      /**
-      * The function to be called when the event occurs
-      */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
-      /**
-      * Context object to call the event handler with. Defaults to this `sap.m.ObjectMarker` itself
-      */
-    oListener: js.Object
-    ): this.type = js.native
-    
-    /**
-      * Detaches event handler `fnFunction` from the {@link #event:press press} event of this `sap.m.ObjectMarker`.
-      *
-      * The passed function and listener object must match the ones used for event registration.
-      *
-      * @returns Reference to `this` in order to allow method chaining
-      */
-    def detachPress(
-      /**
-      * The function to be called, when the event occurs
-      */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
-    ): this.type = js.native
-    def detachPress(
-      /**
-      * The function to be called, when the event occurs
-      */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
-      /**
-      * Context object on which the given function had to be called
-      */
-    oListener: js.Object
-    ): this.type = js.native
-    
-    /**
       * Fires event {@link #event:press press} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -255,7 +171,7 @@ object sapMObjectMarkerMod {
     def firePress(/**
       * Parameters to pass along with the event
       */
-    mParameters: js.Object): this.type = js.native
+    mParameters: `22`): this.type = js.native
     
     /**
       * Gets current value of property {@link #getAdditionalInfo additionalInfo}.

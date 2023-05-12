@@ -40,7 +40,9 @@ import typings.reactTypesShared.reactTypesSharedStrings.sticky
 import typings.reactTypesShared.reactTypesSharedStrings.stretch
 import typings.reactTypesShared.reactTypesSharedStrings.wrap
 import typings.reactTypesShared.srcDnaMod.BackgroundColorValue
+import typings.reactTypesShared.srcDnaMod.BackgroundColorValueV6
 import typings.reactTypesShared.srcDnaMod.BorderColorValue
+import typings.reactTypesShared.srcDnaMod.BorderColorValueV6
 import typings.reactTypesShared.srcDnaMod.BorderRadiusValue
 import typings.reactTypesShared.srcDnaMod.BorderSizeValue
 import typings.reactTypesShared.srcDnaMod.DimensionValue
@@ -49,6 +51,54 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcStyleMod {
+  
+  trait BackgroundColor extends StObject {
+    
+    var `5`: BackgroundColorValue
+    
+    var `6`: BackgroundColorValueV6
+  }
+  object BackgroundColor {
+    
+    inline def apply(`5`: BackgroundColorValue, `6`: BackgroundColorValueV6): BackgroundColor = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("5")(`5`.asInstanceOf[js.Any])
+      __obj.updateDynamic("6")(`6`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BackgroundColor]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackgroundColor] (val x: Self) extends AnyVal {
+      
+      inline def set5(value: BackgroundColorValue): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
+      
+      inline def set6(value: BackgroundColorValueV6): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait BorderColor extends StObject {
+    
+    var `5`: BorderColorValue
+    
+    var `6`: BorderColorValueV6
+  }
+  object BorderColor {
+    
+    inline def apply(`5`: BorderColorValue, `6`: BorderColorValueV6): BorderColor = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("5")(`5`.asInstanceOf[js.Any])
+      __obj.updateDynamic("6")(`6`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BorderColor]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BorderColor] (val x: Self) extends AnyVal {
+      
+      inline def set5(value: BorderColorValue): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
+      
+      inline def set6(value: BorderColorValueV6): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
+    }
+  }
   
   trait BoxAlignmentStyleProps extends StObject {
     
@@ -137,6 +187,18 @@ object srcStyleMod {
       
       inline def setRowGapUndefined: Self = StObject.set(x, "rowGap", js.undefined)
     }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.reactTypesShared.reactTypesSharedInts.`5`
+    - typings.reactTypesShared.reactTypesSharedInts.`6`
+  */
+  trait ColorVersion extends StObject
+  object ColorVersion {
+    
+    inline def `5`: typings.reactTypesShared.reactTypesSharedInts.`5` = 5.asInstanceOf[typings.reactTypesShared.reactTypesSharedInts.`5`]
+    
+    inline def `6`: typings.reactTypesShared.reactTypesSharedInts.`6` = 6.asInstanceOf[typings.reactTypesShared.reactTypesSharedInts.`6`]
   }
   
   trait FlexStyleProps
@@ -604,15 +666,23 @@ object srcStyleMod {
     }
   }
   
-  trait ViewStyleProps
+  trait ViewStyleProps[C /* <: ColorVersion */]
     extends StObject
        with StyleProps {
     
     /** The background color for the element. */
-    var backgroundColor: js.UndefOr[Responsive[BackgroundColorValue]] = js.undefined
+    var backgroundColor: js.UndefOr[
+        Responsive[
+          /* import warning: importer.ImportType#apply Failed type conversion: @react-types/shared.@react-types/shared/src/style.BackgroundColor[C] */ js.Any
+        ]
+      ] = js.undefined
     
     /** The color of the bottom border. See [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-color). */
-    var borderBottomColor: js.UndefOr[Responsive[BorderColorValue]] = js.undefined
+    var borderBottomColor: js.UndefOr[
+        Responsive[
+          /* import warning: importer.ImportType#apply Failed type conversion: @react-types/shared.@react-types/shared/src/style.BorderColor[C] */ js.Any
+        ]
+      ] = js.undefined
     
     /** The border radius for the bottom end corner of the element, depending on the layout direction. See [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border-end-end-radius). */
     var borderBottomEndRadius: js.UndefOr[Responsive[BorderRadiusValue]] = js.undefined
@@ -624,10 +694,18 @@ object srcStyleMod {
     var borderBottomWidth: js.UndefOr[Responsive[BorderSizeValue]] = js.undefined
     
     /** The color of the element's border on all four sides. See [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border-color). */
-    var borderColor: js.UndefOr[Responsive[BorderColorValue]] = js.undefined
+    var borderColor: js.UndefOr[
+        Responsive[
+          /* import warning: importer.ImportType#apply Failed type conversion: @react-types/shared.@react-types/shared/src/style.BorderColor[C] */ js.Any
+        ]
+      ] = js.undefined
     
     /** The color of the border on the logical end side, depending on the layout direction. See [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end-color). */
-    var borderEndColor: js.UndefOr[Responsive[BorderColorValue]] = js.undefined
+    var borderEndColor: js.UndefOr[
+        Responsive[
+          /* import warning: importer.ImportType#apply Failed type conversion: @react-types/shared.@react-types/shared/src/style.BorderColor[C] */ js.Any
+        ]
+      ] = js.undefined
     
     /** The width of the border on the logical end side, depending on the layout direction. See [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end-width). */
     var borderEndWidth: js.UndefOr[Responsive[BorderSizeValue]] = js.undefined
@@ -636,7 +714,11 @@ object srcStyleMod {
     var borderRadius: js.UndefOr[Responsive[BorderRadiusValue]] = js.undefined
     
     /** The color of the border on the logical start side, depending on the layout direction. See [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start-color). */
-    var borderStartColor: js.UndefOr[Responsive[BorderColorValue]] = js.undefined
+    var borderStartColor: js.UndefOr[
+        Responsive[
+          /* import warning: importer.ImportType#apply Failed type conversion: @react-types/shared.@react-types/shared/src/style.BorderColor[C] */ js.Any
+        ]
+      ] = js.undefined
     
     /** The width of the border on the logical start side, depending on the layout direction. See [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start-width). */
     var borderStartWidth: js.UndefOr[Responsive[BorderSizeValue]] = js.undefined
@@ -644,7 +726,11 @@ object srcStyleMod {
     // borderLeftColor?: BorderColorValue,
     // borderRightColor?: BorderColorValue,
     /** The color of the top border. See [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-color). */
-    var borderTopColor: js.UndefOr[Responsive[BorderColorValue]] = js.undefined
+    var borderTopColor: js.UndefOr[
+        Responsive[
+          /* import warning: importer.ImportType#apply Failed type conversion: @react-types/shared.@react-types/shared/src/style.BorderColor[C] */ js.Any
+        ]
+      ] = js.undefined
     
     /** The border radius for the top end corner of the element, depending on the layout direction. See [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border-start-end-radius). */
     var borderTopEndRadius: js.UndefOr[Responsive[BorderRadiusValue]] = js.undefined
@@ -661,16 +747,30 @@ object srcStyleMod {
     var borderWidth: js.UndefOr[Responsive[BorderSizeValue]] = js.undefined
     
     /** The color of the left and right borders. See [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border-color). */
-    var borderXColor: js.UndefOr[Responsive[BorderColorValue]] = js.undefined
+    var borderXColor: js.UndefOr[
+        Responsive[
+          /* import warning: importer.ImportType#apply Failed type conversion: @react-types/shared.@react-types/shared/src/style.BorderColor[C] */ js.Any
+        ]
+      ] = js.undefined
     
     /** The width of the left and right borders. See [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border-width). */
     var borderXWidth: js.UndefOr[Responsive[BorderSizeValue]] = js.undefined
     
     /** The color of the top and bottom borders. See [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border-width). */
-    var borderYColor: js.UndefOr[Responsive[BorderColorValue]] = js.undefined
+    var borderYColor: js.UndefOr[
+        Responsive[
+          /* import warning: importer.ImportType#apply Failed type conversion: @react-types/shared.@react-types/shared/src/style.BorderColor[C] */ js.Any
+        ]
+      ] = js.undefined
     
     /** The width of the top and bottom borders. See [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border-width). */
     var borderYWidth: js.UndefOr[Responsive[BorderSizeValue]] = js.undefined
+    
+    /**
+      * The Spectrum color token version number.
+      * @default 5
+      */
+    var colorVersion: js.UndefOr[C] = js.undefined
     
     /** Species what to do when the element's content is too long to fit its size. See [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow). */
     var overflow: js.UndefOr[Responsive[String]] = js.undefined
@@ -704,19 +804,27 @@ object srcStyleMod {
   }
   object ViewStyleProps {
     
-    inline def apply(): ViewStyleProps = {
+    inline def apply[C /* <: ColorVersion */](): ViewStyleProps[C] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ViewStyleProps]
+      __obj.asInstanceOf[ViewStyleProps[C]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: ViewStyleProps] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: ViewStyleProps[?], C /* <: ColorVersion */] (val x: Self & ViewStyleProps[C]) extends AnyVal {
       
-      inline def setBackgroundColor(value: Responsive[BackgroundColorValue]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(
+        value: Responsive[
+              /* import warning: importer.ImportType#apply Failed type conversion: @react-types/shared.@react-types/shared/src/style.BackgroundColor[C] */ js.Any
+            ]
+      ): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
       inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      inline def setBorderBottomColor(value: Responsive[BorderColorValue]): Self = StObject.set(x, "borderBottomColor", value.asInstanceOf[js.Any])
+      inline def setBorderBottomColor(
+        value: Responsive[
+              /* import warning: importer.ImportType#apply Failed type conversion: @react-types/shared.@react-types/shared/src/style.BorderColor[C] */ js.Any
+            ]
+      ): Self = StObject.set(x, "borderBottomColor", value.asInstanceOf[js.Any])
       
       inline def setBorderBottomColorUndefined: Self = StObject.set(x, "borderBottomColor", js.undefined)
       
@@ -732,11 +840,19 @@ object srcStyleMod {
       
       inline def setBorderBottomWidthUndefined: Self = StObject.set(x, "borderBottomWidth", js.undefined)
       
-      inline def setBorderColor(value: Responsive[BorderColorValue]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+      inline def setBorderColor(
+        value: Responsive[
+              /* import warning: importer.ImportType#apply Failed type conversion: @react-types/shared.@react-types/shared/src/style.BorderColor[C] */ js.Any
+            ]
+      ): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
       inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
       
-      inline def setBorderEndColor(value: Responsive[BorderColorValue]): Self = StObject.set(x, "borderEndColor", value.asInstanceOf[js.Any])
+      inline def setBorderEndColor(
+        value: Responsive[
+              /* import warning: importer.ImportType#apply Failed type conversion: @react-types/shared.@react-types/shared/src/style.BorderColor[C] */ js.Any
+            ]
+      ): Self = StObject.set(x, "borderEndColor", value.asInstanceOf[js.Any])
       
       inline def setBorderEndColorUndefined: Self = StObject.set(x, "borderEndColor", js.undefined)
       
@@ -748,7 +864,11 @@ object srcStyleMod {
       
       inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
       
-      inline def setBorderStartColor(value: Responsive[BorderColorValue]): Self = StObject.set(x, "borderStartColor", value.asInstanceOf[js.Any])
+      inline def setBorderStartColor(
+        value: Responsive[
+              /* import warning: importer.ImportType#apply Failed type conversion: @react-types/shared.@react-types/shared/src/style.BorderColor[C] */ js.Any
+            ]
+      ): Self = StObject.set(x, "borderStartColor", value.asInstanceOf[js.Any])
       
       inline def setBorderStartColorUndefined: Self = StObject.set(x, "borderStartColor", js.undefined)
       
@@ -756,7 +876,11 @@ object srcStyleMod {
       
       inline def setBorderStartWidthUndefined: Self = StObject.set(x, "borderStartWidth", js.undefined)
       
-      inline def setBorderTopColor(value: Responsive[BorderColorValue]): Self = StObject.set(x, "borderTopColor", value.asInstanceOf[js.Any])
+      inline def setBorderTopColor(
+        value: Responsive[
+              /* import warning: importer.ImportType#apply Failed type conversion: @react-types/shared.@react-types/shared/src/style.BorderColor[C] */ js.Any
+            ]
+      ): Self = StObject.set(x, "borderTopColor", value.asInstanceOf[js.Any])
       
       inline def setBorderTopColorUndefined: Self = StObject.set(x, "borderTopColor", js.undefined)
       
@@ -776,7 +900,11 @@ object srcStyleMod {
       
       inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
       
-      inline def setBorderXColor(value: Responsive[BorderColorValue]): Self = StObject.set(x, "borderXColor", value.asInstanceOf[js.Any])
+      inline def setBorderXColor(
+        value: Responsive[
+              /* import warning: importer.ImportType#apply Failed type conversion: @react-types/shared.@react-types/shared/src/style.BorderColor[C] */ js.Any
+            ]
+      ): Self = StObject.set(x, "borderXColor", value.asInstanceOf[js.Any])
       
       inline def setBorderXColorUndefined: Self = StObject.set(x, "borderXColor", js.undefined)
       
@@ -784,13 +912,21 @@ object srcStyleMod {
       
       inline def setBorderXWidthUndefined: Self = StObject.set(x, "borderXWidth", js.undefined)
       
-      inline def setBorderYColor(value: Responsive[BorderColorValue]): Self = StObject.set(x, "borderYColor", value.asInstanceOf[js.Any])
+      inline def setBorderYColor(
+        value: Responsive[
+              /* import warning: importer.ImportType#apply Failed type conversion: @react-types/shared.@react-types/shared/src/style.BorderColor[C] */ js.Any
+            ]
+      ): Self = StObject.set(x, "borderYColor", value.asInstanceOf[js.Any])
       
       inline def setBorderYColorUndefined: Self = StObject.set(x, "borderYColor", js.undefined)
       
       inline def setBorderYWidth(value: Responsive[BorderSizeValue]): Self = StObject.set(x, "borderYWidth", value.asInstanceOf[js.Any])
       
       inline def setBorderYWidthUndefined: Self = StObject.set(x, "borderYWidth", js.undefined)
+      
+      inline def setColorVersion(value: C): Self = StObject.set(x, "colorVersion", value.asInstanceOf[js.Any])
+      
+      inline def setColorVersionUndefined: Self = StObject.set(x, "colorVersion", js.undefined)
       
       inline def setOverflow(value: Responsive[String]): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
       

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImportAssetFromSignedUrlRequestDetails extends StObject {
   
   /**
-    * The name of the asset. When importing from Amazon S3, the S3 object key is used as the asset name.
+    * The name of the asset. When importing from Amazon S3, the Amazon S3 object key is used as the asset name.
     */
   var AssetName: typings.awsSdk.clientsDataexchangeMod.AssetName
   

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@achingbrain/ssdp" : "4.0.1"
+      "@achingbrain/ssdp" : "4.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@achingbrain/ssdp" : "4.0.1"
+      "@achingbrain/ssdp" : "4.0.4"
     }
   ],
   "compile-devDependencies" : [

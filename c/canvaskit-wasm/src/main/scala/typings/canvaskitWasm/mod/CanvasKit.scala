@@ -97,6 +97,8 @@ trait CanvasKit extends StObject {
   
   val Font: FontConstructor = js.native
   
+  val FontCollection: FontCollectionFactory = js.native
+  
   val FontEdging: FontEdgingEnumValues = js.native
   
   val FontHinting: FontHintingEnumValues = js.native
@@ -356,6 +358,10 @@ trait CanvasKit extends StObject {
     * @param width - number of pixels of the width of the visible area.
     * @param height - number of pixels of the height of the visible area.
     * @param colorSpace
+    * @param sampleCount - sample count value from GL_SAMPLES. If not provided this will be looked up from
+    *                      the canvas.
+    * @param stencil - stencil count value from GL_STENCIL_BITS. If not provided this will be looked up
+    *                  from the WebGL Context.
     */
   def MakeOnScreenGLSurface(
     ctx: GrDirectContext,
@@ -363,15 +369,29 @@ trait CanvasKit extends StObject {
     height: Double,
     colorSpace: typings.canvaskitWasm.mod.ColorSpace
   ): Surface | Null = js.native
-  
-  /**
-    * Returns a Particles effect built from the provided json string and assets.
-    * Requires that Particles be compiled into CanvasKit
-    * @param json
-    * @param assets
-    */
-  def MakeParticles(json: String): Particles = js.native
-  def MakeParticles(json: String, assets: Record[String, js.typedarray.ArrayBuffer]): Particles = js.native
+  def MakeOnScreenGLSurface(
+    ctx: GrDirectContext,
+    width: Double,
+    height: Double,
+    colorSpace: typings.canvaskitWasm.mod.ColorSpace,
+    sampleCount: Double
+  ): Surface | Null = js.native
+  def MakeOnScreenGLSurface(
+    ctx: GrDirectContext,
+    width: Double,
+    height: Double,
+    colorSpace: typings.canvaskitWasm.mod.ColorSpace,
+    sampleCount: Double,
+    stencil: Double
+  ): Surface | Null = js.native
+  def MakeOnScreenGLSurface(
+    ctx: GrDirectContext,
+    width: Double,
+    height: Double,
+    colorSpace: typings.canvaskitWasm.mod.ColorSpace,
+    sampleCount: Unit,
+    stencil: Double
+  ): Surface | Null = js.native
   
   def MakePicture(bytes: js.typedarray.ArrayBuffer): SkPicture | Null = js.native
   /**
@@ -713,9 +733,6 @@ trait CanvasKit extends StObject {
   def parseColorString(color: String, colorMap: Record[String, js.typedarray.Float32Array]): js.typedarray.Float32Array = js.native
   
   // true if advanced (managed) Skottie code was compiled in
-  val particles: js.UndefOr[Boolean] = js.native
-  
-  // true if Particles code was compiled in
   val rt_effect: js.UndefOr[Boolean] = js.native
   
   /**

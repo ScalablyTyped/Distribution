@@ -7,7 +7,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// tslint:disable-next-line  no-declare-current-package keeping it simple
+// eslint-disable-next-line no-declare-current-package
 object pluginMod extends Shortcut {
   
   @JSImport("webp-in-css/plugin", JSImport.Namespace)

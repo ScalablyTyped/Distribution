@@ -189,6 +189,7 @@ type OauthToken = String
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.WEB
   - typings.awsSdk.awsSdkStrings.WEB_DYNAMIC
+  - typings.awsSdk.awsSdkStrings.WEB_COMPUTE
   - java.lang.String
 */
 type Platform = _Platform | String

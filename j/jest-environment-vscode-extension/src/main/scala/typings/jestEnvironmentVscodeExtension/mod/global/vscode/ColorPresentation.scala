@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class ColorPresentation protected ()
   extends typings.vscode.mod.ColorPresentation {
   /**
-    * Creates a new color presentation.
-    *
-    * @param label The label of this color presentation.
-    */
+  		 * Creates a new color presentation.
+  		 *
+  		 * @param label The label of this color presentation.
+  		 */
   def this(label: String) = this()
 }

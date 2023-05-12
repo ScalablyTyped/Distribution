@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersPathGistidQueryPage extends StObject {
   
+  /** List gist comments */
   var get: ParametersPathGistidQueryPage
   
+  /** Create a gist comment */
   var post: RequestBodyContentApplicationjsonBody
 }
 object GetParametersPathGistidQueryPage {

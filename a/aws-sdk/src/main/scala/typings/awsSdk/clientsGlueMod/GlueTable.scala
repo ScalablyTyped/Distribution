@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GlueTable extends StObject {
   
   /**
+    * Additional options for the table. Currently there are two keys supported:    pushDownPredicate: to filter on partitions without having to list and read all the files in your dataset.    catalogPartitionPredicate: to use server-side partition pruning using partition indexes in the Glue Data Catalog.  
+    */
+  var AdditionalOptions: js.UndefOr[GlueTableAdditionalOptions] = js.undefined
+  
+  /**
     * A unique identifier for the Glue Data Catalog.
     */
   var CatalogId: js.UndefOr[NameString] = js.undefined
@@ -35,6 +40,10 @@ object GlueTable {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: GlueTable] (val x: Self) extends AnyVal {
+    
+    inline def setAdditionalOptions(value: GlueTableAdditionalOptions): Self = StObject.set(x, "AdditionalOptions", value.asInstanceOf[js.Any])
+    
+    inline def setAdditionalOptionsUndefined: Self = StObject.set(x, "AdditionalOptions", js.undefined)
     
     inline def setCatalogId(value: NameString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     

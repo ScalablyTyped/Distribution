@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdk.awsSdkStrings.ACTIVE
 import typings.awsSdk.awsSdkStrings.ALL
 import typings.awsSdk.awsSdkStrings.SHARED_WITH_ME
+import typings.awsSdk.awsSdkStrings.WEBURL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,6 +50,10 @@ type ActivityNamesFilterType = String
 */
 type ActivityType = _ActivityType | String
 
+type AdditionalResponseFieldType = WEBURL | String
+
+type AdditionalResponseFieldsList = js.Array[AdditionalResponseFieldType]
+
 type AuthenticationHeaderType = String
 
 /* Rewritten from type alias, can be one of: 
@@ -80,6 +85,20 @@ type CommentTextType = String
   - java.lang.String
 */
 type CommentVisibilityType = _CommentVisibilityType | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.IMAGE
+  - typings.awsSdk.awsSdkStrings.DOCUMENT
+  - typings.awsSdk.awsSdkStrings.PDF
+  - typings.awsSdk.awsSdkStrings.SPREADSHEET
+  - typings.awsSdk.awsSdkStrings.PRESENTATION
+  - typings.awsSdk.awsSdkStrings.AUDIO
+  - typings.awsSdk.awsSdkStrings.VIDEO
+  - typings.awsSdk.awsSdkStrings.SOURCE_CODE
+  - typings.awsSdk.awsSdkStrings.OTHER
+  - java.lang.String
+*/
+type ContentCategoryType = _ContentCategoryType | String
 
 type CustomMetadataKeyList = js.Array[CustomMetadataKeyType]
 
@@ -151,6 +170,42 @@ type HeaderValueType = String
 
 type IdType = String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AR
+  - typings.awsSdk.awsSdkStrings.BG
+  - typings.awsSdk.awsSdkStrings.BN
+  - typings.awsSdk.awsSdkStrings.DA
+  - typings.awsSdk.awsSdkStrings.DE
+  - typings.awsSdk.awsSdkStrings.CS
+  - typings.awsSdk.awsSdkStrings.EL
+  - typings.awsSdk.awsSdkStrings.EN
+  - typings.awsSdk.awsSdkStrings.ES
+  - typings.awsSdk.awsSdkStrings.FA
+  - typings.awsSdk.awsSdkStrings.FI
+  - typings.awsSdk.awsSdkStrings.FR
+  - typings.awsSdk.awsSdkStrings.HI
+  - typings.awsSdk.awsSdkStrings.HU
+  - typings.awsSdk.awsSdkStrings.ID
+  - typings.awsSdk.awsSdkStrings.IT
+  - typings.awsSdk.awsSdkStrings.JA
+  - typings.awsSdk.awsSdkStrings.KO
+  - typings.awsSdk.awsSdkStrings.LT
+  - typings.awsSdk.awsSdkStrings.LV
+  - typings.awsSdk.awsSdkStrings.NL
+  - typings.awsSdk.awsSdkStrings.NO
+  - typings.awsSdk.awsSdkStrings.PT
+  - typings.awsSdk.awsSdkStrings.RO
+  - typings.awsSdk.awsSdkStrings.RU
+  - typings.awsSdk.awsSdkStrings.SV
+  - typings.awsSdk.awsSdkStrings.SW
+  - typings.awsSdk.awsSdkStrings.TH
+  - typings.awsSdk.awsSdkStrings.TR
+  - typings.awsSdk.awsSdkStrings.ZH
+  - typings.awsSdk.awsSdkStrings.DEFAULT
+  - java.lang.String
+*/
+type LanguageCodeType = _LanguageCodeType | String
+
 type LimitType = Double
 
 /* Rewritten from type alias, can be one of: 
@@ -169,9 +224,23 @@ type LimitType = Double
 */
 type LocaleType = _LocaleType | String
 
+type LongType = Double
+
 type MarkerType = String
 
 type MessageType = String
+
+type NextMarkerType = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.RELEVANCE
+  - typings.awsSdk.awsSdkStrings.NAME
+  - typings.awsSdk.awsSdkStrings.SIZE
+  - typings.awsSdk.awsSdkStrings.CREATED_TIMESTAMP
+  - typings.awsSdk.awsSdkStrings.MODIFIED_TIMESTAMP
+  - java.lang.String
+*/
+type OrderByFieldType = _OrderByFieldType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ASCENDING
@@ -193,6 +262,15 @@ type PositiveIntegerType = Double
 type PositiveSizeType = Double
 
 type PrincipalList = js.Array[Principal]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.VIEWER
+  - typings.awsSdk.awsSdkStrings.CONTRIBUTOR
+  - typings.awsSdk.awsSdkStrings.OWNER
+  - typings.awsSdk.awsSdkStrings.COOWNER
+  - java.lang.String
+*/
+type PrincipalRoleType = _PrincipalRoleType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.USER
@@ -236,6 +314,19 @@ type ResourceStateType = _ResourceStateType | String
 type ResourceType = _ResourceType | String
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DOCUMENT
+  - typings.awsSdk.awsSdkStrings.FOLDER
+  - typings.awsSdk.awsSdkStrings.COMMENT
+  - typings.awsSdk.awsSdkStrings.DOCUMENT_VERSION
+  - java.lang.String
+*/
+type ResponseItemType = _ResponseItemType | String
+
+type ResponseItemWebUrl = String
+
+type ResponseItemsList = js.Array[ResponseItem]
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DIRECT
   - typings.awsSdk.awsSdkStrings.INHERITED
   - java.lang.String
@@ -251,9 +342,56 @@ type RolePermissionType = _RolePermissionType | String
 */
 type RoleType = _RoleType | String
 
+type SearchAncestorId = String
+
+type SearchAncestorIdList = js.Array[SearchAncestorId]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.OWNED
+  - typings.awsSdk.awsSdkStrings.SHARED_WITH_ME
+  - java.lang.String
+*/
+type SearchCollectionType = _SearchCollectionType | String
+
+type SearchCollectionTypeList = js.Array[SearchCollectionType]
+
+type SearchContentCategoryTypeList = js.Array[ContentCategoryType]
+
+type SearchLabel = String
+
+type SearchLabelList = js.Array[SearchLabel]
+
 type SearchMarkerType = String
 
+type SearchPrincipalRoleList = js.Array[PrincipalRoleType]
+
+type SearchPrincipalTypeList = js.Array[SearchPrincipalType]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NAME
+  - typings.awsSdk.awsSdkStrings.CONTENT
+  - java.lang.String
+*/
+type SearchQueryScopeType = _SearchQueryScopeType | String
+
+type SearchQueryScopeTypeList = js.Array[SearchQueryScopeType]
+
 type SearchQueryType = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.FOLDER
+  - typings.awsSdk.awsSdkStrings.DOCUMENT
+  - typings.awsSdk.awsSdkStrings.COMMENT
+  - typings.awsSdk.awsSdkStrings.DOCUMENT_VERSION
+  - java.lang.String
+*/
+type SearchResourceType = _SearchResourceType | String
+
+type SearchResourceTypeList = js.Array[SearchResourceType]
+
+type SearchResultSortList = js.Array[SearchSortResult]
+
+type SearchResultsLimitType = Double
 
 type SharePrincipalList = js.Array[SharePrincipal]
 
@@ -275,6 +413,13 @@ type SignedHeaderMap = StringDictionary[HeaderValueType]
 type SizeType = Double
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ASC
+  - typings.awsSdk.awsSdkStrings.DESC
+  - java.lang.String
+*/
+type SortOrder = _SortOrder | String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.UNLIMITED
   - typings.awsSdk.awsSdkStrings.QUOTA
   - java.lang.String
@@ -293,6 +438,8 @@ type SubscriptionList = js.Array[Subscription]
 type SubscriptionProtocolType = _SubscriptionProtocolType | String
 
 type SubscriptionType = ALL | String
+
+type TextLocaleTypeList = js.Array[LanguageCodeType]
 
 type TimeZoneIdType = String
 

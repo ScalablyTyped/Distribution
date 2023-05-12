@@ -1,5 +1,6 @@
 package typings.preact
 
+import typings.preact.mod.h.JSX.AriaRole
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,12 +16,44 @@ object preactStrings {
   inline def abbr: abbr = "abbr".asInstanceOf[abbr]
   
   @js.native
+  sealed trait additions extends StObject
+  inline def additions: additions = "additions".asInstanceOf[additions]
+  
+  @js.native
+  sealed trait `additions removals` extends StObject
+  inline def `additions removals`: `additions removals` = ("additions removals").asInstanceOf[`additions removals`]
+  
+  @js.native
+  sealed trait `additions text` extends StObject
+  inline def `additions text`: `additions text` = ("additions text").asInstanceOf[`additions text`]
+  
+  @js.native
   sealed trait address extends StObject
   inline def address: address = "address".asInstanceOf[address]
   
   @js.native
   sealed trait `after-edge` extends StObject
   inline def `after-edge`: `after-edge` = "after-edge".asInstanceOf[`after-edge`]
+  
+  @js.native
+  sealed trait alert
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def alert: alert = "alert".asInstanceOf[alert]
+  
+  @js.native
+  sealed trait alertdialog
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def alertdialog: alertdialog = "alertdialog".asInstanceOf[alertdialog]
+  
+  @js.native
+  sealed trait all extends StObject
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
   sealed trait alphabetic extends StObject
@@ -35,20 +68,44 @@ object preactStrings {
   inline def animate: animate = "animate".asInstanceOf[animate]
   
   @js.native
+  sealed trait animateMotion extends StObject
+  inline def animateMotion: animateMotion = "animateMotion".asInstanceOf[animateMotion]
+  
+  @js.native
   sealed trait animateTransform extends StObject
   inline def animateTransform: animateTransform = "animateTransform".asInstanceOf[animateTransform]
+  
+  @js.native
+  sealed trait application
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def application: application = "application".asInstanceOf[application]
   
   @js.native
   sealed trait area extends StObject
   inline def area: area = "area".asInstanceOf[area]
   
   @js.native
-  sealed trait article extends StObject
+  sealed trait article
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
   inline def article: article = "article".asInstanceOf[article]
+  
+  @js.native
+  sealed trait ascending extends StObject
+  inline def ascending: ascending = "ascending".asInstanceOf[ascending]
   
   @js.native
   sealed trait aside extends StObject
   inline def aside: aside = "aside".asInstanceOf[aside]
+  
+  @js.native
+  sealed trait assertive extends StObject
+  inline def assertive: assertive = "assertive".asInstanceOf[assertive]
   
   @js.native
   sealed trait async extends StObject
@@ -65,6 +122,14 @@ object preactStrings {
   @js.native
   sealed trait b extends StObject
   inline def b: b = "b".asInstanceOf[b]
+  
+  @js.native
+  sealed trait banner
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def banner: banner = "banner".asInstanceOf[banner]
   
   @js.native
   sealed trait base extends StObject
@@ -103,6 +168,10 @@ object preactStrings {
   inline def body: body = "body".asInstanceOf[body]
   
   @js.native
+  sealed trait both extends StObject
+  inline def both: both = "both".asInstanceOf[both]
+  
+  @js.native
   sealed trait br extends StObject
   inline def br: br = "br".asInstanceOf[br]
   
@@ -111,7 +180,11 @@ object preactStrings {
   inline def butt: butt = "butt".asInstanceOf[butt]
   
   @js.native
-  sealed trait button extends StObject
+  sealed trait button
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
   inline def button: button = "button".asInstanceOf[button]
   
   @js.native
@@ -123,12 +196,28 @@ object preactStrings {
   inline def caption: caption = "caption".asInstanceOf[caption]
   
   @js.native
+  sealed trait cell
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def cell: cell = "cell".asInstanceOf[cell]
+  
+  @js.native
   sealed trait central extends StObject
   inline def central: central = "central".asInstanceOf[central]
   
   @js.native
   sealed trait characters extends StObject
   inline def characters: characters = "characters".asInstanceOf[characters]
+  
+  @js.native
+  sealed trait checkbox
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   
   @js.native
   sealed trait circle extends StObject
@@ -155,6 +244,42 @@ object preactStrings {
   inline def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
   
   @js.native
+  sealed trait columnheader
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def columnheader: columnheader = "columnheader".asInstanceOf[columnheader]
+  
+  @js.native
+  sealed trait combobox
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def combobox: combobox = "combobox".asInstanceOf[combobox]
+  
+  @js.native
+  sealed trait complementary
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def complementary: complementary = "complementary".asInstanceOf[complementary]
+  
+  @js.native
+  sealed trait contentinfo
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def contentinfo: contentinfo = "contentinfo".asInstanceOf[contentinfo]
+  
+  @js.native
+  sealed trait copy extends StObject
+  inline def copy: copy = "copy".asInstanceOf[copy]
+  
+  @js.native
   sealed trait currentTarget extends StObject
   inline def currentTarget: currentTarget = "currentTarget".asInstanceOf[currentTarget]
   
@@ -167,8 +292,20 @@ object preactStrings {
   inline def datalist: datalist = "datalist".asInstanceOf[datalist]
   
   @js.native
+  sealed trait date extends StObject
+  inline def date: date = "date".asInstanceOf[date]
+  
+  @js.native
   sealed trait dd extends StObject
   inline def dd: dd = "dd".asInstanceOf[dd]
+  
+  @js.native
+  sealed trait definition
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def definition: definition = "definition".asInstanceOf[definition]
   
   @js.native
   sealed trait defs extends StObject
@@ -183,6 +320,10 @@ object preactStrings {
   inline def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
+  sealed trait descending extends StObject
+  inline def descending: descending = "descending".asInstanceOf[descending]
+  
+  @js.native
   sealed trait details extends StObject
   inline def details: details = "details".asInstanceOf[details]
   
@@ -191,8 +332,20 @@ object preactStrings {
   inline def dfn: dfn = "dfn".asInstanceOf[dfn]
   
   @js.native
-  sealed trait dialog extends StObject
+  sealed trait dialog
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
+  
+  @js.native
+  sealed trait directory
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def directory: directory = "directory".asInstanceOf[directory]
   
   @js.native
   sealed trait div extends StObject
@@ -201,6 +354,14 @@ object preactStrings {
   @js.native
   sealed trait dl extends StObject
   inline def dl: dl = "dl".asInstanceOf[dl]
+  
+  @js.native
+  sealed trait document
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def document: document = "document".asInstanceOf[document]
   
   @js.native
   sealed trait done extends StObject
@@ -239,6 +400,10 @@ object preactStrings {
   inline def evenodd: evenodd = "evenodd".asInstanceOf[evenodd]
   
   @js.native
+  sealed trait execute extends StObject
+  inline def execute: execute = "execute".asInstanceOf[execute]
+  
+  @js.native
   sealed trait feBlend extends StObject
   inline def feBlend: feBlend = "feBlend".asInstanceOf[feBlend]
   
@@ -265,6 +430,10 @@ object preactStrings {
   @js.native
   sealed trait feDisplacementMap extends StObject
   inline def feDisplacementMap: feDisplacementMap = "feDisplacementMap".asInstanceOf[feDisplacementMap]
+  
+  @js.native
+  sealed trait feDistantLight extends StObject
+  inline def feDistantLight: feDistantLight = "feDistantLight".asInstanceOf[feDistantLight]
   
   @js.native
   sealed trait feDropShadow extends StObject
@@ -315,8 +484,16 @@ object preactStrings {
   inline def feOffset: feOffset = "feOffset".asInstanceOf[feOffset]
   
   @js.native
+  sealed trait fePointLight extends StObject
+  inline def fePointLight: fePointLight = "fePointLight".asInstanceOf[fePointLight]
+  
+  @js.native
   sealed trait feSpecularLighting extends StObject
   inline def feSpecularLighting: feSpecularLighting = "feSpecularLighting".asInstanceOf[feSpecularLighting]
+  
+  @js.native
+  sealed trait feSpotLight extends StObject
+  inline def feSpotLight: feSpotLight = "feSpotLight".asInstanceOf[feSpotLight]
   
   @js.native
   sealed trait feTile extends StObject
@@ -327,6 +504,14 @@ object preactStrings {
   inline def feTurbulence: feTurbulence = "feTurbulence".asInstanceOf[feTurbulence]
   
   @js.native
+  sealed trait feed
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def feed: feed = "feed".asInstanceOf[feed]
+  
+  @js.native
   sealed trait fieldset extends StObject
   inline def fieldset: fieldset = "fieldset".asInstanceOf[fieldset]
   
@@ -335,7 +520,11 @@ object preactStrings {
   inline def figcaption: figcaption = "figcaption".asInstanceOf[figcaption]
   
   @js.native
-  sealed trait figure extends StObject
+  sealed trait figure
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
   inline def figure: figure = "figure".asInstanceOf[figure]
   
   @js.native
@@ -351,7 +540,11 @@ object preactStrings {
   inline def foreignObject: foreignObject = "foreignObject".asInstanceOf[foreignObject]
   
   @js.native
-  sealed trait form extends StObject
+  sealed trait form
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
   inline def form: form = "form".asInstanceOf[form]
   
   @js.native
@@ -361,6 +554,34 @@ object preactStrings {
   @js.native
   sealed trait go extends StObject
   inline def go: go = "go".asInstanceOf[go]
+  
+  @js.native
+  sealed trait grammar extends StObject
+  inline def grammar: grammar = "grammar".asInstanceOf[grammar]
+  
+  @js.native
+  sealed trait grid
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def grid: grid = "grid".asInstanceOf[grid]
+  
+  @js.native
+  sealed trait gridcell
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def gridcell: gridcell = "gridcell".asInstanceOf[gridcell]
+  
+  @js.native
+  sealed trait group
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def group: group = "group".asInstanceOf[group]
   
   @js.native
   sealed trait h1 extends StObject
@@ -399,8 +620,20 @@ object preactStrings {
   inline def header: header = "header".asInstanceOf[header]
   
   @js.native
+  sealed trait heading
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def heading: heading = "heading".asInstanceOf[heading]
+  
+  @js.native
   sealed trait hgroup extends StObject
   inline def hgroup: hgroup = "hgroup".asInstanceOf[hgroup]
+  
+  @js.native
+  sealed trait horizontal extends StObject
+  inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
   sealed trait hr extends StObject
@@ -427,7 +660,11 @@ object preactStrings {
   inline def image: image = "image".asInstanceOf[image]
   
   @js.native
-  sealed trait img extends StObject
+  sealed trait img
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
   inline def img: img = "img".asInstanceOf[img]
   
   @js.native
@@ -437,6 +674,10 @@ object preactStrings {
   @js.native
   sealed trait initial extends StObject
   inline def initial: initial = "initial".asInstanceOf[initial]
+  
+  @js.native
+  sealed trait `inline` extends StObject
+  inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
   sealed trait input extends StObject
@@ -491,15 +732,59 @@ object preactStrings {
   inline def linearRGB: linearRGB = "linearRGB".asInstanceOf[linearRGB]
   
   @js.native
-  sealed trait link extends StObject
+  sealed trait link
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
   inline def link: link = "link".asInstanceOf[link]
+  
+  @js.native
+  sealed trait list
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def list: list = "list".asInstanceOf[list]
+  
+  @js.native
+  sealed trait listbox
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def listbox: listbox = "listbox".asInstanceOf[listbox]
+  
+  @js.native
+  sealed trait listitem
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def listitem: listitem = "listitem".asInstanceOf[listitem]
+  
+  @js.native
+  sealed trait location extends StObject
+  inline def location: location = "location".asInstanceOf[location]
+  
+  @js.native
+  sealed trait log
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def log: log = "log".asInstanceOf[log]
   
   @js.native
   sealed trait ltr extends StObject
   inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
-  sealed trait main extends StObject
+  sealed trait main
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
   inline def main: main = "main".asInstanceOf[main]
   
   @js.native
@@ -515,12 +800,24 @@ object preactStrings {
   inline def marker: marker = "marker".asInstanceOf[marker]
   
   @js.native
-  sealed trait marquee extends StObject
+  sealed trait marquee
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
   inline def marquee: marquee = "marquee".asInstanceOf[marquee]
   
   @js.native
   sealed trait mask extends StObject
   inline def mask: mask = "mask".asInstanceOf[mask]
+  
+  @js.native
+  sealed trait math
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def math: math = "math".asInstanceOf[math]
   
   @js.native
   sealed trait mathematical extends StObject
@@ -531,16 +828,52 @@ object preactStrings {
   inline def medial: medial = "medial".asInstanceOf[medial]
   
   @js.native
-  sealed trait menu extends StObject
+  sealed trait menu
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
   inline def menu: menu = "menu".asInstanceOf[menu]
   
   @js.native
-  sealed trait menuitem extends StObject
+  sealed trait menubar
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def menubar: menubar = "menubar".asInstanceOf[menubar]
+  
+  @js.native
+  sealed trait menuitem
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
   inline def menuitem: menuitem = "menuitem".asInstanceOf[menuitem]
+  
+  @js.native
+  sealed trait menuitemcheckbox
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def menuitemcheckbox: menuitemcheckbox = "menuitemcheckbox".asInstanceOf[menuitemcheckbox]
+  
+  @js.native
+  sealed trait menuitemradio
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def menuitemradio: menuitemradio = "menuitemradio".asInstanceOf[menuitemradio]
   
   @js.native
   sealed trait meta extends StObject
   inline def meta: meta = "meta".asInstanceOf[meta]
+  
+  @js.native
+  sealed trait metadata extends StObject
+  inline def metadata: metadata = "metadata".asInstanceOf[metadata]
   
   @js.native
   sealed trait meter extends StObject
@@ -555,8 +888,28 @@ object preactStrings {
   inline def miter: miter = "miter".asInstanceOf[miter]
   
   @js.native
+  sealed trait mixed extends StObject
+  inline def mixed: mixed = "mixed".asInstanceOf[mixed]
+  
+  @js.native
+  sealed trait move extends StObject
+  inline def move: move = "move".asInstanceOf[move]
+  
+  @js.native
+  sealed trait mpath extends StObject
+  inline def mpath: mpath = "mpath".asInstanceOf[mpath]
+  
+  @js.native
   sealed trait nav extends StObject
   inline def nav: nav = "nav".asInstanceOf[nav]
+  
+  @js.native
+  sealed trait navigation
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def navigation: navigation = "navigation".asInstanceOf[navigation]
   
   @js.native
   sealed trait next extends StObject
@@ -575,8 +928,20 @@ object preactStrings {
   inline def `no-referrer-when-downgrade`: `no-referrer-when-downgrade` = "no-referrer-when-downgrade".asInstanceOf[`no-referrer-when-downgrade`]
   
   @js.native
-  sealed trait none extends StObject
+  sealed trait none
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
   inline def none: none = "none".asInstanceOf[none]
+  
+  @js.native
+  sealed trait `none presentation`
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def `none presentation`: `none presentation` = ("none presentation").asInstanceOf[`none presentation`]
   
   @js.native
   sealed trait nonzero extends StObject
@@ -585,6 +950,14 @@ object preactStrings {
   @js.native
   sealed trait noscript extends StObject
   inline def noscript: noscript = "noscript".asInstanceOf[noscript]
+  
+  @js.native
+  sealed trait note
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def note: note = "note".asInstanceOf[note]
   
   @js.native
   sealed trait `object` extends StObject
@@ -607,7 +980,11 @@ object preactStrings {
   inline def optgroup: optgroup = "optgroup".asInstanceOf[optgroup]
   
   @js.native
-  sealed trait option extends StObject
+  sealed trait option
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
   inline def option: option = "option".asInstanceOf[option]
   
   @js.native
@@ -619,12 +996,20 @@ object preactStrings {
   inline def `origin-when-cross-origin`: `origin-when-cross-origin` = "origin-when-cross-origin".asInstanceOf[`origin-when-cross-origin`]
   
   @js.native
+  sealed trait other extends StObject
+  inline def other: other = "other".asInstanceOf[other]
+  
+  @js.native
   sealed trait output extends StObject
   inline def output: output = "output".asInstanceOf[output]
   
   @js.native
   sealed trait p extends StObject
   inline def p: p = "p".asInstanceOf[p]
+  
+  @js.native
+  sealed trait page extends StObject
+  inline def page: page = "page".asInstanceOf[page]
   
   @js.native
   sealed trait param extends StObject
@@ -643,6 +1028,10 @@ object preactStrings {
   inline def picture: picture = "picture".asInstanceOf[picture]
   
   @js.native
+  sealed trait polite extends StObject
+  inline def polite: polite = "polite".asInstanceOf[polite]
+  
+  @js.native
   sealed trait polygon extends StObject
   inline def polygon: polygon = "polygon".asInstanceOf[polygon]
   
@@ -651,8 +1040,20 @@ object preactStrings {
   inline def polyline: polyline = "polyline".asInstanceOf[polyline]
   
   @js.native
+  sealed trait popup extends StObject
+  inline def popup: popup = "popup".asInstanceOf[popup]
+  
+  @js.native
   sealed trait pre extends StObject
   inline def pre: pre = "pre".asInstanceOf[pre]
+  
+  @js.native
+  sealed trait presentation
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def presentation: presentation = "presentation".asInstanceOf[presentation]
   
   @js.native
   sealed trait previous extends StObject
@@ -663,6 +1064,14 @@ object preactStrings {
   inline def progress: progress = "progress".asInstanceOf[progress]
   
   @js.native
+  sealed trait progressbar
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def progressbar: progressbar = "progressbar".asInstanceOf[progressbar]
+  
+  @js.native
   sealed trait q extends StObject
   inline def q: q = "q".asInstanceOf[q]
   
@@ -671,8 +1080,44 @@ object preactStrings {
   inline def radialGradient: radialGradient = "radialGradient".asInstanceOf[radialGradient]
   
   @js.native
+  sealed trait radio
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def radio: radio = "radio".asInstanceOf[radio]
+  
+  @js.native
+  sealed trait radiogroup
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def radiogroup: radiogroup = "radiogroup".asInstanceOf[radiogroup]
+  
+  @js.native
   sealed trait rect extends StObject
   inline def rect: rect = "rect".asInstanceOf[rect]
+  
+  @js.native
+  sealed trait region
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def region: region = "region".asInstanceOf[region]
+  
+  @js.native
+  sealed trait removals extends StObject
+  inline def removals: removals = "removals".asInstanceOf[removals]
+  
+  @js.native
+  sealed trait `removals additions` extends StObject
+  inline def `removals additions`: `removals additions` = ("removals additions").asInstanceOf[`removals additions`]
+  
+  @js.native
+  sealed trait `removals text` extends StObject
+  inline def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
   
   @js.native
   sealed trait replace extends StObject
@@ -685,6 +1130,30 @@ object preactStrings {
   @js.native
   sealed trait round extends StObject
   inline def round: round = "round".asInstanceOf[round]
+  
+  @js.native
+  sealed trait row
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def row: row = "row".asInstanceOf[row]
+  
+  @js.native
+  sealed trait rowgroup
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def rowgroup: rowgroup = "rowgroup".asInstanceOf[rowgroup]
+  
+  @js.native
+  sealed trait rowheader
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def rowheader: rowheader = "rowheader".asInstanceOf[rowheader]
   
   @js.native
   sealed trait rp extends StObject
@@ -727,8 +1196,28 @@ object preactStrings {
   inline def scroll: scroll = "scroll".asInstanceOf[scroll]
   
   @js.native
-  sealed trait search extends StObject
+  sealed trait scrollbar
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def scrollbar: scrollbar = "scrollbar".asInstanceOf[scrollbar]
+  
+  @js.native
+  sealed trait search
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
   inline def search: search = "search".asInstanceOf[search]
+  
+  @js.native
+  sealed trait searchbox
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def searchbox: searchbox = "searchbox".asInstanceOf[searchbox]
   
   @js.native
   sealed trait section extends StObject
@@ -747,8 +1236,28 @@ object preactStrings {
   inline def sentences: sentences = "sentences".asInstanceOf[sentences]
   
   @js.native
+  sealed trait separator
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def separator: separator = "separator".asInstanceOf[separator]
+  
+  @js.native
+  sealed trait set extends StObject
+  inline def set: set = "set".asInstanceOf[set]
+  
+  @js.native
   sealed trait slide extends StObject
   inline def slide: slide = "slide".asInstanceOf[slide]
+  
+  @js.native
+  sealed trait slider
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def slider: slider = "slider".asInstanceOf[slider]
   
   @js.native
   sealed trait slot extends StObject
@@ -767,8 +1276,32 @@ object preactStrings {
   inline def span: span = "span".asInstanceOf[span]
   
   @js.native
+  sealed trait spelling extends StObject
+  inline def spelling: spelling = "spelling".asInstanceOf[spelling]
+  
+  @js.native
+  sealed trait spinbutton
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def spinbutton: spinbutton = "spinbutton".asInstanceOf[spinbutton]
+  
+  @js.native
   sealed trait square extends StObject
   inline def square: square = "square".asInstanceOf[square]
+  
+  @js.native
+  sealed trait status
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def status: status = "status".asInstanceOf[status]
+  
+  @js.native
+  sealed trait step extends StObject
+  inline def step: step = "step".asInstanceOf[step]
   
   @js.native
   sealed trait stop extends StObject
@@ -811,6 +1344,14 @@ object preactStrings {
   inline def svg: svg = "svg".asInstanceOf[svg]
   
   @js.native
+  sealed trait switch
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def switch: switch = "switch".asInstanceOf[switch]
+  
+  @js.native
   sealed trait symbol extends StObject
   inline def symbol: symbol = "symbol".asInstanceOf[symbol]
   
@@ -819,8 +1360,36 @@ object preactStrings {
   inline def sync: sync = "sync".asInstanceOf[sync]
   
   @js.native
-  sealed trait table extends StObject
+  sealed trait tab
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def tab: tab = "tab".asInstanceOf[tab]
+  
+  @js.native
+  sealed trait table
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
   inline def table: table = "table".asInstanceOf[table]
+  
+  @js.native
+  sealed trait tablist
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def tablist: tablist = "tablist".asInstanceOf[tablist]
+  
+  @js.native
+  sealed trait tabpanel
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def tabpanel: tabpanel = "tabpanel".asInstanceOf[tabpanel]
   
   @js.native
   sealed trait tbody extends StObject
@@ -831,12 +1400,28 @@ object preactStrings {
   inline def td: td = "td".asInstanceOf[td]
   
   @js.native
+  sealed trait term
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def term: term = "term".asInstanceOf[term]
+  
+  @js.native
   sealed trait terminal extends StObject
   inline def terminal: terminal = "terminal".asInstanceOf[terminal]
   
   @js.native
   sealed trait text extends StObject
   inline def text: text = "text".asInstanceOf[text]
+  
+  @js.native
+  sealed trait `text additions` extends StObject
+  inline def `text additions`: `text additions` = ("text additions").asInstanceOf[`text additions`]
+  
+  @js.native
+  sealed trait `text removals` extends StObject
+  inline def `text removals`: `text removals` = ("text removals").asInstanceOf[`text removals`]
   
   @js.native
   sealed trait `text-after-edge` extends StObject
@@ -855,6 +1440,14 @@ object preactStrings {
   inline def textarea: textarea = "textarea".asInstanceOf[textarea]
   
   @js.native
+  sealed trait textbox
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def textbox: textbox = "textbox".asInstanceOf[textbox]
+  
+  @js.native
   sealed trait tfoot extends StObject
   inline def tfoot: tfoot = "tfoot".asInstanceOf[tfoot]
   
@@ -871,8 +1464,32 @@ object preactStrings {
   inline def time: time = "time".asInstanceOf[time]
   
   @js.native
+  sealed trait timer
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def timer: timer = "timer".asInstanceOf[timer]
+  
+  @js.native
   sealed trait title extends StObject
   inline def title: title = "title".asInstanceOf[title]
+  
+  @js.native
+  sealed trait toolbar
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def toolbar: toolbar = "toolbar".asInstanceOf[toolbar]
+  
+  @js.native
+  sealed trait tooltip
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def tooltip: tooltip = "tooltip".asInstanceOf[tooltip]
   
   @js.native
   sealed trait tr extends StObject
@@ -881,6 +1498,30 @@ object preactStrings {
   @js.native
   sealed trait track extends StObject
   inline def track: track = "track".asInstanceOf[track]
+  
+  @js.native
+  sealed trait tree
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def tree: tree = "tree".asInstanceOf[tree]
+  
+  @js.native
+  sealed trait treegrid
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def treegrid: treegrid = "treegrid".asInstanceOf[treegrid]
+  
+  @js.native
+  sealed trait treeitem
+    extends StObject
+       with AriaRole
+       with typings.preact.mod.createElement.JSX.AriaRole
+       with typings.preact.srcJsxMod.JSXInternal.AriaRole
+  inline def treeitem: treeitem = "treeitem".asInstanceOf[treeitem]
   
   @js.native
   sealed trait tspan extends StObject
@@ -911,8 +1552,16 @@ object preactStrings {
   inline def `var`: `var` = "var".asInstanceOf[`var`]
   
   @js.native
+  sealed trait vertical extends StObject
+  inline def vertical: vertical = "vertical".asInstanceOf[vertical]
+  
+  @js.native
   sealed trait video extends StObject
   inline def video: video = "video".asInstanceOf[video]
+  
+  @js.native
+  sealed trait view extends StObject
+  inline def view: view = "view".asInstanceOf[view]
   
   @js.native
   sealed trait wbr extends StObject

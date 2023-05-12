@@ -1,5 +1,6 @@
 package typings.angularCompilerCli
 
+import typings.angularCompiler.mod.TransplantedType
 import typings.angularCompiler.mod.Type
 import typings.angularCompilerCli.anon.ClassDeclarationClassDecl
 import typings.angularCompilerCli.srcNgtscImportsMod.Reference
@@ -71,6 +72,13 @@ object srcNgtscTypecheckSrcEnvironmentMod {
       */
     def referenceExternalType(moduleName: String, name: String): TypeNode = js.native
     def referenceExternalType(moduleName: String, name: String, typeParams: js.Array[Type]): TypeNode = js.native
+    
+    /**
+      * Generates a `ts.TypeNode` representing a type that is being referenced from a different place
+      * in the program. Any type references inside the transplanted type will be rewritten so that
+      * they can be imported in the context fiel.
+      */
+    def referenceTransplantedType(`type`: TransplantedType[TypeNode]): TypeNode = js.native
     
     /**
       * Generate a `ts.TypeNode` that references the given node as a type.

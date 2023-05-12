@@ -42,7 +42,6 @@ object operation {
         *          g the geometry to buffer.
         * @param {BufferParameters}
         *          bufParams the buffer parameters to use.
-        * @constructor
         */
       def this(g: Geometry, bufParams: typings.jsts.jsts.operation.buffer.BufferParameters) = this()
       
@@ -104,7 +103,6 @@ object operation {
         * This value should be less than the decimal precision of double-precision
         * values (16).
         *
-        * @type {int}
         */
       @JSImport("jsts", "operation.buffer.BufferOp.MAX_PRECISION_DIGITS")
       @js.native
@@ -195,7 +193,6 @@ object operation {
     /**
       * Contains the parameters which describe how a buffer should be constructed.
       *
-      * @constructor
       */
     open class BufferParameters ()
       extends StObject
@@ -344,7 +341,6 @@ object operation {
       /**
         * Specifies a flat line buffer end cap style.
         *
-        * @type {int}
         */
       @JSImport("jsts", "operation.buffer.BufferParameters.CAP_FLAT")
       @js.native
@@ -354,7 +350,6 @@ object operation {
       /**
         * Specifies a round line buffer end cap style.
         *
-        * @type {int}
         */
       @JSImport("jsts", "operation.buffer.BufferParameters.CAP_ROUND")
       @js.native
@@ -364,7 +359,6 @@ object operation {
       /**
         * Specifies a square line buffer end cap style.
         *
-        * @type {int}
         */
       @JSImport("jsts", "operation.buffer.BufferParameters.CAP_SQUARE")
       @js.native
@@ -374,7 +368,6 @@ object operation {
       /**
         * The default mitre limit Allows fairly pointy mitres.
         *
-        * @type {double}
         */
       @JSImport("jsts", "operation.buffer.BufferParameters.DEFAULT_MITRE_LIMIT")
       @js.native
@@ -386,7 +379,6 @@ object operation {
         * value of 8 gives less than 2% max error in the buffer distance. For a max
         * error of < 1%, use QS = 12. For a max error of < 0.1%, use QS = 18.
         *
-        * @type {int}
         */
       @JSImport("jsts", "operation.buffer.BufferParameters.DEFAULT_QUADRANT_SEGMENTS")
       @js.native
@@ -396,7 +388,6 @@ object operation {
       /**
         * Specifies a bevel join style.
         *
-        * @type {int}
         */
       @JSImport("jsts", "operation.buffer.BufferParameters.JOIN_BEVEL")
       @js.native
@@ -414,7 +405,6 @@ object operation {
       /**
         * Specifies a round join style.
         *
-        * @type {int}
         */
       @JSImport("jsts", "operation.buffer.BufferParameters.JOIN_ROUND")
       @js.native
@@ -566,12 +556,44 @@ object operation {
       /**
         * A special value of segmentIndex used for locations inside area geometries.
         *
-        * @type {int}
         */
       @JSImport("jsts", "operation.distance.GeometryLocation.INSIDE_AREA")
       @js.native
       def INSIDE_AREA: Double = js.native
       inline def INSIDE_AREA_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INSIDE_AREA")(x.asInstanceOf[js.Any])
+    }
+  }
+  
+  object linemerge {
+    
+    @JSImport("jsts", "operation.linemerge.LineMerger")
+    @js.native
+    /**
+      * Creates a new line merger.
+      */
+    open class LineMerger ()
+      extends StObject
+         with typings.jsts.jsts.operation.linemerge.LineMerger
+  }
+  
+  object polygonize {
+    
+    @JSImport("jsts", "operation.polygonize.Polygonizer")
+    @js.native
+    /**
+      * Creates a polygonizer that extracts all polygons.
+      */
+    open class Polygonizer ()
+      extends StObject
+         with typings.jsts.jsts.operation.polygonize.Polygonizer {
+      /**
+        * Creates a polygonizer, specifying whether a valid polygonal geometry must be created.
+        * If the argument is true then areas may be discarded in order to ensure
+        * that the extracted geometry is a valid polygonal geometry.
+        *
+        * @param {boolean} extractOnlyPolygonal true if a valid polygonal geometry should be extracted
+        */
+      def this(extractOnlyPolygonal: Boolean) = this()
     }
   }
   

@@ -1,7 +1,7 @@
 
 # Scala.js typings for fusioncharts
 
-Typings are for version 3.19.0
+Typings are for version 3.20.0
 
 ## Library description:
 FusionCharts JavaScript charting framework

@@ -4,10 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Options for the row expansion template
+  * @see {@link DataTableProps.rowExpansionTemplate}
+  */
 trait DataTableRowExpansionTemplate extends StObject {
   
+  /**
+    * Used to override the rendering of the content.
+    */
   var customRendering: Boolean
   
+  /**
+    * Index of the row.
+    */
   var index: Double
 }
 object DataTableRowExpansionTemplate {

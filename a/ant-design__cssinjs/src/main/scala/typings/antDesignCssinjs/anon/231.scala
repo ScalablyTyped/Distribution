@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderBlockStyle
+import typings.csstype.mod.Property.MozAppearance
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `231` extends StObject {
   
   var value: js.UndefOr[
-    BorderBlockStyle | (js.Array[
+    MozAppearance | (js.Array[
       (Extract[
-        js.UndefOr[BorderBlockStyle | js.Array[NonNullable[js.UndefOr[BorderBlockStyle]]]], 
+        js.UndefOr[MozAppearance | js.Array[NonNullable[js.UndefOr[MozAppearance]]]], 
         String
-      ]) | NonNullable[js.UndefOr[BorderBlockStyle]]
+      ]) | NonNullable[js.UndefOr[MozAppearance]]
     ])
   ] = js.native
 }

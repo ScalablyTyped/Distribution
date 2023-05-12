@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetResourceShareAssociationsRequest extends StObject {
   
   /**
-    * Specifies that you want to retrieve only associations with this status.
+    * Specifies that you want to retrieve only associations that have this status.
     */
   var associationStatus: js.UndefOr[ResourceShareAssociationStatus] = js.undefined
   
   /**
-    * Specifies whether you want to retrieve the associations that involve a specified resource or principal.    PRINCIPAL – list the principals that are associated with the specified resource share.    RESOURCE – list the resources that are associated with the specified resource share.  
+    * Specifies whether you want to retrieve the associations that involve a specified resource or principal.    PRINCIPAL – list the principals whose associations you want to see.    RESOURCE – list the resources whose associations you want to see.  
     */
   var associationType: ResourceShareAssociationType
   
@@ -27,12 +27,12 @@ trait GetResourceShareAssociationsRequest extends StObject {
   var nextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies the ID of the principal whose resource shares you want to retrieve. This can be an Amazon Web Services account ID, an organization ID, an organizational unit ID, or the Amazon Resoure Name (ARN) of an individual IAM user or role. You cannot specify this parameter if the association type is RESOURCE.
+    * Specifies the ID of the principal whose resource shares you want to retrieve. This can be an Amazon Web Services account ID, an organization ID, an organizational unit ID, or the Amazon Resource Name (ARN) of an individual IAM user or role. You cannot specify this parameter if the association type is RESOURCE.
     */
   var principal: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies the Amazon Resoure Name (ARN) of the resource whose resource shares you want to retrieve. You cannot specify this parameter if the association type is PRINCIPAL.
+    * Specifies the Amazon Resource Name (ARN) of a resource whose resource shares you want to retrieve. You cannot specify this parameter if the association type is PRINCIPAL.
     */
   var resourceArn: js.UndefOr[String] = js.undefined
   

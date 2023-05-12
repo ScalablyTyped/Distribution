@@ -11,5 +11,6 @@ trait TypeofIcosahedronGeometry
   extends StObject
      with Instantiable0[IcosahedronGeometry] {
   
-  def fromJSON(data: Any): typings.three.srcGeometriesIcosahedronGeometryMod.IcosahedronGeometry = js.native
+  /** @internal */
+  def fromJSON(data: js.Object): typings.three.srcGeometriesIcosahedronGeometryMod.IcosahedronGeometry = js.native
 }

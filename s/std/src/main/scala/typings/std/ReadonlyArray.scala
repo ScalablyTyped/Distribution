@@ -100,35 +100,6 @@ trait ReadonlyArray[T]
     predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], Any],
     thisArg: Any
   ): js.UndefOr[T] = js.native
-  /**
-    * Returns the value of the first element in the array where predicate is true, and undefined
-    * otherwise.
-    * @param predicate find calls predicate once for each element of the array, in ascending
-    * order, until it finds one where predicate returns true. If such an element is found, find
-    * immediately returns that element value. Otherwise, find returns undefined.
-    * @param thisArg If provided, it will be used as the this value for each invocation of
-    * predicate. If it is not provided, undefined is used instead.
-    */
-  /* standard es2015.core */
-  def find[S /* <: T */](
-    predicate: js.ThisFunction3[
-      /* this */ Unit, 
-      /* value */ T, 
-      /* index */ Double, 
-      /* obj */ js.Array[T], 
-      /* is S */ scala.Boolean
-    ]
-  ): js.UndefOr[S] = js.native
-  def find[S /* <: T */](
-    predicate: js.ThisFunction3[
-      /* this */ Unit, 
-      /* value */ T, 
-      /* index */ Double, 
-      /* obj */ js.Array[T], 
-      /* is S */ scala.Boolean
-    ],
-    thisArg: Any
-  ): js.UndefOr[S] = js.native
   
   /**
     * Returns the index of the first element in the array where predicate is true, and -1
@@ -145,6 +116,69 @@ trait ReadonlyArray[T]
     predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], Any],
     thisArg: Any
   ): Double = js.native
+  
+  /* standard es2023.array */
+  def findLast(predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Any]): js.UndefOr[T] = js.native
+  def findLast(
+    predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Any],
+    thisArg: Any
+  ): js.UndefOr[T] = js.native
+  
+  /**
+    * Returns the index of the last element in the array where predicate is true, and -1
+    * otherwise.
+    * @param predicate findLastIndex calls predicate once for each element of the array, in descending
+    * order, until it finds one where predicate returns true. If such an element is found,
+    * findLastIndex immediately returns that element index. Otherwise, findLastIndex returns -1.
+    * @param thisArg If provided, it will be used as the this value for each invocation of
+    * predicate. If it is not provided, undefined is used instead.
+    */
+  /* standard es2023.array */
+  def findLastIndex(predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Any]): Double = js.native
+  def findLastIndex(
+    predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Any],
+    thisArg: Any
+  ): Double = js.native
+  
+  /**
+    * Returns the value of the last element in the array where predicate is true, and undefined
+    * otherwise.
+    * @param predicate findLast calls predicate once for each element of the array, in descending
+    * order, until it finds one where predicate returns true. If such an element is found, findLast
+    * immediately returns that element value. Otherwise, findLast returns undefined.
+    * @param thisArg If provided, it will be used as the this value for each invocation of
+    * predicate. If it is not provided, undefined is used instead.
+    */
+  /* standard es2023.array */
+  @JSName("findLast")
+  def findLast_S[S /* <: T */](
+    predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], /* is S */ scala.Boolean]
+  ): js.UndefOr[S] = js.native
+  @JSName("findLast")
+  def findLast_S[S /* <: T */](
+    predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], /* is S */ scala.Boolean],
+    thisArg: Any
+  ): js.UndefOr[S] = js.native
+  
+  /**
+    * Returns the value of the first element in the array where predicate is true, and undefined
+    * otherwise.
+    * @param predicate find calls predicate once for each element of the array, in ascending
+    * order, until it finds one where predicate returns true. If such an element is found, find
+    * immediately returns that element value. Otherwise, find returns undefined.
+    * @param thisArg If provided, it will be used as the this value for each invocation of
+    * predicate. If it is not provided, undefined is used instead.
+    */
+  /* standard es2015.core */
+  @JSName("find")
+  def find_S[S /* <: T */](
+    predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], /* is S */ scala.Boolean]
+  ): js.UndefOr[S] = js.native
+  @JSName("find")
+  def find_S[S /* <: T */](
+    predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], /* is S */ scala.Boolean],
+    thisArg: Any
+  ): js.UndefOr[S] = js.native
   
   /**
     * Returns a new array with all sub-array elements concatenated into it recursively up to the
@@ -377,6 +411,14 @@ trait ReadonlyArray[T]
     predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Any],
     thisArg: Any
   ): scala.Boolean = js.native
+  
+  /**
+    * Is an object whose properties have the value 'true'
+    * when they will be absent when used in a 'with' statement.
+    */
+  /* standard es2015.symbol.wellknown */
+  @JSName(js.Symbol.unscopables)
+  val unscopables: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof std.Array<any> ]:? boolean} */ js.Any = js.native
   
   /**
     * Returns an iterable of values in the array

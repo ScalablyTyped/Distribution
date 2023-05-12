@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExecuteStatementInput extends StObject {
   
   /**
+    * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
+    */
+  var ClientToken: js.UndefOr[typings.awsSdk.clientsRedshiftdataMod.ClientToken] = js.undefined
+  
+  /**
     * The cluster identifier. This parameter is required when connecting to a cluster and authenticating using either Secrets Manager or temporary credentials. 
     */
   var ClusterIdentifier: js.UndefOr[Location] = js.undefined
@@ -17,7 +22,7 @@ trait ExecuteStatementInput extends StObject {
   var Database: String
   
   /**
-    * The database user name. This parameter is required when connecting to a cluster and authenticating using temporary credentials. 
+    * The database user name. This parameter is required when connecting to a cluster as a database user and authenticating using temporary credentials. 
     */
   var DbUser: js.UndefOr[String] = js.undefined
   
@@ -47,7 +52,7 @@ trait ExecuteStatementInput extends StObject {
   var WithEvent: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The serverless workgroup name. This parameter is required when connecting to a serverless workgroup and authenticating using either Secrets Manager or temporary credentials.
+    * The serverless workgroup name or Amazon Resource Name (ARN). This parameter is required when connecting to a serverless workgroup and authenticating using either Secrets Manager or temporary credentials.
     */
   var WorkgroupName: js.UndefOr[WorkgroupNameString] = js.undefined
 }
@@ -60,6 +65,10 @@ object ExecuteStatementInput {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: ExecuteStatementInput] (val x: Self) extends AnyVal {
+    
+    inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
+    
+    inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
     inline def setClusterIdentifier(value: Location): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     

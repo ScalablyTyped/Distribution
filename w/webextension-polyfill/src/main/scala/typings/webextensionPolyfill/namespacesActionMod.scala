@@ -141,6 +141,33 @@ object namespacesActionMod {
       inline def Shift: typings.webextensionPolyfill.webextensionPolyfillStrings.Shift = "Shift".asInstanceOf[typings.webextensionPolyfill.webextensionPolyfillStrings.Shift]
     }
     
+    /**
+      * An object with information about the popup to open.
+      */
+    trait OpenPopupOptionsType extends StObject {
+      
+      /**
+        * Defaults to the $(topic:current-window)[current window].
+        * Optional.
+        */
+      var windowId: js.UndefOr[Double] = js.undefined
+    }
+    object OpenPopupOptionsType {
+      
+      inline def apply(): OpenPopupOptionsType = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[OpenPopupOptionsType]
+      }
+      
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OpenPopupOptionsType] (val x: Self) extends AnyVal {
+        
+        inline def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
+        
+        inline def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
+      }
+    }
+    
     trait SetBadgeBackgroundColorDetailsType
       extends StObject
          with Details {
@@ -376,9 +403,12 @@ object namespacesActionMod {
       var onClicked: Event[js.Function2[/* tab */ Tab, /* info */ js.UndefOr[OnClickData], Unit]] = js.native
       
       /**
-        * Opens the extension popup window in the active window.
+        * Opens the extension popup window in the specified window.
+        *
+        * @param options Optional. An object with information about the popup to open.
         */
       def openPopup(): js.Promise[Unit] = js.native
+      def openPopup(options: OpenPopupOptionsType): js.Promise[Unit] = js.native
       
       /**
         * Sets the background color for the badge.

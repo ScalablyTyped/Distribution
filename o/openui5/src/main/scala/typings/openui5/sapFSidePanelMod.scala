@@ -269,6 +269,8 @@ object sapFSidePanelMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:toggle toggle} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -323,6 +325,78 @@ object sapFSidePanelMod {
       * or `null`.
       */
     def getSelectedItem(): ID = js.native
+    
+    /**
+      * @SINCE 1.109.0
+      *
+      * Gets current value of property {@link #getSidePanelMaxWidth sidePanelMaxWidth}.
+      *
+      * Determines the maximum side panel width (Side Content width + Action Bar width). **Note:** if the width
+      * is given in percent(%), it is calculated as given percent from the Side Panel parent container width,
+      * otherwise it's calculated in absolute units.
+      *
+      * Default value is `"90%"`.
+      *
+      * @returns Value of property `sidePanelMaxWidth`
+      */
+    def getSidePanelMaxWidth(): CSSSize = js.native
+    
+    /**
+      * @SINCE 1.109.0
+      *
+      * Gets current value of property {@link #getSidePanelMinWidth sidePanelMinWidth}.
+      *
+      * Determines the minimum side panel width (Side Content width + Action Bar width). **Note:** if the width
+      * is given in percent(%), it is calculated as given percent from the Side Panel parent container width,
+      * otherwise it's calculated in absolute units.
+      *
+      * Default value is `"15rem"`.
+      *
+      * @returns Value of property `sidePanelMinWidth`
+      */
+    def getSidePanelMinWidth(): CSSSize = js.native
+    
+    /**
+      * Gets current value of property {@link #getSidePanelResizable sidePanelResizable}.
+      *
+      * Determines whether the side panel is resizable or fixed. **Note:** setting this property only affects
+      * desktop or tablet devices.
+      *
+      * Default value is `false`.
+      *
+      * @returns Value of property `sidePanelResizable`
+      */
+    def getSidePanelResizable(): Boolean = js.native
+    
+    /**
+      * @SINCE 1.109.0
+      *
+      * Gets current value of property {@link #getSidePanelResizeLargerStep sidePanelResizeLargerStep}.
+      *
+      * Determines the large step (in pixels) when changing the width of the side panel with the keyboard. **Note:**
+      * the width can be changed by large step with `Shift + Left Arrow` and `Shift + Right Arrow` keys when
+      * the resize splitter is focused.
+      *
+      * Default value is `100`.
+      *
+      * @returns Value of property `sidePanelResizeLargerStep`
+      */
+    def getSidePanelResizeLargerStep(): int = js.native
+    
+    /**
+      * @SINCE 1.109.0
+      *
+      * Gets current value of property {@link #getSidePanelResizeStep sidePanelResizeStep}.
+      *
+      * Determines the step (in pixels) when changing the width of the side panel with the keyboard. **Note:**
+      * the width can be changed by this step with `Left Arrow` and `Right Arrow` keys when the resize splitter
+      * is focused.
+      *
+      * Default value is `10`.
+      *
+      * @returns Value of property `sidePanelResizeStep`
+      */
+    def getSidePanelResizeStep(): int = js.native
     
     /**
       * Gets current value of property {@link #getSidePanelWidth sidePanelWidth}.
@@ -492,23 +566,106 @@ object sapFSidePanelMod {
     sAriaLabel: String): this.type = js.native
     
     /**
-      * Sets a new value for property {@link #getSidePanelWidth sidePanelWidth}.
+      * @SINCE 1.109.0
       *
-      * Determines the side panel width (Side Content width + Action Bar width). **Note:** if the width is given
-      * in percent(%), it is calculated as given percent from the Side Panel parent container width, otherwise
-      * it's calculated in absolute units.
+      * Sets a new value for property {@link #getSidePanelMaxWidth sidePanelMaxWidth}.
+      *
+      * Determines the maximum side panel width (Side Content width + Action Bar width). **Note:** if the width
+      * is given in percent(%), it is calculated as given percent from the Side Panel parent container width,
+      * otherwise it's calculated in absolute units.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
-      * Default value is `"20rem"`.
+      * Default value is `"90%"`.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def setSidePanelWidth(): this.type = js.native
-    def setSidePanelWidth(/**
-      * New value for property `sidePanelWidth`
+    def setSidePanelMaxWidth(): this.type = js.native
+    def setSidePanelMaxWidth(/**
+      * New value for property `sidePanelMaxWidth`
       */
-    sSidePanelWidth: CSSSize): this.type = js.native
+    sSidePanelMaxWidth: CSSSize): this.type = js.native
+    
+    /**
+      * @SINCE 1.109.0
+      *
+      * Sets a new value for property {@link #getSidePanelMinWidth sidePanelMinWidth}.
+      *
+      * Determines the minimum side panel width (Side Content width + Action Bar width). **Note:** if the width
+      * is given in percent(%), it is calculated as given percent from the Side Panel parent container width,
+      * otherwise it's calculated in absolute units.
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * Default value is `"15rem"`.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setSidePanelMinWidth(): this.type = js.native
+    def setSidePanelMinWidth(/**
+      * New value for property `sidePanelMinWidth`
+      */
+    sSidePanelMinWidth: CSSSize): this.type = js.native
+    
+    /**
+      * Sets a new value for property {@link #getSidePanelResizable sidePanelResizable}.
+      *
+      * Determines whether the side panel is resizable or fixed. **Note:** setting this property only affects
+      * desktop or tablet devices.
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * Default value is `false`.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setSidePanelResizable(): this.type = js.native
+    def setSidePanelResizable(/**
+      * New value for property `sidePanelResizable`
+      */
+    bSidePanelResizable: Boolean): this.type = js.native
+    
+    /**
+      * @SINCE 1.109.0
+      *
+      * Sets a new value for property {@link #getSidePanelResizeLargerStep sidePanelResizeLargerStep}.
+      *
+      * Determines the large step (in pixels) when changing the width of the side panel with the keyboard. **Note:**
+      * the width can be changed by large step with `Shift + Left Arrow` and `Shift + Right Arrow` keys when
+      * the resize splitter is focused.
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * Default value is `100`.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setSidePanelResizeLargerStep(): this.type = js.native
+    def setSidePanelResizeLargerStep(/**
+      * New value for property `sidePanelResizeLargerStep`
+      */
+    iSidePanelResizeLargerStep: int): this.type = js.native
+    
+    /**
+      * @SINCE 1.109.0
+      *
+      * Sets a new value for property {@link #getSidePanelResizeStep sidePanelResizeStep}.
+      *
+      * Determines the step (in pixels) when changing the width of the side panel with the keyboard. **Note:**
+      * the width can be changed by this step with `Left Arrow` and `Right Arrow` keys when the resize splitter
+      * is focused.
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * Default value is `10`.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setSidePanelResizeStep(): this.type = js.native
+    def setSidePanelResizeStep(/**
+      * New value for property `sidePanelResizeStep`
+      */
+    iSidePanelResizeStep: int): this.type = js.native
   }
   
   trait SidePanelSettings
@@ -545,6 +702,54 @@ object sapFSidePanelMod {
       * The action item that is currently selected.
       */
     var selectedItem: js.UndefOr[typings.openui5.sapFSidePanelItemMod.default | String] = js.undefined
+    
+    /**
+      * @SINCE 1.109.0
+      *
+      * Determines the maximum side panel width (Side Content width + Action Bar width). **Note:** if the width
+      * is given in percent(%), it is calculated as given percent from the Side Panel parent container width,
+      * otherwise it's calculated in absolute units.
+      */
+    var sidePanelMaxWidth: js.UndefOr[
+        CSSSize | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
+      ] = js.undefined
+    
+    /**
+      * @SINCE 1.109.0
+      *
+      * Determines the minimum side panel width (Side Content width + Action Bar width). **Note:** if the width
+      * is given in percent(%), it is calculated as given percent from the Side Panel parent container width,
+      * otherwise it's calculated in absolute units.
+      */
+    var sidePanelMinWidth: js.UndefOr[
+        CSSSize | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
+      ] = js.undefined
+    
+    /**
+      * Determines whether the side panel is resizable or fixed. **Note:** setting this property only affects
+      * desktop or tablet devices.
+      */
+    var sidePanelResizable: js.UndefOr[
+        Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
+      ] = js.undefined
+    
+    /**
+      * @SINCE 1.109.0
+      *
+      * Determines the large step (in pixels) when changing the width of the side panel with the keyboard. **Note:**
+      * the width can be changed by large step with `Shift + Left Arrow` and `Shift + Right Arrow` keys when
+      * the resize splitter is focused.
+      */
+    var sidePanelResizeLargerStep: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
+    
+    /**
+      * @SINCE 1.109.0
+      *
+      * Determines the step (in pixels) when changing the width of the side panel with the keyboard. **Note:**
+      * the width can be changed by this step with `Left Arrow` and `Right Arrow` keys when the resize splitter
+      * is focused.
+      */
+    var sidePanelResizeStep: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
       * Determines the side panel width (Side Content width + Action Bar width). **Note:** if the width is given
@@ -606,6 +811,26 @@ object sapFSidePanelMod {
       inline def setSelectedItem(value: typings.openui5.sapFSidePanelItemMod.default | String): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
       
       inline def setSelectedItemUndefined: Self = StObject.set(x, "selectedItem", js.undefined)
+      
+      inline def setSidePanelMaxWidth(value: CSSSize | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "sidePanelMaxWidth", value.asInstanceOf[js.Any])
+      
+      inline def setSidePanelMaxWidthUndefined: Self = StObject.set(x, "sidePanelMaxWidth", js.undefined)
+      
+      inline def setSidePanelMinWidth(value: CSSSize | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "sidePanelMinWidth", value.asInstanceOf[js.Any])
+      
+      inline def setSidePanelMinWidthUndefined: Self = StObject.set(x, "sidePanelMinWidth", js.undefined)
+      
+      inline def setSidePanelResizable(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "sidePanelResizable", value.asInstanceOf[js.Any])
+      
+      inline def setSidePanelResizableUndefined: Self = StObject.set(x, "sidePanelResizable", js.undefined)
+      
+      inline def setSidePanelResizeLargerStep(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "sidePanelResizeLargerStep", value.asInstanceOf[js.Any])
+      
+      inline def setSidePanelResizeLargerStepUndefined: Self = StObject.set(x, "sidePanelResizeLargerStep", js.undefined)
+      
+      inline def setSidePanelResizeStep(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "sidePanelResizeStep", value.asInstanceOf[js.Any])
+      
+      inline def setSidePanelResizeStepUndefined: Self = StObject.set(x, "sidePanelResizeStep", js.undefined)
       
       inline def setSidePanelWidth(value: CSSSize | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "sidePanelWidth", value.asInstanceOf[js.Any])
       

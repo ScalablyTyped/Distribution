@@ -17,12 +17,17 @@ trait StartQueryRequest extends StObject {
   var limit: js.UndefOr[EventsLimit] = js.undefined
   
   /**
-    * The log group on which to perform the query. A StartQuery operation must include a logGroupNames or a logGroupName parameter, but not both.
+    * The list of log groups to query. You can include up to 50 log groups. You can specify them by the log group name or ARN. If a log group that you're querying is in a source account and you're using a monitoring account, you must specify the ARN of the log group here. The query definition must also be defined in the monitoring account. If you specify an ARN, the ARN can't end with an asterisk (*). A StartQuery operation must include exactly one of the following parameters: logGroupName, logGroupNames or logGroupIdentifiers. 
+    */
+  var logGroupIdentifiers: js.UndefOr[LogGroupIdentifiers] = js.undefined
+  
+  /**
+    * The log group on which to perform the query.  A StartQuery operation must include exactly one of the following parameters: logGroupName, logGroupNames or logGroupIdentifiers.  
     */
   var logGroupName: js.UndefOr[LogGroupName] = js.undefined
   
   /**
-    * The list of log groups to be queried. You can include up to 20 log groups. A StartQuery operation must include a logGroupNames or a logGroupName parameter, but not both.
+    * The list of log groups to be queried. You can include up to 50 log groups.  A StartQuery operation must include exactly one of the following parameters: logGroupName, logGroupNames or logGroupIdentifiers.  
     */
   var logGroupNames: js.UndefOr[LogGroupNames] = js.undefined
   
@@ -51,6 +56,12 @@ object StartQueryRequest {
     inline def setLimit(value: EventsLimit): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    
+    inline def setLogGroupIdentifiers(value: LogGroupIdentifiers): Self = StObject.set(x, "logGroupIdentifiers", value.asInstanceOf[js.Any])
+    
+    inline def setLogGroupIdentifiersUndefined: Self = StObject.set(x, "logGroupIdentifiers", js.undefined)
+    
+    inline def setLogGroupIdentifiersVarargs(value: LogGroupIdentifier*): Self = StObject.set(x, "logGroupIdentifiers", js.Array(value*))
     
     inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
     

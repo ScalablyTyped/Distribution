@@ -1,16 +1,16 @@
 package typings.slate
 
-import typings.slate.distInterfacesCustomTypesMod.ExtendableTypes
-import typings.slate.distInterfacesTypesMod.LeafEdge
-import typings.slate.distInterfacesTypesMod.MaximizeMode
-import typings.slate.distInterfacesTypesMod.MoveUnit
-import typings.slate.distInterfacesTypesMod.RangeDirection
-import typings.slate.distInterfacesTypesMod.RangeMode
-import typings.slate.distInterfacesTypesMod.SelectionEdge
-import typings.slate.distInterfacesTypesMod.SelectionMode
-import typings.slate.distInterfacesTypesMod.TextDirection
-import typings.slate.distInterfacesTypesMod.TextUnit
-import typings.slate.distInterfacesTypesMod.TextUnitAdjustment
+import typings.slate.distTypesCustomTypesMod.ExtendableTypes
+import typings.slate.distTypesTypesMod.LeafEdge
+import typings.slate.distTypesTypesMod.MaximizeMode
+import typings.slate.distTypesTypesMod.MoveUnit
+import typings.slate.distTypesTypesMod.RangeDirection
+import typings.slate.distTypesTypesMod.RangeMode
+import typings.slate.distTypesTypesMod.SelectionEdge
+import typings.slate.distTypesTypesMod.SelectionMode
+import typings.slate.distTypesTypesMod.TextDirection
+import typings.slate.distTypesTypesMod.TextUnit
+import typings.slate.distTypesTypesMod.TextUnitAdjustment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -8,6 +8,8 @@ import typings.officeJsPreview.officeJsPreviewStrings.CommentSelected
 import typings.officeJsPreview.officeJsPreviewStrings.ContentControlAdded
 import typings.officeJsPreview.officeJsPreviewStrings.ContentControlDataChanged
 import typings.officeJsPreview.officeJsPreviewStrings.ContentControlDeleted
+import typings.officeJsPreview.officeJsPreviewStrings.ContentControlEntered
+import typings.officeJsPreview.officeJsPreviewStrings.ContentControlExited
 import typings.officeJsPreview.officeJsPreviewStrings.ContentControlSelectionChanged
 import typings.officeJsPreview.officeJsPreviewStrings.Local
 import typings.officeJsPreview.officeJsPreviewStrings.Remote
@@ -26,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides information about the comments that raised the comment event.
   *
   * @remarks
-  * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+  * [Api set: WordApi BETA (PREVIEW ONLY)]
   * @beta
   */
 trait CommentEventArgs extends StObject {
@@ -35,7 +37,7 @@ trait CommentEventArgs extends StObject {
     * Represents how the comment changed event is triggered.
     *
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     */
   var changeType: CommentChangeType | none_ | edited | resolved | reopened | replyAdded_ | replyDeleted_ | replyEdited_
@@ -44,7 +46,7 @@ trait CommentEventArgs extends StObject {
     * Gets the CommentDetail array which contains the IDs and reply IDs of the involved comments.
     *
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     */
   var commentDetails: js.Array[CommentDetail]
@@ -53,7 +55,7 @@ trait CommentEventArgs extends StObject {
     * The source of the event. It can be local or remote (through coauthoring).
     *
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     */
   var source: EventSource | Local | Remote
@@ -62,10 +64,10 @@ trait CommentEventArgs extends StObject {
     * The event type. See Word.EventType for details.
     *
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var `type`: EventType | ContentControlDeleted | ContentControlSelectionChanged | ContentControlDataChanged | ContentControlAdded | CommentDeleted | CommentSelected | CommentDeselected | CommentChanged | CommentAdded
+  var `type`: EventType | ContentControlDeleted | ContentControlSelectionChanged | ContentControlDataChanged | ContentControlAdded | CommentDeleted | CommentSelected | CommentDeselected | CommentChanged | CommentAdded | ContentControlEntered | ContentControlExited
 }
 object CommentEventArgs {
   
@@ -73,7 +75,7 @@ object CommentEventArgs {
     changeType: CommentChangeType | none_ | edited | resolved | reopened | replyAdded_ | replyDeleted_ | replyEdited_,
     commentDetails: js.Array[CommentDetail],
     source: EventSource | Local | Remote,
-    `type`: EventType | ContentControlDeleted | ContentControlSelectionChanged | ContentControlDataChanged | ContentControlAdded | CommentDeleted | CommentSelected | CommentDeselected | CommentChanged | CommentAdded
+    `type`: EventType | ContentControlDeleted | ContentControlSelectionChanged | ContentControlDataChanged | ContentControlAdded | CommentDeleted | CommentSelected | CommentDeselected | CommentChanged | CommentAdded | ContentControlEntered | ContentControlExited
   ): CommentEventArgs = {
     val __obj = js.Dynamic.literal(changeType = changeType.asInstanceOf[js.Any], commentDetails = commentDetails.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -94,7 +96,7 @@ object CommentEventArgs {
     inline def setSource(value: EventSource | Local | Remote): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     inline def setType(
-      value: EventType | ContentControlDeleted | ContentControlSelectionChanged | ContentControlDataChanged | ContentControlAdded | CommentDeleted | CommentSelected | CommentDeselected | CommentChanged | CommentAdded
+      value: EventType | ContentControlDeleted | ContentControlSelectionChanged | ContentControlDataChanged | ContentControlAdded | CommentDeleted | CommentSelected | CommentDeselected | CommentChanged | CommentAdded | ContentControlEntered | ContentControlExited
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

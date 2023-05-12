@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CardidNumber extends StObject {
   
-  /** The unique identifier of the card. */
   var card_id: Double
 }
 object CardidNumber {

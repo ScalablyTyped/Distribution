@@ -7,37 +7,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RegisterApplicationInput extends StObject {
   
   /**
-    * 
+    * The ID of the application.
     */
   var ApplicationId: typings.awsSdk.clientsSsmsapMod.ApplicationId
   
   /**
-    * 
+    * The type of the application.
     */
   var ApplicationType: typings.awsSdk.clientsSsmsapMod.ApplicationType
   
   /**
-    * 
+    * The credentials of the SAP application.
     */
   var Credentials: ApplicationCredentialList
   
   /**
-    * 
+    * The Amazon EC2 instances on which your SAP application is running.
     */
   var Instances: InstanceList
   
   /**
-    * 
+    * The SAP instance number of the application.
     */
   var SapInstanceNumber: js.UndefOr[SAPInstanceNumber] = js.undefined
   
   /**
-    * 
+    * The System ID of the application.
     */
   var Sid: js.UndefOr[SID] = js.undefined
   
   /**
-    * 
+    * The tags to be attached to the SAP application.
     */
   var Tags: js.UndefOr[TagMap] = js.undefined
 }

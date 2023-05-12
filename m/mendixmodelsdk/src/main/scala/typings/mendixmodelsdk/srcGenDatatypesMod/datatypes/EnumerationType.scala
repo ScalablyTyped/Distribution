@@ -4,6 +4,7 @@ import typings.mendixmodelsdk.srcGenAppservicesMod.appservices.AppServiceAction
 import typings.mendixmodelsdk.srcGenAppservicesMod.appservices.AppServiceActionParameter
 import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
 import typings.mendixmodelsdk.srcGenConstantsMod.constants.Constant
+import typings.mendixmodelsdk.srcGenDatabaseconnectorMod.databaseconnector.QueryParameter
 import typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetColumn
 import typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetParameter
 import typings.mendixmodelsdk.srcGenDatatypesMod.StructureVersionInfo
@@ -18,6 +19,8 @@ import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MicroflowParameterB
 import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MicroflowParameterObject
 import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.ResultHandling
 import typings.mendixmodelsdk.srcGenPagesMod.pages.PageParameter
+import typings.mendixmodelsdk.srcGenPagesMod.pages.SnippetParameter
+import typings.mendixmodelsdk.srcGenRestMod.rest.OperationParameter
 import typings.mendixmodelsdk.srcGenRestMod.rest.RestOperationParameter
 import typings.mendixmodelsdk.srcGenWebservicesMod.webservices.PublishedOperation
 import typings.mendixmodelsdk.srcGenWebservicesMod.webservices.PublishedParameter
@@ -39,7 +42,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.srcSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.srcSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IDataType because Already inherited
-- typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IEnumerationType because var conflicts: containerAsAppServiceAction, containerAsAppServiceActionParameter, containerAsConstant, containerAsDataSetParameter, containerAsDocumentTemplateParameter, containerAsImportMapping, containerAsMicroflowBase, containerAsMicroflowParameterBase, containerAsPageParameter, id, isLoaded, model, structureTypeName, unit. Inlined enumeration, enumerationQualifiedName */ @JSImport("mendixmodelsdk/src/gen/datatypes", "datatypes.EnumerationType")
+- typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IEnumerationType because var conflicts: containerAsAppServiceAction, containerAsAppServiceActionParameter, containerAsConstant, containerAsDataSetParameter, containerAsDocumentTemplateParameter, containerAsImportMapping, containerAsMicroflowBase, containerAsMicroflowParameterBase, containerAsOperationParameter, containerAsPageParameter, containerAsSnippetParameter, id, isLoaded, model, structureTypeName, unit. Inlined enumeration, enumerationQualifiedName */ @JSImport("mendixmodelsdk/src/gen/datatypes", "datatypes.EnumerationType")
 @js.native
 open class EnumerationType protected () extends DataType {
   def this(
@@ -75,8 +78,14 @@ open class EnumerationType protected () extends DataType {
   @JSName("containerAsMicroflowParameterBase")
   def containerAsMicroflowParameterBase_MEnumerationType: MicroflowParameterBase = js.native
   
+  @JSName("containerAsOperationParameter")
+  def containerAsOperationParameter_MEnumerationType: OperationParameter = js.native
+  
   @JSName("containerAsPageParameter")
   def containerAsPageParameter_MEnumerationType: PageParameter = js.native
+  
+  @JSName("containerAsSnippetParameter")
+  def containerAsSnippetParameter_MEnumerationType: SnippetParameter = js.native
   
   def enumeration: IEnumeration = js.native
   
@@ -239,6 +248,17 @@ object EnumerationType {
   
   /**
     * Creates and returns a new EnumerationType instance in the SDK and on the server.
+    * The new EnumerationType will be automatically stored in the 'dataType' property
+    * of the parent rest.OperationParameter element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.24.0 and higher
+    */
+  /* static member */
+  inline def createInOperationParameterUnderDataType(container: OperationParameter): EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOperationParameterUnderDataType")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationType]
+  
+  /**
+    * Creates and returns a new EnumerationType instance in the SDK and on the server.
     * The new EnumerationType will be automatically stored in the 'parameterType' property
     * of the parent pages.PageParameter element passed as argument.
     *
@@ -272,6 +292,17 @@ object EnumerationType {
   
   /**
     * Creates and returns a new EnumerationType instance in the SDK and on the server.
+    * The new EnumerationType will be automatically stored in the 'dataType' property
+    * of the parent databaseconnector.QueryParameter element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.22.0 and higher
+    */
+  /* static member */
+  inline def createInQueryParameterUnderDataType(container: QueryParameter): EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInQueryParameterUnderDataType")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationType]
+  
+  /**
+    * Creates and returns a new EnumerationType instance in the SDK and on the server.
     * The new EnumerationType will be automatically stored in the 'type' property
     * of the parent rest.RestOperationParameter element passed as argument.
     *
@@ -291,6 +322,17 @@ object EnumerationType {
     */
   /* static member */
   inline def createInResultHandlingUnderVariableType(container: ResultHandling): EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationType]
+  
+  /**
+    * Creates and returns a new EnumerationType instance in the SDK and on the server.
+    * The new EnumerationType will be automatically stored in the 'parameterType' property
+    * of the parent pages.SnippetParameter element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.21.0 and higher
+    */
+  /* static member */
+  inline def createInSnippetParameterUnderParameterType(container: SnippetParameter): EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationType]
   
   /**
     * Creates and returns a new EnumerationType instance in the SDK and on the server.

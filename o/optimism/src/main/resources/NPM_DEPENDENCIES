@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "optimism" : "0.16.1"
+      "optimism" : "0.16.2"
     }
   ],
   "test-dependencies" : [
     {
-      "optimism" : "0.16.1"
+      "optimism" : "0.16.2"
     }
   ],
   "compile-devDependencies" : [

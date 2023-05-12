@@ -9,7 +9,7 @@ trait DeleteAnalysisResponse extends StObject {
   /**
     * The ID of the deleted analysis.
     */
-  var AnalysisId: js.UndefOr[RestrictiveResourceId] = js.undefined
+  var AnalysisId: js.UndefOr[ShortRestrictiveResourceId] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the deleted analysis.
@@ -41,7 +41,7 @@ object DeleteAnalysisResponse {
   @scala.inline
   implicit open class MutableBuilder[Self <: DeleteAnalysisResponse] (val x: Self) extends AnyVal {
     
-    inline def setAnalysisId(value: RestrictiveResourceId): Self = StObject.set(x, "AnalysisId", value.asInstanceOf[js.Any])
+    inline def setAnalysisId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "AnalysisId", value.asInstanceOf[js.Any])
     
     inline def setAnalysisIdUndefined: Self = StObject.set(x, "AnalysisId", js.undefined)
     

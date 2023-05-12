@@ -5,10 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Public interface for ResponseInformation.
+  * An object representing a single ad response.
   *
-  * **See also**
-  * - {@link Slot.getResponseInformation}
+  * @see {@link Slot.getResponseInformation}
   */
 trait ResponseInformation extends StObject {
   

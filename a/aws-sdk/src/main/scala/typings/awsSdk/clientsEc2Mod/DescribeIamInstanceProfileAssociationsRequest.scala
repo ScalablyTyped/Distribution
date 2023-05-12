@@ -17,12 +17,12 @@ trait DescribeIamInstanceProfileAssociationsRequest extends StObject {
   var Filters: js.UndefOr[FilterList] = js.undefined
   
   /**
-    * The maximum number of results to return in a single call. To retrieve the remaining results, make another call with the returned NextToken value.
+    * The maximum number of items to return for this request. To get the next page of items, make another request with the token returned in the output. For more information, see Pagination.
     */
   var MaxResults: js.UndefOr[DescribeIamInstanceProfileAssociationsMaxResults] = js.undefined
   
   /**
-    * The token to request the next page of results.
+    * The token returned from a previous paginated request. Pagination continues from the end of the items returned by the previous request.
     */
   var NextToken: js.UndefOr[typings.awsSdk.clientsEc2Mod.NextToken] = js.undefined
 }

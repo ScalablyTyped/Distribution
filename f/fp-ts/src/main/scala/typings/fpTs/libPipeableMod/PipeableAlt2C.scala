@@ -1,6 +1,6 @@
 package typings.fpTs.libPipeableMod
 
-import typings.fpTs.libFunctionMod.Lazy
+import typings.fpTs.libFunctionMod.LazyArg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PipeableAlt2C[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] extends StObject {
   
   def alt[A](
-    that: Lazy[
+    that: LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any
     ]
   ): js.Function1[
@@ -19,7 +19,7 @@ trait PipeableAlt2C[F /* <: /* import warning: transforms.QualifyReferences#reso
 object PipeableAlt2C {
   
   inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](
-    alt: Lazy[
+    alt: LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any
     ] => js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ /* fa */ Any, 
@@ -34,7 +34,7 @@ object PipeableAlt2C {
   implicit open class MutableBuilder[Self <: PipeableAlt2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (PipeableAlt2C[F, E])) extends AnyVal {
     
     inline def setAlt(
-      value: Lazy[
+      value: LazyArg[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any
         ] => js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ /* fa */ Any, 

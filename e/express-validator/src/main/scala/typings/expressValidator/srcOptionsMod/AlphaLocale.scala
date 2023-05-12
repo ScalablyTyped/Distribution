@@ -26,6 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.expressValidator.expressValidatorStrings.`ar-YE`
   - typings.expressValidator.expressValidatorStrings.`az-AZ`
   - typings.expressValidator.expressValidatorStrings.`bg-BG`
+  - typings.expressValidator.expressValidatorStrings.`bn-BD`
   - typings.expressValidator.expressValidatorStrings.`cs-CZ`
   - typings.expressValidator.expressValidatorStrings.`da-DK`
   - typings.expressValidator.expressValidatorStrings.`de-DE`
@@ -48,6 +49,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.expressValidator.expressValidatorStrings.`hu-HU`
   - typings.expressValidator.expressValidatorStrings.`id-ID`
   - typings.expressValidator.expressValidatorStrings.`it-IT`
+  - typings.expressValidator.expressValidatorStrings.`ja-JP`
+  - typings.expressValidator.expressValidatorStrings.`ko-KR`
   - typings.expressValidator.expressValidatorStrings.`ku-IQ`
   - typings.expressValidator.expressValidatorStrings.`nb-NO`
   - typings.expressValidator.expressValidatorStrings.`nl-NL`
@@ -56,6 +59,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.expressValidator.expressValidatorStrings.`pt-BR`
   - typings.expressValidator.expressValidatorStrings.`pt-PT`
   - typings.expressValidator.expressValidatorStrings.`ru-RU`
+  - typings.expressValidator.expressValidatorStrings.`si-LK`
   - typings.expressValidator.expressValidatorStrings.`sk-SK`
   - typings.expressValidator.expressValidatorStrings.`sl-SI`
   - typings.expressValidator.expressValidatorStrings.`sr-RS`
@@ -109,6 +113,8 @@ object AlphaLocale {
   
   inline def `bg-BG`: typings.expressValidator.expressValidatorStrings.`bg-BG` = "bg-BG".asInstanceOf[typings.expressValidator.expressValidatorStrings.`bg-BG`]
   
+  inline def `bn-BD`: typings.expressValidator.expressValidatorStrings.`bn-BD` = "bn-BD".asInstanceOf[typings.expressValidator.expressValidatorStrings.`bn-BD`]
+  
   inline def `cs-CZ`: typings.expressValidator.expressValidatorStrings.`cs-CZ` = "cs-CZ".asInstanceOf[typings.expressValidator.expressValidatorStrings.`cs-CZ`]
   
   inline def `da-DK`: typings.expressValidator.expressValidatorStrings.`da-DK` = "da-DK".asInstanceOf[typings.expressValidator.expressValidatorStrings.`da-DK`]
@@ -153,6 +159,10 @@ object AlphaLocale {
   
   inline def `it-IT`: typings.expressValidator.expressValidatorStrings.`it-IT` = "it-IT".asInstanceOf[typings.expressValidator.expressValidatorStrings.`it-IT`]
   
+  inline def `ja-JP`: typings.expressValidator.expressValidatorStrings.`ja-JP` = "ja-JP".asInstanceOf[typings.expressValidator.expressValidatorStrings.`ja-JP`]
+  
+  inline def `ko-KR`: typings.expressValidator.expressValidatorStrings.`ko-KR` = "ko-KR".asInstanceOf[typings.expressValidator.expressValidatorStrings.`ko-KR`]
+  
   inline def `ku-IQ`: typings.expressValidator.expressValidatorStrings.`ku-IQ` = "ku-IQ".asInstanceOf[typings.expressValidator.expressValidatorStrings.`ku-IQ`]
   
   inline def `nb-NO`: typings.expressValidator.expressValidatorStrings.`nb-NO` = "nb-NO".asInstanceOf[typings.expressValidator.expressValidatorStrings.`nb-NO`]
@@ -168,6 +178,8 @@ object AlphaLocale {
   inline def `pt-PT`: typings.expressValidator.expressValidatorStrings.`pt-PT` = "pt-PT".asInstanceOf[typings.expressValidator.expressValidatorStrings.`pt-PT`]
   
   inline def `ru-RU`: typings.expressValidator.expressValidatorStrings.`ru-RU` = "ru-RU".asInstanceOf[typings.expressValidator.expressValidatorStrings.`ru-RU`]
+  
+  inline def `si-LK`: typings.expressValidator.expressValidatorStrings.`si-LK` = "si-LK".asInstanceOf[typings.expressValidator.expressValidatorStrings.`si-LK`]
   
   inline def `sk-SK`: typings.expressValidator.expressValidatorStrings.`sk-SK` = "sk-SK".asInstanceOf[typings.expressValidator.expressValidatorStrings.`sk-SK`]
   

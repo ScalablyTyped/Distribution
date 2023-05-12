@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * A `CollectionReference` object can be used for adding documents, getting
-  * document references, and querying for documents (using {@link query}).
+  * document references, and querying for documents (using {@link (query:1)}).
   */ @JSImport("@firebase/firestore/dist/packages/firestore/dist/index.esm2017", "CollectionReference")
 @js.native
 open class CollectionReference ()
   extends StObject
-     with ta {
+     with dh {
   
   /* CompleteClass */
   var _query: Any = js.native
@@ -27,5 +27,5 @@ open class CollectionReference ()
   var `type`: String = js.native
   
   /* CompleteClass */
-  override def withConverter(t: Any): Zc = js.native
+  override def withConverter(t: Any): fh = js.native
 }

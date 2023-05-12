@@ -8,6 +8,7 @@ import typings.libp2pInterfaceConnection.libp2pInterfaceConnectionStrings.OPEN
 import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pInterfaces.mod.AbortOptions
 import typings.multiformatsMultiaddr.mod.Multiaddr_
+import typings.std.AsyncGenerator
 import typings.std.Record
 import typings.uint8arraylist.mod.Uint8ArrayList
 import org.scalablytyped.runtime.StObject
@@ -51,141 +52,6 @@ object mod {
     var streams: js.Array[Stream] = js.native
     
     var tags: js.Array[String] = js.native
-  }
-  
-  trait ConnectionGater extends StObject {
-    
-    /**
-      * denyDialMultiaddr tests whether we're permitted to dial the specified
-      * multiaddr for the given peer.
-      *
-      * This is called by the dialer.connectToPeer implementation after it has
-      * resolved the peer's addrs, and prior to dialling each.
-      *
-      * Return true to prevent dialing the passed peer on the passed multiaddr.
-      */
-    def denyDialMultiaddr(peerId: PeerId, multiaddr: Multiaddr_): js.Promise[Boolean]
-    
-    /**
-      * denyDialMultiaddr tests whether we're permitted to Dial the
-      * specified peer.
-      *
-      * This is called by the dialer.connectToPeer implementation before
-      * dialling a peer.
-      *
-      * Return true to prevent dialing the passed peer.
-      */
-    def denyDialPeer(peerId: PeerId): js.Promise[Boolean]
-    
-    /**
-      * denyInboundConnection tests whether an incipient inbound connection is allowed.
-      *
-      * This is called by the upgrader, or by the transport directly (e.g. QUIC,
-      * Bluetooth), straight after it has accepted a connection from its socket.
-      *
-      * Return true to deny the incoming passed connection.
-      */
-    def denyInboundConnection(maConn: MultiaddrConnection): js.Promise[Boolean]
-    
-    /**
-      * denyInboundEncryptedConnection tests whether a given connection, now encrypted,
-      * is allowed.
-      *
-      * This is called by the upgrader, after it has performed the security
-      * handshake, and before it negotiates the muxer, or by the directly by the
-      * transport, at the exact same checkpoint.
-      *
-      * Return true to deny the passed secured connection.
-      */
-    def denyInboundEncryptedConnection(peerId: PeerId, maConn: MultiaddrConnection): js.Promise[Boolean]
-    
-    /**
-      * denyInboundUpgradedConnection tests whether a fully capable connection is allowed.
-      *
-      * This is called after encryption has been negotiated and the connection has been
-      * multiplexed, if a multiplexer is configured.
-      *
-      * Return true to deny the passed upgraded connection.
-      */
-    def denyInboundUpgradedConnection(peerId: PeerId, maConn: MultiaddrConnection): js.Promise[Boolean]
-    
-    /**
-      * denyOutboundConnection tests whether an incipient outbound connection is allowed.
-      *
-      * This is called by the upgrader, or by the transport directly (e.g. QUIC,
-      * Bluetooth), straight after it has created a connection with its socket.
-      *
-      * Return true to deny the incoming passed connection.
-      */
-    def denyOutboundConnection(peerId: PeerId, maConn: MultiaddrConnection): js.Promise[Boolean]
-    
-    /**
-      * denyOutboundEncryptedConnection tests whether a given connection, now encrypted,
-      * is allowed.
-      *
-      * This is called by the upgrader, after it has performed the security
-      * handshake, and before it negotiates the muxer, or by the directly by the
-      * transport, at the exact same checkpoint.
-      *
-      * Return true to deny the passed secured connection.
-      */
-    def denyOutboundEncryptedConnection(peerId: PeerId, maConn: MultiaddrConnection): js.Promise[Boolean]
-    
-    /**
-      * denyOutboundUpgradedConnection tests whether a fully capable connection is allowed.
-      *
-      * This is called after encryption has been negotiated and the connection has been
-      * multiplexed, if a multiplexer is configured.
-      *
-      * Return true to deny the passed upgraded connection.
-      */
-    def denyOutboundUpgradedConnection(peerId: PeerId, maConn: MultiaddrConnection): js.Promise[Boolean]
-    
-    /**
-      * Used by the address book to filter passed addresses.
-      *
-      * Return true to allow storing the passed multiaddr for the passed peer.
-      */
-    def filterMultiaddrForPeer(peer: PeerId, multiaddr: Multiaddr_): js.Promise[Boolean]
-  }
-  object ConnectionGater {
-    
-    inline def apply(
-      denyDialMultiaddr: (PeerId, Multiaddr_) => js.Promise[Boolean],
-      denyDialPeer: PeerId => js.Promise[Boolean],
-      denyInboundConnection: MultiaddrConnection => js.Promise[Boolean],
-      denyInboundEncryptedConnection: (PeerId, MultiaddrConnection) => js.Promise[Boolean],
-      denyInboundUpgradedConnection: (PeerId, MultiaddrConnection) => js.Promise[Boolean],
-      denyOutboundConnection: (PeerId, MultiaddrConnection) => js.Promise[Boolean],
-      denyOutboundEncryptedConnection: (PeerId, MultiaddrConnection) => js.Promise[Boolean],
-      denyOutboundUpgradedConnection: (PeerId, MultiaddrConnection) => js.Promise[Boolean],
-      filterMultiaddrForPeer: (PeerId, Multiaddr_) => js.Promise[Boolean]
-    ): ConnectionGater = {
-      val __obj = js.Dynamic.literal(denyDialMultiaddr = js.Any.fromFunction2(denyDialMultiaddr), denyDialPeer = js.Any.fromFunction1(denyDialPeer), denyInboundConnection = js.Any.fromFunction1(denyInboundConnection), denyInboundEncryptedConnection = js.Any.fromFunction2(denyInboundEncryptedConnection), denyInboundUpgradedConnection = js.Any.fromFunction2(denyInboundUpgradedConnection), denyOutboundConnection = js.Any.fromFunction2(denyOutboundConnection), denyOutboundEncryptedConnection = js.Any.fromFunction2(denyOutboundEncryptedConnection), denyOutboundUpgradedConnection = js.Any.fromFunction2(denyOutboundUpgradedConnection), filterMultiaddrForPeer = js.Any.fromFunction2(filterMultiaddrForPeer))
-      __obj.asInstanceOf[ConnectionGater]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: ConnectionGater] (val x: Self) extends AnyVal {
-      
-      inline def setDenyDialMultiaddr(value: (PeerId, Multiaddr_) => js.Promise[Boolean]): Self = StObject.set(x, "denyDialMultiaddr", js.Any.fromFunction2(value))
-      
-      inline def setDenyDialPeer(value: PeerId => js.Promise[Boolean]): Self = StObject.set(x, "denyDialPeer", js.Any.fromFunction1(value))
-      
-      inline def setDenyInboundConnection(value: MultiaddrConnection => js.Promise[Boolean]): Self = StObject.set(x, "denyInboundConnection", js.Any.fromFunction1(value))
-      
-      inline def setDenyInboundEncryptedConnection(value: (PeerId, MultiaddrConnection) => js.Promise[Boolean]): Self = StObject.set(x, "denyInboundEncryptedConnection", js.Any.fromFunction2(value))
-      
-      inline def setDenyInboundUpgradedConnection(value: (PeerId, MultiaddrConnection) => js.Promise[Boolean]): Self = StObject.set(x, "denyInboundUpgradedConnection", js.Any.fromFunction2(value))
-      
-      inline def setDenyOutboundConnection(value: (PeerId, MultiaddrConnection) => js.Promise[Boolean]): Self = StObject.set(x, "denyOutboundConnection", js.Any.fromFunction2(value))
-      
-      inline def setDenyOutboundEncryptedConnection(value: (PeerId, MultiaddrConnection) => js.Promise[Boolean]): Self = StObject.set(x, "denyOutboundEncryptedConnection", js.Any.fromFunction2(value))
-      
-      inline def setDenyOutboundUpgradedConnection(value: (PeerId, MultiaddrConnection) => js.Promise[Boolean]): Self = StObject.set(x, "denyOutboundUpgradedConnection", js.Any.fromFunction2(value))
-      
-      inline def setFilterMultiaddrForPeer(value: (PeerId, Multiaddr_) => js.Promise[Boolean]): Self = StObject.set(x, "filterMultiaddrForPeer", js.Any.fromFunction2(value))
-    }
   }
   
   trait ConnectionProtector extends StObject {
@@ -313,7 +179,11 @@ object mod {
   @js.native
   trait MultiaddrConnection
     extends StObject
-       with Duplex[js.typedarray.Uint8Array, js.typedarray.Uint8Array, js.Promise[Unit]] {
+       with Duplex[
+          AsyncGenerator[js.typedarray.Uint8Array, Any, Any], 
+          Source[js.typedarray.Uint8Array], 
+          js.Promise[Unit]
+        ] {
     
     def close(): js.Promise[Unit] = js.native
     def close(err: js.Error): js.Promise[Unit] = js.native
@@ -355,30 +225,52 @@ object mod {
   
   trait Stream
     extends StObject
-       with Duplex[Uint8ArrayList, Uint8ArrayList | js.typedarray.Uint8Array, js.Promise[Unit]] {
+       with Duplex[
+          AsyncGenerator[Uint8ArrayList, Any, Any], 
+          Source[Uint8ArrayList | js.typedarray.Uint8Array], 
+          js.Promise[Unit]
+        ] {
     
     /**
-      * Call when a local error occurs, should close the stream for reading and writing
+      * Closes the stream for **reading** *and* **writing**. This should be called when a *local error* has occurred.
+      *
+      * Note, if called without an error any buffered data in the source can still be consumed and the stream will end normally.
+      *
+      * This will cause a `RESET` message to be sent to the remote, *unless* the sink has already ended.
+      *
+      * The sink will return and the source will throw if an error is passed or return normally if not.
       */
     def abort(err: js.Error): Unit
     
     /**
-      * Close a stream for reading and writing
+      * Closes the stream for **reading** *and* **writing**.
+      *
+      * Any buffered data in the source can still be consumed and the stream will end normally.
+      *
+      * This will cause a `CLOSE` message to be sent to the remote, *unless* the sink has already ended.
+      *
+      * The sink and the source will return normally.
       */
     def close(): Unit
     
     /**
-      * Close a stream for reading only
+      * Closes the stream for **reading**. If iterating over the source of this stream in a `for await of` loop, it will return (exit the loop) after any buffered data has been consumed.
+      *
+      * This function is called automatically by the muxer when it receives a `CLOSE` message from the remote.
+      *
+      * The source will return normally, the sink will continue to consume.
       */
     def closeRead(): Unit
     
     /**
-      * Close a stream for writing only
+      * Closes the stream for **writing**. If iterating over the source of this stream in a `for await of` loop, it will return (exit the loop) after any buffered data has been consumed.
+      *
+      * The source will return normally, the sink will continue to consume.
       */
     def closeWrite(): Unit
     
     /**
-      * Unique identifier for a stream
+      * Unique identifier for a stream. Identifiers are not unique across muxers.
       */
     var id: String
     
@@ -388,7 +280,11 @@ object mod {
     var metadata: Record[String, Any]
     
     /**
-      * Call when a remote error occurs, should close the stream for reading and writing
+      * Closes the stream *immediately* for **reading** *and* **writing**. This should be called when a *remote error* has occurred.
+      *
+      * This function is called automatically by the muxer when it receives a `RESET` message from the remote.
+      *
+      * The sink will return and the source will throw.
       */
     def reset(): Unit
     
@@ -407,8 +303,8 @@ object mod {
       id: String,
       metadata: Record[String, Any],
       reset: () => Unit,
-      sink: /* source */ Source[Uint8ArrayList | js.typedarray.Uint8Array] => js.Promise[Unit],
-      source: Source[Uint8ArrayList],
+      sink: Source[Uint8ArrayList | js.typedarray.Uint8Array] => js.Promise[Unit],
+      source: AsyncGenerator[Uint8ArrayList, Any, Any],
       stat: StreamStat
     ): Stream = {
       val __obj = js.Dynamic.literal(abort = js.Any.fromFunction1(abort), close = js.Any.fromFunction0(close), closeRead = js.Any.fromFunction0(closeRead), closeWrite = js.Any.fromFunction0(closeWrite), id = id.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), sink = js.Any.fromFunction1(sink), source = source.asInstanceOf[js.Any], stat = stat.asInstanceOf[js.Any])

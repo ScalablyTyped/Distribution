@@ -1,7 +1,7 @@
 
 # Scala.js typings for workbox-window
 
-Typings are for version 4.3
+Typings are for version 6.5.4
 
 ## Library description:
 Simplifies communications with Workbox packages running in the service worker
@@ -24,7 +24,7 @@ Simplifies communications with Workbox packages running in the service worker
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

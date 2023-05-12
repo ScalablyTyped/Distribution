@@ -1,5 +1,7 @@
 package typings.std
 
+import typings.std.stdInts.`0x9245`
+import typings.std.stdInts.`0x9246`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,23 +10,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WEBGLDebugRendererInfo extends StObject {
   
   /* standard dom */
-  val UNMASKED_RENDERER_WEBGL: GLenum
+  val UNMASKED_RENDERER_WEBGL: `0x9246`
   
   /* standard dom */
-  val UNMASKED_VENDOR_WEBGL: GLenum
+  val UNMASKED_VENDOR_WEBGL: `0x9245`
 }
 object WEBGLDebugRendererInfo {
   
-  inline def apply(UNMASKED_RENDERER_WEBGL: GLenum, UNMASKED_VENDOR_WEBGL: GLenum): WEBGLDebugRendererInfo = {
-    val __obj = js.Dynamic.literal(UNMASKED_RENDERER_WEBGL = UNMASKED_RENDERER_WEBGL.asInstanceOf[js.Any], UNMASKED_VENDOR_WEBGL = UNMASKED_VENDOR_WEBGL.asInstanceOf[js.Any])
+  inline def apply(): WEBGLDebugRendererInfo = {
+    val __obj = js.Dynamic.literal(UNMASKED_RENDERER_WEBGL = 0x9246, UNMASKED_VENDOR_WEBGL = 0x9245)
     __obj.asInstanceOf[WEBGLDebugRendererInfo]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: WEBGLDebugRendererInfo] (val x: Self) extends AnyVal {
     
-    inline def setUNMASKED_RENDERER_WEBGL(value: GLenum): Self = StObject.set(x, "UNMASKED_RENDERER_WEBGL", value.asInstanceOf[js.Any])
+    inline def setUNMASKED_RENDERER_WEBGL(value: `0x9246`): Self = StObject.set(x, "UNMASKED_RENDERER_WEBGL", value.asInstanceOf[js.Any])
     
-    inline def setUNMASKED_VENDOR_WEBGL(value: GLenum): Self = StObject.set(x, "UNMASKED_VENDOR_WEBGL", value.asInstanceOf[js.Any])
+    inline def setUNMASKED_VENDOR_WEBGL(value: `0x9245`): Self = StObject.set(x, "UNMASKED_VENDOR_WEBGL", value.asInstanceOf[js.Any])
   }
 }

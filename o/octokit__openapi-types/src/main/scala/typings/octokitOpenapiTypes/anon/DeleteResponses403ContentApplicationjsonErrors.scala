@@ -6,18 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DeleteResponses403ContentApplicationjsonErrors extends StObject {
   
+  /** Delete a project card */
   var delete: Responses403ContentApplicationjsonErrors
   
+  /** Get a project card */
   var get: ParametersPathCardid
   
-  var patch: RequestBodyContentApplicationjsonArchived
+  /** Update an existing project card */
+  var patch: Responses401403404422
 }
 object DeleteResponses403ContentApplicationjsonErrors {
   
   inline def apply(
     delete: Responses403ContentApplicationjsonErrors,
     get: ParametersPathCardid,
-    patch: RequestBodyContentApplicationjsonArchived
+    patch: Responses401403404422
   ): DeleteResponses403ContentApplicationjsonErrors = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteResponses403ContentApplicationjsonErrors]
@@ -30,6 +33,6 @@ object DeleteResponses403ContentApplicationjsonErrors {
     
     inline def setGet(value: ParametersPathCardid): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPatch(value: RequestBodyContentApplicationjsonArchived): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+    inline def setPatch(value: Responses401403404422): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
   }
 }

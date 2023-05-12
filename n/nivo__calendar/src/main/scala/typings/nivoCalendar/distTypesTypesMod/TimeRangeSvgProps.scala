@@ -24,7 +24,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined @nivo/core.@nivo/core.Dimensions & {  data :std.Array<@nivo/calendar.@nivo/calendar/dist/types/types.CalendarDatum>} & std.Partial<std.Omit<@nivo/calendar.@nivo/calendar/dist/types/types.CalendarData, 'data'>> & std.Partial<std.Omit<@nivo/calendar.@nivo/calendar/dist/types/types.CommonCalendarProps, 'yearLegend' | 'yearSpacing' | 'yearLegendOffset' | 'yearLegendPosition' | 'monthSpacing' | 'monthBorderWidth' | 'monthBorderColor'> & @nivo/calendar.@nivo/calendar/dist/types/types.InteractivityProps<@nivo/calendar.@nivo/calendar/dist/types/types.TimeRangeDayData, std.SVGRectElement> & {  dayRadius :number,   square :boolean,   role :string,   weekdayLegendOffset :number,   weekdayTicks :std.Array<0 | 1 | 2 | 3 | 4 | 5 | 6>}> */
+/* Inlined @nivo/core.@nivo/core.Dimensions & {  data :std.Array<@nivo/calendar.@nivo/calendar/dist/types/types.CalendarDatum>} & std.Partial<std.Omit<@nivo/calendar.@nivo/calendar/dist/types/types.CalendarData, 'data'>> & std.Partial<std.Omit<@nivo/calendar.@nivo/calendar/dist/types/types.CommonCalendarProps, 'yearLegend' | 'yearSpacing' | 'yearLegendOffset' | 'yearLegendPosition' | 'monthSpacing' | 'monthBorderWidth' | 'monthBorderColor'> & @nivo/calendar.@nivo/calendar/dist/types/types.InteractivityProps<@nivo/calendar.@nivo/calendar/dist/types/types.TimeRangeDayData, std.SVGRectElement> & {  dayRadius :number,   square :boolean,   role :string,   weekdayLegendOffset :number,   weekdayTicks :std.Array<0 | 1 | 2 | 3 | 4 | 5 | 6>,   firstWeekday :@nivo/calendar.@nivo/calendar/dist/types/types.Weekday}> */
 trait TimeRangeSvgProps extends StObject {
   
   var align: js.UndefOr[BoxAlign] = js.undefined
@@ -46,6 +46,8 @@ trait TimeRangeSvgProps extends StObject {
   var direction: js.UndefOr[horizontal | vertical] = js.undefined
   
   var emptyColor: js.UndefOr[String] = js.undefined
+  
+  var firstWeekday: js.UndefOr[Weekday] = js.undefined
   
   var from: js.UndefOr[DateOrString] = js.undefined
   
@@ -174,6 +176,10 @@ object TimeRangeSvgProps {
     inline def setEmptyColor(value: String): Self = StObject.set(x, "emptyColor", value.asInstanceOf[js.Any])
     
     inline def setEmptyColorUndefined: Self = StObject.set(x, "emptyColor", js.undefined)
+    
+    inline def setFirstWeekday(value: Weekday): Self = StObject.set(x, "firstWeekday", value.asInstanceOf[js.Any])
+    
+    inline def setFirstWeekdayUndefined: Self = StObject.set(x, "firstWeekday", js.undefined)
     
     inline def setFrom(value: DateOrString): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

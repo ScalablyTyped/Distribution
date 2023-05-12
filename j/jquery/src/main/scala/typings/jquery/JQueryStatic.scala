@@ -78,7 +78,7 @@ trait JQueryStatic extends StObject {
     * @see \`{@link https://api.jquery.com/jQuery/ }\`
     * @since 1.4
     */
-  // tslint:disable-next-line:no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   def apply[TElement](): JQuery[TElement] = js.native
   /**
     * Binds a function to be executed when the DOM has finished loading.
@@ -98,7 +98,8 @@ trait JQueryStatic extends StObject {
   });
   ```
     */
-  // tslint:disable-next-line:no-unnecessary-generics unified-signatures
+  /* eslint-disable no-unnecessary-generics */
+  // tslint:disable-next-line:unified-signatures
   def apply[TElement](callback: js.ThisFunction1[/* this */ Document, /* $ */ this.type, Unit]): JQuery[TElement] = js.native
   /**
     * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
@@ -117,6 +118,7 @@ trait JQueryStatic extends StObject {
   $( myForm.elements ).hide();
   ```
     */
+  /* eslint-enable no-unnecessary-generics */
   /**
     * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
     * @param object A plain object to wrap in a jQuery object.
@@ -154,7 +156,7 @@ trait JQueryStatic extends StObject {
     .appendTo( "body" );
   ```
     */
-  // tslint:disable-next-line:no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   /**
     * Accepts a string containing a CSS selector which is then used to match a set of elements.
     * @param selector A string containing a selector expression

@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {number} [radius] - The radius of the bounding sphere. Defaults to 0.5.
   * @example
   * // Create a new bounding sphere centered on the origin with a radius of 0.5
-  * var sphere = new pc.BoundingSphere();
+  * const sphere = new pc.BoundingSphere();
   */
 open class BoundingSphere ()
   extends typings.playcanvas.mod.BoundingSphere {

@@ -8,13 +8,13 @@ trait RefRepo extends StObject {
   
   var ref: String
   
-  var repo: IdNameUrl
+  var repo: NameUrl
   
   var sha: String
 }
 object RefRepo {
   
-  inline def apply(ref: String, repo: IdNameUrl, sha: String): RefRepo = {
+  inline def apply(ref: String, repo: NameUrl, sha: String): RefRepo = {
     val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefRepo]
   }
@@ -24,7 +24,7 @@ object RefRepo {
     
     inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    inline def setRepo(value: IdNameUrl): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: NameUrl): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
     inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
   }

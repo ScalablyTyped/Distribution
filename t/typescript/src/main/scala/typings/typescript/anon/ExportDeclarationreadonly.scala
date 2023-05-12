@@ -3,7 +3,7 @@ package typings.typescript.anon
 import typings.typescript.mod.AssertClause
 import typings.typescript.mod.Expression
 import typings.typescript.mod.Identifier
-import typings.typescript.mod.Modifier
+import typings.typescript.mod.ModifierLike
 import typings.typescript.mod.ModuleBlock
 import typings.typescript.mod.NamedExportBindings
 import typings.typescript.mod.Node
@@ -14,31 +14,24 @@ import typings.typescript.mod.SourceFile
 import typings.typescript.mod.SourceFileLike
 import typings.typescript.mod.StringLiteral
 import typings.typescript.mod.SyntaxKind.ExportDeclaration
+import typings.typescript.mod.TypeOnlyExportDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined typescript.typescript.ExportDeclaration & { readonly isTypeOnly :true} */
 @js.native
-trait ExportDeclarationreadonly extends StObject {
+trait ExportDeclarationreadonly
+  extends StObject
+     with TypeOnlyExportDeclaration {
   
   var _declarationBrand: Any = js.native
+  
+  var _jsdocContainerBrand: Any = js.native
   
   var _statementBrand: Any = js.native
   
   val assertClause: js.UndefOr[AssertClause] = js.native
-  
-  /**
-    * @deprecated `decorators` has been removed from `Node` and merged with `modifiers` on the `Node` subtypes that support them.
-    * Use `ts.canHaveDecorators()` to test whether a `Node` can have decorators.
-    * Use `ts.getDecorators()` to get the decorators of a `Node`.
-    *
-    * For example:
-    * ```ts
-    * const decorators = ts.canHaveDecorators(node) ? ts.getDecorators(node) : undefined;
-    * ```
-    */
-  val decorators: Unit = js.native
   
   val end: Double = js.native
   
@@ -97,7 +90,7 @@ trait ExportDeclarationreadonly extends StObject {
   
   val kind: ExportDeclaration = js.native
   
-  val modifiers: js.UndefOr[NodeArray[Modifier]] = js.native
+  val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
   
   /** If this is not a StringLiteral it will be a grammar error. */
   val moduleSpecifier: js.UndefOr[Expression] = js.native

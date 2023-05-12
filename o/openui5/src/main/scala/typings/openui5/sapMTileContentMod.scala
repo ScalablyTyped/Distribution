@@ -392,6 +392,8 @@ object sapMTileContentMod {
     sPriorityText: String): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Setter for protected property to enable or disable content rendering. This function does not invalidate
       * the control.
       *
@@ -403,6 +405,8 @@ object sapMTileContentMod {
     value: Boolean): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Setter for protected property to enable or disable footer rendering. This function does not invalidate
       * the control.
       *

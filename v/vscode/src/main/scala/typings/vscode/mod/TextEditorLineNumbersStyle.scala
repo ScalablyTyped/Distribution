@@ -14,8 +14,8 @@ object TextEditorLineNumbersStyle extends StObject {
   def apply(value: Double): js.UndefOr[TextEditorLineNumbersStyle & Double] = js.native
   
   /**
-    * Do not render the line numbers.
-    */
+  		 * Do not render the line numbers.
+  		 */
   @js.native
   sealed trait Off
     extends StObject
@@ -23,8 +23,8 @@ object TextEditorLineNumbersStyle extends StObject {
   /* 0 */ val Off: typings.vscode.mod.TextEditorLineNumbersStyle.Off & Double = js.native
   
   /**
-    * Render the line numbers.
-    */
+  		 * Render the line numbers.
+  		 */
   @js.native
   sealed trait On
     extends StObject
@@ -32,8 +32,8 @@ object TextEditorLineNumbersStyle extends StObject {
   /* 1 */ val On: typings.vscode.mod.TextEditorLineNumbersStyle.On & Double = js.native
   
   /**
-    * Render the line numbers with values relative to the primary cursor location.
-    */
+  		 * Render the line numbers with values relative to the primary cursor location.
+  		 */
   @js.native
   sealed trait Relative
     extends StObject

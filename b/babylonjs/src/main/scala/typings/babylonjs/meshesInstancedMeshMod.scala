@@ -19,6 +19,11 @@ object meshesInstancedMeshMod {
   @JSImport("babylonjs/Meshes/instancedMesh", "InstancedMesh")
   @js.native
   open class InstancedMesh protected () extends AbstractMesh {
+    /**
+      * Creates a new InstancedMesh object from the mesh source.
+      * @param name defines the name of the instance
+      * @param source the mesh to create the instance from
+      */
     def this(name: String, source: Mesh) = this()
     
     /* private */ var _billboardWorldMatrix: Any = js.native
@@ -62,7 +67,7 @@ object meshesInstancedMeshMod {
     
     /**
       * Creates a new InstancedMesh object from the mesh model.
-      * @see https://doc.babylonjs.com/how_to/how_to_use_instances
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/copies/instances
       * @param name defines the name of the new instance
       * @returns a new InstancedMesh
       */
@@ -105,7 +110,7 @@ object meshesInstancedMeshMod {
       
       /**
         * Object used to store instanced buffers defined by user
-        * @see https://doc.babylonjs.com/how_to/how_to_use_instances#custom-buffers
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/copies/instances#custom-buffers
         */
       var instancedBuffers: StringDictionary[Any]
     }
@@ -144,7 +149,7 @@ object meshesInstancedMeshMod {
       
       /**
         * Register a custom buffer that will be instanced
-        * @see https://doc.babylonjs.com/how_to/how_to_use_instances#custom-buffers
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/copies/instances#custom-buffers
         * @param kind defines the buffer kind
         * @param stride defines the stride in floats
         */

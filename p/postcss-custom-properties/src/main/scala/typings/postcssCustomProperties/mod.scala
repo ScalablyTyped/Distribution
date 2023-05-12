@@ -10,31 +10,31 @@ object mod extends Shortcut {
   
   @JSImport("postcss-custom-properties", JSImport.Default)
   @js.native
-  val default: PluginCreator[PluginOptions] = js.native
+  val default: PluginCreator[pluginOptions] = js.native
   
-  trait PluginOptions extends StObject {
+  type _To = PluginCreator[pluginOptions]
+  
+  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
+  override def _to: PluginCreator[pluginOptions] = default
+  
+  trait pluginOptions extends StObject {
     
-    /** Determines whether properties using custom properties should be preserved in their original form. */
+    /** Preserve the original notation. default: true */
     var preserve: js.UndefOr[Boolean] = js.undefined
   }
-  object PluginOptions {
+  object pluginOptions {
     
-    inline def apply(): PluginOptions = {
+    inline def apply(): pluginOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PluginOptions]
+      __obj.asInstanceOf[pluginOptions]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: PluginOptions] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: pluginOptions] (val x: Self) extends AnyVal {
       
       inline def setPreserve(value: Boolean): Self = StObject.set(x, "preserve", value.asInstanceOf[js.Any])
       
       inline def setPreserveUndefined: Self = StObject.set(x, "preserve", js.undefined)
     }
   }
-  
-  type _To = PluginCreator[PluginOptions]
-  
-  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: PluginCreator[PluginOptions] = default
 }

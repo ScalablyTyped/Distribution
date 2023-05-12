@@ -145,12 +145,6 @@ object TypeFormatFlags extends StObject {
        with TypeFormatFlags
   /* 2048 */ val WriteClassExpressionAsTypeLiteral: typings.typescript.mod.TypeFormatFlags.WriteClassExpressionAsTypeLiteral & Double = js.native
   
-  /** @deprecated */ @js.native
-  sealed trait WriteOwnNameForAnyLike
-    extends StObject
-       with TypeFormatFlags
-  /* 0 */ val WriteOwnNameForAnyLike: typings.typescript.mod.TypeFormatFlags.WriteOwnNameForAnyLike & Double = js.native
-  
   @js.native
   sealed trait WriteTypeArgumentsOfSignature
     extends StObject

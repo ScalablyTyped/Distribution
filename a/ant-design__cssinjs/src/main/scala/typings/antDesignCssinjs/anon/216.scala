@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.OutlineColor
+import typings.csstype.mod.Property.WebkitTapHighlightColor
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `216` extends StObject {
   
   var value: js.UndefOr[
-    OutlineColor | (js.Array[
-      (Extract[js.UndefOr[OutlineColor | js.Array[NonNullable[js.UndefOr[OutlineColor]]]], String]) | NonNullable[js.UndefOr[OutlineColor]]
+    WebkitTapHighlightColor | (js.Array[
+      (Extract[
+        js.UndefOr[
+          WebkitTapHighlightColor | js.Array[NonNullable[js.UndefOr[WebkitTapHighlightColor]]]
+        ], 
+        String
+      ]) | NonNullable[js.UndefOr[WebkitTapHighlightColor]]
     ])
   ] = js.native
 }

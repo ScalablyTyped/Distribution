@@ -12,7 +12,6 @@ import typings.fhir.fhirStrings.`data-collection`
 import typings.fhir.fhirStrings.`data-requested`
 import typings.fhir.fhirStrings.`data-required`
 import typings.fhir.fhirStrings.`entered-in-error`
-import typings.fhir.fhirStrings.`event-notification`
 import typings.fhir.fhirStrings.`filler-order`
 import typings.fhir.fhirStrings.`final`
 import typings.fhir.fhirStrings.`follow-up`
@@ -36,15 +35,12 @@ import typings.fhir.fhirStrings.`original-order`
 import typings.fhir.fhirStrings.`pending-on-study`
 import typings.fhir.fhirStrings.`potential-candidate`
 import typings.fhir.fhirStrings.`primitive-type`
-import typings.fhir.fhirStrings.`query-event`
-import typings.fhir.fhirStrings.`query-status`
 import typings.fhir.fhirStrings.`reflex-order`
 import typings.fhir.fhirStrings.`req-revalid`
 import typings.fhir.fhirStrings.`reval-fail`
 import typings.fhir.fhirStrings.`subject-list`
 import typings.fhir.fhirStrings.`temporarily-closed-to-accrual-and-intervention`
 import typings.fhir.fhirStrings.`temporarily-closed-to-accrual`
-import typings.fhir.fhirStrings.`undesirable-effect`
 import typings.fhir.fhirStrings.`val-fail`
 import typings.fhir.fhirStrings.aborted
 import typings.fhir.fhirStrings.accepted
@@ -73,7 +69,6 @@ import typings.fhir.fhirStrings.codesystem_
 import typings.fhir.fhirStrings.complete
 import typings.fhir.fhirStrings.completed
 import typings.fhir.fhirStrings.composite
-import typings.fhir.fhirStrings.contraindication
 import typings.fhir.fhirStrings.corrected
 import typings.fhir.fhirStrings.current
 import typings.fhir.fhirStrings.date
@@ -94,16 +89,12 @@ import typings.fhir.fhirStrings.finished
 import typings.fhir.fhirStrings.fragment
 import typings.fhir.fhirStrings.free
 import typings.fhir.fhirStrings.fulfilled
-import typings.fhir.fhirStrings.handshake
-import typings.fhir.fhirStrings.heartbeat
 import typings.fhir.fhirStrings.identifier
 import typings.fhir.fhirStrings.inactive
-import typings.fhir.fhirStrings.indication
 import typings.fhir.fhirStrings.individual
 import typings.fhir.fhirStrings.ineligible
 import typings.fhir.fhirStrings.instance
 import typings.fhir.fhirStrings.intended
-import typings.fhir.fhirStrings.interaction
 import typings.fhir.fhirStrings.issued
 import typings.fhir.fhirStrings.logical
 import typings.fhir.fhirStrings.measurement
@@ -141,7 +132,7 @@ import typings.fhir.fhirStrings.reference
 import typings.fhir.fhirStrings.registered
 import typings.fhir.fhirStrings.rejected
 import typings.fhir.fhirStrings.requested
-import typings.fhir.fhirStrings.requirements
+import typings.fhir.fhirStrings.requirements_
 import typings.fhir.fhirStrings.resource
 import typings.fhir.fhirStrings.retired
 import typings.fhir.fhirStrings.revoked
@@ -169,7 +160,6 @@ import typings.fhir.fhirStrings.validated
 import typings.fhir.fhirStrings.validation
 import typings.fhir.fhirStrings.waiting
 import typings.fhir.fhirStrings.waitlist
-import typings.fhir.fhirStrings.warning
 import typings.fhir.fhirStrings.withdrawn
 import typings.fhir.fhirStrings.working
 import org.scalablytyped.runtime.StObject
@@ -187,14 +177,6 @@ object _FhirResource {
   inline def ActivityDefinition(status: draft | active | retired | unknown): typings.fhir.r4Mod.ActivityDefinition = {
     val __obj = js.Dynamic.literal(resourceType = "ActivityDefinition", status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r4Mod.ActivityDefinition]
-  }
-  
-  inline def AdministrableProductDefinition(
-    routeOfAdministration: js.Array[AdministrableProductDefinitionRouteOfAdministration],
-    status: draft | active | retired | unknown
-  ): typings.fhir.r4Mod.AdministrableProductDefinition = {
-    val __obj = js.Dynamic.literal(resourceType = "AdministrableProductDefinition", routeOfAdministration = routeOfAdministration.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.fhir.r4Mod.AdministrableProductDefinition]
   }
   
   inline def AdverseEvent(actuality: actual | potential, subject: Reference): typings.fhir.r4Mod.AdverseEvent = {
@@ -250,7 +232,7 @@ object _FhirResource {
     date: String,
     fhirVersion: String,
     format: js.Array[String],
-    kind: instance | capability | requirements,
+    kind: instance | capability | requirements_,
     status: draft | active | retired | unknown
   ): typings.fhir.r4Mod.CapabilityStatement = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], fhirVersion = fhirVersion.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], resourceType = "CapabilityStatement", status = status.asInstanceOf[js.Any])
@@ -290,11 +272,6 @@ object _FhirResource {
     __obj.asInstanceOf[typings.fhir.r4Mod.ChargeItemDefinition]
   }
   
-  inline def Citation(status: draft | active | retired | unknown): typings.fhir.r4Mod.Citation = {
-    val __obj = js.Dynamic.literal(resourceType = "Citation", status = status.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.fhir.r4Mod.Citation]
-  }
-  
   inline def Claim(
     created: String,
     insurance: js.Array[ClaimInsurance],
@@ -327,12 +304,6 @@ object _FhirResource {
   inline def ClinicalImpression(status: `in-progress` | completed | `entered-in-error`, subject: Reference): typings.fhir.r4Mod.ClinicalImpression = {
     val __obj = js.Dynamic.literal(resourceType = "ClinicalImpression", status = status.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r4Mod.ClinicalImpression]
-  }
-  
-  inline def ClinicalUseDefinition(`type`: indication | contraindication | interaction | `undesirable-effect` | warning): typings.fhir.r4Mod.ClinicalUseDefinition = {
-    val __obj = js.Dynamic.literal(resourceType = "ClinicalUseDefinition")
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.fhir.r4Mod.ClinicalUseDefinition]
   }
   
   inline def CodeSystem(
@@ -493,6 +464,17 @@ object _FhirResource {
     __obj.asInstanceOf[typings.fhir.r4Mod.DocumentReference]
   }
   
+  inline def EffectEvidenceSynthesis(
+    exposure: Reference,
+    exposureAlternative: Reference,
+    outcome: Reference,
+    population: Reference,
+    status: draft | active | retired | unknown
+  ): typings.fhir.r4Mod.EffectEvidenceSynthesis = {
+    val __obj = js.Dynamic.literal(exposure = exposure.asInstanceOf[js.Any], exposureAlternative = exposureAlternative.asInstanceOf[js.Any], outcome = outcome.asInstanceOf[js.Any], population = population.asInstanceOf[js.Any], resourceType = "EffectEvidenceSynthesis", status = status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.fhir.r4Mod.EffectEvidenceSynthesis]
+  }
+  
   inline def Encounter(
     `class`: Coding,
     status: planned | arrived | triaged | `in-progress` | onleave | finished | cancelled | `entered-in-error` | unknown
@@ -535,21 +517,16 @@ object _FhirResource {
     __obj.asInstanceOf[typings.fhir.r4Mod.EventDefinition]
   }
   
-  inline def Evidence(
-    status: draft | active | retired | unknown,
-    variableDefinition: js.Array[EvidenceVariableDefinition]
-  ): typings.fhir.r4Mod.Evidence = {
-    val __obj = js.Dynamic.literal(resourceType = "Evidence", status = status.asInstanceOf[js.Any], variableDefinition = variableDefinition.asInstanceOf[js.Any])
+  inline def Evidence(exposureBackground: Reference, status: draft | active | retired | unknown): typings.fhir.r4Mod.Evidence = {
+    val __obj = js.Dynamic.literal(exposureBackground = exposureBackground.asInstanceOf[js.Any], resourceType = "Evidence", status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r4Mod.Evidence]
   }
   
-  inline def EvidenceReport(status: draft | active | retired | unknown, subject: EvidenceReportSubject): typings.fhir.r4Mod.EvidenceReport = {
-    val __obj = js.Dynamic.literal(resourceType = "EvidenceReport", status = status.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.fhir.r4Mod.EvidenceReport]
-  }
-  
-  inline def EvidenceVariable(status: draft | active | retired | unknown): typings.fhir.r4Mod.EvidenceVariable = {
-    val __obj = js.Dynamic.literal(resourceType = "EvidenceVariable", status = status.asInstanceOf[js.Any])
+  inline def EvidenceVariable(
+    characteristic: js.Array[EvidenceVariableCharacteristic],
+    status: draft | active | retired | unknown
+  ): typings.fhir.r4Mod.EvidenceVariable = {
+    val __obj = js.Dynamic.literal(characteristic = characteristic.asInstanceOf[js.Any], resourceType = "EvidenceVariable", status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r4Mod.EvidenceVariable]
   }
   
@@ -665,11 +642,6 @@ object _FhirResource {
     __obj.asInstanceOf[typings.fhir.r4Mod.ImplementationGuide]
   }
   
-  inline def Ingredient(role: CodeableConcept, status: draft | active | retired | unknown, substance: IngredientSubstance): typings.fhir.r4Mod.Ingredient = {
-    val __obj = js.Dynamic.literal(resourceType = "Ingredient", role = role.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], substance = substance.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.fhir.r4Mod.Ingredient]
-  }
-  
   inline def InsurancePlan(): typings.fhir.r4Mod.InsurancePlan = {
     val __obj = js.Dynamic.literal(resourceType = "InsurancePlan")
     __obj.asInstanceOf[typings.fhir.r4Mod.InsurancePlan]
@@ -699,11 +671,6 @@ object _FhirResource {
   inline def Location(): typings.fhir.r4Mod.Location = {
     val __obj = js.Dynamic.literal(resourceType = "Location")
     __obj.asInstanceOf[typings.fhir.r4Mod.Location]
-  }
-  
-  inline def ManufacturedItemDefinition(manufacturedDoseForm: CodeableConcept, status: draft | active | retired | unknown): typings.fhir.r4Mod.ManufacturedItemDefinition = {
-    val __obj = js.Dynamic.literal(manufacturedDoseForm = manufacturedDoseForm.asInstanceOf[js.Any], resourceType = "ManufacturedItemDefinition", status = status.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.fhir.r4Mod.ManufacturedItemDefinition]
   }
   
   inline def Measure(status: draft | active | retired | unknown): typings.fhir.r4Mod.Measure = {
@@ -772,9 +739,57 @@ object _FhirResource {
     __obj.asInstanceOf[typings.fhir.r4Mod.MedicationStatement]
   }
   
-  inline def MedicinalProductDefinition(name: js.Array[MedicinalProductDefinitionName]): typings.fhir.r4Mod.MedicinalProductDefinition = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resourceType = "MedicinalProductDefinition")
-    __obj.asInstanceOf[typings.fhir.r4Mod.MedicinalProductDefinition]
+  inline def MedicinalProduct(name: js.Array[MedicinalProductName]): typings.fhir.r4Mod.MedicinalProduct = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resourceType = "MedicinalProduct")
+    __obj.asInstanceOf[typings.fhir.r4Mod.MedicinalProduct]
+  }
+  
+  inline def MedicinalProductAuthorization(): typings.fhir.r4Mod.MedicinalProductAuthorization = {
+    val __obj = js.Dynamic.literal(resourceType = "MedicinalProductAuthorization")
+    __obj.asInstanceOf[typings.fhir.r4Mod.MedicinalProductAuthorization]
+  }
+  
+  inline def MedicinalProductContraindication(): typings.fhir.r4Mod.MedicinalProductContraindication = {
+    val __obj = js.Dynamic.literal(resourceType = "MedicinalProductContraindication")
+    __obj.asInstanceOf[typings.fhir.r4Mod.MedicinalProductContraindication]
+  }
+  
+  inline def MedicinalProductIndication(): typings.fhir.r4Mod.MedicinalProductIndication = {
+    val __obj = js.Dynamic.literal(resourceType = "MedicinalProductIndication")
+    __obj.asInstanceOf[typings.fhir.r4Mod.MedicinalProductIndication]
+  }
+  
+  inline def MedicinalProductIngredient(role: CodeableConcept): typings.fhir.r4Mod.MedicinalProductIngredient = {
+    val __obj = js.Dynamic.literal(resourceType = "MedicinalProductIngredient", role = role.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.fhir.r4Mod.MedicinalProductIngredient]
+  }
+  
+  inline def MedicinalProductInteraction(): typings.fhir.r4Mod.MedicinalProductInteraction = {
+    val __obj = js.Dynamic.literal(resourceType = "MedicinalProductInteraction")
+    __obj.asInstanceOf[typings.fhir.r4Mod.MedicinalProductInteraction]
+  }
+  
+  inline def MedicinalProductManufactured(manufacturedDoseForm: CodeableConcept, quantity: Quantity): typings.fhir.r4Mod.MedicinalProductManufactured = {
+    val __obj = js.Dynamic.literal(manufacturedDoseForm = manufacturedDoseForm.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any], resourceType = "MedicinalProductManufactured")
+    __obj.asInstanceOf[typings.fhir.r4Mod.MedicinalProductManufactured]
+  }
+  
+  inline def MedicinalProductPackaged(packageItem: js.Array[MedicinalProductPackagedPackageItem]): typings.fhir.r4Mod.MedicinalProductPackaged = {
+    val __obj = js.Dynamic.literal(packageItem = packageItem.asInstanceOf[js.Any], resourceType = "MedicinalProductPackaged")
+    __obj.asInstanceOf[typings.fhir.r4Mod.MedicinalProductPackaged]
+  }
+  
+  inline def MedicinalProductPharmaceutical(
+    administrableDoseForm: CodeableConcept,
+    routeOfAdministration: js.Array[MedicinalProductPharmaceuticalRouteOfAdministration]
+  ): typings.fhir.r4Mod.MedicinalProductPharmaceutical = {
+    val __obj = js.Dynamic.literal(administrableDoseForm = administrableDoseForm.asInstanceOf[js.Any], resourceType = "MedicinalProductPharmaceutical", routeOfAdministration = routeOfAdministration.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.fhir.r4Mod.MedicinalProductPharmaceutical]
+  }
+  
+  inline def MedicinalProductUndesirableEffect(): typings.fhir.r4Mod.MedicinalProductUndesirableEffect = {
+    val __obj = js.Dynamic.literal(resourceType = "MedicinalProductUndesirableEffect")
+    __obj.asInstanceOf[typings.fhir.r4Mod.MedicinalProductUndesirableEffect]
   }
   
   inline def MessageDefinition(date: String, status: draft | active | retired | unknown): typings.fhir.r4Mod.MessageDefinition = {
@@ -811,11 +826,6 @@ object _FhirResource {
   ): typings.fhir.r4Mod.NutritionOrder = {
     val __obj = js.Dynamic.literal(dateTime = dateTime.asInstanceOf[js.Any], intent = intent.asInstanceOf[js.Any], patient = patient.asInstanceOf[js.Any], resourceType = "NutritionOrder", status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r4Mod.NutritionOrder]
-  }
-  
-  inline def NutritionProduct(status: active | inactive | `entered-in-error`): typings.fhir.r4Mod.NutritionProduct = {
-    val __obj = js.Dynamic.literal(resourceType = "NutritionProduct", status = status.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.fhir.r4Mod.NutritionProduct]
   }
   
   inline def Observation(
@@ -858,11 +868,6 @@ object _FhirResource {
   inline def OrganizationAffiliation(): typings.fhir.r4Mod.OrganizationAffiliation = {
     val __obj = js.Dynamic.literal(resourceType = "OrganizationAffiliation")
     __obj.asInstanceOf[typings.fhir.r4Mod.OrganizationAffiliation]
-  }
-  
-  inline def PackagedProductDefinition(): typings.fhir.r4Mod.PackagedProductDefinition = {
-    val __obj = js.Dynamic.literal(resourceType = "PackagedProductDefinition")
-    __obj.asInstanceOf[typings.fhir.r4Mod.PackagedProductDefinition]
   }
   
   inline def Parameters(): typings.fhir.r4Mod.Parameters = {
@@ -939,11 +944,6 @@ object _FhirResource {
     __obj.asInstanceOf[typings.fhir.r4Mod.QuestionnaireResponse]
   }
   
-  inline def RegulatedAuthorization(): typings.fhir.r4Mod.RegulatedAuthorization = {
-    val __obj = js.Dynamic.literal(resourceType = "RegulatedAuthorization")
-    __obj.asInstanceOf[typings.fhir.r4Mod.RegulatedAuthorization]
-  }
-  
   inline def RelatedPerson(patient: Reference): typings.fhir.r4Mod.RelatedPerson = {
     val __obj = js.Dynamic.literal(patient = patient.asInstanceOf[js.Any], resourceType = "RelatedPerson")
     __obj.asInstanceOf[typings.fhir.r4Mod.RelatedPerson]
@@ -994,6 +994,11 @@ object _FhirResource {
   ): typings.fhir.r4Mod.RiskAssessment = {
     val __obj = js.Dynamic.literal(resourceType = "RiskAssessment", status = status.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fhir.r4Mod.RiskAssessment]
+  }
+  
+  inline def RiskEvidenceSynthesis(outcome: Reference, population: Reference, status: draft | active | retired | unknown): typings.fhir.r4Mod.RiskEvidenceSynthesis = {
+    val __obj = js.Dynamic.literal(outcome = outcome.asInstanceOf[js.Any], population = population.asInstanceOf[js.Any], resourceType = "RiskEvidenceSynthesis", status = status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.fhir.r4Mod.RiskEvidenceSynthesis]
   }
   
   inline def Schedule(actor: js.Array[Reference]): typings.fhir.r4Mod.Schedule = {
@@ -1078,28 +1083,39 @@ object _FhirResource {
     __obj.asInstanceOf[typings.fhir.r4Mod.Subscription]
   }
   
-  inline def SubscriptionStatus(
-    subscription: Reference,
-    `type`: handshake | heartbeat | `event-notification` | `query-status` | `query-event`
-  ): typings.fhir.r4Mod.SubscriptionStatus = {
-    val __obj = js.Dynamic.literal(resourceType = "SubscriptionStatus", subscription = subscription.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.fhir.r4Mod.SubscriptionStatus]
-  }
-  
-  inline def SubscriptionTopic(status: draft | active | retired | unknown, url: String): typings.fhir.r4Mod.SubscriptionTopic = {
-    val __obj = js.Dynamic.literal(resourceType = "SubscriptionTopic", status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.fhir.r4Mod.SubscriptionTopic]
-  }
-  
   inline def Substance(code: CodeableConcept): typings.fhir.r4Mod.Substance = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], resourceType = "Substance")
     __obj.asInstanceOf[typings.fhir.r4Mod.Substance]
   }
   
-  inline def SubstanceDefinition(): typings.fhir.r4Mod.SubstanceDefinition = {
-    val __obj = js.Dynamic.literal(resourceType = "SubstanceDefinition")
-    __obj.asInstanceOf[typings.fhir.r4Mod.SubstanceDefinition]
+  inline def SubstanceNucleicAcid(): typings.fhir.r4Mod.SubstanceNucleicAcid = {
+    val __obj = js.Dynamic.literal(resourceType = "SubstanceNucleicAcid")
+    __obj.asInstanceOf[typings.fhir.r4Mod.SubstanceNucleicAcid]
+  }
+  
+  inline def SubstancePolymer(): typings.fhir.r4Mod.SubstancePolymer = {
+    val __obj = js.Dynamic.literal(resourceType = "SubstancePolymer")
+    __obj.asInstanceOf[typings.fhir.r4Mod.SubstancePolymer]
+  }
+  
+  inline def SubstanceProtein(): typings.fhir.r4Mod.SubstanceProtein = {
+    val __obj = js.Dynamic.literal(resourceType = "SubstanceProtein")
+    __obj.asInstanceOf[typings.fhir.r4Mod.SubstanceProtein]
+  }
+  
+  inline def SubstanceReferenceInformation(): typings.fhir.r4Mod.SubstanceReferenceInformation = {
+    val __obj = js.Dynamic.literal(resourceType = "SubstanceReferenceInformation")
+    __obj.asInstanceOf[typings.fhir.r4Mod.SubstanceReferenceInformation]
+  }
+  
+  inline def SubstanceSourceMaterial(): typings.fhir.r4Mod.SubstanceSourceMaterial = {
+    val __obj = js.Dynamic.literal(resourceType = "SubstanceSourceMaterial")
+    __obj.asInstanceOf[typings.fhir.r4Mod.SubstanceSourceMaterial]
+  }
+  
+  inline def SubstanceSpecification(): typings.fhir.r4Mod.SubstanceSpecification = {
+    val __obj = js.Dynamic.literal(resourceType = "SubstanceSpecification")
+    __obj.asInstanceOf[typings.fhir.r4Mod.SubstanceSpecification]
   }
   
   inline def SupplyDelivery(): typings.fhir.r4Mod.SupplyDelivery = {
@@ -1122,7 +1138,7 @@ object _FhirResource {
   
   inline def TerminologyCapabilities(
     date: String,
-    kind: instance | capability | requirements,
+    kind: instance | capability | requirements_,
     status: draft | active | retired | unknown
   ): typings.fhir.r4Mod.TerminologyCapabilities = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], resourceType = "TerminologyCapabilities", status = status.asInstanceOf[js.Any])

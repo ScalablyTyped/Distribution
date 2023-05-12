@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("pkijs", "EncryptedContentInfo")
 @js.native
 /**
-  * Initializes a new instance of the {@link EncryptedContent} class
+  * Initializes a new instance of the {@link EncryptedContentInfo} class
   * @param parameters Initialization parameters
   */
 open class EncryptedContentInfo ()

@@ -2,7 +2,6 @@ package typings.bson.mod
 
 import typings.bson.anon.High
 import typings.bson.anon.NumberLong
-import typings.bson.bsonBooleans.`true`
 import typings.bson.bsonInts.`-1`
 import typings.bson.bsonInts.`0`
 import typings.bson.bsonInts.`1`
@@ -25,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param high - The high (signed) 32 bits of the long
   * @param unsigned - Whether unsigned or not, defaults to signed
   */
-open class Long () extends StObject {
+open class Long () extends BSONValue {
   def this(low: String) = this()
   def this(low: js.BigInt) = this()
   def this(low: scala.Double) = this()
@@ -51,9 +50,7 @@ open class Long () extends StObject {
   def this(low: Unit, high: Unit, unsigned: Boolean) = this()
   
   /** An indicator used to reliably determine if an object is a Long or not. */
-  var __isLong__ : `true` = js.native
-  
-  var _bsontype: typings.bson.bsonStrings.Long = js.native
+  def __isLong__ : Boolean = js.native
   
   /** Returns the sum of this and the specified Long. */
   def add(addend: String): Long = js.native
@@ -167,8 +164,6 @@ open class Long () extends StObject {
     * The high 32 bits as a signed value.
     */
   var high: scala.Double = js.native
-  
-  def inspect(): String = js.native
   
   /** Tests if this Long's value is even. */
   def isEven(): Boolean = js.native
@@ -506,8 +501,8 @@ object Long {
   inline def fromBytesLE(bytes: js.Array[scala.Double]): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytesLE")(bytes.asInstanceOf[js.Any]).asInstanceOf[Long]
   inline def fromBytesLE(bytes: js.Array[scala.Double], unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytesLE")(bytes.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
   
-  inline def fromExtendedJSON(doc: NumberLong): scala.Double | Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromExtendedJSON")(doc.asInstanceOf[js.Any]).asInstanceOf[scala.Double | Long]
-  inline def fromExtendedJSON(doc: NumberLong, options: EJSONOptions): scala.Double | Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromExtendedJSON")(doc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Double | Long]
+  inline def fromExtendedJSON(doc: NumberLong): scala.Double | Long | js.BigInt = ^.asInstanceOf[js.Dynamic].applyDynamic("fromExtendedJSON")(doc.asInstanceOf[js.Any]).asInstanceOf[scala.Double | Long | js.BigInt]
+  inline def fromExtendedJSON(doc: NumberLong, options: EJSONOptions): scala.Double | Long | js.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("fromExtendedJSON")(doc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Double | Long | js.BigInt]
   
   /**
     * Returns a Long representing the given 32 bit integer value.

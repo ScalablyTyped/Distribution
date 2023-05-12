@@ -9,6 +9,11 @@ trait dxCheckBoxOptions
      with EditorOptions[dxCheckBox] {
   
   /**
+    * 
+    */
+  var enableThreeStateBehavior: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Specifies the check box icon&apos;s width and height.
     */
   var iconSize: js.UndefOr[Double | String] = js.undefined
@@ -38,6 +43,10 @@ object dxCheckBoxOptions {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: dxCheckBoxOptions] (val x: Self) extends AnyVal {
+    
+    inline def setEnableThreeStateBehavior(value: Boolean): Self = StObject.set(x, "enableThreeStateBehavior", value.asInstanceOf[js.Any])
+    
+    inline def setEnableThreeStateBehaviorUndefined: Self = StObject.set(x, "enableThreeStateBehavior", js.undefined)
     
     inline def setIconSize(value: Double | String): Self = StObject.set(x, "iconSize", value.asInstanceOf[js.Any])
     

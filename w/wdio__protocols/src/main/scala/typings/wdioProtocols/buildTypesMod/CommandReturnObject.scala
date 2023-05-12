@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CommandReturnObject extends StObject {
   
-  var description: String
+  var description: js.UndefOr[String] = js.undefined
   
   var name: String
   
@@ -14,8 +14,8 @@ trait CommandReturnObject extends StObject {
 }
 object CommandReturnObject {
   
-  inline def apply(description: String, name: String, `type`: String): CommandReturnObject = {
-    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  inline def apply(name: String, `type`: String): CommandReturnObject = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandReturnObject]
   }
@@ -24,6 +24,8 @@ object CommandReturnObject {
   implicit open class MutableBuilder[Self <: CommandReturnObject] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

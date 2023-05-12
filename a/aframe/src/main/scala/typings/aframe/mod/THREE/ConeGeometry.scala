@@ -10,13 +10,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class ConeGeometry protected ()
   extends typings.three.mod.ConeGeometry {
   /**
-    * @param [radius=1] — Radius of the cone base.
-    * @param [height=1] — Height of the cone.
-    * @param [radialSegments=8] — Number of segmented faces around the circumference of the cone.
-    * @param [heightSegments=1] — Number of rows of faces along the height of the cone.
-    * @param [openEnded=false] — A Boolean indicating whether the base of the cone is open or capped.
-    * @param [thetaStart=0]
-    * @param [thetaLength=Math.PI * 2]
+    * Create a new instance of {@link ConeGeometry}
+    * @param radius Radius of the cone base. Expects a `Float`. Default `1`
+    * @param height Height of the cone. Expects a `Float`. Default `1`
+    * @param radialSegments Number of segmented faces around the circumference of the cone. Expects a `Integer`. Default `32`
+    * @param heightSegments Number of rows of faces along the height of the cone. Expects a `Integer`. Default `1`
+    * @param openEnded A Boolean indicating whether the base of the cone is open or capped. Default `false`, _meaning capped_.
+    * @param thetaStart Start angle for first segment. Expects a `Float`. Default `0`, _(three o'clock position)_.
+    * @param thetaLength The central angle, often called theta, of the circular sector. Expects a `Float`. Default `Math.PI * 2`, _which makes for a complete cone_.
     */
   def this(
     radius: js.UndefOr[Double],

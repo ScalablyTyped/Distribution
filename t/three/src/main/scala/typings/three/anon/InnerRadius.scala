@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait InnerRadius extends StObject {
   
-  var innerRadius: Double
+  val innerRadius: Double
   
-  var outerRadius: Double
+  val outerRadius: Double
   
-  var phiSegments: Double
+  val phiSegments: Double
   
-  var thetaLength: Double
+  val thetaLength: Double
   
-  var thetaSegments: Double
+  val thetaSegments: Double
   
-  var thetaStart: Double
+  val thetaStart: Double
 }
 object InnerRadius {
   

@@ -1,7 +1,7 @@
 
 # Scala.js typings for yargs
 
-Typings are for version 17.0
+Typings are for version 17.7.2
 
 ## Library description:
 yargs the modern, pirate-themed, successor to optimist.
@@ -24,7 +24,7 @@ yargs the modern, pirate-themed, successor to optimist.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

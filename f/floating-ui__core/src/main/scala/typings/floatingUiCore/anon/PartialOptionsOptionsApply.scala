@@ -13,7 +13,7 @@ trait PartialOptionsOptionsApply extends StObject {
   var altBoundary: js.UndefOr[Boolean] = js.undefined
   
   @JSName("apply")
-  var apply: js.UndefOr[js.Function1[/* args */ MiddlewareArgumentsavaila, Unit | js.Promise[Unit]]] = js.undefined
+  var apply: js.UndefOr[js.Function1[/* args */ MiddlewareStateavailableW, Unit | js.Promise[Unit]]] = js.undefined
   
   var boundary: js.UndefOr[typings.floatingUiCore.srcTypesMod.Boundary] = js.undefined
   
@@ -37,7 +37,7 @@ object PartialOptionsOptionsApply {
     
     inline def setAltBoundaryUndefined: Self = StObject.set(x, "altBoundary", js.undefined)
     
-    inline def setApply(value: /* args */ MiddlewareArgumentsavaila => Unit | js.Promise[Unit]): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+    inline def setApply(value: /* args */ MiddlewareStateavailableW => Unit | js.Promise[Unit]): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     
     inline def setApplyUndefined: Self = StObject.set(x, "apply", js.undefined)
     

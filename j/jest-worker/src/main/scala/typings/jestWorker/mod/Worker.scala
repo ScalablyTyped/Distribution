@@ -1,6 +1,7 @@
 package typings.jestWorker.mod
 
 import typings.node.NodeJS.ReadableStream
+import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +37,9 @@ open class Worker protected ()
   extends StObject
      with Worker2 {
   def this(workerPath: String) = this()
+  def this(workerPath: URL) = this()
   def this(workerPath: String, options: WorkerFarmOptions) = this()
+  def this(workerPath: URL, options: WorkerFarmOptions) = this()
   
   /* private */ /* CompleteClass */
   var _bindExposedWorkerMethods: Any = js.native
@@ -64,4 +67,7 @@ open class Worker protected ()
   
   /* CompleteClass */
   override def getStdout(): ReadableStream = js.native
+  
+  /* CompleteClass */
+  override def start(): js.Promise[Unit] = js.native
 }

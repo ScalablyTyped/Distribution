@@ -12,7 +12,7 @@ trait DocumentClassifierProperties extends StObject {
   var ClassifierMetadata: js.UndefOr[typings.awsSdk.clientsComprehendMod.ClassifierMetadata] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the AWS Identity and Management (IAM) role that grants Amazon Comprehend read access to your input data.
+    * The Amazon Resource Name (ARN) of the IAM role that grants Amazon Comprehend read access to your input data.
     */
   var DataAccessRoleArn: js.UndefOr[IamRoleArn] = js.undefined
   
@@ -25,6 +25,11 @@ trait DocumentClassifierProperties extends StObject {
     * The time that training the document classifier completed.
     */
   var EndTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The Amazon Resource Number (ARN) of the flywheel
+    */
+  var FlywheelArn: js.UndefOr[ComprehendFlywheelArn] = js.undefined
   
   /**
     * The input data configuration that you supplied when you created the document classifier for training.
@@ -47,7 +52,7 @@ trait DocumentClassifierProperties extends StObject {
   var Mode: js.UndefOr[DocumentClassifierMode] = js.undefined
   
   /**
-    * ID for the AWS Key Management Service (KMS) key that Amazon Comprehend uses to encrypt trained custom models. The ModelKmsKeyId can be either of the following formats:   KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"   
+    * ID for the KMS key that Amazon Comprehend uses to encrypt trained custom models. The ModelKmsKeyId can be either of the following formats:   KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"   
     */
   var ModelKmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   
@@ -57,12 +62,12 @@ trait DocumentClassifierProperties extends StObject {
   var OutputDataConfig: js.UndefOr[DocumentClassifierOutputDataConfig] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the source model. This model was imported from a different AWS account to create the document classifier model in your AWS account.
+    * The Amazon Resource Name (ARN) of the source model. This model was imported from a different Amazon Web Services account to create the document classifier model in your Amazon Web Services account.
     */
   var SourceModelArn: js.UndefOr[DocumentClassifierArn] = js.undefined
   
   /**
-    * The status of the document classifier. If the status is TRAINED the classifier is ready to use. If the status is FAILED you can see additional information about why the classifier wasn't trained in the Message field.
+    * The status of the document classifier. If the status is TRAINED the classifier is ready to use. If the status is TRAINED_WITH_WARNINGS the classifier training succeeded, but you should review the warnings returned in the CreateDocumentClassifier response.  If the status is FAILED you can see additional information about why the classifier wasn't trained in the Message field.
     */
   var Status: js.UndefOr[ModelStatus] = js.undefined
   
@@ -87,7 +92,7 @@ trait DocumentClassifierProperties extends StObject {
   var VersionName: js.UndefOr[typings.awsSdk.clientsComprehendMod.VersionName] = js.undefined
   
   /**
-    * ID for the AWS Key Management Service (KMS) key that Amazon Comprehend uses to encrypt data on the storage volume attached to the ML compute instance(s) that process the analysis job. The VolumeKmsKeyId can be either of the following formats:   KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"   
+    * ID for the Amazon Web Services Key Management Service (KMS) key that Amazon Comprehend uses to encrypt data on the storage volume attached to the ML compute instance(s) that process the analysis job. The VolumeKmsKeyId can be either of the following formats:   KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"   
     */
   var VolumeKmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   
@@ -121,6 +126,10 @@ object DocumentClassifierProperties {
     inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+    
+    inline def setFlywheelArn(value: ComprehendFlywheelArn): Self = StObject.set(x, "FlywheelArn", value.asInstanceOf[js.Any])
+    
+    inline def setFlywheelArnUndefined: Self = StObject.set(x, "FlywheelArn", js.undefined)
     
     inline def setInputDataConfig(value: DocumentClassifierInputDataConfig): Self = StObject.set(x, "InputDataConfig", value.asInstanceOf[js.Any])
     

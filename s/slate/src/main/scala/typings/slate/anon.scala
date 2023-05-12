@@ -1,5 +1,6 @@
 package typings.slate
 
+import typings.slate.distInterfacesEditorMod.Editor
 import typings.slate.distInterfacesEditorMod.NodeMatch
 import typings.slate.distInterfacesEditorMod.PropsCompare
 import typings.slate.distInterfacesEditorMod.PropsMerge
@@ -8,8 +9,9 @@ import typings.slate.distInterfacesNodeMod.Node
 import typings.slate.distInterfacesOperationMod.BaseSetSelectionOperation
 import typings.slate.distInterfacesPathMod.Path
 import typings.slate.distInterfacesRangeMod.Range
-import typings.slate.distInterfacesTypesMod.MaximizeMode
-import typings.slate.distInterfacesTypesMod.RangeMode
+import typings.slate.distInterfacesTransformsNodeMod.NodeInsertNodesOptions
+import typings.slate.distTypesTypesMod.MaximizeMode
+import typings.slate.distTypesTypesMod.RangeMode
 import typings.slate.slateStrings.set_selection
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
@@ -74,13 +76,9 @@ object anon {
     
     var at: js.UndefOr[Location] = js.undefined
     
-    var hanging: js.UndefOr[Boolean] = js.undefined
-    
     var `match`: js.UndefOr[NodeMatch[T]] = js.undefined
     
-    var mode: js.UndefOr[RangeMode] = js.undefined
-    
-    var select: js.UndefOr[Boolean] = js.undefined
+    var mode: js.UndefOr[MaximizeMode] = js.undefined
     
     var voids: js.UndefOr[Boolean] = js.undefined
   }
@@ -100,21 +98,13 @@ object anon {
       
       inline def setAtVarargs(value: Double*): Self = StObject.set(x, "at", js.Array(value*))
       
-      inline def setHanging(value: Boolean): Self = StObject.set(x, "hanging", value.asInstanceOf[js.Any])
-      
-      inline def setHangingUndefined: Self = StObject.set(x, "hanging", js.undefined)
-      
       inline def setMatch(value: (/* node */ Node, /* path */ Path) => /* is T */ Boolean): Self = StObject.set(x, "match", js.Any.fromFunction2(value))
       
       inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
       
-      inline def setMode(value: RangeMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: MaximizeMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
-      
-      inline def setSelect(value: Boolean): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
-      
-      inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       
       inline def setVoids(value: Boolean): Self = StObject.set(x, "voids", value.asInstanceOf[js.Any])
       
@@ -186,6 +176,47 @@ object anon {
     }
   }
   
+  trait DirtyPaths extends StObject {
+    
+    var dirtyPaths: js.Array[Path]
+    
+    var initialDirtyPathsLength: Double
+    
+    var iteration: Double
+    
+    var operation: js.UndefOr[typings.slate.distInterfacesOperationMod.Operation] = js.undefined
+  }
+  object DirtyPaths {
+    
+    inline def apply(dirtyPaths: js.Array[Path], initialDirtyPathsLength: Double, iteration: Double): DirtyPaths = {
+      val __obj = js.Dynamic.literal(dirtyPaths = dirtyPaths.asInstanceOf[js.Any], initialDirtyPathsLength = initialDirtyPathsLength.asInstanceOf[js.Any], iteration = iteration.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DirtyPaths]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirtyPaths] (val x: Self) extends AnyVal {
+      
+      inline def setDirtyPaths(value: js.Array[Path]): Self = StObject.set(x, "dirtyPaths", value.asInstanceOf[js.Any])
+      
+      inline def setDirtyPathsVarargs(value: Path*): Self = StObject.set(x, "dirtyPaths", js.Array(value*))
+      
+      inline def setInitialDirtyPathsLength(value: Double): Self = StObject.set(x, "initialDirtyPathsLength", value.asInstanceOf[js.Any])
+      
+      inline def setIteration(value: Double): Self = StObject.set(x, "iteration", value.asInstanceOf[js.Any])
+      
+      inline def setOperation(value: typings.slate.distInterfacesOperationMod.Operation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+      
+      inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    }
+  }
+  
+  @js.native
+  trait FnCall extends StObject {
+    
+    def apply[T /* <: Node */](editor: Editor, node: Node): Unit = js.native
+    def apply[T /* <: Node */](editor: Editor, node: Node, options: NodeInsertNodesOptions[T]): Unit = js.native
+  }
+  
   trait Hanging[T /* <: Node */] extends StObject {
     
     var at: js.UndefOr[Location] = js.undefined
@@ -240,12 +271,14 @@ object anon {
     
     var mode: js.UndefOr[MaximizeMode] = js.undefined
     
+    var to: Path
+    
     var voids: js.UndefOr[Boolean] = js.undefined
   }
   object Match {
     
-    inline def apply[T /* <: Node */](): Match[T] = {
-      val __obj = js.Dynamic.literal()
+    inline def apply[T /* <: Node */](to: Path): Match[T] = {
+      val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[Match[T]]
     }
     
@@ -266,6 +299,10 @@ object anon {
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
+      inline def setTo(value: Path): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      
+      inline def setToVarargs(value: Double*): Self = StObject.set(x, "to", js.Array(value*))
+      
       inline def setVoids(value: Boolean): Self = StObject.set(x, "voids", value.asInstanceOf[js.Any])
       
       inline def setVoidsUndefined: Self = StObject.set(x, "voids", js.undefined)
@@ -276,18 +313,20 @@ object anon {
     
     var at: js.UndefOr[Location] = js.undefined
     
+    var hanging: js.UndefOr[Boolean] = js.undefined
+    
     var `match`: js.UndefOr[NodeMatch[T]] = js.undefined
     
     var mode: js.UndefOr[MaximizeMode] = js.undefined
     
-    var to: Path
+    var split: js.UndefOr[Boolean] = js.undefined
     
     var voids: js.UndefOr[Boolean] = js.undefined
   }
   object Mode {
     
-    inline def apply[T /* <: Node */](to: Path): Mode[T] = {
-      val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
+    inline def apply[T /* <: Node */](): Mode[T] = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Mode[T]]
     }
     
@@ -300,6 +339,10 @@ object anon {
       
       inline def setAtVarargs(value: Double*): Self = StObject.set(x, "at", js.Array(value*))
       
+      inline def setHanging(value: Boolean): Self = StObject.set(x, "hanging", value.asInstanceOf[js.Any])
+      
+      inline def setHangingUndefined: Self = StObject.set(x, "hanging", js.undefined)
+      
       inline def setMatch(value: (/* node */ Node, /* path */ Path) => /* is T */ Boolean): Self = StObject.set(x, "match", js.Any.fromFunction2(value))
       
       inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
@@ -308,9 +351,9 @@ object anon {
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      inline def setTo(value: Path): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setSplit(value: Boolean): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
       
-      inline def setToVarargs(value: Double*): Self = StObject.set(x, "to", js.Array(value*))
+      inline def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
       
       inline def setVoids(value: Boolean): Self = StObject.set(x, "voids", value.asInstanceOf[js.Any])
       
@@ -344,6 +387,26 @@ object anon {
       inline def setProperties(value: Null): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
       inline def setType(value: set_selection): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Operation extends StObject {
+    
+    var operation: js.UndefOr[typings.slate.distInterfacesOperationMod.Operation] = js.undefined
+  }
+  object Operation {
+    
+    inline def apply(): Operation = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Operation]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Operation] (val x: Self) extends AnyVal {
+      
+      inline def setOperation(value: typings.slate.distInterfacesOperationMod.Operation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+      
+      inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     }
   }
   

@@ -12,7 +12,7 @@ open class InsertModalHeader protected ()
   def this(props: InsertModalHeaderProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: InsertModalHeaderProps, context: Any) = this()
 }

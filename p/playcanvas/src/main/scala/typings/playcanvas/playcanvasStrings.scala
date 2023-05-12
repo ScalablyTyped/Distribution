@@ -35,6 +35,14 @@ object playcanvasStrings {
   inline def `1Dot58`: `1Dot58` = "1.58".asInstanceOf[`1Dot58`]
   
   @js.native
+  sealed trait `1Dot60` extends StObject
+  inline def `1Dot60`: `1Dot60` = "1.60".asInstanceOf[`1Dot60`]
+  
+  @js.native
+  sealed trait `1Dot62` extends StObject
+  inline def `1Dot62`: `1Dot62` = "1.62".asInstanceOf[`1Dot62`]
+  
+  @js.native
   sealed trait `1d` extends StObject
   inline def `1d`: `1d` = "1d".asInstanceOf[`1d`]
   
@@ -73,6 +81,10 @@ object playcanvasStrings {
   @js.native
   sealed trait animation extends StObject
   inline def animation: animation = "animation".asInstanceOf[animation]
+  
+  @js.native
+  sealed trait anonymous extends StObject
+  inline def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
   
   @js.native
   sealed trait asset extends StObject
@@ -127,16 +139,12 @@ object playcanvasStrings {
   inline def curve: curve = "curve".asInstanceOf[curve]
   
   @js.native
-  sealed trait depth extends StObject
-  inline def depth: depth = "depth".asInstanceOf[depth]
+  sealed trait custom extends StObject
+  inline def custom: custom = "custom".asInstanceOf[custom]
   
   @js.native
   sealed trait entity extends StObject
   inline def entity: entity = "entity".asInstanceOf[entity]
-  
-  @js.native
-  sealed trait float extends StObject
-  inline def float: float = "float".asInstanceOf[float]
   
   @js.native
   sealed trait font extends StObject
@@ -287,8 +295,12 @@ object playcanvasStrings {
   inline def texture: texture = "texture".asInstanceOf[texture]
   
   @js.native
-  sealed trait `unfilterable-float` extends StObject
-  inline def `unfilterable-float`: `unfilterable-float` = "unfilterable-float".asInstanceOf[`unfilterable-float`]
+  sealed trait textureatlas extends StObject
+  inline def textureatlas: textureatlas = "textureatlas".asInstanceOf[textureatlas]
+  
+  @js.native
+  sealed trait `use-credentials` extends StObject
+  inline def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
   
   @js.native
   sealed trait vec2 extends StObject
@@ -305,14 +317,6 @@ object playcanvasStrings {
   @js.native
   sealed trait vector extends StObject
   inline def vector: vector = "vector".asInstanceOf[vector]
-  
-  @js.native
-  sealed trait webgl extends StObject
-  inline def webgl: webgl = "webgl".asInstanceOf[webgl]
-  
-  @js.native
-  sealed trait webgpu extends StObject
-  inline def webgpu: webgpu = "webgpu".asInstanceOf[webgpu]
   
   @js.native
   sealed trait width extends StObject

@@ -53,8 +53,6 @@ object libComponentsListListMod {
     
     /* private */ var _getRenderCount: Any = js.native
     
-    /* private */ var _hasCompletedFirstRender: Any = js.native
-    
     /**
       * when props.items change or forceUpdate called, throw away cached pages
       */
@@ -194,12 +192,14 @@ object libComponentsListListMod {
     def defaultProps: OnRenderCell = js.native
     inline def defaultProps_=(x: OnRenderCell): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    inline def getDerivedStateFromProps[T](nextProps: IListProps[T], previousState: IListState[T]): IListState[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], previousState.asInstanceOf[js.Any])).asInstanceOf[IListState[T]]
+    inline def getDerivedStateFromProps[U](nextProps: IListProps[U], previousState: IListState[U]): IListState[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], previousState.asInstanceOf[js.Any])).asInstanceOf[IListState[U]]
   }
   
   trait IListState[T] extends StObject {
     
     def getDerivedStateFromProps(nextProps: IListProps[T], previousState: IListState[T]): IListState[T]
+    
+    var hasMounted: Boolean
     
     var isScrolling: js.UndefOr[Boolean] = js.undefined
     
@@ -212,8 +212,8 @@ object libComponentsListListMod {
   }
   object IListState {
     
-    inline def apply[T](getDerivedStateFromProps: (IListProps[T], IListState[T]) => IListState[T]): IListState[T] = {
-      val __obj = js.Dynamic.literal(getDerivedStateFromProps = js.Any.fromFunction2(getDerivedStateFromProps))
+    inline def apply[T](getDerivedStateFromProps: (IListProps[T], IListState[T]) => IListState[T], hasMounted: Boolean): IListState[T] = {
+      val __obj = js.Dynamic.literal(getDerivedStateFromProps = js.Any.fromFunction2(getDerivedStateFromProps), hasMounted = hasMounted.asInstanceOf[js.Any])
       __obj.asInstanceOf[IListState[T]]
     }
     
@@ -221,6 +221,8 @@ object libComponentsListListMod {
     implicit open class MutableBuilder[Self <: IListState[?], T] (val x: Self & IListState[T]) extends AnyVal {
       
       inline def setGetDerivedStateFromProps(value: (IListProps[T], IListState[T]) => IListState[T]): Self = StObject.set(x, "getDerivedStateFromProps", js.Any.fromFunction2(value))
+      
+      inline def setHasMounted(value: Boolean): Self = StObject.set(x, "hasMounted", value.asInstanceOf[js.Any])
       
       inline def setIsScrolling(value: Boolean): Self = StObject.set(x, "isScrolling", value.asInstanceOf[js.Any])
       

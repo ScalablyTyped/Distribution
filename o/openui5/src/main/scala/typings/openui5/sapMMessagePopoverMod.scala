@@ -3,8 +3,8 @@ package typings.openui5
 import typings.openui5.anon.AsyncDescriptionHandler
 import typings.openui5.anon.MessageTypeFilter
 import typings.openui5.anon.OpenBy
-import typings.openui5.anon.`15`
-import typings.openui5.anon.`16`
+import typings.openui5.anon.`18`
+import typings.openui5.anon.`19`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.VerticalPlacementType
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
@@ -126,6 +126,8 @@ object sapMMessagePopoverMod {
     inline def getMetadata(): typings.openui5.sapUiCoreElementMetadataMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[typings.openui5.sapUiCoreElementMetadataMod.default]
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Setter for default description and URL validation callbacks across all instances of MessagePopover
       */
     inline def setDefaultHandlers(/**
@@ -147,13 +149,7 @@ object sapMMessagePopoverMod {
       /**
       * The item to add; if empty, nothing is inserted
       */
-    vItem: typings.openui5.sapMMessageItemMod.default
-    ): this.type = js.native
-    def addItem(
-      /**
-      * The item to add; if empty, nothing is inserted
-      */
-    vItem: typings.openui5.sapMMessagePopoverItemMod.default
+    oItem: typings.openui5.sapMMessageItemMod.default
     ): this.type = js.native
     
     /**
@@ -974,6 +970,7 @@ object sapMMessagePopoverMod {
     
     /**
       * @SINCE 1.58
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:activeTitlePress activeTitlePress} to attached listeners.
       *
@@ -983,9 +980,11 @@ object sapMMessagePopoverMod {
     def fireActiveTitlePress(/**
       * Parameters to pass along with the event
       */
-    mParameters: `15`): this.type = js.native
+    mParameters: `18`): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:afterClose afterClose} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -997,6 +996,8 @@ object sapMMessagePopoverMod {
     mParameters: OpenBy): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:afterOpen afterOpen} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1008,6 +1009,8 @@ object sapMMessagePopoverMod {
     mParameters: OpenBy): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:beforeClose beforeClose} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1019,6 +1022,8 @@ object sapMMessagePopoverMod {
     mParameters: OpenBy): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:beforeOpen beforeOpen} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1030,6 +1035,8 @@ object sapMMessagePopoverMod {
     mParameters: OpenBy): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:itemSelect itemSelect} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1041,6 +1048,8 @@ object sapMMessagePopoverMod {
     mParameters: MessageTypeFilter): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:listSelect listSelect} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1049,9 +1058,11 @@ object sapMMessagePopoverMod {
     def fireListSelect(/**
       * Parameters to pass along with the event
       */
-    mParameters: `16`): this.type = js.native
+    mParameters: `19`): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:longtextLoaded longtextLoaded} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1063,6 +1074,8 @@ object sapMMessagePopoverMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:urlValidated urlValidated} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1131,9 +1144,7 @@ object sapMMessagePopoverMod {
       *
       * A list with message items.
       */
-    def getItems(): js.Array[
-        typings.openui5.sapMMessageItemMod.default | typings.openui5.sapMMessagePopoverItemMod.default
-      ] = js.native
+    def getItems(): js.Array[typings.openui5.sapMMessageItemMod.default] = js.native
     
     /**
       * Gets current value of property {@link #getPlacement placement}.
@@ -1157,13 +1168,7 @@ object sapMMessagePopoverMod {
     def indexOfItem(/**
       * The item whose index is looked for
       */
-    vItem: typings.openui5.sapMMessageItemMod.default): int = js.native
-    def indexOfItem(
-      /**
-      * The item whose index is looked for
-      */
-    vItem: typings.openui5.sapMMessagePopoverItemMod.default
-    ): int = js.native
+    oItem: typings.openui5.sapMMessageItemMod.default): int = js.native
     
     /**
       * Inserts a item into the aggregation {@link #getItems items}.
@@ -1174,19 +1179,7 @@ object sapMMessagePopoverMod {
       /**
       * The item to insert; if empty, nothing is inserted
       */
-    vItem: typings.openui5.sapMMessageItemMod.default,
-      /**
-      * The `0`-based index the item should be inserted at; for a negative value of `iIndex`, the item is inserted
-      * at position 0; for a value greater than the current size of the aggregation, the item is inserted at
-      * the last position
-      */
-    iIndex: int
-    ): this.type = js.native
-    def insertItem(
-      /**
-      * The item to insert; if empty, nothing is inserted
-      */
-    vItem: typings.openui5.sapMMessagePopoverItemMod.default,
+    oItem: typings.openui5.sapMMessageItemMod.default,
       /**
       * The `0`-based index the item should be inserted at; for a negative value of `iIndex`, the item is inserted
       * at position 0; for a value greater than the current size of the aggregation, the item is inserted at
@@ -1227,14 +1220,12 @@ object sapMMessagePopoverMod {
       *
       * @returns An array of the removed elements (might be empty)
       */
-    def removeAllItems(): js.Array[
-        typings.openui5.sapMMessageItemMod.default | typings.openui5.sapMMessagePopoverItemMod.default
-      ] = js.native
+    def removeAllItems(): js.Array[typings.openui5.sapMMessageItemMod.default] = js.native
     
     def removeItem(/**
       * The item to remove or its index or id
       */
-    vItem: String): typings.openui5.sapMMessageItemMod.default | typings.openui5.sapMMessagePopoverItemMod.default | Null = js.native
+    vItem: String): typings.openui5.sapMMessageItemMod.default | Null = js.native
     /**
       * Removes a item from the aggregation {@link #getItems items}.
       *
@@ -1243,19 +1234,13 @@ object sapMMessagePopoverMod {
     def removeItem(/**
       * The item to remove or its index or id
       */
-    vItem: int): typings.openui5.sapMMessageItemMod.default | typings.openui5.sapMMessagePopoverItemMod.default | Null = js.native
+    vItem: int): typings.openui5.sapMMessageItemMod.default | Null = js.native
     def removeItem(
       /**
       * The item to remove or its index or id
       */
     vItem: typings.openui5.sapMMessageItemMod.default
-    ): typings.openui5.sapMMessageItemMod.default | typings.openui5.sapMMessagePopoverItemMod.default | Null = js.native
-    def removeItem(
-      /**
-      * The item to remove or its index or id
-      */
-    vItem: typings.openui5.sapMMessagePopoverItemMod.default
-    ): typings.openui5.sapMMessageItemMod.default | typings.openui5.sapMMessagePopoverItemMod.default | Null = js.native
+    ): typings.openui5.sapMMessageItemMod.default | Null = js.native
     
     /**
       * Sets a new value for property {@link #getAsyncDescriptionHandler asyncDescriptionHandler}.
@@ -1457,9 +1442,7 @@ object sapMMessagePopoverMod {
       * A list with message items.
       */
     var items: js.UndefOr[
-        (js.Array[
-          typings.openui5.sapMMessagePopoverItemMod.default | typings.openui5.sapMMessageItemMod.default
-        ]) | typings.openui5.sapMMessagePopoverItemMod.default | typings.openui5.sapMMessageItemMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)
+        js.Array[typings.openui5.sapMMessageItemMod.default] | typings.openui5.sapMMessageItemMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)
       ] = js.undefined
     
     /**
@@ -1541,16 +1524,12 @@ object sapMMessagePopoverMod {
       inline def setItemSelectUndefined: Self = StObject.set(x, "itemSelect", js.undefined)
       
       inline def setItems(
-        value: (js.Array[
-              typings.openui5.sapMMessagePopoverItemMod.default | typings.openui5.sapMMessageItemMod.default
-            ]) | typings.openui5.sapMMessagePopoverItemMod.default | typings.openui5.sapMMessageItemMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)
+        value: js.Array[typings.openui5.sapMMessageItemMod.default] | typings.openui5.sapMMessageItemMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)
       ): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(
-        value: (typings.openui5.sapMMessagePopoverItemMod.default | typings.openui5.sapMMessageItemMod.default)*
-      ): Self = StObject.set(x, "items", js.Array(value*))
+      inline def setItemsVarargs(value: typings.openui5.sapMMessageItemMod.default*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setListSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "listSelect", js.Any.fromFunction1(value))
       

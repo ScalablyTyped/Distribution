@@ -27,17 +27,17 @@ trait Control extends StObject {
   var controlMappingSources: js.UndefOr[ControlMappingSources] = js.undefined
   
   /**
-    *  The data source that determines where Audit Manager collects evidence from for the control. 
+    *  The data source types that determine where Audit Manager collects evidence from for the control. 
     */
   var controlSources: js.UndefOr[ControlSources] = js.undefined
   
   /**
-    *  Specifies when the control was created. 
+    *  The time when the control was created. 
     */
   var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    *  The IAM user or role that created the control. 
+    *  The user or role that created the control. 
     */
   var createdBy: js.UndefOr[CreatedBy] = js.undefined
   
@@ -52,12 +52,12 @@ trait Control extends StObject {
   var id: js.UndefOr[UUID] = js.undefined
   
   /**
-    *  Specifies when the control was most recently updated. 
+    *  The time when the control was most recently updated. 
     */
   var lastUpdatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    *  The IAM user or role that most recently updated the control. 
+    *  The user or role that most recently updated the control. 
     */
   var lastUpdatedBy: js.UndefOr[LastUpdatedBy] = js.undefined
   

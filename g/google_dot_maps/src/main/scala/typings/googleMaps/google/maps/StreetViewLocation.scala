@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A representation of a location in the Street View panorama.
-  */
 trait StreetViewLocation extends StObject {
   
   /**
     * A localized string describing the location.
     */
-  var description: js.UndefOr[String | Null] = js.undefined
+  var description: js.UndefOr[Null | String] = js.undefined
   
   /**
     * The latlng of the panorama.
     */
-  var latLng: js.UndefOr[LatLng | Null] = js.undefined
+  var latLng: js.UndefOr[Null | LatLng] = js.undefined
   
   /**
     * A unique identifier for the panorama. This is stable within a session but
@@ -28,7 +25,7 @@ trait StreetViewLocation extends StObject {
   /**
     * Short description of the location.
     */
-  var shortDescription: js.UndefOr[String | Null] = js.undefined
+  var shortDescription: js.UndefOr[Null | String] = js.undefined
 }
 object StreetViewLocation {
   

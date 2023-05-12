@@ -223,6 +223,11 @@ object distErrorBrowserAuthErrorMod {
     inline def createSilentPromptValueError(givenPrompt: String): BrowserAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createSilentPromptValueError")(givenPrompt.asInstanceOf[js.Any]).asInstanceOf[BrowserAuthError]
     
     /**
+      * Create an error when both authorization code and native account ID are provided
+      */
+    inline def createSpaCodeAndNativeAccountIdPresentError(): BrowserAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createSpaCodeAndNativeAccountIdPresentError")().asInstanceOf[BrowserAuthError]
+    
+    /**
       * Creates an error thrown when the state value in the hash does not match the interaction type of the API attempting to consume it.
       */
     inline def createStateInteractionTypeMismatchError(): BrowserAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createStateInteractionTypeMismatchError")().asInstanceOf[BrowserAuthError]
@@ -448,6 +453,11 @@ object distErrorBrowserAuthErrorMod {
     @js.native
     def silentPromptValueError: Code = js.native
     inline def silentPromptValueError_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("silentPromptValueError")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@azure/msal-browser/dist/error/BrowserAuthError", "BrowserAuthErrorMessage.spaCodeAndNativeAccountPresent")
+    @js.native
+    def spaCodeAndNativeAccountPresent: Code = js.native
+    inline def spaCodeAndNativeAccountPresent_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spaCodeAndNativeAccountPresent")(x.asInstanceOf[js.Any])
     
     @JSImport("@azure/msal-browser/dist/error/BrowserAuthError", "BrowserAuthErrorMessage.stateInteractionTypeMismatchError")
     @js.native

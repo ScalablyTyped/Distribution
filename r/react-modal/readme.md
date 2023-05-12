@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-modal
 
-Typings are for version 3.13
+Typings are for version 3.16
 
 ## Library description:
 Accessible modal dialog component for React.JS

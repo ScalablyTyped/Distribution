@@ -196,15 +196,15 @@ object buildSrcDiagTypesMod {
       * If a global diag logger is already set, this will override it.
       *
       * @param logger - The {@link DiagLogger} instance to set as the default logger.
-      * @param options - A {@link LoggerOptions} object. If not provided, default values will be set.
+      * @param options - A {@link DiagLoggerOptions} object. If not provided, default values will be set.
       * @returns `true` if the logger was successfully registered, else `false`
       */
     def setLogger(logger: DiagLogger): Boolean = js.native
     def setLogger(logger: DiagLogger, logLevel: DiagLogLevel): Boolean = js.native
-    def setLogger(logger: DiagLogger, options: LoggerOptions): Boolean = js.native
+    def setLogger(logger: DiagLogger, options: DiagLoggerOptions): Boolean = js.native
   }
   
-  trait LoggerOptions extends StObject {
+  trait DiagLoggerOptions extends StObject {
     
     /**
       * The {@link DiagLogLevel} used to filter logs sent to the logger.
@@ -218,15 +218,15 @@ object buildSrcDiagTypesMod {
       */
     var suppressOverrideMessage: js.UndefOr[Boolean] = js.undefined
   }
-  object LoggerOptions {
+  object DiagLoggerOptions {
     
-    inline def apply(): LoggerOptions = {
+    inline def apply(): DiagLoggerOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[LoggerOptions]
+      __obj.asInstanceOf[DiagLoggerOptions]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: LoggerOptions] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: DiagLoggerOptions] (val x: Self) extends AnyVal {
       
       inline def setLogLevel(value: DiagLogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       

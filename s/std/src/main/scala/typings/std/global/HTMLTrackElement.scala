@@ -1,5 +1,9 @@
 package typings.std.global
 
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,10 +39,6 @@ open class HTMLTrackElement ()
   /* standard dom */
   /* CompleteClass */
   var ariaColIndex: java.lang.String | Null = js.native
-  
-  /* standard dom */
-  /* CompleteClass */
-  var ariaColIndexText: java.lang.String | Null = js.native
   
   /* standard dom */
   /* CompleteClass */
@@ -134,10 +134,6 @@ open class HTMLTrackElement ()
   
   /* standard dom */
   /* CompleteClass */
-  var ariaRowIndexText: java.lang.String | Null = js.native
-  
-  /* standard dom */
-  /* CompleteClass */
   var ariaRowSpan: java.lang.String | Null = js.native
   
   /* standard dom */
@@ -215,20 +211,20 @@ object HTMLTrackElement {
   /* standard dom */
   @JSGlobal("HTMLTrackElement.ERROR")
   @js.native
-  val ERROR: Double = js.native
+  val ERROR: `3` = js.native
   
   /* standard dom */
   @JSGlobal("HTMLTrackElement.LOADED")
   @js.native
-  val LOADED: Double = js.native
+  val LOADED: `2` = js.native
   
   /* standard dom */
   @JSGlobal("HTMLTrackElement.LOADING")
   @js.native
-  val LOADING: Double = js.native
+  val LOADING: `1` = js.native
   
   /* standard dom */
   @JSGlobal("HTMLTrackElement.NONE")
   @js.native
-  val NONE: Double = js.native
+  val NONE: `0` = js.native
 }

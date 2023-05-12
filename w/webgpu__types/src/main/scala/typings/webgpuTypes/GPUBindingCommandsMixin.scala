@@ -19,6 +19,15 @@ trait GPUBindingCommandsMixin extends StObject {
     * @param dynamicOffsets - Array containing buffer offsets in bytes for each entry in
     * 	`bindGroup` marked as {@link GPUBindGroupLayoutEntry#buffer}.{@link GPUBufferBindingLayout#hasDynamicOffset}.-->
     */
+  def setBindGroup(index: GPUIndex32): Unit = js.native
+  def setBindGroup(
+    index: GPUIndex32,
+    bindGroup: Null,
+    dynamicOffsetsData: js.typedarray.Uint32Array,
+    dynamicOffsetsDataStart: GPUSize64,
+    dynamicOffsetsDataLength: GPUSize32
+  ): Unit = js.native
+  def setBindGroup(index: GPUIndex32, bindGroup: Null, dynamicOffsets: js.Iterable[GPUBufferDynamicOffset]): Unit = js.native
   def setBindGroup(index: GPUIndex32, bindGroup: GPUBindGroup): Unit = js.native
   /**
     * Sets the current {@link GPUBindGroup} for the given index, specifying dynamic offsets as a subset

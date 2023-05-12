@@ -13,7 +13,7 @@ object distSrcNameResolveMod {
   @js.native
   val createResolve: Factory[
     js.Function2[
-      /* path */ String | PeerId, 
+      /* value */ String | PeerId, 
       /* options */ js.UndefOr[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_name.ResolveOptions */ Any) & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions
       ], 

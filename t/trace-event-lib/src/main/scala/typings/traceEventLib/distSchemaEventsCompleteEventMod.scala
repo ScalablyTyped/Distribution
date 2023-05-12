@@ -1,6 +1,7 @@
 package typings.traceEventLib
 
 import typings.traceEventLib.distSchemaEventsEventWithStackMod.EventWithStack
+import typings.traceEventLib.distSchemaEventsTraceEventMod.TraceEvent
 import typings.traceEventLib.traceEventLibStrings.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +11,8 @@ object distSchemaEventsCompleteEventMod {
   
   trait CompleteEvent
     extends StObject
-       with EventWithStack {
+       with EventWithStack
+       with TraceEvent {
     
     /** @inheritDoc */
     @JSName("cat")

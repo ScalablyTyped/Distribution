@@ -13,7 +13,7 @@ object distSrcDhtProvideMod {
   @js.native
   val createProvide: Factory[
     js.Function2[
-      /* cids */ typings.multiformats.cidMod.CID[Any, Double, Double, Version], 
+      /* cid */ typings.multiformats.cidMod.CID[Any, Double, Double, Version], 
       /* options */ js.UndefOr[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_dht.DHTProvideOptions */ Any) & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions
       ], 

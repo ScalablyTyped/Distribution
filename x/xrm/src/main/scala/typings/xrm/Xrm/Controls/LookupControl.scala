@@ -40,9 +40,9 @@ trait LookupControl
     * @param isDefault true, to treat this view as default.
     * @remarks Cannot be used on "Owner" Lookup controls.
     *          The viewId is never saved to CRM, but must be unique across available views.  Generating
-    *          a new value can be accomplished with a {@link http://www.guidgen.com/ Guid generator(external link)}.
+    *          a new value can be accomplished with a {@link http://www.guidgen.com/ External Link: Guid generator}.
     * @example Example viewId value: "{00000000-0000-0000-0000-000000000001}"
-    * @see {@link http://msdn.microsoft.com/en-us/library/gg334522.aspx External Link: Layout XML Reference}
+    * @see {@link https://learn.microsoft.com/en-us/previous-versions/dynamicscrm-2016/developers-guide/gg334522(v=crm.8) External Link: Layout XML Reference}
     */
   def addCustomView(
     viewId: String,

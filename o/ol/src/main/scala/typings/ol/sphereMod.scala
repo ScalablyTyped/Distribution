@@ -18,21 +18,30 @@ object sphereMod {
   val DEFAULT_RADIUS: Double = js.native
   
   inline def getArea(geometry: default): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getArea")(geometry.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def getArea(geometry: default, opt_options: SphereMetricOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getArea")(geometry.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getArea(geometry: default, options: SphereMetricOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getArea")(geometry.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def getDistance(c1: js.Array[Any], c2: js.Array[Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistance")(c1.asInstanceOf[js.Any], c2.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def getDistance(c1: js.Array[Any], c2: js.Array[Any], opt_radius: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistance")(c1.asInstanceOf[js.Any], c2.asInstanceOf[js.Any], opt_radius.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getDistance(c1: js.Array[Any], c2: js.Array[Any], radius: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistance")(c1.asInstanceOf[js.Any], c2.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def getLength(geometry: default): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getLength")(geometry.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def getLength(geometry: default, opt_options: SphereMetricOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getLength")(geometry.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getLength(geometry: default, options: SphereMetricOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getLength")(geometry.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def offset(c1: Coordinate, distance: Double, bearing: Double): Coordinate = (^.asInstanceOf[js.Dynamic].applyDynamic("offset")(c1.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], bearing.asInstanceOf[js.Any])).asInstanceOf[Coordinate]
-  inline def offset(c1: Coordinate, distance: Double, bearing: Double, opt_radius: Double): Coordinate = (^.asInstanceOf[js.Dynamic].applyDynamic("offset")(c1.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], bearing.asInstanceOf[js.Any], opt_radius.asInstanceOf[js.Any])).asInstanceOf[Coordinate]
+  inline def offset(c1: Coordinate, distance: Double, bearing: Double, radius: Double): Coordinate = (^.asInstanceOf[js.Dynamic].applyDynamic("offset")(c1.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], bearing.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[Coordinate]
   
   trait SphereMetricOptions extends StObject {
     
+    /**
+      * Projection of the  geometry.  By default, the geometry is assumed to be in
+      * Web Mercator.
+      */
     var projection: js.UndefOr[ProjectionLike] = js.undefined
     
+    /**
+      * Sphere radius.  By default, the
+      * [mean Earth radius](https://en.wikipedia.org/wiki/Earth_radius#Mean_radius)
+      * for the WGS84 ellipsoid is used.
+      */
     var radius: js.UndefOr[Double] = js.undefined
   }
   object SphereMetricOptions {

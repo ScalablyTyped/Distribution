@@ -25,5 +25,5 @@ open class ViewRef () extends ChangeDetectorRef {
     * @param callback A handler function that cleans up developer-defined data
     * associated with a view. Called when the `destroy()` method is invoked.
     */
-  def onDestroy(callback: js.Function): Any = js.native
+  def onDestroy(callback: js.Function): Unit = js.native
 }

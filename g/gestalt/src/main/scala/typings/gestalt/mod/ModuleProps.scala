@@ -11,6 +11,8 @@ trait ModuleProps extends StObject {
   
   var badge: js.UndefOr[BadgeObject] = js.undefined
   
+  var children: js.UndefOr[Node] = js.undefined
+  
   var icon: js.UndefOr[Icons] = js.undefined
   
   var iconAccessibilityLabel: js.UndefOr[String] = js.undefined
@@ -36,6 +38,10 @@ object ModuleProps {
     inline def setBadge(value: BadgeObject): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     
     inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+    
+    inline def setChildren(value: Node): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setIcon(value: Icons): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

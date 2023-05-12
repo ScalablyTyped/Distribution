@@ -16,7 +16,7 @@ trait Preprocessors extends StObject {
   
   /**
     * The view definition. Only supported for XML and HTML views. See also {@link sap.ui.core.mvc.XMLView.create}
-    * and {@link sap.ui.core.mvc.HTMLView.create} for more information
+    * and {@link sap.ui.core.mvc.HTMLView.create} (deprecated) for more information.
     */
   var definition: js.UndefOr[Any] = js.undefined
   

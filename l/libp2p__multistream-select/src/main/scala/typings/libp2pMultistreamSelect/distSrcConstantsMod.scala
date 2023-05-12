@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distSrcConstantsMod {
   
+  @JSImport("@libp2p/multistream-select/dist/src/constants", "MAX_PROTOCOL_LENGTH")
+  @js.native
+  val MAX_PROTOCOL_LENGTH: /* 1024 */ Double = js.native
+  
   @JSImport("@libp2p/multistream-select/dist/src/constants", "PROTOCOL_ID")
   @js.native
   val PROTOCOL_ID: /* "/multistream/1.0.0" */ String = js.native

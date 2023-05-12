@@ -20,6 +20,7 @@ import typings.systeminformation.mod.Systeminformation.DockerContainerStatsData
 import typings.systeminformation.mod.Systeminformation.DockerImageData
 import typings.systeminformation.mod.Systeminformation.DockerInfoData
 import typings.systeminformation.mod.Systeminformation.DockerVolumeData
+import typings.systeminformation.mod.Systeminformation.DynamicData
 import typings.systeminformation.mod.Systeminformation.FsOpenFilesData
 import typings.systeminformation.mod.Systeminformation.FsSizeData
 import typings.systeminformation.mod.Systeminformation.FsStatsData
@@ -141,23 +142,23 @@ inline def fullLoad(cb: js.Function1[/* data */ Double, Any]): js.Promise[Double
 inline def get(valuesObject: Any): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(valuesObject.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
 inline def get(valuesObject: Any, cb: js.Function1[/* data */ Any, Any]): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(valuesObject.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
 
-inline def getAllData(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllData")().asInstanceOf[js.Promise[Any]]
-inline def getAllData(srv: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllData")(srv.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
-inline def getAllData(srv: String, iface: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllData")(srv.asInstanceOf[js.Any], iface.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
-inline def getAllData(srv: String, iface: String, cb: js.Function1[/* data */ Any, Any]): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllData")(srv.asInstanceOf[js.Any], iface.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
-inline def getAllData(srv: String, iface: Unit, cb: js.Function1[/* data */ Any, Any]): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllData")(srv.asInstanceOf[js.Any], iface.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
-inline def getAllData(srv: Unit, iface: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllData")(srv.asInstanceOf[js.Any], iface.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
-inline def getAllData(srv: Unit, iface: String, cb: js.Function1[/* data */ Any, Any]): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllData")(srv.asInstanceOf[js.Any], iface.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
-inline def getAllData(srv: Unit, iface: Unit, cb: js.Function1[/* data */ Any, Any]): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllData")(srv.asInstanceOf[js.Any], iface.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+inline def getAllData(): js.Promise[StaticData & DynamicData] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllData")().asInstanceOf[js.Promise[StaticData & DynamicData]]
+inline def getAllData(srv: String): js.Promise[StaticData & DynamicData] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllData")(srv.asInstanceOf[js.Any]).asInstanceOf[js.Promise[StaticData & DynamicData]]
+inline def getAllData(srv: String, iface: String): js.Promise[StaticData & DynamicData] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllData")(srv.asInstanceOf[js.Any], iface.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StaticData & DynamicData]]
+inline def getAllData(srv: String, iface: String, cb: js.Function1[/* data */ Any, Any]): js.Promise[StaticData & DynamicData] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllData")(srv.asInstanceOf[js.Any], iface.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StaticData & DynamicData]]
+inline def getAllData(srv: String, iface: Unit, cb: js.Function1[/* data */ Any, Any]): js.Promise[StaticData & DynamicData] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllData")(srv.asInstanceOf[js.Any], iface.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StaticData & DynamicData]]
+inline def getAllData(srv: Unit, iface: String): js.Promise[StaticData & DynamicData] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllData")(srv.asInstanceOf[js.Any], iface.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StaticData & DynamicData]]
+inline def getAllData(srv: Unit, iface: String, cb: js.Function1[/* data */ Any, Any]): js.Promise[StaticData & DynamicData] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllData")(srv.asInstanceOf[js.Any], iface.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StaticData & DynamicData]]
+inline def getAllData(srv: Unit, iface: Unit, cb: js.Function1[/* data */ Any, Any]): js.Promise[StaticData & DynamicData] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllData")(srv.asInstanceOf[js.Any], iface.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StaticData & DynamicData]]
 
-inline def getDynamicData(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDynamicData")().asInstanceOf[js.Promise[Any]]
-inline def getDynamicData(srv: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDynamicData")(srv.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
-inline def getDynamicData(srv: String, iface: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDynamicData")(srv.asInstanceOf[js.Any], iface.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
-inline def getDynamicData(srv: String, iface: String, cb: js.Function1[/* data */ Any, Any]): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDynamicData")(srv.asInstanceOf[js.Any], iface.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
-inline def getDynamicData(srv: String, iface: Unit, cb: js.Function1[/* data */ Any, Any]): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDynamicData")(srv.asInstanceOf[js.Any], iface.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
-inline def getDynamicData(srv: Unit, iface: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDynamicData")(srv.asInstanceOf[js.Any], iface.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
-inline def getDynamicData(srv: Unit, iface: String, cb: js.Function1[/* data */ Any, Any]): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDynamicData")(srv.asInstanceOf[js.Any], iface.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
-inline def getDynamicData(srv: Unit, iface: Unit, cb: js.Function1[/* data */ Any, Any]): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDynamicData")(srv.asInstanceOf[js.Any], iface.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+inline def getDynamicData(): js.Promise[DynamicData] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDynamicData")().asInstanceOf[js.Promise[DynamicData]]
+inline def getDynamicData(srv: String): js.Promise[DynamicData] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDynamicData")(srv.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DynamicData]]
+inline def getDynamicData(srv: String, iface: String): js.Promise[DynamicData] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDynamicData")(srv.asInstanceOf[js.Any], iface.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DynamicData]]
+inline def getDynamicData(srv: String, iface: String, cb: js.Function1[/* data */ Any, Any]): js.Promise[DynamicData] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDynamicData")(srv.asInstanceOf[js.Any], iface.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DynamicData]]
+inline def getDynamicData(srv: String, iface: Unit, cb: js.Function1[/* data */ Any, Any]): js.Promise[DynamicData] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDynamicData")(srv.asInstanceOf[js.Any], iface.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DynamicData]]
+inline def getDynamicData(srv: Unit, iface: String): js.Promise[DynamicData] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDynamicData")(srv.asInstanceOf[js.Any], iface.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DynamicData]]
+inline def getDynamicData(srv: Unit, iface: String, cb: js.Function1[/* data */ Any, Any]): js.Promise[DynamicData] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDynamicData")(srv.asInstanceOf[js.Any], iface.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DynamicData]]
+inline def getDynamicData(srv: Unit, iface: Unit, cb: js.Function1[/* data */ Any, Any]): js.Promise[DynamicData] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDynamicData")(srv.asInstanceOf[js.Any], iface.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DynamicData]]
 
 inline def getStaticData(): js.Promise[StaticData] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStaticData")().asInstanceOf[js.Promise[StaticData]]
 inline def getStaticData(cb: js.Function1[/* data */ StaticData, Any]): js.Promise[StaticData] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStaticData")(cb.asInstanceOf[js.Any]).asInstanceOf[js.Promise[StaticData]]
@@ -188,8 +189,33 @@ inline def networkGatewayDefault(cb: js.Function1[/* data */ String, Any]): js.P
 inline def networkInterfaceDefault(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("networkInterfaceDefault")().asInstanceOf[js.Promise[String]]
 inline def networkInterfaceDefault(cb: js.Function1[/* data */ String, Any]): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("networkInterfaceDefault")(cb.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
 
-inline def networkInterfaces(): js.Promise[js.Array[NetworkInterfacesData]] = ^.asInstanceOf[js.Dynamic].applyDynamic("networkInterfaces")().asInstanceOf[js.Promise[js.Array[NetworkInterfacesData]]]
-inline def networkInterfaces(cb: js.Function1[/* data */ js.Array[NetworkInterfacesData], Any]): js.Promise[js.Array[NetworkInterfacesData]] = ^.asInstanceOf[js.Dynamic].applyDynamic("networkInterfaces")(cb.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[NetworkInterfacesData]]]
+inline def networkInterfaces(): js.Promise[js.Array[NetworkInterfacesData] | NetworkInterfacesData] = ^.asInstanceOf[js.Dynamic].applyDynamic("networkInterfaces")().asInstanceOf[js.Promise[js.Array[NetworkInterfacesData] | NetworkInterfacesData]]
+inline def networkInterfaces(cb: String): js.Promise[js.Array[NetworkInterfacesData] | NetworkInterfacesData] = ^.asInstanceOf[js.Dynamic].applyDynamic("networkInterfaces")(cb.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[NetworkInterfacesData] | NetworkInterfacesData]]
+inline def networkInterfaces(cb: String, rescan: Boolean): js.Promise[js.Array[NetworkInterfacesData] | NetworkInterfacesData] = (^.asInstanceOf[js.Dynamic].applyDynamic("networkInterfaces")(cb.asInstanceOf[js.Any], rescan.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[NetworkInterfacesData] | NetworkInterfacesData]]
+inline def networkInterfaces(cb: String, rescan: Boolean, defaultString: String): js.Promise[js.Array[NetworkInterfacesData] | NetworkInterfacesData] = (^.asInstanceOf[js.Dynamic].applyDynamic("networkInterfaces")(cb.asInstanceOf[js.Any], rescan.asInstanceOf[js.Any], defaultString.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[NetworkInterfacesData] | NetworkInterfacesData]]
+inline def networkInterfaces(cb: String, rescan: Unit, defaultString: String): js.Promise[js.Array[NetworkInterfacesData] | NetworkInterfacesData] = (^.asInstanceOf[js.Dynamic].applyDynamic("networkInterfaces")(cb.asInstanceOf[js.Any], rescan.asInstanceOf[js.Any], defaultString.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[NetworkInterfacesData] | NetworkInterfacesData]]
+inline def networkInterfaces(cb: js.Function1[/* data */ js.Array[NetworkInterfacesData] | NetworkInterfacesData, Any]): js.Promise[js.Array[NetworkInterfacesData] | NetworkInterfacesData] = ^.asInstanceOf[js.Dynamic].applyDynamic("networkInterfaces")(cb.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[NetworkInterfacesData] | NetworkInterfacesData]]
+inline def networkInterfaces(
+  cb: js.Function1[/* data */ js.Array[NetworkInterfacesData] | NetworkInterfacesData, Any],
+  rescan: Boolean
+): js.Promise[js.Array[NetworkInterfacesData] | NetworkInterfacesData] = (^.asInstanceOf[js.Dynamic].applyDynamic("networkInterfaces")(cb.asInstanceOf[js.Any], rescan.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[NetworkInterfacesData] | NetworkInterfacesData]]
+inline def networkInterfaces(
+  cb: js.Function1[/* data */ js.Array[NetworkInterfacesData] | NetworkInterfacesData, Any],
+  rescan: Boolean,
+  defaultString: String
+): js.Promise[js.Array[NetworkInterfacesData] | NetworkInterfacesData] = (^.asInstanceOf[js.Dynamic].applyDynamic("networkInterfaces")(cb.asInstanceOf[js.Any], rescan.asInstanceOf[js.Any], defaultString.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[NetworkInterfacesData] | NetworkInterfacesData]]
+inline def networkInterfaces(
+  cb: js.Function1[/* data */ js.Array[NetworkInterfacesData] | NetworkInterfacesData, Any],
+  rescan: Unit,
+  defaultString: String
+): js.Promise[js.Array[NetworkInterfacesData] | NetworkInterfacesData] = (^.asInstanceOf[js.Dynamic].applyDynamic("networkInterfaces")(cb.asInstanceOf[js.Any], rescan.asInstanceOf[js.Any], defaultString.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[NetworkInterfacesData] | NetworkInterfacesData]]
+inline def networkInterfaces(cb: Boolean): js.Promise[js.Array[NetworkInterfacesData] | NetworkInterfacesData] = ^.asInstanceOf[js.Dynamic].applyDynamic("networkInterfaces")(cb.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[NetworkInterfacesData] | NetworkInterfacesData]]
+inline def networkInterfaces(cb: Boolean, rescan: Boolean): js.Promise[js.Array[NetworkInterfacesData] | NetworkInterfacesData] = (^.asInstanceOf[js.Dynamic].applyDynamic("networkInterfaces")(cb.asInstanceOf[js.Any], rescan.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[NetworkInterfacesData] | NetworkInterfacesData]]
+inline def networkInterfaces(cb: Boolean, rescan: Boolean, defaultString: String): js.Promise[js.Array[NetworkInterfacesData] | NetworkInterfacesData] = (^.asInstanceOf[js.Dynamic].applyDynamic("networkInterfaces")(cb.asInstanceOf[js.Any], rescan.asInstanceOf[js.Any], defaultString.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[NetworkInterfacesData] | NetworkInterfacesData]]
+inline def networkInterfaces(cb: Boolean, rescan: Unit, defaultString: String): js.Promise[js.Array[NetworkInterfacesData] | NetworkInterfacesData] = (^.asInstanceOf[js.Dynamic].applyDynamic("networkInterfaces")(cb.asInstanceOf[js.Any], rescan.asInstanceOf[js.Any], defaultString.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[NetworkInterfacesData] | NetworkInterfacesData]]
+inline def networkInterfaces(cb: Unit, rescan: Boolean): js.Promise[js.Array[NetworkInterfacesData] | NetworkInterfacesData] = (^.asInstanceOf[js.Dynamic].applyDynamic("networkInterfaces")(cb.asInstanceOf[js.Any], rescan.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[NetworkInterfacesData] | NetworkInterfacesData]]
+inline def networkInterfaces(cb: Unit, rescan: Boolean, defaultString: String): js.Promise[js.Array[NetworkInterfacesData] | NetworkInterfacesData] = (^.asInstanceOf[js.Dynamic].applyDynamic("networkInterfaces")(cb.asInstanceOf[js.Any], rescan.asInstanceOf[js.Any], defaultString.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[NetworkInterfacesData] | NetworkInterfacesData]]
+inline def networkInterfaces(cb: Unit, rescan: Unit, defaultString: String): js.Promise[js.Array[NetworkInterfacesData] | NetworkInterfacesData] = (^.asInstanceOf[js.Dynamic].applyDynamic("networkInterfaces")(cb.asInstanceOf[js.Any], rescan.asInstanceOf[js.Any], defaultString.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[NetworkInterfacesData] | NetworkInterfacesData]]
 
 inline def networkStats(): js.Promise[js.Array[NetworkStatsData]] = ^.asInstanceOf[js.Dynamic].applyDynamic("networkStats")().asInstanceOf[js.Promise[js.Array[NetworkStatsData]]]
 inline def networkStats(ifaces: String): js.Promise[js.Array[NetworkStatsData]] = ^.asInstanceOf[js.Dynamic].applyDynamic("networkStats")(ifaces.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[NetworkStatsData]]]

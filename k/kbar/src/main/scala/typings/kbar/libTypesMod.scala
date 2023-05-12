@@ -6,6 +6,7 @@ import typings.kbar.anon.OnClose
 import typings.kbar.libActionActionImplMod.ActionImpl
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
+import typings.std.HTMLInputElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -326,6 +327,10 @@ object libTypesMod {
   
   @js.native
   trait KBarQuery extends StObject {
+    
+    def getInput(): HTMLInputElement = js.native
+    
+    def inputRefSetter(el: HTMLInputElement): Unit = js.native
     
     def registerActions(actions: js.Array[Action]): js.Function0[Unit] = js.native
     

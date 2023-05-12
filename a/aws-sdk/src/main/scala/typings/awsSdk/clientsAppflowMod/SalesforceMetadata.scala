@@ -15,6 +15,11 @@ trait SalesforceMetadata extends StObject {
     *  The desired authorization scope for the Salesforce account. 
     */
   var oAuthScopes: js.UndefOr[OAuthScopeList] = js.undefined
+  
+  /**
+    * The OAuth 2.0 grant types that Amazon AppFlow can use when it requests an access token from Salesforce. Amazon AppFlow requires an access token each time it attempts to access your Salesforce records.  AUTHORIZATION_CODE  Amazon AppFlow passes an authorization code when it requests the access token from Salesforce. Amazon AppFlow receives the authorization code from Salesforce after you log in to your Salesforce account and authorize Amazon AppFlow to access your records.  CLIENT_CREDENTIALS  Amazon AppFlow passes client credentials (a client ID and client secret) when it requests the access token from Salesforce. You provide these credentials to Amazon AppFlow when you define the connection to your Salesforce account.  JWT_BEARER  Amazon AppFlow passes a JSON web token (JWT) when it requests the access token from Salesforce. You provide the JWT to Amazon AppFlow when you define the connection to your Salesforce account. When you use this grant type, you don't need to log in to your Salesforce account to authorize Amazon AppFlow to access your records.  
+    */
+  var oauth2GrantTypesSupported: js.UndefOr[OAuth2GrantTypeSupportedList] = js.undefined
 }
 object SalesforceMetadata {
   
@@ -37,5 +42,11 @@ object SalesforceMetadata {
     inline def setOAuthScopesUndefined: Self = StObject.set(x, "oAuthScopes", js.undefined)
     
     inline def setOAuthScopesVarargs(value: OAuthScope*): Self = StObject.set(x, "oAuthScopes", js.Array(value*))
+    
+    inline def setOauth2GrantTypesSupported(value: OAuth2GrantTypeSupportedList): Self = StObject.set(x, "oauth2GrantTypesSupported", value.asInstanceOf[js.Any])
+    
+    inline def setOauth2GrantTypesSupportedUndefined: Self = StObject.set(x, "oauth2GrantTypesSupported", js.undefined)
+    
+    inline def setOauth2GrantTypesSupportedVarargs(value: OAuth2GrantType*): Self = StObject.set(x, "oauth2GrantTypesSupported", js.Array(value*))
   }
 }

@@ -52,6 +52,8 @@ import typings.primereact.primereactStrings.tree
 import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.yes
+import typings.primereact.utilsUtilsMod.IconOptions
+import typings.primereact.utilsUtilsMod.IconType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -106,25 +108,57 @@ object overlaypanelOverlaypanelMod {
     def this(props: OverlayPanelProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: OverlayPanelProps, context: Any) = this()
     
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
     
+    /**
+      * Hides the overlay.
+      */
     def hide(): Unit = js.native
     
-    def show(event: OverlayPanelEventType, target: OverlayPanelTargetType): Unit = js.native
+    /**
+      * Shows the overlay.
+      * @param {React.SyntheticEvent | undefined | null} event - Browser event.
+      * @param {HTMLElement | EventTarget | undefined | null} target - Browser event.
+      */
+    def show(): Unit = js.native
+    def show(event: Null, target: EventTarget): Unit = js.native
+    def show(event: Null, target: HTMLElement): Unit = js.native
+    def show(event: Unit, target: EventTarget): Unit = js.native
+    def show(event: Unit, target: HTMLElement): Unit = js.native
+    def show(event: SyntheticEvent[Element, Event]): Unit = js.native
+    def show(event: SyntheticEvent[Element, Event], target: EventTarget): Unit = js.native
+    def show(event: SyntheticEvent[Element, Event], target: HTMLElement): Unit = js.native
     
-    def toggle(event: OverlayPanelEventType): Unit = js.native
-    def toggle(event: OverlayPanelEventType, target: OverlayPanelTargetType): Unit = js.native
+    /**
+      * Toggles the visiblity of the overlay.
+      * @param {React.SyntheticEvent | undefined | null} event - Browser event.
+      * @param {HTMLElement | EventTarget | undefined | null} target - Browser event.
+      */
+    def toggle(): Unit = js.native
+    def toggle(event: Null, target: EventTarget): Unit = js.native
+    def toggle(event: Null, target: HTMLElement): Unit = js.native
+    def toggle(event: Unit, target: EventTarget): Unit = js.native
+    def toggle(event: Unit, target: HTMLElement): Unit = js.native
+    def toggle(event: SyntheticEvent[Element, Event]): Unit = js.native
+    def toggle(event: SyntheticEvent[Element, Event], target: EventTarget): Unit = js.native
+    def toggle(event: SyntheticEvent[Element, Event], target: HTMLElement): Unit = js.native
   }
   
-  type OverlayPanelAppendToType = js.UndefOr[self | HTMLElement | Null]
-  
-  type OverlayPanelBreakpoints = StringDictionary[String]
-  
-  type OverlayPanelEventType = js.UndefOr[(SyntheticEvent[Element, Event]) | Null]
+  /**
+    * Custom overlay panel breakpoints
+    */
+  type OverlayPanelBreakpoints = /**
+    *  A key-value pair representing a breakpoint and its associated value.
+    */
+  StringDictionary[String]
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
   trait OverlayPanelProps extends StObject {
@@ -133,7 +167,11 @@ object overlaypanelOverlaypanelMod {
     
     var accessKey: js.UndefOr[String] = js.undefined
     
-    var appendTo: js.UndefOr[OverlayPanelAppendToType] = js.undefined
+    /**
+      * DOM element instance where the overlay panel should be mounted. Valid values are any DOM Element and 'self'. The self value is used to render a component where it is located.
+      * @defaultValue document.body
+      */
+    var appendTo: js.UndefOr[self | HTMLElement | Null] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
@@ -233,21 +271,41 @@ object overlaypanelOverlaypanelMod {
     
     var `aria-valuetext`: js.UndefOr[String] = js.undefined
     
+    /**
+      * Aria label of the close icon.
+      * @defaultValue close
+      */
     var ariaCloseLabel: js.UndefOr[String] = js.undefined
     
     var autoCapitalize: js.UndefOr[String] = js.undefined
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Object literal to define widths per screen size.
+      */
     var breakpoints: js.UndefOr[OverlayPanelBreakpoints] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * Icon to display as close icon.
+      */
+    var closeIcon: js.UndefOr[IconType[OverlayPanelProps]] = js.undefined
+    
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -263,6 +321,10 @@ object overlaypanelOverlaypanelMod {
     
     var dir: js.UndefOr[String] = js.undefined
     
+    /**
+      * Enables to hide the overlay when outside is clicked.
+      * @defaultValue true
+      */
     var dismissable: js.UndefOr[Boolean] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
@@ -357,6 +419,9 @@ object overlaypanelOverlaypanelMod {
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke when overlay becomes hidden.
+      */
     var onHide: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
@@ -431,6 +496,9 @@ object overlaypanelOverlaypanelMod {
     
     var onSelect: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke when overlay becomes visible.
+      */
     var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onStalled: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
@@ -465,14 +533,22 @@ object overlaypanelOverlaypanelMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
+    /**
+      * When enabled, displays a close icon at top right corner.
+      * @defaultValue false
+      */
     var showCloseIcon: js.UndefOr[Boolean] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
@@ -489,6 +565,9 @@ object overlaypanelOverlaypanelMod {
     
     var title: js.UndefOr[String] = js.undefined
     
+    /**
+      * The properties of CSSTransition can be customized, except for "nodeRef" and "in" properties.
+      */
     var transitionOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSTransitionProps */ Any
       ] = js.undefined
@@ -519,7 +598,7 @@ object overlaypanelOverlaypanelMod {
       
       inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      inline def setAppendTo(value: OverlayPanelAppendToType): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+      inline def setAppendTo(value: self | HTMLElement): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
       
       inline def setAppendToNull: Self = StObject.set(x, "appendTo", null)
       
@@ -731,6 +810,10 @@ object overlaypanelOverlaypanelMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -747,13 +830,23 @@ object overlaypanelOverlaypanelMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
+      inline def setCloseIcon(value: IconType[OverlayPanelProps]): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
+      
+      inline def setCloseIconFunction1(value: /* options */ IconOptions[OverlayPanelProps] => ReactNode): Self = StObject.set(x, "closeIcon", js.Any.fromFunction1(value))
+      
+      inline def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
+      
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -1187,6 +1280,10 @@ object overlaypanelOverlaypanelMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1194,6 +1291,10 @@ object overlaypanelOverlaypanelMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1258,6 +1359,4 @@ object overlaypanelOverlaypanelMod {
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
     }
   }
-  
-  type OverlayPanelTargetType = js.UndefOr[HTMLElement | EventTarget | Null]
 }

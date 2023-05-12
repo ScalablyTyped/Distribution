@@ -2,6 +2,7 @@ package typings.three.anon
 
 import typings.std.Set
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.Mesh
 import org.scalablytyped.runtime.StObject
@@ -12,11 +13,14 @@ trait Ids extends StObject {
   
   var ids: Set[Double]
   
-  var mesh: Mesh[BufferGeometry, Material | js.Array[Material]]
+  var mesh: Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]
 }
 object Ids {
   
-  inline def apply(ids: Set[Double], mesh: Mesh[BufferGeometry, Material | js.Array[Material]]): Ids = {
+  inline def apply(
+    ids: Set[Double],
+    mesh: Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]
+  ): Ids = {
     val __obj = js.Dynamic.literal(ids = ids.asInstanceOf[js.Any], mesh = mesh.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ids]
   }
@@ -26,6 +30,6 @@ object Ids {
     
     inline def setIds(value: Set[Double]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
-    inline def setMesh(value: Mesh[BufferGeometry, Material | js.Array[Material]]): Self = StObject.set(x, "mesh", value.asInstanceOf[js.Any])
+    inline def setMesh(value: Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]): Self = StObject.set(x, "mesh", value.asInstanceOf[js.Any])
   }
 }

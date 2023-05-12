@@ -16,7 +16,7 @@ trait PredominantCategoriesResultPredominantCategoryInfos extends StObject {
   /**
     * The label describing the predominant category, or field name.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-predominantCategories.html#PredominantCategoriesResult)
+    * [Read more...](global.html)
     */
   var label: js.UndefOr[String] = js.undefined
   

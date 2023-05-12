@@ -29,7 +29,7 @@ trait DescribeThemePermissionsResponse extends StObject {
   /**
     * The ID for the theme.
     */
-  var ThemeId: js.UndefOr[RestrictiveResourceId] = js.undefined
+  var ThemeId: js.UndefOr[ShortRestrictiveResourceId] = js.undefined
 }
 object DescribeThemePermissionsResponse {
   
@@ -59,7 +59,7 @@ object DescribeThemePermissionsResponse {
     
     inline def setThemeArnUndefined: Self = StObject.set(x, "ThemeArn", js.undefined)
     
-    inline def setThemeId(value: RestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
+    inline def setThemeId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
     
     inline def setThemeIdUndefined: Self = StObject.set(x, "ThemeId", js.undefined)
   }

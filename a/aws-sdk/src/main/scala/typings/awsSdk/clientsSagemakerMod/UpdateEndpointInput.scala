@@ -22,7 +22,7 @@ trait UpdateEndpointInput extends StObject {
   var EndpointName: typings.awsSdk.clientsSagemakerMod.EndpointName
   
   /**
-    * When you are updating endpoint resources with UpdateEndpointInput$RetainAllVariantProperties, whose value is set to true, ExcludeRetainedVariantProperties specifies the list of type VariantProperty to override with the values provided by EndpointConfig. If you don't specify a value for ExcludeAllVariantProperties, no variant properties are overridden. 
+    * When you are updating endpoint resources with RetainAllVariantProperties, whose value is set to true, ExcludeRetainedVariantProperties specifies the list of type VariantProperty to override with the values provided by EndpointConfig. If you don't specify a value for ExcludeRetainedVariantProperties, no variant properties are overridden. 
     */
   var ExcludeRetainedVariantProperties: js.UndefOr[VariantPropertyList] = js.undefined
   

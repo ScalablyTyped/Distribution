@@ -4,26 +4,29 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+	 * A lint warning.
+	 */
 trait Warning extends StObject {
   
   /**
-  			 * The column of the inclusive start position of the warning.
-  			 */
+  		 * The column of the inclusive start position of the warning.
+  		 */
   var column: Double
   
   /**
-  			 * The column of the exclusive end position of the warning.
-  			 */
+  		 * The column of the exclusive end position of the warning.
+  		 */
   var endColumn: js.UndefOr[Double] = js.undefined
   
   /**
-  			 * The line of the exclusive end position of the warning.
-  			 */
+  		 * The line of the exclusive end position of the warning.
+  		 */
   var endLine: js.UndefOr[Double] = js.undefined
   
   /**
-  			 * The line of the inclusive start position of the warning.
-  			 */
+  		 * The line of the inclusive start position of the warning.
+  		 */
   var line: Double
   
   var rule: String

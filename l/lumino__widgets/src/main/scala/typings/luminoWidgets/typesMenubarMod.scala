@@ -42,6 +42,9 @@ object typesMenubarMod {
     
     /**
       * Handle the `'keydown'` event for the menu bar.
+      *
+      * #### Notes
+      * All keys are trapped except the tab key that is ignored.
       */
     /* private */ var _evtKeyDown: Any = js.native
     
@@ -61,6 +64,8 @@ object typesMenubarMod {
     /* private */ var _evtMouseMove: Any = js.native
     
     /* private */ var _forceItemsPosition: Any = js.native
+    
+    /* private */ var _menuItemSizes: Any = js.native
     
     /* private */ var _menus: Any = js.native
     
@@ -87,30 +92,54 @@ object typesMenubarMod {
       */
     /* private */ var _openChildMenu: Any = js.native
     
+    /* private */ var _overflowIndex: Any = js.native
+    
+    /* private */ var _overflowMenu: Any = js.native
+    
+    /* private */ var _overflowMenuOptions: Any = js.native
+    
+    /**
+      * Find initial position for the menu based on menubar item position.
+      *
+      * NOTE: this should be called before updating active index to avoid
+      * an additional layout and style invalidation as changing active
+      * index modifies DOM.
+      */
+    /* private */ var _positionForMenu: Any = js.native
+    
+    /* private */ var _tabFocusIndex: Any = js.native
+    
+    /**
+      * Calculate and update the current overflow index.
+      */
+    /* private */ var _updateOverflowIndex: Any = js.native
+    
     /**
       * Get the index of the currently active menu.
       *
       * #### Notes
       * This will be `-1` if no menu is active.
       */
+    def activeIndex: Double = js.native
     /**
       * Set the index of the currently active menu.
       *
       * #### Notes
       * If the menu cannot be activated, the index will be set to `-1`.
       */
-    var activeIndex: Double = js.native
+    def activeIndex_=(value: Double): Unit = js.native
     
     /**
       * Get the currently active menu.
       */
+    def activeMenu: Menu | Null = js.native
     /**
       * Set the currently active menu.
       *
       * #### Notes
       * If the menu does not exist, the menu will be set to `null`.
       */
-    var activeMenu: Menu | Null = js.native
+    def activeMenu_=(value: Menu | Null): Unit = js.native
     
     /**
       * Add a menu to the end of the menu bar.
@@ -121,6 +150,7 @@ object typesMenubarMod {
       * If the menu is already added to the menu bar, it will be moved.
       */
     def addMenu(menu: Menu): Unit = js.native
+    def addMenu(menu: Menu, update: Boolean): Unit = js.native
     
     /**
       * The child menu of the menu bar.
@@ -128,7 +158,7 @@ object typesMenubarMod {
       * #### Notes
       * This will be `null` if the menu bar does not have an open menu.
       */
-    val childMenu: Menu | Null = js.native
+    def childMenu: Menu | Null = js.native
     
     /**
       * Remove all menus from the menu bar.
@@ -143,7 +173,7 @@ object typesMenubarMod {
       *
       * Modifying this node directly can lead to undefined behavior.
       */
-    val contentNode: HTMLUListElement = js.native
+    def contentNode: HTMLUListElement = js.native
     
     /**
       * Handle the DOM events for the menu bar.
@@ -170,11 +200,12 @@ object typesMenubarMod {
       * If the menu is already added to the menu bar, it will be moved.
       */
     def insertMenu(index: Double, menu: Menu): Unit = js.native
+    def insertMenu(index: Double, menu: Menu, update: Boolean): Unit = js.native
     
     /**
       * A read-only array of the menus in the menu bar.
       */
-    val menus: js.Array[Menu] = js.native
+    def menus: js.Array[Menu] = js.native
     
     /**
       * Open the active menu and activate its first menu item.
@@ -185,6 +216,16 @@ object typesMenubarMod {
     def openActiveMenu(): Unit = js.native
     
     /**
+      * The overflow index of the menu bar.
+      */
+    def overflowIndex: Double = js.native
+    
+    /**
+      * The overflow menu of the menu bar.
+      */
+    def overflowMenu: Menu | Null = js.native
+    
+    /**
       * Remove a menu from the menu bar.
       *
       * @param menu - The menu to remove from the menu bar.
@@ -193,6 +234,7 @@ object typesMenubarMod {
       * This is a no-op if the menu is not in the menu bar.
       */
     def removeMenu(menu: Menu): Unit = js.native
+    def removeMenu(menu: Menu, update: Boolean): Unit = js.native
     
     /**
       * Remove the menu at a given index from the menu bar.
@@ -203,6 +245,7 @@ object typesMenubarMod {
       * This is a no-op if the index is out of range.
       */
     def removeMenuAt(index: Double): Unit = js.native
+    def removeMenuAt(index: Double, update: Boolean): Unit = js.native
     
     /**
       * The renderer used by the menu bar.
@@ -321,6 +364,16 @@ object typesMenubarMod {
       var forceItemsPosition: js.UndefOr[IOpenOptions] = js.undefined
       
       /**
+        * Whether to add a overflow menu if there's overflow.
+        *
+        * Setting to `true` will enable the logic that creates an overflow menu
+        * to show the menu items that don't fit entirely on the screen.
+        *
+        * The default is `true`.
+        */
+      var overflowMenuOptions: js.UndefOr[IOverflowMenuOptions] = js.undefined
+      
+      /**
         * A custom renderer for creating menu bar content.
         *
         * The default is a shared renderer instance.
@@ -341,6 +394,10 @@ object typesMenubarMod {
         
         inline def setForceItemsPositionUndefined: Self = StObject.set(x, "forceItemsPosition", js.undefined)
         
+        inline def setOverflowMenuOptions(value: IOverflowMenuOptions): Self = StObject.set(x, "overflowMenuOptions", value.asInstanceOf[js.Any])
+        
+        inline def setOverflowMenuOptionsUndefined: Self = StObject.set(x, "overflowMenuOptions", js.undefined)
+        
         inline def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
         
         inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
@@ -360,14 +417,19 @@ object typesMenubarMod {
       val onfocus: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
       
       /**
+        * Whether the user can tab to the item.
+        */
+      val tabbable: Boolean
+      
+      /**
         * The title to be rendered.
         */
       val title: Title[Widget]
     }
     object IRenderData {
       
-      inline def apply(active: Boolean, title: Title[Widget]): IRenderData = {
-        val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+      inline def apply(active: Boolean, tabbable: Boolean, title: Title[Widget]): IRenderData = {
+        val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], tabbable = tabbable.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
         __obj.asInstanceOf[IRenderData]
       }
       
@@ -379,6 +441,8 @@ object typesMenubarMod {
         inline def setOnfocus(value: /* event */ FocusEvent => Unit): Self = StObject.set(x, "onfocus", js.Any.fromFunction1(value))
         
         inline def setOnfocusUndefined: Self = StObject.set(x, "onfocus", js.undefined)
+        
+        inline def setTabbable(value: Boolean): Self = StObject.set(x, "tabbable", value.asInstanceOf[js.Any])
         
         inline def setTitle(value: Title[Widget]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       }
@@ -410,6 +474,40 @@ object typesMenubarMod {
         
         inline def setRenderItem(value: IRenderData => VirtualElement): Self = StObject.set(x, "renderItem", js.Any.fromFunction1(value))
       }
+    }
+  }
+  
+  trait IOverflowMenuOptions extends StObject {
+    
+    /**
+      * Determines if a overflow menu appears when the menu items overflow.
+      *
+      * Defaults to `true`.
+      */
+    var isVisible: Boolean
+    
+    /**
+      * Determines the title of the overflow menu.
+      *
+      * Default: `...`.
+      */
+    var title: js.UndefOr[String] = js.undefined
+  }
+  object IOverflowMenuOptions {
+    
+    inline def apply(isVisible: Boolean): IOverflowMenuOptions = {
+      val __obj = js.Dynamic.literal(isVisible = isVisible.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IOverflowMenuOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOverflowMenuOptions] (val x: Self) extends AnyVal {
+      
+      inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
+      
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
 }

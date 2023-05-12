@@ -1,6 +1,7 @@
 package typings.babylonjs
 
 import typings.babylonjs.typesMod.Nullable
+import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,7 +55,7 @@ object miscStringDictionaryMod {
       * @param callback the callback to execute, if it return a valid T instanced object the enumeration will stop and the object will be returned
       * @returns the first item
       */
-    def first[TRes](callback: js.Function2[/* key */ String, /* val */ T, TRes]): TRes | Null = js.native
+    def first[TRes](callback: js.Function2[/* key */ String, /* val */ T, TRes]): NonNullable[TRes] | Null = js.native
     
     /**
       * Execute a callback on each key/val of the dictionary.

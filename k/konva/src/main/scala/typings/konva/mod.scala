@@ -16,9 +16,11 @@ import typings.konva.libNodeMod.NodeConfig
 import typings.konva.libShapeMod.ShapeConfig
 import typings.konva.libShapesImageMod.Image
 import typings.konva.libShapesImageMod.ImageConfig
+import typings.konva.libShapesLabelMod.LabelConfig
 import typings.konva.libShapesLineMod.LineConfig
 import typings.konva.libShapesPathMod.Path
 import typings.konva.libShapesPathMod.PathConfig
+import typings.konva.libShapesSpriteMod.SpriteConfig
 import typings.konva.libShapesTextMod.TextConfig
 import typings.konva.libShapesTextPathMod.TextPathConfig
 import typings.konva.libShapesTransformerMod.TransformerConfig
@@ -27,6 +29,7 @@ import typings.konva.libTweenMod.Tween
 import typings.konva.libTweenMod.TweenConfig
 import typings.konva.libTypesMod.AnimationFn
 import typings.konva.libTypesMod.IRect
+import typings.konva.libTypesMod.PathSegment
 import typings.konva.libTypesMod.RGB
 import typings.konva.libTypesMod.RGBA
 import typings.konva.libTypesMod.Vector2d
@@ -34,6 +37,7 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.ImageData
 import typings.std.Map
+import typings.std.OnErrorEventHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -370,8 +374,12 @@ object mod {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def fromURL(url: Any, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      inline def fromURL(url: Any, callback: Any, onError: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def fromURL(url: String, callback: js.Function1[/* img */ typings.konva.libShapesImageMod.Image, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def fromURL(
+        url: String,
+        callback: js.Function1[/* img */ typings.konva.libShapesImageMod.Image, Unit],
+        onError: OnErrorEventHandler
+      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
@@ -383,14 +391,14 @@ object mod {
     
     @JSImport("konva", "default.Label")
     @js.native
-    val Label: Instantiable1[/* config */ js.UndefOr[Any], typings.konva.libShapesLabelMod.Label] = js.native
+    val Label: Instantiable1[/* config */ js.UndefOr[LabelConfig], typings.konva.libShapesLabelMod.Label] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("konva", "default.Label")
     @js.native
     open class LabelCls ()
       extends typings.konva.libShapesLabelMod.Label {
-      def this(config: Any) = this()
+      def this(config: LabelConfig) = this()
     }
     
     @JSImport("konva", "default.Layer")
@@ -452,6 +460,10 @@ object mod {
       
       inline def getLineLength(x1: Any, y1: Any, x2: Any, y2: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getLineLength")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Double]
       
+      inline def getPathLength(dataArray: js.Array[PathSegment]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getPathLength")(dataArray.asInstanceOf[js.Any]).asInstanceOf[Double]
+      
+      inline def getPointAtLengthOfDataArray(length: Double, dataArray: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointAtLengthOfDataArray")(length.asInstanceOf[js.Any], dataArray.asInstanceOf[js.Any])).asInstanceOf[Any]
+      
       inline def getPointOnCubicBezier(pct: Any, P1x: Any, P1y: Any, P2x: Any, P2y: Any, P3x: Any, P3y: Any, P4x: Any, P4y: Any): X = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointOnCubicBezier")(pct.asInstanceOf[js.Any], P1x.asInstanceOf[js.Any], P1y.asInstanceOf[js.Any], P2x.asInstanceOf[js.Any], P2y.asInstanceOf[js.Any], P3x.asInstanceOf[js.Any], P3y.asInstanceOf[js.Any], P4x.asInstanceOf[js.Any], P4y.asInstanceOf[js.Any])).asInstanceOf[X]
       
       inline def getPointOnEllipticalArc(cx: Any, cy: Any, rx: Any, ry: Any, theta: Any, psi: Any): XY = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointOnEllipticalArc")(cx.asInstanceOf[js.Any], cy.asInstanceOf[js.Any], rx.asInstanceOf[js.Any], ry.asInstanceOf[js.Any], theta.asInstanceOf[js.Any], psi.asInstanceOf[js.Any])).asInstanceOf[XY]
@@ -463,7 +475,7 @@ object mod {
       
       inline def getPointOnQuadraticBezier(pct: Any, P1x: Any, P1y: Any, P2x: Any, P2y: Any, P3x: Any, P3y: Any): X = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointOnQuadraticBezier")(pct.asInstanceOf[js.Any], P1x.asInstanceOf[js.Any], P1y.asInstanceOf[js.Any], P2x.asInstanceOf[js.Any], P2y.asInstanceOf[js.Any], P3x.asInstanceOf[js.Any], P3y.asInstanceOf[js.Any])).asInstanceOf[X]
       
-      inline def parsePathData(data: Any): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePathData")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
+      inline def parsePathData(data: Any): js.Array[PathSegment] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePathData")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[PathSegment]]
     }
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
@@ -520,14 +532,14 @@ object mod {
     
     @JSImport("konva", "default.Sprite")
     @js.native
-    val Sprite: Instantiable1[/* config */ Any, typings.konva.libShapesSpriteMod.Sprite] = js.native
+    val Sprite: Instantiable1[/* config */ SpriteConfig, typings.konva.libShapesSpriteMod.Sprite] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("konva", "default.Sprite")
     @js.native
     open class SpriteCls protected ()
       extends typings.konva.libShapesSpriteMod.Sprite {
-      def this(config: Any) = this()
+      def this(config: SpriteConfig) = this()
     }
     
     @JSImport("konva", "default.Stage")
@@ -649,6 +661,14 @@ object mod {
       
       inline def degToRad(deg: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("degToRad")(deg.asInstanceOf[js.Any]).asInstanceOf[Double]
       
+      inline def drawRoundedRectPath(
+        context: typings.konva.libContextMod.Context,
+        width: Double,
+        height: Double,
+        cornerRadius: js.Array[Double]
+      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawRoundedRectPath")(context.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], cornerRadius.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def drawRoundedRectPath(context: typings.konva.libContextMod.Context, width: Double, height: Double, cornerRadius: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawRoundedRectPath")(context.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], cornerRadius.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       inline def each(obj: Any, func: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(obj.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       inline def error(str: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(str.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -669,7 +689,11 @@ object mod {
       
       inline def hex3ColorToRGBA(str: String): RGBA = ^.asInstanceOf[js.Dynamic].applyDynamic("_hex3ColorToRGBA")(str.asInstanceOf[js.Any]).asInstanceOf[RGBA]
       
+      inline def hex4ColorToRGBA(str: String): RGBA = ^.asInstanceOf[js.Dynamic].applyDynamic("_hex4ColorToRGBA")(str.asInstanceOf[js.Any]).asInstanceOf[RGBA]
+      
       inline def hex6ColorToRGBA(str: String): RGBA = ^.asInstanceOf[js.Dynamic].applyDynamic("_hex6ColorToRGBA")(str.asInstanceOf[js.Any]).asInstanceOf[RGBA]
+      
+      inline def hex8ColorToRGBA(str: String): RGBA = ^.asInstanceOf[js.Dynamic].applyDynamic("_hex8ColorToRGBA")(str.asInstanceOf[js.Any]).asInstanceOf[RGBA]
       
       inline def hexToRgb(hex: String): RGB = ^.asInstanceOf[js.Dynamic].applyDynamic("_hexToRgb")(hex.asInstanceOf[js.Any]).asInstanceOf[RGB]
       

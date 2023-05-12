@@ -4,8 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('./xr-manager.js').XrManager} XrManager */
-/** @typedef {import('../../core/shape/ray.js').Ray} Ray */
 /**
   * Callback used by {@link XrHitTest#start} and {@link XrHitTest#startForInputSource}.
   *
@@ -27,7 +25,7 @@ open class XrHitTest protected ()
   /**
     * Create a new XrHitTest instance.
     *
-    * @param {XrManager} manager - WebXR Manager.
+    * @param {import('./xr-manager.js').XrManager} manager - WebXR Manager.
     * @hideconstructor
     */
   def this(manager: typings.playcanvas.mod.XrManager) = this()

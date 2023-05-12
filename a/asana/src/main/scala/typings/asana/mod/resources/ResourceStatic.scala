@@ -16,7 +16,7 @@ trait ResourceStatic
 Instantiable1[/* dispatcher */ Dispatcher, Resource] {
   
   /**
-    * @type {number} Default number of items to get per page.
+    * Default number of items to get per page.
     */
   var DEFAULT_PAGE_LIMIT: Double = js.native
   

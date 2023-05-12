@@ -1,8 +1,8 @@
 package typings.tensorflowTfjsNode
 
 import typings.tensorflowTfjs.mod.KernelBackend
-import typings.tensorflowTfjsCore.distKernelRegistryMod.TensorInfo
 import typings.tensorflowTfjsCore.distModelTypesMod.ModelTensorInfo
+import typings.tensorflowTfjsCore.distTensorInfoMod.TensorInfo
 import typings.tensorflowTfjsCore.distTensorMod.Scalar
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTensorMod.Tensor1D
@@ -46,9 +46,10 @@ object distNodejsKernelBackendMod {
       *
       * @param data A `Tensor` of any shape. Must be castable to `float32`
       * @param bucketCount Optional positive `number`
-      * @returns A `Tensor` of shape `[k, 3]` and type `float32`. The `i`th row is
-      *   a triple `[leftEdge, rightEdge, count]` for a single bucket. The value of
-      *   `k` is either `bucketCount`, `1` or `0`.
+      * @returns A `Tensor` of shape `[k, 3]` and type `float32`. The `i`th row
+      *     is
+      *   a triple `[leftEdge, rightEdge, count]` for a single bucket. The value
+      * of `k` is either `bucketCount`, `1` or `0`.
       */
     /* private */ var buckets: Any = js.native
     
@@ -172,6 +173,8 @@ object distNodejsKernelBackendMod {
     /* private */ var getMappedInputTensorIds: Any = js.native
     
     def getNumOfSavedModels(): Double = js.native
+    
+    def getNumOfTFTensors(): Double = js.native
     
     def int[T /* <: Tensor[Rank] */](x: T): T = js.native
     

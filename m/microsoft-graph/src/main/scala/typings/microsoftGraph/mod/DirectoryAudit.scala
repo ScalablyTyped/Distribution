@@ -24,8 +24,8 @@ trait DirectoryAudit
   var additionalDetails: js.UndefOr[NullableOption[js.Array[KeyValue]]] = js.undefined
   
   /**
-    * Indicates which resource category that's targeted by the activity. (For example: User Management, Group Management
-    * etc..)
+    * Indicates which resource category that's targeted by the activity. For example: UserManagement, GroupManagement,
+    * ApplicationManagement, RoleManagement.
     */
   var category: js.UndefOr[String] = js.undefined
   

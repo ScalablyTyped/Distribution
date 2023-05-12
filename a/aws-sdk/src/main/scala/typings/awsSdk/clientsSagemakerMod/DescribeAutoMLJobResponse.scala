@@ -42,7 +42,7 @@ trait DescribeAutoMLJobResponse extends StObject {
   var AutoMLJobStatus: typings.awsSdk.clientsSagemakerMod.AutoMLJobStatus
   
   /**
-    * Returns the job's best AutoMLCandidate.
+    * The best model candidate selected by SageMaker Autopilot using both the best objective metric and lowest InferenceLatency for an experiment.
     */
   var BestCandidate: js.UndefOr[AutoMLCandidate] = js.undefined
   
@@ -67,7 +67,7 @@ trait DescribeAutoMLJobResponse extends StObject {
   var GenerateCandidateDefinitionsOnly: js.UndefOr[typings.awsSdk.clientsSagemakerMod.GenerateCandidateDefinitionsOnly] = js.undefined
   
   /**
-    * Returns the input data configuration for the AutoML job..
+    * Returns the input data configuration for the AutoML job.
     */
   var InputDataConfig: AutoMLInputDataConfig
   
@@ -102,12 +102,12 @@ trait DescribeAutoMLJobResponse extends StObject {
   var ProblemType: js.UndefOr[typings.awsSdk.clientsSagemakerMod.ProblemType] = js.undefined
   
   /**
-    * This contains ProblemType, AutoMLJobObjective, and CompletionCriteria. If you do not provide these values, they are auto-inferred. If you do provide them, the values used are the ones you provide.
+    * Contains ProblemType, AutoMLJobObjective, and CompletionCriteria. If you do not provide these values, they are auto-inferred. If you do provide them, the values used are the ones you provide.
     */
   var ResolvedAttributes: js.UndefOr[typings.awsSdk.clientsSagemakerMod.ResolvedAttributes] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the Amazon Web Services Identity and Access Management (IAM) role that has read permission to the input data location and write permission to the output data location in Amazon S3.
+    * The Amazon Resource Name (ARN) of the Identity and Access Management (IAM) role that has read permission to the input data location and write permission to the output data location in Amazon S3.
     */
   var RoleArn: typings.awsSdk.clientsSagemakerMod.RoleArn
 }

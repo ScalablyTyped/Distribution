@@ -47,6 +47,8 @@ import typings.vueCompilerCore.vueCompilerCoreInts.`49`
 import typings.vueCompilerCore.vueCompilerCoreInts.`4`
 import typings.vueCompilerCore.vueCompilerCoreInts.`50`
 import typings.vueCompilerCore.vueCompilerCoreInts.`51`
+import typings.vueCompilerCore.vueCompilerCoreInts.`52`
+import typings.vueCompilerCore.vueCompilerCoreInts.`53`
 import typings.vueCompilerCore.vueCompilerCoreInts.`5`
 import typings.vueCompilerCore.vueCompilerCoreInts.`6`
 import typings.vueCompilerCore.vueCompilerCoreInts.`7`
@@ -109,6 +111,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vueCompilerCore.vueCompilerCoreInts.`49`
   - typings.vueCompilerCore.vueCompilerCoreInts.`50`
   - typings.vueCompilerCore.vueCompilerCoreInts.`51`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`52`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`53`
 */
 trait ErrorCodes extends StObject
 object ErrorCodes {
@@ -116,6 +120,10 @@ object ErrorCodes {
   inline def ABRUPT_CLOSING_OF_EMPTY_COMMENT: `0` = 0.asInstanceOf[`0`]
   
   inline def CDATA_IN_HTML_CONTENT: `1` = 1.asInstanceOf[`1`]
+  
+  inline def DEPRECATION_VNODE_HOOKS: `51` = 51.asInstanceOf[`51`]
+  
+  inline def DEPRECATION_V_IS: `52` = 52.asInstanceOf[`52`]
   
   inline def DUPLICATE_ATTRIBUTE: `2` = 2.asInstanceOf[`2`]
   
@@ -215,5 +223,5 @@ object ErrorCodes {
   
   inline def X_V_SLOT_UNEXPECTED_DIRECTIVE_ON_SLOT_OUTLET: `36` = 36.asInstanceOf[`36`]
   
-  inline def __EXTEND_POINT__ : `51` = 51.asInstanceOf[`51`]
+  inline def __EXTEND_POINT__ : `53` = 53.asInstanceOf[`53`]
 }

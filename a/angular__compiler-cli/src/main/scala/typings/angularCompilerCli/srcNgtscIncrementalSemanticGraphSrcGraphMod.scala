@@ -1,11 +1,10 @@
 package typings.angularCompilerCli
 
 import typings.angularCompiler.mod.Expression
+import typings.angularCompilerCli.anon.ClassDeclarationDeclarati
 import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.AbsoluteFsPath
 import typings.angularCompilerCli.srcNgtscIncrementalSemanticGraphSrcApiMod.SemanticReference
 import typings.angularCompilerCli.srcNgtscIncrementalSemanticGraphSrcApiMod.SemanticSymbol
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
 import typings.std.Map
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
@@ -32,7 +31,7 @@ object srcNgtscIncrementalSemanticGraphSrcGraphMod {
     /**
       * Attempts to resolve the declaration to its semantic symbol.
       */
-    def getSymbolByDecl(decl: ClassDeclaration[DeclarationNode]): SemanticSymbol | Null = js.native
+    def getSymbolByDecl(decl: ClassDeclarationDeclarati): SemanticSymbol | Null = js.native
     
     /**
       * Attempts to find the symbol by its identifier.
@@ -47,7 +46,7 @@ object srcNgtscIncrementalSemanticGraphSrcGraphMod {
       */
     def registerSymbol(symbol: SemanticSymbol): Unit = js.native
     
-    val symbolByDecl: Map[ClassDeclaration[DeclarationNode], SemanticSymbol] = js.native
+    val symbolByDecl: Map[ClassDeclarationDeclarati, SemanticSymbol] = js.native
   }
   
   @JSImport("@angular/compiler-cli/src/ngtsc/incremental/semantic_graph/src/graph", "SemanticDepGraphUpdater")
@@ -72,13 +71,13 @@ object srcNgtscIncrementalSemanticGraphSrcGraphMod {
       * Creates a `SemanticReference` for the reference to `decl` using the expression `expr`. See
       * the documentation of `SemanticReference` for details.
       */
-    def getSemanticReference(decl: ClassDeclaration[DeclarationNode], expr: Expression): SemanticReference = js.native
+    def getSemanticReference(decl: ClassDeclarationDeclarati, expr: Expression): SemanticReference = js.native
     
     /**
       * Gets the `SemanticSymbol` that was registered for `decl` during the current compilation, or
       * returns an opaque symbol that represents `decl`.
       */
-    def getSymbol(decl: ClassDeclaration[DeclarationNode]): SemanticSymbol = js.native
+    def getSymbol(decl: ClassDeclarationDeclarati): SemanticSymbol = js.native
     
     /* private */ val newGraph: Any = js.native
     

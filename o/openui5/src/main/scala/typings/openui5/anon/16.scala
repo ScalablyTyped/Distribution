@@ -1,6 +1,6 @@
 package typings.openui5.anon
 
-import typings.openui5.sapUiCoreLibraryMod.MessageType
+import typings.openui5.sapUiCoreItemMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,11 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `16` extends StObject {
   
   /**
-    * This parameter refers to the type of messages being shown.
+    * The selected item.
     */
-  var messageTypeFilter: js.UndefOr[
-    MessageType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MessageType * / any */ String)
-  ] = js.undefined
+  var selectedItem: js.UndefOr[default] = js.undefined
 }
 object `16` {
   
@@ -24,10 +22,8 @@ object `16` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `16`] (val x: Self) extends AnyVal {
     
-    inline def setMessageTypeFilter(
-      value: MessageType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MessageType * / any */ String)
-    ): Self = StObject.set(x, "messageTypeFilter", value.asInstanceOf[js.Any])
+    inline def setSelectedItem(value: default): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
     
-    inline def setMessageTypeFilterUndefined: Self = StObject.set(x, "messageTypeFilter", js.undefined)
+    inline def setSelectedItemUndefined: Self = StObject.set(x, "selectedItem", js.undefined)
   }
 }

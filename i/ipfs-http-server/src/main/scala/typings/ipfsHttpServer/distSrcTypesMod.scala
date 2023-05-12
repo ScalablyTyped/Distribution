@@ -1,6 +1,6 @@
 package typings.ipfsHttpServer
 
-import typings.hapiHapi.mod.ServerOptions
+import typings.hapiHapi.libTypesServerOptionsMod.ServerOptions
 import typings.hapiHapi.mod.Server_
 import typings.ipfsCoreTypes.mod.IPFS
 import typings.ipfsHttpServer.ipfsHttpServerStrings.directory
@@ -23,7 +23,7 @@ object distSrcTypesMod {
     * @param options server configuration object.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serveroptions)
     */
-  open class Server () extends Server_ {
+  open class Server[A] () extends Server_[A] {
     def this(options: ServerOptions) = this()
   }
   

@@ -9,13 +9,16 @@ trait DepthRenderer extends StObject {
   
   /* private */ var _camera: Any = js.native
   
-  /* private */ val _clearColor: Any = js.native
-  
   /* private */ var _depthMap: Any = js.native
   
   /* private */ var _scene: Any = js.native
   
+  /* private */ val _storeCameraSpaceZ: Any = js.native
+  
   /* private */ val _storeNonLinearDepth: Any = js.native
+  
+  /** Color used to clear the depth texture. Default: (1,0,0,1) */
+  var clearColor: Color4 = js.native
   
   /**
     * Disposes of the depth renderer.
@@ -44,6 +47,11 @@ trait DepthRenderer extends StObject {
     * @returns if the depth renderer is ready to render the depth map
     */
   def isReady(subMesh: SubMesh, useInstances: Boolean): Boolean = js.native
+  
+  /** If true, reverse the culling of materials before writing to the depth texture.
+    * So, basically, when "true", back facing instead of front facing faces are rasterized into the texture
+    */
+  var reverseCulling: Boolean = js.native
   
   def setMaterialForRendering(mesh: js.Array[AbstractMesh]): Unit = js.native
   def setMaterialForRendering(mesh: js.Array[AbstractMesh], material: Material): Unit = js.native

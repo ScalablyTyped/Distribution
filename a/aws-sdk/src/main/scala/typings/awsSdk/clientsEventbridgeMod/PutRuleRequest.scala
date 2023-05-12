@@ -17,7 +17,7 @@ trait PutRuleRequest extends StObject {
   var EventBusName: js.UndefOr[EventBusNameOrArn] = js.undefined
   
   /**
-    * The event pattern. For more information, see EventBridge event patterns in the Amazon EventBridge User Guide.
+    * The event pattern. For more information, see Amazon EventBridge event patterns in the Amazon EventBridge User Guide.
     */
   var EventPattern: js.UndefOr[typings.awsSdk.clientsEventbridgeMod.EventPattern] = js.undefined
   

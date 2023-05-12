@@ -14,7 +14,7 @@ trait UpdateThemeRequest extends StObject {
   /**
     * The theme ID, defined by Amazon QuickSight, that a custom theme inherits from. All themes initially inherit from a default Amazon QuickSight theme.
     */
-  var BaseThemeId: RestrictiveResourceId
+  var BaseThemeId: ShortRestrictiveResourceId
   
   /**
     * The theme configuration, which contains the theme display properties.
@@ -29,7 +29,7 @@ trait UpdateThemeRequest extends StObject {
   /**
     * The ID for the theme.
     */
-  var ThemeId: RestrictiveResourceId
+  var ThemeId: ShortRestrictiveResourceId
   
   /**
     * A description of the theme version that you're updating Every time that you call UpdateTheme, you create a new version of the theme. Each version of the theme maintains a description of the version in VersionDescription.
@@ -38,7 +38,11 @@ trait UpdateThemeRequest extends StObject {
 }
 object UpdateThemeRequest {
   
-  inline def apply(AwsAccountId: AwsAccountId, BaseThemeId: RestrictiveResourceId, ThemeId: RestrictiveResourceId): UpdateThemeRequest = {
+  inline def apply(
+    AwsAccountId: AwsAccountId,
+    BaseThemeId: ShortRestrictiveResourceId,
+    ThemeId: ShortRestrictiveResourceId
+  ): UpdateThemeRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], BaseThemeId = BaseThemeId.asInstanceOf[js.Any], ThemeId = ThemeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateThemeRequest]
   }
@@ -48,7 +52,7 @@ object UpdateThemeRequest {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    inline def setBaseThemeId(value: RestrictiveResourceId): Self = StObject.set(x, "BaseThemeId", value.asInstanceOf[js.Any])
+    inline def setBaseThemeId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "BaseThemeId", value.asInstanceOf[js.Any])
     
     inline def setConfiguration(value: ThemeConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     
@@ -58,7 +62,7 @@ object UpdateThemeRequest {
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    inline def setThemeId(value: RestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
+    inline def setThemeId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
     
     inline def setVersionDescription(value: VersionDescription): Self = StObject.set(x, "VersionDescription", value.asInstanceOf[js.Any])
     

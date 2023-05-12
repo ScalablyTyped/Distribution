@@ -159,6 +159,11 @@ object srcMaterialsMaterialMod {
     var dithering: Boolean = js.native
     
     /**
+      * @default false
+      */
+    var forceSinglePass: Boolean = js.native
+    
+    /**
       * Unique number of this material instance.
       */
     var id: Double = js.native
@@ -242,8 +247,9 @@ object srcMaterialsMaterialMod {
     
     /**
       * Defines which of the face sides will be rendered - front, back or both.
-      * Default is THREE.FrontSide. Other options are THREE.BackSide and THREE.DoubleSide.
-      * @default THREE.FrontSide
+      * Default is {@link THREE.FrontSide}. Other options are {@link THREE.BackSide} and {@link THREE.DoubleSide}.
+      *
+      * @default {@link THREE.FrontSide}
       */
     var side: Side = js.native
     
@@ -395,6 +401,8 @@ object srcMaterialsMaterialMod {
     
     var dithering: js.UndefOr[Boolean] = js.undefined
     
+    var forceSinglePass: js.UndefOr[Boolean] = js.undefined
+    
     var format: js.UndefOr[PixelFormat] = js.undefined
     
     var name: js.UndefOr[String] = js.undefined
@@ -524,6 +532,10 @@ object srcMaterialsMaterialMod {
       inline def setDithering(value: Boolean): Self = StObject.set(x, "dithering", value.asInstanceOf[js.Any])
       
       inline def setDitheringUndefined: Self = StObject.set(x, "dithering", js.undefined)
+      
+      inline def setForceSinglePass(value: Boolean): Self = StObject.set(x, "forceSinglePass", value.asInstanceOf[js.Any])
+      
+      inline def setForceSinglePassUndefined: Self = StObject.set(x, "forceSinglePass", js.undefined)
       
       inline def setFormat(value: PixelFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

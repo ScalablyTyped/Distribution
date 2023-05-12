@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeStaleSecurityGroupsResult extends StObject {
   
   /**
-    * The token to use when requesting the next set of items. If there are no additional items to return, the string is empty.
+    * The token to include in another request to get the next page of items. If there are no additional items to return, the string is empty.
     */
   var NextToken: js.UndefOr[String] = js.undefined
   

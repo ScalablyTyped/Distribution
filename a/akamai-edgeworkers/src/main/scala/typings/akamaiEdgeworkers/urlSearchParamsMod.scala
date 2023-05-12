@@ -36,6 +36,7 @@ object urlSearchParamsMod {
     /**
       * Iterate through the name/value pairs.
       */
+    // Minimum TypeScript Version: 4.6
     /* CompleteClass */
     override def entries(): IterableIterator[js.Tuple2[String, String]] = js.native
     
@@ -60,6 +61,7 @@ object urlSearchParamsMod {
     /**
       * Iterate through the names.
       */
+    // Minimum TypeScript Version: 4.6
     /* CompleteClass */
     override def keys(): IterableIterator[String] = js.native
     
@@ -72,6 +74,7 @@ object urlSearchParamsMod {
     /**
       * Iterate through the values.
       */
+    // Minimum TypeScript Version: 4.6
     /* CompleteClass */
     override def values(): IterableIterator[String] = js.native
   }
@@ -91,6 +94,7 @@ object urlSearchParamsMod {
     /**
       * Iterate through the name/value pairs.
       */
+    // Minimum TypeScript Version: 4.6
     def entries(): IterableIterator[js.Tuple2[String, String]]
     
     /**
@@ -111,6 +115,7 @@ object urlSearchParamsMod {
     /**
       * Iterate through the names.
       */
+    // Minimum TypeScript Version: 4.6
     def keys(): IterableIterator[String]
     
     /**
@@ -121,6 +126,7 @@ object urlSearchParamsMod {
     /**
       * Iterate through the values.
       */
+    // Minimum TypeScript Version: 4.6
     def values(): IterableIterator[String]
   }
   object URLSearchParams {

@@ -39,7 +39,7 @@ trait DocumentTaskChange
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  val assignee: Identity = js.native
+  val assignee: EmailIdentity = js.native
   
   /**
     * Represents the identity of the user who made the task change.
@@ -48,7 +48,7 @@ trait DocumentTaskChange
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  val changedBy: Identity = js.native
+  val changedBy: EmailIdentity = js.native
   
   /**
     * Represents the ID of the `comment` or `commentReply` to which the task change is anchored.

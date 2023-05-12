@@ -1,10 +1,57 @@
 package typings.awsSdkTypes
 
+import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distTypesTransferMod {
+  
+  @js.native
+  sealed trait RequestHandlerProtocol extends StObject
+  @JSImport("@aws-sdk/types/dist-types/transfer", "RequestHandlerProtocol")
+  @js.native
+  object RequestHandlerProtocol extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[RequestHandlerProtocol & String] = js.native
+    
+    @js.native
+    sealed trait HTTP_0_9
+      extends StObject
+         with RequestHandlerProtocol
+    /* "http/0.9" */ val HTTP_0_9: typings.awsSdkTypes.distTypesTransferMod.RequestHandlerProtocol.HTTP_0_9 & String = js.native
+    
+    @js.native
+    sealed trait HTTP_1_0
+      extends StObject
+         with RequestHandlerProtocol
+    /* "http/1.0" */ val HTTP_1_0: typings.awsSdkTypes.distTypesTransferMod.RequestHandlerProtocol.HTTP_1_0 & String = js.native
+    
+    @js.native
+    sealed trait TDS_8_0
+      extends StObject
+         with RequestHandlerProtocol
+    /* "tds/8.0" */ val TDS_8_0: typings.awsSdkTypes.distTypesTransferMod.RequestHandlerProtocol.TDS_8_0 & String = js.native
+  }
+  
+  trait RequestContext extends StObject {
+    
+    var destination: URL
+  }
+  object RequestContext {
+    
+    inline def apply(destination: URL): RequestContext = {
+      val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RequestContext]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestContext] (val x: Self) extends AnyVal {
+      
+      inline def setDestination(value: URL): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    }
+  }
   
   @js.native
   trait RequestHandler[RequestType, ResponseType, HandlerOptions] extends StObject {
@@ -24,11 +71,11 @@ object distTypesTransferMod {
   
   trait RequestHandlerMetadata extends StObject {
     
-    var handlerProtocol: String
+    var handlerProtocol: RequestHandlerProtocol | String
   }
   object RequestHandlerMetadata {
     
-    inline def apply(handlerProtocol: String): RequestHandlerMetadata = {
+    inline def apply(handlerProtocol: RequestHandlerProtocol | String): RequestHandlerMetadata = {
       val __obj = js.Dynamic.literal(handlerProtocol = handlerProtocol.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestHandlerMetadata]
     }
@@ -36,7 +83,7 @@ object distTypesTransferMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: RequestHandlerMetadata] (val x: Self) extends AnyVal {
       
-      inline def setHandlerProtocol(value: String): Self = StObject.set(x, "handlerProtocol", value.asInstanceOf[js.Any])
+      inline def setHandlerProtocol(value: RequestHandlerProtocol | String): Self = StObject.set(x, "handlerProtocol", value.asInstanceOf[js.Any])
     }
   }
   

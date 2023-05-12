@@ -37,18 +37,6 @@ object enginesWebGLWebGLPipelineContextMod {
     /**
       * @internal
       */
-    def _cacheFloatN(_uniformName: String, _x: Double): Boolean = js.native
-    def _cacheFloatN(_uniformName: String, _x: Double, _y: Double): Boolean = js.native
-    def _cacheFloatN(_uniformName: String, _x: Double, _y: Double, _z: Double): Boolean = js.native
-    def _cacheFloatN(_uniformName: String, _x: Double, _y: Double, _z: Double, _w: Double): Boolean = js.native
-    def _cacheFloatN(_uniformName: String, _x: Double, _y: Double, _z: Unit, _w: Double): Boolean = js.native
-    def _cacheFloatN(_uniformName: String, _x: Double, _y: Unit, _z: Double): Boolean = js.native
-    def _cacheFloatN(_uniformName: String, _x: Double, _y: Unit, _z: Double, _w: Double): Boolean = js.native
-    def _cacheFloatN(_uniformName: String, _x: Double, _y: Unit, _z: Unit, _w: Double): Boolean = js.native
-    
-    /**
-      * @internal
-      */
     def _cacheMatrix(uniformName: String, matrix: IMatrixLike): Boolean = js.native
     
     /* private */ var _uniforms: Any = js.native

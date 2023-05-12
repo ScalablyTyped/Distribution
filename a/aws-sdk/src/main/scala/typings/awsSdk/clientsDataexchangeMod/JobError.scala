@@ -29,12 +29,12 @@ trait JobError extends StObject {
   /**
     * The message related to the job error.
     */
-  var Message: string
+  var Message: _String
   
   /**
     * The unique identifier for the resource related to the error.
     */
-  var ResourceId: js.UndefOr[string] = js.undefined
+  var ResourceId: js.UndefOr[_String] = js.undefined
   
   /**
     * The type of resource related to the error.
@@ -43,7 +43,7 @@ trait JobError extends StObject {
 }
 object JobError {
   
-  inline def apply(Code: Code, Message: string): JobError = {
+  inline def apply(Code: Code, Message: _String): JobError = {
     val __obj = js.Dynamic.literal(Code = Code.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobError]
   }
@@ -65,9 +65,9 @@ object JobError {
     
     inline def setLimitValueUndefined: Self = StObject.set(x, "LimitValue", js.undefined)
     
-    inline def setMessage(value: string): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: _String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    inline def setResourceId(value: string): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: _String): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
     inline def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
     

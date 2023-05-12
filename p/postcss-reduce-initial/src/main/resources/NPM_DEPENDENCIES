@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "postcss-reduce-initial" : "5.1.1"
+      "postcss-reduce-initial" : "6.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "postcss-reduce-initial" : "5.1.1"
+      "postcss-reduce-initial" : "6.0.0"
     }
   ],
   "compile-devDependencies" : [

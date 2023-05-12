@@ -1,7 +1,7 @@
 package typings.reactSpringWeb
 
-import typings.reactSpringWeb.distDeclarationsSrcAnimatedMod.StylePropKeys
-import typings.reactSpringWeb.distDeclarationsSrcPrimitivesMod.Primitives_
+import typings.reactSpringWeb.mod.Primitives
+import typings.reactSpringWeb.mod.StylePropKeys
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -1559,13 +1559,13 @@ object reactSpringWebStrings {
   @js.native
   sealed trait a
     extends StObject
-       with Primitives_
+       with Primitives
   inline def a: a = "a".asInstanceOf[a]
   
   @js.native
   sealed trait abbr
     extends StObject
-       with Primitives_
+       with Primitives
   inline def abbr: abbr = "abbr".asInstanceOf[abbr]
   
   @js.native
@@ -1577,7 +1577,7 @@ object reactSpringWebStrings {
   @js.native
   sealed trait address
     extends StObject
-       with Primitives_
+       with Primitives
   inline def address: address = "address".asInstanceOf[address]
   
   @js.native
@@ -1619,19 +1619,19 @@ object reactSpringWebStrings {
   @js.native
   sealed trait animate
     extends StObject
-       with Primitives_
+       with Primitives
   inline def animate: animate = "animate".asInstanceOf[animate]
   
   @js.native
   sealed trait animateMotion
     extends StObject
-       with Primitives_
+       with Primitives
   inline def animateMotion: animateMotion = "animateMotion".asInstanceOf[animateMotion]
   
   @js.native
   sealed trait animateTransform
     extends StObject
-       with Primitives_
+       with Primitives
   inline def animateTransform: animateTransform = "animateTransform".asInstanceOf[animateTransform]
   
   @js.native
@@ -1709,19 +1709,19 @@ object reactSpringWebStrings {
   @js.native
   sealed trait area
     extends StObject
-       with Primitives_
+       with Primitives
   inline def area: area = "area".asInstanceOf[area]
   
   @js.native
   sealed trait article
     extends StObject
-       with Primitives_
+       with Primitives
   inline def article: article = "article".asInstanceOf[article]
   
   @js.native
   sealed trait aside
     extends StObject
-       with Primitives_
+       with Primitives
   inline def aside: aside = "aside".asInstanceOf[aside]
   
   @js.native
@@ -1733,7 +1733,7 @@ object reactSpringWebStrings {
   @js.native
   sealed trait audio
     extends StObject
-       with Primitives_
+       with Primitives
   inline def audio: audio = "audio".asInstanceOf[audio]
   
   @js.native
@@ -1745,7 +1745,7 @@ object reactSpringWebStrings {
   @js.native
   sealed trait b
     extends StObject
-       with Primitives_
+       with Primitives
   inline def b: b = "b".asInstanceOf[b]
   
   @js.native
@@ -1835,7 +1835,7 @@ object reactSpringWebStrings {
   @js.native
   sealed trait base
     extends StObject
-       with Primitives_
+       with Primitives
   inline def base: base = "base".asInstanceOf[base]
   
   @js.native
@@ -1847,19 +1847,19 @@ object reactSpringWebStrings {
   @js.native
   sealed trait bdi
     extends StObject
-       with Primitives_
+       with Primitives
   inline def bdi: bdi = "bdi".asInstanceOf[bdi]
   
   @js.native
   sealed trait bdo
     extends StObject
-       with Primitives_
+       with Primitives
   inline def bdo: bdo = "bdo".asInstanceOf[bdo]
   
   @js.native
   sealed trait big
     extends StObject
-       with Primitives_
+       with Primitives
   inline def big: big = "big".asInstanceOf[big]
   
   @js.native
@@ -1877,13 +1877,13 @@ object reactSpringWebStrings {
   @js.native
   sealed trait blockquote
     extends StObject
-       with Primitives_
+       with Primitives
   inline def blockquote: blockquote = "blockquote".asInstanceOf[blockquote]
   
   @js.native
   sealed trait body
     extends StObject
-       with Primitives_
+       with Primitives
   inline def body: body = "body".asInstanceOf[body]
   
   @js.native
@@ -2327,7 +2327,7 @@ object reactSpringWebStrings {
   @js.native
   sealed trait br
     extends StObject
-       with Primitives_
+       with Primitives
   inline def br: br = "br".asInstanceOf[br]
   
   @js.native
@@ -2351,19 +2351,19 @@ object reactSpringWebStrings {
   @js.native
   sealed trait button
     extends StObject
-       with Primitives_
+       with Primitives
   inline def button: button = "button".asInstanceOf[button]
   
   @js.native
   sealed trait canvas
     extends StObject
-       with Primitives_
+       with Primitives
   inline def canvas: canvas = "canvas".asInstanceOf[canvas]
   
   @js.native
   sealed trait caption
     extends StObject
-       with Primitives_
+       with Primitives
   inline def caption: caption = "caption".asInstanceOf[caption]
   
   @js.native
@@ -2373,21 +2373,39 @@ object reactSpringWebStrings {
   inline def captionSide: captionSide = "captionSide".asInstanceOf[captionSide]
   
   @js.native
+  sealed trait caret
+    extends StObject
+       with StylePropKeys
+  inline def caret: caret = "caret".asInstanceOf[caret]
+  
+  @js.native
   sealed trait caretColor
     extends StObject
        with StylePropKeys
   inline def caretColor: caretColor = "caretColor".asInstanceOf[caretColor]
   
   @js.native
+  sealed trait caretShape
+    extends StObject
+       with StylePropKeys
+  inline def caretShape: caretShape = "caretShape".asInstanceOf[caretShape]
+  
+  @js.native
+  sealed trait center
+    extends StObject
+       with Primitives
+  inline def center: center = "center".asInstanceOf[center]
+  
+  @js.native
   sealed trait circle
     extends StObject
-       with Primitives_
+       with Primitives
   inline def circle: circle = "circle".asInstanceOf[circle]
   
   @js.native
   sealed trait cite
     extends StObject
-       with Primitives_
+       with Primitives
   inline def cite: cite = "cite".asInstanceOf[cite]
   
   @js.native
@@ -2405,7 +2423,7 @@ object reactSpringWebStrings {
   @js.native
   sealed trait clipPath
     extends StObject
-       with Primitives_
+       with Primitives
        with StylePropKeys
   inline def clipPath: clipPath = "clipPath".asInstanceOf[clipPath]
   
@@ -2418,19 +2436,19 @@ object reactSpringWebStrings {
   @js.native
   sealed trait code
     extends StObject
-       with Primitives_
+       with Primitives
   inline def code: code = "code".asInstanceOf[code]
   
   @js.native
   sealed trait col
     extends StObject
-       with Primitives_
+       with Primitives
   inline def col: col = "col".asInstanceOf[col]
   
   @js.native
   sealed trait colgroup
     extends StObject
-       with Primitives_
+       with Primitives
   inline def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
   
   @js.native
@@ -2530,6 +2548,54 @@ object reactSpringWebStrings {
   inline def contain: contain = "contain".asInstanceOf[contain]
   
   @js.native
+  sealed trait containIntrinsicBlockSize
+    extends StObject
+       with StylePropKeys
+  inline def containIntrinsicBlockSize: containIntrinsicBlockSize = "containIntrinsicBlockSize".asInstanceOf[containIntrinsicBlockSize]
+  
+  @js.native
+  sealed trait containIntrinsicHeight
+    extends StObject
+       with StylePropKeys
+  inline def containIntrinsicHeight: containIntrinsicHeight = "containIntrinsicHeight".asInstanceOf[containIntrinsicHeight]
+  
+  @js.native
+  sealed trait containIntrinsicInlineSize
+    extends StObject
+       with StylePropKeys
+  inline def containIntrinsicInlineSize: containIntrinsicInlineSize = "containIntrinsicInlineSize".asInstanceOf[containIntrinsicInlineSize]
+  
+  @js.native
+  sealed trait containIntrinsicSize
+    extends StObject
+       with StylePropKeys
+  inline def containIntrinsicSize: containIntrinsicSize = "containIntrinsicSize".asInstanceOf[containIntrinsicSize]
+  
+  @js.native
+  sealed trait containIntrinsicWidth
+    extends StObject
+       with StylePropKeys
+  inline def containIntrinsicWidth: containIntrinsicWidth = "containIntrinsicWidth".asInstanceOf[containIntrinsicWidth]
+  
+  @js.native
+  sealed trait container
+    extends StObject
+       with StylePropKeys
+  inline def container: container = "container".asInstanceOf[container]
+  
+  @js.native
+  sealed trait containerName
+    extends StObject
+       with StylePropKeys
+  inline def containerName: containerName = "containerName".asInstanceOf[containerName]
+  
+  @js.native
+  sealed trait containerType
+    extends StObject
+       with StylePropKeys
+  inline def containerType: containerType = "containerType".asInstanceOf[containerType]
+  
+  @js.native
   sealed trait content
     extends StObject
        with StylePropKeys
@@ -2568,55 +2634,55 @@ object reactSpringWebStrings {
   @js.native
   sealed trait data
     extends StObject
-       with Primitives_
+       with Primitives
   inline def data: data = "data".asInstanceOf[data]
   
   @js.native
   sealed trait datalist
     extends StObject
-       with Primitives_
+       with Primitives
   inline def datalist: datalist = "datalist".asInstanceOf[datalist]
   
   @js.native
   sealed trait dd
     extends StObject
-       with Primitives_
+       with Primitives
   inline def dd: dd = "dd".asInstanceOf[dd]
   
   @js.native
   sealed trait defs
     extends StObject
-       with Primitives_
+       with Primitives
   inline def defs: defs = "defs".asInstanceOf[defs]
   
   @js.native
   sealed trait del
     extends StObject
-       with Primitives_
+       with Primitives
   inline def del: del = "del".asInstanceOf[del]
   
   @js.native
   sealed trait desc
     extends StObject
-       with Primitives_
+       with Primitives
   inline def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
   sealed trait details
     extends StObject
-       with Primitives_
+       with Primitives
   inline def details: details = "details".asInstanceOf[details]
   
   @js.native
   sealed trait dfn
     extends StObject
-       with Primitives_
+       with Primitives
   inline def dfn: dfn = "dfn".asInstanceOf[dfn]
   
   @js.native
   sealed trait dialog
     extends StObject
-       with Primitives_
+       with Primitives
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
@@ -2634,13 +2700,13 @@ object reactSpringWebStrings {
   @js.native
   sealed trait div
     extends StObject
-       with Primitives_
+       with Primitives
   inline def div: div = "div".asInstanceOf[div]
   
   @js.native
   sealed trait dl
     extends StObject
-       with Primitives_
+       with Primitives
   inline def dl: dl = "dl".asInstanceOf[dl]
   
   @js.native
@@ -2652,25 +2718,25 @@ object reactSpringWebStrings {
   @js.native
   sealed trait dt
     extends StObject
-       with Primitives_
+       with Primitives
   inline def dt: dt = "dt".asInstanceOf[dt]
   
   @js.native
   sealed trait ellipse
     extends StObject
-       with Primitives_
+       with Primitives
   inline def ellipse: ellipse = "ellipse".asInstanceOf[ellipse]
   
   @js.native
   sealed trait em
     extends StObject
-       with Primitives_
+       with Primitives
   inline def em: em = "em".asInstanceOf[em]
   
   @js.native
   sealed trait embed
     extends StObject
-       with Primitives_
+       with Primitives
   inline def embed: embed = "embed".asInstanceOf[embed]
   
   @js.native
@@ -2682,169 +2748,169 @@ object reactSpringWebStrings {
   @js.native
   sealed trait feBlend
     extends StObject
-       with Primitives_
+       with Primitives
   inline def feBlend: feBlend = "feBlend".asInstanceOf[feBlend]
   
   @js.native
   sealed trait feColorMatrix
     extends StObject
-       with Primitives_
+       with Primitives
   inline def feColorMatrix: feColorMatrix = "feColorMatrix".asInstanceOf[feColorMatrix]
   
   @js.native
   sealed trait feComponentTransfer
     extends StObject
-       with Primitives_
+       with Primitives
   inline def feComponentTransfer: feComponentTransfer = "feComponentTransfer".asInstanceOf[feComponentTransfer]
   
   @js.native
   sealed trait feComposite
     extends StObject
-       with Primitives_
+       with Primitives
   inline def feComposite: feComposite = "feComposite".asInstanceOf[feComposite]
   
   @js.native
   sealed trait feConvolveMatrix
     extends StObject
-       with Primitives_
+       with Primitives
   inline def feConvolveMatrix: feConvolveMatrix = "feConvolveMatrix".asInstanceOf[feConvolveMatrix]
   
   @js.native
   sealed trait feDiffuseLighting
     extends StObject
-       with Primitives_
+       with Primitives
   inline def feDiffuseLighting: feDiffuseLighting = "feDiffuseLighting".asInstanceOf[feDiffuseLighting]
   
   @js.native
   sealed trait feDisplacementMap
     extends StObject
-       with Primitives_
+       with Primitives
   inline def feDisplacementMap: feDisplacementMap = "feDisplacementMap".asInstanceOf[feDisplacementMap]
   
   @js.native
   sealed trait feDistantLight
     extends StObject
-       with Primitives_
+       with Primitives
   inline def feDistantLight: feDistantLight = "feDistantLight".asInstanceOf[feDistantLight]
   
   @js.native
   sealed trait feDropShadow
     extends StObject
-       with Primitives_
+       with Primitives
   inline def feDropShadow: feDropShadow = "feDropShadow".asInstanceOf[feDropShadow]
   
   @js.native
   sealed trait feFlood
     extends StObject
-       with Primitives_
+       with Primitives
   inline def feFlood: feFlood = "feFlood".asInstanceOf[feFlood]
   
   @js.native
   sealed trait feFuncA
     extends StObject
-       with Primitives_
+       with Primitives
   inline def feFuncA: feFuncA = "feFuncA".asInstanceOf[feFuncA]
   
   @js.native
   sealed trait feFuncB
     extends StObject
-       with Primitives_
+       with Primitives
   inline def feFuncB: feFuncB = "feFuncB".asInstanceOf[feFuncB]
   
   @js.native
   sealed trait feFuncG
     extends StObject
-       with Primitives_
+       with Primitives
   inline def feFuncG: feFuncG = "feFuncG".asInstanceOf[feFuncG]
   
   @js.native
   sealed trait feFuncR
     extends StObject
-       with Primitives_
+       with Primitives
   inline def feFuncR: feFuncR = "feFuncR".asInstanceOf[feFuncR]
   
   @js.native
   sealed trait feGaussianBlur
     extends StObject
-       with Primitives_
+       with Primitives
   inline def feGaussianBlur: feGaussianBlur = "feGaussianBlur".asInstanceOf[feGaussianBlur]
   
   @js.native
   sealed trait feImage
     extends StObject
-       with Primitives_
+       with Primitives
   inline def feImage: feImage = "feImage".asInstanceOf[feImage]
   
   @js.native
   sealed trait feMerge
     extends StObject
-       with Primitives_
+       with Primitives
   inline def feMerge: feMerge = "feMerge".asInstanceOf[feMerge]
   
   @js.native
   sealed trait feMergeNode
     extends StObject
-       with Primitives_
+       with Primitives
   inline def feMergeNode: feMergeNode = "feMergeNode".asInstanceOf[feMergeNode]
   
   @js.native
   sealed trait feMorphology
     extends StObject
-       with Primitives_
+       with Primitives
   inline def feMorphology: feMorphology = "feMorphology".asInstanceOf[feMorphology]
   
   @js.native
   sealed trait feOffset
     extends StObject
-       with Primitives_
+       with Primitives
   inline def feOffset: feOffset = "feOffset".asInstanceOf[feOffset]
   
   @js.native
   sealed trait fePointLight
     extends StObject
-       with Primitives_
+       with Primitives
   inline def fePointLight: fePointLight = "fePointLight".asInstanceOf[fePointLight]
   
   @js.native
   sealed trait feSpecularLighting
     extends StObject
-       with Primitives_
+       with Primitives
   inline def feSpecularLighting: feSpecularLighting = "feSpecularLighting".asInstanceOf[feSpecularLighting]
   
   @js.native
   sealed trait feSpotLight
     extends StObject
-       with Primitives_
+       with Primitives
   inline def feSpotLight: feSpotLight = "feSpotLight".asInstanceOf[feSpotLight]
   
   @js.native
   sealed trait feTile
     extends StObject
-       with Primitives_
+       with Primitives
   inline def feTile: feTile = "feTile".asInstanceOf[feTile]
   
   @js.native
   sealed trait feTurbulence
     extends StObject
-       with Primitives_
+       with Primitives
   inline def feTurbulence: feTurbulence = "feTurbulence".asInstanceOf[feTurbulence]
   
   @js.native
   sealed trait fieldset
     extends StObject
-       with Primitives_
+       with Primitives
   inline def fieldset: fieldset = "fieldset".asInstanceOf[fieldset]
   
   @js.native
   sealed trait figcaption
     extends StObject
-       with Primitives_
+       with Primitives
   inline def figcaption: figcaption = "figcaption".asInstanceOf[figcaption]
   
   @js.native
   sealed trait figure
     extends StObject
-       with Primitives_
+       with Primitives
   inline def figure: figure = "figure".asInstanceOf[figure]
   
   @js.native
@@ -2868,7 +2934,7 @@ object reactSpringWebStrings {
   @js.native
   sealed trait filter
     extends StObject
-       with Primitives_
+       with Primitives
        with StylePropKeys
   inline def filter: filter = "filter".asInstanceOf[filter]
   
@@ -2969,6 +3035,12 @@ object reactSpringWebStrings {
   inline def fontOpticalSizing: fontOpticalSizing = "fontOpticalSizing".asInstanceOf[fontOpticalSizing]
   
   @js.native
+  sealed trait fontPalette
+    extends StObject
+       with StylePropKeys
+  inline def fontPalette: fontPalette = "fontPalette".asInstanceOf[fontPalette]
+  
+  @js.native
   sealed trait fontSize
     extends StObject
        with StylePropKeys
@@ -3029,6 +3101,12 @@ object reactSpringWebStrings {
   inline def fontVariantEastAsian: fontVariantEastAsian = "fontVariantEastAsian".asInstanceOf[fontVariantEastAsian]
   
   @js.native
+  sealed trait fontVariantEmoji
+    extends StObject
+       with StylePropKeys
+  inline def fontVariantEmoji: fontVariantEmoji = "fontVariantEmoji".asInstanceOf[fontVariantEmoji]
+  
+  @js.native
   sealed trait fontVariantLigatures
     extends StObject
        with StylePropKeys
@@ -3061,7 +3139,7 @@ object reactSpringWebStrings {
   @js.native
   sealed trait footer
     extends StObject
-       with Primitives_
+       with Primitives
   inline def footer: footer = "footer".asInstanceOf[footer]
   
   @js.native
@@ -3073,19 +3151,23 @@ object reactSpringWebStrings {
   @js.native
   sealed trait foreignObject
     extends StObject
-       with Primitives_
+       with Primitives
   inline def foreignObject: foreignObject = "foreignObject".asInstanceOf[foreignObject]
   
   @js.native
   sealed trait form
     extends StObject
-       with Primitives_
+       with Primitives
   inline def form: form = "form".asInstanceOf[form]
+  
+  @js.native
+  sealed trait from extends StObject
+  inline def from: from = "from".asInstanceOf[from]
   
   @js.native
   sealed trait g
     extends StObject
-       with Primitives_
+       with Primitives
   inline def g: g = "g".asInstanceOf[g]
   
   @js.native
@@ -3211,37 +3293,37 @@ object reactSpringWebStrings {
   @js.native
   sealed trait h1
     extends StObject
-       with Primitives_
+       with Primitives
   inline def h1: h1 = "h1".asInstanceOf[h1]
   
   @js.native
   sealed trait h2
     extends StObject
-       with Primitives_
+       with Primitives
   inline def h2: h2 = "h2".asInstanceOf[h2]
   
   @js.native
   sealed trait h3
     extends StObject
-       with Primitives_
+       with Primitives
   inline def h3: h3 = "h3".asInstanceOf[h3]
   
   @js.native
   sealed trait h4
     extends StObject
-       with Primitives_
+       with Primitives
   inline def h4: h4 = "h4".asInstanceOf[h4]
   
   @js.native
   sealed trait h5
     extends StObject
-       with Primitives_
+       with Primitives
   inline def h5: h5 = "h5".asInstanceOf[h5]
   
   @js.native
   sealed trait h6
     extends StObject
-       with Primitives_
+       with Primitives
   inline def h6: h6 = "h6".asInstanceOf[h6]
   
   @js.native
@@ -3259,13 +3341,13 @@ object reactSpringWebStrings {
   @js.native
   sealed trait head
     extends StObject
-       with Primitives_
+       with Primitives
   inline def head: head = "head".asInstanceOf[head]
   
   @js.native
   sealed trait header
     extends StObject
-       with Primitives_
+       with Primitives
   inline def header: header = "header".asInstanceOf[header]
   
   @js.native
@@ -3277,19 +3359,19 @@ object reactSpringWebStrings {
   @js.native
   sealed trait hgroup
     extends StObject
-       with Primitives_
+       with Primitives
   inline def hgroup: hgroup = "hgroup".asInstanceOf[hgroup]
   
   @js.native
   sealed trait hr
     extends StObject
-       with Primitives_
+       with Primitives
   inline def hr: hr = "hr".asInstanceOf[hr]
   
   @js.native
   sealed trait html
     extends StObject
-       with Primitives_
+       with Primitives
   inline def html: html = "html".asInstanceOf[html]
   
   @js.native
@@ -3297,6 +3379,12 @@ object reactSpringWebStrings {
     extends StObject
        with StylePropKeys
   inline def hyphenateCharacter: hyphenateCharacter = "hyphenateCharacter".asInstanceOf[hyphenateCharacter]
+  
+  @js.native
+  sealed trait hyphenateLimitChars
+    extends StObject
+       with StylePropKeys
+  inline def hyphenateLimitChars: hyphenateLimitChars = "hyphenateLimitChars".asInstanceOf[hyphenateLimitChars]
   
   @js.native
   sealed trait hyphens
@@ -3307,19 +3395,19 @@ object reactSpringWebStrings {
   @js.native
   sealed trait i
     extends StObject
-       with Primitives_
+       with Primitives
   inline def i: i = "i".asInstanceOf[i]
   
   @js.native
   sealed trait iframe
     extends StObject
-       with Primitives_
+       with Primitives
   inline def iframe: iframe = "iframe".asInstanceOf[iframe]
   
   @js.native
   sealed trait image
     extends StObject
-       with Primitives_
+       with Primitives
   inline def image: image = "image".asInstanceOf[image]
   
   @js.native
@@ -3349,7 +3437,7 @@ object reactSpringWebStrings {
   @js.native
   sealed trait img
     extends StObject
-       with Primitives_
+       with Primitives
   inline def img: img = "img".asInstanceOf[img]
   
   @js.native
@@ -3367,7 +3455,7 @@ object reactSpringWebStrings {
   @js.native
   sealed trait input
     extends StObject
-       with Primitives_
+       with Primitives
   inline def input: input = "input".asInstanceOf[input]
   
   @js.native
@@ -3379,7 +3467,7 @@ object reactSpringWebStrings {
   @js.native
   sealed trait ins
     extends StObject
-       with Primitives_
+       with Primitives
   inline def ins: ins = "ins".asInstanceOf[ins]
   
   @js.native
@@ -3457,19 +3545,19 @@ object reactSpringWebStrings {
   @js.native
   sealed trait kbd
     extends StObject
-       with Primitives_
+       with Primitives
   inline def kbd: kbd = "kbd".asInstanceOf[kbd]
   
   @js.native
   sealed trait keygen
     extends StObject
-       with Primitives_
+       with Primitives
   inline def keygen: keygen = "keygen".asInstanceOf[keygen]
   
   @js.native
   sealed trait label
     extends StObject
-       with Primitives_
+       with Primitives
   inline def label: label = "label".asInstanceOf[label]
   
   @js.native
@@ -3481,7 +3569,7 @@ object reactSpringWebStrings {
   @js.native
   sealed trait legend
     extends StObject
-       with Primitives_
+       with Primitives
   inline def legend: legend = "legend".asInstanceOf[legend]
   
   @js.native
@@ -3493,7 +3581,7 @@ object reactSpringWebStrings {
   @js.native
   sealed trait li
     extends StObject
-       with Primitives_
+       with Primitives
   inline def li: li = "li".asInstanceOf[li]
   
   @js.native
@@ -3505,7 +3593,7 @@ object reactSpringWebStrings {
   @js.native
   sealed trait line
     extends StObject
-       with Primitives_
+       with Primitives
   inline def line: line = "line".asInstanceOf[line]
   
   @js.native
@@ -3535,13 +3623,13 @@ object reactSpringWebStrings {
   @js.native
   sealed trait linearGradient
     extends StObject
-       with Primitives_
+       with Primitives
   inline def linearGradient: linearGradient = "linearGradient".asInstanceOf[linearGradient]
   
   @js.native
   sealed trait link
     extends StObject
-       with Primitives_
+       with Primitives
   inline def link: link = "link".asInstanceOf[link]
   
   @js.native
@@ -3571,13 +3659,13 @@ object reactSpringWebStrings {
   @js.native
   sealed trait main
     extends StObject
-       with Primitives_
+       with Primitives
   inline def main: main = "main".asInstanceOf[main]
   
   @js.native
   sealed trait map
     extends StObject
-       with Primitives_
+       with Primitives
   inline def map: map = "map".asInstanceOf[map]
   
   @js.native
@@ -3647,15 +3735,21 @@ object reactSpringWebStrings {
   inline def marginTop: marginTop = "marginTop".asInstanceOf[marginTop]
   
   @js.native
+  sealed trait marginTrim
+    extends StObject
+       with StylePropKeys
+  inline def marginTrim: marginTrim = "marginTrim".asInstanceOf[marginTrim]
+  
+  @js.native
   sealed trait mark
     extends StObject
-       with Primitives_
+       with Primitives
   inline def mark: mark = "mark".asInstanceOf[mark]
   
   @js.native
   sealed trait marker
     extends StObject
-       with Primitives_
+       with Primitives
        with StylePropKeys
   inline def marker: marker = "marker".asInstanceOf[marker]
   
@@ -3680,7 +3774,7 @@ object reactSpringWebStrings {
   @js.native
   sealed trait mask
     extends StObject
-       with Primitives_
+       with Primitives
        with StylePropKeys
   inline def mask: mask = "mask".asInstanceOf[mask]
   
@@ -3843,31 +3937,31 @@ object reactSpringWebStrings {
   @js.native
   sealed trait menu
     extends StObject
-       with Primitives_
+       with Primitives
   inline def menu: menu = "menu".asInstanceOf[menu]
   
   @js.native
   sealed trait menuitem
     extends StObject
-       with Primitives_
+       with Primitives
   inline def menuitem: menuitem = "menuitem".asInstanceOf[menuitem]
   
   @js.native
   sealed trait meta
     extends StObject
-       with Primitives_
+       with Primitives
   inline def meta: meta = "meta".asInstanceOf[meta]
   
   @js.native
   sealed trait metadata
     extends StObject
-       with Primitives_
+       with Primitives
   inline def metadata: metadata = "metadata".asInstanceOf[metadata]
   
   @js.native
   sealed trait meter
     extends StObject
-       with Primitives_
+       with Primitives
   inline def meter: meter = "meter".asInstanceOf[meter]
   
   @js.native
@@ -3927,7 +4021,7 @@ object reactSpringWebStrings {
   @js.native
   sealed trait mpath
     extends StObject
-       with Primitives_
+       with Primitives
   inline def mpath: mpath = "mpath".asInstanceOf[mpath]
   
   @js.native
@@ -4347,25 +4441,25 @@ object reactSpringWebStrings {
   @js.native
   sealed trait nav
     extends StObject
-       with Primitives_
+       with Primitives
   inline def nav: nav = "nav".asInstanceOf[nav]
   
   @js.native
   sealed trait noindex
     extends StObject
-       with Primitives_
+       with Primitives
   inline def noindex: noindex = "noindex".asInstanceOf[noindex]
   
   @js.native
   sealed trait noscript
     extends StObject
-       with Primitives_
+       with Primitives
   inline def noscript: noscript = "noscript".asInstanceOf[noscript]
   
   @js.native
   sealed trait `object`
     extends StObject
-       with Primitives_
+       with Primitives
   inline def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
@@ -4441,6 +4535,12 @@ object reactSpringWebStrings {
   inline def offsetPath: offsetPath = "offsetPath".asInstanceOf[offsetPath]
   
   @js.native
+  sealed trait offsetPosition
+    extends StObject
+       with StylePropKeys
+  inline def offsetPosition: offsetPosition = "offsetPosition".asInstanceOf[offsetPosition]
+  
+  @js.native
   sealed trait offsetRotate
     extends StObject
        with StylePropKeys
@@ -4455,7 +4555,7 @@ object reactSpringWebStrings {
   @js.native
   sealed trait ol
     extends StObject
-       with Primitives_
+       with Primitives
   inline def ol: ol = "ol".asInstanceOf[ol]
   
   @js.native
@@ -4467,13 +4567,13 @@ object reactSpringWebStrings {
   @js.native
   sealed trait optgroup
     extends StObject
-       with Primitives_
+       with Primitives
   inline def optgroup: optgroup = "optgroup".asInstanceOf[optgroup]
   
   @js.native
   sealed trait option
     extends StObject
-       with Primitives_
+       with Primitives
   inline def option: option = "option".asInstanceOf[option]
   
   @js.native
@@ -4521,7 +4621,7 @@ object reactSpringWebStrings {
   @js.native
   sealed trait output
     extends StObject
-       with Primitives_
+       with Primitives
   inline def output: output = "output".asInstanceOf[output]
   
   @js.native
@@ -4611,7 +4711,7 @@ object reactSpringWebStrings {
   @js.native
   sealed trait p
     extends StObject
-       with Primitives_
+       with Primitives
   inline def p: p = "p".asInstanceOf[p]
   
   @js.native
@@ -4681,6 +4781,12 @@ object reactSpringWebStrings {
   inline def paddingTop: paddingTop = "paddingTop".asInstanceOf[paddingTop]
   
   @js.native
+  sealed trait page
+    extends StObject
+       with StylePropKeys
+  inline def page: page = "page".asInstanceOf[page]
+  
+  @js.native
   sealed trait pageBreakAfter
     extends StObject
        with StylePropKeys
@@ -4707,19 +4813,19 @@ object reactSpringWebStrings {
   @js.native
   sealed trait param
     extends StObject
-       with Primitives_
+       with Primitives
   inline def param: param = "param".asInstanceOf[param]
   
   @js.native
   sealed trait path
     extends StObject
-       with Primitives_
+       with Primitives
   inline def path: path = "path".asInstanceOf[path]
   
   @js.native
   sealed trait pattern
     extends StObject
-       with Primitives_
+       with Primitives
   inline def pattern: pattern = "pattern".asInstanceOf[pattern]
   
   @js.native
@@ -4737,7 +4843,7 @@ object reactSpringWebStrings {
   @js.native
   sealed trait picture
     extends StObject
-       with Primitives_
+       with Primitives
   inline def picture: picture = "picture".asInstanceOf[picture]
   
   @js.native
@@ -4767,13 +4873,13 @@ object reactSpringWebStrings {
   @js.native
   sealed trait polygon
     extends StObject
-       with Primitives_
+       with Primitives
   inline def polygon: polygon = "polygon".asInstanceOf[polygon]
   
   @js.native
   sealed trait polyline
     extends StObject
-       with Primitives_
+       with Primitives
   inline def polyline: polyline = "polyline".asInstanceOf[polyline]
   
   @js.native
@@ -4785,7 +4891,7 @@ object reactSpringWebStrings {
   @js.native
   sealed trait pre
     extends StObject
-       with Primitives_
+       with Primitives
   inline def pre: pre = "pre".asInstanceOf[pre]
   
   @js.native
@@ -4797,13 +4903,13 @@ object reactSpringWebStrings {
   @js.native
   sealed trait progress
     extends StObject
-       with Primitives_
+       with Primitives
   inline def progress: progress = "progress".asInstanceOf[progress]
   
   @js.native
   sealed trait q
     extends StObject
-       with Primitives_
+       with Primitives
   inline def q: q = "q".asInstanceOf[q]
   
   @js.native
@@ -4815,13 +4921,13 @@ object reactSpringWebStrings {
   @js.native
   sealed trait radialGradient
     extends StObject
-       with Primitives_
+       with Primitives
   inline def radialGradient: radialGradient = "radialGradient".asInstanceOf[radialGradient]
   
   @js.native
   sealed trait rect
     extends StObject
-       with Primitives_
+       with Primitives
   inline def rect: rect = "rect".asInstanceOf[rect]
   
   @js.native
@@ -4875,19 +4981,19 @@ object reactSpringWebStrings {
   @js.native
   sealed trait rp
     extends StObject
-       with Primitives_
+       with Primitives
   inline def rp: rp = "rp".asInstanceOf[rp]
   
   @js.native
   sealed trait rt
     extends StObject
-       with Primitives_
+       with Primitives
   inline def rt: rt = "rt".asInstanceOf[rt]
   
   @js.native
   sealed trait ruby
     extends StObject
-       with Primitives_
+       with Primitives
   inline def ruby: ruby = "ruby".asInstanceOf[ruby]
   
   @js.native
@@ -4911,13 +5017,13 @@ object reactSpringWebStrings {
   @js.native
   sealed trait s
     extends StObject
-       with Primitives_
+       with Primitives
   inline def s: s = "s".asInstanceOf[s]
   
   @js.native
   sealed trait samp
     extends StObject
-       with Primitives_
+       with Primitives
   inline def samp: samp = "samp".asInstanceOf[samp]
   
   @js.native
@@ -4953,7 +5059,7 @@ object reactSpringWebStrings {
   @js.native
   sealed trait script
     extends StObject
-       with Primitives_
+       with Primitives
   inline def script: script = "script".asInstanceOf[script]
   
   @js.native
@@ -5179,6 +5285,24 @@ object reactSpringWebStrings {
   inline def scrollSnapTypeY: scrollSnapTypeY = "scrollSnapTypeY".asInstanceOf[scrollSnapTypeY]
   
   @js.native
+  sealed trait scrollTimeline
+    extends StObject
+       with StylePropKeys
+  inline def scrollTimeline: scrollTimeline = "scrollTimeline".asInstanceOf[scrollTimeline]
+  
+  @js.native
+  sealed trait scrollTimelineAxis
+    extends StObject
+       with StylePropKeys
+  inline def scrollTimelineAxis: scrollTimelineAxis = "scrollTimelineAxis".asInstanceOf[scrollTimelineAxis]
+  
+  @js.native
+  sealed trait scrollTimelineName
+    extends StObject
+       with StylePropKeys
+  inline def scrollTimelineName: scrollTimelineName = "scrollTimelineName".asInstanceOf[scrollTimelineName]
+  
+  @js.native
   sealed trait scrollbarColor
     extends StObject
        with StylePropKeys
@@ -5199,13 +5323,13 @@ object reactSpringWebStrings {
   @js.native
   sealed trait section
     extends StObject
-       with Primitives_
+       with Primitives
   inline def section: section = "section".asInstanceOf[section]
   
   @js.native
   sealed trait select
     extends StObject
-       with Primitives_
+       with Primitives
   inline def select: select = "select".asInstanceOf[select]
   
   @js.native
@@ -5253,31 +5377,31 @@ object reactSpringWebStrings {
   @js.native
   sealed trait slot
     extends StObject
-       with Primitives_
+       with Primitives
   inline def slot: slot = "slot".asInstanceOf[slot]
   
   @js.native
   sealed trait small
     extends StObject
-       with Primitives_
+       with Primitives
   inline def small: small = "small".asInstanceOf[small]
   
   @js.native
   sealed trait source
     extends StObject
-       with Primitives_
+       with Primitives
   inline def source: source = "source".asInstanceOf[source]
   
   @js.native
   sealed trait span
     extends StObject
-       with Primitives_
+       with Primitives
   inline def span: span = "span".asInstanceOf[span]
   
   @js.native
   sealed trait stop
     extends StObject
-       with Primitives_
+       with Primitives
   inline def stop: stop = "stop".asInstanceOf[stop]
   
   @js.native
@@ -5343,49 +5467,49 @@ object reactSpringWebStrings {
   @js.native
   sealed trait strong
     extends StObject
-       with Primitives_
+       with Primitives
   inline def strong: strong = "strong".asInstanceOf[strong]
   
   @js.native
   sealed trait style
     extends StObject
-       with Primitives_
+       with Primitives
   inline def style: style = "style".asInstanceOf[style]
   
   @js.native
   sealed trait sub
     extends StObject
-       with Primitives_
+       with Primitives
   inline def sub: sub = "sub".asInstanceOf[sub]
   
   @js.native
   sealed trait summary
     extends StObject
-       with Primitives_
+       with Primitives
   inline def summary: summary = "summary".asInstanceOf[summary]
   
   @js.native
   sealed trait sup
     extends StObject
-       with Primitives_
+       with Primitives
   inline def sup: sup = "sup".asInstanceOf[sup]
   
   @js.native
   sealed trait svg
     extends StObject
-       with Primitives_
+       with Primitives
   inline def svg: svg = "svg".asInstanceOf[svg]
   
   @js.native
   sealed trait switch
     extends StObject
-       with Primitives_
+       with Primitives
   inline def switch: switch = "switch".asInstanceOf[switch]
   
   @js.native
   sealed trait symbol
     extends StObject
-       with Primitives_
+       with Primitives
   inline def symbol: symbol = "symbol".asInstanceOf[symbol]
   
   @js.native
@@ -5397,7 +5521,7 @@ object reactSpringWebStrings {
   @js.native
   sealed trait table
     extends StObject
-       with Primitives_
+       with Primitives
   inline def table: table = "table".asInstanceOf[table]
   
   @js.native
@@ -5409,25 +5533,25 @@ object reactSpringWebStrings {
   @js.native
   sealed trait tbody
     extends StObject
-       with Primitives_
+       with Primitives
   inline def tbody: tbody = "tbody".asInstanceOf[tbody]
   
   @js.native
   sealed trait td
     extends StObject
-       with Primitives_
+       with Primitives
   inline def td: td = "td".asInstanceOf[td]
   
   @js.native
   sealed trait template
     extends StObject
-       with Primitives_
+       with Primitives
   inline def template: template = "template".asInstanceOf[template]
   
   @js.native
   sealed trait text
     extends StObject
-       with Primitives_
+       with Primitives
   inline def text: text = "text".asInstanceOf[text]
   
   @js.native
@@ -5547,7 +5671,7 @@ object reactSpringWebStrings {
   @js.native
   sealed trait textPath
     extends StObject
-       with Primitives_
+       with Primitives
   inline def textPath: textPath = "textPath".asInstanceOf[textPath]
   
   @js.native
@@ -5589,38 +5713,42 @@ object reactSpringWebStrings {
   @js.native
   sealed trait textarea
     extends StObject
-       with Primitives_
+       with Primitives
   inline def textarea: textarea = "textarea".asInstanceOf[textarea]
   
   @js.native
   sealed trait tfoot
     extends StObject
-       with Primitives_
+       with Primitives
   inline def tfoot: tfoot = "tfoot".asInstanceOf[tfoot]
   
   @js.native
   sealed trait th
     extends StObject
-       with Primitives_
+       with Primitives
   inline def th: th = "th".asInstanceOf[th]
   
   @js.native
   sealed trait thead
     extends StObject
-       with Primitives_
+       with Primitives
   inline def thead: thead = "thead".asInstanceOf[thead]
   
   @js.native
   sealed trait time
     extends StObject
-       with Primitives_
+       with Primitives
   inline def time: time = "time".asInstanceOf[time]
   
   @js.native
   sealed trait title
     extends StObject
-       with Primitives_
+       with Primitives
   inline def title: title = "title".asInstanceOf[title]
+  
+  @js.native
+  sealed trait to extends StObject
+  inline def to: to = "to".asInstanceOf[to]
   
   @js.native
   sealed trait top
@@ -5637,13 +5765,13 @@ object reactSpringWebStrings {
   @js.native
   sealed trait tr
     extends StObject
-       with Primitives_
+       with Primitives
   inline def tr: tr = "tr".asInstanceOf[tr]
   
   @js.native
   sealed trait track
     extends StObject
-       with Primitives_
+       with Primitives
   inline def track: track = "track".asInstanceOf[track]
   
   @js.native
@@ -5733,19 +5861,19 @@ object reactSpringWebStrings {
   @js.native
   sealed trait tspan
     extends StObject
-       with Primitives_
+       with Primitives
   inline def tspan: tspan = "tspan".asInstanceOf[tspan]
   
   @js.native
   sealed trait u
     extends StObject
-       with Primitives_
+       with Primitives
   inline def u: u = "u".asInstanceOf[u]
   
   @js.native
   sealed trait ul
     extends StObject
-       with Primitives_
+       with Primitives
   inline def ul: ul = "ul".asInstanceOf[ul]
   
   @js.native
@@ -5757,7 +5885,7 @@ object reactSpringWebStrings {
   @js.native
   sealed trait use
     extends StObject
-       with Primitives_
+       with Primitives
   inline def use: use = "use".asInstanceOf[use]
   
   @js.native
@@ -5769,7 +5897,7 @@ object reactSpringWebStrings {
   @js.native
   sealed trait `var`
     extends StObject
-       with Primitives_
+       with Primitives
   inline def `var`: `var` = "var".asInstanceOf[`var`]
   
   @js.native
@@ -5787,14 +5915,20 @@ object reactSpringWebStrings {
   @js.native
   sealed trait video
     extends StObject
-       with Primitives_
+       with Primitives
   inline def video: video = "video".asInstanceOf[video]
   
   @js.native
   sealed trait view
     extends StObject
-       with Primitives_
+       with Primitives
   inline def view: view = "view".asInstanceOf[view]
+  
+  @js.native
+  sealed trait viewTransitionName
+    extends StObject
+       with StylePropKeys
+  inline def viewTransitionName: viewTransitionName = "viewTransitionName".asInstanceOf[viewTransitionName]
   
   @js.native
   sealed trait visibility
@@ -5805,13 +5939,13 @@ object reactSpringWebStrings {
   @js.native
   sealed trait wbr
     extends StObject
-       with Primitives_
+       with Primitives
   inline def wbr: wbr = "wbr".asInstanceOf[wbr]
   
   @js.native
   sealed trait webview
     extends StObject
-       with Primitives_
+       with Primitives
   inline def webview: webview = "webview".asInstanceOf[webview]
   
   @js.native

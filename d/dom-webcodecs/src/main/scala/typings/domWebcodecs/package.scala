@@ -33,6 +33,7 @@ type EncodedVideoChunkOutputCallback = js.Function2[/* chunk */ EncodedVideoChun
   */
 type ImageBitmapSourceWebCodecs = CanvasImageSourceWebCodecs | Blob | ImageData
 
+// type BitrateMode = "constant" | "variable";
 type ImageBufferSource = js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | ReadableStream[Any]
 
 /**

@@ -1,7 +1,7 @@
 
 # Scala.js typings for parseley
 
-Typings are for version 0.11.0
+Typings are for version 0.12.1
 
 ## Library description:
 CSS selectors parser

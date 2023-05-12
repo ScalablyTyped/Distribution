@@ -47,6 +47,16 @@ trait SoftwarePackage extends StObject {
   var Remediation: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
+    * The Amazon Resource Name (ARN) of the source layer. 
+    */
+  var SourceLayerArn: js.UndefOr[NonEmptyString] = js.undefined
+  
+  /**
+    * The source layer hash of the vulnerable package. 
+    */
+  var SourceLayerHash: js.UndefOr[NonEmptyString] = js.undefined
+  
+  /**
     * The version of the software package.
     */
   var Version: js.UndefOr[NonEmptyString] = js.undefined
@@ -92,6 +102,14 @@ object SoftwarePackage {
     inline def setRemediation(value: NonEmptyString): Self = StObject.set(x, "Remediation", value.asInstanceOf[js.Any])
     
     inline def setRemediationUndefined: Self = StObject.set(x, "Remediation", js.undefined)
+    
+    inline def setSourceLayerArn(value: NonEmptyString): Self = StObject.set(x, "SourceLayerArn", value.asInstanceOf[js.Any])
+    
+    inline def setSourceLayerArnUndefined: Self = StObject.set(x, "SourceLayerArn", js.undefined)
+    
+    inline def setSourceLayerHash(value: NonEmptyString): Self = StObject.set(x, "SourceLayerHash", value.asInstanceOf[js.Any])
+    
+    inline def setSourceLayerHashUndefined: Self = StObject.set(x, "SourceLayerHash", js.undefined)
     
     inline def setVersion(value: NonEmptyString): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     

@@ -48,6 +48,17 @@ object rsa {
     callback: js.Function2[/* err */ js.Error, /* keypair */ typings.nodeForge.mod.pki.rsa.KeyPair, Unit]
   ): typings.nodeForge.mod.pki.rsa.KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
   
+  inline def setPrivateKey(
+    n: BigInteger,
+    e: BigInteger,
+    d: BigInteger,
+    p: BigInteger,
+    q: BigInteger,
+    dP: BigInteger,
+    dQ: BigInteger,
+    qInv: BigInteger
+  ): typings.nodeForge.mod.pki.rsa.PrivateKey = (^.asInstanceOf[js.Dynamic].applyDynamic("setPrivateKey")(n.asInstanceOf[js.Any], e.asInstanceOf[js.Any], d.asInstanceOf[js.Any], p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], dP.asInstanceOf[js.Any], dQ.asInstanceOf[js.Any], qInv.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.PrivateKey]
+  
   inline def setPublicKey(n: BigInteger, e: BigInteger): typings.nodeForge.mod.pki.rsa.PublicKey = (^.asInstanceOf[js.Dynamic].applyDynamic("setPublicKey")(n.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.PublicKey]
   
   /* Rewritten from type alias, can be one of: 

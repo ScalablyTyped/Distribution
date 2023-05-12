@@ -25,15 +25,30 @@ object AlterColumnFamilyQueryBuilder {
   inline def apply[T](
     alter: (Any, String) => AlterColumnFamilyQueryBuilder[T],
     ascii: Any => TypeMatchedValue[T, Any, String, AlterColumnFamilyQueryBuilder[T]],
-    bigint: Any => TypeMatchedValue[T, Any, typings.long.mod.^, AlterColumnFamilyQueryBuilder[T]],
+    bigint: Any => TypeMatchedValue[
+      T, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any, 
+      AlterColumnFamilyQueryBuilder[T]
+    ],
     bindings: () => js.Array[Any],
     blob: Any => TypeMatchedValue[T, Any, Buffer, AlterColumnFamilyQueryBuilder[T]],
     boolean: Any => TypeMatchedValue[T, Any, Boolean, AlterColumnFamilyQueryBuilder[T]],
-    counter: Any => TypeMatchedValue[T, Any, typings.long.mod.^, AlterColumnFamilyQueryBuilder[T]],
+    counter: Any => TypeMatchedValue[
+      T, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any, 
+      AlterColumnFamilyQueryBuilder[T]
+    ],
     cql: () => String,
     date: Any => TypeMatchedValue[T, Any, LocalDate, AlterColumnFamilyQueryBuilder[T]],
     decimal: Any => TypeMatchedValue[T, Any, BigDecimal, AlterColumnFamilyQueryBuilder[T]],
-    double: Any => TypeMatchedValue[T, Any, typings.long.mod.^, AlterColumnFamilyQueryBuilder[T]],
+    double: Any => TypeMatchedValue[
+      T, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any, 
+      AlterColumnFamilyQueryBuilder[T]
+    ],
     drop: /* repeated */ Any => AlterColumnFamilyQueryBuilder[T],
     eachRow: (js.Function2[/* n */ Double, /* row */ Row, Any], js.Function1[/* err */ js.Error, Any]) => Unit,
     exec: ValueCallback[ResultSet] => Unit,

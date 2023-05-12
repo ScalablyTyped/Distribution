@@ -7,42 +7,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateLocationSmbRequest extends StObject {
   
   /**
-    * The Amazon Resource Names (ARNs) of agents to use for a Simple Message Block (SMB) location. 
+    * Specifies the DataSync agent (or agents) which you want to connect to your SMB file server. You specify an agent by using its Amazon Resource Name (ARN).
     */
   var AgentArns: AgentArnList
   
   /**
-    * The name of the Windows domain that the SMB server belongs to.
+    * Specifies the Windows domain name that your SMB file server belongs to.  For more information, see required permissions for SMB locations.
     */
   var Domain: js.UndefOr[SmbDomain] = js.undefined
   
   /**
-    * The mount options used by DataSync to access the SMB server.
+    * Specifies the version of the SMB protocol that DataSync uses to access your SMB file server.
     */
   var MountOptions: js.UndefOr[SmbMountOptions] = js.undefined
   
   /**
-    * The password of the user who can mount the share, has the permissions to access files and folders in the SMB share.
+    * Specifies the password of the user who can mount your SMB file server and has permission to access the files and folders involved in your transfer. For more information, see required permissions for SMB locations.
     */
   var Password: SmbPassword
   
   /**
-    * The name of the SMB server. This value is the IP address or Domain Name Service (DNS) name of the SMB server. An agent that is installed on-premises uses this hostname to mount the SMB server in a network.  This name must either be DNS-compliant or must be an IP version 4 (IPv4) address. 
+    * Specifies the Domain Name Service (DNS) name or IP address of the SMB file server that your DataSync agent will mount.  You can't specify an IP version 6 (IPv6) address. 
     */
   var ServerHostname: typings.awsSdk.clientsDatasyncMod.ServerHostname
   
   /**
-    * The subdirectory in the SMB file system that is used to read data from the SMB source location or write data to the SMB destination. The SMB path should be a path that's exported by the SMB server, or a subdirectory of that path. The path should be such that it can be mounted by other SMB clients in your network.   Subdirectory must be specified with forward slashes. For example, /path/to/folder.  To transfer all the data in the folder you specified, DataSync needs to have permissions to mount the SMB share, as well as to access all the data in that share. To ensure this, either ensure that the user/password specified belongs to the user who can mount the share, and who has the appropriate permissions for all of the files and directories that you want DataSync to access, or use credentials of a member of the Backup Operators group to mount the share. Doing either enables the agent to access the data. For the agent to access directories, you must additionally enable all execute access.
+    * Specifies the name of the share exported by your SMB file server where DataSync will read or write data. You can include a subdirectory in the share path (for example, /path/to/subdirectory). Make sure that other SMB clients in your network can also mount this path. To copy all data in the specified subdirectory, DataSync must be able to mount the SMB share and access all of its data. For more information, see required permissions for SMB locations.
     */
   var Subdirectory: SmbSubdirectory
   
   /**
-    * The key-value pair that represents the tag that you want to add to the location. The value can be an empty string. We recommend using tags to name your resources.
+    * Specifies labels that help you categorize, filter, and search for your Amazon Web Services resources. We recommend creating at least a name tag for your location.
     */
   var Tags: js.UndefOr[InputTagList] = js.undefined
   
   /**
-    * The user who can mount the share, has the permissions to access files and folders in the SMB share. For information about choosing a user name that ensures sufficient permissions to files, folders, and metadata, see the User setting for SMB locations.
+    * Specifies the user name that can mount your SMB file server and has permission to access the files and folders involved in your transfer. For information about choosing a user with the right level of access for your transfer, see required permissions for SMB locations.
     */
   var User: SmbUser
 }

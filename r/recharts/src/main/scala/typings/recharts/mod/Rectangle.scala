@@ -12,7 +12,7 @@ open class Rectangle protected ()
   def this(props: RectangleProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: RectangleProps, context: Any) = this()
 }

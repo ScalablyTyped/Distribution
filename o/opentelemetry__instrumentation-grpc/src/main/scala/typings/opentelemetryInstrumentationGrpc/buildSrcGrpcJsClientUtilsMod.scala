@@ -10,6 +10,7 @@ import typings.opentelemetryApi.buildSrcTraceSpanMod.Span
 import typings.opentelemetryInstrumentationGrpc.anon.OriginalName
 import typings.opentelemetryInstrumentationGrpc.anon.TypeofgrpcJs
 import typings.opentelemetryInstrumentationGrpc.buildSrcGrpcJsTypesMod.GrpcClientFunc
+import typings.opentelemetryInstrumentationGrpc.buildSrcInternalTypesMod.metadataCaptureType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +28,13 @@ object buildSrcGrpcJsClientUtilsMod {
     methods: StringDictionary[OriginalName]
   ): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMethodsToWrap")(client.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  inline def makeGrpcClientRemoteCall(original: GrpcClientFunc, args: js.Array[Any], metadata: Metadata, self: Client): js.Function1[/* span */ Span, EventEmitter] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeGrpcClientRemoteCall")(original.asInstanceOf[js.Any], args.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* span */ Span, EventEmitter]]
+  inline def makeGrpcClientRemoteCall(
+    metadataCapture: metadataCaptureType,
+    original: GrpcClientFunc,
+    args: js.Array[Any],
+    metadata: Metadata,
+    self: Client
+  ): js.Function1[/* span */ Span, EventEmitter] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeGrpcClientRemoteCall")(metadataCapture.asInstanceOf[js.Any], original.asInstanceOf[js.Any], args.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* span */ Span, EventEmitter]]
   
   inline def setSpanContext(metadata: Metadata): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSpanContext")(metadata.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

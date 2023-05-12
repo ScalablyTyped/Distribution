@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@hapi/hapi" : "21.3.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@hapi/hapi" : "21.3.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

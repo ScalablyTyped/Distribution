@@ -17,6 +17,11 @@ trait ComponentUpdateRequest extends StObject {
   var description: js.UndefOr[Description] = js.undefined
   
   /**
+    * The property group updates.
+    */
+  var propertyGroupUpdates: js.UndefOr[ComponentPropertyGroupRequests] = js.undefined
+  
+  /**
     * An object that maps strings to the properties to set in the component type update. Each string in the mapping must be unique to this object.
     */
   var propertyUpdates: js.UndefOr[PropertyRequests] = js.undefined
@@ -43,6 +48,10 @@ object ComponentUpdateRequest {
     inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setPropertyGroupUpdates(value: ComponentPropertyGroupRequests): Self = StObject.set(x, "propertyGroupUpdates", value.asInstanceOf[js.Any])
+    
+    inline def setPropertyGroupUpdatesUndefined: Self = StObject.set(x, "propertyGroupUpdates", js.undefined)
     
     inline def setPropertyUpdates(value: PropertyRequests): Self = StObject.set(x, "propertyUpdates", value.asInstanceOf[js.Any])
     

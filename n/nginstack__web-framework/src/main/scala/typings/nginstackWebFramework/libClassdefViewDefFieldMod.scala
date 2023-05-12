@@ -125,6 +125,8 @@ object libClassdefViewDefFieldMod {
     
     def hasLookupDisplayEvent(): Boolean = js.native
     
+    def hasVisibleThumbnail(): Boolean = js.native
+    
     var height: Double = js.native
     
     /* private */ var inSetValue: Any = js.native

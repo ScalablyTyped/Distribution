@@ -1,7 +1,6 @@
 package typings.ngtoolsWebpack
 
 import typings.ngtoolsWebpack.anon.DirectTemplateLoading
-import typings.ngtoolsWebpack.srcNgccProcessorMod.NgccProcessor
 import typings.ngtoolsWebpack.srcResourceLoaderMod.WebpackResourceLoader
 import typings.std.Map
 import typings.std.Record
@@ -28,9 +27,6 @@ object srcIvyHostMod {
     dependencies: Map[String, Set[String]],
     moduleResolutionCache: ModuleResolutionCache
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("augmentHostWithDependencyCollection")(host.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any], moduleResolutionCache.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def augmentHostWithNgcc(host: CompilerHost, ngcc: NgccProcessor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("augmentHostWithNgcc")(host.asInstanceOf[js.Any], ngcc.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def augmentHostWithNgcc(host: CompilerHost, ngcc: NgccProcessor, moduleResolutionCache: ModuleResolutionCache): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("augmentHostWithNgcc")(host.asInstanceOf[js.Any], ngcc.asInstanceOf[js.Any], moduleResolutionCache.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def augmentHostWithReplacements(host: CompilerHost, replacements: Record[String, String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("augmentHostWithReplacements")(host.asInstanceOf[js.Any], replacements.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def augmentHostWithReplacements(

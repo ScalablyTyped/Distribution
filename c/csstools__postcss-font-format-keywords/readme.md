@@ -1,7 +1,7 @@
 
 # Scala.js typings for csstools__postcss-font-format-keywords
 
-Typings are for version 1.0.1
+Typings are for version 2.0.2
 
 ## Library description:
 Use unquoted format on @font-face CSS definitions.

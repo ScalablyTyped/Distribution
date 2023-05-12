@@ -12,12 +12,12 @@ trait CreateNetworkInsightsPathRequest extends StObject {
   var ClientToken: String
   
   /**
-    * The Amazon Web Services resource that is the destination of the path.
+    * The ID or ARN of the destination. If the resource is in another account, you must specify an ARN.
     */
-  var Destination: NetworkInsightsResourceId
+  var Destination: js.UndefOr[NetworkInsightsResourceId] = js.undefined
   
   /**
-    * The IP address of the Amazon Web Services resource that is the destination of the path.
+    * The IP address of the destination.
     */
   var DestinationIp: js.UndefOr[IpAddress] = js.undefined
   
@@ -32,17 +32,27 @@ trait CreateNetworkInsightsPathRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Scopes the analysis to network paths that match specific filters at the destination. If you specify this parameter, you can't specify the parameter for the destination IP address.
+    */
+  var FilterAtDestination: js.UndefOr[PathRequestFilter] = js.undefined
+  
+  /**
+    * Scopes the analysis to network paths that match specific filters at the source. If you specify this parameter, you can't specify the parameters for the source IP address or the destination port.
+    */
+  var FilterAtSource: js.UndefOr[PathRequestFilter] = js.undefined
+  
+  /**
     * The protocol.
     */
   var Protocol: typings.awsSdk.clientsEc2Mod.Protocol
   
   /**
-    * The Amazon Web Services resource that is the source of the path.
+    * The ID or ARN of the source. If the resource is in another account, you must specify an ARN.
     */
   var Source: NetworkInsightsResourceId
   
   /**
-    * The IP address of the Amazon Web Services resource that is the source of the path.
+    * The IP address of the source.
     */
   var SourceIp: js.UndefOr[IpAddress] = js.undefined
   
@@ -53,13 +63,8 @@ trait CreateNetworkInsightsPathRequest extends StObject {
 }
 object CreateNetworkInsightsPathRequest {
   
-  inline def apply(
-    ClientToken: String,
-    Destination: NetworkInsightsResourceId,
-    Protocol: Protocol,
-    Source: NetworkInsightsResourceId
-  ): CreateNetworkInsightsPathRequest = {
-    val __obj = js.Dynamic.literal(ClientToken = ClientToken.asInstanceOf[js.Any], Destination = Destination.asInstanceOf[js.Any], Protocol = Protocol.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
+  inline def apply(ClientToken: String, Protocol: Protocol, Source: NetworkInsightsResourceId): CreateNetworkInsightsPathRequest = {
+    val __obj = js.Dynamic.literal(ClientToken = ClientToken.asInstanceOf[js.Any], Protocol = Protocol.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateNetworkInsightsPathRequest]
   }
   
@@ -78,9 +83,19 @@ object CreateNetworkInsightsPathRequest {
     
     inline def setDestinationPortUndefined: Self = StObject.set(x, "DestinationPort", js.undefined)
     
+    inline def setDestinationUndefined: Self = StObject.set(x, "Destination", js.undefined)
+    
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    
+    inline def setFilterAtDestination(value: PathRequestFilter): Self = StObject.set(x, "FilterAtDestination", value.asInstanceOf[js.Any])
+    
+    inline def setFilterAtDestinationUndefined: Self = StObject.set(x, "FilterAtDestination", js.undefined)
+    
+    inline def setFilterAtSource(value: PathRequestFilter): Self = StObject.set(x, "FilterAtSource", value.asInstanceOf[js.Any])
+    
+    inline def setFilterAtSourceUndefined: Self = StObject.set(x, "FilterAtSource", js.undefined)
     
     inline def setProtocol(value: Protocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     

@@ -20,6 +20,10 @@ trait ModuleInfo
   
   var dynamicallyImportedIds: js.Array[String]
   
+  var exportedBindings: (Record[String, js.Array[String]]) | Null
+  
+  var exports: js.Array[String] | Null
+  
   var hasDefaultExport: Boolean | Null
   
   /** @deprecated Use `moduleSideEffects` instead */
@@ -63,7 +67,7 @@ object ModuleInfo {
     moduleSideEffects: Boolean | `no-treeshake`,
     syntheticNamedExports: Boolean | String
   ): ModuleInfo = {
-    val __obj = js.Dynamic.literal(assertions = assertions.asInstanceOf[js.Any], dynamicImporters = dynamicImporters.asInstanceOf[js.Any], dynamicallyImportedIdResolutions = dynamicallyImportedIdResolutions.asInstanceOf[js.Any], dynamicallyImportedIds = dynamicallyImportedIds.asInstanceOf[js.Any], hasModuleSideEffects = hasModuleSideEffects.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], implicitlyLoadedAfterOneOf = implicitlyLoadedAfterOneOf.asInstanceOf[js.Any], implicitlyLoadedBefore = implicitlyLoadedBefore.asInstanceOf[js.Any], importedIdResolutions = importedIdResolutions.asInstanceOf[js.Any], importedIds = importedIds.asInstanceOf[js.Any], importers = importers.asInstanceOf[js.Any], isEntry = isEntry.asInstanceOf[js.Any], isExternal = isExternal.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], moduleSideEffects = moduleSideEffects.asInstanceOf[js.Any], syntheticNamedExports = syntheticNamedExports.asInstanceOf[js.Any], ast = null, code = null, hasDefaultExport = null, isIncluded = null)
+    val __obj = js.Dynamic.literal(assertions = assertions.asInstanceOf[js.Any], dynamicImporters = dynamicImporters.asInstanceOf[js.Any], dynamicallyImportedIdResolutions = dynamicallyImportedIdResolutions.asInstanceOf[js.Any], dynamicallyImportedIds = dynamicallyImportedIds.asInstanceOf[js.Any], hasModuleSideEffects = hasModuleSideEffects.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], implicitlyLoadedAfterOneOf = implicitlyLoadedAfterOneOf.asInstanceOf[js.Any], implicitlyLoadedBefore = implicitlyLoadedBefore.asInstanceOf[js.Any], importedIdResolutions = importedIdResolutions.asInstanceOf[js.Any], importedIds = importedIds.asInstanceOf[js.Any], importers = importers.asInstanceOf[js.Any], isEntry = isEntry.asInstanceOf[js.Any], isExternal = isExternal.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], moduleSideEffects = moduleSideEffects.asInstanceOf[js.Any], syntheticNamedExports = syntheticNamedExports.asInstanceOf[js.Any], ast = null, code = null, exportedBindings = null, exports = null, hasDefaultExport = null, isIncluded = null)
     __obj.asInstanceOf[ModuleInfo]
   }
   
@@ -89,6 +93,16 @@ object ModuleInfo {
     inline def setDynamicallyImportedIds(value: js.Array[String]): Self = StObject.set(x, "dynamicallyImportedIds", value.asInstanceOf[js.Any])
     
     inline def setDynamicallyImportedIdsVarargs(value: String*): Self = StObject.set(x, "dynamicallyImportedIds", js.Array(value*))
+    
+    inline def setExportedBindings(value: Record[String, js.Array[String]]): Self = StObject.set(x, "exportedBindings", value.asInstanceOf[js.Any])
+    
+    inline def setExportedBindingsNull: Self = StObject.set(x, "exportedBindings", null)
+    
+    inline def setExports(value: js.Array[String]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
+    
+    inline def setExportsNull: Self = StObject.set(x, "exports", null)
+    
+    inline def setExportsVarargs(value: String*): Self = StObject.set(x, "exports", js.Array(value*))
     
     inline def setHasDefaultExport(value: Boolean): Self = StObject.set(x, "hasDefaultExport", value.asInstanceOf[js.Any])
     

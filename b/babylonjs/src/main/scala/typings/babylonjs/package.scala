@@ -3,9 +3,7 @@ package typings.babylonjs
 import typings.babylonjs.babylonjsStrings.`write-only`
 import typings.babylonjs.babylonjsStrings.auto
 import typings.babylonjs.babylonjsStrings.cpu
-import typings.babylonjs.babylonjsStrings.destroyed
 import typings.babylonjs.babylonjsStrings.redraw
-import typings.babylonjs.babylonjsStrings.srgb
 import typings.std.DOMHighResTimeStamp
 import typings.std.Event
 import typings.std.EventTarget
@@ -35,9 +33,10 @@ type GPUComputePassTimestampWrites = js.Array[GPUComputePassTimestampWrite]
 /* unsigned long */
 type GPUDepthBias = Double
 
-type GPUDeviceLostReason = destroyed
-
 type GPUExtent3D = (js.Tuple3[GPUIntegerCoordinate, GPUIntegerCoordinate, GPUIntegerCoordinate]) | GPUExtent3DDict
+
+/* long */
+type GPUFlagsConstant = Double
 
 /* unsigned long */
 type GPUIndex32 = Double
@@ -52,8 +51,6 @@ type GPUOrigin2D = (js.Tuple2[GPUIntegerCoordinate, GPUIntegerCoordinate]) | GPU
 type GPUOrigin3D = (js.Tuple3[GPUIntegerCoordinate, GPUIntegerCoordinate, GPUIntegerCoordinate]) | GPUOrigin3DDict
 
 type GPUPipelineConstantValue = Double
-
-type GPUPredefinedColorSpace = srgb
 
 type GPUQueueDescriptor = GPUObjectDescriptorBase
 

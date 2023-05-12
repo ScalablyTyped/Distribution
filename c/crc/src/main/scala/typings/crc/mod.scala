@@ -54,6 +54,11 @@ object mod {
     def crc32: CRCModule = js.native
     inline def crc32_=(x: CRCModule): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("crc32")(x.asInstanceOf[js.Any])
     
+    @JSImport("crc", "default.crc32mpeg2")
+    @js.native
+    def crc32mpeg2: CRCModule = js.native
+    inline def crc32mpeg2_=(x: CRCModule): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("crc32mpeg2")(x.asInstanceOf[js.Any])
+    
     @JSImport("crc", "default.crc8")
     @js.native
     def crc8: CRCModule = js.native
@@ -64,6 +69,11 @@ object mod {
     inline def crc81wire_=(x: CRCModule): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("crc81wire")(x.asInstanceOf[js.Any])
     
     inline def crc8_=(x: CRCModule): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("crc8")(x.asInstanceOf[js.Any])
+    
+    @JSImport("crc", "default.crc8dvbs2")
+    @js.native
+    def crc8dvbs2: CRCModule = js.native
+    inline def crc8dvbs2_=(x: CRCModule): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("crc8dvbs2")(x.asInstanceOf[js.Any])
     
     @JSImport("crc", "default.crcjam")
     @js.native
@@ -103,6 +113,10 @@ object mod {
   @js.native
   val crc32: CRCModule = js.native
   
+  @JSImport("crc", "crc32mpeg2")
+  @js.native
+  val crc32mpeg2: CRCModule = js.native
+  
   @JSImport("crc", "crc8")
   @js.native
   val crc8: CRCModule = js.native
@@ -110,6 +124,10 @@ object mod {
   @JSImport("crc", "crc81wire")
   @js.native
   val crc81wire: CRCModule = js.native
+  
+  @JSImport("crc", "crc8dvbs2")
+  @js.native
+  val crc8dvbs2: CRCModule = js.native
   
   @JSImport("crc", "crcjam")
   @js.native

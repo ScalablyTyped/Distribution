@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StreamingSessionStream extends StObject {
   
   /**
-    * The Unix epoch timestamp in seconds for when the resource was created.
+    * The ISO timestamp in seconds for when the resource was created.
     */
   var createdAt: js.UndefOr[js.Date] = js.undefined
   
@@ -17,7 +17,7 @@ trait StreamingSessionStream extends StObject {
   var createdBy: js.UndefOr[String] = js.undefined
   
   /**
-    * The Unix epoch timestamp in seconds for when the resource expires.
+    * The ISO timestamp in seconds for when the resource expires.
     */
   var expiresAt: js.UndefOr[js.Date] = js.undefined
   

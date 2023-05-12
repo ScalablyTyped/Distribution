@@ -19,7 +19,8 @@ open class Picker protected ()
   /**
     * Create a new Picker instance.
     *
-    * @param {AppBase} app - The application managing this picker instance.
+    * @param {import('../app-base.js').AppBase} app - The application managing this picker
+    * instance.
     * @param {number} width - The width of the pick buffer in pixels.
     * @param {number} height - The height of the pick buffer in pixels.
     */

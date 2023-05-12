@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@wordpress/data-controls" : "3.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@wordpress/data-controls" : "3.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PostLaunchActionsStatus extends StObject {
   
   /**
-    * Server participating in Job.
+    * List of Post Launch Action status.
     */
   var postLaunchActionsLaunchStatusList: js.UndefOr[PostLaunchActionsLaunchStatusList] = js.undefined
   
   /**
-    * Server participating in Job.
+    * Time where the AWS Systems Manager was detected as running on the Test or Cutover instance.
     */
   var ssmAgentDiscoveryDatetime: js.UndefOr[ISO8601DatetimeString] = js.undefined
 }

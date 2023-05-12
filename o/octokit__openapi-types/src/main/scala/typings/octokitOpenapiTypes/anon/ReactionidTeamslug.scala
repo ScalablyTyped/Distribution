@@ -6,17 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ReactionidTeamslug extends StObject {
   
-  /** The number that identifies the discussion. */
   var discussion_number: Double
   
-  /** The organization name. The name is not case sensitive. */
   @JSName("org")
   var org_ : String
   
-  /** The unique identifier of the reaction. */
   var reaction_id: Double
   
-  /** The slug of the team name. */
   var team_slug: String
 }
 object ReactionidTeamslug {

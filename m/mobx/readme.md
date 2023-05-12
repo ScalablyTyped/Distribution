@@ -1,7 +1,7 @@
 
 # Scala.js typings for mobx
 
-Typings are for version 6.7.0
+Typings are for version 6.9.0
 
 ## Library description:
 Simple, scalable state management.

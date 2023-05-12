@@ -9,6 +9,9 @@ trait LangAccessibilitySeriesOptions extends StObject {
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) User supplied description text.
     * This is added in the point comment description by default if present.
+    *
+    * `{description}` refers to the value given in
+    * point.accessibility.description.
     */
   var description: js.UndefOr[String] = js.undefined
   

@@ -16,14 +16,14 @@ object sapUiModelOdataTypeInt32Mod {
     */
   open class default () extends Int32 {
     def this(/**
-      * format options as defined in {@link sap.ui.core.format.NumberFormat}. In contrast to NumberFormat `groupingEnabled`
-      * defaults to `true`.
+      * Format options as defined in {@link sap.ui.core.format.NumberFormat.getIntegerInstance}. In contrast
+      * to NumberFormat `groupingEnabled` defaults to `true`.
       */
     oFormatOptions: js.Object) = this()
     def this(
       /**
-      * format options as defined in {@link sap.ui.core.format.NumberFormat}. In contrast to NumberFormat `groupingEnabled`
-      * defaults to `true`.
+      * Format options as defined in {@link sap.ui.core.format.NumberFormat.getIntegerInstance}. In contrast
+      * to NumberFormat `groupingEnabled` defaults to `true`.
       */
     oFormatOptions: js.Object,
       /**
@@ -34,8 +34,8 @@ object sapUiModelOdataTypeInt32Mod {
     ) = this()
     def this(
       /**
-      * format options as defined in {@link sap.ui.core.format.NumberFormat}. In contrast to NumberFormat `groupingEnabled`
-      * defaults to `true`.
+      * Format options as defined in {@link sap.ui.core.format.NumberFormat.getIntegerInstance}. In contrast
+      * to NumberFormat `groupingEnabled` defaults to `true`.
       */
     oFormatOptions: Unit,
       /**
@@ -118,6 +118,8 @@ object sapUiModelOdataTypeInt32Mod {
     extends typings.openui5.sapUiModelOdataTypeIntMod.default {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns the type's supported range as object with properties `minimum` and `maximum`.
       *
       * @returns the range

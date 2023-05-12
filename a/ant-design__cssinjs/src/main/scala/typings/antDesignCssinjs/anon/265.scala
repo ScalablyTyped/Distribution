@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MaxWidth
+import typings.csstype.mod.Property.TransformBox
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `265` extends StObject {
   
   var value: js.UndefOr[
-    (MaxWidth[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (MaxWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[MaxWidth[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[MaxWidth[Double | String]]])
+    TransformBox | (js.Array[
+      (Extract[js.UndefOr[TransformBox | js.Array[NonNullable[js.UndefOr[TransformBox]]]], String]) | NonNullable[js.UndefOr[TransformBox]]
     ])
   ] = js.native
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/vega5-extension" : "3.5.0"
+      "@jupyterlab/vega5-extension" : "3.6.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/vega5-extension" : "3.5.0"
+      "@jupyterlab/vega5-extension" : "3.6.3"
     }
   ],
   "compile-devDependencies" : [

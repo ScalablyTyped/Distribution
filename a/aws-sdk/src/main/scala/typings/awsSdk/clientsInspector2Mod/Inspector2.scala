@@ -8,16 +8,16 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped 'EC2' | 'ECR' | string */ @js.native
+- Dropped 'EC2' | 'ECR' | 'LAMBDA' | string */ @js.native
 trait Inspector2 extends StObject {
   
   /**
-    * Associates an Amazon Web Services account with an Amazon Inspector delegated administrator.
+    * Associates an Amazon Web Services account with an Amazon Inspector delegated administrator. An HTTP 200 response indicates the association was successfully started, but doesn’t indicate whether it was completed. You can check if the association completed by using ListMembers for multiple accounts or GetMembers for a single account.
     */
   def associateMember(): Request[AssociateMemberResponse, AWSError] = js.native
   def associateMember(callback: js.Function2[/* err */ AWSError, /* data */ AssociateMemberResponse, Unit]): Request[AssociateMemberResponse, AWSError] = js.native
   /**
-    * Associates an Amazon Web Services account with an Amazon Inspector delegated administrator.
+    * Associates an Amazon Web Services account with an Amazon Inspector delegated administrator. An HTTP 200 response indicates the association was successfully started, but doesn’t indicate whether it was completed. You can check if the association completed by using ListMembers for multiple accounts or GetMembers for a single account.
     */
   def associateMember(params: AssociateMemberRequest): Request[AssociateMemberResponse, AWSError] = js.native
   def associateMember(
@@ -54,6 +54,46 @@ trait Inspector2 extends StObject {
   ): Request[BatchGetFreeTrialInfoResponse, AWSError] = js.native
   
   /**
+    * Retrieves Amazon Inspector deep inspection activation status of multiple member accounts within your organization. You must be the delegated administrator of an organization in Amazon Inspector to use this API.
+    */
+  def batchGetMemberEc2DeepInspectionStatus(): Request[BatchGetMemberEc2DeepInspectionStatusResponse, AWSError] = js.native
+  def batchGetMemberEc2DeepInspectionStatus(
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchGetMemberEc2DeepInspectionStatusResponse, Unit]
+  ): Request[BatchGetMemberEc2DeepInspectionStatusResponse, AWSError] = js.native
+  /**
+    * Retrieves Amazon Inspector deep inspection activation status of multiple member accounts within your organization. You must be the delegated administrator of an organization in Amazon Inspector to use this API.
+    */
+  def batchGetMemberEc2DeepInspectionStatus(params: BatchGetMemberEc2DeepInspectionStatusRequest): Request[BatchGetMemberEc2DeepInspectionStatusResponse, AWSError] = js.native
+  def batchGetMemberEc2DeepInspectionStatus(
+    params: BatchGetMemberEc2DeepInspectionStatusRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchGetMemberEc2DeepInspectionStatusResponse, Unit]
+  ): Request[BatchGetMemberEc2DeepInspectionStatusResponse, AWSError] = js.native
+  
+  /**
+    * Activates or deactivates Amazon Inspector deep inspection for the provided member accounts in your organization. You must be the delegated administrator of an organization in Amazon Inspector to use this API.
+    */
+  def batchUpdateMemberEc2DeepInspectionStatus(): Request[BatchUpdateMemberEc2DeepInspectionStatusResponse, AWSError] = js.native
+  def batchUpdateMemberEc2DeepInspectionStatus(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ BatchUpdateMemberEc2DeepInspectionStatusResponse, 
+      Unit
+    ]
+  ): Request[BatchUpdateMemberEc2DeepInspectionStatusResponse, AWSError] = js.native
+  /**
+    * Activates or deactivates Amazon Inspector deep inspection for the provided member accounts in your organization. You must be the delegated administrator of an organization in Amazon Inspector to use this API.
+    */
+  def batchUpdateMemberEc2DeepInspectionStatus(params: BatchUpdateMemberEc2DeepInspectionStatusRequest): Request[BatchUpdateMemberEc2DeepInspectionStatusResponse, AWSError] = js.native
+  def batchUpdateMemberEc2DeepInspectionStatus(
+    params: BatchUpdateMemberEc2DeepInspectionStatusRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ BatchUpdateMemberEc2DeepInspectionStatusResponse, 
+      Unit
+    ]
+  ): Request[BatchUpdateMemberEc2DeepInspectionStatusResponse, AWSError] = js.native
+  
+  /**
     * Cancels the given findings report.
     */
   def cancelFindingsReport(): Request[CancelFindingsReportResponse, AWSError] = js.native
@@ -84,12 +124,12 @@ trait Inspector2 extends StObject {
   ): Request[CreateFilterResponse, AWSError] = js.native
   
   /**
-    * Creates a finding report.
+    * Creates a finding report. By default only ACTIVE findings are returned in the report. To see SUPRESSED or CLOSED findings you must specify a value for the findingStatus filter criteria. 
     */
   def createFindingsReport(): Request[CreateFindingsReportResponse, AWSError] = js.native
   def createFindingsReport(callback: js.Function2[/* err */ AWSError, /* data */ CreateFindingsReportResponse, Unit]): Request[CreateFindingsReportResponse, AWSError] = js.native
   /**
-    * Creates a finding report.
+    * Creates a finding report. By default only ACTIVE findings are returned in the report. To see SUPRESSED or CLOSED findings you must specify a value for the findingStatus filter criteria. 
     */
   def createFindingsReport(params: CreateFindingsReportRequest): Request[CreateFindingsReportResponse, AWSError] = js.native
   def createFindingsReport(
@@ -112,14 +152,14 @@ trait Inspector2 extends StObject {
   ): Request[DeleteFilterResponse, AWSError] = js.native
   
   /**
-    * Describe Amazon Inspector configuration settings for an Amazon Web Services organization
+    * Describe Amazon Inspector configuration settings for an Amazon Web Services organization.
     */
   def describeOrganizationConfiguration(): Request[DescribeOrganizationConfigurationResponse, AWSError] = js.native
   def describeOrganizationConfiguration(
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeOrganizationConfigurationResponse, Unit]
   ): Request[DescribeOrganizationConfigurationResponse, AWSError] = js.native
   /**
-    * Describe Amazon Inspector configuration settings for an Amazon Web Services organization
+    * Describe Amazon Inspector configuration settings for an Amazon Web Services organization.
     */
   def describeOrganizationConfiguration(params: DescribeOrganizationConfigurationRequest): Request[DescribeOrganizationConfigurationResponse, AWSError] = js.native
   def describeOrganizationConfiguration(
@@ -221,6 +261,22 @@ trait Inspector2 extends StObject {
     params: GetDelegatedAdminAccountRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDelegatedAdminAccountResponse, Unit]
   ): Request[GetDelegatedAdminAccountResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves the activation status of Amazon Inspector deep inspection and custom paths associated with your account. 
+    */
+  def getEc2DeepInspectionConfiguration(): Request[GetEc2DeepInspectionConfigurationResponse, AWSError] = js.native
+  def getEc2DeepInspectionConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetEc2DeepInspectionConfigurationResponse, Unit]
+  ): Request[GetEc2DeepInspectionConfigurationResponse, AWSError] = js.native
+  /**
+    * Retrieves the activation status of Amazon Inspector deep inspection and custom paths associated with your account. 
+    */
+  def getEc2DeepInspectionConfiguration(params: GetEc2DeepInspectionConfigurationRequest): Request[GetEc2DeepInspectionConfigurationResponse, AWSError] = js.native
+  def getEc2DeepInspectionConfiguration(
+    params: GetEc2DeepInspectionConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetEc2DeepInspectionConfigurationResponse, Unit]
+  ): Request[GetEc2DeepInspectionConfigurationResponse, AWSError] = js.native
   
   /**
     * Gets the status of a findings report.
@@ -391,6 +447,20 @@ trait Inspector2 extends StObject {
   ): Request[ListUsageTotalsResponse, AWSError] = js.native
   
   /**
+    * Lists Amazon Inspector coverage details for a specific vulnerability.
+    */
+  def searchVulnerabilities(): Request[SearchVulnerabilitiesResponse, AWSError] = js.native
+  def searchVulnerabilities(callback: js.Function2[/* err */ AWSError, /* data */ SearchVulnerabilitiesResponse, Unit]): Request[SearchVulnerabilitiesResponse, AWSError] = js.native
+  /**
+    * Lists Amazon Inspector coverage details for a specific vulnerability.
+    */
+  def searchVulnerabilities(params: SearchVulnerabilitiesRequest): Request[SearchVulnerabilitiesResponse, AWSError] = js.native
+  def searchVulnerabilities(
+    params: SearchVulnerabilitiesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ SearchVulnerabilitiesResponse, Unit]
+  ): Request[SearchVulnerabilitiesResponse, AWSError] = js.native
+  
+  /**
     * Adds tags to a resource.
     */
   def tagResource(): Request[TagResourceResponse, AWSError] = js.native
@@ -433,6 +503,22 @@ trait Inspector2 extends StObject {
   ): Request[UpdateConfigurationResponse, AWSError] = js.native
   
   /**
+    * Activates, deactivates Amazon Inspector deep inspection, or updates custom paths for your account. 
+    */
+  def updateEc2DeepInspectionConfiguration(): Request[UpdateEc2DeepInspectionConfigurationResponse, AWSError] = js.native
+  def updateEc2DeepInspectionConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateEc2DeepInspectionConfigurationResponse, Unit]
+  ): Request[UpdateEc2DeepInspectionConfigurationResponse, AWSError] = js.native
+  /**
+    * Activates, deactivates Amazon Inspector deep inspection, or updates custom paths for your account. 
+    */
+  def updateEc2DeepInspectionConfiguration(params: UpdateEc2DeepInspectionConfigurationRequest): Request[UpdateEc2DeepInspectionConfigurationResponse, AWSError] = js.native
+  def updateEc2DeepInspectionConfiguration(
+    params: UpdateEc2DeepInspectionConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateEc2DeepInspectionConfigurationResponse, Unit]
+  ): Request[UpdateEc2DeepInspectionConfigurationResponse, AWSError] = js.native
+  
+  /**
     * Specifies the action that is to be applied to the findings that match the filter.
     */
   def updateFilter(): Request[UpdateFilterResponse, AWSError] = js.native
@@ -445,6 +531,22 @@ trait Inspector2 extends StObject {
     params: UpdateFilterRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateFilterResponse, Unit]
   ): Request[UpdateFilterResponse, AWSError] = js.native
+  
+  /**
+    * Updates the Amazon Inspector deep inspection custom paths for your organization. You must be an Amazon Inspector delegated administrator to use this API.
+    */
+  def updateOrgEc2DeepInspectionConfiguration(): Request[UpdateOrgEc2DeepInspectionConfigurationResponse, AWSError] = js.native
+  def updateOrgEc2DeepInspectionConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateOrgEc2DeepInspectionConfigurationResponse, Unit]
+  ): Request[UpdateOrgEc2DeepInspectionConfigurationResponse, AWSError] = js.native
+  /**
+    * Updates the Amazon Inspector deep inspection custom paths for your organization. You must be an Amazon Inspector delegated administrator to use this API.
+    */
+  def updateOrgEc2DeepInspectionConfiguration(params: UpdateOrgEc2DeepInspectionConfigurationRequest): Request[UpdateOrgEc2DeepInspectionConfigurationResponse, AWSError] = js.native
+  def updateOrgEc2DeepInspectionConfiguration(
+    params: UpdateOrgEc2DeepInspectionConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateOrgEc2DeepInspectionConfigurationResponse, Unit]
+  ): Request[UpdateOrgEc2DeepInspectionConfigurationResponse, AWSError] = js.native
   
   /**
     * Updates the configurations for your Amazon Inspector organization.

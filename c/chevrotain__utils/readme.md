@@ -1,7 +1,7 @@
 
 # Scala.js typings for chevrotain__utils
 
-Typings are for version 10.3.0
+Typings are for version 10.5.0
 
 ## Library description:
 common utilities

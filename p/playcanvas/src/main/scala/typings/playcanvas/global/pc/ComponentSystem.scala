@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../app-base.js').AppBase} AppBase */
-/** @typedef {import('./component.js').Component} Component */
-/** @typedef {import('../entity.js').Entity} Entity */
 /**
   * Component Systems contain the logic and functionality to update all Components of a particular
   * type.
@@ -20,7 +17,7 @@ open class ComponentSystem protected ()
   /**
     * Create a new ComponentSystem instance.
     *
-    * @param {AppBase} app - The application managing this system.
+    * @param {import('../app-base.js').AppBase} app - The application managing this system.
     */
   def this(app: typings.playcanvas.mod.AppBase) = this()
 }

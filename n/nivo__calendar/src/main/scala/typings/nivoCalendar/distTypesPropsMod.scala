@@ -16,6 +16,7 @@ import typings.nivoCalendar.nivoCalendarStrings.before
 import typings.nivoCalendar.nivoCalendarStrings.center
 import typings.nivoCalendar.nivoCalendarStrings.horizontal
 import typings.nivoCalendar.nivoCalendarStrings.img
+import typings.nivoCalendar.nivoCalendarStrings.sunday
 import typings.react.mod.MemoExoticComponent
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
@@ -251,6 +252,10 @@ object distTypesPropsMod {
     @JSImport("@nivo/calendar/dist/types/props", "timeRangeDefaultProps.emptyColor")
     @js.native
     val emptyColor: Numbersignfff = js.native
+    
+    @JSImport("@nivo/calendar/dist/types/props", "timeRangeDefaultProps.firstWeekday")
+    @js.native
+    val firstWeekday: sunday = js.native
     
     @JSImport("@nivo/calendar/dist/types/props", "timeRangeDefaultProps.isInteractive")
     @js.native

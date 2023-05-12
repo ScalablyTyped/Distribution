@@ -17,7 +17,7 @@ trait ListConformancePackComplianceScoresRequest extends StObject {
   var Limit: js.UndefOr[PageSizeLimit] = js.undefined
   
   /**
-    * The nextToken string in a prior request that you can use to get the paginated response for next set of conformance pack compliance scores.
+    * The nextToken string in a prior request that you can use to get the paginated response for the next set of conformance pack compliance scores.
     */
   var NextToken: js.UndefOr[typings.awsSdk.clientsConfigserviceMod.NextToken] = js.undefined
   

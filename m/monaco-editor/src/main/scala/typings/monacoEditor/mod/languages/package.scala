@@ -14,6 +14,8 @@ inline def getLanguages(): js.Array[ILanguageExtensionPoint] = ^.asInstanceOf[js
 
 inline def onLanguage(languageId: String, callback: js.Function0[Unit]): IDisposable = (^.asInstanceOf[js.Dynamic].applyDynamic("onLanguage")(languageId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IDisposable]
 
+inline def onLanguageEncountered(languageId: String, callback: js.Function0[Unit]): IDisposable = (^.asInstanceOf[js.Dynamic].applyDynamic("onLanguageEncountered")(languageId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IDisposable]
+
 inline def register(language: ILanguageExtensionPoint): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(language.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
 inline def registerCodeActionProvider(languageSelector: LanguageSelector, provider: CodeActionProvider): IDisposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCodeActionProvider")(languageSelector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[IDisposable]
@@ -92,7 +94,7 @@ type CharacterPair = js.Tuple2[String, String]
 
 type Definition = Location | (js.Array[Location | LocationLink])
 
-type IMonarchLanguageAction = IShortMonarchLanguageAction | IExpandedMonarchLanguageAction | (js.Array[IExpandedMonarchLanguageAction | IShortMonarchLanguageAction])
+type IMonarchLanguageAction = IShortMonarchLanguageAction | IExpandedMonarchLanguageAction | (js.Array[IShortMonarchLanguageAction | IExpandedMonarchLanguageAction])
 
 type IMonarchLanguageRule = IShortMonarchLanguageRule1 | IShortMonarchLanguageRule2 | IExpandedMonarchLanguageRule
 

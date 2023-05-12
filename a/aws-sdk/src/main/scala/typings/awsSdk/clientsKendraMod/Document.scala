@@ -37,7 +37,7 @@ trait Document extends StObject {
   var HierarchicalAccessControlList: js.UndefOr[HierarchicalPrincipalList] = js.undefined
   
   /**
-    * A unique identifier of the document in the index. Note, each document ID must be unique per index. You cannot create a data source to index your documents with their unique IDs and then use the BatchPutDocument API to index the same documents, or vice versa. You can delete a data source and then use the BatchPutDocument API to index the same documents, or vice versa.
+    * A identifier of the document in the index. Note, each document ID must be unique per index. You cannot create a data source to index your documents with their unique IDs and then use the BatchPutDocument API to index the same documents, or vice versa. You can delete a data source and then use the BatchPutDocument API to index the same documents, or vice versa.
     */
   var Id: DocumentId
   

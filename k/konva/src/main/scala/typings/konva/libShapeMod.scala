@@ -405,6 +405,16 @@ object libShapeMod {
     @JSName("strokeLinearGradientColorStops")
     var strokeLinearGradientColorStops_Original: GetSet[js.Array[Double | String], this.type] = js.native
     
+    def strokeLinearGradientEndPoint(): Vector2d = js.native
+    def strokeLinearGradientEndPoint(v: Vector2d): this.type = js.native
+    @JSName("strokeLinearGradientEndPoint")
+    var strokeLinearGradientEndPoint_Original: GetSet[Vector2d, this.type] = js.native
+    
+    def strokeLinearGradientStartPoint(): Vector2d = js.native
+    def strokeLinearGradientStartPoint(v: Vector2d): this.type = js.native
+    @JSName("strokeLinearGradientStartPoint")
+    var strokeLinearGradientStartPoint_Original: GetSet[Vector2d, this.type] = js.native
+    
     def strokeScaleEnabled(): Boolean = js.native
     def strokeScaleEnabled(v: Boolean): this.type = js.native
     @JSName("strokeScaleEnabled")

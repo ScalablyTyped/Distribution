@@ -12,6 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("@storybook/client-logger", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def deprecate(message: Any, rest: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deprecate")(scala.List(message.asInstanceOf[js.Any]).`++`(rest.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  
   object logger {
     
     @JSImport("@storybook/client-logger", "logger")
@@ -56,20 +62,20 @@ object mod {
   
   object pretty {
     
-    inline def apply(`type`: /* keyof @storybook/client-logger.anon.Debug */ trace | debug | info | warn | error | log): js.Function1[/* repeated */ String, Unit] = ^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ String, Unit]]
+    inline def apply(`type`: /* keyof @storybook/client-logger.anon.Debug */ trace | debug | info | warn | error | log): js.Function2[/* message */ Any, /* repeated */ Any, Unit] = ^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* message */ Any, /* repeated */ Any, Unit]]
     
     @JSImport("@storybook/client-logger", "pretty")
     @js.native
     val ^ : js.Any = js.native
     
-    inline def debug(args: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
+    inline def debug(message: Any, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(scala.List(message.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     
-    inline def error(args: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
+    inline def error(message: Any, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(scala.List(message.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     
-    inline def info(args: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
+    inline def info(message: Any, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(scala.List(message.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     
-    inline def trace(args: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trace")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
+    inline def trace(message: Any, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trace")(scala.List(message.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     
-    inline def warn(args: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
+    inline def warn(message: Any, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(scala.List(message.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   }
 }

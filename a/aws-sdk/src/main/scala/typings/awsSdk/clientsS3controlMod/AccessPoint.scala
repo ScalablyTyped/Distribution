@@ -22,6 +22,11 @@ trait AccessPoint extends StObject {
   var Bucket: BucketName
   
   /**
+    * The Amazon Web Services account ID associated with the S3 bucket associated with this access point.
+    */
+  var BucketAccountId: js.UndefOr[AccountId] = js.undefined
+  
+  /**
     * The name of this access point.
     */
   var Name: AccessPointName
@@ -55,6 +60,10 @@ object AccessPoint {
     inline def setAliasUndefined: Self = StObject.set(x, "Alias", js.undefined)
     
     inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    
+    inline def setBucketAccountId(value: AccountId): Self = StObject.set(x, "BucketAccountId", value.asInstanceOf[js.Any])
+    
+    inline def setBucketAccountIdUndefined: Self = StObject.set(x, "BucketAccountId", js.undefined)
     
     inline def setName(value: AccessPointName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

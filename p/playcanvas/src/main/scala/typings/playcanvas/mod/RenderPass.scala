@@ -12,6 +12,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait RenderPass extends StObject {
   
+  /**
+    * Custom function that is called after the pass has fnished.
+    *
+    * @type {Function}
+    */
+  var after: js.Function
+  
+  /**
+    * Custom function that is called before the pass has started.
+    *
+    * @type {Function}
+    */
+  var before: js.Function
+  
   /** @type {ColorAttachmentOps} */
   var colorOps: ColorAttachmentOps
   
@@ -20,7 +34,11 @@ trait RenderPass extends StObject {
   
   var device: GraphicsDevice
   
-  /** @type {Function} */
+  /**
+    * Custom function that is called to render the pass.
+    *
+    * @type {Function}
+    */
   var execute: js.Function
   
   /**
@@ -31,11 +49,14 @@ trait RenderPass extends StObject {
   var fullSizeClearRect: Boolean
   
   /**
-    * @param {RenderTarget} renderTarget - The render target to render into (output). This function should be
-    * called only for render passes which use render target, or passes which render directly into the default
-    * framebuffer, in which case a null or undefined render target is expected.
+    * @param {import('../graphics/render-target.js').RenderTarget} renderTarget - The render
+    * target to render into (output). This function should be called only for render passes which
+    * use render target, or passes which render directly into the default framebuffer, in which
+    * case a null or undefined render target is expected.
     */
   def init(renderTarget: RenderTarget): Unit
+  
+  def log(device: Any, index: Any): Unit
   
   /** @type {string} */
   var name: String
@@ -45,7 +66,7 @@ trait RenderPass extends StObject {
     */
   def render(): Unit
   
-  /** @type {RenderTarget} */
+  /** @type {import('../graphics/render-target.js').RenderTarget} */
   var renderTarget: RenderTarget
   
   /**
@@ -89,12 +110,15 @@ trait RenderPass extends StObject {
 object RenderPass {
   
   inline def apply(
+    after: js.Function,
+    before: js.Function,
     colorOps: ColorAttachmentOps,
     depthStencilOps: DepthStencilAttachmentOps,
     device: GraphicsDevice,
     execute: js.Function,
     fullSizeClearRect: Boolean,
     init: RenderTarget => Unit,
+    log: (Any, Any) => Unit,
     name: String,
     render: () => Unit,
     renderTarget: RenderTarget,
@@ -104,12 +128,16 @@ object RenderPass {
     setClearDepth: Double => Unit,
     setClearStencil: Double => Unit
   ): RenderPass = {
-    val __obj = js.Dynamic.literal(colorOps = colorOps.asInstanceOf[js.Any], depthStencilOps = depthStencilOps.asInstanceOf[js.Any], device = device.asInstanceOf[js.Any], execute = execute.asInstanceOf[js.Any], fullSizeClearRect = fullSizeClearRect.asInstanceOf[js.Any], init = js.Any.fromFunction1(init), name = name.asInstanceOf[js.Any], render = js.Any.fromFunction0(render), renderTarget = renderTarget.asInstanceOf[js.Any], requiresCubemaps = requiresCubemaps.asInstanceOf[js.Any], samples = samples.asInstanceOf[js.Any], setClearColor = js.Any.fromFunction1(setClearColor), setClearDepth = js.Any.fromFunction1(setClearDepth), setClearStencil = js.Any.fromFunction1(setClearStencil))
+    val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], colorOps = colorOps.asInstanceOf[js.Any], depthStencilOps = depthStencilOps.asInstanceOf[js.Any], device = device.asInstanceOf[js.Any], execute = execute.asInstanceOf[js.Any], fullSizeClearRect = fullSizeClearRect.asInstanceOf[js.Any], init = js.Any.fromFunction1(init), log = js.Any.fromFunction2(log), name = name.asInstanceOf[js.Any], render = js.Any.fromFunction0(render), renderTarget = renderTarget.asInstanceOf[js.Any], requiresCubemaps = requiresCubemaps.asInstanceOf[js.Any], samples = samples.asInstanceOf[js.Any], setClearColor = js.Any.fromFunction1(setClearColor), setClearDepth = js.Any.fromFunction1(setClearDepth), setClearStencil = js.Any.fromFunction1(setClearStencil))
     __obj.asInstanceOf[RenderPass]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: RenderPass] (val x: Self) extends AnyVal {
+    
+    inline def setAfter(value: js.Function): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+    
+    inline def setBefore(value: js.Function): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
     inline def setColorOps(value: ColorAttachmentOps): Self = StObject.set(x, "colorOps", value.asInstanceOf[js.Any])
     
@@ -122,6 +150,8 @@ object RenderPass {
     inline def setFullSizeClearRect(value: Boolean): Self = StObject.set(x, "fullSizeClearRect", value.asInstanceOf[js.Any])
     
     inline def setInit(value: RenderTarget => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+    
+    inline def setLog(value: (Any, Any) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

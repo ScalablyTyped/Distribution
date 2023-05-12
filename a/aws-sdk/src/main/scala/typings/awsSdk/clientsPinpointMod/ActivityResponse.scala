@@ -22,6 +22,11 @@ trait ActivityResponse extends StObject {
   var End: js.UndefOr[string] = js.undefined
   
   /**
+    * A JSON object that contains metrics relating to the campaign execution for this campaign activity. For information about the structure and contents of the results, see Standard Amazon Pinpoint analytics metrics in the Amazon Pinpoint Developer Guide.
+    */
+  var ExecutionMetrics: js.UndefOr[MapOfString] = js.undefined
+  
+  /**
     * The unique identifier for the activity.
     */
   var Id: string
@@ -88,6 +93,10 @@ object ActivityResponse {
     inline def setEnd(value: string): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     
     inline def setEndUndefined: Self = StObject.set(x, "End", js.undefined)
+    
+    inline def setExecutionMetrics(value: MapOfString): Self = StObject.set(x, "ExecutionMetrics", value.asInstanceOf[js.Any])
+    
+    inline def setExecutionMetricsUndefined: Self = StObject.set(x, "ExecutionMetrics", js.undefined)
     
     inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

@@ -2,14 +2,13 @@ package typings.gestalt.mod
 
 import typings.gestalt.gestaltStrings.tableHeaderGroup
 import typings.gestalt.gestaltStrings.visuallyHidden
-import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TableHeaderProps extends StObject {
   
-  var children: js.UndefOr[ReactNode] = js.undefined
+  var children: Node
   
   var display: js.UndefOr[tableHeaderGroup | visuallyHidden] = js.undefined
   
@@ -25,7 +24,7 @@ object TableHeaderProps {
   @scala.inline
   implicit open class MutableBuilder[Self <: TableHeaderProps] (val x: Self) extends AnyVal {
     
-    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Node): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     

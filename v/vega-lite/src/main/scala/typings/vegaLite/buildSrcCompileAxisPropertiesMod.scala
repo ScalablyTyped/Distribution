@@ -1,6 +1,8 @@
 package typings.vegaLite
 
+import typings.std.ReturnType
 import typings.vegaLite.anon.FieldOrDatumDef
+import typings.vegaLite.anon.PickAxisRuleParamsformatf
 import typings.vegaLite.anon.Signal
 import typings.vegaLite.buildSrcAxisMod.AxisInternal
 import typings.vegaLite.buildSrcAxisMod.ConditionalAxisColor
@@ -15,6 +17,7 @@ import typings.vegaLite.buildSrcBinMod.Bin
 import typings.vegaLite.buildSrcBinMod.BinParams
 import typings.vegaLite.buildSrcChannelMod.PositionScaleChannel
 import typings.vegaLite.buildSrcChanneldefMod.DatumDef
+import typings.vegaLite.buildSrcChanneldefMod.FieldDef
 import typings.vegaLite.buildSrcChanneldefMod.FieldDefBase
 import typings.vegaLite.buildSrcChanneldefMod.PositionDatumDef
 import typings.vegaLite.buildSrcChanneldefMod.PositionFieldDef
@@ -40,7 +43,10 @@ import typings.vegaLite.vegaLiteStrings.extent
 import typings.vegaLite.vegaLiteStrings.greedy
 import typings.vegaLite.vegaLiteStrings.left
 import typings.vegaLite.vegaLiteStrings.middle
+import typings.vegaLite.vegaLiteStrings.number
+import typings.vegaLite.vegaLiteStrings.time
 import typings.vegaLite.vegaLiteStrings.top
+import typings.vegaLite.vegaLiteStrings.utc
 import typings.vegaLite.vegaLiteStrings.x
 import typings.vegaLite.vegaLiteStrings.y
 import typings.vegaTypings.typesSpecAxisMod.AxisEncode
@@ -896,9 +902,11 @@ object buildSrcCompileAxisPropertiesMod {
   
   inline def defaultTickCount(param0: FieldOrDatumDef): Signal = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultTickCount")(param0.asInstanceOf[js.Any]).asInstanceOf[Signal]
   
-  inline def defaultZindex(mark: Mark, fieldDef: DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]): `1` | `0` = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultZindex")(mark.asInstanceOf[js.Any], fieldDef.asInstanceOf[js.Any])).asInstanceOf[`1` | `0`]
+  inline def defaultTickMinStep(param0: PickAxisRuleParamsformatf): `1` | Signal = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultTickMinStep")(param0.asInstanceOf[js.Any]).asInstanceOf[`1` | Signal]
   
-  inline def defaultZindex_binned(mark: Mark, fieldDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]): `1` | `0` = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultZindex")(mark.asInstanceOf[js.Any], fieldDef.asInstanceOf[js.Any])).asInstanceOf[`1` | `0`]
+  inline def defaultZindex(mark: Mark, fieldDef: DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]): `0` | `1` = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultZindex")(mark.asInstanceOf[js.Any], fieldDef.asInstanceOf[js.Any])).asInstanceOf[`0` | `1`]
+  
+  inline def defaultZindex_binned(mark: Mark, fieldDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]): `0` | `1` = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultZindex")(mark.asInstanceOf[js.Any], fieldDef.asInstanceOf[js.Any])).asInstanceOf[`0` | `1`]
   
   inline def getFieldDefTitle(model: UnitModel, channel: x | y): SignalRef | Text = (^.asInstanceOf[js.Dynamic].applyDynamic("getFieldDefTitle")(model.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[SignalRef | Text]
   
@@ -953,6 +961,17 @@ object buildSrcCompileAxisPropertiesMod {
     
     var fieldOrDatumDef: PositionFieldDef[String] | PositionDatumDef[String]
     
+    var format: String | SignalRef
+    
+    var formatType: ReturnType[
+        js.Function3[
+          /* formatType */ String | SignalRef, 
+          /* fieldOrDatumDef */ (FieldDef[String, Any]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]), 
+          /* scaleType */ ScaleType, 
+          time | number | SignalRef | utc
+        ]
+      ]
+    
     var labelAngle: Double | SignalRef
     
     var mark: Mark
@@ -970,13 +989,22 @@ object buildSrcCompileAxisPropertiesMod {
       channel: PositionScaleChannel,
       config: Config[ExprRef | SignalRef],
       fieldOrDatumDef: PositionFieldDef[String] | PositionDatumDef[String],
+      format: String | SignalRef,
+      formatType: ReturnType[
+          js.Function3[
+            /* formatType */ String | SignalRef, 
+            /* fieldOrDatumDef */ (FieldDef[String, Any]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]), 
+            /* scaleType */ ScaleType, 
+            time | number | SignalRef | utc
+          ]
+        ],
       labelAngle: Double | SignalRef,
       mark: Mark,
       model: UnitModel,
       orient: Orient | SignalRef,
       scaleType: ScaleType
     ): AxisRuleParams = {
-      val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], channel = channel.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], fieldOrDatumDef = fieldOrDatumDef.asInstanceOf[js.Any], labelAngle = labelAngle.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], orient = orient.asInstanceOf[js.Any], scaleType = scaleType.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], channel = channel.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], fieldOrDatumDef = fieldOrDatumDef.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], formatType = formatType.asInstanceOf[js.Any], labelAngle = labelAngle.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], orient = orient.asInstanceOf[js.Any], scaleType = scaleType.asInstanceOf[js.Any])
       __obj.asInstanceOf[AxisRuleParams]
     }
     
@@ -990,6 +1018,19 @@ object buildSrcCompileAxisPropertiesMod {
       inline def setConfig(value: Config[ExprRef | SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
       inline def setFieldOrDatumDef(value: PositionFieldDef[String] | PositionDatumDef[String]): Self = StObject.set(x, "fieldOrDatumDef", value.asInstanceOf[js.Any])
+      
+      inline def setFormat(value: String | SignalRef): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      
+      inline def setFormatType(
+        value: ReturnType[
+              js.Function3[
+                /* formatType */ String | SignalRef, 
+                /* fieldOrDatumDef */ (FieldDef[String, Any]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]), 
+                /* scaleType */ ScaleType, 
+                time | number | SignalRef | utc
+              ]
+            ]
+      ): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])
       
       inline def setLabelAngle(value: Double | SignalRef): Self = StObject.set(x, "labelAngle", value.asInstanceOf[js.Any])
       

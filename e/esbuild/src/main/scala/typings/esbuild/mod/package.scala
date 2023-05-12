@@ -1,12 +1,5 @@
 package typings.esbuild.mod
 
-import typings.esbuild.anon.BuildIncrementalmetafileM
-import typings.esbuild.anon.BuildOptionsincrementaltr
-import typings.esbuild.anon.BuildOptionsincrementaltrAbsWorkingDir
-import typings.esbuild.anon.BuildOptionsmetafiletrue
-import typings.esbuild.anon.BuildOptionswritefalse
-import typings.esbuild.anon.BuildResultmetafileMetafi
-import typings.esbuild.anon.BuildResultoutputFilesArr
 import typings.esbuild.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,14 +16,14 @@ inline def analyzeMetafileSync(metafile: String, options: AnalyzeMetafileOptions
 inline def analyzeMetafileSync(metafile: Metafile): String = ^.asInstanceOf[js.Dynamic].applyDynamic("analyzeMetafileSync")(metafile.asInstanceOf[js.Any]).asInstanceOf[String]
 inline def analyzeMetafileSync(metafile: Metafile, options: AnalyzeMetafileOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("analyzeMetafileSync")(metafile.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def build(options: BuildOptionsincrementaltr): js.Promise[BuildIncremental] = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BuildIncremental]]
-inline def build(options: BuildOptionsincrementaltrAbsWorkingDir): js.Promise[BuildIncrementalmetafileM] = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BuildIncrementalmetafileM]]
-inline def build(options: BuildOptionsmetafiletrue): js.Promise[BuildResultmetafileMetafi] = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BuildResultmetafileMetafi]]
-inline def build(options: BuildOptionswritefalse): js.Promise[BuildResultoutputFilesArr] = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BuildResultoutputFilesArr]]
-inline def build(options: BuildOptions): js.Promise[BuildResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BuildResult]]
+inline def build(options: BuildOptions): js.Promise[BuildResult[BuildOptions]] = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BuildResult[BuildOptions]]]
+inline def build[SpecificOptions /* <: BuildOptions */](options: SpecificOptions): js.Promise[BuildResult[SpecificOptions]] = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BuildResult[SpecificOptions]]]
 
-inline def buildSync(options: BuildOptionswritefalse): BuildResultoutputFilesArr = ^.asInstanceOf[js.Dynamic].applyDynamic("buildSync")(options.asInstanceOf[js.Any]).asInstanceOf[BuildResultoutputFilesArr]
-inline def buildSync(options: BuildOptions): BuildResult = ^.asInstanceOf[js.Dynamic].applyDynamic("buildSync")(options.asInstanceOf[js.Any]).asInstanceOf[BuildResult]
+inline def buildSync(options: BuildOptions): BuildResult[BuildOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildSync")(options.asInstanceOf[js.Any]).asInstanceOf[BuildResult[BuildOptions]]
+inline def buildSync[SpecificOptions /* <: BuildOptions */](options: SpecificOptions): BuildResult[SpecificOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildSync")(options.asInstanceOf[js.Any]).asInstanceOf[BuildResult[SpecificOptions]]
+
+inline def context(options: BuildOptions): js.Promise[BuildContext[BuildOptions]] = ^.asInstanceOf[js.Dynamic].applyDynamic("context")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BuildContext[BuildOptions]]]
+inline def context[T /* <: BuildOptions */](options: T): js.Promise[BuildContext[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("context")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BuildContext[T]]]
 
 inline def formatMessages(messages: js.Array[PartialMessage], options: FormatMessagesOptions): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatMessages")(messages.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
 
@@ -38,15 +31,23 @@ inline def formatMessagesSync(messages: js.Array[PartialMessage], options: Forma
 
 inline def initialize(options: InitializeOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 
-inline def serve(serveOptions: ServeOptions, buildOptions: BuildOptions): js.Promise[ServeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("serve")(serveOptions.asInstanceOf[js.Any], buildOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ServeResult]]
+inline def transform(input: String): js.Promise[TransformResult[TransformOptions]] = ^.asInstanceOf[js.Dynamic].applyDynamic("transform")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TransformResult[TransformOptions]]]
+inline def transform(input: String, options: TransformOptions): js.Promise[TransformResult[TransformOptions]] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TransformResult[TransformOptions]]]
+inline def transform(input: js.typedarray.Uint8Array): js.Promise[TransformResult[TransformOptions]] = ^.asInstanceOf[js.Dynamic].applyDynamic("transform")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TransformResult[TransformOptions]]]
+inline def transform(input: js.typedarray.Uint8Array, options: TransformOptions): js.Promise[TransformResult[TransformOptions]] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TransformResult[TransformOptions]]]
+inline def transform[SpecificOptions /* <: TransformOptions */](input: String, options: SpecificOptions): js.Promise[TransformResult[SpecificOptions]] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TransformResult[SpecificOptions]]]
+inline def transform[SpecificOptions /* <: TransformOptions */](input: js.typedarray.Uint8Array, options: SpecificOptions): js.Promise[TransformResult[SpecificOptions]] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TransformResult[SpecificOptions]]]
 
-inline def transform(input: String): js.Promise[TransformResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("transform")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TransformResult]]
-inline def transform(input: String, options: TransformOptions): js.Promise[TransformResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TransformResult]]
-inline def transform(input: js.typedarray.Uint8Array): js.Promise[TransformResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("transform")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TransformResult]]
-inline def transform(input: js.typedarray.Uint8Array, options: TransformOptions): js.Promise[TransformResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TransformResult]]
+inline def transformSync(input: String): TransformResult[TransformOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformSync")(input.asInstanceOf[js.Any]).asInstanceOf[TransformResult[TransformOptions]]
+inline def transformSync(input: String, options: TransformOptions): TransformResult[TransformOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformSync")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TransformResult[TransformOptions]]
+inline def transformSync(input: js.typedarray.Uint8Array): TransformResult[TransformOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformSync")(input.asInstanceOf[js.Any]).asInstanceOf[TransformResult[TransformOptions]]
+inline def transformSync(input: js.typedarray.Uint8Array, options: TransformOptions): TransformResult[TransformOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformSync")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TransformResult[TransformOptions]]
+inline def transformSync[SpecificOptions /* <: TransformOptions */](input: String, options: SpecificOptions): TransformResult[SpecificOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformSync")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TransformResult[SpecificOptions]]
 
-inline def transformSync(input: String): TransformResult = ^.asInstanceOf[js.Dynamic].applyDynamic("transformSync")(input.asInstanceOf[js.Any]).asInstanceOf[TransformResult]
-inline def transformSync(input: String, options: TransformOptions): TransformResult = (^.asInstanceOf[js.Dynamic].applyDynamic("transformSync")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TransformResult]
+inline def transformSync_SpecificOptions[SpecificOptions /* <: TransformOptions */](input: String): TransformResult[SpecificOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformSync")(input.asInstanceOf[js.Any]).asInstanceOf[TransformResult[SpecificOptions]]
+
+inline def transform_SpecificOptions[SpecificOptions /* <: TransformOptions */](input: String): js.Promise[TransformResult[SpecificOptions]] = ^.asInstanceOf[js.Dynamic].applyDynamic("transform")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TransformResult[SpecificOptions]]]
+inline def transform_SpecificOptions[SpecificOptions /* <: TransformOptions */](input: js.typedarray.Uint8Array): js.Promise[TransformResult[SpecificOptions]] = ^.asInstanceOf[js.Dynamic].applyDynamic("transform")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TransformResult[SpecificOptions]]]
 
 inline def version: String = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[String]
 inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])

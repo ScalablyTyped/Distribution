@@ -2,6 +2,7 @@ package typings.cypress.anon
 
 import typings.cypress.typesNetStubbingMod.DictMatcher
 import typings.cypress.typesNetStubbingMod.NumberMatcher
+import typings.cypress.typesNetStubbingMod.ResourceType
 import typings.cypress.typesNetStubbingMod.StringMatcher
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -29,6 +30,8 @@ trait OmitRouteMatcherOptionsur extends StObject {
   var port: js.UndefOr[NumberMatcher] = js.undefined
   
   var query: js.UndefOr[DictMatcher[StringMatcher]] = js.undefined
+  
+  var resourceType: js.UndefOr[ResourceType | StringMatcher] = js.undefined
   
   var times: js.UndefOr[Double] = js.undefined
 }
@@ -83,6 +86,10 @@ object OmitRouteMatcherOptionsur {
     inline def setQuery(value: DictMatcher[StringMatcher]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    
+    inline def setResourceType(value: ResourceType | StringMatcher): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
     inline def setTimes(value: Double): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
     

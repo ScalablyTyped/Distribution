@@ -52,7 +52,7 @@ trait ListCompilationJobsRequest extends StObject {
   var SortOrder: js.UndefOr[typings.awsSdk.clientsSagemakerMod.SortOrder] = js.undefined
   
   /**
-    * A filter that retrieves model compilation jobs with a specific DescribeCompilationJobResponse$CompilationJobStatus status.
+    * A filter that retrieves model compilation jobs with a specific CompilationJobStatus status.
     */
   var StatusEquals: js.UndefOr[CompilationJobStatus] = js.undefined
 }

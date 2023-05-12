@@ -41,6 +41,11 @@ trait RemoteObject extends StObject {
   var customPreview: js.UndefOr[CustomPreview] = js.undefined
   
   /**
+    * Deep serialized value.
+    */
+  var deepSerializedValue: js.UndefOr[DeepSerializedValue] = js.undefined
+  
+  /**
     * String representation of the object.
     */
   var description: js.UndefOr[String] = js.undefined
@@ -81,9 +86,9 @@ trait RemoteObject extends StObject {
   var value: js.UndefOr[Any] = js.undefined
   
   /**
-    * WebDriver BiDi representation of the value.
+    * Deprecated. Use `deepSerializedValue` instead. WebDriver BiDi representation of the value.
     */
-  var webDriverValue: js.UndefOr[WebDriverValue] = js.undefined
+  var webDriverValue: js.UndefOr[DeepSerializedValue] = js.undefined
 }
 object RemoteObject {
   
@@ -103,6 +108,10 @@ object RemoteObject {
     inline def setCustomPreview(value: CustomPreview): Self = StObject.set(x, "customPreview", value.asInstanceOf[js.Any])
     
     inline def setCustomPreviewUndefined: Self = StObject.set(x, "customPreview", js.undefined)
+    
+    inline def setDeepSerializedValue(value: DeepSerializedValue): Self = StObject.set(x, "deepSerializedValue", value.asInstanceOf[js.Any])
+    
+    inline def setDeepSerializedValueUndefined: Self = StObject.set(x, "deepSerializedValue", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -132,7 +141,7 @@ object RemoteObject {
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    inline def setWebDriverValue(value: WebDriverValue): Self = StObject.set(x, "webDriverValue", value.asInstanceOf[js.Any])
+    inline def setWebDriverValue(value: DeepSerializedValue): Self = StObject.set(x, "webDriverValue", value.asInstanceOf[js.Any])
     
     inline def setWebDriverValueUndefined: Self = StObject.set(x, "webDriverValue", js.undefined)
   }

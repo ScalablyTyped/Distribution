@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NotebookDocumentChangeEvent extends StObject {
   
   /**
-    * An array of {@link NotebookDocumentCellChange cell changes}.
-    */
+  		 * An array of {@link NotebookDocumentCellChange cell changes}.
+  		 */
   val cellChanges: js.Array[NotebookDocumentCellChange]
   
   /**
-    * An array of content changes describing added or removed {@link NotebookCell cells}.
-    */
+  		 * An array of content changes describing added or removed {@link NotebookCell cells}.
+  		 */
   val contentChanges: js.Array[NotebookDocumentContentChange]
   
   /**
-    * The new metadata of the notebook or `undefined` when it did not change.
-    */
+  		 * The new metadata of the notebook or `undefined` when it did not change.
+  		 */
   val metadata: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   /**
-    * The affected notebook.
-    */
+  		 * The affected notebook.
+  		 */
   val notebook: NotebookDocument
 }
 object NotebookDocumentChangeEvent {

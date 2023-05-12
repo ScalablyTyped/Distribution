@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Rewritten from type alias, can be one of: 
   - typings.twilio.twilioStrings.arb
+  - typings.twilio.twilioStrings.`ar-AE`
   - typings.twilio.twilioStrings.`ca-ES`
   - typings.twilio.twilioStrings.`cmn-CN`
   - typings.twilio.twilioStrings.`cy-GB`
@@ -22,6 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.twilio.twilioStrings.`es-ES`
   - typings.twilio.twilioStrings.`es-MX`
   - typings.twilio.twilioStrings.`es-US`
+  - typings.twilio.twilioStrings.`fi-FI`
   - typings.twilio.twilioStrings.`fr-CA`
   - typings.twilio.twilioStrings.`fr-FR`
   - typings.twilio.twilioStrings.`hi-IN`
@@ -38,9 +40,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.twilio.twilioStrings.`ru-RU`
   - typings.twilio.twilioStrings.`sv-SE`
   - typings.twilio.twilioStrings.`tr-TR`
+  - typings.twilio.twilioStrings.`yue-CN`
 */
 trait SsmlLangXmlLang extends StObject
 object SsmlLangXmlLang {
+  
+  inline def `ar-AE`: typings.twilio.twilioStrings.`ar-AE` = "ar-AE".asInstanceOf[typings.twilio.twilioStrings.`ar-AE`]
   
   inline def arb: typings.twilio.twilioStrings.arb = "arb".asInstanceOf[typings.twilio.twilioStrings.arb]
   
@@ -76,6 +81,8 @@ object SsmlLangXmlLang {
   
   inline def `es-US`: typings.twilio.twilioStrings.`es-US` = "es-US".asInstanceOf[typings.twilio.twilioStrings.`es-US`]
   
+  inline def `fi-FI`: typings.twilio.twilioStrings.`fi-FI` = "fi-FI".asInstanceOf[typings.twilio.twilioStrings.`fi-FI`]
+  
   inline def `fr-CA`: typings.twilio.twilioStrings.`fr-CA` = "fr-CA".asInstanceOf[typings.twilio.twilioStrings.`fr-CA`]
   
   inline def `fr-FR`: typings.twilio.twilioStrings.`fr-FR` = "fr-FR".asInstanceOf[typings.twilio.twilioStrings.`fr-FR`]
@@ -107,4 +114,6 @@ object SsmlLangXmlLang {
   inline def `sv-SE`: typings.twilio.twilioStrings.`sv-SE` = "sv-SE".asInstanceOf[typings.twilio.twilioStrings.`sv-SE`]
   
   inline def `tr-TR`: typings.twilio.twilioStrings.`tr-TR` = "tr-TR".asInstanceOf[typings.twilio.twilioStrings.`tr-TR`]
+  
+  inline def `yue-CN`: typings.twilio.twilioStrings.`yue-CN` = "yue-CN".asInstanceOf[typings.twilio.twilioStrings.`yue-CN`]
 }

@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var _data: Any
   
+  var _userDataWriter: Any
+  
   /**
     * Returns the results of the aggregations performed over the underlying
     * query.
@@ -29,8 +31,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object n {
   
-  inline def apply(_data: Any, data: () => Any, query: Any, `type`: String): n = {
-    val __obj = js.Dynamic.literal(_data = _data.asInstanceOf[js.Any], data = js.Any.fromFunction0(data), query = query.asInstanceOf[js.Any])
+  inline def apply(_data: Any, _userDataWriter: Any, data: () => Any, query: Any, `type`: String): n = {
+    val __obj = js.Dynamic.literal(_data = _data.asInstanceOf[js.Any], _userDataWriter = _userDataWriter.asInstanceOf[js.Any], data = js.Any.fromFunction0(data), query = query.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[n]
   }
@@ -45,5 +47,7 @@ object n {
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def set_data(value: Any): Self = StObject.set(x, "_data", value.asInstanceOf[js.Any])
+    
+    inline def set_userDataWriter(value: Any): Self = StObject.set(x, "_userDataWriter", value.asInstanceOf[js.Any])
   }
 }

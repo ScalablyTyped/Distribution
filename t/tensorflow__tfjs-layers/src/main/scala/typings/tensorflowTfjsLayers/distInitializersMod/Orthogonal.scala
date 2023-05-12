@@ -11,6 +11,8 @@ open class Orthogonal () extends Initializer {
   
   val DEFAULT_GAIN: /* 1 */ Double = js.native
   
+  val ELEMENTS_WARN_SLOW: /* 2000 */ Double = js.native
+  
   /* protected */ val gain: Double = js.native
   
   /* protected */ val seed: Double = js.native

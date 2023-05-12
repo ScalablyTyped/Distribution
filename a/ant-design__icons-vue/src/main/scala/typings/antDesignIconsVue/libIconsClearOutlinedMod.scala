@@ -16,7 +16,7 @@ object libIconsClearOutlinedMod extends Shortcut {
   @js.native
   trait ClearOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_ClearOutlinedIconType: String = js.native

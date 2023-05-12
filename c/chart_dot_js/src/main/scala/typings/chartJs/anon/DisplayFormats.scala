@@ -2,7 +2,7 @@ package typings.chartJs.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.chartJs.chartJsBooleans.`false`
-import typings.chartJs.typesAdaptersMod.TimeUnit
+import typings.chartJs.distCoreCoreDotadaptersMod.TimeUnit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,12 +38,6 @@ trait DisplayFormats extends StObject {
   var round: `false` | TimeUnit
   
   /**
-    * The number of units between grid lines.
-    * @default 1
-    */
-  var stepSize: Double
-  
-  /**
     * The format string to use for the tooltip.
     */
   var tooltipFormat: String
@@ -62,11 +56,10 @@ object DisplayFormats {
     minUnit: TimeUnit,
     parser: String | (js.Function1[/* v */ Any, Double]),
     round: `false` | TimeUnit,
-    stepSize: Double,
     tooltipFormat: String,
     unit: `false` | TimeUnit
   ): DisplayFormats = {
-    val __obj = js.Dynamic.literal(displayFormats = displayFormats.asInstanceOf[js.Any], isoWeekday = isoWeekday.asInstanceOf[js.Any], minUnit = minUnit.asInstanceOf[js.Any], parser = parser.asInstanceOf[js.Any], round = round.asInstanceOf[js.Any], stepSize = stepSize.asInstanceOf[js.Any], tooltipFormat = tooltipFormat.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(displayFormats = displayFormats.asInstanceOf[js.Any], isoWeekday = isoWeekday.asInstanceOf[js.Any], minUnit = minUnit.asInstanceOf[js.Any], parser = parser.asInstanceOf[js.Any], round = round.asInstanceOf[js.Any], tooltipFormat = tooltipFormat.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisplayFormats]
   }
   
@@ -84,8 +77,6 @@ object DisplayFormats {
     inline def setParserFunction1(value: /* v */ Any => Double): Self = StObject.set(x, "parser", js.Any.fromFunction1(value))
     
     inline def setRound(value: `false` | TimeUnit): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
-    
-    inline def setStepSize(value: Double): Self = StObject.set(x, "stepSize", value.asInstanceOf[js.Any])
     
     inline def setTooltipFormat(value: String): Self = StObject.set(x, "tooltipFormat", value.asInstanceOf[js.Any])
     

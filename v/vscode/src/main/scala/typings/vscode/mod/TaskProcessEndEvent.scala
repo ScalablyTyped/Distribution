@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TaskProcessEndEvent extends StObject {
   
   /**
-    * The task execution for which the process got started.
-    */
+  		 * The task execution for which the process got started.
+  		 */
   val execution: TaskExecution
   
   /**
-    * The process's exit code. Will be `undefined` when the task is terminated.
-    */
+  		 * The process's exit code. Will be `undefined` when the task is terminated.
+  		 */
   val exitCode: js.UndefOr[Double] = js.undefined
 }
 object TaskProcessEndEvent {

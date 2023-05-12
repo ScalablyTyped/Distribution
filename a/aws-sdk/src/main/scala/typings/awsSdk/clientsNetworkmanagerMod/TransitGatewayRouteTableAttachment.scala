@@ -14,7 +14,7 @@ trait TransitGatewayRouteTableAttachment extends StObject {
   var PeeringId: js.UndefOr[typings.awsSdk.clientsNetworkmanagerMod.PeeringId] = js.undefined
   
   /**
-    * The ARN of the transit gateway attachment route table.
+    * The ARN of the transit gateway attachment route table. For example, "TransitGatewayRouteTableArn": "arn:aws:ec2:us-west-2:123456789012:transit-gateway-route-table/tgw-rtb-9876543210123456".
     */
   var TransitGatewayRouteTableArn: js.UndefOr[typings.awsSdk.clientsNetworkmanagerMod.TransitGatewayRouteTableArn] = js.undefined
 }

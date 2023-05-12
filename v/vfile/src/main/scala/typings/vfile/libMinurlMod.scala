@@ -11,14 +11,14 @@ object libMinurlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isUrl(fileURLOrPath: Any): /* is vfile.vfile/lib/minurl.shared.URL */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrl")(fileURLOrPath.asInstanceOf[js.Any]).asInstanceOf[/* is vfile.vfile/lib/minurl.shared.URL */ Boolean]
+  inline def isUrl(fileUrlOrPath: Any): /* is vfile.vfile/lib/minurl.shared.URL */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrl")(fileUrlOrPath.asInstanceOf[js.Any]).asInstanceOf[/* is vfile.vfile/lib/minurl.shared.URL */ Boolean]
   
   /**
     * This function ensures the correct decodings of percent-encoded characters as
     * well as ensuring a cross-platform valid absolute path string.
     *
     * ```js
-    * import { fileURLToPath } from 'url';
+    * import { fileURLToPath } from 'node:url';
     *
     * const __filename = fileURLToPath(import.meta.url);
     *

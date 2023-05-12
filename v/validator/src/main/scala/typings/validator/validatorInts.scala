@@ -10,6 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object validatorInts {
   
   @js.native
+  sealed trait `1`
+    extends StObject
+       with UUIDVersion
+  inline def `1`: `1` = 1.asInstanceOf[`1`]
+  
+  @js.native
   sealed trait `10`
     extends StObject
        with ISBNVersion
@@ -20,6 +26,12 @@ object validatorInts {
     extends StObject
        with ISBNVersion
   inline def `13`: `13` = 13.asInstanceOf[`13`]
+  
+  @js.native
+  sealed trait `2`
+    extends StObject
+       with UUIDVersion
+  inline def `2`: `2` = 2.asInstanceOf[`2`]
   
   @js.native
   sealed trait `3`

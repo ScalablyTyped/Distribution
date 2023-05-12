@@ -1,14 +1,18 @@
 package typings.primereact
 
+import typings.primereact.primereactStrings._empty
 import typings.primereact.primereactStrings.`additions removals`
 import typings.primereact.primereactStrings.`additions text`
 import typings.primereact.primereactStrings.`inline`
+import typings.primereact.primereactStrings.`lazy`
 import typings.primereact.primereactStrings.`removals additions`
 import typings.primereact.primereactStrings.`removals text`
 import typings.primereact.primereactStrings.`text additions`
 import typings.primereact.primereactStrings.`text removals`
+import typings.primereact.primereactStrings.`use-credentials`
 import typings.primereact.primereactStrings.additions
 import typings.primereact.primereactStrings.all
+import typings.primereact.primereactStrings.anonymous
 import typings.primereact.primereactStrings.ascending
 import typings.primereact.primereactStrings.assertive
 import typings.primereact.primereactStrings.both
@@ -17,6 +21,7 @@ import typings.primereact.primereactStrings.date
 import typings.primereact.primereactStrings.decimal
 import typings.primereact.primereactStrings.descending
 import typings.primereact.primereactStrings.dialog
+import typings.primereact.primereactStrings.eager
 import typings.primereact.primereactStrings.email
 import typings.primereact.primereactStrings.execute
 import typings.primereact.primereactStrings.grammar
@@ -50,6 +55,8 @@ import typings.primereact.primereactStrings.tree
 import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.yes
+import typings.primereact.utilsUtilsMod.IconOptions
+import typings.primereact.utilsUtilsMod.IconType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -67,6 +74,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.HTMLAttributeReferrerPolicy
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -103,16 +111,30 @@ object imageImageMod {
     def this(props: ImageProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ImageProps, context: Any) = this()
     
+    /**
+      * Used to get container element.
+      * @return {HTMLSpanElement} Container element
+      */
     def getElement(): HTMLSpanElement = js.native
     
+    /**
+      * Used to get image element
+      * @return {HTMLImageElement} Image element
+      */
     def getImage(): HTMLImageElement = js.native
     
+    /**
+      * Used to hide the overlay.
+      */
     def hide(): Unit = js.native
     
+    /**
+      * Used to show the overlay.
+      */
     def show(): Unit = js.native
   }
   
@@ -123,6 +145,9 @@ object imageImageMod {
     
     var accessKey: js.UndefOr[String] = js.undefined
     
+    /**
+      * Specifies an alternate text for an area, if the image cannot be displayed.
+      */
     var alt: js.UndefOr[String] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
@@ -227,17 +252,35 @@ object imageImageMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * Icon of the close button.
+      */
+    var closeIcon: js.UndefOr[IconType[ImageProps]] = js.undefined
+    
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The crossorigin content attribute on media elements is a CORS settings attribute.
+      */
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
@@ -249,19 +292,42 @@ object imageImageMod {
     
     var dir: js.UndefOr[String] = js.undefined
     
+    /**
+      * Icon of the download button.
+      */
+    var downloadIcon: js.UndefOr[IconType[ImageProps]] = js.undefined
+    
+    /**
+      * Adds a download button to the preview control menu.
+      * @default false
+      */
     var downloadable: js.UndefOr[Boolean] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
+    /**
+      * Height of the image element.
+      */
     var height: js.UndefOr[String] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
+    /**
+      * Style class of the image element.
+      */
     var imageClassName: js.UndefOr[String] = js.undefined
     
-    var imageStyle: js.UndefOr[String] = js.undefined
+    /**
+      * Inline style of the image element.
+      */
+    var imageStyle: js.UndefOr[CSSProperties] = js.undefined
+    
+    /**
+      * Changing the default icon when the image is hovered in preview mode.
+      */
+    var indicatorIcon: js.UndefOr[IconType[ImageProps]] = js.undefined
     
     var inlist: js.UndefOr[Any] = js.undefined
     
@@ -282,6 +348,11 @@ object imageImageMod {
     var key: js.UndefOr[Key | Null] = js.undefined
     
     var lang: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Specifies whether a browser should load an image immediately or to defer loading of off-screen images until for example the user scrolls near them.
+      */
+    var loading: js.UndefOr[eager | `lazy`] = js.undefined
     
     var nonce: js.UndefOr[String] = js.undefined
     
@@ -349,6 +420,9 @@ object imageImageMod {
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLSpanElement]] = js.undefined
     
+    /**
+      * Triggered when the preview overlay is hidden.
+      */
     var onHide: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onInput: js.UndefOr[FormEventHandler[HTMLSpanElement]] = js.undefined
@@ -423,6 +497,9 @@ object imageImageMod {
     
     var onSelect: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
     
+    /**
+      * Triggered when the preview overlay is shown.
+      */
     var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onStalled: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
@@ -453,17 +530,40 @@ object imageImageMod {
     
     var prefix: js.UndefOr[String] = js.undefined
     
+    /**
+      * Controls the preview functionality.
+      * @default false
+      */
     var preview: js.UndefOr[Boolean] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    /**
+      *  HTTP header controls how much referrer information (sent with the Referer header) should be included with requests.
+      */
+    var referrerPolicy: js.UndefOr[HTMLAttributeReferrerPolicy] = js.undefined
+    
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
     
+    var rev: js.UndefOr[String] = js.undefined
+    
     var role: js.UndefOr[AriaRole] = js.undefined
+    
+    /**
+      * Icon of the rotate left button.
+      */
+    var rotateLeftIcon: js.UndefOr[IconType[ImageProps]] = js.undefined
+    
+    /**
+      * Icon of the rotate right button.
+      */
+    var rotateRightIcon: js.UndefOr[IconType[ImageProps]] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
@@ -471,6 +571,9 @@ object imageImageMod {
     
     var spellCheck: js.UndefOr[Booleanish] = js.undefined
     
+    /**
+      * Specifies the path to the image.
+      */
     var src: js.UndefOr[String] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
@@ -481,6 +584,10 @@ object imageImageMod {
     
     var tabIndex: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Changing the default icon when the image is hovered in preview mode.
+      * @deprecated Since v9, use `indicatorIcon` instead.
+      */
     var template: js.UndefOr[Any] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
@@ -491,10 +598,31 @@ object imageImageMod {
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
+    /**
+      * Specifies an image as a client-side image map (an image map is an image with clickable areas)
+      */
+    var useMap: js.UndefOr[String] = js.undefined
+    
     var vocab: js.UndefOr[String] = js.undefined
     
+    /**
+      * Width of the image element.
+      */
     var width: js.UndefOr[String] = js.undefined
     
+    /**
+      * Icon of the zoom in button.
+      */
+    var zoomInIcon: js.UndefOr[IconType[ImageProps]] = js.undefined
+    
+    /**
+      * Icon of the zoom out button.
+      */
+    var zoomOutIcon: js.UndefOr[IconType[ImageProps]] = js.undefined
+    
+    /**
+      * Zoomed image that may be different than "src" image.
+      */
     var zoomSrc: js.UndefOr[String] = js.undefined
   }
   object ImageProps {
@@ -721,6 +849,10 @@ object imageImageMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -733,17 +865,31 @@ object imageImageMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
+      inline def setCloseIcon(value: IconType[ImageProps]): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
+      
+      inline def setCloseIconFunction1(value: /* options */ IconOptions[ImageProps] => ReactNode): Self = StObject.set(x, "closeIcon", js.Any.fromFunction1(value))
+      
+      inline def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
+      
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
       
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
+      
+      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      
+      inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
       inline def setDangerouslySetInnerHTML(value: Html): Self = StObject.set(x, "dangerouslySetInnerHTML", value.asInstanceOf[js.Any])
       
@@ -766,6 +912,12 @@ object imageImageMod {
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
       inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+      
+      inline def setDownloadIcon(value: IconType[ImageProps]): Self = StObject.set(x, "downloadIcon", value.asInstanceOf[js.Any])
+      
+      inline def setDownloadIconFunction1(value: /* options */ IconOptions[ImageProps] => ReactNode): Self = StObject.set(x, "downloadIcon", js.Any.fromFunction1(value))
+      
+      inline def setDownloadIconUndefined: Self = StObject.set(x, "downloadIcon", js.undefined)
       
       inline def setDownloadable(value: Boolean): Self = StObject.set(x, "downloadable", value.asInstanceOf[js.Any])
       
@@ -791,9 +943,15 @@ object imageImageMod {
       
       inline def setImageClassNameUndefined: Self = StObject.set(x, "imageClassName", js.undefined)
       
-      inline def setImageStyle(value: String): Self = StObject.set(x, "imageStyle", value.asInstanceOf[js.Any])
+      inline def setImageStyle(value: CSSProperties): Self = StObject.set(x, "imageStyle", value.asInstanceOf[js.Any])
       
       inline def setImageStyleUndefined: Self = StObject.set(x, "imageStyle", js.undefined)
+      
+      inline def setIndicatorIcon(value: IconType[ImageProps]): Self = StObject.set(x, "indicatorIcon", value.asInstanceOf[js.Any])
+      
+      inline def setIndicatorIconFunction1(value: /* options */ IconOptions[ImageProps] => ReactNode): Self = StObject.set(x, "indicatorIcon", js.Any.fromFunction1(value))
+      
+      inline def setIndicatorIconUndefined: Self = StObject.set(x, "indicatorIcon", js.undefined)
       
       inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
@@ -836,6 +994,10 @@ object imageImageMod {
       inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+      
+      inline def setLoading(value: eager | `lazy`): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      
+      inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
       inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
@@ -1189,6 +1351,14 @@ object imageImageMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setReferrerPolicy(value: HTMLAttributeReferrerPolicy): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
+      
+      inline def setReferrerPolicyUndefined: Self = StObject.set(x, "referrerPolicy", js.undefined)
+      
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1197,9 +1367,25 @@ object imageImageMod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
+      
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      
+      inline def setRotateLeftIcon(value: IconType[ImageProps]): Self = StObject.set(x, "rotateLeftIcon", value.asInstanceOf[js.Any])
+      
+      inline def setRotateLeftIconFunction1(value: /* options */ IconOptions[ImageProps] => ReactNode): Self = StObject.set(x, "rotateLeftIcon", js.Any.fromFunction1(value))
+      
+      inline def setRotateLeftIconUndefined: Self = StObject.set(x, "rotateLeftIcon", js.undefined)
+      
+      inline def setRotateRightIcon(value: IconType[ImageProps]): Self = StObject.set(x, "rotateRightIcon", value.asInstanceOf[js.Any])
+      
+      inline def setRotateRightIconFunction1(value: /* options */ IconOptions[ImageProps] => ReactNode): Self = StObject.set(x, "rotateRightIcon", js.Any.fromFunction1(value))
+      
+      inline def setRotateRightIconUndefined: Self = StObject.set(x, "rotateRightIcon", js.undefined)
       
       inline def setSecurity(value: String): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
       
@@ -1253,6 +1439,10 @@ object imageImageMod {
       
       inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
       
+      inline def setUseMap(value: String): Self = StObject.set(x, "useMap", value.asInstanceOf[js.Any])
+      
+      inline def setUseMapUndefined: Self = StObject.set(x, "useMap", js.undefined)
+      
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
@@ -1260,6 +1450,18 @@ object imageImageMod {
       inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      
+      inline def setZoomInIcon(value: IconType[ImageProps]): Self = StObject.set(x, "zoomInIcon", value.asInstanceOf[js.Any])
+      
+      inline def setZoomInIconFunction1(value: /* options */ IconOptions[ImageProps] => ReactNode): Self = StObject.set(x, "zoomInIcon", js.Any.fromFunction1(value))
+      
+      inline def setZoomInIconUndefined: Self = StObject.set(x, "zoomInIcon", js.undefined)
+      
+      inline def setZoomOutIcon(value: IconType[ImageProps]): Self = StObject.set(x, "zoomOutIcon", value.asInstanceOf[js.Any])
+      
+      inline def setZoomOutIconFunction1(value: /* options */ IconOptions[ImageProps] => ReactNode): Self = StObject.set(x, "zoomOutIcon", js.Any.fromFunction1(value))
+      
+      inline def setZoomOutIconUndefined: Self = StObject.set(x, "zoomOutIcon", js.undefined)
       
       inline def setZoomSrc(value: String): Self = StObject.set(x, "zoomSrc", value.asInstanceOf[js.Any])
       

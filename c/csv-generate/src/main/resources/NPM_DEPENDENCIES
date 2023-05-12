@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "csv-generate" : "4.2.0"
+      "csv-generate" : "4.2.6"
     }
   ],
   "test-dependencies" : [
     {
-      "csv-generate" : "4.2.0"
+      "csv-generate" : "4.2.6"
     }
   ],
   "compile-devDependencies" : [

@@ -1,7 +1,7 @@
 
 # Scala.js typings for vue
 
-Typings are for version 3.2.45
+Typings are for version 3.3.1
 
 ## Library description:
 The progressive JavaScript framework for building modern web UI.

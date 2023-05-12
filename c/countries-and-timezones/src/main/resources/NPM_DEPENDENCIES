@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "countries-and-timezones" : "3.3.0"
+      "countries-and-timezones" : "3.4.1"
     }
   ],
   "test-dependencies" : [
     {
-      "countries-and-timezones" : "3.3.0"
+      "countries-and-timezones" : "3.4.1"
     }
   ],
   "compile-devDependencies" : [

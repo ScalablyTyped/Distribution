@@ -1,7 +1,7 @@
 
 # Scala.js typings for vinyl-fs
 
-Typings are for version 2.4
+Typings are for version 3.0
 
 ## Library description:
 Vinyl adapter for the file system.

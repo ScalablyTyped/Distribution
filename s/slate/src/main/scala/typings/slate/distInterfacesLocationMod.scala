@@ -21,6 +21,9 @@ object distInterfacesLocationMod {
   
   trait LocationInterface extends StObject {
     
+    /**
+      * Check if a value implements the `Location` interface.
+      */
     def isLocation(value: Any): /* is slate.slate/dist/interfaces/location.Location */ Boolean
   }
   object LocationInterface {
@@ -39,6 +42,9 @@ object distInterfacesLocationMod {
   
   trait SpanInterface extends StObject {
     
+    /**
+      * Check if a value implements the `Span` interface.
+      */
     def isSpan(value: Any): /* is slate.slate/dist/interfaces/location.Span */ Boolean
   }
   object SpanInterface {

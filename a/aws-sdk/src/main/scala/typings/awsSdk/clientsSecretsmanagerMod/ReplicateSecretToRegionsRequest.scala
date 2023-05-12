@@ -12,7 +12,7 @@ trait ReplicateSecretToRegionsRequest extends StObject {
   var AddReplicaRegions: AddReplicaRegionListType
   
   /**
-    * Specifies whether to overwrite a secret with the same name in the destination Region.
+    * Specifies whether to overwrite a secret with the same name in the destination Region. By default, secrets aren't overwritten.
     */
   var ForceOverwriteReplicaSecret: js.UndefOr[BooleanType] = js.undefined
   

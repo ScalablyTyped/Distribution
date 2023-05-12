@@ -10,7 +10,6 @@ object mod {
   @js.native
   /**
     * Creates a new Uri object
-    * @constructor
     * @param {string} str
     */
   open class ^ ()

@@ -1,6 +1,5 @@
 package typings.revealJs
 
-import typings.revealJs.revealJsStrings.DOMContentLoaded
 import typings.revealJs.revealJsStrings.abort
 import typings.revealJs.revealJsStrings.animationcancel
 import typings.revealJs.revealJsStrings.animationend
@@ -66,15 +65,12 @@ import typings.revealJs.revealJsStrings.pointercancel
 import typings.revealJs.revealJsStrings.pointerdown
 import typings.revealJs.revealJsStrings.pointerenter
 import typings.revealJs.revealJsStrings.pointerleave
-import typings.revealJs.revealJsStrings.pointerlockchange
-import typings.revealJs.revealJsStrings.pointerlockerror
 import typings.revealJs.revealJsStrings.pointermove
 import typings.revealJs.revealJsStrings.pointerout
 import typings.revealJs.revealJsStrings.pointerover
 import typings.revealJs.revealJsStrings.pointerup
 import typings.revealJs.revealJsStrings.progress
 import typings.revealJs.revealJsStrings.ratechange
-import typings.revealJs.revealJsStrings.readystatechange
 import typings.revealJs.revealJsStrings.reset
 import typings.revealJs.revealJsStrings.resize
 import typings.revealJs.revealJsStrings.scroll
@@ -98,7 +94,6 @@ import typings.revealJs.revealJsStrings.transitioncancel
 import typings.revealJs.revealJsStrings.transitionend
 import typings.revealJs.revealJsStrings.transitionrun
 import typings.revealJs.revealJsStrings.transitionstart
-import typings.revealJs.revealJsStrings.visibilitychange
 import typings.revealJs.revealJsStrings.volumechange
 import typings.revealJs.revealJsStrings.waiting
 import typings.revealJs.revealJsStrings.webkitanimationend
@@ -118,6 +113,7 @@ import typings.std.EventListenerOrEventListenerObject
 import typings.std.EventTarget
 import typings.std.FocusEvent
 import typings.std.FormDataEvent
+import typings.std.HTMLElement
 import typings.std.InputEvent
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
@@ -161,7 +157,8 @@ object anon {
     
     var data: Any
     
-    var target: js.UndefOr[Any] = js.undefined
+    /** `revealElement` by default */
+    var target: js.UndefOr[HTMLElement] = js.undefined
     
     var `type`: String
   }
@@ -182,7 +179,7 @@ object anon {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -327,17 +324,6 @@ object anon {
     def apply(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
     def apply(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
     def apply(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
-    def apply(`type`: DOMContentLoaded, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: DOMContentLoaded,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: DOMContentLoaded,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
     def apply(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any]): Unit = js.native
     def apply(
       `type`: abort,
@@ -1083,28 +1069,6 @@ object anon {
       listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
       options: AddEventListenerOptions
     ): Unit = js.native
-    def apply(`type`: pointerlockchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: pointerlockchange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: pointerlockchange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: pointerlockerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: pointerlockerror,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: pointerlockerror,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
     def apply(`type`: pointermove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]): Unit = js.native
     def apply(
       `type`: pointermove,
@@ -1171,17 +1135,6 @@ object anon {
     ): Unit = js.native
     def apply(
       `type`: ratechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: readystatechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: readystatechange,
       listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
       options: AddEventListenerOptions
     ): Unit = js.native
@@ -1451,17 +1404,6 @@ object anon {
     def apply(
       `type`: transitionstart,
       listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: visibilitychange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: visibilitychange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: visibilitychange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     def apply(`type`: volumechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
@@ -1558,17 +1500,6 @@ object anon {
     def apply(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
     def apply(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
     def apply(`type`: String, listener: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
-    def apply(`type`: DOMContentLoaded, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: DOMContentLoaded,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: DOMContentLoaded,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
     def apply(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any]): Unit = js.native
     def apply(
       `type`: abort,
@@ -2314,28 +2245,6 @@ object anon {
       listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any],
       options: EventListenerOptions
     ): Unit = js.native
-    def apply(`type`: pointerlockchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: pointerlockchange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: pointerlockchange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: pointerlockerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: pointerlockerror,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: pointerlockerror,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
     def apply(`type`: pointermove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]): Unit = js.native
     def apply(
       `type`: pointermove,
@@ -2402,17 +2311,6 @@ object anon {
     ): Unit = js.native
     def apply(
       `type`: ratechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: readystatechange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: readystatechange,
       listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
       options: EventListenerOptions
     ): Unit = js.native
@@ -2684,17 +2582,6 @@ object anon {
       listener: js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any],
       options: EventListenerOptions
     ): Unit = js.native
-    def apply(`type`: visibilitychange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
-    def apply(
-      `type`: visibilitychange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: Boolean
-    ): Unit = js.native
-    def apply(
-      `type`: visibilitychange,
-      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
-      options: EventListenerOptions
-    ): Unit = js.native
     def apply(`type`: volumechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
     def apply(
       `type`: volumechange,
@@ -2778,6 +2665,26 @@ object anon {
       listener: js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, Any],
       options: EventListenerOptions
     ): Unit = js.native
+  }
+  
+  trait IncludeFragments extends StObject {
+    
+    var includeFragments: js.UndefOr[Boolean] = js.undefined
+  }
+  object IncludeFragments {
+    
+    inline def apply(): IncludeFragments = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[IncludeFragments]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncludeFragments] (val x: Self) extends AnyVal {
+      
+      inline def setIncludeFragments(value: Boolean): Self = StObject.set(x, "includeFragments", value.asInstanceOf[js.Any])
+      
+      inline def setIncludeFragmentsUndefined: Self = StObject.set(x, "includeFragments", js.undefined)
+    }
   }
   
   trait Indexf extends StObject {

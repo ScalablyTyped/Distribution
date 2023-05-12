@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AwsLambdaFunctionDetails extends StObject {
   
   /**
+    * The instruction set architecture that the function uses. Valid values are x86_64 or arm64.
+    */
+  var Architectures: js.UndefOr[NonEmptyStringList] = js.undefined
+  
+  /**
     * An AwsLambdaFunctionCode object.
     */
   var Code: js.UndefOr[AwsLambdaFunctionCode] = js.undefined
@@ -42,7 +47,7 @@ trait AwsLambdaFunctionDetails extends StObject {
   var KmsKeyArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * Indicates when the function was last updated. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
+    * Indicates when the function was last updated. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces, and date and time should be separated by T. For example, 2020-03-22T13:22:13.933Z.
     */
   var LastModified: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -60,6 +65,11 @@ trait AwsLambdaFunctionDetails extends StObject {
     * The memory that is allocated to the function.
     */
   var MemorySize: js.UndefOr[Integer] = js.undefined
+  
+  /**
+    * The type of deployment package that's used to deploy the function code to Lambda. Set to Image for a container image and Zip for a .zip file archive. 
+    */
+  var PackageType: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The latest updated revision of the function or alias.
@@ -106,6 +116,12 @@ object AwsLambdaFunctionDetails {
   @scala.inline
   implicit open class MutableBuilder[Self <: AwsLambdaFunctionDetails] (val x: Self) extends AnyVal {
     
+    inline def setArchitectures(value: NonEmptyStringList): Self = StObject.set(x, "Architectures", value.asInstanceOf[js.Any])
+    
+    inline def setArchitecturesUndefined: Self = StObject.set(x, "Architectures", js.undefined)
+    
+    inline def setArchitecturesVarargs(value: NonEmptyString*): Self = StObject.set(x, "Architectures", js.Array(value*))
+    
     inline def setCode(value: AwsLambdaFunctionCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
     inline def setCodeSha256(value: NonEmptyString): Self = StObject.set(x, "CodeSha256", value.asInstanceOf[js.Any])
@@ -151,6 +167,10 @@ object AwsLambdaFunctionDetails {
     inline def setMemorySize(value: Integer): Self = StObject.set(x, "MemorySize", value.asInstanceOf[js.Any])
     
     inline def setMemorySizeUndefined: Self = StObject.set(x, "MemorySize", js.undefined)
+    
+    inline def setPackageType(value: NonEmptyString): Self = StObject.set(x, "PackageType", value.asInstanceOf[js.Any])
+    
+    inline def setPackageTypeUndefined: Self = StObject.set(x, "PackageType", js.undefined)
     
     inline def setRevisionId(value: NonEmptyString): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
     

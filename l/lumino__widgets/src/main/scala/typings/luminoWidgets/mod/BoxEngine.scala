@@ -85,7 +85,7 @@ object BoxEngine {
     *   small, and positive if the available space is too large.
     *
     * #### Notes
-    * The [[size]] of each sizer is updated with the computed size.
+    * The {@link BoxSizer.size} of each sizer is updated with the computed size.
     *
     * This function can be called at any time to recompute the layout for
     * an existing sequence of sizers. The previously computed results will

@@ -111,9 +111,9 @@ object buildSrcLogMod {
     @js.native
     val FIT_NON_SINGLE: /* "Autosize \"fit\" only works for single views and layered views." */ String = js.native
     
-    @JSImport("vega-lite/build/src/log", "message.INTERVAL_INITIALIZED_WITH_X_Y")
+    @JSImport("vega-lite/build/src/log", "message.INTERVAL_INITIALIZED_WITH_POS")
     @js.native
-    val INTERVAL_INITIALIZED_WITH_X_Y: /* "Interval selections should be initialized using \"x\" and/or \"y\" keys." */ String = js.native
+    val INTERVAL_INITIALIZED_WITH_POS: /* "Interval selections should be initialized using \"x\", \"y\", \"longitude\", or \"latitude\" keys." */ String = js.native
     
     @JSImport("vega-lite/build/src/log", "message.INVALID_CHANNEL_FOR_AXIS")
     @js.native

@@ -1,6 +1,5 @@
 package typings.libp2pRecord
 
-import typings.libp2pRecord.anon.Key
 import typings.libp2pRecord.distSrcRecordMod.Record
 import typings.uint8arraylist.mod.Uint8ArrayList
 import org.scalablytyped.runtime.StObject
@@ -19,7 +18,7 @@ object mod {
     /**
       * Return the object format ready to be given to the protobuf library.
       */
-    def prepareSerialize(): Key = js.native
+    def prepareSerialize(): Record = js.native
     
     def serialize(): js.typedarray.Uint8Array = js.native
     

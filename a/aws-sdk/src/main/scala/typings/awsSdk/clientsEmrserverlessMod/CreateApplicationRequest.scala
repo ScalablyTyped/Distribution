@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateApplicationRequest extends StObject {
   
   /**
+    * The CPU architecture of an application.
+    */
+  var architecture: js.UndefOr[Architecture] = js.undefined
+  
+  /**
     * The configuration for an application to automatically start on job submission.
     */
   var autoStartConfiguration: js.UndefOr[AutoStartConfig] = js.undefined
@@ -20,6 +25,11 @@ trait CreateApplicationRequest extends StObject {
     * The client idempotency token of the application to create. Its value must be unique for each request.
     */
   var clientToken: ClientToken
+  
+  /**
+    * The image configuration for all worker types. You can either set this parameter or imageConfiguration for each worker type in workerTypeSpecifications.
+    */
+  var imageConfiguration: js.UndefOr[ImageConfigurationInput] = js.undefined
   
   /**
     * The capacity to initialize when the application is created.
@@ -42,7 +52,7 @@ trait CreateApplicationRequest extends StObject {
   var networkConfiguration: js.UndefOr[NetworkConfiguration] = js.undefined
   
   /**
-    * The EMR release version associated with the application.
+    * The EMR release associated with the application.
     */
   var releaseLabel: ReleaseLabel
   
@@ -55,6 +65,11 @@ trait CreateApplicationRequest extends StObject {
     * The type of application you want to start, such as Spark or Hive.
     */
   var `type`: EngineType
+  
+  /**
+    * The key-value pairs that specify worker type to WorkerTypeSpecificationInput. This parameter must contain all valid worker types for a Spark or Hive application. Valid worker types include Driver and Executor for Spark applications and HiveDriver and TezTask for Hive applications. You can either set image details in this parameter for each worker type, or in imageConfiguration for all worker types.
+    */
+  var workerTypeSpecifications: js.UndefOr[WorkerTypeSpecificationInputMap] = js.undefined
 }
 object CreateApplicationRequest {
   
@@ -67,6 +82,10 @@ object CreateApplicationRequest {
   @scala.inline
   implicit open class MutableBuilder[Self <: CreateApplicationRequest] (val x: Self) extends AnyVal {
     
+    inline def setArchitecture(value: Architecture): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
+    
+    inline def setArchitectureUndefined: Self = StObject.set(x, "architecture", js.undefined)
+    
     inline def setAutoStartConfiguration(value: AutoStartConfig): Self = StObject.set(x, "autoStartConfiguration", value.asInstanceOf[js.Any])
     
     inline def setAutoStartConfigurationUndefined: Self = StObject.set(x, "autoStartConfiguration", js.undefined)
@@ -76,6 +95,10 @@ object CreateApplicationRequest {
     inline def setAutoStopConfigurationUndefined: Self = StObject.set(x, "autoStopConfiguration", js.undefined)
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    
+    inline def setImageConfiguration(value: ImageConfigurationInput): Self = StObject.set(x, "imageConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setImageConfigurationUndefined: Self = StObject.set(x, "imageConfiguration", js.undefined)
     
     inline def setInitialCapacity(value: InitialCapacityConfigMap): Self = StObject.set(x, "initialCapacity", value.asInstanceOf[js.Any])
     
@@ -100,5 +123,9 @@ object CreateApplicationRequest {
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     inline def setType(value: EngineType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setWorkerTypeSpecifications(value: WorkerTypeSpecificationInputMap): Self = StObject.set(x, "workerTypeSpecifications", value.asInstanceOf[js.Any])
+    
+    inline def setWorkerTypeSpecificationsUndefined: Self = StObject.set(x, "workerTypeSpecifications", js.undefined)
   }
 }

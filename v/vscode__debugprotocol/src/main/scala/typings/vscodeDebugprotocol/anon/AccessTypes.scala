@@ -13,7 +13,7 @@ trait AccessTypes extends StObject {
   /** Attribute indicates that a potential data breakpoint could be persisted across sessions. */
   var canPersist: js.UndefOr[Boolean] = js.undefined
   
-  /** An identifier for the data on which a data breakpoint can be registered with the setDataBreakpoints request or null if no data breakpoint is available. */
+  /** An identifier for the data on which a data breakpoint can be registered with the `setDataBreakpoints` request or null if no data breakpoint is available. */
   var dataId: String | Null
   
   /** UI string that describes on what data the breakpoint is set on or why a data breakpoint is not available. */

@@ -6,12 +6,12 @@ import typings.chartJs.chartJsStrings.logarithmic
 import typings.chartJs.chartJsStrings.radialLinear
 import typings.chartJs.chartJsStrings.time
 import typings.chartJs.chartJsStrings.timeseries
-import typings.chartJs.mod.ScaleOptionsByType
+import typings.chartJs.distTypesIndexMod.ScaleOptionsByType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {[ key in chart.js.chart.js.ScaleType ]: chart.js.chart.js.ScaleOptionsByType<key>} */
+/* Inlined {[ key in chart.js.chart.js/dist/types/index.ScaleType ]: chart.js.chart.js/dist/types/index.ScaleOptionsByType<key>} */
 trait keyinScaleTypeScaleOption extends StObject {
   
   var category: ScaleOptionsByType[typings.chartJs.chartJsStrings.category]

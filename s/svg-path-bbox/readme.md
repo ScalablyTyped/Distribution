@@ -1,7 +1,7 @@
 
 # Scala.js typings for svg-path-bbox
 
-Typings are for version 1.2.2
+Typings are for version 1.2.4
 
 ## Library description:
 Compute bounding boxes of SVG paths.

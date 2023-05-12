@@ -6,23 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Architecture extends StObject {
   
-  var architecture: String
+  var architecture: js.UndefOr[String] = js.undefined
   
-  var name: typings.node.processMod.global.NodeJS.Platform
+  var name: js.UndefOr[typings.node.processMod.global.NodeJS.Platform] = js.undefined
   
   var `type`: String
   
-  var version: String
+  var version: js.UndefOr[String] = js.undefined
 }
 object Architecture {
   
-  inline def apply(
-    architecture: String,
-    name: typings.node.processMod.global.NodeJS.Platform,
-    `type`: String,
-    version: String
-  ): Architecture = {
-    val __obj = js.Dynamic.literal(architecture = architecture.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+  inline def apply(`type`: String): Architecture = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Architecture]
   }
@@ -32,10 +27,16 @@ object Architecture {
     
     inline def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     
+    inline def setArchitectureUndefined: Self = StObject.set(x, "architecture", js.undefined)
+    
     inline def setName(value: typings.node.processMod.global.NodeJS.Platform): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

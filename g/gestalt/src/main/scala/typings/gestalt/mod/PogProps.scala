@@ -6,6 +6,7 @@ import typings.gestalt.gestaltInts.`2`
 import typings.gestalt.gestaltInts.`3`
 import typings.gestalt.gestaltInts.`4`
 import typings.gestalt.gestaltInts.`5`
+import typings.gestalt.gestaltStrings.brandPrimary
 import typings.gestalt.gestaltStrings.darkGray
 import typings.gestalt.gestaltStrings.gray
 import typings.gestalt.gestaltStrings.lg
@@ -38,7 +39,7 @@ trait PogProps extends StObject {
   
   var icon: js.UndefOr[Icons] = js.undefined
   
-  var iconColor: js.UndefOr[gray | darkGray | red | white] = js.undefined
+  var iconColor: js.UndefOr[gray | darkGray | red | white | brandPrimary] = js.undefined
   
   var padding: js.UndefOr[`1` | `2` | `3` | `4` | `5`] = js.undefined
   
@@ -82,7 +83,7 @@ object PogProps {
     
     inline def setIcon(value: Icons): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    inline def setIconColor(value: gray | darkGray | red | white): Self = StObject.set(x, "iconColor", value.asInstanceOf[js.Any])
+    inline def setIconColor(value: gray | darkGray | red | white | brandPrimary): Self = StObject.set(x, "iconColor", value.asInstanceOf[js.Any])
     
     inline def setIconColorUndefined: Self = StObject.set(x, "iconColor", js.undefined)
     

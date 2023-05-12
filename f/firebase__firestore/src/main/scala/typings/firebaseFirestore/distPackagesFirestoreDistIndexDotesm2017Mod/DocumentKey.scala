@@ -29,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class DocumentKey protected ()
   extends StObject
-     with ct {
+     with ht {
   def this(t: Any) = this()
 }
 object DocumentKey {
@@ -42,13 +42,13 @@ object DocumentKey {
   inline def comparator(t: Any, e: Any): `0` | `1` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("comparator")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[`0` | `1` | `-1`]
   
   /* static member */
-  inline def empty(): ct = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[ct]
+  inline def empty(): ht = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[ht]
   
   /* static member */
-  inline def fromName(t: Any): ct = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(t.asInstanceOf[js.Any]).asInstanceOf[ct]
+  inline def fromName(t: Any): ht = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(t.asInstanceOf[js.Any]).asInstanceOf[ht]
   
   /* static member */
-  inline def fromPath(t: Any): ct = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPath")(t.asInstanceOf[js.Any]).asInstanceOf[ct]
+  inline def fromPath(t: Any): ht = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPath")(t.asInstanceOf[js.Any]).asInstanceOf[ht]
   
   /**
     * Creates and returns a new document key with the given segments.
@@ -56,7 +56,7 @@ object DocumentKey {
     * @param segments - The segments of the path to the document
     * @returns A new instance of DocumentKey
     */ /* static member */
-  inline def fromSegments(t: Any): ct = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSegments")(t.asInstanceOf[js.Any]).asInstanceOf[ct]
+  inline def fromSegments(t: Any): ht = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSegments")(t.asInstanceOf[js.Any]).asInstanceOf[ht]
   
   /* static member */
   inline def isDocumentKey(t: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDocumentKey")(t.asInstanceOf[js.Any]).asInstanceOf[Boolean]

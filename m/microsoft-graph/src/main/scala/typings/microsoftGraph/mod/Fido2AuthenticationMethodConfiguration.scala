@@ -8,7 +8,7 @@ trait Fido2AuthenticationMethodConfiguration
   extends StObject
      with AuthenticationMethodConfiguration {
   
-  // A collection of users or groups who are enabled to use the authentication method.
+  // A collection of groups that are enabled to use the authentication method.
   var includeTargets: js.UndefOr[NullableOption[js.Array[AuthenticationMethodTarget]]] = js.undefined
   
   // Determines whether attestation must be enforced for FIDO2 security key registration.

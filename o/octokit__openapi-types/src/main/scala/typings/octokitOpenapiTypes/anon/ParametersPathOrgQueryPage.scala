@@ -8,11 +8,11 @@ trait ParametersPathOrgQueryPage extends StObject {
   
   var parameters: PathOrgQueryPage
   
-  var responses: `500`
+  var responses: `200ContentApplicationjsonRepositorycacheusages`
 }
 object ParametersPathOrgQueryPage {
   
-  inline def apply(parameters: PathOrgQueryPage, responses: `500`): ParametersPathOrgQueryPage = {
+  inline def apply(parameters: PathOrgQueryPage, responses: `200ContentApplicationjsonRepositorycacheusages`): ParametersPathOrgQueryPage = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathOrgQueryPage]
   }
@@ -22,6 +22,6 @@ object ParametersPathOrgQueryPage {
     
     inline def setParameters(value: PathOrgQueryPage): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `500`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200ContentApplicationjsonRepositorycacheusages`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

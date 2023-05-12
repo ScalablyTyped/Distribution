@@ -12,7 +12,7 @@ trait CreateDeploymentRequest extends StObject {
   var cacheClusterEnabled: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
-    * Specifies the cache cluster size for the Stage resource specified in the input, if a cache cluster is enabled.
+    * The stage's cache capacity in GB. For more information about choosing a cache size, see Enabling API caching to enhance responsiveness.
     */
   var cacheClusterSize: js.UndefOr[CacheClusterSize] = js.undefined
   

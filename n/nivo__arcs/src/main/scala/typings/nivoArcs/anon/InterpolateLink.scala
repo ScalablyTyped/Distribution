@@ -1,70 +1,76 @@
 package typings.nivoArcs.anon
 
+import typings.nivoArcs.distTypesTypesMod.DatumWithArcAndColor
+import typings.nivoArcs.nivoArcsStrings.end
+import typings.nivoArcs.nivoArcsStrings.start
+import typings.react.mod.global.JSX.Element
+import typings.reactSpringCore.mod.Interpolation
+import typings.reactSpringCore.mod.TransitionFn
+import typings.reactSpringCore.mod.TransitionRenderFn
+import typings.reactSpringWeb.mod.SpringValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InterpolateLink extends StObject {
+trait InterpolateLink[Datum /* <: DatumWithArcAndColor */] extends StObject {
   
   def interpolateLink(
-    startAngleValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['startAngle']> */ Any,
-    endAngleValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['endAngle']> */ Any,
-    innerRadiusValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['innerRadius']> */ Any,
-    outerRadiusValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['outerRadius']> */ Any,
-    offsetValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['offset']> */ Any,
-    diagonalLengthValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['diagonalLength']> */ Any,
-    straightLengthValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['straightLength']> */ Any
-  ): Any
+    startAngleValue: SpringValue[Double],
+    endAngleValue: SpringValue[Double],
+    innerRadiusValue: SpringValue[Double],
+    outerRadiusValue: SpringValue[Double],
+    offsetValue: SpringValue[Double],
+    diagonalLengthValue: SpringValue[Double],
+    straightLengthValue: SpringValue[Double]
+  ): Interpolation[String | Null, Any]
   
   def interpolateTextAnchor(
-    startAngleValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['startAngle']> */ Any,
-    endAngleValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['endAngle']> */ Any,
-    innerRadiusValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['innerRadius']> */ Any,
-    outerRadiusValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['outerRadius']> */ Any
-  ): Any
+    startAngleValue: SpringValue[Double],
+    endAngleValue: SpringValue[Double],
+    innerRadiusValue: SpringValue[Double],
+    outerRadiusValue: SpringValue[Double]
+  ): Interpolation[end | start, Any]
   
   def interpolateTextPosition(
-    startAngleValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['startAngle']> */ Any,
-    endAngleValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['endAngle']> */ Any,
-    innerRadiusValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['innerRadius']> */ Any,
-    outerRadiusValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['outerRadius']> */ Any,
-    offsetValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['offset']> */ Any,
-    diagonalLengthValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['diagonalLength']> */ Any,
-    straightLengthValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['straightLength']> */ Any,
-    textOffsetValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['textOffset']> */ Any
-  ): Any
+    startAngleValue: SpringValue[Double],
+    endAngleValue: SpringValue[Double],
+    innerRadiusValue: SpringValue[Double],
+    outerRadiusValue: SpringValue[Double],
+    offsetValue: SpringValue[Double],
+    diagonalLengthValue: SpringValue[Double],
+    straightLengthValue: SpringValue[Double],
+    textOffsetValue: SpringValue[Double]
+  ): Interpolation[String, Any]
   
-  var transition: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_web.TransitionFn<Datum, {  offset :number,   opacity :number,   startAngle :number,   endAngle :number,   innerRadius :number,   outerRadius :number,   textColor :string,   diagonalLength :number,   straightLength :number,   textOffset :number,   linkColor :string}> */ Any
+  var transition: TransitionFn[Datum, InnerRadius]
 }
 object InterpolateLink {
   
-  inline def apply(
-    interpolateLink: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['startAngle']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['endAngle']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['innerRadius']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['outerRadius']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['offset']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['diagonalLength']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['straightLength']> */ Any) => Any,
-    interpolateTextAnchor: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['startAngle']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['endAngle']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['innerRadius']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['outerRadius']> */ Any) => Any,
-    interpolateTextPosition: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['startAngle']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['endAngle']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['innerRadius']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['outerRadius']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['offset']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['diagonalLength']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['straightLength']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['textOffset']> */ Any) => Any,
-    transition: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_web.TransitionFn<Datum, {  offset :number,   opacity :number,   startAngle :number,   endAngle :number,   innerRadius :number,   outerRadius :number,   textColor :string,   diagonalLength :number,   straightLength :number,   textOffset :number,   linkColor :string}> */ Any
-  ): InterpolateLink = {
-    val __obj = js.Dynamic.literal(interpolateLink = js.Any.fromFunction7(interpolateLink), interpolateTextAnchor = js.Any.fromFunction4(interpolateTextAnchor), interpolateTextPosition = js.Any.fromFunction8(interpolateTextPosition), transition = transition.asInstanceOf[js.Any])
-    __obj.asInstanceOf[InterpolateLink]
+  inline def apply[Datum /* <: DatumWithArcAndColor */](
+    interpolateLink: (SpringValue[Double], SpringValue[Double], SpringValue[Double], SpringValue[Double], SpringValue[Double], SpringValue[Double], SpringValue[Double]) => Interpolation[String | Null, Any],
+    interpolateTextAnchor: (SpringValue[Double], SpringValue[Double], SpringValue[Double], SpringValue[Double]) => Interpolation[end | start, Any],
+    interpolateTextPosition: (SpringValue[Double], SpringValue[Double], SpringValue[Double], SpringValue[Double], SpringValue[Double], SpringValue[Double], SpringValue[Double], SpringValue[Double]) => Interpolation[String, Any],
+    transition: /* render */ TransitionRenderFn[Datum, InnerRadius] => Element
+  ): InterpolateLink[Datum] = {
+    val __obj = js.Dynamic.literal(interpolateLink = js.Any.fromFunction7(interpolateLink), interpolateTextAnchor = js.Any.fromFunction4(interpolateTextAnchor), interpolateTextPosition = js.Any.fromFunction8(interpolateTextPosition), transition = js.Any.fromFunction1(transition))
+    __obj.asInstanceOf[InterpolateLink[Datum]]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: InterpolateLink] (val x: Self) extends AnyVal {
+  implicit open class MutableBuilder[Self <: InterpolateLink[?], Datum /* <: DatumWithArcAndColor */] (val x: Self & InterpolateLink[Datum]) extends AnyVal {
     
     inline def setInterpolateLink(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['startAngle']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['endAngle']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['innerRadius']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['outerRadius']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['offset']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['diagonalLength']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['straightLength']> */ Any) => Any
+      value: (SpringValue[Double], SpringValue[Double], SpringValue[Double], SpringValue[Double], SpringValue[Double], SpringValue[Double], SpringValue[Double]) => Interpolation[String | Null, Any]
     ): Self = StObject.set(x, "interpolateLink", js.Any.fromFunction7(value))
     
     inline def setInterpolateTextAnchor(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['startAngle']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['endAngle']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['innerRadius']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['outerRadius']> */ Any) => Any
+      value: (SpringValue[Double], SpringValue[Double], SpringValue[Double], SpringValue[Double]) => Interpolation[end | start, Any]
     ): Self = StObject.set(x, "interpolateTextAnchor", js.Any.fromFunction4(value))
     
     inline def setInterpolateTextPosition(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['startAngle']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['endAngle']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['innerRadius']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['outerRadius']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['offset']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['diagonalLength']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['straightLength']> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<AnimatedProps['textOffset']> */ Any) => Any
+      value: (SpringValue[Double], SpringValue[Double], SpringValue[Double], SpringValue[Double], SpringValue[Double], SpringValue[Double], SpringValue[Double], SpringValue[Double]) => Interpolation[String, Any]
     ): Self = StObject.set(x, "interpolateTextPosition", js.Any.fromFunction8(value))
     
-    inline def setTransition(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_web.TransitionFn<Datum, {  offset :number,   opacity :number,   startAngle :number,   endAngle :number,   innerRadius :number,   outerRadius :number,   textColor :string,   diagonalLength :number,   straightLength :number,   textOffset :number,   linkColor :string}> */ Any
-    ): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    inline def setTransition(value: /* render */ TransitionRenderFn[Datum, InnerRadius] => Element): Self = StObject.set(x, "transition", js.Any.fromFunction1(value))
   }
 }

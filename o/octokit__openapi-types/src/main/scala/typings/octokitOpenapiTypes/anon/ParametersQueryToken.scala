@@ -8,11 +8,11 @@ trait ParametersQueryToken extends StObject {
   
   var parameters: QueryToken
   
-  var responses: `401403404`
+  var responses: `99`
 }
 object ParametersQueryToken {
   
-  inline def apply(parameters: QueryToken, responses: `401403404`): ParametersQueryToken = {
+  inline def apply(parameters: QueryToken, responses: `99`): ParametersQueryToken = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryToken]
   }
@@ -22,6 +22,6 @@ object ParametersQueryToken {
     
     inline def setParameters(value: QueryToken): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `401403404`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `99`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

@@ -73,10 +73,50 @@ object streamMod {
         ]
       ] = js.native
     
+    def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    /**
+      * Event emitter
+      * The defined events on documents including:
+      * 1.  close
+      * 2.  data
+      * 3.  drain
+      * 4.  end
+      * 5.  error
+      * 6.  finish
+      * 7.  pause
+      * 8.  pipe
+      * 9.  readable
+      * 10. resume
+      * 11. unpipe
+      */
+    @JSName("addListener")
+    def addListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("addListener")
+    def addListener_data(event: data, listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
+    @JSName("addListener")
+    def addListener_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("addListener")
+    def addListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("addListener")
+    def addListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @JSName("addListener")
+    def addListener_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("addListener")
+    def addListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("addListener")
+    def addListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    @JSName("addListener")
+    def addListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("addListener")
+    def addListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("addListener")
+    def addListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    
     /**
       * If `false` then the stream will automatically end the writable side when the
       * readable side ends. Set initially by the `allowHalfOpen` constructor option,
-      * which defaults to `false`.
+      * which defaults to `true`.
       *
       * This can be changed manually to change the half-open behavior of an existing`Duplex` stream instance, but must be changed before the `'end'` event is
       * emitted.
@@ -88,6 +128,31 @@ object streamMod {
     
     def cork(): Unit = js.native
     
+    def emit(event: String, args: Any*): Boolean = js.native
+    def emit(event: js.Symbol, args: Any*): Boolean = js.native
+    @JSName("emit")
+    def emit_close(event: close): Boolean = js.native
+    @JSName("emit")
+    def emit_data(event: data, chunk: Any): Boolean = js.native
+    @JSName("emit")
+    def emit_drain(event: drain): Boolean = js.native
+    @JSName("emit")
+    def emit_end(event: end): Boolean = js.native
+    @JSName("emit")
+    def emit_error(event: error, err: js.Error): Boolean = js.native
+    @JSName("emit")
+    def emit_finish(event: finish): Boolean = js.native
+    @JSName("emit")
+    def emit_pause(event: pause): Boolean = js.native
+    @JSName("emit")
+    def emit_pipe(event: pipe, src: Readable): Boolean = js.native
+    @JSName("emit")
+    def emit_readable(event: readable): Boolean = js.native
+    @JSName("emit")
+    def emit_resume(event: resume): Boolean = js.native
+    @JSName("emit")
+    def emit_unpipe(event: unpipe, src: Readable): Boolean = js.native
+    
     def end(): this.type = js.native
     def end(cb: js.Function0[Unit]): this.type = js.native
     def end(chunk: Any): this.type = js.native
@@ -97,6 +162,131 @@ object streamMod {
     def end(chunk: Any, encoding: BufferEncoding, cb: js.Function0[Unit]): this.type = js.native
     
     val errored: js.Error | Null = js.native
+    
+    def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    def on(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    @JSName("on")
+    def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    def on_data(event: data, listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
+    @JSName("on")
+    def on_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    def on_end(event: end, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @JSName("on")
+    def on_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    def on_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    def on_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    @JSName("on")
+    def on_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    def on_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    def on_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    
+    def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    def once(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    @JSName("once")
+    def once_close(event: close, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("once")
+    def once_data(event: data, listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
+    @JSName("once")
+    def once_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("once")
+    def once_end(event: end, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("once")
+    def once_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @JSName("once")
+    def once_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("once")
+    def once_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("once")
+    def once_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    @JSName("once")
+    def once_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("once")
+    def once_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("once")
+    def once_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    
+    def prependListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    @JSName("prependListener")
+    def prependListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependListener")
+    def prependListener_data(event: data, listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
+    @JSName("prependListener")
+    def prependListener_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependListener")
+    def prependListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependListener")
+    def prependListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @JSName("prependListener")
+    def prependListener_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependListener")
+    def prependListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependListener")
+    def prependListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    @JSName("prependListener")
+    def prependListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependListener")
+    def prependListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependListener")
+    def prependListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    
+    def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    def prependOnceListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    def prependOnceListener_data(event: data, listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    def prependOnceListener_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    def prependOnceListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    def prependOnceListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    def prependOnceListener_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    def prependOnceListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    def prependOnceListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    def prependOnceListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    def prependOnceListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    def prependOnceListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    
+    def removeListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    @JSName("removeListener")
+    def removeListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("removeListener")
+    def removeListener_data(event: data, listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
+    @JSName("removeListener")
+    def removeListener_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("removeListener")
+    def removeListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("removeListener")
+    def removeListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+    @JSName("removeListener")
+    def removeListener_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("removeListener")
+    def removeListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("removeListener")
+    def removeListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+    @JSName("removeListener")
+    def removeListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("removeListener")
+    def removeListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("removeListener")
+    def removeListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
     
     def setDefaultEncoding(encoding: BufferEncoding): this.type = js.native
     
@@ -223,7 +413,7 @@ object streamMod {
     def addListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
     
     /**
-      * Is true after 'close' has been emitted.
+      * Is `true` after `'close'` has been emitted.
       * @since v18.0.0
       */
     val closed: Boolean = js.native
@@ -421,7 +611,7 @@ object streamMod {
       * // Pull off a header delimited by \n\n.
       * // Use unshift() if we get too much.
       * // Call the callback with (error, header, stream).
-      * const { StringDecoder } = require('string_decoder');
+      * const { StringDecoder } = require('node:string_decoder');
       * function parseHeader(stream, callback) {
       *   stream.on('error', callback);
       *   stream.on('readable', onReadable);
@@ -461,7 +651,7 @@ object streamMod {
       * however it is best to simply avoid calling `readable.unshift()` while in the
       * process of performing a read.
       * @since v0.9.11
-      * @param chunk Chunk of data to unshift onto the read queue. For streams not operating in object mode, `chunk` must be a string, `Buffer`, `Uint8Array` or `null`. For object mode
+      * @param chunk Chunk of data to unshift onto the read queue. For streams not operating in object mode, `chunk` must be a string, `Buffer`, `Uint8Array`, or `null`. For object mode
       * streams, `chunk` may be any JavaScript value.
       * @param encoding Encoding of string chunks. Must be a valid `Buffer` encoding, such as `'utf8'` or `'ascii'`.
       */
@@ -593,7 +783,7 @@ object streamMod {
     def addListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
     
     /**
-      * Is true after 'close' has been emitted.
+      * Is `true` after `'close'` has been emitted.
       * @since v18.0.0
       */
     val closed: Boolean = js.native
@@ -805,7 +995,7 @@ object streamMod {
     val writableLength: Double = js.native
     
     /**
-      * Is `true` if the stream's buffer has been full and stream will emit 'drain'.
+      * Is `true` if the stream's buffer has been full and stream will emit `'drain'`.
       * @since v15.2.0, v14.17.0
       */
     val writableNeedDrain: Boolean = js.native
@@ -906,18 +1096,21 @@ object streamMod {
   }
   
   /**
+    * A stream to attach a signal to.
+    *
     * Attaches an AbortSignal to a readable or writeable stream. This lets code
     * control stream destruction using an `AbortController`.
     *
-    * Calling `abort` on the `AbortController` corresponding to the passed`AbortSignal` will behave the same way as calling `.destroy(new AbortError())`on the stream.
+    * Calling `abort` on the `AbortController` corresponding to the passed`AbortSignal` will behave the same way as calling `.destroy(new AbortError())`on the stream, and `controller.error(new
+    * AbortError())` for webstreams.
     *
     * ```js
-    * const fs = require('fs');
+    * const fs = require('node:fs');
     *
     * const controller = new AbortController();
     * const read = addAbortSignal(
     *   controller.signal,
-    *   fs.createReadStream(('object.json'))
+    *   fs.createReadStream(('object.json')),
     * );
     * // Later, abort the operation closing the stream
     * controller.abort();
@@ -930,7 +1123,7 @@ object streamMod {
     * setTimeout(() => controller.abort(), 10_000); // set a timeout
     * const stream = addAbortSignal(
     *   controller.signal,
-    *   fs.createReadStream(('object.json'))
+    *   fs.createReadStream(('object.json')),
     * );
     * (async () => {
     *   try {
@@ -945,6 +1138,37 @@ object streamMod {
     *     }
     *   }
     * })();
+    * ```
+    *
+    * Or using an `AbortSignal` with a ReadableStream:
+    *
+    * ```js
+    * const controller = new AbortController();
+    * const rs = new ReadableStream({
+    *   start(controller) {
+    *     controller.enqueue('hello');
+    *     controller.enqueue('world');
+    *     controller.close();
+    *   },
+    * });
+    *
+    * addAbortSignal(controller.signal, rs);
+    *
+    * finished(rs, (err) => {
+    *   if (err) {
+    *     if (err.name === 'AbortError') {
+    *       // The operation was cancelled
+    *     }
+    *   }
+    * });
+    *
+    * const reader = rs.getReader();
+    *
+    * reader.read().then(({ value, done }) => {
+    *   console.log(value); // hello
+    *   console.log(done); // false
+    *   controller.abort();
+    * });
     * ```
     * @since v15.4.0
     * @param signal A signal representing possible cancellation
@@ -987,11 +1211,14 @@ object streamMod {
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("finished")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   inline def finished(stream: ReadableStream, callback: js.Function1[/* err */ js.UndefOr[ErrnoException | Null], Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("finished")(stream.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   /**
+    * A readable and/or writable stream/webstream.
+    *
     * A function to get notified when a stream is no longer readable, writable
     * or has experienced an error or a premature close event.
     *
     * ```js
-    * const { finished } = require('stream');
+    * const { finished } = require('node:stream');
+    * const fs = require('node:fs');
     *
     * const rs = fs.createReadStream('archive.tar');
     *
@@ -1009,21 +1236,7 @@ object streamMod {
     * Especially useful in error handling scenarios where a stream is destroyed
     * prematurely (like an aborted HTTP request), and will not emit `'end'`or `'finish'`.
     *
-    * The `finished` API provides promise version:
-    *
-    * ```js
-    * const { finished } = require('stream/promises');
-    *
-    * const rs = fs.createReadStream('archive.tar');
-    *
-    * async function run() {
-    *   await finished(rs);
-    *   console.log('Stream is done reading.');
-    * }
-    *
-    * run().catch(console.error);
-    * rs.resume(); // Drain the stream.
-    * ```
+    * The `finished` API provides `promise version`.
     *
     * `stream.finished()` leaves dangling event listeners (in particular`'error'`, `'end'`, `'finish'` and `'close'`) after `callback` has been
     * invoked. The reason for this is so that unexpected `'error'` events (due to
@@ -1054,11 +1267,20 @@ object streamMod {
     callback: js.Function1[/* err */ js.UndefOr[ErrnoException | Null], Unit]
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("finished")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
+  /**
+    * Returns the default highWaterMark used by streams.
+    * Defaults to `16384` (16 KiB), or `16` for `objectMode`.
+    * @since v19.9.0
+    * @param objectMode
+    */
+  inline def getDefaultHighWaterMark(objectMode: Boolean): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultHighWaterMark")(objectMode.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
   inline def isErrored(stream: ReadableStream): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isErrored")(stream.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def isErrored(stream: WritableStream): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isErrored")(stream.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   /**
     * Returns whether the stream has encountered an error.
-    * @since v17.3.0
+    * @since v17.3.0, v16.14.0
+    * @experimental
     */
   inline def isErrored(stream: Readable): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isErrored")(stream.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def isErrored(stream: Writable): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isErrored")(stream.asInstanceOf[js.Any]).asInstanceOf[Boolean]
@@ -1066,7 +1288,8 @@ object streamMod {
   inline def isReadable(stream: ReadableStream): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReadable")(stream.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   /**
     * Returns whether the stream is readable.
-    * @since v17.4.0
+    * @since v17.4.0, v16.14.0
+    * @experimental
     */
   inline def isReadable(stream: Readable): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReadable")(stream.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
@@ -1090,9 +1313,9 @@ object streamMod {
     * properly cleaning up and provide a callback when the pipeline is complete.
     *
     * ```js
-    * const { pipeline } = require('stream');
-    * const fs = require('fs');
-    * const zlib = require('zlib');
+    * const { pipeline } = require('node:stream');
+    * const fs = require('node:fs');
+    * const zlib = require('node:zlib');
     *
     * // Use the pipeline API to easily pipe a series of streams
     * // together and get notified when the pipeline is fully done.
@@ -1109,95 +1332,11 @@ object streamMod {
     *     } else {
     *       console.log('Pipeline succeeded.');
     *     }
-    *   }
+    *   },
     * );
     * ```
     *
-    * The `pipeline` API provides a promise version, which can also
-    * receive an options argument as the last parameter with a`signal` `AbortSignal` property. When the signal is aborted,`destroy` will be called on the underlying pipeline, with
-    * an`AbortError`.
-    *
-    * ```js
-    * const { pipeline } = require('stream/promises');
-    *
-    * async function run() {
-    *   await pipeline(
-    *     fs.createReadStream('archive.tar'),
-    *     zlib.createGzip(),
-    *     fs.createWriteStream('archive.tar.gz')
-    *   );
-    *   console.log('Pipeline succeeded.');
-    * }
-    *
-    * run().catch(console.error);
-    * ```
-    *
-    * To use an `AbortSignal`, pass it inside an options object,
-    * as the last argument:
-    *
-    * ```js
-    * const { pipeline } = require('stream/promises');
-    *
-    * async function run() {
-    *   const ac = new AbortController();
-    *   const signal = ac.signal;
-    *
-    *   setTimeout(() => ac.abort(), 1);
-    *   await pipeline(
-    *     fs.createReadStream('archive.tar'),
-    *     zlib.createGzip(),
-    *     fs.createWriteStream('archive.tar.gz'),
-    *     { signal },
-    *   );
-    * }
-    *
-    * run().catch(console.error); // AbortError
-    * ```
-    *
-    * The `pipeline` API also supports async generators:
-    *
-    * ```js
-    * const { pipeline } = require('stream/promises');
-    * const fs = require('fs');
-    *
-    * async function run() {
-    *   await pipeline(
-    *     fs.createReadStream('lowercase.txt'),
-    *     async function* (source, { signal }) {
-    *       source.setEncoding('utf8');  // Work with strings rather than `Buffer`s.
-    *       for await (const chunk of source) {
-    *         yield await processChunk(chunk, { signal });
-    *       }
-    *     },
-    *     fs.createWriteStream('uppercase.txt')
-    *   );
-    *   console.log('Pipeline succeeded.');
-    * }
-    *
-    * run().catch(console.error);
-    * ```
-    *
-    * Remember to handle the `signal` argument passed into the async generator.
-    * Especially in the case where the async generator is the source for the
-    * pipeline (i.e. first argument) or the pipeline will never complete.
-    *
-    * ```js
-    * const { pipeline } = require('stream/promises');
-    * const fs = require('fs');
-    *
-    * async function run() {
-    *   await pipeline(
-    *     async function* ({ signal }) {
-    *       await someLongRunningfn({ signal });
-    *       yield 'asd';
-    *     },
-    *     fs.createWriteStream('uppercase.txt')
-    *   );
-    *   console.log('Pipeline succeeded.');
-    * }
-    *
-    * run().catch(console.error);
-    * ```
+    * The `pipeline` API provides a `promise version`.
     *
     * `stream.pipeline()` will call `stream.destroy(err)` on all streams except:
     *
@@ -1216,9 +1355,9 @@ object streamMod {
     * See the example below:
     *
     * ```js
-    * const fs = require('fs');
-    * const http = require('http');
-    * const { pipeline } = require('stream');
+    * const fs = require('node:fs');
+    * const http = require('node:http');
+    * const { pipeline } = require('node:stream');
     *
     * const server = http.createServer((req, res) => {
     *   const fileStream = fs.createReadStream('./fileNotExist.txt');
@@ -1311,6 +1450,14 @@ object streamMod {
       options: PipelineOptions
     ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("pipeline")(source.asInstanceOf[js.Any], transform1.asInstanceOf[js.Any], transform2.asInstanceOf[js.Any], transform3.asInstanceOf[js.Any], transform4.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   }
+  
+  /**
+    * Sets the default highWaterMark used by streams.
+    * @since v19.9.0
+    * @param objectMode
+    * @param value highWaterMark value
+    */
+  inline def setDefaultHighWaterMark(objectMode: Boolean, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultHighWaterMark")(objectMode.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.node.eventsMod.Abortable because Already inherited
@@ -1575,19 +1722,27 @@ object streamMod {
   
   trait PipelineOptions extends StObject {
     
-    var signal: AbortSignal
+    var end: js.UndefOr[Boolean] = js.undefined
+    
+    var signal: js.UndefOr[AbortSignal] = js.undefined
   }
   object PipelineOptions {
     
-    inline def apply(signal: AbortSignal): PipelineOptions = {
-      val __obj = js.Dynamic.literal(signal = signal.asInstanceOf[js.Any])
+    inline def apply(): PipelineOptions = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PipelineOptions]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: PipelineOptions] (val x: Self) extends AnyVal {
       
+      inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      
       inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     }
   }
   

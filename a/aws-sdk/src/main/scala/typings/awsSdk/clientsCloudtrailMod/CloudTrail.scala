@@ -12,12 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CloudTrail extends Service {
   
   /**
-    * Adds one or more tags to a trail or event data store, up to a limit of 50. Overwrites an existing tag's value when a new value is specified for an existing tag key. Tag key names must be unique for a trail; you cannot have two keys with the same name but different values. If you specify a key without a value, the tag will be created with the specified key and a value of null. You can tag a trail or event data store that applies to all Amazon Web Services Regions only from the Region in which the trail or event data store was created (also known as its home region).
+    * Adds one or more tags to a trail, event data store, or channel, up to a limit of 50. Overwrites an existing tag's value when a new value is specified for an existing tag key. Tag key names must be unique; you cannot have two keys with the same name but different values. If you specify a key without a value, the tag will be created with the specified key and a value of null. You can tag a trail or event data store that applies to all Amazon Web Services Regions only from the Region in which the trail or event data store was created (also known as its home region).
     */
   def addTags(): Request[AddTagsResponse, AWSError] = js.native
   def addTags(callback: js.Function2[/* err */ AWSError, /* data */ AddTagsResponse, Unit]): Request[AddTagsResponse, AWSError] = js.native
   /**
-    * Adds one or more tags to a trail or event data store, up to a limit of 50. Overwrites an existing tag's value when a new value is specified for an existing tag key. Tag key names must be unique for a trail; you cannot have two keys with the same name but different values. If you specify a key without a value, the tag will be created with the specified key and a value of null. You can tag a trail or event data store that applies to all Amazon Web Services Regions only from the Region in which the trail or event data store was created (also known as its home region).
+    * Adds one or more tags to a trail, event data store, or channel, up to a limit of 50. Overwrites an existing tag's value when a new value is specified for an existing tag key. Tag key names must be unique; you cannot have two keys with the same name but different values. If you specify a key without a value, the tag will be created with the specified key and a value of null. You can tag a trail or event data store that applies to all Amazon Web Services Regions only from the Region in which the trail or event data store was created (also known as its home region).
     */
   def addTags(params: AddTagsRequest): Request[AddTagsResponse, AWSError] = js.native
   def addTags(
@@ -41,6 +41,20 @@ trait CloudTrail extends Service {
   
   @JSName("config")
   var config_CloudTrail: ConfigBase & ClientConfiguration = js.native
+  
+  /**
+    * Creates a channel for CloudTrail to ingest events from a partner or external source. After you create a channel, a CloudTrail Lake event data store can log events from the partner or source that you specify.
+    */
+  def createChannel(): Request[CreateChannelResponse, AWSError] = js.native
+  def createChannel(callback: js.Function2[/* err */ AWSError, /* data */ CreateChannelResponse, Unit]): Request[CreateChannelResponse, AWSError] = js.native
+  /**
+    * Creates a channel for CloudTrail to ingest events from a partner or external source. After you create a channel, a CloudTrail Lake event data store can log events from the partner or source that you specify.
+    */
+  def createChannel(params: CreateChannelRequest): Request[CreateChannelResponse, AWSError] = js.native
+  def createChannel(
+    params: CreateChannelRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateChannelResponse, Unit]
+  ): Request[CreateChannelResponse, AWSError] = js.native
   
   /**
     * Creates a new event data store.
@@ -71,6 +85,20 @@ trait CloudTrail extends Service {
   ): Request[CreateTrailResponse, AWSError] = js.native
   
   /**
+    * Deletes a channel.
+    */
+  def deleteChannel(): Request[DeleteChannelResponse, AWSError] = js.native
+  def deleteChannel(callback: js.Function2[/* err */ AWSError, /* data */ DeleteChannelResponse, Unit]): Request[DeleteChannelResponse, AWSError] = js.native
+  /**
+    * Deletes a channel.
+    */
+  def deleteChannel(params: DeleteChannelRequest): Request[DeleteChannelResponse, AWSError] = js.native
+  def deleteChannel(
+    params: DeleteChannelRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteChannelResponse, Unit]
+  ): Request[DeleteChannelResponse, AWSError] = js.native
+  
+  /**
     * Disables the event data store specified by EventDataStore, which accepts an event data store ARN. After you run DeleteEventDataStore, the event data store enters a PENDING_DELETION state, and is automatically deleted after a wait period of seven days. TerminationProtectionEnabled must be set to False on the event data store; this operation cannot work if TerminationProtectionEnabled is True. After you run DeleteEventDataStore on an event data store, you cannot run ListQueries, DescribeQuery, or GetQueryResults on queries that are using an event data store in a PENDING_DELETION state. An event data store in the PENDING_DELETION state does not incur costs.
     */
   def deleteEventDataStore(): Request[DeleteEventDataStoreResponse, AWSError] = js.native
@@ -83,6 +111,20 @@ trait CloudTrail extends Service {
     params: DeleteEventDataStoreRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteEventDataStoreResponse, Unit]
   ): Request[DeleteEventDataStoreResponse, AWSError] = js.native
+  
+  /**
+    *  Deletes the resource-based policy attached to the CloudTrail channel. 
+    */
+  def deleteResourcePolicy(): Request[DeleteResourcePolicyResponse, AWSError] = js.native
+  def deleteResourcePolicy(callback: js.Function2[/* err */ AWSError, /* data */ DeleteResourcePolicyResponse, Unit]): Request[DeleteResourcePolicyResponse, AWSError] = js.native
+  /**
+    *  Deletes the resource-based policy attached to the CloudTrail channel. 
+    */
+  def deleteResourcePolicy(params: DeleteResourcePolicyRequest): Request[DeleteResourcePolicyResponse, AWSError] = js.native
+  def deleteResourcePolicy(
+    params: DeleteResourcePolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteResourcePolicyResponse, Unit]
+  ): Request[DeleteResourcePolicyResponse, AWSError] = js.native
   
   /**
     * Deletes a trail. This operation must be called from the region in which the trail was created. DeleteTrail cannot be called on the shadow trails (replicated trails in other regions) of a trail that is enabled in all regions.
@@ -143,12 +185,12 @@ trait CloudTrail extends Service {
   ): Request[DescribeTrailsResponse, AWSError] = js.native
   
   /**
-    *  Returns information about a specific channel. Amazon Web Services services create service-linked channels to get information about CloudTrail events on your behalf. For more information about service-linked channels, see Viewing service-linked channels for CloudTrail by using the CLI. 
+    *  Returns information about a specific channel. 
     */
   def getChannel(): Request[GetChannelResponse, AWSError] = js.native
   def getChannel(callback: js.Function2[/* err */ AWSError, /* data */ GetChannelResponse, Unit]): Request[GetChannelResponse, AWSError] = js.native
   /**
-    *  Returns information about a specific channel. Amazon Web Services services create service-linked channels to get information about CloudTrail events on your behalf. For more information about service-linked channels, see Viewing service-linked channels for CloudTrail by using the CLI. 
+    *  Returns information about a specific channel. 
     */
   def getChannel(params: GetChannelRequest): Request[GetChannelResponse, AWSError] = js.native
   def getChannel(
@@ -227,6 +269,20 @@ trait CloudTrail extends Service {
   ): Request[GetQueryResultsResponse, AWSError] = js.native
   
   /**
+    *  Retrieves the JSON text of the resource-based policy document attached to the CloudTrail channel. 
+    */
+  def getResourcePolicy(): Request[GetResourcePolicyResponse, AWSError] = js.native
+  def getResourcePolicy(callback: js.Function2[/* err */ AWSError, /* data */ GetResourcePolicyResponse, Unit]): Request[GetResourcePolicyResponse, AWSError] = js.native
+  /**
+    *  Retrieves the JSON text of the resource-based policy document attached to the CloudTrail channel. 
+    */
+  def getResourcePolicy(params: GetResourcePolicyRequest): Request[GetResourcePolicyResponse, AWSError] = js.native
+  def getResourcePolicy(
+    params: GetResourcePolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetResourcePolicyResponse, Unit]
+  ): Request[GetResourcePolicyResponse, AWSError] = js.native
+  
+  /**
     * Returns settings information for a specified trail.
     */
   def getTrail(): Request[GetTrailResponse, AWSError] = js.native
@@ -255,12 +311,12 @@ trait CloudTrail extends Service {
   ): Request[GetTrailStatusResponse, AWSError] = js.native
   
   /**
-    *  Lists the channels in the current account, and their source names. Amazon Web Services services create service-linked channels get information about CloudTrail events on your behalf. For more information about service-linked channels, see Viewing service-linked channels for CloudTrail by using the CLI. 
+    *  Lists the channels in the current account, and their source names. 
     */
   def listChannels(): Request[ListChannelsResponse, AWSError] = js.native
   def listChannels(callback: js.Function2[/* err */ AWSError, /* data */ ListChannelsResponse, Unit]): Request[ListChannelsResponse, AWSError] = js.native
   /**
-    *  Lists the channels in the current account, and their source names. Amazon Web Services services create service-linked channels get information about CloudTrail events on your behalf. For more information about service-linked channels, see Viewing service-linked channels for CloudTrail by using the CLI. 
+    *  Lists the channels in the current account, and their source names. 
     */
   def listChannels(params: ListChannelsRequest): Request[ListChannelsResponse, AWSError] = js.native
   def listChannels(
@@ -339,12 +395,12 @@ trait CloudTrail extends Service {
   ): Request[ListQueriesResponse, AWSError] = js.native
   
   /**
-    * Lists the tags for the trail or event data store in the current region.
+    * Lists the tags for the trail, event data store, or channel in the current region.
     */
   def listTags(): Request[ListTagsResponse, AWSError] = js.native
   def listTags(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsResponse, Unit]): Request[ListTagsResponse, AWSError] = js.native
   /**
-    * Lists the tags for the trail or event data store in the current region.
+    * Lists the tags for the trail, event data store, or channel in the current region.
     */
   def listTags(params: ListTagsRequest): Request[ListTagsResponse, AWSError] = js.native
   def listTags(
@@ -409,6 +465,20 @@ trait CloudTrail extends Service {
   ): Request[PutInsightSelectorsResponse, AWSError] = js.native
   
   /**
+    *  Attaches a resource-based permission policy to a CloudTrail channel that is used for an integration with an event source outside of Amazon Web Services. For more information about resource-based policies, see CloudTrail resource-based policy examples in the CloudTrail User Guide. 
+    */
+  def putResourcePolicy(): Request[PutResourcePolicyResponse, AWSError] = js.native
+  def putResourcePolicy(callback: js.Function2[/* err */ AWSError, /* data */ PutResourcePolicyResponse, Unit]): Request[PutResourcePolicyResponse, AWSError] = js.native
+  /**
+    *  Attaches a resource-based permission policy to a CloudTrail channel that is used for an integration with an event source outside of Amazon Web Services. For more information about resource-based policies, see CloudTrail resource-based policy examples in the CloudTrail User Guide. 
+    */
+  def putResourcePolicy(params: PutResourcePolicyRequest): Request[PutResourcePolicyResponse, AWSError] = js.native
+  def putResourcePolicy(
+    params: PutResourcePolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutResourcePolicyResponse, Unit]
+  ): Request[PutResourcePolicyResponse, AWSError] = js.native
+  
+  /**
     * Registers an organization’s member account as the CloudTrail delegated administrator.
     */
   def registerOrganizationDelegatedAdmin(): Request[RegisterOrganizationDelegatedAdminResponse, AWSError] = js.native
@@ -425,12 +495,12 @@ trait CloudTrail extends Service {
   ): Request[RegisterOrganizationDelegatedAdminResponse, AWSError] = js.native
   
   /**
-    * Removes the specified tags from a trail or event data store.
+    * Removes the specified tags from a trail, event data store, or channel.
     */
   def removeTags(): Request[RemoveTagsResponse, AWSError] = js.native
   def removeTags(callback: js.Function2[/* err */ AWSError, /* data */ RemoveTagsResponse, Unit]): Request[RemoveTagsResponse, AWSError] = js.native
   /**
-    * Removes the specified tags from a trail or event data store.
+    * Removes the specified tags from a trail, event data store, or channel.
     */
   def removeTags(params: RemoveTagsRequest): Request[RemoveTagsResponse, AWSError] = js.native
   def removeTags(
@@ -453,12 +523,12 @@ trait CloudTrail extends Service {
   ): Request[RestoreEventDataStoreResponse, AWSError] = js.native
   
   /**
-    *  Starts an import of logged trail events from a source S3 bucket to a destination event data store. By default, CloudTrail only imports events contained in the S3 bucket's CloudTrail prefix and the prefixes inside the CloudTrail prefix, and does not check prefixes for other Amazon Web Services services. If you want to import CloudTrail events contained in another prefix, you must include the prefix in the S3LocationUri. For more considerations about importing trail events, see Considerations.   When you start a new import, the Destinations and ImportSource parameters are required. Before starting a new import, disable any access control lists (ACLs) attached to the source S3 bucket. For more information about disabling ACLs, see Controlling ownership of objects and disabling ACLs for your bucket.   When you retry an import, the ImportID parameter is required. 
+    *  Starts an import of logged trail events from a source S3 bucket to a destination event data store. By default, CloudTrail only imports events contained in the S3 bucket's CloudTrail prefix and the prefixes inside the CloudTrail prefix, and does not check prefixes for other Amazon Web Services services. If you want to import CloudTrail events contained in another prefix, you must include the prefix in the S3LocationUri. For more considerations about importing trail events, see Considerations.   When you start a new import, the Destinations and ImportSource parameters are required. Before starting a new import, disable any access control lists (ACLs) attached to the source S3 bucket. For more information about disabling ACLs, see Controlling ownership of objects and disabling ACLs for your bucket.   When you retry an import, the ImportID parameter is required.    If the destination event data store is for an organization, you must use the management account to import trail events. You cannot use the delegated administrator account for the organization.  
     */
   def startImport(): Request[StartImportResponse, AWSError] = js.native
   def startImport(callback: js.Function2[/* err */ AWSError, /* data */ StartImportResponse, Unit]): Request[StartImportResponse, AWSError] = js.native
   /**
-    *  Starts an import of logged trail events from a source S3 bucket to a destination event data store. By default, CloudTrail only imports events contained in the S3 bucket's CloudTrail prefix and the prefixes inside the CloudTrail prefix, and does not check prefixes for other Amazon Web Services services. If you want to import CloudTrail events contained in another prefix, you must include the prefix in the S3LocationUri. For more considerations about importing trail events, see Considerations.   When you start a new import, the Destinations and ImportSource parameters are required. Before starting a new import, disable any access control lists (ACLs) attached to the source S3 bucket. For more information about disabling ACLs, see Controlling ownership of objects and disabling ACLs for your bucket.   When you retry an import, the ImportID parameter is required. 
+    *  Starts an import of logged trail events from a source S3 bucket to a destination event data store. By default, CloudTrail only imports events contained in the S3 bucket's CloudTrail prefix and the prefixes inside the CloudTrail prefix, and does not check prefixes for other Amazon Web Services services. If you want to import CloudTrail events contained in another prefix, you must include the prefix in the S3LocationUri. For more considerations about importing trail events, see Considerations.   When you start a new import, the Destinations and ImportSource parameters are required. Before starting a new import, disable any access control lists (ACLs) attached to the source S3 bucket. For more information about disabling ACLs, see Controlling ownership of objects and disabling ACLs for your bucket.   When you retry an import, the ImportID parameter is required.    If the destination event data store is for an organization, you must use the management account to import trail events. You cannot use the delegated administrator account for the organization.  
     */
   def startImport(params: StartImportRequest): Request[StartImportResponse, AWSError] = js.native
   def startImport(
@@ -523,12 +593,26 @@ trait CloudTrail extends Service {
   ): Request[StopLoggingResponse, AWSError] = js.native
   
   /**
-    * Updates an event data store. The required EventDataStore value is an ARN or the ID portion of the ARN. Other parameters are optional, but at least one optional parameter must be specified, or CloudTrail throws an error. RetentionPeriod is in days, and valid values are integers between 90 and 2557. By default, TerminationProtection is enabled. AdvancedEventSelectors includes or excludes management and data events in your event data store; for more information about AdvancedEventSelectors, see PutEventSelectorsRequest$AdvancedEventSelectors.
+    * Updates a channel specified by a required channel ARN or UUID.
+    */
+  def updateChannel(): Request[UpdateChannelResponse, AWSError] = js.native
+  def updateChannel(callback: js.Function2[/* err */ AWSError, /* data */ UpdateChannelResponse, Unit]): Request[UpdateChannelResponse, AWSError] = js.native
+  /**
+    * Updates a channel specified by a required channel ARN or UUID.
+    */
+  def updateChannel(params: UpdateChannelRequest): Request[UpdateChannelResponse, AWSError] = js.native
+  def updateChannel(
+    params: UpdateChannelRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateChannelResponse, Unit]
+  ): Request[UpdateChannelResponse, AWSError] = js.native
+  
+  /**
+    * Updates an event data store. The required EventDataStore value is an ARN or the ID portion of the ARN. Other parameters are optional, but at least one optional parameter must be specified, or CloudTrail throws an error. RetentionPeriod is in days, and valid values are integers between 90 and 2557. By default, TerminationProtection is enabled. For event data stores for CloudTrail events, AdvancedEventSelectors includes or excludes management and data events in your event data store. For more information about AdvancedEventSelectors, see PutEventSelectorsRequest$AdvancedEventSelectors.   For event data stores for Config configuration items, Audit Manager evidence, or non-Amazon Web Services events, AdvancedEventSelectors includes events of that type in your event data store.
     */
   def updateEventDataStore(): Request[UpdateEventDataStoreResponse, AWSError] = js.native
   def updateEventDataStore(callback: js.Function2[/* err */ AWSError, /* data */ UpdateEventDataStoreResponse, Unit]): Request[UpdateEventDataStoreResponse, AWSError] = js.native
   /**
-    * Updates an event data store. The required EventDataStore value is an ARN or the ID portion of the ARN. Other parameters are optional, but at least one optional parameter must be specified, or CloudTrail throws an error. RetentionPeriod is in days, and valid values are integers between 90 and 2557. By default, TerminationProtection is enabled. AdvancedEventSelectors includes or excludes management and data events in your event data store; for more information about AdvancedEventSelectors, see PutEventSelectorsRequest$AdvancedEventSelectors.
+    * Updates an event data store. The required EventDataStore value is an ARN or the ID portion of the ARN. Other parameters are optional, but at least one optional parameter must be specified, or CloudTrail throws an error. RetentionPeriod is in days, and valid values are integers between 90 and 2557. By default, TerminationProtection is enabled. For event data stores for CloudTrail events, AdvancedEventSelectors includes or excludes management and data events in your event data store. For more information about AdvancedEventSelectors, see PutEventSelectorsRequest$AdvancedEventSelectors.   For event data stores for Config configuration items, Audit Manager evidence, or non-Amazon Web Services events, AdvancedEventSelectors includes events of that type in your event data store.
     */
   def updateEventDataStore(params: UpdateEventDataStoreRequest): Request[UpdateEventDataStoreResponse, AWSError] = js.native
   def updateEventDataStore(

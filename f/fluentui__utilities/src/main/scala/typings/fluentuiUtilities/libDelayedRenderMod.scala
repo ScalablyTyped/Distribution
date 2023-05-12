@@ -1,6 +1,7 @@
 package typings.fluentuiUtilities
 
 import typings.fluentuiUtilities.anon.Delay
+import typings.fluentuiUtilities.libReactDottypesMod.IReactProps
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -34,8 +35,9 @@ object libDelayedRenderMod {
     inline def defaultProps_=(x: Delay): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.Props<{}> * / any */ trait IDelayedRenderProps extends StObject {
+  trait IDelayedRenderProps
+    extends StObject
+       with IReactProps[js.Object] {
     
     /**
       * Number of milliseconds to delay rendering children.

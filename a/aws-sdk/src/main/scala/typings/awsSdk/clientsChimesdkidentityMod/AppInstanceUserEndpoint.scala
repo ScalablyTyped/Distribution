@@ -49,7 +49,7 @@ trait AppInstanceUserEndpoint extends StObject {
   /**
     * The ARN of the resource to which the endpoint belongs.
     */
-  var ResourceArn: js.UndefOr[SensitiveChimeArn] = js.undefined
+  var ResourceArn: js.UndefOr[ChimeArn] = js.undefined
   
   /**
     * The type of the AppInstanceUserEndpoint.
@@ -98,7 +98,7 @@ object AppInstanceUserEndpoint {
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    inline def setResourceArn(value: SensitiveChimeArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: ChimeArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
     inline def setResourceArnUndefined: Self = StObject.set(x, "ResourceArn", js.undefined)
     

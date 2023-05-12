@@ -1,7 +1,7 @@
 
 # Scala.js typings for optimism
 
-Typings are for version 0.16.1
+Typings are for version 0.16.2
 
 ## Library description:
 Composable reactive caching with efficient invalidation.

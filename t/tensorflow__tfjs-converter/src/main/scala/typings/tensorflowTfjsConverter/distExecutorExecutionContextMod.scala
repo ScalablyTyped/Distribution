@@ -1,6 +1,7 @@
 package typings.tensorflowTfjsConverter
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Map
 import typings.std.Set
 import typings.tensorflowTfjsConverter.distDataTypesMod.NamedTensorsMap
 import typings.tensorflowTfjsConverter.distDataTypesMod.TensorArrayMap
@@ -74,6 +75,118 @@ object distExecutorExecutionContextMod {
       tensorListMap: TensorListMap,
       functionMap: StringDictionary[FunctionExecutor]
     ) = this()
+    def this(
+      weightMap: Unit,
+      tensorArrayMap: Unit,
+      tensorListMap: Unit,
+      functionMap: StringDictionary[FunctionExecutor],
+      parseNodeNameCache: Map[String, js.Tuple3[String, Double, js.UndefOr[String]]]
+    ) = this()
+    def this(
+      weightMap: Unit,
+      tensorArrayMap: Unit,
+      tensorListMap: Unit,
+      functionMap: Unit,
+      parseNodeNameCache: Map[String, js.Tuple3[String, Double, js.UndefOr[String]]]
+    ) = this()
+    def this(
+      weightMap: Unit,
+      tensorArrayMap: Unit,
+      tensorListMap: TensorListMap,
+      functionMap: StringDictionary[FunctionExecutor],
+      parseNodeNameCache: Map[String, js.Tuple3[String, Double, js.UndefOr[String]]]
+    ) = this()
+    def this(
+      weightMap: Unit,
+      tensorArrayMap: Unit,
+      tensorListMap: TensorListMap,
+      functionMap: Unit,
+      parseNodeNameCache: Map[String, js.Tuple3[String, Double, js.UndefOr[String]]]
+    ) = this()
+    def this(
+      weightMap: Unit,
+      tensorArrayMap: TensorArrayMap,
+      tensorListMap: Unit,
+      functionMap: StringDictionary[FunctionExecutor],
+      parseNodeNameCache: Map[String, js.Tuple3[String, Double, js.UndefOr[String]]]
+    ) = this()
+    def this(
+      weightMap: Unit,
+      tensorArrayMap: TensorArrayMap,
+      tensorListMap: Unit,
+      functionMap: Unit,
+      parseNodeNameCache: Map[String, js.Tuple3[String, Double, js.UndefOr[String]]]
+    ) = this()
+    def this(
+      weightMap: Unit,
+      tensorArrayMap: TensorArrayMap,
+      tensorListMap: TensorListMap,
+      functionMap: StringDictionary[FunctionExecutor],
+      parseNodeNameCache: Map[String, js.Tuple3[String, Double, js.UndefOr[String]]]
+    ) = this()
+    def this(
+      weightMap: Unit,
+      tensorArrayMap: TensorArrayMap,
+      tensorListMap: TensorListMap,
+      functionMap: Unit,
+      parseNodeNameCache: Map[String, js.Tuple3[String, Double, js.UndefOr[String]]]
+    ) = this()
+    def this(
+      weightMap: NamedTensorsMap,
+      tensorArrayMap: Unit,
+      tensorListMap: Unit,
+      functionMap: StringDictionary[FunctionExecutor],
+      parseNodeNameCache: Map[String, js.Tuple3[String, Double, js.UndefOr[String]]]
+    ) = this()
+    def this(
+      weightMap: NamedTensorsMap,
+      tensorArrayMap: Unit,
+      tensorListMap: Unit,
+      functionMap: Unit,
+      parseNodeNameCache: Map[String, js.Tuple3[String, Double, js.UndefOr[String]]]
+    ) = this()
+    def this(
+      weightMap: NamedTensorsMap,
+      tensorArrayMap: Unit,
+      tensorListMap: TensorListMap,
+      functionMap: StringDictionary[FunctionExecutor],
+      parseNodeNameCache: Map[String, js.Tuple3[String, Double, js.UndefOr[String]]]
+    ) = this()
+    def this(
+      weightMap: NamedTensorsMap,
+      tensorArrayMap: Unit,
+      tensorListMap: TensorListMap,
+      functionMap: Unit,
+      parseNodeNameCache: Map[String, js.Tuple3[String, Double, js.UndefOr[String]]]
+    ) = this()
+    def this(
+      weightMap: NamedTensorsMap,
+      tensorArrayMap: TensorArrayMap,
+      tensorListMap: Unit,
+      functionMap: StringDictionary[FunctionExecutor],
+      parseNodeNameCache: Map[String, js.Tuple3[String, Double, js.UndefOr[String]]]
+    ) = this()
+    def this(
+      weightMap: NamedTensorsMap,
+      tensorArrayMap: TensorArrayMap,
+      tensorListMap: Unit,
+      functionMap: Unit,
+      parseNodeNameCache: Map[String, js.Tuple3[String, Double, js.UndefOr[String]]]
+    ) = this()
+    def this(
+      weightMap: NamedTensorsMap,
+      tensorArrayMap: TensorArrayMap,
+      tensorListMap: TensorListMap,
+      functionMap: StringDictionary[FunctionExecutor],
+      parseNodeNameCache: Map[String, js.Tuple3[String, Double, js.UndefOr[String]]]
+    ) = this()
+    def this(
+      weightMap: NamedTensorsMap,
+      tensorArrayMap: TensorArrayMap,
+      tensorListMap: TensorListMap,
+      functionMap: Unit,
+      parseNodeNameCache: Map[String, js.Tuple3[String, Double, js.UndefOr[String]]]
+    ) = this()
     
     /* private */ var _currentContextIds: Any = js.native
     
@@ -138,6 +251,8 @@ object distExecutorExecutionContextMod {
       * increased.
       */
     def nextIteration(): Unit = js.native
+    
+    val parseNodeNameCache: js.UndefOr[Map[String, js.Tuple3[String, Double, js.UndefOr[String]]]] = js.native
     
     /* private */ var rootContext: Any = js.native
     

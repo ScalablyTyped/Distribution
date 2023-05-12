@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MsAccelerator
+import typings.csstype.mod.Property.TransformOrigin
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `65` extends StObject {
   
   var value: js.UndefOr[
-    MsAccelerator | (js.Array[
+    (TransformOrigin[Double | String]) | (js.Array[
       (Extract[
-        js.UndefOr[MsAccelerator | js.Array[NonNullable[js.UndefOr[MsAccelerator]]]], 
+        js.UndefOr[
+          (TransformOrigin[Double | String]) | (js.Array[NonNullable[js.UndefOr[TransformOrigin[Double | String]]]])
+        ], 
         String
-      ]) | NonNullable[js.UndefOr[MsAccelerator]]
+      ]) | (NonNullable[js.UndefOr[TransformOrigin[Double | String]]])
     ])
   ] = js.native
 }

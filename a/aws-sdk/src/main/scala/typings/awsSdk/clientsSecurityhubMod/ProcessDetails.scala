@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProcessDetails extends StObject {
   
   /**
-    * Indicates when the process was launched. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
+    * Indicates when the process was launched. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces, and date and time should be separated by T. For example, 2020-03-22T13:22:13.933Z.
     */
   var LaunchedAt: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -17,7 +17,7 @@ trait ProcessDetails extends StObject {
   var Name: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The parent process ID.
+    * The parent process ID. This field accepts positive integers between O and 2147483647.
     */
   var ParentPid: js.UndefOr[Integer] = js.undefined
   
@@ -32,7 +32,7 @@ trait ProcessDetails extends StObject {
   var Pid: js.UndefOr[Integer] = js.undefined
   
   /**
-    * Indicates when the process was terminated. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
+    * Indicates when the process was terminated. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces, and date and time should be separated by T. For example, 2020-03-22T13:22:13.933Z.
     */
   var TerminatedAt: js.UndefOr[NonEmptyString] = js.undefined
 }

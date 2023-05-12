@@ -1,7 +1,7 @@
 
 # Scala.js typings for amazon-connect-streams
 
-Typings are for version 2.3.2
+Typings are for version 2.4.7
 
 ## Library description:
 Amazon Connect Streams Library

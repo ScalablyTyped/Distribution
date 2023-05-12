@@ -3,7 +3,7 @@ package typings.babylonjs
 import typings.babylonjs.anon.Friction
 import typings.babylonjs.anon.ImpostorSize
 import typings.babylonjs.anon.ImpostorType
-import typings.babylonjs.physicsPhysicsImpostorMod.PhysicsImpostor
+import typings.babylonjs.physicsV1PhysicsImpostorMod.PhysicsImpostor
 import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.xRFeaturesWebXRAbstractFeatureMod.WebXRAbstractFeature
 import typings.babylonjs.xRWebXRInputMod.WebXRInput

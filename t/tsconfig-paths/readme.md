@@ -1,7 +1,7 @@
 
 # Scala.js typings for tsconfig-paths
 
-Typings are for version 4.1.0
+Typings are for version 4.2.0
 
 ## Library description:
 Load node modules according to tsconfig paths, in run-time or via API.

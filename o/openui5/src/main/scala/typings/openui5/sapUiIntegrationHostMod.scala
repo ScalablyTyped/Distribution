@@ -3,7 +3,8 @@ package typings.openui5
 import typings.openui5.anon.ActionConfig
 import typings.openui5.anon.Card
 import typings.openui5.anon.Data
-import typings.openui5.anon.`2`
+import typings.openui5.anon.`3`
+import typings.openui5.anon.`4`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreElementMod.ElementSettings
@@ -137,6 +138,10 @@ object sapUiIntegrationHostMod {
       *
       * Fired when an action is triggered.
       *
+      * When an action is triggered in the card it can be handled on several places by "action" event handlers.
+      * In consecutive order those places are: `Extension`, `Card`, `Host`. Each of them can prevent the next
+      * one to handle the action by calling `oEvent.preventDefault()`.
+      *
       * @returns Reference to `this` in order to allow method chaining
       */
     def attachAction(
@@ -166,6 +171,10 @@ object sapUiIntegrationHostMod {
       *
       * Fired when an action is triggered.
       *
+      * When an action is triggered in the card it can be handled on several places by "action" event handlers.
+      * In consecutive order those places are: `Extension`, `Card`, `Host`. Each of them can prevent the next
+      * one to handle the action by calling `oEvent.preventDefault()`.
+      *
       * @returns Reference to `this` in order to allow method chaining
       */
     def attachAction(
@@ -407,27 +416,27 @@ object sapUiIntegrationHostMod {
     /**
       * @EXPERIMENTAL (since 1.97)
       *
-      * This functions is called when a CSRF token has expired.
+      * This function is called when a CSRF token has expired.
       */
     def csrfTokenExpired(/**
       * The CSRF token configuration.
       */
-    mCSRFTokenConfig: js.Object): Unit = js.native
+    mCSRFTokenConfig: Data): Unit = js.native
     
     /**
       * @EXPERIMENTAL (since 1.97)
       *
-      * This functions is called when a CSRF token is fetched.
+      * This function is called when a CSRF token is fetched.
       */
     def csrfTokenFetched(
       /**
       * The CSRF token configuration.
       */
-    mCSRFTokenConfig: js.Object,
+    mCSRFTokenConfig: Data,
       /**
       * A promise which resolves the CSRF token to its value.
       */
-    pCSRFTokenValuePromise: js.Promise[Any]
+    pCSRFTokenValuePromise: js.Promise[String]
     ): Unit = js.native
     
     /**
@@ -540,6 +549,7 @@ object sapUiIntegrationHostMod {
     /**
       * @EXPERIMENTAL (since 1.75) - Disclaimer: this event is in a beta state - incompatible API changes may
       * be done before its official public release. Use at your own discretion.
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:action action} to attached listeners.
       *
@@ -556,6 +566,7 @@ object sapUiIntegrationHostMod {
     
     /**
       * @EXPERIMENTAL (since 1.96)
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:cardConfigurationChange cardConfigurationChange} to attached listeners.
       *
@@ -569,6 +580,7 @@ object sapUiIntegrationHostMod {
     
     /**
       * @EXPERIMENTAL (since 1.107)
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:cardStateChanged cardStateChanged} to attached listeners.
       *
@@ -578,10 +590,11 @@ object sapUiIntegrationHostMod {
     def fireCardStateChanged(/**
       * Parameters to pass along with the event
       */
-    mParameters: `2`): this.type = js.native
+    mParameters: `3`): this.type = js.native
     
     /**
       * @EXPERIMENTAL (since 1.91)
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:message message} to attached listeners.
       *
@@ -591,7 +604,7 @@ object sapUiIntegrationHostMod {
     def fireMessage(/**
       * Parameters to pass along with the event
       */
-    mParameters: Data): this.type = js.native
+    mParameters: `4`): this.type = js.native
     
     /**
       * @EXPERIMENTAL (since 1.75) - Disclaimer: this property is in a beta state - incompatible API changes
@@ -623,7 +636,7 @@ object sapUiIntegrationHostMod {
     def getContextValue(/**
       * The path to a context
       */
-    sPath: String): js.Promise[Any] = js.native
+    sPath: String): js.Promise[Null] = js.native
     
     /**
       * @SINCE 1.83
@@ -641,7 +654,7 @@ object sapUiIntegrationHostMod {
       *
       * @returns A promise which contains the context structure.
       */
-    def getContexts(): js.Promise[Any] = js.native
+    def getContexts(): js.Promise[js.Object] = js.native
     
     /**
       * @EXPERIMENTAL (since 1.97)
@@ -653,7 +666,7 @@ object sapUiIntegrationHostMod {
     def getCsrfToken(/**
       * The CSRF token configuration.
       */
-    mCSRFTokenConfig: js.Object): js.Promise[Any] = js.native
+    mCSRFTokenConfig: Data): js.Promise[String] = js.native
     
     /**
       * Resolves the destination and returns its URL.
@@ -666,10 +679,10 @@ object sapUiIntegrationHostMod {
       */
     sDestinationName: String,
       /**
-      * The card that depends on the destination. Most often the name which is used in the SAP Cloud Platform.
+      * The card that depends on the destination.
       */
     oCard: typings.openui5.sapUiIntegrationWidgetsCardMod.default
-    ): js.Promise[Any] = js.native
+    ): js.Promise[String] = js.native
     
     /**
       * @SINCE 1.83
@@ -679,7 +692,7 @@ object sapUiIntegrationHostMod {
       *
       * @returns A promise which resolves with the list of destinations.
       */
-    def getDestinations(): js.Promise[Any] = js.native
+    def getDestinations(): js.Promise[js.Array[js.Object]] = js.native
     
     /**
       * Gets current value of property {@link #getResolveDestination resolveDestination}.
@@ -696,7 +709,13 @@ object sapUiIntegrationHostMod {
       *
       * @returns Value of property `resolveDestination`
       */
-    def getResolveDestination(): js.Function = js.native
+    def getResolveDestination(): js.UndefOr[
+        js.Function2[
+          /* p1 */ String, 
+          /* p2 */ typings.openui5.sapUiIntegrationWidgetsCardMod.default, 
+          String | js.Promise[String]
+        ]
+      ] = js.native
     
     /**
       * @EXPERIMENTAL (since 1.75) - Disclaimer: this property is in a beta state - incompatible API changes
@@ -716,26 +735,29 @@ object sapUiIntegrationHostMod {
     sActions: js.Array[CardMenuAction]): this.type = js.native
     
     /**
-      * Sets a new value for property {@link #getResolveDestination resolveDestination}.
+      * Sets a new value for property {@link #setResolveDestination resolveDestination}.
       *
-      * A function that resolves the given destination name to a URL.
-      *
-      * The Card calls this function when it needs to send a request to a destination. Function returns the URL
-      * to which the request is sent.
-      *
-      * If a card depends on a destination, but this callback is not implemented, an error will be logged.
-      *
-      * The callback receives `destinationName` as parameter and returns a string with the URL. Or alternatively
-      * the callback may return a `Promise` with the URL as an argument.
+      * A function that resolves the given destination name to a URL. The Card calls this function when it needs
+      * to send a request to a destination. Function returns the URL to which the request is sent. If a card
+      * depends on a destination, but this callback is not implemented, an error will be logged. The callback
+      * receives `destinationName` as parameter and returns a string with the URL. Or alternatively the callback
+      * may return a `Promise` with the URL as an argument.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def setResolveDestination(/**
+    def setResolveDestination(): this.type = js.native
+    def setResolveDestination(
+      /**
       * New value for property `resolveDestination`
       */
-    fnResolveDestination: js.Function): this.type = js.native
+    fnResolveDestination: js.Function2[
+          /* p1 */ String, 
+          /* p2 */ typings.openui5.sapUiIntegrationWidgetsCardMod.default, 
+          String | js.Promise[String]
+        ]
+    ): this.type = js.native
   }
   
   trait HostSettings
@@ -747,6 +769,10 @@ object sapUiIntegrationHostMod {
       * be done before its official public release. Use at your own discretion.
       *
       * Fired when an action is triggered.
+      *
+      * When an action is triggered in the card it can be handled on several places by "action" event handlers.
+      * In consecutive order those places are: `Extension`, `Card`, `Host`. Each of them can prevent the next
+      * one to handle the action by calling `oEvent.preventDefault()`.
       */
     var action: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
     

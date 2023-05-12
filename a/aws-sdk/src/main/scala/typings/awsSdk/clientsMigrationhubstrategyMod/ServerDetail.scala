@@ -57,6 +57,11 @@ trait ServerDetail extends StObject {
   var recommendationSet: js.UndefOr[RecommendationSet] = js.undefined
   
   /**
+    * The error in server analysis.
+    */
+  var serverError: js.UndefOr[ServerError] = js.undefined
+  
+  /**
     *  The type of server. 
     */
   var serverType: js.UndefOr[String] = js.undefined
@@ -124,6 +129,10 @@ object ServerDetail {
     inline def setRecommendationSet(value: RecommendationSet): Self = StObject.set(x, "recommendationSet", value.asInstanceOf[js.Any])
     
     inline def setRecommendationSetUndefined: Self = StObject.set(x, "recommendationSet", js.undefined)
+    
+    inline def setServerError(value: ServerError): Self = StObject.set(x, "serverError", value.asInstanceOf[js.Any])
+    
+    inline def setServerErrorUndefined: Self = StObject.set(x, "serverError", js.undefined)
     
     inline def setServerType(value: String): Self = StObject.set(x, "serverType", value.asInstanceOf[js.Any])
     

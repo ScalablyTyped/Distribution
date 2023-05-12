@@ -62,15 +62,22 @@ trait IPhysicsEnginePlugin extends StObject {
   
   def getLinearVelocity(impostor: PhysicsImpostor): Nullable[Vector3] = js.native
   
+  def getPluginVersion(): Double = js.native
+  
   def getRadius(impostor: PhysicsImpostor): Double = js.native
   
   def getTimeStep(): Double = js.native
   
   def isSupported(): Boolean = js.native
   
+  /**
+    *
+    */
   var name: String = js.native
   
   def raycast(from: Vector3, to: Vector3): PhysicsRaycastResult = js.native
+  
+  def raycastToRef(from: Vector3, to: Vector3, result: PhysicsRaycastResult): Unit = js.native
   
   def removeJoint(joint: PhysicsImpostorJoint): Unit = js.native
   
@@ -125,5 +132,8 @@ trait IPhysicsEnginePlugin extends StObject {
   
   def wakeUpBody(impostor: PhysicsImpostor): Unit = js.native
   
+  /**
+    *
+    */
   var world: Any = js.native
 }

@@ -209,7 +209,7 @@ open class Socket () extends StObject {
   
   /**
     * The string representation of the local IP family. `'IPv4'` or `'IPv6'`.
-    * @since v18.8.0
+    * @since v18.8.0, v16.18.0
     */
   val localFamily: js.UndefOr[String] = js.native
   
@@ -284,6 +284,13 @@ open class Socket () extends StObject {
     */
   def pause(): this.type = js.native
   
+  /**
+    * This is `true` if the socket is not connected yet, either because `.connect()`has not yet been called or because it is still in the process of connecting
+    * (see `socket.connecting`).
+    * @since v11.2.0, v10.16.0
+    */
+  val pending: Boolean = js.native
+  
   def prependListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_close(event: close, listener: js.Function1[/* hadError */ Boolean, Unit]): this.type = js.native
@@ -344,7 +351,11 @@ open class Socket () extends StObject {
   
   /**
     * This property represents the state of the connection as a string.
-    * @see {https://nodejs.org/api/net.html#socketreadystate}
+    *
+    * * If the stream is connecting `socket.readyState` is `opening`.
+    * * If the stream is readable and writable, it is `open`.
+    * * If the stream is readable and not writable, it is `readOnly`.
+    * * If the stream is not readable and writable, it is `writeOnly`.
     * @since v0.5.0
     */
   val readyState: SocketReadyState = js.native
@@ -378,13 +389,10 @@ open class Socket () extends StObject {
   
   /**
     * Close the TCP connection by sending an RST packet and destroy the stream.
-    * If this TCP socket is in connecting status, it will send an RST packet
-    * and destroy this TCP socket once it is connected. Otherwise, it will call
-    * `socket.destroy` with an `ERR_SOCKET_CLOSED` Error. If this is not a TCP socket
-    * (for example, a pipe), calling this method will immediately throw
-    * an `ERR_INVALID_HANDLE_TYPE` Error.
-    * @since v18.3.0
-    * @return The socket itself.
+    * If this TCP socket is in connecting status, it will send an RST packet and destroy this TCP socket once it is connected.
+    * Otherwise, it will call `socket.destroy` with an `ERR_SOCKET_CLOSED` Error.
+    * If this is not a TCP socket (for example, a pipe), calling this method will immediately throw an `ERR_INVALID_HANDLE_TYPE` Error.
+    * @since v18.3.0, v16.17.0
     */
   def resetAndDestroy(): this.type = js.native
   
@@ -469,7 +477,8 @@ open class Socket () extends StObject {
   def setTimeout(timeout: Double, callback: js.Function0[Unit]): this.type = js.native
   
   /**
-    * The socket timeout in milliseconds as set by socket.setTimeout(). It is undefined if a timeout has not been set.
+    * The socket timeout in milliseconds as set by `socket.setTimeout()`.
+    * It is `undefined` if a timeout has not been set.
     * @since v10.7.0
     */
   val timeout: js.UndefOr[Double] = js.native

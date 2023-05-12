@@ -1,15 +1,12 @@
 package typings.metroResolver
 
 import typings.metroResolver.metroResolverStrings.asset
-import typings.metroResolver.metroResolverStrings.assetFiles
 import typings.metroResolver.metroResolverStrings.empty
 import typings.metroResolver.metroResolverStrings.failed
 import typings.metroResolver.metroResolverStrings.resolved
 import typings.metroResolver.metroResolverStrings.sourceFile
-import typings.metroResolver.typesMod.AssetFileResolution
-import typings.metroResolver.typesMod.FileCandidates
-import typings.metroResolver.typesMod.FileResolution
-import typings.metroResolver.typesMod.Result
+import typings.metroResolver.srcTypesMod.FileCandidates
+import typings.metroResolver.srcTypesMod.Result
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,58 +69,6 @@ object anon {
     }
   }
   
-  trait FilePath
-    extends StObject
-       with FileResolution {
-    
-    val filePath: String
-    
-    val `type`: sourceFile
-  }
-  object FilePath {
-    
-    inline def apply(filePath: String): FilePath = {
-      val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("sourceFile")
-      __obj.asInstanceOf[FilePath]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: FilePath] (val x: Self) extends AnyVal {
-      
-      inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
-      
-      inline def setType(value: sourceFile): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait FilePaths
-    extends StObject
-       with FileResolution {
-    
-    val filePaths: AssetFileResolution
-    
-    val `type`: assetFiles
-  }
-  object FilePaths {
-    
-    inline def apply(filePaths: AssetFileResolution): FilePaths = {
-      val __obj = js.Dynamic.literal(filePaths = filePaths.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("assetFiles")
-      __obj.asInstanceOf[FilePaths]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: FilePaths] (val x: Self) extends AnyVal {
-      
-      inline def setFilePaths(value: AssetFileResolution): Self = StObject.set(x, "filePaths", value.asInstanceOf[js.Any])
-      
-      inline def setFilePathsVarargs(value: String*): Self = StObject.set(x, "filePaths", js.Array(value*))
-      
-      inline def setType(value: assetFiles): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait Name
     extends StObject
        with FileCandidates {
@@ -149,6 +94,28 @@ object anon {
     }
   }
   
+  /* Inlined std.Readonly<{  type :'empty'}> */
+  trait Readonlytypeempty
+    extends StObject
+       with typings.metroResolver.srcTypesMod.Resolution {
+    
+    val `type`: empty
+  }
+  object Readonlytypeempty {
+    
+    inline def apply(): Readonlytypeempty = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("type")("empty")
+      __obj.asInstanceOf[Readonlytypeempty]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Readonlytypeempty] (val x: Self) extends AnyVal {
+      
+      inline def setType(value: empty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Resolution[TResolution]
     extends StObject
        with Result[TResolution, Any] {
@@ -171,27 +138,6 @@ object anon {
       inline def setResolution(value: TResolution): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
       
       inline def setType(value: resolved): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Type
-    extends StObject
-       with typings.metroResolver.typesMod.Resolution {
-    
-    val `type`: empty
-  }
-  object Type {
-    
-    inline def apply(): Type = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")("empty")
-      __obj.asInstanceOf[Type]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
-      
-      inline def setType(value: empty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -35,6 +35,7 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
+import typings.scrivito.scrivitoStrings._empty
 import typings.scrivito.scrivitoStrings.`additions removals`
 import typings.scrivito.scrivitoStrings.`additions text`
 import typings.scrivito.scrivitoStrings.`inline`
@@ -42,8 +43,10 @@ import typings.scrivito.scrivitoStrings.`removals additions`
 import typings.scrivito.scrivitoStrings.`removals text`
 import typings.scrivito.scrivitoStrings.`text additions`
 import typings.scrivito.scrivitoStrings.`text removals`
+import typings.scrivito.scrivitoStrings.`use-credentials`
 import typings.scrivito.scrivitoStrings.additions
 import typings.scrivito.scrivitoStrings.all
+import typings.scrivito.scrivitoStrings.anonymous
 import typings.scrivito.scrivitoStrings.ascending
 import typings.scrivito.scrivitoStrings.assertive
 import typings.scrivito.scrivitoStrings.both
@@ -89,6 +92,7 @@ import typings.scrivito.scrivitoStrings.vertical
 import typings.scrivito.scrivitoStrings.yes
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -106,7 +110,7 @@ trait ContentTagProps extends StObject {
   
   var accessKey: js.UndefOr[String] = js.undefined
   
-  var action: js.UndefOr[String] = js.undefined
+  var action: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
   
   var allowFullScreen: js.UndefOr[Boolean] = js.undefined
   
@@ -266,7 +270,7 @@ trait ContentTagProps extends StObject {
   
   var coords: js.UndefOr[String] = js.undefined
   
-  var crossOrigin: js.UndefOr[String] = js.undefined
+  var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
   
   var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
   
@@ -294,7 +298,7 @@ trait ContentTagProps extends StObject {
   
   var form: js.UndefOr[String] = js.undefined
   
-  var formAction: js.UndefOr[String] = js.undefined
+  var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
   
   var formEncType: js.UndefOr[String] = js.undefined
   
@@ -580,6 +584,8 @@ trait ContentTagProps extends StObject {
   
   var results: js.UndefOr[Double] = js.undefined
   
+  var rev: js.UndefOr[String] = js.undefined
+  
   var reversed: js.UndefOr[Boolean] = js.undefined
   
   var role: js.UndefOr[AriaRole] = js.undefined
@@ -690,7 +696,9 @@ object ContentTagProps {
     
     inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
     
-    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    
+    inline def setActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
     
     inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
@@ -1006,7 +1014,7 @@ object ContentTagProps {
     
     inline def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
     
-    inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+    inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
@@ -1066,7 +1074,9 @@ object ContentTagProps {
     
     inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
-    inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+    inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+    
+    inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
     
     inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
     
@@ -1639,6 +1649,10 @@ object ContentTagProps {
     inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
     

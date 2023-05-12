@@ -10,6 +10,7 @@ import typings.antdMobile.esComponentsPopoverMod.DeprecatedPlacement
 import typings.antdMobile.esComponentsPopoverMod.Placement
 import typings.antdMobile.esComponentsPullToRefreshPullToRefreshMod.PullStatus
 import typings.antdMobile.esComponentsSwipeActionSwipeActionMod.ActionColor
+import typings.antdMobile.esComponentsSwiperSwiperMod.PropagationEvent
 import typings.antdMobile.esUtilsUseTouchMod.Direction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,6 +25,10 @@ object antdMobileStrings {
   inline def default: default = "default".asInstanceOf[default]
   
   @js.native
+  sealed trait `--active-border` extends StObject
+  inline def `--active-border`: `--active-border` = "--active-border".asInstanceOf[`--active-border`]
+  
+  @js.native
   sealed trait `--active-dot-border-radius` extends StObject
   inline def `--active-dot-border-radius`: `--active-dot-border-radius` = "--active-dot-border-radius".asInstanceOf[`--active-dot-border-radius`]
   
@@ -34,6 +39,34 @@ object antdMobileStrings {
   @js.native
   sealed trait `--active-dot-size` extends StObject
   inline def `--active-dot-size`: `--active-dot-size` = "--active-dot-size".asInstanceOf[`--active-dot-size`]
+  
+  @js.native
+  sealed trait `--border` extends StObject
+  inline def `--border`: `--border` = "--border".asInstanceOf[`--border`]
+  
+  @js.native
+  sealed trait `--border-inner` extends StObject
+  inline def `--border-inner`: `--border-inner` = "--border-inner".asInstanceOf[`--border-inner`]
+  
+  @js.native
+  sealed trait `--border-radius` extends StObject
+  inline def `--border-radius`: `--border-radius` = "--border-radius".asInstanceOf[`--border-radius`]
+  
+  @js.native
+  sealed trait `--button-background-color` extends StObject
+  inline def `--button-background-color`: `--button-background-color` = "--button-background-color".asInstanceOf[`--button-background-color`]
+  
+  @js.native
+  sealed trait `--button-font-size` extends StObject
+  inline def `--button-font-size`: `--button-font-size` = "--button-font-size".asInstanceOf[`--button-font-size`]
+  
+  @js.native
+  sealed trait `--button-text-color` extends StObject
+  inline def `--button-text-color`: `--button-text-color` = "--button-text-color".asInstanceOf[`--button-text-color`]
+  
+  @js.native
+  sealed trait `--button-width` extends StObject
+  inline def `--button-width`: `--button-width` = "--button-width".asInstanceOf[`--button-width`]
   
   @js.native
   sealed trait `--dot-border-radius` extends StObject
@@ -50,6 +83,26 @@ object antdMobileStrings {
   @js.native
   sealed trait `--dot-spacing` extends StObject
   inline def `--dot-spacing`: `--dot-spacing` = "--dot-spacing".asInstanceOf[`--dot-spacing`]
+  
+  @js.native
+  sealed trait `--height` extends StObject
+  inline def `--height`: `--height` = "--height".asInstanceOf[`--height`]
+  
+  @js.native
+  sealed trait `--input-background-color` extends StObject
+  inline def `--input-background-color`: `--input-background-color` = "--input-background-color".asInstanceOf[`--input-background-color`]
+  
+  @js.native
+  sealed trait `--input-font-color` extends StObject
+  inline def `--input-font-color`: `--input-font-color` = "--input-font-color".asInstanceOf[`--input-font-color`]
+  
+  @js.native
+  sealed trait `--input-font-size` extends StObject
+  inline def `--input-font-size`: `--input-font-size` = "--input-font-size".asInstanceOf[`--input-font-size`]
+  
+  @js.native
+  sealed trait `--input-width` extends StObject
+  inline def `--input-width`: `--input-width` = "--input-width".asInstanceOf[`--input-width`]
   
   @js.native
   sealed trait Monday extends StObject
@@ -72,6 +125,10 @@ object antdMobileStrings {
   @js.native
   sealed trait abbr extends StObject
   inline def abbr: abbr = "abbr".asInstanceOf[abbr]
+  
+  @js.native
+  sealed trait acronym extends StObject
+  inline def acronym: acronym = "acronym".asInstanceOf[acronym]
   
   @js.native
   sealed trait additions extends StObject
@@ -110,8 +167,20 @@ object antdMobileStrings {
   inline def animateTransform: animateTransform = "animateTransform".asInstanceOf[animateTransform]
   
   @js.native
+  sealed trait annotation extends StObject
+  inline def annotation: annotation = "annotation".asInstanceOf[annotation]
+  
+  @js.native
+  sealed trait `annotation-xml` extends StObject
+  inline def `annotation-xml`: `annotation-xml` = "annotation-xml".asInstanceOf[`annotation-xml`]
+  
+  @js.native
   sealed trait anonymous extends StObject
   inline def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
+  
+  @js.native
+  sealed trait applet extends StObject
+  inline def applet: applet = "applet".asInstanceOf[applet]
   
   @js.native
   sealed trait area extends StObject
@@ -162,6 +231,10 @@ object antdMobileStrings {
   inline def base: base = "base".asInstanceOf[base]
   
   @js.native
+  sealed trait basefont extends StObject
+  inline def basefont: basefont = "basefont".asInstanceOf[basefont]
+  
+  @js.native
   sealed trait baseline extends StObject
   inline def baseline: baseline = "baseline".asInstanceOf[baseline]
   
@@ -178,8 +251,20 @@ object antdMobileStrings {
   inline def between: between = "between".asInstanceOf[between]
   
   @js.native
+  sealed trait bgsound extends StObject
+  inline def bgsound: bgsound = "bgsound".asInstanceOf[bgsound]
+  
+  @js.native
+  sealed trait big extends StObject
+  inline def big: big = "big".asInstanceOf[big]
+  
+  @js.native
   sealed trait black extends StObject
   inline def black: black = "black".asInstanceOf[black]
+  
+  @js.native
+  sealed trait blink extends StObject
+  inline def blink: blink = "blink".asInstanceOf[blink]
   
   @js.native
   sealed trait blockquote extends StObject
@@ -373,6 +458,10 @@ object antdMobileStrings {
   @js.native
   sealed trait dialog extends StObject
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
+  
+  @js.native
+  sealed trait dir extends StObject
+  inline def dir: dir = "dir".asInstanceOf[dir]
   
   @js.native
   sealed trait disconnected
@@ -581,6 +670,10 @@ object antdMobileStrings {
   inline def fixed: fixed = "fixed".asInstanceOf[fixed]
   
   @js.native
+  sealed trait font extends StObject
+  inline def font: font = "font".asInstanceOf[font]
+  
+  @js.native
   sealed trait footer extends StObject
   inline def footer: footer = "footer".asInstanceOf[footer]
   
@@ -591,6 +684,14 @@ object antdMobileStrings {
   @js.native
   sealed trait form extends StObject
   inline def form: form = "form".asInstanceOf[form]
+  
+  @js.native
+  sealed trait frame extends StObject
+  inline def frame: frame = "frame".asInstanceOf[frame]
+  
+  @js.native
+  sealed trait frameset extends StObject
+  inline def frameset: frameset = "frameset".asInstanceOf[frameset]
   
   @js.native
   sealed trait full extends StObject
@@ -680,6 +781,10 @@ object antdMobileStrings {
   inline def html: html = "html".asInstanceOf[html]
   
   @js.native
+  sealed trait httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML extends StObject
+  inline def httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML = "http://www.w3.org/1998/Math/MathML".asInstanceOf[httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML]
+  
+  @js.native
   sealed trait httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml extends StObject
   inline def httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml: httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml = "http://www.w3.org/1999/xhtml".asInstanceOf[httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml]
   
@@ -720,12 +825,20 @@ object antdMobileStrings {
   inline def ins: ins = "ins".asInstanceOf[ins]
   
   @js.native
+  sealed trait isindex extends StObject
+  inline def isindex: isindex = "isindex".asInstanceOf[isindex]
+  
+  @js.native
   sealed trait italic extends StObject
   inline def italic: italic = "italic".asInstanceOf[italic]
   
   @js.native
   sealed trait kbd extends StObject
   inline def kbd: kbd = "kbd".asInstanceOf[kbd]
+  
+  @js.native
+  sealed trait keygen extends StObject
+  inline def keygen: keygen = "keygen".asInstanceOf[keygen]
   
   @js.native
   sealed trait label extends StObject
@@ -804,6 +917,10 @@ object antdMobileStrings {
   inline def listbox: listbox = "listbox".asInstanceOf[listbox]
   
   @js.native
+  sealed trait listing extends StObject
+  inline def listing: listing = "listing".asInstanceOf[listing]
+  
+  @js.native
   sealed trait loading extends StObject
   inline def loading: loading = "loading".asInstanceOf[loading]
   
@@ -814,6 +931,10 @@ object antdMobileStrings {
   @js.native
   sealed trait lock extends StObject
   inline def lock: lock = "lock".asInstanceOf[lock]
+  
+  @js.native
+  sealed trait maction extends StObject
+  inline def maction: maction = "maction".asInstanceOf[maction]
   
   @js.native
   sealed trait main extends StObject
@@ -832,12 +953,28 @@ object antdMobileStrings {
   inline def marker: marker = "marker".asInstanceOf[marker]
   
   @js.native
+  sealed trait marquee extends StObject
+  inline def marquee: marquee = "marquee".asInstanceOf[marquee]
+  
+  @js.native
   sealed trait mask extends StObject
   inline def mask: mask = "mask".asInstanceOf[mask]
   
   @js.native
+  sealed trait math extends StObject
+  inline def math: math = "math".asInstanceOf[math]
+  
+  @js.native
   sealed trait menu extends StObject
   inline def menu: menu = "menu".asInstanceOf[menu]
+  
+  @js.native
+  sealed trait menuitem extends StObject
+  inline def menuitem: menuitem = "menuitem".asInstanceOf[menuitem]
+  
+  @js.native
+  sealed trait merror extends StObject
+  inline def merror: merror = "merror".asInstanceOf[merror]
   
   @js.native
   sealed trait meta extends StObject
@@ -850,6 +987,14 @@ object antdMobileStrings {
   @js.native
   sealed trait meter extends StObject
   inline def meter: meter = "meter".asInstanceOf[meter]
+  
+  @js.native
+  sealed trait mfrac extends StObject
+  inline def mfrac: mfrac = "mfrac".asInstanceOf[mfrac]
+  
+  @js.native
+  sealed trait mi extends StObject
+  inline def mi: mi = "mi".asInstanceOf[mi]
   
   @js.native
   sealed trait middle extends StObject
@@ -871,6 +1016,18 @@ object antdMobileStrings {
   inline def mixed: mixed = "mixed".asInstanceOf[mixed]
   
   @js.native
+  sealed trait mmultiscripts extends StObject
+  inline def mmultiscripts: mmultiscripts = "mmultiscripts".asInstanceOf[mmultiscripts]
+  
+  @js.native
+  sealed trait mn extends StObject
+  inline def mn: mn = "mn".asInstanceOf[mn]
+  
+  @js.native
+  sealed trait mo extends StObject
+  inline def mo: mo = "mo".asInstanceOf[mo]
+  
+  @js.native
   sealed trait month
     extends StObject
        with DatePrecision
@@ -878,12 +1035,110 @@ object antdMobileStrings {
   inline def month: month = "month".asInstanceOf[month]
   
   @js.native
+  sealed trait mousedown
+    extends StObject
+       with PropagationEvent
+  inline def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
+  
+  @js.native
+  sealed trait mousemove
+    extends StObject
+       with PropagationEvent
+  inline def mousemove: mousemove = "mousemove".asInstanceOf[mousemove]
+  
+  @js.native
+  sealed trait mouseup
+    extends StObject
+       with PropagationEvent
+  inline def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
+  
+  @js.native
   sealed trait move extends StObject
   inline def move: move = "move".asInstanceOf[move]
   
   @js.native
+  sealed trait mover extends StObject
+  inline def mover: mover = "mover".asInstanceOf[mover]
+  
+  @js.native
+  sealed trait mpadded extends StObject
+  inline def mpadded: mpadded = "mpadded".asInstanceOf[mpadded]
+  
+  @js.native
   sealed trait mpath extends StObject
   inline def mpath: mpath = "mpath".asInstanceOf[mpath]
+  
+  @js.native
+  sealed trait mphantom extends StObject
+  inline def mphantom: mphantom = "mphantom".asInstanceOf[mphantom]
+  
+  @js.native
+  sealed trait mprescripts extends StObject
+  inline def mprescripts: mprescripts = "mprescripts".asInstanceOf[mprescripts]
+  
+  @js.native
+  sealed trait mroot extends StObject
+  inline def mroot: mroot = "mroot".asInstanceOf[mroot]
+  
+  @js.native
+  sealed trait mrow extends StObject
+  inline def mrow: mrow = "mrow".asInstanceOf[mrow]
+  
+  @js.native
+  sealed trait ms extends StObject
+  inline def ms: ms = "ms".asInstanceOf[ms]
+  
+  @js.native
+  sealed trait mspace extends StObject
+  inline def mspace: mspace = "mspace".asInstanceOf[mspace]
+  
+  @js.native
+  sealed trait msqrt extends StObject
+  inline def msqrt: msqrt = "msqrt".asInstanceOf[msqrt]
+  
+  @js.native
+  sealed trait mstyle extends StObject
+  inline def mstyle: mstyle = "mstyle".asInstanceOf[mstyle]
+  
+  @js.native
+  sealed trait msub extends StObject
+  inline def msub: msub = "msub".asInstanceOf[msub]
+  
+  @js.native
+  sealed trait msubsup extends StObject
+  inline def msubsup: msubsup = "msubsup".asInstanceOf[msubsup]
+  
+  @js.native
+  sealed trait msup extends StObject
+  inline def msup: msup = "msup".asInstanceOf[msup]
+  
+  @js.native
+  sealed trait mtable extends StObject
+  inline def mtable: mtable = "mtable".asInstanceOf[mtable]
+  
+  @js.native
+  sealed trait mtd extends StObject
+  inline def mtd: mtd = "mtd".asInstanceOf[mtd]
+  
+  @js.native
+  sealed trait mtext extends StObject
+  inline def mtext: mtext = "mtext".asInstanceOf[mtext]
+  
+  @js.native
+  sealed trait mtr extends StObject
+  inline def mtr: mtr = "mtr".asInstanceOf[mtr]
+  
+  @js.native
+  sealed trait multicol extends StObject
+  inline def multicol: multicol = "multicol".asInstanceOf[multicol]
+  
+  @js.native
+  sealed trait munder extends StObject
+  inline def munder: munder = "munder".asInstanceOf[munder]
+  
+  @js.native
+  sealed trait munderover extends StObject
+  inline def munderover: munderover = "munderover".asInstanceOf[munderover]
   
   @js.native
   sealed trait nav extends StObject
@@ -892,6 +1147,22 @@ object antdMobileStrings {
   @js.native
   sealed trait next extends StObject
   inline def next: next = "next".asInstanceOf[next]
+  
+  @js.native
+  sealed trait nextid extends StObject
+  inline def nextid: nextid = "nextid".asInstanceOf[nextid]
+  
+  @js.native
+  sealed trait nobr extends StObject
+  inline def nobr: nobr = "nobr".asInstanceOf[nobr]
+  
+  @js.native
+  sealed trait noembed extends StObject
+  inline def noembed: noembed = "noembed".asInstanceOf[noembed]
+  
+  @js.native
+  sealed trait noframes extends StObject
+  inline def noframes: noframes = "noframes".asInstanceOf[noframes]
   
   @js.native
   sealed trait none extends StObject
@@ -904,6 +1175,10 @@ object antdMobileStrings {
   @js.native
   sealed trait noscript extends StObject
   inline def noscript: noscript = "noscript".asInstanceOf[noscript]
+  
+  @js.native
+  sealed trait now extends StObject
+  inline def now: now = "now".asInstanceOf[now]
   
   @js.native
   sealed trait numeric extends StObject
@@ -924,6 +1199,18 @@ object antdMobileStrings {
   @js.native
   sealed trait ol extends StObject
   inline def ol: ol = "ol".asInstanceOf[ol]
+  
+  @js.native
+  sealed trait onMouseDown extends StObject
+  inline def onMouseDown: onMouseDown = "onMouseDown".asInstanceOf[onMouseDown]
+  
+  @js.native
+  sealed trait onMouseMove extends StObject
+  inline def onMouseMove: onMouseMove = "onMouseMove".asInstanceOf[onMouseMove]
+  
+  @js.native
+  sealed trait onMouseUp extends StObject
+  inline def onMouseUp: onMouseUp = "onMouseUp".asInstanceOf[onMouseUp]
   
   @js.native
   sealed trait optgroup extends StObject
@@ -958,6 +1245,10 @@ object antdMobileStrings {
   inline def parallel: parallel = "parallel".asInstanceOf[parallel]
   
   @js.native
+  sealed trait param extends StObject
+  inline def param: param = "param".asInstanceOf[param]
+  
+  @js.native
   sealed trait path extends StObject
   inline def path: path = "path".asInstanceOf[path]
   
@@ -978,6 +1269,10 @@ object antdMobileStrings {
   @js.native
   sealed trait plain extends StObject
   inline def plain: plain = "plain".asInstanceOf[plain]
+  
+  @js.native
+  sealed trait plaintext extends StObject
+  inline def plaintext: plaintext = "plaintext".asInstanceOf[plaintext]
   
   @js.native
   sealed trait polite extends StObject
@@ -1038,6 +1333,10 @@ object antdMobileStrings {
   @js.native
   sealed trait range extends StObject
   inline def range: range = "range".asInstanceOf[range]
+  
+  @js.native
+  sealed trait rb extends StObject
+  inline def rb: rb = "rb".asInstanceOf[rb]
   
   @js.native
   sealed trait rect extends StObject
@@ -1112,6 +1411,10 @@ object antdMobileStrings {
   inline def rt: rt = "rt".asInstanceOf[rt]
   
   @js.native
+  sealed trait rtc extends StObject
+  inline def rtc: rtc = "rtc".asInstanceOf[rtc]
+  
+  @js.native
   sealed trait ruby extends StObject
   inline def ruby: ruby = "ruby".asInstanceOf[ruby]
   
@@ -1151,6 +1454,10 @@ object antdMobileStrings {
   inline def select: select = "select".asInstanceOf[select]
   
   @js.native
+  sealed trait semantics extends StObject
+  inline def semantics: semantics = "semantics".asInstanceOf[semantics]
+  
+  @js.native
   sealed trait send extends StObject
   inline def send: send = "send".asInstanceOf[send]
   
@@ -1179,6 +1486,10 @@ object antdMobileStrings {
   inline def source: source = "source".asInstanceOf[source]
   
   @js.native
+  sealed trait spacer extends StObject
+  inline def spacer: spacer = "spacer".asInstanceOf[spacer]
+  
+  @js.native
   sealed trait span extends StObject
   inline def span: span = "span".asInstanceOf[span]
   
@@ -1205,6 +1516,10 @@ object antdMobileStrings {
   @js.native
   sealed trait strict extends StObject
   inline def strict: strict = "strict".asInstanceOf[strict]
+  
+  @js.native
+  sealed trait strike extends StObject
+  inline def strike: strike = "strike".asInstanceOf[strike]
   
   @js.native
   sealed trait strong extends StObject
@@ -1376,6 +1691,10 @@ object antdMobileStrings {
   inline def tspan: tspan = "tspan".asInstanceOf[tspan]
   
   @js.native
+  sealed trait tt extends StObject
+  inline def tt: tt = "tt".asInstanceOf[tt]
+  
+  @js.native
   sealed trait u extends StObject
   inline def u: u = "u".asInstanceOf[u]
   
@@ -1467,6 +1786,10 @@ object antdMobileStrings {
   @js.native
   sealed trait x extends StObject
   inline def x: x = "x".asInstanceOf[x]
+  
+  @js.native
+  sealed trait xmp extends StObject
+  inline def xmp: xmp = "xmp".asInstanceOf[xmp]
   
   @js.native
   sealed trait xy extends StObject

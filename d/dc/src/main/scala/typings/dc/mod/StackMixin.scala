@@ -1,5 +1,6 @@
 package typings.dc.mod
 
+import typings.d3Shape.mod.Stack_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,15 +23,10 @@ trait StackMixin[T] extends StObject {
   def stack(group: Any, name: Unit, accessor: Accessor[Any, Any]): Unit = js.native
   
   // title(stackName: string, titleFn: Accessor<any, T>);
-  def stackLayout(): Any = js.native
+  def stackLayout(): Stack_[Any, Any, Any] = js.native
   // title(stackName: string, titleFn: Accessor<any, T>);
-  def stackLayout(
-    t: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.layout.Stack<Array<any>, any> */ Any
-  ): T = js.native
+  def stackLayout(t: Stack_[Any, Any, Any]): T = js.native
   // title(stackName: string, titleFn: Accessor<any, T>);
   @JSName("stackLayout")
-  var stackLayout_Original: IGetSet[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.layout.Stack<Array<any>, any> */ Any, 
-    T
-  ] = js.native
+  var stackLayout_Original: IGetSet[Stack_[Any, Any, Any], T] = js.native
 }

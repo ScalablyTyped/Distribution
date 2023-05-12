@@ -93,6 +93,8 @@ object sapUiTestMatchersMatcherMod {
     extends typings.openui5.sapUiBaseManagedObjectMod.default {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Checks if the matcher is matching - will get an instance of sap.ui.core.Control as parameter.
       *
       * Should be overwritten by subclasses

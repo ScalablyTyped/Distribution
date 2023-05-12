@@ -1,5 +1,6 @@
 package typings.sentryUtils
 
+import typings.sentryUtils.anon.KeyAttrs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,5 +16,6 @@ object typesBrowserMod {
   inline def getLocationHref(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocationHref")().asInstanceOf[String]
   
   inline def htmlTreeAsString(elem: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlTreeAsString")(elem.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def htmlTreeAsString(elem: Any, keyAttrs: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTreeAsString")(elem.asInstanceOf[js.Any], keyAttrs.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def htmlTreeAsString(elem: Any, options: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTreeAsString")(elem.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def htmlTreeAsString(elem: Any, options: KeyAttrs): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTreeAsString")(elem.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
 }

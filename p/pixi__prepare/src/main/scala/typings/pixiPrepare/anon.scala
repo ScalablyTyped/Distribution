@@ -86,6 +86,8 @@ object anon {
     
     var constructor: js.UndefOr[js.Function0[Any]] = js.undefined
     
+    var defaultStyle: js.UndefOr[Any] = js.undefined
+    
     var dropShadow: js.UndefOr[Boolean] = js.undefined
     
     var dropShadowAlpha: js.UndefOr[Double] = js.undefined
@@ -171,6 +173,10 @@ object anon {
       inline def setConstructor(value: () => Any): Self = StObject.set(x, "constructor", js.Any.fromFunction0(value))
       
       inline def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
+      
+      inline def setDefaultStyle(value: Any): Self = StObject.set(x, "defaultStyle", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultStyleUndefined: Self = StObject.set(x, "defaultStyle", js.undefined)
       
       inline def setDropShadow(value: Boolean): Self = StObject.set(x, "dropShadow", value.asInstanceOf[js.Any])
       

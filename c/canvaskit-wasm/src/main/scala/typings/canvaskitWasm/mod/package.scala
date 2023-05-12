@@ -20,6 +20,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
+inline def default(): js.Promise[CanvasKit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Promise[CanvasKit]]
 inline def default(opts: CanvasKitInitOptions): js.Promise[CanvasKit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CanvasKit]]
 
 type Affinity = EmbindEnumEntity
@@ -112,6 +113,8 @@ type InputRRect = MallocObj | js.typedarray.Float32Array | js.Array[Double]
 
 type InputRect = MallocObj | js.typedarray.Float32Array | js.Array[Double]
 
+type InputVector2 = InputPoint
+
 type InputVector3 = MallocObj | Vector3 | js.typedarray.Float32Array
 
 type InputWords = MallocObj | js.typedarray.Uint32Array | js.Array[Double]
@@ -169,6 +172,8 @@ type TileMode = EmbindEnumEntity
 type TypedArray = js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Int16Array | js.typedarray.Int8Array | js.typedarray.Uint32Array | js.typedarray.Uint16Array | js.typedarray.Uint8Array
 
 type TypedArrayConstructor = Float32ArrayConstructor | Int32ArrayConstructor | Int16ArrayConstructor | Int8ArrayConstructor | Uint32ArrayConstructor | Uint16ArrayConstructor | Uint8ArrayConstructor
+
+type Vector2 = js.typedarray.Float32Array
 
 type Vector3 = js.Array[Double]
 

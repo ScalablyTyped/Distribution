@@ -9,11 +9,11 @@ trait RedshiftDataShareAssetSourceEntry extends StObject {
   /**
     * The Amazon Resource Name (ARN) of the datashare asset.
     */
-  var DataShareArn: string
+  var DataShareArn: _String
 }
 object RedshiftDataShareAssetSourceEntry {
   
-  inline def apply(DataShareArn: string): RedshiftDataShareAssetSourceEntry = {
+  inline def apply(DataShareArn: _String): RedshiftDataShareAssetSourceEntry = {
     val __obj = js.Dynamic.literal(DataShareArn = DataShareArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedshiftDataShareAssetSourceEntry]
   }
@@ -21,6 +21,6 @@ object RedshiftDataShareAssetSourceEntry {
   @scala.inline
   implicit open class MutableBuilder[Self <: RedshiftDataShareAssetSourceEntry] (val x: Self) extends AnyVal {
     
-    inline def setDataShareArn(value: string): Self = StObject.set(x, "DataShareArn", value.asInstanceOf[js.Any])
+    inline def setDataShareArn(value: _String): Self = StObject.set(x, "DataShareArn", value.asInstanceOf[js.Any])
   }
 }

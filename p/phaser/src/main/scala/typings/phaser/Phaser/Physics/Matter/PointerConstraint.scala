@@ -33,7 +33,7 @@ trait PointerConstraint extends StObject {
   /**
     * The body that is currently being dragged, if any.
     */
-  var body: BodyType
+  var body: BodyType | Null
   
   /**
     * The Camera the Pointer was interacting with when the input
@@ -86,7 +86,7 @@ trait PointerConstraint extends StObject {
   /**
     * The part of the body that was clicked on to start the drag.
     */
-  var part: BodyType
+  var part: BodyType | Null
   
   /**
     * A reference to the Input Pointer that activated this Constraint.
@@ -128,7 +128,6 @@ object PointerConstraint {
   
   inline def apply(
     active: Boolean,
-    body: BodyType,
     camera: Camera,
     constraint: ConstraintType,
     destroy: () => Unit,
@@ -136,7 +135,6 @@ object PointerConstraint {
     hitTestBody: (BodyType, Vector2) => Boolean,
     onDown: Pointer => Unit,
     onUp: Pointer => Unit,
-    part: BodyType,
     pointer: Pointer,
     position: Vector2,
     scene: Scene,
@@ -144,7 +142,7 @@ object PointerConstraint {
     update: () => Unit,
     world: World
   ): PointerConstraint = {
-    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], constraint = constraint.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), getBody = js.Any.fromFunction0(getBody), hitTestBody = js.Any.fromFunction2(hitTestBody), onDown = js.Any.fromFunction1(onDown), onUp = js.Any.fromFunction1(onUp), part = part.asInstanceOf[js.Any], pointer = pointer.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any], stopDrag = js.Any.fromFunction0(stopDrag), update = js.Any.fromFunction0(update), world = world.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], constraint = constraint.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), getBody = js.Any.fromFunction0(getBody), hitTestBody = js.Any.fromFunction2(hitTestBody), onDown = js.Any.fromFunction1(onDown), onUp = js.Any.fromFunction1(onUp), pointer = pointer.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any], stopDrag = js.Any.fromFunction0(stopDrag), update = js.Any.fromFunction0(update), world = world.asInstanceOf[js.Any], body = null, part = null)
     __obj.asInstanceOf[PointerConstraint]
   }
   
@@ -154,6 +152,8 @@ object PointerConstraint {
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     inline def setBody(value: BodyType): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    inline def setBodyNull: Self = StObject.set(x, "body", null)
     
     inline def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
@@ -170,6 +170,8 @@ object PointerConstraint {
     inline def setOnUp(value: Pointer => Unit): Self = StObject.set(x, "onUp", js.Any.fromFunction1(value))
     
     inline def setPart(value: BodyType): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
+    
+    inline def setPartNull: Self = StObject.set(x, "part", null)
     
     inline def setPointer(value: Pointer): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
     

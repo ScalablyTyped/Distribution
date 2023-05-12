@@ -34,6 +34,19 @@ trait Checkrunurl extends StObject {
   var conclusion: success | failure | neutral | cancelled | skipped | timed_out | action_required | Null
   
   /**
+    * Format: date-time
+    * @description The time that the job created, in ISO 8601 format.
+    * @example 2019-08-08T08:00:00-07:00
+    */
+  var created_at: String
+  
+  /**
+    * @description The name of the current branch.
+    * @example main
+    */
+  var head_branch: String | Null
+  
+  /**
     * @description The SHA of the commit that is being run.
     * @example 009b8a3a9ccbb128af87f9b1c0f4c62e8a304f6d
     */
@@ -121,15 +134,22 @@ trait Checkrunurl extends StObject {
   var status: queued_ | in_progress | completed
   
   /** @description Steps in this job. */
-  var steps: js.UndefOr[js.Array[Startedat]] = js.undefined
+  var steps: js.UndefOr[js.Array[Completedat]] = js.undefined
   
   /** @example https://api.github.com/repos/github/hello-world/actions/jobs/21 */
   var url: String
+  
+  /**
+    * @description The name of the workflow.
+    * @example Build
+    */
+  var workflow_name: String | Null
 }
 object Checkrunurl {
   
   inline def apply(
     check_run_url: String,
+    created_at: String,
     head_sha: String,
     id: Double,
     labels: js.Array[String],
@@ -141,7 +161,7 @@ object Checkrunurl {
     status: queued_ | in_progress | completed,
     url: String
   ): Checkrunurl = {
-    val __obj = js.Dynamic.literal(check_run_url = check_run_url.asInstanceOf[js.Any], head_sha = head_sha.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], run_id = run_id.asInstanceOf[js.Any], run_url = run_url.asInstanceOf[js.Any], started_at = started_at.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], completed_at = null, conclusion = null, html_url = null, runner_group_id = null, runner_group_name = null, runner_id = null, runner_name = null)
+    val __obj = js.Dynamic.literal(check_run_url = check_run_url.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], head_sha = head_sha.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], run_id = run_id.asInstanceOf[js.Any], run_url = run_url.asInstanceOf[js.Any], started_at = started_at.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], completed_at = null, conclusion = null, head_branch = null, html_url = null, runner_group_id = null, runner_group_name = null, runner_id = null, runner_name = null, workflow_name = null)
     __obj.asInstanceOf[Checkrunurl]
   }
   
@@ -157,6 +177,12 @@ object Checkrunurl {
     inline def setConclusion(value: success | failure | neutral | cancelled | skipped | timed_out | action_required): Self = StObject.set(x, "conclusion", value.asInstanceOf[js.Any])
     
     inline def setConclusionNull: Self = StObject.set(x, "conclusion", null)
+    
+    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    
+    inline def setHead_branch(value: String): Self = StObject.set(x, "head_branch", value.asInstanceOf[js.Any])
+    
+    inline def setHead_branchNull: Self = StObject.set(x, "head_branch", null)
     
     inline def setHead_sha(value: String): Self = StObject.set(x, "head_sha", value.asInstanceOf[js.Any])
     
@@ -202,12 +228,16 @@ object Checkrunurl {
     
     inline def setStatus(value: queued_ | in_progress | completed): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    inline def setSteps(value: js.Array[Startedat]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+    inline def setSteps(value: js.Array[Completedat]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
     inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
-    inline def setStepsVarargs(value: Startedat*): Self = StObject.set(x, "steps", js.Array(value*))
+    inline def setStepsVarargs(value: Completedat*): Self = StObject.set(x, "steps", js.Array(value*))
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setWorkflow_name(value: String): Self = StObject.set(x, "workflow_name", value.asInstanceOf[js.Any])
+    
+    inline def setWorkflow_nameNull: Self = StObject.set(x, "workflow_name", null)
   }
 }

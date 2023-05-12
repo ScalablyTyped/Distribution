@@ -4,7 +4,12 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.engineIoClient.anon.PartialSocketOptions
 import typings.engineIoClient.anon.Threshold
 import typings.engineIoClient.buildEsmTransportMod.CloseDetails
+import typings.engineIoClient.buildEsmTransportMod.Transport
+import typings.engineIoParser.buildEsmCommonsMod.BinaryType
+import typings.engineIoParser.buildEsmCommonsMod.Packet
+import typings.engineIoParser.buildEsmCommonsMod.RawData
 import typings.socketIoComponentEmitter.mod.Emitter
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,52 +19,52 @@ object buildEsmSocketMod {
   @JSImport("engine.io-client/build/esm/socket", "Socket")
   @js.native
   open class Socket protected ()
-    extends Emitter[js.Object, js.Object, SocketReservedEvents] {
+    extends Emitter[
+          Record[scala.Nothing, scala.Nothing], 
+          Record[scala.Nothing, scala.Nothing], 
+          SocketReservedEvents
+        ] {
     /**
       * Socket constructor.
       *
-      * @param {String|Object} uri or options
+      * @param {String|Object} uri - uri or options
       * @param {Object} opts - options
-      * @api public
       */
     def this(uri: Any) = this()
     def this(uri: Any, opts: PartialSocketOptions) = this()
     
     /* private */ val beforeunloadEventListener: Any = js.native
     
-    var binaryType: String = js.native
+    var binaryType: BinaryType = js.native
     
     /* private */ var clearTimeoutFn: Any = js.native
     
     /**
       * Closes the connection.
-      *
-      * @api public
       */
     def close(): this.type = js.native
     
     /**
       * Creates transport of the given type.
       *
-      * @param {String} transport name
+      * @param {String} name - transport name
       * @return {Transport}
-      * @api private
+      * @private
       */
     /* private */ var createTransport: Any = js.native
     
     /**
       * Filters upgrades, returning only those matching client transports.
       *
-      * @param {Array} server upgrades
-      * @api private
-      *
+      * @param {Array} upgrades - server upgrades
+      * @private
       */
     /* private */ var filterUpgrades: Any = js.native
     
     /**
       * Flush write buffers.
       *
-      * @api private
+      * @private
       */
     /* private */ var flush: Any = js.native
     
@@ -82,21 +87,21 @@ object buildEsmSocketMod {
     /**
       * Called upon transport close.
       *
-      * @api private
+      * @private
       */
     /* private */ var onClose: Any = js.native
     
     /**
       * Called on `drain` event
       *
-      * @api private
+      * @private
       */
     /* private */ var onDrain: Any = js.native
     
     /**
       * Called upon transport error
       *
-      * @api private
+      * @private
       */
     /* private */ var onError: Any = js.native
     
@@ -104,28 +109,28 @@ object buildEsmSocketMod {
       * Called upon handshake completion.
       *
       * @param {Object} data - handshake obj
-      * @api private
+      * @private
       */
     /* private */ var onHandshake: Any = js.native
     
     /**
       * Called when connection is deemed open.
       *
-      * @api private
+      * @private
       */
     /* private */ var onOpen: Any = js.native
     
     /**
       * Handles a packet.
       *
-      * @api private
+      * @private
       */
     /* private */ var onPacket: Any = js.native
     
     /**
       * Initializes transport to use and starts probe.
       *
-      * @api private
+      * @private
       */
     /* private */ var open: Any = js.native
     
@@ -144,33 +149,35 @@ object buildEsmSocketMod {
     /**
       * Probes a transport.
       *
-      * @param {String} transport name
-      * @api private
+      * @param {String} name - transport name
+      * @private
       */
     /* private */ var probe: Any = js.native
     
-    /* private */ var readyState: Any = js.native
+    var readyState: SocketState = js.native
     
     /**
       * Sets and resets ping timeout timer based on server pings.
       *
-      * @api private
+      * @private
       */
     /* private */ var resetPingTimeout: Any = js.native
     
     /* private */ val secure: Any = js.native
     
-    def send(msg: Any, options: Any): this.type = js.native
-    def send(msg: Any, options: Any, fn: Any): this.type = js.native
+    def send(msg: RawData): this.type = js.native
+    def send(msg: RawData, options: Any): this.type = js.native
+    def send(msg: RawData, options: Any, fn: Any): this.type = js.native
+    def send(msg: RawData, options: Unit, fn: Any): this.type = js.native
     
     /**
       * Sends a packet.
       *
-      * @param {String} packet type.
+      * @param {String} type: packet type.
       * @param {String} data.
       * @param {Object} options.
-      * @param {Function} callback function.
-      * @api private
+      * @param {Function} fn - callback function.
+      * @private
       */
     /* private */ var sendPacket: Any = js.native
     
@@ -179,11 +186,11 @@ object buildEsmSocketMod {
     /**
       * Sets the current transport. Disables the existing one (if any).
       *
-      * @api private
+      * @private
       */
     /* private */ var setTransport: Any = js.native
     
-    var transport: Any = js.native
+    var transport: Transport = js.native
     
     /* private */ val transports: Any = js.native
     
@@ -194,16 +201,17 @@ object buildEsmSocketMod {
     /**
       * Sends a message.
       *
-      * @param {String} message.
-      * @param {Function} callback function.
+      * @param {String} msg - message.
       * @param {Object} options.
+      * @param {Function} callback function.
       * @return {Socket} for chaining.
-      * @api public
       */
-    def write(msg: Any, options: Any): this.type = js.native
-    def write(msg: Any, options: Any, fn: Any): this.type = js.native
+    def write(msg: RawData): this.type = js.native
+    def write(msg: RawData, options: Any): this.type = js.native
+    def write(msg: RawData, options: Any, fn: Any): this.type = js.native
+    def write(msg: RawData, options: Unit, fn: Any): this.type = js.native
     
-    /* private */ var writeBuffer: Any = js.native
+    var writeBuffer: js.Array[Packet] = js.native
   }
   /* static members */
   object Socket {
@@ -223,7 +231,55 @@ object buildEsmSocketMod {
     inline def protocol_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("protocol")(x.asInstanceOf[js.Any])
   }
   
+  trait HandshakeData extends StObject {
+    
+    var maxPayload: Double
+    
+    var pingInterval: Double
+    
+    var pingTimeout: Double
+    
+    var sid: String
+    
+    var upgrades: js.Array[String]
+  }
+  object HandshakeData {
+    
+    inline def apply(
+      maxPayload: Double,
+      pingInterval: Double,
+      pingTimeout: Double,
+      sid: String,
+      upgrades: js.Array[String]
+    ): HandshakeData = {
+      val __obj = js.Dynamic.literal(maxPayload = maxPayload.asInstanceOf[js.Any], pingInterval = pingInterval.asInstanceOf[js.Any], pingTimeout = pingTimeout.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any], upgrades = upgrades.asInstanceOf[js.Any])
+      __obj.asInstanceOf[HandshakeData]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandshakeData] (val x: Self) extends AnyVal {
+      
+      inline def setMaxPayload(value: Double): Self = StObject.set(x, "maxPayload", value.asInstanceOf[js.Any])
+      
+      inline def setPingInterval(value: Double): Self = StObject.set(x, "pingInterval", value.asInstanceOf[js.Any])
+      
+      inline def setPingTimeout(value: Double): Self = StObject.set(x, "pingTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
+      
+      inline def setUpgrades(value: js.Array[String]): Self = StObject.set(x, "upgrades", value.asInstanceOf[js.Any])
+      
+      inline def setUpgradesVarargs(value: String*): Self = StObject.set(x, "upgrades", js.Array(value*))
+    }
+  }
+  
   trait SocketOptions extends StObject {
+    
+    /**
+      * Whether we should add a trailing slash to the request path.
+      * @default true
+      */
+    var addTrailingSlash: Boolean
     
     /**
       * `http.Agent` to use, defaults to `false` (NodeJS only)
@@ -327,12 +383,6 @@ object buildEsmSocketMod {
     var pfx: String
     
     /**
-      * The port the policy server listens on
-      * @default 843
-      */
-    var policyPost: Double
-    
-    /**
       * The port for our connection. Set from the URI passed when connecting
       */
     var port: String | Double
@@ -432,6 +482,7 @@ object buildEsmSocketMod {
   object SocketOptions {
     
     inline def apply(
+      addTrailingSlash: Boolean,
       agent: String | Boolean,
       autoUnref: Boolean,
       ca: String | js.Array[String],
@@ -447,7 +498,6 @@ object buildEsmSocketMod {
       path: String,
       perMessageDeflate: Threshold,
       pfx: String,
-      policyPost: Double,
       port: String | Double,
       protocols: String | js.Array[String],
       query: StringDictionary[Any],
@@ -463,12 +513,14 @@ object buildEsmSocketMod {
       useNativeTimers: Boolean,
       withCredentials: Boolean
     ): SocketOptions = {
-      val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any], autoUnref = autoUnref.asInstanceOf[js.Any], ca = ca.asInstanceOf[js.Any], cert = cert.asInstanceOf[js.Any], ciphers = ciphers.asInstanceOf[js.Any], closeOnBeforeunload = closeOnBeforeunload.asInstanceOf[js.Any], forceBase64 = forceBase64.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], onlyBinaryUpgrades = onlyBinaryUpgrades.asInstanceOf[js.Any], passphrase = passphrase.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], perMessageDeflate = perMessageDeflate.asInstanceOf[js.Any], pfx = pfx.asInstanceOf[js.Any], policyPost = policyPost.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocols = protocols.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], rejectUnauthorized = rejectUnauthorized.asInstanceOf[js.Any], rememberUpgrade = rememberUpgrade.asInstanceOf[js.Any], requestTimeout = requestTimeout.asInstanceOf[js.Any], secure = secure.asInstanceOf[js.Any], timestampParam = timestampParam.asInstanceOf[js.Any], timestampRequests = timestampRequests.asInstanceOf[js.Any], transportOptions = transportOptions.asInstanceOf[js.Any], transports = transports.asInstanceOf[js.Any], upgrade = upgrade.asInstanceOf[js.Any], useNativeTimers = useNativeTimers.asInstanceOf[js.Any], withCredentials = withCredentials.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(addTrailingSlash = addTrailingSlash.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], autoUnref = autoUnref.asInstanceOf[js.Any], ca = ca.asInstanceOf[js.Any], cert = cert.asInstanceOf[js.Any], ciphers = ciphers.asInstanceOf[js.Any], closeOnBeforeunload = closeOnBeforeunload.asInstanceOf[js.Any], forceBase64 = forceBase64.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], onlyBinaryUpgrades = onlyBinaryUpgrades.asInstanceOf[js.Any], passphrase = passphrase.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], perMessageDeflate = perMessageDeflate.asInstanceOf[js.Any], pfx = pfx.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocols = protocols.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], rejectUnauthorized = rejectUnauthorized.asInstanceOf[js.Any], rememberUpgrade = rememberUpgrade.asInstanceOf[js.Any], requestTimeout = requestTimeout.asInstanceOf[js.Any], secure = secure.asInstanceOf[js.Any], timestampParam = timestampParam.asInstanceOf[js.Any], timestampRequests = timestampRequests.asInstanceOf[js.Any], transportOptions = transportOptions.asInstanceOf[js.Any], transports = transports.asInstanceOf[js.Any], upgrade = upgrade.asInstanceOf[js.Any], useNativeTimers = useNativeTimers.asInstanceOf[js.Any], withCredentials = withCredentials.asInstanceOf[js.Any])
       __obj.asInstanceOf[SocketOptions]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: SocketOptions] (val x: Self) extends AnyVal {
+      
+      inline def setAddTrailingSlash(value: Boolean): Self = StObject.set(x, "addTrailingSlash", value.asInstanceOf[js.Any])
       
       inline def setAgent(value: String | Boolean): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -505,8 +557,6 @@ object buildEsmSocketMod {
       inline def setPerMessageDeflate(value: Threshold): Self = StObject.set(x, "perMessageDeflate", value.asInstanceOf[js.Any])
       
       inline def setPfx(value: String): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
-      
-      inline def setPolicyPost(value: Double): Self = StObject.set(x, "policyPost", value.asInstanceOf[js.Any])
       
       inline def setPort(value: String | Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
@@ -558,7 +608,7 @@ object buildEsmSocketMod {
     
     def flush(): Unit = js.native
     
-    def handshake(data: Any): Unit = js.native
+    def handshake(data: HandshakeData): Unit = js.native
     
     def heartbeat(): Unit = js.native
     
@@ -566,9 +616,9 @@ object buildEsmSocketMod {
     
     def open(): Unit = js.native
     
-    def packet(packet: Any): Unit = js.native
+    def packet(packet: Packet): Unit = js.native
     
-    def packetCreate(packet: Any): Unit = js.native
+    def packetCreate(packet: Packet): Unit = js.native
     
     def ping(): Unit = js.native
     
@@ -579,5 +629,23 @@ object buildEsmSocketMod {
     def upgradeError(err: js.Error): Unit = js.native
     
     def upgrading(transport: Any): Unit = js.native
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.engineIoClient.engineIoClientStrings.opening
+    - typings.engineIoClient.engineIoClientStrings.open
+    - typings.engineIoClient.engineIoClientStrings.closing
+    - typings.engineIoClient.engineIoClientStrings.closed
+  */
+  trait SocketState extends StObject
+  object SocketState {
+    
+    inline def closed: typings.engineIoClient.engineIoClientStrings.closed = "closed".asInstanceOf[typings.engineIoClient.engineIoClientStrings.closed]
+    
+    inline def closing: typings.engineIoClient.engineIoClientStrings.closing = "closing".asInstanceOf[typings.engineIoClient.engineIoClientStrings.closing]
+    
+    inline def open: typings.engineIoClient.engineIoClientStrings.open = "open".asInstanceOf[typings.engineIoClient.engineIoClientStrings.open]
+    
+    inline def opening: typings.engineIoClient.engineIoClientStrings.opening = "opening".asInstanceOf[typings.engineIoClient.engineIoClientStrings.opening]
   }
 }

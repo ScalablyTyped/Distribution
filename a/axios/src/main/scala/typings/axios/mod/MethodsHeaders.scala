@@ -4,98 +4,103 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {[ Key in axios.axios.Method as std.Lowercase<Key> ]: axios.axios.AxiosHeaders} */
+/* Inlined std.Partial<{[ Key in axios.axios.Method as std.Lowercase<Key> ]: axios.axios.AxiosHeaders} & {  common :axios.axios.AxiosHeaders}> */
 trait MethodsHeaders extends StObject {
   
-  var DELETE: AxiosHeaders
+  var DELETE: js.UndefOr[AxiosHeaders] = js.undefined
   
-  var GET: AxiosHeaders
+  var GET: js.UndefOr[AxiosHeaders] = js.undefined
   
-  var HEAD: AxiosHeaders
+  var HEAD: js.UndefOr[AxiosHeaders] = js.undefined
   
-  var LINK: AxiosHeaders
+  var LINK: js.UndefOr[AxiosHeaders] = js.undefined
   
-  var OPTIONS: AxiosHeaders
+  var OPTIONS: js.UndefOr[AxiosHeaders] = js.undefined
   
-  var PATCH: AxiosHeaders
+  var PATCH: js.UndefOr[AxiosHeaders] = js.undefined
   
-  var POST: AxiosHeaders
+  var POST: js.UndefOr[AxiosHeaders] = js.undefined
   
-  var PURGE: AxiosHeaders
+  var PURGE: js.UndefOr[AxiosHeaders] = js.undefined
   
-  var PUT: AxiosHeaders
+  var PUT: js.UndefOr[AxiosHeaders] = js.undefined
   
-  var UNLINK: AxiosHeaders
+  var UNLINK: js.UndefOr[AxiosHeaders] = js.undefined
   
-  var delete: AxiosHeaders
+  var common: js.UndefOr[AxiosHeaders] = js.undefined
   
-  var get: AxiosHeaders
+  var delete: js.UndefOr[AxiosHeaders] = js.undefined
   
-  var head: AxiosHeaders
+  var get: js.UndefOr[AxiosHeaders] = js.undefined
   
-  var link: AxiosHeaders
+  var head: js.UndefOr[AxiosHeaders] = js.undefined
   
-  var options: AxiosHeaders
+  var link: js.UndefOr[AxiosHeaders] = js.undefined
   
-  var patch: AxiosHeaders
+  var options: js.UndefOr[AxiosHeaders] = js.undefined
   
-  var post: AxiosHeaders
+  var patch: js.UndefOr[AxiosHeaders] = js.undefined
   
-  var purge: AxiosHeaders
+  var post: js.UndefOr[AxiosHeaders] = js.undefined
   
-  var put: AxiosHeaders
+  var purge: js.UndefOr[AxiosHeaders] = js.undefined
   
-  var unlink: AxiosHeaders
+  var put: js.UndefOr[AxiosHeaders] = js.undefined
+  
+  var unlink: js.UndefOr[AxiosHeaders] = js.undefined
 }
 object MethodsHeaders {
   
-  inline def apply(
-    DELETE: AxiosHeaders,
-    GET: AxiosHeaders,
-    HEAD: AxiosHeaders,
-    LINK: AxiosHeaders,
-    OPTIONS: AxiosHeaders,
-    PATCH: AxiosHeaders,
-    POST: AxiosHeaders,
-    PURGE: AxiosHeaders,
-    PUT: AxiosHeaders,
-    UNLINK: AxiosHeaders,
-    delete: AxiosHeaders,
-    get: AxiosHeaders,
-    head: AxiosHeaders,
-    link: AxiosHeaders,
-    options: AxiosHeaders,
-    patch: AxiosHeaders,
-    post: AxiosHeaders,
-    purge: AxiosHeaders,
-    put: AxiosHeaders,
-    unlink: AxiosHeaders
-  ): MethodsHeaders = {
-    val __obj = js.Dynamic.literal(DELETE = DELETE.asInstanceOf[js.Any], GET = GET.asInstanceOf[js.Any], HEAD = HEAD.asInstanceOf[js.Any], LINK = LINK.asInstanceOf[js.Any], OPTIONS = OPTIONS.asInstanceOf[js.Any], PATCH = PATCH.asInstanceOf[js.Any], POST = POST.asInstanceOf[js.Any], PURGE = PURGE.asInstanceOf[js.Any], PUT = PUT.asInstanceOf[js.Any], UNLINK = UNLINK.asInstanceOf[js.Any], delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any], purge = purge.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any], unlink = unlink.asInstanceOf[js.Any])
+  inline def apply(): MethodsHeaders = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MethodsHeaders]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: MethodsHeaders] (val x: Self) extends AnyVal {
     
+    inline def setCommon(value: AxiosHeaders): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
+    
+    inline def setCommonUndefined: Self = StObject.set(x, "common", js.undefined)
+    
     inline def setDELETE(value: AxiosHeaders): Self = StObject.set(x, "DELETE", value.asInstanceOf[js.Any])
+    
+    inline def setDELETEUndefined: Self = StObject.set(x, "DELETE", js.undefined)
     
     inline def setGET(value: AxiosHeaders): Self = StObject.set(x, "GET", value.asInstanceOf[js.Any])
     
+    inline def setGETUndefined: Self = StObject.set(x, "GET", js.undefined)
+    
     inline def setHEAD(value: AxiosHeaders): Self = StObject.set(x, "HEAD", value.asInstanceOf[js.Any])
+    
+    inline def setHEADUndefined: Self = StObject.set(x, "HEAD", js.undefined)
     
     inline def setLINK(value: AxiosHeaders): Self = StObject.set(x, "LINK", value.asInstanceOf[js.Any])
     
+    inline def setLINKUndefined: Self = StObject.set(x, "LINK", js.undefined)
+    
     inline def setOPTIONS(value: AxiosHeaders): Self = StObject.set(x, "OPTIONS", value.asInstanceOf[js.Any])
+    
+    inline def setOPTIONSUndefined: Self = StObject.set(x, "OPTIONS", js.undefined)
     
     inline def setPATCH(value: AxiosHeaders): Self = StObject.set(x, "PATCH", value.asInstanceOf[js.Any])
     
+    inline def setPATCHUndefined: Self = StObject.set(x, "PATCH", js.undefined)
+    
     inline def setPOST(value: AxiosHeaders): Self = StObject.set(x, "POST", value.asInstanceOf[js.Any])
+    
+    inline def setPOSTUndefined: Self = StObject.set(x, "POST", js.undefined)
     
     inline def setPURGE(value: AxiosHeaders): Self = StObject.set(x, "PURGE", value.asInstanceOf[js.Any])
     
+    inline def setPURGEUndefined: Self = StObject.set(x, "PURGE", js.undefined)
+    
     inline def setPUT(value: AxiosHeaders): Self = StObject.set(x, "PUT", value.asInstanceOf[js.Any])
     
+    inline def setPUTUndefined: Self = StObject.set(x, "PUT", js.undefined)
+    
     inline def setUNLINK(value: AxiosHeaders): Self = StObject.set(x, "UNLINK", value.asInstanceOf[js.Any])
+    
+    inline def setUNLINKUndefined: Self = StObject.set(x, "UNLINK", js.undefined)
   }
 }

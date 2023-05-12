@@ -87,7 +87,7 @@ object mod {
       *
       * The default implementation is always `false`.
       */
-    val isConflatable: Boolean = js.native
+    def isConflatable: Boolean = js.native
     
     /**
       * The type of the message.
@@ -120,8 +120,7 @@ object mod {
       * Process the pending posted messages in the queue immediately.
       *
       * #### Notes
-      * This function is useful when posted messages must be processed
-      * immediately, instead of on the next animation frame.
+      * This function is useful when posted messages must be processed immediately.
       *
       * This function should normally not be needed, but it may be
       * required to work around certain browser idiosyncrasies.

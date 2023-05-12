@@ -45,6 +45,11 @@ trait DescribeJobTemplateResponse extends StObject {
     */
   var jobTemplateId: js.UndefOr[JobTemplateId] = js.undefined
   
+  /**
+    * Allows you to configure an optional maintenance window for the rollout of a job document to all devices in the target group for a job.
+    */
+  var maintenanceWindows: js.UndefOr[MaintenanceWindows] = js.undefined
+  
   var presignedUrlConfig: js.UndefOr[PresignedUrlConfig] = js.undefined
   
   var timeoutConfig: js.UndefOr[TimeoutConfig] = js.undefined
@@ -94,6 +99,12 @@ object DescribeJobTemplateResponse {
     inline def setJobTemplateId(value: JobTemplateId): Self = StObject.set(x, "jobTemplateId", value.asInstanceOf[js.Any])
     
     inline def setJobTemplateIdUndefined: Self = StObject.set(x, "jobTemplateId", js.undefined)
+    
+    inline def setMaintenanceWindows(value: MaintenanceWindows): Self = StObject.set(x, "maintenanceWindows", value.asInstanceOf[js.Any])
+    
+    inline def setMaintenanceWindowsUndefined: Self = StObject.set(x, "maintenanceWindows", js.undefined)
+    
+    inline def setMaintenanceWindowsVarargs(value: MaintenanceWindow*): Self = StObject.set(x, "maintenanceWindows", js.Array(value*))
     
     inline def setPresignedUrlConfig(value: PresignedUrlConfig): Self = StObject.set(x, "presignedUrlConfig", value.asInstanceOf[js.Any])
     

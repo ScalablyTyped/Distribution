@@ -32,7 +32,7 @@ trait MemberConfiguration extends StObject {
   var Name: NetworkMemberNameString
   
   /**
-    * Tags assigned to the member. Tags consist of a key and optional value. For more information about tags, see Tagging Resources in the Amazon Managed Blockchain Hyperledger Fabric Developer Guide. When specifying tags during creation, you can specify multiple key-value pairs in a single request, with an overall maximum of 50 tags added to each resource.
+    * Tags assigned to the member. Tags consist of a key and optional value.  When specifying tags during creation, you can specify multiple key-value pairs in a single request, with an overall maximum of 50 tags added to each resource. For more information about tags, see Tagging Resources in the Amazon Managed Blockchain Ethereum Developer Guide, or Tagging Resources in the Amazon Managed Blockchain Hyperledger Fabric Developer Guide.
     */
   var Tags: js.UndefOr[InputTagMap] = js.undefined
 }

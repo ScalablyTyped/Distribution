@@ -136,6 +136,59 @@ trait BigUint64Array
     thisArg: Any
   ): Double = js.native
   
+  /* standard es2023.array */
+  def findLast(predicate: js.Function3[/* value */ js.BigInt, /* index */ Double, /* array */ this.type, Any]): js.UndefOr[js.BigInt] = js.native
+  def findLast(
+    predicate: js.Function3[/* value */ js.BigInt, /* index */ Double, /* array */ this.type, Any],
+    thisArg: Any
+  ): js.UndefOr[js.BigInt] = js.native
+  
+  /**
+    * Returns the index of the last element in the array where predicate is true, and -1
+    * otherwise.
+    * @param predicate findLastIndex calls predicate once for each element of the array, in descending
+    * order, until it finds one where predicate returns true. If such an element is found,
+    * findLastIndex immediately returns that element index. Otherwise, findLastIndex returns -1.
+    * @param thisArg If provided, it will be used as the this value for each invocation of
+    * predicate. If it is not provided, undefined is used instead.
+    */
+  /* standard es2023.array */
+  def findLastIndex(predicate: js.Function3[/* value */ js.BigInt, /* index */ Double, /* array */ this.type, Any]): Double = js.native
+  def findLastIndex(
+    predicate: js.Function3[/* value */ js.BigInt, /* index */ Double, /* array */ this.type, Any],
+    thisArg: Any
+  ): Double = js.native
+  
+  /**
+    * Returns the value of the last element in the array where predicate is true, and undefined
+    * otherwise.
+    * @param predicate findLast calls predicate once for each element of the array, in descending
+    * order, until it finds one where predicate returns true. If such an element is found, findLast
+    * immediately returns that element value. Otherwise, findLast returns undefined.
+    * @param thisArg If provided, it will be used as the this value for each invocation of
+    * predicate. If it is not provided, undefined is used instead.
+    */
+  /* standard es2023.array */
+  @JSName("findLast")
+  def findLast_S[S /* <: js.BigInt */](
+    predicate: js.Function3[
+      /* value */ js.BigInt, 
+      /* index */ Double, 
+      /* array */ this.type, 
+      /* is S */ scala.Boolean
+    ]
+  ): js.UndefOr[S] = js.native
+  @JSName("findLast")
+  def findLast_S[S /* <: js.BigInt */](
+    predicate: js.Function3[
+      /* value */ js.BigInt, 
+      /* index */ Double, 
+      /* array */ this.type, 
+      /* is S */ scala.Boolean
+    ],
+    thisArg: Any
+  ): js.UndefOr[S] = js.native
+  
   /**
     * Performs the specified action for each element in an array.
     * @param callbackfn A function that accepts up to three arguments. forEach calls the

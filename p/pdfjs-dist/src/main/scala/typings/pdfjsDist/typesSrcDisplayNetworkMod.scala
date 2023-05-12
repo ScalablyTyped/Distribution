@@ -42,8 +42,6 @@ object typesSrcDisplayNetworkMod {
     
     def getRequestXhr(xhrId: Any): Any
     
-    var getXhr: Any
-    
     var httpHeaders: Any
     
     var isHttp: Boolean
@@ -72,7 +70,6 @@ object typesSrcDisplayNetworkMod {
       abortRequest: Any => Unit,
       currXhrId: Double,
       getRequestXhr: Any => Any,
-      getXhr: Any,
       httpHeaders: Any,
       isHttp: Boolean,
       isPendingRequest: Any => Boolean,
@@ -85,7 +82,7 @@ object typesSrcDisplayNetworkMod {
       url: Any,
       withCredentials: Any
     ): NetworkManager = {
-      val __obj = js.Dynamic.literal(abortRequest = js.Any.fromFunction1(abortRequest), currXhrId = currXhrId.asInstanceOf[js.Any], getRequestXhr = js.Any.fromFunction1(getRequestXhr), getXhr = getXhr.asInstanceOf[js.Any], httpHeaders = httpHeaders.asInstanceOf[js.Any], isHttp = isHttp.asInstanceOf[js.Any], isPendingRequest = js.Any.fromFunction1(isPendingRequest), onProgress = js.Any.fromFunction2(onProgress), onStateChange = js.Any.fromFunction2(onStateChange), pendingRequests = pendingRequests.asInstanceOf[js.Any], request = js.Any.fromFunction1(request), requestFull = js.Any.fromFunction1(requestFull), requestRange = js.Any.fromFunction3(requestRange), url = url.asInstanceOf[js.Any], withCredentials = withCredentials.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(abortRequest = js.Any.fromFunction1(abortRequest), currXhrId = currXhrId.asInstanceOf[js.Any], getRequestXhr = js.Any.fromFunction1(getRequestXhr), httpHeaders = httpHeaders.asInstanceOf[js.Any], isHttp = isHttp.asInstanceOf[js.Any], isPendingRequest = js.Any.fromFunction1(isPendingRequest), onProgress = js.Any.fromFunction2(onProgress), onStateChange = js.Any.fromFunction2(onStateChange), pendingRequests = pendingRequests.asInstanceOf[js.Any], request = js.Any.fromFunction1(request), requestFull = js.Any.fromFunction1(requestFull), requestRange = js.Any.fromFunction3(requestRange), url = url.asInstanceOf[js.Any], withCredentials = withCredentials.asInstanceOf[js.Any])
       __obj.asInstanceOf[NetworkManager]
     }
     
@@ -97,8 +94,6 @@ object typesSrcDisplayNetworkMod {
       inline def setCurrXhrId(value: Double): Self = StObject.set(x, "currXhrId", value.asInstanceOf[js.Any])
       
       inline def setGetRequestXhr(value: Any => Any): Self = StObject.set(x, "getRequestXhr", js.Any.fromFunction1(value))
-      
-      inline def setGetXhr(value: Any): Self = StObject.set(x, "getXhr", value.asInstanceOf[js.Any])
       
       inline def setHttpHeaders(value: Any): Self = StObject.set(x, "httpHeaders", value.asInstanceOf[js.Any])
       

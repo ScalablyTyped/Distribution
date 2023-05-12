@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DecryptResponse extends StObject {
   
   /**
+    * The plaintext data encrypted with the public key in the attestation document.  This field is included in the response only when the Recipient parameter in the request includes a valid attestation document from an Amazon Web Services Nitro enclave. For information about the interaction between KMS and Amazon Web Services Nitro Enclaves, see How Amazon Web Services Nitro Enclaves uses KMS in the Key Management Service Developer Guide.
+    */
+  var CiphertextForRecipient: js.UndefOr[CiphertextType] = js.undefined
+  
+  /**
     * The encryption algorithm that was used to decrypt the ciphertext.
     */
   var EncryptionAlgorithm: js.UndefOr[EncryptionAlgorithmSpec] = js.undefined
@@ -17,7 +22,7 @@ trait DecryptResponse extends StObject {
   var KeyId: js.UndefOr[KeyIdType] = js.undefined
   
   /**
-    * Decrypted plaintext data. When you use the HTTP API or the Amazon Web Services CLI, the value is Base64-encoded. Otherwise, it is not Base64-encoded.
+    * Decrypted plaintext data. When you use the HTTP API or the Amazon Web Services CLI, the value is Base64-encoded. Otherwise, it is not Base64-encoded. If the response includes the CiphertextForRecipient field, the Plaintext field is null or empty.
     */
   var Plaintext: js.UndefOr[PlaintextType] = js.undefined
 }
@@ -30,6 +35,10 @@ object DecryptResponse {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: DecryptResponse] (val x: Self) extends AnyVal {
+    
+    inline def setCiphertextForRecipient(value: CiphertextType): Self = StObject.set(x, "CiphertextForRecipient", value.asInstanceOf[js.Any])
+    
+    inline def setCiphertextForRecipientUndefined: Self = StObject.set(x, "CiphertextForRecipient", js.undefined)
     
     inline def setEncryptionAlgorithm(value: EncryptionAlgorithmSpec): Self = StObject.set(x, "EncryptionAlgorithm", value.asInstanceOf[js.Any])
     

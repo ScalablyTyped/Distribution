@@ -23,7 +23,7 @@ object libIfpControlChannelMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def formatErrorPayload(error: Any, info: StackTrace): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatErrorPayload")(error.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatErrorPayload(error: Any, info: StackTrace): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("formatErrorPayload")(error.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def getInstance(): ControlChannel = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[ControlChannel]
   
@@ -54,13 +54,25 @@ object libIfpControlChannelMod {
     
     def getMessageForNavigator(sequenceToListen: Any, retry: Any, disableContinueOptimization: Any): Any = js.native
     
-    def getSessionLocked(): Boolean = js.native
+    def getScreenLockRequestedAt(): Double = js.native
+    
+    def getScreenLockedAt(): Double = js.native
+    
+    def getScreenUnlockedAt(): Double = js.native
     
     def getSyncStatus(): Double = js.native
     
     def handleNavigatorResponse(ctrlMessage: Any): ctrlColoncontinue | `ctrlColonstopColon-1` | ctrlColonsetok = js.native
     
+    def isScreenLockPending(): Boolean = js.native
+    
+    def isScreenLocked(): Boolean = js.native
+    
+    def lockScreen(): Unit = js.native
+    
     def lockSessionByNavigator(): String = js.native
+    
+    def requestScreenLock(): Unit = js.native
     
     def setCtrlMessage(message: Any): Unit = js.native
     

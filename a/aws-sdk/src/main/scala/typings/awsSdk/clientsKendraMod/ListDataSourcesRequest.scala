@@ -17,7 +17,7 @@ trait ListDataSourcesRequest extends StObject {
   var MaxResults: js.UndefOr[MaxResultsIntegerForListDataSourcesRequest] = js.undefined
   
   /**
-    * If the previous response was incomplete (because there is more data to retrieve), Amazon Kendra returns a pagination token in the response. You can use this pagination token to retrieve the next set of data source connectors (DataSourceSummaryItems). 
+    * If the previous response was incomplete (because there is more data to retrieve), Amazon Kendra returns a pagination token in the response. You can use this pagination token to retrieve the next set of data source connectors. 
     */
   var NextToken: js.UndefOr[typings.awsSdk.clientsKendraMod.NextToken] = js.undefined
 }

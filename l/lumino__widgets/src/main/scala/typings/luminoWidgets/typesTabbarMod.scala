@@ -86,19 +86,19 @@ object typesTabbarMod {
     /* private */ var _evtKeyDown: Any = js.native
     
     /**
-      * Handle the `'mousedown'` event for the tab bar.
+      * Handle the `'pointerdown'` event for the tab bar.
       */
-    /* private */ var _evtMouseDown: Any = js.native
+    /* private */ var _evtPointerDown: Any = js.native
     
     /**
-      * Handle the `'mousemove'` event for the tab bar.
+      * Handle the `'pointermove'` event for the tab bar.
       */
-    /* private */ var _evtMouseMove: Any = js.native
+    /* private */ var _evtPointerMove: Any = js.native
     
     /**
-      * Handle the `'mouseup'` event for the document.
+      * Handle the `'pointerup'` event for the document.
       */
-    /* private */ var _evtMouseUp: Any = js.native
+    /* private */ var _evtPointerUp: Any = js.native
     
     /* private */ var _name: Any = js.native
     
@@ -131,10 +131,11 @@ object typesTabbarMod {
     /**
       * Whether the add button is enabled.
       */
+    def addButtonEnabled: Boolean = js.native
     /**
       * Set whether the add button is enabled.
       */
-    var addButtonEnabled: Boolean = js.native
+    def addButtonEnabled_=(value: Boolean): Unit = js.native
     
     /**
       * The tab bar add button node.
@@ -144,12 +145,12 @@ object typesTabbarMod {
       *
       * Modifying this node directly can lead to undefined behavior.
       */
-    val addButtonNode: HTMLDivElement = js.native
+    def addButtonNode: HTMLDivElement = js.native
     
     /**
       * A signal emitted when the tab bar add button is clicked.
       */
-    val addRequested: ISignal[this.type, Unit] = js.native
+    def addRequested: ISignal[this.type, Unit] = js.native
     
     /**
       * Add a tab to the end of the tab bar.
@@ -186,7 +187,7 @@ object typesTabbarMod {
       *
       * Modifying this node directly can lead to undefined behavior.
       */
-    val contentNode: HTMLUListElement = js.native
+    def contentNode: HTMLUListElement = js.native
     
     /**
       * A signal emitted when the current tab is changed.
@@ -199,7 +200,7 @@ object typesTabbarMod {
       * tab changes due to tabs being inserted, removed, or moved. It is
       * only emitted when the actual current tab node is changed.
       */
-    val currentChanged: ISignal[this.type, ICurrentChangedArgs[T]] = js.native
+    def currentChanged: ISignal[this.type, ICurrentChangedArgs[T]] = js.native
     
     /**
       * Get the index of the currently selected tab.
@@ -207,13 +208,14 @@ object typesTabbarMod {
       * #### Notes
       * This will be `-1` if no tab is selected.
       */
+    def currentIndex: Double = js.native
     /**
       * Set the index of the currently selected tab.
       *
       * #### Notes
       * If the value is out of range, the index will be set to `-1`.
       */
-    var currentIndex: Double = js.native
+    def currentIndex_=(value: Double): Unit = js.native
     
     /**
       * Get the currently selected title.
@@ -221,20 +223,21 @@ object typesTabbarMod {
       * #### Notes
       * This will be `null` if no tab is selected.
       */
+    def currentTitle: Title[T] | Null = js.native
     /**
       * Set the currently selected title.
       *
       * #### Notes
       * If the title does not exist, the title will be set to `null`.
       */
-    var currentTitle: Title[T] | Null = js.native
+    def currentTitle_=(value: Title[T] | Null): Unit = js.native
     
     /**
       * The document to use with the tab bar.
       *
       * The default is the global `document` instance.
       */
-    val document: Document | ShadowRoot = js.native
+    def document: Document | ShadowRoot = js.native
     
     /**
       * Handle the DOM events for the tab bar.
@@ -275,10 +278,11 @@ object typesTabbarMod {
     /**
       * Get the name of the tab bar.
       */
+    def name: String = js.native
     /**
       * Set the name of the tab bar.
       */
-    var name: String = js.native
+    def name_=(value: String): Unit = js.native
     
     /**
       * Get the orientation of the tab bar.
@@ -286,13 +290,14 @@ object typesTabbarMod {
       * #### Notes
       * This controls whether the tabs are arranged in a row or column.
       */
+    def orientation: Orientation = js.native
     /**
       * Set the orientation of the tab bar.
       *
       * #### Notes
       * This controls whether the tabs are arranged in a row or column.
       */
-    var orientation: Orientation = js.native
+    def orientation_=(value: Orientation): Unit = js.native
     
     /**
       * Release the mouse and restore the non-dragged tab positions.
@@ -342,7 +347,7 @@ object typesTabbarMod {
       *
       * This signal is emitted even if the clicked tab is the current tab.
       */
-    val tabActivateRequested: ISignal[this.type, ITabActivateRequestedArgs[T]] = js.native
+    def tabActivateRequested: ISignal[this.type, ITabActivateRequestedArgs[T]] = js.native
     
     /**
       * A signal emitted when a tab close icon is clicked.
@@ -350,7 +355,7 @@ object typesTabbarMod {
       * #### Notes
       * This signal is not emitted unless the tab title is `closable`.
       */
-    val tabCloseRequested: ISignal[this.type, ITabCloseRequestedArgs[T]] = js.native
+    def tabCloseRequested: ISignal[this.type, ITabCloseRequestedArgs[T]] = js.native
     
     /**
       * A signal emitted when a tab is dragged beyond the detach threshold.
@@ -364,7 +369,7 @@ object typesTabbarMod {
       *
       * This signal is only emitted once per drag cycle.
       */
-    val tabDetachRequested: ISignal[this.type, ITabDetachRequestedArgs[T]] = js.native
+    def tabDetachRequested: ISignal[this.type, ITabDetachRequestedArgs[T]] = js.native
     
     /**
       * A signal emitted when a tab is moved by the user.
@@ -374,7 +379,7 @@ object typesTabbarMod {
       *
       * This signal is not emitted when a tab is moved programmatically.
       */
-    val tabMoved: ISignal[this.type, ITabMovedArgs[T]] = js.native
+    def tabMoved: ISignal[this.type, ITabMovedArgs[T]] = js.native
     
     /**
       * Whether the tabs are movable by the user.
@@ -387,17 +392,18 @@ object typesTabbarMod {
     /**
       * A read-only array of the titles in the tab bar.
       */
-    val titles: js.Array[Title[T]] = js.native
+    def titles: js.Array[Title[T]] = js.native
     
     /**
       * Whether the titles can be user-edited.
       *
       */
+    def titlesEditable: Boolean = js.native
     /**
       * Set whether titles can be user edited.
       *
       */
-    var titlesEditable: Boolean = js.native
+    def titlesEditable_=(value: Boolean): Unit = js.native
   }
   object TabBar {
     

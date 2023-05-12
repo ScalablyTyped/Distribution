@@ -1,10 +1,10 @@
 package typings.rcInputNumber
 
 import org.scalablytyped.runtime.Shortcut
+import typings.rcComponentMiniDecimal.esMiniDecimalMod.ValueType
 import typings.rcInputNumber.anon.Children
 import typings.rcInputNumber.anon.DisplayName
 import typings.rcInputNumber.esInputNumberMod.InputNumberProps
-import typings.rcInputNumber.esUtilsMiniDecimalMod.ValueType
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

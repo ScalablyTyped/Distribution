@@ -37,13 +37,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("phaser", "Scene")
 @js.native
-open class Scene protected ()
+/**
+  * 
+  * @param config The scene key or scene specific configuration settings.
+  */
+open class Scene ()
   extends StObject
      with typings.phaser.Phaser.Scene {
-  /**
-    * 
-    * @param config Scene specific configuration settings.
-    */
   def this(config: String) = this()
   def this(config: SettingsConfig) = this()
   

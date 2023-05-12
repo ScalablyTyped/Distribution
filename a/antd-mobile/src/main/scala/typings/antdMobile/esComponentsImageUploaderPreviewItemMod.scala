@@ -8,6 +8,7 @@ import typings.antdMobile.antdMobileStrings.fill
 import typings.antdMobile.antdMobileStrings.none
 import typings.antdMobile.esComponentsImageUploaderImageUploaderMod.TaskStatus
 import typings.react.mod.FC
+import typings.react.mod.ReactNode
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,6 +23,8 @@ object esComponentsImageUploaderPreviewItemMod extends Shortcut {
   trait Props extends StObject {
     
     var deletable: Boolean
+    
+    var deleteIcon: ReactNode
     
     var file: js.UndefOr[File] = js.undefined
     
@@ -46,6 +49,10 @@ object esComponentsImageUploaderPreviewItemMod extends Shortcut {
     implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setDeletable(value: Boolean): Self = StObject.set(x, "deletable", value.asInstanceOf[js.Any])
+      
+      inline def setDeleteIcon(value: ReactNode): Self = StObject.set(x, "deleteIcon", value.asInstanceOf[js.Any])
+      
+      inline def setDeleteIconUndefined: Self = StObject.set(x, "deleteIcon", js.undefined)
       
       inline def setFile(value: File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       

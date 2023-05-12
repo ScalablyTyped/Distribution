@@ -1,28 +1,43 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.COLLABORATOR
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.CONTRIBUTOR
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.FIRST_TIMER
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.FIRST_TIME_CONTRIBUTOR
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.MANNEQUIN
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.MEMBER
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.NONE
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.OWNER
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings._empty
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.`off-topic`
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.`too heated`
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.closed
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.open
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.resolved
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.spam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Timelineurl extends StObject {
   
-  var active_lock_reason: js.UndefOr[String | Null] = js.undefined
+  /** @enum {string|null} */
+  var active_lock_reason: resolved | `off-topic` | (`too heated`) | spam | _empty | Null
   
-  var assignee: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
+  /** User */
+  var assignee: js.UndefOr[Organizationsurl | Null] = js.undefined
   
-  var assignees: js.UndefOr[
-    (js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
-    ]) | Null
-  ] = js.undefined
+  var assignees: js.Array[Organizationsurl | Null]
   
-  var author_association: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['author-association'] */ js.Any
+  /**
+    * AuthorAssociation
+    * @description How the author is associated with the repository.
+    * @enum {string}
+    */
+  var author_association: COLLABORATOR | CONTRIBUTOR | FIRST_TIMER | FIRST_TIME_CONTRIBUTOR | MANNEQUIN | MEMBER | NONE | OWNER
   
-  var body: js.UndefOr[String] = js.undefined
-  
-  var body_html: js.UndefOr[String] = js.undefined
-  
-  var body_text: js.UndefOr[String] = js.undefined
+  /** @description Contents of the issue */
+  var body: String | Null
   
   /** Format: date-time */
   var closed_at: String | Null
@@ -43,131 +58,114 @@ trait Timelineurl extends StObject {
   /** Format: uri */
   var html_url: String
   
+  /** Format: int64 */
   var id: Double
   
-  var labels: js.Array[NodeidUrl]
+  var labels: js.UndefOr[js.Array[ColorDefaultDescription]] = js.undefined
   
+  /** Format: uri-template */
   var labels_url: String
   
-  var locked: Boolean
+  var locked: js.UndefOr[Boolean] = js.undefined
   
-  var milestone: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-milestone'] */ js.Any
+  /**
+    * Milestone
+    * @description A collection of related issues and pull requests.
+    */
+  var milestone: Openissues | Null
   
   var node_id: String
   
   var number: Double
   
-  var performed_via_github_app: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-integration'] */ js.Any
-  ] = js.undefined
+  /**
+    * App
+    * @description GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub.
+    */
+  var performed_via_github_app: js.UndefOr[PermissionsSlug | Null] = js.undefined
   
-  var pull_request: js.UndefOr[Diffurl] = js.undefined
+  var pull_request: js.UndefOr[Mergedat] = js.undefined
   
-  var reactions: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['reaction-rollup'] */ js.Any
-  ] = js.undefined
-  
-  var repository: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repository'] */ js.Any
-  ] = js.undefined
+  /** Reactions */
+  var reactions: Eyes
   
   /** Format: uri */
   var repository_url: String
   
-  var score: Double
-  
-  var state: String
+  /**
+    * @description State of the issue; either 'open' or 'closed'
+    * @enum {string}
+    */
+  var state: js.UndefOr[open | closed] = js.undefined
   
   var state_reason: js.UndefOr[String | Null] = js.undefined
-  
-  var text_matches: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['search-result-text-matches'] */ js.Any
-  ] = js.undefined
   
   /** Format: uri */
   var timeline_url: js.UndefOr[String] = js.undefined
   
+  /** @description Title of the issue */
   var title: String
   
   /** Format: date-time */
   var updated_at: String
   
-  /** Format: uri */
+  /**
+    * Format: uri
+    * @description URL for the issue
+    */
   var url: String
   
-  var user: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
+  /** User */
+  var user: Organizationsurl | Null
 }
 object Timelineurl {
   
   inline def apply(
-    assignee: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any,
-    author_association: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['author-association'] */ js.Any,
+    assignees: js.Array[Organizationsurl | Null],
+    author_association: COLLABORATOR | CONTRIBUTOR | FIRST_TIMER | FIRST_TIME_CONTRIBUTOR | MANNEQUIN | MEMBER | NONE | OWNER,
     comments: Double,
     comments_url: String,
     created_at: String,
     events_url: String,
     html_url: String,
     id: Double,
-    labels: js.Array[NodeidUrl],
     labels_url: String,
-    locked: Boolean,
-    milestone: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-milestone'] */ js.Any,
     node_id: String,
     number: Double,
+    reactions: Eyes,
     repository_url: String,
-    score: Double,
-    state: String,
     title: String,
     updated_at: String,
-    url: String,
-    user: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
+    url: String
   ): Timelineurl = {
-    val __obj = js.Dynamic.literal(assignee = assignee.asInstanceOf[js.Any], author_association = author_association.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], comments_url = comments_url.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], events_url = events_url.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], labels_url = labels_url.asInstanceOf[js.Any], locked = locked.asInstanceOf[js.Any], milestone = milestone.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], repository_url = repository_url.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], closed_at = null)
+    val __obj = js.Dynamic.literal(assignees = assignees.asInstanceOf[js.Any], author_association = author_association.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], comments_url = comments_url.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], events_url = events_url.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], labels_url = labels_url.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], reactions = reactions.asInstanceOf[js.Any], repository_url = repository_url.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], active_lock_reason = null, body = null, closed_at = null, milestone = null, user = null)
     __obj.asInstanceOf[Timelineurl]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Timelineurl] (val x: Self) extends AnyVal {
     
-    inline def setActive_lock_reason(value: String): Self = StObject.set(x, "active_lock_reason", value.asInstanceOf[js.Any])
+    inline def setActive_lock_reason(value: resolved | `off-topic` | (`too heated`) | spam | _empty): Self = StObject.set(x, "active_lock_reason", value.asInstanceOf[js.Any])
     
     inline def setActive_lock_reasonNull: Self = StObject.set(x, "active_lock_reason", null)
     
-    inline def setActive_lock_reasonUndefined: Self = StObject.set(x, "active_lock_reason", js.undefined)
+    inline def setAssignee(value: Organizationsurl): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
     
-    inline def setAssignee(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
-    ): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
+    inline def setAssigneeNull: Self = StObject.set(x, "assignee", null)
     
-    inline def setAssignees(
-      value: js.Array[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
-        ]
-    ): Self = StObject.set(x, "assignees", value.asInstanceOf[js.Any])
+    inline def setAssigneeUndefined: Self = StObject.set(x, "assignee", js.undefined)
     
-    inline def setAssigneesNull: Self = StObject.set(x, "assignees", null)
+    inline def setAssignees(value: js.Array[Organizationsurl | Null]): Self = StObject.set(x, "assignees", value.asInstanceOf[js.Any])
     
-    inline def setAssigneesUndefined: Self = StObject.set(x, "assignees", js.undefined)
-    
-    inline def setAssigneesVarargs(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any)*
-    ): Self = StObject.set(x, "assignees", js.Array(value*))
+    inline def setAssigneesVarargs(value: (Organizationsurl | Null)*): Self = StObject.set(x, "assignees", js.Array(value*))
     
     inline def setAuthor_association(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['author-association'] */ js.Any
+      value: COLLABORATOR | CONTRIBUTOR | FIRST_TIMER | FIRST_TIME_CONTRIBUTOR | MANNEQUIN | MEMBER | NONE | OWNER
     ): Self = StObject.set(x, "author_association", value.asInstanceOf[js.Any])
     
     inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
-    
-    inline def setBody_html(value: String): Self = StObject.set(x, "body_html", value.asInstanceOf[js.Any])
-    
-    inline def setBody_htmlUndefined: Self = StObject.set(x, "body_html", js.undefined)
-    
-    inline def setBody_text(value: String): Self = StObject.set(x, "body_text", value.asInstanceOf[js.Any])
-    
-    inline def setBody_textUndefined: Self = StObject.set(x, "body_text", js.undefined)
+    inline def setBodyNull: Self = StObject.set(x, "body", null)
     
     inline def setClosed_at(value: String): Self = StObject.set(x, "closed_at", value.asInstanceOf[js.Any])
     
@@ -189,61 +187,49 @@ object Timelineurl {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setLabels(value: js.Array[NodeidUrl]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: js.Array[ColorDefaultDescription]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    inline def setLabelsVarargs(value: NodeidUrl*): Self = StObject.set(x, "labels", js.Array(value*))
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    
+    inline def setLabelsVarargs(value: ColorDefaultDescription*): Self = StObject.set(x, "labels", js.Array(value*))
     
     inline def setLabels_url(value: String): Self = StObject.set(x, "labels_url", value.asInstanceOf[js.Any])
     
     inline def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
     
-    inline def setMilestone(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-milestone'] */ js.Any
-    ): Self = StObject.set(x, "milestone", value.asInstanceOf[js.Any])
+    inline def setLockedUndefined: Self = StObject.set(x, "locked", js.undefined)
+    
+    inline def setMilestone(value: Openissues): Self = StObject.set(x, "milestone", value.asInstanceOf[js.Any])
+    
+    inline def setMilestoneNull: Self = StObject.set(x, "milestone", null)
     
     inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
     inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    inline def setPerformed_via_github_app(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-integration'] */ js.Any
-    ): Self = StObject.set(x, "performed_via_github_app", value.asInstanceOf[js.Any])
+    inline def setPerformed_via_github_app(value: PermissionsSlug): Self = StObject.set(x, "performed_via_github_app", value.asInstanceOf[js.Any])
+    
+    inline def setPerformed_via_github_appNull: Self = StObject.set(x, "performed_via_github_app", null)
     
     inline def setPerformed_via_github_appUndefined: Self = StObject.set(x, "performed_via_github_app", js.undefined)
     
-    inline def setPull_request(value: Diffurl): Self = StObject.set(x, "pull_request", value.asInstanceOf[js.Any])
+    inline def setPull_request(value: Mergedat): Self = StObject.set(x, "pull_request", value.asInstanceOf[js.Any])
     
     inline def setPull_requestUndefined: Self = StObject.set(x, "pull_request", js.undefined)
     
-    inline def setReactions(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['reaction-rollup'] */ js.Any
-    ): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
-    
-    inline def setReactionsUndefined: Self = StObject.set(x, "reactions", js.undefined)
-    
-    inline def setRepository(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repository'] */ js.Any
-    ): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
-    
-    inline def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
+    inline def setReactions(value: Eyes): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
     
     inline def setRepository_url(value: String): Self = StObject.set(x, "repository_url", value.asInstanceOf[js.Any])
     
-    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setState(value: open | closed): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     inline def setState_reason(value: String): Self = StObject.set(x, "state_reason", value.asInstanceOf[js.Any])
     
     inline def setState_reasonNull: Self = StObject.set(x, "state_reason", null)
     
     inline def setState_reasonUndefined: Self = StObject.set(x, "state_reason", js.undefined)
-    
-    inline def setText_matches(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['search-result-text-matches'] */ js.Any
-    ): Self = StObject.set(x, "text_matches", value.asInstanceOf[js.Any])
-    
-    inline def setText_matchesUndefined: Self = StObject.set(x, "text_matches", js.undefined)
     
     inline def setTimeline_url(value: String): Self = StObject.set(x, "timeline_url", value.asInstanceOf[js.Any])
     
@@ -255,8 +241,8 @@ object Timelineurl {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def setUser(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
-    ): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: Organizationsurl): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    
+    inline def setUserNull: Self = StObject.set(x, "user", null)
   }
 }

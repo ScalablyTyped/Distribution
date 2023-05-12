@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderImageSlice
+import typings.csstype.mod.Property.OverscrollBehaviorInline
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `132` extends StObject {
   
   var value: js.UndefOr[
-    BorderImageSlice | (js.Array[
+    OverscrollBehaviorInline | (js.Array[
       (Extract[
-        js.UndefOr[BorderImageSlice | js.Array[NonNullable[js.UndefOr[BorderImageSlice]]]], 
+        js.UndefOr[
+          OverscrollBehaviorInline | js.Array[NonNullable[js.UndefOr[OverscrollBehaviorInline]]]
+        ], 
         String
-      ]) | NonNullable[js.UndefOr[BorderImageSlice]]
+      ]) | NonNullable[js.UndefOr[OverscrollBehaviorInline]]
     ])
   ] = js.native
 }

@@ -1,12 +1,11 @@
 package typings.hapiPino
 
 import org.scalablytyped.runtime.Shortcut
-import typings.hapiHapi.mod.Plugin
-import typings.hapiHapi.mod.ReqRefDefaults
-import typings.hapiHapi.mod.Request
+import typings.hapiHapi.libTypesPluginMod.Plugin
 import typings.hapiPino.anon.Dictkey
 import typings.hapiPino.anon.keyinLevelstring
 import typings.hapiPino.hapiPinoBooleans.`false`
+import typings.hapiPino.mod.hapiHapiAugmentingMod.Request
 import typings.node.processMod.global.NodeJS.WriteStream
 import typings.pino.mod.pino.Level
 import typings.pino.mod.pino.Logger
@@ -19,7 +18,7 @@ object mod extends Shortcut {
   
   @JSImport("hapi-pino", JSImport.Namespace)
   @js.native
-  val ^ : Plugin[Options] = js.native
+  val ^ : Plugin[Options, Unit] = js.native
   
   trait Options
     extends StObject
@@ -27,19 +26,15 @@ object mod extends Shortcut {
     
     var allTags: js.UndefOr[Level] = js.undefined
     
-    var customRequestCompleteMessage: js.UndefOr[
-        js.Function2[/* req */ Request[ReqRefDefaults], /* responseTime */ Double, String]
-      ] = js.undefined
+    var customRequestCompleteMessage: js.UndefOr[js.Function2[/* req */ Request, /* responseTime */ Double, String]] = js.undefined
     
-    var customRequestErrorMessage: js.UndefOr[js.Function2[/* req */ Request[ReqRefDefaults], /* error */ js.Error, String]] = js.undefined
+    var customRequestErrorMessage: js.UndefOr[js.Function2[/* req */ Request, /* error */ js.Error, String]] = js.undefined
     
-    var customRequestStartMessage: js.UndefOr[js.Function1[/* req */ Request[ReqRefDefaults], String]] = js.undefined
+    var customRequestStartMessage: js.UndefOr[js.Function1[/* req */ Request, String]] = js.undefined
     
-    var getChildBindings: js.UndefOr[js.Function1[/* req */ Request[ReqRefDefaults], Dictkey]] = js.undefined
+    var getChildBindings: js.UndefOr[js.Function1[/* req */ Request, Dictkey]] = js.undefined
     
-    var ignoreFunc: js.UndefOr[
-        js.Function2[/* options */ this.type, /* request */ Request[ReqRefDefaults], Boolean]
-      ] = js.undefined
+    var ignoreFunc: js.UndefOr[js.Function2[/* options */ this.type, /* request */ Request, Boolean]] = js.undefined
     
     var ignorePaths: js.UndefOr[js.Array[String]] = js.undefined
     
@@ -49,6 +44,8 @@ object mod extends Shortcut {
     
     var instance: js.UndefOr[Logger[LoggerOptions]] = js.undefined
     
+    var log4xxResponseErrors: js.UndefOr[Boolean] = js.undefined
+    
     var logEvents: js.UndefOr[js.Array[String] | `false` | Null] = js.undefined
     
     var logPathParams: js.UndefOr[Boolean] = js.undefined
@@ -57,9 +54,9 @@ object mod extends Shortcut {
     
     var logQueryParams: js.UndefOr[Boolean] = js.undefined
     
-    var logRequestComplete: js.UndefOr[Boolean | (js.Function1[/* req */ Request[ReqRefDefaults], Boolean])] = js.undefined
+    var logRequestComplete: js.UndefOr[Boolean | (js.Function1[/* req */ Request, Boolean])] = js.undefined
     
-    var logRequestStart: js.UndefOr[Boolean | (js.Function1[/* req */ Request[ReqRefDefaults], Boolean])] = js.undefined
+    var logRequestStart: js.UndefOr[Boolean | (js.Function1[/* req */ Request, Boolean])] = js.undefined
     
     var logRouteTags: js.UndefOr[Boolean] = js.undefined
     
@@ -88,23 +85,23 @@ object mod extends Shortcut {
       
       inline def setAllTagsUndefined: Self = StObject.set(x, "allTags", js.undefined)
       
-      inline def setCustomRequestCompleteMessage(value: (/* req */ Request[ReqRefDefaults], /* responseTime */ Double) => String): Self = StObject.set(x, "customRequestCompleteMessage", js.Any.fromFunction2(value))
+      inline def setCustomRequestCompleteMessage(value: (/* req */ Request, /* responseTime */ Double) => String): Self = StObject.set(x, "customRequestCompleteMessage", js.Any.fromFunction2(value))
       
       inline def setCustomRequestCompleteMessageUndefined: Self = StObject.set(x, "customRequestCompleteMessage", js.undefined)
       
-      inline def setCustomRequestErrorMessage(value: (/* req */ Request[ReqRefDefaults], /* error */ js.Error) => String): Self = StObject.set(x, "customRequestErrorMessage", js.Any.fromFunction2(value))
+      inline def setCustomRequestErrorMessage(value: (/* req */ Request, /* error */ js.Error) => String): Self = StObject.set(x, "customRequestErrorMessage", js.Any.fromFunction2(value))
       
       inline def setCustomRequestErrorMessageUndefined: Self = StObject.set(x, "customRequestErrorMessage", js.undefined)
       
-      inline def setCustomRequestStartMessage(value: /* req */ Request[ReqRefDefaults] => String): Self = StObject.set(x, "customRequestStartMessage", js.Any.fromFunction1(value))
+      inline def setCustomRequestStartMessage(value: /* req */ Request => String): Self = StObject.set(x, "customRequestStartMessage", js.Any.fromFunction1(value))
       
       inline def setCustomRequestStartMessageUndefined: Self = StObject.set(x, "customRequestStartMessage", js.undefined)
       
-      inline def setGetChildBindings(value: /* req */ Request[ReqRefDefaults] => Dictkey): Self = StObject.set(x, "getChildBindings", js.Any.fromFunction1(value))
+      inline def setGetChildBindings(value: /* req */ Request => Dictkey): Self = StObject.set(x, "getChildBindings", js.Any.fromFunction1(value))
       
       inline def setGetChildBindingsUndefined: Self = StObject.set(x, "getChildBindings", js.undefined)
       
-      inline def setIgnoreFunc(value: (Options, /* request */ Request[ReqRefDefaults]) => Boolean): Self = StObject.set(x, "ignoreFunc", js.Any.fromFunction2(value))
+      inline def setIgnoreFunc(value: (Options, /* request */ Request) => Boolean): Self = StObject.set(x, "ignoreFunc", js.Any.fromFunction2(value))
       
       inline def setIgnoreFuncUndefined: Self = StObject.set(x, "ignoreFunc", js.undefined)
       
@@ -130,6 +127,10 @@ object mod extends Shortcut {
       
       inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
       
+      inline def setLog4xxResponseErrors(value: Boolean): Self = StObject.set(x, "log4xxResponseErrors", value.asInstanceOf[js.Any])
+      
+      inline def setLog4xxResponseErrorsUndefined: Self = StObject.set(x, "log4xxResponseErrors", js.undefined)
+      
       inline def setLogEvents(value: js.Array[String] | `false`): Self = StObject.set(x, "logEvents", value.asInstanceOf[js.Any])
       
       inline def setLogEventsNull: Self = StObject.set(x, "logEvents", null)
@@ -150,15 +151,15 @@ object mod extends Shortcut {
       
       inline def setLogQueryParamsUndefined: Self = StObject.set(x, "logQueryParams", js.undefined)
       
-      inline def setLogRequestComplete(value: Boolean | (js.Function1[/* req */ Request[ReqRefDefaults], Boolean])): Self = StObject.set(x, "logRequestComplete", value.asInstanceOf[js.Any])
+      inline def setLogRequestComplete(value: Boolean | (js.Function1[/* req */ Request, Boolean])): Self = StObject.set(x, "logRequestComplete", value.asInstanceOf[js.Any])
       
-      inline def setLogRequestCompleteFunction1(value: /* req */ Request[ReqRefDefaults] => Boolean): Self = StObject.set(x, "logRequestComplete", js.Any.fromFunction1(value))
+      inline def setLogRequestCompleteFunction1(value: /* req */ Request => Boolean): Self = StObject.set(x, "logRequestComplete", js.Any.fromFunction1(value))
       
       inline def setLogRequestCompleteUndefined: Self = StObject.set(x, "logRequestComplete", js.undefined)
       
-      inline def setLogRequestStart(value: Boolean | (js.Function1[/* req */ Request[ReqRefDefaults], Boolean])): Self = StObject.set(x, "logRequestStart", value.asInstanceOf[js.Any])
+      inline def setLogRequestStart(value: Boolean | (js.Function1[/* req */ Request, Boolean])): Self = StObject.set(x, "logRequestStart", value.asInstanceOf[js.Any])
       
-      inline def setLogRequestStartFunction1(value: /* req */ Request[ReqRefDefaults] => Boolean): Self = StObject.set(x, "logRequestStart", js.Any.fromFunction1(value))
+      inline def setLogRequestStartFunction1(value: /* req */ Request => Boolean): Self = StObject.set(x, "logRequestStart", js.Any.fromFunction1(value))
       
       inline def setLogRequestStartUndefined: Self = StObject.set(x, "logRequestStart", js.undefined)
       
@@ -190,10 +191,10 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = Plugin[Options]
+  type _To = Plugin[Options, Unit]
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Plugin[Options] = ^
+  override def _to: Plugin[Options, Unit] = ^
   
   /* augmented module */
   object hapiHapiAugmentingMod {
@@ -204,13 +205,13 @@ object mod extends Shortcut {
     }
     object Request {
       
-      inline def apply(logger: Logger[LoggerOptions]): typings.hapiPino.mod.hapiHapiAugmentingMod.Request = {
+      inline def apply(logger: Logger[LoggerOptions]): Request = {
         val __obj = js.Dynamic.literal(logger = logger.asInstanceOf[js.Any])
-        __obj.asInstanceOf[typings.hapiPino.mod.hapiHapiAugmentingMod.Request]
+        __obj.asInstanceOf[Request]
       }
       
       @scala.inline
-      implicit open class MutableBuilder[Self <: typings.hapiPino.mod.hapiHapiAugmentingMod.Request] (val x: Self) extends AnyVal {
+      implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
         
         inline def setLogger(value: Logger[LoggerOptions]): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       }

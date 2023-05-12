@@ -41,6 +41,7 @@ import typings.ddTrace.ddTraceStrings.oracledb
 import typings.ddTrace.ddTraceStrings.paperplane
 import typings.ddTrace.ddTraceStrings.pg
 import typings.ddTrace.ddTraceStrings.pino
+import typings.ddTrace.ddTraceStrings.playwright
 import typings.ddTrace.ddTraceStrings.redis
 import typings.ddTrace.ddTraceStrings.restify
 import typings.ddTrace.ddTraceStrings.rhea
@@ -62,6 +63,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 trait Tracer_ extends Tracer {
+  
+  var appsec: Appsec = js.native
   
   /**
     * Create and return a string that can be included in the <head> of a
@@ -395,6 +398,12 @@ trait Tracer_ extends Tracer {
   @JSName("use")
   def use_pino(plugin: pino, config: typings.ddTrace.mod.plugins.pino): this.type = js.native
   @JSName("use")
+  def use_playwright(plugin: playwright): this.type = js.native
+  @JSName("use")
+  def use_playwright(plugin: playwright, config: Boolean): this.type = js.native
+  @JSName("use")
+  def use_playwright(plugin: playwright, config: typings.ddTrace.mod.plugins.playwright): this.type = js.native
+  @JSName("use")
   def use_redis(plugin: redis): this.type = js.native
   @JSName("use")
   def use_redis(plugin: redis, config: Boolean): this.type = js.native
@@ -452,7 +461,6 @@ trait Tracer_ extends Tracer {
     * which case the span will finish at the end of the function execution.
     */
   def wrap[T](name: String, fn: T): T = js.native
-  def wrap[T](name: String, fn: T, requiresParent: Boolean): T = js.native
   def wrap[T](name: String, options: TraceOptions & SpanOptions, fn: T): T = js.native
   def wrap[T](name: String, options: js.Function1[/* repeated */ Any, TraceOptions & SpanOptions], fn: T): T = js.native
 }

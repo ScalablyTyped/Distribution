@@ -19,6 +19,7 @@ import typings.react.mod.global.JSX.Element
 import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
+import typings.std.HTMLLIElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -187,7 +188,7 @@ object PartialSuggestPropsany {
     
     inline def setItemPredicateUndefined: Self = StObject.set(x, "itemPredicate", js.undefined)
     
-    inline def setItemRenderer(value: (Any, /* itemProps */ ItemRendererProps) => Element | Null): Self = StObject.set(x, "itemRenderer", js.Any.fromFunction2(value))
+    inline def setItemRenderer(value: (Any, /* itemProps */ ItemRendererProps[HTMLLIElement]) => Element | Null): Self = StObject.set(x, "itemRenderer", js.Any.fromFunction2(value))
     
     inline def setItemRendererUndefined: Self = StObject.set(x, "itemRenderer", js.undefined)
     

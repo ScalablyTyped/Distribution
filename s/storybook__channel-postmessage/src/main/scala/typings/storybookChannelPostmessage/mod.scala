@@ -2,6 +2,7 @@ package typings.storybookChannelPostmessage
 
 import typings.storybookChannelPostmessage.storybookChannelPostmessageStrings.manager
 import typings.storybookChannelPostmessage.storybookChannelPostmessageStrings.preview
+import typings.storybookChannels.mod.Channel
 import typings.storybookChannels.mod.ChannelEvent
 import typings.storybookChannels.mod.ChannelHandler
 import org.scalablytyped.runtime.StObject
@@ -14,7 +15,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(param0: Config): typings.storybookChannels.mod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[typings.storybookChannels.mod.default]
+  /**
+    * Creates a channel which communicates with an iframe or child window.
+    */
+  inline def default(param0: Config): Channel = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Channel]
   
   @JSImport("@storybook/channel-postmessage", "KEY")
   @js.native
@@ -53,6 +57,11 @@ object mod {
     
     def setHandler(handler: ChannelHandler): Unit = js.native
   }
+  
+  /**
+    * Creates a channel which communicates with an iframe or child window.
+    */
+  inline def createChannel(param0: Config): Channel = ^.asInstanceOf[js.Dynamic].applyDynamic("createChannel")(param0.asInstanceOf[js.Any]).asInstanceOf[Channel]
   
   trait Config extends StObject {
     

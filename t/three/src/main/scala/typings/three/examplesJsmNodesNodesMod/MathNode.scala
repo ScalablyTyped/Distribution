@@ -4,6 +4,7 @@ import typings.three.examplesJsmNodesMathMathNodeMod.MathNodeMethod1
 import typings.three.examplesJsmNodesMathMathNodeMod.MathNodeMethod2
 import typings.three.examplesJsmNodesMathMathNodeMod.MathNodeMethod3
 import typings.three.examplesJsmNodesMathMathNodeMod.default
+import typings.three.threeStrings.oneMinus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -134,11 +135,6 @@ object MathNode {
   def INVERSE_SQRT: typings.three.threeStrings.inversesqrt = js.native
   inline def INVERSE_SQRT_=(x: typings.three.threeStrings.inversesqrt): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVERSE_SQRT")(x.asInstanceOf[js.Any])
   
-  @JSImport("three/examples/jsm/nodes/Nodes", "MathNode.INVERT")
-  @js.native
-  def INVERT: typings.three.threeStrings.invert = js.native
-  inline def INVERT_=(x: typings.three.threeStrings.invert): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVERT")(x.asInstanceOf[js.Any])
-  
   @JSImport("three/examples/jsm/nodes/Nodes", "MathNode.LENGTH")
   @js.native
   def LENGTH: typings.three.threeStrings.length = js.native
@@ -185,6 +181,11 @@ object MathNode {
   @js.native
   def NORMALIZE: typings.three.threeStrings.normalize = js.native
   inline def NORMALIZE_=(x: typings.three.threeStrings.normalize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NORMALIZE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three/examples/jsm/nodes/Nodes", "MathNode.ONE_MINUS")
+  @js.native
+  def ONE_MINUS: oneMinus = js.native
+  inline def ONE_MINUS_=(x: oneMinus): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE_MINUS")(x.asInstanceOf[js.Any])
   
   @JSImport("three/examples/jsm/nodes/Nodes", "MathNode.POW")
   @js.native

@@ -14,7 +14,7 @@ trait CommonOptions
   var timeout: js.UndefOr[Double] = js.undefined
   
   /**
-    * @default true
+    * @default false
     */
   var windowsHide: js.UndefOr[Boolean] = js.undefined
 }

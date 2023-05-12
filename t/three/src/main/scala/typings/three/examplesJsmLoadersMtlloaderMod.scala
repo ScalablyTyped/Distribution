@@ -8,6 +8,7 @@ import typings.three.examplesJsmLoadersMtlloaderMod.MTLLoader.MaterialCreator
 import typings.three.srcConstantsMod.Mapping
 import typings.three.srcConstantsMod.Side
 import typings.three.srcConstantsMod.Wrapping
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcThreeMod.BufferGeometry
 import typings.three.srcThreeMod.Loader
 import typings.three.srcThreeMod.LoadingManager
@@ -44,6 +45,9 @@ object examplesJsmLoadersMtlloaderMod {
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): Unit = js.native
     
+    def loadAsync(url: String): js.Promise[MaterialCreator] = js.native
+    def loadAsync(url: String, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[MaterialCreator] = js.native
+    
     var materialOptions: MaterialCreatorOptions = js.native
     
     def parse(text: String, path: String): MaterialCreator = js.native
@@ -76,24 +80,28 @@ object examplesJsmLoadersMtlloaderMod {
       def getTextureParams(value: String, matParams: Any): TexParams = js.native
       
       def loadTexture(url: String): Texture = js.native
-      def loadTexture(url: String, mapping: Unit, onLoad: js.Function1[/* bufferGeometry */ BufferGeometry, Unit]): Texture = js.native
       def loadTexture(
         url: String,
         mapping: Unit,
-        onLoad: js.Function1[/* bufferGeometry */ BufferGeometry, Unit],
+        onLoad: js.Function1[/* bufferGeometry */ BufferGeometry[NormalBufferAttributes], Unit]
+      ): Texture = js.native
+      def loadTexture(
+        url: String,
+        mapping: Unit,
+        onLoad: js.Function1[/* bufferGeometry */ BufferGeometry[NormalBufferAttributes], Unit],
         onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
       ): Texture = js.native
       def loadTexture(
         url: String,
         mapping: Unit,
-        onLoad: js.Function1[/* bufferGeometry */ BufferGeometry, Unit],
+        onLoad: js.Function1[/* bufferGeometry */ BufferGeometry[NormalBufferAttributes], Unit],
         onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
         onError: js.Function1[/* event */ ErrorEvent, Unit]
       ): Texture = js.native
       def loadTexture(
         url: String,
         mapping: Unit,
-        onLoad: js.Function1[/* bufferGeometry */ BufferGeometry, Unit],
+        onLoad: js.Function1[/* bufferGeometry */ BufferGeometry[NormalBufferAttributes], Unit],
         onProgress: Unit,
         onError: js.Function1[/* event */ ErrorEvent, Unit]
       ): Texture = js.native
@@ -118,24 +126,28 @@ object examplesJsmLoadersMtlloaderMod {
         onError: js.Function1[/* event */ ErrorEvent, Unit]
       ): Texture = js.native
       def loadTexture(url: String, mapping: Mapping): Texture = js.native
-      def loadTexture(url: String, mapping: Mapping, onLoad: js.Function1[/* bufferGeometry */ BufferGeometry, Unit]): Texture = js.native
       def loadTexture(
         url: String,
         mapping: Mapping,
-        onLoad: js.Function1[/* bufferGeometry */ BufferGeometry, Unit],
+        onLoad: js.Function1[/* bufferGeometry */ BufferGeometry[NormalBufferAttributes], Unit]
+      ): Texture = js.native
+      def loadTexture(
+        url: String,
+        mapping: Mapping,
+        onLoad: js.Function1[/* bufferGeometry */ BufferGeometry[NormalBufferAttributes], Unit],
         onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
       ): Texture = js.native
       def loadTexture(
         url: String,
         mapping: Mapping,
-        onLoad: js.Function1[/* bufferGeometry */ BufferGeometry, Unit],
+        onLoad: js.Function1[/* bufferGeometry */ BufferGeometry[NormalBufferAttributes], Unit],
         onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
         onError: js.Function1[/* event */ ErrorEvent, Unit]
       ): Texture = js.native
       def loadTexture(
         url: String,
         mapping: Mapping,
-        onLoad: js.Function1[/* bufferGeometry */ BufferGeometry, Unit],
+        onLoad: js.Function1[/* bufferGeometry */ BufferGeometry[NormalBufferAttributes], Unit],
         onProgress: Unit,
         onError: js.Function1[/* event */ ErrorEvent, Unit]
       ): Texture = js.native

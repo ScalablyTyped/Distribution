@@ -76,6 +76,86 @@ object distNodeEsmSrcCoreRepoInfoMod {
       persistenceKey: Unit,
       includeNamespaceInQueryParams: Boolean
     ) = this()
+    def this(
+      host: String,
+      secure: Boolean,
+      namespace: String,
+      webSocketOnly: Boolean,
+      nodeAdmin: Boolean,
+      persistenceKey: String,
+      includeNamespaceInQueryParams: Boolean,
+      isUsingEmulator: Boolean
+    ) = this()
+    def this(
+      host: String,
+      secure: Boolean,
+      namespace: String,
+      webSocketOnly: Boolean,
+      nodeAdmin: Boolean,
+      persistenceKey: String,
+      includeNamespaceInQueryParams: Unit,
+      isUsingEmulator: Boolean
+    ) = this()
+    def this(
+      host: String,
+      secure: Boolean,
+      namespace: String,
+      webSocketOnly: Boolean,
+      nodeAdmin: Boolean,
+      persistenceKey: Unit,
+      includeNamespaceInQueryParams: Boolean,
+      isUsingEmulator: Boolean
+    ) = this()
+    def this(
+      host: String,
+      secure: Boolean,
+      namespace: String,
+      webSocketOnly: Boolean,
+      nodeAdmin: Boolean,
+      persistenceKey: Unit,
+      includeNamespaceInQueryParams: Unit,
+      isUsingEmulator: Boolean
+    ) = this()
+    def this(
+      host: String,
+      secure: Boolean,
+      namespace: String,
+      webSocketOnly: Boolean,
+      nodeAdmin: Unit,
+      persistenceKey: String,
+      includeNamespaceInQueryParams: Boolean,
+      isUsingEmulator: Boolean
+    ) = this()
+    def this(
+      host: String,
+      secure: Boolean,
+      namespace: String,
+      webSocketOnly: Boolean,
+      nodeAdmin: Unit,
+      persistenceKey: String,
+      includeNamespaceInQueryParams: Unit,
+      isUsingEmulator: Boolean
+    ) = this()
+    def this(
+      host: String,
+      secure: Boolean,
+      namespace: String,
+      webSocketOnly: Boolean,
+      nodeAdmin: Unit,
+      persistenceKey: Unit,
+      includeNamespaceInQueryParams: Boolean,
+      isUsingEmulator: Boolean
+    ) = this()
+    def this(
+      host: String,
+      secure: Boolean,
+      namespace: String,
+      webSocketOnly: Boolean,
+      nodeAdmin: Unit,
+      persistenceKey: Unit,
+      includeNamespaceInQueryParams: Unit,
+      isUsingEmulator: Boolean
+    ) = this()
     
     /* private */ var _domain: Any = js.native
     
@@ -91,6 +171,8 @@ object distNodeEsmSrcCoreRepoInfoMod {
     def isCacheableHost(): Boolean = js.native
     
     def isCustomHost(): Boolean = js.native
+    
+    val isUsingEmulator: Boolean = js.native
     
     val namespace: String = js.native
     

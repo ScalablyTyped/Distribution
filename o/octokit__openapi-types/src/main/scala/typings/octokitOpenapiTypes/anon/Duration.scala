@@ -6,59 +6,138 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Duration extends StObject {
   
-  var commit: String
+  /**
+    * @description The type of activity for the event that triggered the delivery.
+    * @example opened
+    */
+  var action: String | Null
   
-  /** Format: date-time */
-  var created_at: String
+  /**
+    * Format: date-time
+    * @description Time when the delivery was delivered.
+    * @example 2021-05-12T20:33:44Z
+    */
+  var delivered_at: String
   
+  /**
+    * @description Time spent delivering.
+    * @example 0.03
+    */
   var duration: Double
   
-  var error: `392`
+  /**
+    * @description The event that triggered the delivery.
+    * @example issues
+    */
+  var event: String
   
-  var pusher: Avatarurl | Null
+  /**
+    * @description Unique identifier for the event (shared with all deliveries for all webhooks that subscribe to this event).
+    * @example 58474f00-b361-11eb-836d-0e4f3503ccbe
+    */
+  var guid: String
   
+  /**
+    * @description Unique identifier of the delivery.
+    * @example 42
+    */
+  var id: Double
+  
+  /**
+    * @description The id of the GitHub App installation associated with this event.
+    * @example 123
+    */
+  var installation_id: Double | Null
+  
+  /**
+    * @description Whether the delivery is a redelivery.
+    * @example false
+    */
+  var redelivery: Boolean
+  
+  /**
+    * @description The id of the repository associated with this event.
+    * @example 123
+    */
+  var repository_id: Double | Null
+  
+  var request: Payload
+  
+  var response: HeadersPayload
+  
+  /**
+    * @description Description of the status of the attempted delivery
+    * @example failed to connect
+    */
   var status: String
   
-  /** Format: date-time */
-  var updated_at: String
+  /**
+    * @description Status code received when delivery was made.
+    * @example 502
+    */
+  var status_code: Double
   
-  /** Format: uri */
-  var url: String
+  /**
+    * @description The URL target of the delivery.
+    * @example https://www.example.com
+    */
+  var url: js.UndefOr[String] = js.undefined
 }
 object Duration {
   
   inline def apply(
-    commit: String,
-    created_at: String,
+    delivered_at: String,
     duration: Double,
-    error: `392`,
+    event: String,
+    guid: String,
+    id: Double,
+    redelivery: Boolean,
+    request: Payload,
+    response: HeadersPayload,
     status: String,
-    updated_at: String,
-    url: String
+    status_code: Double
   ): Duration = {
-    val __obj = js.Dynamic.literal(commit = commit.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], pusher = null)
+    val __obj = js.Dynamic.literal(delivered_at = delivered_at.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], guid = guid.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], redelivery = redelivery.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], status_code = status_code.asInstanceOf[js.Any], action = null, installation_id = null, repository_id = null)
     __obj.asInstanceOf[Duration]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Duration] (val x: Self) extends AnyVal {
     
-    inline def setCommit(value: String): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    inline def setActionNull: Self = StObject.set(x, "action", null)
+    
+    inline def setDelivered_at(value: String): Self = StObject.set(x, "delivered_at", value.asInstanceOf[js.Any])
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    inline def setError(value: `392`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    inline def setPusher(value: Avatarurl): Self = StObject.set(x, "pusher", value.asInstanceOf[js.Any])
+    inline def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     
-    inline def setPusherNull: Self = StObject.set(x, "pusher", null)
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setInstallation_id(value: Double): Self = StObject.set(x, "installation_id", value.asInstanceOf[js.Any])
+    
+    inline def setInstallation_idNull: Self = StObject.set(x, "installation_id", null)
+    
+    inline def setRedelivery(value: Boolean): Self = StObject.set(x, "redelivery", value.asInstanceOf[js.Any])
+    
+    inline def setRepository_id(value: Double): Self = StObject.set(x, "repository_id", value.asInstanceOf[js.Any])
+    
+    inline def setRepository_idNull: Self = StObject.set(x, "repository_id", null)
+    
+    inline def setRequest(value: Payload): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    
+    inline def setResponse(value: HeadersPayload): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+    inline def setStatus_code(value: Double): Self = StObject.set(x, "status_code", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

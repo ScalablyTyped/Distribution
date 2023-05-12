@@ -1,7 +1,7 @@
 package typings.wordpressBlocks.anon
 
-import typings.wordpressBlocks.mod.BlockAttributes
-import typings.wordpressBlocks.mod.InnerBlockTemplate
+import typings.wordpressBlocks.BlockAttributes
+import typings.wordpressBlocks.InnerBlockTemplate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

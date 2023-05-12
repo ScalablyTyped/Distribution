@@ -22,6 +22,16 @@ trait LineItem extends StObject {
   var LineItemId: js.UndefOr[typings.awsSdk.clientsOutpostsMod.LineItemId] = js.undefined
   
   /**
+    * The ID of the previous line item.
+    */
+  var PreviousLineItemId: js.UndefOr[LineItemId] = js.undefined
+  
+  /**
+    * The ID of the previous order.
+    */
+  var PreviousOrderId: js.UndefOr[OrderId] = js.undefined
+  
+  /**
     * The quantity of the line item.
     */
   var Quantity: js.UndefOr[LineItemQuantity] = js.undefined
@@ -59,6 +69,14 @@ object LineItem {
     inline def setLineItemId(value: LineItemId): Self = StObject.set(x, "LineItemId", value.asInstanceOf[js.Any])
     
     inline def setLineItemIdUndefined: Self = StObject.set(x, "LineItemId", js.undefined)
+    
+    inline def setPreviousLineItemId(value: LineItemId): Self = StObject.set(x, "PreviousLineItemId", value.asInstanceOf[js.Any])
+    
+    inline def setPreviousLineItemIdUndefined: Self = StObject.set(x, "PreviousLineItemId", js.undefined)
+    
+    inline def setPreviousOrderId(value: OrderId): Self = StObject.set(x, "PreviousOrderId", value.asInstanceOf[js.Any])
+    
+    inline def setPreviousOrderIdUndefined: Self = StObject.set(x, "PreviousOrderId", js.undefined)
     
     inline def setQuantity(value: LineItemQuantity): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
     

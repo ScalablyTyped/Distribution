@@ -98,6 +98,10 @@ object mod {
   @js.native
   val GOOGLE_CLOUD_BUILD: Boolean = js.native
   
+  @JSImport("ci-info", "HARNESS")
+  @js.native
+  val HARNESS: Boolean = js.native
+  
   @JSImport("ci-info", "HEROKU")
   @js.native
   val HEROKU: Boolean = js.native
@@ -126,6 +130,10 @@ object mod {
   @js.native
   val NEVERCODE: Boolean = js.native
   
+  @JSImport("ci-info", "RELEASEHUB")
+  @js.native
+  val RELEASEHUB: Boolean = js.native
+  
   @JSImport("ci-info", "RENDER")
   @js.native
   val RENDER: Boolean = js.native
@@ -149,6 +157,10 @@ object mod {
   @JSImport("ci-info", "SOLANO")
   @js.native
   val SOLANO: Boolean = js.native
+  
+  @JSImport("ci-info", "SOURCEHUT")
+  @js.native
+  val SOURCEHUT: Boolean = js.native
   
   @JSImport("ci-info", "STRIDER")
   @js.native

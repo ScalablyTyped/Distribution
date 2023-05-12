@@ -12,6 +12,11 @@ trait DescribeChannelResponse extends StObject {
   var Arn: js.UndefOr[string] = js.undefined
   
   /**
+    * The date and time the Channel was created.
+    */
+  var CreatedAt: js.UndefOr[string] = js.undefined
+  
+  /**
     * A short text description of the Channel.
     */
   var Description: js.UndefOr[string] = js.undefined
@@ -42,6 +47,10 @@ object DescribeChannelResponse {
     inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    
+    inline def setCreatedAt(value: string): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
     inline def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `543` extends StObject {
   
-  /** Response */
-  var `200`: Content532
+  var exclude_pull_requests: js.UndefOr[Boolean] = js.undefined
 }
 object `543` {
   
-  inline def apply(`200`: Content532): `543` = {
+  inline def apply(): `543` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`543`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `543`] (val x: Self) extends AnyVal {
     
-    inline def set200(value: Content532): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    inline def setExclude_pull_requests(value: Boolean): Self = StObject.set(x, "exclude_pull_requests", value.asInstanceOf[js.Any])
+    
+    inline def setExclude_pull_requestsUndefined: Self = StObject.set(x, "exclude_pull_requests", js.undefined)
   }
 }

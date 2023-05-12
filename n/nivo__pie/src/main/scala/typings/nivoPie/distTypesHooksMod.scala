@@ -9,6 +9,7 @@ import typings.nivoPie.anon.DataWithArc
 import typings.nivoPie.anon.InnerRadius
 import typings.nivoPie.distTypesTypesMod.CompletePieSvgProps
 import typings.nivoPie.distTypesTypesMod.ComputedDatum
+import typings.nivoPie.distTypesTypesMod.MayHaveLabel
 import typings.nivoPie.distTypesTypesMod.PieCustomLayerProps
 import typings.nivoPie.nivoPieStrings.activeInnerRadiusOffset
 import typings.nivoPie.nivoPieStrings.activeOuterRadiusOffset
@@ -59,24 +60,4 @@ object distTypesHooksMod {
   ): CenterX[RawDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePieFromBox")(param0.asInstanceOf[js.Any]).asInstanceOf[CenterX[RawDatum]]
   
   inline def usePieLayerContext[RawDatum](param0: PieCustomLayerProps[RawDatum]): PieCustomLayerProps[RawDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePieLayerContext")(param0.asInstanceOf[js.Any]).asInstanceOf[PieCustomLayerProps[RawDatum]]
-  
-  trait MayHaveLabel extends StObject {
-    
-    var label: js.UndefOr[String | Double] = js.undefined
-  }
-  object MayHaveLabel {
-    
-    inline def apply(): MayHaveLabel = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[MayHaveLabel]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: MayHaveLabel] (val x: Self) extends AnyVal {
-      
-      inline def setLabel(value: String | Double): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
-      
-      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
-    }
-  }
 }

@@ -17,7 +17,7 @@ trait SeriesMaplineDataGeometryOptions extends StObject {
     * (Highmaps) The geometry type. Can be one of `LineString`, `Polygon`,
     * `MultiLineString` or `MultiPolygon`.
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[MapGeometryTypeValue] = js.undefined
 }
 object SeriesMaplineDataGeometryOptions {
   
@@ -35,7 +35,7 @@ object SeriesMaplineDataGeometryOptions {
     
     inline def setCoordinatesVarargs(value: (js.Array[LonLatArray] | LonLatArray)*): Self = StObject.set(x, "coordinates", js.Array(value*))
     
-    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: MapGeometryTypeValue): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

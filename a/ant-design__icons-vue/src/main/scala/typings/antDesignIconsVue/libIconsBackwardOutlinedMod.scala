@@ -16,7 +16,7 @@ object libIconsBackwardOutlinedMod extends Shortcut {
   @js.native
   trait BackwardOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_BackwardOutlinedIconType: String = js.native

@@ -5,6 +5,7 @@ import typings.std.HTMLElement
 import typings.wavesurferJs.typesPluginMod.PluginDefinition
 import typings.wavesurferJs.typesPluginMod.PluginParams
 import typings.wavesurferJs.typesUtilMod.Styles
+import typings.wavesurferJs.wavesurferJsStrings.contentEdited
 import typings.wavesurferJs.wavesurferJsStrings.drag
 import typings.wavesurferJs.wavesurferJsStrings.left
 import typings.wavesurferJs.wavesurferJsStrings.resize
@@ -42,11 +43,11 @@ object srcPluginRegionsMod {
     
     val attributes: Attributes = js.native
     
+    def bindDragEvents(): Unit = js.native
+    
     def bindEvents(): Unit = js.native
     
     def bindInOut(): Unit = js.native
-    
-    def bindRagEvents(): Unit = js.native
     
     val color: String = js.native
     
@@ -261,25 +262,39 @@ object srcPluginRegionsMod {
   
   trait RegionUpdatedEventParams extends StObject {
     
-    var action: drag | resize
+    var action: drag | resize | contentEdited
     
-    var direction: right | left | Null
+    var direction: js.UndefOr[right | left | Null] = js.undefined
+    
+    var oldText: js.UndefOr[String] = js.undefined
+    
+    var text: js.UndefOr[String] = js.undefined
   }
   object RegionUpdatedEventParams {
     
-    inline def apply(action: drag | resize): RegionUpdatedEventParams = {
-      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], direction = null)
+    inline def apply(action: drag | resize | contentEdited): RegionUpdatedEventParams = {
+      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
       __obj.asInstanceOf[RegionUpdatedEventParams]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: RegionUpdatedEventParams] (val x: Self) extends AnyVal {
       
-      inline def setAction(value: drag | resize): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: drag | resize | contentEdited): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
       inline def setDirection(value: right | left): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionNull: Self = StObject.set(x, "direction", null)
+      
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      
+      inline def setOldText(value: String): Self = StObject.set(x, "oldText", value.asInstanceOf[js.Any])
+      
+      inline def setOldTextUndefined: Self = StObject.set(x, "oldText", js.undefined)
+      
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
   
@@ -330,7 +345,7 @@ object srcPluginRegionsMod {
     var edgeScrollWidth: js.UndefOr[Double] = js.undefined
     
     /** Allows custom formating for region tooltip. */
-    var formatTimeCallback: js.UndefOr[js.Function0[String]] = js.undefined
+    var formatTimeCallback: js.UndefOr[js.Function2[/* start */ Double, /* end */ Double, String]] = js.undefined
     
     /** Maximum number of regions that may be created by the user at one time. */
     var maxRegions: js.UndefOr[Double] = js.undefined
@@ -365,7 +380,7 @@ object srcPluginRegionsMod {
       
       inline def setEdgeScrollWidthUndefined: Self = StObject.set(x, "edgeScrollWidth", js.undefined)
       
-      inline def setFormatTimeCallback(value: () => String): Self = StObject.set(x, "formatTimeCallback", js.Any.fromFunction0(value))
+      inline def setFormatTimeCallback(value: (/* start */ Double, /* end */ Double) => String): Self = StObject.set(x, "formatTimeCallback", js.Any.fromFunction2(value))
       
       inline def setFormatTimeCallbackUndefined: Self = StObject.set(x, "formatTimeCallback", js.undefined)
       

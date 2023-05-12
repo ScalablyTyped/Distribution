@@ -1,8 +1,13 @@
 package typings.fundamentalReact
 
+import typings.fundamentalReact.fundamentalReactStrings.l
+import typings.fundamentalReact.fundamentalReactStrings.m
+import typings.fundamentalReact.fundamentalReactStrings.s
+import typings.fundamentalReact.fundamentalReactStrings.xl
 import typings.react.mod.Component
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactNode
+import typings.std.HTMLElement
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,27 +28,38 @@ object libDialogDialogMod {
     
     var actions: js.Array[ReactNode]
     
+    /** Specific function to select list of node to lock the focus */
+    var allowListForLockFocus: js.UndefOr[js.Function1[/* activeElement */ HTMLElement, Unit]] = js.undefined
+    
     var backdropClassName: js.UndefOr[String] = js.undefined
     
     var bodyProps: js.UndefOr[Any] = js.undefined
     
     var contentProps: js.UndefOr[Any] = js.undefined
     
-    var disableStyles: js.UndefOr[Boolean] = js.undefined
+    /** Additional props to disable auto closing dialog */
+    var disableAutoClose: js.UndefOr[Boolean] = js.undefined
+    
+    /** Additional props to be spread to the footer of the dialog */
+    var focusElementOnClose: js.UndefOr[js.Object] = js.undefined
     
     var footerProps: js.UndefOr[Any] = js.undefined
     
-    var header: js.UndefOr[String] = js.undefined
+    var header: js.UndefOr[String | ReactNode] = js.undefined
     
     var headerProps: js.UndefOr[Any] = js.undefined
     
-    var headingLevel: js.UndefOr[Any] = js.undefined
+    var headingLevel: js.UndefOr[Double] = js.undefined
+    
+    /** Heading style, if it should be different from the default style for the Dialog. */
+    var headingStyle: js.UndefOr[Double] = js.undefined
     
     var onClose: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
+    /** Set to **true** to make the dialog visible */
     var show: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[Any] = js.undefined
+    var size: js.UndefOr[s | m | l | xl] = js.undefined
     
     var subheader: js.UndefOr[String] = js.undefined
     
@@ -66,6 +82,10 @@ object libDialogDialogMod {
       
       inline def setActionsVarargs(value: ReactNode*): Self = StObject.set(x, "actions", js.Array(value*))
       
+      inline def setAllowListForLockFocus(value: /* activeElement */ HTMLElement => Unit): Self = StObject.set(x, "allowListForLockFocus", js.Any.fromFunction1(value))
+      
+      inline def setAllowListForLockFocusUndefined: Self = StObject.set(x, "allowListForLockFocus", js.undefined)
+      
       inline def setBackdropClassName(value: String): Self = StObject.set(x, "backdropClassName", value.asInstanceOf[js.Any])
       
       inline def setBackdropClassNameUndefined: Self = StObject.set(x, "backdropClassName", js.undefined)
@@ -78,15 +98,19 @@ object libDialogDialogMod {
       
       inline def setContentPropsUndefined: Self = StObject.set(x, "contentProps", js.undefined)
       
-      inline def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
+      inline def setDisableAutoClose(value: Boolean): Self = StObject.set(x, "disableAutoClose", value.asInstanceOf[js.Any])
       
-      inline def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
+      inline def setDisableAutoCloseUndefined: Self = StObject.set(x, "disableAutoClose", js.undefined)
+      
+      inline def setFocusElementOnClose(value: js.Object): Self = StObject.set(x, "focusElementOnClose", value.asInstanceOf[js.Any])
+      
+      inline def setFocusElementOnCloseUndefined: Self = StObject.set(x, "focusElementOnClose", js.undefined)
       
       inline def setFooterProps(value: Any): Self = StObject.set(x, "footerProps", value.asInstanceOf[js.Any])
       
       inline def setFooterPropsUndefined: Self = StObject.set(x, "footerProps", js.undefined)
       
-      inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: String | ReactNode): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
       inline def setHeaderProps(value: Any): Self = StObject.set(x, "headerProps", value.asInstanceOf[js.Any])
       
@@ -94,9 +118,13 @@ object libDialogDialogMod {
       
       inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      inline def setHeadingLevel(value: Any): Self = StObject.set(x, "headingLevel", value.asInstanceOf[js.Any])
+      inline def setHeadingLevel(value: Double): Self = StObject.set(x, "headingLevel", value.asInstanceOf[js.Any])
       
       inline def setHeadingLevelUndefined: Self = StObject.set(x, "headingLevel", js.undefined)
+      
+      inline def setHeadingStyle(value: Double): Self = StObject.set(x, "headingStyle", value.asInstanceOf[js.Any])
+      
+      inline def setHeadingStyleUndefined: Self = StObject.set(x, "headingStyle", js.undefined)
       
       inline def setOnClose(value: /* repeated */ Any => Any): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
       
@@ -106,7 +134,7 @@ object libDialogDialogMod {
       
       inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
       
-      inline def setSize(value: Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: s | m | l | xl): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       

@@ -11,11 +11,17 @@ object srcCoreInstancedInterleavedBufferMod {
   @JSImport("three/src/core/InstancedInterleavedBuffer", "InstancedInterleavedBuffer")
   @js.native
   open class InstancedInterleavedBuffer protected () extends InterleavedBuffer {
+    /**
+      * Create a new instance of {@link InstancedInterleavedBuffer}
+      * @param array
+      * @param itemSize
+      * @param meshPerAttribute
+      */
     def this(array: ArrayLike[Double], stride: Double) = this()
     def this(array: ArrayLike[Double], stride: Double, meshPerAttribute: Double) = this()
     
     /**
-      * @default 1
+      * @defaultValue `1`
       */
     var meshPerAttribute: Double = js.native
   }

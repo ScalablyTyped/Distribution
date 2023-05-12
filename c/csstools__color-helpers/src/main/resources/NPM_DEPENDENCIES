@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@csstools/color-helpers" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@csstools/color-helpers" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

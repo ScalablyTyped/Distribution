@@ -7,11 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ContentApplicationjsonSecrets extends StObject {
   
   var content: ApplicationjsonSecrets
+  
+  var headers: Link
 }
 object ContentApplicationjsonSecrets {
   
-  inline def apply(content: ApplicationjsonSecrets): ContentApplicationjsonSecrets = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+  inline def apply(content: ApplicationjsonSecrets, headers: Link): ContentApplicationjsonSecrets = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentApplicationjsonSecrets]
   }
   
@@ -19,5 +21,7 @@ object ContentApplicationjsonSecrets {
   implicit open class MutableBuilder[Self <: ContentApplicationjsonSecrets] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonSecrets): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setHeaders(value: Link): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
   }
 }

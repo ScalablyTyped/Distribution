@@ -1,18 +1,9 @@
 package typings.stylelintWebpackPlugin
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.postcss.mod.PluginCreator
 import typings.stylelint.mod.Config
 import typings.stylelint.mod.CustomSyntax
-import typings.stylelint.mod.Formatter
-import typings.stylelint.mod.LinterOptions
-import typings.stylelint.mod.LinterResult
-import typings.stylelint.mod.Plugin
-import typings.stylelint.mod.PostcssPluginOptions
-import typings.stylelintWebpackPlugin.anon.Api
-import typings.stylelintWebpackPlugin.anon.CheckAgainstRule
-import typings.stylelintWebpackPlugin.anon.PickLinterOptionscwdconfi
-import typings.stylelintWebpackPlugin.anon.Rule
+import typings.stylelintWebpackPlugin.anon.IsPathIgnored
 import typings.stylelintWebpackPlugin.typesOptionsMod.OutputReport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,10 +15,10 @@ object typesLinterMod {
     * @param {string|undefined} key
     * @param {Options} options
     * @param {Compilation} compilation
-    * @returns {{api: InternalApi, lint: Linter, report: Reporter, threads: number}}
+    * @returns {{stylelint: Stylelint, isPathIgnored: isPathIgnored, lint: Linter, report: Reporter, threads: number}}
     */
-  inline def apply(key: String, options: Options, compilation: Compilation): Api = (^.asInstanceOf[js.Dynamic].apply(key.asInstanceOf[js.Any], options.asInstanceOf[js.Any], compilation.asInstanceOf[js.Any])).asInstanceOf[Api]
-  inline def apply(key: Unit, options: Options, compilation: Compilation): Api = (^.asInstanceOf[js.Dynamic].apply(key.asInstanceOf[js.Any], options.asInstanceOf[js.Any], compilation.asInstanceOf[js.Any])).asInstanceOf[Api]
+  inline def apply(key: String, options: Options, compilation: Compilation): IsPathIgnored = (^.asInstanceOf[js.Dynamic].apply(key.asInstanceOf[js.Any], options.asInstanceOf[js.Any], compilation.asInstanceOf[js.Any])).asInstanceOf[IsPathIgnored]
+  inline def apply(key: Unit, options: Options, compilation: Compilation): IsPathIgnored = (^.asInstanceOf[js.Dynamic].apply(key.asInstanceOf[js.Any], options.asInstanceOf[js.Any], compilation.asInstanceOf[js.Any])).asInstanceOf[IsPathIgnored]
   
   @JSImport("stylelint-webpack-plugin/types/linter", JSImport.Namespace)
   @js.native
@@ -37,19 +28,19 @@ object typesLinterMod {
   
   type Compiler = typings.webpack.mod.Compiler
   
-  type FormatterFunction = js.Function1[/* results */ js.Array[LintResult], String]
+  type Formatter = typings.stylelintWebpackPlugin.typesGetStylelintMod.Formatter
   
-  type FormatterType = typings.stylelintWebpackPlugin.typesOptionsMod.FormatterType
+  type FormatterType = typings.stylelintWebpackPlugin.typesGetStylelintMod.FormatterType
   
   type GenerateReport = js.Function1[/* compilation */ Compilation, js.Promise[Unit]]
   
-  type InternalApi = typings.stylelint.mod.InternalApi
-  
-  type LintResult = typings.stylelint.mod.LintResult
+  type LintResult = typings.stylelintWebpackPlugin.typesGetStylelintMod.LintResult
   
   type LintResultMap = StringDictionary[typings.stylelint.mod.LintResult]
   
   type Linter = js.Function1[/* files */ String | js.Array[String], Unit]
+  
+  type LinterResult = typings.stylelintWebpackPlugin.typesGetStylelintMod.LinterResult
   
   /* Inlined stylelint-webpack-plugin.stylelint-webpack-plugin/types/options.Options */
   trait Options extends StObject {
@@ -116,6 +107,8 @@ object typesLinterMod {
     
     var quiet: js.UndefOr[Boolean] = js.undefined
     
+    var quietDeprecationWarnings: js.UndefOr[Boolean] = js.undefined
+    
     var reportDescriptionlessDisables: js.UndefOr[Boolean] = js.undefined
     
     var reportInvalidScopeDisables: js.UndefOr[Boolean] = js.undefined
@@ -123,8 +116,6 @@ object typesLinterMod {
     var reportNeedlessDisables: js.UndefOr[Boolean] = js.undefined
     
     var stylelintPath: js.UndefOr[String] = js.undefined
-    
-    var syntax: js.UndefOr[String] = js.undefined
     
     var threads: js.UndefOr[Double | Boolean] = js.undefined
   }
@@ -268,6 +259,10 @@ object typesLinterMod {
       
       inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
       
+      inline def setQuietDeprecationWarnings(value: Boolean): Self = StObject.set(x, "quietDeprecationWarnings", value.asInstanceOf[js.Any])
+      
+      inline def setQuietDeprecationWarningsUndefined: Self = StObject.set(x, "quietDeprecationWarnings", js.undefined)
+      
       inline def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
       
       inline def setReportDescriptionlessDisables(value: Boolean): Self = StObject.set(x, "reportDescriptionlessDisables", value.asInstanceOf[js.Any])
@@ -285,10 +280,6 @@ object typesLinterMod {
       inline def setStylelintPath(value: String): Self = StObject.set(x, "stylelintPath", value.asInstanceOf[js.Any])
       
       inline def setStylelintPathUndefined: Self = StObject.set(x, "stylelintPath", js.undefined)
-      
-      inline def setSyntax(value: String): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
-      
-      inline def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
       
       inline def setThreads(value: Double | Boolean): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
       
@@ -330,24 +321,7 @@ object typesLinterMod {
   
   type Reporter = js.Function0[js.Promise[Report]]
   
-  @js.native
-  trait Stylelint
-    extends StObject
-       with PluginCreator[PostcssPluginOptions] {
-    
-    def createLinter(options: LinterOptions): typings.stylelint.mod.InternalApi = js.native
-    
-    def createPlugin(ruleName: String, plugin: Plugin): Rule = js.native
-    
-    var formatters: StringDictionary[Formatter] = js.native
-    
-    def lint(options: LinterOptions): js.Promise[LinterResult] = js.native
-    
-    def resolveConfig(filePath: String): js.Promise[js.UndefOr[Config]] = js.native
-    def resolveConfig(filePath: String, options: PickLinterOptionscwdconfi): js.Promise[js.UndefOr[Config]] = js.native
-    
-    var rules: StringDictionary[typings.stylelint.mod.Rule[Any, Any]] = js.native
-    
-    var utils: CheckAgainstRule = js.native
-  }
+  type Stylelint = typings.stylelintWebpackPlugin.typesGetStylelintMod.Stylelint
+  
+  type isPathIgnored = typings.stylelintWebpackPlugin.typesGetStylelintMod.isPathIgnored
 }

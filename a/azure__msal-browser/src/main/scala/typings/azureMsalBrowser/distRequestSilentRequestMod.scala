@@ -1,6 +1,7 @@
 package typings.azureMsalBrowser
 
 import typings.azureMsalBrowser.distEventEventMessageMod._EventPayload
+import typings.azureMsalBrowser.distUtilsBrowserConstantsMod.CacheLookupPolicy
 import typings.azureMsalCommon.distAccountAccountInfoMod.AccountInfo
 import typings.azureMsalCommon.distConfigClientConfigurationMod.AzureCloudOptions
 import typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distRequestSilentRequestMod {
   
-  /* Inlined std.Omit<@azure/msal-common.@azure/msal-common.CommonSilentFlowRequest, 'authority' | 'correlationId' | 'forceRefresh' | 'account' | 'requestedClaimsHash'> & {  redirectUri :string | undefined,   extraQueryParameters :@azure/msal-common.@azure/msal-common.StringDict | undefined,   authority :string | undefined,   account :@azure/msal-common.@azure/msal-common.AccountInfo | undefined,   correlationId :string | undefined,   forceRefresh :boolean | undefined} */
+  /* Inlined std.Omit<@azure/msal-common.@azure/msal-common.CommonSilentFlowRequest, 'authority' | 'correlationId' | 'forceRefresh' | 'account' | 'requestedClaimsHash'> & {  redirectUri :string | undefined,   extraQueryParameters :@azure/msal-common.@azure/msal-common.StringDict | undefined,   authority :string | undefined,   account :@azure/msal-common.@azure/msal-common.AccountInfo | undefined,   correlationId :string | undefined,   forceRefresh :boolean | undefined,   cacheLookupPolicy :@azure/msal-browser.@azure/msal-browser/dist/utils/BrowserConstants.CacheLookupPolicy | undefined,   prompt :string | undefined} */
   trait SilentRequest
     extends StObject
        with _EventPayload {
@@ -24,6 +25,8 @@ object distRequestSilentRequestMod {
     
     var azureCloudOptions: js.UndefOr[AzureCloudOptions] = js.undefined
     
+    var cacheLookupPolicy: js.UndefOr[CacheLookupPolicy] = js.undefined
+    
     var claims: js.UndefOr[String] = js.undefined
     
     var correlationId: js.UndefOr[String] = js.undefined
@@ -31,6 +34,10 @@ object distRequestSilentRequestMod {
     var extraQueryParameters: js.UndefOr[StringDict] = js.undefined
     
     var forceRefresh: js.UndefOr[Boolean] = js.undefined
+    
+    var maxAge: js.UndefOr[Double] = js.undefined
+    
+    var prompt: js.UndefOr[String] = js.undefined
     
     var redirectUri: js.UndefOr[String] = js.undefined
     
@@ -76,6 +83,10 @@ object distRequestSilentRequestMod {
       
       inline def setAzureCloudOptionsUndefined: Self = StObject.set(x, "azureCloudOptions", js.undefined)
       
+      inline def setCacheLookupPolicy(value: CacheLookupPolicy): Self = StObject.set(x, "cacheLookupPolicy", value.asInstanceOf[js.Any])
+      
+      inline def setCacheLookupPolicyUndefined: Self = StObject.set(x, "cacheLookupPolicy", js.undefined)
+      
       inline def setClaims(value: String): Self = StObject.set(x, "claims", value.asInstanceOf[js.Any])
       
       inline def setClaimsUndefined: Self = StObject.set(x, "claims", js.undefined)
@@ -91,6 +102,14 @@ object distRequestSilentRequestMod {
       inline def setForceRefresh(value: Boolean): Self = StObject.set(x, "forceRefresh", value.asInstanceOf[js.Any])
       
       inline def setForceRefreshUndefined: Self = StObject.set(x, "forceRefresh", js.undefined)
+      
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      
+      inline def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+      
+      inline def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
       
       inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
       

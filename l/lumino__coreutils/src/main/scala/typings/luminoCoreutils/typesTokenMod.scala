@@ -13,10 +13,17 @@ object typesTokenMod {
       * Construct a new token.
       *
       * @param name - A human readable name for the token.
+      * @param description - Token purpose description for documentation.
       */
     def this(name: String) = this()
+    def this(name: String, description: String) = this()
     
     /* private */ var _tokenStructuralPropertyT: Any = js.native
+    
+    /**
+      * Token purpose description.
+      */
+    val description: js.UndefOr[String] = js.native
     
     /**
       * The human readable name for the token.

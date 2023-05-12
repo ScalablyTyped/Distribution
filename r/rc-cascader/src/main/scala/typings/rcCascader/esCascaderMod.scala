@@ -54,12 +54,13 @@ import typings.rcCascader.rcCascaderStrings.text
 import typings.rcCascader.rcCascaderStrings.time
 import typings.rcCascader.rcCascaderStrings.tree
 import typings.rcCascader.rcCascaderStrings.vertical
+import typings.rcComponentTrigger.esInterfaceMod.AlignType
+import typings.rcComponentTrigger.esInterfaceMod.BuildInPlacements
 import typings.rcSelect.libBaseSelectMod.CustomTagProps
 import typings.rcSelect.libBaseSelectMod.DisplayValueType
 import typings.rcSelect.libBaseSelectMod.Placement
 import typings.rcSelect.libBaseSelectMod.RenderDOMFunc
 import typings.rcSelect.libBaseSelectMod.RenderNode
-import typings.rcTrigger.esInterfaceMod.AlignType
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.FocusEvent
@@ -200,6 +201,8 @@ object esCascaderMod extends Shortcut {
     var `aria-valuetext`: js.UndefOr[String] = js.undefined
     
     var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
+    var builtinPlacements: js.UndefOr[BuildInPlacements] = js.undefined
     
     var changeOnSelect: js.UndefOr[Boolean] = js.undefined
     
@@ -343,6 +346,8 @@ object esCascaderMod extends Shortcut {
     var tabIndex: js.UndefOr[Double] = js.undefined
     
     var tagRender: js.UndefOr[js.Function1[/* props */ CustomTagProps, ReactElement]] = js.undefined
+    
+    var title: js.UndefOr[String] = js.undefined
     
     var transitionName: js.UndefOr[String] = js.undefined
     
@@ -563,6 +568,10 @@ object esCascaderMod extends Shortcut {
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
       inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
+      inline def setBuiltinPlacements(value: BuildInPlacements): Self = StObject.set(x, "builtinPlacements", value.asInstanceOf[js.Any])
+      
+      inline def setBuiltinPlacementsUndefined: Self = StObject.set(x, "builtinPlacements", js.undefined)
       
       inline def setChangeOnSelect(value: Boolean): Self = StObject.set(x, "changeOnSelect", value.asInstanceOf[js.Any])
       
@@ -840,6 +849,10 @@ object esCascaderMod extends Shortcut {
       
       inline def setTagRenderUndefined: Self = StObject.set(x, "tagRender", js.undefined)
       
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      
       inline def setTransitionName(value: String): Self = StObject.set(x, "transitionName", value.asInstanceOf[js.Any])
       
       inline def setTransitionNameUndefined: Self = StObject.set(x, "transitionName", js.undefined)
@@ -921,6 +934,8 @@ object esCascaderMod extends Shortcut {
     
     var children: js.UndefOr[js.Array[DefaultOptionType]] = js.undefined
     
+    var disableCheckbox: js.UndefOr[Boolean] = js.undefined
+    
     var label: ReactNode
     
     var value: js.UndefOr[String | Double | Null] = js.undefined
@@ -940,6 +955,10 @@ object esCascaderMod extends Shortcut {
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setChildrenVarargs(value: DefaultOptionType*): Self = StObject.set(x, "children", js.Array(value*))
+      
+      inline def setDisableCheckbox(value: Boolean): Self = StObject.set(x, "disableCheckbox", value.asInstanceOf[js.Any])
+      
+      inline def setDisableCheckboxUndefined: Self = StObject.set(x, "disableCheckbox", js.undefined)
       
       inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

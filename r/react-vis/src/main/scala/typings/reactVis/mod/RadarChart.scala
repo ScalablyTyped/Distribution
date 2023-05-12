@@ -12,7 +12,7 @@ open class RadarChart[T] protected ()
   def this(props: RadarChartProps & T) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: RadarChartProps & T, context: Any) = this()
 }

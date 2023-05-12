@@ -13,6 +13,7 @@ import typings.wordpressBlockEditor.anon.PartialEditorFontSizePick
 import typings.wordpressBlockEditor.anon.PartialProps
 import typings.wordpressBlockEditor.anon.PickEditorColorcolor
 import typings.wordpressBlockEditor.componentsAlignmentToolbarMod.AlignmentToolbar.Props
+import typings.wordpressBlockEditor.componentsInnerBlocksMod.UseInnerBlocksProps_
 import typings.wordpressBlockEditor.componentsRichTextMod.RichText.ContentProps
 import typings.wordpressBlockEditor.componentsUseBlockPropsMod.UseBlockProps_
 import typings.wordpressBlockEditor.mod.EditorColor
@@ -142,7 +143,7 @@ object componentsMod {
   @js.native
   val AlignmentToolbar: ComponentType[Props] = js.native
   
-  // tslint:disable-next-line:no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   inline def Autocomplete[T](props: typings.wordpressComponents.autocompleteMod.Autocomplete.Props[T]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Autocomplete")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@wordpress/block-editor/components", "BlockAlignmentToolbar")
@@ -687,6 +688,10 @@ object componentsMod {
   @JSImport("@wordpress/block-editor/components", "useBlockProps")
   @js.native
   val useBlockProps: UseBlockProps_ = js.native
+  
+  @JSImport("@wordpress/block-editor/components", "useInnerBlocksProps")
+  @js.native
+  val useInnerBlocksProps: UseInnerBlocksProps_ = js.native
   
   // prettier-ignore
   inline def withColorContext[ProvidedProps /* <: PartialProps */, OwnProps /* <: Any */](component: ComponentClass[ProvidedProps & OwnProps, ComponentState]): /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentClass<ProvidedProps & OwnProps, react.react.ComponentState> extends react.react.ComponentType<infer U> ? react.react.ComponentType<std.Omit<U, 'colors' | 'disableCustomColors' | 'hasColorsToChoose'> & std.Omit<ProvidedProps, 'hasColorsToChoose'>> : never */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withColorContext")(component.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentClass<ProvidedProps & OwnProps, react.react.ComponentState> extends react.react.ComponentType<infer U> ? react.react.ComponentType<std.Omit<U, 'colors' | 'disableCustomColors' | 'hasColorsToChoose'> & std.Omit<ProvidedProps, 'hasColorsToChoose'>> : never */ js.Any]

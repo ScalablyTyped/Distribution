@@ -1,7 +1,7 @@
 
 # Scala.js typings for webdriver-manager
 
-Typings are for version 12.1.8
+Typings are for version 12.1.9
 
 ## Library description:
 A selenium server and browser driver manager for your end to end tests.

@@ -18,8 +18,5 @@ object buildSrcPlatformNodeOsdetectorMod {
   @js.native
   trait OSDetector_
     extends StObject
-       with Detector {
-    
-    /* private */ var _normalizeType: Any = js.native
-  }
+       with Detector
 }

@@ -11,9 +11,20 @@ object distSrcMigrationsMigration10Mod {
   @js.native
   val migration: Migration_ = js.native
   
-  type Blockstore = typings.interfaceBlockstore.mod.Blockstore
+  type Blockstore = typings.interfaceBlockstore.mod.Blockstore[js.Object, js.Object, js.Object, js.Object, js.Object, js.Object, js.Object, js.Object]
   
-  type Datastore = typings.interfaceDatastore.mod.Datastore
+  type Datastore = typings.interfaceDatastore.mod.Datastore[
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object
+  ]
   
   type DowngradeFunction = js.Function2[
     /* arg0 */ js.typedarray.Uint8Array, 

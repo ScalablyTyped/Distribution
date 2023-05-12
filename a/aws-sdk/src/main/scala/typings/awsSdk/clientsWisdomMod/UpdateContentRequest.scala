@@ -44,7 +44,7 @@ trait UpdateContentRequest extends StObject {
   /**
     * A pointer to the uploaded asset. This value is returned by StartContentUpload. 
     */
-  var uploadId: js.UndefOr[NonEmptyString] = js.undefined
+  var uploadId: js.UndefOr[UploadId] = js.undefined
 }
 object UpdateContentRequest {
   
@@ -80,7 +80,7 @@ object UpdateContentRequest {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setUploadId(value: NonEmptyString): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
+    inline def setUploadId(value: UploadId): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
     
     inline def setUploadIdUndefined: Self = StObject.set(x, "uploadId", js.undefined)
   }

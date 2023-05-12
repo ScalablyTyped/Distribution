@@ -332,6 +332,7 @@ object sapUiUnifiedCalendarYearPickerMod {
     
     /**
       * @SINCE 1.38.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:pageChange pageChange} to attached listeners.
       *
@@ -344,6 +345,8 @@ object sapUiUnifiedCalendarYearPickerMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:select select} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -382,12 +385,12 @@ object sapUiUnifiedCalendarYearPickerMod {
     /**
       * @SINCE 1.38.0
       *
-      * return the first date of the first rendered year **Note:** If the YearPicker is not rendered no date
+      * Return the first date of the first rendered year **Note:** If the YearPicker is not rendered no date
       * is returned
       *
-      * @returns JavaScript Date Object
+      * @returns A JavaScript Date
       */
-    def getFirstRenderedDate(): js.Object = js.native
+    def getFirstRenderedDate(): js.Date = js.native
     
     /**
       * @SINCE 1.74
@@ -499,14 +502,14 @@ object sapUiUnifiedCalendarYearPickerMod {
     /**
       * displays the next page
       *
-      * @returns `this` to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def nextPage(): this.type = js.native
     
     /**
       * displays the previous page
       *
-      * @returns `this` to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def previousPage(): this.type = js.native
     
@@ -561,6 +564,16 @@ object sapUiUnifiedCalendarYearPickerMod {
       * New value for property `columns`
       */
     iColumns: int): this.type = js.native
+    
+    /**
+      * Setter for the `date` property
+      *
+      * @returns Reference to `this` for method chaining
+      */
+    def setDate(/**
+      * a JavaScript date
+      */
+    oDate: js.Date): this.type = js.native
     
     /**
       * @SINCE 1.74

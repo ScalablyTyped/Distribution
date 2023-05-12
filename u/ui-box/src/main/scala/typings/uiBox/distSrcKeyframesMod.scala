@@ -1,6 +1,6 @@
 package typings.uiBox
 
-import typings.uiBox.anon.PartialRecordKeyframesTim
+import typings.uiBox.distSrcTypesKeyframesMod.KeyframesTimeline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,5 +11,5 @@ object distSrcKeyframesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(friendlyName: String, timeline: PartialRecordKeyframesTim): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(friendlyName.asInstanceOf[js.Any], timeline.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(friendlyName: String, timeline: KeyframesTimeline): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(friendlyName.asInstanceOf[js.Any], timeline.asInstanceOf[js.Any])).asInstanceOf[String]
 }

@@ -1,6 +1,5 @@
 package typings.npmcliMapWorkspaces
 
-import typings.glob.mod.IOptions
 import typings.npmcliArborist.mod.PackageLock
 import typings.npmcliPackageJson.mod.PackageJson
 import typings.std.Map
@@ -18,12 +17,12 @@ object mod {
   
   inline def virtual(opts: VirtualOptions): Map[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("virtual")(opts.asInstanceOf[js.Any]).asInstanceOf[Map[String, String]]
   
-  trait Options
-    extends StObject
-       with IOptions {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobOptions * / any */ trait Options extends StObject {
     
-    @JSName("ignore")
-    var ignore_Options: js.UndefOr[js.Array[String]] = js.undefined
+    var cwd: js.UndefOr[String] = js.undefined
+    
+    var ignore: js.UndefOr[js.Array[String]] = js.undefined
     
     var pkg: PackageJson
   }
@@ -36,6 +35,10 @@ object mod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
       inline def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       

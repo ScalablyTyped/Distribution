@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.std.ArrayLike
 import typings.three.srcAnimationKeyframeTrackMod.KeyframeTrack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,6 +11,6 @@ object srcAnimationTracksBooleanKeyframeTrackMod {
   @JSImport("three/src/animation/tracks/BooleanKeyframeTrack", "BooleanKeyframeTrack")
   @js.native
   open class BooleanKeyframeTrack protected () extends KeyframeTrack {
-    def this(name: String, times: js.Array[Any], values: js.Array[Any]) = this()
+    def this(name: String, times: ArrayLike[Double], values: ArrayLike[Any]) = this()
   }
 }

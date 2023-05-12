@@ -2,10 +2,18 @@ package typings.gulpHelp
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.gulp.mod.DestMethod
+import typings.gulp.mod.Globs
 import typings.gulp.mod.Gulp
 import typings.gulp.mod.SrcMethod
 import typings.gulp.mod.TaskCallback
 import typings.gulp.mod.WatchMethod
+import typings.gulp.mod.WatchOptions
+import typings.node.NodeJS.ReadWriteStream
+import typings.node.fsMod.FSWatcher
+import typings.undertaker.mod.TaskFunction
+import typings.vinyl.mod.File
+import typings.vinylFs.mod.DestOptions
+import typings.vinylFs.mod.SrcOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,13 +31,70 @@ object mod {
   trait GulpHelp
     extends typings.orchestrator.mod.^ {
     
-    var dest: DestMethod = js.native
+    def dest(folder: String): ReadWriteStream = js.native
+    def dest(folder: String, opt: DestOptions): ReadWriteStream = js.native
+    def dest(folder: js.Function1[/* file */ File, String]): ReadWriteStream = js.native
+    def dest(folder: js.Function1[/* file */ File, String], opt: DestOptions): ReadWriteStream = js.native
+    @JSName("dest")
+    var dest_Original: DestMethod = js.native
     
-    var src: SrcMethod = js.native
+    def src(globs: String): ReadWriteStream = js.native
+    def src(globs: String, opt: SrcOptions): ReadWriteStream = js.native
+    def src(globs: js.Array[String]): ReadWriteStream = js.native
+    def src(globs: js.Array[String], opt: SrcOptions): ReadWriteStream = js.native
+    @JSName("src")
+    var src_Original: SrcMethod = js.native
     
-    var task: TaskMethod = js.native
+    /**
+      * Define a task.
+      *
+      * @param name the name of the task. Tasks that you want to run from the command line should not have spaces in them.
+      * @param deps an array of tasks to be executed and completed before your task will run.
+      * @param fn the function that performs the task's operations. Generally this takes the form of gulp.src().pipe(someplugin()).
+      * @param option task options
+      */
+    def task(name: String, deps: js.Array[String]): Any = js.native
+    def task(name: String, deps: js.Array[String], fn: Unit, option: TaskOptions): Any = js.native
+    def task(name: String, deps: js.Array[String], fn: TaskCallback): Any = js.native
+    def task(name: String, deps: js.Array[String], fn: TaskCallback, option: TaskOptions): Any = js.native
+    def task(name: String, fn: Unit, option: TaskOptions): Any = js.native
+    def task(name: String, fn: TaskCallback): Any = js.native
+    def task(name: String, fn: TaskCallback, option: TaskOptions): Any = js.native
+    /**
+      * Define a task.
+      *
+      * @param name the name of the task. Tasks that you want to run from the command line should not have spaces in them.
+      * @param help Custom help message as a string. If you want to hide the task from the help menu, supply false
+      * @param fn the function that performs the task's operations. Generally this takes the form of gulp.src().pipe(someplugin()).
+      * @param option task options
+      */
+    def task(name: String, help: HelpOption): Any = js.native
+    /**
+      * Define a task.
+      *
+      * @param name the name of the task. Tasks that you want to run from the command line should not have spaces in them.
+      * @param help Custom help message as a string. If you want to hide the task from the help menu, supply false
+      * @param deps an array of tasks to be executed and completed before your task will run.
+      * @param fn the function that performs the task's operations. Generally this takes the form of gulp.src().pipe(someplugin()).
+      * @param option task options
+      */
+    def task(name: String, help: HelpOption, deps: js.Array[String]): Any = js.native
+    def task(name: String, help: HelpOption, deps: js.Array[String], fn: Unit, option: TaskOptions): Any = js.native
+    def task(name: String, help: HelpOption, deps: js.Array[String], fn: TaskCallback): Any = js.native
+    def task(name: String, help: HelpOption, deps: js.Array[String], fn: TaskCallback, option: TaskOptions): Any = js.native
+    def task(name: String, help: HelpOption, fn: Unit, option: TaskOptions): Any = js.native
+    def task(name: String, help: HelpOption, fn: TaskCallback): Any = js.native
+    def task(name: String, help: HelpOption, fn: TaskCallback, option: TaskOptions): Any = js.native
+    @JSName("task")
+    var task_Original: TaskMethod = js.native
     
-    var watch: WatchMethod = js.native
+    def watch(globs: Globs): FSWatcher = js.native
+    def watch(globs: Globs, fn: TaskFunction): FSWatcher = js.native
+    def watch(globs: Globs, opts: Unit, fn: TaskFunction): FSWatcher = js.native
+    def watch(globs: Globs, opts: WatchOptions): FSWatcher = js.native
+    def watch(globs: Globs, opts: WatchOptions, fn: TaskFunction): FSWatcher = js.native
+    @JSName("watch")
+    var watch_Original: WatchMethod = js.native
   }
   
   trait GulpHelpOptions extends StObject {
@@ -71,7 +136,8 @@ object mod {
       __obj.asInstanceOf[GulpHelpOptions]
     }
     
-    extension [Self <: GulpHelpOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GulpHelpOptions] (val x: Self) extends AnyVal {
       
       inline def setAfterPrintCallback(value: js.Function): Self = StObject.set(x, "afterPrintCallback", value.asInstanceOf[js.Any])
       
@@ -175,7 +241,8 @@ object mod {
       __obj.asInstanceOf[TaskOptions]
     }
     
-    extension [Self <: TaskOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskOptions] (val x: Self) extends AnyVal {
       
       inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       

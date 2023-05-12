@@ -3,6 +3,11 @@ package typings.std.global
 import typings.std.AddEventListenerOptions
 import typings.std.EventListenerOptions
 import typings.std.EventListenerOrEventListenerObject
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
+import typings.std.stdInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,10 +54,6 @@ open class SVGFEDisplacementMapElement ()
   /* standard dom */
   /* CompleteClass */
   var ariaColIndex: java.lang.String | Null = js.native
-  
-  /* standard dom */
-  /* CompleteClass */
-  var ariaColIndexText: java.lang.String | Null = js.native
   
   /* standard dom */
   /* CompleteClass */
@@ -148,10 +149,6 @@ open class SVGFEDisplacementMapElement ()
   
   /* standard dom */
   /* CompleteClass */
-  var ariaRowIndexText: java.lang.String | Null = js.native
-  
-  /* standard dom */
-  /* CompleteClass */
   var ariaRowSpan: java.lang.String | Null = js.native
   
   /* standard dom */
@@ -244,25 +241,25 @@ object SVGFEDisplacementMapElement {
   /* standard dom */
   @JSGlobal("SVGFEDisplacementMapElement.SVG_CHANNEL_A")
   @js.native
-  val SVG_CHANNEL_A: Double = js.native
+  val SVG_CHANNEL_A: `4` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFEDisplacementMapElement.SVG_CHANNEL_B")
   @js.native
-  val SVG_CHANNEL_B: Double = js.native
+  val SVG_CHANNEL_B: `3` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFEDisplacementMapElement.SVG_CHANNEL_G")
   @js.native
-  val SVG_CHANNEL_G: Double = js.native
+  val SVG_CHANNEL_G: `2` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFEDisplacementMapElement.SVG_CHANNEL_R")
   @js.native
-  val SVG_CHANNEL_R: Double = js.native
+  val SVG_CHANNEL_R: `1` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFEDisplacementMapElement.SVG_CHANNEL_UNKNOWN")
   @js.native
-  val SVG_CHANNEL_UNKNOWN: Double = js.native
+  val SVG_CHANNEL_UNKNOWN: `0` = js.native
 }

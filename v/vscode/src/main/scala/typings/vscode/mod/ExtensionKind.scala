@@ -14,8 +14,8 @@ object ExtensionKind extends StObject {
   def apply(value: Double): js.UndefOr[ExtensionKind & Double] = js.native
   
   /**
-    * Extension runs where the UI runs.
-    */
+  		 * Extension runs where the UI runs.
+  		 */
   @js.native
   sealed trait UI
     extends StObject
@@ -23,8 +23,8 @@ object ExtensionKind extends StObject {
   /* 1 */ val UI: typings.vscode.mod.ExtensionKind.UI & Double = js.native
   
   /**
-    * Extension runs where the remote extension host runs.
-    */
+  		 * Extension runs where the remote extension host runs.
+  		 */
   @js.native
   sealed trait Workspace
     extends StObject

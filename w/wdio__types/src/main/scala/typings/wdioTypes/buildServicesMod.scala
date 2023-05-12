@@ -15,6 +15,7 @@ import typings.wdioTypes.buildFrameworksMod.Suite
 import typings.wdioTypes.buildFrameworksMod.Test
 import typings.wdioTypes.buildFrameworksMod.TestResult
 import typings.wdioTypes.buildOptionsMod.Testrunner
+import typings.wdioTypes.mod.global.WebdriverIO.BrowserRunnerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +38,7 @@ object buildServicesMod {
           /* result */ Double, 
           /* capabilities */ RemoteCapability, 
           /* specs */ js.Array[String], 
-          Unit
+          Any | js.Promise[Any]
         ]
       ] = js.undefined
     
@@ -54,7 +55,7 @@ object buildServicesMod {
           /* args */ js.Array[Any], 
           /* result */ Any, 
           /* error */ js.UndefOr[js.Error], 
-          Unit
+          Any | js.Promise[Any]
         ]
       ] = js.undefined
     
@@ -65,7 +66,9 @@ object buildServicesMod {
       * @param context   context to current running test (represents World object in Cucumber)
       * @param result    test result
       */
-    var afterHook: js.UndefOr[js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Unit]] = js.undefined
+    var afterHook: js.UndefOr[
+        js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Any | js.Promise[Any]]
+      ] = js.undefined
     
     /**
       * Gets executed right after terminating the webdriver session.
@@ -78,7 +81,7 @@ object buildServicesMod {
           /* config */ Testrunner, 
           /* capabilities */ RemoteCapability, 
           /* specs */ js.Array[String], 
-          Unit
+          Any | js.Promise[Any]
         ]
       ] = js.undefined
     
@@ -86,19 +89,21 @@ object buildServicesMod {
       * Hook that gets executed after the suite has ended
       * @param suite suite details
       */
-    var afterSuite: js.UndefOr[js.Function1[/* suite */ Suite, Unit]] = js.undefined
+    var afterSuite: js.UndefOr[js.Function1[/* suite */ Suite, Any | js.Promise[Any]]] = js.undefined
     
     /**
       * Function to be executed after a test (in Mocha/Jasmine only)
-      * @param {Object}  test             test object
-      * @param {Object}  context          scope object the test was executed with
+      * @param {object}  test             test object
+      * @param {object}  context          scope object the test was executed with
       * @param {Error}   result.error     error object in case the test fails, otherwise `undefined`
-      * @param {Any}     result.result    return object of test function
-      * @param {Number}  result.duration  duration of test
-      * @param {Boolean} result.passed    true if test has passed, otherwise false
-      * @param {Object}  result.retries   informations to spec related retries, e.g. `{ attempts: 0, limit: 0 }`
+      * @param {*}       result.result    return object of test function
+      * @param {number}  result.duration  duration of test
+      * @param {boolean} result.passed    true if test has passed, otherwise false
+      * @param {object}  result.retries   informations to spec related retries, e.g. `{ attempts: 0, limit: 0 }`
       */
-    var afterTest: js.UndefOr[js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Unit]] = js.undefined
+    var afterTest: js.UndefOr[
+        js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Any | js.Promise[Any]]
+      ] = js.undefined
     
     /**
       * Gets executed before test execution begins. At this point you can access to all global
@@ -112,7 +117,7 @@ object buildServicesMod {
           /* capabilities */ RemoteCapability, 
           /* specs */ js.Array[String], 
           /* browser */ Any, 
-          Unit
+          Any | js.Promise[Any]
         ]
       ] = js.undefined
     
@@ -121,7 +126,9 @@ object buildServicesMod {
       * @param commandName command name
       * @param args        arguments that command would receive
       */
-    var beforeCommand: js.UndefOr[js.Function2[/* commandName */ String, /* args */ js.Array[Any], Unit]] = js.undefined
+    var beforeCommand: js.UndefOr[
+        js.Function2[/* commandName */ String, /* args */ js.Array[Any], Any | js.Promise[Any]]
+      ] = js.undefined
     
     /**
       * Hook that gets executed _before_ a hook within the suite starts (e.g. runs before calling
@@ -129,7 +136,7 @@ object buildServicesMod {
       * @param test      details to current running test (represents step in Cucumber)
       * @param context   context to current running test (represents World object in Cucumber)
       */
-    var beforeHook: js.UndefOr[js.Function2[/* test */ Any, /* context */ Any, Unit]] = js.undefined
+    var beforeHook: js.UndefOr[js.Function2[/* test */ Any, /* context */ Any, Any | js.Promise[Any]]] = js.undefined
     
     /**
       * Gets executed just before initialising the webdriver session and test framework. It allows you
@@ -145,7 +152,7 @@ object buildServicesMod {
           /* capabilities */ RemoteCapability, 
           /* specs */ js.Array[String], 
           /* cid */ String, 
-          Unit
+          Any | js.Promise[Any]
         ]
       ] = js.undefined
     
@@ -153,19 +160,19 @@ object buildServicesMod {
       * Hook that gets executed before the suite starts.
       * @param suite suite details
       */
-    var beforeSuite: js.UndefOr[js.Function1[/* suite */ Suite, Unit]] = js.undefined
+    var beforeSuite: js.UndefOr[js.Function1[/* suite */ Suite, Any | js.Promise[Any]]] = js.undefined
     
     /**
       * Function to be executed before a test (in Mocha/Jasmine only)
-      * @param {Object} test    test object
-      * @param {Object} context scope object the test was executed with
+      * @param {object} test    test object
+      * @param {object} context scope object the test was executed with
       */
-    var beforeTest: js.UndefOr[js.Function2[/* test */ Test, /* context */ Any, Unit]] = js.undefined
+    var beforeTest: js.UndefOr[js.Function2[/* test */ Test, /* context */ Any, Any | js.Promise[Any]]] = js.undefined
     
     /**
       * Gets executed after all workers got shut down and the process is about to exit. An error
       * thrown in the onComplete hook will result in the test run failing.
-      * @param exitCode      runner exit code
+      * @param exitCode      runner exit code: 0 - success, 1 - fail
       * @param config        wdio configuration object
       * @param capabilities  list of capabilities details
       * @param results       test results
@@ -176,7 +183,7 @@ object buildServicesMod {
           /* config */ OmitTestrunnercapabilitieAfter, 
           /* capabilities */ RemoteCapabilities, 
           /* results */ Any, 
-          Unit
+          Any | js.Promise[Any]
         ]
       ] = js.undefined
     
@@ -186,7 +193,11 @@ object buildServicesMod {
       * @param capabilities  list of capabilities details
       */
     var onPrepare: js.UndefOr[
-        js.Function2[/* config */ Testrunner, /* capabilities */ RemoteCapabilities, Unit]
+        js.Function2[
+          /* config */ Testrunner, 
+          /* capabilities */ RemoteCapabilities, 
+          Any | js.Promise[Any]
+        ]
       ] = js.undefined
     
     /**
@@ -194,14 +205,16 @@ object buildServicesMod {
       * @param oldSessionId session id of old session
       * @param newSessionId session id of new session
       */
-    var onReload: js.UndefOr[js.Function2[/* oldSessionId */ String, /* newSessionId */ String, Unit]] = js.undefined
+    var onReload: js.UndefOr[
+        js.Function2[/* oldSessionId */ String, /* newSessionId */ String, Any | js.Promise[Any]]
+      ] = js.undefined
     
     /**
       * Gets executed just after a worker process has exited.
-      * @param  {String} cid      capability id (e.g 0-0)
-      * @param  {Number} exitCode 0 - success, 1 - fail
-      * @param  {[type]} specs    specs to be run in the worker process
-      * @param  {Number} retries  number of retries used
+      * @param  {string} cid      capability id (e.g 0-0)
+      * @param  {number} exitCode 0 - success, 1 - fail
+      * @param  {object} specs    specs to be run in the worker process
+      * @param  {number} retries  number of retries used
       */
     var onWorkerEnd: js.UndefOr[
         js.Function4[
@@ -209,7 +222,7 @@ object buildServicesMod {
           /* exitCode */ Double, 
           /* specs */ js.Array[String], 
           /* retries */ Double, 
-          Unit
+          Any | js.Promise[Any]
         ]
       ] = js.undefined
     
@@ -229,7 +242,7 @@ object buildServicesMod {
           /* specs */ js.Array[String], 
           /* args */ Testrunner, 
           /* execArgv */ js.Array[String], 
-          Unit
+          Any | js.Promise[Any]
         ]
       ] = js.undefined
   }
@@ -244,85 +257,85 @@ object buildServicesMod {
     implicit open class MutableBuilder[Self <: HookFunctions] (val x: Self) extends AnyVal {
       
       inline def setAfter(
-        value: (/* result */ Double, /* capabilities */ RemoteCapability, /* specs */ js.Array[String]) => Unit
+        value: (/* result */ Double, /* capabilities */ RemoteCapability, /* specs */ js.Array[String]) => Any | js.Promise[Any]
       ): Self = StObject.set(x, "after", js.Any.fromFunction3(value))
       
       inline def setAfterCommand(
-        value: (/* commandName */ String, /* args */ js.Array[Any], /* result */ Any, /* error */ js.UndefOr[js.Error]) => Unit
+        value: (/* commandName */ String, /* args */ js.Array[Any], /* result */ Any, /* error */ js.UndefOr[js.Error]) => Any | js.Promise[Any]
       ): Self = StObject.set(x, "afterCommand", js.Any.fromFunction4(value))
       
       inline def setAfterCommandUndefined: Self = StObject.set(x, "afterCommand", js.undefined)
       
-      inline def setAfterHook(value: (/* test */ Test, /* context */ Any, /* result */ TestResult) => Unit): Self = StObject.set(x, "afterHook", js.Any.fromFunction3(value))
+      inline def setAfterHook(value: (/* test */ Test, /* context */ Any, /* result */ TestResult) => Any | js.Promise[Any]): Self = StObject.set(x, "afterHook", js.Any.fromFunction3(value))
       
       inline def setAfterHookUndefined: Self = StObject.set(x, "afterHook", js.undefined)
       
       inline def setAfterSession(
-        value: (/* config */ Testrunner, /* capabilities */ RemoteCapability, /* specs */ js.Array[String]) => Unit
+        value: (/* config */ Testrunner, /* capabilities */ RemoteCapability, /* specs */ js.Array[String]) => Any | js.Promise[Any]
       ): Self = StObject.set(x, "afterSession", js.Any.fromFunction3(value))
       
       inline def setAfterSessionUndefined: Self = StObject.set(x, "afterSession", js.undefined)
       
-      inline def setAfterSuite(value: /* suite */ Suite => Unit): Self = StObject.set(x, "afterSuite", js.Any.fromFunction1(value))
+      inline def setAfterSuite(value: /* suite */ Suite => Any | js.Promise[Any]): Self = StObject.set(x, "afterSuite", js.Any.fromFunction1(value))
       
       inline def setAfterSuiteUndefined: Self = StObject.set(x, "afterSuite", js.undefined)
       
-      inline def setAfterTest(value: (/* test */ Test, /* context */ Any, /* result */ TestResult) => Unit): Self = StObject.set(x, "afterTest", js.Any.fromFunction3(value))
+      inline def setAfterTest(value: (/* test */ Test, /* context */ Any, /* result */ TestResult) => Any | js.Promise[Any]): Self = StObject.set(x, "afterTest", js.Any.fromFunction3(value))
       
       inline def setAfterTestUndefined: Self = StObject.set(x, "afterTest", js.undefined)
       
       inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
       
       inline def setBefore(
-        value: (/* capabilities */ RemoteCapability, /* specs */ js.Array[String], /* browser */ Any) => Unit
+        value: (/* capabilities */ RemoteCapability, /* specs */ js.Array[String], /* browser */ Any) => Any | js.Promise[Any]
       ): Self = StObject.set(x, "before", js.Any.fromFunction3(value))
       
-      inline def setBeforeCommand(value: (/* commandName */ String, /* args */ js.Array[Any]) => Unit): Self = StObject.set(x, "beforeCommand", js.Any.fromFunction2(value))
+      inline def setBeforeCommand(value: (/* commandName */ String, /* args */ js.Array[Any]) => Any | js.Promise[Any]): Self = StObject.set(x, "beforeCommand", js.Any.fromFunction2(value))
       
       inline def setBeforeCommandUndefined: Self = StObject.set(x, "beforeCommand", js.undefined)
       
-      inline def setBeforeHook(value: (/* test */ Any, /* context */ Any) => Unit): Self = StObject.set(x, "beforeHook", js.Any.fromFunction2(value))
+      inline def setBeforeHook(value: (/* test */ Any, /* context */ Any) => Any | js.Promise[Any]): Self = StObject.set(x, "beforeHook", js.Any.fromFunction2(value))
       
       inline def setBeforeHookUndefined: Self = StObject.set(x, "beforeHook", js.undefined)
       
       inline def setBeforeSession(
-        value: (/* config */ OmitTestrunnercapabilitieAfter, /* capabilities */ RemoteCapability, /* specs */ js.Array[String], /* cid */ String) => Unit
+        value: (/* config */ OmitTestrunnercapabilitieAfter, /* capabilities */ RemoteCapability, /* specs */ js.Array[String], /* cid */ String) => Any | js.Promise[Any]
       ): Self = StObject.set(x, "beforeSession", js.Any.fromFunction4(value))
       
       inline def setBeforeSessionUndefined: Self = StObject.set(x, "beforeSession", js.undefined)
       
-      inline def setBeforeSuite(value: /* suite */ Suite => Unit): Self = StObject.set(x, "beforeSuite", js.Any.fromFunction1(value))
+      inline def setBeforeSuite(value: /* suite */ Suite => Any | js.Promise[Any]): Self = StObject.set(x, "beforeSuite", js.Any.fromFunction1(value))
       
       inline def setBeforeSuiteUndefined: Self = StObject.set(x, "beforeSuite", js.undefined)
       
-      inline def setBeforeTest(value: (/* test */ Test, /* context */ Any) => Unit): Self = StObject.set(x, "beforeTest", js.Any.fromFunction2(value))
+      inline def setBeforeTest(value: (/* test */ Test, /* context */ Any) => Any | js.Promise[Any]): Self = StObject.set(x, "beforeTest", js.Any.fromFunction2(value))
       
       inline def setBeforeTestUndefined: Self = StObject.set(x, "beforeTest", js.undefined)
       
       inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
       
       inline def setOnComplete(
-        value: (/* exitCode */ Double, /* config */ OmitTestrunnercapabilitieAfter, /* capabilities */ RemoteCapabilities, /* results */ Any) => Unit
+        value: (/* exitCode */ Double, /* config */ OmitTestrunnercapabilitieAfter, /* capabilities */ RemoteCapabilities, /* results */ Any) => Any | js.Promise[Any]
       ): Self = StObject.set(x, "onComplete", js.Any.fromFunction4(value))
       
       inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
       
-      inline def setOnPrepare(value: (/* config */ Testrunner, /* capabilities */ RemoteCapabilities) => Unit): Self = StObject.set(x, "onPrepare", js.Any.fromFunction2(value))
+      inline def setOnPrepare(value: (/* config */ Testrunner, /* capabilities */ RemoteCapabilities) => Any | js.Promise[Any]): Self = StObject.set(x, "onPrepare", js.Any.fromFunction2(value))
       
       inline def setOnPrepareUndefined: Self = StObject.set(x, "onPrepare", js.undefined)
       
-      inline def setOnReload(value: (/* oldSessionId */ String, /* newSessionId */ String) => Unit): Self = StObject.set(x, "onReload", js.Any.fromFunction2(value))
+      inline def setOnReload(value: (/* oldSessionId */ String, /* newSessionId */ String) => Any | js.Promise[Any]): Self = StObject.set(x, "onReload", js.Any.fromFunction2(value))
       
       inline def setOnReloadUndefined: Self = StObject.set(x, "onReload", js.undefined)
       
       inline def setOnWorkerEnd(
-        value: (/* cid */ String, /* exitCode */ Double, /* specs */ js.Array[String], /* retries */ Double) => Unit
+        value: (/* cid */ String, /* exitCode */ Double, /* specs */ js.Array[String], /* retries */ Double) => Any | js.Promise[Any]
       ): Self = StObject.set(x, "onWorkerEnd", js.Any.fromFunction4(value))
       
       inline def setOnWorkerEndUndefined: Self = StObject.set(x, "onWorkerEnd", js.undefined)
       
       inline def setOnWorkerStart(
-        value: (/* cid */ String, /* caps */ DesiredCapabilities, /* specs */ js.Array[String], /* args */ Testrunner, /* execArgv */ js.Array[String]) => Unit
+        value: (/* cid */ String, /* caps */ DesiredCapabilities, /* specs */ js.Array[String], /* args */ Testrunner, /* execArgv */ js.Array[String]) => Any | js.Promise[Any]
       ): Self = StObject.set(x, "onWorkerStart", js.Any.fromFunction5(value))
       
       inline def setOnWorkerStartUndefined: Self = StObject.set(x, "onWorkerStart", js.undefined)
@@ -337,7 +350,7 @@ object buildServicesMod {
           /* result */ Double, 
           /* capabilities */ RemoteCapability, 
           /* specs */ js.Array[String], 
-          Unit
+          Any | js.Promise[Any]
         ]) | (js.Array[
           NonNullable[
             js.UndefOr[
@@ -345,7 +358,7 @@ object buildServicesMod {
                 /* result */ Double, 
                 /* capabilities */ RemoteCapability, 
                 /* specs */ js.Array[String], 
-                Unit
+                Any | js.Promise[Any]
               ]
             ]
           ]
@@ -358,7 +371,7 @@ object buildServicesMod {
           /* args */ js.Array[Any], 
           /* result */ Any, 
           /* error */ js.UndefOr[js.Error], 
-          Unit
+          Any | js.Promise[Any]
         ]) | (js.Array[
           NonNullable[
             js.UndefOr[
@@ -367,7 +380,7 @@ object buildServicesMod {
                 /* args */ js.Array[Any], 
                 /* result */ Any, 
                 /* error */ js.UndefOr[js.Error], 
-                Unit
+                Any | js.Promise[Any]
               ]
             ]
           ]
@@ -375,9 +388,11 @@ object buildServicesMod {
       ] = js.undefined
     
     var afterHook: js.UndefOr[
-        (js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Unit]) | (js.Array[
+        (js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Any | js.Promise[Any]]) | (js.Array[
           NonNullable[
-            js.UndefOr[js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Unit]]
+            js.UndefOr[
+              js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Any | js.Promise[Any]]
+            ]
           ]
         ])
       ] = js.undefined
@@ -387,7 +402,7 @@ object buildServicesMod {
           /* config */ Testrunner, 
           /* capabilities */ RemoteCapability, 
           /* specs */ js.Array[String], 
-          Unit
+          Any | js.Promise[Any]
         ]) | (js.Array[
           NonNullable[
             js.UndefOr[
@@ -395,7 +410,7 @@ object buildServicesMod {
                 /* config */ Testrunner, 
                 /* capabilities */ RemoteCapability, 
                 /* specs */ js.Array[String], 
-                Unit
+                Any | js.Promise[Any]
               ]
             ]
           ]
@@ -403,13 +418,15 @@ object buildServicesMod {
       ] = js.undefined
     
     var afterSuite: js.UndefOr[
-        (js.Function1[/* suite */ Suite, Unit]) | (js.Array[NonNullable[js.UndefOr[js.Function1[/* suite */ Suite, Unit]]]])
+        (js.Function1[/* suite */ Suite, Any | js.Promise[Any]]) | (js.Array[NonNullable[js.UndefOr[js.Function1[/* suite */ Suite, Any | js.Promise[Any]]]]])
       ] = js.undefined
     
     var afterTest: js.UndefOr[
-        (js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Unit]) | (js.Array[
+        (js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Any | js.Promise[Any]]) | (js.Array[
           NonNullable[
-            js.UndefOr[js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Unit]]
+            js.UndefOr[
+              js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Any | js.Promise[Any]]
+            ]
           ]
         ])
       ] = js.undefined
@@ -419,7 +436,7 @@ object buildServicesMod {
           /* capabilities */ RemoteCapability, 
           /* specs */ js.Array[String], 
           /* browser */ Any, 
-          Unit
+          Any | js.Promise[Any]
         ]) | (js.Array[
           NonNullable[
             js.UndefOr[
@@ -427,7 +444,7 @@ object buildServicesMod {
                 /* capabilities */ RemoteCapability, 
                 /* specs */ js.Array[String], 
                 /* browser */ Any, 
-                Unit
+                Any | js.Promise[Any]
               ]
             ]
           ]
@@ -435,15 +452,21 @@ object buildServicesMod {
       ] = js.undefined
     
     var beforeCommand: js.UndefOr[
-        (js.Function2[/* commandName */ String, /* args */ js.Array[Any], Unit]) | (js.Array[
+        (js.Function2[/* commandName */ String, /* args */ js.Array[Any], Any | js.Promise[Any]]) | (js.Array[
           NonNullable[
-            js.UndefOr[js.Function2[/* commandName */ String, /* args */ js.Array[Any], Unit]]
+            js.UndefOr[
+              js.Function2[/* commandName */ String, /* args */ js.Array[Any], Any | js.Promise[Any]]
+            ]
           ]
         ])
       ] = js.undefined
     
     var beforeHook: js.UndefOr[
-        (js.Function2[/* test */ Any, /* context */ Any, Unit]) | (js.Array[NonNullable[js.UndefOr[js.Function2[/* test */ Any, /* context */ Any, Unit]]]])
+        (js.Function2[/* test */ Any, /* context */ Any, Any | js.Promise[Any]]) | (js.Array[
+          NonNullable[
+            js.UndefOr[js.Function2[/* test */ Any, /* context */ Any, Any | js.Promise[Any]]]
+          ]
+        ])
       ] = js.undefined
     
     var beforeSession: js.UndefOr[
@@ -452,7 +475,7 @@ object buildServicesMod {
           /* capabilities */ RemoteCapability, 
           /* specs */ js.Array[String], 
           /* cid */ String, 
-          Unit
+          Any | js.Promise[Any]
         ]) | (js.Array[
           NonNullable[
             js.UndefOr[
@@ -461,7 +484,7 @@ object buildServicesMod {
                 /* capabilities */ RemoteCapability, 
                 /* specs */ js.Array[String], 
                 /* cid */ String, 
-                Unit
+                Any | js.Promise[Any]
               ]
             ]
           ]
@@ -469,11 +492,15 @@ object buildServicesMod {
       ] = js.undefined
     
     var beforeSuite: js.UndefOr[
-        (js.Function1[/* suite */ Suite, Unit]) | (js.Array[NonNullable[js.UndefOr[js.Function1[/* suite */ Suite, Unit]]]])
+        (js.Function1[/* suite */ Suite, Any | js.Promise[Any]]) | (js.Array[NonNullable[js.UndefOr[js.Function1[/* suite */ Suite, Any | js.Promise[Any]]]]])
       ] = js.undefined
     
     var beforeTest: js.UndefOr[
-        (js.Function2[/* test */ Test, /* context */ Any, Unit]) | (js.Array[NonNullable[js.UndefOr[js.Function2[/* test */ Test, /* context */ Any, Unit]]]])
+        (js.Function2[/* test */ Test, /* context */ Any, Any | js.Promise[Any]]) | (js.Array[
+          NonNullable[
+            js.UndefOr[js.Function2[/* test */ Test, /* context */ Any, Any | js.Promise[Any]]]
+          ]
+        ])
       ] = js.undefined
     
     var onComplete: js.UndefOr[
@@ -482,7 +509,7 @@ object buildServicesMod {
           /* config */ OmitTestrunnercapabilitieAfter, 
           /* capabilities */ RemoteCapabilities, 
           /* results */ Any, 
-          Unit
+          Any | js.Promise[Any]
         ]) | (js.Array[
           NonNullable[
             js.UndefOr[
@@ -491,7 +518,7 @@ object buildServicesMod {
                 /* config */ OmitTestrunnercapabilitieAfter, 
                 /* capabilities */ RemoteCapabilities, 
                 /* results */ Any, 
-                Unit
+                Any | js.Promise[Any]
               ]
             ]
           ]
@@ -499,19 +526,29 @@ object buildServicesMod {
       ] = js.undefined
     
     var onPrepare: js.UndefOr[
-        (js.Function2[/* config */ Testrunner, /* capabilities */ RemoteCapabilities, Unit]) | (js.Array[
+        (js.Function2[
+          /* config */ Testrunner, 
+          /* capabilities */ RemoteCapabilities, 
+          Any | js.Promise[Any]
+        ]) | (js.Array[
           NonNullable[
             js.UndefOr[
-              js.Function2[/* config */ Testrunner, /* capabilities */ RemoteCapabilities, Unit]
+              js.Function2[
+                /* config */ Testrunner, 
+                /* capabilities */ RemoteCapabilities, 
+                Any | js.Promise[Any]
+              ]
             ]
           ]
         ])
       ] = js.undefined
     
     var onReload: js.UndefOr[
-        (js.Function2[/* oldSessionId */ String, /* newSessionId */ String, Unit]) | (js.Array[
+        (js.Function2[/* oldSessionId */ String, /* newSessionId */ String, Any | js.Promise[Any]]) | (js.Array[
           NonNullable[
-            js.UndefOr[js.Function2[/* oldSessionId */ String, /* newSessionId */ String, Unit]]
+            js.UndefOr[
+              js.Function2[/* oldSessionId */ String, /* newSessionId */ String, Any | js.Promise[Any]]
+            ]
           ]
         ])
       ] = js.undefined
@@ -522,7 +559,7 @@ object buildServicesMod {
           /* exitCode */ Double, 
           /* specs */ js.Array[String], 
           /* retries */ Double, 
-          Unit
+          Any | js.Promise[Any]
         ]) | (js.Array[
           NonNullable[
             js.UndefOr[
@@ -531,7 +568,7 @@ object buildServicesMod {
                 /* exitCode */ Double, 
                 /* specs */ js.Array[String], 
                 /* retries */ Double, 
-                Unit
+                Any | js.Promise[Any]
               ]
             ]
           ]
@@ -545,7 +582,7 @@ object buildServicesMod {
           /* specs */ js.Array[String], 
           /* args */ Testrunner, 
           /* execArgv */ js.Array[String], 
-          Unit
+          Any | js.Promise[Any]
         ]) | (js.Array[
           NonNullable[
             js.UndefOr[
@@ -555,7 +592,7 @@ object buildServicesMod {
                 /* specs */ js.Array[String], 
                 /* args */ Testrunner, 
                 /* execArgv */ js.Array[String], 
-                Unit
+                Any | js.Promise[Any]
               ]
             ]
           ]
@@ -577,7 +614,7 @@ object buildServicesMod {
               /* result */ Double, 
               /* capabilities */ RemoteCapability, 
               /* specs */ js.Array[String], 
-              Unit
+              Any | js.Promise[Any]
             ]) | (js.Array[
               NonNullable[
                 js.UndefOr[
@@ -585,7 +622,7 @@ object buildServicesMod {
                     /* result */ Double, 
                     /* capabilities */ RemoteCapability, 
                     /* specs */ js.Array[String], 
-                    Unit
+                    Any | js.Promise[Any]
                   ]
                 ]
               ]
@@ -598,7 +635,7 @@ object buildServicesMod {
               /* args */ js.Array[Any], 
               /* result */ Any, 
               /* error */ js.UndefOr[js.Error], 
-              Unit
+              Any | js.Promise[Any]
             ]) | (js.Array[
               NonNullable[
                 js.UndefOr[
@@ -607,7 +644,7 @@ object buildServicesMod {
                     /* args */ js.Array[Any], 
                     /* result */ Any, 
                     /* error */ js.UndefOr[js.Error], 
-                    Unit
+                    Any | js.Promise[Any]
                   ]
                 ]
               ]
@@ -615,7 +652,7 @@ object buildServicesMod {
       ): Self = StObject.set(x, "afterCommand", value.asInstanceOf[js.Any])
       
       inline def setAfterCommandFunction4(
-        value: (/* commandName */ String, /* args */ js.Array[Any], /* result */ Any, /* error */ js.UndefOr[js.Error]) => Unit
+        value: (/* commandName */ String, /* args */ js.Array[Any], /* result */ Any, /* error */ js.UndefOr[js.Error]) => Any | js.Promise[Any]
       ): Self = StObject.set(x, "afterCommand", js.Any.fromFunction4(value))
       
       inline def setAfterCommandUndefined: Self = StObject.set(x, "afterCommand", js.undefined)
@@ -628,31 +665,35 @@ object buildServicesMod {
                   /* args */ js.Array[Any], 
                   /* result */ Any, 
                   /* error */ js.UndefOr[js.Error], 
-                  Unit
+                  Any | js.Promise[Any]
                 ]
               ]
             ])*
       ): Self = StObject.set(x, "afterCommand", js.Array(value*))
       
       inline def setAfterFunction3(
-        value: (/* result */ Double, /* capabilities */ RemoteCapability, /* specs */ js.Array[String]) => Unit
+        value: (/* result */ Double, /* capabilities */ RemoteCapability, /* specs */ js.Array[String]) => Any | js.Promise[Any]
       ): Self = StObject.set(x, "after", js.Any.fromFunction3(value))
       
       inline def setAfterHook(
-        value: (js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Unit]) | (js.Array[
+        value: (js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Any | js.Promise[Any]]) | (js.Array[
               NonNullable[
-                js.UndefOr[js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Unit]]
+                js.UndefOr[
+                  js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Any | js.Promise[Any]]
+                ]
               ]
             ])
       ): Self = StObject.set(x, "afterHook", value.asInstanceOf[js.Any])
       
-      inline def setAfterHookFunction3(value: (/* test */ Test, /* context */ Any, /* result */ TestResult) => Unit): Self = StObject.set(x, "afterHook", js.Any.fromFunction3(value))
+      inline def setAfterHookFunction3(value: (/* test */ Test, /* context */ Any, /* result */ TestResult) => Any | js.Promise[Any]): Self = StObject.set(x, "afterHook", js.Any.fromFunction3(value))
       
       inline def setAfterHookUndefined: Self = StObject.set(x, "afterHook", js.undefined)
       
       inline def setAfterHookVarargs(
         value: (NonNullable[
-              js.UndefOr[js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Unit]]
+              js.UndefOr[
+                js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Any | js.Promise[Any]]
+              ]
             ])*
       ): Self = StObject.set(x, "afterHook", js.Array(value*))
       
@@ -661,7 +702,7 @@ object buildServicesMod {
               /* config */ Testrunner, 
               /* capabilities */ RemoteCapability, 
               /* specs */ js.Array[String], 
-              Unit
+              Any | js.Promise[Any]
             ]) | (js.Array[
               NonNullable[
                 js.UndefOr[
@@ -669,7 +710,7 @@ object buildServicesMod {
                     /* config */ Testrunner, 
                     /* capabilities */ RemoteCapability, 
                     /* specs */ js.Array[String], 
-                    Unit
+                    Any | js.Promise[Any]
                   ]
                 ]
               ]
@@ -677,7 +718,7 @@ object buildServicesMod {
       ): Self = StObject.set(x, "afterSession", value.asInstanceOf[js.Any])
       
       inline def setAfterSessionFunction3(
-        value: (/* config */ Testrunner, /* capabilities */ RemoteCapability, /* specs */ js.Array[String]) => Unit
+        value: (/* config */ Testrunner, /* capabilities */ RemoteCapability, /* specs */ js.Array[String]) => Any | js.Promise[Any]
       ): Self = StObject.set(x, "afterSession", js.Any.fromFunction3(value))
       
       inline def setAfterSessionUndefined: Self = StObject.set(x, "afterSession", js.undefined)
@@ -689,37 +730,41 @@ object buildServicesMod {
                   /* config */ Testrunner, 
                   /* capabilities */ RemoteCapability, 
                   /* specs */ js.Array[String], 
-                  Unit
+                  Any | js.Promise[Any]
                 ]
               ]
             ])*
       ): Self = StObject.set(x, "afterSession", js.Array(value*))
       
       inline def setAfterSuite(
-        value: (js.Function1[/* suite */ Suite, Unit]) | (js.Array[NonNullable[js.UndefOr[js.Function1[/* suite */ Suite, Unit]]]])
+        value: (js.Function1[/* suite */ Suite, Any | js.Promise[Any]]) | (js.Array[NonNullable[js.UndefOr[js.Function1[/* suite */ Suite, Any | js.Promise[Any]]]]])
       ): Self = StObject.set(x, "afterSuite", value.asInstanceOf[js.Any])
       
-      inline def setAfterSuiteFunction1(value: /* suite */ Suite => Unit): Self = StObject.set(x, "afterSuite", js.Any.fromFunction1(value))
+      inline def setAfterSuiteFunction1(value: /* suite */ Suite => Any | js.Promise[Any]): Self = StObject.set(x, "afterSuite", js.Any.fromFunction1(value))
       
       inline def setAfterSuiteUndefined: Self = StObject.set(x, "afterSuite", js.undefined)
       
-      inline def setAfterSuiteVarargs(value: (NonNullable[js.UndefOr[js.Function1[/* suite */ Suite, Unit]]])*): Self = StObject.set(x, "afterSuite", js.Array(value*))
+      inline def setAfterSuiteVarargs(value: (NonNullable[js.UndefOr[js.Function1[/* suite */ Suite, Any | js.Promise[Any]]]])*): Self = StObject.set(x, "afterSuite", js.Array(value*))
       
       inline def setAfterTest(
-        value: (js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Unit]) | (js.Array[
+        value: (js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Any | js.Promise[Any]]) | (js.Array[
               NonNullable[
-                js.UndefOr[js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Unit]]
+                js.UndefOr[
+                  js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Any | js.Promise[Any]]
+                ]
               ]
             ])
       ): Self = StObject.set(x, "afterTest", value.asInstanceOf[js.Any])
       
-      inline def setAfterTestFunction3(value: (/* test */ Test, /* context */ Any, /* result */ TestResult) => Unit): Self = StObject.set(x, "afterTest", js.Any.fromFunction3(value))
+      inline def setAfterTestFunction3(value: (/* test */ Test, /* context */ Any, /* result */ TestResult) => Any | js.Promise[Any]): Self = StObject.set(x, "afterTest", js.Any.fromFunction3(value))
       
       inline def setAfterTestUndefined: Self = StObject.set(x, "afterTest", js.undefined)
       
       inline def setAfterTestVarargs(
         value: (NonNullable[
-              js.UndefOr[js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Unit]]
+              js.UndefOr[
+                js.Function3[/* test */ Test, /* context */ Any, /* result */ TestResult, Any | js.Promise[Any]]
+              ]
             ])*
       ): Self = StObject.set(x, "afterTest", js.Array(value*))
       
@@ -732,7 +777,7 @@ object buildServicesMod {
                   /* result */ Double, 
                   /* capabilities */ RemoteCapability, 
                   /* specs */ js.Array[String], 
-                  Unit
+                  Any | js.Promise[Any]
                 ]
               ]
             ])*
@@ -743,7 +788,7 @@ object buildServicesMod {
               /* capabilities */ RemoteCapability, 
               /* specs */ js.Array[String], 
               /* browser */ Any, 
-              Unit
+              Any | js.Promise[Any]
             ]) | (js.Array[
               NonNullable[
                 js.UndefOr[
@@ -751,7 +796,7 @@ object buildServicesMod {
                     /* capabilities */ RemoteCapability, 
                     /* specs */ js.Array[String], 
                     /* browser */ Any, 
-                    Unit
+                    Any | js.Promise[Any]
                   ]
                 ]
               ]
@@ -759,36 +804,48 @@ object buildServicesMod {
       ): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
       inline def setBeforeCommand(
-        value: (js.Function2[/* commandName */ String, /* args */ js.Array[Any], Unit]) | (js.Array[
+        value: (js.Function2[/* commandName */ String, /* args */ js.Array[Any], Any | js.Promise[Any]]) | (js.Array[
               NonNullable[
-                js.UndefOr[js.Function2[/* commandName */ String, /* args */ js.Array[Any], Unit]]
+                js.UndefOr[
+                  js.Function2[/* commandName */ String, /* args */ js.Array[Any], Any | js.Promise[Any]]
+                ]
               ]
             ])
       ): Self = StObject.set(x, "beforeCommand", value.asInstanceOf[js.Any])
       
-      inline def setBeforeCommandFunction2(value: (/* commandName */ String, /* args */ js.Array[Any]) => Unit): Self = StObject.set(x, "beforeCommand", js.Any.fromFunction2(value))
+      inline def setBeforeCommandFunction2(value: (/* commandName */ String, /* args */ js.Array[Any]) => Any | js.Promise[Any]): Self = StObject.set(x, "beforeCommand", js.Any.fromFunction2(value))
       
       inline def setBeforeCommandUndefined: Self = StObject.set(x, "beforeCommand", js.undefined)
       
       inline def setBeforeCommandVarargs(
         value: (NonNullable[
-              js.UndefOr[js.Function2[/* commandName */ String, /* args */ js.Array[Any], Unit]]
+              js.UndefOr[
+                js.Function2[/* commandName */ String, /* args */ js.Array[Any], Any | js.Promise[Any]]
+              ]
             ])*
       ): Self = StObject.set(x, "beforeCommand", js.Array(value*))
       
       inline def setBeforeFunction3(
-        value: (/* capabilities */ RemoteCapability, /* specs */ js.Array[String], /* browser */ Any) => Unit
+        value: (/* capabilities */ RemoteCapability, /* specs */ js.Array[String], /* browser */ Any) => Any | js.Promise[Any]
       ): Self = StObject.set(x, "before", js.Any.fromFunction3(value))
       
       inline def setBeforeHook(
-        value: (js.Function2[/* test */ Any, /* context */ Any, Unit]) | (js.Array[NonNullable[js.UndefOr[js.Function2[/* test */ Any, /* context */ Any, Unit]]]])
+        value: (js.Function2[/* test */ Any, /* context */ Any, Any | js.Promise[Any]]) | (js.Array[
+              NonNullable[
+                js.UndefOr[js.Function2[/* test */ Any, /* context */ Any, Any | js.Promise[Any]]]
+              ]
+            ])
       ): Self = StObject.set(x, "beforeHook", value.asInstanceOf[js.Any])
       
-      inline def setBeforeHookFunction2(value: (/* test */ Any, /* context */ Any) => Unit): Self = StObject.set(x, "beforeHook", js.Any.fromFunction2(value))
+      inline def setBeforeHookFunction2(value: (/* test */ Any, /* context */ Any) => Any | js.Promise[Any]): Self = StObject.set(x, "beforeHook", js.Any.fromFunction2(value))
       
       inline def setBeforeHookUndefined: Self = StObject.set(x, "beforeHook", js.undefined)
       
-      inline def setBeforeHookVarargs(value: (NonNullable[js.UndefOr[js.Function2[/* test */ Any, /* context */ Any, Unit]]])*): Self = StObject.set(x, "beforeHook", js.Array(value*))
+      inline def setBeforeHookVarargs(
+        value: (NonNullable[
+              js.UndefOr[js.Function2[/* test */ Any, /* context */ Any, Any | js.Promise[Any]]]
+            ])*
+      ): Self = StObject.set(x, "beforeHook", js.Array(value*))
       
       inline def setBeforeSession(
         value: (js.Function4[
@@ -796,7 +853,7 @@ object buildServicesMod {
               /* capabilities */ RemoteCapability, 
               /* specs */ js.Array[String], 
               /* cid */ String, 
-              Unit
+              Any | js.Promise[Any]
             ]) | (js.Array[
               NonNullable[
                 js.UndefOr[
@@ -805,7 +862,7 @@ object buildServicesMod {
                     /* capabilities */ RemoteCapability, 
                     /* specs */ js.Array[String], 
                     /* cid */ String, 
-                    Unit
+                    Any | js.Promise[Any]
                   ]
                 ]
               ]
@@ -813,7 +870,7 @@ object buildServicesMod {
       ): Self = StObject.set(x, "beforeSession", value.asInstanceOf[js.Any])
       
       inline def setBeforeSessionFunction4(
-        value: (/* config */ OmitTestrunnercapabilitieAfter, /* capabilities */ RemoteCapability, /* specs */ js.Array[String], /* cid */ String) => Unit
+        value: (/* config */ OmitTestrunnercapabilitieAfter, /* capabilities */ RemoteCapability, /* specs */ js.Array[String], /* cid */ String) => Any | js.Promise[Any]
       ): Self = StObject.set(x, "beforeSession", js.Any.fromFunction4(value))
       
       inline def setBeforeSessionUndefined: Self = StObject.set(x, "beforeSession", js.undefined)
@@ -826,31 +883,39 @@ object buildServicesMod {
                   /* capabilities */ RemoteCapability, 
                   /* specs */ js.Array[String], 
                   /* cid */ String, 
-                  Unit
+                  Any | js.Promise[Any]
                 ]
               ]
             ])*
       ): Self = StObject.set(x, "beforeSession", js.Array(value*))
       
       inline def setBeforeSuite(
-        value: (js.Function1[/* suite */ Suite, Unit]) | (js.Array[NonNullable[js.UndefOr[js.Function1[/* suite */ Suite, Unit]]]])
+        value: (js.Function1[/* suite */ Suite, Any | js.Promise[Any]]) | (js.Array[NonNullable[js.UndefOr[js.Function1[/* suite */ Suite, Any | js.Promise[Any]]]]])
       ): Self = StObject.set(x, "beforeSuite", value.asInstanceOf[js.Any])
       
-      inline def setBeforeSuiteFunction1(value: /* suite */ Suite => Unit): Self = StObject.set(x, "beforeSuite", js.Any.fromFunction1(value))
+      inline def setBeforeSuiteFunction1(value: /* suite */ Suite => Any | js.Promise[Any]): Self = StObject.set(x, "beforeSuite", js.Any.fromFunction1(value))
       
       inline def setBeforeSuiteUndefined: Self = StObject.set(x, "beforeSuite", js.undefined)
       
-      inline def setBeforeSuiteVarargs(value: (NonNullable[js.UndefOr[js.Function1[/* suite */ Suite, Unit]]])*): Self = StObject.set(x, "beforeSuite", js.Array(value*))
+      inline def setBeforeSuiteVarargs(value: (NonNullable[js.UndefOr[js.Function1[/* suite */ Suite, Any | js.Promise[Any]]]])*): Self = StObject.set(x, "beforeSuite", js.Array(value*))
       
       inline def setBeforeTest(
-        value: (js.Function2[/* test */ Test, /* context */ Any, Unit]) | (js.Array[NonNullable[js.UndefOr[js.Function2[/* test */ Test, /* context */ Any, Unit]]]])
+        value: (js.Function2[/* test */ Test, /* context */ Any, Any | js.Promise[Any]]) | (js.Array[
+              NonNullable[
+                js.UndefOr[js.Function2[/* test */ Test, /* context */ Any, Any | js.Promise[Any]]]
+              ]
+            ])
       ): Self = StObject.set(x, "beforeTest", value.asInstanceOf[js.Any])
       
-      inline def setBeforeTestFunction2(value: (/* test */ Test, /* context */ Any) => Unit): Self = StObject.set(x, "beforeTest", js.Any.fromFunction2(value))
+      inline def setBeforeTestFunction2(value: (/* test */ Test, /* context */ Any) => Any | js.Promise[Any]): Self = StObject.set(x, "beforeTest", js.Any.fromFunction2(value))
       
       inline def setBeforeTestUndefined: Self = StObject.set(x, "beforeTest", js.undefined)
       
-      inline def setBeforeTestVarargs(value: (NonNullable[js.UndefOr[js.Function2[/* test */ Test, /* context */ Any, Unit]]])*): Self = StObject.set(x, "beforeTest", js.Array(value*))
+      inline def setBeforeTestVarargs(
+        value: (NonNullable[
+              js.UndefOr[js.Function2[/* test */ Test, /* context */ Any, Any | js.Promise[Any]]]
+            ])*
+      ): Self = StObject.set(x, "beforeTest", js.Array(value*))
       
       inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
       
@@ -861,7 +926,7 @@ object buildServicesMod {
                   /* capabilities */ RemoteCapability, 
                   /* specs */ js.Array[String], 
                   /* browser */ Any, 
-                  Unit
+                  Any | js.Promise[Any]
                 ]
               ]
             ])*
@@ -873,7 +938,7 @@ object buildServicesMod {
               /* config */ OmitTestrunnercapabilitieAfter, 
               /* capabilities */ RemoteCapabilities, 
               /* results */ Any, 
-              Unit
+              Any | js.Promise[Any]
             ]) | (js.Array[
               NonNullable[
                 js.UndefOr[
@@ -882,7 +947,7 @@ object buildServicesMod {
                     /* config */ OmitTestrunnercapabilitieAfter, 
                     /* capabilities */ RemoteCapabilities, 
                     /* results */ Any, 
-                    Unit
+                    Any | js.Promise[Any]
                   ]
                 ]
               ]
@@ -890,7 +955,7 @@ object buildServicesMod {
       ): Self = StObject.set(x, "onComplete", value.asInstanceOf[js.Any])
       
       inline def setOnCompleteFunction4(
-        value: (/* exitCode */ Double, /* config */ OmitTestrunnercapabilitieAfter, /* capabilities */ RemoteCapabilities, /* results */ Any) => Unit
+        value: (/* exitCode */ Double, /* config */ OmitTestrunnercapabilitieAfter, /* capabilities */ RemoteCapabilities, /* results */ Any) => Any | js.Promise[Any]
       ): Self = StObject.set(x, "onComplete", js.Any.fromFunction4(value))
       
       inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
@@ -903,49 +968,65 @@ object buildServicesMod {
                   /* config */ OmitTestrunnercapabilitieAfter, 
                   /* capabilities */ RemoteCapabilities, 
                   /* results */ Any, 
-                  Unit
+                  Any | js.Promise[Any]
                 ]
               ]
             ])*
       ): Self = StObject.set(x, "onComplete", js.Array(value*))
       
       inline def setOnPrepare(
-        value: (js.Function2[/* config */ Testrunner, /* capabilities */ RemoteCapabilities, Unit]) | (js.Array[
+        value: (js.Function2[
+              /* config */ Testrunner, 
+              /* capabilities */ RemoteCapabilities, 
+              Any | js.Promise[Any]
+            ]) | (js.Array[
               NonNullable[
                 js.UndefOr[
-                  js.Function2[/* config */ Testrunner, /* capabilities */ RemoteCapabilities, Unit]
+                  js.Function2[
+                    /* config */ Testrunner, 
+                    /* capabilities */ RemoteCapabilities, 
+                    Any | js.Promise[Any]
+                  ]
                 ]
               ]
             ])
       ): Self = StObject.set(x, "onPrepare", value.asInstanceOf[js.Any])
       
-      inline def setOnPrepareFunction2(value: (/* config */ Testrunner, /* capabilities */ RemoteCapabilities) => Unit): Self = StObject.set(x, "onPrepare", js.Any.fromFunction2(value))
+      inline def setOnPrepareFunction2(value: (/* config */ Testrunner, /* capabilities */ RemoteCapabilities) => Any | js.Promise[Any]): Self = StObject.set(x, "onPrepare", js.Any.fromFunction2(value))
       
       inline def setOnPrepareUndefined: Self = StObject.set(x, "onPrepare", js.undefined)
       
       inline def setOnPrepareVarargs(
         value: (NonNullable[
               js.UndefOr[
-                js.Function2[/* config */ Testrunner, /* capabilities */ RemoteCapabilities, Unit]
+                js.Function2[
+                  /* config */ Testrunner, 
+                  /* capabilities */ RemoteCapabilities, 
+                  Any | js.Promise[Any]
+                ]
               ]
             ])*
       ): Self = StObject.set(x, "onPrepare", js.Array(value*))
       
       inline def setOnReload(
-        value: (js.Function2[/* oldSessionId */ String, /* newSessionId */ String, Unit]) | (js.Array[
+        value: (js.Function2[/* oldSessionId */ String, /* newSessionId */ String, Any | js.Promise[Any]]) | (js.Array[
               NonNullable[
-                js.UndefOr[js.Function2[/* oldSessionId */ String, /* newSessionId */ String, Unit]]
+                js.UndefOr[
+                  js.Function2[/* oldSessionId */ String, /* newSessionId */ String, Any | js.Promise[Any]]
+                ]
               ]
             ])
       ): Self = StObject.set(x, "onReload", value.asInstanceOf[js.Any])
       
-      inline def setOnReloadFunction2(value: (/* oldSessionId */ String, /* newSessionId */ String) => Unit): Self = StObject.set(x, "onReload", js.Any.fromFunction2(value))
+      inline def setOnReloadFunction2(value: (/* oldSessionId */ String, /* newSessionId */ String) => Any | js.Promise[Any]): Self = StObject.set(x, "onReload", js.Any.fromFunction2(value))
       
       inline def setOnReloadUndefined: Self = StObject.set(x, "onReload", js.undefined)
       
       inline def setOnReloadVarargs(
         value: (NonNullable[
-              js.UndefOr[js.Function2[/* oldSessionId */ String, /* newSessionId */ String, Unit]]
+              js.UndefOr[
+                js.Function2[/* oldSessionId */ String, /* newSessionId */ String, Any | js.Promise[Any]]
+              ]
             ])*
       ): Self = StObject.set(x, "onReload", js.Array(value*))
       
@@ -955,7 +1036,7 @@ object buildServicesMod {
               /* exitCode */ Double, 
               /* specs */ js.Array[String], 
               /* retries */ Double, 
-              Unit
+              Any | js.Promise[Any]
             ]) | (js.Array[
               NonNullable[
                 js.UndefOr[
@@ -964,7 +1045,7 @@ object buildServicesMod {
                     /* exitCode */ Double, 
                     /* specs */ js.Array[String], 
                     /* retries */ Double, 
-                    Unit
+                    Any | js.Promise[Any]
                   ]
                 ]
               ]
@@ -972,7 +1053,7 @@ object buildServicesMod {
       ): Self = StObject.set(x, "onWorkerEnd", value.asInstanceOf[js.Any])
       
       inline def setOnWorkerEndFunction4(
-        value: (/* cid */ String, /* exitCode */ Double, /* specs */ js.Array[String], /* retries */ Double) => Unit
+        value: (/* cid */ String, /* exitCode */ Double, /* specs */ js.Array[String], /* retries */ Double) => Any | js.Promise[Any]
       ): Self = StObject.set(x, "onWorkerEnd", js.Any.fromFunction4(value))
       
       inline def setOnWorkerEndUndefined: Self = StObject.set(x, "onWorkerEnd", js.undefined)
@@ -985,7 +1066,7 @@ object buildServicesMod {
                   /* exitCode */ Double, 
                   /* specs */ js.Array[String], 
                   /* retries */ Double, 
-                  Unit
+                  Any | js.Promise[Any]
                 ]
               ]
             ])*
@@ -998,7 +1079,7 @@ object buildServicesMod {
               /* specs */ js.Array[String], 
               /* args */ Testrunner, 
               /* execArgv */ js.Array[String], 
-              Unit
+              Any | js.Promise[Any]
             ]) | (js.Array[
               NonNullable[
                 js.UndefOr[
@@ -1008,7 +1089,7 @@ object buildServicesMod {
                     /* specs */ js.Array[String], 
                     /* args */ Testrunner, 
                     /* execArgv */ js.Array[String], 
-                    Unit
+                    Any | js.Promise[Any]
                   ]
                 ]
               ]
@@ -1016,7 +1097,7 @@ object buildServicesMod {
       ): Self = StObject.set(x, "onWorkerStart", value.asInstanceOf[js.Any])
       
       inline def setOnWorkerStartFunction5(
-        value: (/* cid */ String, /* caps */ DesiredCapabilities, /* specs */ js.Array[String], /* args */ Testrunner, /* execArgv */ js.Array[String]) => Unit
+        value: (/* cid */ String, /* caps */ DesiredCapabilities, /* specs */ js.Array[String], /* args */ Testrunner, /* execArgv */ js.Array[String]) => Any | js.Promise[Any]
       ): Self = StObject.set(x, "onWorkerStart", js.Any.fromFunction5(value))
       
       inline def setOnWorkerStartUndefined: Self = StObject.set(x, "onWorkerStart", js.undefined)
@@ -1030,7 +1111,7 @@ object buildServicesMod {
                   /* specs */ js.Array[String], 
                   /* args */ Testrunner, 
                   /* execArgv */ js.Array[String], 
-                  Unit
+                  Any | js.Promise[Any]
                 ]
               ]
             ])*
@@ -1041,9 +1122,17 @@ object buildServicesMod {
   @js.native
   trait RunnerClass
     extends StObject
-       with Instantiable2[/* configFile */ String, /* config */ OmitWebdriverIOcapabiliti, RunnerInstance]
+       with Instantiable2[
+          /* options */ BrowserRunnerOptions, 
+          /* config */ OmitWebdriverIOcapabiliti, 
+          RunnerInstance
+        ]
   
   trait RunnerInstance extends StObject {
+    
+    var browserPool: Any
+    
+    var closeSession: js.UndefOr[js.Function1[/* cid */ Double, js.Promise[Unit]]] = js.undefined
     
     def getWorkerCount(): Double
     
@@ -1051,25 +1140,32 @@ object buildServicesMod {
     
     def run(args: Any): EventEmitter
     
-    def shutdown(): js.Promise[Unit]
+    def shutdown(): js.Promise[Boolean]
     
     var workerPool: Any
   }
   object RunnerInstance {
     
     inline def apply(
+      browserPool: Any,
       getWorkerCount: () => Double,
       initialise: () => js.Promise[Unit],
       run: Any => EventEmitter,
-      shutdown: () => js.Promise[Unit],
+      shutdown: () => js.Promise[Boolean],
       workerPool: Any
     ): RunnerInstance = {
-      val __obj = js.Dynamic.literal(getWorkerCount = js.Any.fromFunction0(getWorkerCount), initialise = js.Any.fromFunction0(initialise), run = js.Any.fromFunction1(run), shutdown = js.Any.fromFunction0(shutdown), workerPool = workerPool.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(browserPool = browserPool.asInstanceOf[js.Any], getWorkerCount = js.Any.fromFunction0(getWorkerCount), initialise = js.Any.fromFunction0(initialise), run = js.Any.fromFunction1(run), shutdown = js.Any.fromFunction0(shutdown), workerPool = workerPool.asInstanceOf[js.Any])
       __obj.asInstanceOf[RunnerInstance]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: RunnerInstance] (val x: Self) extends AnyVal {
+      
+      inline def setBrowserPool(value: Any): Self = StObject.set(x, "browserPool", value.asInstanceOf[js.Any])
+      
+      inline def setCloseSession(value: /* cid */ Double => js.Promise[Unit]): Self = StObject.set(x, "closeSession", js.Any.fromFunction1(value))
+      
+      inline def setCloseSessionUndefined: Self = StObject.set(x, "closeSession", js.undefined)
       
       inline def setGetWorkerCount(value: () => Double): Self = StObject.set(x, "getWorkerCount", js.Any.fromFunction0(value))
       
@@ -1077,7 +1173,7 @@ object buildServicesMod {
       
       inline def setRun(value: Any => EventEmitter): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
       
-      inline def setShutdown(value: () => js.Promise[Unit]): Self = StObject.set(x, "shutdown", js.Any.fromFunction0(value))
+      inline def setShutdown(value: () => js.Promise[Boolean]): Self = StObject.set(x, "shutdown", js.Any.fromFunction0(value))
       
       inline def setWorkerPool(value: Any): Self = StObject.set(x, "workerPool", value.asInstanceOf[js.Any])
     }

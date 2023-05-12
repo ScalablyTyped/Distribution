@@ -6,13 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersQueryArchivedstate extends StObject {
   
+  /** List project cards */
   var get: ParametersQueryArchivedstate
   
-  var post: RequestBodyContent129
+  /** Create a project card */
+  var post: RequestBodyContentApplicationjsonOneOf
 }
 object GetParametersQueryArchivedstate {
   
-  inline def apply(get: ParametersQueryArchivedstate, post: RequestBodyContent129): GetParametersQueryArchivedstate = {
+  inline def apply(get: ParametersQueryArchivedstate, post: RequestBodyContentApplicationjsonOneOf): GetParametersQueryArchivedstate = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetParametersQueryArchivedstate]
   }
@@ -22,6 +24,6 @@ object GetParametersQueryArchivedstate {
     
     inline def setGet(value: ParametersQueryArchivedstate): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPost(value: RequestBodyContent129): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+    inline def setPost(value: RequestBodyContentApplicationjsonOneOf): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
   }
 }

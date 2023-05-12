@@ -38,6 +38,8 @@ object typesClientreportMod {
     - typings.sentryTypes.sentryTypesStrings.queue_overflow
     - typings.sentryTypes.sentryTypesStrings.ratelimit_backoff
     - typings.sentryTypes.sentryTypesStrings.sample_rate
+    - typings.sentryTypes.sentryTypesStrings.send_error
+    - typings.sentryTypes.sentryTypesStrings.internal_sdk_error
   */
   trait EventDropReason extends StObject
   object EventDropReason {
@@ -46,6 +48,8 @@ object typesClientreportMod {
     
     inline def event_processor: typings.sentryTypes.sentryTypesStrings.event_processor = "event_processor".asInstanceOf[typings.sentryTypes.sentryTypesStrings.event_processor]
     
+    inline def internal_sdk_error: typings.sentryTypes.sentryTypesStrings.internal_sdk_error = "internal_sdk_error".asInstanceOf[typings.sentryTypes.sentryTypesStrings.internal_sdk_error]
+    
     inline def network_error: typings.sentryTypes.sentryTypesStrings.network_error = "network_error".asInstanceOf[typings.sentryTypes.sentryTypesStrings.network_error]
     
     inline def queue_overflow: typings.sentryTypes.sentryTypesStrings.queue_overflow = "queue_overflow".asInstanceOf[typings.sentryTypes.sentryTypesStrings.queue_overflow]
@@ -53,6 +57,8 @@ object typesClientreportMod {
     inline def ratelimit_backoff: typings.sentryTypes.sentryTypesStrings.ratelimit_backoff = "ratelimit_backoff".asInstanceOf[typings.sentryTypes.sentryTypesStrings.ratelimit_backoff]
     
     inline def sample_rate: typings.sentryTypes.sentryTypesStrings.sample_rate = "sample_rate".asInstanceOf[typings.sentryTypes.sentryTypesStrings.sample_rate]
+    
+    inline def send_error: typings.sentryTypes.sentryTypesStrings.send_error = "send_error".asInstanceOf[typings.sentryTypes.sentryTypesStrings.send_error]
   }
   
   trait Outcome extends StObject {

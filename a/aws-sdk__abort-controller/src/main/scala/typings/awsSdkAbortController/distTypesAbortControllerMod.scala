@@ -22,7 +22,7 @@ object distTypesAbortControllerMod {
     
     /**
       * An object that reports whether the action associated with this
-      * {AbortController} has been cancelled.
+      * `AbortController` has been cancelled.
       */
     /* CompleteClass */
     override val signal: AbortSignal = js.native

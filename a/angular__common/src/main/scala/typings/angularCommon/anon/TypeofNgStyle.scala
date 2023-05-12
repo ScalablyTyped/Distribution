@@ -30,7 +30,8 @@ trait TypeofNgStyle
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `true`
+    `true`, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[typings.angularCommon.mod.NgStyle, scala.Nothing] = js.native

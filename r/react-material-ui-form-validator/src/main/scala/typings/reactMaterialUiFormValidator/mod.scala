@@ -19,7 +19,7 @@ object mod {
     def this(props: ValidatorComponentProps & SelectFieldProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ValidatorComponentProps & SelectFieldProps, context: Any) = this()
     
@@ -44,7 +44,7 @@ object mod {
     def this(props: ValidatorComponentProps & TextFieldProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ValidatorComponentProps & TextFieldProps, context: Any) = this()
     
@@ -69,7 +69,7 @@ object mod {
     def this(props: ValidatorComponentProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ValidatorComponentProps, context: Any) = this()
     
@@ -94,7 +94,7 @@ object mod {
     def this(props: ValidatorFormProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ValidatorFormProps, context: Any) = this()
     

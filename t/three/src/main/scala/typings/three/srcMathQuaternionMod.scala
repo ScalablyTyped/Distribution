@@ -169,6 +169,12 @@ object srcMathQuaternionMod {
     def toArray(array: ArrayLike[Double], offset: Double): ArrayLike[Double] = js.native
     
     /**
+      * This method defines the serialization result of Quaternion.
+      * @return The numerical elements of this quaternion in an array of format [x, y, z, w].
+      */
+    def toJSON(): js.Tuple4[Double, Double, Double, Double] = js.native
+    
+    /**
       * @default 1
       */
     var w: Double = js.native

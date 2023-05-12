@@ -456,17 +456,30 @@ object Geom {
     ): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToCircle")(line.asInstanceOf[js.Any], circle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     
     /**
-      * Checks for intersection between the two line segments and returns the intersection point as a Vector3,
-      * or `null` if the lines are parallel, or do not intersect.
+      * Checks for intersection between the two line segments, or a ray and a line segment,
+      * and returns the intersection point as a Vector3, or `null` if the lines are parallel, or do not intersect.
       * 
       * The `z` property of the Vector3 contains the intersection distance, which can be used to find
       * the closest intersecting point from a group of line segments.
-      * @param line1 The first line segment to check.
+      * @param line1 The first line segment, or a ray, to check.
       * @param line2 The second line segment to check.
+      * @param isRay Is `line1` a ray or a line segment? Default false.
       * @param out A Vector3 to store the intersection results in.
       */
     inline def GetLineToLine(line1: typings.phaser.Phaser.Geom.Line, line2: typings.phaser.Phaser.Geom.Line): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToLine")(line1.asInstanceOf[js.Any], line2.asInstanceOf[js.Any])).asInstanceOf[Vector3]
-    inline def GetLineToLine(line1: typings.phaser.Phaser.Geom.Line, line2: typings.phaser.Phaser.Geom.Line, out: Vector3): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToLine")(line1.asInstanceOf[js.Any], line2.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Vector3]
+    inline def GetLineToLine(line1: typings.phaser.Phaser.Geom.Line, line2: typings.phaser.Phaser.Geom.Line, isRay: Boolean): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToLine")(line1.asInstanceOf[js.Any], line2.asInstanceOf[js.Any], isRay.asInstanceOf[js.Any])).asInstanceOf[Vector3]
+    inline def GetLineToLine(
+      line1: typings.phaser.Phaser.Geom.Line,
+      line2: typings.phaser.Phaser.Geom.Line,
+      isRay: Boolean,
+      out: Vector3
+    ): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToLine")(line1.asInstanceOf[js.Any], line2.asInstanceOf[js.Any], isRay.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Vector3]
+    inline def GetLineToLine(
+      line1: typings.phaser.Phaser.Geom.Line,
+      line2: typings.phaser.Phaser.Geom.Line,
+      isRay: Unit,
+      out: Vector3
+    ): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToLine")(line1.asInstanceOf[js.Any], line2.asInstanceOf[js.Any], isRay.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Vector3]
     
     /**
       * Checks for the closest point of intersection between a line segment and an array of points, where each pair
@@ -478,8 +491,9 @@ object Geom {
       * 
       * The `x` and `y` components contain the point of the intersection.
       * The `z` component contains the closest distance.
-      * @param line The line segment to check.
+      * @param line The line segment, or ray, to check. If a ray, set the `isRay` parameter to `true`.
       * @param points An array of points to check.
+      * @param isRay Is `line` a ray or a line segment? Default false.
       * @param out A Vector3 to store the intersection results in.
       */
     inline def GetLineToPoints(
@@ -489,15 +503,39 @@ object Geom {
     inline def GetLineToPoints(
       line: typings.phaser.Phaser.Geom.Line,
       points: js.Array[typings.phaser.Phaser.Geom.Point | Vector2],
+      isRay: Boolean
+    ): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToPoints")(line.asInstanceOf[js.Any], points.asInstanceOf[js.Any], isRay.asInstanceOf[js.Any])).asInstanceOf[Vector3]
+    inline def GetLineToPoints(
+      line: typings.phaser.Phaser.Geom.Line,
+      points: js.Array[typings.phaser.Phaser.Geom.Point | Vector2],
+      isRay: Boolean,
       out: Vector3
-    ): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToPoints")(line.asInstanceOf[js.Any], points.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Vector3]
+    ): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToPoints")(line.asInstanceOf[js.Any], points.asInstanceOf[js.Any], isRay.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Vector3]
+    inline def GetLineToPoints(
+      line: typings.phaser.Phaser.Geom.Line,
+      points: js.Array[typings.phaser.Phaser.Geom.Point | Vector2],
+      isRay: Unit,
+      out: Vector3
+    ): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToPoints")(line.asInstanceOf[js.Any], points.asInstanceOf[js.Any], isRay.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Vector3]
     
     inline def GetLineToPolygon(line: typings.phaser.Phaser.Geom.Line, polygons: js.Array[typings.phaser.Phaser.Geom.Polygon]): Vector4 = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToPolygon")(line.asInstanceOf[js.Any], polygons.asInstanceOf[js.Any])).asInstanceOf[Vector4]
     inline def GetLineToPolygon(
       line: typings.phaser.Phaser.Geom.Line,
       polygons: js.Array[typings.phaser.Phaser.Geom.Polygon],
+      isRay: Boolean
+    ): Vector4 = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToPolygon")(line.asInstanceOf[js.Any], polygons.asInstanceOf[js.Any], isRay.asInstanceOf[js.Any])).asInstanceOf[Vector4]
+    inline def GetLineToPolygon(
+      line: typings.phaser.Phaser.Geom.Line,
+      polygons: js.Array[typings.phaser.Phaser.Geom.Polygon],
+      isRay: Boolean,
       out: Vector4
-    ): Vector4 = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToPolygon")(line.asInstanceOf[js.Any], polygons.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Vector4]
+    ): Vector4 = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToPolygon")(line.asInstanceOf[js.Any], polygons.asInstanceOf[js.Any], isRay.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Vector4]
+    inline def GetLineToPolygon(
+      line: typings.phaser.Phaser.Geom.Line,
+      polygons: js.Array[typings.phaser.Phaser.Geom.Polygon],
+      isRay: Unit,
+      out: Vector4
+    ): Vector4 = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToPolygon")(line.asInstanceOf[js.Any], polygons.asInstanceOf[js.Any], isRay.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Vector4]
     /**
       * Checks for the closest point of intersection between a line segment and an array of polygons.
       * 
@@ -508,12 +546,29 @@ object Geom {
       * The `x` and `y` components contain the point of the intersection.
       * The `z` component contains the closest distance.
       * The `w` component contains the index of the polygon, in the given array, that triggered the intersection.
-      * @param line The line segment to check.
+      * @param line The line segment, or ray, to check. If a ray, set the `isRay` parameter to `true`.
       * @param polygons A single polygon, or array of polygons, to check.
+      * @param isRay Is `line` a ray or a line segment? Default false.
       * @param out A Vector4 to store the intersection results in.
       */
     inline def GetLineToPolygon(line: typings.phaser.Phaser.Geom.Line, polygons: typings.phaser.Phaser.Geom.Polygon): Vector4 = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToPolygon")(line.asInstanceOf[js.Any], polygons.asInstanceOf[js.Any])).asInstanceOf[Vector4]
-    inline def GetLineToPolygon(line: typings.phaser.Phaser.Geom.Line, polygons: typings.phaser.Phaser.Geom.Polygon, out: Vector4): Vector4 = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToPolygon")(line.asInstanceOf[js.Any], polygons.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Vector4]
+    inline def GetLineToPolygon(
+      line: typings.phaser.Phaser.Geom.Line,
+      polygons: typings.phaser.Phaser.Geom.Polygon,
+      isRay: Boolean
+    ): Vector4 = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToPolygon")(line.asInstanceOf[js.Any], polygons.asInstanceOf[js.Any], isRay.asInstanceOf[js.Any])).asInstanceOf[Vector4]
+    inline def GetLineToPolygon(
+      line: typings.phaser.Phaser.Geom.Line,
+      polygons: typings.phaser.Phaser.Geom.Polygon,
+      isRay: Boolean,
+      out: Vector4
+    ): Vector4 = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToPolygon")(line.asInstanceOf[js.Any], polygons.asInstanceOf[js.Any], isRay.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Vector4]
+    inline def GetLineToPolygon(
+      line: typings.phaser.Phaser.Geom.Line,
+      polygons: typings.phaser.Phaser.Geom.Polygon,
+      isRay: Unit,
+      out: Vector4
+    ): Vector4 = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToPolygon")(line.asInstanceOf[js.Any], polygons.asInstanceOf[js.Any], isRay.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Vector4]
     
     inline def GetLineToRectangle(line: typings.phaser.Phaser.Geom.Line, rect: js.Object): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToRectangle")(line.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     inline def GetLineToRectangle(line: typings.phaser.Phaser.Geom.Line, rect: js.Object, out: js.Array[Any]): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToRectangle")(line.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
@@ -661,14 +716,10 @@ object Geom {
       * Checks if two Lines intersect. If the Lines are identical, they will be treated as parallel and thus non-intersecting.
       * @param line1 The first Line to check.
       * @param line2 The second Line to check.
-      * @param out A Point in which to optionally store the point of intersection.
+      * @param out An optional point-like object in which to store the coordinates of intersection, if needed.
       */
     inline def LineToLine(line1: typings.phaser.Phaser.Geom.Line, line2: typings.phaser.Phaser.Geom.Line): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("LineToLine")(line1.asInstanceOf[js.Any], line2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def LineToLine(
-      line1: typings.phaser.Phaser.Geom.Line,
-      line2: typings.phaser.Phaser.Geom.Line,
-      out: typings.phaser.Phaser.Geom.Point
-    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("LineToLine")(line1.asInstanceOf[js.Any], line2.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def LineToLine(line1: typings.phaser.Phaser.Geom.Line, line2: typings.phaser.Phaser.Geom.Line, out: Vector2Like): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("LineToLine")(line1.asInstanceOf[js.Any], line2.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     inline def LineToRectangle(line: typings.phaser.Phaser.Geom.Line, rect: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("LineToRectangle")(line.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     /**
@@ -1023,14 +1074,13 @@ object Geom {
     inline def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, quantity: Double, stepRate: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(line.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     inline def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, quantity: Double, stepRate: Unit, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(line.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
-    inline def GetShortestDistance[O /* <: typings.phaser.Phaser.Geom.Point */](line: typings.phaser.Phaser.Geom.Line, point: js.Object): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetShortestDistance")(line.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[O]
     /**
       * Get the shortest distance from a Line to the given Point.
       * @param line The line to get the distance from.
       * @param point The point to get the shortest distance to.
       */
     /* static member */
-    inline def GetShortestDistance[O /* <: typings.phaser.Phaser.Geom.Point */](line: typings.phaser.Phaser.Geom.Line, point: typings.phaser.Phaser.Geom.Point): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetShortestDistance")(line.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetShortestDistance(line: typings.phaser.Phaser.Geom.Line, point: Vector2Like): Boolean | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("GetShortestDistance")(line.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean | Double]
     
     /**
       * Calculate the height of the given line.
@@ -1320,6 +1370,7 @@ object Geom {
       * @param normals Optional vertex normals array. If you don't have one, pass `null` or an empty array.
       * @param colors An array of colors, one per vertex, or a single color value applied to all vertices. Default 0xffffff.
       * @param alphas An array of alpha values, one per vertex, or a single alpha value applied to all vertices. Default 1.
+      * @param flipUV Flip the UV coordinates? Default false.
       */
     inline def GenerateVerts(
       vertices: js.Array[Double],
@@ -1328,8 +1379,9 @@ object Geom {
       containsZ: js.UndefOr[Boolean],
       normals: js.UndefOr[js.Array[Double]],
       colors: js.UndefOr[Double | js.Array[Double]],
-      alphas: js.UndefOr[Double | js.Array[Double]]
-    ): GenerateVertsResult = (^.asInstanceOf[js.Dynamic].applyDynamic("GenerateVerts")(vertices.asInstanceOf[js.Any], uvs.asInstanceOf[js.Any], indicies.asInstanceOf[js.Any], containsZ.asInstanceOf[js.Any], normals.asInstanceOf[js.Any], colors.asInstanceOf[js.Any], alphas.asInstanceOf[js.Any])).asInstanceOf[GenerateVertsResult]
+      alphas: js.UndefOr[Double | js.Array[Double]],
+      flipUV: js.UndefOr[Boolean]
+    ): GenerateVertsResult = (^.asInstanceOf[js.Dynamic].applyDynamic("GenerateVerts")(vertices.asInstanceOf[js.Any], uvs.asInstanceOf[js.Any], indicies.asInstanceOf[js.Any], containsZ.asInstanceOf[js.Any], normals.asInstanceOf[js.Any], colors.asInstanceOf[js.Any], alphas.asInstanceOf[js.Any], flipUV.asInstanceOf[js.Any])).asInstanceOf[GenerateVertsResult]
     
     /**
       * Parses a Wavefront OBJ File, extracting the models from it and returning them in an array.
@@ -2240,6 +2292,16 @@ object Geom {
     
     /**
       * Constructs new Rectangle or repositions and resizes an existing Rectangle so that all of the given points are on or within its bounds.
+      * 
+      * The `points` parameter is an array of Point-like objects:
+      * 
+      * ```js
+      * const points = [
+      *     [100, 200],
+      *     [200, 400],
+      *     { x: 30, y: 60 }
+      * ]
+      * ```
       * @param points An array of points (either arrays with two elements corresponding to the X and Y coordinate or an object with public `x` and `y` properties) which should be surrounded by the Rectangle.
       * @param out Optional Rectangle to adjust.
       */

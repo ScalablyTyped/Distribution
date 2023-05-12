@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateLicenseConversionTaskForResourceRequest extends StObject {
   
   /**
-    * Information that identifies the license type you are converting to. For the structure of the destination license, see Convert a license type using the Amazon Web Services CLI in the License Manager User Guide.
+    * Information that identifies the license type you are converting to. For the structure of the destination license, see Convert a license type using the CLI  in the License Manager User Guide.
     */
   var DestinationLicenseContext: LicenseConversionContext
   
@@ -17,7 +17,7 @@ trait CreateLicenseConversionTaskForResourceRequest extends StObject {
   var ResourceArn: Arn
   
   /**
-    * Information that identifies the license type you are converting from. For the structure of the source license, see Convert a license type using the Amazon Web Services CLI in the License Manager User Guide.
+    * Information that identifies the license type you are converting from. For the structure of the source license, see Convert a license type using the CLI  in the License Manager User Guide.
     */
   var SourceLicenseContext: LicenseConversionContext
 }

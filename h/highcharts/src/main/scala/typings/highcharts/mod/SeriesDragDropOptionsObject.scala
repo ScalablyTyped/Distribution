@@ -13,43 +13,47 @@ trait SeriesDragDropOptionsObject extends StObject {
   var dragHandle: js.UndefOr[DragDropHandleOptionsObject] = js.undefined
   
   /**
-    * (Highstock) Set the maximum X value the points can be moved to.
+    * (Highcharts, Highstock, Gantt) Set the maximum X value the points can be
+    * moved to.
     */
   var dragMaxX: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highstock) Set the maximum Y value the points can be moved to.
+    * (Highcharts, Highstock, Gantt) Set the maximum Y value the points can be
+    * moved to.
     */
   var dragMaxY: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highstock) Set the minimum X value the points can be moved to.
+    * (Highcharts, Highstock, Gantt) Set the minimum X value the points can be
+    * moved to.
     */
   var dragMinX: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highstock) Set the minimum Y value the points can be moved to.
+    * (Highcharts, Highstock, Gantt) Set the minimum Y value the points can be
+    * moved to.
     */
   var dragMinY: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highstock) The X precision value to drag to for this series. Set to 0 to
-    * disable. By default this is disabled, except for category axes, where the
-    * default is 1.
+    * (Highcharts, Highstock, Gantt) The X precision value to drag to for this
+    * series. Set to 0 to disable. By default this is disabled, except for
+    * category axes, where the default is 1.
     */
   var dragPrecisionX: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highstock) The Y precision value to drag to for this series. Set to 0 to
-    * disable. By default this is disabled, except for category axes, where the
-    * default is 1.
+    * (Highcharts, Highstock, Gantt) The Y precision value to drag to for this
+    * series. Set to 0 to disable. By default this is disabled, except for
+    * category axes, where the default is 1.
     */
   var dragPrecisionY: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highstock) The amount of pixels to drag the pointer before it counts as
-    * a drag operation. This prevents drag/drop to fire when just clicking or
-    * selecting points.
+    * (Highcharts, Highstock, Gantt) The amount of pixels to drag the pointer
+    * before it counts as a drag operation. This prevents drag/drop to fire
+    * when just clicking or selecting points.
     */
   var dragSensitivity: js.UndefOr[Double] = js.undefined
   
@@ -99,7 +103,7 @@ trait SeriesDragDropOptionsObject extends StObject {
   var draggableTarget: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highstock) Enable dragging in the X dimension.
+    * (Highcharts, Highstock, Gantt) Enable dragging in the X dimension.
     */
   var draggableX: js.UndefOr[Boolean] = js.undefined
   
@@ -114,28 +118,29 @@ trait SeriesDragDropOptionsObject extends StObject {
   var draggableX2: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highstock) Enable dragging in the Y dimension. Note that this is not
-    * supported for TreeGrid axes (the default axis type in Gantt charts).
+    * (Highcharts, Highstock, Gantt) Enable dragging in the Y dimension. Note
+    * that this is not supported for TreeGrid axes (the default axis type in
+    * Gantt charts).
     */
   var draggableY: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highstock) Group the points by a property. Points with the same property
-    * value will be grouped together when moving.
+    * (Highcharts, Highstock, Gantt) Group the points by a property. Points
+    * with the same property value will be grouped together when moving.
     */
   var groupBy: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highstock) Style options for the guide box. The guide box has one state
-    * by default, the `default` state.
+    * (Highcharts, Highstock, Gantt) Style options for the guide box. The guide
+    * box has one state by default, the `default` state.
     */
   var guideBox: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.highcharts.mod.PlotAbandsDragDropGuideBoxOptions, typings.highcharts.mod.PlotAdDragDropGuideBoxOptions, typings.highcharts.mod.PlotAoDragDropGuideBoxOptions */ Any
+    PlotAreaDragDropGuideBoxOptions | PlotArearangeDragDropGuideBoxOptions | PlotAreasplineDragDropGuideBoxOptions | PlotAreasplinerangeDragDropGuideBoxOptions | PlotBarDragDropGuideBoxOptions | PlotBoxplotDragDropGuideBoxOptions | PlotBubbleDragDropGuideBoxOptions | PlotBulletDragDropGuideBoxOptions | PlotCandlestickDragDropGuideBoxOptions | PlotColumnDragDropGuideBoxOptions | PlotColumnpyramidDragDropGuideBoxOptions | PlotColumnrangeDragDropGuideBoxOptions | PlotDumbbellDragDropGuideBoxOptions | PlotErrorbarDragDropGuideBoxOptions | PlotFlagsDragDropGuideBoxOptions | PlotFunnel3dDragDropGuideBoxOptions | PlotGanttDragDropGuideBoxOptions | PlotHeikinashiDragDropGuideBoxOptions | PlotHlcDragDropGuideBoxOptions | PlotHollowcandlestickDragDropGuideBoxOptions | PlotLineDragDropGuideBoxOptions | PlotLollipopDragDropGuideBoxOptions | PlotMapbubbleDragDropGuideBoxOptions | PlotMappointDragDropGuideBoxOptions | PlotOhlcDragDropGuideBoxOptions | PlotPictorialDragDropGuideBoxOptions | PlotPolygonDragDropGuideBoxOptions | PlotPyramid3dDragDropGuideBoxOptions | PlotScatterDragDropGuideBoxOptions | PlotSeriesDragDropGuideBoxOptions | PlotSplineDragDropGuideBoxOptions | PlotStreamgraphDragDropGuideBoxOptions | PlotTimelineDragDropGuideBoxOptions | PlotVariwideDragDropGuideBoxOptions | PlotWaterfallDragDropGuideBoxOptions | PlotXrangeDragDropGuideBoxOptions | Dictionary[DragDropGuideBoxOptionsObject]
   ] = js.undefined
   
   /**
-    * (Highstock) Update points as they are dragged. If false, a guide box is
-    * drawn to illustrate the new point size.
+    * (Highcharts, Highstock, Gantt) Update points as they are dragged. If
+    * false, a guide box is drawn to illustrate the new point size.
     */
   var liveRedraw: js.UndefOr[Boolean] = js.undefined
 }
@@ -238,7 +243,7 @@ object SeriesDragDropOptionsObject {
     inline def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
     
     inline def setGuideBox(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.highcharts.mod.PlotAbandsDragDropGuideBoxOptions, typings.highcharts.mod.PlotAdDragDropGuideBoxOptions, typings.highcharts.mod.PlotAoDragDropGuideBoxOptions */ Any
+      value: PlotAreaDragDropGuideBoxOptions | PlotArearangeDragDropGuideBoxOptions | PlotAreasplineDragDropGuideBoxOptions | PlotAreasplinerangeDragDropGuideBoxOptions | PlotBarDragDropGuideBoxOptions | PlotBoxplotDragDropGuideBoxOptions | PlotBubbleDragDropGuideBoxOptions | PlotBulletDragDropGuideBoxOptions | PlotCandlestickDragDropGuideBoxOptions | PlotColumnDragDropGuideBoxOptions | PlotColumnpyramidDragDropGuideBoxOptions | PlotColumnrangeDragDropGuideBoxOptions | PlotDumbbellDragDropGuideBoxOptions | PlotErrorbarDragDropGuideBoxOptions | PlotFlagsDragDropGuideBoxOptions | PlotFunnel3dDragDropGuideBoxOptions | PlotGanttDragDropGuideBoxOptions | PlotHeikinashiDragDropGuideBoxOptions | PlotHlcDragDropGuideBoxOptions | PlotHollowcandlestickDragDropGuideBoxOptions | PlotLineDragDropGuideBoxOptions | PlotLollipopDragDropGuideBoxOptions | PlotMapbubbleDragDropGuideBoxOptions | PlotMappointDragDropGuideBoxOptions | PlotOhlcDragDropGuideBoxOptions | PlotPictorialDragDropGuideBoxOptions | PlotPolygonDragDropGuideBoxOptions | PlotPyramid3dDragDropGuideBoxOptions | PlotScatterDragDropGuideBoxOptions | PlotSeriesDragDropGuideBoxOptions | PlotSplineDragDropGuideBoxOptions | PlotStreamgraphDragDropGuideBoxOptions | PlotTimelineDragDropGuideBoxOptions | PlotVariwideDragDropGuideBoxOptions | PlotWaterfallDragDropGuideBoxOptions | PlotXrangeDragDropGuideBoxOptions | Dictionary[DragDropGuideBoxOptionsObject]
     ): Self = StObject.set(x, "guideBox", value.asInstanceOf[js.Any])
     
     inline def setGuideBoxUndefined: Self = StObject.set(x, "guideBox", js.undefined)

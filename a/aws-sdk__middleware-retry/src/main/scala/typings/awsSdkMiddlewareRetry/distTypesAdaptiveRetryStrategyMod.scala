@@ -2,8 +2,8 @@ package typings.awsSdkMiddlewareRetry
 
 import typings.awsSdkMiddlewareRetry.distTypesStandardRetryStrategyMod.StandardRetryStrategy
 import typings.awsSdkMiddlewareRetry.distTypesStandardRetryStrategyMod.StandardRetryStrategyOptions
-import typings.awsSdkMiddlewareRetry.distTypesTypesMod.RateLimiter
 import typings.awsSdkTypes.distTypesUtilMod.Provider
+import typings.awsSdkUtilRetry.distTypesTypesMod.RateLimiter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

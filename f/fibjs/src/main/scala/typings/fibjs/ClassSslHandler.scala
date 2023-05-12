@@ -10,35 +10,35 @@ trait ClassSslHandler
      with ClassHandler {
   
   /**
-    * class prop 
+    * class prop
     *
-    * 
+    *
     * @brief 客户端证书验证证书链
-    * 
+    *
     * @readonly
     * @type X509Cert
     */
   var ca: ClassX509Cert = js.native
   
   /**
-    * class prop 
+    * class prop
     *
-    * 
+    *
     * @brief ssl 协议转换处理器当前事件处理接口对象
-    * 
-    * 
+    *
+    *
     * @type Handler
     */
   var handler: ClassHandler = js.native
   
   /**
-    * class prop 
+    * class prop
     *
-    * 
+    *
     * @brief 设定证书验证模式，缺省为 VERIFY_NONE
-    * 
-    * 
-    * @type Integer
+    *
+    *
+    * @note Assumed to be an integer.
     */
   var verification: Double = js.native
 }

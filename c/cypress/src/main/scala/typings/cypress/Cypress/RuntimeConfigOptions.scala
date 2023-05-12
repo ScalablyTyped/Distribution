@@ -103,10 +103,6 @@ trait RuntimeConfigOptions extends StObject {
     * The Cypress version being used.
     */
   var version: String
-  
-  var xhrRoute: js.UndefOr[String] = js.undefined
-  
-  var xhrUrl: js.UndefOr[String] = js.undefined
 }
 object RuntimeConfigOptions {
   
@@ -247,13 +243,5 @@ object RuntimeConfigOptions {
     inline def setSpecsVarargs(value: Spec*): Self = StObject.set(x, "specs", js.Array(value*))
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
-    
-    inline def setXhrRoute(value: String): Self = StObject.set(x, "xhrRoute", value.asInstanceOf[js.Any])
-    
-    inline def setXhrRouteUndefined: Self = StObject.set(x, "xhrRoute", js.undefined)
-    
-    inline def setXhrUrl(value: String): Self = StObject.set(x, "xhrUrl", value.asInstanceOf[js.Any])
-    
-    inline def setXhrUrlUndefined: Self = StObject.set(x, "xhrUrl", js.undefined)
   }
 }

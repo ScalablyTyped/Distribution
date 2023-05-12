@@ -1,8 +1,8 @@
 package typings.blueprintjsPopover2
 
 import typings.blueprintjsCore.mod.AbstractPureComponent2
+import typings.blueprintjsPopover2.anon.Children
 import typings.blueprintjsPopover2.anon.PartialState
-import typings.blueprintjsPopover2.anon.Popover2PropsDefaultPopov
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.`click-target`
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.`hover-target`
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.click
@@ -23,7 +23,7 @@ object libEsmPopover2Mod {
   
   @JSImport("@blueprintjs/popover2/lib/esm/popover2", "Popover2")
   @js.native
-  open class Popover2[T] protected ()
+  open class Popover2[T /* <: DefaultPopover2TargetHTMLProps */] protected ()
     extends AbstractPureComponent2[Popover2Props[T], IPopover2State, js.Object] {
     def this(props: Popover2Props[T]) = this()
     def this(props: Popover2Props[T], context: Any) = this()
@@ -106,7 +106,7 @@ object libEsmPopover2Mod {
     
     /* private */ var updateDarkParent: Any = js.native
     
-    /* protected */ def validateProps(props: Popover2PropsDefaultPopov): Unit = js.native
+    /* protected */ def validateProps(props: Popover2Props[T] & Children): Unit = js.native
   }
   /* static members */
   object Popover2 {
@@ -161,7 +161,7 @@ object libEsmPopover2Mod {
     inline def HOVER_TARGET_ONLY_=(x: `hover-target`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HOVER_TARGET_ONLY")(x.asInstanceOf[js.Any])
   }
   
-  trait IPopover2Props[TProps]
+  trait IPopover2Props[TProps /* <: DefaultPopover2TargetHTMLProps */]
     extends StObject
        with IPopover2SharedProps[TProps] {
     
@@ -212,13 +212,13 @@ object libEsmPopover2Mod {
   }
   object IPopover2Props {
     
-    inline def apply[TProps](): IPopover2Props[TProps] = {
+    inline def apply[TProps /* <: DefaultPopover2TargetHTMLProps */](): IPopover2Props[TProps] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPopover2Props[TProps]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: IPopover2Props[?], TProps] (val x: Self & IPopover2Props[TProps]) extends AnyVal {
+    implicit open class MutableBuilder[Self <: IPopover2Props[?], TProps /* <: DefaultPopover2TargetHTMLProps */] (val x: Self & IPopover2Props[TProps]) extends AnyVal {
       
       inline def setBackdropProps(value: HTMLProps[HTMLDivElement]): Self = StObject.set(x, "backdropProps", value.asInstanceOf[js.Any])
       
@@ -268,5 +268,5 @@ object libEsmPopover2Mod {
     }
   }
   
-  type Popover2Props[TProps] = IPopover2Props[TProps]
+  type Popover2Props[TProps /* <: DefaultPopover2TargetHTMLProps */] = IPopover2Props[TProps]
 }

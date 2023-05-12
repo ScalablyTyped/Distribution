@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.WebkitTapHighlightColor
+import typings.csstype.mod.Property.MaskPosition
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `210` extends StObject {
   
   var value: js.UndefOr[
-    WebkitTapHighlightColor | (js.Array[
+    (MaskPosition[Double | String]) | (js.Array[
       (Extract[
         js.UndefOr[
-          WebkitTapHighlightColor | js.Array[NonNullable[js.UndefOr[WebkitTapHighlightColor]]]
+          (MaskPosition[Double | String]) | (js.Array[NonNullable[js.UndefOr[MaskPosition[Double | String]]]])
         ], 
         String
-      ]) | NonNullable[js.UndefOr[WebkitTapHighlightColor]]
+      ]) | (NonNullable[js.UndefOr[MaskPosition[Double | String]]])
     ])
   ] = js.native
 }

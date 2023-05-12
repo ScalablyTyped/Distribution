@@ -13,6 +13,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * See: {@link https://docs.mendix.com/refguide/call-external-action relevant section in reference guide}
+  *
   * In version 9.19.0: introduced
   */
 @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.CallExternalAction")
@@ -31,12 +33,14 @@ open class CallExternalAction protected () extends MicroflowAction {
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * @ignore
+    *
+    * In version 9.23.0: added optional
     */
-  def consumedODataService: IConsumedODataService = js.native
+  def consumedODataService: IConsumedODataService | Null = js.native
   
-  def consumedODataServiceQualifiedName: String = js.native
+  def consumedODataServiceQualifiedName: String | Null = js.native
   
-  def consumedODataService_=(newValue: IConsumedODataService): Unit = js.native
+  def consumedODataService_=(newValue: IConsumedODataService | Null): Unit = js.native
   
   def name: String = js.native
   def name_=(newValue: String): Unit = js.native

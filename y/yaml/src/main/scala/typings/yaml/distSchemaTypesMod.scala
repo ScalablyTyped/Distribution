@@ -97,12 +97,8 @@ object distSchemaTypesMod {
   }
   object ScalarTag {
     
-    inline def apply(
-      default: Boolean,
-      resolve: (String, js.Function1[/* message */ String, Unit], ParseOptions) => Any,
-      tag: String
-    ): ScalarTag = {
-      val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], resolve = js.Any.fromFunction3(resolve), tag = tag.asInstanceOf[js.Any])
+    inline def apply(resolve: (String, js.Function1[/* message */ String, Unit], ParseOptions) => Any, tag: String): ScalarTag = {
+      val __obj = js.Dynamic.literal(resolve = js.Any.fromFunction3(resolve), tag = tag.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScalarTag]
     }
     
@@ -130,7 +126,7 @@ object distSchemaTypesMod {
       * an explicit tag. For most cases, it's unlikely that you'll actually want to
       * use this, even if you first think you do.
       */
-    var default: Boolean
+    var default: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional factory function, used e.g. by collections when wrapping JS objects as AST nodes.
@@ -160,8 +156,8 @@ object distSchemaTypesMod {
   }
   object TagBase {
     
-    inline def apply(default: Boolean, tag: String): TagBase = {
-      val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+    inline def apply(tag: String): TagBase = {
+      val __obj = js.Dynamic.literal(tag = tag.asInstanceOf[js.Any])
       __obj.asInstanceOf[TagBase]
     }
     
@@ -173,6 +169,8 @@ object distSchemaTypesMod {
       inline def setCreateNodeUndefined: Self = StObject.set(x, "createNode", js.undefined)
       
       inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

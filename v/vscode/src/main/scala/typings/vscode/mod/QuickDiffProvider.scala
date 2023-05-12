@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait QuickDiffProvider extends StObject {
   
   /**
-    * Provide a {@link Uri} to the original resource of any given resource uri.
-    *
-    * @param uri The uri of the resource open in a text editor.
-    * @param token A cancellation token.
-    * @return A thenable that resolves to uri of the matching original resource.
-    */
+  		 * Provide a {@link Uri} to the original resource of any given resource uri.
+  		 *
+  		 * @param uri The uri of the resource open in a text editor.
+  		 * @param token A cancellation token.
+  		 * @return A thenable that resolves to uri of the matching original resource.
+  		 */
   var provideOriginalResource: js.UndefOr[js.Function2[/* uri */ Uri, /* token */ CancellationToken, ProviderResult[Uri]]] = js.undefined
 }
 object QuickDiffProvider {

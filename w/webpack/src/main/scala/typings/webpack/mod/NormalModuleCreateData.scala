@@ -1,6 +1,10 @@
 package typings.webpack.mod
 
 import typings.std.Record
+import typings.webpack.webpackStrings._empty
+import typings.webpack.webpackStrings.javascriptSlashauto
+import typings.webpack.webpackStrings.javascriptSlashdynamic
+import typings.webpack.webpackStrings.javascriptSlashesm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,9 +77,9 @@ trait NormalModuleCreateData extends StObject {
   var resourceResolveData: js.UndefOr[Record[String, Any]] = js.undefined
   
   /**
-  	 * module type
+  	 * module type. When deserializing, this is set to an empty string "".
   	 */
-  var `type`: String
+  var `type`: _empty | javascriptSlashauto | javascriptSlashdynamic | javascriptSlashesm
   
   /**
   	 * request intended by user (without loaders from config)
@@ -92,7 +96,7 @@ object NormalModuleCreateData {
     rawRequest: String,
     request: String,
     resource: String,
-    `type`: String,
+    `type`: _empty | javascriptSlashauto | javascriptSlashdynamic | javascriptSlashesm,
     userRequest: String
   ): NormalModuleCreateData = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], loaders = loaders.asInstanceOf[js.Any], parser = parser.asInstanceOf[js.Any], rawRequest = rawRequest.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], userRequest = userRequest.asInstanceOf[js.Any])
@@ -143,7 +147,7 @@ object NormalModuleCreateData {
     
     inline def setResourceResolveDataUndefined: Self = StObject.set(x, "resourceResolveData", js.undefined)
     
-    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: _empty | javascriptSlashauto | javascriptSlashdynamic | javascriptSlashesm): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setUserRequest(value: String): Self = StObject.set(x, "userRequest", value.asInstanceOf[js.Any])
   }

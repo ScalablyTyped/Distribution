@@ -8,27 +8,62 @@ object srcCoreLayersMod {
   
   @JSImport("three/src/core/Layers", "Layers")
   @js.native
+  /**
+    * Create a new Layers object, with membership initially set to layer 0.
+    */
   open class Layers () extends StObject {
     
-    def disable(channel: Double): Unit = js.native
-    
-    def disableAll(): Unit = js.native
-    
-    def enable(channel: Double): Unit = js.native
-    
-    def enableAll(): Unit = js.native
-    
-    def isEnabled(channel: Double): Boolean = js.native
+    /**
+      * Remove membership of this `layer`.
+      * @param layer An integer from 0 to 31.
+      */
+    def disable(layer: Double): Unit = js.native
     
     /**
-      * @default 1 | 0
+      * Remove membership from all layers.
+      */
+    def disableAll(): Unit = js.native
+    
+    /**
+      * Add membership of this `layer`.
+      * @param layer An integer from 0 to 31.
+      */
+    def enable(layer: Double): Unit = js.native
+    
+    /**
+      * Add membership to all layers.
+      */
+    def enableAll(): Unit = js.native
+    
+    /**
+      * Returns true if the given layer is enabled.
+      * @param layer An integer from 0 to 31.
+      */
+    def isEnabled(layer: Double): Boolean = js.native
+    
+    /**
+      * A bit mask storing which of the 32 layers this layers object is currently a member of.
+      * @defaultValue `1 | 0`
+      * @remarks Expects a `Integer`
       */
     var mask: Double = js.native
     
-    def set(channel: Double): Unit = js.native
+    /**
+      * Set membership to `layer`, and remove membership all other layers.
+      * @param layer An integer from 0 to 31.
+      */
+    def set(layer: Double): Unit = js.native
     
+    /**
+      * Returns true if this and the passed `layers` object have at least one layer in common.
+      * @param layers A Layers object
+      */
     def test(layers: Layers): Boolean = js.native
     
-    def toggle(channel: Double): Unit = js.native
+    /**
+      * Toggle membership of `layer`.
+      * @param layer An integer from 0 to 31.
+      */
+    def toggle(layer: Double): Unit = js.native
   }
 }

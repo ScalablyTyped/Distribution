@@ -1,5 +1,6 @@
 package typings.typescript.mod
 
+import typings.typescript.typescriptBooleans.`false`
 import typings.typescript.typescriptStrings.`non-relative`
 import typings.typescript.typescriptStrings.`project-relative`
 import typings.typescript.typescriptStrings.all
@@ -9,13 +10,17 @@ import typings.typescript.typescriptStrings.double
 import typings.typescript.typescriptStrings.index
 import typings.typescript.typescriptStrings.js_
 import typings.typescript.typescriptStrings.literals
+import typings.typescript.typescriptStrings.lower
 import typings.typescript.typescriptStrings.minimal
 import typings.typescript.typescriptStrings.none
 import typings.typescript.typescriptStrings.off
 import typings.typescript.typescriptStrings.on
+import typings.typescript.typescriptStrings.ordinal
 import typings.typescript.typescriptStrings.relative
 import typings.typescript.typescriptStrings.shortest
 import typings.typescript.typescriptStrings.single
+import typings.typescript.typescriptStrings.unicode
+import typings.typescript.typescriptStrings.upper
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -70,6 +75,18 @@ trait UserPreferences extends StObject {
   val includePackageJsonAutoImports: js.UndefOr[auto | on | off] = js.undefined
   
   val jsxAttributeCompletionStyle: js.UndefOr[auto | braces | none] = js.undefined
+  
+  val organizeImportsAccentCollation: js.UndefOr[Boolean] = js.undefined
+  
+  val organizeImportsCaseFirst: js.UndefOr[upper | lower | `false`] = js.undefined
+  
+  val organizeImportsCollation: js.UndefOr[ordinal | unicode] = js.undefined
+  
+  val organizeImportsIgnoreCase: js.UndefOr[auto | Boolean] = js.undefined
+  
+  val organizeImportsLocale: js.UndefOr[java.lang.String] = js.undefined
+  
+  val organizeImportsNumericCollation: js.UndefOr[Boolean] = js.undefined
   
   val providePrefixAndSuffixTextForRename: js.UndefOr[Boolean] = js.undefined
   
@@ -186,6 +203,30 @@ object UserPreferences {
     inline def setJsxAttributeCompletionStyle(value: auto | braces | none): Self = StObject.set(x, "jsxAttributeCompletionStyle", value.asInstanceOf[js.Any])
     
     inline def setJsxAttributeCompletionStyleUndefined: Self = StObject.set(x, "jsxAttributeCompletionStyle", js.undefined)
+    
+    inline def setOrganizeImportsAccentCollation(value: Boolean): Self = StObject.set(x, "organizeImportsAccentCollation", value.asInstanceOf[js.Any])
+    
+    inline def setOrganizeImportsAccentCollationUndefined: Self = StObject.set(x, "organizeImportsAccentCollation", js.undefined)
+    
+    inline def setOrganizeImportsCaseFirst(value: upper | lower | `false`): Self = StObject.set(x, "organizeImportsCaseFirst", value.asInstanceOf[js.Any])
+    
+    inline def setOrganizeImportsCaseFirstUndefined: Self = StObject.set(x, "organizeImportsCaseFirst", js.undefined)
+    
+    inline def setOrganizeImportsCollation(value: ordinal | unicode): Self = StObject.set(x, "organizeImportsCollation", value.asInstanceOf[js.Any])
+    
+    inline def setOrganizeImportsCollationUndefined: Self = StObject.set(x, "organizeImportsCollation", js.undefined)
+    
+    inline def setOrganizeImportsIgnoreCase(value: auto | Boolean): Self = StObject.set(x, "organizeImportsIgnoreCase", value.asInstanceOf[js.Any])
+    
+    inline def setOrganizeImportsIgnoreCaseUndefined: Self = StObject.set(x, "organizeImportsIgnoreCase", js.undefined)
+    
+    inline def setOrganizeImportsLocale(value: java.lang.String): Self = StObject.set(x, "organizeImportsLocale", value.asInstanceOf[js.Any])
+    
+    inline def setOrganizeImportsLocaleUndefined: Self = StObject.set(x, "organizeImportsLocale", js.undefined)
+    
+    inline def setOrganizeImportsNumericCollation(value: Boolean): Self = StObject.set(x, "organizeImportsNumericCollation", value.asInstanceOf[js.Any])
+    
+    inline def setOrganizeImportsNumericCollationUndefined: Self = StObject.set(x, "organizeImportsNumericCollation", js.undefined)
     
     inline def setProvidePrefixAndSuffixTextForRename(value: Boolean): Self = StObject.set(x, "providePrefixAndSuffixTextForRename", value.asInstanceOf[js.Any])
     

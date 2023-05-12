@@ -42,7 +42,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Sync tokens always expire after 24 hours, but may expire sooner, depending on
   * load on the service.
-  * @class
   * @param {Dispatcher} dispatcher The API dispatcher
   */
 @js.native

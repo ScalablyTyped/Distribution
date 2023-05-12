@@ -17,6 +17,16 @@ trait IpamPoolCidr extends StObject {
   var FailureReason: js.UndefOr[IpamPoolCidrFailureReason] = js.undefined
   
   /**
+    * The IPAM pool CIDR ID.
+    */
+  var IpamPoolCidrId: js.UndefOr[typings.awsSdk.clientsEc2Mod.IpamPoolCidrId] = js.undefined
+  
+  /**
+    * The netmask length of the CIDR you'd like to provision to a pool. Can be used for provisioning Amazon-provided IPv6 CIDRs to top-level pools and for provisioning CIDRs to pools with source pools. Cannot be used to provision BYOIP CIDRs to top-level pools. "NetmaskLength" or "Cidr" is required.
+    */
+  var NetmaskLength: js.UndefOr[Integer] = js.undefined
+  
+  /**
     * The state of the CIDR.
     */
   var State: js.UndefOr[IpamPoolCidrState] = js.undefined
@@ -38,6 +48,14 @@ object IpamPoolCidr {
     inline def setFailureReason(value: IpamPoolCidrFailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
     inline def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
+    
+    inline def setIpamPoolCidrId(value: IpamPoolCidrId): Self = StObject.set(x, "IpamPoolCidrId", value.asInstanceOf[js.Any])
+    
+    inline def setIpamPoolCidrIdUndefined: Self = StObject.set(x, "IpamPoolCidrId", js.undefined)
+    
+    inline def setNetmaskLength(value: Integer): Self = StObject.set(x, "NetmaskLength", value.asInstanceOf[js.Any])
+    
+    inline def setNetmaskLengthUndefined: Self = StObject.set(x, "NetmaskLength", js.undefined)
     
     inline def setState(value: IpamPoolCidrState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     

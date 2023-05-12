@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__viewport
 
-Typings are for version 2.5
+Typings are for version 5.5
 
 ## Library description:
 Viewport module for WordPress.

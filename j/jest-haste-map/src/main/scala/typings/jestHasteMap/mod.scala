@@ -469,6 +469,8 @@ object mod extends Shortcut {
     var useWatchman: js.UndefOr[Boolean] = js.undefined
     
     var watch: js.UndefOr[Boolean] = js.undefined
+    
+    var workerThreads: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -575,6 +577,10 @@ object mod extends Shortcut {
       inline def setWatch(value: Boolean): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
       
       inline def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
+      
+      inline def setWorkerThreads(value: Boolean): Self = StObject.set(x, "workerThreads", value.asInstanceOf[js.Any])
+      
+      inline def setWorkerThreadsUndefined: Self = StObject.set(x, "workerThreads", js.undefined)
     }
   }
   

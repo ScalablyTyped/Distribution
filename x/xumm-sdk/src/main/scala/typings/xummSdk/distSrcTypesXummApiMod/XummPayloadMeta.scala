@@ -18,6 +18,8 @@ trait XummPayloadMeta extends StObject {
   
   var forceAccount: js.UndefOr[Boolean] = js.undefined
   
+  var force_network: js.UndefOr[String] = js.undefined
+  
   var immutable: js.UndefOr[Boolean] = js.undefined
   
   var is_xapp: Boolean
@@ -26,7 +28,9 @@ trait XummPayloadMeta extends StObject {
   
   var opened_by_deeplink: Boolean | Null
   
-  var pathfinding: Boolean | Null
+  var pathfinding: Boolean
+  
+  var pathfinding_fallback: Boolean
   
   var pushed: Boolean
   
@@ -56,6 +60,8 @@ object XummPayloadMeta {
     expired: Boolean,
     is_xapp: Boolean,
     multisign: Boolean,
+    pathfinding: Boolean,
+    pathfinding_fallback: Boolean,
     pushed: Boolean,
     resolved: Boolean,
     resolved_destination: String,
@@ -63,7 +69,7 @@ object XummPayloadMeta {
     submit: Boolean,
     uuid: String
   ): XummPayloadMeta = {
-    val __obj = js.Dynamic.literal(app_opened = app_opened.asInstanceOf[js.Any], cancelled = cancelled.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], exists = exists.asInstanceOf[js.Any], expired = expired.asInstanceOf[js.Any], is_xapp = is_xapp.asInstanceOf[js.Any], multisign = multisign.asInstanceOf[js.Any], pushed = pushed.asInstanceOf[js.Any], resolved = resolved.asInstanceOf[js.Any], resolved_destination = resolved_destination.asInstanceOf[js.Any], signed = signed.asInstanceOf[js.Any], submit = submit.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any], opened_by_deeplink = null, pathfinding = null, return_url_app = null, return_url_web = null, signers = null)
+    val __obj = js.Dynamic.literal(app_opened = app_opened.asInstanceOf[js.Any], cancelled = cancelled.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], exists = exists.asInstanceOf[js.Any], expired = expired.asInstanceOf[js.Any], is_xapp = is_xapp.asInstanceOf[js.Any], multisign = multisign.asInstanceOf[js.Any], pathfinding = pathfinding.asInstanceOf[js.Any], pathfinding_fallback = pathfinding_fallback.asInstanceOf[js.Any], pushed = pushed.asInstanceOf[js.Any], resolved = resolved.asInstanceOf[js.Any], resolved_destination = resolved_destination.asInstanceOf[js.Any], signed = signed.asInstanceOf[js.Any], submit = submit.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any], opened_by_deeplink = null, return_url_app = null, return_url_web = null, signers = null)
     __obj.asInstanceOf[XummPayloadMeta]
   }
   
@@ -84,6 +90,10 @@ object XummPayloadMeta {
     
     inline def setForceAccountUndefined: Self = StObject.set(x, "forceAccount", js.undefined)
     
+    inline def setForce_network(value: String): Self = StObject.set(x, "force_network", value.asInstanceOf[js.Any])
+    
+    inline def setForce_networkUndefined: Self = StObject.set(x, "force_network", js.undefined)
+    
     inline def setImmutable(value: Boolean): Self = StObject.set(x, "immutable", value.asInstanceOf[js.Any])
     
     inline def setImmutableUndefined: Self = StObject.set(x, "immutable", js.undefined)
@@ -98,7 +108,7 @@ object XummPayloadMeta {
     
     inline def setPathfinding(value: Boolean): Self = StObject.set(x, "pathfinding", value.asInstanceOf[js.Any])
     
-    inline def setPathfindingNull: Self = StObject.set(x, "pathfinding", null)
+    inline def setPathfinding_fallback(value: Boolean): Self = StObject.set(x, "pathfinding_fallback", value.asInstanceOf[js.Any])
     
     inline def setPushed(value: Boolean): Self = StObject.set(x, "pushed", value.asInstanceOf[js.Any])
     

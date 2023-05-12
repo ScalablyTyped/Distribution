@@ -235,6 +235,7 @@ object sapUiLayoutSplitterMod {
       * @deprecated (since 1.21) - This method is declared as protected in order to assess the need for this
       * feature. It is declared as deprecated because the API might change in case the need for this is high
       * enough to make it part of the official Splitter interface
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Disables the resize handler for this control, this leads to an automatic resize of the contents whenever
       * the control changes its size. The resize handler is enabled in every control instance by default. For
@@ -250,6 +251,8 @@ object sapUiLayoutSplitterMod {
     ): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Disables the resizing of the Splitter contents via keyboard. This changes the Splitter bars to non-focusable
       * elements.
       */
@@ -259,6 +262,7 @@ object sapUiLayoutSplitterMod {
       * @deprecated (since 1.21) - This method is declared as protected in order to assess the need for this
       * feature. It is declared as deprecated because the API might change in case the need for this is high
       * enough to make it part of the official Splitter interface
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Disables recalculation and resize of the splitter contents while dragging the splitter bar. This means
       * that the contents are resized only once after moving the splitter bar.
@@ -269,6 +273,7 @@ object sapUiLayoutSplitterMod {
       * @deprecated (since 1.21) - This method is declared as protected in order to assess the need for this
       * feature. It is declared as deprecated because the API might change in case the need for this is high
       * enough to make it part of the official Splitter interface
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Enables the resize handler for this control, this leads to an automatic resize of the contents whenever
       * the control changes its size. The resize handler is enabled in every control instance by default. For
@@ -283,6 +288,8 @@ object sapUiLayoutSplitterMod {
     ): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Enables the resizing of the Splitter contents via keyboard. This makes the Splitter bars focusable elements.
       */
     def enableKeyboardSupport(): Unit = js.native
@@ -291,6 +298,7 @@ object sapUiLayoutSplitterMod {
       * @deprecated (since 1.21) - This method is declared as protected in order to assess the need for this
       * feature. It is declared as deprecated because the API might change in case the need for this is high
       * enough to make it part of the official Splitter interface
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Enables recalculation and resize of the splitter contents while dragging the splitter bar. This means
       * that the contents are resized several times per second when moving the splitter bar.
@@ -298,6 +306,8 @@ object sapUiLayoutSplitterMod {
     def enableLiveResize(): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:resize resize} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -312,6 +322,7 @@ object sapUiLayoutSplitterMod {
       * @deprecated (since 1.21) - This method is declared as protected in order to assess the need for this
       * feature. It is declared as deprecated because the API might change in case the need for this is high
       * enough to make it part of the official Splitter interface
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Returns the current actual content sizes as pixel value - these values can change with every resize.
       *

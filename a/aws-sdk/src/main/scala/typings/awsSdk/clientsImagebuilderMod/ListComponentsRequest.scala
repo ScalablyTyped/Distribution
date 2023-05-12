@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListComponentsRequest extends StObject {
   
   /**
-    * Returns the list of component build versions for the specified name.
+    * Returns the list of components for the specified name.
     */
   var byName: js.UndefOr[Boolean] = js.undefined
   
@@ -27,7 +27,7 @@ trait ListComponentsRequest extends StObject {
   var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
-    * The owner defines which components you want to list. By default, this request will only show components owned by your account. You can use this field to specify if you want to view components owned by yourself, by Amazon, or those components that have been shared with you by other customers.
+    * Filters results based on the type of owner for the component. By default, this request returns a list of components that your account owns. To see results for other types of owners, you can specify components that Amazon manages, third party components, or components that other accounts have shared with you.
     */
   var owner: js.UndefOr[Ownership] = js.undefined
 }

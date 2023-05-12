@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MethodSignature
   extends StObject
      with SignatureDeclarationBase
+     with LocalsContainer
      with HasJSDoc
      with HasModifiers
      with SignatureDeclaration {
@@ -22,14 +23,13 @@ trait MethodSignature
   @JSName("kind")
   val kind_MethodSignature: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.SyntaxKind.MethodSignature = js.native
   
-  @JSName("modifiers")
-  val modifiers_MethodSignature: js.UndefOr[NodeArray[Modifier]] = js.native
+  val modifiers: js.UndefOr[NodeArray[Modifier]] = js.native
   
   @JSName("name")
   val name_MethodSignature: PropertyName = js.native
   
   @JSName("parent")
-  val parent_MethodSignature: ObjectTypeDeclaration = js.native
+  val parent_MethodSignature: TypeLiteralNode | InterfaceDeclaration = js.native
   
   val questionToken: js.UndefOr[QuestionToken] = js.native
 }

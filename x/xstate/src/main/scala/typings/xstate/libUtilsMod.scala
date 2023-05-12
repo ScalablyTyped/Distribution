@@ -4,14 +4,16 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Partial
 import typings.std.Record
 import typings.xstate.anon.Context
-import typings.xstate.anon.`4`
+import typings.xstate.anon.`5`
 import typings.xstate.libStateMod.State
 import typings.xstate.libStateNodeMod.StateNode
 import typings.xstate.libTypegenTypesMod.TypegenDisabled
 import typings.xstate.libTypesMod.Action
+import typings.xstate.libTypesMod.ActionObject
 import typings.xstate.libTypesMod.ActionType
 import typings.xstate.libTypesMod.ActionTypes.NullEvent
 import typings.xstate.libTypesMod.AssignAction
+import typings.xstate.libTypesMod.BaseActionObject
 import typings.xstate.libTypesMod.Condition
 import typings.xstate.libTypesMod.ConditionPredicate
 import typings.xstate.libTypesMod.EventData
@@ -53,7 +55,7 @@ object libUtilsMod {
   
   inline def flatten[T](array: js.Array[T | js.Array[T]]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
-  inline def getActionType(action: Action[Any, Any]): ActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("getActionType")(action.asInstanceOf[js.Any]).asInstanceOf[ActionType]
+  inline def getActionType(action: Action[Any, Any, Any]): ActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("getActionType")(action.asInstanceOf[js.Any]).asInstanceOf[ActionType]
   
   inline def getEventType[TEvent /* <: EventObject */](event: typings.xstate.libTypesMod.Event[TEvent]): /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventType")(event.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any]
   
@@ -72,6 +74,8 @@ object libUtilsMod {
   inline def isObservable[T](value: Any): /* is xstate.xstate/lib/types.Subscribable<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObservable")(value.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/types.Subscribable<T> */ Boolean]
   
   inline def isPromiseLike(value: Any): /* is std.PromiseLike<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromiseLike")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.PromiseLike<any> */ Boolean]
+  
+  inline def isRaisableAction[TContext, TExpressionEvent /* <: EventObject */, TEvent /* <: EventObject */](action: ActionObject[TContext, TExpressionEvent, TEvent, BaseActionObject]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRaisableAction")(action.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isStateLike(state: Any): /* is xstate.xstate/lib/types.StateLike<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStateLike")(state.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/types.StateLike<any> */ Boolean]
   
@@ -209,30 +213,34 @@ object libUtilsMod {
   inline def toTransitionConfigArray[TContext, TEvent /* <: EventObject */](
     event: NullEvent,
     configLike: SingleOrArray[
-      (TransitionConfig[TContext, TEvent]) | (TransitionConfigTarget[TContext, TEvent])
+      (TransitionConfig[TContext, TEvent, TEvent]) | (TransitionConfigTarget[TContext, TEvent])
     ]
-  ): js.Array[(TransitionConfig[TContext, TEvent]) & `4`[TEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toTransitionConfigArray")(event.asInstanceOf[js.Any], configLike.asInstanceOf[js.Any])).asInstanceOf[js.Array[(TransitionConfig[TContext, TEvent]) & `4`[TEvent]]]
+  ): js.Array[(TransitionConfig[TContext, TEvent, TEvent]) & `5`[TEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toTransitionConfigArray")(event.asInstanceOf[js.Any], configLike.asInstanceOf[js.Any])).asInstanceOf[js.Array[(TransitionConfig[TContext, TEvent, TEvent]) & `5`[TEvent]]]
   inline def toTransitionConfigArray[TContext, TEvent /* <: EventObject */](
     event: Asterisk,
     configLike: SingleOrArray[
-      (TransitionConfig[TContext, TEvent]) | (TransitionConfigTarget[TContext, TEvent])
+      (TransitionConfig[TContext, TEvent, TEvent]) | (TransitionConfigTarget[TContext, TEvent])
     ]
-  ): js.Array[(TransitionConfig[TContext, TEvent]) & `4`[TEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toTransitionConfigArray")(event.asInstanceOf[js.Any], configLike.asInstanceOf[js.Any])).asInstanceOf[js.Array[(TransitionConfig[TContext, TEvent]) & `4`[TEvent]]]
+  ): js.Array[(TransitionConfig[TContext, TEvent, TEvent]) & `5`[TEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toTransitionConfigArray")(event.asInstanceOf[js.Any], configLike.asInstanceOf[js.Any])).asInstanceOf[js.Array[(TransitionConfig[TContext, TEvent, TEvent]) & `5`[TEvent]]]
   
   inline def toTransitionConfigArray_type[TContext, TEvent /* <: EventObject */](
     event: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any,
     configLike: SingleOrArray[
-      (TransitionConfig[TContext, TEvent]) | (TransitionConfigTarget[TContext, TEvent])
+      (TransitionConfig[TContext, TEvent, TEvent]) | (TransitionConfigTarget[TContext, TEvent])
     ]
-  ): js.Array[(TransitionConfig[TContext, TEvent]) & `4`[TEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toTransitionConfigArray")(event.asInstanceOf[js.Any], configLike.asInstanceOf[js.Any])).asInstanceOf[js.Array[(TransitionConfig[TContext, TEvent]) & `4`[TEvent]]]
+  ): js.Array[(TransitionConfig[TContext, TEvent, TEvent]) & `5`[TEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toTransitionConfigArray")(event.asInstanceOf[js.Any], configLike.asInstanceOf[js.Any])).asInstanceOf[js.Array[(TransitionConfig[TContext, TEvent, TEvent]) & `5`[TEvent]]]
   
   inline def uniqueId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uniqueId")().asInstanceOf[String]
   
-  inline def updateContext[TContext, TEvent /* <: EventObject */](context: TContext, _event: Event[TEvent], assignActions: js.Array[AssignAction[TContext, TEvent]]): TContext = (^.asInstanceOf[js.Dynamic].applyDynamic("updateContext")(context.asInstanceOf[js.Any], _event.asInstanceOf[js.Any], assignActions.asInstanceOf[js.Any])).asInstanceOf[TContext]
   inline def updateContext[TContext, TEvent /* <: EventObject */](
     context: TContext,
     _event: Event[TEvent],
-    assignActions: js.Array[AssignAction[TContext, TEvent]],
+    assignActions: js.Array[AssignAction[TContext, TEvent, TEvent]]
+  ): TContext = (^.asInstanceOf[js.Dynamic].applyDynamic("updateContext")(context.asInstanceOf[js.Any], _event.asInstanceOf[js.Any], assignActions.asInstanceOf[js.Any])).asInstanceOf[TContext]
+  inline def updateContext[TContext, TEvent /* <: EventObject */](
+    context: TContext,
+    _event: Event[TEvent],
+    assignActions: js.Array[AssignAction[TContext, TEvent, TEvent]],
     state: State[TContext, TEvent, Any, Context[TContext], TypegenDisabled]
   ): TContext = (^.asInstanceOf[js.Dynamic].applyDynamic("updateContext")(context.asInstanceOf[js.Any], _event.asInstanceOf[js.Any], assignActions.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[TContext]
   

@@ -2,6 +2,7 @@ package typings.konva
 
 import typings.konva.anon.HeightNumber
 import typings.konva.anon.LastInParagraph
+import typings.konva.libContextMod.Context
 import typings.konva.libShapeMod.Shape
 import typings.konva.libShapeMod.ShapeConfig
 import typings.konva.libTypesMod.GetSet
@@ -20,13 +21,13 @@ object libShapesTextMod {
   open class Text () extends Shape[TextConfig] {
     def this(config: TextConfig) = this()
     
-    def _addTextLine(line: Any): Double = js.native
+    def _addTextLine(line: String): Double = js.native
     
     def _getContextFont(): String = js.native
     
-    def _getTextWidth(text: Any): Any = js.native
+    def _getTextWidth(text: String): Double = js.native
     
-    def _hitFunc(context: Any): Unit = js.native
+    def _hitFunc(context: Context): Unit = js.native
     
     var _partialText: String = js.native
     
@@ -34,7 +35,7 @@ object libShapesTextMod {
     
     var _partialTextY: Double = js.native
     
-    def _sceneFunc(context: Any): Unit = js.native
+    def _sceneFunc(context: Context): Unit = js.native
     
     def _setTextData(): Unit = js.native
     
@@ -99,7 +100,7 @@ object libShapesTextMod {
     @JSName("padding")
     var padding_Original: GetSet[Double, this.type] = js.native
     
-    def setText(text: Any): this.type = js.native
+    def setText(text: String): this.type = js.native
     
     def text(): String = js.native
     def text(v: String): this.type = js.native

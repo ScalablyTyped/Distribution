@@ -24,6 +24,7 @@ import typings.carbonComponentsReact.carbonComponentsReactStrings.br
 import typings.carbonComponentsReact.carbonComponentsReactStrings.button
 import typings.carbonComponentsReact.carbonComponentsReactStrings.canvas
 import typings.carbonComponentsReact.carbonComponentsReactStrings.caption
+import typings.carbonComponentsReact.carbonComponentsReactStrings.center
 import typings.carbonComponentsReact.carbonComponentsReactStrings.circle
 import typings.carbonComponentsReact.carbonComponentsReactStrings.cite
 import typings.carbonComponentsReact.carbonComponentsReactStrings.clipPath
@@ -250,6 +251,8 @@ object libComponentsTextMod {
   inline def Text_canvas(props: TextIntrinsicProps[canvas]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Text")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Text_caption(props: TextIntrinsicProps[caption]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Text")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Text_center(props: TextIntrinsicProps[center]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Text")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Text_circle(props: TextIntrinsicProps[circle]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Text")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   

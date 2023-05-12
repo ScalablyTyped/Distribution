@@ -89,14 +89,17 @@ object distCallbacksMod {
     
     @JSImport("@tensorflow/tfjs-node/dist/callbacks", "progressBarHelper.log")
     @js.native
-    def log: js.Function = js.native
-    inline def log_=(x: js.Function): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("log")(x.asInstanceOf[js.Any])
+    def log: LogFunction = js.native
+    inline def log(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def log_=(x: LogFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("log")(x.asInstanceOf[js.Any])
   }
   
   inline def tensorBoard(): TensorBoardCallback = ^.asInstanceOf[js.Dynamic].applyDynamic("tensorBoard")().asInstanceOf[TensorBoardCallback]
   inline def tensorBoard(logdir: String): TensorBoardCallback = ^.asInstanceOf[js.Dynamic].applyDynamic("tensorBoard")(logdir.asInstanceOf[js.Any]).asInstanceOf[TensorBoardCallback]
   inline def tensorBoard(logdir: String, args: TensorBoardCallbackArgs): TensorBoardCallback = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorBoard")(logdir.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[TensorBoardCallback]
   inline def tensorBoard(logdir: Unit, args: TensorBoardCallbackArgs): TensorBoardCallback = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorBoard")(logdir.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[TensorBoardCallback]
+  
+  type LogFunction = js.Function1[/* message */ String, Unit]
   
   trait TensorBoardCallbackArgs extends StObject {
     

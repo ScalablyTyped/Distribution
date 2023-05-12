@@ -23,8 +23,6 @@ open class NgPlural protected () extends StObject {
   
   /* private */ var _localization: Any = js.native
   
-  /* private */ var _switchValue: Any = js.native
-  
   /* private */ var _updateView: Any = js.native
   
   def addCase(value: String, switchView: SwitchView): Unit = js.native
@@ -48,7 +46,8 @@ object NgPlural {
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `true`
+    `true`, 
+    scala.Nothing
   ] = js.native
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
@@ -59,7 +58,8 @@ object NgPlural {
       js.Object, 
       scala.Nothing, 
       scala.Nothing, 
-      `true`
+      `true`, 
+      scala.Nothing
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
   

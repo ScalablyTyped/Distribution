@@ -16,7 +16,6 @@ import typings.highcharts.mod.CSSObject
 import typings.highcharts.mod.ChartCallbackFunction
 import typings.highcharts.mod.Chart_
 import typings.highcharts.mod.Class
-import typings.highcharts.mod.ColorAxisOptions
 import typings.highcharts.mod.ColorType
 import typings.highcharts.mod.Color_
 import typings.highcharts.mod.Dictionary
@@ -59,20 +58,20 @@ object anon {
       * potentially harmful content from the chart configuration before adding to
       * the DOM.
       */
-    var allowedAttributes: Any = js.native
+    var allowedAttributes: js.Array[String] = js.native
     
     /**
       * The list of allowed references for referring attributes like `href` and
       * `src`. Attribute values will only be allowed if they start with one of
       * these strings.
       */
-    var allowedReferences: Any = js.native
+    var allowedReferences: js.Array[String] = js.native
     
     /**
       * The list of allowed SVG or HTML tags, used for sanitizing potentially
       * harmful content from the chart configuration before adding to the DOM.
       */
-    var allowedTags: Any = js.native
+    var allowedTags: js.Array[String] = js.native
     
     /**
       * Allow all custom SVG and HTML attributes, references and tags (together
@@ -134,12 +133,6 @@ object anon {
     var Chart: Instantiable1[/* options */ Options, Chart_] = js.native
     
     var Color: TypeofColor = js.native
-    
-    var ColorAxis: Instantiable2[
-        /* chart */ Chart_, 
-        /* userOptions */ ColorAxisOptions, 
-        typings.highcharts.mod.ColorAxis
-      ] = js.native
     
     var Legend: Instantiable2[/* chart */ Chart_, /* options */ LegendOptions, typings.highcharts.mod.Legend] = js.native
     
@@ -220,6 +213,8 @@ object anon {
     def attr(elem: SVGDOMElement, keyOrAttribs: SVGAttributes, value: Double): js.UndefOr[String | Null] = js.native
     
     def callout(): Unit = js.native
+    
+    def centerImage(): Unit = js.native
     
     def chart(options: Options): Chart_ = js.native
     def chart(options: Options, callback: ChartCallbackFunction): Chart_ = js.native
@@ -420,6 +415,8 @@ object anon {
     def pad(number: Double, length: Unit, padder: String): String = js.native
     
     def pick[T](items: (js.UndefOr[T | Null])*): T = js.native
+    
+    def pushUnique(array: js.Array[Any], item: Any): Boolean = js.native
     
     def reduce(arr: js.Array[Any], fn: js.Function, initialValue: Any): Any = js.native
     

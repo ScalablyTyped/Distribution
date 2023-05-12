@@ -10,7 +10,7 @@ trait UnderscoreNode
      with FormatNode
      with Node {
   
-  var contents: js.Array[FragmentNode]
+  var contents: String
   
   var location: LocationRange
   
@@ -18,7 +18,7 @@ trait UnderscoreNode
 }
 object UnderscoreNode {
   
-  inline def apply(contents: js.Array[FragmentNode], location: LocationRange): UnderscoreNode = {
+  inline def apply(contents: String, location: LocationRange): UnderscoreNode = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "underscore")
     __obj.asInstanceOf[UnderscoreNode]
   }
@@ -26,9 +26,7 @@ object UnderscoreNode {
   @scala.inline
   implicit open class MutableBuilder[Self <: UnderscoreNode] (val x: Self) extends AnyVal {
     
-    inline def setContents(value: js.Array[FragmentNode]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
-    
-    inline def setContentsVarargs(value: FragmentNode*): Self = StObject.set(x, "contents", js.Array(value*))
+    inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
     inline def setLocation(value: LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

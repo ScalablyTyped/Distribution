@@ -220,6 +220,11 @@ object BrowserAuthError {
   inline def createSilentPromptValueError(givenPrompt: String): typings.azureMsalBrowser.distErrorBrowserAuthErrorMod.BrowserAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createSilentPromptValueError")(givenPrompt.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalBrowser.distErrorBrowserAuthErrorMod.BrowserAuthError]
   
   /**
+    * Create an error when both authorization code and native account ID are provided
+    */
+  inline def createSpaCodeAndNativeAccountIdPresentError(): typings.azureMsalBrowser.distErrorBrowserAuthErrorMod.BrowserAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createSpaCodeAndNativeAccountIdPresentError")().asInstanceOf[typings.azureMsalBrowser.distErrorBrowserAuthErrorMod.BrowserAuthError]
+  
+  /**
     * Creates an error thrown when the state value in the hash does not match the interaction type of the API attempting to consume it.
     */
   inline def createStateInteractionTypeMismatchError(): typings.azureMsalBrowser.distErrorBrowserAuthErrorMod.BrowserAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createStateInteractionTypeMismatchError")().asInstanceOf[typings.azureMsalBrowser.distErrorBrowserAuthErrorMod.BrowserAuthError]

@@ -3,6 +3,9 @@ package typings.std.global
 import typings.std.AddEventListenerOptions
 import typings.std.EventListenerOptions
 import typings.std.EventListenerOrEventListenerObject
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,10 +52,6 @@ open class SVGMarkerElement ()
   /* standard dom */
   /* CompleteClass */
   var ariaColIndex: java.lang.String | Null = js.native
-  
-  /* standard dom */
-  /* CompleteClass */
-  var ariaColIndexText: java.lang.String | Null = js.native
   
   /* standard dom */
   /* CompleteClass */
@@ -148,10 +147,6 @@ open class SVGMarkerElement ()
   
   /* standard dom */
   /* CompleteClass */
-  var ariaRowIndexText: java.lang.String | Null = js.native
-  
-  /* standard dom */
-  /* CompleteClass */
   var ariaRowSpan: java.lang.String | Null = js.native
   
   /* standard dom */
@@ -232,30 +227,30 @@ object SVGMarkerElement {
   /* standard dom */
   @JSGlobal("SVGMarkerElement.SVG_MARKERUNITS_STROKEWIDTH")
   @js.native
-  val SVG_MARKERUNITS_STROKEWIDTH: Double = js.native
+  val SVG_MARKERUNITS_STROKEWIDTH: `2` = js.native
   
   /* standard dom */
   @JSGlobal("SVGMarkerElement.SVG_MARKERUNITS_UNKNOWN")
   @js.native
-  val SVG_MARKERUNITS_UNKNOWN: Double = js.native
+  val SVG_MARKERUNITS_UNKNOWN: `0` = js.native
   
   /* standard dom */
   @JSGlobal("SVGMarkerElement.SVG_MARKERUNITS_USERSPACEONUSE")
   @js.native
-  val SVG_MARKERUNITS_USERSPACEONUSE: Double = js.native
+  val SVG_MARKERUNITS_USERSPACEONUSE: `1` = js.native
   
   /* standard dom */
   @JSGlobal("SVGMarkerElement.SVG_MARKER_ORIENT_ANGLE")
   @js.native
-  val SVG_MARKER_ORIENT_ANGLE: Double = js.native
+  val SVG_MARKER_ORIENT_ANGLE: `2` = js.native
   
   /* standard dom */
   @JSGlobal("SVGMarkerElement.SVG_MARKER_ORIENT_AUTO")
   @js.native
-  val SVG_MARKER_ORIENT_AUTO: Double = js.native
+  val SVG_MARKER_ORIENT_AUTO: `1` = js.native
   
   /* standard dom */
   @JSGlobal("SVGMarkerElement.SVG_MARKER_ORIENT_UNKNOWN")
   @js.native
-  val SVG_MARKER_ORIENT_UNKNOWN: Double = js.native
+  val SVG_MARKER_ORIENT_UNKNOWN: `0` = js.native
 }

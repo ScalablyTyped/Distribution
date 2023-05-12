@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListComponentsOutput extends StObject {
   
   /**
-    * 
+    * List of components registered with AWS System Manager for SAP.
     */
   var Components: js.UndefOr[ComponentSummaryList] = js.undefined
   
   /**
-    * 
+    * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
     */
   var NextToken: js.UndefOr[typings.awsSdk.clientsSsmsapMod.NextToken] = js.undefined
 }

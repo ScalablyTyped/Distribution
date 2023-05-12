@@ -2,18 +2,22 @@ package typings.angularCompilerCli
 
 import typings.angularCompiler.mod.ParsedHostBindings
 import typings.angularCompiler.mod.R3QueryMetadata
+import typings.angularCompilerCli.anon.ClassDeclarationDeclarati
+import typings.angularCompilerCli.anon.ClassDeclarationDeclaratiEnd
+import typings.angularCompilerCli.srcNgtscAnnotationsCommonMod.InjectableClassRegistry
+import typings.angularCompilerCli.srcNgtscAnnotationsCommonSrcReferencesRegistryMod.ReferencesRegistry
+import typings.angularCompilerCli.srcNgtscImportsMod.ReferenceEmitter
 import typings.angularCompilerCli.srcNgtscIncrementalSemanticGraphMod.SemanticDepGraphUpdater
 import typings.angularCompilerCli.srcNgtscIncrementalSemanticGraphSrcTypeParametersMod.SemanticTypeParameter
 import typings.angularCompilerCli.srcNgtscMetadataMod.ClassPropertyMapping
-import typings.angularCompilerCli.srcNgtscMetadataMod.InjectableClassRegistry
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.DirectiveTypeCheckMeta
+import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.InputMapping
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.MetadataReader
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.MetadataRegistry
+import typings.angularCompilerCli.srcNgtscMetadataSrcPropertyMappingMod.InputOrOutput
 import typings.angularCompilerCli.srcNgtscPartialEvaluatorMod.PartialEvaluator
 import typings.angularCompilerCli.srcNgtscPerfSrcApiMod.PerfRecorder
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassMember
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.Decorator
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ReflectionHost
 import typings.angularCompilerCli.srcNgtscScopeMod.LocalModuleScopeRegistry
@@ -42,10 +46,12 @@ object srcNgtscAnnotationsDirectiveMod {
       scopeRegistry: LocalModuleScopeRegistry,
       metaReader: MetadataReader,
       injectableRegistry: InjectableClassRegistry,
+      refEmitter: ReferenceEmitter,
+      referencesRegistry: ReferencesRegistry,
       isCore: Boolean,
+      strictCtorDeps: Boolean,
       semanticDepGraphUpdater: Null,
       annotateForClosureCompiler: Boolean,
-      compileUndecoratedClassesWithAngularFeatures: Boolean,
       perf: PerfRecorder
     ) = this()
     def this(
@@ -55,10 +61,12 @@ object srcNgtscAnnotationsDirectiveMod {
       scopeRegistry: LocalModuleScopeRegistry,
       metaReader: MetadataReader,
       injectableRegistry: InjectableClassRegistry,
+      refEmitter: ReferenceEmitter,
+      referencesRegistry: ReferencesRegistry,
       isCore: Boolean,
+      strictCtorDeps: Boolean,
       semanticDepGraphUpdater: SemanticDepGraphUpdater,
       annotateForClosureCompiler: Boolean,
-      compileUndecoratedClassesWithAngularFeatures: Boolean,
       perf: PerfRecorder
     ) = this()
   }
@@ -68,69 +76,69 @@ object srcNgtscAnnotationsDirectiveMod {
   open class DirectiveSymbol protected ()
     extends typings.angularCompilerCli.srcNgtscAnnotationsDirectiveSrcSymbolMod.DirectiveSymbol {
     def this(
-      decl: ClassDeclaration[DeclarationNode],
+      decl: ClassDeclarationDeclaratiEnd,
       selector: String,
-      inputs: ClassPropertyMapping,
-      outputs: ClassPropertyMapping,
+      inputs: ClassPropertyMapping[InputMapping],
+      outputs: ClassPropertyMapping[InputOrOutput],
       exportAs: js.Array[String],
       typeCheckMeta: DirectiveTypeCheckMeta
     ) = this()
     def this(
-      decl: ClassDeclaration[DeclarationNode],
+      decl: ClassDeclarationDeclaratiEnd,
       selector: String,
-      inputs: ClassPropertyMapping,
-      outputs: ClassPropertyMapping,
+      inputs: ClassPropertyMapping[InputMapping],
+      outputs: ClassPropertyMapping[InputOrOutput],
       exportAs: Null,
       typeCheckMeta: DirectiveTypeCheckMeta
     ) = this()
     def this(
-      decl: ClassDeclaration[DeclarationNode],
+      decl: ClassDeclarationDeclaratiEnd,
       selector: Null,
-      inputs: ClassPropertyMapping,
-      outputs: ClassPropertyMapping,
+      inputs: ClassPropertyMapping[InputMapping],
+      outputs: ClassPropertyMapping[InputOrOutput],
       exportAs: js.Array[String],
       typeCheckMeta: DirectiveTypeCheckMeta
     ) = this()
     def this(
-      decl: ClassDeclaration[DeclarationNode],
+      decl: ClassDeclarationDeclaratiEnd,
       selector: Null,
-      inputs: ClassPropertyMapping,
-      outputs: ClassPropertyMapping,
+      inputs: ClassPropertyMapping[InputMapping],
+      outputs: ClassPropertyMapping[InputOrOutput],
       exportAs: Null,
       typeCheckMeta: DirectiveTypeCheckMeta
     ) = this()
     def this(
-      decl: ClassDeclaration[DeclarationNode],
+      decl: ClassDeclarationDeclaratiEnd,
       selector: String,
-      inputs: ClassPropertyMapping,
-      outputs: ClassPropertyMapping,
+      inputs: ClassPropertyMapping[InputMapping],
+      outputs: ClassPropertyMapping[InputOrOutput],
       exportAs: js.Array[String],
       typeCheckMeta: DirectiveTypeCheckMeta,
       typeParameters: js.Array[SemanticTypeParameter]
     ) = this()
     def this(
-      decl: ClassDeclaration[DeclarationNode],
+      decl: ClassDeclarationDeclaratiEnd,
       selector: String,
-      inputs: ClassPropertyMapping,
-      outputs: ClassPropertyMapping,
+      inputs: ClassPropertyMapping[InputMapping],
+      outputs: ClassPropertyMapping[InputOrOutput],
       exportAs: Null,
       typeCheckMeta: DirectiveTypeCheckMeta,
       typeParameters: js.Array[SemanticTypeParameter]
     ) = this()
     def this(
-      decl: ClassDeclaration[DeclarationNode],
+      decl: ClassDeclarationDeclaratiEnd,
       selector: Null,
-      inputs: ClassPropertyMapping,
-      outputs: ClassPropertyMapping,
+      inputs: ClassPropertyMapping[InputMapping],
+      outputs: ClassPropertyMapping[InputOrOutput],
       exportAs: js.Array[String],
       typeCheckMeta: DirectiveTypeCheckMeta,
       typeParameters: js.Array[SemanticTypeParameter]
     ) = this()
     def this(
-      decl: ClassDeclaration[DeclarationNode],
+      decl: ClassDeclarationDeclaratiEnd,
       selector: Null,
-      inputs: ClassPropertyMapping,
-      outputs: ClassPropertyMapping,
+      inputs: ClassPropertyMapping[InputMapping],
+      outputs: ClassPropertyMapping[InputOrOutput],
       exportAs: Null,
       typeCheckMeta: DirectiveTypeCheckMeta,
       typeParameters: js.Array[SemanticTypeParameter]
@@ -138,24 +146,28 @@ object srcNgtscAnnotationsDirectiveMod {
   }
   
   inline def extractDirectiveMetadata(
-    clazz: ClassDeclaration[DeclarationNode],
+    clazz: ClassDeclarationDeclarati,
     decorator: Decorator | Null,
     reflector: ReflectionHost,
     evaluator: PartialEvaluator,
+    refEmitter: ReferenceEmitter,
+    referencesRegistry: ReferencesRegistry,
     isCore: Boolean,
     flags: HandlerFlags,
     annotateForClosureCompiler: Boolean
-  ): js.UndefOr[typings.angularCompilerCli.anon.Decorator] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractDirectiveMetadata")(clazz.asInstanceOf[js.Any], decorator.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any], evaluator.asInstanceOf[js.Any], isCore.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], annotateForClosureCompiler.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.angularCompilerCli.anon.Decorator]]
+  ): js.UndefOr[typings.angularCompilerCli.anon.Decorator] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractDirectiveMetadata")(clazz.asInstanceOf[js.Any], decorator.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any], evaluator.asInstanceOf[js.Any], refEmitter.asInstanceOf[js.Any], referencesRegistry.asInstanceOf[js.Any], isCore.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], annotateForClosureCompiler.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.angularCompilerCli.anon.Decorator]]
   inline def extractDirectiveMetadata(
-    clazz: ClassDeclaration[DeclarationNode],
+    clazz: ClassDeclarationDeclarati,
     decorator: Decorator | Null,
     reflector: ReflectionHost,
     evaluator: PartialEvaluator,
+    refEmitter: ReferenceEmitter,
+    referencesRegistry: ReferencesRegistry,
     isCore: Boolean,
     flags: HandlerFlags,
     annotateForClosureCompiler: Boolean,
     defaultSelector: String
-  ): js.UndefOr[typings.angularCompilerCli.anon.Decorator] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractDirectiveMetadata")(clazz.asInstanceOf[js.Any], decorator.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any], evaluator.asInstanceOf[js.Any], isCore.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], annotateForClosureCompiler.asInstanceOf[js.Any], defaultSelector.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.angularCompilerCli.anon.Decorator]]
+  ): js.UndefOr[typings.angularCompilerCli.anon.Decorator] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractDirectiveMetadata")(clazz.asInstanceOf[js.Any], decorator.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any], evaluator.asInstanceOf[js.Any], refEmitter.asInstanceOf[js.Any], referencesRegistry.asInstanceOf[js.Any], isCore.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], annotateForClosureCompiler.asInstanceOf[js.Any], defaultSelector.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.angularCompilerCli.anon.Decorator]]
   
   inline def extractHostBindings(members: js.Array[ClassMember], evaluator: PartialEvaluator): ParsedHostBindings = (^.asInstanceOf[js.Dynamic].applyDynamic("extractHostBindings")(members.asInstanceOf[js.Any], evaluator.asInstanceOf[js.Any])).asInstanceOf[ParsedHostBindings]
   inline def extractHostBindings(members: js.Array[ClassMember], evaluator: PartialEvaluator, coreModule: String): ParsedHostBindings = (^.asInstanceOf[js.Dynamic].applyDynamic("extractHostBindings")(members.asInstanceOf[js.Any], evaluator.asInstanceOf[js.Any], coreModule.asInstanceOf[js.Any])).asInstanceOf[ParsedHostBindings]
@@ -181,5 +193,5 @@ object srcNgtscAnnotationsDirectiveMod {
     evaluator: PartialEvaluator
   ): R3QueryMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("extractQueryMetadata")(exprNode.asInstanceOf[js.Any], name.asInstanceOf[js.Any], args.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any], evaluator.asInstanceOf[js.Any])).asInstanceOf[R3QueryMetadata]
   
-  inline def parseFieldArrayValue(directive: Map[String, Expression], field: String, evaluator: PartialEvaluator): Null | js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFieldArrayValue")(directive.asInstanceOf[js.Any], field.asInstanceOf[js.Any], evaluator.asInstanceOf[js.Any])).asInstanceOf[Null | js.Array[String]]
+  inline def parseFieldStringArrayValue(directive: Map[String, Expression], field: String, evaluator: PartialEvaluator): Null | js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFieldStringArrayValue")(directive.asInstanceOf[js.Any], field.asInstanceOf[js.Any], evaluator.asInstanceOf[js.Any])).asInstanceOf[Null | js.Array[String]]
 }

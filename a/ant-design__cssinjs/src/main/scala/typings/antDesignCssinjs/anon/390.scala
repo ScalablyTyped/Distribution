@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderRadius
+import typings.csstype.mod.Property.MinBlockSize
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `390` extends StObject {
   
   var value: js.UndefOr[
-    (BorderRadius[Double | String]) | (js.Array[
+    (MinBlockSize[Double | String]) | (js.Array[
       (Extract[
         js.UndefOr[
-          (BorderRadius[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderRadius[Double | String]]]])
+          (MinBlockSize[Double | String]) | (js.Array[NonNullable[js.UndefOr[MinBlockSize[Double | String]]]])
         ], 
         String
-      ]) | (NonNullable[js.UndefOr[BorderRadius[Double | String]]])
+      ]) | (NonNullable[js.UndefOr[MinBlockSize[Double | String]]])
     ])
   ] = js.native
 }

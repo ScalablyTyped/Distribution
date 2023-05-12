@@ -26,6 +26,13 @@ object WebXRFeatureName {
   val BACKGROUND_REMOVER: String = js.native
   
   /**
+    * The name of the depth sensing feature
+    */
+  @JSImport("babylonjs/XR/index", "WebXRFeatureName.DEPTH_SENSING")
+  @js.native
+  val DEPTH_SENSING: String = js.native
+  
+  /**
     * The name of the DOM overlay feature
     */
   @JSImport("babylonjs/XR/index", "WebXRFeatureName.DOM_OVERLAY")

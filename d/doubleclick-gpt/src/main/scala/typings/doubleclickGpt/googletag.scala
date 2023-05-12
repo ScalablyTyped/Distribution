@@ -462,7 +462,7 @@ object googletag {
     
     def getCategoryExclusions(): js.Array[String] = js.native
     
-    def getResponseInformation(): ResponseInformation = js.native
+    def getResponseInformation(): ResponseInformation | Null = js.native
     
     def getSlotElementId(): String = js.native
     

@@ -35,6 +35,66 @@ object mod {
   
   inline def NOOP(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("NOOP")().asInstanceOf[Unit]
   
+  /* Inlined std.Record<@vue/shared.@vue/shared.PatchFlags, string> */
+  object PatchFlagNames {
+    
+    @JSImport("@vue/shared", "PatchFlagNames.-1")
+    @js.native
+    val `1`: String = js.native
+    
+    @JSImport("@vue/shared", "PatchFlagNames.1024")
+    @js.native
+    val `1024`: String = js.native
+    
+    @JSImport("@vue/shared", "PatchFlagNames.128")
+    @js.native
+    val `128`: String = js.native
+    
+    @JSImport("@vue/shared", "PatchFlagNames.16")
+    @js.native
+    val `16`: String = js.native
+    
+    @JSImport("@vue/shared", "PatchFlagNames.1")
+    @js.native
+    val `1_`: String = js.native
+    
+    @JSImport("@vue/shared", "PatchFlagNames.-2")
+    @js.native
+    val `2`: String = js.native
+    
+    @JSImport("@vue/shared", "PatchFlagNames.2048")
+    @js.native
+    val `2048`: String = js.native
+    
+    @JSImport("@vue/shared", "PatchFlagNames.256")
+    @js.native
+    val `256`: String = js.native
+    
+    @JSImport("@vue/shared", "PatchFlagNames.2")
+    @js.native
+    val `2_`: String = js.native
+    
+    @JSImport("@vue/shared", "PatchFlagNames.32")
+    @js.native
+    val `32`: String = js.native
+    
+    @JSImport("@vue/shared", "PatchFlagNames.4")
+    @js.native
+    val `4`: String = js.native
+    
+    @JSImport("@vue/shared", "PatchFlagNames.512")
+    @js.native
+    val `512`: String = js.native
+    
+    @JSImport("@vue/shared", "PatchFlagNames.64")
+    @js.native
+    val `64`: String = js.native
+    
+    @JSImport("@vue/shared", "PatchFlagNames.8")
+    @js.native
+    val `8`: String = js.native
+  }
+  
   inline def camelize(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelize")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def capitalize(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("capitalize")(str.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -104,6 +164,8 @@ object mod {
   
   inline def isPromise[T](`val`: Any): /* is std.Promise<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is std.Promise<T> */ Boolean]
   
+  inline def isRegExp(`val`: Any): /* is std.RegExp */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRegExp")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is std.RegExp */ Boolean]
+  
   inline def isReservedProp(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReservedProp")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isSSRSafeAttrName(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSSRSafeAttrName")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
@@ -123,6 +185,8 @@ object mod {
   inline def looseEqual(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("looseEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def looseIndexOf(arr: js.Array[Any], `val`: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("looseIndexOf")(arr.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def looseToNumber(`val`: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("looseToNumber")(`val`.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def makeMap(str: String): js.Function1[/* key */ String, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeMap")(str.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* key */ String, Boolean]]
   inline def makeMap(str: String, expectsLowerCase: Boolean): js.Function1[/* key */ String, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeMap")(str.asInstanceOf[js.Any], expectsLowerCase.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* key */ String, Boolean]]
@@ -316,6 +380,8 @@ object mod {
       */
     inline def UNKEYED_FRAGMENT: `256` = 256.asInstanceOf[`256`]
   }
+  
+  type Prettify[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K]} */ js.Any
   
   /* Rewritten from type alias, can be one of: 
     - typings.vueShared.vueSharedInts.`1`

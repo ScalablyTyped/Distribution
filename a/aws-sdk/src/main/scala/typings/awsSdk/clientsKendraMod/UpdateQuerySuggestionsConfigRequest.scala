@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateQuerySuggestionsConfigRequest extends StObject {
   
   /**
+    * Configuration information for the document fields/attributes that you want to base query suggestions on.
+    */
+  var AttributeSuggestionsConfig: js.UndefOr[AttributeSuggestionsUpdateConfig] = js.undefined
+  
+  /**
     *  TRUE to include queries without user information (i.e. all queries, irrespective of the user), otherwise FALSE to only include queries with user information. If you pass user information to Amazon Kendra along with the queries, you can set this flag to FALSE and instruct Amazon Kendra to only consider queries with user information. If you set to FALSE, Amazon Kendra only considers queries searched at least MinimumQueryCount times across MinimumNumberOfQueryingUsers unique users for suggestions. If you set to TRUE, Amazon Kendra ignores all user information and learns from all queries.
     */
   var IncludeQueriesWithoutUserInformation: js.UndefOr[ObjectBoolean] = js.undefined
@@ -45,6 +50,10 @@ object UpdateQuerySuggestionsConfigRequest {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: UpdateQuerySuggestionsConfigRequest] (val x: Self) extends AnyVal {
+    
+    inline def setAttributeSuggestionsConfig(value: AttributeSuggestionsUpdateConfig): Self = StObject.set(x, "AttributeSuggestionsConfig", value.asInstanceOf[js.Any])
+    
+    inline def setAttributeSuggestionsConfigUndefined: Self = StObject.set(x, "AttributeSuggestionsConfig", js.undefined)
     
     inline def setIncludeQueriesWithoutUserInformation(value: ObjectBoolean): Self = StObject.set(x, "IncludeQueriesWithoutUserInformation", value.asInstanceOf[js.Any])
     

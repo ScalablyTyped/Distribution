@@ -17,7 +17,7 @@ trait UpdateMedicalVocabularyRequest extends StObject {
   var VocabularyFileUri: Uri
   
   /**
-    * The name of the custom medical vocabulary you want to update. Vocabulary names are case sensitive.
+    * The name of the custom medical vocabulary you want to update. Custom medical vocabulary names are case sensitive.
     */
   var VocabularyName: typings.awsSdk.clientsTranscribeserviceMod.VocabularyName
 }

@@ -16,6 +16,7 @@ open class Attribute protected ()
     * @param [stride=0] - How far apart, in bytes, the start of each value is. (used for interleaving data)
     * @param [start=0] - How far into the array to start reading values (used for interleaving data)
     * @param [instance=false] - Whether the geometry is instanced.
+    * @param [divisor=1] - Divisor to use when doing instanced rendering
     */
   def this(
     buffer: Double,
@@ -24,7 +25,8 @@ open class Attribute protected ()
     `type`: js.UndefOr[typings.pixiConstants.mod.TYPES],
     stride: js.UndefOr[Double],
     start: js.UndefOr[Double],
-    instance: js.UndefOr[Boolean]
+    instance: js.UndefOr[Boolean],
+    divisor: js.UndefOr[Double]
   ) = this()
 }
 /* static members */

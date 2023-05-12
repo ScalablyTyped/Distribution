@@ -1,5 +1,6 @@
 package typings.onChange
 
+import typings.onChange.anon.OptionsignoreSymbolstruep
 import typings.onChange.anon.OptionspathAsArrayfalseun
 import typings.onChange.anon.OptionspathAsArraytrue
 import typings.std.Record
@@ -112,6 +113,19 @@ object mod {
           Unit
         ]
     ): ObjectType = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any])).asInstanceOf[ObjectType]
+    // Overload that returns a string array as path when `ignoreSymbols` and `pathAsArray` options are true.
+    inline def apply[ObjectType /* <: Record[String, Any] */](
+      `object`: ObjectType,
+      onChange: js.ThisFunction4[
+          /* this */ ObjectType, 
+          /* path */ js.Array[String], 
+          /* value */ Any, 
+          /* previousValue */ Any, 
+          /* applyData */ ApplyData, 
+          Unit
+        ],
+      options: OptionsignoreSymbolstruep
+    ): ObjectType = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ObjectType]
     inline def apply[ObjectType /* <: Record[String, Any] */](
       `object`: ObjectType,
       onChange: js.ThisFunction4[
@@ -124,7 +138,7 @@ object mod {
         ],
       options: OptionspathAsArrayfalseun
     ): ObjectType = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ObjectType]
-    // Overload that returns an Array as path when `pathAsArray` option is true.
+    // Overload that returns an array as path when `pathAsArray` option is true.
     inline def apply[ObjectType /* <: Record[String, Any] */](
       `object`: ObjectType,
       onChange: js.ThisFunction4[

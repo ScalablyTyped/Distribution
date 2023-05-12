@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "just-extend"
-version := "6.1.1-9c1a00"
+version := "6.2.0-0711e8"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -51,6 +51,7 @@ trait JQuery_[TElement]
   
   /**
     * Extension function to the jQuery.fn which identifies SAPUI5 controls in the given jQuery context.
+    * @deprecated since 1.106, use sap.ui.core.Element.closestTo instead.
     */
   def control(): js.Array[default] = js.native
   def control(
@@ -61,6 +62,7 @@ trait JQuery_[TElement]
   ): js.Array[default] = js.native
   /**
     * Extension function to the jQuery.fn which identifies SAPUI5 controls in the given jQuery context.
+    * @deprecated since 1.106, use sap.ui.core.Element.closestTo instead.
     */
   def control(/**
     * Parameter to return the control instance at the given index in the array.

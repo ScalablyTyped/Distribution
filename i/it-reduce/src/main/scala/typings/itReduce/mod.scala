@@ -13,4 +13,6 @@ object mod {
   
   inline def default[T, V](source: js.Iterable[T], func: js.Function2[/* acc */ V, /* curr */ T, V], init: V): js.Promise[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], func.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[V]]
   inline def default[T, V](source: AsyncIterable[T], func: js.Function2[/* acc */ V, /* curr */ T, V], init: V): js.Promise[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], func.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[V]]
+  
+  inline def default_TV_V[T, V](source: js.Iterable[T], func: js.Function2[/* acc */ V, /* curr */ T, V], init: V): V = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], func.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[V]
 }

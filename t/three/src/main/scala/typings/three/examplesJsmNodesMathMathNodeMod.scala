@@ -20,7 +20,6 @@ import typings.three.threeStrings.faceforward
 import typings.three.threeStrings.floor
 import typings.three.threeStrings.fract
 import typings.three.threeStrings.inversesqrt
-import typings.three.threeStrings.invert
 import typings.three.threeStrings.length
 import typings.three.threeStrings.log
 import typings.three.threeStrings.log2
@@ -29,6 +28,7 @@ import typings.three.threeStrings.min
 import typings.three.threeStrings.mix
 import typings.three.threeStrings.negate
 import typings.three.threeStrings.normalize
+import typings.three.threeStrings.oneMinus
 import typings.three.threeStrings.pow
 import typings.three.threeStrings.radians
 import typings.three.threeStrings.reciprocal
@@ -174,11 +174,6 @@ object examplesJsmNodesMathMathNodeMod {
     def INVERSE_SQRT: inversesqrt = js.native
     inline def INVERSE_SQRT_=(x: inversesqrt): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVERSE_SQRT")(x.asInstanceOf[js.Any])
     
-    @JSImport("three/examples/jsm/nodes/math/MathNode", "default.INVERT")
-    @js.native
-    def INVERT: invert = js.native
-    inline def INVERT_=(x: invert): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVERT")(x.asInstanceOf[js.Any])
-    
     @JSImport("three/examples/jsm/nodes/math/MathNode", "default.LENGTH")
     @js.native
     def LENGTH: length = js.native
@@ -225,6 +220,11 @@ object examplesJsmNodesMathMathNodeMod {
     @js.native
     def NORMALIZE: normalize = js.native
     inline def NORMALIZE_=(x: normalize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NORMALIZE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("three/examples/jsm/nodes/math/MathNode", "default.ONE_MINUS")
+    @js.native
+    def ONE_MINUS: oneMinus = js.native
+    inline def ONE_MINUS_=(x: oneMinus): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE_MINUS")(x.asInstanceOf[js.Any])
     
     @JSImport("three/examples/jsm/nodes/math/MathNode", "default.POW")
     @js.native

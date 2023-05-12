@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "canonicalize" : "1.0.8"
+      "canonicalize" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "canonicalize" : "1.0.8"
+      "canonicalize" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

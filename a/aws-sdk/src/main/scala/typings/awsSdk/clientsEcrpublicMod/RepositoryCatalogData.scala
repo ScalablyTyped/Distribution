@@ -22,12 +22,12 @@ trait RepositoryCatalogData extends StObject {
   var description: js.UndefOr[RepositoryDescription] = js.undefined
   
   /**
-    * The URL containing the logo associated with the repository.
+    * The URL that contains the logo that's associated with the repository.
     */
   var logoUrl: js.UndefOr[ResourceUrl] = js.undefined
   
   /**
-    * Whether or not the repository is certified by AWS Marketplace.
+    * Indicates whether the repository is certified by Amazon Web Services Marketplace.
     */
   var marketplaceCertified: js.UndefOr[MarketplaceCertified] = js.undefined
   

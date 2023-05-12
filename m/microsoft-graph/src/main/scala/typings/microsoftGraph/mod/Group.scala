@@ -25,7 +25,7 @@ trait Group
   
   /**
     * The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group. Returned only on
-    * $select. Read-only.
+    * $select.
     */
   var assignedLabels: js.UndefOr[NullableOption[js.Array[AssignedLabel]]] = js.undefined
   
@@ -33,7 +33,7 @@ trait Group
   var assignedLicenses: js.UndefOr[NullableOption[js.Array[AssignedLicense]]] = js.undefined
   
   /**
-    * Indicates if new members added to the group will be auto-subscribed to receive email notifications. You can set ,this
+    * Indicates if new members added to the group will be auto-subscribed to receive email notifications. You can set this
     * property in a PATCH request for the group; do not set it in the initial POST request that creates the group. Default
     * value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
     */
@@ -58,8 +58,7 @@ trait Group
   /**
     * Timestamp of when the group was created. The value cannot be modified and is automatically populated when the group is
     * created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For
-    * example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Supports $filter (eq, ne, not, ge,
-    * le, in). Read-only.
+    * example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Read-only.
     */
   var createdDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
@@ -139,11 +138,12 @@ trait Group
   
   /**
     * Indicates whether this group can be assigned to an Azure Active Directory role or not. Optional. This property can only
-    * be set while creating the group and is immutable. If set to true, the securityEnabled property must also be set to true
-    * and the group cannot be a dynamic group (that is, groupTypes cannot contain DynamicMembership). Only callers in Global
-    * administrator and Privileged role administrator roles can set this property. The caller must be assigned the
-    * RoleManagement.ReadWrite.Directory permission to set this property or update the membership of such groups. For more,
-    * see Using a group to manage Azure AD role assignmentsReturned by default. Supports $filter (eq, ne, not).
+    * be set while creating the group and is immutable. If set to true, the securityEnabled property must also be set to
+    * true, visibility must be Hidden, and the group cannot be a dynamic group (that is, groupTypes cannot contain
+    * DynamicMembership). Only callers in Global Administrator and Privileged Role Administrator roles can set this property.
+    * The caller must also be assigned the RoleManagement.ReadWrite.Directory permission to set this property or update the
+    * membership of such groups. For more, see Using a group to manage Azure AD role assignmentsUsing this feature requires a
+    * Azure AD Premium P1 license. Returned by default. Supports $filter (eq, ne, not).
     */
   var isAssignableToRole: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
@@ -170,7 +170,7 @@ trait Group
   
   /**
     * The mail alias for the group, unique for Microsoft 365 groups in the organization. Maximum length is 64 characters.
-    * This property can contain only characters in the ASCII character set 0 - 127 except the following: @ () / [] ' ; : .
+    * This property can contain only characters in the ASCII character set 0 - 127 except the following: @ () / [] ' ; :
     * &amp;lt;&amp;gt; , SPACE. Required. Returned by default. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq
     * on null values).
     */
@@ -246,8 +246,8 @@ trait Group
   
   /**
     * The owners of the group. Limited to 100 owners. Nullable. If this property is not specified when creating a Microsoft
-    * 365 group, the calling user is automatically assigned as the group owner. Supports $expand including nested $select.
-    * For example,
+    * 365 group, the calling user is automatically assigned as the group owner. Supports $filter (/$count eq 0, /$count ne 0,
+    * /$count eq 1, /$count ne 1). Supports $expand including nested $select. For example,
     * /groups?$filter=startsWith(displayName,'Role')&amp;$select=id,displayName&amp;$expand=owners($select=id,userPrincipalName,displayName).
     */
   var owners: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
@@ -281,8 +281,7 @@ trait Group
   /**
     * Email addresses for the group that direct to the same group mailbox. For example: ['SMTP: bob@contoso.com', 'smtp:
     * bob@sales.contoso.com']. The any operator is required to filter expressions on multi-valued properties. Returned by
-    * default. Read-only. Not nullable. Supports $filter (eq, not, ge, le, startsWith, endsWith, and counting empty
-    * collections).
+    * default. Read-only. Not nullable. Supports $filter (eq, not, ge, le, startsWith, endsWith, /$count eq 0, /$count ne 0).
     */
   var proxyAddresses: js.UndefOr[js.Array[String]] = js.undefined
   

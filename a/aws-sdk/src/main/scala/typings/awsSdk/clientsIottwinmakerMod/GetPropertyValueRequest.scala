@@ -22,9 +22,29 @@ trait GetPropertyValueRequest extends StObject {
   var entityId: js.UndefOr[EntityId] = js.undefined
   
   /**
+    * The maximum number of results to return at one time. The default is 25. Valid Range: Minimum value of 1. Maximum value of 250.
+    */
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
+  
+  /**
+    * The string that specifies the next page of results.
+    */
+  var nextToken: js.UndefOr[NextToken] = js.undefined
+  
+  /**
+    * The property group name.
+    */
+  var propertyGroupName: js.UndefOr[Name] = js.undefined
+  
+  /**
     * The properties whose values the operation returns.
     */
   var selectedProperties: SelectedPropertyList
+  
+  /**
+    * The tabular conditions.
+    */
+  var tabularConditions: js.UndefOr[TabularConditions] = js.undefined
   
   /**
     * The ID of the workspace whose values the operation returns.
@@ -53,9 +73,25 @@ object GetPropertyValueRequest {
     
     inline def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
     
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    
+    inline def setPropertyGroupName(value: Name): Self = StObject.set(x, "propertyGroupName", value.asInstanceOf[js.Any])
+    
+    inline def setPropertyGroupNameUndefined: Self = StObject.set(x, "propertyGroupName", js.undefined)
+    
     inline def setSelectedProperties(value: SelectedPropertyList): Self = StObject.set(x, "selectedProperties", value.asInstanceOf[js.Any])
     
     inline def setSelectedPropertiesVarargs(value: String*): Self = StObject.set(x, "selectedProperties", js.Array(value*))
+    
+    inline def setTabularConditions(value: TabularConditions): Self = StObject.set(x, "tabularConditions", value.asInstanceOf[js.Any])
+    
+    inline def setTabularConditionsUndefined: Self = StObject.set(x, "tabularConditions", js.undefined)
     
     inline def setWorkspaceId(value: Id): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
   }

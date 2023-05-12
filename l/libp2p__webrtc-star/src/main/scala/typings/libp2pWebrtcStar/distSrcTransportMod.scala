@@ -2,7 +2,8 @@ package typings.libp2pWebrtcStar
 
 import typings.libp2pInterfaceConnection.mod.Connection
 import typings.libp2pInterfaceConnection.mod.MultiaddrConnection
-import typings.libp2pInterfacePeerDiscovery.mod.PeerDiscovery
+import typings.libp2pInterfacePeerDiscovery.mod.PeerDiscoveryEvents
+import typings.libp2pInterfacePeerDiscovery.mod.PeerDiscovery_
 import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pInterfaceTransport.mod.CreateListenerOptions
 import typings.libp2pInterfaceTransport.mod.DialOptions
@@ -47,7 +48,7 @@ object distSrcTransportMod {
     
     def dial(ma: Multiaddr_, options: WebRTCStarDialOptions): js.Promise[Connection] = js.native
     
-    def discovery(): PeerDiscovery & Startable = js.native
+    def discovery(): PeerDiscovery_ & Startable = js.native
     
     var get: Any = js.native
     
@@ -66,7 +67,7 @@ object distSrcTransportMod {
   @JSImport("@libp2p/webrtc-star/dist/src/transport", "WebRTCStarDiscovery")
   @js.native
   open class WebRTCStarDiscovery ()
-    extends PeerDiscovery
+    extends EventEmitter[PeerDiscoveryEvents]
        with Startable {
     
     def dispatchEvent(event: CustomEvent[Any]): Boolean = js.native
@@ -95,7 +96,7 @@ object distSrcTransportMod {
     override def stop(): Unit | js.Promise[Unit] = js.native
     
     @JSName(js.Symbol.toStringTag)
-    var toStringTag_WebRTCStarDiscovery: js.Function0[String] = js.native
+    var toStringTag: js.Function0[String] = js.native
   }
   
   @js.native

@@ -66,7 +66,7 @@ trait StartSyncExecutionOutput extends StObject {
   var stopDate: js.Date
   
   /**
-    * The AWS X-Ray trace header that was passed to the execution.
+    * The X-Ray trace header that was passed to the execution.
     */
   var traceHeader: js.UndefOr[TraceHeader] = js.undefined
 }

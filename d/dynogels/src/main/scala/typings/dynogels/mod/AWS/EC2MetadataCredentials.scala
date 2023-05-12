@@ -1,6 +1,6 @@
 package typings.dynogels.mod.AWS
 
-import typings.awsSdk.libCredentialsEc2MetadataCredentialsMod.EC2MetadataCredentialsOptions
+import typings.awsSdk2Types.libCredentialsEc2MetadataCredentialsMod.EC2MetadataCredentialsOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {object} options - Override the default (1s) timeout period.
   */
 open class EC2MetadataCredentials ()
-  extends typings.awsSdk.mod.EC2MetadataCredentials {
+  extends typings.awsSdk2Types.mod.EC2MetadataCredentials {
   def this(options: EC2MetadataCredentialsOptions) = this()
 }

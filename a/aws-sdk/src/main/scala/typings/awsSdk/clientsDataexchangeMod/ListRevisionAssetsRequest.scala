@@ -9,7 +9,7 @@ trait ListRevisionAssetsRequest extends StObject {
   /**
     * The unique identifier for a data set.
     */
-  var DataSetId: string
+  var DataSetId: _String
   
   /**
     * The maximum number of results returned by a single call.
@@ -19,16 +19,16 @@ trait ListRevisionAssetsRequest extends StObject {
   /**
     * The token value retrieved from a previous call to access the next page of results.
     */
-  var NextToken: js.UndefOr[string] = js.undefined
+  var NextToken: js.UndefOr[_String] = js.undefined
   
   /**
     * The unique identifier for a revision.
     */
-  var RevisionId: string
+  var RevisionId: _String
 }
 object ListRevisionAssetsRequest {
   
-  inline def apply(DataSetId: string, RevisionId: string): ListRevisionAssetsRequest = {
+  inline def apply(DataSetId: _String, RevisionId: _String): ListRevisionAssetsRequest = {
     val __obj = js.Dynamic.literal(DataSetId = DataSetId.asInstanceOf[js.Any], RevisionId = RevisionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRevisionAssetsRequest]
   }
@@ -36,16 +36,16 @@ object ListRevisionAssetsRequest {
   @scala.inline
   implicit open class MutableBuilder[Self <: ListRevisionAssetsRequest] (val x: Self) extends AnyVal {
     
-    inline def setDataSetId(value: string): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
+    inline def setDataSetId(value: _String): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: _String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    inline def setRevisionId(value: string): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: _String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
   }
 }

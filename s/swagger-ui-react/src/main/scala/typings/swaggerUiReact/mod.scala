@@ -50,6 +50,8 @@ object mod {
     
     var layout: js.UndefOr[String] = js.undefined
     
+    var oauth2RedirectUrl: js.UndefOr[String] = js.undefined
+    
     var onComplete: js.UndefOr[js.Function1[/* system */ System, Unit]] = js.undefined
     
     var persistAuthorization: js.UndefOr[Boolean] = js.undefined
@@ -67,6 +69,8 @@ object mod {
     var requestSnippetsEnabled: js.UndefOr[Boolean] = js.undefined
     
     var responseInterceptor: js.UndefOr[js.Function1[/* res */ Response, Response | js.Promise[Response]]] = js.undefined
+    
+    var showCommonExtensions: js.UndefOr[Boolean] = js.undefined
     
     var showExtensions: js.UndefOr[Boolean] = js.undefined
     
@@ -128,6 +132,10 @@ object mod {
       
       inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
+      inline def setOauth2RedirectUrl(value: String): Self = StObject.set(x, "oauth2RedirectUrl", value.asInstanceOf[js.Any])
+      
+      inline def setOauth2RedirectUrlUndefined: Self = StObject.set(x, "oauth2RedirectUrl", js.undefined)
+      
       inline def setOnComplete(value: /* system */ System => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
       
       inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
@@ -167,6 +175,10 @@ object mod {
       inline def setResponseInterceptor(value: /* res */ Response => Response | js.Promise[Response]): Self = StObject.set(x, "responseInterceptor", js.Any.fromFunction1(value))
       
       inline def setResponseInterceptorUndefined: Self = StObject.set(x, "responseInterceptor", js.undefined)
+      
+      inline def setShowCommonExtensions(value: Boolean): Self = StObject.set(x, "showCommonExtensions", value.asInstanceOf[js.Any])
+      
+      inline def setShowCommonExtensionsUndefined: Self = StObject.set(x, "showCommonExtensions", js.undefined)
       
       inline def setShowExtensions(value: Boolean): Self = StObject.set(x, "showExtensions", value.asInstanceOf[js.Any])
       

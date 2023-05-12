@@ -47,12 +47,17 @@ trait CreateReplicationGroupMessage extends StObject {
   var CacheSubnetGroupName: js.UndefOr[String] = js.undefined
   
   /**
+    * Enabled or Disabled. To modify cluster mode from Disabled to Enabled, you must first set the cluster mode to Compatible. Compatible mode allows your Redis clients to connect using both cluster mode enabled and cluster mode disabled. After you migrate all Redis clients to use cluster mode enabled, you can then complete cluster mode configuration and set the cluster mode to Enabled.
+    */
+  var ClusterMode: js.UndefOr[typings.awsSdk.clientsElasticacheMod.ClusterMode] = js.undefined
+  
+  /**
     * Enables data tiering. Data tiering is only supported for replication groups using the r6gd node type. This parameter must be set to true when using r6gd nodes. For more information, see Data tiering.
     */
   var DataTieringEnabled: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * The name of the cache engine to be used for the clusters in this replication group. Must be Redis.
+    * The name of the cache engine to be used for the clusters in this replication group. The value must be set to Redis.
     */
   var Engine: js.UndefOr[String] = js.undefined
   
@@ -177,9 +182,14 @@ trait CreateReplicationGroupMessage extends StObject {
   var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
-    * A flag that enables in-transit encryption when set to true. You cannot modify the value of TransitEncryptionEnabled after the cluster is created. To enable in-transit encryption on a cluster you must set TransitEncryptionEnabled to true when you create a cluster. This parameter is valid only if the Engine parameter is redis, the EngineVersion parameter is 3.2.6, 4.x or later, and the cluster is being created in an Amazon VPC. If you enable in-transit encryption, you must also specify a value for CacheSubnetGroup.  Required: Only available when creating a replication group in an Amazon VPC using redis version 3.2.6, 4.x or later. Default: false   For HIPAA compliance, you must specify TransitEncryptionEnabled as true, an AuthToken, and a CacheSubnetGroup. 
+    * A flag that enables in-transit encryption when set to true. This parameter is valid only if the Engine parameter is redis, the EngineVersion parameter is 3.2.6, 4.x or later, and the cluster is being created in an Amazon VPC. If you enable in-transit encryption, you must also specify a value for CacheSubnetGroup.  Required: Only available when creating a replication group in an Amazon VPC using redis version 3.2.6, 4.x or later. Default: false   For HIPAA compliance, you must specify TransitEncryptionEnabled as true, an AuthToken, and a CacheSubnetGroup. 
     */
   var TransitEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
+    * A setting that allows you to migrate your clients to use in-transit encryption, with no downtime. When setting TransitEncryptionEnabled to true, you can set your TransitEncryptionMode to preferred in the same request, to allow both encrypted and unencrypted connections at the same time. Once you migrate all your Redis clients to use encrypted connections you can modify the value to required to allow encrypted connections only. Setting TransitEncryptionMode to required is a two-step process that requires you to first set the TransitEncryptionMode to preferred, after that you can set TransitEncryptionMode to required. This process will not trigger the replacement of the replication group.
+    */
+  var TransitEncryptionMode: js.UndefOr[typings.awsSdk.clientsElasticacheMod.TransitEncryptionMode] = js.undefined
   
   /**
     * The user group to associate with the replication group.
@@ -229,6 +239,10 @@ object CreateReplicationGroupMessage {
     inline def setCacheSubnetGroupName(value: String): Self = StObject.set(x, "CacheSubnetGroupName", value.asInstanceOf[js.Any])
     
     inline def setCacheSubnetGroupNameUndefined: Self = StObject.set(x, "CacheSubnetGroupName", js.undefined)
+    
+    inline def setClusterMode(value: ClusterMode): Self = StObject.set(x, "ClusterMode", value.asInstanceOf[js.Any])
+    
+    inline def setClusterModeUndefined: Self = StObject.set(x, "ClusterMode", js.undefined)
     
     inline def setDataTieringEnabled(value: BooleanOptional): Self = StObject.set(x, "DataTieringEnabled", value.asInstanceOf[js.Any])
     
@@ -345,6 +359,10 @@ object CreateReplicationGroupMessage {
     inline def setTransitEncryptionEnabled(value: BooleanOptional): Self = StObject.set(x, "TransitEncryptionEnabled", value.asInstanceOf[js.Any])
     
     inline def setTransitEncryptionEnabledUndefined: Self = StObject.set(x, "TransitEncryptionEnabled", js.undefined)
+    
+    inline def setTransitEncryptionMode(value: TransitEncryptionMode): Self = StObject.set(x, "TransitEncryptionMode", value.asInstanceOf[js.Any])
+    
+    inline def setTransitEncryptionModeUndefined: Self = StObject.set(x, "TransitEncryptionMode", js.undefined)
     
     inline def setUserGroupIds(value: UserGroupIdListInput): Self = StObject.set(x, "UserGroupIds", value.asInstanceOf[js.Any])
     

@@ -17,6 +17,8 @@ trait PlotSelectedData extends StObject {
   
   var pointNumber: js.UndefOr[Double] = js.undefined
   
+  var text: js.UndefOr[String] = js.undefined
+  
   var x: js.UndefOr[Datum] = js.undefined
   
   var xaxis: js.UndefOr[LayoutAxis] = js.undefined
@@ -56,6 +58,10 @@ object PlotSelectedData {
     inline def setPointNumber(value: Double): Self = StObject.set(x, "pointNumber", value.asInstanceOf[js.Any])
     
     inline def setPointNumberUndefined: Self = StObject.set(x, "pointNumber", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     inline def setX(value: Datum): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

@@ -2,6 +2,7 @@ package typings.azureMsalCommon
 
 import typings.azureMsalCommon.distCryptoIcryptoMod.ICrypto
 import typings.azureMsalCommon.distCryptoIcryptoMod.SignedHttpRequestParameters
+import typings.azureMsalCommon.distTelemetryPerformanceIperformanceclientMod.IPerformanceClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,6 +30,7 @@ object distCryptoPopTokenGeneratorMod {
   @js.native
   open class PopTokenGenerator protected () extends StObject {
     def this(cryptoUtils: ICrypto) = this()
+    def this(cryptoUtils: ICrypto, performanceClient: IPerformanceClient) = this()
     
     /* private */ var cryptoUtils: Any = js.native
     
@@ -46,6 +48,8 @@ object distCryptoPopTokenGeneratorMod {
       * @returns
       */
     def generateKid(request: SignedHttpRequestParameters): js.Promise[ReqCnf] = js.native
+    
+    /* private */ var performanceClient: Any = js.native
     
     /**
       * Utility function to generate the signed JWT for an access_token

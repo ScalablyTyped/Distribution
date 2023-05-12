@@ -5,15 +5,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents a server-side error from a web service (i.e. the equivalent of a
-  * 5xx code in HTTP).
-  */
 @JSGlobal("google.maps.MapsServerError")
 @js.native
 /**
   * Represents a server-side error from a web service (i.e. the equivalent of
   * a 5xx code in HTTP).
+  *
+  * Access by calling `const {MapsServerError} = await
+  * google.maps.importLibrary("core")`. See
+  * https://developers.google.com/maps/documentation/javascript/libraries.
   */
 open class MapsServerError ()
   extends StObject

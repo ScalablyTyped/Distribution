@@ -39,6 +39,11 @@ trait SourceConnectorProperties extends StObject {
   var Marketo: js.UndefOr[MarketoSourceProperties] = js.undefined
   
   /**
+    * Specifies the information that is required for querying Salesforce Pardot.
+    */
+  var Pardot: js.UndefOr[PardotSourceProperties] = js.undefined
+  
+  /**
     *  Specifies the information that is required for querying Amazon S3. 
     */
   var S3: js.UndefOr[S3SourceProperties] = js.undefined
@@ -117,6 +122,10 @@ object SourceConnectorProperties {
     inline def setMarketo(value: MarketoSourceProperties): Self = StObject.set(x, "Marketo", value.asInstanceOf[js.Any])
     
     inline def setMarketoUndefined: Self = StObject.set(x, "Marketo", js.undefined)
+    
+    inline def setPardot(value: PardotSourceProperties): Self = StObject.set(x, "Pardot", value.asInstanceOf[js.Any])
+    
+    inline def setPardotUndefined: Self = StObject.set(x, "Pardot", js.undefined)
     
     inline def setS3(value: S3SourceProperties): Self = StObject.set(x, "S3", value.asInstanceOf[js.Any])
     

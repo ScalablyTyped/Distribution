@@ -12,10 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AddLink extends StObject {
   
-  def addLink(cid: CID[Any, Double, Double, Version], dLink: PBLink): js.Promise[CID[Any, Double, Double, Version]] = js.native
+  def addLink(cid: CID[Any, Double, Double, Version], link: PBLink): js.Promise[CID[Any, Double, Double, Version]] = js.native
   def addLink(
     cid: CID[Any, Double, Double, Version],
-    dLink: PBLink,
+    link: PBLink,
     options: AbortOptions & HTTPClientExtraOptions
   ): js.Promise[CID[Any, Double, Double, Version]] = js.native
   
@@ -26,16 +26,16 @@ trait AddLink extends StObject {
     options: AbortOptions & HTTPClientExtraOptions
   ): js.Promise[CID[Any, Double, Double, Version]] = js.native
   
-  def rmLink(cid: CID[Any, Double, Double, Version], dLink: String): js.Promise[CID[Any, Double, Double, Version]] = js.native
+  def rmLink(cid: CID[Any, Double, Double, Version], link: String): js.Promise[CID[Any, Double, Double, Version]] = js.native
   def rmLink(
     cid: CID[Any, Double, Double, Version],
-    dLink: String,
+    link: String,
     options: AbortOptions & HTTPClientExtraOptions
   ): js.Promise[CID[Any, Double, Double, Version]] = js.native
-  def rmLink(cid: CID[Any, Double, Double, Version], dLink: PBLink): js.Promise[CID[Any, Double, Double, Version]] = js.native
+  def rmLink(cid: CID[Any, Double, Double, Version], link: PBLink): js.Promise[CID[Any, Double, Double, Version]] = js.native
   def rmLink(
     cid: CID[Any, Double, Double, Version],
-    dLink: PBLink,
+    link: PBLink,
     options: AbortOptions & HTTPClientExtraOptions
   ): js.Promise[CID[Any, Double, Double, Version]] = js.native
   

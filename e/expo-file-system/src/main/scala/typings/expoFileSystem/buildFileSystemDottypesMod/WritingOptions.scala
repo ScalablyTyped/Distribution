@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WritingOptions extends StObject {
   
+  /**
+    * The encoding format to use when writing the file.
+    * @default FileSystem.EncodingType.UTF8
+    */
   var encoding: js.UndefOr[EncodingType | utf8 | base64] = js.undefined
 }
 object WritingOptions {

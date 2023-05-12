@@ -12,7 +12,7 @@ trait NotificationOptions extends StObject {
   var EmailMessage: js.UndefOr[MessageType] = js.undefined
   
   /**
-    * Boolean value to indicate an email notification should be sent to the receipients.
+    * Boolean value to indicate an email notification should be sent to the recipients.
     */
   var SendEmail: js.UndefOr[BooleanType] = js.undefined
 }

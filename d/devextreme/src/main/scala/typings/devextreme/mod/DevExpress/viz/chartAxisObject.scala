@@ -10,10 +10,10 @@ trait chartAxisObject extends StObject {
   /**
     * Gets the axis&apos; displayed range.
     */
-  def visualRange(): VizRange = js.native
+  def visualRange(): typings.devextreme.mod.DevExpress.common.charts.VisualRange = js.native
   /**
     * Sets the axis&apos;s displayed range.
     */
   def visualRange(visualRange: js.Array[Double | String | js.Date]): Unit = js.native
-  def visualRange(visualRange: VizRange): Unit = js.native
+  def visualRange(visualRange: typings.devextreme.mod.DevExpress.common.charts.VisualRange): Unit = js.native
 }

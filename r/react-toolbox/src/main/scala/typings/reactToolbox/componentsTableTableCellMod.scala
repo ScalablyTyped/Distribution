@@ -18,7 +18,7 @@ object componentsTableTableCellMod {
     def this(props: TableCellProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: TableCellProps, context: Any) = this()
   }
@@ -30,7 +30,7 @@ object componentsTableTableCellMod {
     def this(props: TableCellProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: TableCellProps, context: Any) = this()
   }

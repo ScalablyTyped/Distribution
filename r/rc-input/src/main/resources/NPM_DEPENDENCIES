@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-input" : "0.1.4"
+      "rc-input" : "1.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-input" : "0.1.4"
+      "rc-input" : "1.0.4"
     }
   ],
   "compile-devDependencies" : [

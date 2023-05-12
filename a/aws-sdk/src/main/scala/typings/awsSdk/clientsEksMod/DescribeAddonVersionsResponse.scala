@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeAddonVersionsResponse extends StObject {
   
   /**
-    * The list of available versions with Kubernetes version compatibility.
+    * The list of available versions with Kubernetes version compatibility and other properties.
     */
   var addons: js.UndefOr[Addons] = js.undefined
   

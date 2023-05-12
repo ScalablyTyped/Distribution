@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "postcss-focus-within" : "6.1.1"
+      "postcss-focus-within" : "7.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "postcss-focus-within" : "6.1.1"
+      "postcss-focus-within" : "7.0.2"
     }
   ],
   "compile-devDependencies" : [

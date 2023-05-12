@@ -1,5 +1,23 @@
 package typings.d3Fetch
 
+import typings.d3Fetch.d3FetchInts.`0x01`
+import typings.d3Fetch.d3FetchInts.`0x02`
+import typings.d3Fetch.d3FetchInts.`0x04`
+import typings.d3Fetch.d3FetchInts.`0x08`
+import typings.d3Fetch.d3FetchInts.`0x10`
+import typings.d3Fetch.d3FetchInts.`0x20`
+import typings.d3Fetch.d3FetchInts.`10`
+import typings.d3Fetch.d3FetchInts.`11`
+import typings.d3Fetch.d3FetchInts.`12`
+import typings.d3Fetch.d3FetchInts.`1`
+import typings.d3Fetch.d3FetchInts.`2`
+import typings.d3Fetch.d3FetchInts.`3`
+import typings.d3Fetch.d3FetchInts.`4`
+import typings.d3Fetch.d3FetchInts.`5`
+import typings.d3Fetch.d3FetchInts.`6`
+import typings.d3Fetch.d3FetchInts.`7`
+import typings.d3Fetch.d3FetchInts.`8`
+import typings.d3Fetch.d3FetchInts.`9`
 import typings.d3Fetch.d3FetchStrings.`lazy`
 import typings.d3Fetch.d3FetchStrings.a
 import typings.d3Fetch.d3FetchStrings.async
@@ -59,41 +77,41 @@ object anon {
   /* Inlined std.Partial<std.HTMLImageElement> */
   trait PartialHTMLImageElement extends StObject {
     
-    var ATTRIBUTE_NODE: js.UndefOr[Double] = js.undefined
+    var ATTRIBUTE_NODE: js.UndefOr[`2`] = js.undefined
     
-    var CDATA_SECTION_NODE: js.UndefOr[Double] = js.undefined
+    var CDATA_SECTION_NODE: js.UndefOr[`4`] = js.undefined
     
-    var COMMENT_NODE: js.UndefOr[Double] = js.undefined
+    var COMMENT_NODE: js.UndefOr[`8`] = js.undefined
     
-    var DOCUMENT_FRAGMENT_NODE: js.UndefOr[Double] = js.undefined
+    var DOCUMENT_FRAGMENT_NODE: js.UndefOr[`11`] = js.undefined
     
-    var DOCUMENT_NODE: js.UndefOr[Double] = js.undefined
+    var DOCUMENT_NODE: js.UndefOr[`9`] = js.undefined
     
-    var DOCUMENT_POSITION_CONTAINED_BY: js.UndefOr[Double] = js.undefined
+    var DOCUMENT_POSITION_CONTAINED_BY: js.UndefOr[`0x10`] = js.undefined
     
-    var DOCUMENT_POSITION_CONTAINS: js.UndefOr[Double] = js.undefined
+    var DOCUMENT_POSITION_CONTAINS: js.UndefOr[`0x08`] = js.undefined
     
-    var DOCUMENT_POSITION_DISCONNECTED: js.UndefOr[Double] = js.undefined
+    var DOCUMENT_POSITION_DISCONNECTED: js.UndefOr[`0x01`] = js.undefined
     
-    var DOCUMENT_POSITION_FOLLOWING: js.UndefOr[Double] = js.undefined
+    var DOCUMENT_POSITION_FOLLOWING: js.UndefOr[`0x04`] = js.undefined
     
-    var DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC: js.UndefOr[Double] = js.undefined
+    var DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC: js.UndefOr[`0x20`] = js.undefined
     
-    var DOCUMENT_POSITION_PRECEDING: js.UndefOr[Double] = js.undefined
+    var DOCUMENT_POSITION_PRECEDING: js.UndefOr[`0x02`] = js.undefined
     
-    var DOCUMENT_TYPE_NODE: js.UndefOr[Double] = js.undefined
+    var DOCUMENT_TYPE_NODE: js.UndefOr[`10`] = js.undefined
     
-    var ELEMENT_NODE: js.UndefOr[Double] = js.undefined
+    var ELEMENT_NODE: js.UndefOr[`1`] = js.undefined
     
-    var ENTITY_NODE: js.UndefOr[Double] = js.undefined
+    var ENTITY_NODE: js.UndefOr[`6`] = js.undefined
     
-    var ENTITY_REFERENCE_NODE: js.UndefOr[Double] = js.undefined
+    var ENTITY_REFERENCE_NODE: js.UndefOr[`5`] = js.undefined
     
-    var NOTATION_NODE: js.UndefOr[Double] = js.undefined
+    var NOTATION_NODE: js.UndefOr[`12`] = js.undefined
     
-    var PROCESSING_INSTRUCTION_NODE: js.UndefOr[Double] = js.undefined
+    var PROCESSING_INSTRUCTION_NODE: js.UndefOr[`7`] = js.undefined
     
-    var TEXT_NODE: js.UndefOr[Double] = js.undefined
+    var TEXT_NODE: js.UndefOr[`3`] = js.undefined
     
     var accessKey: js.UndefOr[String] = js.undefined
     
@@ -130,8 +148,6 @@ object anon {
     var ariaColCount: js.UndefOr[String | Null] = js.undefined
     
     var ariaColIndex: js.UndefOr[String | Null] = js.undefined
-    
-    var ariaColIndexText: js.UndefOr[String | Null] = js.undefined
     
     var ariaColSpan: js.UndefOr[String | Null] = js.undefined
     
@@ -179,8 +195,6 @@ object anon {
     
     var ariaRowIndex: js.UndefOr[String | Null] = js.undefined
     
-    var ariaRowIndexText: js.UndefOr[String | Null] = js.undefined
-    
     var ariaRowSpan: js.UndefOr[String | Null] = js.undefined
     
     var ariaSelected: js.UndefOr[String | Null] = js.undefined
@@ -216,6 +230,8 @@ object anon {
     var blur: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var border: js.UndefOr[String] = js.undefined
+    
+    var checkVisibility: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     var childElementCount: js.UndefOr[Double] = js.undefined
     
@@ -731,7 +747,7 @@ object anon {
     @scala.inline
     implicit open class MutableBuilder[Self <: PartialHTMLImageElement] (val x: Self) extends AnyVal {
       
-      inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
+      inline def setATTRIBUTE_NODE(value: `2`): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
       
       inline def setATTRIBUTE_NODEUndefined: Self = StObject.set(x, "ATTRIBUTE_NODE", js.undefined)
       
@@ -806,12 +822,6 @@ object anon {
       inline def setAriaColIndex(value: String): Self = StObject.set(x, "ariaColIndex", value.asInstanceOf[js.Any])
       
       inline def setAriaColIndexNull: Self = StObject.set(x, "ariaColIndex", null)
-      
-      inline def setAriaColIndexText(value: String): Self = StObject.set(x, "ariaColIndexText", value.asInstanceOf[js.Any])
-      
-      inline def setAriaColIndexTextNull: Self = StObject.set(x, "ariaColIndexText", null)
-      
-      inline def setAriaColIndexTextUndefined: Self = StObject.set(x, "ariaColIndexText", js.undefined)
       
       inline def setAriaColIndexUndefined: Self = StObject.set(x, "ariaColIndex", js.undefined)
       
@@ -951,12 +961,6 @@ object anon {
       
       inline def setAriaRowIndexNull: Self = StObject.set(x, "ariaRowIndex", null)
       
-      inline def setAriaRowIndexText(value: String): Self = StObject.set(x, "ariaRowIndexText", value.asInstanceOf[js.Any])
-      
-      inline def setAriaRowIndexTextNull: Self = StObject.set(x, "ariaRowIndexText", null)
-      
-      inline def setAriaRowIndexTextUndefined: Self = StObject.set(x, "ariaRowIndexText", js.undefined)
-      
       inline def setAriaRowIndexUndefined: Self = StObject.set(x, "ariaRowIndex", js.undefined)
       
       inline def setAriaRowSpan(value: String): Self = StObject.set(x, "ariaRowSpan", value.asInstanceOf[js.Any])
@@ -1049,13 +1053,17 @@ object anon {
       
       inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
       
-      inline def setCDATA_SECTION_NODE(value: Double): Self = StObject.set(x, "CDATA_SECTION_NODE", value.asInstanceOf[js.Any])
+      inline def setCDATA_SECTION_NODE(value: `4`): Self = StObject.set(x, "CDATA_SECTION_NODE", value.asInstanceOf[js.Any])
       
       inline def setCDATA_SECTION_NODEUndefined: Self = StObject.set(x, "CDATA_SECTION_NODE", js.undefined)
       
-      inline def setCOMMENT_NODE(value: Double): Self = StObject.set(x, "COMMENT_NODE", value.asInstanceOf[js.Any])
+      inline def setCOMMENT_NODE(value: `8`): Self = StObject.set(x, "COMMENT_NODE", value.asInstanceOf[js.Any])
       
       inline def setCOMMENT_NODEUndefined: Self = StObject.set(x, "COMMENT_NODE", js.undefined)
+      
+      inline def setCheckVisibility(value: () => Boolean): Self = StObject.set(x, "checkVisibility", js.Any.fromFunction0(value))
+      
+      inline def setCheckVisibilityUndefined: Self = StObject.set(x, "checkVisibility", js.undefined)
       
       inline def setChildElementCount(value: Double): Self = StObject.set(x, "childElementCount", value.asInstanceOf[js.Any])
       
@@ -1131,39 +1139,39 @@ object anon {
       
       inline def setCurrentSrcUndefined: Self = StObject.set(x, "currentSrc", js.undefined)
       
-      inline def setDOCUMENT_FRAGMENT_NODE(value: Double): Self = StObject.set(x, "DOCUMENT_FRAGMENT_NODE", value.asInstanceOf[js.Any])
+      inline def setDOCUMENT_FRAGMENT_NODE(value: `11`): Self = StObject.set(x, "DOCUMENT_FRAGMENT_NODE", value.asInstanceOf[js.Any])
       
       inline def setDOCUMENT_FRAGMENT_NODEUndefined: Self = StObject.set(x, "DOCUMENT_FRAGMENT_NODE", js.undefined)
       
-      inline def setDOCUMENT_NODE(value: Double): Self = StObject.set(x, "DOCUMENT_NODE", value.asInstanceOf[js.Any])
+      inline def setDOCUMENT_NODE(value: `9`): Self = StObject.set(x, "DOCUMENT_NODE", value.asInstanceOf[js.Any])
       
       inline def setDOCUMENT_NODEUndefined: Self = StObject.set(x, "DOCUMENT_NODE", js.undefined)
       
-      inline def setDOCUMENT_POSITION_CONTAINED_BY(value: Double): Self = StObject.set(x, "DOCUMENT_POSITION_CONTAINED_BY", value.asInstanceOf[js.Any])
+      inline def setDOCUMENT_POSITION_CONTAINED_BY(value: `0x10`): Self = StObject.set(x, "DOCUMENT_POSITION_CONTAINED_BY", value.asInstanceOf[js.Any])
       
       inline def setDOCUMENT_POSITION_CONTAINED_BYUndefined: Self = StObject.set(x, "DOCUMENT_POSITION_CONTAINED_BY", js.undefined)
       
-      inline def setDOCUMENT_POSITION_CONTAINS(value: Double): Self = StObject.set(x, "DOCUMENT_POSITION_CONTAINS", value.asInstanceOf[js.Any])
+      inline def setDOCUMENT_POSITION_CONTAINS(value: `0x08`): Self = StObject.set(x, "DOCUMENT_POSITION_CONTAINS", value.asInstanceOf[js.Any])
       
       inline def setDOCUMENT_POSITION_CONTAINSUndefined: Self = StObject.set(x, "DOCUMENT_POSITION_CONTAINS", js.undefined)
       
-      inline def setDOCUMENT_POSITION_DISCONNECTED(value: Double): Self = StObject.set(x, "DOCUMENT_POSITION_DISCONNECTED", value.asInstanceOf[js.Any])
+      inline def setDOCUMENT_POSITION_DISCONNECTED(value: `0x01`): Self = StObject.set(x, "DOCUMENT_POSITION_DISCONNECTED", value.asInstanceOf[js.Any])
       
       inline def setDOCUMENT_POSITION_DISCONNECTEDUndefined: Self = StObject.set(x, "DOCUMENT_POSITION_DISCONNECTED", js.undefined)
       
-      inline def setDOCUMENT_POSITION_FOLLOWING(value: Double): Self = StObject.set(x, "DOCUMENT_POSITION_FOLLOWING", value.asInstanceOf[js.Any])
+      inline def setDOCUMENT_POSITION_FOLLOWING(value: `0x04`): Self = StObject.set(x, "DOCUMENT_POSITION_FOLLOWING", value.asInstanceOf[js.Any])
       
       inline def setDOCUMENT_POSITION_FOLLOWINGUndefined: Self = StObject.set(x, "DOCUMENT_POSITION_FOLLOWING", js.undefined)
       
-      inline def setDOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC(value: Double): Self = StObject.set(x, "DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC", value.asInstanceOf[js.Any])
+      inline def setDOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC(value: `0x20`): Self = StObject.set(x, "DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC", value.asInstanceOf[js.Any])
       
       inline def setDOCUMENT_POSITION_IMPLEMENTATION_SPECIFICUndefined: Self = StObject.set(x, "DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC", js.undefined)
       
-      inline def setDOCUMENT_POSITION_PRECEDING(value: Double): Self = StObject.set(x, "DOCUMENT_POSITION_PRECEDING", value.asInstanceOf[js.Any])
+      inline def setDOCUMENT_POSITION_PRECEDING(value: `0x02`): Self = StObject.set(x, "DOCUMENT_POSITION_PRECEDING", value.asInstanceOf[js.Any])
       
       inline def setDOCUMENT_POSITION_PRECEDINGUndefined: Self = StObject.set(x, "DOCUMENT_POSITION_PRECEDING", js.undefined)
       
-      inline def setDOCUMENT_TYPE_NODE(value: Double): Self = StObject.set(x, "DOCUMENT_TYPE_NODE", value.asInstanceOf[js.Any])
+      inline def setDOCUMENT_TYPE_NODE(value: `10`): Self = StObject.set(x, "DOCUMENT_TYPE_NODE", value.asInstanceOf[js.Any])
       
       inline def setDOCUMENT_TYPE_NODEUndefined: Self = StObject.set(x, "DOCUMENT_TYPE_NODE", js.undefined)
       
@@ -1191,15 +1199,15 @@ object anon {
       
       inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
-      inline def setELEMENT_NODE(value: Double): Self = StObject.set(x, "ELEMENT_NODE", value.asInstanceOf[js.Any])
+      inline def setELEMENT_NODE(value: `1`): Self = StObject.set(x, "ELEMENT_NODE", value.asInstanceOf[js.Any])
       
       inline def setELEMENT_NODEUndefined: Self = StObject.set(x, "ELEMENT_NODE", js.undefined)
       
-      inline def setENTITY_NODE(value: Double): Self = StObject.set(x, "ENTITY_NODE", value.asInstanceOf[js.Any])
+      inline def setENTITY_NODE(value: `6`): Self = StObject.set(x, "ENTITY_NODE", value.asInstanceOf[js.Any])
       
       inline def setENTITY_NODEUndefined: Self = StObject.set(x, "ENTITY_NODE", js.undefined)
       
-      inline def setENTITY_REFERENCE_NODE(value: Double): Self = StObject.set(x, "ENTITY_REFERENCE_NODE", value.asInstanceOf[js.Any])
+      inline def setENTITY_REFERENCE_NODE(value: `5`): Self = StObject.set(x, "ENTITY_REFERENCE_NODE", value.asInstanceOf[js.Any])
       
       inline def setENTITY_REFERENCE_NODEUndefined: Self = StObject.set(x, "ENTITY_REFERENCE_NODE", js.undefined)
       
@@ -1409,7 +1417,7 @@ object anon {
       
       inline def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
       
-      inline def setNOTATION_NODE(value: Double): Self = StObject.set(x, "NOTATION_NODE", value.asInstanceOf[js.Any])
+      inline def setNOTATION_NODE(value: `12`): Self = StObject.set(x, "NOTATION_NODE", value.asInstanceOf[js.Any])
       
       inline def setNOTATION_NODEUndefined: Self = StObject.set(x, "NOTATION_NODE", js.undefined)
       
@@ -2077,7 +2085,7 @@ object anon {
       
       inline def setOwnerDocumentUndefined: Self = StObject.set(x, "ownerDocument", js.undefined)
       
-      inline def setPROCESSING_INSTRUCTION_NODE(value: Double): Self = StObject.set(x, "PROCESSING_INSTRUCTION_NODE", value.asInstanceOf[js.Any])
+      inline def setPROCESSING_INSTRUCTION_NODE(value: `7`): Self = StObject.set(x, "PROCESSING_INSTRUCTION_NODE", value.asInstanceOf[js.Any])
       
       inline def setPROCESSING_INSTRUCTION_NODEUndefined: Self = StObject.set(x, "PROCESSING_INSTRUCTION_NODE", js.undefined)
       
@@ -2269,7 +2277,7 @@ object anon {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setTEXT_NODE(value: Double): Self = StObject.set(x, "TEXT_NODE", value.asInstanceOf[js.Any])
+      inline def setTEXT_NODE(value: `3`): Self = StObject.set(x, "TEXT_NODE", value.asInstanceOf[js.Any])
       
       inline def setTEXT_NODEUndefined: Self = StObject.set(x, "TEXT_NODE", js.undefined)
       

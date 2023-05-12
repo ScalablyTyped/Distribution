@@ -364,10 +364,10 @@ object Common {
     def THURSDAY: `4` = js.native
     inline def THURSDAY_=(x: `4`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("THURSDAY")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("TrimbleMaps.Common.DayOfWeek.TUDESDAY")
+    @JSGlobal("TrimbleMaps.Common.DayOfWeek.TUESDAY")
     @js.native
-    def TUDESDAY: `2` = js.native
-    inline def TUDESDAY_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TUDESDAY")(x.asInstanceOf[js.Any])
+    def TUESDAY: `2` = js.native
+    inline def TUESDAY_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TUESDAY")(x.asInstanceOf[js.Any])
     
     @JSGlobal("TrimbleMaps.Common.DayOfWeek.WEDNESDAY")
     @js.native

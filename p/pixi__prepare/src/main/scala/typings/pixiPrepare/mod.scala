@@ -19,6 +19,22 @@ object mod {
       */
     def this(renderer: IRenderer[ICanvas]) = this()
   }
+  /* static members */
+  object BasePrepare {
+    
+    @JSImport("@pixi/prepare", "BasePrepare")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * The default maximum uploads per frame.
+      * @static
+      */
+    @JSImport("@pixi/prepare", "BasePrepare.uploadsPerFrame")
+    @js.native
+    def uploadsPerFrame: Double = js.native
+    inline def uploadsPerFrame_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uploadsPerFrame")(x.asInstanceOf[js.Any])
+  }
   
   @JSImport("@pixi/prepare", "CountLimiter")
   @js.native

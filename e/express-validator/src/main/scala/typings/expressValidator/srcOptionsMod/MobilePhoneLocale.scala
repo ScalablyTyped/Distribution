@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.expressValidator.expressValidatorStrings.`ar-BH`
   - typings.expressValidator.expressValidatorStrings.`ar-DZ`
   - typings.expressValidator.expressValidatorStrings.`ar-EG`
+  - typings.expressValidator.expressValidatorStrings.`ar-EH`
   - typings.expressValidator.expressValidatorStrings.`ar-IQ`
   - typings.expressValidator.expressValidatorStrings.`ar-JO`
   - typings.expressValidator.expressValidatorStrings.`ar-KW`
@@ -22,6 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.expressValidator.expressValidatorStrings.`ar-SA`
   - typings.expressValidator.expressValidatorStrings.`ar-SY`
   - typings.expressValidator.expressValidatorStrings.`ar-TN`
+  - typings.expressValidator.expressValidatorStrings.`ar-YE`
   - typings.expressValidator.expressValidatorStrings.`az-AZ`
   - typings.expressValidator.expressValidatorStrings.`be-BY`
   - typings.expressValidator.expressValidatorStrings.`bg-BG`
@@ -33,10 +35,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.expressValidator.expressValidatorStrings.`de-DE`
   - typings.expressValidator.expressValidatorStrings.`de-LU`
   - typings.expressValidator.expressValidatorStrings.`da-DK`
+  - typings.expressValidator.expressValidatorStrings.`dv-MV`
   - typings.expressValidator.expressValidatorStrings.`dz-BT`
+  - typings.expressValidator.expressValidatorStrings.`el-CY`
   - typings.expressValidator.expressValidatorStrings.`el-GR`
+  - typings.expressValidator.expressValidatorStrings.`en-AG`
+  - typings.expressValidator.expressValidatorStrings.`en-AI`
   - typings.expressValidator.expressValidatorStrings.`en-AU`
   - typings.expressValidator.expressValidatorStrings.`en-BM`
+  - typings.expressValidator.expressValidatorStrings.`en-BS`
   - typings.expressValidator.expressValidatorStrings.`en-BW`
   - typings.expressValidator.expressValidatorStrings.`en-CA`
   - typings.expressValidator.expressValidatorStrings.`en-GB`
@@ -47,18 +54,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.expressValidator.expressValidatorStrings.`en-HN`
   - typings.expressValidator.expressValidatorStrings.`en-IE`
   - typings.expressValidator.expressValidatorStrings.`en-IN`
+  - typings.expressValidator.expressValidatorStrings.`en-JM`
   - typings.expressValidator.expressValidatorStrings.`en-KE`
   - typings.expressValidator.expressValidatorStrings.`en-KI`
+  - typings.expressValidator.expressValidatorStrings.`en-KN`
+  - typings.expressValidator.expressValidatorStrings.`en-LS`
   - typings.expressValidator.expressValidatorStrings.`en-MT`
   - typings.expressValidator.expressValidatorStrings.`en-MU`
   - typings.expressValidator.expressValidatorStrings.`en-NA`
   - typings.expressValidator.expressValidatorStrings.`en-NG`
   - typings.expressValidator.expressValidatorStrings.`en-NZ`
+  - typings.expressValidator.expressValidatorStrings.`en-PG`
   - typings.expressValidator.expressValidatorStrings.`en-PH`
   - typings.expressValidator.expressValidatorStrings.`en-PK`
   - typings.expressValidator.expressValidatorStrings.`en-RW`
   - typings.expressValidator.expressValidatorStrings.`en-SG`
   - typings.expressValidator.expressValidatorStrings.`en-SL`
+  - typings.expressValidator.expressValidatorStrings.`en-SS`
   - typings.expressValidator.expressValidatorStrings.`en-TZ`
   - typings.expressValidator.expressValidatorStrings.`en-UG`
   - typings.expressValidator.expressValidatorStrings.`en-US`
@@ -74,7 +86,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.expressValidator.expressValidatorStrings.`es-DO`
   - typings.expressValidator.expressValidatorStrings.`es-EC`
   - typings.expressValidator.expressValidatorStrings.`es-ES`
+  - typings.expressValidator.expressValidatorStrings.`es-HN`
   - typings.expressValidator.expressValidatorStrings.`es-MX`
+  - typings.expressValidator.expressValidatorStrings.`es-NI`
   - typings.expressValidator.expressValidatorStrings.`es-PA`
   - typings.expressValidator.expressValidatorStrings.`es-PE`
   - typings.expressValidator.expressValidatorStrings.`es-PY`
@@ -82,12 +96,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.expressValidator.expressValidatorStrings.`es-UY`
   - typings.expressValidator.expressValidatorStrings.`es-VE`
   - typings.expressValidator.expressValidatorStrings.`et-EE`
+  - typings.expressValidator.expressValidatorStrings.`fa-AF`
   - typings.expressValidator.expressValidatorStrings.`fa-IR`
   - typings.expressValidator.expressValidatorStrings.`fi-FI`
   - typings.expressValidator.expressValidatorStrings.`fj-FJ`
   - typings.expressValidator.expressValidatorStrings.`fo-FO`
   - typings.expressValidator.expressValidatorStrings.`fr-BE`
   - typings.expressValidator.expressValidatorStrings.`fr-BF`
+  - typings.expressValidator.expressValidatorStrings.`fr-BJ`
+  - typings.expressValidator.expressValidatorStrings.`fr-CD`
   - typings.expressValidator.expressValidatorStrings.`fr-CH`
   - typings.expressValidator.expressValidatorStrings.`fr-CM`
   - typings.expressValidator.expressValidatorStrings.`fr-FR`
@@ -100,6 +117,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.expressValidator.expressValidatorStrings.`he-IL`
   - typings.expressValidator.expressValidatorStrings.`hu-HU`
   - typings.expressValidator.expressValidatorStrings.`id-ID`
+  - typings.expressValidator.expressValidatorStrings.`ir-IR`
   - typings.expressValidator.expressValidatorStrings.`it-CH`
   - typings.expressValidator.expressValidatorStrings.`it-IT`
   - typings.expressValidator.expressValidatorStrings.`it-SM`
@@ -107,11 +125,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.expressValidator.expressValidatorStrings.`ka-GE`
   - typings.expressValidator.expressValidatorStrings.`kk-KZ`
   - typings.expressValidator.expressValidatorStrings.`kl-GL`
+  - typings.expressValidator.expressValidatorStrings.`ko-KR`
+  - typings.expressValidator.expressValidatorStrings.`ky-KG`
   - typings.expressValidator.expressValidatorStrings.`lt-LT`
   - typings.expressValidator.expressValidatorStrings.`lv-LV`
+  - typings.expressValidator.expressValidatorStrings.`mg-MG`
+  - typings.expressValidator.expressValidatorStrings.`mn-MN`
   - typings.expressValidator.expressValidatorStrings.`ms-MY`
+  - typings.expressValidator.expressValidatorStrings.`my-MM`
   - typings.expressValidator.expressValidatorStrings.`mz-MZ`
   - typings.expressValidator.expressValidatorStrings.`nb-NO`
+  - typings.expressValidator.expressValidatorStrings.`nl-AW`
   - typings.expressValidator.expressValidatorStrings.`nl-BE`
   - typings.expressValidator.expressValidatorStrings.`nl-NL`
   - typings.expressValidator.expressValidatorStrings.`ne-NP`
@@ -120,6 +144,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.expressValidator.expressValidatorStrings.`pt-AO`
   - typings.expressValidator.expressValidatorStrings.`pt-BR`
   - typings.expressValidator.expressValidatorStrings.`pt-PT`
+  - typings.expressValidator.expressValidatorStrings.`ro-MD`
   - typings.expressValidator.expressValidatorStrings.`ro-RO`
   - typings.expressValidator.expressValidatorStrings.`ru-RU`
   - typings.expressValidator.expressValidatorStrings.`si-LK`
@@ -154,6 +179,8 @@ object MobilePhoneLocale {
   
   inline def `ar-EG`: typings.expressValidator.expressValidatorStrings.`ar-EG` = "ar-EG".asInstanceOf[typings.expressValidator.expressValidatorStrings.`ar-EG`]
   
+  inline def `ar-EH`: typings.expressValidator.expressValidatorStrings.`ar-EH` = "ar-EH".asInstanceOf[typings.expressValidator.expressValidatorStrings.`ar-EH`]
+  
   inline def `ar-IQ`: typings.expressValidator.expressValidatorStrings.`ar-IQ` = "ar-IQ".asInstanceOf[typings.expressValidator.expressValidatorStrings.`ar-IQ`]
   
   inline def `ar-JO`: typings.expressValidator.expressValidatorStrings.`ar-JO` = "ar-JO".asInstanceOf[typings.expressValidator.expressValidatorStrings.`ar-JO`]
@@ -175,6 +202,8 @@ object MobilePhoneLocale {
   inline def `ar-SY`: typings.expressValidator.expressValidatorStrings.`ar-SY` = "ar-SY".asInstanceOf[typings.expressValidator.expressValidatorStrings.`ar-SY`]
   
   inline def `ar-TN`: typings.expressValidator.expressValidatorStrings.`ar-TN` = "ar-TN".asInstanceOf[typings.expressValidator.expressValidatorStrings.`ar-TN`]
+  
+  inline def `ar-YE`: typings.expressValidator.expressValidatorStrings.`ar-YE` = "ar-YE".asInstanceOf[typings.expressValidator.expressValidatorStrings.`ar-YE`]
   
   inline def `az-AZ`: typings.expressValidator.expressValidatorStrings.`az-AZ` = "az-AZ".asInstanceOf[typings.expressValidator.expressValidatorStrings.`az-AZ`]
   
@@ -198,13 +227,23 @@ object MobilePhoneLocale {
   
   inline def `de-LU`: typings.expressValidator.expressValidatorStrings.`de-LU` = "de-LU".asInstanceOf[typings.expressValidator.expressValidatorStrings.`de-LU`]
   
+  inline def `dv-MV`: typings.expressValidator.expressValidatorStrings.`dv-MV` = "dv-MV".asInstanceOf[typings.expressValidator.expressValidatorStrings.`dv-MV`]
+  
   inline def `dz-BT`: typings.expressValidator.expressValidatorStrings.`dz-BT` = "dz-BT".asInstanceOf[typings.expressValidator.expressValidatorStrings.`dz-BT`]
   
+  inline def `el-CY`: typings.expressValidator.expressValidatorStrings.`el-CY` = "el-CY".asInstanceOf[typings.expressValidator.expressValidatorStrings.`el-CY`]
+  
   inline def `el-GR`: typings.expressValidator.expressValidatorStrings.`el-GR` = "el-GR".asInstanceOf[typings.expressValidator.expressValidatorStrings.`el-GR`]
+  
+  inline def `en-AG`: typings.expressValidator.expressValidatorStrings.`en-AG` = "en-AG".asInstanceOf[typings.expressValidator.expressValidatorStrings.`en-AG`]
+  
+  inline def `en-AI`: typings.expressValidator.expressValidatorStrings.`en-AI` = "en-AI".asInstanceOf[typings.expressValidator.expressValidatorStrings.`en-AI`]
   
   inline def `en-AU`: typings.expressValidator.expressValidatorStrings.`en-AU` = "en-AU".asInstanceOf[typings.expressValidator.expressValidatorStrings.`en-AU`]
   
   inline def `en-BM`: typings.expressValidator.expressValidatorStrings.`en-BM` = "en-BM".asInstanceOf[typings.expressValidator.expressValidatorStrings.`en-BM`]
+  
+  inline def `en-BS`: typings.expressValidator.expressValidatorStrings.`en-BS` = "en-BS".asInstanceOf[typings.expressValidator.expressValidatorStrings.`en-BS`]
   
   inline def `en-BW`: typings.expressValidator.expressValidatorStrings.`en-BW` = "en-BW".asInstanceOf[typings.expressValidator.expressValidatorStrings.`en-BW`]
   
@@ -226,9 +265,15 @@ object MobilePhoneLocale {
   
   inline def `en-IN`: typings.expressValidator.expressValidatorStrings.`en-IN` = "en-IN".asInstanceOf[typings.expressValidator.expressValidatorStrings.`en-IN`]
   
+  inline def `en-JM`: typings.expressValidator.expressValidatorStrings.`en-JM` = "en-JM".asInstanceOf[typings.expressValidator.expressValidatorStrings.`en-JM`]
+  
   inline def `en-KE`: typings.expressValidator.expressValidatorStrings.`en-KE` = "en-KE".asInstanceOf[typings.expressValidator.expressValidatorStrings.`en-KE`]
   
   inline def `en-KI`: typings.expressValidator.expressValidatorStrings.`en-KI` = "en-KI".asInstanceOf[typings.expressValidator.expressValidatorStrings.`en-KI`]
+  
+  inline def `en-KN`: typings.expressValidator.expressValidatorStrings.`en-KN` = "en-KN".asInstanceOf[typings.expressValidator.expressValidatorStrings.`en-KN`]
+  
+  inline def `en-LS`: typings.expressValidator.expressValidatorStrings.`en-LS` = "en-LS".asInstanceOf[typings.expressValidator.expressValidatorStrings.`en-LS`]
   
   inline def `en-MT`: typings.expressValidator.expressValidatorStrings.`en-MT` = "en-MT".asInstanceOf[typings.expressValidator.expressValidatorStrings.`en-MT`]
   
@@ -240,6 +285,8 @@ object MobilePhoneLocale {
   
   inline def `en-NZ`: typings.expressValidator.expressValidatorStrings.`en-NZ` = "en-NZ".asInstanceOf[typings.expressValidator.expressValidatorStrings.`en-NZ`]
   
+  inline def `en-PG`: typings.expressValidator.expressValidatorStrings.`en-PG` = "en-PG".asInstanceOf[typings.expressValidator.expressValidatorStrings.`en-PG`]
+  
   inline def `en-PH`: typings.expressValidator.expressValidatorStrings.`en-PH` = "en-PH".asInstanceOf[typings.expressValidator.expressValidatorStrings.`en-PH`]
   
   inline def `en-PK`: typings.expressValidator.expressValidatorStrings.`en-PK` = "en-PK".asInstanceOf[typings.expressValidator.expressValidatorStrings.`en-PK`]
@@ -249,6 +296,8 @@ object MobilePhoneLocale {
   inline def `en-SG`: typings.expressValidator.expressValidatorStrings.`en-SG` = "en-SG".asInstanceOf[typings.expressValidator.expressValidatorStrings.`en-SG`]
   
   inline def `en-SL`: typings.expressValidator.expressValidatorStrings.`en-SL` = "en-SL".asInstanceOf[typings.expressValidator.expressValidatorStrings.`en-SL`]
+  
+  inline def `en-SS`: typings.expressValidator.expressValidatorStrings.`en-SS` = "en-SS".asInstanceOf[typings.expressValidator.expressValidatorStrings.`en-SS`]
   
   inline def `en-TZ`: typings.expressValidator.expressValidatorStrings.`en-TZ` = "en-TZ".asInstanceOf[typings.expressValidator.expressValidatorStrings.`en-TZ`]
   
@@ -280,7 +329,11 @@ object MobilePhoneLocale {
   
   inline def `es-ES`: typings.expressValidator.expressValidatorStrings.`es-ES` = "es-ES".asInstanceOf[typings.expressValidator.expressValidatorStrings.`es-ES`]
   
+  inline def `es-HN`: typings.expressValidator.expressValidatorStrings.`es-HN` = "es-HN".asInstanceOf[typings.expressValidator.expressValidatorStrings.`es-HN`]
+  
   inline def `es-MX`: typings.expressValidator.expressValidatorStrings.`es-MX` = "es-MX".asInstanceOf[typings.expressValidator.expressValidatorStrings.`es-MX`]
+  
+  inline def `es-NI`: typings.expressValidator.expressValidatorStrings.`es-NI` = "es-NI".asInstanceOf[typings.expressValidator.expressValidatorStrings.`es-NI`]
   
   inline def `es-PA`: typings.expressValidator.expressValidatorStrings.`es-PA` = "es-PA".asInstanceOf[typings.expressValidator.expressValidatorStrings.`es-PA`]
   
@@ -296,6 +349,8 @@ object MobilePhoneLocale {
   
   inline def `et-EE`: typings.expressValidator.expressValidatorStrings.`et-EE` = "et-EE".asInstanceOf[typings.expressValidator.expressValidatorStrings.`et-EE`]
   
+  inline def `fa-AF`: typings.expressValidator.expressValidatorStrings.`fa-AF` = "fa-AF".asInstanceOf[typings.expressValidator.expressValidatorStrings.`fa-AF`]
+  
   inline def `fa-IR`: typings.expressValidator.expressValidatorStrings.`fa-IR` = "fa-IR".asInstanceOf[typings.expressValidator.expressValidatorStrings.`fa-IR`]
   
   inline def `fi-FI`: typings.expressValidator.expressValidatorStrings.`fi-FI` = "fi-FI".asInstanceOf[typings.expressValidator.expressValidatorStrings.`fi-FI`]
@@ -307,6 +362,10 @@ object MobilePhoneLocale {
   inline def `fr-BE`: typings.expressValidator.expressValidatorStrings.`fr-BE` = "fr-BE".asInstanceOf[typings.expressValidator.expressValidatorStrings.`fr-BE`]
   
   inline def `fr-BF`: typings.expressValidator.expressValidatorStrings.`fr-BF` = "fr-BF".asInstanceOf[typings.expressValidator.expressValidatorStrings.`fr-BF`]
+  
+  inline def `fr-BJ`: typings.expressValidator.expressValidatorStrings.`fr-BJ` = "fr-BJ".asInstanceOf[typings.expressValidator.expressValidatorStrings.`fr-BJ`]
+  
+  inline def `fr-CD`: typings.expressValidator.expressValidatorStrings.`fr-CD` = "fr-CD".asInstanceOf[typings.expressValidator.expressValidatorStrings.`fr-CD`]
   
   inline def `fr-CH`: typings.expressValidator.expressValidatorStrings.`fr-CH` = "fr-CH".asInstanceOf[typings.expressValidator.expressValidatorStrings.`fr-CH`]
   
@@ -332,6 +391,8 @@ object MobilePhoneLocale {
   
   inline def `id-ID`: typings.expressValidator.expressValidatorStrings.`id-ID` = "id-ID".asInstanceOf[typings.expressValidator.expressValidatorStrings.`id-ID`]
   
+  inline def `ir-IR`: typings.expressValidator.expressValidatorStrings.`ir-IR` = "ir-IR".asInstanceOf[typings.expressValidator.expressValidatorStrings.`ir-IR`]
+  
   inline def `it-CH`: typings.expressValidator.expressValidatorStrings.`it-CH` = "it-CH".asInstanceOf[typings.expressValidator.expressValidatorStrings.`it-CH`]
   
   inline def `it-IT`: typings.expressValidator.expressValidatorStrings.`it-IT` = "it-IT".asInstanceOf[typings.expressValidator.expressValidatorStrings.`it-IT`]
@@ -346,17 +407,29 @@ object MobilePhoneLocale {
   
   inline def `kl-GL`: typings.expressValidator.expressValidatorStrings.`kl-GL` = "kl-GL".asInstanceOf[typings.expressValidator.expressValidatorStrings.`kl-GL`]
   
+  inline def `ko-KR`: typings.expressValidator.expressValidatorStrings.`ko-KR` = "ko-KR".asInstanceOf[typings.expressValidator.expressValidatorStrings.`ko-KR`]
+  
+  inline def `ky-KG`: typings.expressValidator.expressValidatorStrings.`ky-KG` = "ky-KG".asInstanceOf[typings.expressValidator.expressValidatorStrings.`ky-KG`]
+  
   inline def `lt-LT`: typings.expressValidator.expressValidatorStrings.`lt-LT` = "lt-LT".asInstanceOf[typings.expressValidator.expressValidatorStrings.`lt-LT`]
   
   inline def `lv-LV`: typings.expressValidator.expressValidatorStrings.`lv-LV` = "lv-LV".asInstanceOf[typings.expressValidator.expressValidatorStrings.`lv-LV`]
   
+  inline def `mg-MG`: typings.expressValidator.expressValidatorStrings.`mg-MG` = "mg-MG".asInstanceOf[typings.expressValidator.expressValidatorStrings.`mg-MG`]
+  
+  inline def `mn-MN`: typings.expressValidator.expressValidatorStrings.`mn-MN` = "mn-MN".asInstanceOf[typings.expressValidator.expressValidatorStrings.`mn-MN`]
+  
   inline def `ms-MY`: typings.expressValidator.expressValidatorStrings.`ms-MY` = "ms-MY".asInstanceOf[typings.expressValidator.expressValidatorStrings.`ms-MY`]
+  
+  inline def `my-MM`: typings.expressValidator.expressValidatorStrings.`my-MM` = "my-MM".asInstanceOf[typings.expressValidator.expressValidatorStrings.`my-MM`]
   
   inline def `mz-MZ`: typings.expressValidator.expressValidatorStrings.`mz-MZ` = "mz-MZ".asInstanceOf[typings.expressValidator.expressValidatorStrings.`mz-MZ`]
   
   inline def `nb-NO`: typings.expressValidator.expressValidatorStrings.`nb-NO` = "nb-NO".asInstanceOf[typings.expressValidator.expressValidatorStrings.`nb-NO`]
   
   inline def `ne-NP`: typings.expressValidator.expressValidatorStrings.`ne-NP` = "ne-NP".asInstanceOf[typings.expressValidator.expressValidatorStrings.`ne-NP`]
+  
+  inline def `nl-AW`: typings.expressValidator.expressValidatorStrings.`nl-AW` = "nl-AW".asInstanceOf[typings.expressValidator.expressValidatorStrings.`nl-AW`]
   
   inline def `nl-BE`: typings.expressValidator.expressValidatorStrings.`nl-BE` = "nl-BE".asInstanceOf[typings.expressValidator.expressValidatorStrings.`nl-BE`]
   
@@ -371,6 +444,8 @@ object MobilePhoneLocale {
   inline def `pt-BR`: typings.expressValidator.expressValidatorStrings.`pt-BR` = "pt-BR".asInstanceOf[typings.expressValidator.expressValidatorStrings.`pt-BR`]
   
   inline def `pt-PT`: typings.expressValidator.expressValidatorStrings.`pt-PT` = "pt-PT".asInstanceOf[typings.expressValidator.expressValidatorStrings.`pt-PT`]
+  
+  inline def `ro-MD`: typings.expressValidator.expressValidatorStrings.`ro-MD` = "ro-MD".asInstanceOf[typings.expressValidator.expressValidatorStrings.`ro-MD`]
   
   inline def `ro-RO`: typings.expressValidator.expressValidatorStrings.`ro-RO` = "ro-RO".asInstanceOf[typings.expressValidator.expressValidatorStrings.`ro-RO`]
   

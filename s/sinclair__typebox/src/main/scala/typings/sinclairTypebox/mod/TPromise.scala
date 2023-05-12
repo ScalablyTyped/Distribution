@@ -1,6 +1,7 @@
 package typings.sinclairTypebox.mod
 
-import typings.sinclairTypebox.sinclairTypeboxStrings.promise
+import typings.sinclairTypebox.sinclairTypeboxStrings.Promise
+import typings.sinclairTypebox.sinclairTypeboxStrings.`object`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,6 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TPromise[T /* <: TSchema */]
   extends StObject
      with TSchema {
+  
+  var instanceOf: Promise = js.native
   
   var item: TSchema = js.native
   
@@ -20,5 +23,5 @@ trait TPromise[T /* <: TSchema */]
     ]
   ] = js.native
   
-  var `type`: promise = js.native
+  var `type`: `object` = js.native
 }

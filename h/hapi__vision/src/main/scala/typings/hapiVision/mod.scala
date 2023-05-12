@@ -2,13 +2,12 @@ package typings.hapiVision
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.hapiHapi.mod.Plugin
-import typings.hapiHapi.mod.ReqRefDefaults
-import typings.hapiHapi.mod.Request
-import typings.hapiHapi.mod.ResponseObject
+import typings.hapiHapi.libTypesPluginMod.Plugin
+import typings.hapiHapi.libTypesResponseMod.ResponseObject
 import typings.hapiVision.anon.Context
 import typings.hapiVision.hapiVisionStrings.async
 import typings.hapiVision.hapiVisionStrings.sync
+import typings.hapiVision.mod.hapiHapiAugmentingMod.Request
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ object mod extends Shortcut {
   
   @JSImport("@hapi/vision", JSImport.Namespace)
   @js.native
-  val ^ : Plugin[ServerViewsConfiguration] = js.native
+  val ^ : Plugin[ServerViewsConfiguration, Unit] = js.native
   
   /**
     * Options passed to module when compiling template.
@@ -289,7 +288,7 @@ object mod extends Shortcut {
       * When rendering views, the global context will be merged with any context object specified on the handler or using reply.view().
       * When multiple context objects are used, values from the global context always have lowest precedence.
       */
-    var context: js.UndefOr[js.Object | (js.Function1[/* request */ Request[ReqRefDefaults], js.Object])] = js.undefined
+    var context: js.UndefOr[js.Object | (js.Function1[/* request */ Request, js.Object])] = js.undefined
     
     /** the text encoding used by the templates when reading the files and outputting the result. Defaults to 'utf8'. */
     var encoding: js.UndefOr[String] = js.undefined
@@ -351,9 +350,9 @@ object mod extends Shortcut {
       
       inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
       
-      inline def setContext(value: js.Object | (js.Function1[/* request */ Request[ReqRefDefaults], js.Object])): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Object | (js.Function1[/* request */ Request, js.Object])): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      inline def setContextFunction1(value: /* request */ Request[ReqRefDefaults] => js.Object): Self = StObject.set(x, "context", js.Any.fromFunction1(value))
+      inline def setContextFunction1(value: /* request */ Request => js.Object): Self = StObject.set(x, "context", js.Any.fromFunction1(value))
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
@@ -443,10 +442,10 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = Plugin[ServerViewsConfiguration]
+  type _To = Plugin[ServerViewsConfiguration, Unit]
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Plugin[ServerViewsConfiguration] = ^
+  override def _to: Plugin[ServerViewsConfiguration, Unit] = ^
   
   /* augmented module */
   object hapiHapiAugmentingMod {
@@ -519,13 +518,13 @@ object mod extends Shortcut {
       inline def apply(
         getViewsManager: () => ViewManager,
         render: (/* template */ String, /* context */ js.UndefOr[Any], /* options */ js.UndefOr[ServerViewsConfiguration]) => js.Promise[String]
-      ): typings.hapiVision.mod.hapiHapiAugmentingMod.Request = {
+      ): Request = {
         val __obj = js.Dynamic.literal(getViewsManager = js.Any.fromFunction0(getViewsManager), render = js.Any.fromFunction3(render))
-        __obj.asInstanceOf[typings.hapiVision.mod.hapiHapiAugmentingMod.Request]
+        __obj.asInstanceOf[Request]
       }
       
       @scala.inline
-      implicit open class MutableBuilder[Self <: typings.hapiVision.mod.hapiHapiAugmentingMod.Request] (val x: Self) extends AnyVal {
+      implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
         
         inline def setGetViewsManager(value: () => ViewManager): Self = StObject.set(x, "getViewsManager", js.Any.fromFunction0(value))
         

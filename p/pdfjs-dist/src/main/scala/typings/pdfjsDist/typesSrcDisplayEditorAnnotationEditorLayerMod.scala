@@ -44,18 +44,10 @@ object typesSrcDisplayEditorAnnotationEditorLayerMod {
     def addOrRebuild(editor: AnnotationEditor): Unit = js.native
     
     /**
-      * Add an editor in the annotation storage.
-      * @param {AnnotationEditor} editor
-      */
-    def addToAnnotationStorage(editor: AnnotationEditor): Unit = js.native
-    
-    /**
       * Add a new editor and make this addition undoable.
       * @param {AnnotationEditor} editor
       */
     def addUndoableEditor(editor: AnnotationEditor): Unit = js.native
-    
-    var annotationStorage: typings.pdfjsDist.typesSrcDisplayAnnotationStorageMod.AnnotationStorage = js.native
     
     def attach(editor: Any): Unit = js.native
     
@@ -108,6 +100,8 @@ object typesSrcDisplayEditorAnnotationEditorLayerMod {
       */
     def getNextId(): String = js.native
     
+    def isEmpty: Boolean = js.native
+    
     /**
       * Check if the editor is selected.
       * @param {AnnotationEditor} editor
@@ -146,26 +140,15 @@ object typesSrcDisplayEditorAnnotationEditorLayerMod {
     
     /**
       * Render the main editor.
-      * @param {Object} parameters
+      * @param {RenderEditorLayerOptions} parameters
       */
-    def render(parameters: js.Object): Unit = js.native
-    
-    /**
-      * Get the scale factor from the viewport.
-      * @returns {number}
-      */
-    def scaleFactor: Double = js.native
+    def render(param0: RenderEditorLayerOptions): Unit = js.native
     
     /**
       * Set the current editor.
       * @param {AnnotationEditor} editor
       */
     def setActiveEditor(editor: AnnotationEditor): Unit = js.native
-    
-    /**
-      * Set the dimensions of the main div.
-      */
-    def setDimensions(): Unit = js.native
     
     /**
       * Set the editing state.
@@ -193,9 +176,9 @@ object typesSrcDisplayEditorAnnotationEditorLayerMod {
     
     /**
       * Update the main editor.
-      * @param {Object} parameters
+      * @param {RenderEditorLayerOptions} parameters
       */
-    def update(parameters: js.Object): Unit = js.native
+    def update(param0: RenderEditorLayerOptions): Unit = js.native
     
     /**
       * The mode has changed: it must be updated.
@@ -210,9 +193,7 @@ object typesSrcDisplayEditorAnnotationEditorLayerMod {
       */
     def updateToolbar(mode: Double): Unit = js.native
     
-    var viewport: Any = js.native
-    
-    def viewportBaseDimensions: js.Array[Any] = js.native
+    var viewport: js.UndefOr[typings.pdfjsDist.typesSrcDisplayDisplayUtilsMod.PageViewport] = js.native
   }
   /* static members */
   object AnnotationEditorLayer {
@@ -233,8 +214,6 @@ object typesSrcDisplayEditorAnnotationEditorLayerMod {
     
     var accessibilityManager: js.UndefOr[Any] = js.undefined
     
-    var annotationStorage: AnnotationStorage
-    
     var div: HTMLDivElement
     
     var enabled: Boolean
@@ -250,7 +229,6 @@ object typesSrcDisplayEditorAnnotationEditorLayerMod {
   object AnnotationEditorLayerOptions {
     
     inline def apply(
-      annotationStorage: AnnotationStorage,
       div: HTMLDivElement,
       enabled: Boolean,
       l10n: Any,
@@ -258,7 +236,7 @@ object typesSrcDisplayEditorAnnotationEditorLayerMod {
       pageIndex: Double,
       uiManager: AnnotationEditorUIManager
     ): AnnotationEditorLayerOptions = {
-      val __obj = js.Dynamic.literal(annotationStorage = annotationStorage.asInstanceOf[js.Any], div = div.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], l10n = l10n.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], pageIndex = pageIndex.asInstanceOf[js.Any], uiManager = uiManager.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(div = div.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], l10n = l10n.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], pageIndex = pageIndex.asInstanceOf[js.Any], uiManager = uiManager.asInstanceOf[js.Any])
       __obj.asInstanceOf[AnnotationEditorLayerOptions]
     }
     
@@ -268,8 +246,6 @@ object typesSrcDisplayEditorAnnotationEditorLayerMod {
       inline def setAccessibilityManager(value: Any): Self = StObject.set(x, "accessibilityManager", value.asInstanceOf[js.Any])
       
       inline def setAccessibilityManagerUndefined: Self = StObject.set(x, "accessibilityManager", js.undefined)
-      
-      inline def setAnnotationStorage(value: AnnotationStorage): Self = StObject.set(x, "annotationStorage", value.asInstanceOf[js.Any])
       
       inline def setDiv(value: HTMLDivElement): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
       
@@ -287,9 +263,27 @@ object typesSrcDisplayEditorAnnotationEditorLayerMod {
   
   type AnnotationEditorUIManager = typings.pdfjsDist.typesSrcDisplayEditorToolsMod.AnnotationEditorUIManager
   
-  type AnnotationStorage = typings.pdfjsDist.typesSrcDisplayAnnotationStorageMod.AnnotationStorage
-  
   type IL10n = Any
+  
+  type PageViewport = typings.pdfjsDist.typesSrcDisplayDisplayUtilsMod.PageViewport
+  
+  trait RenderEditorLayerOptions extends StObject {
+    
+    var viewport: PageViewport
+  }
+  object RenderEditorLayerOptions {
+    
+    inline def apply(viewport: PageViewport): RenderEditorLayerOptions = {
+      val __obj = js.Dynamic.literal(viewport = viewport.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RenderEditorLayerOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderEditorLayerOptions] (val x: Self) extends AnyVal {
+      
+      inline def setViewport(value: PageViewport): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
+    }
+  }
   
   type TextAccessibilityManager = Any
 }

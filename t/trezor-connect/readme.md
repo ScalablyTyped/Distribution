@@ -1,7 +1,7 @@
 
 # Scala.js typings for trezor-connect
 
-Typings are for version 8.2.11
+Typings are for version 8.2.12
 
 ## Library description:
 High-level javascript interface for Trezor hardware wallet.

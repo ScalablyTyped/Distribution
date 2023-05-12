@@ -16,7 +16,7 @@ object libIconsFlagOutlinedMod extends Shortcut {
   @js.native
   trait FlagOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_FlagOutlinedIconType: String = js.native

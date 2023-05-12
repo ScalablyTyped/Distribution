@@ -5,12 +5,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined pkijs.pkijs.PkiObjectParameters & std.Partial<pkijs.pkijs.IEncryptedContentInfo> */
+/* Inlined pkijs.pkijs.PkiObjectParameters & std.Partial<pkijs.pkijs.IEncryptedContentInfo> & pkijs.pkijs.EncryptedContentInfoSplit */
 trait EncryptedContentParameters extends StObject {
   
   var contentEncryptionAlgorithm: js.UndefOr[AlgorithmIdentifier] = js.undefined
   
   var contentType: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Disables OctetString splitting for encryptedContent.
+    */
+  var disableSplit: js.UndefOr[Boolean] = js.undefined
   
   var encryptedContent: js.UndefOr[OctetString] = js.undefined
   
@@ -33,6 +38,10 @@ object EncryptedContentParameters {
     inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    
+    inline def setDisableSplit(value: Boolean): Self = StObject.set(x, "disableSplit", value.asInstanceOf[js.Any])
+    
+    inline def setDisableSplitUndefined: Self = StObject.set(x, "disableSplit", js.undefined)
     
     inline def setEncryptedContent(value: OctetString): Self = StObject.set(x, "encryptedContent", value.asInstanceOf[js.Any])
     

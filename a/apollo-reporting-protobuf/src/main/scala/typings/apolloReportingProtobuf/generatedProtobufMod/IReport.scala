@@ -19,6 +19,9 @@ trait IReport extends StObject {
   
   /** Report tracesPerQuery */
   var tracesPerQuery: js.UndefOr[StringDictionary[ITracesAndStats] | Null] = js.undefined
+  
+  /** Report tracesPreAggregated */
+  var tracesPreAggregated: js.UndefOr[Boolean | Null] = js.undefined
 }
 object IReport {
   
@@ -53,5 +56,11 @@ object IReport {
     inline def setTracesPerQueryNull: Self = StObject.set(x, "tracesPerQuery", null)
     
     inline def setTracesPerQueryUndefined: Self = StObject.set(x, "tracesPerQuery", js.undefined)
+    
+    inline def setTracesPreAggregated(value: Boolean): Self = StObject.set(x, "tracesPreAggregated", value.asInstanceOf[js.Any])
+    
+    inline def setTracesPreAggregatedNull: Self = StObject.set(x, "tracesPreAggregated", null)
+    
+    inline def setTracesPreAggregatedUndefined: Self = StObject.set(x, "tracesPreAggregated", js.undefined)
   }
 }

@@ -23,7 +23,9 @@ import typings.interactjsTypes.interactjsTypesStrings.compositionend
 import typings.interactjsTypes.interactjsTypesStrings.compositionstart
 import typings.interactjsTypes.interactjsTypesStrings.compositionupdate
 import typings.interactjsTypes.interactjsTypesStrings.contextmenu
+import typings.interactjsTypes.interactjsTypesStrings.copy
 import typings.interactjsTypes.interactjsTypesStrings.cuechange
+import typings.interactjsTypes.interactjsTypesStrings.cut
 import typings.interactjsTypes.interactjsTypesStrings.dblclick
 import typings.interactjsTypes.interactjsTypesStrings.devicemotion
 import typings.interactjsTypes.interactjsTypesStrings.deviceorientation
@@ -71,6 +73,7 @@ import typings.interactjsTypes.interactjsTypesStrings.online
 import typings.interactjsTypes.interactjsTypesStrings.orientationchange
 import typings.interactjsTypes.interactjsTypesStrings.pagehide
 import typings.interactjsTypes.interactjsTypesStrings.pageshow
+import typings.interactjsTypes.interactjsTypesStrings.paste
 import typings.interactjsTypes.interactjsTypesStrings.pause
 import typings.interactjsTypes.interactjsTypesStrings.play
 import typings.interactjsTypes.interactjsTypesStrings.playing
@@ -125,6 +128,7 @@ import typings.std.BarProp
 import typings.std.BeforeUnloadEvent
 import typings.std.CSSStyleDeclaration
 import typings.std.CacheStorage
+import typings.std.ClipboardEvent
 import typings.std.CompositionEvent
 import typings.std.Crypto
 import typings.std.CustomElementRegistry
@@ -564,6 +568,20 @@ trait Windowwrapargsanyanyundef
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
+  def addEventListener_copy(`type`: copy, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_copy(
+    `type`: copy,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_copy(
+    `type`: copy,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
   def addEventListener_cuechange(
     `type`: cuechange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]
@@ -578,6 +596,20 @@ trait Windowwrapargsanyanyundef
   def addEventListener_cuechange(
     `type`: cuechange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_cut(`type`: cut, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_cut(
+    `type`: cut,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_cut(
+    `type`: cut,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
@@ -1284,6 +1316,20 @@ trait Windowwrapargsanyanyundef
   def addEventListener_pageshow(
     `type`: pageshow,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_paste(`type`: paste, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_paste(
+    `type`: paste,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_paste(
+    `type`: paste,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
@@ -2281,7 +2327,13 @@ trait Windowwrapargsanyanyundef
   var oncontextmenu: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
   
   /* standard dom */
+  var oncopy: (js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]) | Null = js.native
+  
+  /* standard dom */
   var oncuechange: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
+  
+  /* standard dom */
+  var oncut: (js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]) | Null = js.native
   
   /**
     * Fires when the user double-clicks the object.
@@ -2517,6 +2569,9 @@ trait Windowwrapargsanyanyundef
   
   /* standard dom */
   var onpageshow: (js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, Any]) | Null = js.native
+  
+  /* standard dom */
+  var onpaste: (js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]) | Null = js.native
   
   /**
     * Occurs when playback is paused.
@@ -3168,6 +3223,20 @@ trait Windowwrapargsanyanyundef
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
+  def removeEventListener_copy(`type`: copy, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_copy(
+    `type`: copy,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_copy(
+    `type`: copy,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
   def removeEventListener_cuechange(
     `type`: cuechange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]
@@ -3182,6 +3251,20 @@ trait Windowwrapargsanyanyundef
   def removeEventListener_cuechange(
     `type`: cuechange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_cut(`type`: cut, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_cut(
+    `type`: cut,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_cut(
+    `type`: cut,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
@@ -3888,6 +3971,20 @@ trait Windowwrapargsanyanyundef
   def removeEventListener_pageshow(
     `type`: pageshow,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_paste(`type`: paste, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_paste(
+    `type`: paste,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_paste(
+    `type`: paste,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")

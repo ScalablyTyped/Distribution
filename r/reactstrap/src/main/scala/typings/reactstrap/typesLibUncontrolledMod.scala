@@ -21,7 +21,7 @@ object typesLibUncontrolledMod {
     def this(props: UncontrolledAccordionProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: UncontrolledAccordionProps, context: Any) = this()
   }
@@ -33,7 +33,7 @@ object typesLibUncontrolledMod {
     def this(props: UncontrolledAlertProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: UncontrolledAlertProps, context: Any) = this()
   }
@@ -45,7 +45,7 @@ object typesLibUncontrolledMod {
     def this(props: UncontrolledDropdownProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: UncontrolledDropdownProps, context: Any) = this()
   }
@@ -57,7 +57,7 @@ object typesLibUncontrolledMod {
     def this(props: UncontrolledCarouselProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: UncontrolledCarouselProps, context: Any) = this()
   }
@@ -69,7 +69,7 @@ object typesLibUncontrolledMod {
     def this(props: UncontrolledCollapseProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: UncontrolledCollapseProps, context: Any) = this()
   }
@@ -81,7 +81,7 @@ object typesLibUncontrolledMod {
     def this(props: UncontrolledDropdownProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: UncontrolledDropdownProps, context: Any) = this()
   }
@@ -93,7 +93,7 @@ object typesLibUncontrolledMod {
     def this(props: UncontrolledPopoverProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: UncontrolledPopoverProps, context: Any) = this()
   }
@@ -105,7 +105,7 @@ object typesLibUncontrolledMod {
     def this(props: UncontrolledTooltipProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: UncontrolledTooltipProps, context: Any) = this()
   }

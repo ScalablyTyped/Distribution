@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.sinclairTypebox.mod._TAnySchema because Already inherited */ @js.native
 trait TBoolean
   extends StObject
-     with TSchema {
+     with TSchema
+     with _TTemplateLiteralKind {
   
   @JSName("static")
   var static_TBoolean: Boolean = js.native

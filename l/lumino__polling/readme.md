@@ -1,7 +1,7 @@
 
 # Scala.js typings for lumino__polling
 
-Typings are for version 1.11.2
+Typings are for version 2.1.1
 
 ## Library description:
 Lumino Polling

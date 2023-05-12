@@ -695,6 +695,25 @@ trait PlotOptions extends StObject {
   var flags: js.UndefOr[PlotFlagsOptions] = js.undefined
   
   /**
+    * (Highmaps) A flowmap series is a series laid out on top of a map series
+    * allowing to display route paths (e.g. flight or ship routes) or flows on
+    * a map. It creates a link between two points on a map chart.
+    *
+    * In TypeScript the type option must always be set.
+    *
+    * Configuration options for the series are given in three levels:
+    *
+    * 1. Options for all series in a chart are defined in the
+    * plotOptions.series object.
+    *
+    * 2. Options for all `flowmap` series are defined in plotOptions.flowmap.
+    *
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
+    */
+  var flowmap: js.UndefOr[PlotFlowmapOptions] = js.undefined
+  
+  /**
     * (Highcharts) Funnel charts are a type of chart often used to visualize
     * stages in a sales project, where the top are the initial stages with the
     * most clients. It requires that the modules/funnel.js file is loaded.
@@ -770,6 +789,27 @@ trait PlotOptions extends StObject {
     * (see online documentation for example)
     */
   var gauge: js.UndefOr[PlotGaugeOptions] = js.undefined
+  
+  /**
+    * (Highmaps) A `geoheatmap` series is a variety of heatmap series, composed
+    * into the map projection, where the units are expressed in the latitude
+    * and longitude, and individual values contained in a matrix are
+    * represented as colors.
+    *
+    * In TypeScript the type option must always be set.
+    *
+    * Configuration options for the series are given in three levels:
+    *
+    * 1. Options for all series in a chart are defined in the
+    * plotOptions.series object.
+    *
+    * 2. Options for all `geoheatmap` series are defined in
+    * plotOptions.geoheatmap.
+    *
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
+    */
+  var geoheatmap: js.UndefOr[PlotGeoheatmapOptions] = js.undefined
   
   /**
     * (Highcharts, Highmaps) A heatmap is a graphical representation of data
@@ -1349,6 +1389,25 @@ trait PlotOptions extends StObject {
     * (see online documentation for example)
     */
   var pc: js.UndefOr[PlotPcOptions] = js.undefined
+  
+  /**
+    * (Highcharts) A pictorial chart uses vector images to represents the data.
+    * The shape of the data point is taken from the path parameter.
+    *
+    * In TypeScript the type option must always be set.
+    *
+    * Configuration options for the series are given in three levels:
+    *
+    * 1. Options for all series in a chart are defined in the
+    * plotOptions.series object.
+    *
+    * 2. Options for all `pictorial` series are defined in
+    * plotOptions.pictorial.
+    *
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
+    */
+  var pictorial: js.UndefOr[PlotPictorialOptions] = js.undefined
   
   /**
     * (Highcharts, Highmaps) A pie chart is a circular graphic which is divided
@@ -2316,6 +2375,10 @@ object PlotOptions {
     
     inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
     
+    inline def setFlowmap(value: PlotFlowmapOptions): Self = StObject.set(x, "flowmap", value.asInstanceOf[js.Any])
+    
+    inline def setFlowmapUndefined: Self = StObject.set(x, "flowmap", js.undefined)
+    
     inline def setFunnel(value: PlotFunnelOptions): Self = StObject.set(x, "funnel", value.asInstanceOf[js.Any])
     
     inline def setFunnel3d(value: PlotFunnel3dOptions): Self = StObject.set(x, "funnel3d", value.asInstanceOf[js.Any])
@@ -2331,6 +2394,10 @@ object PlotOptions {
     inline def setGauge(value: PlotGaugeOptions): Self = StObject.set(x, "gauge", value.asInstanceOf[js.Any])
     
     inline def setGaugeUndefined: Self = StObject.set(x, "gauge", js.undefined)
+    
+    inline def setGeoheatmap(value: PlotGeoheatmapOptions): Self = StObject.set(x, "geoheatmap", value.asInstanceOf[js.Any])
+    
+    inline def setGeoheatmapUndefined: Self = StObject.set(x, "geoheatmap", js.undefined)
     
     inline def setHeatmap(value: PlotHeatmapOptions): Self = StObject.set(x, "heatmap", value.asInstanceOf[js.Any])
     
@@ -2451,6 +2518,10 @@ object PlotOptions {
     inline def setPc(value: PlotPcOptions): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
     
     inline def setPcUndefined: Self = StObject.set(x, "pc", js.undefined)
+    
+    inline def setPictorial(value: PlotPictorialOptions): Self = StObject.set(x, "pictorial", value.asInstanceOf[js.Any])
+    
+    inline def setPictorialUndefined: Self = StObject.set(x, "pictorial", js.undefined)
     
     inline def setPie(value: PlotPieOptions): Self = StObject.set(x, "pie", value.asInstanceOf[js.Any])
     

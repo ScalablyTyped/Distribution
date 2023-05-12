@@ -3,10 +3,13 @@ package typings.angularDevkitArchitect
 import typings.angularDevkitArchitect.srcApiMod.BuilderInfo
 import typings.angularDevkitArchitect.srcApiMod.Target
 import typings.angularDevkitArchitect.srcApiMod.TypedBuilderProgress
+import typings.angularDevkitArchitect.srcJobsApiMod.JobName
+import typings.angularDevkitArchitect.srcJobsApiMod.Scheduler
+import typings.angularDevkitArchitect.srcJobsTypesMod.DeepReadonly
 import typings.angularDevkitArchitect.srcProgressSchemaMod.State.Running
 import typings.angularDevkitArchitect.srcProgressSchemaMod.State.Stopped
 import typings.angularDevkitArchitect.srcProgressSchemaMod.State.Waiting
-import typings.angularDevkitCore.srcExperimentalJobsApiMod.Scheduler
+import typings.angularDevkitCore.srcJsonSchemaSchemaMod.JsonSchema
 import typings.angularDevkitCore.srcJsonUtilsMod.JsonValue
 import typings.angularDevkitCore.srcLoggerLoggerMod.LoggerApi
 import org.scalablytyped.runtime.StObject
@@ -14,53 +17,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
-  
-  trait Analytics extends StObject {
-    
-    var analytics: js.UndefOr[typings.angularDevkitCore.srcAnalyticsApiMod.Analytics] = js.undefined
-    
-    var currentDirectory: String | js.Promise[String]
-    
-    var logger: LoggerApi
-    
-    var scheduler: Scheduler[JsonValue, JsonValue, JsonValue]
-    
-    var target: js.UndefOr[Target] = js.undefined
-    
-    var workspaceRoot: String | js.Promise[String]
-  }
-  object Analytics {
-    
-    inline def apply(
-      currentDirectory: String | js.Promise[String],
-      logger: LoggerApi,
-      scheduler: Scheduler[JsonValue, JsonValue, JsonValue],
-      workspaceRoot: String | js.Promise[String]
-    ): Analytics = {
-      val __obj = js.Dynamic.literal(currentDirectory = currentDirectory.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any], scheduler = scheduler.asInstanceOf[js.Any], workspaceRoot = workspaceRoot.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Analytics]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Analytics] (val x: Self) extends AnyVal {
-      
-      inline def setAnalytics(value: typings.angularDevkitCore.srcAnalyticsApiMod.Analytics): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
-      
-      inline def setAnalyticsUndefined: Self = StObject.set(x, "analytics", js.undefined)
-      
-      inline def setCurrentDirectory(value: String | js.Promise[String]): Self = StObject.set(x, "currentDirectory", value.asInstanceOf[js.Any])
-      
-      inline def setLogger(value: LoggerApi): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
-      
-      inline def setScheduler(value: Scheduler[JsonValue, JsonValue, JsonValue]): Self = StObject.set(x, "scheduler", value.asInstanceOf[js.Any])
-      
-      inline def setTarget(value: Target): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
-      
-      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
-      
-      inline def setWorkspaceRoot(value: String | js.Promise[String]): Self = StObject.set(x, "workspaceRoot", value.asInstanceOf[js.Any])
-    }
-  }
   
   trait Builder extends StObject {
     
@@ -124,13 +80,13 @@ object anon {
   
   trait CurrentDirectory extends StObject {
     
-    var analytics: js.UndefOr[typings.angularDevkitCore.srcAnalyticsApiMod.Analytics] = js.undefined
-    
     var currentDirectory: String | js.Promise[String]
     
     var logger: LoggerApi
     
     var scheduler: Scheduler[JsonValue, JsonValue, JsonValue]
+    
+    var target: js.UndefOr[Target] = js.undefined
     
     var workspaceRoot: String | js.Promise[String]
   }
@@ -149,15 +105,15 @@ object anon {
     @scala.inline
     implicit open class MutableBuilder[Self <: CurrentDirectory] (val x: Self) extends AnyVal {
       
-      inline def setAnalytics(value: typings.angularDevkitCore.srcAnalyticsApiMod.Analytics): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
-      
-      inline def setAnalyticsUndefined: Self = StObject.set(x, "analytics", js.undefined)
-      
       inline def setCurrentDirectory(value: String | js.Promise[String]): Self = StObject.set(x, "currentDirectory", value.asInstanceOf[js.Any])
       
       inline def setLogger(value: LoggerApi): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
       inline def setScheduler(value: Scheduler[JsonValue, JsonValue, JsonValue]): Self = StObject.set(x, "scheduler", value.asInstanceOf[js.Any])
+      
+      inline def setTarget(value: Target): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
       inline def setWorkspaceRoot(value: String | js.Promise[String]): Self = StObject.set(x, "workspaceRoot", value.asInstanceOf[js.Any])
     }
@@ -186,6 +142,197 @@ object anon {
       inline def setErrorNull: Self = StObject.set(x, "error", null)
       
       inline def setState(value: typings.angularDevkitArchitect.srcProgressSchemaMod.State.Error): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Logger extends StObject {
+    
+    var currentDirectory: String | js.Promise[String]
+    
+    var logger: LoggerApi
+    
+    var scheduler: Scheduler[JsonValue, JsonValue, JsonValue]
+    
+    var workspaceRoot: String | js.Promise[String]
+  }
+  object Logger {
+    
+    inline def apply(
+      currentDirectory: String | js.Promise[String],
+      logger: LoggerApi,
+      scheduler: Scheduler[JsonValue, JsonValue, JsonValue],
+      workspaceRoot: String | js.Promise[String]
+    ): Logger = {
+      val __obj = js.Dynamic.literal(currentDirectory = currentDirectory.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any], scheduler = scheduler.asInstanceOf[js.Any], workspaceRoot = workspaceRoot.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Logger]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
+      
+      inline def setCurrentDirectory(value: String | js.Promise[String]): Self = StObject.set(x, "currentDirectory", value.asInstanceOf[js.Any])
+      
+      inline def setLogger(value: LoggerApi): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      
+      inline def setScheduler(value: Scheduler[JsonValue, JsonValue, JsonValue]): Self = StObject.set(x, "scheduler", value.asInstanceOf[js.Any])
+      
+      inline def setWorkspaceRoot(value: String | js.Promise[String]): Self = StObject.set(x, "workspaceRoot", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined std.Partial<@angular-devkit/architect.@angular-devkit/architect/src/jobs/api.JobDescription> */
+  trait PartialJobDescription extends StObject {
+    
+    var argument: js.UndefOr[DeepReadonly[JsonSchema]] = js.undefined
+    
+    var input: js.UndefOr[DeepReadonly[JsonSchema]] = js.undefined
+    
+    var name: js.UndefOr[JobName] = js.undefined
+    
+    var output: js.UndefOr[DeepReadonly[JsonSchema]] = js.undefined
+  }
+  object PartialJobDescription {
+    
+    inline def apply(): PartialJobDescription = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialJobDescription]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialJobDescription] (val x: Self) extends AnyVal {
+      
+      inline def setArgument(value: DeepReadonly[JsonSchema]): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+      
+      inline def setArgumentUndefined: Self = StObject.set(x, "argument", js.undefined)
+      
+      inline def setInput(value: DeepReadonly[JsonSchema]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      
+      inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+      
+      inline def setName(value: JobName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setOutput(value: DeepReadonly[JsonSchema]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      
+      inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+    }
+  }
+  
+  /* Inlined std.Partial<std.Readonly<@angular-devkit/architect.@angular-devkit/architect/src/jobs/api.JobDescription>> */
+  trait PartialReadonlyJobDescrip extends StObject {
+    
+    var argument: js.UndefOr[DeepReadonly[JsonSchema]] = js.undefined
+    
+    var input: js.UndefOr[DeepReadonly[JsonSchema]] = js.undefined
+    
+    var name: js.UndefOr[JobName] = js.undefined
+    
+    var output: js.UndefOr[DeepReadonly[JsonSchema]] = js.undefined
+  }
+  object PartialReadonlyJobDescrip {
+    
+    inline def apply(): PartialReadonlyJobDescrip = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialReadonlyJobDescrip]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialReadonlyJobDescrip] (val x: Self) extends AnyVal {
+      
+      inline def setArgument(value: DeepReadonly[JsonSchema]): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+      
+      inline def setArgumentUndefined: Self = StObject.set(x, "argument", js.undefined)
+      
+      inline def setInput(value: DeepReadonly[JsonSchema]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      
+      inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+      
+      inline def setName(value: JobName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setOutput(value: DeepReadonly[JsonSchema]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      
+      inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+    }
+  }
+  
+  /* Inlined std.Partial<@angular-devkit/architect.@angular-devkit/architect/src/jobs/types.Readwrite<@angular-devkit/architect.@angular-devkit/architect/src/jobs/api.JobDescription>> */
+  trait PartialReadwriteJobDescri extends StObject {
+    
+    var argument: js.UndefOr[DeepReadonly[JsonSchema]] = js.undefined
+    
+    var input: js.UndefOr[DeepReadonly[JsonSchema]] = js.undefined
+    
+    var name: js.UndefOr[JobName] = js.undefined
+    
+    var output: js.UndefOr[DeepReadonly[JsonSchema]] = js.undefined
+  }
+  object PartialReadwriteJobDescri {
+    
+    inline def apply(): PartialReadwriteJobDescri = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialReadwriteJobDescri]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialReadwriteJobDescri] (val x: Self) extends AnyVal {
+      
+      inline def setArgument(value: DeepReadonly[JsonSchema]): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+      
+      inline def setArgumentUndefined: Self = StObject.set(x, "argument", js.undefined)
+      
+      inline def setInput(value: DeepReadonly[JsonSchema]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      
+      inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+      
+      inline def setName(value: JobName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setOutput(value: DeepReadonly[JsonSchema]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      
+      inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+    }
+  }
+  
+  /* Inlined @angular-devkit/architect.@angular-devkit/architect/src/jobs/simple-registry.RegisterJobOptions & {  name :string} */
+  trait RegisterJobOptionsnamestr extends StObject {
+    
+    var argument: js.UndefOr[DeepReadonly[JsonSchema]] = js.undefined
+    
+    var input: js.UndefOr[DeepReadonly[JsonSchema]] = js.undefined
+    
+    var name: js.UndefOr[JobName] = js.undefined
+    
+    var output: js.UndefOr[DeepReadonly[JsonSchema]] = js.undefined
+  }
+  object RegisterJobOptionsnamestr {
+    
+    inline def apply(): RegisterJobOptionsnamestr = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[RegisterJobOptionsnamestr]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegisterJobOptionsnamestr] (val x: Self) extends AnyVal {
+      
+      inline def setArgument(value: DeepReadonly[JsonSchema]): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+      
+      inline def setArgumentUndefined: Self = StObject.set(x, "argument", js.undefined)
+      
+      inline def setInput(value: DeepReadonly[JsonSchema]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      
+      inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+      
+      inline def setName(value: JobName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setOutput(value: DeepReadonly[JsonSchema]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      
+      inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
     }
   }
   

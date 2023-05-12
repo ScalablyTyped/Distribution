@@ -1,5 +1,6 @@
 package typings.rcPicker
 
+import typings.rcPicker.esInterfaceMod.CellRenderInfo
 import typings.rcPicker.esInterfaceMod.CustomFormat
 import typings.rcPicker.esInterfaceMod.Locale
 import typings.rcPicker.esInterfaceMod.NullableDateType
@@ -9,7 +10,7 @@ import typings.rcPicker.esInterfaceMod.RangeValue
 import typings.rcPicker.rcPickerStrings.time
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.KeyboardEvent
-import typings.react.mod.MutableRefObject
+import typings.react.mod.ReactNode
 import typings.std.EventTarget
 import typings.std.HTMLInputElement
 import typings.std.Omit
@@ -24,14 +25,12 @@ object anon {
     
     var blurToCancel: js.UndefOr[Boolean] = js.native
     
-    var currentFocusedKey: js.UndefOr[MutableRefObject[String]] = js.native
+    var changeOnBlur: js.UndefOr[Boolean] = js.native
     
     def forwardKeyDown(e: KeyboardEvent[HTMLInputElement]): Boolean = js.native
     
     def isClickOutside(): Boolean = js.native
     def isClickOutside(clickElement: EventTarget): Boolean = js.native
-    
-    var key: js.UndefOr[String] = js.native
     
     var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
     
@@ -155,6 +154,36 @@ object anon {
       inline def setValueNull: Self = StObject.set(x, "value", null)
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  trait CellRender[DateType] extends StObject {
+    
+    var cellRender: typings.rcPicker.esInterfaceMod.CellRender[DateType, Double]
+    
+    var locale: Locale
+    
+    var today: DateType
+  }
+  object CellRender {
+    
+    inline def apply[DateType](
+      cellRender: (Double, /* info */ CellRenderInfo[DateType]) => ReactNode,
+      locale: Locale,
+      today: DateType
+    ): CellRender[DateType] = {
+      val __obj = js.Dynamic.literal(cellRender = js.Any.fromFunction2(cellRender), locale = locale.asInstanceOf[js.Any], today = today.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CellRender[DateType]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellRender[?], DateType] (val x: Self & CellRender[DateType]) extends AnyVal {
+      
+      inline def setCellRender(value: (Double, /* info */ CellRenderInfo[DateType]) => ReactNode): Self = StObject.set(x, "cellRender", js.Any.fromFunction2(value))
+      
+      inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      
+      inline def setToday(value: DateType): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
     }
   }
   
@@ -384,7 +413,7 @@ object anon {
   
   trait Label extends StObject {
     
-    var label: String
+    var label: ReactNode
     
     def onClick(): Unit
     
@@ -394,15 +423,17 @@ object anon {
   }
   object Label {
     
-    inline def apply(label: String, onClick: () => Unit, onMouseEnter: () => Unit, onMouseLeave: () => Unit): Label = {
-      val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], onClick = js.Any.fromFunction0(onClick), onMouseEnter = js.Any.fromFunction0(onMouseEnter), onMouseLeave = js.Any.fromFunction0(onMouseLeave))
+    inline def apply(onClick: () => Unit, onMouseEnter: () => Unit, onMouseLeave: () => Unit): Label = {
+      val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction0(onClick), onMouseEnter = js.Any.fromFunction0(onMouseEnter), onMouseLeave = js.Any.fromFunction0(onMouseLeave))
       __obj.asInstanceOf[Label]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
       
-      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
       inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       

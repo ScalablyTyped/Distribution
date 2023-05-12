@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,6 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.hosted
   - typings.microsoftGraph.microsoftGraphStrings.serviceToService
   - typings.microsoftGraph.microsoftGraphStrings.dedicated
+  - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 */
 trait DeviceManagementExchangeConnectorType extends StObject
 object DeviceManagementExchangeConnectorType {
@@ -20,4 +22,6 @@ object DeviceManagementExchangeConnectorType {
   inline def onPremises: typings.microsoftGraph.microsoftGraphStrings.onPremises = "onPremises".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.onPremises]
   
   inline def serviceToService: typings.microsoftGraph.microsoftGraphStrings.serviceToService = "serviceToService".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.serviceToService]
+  
+  inline def unknownFutureValue: unknownFutureValue_ = "unknownFutureValue".asInstanceOf[unknownFutureValue_]
 }

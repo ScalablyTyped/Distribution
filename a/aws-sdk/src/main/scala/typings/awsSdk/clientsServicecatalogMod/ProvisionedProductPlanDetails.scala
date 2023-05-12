@@ -77,7 +77,7 @@ trait ProvisionedProductPlanDetails extends StObject {
   var Tags: js.UndefOr[typings.awsSdk.clientsServicecatalogMod.Tags] = js.undefined
   
   /**
-    * The time when the plan was last updated.
+    * The UTC time stamp when the plan was last updated.
     */
   var UpdatedTime: js.UndefOr[js.Date] = js.undefined
 }

@@ -14,12 +14,12 @@ trait ListOperationsResponse extends StObject {
   /**
     * Lists summaries of the operations.
     */
-  var Operations: OperationSummaryList
+  var Operations: js.UndefOr[OperationSummaryList] = js.undefined
 }
 object ListOperationsResponse {
   
-  inline def apply(Operations: OperationSummaryList): ListOperationsResponse = {
-    val __obj = js.Dynamic.literal(Operations = Operations.asInstanceOf[js.Any])
+  inline def apply(): ListOperationsResponse = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListOperationsResponse]
   }
   
@@ -31,6 +31,8 @@ object ListOperationsResponse {
     inline def setNextPageMarkerUndefined: Self = StObject.set(x, "NextPageMarker", js.undefined)
     
     inline def setOperations(value: OperationSummaryList): Self = StObject.set(x, "Operations", value.asInstanceOf[js.Any])
+    
+    inline def setOperationsUndefined: Self = StObject.set(x, "Operations", js.undefined)
     
     inline def setOperationsVarargs(value: OperationSummary*): Self = StObject.set(x, "Operations", js.Array(value*))
   }

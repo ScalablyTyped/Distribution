@@ -14,6 +14,8 @@ trait ConceptMapGroupElement
   
   var _noMap: js.UndefOr[Element] = js.undefined
   
+  var _valueSet: js.UndefOr[Element] = js.undefined
+  
   /**
     * Identity (code or path) or the element/item being mapped.
     */
@@ -25,7 +27,7 @@ trait ConceptMapGroupElement
   var display: js.UndefOr[String] = js.undefined
   
   /**
-    * If noMap = true this indicates that no mapping to a target concept exists for this source concept.
+    * If noMap = true, then the behavior of ConceptMap.group.unmapped (if present) does not apply.
     */
   var noMap: js.UndefOr[Boolean] = js.undefined
   
@@ -33,6 +35,11 @@ trait ConceptMapGroupElement
     * Ideally there would only be one map, with an 'equivalent' mapping. But multiple maps are allowed for several narrower (i.e. source-is-broader-than-target) options, or to assert that other concepts are not related.
     */
   var target: js.UndefOr[js.Array[ConceptMapGroupElementTarget]] = js.undefined
+  
+  /**
+    * If the value set expansion is empty then there are no source concepts to map in this rule.
+    */
+  var valueSet: js.UndefOr[String] = js.undefined
 }
 object ConceptMapGroupElement {
   
@@ -62,6 +69,10 @@ object ConceptMapGroupElement {
     
     inline def setTargetVarargs(value: ConceptMapGroupElementTarget*): Self = StObject.set(x, "target", js.Array(value*))
     
+    inline def setValueSet(value: String): Self = StObject.set(x, "valueSet", value.asInstanceOf[js.Any])
+    
+    inline def setValueSetUndefined: Self = StObject.set(x, "valueSet", js.undefined)
+    
     inline def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
     
     inline def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
@@ -73,5 +84,9 @@ object ConceptMapGroupElement {
     inline def set_noMap(value: Element): Self = StObject.set(x, "_noMap", value.asInstanceOf[js.Any])
     
     inline def set_noMapUndefined: Self = StObject.set(x, "_noMap", js.undefined)
+    
+    inline def set_valueSet(value: Element): Self = StObject.set(x, "_valueSet", value.asInstanceOf[js.Any])
+    
+    inline def set_valueSetUndefined: Self = StObject.set(x, "_valueSet", js.undefined)
   }
 }

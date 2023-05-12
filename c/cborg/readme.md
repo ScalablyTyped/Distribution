@@ -1,7 +1,7 @@
 
 # Scala.js typings for cborg
 
-Typings are for version 1.9.5
+Typings are for version 1.10.1
 
 ## Library description:
 Fast CBOR with a focus on strictness

@@ -1,123 +1,183 @@
 package typings.photoshop.domConstantsMod
 
-import typings.photoshop.photoshopStrings.blendDivide
-import typings.photoshop.photoshopStrings.blendSubtraction
-import typings.photoshop.photoshopStrings.color
-import typings.photoshop.photoshopStrings.colorBurn
-import typings.photoshop.photoshopStrings.colorDodge
-import typings.photoshop.photoshopStrings.darken
-import typings.photoshop.photoshopStrings.darkerColor
-import typings.photoshop.photoshopStrings.difference
-import typings.photoshop.photoshopStrings.dissolve
-import typings.photoshop.photoshopStrings.exclusion
-import typings.photoshop.photoshopStrings.hardLight
-import typings.photoshop.photoshopStrings.hardMix
-import typings.photoshop.photoshopStrings.hue
-import typings.photoshop.photoshopStrings.lighten
-import typings.photoshop.photoshopStrings.lighterColor
-import typings.photoshop.photoshopStrings.linearBurn
-import typings.photoshop.photoshopStrings.linearDodge
-import typings.photoshop.photoshopStrings.linearLight
-import typings.photoshop.photoshopStrings.luminosity
-import typings.photoshop.photoshopStrings.multiply
-import typings.photoshop.photoshopStrings.normal
-import typings.photoshop.photoshopStrings.overlay
-import typings.photoshop.photoshopStrings.passThrough
-import typings.photoshop.photoshopStrings.pinLight
-import typings.photoshop.photoshopStrings.saturation
-import typings.photoshop.photoshopStrings.screen
-import typings.photoshop.photoshopStrings.softLight
-import typings.photoshop.photoshopStrings.vividLight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.photoshop.photoshopStrings.normal
-  - typings.photoshop.photoshopStrings.dissolve
-  - typings.photoshop.photoshopStrings.darken
-  - typings.photoshop.photoshopStrings.multiply
-  - typings.photoshop.photoshopStrings.colorBurn
-  - typings.photoshop.photoshopStrings.linearBurn
-  - typings.photoshop.photoshopStrings.darkerColor
-  - typings.photoshop.photoshopStrings.lighten
-  - typings.photoshop.photoshopStrings.screen
-  - typings.photoshop.photoshopStrings.colorDodge
-  - typings.photoshop.photoshopStrings.linearDodge
-  - typings.photoshop.photoshopStrings.lighterColor
-  - typings.photoshop.photoshopStrings.overlay
-  - typings.photoshop.photoshopStrings.softLight
-  - typings.photoshop.photoshopStrings.hardLight
-  - typings.photoshop.photoshopStrings.vividLight
-  - typings.photoshop.photoshopStrings.linearLight
-  - typings.photoshop.photoshopStrings.pinLight
-  - typings.photoshop.photoshopStrings.hardMix
-  - typings.photoshop.photoshopStrings.difference
-  - typings.photoshop.photoshopStrings.exclusion
-  - typings.photoshop.photoshopStrings.blendSubtraction
-  - typings.photoshop.photoshopStrings.blendDivide
-  - typings.photoshop.photoshopStrings.hue
-  - typings.photoshop.photoshopStrings.saturation
-  - typings.photoshop.photoshopStrings.color
-  - typings.photoshop.photoshopStrings.luminosity
-  - typings.photoshop.photoshopStrings.passThrough
-*/
-trait BlendMode extends StObject
-object BlendMode {
+@js.native
+sealed trait BlendMode extends StObject
+@JSImport("photoshop/dom/Constants", "BlendMode")
+@js.native
+object BlendMode extends StObject {
   
-  inline def COLOR: color = "color".asInstanceOf[color]
+  @JSBracketAccess
+  def apply(value: String): js.UndefOr[BlendMode & String] = js.native
   
-  inline def COLORBURN: colorBurn = "colorBurn".asInstanceOf[colorBurn]
+  @js.native
+  sealed trait COLOR
+    extends StObject
+       with BlendMode
+  /* "color" */ val COLOR: typings.photoshop.domConstantsMod.BlendMode.COLOR & String = js.native
   
-  inline def COLORDODGE: colorDodge = "colorDodge".asInstanceOf[colorDodge]
+  @js.native
+  sealed trait COLORBURN
+    extends StObject
+       with BlendMode
+  /* "colorBurn" */ val COLORBURN: typings.photoshop.domConstantsMod.BlendMode.COLORBURN & String = js.native
   
-  inline def DARKEN: darken = "darken".asInstanceOf[darken]
+  @js.native
+  sealed trait COLORDODGE
+    extends StObject
+       with BlendMode
+  /* "colorDodge" */ val COLORDODGE: typings.photoshop.domConstantsMod.BlendMode.COLORDODGE & String = js.native
   
-  inline def DARKERCOLOR: darkerColor = "darkerColor".asInstanceOf[darkerColor]
+  @js.native
+  sealed trait DARKEN
+    extends StObject
+       with BlendMode
+  /* "darken" */ val DARKEN: typings.photoshop.domConstantsMod.BlendMode.DARKEN & String = js.native
   
-  inline def DIFFERENCE: difference = "difference".asInstanceOf[difference]
+  @js.native
+  sealed trait DARKERCOLOR
+    extends StObject
+       with BlendMode
+  /* "darkerColor" */ val DARKERCOLOR: typings.photoshop.domConstantsMod.BlendMode.DARKERCOLOR & String = js.native
   
-  inline def DISSOLVE: dissolve = "dissolve".asInstanceOf[dissolve]
+  @js.native
+  sealed trait DIFFERENCE
+    extends StObject
+       with BlendMode
+  /* "difference" */ val DIFFERENCE: typings.photoshop.domConstantsMod.BlendMode.DIFFERENCE & String = js.native
   
-  inline def DIVIDE: blendDivide = "blendDivide".asInstanceOf[blendDivide]
+  @js.native
+  sealed trait DISSOLVE
+    extends StObject
+       with BlendMode
+  /* "dissolve" */ val DISSOLVE: typings.photoshop.domConstantsMod.BlendMode.DISSOLVE & String = js.native
   
-  inline def EXCLUSION: exclusion = "exclusion".asInstanceOf[exclusion]
+  @js.native
+  sealed trait DIVIDE
+    extends StObject
+       with BlendMode
+  /* "blendDivide" */ val DIVIDE: typings.photoshop.domConstantsMod.BlendMode.DIVIDE & String = js.native
   
-  inline def HARDLIGHT: hardLight = "hardLight".asInstanceOf[hardLight]
+  @js.native
+  sealed trait EXCLUSION
+    extends StObject
+       with BlendMode
+  /* "exclusion" */ val EXCLUSION: typings.photoshop.domConstantsMod.BlendMode.EXCLUSION & String = js.native
   
-  inline def HARDMIX: hardMix = "hardMix".asInstanceOf[hardMix]
+  @js.native
+  sealed trait HARDLIGHT
+    extends StObject
+       with BlendMode
+  /* "hardLight" */ val HARDLIGHT: typings.photoshop.domConstantsMod.BlendMode.HARDLIGHT & String = js.native
   
-  inline def HUE: hue = "hue".asInstanceOf[hue]
+  @js.native
+  sealed trait HARDMIX
+    extends StObject
+       with BlendMode
+  /* "hardMix" */ val HARDMIX: typings.photoshop.domConstantsMod.BlendMode.HARDMIX & String = js.native
   
-  inline def LIGHTEN: lighten = "lighten".asInstanceOf[lighten]
+  @js.native
+  sealed trait HUE
+    extends StObject
+       with BlendMode
+  /* "hue" */ val HUE: typings.photoshop.domConstantsMod.BlendMode.HUE & String = js.native
   
-  inline def LIGHTERCOLOR: lighterColor = "lighterColor".asInstanceOf[lighterColor]
+  @js.native
+  sealed trait LIGHTEN
+    extends StObject
+       with BlendMode
+  /* "lighten" */ val LIGHTEN: typings.photoshop.domConstantsMod.BlendMode.LIGHTEN & String = js.native
   
-  inline def LINEARBURN: linearBurn = "linearBurn".asInstanceOf[linearBurn]
+  @js.native
+  sealed trait LIGHTERCOLOR
+    extends StObject
+       with BlendMode
+  /* "lighterColor" */ val LIGHTERCOLOR: typings.photoshop.domConstantsMod.BlendMode.LIGHTERCOLOR & String = js.native
   
-  inline def LINEARDODGE: linearDodge = "linearDodge".asInstanceOf[linearDodge]
+  @js.native
+  sealed trait LINEARBURN
+    extends StObject
+       with BlendMode
+  /* "linearBurn" */ val LINEARBURN: typings.photoshop.domConstantsMod.BlendMode.LINEARBURN & String = js.native
   
-  inline def LINEARLIGHT: linearLight = "linearLight".asInstanceOf[linearLight]
+  @js.native
+  sealed trait LINEARDODGE
+    extends StObject
+       with BlendMode
+  /* "linearDodge" */ val LINEARDODGE: typings.photoshop.domConstantsMod.BlendMode.LINEARDODGE & String = js.native
   
-  inline def LUMINOSITY: luminosity = "luminosity".asInstanceOf[luminosity]
+  @js.native
+  sealed trait LINEARLIGHT
+    extends StObject
+       with BlendMode
+  /* "linearLight" */ val LINEARLIGHT: typings.photoshop.domConstantsMod.BlendMode.LINEARLIGHT & String = js.native
   
-  inline def MULTIPLY: multiply = "multiply".asInstanceOf[multiply]
+  @js.native
+  sealed trait LUMINOSITY
+    extends StObject
+       with BlendMode
+  /* "luminosity" */ val LUMINOSITY: typings.photoshop.domConstantsMod.BlendMode.LUMINOSITY & String = js.native
   
-  inline def NORMAL: normal = "normal".asInstanceOf[normal]
+  @js.native
+  sealed trait MULTIPLY
+    extends StObject
+       with BlendMode
+  /* "multiply" */ val MULTIPLY: typings.photoshop.domConstantsMod.BlendMode.MULTIPLY & String = js.native
   
-  inline def OVERLAY: overlay = "overlay".asInstanceOf[overlay]
+  @js.native
+  sealed trait NORMAL
+    extends StObject
+       with BlendMode
+  /* "normal" */ val NORMAL: typings.photoshop.domConstantsMod.BlendMode.NORMAL & String = js.native
   
-  inline def PASSTHROUGH: passThrough = "passThrough".asInstanceOf[passThrough]
+  @js.native
+  sealed trait OVERLAY
+    extends StObject
+       with BlendMode
+  /* "overlay" */ val OVERLAY: typings.photoshop.domConstantsMod.BlendMode.OVERLAY & String = js.native
   
-  inline def PINLIGHT: pinLight = "pinLight".asInstanceOf[pinLight]
+  @js.native
+  sealed trait PASSTHROUGH
+    extends StObject
+       with BlendMode
+  /* "passThrough" */ val PASSTHROUGH: typings.photoshop.domConstantsMod.BlendMode.PASSTHROUGH & String = js.native
   
-  inline def SATURATION: saturation = "saturation".asInstanceOf[saturation]
+  @js.native
+  sealed trait PINLIGHT
+    extends StObject
+       with BlendMode
+  /* "pinLight" */ val PINLIGHT: typings.photoshop.domConstantsMod.BlendMode.PINLIGHT & String = js.native
   
-  inline def SCREEN: screen = "screen".asInstanceOf[screen]
+  @js.native
+  sealed trait SATURATION
+    extends StObject
+       with BlendMode
+  /* "saturation" */ val SATURATION: typings.photoshop.domConstantsMod.BlendMode.SATURATION & String = js.native
   
-  inline def SOFTLIGHT: softLight = "softLight".asInstanceOf[softLight]
+  @js.native
+  sealed trait SCREEN
+    extends StObject
+       with BlendMode
+  /* "screen" */ val SCREEN: typings.photoshop.domConstantsMod.BlendMode.SCREEN & String = js.native
   
-  inline def SUBTRACT: blendSubtraction = "blendSubtraction".asInstanceOf[blendSubtraction]
+  @js.native
+  sealed trait SOFTLIGHT
+    extends StObject
+       with BlendMode
+  /* "softLight" */ val SOFTLIGHT: typings.photoshop.domConstantsMod.BlendMode.SOFTLIGHT & String = js.native
   
-  inline def VIVIDLIGHT: vividLight = "vividLight".asInstanceOf[vividLight]
+  @js.native
+  sealed trait SUBTRACT
+    extends StObject
+       with BlendMode
+  /* "blendSubtraction" */ val SUBTRACT: typings.photoshop.domConstantsMod.BlendMode.SUBTRACT & String = js.native
+  
+  @js.native
+  sealed trait VIVIDLIGHT
+    extends StObject
+       with BlendMode
+  /* "vividLight" */ val VIVIDLIGHT: typings.photoshop.domConstantsMod.BlendMode.VIVIDLIGHT & String = js.native
 }

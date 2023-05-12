@@ -2,6 +2,7 @@ package typings.rollup
 
 import typings.rollup.mod.PreserveEntrySignaturesOption
 import typings.rollup.mod._ResolveIdResult
+import typings.rollup.mod._ResolveIdResultWithoutNullValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,6 +14,7 @@ object rollupBooleans {
     extends StObject
        with PreserveEntrySignaturesOption
        with _ResolveIdResult
+       with _ResolveIdResultWithoutNullValue
   inline def `false`: `false` = false.asInstanceOf[`false`]
   
   @js.native

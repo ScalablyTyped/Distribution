@@ -1,5 +1,6 @@
 package typings.recurlyRecurlyJs
 
+import typings.recurlyRecurlyJs.anon.Amount
 import typings.recurlyRecurlyJs.anon.ClientAuthorization
 import typings.recurlyRecurlyJs.anon.Description
 import typings.recurlyRecurlyJs.anon.DisplayName
@@ -16,6 +17,8 @@ object libPaypalMod {
        with PayPalConfig {
     
     var braintree: ClientAuthorization
+    
+    var display: js.UndefOr[Amount] = js.undefined
   }
   object BraintreeConfig {
     
@@ -28,6 +31,10 @@ object libPaypalMod {
     implicit open class MutableBuilder[Self <: BraintreeConfig] (val x: Self) extends AnyVal {
       
       inline def setBraintree(value: ClientAuthorization): Self = StObject.set(x, "braintree", value.asInstanceOf[js.Any])
+      
+      inline def setDisplay(value: Amount): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      
+      inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     }
   }
   
@@ -36,6 +43,8 @@ object libPaypalMod {
        with PayPalConfig {
     
     var display: js.UndefOr[DisplayName] = js.undefined
+    
+    var gatewayCode: js.UndefOr[String] = js.undefined
   }
   object DirectConfig {
     
@@ -50,6 +59,10 @@ object libPaypalMod {
       inline def setDisplay(value: DisplayName): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
       inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+      
+      inline def setGatewayCode(value: String): Self = StObject.set(x, "gatewayCode", value.asInstanceOf[js.Any])
+      
+      inline def setGatewayCodeUndefined: Self = StObject.set(x, "gatewayCode", js.undefined)
     }
   }
   

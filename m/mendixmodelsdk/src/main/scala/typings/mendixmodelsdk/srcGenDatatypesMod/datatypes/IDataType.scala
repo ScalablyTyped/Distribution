@@ -10,6 +10,8 @@ import typings.mendixmodelsdk.srcGenImportmappingsMod.importmappings.IImportMapp
 import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.IMicroflowBase
 import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.IMicroflowParameterBase
 import typings.mendixmodelsdk.srcGenPagesMod.pages.IPageParameter
+import typings.mendixmodelsdk.srcGenPagesMod.pages.ISnippetParameter
+import typings.mendixmodelsdk.srcGenRestMod.rest.IOperationParameter
 import typings.mendixmodelsdk.srcSdkInternalElementsMod.IElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -44,7 +46,11 @@ trait IDataType
   
   val containerAsMicroflowParameterBase: IMicroflowParameterBase = js.native
   
+  val containerAsOperationParameter: IOperationParameter = js.native
+  
   val containerAsPageParameter: IPageParameter = js.native
+  
+  val containerAsSnippetParameter: ISnippetParameter = js.native
   
   @JSName("model")
   val model_IDataType: IModel = js.native

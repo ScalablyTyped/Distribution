@@ -7,29 +7,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetResponses200Content17 extends StObject {
   
   /**
-    * Gets the default workflow permissions granted to the `GITHUB_TOKEN` when running workflows in an enterprise,
-    * as well as whether GitHub Actions can submit approving pull request reviews. For more information, see
-    * "[Enforcing a policy for workflow permissions in your enterprise](https://docs.github.com/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-github-actions-in-your-enterprise#enforcing-a-policy-for-workflow-permissions-in-your-enterprise)."
+    * Get feeds
+    * @description GitHub provides several timeline resources in [Atom](http://en.wikipedia.org/wiki/Atom_(standard)) format. The Feeds API lists all the feeds available to the authenticated user:
     *
-    * You must authenticate using an access token with the `admin:enterprise` scope to use this endpoint.
-    * GitHub Apps must have the `enterprise_administration:write` permission to use this endpoint.
+    * *   **Timeline**: The GitHub global public timeline
+    * *   **User**: The public timeline for any user, using [URI template](https://docs.github.com/rest/overview/resources-in-the-rest-api#hypermedia)
+    * *   **Current user public**: The public timeline for the authenticated user
+    * *   **Current user**: The private timeline for the authenticated user
+    * *   **Current user actor**: The private timeline for activity created by the authenticated user
+    * *   **Current user organizations**: The private timeline for the organizations the authenticated user is a member of.
+    * *   **Security advisories**: A collection of public announcements that provide information about security-related vulnerabilities in software on GitHub.
+    *
+    * **Note**: Private feeds are only returned when [authenticating via Basic Auth](https://docs.github.com/rest/overview/other-authentication-methods#basic-authentication) since current feed URIs use the older, non revocable auth tokens.
     */
   var get: Responses200Content17
-  
-  /**
-    * Sets the default workflow permissions granted to the `GITHUB_TOKEN` when running workflows in an enterprise, and sets
-    * whether GitHub Actions can submit approving pull request reviews. For more information, see
-    * "[Enforcing a policy for workflow permissions in your enterprise](https://docs.github.com/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-github-actions-in-your-enterprise#enforcing-a-policy-for-workflow-permissions-in-your-enterprise)."
-    *
-    * You must authenticate using an access token with the `admin:enterprise` scope to use this endpoint.
-    * GitHub Apps must have the `enterprise_administration:write` permission to use this endpoint.
-    */
-  var put: RequestBodyContent18
 }
 object GetResponses200Content17 {
   
-  inline def apply(get: Responses200Content17, put: RequestBodyContent18): GetResponses200Content17 = {
-    val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
+  inline def apply(get: Responses200Content17): GetResponses200Content17 = {
+    val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResponses200Content17]
   }
   
@@ -37,7 +33,5 @@ object GetResponses200Content17 {
   implicit open class MutableBuilder[Self <: GetResponses200Content17] (val x: Self) extends AnyVal {
     
     inline def setGet(value: Responses200Content17): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
-    
-    inline def setPut(value: RequestBodyContent18): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

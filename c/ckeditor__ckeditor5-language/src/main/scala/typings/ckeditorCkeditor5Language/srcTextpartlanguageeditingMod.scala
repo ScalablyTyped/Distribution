@@ -9,15 +9,13 @@ object srcTextpartlanguageeditingMod {
   
   @JSImport("@ckeditor/ckeditor5-language/src/textpartlanguageediting", JSImport.Default)
   @js.native
-  open class default ()
+  open class default protected ()
     extends StObject
-       with TextPartLanguageEditing
-  /* static members */
-  object default {
-    
-    @JSImport("@ckeditor/ckeditor5-language/src/textpartlanguageediting", "default.pluginName")
-    @js.native
-    val pluginName: typings.ckeditorCkeditor5Language.ckeditorCkeditor5LanguageStrings.TextPartLanguageEditing = js.native
+       with TextPartLanguageEditing {
+    /**
+      * @inheritDoc
+      */
+    def this(editor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Editor */ Any) = this()
   }
   
   @js.native
@@ -25,28 +23,21 @@ object srcTextpartlanguageeditingMod {
     extends StObject
        with Plugin {
     
+    /**
+      * @private
+      */
+    /* private */ var _defineConverters: Any = js.native
+    
+    /**
+      * @inheritDoc
+      */
     def init(): Unit = js.native
   }
   
   /* augmented module */
-  object ckeditorCkeditor5CoreSrcPlugincollectionAugmentingMod {
+  object ckeditorCkeditor5CoreAugmentingMod {
     
-    trait Plugins extends StObject {
-      
-      var TextPartLanguageEditing: typings.ckeditorCkeditor5Language.srcTextpartlanguageeditingMod.TextPartLanguageEditing
-    }
-    object Plugins {
-      
-      inline def apply(TextPartLanguageEditing: TextPartLanguageEditing): Plugins = {
-        val __obj = js.Dynamic.literal(TextPartLanguageEditing = TextPartLanguageEditing.asInstanceOf[js.Any])
-        __obj.asInstanceOf[Plugins]
-      }
-      
-      @scala.inline
-      implicit open class MutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
-        
-        inline def setTextPartLanguageEditing(value: TextPartLanguageEditing): Self = StObject.set(x, "TextPartLanguageEditing", value.asInstanceOf[js.Any])
-      }
-    }
+    @js.native
+    trait PluginsMap extends StObject
   }
 }

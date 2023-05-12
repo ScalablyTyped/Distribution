@@ -80,6 +80,11 @@ trait ViteDevServer extends StObject {
   var moduleGraph: ModuleGraph = js.native
   
   /**
+    * Open browser
+    */
+  def openBrowser(): Unit = js.native
+  
+  /**
     * Rollup plugin container that can run plugin hooks on a given file
     */
   var pluginContainer: PluginContainer = js.native

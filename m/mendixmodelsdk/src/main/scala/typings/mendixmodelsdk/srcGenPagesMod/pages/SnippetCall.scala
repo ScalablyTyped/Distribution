@@ -3,6 +3,7 @@ package typings.mendixmodelsdk.srcGenPagesMod.pages
 import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
 import typings.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalInstancesMod.IList
 import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
 import typings.mendixmodelsdk.srcSdkInternalMod.Element
@@ -25,6 +26,11 @@ open class SnippetCall protected () extends Element[IModel] {
   ) = this()
   
   def containerAsSnippetCallWidget: SnippetCallWidget = js.native
+  
+  /**
+    * In version 9.21.0: introduced
+    */
+  def parameterMappings: IList[SnippetParameterMapping] = js.native
   
   def snippet: ISnippet | Null = js.native
   

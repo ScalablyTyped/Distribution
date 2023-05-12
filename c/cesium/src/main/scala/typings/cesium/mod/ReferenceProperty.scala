@@ -81,7 +81,7 @@ open class ReferenceProperty protected () extends StObject {
   /**
     * Gets the array of property names used to retrieve the referenced property.
     */
-  val targetPropertyNames: js.Array[String] = js.native
+  val targetPropertyNames: Any = js.native
 }
 /* static members */
 object ReferenceProperty {

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-crypto/sha256-browser" : "2.0.2"
+      "@aws-crypto/sha256-browser" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-crypto/sha256-browser" : "2.0.2"
+      "@aws-crypto/sha256-browser" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

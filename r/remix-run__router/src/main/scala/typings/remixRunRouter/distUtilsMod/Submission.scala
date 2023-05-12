@@ -1,7 +1,5 @@
 package typings.remixRunRouter.distUtilsMod
 
-import typings.remixRunRouter.remixRunRouterStrings.get
-import typings.std.Exclude
 import typings.std.FormData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +13,7 @@ trait Submission extends StObject {
   
   var formEncType: FormEncType
   
-  var formMethod: Exclude[FormMethod, get]
+  var formMethod: FormMethod | V7FormMethod
 }
 object Submission {
   
@@ -23,7 +21,7 @@ object Submission {
     formAction: String,
     formData: FormData,
     formEncType: FormEncType,
-    formMethod: Exclude[FormMethod, get]
+    formMethod: FormMethod | V7FormMethod
   ): Submission = {
     val __obj = js.Dynamic.literal(formAction = formAction.asInstanceOf[js.Any], formData = formData.asInstanceOf[js.Any], formEncType = formEncType.asInstanceOf[js.Any], formMethod = formMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[Submission]
@@ -38,6 +36,6 @@ object Submission {
     
     inline def setFormEncType(value: FormEncType): Self = StObject.set(x, "formEncType", value.asInstanceOf[js.Any])
     
-    inline def setFormMethod(value: Exclude[FormMethod, get]): Self = StObject.set(x, "formMethod", value.asInstanceOf[js.Any])
+    inline def setFormMethod(value: FormMethod | V7FormMethod): Self = StObject.set(x, "formMethod", value.asInstanceOf[js.Any])
   }
 }

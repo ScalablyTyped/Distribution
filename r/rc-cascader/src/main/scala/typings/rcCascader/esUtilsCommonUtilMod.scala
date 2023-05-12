@@ -30,6 +30,8 @@ object esUtilsCommonUtilMod {
   inline def fillFieldNames(): InternalFieldNames = ^.asInstanceOf[js.Dynamic].applyDynamic("fillFieldNames")().asInstanceOf[InternalFieldNames]
   inline def fillFieldNames(fieldNames: FieldNames): InternalFieldNames = ^.asInstanceOf[js.Dynamic].applyDynamic("fillFieldNames")(fieldNames.asInstanceOf[js.Any]).asInstanceOf[InternalFieldNames]
   
+  inline def getFullPathKeys(options: js.Array[DefaultOptionType], fieldNames: FieldNames): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFullPathKeys")(options.asInstanceOf[js.Any], fieldNames.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+  
   inline def isLeaf(option: DefaultOptionType, fieldNames: FieldNames): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isLeaf")(option.asInstanceOf[js.Any], fieldNames.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def scrollIntoParentView(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("scrollIntoParentView")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]

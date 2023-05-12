@@ -11,7 +11,17 @@ trait DescribeStateMachineForExecutionOutput extends StObject {
     */
   var definition: Definition
   
+  /**
+    * A user-defined or an auto-generated string that identifies a Map state. This ﬁeld is returned only if the executionArn is a child workflow execution that was started by a Distributed Map state.
+    */
+  var label: js.UndefOr[MapRunLabel] = js.undefined
+  
   var loggingConfiguration: js.UndefOr[LoggingConfiguration] = js.undefined
+  
+  /**
+    * The Amazon Resource Name (ARN) of the Map Run that started the child workflow execution. This field is returned only if the executionArn is a child workflow execution that was started by a Distributed Map state.
+    */
+  var mapRunArn: js.UndefOr[LongArn] = js.undefined
   
   /**
     * The name of the state machine associated with the execution.
@@ -29,7 +39,7 @@ trait DescribeStateMachineForExecutionOutput extends StObject {
   var stateMachineArn: Arn
   
   /**
-    * Selects whether AWS X-Ray tracing is enabled.
+    * Selects whether X-Ray tracing is enabled.
     */
   var tracingConfiguration: js.UndefOr[TracingConfiguration] = js.undefined
   
@@ -50,9 +60,17 @@ object DescribeStateMachineForExecutionOutput {
     
     inline def setDefinition(value: Definition): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
+    inline def setLabel(value: MapRunLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
     inline def setLoggingConfiguration(value: LoggingConfiguration): Self = StObject.set(x, "loggingConfiguration", value.asInstanceOf[js.Any])
     
     inline def setLoggingConfigurationUndefined: Self = StObject.set(x, "loggingConfiguration", js.undefined)
+    
+    inline def setMapRunArn(value: LongArn): Self = StObject.set(x, "mapRunArn", value.asInstanceOf[js.Any])
+    
+    inline def setMapRunArnUndefined: Self = StObject.set(x, "mapRunArn", js.undefined)
     
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

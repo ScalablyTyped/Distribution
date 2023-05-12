@@ -1,28 +1,61 @@
 package typings.rcResizeObserver
 
+import typings.rcResizeObserver.anon.PartialResizeObserverProp
+import typings.rcResizeObserver.anon.WeakValidationMapResizeOb
 import typings.rcResizeObserver.esCollectionMod.CollectionProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
+import typings.react.mod.RefAttributes
 import typings.react.mod.RefObject
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
+import typings.std.ResizeObserverEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  /* Inlined react.react.ForwardRefExoticComponent<rc-resize-observer.rc-resize-observer.ResizeObserverProps & react.react.RefAttributes<any>> & {  Collection :(param0 : rc-resize-observer.rc-resize-observer/es/Collection.CollectionProps): react.react.<global>.JSX.Element} */
   object default {
     
-    inline def apply(props: ResizeObserverProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    /**
+      * **NOTE**: Exotic components are not callable.
+      */
+    inline def apply(props: ResizeObserverProps & RefAttributes[Any]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
     
     @JSImport("rc-resize-observer", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
-    /* was `typeof imported_Collection.Collection` */
-    inline def Collection(param0: CollectionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Collection")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
+    @JSImport("rc-resize-observer", "default.Collection")
+    @js.native
+    def Collection: js.Function1[/* param0 */ CollectionProps, Element] = js.native
+    inline def Collection_=(x: js.Function1[/* param0 */ CollectionProps, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Collection")(x.asInstanceOf[js.Any])
+    
+    @JSImport("rc-resize-observer", "default.defaultProps")
+    @js.native
+    def defaultProps: js.UndefOr[PartialResizeObserverProp] = js.native
+    inline def defaultProps_=(x: js.UndefOr[PartialResizeObserverProp]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    
+    @JSImport("rc-resize-observer", "default.displayName")
+    @js.native
+    def displayName: js.UndefOr[String] = js.native
+    inline def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    
+    @JSImport("rc-resize-observer", "default.propTypes")
+    @js.native
+    def propTypes: js.UndefOr[WeakValidationMapResizeOb] = js.native
+    inline def propTypes_=(x: js.UndefOr[WeakValidationMapResizeOb]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    
+    @JSImport("rc-resize-observer", "default.$$typeof")
+    @js.native
+    val typeof: js.Symbol = js.native
   }
+  
+  @JSImport("rc-resize-observer", "_rs")
+  @js.native
+  val rs: js.Function1[/* entities */ js.Array[ResizeObserverEntry], Unit] = js.native
   
   type OnResize = js.Function2[/* size */ SizeInfo, /* element */ HTMLElement, Unit]
   

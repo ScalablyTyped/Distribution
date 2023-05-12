@@ -84,7 +84,7 @@ object srcMaterialsMeshPhysicalMaterialMod {
     /**
       * @default [100, 400]
       */
-    var iridescenceThicknessRange: js.Array[Double] = js.native
+    var iridescenceThicknessRange: js.Tuple2[Double, Double] = js.native
     
     /**
       * @default 0.5
@@ -179,13 +179,27 @@ object srcMaterialsMeshPhysicalMaterialMod {
     
     var ior: js.UndefOr[Double] = js.undefined
     
+    var iridescence: js.UndefOr[Double] = js.undefined
+    
+    var iridescenceIOR: js.UndefOr[Double] = js.undefined
+    
+    var iridescenceMap: js.UndefOr[Texture | Null] = js.undefined
+    
+    var iridescenceThicknessMap: js.UndefOr[Texture | Null] = js.undefined
+    
+    var iridescenceThicknessRange: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
+    
     var reflectivity: js.UndefOr[Double] = js.undefined
     
     var sheen: js.UndefOr[Double] = js.undefined
     
     var sheenColor: js.UndefOr[Color] = js.undefined
     
+    var sheenColorMap: js.UndefOr[Texture | Null] = js.undefined
+    
     var sheenRoughness: js.UndefOr[Double] = js.undefined
+    
+    var sheenRoughnessMap: js.UndefOr[Texture | Null] = js.undefined
     
     var specularColor: js.UndefOr[Color] = js.undefined
     
@@ -194,6 +208,10 @@ object srcMaterialsMeshPhysicalMaterialMod {
     var specularIntensity: js.UndefOr[Double] = js.undefined
     
     var specularIntensityMap: js.UndefOr[Texture | Null] = js.undefined
+    
+    var thickness: js.UndefOr[Double] = js.undefined
+    
+    var thicknessMap: js.UndefOr[Texture | Null] = js.undefined
     
     var transmission: js.UndefOr[Double] = js.undefined
     
@@ -251,6 +269,30 @@ object srcMaterialsMeshPhysicalMaterialMod {
       
       inline def setIorUndefined: Self = StObject.set(x, "ior", js.undefined)
       
+      inline def setIridescence(value: Double): Self = StObject.set(x, "iridescence", value.asInstanceOf[js.Any])
+      
+      inline def setIridescenceIOR(value: Double): Self = StObject.set(x, "iridescenceIOR", value.asInstanceOf[js.Any])
+      
+      inline def setIridescenceIORUndefined: Self = StObject.set(x, "iridescenceIOR", js.undefined)
+      
+      inline def setIridescenceMap(value: Texture): Self = StObject.set(x, "iridescenceMap", value.asInstanceOf[js.Any])
+      
+      inline def setIridescenceMapNull: Self = StObject.set(x, "iridescenceMap", null)
+      
+      inline def setIridescenceMapUndefined: Self = StObject.set(x, "iridescenceMap", js.undefined)
+      
+      inline def setIridescenceThicknessMap(value: Texture): Self = StObject.set(x, "iridescenceThicknessMap", value.asInstanceOf[js.Any])
+      
+      inline def setIridescenceThicknessMapNull: Self = StObject.set(x, "iridescenceThicknessMap", null)
+      
+      inline def setIridescenceThicknessMapUndefined: Self = StObject.set(x, "iridescenceThicknessMap", js.undefined)
+      
+      inline def setIridescenceThicknessRange(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "iridescenceThicknessRange", value.asInstanceOf[js.Any])
+      
+      inline def setIridescenceThicknessRangeUndefined: Self = StObject.set(x, "iridescenceThicknessRange", js.undefined)
+      
+      inline def setIridescenceUndefined: Self = StObject.set(x, "iridescence", js.undefined)
+      
       inline def setReflectivity(value: Double): Self = StObject.set(x, "reflectivity", value.asInstanceOf[js.Any])
       
       inline def setReflectivityUndefined: Self = StObject.set(x, "reflectivity", js.undefined)
@@ -259,9 +301,21 @@ object srcMaterialsMeshPhysicalMaterialMod {
       
       inline def setSheenColor(value: Color): Self = StObject.set(x, "sheenColor", value.asInstanceOf[js.Any])
       
+      inline def setSheenColorMap(value: Texture): Self = StObject.set(x, "sheenColorMap", value.asInstanceOf[js.Any])
+      
+      inline def setSheenColorMapNull: Self = StObject.set(x, "sheenColorMap", null)
+      
+      inline def setSheenColorMapUndefined: Self = StObject.set(x, "sheenColorMap", js.undefined)
+      
       inline def setSheenColorUndefined: Self = StObject.set(x, "sheenColor", js.undefined)
       
       inline def setSheenRoughness(value: Double): Self = StObject.set(x, "sheenRoughness", value.asInstanceOf[js.Any])
+      
+      inline def setSheenRoughnessMap(value: Texture): Self = StObject.set(x, "sheenRoughnessMap", value.asInstanceOf[js.Any])
+      
+      inline def setSheenRoughnessMapNull: Self = StObject.set(x, "sheenRoughnessMap", null)
+      
+      inline def setSheenRoughnessMapUndefined: Self = StObject.set(x, "sheenRoughnessMap", js.undefined)
       
       inline def setSheenRoughnessUndefined: Self = StObject.set(x, "sheenRoughness", js.undefined)
       
@@ -286,6 +340,16 @@ object srcMaterialsMeshPhysicalMaterialMod {
       inline def setSpecularIntensityMapUndefined: Self = StObject.set(x, "specularIntensityMap", js.undefined)
       
       inline def setSpecularIntensityUndefined: Self = StObject.set(x, "specularIntensity", js.undefined)
+      
+      inline def setThickness(value: Double): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
+      
+      inline def setThicknessMap(value: Texture): Self = StObject.set(x, "thicknessMap", value.asInstanceOf[js.Any])
+      
+      inline def setThicknessMapNull: Self = StObject.set(x, "thicknessMap", null)
+      
+      inline def setThicknessMapUndefined: Self = StObject.set(x, "thicknessMap", js.undefined)
+      
+      inline def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
       
       inline def setTransmission(value: Double): Self = StObject.set(x, "transmission", value.asInstanceOf[js.Any])
       

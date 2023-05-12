@@ -9,11 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Histogram[T /* <: String */] protected ()
   extends StObject
-     with Metric_[T] {
+     with Metric[T] {
   /**
   	 * @param configuration Configuration when creating the Histogram. Name and Help is mandatory
   	 */
   def this(configuration: HistogramConfiguration[T]) = this()
+  
+  /**
+  	 * Get histogram metric object
+  	 */
+  def get(): js.Promise[MetricObjectWithValues[MetricValueWithName[T]]] = js.native
   
   /**
   	 * Return the child for given labels

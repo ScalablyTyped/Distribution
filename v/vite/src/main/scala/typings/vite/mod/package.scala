@@ -7,17 +7,16 @@ import typings.node.nodeColonhttpMod.ServerResponse
 import typings.rollup.mod.ExistingRawSourceMap
 import typings.rollup.mod.GetManualChunk
 import typings.rollup.mod.ObjectHook
+import typings.rollup.mod.RollupError
 import typings.rollup.mod.RollupOutput
 import typings.rollup.mod.RollupWatcher
 import typings.std.Map
 import typings.std.Record
 import typings.vite.anon.Cache
 import typings.vite.anon.Config
-import typings.vite.anon.Enforce
 import typings.vite.anon.HostId
 import typings.vite.anon.HostType
 import typings.vite.anon.Html
-import typings.vite.anon.HttpServer
 import typings.vite.anon.Relative
 import typings.vite.anon.Resolve
 import typings.vite.mod.^
@@ -32,6 +31,11 @@ type WebSocketAlias = WebSocket2
 
 inline def build(): js.Promise[RollupOutput | js.Array[RollupOutput] | RollupWatcher] = ^.asInstanceOf[js.Dynamic].applyDynamic("build")().asInstanceOf[js.Promise[RollupOutput | js.Array[RollupOutput] | RollupWatcher]]
 inline def build(inlineConfig: InlineConfig): js.Promise[RollupOutput | js.Array[RollupOutput] | RollupWatcher] = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(inlineConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RollupOutput | js.Array[RollupOutput] | RollupWatcher]]
+
+inline def buildErrorMessage(err: RollupError): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildErrorMessage")(err.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def buildErrorMessage(err: RollupError, args: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildErrorMessage")(err.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def buildErrorMessage(err: RollupError, args: js.Array[String], includeStack: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildErrorMessage")(err.asInstanceOf[js.Any], args.asInstanceOf[js.Any], includeStack.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def buildErrorMessage(err: RollupError, args: Unit, includeStack: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildErrorMessage")(err.asInstanceOf[js.Any], args.asInstanceOf[js.Any], includeStack.asInstanceOf[js.Any])).asInstanceOf[String]
 
 inline def createFilter(): js.Function1[/* id */ String | Any, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFilter")().asInstanceOf[js.Function1[/* id */ String | Any, Boolean]]
 inline def createFilter(include: Unit, exclude: Unit, options: Resolve): js.Function1[/* id */ String | Any, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFilter")(include.asInstanceOf[js.Any], exclude.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* id */ String | Any, Boolean]]
@@ -59,7 +63,11 @@ inline def formatPostcssSourceMap(rawMap: ExistingRawSourceMap, file: String): j
 
 inline def getDepOptimizationConfig(config: ResolvedConfig, ssr: Boolean): DepOptimizationConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("getDepOptimizationConfig")(config.asInstanceOf[js.Any], ssr.asInstanceOf[js.Any])).asInstanceOf[DepOptimizationConfig]
 
+inline def isCSSRequest(request: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCSSRequest")(request.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+
 inline def isDepsOptimizerEnabled(config: ResolvedConfig, ssr: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDepsOptimizerEnabled")(config.asInstanceOf[js.Any], ssr.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+
+inline def isFileServingAllowed(url: String, server: ViteDevServer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isFileServingAllowed")(url.asInstanceOf[js.Any], server.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
 inline def loadConfigFromFile(configEnv: ConfigEnv): js.Promise[Config | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadConfigFromFile")(configEnv.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Config | Null]]
 inline def loadConfigFromFile(configEnv: ConfigEnv, configFile: String): js.Promise[Config | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadConfigFromFile")(configEnv.asInstanceOf[js.Any], configFile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Config | Null]]
@@ -99,13 +107,25 @@ inline def resolveBaseUrl(base: Unit, isBuild: Boolean, logger: Logger): String 
 
 inline def resolveConfig(inlineConfig: InlineConfig, command: typings.vite.viteStrings.build | serve): js.Promise[ResolvedConfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveConfig")(inlineConfig.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResolvedConfig]]
 inline def resolveConfig(inlineConfig: InlineConfig, command: typings.vite.viteStrings.build | serve, defaultMode: String): js.Promise[ResolvedConfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveConfig")(inlineConfig.asInstanceOf[js.Any], command.asInstanceOf[js.Any], defaultMode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResolvedConfig]]
+inline def resolveConfig(
+  inlineConfig: InlineConfig,
+  command: typings.vite.viteStrings.build | serve,
+  defaultMode: String,
+  defaultNodeEnv: String
+): js.Promise[ResolvedConfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveConfig")(inlineConfig.asInstanceOf[js.Any], command.asInstanceOf[js.Any], defaultMode.asInstanceOf[js.Any], defaultNodeEnv.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResolvedConfig]]
+inline def resolveConfig(
+  inlineConfig: InlineConfig,
+  command: typings.vite.viteStrings.build | serve,
+  defaultMode: Unit,
+  defaultNodeEnv: String
+): js.Promise[ResolvedConfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveConfig")(inlineConfig.asInstanceOf[js.Any], command.asInstanceOf[js.Any], defaultMode.asInstanceOf[js.Any], defaultNodeEnv.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResolvedConfig]]
 
 inline def resolveEnvPrefix(param0: UserConfig): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveEnvPrefix")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 
-inline def resolvePackageData(id: String, basedir: String): PackageData | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePackageData")(id.asInstanceOf[js.Any], basedir.asInstanceOf[js.Any])).asInstanceOf[PackageData | Null]
-inline def resolvePackageData(id: String, basedir: String, preserveSymlinks: Boolean): PackageData | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePackageData")(id.asInstanceOf[js.Any], basedir.asInstanceOf[js.Any], preserveSymlinks.asInstanceOf[js.Any])).asInstanceOf[PackageData | Null]
-inline def resolvePackageData(id: String, basedir: String, preserveSymlinks: Boolean, packageCache: PackageCache): PackageData | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePackageData")(id.asInstanceOf[js.Any], basedir.asInstanceOf[js.Any], preserveSymlinks.asInstanceOf[js.Any], packageCache.asInstanceOf[js.Any])).asInstanceOf[PackageData | Null]
-inline def resolvePackageData(id: String, basedir: String, preserveSymlinks: Unit, packageCache: PackageCache): PackageData | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePackageData")(id.asInstanceOf[js.Any], basedir.asInstanceOf[js.Any], preserveSymlinks.asInstanceOf[js.Any], packageCache.asInstanceOf[js.Any])).asInstanceOf[PackageData | Null]
+inline def resolvePackageData(pkgName: String, basedir: String): PackageData | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePackageData")(pkgName.asInstanceOf[js.Any], basedir.asInstanceOf[js.Any])).asInstanceOf[PackageData | Null]
+inline def resolvePackageData(pkgName: String, basedir: String, preserveSymlinks: Boolean): PackageData | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePackageData")(pkgName.asInstanceOf[js.Any], basedir.asInstanceOf[js.Any], preserveSymlinks.asInstanceOf[js.Any])).asInstanceOf[PackageData | Null]
+inline def resolvePackageData(pkgName: String, basedir: String, preserveSymlinks: Boolean, packageCache: PackageCache): PackageData | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePackageData")(pkgName.asInstanceOf[js.Any], basedir.asInstanceOf[js.Any], preserveSymlinks.asInstanceOf[js.Any], packageCache.asInstanceOf[js.Any])).asInstanceOf[PackageData | Null]
+inline def resolvePackageData(pkgName: String, basedir: String, preserveSymlinks: Unit, packageCache: PackageCache): PackageData | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePackageData")(pkgName.asInstanceOf[js.Any], basedir.asInstanceOf[js.Any], preserveSymlinks.asInstanceOf[js.Any], packageCache.asInstanceOf[js.Any])).asInstanceOf[PackageData | Null]
 
 inline def resolvePackageEntry(id: String, param1: PackageData, targetWeb: Boolean, options: InternalResolveOptions): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePackageEntry")(id.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], targetWeb.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
 
@@ -163,7 +183,12 @@ type FilterPattern = (js.Array[String | js.RegExp]) | String | js.RegExp | Null
   */
 type HookHandler[T] = T
 
-type IndexHtmlTransform = IndexHtmlTransformHook | Enforce
+/* Rewritten from type alias, can be one of: 
+  - typings.vite.mod.IndexHtmlTransformHook
+  - typings.vite.anon.Enforce
+  - typings.vite.anon.Handler
+*/
+type IndexHtmlTransform = _IndexHtmlTransform | IndexHtmlTransformHook
 
 type IndexHtmlTransformHook = js.ThisFunction2[
 /* this */ Unit, 
@@ -214,7 +239,7 @@ type PreviewOptions = CommonServerOptions
 
 type PreviewServerHook = js.ThisFunction1[
 /* this */ Unit, 
-/* server */ HttpServer, 
+/* server */ PreviewServerForHook, 
 js.Function0[Unit] | Unit | (js.Promise[js.Function0[Unit] | Unit])]
 
 type RenderBuiltAssetUrl = js.Function2[/* filename */ String, /* type */ HostId, js.UndefOr[String | Relative]]

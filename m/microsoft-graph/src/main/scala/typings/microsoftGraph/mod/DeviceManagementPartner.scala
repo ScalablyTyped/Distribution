@@ -11,6 +11,9 @@ trait DeviceManagementPartner
   // Partner display name
   var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // User groups that specifies whether enrollment is through partner.
+  var groupsRequiringPartnerEnrollment: js.UndefOr[NullableOption[js.Array[DeviceManagementPartnerAssignment]]] = js.undefined
+  
   // Whether device management partner is configured or not
   var isConfigured: js.UndefOr[Boolean] = js.undefined
   
@@ -47,6 +50,14 @@ object DeviceManagementPartner {
     inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setGroupsRequiringPartnerEnrollment(value: NullableOption[js.Array[DeviceManagementPartnerAssignment]]): Self = StObject.set(x, "groupsRequiringPartnerEnrollment", value.asInstanceOf[js.Any])
+    
+    inline def setGroupsRequiringPartnerEnrollmentNull: Self = StObject.set(x, "groupsRequiringPartnerEnrollment", null)
+    
+    inline def setGroupsRequiringPartnerEnrollmentUndefined: Self = StObject.set(x, "groupsRequiringPartnerEnrollment", js.undefined)
+    
+    inline def setGroupsRequiringPartnerEnrollmentVarargs(value: DeviceManagementPartnerAssignment*): Self = StObject.set(x, "groupsRequiringPartnerEnrollment", js.Array(value*))
     
     inline def setIsConfigured(value: Boolean): Self = StObject.set(x, "isConfigured", value.asInstanceOf[js.Any])
     

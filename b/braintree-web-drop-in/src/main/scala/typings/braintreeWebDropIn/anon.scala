@@ -3,8 +3,6 @@ package typings.braintreeWebDropIn
 import typings.applepayjs.ApplePayJS.ApplePayPayment
 import typings.braintreeWeb.modulesHostedFieldsMod.HostedFieldsField
 import typings.braintreeWebDropIn.mod.Address
-import typings.braintreeWebDropIn.mod.Dropin
-import typings.braintreeWebDropIn.mod.Options
 import typings.googlepay.google.payments.api.PaymentData
 import typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonColorOption
 import typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonLabelOption
@@ -273,16 +271,6 @@ object anon {
       
       inline def setRawPaymentData(value: PaymentData): Self = StObject.set(x, "rawPaymentData", value.asInstanceOf[js.Any])
     }
-  }
-  
-  @js.native
-  trait Create extends StObject {
-    
-    def create(options: Options): js.Promise[Dropin] = js.native
-    def create(
-      options: Options,
-      callback: js.Function2[/* error */ js.Object | Null, /* dropin */ js.UndefOr[Dropin], Unit]
-    ): Unit = js.native
   }
   
   trait Cvv extends StObject {

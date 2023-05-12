@@ -1,7 +1,7 @@
 package typings.pixiAssets
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.pixiAssets.anon.Name
+import typings.pixiAssets.anon.Data
 import typings.pixiExtensions.mod.ExtensionMetadata
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -101,7 +101,7 @@ object libResolverTypesMod {
     }
   }
   
-  type ResolverAssetsArray = js.Array[Name]
+  type ResolverAssetsArray = js.Array[Data]
   
   type ResolverAssetsObject = Record[String, String | ResolveAsset]
   
@@ -123,7 +123,7 @@ object libResolverTypesMod {
       
       inline def setAssets(value: ResolverAssetsArray | ResolverAssetsObject): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
       
-      inline def setAssetsVarargs(value: Name*): Self = StObject.set(x, "assets", js.Array(value*))
+      inline def setAssetsVarargs(value: Data*): Self = StObject.set(x, "assets", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

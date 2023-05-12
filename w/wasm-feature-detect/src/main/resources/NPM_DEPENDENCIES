@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "wasm-feature-detect" : "1.2.11"
+      "wasm-feature-detect" : "1.5.1"
     }
   ],
   "test-dependencies" : [
     {
-      "wasm-feature-detect" : "1.2.11"
+      "wasm-feature-detect" : "1.5.1"
     }
   ],
   "compile-devDependencies" : [

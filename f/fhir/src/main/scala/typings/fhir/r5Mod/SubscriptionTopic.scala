@@ -17,6 +17,8 @@ trait SubscriptionTopic
   
   var _copyright: js.UndefOr[Element] = js.undefined
   
+  var _copyrightLabel: js.UndefOr[Element] = js.undefined
+  
   var _date: js.UndefOr[Element] = js.undefined
   
   var _derivedFrom: js.UndefOr[js.Array[Element]] = js.undefined
@@ -26,6 +28,8 @@ trait SubscriptionTopic
   var _experimental: js.UndefOr[Element] = js.undefined
   
   var _lastReviewDate: js.UndefOr[Element] = js.undefined
+  
+  var _name: js.UndefOr[Element] = js.undefined
   
   var _publisher: js.UndefOr[Element] = js.undefined
   
@@ -39,6 +43,8 @@ trait SubscriptionTopic
   
   var _version: js.UndefOr[Element] = js.undefined
   
+  var _versionAlgorithmString: js.UndefOr[Element] = js.undefined
+  
   /**
     * The date may be more recent than the approval date because of minor changes / editorial corrections.
     */
@@ -51,16 +57,22 @@ trait SubscriptionTopic
   
   /**
     * May be a web site, an email address, a telephone number, etc.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var contact: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
   /**
-    * A copyright statement relating to the SubscriptionTopic and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the SubscriptionTopic.
+    * ...
     */
   var copyright: js.UndefOr[String] = js.undefined
   
   /**
-    * For draft definitions, indicates the date of initial creation.  For active definitions, represents the date of activation.  For withdrawn definitions, indicates the date of withdrawal.
+    * The (c) symbol should NOT be included in this string. It will be added by software when rendering the notation. Full details about licensing, restrictions, warrantees, etc. goes in the more general 'copyright' element.
+    */
+  var copyrightLabel: js.UndefOr[String] = js.undefined
+  
+  /**
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var date: js.UndefOr[String] = js.undefined
   
@@ -70,7 +82,7 @@ trait SubscriptionTopic
   var derivedFrom: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * This description can be used to capture details such as why the Topic was built, comments about misuse, instructions for clinical use and interpretation, literature references, examples from the paper world, etc. It is not a rendering of the module as conveyed in the text field of the resource itself. This item SHOULD be populated unless the information is available from context.
+    * This description can be used to capture details such as comments about misuse, instructions for clinical use and interpretation, literature references, examples from the paper world, etc. It is not a rendering of the module as conveyed in the text field of the resource itself. This item SHOULD be populated unless the information is available from context.
     */
   var description: js.UndefOr[String] = js.undefined
   
@@ -95,7 +107,7 @@ trait SubscriptionTopic
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
-    * A jurisdiction in which the Topic is intended to be used.
+    * DEPRECATION NOTE: For consistency, implementations are encouraged to migrate to using the new 'jurisdiction' code in the useContext element.  (I.e. useContext.code indicating http://terminology.hl7.org/CodeSystem/usage-context-type#jurisdiction and useContext.valueCodeableConcept indicating the jurisdiction.)
     */
   var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
@@ -103,6 +115,11 @@ trait SubscriptionTopic
     * If specified, this is usually after the approval date.
     */
   var lastReviewDate: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The name is not expected to be globally unique. The name should be a simple alphanumeric type name to ensure that it is machine-processing friendly.
+    */
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * List of properties to describe the shape (e.g., resources) included in notifications from this Subscription Topic.
@@ -129,18 +146,24 @@ trait SubscriptionTopic
   val resourceType_SubscriptionTopic: typings.fhir.fhirStrings.SubscriptionTopic
   
   /**
-    * A nominal state-transition diagram can be found in the [[definition.html#statemachine | Definition pattern]] documentation
+    * A nominal state-transition diagram can be found in the [Definition pattern](definition.html#statemachine) documentation
     * Unknown does not represent "other" - one of the defined statuses must apply.  Unknown is used when the authoring system is not sure what the current status is.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var status: draft | active | retired | unknown
   
   /**
-    * A short, descriptive, user-friendly title for the SubscriptionTopic, for example, "admission".
+    * This name does not need to be machine-processing friendly and may contain punctuation, white-space, etc.
     */
   var title: js.UndefOr[String] = js.undefined
   
   /**
-    * Can be a urn:uuid: or a urn:oid:, but real http: addresses are preferred.  This is the URI that will be used when making canonical references to this resource.
+    * Can be a `urn:uuid:` or a `urn:oid:` but real `http/s:` addresses are preferred.  Multiple instances may share the same URL if they have a distinct version.
+    * The determination of when to create a new version of a resource (same url, new version) vs. defining a new artifact is up to the author.  Considerations for making this decision are found in [Technical and Business Versions](resource.html#versions).
+    * In some cases, the resource can no longer be found at the stated url, but the url itself cannot change. Implementations can use the [meta.source](resource.html#meta) element to indicate where the current master source of the resource can be found.
+    * When this is a locally defined topic or derived from a topic defined in the FHIR spec or an IG, this uniquely identifies the topic and functionality. Ideally this URL resolves to documentation about the use cases.
+    * When this is a topic derived from another topic (e.g., it adds additional filters or functionality to a topic defined in an IG), then this URL should be different than the base and the `derivedFromCanonical` should be filled out with the unique uri as defined in the IG.
+    * When this is a direct implementation from another IG or registered topic (with no additional filters, etc., so not derived), then this url is the unique url for this topic as defined by the IG.
     */
   var url: String
   
@@ -150,9 +173,19 @@ trait SubscriptionTopic
   var useContext: js.UndefOr[js.Array[UsageContext]] = js.undefined
   
   /**
-    * There may be multiple different instances of a SubscriptionTopic that have the same identifier but different versions.
+    * There may be multiple different instances of a subscription topic that have the same identifier but different versions.
     */
   var version: js.UndefOr[String] = js.undefined
+  
+  /**
+    * If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 and a 0 if the version ordering can't be successfully be determined.
+    */
+  var versionAlgorithmCoding: js.UndefOr[Coding] = js.undefined
+  
+  /**
+    * If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 and a 0 if the version ordering can't be successfully be determined.
+    */
+  var versionAlgorithmString: js.UndefOr[String] = js.undefined
 }
 object SubscriptionTopic {
   
@@ -181,6 +214,10 @@ object SubscriptionTopic {
     inline def setContactVarargs(value: ContactDetail*): Self = StObject.set(x, "contact", js.Array(value*))
     
     inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightLabel(value: String): Self = StObject.set(x, "copyrightLabel", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightLabelUndefined: Self = StObject.set(x, "copyrightLabel", js.undefined)
     
     inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
@@ -228,6 +265,10 @@ object SubscriptionTopic {
     
     inline def setLastReviewDateUndefined: Self = StObject.set(x, "lastReviewDate", js.undefined)
     
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
     inline def setNotificationShape(value: js.Array[SubscriptionTopicNotificationShape]): Self = StObject.set(x, "notificationShape", value.asInstanceOf[js.Any])
     
     inline def setNotificationShapeUndefined: Self = StObject.set(x, "notificationShape", js.undefined)
@@ -266,6 +307,14 @@ object SubscriptionTopic {
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
+    inline def setVersionAlgorithmCoding(value: Coding): Self = StObject.set(x, "versionAlgorithmCoding", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmCodingUndefined: Self = StObject.set(x, "versionAlgorithmCoding", js.undefined)
+    
+    inline def setVersionAlgorithmString(value: String): Self = StObject.set(x, "versionAlgorithmString", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmStringUndefined: Self = StObject.set(x, "versionAlgorithmString", js.undefined)
+    
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     inline def set_approvalDate(value: Element): Self = StObject.set(x, "_approvalDate", value.asInstanceOf[js.Any])
@@ -273,6 +322,10 @@ object SubscriptionTopic {
     inline def set_approvalDateUndefined: Self = StObject.set(x, "_approvalDate", js.undefined)
     
     inline def set_copyright(value: Element): Self = StObject.set(x, "_copyright", value.asInstanceOf[js.Any])
+    
+    inline def set_copyrightLabel(value: Element): Self = StObject.set(x, "_copyrightLabel", value.asInstanceOf[js.Any])
+    
+    inline def set_copyrightLabelUndefined: Self = StObject.set(x, "_copyrightLabel", js.undefined)
     
     inline def set_copyrightUndefined: Self = StObject.set(x, "_copyright", js.undefined)
     
@@ -298,6 +351,10 @@ object SubscriptionTopic {
     
     inline def set_lastReviewDateUndefined: Self = StObject.set(x, "_lastReviewDate", js.undefined)
     
+    inline def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
+    
+    inline def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
+    
     inline def set_publisher(value: Element): Self = StObject.set(x, "_publisher", value.asInstanceOf[js.Any])
     
     inline def set_publisherUndefined: Self = StObject.set(x, "_publisher", js.undefined)
@@ -319,6 +376,10 @@ object SubscriptionTopic {
     inline def set_urlUndefined: Self = StObject.set(x, "_url", js.undefined)
     
     inline def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
+    
+    inline def set_versionAlgorithmString(value: Element): Self = StObject.set(x, "_versionAlgorithmString", value.asInstanceOf[js.Any])
+    
+    inline def set_versionAlgorithmStringUndefined: Self = StObject.set(x, "_versionAlgorithmString", js.undefined)
     
     inline def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
   }

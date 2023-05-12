@@ -25,7 +25,7 @@ object libStoreRelayRecordSourceMod {
     /* CompleteClass */
     override def delete(dataID: DataID): Unit = js.native
     
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     /* CompleteClass */
     override def get[T /* <: js.Object */](dataID: DataID): js.UndefOr[Record[T] | Null] = js.native
     

@@ -3,6 +3,9 @@ package typings.usb
 import typings.node.eventsMod.EventEmitter
 import typings.std.EventListener
 import typings.std.Map
+import typings.std.Set
+import typings.usb.distUsbMod.Device
+import typings.usb.distWebusbWebusbDeviceMod.WebUSBDevice
 import typings.usb.usbStrings.connect
 import typings.usb.usbStrings.disconnect
 import typings.w3cWebUsb.USB
@@ -31,23 +34,23 @@ object distWebusbMod {
     
     def addEventListener(`type`: connect | disconnect, listener: EventListener): Unit = js.native
     
-    /* protected */ var allowedDevices: js.Array[USBDeviceFilter] = js.native
+    /* protected */ var authorisedDevices: Set[USBDeviceFilter] = js.native
     
     /* protected */ var emitter: EventEmitter = js.native
     
     /* private */ var filterDevice: Any = js.native
     
-    /* private */ var getDeviceId: Any = js.native
+    /* private */ var getWebDevice: Any = js.native
     
-    /* private */ var isAllowedDevice: Any = js.native
+    /* private */ var isAuthorisedDevice: Any = js.native
     
-    /* protected */ var knownDevices: Map[String, USBDevice] = js.native
+    /* protected */ var knownDevices: Map[Device, WebUSBDevice] = js.native
     
     /* private */ var loadDevices: Any = js.native
     
     /* private */ var options: Any = js.native
     
-    /* private */ var preFilterDevices: Any = js.native
+    /* private */ var quickFilter: Any = js.native
     
     def removeEventListener(`type`: connect | disconnect, callback: EventListener): Unit = js.native
   }

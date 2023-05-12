@@ -1,22 +1,25 @@
 package typings.gestalt.mod
 
-import typings.gestalt.anon.EventFocusEvent
-import typings.gestalt.anon.EventKeyboardEvent
-import typings.gestalt.anon.EventValue
 import typings.gestalt.anon.Item
 import typings.gestalt.anon.Value
 import typings.gestalt.gestaltStrings.hidden
 import typings.gestalt.gestaltStrings.lg
 import typings.gestalt.gestaltStrings.md
 import typings.gestalt.gestaltStrings.visible
+import typings.react.mod.FocusEvent
+import typings.react.mod.KeyboardEvent
 import typings.react.mod.ReactElement
+import typings.react.mod.SyntheticEvent
+import typings.std.Element
+import typings.std.Event
+import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ComboBoxProps extends StObject {
   
-  var accessibilityClearButtonLabel: String
+  var accessibilityClearButtonLabel: js.UndefOr[String] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
@@ -26,7 +29,7 @@ trait ComboBoxProps extends StObject {
   
   var id: String
   
-  var inputValue: js.UndefOr[String] = js.undefined
+  var inputValue: js.UndefOr[String | Null] = js.undefined
   
   var label: String
   
@@ -34,17 +37,24 @@ trait ComboBoxProps extends StObject {
   
   var noResultText: String
   
-  var onBlur: js.UndefOr[js.Function1[/* args */ EventValue, Unit]] = js.undefined
+  var onBlur: js.UndefOr[
+    AbstractEventHandler[
+      (FocusEvent[HTMLInputElement, Element]) | (SyntheticEvent[HTMLInputElement, Event]), 
+      Value
+    ]
+  ] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* args */ Value, Unit]] = js.undefined
+  var onChange: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLInputElement, Event], Value]] = js.undefined
   
   var onClear: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onFocus: js.UndefOr[js.Function1[/* args */ EventFocusEvent, Unit]] = js.undefined
+  var onFocus: js.UndefOr[AbstractEventHandler[FocusEvent[HTMLInputElement, Element], Value]] = js.undefined
   
-  var onKeyDown: js.UndefOr[js.Function1[/* args */ EventKeyboardEvent, Unit]] = js.undefined
+  var onKeyDown: js.UndefOr[AbstractEventHandler[KeyboardEvent[HTMLInputElement], Value]] = js.undefined
   
-  var onSelect: js.UndefOr[js.Function1[/* args */ Item, Unit]] = js.undefined
+  var onSelect: js.UndefOr[
+    AbstractEventHandler[(SyntheticEvent[HTMLInputElement, Event]) | KeyboardEvent[HTMLInputElement], Item]
+  ] = js.undefined
   
   var options: js.Array[ComboBoxItemType]
   
@@ -60,14 +70,8 @@ trait ComboBoxProps extends StObject {
 }
 object ComboBoxProps {
   
-  inline def apply(
-    accessibilityClearButtonLabel: String,
-    id: String,
-    label: String,
-    noResultText: String,
-    options: js.Array[ComboBoxItemType]
-  ): ComboBoxProps = {
-    val __obj = js.Dynamic.literal(accessibilityClearButtonLabel = accessibilityClearButtonLabel.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], noResultText = noResultText.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
+  inline def apply(id: String, label: String, noResultText: String, options: js.Array[ComboBoxItemType]): ComboBoxProps = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], noResultText = noResultText.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComboBoxProps]
   }
   
@@ -75,6 +79,8 @@ object ComboBoxProps {
   implicit open class MutableBuilder[Self <: ComboBoxProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityClearButtonLabel(value: String): Self = StObject.set(x, "accessibilityClearButtonLabel", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityClearButtonLabelUndefined: Self = StObject.set(x, "accessibilityClearButtonLabel", js.undefined)
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
@@ -92,6 +98,8 @@ object ComboBoxProps {
     
     inline def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
     
+    inline def setInputValueNull: Self = StObject.set(x, "inputValue", null)
+    
     inline def setInputValueUndefined: Self = StObject.set(x, "inputValue", js.undefined)
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
@@ -102,11 +110,17 @@ object ComboBoxProps {
     
     inline def setNoResultText(value: String): Self = StObject.set(x, "noResultText", value.asInstanceOf[js.Any])
     
-    inline def setOnBlur(value: /* args */ EventValue => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+    inline def setOnBlur(
+      value: /* arg */ Value & (typings.gestalt.anon.Event[
+          (FocusEvent[HTMLInputElement, Element]) | (SyntheticEvent[HTMLInputElement, Event])
+        ]) => Unit
+    ): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
     inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
-    inline def setOnChange(value: /* args */ Value => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(
+      value: /* arg */ Value & (typings.gestalt.anon.Event[SyntheticEvent[HTMLInputElement, Event]]) => Unit
+    ): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
@@ -114,15 +128,19 @@ object ComboBoxProps {
     
     inline def setOnClearUndefined: Self = StObject.set(x, "onClear", js.undefined)
     
-    inline def setOnFocus(value: /* args */ EventFocusEvent => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+    inline def setOnFocus(
+      value: /* arg */ Value & (typings.gestalt.anon.Event[FocusEvent[HTMLInputElement, Element]]) => Unit
+    ): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     
     inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
-    inline def setOnKeyDown(value: /* args */ EventKeyboardEvent => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+    inline def setOnKeyDown(value: /* arg */ Value & typings.gestalt.anon.Event[KeyboardEvent[HTMLInputElement]] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
     
     inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
     
-    inline def setOnSelect(value: /* args */ Item => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+    inline def setOnSelect(
+      value: /* arg */ Item & (typings.gestalt.anon.Event[(SyntheticEvent[HTMLInputElement, Event]) | KeyboardEvent[HTMLInputElement]]) => Unit
+    ): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
     
     inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     

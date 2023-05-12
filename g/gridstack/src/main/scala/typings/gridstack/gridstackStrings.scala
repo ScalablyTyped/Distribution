@@ -30,6 +30,9 @@ object gridstackStrings {
   inline def change: change = "change".asInstanceOf[change]
   
   @js.native
+  sealed trait clone extends StObject
+  
+  @js.native
   sealed trait destroy
     extends StObject
        with _DDOpts

@@ -9,6 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * <Response> TwiML for Voice
   */
-open class ^ ()
-  extends StObject
-     with VoiceResponse
+open class ^ () extends VoiceResponse

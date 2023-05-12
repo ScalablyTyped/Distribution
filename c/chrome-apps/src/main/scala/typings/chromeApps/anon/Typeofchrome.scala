@@ -15,7 +15,6 @@ trait Typeofchrome extends StObject {
   /////////////
   /**
     * New Chrome Event
-    * @constructor
     */
   val Event: Instantiable
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "EventDispatcher")
 @js.native
 /**
-  * Creates eventDispatcher object. It needs to be call with '.call' to add the functionality to an object.
+  * Creates {@link THREE.EventDispatcher | EventDispatcher} object.
   */
 open class EventDispatcher[E /* <: BaseEvent */] ()
   extends typings.three.srcThreeMod.EventDispatcher[E]

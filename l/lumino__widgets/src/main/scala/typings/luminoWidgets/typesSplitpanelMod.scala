@@ -32,19 +32,19 @@ object typesSplitpanelMod {
     /* private */ var _evtKeyDown: Any = js.native
     
     /**
-      * Handle the `'mousedown'` event for the split panel.
+      * Handle the `'pointerdown'` event for the split panel.
       */
-    /* private */ var _evtMouseDown: Any = js.native
+    /* private */ var _evtPointerDown: Any = js.native
     
     /**
-      * Handle the `'mousemove'` event for the split panel.
+      * Handle the `'pointermove'` event for the split panel.
       */
-    /* private */ var _evtMouseMove: Any = js.native
+    /* private */ var _evtPointerMove: Any = js.native
     
     /**
-      * Handle the `'mouseup'` event for the split panel.
+      * Handle the `'pointerup'` event for the split panel.
       */
-    /* private */ var _evtMouseUp: Any = js.native
+    /* private */ var _evtPointerUp: Any = js.native
     
     /* private */ var _handleMoved: Any = js.native
     
@@ -64,6 +64,7 @@ object typesSplitpanelMod {
       * The alignment has no effect if the widgets can expand to fill the
       * entire split panel.
       */
+    def alignment: Alignment = js.native
     /**
       * Set the content alignment for the split panel.
       *
@@ -73,7 +74,7 @@ object typesSplitpanelMod {
       * The alignment has no effect if the widgets can expand to fill the
       * entire split panel.
       */
-    var alignment: Alignment = js.native
+    def alignment_=(value: Alignment): Unit = js.native
     
     /**
       * Handle the DOM events for the split panel.
@@ -90,20 +91,21 @@ object typesSplitpanelMod {
     /**
       * A signal emitted when a split handle has moved.
       */
-    val handleMoved: ISignal[this.type, Unit] = js.native
+    def handleMoved: ISignal[this.type, Unit] = js.native
     
     /**
       * A read-only array of the split handles in the panel.
       */
-    val handles: js.Array[HTMLDivElement] = js.native
+    def handles: js.Array[HTMLDivElement] = js.native
     
     /**
       * Get the layout orientation for the split panel.
       */
+    def orientation: Orientation = js.native
     /**
       * Set the layout orientation for the split panel.
       */
-    var orientation: Orientation = js.native
+    def orientation_=(value: Orientation): Unit = js.native
     
     /**
       * Get the relative sizes of the widgets in the panel.
@@ -121,7 +123,7 @@ object typesSplitpanelMod {
     /**
       * The renderer used by the split panel.
       */
-    val renderer: IRenderer = js.native
+    def renderer: IRenderer = js.native
     
     /**
       * Set the relative sizes for the widgets in the panel.
@@ -141,10 +143,11 @@ object typesSplitpanelMod {
     /**
       * Get the inter-element spacing for the split panel.
       */
+    def spacing: Double = js.native
     /**
       * Set the inter-element spacing for the split panel.
       */
-    var spacing: Double = js.native
+    def spacing_=(value: Double): Unit = js.native
   }
   object SplitPanel {
     

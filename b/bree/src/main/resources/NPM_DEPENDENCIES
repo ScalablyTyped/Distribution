@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "bree" : "9.1.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "bree" : "9.1.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

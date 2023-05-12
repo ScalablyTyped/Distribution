@@ -18,5 +18,5 @@ trait TypeofSEARCH extends StObject {
   def transformArguments(index: String, query: String): RedisCommandArguments = js.native
   def transformArguments(index: String, query: String, options: SearchOptions): RedisCommandArguments = js.native
   
-  def transformReply(reply: SearchRawReply): SearchReply = js.native
+  def transformReply(reply: SearchRawReply, withoutDocuments: Boolean): SearchReply = js.native
 }

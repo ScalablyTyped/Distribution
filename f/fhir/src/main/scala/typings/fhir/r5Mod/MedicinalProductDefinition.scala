@@ -18,7 +18,7 @@ trait MedicinalProductDefinition
   var _version: js.UndefOr[Element] = js.undefined
   
   /**
-    * Whether the Medicinal Product is subject to additional monitoring for regulatory reasons.
+    * Whether the Medicinal Product is subject to additional monitoring for regulatory reasons, such as heightened reporting requirements.
     */
   var additionalMonitoringIndicator: js.UndefOr[CodeableConcept] = js.undefined
   
@@ -33,7 +33,7 @@ trait MedicinalProductDefinition
   var characteristic: js.UndefOr[js.Array[MedicinalProductDefinitionCharacteristic]] = js.undefined
   
   /**
-    * Allows the product to be classified by various systems.
+    * Allows the product to be classified by various systems, commonly WHO ATC.
     */
   var classification: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
@@ -43,14 +43,19 @@ trait MedicinalProductDefinition
   var clinicalTrial: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * A code that this product is known by, usually within some formal terminology. Products (types of medications) tend to be known by identifiers during development and within regulatory process. However when they are prescribed they tend to be identified by codes. The same product may be have multiple codes, applied to it by multiple organizations.
+    * A code that this product is known by, usually within some formal terminology, perhaps assigned by a third party (i.e. not the manufacturer or regulator). Products (types of medications) tend to be known by identifiers during development and within regulatory process. However when they are prescribed they tend to be identified by codes. The same product may be have multiple codes, applied to it by multiple organizations.
     */
   var code: js.UndefOr[js.Array[Coding]] = js.undefined
   
   /**
-    * The dose form for a single part product, or combined form of a multiple part product.
+    * The dose form for a single part product, or combined form of a multiple part product. This is one concept that describes all the components. It does not represent the form with components physically mixed, if that might be necessary, for which see (AdministrableProductDefinition.administrableDoseForm).
     */
   var combinedPharmaceuticalDoseForm: js.UndefOr[CodeableConcept] = js.undefined
+  
+  /**
+    * Types of medicinal manufactured items and/or devices that this product consists of, such as tablets, capsule, or syringes. Used as a direct link when the item's packaging is not being recorded (see also PackagedProductDefinition.package.containedItem.item).
+    */
+  var comprisedOf: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * A product specific contact, person (in a role), or an organization.
@@ -58,7 +63,7 @@ trait MedicinalProductDefinition
   var contact: js.UndefOr[js.Array[MedicinalProductDefinitionContact]] = js.undefined
   
   /**
-    * Reference to another product, e.g. for linking authorised to investigational product.
+    * Reference to another product, e.g. for linking authorised to investigational product, or a virtual product.
     */
   var crossReference: js.UndefOr[js.Array[MedicinalProductDefinitionCrossReference]] = js.undefined
   
@@ -73,12 +78,12 @@ trait MedicinalProductDefinition
   var domain: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * Business identifier for this product. Could be an MPID.
+    * Business identifier for this product. Could be an MPID. When in development or being regulated, products are typically referenced by official identifiers, assigned by a manufacturer or regulator, and unique to a product (which, when compared to a product instance being prescribed, is actually a product type). See also MedicinalProductDefinition.code.
     */
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
-    * Any component of the drug product which is not the chemical entity defined as the drug substance or an excipient in the drug product. This includes process-related impurities and contaminants, product-related impurities including degradation products.
+    * Any component of the drug product which is not the chemical entity defined as the drug substance, or an excipient in the drug product. This includes process-related impurities and contaminants, product-related impurities including degradation products.
     */
   var impurity: js.UndefOr[js.Array[CodeableReference]] = js.undefined
   
@@ -98,7 +103,7 @@ trait MedicinalProductDefinition
   var legalStatusOfSupply: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * Marketing status of the medicinal product, in contrast to marketing authorization.
+    * Marketing status of the medicinal product, in contrast to marketing authorization. This refers to the product being actually 'on the market' as opposed to being allowed to be on the market (which is an authorization).
     */
   var marketingStatus: js.UndefOr[js.Array[MarketingStatus]] = js.undefined
   
@@ -118,12 +123,12 @@ trait MedicinalProductDefinition
   var operation: js.UndefOr[js.Array[MedicinalProductDefinitionOperation]] = js.undefined
   
   /**
-    * Package representation for the product. See also the PackagedProductDefinition resource.
+    * Package type for the product. See also the PackagedProductDefinition resource.
     */
   var packagedMedicinalProduct: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
-    * If authorised for use in children.
+    * If authorised for use in children, or infants, neonates etc.
     */
   var pediatricUseIndicator: js.UndefOr[CodeableConcept] = js.undefined
   
@@ -132,12 +137,12 @@ trait MedicinalProductDefinition
   val resourceType_MedicinalProductDefinition: typings.fhir.fhirStrings.MedicinalProductDefinition
   
   /**
-    * The path by which the product is taken into or makes contact with the body. In some regions this is referred to as the licenced or approved route. See also AdministrableProductDefinition resource.
+    * The path by which the product is taken into or makes contact with the body. In some regions this is referred to as the licenced or approved route. See also AdministrableProductDefinition resource. MedicinalProductDefinition.route is the same concept as AdministrableProductDefinition.routeOfAdministration.code, and they cannot be used together.
     */
   var route: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
-    * Whether the Medicinal Product is subject to special measures for regulatory reasons.
+    * Whether the Medicinal Product is subject to special measures for regulatory reasons, such as a requirement to conduct post-authorization studies.
     */
   var specialMeasures: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
@@ -208,6 +213,12 @@ object MedicinalProductDefinition {
     inline def setCombinedPharmaceuticalDoseForm(value: CodeableConcept): Self = StObject.set(x, "combinedPharmaceuticalDoseForm", value.asInstanceOf[js.Any])
     
     inline def setCombinedPharmaceuticalDoseFormUndefined: Self = StObject.set(x, "combinedPharmaceuticalDoseForm", js.undefined)
+    
+    inline def setComprisedOf(value: js.Array[Reference]): Self = StObject.set(x, "comprisedOf", value.asInstanceOf[js.Any])
+    
+    inline def setComprisedOfUndefined: Self = StObject.set(x, "comprisedOf", js.undefined)
+    
+    inline def setComprisedOfVarargs(value: Reference*): Self = StObject.set(x, "comprisedOf", js.Array(value*))
     
     inline def setContact(value: js.Array[MedicinalProductDefinitionContact]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     

@@ -7,13 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParametersPathTargetuser extends StObject {
   
   var parameters: PathTargetuser
-  
-  var responses: `404Unknown`
 }
 object ParametersPathTargetuser {
   
-  inline def apply(parameters: PathTargetuser, responses: `404Unknown`): ParametersPathTargetuser = {
-    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
+  inline def apply(parameters: PathTargetuser): ParametersPathTargetuser = {
+    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathTargetuser]
   }
   
@@ -21,7 +19,5 @@ object ParametersPathTargetuser {
   implicit open class MutableBuilder[Self <: ParametersPathTargetuser] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathTargetuser): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
-    
-    inline def setResponses(value: `404Unknown`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

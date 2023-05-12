@@ -1,12 +1,12 @@
 package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.chartJs.typesBasicMod.AnyObject
+import typings.chartJs.distTypesBasicMod.AnyObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined chart.js.chart.js.ChartComponent & {  prototype :chart.js.chart.js.LogarithmicScale<chart.js.chart.js.LogarithmicScaleOptions>, new <O extends chart.js.chart.js.LogarithmicScaleOptions = chart.js.chart.js.LogarithmicScaleOptions>(cfg : chart.js.chart.js/types/basic.AnyObject): chart.js.chart.js.LogarithmicScale<O>} */
+/* Inlined chart.js.chart.js/dist/types/index.ChartComponent & {  prototype :chart.js.chart.js/dist/types/index.LogarithmicScale<chart.js.chart.js/dist/types/index.LogarithmicScaleOptions>, new <O extends chart.js.chart.js/dist/types/index.LogarithmicScaleOptions = chart.js.chart.js/dist/types/index.LogarithmicScaleOptions>(cfg : chart.js.chart.js/dist/types/basic.AnyObject): chart.js.chart.js/dist/types/index.LogarithmicScale<O>} */
 object LogarithmicScale {
   
   @JSImport("chart.js", "LogarithmicScale")

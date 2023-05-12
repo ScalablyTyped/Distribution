@@ -16,7 +16,7 @@ object libIconsSkinOutlinedMod extends Shortcut {
   @js.native
   trait SkinOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_SkinOutlinedIconType: String = js.native

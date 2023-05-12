@@ -1,8 +1,35 @@
 package typings.phaser.Phaser.Types
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.phaser.Phaser.Animations.AnimationManager
+import typings.phaser.Phaser.Cache.CacheManager
+import typings.phaser.Phaser.Cameras.Scene2D.CameraManager
+import typings.phaser.Phaser.Data.DataManager
+import typings.phaser.Phaser.Events.EventEmitter
+import typings.phaser.Phaser.FacebookInstantGamesPlugin
+import typings.phaser.Phaser.Game
+import typings.phaser.Phaser.GameObjects.DisplayList
+import typings.phaser.Phaser.GameObjects.GameObjectCreator
+import typings.phaser.Phaser.GameObjects.GameObjectFactory
+import typings.phaser.Phaser.GameObjects.LightsManager
+import typings.phaser.Phaser.Input.InputPlugin
+import typings.phaser.Phaser.Loader.LoaderPlugin
+import typings.phaser.Phaser.Physics.Arcade.ArcadePhysics
+import typings.phaser.Phaser.Physics.Matter.MatterPhysics
+import typings.phaser.Phaser.Plugins.PluginManager
+import typings.phaser.Phaser.Renderer.Canvas.CanvasRenderer
+import typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer
+import typings.phaser.Phaser.Scale.ScaleManager
 import typings.phaser.Phaser.Scene
-import typings.phaser.Phaser.Types.Cameras.Scene2D.JSONCamera
+import typings.phaser.Phaser.Scenes.ScenePlugin
+import typings.phaser.Phaser.Scenes.Systems
+import typings.phaser.Phaser.Sound.HTML5AudioSoundManager
+import typings.phaser.Phaser.Sound.NoAudioSoundManager
+import typings.phaser.Phaser.Sound.WebAudioSoundManager
+import typings.phaser.Phaser.Textures.TextureManager
+import typings.phaser.Phaser.Time.Clock
+import typings.phaser.Phaser.Tweens.TweenManager
+import typings.phaser.Phaser.Types.Cameras.Scene2D.CameraConfig
 import typings.phaser.Phaser.Types.Core.LoaderConfig
 import typings.phaser.Phaser.Types.Core.PhysicsConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.PackFileSection
@@ -13,7 +40,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Scenes {
   
-  trait CreateSceneFromObjectConfig extends StObject {
+  trait CreateSceneFromObjectConfig
+    extends StObject
+       with _SceneType {
     
     /**
       * The scene's create callback.
@@ -130,6 +159,16 @@ object Scenes {
     var moveBelow: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * This callback is invoked when transition starting.
+      */
+    var onStart: js.UndefOr[SceneTransitionOnStartCallback] = js.undefined
+    
+    /**
+      * The context in which the callback is invoked.
+      */
+    var onStartScope: js.UndefOr[Any] = js.undefined
+    
+    /**
       * This callback is invoked every frame for the duration of the transition.
       */
     var onUpdate: js.UndefOr[js.Function] = js.undefined
@@ -184,6 +223,14 @@ object Scenes {
       
       inline def setMoveBelowUndefined: Self = StObject.set(x, "moveBelow", js.undefined)
       
+      inline def setOnStart(value: SceneTransitionOnStartCallback): Self = StObject.set(x, "onStart", value.asInstanceOf[js.Any])
+      
+      inline def setOnStartScope(value: Any): Self = StObject.set(x, "onStartScope", value.asInstanceOf[js.Any])
+      
+      inline def setOnStartScopeUndefined: Self = StObject.set(x, "onStartScope", js.undefined)
+      
+      inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
+      
       inline def setOnUpdate(value: js.Function): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
       
       inline def setOnUpdateScope(value: Any): Self = StObject.set(x, "onUpdateScope", value.asInstanceOf[js.Any])
@@ -204,9 +251,21 @@ object Scenes {
     }
   }
   
-  type SceneUpdateCallback = js.ThisFunction0[/* this */ Scene, Unit]
+  type SceneTransitionOnStartCallback = js.ThisFunction2[/* this */ Scene, /* fromScene */ Scene, /* toScene */ Scene, Unit]
   
-  trait SettingsConfig extends StObject {
+  /* Rewritten from type alias, can be one of: 
+    - typings.phaser.Phaser.Scene
+    - typings.phaser.Phaser.Types.Scenes.SettingsConfig
+    - typings.phaser.Phaser.Types.Scenes.CreateSceneFromObjectConfig
+    - js.Function
+  */
+  type SceneType = _SceneType | js.Function
+  
+  type SceneUpdateCallback = js.ThisFunction2[/* this */ Scene, /* time */ Double, /* delta */ Double, Unit]
+  
+  trait SettingsConfig
+    extends StObject
+       with _SceneType {
     
     /**
       * Does the Scene start as active or not? An active Scene updates each step.
@@ -216,7 +275,7 @@ object Scenes {
     /**
       * An optional Camera configuration object.
       */
-    var cameras: js.UndefOr[JSONCamera | js.Array[JSONCamera]] = js.undefined
+    var cameras: js.UndefOr[CameraConfig | js.Array[CameraConfig] | Null] = js.undefined
     
     /**
       * The unique key of this Scene. Must be unique within the entire Game instance.
@@ -272,11 +331,13 @@ object Scenes {
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      inline def setCameras(value: JSONCamera | js.Array[JSONCamera]): Self = StObject.set(x, "cameras", value.asInstanceOf[js.Any])
+      inline def setCameras(value: CameraConfig | js.Array[CameraConfig]): Self = StObject.set(x, "cameras", value.asInstanceOf[js.Any])
+      
+      inline def setCamerasNull: Self = StObject.set(x, "cameras", null)
       
       inline def setCamerasUndefined: Self = StObject.set(x, "cameras", js.undefined)
       
-      inline def setCamerasVarargs(value: JSONCamera*): Self = StObject.set(x, "cameras", js.Array(value*))
+      inline def setCamerasVarargs(value: CameraConfig*): Self = StObject.set(x, "cameras", js.Array(value*))
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -322,7 +383,7 @@ object Scenes {
     /**
       * The Camera configuration object.
       */
-    var cameras: JSONCamera | js.Array[JSONCamera]
+    var cameras: CameraConfig | js.Array[CameraConfig] | Null
     
     /**
       * a data bundle passed to this Scene from the Scene Manager.
@@ -387,7 +448,7 @@ object Scenes {
     /**
       * The Scene this Scene is transitioning from, if set.
       */
-    var transitionFrom: Scene
+    var transitionFrom: Scene | Null
     
     /**
       * The visible state of this Scene. A visible Scene renders each step.
@@ -398,7 +459,6 @@ object Scenes {
     
     inline def apply(
       active: Boolean,
-      cameras: JSONCamera | js.Array[JSONCamera],
       data: js.Object,
       isBooted: Boolean,
       isTransition: Boolean,
@@ -411,10 +471,9 @@ object Scenes {
       status: Double,
       transitionAllowInput: Boolean,
       transitionDuration: Double,
-      transitionFrom: Scene,
       visible: Boolean
     ): SettingsObject = {
-      val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], cameras = cameras.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], isBooted = isBooted.asInstanceOf[js.Any], isTransition = isTransition.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], loader = loader.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], pack = pack.asInstanceOf[js.Any], physics = physics.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], transitionAllowInput = transitionAllowInput.asInstanceOf[js.Any], transitionDuration = transitionDuration.asInstanceOf[js.Any], transitionFrom = transitionFrom.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], isBooted = isBooted.asInstanceOf[js.Any], isTransition = isTransition.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], loader = loader.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], pack = pack.asInstanceOf[js.Any], physics = physics.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], transitionAllowInput = transitionAllowInput.asInstanceOf[js.Any], transitionDuration = transitionDuration.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], cameras = null, transitionFrom = null)
       __obj.asInstanceOf[SettingsObject]
     }
     
@@ -423,9 +482,11 @@ object Scenes {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      inline def setCameras(value: JSONCamera | js.Array[JSONCamera]): Self = StObject.set(x, "cameras", value.asInstanceOf[js.Any])
+      inline def setCameras(value: CameraConfig | js.Array[CameraConfig]): Self = StObject.set(x, "cameras", value.asInstanceOf[js.Any])
       
-      inline def setCamerasVarargs(value: JSONCamera*): Self = StObject.set(x, "cameras", js.Array(value*))
+      inline def setCamerasNull: Self = StObject.set(x, "cameras", null)
+      
+      inline def setCamerasVarargs(value: CameraConfig*): Self = StObject.set(x, "cameras", js.Array(value*))
       
       inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -453,7 +514,55 @@ object Scenes {
       
       inline def setTransitionFrom(value: Scene): Self = StObject.set(x, "transitionFrom", value.asInstanceOf[js.Any])
       
+      inline def setTransitionFromNull: Self = StObject.set(x, "transitionFrom", null)
+      
       inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait _SceneType extends StObject
+  object _SceneType {
+    
+    inline def CreateSceneFromObjectConfig(): typings.phaser.Phaser.Types.Scenes.CreateSceneFromObjectConfig = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[typings.phaser.Phaser.Types.Scenes.CreateSceneFromObjectConfig]
+    }
+    
+    inline def Scene(
+      add: GameObjectFactory,
+      anims: AnimationManager,
+      cache: CacheManager,
+      cameras: CameraManager,
+      children: DisplayList,
+      data: DataManager,
+      events: EventEmitter,
+      facebook: FacebookInstantGamesPlugin,
+      game: Game,
+      input: InputPlugin,
+      lights: LightsManager,
+      load: LoaderPlugin,
+      make: GameObjectCreator,
+      matter: MatterPhysics,
+      physics: ArcadePhysics,
+      plugins: PluginManager,
+      registry: DataManager,
+      renderer: CanvasRenderer | WebGLRenderer,
+      scale: ScaleManager,
+      scene: ScenePlugin,
+      sound: NoAudioSoundManager | HTML5AudioSoundManager | WebAudioSoundManager,
+      sys: Systems,
+      textures: TextureManager,
+      time: Clock,
+      tweens: TweenManager,
+      update: (Double, Double) => Unit
+    ): typings.phaser.Phaser.Scene = {
+      val __obj = js.Dynamic.literal(add = add.asInstanceOf[js.Any], anims = anims.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], cameras = cameras.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], facebook = facebook.asInstanceOf[js.Any], game = game.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], lights = lights.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any], make = make.asInstanceOf[js.Any], matter = matter.asInstanceOf[js.Any], physics = physics.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], registry = registry.asInstanceOf[js.Any], renderer = renderer.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any], sound = sound.asInstanceOf[js.Any], sys = sys.asInstanceOf[js.Any], textures = textures.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], tweens = tweens.asInstanceOf[js.Any], update = js.Any.fromFunction2(update))
+      __obj.asInstanceOf[typings.phaser.Phaser.Scene]
+    }
+    
+    inline def SettingsConfig(): typings.phaser.Phaser.Types.Scenes.SettingsConfig = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[typings.phaser.Phaser.Types.Scenes.SettingsConfig]
     }
   }
 }

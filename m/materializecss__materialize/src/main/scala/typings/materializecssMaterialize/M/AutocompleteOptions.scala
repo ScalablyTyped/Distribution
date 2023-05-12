@@ -1,5 +1,6 @@
 package typings.materializecssMaterialize.M
 
+import typings.materializecssMaterialize.anon.PartialDropdownOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,15 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutocompleteOptions extends StObject {
   
   /**
-    * If true will render the key from each item directly as HTML. User input MUST be properly sanitized first.
+    * If true will render the key from each item directly as HTML.
+    * User input MUST be properly sanitized first.
     * @default false
     */
   var allowUnsafeHTML: Boolean
   
   /**
-    * Data object defining autocomplete options with optional icon strings.
+    * Data object defining autocomplete options with
+    * optional icon strings.
     */
   var data: AutocompleteData
+  
+  /**
+    * Pass options object to select dropdown initialization.
+    * @default {}
+    */
+  var dropdownOptions: PartialDropdownOptions
   
   /**
     * Limit of results the autocomplete shows.
@@ -35,7 +44,8 @@ trait AutocompleteOptions extends StObject {
   def onAutocomplete(text: String): Unit
   
   /**
-    * Sort function that defines the order of the list of autocomplete options.
+    * Sort function that defines the order of the list
+    * of autocomplete options.
     */
   def sortFunction(a: String, b: String, inputText: String): Double
 }
@@ -44,12 +54,13 @@ object AutocompleteOptions {
   inline def apply(
     allowUnsafeHTML: Boolean,
     data: AutocompleteData,
+    dropdownOptions: PartialDropdownOptions,
     limit: Double,
     minLength: Double,
     onAutocomplete: String => Unit,
     sortFunction: (String, String, String) => Double
   ): AutocompleteOptions = {
-    val __obj = js.Dynamic.literal(allowUnsafeHTML = allowUnsafeHTML.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], minLength = minLength.asInstanceOf[js.Any], onAutocomplete = js.Any.fromFunction1(onAutocomplete), sortFunction = js.Any.fromFunction3(sortFunction))
+    val __obj = js.Dynamic.literal(allowUnsafeHTML = allowUnsafeHTML.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], dropdownOptions = dropdownOptions.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], minLength = minLength.asInstanceOf[js.Any], onAutocomplete = js.Any.fromFunction1(onAutocomplete), sortFunction = js.Any.fromFunction3(sortFunction))
     __obj.asInstanceOf[AutocompleteOptions]
   }
   
@@ -59,6 +70,8 @@ object AutocompleteOptions {
     inline def setAllowUnsafeHTML(value: Boolean): Self = StObject.set(x, "allowUnsafeHTML", value.asInstanceOf[js.Any])
     
     inline def setData(value: AutocompleteData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDropdownOptions(value: PartialDropdownOptions): Self = StObject.set(x, "dropdownOptions", value.asInstanceOf[js.Any])
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

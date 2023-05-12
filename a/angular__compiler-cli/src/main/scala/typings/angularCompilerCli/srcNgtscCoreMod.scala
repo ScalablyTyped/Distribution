@@ -10,7 +10,6 @@ import typings.angularCompilerCli.srcNgtscIncrementalSrcStateMod.IncrementalStat
 import typings.angularCompilerCli.srcNgtscIncrementalSrcStrategyMod.IncrementalBuildStrategy
 import typings.angularCompilerCli.srcNgtscPerfMod.ActivePerfRecorder
 import typings.angularCompilerCli.srcNgtscProgramDriverSrcApiMod.ProgramDriver
-import typings.angularCompilerCli.srcNgtscShimsApiMod.FactoryTracker
 import typings.angularCompilerCli.srcNgtscShimsMod.ShimAdapter
 import typings.angularCompilerCli.srcNgtscShimsMod.ShimReferenceTagger
 import typings.std.Set
@@ -76,17 +75,6 @@ object srcNgtscCoreMod {
       shimAdapter: ShimAdapter,
       shimTagger: ShimReferenceTagger,
       entryPoint: Null,
-      factoryTracker: Null,
-      diagnostics: js.Array[Diagnostic]
-    ) = this()
-    def this(
-      delegate: ExtendedTsCompilerHost,
-      inputFiles: js.Array[String],
-      rootDirs: js.Array[AbsoluteFsPath],
-      shimAdapter: ShimAdapter,
-      shimTagger: ShimReferenceTagger,
-      entryPoint: Null,
-      factoryTracker: FactoryTracker,
       diagnostics: js.Array[Diagnostic]
     ) = this()
     def this(
@@ -96,17 +84,6 @@ object srcNgtscCoreMod {
       shimAdapter: ShimAdapter,
       shimTagger: ShimReferenceTagger,
       entryPoint: AbsoluteFsPath,
-      factoryTracker: Null,
-      diagnostics: js.Array[Diagnostic]
-    ) = this()
-    def this(
-      delegate: ExtendedTsCompilerHost,
-      inputFiles: js.Array[String],
-      rootDirs: js.Array[AbsoluteFsPath],
-      shimAdapter: ShimAdapter,
-      shimTagger: ShimReferenceTagger,
-      entryPoint: AbsoluteFsPath,
-      factoryTracker: FactoryTracker,
       diagnostics: js.Array[Diagnostic]
     ) = this()
   }

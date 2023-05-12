@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 */
 trait ElementNode
   extends StObject
-     with ParentNode2
+     with ParentNode
      with TemplateChildNode
 object ElementNode {
   

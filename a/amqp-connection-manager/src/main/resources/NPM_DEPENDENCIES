@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "amqp-connection-manager" : "4.1.9"
+      "amqp-connection-manager" : "4.1.13"
     }
   ],
   "test-dependencies" : [
     {
-      "amqp-connection-manager" : "4.1.9"
+      "amqp-connection-manager" : "4.1.13"
     }
   ],
   "compile-devDependencies" : [

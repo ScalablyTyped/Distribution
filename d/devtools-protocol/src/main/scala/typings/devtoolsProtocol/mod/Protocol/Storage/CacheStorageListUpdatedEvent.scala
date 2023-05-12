@@ -10,11 +10,16 @@ trait CacheStorageListUpdatedEvent extends StObject {
     * Origin to update.
     */
   var origin: String
+  
+  /**
+    * Storage key to update.
+    */
+  var storageKey: String
 }
 object CacheStorageListUpdatedEvent {
   
-  inline def apply(origin: String): CacheStorageListUpdatedEvent = {
-    val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any])
+  inline def apply(origin: String, storageKey: String): CacheStorageListUpdatedEvent = {
+    val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any], storageKey = storageKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheStorageListUpdatedEvent]
   }
   
@@ -22,5 +27,7 @@ object CacheStorageListUpdatedEvent {
   implicit open class MutableBuilder[Self <: CacheStorageListUpdatedEvent] (val x: Self) extends AnyVal {
     
     inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    
+    inline def setStorageKey(value: String): Self = StObject.set(x, "storageKey", value.asInstanceOf[js.Any])
   }
 }

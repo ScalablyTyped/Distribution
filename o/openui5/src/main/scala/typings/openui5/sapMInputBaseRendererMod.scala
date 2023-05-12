@@ -1,6 +1,7 @@
 package typings.openui5
 
 import org.scalablytyped.runtime.Shortcut
+import typings.openui5.sapMLibraryMod.InputBaseAccessibilityState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,11 +13,15 @@ object sapMInputBaseRendererMod extends Shortcut {
   val default: InputBaseRenderer = js.native
   
   /**
+    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    *
     * InputBase renderer.
     */
   trait InputBaseRenderer extends StObject {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * This method is reserved for derived class to set width inline style
       */
     def addControlWidth(
@@ -31,6 +36,8 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Add cursor class to input container.
       */
     def addCursorClass(
@@ -45,6 +52,8 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * This method is reserved for derived classes to add extra classes for input element.
       */
     def addInnerClasses(
@@ -59,6 +68,8 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * This method is reserved for derived classes to add extra styles for input element.
       */
     def addInnerStyles(
@@ -73,6 +84,8 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * This method is reserved for derived classes to add extra classes for input container.
       */
     def addOuterClasses(
@@ -87,6 +100,8 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * This method is reserved for derived class to add extra styles for input container.
       */
     def addOuterStyles(
@@ -101,6 +116,8 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Add a padding class to input container. May be overwritten by subclasses.
       */
     def addPaddingClass(
@@ -115,7 +132,8 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
-      * @deprecated
+      * @deprecated (since 1.58.0)
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Adds custom placeholder classes, if native placeholder is not used. To be overwritten by subclasses.
       * Note that this method should not be used anymore as native placeholder is used on all browsers
@@ -132,7 +150,8 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
-      * @deprecated
+      * @deprecated (since 1.58.0)
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * This method is reserved for derived classes to add extra styles for the placeholder, if rendered as label.
       */
@@ -148,6 +167,8 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Add the CSS value state classes to the control's root element using the provided {@link sap.ui.core.RenderManager}.
       * To be overwritten by subclasses.
       */
@@ -163,6 +184,8 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * This method is reserved for derived classes to add extra styles for input element.
       */
     def addWrapperStyles(
@@ -177,6 +200,8 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Write the closing tag name of the input.
       */
     def closeInputTag(
@@ -191,6 +216,8 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Ends opened input tag.
       */
     def endInputTag(
@@ -205,16 +232,22 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns the accessibility state of the control. Hook for the subclasses.
+      *
+      * @returns Accessibility state object
       */
     def getAccessibilityState(
       /**
       * an object representation of the control.
       */
     oControl: typings.openui5.sapMInputBaseMod.default
-    ): js.Object
+    ): InputBaseAccessibilityState
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns the inner aria describedby ids for the accessibility. Hook for the subclasses.
       */
     def getAriaDescribedBy(
@@ -225,6 +258,8 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): js.UndefOr[String]
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns the inner aria labelledby ids for the accessibility. Hook for the subclasses.
       */
     def getAriaLabelledBy(
@@ -235,6 +270,8 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): js.UndefOr[String]
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns aria accessibility role for the control. Hook for the subclasses.
       */
     def getAriaRole(
@@ -245,6 +282,8 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): String
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns the inner aria describedby announcement texts for the accessibility. Hook for the subclasses.
       */
     def getDescribedByAnnouncement(
@@ -255,6 +294,8 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): String
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Defines the ID suffix of the inner element
       *
       * @returns The inner element ID suffix.
@@ -262,6 +303,8 @@ object sapMInputBaseRendererMod extends Shortcut {
     def getInnerSuffix(): String
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns the inner aria labelledby announcement texts for the accessibility. Hook for the subclasses.
       */
     def getLabelledByAnnouncement(
@@ -272,6 +315,8 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): String
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Write the opening tag name of the input.
       */
     def openInputTag(
@@ -286,6 +331,8 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * This method is reserved for derived classes to prepend inner content.
       */
     def prependInnerContent(
@@ -300,6 +347,8 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Renders the hidden aria labelledby node for the accessibility. Hook for the subclasses.
       */
     def renderAriaDescribedBy(
@@ -314,6 +363,8 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Renders the hidden aria labelledby node for the accessibility. Hook for the subclasses.
       */
     def renderAriaLabelledBy(
@@ -328,6 +379,8 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Renders the hidden aria describedby and errormessage nodes for the accessibility.
       */
     def renderValueStateAccDom(
@@ -342,6 +395,8 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Writes the accessibility state of the control. Hook for the subclasses.
       */
     def writeAccessibilityState(
@@ -356,6 +411,8 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Write the decorations of the input - description and value-help icon.
       */
     def writeDecorations(
@@ -370,6 +427,8 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Renders icons from the icon aggregations.
       */
     def writeIcons(
@@ -384,6 +443,8 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * This method is reserved for derived classes to add extra attributes for the input element.
       */
     def writeInnerAttributes(
@@ -398,6 +459,8 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Write the value of the input.
       */
     def writeInnerContent(
@@ -412,6 +475,8 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Write the value of the input.
       */
     def writeInnerValue(
@@ -426,6 +491,8 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * This method is reserved for derived class to add extra attributes for input container.
       */
     def writeOuterAttributes(
@@ -455,7 +522,7 @@ object sapMInputBaseRendererMod extends Shortcut {
       addWrapperStyles: (typings.openui5.sapUiCoreRenderManagerMod.default, typings.openui5.sapMInputBaseMod.default) => Unit,
       closeInputTag: (typings.openui5.sapUiCoreRenderManagerMod.default, typings.openui5.sapMInputBaseMod.default) => Unit,
       endInputTag: (typings.openui5.sapUiCoreRenderManagerMod.default, typings.openui5.sapMInputBaseMod.default) => Unit,
-      getAccessibilityState: typings.openui5.sapMInputBaseMod.default => js.Object,
+      getAccessibilityState: typings.openui5.sapMInputBaseMod.default => InputBaseAccessibilityState,
       getAriaDescribedBy: typings.openui5.sapMInputBaseMod.default => js.UndefOr[String],
       getAriaLabelledBy: typings.openui5.sapMInputBaseMod.default => js.UndefOr[String],
       getAriaRole: typings.openui5.sapMInputBaseMod.default => String,
@@ -534,7 +601,7 @@ object sapMInputBaseRendererMod extends Shortcut {
         value: (typings.openui5.sapUiCoreRenderManagerMod.default, typings.openui5.sapMInputBaseMod.default) => Unit
       ): Self = StObject.set(x, "endInputTag", js.Any.fromFunction2(value))
       
-      inline def setGetAccessibilityState(value: typings.openui5.sapMInputBaseMod.default => js.Object): Self = StObject.set(x, "getAccessibilityState", js.Any.fromFunction1(value))
+      inline def setGetAccessibilityState(value: typings.openui5.sapMInputBaseMod.default => InputBaseAccessibilityState): Self = StObject.set(x, "getAccessibilityState", js.Any.fromFunction1(value))
       
       inline def setGetAriaDescribedBy(value: typings.openui5.sapMInputBaseMod.default => js.UndefOr[String]): Self = StObject.set(x, "getAriaDescribedBy", js.Any.fromFunction1(value))
       

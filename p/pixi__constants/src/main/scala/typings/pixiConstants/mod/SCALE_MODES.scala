@@ -13,12 +13,20 @@ object SCALE_MODES extends StObject {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SCALE_MODES & Double] = js.native
   
+  /**
+    * Smooth scaling
+    * @default 1
+    */
   @js.native
   sealed trait LINEAR
     extends StObject
        with SCALE_MODES
   /* 1 */ val LINEAR: typings.pixiConstants.mod.SCALE_MODES.LINEAR & Double = js.native
   
+  /**
+    * Pixelating scaling
+    * @default 0
+    */
   @js.native
   sealed trait NEAREST
     extends StObject

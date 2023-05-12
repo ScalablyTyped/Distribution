@@ -12,6 +12,8 @@ object anon {
     var content: MagicString
     
     var filename: js.UndefOr[String] = js.undefined
+    
+    var ignoreList: js.UndefOr[Boolean] = js.undefined
   }
   object Content {
     
@@ -28,6 +30,10 @@ object anon {
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
       inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      
+      inline def setIgnoreList(value: Boolean): Self = StObject.set(x, "ignoreList", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreListUndefined: Self = StObject.set(x, "ignoreList", js.undefined)
     }
   }
 }

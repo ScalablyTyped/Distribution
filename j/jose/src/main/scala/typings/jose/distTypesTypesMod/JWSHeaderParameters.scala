@@ -16,7 +16,7 @@ trait JWSHeaderParameters
   
   /**
     * This JWS Extension Header Parameter modifies the JWS Payload representation and the JWS Signing
-    * Input computation as per [RFC7797](https://www.rfc-editor.org/rfc/rfc7797).
+    * Input computation as per {@link https://www.rfc-editor.org/rfc/rfc7797 RFC7797}.
     */
   var b64: js.UndefOr[Boolean] = js.undefined
   

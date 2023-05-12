@@ -3,6 +3,7 @@ package typings.typeFest
 import typings.typeFest.sourceFixedLengthArrayMod.ArrayLengthMutationKeys
 import typings.typeFest.sourceInternalMod.StringDigit
 import typings.typeFest.sourceInternalMod.UpperCaseCharacters
+import typings.typeFest.sourceInternalMod.Whitespace
 import typings.typeFest.sourceInternalMod.WordSeparators
 import typings.typeFest.sourceMergeDeepMod.ArrayMergeMode
 import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.CompilerOptions.FallbackPolling
@@ -10,6 +11,8 @@ import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.CompilerOptions.Impor
 import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.CompilerOptions.JSX
 import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.CompilerOptions.Lib
 import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.CompilerOptions.Module
+import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.CompilerOptions.ModuleDetection
+import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.CompilerOptions.ModuleResolution
 import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.CompilerOptions.NewLine
 import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.CompilerOptions.Target
 import typings.typeFest.sourceTsconfigJsonMod.TsConfigJson.CompilerOptions.WatchDirectory
@@ -70,6 +73,10 @@ object typeFestStrings {
   inline def `5`: `5` = "5".asInstanceOf[`5`]
   
   @js.native
+  sealed trait `5Dot0` extends StObject
+  inline def `5Dot0`: `5Dot0` = "5.0".asInstanceOf[`5Dot0`]
+  
+  @js.native
   sealed trait `6`
     extends StObject
        with StringDigit
@@ -112,6 +119,12 @@ object typeFestStrings {
   inline def B: B = "B".asInstanceOf[B]
   
   @js.native
+  sealed trait Bundler
+    extends StObject
+       with ModuleResolution
+  inline def Bundler: Bundler = "Bundler".asInstanceOf[Bundler]
+  
+  @js.native
   sealed trait C
     extends StObject
        with UpperCaseCharacters
@@ -122,6 +135,12 @@ object typeFestStrings {
     extends StObject
        with NewLine
   inline def CRLF: CRLF = "CRLF".asInstanceOf[CRLF]
+  
+  @js.native
+  sealed trait Classic
+    extends StObject
+       with ModuleResolution
+  inline def Classic: Classic = "Classic".asInstanceOf[Classic]
   
   @js.native
   sealed trait CommonJS
@@ -423,6 +442,7 @@ object typeFestStrings {
   sealed trait ES2022
     extends StObject
        with Module
+       with Target
   inline def ES2022: ES2022 = "ES2022".asInstanceOf[ES2022]
   
   @js.native
@@ -667,15 +687,29 @@ object typeFestStrings {
   inline def N: N = "N".asInstanceOf[N]
   
   @js.native
+  sealed trait Node
+    extends StObject
+       with ModuleResolution
+  inline def Node: Node = "Node".asInstanceOf[Node]
+  
+  @js.native
+  sealed trait Node10
+    extends StObject
+       with ModuleResolution
+  inline def Node10: Node10 = "Node10".asInstanceOf[Node10]
+  
+  @js.native
   sealed trait Node16
     extends StObject
        with Module
+       with ModuleResolution
   inline def Node16: Node16 = "Node16".asInstanceOf[Node16]
   
   @js.native
   sealed trait NodeNext
     extends StObject
        with Module
+       with ModuleResolution
   inline def NodeNext: NodeNext = "NodeNext".asInstanceOf[NodeNext]
   
   @js.native
@@ -731,12 +765,6 @@ object typeFestStrings {
     extends StObject
        with Lib
   inline def ScriptHost: ScriptHost = "ScriptHost".asInstanceOf[ScriptHost]
-  
-  @js.native
-  sealed trait Space
-    extends StObject
-       with WordSeparators
-  inline def Space: Space = (" ").asInstanceOf[Space]
   
   @js.native
   sealed trait System
@@ -834,6 +862,10 @@ object typeFestStrings {
   inline def _underscore: _underscore = "_".asInstanceOf[_underscore]
   
   @js.native
+  sealed trait add extends StObject
+  inline def add: add = "add".asInstanceOf[add]
+  
+  @js.native
   sealed trait aix extends StObject
   inline def aix: aix = "aix".asInstanceOf[aix]
   
@@ -852,12 +884,30 @@ object typeFestStrings {
   inline def arm64: arm64 = "arm64".asInstanceOf[arm64]
   
   @js.native
+  sealed trait auto
+    extends StObject
+       with ModuleDetection
+  inline def auto: auto = "auto".asInstanceOf[auto]
+  
+  @js.native
   sealed trait browser extends StObject
   inline def browser: browser = "browser".asInstanceOf[browser]
   
   @js.native
-  sealed trait classic extends StObject
-  inline def classic: classic = "classic".asInstanceOf[classic]
+  sealed trait bundler_
+    extends StObject
+       with ModuleResolution
+  inline def bundler_ : bundler_ = "bundler".asInstanceOf[bundler_]
+  
+  @js.native
+  sealed trait classic_
+    extends StObject
+       with ModuleResolution
+  inline def classic_ : classic_ = "classic".asInstanceOf[classic_]
+  
+  @js.native
+  sealed trait clear extends StObject
+  inline def clear: clear = "clear".asInstanceOf[clear]
   
   @js.native
   sealed trait commonjs_
@@ -882,6 +932,10 @@ object typeFestStrings {
   @js.native
   sealed trait darwin extends StObject
   inline def darwin: darwin = "darwin".asInstanceOf[darwin]
+  
+  @js.native
+  sealed trait delete extends StObject
+  inline def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
   sealed trait deno extends StObject
@@ -916,6 +970,10 @@ object typeFestStrings {
   @js.native
   sealed trait electron extends StObject
   inline def electron: electron = "electron".asInstanceOf[electron]
+  
+  @js.native
+  sealed trait entries extends StObject
+  inline def entries: entries = "entries".asInstanceOf[entries]
   
   @js.native
   sealed trait equality extends StObject
@@ -1180,6 +1238,7 @@ object typeFestStrings {
   sealed trait es2022_
     extends StObject
        with Module
+       with Target
   inline def es2022_ : es2022_ = "es2022".asInstanceOf[es2022_]
   
   @js.native
@@ -1297,6 +1356,16 @@ object typeFestStrings {
   inline def fixedPollingInterval_ : fixedPollingInterval_ = "fixedPollingInterval".asInstanceOf[fixedPollingInterval_]
   
   @js.native
+  sealed trait forEach extends StObject
+  inline def forEach: forEach = "forEach".asInstanceOf[forEach]
+  
+  @js.native
+  sealed trait force
+    extends StObject
+       with ModuleDetection
+  inline def force: force = "force".asInstanceOf[force]
+  
+  @js.native
   sealed trait foundation extends StObject
   inline def foundation: foundation = "foundation".asInstanceOf[foundation]
   
@@ -1305,8 +1374,16 @@ object typeFestStrings {
   inline def freebsd: freebsd = "freebsd".asInstanceOf[freebsd]
   
   @js.native
+  sealed trait get extends StObject
+  inline def get: get = "get".asInstanceOf[get]
+  
+  @js.native
   sealed trait github extends StObject
   inline def github: github = "github".asInstanceOf[github]
+  
+  @js.native
+  sealed trait has extends StObject
+  inline def has: has = "has".asInstanceOf[has]
   
   @js.native
   sealed trait ia32 extends StObject
@@ -1319,6 +1396,16 @@ object typeFestStrings {
   @js.native
   sealed trait individual extends StObject
   inline def individual: individual = "individual".asInstanceOf[individual]
+  
+  @js.native
+  sealed trait keys extends StObject
+  inline def keys: keys = "keys".asInstanceOf[keys]
+  
+  @js.native
+  sealed trait legacy
+    extends StObject
+       with ModuleDetection
+  inline def legacy: legacy = "legacy".asInstanceOf[legacy]
   
   @js.native
   sealed trait lf_
@@ -1343,23 +1430,33 @@ object typeFestStrings {
   inline def module: module = "module".asInstanceOf[module]
   
   @js.native
-  sealed trait node extends StObject
-  inline def node: node = "node".asInstanceOf[node]
-  
-  @js.native
   sealed trait `node-addons` extends StObject
   inline def `node-addons`: `node-addons` = "node-addons".asInstanceOf[`node-addons`]
+  
+  @js.native
+  sealed trait node10_
+    extends StObject
+       with ModuleResolution
+  inline def node10_ : node10_ = "node10".asInstanceOf[node10_]
   
   @js.native
   sealed trait node16_
     extends StObject
        with Module
+       with ModuleResolution
   inline def node16_ : node16_ = "node16".asInstanceOf[node16_]
+  
+  @js.native
+  sealed trait node_
+    extends StObject
+       with ModuleResolution
+  inline def node_ : node_ = "node".asInstanceOf[node_]
   
   @js.native
   sealed trait nodenext_
     extends StObject
        with Module
+       with ModuleResolution
   inline def nodenext_ : nodenext_ = "nodenext".asInstanceOf[nodenext_]
   
   @js.native
@@ -1483,10 +1580,18 @@ object typeFestStrings {
   inline def scripthost_ : scripthost_ = "scripthost".asInstanceOf[scripthost_]
   
   @js.native
+  sealed trait set extends StObject
+  inline def set: set = "set".asInstanceOf[set]
+  
+  @js.native
   sealed trait shift
     extends StObject
        with ArrayLengthMutationKeys
   inline def shift: shift = "shift".asInstanceOf[shift]
+  
+  @js.native
+  sealed trait size extends StObject
+  inline def size: size = "size".asInstanceOf[size]
   
   @js.native
   sealed trait splice
@@ -1509,6 +1614,188 @@ object typeFestStrings {
     extends StObject
        with Module
   inline def system_ : system_ = "system".asInstanceOf[system_]
+  
+  @js.native
+  sealed trait uLeftcurlybracket1680Rightcurlybracket
+    extends StObject
+       with Whitespace
+       with WordSeparators
+  inline def uLeftcurlybracket1680Rightcurlybracket: uLeftcurlybracket1680Rightcurlybracket = "u{1680}".asInstanceOf[uLeftcurlybracket1680Rightcurlybracket]
+  
+  @js.native
+  sealed trait uLeftcurlybracket2000Rightcurlybracket
+    extends StObject
+       with Whitespace
+       with WordSeparators
+  inline def uLeftcurlybracket2000Rightcurlybracket: uLeftcurlybracket2000Rightcurlybracket = "u{2000}".asInstanceOf[uLeftcurlybracket2000Rightcurlybracket]
+  
+  @js.native
+  sealed trait uLeftcurlybracket2001Rightcurlybracket
+    extends StObject
+       with Whitespace
+       with WordSeparators
+  inline def uLeftcurlybracket2001Rightcurlybracket: uLeftcurlybracket2001Rightcurlybracket = "u{2001}".asInstanceOf[uLeftcurlybracket2001Rightcurlybracket]
+  
+  @js.native
+  sealed trait uLeftcurlybracket2002Rightcurlybracket
+    extends StObject
+       with Whitespace
+       with WordSeparators
+  inline def uLeftcurlybracket2002Rightcurlybracket: uLeftcurlybracket2002Rightcurlybracket = "u{2002}".asInstanceOf[uLeftcurlybracket2002Rightcurlybracket]
+  
+  @js.native
+  sealed trait uLeftcurlybracket2003Rightcurlybracket
+    extends StObject
+       with Whitespace
+       with WordSeparators
+  inline def uLeftcurlybracket2003Rightcurlybracket: uLeftcurlybracket2003Rightcurlybracket = "u{2003}".asInstanceOf[uLeftcurlybracket2003Rightcurlybracket]
+  
+  @js.native
+  sealed trait uLeftcurlybracket2004Rightcurlybracket
+    extends StObject
+       with Whitespace
+       with WordSeparators
+  inline def uLeftcurlybracket2004Rightcurlybracket: uLeftcurlybracket2004Rightcurlybracket = "u{2004}".asInstanceOf[uLeftcurlybracket2004Rightcurlybracket]
+  
+  @js.native
+  sealed trait uLeftcurlybracket2005Rightcurlybracket
+    extends StObject
+       with Whitespace
+       with WordSeparators
+  inline def uLeftcurlybracket2005Rightcurlybracket: uLeftcurlybracket2005Rightcurlybracket = "u{2005}".asInstanceOf[uLeftcurlybracket2005Rightcurlybracket]
+  
+  @js.native
+  sealed trait uLeftcurlybracket2006Rightcurlybracket
+    extends StObject
+       with Whitespace
+       with WordSeparators
+  inline def uLeftcurlybracket2006Rightcurlybracket: uLeftcurlybracket2006Rightcurlybracket = "u{2006}".asInstanceOf[uLeftcurlybracket2006Rightcurlybracket]
+  
+  @js.native
+  sealed trait uLeftcurlybracket2007Rightcurlybracket
+    extends StObject
+       with Whitespace
+       with WordSeparators
+  inline def uLeftcurlybracket2007Rightcurlybracket: uLeftcurlybracket2007Rightcurlybracket = "u{2007}".asInstanceOf[uLeftcurlybracket2007Rightcurlybracket]
+  
+  @js.native
+  sealed trait uLeftcurlybracket2008Rightcurlybracket
+    extends StObject
+       with Whitespace
+       with WordSeparators
+  inline def uLeftcurlybracket2008Rightcurlybracket: uLeftcurlybracket2008Rightcurlybracket = "u{2008}".asInstanceOf[uLeftcurlybracket2008Rightcurlybracket]
+  
+  @js.native
+  sealed trait uLeftcurlybracket2009Rightcurlybracket
+    extends StObject
+       with Whitespace
+       with WordSeparators
+  inline def uLeftcurlybracket2009Rightcurlybracket: uLeftcurlybracket2009Rightcurlybracket = "u{2009}".asInstanceOf[uLeftcurlybracket2009Rightcurlybracket]
+  
+  @js.native
+  sealed trait uLeftcurlybracket200ARightcurlybracket
+    extends StObject
+       with Whitespace
+       with WordSeparators
+  inline def uLeftcurlybracket200ARightcurlybracket: uLeftcurlybracket200ARightcurlybracket = "u{200A}".asInstanceOf[uLeftcurlybracket200ARightcurlybracket]
+  
+  @js.native
+  sealed trait uLeftcurlybracket2028Rightcurlybracket
+    extends StObject
+       with Whitespace
+       with WordSeparators
+  inline def uLeftcurlybracket2028Rightcurlybracket: uLeftcurlybracket2028Rightcurlybracket = "u{2028}".asInstanceOf[uLeftcurlybracket2028Rightcurlybracket]
+  
+  @js.native
+  sealed trait uLeftcurlybracket2029Rightcurlybracket
+    extends StObject
+       with Whitespace
+       with WordSeparators
+  inline def uLeftcurlybracket2029Rightcurlybracket: uLeftcurlybracket2029Rightcurlybracket = "u{2029}".asInstanceOf[uLeftcurlybracket2029Rightcurlybracket]
+  
+  @js.native
+  sealed trait uLeftcurlybracket202FRightcurlybracket
+    extends StObject
+       with Whitespace
+       with WordSeparators
+  inline def uLeftcurlybracket202FRightcurlybracket: uLeftcurlybracket202FRightcurlybracket = "u{202F}".asInstanceOf[uLeftcurlybracket202FRightcurlybracket]
+  
+  @js.native
+  sealed trait uLeftcurlybracket205FRightcurlybracket
+    extends StObject
+       with Whitespace
+       with WordSeparators
+  inline def uLeftcurlybracket205FRightcurlybracket: uLeftcurlybracket205FRightcurlybracket = "u{205F}".asInstanceOf[uLeftcurlybracket205FRightcurlybracket]
+  
+  @js.native
+  sealed trait uLeftcurlybracket20Rightcurlybracket
+    extends StObject
+       with Whitespace
+       with WordSeparators
+  inline def uLeftcurlybracket20Rightcurlybracket: uLeftcurlybracket20Rightcurlybracket = "u{20}".asInstanceOf[uLeftcurlybracket20Rightcurlybracket]
+  
+  @js.native
+  sealed trait uLeftcurlybracket3000Rightcurlybracket
+    extends StObject
+       with Whitespace
+       with WordSeparators
+  inline def uLeftcurlybracket3000Rightcurlybracket: uLeftcurlybracket3000Rightcurlybracket = "u{3000}".asInstanceOf[uLeftcurlybracket3000Rightcurlybracket]
+  
+  @js.native
+  sealed trait uLeftcurlybracket85Rightcurlybracket
+    extends StObject
+       with Whitespace
+       with WordSeparators
+  inline def uLeftcurlybracket85Rightcurlybracket: uLeftcurlybracket85Rightcurlybracket = "u{85}".asInstanceOf[uLeftcurlybracket85Rightcurlybracket]
+  
+  @js.native
+  sealed trait uLeftcurlybracket9Rightcurlybracket
+    extends StObject
+       with Whitespace
+       with WordSeparators
+  inline def uLeftcurlybracket9Rightcurlybracket: uLeftcurlybracket9Rightcurlybracket = "u{9}".asInstanceOf[uLeftcurlybracket9Rightcurlybracket]
+  
+  @js.native
+  sealed trait uLeftcurlybracketA0Rightcurlybracket
+    extends StObject
+       with Whitespace
+       with WordSeparators
+  inline def uLeftcurlybracketA0Rightcurlybracket: uLeftcurlybracketA0Rightcurlybracket = "u{A0}".asInstanceOf[uLeftcurlybracketA0Rightcurlybracket]
+  
+  @js.native
+  sealed trait uLeftcurlybracketARightcurlybracket
+    extends StObject
+       with Whitespace
+       with WordSeparators
+  inline def uLeftcurlybracketARightcurlybracket: uLeftcurlybracketARightcurlybracket = "u{A}".asInstanceOf[uLeftcurlybracketARightcurlybracket]
+  
+  @js.native
+  sealed trait uLeftcurlybracketBRightcurlybracket
+    extends StObject
+       with Whitespace
+       with WordSeparators
+  inline def uLeftcurlybracketBRightcurlybracket: uLeftcurlybracketBRightcurlybracket = "u{B}".asInstanceOf[uLeftcurlybracketBRightcurlybracket]
+  
+  @js.native
+  sealed trait uLeftcurlybracketCRightcurlybracket
+    extends StObject
+       with Whitespace
+       with WordSeparators
+  inline def uLeftcurlybracketCRightcurlybracket: uLeftcurlybracketCRightcurlybracket = "u{C}".asInstanceOf[uLeftcurlybracketCRightcurlybracket]
+  
+  @js.native
+  sealed trait uLeftcurlybracketDRightcurlybracket
+    extends StObject
+       with Whitespace
+       with WordSeparators
+  inline def uLeftcurlybracketDRightcurlybracket: uLeftcurlybracketDRightcurlybracket = "u{D}".asInstanceOf[uLeftcurlybracketDRightcurlybracket]
+  
+  @js.native
+  sealed trait uLeftcurlybracketFEFFRightcurlybracket
+    extends StObject
+       with Whitespace
+       with WordSeparators
+  inline def uLeftcurlybracketFEFFRightcurlybracket: uLeftcurlybracketFEFFRightcurlybracket = "u{FEFF}".asInstanceOf[uLeftcurlybracketFEFFRightcurlybracket]
   
   @js.native
   sealed trait umd_
@@ -1534,6 +1821,10 @@ object typeFestStrings {
        with WatchDirectory
        with WatchFile
   inline def useFsEvents_ : useFsEvents_ = "useFsEvents".asInstanceOf[useFsEvents_]
+  
+  @js.native
+  sealed trait values extends StObject
+  inline def values: values = "values".asInstanceOf[values]
   
   @js.native
   sealed trait webworkerDotimportscripts

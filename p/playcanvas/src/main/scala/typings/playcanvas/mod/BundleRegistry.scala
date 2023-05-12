@@ -4,8 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../asset/asset.js').Asset} Asset */
-/** @typedef {import('../asset/asset-registry.js').AssetRegistry} AssetRegistry */
 /**
   * Keeps track of which assets are in bundles and loads files from bundles.
   *
@@ -17,7 +15,7 @@ open class BundleRegistry protected () extends StObject {
   /**
     * Create a new BundleRegistry instance.
     *
-    * @param {AssetRegistry} assets - The asset registry.
+    * @param {import('../asset/asset-registry.js').AssetRegistry} assets - The asset registry.
     */
   def this(assets: AssetRegistry) = this()
   
@@ -71,15 +69,16 @@ open class BundleRegistry protected () extends StObject {
   /**
     * Lists all of the available bundles. This includes bundles that are not loaded.
     *
-    * @returns {Asset[]} An array of bundle assets.
+    * @returns {import('../asset/asset.js').Asset[]} An array of bundle assets.
     */
   def list(): js.Array[Asset_] = js.native
   
   /**
     * Lists all of the available bundles that reference the specified asset id.
     *
-    * @param {Asset} asset - The asset.
-    * @returns {Asset[]} An array of bundle assets or null if the asset is not in any bundle.
+    * @param {import('../asset/asset.js').Asset} asset - The asset.
+    * @returns {import('../asset/asset.js').Asset[]} An array of bundle assets or null if the
+    * asset is not in any bundle.
     */
   def listBundlesForAsset(asset: Asset_): js.Array[Asset_] = js.native
   
@@ -92,7 +91,7 @@ open class BundleRegistry protected () extends StObject {
     * error occurs. The callback expects the first argument to be the error message (if any) and
     * the second argument is the file blob URL.
     * @example
-    * var url = asset.getFileUrl().split('?')[0]; // get normalized asset URL
+    * const url = asset.getFileUrl().split('?')[0]; // get normalized asset URL
     * this.app.bundles.loadFile(url, function (err, blobUrl) {
     *     // do something with the blob URL
     * });

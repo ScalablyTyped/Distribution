@@ -22,7 +22,7 @@ trait FunctionMetadata extends StObject {
   var LastModifiedTime: js.Date
   
   /**
-    * The stage that the function is in, either DEVELOPMENT or LIVE. When a function is in the DEVELOPMENT stage, you can test the function with TestFunction, and update it with UpdateFunction. When a function is in the LIVE stage, you can attach the function to a distribution’s cache behavior, using the function’s ARN.
+    * The stage that the function is in, either DEVELOPMENT or LIVE. When a function is in the DEVELOPMENT stage, you can test the function with TestFunction, and update it with UpdateFunction. When a function is in the LIVE stage, you can attach the function to a distribution's cache behavior, using the function's ARN.
     */
   var Stage: js.UndefOr[FunctionStage] = js.undefined
 }

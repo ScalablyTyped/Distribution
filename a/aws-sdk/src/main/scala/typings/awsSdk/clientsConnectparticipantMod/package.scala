@@ -43,6 +43,8 @@ type ChatItemId = String
   - typings.awsSdk.awsSdkStrings.EVENT
   - typings.awsSdk.awsSdkStrings.ATTACHMENT
   - typings.awsSdk.awsSdkStrings.CONNECTION_ACK
+  - typings.awsSdk.awsSdkStrings.MESSAGE_DELIVERED
+  - typings.awsSdk.awsSdkStrings.MESSAGE_READ
   - java.lang.String
 */
 type ChatItemType = _ChatItemType | String
@@ -91,6 +93,8 @@ type ParticipantToken = String
 type PreSignedAttachmentUrl = String
 
 type PreSignedConnectionUrl = String
+
+type Receipts = js.Array[Receipt]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FORWARD

@@ -1,7 +1,7 @@
 package typings.floatingUiCore.anon
 
 import typings.floatingUiCore.srcMiddlewareShiftMod.LimitShiftOffset
-import typings.floatingUiCore.srcTypesMod.MiddlewareArguments
+import typings.floatingUiCore.srcTypesMod.MiddlewareState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,7 +35,7 @@ object PartialLimitShiftOptions {
     
     inline def setOffset(value: LimitShiftOffset): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    inline def setOffsetFunction1(value: /* args */ MiddlewareArguments => Double | CrossAxis): Self = StObject.set(x, "offset", js.Any.fromFunction1(value))
+    inline def setOffsetFunction1(value: /* args */ MiddlewareState => Double | CrossAxis): Self = StObject.set(x, "offset", js.Any.fromFunction1(value))
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
   }

@@ -8,11 +8,11 @@ trait ParametersPathOrgPackagenameQueryToken extends StObject {
   
   var parameters: PathOrgPackagenameQueryToken
   
-  var responses: `401Content48403Content48`
+  var responses: `401Content36403Content36`
 }
 object ParametersPathOrgPackagenameQueryToken {
   
-  inline def apply(parameters: PathOrgPackagenameQueryToken, responses: `401Content48403Content48`): ParametersPathOrgPackagenameQueryToken = {
+  inline def apply(parameters: PathOrgPackagenameQueryToken, responses: `401Content36403Content36`): ParametersPathOrgPackagenameQueryToken = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathOrgPackagenameQueryToken]
   }
@@ -22,6 +22,6 @@ object ParametersPathOrgPackagenameQueryToken {
     
     inline def setParameters(value: PathOrgPackagenameQueryToken): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `401Content48403Content48`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `401Content36403Content36`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

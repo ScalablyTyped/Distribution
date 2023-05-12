@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-lab-function
 
-Typings are for version 4.2.1
+Typings are for version 5.2.1
 
 ## Library description:
 Use lab() and lch() color functions in CSS

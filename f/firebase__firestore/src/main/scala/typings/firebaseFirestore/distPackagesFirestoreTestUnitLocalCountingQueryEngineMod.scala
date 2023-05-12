@@ -1,6 +1,8 @@
 package typings.firebaseFirestore
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.firebaseFirestore.distPackagesFirestoreSrcLocalQueryEngineMod.QueryEngine
+import typings.firebaseFirestore.distPackagesFirestoreSrcModelMutationMod.MutationType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +15,7 @@ object distPackagesFirestoreTestUnitLocalCountingQueryEngineMod {
     
     /**
       * The number of documents returned by the RemoteDocumentCache's
-      * `getAll()` API (since the last call to `resetCounts()`)
+      * `getAll()` API (since the last call to `resetCounts()`).
       */
     var documentsReadByCollection: Double = js.native
     
@@ -23,38 +25,24 @@ object distPackagesFirestoreTestUnitLocalCountingQueryEngineMod {
       */
     var documentsReadByKey: Double = js.native
     
+    var overlayTypes: StringDictionary[MutationType] = js.native
+    
     /**
-      * The number of mutations returned by the MutationQueue's
-      * `getAllMutationBatchesAffectingQuery()` API (since the last call to
+      * The number of overlays returned by the DocumentOverlayCache's
+      * `getOverlaysByCollection(Group)` API (since the last call to
       * `resetCounts()`)
-      */
-    var mutationsReadByCollection: Double = js.native
-    
-    /**
-      * The number of mutations returned by the MutationQueue's
-      * `getAllMutationBatchesAffectingDocumentKey()` and
-      * `getAllMutationBatchesAffectingDocumentKeys()` APIs (since the last call
-      * to `resetCounts()`)
-      */
-    var mutationsReadByKey: Double = js.native
-    
-    /**
-      * The number of documents returned by the OverlayCache's `getOverlays()`
-      * API (since the last call to `resetCounts()`)
       */
     var overlaysReadByCollection: Double = js.native
     
     /**
-      * The number of documents returned by the OverlayCache's `getOverlay()`
-      * APIs (since the last call to `resetCounts()`)
+      * The number of overlays returned by the DocumentOverlayCache's
+      * `getOverlay(s)` APIs (since the last call to `resetCounts()`)
       */
     var overlaysReadByKey: Double = js.native
     
     def resetCounts(): Unit = js.native
     
-    /* private */ var wrapDocumentOverlayCache: Any = js.native
-    
-    /* private */ var wrapMutationQueue: Any = js.native
+    /* private */ var wrapOverlayCache: Any = js.native
     
     /* private */ var wrapRemoteDocumentCache: Any = js.native
   }

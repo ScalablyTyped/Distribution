@@ -22,7 +22,6 @@ import typings.highcharts.mod.CSSObject
 import typings.highcharts.mod.ChartCallbackFunction
 import typings.highcharts.mod.Chart_
 import typings.highcharts.mod.Class
-import typings.highcharts.mod.ColorAxisOptions
 import typings.highcharts.mod.ColorType
 import typings.highcharts.mod.Color_
 import typings.highcharts.mod.Dictionary
@@ -241,38 +240,6 @@ object Highcharts {
       */
     def this(input: ColorType) = this()
   }
-  
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-  @JSImport("highcharts/modules/sonification", "Highcharts.ColorAxis")
-  @js.native
-  open class ColorAxis protected ()
-    extends typings.highcharts.mod.ColorAxis {
-    /**
-      * The ColorAxis object for inclusion in gradient legends.
-      *
-      * @param chart
-      *        The related chart of the color axis.
-      *
-      * @param userOptions
-      *        The color axis options for initialization.
-      */
-    def this(chart: Chart_, userOptions: ColorAxisOptions) = this()
-  }
-  @JSImport("highcharts/modules/sonification", "Highcharts.ColorAxis")
-  @js.native
-  def ColorAxis: Instantiable2[
-    /* chart */ Chart_, 
-    /* userOptions */ ColorAxisOptions, 
-    typings.highcharts.mod.ColorAxis
-  ] = js.native
-  inline def ColorAxis_=(
-    x: Instantiable2[
-      /* chart */ Chart_, 
-      /* userOptions */ ColorAxisOptions, 
-      typings.highcharts.mod.ColorAxis
-    ]
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ColorAxis")(x.asInstanceOf[js.Any])
-  
   @JSImport("highcharts/modules/sonification", "Highcharts.Color")
   @js.native
   def Color_ : TypeofColor = js.native
@@ -387,8 +354,7 @@ object Highcharts {
       * Allows direct access to the Highcharts rendering layer in order to draw
       * primitive shapes like circles, rectangles, paths or text directly on a
       * chart, or independent from any chart. The SVGRenderer represents a
-      * wrapper object for SVG in modern browsers. Through the VMLRenderer, part
-      * of the `oldie.js` module, it also brings vector graphics to IE <= 8.
+      * wrapper object for SVG in modern browsers.
       *
       * An existing chart's renderer can be accessed through Chart.renderer. The
       * renderer can also be used completely decoupled from a chart.
@@ -789,6 +755,8 @@ object Highcharts {
   
   inline def callout(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callout")().asInstanceOf[Unit]
   
+  inline def centerImage(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("centerImage")().asInstanceOf[Unit]
+  
   inline def chart(options: Options): Chart_ = ^.asInstanceOf[js.Dynamic].applyDynamic("chart")(options.asInstanceOf[js.Any]).asInstanceOf[Chart_]
   inline def chart(options: Options, callback: ChartCallbackFunction): Chart_ = (^.asInstanceOf[js.Dynamic].applyDynamic("chart")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Chart_]
   inline def chart(renderTo: String, options: Options): Chart_ = (^.asInstanceOf[js.Dynamic].applyDynamic("chart")(renderTo.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Chart_]
@@ -997,6 +965,8 @@ object Highcharts {
   inline def pad(number: Double, length: Unit, padder: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(number.asInstanceOf[js.Any], length.asInstanceOf[js.Any], padder.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def pick[T](items: (js.UndefOr[T | Null])*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("pick")(items.asInstanceOf[Seq[js.Any]]*).asInstanceOf[T]
+  
+  inline def pushUnique(array: js.Array[Any], item: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("pushUnique")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def reduce(arr: js.Array[Any], fn: js.Function, initialValue: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[Any]
   

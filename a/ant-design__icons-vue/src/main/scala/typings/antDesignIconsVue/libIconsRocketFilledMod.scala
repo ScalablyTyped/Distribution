@@ -16,7 +16,7 @@ object libIconsRocketFilledMod extends Shortcut {
   @js.native
   trait RocketFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_RocketFilledIconType: String = js.native

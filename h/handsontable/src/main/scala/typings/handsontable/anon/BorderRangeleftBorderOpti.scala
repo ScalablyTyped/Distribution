@@ -15,7 +15,7 @@ trait BorderRangeleftBorderOpti
   
   var left: js.UndefOr[BorderOptions | String] = js.undefined
   
-  var range: From
+  var range: To
   
   var right: js.UndefOr[BorderOptions | String] = js.undefined
   
@@ -23,7 +23,7 @@ trait BorderRangeleftBorderOpti
 }
 object BorderRangeleftBorderOpti {
   
-  inline def apply(range: From): BorderRangeleftBorderOpti = {
+  inline def apply(range: To): BorderRangeleftBorderOpti = {
     val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any])
     __obj.asInstanceOf[BorderRangeleftBorderOpti]
   }
@@ -39,7 +39,7 @@ object BorderRangeleftBorderOpti {
     
     inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    inline def setRange(value: From): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: To): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     inline def setRight(value: BorderOptions | String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     

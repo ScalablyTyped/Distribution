@@ -1,7 +1,7 @@
 
 # Scala.js typings for style-to-object
 
-Typings are for version 0.3.0
+Typings are for version 0.4.1
 
 ## Library description:
 Converts inline style to object.

@@ -7,14 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateTableRequest extends StObject {
   
   /**
-    * For each column to be added to the specified table: • name - The name of the column. • type - An Amazon Keyspaces data type. For more information, see Data types in the Amazon Keyspaces Developer Guide.
+    * For each column to be added to the specified table:    name - The name of the column.    type - An Amazon Keyspaces data type. For more information, see Data types in the Amazon Keyspaces Developer Guide.  
     */
   var addColumns: js.UndefOr[ColumnDefinitionList] = js.undefined
   
   /**
-    * Modifies the read/write throughput capacity mode for the table. The options are: • throughputMode:PAY_PER_REQUEST and  • throughputMode:PROVISIONED - Provisioned capacity mode requires readCapacityUnits and writeCapacityUnits as input. The default is throughput_mode:PAY_PER_REQUEST. For more information, see Read/write capacity modes in the Amazon Keyspaces Developer Guide.
+    * Modifies the read/write throughput capacity mode for the table. The options are:    throughputMode:PAY_PER_REQUEST and     throughputMode:PROVISIONED - Provisioned capacity mode requires readCapacityUnits and writeCapacityUnits as input.   The default is throughput_mode:PAY_PER_REQUEST. For more information, see Read/write capacity modes in the Amazon Keyspaces Developer Guide.
     */
   var capacitySpecification: js.UndefOr[CapacitySpecification] = js.undefined
+  
+  /**
+    * Enables client-side timestamps for the table. By default, the setting is disabled. You can enable client-side timestamps with the following option:    status: "enabled"    Once client-side timestamps are enabled for a table, this setting cannot be disabled.
+    */
+  var clientSideTimestamps: js.UndefOr[ClientSideTimestamps] = js.undefined
   
   /**
     * The default Time to Live setting in seconds for the table. For more information, see Setting the default TTL value for a table in the Amazon Keyspaces Developer Guide.
@@ -22,7 +27,7 @@ trait UpdateTableRequest extends StObject {
   var defaultTimeToLive: js.UndefOr[DefaultTimeToLive] = js.undefined
   
   /**
-    * Modifies the encryption settings of the table. You can choose one of the following KMS key (KMS key): • type:AWS_OWNED_KMS_KEY - This key is owned by Amazon Keyspaces.  • type:CUSTOMER_MANAGED_KMS_KEY - This key is stored in your account and is created, owned, and managed by you. This option requires the kms_key_identifier of the KMS key in Amazon Resource Name (ARN) format as input.  The default is AWS_OWNED_KMS_KEY. For more information, see Encryption at rest in the Amazon Keyspaces Developer Guide.
+    * Modifies the encryption settings of the table. You can choose one of the following KMS key (KMS key):    type:AWS_OWNED_KMS_KEY - This key is owned by Amazon Keyspaces.     type:CUSTOMER_MANAGED_KMS_KEY - This key is stored in your account and is created, owned, and managed by you. This option requires the kms_key_identifier of the KMS key in Amazon Resource Name (ARN) format as input.    The default is AWS_OWNED_KMS_KEY. For more information, see Encryption at rest in the Amazon Keyspaces Developer Guide.
     */
   var encryptionSpecification: js.UndefOr[EncryptionSpecification] = js.undefined
   
@@ -32,7 +37,7 @@ trait UpdateTableRequest extends StObject {
   var keyspaceName: KeyspaceName
   
   /**
-    * Modifies the pointInTimeRecovery settings of the table. The options are: • ENABLED  • DISABLED  If it's not specified, the default is DISABLED. For more information, see Point-in-time recovery in the Amazon Keyspaces Developer Guide.
+    * Modifies the pointInTimeRecovery settings of the table. The options are:    status=ENABLED     status=DISABLED    If it's not specified, the default is status=DISABLED. For more information, see Point-in-time recovery in the Amazon Keyspaces Developer Guide.
     */
   var pointInTimeRecovery: js.UndefOr[PointInTimeRecovery] = js.undefined
   
@@ -42,7 +47,7 @@ trait UpdateTableRequest extends StObject {
   var tableName: TableName
   
   /**
-    * Modifies Time to Live custom settings for the table. The options are: • status:enabled  • status:disabled  The default is status:disabled. After ttl is enabled, you can't disable it for the table. For more information, see Expiring data by using Amazon Keyspaces Time to Live (TTL) in the Amazon Keyspaces Developer Guide.
+    * Modifies Time to Live custom settings for the table. The options are:    status:enabled     status:disabled    The default is status:disabled. After ttl is enabled, you can't disable it for the table. For more information, see Expiring data by using Amazon Keyspaces Time to Live (TTL) in the Amazon Keyspaces Developer Guide.
     */
   var ttl: js.UndefOr[TimeToLive] = js.undefined
 }
@@ -65,6 +70,10 @@ object UpdateTableRequest {
     inline def setCapacitySpecification(value: CapacitySpecification): Self = StObject.set(x, "capacitySpecification", value.asInstanceOf[js.Any])
     
     inline def setCapacitySpecificationUndefined: Self = StObject.set(x, "capacitySpecification", js.undefined)
+    
+    inline def setClientSideTimestamps(value: ClientSideTimestamps): Self = StObject.set(x, "clientSideTimestamps", value.asInstanceOf[js.Any])
+    
+    inline def setClientSideTimestampsUndefined: Self = StObject.set(x, "clientSideTimestamps", js.undefined)
     
     inline def setDefaultTimeToLive(value: DefaultTimeToLive): Self = StObject.set(x, "defaultTimeToLive", value.asInstanceOf[js.Any])
     

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExtendedDataServices extends StObject {
   
   /**
-    * The action to take on copy and redistribution control XDS packets.  If you select PASSTHROUGH, packets will not be changed. If you select STRIP, any packets will be removed in output captions.
+    * The action to take on copy and redistribution control XDS packets. If you select PASSTHROUGH, packets will not be changed. If you select STRIP, any packets will be removed in output captions.
     */
   var CopyProtectionAction: js.UndefOr[typings.awsSdk.clientsMediaconvertMod.CopyProtectionAction] = js.undefined
   
   /**
-    * The action to take on content advisory XDS packets.  If you select PASSTHROUGH, packets will not be changed. If you select STRIP, any packets will be removed in output captions.
+    * The action to take on content advisory XDS packets. If you select PASSTHROUGH, packets will not be changed. If you select STRIP, any packets will be removed in output captions.
     */
   var VchipAction: js.UndefOr[typings.awsSdk.clientsMediaconvertMod.VchipAction] = js.undefined
 }

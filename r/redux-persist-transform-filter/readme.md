@@ -1,7 +1,7 @@
 
 # Scala.js typings for redux-persist-transform-filter
 
-Typings are for version 0.0.20
+Typings are for version 0.0.22
 
 ## Library description:
 Filter transformator for redux-persist

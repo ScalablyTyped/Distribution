@@ -325,6 +325,8 @@ object sapMFeedListItemMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:iconPress iconPress} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -336,6 +338,8 @@ object sapMFeedListItemMod {
     mParameters: GetDomRef): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:senderPress senderPress} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

@@ -27,9 +27,6 @@ trait SubscriptionMessage extends StObject {
   /** Indicates whether the subscription is registered with the database. */
   var registered: Boolean
   
-  /** Array of objects specifying the tables which were affected by the notification. */
-  var tables: js.UndefOr[js.Array[SubscriptionTables]] = js.undefined
-  
   /** Buffer containing the identifier of the transaction which spawned the notification. */
   var txId: Buffer
   
@@ -62,12 +59,6 @@ object SubscriptionMessage {
     inline def setQueueNameUndefined: Self = StObject.set(x, "queueName", js.undefined)
     
     inline def setRegistered(value: Boolean): Self = StObject.set(x, "registered", value.asInstanceOf[js.Any])
-    
-    inline def setTables(value: js.Array[SubscriptionTables]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
-    
-    inline def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
-    
-    inline def setTablesVarargs(value: SubscriptionTables*): Self = StObject.set(x, "tables", js.Array(value*))
     
     inline def setTxId(value: Buffer): Self = StObject.set(x, "txId", value.asInstanceOf[js.Any])
     

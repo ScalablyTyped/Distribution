@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-batch
 
-Typings are for version 2.0.0
+Typings are for version 3.0.2
 
 ## Library description:
 Takes an async iterator that emits things and emits them as fixed size batches

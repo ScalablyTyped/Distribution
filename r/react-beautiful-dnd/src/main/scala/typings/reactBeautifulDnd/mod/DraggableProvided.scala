@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DraggableProvided extends StObject {
   
-  var dragHandleProps: js.UndefOr[DraggableProvidedDragHandleProps] = js.native
+  var dragHandleProps: js.UndefOr[DraggableProvidedDragHandleProps | Null] = js.native
   
   var draggableProps: DraggableProvidedDraggableProps = js.native
   
   // will be removed after move to react 16
-  def innerRef(): Any = js.native
-  def innerRef(element: HTMLElement): Any = js.native
+  def innerRef(): Unit = js.native
+  def innerRef(element: HTMLElement): Unit = js.native
 }

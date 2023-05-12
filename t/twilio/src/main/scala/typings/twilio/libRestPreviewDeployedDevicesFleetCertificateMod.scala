@@ -1,246 +1,170 @@
 package typings.twilio
 
+import typings.twilio.anon.DateCreated
 import typings.twilio.libBasePageMod.TwilioResponsePayload
-import typings.twilio.libInterfacesMod.SerializableClass
+import typings.twilio.libRestPreviewDeployedDevicesMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libRestPreviewDeployedDevicesFleetCertificateMod {
   
-  @JSImport("twilio/lib/rest/preview/deployed_devices/fleet/certificate", JSImport.Namespace)
+  @JSImport("twilio/lib/rest/preview/deployed_devices/fleet/certificate", "CertificateContextImpl")
   @js.native
-  val ^ : js.Any = js.native
-  
-  @JSImport("twilio/lib/rest/preview/deployed_devices/fleet/certificate", "CertificateContext")
-  @js.native
-  open class CertificateContext protected () extends StObject {
-    /**
-      * Initialize the CertificateContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param fleetSid - The fleet_sid
-      * @param sid - A string that uniquely identifies the Certificate.
-      */
-    def this(version: typings.twilio.libRestPreviewDeployedDevicesMod.^, fleetSid: String, sid: String) = this()
+  open class CertificateContextImpl protected ()
+    extends StObject
+       with CertificateContext {
+    def this(_version: default, fleetSid: String, sid: String) = this()
     
-    /**
-      * fetch a CertificateInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def fetch(): js.Promise[CertificateInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ CertificateInstance, Any]): js.Promise[CertificateInstance] = js.native
+    /* protected */ var _solution: CertificateContextSolution = js.native
     
-    /**
-      * remove a CertificateInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def remove(): js.Promise[Boolean] = js.native
-    def remove(callback: js.Function2[/* error */ js.Error | Null, /* items */ CertificateInstance, Any]): js.Promise[Boolean] = js.native
+    /* protected */ var _uri: String = js.native
     
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
+    /* protected */ var _version: default = js.native
     
-    /**
-      * update a CertificateInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def update(): js.Promise[CertificateInstance] = js.native
-    def update(callback: js.Function2[/* error */ js.Error | Null, /* items */ CertificateInstance, Any]): js.Promise[CertificateInstance] = js.native
     def update(
-      opts: Unit,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ CertificateInstance, Any]
+      params: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[CertificateInstance], Any],
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[CertificateInstance], Any]
     ): js.Promise[CertificateInstance] = js.native
-    def update(opts: CertificateInstanceUpdateOptions): js.Promise[CertificateInstance] = js.native
     def update(
-      opts: CertificateInstanceUpdateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ CertificateInstance, Any]
+      params: Unit,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[CertificateInstance], Any]
     ): js.Promise[CertificateInstance] = js.native
   }
   
   @JSImport("twilio/lib/rest/preview/deployed_devices/fleet/certificate", "CertificateInstance")
   @js.native
-  open class CertificateInstance protected () extends SerializableClass {
+  open class CertificateInstance protected () extends StObject {
+    def this(_version: default, payload: CertificateResource, fleetSid: String) = this()
+    def this(_version: default, payload: CertificateResource, fleetSid: String, sid: String) = this()
+    
+    /* protected */ var _context: js.UndefOr[CertificateContext] = js.native
+    
+    /* private */ def _proxy: Any = js.native
+    
+    /* protected */ var _solution: CertificateContextSolution = js.native
+    
+    /* protected */ var _version: default = js.native
+    
     /**
-      * Initialize the CertificateContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param payload - The instance payload
-      * @param fleetSid - The unique identifier of the Fleet.
-      * @param sid - A string that uniquely identifies the Certificate.
+      * Specifies the unique string identifier of the Account responsible for this Certificate credential.
       */
-    def this(
-      version: typings.twilio.libRestPreviewDeployedDevicesMod.^,
-      payload: CertificatePayload,
-      fleetSid: String,
-      sid: String
-    ) = this()
-    
-    /* private */ var _proxy: CertificateContext = js.native
-    
     var accountSid: String = js.native
     
+    /**
+      * Specifies the date this Certificate credential was created, given in UTC ISO 8601 format.
+      */
     var dateCreated: js.Date = js.native
     
+    /**
+      * Specifies the date this Certificate credential was last updated, given in UTC ISO 8601 format.
+      */
     var dateUpdated: js.Date = js.native
     
+    /**
+      * Specifies the unique string identifier of a Device authenticated with this Certificate credential.
+      */
     var deviceSid: String = js.native
     
     /**
-      * fetch a CertificateInstance
+      * Fetch a CertificateInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed CertificateInstance
       */
     def fetch(): js.Promise[CertificateInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[CertificateInstance] = js.native
+    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]): js.Promise[CertificateInstance] = js.native
     
+    /**
+      * Specifies the unique string identifier of the Fleet that the given Certificate credential belongs to.
+      */
     var fleetSid: String = js.native
     
+    /**
+      * Contains a human readable descriptive text for this Certificate credential, up to 256 characters long.
+      */
     var friendlyName: String = js.native
     
     /**
-      * remove a CertificateInstance
+      * Remove a CertificateInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed boolean
       */
     def remove(): js.Promise[Boolean] = js.native
-    def remove(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[Boolean] = js.native
+    def remove(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any]): js.Promise[Boolean] = js.native
     
+    /**
+      * Contains a 34 character string that uniquely identifies this Certificate credential resource.
+      */
     var sid: String = js.native
     
+    /**
+      * Contains a unique hash of the payload of this Certificate credential, used to authenticate the Device.
+      */
     var thumbprint: String = js.native
     
     /**
-      * update a CertificateInstance
+      * Provide a user-friendly representation
+      *
+      * @returns Object
+      */
+    def toJSON(): DateCreated = js.native
+    
+    /**
+      * Update a CertificateInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed CertificateInstance
       */
     def update(): js.Promise[CertificateInstance] = js.native
-    def update(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[CertificateInstance] = js.native
-    def update(opts: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[CertificateInstance] = js.native
-    def update(opts: CertificateInstanceUpdateOptions): js.Promise[CertificateInstance] = js.native
+    def update(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]): js.Promise[CertificateInstance] = js.native
+    /**
+      * Update a CertificateInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed CertificateInstance
+      */
+    def update(params: CertificateContextUpdateOptions): js.Promise[CertificateInstance] = js.native
     def update(
-      opts: CertificateInstanceUpdateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]
+      params: CertificateContextUpdateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]
     ): js.Promise[CertificateInstance] = js.native
     
+    /**
+      * Contains an absolute URL for this Certificate credential resource.
+      */
     var url: String = js.native
-  }
-  
-  /**
-    * Initialize the CertificateList
-    *
-    * PLEASE NOTE that this class contains preview products that are subject to
-    * change. Use them with caution. If you currently do not have developer preview
-    * access, please contact help@twilio.com.
-    *
-    * @param version - Version of the resource
-    * @param fleetSid - The unique identifier of the Fleet.
-    */
-  inline def CertificateList(version: typings.twilio.libRestPreviewDeployedDevicesMod.^, fleetSid: String): CertificateListInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("CertificateList")(version.asInstanceOf[js.Any], fleetSid.asInstanceOf[js.Any])).asInstanceOf[CertificateListInstance]
-  
-  @JSImport("twilio/lib/rest/preview/deployed_devices/fleet/certificate", "CertificatePage")
-  @js.native
-  open class CertificatePage protected ()
-    extends typings.twilio.libBasePageMod.^[
-          typings.twilio.libRestPreviewDeployedDevicesMod.^, 
-          CertificatePayload, 
-          CertificateResource, 
-          CertificateInstance
-        ] {
-    /**
-      * Initialize the CertificatePage
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param response - Response from the API
-      * @param solution - Path solution
-      */
-    def this(
-      version: typings.twilio.libRestPreviewDeployedDevicesMod.^,
-      response: typings.twilio.libHttpResponseMod.^[String],
-      solution: CertificateSolution
-    ) = this()
-    
-    /**
-      * Build an instance of CertificateInstance
-      *
-      * @param payload - Payload response from the API
-      */
-    def getInstance(payload: CertificatePayload): CertificateInstance = js.native
-    
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
-  }
-  
-  /**
-    * Options to pass to update
-    *
-    * @property deviceSid - The unique identifier of a Device to be authenticated.
-    * @property friendlyName - The human readable description for this Certificate.
-    */
-  trait CertificateInstanceUpdateOptions extends StObject {
-    
-    var deviceSid: js.UndefOr[String] = js.undefined
-    
-    var friendlyName: js.UndefOr[String] = js.undefined
-  }
-  object CertificateInstanceUpdateOptions {
-    
-    inline def apply(): CertificateInstanceUpdateOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[CertificateInstanceUpdateOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: CertificateInstanceUpdateOptions] (val x: Self) extends AnyVal {
-      
-      inline def setDeviceSid(value: String): Self = StObject.set(x, "deviceSid", value.asInstanceOf[js.Any])
-      
-      inline def setDeviceSidUndefined: Self = StObject.set(x, "deviceSid", js.undefined)
-      
-      inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
-      
-      inline def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
-    }
   }
   
   @js.native
   trait CertificateListInstance extends StObject {
     
-    /**
-      * @param sid - sid of instance
-      */
     def apply(sid: String): CertificateContext = js.native
     
+    var _solution: CertificateSolution = js.native
+    
+    var _uri: String = js.native
+    
+    var _version: default = js.native
+    
     /**
-      * create a CertificateInstance
+      * Create a CertificateInstance
       *
-      * @param opts - Options for request
+      * @param params - Parameter for request
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed CertificateInstance
       */
-    def create(opts: CertificateListInstanceCreateOptions): js.Promise[CertificateInstance] = js.native
+    def create(params: CertificateListInstanceCreateOptions): js.Promise[CertificateInstance] = js.native
     def create(
-      opts: CertificateListInstanceCreateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* item */ CertificateInstance, Any]
+      params: CertificateListInstanceCreateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[CertificateInstance], Any]
     ): js.Promise[CertificateInstance] = js.native
     
     /**
@@ -255,7 +179,8 @@ object libRestPreviewDeployedDevicesFleetCertificateMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Function to process each record
+      * @param { CertificateListInstanceEachOptions } [params] - Options for request
+      * @param { function } [callback] - Function to process each record
       */
     def each(): Unit = js.native
     def each(
@@ -265,17 +190,9 @@ object libRestPreviewDeployedDevicesFleetCertificateMod {
           Unit
         ]
     ): Unit = js.native
+    def each(params: CertificateListInstanceEachOptions): Unit = js.native
     def each(
-      opts: Unit,
-      callback: js.Function2[
-          /* item */ CertificateInstance, 
-          /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
-          Unit
-        ]
-    ): Unit = js.native
-    def each(opts: CertificateListInstanceEachOptions): Unit = js.native
-    def each(
-      opts: CertificateListInstanceEachOptions,
+      params: CertificateListInstanceEachOptions,
       callback: js.Function2[
           /* item */ CertificateInstance, 
           /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
@@ -283,11 +200,6 @@ object libRestPreviewDeployedDevicesFleetCertificateMod {
         ]
     ): Unit = js.native
     
-    /**
-      * Constructs a certificate
-      *
-      * @param sid - A string that uniquely identifies the Certificate.
-      */
     def get(sid: String): CertificateContext = js.native
     
     /**
@@ -295,20 +207,12 @@ object libRestPreviewDeployedDevicesFleetCertificateMod {
       *
       * The request is executed immediately.
       *
-      * If a function is passed as the first argument, it will be used as the callback
-      * function.
-      *
-      * @param callback - Callback to handle list of records
+      * @param { string } [targetUrl] - API-generated URL for the requested results page
+      * @param { function } [callback] - Callback to handle list of records
       */
-    def getPage(): js.Promise[CertificatePage] = js.native
-    def getPage(callback: js.Function2[/* error */ js.Error | Null, /* items */ CertificatePage, Any]): js.Promise[CertificatePage] = js.native
     def getPage(targetUrl: String): js.Promise[CertificatePage] = js.native
     def getPage(
       targetUrl: String,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ CertificatePage, Any]
-    ): js.Promise[CertificatePage] = js.native
-    def getPage(
-      targetUrl: Unit,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ CertificatePage, Any]
     ): js.Promise[CertificatePage] = js.native
     
@@ -318,19 +222,16 @@ object libRestPreviewDeployedDevicesFleetCertificateMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { CertificateListInstanceOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def list(): js.Promise[js.Array[CertificateInstance]] = js.native
     def list(
       callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[CertificateInstance], Any]
     ): js.Promise[js.Array[CertificateInstance]] = js.native
+    def list(params: CertificateListInstanceOptions): js.Promise[js.Array[CertificateInstance]] = js.native
     def list(
-      opts: Unit,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[CertificateInstance], Any]
-    ): js.Promise[js.Array[CertificateInstance]] = js.native
-    def list(opts: CertificateListInstanceOptions): js.Promise[js.Array[CertificateInstance]] = js.native
-    def list(
-      opts: CertificateListInstanceOptions,
+      params: CertificateListInstanceOptions,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[CertificateInstance], Any]
     ): js.Promise[js.Array[CertificateInstance]] = js.native
     
@@ -342,14 +243,14 @@ object libRestPreviewDeployedDevicesFleetCertificateMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { CertificateListInstancePageOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def page(): js.Promise[CertificatePage] = js.native
     def page(callback: js.Function2[/* error */ js.Error | Null, /* items */ CertificatePage, Any]): js.Promise[CertificatePage] = js.native
-    def page(opts: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ CertificatePage, Any]): js.Promise[CertificatePage] = js.native
-    def page(opts: CertificateListInstancePageOptions): js.Promise[CertificatePage] = js.native
+    def page(params: CertificateListInstancePageOptions): js.Promise[CertificatePage] = js.native
     def page(
-      opts: CertificateListInstancePageOptions,
+      params: CertificateListInstancePageOptions,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ CertificatePage, Any]
     ): js.Promise[CertificatePage] = js.native
     
@@ -358,20 +259,153 @@ object libRestPreviewDeployedDevicesFleetCertificateMod {
       */
     def toJSON(): Any = js.native
   }
+  object CertificateListInstance {
+    
+    @JSImport("twilio/lib/rest/preview/deployed_devices/fleet/certificate", "CertificateListInstance")
+    @js.native
+    def apply(version: default, fleetSid: String): CertificateListInstance = js.native
+  }
   
-  /**
-    * Options to pass to create
-    *
-    * @property certificateData - The public certificate data.
-    * @property deviceSid - The unique identifier of a Device to be authenticated.
-    * @property friendlyName - The human readable description for this Certificate.
-    */
-  trait CertificateListInstanceCreateOptions extends StObject {
+  @JSImport("twilio/lib/rest/preview/deployed_devices/fleet/certificate", "CertificatePage")
+  @js.native
+  open class CertificatePage protected ()
+    extends typings.twilio.libBasePageMod.default[default, CertificatePayload, CertificateResource, CertificateInstance] {
+    /**
+      * Initialize the CertificatePage
+      *
+      * @param version - Version of the resource
+      * @param response - Response from the API
+      * @param solution - Path solution
+      */
+    def this(
+      version: default,
+      response: typings.twilio.libHttpResponseMod.default[String],
+      solution: CertificateSolution
+    ) = this()
     
-    var certificateData: String
+    /**
+      * Build an instance of CertificateInstance
+      *
+      * @param payload - Payload response from the API
+      */
+    def getInstance(payload: CertificateResource): CertificateInstance = js.native
+  }
+  
+  @js.native
+  trait CertificateContext extends StObject {
     
+    /**
+      * Fetch a CertificateInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed CertificateInstance
+      */
+    def fetch(): js.Promise[CertificateInstance] = js.native
+    def fetch(
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[CertificateInstance], Any]
+    ): js.Promise[CertificateInstance] = js.native
+    
+    /**
+      * Remove a CertificateInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed boolean
+      */
+    def remove(): js.Promise[Boolean] = js.native
+    def remove(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any]): js.Promise[Boolean] = js.native
+    
+    /**
+      * Provide a user-friendly representation
+      */
+    def toJSON(): Any = js.native
+    
+    /**
+      * Update a CertificateInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed CertificateInstance
+      */
+    def update(): js.Promise[CertificateInstance] = js.native
+    def update(
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[CertificateInstance], Any]
+    ): js.Promise[CertificateInstance] = js.native
+    /**
+      * Update a CertificateInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed CertificateInstance
+      */
+    def update(params: CertificateContextUpdateOptions): js.Promise[CertificateInstance] = js.native
+    def update(
+      params: CertificateContextUpdateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[CertificateInstance], Any]
+    ): js.Promise[CertificateInstance] = js.native
+  }
+  
+  trait CertificateContextSolution extends StObject {
+    
+    var fleetSid: String
+    
+    var sid: String
+  }
+  object CertificateContextSolution {
+    
+    inline def apply(fleetSid: String, sid: String): CertificateContextSolution = {
+      val __obj = js.Dynamic.literal(fleetSid = fleetSid.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CertificateContextSolution]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertificateContextSolution] (val x: Self) extends AnyVal {
+      
+      inline def setFleetSid(value: String): Self = StObject.set(x, "fleetSid", value.asInstanceOf[js.Any])
+      
+      inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait CertificateContextUpdateOptions extends StObject {
+    
+    /** Provides the unique string identifier of an existing Device to become authenticated with this Certificate credential. */
     var deviceSid: js.UndefOr[String] = js.undefined
     
+    /** Provides a human readable descriptive text for this Certificate credential, up to 256 characters long. */
+    var friendlyName: js.UndefOr[String] = js.undefined
+  }
+  object CertificateContextUpdateOptions {
+    
+    inline def apply(): CertificateContextUpdateOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CertificateContextUpdateOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertificateContextUpdateOptions] (val x: Self) extends AnyVal {
+      
+      inline def setDeviceSid(value: String): Self = StObject.set(x, "deviceSid", value.asInstanceOf[js.Any])
+      
+      inline def setDeviceSidUndefined: Self = StObject.set(x, "deviceSid", js.undefined)
+      
+      inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
+      
+      inline def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
+    }
+  }
+  
+  trait CertificateListInstanceCreateOptions extends StObject {
+    
+    /** Provides a URL encoded representation of the public certificate in PEM format. */
+    var certificateData: String
+    
+    /** Provides the unique string identifier of an existing Device to become authenticated with this Certificate credential. */
+    var deviceSid: js.UndefOr[String] = js.undefined
+    
+    /** Provides a human readable descriptive text for this Certificate credential, up to 256 characters long. */
     var friendlyName: js.UndefOr[String] = js.undefined
   }
   object CertificateListInstanceCreateOptions {
@@ -396,27 +430,9 @@ object libRestPreviewDeployedDevicesFleetCertificateMod {
     }
   }
   
-  /**
-    * Options to pass to each
-    *
-    * @property callback -
-    *                         Function to process each record. If this and a positional
-    *                         callback are passed, this one will be used
-    * @property deviceSid - Find all Certificates authenticating specified Device.
-    * @property done - Function to be called upon completion of streaming
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         each() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no pageSize is defined but a limit is defined,
-    *                         each() will attempt to read the limit with the most efficient
-    *                         page size, i.e. min(limit, 1000)
-    */
   trait CertificateListInstanceEachOptions extends StObject {
     
+    /** Function to process each record. If this and a positional callback are passed, this one will be used */
     var callback: js.UndefOr[
         js.Function2[
           /* item */ CertificateInstance, 
@@ -425,12 +441,16 @@ object libRestPreviewDeployedDevicesFleetCertificateMod {
         ]
       ] = js.undefined
     
+    /** Filters the resulting list of Certificates by a unique string identifier of an authenticated Device. */
     var deviceSid: js.UndefOr[String] = js.undefined
     
+    /** Function to be called upon completion of streaming */
     var done: js.UndefOr[js.Function] = js.undefined
     
+    /** Upper limit for the number of records to return. each() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
   }
   object CertificateListInstanceEachOptions {
@@ -467,27 +487,15 @@ object libRestPreviewDeployedDevicesFleetCertificateMod {
     }
   }
   
-  /**
-    * Options to pass to list
-    *
-    * @property deviceSid - Find all Certificates authenticating specified Device.
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         list() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no page_size is defined but a limit is defined,
-    *                         list() will attempt to read the limit with the most
-    *                         efficient page size, i.e. min(limit, 1000)
-    */
   trait CertificateListInstanceOptions extends StObject {
     
+    /** Filters the resulting list of Certificates by a unique string identifier of an authenticated Device. */
     var deviceSid: js.UndefOr[String] = js.undefined
     
+    /** Upper limit for the number of records to return. list() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
   }
   object CertificateListInstanceOptions {
@@ -514,22 +522,18 @@ object libRestPreviewDeployedDevicesFleetCertificateMod {
     }
   }
   
-  /**
-    * Options to pass to page
-    *
-    * @property deviceSid - Find all Certificates authenticating specified Device.
-    * @property pageNumber - Page Number, this value is simply for client state
-    * @property pageSize - Number of records to return, defaults to 50
-    * @property pageToken - PageToken provided by the API
-    */
   trait CertificateListInstancePageOptions extends StObject {
     
+    /** Filters the resulting list of Certificates by a unique string identifier of an authenticated Device. */
     var deviceSid: js.UndefOr[String] = js.undefined
     
+    /** Page Number, this value is simply for client state */
     var pageNumber: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
     
+    /** PageToken provided by the API */
     var pageToken: js.UndefOr[String] = js.undefined
   }
   object CertificateListInstancePageOptions {
@@ -562,29 +566,31 @@ object libRestPreviewDeployedDevicesFleetCertificateMod {
   
   trait CertificatePayload
     extends StObject
-       with CertificateResource
-       with TwilioResponsePayload
+       with TwilioResponsePayload {
+    
+    var certificates: js.Array[CertificateResource]
+  }
   object CertificatePayload {
     
     inline def apply(
-      account_sid: String,
-      date_created: js.Date,
-      date_updated: js.Date,
-      device_sid: String,
+      certificates: js.Array[CertificateResource],
       first_page_uri: String,
-      fleet_sid: String,
-      friendly_name: String,
       next_page_uri: String,
       page: Double,
       page_size: Double,
       previous_page_uri: String,
-      sid: String,
-      thumbprint: String,
-      uri: String,
-      url: String
+      uri: String
     ): CertificatePayload = {
-      val __obj = js.Dynamic.literal(account_sid = account_sid.asInstanceOf[js.Any], date_created = date_created.asInstanceOf[js.Any], date_updated = date_updated.asInstanceOf[js.Any], device_sid = device_sid.asInstanceOf[js.Any], first_page_uri = first_page_uri.asInstanceOf[js.Any], fleet_sid = fleet_sid.asInstanceOf[js.Any], friendly_name = friendly_name.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any], thumbprint = thumbprint.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(certificates = certificates.asInstanceOf[js.Any], first_page_uri = first_page_uri.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[CertificatePayload]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertificatePayload] (val x: Self) extends AnyVal {
+      
+      inline def setCertificates(value: js.Array[CertificateResource]): Self = StObject.set(x, "certificates", value.asInstanceOf[js.Any])
+      
+      inline def setCertificatesVarargs(value: CertificateResource*): Self = StObject.set(x, "certificates", js.Array(value*))
     }
   }
   
@@ -650,12 +656,12 @@ object libRestPreviewDeployedDevicesFleetCertificateMod {
   
   trait CertificateSolution extends StObject {
     
-    var fleetSid: js.UndefOr[String] = js.undefined
+    var fleetSid: String
   }
   object CertificateSolution {
     
-    inline def apply(): CertificateSolution = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(fleetSid: String): CertificateSolution = {
+      val __obj = js.Dynamic.literal(fleetSid = fleetSid.asInstanceOf[js.Any])
       __obj.asInstanceOf[CertificateSolution]
     }
     
@@ -663,8 +669,6 @@ object libRestPreviewDeployedDevicesFleetCertificateMod {
     implicit open class MutableBuilder[Self <: CertificateSolution] (val x: Self) extends AnyVal {
       
       inline def setFleetSid(value: String): Self = StObject.set(x, "fleetSid", value.asInstanceOf[js.Any])
-      
-      inline def setFleetSidUndefined: Self = StObject.set(x, "fleetSid", js.undefined)
     }
   }
 }

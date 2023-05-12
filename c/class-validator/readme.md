@@ -1,7 +1,7 @@
 
 # Scala.js typings for class-validator
 
-Typings are for version 0.13.2
+Typings are for version 0.14.0
 
 ## Library description:
 Decorator-based property validation for classes.

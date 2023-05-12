@@ -2,10 +2,8 @@ package typings.i18nextBrowserLanguagedetector
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.i18next.i18nextStrings.languageDetector
-import typings.i18next.mod.InitOptions
 import typings.i18next.mod.LanguageDetectorModule
 import typings.i18next.mod.ModuleType
-import typings.i18next.mod.Services
 import typings.i18nextBrowserLanguagedetector.i18nextBrowserLanguagedetectorStrings.cookie
 import typings.i18nextBrowserLanguagedetector.i18nextBrowserLanguagedetectorStrings.htmlTag
 import typings.i18nextBrowserLanguagedetector.i18nextBrowserLanguagedetectorStrings.lax
@@ -31,15 +29,9 @@ object mod {
     def this(services: Any, options: DetectorOptions) = this()
     def this(services: Unit, options: DetectorOptions) = this()
     
-    /* CompleteClass */
-    override def cacheUserLanguage(lng: String): Unit = js.native
-    
     /** Must return detected language */
     /* CompleteClass */
     override def detect(): js.UndefOr[String | js.Array[String]] = js.native
-    
-    /* CompleteClass */
-    override def init(services: Services, detectorOptions: js.Object, i18nextOptions: InitOptions): Unit = js.native
     
     /* CompleteClass */
     var `type`: ModuleType = js.native
@@ -276,7 +268,10 @@ object mod {
       */
     def addDetector(detector: CustomDetector): I18nextBrowserLanguageDetector = js.native
     
-    def cacheUserLanguage(lng: String, caches: js.Array[String]): Unit = js.native
+    @JSName("cacheUserLanguage")
+    def cacheUserLanguage_MI18nextBrowserLanguageDetector(lng: String): Unit = js.native
+    @JSName("cacheUserLanguage")
+    def cacheUserLanguage_MI18nextBrowserLanguageDetector(lng: String, caches: js.Array[String]): Unit = js.native
     
     def detect(
       detectionOrder: js.UndefOr[
@@ -293,10 +288,14 @@ object mod {
     /**
       * Initializes detector.
       */
-    def init(): Unit = js.native
-    def init(services: Any): Unit = js.native
-    def init(services: Any, options: DetectorOptions): Unit = js.native
-    def init(services: Unit, options: DetectorOptions): Unit = js.native
+    @JSName("init")
+    def init_MI18nextBrowserLanguageDetector(): Unit = js.native
+    @JSName("init")
+    def init_MI18nextBrowserLanguageDetector(services: Any): Unit = js.native
+    @JSName("init")
+    def init_MI18nextBrowserLanguageDetector(services: Any, options: DetectorOptions): Unit = js.native
+    @JSName("init")
+    def init_MI18nextBrowserLanguageDetector(services: Unit, options: DetectorOptions): Unit = js.native
     
     var services: Any = js.native
     

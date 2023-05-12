@@ -31,6 +31,12 @@ trait Os extends StObject {
   var os: String
   
   /**
+    * @description The id of the runner group.
+    * @example 1
+    */
+  var runner_group_id: js.UndefOr[Double] = js.undefined
+  
+  /**
     * @description The status of the runner.
     * @example online
     */
@@ -72,6 +78,10 @@ object Os {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+    
+    inline def setRunner_group_id(value: Double): Self = StObject.set(x, "runner_group_id", value.asInstanceOf[js.Any])
+    
+    inline def setRunner_group_idUndefined: Self = StObject.set(x, "runner_group_id", js.undefined)
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

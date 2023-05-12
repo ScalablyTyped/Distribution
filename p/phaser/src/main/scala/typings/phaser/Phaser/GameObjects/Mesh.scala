@@ -6,6 +6,7 @@ import typings.phaser.Phaser.GameObjects.Components.BlendMode
 import typings.phaser.Phaser.GameObjects.Components.Depth
 import typings.phaser.Phaser.GameObjects.Components.Mask
 import typings.phaser.Phaser.GameObjects.Components.Pipeline
+import typings.phaser.Phaser.GameObjects.Components.PostPipeline
 import typings.phaser.Phaser.GameObjects.Components.ScrollFactor
 import typings.phaser.Phaser.GameObjects.Components.Size
 import typings.phaser.Phaser.GameObjects.Components.Texture
@@ -61,11 +62,12 @@ trait Mesh
      with Depth
      with Mask
      with Pipeline
+     with PostPipeline
+     with ScrollFactor
      with Size
      with Texture
      with Transform
-     with Visible
-     with ScrollFactor {
+     with Visible {
   
   /**
     * Adds a new Face into the faces array of this Mesh.
@@ -208,6 +210,14 @@ trait Mesh
   def clear(): this.type = js.native
   
   /**
+    * Clears all tint values associated with this Game Object.
+    * 
+    * Immediately sets the color values back to 0xffffff on all vertices,
+    * which results in no visible change to the texture.
+    */
+  def clearTint(): this.type = js.native
+  
+  /**
     * You can optionally choose to render the vertices of this Mesh to a Graphics instance.
     * 
     * Achieve this by setting the `debugCallback` and the `debugGraphic` properties.
@@ -252,6 +262,17 @@ trait Mesh
   var faces: js.Array[Face] = js.native
   
   /**
+    * The Camera fov (field of view) in degrees.
+    * 
+    * This is set automatically as part of the `Mesh.setPerspective` call, but exposed
+    * here for additional math.
+    * 
+    * Do not modify this property directly, doing so will not change the fov. For that,
+    * call the respective Mesh methods.
+    */
+  val fov: Double = js.native
+  
+  /**
     * Returns the Face at the given index in this Mesh Game Object.
     * @param index The index of the Face to get.
     */
@@ -281,6 +302,18 @@ trait Mesh
     * Returns the total number of Vertices in this Mesh Game Object.
     */
   def getVertexCount(): Double = js.native
+  
+  /**
+    * Tests to see if _any_ face in this Mesh intersects with the given coordinates.
+    * 
+    * The given position is translated through the matrix of this Mesh and the given Camera,
+    * before being compared against the vertices.
+    * @param x The x position to check against.
+    * @param y The y position to check against.
+    * @param camera The camera to pass the coordinates through. If not give, the default Scene Camera is used.
+    */
+  def hasFaceAt(x: Double, y: Double): Boolean = js.native
+  def hasFaceAt(x: Double, y: Double, camera: Camera): Boolean = js.native
   
   /**
     * When rendering, skip any Face that isn't counter clockwise?
@@ -368,8 +401,11 @@ trait Mesh
   /**
     * Translates the view position of this Mesh on the z axis by the given amount.
     * 
-    * As the default `panZ` value is 0, vertices with `z=0` (the default) need special care or else they will not display as they are behind the camera.
-    * Consider using `mesh.panZ(mesh.height / (2 * Math.tan(Math.PI / 16)))`, which will interpret vertex geometry 1:1 with pixel geometry (or see `setOrtho`).
+    * As the default `panZ` value is 0, vertices with `z=0` (the default) need special
+    * care or else they will not display as they are "behind" the camera.
+    * 
+    * Consider using `mesh.panZ(mesh.height / (2 * Math.tan(Math.PI / 16)))`,
+    * which will interpret vertex geometry 1:1 with pixel geometry (or see `setOrtho`).
     * @param v The amount to pan by.
     */
   def panZ(v: Double): Unit = js.native
@@ -410,6 +446,27 @@ trait Mesh
     * @param faces An array of Faces.
     */
   def renderDebug(src: Mesh, faces: js.Array[Face]): Unit = js.native
+  
+  /**
+    * The x rotation of the Model in 3D space, as specified in degrees.
+    * 
+    * If you need the value in radians use the `modelRotation.x` property directly.
+    */
+  def rotateX(): Double = js.native
+  
+  /**
+    * The y rotation of the Model in 3D space, as specified in degrees.
+    * 
+    * If you need the value in radians use the `modelRotation.y` property directly.
+    */
+  def rotateY(): Double = js.native
+  
+  /**
+    * The z rotation of the Model in 3D space, as specified in degrees.
+    * 
+    * If you need the value in radians use the `modelRotation.z` property directly.
+    */
+  def rotateZ(): Double = js.native
   
   /**
     * This method enables rendering of the Mesh vertices to the given Graphics instance.
@@ -491,7 +548,7 @@ trait Mesh
   /**
     * Builds a new perspective projection matrix from the given values.
     * 
-    * These are also the initial projection matrix & parameters for `Mesh` (and see `panZ` for more discussion).
+    * These are also the initial projection matrix and parameters for `Mesh` (see `Mesh.panZ` for more discussion).
     * 
     * See also `setOrtho`.
     * @param width The width of the projection matrix. Typically the same as the Mesh and/or Renderer.
@@ -510,11 +567,32 @@ trait Mesh
   def setPerspective(width: Double, height: Double, fov: Unit, near: Unit, far: Double): Unit = js.native
   
   /**
+    * Sets an additive tint on all vertices of this Mesh Game Object.
+    * 
+    * The tint works by taking the pixel color values from the Game Objects texture, and then
+    * multiplying it by the color value of the tint.
+    * 
+    * To modify the tint color once set, either call this method again with new values or use the
+    * `tint` property to set all colors at once.
+    * 
+    * To remove a tint call `clearTint`.
+    * @param tint The tint being applied to all vertices of this Mesh Game Object. Default 0xffffff.
+    */
+  def setTint(): this.type = js.native
+  def setTint(tint: Double): this.type = js.native
+  
+  /**
     * Compare the depth of two Faces.
     * @param faceA The first Face.
     * @param faceB The second Face.
     */
   def sortByDepth(faceA: Face, faceB: Face): Double = js.native
+  
+  /**
+    * The tint value being applied to the whole of the Game Object.
+    * This property is a setter-only.
+    */
+  def tint(): Double = js.native
   
   /**
     * The tint fill mode.
@@ -537,6 +615,48 @@ trait Mesh
     * The transformation matrix for this Mesh.
     */
   var transformMatrix: Matrix4 = js.native
+  
+  /**
+    * Scales the UV texture coordinates of all faces in this Mesh by
+    * the exact given amounts.
+    * 
+    * If you only wish to scale one coordinate, pass a value of one
+    * to the other.
+    * 
+    * Due to a limitation in WebGL1 you can only UV scale textures
+    * that are a power-of-two in size. Scaling NPOT textures will
+    * work but will result in clamping the pixels to the edges if
+    * you scale beyond a value of 1. Scaling below 1 will work
+    * regardless of texture size.
+    * 
+    * Note that if this Mesh is using a _frame_ from a texture atlas
+    * then you will be unable to UV scale its texture.
+    * @param x The amount to horizontally scale the UV coordinates by.
+    * @param y The amount to vertically scale the UV coordinates by.
+    */
+  def uvScale(x: Double, y: Double): this.type = js.native
+  
+  /**
+    * Scrolls the UV texture coordinates of all faces in this Mesh by
+    * adding the given x/y amounts to them.
+    * 
+    * If you only wish to scroll one coordinate, pass a value of zero
+    * to the other.
+    * 
+    * Use small values for scrolling. UVs are set from the range 0
+    * to 1, so you should increment (or decrement) them by suitably
+    * small values, such as 0.01.
+    * 
+    * Due to a limitation in WebGL1 you can only UV scroll textures
+    * that are a power-of-two in size. Scrolling NPOT textures will
+    * work but will result in clamping the pixels to the edges.
+    * 
+    * Note that if this Mesh is using a _frame_ from a texture atlas
+    * then you will be unable to UV scroll its texture.
+    * @param x The amount to horizontally shift the UV coordinates by.
+    * @param y The amount to vertically shift the UV coordinates by.
+    */
+  def uvScroll(x: Double, y: Double): this.type = js.native
   
   /**
     * An array containing Vertex instances. One instance per vertex in this Mesh.

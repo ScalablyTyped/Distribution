@@ -397,8 +397,8 @@ object buildTypesMod {
     var version: js.UndefOr[String] = js.native
     
     /**
-    		Used to configure [Yarn workspaces](https://classic.yarnpkg.com/docs/workspaces/).
-    		Workspaces allow you to manage multiple packages within the same repository in such a way that you only need to run `yarn install` once to install all of them in a single pass.
+    		Used to configure [npm workspaces](https://docs.npmjs.com/cli/using-npm/workspaces) / [Yarn workspaces](https://classic.yarnpkg.com/docs/workspaces/).
+    		Workspaces allow you to manage multiple packages within the same repository in such a way that you only need to run your install command once in order to install all of them in a single pass.
     		Please note that the top-level `private` property of `package.json` **must** be set to `true` in order to use workspaces.
     		*/
     var workspaces: js.UndefOr[js.Array[WorkspacePattern] | WorkspaceConfig] = js.native

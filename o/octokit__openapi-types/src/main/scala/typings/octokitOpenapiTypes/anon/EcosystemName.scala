@@ -6,14 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EcosystemName extends StObject {
   
-  var ecosystem: js.UndefOr[String] = js.undefined
+  /** @description The package's language or package management ecosystem. */
+  val ecosystem: String
   
-  var name: js.UndefOr[String] = js.undefined
+  /** @description The unique package name within its ecosystem. */
+  val name: String
 }
 object EcosystemName {
   
-  inline def apply(): EcosystemName = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(ecosystem: String, name: String): EcosystemName = {
+    val __obj = js.Dynamic.literal(ecosystem = ecosystem.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[EcosystemName]
   }
   
@@ -22,10 +24,6 @@ object EcosystemName {
     
     inline def setEcosystem(value: String): Self = StObject.set(x, "ecosystem", value.asInstanceOf[js.Any])
     
-    inline def setEcosystemUndefined: Self = StObject.set(x, "ecosystem", js.undefined)
-    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    
-    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

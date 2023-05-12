@@ -6,6 +6,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** @internal */
 trait StylelintPostcssResult extends StObject {
   
   var config: js.UndefOr[Config] = js.undefined
@@ -21,8 +22,6 @@ trait StylelintPostcssResult extends StObject {
   var ignored: js.UndefOr[Boolean] = js.undefined
   
   var quiet: js.UndefOr[Boolean] = js.undefined
-  
-  var ruleDisableFix: js.UndefOr[Boolean] = js.undefined
   
   var ruleMetadata: StringDictionary[PartialRuleMeta]
   
@@ -72,10 +71,6 @@ object StylelintPostcssResult {
     inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
     
     inline def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
-    
-    inline def setRuleDisableFix(value: Boolean): Self = StObject.set(x, "ruleDisableFix", value.asInstanceOf[js.Any])
-    
-    inline def setRuleDisableFixUndefined: Self = StObject.set(x, "ruleDisableFix", js.undefined)
     
     inline def setRuleMetadata(value: StringDictionary[PartialRuleMeta]): Self = StObject.set(x, "ruleMetadata", value.asInstanceOf[js.Any])
     

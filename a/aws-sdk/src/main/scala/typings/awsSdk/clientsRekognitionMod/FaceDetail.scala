@@ -42,6 +42,11 @@ trait FaceDetail extends StObject {
   var EyesOpen: js.UndefOr[EyeOpen] = js.undefined
   
   /**
+    *  FaceOccluded should return "true" with a high confidence score if a detected face’s eyes, nose, and mouth are partially captured or if they are covered by masks, dark sunglasses, cell phones, hands, or other objects. FaceOccluded should return "false" with a high confidence score if common occurrences that do not impact face verification are detected, such as eye glasses, lightly tinted sunglasses, strands of hair, and others. 
+    */
+  var FaceOccluded: js.UndefOr[typings.awsSdk.clientsRekognitionMod.FaceOccluded] = js.undefined
+  
+  /**
     * The predicted gender of a detected face. 
     */
   var Gender: js.UndefOr[typings.awsSdk.clientsRekognitionMod.Gender] = js.undefined
@@ -120,6 +125,10 @@ object FaceDetail {
     inline def setEyesOpen(value: EyeOpen): Self = StObject.set(x, "EyesOpen", value.asInstanceOf[js.Any])
     
     inline def setEyesOpenUndefined: Self = StObject.set(x, "EyesOpen", js.undefined)
+    
+    inline def setFaceOccluded(value: FaceOccluded): Self = StObject.set(x, "FaceOccluded", value.asInstanceOf[js.Any])
+    
+    inline def setFaceOccludedUndefined: Self = StObject.set(x, "FaceOccluded", js.undefined)
     
     inline def setGender(value: Gender): Self = StObject.set(x, "Gender", value.asInstanceOf[js.Any])
     

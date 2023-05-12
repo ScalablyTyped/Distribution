@@ -8,6 +8,7 @@ import typings.angularCompilerCli.srcNgtscTypecheckApiApiMod.TemplateSourceMappi
 import typings.typescript.mod.Diagnostic
 import typings.typescript.mod.DiagnosticCategory
 import typings.typescript.mod.DiagnosticMessageChain
+import typings.typescript.mod.SourceFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,4 +55,8 @@ object srcNgtscTypecheckDiagnosticsSrcDiagnosticMod {
     messageText: DiagnosticMessageChain,
     relatedMessages: js.Array[End]
   ): TemplateDiagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("makeTemplateDiagnostic")(templateId.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any], span.asInstanceOf[js.Any], category.asInstanceOf[js.Any], code.asInstanceOf[js.Any], messageText.asInstanceOf[js.Any], relatedMessages.asInstanceOf[js.Any])).asInstanceOf[TemplateDiagnostic]
+  
+  inline def resetParseTemplateAsSourceFileForTest(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetParseTemplateAsSourceFileForTest")().asInstanceOf[Unit]
+  
+  inline def setParseTemplateAsSourceFileForTest(fn: js.Function2[/* fileName */ String, /* template */ String, SourceFile]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setParseTemplateAsSourceFileForTest")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

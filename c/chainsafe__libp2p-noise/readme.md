@@ -1,7 +1,7 @@
 
 # Scala.js typings for chainsafe__libp2p-noise
 
-Typings are for version 10.0.0
+Typings are for version 12.0.0
 
 ## Library description:
 ![npm](https://img.shields.io/npm/v/libp2p-noise) [![CI](https://github.com/ChainSafe/js-libp2p-noise/actions/workflows/ci.yml/badge.svg?branch=master&event=push)](https://github.com/ChainSafe/js-libp2p-noise/actions/workflows/ci.yml)

@@ -11,6 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 inline def APIKey: String = ^.asInstanceOf[js.Dynamic].selectDynamic("APIKey").asInstanceOf[String]
 inline def APIKey_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("APIKey")(x.asInstanceOf[js.Any])
 
+inline def APIToken: String = ^.asInstanceOf[js.Dynamic].selectDynamic("APIToken").asInstanceOf[String]
+inline def APIToken_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("APIToken")(x.asInstanceOf[js.Any])
+
 inline def baseApiUrl: String = ^.asInstanceOf[js.Dynamic].selectDynamic("baseApiUrl").asInstanceOf[String]
 inline def baseApiUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("baseApiUrl")(x.asInstanceOf[js.Any])
 
@@ -31,6 +34,8 @@ inline def maxParallelImageRequests_=(x: Double): Unit = ^.asInstanceOf[js.Dynam
 inline def prewarm(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("prewarm")().asInstanceOf[Unit]
 
 inline def setAPIKey(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAPIKey")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+inline def setAPIToken(token: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAPIToken")(token.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
 inline def setRTLTextPlugin(pluginURL: String, callback: js.Function1[/* error */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setRTLTextPlugin")(pluginURL.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def setRTLTextPlugin(pluginURL: String, callback: js.Function1[/* error */ js.Error, Unit], deferred: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setRTLTextPlugin")(pluginURL.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], deferred.asInstanceOf[js.Any])).asInstanceOf[Unit]

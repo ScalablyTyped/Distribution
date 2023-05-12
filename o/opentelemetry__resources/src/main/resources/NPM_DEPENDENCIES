@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@opentelemetry/resources" : "1.7.0"
+      "@opentelemetry/resources" : "1.13.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@opentelemetry/resources" : "1.7.0"
+      "@opentelemetry/resources" : "1.13.0"
     }
   ],
   "compile-devDependencies" : [

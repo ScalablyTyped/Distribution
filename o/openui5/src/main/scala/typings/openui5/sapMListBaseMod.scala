@@ -1192,6 +1192,8 @@ object sapMListBaseMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * This method is a hook for the RenderManager that gets called during the rendering of child Controls.
       * It allows to add, remove and update existing accessibility attributes (ARIA) of those controls.
       */
@@ -1208,6 +1210,7 @@ object sapMListBaseMod {
     
     /**
       * @SINCE 1.54
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:beforeOpenContextMenu beforeOpenContextMenu} to attached listeners.
       *
@@ -1223,6 +1226,8 @@ object sapMListBaseMod {
     mParameters: ListItem): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:delete delete} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1236,6 +1241,7 @@ object sapMListBaseMod {
     /**
       * @SINCE 1.16
       * @deprecated (since 1.16.3) - Instead, use "updateFinished" event.
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:growingFinished growingFinished} to attached listeners.
       *
@@ -1250,6 +1256,7 @@ object sapMListBaseMod {
     /**
       * @SINCE 1.16
       * @deprecated (since 1.16.3) - Instead, use `updateStarted` event with listening `changeReason`.
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:growingStarted growingStarted} to attached listeners.
       *
@@ -1263,6 +1270,7 @@ object sapMListBaseMod {
     
     /**
       * @SINCE 1.20
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:itemPress itemPress} to attached listeners.
       *
@@ -1276,6 +1284,7 @@ object sapMListBaseMod {
     
     /**
       * @deprecated (since 1.16) - Use the `selectionChange` event instead.
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:select select} to attached listeners.
       *
@@ -1289,6 +1298,7 @@ object sapMListBaseMod {
     
     /**
       * @SINCE 1.16
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:selectionChange selectionChange} to attached listeners.
       *
@@ -1301,6 +1311,8 @@ object sapMListBaseMod {
     mParameters: ListItems): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:swipe swipe} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -1316,6 +1328,7 @@ object sapMListBaseMod {
     
     /**
       * @SINCE 1.16.3
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:updateFinished updateFinished} to attached listeners.
       *
@@ -1329,6 +1342,7 @@ object sapMListBaseMod {
     
     /**
       * @SINCE 1.16.3
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:updateStarted updateStarted} to attached listeners.
       *
@@ -1531,6 +1545,7 @@ object sapMListBaseMod {
     
     /**
       * @SINCE 1.16.5
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Returns the ItemNavigation delegate of the list
       */
@@ -1557,6 +1572,8 @@ object sapMListBaseMod {
     def getKeyboardMode(): ListKeyboardMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ListKeyboardMode * / any */ String) = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns the last list mode, the mode that is rendered This can be used to detect mode changes during
       * rendering
       */
@@ -1886,14 +1903,19 @@ object sapMListBaseMod {
     iItems: int): Unit = js.native
     
     /**
+      * @SINCE 1.76
+      *
       * Scrolls the list so that the item with the given index is in the viewport. If the index is -1, it scrolls
       * to the bottom of the list. If the growing feature is enabled, the list is scrolled to the last available
       * item.
       *
       * Growing in combination with `growingScrollToLoad=true` can result in loading of new items when scrolling
       * to the bottom of the list.
+      *  **Note:** This method only works if the control is placed inside a scrollable container (for example,
+      * `sap.m.Page`). Calling this method if the `ListBase` control is placed outside the container, will reject
+      * the `Promise` by throwing an error.
       *
-      * @returns A `Promise` that resolves after the table scrolls to the row with the given index
+      * @returns A `Promise` that resolves after the table scrolls to the row with the given index.
       */
     def scrollToIndex(/**
       * The list item index that must be scrolled into the viewport

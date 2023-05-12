@@ -1,73 +1,604 @@
 package typings.ol
 
-import typings.ol.eventsMod.EventsKey
+import org.scalablytyped.runtime.StringDictionary
 import typings.ol.extentMod.Extent
-import typings.ol.olStrings.postcompose
-import typings.ol.olStrings.precompose
-import typings.ol.olStrings.rendercomplete
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layerGraticuleMod {
   
+  /**
+    * @typedef {Object} GraticuleLabelDataType
+    * @property {Point} geom Geometry.
+    * @property {string} text Text.
+    */
+  /**
+    * @typedef {Object} Options
+    * @property {string} [className='ol-layer'] A CSS class name to set to the layer element.
+    * @property {number} [opacity=1] Opacity (0, 1).
+    * @property {boolean} [visible=true] Visibility.
+    * @property {import("../extent.js").Extent} [extent] The bounding extent for layer rendering.  The layer will not be
+    * rendered outside of this extent.
+    * @property {number} [zIndex] The z-index for layer rendering.  At rendering time, the layers
+    * will be ordered, first by Z-index and then by position. When `undefined`, a `zIndex` of 0 is assumed
+    * for layers that are added to the map's `layers` collection, or `Infinity` when the layer's `setMap()`
+    * method was used.
+    * @property {number} [minResolution] The minimum resolution (inclusive) at which this layer will be
+    * visible.
+    * @property {number} [maxResolution] The maximum resolution (exclusive) below which this layer will
+    * be visible.
+    * @property {number} [minZoom] The minimum view zoom level (exclusive) above which this layer will be
+    * visible.
+    * @property {number} [maxZoom] The maximum view zoom level (inclusive) at which this layer will
+    * be visible.
+    * @property {number} [maxLines=100] The maximum number of meridians and
+    * parallels from the center of the map. The default value of 100 means that at
+    * most 200 meridians and 200 parallels will be displayed. The default value is
+    * appropriate for conformal projections like Spherical Mercator. If you
+    * increase the value, more lines will be drawn and the drawing performance will
+    * decrease.
+    * @property {Stroke} [strokeStyle] The
+    * stroke style to use for drawing the graticule. If not provided, the following stroke will be used:
+    * ```js
+    * new Stroke({
+    *   color: 'rgba(0, 0, 0, 0.2)' // a not fully opaque black
+    * });
+    * ```
+    * @property {number} [targetSize=100] The target size of the graticule cells,
+    * in pixels.
+    * @property {boolean} [showLabels=false] Render a label with the respective
+    * latitude/longitude for each graticule line.
+    * @property {function(number):string} [lonLabelFormatter] Label formatter for
+    * longitudes. This function is called with the longitude as argument, and
+    * should return a formatted string representing the longitude. By default,
+    * labels are formatted as degrees, minutes, seconds and hemisphere.
+    * @property {function(number):string} [latLabelFormatter] Label formatter for
+    * latitudes. This function is called with the latitude as argument, and
+    * should return a formatted string representing the latitude. By default,
+    * labels are formatted as degrees, minutes, seconds and hemisphere.
+    * @property {number} [lonLabelPosition=0] Longitude label position in fractions
+    * (0..1) of view extent. 0 means at the bottom of the viewport, 1 means at the
+    * top.
+    * @property {number} [latLabelPosition=1] Latitude label position in fractions
+    * (0..1) of view extent. 0 means at the left of the viewport, 1 means at the
+    * right.
+    * @property {Text} [lonLabelStyle] Longitude label text
+    * style. If not provided, the following style will be used:
+    * ```js
+    * new Text({
+    *   font: '12px Calibri,sans-serif',
+    *   textBaseline: 'bottom',
+    *   fill: new Fill({
+    *     color: 'rgba(0,0,0,1)'
+    *   }),
+    *   stroke: new Stroke({
+    *     color: 'rgba(255,255,255,1)',
+    *     width: 3
+    *   })
+    * });
+    * ```
+    * Note that the default's `textBaseline` configuration will not work well for
+    * `lonLabelPosition` configurations that position labels close to the top of
+    * the viewport.
+    * @property {Text} [latLabelStyle] Latitude label text style.
+    * If not provided, the following style will be used:
+    * ```js
+    * new Text({
+    *   font: '12px Calibri,sans-serif',
+    *   textAlign: 'end',
+    *   fill: new Fill({
+    *     color: 'rgba(0,0,0,1)'
+    *   }),
+    *   stroke: Stroke({
+    *     color: 'rgba(255,255,255,1)',
+    *     width: 3
+    *   })
+    * });
+    * ```
+    * Note that the default's `textAlign` configuration will not work well for
+    * `latLabelPosition` configurations that position labels close to the left of
+    * the viewport.
+    * @property {Array<number>} [intervals=[90, 45, 30, 20, 10, 5, 2, 1, 30/60, 20/60, 10/60, 5/60, 2/60, 1/60, 30/3600, 20/3600, 10/3600, 5/3600, 2/3600, 1/3600]]
+    * Intervals (in degrees) for the graticule. Example to limit graticules to 30 and 10 degrees intervals:
+    * ```js
+    * [30, 10]
+    * ```
+    * @property {boolean} [wrapX=true] Whether to repeat the graticule horizontally.
+    * @property {Object<string, *>} [properties] Arbitrary observable properties. Can be accessed with `#get()` and `#set()`.
+    */
+  /**
+    * @classdesc
+    * Layer that renders a grid for a coordinate system (currently only EPSG:4326 is supported).
+    * Note that the view projection must define both extent and worldExtent.
+    *
+    * @fires import("../render/Event.js").RenderEvent
+    * @extends {VectorLayer<import("../source/Vector.js").default>}
+    * @api
+    */
   @JSImport("ol/layer/Graticule", JSImport.Default)
   @js.native
+  /**
+    * @param {Options} [options] Options.
+    */
   open class default () extends Graticule {
-    def this(opt_options: Options) = this()
+    def this(options: Options) = this()
   }
   
+  /**
+    * @typedef {Object} GraticuleLabelDataType
+    * @property {Point} geom Geometry.
+    * @property {string} text Text.
+    */
+  /**
+    * @typedef {Object} Options
+    * @property {string} [className='ol-layer'] A CSS class name to set to the layer element.
+    * @property {number} [opacity=1] Opacity (0, 1).
+    * @property {boolean} [visible=true] Visibility.
+    * @property {import("../extent.js").Extent} [extent] The bounding extent for layer rendering.  The layer will not be
+    * rendered outside of this extent.
+    * @property {number} [zIndex] The z-index for layer rendering.  At rendering time, the layers
+    * will be ordered, first by Z-index and then by position. When `undefined`, a `zIndex` of 0 is assumed
+    * for layers that are added to the map's `layers` collection, or `Infinity` when the layer's `setMap()`
+    * method was used.
+    * @property {number} [minResolution] The minimum resolution (inclusive) at which this layer will be
+    * visible.
+    * @property {number} [maxResolution] The maximum resolution (exclusive) below which this layer will
+    * be visible.
+    * @property {number} [minZoom] The minimum view zoom level (exclusive) above which this layer will be
+    * visible.
+    * @property {number} [maxZoom] The maximum view zoom level (inclusive) at which this layer will
+    * be visible.
+    * @property {number} [maxLines=100] The maximum number of meridians and
+    * parallels from the center of the map. The default value of 100 means that at
+    * most 200 meridians and 200 parallels will be displayed. The default value is
+    * appropriate for conformal projections like Spherical Mercator. If you
+    * increase the value, more lines will be drawn and the drawing performance will
+    * decrease.
+    * @property {Stroke} [strokeStyle] The
+    * stroke style to use for drawing the graticule. If not provided, the following stroke will be used:
+    * ```js
+    * new Stroke({
+    *   color: 'rgba(0, 0, 0, 0.2)' // a not fully opaque black
+    * });
+    * ```
+    * @property {number} [targetSize=100] The target size of the graticule cells,
+    * in pixels.
+    * @property {boolean} [showLabels=false] Render a label with the respective
+    * latitude/longitude for each graticule line.
+    * @property {function(number):string} [lonLabelFormatter] Label formatter for
+    * longitudes. This function is called with the longitude as argument, and
+    * should return a formatted string representing the longitude. By default,
+    * labels are formatted as degrees, minutes, seconds and hemisphere.
+    * @property {function(number):string} [latLabelFormatter] Label formatter for
+    * latitudes. This function is called with the latitude as argument, and
+    * should return a formatted string representing the latitude. By default,
+    * labels are formatted as degrees, minutes, seconds and hemisphere.
+    * @property {number} [lonLabelPosition=0] Longitude label position in fractions
+    * (0..1) of view extent. 0 means at the bottom of the viewport, 1 means at the
+    * top.
+    * @property {number} [latLabelPosition=1] Latitude label position in fractions
+    * (0..1) of view extent. 0 means at the left of the viewport, 1 means at the
+    * right.
+    * @property {Text} [lonLabelStyle] Longitude label text
+    * style. If not provided, the following style will be used:
+    * ```js
+    * new Text({
+    *   font: '12px Calibri,sans-serif',
+    *   textBaseline: 'bottom',
+    *   fill: new Fill({
+    *     color: 'rgba(0,0,0,1)'
+    *   }),
+    *   stroke: new Stroke({
+    *     color: 'rgba(255,255,255,1)',
+    *     width: 3
+    *   })
+    * });
+    * ```
+    * Note that the default's `textBaseline` configuration will not work well for
+    * `lonLabelPosition` configurations that position labels close to the top of
+    * the viewport.
+    * @property {Text} [latLabelStyle] Latitude label text style.
+    * If not provided, the following style will be used:
+    * ```js
+    * new Text({
+    *   font: '12px Calibri,sans-serif',
+    *   textAlign: 'end',
+    *   fill: new Fill({
+    *     color: 'rgba(0,0,0,1)'
+    *   }),
+    *   stroke: Stroke({
+    *     color: 'rgba(255,255,255,1)',
+    *     width: 3
+    *   })
+    * });
+    * ```
+    * Note that the default's `textAlign` configuration will not work well for
+    * `latLabelPosition` configurations that position labels close to the left of
+    * the viewport.
+    * @property {Array<number>} [intervals=[90, 45, 30, 20, 10, 5, 2, 1, 30/60, 20/60, 10/60, 5/60, 2/60, 1/60, 30/3600, 20/3600, 10/3600, 5/3600, 2/3600, 1/3600]]
+    * Intervals (in degrees) for the graticule. Example to limit graticules to 30 and 10 degrees intervals:
+    * ```js
+    * [30, 10]
+    * ```
+    * @property {boolean} [wrapX=true] Whether to repeat the graticule horizontally.
+    * @property {Object<string, *>} [properties] Arbitrary observable properties. Can be accessed with `#get()` and `#set()`.
+    */
+  /**
+    * @classdesc
+    * Layer that renders a grid for a coordinate system (currently only EPSG:4326 is supported).
+    * Note that the view projection must define both extent and worldExtent.
+    *
+    * @fires import("../render/Event.js").RenderEvent
+    * @extends {VectorLayer<import("../source/Vector.js").default>}
+    * @api
+    */
   @js.native
   trait Graticule
-    extends typings.ol.layerVectorMod.default {
+    extends typings.ol.layerVectorMod.default[typings.ol.sourceVectorMod.default[typings.ol.geomGeometryMod.default]] {
+    
+    /**
+      * @param {number} lon Longitude.
+      * @param {number} minLat Minimal latitude.
+      * @param {number} maxLat Maximal latitude.
+      * @param {number} squaredTolerance Squared tolerance.
+      * @param {import("../extent.js").Extent} extent Extent.
+      * @param {number} index Index.
+      * @return {number} Index.
+      * @private
+      */
+    /* private */ var addMeridian_ : Any = js.native
+    
+    /**
+      * @param {number} lat Latitude.
+      * @param {number} minLon Minimal longitude.
+      * @param {number} maxLon Maximal longitude.
+      * @param {number} squaredTolerance Squared tolerance.
+      * @param {import("../extent.js").Extent} extent Extent.
+      * @param {number} index Index.
+      * @return {number} Index.
+      * @private
+      */
+    /* private */ var addParallel_ : Any = js.native
+    
+    /**
+      * @type {import("../coordinate.js").Coordinate}
+      * @private
+      */
+    /* private */ var bottomLeft_ : Any = js.native
+    
+    /**
+      * @type {import("../coordinate.js").Coordinate}
+      * @private
+      */
+    /* private */ var bottomRight_ : Any = js.native
+    
+    /**
+      * @param {import("../extent.js").Extent} extent Extent.
+      * @param {import("../coordinate.js").Coordinate} center Center.
+      * @param {number} resolution Resolution.
+      * @param {number} squaredTolerance Squared tolerance.
+      * @private
+      */
+    /* private */ var createGraticule_ : Any = js.native
+    
+    /**
+      * @param {import("../render/Event.js").default} event Render event.
+      * @private
+      */
+    /* private */ var drawLabels_ : Any = js.native
+    
+    /**
+      * feature pool to use when updating graticule
+      * @type {Array<Feature>}
+      * @private
+      */
+    /* private */ var featurePool_ : Any = js.native
+    
+    /**
+      * @type {import("../proj.js").TransformFunction|undefined}
+      * @private
+      */
+    /* private */ var fromLonLatTransform_ : Any = js.native
+    
+    /**
+      * @param {number} resolution Resolution.
+      * @return {number} The interval in degrees.
+      * @private
+      */
+    /* private */ var getInterval_ : Any = js.native
+    
+    /**
+      * @param {LineString} lineString Meridian
+      * @param {import("../extent.js").Extent} extent Extent.
+      * @param {number} index Index.
+      * @return {Point} Meridian point.
+      * @private
+      */
+    /* private */ var getMeridianPoint_ : Any = js.native
+    
+    /**
+      * @param {number} lon Longitude.
+      * @param {number} minLat Minimal latitude.
+      * @param {number} maxLat Maximal latitude.
+      * @param {number} squaredTolerance Squared tolerance.
+      * @return {LineString} The meridian line string.
+      * @param {number} index Index.
+      * @private
+      */
+    /* private */ var getMeridian_ : Any = js.native
     
     /**
       * Get the list of meridians.  Meridians are lines of equal longitude.
+      * @return {Array<LineString>} The meridians.
+      * @api
       */
     def getMeridians(): js.Array[typings.ol.geomLineStringMod.default] = js.native
     
     /**
+      * @param {LineString} lineString Parallels.
+      * @param {import("../extent.js").Extent} extent Extent.
+      * @param {number} index Index.
+      * @return {Point} Parallel point.
+      * @private
+      */
+    /* private */ var getParallelPoint_ : Any = js.native
+    
+    /**
+      * @param {number} lat Latitude.
+      * @param {number} minLon Minimal longitude.
+      * @param {number} maxLon Maximal longitude.
+      * @param {number} squaredTolerance Squared tolerance.
+      * @return {LineString} The parallel line string.
+      * @param {number} index Index.
+      * @private
+      */
+    /* private */ var getParallel_ : Any = js.native
+    
+    /**
       * Get the list of parallels.  Parallels are lines of equal latitude.
+      * @return {Array<LineString>} The parallels.
+      * @api
       */
     def getParallels(): js.Array[typings.ol.geomLineStringMod.default] = js.native
     
     /**
+      * @type {Array<number>}
+      * @private
+      */
+    /* private */ var intervals_ : Any = js.native
+    
+    /**
+      * @type {function(number):string}
+      * @private
+      */
+    /* private */ var latLabelFormatter_ : Any = js.native
+    
+    /**
+      * Latitude Label position in fractions (0..1) of view extent. 0 means left, 1
+      * means right.
+      * @type {number}
+      * @private
+      */
+    /* private */ var latLabelPosition_ : Any = js.native
+    
+    /**
+      * @type {Style}
+      * @private
+      */
+    /* private */ var latLabelStyleBase_ : Any = js.native
+    
+    /**
+      * @private
+      * @param {import("../Feature").default} feature Feature
+      * @return {Style} style
+      */
+    /* private */ var latLabelStyle_ : Any = js.native
+    
+    /**
+      * @type {Style}
+      * @private
+      */
+    /* private */ var lineStyle_ : Any = js.native
+    
+    /**
+      * @type {?import("../extent.js").Extent}
+      * @private
+      */
+    /* private */ var loadedExtent_ : Any = js.native
+    
+    /**
       * Update geometries in the source based on current view
+      * @param {import("../extent").Extent} extent Extent
+      * @param {number} resolution Resolution
+      * @param {import("../proj/Projection.js").default} projection Projection
       */
     def loaderFunction(extent: Extent, resolution: Double, projection: typings.ol.projProjectionMod.default): Unit = js.native
     
-    @JSName("on")
-    def on_postcompose(`type`: postcompose, listener: js.Function1[/* evt */ typings.ol.renderEventMod.default, Unit]): EventsKey = js.native
-    @JSName("on")
-    def on_precompose(`type`: precompose, listener: js.Function1[/* evt */ typings.ol.renderEventMod.default, Unit]): EventsKey = js.native
-    @JSName("on")
-    def on_rendercomplete(`type`: rendercomplete, listener: js.Function1[/* evt */ typings.ol.renderEventMod.default, Unit]): EventsKey = js.native
+    /**
+      * @type {null|function(number):string}
+      * @private
+      */
+    /* private */ var lonLabelFormatter_ : Any = js.native
     
-    @JSName("once")
-    def once_postcompose(`type`: postcompose, listener: js.Function1[/* evt */ typings.ol.renderEventMod.default, Unit]): EventsKey = js.native
-    @JSName("once")
-    def once_precompose(`type`: precompose, listener: js.Function1[/* evt */ typings.ol.renderEventMod.default, Unit]): EventsKey = js.native
-    @JSName("once")
-    def once_rendercomplete(`type`: rendercomplete, listener: js.Function1[/* evt */ typings.ol.renderEventMod.default, Unit]): EventsKey = js.native
+    /**
+      * Longitude label position in fractions (0..1) of view extent. 0 means
+      * bottom, 1 means top.
+      * @type {number}
+      * @private
+      */
+    /* private */ var lonLabelPosition_ : Any = js.native
+    
+    /**
+      * @type {Style}
+      * @private
+      */
+    /* private */ var lonLabelStyleBase_ : Any = js.native
+    
+    /**
+      * @private
+      * @param {import("../Feature").default} feature Feature
+      * @return {Style} style
+      */
+    /* private */ var lonLabelStyle_ : Any = js.native
+    
+    /**
+      * @type {number}
+      * @private
+      */
+    /* private */ var maxLat_ : Any = js.native
+    
+    /**
+      * @type {number}
+      * @private
+      */
+    /* private */ var maxLines_ : Any = js.native
+    
+    /**
+      * @type {number}
+      * @private
+      */
+    /* private */ var maxLon_ : Any = js.native
+    
+    /**
+      * @type {number}
+      * @private
+      */
+    /* private */ var maxX_ : Any = js.native
+    
+    /**
+      * @type {number}
+      * @private
+      */
+    /* private */ var maxY_ : Any = js.native
+    
+    /**
+      * @type {Array<GraticuleLabelDataType>}
+      * @private
+      */
+    /* private */ var meridiansLabels_ : Any = js.native
+    
+    /**
+      * @type {Array<LineString>}
+      * @private
+      */
+    /* private */ var meridians_ : Any = js.native
+    
+    /**
+      * @type {number}
+      * @private
+      */
+    /* private */ var minLat_ : Any = js.native
+    
+    /**
+      * @type {number}
+      * @private
+      */
+    /* private */ var minLon_ : Any = js.native
+    
+    /**
+      * @type {number}
+      * @private
+      */
+    /* private */ var minX_ : Any = js.native
+    
+    /**
+      * @type {number}
+      * @private
+      */
+    /* private */ var minY_ : Any = js.native
+    
+    /**
+      * @type {Array<GraticuleLabelDataType>}
+      * @private
+      */
+    /* private */ var parallelsLabels_ : Any = js.native
+    
+    /**
+      * @type {Array<LineString>}
+      * @private
+      */
+    /* private */ var parallels_ : Any = js.native
+    
+    /**
+      * @type {import("../coordinate.js").Coordinate}
+      * @private
+      */
+    /* private */ var projectionCenterLonLat_ : Any = js.native
+    
+    /**
+      * @type {import("../proj/Projection.js").default}
+      */
+    var projection_ : typings.ol.projProjectionMod.default = js.native
+    
+    /**
+      * @type {?import("../extent.js").Extent}
+      * @private
+      */
+    /* private */ var renderedExtent_ : Any = js.native
+    
+    /**
+      * @type {?number}
+      * @private
+      */
+    /* private */ var renderedResolution_ : Any = js.native
     
     /**
       * Strategy function for loading features based on the view's extent and
       * resolution.
+      * @param {import("../extent.js").Extent} extent Extent.
+      * @param {number} resolution Resolution.
+      * @return {Array<import("../extent.js").Extent>} Extents.
       */
     def strategyFunction(extent: Extent, resolution: Double): js.Array[Extent] = js.native
     
-    @JSName("un")
-    def un_postcompose(`type`: postcompose, listener: js.Function1[/* evt */ typings.ol.renderEventMod.default, Unit]): Unit = js.native
-    @JSName("un")
-    def un_precompose(`type`: precompose, listener: js.Function1[/* evt */ typings.ol.renderEventMod.default, Unit]): Unit = js.native
-    @JSName("un")
-    def un_rendercomplete(`type`: rendercomplete, listener: js.Function1[/* evt */ typings.ol.renderEventMod.default, Unit]): Unit = js.native
+    /**
+      * @type {Stroke}
+      * @private
+      */
+    /* private */ var strokeStyle_ : Any = js.native
+    
+    /**
+      * @type {number}
+      * @private
+      */
+    /* private */ var targetSize_ : Any = js.native
+    
+    /**
+      * @type {import("../proj.js").TransformFunction|undefined}
+      * @private
+      */
+    /* private */ var toLonLatTransform_ : Any = js.native
+    
+    /**
+      * @type {import("../coordinate.js").Coordinate}
+      * @private
+      */
+    /* private */ var topLeft_ : Any = js.native
+    
+    /**
+      * @type {import("../coordinate.js").Coordinate}
+      * @private
+      */
+    /* private */ var topRight_ : Any = js.native
+    
+    /**
+      * @param {import("../proj/Projection.js").default} projection Projection.
+      * @private
+      */
+    /* private */ var updateProjectionInfo_ : Any = js.native
   }
   
   trait GraticuleLabelDataType extends StObject {
     
+    /**
+      * Geometry.
+      */
     var geom: typings.ol.geomPointMod.default
     
+    /**
+      * Text.
+      */
     var text: String
   }
   object GraticuleLabelDataType {
@@ -88,46 +619,182 @@ object layerGraticuleMod {
   
   trait Options extends StObject {
     
+    /**
+      * A CSS class name to set to the layer element.
+      */
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * The bounding extent for layer rendering.  The layer will not be
+      * rendered outside of this extent.
+      */
     var extent: js.UndefOr[Extent] = js.undefined
     
+    /**
+      * Intervals (in degrees) for the graticule. Example to limit graticules to 30 and 10 degrees intervals:
+      * ```js
+      * [30, 10]
+      * ```
+      */
     var intervals: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var latLabelFormatter: js.UndefOr[js.Function1[/* p0 */ Double, String]] = js.undefined
+    /**
+      * Label formatter for
+      * latitudes. This function is called with the latitude as argument, and
+      * should return a formatted string representing the latitude. By default,
+      * labels are formatted as degrees, minutes, seconds and hemisphere.
+      */
+    var latLabelFormatter: js.UndefOr[js.Function1[/* arg0 */ Double, String]] = js.undefined
     
+    /**
+      * Latitude label position in fractions
+      * (0..1) of view extent. 0 means at the left of the viewport, 1 means at the
+      * right.
+      */
     var latLabelPosition: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Latitude label text style.
+      * If not provided, the following style will be used:
+      * ```js
+      * new Text({
+      * font: '12px Calibri,sans-serif',
+      * textAlign: 'end',
+      * fill: new Fill({
+      * color: 'rgba(0,0,0,1)'
+      * }),
+      * stroke: Stroke({
+      * color: 'rgba(255,255,255,1)',
+      * width: 3
+      * })
+      * });
+      * ```
+      * Note that the default's `textAlign` configuration will not work well for
+      * `latLabelPosition` configurations that position labels close to the left of
+      * the viewport.
+      */
     var latLabelStyle: js.UndefOr[typings.ol.styleTextMod.default] = js.undefined
     
-    var lonLabelFormatter: js.UndefOr[js.Function1[/* p0 */ Double, String]] = js.undefined
+    /**
+      * Label formatter for
+      * longitudes. This function is called with the longitude as argument, and
+      * should return a formatted string representing the longitude. By default,
+      * labels are formatted as degrees, minutes, seconds and hemisphere.
+      */
+    var lonLabelFormatter: js.UndefOr[js.Function1[/* arg0 */ Double, String]] = js.undefined
     
+    /**
+      * Longitude label position in fractions
+      * (0..1) of view extent. 0 means at the bottom of the viewport, 1 means at the
+      * top.
+      */
     var lonLabelPosition: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Longitude label text
+      * style. If not provided, the following style will be used:
+      * ```js
+      * new Text({
+      * font: '12px Calibri,sans-serif',
+      * textBaseline: 'bottom',
+      * fill: new Fill({
+      * color: 'rgba(0,0,0,1)'
+      * }),
+      * stroke: new Stroke({
+      * color: 'rgba(255,255,255,1)',
+      * width: 3
+      * })
+      * });
+      * ```
+      * Note that the default's `textBaseline` configuration will not work well for
+      * `lonLabelPosition` configurations that position labels close to the top of
+      * the viewport.
+      */
     var lonLabelStyle: js.UndefOr[typings.ol.styleTextMod.default] = js.undefined
     
+    /**
+      * The maximum number of meridians and
+      * parallels from the center of the map. The default value of 100 means that at
+      * most 200 meridians and 200 parallels will be displayed. The default value is
+      * appropriate for conformal projections like Spherical Mercator. If you
+      * increase the value, more lines will be drawn and the drawing performance will
+      * decrease.
+      */
     var maxLines: js.UndefOr[Double] = js.undefined
     
+    /**
+      * The maximum resolution (exclusive) below which this layer will
+      * be visible.
+      */
     var maxResolution: js.UndefOr[Double] = js.undefined
     
+    /**
+      * The maximum view zoom level (inclusive) at which this layer will
+      * be visible.
+      */
     var maxZoom: js.UndefOr[Double] = js.undefined
     
+    /**
+      * The minimum resolution (inclusive) at which this layer will be
+      * visible.
+      */
     var minResolution: js.UndefOr[Double] = js.undefined
     
+    /**
+      * The minimum view zoom level (exclusive) above which this layer will be
+      * visible.
+      */
     var minZoom: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Opacity (0, 1).
+      */
     var opacity: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Arbitrary observable properties. Can be accessed with `#get()` and `#set()`.
+      */
+    var properties: js.UndefOr[StringDictionary[Any]] = js.undefined
+    
+    /**
+      * Render a label with the respective
+      * latitude/longitude for each graticule line.
+      */
     var showLabels: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * The
+      * stroke style to use for drawing the graticule. If not provided, the following stroke will be used:
+      * ```js
+      * new Stroke({
+      * color: 'rgba(0, 0, 0, 0.2)' // a not fully opaque black
+      * });
+      * ```
+      */
     var strokeStyle: js.UndefOr[typings.ol.styleStrokeMod.default] = js.undefined
     
+    /**
+      * The target size of the graticule cells,
+      * in pixels.
+      */
     var targetSize: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Visibility.
+      */
     var visible: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Whether to repeat the graticule horizontally.
+      */
     var wrapX: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * The z-index for layer rendering.  At rendering time, the layers
+      * will be ordered, first by Z-index and then by position. When `undefined`, a `zIndex` of 0 is assumed
+      * for layers that are added to the map's `layers` collection, or `Infinity` when the layer's `setMap()`
+      * method was used.
+      */
     var zIndex: js.UndefOr[Double] = js.undefined
   }
   object Options {
@@ -148,13 +815,15 @@ object layerGraticuleMod {
       
       inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
       
+      inline def setExtentVarargs(value: Double*): Self = StObject.set(x, "extent", js.Array(value*))
+      
       inline def setIntervals(value: js.Array[Double]): Self = StObject.set(x, "intervals", value.asInstanceOf[js.Any])
       
       inline def setIntervalsUndefined: Self = StObject.set(x, "intervals", js.undefined)
       
       inline def setIntervalsVarargs(value: Double*): Self = StObject.set(x, "intervals", js.Array(value*))
       
-      inline def setLatLabelFormatter(value: /* p0 */ Double => String): Self = StObject.set(x, "latLabelFormatter", js.Any.fromFunction1(value))
+      inline def setLatLabelFormatter(value: /* arg0 */ Double => String): Self = StObject.set(x, "latLabelFormatter", js.Any.fromFunction1(value))
       
       inline def setLatLabelFormatterUndefined: Self = StObject.set(x, "latLabelFormatter", js.undefined)
       
@@ -166,7 +835,7 @@ object layerGraticuleMod {
       
       inline def setLatLabelStyleUndefined: Self = StObject.set(x, "latLabelStyle", js.undefined)
       
-      inline def setLonLabelFormatter(value: /* p0 */ Double => String): Self = StObject.set(x, "lonLabelFormatter", js.Any.fromFunction1(value))
+      inline def setLonLabelFormatter(value: /* arg0 */ Double => String): Self = StObject.set(x, "lonLabelFormatter", js.Any.fromFunction1(value))
       
       inline def setLonLabelFormatterUndefined: Self = StObject.set(x, "lonLabelFormatter", js.undefined)
       
@@ -201,6 +870,10 @@ object layerGraticuleMod {
       inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
       inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      
+      inline def setProperties(value: StringDictionary[Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
       inline def setShowLabels(value: Boolean): Self = StObject.set(x, "showLabels", value.asInstanceOf[js.Any])
       

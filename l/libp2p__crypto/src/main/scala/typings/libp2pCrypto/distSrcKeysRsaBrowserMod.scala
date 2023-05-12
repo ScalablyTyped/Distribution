@@ -1,6 +1,6 @@
 package typings.libp2pCrypto
 
-import typings.libp2pCrypto.anon.PublicKey
+import typings.libp2pCrypto.distSrcKeysInterfaceMod.JWKKeyPair
 import typings.std.JsonWebKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +16,7 @@ object distSrcKeysRsaBrowserMod {
   
   inline def encrypt(key: JsonWebKey, msg: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(key.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def generateKey(bits: Double): js.Promise[PublicKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")(bits.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PublicKey]]
+  inline def generateKey(bits: Double): js.Promise[JWKKeyPair] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")(bits.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JWKKeyPair]]
   
   inline def getRandomValues(length: Double): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomValues")(length.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
@@ -24,7 +24,7 @@ object distSrcKeysRsaBrowserMod {
   
   inline def hashAndVerify(key: JsonWebKey, sig: js.typedarray.Uint8Array, msg: js.typedarray.Uint8Array): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("hashAndVerify")(key.asInstanceOf[js.Any], sig.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
-  inline def unmarshalPrivateKey(key: JsonWebKey): js.Promise[PublicKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("unmarshalPrivateKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PublicKey]]
+  inline def unmarshalPrivateKey(key: JsonWebKey): js.Promise[JWKKeyPair] = ^.asInstanceOf[js.Dynamic].applyDynamic("unmarshalPrivateKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JWKKeyPair]]
   
   object utils {
     

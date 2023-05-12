@@ -12,7 +12,7 @@ trait CSVInput extends StObject {
   var AllowQuotedRecordDelimiter: js.UndefOr[typings.awsSdk.clientsS3Mod.AllowQuotedRecordDelimiter] = js.undefined
   
   /**
-    * A single character used to indicate that a row should be ignored when the character is present at the start of that row. You can specify any character to indicate a comment line.
+    * A single character used to indicate that a row should be ignored when the character is present at the start of that row. You can specify any character to indicate a comment line. The default character is #. Default: # 
     */
   var Comments: js.UndefOr[typings.awsSdk.clientsS3Mod.Comments] = js.undefined
   

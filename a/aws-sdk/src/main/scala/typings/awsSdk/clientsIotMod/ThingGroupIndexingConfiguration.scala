@@ -12,7 +12,7 @@ trait ThingGroupIndexingConfiguration extends StObject {
   var customFields: js.UndefOr[Fields] = js.undefined
   
   /**
-    * Contains fields that are indexed and whose types are already known by the Fleet Indexing service.
+    * Contains fields that are indexed and whose types are already known by the Fleet Indexing service. This is an optional field. For more information, see Managed fields in the Amazon Web Services IoT Core Developer Guide.
     */
   var managedFields: js.UndefOr[Fields] = js.undefined
   

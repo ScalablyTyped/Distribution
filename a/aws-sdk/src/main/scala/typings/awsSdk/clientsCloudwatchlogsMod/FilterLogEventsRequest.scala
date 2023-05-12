@@ -17,7 +17,7 @@ trait FilterLogEventsRequest extends StObject {
   var filterPattern: js.UndefOr[FilterPattern] = js.undefined
   
   /**
-    * If the value is true, the operation makes a best effort to provide responses that contain events from multiple log streams within the log group, interleaved in a single response. If the value is false, all the matched log events in the first log stream are searched first, then those in the next log stream, and so on. The default is false.  Important: Starting on June 17, 2019, this parameter is ignored and the value is assumed to be true. The response from this operation always interleaves events from multiple log streams within a log group.
+    * If the value is true, the operation attempts to provide responses that contain events from multiple log streams within the log group, interleaved in a single response. If the value is false, all the matched log events in the first log stream are searched first, then those in the next log stream, and so on.  Important As of June 17, 2019, this parameter is ignored and the value is assumed to be true. The response from this operation always interleaves events from multiple log streams within a log group.
     */
   var interleaved: js.UndefOr[Interleaved] = js.undefined
   
@@ -27,9 +27,14 @@ trait FilterLogEventsRequest extends StObject {
   var limit: js.UndefOr[EventsLimit] = js.undefined
   
   /**
-    * The name of the log group to search.
+    * Specify either the name or ARN of the log group to view log events from. If the log group is in a source account and you are using a monitoring account, you must use the log group ARN.   You must include either logGroupIdentifier or logGroupName, but not both.  
     */
-  var logGroupName: LogGroupName
+  var logGroupIdentifier: js.UndefOr[LogGroupIdentifier] = js.undefined
+  
+  /**
+    * The name of the log group to search.   You must include either logGroupIdentifier or logGroupName, but not both.  
+    */
+  var logGroupName: js.UndefOr[LogGroupName] = js.undefined
   
   /**
     * Filters the results to include only events from log streams that have names starting with this prefix. If you specify a value for both logStreamNamePrefix and logStreamNames, but the value for logStreamNamePrefix does not match any log stream names specified in logStreamNames, the action returns an InvalidParameterException error.
@@ -50,11 +55,16 @@ trait FilterLogEventsRequest extends StObject {
     * The start of the time range, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. Events with a timestamp before this time are not returned.
     */
   var startTime: js.UndefOr[Timestamp] = js.undefined
+  
+  /**
+    * Specify true to display the log event fields with all sensitive data unmasked and visible. The default is false. To use this operation with this parameter, you must be signed into an account with the logs:Unmask permission.
+    */
+  var unmask: js.UndefOr[Unmask] = js.undefined
 }
 object FilterLogEventsRequest {
   
-  inline def apply(logGroupName: LogGroupName): FilterLogEventsRequest = {
-    val __obj = js.Dynamic.literal(logGroupName = logGroupName.asInstanceOf[js.Any])
+  inline def apply(): FilterLogEventsRequest = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilterLogEventsRequest]
   }
   
@@ -77,7 +87,13 @@ object FilterLogEventsRequest {
     
     inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
+    inline def setLogGroupIdentifier(value: LogGroupIdentifier): Self = StObject.set(x, "logGroupIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setLogGroupIdentifierUndefined: Self = StObject.set(x, "logGroupIdentifier", js.undefined)
+    
     inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
+    
+    inline def setLogGroupNameUndefined: Self = StObject.set(x, "logGroupName", js.undefined)
     
     inline def setLogStreamNamePrefix(value: LogStreamName): Self = StObject.set(x, "logStreamNamePrefix", value.asInstanceOf[js.Any])
     
@@ -96,5 +112,9 @@ object FilterLogEventsRequest {
     inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    
+    inline def setUnmask(value: Unmask): Self = StObject.set(x, "unmask", value.asInstanceOf[js.Any])
+    
+    inline def setUnmaskUndefined: Self = StObject.set(x, "unmask", js.undefined)
   }
 }

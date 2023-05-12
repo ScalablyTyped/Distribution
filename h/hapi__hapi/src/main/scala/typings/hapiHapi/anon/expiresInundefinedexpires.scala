@@ -3,7 +3,7 @@ package typings.hapiHapi.anon
 import typings.hapiHapi.hapiHapiStrings.`private`
 import typings.hapiHapi.hapiHapiStrings.default
 import typings.hapiHapi.hapiHapiStrings.public
-import typings.hapiHapi.mod.RouteOptionsCache
+import typings.hapiHapi.libTypesRouteMod.RouteOptionsCache
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

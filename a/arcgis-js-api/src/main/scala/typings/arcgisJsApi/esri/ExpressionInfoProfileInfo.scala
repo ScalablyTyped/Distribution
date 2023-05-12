@@ -6,9 +6,9 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`feature-reduction`
 import typings.arcgisJsApi.arcgisJsApiStrings.`feature-z`
 import typings.arcgisJsApi.arcgisJsApiStrings.`field-calculation`
 import typings.arcgisJsApi.arcgisJsApiStrings.`form-calculation`
+import typings.arcgisJsApi.arcgisJsApiStrings.`form-constraint`
 import typings.arcgisJsApi.arcgisJsApiStrings.`popup-element`
 import typings.arcgisJsApi.arcgisJsApiStrings.boolean
-import typings.arcgisJsApi.arcgisJsApiStrings.constraint
 import typings.arcgisJsApi.arcgisJsApiStrings.date
 import typings.arcgisJsApi.arcgisJsApiStrings.dictionary
 import typings.arcgisJsApi.arcgisJsApiStrings.labeling
@@ -35,7 +35,7 @@ trait ExpressionInfoProfileInfo extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-arcadeUtils.html#ExpressionInfo)
     */
-  var name: constraint | `feature-z` | `field-calculation` | `form-calculation` | labeling | popup | `popup-element` | `feature-reduction-popup` | `feature-reduction-popup-element` | visualization
+  var name: `form-constraint` | `feature-z` | `field-calculation` | `form-calculation` | labeling | popup | `popup-element` | `feature-reduction-popup` | `feature-reduction-popup-element` | visualization
   
   /**
     * The return type of the expression.
@@ -55,7 +55,7 @@ object ExpressionInfoProfileInfo {
   
   inline def apply(
     context: ProfileContext,
-    name: constraint | `feature-z` | `field-calculation` | `form-calculation` | labeling | popup | `popup-element` | `feature-reduction-popup` | `feature-reduction-popup-element` | visualization,
+    name: `form-constraint` | `feature-z` | `field-calculation` | `form-calculation` | labeling | popup | `popup-element` | `feature-reduction-popup` | `feature-reduction-popup-element` | visualization,
     source: layer | `feature-reduction`
   ): ExpressionInfoProfileInfo = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
@@ -68,7 +68,7 @@ object ExpressionInfoProfileInfo {
     inline def setContext(value: ProfileContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     inline def setName(
-      value: constraint | `feature-z` | `field-calculation` | `form-calculation` | labeling | popup | `popup-element` | `feature-reduction-popup` | `feature-reduction-popup-element` | visualization
+      value: `form-constraint` | `feature-z` | `field-calculation` | `form-calculation` | labeling | popup | `popup-element` | `feature-reduction-popup` | `feature-reduction-popup-element` | visualization
     ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setReturnType(value: boolean | date | number | string_ | dictionary): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])

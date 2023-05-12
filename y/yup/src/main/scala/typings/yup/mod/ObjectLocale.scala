@@ -1,13 +1,12 @@
 package typings.yup.mod
 
-import typings.yup.anon.PartialTestMessageParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ObjectLocale extends StObject {
   
-  var noUnknown: js.UndefOr[TestOptionsMessage[js.Object, js.Any]] = js.undefined
+  var noUnknown: js.UndefOr[Message[Any]] = js.undefined
 }
 object ObjectLocale {
   
@@ -16,11 +15,12 @@ object ObjectLocale {
     __obj.asInstanceOf[ObjectLocale]
   }
   
-  extension [Self <: ObjectLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectLocale] (val x: Self) extends AnyVal {
     
-    inline def setNoUnknown(value: TestOptionsMessage[js.Object, js.Any]): Self = StObject.set(x, "noUnknown", value.asInstanceOf[js.Any])
+    inline def setNoUnknown(value: Message[Any]): Self = StObject.set(x, "noUnknown", value.asInstanceOf[js.Any])
     
-    inline def setNoUnknownFunction1(value: /* params */ js.Object & PartialTestMessageParams => js.Any): Self = StObject.set(x, "noUnknown", js.Any.fromFunction1(value))
+    inline def setNoUnknownFunction1(value: /* params */ Any & MessageParams => Any): Self = StObject.set(x, "noUnknown", js.Any.fromFunction1(value))
     
     inline def setNoUnknownUndefined: Self = StObject.set(x, "noUnknown", js.undefined)
   }

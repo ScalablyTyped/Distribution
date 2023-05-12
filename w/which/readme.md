@@ -1,7 +1,7 @@
 
 # Scala.js typings for which
 
-Typings are for version 2.0
+Typings are for version 3.0
 
 ## Library description:
 Like which(1) unix command. Find the first instance of an executable in the PATH.

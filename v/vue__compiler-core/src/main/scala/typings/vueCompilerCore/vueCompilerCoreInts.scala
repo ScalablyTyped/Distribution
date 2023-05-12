@@ -336,6 +336,18 @@ object vueCompilerCoreInts {
   inline def `51`: `51` = 51.asInstanceOf[`51`]
   
   @js.native
+  sealed trait `52`
+    extends StObject
+       with ErrorCodes
+  inline def `52`: `52` = 52.asInstanceOf[`52`]
+  
+  @js.native
+  sealed trait `53`
+    extends StObject
+       with ErrorCodes
+  inline def `53`: `53` = 53.asInstanceOf[`53`]
+  
+  @js.native
   sealed trait `6`
     extends StObject
        with ErrorCodes

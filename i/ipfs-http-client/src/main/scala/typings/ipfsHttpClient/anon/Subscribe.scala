@@ -29,5 +29,7 @@ trait Subscribe extends StObject {
   ): js.Promise[Unit] = js.native
   
   def unsubscribe(topic: String): js.Promise[Unit] = js.native
+  def unsubscribe(topic: String, handler: Unit, options: AbortOptions & HTTPClientExtraOptions): js.Promise[Unit] = js.native
   def unsubscribe(topic: String, handler: EventHandler[Message]): js.Promise[Unit] = js.native
+  def unsubscribe(topic: String, handler: EventHandler[Message], options: AbortOptions & HTTPClientExtraOptions): js.Promise[Unit] = js.native
 }

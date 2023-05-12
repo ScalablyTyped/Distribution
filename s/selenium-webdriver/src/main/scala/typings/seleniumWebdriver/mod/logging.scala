@@ -24,7 +24,6 @@ object logging {
       *     milliseconds since 0:00:00, January 1, 1970 UTC. If omitted, the
       *     current time will be used.
       * @param {string=} opt_type The log type, if known.
-      * @constructor
       */
     def this(level: typings.seleniumWebdriver.libLoggingMod.Level, message: String) = this()
     def this(level: String, message: String, opt_timestamp: Double) = this()

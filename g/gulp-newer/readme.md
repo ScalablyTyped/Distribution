@@ -1,6 +1,7 @@
 
 # Scala.js typings for gulp-newer
 
+Typings are for version 1.4
 
 ## Library description:
 Only pass through newer source files

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ampproject__remapping
 
-Typings are for version 2.2.0
+Typings are for version 2.2.1
 
 ## Library description:
 Remap sequential sourcemaps through transformations to point at the original source code

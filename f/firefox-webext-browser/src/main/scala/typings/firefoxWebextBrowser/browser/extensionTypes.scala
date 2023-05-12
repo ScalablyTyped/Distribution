@@ -2,6 +2,8 @@ package typings.firefoxWebextBrowser.browser
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.firefoxWebextBrowser.browser.manifest.ExtensionURL
+import typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.author_
+import typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.user_
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,15 +18,15 @@ object extensionTypes {
   
   /** The origin of the CSS to inject, this affects the cascading order (priority) of the stylesheet. */
   /* Rewritten from type alias, can be one of: 
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.user
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.author
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.user_
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.author_
   */
   trait CSSOrigin extends StObject
   object CSSOrigin {
     
-    inline def author: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.author = "author".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.author]
+    inline def author: author_ = "author".asInstanceOf[author_]
     
-    inline def user: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.user = "user".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.user]
+    inline def user: user_ = "user".asInstanceOf[user_]
   }
   
   type Date = String | Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify globalThis.Date */ Any)

@@ -1,30 +1,66 @@
 package typings.primereact.paginatorPaginatorMod
 
+import typings.primereact.primereactStrings.self
 import typings.react.mod.global.JSX.Element
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Custom rows per page dropdown options
+  */
 trait PaginatorRowsPerPageDropdownOptions extends StObject {
   
-  var appendTo: PaginatorAppendToType
+  /**
+    * DOM element instance where the overlay panel should be mounted. Valid values are any DOM Element and "self". The "self" value is used to render a component where it is located.
+    */
+  var appendTo: js.UndefOr[self | HTMLElement | Null] = js.undefined
   
+  /**
+    * The current page number.
+    */
   var currentPage: Double
   
+  /**
+    * Whether the dropdown is disabled.
+    */
   var disabled: Boolean
   
+  /**
+    * JSX element to be used as the rows per page dropdown.
+    */
   var element: Element
   
-  def onChange(e: PaginatorChangeParams): Unit
+  /**
+    * Paginator options change callback
+    * @param {PaginatorChangeEvent} event - Custom change event.
+    */
+  def onChange(event: PaginatorChangeEvent): Unit
   
+  /**
+    * The options available in the rows per page dropdown.
+    */
   var options: js.Array[Any]
   
+  /**
+    * The props of Paginator component.
+    */
   var props: PaginatorProps
   
+  /**
+    * The total number of pages.
+    */
   var totalPages: Double
   
+  /**
+    * The total number of records.
+    */
   var totalRecords: Double
   
+  /**
+    * New value of the element.
+    */
   var value: Any
 }
 object PaginatorRowsPerPageDropdownOptions {
@@ -33,7 +69,7 @@ object PaginatorRowsPerPageDropdownOptions {
     currentPage: Double,
     disabled: Boolean,
     element: Element,
-    onChange: PaginatorChangeParams => Unit,
+    onChange: PaginatorChangeEvent => Unit,
     options: js.Array[Any],
     props: PaginatorProps,
     totalPages: Double,
@@ -47,7 +83,7 @@ object PaginatorRowsPerPageDropdownOptions {
   @scala.inline
   implicit open class MutableBuilder[Self <: PaginatorRowsPerPageDropdownOptions] (val x: Self) extends AnyVal {
     
-    inline def setAppendTo(value: PaginatorAppendToType): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+    inline def setAppendTo(value: self | HTMLElement): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
     
     inline def setAppendToNull: Self = StObject.set(x, "appendTo", null)
     
@@ -59,7 +95,7 @@ object PaginatorRowsPerPageDropdownOptions {
     
     inline def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    inline def setOnChange(value: PaginatorChangeParams => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: PaginatorChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     inline def setOptions(value: js.Array[Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

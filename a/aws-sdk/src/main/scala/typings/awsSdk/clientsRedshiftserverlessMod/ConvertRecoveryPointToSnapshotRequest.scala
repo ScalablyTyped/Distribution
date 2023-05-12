@@ -20,6 +20,11 @@ trait ConvertRecoveryPointToSnapshotRequest extends StObject {
     * The name of the snapshot.
     */
   var snapshotName: String
+  
+  /**
+    * An array of Tag objects to associate with the created snapshot.
+    */
+  var tags: js.UndefOr[TagList] = js.undefined
 }
 object ConvertRecoveryPointToSnapshotRequest {
   
@@ -38,5 +43,11 @@ object ConvertRecoveryPointToSnapshotRequest {
     inline def setRetentionPeriodUndefined: Self = StObject.set(x, "retentionPeriod", js.undefined)
     
     inline def setSnapshotName(value: String): Self = StObject.set(x, "snapshotName", value.asInstanceOf[js.Any])
+    
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

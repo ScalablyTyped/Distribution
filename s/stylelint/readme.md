@@ -1,7 +1,7 @@
 
 # Scala.js typings for stylelint
 
-Typings are for version 14.15.0
+Typings are for version 15.6.1
 
 ## Library description:
 A mighty, modern CSS linter.

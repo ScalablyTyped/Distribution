@@ -90,8 +90,8 @@ trait TypeofLong
   def fromBytesLE(bytes: js.Array[Double]): typings.bson.mod.Long = js.native
   def fromBytesLE(bytes: js.Array[Double], unsigned: Boolean): typings.bson.mod.Long = js.native
   
-  def fromExtendedJSON(doc: NumberLong): Double | typings.bson.mod.Long = js.native
-  def fromExtendedJSON(doc: NumberLong, options: EJSONOptions): Double | typings.bson.mod.Long = js.native
+  def fromExtendedJSON(doc: NumberLong): Double | typings.bson.mod.Long | js.BigInt = js.native
+  def fromExtendedJSON(doc: NumberLong, options: EJSONOptions): Double | typings.bson.mod.Long | js.BigInt = js.native
   
   /**
     * Returns a Long representing the given 32 bit integer value.

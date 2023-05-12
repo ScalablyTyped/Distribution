@@ -18,6 +18,8 @@ trait ScriptSettings extends StObject {
   
   var compat_metadata: Boolean
   
+  var compat_powerful_this: Boolean | Null
+  
   var compat_prototypes: Boolean
   
   var compat_wrappedjsobject: Boolean
@@ -29,6 +31,12 @@ trait ScriptSettings extends StObject {
   var `override`: ScriptMetadataOverrides
   
   var run_at: String
+  
+  var sandbox: String | Null
+  
+  var tab_types: String | Null
+  
+  var unwrap: Boolean | Null
 }
 object ScriptSettings {
   
@@ -42,7 +50,7 @@ object ScriptSettings {
     `override`: ScriptMetadataOverrides,
     run_at: String
   ): ScriptSettings = {
-    val __obj = js.Dynamic.literal(check_for_updates = check_for_updates.asInstanceOf[js.Any], compat_foreach = compat_foreach.asInstanceOf[js.Any], compat_metadata = compat_metadata.asInstanceOf[js.Any], compat_prototypes = compat_prototypes.asInstanceOf[js.Any], compat_wrappedjsobject = compat_wrappedjsobject.asInstanceOf[js.Any], compatopts_for_requires = compatopts_for_requires.asInstanceOf[js.Any], run_at = run_at.asInstanceOf[js.Any], comment = null, noframes = null)
+    val __obj = js.Dynamic.literal(check_for_updates = check_for_updates.asInstanceOf[js.Any], compat_foreach = compat_foreach.asInstanceOf[js.Any], compat_metadata = compat_metadata.asInstanceOf[js.Any], compat_prototypes = compat_prototypes.asInstanceOf[js.Any], compat_wrappedjsobject = compat_wrappedjsobject.asInstanceOf[js.Any], compatopts_for_requires = compatopts_for_requires.asInstanceOf[js.Any], run_at = run_at.asInstanceOf[js.Any], comment = null, compat_powerful_this = null, noframes = null, sandbox = null, tab_types = null, unwrap = null)
     __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScriptSettings]
   }
@@ -60,6 +68,10 @@ object ScriptSettings {
     
     inline def setCompat_metadata(value: Boolean): Self = StObject.set(x, "compat_metadata", value.asInstanceOf[js.Any])
     
+    inline def setCompat_powerful_this(value: Boolean): Self = StObject.set(x, "compat_powerful_this", value.asInstanceOf[js.Any])
+    
+    inline def setCompat_powerful_thisNull: Self = StObject.set(x, "compat_powerful_this", null)
+    
     inline def setCompat_prototypes(value: Boolean): Self = StObject.set(x, "compat_prototypes", value.asInstanceOf[js.Any])
     
     inline def setCompat_wrappedjsobject(value: Boolean): Self = StObject.set(x, "compat_wrappedjsobject", value.asInstanceOf[js.Any])
@@ -73,5 +85,17 @@ object ScriptSettings {
     inline def setOverride(value: ScriptMetadataOverrides): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
     
     inline def setRun_at(value: String): Self = StObject.set(x, "run_at", value.asInstanceOf[js.Any])
+    
+    inline def setSandbox(value: String): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
+    
+    inline def setSandboxNull: Self = StObject.set(x, "sandbox", null)
+    
+    inline def setTab_types(value: String): Self = StObject.set(x, "tab_types", value.asInstanceOf[js.Any])
+    
+    inline def setTab_typesNull: Self = StObject.set(x, "tab_types", null)
+    
+    inline def setUnwrap(value: Boolean): Self = StObject.set(x, "unwrap", value.asInstanceOf[js.Any])
+    
+    inline def setUnwrapNull: Self = StObject.set(x, "unwrap", null)
   }
 }

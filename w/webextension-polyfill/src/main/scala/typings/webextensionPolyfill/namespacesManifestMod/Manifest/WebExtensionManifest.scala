@@ -57,6 +57,11 @@ trait WebExtensionManifest
   /**
     * Optional.
     */
+  var declarative_net_request: js.UndefOr[WebExtensionManifestDeclarativeNetRequestType] = js.undefined
+  
+  /**
+    * Optional.
+    */
   var default_locale: js.UndefOr[String] = js.undefined
   
   /**
@@ -205,6 +210,10 @@ object WebExtensionManifest {
     inline def setContent_security_policy(value: String | WebExtensionManifestContentSecurityPolicyC2Type): Self = StObject.set(x, "content_security_policy", value.asInstanceOf[js.Any])
     
     inline def setContent_security_policyUndefined: Self = StObject.set(x, "content_security_policy", js.undefined)
+    
+    inline def setDeclarative_net_request(value: WebExtensionManifestDeclarativeNetRequestType): Self = StObject.set(x, "declarative_net_request", value.asInstanceOf[js.Any])
+    
+    inline def setDeclarative_net_requestUndefined: Self = StObject.set(x, "declarative_net_request", js.undefined)
     
     inline def setDefault_locale(value: String): Self = StObject.set(x, "default_locale", value.asInstanceOf[js.Any])
     

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeofdisplaySource extends StObject {
   
   /**
-    * @enum
     * @description
     *
     * **'PBC'**
@@ -20,7 +19,6 @@ trait TypeofdisplaySource extends StObject {
   val AuthenticationMethod: PBC
   
   /**
-    * @enum
     * @description
     * **'connection_error'**
     * The connection with sink cannot be established or has dropped unexpectedly.
@@ -43,7 +41,6 @@ trait TypeofdisplaySource extends StObject {
   val ErrorType: CAPABILITIESNEGOTIATIONERROR
   
   /**
-    * @enum
     * @description
     * **'connected'**
     * Connected using this Display Source (i.e., there is an active session)

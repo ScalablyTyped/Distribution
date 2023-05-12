@@ -32,7 +32,7 @@ trait AwsSecurityFinding extends StObject {
   var Confidence: js.UndefOr[Integer] = js.undefined
   
   /**
-    * Indicates when the security-findings provider created the potential security issue that a finding captured. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
+    * Indicates when the security findings provider created the potential security issue that a finding captured. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces, and date and time should be separated by T. For example, 2020-03-22T13:22:13.933Z.
     */
   var CreatedAt: NonEmptyString
   
@@ -52,12 +52,12 @@ trait AwsSecurityFinding extends StObject {
   var FindingProviderFields: js.UndefOr[typings.awsSdk.clientsSecurityhubMod.FindingProviderFields] = js.undefined
   
   /**
-    * Indicates when the security-findings provider first observed the potential security issue that a finding captured. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
+    * Indicates when the security findings provider first observed the potential security issue that a finding captured. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces, and date and time should be separated by T. For example, 2020-03-22T13:22:13.933Z.
     */
   var FirstObservedAt: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The identifier for the solution-specific component (a discrete unit of logic) that generated a finding. In various security-findings providers' solutions, this generator can be called a rule, a check, a detector, a plugin, etc. 
+    * The identifier for the solution-specific component (a discrete unit of logic) that generated a finding. In various security findings providers' solutions, this generator can be called a rule, a check, a detector, a plugin, etc. 
     */
   var GeneratorId: NonEmptyString
   
@@ -67,7 +67,7 @@ trait AwsSecurityFinding extends StObject {
   var Id: NonEmptyString
   
   /**
-    * Indicates when the security-findings provider most recently observed the potential security issue that a finding captured. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
+    * Indicates when the security findings provider most recently observed the potential security issue that a finding captured. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces, and date and time should be separated by T. For example, 2020-03-22T13:22:13.933Z.
     */
   var LastObservedAt: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -107,7 +107,7 @@ trait AwsSecurityFinding extends StObject {
   var ProductArn: NonEmptyString
   
   /**
-    * A data type where security-findings providers can include additional solution-specific details that aren't part of the defined AwsSecurityFinding format. Can contain up to 50 key-value pairs. For each key-value pair, the key can contain up to 128 characters, and the value can contain up to 2048 characters.
+    * A data type where security findings providers can include additional solution-specific details that aren't part of the defined AwsSecurityFinding format. Can contain up to 50 key-value pairs. For each key-value pair, the key can contain up to 128 characters, and the value can contain up to 2048 characters.
     */
   var ProductFields: js.UndefOr[FieldMap] = js.undefined
   
@@ -157,7 +157,7 @@ trait AwsSecurityFinding extends StObject {
   var Severity: js.UndefOr[typings.awsSdk.clientsSecurityhubMod.Severity] = js.undefined
   
   /**
-    * A URL that links to a page about the current finding in the security-findings provider's solution.
+    * A URL that links to a page about the current finding in the security findings provider's solution.
     */
   var SourceUrl: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -182,7 +182,7 @@ trait AwsSecurityFinding extends StObject {
   var Types: js.UndefOr[TypeList] = js.undefined
   
   /**
-    * Indicates when the security-findings provider last updated the finding record. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
+    * Indicates when the security findings provider last updated the finding record. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces, and date and time should be separated by T. For example, 2020-03-22T13:22:13.933Z.
     */
   var UpdatedAt: NonEmptyString
   

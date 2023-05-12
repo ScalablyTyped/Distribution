@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @floating-ui/core.@floating-ui/core/src/types.Coords & @floating-ui/core.@floating-ui/core/src/types.Dimensions */
-trait Rect extends StObject {
+trait Rect
+  extends StObject
+     with RootBoundary {
   
   var height: Double
   

@@ -6,36 +6,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Yellow[BaseToken] extends StObject {
   
-  var blue: BolderPaintToken[BaseToken]
+  var blue: BolderSubtle[BaseToken]
   
-  var gray: BolderPaintToken[BaseToken]
+  var gray: BolderSubtle[BaseToken]
   
-  var green: BolderPaintToken[BaseToken]
+  var green: BolderSubtle[BaseToken]
   
-  var magenta: BolderPaintToken[BaseToken]
+  var magenta: BolderSubtle[BaseToken]
   
-  var orange: BolderPaintToken[BaseToken]
+  var orange: BolderSubtle[BaseToken]
   
-  var purple: BolderPaintToken[BaseToken]
+  var purple: BolderSubtle[BaseToken]
   
-  var red: BolderPaintToken[BaseToken]
+  var red: BolderSubtle[BaseToken]
   
-  var teal: BolderPaintToken[BaseToken]
+  var teal: BolderSubtle[BaseToken]
   
-  var yellow: BolderPaintToken[BaseToken]
+  var yellow: BolderSubtle[BaseToken]
 }
 object Yellow {
   
   inline def apply[BaseToken](
-    blue: BolderPaintToken[BaseToken],
-    gray: BolderPaintToken[BaseToken],
-    green: BolderPaintToken[BaseToken],
-    magenta: BolderPaintToken[BaseToken],
-    orange: BolderPaintToken[BaseToken],
-    purple: BolderPaintToken[BaseToken],
-    red: BolderPaintToken[BaseToken],
-    teal: BolderPaintToken[BaseToken],
-    yellow: BolderPaintToken[BaseToken]
+    blue: BolderSubtle[BaseToken],
+    gray: BolderSubtle[BaseToken],
+    green: BolderSubtle[BaseToken],
+    magenta: BolderSubtle[BaseToken],
+    orange: BolderSubtle[BaseToken],
+    purple: BolderSubtle[BaseToken],
+    red: BolderSubtle[BaseToken],
+    teal: BolderSubtle[BaseToken],
+    yellow: BolderSubtle[BaseToken]
   ): Yellow[BaseToken] = {
     val __obj = js.Dynamic.literal(blue = blue.asInstanceOf[js.Any], gray = gray.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], magenta = magenta.asInstanceOf[js.Any], orange = orange.asInstanceOf[js.Any], purple = purple.asInstanceOf[js.Any], red = red.asInstanceOf[js.Any], teal = teal.asInstanceOf[js.Any], yellow = yellow.asInstanceOf[js.Any])
     __obj.asInstanceOf[Yellow[BaseToken]]
@@ -44,22 +44,22 @@ object Yellow {
   @scala.inline
   implicit open class MutableBuilder[Self <: Yellow[?], BaseToken] (val x: Self & Yellow[BaseToken]) extends AnyVal {
     
-    inline def setBlue(value: BolderPaintToken[BaseToken]): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
+    inline def setBlue(value: BolderSubtle[BaseToken]): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
     
-    inline def setGray(value: BolderPaintToken[BaseToken]): Self = StObject.set(x, "gray", value.asInstanceOf[js.Any])
+    inline def setGray(value: BolderSubtle[BaseToken]): Self = StObject.set(x, "gray", value.asInstanceOf[js.Any])
     
-    inline def setGreen(value: BolderPaintToken[BaseToken]): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
+    inline def setGreen(value: BolderSubtle[BaseToken]): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
     
-    inline def setMagenta(value: BolderPaintToken[BaseToken]): Self = StObject.set(x, "magenta", value.asInstanceOf[js.Any])
+    inline def setMagenta(value: BolderSubtle[BaseToken]): Self = StObject.set(x, "magenta", value.asInstanceOf[js.Any])
     
-    inline def setOrange(value: BolderPaintToken[BaseToken]): Self = StObject.set(x, "orange", value.asInstanceOf[js.Any])
+    inline def setOrange(value: BolderSubtle[BaseToken]): Self = StObject.set(x, "orange", value.asInstanceOf[js.Any])
     
-    inline def setPurple(value: BolderPaintToken[BaseToken]): Self = StObject.set(x, "purple", value.asInstanceOf[js.Any])
+    inline def setPurple(value: BolderSubtle[BaseToken]): Self = StObject.set(x, "purple", value.asInstanceOf[js.Any])
     
-    inline def setRed(value: BolderPaintToken[BaseToken]): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
+    inline def setRed(value: BolderSubtle[BaseToken]): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
     
-    inline def setTeal(value: BolderPaintToken[BaseToken]): Self = StObject.set(x, "teal", value.asInstanceOf[js.Any])
+    inline def setTeal(value: BolderSubtle[BaseToken]): Self = StObject.set(x, "teal", value.asInstanceOf[js.Any])
     
-    inline def setYellow(value: BolderPaintToken[BaseToken]): Self = StObject.set(x, "yellow", value.asInstanceOf[js.Any])
+    inline def setYellow(value: BolderSubtle[BaseToken]): Self = StObject.set(x, "yellow", value.asInstanceOf[js.Any])
   }
 }

@@ -27,7 +27,7 @@ trait LogStream extends StObject {
   var lastEventTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
-    * The ingestion time, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC.
+    * The ingestion time, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC The lastIngestionTime value updates on an eventual consistency basis. It typically updates in less than an hour after ingestion, but in rare situations might take longer.
     */
   var lastIngestionTime: js.UndefOr[Timestamp] = js.undefined
   
@@ -37,12 +37,12 @@ trait LogStream extends StObject {
   var logStreamName: js.UndefOr[LogStreamName] = js.undefined
   
   /**
-    * The number of bytes stored.  Important: On June 17, 2019, this parameter was deprecated for log streams, and is always reported as zero. This change applies only to log streams. The storedBytes parameter for log groups is not affected.
+    * The number of bytes stored.  Important: As of June 17, 2019, this parameter is no longer supported for log streams, and is always reported as zero. This change applies only to log streams. The storedBytes parameter for log groups is not affected.
     */
   var storedBytes: js.UndefOr[StoredBytes] = js.undefined
   
   /**
-    * The sequence token.
+    * The sequence token.  The sequence token is now ignored in PutLogEvents actions. PutLogEvents actions are always accepted regardless of receiving an invalid sequence token. You don't need to obtain uploadSequenceToken to use a PutLogEvents action. 
     */
   var uploadSequenceToken: js.UndefOr[SequenceToken] = js.undefined
 }

@@ -8,8 +8,8 @@ trait PlotRsiDataLabelsAnimationOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The animation delay time in
-    * milliseconds. Set to `0` renders dataLabel immediately. As `undefined`
-    * inherits defer time from the series.animation.defer.
+    * milliseconds. Set to `0` to render the data labels immediately. As
+    * `undefined` inherits defer time from the series.animation.defer.
     */
   var defer: js.UndefOr[Double] = js.undefined
 }

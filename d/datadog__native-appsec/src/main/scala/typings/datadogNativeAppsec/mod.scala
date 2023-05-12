@@ -1,10 +1,9 @@
 package typings.datadogNativeAppsec
 
 import typings.datadogNativeAppsec.anon.Errors
-import typings.datadogNativeAppsec.anon.Major
 import typings.datadogNativeAppsec.anon.ObfuscatorKeyRegex
-import typings.datadogNativeAppsec.datadogNativeAppsecStrings.block
-import typings.datadogNativeAppsec.datadogNativeAppsecStrings.monitor
+import typings.datadogNativeAppsec.datadogNativeAppsecStrings.`match`
+import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,11 @@ object mod {
     
     val disposed: Boolean = js.native
     
+    val requiredAddresses: Set[String] = js.native
+    
     val rulesInfo: Errors = js.native
+    
+    def update(rules: typings.datadogNativeAppsec.mod.rules): Unit = js.native
   }
   /* static members */
   object DDWAF {
@@ -32,7 +35,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def version(): Major = ^.asInstanceOf[js.Dynamic].applyDynamic("version")().asInstanceOf[Major]
+    inline def version(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("version")().asInstanceOf[String]
   }
   
   trait DDWAFContext extends StObject {
@@ -63,9 +66,12 @@ object mod {
   
   trait result extends StObject {
     
-    var action: js.UndefOr[monitor | block] = js.undefined
+    // TODO: remove this if new statuses are never added
+    var actions: js.UndefOr[js.Array[String]] = js.undefined
     
     var data: js.UndefOr[String] = js.undefined
+    
+    var status: js.UndefOr[`match`] = js.undefined
     
     var timeout: Boolean
     
@@ -81,13 +87,19 @@ object mod {
     @scala.inline
     implicit open class MutableBuilder[Self <: result] (val x: Self) extends AnyVal {
       
-      inline def setAction(value: monitor | block): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setActions(value: js.Array[String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+      
+      inline def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value*))
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      
+      inline def setStatus(value: `match`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
       inline def setTimeout(value: Boolean): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       

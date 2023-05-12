@@ -1,7 +1,7 @@
 
 # Scala.js typings for onsenui
 
-Typings are for version 2.12.6
+Typings are for version 2.12.8
 
 ## Library description:
 HTML5 Mobile Framework & UI Components

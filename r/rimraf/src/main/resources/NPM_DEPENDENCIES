@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "rimraf" : "5.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "rimraf" : "5.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

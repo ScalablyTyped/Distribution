@@ -12,7 +12,7 @@ open class PolarAngleAxis protected ()
   def this(props: PolarAngleAxisProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: PolarAngleAxisProps, context: Any) = this()
 }

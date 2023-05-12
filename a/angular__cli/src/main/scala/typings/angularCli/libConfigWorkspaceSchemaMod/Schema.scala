@@ -12,12 +12,6 @@ trait Schema extends StObject {
   var cli: js.UndefOr[CliOptions] = js.undefined
   
   /**
-    * Default project name used in commands.
-    * @deprecated The project to use will be determined from the current working directory.
-    */
-  var defaultProject: js.UndefOr[String] = js.undefined
-  
-  /**
     * Path where new projects will be created.
     */
   var newProjectRoot: js.UndefOr[String] = js.undefined
@@ -45,10 +39,6 @@ object Schema {
     inline def setCli(value: CliOptions): Self = StObject.set(x, "cli", value.asInstanceOf[js.Any])
     
     inline def setCliUndefined: Self = StObject.set(x, "cli", js.undefined)
-    
-    inline def setDefaultProject(value: String): Self = StObject.set(x, "defaultProject", value.asInstanceOf[js.Any])
-    
-    inline def setDefaultProjectUndefined: Self = StObject.set(x, "defaultProject", js.undefined)
     
     inline def setNewProjectRoot(value: String): Self = StObject.set(x, "newProjectRoot", value.asInstanceOf[js.Any])
     

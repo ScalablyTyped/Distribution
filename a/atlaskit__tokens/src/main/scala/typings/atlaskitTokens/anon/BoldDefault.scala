@@ -6,18 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BoldDefault extends StObject {
   
-  var bold: Default
+  var `[default]`: Hovered
+  
+  var bold: Hovered
 }
 object BoldDefault {
   
-  inline def apply(bold: Default): BoldDefault = {
+  inline def apply(`[default]`: Hovered, bold: Hovered): BoldDefault = {
     val __obj = js.Dynamic.literal(bold = bold.asInstanceOf[js.Any])
+    __obj.updateDynamic("[default]")(`[default]`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoldDefault]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: BoldDefault] (val x: Self) extends AnyVal {
     
-    inline def setBold(value: Default): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+    inline def setBold(value: Hovered): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+    
+    inline def `set[default]`(value: Hovered): Self = StObject.set(x, "[default]", value.asInstanceOf[js.Any])
   }
 }

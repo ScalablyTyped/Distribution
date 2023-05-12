@@ -36,7 +36,7 @@ trait DeviceDefinitionPackaging
   /**
     * Unique Device Identifier (UDI) Barcode string on the packaging.
     */
-  var udiDeviceIdentifier: js.UndefOr[js.Array[DeviceDefinitionPackagingUdiDeviceIdentifier]] = js.undefined
+  var udiDeviceIdentifier: js.UndefOr[js.Array[DeviceDefinitionUdiDeviceIdentifier]] = js.undefined
 }
 object DeviceDefinitionPackaging {
   
@@ -72,10 +72,10 @@ object DeviceDefinitionPackaging {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setUdiDeviceIdentifier(value: js.Array[DeviceDefinitionPackagingUdiDeviceIdentifier]): Self = StObject.set(x, "udiDeviceIdentifier", value.asInstanceOf[js.Any])
+    inline def setUdiDeviceIdentifier(value: js.Array[DeviceDefinitionUdiDeviceIdentifier]): Self = StObject.set(x, "udiDeviceIdentifier", value.asInstanceOf[js.Any])
     
     inline def setUdiDeviceIdentifierUndefined: Self = StObject.set(x, "udiDeviceIdentifier", js.undefined)
     
-    inline def setUdiDeviceIdentifierVarargs(value: DeviceDefinitionPackagingUdiDeviceIdentifier*): Self = StObject.set(x, "udiDeviceIdentifier", js.Array(value*))
+    inline def setUdiDeviceIdentifierVarargs(value: DeviceDefinitionUdiDeviceIdentifier*): Self = StObject.set(x, "udiDeviceIdentifier", js.Array(value*))
   }
 }

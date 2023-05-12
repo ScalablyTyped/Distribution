@@ -27,14 +27,12 @@ open class Composer[T /* <: Model */] protected () extends StObject {
     * @param {Object} queryInfo Must be format {commands: [], joins: []}
     * @param {Array} [includeColumns=*] Which columns to include, includes all by default
     * @return {Object} Has "params" and "sql" properties.
-    * @private
     */
   /* private */ def __addJoinsToQuery__(query: Any, queryInfo: Any, includeColumns: Any): Any = js.native
   
   /**
     * Collapses linked list of queries into an array (for .reduce, .map etc)
     * @return {Array}
-    * @private
     */
   /* private */ def __collapse__(): Any = js.native
   
@@ -44,7 +42,6 @@ open class Composer[T /* <: Model */] protected () extends StObject {
     * Generate a SQL count query
     * @param {boolean} [useLimit=false] Generates COUNT using limit command as well
     * @return {Object} Has "params" and "sql" properties.
-    * @private
     */
   /* private */ def __generateCountQuery__(useLimit: Any): Any = js.native
   
@@ -53,7 +50,6 @@ open class Composer[T /* <: Model */] protected () extends StObject {
     * @param {Array} [includeColumns=*] Which columns to include, includes all by default
     * @param {boolean} [disableJoins=false] Disable joins if you just want a subset of data
     * @return {Object} Has "params" and "sql" properties.
-    * @private
     */
   /* private */ def __generateQuery__(includeColumns: Any, disableJoins: Any): Any = js.native
   
@@ -61,21 +57,18 @@ open class Composer[T /* <: Model */] protected () extends StObject {
     * Gets last limit command from a collapsed array of composer commands
     * @param {Array} [composerArray] Array of composer commands
     * @return {Array}
-    * @private
     */
   /* private */ def __getLastLimitCommand__(composerArray: Any): Any = js.native
   
   /**
     * Determines whether this composer query represents a grouped query or not
     * @return {Boolean}
-    * @private
     */
   /* private */ def __isGrouped__(): Any = js.native
   
   /**
     * Retrieve all joined column data for a given join
     * @param {string} joinName The name of the join relationship
-    * @private
     */
   /* private */ def __joinedColumns__(joinName: Any): Any = js.native
   
@@ -84,7 +77,6 @@ open class Composer[T /* <: Model */] protected () extends StObject {
     * @param {Object} comparisons Comparisons object. {age__lte: 27}, for example.
     * @param {Nodal.Model} Model the model to use as the basis for comparison. Default to current model.
     * @return {Array}
-    * @private
     */
   /* private */ def __parseComparisons__(comparisons: Any, model: Any): Any = js.native
   
@@ -94,7 +86,6 @@ open class Composer[T /* <: Model */] protected () extends StObject {
     * @param {Array} rows Rows from sql result
     * @param {Boolean} grouped Are these models grouped, if so, different procedure
     * @return {Nodal.ModelArray}
-    * @private
     */
   /* private */ def __parseModelsFromRows__(rows: Any, grouped: Any): Any = js.native
   
@@ -103,7 +94,6 @@ open class Composer[T /* <: Model */] protected () extends StObject {
     * @param {Array} [commandArray]
     * @param {Array} [includeColumns=*] Which columns to include, includes all by default
     * @return {Object} Looks like {sql: [], params: []}
-    * @private
     */
   /* private */ def __reduceCommandsToQuery__(commandArray: Any, includeColumns: Any): Any = js.native
   
@@ -111,7 +101,6 @@ open class Composer[T /* <: Model */] protected () extends StObject {
     * Reduces an array of composer queries to a single query information object
     * @param {Array} [composerArray]
     * @return {Object} Looks like {commands: [], joins: []}
-    * @private
     */
   /* private */ def __reduceToQueryInformation__(composerArray: Any): Any = js.native
   
@@ -119,7 +108,6 @@ open class Composer[T /* <: Model */] protected () extends StObject {
     * Removes last limit command from a collapsed array of composer commands
     * @param {Array} [composerArray] Array of composer commands
     * @return {Array}
-    * @private
     */
   /* private */ def __removeLastLimitCommand__(composerArray: Any): Any = js.native
   

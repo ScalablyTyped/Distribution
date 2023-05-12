@@ -1,7 +1,7 @@
 
 # Scala.js typings for rimraf
 
-Typings are for version 3.0
+Typings are for version 5.0.0
 
 ## Library description:
 A deep deletion module for node (like `rm -rf`)
@@ -24,7 +24,7 @@ A deep deletion module for node (like `rm -rf`)
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

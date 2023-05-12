@@ -13,7 +13,7 @@ import typings.tensorflowTfjsCore.distIoTypesMod.WeightsManifestConfig
 import typings.tensorflowTfjsCore.distIoTypesMod.WeightsManifestEntry
 import typings.tensorflowTfjsCore.distKernelNamesMod.PackAttrs
 import typings.tensorflowTfjsCore.distKernelNamesMod.PackInputs
-import typings.tensorflowTfjsCore.distKernelRegistryMod.TensorInfo
+import typings.tensorflowTfjsCore.distTensorInfoMod.TensorInfo
 import typings.tensorflowTfjsCore.distTensorTypesMod.NamedTensor
 import typings.tensorflowTfjsCore.distTensorTypesMod.NamedTensorMap
 import typings.tensorflowTfjsNode.distNodejsKernelBackendMod.NodeJSKernelBackend

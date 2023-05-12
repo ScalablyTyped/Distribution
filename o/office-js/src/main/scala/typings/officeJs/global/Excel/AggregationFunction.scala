@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Aggregation function for the DataPivotField.
+  * Aggregation function for the `DataPivotHierarchy`.
   *
   * @remarks
   * [Api set: ExcelApi 1.8]

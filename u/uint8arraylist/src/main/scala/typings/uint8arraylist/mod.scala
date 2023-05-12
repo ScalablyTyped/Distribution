@@ -73,6 +73,11 @@ object mod {
     
     def getUint8(byteOffset: Double): Double = js.native
     
+    def indexOf(search: js.typedarray.Uint8Array): Double = js.native
+    def indexOf(search: js.typedarray.Uint8Array, offset: Double): Double = js.native
+    def indexOf(search: Uint8ArrayList): Double = js.native
+    def indexOf(search: Uint8ArrayList, offset: Double): Double = js.native
+    
     @JSName(js.Symbol.iterator)
     var iterator_Uint8ArrayList: js.Function0[Generator[js.typedarray.Uint8Array, Unit, Unit]] = js.native
     

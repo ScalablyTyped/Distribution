@@ -11,7 +11,7 @@ object distSrcBlockPutMod {
   @js.native
   val createPut: Factory[
     js.Function2[
-      /* data */ js.typedarray.Uint8Array, 
+      /* block */ js.typedarray.Uint8Array, 
       /* options */ js.UndefOr[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_block.PutOptions */ Any) & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions
       ], 

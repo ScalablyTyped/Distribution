@@ -5,7 +5,6 @@ import typings.ionicons.distTypesComponentsMod.global.HTMLIonIconElement
 import typings.ionicons.distTypesStencilPublicRuntimeMod.JSXBase.HTMLAttributes
 import typings.std.AddEventListenerOptions
 import typings.std.CSSStyleDeclaration
-import typings.std.DocumentAndElementEventHandlers
 import typings.std.Element
 import typings.std.ElementCSSInlineStyle
 import typings.std.ElementContentEditable
@@ -60,10 +59,6 @@ object distTypesComponentsMod {
       /* standard dom */
       /* CompleteClass */
       var ariaColIndex: String | Null = js.native
-      
-      /* standard dom */
-      /* CompleteClass */
-      var ariaColIndexText: String | Null = js.native
       
       /* standard dom */
       /* CompleteClass */
@@ -156,10 +151,6 @@ object distTypesComponentsMod {
       /* standard dom */
       /* CompleteClass */
       var ariaRowIndex: String | Null = js.native
-      
-      /* standard dom */
-      /* CompleteClass */
-      var ariaRowIndexText: String | Null = js.native
       
       /* standard dom */
       /* CompleteClass */
@@ -292,7 +283,6 @@ object distTypesComponentsMod {
       extends StObject
          with IonIcon
          with Element
-         with DocumentAndElementEventHandlers
          with ElementCSSInlineStyle
          with ElementContentEditable
          with GlobalEventHandlers

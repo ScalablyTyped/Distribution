@@ -7,34 +7,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConnectionInfoSummary extends StObject {
   
   /**
-    * connection id returned from service host.
+    * Connection id returned from service host, if the connection was successful.
     */
-  var connectionId: String
+  var connectionId: js.UndefOr[String] = js.undefined
   
   /**
-    * information about the actual connection established
+    * Information about the actual connection established, if the connection was successful.
     */
-  var connectionSummary: ConnectionSummary
+  var connectionSummary: js.UndefOr[ConnectionSummary] = js.undefined
   
   /**
-    * Error message returned from the engine, if any.
+    * Error message returned from the engine or service host, if an error occurred.
     */
-  var errorMessage: String
+  var errorMessage: js.UndefOr[String] = js.undefined
   
   /**
-    * Error number returned from the engine, if any.
+    * Error number returned from the engine or server host, if an error occurred.
     */
-  var errorNumber: Double
+  var errorNumber: js.UndefOr[Double] = js.undefined
   
   /**
-    * Indicates whether the server version is supported by ADS. The default value is true. If the value is false, ADS will show a warning message.
+    * Whether the server version is supported by the provider. Default is to assume true. If the value is false, Azure Data Studio
+    * will show a warning message.
     */
   var isSupportedVersion: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * any diagnostic messages return from the service host.
+    * Additional optional detailed error messages from the engine or service host, if an error occurred.
     */
-  var messages: String
+  var messages: js.UndefOr[String] = js.undefined
   
   /**
     * URI identifying the owner of the connection
@@ -42,27 +43,20 @@ trait ConnectionInfoSummary extends StObject {
   var ownerUri: String
   
   /**
-    * Information about the connected server.
+    * Information about the connected server, if the connection was successful.
     */
-  var serverInfo: ServerInfo
+  var serverInfo: js.UndefOr[ServerInfo] = js.undefined
   
   /**
-    * The messages that will be appended to the Azure Data Studio's warning message about unsupported versions.
+    * Additional optional message with details about why the version isn't supported. This will be appended to the warning message Azure Data Studio
+    * displays about unsupported versions.
     */
   var unsupportedVersionMessage: js.UndefOr[String] = js.undefined
 }
 object ConnectionInfoSummary {
   
-  inline def apply(
-    connectionId: String,
-    connectionSummary: ConnectionSummary,
-    errorMessage: String,
-    errorNumber: Double,
-    messages: String,
-    ownerUri: String,
-    serverInfo: ServerInfo
-  ): ConnectionInfoSummary = {
-    val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any], connectionSummary = connectionSummary.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], errorNumber = errorNumber.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], ownerUri = ownerUri.asInstanceOf[js.Any], serverInfo = serverInfo.asInstanceOf[js.Any])
+  inline def apply(ownerUri: String): ConnectionInfoSummary = {
+    val __obj = js.Dynamic.literal(ownerUri = ownerUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionInfoSummary]
   }
   
@@ -71,11 +65,19 @@ object ConnectionInfoSummary {
     
     inline def setConnectionId(value: String): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
     
+    inline def setConnectionIdUndefined: Self = StObject.set(x, "connectionId", js.undefined)
+    
     inline def setConnectionSummary(value: ConnectionSummary): Self = StObject.set(x, "connectionSummary", value.asInstanceOf[js.Any])
+    
+    inline def setConnectionSummaryUndefined: Self = StObject.set(x, "connectionSummary", js.undefined)
     
     inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    
     inline def setErrorNumber(value: Double): Self = StObject.set(x, "errorNumber", value.asInstanceOf[js.Any])
+    
+    inline def setErrorNumberUndefined: Self = StObject.set(x, "errorNumber", js.undefined)
     
     inline def setIsSupportedVersion(value: Boolean): Self = StObject.set(x, "isSupportedVersion", value.asInstanceOf[js.Any])
     
@@ -83,9 +85,13 @@ object ConnectionInfoSummary {
     
     inline def setMessages(value: String): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    
     inline def setOwnerUri(value: String): Self = StObject.set(x, "ownerUri", value.asInstanceOf[js.Any])
     
     inline def setServerInfo(value: ServerInfo): Self = StObject.set(x, "serverInfo", value.asInstanceOf[js.Any])
+    
+    inline def setServerInfoUndefined: Self = StObject.set(x, "serverInfo", js.undefined)
     
     inline def setUnsupportedVersionMessage(value: String): Self = StObject.set(x, "unsupportedVersionMessage", value.asInstanceOf[js.Any])
     

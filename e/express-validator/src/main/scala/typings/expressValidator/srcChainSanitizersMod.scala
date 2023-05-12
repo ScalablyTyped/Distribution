@@ -11,10 +11,22 @@ object srcChainSanitizersMod {
   @js.native
   trait Sanitizers[Return] extends StObject {
     
+    /**
+      * Replaces the value of the field if it's one of `''`, `null`, `undefined` or `NaN`.
+      *
+      * @param default_value the value to replace with
+      * @returns the current validation chain
+      */
     def default(default_value: Any): Return = js.native
     
     def blacklist(chars: String): Return = js.native
     
+    /**
+      * Adds a custom sanitizer to the validation chain.
+      *
+      * @param sanitizer the custom sanitizer
+      * @returns the current validation chain
+      */
     def customSanitizer(sanitizer: CustomSanitizer): Return = js.native
     
     def escape(): Return = js.native
@@ -25,6 +37,13 @@ object srcChainSanitizersMod {
     def normalizeEmail(): Return = js.native
     def normalizeEmail(options: NormalizeEmailOptions): Return = js.native
     
+    /**
+      * Replaces a field's value with another value.
+      *
+      * @param values_to_replace one or more values that should be replaced
+      * @param new_value the value to replace with
+      * @returns the current validation chain
+      */
     def replace(values_to_replace: Any, new_value: Any): Return = js.native
     
     def rtrim(): Return = js.native

@@ -13,8 +13,6 @@ trait CommandOptionsClientComma extends StObject {
   
   var chainId: js.UndefOr[js.Symbol] = js.native
   
-  var ignorePubSubMode: js.UndefOr[Boolean] = js.native
-  
   var isolated: js.UndefOr[Boolean] = js.native
   
   var returnBuffers: js.UndefOr[Boolean] = js.native

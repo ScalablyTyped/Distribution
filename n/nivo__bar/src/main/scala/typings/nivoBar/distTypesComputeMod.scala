@@ -26,6 +26,7 @@ import typings.nivoBar.nivoBarStrings.valueScale
 import typings.nivoBar.nivoBarStrings.vertical
 import typings.nivoBar.nivoBarStrings.width
 import typings.nivoLegends.distTypesTypesMod.LegendDirection
+import typings.std.NonNullable
 import typings.std.Pick
 import typings.std.Required
 import org.scalablytyped.runtime.StObject
@@ -58,15 +59,15 @@ object distTypesComputeMod {
   
   inline def getLegendDataForIndexes[RawDatum /* <: BarDatum */](
     bars: BarsWithHidden[RawDatum],
-    layout: horizontal | vertical,
+    layout: NonNullable[js.UndefOr[horizontal | vertical]],
     getLegendLabel: js.Function1[/* datum */ LegendLabelDatum[RawDatum], String]
   ): js.Array[LegendData] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLegendDataForIndexes")(bars.asInstanceOf[js.Any], layout.asInstanceOf[js.Any], getLegendLabel.asInstanceOf[js.Any])).asInstanceOf[js.Array[LegendData]]
   
   inline def getLegendDataForKeys[RawDatum /* <: BarDatum */](
     bars: BarsWithHidden[RawDatum],
-    layout: horizontal | vertical,
+    layout: NonNullable[js.UndefOr[horizontal | vertical]],
     direction: LegendDirection,
-    groupMode: grouped | stacked,
+    groupMode: NonNullable[js.UndefOr[grouped | stacked]],
     reverse: Boolean,
     getLegendLabel: js.Function1[/* datum */ LegendLabelDatum[RawDatum], String]
   ): js.Array[LegendData] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLegendDataForKeys")(bars.asInstanceOf[js.Any], layout.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], groupMode.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any], getLegendLabel.asInstanceOf[js.Any])).asInstanceOf[js.Array[LegendData]]

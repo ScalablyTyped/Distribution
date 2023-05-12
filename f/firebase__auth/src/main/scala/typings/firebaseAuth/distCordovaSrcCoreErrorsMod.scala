@@ -1,6 +1,6 @@
 package typings.firebaseAuth
 
-import typings.firebaseAuth.anon.AppNameEmail
+import typings.firebaseAuth.anon.EmailMessage
 import typings.firebaseAuth.anon.ErrorMapAuthErrorCode
 import typings.firebaseAuth.distCordovaSrcCoreCredentialsMod.AuthCredential
 import typings.firebaseAuth.distCordovaSrcModelAuthMod.AppName
@@ -56,7 +56,11 @@ import typings.firebaseAuth.firebaseAuthStrings.`authSlashinvalid-oauth-provider
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashinvalid-persistence-type`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashinvalid-phone-number`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashinvalid-provider-id`
+import typings.firebaseAuth.firebaseAuthStrings.`authSlashinvalid-recaptcha-action`
+import typings.firebaseAuth.firebaseAuthStrings.`authSlashinvalid-recaptcha-token`
+import typings.firebaseAuth.firebaseAuthStrings.`authSlashinvalid-recaptcha-version`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashinvalid-recipient-email`
+import typings.firebaseAuth.firebaseAuthStrings.`authSlashinvalid-req-type`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashinvalid-sender`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashinvalid-tenant-id`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashinvalid-user-token`
@@ -65,6 +69,7 @@ import typings.firebaseAuth.firebaseAuthStrings.`authSlashinvalid-verification-i
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashmaximum-second-factor-count-exceeded`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashmissing-android-pkg-name`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashmissing-app-credential`
+import typings.firebaseAuth.firebaseAuthStrings.`authSlashmissing-client-type`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashmissing-continue-uri`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashmissing-iframe-start`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashmissing-ios-bundle-id`
@@ -72,6 +77,8 @@ import typings.firebaseAuth.firebaseAuthStrings.`authSlashmissing-multi-factor-i
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashmissing-multi-factor-session`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashmissing-or-invalid-nonce`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashmissing-phone-number`
+import typings.firebaseAuth.firebaseAuthStrings.`authSlashmissing-recaptcha-token`
+import typings.firebaseAuth.firebaseAuthStrings.`authSlashmissing-recaptcha-version`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashmissing-verification-code`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashmissing-verification-id`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashmulti-factor-auth-required`
@@ -86,6 +93,7 @@ import typings.firebaseAuth.firebaseAuthStrings.`authSlashpopup-blocked`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashpopup-closed-by-user`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashprovider-already-linked`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashquota-exceeded`
+import typings.firebaseAuth.firebaseAuthStrings.`authSlashrecaptcha-not-enabled`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashredirect-cancelled-by-user`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashredirect-operation-pending`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashrejected-credential`
@@ -142,7 +150,11 @@ import typings.firebaseAuth.firebaseAuthStrings.`invalid-oauth-provider`
 import typings.firebaseAuth.firebaseAuthStrings.`invalid-persistence-type`
 import typings.firebaseAuth.firebaseAuthStrings.`invalid-phone-number`
 import typings.firebaseAuth.firebaseAuthStrings.`invalid-provider-id`
+import typings.firebaseAuth.firebaseAuthStrings.`invalid-recaptcha-action`
+import typings.firebaseAuth.firebaseAuthStrings.`invalid-recaptcha-token`
+import typings.firebaseAuth.firebaseAuthStrings.`invalid-recaptcha-version`
 import typings.firebaseAuth.firebaseAuthStrings.`invalid-recipient-email`
+import typings.firebaseAuth.firebaseAuthStrings.`invalid-req-type`
 import typings.firebaseAuth.firebaseAuthStrings.`invalid-sender`
 import typings.firebaseAuth.firebaseAuthStrings.`invalid-tenant-id`
 import typings.firebaseAuth.firebaseAuthStrings.`invalid-user-token`
@@ -152,13 +164,17 @@ import typings.firebaseAuth.firebaseAuthStrings.`login-blocked`
 import typings.firebaseAuth.firebaseAuthStrings.`maximum-second-factor-count-exceeded`
 import typings.firebaseAuth.firebaseAuthStrings.`missing-android-pkg-name`
 import typings.firebaseAuth.firebaseAuthStrings.`missing-app-credential`
+import typings.firebaseAuth.firebaseAuthStrings.`missing-client-type`
 import typings.firebaseAuth.firebaseAuthStrings.`missing-continue-uri`
 import typings.firebaseAuth.firebaseAuthStrings.`missing-iframe-start`
 import typings.firebaseAuth.firebaseAuthStrings.`missing-ios-bundle-id`
 import typings.firebaseAuth.firebaseAuthStrings.`missing-multi-factor-info`
 import typings.firebaseAuth.firebaseAuthStrings.`missing-multi-factor-session`
 import typings.firebaseAuth.firebaseAuthStrings.`missing-or-invalid-nonce`
+import typings.firebaseAuth.firebaseAuthStrings.`missing-password`
 import typings.firebaseAuth.firebaseAuthStrings.`missing-phone-number`
+import typings.firebaseAuth.firebaseAuthStrings.`missing-recaptcha-token`
+import typings.firebaseAuth.firebaseAuthStrings.`missing-recaptcha-version`
 import typings.firebaseAuth.firebaseAuthStrings.`missing-verification-code`
 import typings.firebaseAuth.firebaseAuthStrings.`missing-verification-id`
 import typings.firebaseAuth.firebaseAuthStrings.`multi-factor-auth-required`
@@ -173,6 +189,7 @@ import typings.firebaseAuth.firebaseAuthStrings.`popup-blocked`
 import typings.firebaseAuth.firebaseAuthStrings.`popup-closed-by-user`
 import typings.firebaseAuth.firebaseAuthStrings.`provider-already-linked`
 import typings.firebaseAuth.firebaseAuthStrings.`quota-exceeded`
+import typings.firebaseAuth.firebaseAuthStrings.`recaptcha-not-enabled`
 import typings.firebaseAuth.firebaseAuthStrings.`redirect-cancelled-by-user`
 import typings.firebaseAuth.firebaseAuthStrings.`redirect-operation-pending`
 import typings.firebaseAuth.firebaseAuthStrings.`rejected-credential`
@@ -382,9 +399,25 @@ object distCordovaSrcCoreErrorsMod {
     @js.native
     val INVALID_PROVIDER_ID: `authSlashinvalid-provider-id` = js.native
     
+    @JSImport("@firebase/auth/dist/cordova/src/core/errors", "AUTH_ERROR_CODES_MAP_DO_NOT_USE_INTERNALLY.INVALID_RECAPTCHA_ACTION")
+    @js.native
+    val INVALID_RECAPTCHA_ACTION: `authSlashinvalid-recaptcha-action` = js.native
+    
+    @JSImport("@firebase/auth/dist/cordova/src/core/errors", "AUTH_ERROR_CODES_MAP_DO_NOT_USE_INTERNALLY.INVALID_RECAPTCHA_TOKEN")
+    @js.native
+    val INVALID_RECAPTCHA_TOKEN: `authSlashinvalid-recaptcha-token` = js.native
+    
+    @JSImport("@firebase/auth/dist/cordova/src/core/errors", "AUTH_ERROR_CODES_MAP_DO_NOT_USE_INTERNALLY.INVALID_RECAPTCHA_VERSION")
+    @js.native
+    val INVALID_RECAPTCHA_VERSION: `authSlashinvalid-recaptcha-version` = js.native
+    
     @JSImport("@firebase/auth/dist/cordova/src/core/errors", "AUTH_ERROR_CODES_MAP_DO_NOT_USE_INTERNALLY.INVALID_RECIPIENT_EMAIL")
     @js.native
     val INVALID_RECIPIENT_EMAIL: `authSlashinvalid-recipient-email` = js.native
+    
+    @JSImport("@firebase/auth/dist/cordova/src/core/errors", "AUTH_ERROR_CODES_MAP_DO_NOT_USE_INTERNALLY.INVALID_REQ_TYPE")
+    @js.native
+    val INVALID_REQ_TYPE: `authSlashinvalid-req-type` = js.native
     
     @JSImport("@firebase/auth/dist/cordova/src/core/errors", "AUTH_ERROR_CODES_MAP_DO_NOT_USE_INTERNALLY.INVALID_SENDER")
     @js.native
@@ -418,6 +451,10 @@ object distCordovaSrcCoreErrorsMod {
     @js.native
     val MISSING_AUTH_DOMAIN: `authSlashauth-domain-config-required` = js.native
     
+    @JSImport("@firebase/auth/dist/cordova/src/core/errors", "AUTH_ERROR_CODES_MAP_DO_NOT_USE_INTERNALLY.MISSING_CLIENT_TYPE")
+    @js.native
+    val MISSING_CLIENT_TYPE: `authSlashmissing-client-type` = js.native
+    
     @JSImport("@firebase/auth/dist/cordova/src/core/errors", "AUTH_ERROR_CODES_MAP_DO_NOT_USE_INTERNALLY.MISSING_CODE")
     @js.native
     val MISSING_CODE: `authSlashmissing-verification-code` = js.native
@@ -449,6 +486,14 @@ object distCordovaSrcCoreErrorsMod {
     @JSImport("@firebase/auth/dist/cordova/src/core/errors", "AUTH_ERROR_CODES_MAP_DO_NOT_USE_INTERNALLY.MISSING_PHONE_NUMBER")
     @js.native
     val MISSING_PHONE_NUMBER: `authSlashmissing-phone-number` = js.native
+    
+    @JSImport("@firebase/auth/dist/cordova/src/core/errors", "AUTH_ERROR_CODES_MAP_DO_NOT_USE_INTERNALLY.MISSING_RECAPTCHA_TOKEN")
+    @js.native
+    val MISSING_RECAPTCHA_TOKEN: `authSlashmissing-recaptcha-token` = js.native
+    
+    @JSImport("@firebase/auth/dist/cordova/src/core/errors", "AUTH_ERROR_CODES_MAP_DO_NOT_USE_INTERNALLY.MISSING_RECAPTCHA_VERSION")
+    @js.native
+    val MISSING_RECAPTCHA_VERSION: `authSlashmissing-recaptcha-version` = js.native
     
     @JSImport("@firebase/auth/dist/cordova/src/core/errors", "AUTH_ERROR_CODES_MAP_DO_NOT_USE_INTERNALLY.MISSING_SESSION_INFO")
     @js.native
@@ -501,6 +546,10 @@ object distCordovaSrcCoreErrorsMod {
     @JSImport("@firebase/auth/dist/cordova/src/core/errors", "AUTH_ERROR_CODES_MAP_DO_NOT_USE_INTERNALLY.QUOTA_EXCEEDED")
     @js.native
     val QUOTA_EXCEEDED: `authSlashquota-exceeded` = js.native
+    
+    @JSImport("@firebase/auth/dist/cordova/src/core/errors", "AUTH_ERROR_CODES_MAP_DO_NOT_USE_INTERNALLY.RECAPTCHA_NOT_ENABLED")
+    @js.native
+    val RECAPTCHA_NOT_ENABLED: `authSlashrecaptcha-not-enabled` = js.native
     
     @JSImport("@firebase/auth/dist/cordova/src/core/errors", "AUTH_ERROR_CODES_MAP_DO_NOT_USE_INTERNALLY.REDIRECT_CANCELLED_BY_USER")
     @js.native
@@ -661,6 +710,7 @@ object distCordovaSrcCoreErrorsMod {
     - typings.firebaseAuth.firebaseAuthStrings.`missing-multi-factor-info`
     - typings.firebaseAuth.firebaseAuthStrings.`missing-multi-factor-session`
     - typings.firebaseAuth.firebaseAuthStrings.`missing-phone-number`
+    - typings.firebaseAuth.firebaseAuthStrings.`missing-password`
     - typings.firebaseAuth.firebaseAuthStrings.`missing-verification-id`
     - typings.firebaseAuth.firebaseAuthStrings.`app-deleted`
     - typings.firebaseAuth.firebaseAuthStrings.`account-exists-with-different-credential`
@@ -696,6 +746,14 @@ object distCordovaSrcCoreErrorsMod {
     - typings.firebaseAuth.firebaseAuthStrings.`weak-password`
     - typings.firebaseAuth.firebaseAuthStrings.`web-storage-unsupported`
     - typings.firebaseAuth.firebaseAuthStrings.`already-initialized`
+    - typings.firebaseAuth.firebaseAuthStrings.`recaptcha-not-enabled`
+    - typings.firebaseAuth.firebaseAuthStrings.`missing-recaptcha-token`
+    - typings.firebaseAuth.firebaseAuthStrings.`invalid-recaptcha-token`
+    - typings.firebaseAuth.firebaseAuthStrings.`invalid-recaptcha-action`
+    - typings.firebaseAuth.firebaseAuthStrings.`missing-client-type`
+    - typings.firebaseAuth.firebaseAuthStrings.`missing-recaptcha-version`
+    - typings.firebaseAuth.firebaseAuthStrings.`invalid-recaptcha-version`
+    - typings.firebaseAuth.firebaseAuthStrings.`invalid-req-type`
   */
   trait AuthErrorCode extends StObject
   object AuthErrorCode {
@@ -788,7 +846,15 @@ object distCordovaSrcCoreErrorsMod {
     
     inline def INVALID_PROVIDER_ID: `invalid-provider-id` = "invalid-provider-id".asInstanceOf[`invalid-provider-id`]
     
+    inline def INVALID_RECAPTCHA_ACTION: `invalid-recaptcha-action` = "invalid-recaptcha-action".asInstanceOf[`invalid-recaptcha-action`]
+    
+    inline def INVALID_RECAPTCHA_TOKEN: `invalid-recaptcha-token` = "invalid-recaptcha-token".asInstanceOf[`invalid-recaptcha-token`]
+    
+    inline def INVALID_RECAPTCHA_VERSION: `invalid-recaptcha-version` = "invalid-recaptcha-version".asInstanceOf[`invalid-recaptcha-version`]
+    
     inline def INVALID_RECIPIENT_EMAIL: `invalid-recipient-email` = "invalid-recipient-email".asInstanceOf[`invalid-recipient-email`]
+    
+    inline def INVALID_REQ_TYPE: `invalid-req-type` = "invalid-req-type".asInstanceOf[`invalid-req-type`]
     
     inline def INVALID_SENDER: `invalid-sender` = "invalid-sender".asInstanceOf[`invalid-sender`]
     
@@ -808,6 +874,8 @@ object distCordovaSrcCoreErrorsMod {
     
     inline def MISSING_AUTH_DOMAIN: `auth-domain-config-required` = "auth-domain-config-required".asInstanceOf[`auth-domain-config-required`]
     
+    inline def MISSING_CLIENT_TYPE: `missing-client-type` = "missing-client-type".asInstanceOf[`missing-client-type`]
+    
     inline def MISSING_CODE: `missing-verification-code` = "missing-verification-code".asInstanceOf[`missing-verification-code`]
     
     inline def MISSING_CONTINUE_URI: `missing-continue-uri` = "missing-continue-uri".asInstanceOf[`missing-continue-uri`]
@@ -822,7 +890,13 @@ object distCordovaSrcCoreErrorsMod {
     
     inline def MISSING_OR_INVALID_NONCE: `missing-or-invalid-nonce` = "missing-or-invalid-nonce".asInstanceOf[`missing-or-invalid-nonce`]
     
+    inline def MISSING_PASSWORD: `missing-password` = "missing-password".asInstanceOf[`missing-password`]
+    
     inline def MISSING_PHONE_NUMBER: `missing-phone-number` = "missing-phone-number".asInstanceOf[`missing-phone-number`]
+    
+    inline def MISSING_RECAPTCHA_TOKEN: `missing-recaptcha-token` = "missing-recaptcha-token".asInstanceOf[`missing-recaptcha-token`]
+    
+    inline def MISSING_RECAPTCHA_VERSION: `missing-recaptcha-version` = "missing-recaptcha-version".asInstanceOf[`missing-recaptcha-version`]
     
     inline def MISSING_SESSION_INFO: `missing-verification-id` = "missing-verification-id".asInstanceOf[`missing-verification-id`]
     
@@ -849,6 +923,8 @@ object distCordovaSrcCoreErrorsMod {
     inline def PROVIDER_ALREADY_LINKED: `provider-already-linked` = "provider-already-linked".asInstanceOf[`provider-already-linked`]
     
     inline def QUOTA_EXCEEDED: `quota-exceeded` = "quota-exceeded".asInstanceOf[`quota-exceeded`]
+    
+    inline def RECAPTCHA_NOT_ENABLED: `recaptcha-not-enabled` = "recaptcha-not-enabled".asInstanceOf[`recaptcha-not-enabled`]
     
     inline def REDIRECT_CANCELLED_BY_USER: `redirect-cancelled-by-user` = "redirect-cancelled-by-user".asInstanceOf[`redirect-cancelled-by-user`]
     
@@ -912,279 +988,306 @@ object distCordovaSrcCoreErrorsMod {
   /* Inlined {[ key in std.Exclude<@firebase/auth.@firebase/auth/dist/cordova/src/core/errors.AuthErrorCode, @firebase/auth.@firebase/auth/dist/cordova/src/core/errors.AuthErrorCode.ARGUMENT_ERROR | @firebase/auth.@firebase/auth/dist/cordova/src/core/errors.AuthErrorCode.DEPENDENT_SDK_INIT_BEFORE_AUTH | @firebase/auth.@firebase/auth/dist/cordova/src/core/errors.AuthErrorCode.INTERNAL_ERROR | @firebase/auth.@firebase/auth/dist/cordova/src/core/errors.AuthErrorCode.MFA_REQUIRED | @firebase/auth.@firebase/auth/dist/cordova/src/core/errors.AuthErrorCode.NO_AUTH_EVENT | @firebase/auth.@firebase/auth/dist/cordova/src/core/errors.AuthErrorCode.OPERATION_NOT_SUPPORTED> ]: {  appName :@firebase/auth.@firebase/auth/dist/cordova/src/model/auth.AppName | undefined,   email :string | undefined,   phoneNumber :string | undefined,   message :string | undefined}} */
   trait GenericAuthErrorParams extends StObject {
     
-    var `account-exists-with-different-credential`: AppNameEmail
+    var `account-exists-with-different-credential`: EmailMessage
     
-    var `admin-restricted-operation`: AppNameEmail
+    var `admin-restricted-operation`: EmailMessage
     
-    var `already-initialized`: AppNameEmail
+    var `already-initialized`: EmailMessage
     
-    var `app-deleted`: AppNameEmail
+    var `app-deleted`: EmailMessage
     
-    var `app-not-authorized`: AppNameEmail
+    var `app-not-authorized`: EmailMessage
     
-    var `app-not-installed`: AppNameEmail
+    var `app-not-installed`: EmailMessage
     
-    var `auth-domain-config-required`: AppNameEmail
+    var `auth-domain-config-required`: EmailMessage
     
-    var `cancelled-popup-request`: AppNameEmail
+    var `cancelled-popup-request`: EmailMessage
     
-    var `captcha-check-failed`: AppNameEmail
+    var `captcha-check-failed`: EmailMessage
     
-    var `code-expired`: AppNameEmail
+    var `code-expired`: EmailMessage
     
-    var `cordova-not-ready`: AppNameEmail
+    var `cordova-not-ready`: EmailMessage
     
-    var `cors-unsupported`: AppNameEmail
+    var `cors-unsupported`: EmailMessage
     
-    var `credential-already-in-use`: AppNameEmail
+    var `credential-already-in-use`: EmailMessage
     
-    var `custom-token-mismatch`: AppNameEmail
+    var `custom-token-mismatch`: EmailMessage
     
-    var `dynamic-link-not-activated`: AppNameEmail
+    var `dynamic-link-not-activated`: EmailMessage
     
-    var `email-already-in-use`: AppNameEmail
+    var `email-already-in-use`: EmailMessage
     
-    var `email-change-needs-verification`: AppNameEmail
+    var `email-change-needs-verification`: EmailMessage
     
-    var `emulator-config-failed`: AppNameEmail
+    var `emulator-config-failed`: EmailMessage
     
-    var `expired-action-code`: AppNameEmail
+    var `expired-action-code`: EmailMessage
     
-    var `invalid-action-code`: AppNameEmail
+    var `invalid-action-code`: EmailMessage
     
-    var `invalid-api-key`: AppNameEmail
+    var `invalid-api-key`: EmailMessage
     
-    var `invalid-app-credential`: AppNameEmail
+    var `invalid-app-credential`: EmailMessage
     
-    var `invalid-app-id`: AppNameEmail
+    var `invalid-app-id`: EmailMessage
     
-    var `invalid-auth-event`: AppNameEmail
+    var `invalid-auth-event`: EmailMessage
     
-    var `invalid-cert-hash`: AppNameEmail
+    var `invalid-cert-hash`: EmailMessage
     
-    var `invalid-continue-uri`: AppNameEmail
+    var `invalid-continue-uri`: EmailMessage
     
-    var `invalid-cordova-configuration`: AppNameEmail
+    var `invalid-cordova-configuration`: EmailMessage
     
-    var `invalid-credential`: AppNameEmail
+    var `invalid-credential`: EmailMessage
     
-    var `invalid-custom-token`: AppNameEmail
+    var `invalid-custom-token`: EmailMessage
     
-    var `invalid-dynamic-link-domain`: AppNameEmail
+    var `invalid-dynamic-link-domain`: EmailMessage
     
-    var `invalid-email`: AppNameEmail
+    var `invalid-email`: EmailMessage
     
-    var `invalid-emulator-scheme`: AppNameEmail
+    var `invalid-emulator-scheme`: EmailMessage
     
-    var `invalid-message-payload`: AppNameEmail
+    var `invalid-message-payload`: EmailMessage
     
-    var `invalid-multi-factor-session`: AppNameEmail
+    var `invalid-multi-factor-session`: EmailMessage
     
-    var `invalid-oauth-client-id`: AppNameEmail
+    var `invalid-oauth-client-id`: EmailMessage
     
-    var `invalid-oauth-provider`: AppNameEmail
+    var `invalid-oauth-provider`: EmailMessage
     
-    var `invalid-persistence-type`: AppNameEmail
+    var `invalid-persistence-type`: EmailMessage
     
-    var `invalid-phone-number`: AppNameEmail
+    var `invalid-phone-number`: EmailMessage
     
-    var `invalid-provider-id`: AppNameEmail
+    var `invalid-provider-id`: EmailMessage
     
-    var `invalid-recipient-email`: AppNameEmail
+    var `invalid-recaptcha-action`: EmailMessage
     
-    var `invalid-sender`: AppNameEmail
+    var `invalid-recaptcha-token`: EmailMessage
     
-    var `invalid-tenant-id`: AppNameEmail
+    var `invalid-recaptcha-version`: EmailMessage
     
-    var `invalid-user-token`: AppNameEmail
+    var `invalid-recipient-email`: EmailMessage
     
-    var `invalid-verification-code`: AppNameEmail
+    var `invalid-req-type`: EmailMessage
     
-    var `invalid-verification-id`: AppNameEmail
+    var `invalid-sender`: EmailMessage
     
-    var `login-blocked`: AppNameEmail
+    var `invalid-tenant-id`: EmailMessage
     
-    var `maximum-second-factor-count-exceeded`: AppNameEmail
+    var `invalid-user-token`: EmailMessage
     
-    var `missing-android-pkg-name`: AppNameEmail
+    var `invalid-verification-code`: EmailMessage
     
-    var `missing-app-credential`: AppNameEmail
+    var `invalid-verification-id`: EmailMessage
     
-    var `missing-continue-uri`: AppNameEmail
+    var `login-blocked`: EmailMessage
     
-    var `missing-iframe-start`: AppNameEmail
+    var `maximum-second-factor-count-exceeded`: EmailMessage
     
-    var `missing-ios-bundle-id`: AppNameEmail
+    var `missing-android-pkg-name`: EmailMessage
     
-    var `missing-multi-factor-info`: AppNameEmail
+    var `missing-app-credential`: EmailMessage
     
-    var `missing-multi-factor-session`: AppNameEmail
+    var `missing-client-type`: EmailMessage
     
-    var `missing-or-invalid-nonce`: AppNameEmail
+    var `missing-continue-uri`: EmailMessage
     
-    var `missing-phone-number`: AppNameEmail
+    var `missing-iframe-start`: EmailMessage
     
-    var `missing-verification-code`: AppNameEmail
+    var `missing-ios-bundle-id`: EmailMessage
     
-    var `missing-verification-id`: AppNameEmail
+    var `missing-multi-factor-info`: EmailMessage
     
-    var `multi-factor-info-not-found`: AppNameEmail
+    var `missing-multi-factor-session`: EmailMessage
     
-    var `network-request-failed`: AppNameEmail
+    var `missing-or-invalid-nonce`: EmailMessage
     
-    var `no-such-provider`: AppNameEmail
+    var `missing-password`: EmailMessage
     
-    var `null-user`: AppNameEmail
+    var `missing-phone-number`: EmailMessage
     
-    var `operation-not-allowed`: AppNameEmail
+    var `missing-recaptcha-token`: EmailMessage
     
-    var `popup-blocked`: AppNameEmail
+    var `missing-recaptcha-version`: EmailMessage
     
-    var `popup-closed-by-user`: AppNameEmail
+    var `missing-verification-code`: EmailMessage
     
-    var `provider-already-linked`: AppNameEmail
+    var `missing-verification-id`: EmailMessage
     
-    var `quota-exceeded`: AppNameEmail
+    var `multi-factor-info-not-found`: EmailMessage
     
-    var `redirect-cancelled-by-user`: AppNameEmail
+    var `network-request-failed`: EmailMessage
     
-    var `redirect-operation-pending`: AppNameEmail
+    var `no-such-provider`: EmailMessage
     
-    var `rejected-credential`: AppNameEmail
+    var `null-user`: EmailMessage
     
-    var `requires-recent-login`: AppNameEmail
+    var `operation-not-allowed`: EmailMessage
     
-    var `second-factor-already-in-use`: AppNameEmail
+    var `popup-blocked`: EmailMessage
     
-    var `tenant-id-mismatch`: AppNameEmail
+    var `popup-closed-by-user`: EmailMessage
     
-    var timeout: AppNameEmail
+    var `provider-already-linked`: EmailMessage
     
-    var `too-many-requests`: AppNameEmail
+    var `quota-exceeded`: EmailMessage
     
-    var `unauthorized-continue-uri`: AppNameEmail
+    var `recaptcha-not-enabled`: EmailMessage
     
-    var `unauthorized-domain`: AppNameEmail
+    var `redirect-cancelled-by-user`: EmailMessage
     
-    var `unsupported-first-factor`: AppNameEmail
+    var `redirect-operation-pending`: EmailMessage
     
-    var `unsupported-persistence-type`: AppNameEmail
+    var `rejected-credential`: EmailMessage
     
-    var `unsupported-tenant-operation`: AppNameEmail
+    var `requires-recent-login`: EmailMessage
     
-    var `unverified-email`: AppNameEmail
+    var `second-factor-already-in-use`: EmailMessage
     
-    var `user-cancelled`: AppNameEmail
+    var `tenant-id-mismatch`: EmailMessage
     
-    var `user-disabled`: AppNameEmail
+    var timeout: EmailMessage
     
-    var `user-mismatch`: AppNameEmail
+    var `too-many-requests`: EmailMessage
     
-    var `user-not-found`: AppNameEmail
+    var `unauthorized-continue-uri`: EmailMessage
     
-    var `user-signed-out`: AppNameEmail
+    var `unauthorized-domain`: EmailMessage
     
-    var `user-token-expired`: AppNameEmail
+    var `unsupported-first-factor`: EmailMessage
     
-    var `weak-password`: AppNameEmail
+    var `unsupported-persistence-type`: EmailMessage
     
-    var `web-storage-unsupported`: AppNameEmail
+    var `unsupported-tenant-operation`: EmailMessage
     
-    var `wrong-password`: AppNameEmail
+    var `unverified-email`: EmailMessage
+    
+    var `user-cancelled`: EmailMessage
+    
+    var `user-disabled`: EmailMessage
+    
+    var `user-mismatch`: EmailMessage
+    
+    var `user-not-found`: EmailMessage
+    
+    var `user-signed-out`: EmailMessage
+    
+    var `user-token-expired`: EmailMessage
+    
+    var `weak-password`: EmailMessage
+    
+    var `web-storage-unsupported`: EmailMessage
+    
+    var `wrong-password`: EmailMessage
   }
   object GenericAuthErrorParams {
     
     inline def apply(
-      `account-exists-with-different-credential`: AppNameEmail,
-      `admin-restricted-operation`: AppNameEmail,
-      `already-initialized`: AppNameEmail,
-      `app-deleted`: AppNameEmail,
-      `app-not-authorized`: AppNameEmail,
-      `app-not-installed`: AppNameEmail,
-      `auth-domain-config-required`: AppNameEmail,
-      `cancelled-popup-request`: AppNameEmail,
-      `captcha-check-failed`: AppNameEmail,
-      `code-expired`: AppNameEmail,
-      `cordova-not-ready`: AppNameEmail,
-      `cors-unsupported`: AppNameEmail,
-      `credential-already-in-use`: AppNameEmail,
-      `custom-token-mismatch`: AppNameEmail,
-      `dynamic-link-not-activated`: AppNameEmail,
-      `email-already-in-use`: AppNameEmail,
-      `email-change-needs-verification`: AppNameEmail,
-      `emulator-config-failed`: AppNameEmail,
-      `expired-action-code`: AppNameEmail,
-      `invalid-action-code`: AppNameEmail,
-      `invalid-api-key`: AppNameEmail,
-      `invalid-app-credential`: AppNameEmail,
-      `invalid-app-id`: AppNameEmail,
-      `invalid-auth-event`: AppNameEmail,
-      `invalid-cert-hash`: AppNameEmail,
-      `invalid-continue-uri`: AppNameEmail,
-      `invalid-cordova-configuration`: AppNameEmail,
-      `invalid-credential`: AppNameEmail,
-      `invalid-custom-token`: AppNameEmail,
-      `invalid-dynamic-link-domain`: AppNameEmail,
-      `invalid-email`: AppNameEmail,
-      `invalid-emulator-scheme`: AppNameEmail,
-      `invalid-message-payload`: AppNameEmail,
-      `invalid-multi-factor-session`: AppNameEmail,
-      `invalid-oauth-client-id`: AppNameEmail,
-      `invalid-oauth-provider`: AppNameEmail,
-      `invalid-persistence-type`: AppNameEmail,
-      `invalid-phone-number`: AppNameEmail,
-      `invalid-provider-id`: AppNameEmail,
-      `invalid-recipient-email`: AppNameEmail,
-      `invalid-sender`: AppNameEmail,
-      `invalid-tenant-id`: AppNameEmail,
-      `invalid-user-token`: AppNameEmail,
-      `invalid-verification-code`: AppNameEmail,
-      `invalid-verification-id`: AppNameEmail,
-      `login-blocked`: AppNameEmail,
-      `maximum-second-factor-count-exceeded`: AppNameEmail,
-      `missing-android-pkg-name`: AppNameEmail,
-      `missing-app-credential`: AppNameEmail,
-      `missing-continue-uri`: AppNameEmail,
-      `missing-iframe-start`: AppNameEmail,
-      `missing-ios-bundle-id`: AppNameEmail,
-      `missing-multi-factor-info`: AppNameEmail,
-      `missing-multi-factor-session`: AppNameEmail,
-      `missing-or-invalid-nonce`: AppNameEmail,
-      `missing-phone-number`: AppNameEmail,
-      `missing-verification-code`: AppNameEmail,
-      `missing-verification-id`: AppNameEmail,
-      `multi-factor-info-not-found`: AppNameEmail,
-      `network-request-failed`: AppNameEmail,
-      `no-such-provider`: AppNameEmail,
-      `null-user`: AppNameEmail,
-      `operation-not-allowed`: AppNameEmail,
-      `popup-blocked`: AppNameEmail,
-      `popup-closed-by-user`: AppNameEmail,
-      `provider-already-linked`: AppNameEmail,
-      `quota-exceeded`: AppNameEmail,
-      `redirect-cancelled-by-user`: AppNameEmail,
-      `redirect-operation-pending`: AppNameEmail,
-      `rejected-credential`: AppNameEmail,
-      `requires-recent-login`: AppNameEmail,
-      `second-factor-already-in-use`: AppNameEmail,
-      `tenant-id-mismatch`: AppNameEmail,
-      timeout: AppNameEmail,
-      `too-many-requests`: AppNameEmail,
-      `unauthorized-continue-uri`: AppNameEmail,
-      `unauthorized-domain`: AppNameEmail,
-      `unsupported-first-factor`: AppNameEmail,
-      `unsupported-persistence-type`: AppNameEmail,
-      `unsupported-tenant-operation`: AppNameEmail,
-      `unverified-email`: AppNameEmail,
-      `user-cancelled`: AppNameEmail,
-      `user-disabled`: AppNameEmail,
-      `user-mismatch`: AppNameEmail,
-      `user-not-found`: AppNameEmail,
-      `user-signed-out`: AppNameEmail,
-      `user-token-expired`: AppNameEmail,
-      `weak-password`: AppNameEmail,
-      `web-storage-unsupported`: AppNameEmail,
-      `wrong-password`: AppNameEmail
+      `account-exists-with-different-credential`: EmailMessage,
+      `admin-restricted-operation`: EmailMessage,
+      `already-initialized`: EmailMessage,
+      `app-deleted`: EmailMessage,
+      `app-not-authorized`: EmailMessage,
+      `app-not-installed`: EmailMessage,
+      `auth-domain-config-required`: EmailMessage,
+      `cancelled-popup-request`: EmailMessage,
+      `captcha-check-failed`: EmailMessage,
+      `code-expired`: EmailMessage,
+      `cordova-not-ready`: EmailMessage,
+      `cors-unsupported`: EmailMessage,
+      `credential-already-in-use`: EmailMessage,
+      `custom-token-mismatch`: EmailMessage,
+      `dynamic-link-not-activated`: EmailMessage,
+      `email-already-in-use`: EmailMessage,
+      `email-change-needs-verification`: EmailMessage,
+      `emulator-config-failed`: EmailMessage,
+      `expired-action-code`: EmailMessage,
+      `invalid-action-code`: EmailMessage,
+      `invalid-api-key`: EmailMessage,
+      `invalid-app-credential`: EmailMessage,
+      `invalid-app-id`: EmailMessage,
+      `invalid-auth-event`: EmailMessage,
+      `invalid-cert-hash`: EmailMessage,
+      `invalid-continue-uri`: EmailMessage,
+      `invalid-cordova-configuration`: EmailMessage,
+      `invalid-credential`: EmailMessage,
+      `invalid-custom-token`: EmailMessage,
+      `invalid-dynamic-link-domain`: EmailMessage,
+      `invalid-email`: EmailMessage,
+      `invalid-emulator-scheme`: EmailMessage,
+      `invalid-message-payload`: EmailMessage,
+      `invalid-multi-factor-session`: EmailMessage,
+      `invalid-oauth-client-id`: EmailMessage,
+      `invalid-oauth-provider`: EmailMessage,
+      `invalid-persistence-type`: EmailMessage,
+      `invalid-phone-number`: EmailMessage,
+      `invalid-provider-id`: EmailMessage,
+      `invalid-recaptcha-action`: EmailMessage,
+      `invalid-recaptcha-token`: EmailMessage,
+      `invalid-recaptcha-version`: EmailMessage,
+      `invalid-recipient-email`: EmailMessage,
+      `invalid-req-type`: EmailMessage,
+      `invalid-sender`: EmailMessage,
+      `invalid-tenant-id`: EmailMessage,
+      `invalid-user-token`: EmailMessage,
+      `invalid-verification-code`: EmailMessage,
+      `invalid-verification-id`: EmailMessage,
+      `login-blocked`: EmailMessage,
+      `maximum-second-factor-count-exceeded`: EmailMessage,
+      `missing-android-pkg-name`: EmailMessage,
+      `missing-app-credential`: EmailMessage,
+      `missing-client-type`: EmailMessage,
+      `missing-continue-uri`: EmailMessage,
+      `missing-iframe-start`: EmailMessage,
+      `missing-ios-bundle-id`: EmailMessage,
+      `missing-multi-factor-info`: EmailMessage,
+      `missing-multi-factor-session`: EmailMessage,
+      `missing-or-invalid-nonce`: EmailMessage,
+      `missing-password`: EmailMessage,
+      `missing-phone-number`: EmailMessage,
+      `missing-recaptcha-token`: EmailMessage,
+      `missing-recaptcha-version`: EmailMessage,
+      `missing-verification-code`: EmailMessage,
+      `missing-verification-id`: EmailMessage,
+      `multi-factor-info-not-found`: EmailMessage,
+      `network-request-failed`: EmailMessage,
+      `no-such-provider`: EmailMessage,
+      `null-user`: EmailMessage,
+      `operation-not-allowed`: EmailMessage,
+      `popup-blocked`: EmailMessage,
+      `popup-closed-by-user`: EmailMessage,
+      `provider-already-linked`: EmailMessage,
+      `quota-exceeded`: EmailMessage,
+      `recaptcha-not-enabled`: EmailMessage,
+      `redirect-cancelled-by-user`: EmailMessage,
+      `redirect-operation-pending`: EmailMessage,
+      `rejected-credential`: EmailMessage,
+      `requires-recent-login`: EmailMessage,
+      `second-factor-already-in-use`: EmailMessage,
+      `tenant-id-mismatch`: EmailMessage,
+      timeout: EmailMessage,
+      `too-many-requests`: EmailMessage,
+      `unauthorized-continue-uri`: EmailMessage,
+      `unauthorized-domain`: EmailMessage,
+      `unsupported-first-factor`: EmailMessage,
+      `unsupported-persistence-type`: EmailMessage,
+      `unsupported-tenant-operation`: EmailMessage,
+      `unverified-email`: EmailMessage,
+      `user-cancelled`: EmailMessage,
+      `user-disabled`: EmailMessage,
+      `user-mismatch`: EmailMessage,
+      `user-not-found`: EmailMessage,
+      `user-signed-out`: EmailMessage,
+      `user-token-expired`: EmailMessage,
+      `weak-password`: EmailMessage,
+      `web-storage-unsupported`: EmailMessage,
+      `wrong-password`: EmailMessage
     ): GenericAuthErrorParams = {
       val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any])
       __obj.updateDynamic("account-exists-with-different-credential")(`account-exists-with-different-credential`.asInstanceOf[js.Any])
@@ -1226,7 +1329,11 @@ object distCordovaSrcCoreErrorsMod {
       __obj.updateDynamic("invalid-persistence-type")(`invalid-persistence-type`.asInstanceOf[js.Any])
       __obj.updateDynamic("invalid-phone-number")(`invalid-phone-number`.asInstanceOf[js.Any])
       __obj.updateDynamic("invalid-provider-id")(`invalid-provider-id`.asInstanceOf[js.Any])
+      __obj.updateDynamic("invalid-recaptcha-action")(`invalid-recaptcha-action`.asInstanceOf[js.Any])
+      __obj.updateDynamic("invalid-recaptcha-token")(`invalid-recaptcha-token`.asInstanceOf[js.Any])
+      __obj.updateDynamic("invalid-recaptcha-version")(`invalid-recaptcha-version`.asInstanceOf[js.Any])
       __obj.updateDynamic("invalid-recipient-email")(`invalid-recipient-email`.asInstanceOf[js.Any])
+      __obj.updateDynamic("invalid-req-type")(`invalid-req-type`.asInstanceOf[js.Any])
       __obj.updateDynamic("invalid-sender")(`invalid-sender`.asInstanceOf[js.Any])
       __obj.updateDynamic("invalid-tenant-id")(`invalid-tenant-id`.asInstanceOf[js.Any])
       __obj.updateDynamic("invalid-user-token")(`invalid-user-token`.asInstanceOf[js.Any])
@@ -1236,13 +1343,17 @@ object distCordovaSrcCoreErrorsMod {
       __obj.updateDynamic("maximum-second-factor-count-exceeded")(`maximum-second-factor-count-exceeded`.asInstanceOf[js.Any])
       __obj.updateDynamic("missing-android-pkg-name")(`missing-android-pkg-name`.asInstanceOf[js.Any])
       __obj.updateDynamic("missing-app-credential")(`missing-app-credential`.asInstanceOf[js.Any])
+      __obj.updateDynamic("missing-client-type")(`missing-client-type`.asInstanceOf[js.Any])
       __obj.updateDynamic("missing-continue-uri")(`missing-continue-uri`.asInstanceOf[js.Any])
       __obj.updateDynamic("missing-iframe-start")(`missing-iframe-start`.asInstanceOf[js.Any])
       __obj.updateDynamic("missing-ios-bundle-id")(`missing-ios-bundle-id`.asInstanceOf[js.Any])
       __obj.updateDynamic("missing-multi-factor-info")(`missing-multi-factor-info`.asInstanceOf[js.Any])
       __obj.updateDynamic("missing-multi-factor-session")(`missing-multi-factor-session`.asInstanceOf[js.Any])
       __obj.updateDynamic("missing-or-invalid-nonce")(`missing-or-invalid-nonce`.asInstanceOf[js.Any])
+      __obj.updateDynamic("missing-password")(`missing-password`.asInstanceOf[js.Any])
       __obj.updateDynamic("missing-phone-number")(`missing-phone-number`.asInstanceOf[js.Any])
+      __obj.updateDynamic("missing-recaptcha-token")(`missing-recaptcha-token`.asInstanceOf[js.Any])
+      __obj.updateDynamic("missing-recaptcha-version")(`missing-recaptcha-version`.asInstanceOf[js.Any])
       __obj.updateDynamic("missing-verification-code")(`missing-verification-code`.asInstanceOf[js.Any])
       __obj.updateDynamic("missing-verification-id")(`missing-verification-id`.asInstanceOf[js.Any])
       __obj.updateDynamic("multi-factor-info-not-found")(`multi-factor-info-not-found`.asInstanceOf[js.Any])
@@ -1254,6 +1365,7 @@ object distCordovaSrcCoreErrorsMod {
       __obj.updateDynamic("popup-closed-by-user")(`popup-closed-by-user`.asInstanceOf[js.Any])
       __obj.updateDynamic("provider-already-linked")(`provider-already-linked`.asInstanceOf[js.Any])
       __obj.updateDynamic("quota-exceeded")(`quota-exceeded`.asInstanceOf[js.Any])
+      __obj.updateDynamic("recaptcha-not-enabled")(`recaptcha-not-enabled`.asInstanceOf[js.Any])
       __obj.updateDynamic("redirect-cancelled-by-user")(`redirect-cancelled-by-user`.asInstanceOf[js.Any])
       __obj.updateDynamic("redirect-operation-pending")(`redirect-operation-pending`.asInstanceOf[js.Any])
       __obj.updateDynamic("rejected-credential")(`rejected-credential`.asInstanceOf[js.Any])
@@ -1282,185 +1394,203 @@ object distCordovaSrcCoreErrorsMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: GenericAuthErrorParams] (val x: Self) extends AnyVal {
       
-      inline def `setAccount-exists-with-different-credential`(value: AppNameEmail): Self = StObject.set(x, "account-exists-with-different-credential", value.asInstanceOf[js.Any])
+      inline def `setAccount-exists-with-different-credential`(value: EmailMessage): Self = StObject.set(x, "account-exists-with-different-credential", value.asInstanceOf[js.Any])
       
-      inline def `setAdmin-restricted-operation`(value: AppNameEmail): Self = StObject.set(x, "admin-restricted-operation", value.asInstanceOf[js.Any])
+      inline def `setAdmin-restricted-operation`(value: EmailMessage): Self = StObject.set(x, "admin-restricted-operation", value.asInstanceOf[js.Any])
       
-      inline def `setAlready-initialized`(value: AppNameEmail): Self = StObject.set(x, "already-initialized", value.asInstanceOf[js.Any])
+      inline def `setAlready-initialized`(value: EmailMessage): Self = StObject.set(x, "already-initialized", value.asInstanceOf[js.Any])
       
-      inline def `setApp-deleted`(value: AppNameEmail): Self = StObject.set(x, "app-deleted", value.asInstanceOf[js.Any])
+      inline def `setApp-deleted`(value: EmailMessage): Self = StObject.set(x, "app-deleted", value.asInstanceOf[js.Any])
       
-      inline def `setApp-not-authorized`(value: AppNameEmail): Self = StObject.set(x, "app-not-authorized", value.asInstanceOf[js.Any])
+      inline def `setApp-not-authorized`(value: EmailMessage): Self = StObject.set(x, "app-not-authorized", value.asInstanceOf[js.Any])
       
-      inline def `setApp-not-installed`(value: AppNameEmail): Self = StObject.set(x, "app-not-installed", value.asInstanceOf[js.Any])
+      inline def `setApp-not-installed`(value: EmailMessage): Self = StObject.set(x, "app-not-installed", value.asInstanceOf[js.Any])
       
-      inline def `setAuth-domain-config-required`(value: AppNameEmail): Self = StObject.set(x, "auth-domain-config-required", value.asInstanceOf[js.Any])
+      inline def `setAuth-domain-config-required`(value: EmailMessage): Self = StObject.set(x, "auth-domain-config-required", value.asInstanceOf[js.Any])
       
-      inline def `setCancelled-popup-request`(value: AppNameEmail): Self = StObject.set(x, "cancelled-popup-request", value.asInstanceOf[js.Any])
+      inline def `setCancelled-popup-request`(value: EmailMessage): Self = StObject.set(x, "cancelled-popup-request", value.asInstanceOf[js.Any])
       
-      inline def `setCaptcha-check-failed`(value: AppNameEmail): Self = StObject.set(x, "captcha-check-failed", value.asInstanceOf[js.Any])
+      inline def `setCaptcha-check-failed`(value: EmailMessage): Self = StObject.set(x, "captcha-check-failed", value.asInstanceOf[js.Any])
       
-      inline def `setCode-expired`(value: AppNameEmail): Self = StObject.set(x, "code-expired", value.asInstanceOf[js.Any])
+      inline def `setCode-expired`(value: EmailMessage): Self = StObject.set(x, "code-expired", value.asInstanceOf[js.Any])
       
-      inline def `setCordova-not-ready`(value: AppNameEmail): Self = StObject.set(x, "cordova-not-ready", value.asInstanceOf[js.Any])
+      inline def `setCordova-not-ready`(value: EmailMessage): Self = StObject.set(x, "cordova-not-ready", value.asInstanceOf[js.Any])
       
-      inline def `setCors-unsupported`(value: AppNameEmail): Self = StObject.set(x, "cors-unsupported", value.asInstanceOf[js.Any])
+      inline def `setCors-unsupported`(value: EmailMessage): Self = StObject.set(x, "cors-unsupported", value.asInstanceOf[js.Any])
       
-      inline def `setCredential-already-in-use`(value: AppNameEmail): Self = StObject.set(x, "credential-already-in-use", value.asInstanceOf[js.Any])
+      inline def `setCredential-already-in-use`(value: EmailMessage): Self = StObject.set(x, "credential-already-in-use", value.asInstanceOf[js.Any])
       
-      inline def `setCustom-token-mismatch`(value: AppNameEmail): Self = StObject.set(x, "custom-token-mismatch", value.asInstanceOf[js.Any])
+      inline def `setCustom-token-mismatch`(value: EmailMessage): Self = StObject.set(x, "custom-token-mismatch", value.asInstanceOf[js.Any])
       
-      inline def `setDynamic-link-not-activated`(value: AppNameEmail): Self = StObject.set(x, "dynamic-link-not-activated", value.asInstanceOf[js.Any])
+      inline def `setDynamic-link-not-activated`(value: EmailMessage): Self = StObject.set(x, "dynamic-link-not-activated", value.asInstanceOf[js.Any])
       
-      inline def `setEmail-already-in-use`(value: AppNameEmail): Self = StObject.set(x, "email-already-in-use", value.asInstanceOf[js.Any])
+      inline def `setEmail-already-in-use`(value: EmailMessage): Self = StObject.set(x, "email-already-in-use", value.asInstanceOf[js.Any])
       
-      inline def `setEmail-change-needs-verification`(value: AppNameEmail): Self = StObject.set(x, "email-change-needs-verification", value.asInstanceOf[js.Any])
+      inline def `setEmail-change-needs-verification`(value: EmailMessage): Self = StObject.set(x, "email-change-needs-verification", value.asInstanceOf[js.Any])
       
-      inline def `setEmulator-config-failed`(value: AppNameEmail): Self = StObject.set(x, "emulator-config-failed", value.asInstanceOf[js.Any])
+      inline def `setEmulator-config-failed`(value: EmailMessage): Self = StObject.set(x, "emulator-config-failed", value.asInstanceOf[js.Any])
       
-      inline def `setExpired-action-code`(value: AppNameEmail): Self = StObject.set(x, "expired-action-code", value.asInstanceOf[js.Any])
+      inline def `setExpired-action-code`(value: EmailMessage): Self = StObject.set(x, "expired-action-code", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-action-code`(value: AppNameEmail): Self = StObject.set(x, "invalid-action-code", value.asInstanceOf[js.Any])
+      inline def `setInvalid-action-code`(value: EmailMessage): Self = StObject.set(x, "invalid-action-code", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-api-key`(value: AppNameEmail): Self = StObject.set(x, "invalid-api-key", value.asInstanceOf[js.Any])
+      inline def `setInvalid-api-key`(value: EmailMessage): Self = StObject.set(x, "invalid-api-key", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-app-credential`(value: AppNameEmail): Self = StObject.set(x, "invalid-app-credential", value.asInstanceOf[js.Any])
+      inline def `setInvalid-app-credential`(value: EmailMessage): Self = StObject.set(x, "invalid-app-credential", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-app-id`(value: AppNameEmail): Self = StObject.set(x, "invalid-app-id", value.asInstanceOf[js.Any])
+      inline def `setInvalid-app-id`(value: EmailMessage): Self = StObject.set(x, "invalid-app-id", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-auth-event`(value: AppNameEmail): Self = StObject.set(x, "invalid-auth-event", value.asInstanceOf[js.Any])
+      inline def `setInvalid-auth-event`(value: EmailMessage): Self = StObject.set(x, "invalid-auth-event", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-cert-hash`(value: AppNameEmail): Self = StObject.set(x, "invalid-cert-hash", value.asInstanceOf[js.Any])
+      inline def `setInvalid-cert-hash`(value: EmailMessage): Self = StObject.set(x, "invalid-cert-hash", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-continue-uri`(value: AppNameEmail): Self = StObject.set(x, "invalid-continue-uri", value.asInstanceOf[js.Any])
+      inline def `setInvalid-continue-uri`(value: EmailMessage): Self = StObject.set(x, "invalid-continue-uri", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-cordova-configuration`(value: AppNameEmail): Self = StObject.set(x, "invalid-cordova-configuration", value.asInstanceOf[js.Any])
+      inline def `setInvalid-cordova-configuration`(value: EmailMessage): Self = StObject.set(x, "invalid-cordova-configuration", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-credential`(value: AppNameEmail): Self = StObject.set(x, "invalid-credential", value.asInstanceOf[js.Any])
+      inline def `setInvalid-credential`(value: EmailMessage): Self = StObject.set(x, "invalid-credential", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-custom-token`(value: AppNameEmail): Self = StObject.set(x, "invalid-custom-token", value.asInstanceOf[js.Any])
+      inline def `setInvalid-custom-token`(value: EmailMessage): Self = StObject.set(x, "invalid-custom-token", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-dynamic-link-domain`(value: AppNameEmail): Self = StObject.set(x, "invalid-dynamic-link-domain", value.asInstanceOf[js.Any])
+      inline def `setInvalid-dynamic-link-domain`(value: EmailMessage): Self = StObject.set(x, "invalid-dynamic-link-domain", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-email`(value: AppNameEmail): Self = StObject.set(x, "invalid-email", value.asInstanceOf[js.Any])
+      inline def `setInvalid-email`(value: EmailMessage): Self = StObject.set(x, "invalid-email", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-emulator-scheme`(value: AppNameEmail): Self = StObject.set(x, "invalid-emulator-scheme", value.asInstanceOf[js.Any])
+      inline def `setInvalid-emulator-scheme`(value: EmailMessage): Self = StObject.set(x, "invalid-emulator-scheme", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-message-payload`(value: AppNameEmail): Self = StObject.set(x, "invalid-message-payload", value.asInstanceOf[js.Any])
+      inline def `setInvalid-message-payload`(value: EmailMessage): Self = StObject.set(x, "invalid-message-payload", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-multi-factor-session`(value: AppNameEmail): Self = StObject.set(x, "invalid-multi-factor-session", value.asInstanceOf[js.Any])
+      inline def `setInvalid-multi-factor-session`(value: EmailMessage): Self = StObject.set(x, "invalid-multi-factor-session", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-oauth-client-id`(value: AppNameEmail): Self = StObject.set(x, "invalid-oauth-client-id", value.asInstanceOf[js.Any])
+      inline def `setInvalid-oauth-client-id`(value: EmailMessage): Self = StObject.set(x, "invalid-oauth-client-id", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-oauth-provider`(value: AppNameEmail): Self = StObject.set(x, "invalid-oauth-provider", value.asInstanceOf[js.Any])
+      inline def `setInvalid-oauth-provider`(value: EmailMessage): Self = StObject.set(x, "invalid-oauth-provider", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-persistence-type`(value: AppNameEmail): Self = StObject.set(x, "invalid-persistence-type", value.asInstanceOf[js.Any])
+      inline def `setInvalid-persistence-type`(value: EmailMessage): Self = StObject.set(x, "invalid-persistence-type", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-phone-number`(value: AppNameEmail): Self = StObject.set(x, "invalid-phone-number", value.asInstanceOf[js.Any])
+      inline def `setInvalid-phone-number`(value: EmailMessage): Self = StObject.set(x, "invalid-phone-number", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-provider-id`(value: AppNameEmail): Self = StObject.set(x, "invalid-provider-id", value.asInstanceOf[js.Any])
+      inline def `setInvalid-provider-id`(value: EmailMessage): Self = StObject.set(x, "invalid-provider-id", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-recipient-email`(value: AppNameEmail): Self = StObject.set(x, "invalid-recipient-email", value.asInstanceOf[js.Any])
+      inline def `setInvalid-recaptcha-action`(value: EmailMessage): Self = StObject.set(x, "invalid-recaptcha-action", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-sender`(value: AppNameEmail): Self = StObject.set(x, "invalid-sender", value.asInstanceOf[js.Any])
+      inline def `setInvalid-recaptcha-token`(value: EmailMessage): Self = StObject.set(x, "invalid-recaptcha-token", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-tenant-id`(value: AppNameEmail): Self = StObject.set(x, "invalid-tenant-id", value.asInstanceOf[js.Any])
+      inline def `setInvalid-recaptcha-version`(value: EmailMessage): Self = StObject.set(x, "invalid-recaptcha-version", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-user-token`(value: AppNameEmail): Self = StObject.set(x, "invalid-user-token", value.asInstanceOf[js.Any])
+      inline def `setInvalid-recipient-email`(value: EmailMessage): Self = StObject.set(x, "invalid-recipient-email", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-verification-code`(value: AppNameEmail): Self = StObject.set(x, "invalid-verification-code", value.asInstanceOf[js.Any])
+      inline def `setInvalid-req-type`(value: EmailMessage): Self = StObject.set(x, "invalid-req-type", value.asInstanceOf[js.Any])
       
-      inline def `setInvalid-verification-id`(value: AppNameEmail): Self = StObject.set(x, "invalid-verification-id", value.asInstanceOf[js.Any])
+      inline def `setInvalid-sender`(value: EmailMessage): Self = StObject.set(x, "invalid-sender", value.asInstanceOf[js.Any])
       
-      inline def `setLogin-blocked`(value: AppNameEmail): Self = StObject.set(x, "login-blocked", value.asInstanceOf[js.Any])
+      inline def `setInvalid-tenant-id`(value: EmailMessage): Self = StObject.set(x, "invalid-tenant-id", value.asInstanceOf[js.Any])
       
-      inline def `setMaximum-second-factor-count-exceeded`(value: AppNameEmail): Self = StObject.set(x, "maximum-second-factor-count-exceeded", value.asInstanceOf[js.Any])
+      inline def `setInvalid-user-token`(value: EmailMessage): Self = StObject.set(x, "invalid-user-token", value.asInstanceOf[js.Any])
       
-      inline def `setMissing-android-pkg-name`(value: AppNameEmail): Self = StObject.set(x, "missing-android-pkg-name", value.asInstanceOf[js.Any])
+      inline def `setInvalid-verification-code`(value: EmailMessage): Self = StObject.set(x, "invalid-verification-code", value.asInstanceOf[js.Any])
       
-      inline def `setMissing-app-credential`(value: AppNameEmail): Self = StObject.set(x, "missing-app-credential", value.asInstanceOf[js.Any])
+      inline def `setInvalid-verification-id`(value: EmailMessage): Self = StObject.set(x, "invalid-verification-id", value.asInstanceOf[js.Any])
       
-      inline def `setMissing-continue-uri`(value: AppNameEmail): Self = StObject.set(x, "missing-continue-uri", value.asInstanceOf[js.Any])
+      inline def `setLogin-blocked`(value: EmailMessage): Self = StObject.set(x, "login-blocked", value.asInstanceOf[js.Any])
       
-      inline def `setMissing-iframe-start`(value: AppNameEmail): Self = StObject.set(x, "missing-iframe-start", value.asInstanceOf[js.Any])
+      inline def `setMaximum-second-factor-count-exceeded`(value: EmailMessage): Self = StObject.set(x, "maximum-second-factor-count-exceeded", value.asInstanceOf[js.Any])
       
-      inline def `setMissing-ios-bundle-id`(value: AppNameEmail): Self = StObject.set(x, "missing-ios-bundle-id", value.asInstanceOf[js.Any])
+      inline def `setMissing-android-pkg-name`(value: EmailMessage): Self = StObject.set(x, "missing-android-pkg-name", value.asInstanceOf[js.Any])
       
-      inline def `setMissing-multi-factor-info`(value: AppNameEmail): Self = StObject.set(x, "missing-multi-factor-info", value.asInstanceOf[js.Any])
+      inline def `setMissing-app-credential`(value: EmailMessage): Self = StObject.set(x, "missing-app-credential", value.asInstanceOf[js.Any])
       
-      inline def `setMissing-multi-factor-session`(value: AppNameEmail): Self = StObject.set(x, "missing-multi-factor-session", value.asInstanceOf[js.Any])
+      inline def `setMissing-client-type`(value: EmailMessage): Self = StObject.set(x, "missing-client-type", value.asInstanceOf[js.Any])
       
-      inline def `setMissing-or-invalid-nonce`(value: AppNameEmail): Self = StObject.set(x, "missing-or-invalid-nonce", value.asInstanceOf[js.Any])
+      inline def `setMissing-continue-uri`(value: EmailMessage): Self = StObject.set(x, "missing-continue-uri", value.asInstanceOf[js.Any])
       
-      inline def `setMissing-phone-number`(value: AppNameEmail): Self = StObject.set(x, "missing-phone-number", value.asInstanceOf[js.Any])
+      inline def `setMissing-iframe-start`(value: EmailMessage): Self = StObject.set(x, "missing-iframe-start", value.asInstanceOf[js.Any])
       
-      inline def `setMissing-verification-code`(value: AppNameEmail): Self = StObject.set(x, "missing-verification-code", value.asInstanceOf[js.Any])
+      inline def `setMissing-ios-bundle-id`(value: EmailMessage): Self = StObject.set(x, "missing-ios-bundle-id", value.asInstanceOf[js.Any])
       
-      inline def `setMissing-verification-id`(value: AppNameEmail): Self = StObject.set(x, "missing-verification-id", value.asInstanceOf[js.Any])
+      inline def `setMissing-multi-factor-info`(value: EmailMessage): Self = StObject.set(x, "missing-multi-factor-info", value.asInstanceOf[js.Any])
       
-      inline def `setMulti-factor-info-not-found`(value: AppNameEmail): Self = StObject.set(x, "multi-factor-info-not-found", value.asInstanceOf[js.Any])
+      inline def `setMissing-multi-factor-session`(value: EmailMessage): Self = StObject.set(x, "missing-multi-factor-session", value.asInstanceOf[js.Any])
       
-      inline def `setNetwork-request-failed`(value: AppNameEmail): Self = StObject.set(x, "network-request-failed", value.asInstanceOf[js.Any])
+      inline def `setMissing-or-invalid-nonce`(value: EmailMessage): Self = StObject.set(x, "missing-or-invalid-nonce", value.asInstanceOf[js.Any])
       
-      inline def `setNo-such-provider`(value: AppNameEmail): Self = StObject.set(x, "no-such-provider", value.asInstanceOf[js.Any])
+      inline def `setMissing-password`(value: EmailMessage): Self = StObject.set(x, "missing-password", value.asInstanceOf[js.Any])
       
-      inline def `setNull-user`(value: AppNameEmail): Self = StObject.set(x, "null-user", value.asInstanceOf[js.Any])
+      inline def `setMissing-phone-number`(value: EmailMessage): Self = StObject.set(x, "missing-phone-number", value.asInstanceOf[js.Any])
       
-      inline def `setOperation-not-allowed`(value: AppNameEmail): Self = StObject.set(x, "operation-not-allowed", value.asInstanceOf[js.Any])
+      inline def `setMissing-recaptcha-token`(value: EmailMessage): Self = StObject.set(x, "missing-recaptcha-token", value.asInstanceOf[js.Any])
       
-      inline def `setPopup-blocked`(value: AppNameEmail): Self = StObject.set(x, "popup-blocked", value.asInstanceOf[js.Any])
+      inline def `setMissing-recaptcha-version`(value: EmailMessage): Self = StObject.set(x, "missing-recaptcha-version", value.asInstanceOf[js.Any])
       
-      inline def `setPopup-closed-by-user`(value: AppNameEmail): Self = StObject.set(x, "popup-closed-by-user", value.asInstanceOf[js.Any])
+      inline def `setMissing-verification-code`(value: EmailMessage): Self = StObject.set(x, "missing-verification-code", value.asInstanceOf[js.Any])
       
-      inline def `setProvider-already-linked`(value: AppNameEmail): Self = StObject.set(x, "provider-already-linked", value.asInstanceOf[js.Any])
+      inline def `setMissing-verification-id`(value: EmailMessage): Self = StObject.set(x, "missing-verification-id", value.asInstanceOf[js.Any])
       
-      inline def `setQuota-exceeded`(value: AppNameEmail): Self = StObject.set(x, "quota-exceeded", value.asInstanceOf[js.Any])
+      inline def `setMulti-factor-info-not-found`(value: EmailMessage): Self = StObject.set(x, "multi-factor-info-not-found", value.asInstanceOf[js.Any])
       
-      inline def `setRedirect-cancelled-by-user`(value: AppNameEmail): Self = StObject.set(x, "redirect-cancelled-by-user", value.asInstanceOf[js.Any])
+      inline def `setNetwork-request-failed`(value: EmailMessage): Self = StObject.set(x, "network-request-failed", value.asInstanceOf[js.Any])
       
-      inline def `setRedirect-operation-pending`(value: AppNameEmail): Self = StObject.set(x, "redirect-operation-pending", value.asInstanceOf[js.Any])
+      inline def `setNo-such-provider`(value: EmailMessage): Self = StObject.set(x, "no-such-provider", value.asInstanceOf[js.Any])
       
-      inline def `setRejected-credential`(value: AppNameEmail): Self = StObject.set(x, "rejected-credential", value.asInstanceOf[js.Any])
+      inline def `setNull-user`(value: EmailMessage): Self = StObject.set(x, "null-user", value.asInstanceOf[js.Any])
       
-      inline def `setRequires-recent-login`(value: AppNameEmail): Self = StObject.set(x, "requires-recent-login", value.asInstanceOf[js.Any])
+      inline def `setOperation-not-allowed`(value: EmailMessage): Self = StObject.set(x, "operation-not-allowed", value.asInstanceOf[js.Any])
       
-      inline def `setSecond-factor-already-in-use`(value: AppNameEmail): Self = StObject.set(x, "second-factor-already-in-use", value.asInstanceOf[js.Any])
+      inline def `setPopup-blocked`(value: EmailMessage): Self = StObject.set(x, "popup-blocked", value.asInstanceOf[js.Any])
       
-      inline def `setTenant-id-mismatch`(value: AppNameEmail): Self = StObject.set(x, "tenant-id-mismatch", value.asInstanceOf[js.Any])
+      inline def `setPopup-closed-by-user`(value: EmailMessage): Self = StObject.set(x, "popup-closed-by-user", value.asInstanceOf[js.Any])
       
-      inline def setTimeout(value: AppNameEmail): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def `setProvider-already-linked`(value: EmailMessage): Self = StObject.set(x, "provider-already-linked", value.asInstanceOf[js.Any])
       
-      inline def `setToo-many-requests`(value: AppNameEmail): Self = StObject.set(x, "too-many-requests", value.asInstanceOf[js.Any])
+      inline def `setQuota-exceeded`(value: EmailMessage): Self = StObject.set(x, "quota-exceeded", value.asInstanceOf[js.Any])
       
-      inline def `setUnauthorized-continue-uri`(value: AppNameEmail): Self = StObject.set(x, "unauthorized-continue-uri", value.asInstanceOf[js.Any])
+      inline def `setRecaptcha-not-enabled`(value: EmailMessage): Self = StObject.set(x, "recaptcha-not-enabled", value.asInstanceOf[js.Any])
       
-      inline def `setUnauthorized-domain`(value: AppNameEmail): Self = StObject.set(x, "unauthorized-domain", value.asInstanceOf[js.Any])
+      inline def `setRedirect-cancelled-by-user`(value: EmailMessage): Self = StObject.set(x, "redirect-cancelled-by-user", value.asInstanceOf[js.Any])
       
-      inline def `setUnsupported-first-factor`(value: AppNameEmail): Self = StObject.set(x, "unsupported-first-factor", value.asInstanceOf[js.Any])
+      inline def `setRedirect-operation-pending`(value: EmailMessage): Self = StObject.set(x, "redirect-operation-pending", value.asInstanceOf[js.Any])
       
-      inline def `setUnsupported-persistence-type`(value: AppNameEmail): Self = StObject.set(x, "unsupported-persistence-type", value.asInstanceOf[js.Any])
+      inline def `setRejected-credential`(value: EmailMessage): Self = StObject.set(x, "rejected-credential", value.asInstanceOf[js.Any])
       
-      inline def `setUnsupported-tenant-operation`(value: AppNameEmail): Self = StObject.set(x, "unsupported-tenant-operation", value.asInstanceOf[js.Any])
+      inline def `setRequires-recent-login`(value: EmailMessage): Self = StObject.set(x, "requires-recent-login", value.asInstanceOf[js.Any])
       
-      inline def `setUnverified-email`(value: AppNameEmail): Self = StObject.set(x, "unverified-email", value.asInstanceOf[js.Any])
+      inline def `setSecond-factor-already-in-use`(value: EmailMessage): Self = StObject.set(x, "second-factor-already-in-use", value.asInstanceOf[js.Any])
       
-      inline def `setUser-cancelled`(value: AppNameEmail): Self = StObject.set(x, "user-cancelled", value.asInstanceOf[js.Any])
+      inline def `setTenant-id-mismatch`(value: EmailMessage): Self = StObject.set(x, "tenant-id-mismatch", value.asInstanceOf[js.Any])
       
-      inline def `setUser-disabled`(value: AppNameEmail): Self = StObject.set(x, "user-disabled", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: EmailMessage): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      inline def `setUser-mismatch`(value: AppNameEmail): Self = StObject.set(x, "user-mismatch", value.asInstanceOf[js.Any])
+      inline def `setToo-many-requests`(value: EmailMessage): Self = StObject.set(x, "too-many-requests", value.asInstanceOf[js.Any])
       
-      inline def `setUser-not-found`(value: AppNameEmail): Self = StObject.set(x, "user-not-found", value.asInstanceOf[js.Any])
+      inline def `setUnauthorized-continue-uri`(value: EmailMessage): Self = StObject.set(x, "unauthorized-continue-uri", value.asInstanceOf[js.Any])
       
-      inline def `setUser-signed-out`(value: AppNameEmail): Self = StObject.set(x, "user-signed-out", value.asInstanceOf[js.Any])
+      inline def `setUnauthorized-domain`(value: EmailMessage): Self = StObject.set(x, "unauthorized-domain", value.asInstanceOf[js.Any])
       
-      inline def `setUser-token-expired`(value: AppNameEmail): Self = StObject.set(x, "user-token-expired", value.asInstanceOf[js.Any])
+      inline def `setUnsupported-first-factor`(value: EmailMessage): Self = StObject.set(x, "unsupported-first-factor", value.asInstanceOf[js.Any])
       
-      inline def `setWeak-password`(value: AppNameEmail): Self = StObject.set(x, "weak-password", value.asInstanceOf[js.Any])
+      inline def `setUnsupported-persistence-type`(value: EmailMessage): Self = StObject.set(x, "unsupported-persistence-type", value.asInstanceOf[js.Any])
       
-      inline def `setWeb-storage-unsupported`(value: AppNameEmail): Self = StObject.set(x, "web-storage-unsupported", value.asInstanceOf[js.Any])
+      inline def `setUnsupported-tenant-operation`(value: EmailMessage): Self = StObject.set(x, "unsupported-tenant-operation", value.asInstanceOf[js.Any])
       
-      inline def `setWrong-password`(value: AppNameEmail): Self = StObject.set(x, "wrong-password", value.asInstanceOf[js.Any])
+      inline def `setUnverified-email`(value: EmailMessage): Self = StObject.set(x, "unverified-email", value.asInstanceOf[js.Any])
+      
+      inline def `setUser-cancelled`(value: EmailMessage): Self = StObject.set(x, "user-cancelled", value.asInstanceOf[js.Any])
+      
+      inline def `setUser-disabled`(value: EmailMessage): Self = StObject.set(x, "user-disabled", value.asInstanceOf[js.Any])
+      
+      inline def `setUser-mismatch`(value: EmailMessage): Self = StObject.set(x, "user-mismatch", value.asInstanceOf[js.Any])
+      
+      inline def `setUser-not-found`(value: EmailMessage): Self = StObject.set(x, "user-not-found", value.asInstanceOf[js.Any])
+      
+      inline def `setUser-signed-out`(value: EmailMessage): Self = StObject.set(x, "user-signed-out", value.asInstanceOf[js.Any])
+      
+      inline def `setUser-token-expired`(value: EmailMessage): Self = StObject.set(x, "user-token-expired", value.asInstanceOf[js.Any])
+      
+      inline def `setWeak-password`(value: EmailMessage): Self = StObject.set(x, "weak-password", value.asInstanceOf[js.Any])
+      
+      inline def `setWeb-storage-unsupported`(value: EmailMessage): Self = StObject.set(x, "web-storage-unsupported", value.asInstanceOf[js.Any])
+      
+      inline def `setWrong-password`(value: EmailMessage): Self = StObject.set(x, "wrong-password", value.asInstanceOf[js.Any])
     }
   }
   

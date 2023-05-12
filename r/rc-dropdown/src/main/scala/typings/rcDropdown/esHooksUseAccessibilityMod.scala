@@ -19,7 +19,7 @@ object esHooksUseAccessibilityMod {
     
     var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
     
-    def setTriggerVisible(visible: Boolean): Unit
+    var overlayRef: js.UndefOr[RefObject[Any]] = js.undefined
     
     var triggerRef: RefObject[Any]
     
@@ -27,8 +27,8 @@ object esHooksUseAccessibilityMod {
   }
   object UseAccessibilityProps {
     
-    inline def apply(setTriggerVisible: Boolean => Unit, triggerRef: RefObject[Any], visible: Boolean): UseAccessibilityProps = {
-      val __obj = js.Dynamic.literal(setTriggerVisible = js.Any.fromFunction1(setTriggerVisible), triggerRef = triggerRef.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
+    inline def apply(triggerRef: RefObject[Any], visible: Boolean): UseAccessibilityProps = {
+      val __obj = js.Dynamic.literal(triggerRef = triggerRef.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
       __obj.asInstanceOf[UseAccessibilityProps]
     }
     
@@ -43,7 +43,9 @@ object esHooksUseAccessibilityMod {
       
       inline def setOnVisibleChangeUndefined: Self = StObject.set(x, "onVisibleChange", js.undefined)
       
-      inline def setSetTriggerVisible(value: Boolean => Unit): Self = StObject.set(x, "setTriggerVisible", js.Any.fromFunction1(value))
+      inline def setOverlayRef(value: RefObject[Any]): Self = StObject.set(x, "overlayRef", value.asInstanceOf[js.Any])
+      
+      inline def setOverlayRefUndefined: Self = StObject.set(x, "overlayRef", js.undefined)
       
       inline def setTriggerRef(value: RefObject[Any]): Self = StObject.set(x, "triggerRef", value.asInstanceOf[js.Any])
       

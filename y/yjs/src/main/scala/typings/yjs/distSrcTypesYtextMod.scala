@@ -77,7 +77,7 @@ object distSrcTypesYtextMod {
       * Apply a {@link Delta} on this shared YText type.
       *
       * @param {any} delta The changes to apply on this element.
-      * @param {object}  [opts]
+      * @param {object}  opts
       * @param {boolean} [opts.sanitize] Sanitize input delta. Removes ending newlines if set to true.
       *
       *
@@ -126,13 +126,11 @@ object distSrcTypesYtextMod {
       *
       * @note Xml-Text nodes don't have attributes. You can use this feature to assign properties to complete text-blocks.
       *
-      * @param {Snapshot} [snapshot]
       * @return {Object<string, any>} A JSON Object that describes the attributes.
       *
       * @public
       */
     def getAttributes(): StringDictionary[Any] = js.native
-    def getAttributes(snapshot: Snapshot_): StringDictionary[Any] = js.native
     
     /**
       * Insert text at a given index.
@@ -254,8 +252,8 @@ object distSrcTypesYtextMod {
   
   inline def cleanupYTextFormatting(`type`: YText): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanupYTextFormatting")(`type`.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def readYText(decoder: UpdateDecoderV1): YText = ^.asInstanceOf[js.Dynamic].applyDynamic("readYText")(decoder.asInstanceOf[js.Any]).asInstanceOf[YText]
-  inline def readYText(decoder: UpdateDecoderV2): YText = ^.asInstanceOf[js.Dynamic].applyDynamic("readYText")(decoder.asInstanceOf[js.Any]).asInstanceOf[YText]
+  inline def readYText(_decoder: UpdateDecoderV1): YText = ^.asInstanceOf[js.Dynamic].applyDynamic("readYText")(_decoder.asInstanceOf[js.Any]).asInstanceOf[YText]
+  inline def readYText(_decoder: UpdateDecoderV2): YText = ^.asInstanceOf[js.Dynamic].applyDynamic("readYText")(_decoder.asInstanceOf[js.Any]).asInstanceOf[YText]
   
   type TextAttributes = js.Object
 }

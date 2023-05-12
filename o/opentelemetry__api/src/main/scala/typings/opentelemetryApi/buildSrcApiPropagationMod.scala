@@ -47,6 +47,10 @@ object buildSrcApiPropagationMod {
       */
     def fields(): js.Array[String] = js.native
     
+    def getActiveBaggage(): js.UndefOr[Baggage] = js.native
+    @JSName("getActiveBaggage")
+    var getActiveBaggage_Original: js.Function0[js.UndefOr[Baggage]] = js.native
+    
     def getBaggage(context: Context): js.UndefOr[Baggage] = js.native
     @JSName("getBaggage")
     var getBaggage_Original: js.Function1[/* context */ Context, js.UndefOr[Baggage]] = js.native

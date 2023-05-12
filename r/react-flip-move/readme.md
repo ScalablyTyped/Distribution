@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-flip-move
 
-Typings are for version 3.0.4
+Typings are for version 3.0.5
 
 ## Library description:
 Effortless animation between DOM changes (eg. list reordering) using the FLIP technique.

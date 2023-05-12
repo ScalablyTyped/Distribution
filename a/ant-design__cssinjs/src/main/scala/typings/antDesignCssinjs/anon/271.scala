@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.GridTemplateRows
+import typings.csstype.mod.Property.ImageResolution
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `271` extends StObject {
   
   var value: js.UndefOr[
-    (GridTemplateRows[Double | String]) | (js.Array[
+    ImageResolution | (js.Array[
       (Extract[
-        js.UndefOr[
-          (GridTemplateRows[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridTemplateRows[Double | String]]]])
-        ], 
+        js.UndefOr[ImageResolution | js.Array[NonNullable[js.UndefOr[ImageResolution]]]], 
         String
-      ]) | (NonNullable[js.UndefOr[GridTemplateRows[Double | String]]])
+      ]) | NonNullable[js.UndefOr[ImageResolution]]
     ])
   ] = js.native
 }

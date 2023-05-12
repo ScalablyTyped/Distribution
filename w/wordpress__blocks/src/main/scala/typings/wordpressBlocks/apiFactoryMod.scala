@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Partial
 import typings.std.Record
 import typings.wordpressBlocks.anon.BlockName
-import typings.wordpressBlocks.mod.Block
-import typings.wordpressBlocks.mod.BlockInstance
-import typings.wordpressBlocks.mod.Transform
 import typings.wordpressBlocks.wordpressBlocksStrings.from
 import typings.wordpressBlocks.wordpressBlocksStrings.to
 import org.scalablytyped.runtime.StObject

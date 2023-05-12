@@ -8,6 +8,7 @@ trait TaskFileAttachment
   extends StObject
      with AttachmentBase {
   
+  // The base64-encoded contents of the file.
   var contentBytes: js.UndefOr[String] = js.undefined
 }
 object TaskFileAttachment {

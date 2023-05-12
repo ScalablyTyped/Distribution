@@ -15,6 +15,11 @@ object WebGPUTintWASM {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("babylonjs/index", "WebGPUTintWASM.DisableUniformityAnalysis")
+  @js.native
+  def DisableUniformityAnalysis: Boolean = js.native
+  inline def DisableUniformityAnalysis_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DisableUniformityAnalysis")(x.asInstanceOf[js.Any])
+  
   @JSImport("babylonjs/index", "WebGPUTintWASM.ShowWGSLShaderCode")
   @js.native
   def ShowWGSLShaderCode: Boolean = js.native
@@ -23,4 +28,9 @@ object WebGPUTintWASM {
   @JSImport("babylonjs/index", "WebGPUTintWASM._TWgslDefaultOptions")
   @js.native
   val _TWgslDefaultOptions: Any = js.native
+  
+  @JSImport("babylonjs/index", "WebGPUTintWASM._twgsl")
+  @js.native
+  def _twgsl: Any = js.native
+  inline def _twgsl_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_twgsl")(x.asInstanceOf[js.Any])
 }

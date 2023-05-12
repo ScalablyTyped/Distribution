@@ -13,34 +13,87 @@ object menuitemMenuitemMod {
   
   trait MenuItem extends StObject {
     
+    /**
+      * Style class of the menuitem.
+      */
     var className: js.UndefOr[String] = js.undefined
     
-    var command: js.UndefOr[js.Function1[/* e */ MenuItemCommandParams, Unit]] = js.undefined
+    /**
+      * Callback to execute when item is clicked.
+      * @param {MenuItemCommandEvent} event - Custom command event.
+      */
+    var command: js.UndefOr[js.Function1[/* event */ MenuItemCommandEvent, Unit]] = js.undefined
     
+    /**
+      * The data of the menuitem.
+      */
     var data: js.UndefOr[Any] = js.undefined
     
+    /**
+      * When set as true, disables the menuitem.
+      * @defaultValue false
+      */
     var disabled: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Visibility of submenu.
+      * @defaultValue false
+      */
     var expanded: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Icon of the item. It can be a string, JSX.Element or method.
+      */
     var icon: js.UndefOr[Any] = js.undefined
     
+    /**
+      * Unique identifier of the menuitem.
+      */
     var id: js.UndefOr[String] = js.undefined
     
+    /**
+      * An array of children the menuitems.
+      */
     var items: js.UndefOr[js.Array[js.Array[MenuItem] | MenuItem]] = js.undefined
     
+    /**
+      * Text of the menuitem.
+      */
     var label: js.UndefOr[String] = js.undefined
     
+    /**
+      * Defines the item as a separator.
+      * @defaultValue false
+      */
     var separator: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Inline style of the menuitem.
+      */
     var style: js.UndefOr[CSSProperties] = js.undefined
     
+    /**
+      * Specifies where to open the linked document.
+      */
     var target: js.UndefOr[String] = js.undefined
     
-    var template: js.UndefOr[MenuItemTemplateType] = js.undefined
+    /**
+      * Template of the menuitem.
+      * @deprecated Since v9.3.0
+      */
+    var template: js.UndefOr[
+        ReactNode | (js.Function2[/* item */ this.type, /* options */ MenuItemOptions, ReactNode])
+      ] = js.undefined
     
+    /**
+      * External link to navigate when item is clicked.
+      */
     var url: js.UndefOr[String] = js.undefined
     
+    /**
+      * When set as false, hides the menuitem.
+      * @defaultValue true
+      */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
   object MenuItem {
@@ -57,7 +110,7 @@ object menuitemMenuitemMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setCommand(value: /* e */ MenuItemCommandParams => Unit): Self = StObject.set(x, "command", js.Any.fromFunction1(value))
+      inline def setCommand(value: /* event */ MenuItemCommandEvent => Unit): Self = StObject.set(x, "command", js.Any.fromFunction1(value))
       
       inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
       
@@ -103,9 +156,9 @@ object menuitemMenuitemMod {
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      inline def setTemplate(value: MenuItemTemplateType): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: ReactNode | (js.Function2[MenuItem, /* options */ MenuItemOptions, ReactNode])): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      inline def setTemplateFunction2(value: (/* item */ MenuItem, /* options */ MenuItemOptions) => ReactNode): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
+      inline def setTemplateFunction2(value: (MenuItem, /* options */ MenuItemOptions) => ReactNode): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
       
       inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
       
@@ -119,21 +172,32 @@ object menuitemMenuitemMod {
     }
   }
   
-  trait MenuItemCommandParams extends StObject {
+  /**
+    * Custom command event.
+    * @see {@link MenuItem.command}
+    * @event
+    */
+  trait MenuItemCommandEvent extends StObject {
     
+    /**
+      * Selected item instance.
+      */
     var item: MenuItem
     
+    /**
+      * Browser event
+      */
     var originalEvent: SyntheticEvent[Element, Event]
   }
-  object MenuItemCommandParams {
+  object MenuItemCommandEvent {
     
-    inline def apply(item: MenuItem, originalEvent: SyntheticEvent[Element, Event]): MenuItemCommandParams = {
+    inline def apply(item: MenuItem, originalEvent: SyntheticEvent[Element, Event]): MenuItemCommandEvent = {
       val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any])
-      __obj.asInstanceOf[MenuItemCommandParams]
+      __obj.asInstanceOf[MenuItemCommandEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: MenuItemCommandParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: MenuItemCommandEvent] (val x: Self) extends AnyVal {
       
       inline def setItem(value: MenuItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
@@ -141,18 +205,41 @@ object menuitemMenuitemMod {
     }
   }
   
+  /**
+    * Menu item options
+    * @deprecated Since v9.3.0
+    */
   trait MenuItemOptions extends StObject {
     
+    /**
+      * Style class of the component.
+      */
     var className: String
     
+    /**
+      * Default element created by the component.
+      */
     var element: ReactNode
     
+    /**
+      * Class name of the options icon.
+      */
     var iconClassName: String
     
+    /**
+      * Style class of the label element.
+      */
     var labelClassName: String
     
+    /**
+      * Callback to invoke on click.
+      * @param {React.SyntheticEvent} event - Browser event.
+      */
     def onClick(event: SyntheticEvent[Element, Event]): Unit
     
+    /**
+      * All component props
+      */
     var props: Any
   }
   object MenuItemOptions {
@@ -186,6 +273,4 @@ object menuitemMenuitemMod {
       inline def setProps(value: Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }
-  
-  type MenuItemTemplateType = ReactNode | (js.Function2[/* item */ MenuItem, /* options */ MenuItemOptions, ReactNode])
 }

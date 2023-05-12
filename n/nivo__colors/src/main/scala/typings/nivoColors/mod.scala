@@ -6,9 +6,7 @@ import typings.d3Scale.mod.ScaleSequential_
 import typings.nivoColors.anon.Datum
 import typings.nivoColors.anon.From
 import typings.nivoColors.anon.Key
-import typings.nivoColors.anon.PartialPickCompleteThemeb
 import typings.nivoColors.anon.Scheme
-import typings.nivoColors.anon.Theme
 import typings.nivoColors.distTypesInheritedColorMod.InheritedColorConfig
 import typings.nivoColors.distTypesInheritedColorMod.InheritedColorConfigCustomFunction
 import typings.nivoColors.distTypesScalesContinuousColorScaleMod.ContinuousColorScaleConfig
@@ -69,6 +67,7 @@ import typings.nivoColors.nivoColorsStrings.yellow_green
 import typings.nivoColors.nivoColorsStrings.yellow_green_blue
 import typings.nivoColors.nivoColorsStrings.yellow_orange_brown
 import typings.nivoColors.nivoColorsStrings.yellow_orange_red
+import typings.nivoCore.mod.Theme
 import typings.propTypes.mod.InferProps
 import typings.propTypes.mod.Requireable
 import typings.std.NonNullable
@@ -761,7 +760,7 @@ object mod {
   inline def getDivergingColorScale(config: DivergingColorScaleConfig, values: DivergingColorScaleValues): ScaleDiverging_[String, scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDivergingColorScale")(config.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[ScaleDiverging_[String, scala.Nothing]]
   
   inline def getInheritedColorGenerator[Datum](config: InheritedColorConfig[Datum]): InheritedColorConfigCustomFunction[Datum] | (js.Function1[/* d */ Datum, Any]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getInheritedColorGenerator")(config.asInstanceOf[js.Any]).asInstanceOf[InheritedColorConfigCustomFunction[Datum] | (js.Function1[/* d */ Datum, Any])]
-  inline def getInheritedColorGenerator[Datum](config: InheritedColorConfig[Datum], theme: PartialPickCompleteThemeb): InheritedColorConfigCustomFunction[Datum] | (js.Function1[/* d */ Datum, Any]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getInheritedColorGenerator")(config.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[InheritedColorConfigCustomFunction[Datum] | (js.Function1[/* d */ Datum, Any])]
+  inline def getInheritedColorGenerator[Datum](config: InheritedColorConfig[Datum], theme: Theme): InheritedColorConfigCustomFunction[Datum] | (js.Function1[/* d */ Datum, Any]) = (^.asInstanceOf[js.Dynamic].applyDynamic("getInheritedColorGenerator")(config.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[InheritedColorConfigCustomFunction[Datum] | (js.Function1[/* d */ Datum, Any])]
   
   inline def getOrdinalColorScale[Datum](config: OrdinalColorScaleConfig[Datum]): OrdinalColorScale[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrdinalColorScale")(config.asInstanceOf[js.Any]).asInstanceOf[OrdinalColorScale[Datum]]
   inline def getOrdinalColorScale[Datum](config: OrdinalColorScaleConfig[Datum], identity: String): OrdinalColorScale[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOrdinalColorScale")(config.asInstanceOf[js.Any], identity.asInstanceOf[js.Any])).asInstanceOf[OrdinalColorScale[Datum]]
@@ -773,7 +772,13 @@ object mod {
   
   @JSImport("@nivo/colors", "inheritedColorPropType")
   @js.native
-  val inheritedColorPropType: Requireable[String | (js.Function1[/* repeated */ Any, Any]) | (InferProps[From | Theme])] = js.native
+  val inheritedColorPropType: Requireable[
+    NonNullable[
+      js.UndefOr[
+        String | (js.Function1[/* repeated */ Any, Any]) | (InferProps[From | typings.nivoColors.anon.Theme]) | Null
+      ]
+    ]
+  ] = js.native
   
   inline def isCategoricalColorScheme(scheme: ColorSchemeId): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCategoricalColorScheme")(scheme.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
@@ -784,7 +789,11 @@ object mod {
   @JSImport("@nivo/colors", "ordinalColorsPropType")
   @js.native
   val ordinalColorsPropType: Requireable[
-    String | (js.Function1[/* repeated */ Any, Any]) | (js.Array[js.UndefOr[String | Null]]) | (InferProps[Datum | Scheme])
+    NonNullable[
+      js.UndefOr[
+        String | (js.Function1[/* repeated */ Any, Any]) | (js.Array[js.UndefOr[String | Null]]) | (InferProps[Datum | Scheme]) | Null
+      ]
+    ]
   ] = js.native
   
   object quantizeColorScaleDefaults {
@@ -1090,7 +1099,7 @@ object mod {
   inline def useDivergingColorScale(config: DivergingColorScaleConfig, values: DivergingColorScaleValues): ScaleDiverging_[String, scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("useDivergingColorScale")(config.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[ScaleDiverging_[String, scala.Nothing]]
   
   inline def useInheritedColor[Datum](config: InheritedColorConfig[Datum]): InheritedColorConfigCustomFunction[Datum] | (js.Function1[/* d */ Datum, Any]) = ^.asInstanceOf[js.Dynamic].applyDynamic("useInheritedColor")(config.asInstanceOf[js.Any]).asInstanceOf[InheritedColorConfigCustomFunction[Datum] | (js.Function1[/* d */ Datum, Any])]
-  inline def useInheritedColor[Datum](config: InheritedColorConfig[Datum], theme: PartialPickCompleteThemeb): InheritedColorConfigCustomFunction[Datum] | (js.Function1[/* d */ Datum, Any]) = (^.asInstanceOf[js.Dynamic].applyDynamic("useInheritedColor")(config.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[InheritedColorConfigCustomFunction[Datum] | (js.Function1[/* d */ Datum, Any])]
+  inline def useInheritedColor[Datum](config: InheritedColorConfig[Datum], theme: Theme): InheritedColorConfigCustomFunction[Datum] | (js.Function1[/* d */ Datum, Any]) = (^.asInstanceOf[js.Dynamic].applyDynamic("useInheritedColor")(config.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[InheritedColorConfigCustomFunction[Datum] | (js.Function1[/* d */ Datum, Any])]
   
   inline def useOrdinalColorScale[Datum](config: OrdinalColorScaleConfig[Datum], identity: String): OrdinalColorScale[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("useOrdinalColorScale")(config.asInstanceOf[js.Any], identity.asInstanceOf[js.Any])).asInstanceOf[OrdinalColorScale[Datum]]
   inline def useOrdinalColorScale[Datum](config: OrdinalColorScaleConfig[Datum], identity: DatumIdentityAccessor[Datum]): OrdinalColorScale[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("useOrdinalColorScale")(config.asInstanceOf[js.Any], identity.asInstanceOf[js.Any])).asInstanceOf[OrdinalColorScale[Datum]]

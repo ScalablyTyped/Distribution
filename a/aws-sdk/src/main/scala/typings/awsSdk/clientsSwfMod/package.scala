@@ -290,6 +290,8 @@ type SignalExternalWorkflowExecutionFailedCause = _SignalExternalWorkflowExecuti
 
 type SignalName = String
 
+type StartAtPreviousStartedEvent = Boolean
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.WORKFLOW_TYPE_DOES_NOT_EXIST
   - typings.awsSdk.awsSdkStrings.WORKFLOW_TYPE_DEPRECATED

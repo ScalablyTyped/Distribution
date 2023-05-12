@@ -5,18 +5,41 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Custom paginator jump to page input options
+  */
 trait PaginatorJumpToPageInputOptions extends StObject {
   
+  /**
+    * Style class of the element.
+    */
   var className: String
   
+  /**
+    * Whether the input is disabled.
+    */
   var disabled: Boolean
   
+  /**
+    * JSX element to be used as the jump to page input element.
+    */
   var element: Element
   
+  /**
+    * Callback to invoke when the input value changes.
+    * @param {number} first - Custom change event.
+    * @param {number} rows - Custom change event.
+    */
   def onChange(first: Double, rows: Double): Unit
   
+  /**
+    * The props of Paginator component.
+    */
   var props: PaginatorProps
   
+  /**
+    * The current value.
+    */
   var value: Double
 }
 object PaginatorJumpToPageInputOptions {

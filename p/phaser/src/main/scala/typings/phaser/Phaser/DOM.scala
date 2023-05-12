@@ -10,6 +10,7 @@ object DOM {
   
   /**
     * Abstracts away the use of RAF or setTimeOut for the core game update loop.
+    * 
     * This is invoked automatically by the Phaser.Game instance.
     */
   trait RequestAnimationFrame extends StObject {
@@ -23,6 +24,11 @@ object DOM {
       */
     @JSName("callback")
     var callback_Original: FrameRequestCallback
+    
+    /**
+      * The delay rate in ms for setTimeOut.
+      */
+    var delay: Double
     
     /**
       * Stops the step from running and clears the callback reference.
@@ -40,33 +46,31 @@ object DOM {
     var isSetTimeOut: Boolean
     
     /**
-      * The previous time the step was called.
-      */
-    var lastTime: Double
-    
-    /**
       * Starts the requestAnimationFrame or setTimeout process running.
       * @param callback The callback to invoke each step.
       * @param forceSetTimeOut Should it use SetTimeout, even if RAF is available?
-      * @param targetFPS The target fps rate (in ms). Only used when setTimeout is used.
+      * @param delay The setTimeout delay rate in ms.
       */
-    def start(callback: FrameRequestCallback, forceSetTimeOut: Boolean, targetFPS: Double): Unit
+    def start(callback: FrameRequestCallback, forceSetTimeOut: Boolean, delay: Double): Unit
     
     /**
       * The RAF step function.
-      * Updates the local tick value, invokes the callback and schedules another call to requestAnimationFrame.
+      * 
+      * Invokes the callback and schedules another call to requestAnimationFrame.
       */
     def step(time: DOMHighResTimeStamp): Unit
     
     /**
       * The SetTimeout step function.
-      * Updates the local tick value, invokes the callback and schedules another call to setTimeout.
+      * 
+      * Invokes the callback and schedules another call to setTimeout.
       */
     var stepTimeout: js.Function
     
     /**
       * The RAF step function.
-      * Updates the local tick value, invokes the callback and schedules another call to requestAnimationFrame.
+      * 
+      * Invokes the callback and schedules another call to requestAnimationFrame.
       */
     @JSName("step")
     var step_Original: FrameRequestCallback
@@ -77,38 +81,24 @@ object DOM {
     def stop(): Unit
     
     /**
-      * The target FPS rate in ms.
-      * Only used when setTimeout is used instead of RAF.
-      */
-    var target: Double
-    
-    /**
-      * The most recent timestamp. Either a DOMHighResTimeStamp under RAF or `Date.now` under SetTimeout.
-      */
-    var tick: Double
-    
-    /**
       * The setTimeout or RAF callback ID used when canceling them.
       */
-    var timeOutID: Double
+    var timeOutID: Double | Null
   }
   object RequestAnimationFrame {
     
     inline def apply(
       callback: /* time */ DOMHighResTimeStamp => Unit,
+      delay: Double,
       destroy: () => Unit,
       isRunning: Boolean,
       isSetTimeOut: Boolean,
-      lastTime: Double,
       start: (FrameRequestCallback, Boolean, Double) => Unit,
       step: /* time */ DOMHighResTimeStamp => Unit,
       stepTimeout: js.Function,
-      stop: () => Unit,
-      target: Double,
-      tick: Double,
-      timeOutID: Double
+      stop: () => Unit
     ): RequestAnimationFrame = {
-      val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), destroy = js.Any.fromFunction0(destroy), isRunning = isRunning.asInstanceOf[js.Any], isSetTimeOut = isSetTimeOut.asInstanceOf[js.Any], lastTime = lastTime.asInstanceOf[js.Any], start = js.Any.fromFunction3(start), step = js.Any.fromFunction1(step), stepTimeout = stepTimeout.asInstanceOf[js.Any], stop = js.Any.fromFunction0(stop), target = target.asInstanceOf[js.Any], tick = tick.asInstanceOf[js.Any], timeOutID = timeOutID.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), delay = delay.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), isRunning = isRunning.asInstanceOf[js.Any], isSetTimeOut = isSetTimeOut.asInstanceOf[js.Any], start = js.Any.fromFunction3(start), step = js.Any.fromFunction1(step), stepTimeout = stepTimeout.asInstanceOf[js.Any], stop = js.Any.fromFunction0(stop), timeOutID = null)
       __obj.asInstanceOf[RequestAnimationFrame]
     }
     
@@ -117,13 +107,13 @@ object DOM {
       
       inline def setCallback(value: /* time */ DOMHighResTimeStamp => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
       inline def setIsRunning(value: Boolean): Self = StObject.set(x, "isRunning", value.asInstanceOf[js.Any])
       
       inline def setIsSetTimeOut(value: Boolean): Self = StObject.set(x, "isSetTimeOut", value.asInstanceOf[js.Any])
-      
-      inline def setLastTime(value: Double): Self = StObject.set(x, "lastTime", value.asInstanceOf[js.Any])
       
       inline def setStart(value: (FrameRequestCallback, Boolean, Double) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction3(value))
       
@@ -133,11 +123,9 @@ object DOM {
       
       inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
       
-      inline def setTarget(value: Double): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
-      
-      inline def setTick(value: Double): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
-      
       inline def setTimeOutID(value: Double): Self = StObject.set(x, "timeOutID", value.asInstanceOf[js.Any])
+      
+      inline def setTimeOutIDNull: Self = StObject.set(x, "timeOutID", null)
     }
   }
 }

@@ -47,6 +47,10 @@ object sceneComponentMod {
     @js.native
     val NAME_EFFECTLAYER: String = js.native
     
+    @JSImport("babylonjs/sceneComponent", "SceneComponentConstants.NAME_FLUIDRENDERER")
+    @js.native
+    val NAME_FLUIDRENDERER: String = js.native
+    
     @JSImport("babylonjs/sceneComponent", "SceneComponentConstants.NAME_GAMEPAD")
     @js.native
     val NAME_GAMEPAD: String = js.native
@@ -114,6 +118,10 @@ object sceneComponentMod {
     @JSImport("babylonjs/sceneComponent", "SceneComponentConstants.STEP_AFTERCAMERADRAW_EFFECTLAYER_DRAW")
     @js.native
     val STEP_AFTERCAMERADRAW_EFFECTLAYER_DRAW: Double = js.native
+    
+    @JSImport("babylonjs/sceneComponent", "SceneComponentConstants.STEP_AFTERCAMERADRAW_FLUIDRENDERER")
+    @js.native
+    val STEP_AFTERCAMERADRAW_FLUIDRENDERER: Double = js.native
     
     @JSImport("babylonjs/sceneComponent", "SceneComponentConstants.STEP_AFTERCAMERADRAW_LAYER")
     @js.native
@@ -226,6 +234,10 @@ object sceneComponentMod {
     @JSImport("babylonjs/sceneComponent", "SceneComponentConstants.STEP_GATHERACTIVECAMERARENDERTARGETS_DEPTHRENDERER")
     @js.native
     val STEP_GATHERACTIVECAMERARENDERTARGETS_DEPTHRENDERER: Double = js.native
+    
+    @JSImport("babylonjs/sceneComponent", "SceneComponentConstants.STEP_GATHERACTIVECAMERARENDERTARGETS_FLUIDRENDERER")
+    @js.native
+    val STEP_GATHERACTIVECAMERARENDERTARGETS_FLUIDRENDERER: Double = js.native
     
     @JSImport("babylonjs/sceneComponent", "SceneComponentConstants.STEP_GATHERRENDERTARGETS_DEPTHRENDERER")
     @js.native

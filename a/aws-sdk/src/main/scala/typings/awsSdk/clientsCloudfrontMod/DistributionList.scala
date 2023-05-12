@@ -27,7 +27,7 @@ trait DistributionList extends StObject {
   var MaxItems: integer
   
   /**
-    * If IsTruncated is true, this element is present and contains the value you can use for the Marker request parameter to continue listing your distributions where they left off. 
+    * If IsTruncated is true, this element is present and contains the value you can use for the Marker request parameter to continue listing your distributions where they left off.
     */
   var NextMarker: js.UndefOr[String] = js.undefined
   

@@ -127,6 +127,8 @@ object distSrcStateMod {
     
     var initialized: Deferred[GreCAPTCHA]
     
+    var succeeded: js.UndefOr[Boolean] = js.undefined
+    
     var widgetId: js.UndefOr[String] = js.undefined
   }
   object ReCAPTCHAState {
@@ -140,6 +142,10 @@ object distSrcStateMod {
     implicit open class MutableBuilder[Self <: ReCAPTCHAState] (val x: Self) extends AnyVal {
       
       inline def setInitialized(value: Deferred[GreCAPTCHA]): Self = StObject.set(x, "initialized", value.asInstanceOf[js.Any])
+      
+      inline def setSucceeded(value: Boolean): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
+      
+      inline def setSucceededUndefined: Self = StObject.set(x, "succeeded", js.undefined)
       
       inline def setWidgetId(value: String): Self = StObject.set(x, "widgetId", value.asInstanceOf[js.Any])
       

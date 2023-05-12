@@ -16,8 +16,7 @@ trait EnumDeclaration
   
   val members: NodeArray[EnumMember] = js.native
   
-  @JSName("modifiers")
-  val modifiers_EnumDeclaration: js.UndefOr[NodeArray[Modifier]] = js.native
+  val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
   
   @JSName("name")
   val name_EnumDeclaration: Identifier = js.native

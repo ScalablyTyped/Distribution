@@ -110,6 +110,8 @@ type DesiredNumberOfDomainControllers = Double
 
 type DirectoryConfigurationSettingAllowedValues = String
 
+type DirectoryConfigurationSettingDataType = String
+
 type DirectoryConfigurationSettingLastRequestedDateTime = js.Date
 
 type DirectoryConfigurationSettingLastUpdatedDateTime = js.Date

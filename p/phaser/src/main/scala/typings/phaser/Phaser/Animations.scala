@@ -4,6 +4,7 @@ import typings.phaser.Phaser.Events.EventEmitter
 import typings.phaser.Phaser.GameObjects.GameObject
 import typings.phaser.Phaser.Structs.Map
 import typings.phaser.Phaser.Textures.Frame
+import typings.phaser.Phaser.Textures.Texture
 import typings.phaser.Phaser.Textures.TextureManager
 import typings.phaser.Phaser.Types.Animations.GenerateFrameNames
 import typings.phaser.Phaser.Types.Animations.GenerateFrameNumbers
@@ -54,10 +55,13 @@ object Animations {
       * Calculates the duration, frame rate and msPerFrame values.
       * @param target The target to set the values on.
       * @param totalFrames The total number of frames in the animation.
-      * @param duration The duration to calculate the frame rate from.
-      * @param frameRate The frame ate to calculate the duration from.
+      * @param duration The duration to calculate the frame rate from. Pass `null` if you wish to set the `frameRate` instead.
+      * @param frameRate The frame rate to calculate the duration from.
       */
+    def calculateDuration(target: Animation, totalFrames: Double): Unit = js.native
+    def calculateDuration(target: Animation, totalFrames: Double, duration: Double): Unit = js.native
     def calculateDuration(target: Animation, totalFrames: Double, duration: Double, frameRate: Double): Unit = js.native
+    def calculateDuration(target: Animation, totalFrames: Double, duration: Unit, frameRate: Double): Unit = js.native
     
     /**
       * Check if the given frame index is valid.
@@ -227,6 +231,14 @@ object Animations {
     def resume(): this.type = js.native
     
     /**
+      * If the animation has a delay set, before playback will begin, this
+      * controls when the first frame is set on the Sprite. If this property
+      * is 'false' then the frame is set only after the delay has expired.
+      * This is the default behavior.
+      */
+    var showBeforeDelay: Boolean = js.native
+    
+    /**
       * Should the GameObject's `visible` property be set to `true` when the animation starts to play?
       */
     var showOnStart: Boolean = js.native
@@ -306,12 +318,12 @@ object Animations {
     /**
       * A reference to the AnimationFrame that comes after this one in the animation, if any.
       */
-    val nextFrame: AnimationFrame
+    val nextFrame: AnimationFrame | Null
     
     /**
       * A reference to the AnimationFrame that comes before this one in the animation, if any.
       */
-    val prevFrame: AnimationFrame
+    val prevFrame: AnimationFrame | Null
     
     /**
       * What % through the animation does this frame come?
@@ -344,14 +356,12 @@ object Animations {
       isFirst: Boolean,
       isKeyFrame: Boolean,
       isLast: Boolean,
-      nextFrame: AnimationFrame,
-      prevFrame: AnimationFrame,
       progress: Double,
       textureFrame: String | Double,
       textureKey: String,
       toJSON: () => JSONAnimationFrame
     ): AnimationFrame = {
-      val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), duration = duration.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], isFirst = isFirst.asInstanceOf[js.Any], isKeyFrame = isKeyFrame.asInstanceOf[js.Any], isLast = isLast.asInstanceOf[js.Any], nextFrame = nextFrame.asInstanceOf[js.Any], prevFrame = prevFrame.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], textureFrame = textureFrame.asInstanceOf[js.Any], textureKey = textureKey.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
+      val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), duration = duration.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], isFirst = isFirst.asInstanceOf[js.Any], isKeyFrame = isKeyFrame.asInstanceOf[js.Any], isLast = isLast.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], textureFrame = textureFrame.asInstanceOf[js.Any], textureKey = textureKey.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), nextFrame = null, prevFrame = null)
       __obj.asInstanceOf[AnimationFrame]
     }
     
@@ -374,7 +384,11 @@ object Animations {
       
       inline def setNextFrame(value: AnimationFrame): Self = StObject.set(x, "nextFrame", value.asInstanceOf[js.Any])
       
+      inline def setNextFrameNull: Self = StObject.set(x, "nextFrame", null)
+      
       inline def setPrevFrame(value: AnimationFrame): Self = StObject.set(x, "prevFrame", value.asInstanceOf[js.Any])
+      
+      inline def setPrevFrameNull: Self = StObject.set(x, "prevFrame", null)
       
       inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
@@ -531,9 +545,14 @@ object Animations {
       * This will only create the 3 animations defined. Note that the tag names are case-sensitive.
       * @param key The key of the loaded Aseprite atlas. It must have been loaded prior to calling this method.
       * @param tags An array of Tag names. If provided, only animations found in this array will be created.
+      * @param target Create the animations on this target Sprite. If not given, they will be created globally in this Animation Manager.
       */
     def createFromAseprite(key: String): js.Array[Animation] = js.native
     def createFromAseprite(key: String, tags: js.Array[String]): js.Array[Animation] = js.native
+    def createFromAseprite(key: String, tags: js.Array[String], target: AnimationManager): js.Array[Animation] = js.native
+    def createFromAseprite(key: String, tags: js.Array[String], target: GameObject): js.Array[Animation] = js.native
+    def createFromAseprite(key: String, tags: Unit, target: AnimationManager): js.Array[Animation] = js.native
+    def createFromAseprite(key: String, tags: Unit, target: GameObject): js.Array[Animation] = js.native
     
     /**
       * Checks to see if the given key is already in use within the Animation Manager or not.
@@ -566,14 +585,15 @@ object Animations {
       * Generates objects with string based frame names, as configured by the given {@link Phaser.Types.Animations.GenerateFrameNames}.
       * 
       * It's a helper method, designed to make it easier for you to extract all of the frame names from texture atlases.
+      * 
       * If you're working with a sprite sheet, see the `generateFrameNumbers` method instead.
       * 
       * Example:
       * 
       * If you have a texture atlases loaded called `gems` and it contains 6 frames called `ruby_0001`, `ruby_0002`, and so on,
-      * then you can call this method using: `this.anims.generateFrameNames('gems', { prefix: 'ruby_', end: 6, zeroPad: 4 })`.
+      * then you can call this method using: `this.anims.generateFrameNames('gems', { prefix: 'ruby_', start: 1, end: 6, zeroPad: 4 })`.
       * 
-      * The `end` value tells it to look for 6 frames, incrementally numbered, all starting with the prefix `ruby_`. The `zeroPad`
+      * The `end` value tells it to select frames 1 through 6, incrementally numbered, all starting with the prefix `ruby_`. The `zeroPad`
       * value tells it how many zeroes pad out the numbers. To create an animation using this method, you can do:
       * 
       * ```javascript
@@ -603,7 +623,6 @@ object Animations {
       * If you're working with a texture atlas, see the `generateFrameNames` method instead.
       * 
       * It's a helper method, designed to make it easier for you to extract frames from sprite sheets.
-      * If you're working with a texture atlas, see the `generateFrameNames` method instead.
       * 
       * Example:
       * 
@@ -618,7 +637,7 @@ object Animations {
       * ```javascript
       * this.anims.create({
       *   key: 'boom',
-      *   frames: this.anims.generateFrameNames('explosion', {
+      *   frames: this.anims.generateFrameNumbers('explosion', {
       *     start: 0,
       *     end: 11
       *   })
@@ -637,6 +656,7 @@ object Animations {
       * @param key The key for the texture containing the animation frames.
       * @param config The configuration object for the animation frames.
       */
+    def generateFrameNumbers(key: String): js.Array[typings.phaser.Phaser.Types.Animations.AnimationFrame] = js.native
     def generateFrameNumbers(key: String, config: GenerateFrameNumbers): js.Array[typings.phaser.Phaser.Types.Animations.AnimationFrame] = js.native
     
     /**
@@ -644,6 +664,16 @@ object Animations {
       * @param key The key of the Animation to retrieve.
       */
     def get(key: String): Animation = js.native
+    
+    /**
+      * Returns an array of all Animation keys that are using the given
+      * Texture. Only Animations that have at least one AnimationFrame
+      * entry using this texture will be included in the result.
+      * @param key The unique string-based key of the Texture, or a Texture, or Frame instance.
+      */
+    def getAnimsFromTexture(key: String): js.Array[String] = js.native
+    def getAnimsFromTexture(key: Frame): js.Array[String] = js.native
+    def getAnimsFromTexture(key: Texture): js.Array[String] = js.native
     
     /**
       * Returns the mix delay between two animations.
@@ -851,6 +881,7 @@ object Animations {
       * Call this method with no arguments to reset all currently chained animations.
       * @param key The string-based key of the animation to play, or an Animation instance, or a `PlayAnimationConfig` object, or an array of them.
       */
+    def chain(): GameObject = js.native
     def chain(key: String): GameObject = js.native
     def chain(key: js.Array[Animation | PlayAnimationConfig | String]): GameObject = js.native
     def chain(key: Animation): GameObject = js.native
@@ -888,18 +919,97 @@ object Animations {
     def create(config: typings.phaser.Phaser.Types.Animations.Animation): Animation | `false` = js.native
     
     /**
+      * Create one, or more animations from a loaded Aseprite JSON file.
+      * 
+      * Aseprite is a powerful animated sprite editor and pixel art tool.
+      * 
+      * You can find more details at https://www.aseprite.org/
+      * 
+      * To export a compatible JSON file in Aseprite, please do the following:
+      * 
+      * 1. Go to "File - Export Sprite Sheet"
+      * 
+      * 2. On the **Layout** tab:
+      * 2a. Set the "Sheet type" to "Packed"
+      * 2b. Set the "Constraints" to "None"
+      * 2c. Check the "Merge Duplicates" checkbox
+      * 
+      * 3. On the **Sprite** tab:
+      * 3a. Set "Layers" to "Visible layers"
+      * 3b. Set "Frames" to "All frames", unless you only wish to export a sub-set of tags
+      * 
+      * 4. On the **Borders** tab:
+      * 4a. Check the "Trim Sprite" and "Trim Cells" options
+      * 4b. Ensure "Border Padding", "Spacing" and "Inner Padding" are all > 0 (1 is usually enough)
+      * 
+      * 5. On the **Output** tab:
+      * 5a. Check "Output File", give your image a name and make sure you choose "png files" as the file type
+      * 5b. Check "JSON Data" and give your json file a name
+      * 5c. The JSON Data type can be either a Hash or Array, Phaser doesn't mind.
+      * 5d. Make sure "Tags" is checked in the Meta options
+      * 5e. In the "Item Filename" input box, make sure it says just "{frame}" and nothing more.
+      * 
+      * 6. Click export
+      * 
+      * This was tested with Aseprite 1.2.25.
+      * 
+      * This will export a png and json file which you can load using the Aseprite Loader, i.e.:
+      * 
+      * ```javascript
+      * function preload ()
+      * {
+      *     this.load.path = 'assets/animations/aseprite/';
+      *     this.load.aseprite('paladin', 'paladin.png', 'paladin.json');
+      * }
+      * ```
+      * 
+      * Once loaded, you can call this method on a Sprite with the 'atlas' key:
+      * 
+      * ```javascript
+      * const sprite = this.add.sprite(400, 300);
+      * 
+      * sprite.anims.createFromAseprite('paladin');
+      * ```
+      * 
+      * Any animations defined in the JSON will now be available to use on this Sprite and you play them
+      * via their Tag name. For example, if you have an animation called 'War Cry' on your Aseprite timeline,
+      * you can play it on the Sprite using that Tag name:
+      * 
+      * ```javascript
+      * const sprite = this.add.sprite(400, 300);
+      * 
+      * sprite.anims.createFromAseprite('paladin');
+      * 
+      * sprite.play('War Cry');
+      * ```
+      * 
+      * When calling this method you can optionally provide an array of tag names, and only those animations
+      * will be created. For example:
+      * 
+      * ```javascript
+      * sprite.anims.createFromAseprite('paladin', [ 'step', 'War Cry', 'Magnum Break' ]);
+      * ```
+      * 
+      * This will only create the 3 animations defined. Note that the tag names are case-sensitive.
+      * @param key The key of the loaded Aseprite atlas. It must have been loaded prior to calling this method.
+      * @param tags An array of Tag names. If provided, only animations found in this array will be created.
+      */
+    def createFromAseprite(key: String): js.Array[Animation] = js.native
+    def createFromAseprite(key: String, tags: js.Array[String]): js.Array[Animation] = js.native
+    
+    /**
       * The current Animation loaded into this Animation component.
       * 
       * Will by `null` if no animation is yet loaded.
       */
-    var currentAnim: Animation = js.native
+    var currentAnim: Animation | Null = js.native
     
     /**
       * The current AnimationFrame being displayed by this Animation component.
       * 
       * Will by `null` if no animation is yet loaded.
       */
-    var currentFrame: AnimationFrame = js.native
+    var currentFrame: AnimationFrame | Null = js.native
     
     /**
       * The delay before starting playback of the current animation, in milliseconds.
@@ -1004,16 +1114,16 @@ object Animations {
       * Example:
       * 
       * If you have a sprite sheet loaded called `explosion` and it contains 12 frames, then you can call this method using:
-      * `this.anims.generateFrameNumbers('explosion', { start: 0, end: 12 })`.
+      * `this.anims.generateFrameNumbers('explosion', { start: 0, end: 11 })`.
       * 
       * The `end` value tells it to stop after 12 frames. To create an animation using this method, you can do:
       * 
       * ```javascript
       * this.anims.create({
       *   key: 'boom',
-      *   frames: this.anims.generateFrameNames('explosion', {
+      *   frames: this.anims.generateFrameNumbers('explosion', {
       *     start: 0,
-      *     end: 12
+      *     end: 11
       *   })
       * });
       * ```
@@ -1030,6 +1140,7 @@ object Animations {
       * @param key The key for the texture containing the animation frames.
       * @param config The configuration object for the animation frames.
       */
+    def generateFrameNumbers(key: String): js.Array[typings.phaser.Phaser.Types.Animations.AnimationFrame] = js.native
     def generateFrameNumbers(key: String, config: GenerateFrameNumbers): js.Array[typings.phaser.Phaser.Types.Animations.AnimationFrame] = js.native
     
     /**
@@ -1130,7 +1241,7 @@ object Animations {
       * 
       * Will by `null` if no animation has been queued.
       */
-    var nextAnim: String | Animation | PlayAnimationConfig = js.native
+    var nextAnim: String | Animation | PlayAnimationConfig | Null = js.native
     
     /**
       * A queue of Animations to be loaded into this Animation component when the current animation completes.
@@ -1444,6 +1555,17 @@ object Animations {
       * @param value The number of times that the animation should repeat.
       */
     def setRepeat(value: Double): GameObject = js.native
+    
+    /**
+      * If the animation has a delay set, before playback will begin, this
+      * controls when the first frame is set on the Sprite. If this property
+      * is 'false' then the frame is set only after the delay has expired.
+      * This is the default behavior.
+      * 
+      * If this property is 'true' then the first frame of this animation
+      * is set immediately, and then when the delay expires, playback starts.
+      */
+    var showBeforeDelay: Boolean = js.native
     
     /**
       * Should the GameObject's `visible` property be set to `true` when the animation starts to play?

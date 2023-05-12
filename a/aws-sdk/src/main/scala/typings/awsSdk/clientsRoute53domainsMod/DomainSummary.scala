@@ -14,7 +14,7 @@ trait DomainSummary extends StObject {
   /**
     * The name of the domain that the summary information applies to.
     */
-  var DomainName: typings.awsSdk.clientsRoute53domainsMod.DomainName
+  var DomainName: js.UndefOr[typings.awsSdk.clientsRoute53domainsMod.DomainName] = js.undefined
   
   /**
     * Expiration date of the domain in Unix time format and Coordinated Universal Time (UTC).
@@ -28,8 +28,8 @@ trait DomainSummary extends StObject {
 }
 object DomainSummary {
   
-  inline def apply(DomainName: DomainName): DomainSummary = {
-    val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
+  inline def apply(): DomainSummary = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DomainSummary]
   }
   
@@ -41,6 +41,8 @@ object DomainSummary {
     inline def setAutoRenewUndefined: Self = StObject.set(x, "AutoRenew", js.undefined)
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    
+    inline def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
     
     inline def setExpiry(value: js.Date): Self = StObject.set(x, "Expiry", value.asInstanceOf[js.Any])
     

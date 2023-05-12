@@ -1,8 +1,11 @@
 package typings.typeFest
 
+import typings.std.Exclude
 import typings.std.PropertyKey
 import typings.std.Record
 import typings.typeFest.sourcePrimitiveMod.Primitive
+import typings.typeFest.sourceSimplifyMod.Simplify
+import typings.typeFest.typeFestBooleans.`false`
 import typings.typeFest.typeFestBooleans.`true`
 import typings.typeFest.typeFestStrings.`-_`
 import org.scalablytyped.runtime.StObject
@@ -13,12 +16,32 @@ object sourceInternalMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately.
+    * TS definition: {{{
+    T extends std.Array<unknown> ? T[0] : never
+    }}}
+    */
+  @js.native
+  trait ArrayElement[T] extends StObject
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
     * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     TArray extends [unknown, ...infer TTail] ? TTail : []
     }}}
     */
   type ArrayTail[TArray /* <: UnknownArrayOrTuple */] = js.Array[Any]
+  
+  // Returns `never` if the key or property is not jsonable without testing whether the property is required or optional otherwise return the key.
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+    * TS definition: {{{
+    Key extends symbol ? never : Type[Key] extends symbol ? never : [(arguments_ : ...any): any] extends [Type[Key]] ? never : Key
+    }}}
+    */
+  type BaseKeyFilter[Type, Key /* <: /* keyof Type */ String */] = Key
   
   /**
   Create a tuple type of the given length `<L>`.
@@ -35,6 +58,22 @@ object sourceInternalMod {
   
   type BuiltIns = Primitive | js.Date | js.RegExp
   
+  /**
+  Returns the required keys.
+  */
+  type FilterDefinedKeys[T /* <: js.Object */] = Exclude[
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ Key in keyof T ]: type-fest.type-fest/source/is-any.IsAny<T[Key]> extends true? Key : undefined extends T[Key]? never : T[Key] extends undefined? never : type-fest.type-fest/source/internal.BaseKeyFilter<T, Key>}[keyof T] */ js.Any, 
+    Unit
+  ]
+  
+  /**
+  Returns the optional keys.
+  */
+  type FilterOptionalKeys[T /* <: js.Object */] = Exclude[
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ Key in keyof T ]: type-fest.type-fest/source/is-any.IsAny<T[Key]> extends true? never : undefined extends T[Key]? T[Key] extends undefined? never : type-fest.type-fest/source/internal.BaseKeyFilter<T, Key> : never}[keyof T] */ js.Any, 
+    Unit
+  ]
+  
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
     * You'll have to cast your way around this structure, unfortunately.
@@ -49,6 +88,15 @@ object sourceInternalMod {
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
     * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
+    T extends {None (arguments : infer A): unknown, None (arguments : ...any): unknown} ? std.Array<unknown> extends A ? false : true : false
+    }}}
+    */
+  type HasMultipleCallSignatures[T /* <: js.Function1[/* repeated */ Any, Any] */] = `false`
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+    * TS definition: {{{
     FirstType extends BaseType ? SecondType extends BaseType ? true : false : false
     }}}
     */
@@ -58,10 +106,55 @@ object sourceInternalMod {
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
     * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
-    <G>(): G extends T ? 1 : 2 extends <G>(): G extends U ? 1 : 2 ? true : false
+    T extends std.Lowercase<T> ? true : false
     }}}
     */
-  type IsEqual[T, U] = `true`
+  type IsLowerCase[T /* <: String */] = `true`
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+    * TS definition: {{{
+    [T] extends [false] ? false : true
+    }}}
+    */
+  type IsNotFalse[T /* <: Boolean */] = `false`
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+    * TS definition: {{{
+    [T] extends [null] ? true : false
+    }}}
+    */
+  type IsNull[T] = `true`
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+    * TS definition: {{{
+    T extends / * template literal string: ${number} * / string ? type-fest.type-fest/source/trim.Trim<T> extends T ? true : false : false
+    }}}
+    */
+  type IsNumeric[T /* <: String */] = `true`
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+    * TS definition: {{{
+    T extends std.Uppercase<T> ? true : false
+    }}}
+    */
+  type IsUpperCase[T /* <: String */] = `true`
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+    * TS definition: {{{
+    T extends type-fest.type-fest/source/internal.Whitespace ? true : T extends / * template literal string: ${Whitespace}${inferRest} * / string ? type-fest.type-fest/source/internal.IsWhitespace</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Rest * / any> : false
+    }}}
+    */
+  type IsWhitespace[T /* <: String */] = `true`
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
@@ -73,6 +166,16 @@ object sourceInternalMod {
   type KeysOfUnion[T] = /* keyof T */ String
   
   type NonEmptyTuple = Array[Any]
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately.
+    * TS definition: {{{
+    K extends keyof T ? T[K] : never
+    }}}
+    */
+  @js.native
+  trait ObjectValue[T, K] extends StObject
   
   /* Rewritten from type alias, can be one of: 
     - typings.typeFest.typeFestStrings.`0`
@@ -133,6 +236,10 @@ object sourceInternalMod {
     */
   @js.native
   trait TupleLength[T /* <: js.Array[Any] */] extends StObject
+  
+  type UndefinedToOptional[T /* <: js.Object */] = Simplify[
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ Key in keyof std.Pick<T, type-fest.type-fest/source/internal.FilterDefinedKeys<T>> ]: T[Key]} */ js.Any
+  ]
   
   type UnknownArrayOrTuple = Array[Any]
   
@@ -223,17 +330,176 @@ object sourceInternalMod {
   }
   
   /* Rewritten from type alias, can be one of: 
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket9Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracketARightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracketBRightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracketCRightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracketDRightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket20Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket85Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracketA0Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket1680Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket2000Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket2001Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket2002Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket2003Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket2004Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket2005Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket2006Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket2007Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket2008Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket2009Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket200ARightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket2028Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket2029Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket202FRightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket205FRightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket3000Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracketFEFFRightcurlybracket
+  */
+  trait Whitespace extends StObject
+  object Whitespace {
+    
+    inline def uLeftcurlybracket1680Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket1680Rightcurlybracket = "u{1680}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket1680Rightcurlybracket]
+    
+    inline def uLeftcurlybracket2000Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket2000Rightcurlybracket = "u{2000}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket2000Rightcurlybracket]
+    
+    inline def uLeftcurlybracket2001Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket2001Rightcurlybracket = "u{2001}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket2001Rightcurlybracket]
+    
+    inline def uLeftcurlybracket2002Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket2002Rightcurlybracket = "u{2002}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket2002Rightcurlybracket]
+    
+    inline def uLeftcurlybracket2003Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket2003Rightcurlybracket = "u{2003}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket2003Rightcurlybracket]
+    
+    inline def uLeftcurlybracket2004Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket2004Rightcurlybracket = "u{2004}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket2004Rightcurlybracket]
+    
+    inline def uLeftcurlybracket2005Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket2005Rightcurlybracket = "u{2005}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket2005Rightcurlybracket]
+    
+    inline def uLeftcurlybracket2006Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket2006Rightcurlybracket = "u{2006}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket2006Rightcurlybracket]
+    
+    inline def uLeftcurlybracket2007Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket2007Rightcurlybracket = "u{2007}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket2007Rightcurlybracket]
+    
+    inline def uLeftcurlybracket2008Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket2008Rightcurlybracket = "u{2008}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket2008Rightcurlybracket]
+    
+    inline def uLeftcurlybracket2009Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket2009Rightcurlybracket = "u{2009}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket2009Rightcurlybracket]
+    
+    inline def uLeftcurlybracket200ARightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket200ARightcurlybracket = "u{200A}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket200ARightcurlybracket]
+    
+    inline def uLeftcurlybracket2028Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket2028Rightcurlybracket = "u{2028}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket2028Rightcurlybracket]
+    
+    inline def uLeftcurlybracket2029Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket2029Rightcurlybracket = "u{2029}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket2029Rightcurlybracket]
+    
+    inline def uLeftcurlybracket202FRightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket202FRightcurlybracket = "u{202F}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket202FRightcurlybracket]
+    
+    inline def uLeftcurlybracket205FRightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket205FRightcurlybracket = "u{205F}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket205FRightcurlybracket]
+    
+    inline def uLeftcurlybracket20Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket20Rightcurlybracket = "u{20}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket20Rightcurlybracket]
+    
+    inline def uLeftcurlybracket3000Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket3000Rightcurlybracket = "u{3000}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket3000Rightcurlybracket]
+    
+    inline def uLeftcurlybracket85Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket85Rightcurlybracket = "u{85}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket85Rightcurlybracket]
+    
+    inline def uLeftcurlybracket9Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket9Rightcurlybracket = "u{9}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket9Rightcurlybracket]
+    
+    inline def uLeftcurlybracketA0Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracketA0Rightcurlybracket = "u{A0}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracketA0Rightcurlybracket]
+    
+    inline def uLeftcurlybracketARightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracketARightcurlybracket = "u{A}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracketARightcurlybracket]
+    
+    inline def uLeftcurlybracketBRightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracketBRightcurlybracket = "u{B}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracketBRightcurlybracket]
+    
+    inline def uLeftcurlybracketCRightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracketCRightcurlybracket = "u{C}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracketCRightcurlybracket]
+    
+    inline def uLeftcurlybracketDRightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracketDRightcurlybracket = "u{D}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracketDRightcurlybracket]
+    
+    inline def uLeftcurlybracketFEFFRightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracketFEFFRightcurlybracket = "u{FEFF}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracketFEFFRightcurlybracket]
+  }
+  
+  /* Rewritten from type alias, can be one of: 
     - typings.typeFest.typeFestStrings.`-_`
     - typings.typeFest.typeFestStrings._underscore
-    - typings.typeFest.typeFestStrings.Space
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket9Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracketARightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracketBRightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracketCRightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracketDRightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket20Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket85Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracketA0Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket1680Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket2000Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket2001Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket2002Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket2003Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket2004Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket2005Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket2006Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket2007Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket2008Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket2009Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket200ARightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket2028Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket2029Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket202FRightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket205FRightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracket3000Rightcurlybracket
+    - typings.typeFest.typeFestStrings.uLeftcurlybracketFEFFRightcurlybracket
   */
   trait WordSeparators extends StObject
   object WordSeparators {
     
-    inline def Space: typings.typeFest.typeFestStrings.Space = (" ").asInstanceOf[typings.typeFest.typeFestStrings.Space]
-    
     inline def _dash: `-_` = "-".asInstanceOf[`-_`]
     
     inline def _underscore: typings.typeFest.typeFestStrings._underscore = "_".asInstanceOf[typings.typeFest.typeFestStrings._underscore]
+    
+    inline def uLeftcurlybracket1680Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket1680Rightcurlybracket = "u{1680}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket1680Rightcurlybracket]
+    
+    inline def uLeftcurlybracket2000Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket2000Rightcurlybracket = "u{2000}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket2000Rightcurlybracket]
+    
+    inline def uLeftcurlybracket2001Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket2001Rightcurlybracket = "u{2001}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket2001Rightcurlybracket]
+    
+    inline def uLeftcurlybracket2002Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket2002Rightcurlybracket = "u{2002}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket2002Rightcurlybracket]
+    
+    inline def uLeftcurlybracket2003Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket2003Rightcurlybracket = "u{2003}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket2003Rightcurlybracket]
+    
+    inline def uLeftcurlybracket2004Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket2004Rightcurlybracket = "u{2004}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket2004Rightcurlybracket]
+    
+    inline def uLeftcurlybracket2005Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket2005Rightcurlybracket = "u{2005}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket2005Rightcurlybracket]
+    
+    inline def uLeftcurlybracket2006Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket2006Rightcurlybracket = "u{2006}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket2006Rightcurlybracket]
+    
+    inline def uLeftcurlybracket2007Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket2007Rightcurlybracket = "u{2007}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket2007Rightcurlybracket]
+    
+    inline def uLeftcurlybracket2008Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket2008Rightcurlybracket = "u{2008}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket2008Rightcurlybracket]
+    
+    inline def uLeftcurlybracket2009Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket2009Rightcurlybracket = "u{2009}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket2009Rightcurlybracket]
+    
+    inline def uLeftcurlybracket200ARightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket200ARightcurlybracket = "u{200A}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket200ARightcurlybracket]
+    
+    inline def uLeftcurlybracket2028Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket2028Rightcurlybracket = "u{2028}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket2028Rightcurlybracket]
+    
+    inline def uLeftcurlybracket2029Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket2029Rightcurlybracket = "u{2029}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket2029Rightcurlybracket]
+    
+    inline def uLeftcurlybracket202FRightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket202FRightcurlybracket = "u{202F}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket202FRightcurlybracket]
+    
+    inline def uLeftcurlybracket205FRightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket205FRightcurlybracket = "u{205F}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket205FRightcurlybracket]
+    
+    inline def uLeftcurlybracket20Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket20Rightcurlybracket = "u{20}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket20Rightcurlybracket]
+    
+    inline def uLeftcurlybracket3000Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket3000Rightcurlybracket = "u{3000}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket3000Rightcurlybracket]
+    
+    inline def uLeftcurlybracket85Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket85Rightcurlybracket = "u{85}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket85Rightcurlybracket]
+    
+    inline def uLeftcurlybracket9Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracket9Rightcurlybracket = "u{9}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracket9Rightcurlybracket]
+    
+    inline def uLeftcurlybracketA0Rightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracketA0Rightcurlybracket = "u{A0}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracketA0Rightcurlybracket]
+    
+    inline def uLeftcurlybracketARightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracketARightcurlybracket = "u{A}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracketARightcurlybracket]
+    
+    inline def uLeftcurlybracketBRightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracketBRightcurlybracket = "u{B}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracketBRightcurlybracket]
+    
+    inline def uLeftcurlybracketCRightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracketCRightcurlybracket = "u{C}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracketCRightcurlybracket]
+    
+    inline def uLeftcurlybracketDRightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracketDRightcurlybracket = "u{D}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracketDRightcurlybracket]
+    
+    inline def uLeftcurlybracketFEFFRightcurlybracket: typings.typeFest.typeFestStrings.uLeftcurlybracketFEFFRightcurlybracket = "u{FEFF}".asInstanceOf[typings.typeFest.typeFestStrings.uLeftcurlybracketFEFFRightcurlybracket]
   }
 }

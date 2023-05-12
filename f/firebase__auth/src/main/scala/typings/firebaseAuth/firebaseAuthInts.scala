@@ -13,6 +13,7 @@ object firebaseAuthInts {
   sealed trait `0`
     extends StObject
        with EventFilter
+       with typings.firebaseAuth.distBrowserCjsSrcModelPopupRedirectMod.EventFilter
        with typings.firebaseAuth.distNodeEsmSrcModelPopupRedirectMod.EventFilter
        with typings.firebaseAuth.distNodeSrcModelPopupRedirectMod.EventFilter
        with typings.firebaseAuth.distEsm5SrcModelPopupRedirectMod.EventFilter
@@ -25,6 +26,7 @@ object firebaseAuthInts {
   sealed trait `1`
     extends StObject
        with EventFilter
+       with typings.firebaseAuth.distBrowserCjsSrcModelPopupRedirectMod.EventFilter
        with typings.firebaseAuth.distNodeEsmSrcModelPopupRedirectMod.EventFilter
        with typings.firebaseAuth.distNodeSrcModelPopupRedirectMod.EventFilter
        with typings.firebaseAuth.distEsm5SrcModelPopupRedirectMod.EventFilter
@@ -34,14 +36,11 @@ object firebaseAuthInts {
   inline def `1`: `1` = 1.asInstanceOf[`1`]
   
   @js.native
-  sealed trait `2000` extends StObject
-  inline def `2000`: `2000` = 2000.asInstanceOf[`2000`]
-  
-  @js.native
   sealed trait `3000`
     extends StObject
        with TimeoutDuration
        with typings.firebaseAuth.distRnSrcPlatformBrowserMessagechannelMod.TimeoutDuration
+       with typings.firebaseAuth.distBrowserCjsSrcPlatformBrowserMessagechannelMod.TimeoutDuration
        with typings.firebaseAuth.distCordovaSrcPlatformBrowserMessagechannelMod.TimeoutDuration
        with typings.firebaseAuth.distNodeSrcPlatformBrowserMessagechannelMod.TimeoutDuration
        with typings.firebaseAuth.distSrcPlatformBrowserMessagechannelMod.TimeoutDuration
@@ -58,6 +57,7 @@ object firebaseAuthInts {
        with typings.firebaseAuth.distNodeEsmSrcCoreUserProactiveRefreshMod.Duration
        with typings.firebaseAuth.distEsm2017SrcCoreUserProactiveRefreshMod.Duration
        with typings.firebaseAuth.distEsm5SrcCoreUserProactiveRefreshMod.Duration
+       with typings.firebaseAuth.distBrowserCjsSrcCoreUserProactiveRefreshMod.Duration
        with typings.firebaseAuth.distRnSrcCoreUserProactiveRefreshMod.Duration
   inline def `30000`: `30000` = 30000.asInstanceOf[`30000`]
   
@@ -70,6 +70,7 @@ object firebaseAuthInts {
        with typings.firebaseAuth.distNodeEsmSrcCoreUserProactiveRefreshMod.Duration
        with typings.firebaseAuth.distEsm2017SrcCoreUserProactiveRefreshMod.Duration
        with typings.firebaseAuth.distEsm5SrcCoreUserProactiveRefreshMod.Duration
+       with typings.firebaseAuth.distBrowserCjsSrcCoreUserProactiveRefreshMod.Duration
        with typings.firebaseAuth.distRnSrcCoreUserProactiveRefreshMod.Duration
   inline def `300000`: `300000` = 300000.asInstanceOf[`300000`]
   
@@ -78,6 +79,7 @@ object firebaseAuthInts {
     extends StObject
        with TimeoutDuration
        with typings.firebaseAuth.distRnSrcPlatformBrowserMessagechannelMod.TimeoutDuration
+       with typings.firebaseAuth.distBrowserCjsSrcPlatformBrowserMessagechannelMod.TimeoutDuration
        with typings.firebaseAuth.distCordovaSrcPlatformBrowserMessagechannelMod.TimeoutDuration
        with typings.firebaseAuth.distNodeSrcPlatformBrowserMessagechannelMod.TimeoutDuration
        with typings.firebaseAuth.distSrcPlatformBrowserMessagechannelMod.TimeoutDuration
@@ -94,12 +96,17 @@ object firebaseAuthInts {
     extends StObject
        with TimeoutDuration
        with typings.firebaseAuth.distRnSrcPlatformBrowserMessagechannelMod.TimeoutDuration
+       with typings.firebaseAuth.distBrowserCjsSrcPlatformBrowserMessagechannelMod.TimeoutDuration
        with typings.firebaseAuth.distCordovaSrcPlatformBrowserMessagechannelMod.TimeoutDuration
        with typings.firebaseAuth.distNodeSrcPlatformBrowserMessagechannelMod.TimeoutDuration
        with typings.firebaseAuth.distSrcPlatformBrowserMessagechannelMod.TimeoutDuration
        with typings.firebaseAuth.distNodeEsmSrcPlatformBrowserMessagechannelMod.TimeoutDuration
        with typings.firebaseAuth.distEsm2017SrcPlatformBrowserMessagechannelMod.TimeoutDuration
   inline def `800`: `800` = 800.asInstanceOf[`800`]
+  
+  @js.native
+  sealed trait `8000` extends StObject
+  inline def `8000`: `8000` = 8000.asInstanceOf[`8000`]
   
   @js.native
   sealed trait `960000`
@@ -110,6 +117,7 @@ object firebaseAuthInts {
        with typings.firebaseAuth.distNodeEsmSrcCoreUserProactiveRefreshMod.Duration
        with typings.firebaseAuth.distEsm2017SrcCoreUserProactiveRefreshMod.Duration
        with typings.firebaseAuth.distEsm5SrcCoreUserProactiveRefreshMod.Duration
+       with typings.firebaseAuth.distBrowserCjsSrcCoreUserProactiveRefreshMod.Duration
        with typings.firebaseAuth.distRnSrcCoreUserProactiveRefreshMod.Duration
   inline def `960000`: `960000` = 960000.asInstanceOf[`960000`]
 }

@@ -16,14 +16,14 @@ object srcNgtscIncrementalSrcStrategyMod {
     
     def getIncrementalState(): Null = js.native
     /**
-      * Determine the Angular `IncrementalDriver` for the given `ts.Program`, if one is available.
+      * Determine the Angular `IncrementalState` for the given `ts.Program`, if one is available.
       */
     /* CompleteClass */
     override def getIncrementalState(program: Program): IncrementalState | Null = js.native
     
     def setIncrementalState(): Unit = js.native
     /**
-      * Associate the given `IncrementalDriver` with the given `ts.Program` and make it available to
+      * Associate the given `IncrementalState` with the given `ts.Program` and make it available to
       * future compilations.
       */
     /* CompleteClass */
@@ -44,13 +44,13 @@ object srcNgtscIncrementalSrcStrategyMod {
        with IncrementalBuildStrategy {
     
     /**
-      * Determine the Angular `IncrementalDriver` for the given `ts.Program`, if one is available.
+      * Determine the Angular `IncrementalState` for the given `ts.Program`, if one is available.
       */
     /* CompleteClass */
     override def getIncrementalState(program: Program): IncrementalState | Null = js.native
     
     /**
-      * Associate the given `IncrementalDriver` with the given `ts.Program` and make it available to
+      * Associate the given `IncrementalState` with the given `ts.Program` and make it available to
       * future compilations.
       */
     /* CompleteClass */
@@ -72,7 +72,7 @@ object srcNgtscIncrementalSrcStrategyMod {
     
     def getIncrementalState(): IncrementalState | Null = js.native
     /**
-      * Determine the Angular `IncrementalDriver` for the given `ts.Program`, if one is available.
+      * Determine the Angular `IncrementalState` for the given `ts.Program`, if one is available.
       */
     /* CompleteClass */
     override def getIncrementalState(program: Program): IncrementalState | Null = js.native
@@ -80,7 +80,7 @@ object srcNgtscIncrementalSrcStrategyMod {
     /* private */ var isSet: Any = js.native
     
     /**
-      * Associate the given `IncrementalDriver` with the given `ts.Program` and make it available to
+      * Associate the given `IncrementalState` with the given `ts.Program` and make it available to
       * future compilations.
       */
     /* CompleteClass */
@@ -100,12 +100,12 @@ object srcNgtscIncrementalSrcStrategyMod {
   trait IncrementalBuildStrategy extends StObject {
     
     /**
-      * Determine the Angular `IncrementalDriver` for the given `ts.Program`, if one is available.
+      * Determine the Angular `IncrementalState` for the given `ts.Program`, if one is available.
       */
     def getIncrementalState(program: Program): IncrementalState | Null
     
     /**
-      * Associate the given `IncrementalDriver` with the given `ts.Program` and make it available to
+      * Associate the given `IncrementalState` with the given `ts.Program` and make it available to
       * future compilations.
       */
     def setIncrementalState(driver: IncrementalState, program: Program): Unit

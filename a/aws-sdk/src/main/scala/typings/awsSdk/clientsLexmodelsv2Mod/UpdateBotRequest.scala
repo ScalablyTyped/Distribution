@@ -12,9 +12,19 @@ trait UpdateBotRequest extends StObject {
   var botId: Id
   
   /**
+    * The list of bot members in the network associated with the update action.
+    */
+  var botMembers: js.UndefOr[BotMembers] = js.undefined
+  
+  /**
     * The new name of the bot. The name must be unique in the account that creates the bot.
     */
   var botName: Name
+  
+  /**
+    * The type of the bot to be updated.
+    */
+  var botType: js.UndefOr[BotType] = js.undefined
   
   /**
     * Provides information on additional privacy protections Amazon Lex should use with the bot's data.
@@ -54,7 +64,17 @@ object UpdateBotRequest {
     
     inline def setBotId(value: Id): Self = StObject.set(x, "botId", value.asInstanceOf[js.Any])
     
+    inline def setBotMembers(value: BotMembers): Self = StObject.set(x, "botMembers", value.asInstanceOf[js.Any])
+    
+    inline def setBotMembersUndefined: Self = StObject.set(x, "botMembers", js.undefined)
+    
+    inline def setBotMembersVarargs(value: BotMember*): Self = StObject.set(x, "botMembers", js.Array(value*))
+    
     inline def setBotName(value: Name): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
+    
+    inline def setBotType(value: BotType): Self = StObject.set(x, "botType", value.asInstanceOf[js.Any])
+    
+    inline def setBotTypeUndefined: Self = StObject.set(x, "botType", js.undefined)
     
     inline def setDataPrivacy(value: DataPrivacy): Self = StObject.set(x, "dataPrivacy", value.asInstanceOf[js.Any])
     

@@ -35,6 +35,8 @@ object libSimpleLayoutSimpleLayoutBufferMod {
     
     /* private */ var items_ : Any = js.native
     
+    /* private */ var key_ : Any = js.native
+    
     /* private */ var pendingStringsLength_ : Any = js.native
     
     /* private */ var pendingStrings_ : Any = js.native

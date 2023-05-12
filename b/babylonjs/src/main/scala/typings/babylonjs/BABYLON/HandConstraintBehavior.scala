@@ -59,6 +59,7 @@ trait HandConstraintBehavior
     * @param xr xr experience
     */
   def linkToXRExperience(xr: WebXRExperienceHelper): Unit = js.native
+  def linkToXRExperience(xr: WebXRFeaturesManager): Unit = js.native
   
   /** gets or sets behavior's name */
   @JSName("name")

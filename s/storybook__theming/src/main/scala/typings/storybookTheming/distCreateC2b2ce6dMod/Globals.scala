@@ -1,0 +1,682 @@
+package typings.storybookTheming.distCreateC2b2ce6dMod
+
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._AccentColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._AlignContent
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._AlignItems
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._AlignSelf
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._AlignTracks
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Animation
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._AnimationComposition
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._AnimationDirection
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._AnimationFillMode
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._AnimationIterationCount
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._AnimationName
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._AnimationPlayState
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._AnimationTimeline
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._AnimationTimingFunction
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._AspectRatio
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Azimuth
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BackdropFilter
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Background
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BackgroundAttachment
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BackgroundBlendMode
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BackgroundClip
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BackgroundColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BackgroundImage
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BackgroundOrigin
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BackgroundPosition
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BackgroundPositionX
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BackgroundPositionY
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BackgroundRepeat
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BackgroundSize
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BaselineShift
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BlockOverflow
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BlockSize
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Border
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderBlock
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderBlockColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderBlockEnd
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderBlockEndColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderBlockEndWidth
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderBlockStart
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderBlockStartColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderBlockStartWidth
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderBlockWidth
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderBottom
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderBottomColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderBottomWidth
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderImage
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderImageRepeat
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderImageSource
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderImageWidth
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderInline
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderInlineColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderInlineEnd
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderInlineEndColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderInlineEndWidth
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderInlineStart
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderInlineStartColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderInlineStartWidth
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderInlineWidth
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderLeft
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderLeftColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderLeftWidth
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderRight
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderRightColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderRightWidth
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderStyle
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderTop
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderTopColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderTopWidth
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BorderWidth
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Bottom
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._BoxShadow
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Caret
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._CaretColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Clip
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ClipPath
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Color
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ColorScheme
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ColumnCount
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ColumnGap
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ColumnRule
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ColumnRuleColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ColumnRuleStyle
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ColumnRuleWidth
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ColumnWidth
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Columns
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Contain
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ContainIntrinsicBlockSize
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ContainIntrinsicHeight
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ContainIntrinsicInlineSize
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ContainIntrinsicSize
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ContainIntrinsicWidth
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Container
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ContainerName
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Content
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._CounterIncrement
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._CounterReset
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._CounterSet
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Cursor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Display
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Fill
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Filter
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Flex
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._FlexBasis
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._FlexFlow
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._FloodColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Font
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._FontFamily
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._FontFeatureSettings
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._FontLanguageOverride
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._FontPalette
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._FontSize
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._FontSizeAdjust
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._FontSmooth
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._FontStretch
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._FontStyle
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._FontSynthesis
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._FontVariant
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._FontVariantAlternates
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._FontVariantEastAsian
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._FontVariantLigatures
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._FontVariantNumeric
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._FontVariationSettings
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._FontWeight
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Gap
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._GlyphOrientationVertical
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Grid
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._GridAutoColumns
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._GridAutoFlow
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._GridAutoRows
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._GridTemplate
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._GridTemplateAreas
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._GridTemplateColumns
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._GridTemplateRows
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._HangingPunctuation
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Height
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._HyphenateCharacter
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._HyphenateLimitChars
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ImageOrientation
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ImageResolution
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._InitialLetter
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._InlineSize
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Inset
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._InsetBlock
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._InsetBlockEnd
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._InsetBlockStart
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._InsetInline
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._InsetInlineEnd
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._InsetInlineStart
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._JustifyContent
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._JustifyItems
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._JustifySelf
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._JustifyTracks
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Left
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._LetterSpacing
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._LightingColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._LineClamp
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._LineHeight
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ListStyle
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ListStyleImage
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ListStyleType
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Margin
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MarginBlock
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MarginBlockEnd
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MarginBlockStart
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MarginBottom
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MarginInline
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MarginInlineEnd
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MarginInlineStart
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MarginLeft
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MarginRight
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MarginTop
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Marker
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MarkerEnd
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MarkerMid
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MarkerStart
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Mask
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MaskBorder
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MaskBorderRepeat
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MaskBorderSource
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MaskBorderWidth
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MaskClip
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MaskComposite
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MaskImage
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MaskMode
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MaskOrigin
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MaskPosition
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MaskRepeat
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MaskSize
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MathDepth
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MaxBlockSize
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MaxHeight
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MaxInlineSize
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MaxLines
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MaxWidth
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MinBlockSize
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MinHeight
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MinInlineSize
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MinWidth
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MozBinding
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MozBorderBottomColors
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MozBorderLeftColors
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MozBorderRightColors
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MozBorderTopColors
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MozContextProperties
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MozForceBrokenImageIcon
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MozImageRegion
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MsContentZoomSnap
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MsFlowFrom
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MsFlowInto
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MsGridColumns
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MsGridRows
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MsHyphenateLimitChars
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MsHyphenateLimitLines
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MsScrollLimitXMax
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MsScrollLimitYMax
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MsScrollbar3dlightColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MsScrollbarArrowColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MsScrollbarBaseColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MsScrollbarDarkshadowColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MsScrollbarFaceColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MsScrollbarHighlightColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MsScrollbarShadowColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._MsScrollbarTrackColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ObjectPosition
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Offset
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._OffsetAnchor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._OffsetPath
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._OffsetPosition
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._OffsetRotate
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Outline
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._OutlineColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._OutlineStyle
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._OutlineWidth
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Overflow
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._OverflowClipMargin
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._OverscrollBehavior
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Page
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._PaintOrder
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Perspective
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._PerspectiveOrigin
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._PlaceContent
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._PlaceItems
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._PlaceSelf
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Quotes
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Right
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Rotate
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._RowGap
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._RubyPosition
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Scale
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ScrollPadding
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ScrollPaddingBlock
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ScrollPaddingBlockEnd
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ScrollPaddingBlockStart
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ScrollPaddingBottom
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ScrollPaddingInline
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ScrollPaddingInlineEnd
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ScrollPaddingInlineStart
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ScrollPaddingLeft
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ScrollPaddingRight
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ScrollPaddingTop
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ScrollSnapAlign
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ScrollSnapCoordinate
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ScrollSnapDestination
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ScrollSnapPointsX
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ScrollSnapPointsY
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ScrollSnapType
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ScrollTimeline
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ScrollTimelineAxis
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ScrollTimelineName
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ScrollbarColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ScrollbarGutter
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ShapeOutside
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._StopColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Stroke
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._StrokeDasharray
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._TextCombineUpright
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._TextDecoration
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._TextDecorationColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._TextDecorationLine
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._TextDecorationSkip
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._TextDecorationThickness
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._TextEmphasis
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._TextEmphasisColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._TextEmphasisStyle
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._TextOverflow
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._TextShadow
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._TextSizeAdjust
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._TextUnderlineOffset
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._TextUnderlinePosition
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Top
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._TouchAction
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Transform
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._TransformOrigin
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Transition
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._TransitionProperty
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._TransitionTimingFunction
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Translate
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._VerticalAlign
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ViewTransitionName
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._WebkitBorderBefore
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._WebkitBorderBeforeColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._WebkitBorderBeforeStyle
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._WebkitBorderBeforeWidth
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._WebkitBoxReflect
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._WebkitLineClamp
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._WebkitMask
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._WebkitMaskAttachment
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._WebkitMaskClip
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._WebkitMaskComposite
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._WebkitMaskImage
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._WebkitMaskOrigin
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._WebkitMaskPosition
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._WebkitMaskPositionX
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._WebkitMaskPositionY
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._WebkitMaskRepeat
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._WebkitMaskSize
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._WebkitTapHighlightColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._WebkitTextFillColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._WebkitTextStroke
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._WebkitTextStrokeColor
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Width
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._WillChange
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._WordSpacing
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._ZIndex
+import typings.storybookTheming.distCreateC2b2ce6dMod.Property._Zoom
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typings.storybookTheming.storybookThemingStrings.`-moz-initial`
+  - typings.storybookTheming.storybookThemingStrings.inherit
+  - typings.storybookTheming.storybookThemingStrings.initial
+  - typings.storybookTheming.storybookThemingStrings.revert
+  - typings.storybookTheming.storybookThemingStrings.`revert-layer`
+  - typings.storybookTheming.storybookThemingStrings.unset
+*/
+trait Globals
+  extends StObject
+     with _AccentColor
+     with _AlignContent
+     with _AlignItems
+     with _AlignSelf
+     with _AlignTracks
+     with _Animation[Any]
+     with _AnimationComposition
+     with _AnimationDirection
+     with _AnimationFillMode
+     with _AnimationIterationCount
+     with _AnimationName
+     with _AnimationPlayState
+     with _AnimationTimeline
+     with _AnimationTimingFunction
+     with _AspectRatio
+     with _Azimuth
+     with _BackdropFilter
+     with _Background[Any]
+     with _BackgroundAttachment
+     with _BackgroundBlendMode
+     with _BackgroundClip
+     with _BackgroundColor
+     with _BackgroundImage
+     with _BackgroundOrigin
+     with _BackgroundPosition[Any]
+     with _BackgroundPositionX[Any]
+     with _BackgroundPositionY[Any]
+     with _BackgroundRepeat
+     with _BackgroundSize[Any]
+     with _BaselineShift[Any]
+     with _BlockOverflow
+     with _BlockSize[Any]
+     with _Border[Any]
+     with _BorderBlock[Any]
+     with _BorderBlockColor
+     with _BorderBlockEnd[Any]
+     with _BorderBlockEndColor
+     with _BorderBlockEndWidth[Any]
+     with _BorderBlockStart[Any]
+     with _BorderBlockStartColor
+     with _BorderBlockStartWidth[Any]
+     with _BorderBlockWidth[Any]
+     with _BorderBottom[Any]
+     with _BorderBottomColor
+     with _BorderBottomWidth[Any]
+     with _BorderColor
+     with _BorderImage
+     with _BorderImageRepeat
+     with _BorderImageSource
+     with _BorderImageWidth[Any]
+     with _BorderInline[Any]
+     with _BorderInlineColor
+     with _BorderInlineEnd[Any]
+     with _BorderInlineEndColor
+     with _BorderInlineEndWidth[Any]
+     with _BorderInlineStart[Any]
+     with _BorderInlineStartColor
+     with _BorderInlineStartWidth[Any]
+     with _BorderInlineWidth[Any]
+     with _BorderLeft[Any]
+     with _BorderLeftColor
+     with _BorderLeftWidth[Any]
+     with _BorderRight[Any]
+     with _BorderRightColor
+     with _BorderRightWidth[Any]
+     with _BorderStyle
+     with _BorderTop[Any]
+     with _BorderTopColor
+     with _BorderTopWidth[Any]
+     with _BorderWidth[Any]
+     with _Bottom[Any]
+     with _BoxShadow
+     with _Caret
+     with _CaretColor
+     with _Clip
+     with _ClipPath
+     with _Color
+     with _ColorScheme
+     with _ColumnCount
+     with _ColumnGap[Any]
+     with _ColumnRule[Any]
+     with _ColumnRuleColor
+     with _ColumnRuleStyle
+     with _ColumnRuleWidth[Any]
+     with _ColumnWidth[Any]
+     with _Columns[Any]
+     with _Contain
+     with _ContainIntrinsicBlockSize[Any]
+     with _ContainIntrinsicHeight[Any]
+     with _ContainIntrinsicInlineSize[Any]
+     with _ContainIntrinsicSize[Any]
+     with _ContainIntrinsicWidth[Any]
+     with _Container
+     with _ContainerName
+     with _Content
+     with _CounterIncrement
+     with _CounterReset
+     with _CounterSet
+     with _Cursor
+     with _Display
+     with _Fill
+     with _Filter
+     with _Flex[Any]
+     with _FlexBasis[Any]
+     with _FlexFlow
+     with _FloodColor
+     with _Font
+     with _FontFamily
+     with _FontFeatureSettings
+     with _FontLanguageOverride
+     with _FontPalette
+     with _FontSize[Any]
+     with _FontSizeAdjust
+     with _FontSmooth[Any]
+     with _FontStretch
+     with _FontStyle
+     with _FontSynthesis
+     with _FontVariant
+     with _FontVariantAlternates
+     with _FontVariantEastAsian
+     with _FontVariantLigatures
+     with _FontVariantNumeric
+     with _FontVariationSettings
+     with _FontWeight
+     with _Gap[Any]
+     with _GlyphOrientationVertical
+     with _Grid
+     with _GridAutoColumns[Any]
+     with _GridAutoFlow
+     with _GridAutoRows[Any]
+     with _GridTemplate
+     with _GridTemplateAreas
+     with _GridTemplateColumns[Any]
+     with _GridTemplateRows[Any]
+     with _HangingPunctuation
+     with _Height[Any]
+     with _HyphenateCharacter
+     with _HyphenateLimitChars
+     with _ImageOrientation
+     with _ImageResolution
+     with _InitialLetter
+     with _InlineSize[Any]
+     with _Inset[Any]
+     with _InsetBlock[Any]
+     with _InsetBlockEnd[Any]
+     with _InsetBlockStart[Any]
+     with _InsetInline[Any]
+     with _InsetInlineEnd[Any]
+     with _InsetInlineStart[Any]
+     with _JustifyContent
+     with _JustifyItems
+     with _JustifySelf
+     with _JustifyTracks
+     with _Left[Any]
+     with _LetterSpacing[Any]
+     with _LightingColor
+     with _LineClamp
+     with _LineHeight[Any]
+     with _ListStyle
+     with _ListStyleImage
+     with _ListStyleType
+     with _Margin[Any]
+     with _MarginBlock[Any]
+     with _MarginBlockEnd[Any]
+     with _MarginBlockStart[Any]
+     with _MarginBottom[Any]
+     with _MarginInline[Any]
+     with _MarginInlineEnd[Any]
+     with _MarginInlineStart[Any]
+     with _MarginLeft[Any]
+     with _MarginRight[Any]
+     with _MarginTop[Any]
+     with _Marker
+     with _MarkerEnd
+     with _MarkerMid
+     with _MarkerStart
+     with _Mask[Any]
+     with _MaskBorder
+     with _MaskBorderRepeat
+     with _MaskBorderSource
+     with _MaskBorderWidth[Any]
+     with _MaskClip
+     with _MaskComposite
+     with _MaskImage
+     with _MaskMode
+     with _MaskOrigin
+     with _MaskPosition[Any]
+     with _MaskRepeat
+     with _MaskSize[Any]
+     with _MathDepth
+     with _MaxBlockSize[Any]
+     with _MaxHeight[Any]
+     with _MaxInlineSize[Any]
+     with _MaxLines
+     with _MaxWidth[Any]
+     with _MinBlockSize[Any]
+     with _MinHeight[Any]
+     with _MinInlineSize[Any]
+     with _MinWidth[Any]
+     with _MozBinding
+     with _MozBorderBottomColors
+     with _MozBorderLeftColors
+     with _MozBorderRightColors
+     with _MozBorderTopColors
+     with _MozContextProperties
+     with _MozForceBrokenImageIcon
+     with _MozImageRegion
+     with _MsContentZoomSnap
+     with _MsFlowFrom
+     with _MsFlowInto
+     with _MsGridColumns[Any]
+     with _MsGridRows[Any]
+     with _MsHyphenateLimitChars
+     with _MsHyphenateLimitLines
+     with _MsScrollLimitXMax[Any]
+     with _MsScrollLimitYMax[Any]
+     with _MsScrollbar3dlightColor
+     with _MsScrollbarArrowColor
+     with _MsScrollbarBaseColor
+     with _MsScrollbarDarkshadowColor
+     with _MsScrollbarFaceColor
+     with _MsScrollbarHighlightColor
+     with _MsScrollbarShadowColor
+     with _MsScrollbarTrackColor
+     with _ObjectPosition[Any]
+     with _Offset[Any]
+     with _OffsetAnchor[Any]
+     with _OffsetPath
+     with _OffsetPosition[Any]
+     with _OffsetRotate
+     with _Outline[Any]
+     with _OutlineColor
+     with _OutlineStyle
+     with _OutlineWidth[Any]
+     with _Overflow
+     with _OverflowClipMargin[Any]
+     with _OverscrollBehavior
+     with _Page
+     with _PaintOrder
+     with _Perspective[Any]
+     with _PerspectiveOrigin[Any]
+     with _PlaceContent
+     with _PlaceItems
+     with _PlaceSelf
+     with _Quotes
+     with _Right[Any]
+     with _Rotate
+     with _RowGap[Any]
+     with _RubyPosition
+     with _Scale
+     with _ScrollPadding[Any]
+     with _ScrollPaddingBlock[Any]
+     with _ScrollPaddingBlockEnd[Any]
+     with _ScrollPaddingBlockStart[Any]
+     with _ScrollPaddingBottom[Any]
+     with _ScrollPaddingInline[Any]
+     with _ScrollPaddingInlineEnd[Any]
+     with _ScrollPaddingInlineStart[Any]
+     with _ScrollPaddingLeft[Any]
+     with _ScrollPaddingRight[Any]
+     with _ScrollPaddingTop[Any]
+     with _ScrollSnapAlign
+     with _ScrollSnapCoordinate[Any]
+     with _ScrollSnapDestination[Any]
+     with _ScrollSnapPointsX
+     with _ScrollSnapPointsY
+     with _ScrollSnapType
+     with _ScrollTimeline
+     with _ScrollTimelineAxis
+     with _ScrollTimelineName
+     with _ScrollbarColor
+     with _ScrollbarGutter
+     with _ShapeOutside
+     with _StopColor
+     with _Stroke
+     with _StrokeDasharray[Any]
+     with _TextCombineUpright
+     with _TextDecoration[Any]
+     with _TextDecorationColor
+     with _TextDecorationLine
+     with _TextDecorationSkip
+     with _TextDecorationThickness[Any]
+     with _TextEmphasis
+     with _TextEmphasisColor
+     with _TextEmphasisStyle
+     with _TextOverflow
+     with _TextShadow
+     with _TextSizeAdjust
+     with _TextUnderlineOffset[Any]
+     with _TextUnderlinePosition
+     with _Top[Any]
+     with _TouchAction
+     with _Transform
+     with _TransformOrigin[Any]
+     with _Transition[Any]
+     with _TransitionProperty
+     with _TransitionTimingFunction
+     with _Translate[Any]
+     with _VerticalAlign[Any]
+     with _ViewTransitionName
+     with _WebkitBorderBefore[Any]
+     with _WebkitBorderBeforeColor
+     with _WebkitBorderBeforeStyle
+     with _WebkitBorderBeforeWidth[Any]
+     with _WebkitBoxReflect[Any]
+     with _WebkitLineClamp
+     with _WebkitMask[Any]
+     with _WebkitMaskAttachment
+     with _WebkitMaskClip
+     with _WebkitMaskComposite
+     with _WebkitMaskImage
+     with _WebkitMaskOrigin
+     with _WebkitMaskPosition[Any]
+     with _WebkitMaskPositionX[Any]
+     with _WebkitMaskPositionY[Any]
+     with _WebkitMaskRepeat
+     with _WebkitMaskSize[Any]
+     with _WebkitTapHighlightColor
+     with _WebkitTextFillColor
+     with _WebkitTextStroke[Any]
+     with _WebkitTextStrokeColor
+     with _Width[Any]
+     with _WillChange
+     with _WordSpacing[Any]
+     with _ZIndex
+     with _Zoom
+object Globals {
+  
+  inline def `-moz-initial`: typings.storybookTheming.storybookThemingStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.storybookTheming.storybookThemingStrings.`-moz-initial`]
+  
+  inline def inherit: typings.storybookTheming.storybookThemingStrings.inherit = "inherit".asInstanceOf[typings.storybookTheming.storybookThemingStrings.inherit]
+  
+  inline def initial: typings.storybookTheming.storybookThemingStrings.initial = "initial".asInstanceOf[typings.storybookTheming.storybookThemingStrings.initial]
+  
+  inline def revert: typings.storybookTheming.storybookThemingStrings.revert = "revert".asInstanceOf[typings.storybookTheming.storybookThemingStrings.revert]
+  
+  inline def `revert-layer`: typings.storybookTheming.storybookThemingStrings.`revert-layer` = "revert-layer".asInstanceOf[typings.storybookTheming.storybookThemingStrings.`revert-layer`]
+  
+  inline def unset: typings.storybookTheming.storybookThemingStrings.unset = "unset".asInstanceOf[typings.storybookTheming.storybookThemingStrings.unset]
+}

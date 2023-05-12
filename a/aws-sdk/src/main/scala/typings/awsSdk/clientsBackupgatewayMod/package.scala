@@ -8,9 +8,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type ActivationKey = String
 
+type AverageUploadRateLimit = Double
+
+type BandwidthRateLimitIntervals = js.Array[BandwidthRateLimitInterval]
+
 type DayOfMonth = Double
 
 type DayOfWeek = Double
+
+type DaysOfWeek = js.Array[DayOfWeek]
 
 type GatewayArn = String
 
@@ -35,7 +41,11 @@ type HypervisorState = _HypervisorState | String
 
 type Hypervisors = js.Array[Hypervisor]
 
+type IamRoleArn = String
+
 type KmsKeyArn = String
+
+type LogGroupArn = String
 
 type MaxResults = Double
 
@@ -53,6 +63,16 @@ type ResourceArn = String
 
 type ServerArn = String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CREATED
+  - typings.awsSdk.awsSdkStrings.RUNNING
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.PARTIALLY_FAILED
+  - typings.awsSdk.awsSdkStrings.SUCCEEDED
+  - java.lang.String
+*/
+type SyncMetadataStatus = _SyncMetadataStatus | String
+
 type TagKey = String
 
 type TagKeys = js.Array[TagKey]
@@ -66,6 +86,14 @@ type Time = js.Date
 type Username = String
 
 type VirtualMachines = js.Array[VirtualMachine]
+
+type VmwareCategory = String
+
+type VmwareTagName = String
+
+type VmwareTags = js.Array[VmwareTag]
+
+type VmwareToAwsTagMappings = js.Array[VmwareToAwsTagMapping]
 
 type VpcEndpoint = String
 

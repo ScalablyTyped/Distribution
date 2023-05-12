@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.TextDecorationThickness
+import typings.csstype.mod.Property.BorderCollapse
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `201` extends StObject {
   
   var value: js.UndefOr[
-    (TextDecorationThickness[Double | String]) | (js.Array[
+    BorderCollapse | (js.Array[
       (Extract[
-        js.UndefOr[
-          (TextDecorationThickness[Double | String]) | (js.Array[NonNullable[js.UndefOr[TextDecorationThickness[Double | String]]]])
-        ], 
+        js.UndefOr[BorderCollapse | js.Array[NonNullable[js.UndefOr[BorderCollapse]]]], 
         String
-      ]) | (NonNullable[js.UndefOr[TextDecorationThickness[Double | String]]])
+      ]) | NonNullable[js.UndefOr[BorderCollapse]]
     ])
   ] = js.native
 }

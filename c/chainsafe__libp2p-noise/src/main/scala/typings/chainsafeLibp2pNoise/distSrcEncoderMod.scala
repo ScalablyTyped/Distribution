@@ -2,7 +2,6 @@ package typings.chainsafeLibp2pNoise
 
 import typings.chainsafeLibp2pNoise.distSrcHandshakeMod.MessageBuffer
 import typings.itLengthPrefixed.mod.LengthDecoderFunction
-import typings.itLengthPrefixed.mod.LengthEncoderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +28,17 @@ object distSrcEncoderMod {
   @js.native
   val uint16BEDecode: LengthDecoderFunction = js.native
   
-  @JSImport("@chainsafe/libp2p-noise/dist/src/encoder", "uint16BEEncode")
-  @js.native
-  val uint16BEEncode: LengthEncoderFunction = js.native
+  object uint16BEEncode {
+    
+    inline def apply(value: Double): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    
+    @JSImport("@chainsafe/libp2p-noise/dist/src/encoder", "uint16BEEncode")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@chainsafe/libp2p-noise/dist/src/encoder", "uint16BEEncode.bytes")
+    @js.native
+    def bytes: Double = js.native
+    inline def bytes_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bytes")(x.asInstanceOf[js.Any])
+  }
 }

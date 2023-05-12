@@ -7,8 +7,9 @@ import typings.awsSdk.awsSdkStrings.Static_
 import typings.awsSdk.awsSdkStrings.Topic
 import typings.awsSdk.awsSdkStrings.USD
 import typings.awsSdk.awsSdkStrings.Windows_
+import typings.awsSdk.awsSdkStrings.`aggregate-latency`
 import typings.awsSdk.awsSdkStrings.`amazon-dns`
-import typings.awsSdk.awsSdkStrings.`cidr-not-available`
+import typings.awsSdk.awsSdkStrings.`amd-sev-snp`
 import typings.awsSdk.awsSdkStrings.`domain-name`
 import typings.awsSdk.awsSdkStrings.`use-capacity-reservations-first`
 import typings.awsSdk.awsSdkStrings.all__
@@ -22,6 +23,7 @@ import typings.awsSdk.awsSdkStrings.loadPermission
 import typings.awsSdk.awsSdkStrings.open__
 import typings.awsSdk.awsSdkStrings.openvpn
 import typings.awsSdk.awsSdkStrings.ova
+import typings.awsSdk.awsSdkStrings.p50
 import typings.awsSdk.awsSdkStrings.reachability
 import typings.awsSdk.awsSdkStrings.snapshot_
 import typings.awsSdk.awsSdkStrings.spot_
@@ -65,7 +67,7 @@ type AcceleratorNameSet = js.Array[AcceleratorName]
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.gpu_
   - typings.awsSdk.awsSdkStrings.fpga
-  - typings.awsSdk.awsSdkStrings.inference
+  - typings.awsSdk.awsSdkStrings.inference_
   - java.lang.String
 */
 type AcceleratorType = _AcceleratorType | java.lang.String
@@ -186,6 +188,13 @@ type AllowsMultipleInstanceTypes = _AllowsMultipleInstanceTypes | java.lang.Stri
 
 type AlternatePathHintList = js.Array[AlternatePathHint]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.enabled__
+  - typings.awsSdk.awsSdkStrings.disabled__
+  - java.lang.String
+*/
+type AmdSevSnpSpecification = _AmdSevSnpSpecification | java.lang.String
+
 type AnalysisComponentList = js.Array[AnalysisComponent]
 
 /* Rewritten from type alias, can be one of: 
@@ -289,6 +298,8 @@ type AvailabilityZoneList = js.Array[AvailabilityZone]
 
 type AvailabilityZoneMessageList = js.Array[AvailabilityZoneMessage]
 
+type AvailabilityZoneName = java.lang.String
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`opt-in-not-required`
   - typings.awsSdk.awsSdkStrings.`opted-in`
@@ -301,7 +312,7 @@ type AvailabilityZoneOptInStatus = _AvailabilityZoneOptInStatus | java.lang.Stri
   - typings.awsSdk.awsSdkStrings.available__
   - typings.awsSdk.awsSdkStrings.information
   - typings.awsSdk.awsSdkStrings.impaired__
-  - typings.awsSdk.awsSdkStrings.unavailable__
+  - typings.awsSdk.awsSdkStrings.unavailable___
   - java.lang.String
 */
 type AvailabilityZoneState = _AvailabilityZoneState | java.lang.String
@@ -365,6 +376,7 @@ type BootModeTypeList = js.Array[BootModeType]
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`legacy-bios`
   - typings.awsSdk.awsSdkStrings.uefi_
+  - typings.awsSdk.awsSdkStrings.`uefi-preferred`
   - java.lang.String
 */
 type BootModeValues = _BootModeValues | java.lang.String
@@ -538,6 +550,10 @@ type CarrierGatewaySet = js.Array[CarrierGateway]
 */
 type CarrierGatewayState = _CarrierGatewayState | java.lang.String
 
+type CertificateArn = java.lang.String
+
+type CertificateId = java.lang.String
+
 type CidrBlockSet = js.Array[CidrBlock]
 
 type ClassicLinkDnsSupportList = js.Array[ClassicLinkDnsSupport]
@@ -552,6 +568,8 @@ type ClassicLoadBalancers = js.Array[ClassicLoadBalancer]
   - java.lang.String
 */
 type ClientCertificateRevocationListStatusCode = _ClientCertificateRevocationListStatusCode | java.lang.String
+
+type ClientSecretType = java.lang.String
 
 type ClientVpnAssociationId = java.lang.String
 
@@ -673,6 +691,8 @@ type ConversionTaskId = java.lang.String
 */
 type ConversionTaskState = _ConversionTaskState | java.lang.String
 
+type CopySnapshotRequestPSU = java.lang.String
+
 type CopyTagsFromSource = volume_ | java.lang.String
 
 type CoreCount = scala.Double
@@ -695,6 +715,8 @@ type CreateFleetErrorsSet = js.Array[CreateFleetError]
 
 type CreateFleetInstancesSet = js.Array[CreateFleetInstance]
 
+type CreateVerifiedAccessEndpointSubnetIdList = js.Array[SubnetId]
+
 type CreateVolumePermissionList = js.Array[CreateVolumePermission]
 
 type CurrencyCodeValues = USD | java.lang.String
@@ -710,6 +732,10 @@ type CustomerGatewayList = js.Array[CustomerGateway]
 type DITMaxResults = scala.Double
 
 type DITOMaxResults = scala.Double
+
+type DataQueries = js.Array[DataQuery]
+
+type DataResponses = js.Array[DataResponse]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Active_
@@ -872,6 +898,16 @@ type DescribeSubnetsMaxResults = scala.Double
 
 type DescribeTrunkInterfaceAssociationsMaxResults = scala.Double
 
+type DescribeVerifiedAccessEndpointsMaxResults = scala.Double
+
+type DescribeVerifiedAccessGroupMaxResults = scala.Double
+
+type DescribeVerifiedAccessInstanceLoggingConfigurationsMaxResults = scala.Double
+
+type DescribeVerifiedAccessInstancesMaxResults = scala.Double
+
+type DescribeVerifiedAccessTrustProvidersMaxResults = scala.Double
+
 type DescribeVpcClassicLinkDnsSupportMaxResults = scala.Double
 
 type DescribeVpcClassicLinkDnsSupportNextToken = java.lang.String
@@ -886,6 +922,13 @@ type DescribeVpcsMaxResults = scala.Double
   - java.lang.String
 */
 type DestinationFileFormat = _DestinationFileFormat | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.jamf
+  - typings.awsSdk.awsSdkStrings.crowdstrike
+  - java.lang.String
+*/
+type DeviceTrustProviderType = _DeviceTrustProviderType | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ebs_
@@ -945,7 +988,7 @@ type DnsNameState = _DnsNameState | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ipv4__
-  - typings.awsSdk.awsSdkStrings.dualstack
+  - typings.awsSdk.awsSdkStrings.dualstack_
   - typings.awsSdk.awsSdkStrings.ipv6__
   - typings.awsSdk.awsSdkStrings.`service-defined`
   - java.lang.String
@@ -969,6 +1012,8 @@ type DomainType = _DomainType | java.lang.String
 type Double = scala.Double
 
 type DoubleWithConstraints = scala.Double
+
+type DrainSeconds = scala.Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.enable_
@@ -1008,6 +1053,10 @@ type EgressOnlyInternetGatewayIdList = js.Array[EgressOnlyInternetGatewayId]
 
 type EgressOnlyInternetGatewayList = js.Array[EgressOnlyInternetGateway]
 
+type EipAllocationPublicIp = java.lang.String
+
+type EipAssociationIdList = js.Array[ElasticIpAssociationId]
+
 type ElasticGpuAssociationList = js.Array[ElasticGpuAssociation]
 
 type ElasticGpuId = java.lang.String
@@ -1038,6 +1087,8 @@ type ElasticInferenceAcceleratorCount = scala.Double
 type ElasticInferenceAccelerators = js.Array[ElasticInferenceAccelerator]
 
 type ElasticIpAssociationId = java.lang.String
+
+type EnaSrdSupported = scala.Boolean
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.unsupported_
@@ -1307,7 +1358,7 @@ type FpgaImageList = js.Array[FpgaImage]
   - typings.awsSdk.awsSdkStrings.pending__
   - typings.awsSdk.awsSdkStrings.failed__
   - typings.awsSdk.awsSdkStrings.available__
-  - typings.awsSdk.awsSdkStrings.unavailable__
+  - typings.awsSdk.awsSdkStrings.unavailable___
   - java.lang.String
 */
 type FpgaImageStateCode = _FpgaImageStateCode | java.lang.String
@@ -1366,6 +1417,13 @@ type HistoryRecords = js.Array[HistoryRecord]
 type HostInstanceList = js.Array[HostInstance]
 
 type HostList = js.Array[Host]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.on__
+  - typings.awsSdk.awsSdkStrings.off__
+  - java.lang.String
+*/
+type HostMaintenance = _HostMaintenance | java.lang.String
 
 type HostOfferingSet = js.Array[HostOffering]
 
@@ -1499,6 +1557,8 @@ type ImportImageTaskList = js.Array[ImportImageTask]
 
 type ImportInstanceVolumeDetailSet = js.Array[ImportInstanceVolumeDetailItem]
 
+type ImportManifestUrl = java.lang.String
+
 type ImportSnapshotTaskId = java.lang.String
 
 type ImportSnapshotTaskIdList = js.Array[ImportSnapshotTaskId]
@@ -1551,6 +1611,13 @@ type InstanceBlockDeviceMappingList = js.Array[InstanceBlockDeviceMapping]
 
 type InstanceBlockDeviceMappingSpecificationList = js.Array[InstanceBlockDeviceMappingSpecification]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.`legacy-bios`
+  - typings.awsSdk.awsSdkStrings.uefi_
+  - java.lang.String
+*/
+type InstanceBootModeValues = _InstanceBootModeValues | java.lang.String
+
 type InstanceCountList = js.Array[InstanceCount]
 
 type InstanceCreditSpecificationList = js.Array[InstanceCreditSpecification]
@@ -1598,18 +1665,22 @@ type InstanceHealthStatus = _InstanceHealthStatus | java.lang.String
 
 type InstanceId = java.lang.String
 
+type InstanceIdForResolver = java.lang.String
+
 type InstanceIdList = js.Array[InstanceId]
 
 type InstanceIdSet = js.Array[InstanceId]
 
 type InstanceIdStringList = js.Array[InstanceId]
 
+type InstanceIdWithVolumeResolver = java.lang.String
+
 type InstanceIdsSet = js.Array[InstanceId]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.hibernate
   - typings.awsSdk.awsSdkStrings.stop_
-  - typings.awsSdk.awsSdkStrings.terminate_
+  - typings.awsSdk.awsSdkStrings.terminate__
   - java.lang.String
 */
 type InstanceInterruptionBehavior = _InstanceInterruptionBehavior | java.lang.String
@@ -2285,6 +2356,81 @@ type InstanceTagKeySet = js.Array[String]
   - typings.awsSdk.awsSdkStrings.`u-24tb1Dot112xlarge`
   - typings.awsSdk.awsSdkStrings.trn1Dot2xlarge
   - typings.awsSdk.awsSdkStrings.trn1Dot32xlarge
+  - typings.awsSdk.awsSdkStrings.hpc6idDot32xlarge
+  - typings.awsSdk.awsSdkStrings.c6inDotlarge
+  - typings.awsSdk.awsSdkStrings.c6inDotxlarge
+  - typings.awsSdk.awsSdkStrings.c6inDot2xlarge
+  - typings.awsSdk.awsSdkStrings.c6inDot4xlarge
+  - typings.awsSdk.awsSdkStrings.c6inDot8xlarge
+  - typings.awsSdk.awsSdkStrings.c6inDot12xlarge
+  - typings.awsSdk.awsSdkStrings.c6inDot16xlarge
+  - typings.awsSdk.awsSdkStrings.c6inDot24xlarge
+  - typings.awsSdk.awsSdkStrings.c6inDot32xlarge
+  - typings.awsSdk.awsSdkStrings.m6inDotlarge
+  - typings.awsSdk.awsSdkStrings.m6inDotxlarge
+  - typings.awsSdk.awsSdkStrings.m6inDot2xlarge
+  - typings.awsSdk.awsSdkStrings.m6inDot4xlarge
+  - typings.awsSdk.awsSdkStrings.m6inDot8xlarge
+  - typings.awsSdk.awsSdkStrings.m6inDot12xlarge
+  - typings.awsSdk.awsSdkStrings.m6inDot16xlarge
+  - typings.awsSdk.awsSdkStrings.m6inDot24xlarge
+  - typings.awsSdk.awsSdkStrings.m6inDot32xlarge
+  - typings.awsSdk.awsSdkStrings.m6idnDotlarge
+  - typings.awsSdk.awsSdkStrings.m6idnDotxlarge
+  - typings.awsSdk.awsSdkStrings.m6idnDot2xlarge
+  - typings.awsSdk.awsSdkStrings.m6idnDot4xlarge
+  - typings.awsSdk.awsSdkStrings.m6idnDot8xlarge
+  - typings.awsSdk.awsSdkStrings.m6idnDot12xlarge
+  - typings.awsSdk.awsSdkStrings.m6idnDot16xlarge
+  - typings.awsSdk.awsSdkStrings.m6idnDot24xlarge
+  - typings.awsSdk.awsSdkStrings.m6idnDot32xlarge
+  - typings.awsSdk.awsSdkStrings.r6inDotlarge
+  - typings.awsSdk.awsSdkStrings.r6inDotxlarge
+  - typings.awsSdk.awsSdkStrings.r6inDot2xlarge
+  - typings.awsSdk.awsSdkStrings.r6inDot4xlarge
+  - typings.awsSdk.awsSdkStrings.r6inDot8xlarge
+  - typings.awsSdk.awsSdkStrings.r6inDot12xlarge
+  - typings.awsSdk.awsSdkStrings.r6inDot16xlarge
+  - typings.awsSdk.awsSdkStrings.r6inDot24xlarge
+  - typings.awsSdk.awsSdkStrings.r6inDot32xlarge
+  - typings.awsSdk.awsSdkStrings.r6idnDotlarge
+  - typings.awsSdk.awsSdkStrings.r6idnDotxlarge
+  - typings.awsSdk.awsSdkStrings.r6idnDot2xlarge
+  - typings.awsSdk.awsSdkStrings.r6idnDot4xlarge
+  - typings.awsSdk.awsSdkStrings.r6idnDot8xlarge
+  - typings.awsSdk.awsSdkStrings.r6idnDot12xlarge
+  - typings.awsSdk.awsSdkStrings.r6idnDot16xlarge
+  - typings.awsSdk.awsSdkStrings.r6idnDot24xlarge
+  - typings.awsSdk.awsSdkStrings.r6idnDot32xlarge
+  - typings.awsSdk.awsSdkStrings.c7gDotmetal
+  - typings.awsSdk.awsSdkStrings.m7gDotmedium
+  - typings.awsSdk.awsSdkStrings.m7gDotlarge
+  - typings.awsSdk.awsSdkStrings.m7gDotxlarge
+  - typings.awsSdk.awsSdkStrings.m7gDot2xlarge
+  - typings.awsSdk.awsSdkStrings.m7gDot4xlarge
+  - typings.awsSdk.awsSdkStrings.m7gDot8xlarge
+  - typings.awsSdk.awsSdkStrings.m7gDot12xlarge
+  - typings.awsSdk.awsSdkStrings.m7gDot16xlarge
+  - typings.awsSdk.awsSdkStrings.m7gDotmetal
+  - typings.awsSdk.awsSdkStrings.r7gDotmedium
+  - typings.awsSdk.awsSdkStrings.r7gDotlarge
+  - typings.awsSdk.awsSdkStrings.r7gDotxlarge
+  - typings.awsSdk.awsSdkStrings.r7gDot2xlarge
+  - typings.awsSdk.awsSdkStrings.r7gDot4xlarge
+  - typings.awsSdk.awsSdkStrings.r7gDot8xlarge
+  - typings.awsSdk.awsSdkStrings.r7gDot12xlarge
+  - typings.awsSdk.awsSdkStrings.r7gDot16xlarge
+  - typings.awsSdk.awsSdkStrings.r7gDotmetal
+  - typings.awsSdk.awsSdkStrings.c6inDotmetal
+  - typings.awsSdk.awsSdkStrings.m6inDotmetal
+  - typings.awsSdk.awsSdkStrings.m6idnDotmetal
+  - typings.awsSdk.awsSdkStrings.r6inDotmetal
+  - typings.awsSdk.awsSdkStrings.r6idnDotmetal
+  - typings.awsSdk.awsSdkStrings.inf2Dotxlarge
+  - typings.awsSdk.awsSdkStrings.inf2Dot8xlarge
+  - typings.awsSdk.awsSdkStrings.inf2Dot24xlarge
+  - typings.awsSdk.awsSdkStrings.inf2Dot48xlarge
+  - typings.awsSdk.awsSdkStrings.trn1nDot32xlarge
   - java.lang.String
 */
 type InstanceType = _InstanceType | java.lang.String
@@ -2305,6 +2451,8 @@ type InstanceTypeList = js.Array[InstanceType]
 type InstanceTypeOfferingsList = js.Array[InstanceTypeOffering]
 
 type InstanceTypes = js.Array[String]
+
+type InstanceTypesList = js.Array[String]
 
 type InstanceUsageSet = js.Array[InstanceUsage]
 
@@ -2340,11 +2488,13 @@ type IpAddressList = js.Array[IpAddress]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ipv4__
-  - typings.awsSdk.awsSdkStrings.dualstack
+  - typings.awsSdk.awsSdkStrings.dualstack_
   - typings.awsSdk.awsSdkStrings.ipv6__
   - java.lang.String
 */
 type IpAddressType = _IpAddressType | java.lang.String
+
+type IpList = js.Array[String]
 
 type IpPermissionList = js.Array[IpPermission]
 
@@ -2369,6 +2519,13 @@ type IpamAddressHistoryRecordSet = js.Array[IpamAddressHistoryRecord]
 type IpamAddressHistoryResourceType = _IpamAddressHistoryResourceType | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.active__
+  - typings.awsSdk.awsSdkStrings.`not-found`
+  - java.lang.String
+*/
+type IpamAssociatedResourceDiscoveryStatus = _IpamAssociatedResourceDiscoveryStatus | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.compliant_
   - typings.awsSdk.awsSdkStrings.noncompliant_
   - typings.awsSdk.awsSdkStrings.unmanaged_
@@ -2376,6 +2533,18 @@ type IpamAddressHistoryResourceType = _IpamAddressHistoryResourceType | java.lan
   - java.lang.String
 */
 type IpamComplianceStatus = _IpamComplianceStatus | java.lang.String
+
+type IpamDiscoveredAccountSet = js.Array[IpamDiscoveredAccount]
+
+type IpamDiscoveredResourceCidrSet = js.Array[IpamDiscoveredResourceCidr]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.`assume-role-failure`
+  - typings.awsSdk.awsSdkStrings.`throttling-failure`
+  - typings.awsSdk.awsSdkStrings.`unauthorized-failure`
+  - java.lang.String
+*/
+type IpamDiscoveryFailureCode = _IpamDiscoveryFailureCode | java.lang.String
 
 type IpamId = java.lang.String
 
@@ -2418,7 +2587,14 @@ type IpamPoolAllocationSet = js.Array[IpamPoolAllocation]
 
 type IpamPoolAwsService = ec2_ | java.lang.String
 
-type IpamPoolCidrFailureCode = `cidr-not-available` | java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.`cidr-not-available`
+  - typings.awsSdk.awsSdkStrings.`limit-exceeded`
+  - java.lang.String
+*/
+type IpamPoolCidrFailureCode = _IpamPoolCidrFailureCode | java.lang.String
+
+type IpamPoolCidrId = java.lang.String
 
 type IpamPoolCidrSet = js.Array[IpamPoolCidr]
 
@@ -2436,6 +2612,13 @@ type IpamPoolCidrSet = js.Array[IpamPoolCidr]
 type IpamPoolCidrState = _IpamPoolCidrState | java.lang.String
 
 type IpamPoolId = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.amazon__
+  - typings.awsSdk.awsSdkStrings.byoip
+  - java.lang.String
+*/
+type IpamPoolPublicIpSource = _IpamPoolPublicIpSource | java.lang.String
 
 type IpamPoolSet = js.Array[IpamPool]
 
@@ -2457,6 +2640,45 @@ type IpamPoolSet = js.Array[IpamPool]
 type IpamPoolState = _IpamPoolState | java.lang.String
 
 type IpamResourceCidrSet = js.Array[IpamResourceCidr]
+
+type IpamResourceDiscoveryAssociationId = java.lang.String
+
+type IpamResourceDiscoveryAssociationSet = js.Array[IpamResourceDiscoveryAssociation]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.`associate-in-progress`
+  - typings.awsSdk.awsSdkStrings.`associate-complete`
+  - typings.awsSdk.awsSdkStrings.`associate-failed`
+  - typings.awsSdk.awsSdkStrings.`disassociate-in-progress`
+  - typings.awsSdk.awsSdkStrings.`disassociate-complete`
+  - typings.awsSdk.awsSdkStrings.`disassociate-failed`
+  - typings.awsSdk.awsSdkStrings.`isolate-in-progress`
+  - typings.awsSdk.awsSdkStrings.`isolate-complete`
+  - typings.awsSdk.awsSdkStrings.`restore-in-progress`
+  - java.lang.String
+*/
+type IpamResourceDiscoveryAssociationState = _IpamResourceDiscoveryAssociationState | java.lang.String
+
+type IpamResourceDiscoveryId = java.lang.String
+
+type IpamResourceDiscoverySet = js.Array[IpamResourceDiscovery]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.`create-in-progress`
+  - typings.awsSdk.awsSdkStrings.`create-complete`
+  - typings.awsSdk.awsSdkStrings.`create-failed`
+  - typings.awsSdk.awsSdkStrings.`modify-in-progress`
+  - typings.awsSdk.awsSdkStrings.`modify-complete`
+  - typings.awsSdk.awsSdkStrings.`modify-failed`
+  - typings.awsSdk.awsSdkStrings.`delete-in-progress`
+  - typings.awsSdk.awsSdkStrings.`delete-complete`
+  - typings.awsSdk.awsSdkStrings.`delete-failed`
+  - typings.awsSdk.awsSdkStrings.`isolate-in-progress`
+  - typings.awsSdk.awsSdkStrings.`isolate-complete`
+  - typings.awsSdk.awsSdkStrings.`restore-in-progress`
+  - java.lang.String
+*/
+type IpamResourceDiscoveryState = _IpamResourceDiscoveryState | java.lang.String
 
 type IpamResourceTagList = js.Array[IpamResourceTag]
 
@@ -2709,6 +2931,8 @@ type ListingState = _ListingState | java.lang.String
 */
 type ListingStatus = _ListingStatus | java.lang.String
 
+type LoadBalancerArn = java.lang.String
+
 type LoadPermissionList = js.Array[LoadPermission]
 
 type LoadPermissionListRequest = js.Array[LoadPermissionRequest]
@@ -2826,6 +3050,8 @@ type MaxNetworkInterfaces = scala.Double
 
 type MaxResults = scala.Double
 
+type MaxResultsParam = scala.Double
+
 type MaximumBandwidthInMbps = scala.Double
 
 type MaximumEfaInterfaces = scala.Double
@@ -2845,6 +3071,10 @@ type MembershipType = _MembershipType | java.lang.String
 
 type MemorySize = scala.Double
 
+type MetricPoints = js.Array[MetricPoint]
+
+type MetricType = `aggregate-latency` | java.lang.String
+
 type MillisecondDateTime = js.Date
 
 /* Rewritten from type alias, can be one of: 
@@ -2853,6 +3083,8 @@ type MillisecondDateTime = js.Date
   - java.lang.String
 */
 type ModifyAvailabilityZoneOptInStatus = _ModifyAvailabilityZoneOptInStatus | java.lang.String
+
+type ModifyVerifiedAccessEndpointSubnetIdList = js.Array[SubnetId]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.disabled__
@@ -2880,6 +3112,17 @@ type MovingAddressStatusSet = js.Array[MovingAddressStatus]
 type MulticastSupportValue = _MulticastSupportValue | java.lang.String
 
 type NatGatewayAddressList = js.Array[NatGatewayAddress]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.assigning
+  - typings.awsSdk.awsSdkStrings.unassigning
+  - typings.awsSdk.awsSdkStrings.associating__
+  - typings.awsSdk.awsSdkStrings.disassociating__
+  - typings.awsSdk.awsSdkStrings.succeeded__
+  - typings.awsSdk.awsSdkStrings.failed__
+  - java.lang.String
+*/
+type NatGatewayAddressStatus = _NatGatewayAddressStatus | java.lang.String
 
 type NatGatewayId = java.lang.String
 
@@ -3092,6 +3335,17 @@ type PayerResponsibility = ServiceOwner | java.lang.String
 */
 type PaymentOption = _PaymentOption | java.lang.String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.`five-minutes`
+  - typings.awsSdk.awsSdkStrings.`fifteen-minutes`
+  - typings.awsSdk.awsSdkStrings.`one-hour`
+  - typings.awsSdk.awsSdkStrings.`three-hours`
+  - typings.awsSdk.awsSdkStrings.`one-day`
+  - typings.awsSdk.awsSdkStrings.`one-week`
+  - java.lang.String
+*/
+type PeriodType = _PeriodType | java.lang.String
+
 type PermissionGroup = all__ | java.lang.String
 
 type Phase1DHGroupNumbersList = js.Array[Phase1DHGroupNumbersListValue]
@@ -3139,7 +3393,7 @@ type PlacementGroupState = _PlacementGroupState | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.cluster_
-  - typings.awsSdk.awsSdkStrings.partition_
+  - typings.awsSdk.awsSdkStrings.partition__
   - typings.awsSdk.awsSdkStrings.spread_
   - java.lang.String
 */
@@ -3152,7 +3406,7 @@ type PlacementGroupStringList = js.Array[PlacementGroupName]
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.cluster_
   - typings.awsSdk.awsSdkStrings.spread_
-  - typings.awsSdk.awsSdkStrings.partition_
+  - typings.awsSdk.awsSdkStrings.partition__
   - java.lang.String
 */
 type PlacementStrategy = _PlacementStrategy | java.lang.String
@@ -3219,9 +3473,13 @@ type PrincipalIdFormatList = js.Array[PrincipalIdFormat]
 */
 type PrincipalType = _PrincipalType | java.lang.String
 
+type Priority = scala.Double
+
 type PrivateDnsDetailsSet = js.Array[PrivateDnsDetails]
 
 type PrivateIpAddressConfigSet = js.Array[ScheduledInstancesPrivateIpAddressConfig]
+
+type PrivateIpAddressCount = scala.Double
 
 type PrivateIpAddressSpecificationList = js.Array[PrivateIpAddressSpecification]
 
@@ -3250,6 +3508,10 @@ type PropagatingVgwList = js.Array[PropagatingVgw]
   - java.lang.String
 */
 type Protocol = _Protocol | java.lang.String
+
+type ProtocolInt = scala.Double
+
+type ProtocolIntList = js.Array[ProtocolInt]
 
 type ProtocolList = js.Array[Protocol]
 
@@ -3435,7 +3697,7 @@ type ResourceList = js.Array[String]
   - typings.awsSdk.awsSdkStrings.fleet
   - typings.awsSdk.awsSdkStrings.`fpga-image`
   - typings.awsSdk.awsSdkStrings.`host-reservation`
-  - typings.awsSdk.awsSdkStrings.image_
+  - typings.awsSdk.awsSdkStrings.image__
   - typings.awsSdk.awsSdkStrings.`import-image-task`
   - typings.awsSdk.awsSdkStrings.`import-snapshot-task`
   - typings.awsSdk.awsSdkStrings.instance__
@@ -3496,7 +3758,15 @@ type ResourceList = js.Array[String]
   - typings.awsSdk.awsSdkStrings.`capacity-reservation-fleet`
   - typings.awsSdk.awsSdkStrings.`traffic-mirror-filter-rule`
   - typings.awsSdk.awsSdkStrings.`vpc-endpoint-connection-device-type`
+  - typings.awsSdk.awsSdkStrings.`verified-access-instance`
+  - typings.awsSdk.awsSdkStrings.`verified-access-group`
+  - typings.awsSdk.awsSdkStrings.`verified-access-endpoint`
+  - typings.awsSdk.awsSdkStrings.`verified-access-policy`
+  - typings.awsSdk.awsSdkStrings.`verified-access-trust-provider`
   - typings.awsSdk.awsSdkStrings.`vpn-connection-device-type`
+  - typings.awsSdk.awsSdkStrings.`vpc-block-public-access-exclusion`
+  - typings.awsSdk.awsSdkStrings.`ipam-resource-discovery`
+  - typings.awsSdk.awsSdkStrings.`ipam-resource-discovery-association`
 */
 type ResourceType = _ResourceType | (/* local-gateway-route-table-virtual-interface-group-association */ java.lang.String)
 
@@ -3509,6 +3779,8 @@ type RestorableByStringList = js.Array[String]
 type RestoreSnapshotTierRequestTemporaryRestoreDays = scala.Double
 
 type ResultRange = scala.Double
+
+type RoleId = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ebs_
@@ -3565,6 +3837,12 @@ type RouteTableList = js.Array[RouteTable]
 */
 type RuleAction = _RuleAction | java.lang.String
 
+type RuleGroupRuleOptionsPairList = js.Array[RuleGroupRuleOptionsPair]
+
+type RuleGroupTypePairList = js.Array[RuleGroupTypePair]
+
+type RuleOptionList = js.Array[RuleOption]
+
 type RunInstancesUserData = java.lang.String
 
 type S3ObjectTagList = js.Array[S3ObjectTag]
@@ -3586,6 +3864,8 @@ type ScheduledInstancesNetworkInterfaceSet = js.Array[ScheduledInstancesNetworkI
 type ScheduledInstancesSecurityGroupIdSet = js.Array[SecurityGroupId]
 
 type SecurityGroupId = java.lang.String
+
+type SecurityGroupIdList = js.Array[SecurityGroupId]
 
 type SecurityGroupIdStringList = js.Array[SecurityGroupId]
 
@@ -3649,7 +3929,7 @@ type ServiceTypeDetailSet = js.Array[ServiceTypeDetail]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.stop_
-  - typings.awsSdk.awsSdkStrings.terminate_
+  - typings.awsSdk.awsSdkStrings.terminate__
   - java.lang.String
 */
 type ShutdownBehavior = _ShutdownBehavior | java.lang.String
@@ -3704,7 +3984,7 @@ type SpotFleetTagSpecificationList = js.Array[SpotFleetTagSpecification]
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.hibernate
   - typings.awsSdk.awsSdkStrings.stop_
-  - typings.awsSdk.awsSdkStrings.terminate_
+  - typings.awsSdk.awsSdkStrings.terminate__
   - java.lang.String
 */
 type SpotInstanceInterruptionBehavior = _SpotInstanceInterruptionBehavior | java.lang.String
@@ -3770,6 +4050,8 @@ type State = _State | java.lang.String
   - java.lang.String
 */
 type StaticSourcesSupportValue = _StaticSourcesSupportValue | java.lang.String
+
+type StatisticType = p50 | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MoveInProgress
@@ -3846,6 +4128,8 @@ type SubnetList = js.Array[Subnet]
 */
 type SubnetState = _SubnetState | java.lang.String
 
+type SubscriptionList = js.Array[Subscription]
+
 type SuccessfulInstanceCreditSpecificationSet = js.Array[SuccessfulInstanceCreditSpecificationItem]
 
 type SuccessfulQueuedPurchaseDeletionSet = js.Array[SuccessfulQueuedPurchaseDeletion]
@@ -3859,6 +4143,10 @@ type SuccessfulQueuedPurchaseDeletionSet = js.Array[SuccessfulQueuedPurchaseDele
   - java.lang.String
 */
 type SummaryStatus = _SummaryStatus | java.lang.String
+
+type SupportedAdditionalProcessorFeature = `amd-sev-snp` | java.lang.String
+
+type SupportedAdditionalProcessorFeatureList = js.Array[SupportedAdditionalProcessorFeature]
 
 type SupportedIpAddressTypes = js.Array[ServiceConnectivityType]
 
@@ -3951,7 +4239,7 @@ type TrafficMirrorFilterRuleField = _TrafficMirrorFilterRuleField | java.lang.St
 
 type TrafficMirrorFilterRuleFieldList = js.Array[TrafficMirrorFilterRuleField]
 
-type TrafficMirrorFilterRuleId = java.lang.String
+type TrafficMirrorFilterRuleIdWithResolver = java.lang.String
 
 type TrafficMirrorFilterRuleList = js.Array[TrafficMirrorFilterRule]
 
@@ -4251,6 +4539,13 @@ type TrunkInterfaceAssociationIdList = js.Array[TrunkInterfaceAssociationId]
 type TrunkInterfaceAssociationList = js.Array[TrunkInterfaceAssociation]
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.user__
+  - typings.awsSdk.awsSdkStrings.device_
+  - java.lang.String
+*/
+type TrustProviderType = _TrustProviderType | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ipv4__
   - typings.awsSdk.awsSdkStrings.ipv6__
   - java.lang.String
@@ -4300,9 +4595,81 @@ type UserIdGroupPairSet = js.Array[UserIdGroupPair]
 
 type UserIdStringList = js.Array[String]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.`iam-identity-center`
+  - typings.awsSdk.awsSdkStrings.oidc_
+  - java.lang.String
+*/
+type UserTrustProviderType = _UserTrustProviderType | java.lang.String
+
 type VCpuCount = scala.Double
 
 type ValueStringList = js.Array[String]
+
+type VerifiedAccessEndpointAttachmentType = vpc__ | java.lang.String
+
+type VerifiedAccessEndpointId = java.lang.String
+
+type VerifiedAccessEndpointIdList = js.Array[VerifiedAccessEndpointId]
+
+type VerifiedAccessEndpointList = js.Array[VerifiedAccessEndpoint]
+
+type VerifiedAccessEndpointPortNumber = scala.Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.http_
+  - typings.awsSdk.awsSdkStrings.https_
+  - java.lang.String
+*/
+type VerifiedAccessEndpointProtocol = _VerifiedAccessEndpointProtocol | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.pending__
+  - typings.awsSdk.awsSdkStrings.active__
+  - typings.awsSdk.awsSdkStrings.updating__
+  - typings.awsSdk.awsSdkStrings.deleting__
+  - typings.awsSdk.awsSdkStrings.deleted__
+  - java.lang.String
+*/
+type VerifiedAccessEndpointStatusCode = _VerifiedAccessEndpointStatusCode | java.lang.String
+
+type VerifiedAccessEndpointSubnetIdList = js.Array[SubnetId]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.`load-balancer`
+  - typings.awsSdk.awsSdkStrings.`network-interface`
+  - java.lang.String
+*/
+type VerifiedAccessEndpointType = _VerifiedAccessEndpointType | java.lang.String
+
+type VerifiedAccessGroupId = java.lang.String
+
+type VerifiedAccessGroupIdList = js.Array[VerifiedAccessGroupId]
+
+type VerifiedAccessGroupList = js.Array[VerifiedAccessGroup]
+
+type VerifiedAccessInstanceId = java.lang.String
+
+type VerifiedAccessInstanceIdList = js.Array[VerifiedAccessInstanceId]
+
+type VerifiedAccessInstanceList = js.Array[VerifiedAccessInstance]
+
+type VerifiedAccessInstanceLoggingConfigurationList = js.Array[VerifiedAccessInstanceLoggingConfiguration]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.success__
+  - typings.awsSdk.awsSdkStrings.failed__
+  - java.lang.String
+*/
+type VerifiedAccessLogDeliveryStatusCode = _VerifiedAccessLogDeliveryStatusCode | java.lang.String
+
+type VerifiedAccessTrustProviderCondensedList = js.Array[VerifiedAccessTrustProviderCondensed]
+
+type VerifiedAccessTrustProviderId = java.lang.String
+
+type VerifiedAccessTrustProviderIdList = js.Array[VerifiedAccessTrustProviderId]
+
+type VerifiedAccessTrustProviderList = js.Array[VerifiedAccessTrustProvider]
 
 type VersionDescription = java.lang.String
 
@@ -4343,6 +4710,8 @@ type VolumeAttributeName = _VolumeAttributeName | java.lang.String
 type VolumeId = java.lang.String
 
 type VolumeIdStringList = js.Array[VolumeId]
+
+type VolumeIdWithResolver = java.lang.String
 
 type VolumeList = js.Array[Volume]
 
@@ -4473,6 +4842,8 @@ type VpcList = js.Array[Vpc]
 type VpcPeeringConnectionId = java.lang.String
 
 type VpcPeeringConnectionIdList = js.Array[VpcPeeringConnectionId]
+
+type VpcPeeringConnectionIdWithResolver = java.lang.String
 
 type VpcPeeringConnectionList = js.Array[VpcPeeringConnection]
 

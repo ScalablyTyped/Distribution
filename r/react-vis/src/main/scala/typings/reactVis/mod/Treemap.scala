@@ -12,7 +12,7 @@ open class Treemap[T] protected ()
   def this(props: TreemapProps & T) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: TreemapProps & T, context: Any) = this()
 }

@@ -67,6 +67,12 @@ trait VolumetricLightScatteringPostProcess
   def getPass(): RenderTargetTexture = js.native
   
   /**
+    * Array containing the only meshes rendered in the internal pass.
+    * If this array is not empty, only the meshes from this array are rendered in the internal pass
+    */
+  var includedMeshes: js.Array[AbstractMesh] = js.native
+  
+  /**
     * If the post-process should inverse the light scattering direction
     */
   var invert: Boolean = js.native

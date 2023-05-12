@@ -1,7 +1,7 @@
 
 # Scala.js typings for value-or-promise
 
-Typings are for version 1.0.11
+Typings are for version 1.0.12
 
 ## Library description:
 A thenable to streamline a possibly sync / possibly async workflow.

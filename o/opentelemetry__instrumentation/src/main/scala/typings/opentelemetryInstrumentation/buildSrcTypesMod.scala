@@ -1,7 +1,7 @@
 package typings.opentelemetryInstrumentation
 
+import typings.opentelemetryApi.buildSrcMetricsMeterProviderMod.MeterProvider
 import typings.opentelemetryApi.buildSrcTraceTracerProviderMod.TracerProvider
-import typings.opentelemetryApiMetrics.buildSrcTypesMeterProviderMod.MeterProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

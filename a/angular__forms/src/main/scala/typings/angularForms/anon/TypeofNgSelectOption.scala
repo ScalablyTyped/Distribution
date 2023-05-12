@@ -31,7 +31,8 @@ trait TypeofNgSelectOption
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    `false`, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[NgSelectOption, js.Tuple3[Null, Null, HostOptional]] = js.native

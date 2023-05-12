@@ -196,7 +196,7 @@ object settingsMod {
       *     onChange : settingThemeHandler
       * }); // default value not defined, so the first array member "(none)" is used
       */
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def addList[T](name: String, definition: ListDefinition[T]): Unit = js.native
     
     /**

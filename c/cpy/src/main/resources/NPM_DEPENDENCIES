@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cpy" : "9.0.1"
+      "cpy" : "10.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "cpy" : "9.0.1"
+      "cpy" : "10.1.0"
     }
   ],
   "compile-devDependencies" : [

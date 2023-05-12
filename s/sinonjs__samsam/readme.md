@@ -1,7 +1,7 @@
 
 # Scala.js typings for sinonjs__samsam
 
-Typings are for version 6.1.1
+Typings are for version 8.0.0
 
 ## Library description:
 Value identification and comparison functions

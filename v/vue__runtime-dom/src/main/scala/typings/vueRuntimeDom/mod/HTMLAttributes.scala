@@ -53,10 +53,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent @vue/runtime-dom.@vue/runtime-dom.EventHandlers<@vue/runtime-dom.@vue/runtime-dom.Events> */
 trait HTMLAttributes extends StObject {
   
-  // RDFa Attributes
   var about: js.UndefOr[String] = js.undefined
   
-  // Standard HTML Attributes
   var accesskey: js.UndefOr[String] = js.undefined
   
   /** Identifies the currently active element when DOM focus is on a composite widget, textbox, group, or application. */
@@ -291,7 +289,6 @@ trait HTMLAttributes extends StObject {
   /** Defines the human readable text alternative of aria-valuenow for a range widget. */
   var `aria-valuetext`: js.UndefOr[String] = js.undefined
   
-  // Non-standard Attributes
   var autocapitalize: js.UndefOr[String] = js.undefined
   
   var autocorrect: js.UndefOr[String] = js.undefined
@@ -320,7 +317,6 @@ trait HTMLAttributes extends StObject {
   
   var innerHTML: js.UndefOr[String] = js.undefined
   
-  // Living Standard
   /**
     * Hints at the type of data that might be entered by the user while editing the element or its contents
     * @see https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute
@@ -679,15 +675,12 @@ trait HTMLAttributes extends StObject {
   
   var property: js.UndefOr[String] = js.undefined
   
-  // Unknown
   var radiogroup: js.UndefOr[String] = js.undefined
   
   var resource: js.UndefOr[String] = js.undefined
   
   var results: js.UndefOr[Numberish] = js.undefined
   
-  // <command>, <menuitem>
-  // WAI-ARIA
   var role: js.UndefOr[String] = js.undefined
   
   var security: js.UndefOr[String] = js.undefined

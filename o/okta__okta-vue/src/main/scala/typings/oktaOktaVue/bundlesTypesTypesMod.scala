@@ -11,22 +11,14 @@ object bundlesTypesTypesMod {
     
     var oktaAuth: OktaAuth
     
-    def onAuthRequired(oktaAuth: OktaAuth): js.Promise[Unit] | Unit
-    @JSName("onAuthRequired")
-    var onAuthRequired_Original: OnAuthRequiredFunction
+    var onAuthRequired: js.UndefOr[OnAuthRequiredFunction] = js.undefined
     
-    def onAuthResume(oktaAuth: OktaAuth): js.Promise[Unit] | Unit
-    @JSName("onAuthResume")
-    var onAuthResume_Original: OnAuthRequiredFunction
+    var onAuthResume: js.UndefOr[OnAuthRequiredFunction] = js.undefined
   }
   object OktaVueOptions {
     
-    inline def apply(
-      oktaAuth: OktaAuth,
-      onAuthRequired: /* oktaAuth */ OktaAuth => js.Promise[Unit] | Unit,
-      onAuthResume: /* oktaAuth */ OktaAuth => js.Promise[Unit] | Unit
-    ): OktaVueOptions = {
-      val __obj = js.Dynamic.literal(oktaAuth = oktaAuth.asInstanceOf[js.Any], onAuthRequired = js.Any.fromFunction1(onAuthRequired), onAuthResume = js.Any.fromFunction1(onAuthResume))
+    inline def apply(oktaAuth: OktaAuth): OktaVueOptions = {
+      val __obj = js.Dynamic.literal(oktaAuth = oktaAuth.asInstanceOf[js.Any])
       __obj.asInstanceOf[OktaVueOptions]
     }
     
@@ -37,7 +29,11 @@ object bundlesTypesTypesMod {
       
       inline def setOnAuthRequired(value: /* oktaAuth */ OktaAuth => js.Promise[Unit] | Unit): Self = StObject.set(x, "onAuthRequired", js.Any.fromFunction1(value))
       
+      inline def setOnAuthRequiredUndefined: Self = StObject.set(x, "onAuthRequired", js.undefined)
+      
       inline def setOnAuthResume(value: /* oktaAuth */ OktaAuth => js.Promise[Unit] | Unit): Self = StObject.set(x, "onAuthResume", js.Any.fromFunction1(value))
+      
+      inline def setOnAuthResumeUndefined: Self = StObject.set(x, "onAuthResume", js.undefined)
     }
   }
   

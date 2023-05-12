@@ -136,6 +136,7 @@ import typings.redisClient.anon.TypeofSORT
 import typings.redisClient.anon.TypeofSORTRO
 import typings.redisClient.anon.TypeofSORTSTORE
 import typings.redisClient.anon.TypeofSPOP
+import typings.redisClient.anon.TypeofSPUBLISH
 import typings.redisClient.anon.TypeofSRANDMEMBER
 import typings.redisClient.anon.TypeofSRANDMEMBERCOUNT
 import typings.redisClient.anon.TypeofSREM
@@ -1012,6 +1013,12 @@ object distLibClusterCommandsMod {
     def SPOP_ : TypeofSPOP = js.native
     
     inline def SPOP__=(x: TypeofSPOP): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SPOP")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@redis/client/dist/lib/cluster/commands", "default.SPUBLISH")
+    @js.native
+    def SPUBLISH_ : TypeofSPUBLISH = js.native
+    
+    inline def SPUBLISH__=(x: TypeofSPUBLISH): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SPUBLISH")(x.asInstanceOf[js.Any])
     
     @JSImport("@redis/client/dist/lib/cluster/commands", "default.SRANDMEMBER")
     @js.native
@@ -2103,6 +2110,11 @@ object distLibClusterCommandsMod {
     @js.native
     def sPop: TypeofSPOP = js.native
     inline def sPop_=(x: TypeofSPOP): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sPop")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@redis/client/dist/lib/cluster/commands", "default.sPublish")
+    @js.native
+    def sPublish: TypeofSPUBLISH = js.native
+    inline def sPublish_=(x: TypeofSPUBLISH): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sPublish")(x.asInstanceOf[js.Any])
     
     @JSImport("@redis/client/dist/lib/cluster/commands", "default.sRandMember")
     @js.native

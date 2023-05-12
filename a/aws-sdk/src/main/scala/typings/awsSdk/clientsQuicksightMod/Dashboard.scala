@@ -12,22 +12,22 @@ trait Dashboard extends StObject {
   var Arn: js.UndefOr[typings.awsSdk.clientsQuicksightMod.Arn] = js.undefined
   
   /**
-    * The time that this dataset was created.
+    * The time that this dashboard was created.
     */
   var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Dashboard ID.
     */
-  var DashboardId: js.UndefOr[RestrictiveResourceId] = js.undefined
+  var DashboardId: js.UndefOr[ShortRestrictiveResourceId] = js.undefined
   
   /**
-    * The last time that this dataset was published.
+    * The last time that this dashboard was published.
     */
   var LastPublishedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The last time that this dataset was updated.
+    * The last time that this dashboard was updated.
     */
   var LastUpdatedTime: js.UndefOr[js.Date] = js.undefined
   
@@ -59,7 +59,7 @@ object Dashboard {
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
-    inline def setDashboardId(value: RestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
+    inline def setDashboardId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
     
     inline def setDashboardIdUndefined: Self = StObject.set(x, "DashboardId", js.undefined)
     

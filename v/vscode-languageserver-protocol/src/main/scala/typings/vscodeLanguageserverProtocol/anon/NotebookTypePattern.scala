@@ -15,7 +15,7 @@ trait NotebookTypePattern
   /** A glob pattern. */
   var pattern: js.UndefOr[String] = js.undefined
   
-  /** A Uri [scheme](#Uri.scheme), like `file` or `untitled`.*/
+  /** A Uri {@link Uri.scheme scheme}, like `file` or `untitled`.*/
   var scheme: String
 }
 object NotebookTypePattern {

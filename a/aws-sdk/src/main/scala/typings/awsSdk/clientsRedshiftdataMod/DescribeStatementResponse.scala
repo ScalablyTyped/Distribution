@@ -97,7 +97,7 @@ trait DescribeStatementResponse extends StObject {
   var UpdatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The serverless workgroup name.
+    * The serverless workgroup name or Amazon Resource Name (ARN).
     */
   var WorkgroupName: js.UndefOr[WorkgroupNameString] = js.undefined
 }

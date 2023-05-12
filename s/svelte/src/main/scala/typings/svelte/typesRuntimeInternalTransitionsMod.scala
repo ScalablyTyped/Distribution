@@ -6,6 +6,9 @@ import typings.svelte.anon.End
 import typings.svelte.anon.Run
 import typings.svelte.anon.`0`
 import typings.svelte.svelteInts.`1`
+import typings.svelte.svelteStrings.both
+import typings.svelte.svelteStrings.in
+import typings.svelte.svelteStrings.out
 import typings.svelte.typesRuntimeInternalTypesMod.Fragment
 import typings.svelte.typesRuntimeTransitionMod.TransitionConfig
 import org.scalablytyped.runtime.StObject
@@ -49,5 +52,28 @@ object typesRuntimeInternalTransitionsMod {
   
   type OUTRO = typings.svelte.svelteInts.`0`
   
-  type TransitionFn = js.Function2[/* node */ Element, /* params */ Any, TransitionConfig]
+  type TransitionFn = js.Function3[
+    /* node */ Element, 
+    /* params */ Any, 
+    /* options */ TransitionOptions, 
+    TransitionConfig
+  ]
+  
+  trait TransitionOptions extends StObject {
+    
+    var direction: in | out | both
+  }
+  object TransitionOptions {
+    
+    inline def apply(direction: in | out | both): TransitionOptions = {
+      val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TransitionOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitionOptions] (val x: Self) extends AnyVal {
+      
+      inline def setDirection(value: in | out | both): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    }
+  }
 }

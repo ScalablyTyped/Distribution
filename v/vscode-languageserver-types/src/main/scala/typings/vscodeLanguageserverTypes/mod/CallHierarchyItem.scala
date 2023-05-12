@@ -34,7 +34,7 @@ trait CallHierarchyItem extends StObject {
   
   /**
     * The range that should be selected and revealed when this symbol is being picked, e.g. the name of a function.
-    * Must be contained by the [`range`](#CallHierarchyItem.range).
+    * Must be contained by the {@link CallHierarchyItem.range `range`}.
     */
   var selectionRange: Range
   

@@ -82,7 +82,7 @@ object mod {
     /**
       * @return {Promise<Array<{ name: string, sv: Uint8Array, clock: number }>>}
       */
-    def getAllDocStateVecors(): js.Promise[js.Array[Clock]] = js.native
+    def getAllDocStateVectors(): js.Promise[js.Array[Clock]] = js.native
     
     /**
       * @param {string} docName

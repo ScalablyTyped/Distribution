@@ -24,6 +24,7 @@ import typings.csstype.mod.Property._BorderRight
 import typings.csstype.mod.Property._BorderRightColor
 import typings.csstype.mod.Property._BorderTop
 import typings.csstype.mod.Property._BorderTopColor
+import typings.csstype.mod.Property._Caret
 import typings.csstype.mod.Property._CaretColor
 import typings.csstype.mod.Property._ColumnRule
 import typings.csstype.mod.Property._ColumnRuleColor
@@ -84,6 +85,7 @@ trait _Color
      with _BorderRightColor
      with _BorderTop[Any]
      with _BorderTopColor
+     with _Caret
      with _CaretColor
      with typings.csstype.mod.Property._Color
      with _ColumnRule[Any]

@@ -14,7 +14,7 @@ trait Answer extends StObject {
   var Choices: js.UndefOr[typings.awsSdk.clientsWellarchitectedMod.Choices] = js.undefined
   
   /**
-    * The helpful resource text to be displayed.
+    * The helpful resource text to be displayed for a custom lens. This field does not apply to Amazon Web Services official lenses.
     */
   var HelpfulResourceDisplayText: js.UndefOr[DisplayText] = js.undefined
   

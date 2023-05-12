@@ -12,17 +12,17 @@ trait CreateMediaLiveConnectorPipelineRequest extends StObject {
   var ClientRequestToken: js.UndefOr[typings.awsSdk.clientsChimesdkmediapipelinesMod.ClientRequestToken] = js.undefined
   
   /**
-    * The media pipeline's data sinks.
+    * The media live connector pipeline's data sinks.
     */
   var Sinks: LiveConnectorSinkList
   
   /**
-    * The media pipeline's data sources.
+    * The media live connector pipeline's data sources.
     */
   var Sources: LiveConnectorSourceList
   
   /**
-    * The tags associated with the media pipeline.
+    * The tags associated with the media live connector pipeline.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
 }

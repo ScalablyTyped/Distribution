@@ -11,22 +11,22 @@ import typings.primereact.primereactStrings.additions
 import typings.primereact.primereactStrings.all
 import typings.primereact.primereactStrings.ascending
 import typings.primereact.primereactStrings.assertive
+import typings.primereact.primereactStrings.blank
 import typings.primereact.primereactStrings.both
 import typings.primereact.primereactStrings.copy
+import typings.primereact.primereactStrings.current
 import typings.primereact.primereactStrings.date
 import typings.primereact.primereactStrings.decimal
 import typings.primereact.primereactStrings.descending
 import typings.primereact.primereactStrings.dialog
-import typings.primereact.primereactStrings.done
+import typings.primereact.primereactStrings.dropdown
 import typings.primereact.primereactStrings.email
-import typings.primereact.primereactStrings.enter
-import typings.primereact.primereactStrings.environment
 import typings.primereact.primereactStrings.execute
-import typings.primereact.primereactStrings.go
 import typings.primereact.primereactStrings.grammar
 import typings.primereact.primereactStrings.grid
 import typings.primereact.primereactStrings.horizontal
 import typings.primereact.primereactStrings.inherit
+import typings.primereact.primereactStrings.input
 import typings.primereact.primereactStrings.link
 import typings.primereact.primereactStrings.list
 import typings.primereact.primereactStrings.listbox
@@ -34,7 +34,6 @@ import typings.primereact.primereactStrings.location
 import typings.primereact.primereactStrings.menu
 import typings.primereact.primereactStrings.mixed
 import typings.primereact.primereactStrings.move
-import typings.primereact.primereactStrings.next
 import typings.primereact.primereactStrings.no
 import typings.primereact.primereactStrings.none
 import typings.primereact.primereactStrings.numeric
@@ -44,11 +43,9 @@ import typings.primereact.primereactStrings.other
 import typings.primereact.primereactStrings.page
 import typings.primereact.primereactStrings.polite
 import typings.primereact.primereactStrings.popup
-import typings.primereact.primereactStrings.previous
 import typings.primereact.primereactStrings.removals
 import typings.primereact.primereactStrings.search
 import typings.primereact.primereactStrings.self
-import typings.primereact.primereactStrings.send
 import typings.primereact.primereactStrings.spelling
 import typings.primereact.primereactStrings.step
 import typings.primereact.primereactStrings.tel
@@ -56,10 +53,10 @@ import typings.primereact.primereactStrings.text
 import typings.primereact.primereactStrings.time
 import typings.primereact.primereactStrings.tree
 import typings.primereact.primereactStrings.url
-import typings.primereact.primereactStrings.user
 import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.yes
 import typings.primereact.tooltipTooltipoptionsMod.TooltipOptions
+import typings.primereact.tsHelpersMod.FormEvent
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -74,7 +71,6 @@ import typings.react.mod.CompositionEventHandler
 import typings.react.mod.DragEvent
 import typings.react.mod.DragEventHandler
 import typings.react.mod.FocusEvent
-import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
@@ -114,108 +110,93 @@ object autocompleteAutocompleteMod {
     def this(props: AutoCompleteProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: AutoCompleteProps, context: Any) = this()
     
+    /**
+      * Used to focus the component.
+      */
+    def focus(): Unit = js.native
+    
+    /**
+      * Used to get container element.
+      * @return {HTMLSpanElement} Container element
+      */
     def getElement(): HTMLSpanElement = js.native
     
+    /**
+      * Used to get input element.
+      * @return {HTMLInputElement} Input element
+      */
     def getInput(): HTMLInputElement = js.native
     
+    /**
+      * Used to get overlay element.
+      * @return {HTMLElement} Overlay element
+      */
     def getOverlay(): HTMLElement = js.native
     
+    /**
+      * Used to get the options of inline virtualScroller component.
+      * @return {VirtualScroller} VirtualScroller component
+      */
     def getVirtualScroller(): Any = js.native
     
+    /**
+      * Used to hide the overlay.
+      */
     def hide(): Unit = js.native
     
-    def search(event: SyntheticEvent[Element, Event], query: String, source: AutoCompleteSourceType): Unit = js.native
+    /**
+      * Used to search new suggestions.
+      * @param {React.SyntheticEvent} event - Browser event.
+      * @param {string} query - Value to search with.
+      * @param {string} [source] - Source type, valid values are 'dropdown' and 'input'
+      */
+    def search(event: SyntheticEvent[Element, Event], query: String): Unit = js.native
+    def search(event: SyntheticEvent[Element, Event], query: String, source: dropdown | input): Unit = js.native
     
+    /**
+      * Used to show the overlay.
+      */
     def show(): Unit = js.native
   }
   
-  type AutoCompleteAppendToType = js.UndefOr[self | HTMLElement | Null]
+  /**
+    * Custom change event.
+    * @see {@link AutoCompleteProps.onChange}
+    * @extends {FormEvent}
+    * @event
+    */
+  type AutoCompleteChangeEvent = FormEvent[Any, SyntheticEvent[Element, Event]]
   
-  trait AutoCompleteChangeParams extends StObject {
+  /**
+    * Custom complete method event.
+    * @see {@link AutoCompleteProps.completeMethod}
+    * @event
+    */
+  trait AutoCompleteCompleteEvent extends StObject {
     
+    /**
+      * Browser event
+      */
     var originalEvent: SyntheticEvent[Element, Event]
     
-    def preventDefault(): Unit
-    
-    def stopPropagation(): Unit
-    
-    var target: AutoCompleteChangeTargetOptions
-    
-    var value: Any
-  }
-  object AutoCompleteChangeParams {
-    
-    inline def apply(
-      originalEvent: SyntheticEvent[Element, Event],
-      preventDefault: () => Unit,
-      stopPropagation: () => Unit,
-      target: AutoCompleteChangeTargetOptions,
-      value: Any
-    ): AutoCompleteChangeParams = {
-      val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[AutoCompleteChangeParams]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: AutoCompleteChangeParams] (val x: Self) extends AnyVal {
-      
-      inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
-      
-      inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
-      
-      inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
-      
-      inline def setTarget(value: AutoCompleteChangeTargetOptions): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
-      
-      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait AutoCompleteChangeTargetOptions extends StObject {
-    
-    var id: String
-    
-    var name: String
-    
-    var value: Any
-  }
-  object AutoCompleteChangeTargetOptions {
-    
-    inline def apply(id: String, name: String, value: Any): AutoCompleteChangeTargetOptions = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[AutoCompleteChangeTargetOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: AutoCompleteChangeTargetOptions] (val x: Self) extends AnyVal {
-      
-      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait AutoCompleteCompleteMethodParams extends StObject {
-    
-    var originalEvent: SyntheticEvent[Element, Event]
-    
+    /**
+      * Value to search with
+      */
     var query: String
   }
-  object AutoCompleteCompleteMethodParams {
+  object AutoCompleteCompleteEvent {
     
-    inline def apply(originalEvent: SyntheticEvent[Element, Event], query: String): AutoCompleteCompleteMethodParams = {
+    inline def apply(originalEvent: SyntheticEvent[Element, Event], query: String): AutoCompleteCompleteEvent = {
       val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
-      __obj.asInstanceOf[AutoCompleteCompleteMethodParams]
+      __obj.asInstanceOf[AutoCompleteCompleteEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: AutoCompleteCompleteMethodParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: AutoCompleteCompleteEvent] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -223,21 +204,32 @@ object autocompleteAutocompleteMod {
     }
   }
   
-  trait AutoCompleteDropdownClickParams extends StObject {
+  /**
+    * Custom click event.
+    * @see {@link AutoCompleteProps.onDropdownClick}
+    * @event
+    */
+  trait AutoCompleteDropdownClickEvent extends StObject {
     
+    /**
+      * Browser event
+      */
     var originalEvent: SyntheticEvent[Element, Event]
     
+    /**
+      * Current value of the input field
+      */
     var query: String
   }
-  object AutoCompleteDropdownClickParams {
+  object AutoCompleteDropdownClickEvent {
     
-    inline def apply(originalEvent: SyntheticEvent[Element, Event], query: String): AutoCompleteDropdownClickParams = {
+    inline def apply(originalEvent: SyntheticEvent[Element, Event], query: String): AutoCompleteDropdownClickEvent = {
       val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
-      __obj.asInstanceOf[AutoCompleteDropdownClickParams]
+      __obj.asInstanceOf[AutoCompleteDropdownClickEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: AutoCompleteDropdownClickParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: AutoCompleteDropdownClickEvent] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -245,22 +237,18 @@ object autocompleteAutocompleteMod {
     }
   }
   
-  type AutoCompleteItemTemplateType = ReactNode | (js.Function2[/* suggestion */ Any, /* index */ Double, ReactNode])
-  
-  type AutoCompleteOptionGroupTemplateType = ReactNode | (js.Function2[/* suggestion */ Any, /* index */ Double, ReactNode])
-  
-  /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLSpanElement>, std.HTMLSpanElement>, 'onChange' | 'onSelect' | 'ref'> */
+  /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLSpanElement>, std.HTMLSpanElement>, 'onChange' | 'onSelect' | 'ref'> */
   trait AutoCompleteProps extends StObject {
     
     var about: js.UndefOr[String] = js.undefined
     
-    var accept: js.UndefOr[String] = js.undefined
-    
     var accessKey: js.UndefOr[String] = js.undefined
     
-    var alt: js.UndefOr[String] = js.undefined
-    
-    var appendTo: js.UndefOr[AutoCompleteAppendToType] = js.undefined
+    /**
+      * DOM element instance where the overlay panel should be mounted. Valid values are any DOM Element and "self". The "self" value is used to render a component where it is located.
+      * @defaultValue document.body
+      */
+    var appendTo: js.UndefOr[self | HTMLElement | Null] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
@@ -362,33 +350,46 @@ object autocompleteAutocompleteMod {
     
     var autoCapitalize: js.UndefOr[String] = js.undefined
     
-    var autoComplete: js.UndefOr[String] = js.undefined
-    
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    /**
+      * When present, it specifies that the component should automatically get focus on load.
+      * @defaultValue false
+      */
     var autoFocus: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * When enabled, highlights the first item in the list by default.
+      * @defaultValue false
+      */
     var autoHighlight: js.UndefOr[Boolean] = js.undefined
     
     var autoSave: js.UndefOr[String] = js.undefined
     
-    var capture: js.UndefOr[Boolean | user | environment] = js.undefined
-    
-    var checked: js.UndefOr[Boolean] = js.undefined
-    
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * Style class of the component.
+      */
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
     
-    var completeMethod: js.UndefOr[js.Function1[/* e */ AutoCompleteCompleteMethodParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke to search for suggestions.
+      * @param {AutoCompleteCompleteEvent} event - Custom complete method event.
+      */
+    var completeMethod: js.UndefOr[js.Function1[/* event */ AutoCompleteCompleteEvent, Unit]] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
-    
-    var crossOrigin: js.UndefOr[String] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
@@ -398,62 +399,99 @@ object autocompleteAutocompleteMod {
     
     var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
     
+    /**
+      * Delay between keystrokes to wait before sending a query.
+      * @defaultValue 300
+      */
     var delay: js.UndefOr[Double] = js.undefined
     
     var dir: js.UndefOr[String] = js.undefined
     
+    /**
+      * When present, it specifies that the component should be disabled.
+      * @defaultValue false
+      */
     var disabled: js.UndefOr[Boolean] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
+    /**
+      * Displays a button next to the input field when enabled.
+      * @defaultValue false
+      */
     var dropdown: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * ARIA label for the dropdown button. Defaults to placeholder then Locale "choose" label.
+      * @defaultValue Choose
+      */
     var dropdownAriaLabel: js.UndefOr[String] = js.undefined
     
+    /**
+      * Focus the input field when the dropdown button is clicked if enabled.
+      * @defaultValue true
+      */
     var dropdownAutoFocus: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Icon of the dropdown.
+      */
     var dropdownIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<AutoCompleteProps> */ Any
       ] = js.undefined
     
-    var dropdownMode: js.UndefOr[String] = js.undefined
+    /**
+      * Specifies the behavior dropdown button. Default "blank" mode sends an empty string and "current" mode sends the input value.
+      * @defaultValue blank
+      */
+    var dropdownMode: js.UndefOr[blank | current] = js.undefined
     
+    /**
+      * Text to display when there is no data. Defaults to global value in i18n translation configuration.
+      * @defaultValue No results found.
+      */
     var emptyMessage: js.UndefOr[String] = js.undefined
     
-    var enterKeyHint: js.UndefOr[enter | done | go | next | previous | search | send] = js.undefined
-    
+    /**
+      * Field of a suggested object to resolve and display.
+      */
     var field: js.UndefOr[String] = js.undefined
     
+    /**
+      * When present, autocomplete clears the manual input if it does not match of the suggestions to force only accepting values from the suggestions.
+      * @defaultValue false
+      */
     var forceSelection: js.UndefOr[Boolean] = js.undefined
-    
-    var form: js.UndefOr[String] = js.undefined
-    
-    var formAction: js.UndefOr[String] = js.undefined
-    
-    var formEncType: js.UndefOr[String] = js.undefined
-    
-    var formMethod: js.UndefOr[String] = js.undefined
-    
-    var formNoValidate: js.UndefOr[Boolean] = js.undefined
-    
-    var formTarget: js.UndefOr[String] = js.undefined
-    
-    var height: js.UndefOr[Double | String] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Unique identifier of the element.
+      */
     var id: js.UndefOr[String] = js.undefined
     
     var inlist: js.UndefOr[Any] = js.undefined
     
+    /**
+      * Style class of the input field.
+      */
     var inputClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Identifier of the input element.
+      */
     var inputId: js.UndefOr[String] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
+    /**
+      * Reference of the input element.
+      */
     var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.undefined
     
+    /**
+      * Inline style of the input field.
+      */
     var inputStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var is: js.UndefOr[String] = js.undefined
@@ -466,7 +504,10 @@ object autocompleteAutocompleteMod {
     
     var itemScope: js.UndefOr[Boolean] = js.undefined
     
-    var itemTemplate: js.UndefOr[AutoCompleteItemTemplateType] = js.undefined
+    /**
+      * Template of a list item.
+      */
+    var itemTemplate: js.UndefOr[ReactNode | (js.Function2[/* suggestion */ Any, /* index */ Double, ReactNode])] = js.undefined
     
     var itemType: js.UndefOr[String] = js.undefined
     
@@ -474,18 +515,33 @@ object autocompleteAutocompleteMod {
     
     var lang: js.UndefOr[String] = js.undefined
     
-    var list: js.UndefOr[String] = js.undefined
+    /**
+      * Icon of the loader.
+      */
+    var loadingIcon: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<AutoCompleteProps> */ Any
+      ] = js.undefined
     
-    var max: js.UndefOr[Double | String] = js.undefined
-    
+    /**
+      * Maximum number of characters to initiate a search.
+      */
     var maxLength: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double | String] = js.undefined
-    
+    /**
+      * Minimum number of characters to initiate a search.
+      * @defaultValue 1
+      */
     var minLength: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Specifies if multiple values can be selected.
+      * @defaultValue false
+      */
     var multiple: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Name of the input element.
+      */
     var name: js.UndefOr[String] = js.undefined
     
     var nonce: js.UndefOr[String] = js.undefined
@@ -502,16 +558,32 @@ object autocompleteAutocompleteMod {
     
     var onBeforeInput: js.UndefOr[FormEventHandler[HTMLSpanElement]] = js.undefined
     
+    /**
+      * Callback to invoke when autocomplete loses focus.
+      * @param {React.FocusEvent<HTMLInputElement>} event - Browser event.
+      */
     var onBlur: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLInputElement, Element], Unit]] = js.undefined
     
     var onCanPlay: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
     
     var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ AutoCompleteChangeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when autocomplete value changes.
+      * @param {AutoCompleteChangeEvent} event - Custom change event.
+      */
+    var onChange: js.UndefOr[js.Function1[/* event */ AutoCompleteChangeEvent, Unit]] = js.undefined
     
+    /**
+      * Callback to invoke when input is cleared by the user.
+      * @param {React.SyntheticEvent} event - Browser event.
+      */
     var onClear: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.undefined
     
+    /**
+      * Callback to invoke on click.
+      * @param {React.MouseEvent<HTMLElement>} event - Browser event.
+      */
     var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
     
     var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLSpanElement]] = js.undefined
@@ -520,12 +592,20 @@ object autocompleteAutocompleteMod {
     
     var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLSpanElement]] = js.undefined
     
+    /**
+      * Callback to invoke on right-click.
+      * @param {React.MouseEvent<HTMLElement>} event - Browser event.
+      */
     var onContextMenu: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
     
     var onCopy: js.UndefOr[ClipboardEventHandler[HTMLSpanElement]] = js.undefined
     
     var onCut: js.UndefOr[ClipboardEventHandler[HTMLSpanElement]] = js.undefined
     
+    /**
+      * Callback to invoke on double click.
+      * @param {React.MouseEvent<HTMLElement>} event - Browser event.
+      */
     var onDblClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
     
     var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLSpanElement]] = js.undefined
@@ -546,7 +626,11 @@ object autocompleteAutocompleteMod {
     
     var onDrop: js.UndefOr[DragEventHandler[HTMLSpanElement]] = js.undefined
     
-    var onDropdownClick: js.UndefOr[js.Function1[/* e */ AutoCompleteDropdownClickParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke to when dropdown button is clicked.
+      * @param {AutoCompleteDropdownClickEvent} event - Custom click event.
+      */
+    var onDropdownClick: js.UndefOr[js.Function1[/* event */ AutoCompleteDropdownClickEvent, Unit]] = js.undefined
     
     var onDurationChange: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
     
@@ -558,8 +642,15 @@ object autocompleteAutocompleteMod {
     
     var onError: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
     
+    /**
+      * Callback to invoke when autocomplete gets focus.
+      * @param {React.FocusEvent<HTMLInputElement>} event - Browser event.
+      */
     var onFocus: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLInputElement, Element], Unit]] = js.undefined
     
+    /**
+      * Callback to invoke when overlay panel becomes hidden.
+      */
     var onHide: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onInput: js.UndefOr[FormEventHandler[HTMLSpanElement]] = js.undefined
@@ -568,8 +659,16 @@ object autocompleteAutocompleteMod {
     
     var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLSpanElement]] = js.undefined
     
+    /**
+      * Callback to invoke to when a key is pressed.
+      * @param {React.KeyboardEvent<HTMLInputElement>} event - Browser event.
+      */
     var onKeyPress: js.UndefOr[js.Function1[/* event */ KeyboardEvent[HTMLInputElement], Unit]] = js.undefined
     
+    /**
+      * Callback to invoke to when a key is released.
+      * @param {React.KeyboardEvent<HTMLInputElement>} event - Browser event.
+      */
     var onKeyUp: js.UndefOr[js.Function1[/* event */ KeyboardEvent[HTMLInputElement], Unit]] = js.undefined
     
     var onLoad: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
@@ -580,6 +679,10 @@ object autocompleteAutocompleteMod {
     
     var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
     
+    /**
+      * Callback to invoke to when a mouse button is pressed.
+      * @param {React.MouseEvent<HTMLElement>} event - Browser event.
+      */
     var onMouseDown: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
     
     var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLSpanElement]] = js.undefined
@@ -632,8 +735,15 @@ object autocompleteAutocompleteMod {
     
     var onSeeking: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
     
-    var onSelect: js.UndefOr[js.Function1[/* e */ AutoCompleteSelectParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when a suggestion is selected.
+      * @param {AutoCompleteSelectEvent} event - Custom select event.
+      */
+    var onSelect: js.UndefOr[js.Function1[/* event */ AutoCompleteSelectEvent, Unit]] = js.undefined
     
+    /**
+      * Callback to invoke when overlay panel becomes visible.
+      */
     var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onStalled: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
@@ -654,7 +764,11 @@ object autocompleteAutocompleteMod {
     
     var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLSpanElement]] = js.undefined
     
-    var onUnselect: js.UndefOr[js.Function1[/* e */ AutoCompleteUnselectParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when a selected value is removed.
+      * @param {AutoCompleteUnselectEvent} event - Custom unselect event.
+      */
+    var onUnselect: js.UndefOr[js.Function1[/* event */ AutoCompleteUnselectEvent, Unit]] = js.undefined
     
     var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
     
@@ -662,18 +776,34 @@ object autocompleteAutocompleteMod {
     
     var onWheel: js.UndefOr[WheelEventHandler[HTMLSpanElement]] = js.undefined
     
+    /**
+      * Property name or getter function that refers to the children options of option group.
+      */
     var optionGroupChildren: js.UndefOr[String] = js.undefined
     
+    /**
+      * Property name or getter function to use as the label of an option group.
+      */
     var optionGroupLabel: js.UndefOr[String] = js.undefined
     
-    var optionGroupTemplate: js.UndefOr[AutoCompleteOptionGroupTemplateType] = js.undefined
+    /**
+      * Template of an option group item.
+      */
+    var optionGroupTemplate: js.UndefOr[ReactNode | (js.Function2[/* suggestion */ Any, /* index */ Double, ReactNode])] = js.undefined
     
+    /**
+      * Style class of the overlay panel element.
+      */
     var panelClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Inline style of the overlay panel element.
+      */
     var panelStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var pattern: js.UndefOr[String] = js.undefined
-    
+    /**
+      * Hint text for the input field.
+      */
     var placeholder: js.UndefOr[String] = js.undefined
     
     var prefix: js.UndefOr[String] = js.undefined
@@ -682,77 +812,127 @@ object autocompleteAutocompleteMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    /**
+      * When present, it specifies that the input cannot be typed.
+      * @defaultValue false
+      */
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var removeIcon: js.UndefOr[
+    var rel: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Icon of the remove chip element in multiple mode.
+      */
+    var removeTokenIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<AutoCompleteProps> */ Any
       ] = js.undefined
-    
-    var required: js.UndefOr[Boolean] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
     
+    var rev: js.UndefOr[String] = js.undefined
+    
     var role: js.UndefOr[AriaRole] = js.undefined
     
+    /**
+      * Maximum height of the suggestions panel.
+      * @defaultValue 200px
+      */
     var scrollHeight: js.UndefOr[String] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
-    var selectedItemTemplate: js.UndefOr[AutoCompleteSelectedItemTemplateType] = js.undefined
+    /**
+      * Template of a selected item.
+      */
+    var selectedItemTemplate: js.UndefOr[ReactNode | (js.Function1[/* value */ Any, ReactNode])] = js.undefined
     
+    /**
+      * Number of maximum options that can be selected.
+      */
     var selectionLimit: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Whether to show the empty message or not.
+      * @defaultValue false
+      */
     var showEmptyMessage: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Size of the input field.
+      */
     var size: js.UndefOr[Double] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
     
     var spellCheck: js.UndefOr[Booleanish] = js.undefined
     
-    var src: js.UndefOr[String] = js.undefined
-    
-    var step: js.UndefOr[Double | String] = js.undefined
-    
+    /**
+      * Inline style of the component.
+      */
     var style: js.UndefOr[CSSProperties] = js.undefined
     
+    /**
+      * An array of suggestions to display.
+      */
     var suggestions: js.UndefOr[js.Array[Any]] = js.undefined
     
     var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
     
     var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Index of the element in tabbing order.
+      */
     var tabIndex: js.UndefOr[Double] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
     
+    /**
+      * Content of the tooltip.
+      */
     var tooltip: js.UndefOr[String] = js.undefined
     
+    /**
+      * Configuration of the tooltip, refer to the tooltip documentation for more information.
+      * @type {TooltipOptions}
+      */
     var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
     
+    /**
+      * The properties of CSSTransition can be customized, except for "nodeRef" and "in" properties.
+      * @type {CSSTransitionProps}
+      */
     var transitionOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSTransitionProps */ Any
       ] = js.undefined
     
     var translate: js.UndefOr[yes | no] = js.undefined
     
+    /**
+      * Type of the input element.
+      */
     var `type`: js.UndefOr[String] = js.undefined
     
     var typeof: js.UndefOr[String] = js.undefined
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
+    /**
+      * Value of the component.
+      */
     var value: js.UndefOr[Any] = js.undefined
     
+    /**
+      * Whether to use the virtualScroller feature. The properties of VirtualScroller component can be used like an object in it.
+      * @type {VirtualScrollerProps}
+      */
     var virtualScrollerOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualScrollerProps */ Any
       ] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
-    
-    var width: js.UndefOr[Double | String] = js.undefined
   }
   object AutoCompleteProps {
     
@@ -768,19 +948,11 @@ object autocompleteAutocompleteMod {
       
       inline def setAboutUndefined: Self = StObject.set(x, "about", js.undefined)
       
-      inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
-      
-      inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
-      
       inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
       
       inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
-      
-      inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
-      
-      inline def setAppendTo(value: AutoCompleteAppendToType): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+      inline def setAppendTo(value: self | HTMLElement): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
       
       inline def setAppendToNull: Self = StObject.set(x, "appendTo", null)
       
@@ -984,10 +1156,6 @@ object autocompleteAutocompleteMod {
       
       inline def setAutoCapitalizeUndefined: Self = StObject.set(x, "autoCapitalize", js.undefined)
       
-      inline def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
-      
-      inline def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
-      
       inline def setAutoCorrect(value: String): Self = StObject.set(x, "autoCorrect", value.asInstanceOf[js.Any])
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
@@ -1004,14 +1172,6 @@ object autocompleteAutocompleteMod {
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
       
-      inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
-      
-      inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
-      
-      inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
-      
-      inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
-      
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
@@ -1024,21 +1184,21 @@ object autocompleteAutocompleteMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setCompleteMethod(value: /* e */ AutoCompleteCompleteMethodParams => Unit): Self = StObject.set(x, "completeMethod", js.Any.fromFunction1(value))
+      inline def setCompleteMethod(value: /* event */ AutoCompleteCompleteEvent => Unit): Self = StObject.set(x, "completeMethod", js.Any.fromFunction1(value))
       
       inline def setCompleteMethodUndefined: Self = StObject.set(x, "completeMethod", js.undefined)
+      
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
       
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
-      
-      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
-      
-      inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
       inline def setDangerouslySetInnerHTML(value: Html): Self = StObject.set(x, "dangerouslySetInnerHTML", value.asInstanceOf[js.Any])
       
@@ -1090,7 +1250,7 @@ object autocompleteAutocompleteMod {
       
       inline def setDropdownIconUndefined: Self = StObject.set(x, "dropdownIcon", js.undefined)
       
-      inline def setDropdownMode(value: String): Self = StObject.set(x, "dropdownMode", value.asInstanceOf[js.Any])
+      inline def setDropdownMode(value: blank | current): Self = StObject.set(x, "dropdownMode", value.asInstanceOf[js.Any])
       
       inline def setDropdownModeUndefined: Self = StObject.set(x, "dropdownMode", js.undefined)
       
@@ -1100,10 +1260,6 @@ object autocompleteAutocompleteMod {
       
       inline def setEmptyMessageUndefined: Self = StObject.set(x, "emptyMessage", js.undefined)
       
-      inline def setEnterKeyHint(value: enter | done | go | next | previous | search | send): Self = StObject.set(x, "enterKeyHint", value.asInstanceOf[js.Any])
-      
-      inline def setEnterKeyHintUndefined: Self = StObject.set(x, "enterKeyHint", js.undefined)
-      
       inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
       inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
@@ -1111,34 +1267,6 @@ object autocompleteAutocompleteMod {
       inline def setForceSelection(value: Boolean): Self = StObject.set(x, "forceSelection", value.asInstanceOf[js.Any])
       
       inline def setForceSelectionUndefined: Self = StObject.set(x, "forceSelection", js.undefined)
-      
-      inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
-      
-      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
-      
-      inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
-      
-      inline def setFormEncType(value: String): Self = StObject.set(x, "formEncType", value.asInstanceOf[js.Any])
-      
-      inline def setFormEncTypeUndefined: Self = StObject.set(x, "formEncType", js.undefined)
-      
-      inline def setFormMethod(value: String): Self = StObject.set(x, "formMethod", value.asInstanceOf[js.Any])
-      
-      inline def setFormMethodUndefined: Self = StObject.set(x, "formMethod", js.undefined)
-      
-      inline def setFormNoValidate(value: Boolean): Self = StObject.set(x, "formNoValidate", value.asInstanceOf[js.Any])
-      
-      inline def setFormNoValidateUndefined: Self = StObject.set(x, "formNoValidate", js.undefined)
-      
-      inline def setFormTarget(value: String): Self = StObject.set(x, "formTarget", value.asInstanceOf[js.Any])
-      
-      inline def setFormTargetUndefined: Self = StObject.set(x, "formTarget", js.undefined)
-      
-      inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
-      
-      inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
-      
-      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
       inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
@@ -1196,7 +1324,7 @@ object autocompleteAutocompleteMod {
       
       inline def setItemScopeUndefined: Self = StObject.set(x, "itemScope", js.undefined)
       
-      inline def setItemTemplate(value: AutoCompleteItemTemplateType): Self = StObject.set(x, "itemTemplate", value.asInstanceOf[js.Any])
+      inline def setItemTemplate(value: ReactNode | (js.Function2[/* suggestion */ Any, /* index */ Double, ReactNode])): Self = StObject.set(x, "itemTemplate", value.asInstanceOf[js.Any])
       
       inline def setItemTemplateFunction2(value: (/* suggestion */ Any, /* index */ Double) => ReactNode): Self = StObject.set(x, "itemTemplate", js.Any.fromFunction2(value))
       
@@ -1216,25 +1344,19 @@ object autocompleteAutocompleteMod {
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      inline def setList(value: String): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+      inline def setLoadingIcon(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<AutoCompleteProps> */ Any
+      ): Self = StObject.set(x, "loadingIcon", value.asInstanceOf[js.Any])
       
-      inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
-      
-      inline def setMax(value: Double | String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setLoadingIconUndefined: Self = StObject.set(x, "loadingIcon", js.undefined)
       
       inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       
       inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
       
-      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
-      
-      inline def setMin(value: Double | String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
-      
       inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
       
       inline def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
-      
-      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
       inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
@@ -1268,7 +1390,7 @@ object autocompleteAutocompleteMod {
       
       inline def setOnAuxClickUndefined: Self = StObject.set(x, "onAuxClick", js.undefined)
       
-      inline def setOnBeforeInput(value: FormEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
+      inline def setOnBeforeInput(value: typings.react.mod.FormEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
@@ -1284,7 +1406,7 @@ object autocompleteAutocompleteMod {
       
       inline def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
       
-      inline def setOnChange(value: /* e */ AutoCompleteChangeParams => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* event */ AutoCompleteChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -1360,7 +1482,7 @@ object autocompleteAutocompleteMod {
       
       inline def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
       
-      inline def setOnDropdownClick(value: /* e */ AutoCompleteDropdownClickParams => Unit): Self = StObject.set(x, "onDropdownClick", js.Any.fromFunction1(value))
+      inline def setOnDropdownClick(value: /* event */ AutoCompleteDropdownClickEvent => Unit): Self = StObject.set(x, "onDropdownClick", js.Any.fromFunction1(value))
       
       inline def setOnDropdownClickUndefined: Self = StObject.set(x, "onDropdownClick", js.undefined)
       
@@ -1392,11 +1514,11 @@ object autocompleteAutocompleteMod {
       
       inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
       
-      inline def setOnInput(value: FormEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
+      inline def setOnInput(value: typings.react.mod.FormEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
       
       inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
       
-      inline def setOnInvalid(value: FormEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
+      inline def setOnInvalid(value: typings.react.mod.FormEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
       
       inline def setOnInvalidUndefined: Self = StObject.set(x, "onInvalid", js.undefined)
       
@@ -1512,7 +1634,7 @@ object autocompleteAutocompleteMod {
       
       inline def setOnRateChangeUndefined: Self = StObject.set(x, "onRateChange", js.undefined)
       
-      inline def setOnReset(value: FormEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
+      inline def setOnReset(value: typings.react.mod.FormEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
@@ -1532,7 +1654,7 @@ object autocompleteAutocompleteMod {
       
       inline def setOnSeekingUndefined: Self = StObject.set(x, "onSeeking", js.undefined)
       
-      inline def setOnSelect(value: /* e */ AutoCompleteSelectParams => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+      inline def setOnSelect(value: /* event */ AutoCompleteSelectEvent => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
@@ -1544,7 +1666,7 @@ object autocompleteAutocompleteMod {
       
       inline def setOnStalledUndefined: Self = StObject.set(x, "onStalled", js.undefined)
       
-      inline def setOnSubmit(value: FormEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
+      inline def setOnSubmit(value: typings.react.mod.FormEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
       
       inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
       
@@ -1576,7 +1698,7 @@ object autocompleteAutocompleteMod {
       
       inline def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
       
-      inline def setOnUnselect(value: /* e */ AutoCompleteUnselectParams => Unit): Self = StObject.set(x, "onUnselect", js.Any.fromFunction1(value))
+      inline def setOnUnselect(value: /* event */ AutoCompleteUnselectEvent => Unit): Self = StObject.set(x, "onUnselect", js.Any.fromFunction1(value))
       
       inline def setOnUnselectUndefined: Self = StObject.set(x, "onUnselect", js.undefined)
       
@@ -1600,7 +1722,7 @@ object autocompleteAutocompleteMod {
       
       inline def setOptionGroupLabelUndefined: Self = StObject.set(x, "optionGroupLabel", js.undefined)
       
-      inline def setOptionGroupTemplate(value: AutoCompleteOptionGroupTemplateType): Self = StObject.set(x, "optionGroupTemplate", value.asInstanceOf[js.Any])
+      inline def setOptionGroupTemplate(value: ReactNode | (js.Function2[/* suggestion */ Any, /* index */ Double, ReactNode])): Self = StObject.set(x, "optionGroupTemplate", value.asInstanceOf[js.Any])
       
       inline def setOptionGroupTemplateFunction2(value: (/* suggestion */ Any, /* index */ Double) => ReactNode): Self = StObject.set(x, "optionGroupTemplate", js.Any.fromFunction2(value))
       
@@ -1613,10 +1735,6 @@ object autocompleteAutocompleteMod {
       inline def setPanelStyle(value: CSSProperties): Self = StObject.set(x, "panelStyle", value.asInstanceOf[js.Any])
       
       inline def setPanelStyleUndefined: Self = StObject.set(x, "panelStyle", js.undefined)
-      
-      inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
-      
-      inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
@@ -1638,15 +1756,15 @@ object autocompleteAutocompleteMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      inline def setRemoveIcon(
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
+      inline def setRemoveTokenIcon(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<AutoCompleteProps> */ Any
-      ): Self = StObject.set(x, "removeIcon", value.asInstanceOf[js.Any])
+      ): Self = StObject.set(x, "removeTokenIcon", value.asInstanceOf[js.Any])
       
-      inline def setRemoveIconUndefined: Self = StObject.set(x, "removeIcon", js.undefined)
-      
-      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
-      
-      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRemoveTokenIconUndefined: Self = StObject.set(x, "removeTokenIcon", js.undefined)
       
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
@@ -1655,6 +1773,10 @@ object autocompleteAutocompleteMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1668,7 +1790,7 @@ object autocompleteAutocompleteMod {
       
       inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
       
-      inline def setSelectedItemTemplate(value: AutoCompleteSelectedItemTemplateType): Self = StObject.set(x, "selectedItemTemplate", value.asInstanceOf[js.Any])
+      inline def setSelectedItemTemplate(value: ReactNode | (js.Function1[/* value */ Any, ReactNode])): Self = StObject.set(x, "selectedItemTemplate", value.asInstanceOf[js.Any])
       
       inline def setSelectedItemTemplateFunction1(value: /* value */ Any => ReactNode): Self = StObject.set(x, "selectedItemTemplate", js.Any.fromFunction1(value))
       
@@ -1693,14 +1815,6 @@ object autocompleteAutocompleteMod {
       inline def setSpellCheck(value: Booleanish): Self = StObject.set(x, "spellCheck", value.asInstanceOf[js.Any])
       
       inline def setSpellCheckUndefined: Self = StObject.set(x, "spellCheck", js.undefined)
-      
-      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
-      
-      inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
-      
-      inline def setStep(value: Double | String): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
-      
-      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -1771,28 +1885,35 @@ object autocompleteAutocompleteMod {
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
-      
-      inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-      
-      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
-  trait AutoCompleteSelectParams extends StObject {
+  /**
+    * Custom select event.
+    * @see {@link AutoCompleteProps.onSelect}
+    * @event
+    */
+  trait AutoCompleteSelectEvent extends StObject {
     
+    /**
+      * Browser event
+      */
     var originalEvent: SyntheticEvent[Element, Event]
     
+    /**
+      * Selected option value
+      */
     var value: Any
   }
-  object AutoCompleteSelectParams {
+  object AutoCompleteSelectEvent {
     
-    inline def apply(originalEvent: SyntheticEvent[Element, Event], value: Any): AutoCompleteSelectParams = {
+    inline def apply(originalEvent: SyntheticEvent[Element, Event], value: Any): AutoCompleteSelectEvent = {
       val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[AutoCompleteSelectParams]
+      __obj.asInstanceOf[AutoCompleteSelectEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: AutoCompleteSelectParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: AutoCompleteSelectEvent] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -1800,19 +1921,11 @@ object autocompleteAutocompleteMod {
     }
   }
   
-  type AutoCompleteSelectedItemTemplateType = ReactNode | (js.Function1[/* value */ Any, ReactNode])
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.dropdown
-    - typings.primereact.primereactStrings.input
-  */
-  trait AutoCompleteSourceType extends StObject
-  object AutoCompleteSourceType {
-    
-    inline def dropdown: typings.primereact.primereactStrings.dropdown = "dropdown".asInstanceOf[typings.primereact.primereactStrings.dropdown]
-    
-    inline def input: typings.primereact.primereactStrings.input = "input".asInstanceOf[typings.primereact.primereactStrings.input]
-  }
-  
-  type AutoCompleteUnselectParams = AutoCompleteSelectParams
+  /**
+    * Custom unselect event.
+    * @see {@link AutoCompleteProps.onUnselect}
+    * @extends {AutoCompleteSelectEvent}
+    * @event
+    */
+  type AutoCompleteUnselectEvent = AutoCompleteSelectEvent
 }

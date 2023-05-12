@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "filenamify" : "5.1.1"
+      "filenamify" : "6.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "filenamify" : "5.1.1"
+      "filenamify" : "6.0.0"
     }
   ],
   "compile-devDependencies" : [

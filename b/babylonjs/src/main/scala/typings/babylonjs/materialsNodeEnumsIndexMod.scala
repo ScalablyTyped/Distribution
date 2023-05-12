@@ -33,6 +33,8 @@ object materialsNodeEnumsIndexMod {
         typings.babylonjs.materialsNodeEnumsNodeMaterialBlockConnectionPointTypesMod.NodeMaterialBlockConnectionPointTypes & Double
       ] = js.native
     
+    /* 4095 */ val All: typings.babylonjs.materialsNodeEnumsNodeMaterialBlockConnectionPointTypesMod.NodeMaterialBlockConnectionPointTypes.All & Double = js.native
+    
     /* 1024 */ val AutoDetect: typings.babylonjs.materialsNodeEnumsNodeMaterialBlockConnectionPointTypesMod.NodeMaterialBlockConnectionPointTypes.AutoDetect & Double = js.native
     
     /* 2048 */ val BasedOnInput: typings.babylonjs.materialsNodeEnumsNodeMaterialBlockConnectionPointTypesMod.NodeMaterialBlockConnectionPointTypes.BasedOnInput & Double = js.native

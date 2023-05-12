@@ -32,7 +32,12 @@ trait Accessor extends StObject {
   var Status: js.UndefOr[AccessorStatus] = js.undefined
   
   /**
-    * The type of the accessor.  Currently accessor type is restricted to BILLING_TOKEN. 
+    * The tags assigned to the Accessor. For more information about tags, see Tagging Resources in the Amazon Managed Blockchain Ethereum Developer Guide, or Tagging Resources in the Amazon Managed Blockchain Hyperledger Fabric Developer Guide.
+    */
+  var Tags: js.UndefOr[OutputTagMap] = js.undefined
+  
+  /**
+    * The type of the accessor.  Currently, accessor type is restricted to BILLING_TOKEN. 
     */
   var Type: js.UndefOr[AccessorType] = js.undefined
 }
@@ -65,6 +70,10 @@ object Accessor {
     inline def setStatus(value: AccessorStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    
+    inline def setTags(value: OutputTagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     inline def setType(value: AccessorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

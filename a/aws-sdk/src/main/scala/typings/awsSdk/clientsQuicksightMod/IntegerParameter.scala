@@ -14,11 +14,11 @@ trait IntegerParameter extends StObject {
   /**
     * The values for the integer parameter.
     */
-  var Values: LongList
+  var Values: SensitiveLongList
 }
 object IntegerParameter {
   
-  inline def apply(Name: NonEmptyString, Values: LongList): IntegerParameter = {
+  inline def apply(Name: NonEmptyString, Values: SensitiveLongList): IntegerParameter = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntegerParameter]
   }
@@ -28,8 +28,8 @@ object IntegerParameter {
     
     inline def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setValues(value: LongList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: SensitiveLongList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: Long*): Self = StObject.set(x, "Values", js.Array(value*))
+    inline def setValuesVarargs(value: SensitiveLong*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

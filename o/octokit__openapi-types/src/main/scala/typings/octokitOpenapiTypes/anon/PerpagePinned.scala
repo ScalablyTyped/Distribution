@@ -8,16 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PerpagePinned extends StObject {
   
-  /** The direction to sort the results by. */
   var direction: js.UndefOr[asc | desc] = js.undefined
   
-  /** Page number of the results to fetch. */
   var page: js.UndefOr[Double] = js.undefined
   
-  /** The number of results per page (max 100). */
   var per_page: js.UndefOr[Double] = js.undefined
   
-  /** Pinned discussions only filter */
+  /** @description Pinned discussions only filter */
   var pinned: js.UndefOr[String] = js.undefined
 }
 object PerpagePinned {

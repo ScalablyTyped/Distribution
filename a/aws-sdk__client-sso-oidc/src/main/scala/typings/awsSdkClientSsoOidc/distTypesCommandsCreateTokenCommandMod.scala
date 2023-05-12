@@ -21,8 +21,14 @@ object distTypesCommandsCreateTokenCommandMod {
   @JSImport("@aws-sdk/client-sso-oidc/dist-types/commands/CreateTokenCommand", "CreateTokenCommand")
   @js.native
   open class CreateTokenCommand protected () extends Command[CreateTokenCommandInput, CreateTokenCommandOutput, SSOOIDCClientResolvedConfig, Any, Any] {
+    /**
+      * @public
+      */
     def this(input: CreateTokenCommandInput) = this()
     
+    /**
+      * @internal
+      */
     /* private */ var deserialize: Any = js.native
     
     /**
@@ -38,6 +44,9 @@ object distTypesCommandsCreateTokenCommandMod {
       options: HttpHandlerOptions
     ): Handler[CreateTokenCommandInput, CreateTokenCommandOutput] = js.native
     
+    /**
+      * @internal
+      */
     /* private */ var serialize: Any = js.native
   }
   /* static members */

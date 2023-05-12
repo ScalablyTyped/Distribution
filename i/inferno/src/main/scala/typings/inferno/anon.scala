@@ -1,6 +1,6 @@
 package typings.inferno
 
-import typings.inferno.distCoreTypesMod.Inferno.InfernoNode
+import typings.inferno.distCoreTypesMod.InfernoNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,7 +47,7 @@ object anon {
     }
   }
   
-  /* Inlined std.Readonly<{  children :inferno.inferno/dist/core/types.Inferno.InfernoNode | undefined}> */
+  /* Inlined std.Readonly<{  children :inferno.inferno/dist/core/types.InfernoNode | undefined}> */
   trait ReadonlychildrenInfernoNo extends StObject {
     
     val children: js.UndefOr[InfernoNode] = js.undefined

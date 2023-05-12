@@ -10,6 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class ListTagsForResourceCommand protected ()
   extends typings.awsSdkClientCognitoIdentity.distTypesCommandsListTagsForResourceCommandMod.ListTagsForResourceCommand {
+  /**
+    * @public
+    */
   def this(input: ListTagsForResourceCommandInput) = this()
 }
 /* static members */

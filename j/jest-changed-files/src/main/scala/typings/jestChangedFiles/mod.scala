@@ -86,11 +86,13 @@ object mod {
     var git: Paths
     
     var hg: Paths
+    
+    var sl: Paths
   }
   object Repos {
     
-    inline def apply(git: Paths, hg: Paths): Repos = {
-      val __obj = js.Dynamic.literal(git = git.asInstanceOf[js.Any], hg = hg.asInstanceOf[js.Any])
+    inline def apply(git: Paths, hg: Paths, sl: Paths): Repos = {
+      val __obj = js.Dynamic.literal(git = git.asInstanceOf[js.Any], hg = hg.asInstanceOf[js.Any], sl = sl.asInstanceOf[js.Any])
       __obj.asInstanceOf[Repos]
     }
     
@@ -100,6 +102,8 @@ object mod {
       inline def setGit(value: Paths): Self = StObject.set(x, "git", value.asInstanceOf[js.Any])
       
       inline def setHg(value: Paths): Self = StObject.set(x, "hg", value.asInstanceOf[js.Any])
+      
+      inline def setSl(value: Paths): Self = StObject.set(x, "sl", value.asInstanceOf[js.Any])
     }
   }
 }

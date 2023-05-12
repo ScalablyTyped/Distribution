@@ -9,12 +9,12 @@ trait Sheet extends StObject {
   /**
     * The name of a sheet. This name is displayed on the sheet's tab in the Amazon QuickSight console.
     */
-  var Name: js.UndefOr[NonEmptyString] = js.undefined
+  var Name: js.UndefOr[SheetName] = js.undefined
   
   /**
     * The unique identifier associated with a sheet.
     */
-  var SheetId: js.UndefOr[RestrictiveResourceId] = js.undefined
+  var SheetId: js.UndefOr[ShortRestrictiveResourceId] = js.undefined
 }
 object Sheet {
   
@@ -26,11 +26,11 @@ object Sheet {
   @scala.inline
   implicit open class MutableBuilder[Self <: Sheet] (val x: Self) extends AnyVal {
     
-    inline def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: SheetName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    inline def setSheetId(value: RestrictiveResourceId): Self = StObject.set(x, "SheetId", value.asInstanceOf[js.Any])
+    inline def setSheetId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "SheetId", value.asInstanceOf[js.Any])
     
     inline def setSheetIdUndefined: Self = StObject.set(x, "SheetId", js.undefined)
   }

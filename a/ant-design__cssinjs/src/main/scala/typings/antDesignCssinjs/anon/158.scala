@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.OutlineWidth
+import typings.csstype.mod.Property.BoxDecorationBreak
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `158` extends StObject {
   
   var value: js.UndefOr[
-    (OutlineWidth[Double | String]) | (js.Array[
+    BoxDecorationBreak | (js.Array[
       (Extract[
-        js.UndefOr[
-          (OutlineWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[OutlineWidth[Double | String]]]])
-        ], 
+        js.UndefOr[BoxDecorationBreak | js.Array[NonNullable[js.UndefOr[BoxDecorationBreak]]]], 
         String
-      ]) | (NonNullable[js.UndefOr[OutlineWidth[Double | String]]])
+      ]) | NonNullable[js.UndefOr[BoxDecorationBreak]]
     ])
   ] = js.native
 }

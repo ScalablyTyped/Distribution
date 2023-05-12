@@ -3,17 +3,21 @@ package typings.three
 import typings.std.HTMLCanvasElement
 import typings.std.WebGL2RenderingContext
 import typings.std.WebGLRenderingContext
+import typings.std.WebGLShader
 import typings.three.srcCamerasCameraMod.Camera
+import typings.three.srcConstantsMod.ColorSpace
 import typings.three.srcConstantsMod.CullFace
 import typings.three.srcConstantsMod.ShadowMapType
 import typings.three.srcConstantsMod.TextureEncoding
 import typings.three.srcConstantsMod.ToneMapping
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcCoreObject3DMod.Object3D
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcMathBox3Mod.Box3
 import typings.three.srcMathColorMod.Color
+import typings.three.srcMathColorMod.ColorRepresentation
 import typings.three.srcMathVector2Mod.Vector2
 import typings.three.srcMathVector3Mod.Vector3
 import typings.three.srcMathVector4Mod.Vector4
@@ -22,6 +26,7 @@ import typings.three.srcRenderersWebGLRenderTargetMod.WebGLRenderTarget
 import typings.three.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilities
 import typings.three.srcRenderersWebglWebGLExtensionsMod.WebGLExtensions
 import typings.three.srcRenderersWebglWebGLInfoMod.WebGLInfo
+import typings.three.srcRenderersWebglWebGLProgramMod.WebGLProgram
 import typings.three.srcRenderersWebglWebGLPropertiesMod.WebGLProperties
 import typings.three.srcRenderersWebglWebGLRenderListsMod.WebGLRenderLists
 import typings.three.srcRenderersWebglWebGLShadowMapMod.WebGLShadowMap
@@ -32,7 +37,6 @@ import typings.three.srcTexturesData3DTextureMod.Data3DTexture
 import typings.three.srcTexturesDataArrayTextureMod.DataArrayTexture
 import typings.three.srcTexturesTextureMod.OffscreenCanvas
 import typings.three.srcTexturesTextureMod.Texture
-import typings.three.srcUtilsMod.ColorRepresentation
 import typings.webxr.XRFrameRequestCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -259,15 +263,18 @@ object srcRenderersWebGLRendererMod {
     var localClippingEnabled: Boolean = js.native
     
     /**
-      * Default is LinearEncoding.
-      * @default THREE.LinearEncoding
+      * Color space used for output to HTMLCanvasElement. Supported values are
+      * {@link SRGBColorSpace} and {@link LinearSRGBColorSpace}.
+      * @default THREE.SRGBColorSpace.
       */
-    var outputEncoding: TextureEncoding = js.native
+    var outputColorSpace: ColorSpace = js.native
     
     /**
-      * @default false
+      * Default is LinearEncoding.
+      * @default THREE.LinearEncoding
+      * @deprecated Use {@link WebGLRenderer.outputColorSpace .outputColorSpace} in three.js r152+.
       */
-    var physicallyCorrectLights: Boolean = js.native
+    var outputEncoding: TextureEncoding = js.native
     
     var pixelRatio: Double = js.native
     
@@ -304,7 +311,7 @@ object srcRenderersWebGLRendererMod {
     def renderBufferDirect(
       camera: Camera,
       scene: Scene,
-      geometry: BufferGeometry,
+      geometry: BufferGeometry[NormalBufferAttributes],
       material: Material,
       `object`: Object3D[Event],
       geometryGroup: Any
@@ -493,6 +500,11 @@ object srcRenderersWebGLRendererMod {
     var toneMappingExposure: Double = js.native
     
     /**
+      * @default true
+      */
+    var useLegacyLights: Boolean = js.native
+    
+    /**
       * @deprecated Use {@link WebGLRenderer#xr .xr} instead.
       */
     var vr: Boolean = js.native
@@ -517,11 +529,25 @@ object srcRenderersWebGLRendererMod {
       * Enables error checking and reporting when shader programs are being compiled.
       */
     var checkShaderErrors: Boolean
+    
+    /**
+      * A callback function that can be used for custom error reporting. The callback receives the WebGL context, an
+      * instance of WebGLProgram as well two instances of WebGLShader representing the vertex and fragment shader.
+      * Assigning a custom function disables the default error reporting.
+      * @default `null`
+      */
+    var onShaderError: (js.Function4[
+        /* gl */ WebGLRenderingContext, 
+        /* program */ WebGLProgram, 
+        /* glVertexShader */ WebGLShader, 
+        /* glFragmentShader */ WebGLShader, 
+        Unit
+      ]) | Null
   }
   object WebGLDebug {
     
     inline def apply(checkShaderErrors: Boolean): WebGLDebug = {
-      val __obj = js.Dynamic.literal(checkShaderErrors = checkShaderErrors.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(checkShaderErrors = checkShaderErrors.asInstanceOf[js.Any], onShaderError = null)
       __obj.asInstanceOf[WebGLDebug]
     }
     
@@ -529,6 +555,12 @@ object srcRenderersWebGLRendererMod {
     implicit open class MutableBuilder[Self <: WebGLDebug] (val x: Self) extends AnyVal {
       
       inline def setCheckShaderErrors(value: Boolean): Self = StObject.set(x, "checkShaderErrors", value.asInstanceOf[js.Any])
+      
+      inline def setOnShaderError(
+        value: (/* gl */ WebGLRenderingContext, /* program */ WebGLProgram, /* glVertexShader */ WebGLShader, /* glFragmentShader */ WebGLShader) => Unit
+      ): Self = StObject.set(x, "onShaderError", js.Any.fromFunction4(value))
+      
+      inline def setOnShaderErrorNull: Self = StObject.set(x, "onShaderError", null)
     }
   }
   

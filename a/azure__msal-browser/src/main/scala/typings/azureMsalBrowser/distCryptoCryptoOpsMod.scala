@@ -1,5 +1,6 @@
 package typings.azureMsalBrowser
 
+import typings.azureMsalBrowser.distConfigConfigurationMod.CryptoOptions
 import typings.azureMsalCommon.distCryptoIcryptoMod.ICrypto
 import typings.azureMsalCommon.distTelemetryPerformanceIperformanceclientMod.IPerformanceClient
 import typings.azureMsalCommon.mod.Logger
@@ -17,6 +18,8 @@ object distCryptoCryptoOpsMod {
        with ICrypto {
     def this(logger: Logger) = this()
     def this(logger: Logger, performanceClient: IPerformanceClient) = this()
+    def this(logger: Logger, performanceClient: Unit, cryptoConfig: CryptoOptions) = this()
+    def this(logger: Logger, performanceClient: IPerformanceClient, cryptoConfig: CryptoOptions) = this()
     
     /* private */ var b64Decode: Any = js.native
     

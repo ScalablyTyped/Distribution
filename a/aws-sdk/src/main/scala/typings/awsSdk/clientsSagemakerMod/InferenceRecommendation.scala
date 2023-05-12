@@ -20,6 +20,11 @@ trait InferenceRecommendation extends StObject {
     * Defines the model configuration.
     */
   var ModelConfiguration: typings.awsSdk.clientsSagemakerMod.ModelConfiguration
+  
+  /**
+    * The recommendation ID which uniquely identifies each recommendation.
+    */
+  var RecommendationId: js.UndefOr[String] = js.undefined
 }
 object InferenceRecommendation {
   
@@ -40,5 +45,9 @@ object InferenceRecommendation {
     inline def setMetrics(value: RecommendationMetrics): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
     
     inline def setModelConfiguration(value: ModelConfiguration): Self = StObject.set(x, "ModelConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setRecommendationId(value: String): Self = StObject.set(x, "RecommendationId", value.asInstanceOf[js.Any])
+    
+    inline def setRecommendationIdUndefined: Self = StObject.set(x, "RecommendationId", js.undefined)
   }
 }

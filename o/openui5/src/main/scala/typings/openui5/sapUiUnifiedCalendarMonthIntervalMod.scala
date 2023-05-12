@@ -457,16 +457,18 @@ object sapUiUnifiedCalendarMonthIntervalMod {
     /**
       * Displays a month in the `CalendarMonthInterval` but doesn't set the focus.
       *
-      * @returns `this` to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def displayDate(
       /**
       * JavaScript date object for displayed date. (The month of this date will be displayed.)
       */
-    oDatetime: js.Object
+    oDatetime: js.Date
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:cancel cancel} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -478,6 +480,8 @@ object sapUiUnifiedCalendarMonthIntervalMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:select select} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -490,6 +494,7 @@ object sapUiUnifiedCalendarMonthIntervalMod {
     
     /**
       * @SINCE 1.34.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:startDateChange startDateChange} to attached listeners.
       *
@@ -510,7 +515,7 @@ object sapUiUnifiedCalendarMonthIntervalMod {
       /**
       * JavaScript date object for focused date. (The month of this date will be focused.)
       */
-    oDatetime: js.Object
+    oDatetime: js.Date
     ): typings.openui5.sapUiUnifiedCalendarMod.default = js.native
     
     /**
@@ -832,44 +837,26 @@ object sapUiUnifiedCalendarMonthIntervalMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.38.0
+      * Sets a maximum date for the calendar.
       *
-      * Sets a new value for property {@link #getMaxDate maxDate}.
-      *
-      * Maximum date that can be shown and selected in the Calendar. This must be a JavaScript date object.
-      *
-      * **Note:** If the `maxDate` is set to be before the `minDate`, the `minDate` is set to the begin of the
-      * month of the `maxDate`.
-      *
-      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
-      *
-      * @returns Reference to `this` in order to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def setMaxDate(): this.type = js.native
     def setMaxDate(/**
-      * New value for property `maxDate`
+      * A JavaScript Date
       */
-    oMaxDate: js.Object): this.type = js.native
+    oDate: js.Date): this.type = js.native
     
     /**
-      * @SINCE 1.38.0
+      * Sets a minimum date for the calendar.
       *
-      * Sets a new value for property {@link #getMinDate minDate}.
-      *
-      * Minimum date that can be shown and selected in the Calendar. This must be a JavaScript date object.
-      *
-      * **Note:** If the `minDate` is set to be after the `maxDate`, the `maxDate` is set to the end of the month
-      * of the `minDate`.
-      *
-      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
-      *
-      * @returns Reference to `this` in order to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def setMinDate(): this.type = js.native
     def setMinDate(/**
-      * New value for property `minDate`
+      * A JavaScript Date
       */
-    oMinDate: js.Object): this.type = js.native
+    oDate: js.Date): this.type = js.native
     
     /**
       * Sets a new value for property {@link #getMonths months}.
@@ -927,6 +914,16 @@ object sapUiUnifiedCalendarMonthIntervalMod {
       * New value for property `singleSelection`
       */
     bSingleSelection: Boolean): this.type = js.native
+    
+    /**
+      * Sets start date for the interval.
+      *
+      * @returns Reference to `this` for method chaining
+      */
+    def setStartDate(/**
+      * A JavaScript date
+      */
+    oStartDate: js.Date): this.type = js.native
     
     /**
       * Sets a new value for property {@link #getWidth width}.

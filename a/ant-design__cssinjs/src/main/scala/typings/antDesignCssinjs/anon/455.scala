@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BreakInside
+import typings.csstype.mod.Property.Contain
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `455` extends StObject {
   
   var value: js.UndefOr[
-    BreakInside | (js.Array[
-      (Extract[js.UndefOr[BreakInside | js.Array[NonNullable[js.UndefOr[BreakInside]]]], String]) | NonNullable[js.UndefOr[BreakInside]]
+    Contain | (js.Array[
+      (Extract[js.UndefOr[Contain | js.Array[NonNullable[js.UndefOr[Contain]]]], String]) | NonNullable[js.UndefOr[Contain]]
     ])
   ] = js.native
 }

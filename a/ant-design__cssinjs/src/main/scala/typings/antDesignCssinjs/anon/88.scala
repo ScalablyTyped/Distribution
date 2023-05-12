@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.WordBreak
+import typings.csstype.mod.Property.GridTemplateColumns
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `88` extends StObject {
   
   var value: js.UndefOr[
-    WordBreak | (js.Array[
-      (Extract[js.UndefOr[WordBreak | js.Array[NonNullable[js.UndefOr[WordBreak]]]], String]) | NonNullable[js.UndefOr[WordBreak]]
+    (GridTemplateColumns[Double | String]) | (js.Array[
+      (Extract[
+        js.UndefOr[
+          (GridTemplateColumns[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridTemplateColumns[Double | String]]]])
+        ], 
+        String
+      ]) | (NonNullable[js.UndefOr[GridTemplateColumns[Double | String]]])
     ])
   ] = js.native
 }

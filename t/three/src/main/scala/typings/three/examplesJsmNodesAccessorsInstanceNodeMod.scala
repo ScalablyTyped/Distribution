@@ -1,6 +1,7 @@
 package typings.three
 
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.InstancedMesh
 import org.scalablytyped.runtime.StObject
@@ -12,7 +13,7 @@ object examplesJsmNodesAccessorsInstanceNodeMod {
   @JSImport("three/examples/jsm/nodes/accessors/InstanceNode", JSImport.Default)
   @js.native
   open class default protected () extends InstanceNode {
-    def this(instanceMesh: InstancedMesh[BufferGeometry, Material | js.Array[Material]]) = this()
+    def this(instanceMesh: InstancedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) = this()
   }
   
   @js.native
@@ -21,6 +22,6 @@ object examplesJsmNodesAccessorsInstanceNodeMod {
     
     var instanceMatrixNode: typings.three.examplesJsmNodesCoreNodeMod.default = js.native
     
-    var instanceMesh: InstancedMesh[BufferGeometry, Material | js.Array[Material]] = js.native
+    var instanceMesh: InstancedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]] = js.native
   }
 }

@@ -17,6 +17,10 @@ trait JsMSCTranscoder extends StObject {
   
   var wasmUASTCToBC7: Nullable[String]
   
+  var wasmUASTCToR8_UNORM: Nullable[String]
+  
+  var wasmUASTCToRG8_UNORM: Nullable[String]
+  
   var wasmUASTCToRGBA_SRGB: Nullable[String]
   
   var wasmUASTCToRGBA_UNORM: Nullable[String]
@@ -26,7 +30,7 @@ trait JsMSCTranscoder extends StObject {
 object JsMSCTranscoder {
   
   inline def apply(jsDecoderModule: String): JsMSCTranscoder = {
-    val __obj = js.Dynamic.literal(jsDecoderModule = jsDecoderModule.asInstanceOf[js.Any], jsMSCTranscoder = null, wasmMSCTranscoder = null, wasmUASTCToASTC = null, wasmUASTCToBC7 = null, wasmUASTCToRGBA_SRGB = null, wasmUASTCToRGBA_UNORM = null, wasmZSTDDecoder = null)
+    val __obj = js.Dynamic.literal(jsDecoderModule = jsDecoderModule.asInstanceOf[js.Any], jsMSCTranscoder = null, wasmMSCTranscoder = null, wasmUASTCToASTC = null, wasmUASTCToBC7 = null, wasmUASTCToR8_UNORM = null, wasmUASTCToRG8_UNORM = null, wasmUASTCToRGBA_SRGB = null, wasmUASTCToRGBA_UNORM = null, wasmZSTDDecoder = null)
     __obj.asInstanceOf[JsMSCTranscoder]
   }
   
@@ -50,6 +54,14 @@ object JsMSCTranscoder {
     inline def setWasmUASTCToBC7(value: Nullable[String]): Self = StObject.set(x, "wasmUASTCToBC7", value.asInstanceOf[js.Any])
     
     inline def setWasmUASTCToBC7Null: Self = StObject.set(x, "wasmUASTCToBC7", null)
+    
+    inline def setWasmUASTCToR8_UNORM(value: Nullable[String]): Self = StObject.set(x, "wasmUASTCToR8_UNORM", value.asInstanceOf[js.Any])
+    
+    inline def setWasmUASTCToR8_UNORMNull: Self = StObject.set(x, "wasmUASTCToR8_UNORM", null)
+    
+    inline def setWasmUASTCToRG8_UNORM(value: Nullable[String]): Self = StObject.set(x, "wasmUASTCToRG8_UNORM", value.asInstanceOf[js.Any])
+    
+    inline def setWasmUASTCToRG8_UNORMNull: Self = StObject.set(x, "wasmUASTCToRG8_UNORM", null)
     
     inline def setWasmUASTCToRGBA_SRGB(value: Nullable[String]): Self = StObject.set(x, "wasmUASTCToRGBA_SRGB", value.asInstanceOf[js.Any])
     

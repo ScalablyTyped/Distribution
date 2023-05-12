@@ -83,7 +83,7 @@ object mod {
   @JSImport("mongodb-memory-server", "MongoMemoryServer")
   @js.native
   /**
-    * Create an Mongo-Memory-Sever Instance
+    * Create a Mongo-Memory-Sever Instance
     * @param opts Mongo-Memory-Sever Options
     */
   open class MongoMemoryServer ()
@@ -98,7 +98,7 @@ object mod {
     val ^ : js.Any = js.native
     
     /**
-      * Create an Mongo-Memory-Sever Instance that can be awaited
+      * Create a Mongo-Memory-Sever Instance that can be awaited
       * @param opts Mongo-Memory-Sever Options
       */
     inline def create(): js.Promise[typings.mongodbMemoryServerCore.libMongoMemoryServerMod.MongoMemoryServer] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Promise[typings.mongodbMemoryServerCore.libMongoMemoryServerMod.MongoMemoryServer]]

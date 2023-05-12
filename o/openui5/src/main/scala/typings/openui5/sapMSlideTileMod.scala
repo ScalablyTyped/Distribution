@@ -253,6 +253,7 @@ object sapMSlideTileMod {
     
     /**
       * @SINCE 1.46.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:press press} to attached listeners.
       *

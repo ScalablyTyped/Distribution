@@ -1,5 +1,6 @@
 package typings.miniCssExtractPlugin
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -74,6 +75,8 @@ object typesLoaderMod {
   }
   
   type LoaderOptions = typings.miniCssExtractPlugin.mod.LoaderOptions
+  
+  type Locals = StringDictionary[String | js.Function]
   
   type Module = typings.webpack.mod.Module
   

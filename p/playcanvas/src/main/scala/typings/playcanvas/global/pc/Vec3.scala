@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {number} [y] - The y value. Defaults to 0.
   * @param {number} [z] - The z value. Defaults to 0.
   * @example
-  * var v = new pc.Vec3(1, 2, 3);
+  * const v = new pc.Vec3(1, 2, 3);
   */
 open class Vec3 ()
   extends typings.playcanvas.mod.Vec3 {

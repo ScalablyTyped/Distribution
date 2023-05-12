@@ -27,7 +27,7 @@ object mod {
     def this(props: PropsWithChildren[HelmetProps]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: PropsWithChildren[HelmetProps], context: Any) = this()
   }
@@ -47,7 +47,7 @@ object mod {
     def this(props: PropsWithChildren[ProviderProps]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: PropsWithChildren[ProviderProps], context: Any) = this()
   }

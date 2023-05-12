@@ -1,6 +1,7 @@
 package typings.three
 
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcCoreObject3DMod.Object3D
 import typings.three.srcMaterialsMaterialMod.Material
@@ -39,14 +40,14 @@ object srcRenderersWebglWebGLRenderListsMod {
     ): Unit = js.native
     def push(
       `object`: Object3D[Event],
-      geometry: BufferGeometry,
+      geometry: BufferGeometry[NormalBufferAttributes],
       material: Material,
       groupOrder: Double,
       z: Double
     ): Unit = js.native
     def push(
       `object`: Object3D[Event],
-      geometry: BufferGeometry,
+      geometry: BufferGeometry[NormalBufferAttributes],
       material: Material,
       groupOrder: Double,
       z: Double,
@@ -79,14 +80,14 @@ object srcRenderersWebglWebGLRenderListsMod {
     ): Unit = js.native
     def unshift(
       `object`: Object3D[Event],
-      geometry: BufferGeometry,
+      geometry: BufferGeometry[NormalBufferAttributes],
       material: Material,
       groupOrder: Double,
       z: Double
     ): Unit = js.native
     def unshift(
       `object`: Object3D[Event],
-      geometry: BufferGeometry,
+      geometry: BufferGeometry[NormalBufferAttributes],
       material: Material,
       groupOrder: Double,
       z: Double,
@@ -106,7 +107,7 @@ object srcRenderersWebglWebGLRenderListsMod {
   
   trait RenderItem extends StObject {
     
-    var geometry: BufferGeometry | Null
+    var geometry: BufferGeometry[NormalBufferAttributes] | Null
     
     var group: Group | Null
     
@@ -143,7 +144,7 @@ object srcRenderersWebglWebGLRenderListsMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: RenderItem] (val x: Self) extends AnyVal {
       
-      inline def setGeometry(value: BufferGeometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+      inline def setGeometry(value: BufferGeometry[NormalBufferAttributes]): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
       
       inline def setGeometryNull: Self = StObject.set(x, "geometry", null)
       

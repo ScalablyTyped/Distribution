@@ -28,6 +28,8 @@ trait PartialSidenavOptions extends StObject {
   var onOpenStart: js.UndefOr[js.ThisFunction1[/* this */ Sidenav, /* elem */ Element, Unit]] = js.undefined
   
   var outDuration: js.UndefOr[Double] = js.undefined
+  
+  var preventScrolling: js.UndefOr[Boolean] = js.undefined
 }
 object PartialSidenavOptions {
   
@@ -74,5 +76,9 @@ object PartialSidenavOptions {
     inline def setOutDuration(value: Double): Self = StObject.set(x, "outDuration", value.asInstanceOf[js.Any])
     
     inline def setOutDurationUndefined: Self = StObject.set(x, "outDuration", js.undefined)
+    
+    inline def setPreventScrolling(value: Boolean): Self = StObject.set(x, "preventScrolling", value.asInstanceOf[js.Any])
+    
+    inline def setPreventScrollingUndefined: Self = StObject.set(x, "preventScrolling", js.undefined)
   }
 }

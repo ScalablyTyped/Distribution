@@ -1,21 +1,24 @@
 package typings.reactDayPicker.mod
 
+import typings.react.mod.ButtonHTMLAttributes
 import typings.react.mod.CSSProperties
 import typings.react.mod.Context
+import typings.react.mod.DetailedHTMLProps
 import typings.react.mod.FocusEvent
 import typings.react.mod.ForwardRefExoticComponent
-import typings.react.mod.HTMLProps
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.RefObject
 import typings.react.mod.TouchEvent
 import typings.react.mod.global.JSX.Element
 import typings.reactDayPicker.anon.Children
 import typings.reactDayPicker.anon.Locale
-import typings.reactDayPicker.anon.PickButtonPropsmultiplede
+import typings.reactDayPicker.anon.OmitDetailedHTMLPropsButt
 import typings.reactDayPicker.anon.`0`
+import typings.reactDayPicker.anon.`1`
 import typings.reactDayPicker.mod.^
 import typings.reactDayPicker.reactDayPickerBooleans.`true`
 import typings.std.HTMLButtonElement
@@ -26,10 +29,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-/**
-  * Render a button HTML element applying the reset class name.
-  */
-inline def Button: ForwardRefExoticComponent[PickButtonPropsmultiplede] = ^.asInstanceOf[js.Dynamic].selectDynamic("Button").asInstanceOf[ForwardRefExoticComponent[PickButtonPropsmultiplede]]
+/** Render a button HTML element applying the reset class name. */
+inline def Button: ForwardRefExoticComponent[OmitDetailedHTMLPropsButt] = ^.asInstanceOf[js.Dynamic].selectDynamic("Button").asInstanceOf[ForwardRefExoticComponent[OmitDetailedHTMLPropsButt]]
 
 /**
   * Render the caption of a month. The caption has a different layout when
@@ -126,7 +127,7 @@ inline def DayContent(props: DayContentProps): Element = ^.asInstanceOf[js.Dynam
   * If you are using CSS modules, pass the imported styles object the
   * `classNames` props.
   *
-  * You can also style the elements via inline-styles using the `styles` prop.
+  * You can also style the elements via inline styles using the `styles` prop.
   *
   * ### Form fields
   *
@@ -142,7 +143,7 @@ inline def DayContent(props: DayContentProps): Element = ^.asInstanceOf[js.Dynam
   * For example, to use Spanish locale:
   *
   * ```
-  * import es from 'date-fns/locale/es';
+  * import { es } from 'date-fns/locale';
   * <DayPicker locale={es} />
   * ```
   */
@@ -183,7 +184,7 @@ inline def FocusContext: Context[js.UndefOr[FocusContextValue]] = ^.asInstanceOf
 inline def FocusProvider(props: Children): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FocusProvider")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 
 /** Render the Footer component (empty as default).*/
-inline def Footer(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Footer")().asInstanceOf[Element]
+inline def Footer(props: FooterProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Footer")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 
 /** Render the table head. */
 inline def Head(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Head")().asInstanceOf[Element]
@@ -215,7 +216,7 @@ inline def IconRight(props: StyledComponent): Element = ^.asInstanceOf[js.Dynami
 inline def NavigationContext: Context[js.UndefOr[NavigationContextValue]] = ^.asInstanceOf[js.Dynamic].selectDynamic("NavigationContext").asInstanceOf[Context[js.UndefOr[NavigationContextValue]]]
 
 /** Provides the values for the {@link NavigationContext}. */
-inline def NavigationProvider(props: `0`): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NavigationProvider")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+inline def NavigationProvider(props: `1`): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NavigationProvider")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 
 /** Provide the value for all the context providers. */
 inline def RootProvider(props: RootContext): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("RootProvider")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
@@ -420,7 +421,7 @@ inline def useSelectSingle(): SelectSingleContextValue = ^.asInstanceOf[js.Dynam
 type ActiveModifiers = (Record[Modifier, `true`]) & (Partial[Record[InternalModifier, `true`]])
 
 /** The props for the {@link Button} component. */
-type ButtonProps = HTMLProps[HTMLButtonElement]
+type ButtonProps = DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement]
 
 /**
   * A map of matchers used as custom modifiers by DayPicker component. This is
@@ -456,7 +457,7 @@ Unit]
 type DayLabel = js.Function3[
 /* day */ js.Date, 
 /* activeModifiers */ ActiveModifiers, 
-/* options */ js.UndefOr[Locale], 
+/* options */ js.UndefOr[`0`], 
 String]
 
 /** The custom modifiers passed to the {@link DayPickerBase.modifiers}. */
@@ -467,6 +468,13 @@ type DayMouseEventHandler = js.Function3[
 /* day */ js.Date, 
 /* activeModifiers */ ActiveModifiers, 
 /* e */ MouseEvent[typings.std.Element, NativeMouseEvent], 
+Unit]
+
+/** The event handler when a day gets a pointer event. */
+type DayPointerEventHandler = js.Function3[
+/* day */ js.Date, 
+/* activeModifiers */ ActiveModifiers, 
+/* e */ PointerEvent[typings.std.Element], 
 Unit]
 
 /** The event handler when a day gets a touch event. */
@@ -559,7 +567,7 @@ type ModifiersStyles = (Record[Modifier, CSSProperties]) & (Partial[Record[Inter
 type MonthChangeEventHandler = js.Function1[/* month */ js.Date, Unit]
 
 /** Return the ARIA label for the "next month" / "prev month" buttons in the navigation.*/
-type NavButtonLabel = js.Function2[/* month */ js.UndefOr[js.Date], /* options */ js.UndefOr[Locale], String]
+type NavButtonLabel = js.Function2[/* month */ js.UndefOr[js.Date], /* options */ js.UndefOr[`0`], String]
 
 /** The event handler when selecting multiple days. */
 type SelectMultipleEventHandler = js.Function4[
@@ -598,7 +606,7 @@ Unit]
 type WeekNumberFormatter = js.Function2[/* weekNumber */ Double, /* options */ js.UndefOr[Locale], ReactNode]
 
 /** Return the ARIA label of the week number.*/
-type WeekNumberLabel = js.Function2[/* n */ Double, /* options */ js.UndefOr[Locale], String]
+type WeekNumberLabel = js.Function2[/* n */ Double, /* options */ js.UndefOr[`0`], String]
 
 /** Return the ARIA label for the Head component.*/
-type WeekdayLabel = js.Function2[/* day */ js.Date, /* options */ js.UndefOr[Locale], String]
+type WeekdayLabel = js.Function2[/* day */ js.Date, /* options */ js.UndefOr[`0`], String]

@@ -12,7 +12,7 @@ trait LabelSchema extends StObject {
   var labelMapper: js.UndefOr[typings.awsSdk.clientsFrauddetectorMod.labelMapper] = js.undefined
   
   /**
-    * The action to take for unlabeled events.
+    * The action to take for unlabeled events.   Use IGNORE if you want the unlabeled events to be ignored. This is recommended when the majority of the events in the dataset are labeled.   Use FRAUD if you want to categorize all unlabeled events as “Fraud”. This is recommended when most of the events in your dataset are fraudulent.   Use LEGIT f you want to categorize all unlabeled events as “Legit”. This is recommended when most of the events in your dataset are legitimate.   Use AUTO if you want Amazon Fraud Detector to decide how to use the unlabeled data. This is recommended when there is significant unlabeled events in the dataset.   By default, Amazon Fraud Detector ignores the unlabeled data.
     */
   var unlabeledEventsTreatment: js.UndefOr[UnlabeledEventsTreatment] = js.undefined
 }

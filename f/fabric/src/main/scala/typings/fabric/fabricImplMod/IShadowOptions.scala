@@ -30,7 +30,6 @@ trait IShadowOptions extends StObject {
     * When `false`, the shadow will scale with the object.
     * When `true`, the shadow's offsetX, offsetY, and blur will not be affected by the object's scale.
     * default to false
-    * @type Boolean
     * @default
     */
   var nonScaling: js.UndefOr[Boolean] = js.undefined

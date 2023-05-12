@@ -14,6 +14,7 @@ import typings.plotlyJs.anon.PartialPolarLayout
 import typings.plotlyJs.anon.PartialScene
 import typings.plotlyJs.anon.PartialShape
 import typings.plotlyJs.anon.PartialSlider
+import typings.plotlyJs.anon.PartialUpdateMenu
 import typings.plotlyJs.anon.Partialrowsnumberroworder
 import typings.plotlyJs.anon.PartialtextstringfontPart
 import typings.plotlyJs.mod.AxisType
@@ -165,7 +166,7 @@ trait PartialLayout extends StObject {
   
   var uirevision: js.UndefOr[Double | String] = js.undefined
   
-  var updatemenus: js.UndefOr[js.Object] = js.undefined
+  var updatemenus: js.UndefOr[js.Array[PartialUpdateMenu]] = js.undefined
   
   var width: js.UndefOr[Double] = js.undefined
   
@@ -489,9 +490,11 @@ object PartialLayout {
     
     inline def setUirevisionUndefined: Self = StObject.set(x, "uirevision", js.undefined)
     
-    inline def setUpdatemenus(value: js.Object): Self = StObject.set(x, "updatemenus", value.asInstanceOf[js.Any])
+    inline def setUpdatemenus(value: js.Array[PartialUpdateMenu]): Self = StObject.set(x, "updatemenus", value.asInstanceOf[js.Any])
     
     inline def setUpdatemenusUndefined: Self = StObject.set(x, "updatemenus", js.undefined)
+    
+    inline def setUpdatemenusVarargs(value: PartialUpdateMenu*): Self = StObject.set(x, "updatemenus", js.Array(value*))
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

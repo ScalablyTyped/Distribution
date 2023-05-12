@@ -63,6 +63,13 @@ trait ImageryTileLayerProperties
   var popupTemplate: js.UndefOr[PopupTemplateProperties] = js.undefined
   
   /**
+    * The client-side raster functions are operations that apply processing directly to the source image pixels.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryTileLayer.html#rasterFunction)
+    */
+  var rasterFunction: js.UndefOr[RasterFunctionProperties] = js.undefined
+  
+  /**
     * The [tiled image service's metadata JSON](https://developers.arcgis.com/rest/services-reference/image-service.htm) exposed by the ArcGIS REST API.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryTileLayer.html#sourceJSON)
@@ -152,6 +159,10 @@ object ImageryTileLayerProperties {
     inline def setPopupTemplate(value: PopupTemplateProperties): Self = StObject.set(x, "popupTemplate", value.asInstanceOf[js.Any])
     
     inline def setPopupTemplateUndefined: Self = StObject.set(x, "popupTemplate", js.undefined)
+    
+    inline def setRasterFunction(value: RasterFunctionProperties): Self = StObject.set(x, "rasterFunction", value.asInstanceOf[js.Any])
+    
+    inline def setRasterFunctionUndefined: Self = StObject.set(x, "rasterFunction", js.undefined)
     
     inline def setSourceJSON(value: Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
     

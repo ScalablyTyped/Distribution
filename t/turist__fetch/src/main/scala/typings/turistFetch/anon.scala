@@ -95,6 +95,8 @@ object anon {
     
     val V4MAPPED: Double
     
+    def getDefaultResultOrder(): ipv4first | verbatim
+    
     def getServers(): js.Array[String]
     
     val lookup: Typeoflookup
@@ -169,6 +171,7 @@ object anon {
       SERVFAIL: String,
       TIMEOUT: String,
       V4MAPPED: Double,
+      getDefaultResultOrder: () => ipv4first | verbatim,
       getServers: () => js.Array[String],
       lookup: Typeoflookup,
       lookupService: TypeoflookupService,
@@ -190,7 +193,7 @@ object anon {
       setDefaultResultOrder: ipv4first | verbatim => Unit,
       setServers: js.Array[String] => Unit
     ): Typeofdns = {
-      val __obj = js.Dynamic.literal(ADDRCONFIG = ADDRCONFIG.asInstanceOf[js.Any], ADDRGETNETWORKPARAMS = ADDRGETNETWORKPARAMS.asInstanceOf[js.Any], ALL = ALL.asInstanceOf[js.Any], BADFAMILY = BADFAMILY.asInstanceOf[js.Any], BADFLAGS = BADFLAGS.asInstanceOf[js.Any], BADHINTS = BADHINTS.asInstanceOf[js.Any], BADNAME = BADNAME.asInstanceOf[js.Any], BADQUERY = BADQUERY.asInstanceOf[js.Any], BADRESP = BADRESP.asInstanceOf[js.Any], BADSTR = BADSTR.asInstanceOf[js.Any], CANCELLED = CANCELLED.asInstanceOf[js.Any], CONNREFUSED = CONNREFUSED.asInstanceOf[js.Any], DESTRUCTION = DESTRUCTION.asInstanceOf[js.Any], EOF = EOF.asInstanceOf[js.Any], FILE = FILE.asInstanceOf[js.Any], FORMERR = FORMERR.asInstanceOf[js.Any], LOADIPHLPAPI = LOADIPHLPAPI.asInstanceOf[js.Any], NODATA = NODATA.asInstanceOf[js.Any], NOMEM = NOMEM.asInstanceOf[js.Any], NONAME = NONAME.asInstanceOf[js.Any], NOTFOUND = NOTFOUND.asInstanceOf[js.Any], NOTIMP = NOTIMP.asInstanceOf[js.Any], NOTINITIALIZED = NOTINITIALIZED.asInstanceOf[js.Any], REFUSED = REFUSED.asInstanceOf[js.Any], Resolver = Resolver.asInstanceOf[js.Any], SERVFAIL = SERVFAIL.asInstanceOf[js.Any], TIMEOUT = TIMEOUT.asInstanceOf[js.Any], V4MAPPED = V4MAPPED.asInstanceOf[js.Any], getServers = js.Any.fromFunction0(getServers), lookup = lookup.asInstanceOf[js.Any], lookupService = lookupService.asInstanceOf[js.Any], promises = promises.asInstanceOf[js.Any], resolve = resolve.asInstanceOf[js.Any], resolve4 = resolve4.asInstanceOf[js.Any], resolve6 = resolve6.asInstanceOf[js.Any], resolveAny = resolveAny.asInstanceOf[js.Any], resolveCaa = resolveCaa.asInstanceOf[js.Any], resolveCname = resolveCname.asInstanceOf[js.Any], resolveMx = resolveMx.asInstanceOf[js.Any], resolveNaptr = resolveNaptr.asInstanceOf[js.Any], resolveNs = resolveNs.asInstanceOf[js.Any], resolvePtr = resolvePtr.asInstanceOf[js.Any], resolveSoa = resolveSoa.asInstanceOf[js.Any], resolveSrv = resolveSrv.asInstanceOf[js.Any], resolveTxt = resolveTxt.asInstanceOf[js.Any], reverse = js.Any.fromFunction2(reverse), setDefaultResultOrder = js.Any.fromFunction1(setDefaultResultOrder), setServers = js.Any.fromFunction1(setServers))
+      val __obj = js.Dynamic.literal(ADDRCONFIG = ADDRCONFIG.asInstanceOf[js.Any], ADDRGETNETWORKPARAMS = ADDRGETNETWORKPARAMS.asInstanceOf[js.Any], ALL = ALL.asInstanceOf[js.Any], BADFAMILY = BADFAMILY.asInstanceOf[js.Any], BADFLAGS = BADFLAGS.asInstanceOf[js.Any], BADHINTS = BADHINTS.asInstanceOf[js.Any], BADNAME = BADNAME.asInstanceOf[js.Any], BADQUERY = BADQUERY.asInstanceOf[js.Any], BADRESP = BADRESP.asInstanceOf[js.Any], BADSTR = BADSTR.asInstanceOf[js.Any], CANCELLED = CANCELLED.asInstanceOf[js.Any], CONNREFUSED = CONNREFUSED.asInstanceOf[js.Any], DESTRUCTION = DESTRUCTION.asInstanceOf[js.Any], EOF = EOF.asInstanceOf[js.Any], FILE = FILE.asInstanceOf[js.Any], FORMERR = FORMERR.asInstanceOf[js.Any], LOADIPHLPAPI = LOADIPHLPAPI.asInstanceOf[js.Any], NODATA = NODATA.asInstanceOf[js.Any], NOMEM = NOMEM.asInstanceOf[js.Any], NONAME = NONAME.asInstanceOf[js.Any], NOTFOUND = NOTFOUND.asInstanceOf[js.Any], NOTIMP = NOTIMP.asInstanceOf[js.Any], NOTINITIALIZED = NOTINITIALIZED.asInstanceOf[js.Any], REFUSED = REFUSED.asInstanceOf[js.Any], Resolver = Resolver.asInstanceOf[js.Any], SERVFAIL = SERVFAIL.asInstanceOf[js.Any], TIMEOUT = TIMEOUT.asInstanceOf[js.Any], V4MAPPED = V4MAPPED.asInstanceOf[js.Any], getDefaultResultOrder = js.Any.fromFunction0(getDefaultResultOrder), getServers = js.Any.fromFunction0(getServers), lookup = lookup.asInstanceOf[js.Any], lookupService = lookupService.asInstanceOf[js.Any], promises = promises.asInstanceOf[js.Any], resolve = resolve.asInstanceOf[js.Any], resolve4 = resolve4.asInstanceOf[js.Any], resolve6 = resolve6.asInstanceOf[js.Any], resolveAny = resolveAny.asInstanceOf[js.Any], resolveCaa = resolveCaa.asInstanceOf[js.Any], resolveCname = resolveCname.asInstanceOf[js.Any], resolveMx = resolveMx.asInstanceOf[js.Any], resolveNaptr = resolveNaptr.asInstanceOf[js.Any], resolveNs = resolveNs.asInstanceOf[js.Any], resolvePtr = resolvePtr.asInstanceOf[js.Any], resolveSoa = resolveSoa.asInstanceOf[js.Any], resolveSrv = resolveSrv.asInstanceOf[js.Any], resolveTxt = resolveTxt.asInstanceOf[js.Any], reverse = js.Any.fromFunction2(reverse), setDefaultResultOrder = js.Any.fromFunction1(setDefaultResultOrder), setServers = js.Any.fromFunction1(setServers))
       __obj.asInstanceOf[Typeofdns]
     }
     
@@ -228,6 +231,8 @@ object anon {
       inline def setFILE(value: String): Self = StObject.set(x, "FILE", value.asInstanceOf[js.Any])
       
       inline def setFORMERR(value: String): Self = StObject.set(x, "FORMERR", value.asInstanceOf[js.Any])
+      
+      inline def setGetDefaultResultOrder(value: () => ipv4first | verbatim): Self = StObject.set(x, "getDefaultResultOrder", js.Any.fromFunction0(value))
       
       inline def setGetServers(value: () => js.Array[String]): Self = StObject.set(x, "getServers", js.Any.fromFunction0(value))
       
@@ -344,6 +349,49 @@ object anon {
   @js.native
   trait Typeofpromises extends StObject {
     
+    /**
+      * An independent resolver for DNS requests.
+      *
+      * Creating a new resolver uses the default server settings. Setting
+      * the servers used for a resolver using `resolver.setServers()` does not affect
+      * other resolvers:
+      *
+      * ```js
+      * const { Resolver } = require('node:dns').promises;
+      * const resolver = new Resolver();
+      * resolver.setServers(['4.4.4.4']);
+      *
+      * // This request will use the server at 4.4.4.4, independent of global settings.
+      * resolver.resolve4('example.org').then((addresses) => {
+      *   // ...
+      * });
+      *
+      * // Alternatively, the same code can be written using async-await style.
+      * (async function() {
+      *   const addresses = await resolver.resolve4('example.org');
+      * })();
+      * ```
+      *
+      * The following methods from the `dnsPromises` API are available:
+      *
+      * * `resolver.getServers()`
+      * * `resolver.resolve()`
+      * * `resolver.resolve4()`
+      * * `resolver.resolve6()`
+      * * `resolver.resolveAny()`
+      * * `resolver.resolveCaa()`
+      * * `resolver.resolveCname()`
+      * * `resolver.resolveMx()`
+      * * `resolver.resolveNaptr()`
+      * * `resolver.resolveNs()`
+      * * `resolver.resolvePtr()`
+      * * `resolver.resolveSoa()`
+      * * `resolver.resolveSrv()`
+      * * `resolver.resolveTxt()`
+      * * `resolver.reverse()`
+      * * `resolver.setServers()`
+      * @since v10.6.0
+      */
     var Resolver: Instantiable0[typings.node.dnsMod.promises.Resolver] = js.native
     
     /**
@@ -379,7 +427,7 @@ object anon {
       *
       * `dnsPromises.lookup()` does not necessarily have anything to do with the DNS
       * protocol. The implementation uses an operating system facility that can
-      * associate names with addresses, and vice versa. This implementation can have
+      * associate names with addresses and vice versa. This implementation can have
       * subtle but important consequences on the behavior of any Node.js program. Please
       * take some time to consult the `Implementation considerations section` before
       * using `dnsPromises.lookup()`.
@@ -387,7 +435,7 @@ object anon {
       * Example usage:
       *
       * ```js
-      * const dns = require('dns');
+      * const dns = require('node:dns');
       * const dnsPromises = dns.promises;
       * const options = {
       *   family: 6,
@@ -423,7 +471,7 @@ object anon {
       * On error, the `Promise` is rejected with an `Error` object, where `err.code`is the error code.
       *
       * ```js
-      * const dnsPromises = require('dns').promises;
+      * const dnsPromises = require('node:dns').promises;
       * dnsPromises.lookupService('127.0.0.1', 22).then((result) => {
       *   console.log(result.hostname, result.service);
       *   // Prints: localhost ssh
@@ -525,7 +573,7 @@ object anon {
     def resolveMx(hostname: String): js.Promise[js.Array[MxRecord]] = js.native
     
     /**
-      * Uses the DNS protocol to resolve regular expression based records (`NAPTR`records) for the `hostname`. On success, the `Promise` is resolved with an array
+      * Uses the DNS protocol to resolve regular expression-based records (`NAPTR`records) for the `hostname`. On success, the `Promise` is resolved with an array
       * of objects with the following properties:
       *
       * * `flags`
@@ -661,7 +709,7 @@ object anon {
       * * `ipv4first`: sets default `verbatim` `false`.
       * * `verbatim`: sets default `verbatim` `true`.
       *
-      * The default is `ipv4first` and `dnsPromises.setDefaultResultOrder()` have
+      * The default is `verbatim` and `dnsPromises.setDefaultResultOrder()` have
       * higher priority than `--dns-result-order`. When using `worker threads`,`dnsPromises.setDefaultResultOrder()` from the main thread won't affect the
       * default dns orders in workers.
       * @since v16.4.0, v14.18.0

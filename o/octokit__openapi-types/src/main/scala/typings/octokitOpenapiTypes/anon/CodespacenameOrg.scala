@@ -6,14 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CodespacenameOrg extends StObject {
   
-  /** The name of the codespace. */
   var codespace_name: String
   
-  /** The organization name. The name is not case sensitive. */
   @JSName("org")
   var org_ : String
   
-  /** The handle for the GitHub user account. */
   var username: String
 }
 object CodespacenameOrg {

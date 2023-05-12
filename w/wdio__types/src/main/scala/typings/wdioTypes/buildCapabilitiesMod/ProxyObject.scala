@@ -14,6 +14,8 @@ trait ProxyObject extends StObject {
   
   var httpProxyPort: js.UndefOr[Double] = js.undefined
   
+  var noProxy: js.UndefOr[js.Array[String]] = js.undefined
+  
   var proxyAutoconfigUrl: js.UndefOr[String] = js.undefined
   
   var proxyType: js.UndefOr[ProxyTypes] = js.undefined
@@ -57,6 +59,12 @@ object ProxyObject {
     inline def setHttpProxyPortUndefined: Self = StObject.set(x, "httpProxyPort", js.undefined)
     
     inline def setHttpProxyUndefined: Self = StObject.set(x, "httpProxy", js.undefined)
+    
+    inline def setNoProxy(value: js.Array[String]): Self = StObject.set(x, "noProxy", value.asInstanceOf[js.Any])
+    
+    inline def setNoProxyUndefined: Self = StObject.set(x, "noProxy", js.undefined)
+    
+    inline def setNoProxyVarargs(value: String*): Self = StObject.set(x, "noProxy", js.Array(value*))
     
     inline def setProxyAutoconfigUrl(value: String): Self = StObject.set(x, "proxyAutoconfigUrl", value.asInstanceOf[js.Any])
     

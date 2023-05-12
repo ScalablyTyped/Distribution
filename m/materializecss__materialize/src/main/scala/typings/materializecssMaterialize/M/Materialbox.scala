@@ -10,37 +10,37 @@ trait Materialbox
      with Component[MaterialboxOptions] {
   
   /**
-    * Caption if specified
+    * Caption if specified.
     */
   var caption: String
   
   /**
-    * Close materialbox
+    * Close materialbox.
     */
   def close(): Unit
   
   /**
-    * If the materialbox is no longer being animated
+    * If the materialbox is no longer being animated.
     */
   var doneAnimating: Boolean
   
   /**
-    * Open materialbox
+    * Open materialbox.
     */
   def open(): Unit
   
   /**
-    * Original height of image
+    * Original height of image.
     */
   var originalHeight: Double
   
   /**
-    * Original width of image
+    * Original width of image.
     */
   var originalWidth: Double
   
   /**
-    * If the materialbox overlay is showing
+    * If the materialbox overlay is showing.
     */
   var overlayActive: Boolean
 }

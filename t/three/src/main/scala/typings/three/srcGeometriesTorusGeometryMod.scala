@@ -2,6 +2,7 @@ package typings.three
 
 import typings.three.anon.Arc
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,13 +12,14 @@ object srcGeometriesTorusGeometryMod {
   @JSImport("three/src/geometries/TorusGeometry", "TorusGeometry")
   @js.native
   /**
-    * @param [radius=1]
-    * @param [tube=0.4]
-    * @param [radialSegments=8]
-    * @param [tubularSegments=6]
-    * @param [arc=Math.PI * 2]
+    * Create a new instance of {@link TorusGeometry}
+    * @param radius Radius of the torus, from the center of the torus to the center of the tube. Expects a `Float`. Default `1`.
+    * @param tube Radius of the tube. Expects a `Float`. Default `0.4`.
+    * @param radialSegments Expects a `Integer`.Default is `12`.
+    * @param tubularSegments Expects a `Integer`. Default `48`.
+    * @param arc Central angle. Expects a `Float`. Default `Math.PI * 2`
     */
-  open class TorusGeometry () extends BufferGeometry {
+  open class TorusGeometry () extends BufferGeometry[NormalBufferAttributes] {
     def this(radius: Double) = this()
     def this(radius: Double, tube: Double) = this()
     def this(radius: Unit, tube: Double) = this()
@@ -50,7 +52,19 @@ object srcGeometriesTorusGeometryMod {
     def this(radius: Unit, tube: Unit, radialSegments: Unit, tubularSegments: Double, arc: Double) = this()
     def this(radius: Unit, tube: Unit, radialSegments: Unit, tubularSegments: Unit, arc: Double) = this()
     
-    var parameters: Arc = js.native
+    /**
+      * An object with a property for each of the constructor parameters.
+      * @remarks Any modification after instantiation does not change the geometry.
+      */
+    val parameters: Arc = js.native
+    
+    /**
+      * A Read-only _string_ to check if `this` object type.
+      * @remarks Sub-classes will update this value.
+      * @defaultValue `TorusGeometry`
+      */
+    @JSName("type")
+    val type_TorusGeometry: String | typings.three.threeStrings.TorusGeometry = js.native
   }
   /* static members */
   object TorusGeometry {
@@ -59,6 +73,7 @@ object srcGeometriesTorusGeometryMod {
     @js.native
     val ^ : js.Any = js.native
     
+    /** @internal */
     inline def fromJSON(data: Any): TorusGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[TorusGeometry]
   }
 }

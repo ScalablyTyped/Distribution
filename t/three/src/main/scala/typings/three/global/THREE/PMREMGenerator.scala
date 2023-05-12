@@ -8,5 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class PMREMGenerator protected ()
   extends typings.three.mod.PMREMGenerator {
+  /**
+    * This constructor creates a new PMREMGenerator.
+    * @param renderer
+    */
   def this(renderer: typings.three.srcRenderersWebGLRendererMod.WebGLRenderer) = this()
 }

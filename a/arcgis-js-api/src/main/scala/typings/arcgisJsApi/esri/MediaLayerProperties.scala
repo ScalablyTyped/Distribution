@@ -25,7 +25,7 @@ trait MediaLayerProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#source)
     */
   var source: js.UndefOr[
-    LocalMediaElementSourceProperties | (CollectionProperties[ImageElementPropertiestyp | VideoElementPropertiestyp]) | (js.Array[ImageElementPropertiestyp | VideoElementPropertiestyp])
+    ImageElementPropertiestyp | VideoElementPropertiestyp | LocalMediaElementSourceProperties | (CollectionProperties[ImageElementPropertiestyp | VideoElementPropertiestyp]) | (js.Array[ImageElementPropertiestyp | VideoElementPropertiestyp])
   ] = js.undefined
   
   /**
@@ -50,7 +50,7 @@ object MediaLayerProperties {
     inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
     inline def setSource(
-      value: LocalMediaElementSourceProperties | (CollectionProperties[ImageElementPropertiestyp | VideoElementPropertiestyp]) | (js.Array[ImageElementPropertiestyp | VideoElementPropertiestyp])
+      value: ImageElementPropertiestyp | VideoElementPropertiestyp | LocalMediaElementSourceProperties | (CollectionProperties[ImageElementPropertiestyp | VideoElementPropertiestyp]) | (js.Array[ImageElementPropertiestyp | VideoElementPropertiestyp])
     ): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)

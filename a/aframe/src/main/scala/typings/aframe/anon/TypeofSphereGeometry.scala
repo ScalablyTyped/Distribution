@@ -20,5 +20,6 @@ trait TypeofSphereGeometry
       SphereGeometry
     ] {
   
-  def fromJSON(data: Any): typings.three.srcGeometriesSphereGeometryMod.SphereGeometry = js.native
+  /** @internal */
+  def fromJSON(data: js.Object): typings.three.srcGeometriesSphereGeometryMod.SphereGeometry = js.native
 }

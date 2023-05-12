@@ -1,6 +1,7 @@
 package typings.itWs
 
 import typings.itStreamTypes.mod.Sink
+import typings.itStreamTypes.mod.Source
 import typings.itWs.distSrcClientMod.WebSocketOptions
 import typings.itWs.distSrcDuplexMod.DuplexWebSocket
 import typings.itWs.distSrcDuplexMod.DuplexWebSocketOptions
@@ -28,7 +29,7 @@ object mod {
   inline def duplex(socket: WebSocket): DuplexWebSocket = ^.asInstanceOf[js.Dynamic].applyDynamic("duplex")(socket.asInstanceOf[js.Any]).asInstanceOf[DuplexWebSocket]
   inline def duplex(socket: WebSocket, options: DuplexWebSocketOptions): DuplexWebSocket = (^.asInstanceOf[js.Dynamic].applyDynamic("duplex")(socket.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DuplexWebSocket]
   
-  inline def sink(socket: WebSocket, options: SinkOptions): Sink[js.typedarray.Uint8Array, js.Promise[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sink")(socket.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Sink[js.typedarray.Uint8Array, js.Promise[Unit]]]
+  inline def sink(socket: WebSocket, options: SinkOptions): Sink[Source[js.typedarray.Uint8Array], js.Promise[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sink")(socket.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Sink[Source[js.typedarray.Uint8Array], js.Promise[Unit]]]
   
   inline def source(socket: WebSocket): ConnectedSource = ^.asInstanceOf[js.Dynamic].applyDynamic("source")(socket.asInstanceOf[js.Any]).asInstanceOf[ConnectedSource]
 }

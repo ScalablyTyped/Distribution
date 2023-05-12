@@ -120,6 +120,18 @@ object libEsmComponentsTabsTabsMod {
     var defaultSelectedTabId: js.UndefOr[TabId] = js.undefined
     
     /**
+      * Whether to make the tabs list fill the height of its parent.
+      *
+      * This has no effect when `vertical={true}`.
+      * This is not recommended when tab panels are defined within this component subtree, as the height computation will
+      * include the panel height, which is usually not intended. Instead, it works well if the panels are rendered
+      * elsewhere in the React tree.
+      *
+      * @default false
+      */
+    var fill: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Unique identifier for this `Tabs` container. This will be combined with the `id` of each
       * `Tab` child to generate ARIA accessibility attributes. IDs are required and should be
       * unique on the page to support server-side rendering.
@@ -190,6 +202,10 @@ object libEsmComponentsTabsTabsMod {
       inline def setDefaultSelectedTabId(value: TabId): Self = StObject.set(x, "defaultSelectedTabId", value.asInstanceOf[js.Any])
       
       inline def setDefaultSelectedTabIdUndefined: Self = StObject.set(x, "defaultSelectedTabId", js.undefined)
+      
+      inline def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
       inline def setId(value: TabId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

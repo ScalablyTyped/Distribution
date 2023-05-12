@@ -248,4 +248,93 @@ object sapUiSupportLibraryMod {
          with SystemPresets
     /* "undefined" */ val Accessibility: typings.openui5.sapUiSupportLibraryMod.SystemPresets.Accessibility & String = js.native
   }
+  
+  trait RuleConfiguration extends StObject {
+    
+    var async: Boolean
+    
+    var audiences: js.Array[
+        Audiences | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Audiences * / any */ String)
+      ]
+    
+    var categories: js.Array[
+        Categories | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Categories * / any */ String)
+      ]
+    
+    var check: String
+    
+    var description: String
+    
+    var id: String
+    
+    var minversion: String
+    
+    var resolution: String
+    
+    var resolutionurls: String
+    
+    var title: String
+  }
+  object RuleConfiguration {
+    
+    inline def apply(
+      async: Boolean,
+      audiences: js.Array[
+          Audiences | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Audiences * / any */ String)
+        ],
+      categories: js.Array[
+          Categories | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Categories * / any */ String)
+        ],
+      check: String,
+      description: String,
+      id: String,
+      minversion: String,
+      resolution: String,
+      resolutionurls: String,
+      title: String
+    ): RuleConfiguration = {
+      val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], audiences = audiences.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], check = check.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], minversion = minversion.asInstanceOf[js.Any], resolution = resolution.asInstanceOf[js.Any], resolutionurls = resolutionurls.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RuleConfiguration]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RuleConfiguration] (val x: Self) extends AnyVal {
+      
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      
+      inline def setAudiences(
+        value: js.Array[
+              Audiences | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Audiences * / any */ String)
+            ]
+      ): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
+      
+      inline def setAudiencesVarargs(
+        value: (Audiences | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Audiences * / any */ String))*
+      ): Self = StObject.set(x, "audiences", js.Array(value*))
+      
+      inline def setCategories(
+        value: js.Array[
+              Categories | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Categories * / any */ String)
+            ]
+      ): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+      
+      inline def setCategoriesVarargs(
+        value: (Categories | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Categories * / any */ String))*
+      ): Self = StObject.set(x, "categories", js.Array(value*))
+      
+      inline def setCheck(value: String): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
+      
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setMinversion(value: String): Self = StObject.set(x, "minversion", value.asInstanceOf[js.Any])
+      
+      inline def setResolution(value: String): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+      
+      inline def setResolutionurls(value: String): Self = StObject.set(x, "resolutionurls", value.asInstanceOf[js.Any])
+      
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    }
+  }
 }

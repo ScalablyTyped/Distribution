@@ -337,6 +337,7 @@ object esTreeMod {
     
     def offsetActiveKey(offset: Double): Unit = js.native
     
+    def onActiveChange(): Unit = js.native
     def onActiveChange(newActiveKey: Key): Unit = js.native
     
     var onBlur: FocusEventHandler[HTMLDivElement] = js.native
@@ -426,7 +427,7 @@ object esTreeMod {
   
   trait TreeProps[TreeDataType /* <: BasicDataNode */] extends StObject {
     
-    var activeKey: js.UndefOr[Key] = js.undefined
+    var activeKey: js.UndefOr[Key | Null] = js.undefined
     
     var allowDrop: js.UndefOr[AllowDrop[TreeDataType]] = js.undefined
     
@@ -589,6 +590,8 @@ object esTreeMod {
     implicit open class MutableBuilder[Self <: TreeProps[?], TreeDataType /* <: BasicDataNode */] (val x: Self & TreeProps[TreeDataType]) extends AnyVal {
       
       inline def setActiveKey(value: Key): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
+      
+      inline def setActiveKeyNull: Self = StObject.set(x, "activeKey", null)
       
       inline def setActiveKeyUndefined: Self = StObject.set(x, "activeKey", js.undefined)
       
@@ -870,7 +873,7 @@ object esTreeMod {
   
   trait TreeState[TreeDataType /* <: BasicDataNode */] extends StObject {
     
-    var activeKey: Key
+    var activeKey: Key | Null
     
     var checkedKeys: js.Array[Key]
     
@@ -921,7 +924,6 @@ object esTreeMod {
   object TreeState {
     
     inline def apply[TreeDataType /* <: BasicDataNode */](
-      activeKey: Key,
       checkedKeys: js.Array[Key],
       dragChildrenKeys: js.Array[Key],
       draggingNodeKey: typings.react.mod.Key,
@@ -939,7 +941,7 @@ object esTreeMod {
       selectedKeys: js.Array[Key],
       treeData: js.Array[TreeDataType]
     ): TreeState[TreeDataType] = {
-      val __obj = js.Dynamic.literal(activeKey = activeKey.asInstanceOf[js.Any], checkedKeys = checkedKeys.asInstanceOf[js.Any], dragChildrenKeys = dragChildrenKeys.asInstanceOf[js.Any], draggingNodeKey = draggingNodeKey.asInstanceOf[js.Any], dropAllowed = dropAllowed.asInstanceOf[js.Any], expandedKeys = expandedKeys.asInstanceOf[js.Any], fieldNames = fieldNames.asInstanceOf[js.Any], flattenNodes = flattenNodes.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any], halfCheckedKeys = halfCheckedKeys.asInstanceOf[js.Any], keyEntities = keyEntities.asInstanceOf[js.Any], listChanging = listChanging.asInstanceOf[js.Any], loadedKeys = loadedKeys.asInstanceOf[js.Any], loadingKeys = loadingKeys.asInstanceOf[js.Any], prevProps = prevProps.asInstanceOf[js.Any], selectedKeys = selectedKeys.asInstanceOf[js.Any], treeData = treeData.asInstanceOf[js.Any], dragOverNodeKey = null, dropContainerKey = null, dropLevelOffset = null, dropPosition = null, dropTargetKey = null, dropTargetPos = null, indent = null)
+      val __obj = js.Dynamic.literal(checkedKeys = checkedKeys.asInstanceOf[js.Any], dragChildrenKeys = dragChildrenKeys.asInstanceOf[js.Any], draggingNodeKey = draggingNodeKey.asInstanceOf[js.Any], dropAllowed = dropAllowed.asInstanceOf[js.Any], expandedKeys = expandedKeys.asInstanceOf[js.Any], fieldNames = fieldNames.asInstanceOf[js.Any], flattenNodes = flattenNodes.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any], halfCheckedKeys = halfCheckedKeys.asInstanceOf[js.Any], keyEntities = keyEntities.asInstanceOf[js.Any], listChanging = listChanging.asInstanceOf[js.Any], loadedKeys = loadedKeys.asInstanceOf[js.Any], loadingKeys = loadingKeys.asInstanceOf[js.Any], prevProps = prevProps.asInstanceOf[js.Any], selectedKeys = selectedKeys.asInstanceOf[js.Any], treeData = treeData.asInstanceOf[js.Any], activeKey = null, dragOverNodeKey = null, dropContainerKey = null, dropLevelOffset = null, dropPosition = null, dropTargetKey = null, dropTargetPos = null, indent = null)
       __obj.asInstanceOf[TreeState[TreeDataType]]
     }
     
@@ -947,6 +949,8 @@ object esTreeMod {
     implicit open class MutableBuilder[Self <: TreeState[?], TreeDataType /* <: BasicDataNode */] (val x: Self & TreeState[TreeDataType]) extends AnyVal {
       
       inline def setActiveKey(value: Key): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
+      
+      inline def setActiveKeyNull: Self = StObject.set(x, "activeKey", null)
       
       inline def setCheckedKeys(value: js.Array[Key]): Self = StObject.set(x, "checkedKeys", value.asInstanceOf[js.Any])
       

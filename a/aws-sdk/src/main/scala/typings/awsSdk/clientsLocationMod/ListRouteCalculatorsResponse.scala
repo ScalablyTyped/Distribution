@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListRouteCalculatorsResponse extends StObject {
   
   /**
-    * Lists the route calculator resources that exist in your AWS account
+    * Lists the route calculator resources that exist in your Amazon Web Services account
     */
   var Entries: ListRouteCalculatorsResponseEntryList
   

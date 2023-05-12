@@ -21,6 +21,9 @@ type BlockList = js.Array[Block]
   - typings.awsSdk.awsSdkStrings.TITLE
   - typings.awsSdk.awsSdkStrings.QUERY
   - typings.awsSdk.awsSdkStrings.QUERY_RESULT
+  - typings.awsSdk.awsSdkStrings.SIGNATURE
+  - typings.awsSdk.awsSdkStrings.TABLE_TITLE
+  - typings.awsSdk.awsSdkStrings.TABLE_FOOTER
   - java.lang.String
 */
 type BlockType = _BlockType | java.lang.String
@@ -36,12 +39,22 @@ type ContentClassifier = _ContentClassifier | java.lang.String
 
 type ContentClassifiers = js.Array[ContentClassifier]
 
+type DetectedSignatureList = js.Array[DetectedSignature]
+
+type DocumentGroupList = js.Array[DocumentGroup]
+
 type DocumentPages = js.Array[Document]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.KEY
   - typings.awsSdk.awsSdkStrings.VALUE
   - typings.awsSdk.awsSdkStrings.COLUMN_HEADER
+  - typings.awsSdk.awsSdkStrings.TABLE_TITLE
+  - typings.awsSdk.awsSdkStrings.TABLE_FOOTER
+  - typings.awsSdk.awsSdkStrings.TABLE_SECTION_TITLE
+  - typings.awsSdk.awsSdkStrings.TABLE_SUMMARY
+  - typings.awsSdk.awsSdkStrings.STRUCTURED_TABLE
+  - typings.awsSdk.awsSdkStrings.SEMI_STRUCTURED_TABLE
   - java.lang.String
 */
 type EntityType = _EntityType | java.lang.String
@@ -56,10 +69,13 @@ type ExpenseFieldList = js.Array[ExpenseField]
 
 type ExpenseGroupPropertyList = js.Array[ExpenseGroupProperty]
 
+type ExtractionList = js.Array[Extraction]
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TABLES
   - typings.awsSdk.awsSdkStrings.FORMS
   - typings.awsSdk.awsSdkStrings.QUERIES
+  - typings.awsSdk.awsSdkStrings.SIGNATURES
   - java.lang.String
 */
 type FeatureType = _FeatureType | java.lang.String
@@ -103,6 +119,12 @@ type JobTag = java.lang.String
 
 type KMSKeyId = java.lang.String
 
+type LendingDetectionList = js.Array[LendingDetection]
+
+type LendingFieldList = js.Array[LendingField]
+
+type LendingResultList = js.Array[LendingResult]
+
 type LineItemGroupList = js.Array[LineItemGroup]
 
 type LineItemList = js.Array[LineItemFields]
@@ -111,6 +133,8 @@ type MaxResults = Double
 
 type NonEmptyString = java.lang.String
 
+type PageList = js.Array[UInteger]
+
 type Pages = js.Array[UInteger]
 
 type PaginationToken = java.lang.String
@@ -118,6 +142,8 @@ type PaginationToken = java.lang.String
 type Percent = Double
 
 type Polygon = js.Array[Point]
+
+type PredictionList = js.Array[Prediction]
 
 type Queries = js.Array[Query]
 
@@ -136,6 +162,9 @@ type RelationshipList = js.Array[Relationship]
   - typings.awsSdk.awsSdkStrings.MERGED_CELL
   - typings.awsSdk.awsSdkStrings.TITLE
   - typings.awsSdk.awsSdkStrings.ANSWER
+  - typings.awsSdk.awsSdkStrings.TABLE
+  - typings.awsSdk.awsSdkStrings.TABLE_TITLE
+  - typings.awsSdk.awsSdkStrings.TABLE_FOOTER
   - java.lang.String
 */
 type RelationshipType = _RelationshipType | java.lang.String
@@ -157,6 +186,10 @@ type SNSTopicArn = java.lang.String
 */
 type SelectionStatus = _SelectionStatus | java.lang.String
 
+type SignatureDetectionList = js.Array[SignatureDetection]
+
+type SplitDocumentList = js.Array[SplitDocument]
+
 type StatusMessage = java.lang.String
 
 type String = java.lang.String
@@ -171,6 +204,10 @@ type StringList = js.Array[String]
 type TextType = _TextType | java.lang.String
 
 type UInteger = Double
+
+type UndetectedDocumentTypeList = js.Array[NonEmptyString]
+
+type UndetectedSignatureList = js.Array[UndetectedSignature]
 
 type ValueType = DATE | java.lang.String
 

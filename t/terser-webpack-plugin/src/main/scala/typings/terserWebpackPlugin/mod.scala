@@ -2,9 +2,6 @@ package typings.terserWebpackPlugin
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.jestWorker.mod.Worker
-import typings.std.AddEventListenerOptions
-import typings.std.EventListenerOptions
-import typings.std.EventListenerOrEventListenerObject
 import typings.terser.mod.ECMA
 import typings.terserWebpackPlugin.anon.Col
 import typings.terserWebpackPlugin.anon.Implementation
@@ -14,117 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /** @typedef {import("schema-utils/declarations/validate").Schema} Schema */
-  /** @typedef {import("webpack").Compiler} Compiler */
-  /** @typedef {import("webpack").Compilation} Compilation */
-  /** @typedef {import("webpack").WebpackError} WebpackError */
-  /** @typedef {import("webpack").Asset} Asset */
-  /** @typedef {import("./utils.js").TerserECMA} TerserECMA */
-  /** @typedef {import("./utils.js").TerserOptions} TerserOptions */
-  /** @typedef {import("jest-worker").Worker} JestWorker */
-  /** @typedef {import("@jridgewell/trace-mapping").SourceMapInput} SourceMapInput */
-  /** @typedef {RegExp | string} Rule */
-  /** @typedef {Rule[] | Rule} Rules */
-  /**
-    * @callback ExtractCommentsFunction
-    * @param {any} astNode
-    * @param {{ value: string, type: 'comment1' | 'comment2' | 'comment3' | 'comment4', pos: number, line: number, col: number }} comment
-    * @returns {boolean}
-    */
-  /**
-    * @typedef {boolean | 'all' | 'some' | RegExp | ExtractCommentsFunction} ExtractCommentsCondition
-    */
-  /**
-    * @typedef {string | ((fileData: any) => string)} ExtractCommentsFilename
-    */
-  /**
-    * @typedef {boolean | string | ((commentsFile: string) => string)} ExtractCommentsBanner
-    */
-  /**
-    * @typedef {Object} ExtractCommentsObject
-    * @property {ExtractCommentsCondition} [condition]
-    * @property {ExtractCommentsFilename} [filename]
-    * @property {ExtractCommentsBanner} [banner]
-    */
-  /**
-    * @typedef {ExtractCommentsCondition | ExtractCommentsObject} ExtractCommentsOptions
-    */
-  /**
-    * @typedef {Object} MinimizedResult
-    * @property {string} code
-    * @property {SourceMapInput} [map]
-    * @property {Array<Error | string>} [errors]
-    * @property {Array<Error | string>} [warnings]
-    * @property {Array<string>} [extractedComments]
-    */
-  /**
-    * @typedef {{ [file: string]: string }} Input
-    */
-  /**
-    * @typedef {{ [key: string]: any }} CustomOptions
-    */
-  /**
-    * @template T
-    * @typedef {T extends infer U ? U : CustomOptions} InferDefaultType
-    */
-  /**
-    * @typedef {Object} PredefinedOptions
-    * @property {boolean} [module]
-    * @property {TerserECMA} [ecma]
-    */
-  /**
-    * @template T
-    * @typedef {PredefinedOptions & InferDefaultType<T>} MinimizerOptions
-    */
-  /**
-    * @template T
-    * @callback BasicMinimizerImplementation
-    * @param {Input} input
-    * @param {SourceMapInput | undefined} sourceMap
-    * @param {MinimizerOptions<T>} minifyOptions
-    * @param {ExtractCommentsOptions | undefined} extractComments
-    * @returns {Promise<MinimizedResult>}
-    */
-  /**
-    * @typedef {object} MinimizeFunctionHelpers
-    * @property {() => string | undefined} [getMinimizerVersion]
-    */
-  /**
-    * @template T
-    * @typedef {BasicMinimizerImplementation<T> & MinimizeFunctionHelpers} MinimizerImplementation
-    */
-  /**
-    * @template T
-    * @typedef {Object} InternalOptions
-    * @property {string} name
-    * @property {string} input
-    * @property {SourceMapInput | undefined} inputSourceMap
-    * @property {ExtractCommentsOptions | undefined} extractComments
-    * @property {{ implementation: MinimizerImplementation<T>, options: MinimizerOptions<T> }} minimizer
-    */
-  /**
-    * @template T
-    * @typedef {JestWorker & { transform: (options: string) => MinimizedResult, minify: (options: InternalOptions<T>) => MinimizedResult }} MinimizerWorker
-    */
-  /**
-    * @typedef {undefined | boolean | number} Parallel
-    */
-  /**
-    * @typedef {Object} BasePluginOptions
-    * @property {Rules} [test]
-    * @property {Rules} [include]
-    * @property {Rules} [exclude]
-    * @property {ExtractCommentsOptions} [extractComments]
-    * @property {Parallel} [parallel]
-    */
-  /**
-    * @template T
-    * @typedef {T extends TerserOptions ? { minify?: MinimizerImplementation<T> | undefined, terserOptions?: MinimizerOptions<T> | undefined } : { minify: MinimizerImplementation<T>, terserOptions?: MinimizerOptions<T> | undefined }} DefinedDefaultMinimizerAndOptions
-    */
-  /**
-    * @template T
-    * @typedef {BasePluginOptions & { minimizer: { implementation: MinimizerImplementation<T>, options: MinimizerOptions<T> } }} InternalPluginOptions
-    */
   /**
     * @template [T=TerserOptions]
     */
@@ -371,7 +257,7 @@ object mod {
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: Rule*): Self = StObject.set(x, "exclude", js.Array(value*))
+      inline def setExcludeVarargs(value: (js.RegExp | String)*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setExtractComments(value: ExtractCommentsOptions): Self = StObject.set(x, "extractComments", value.asInstanceOf[js.Any])
       
@@ -383,7 +269,7 @@ object mod {
       
       inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      inline def setIncludeVarargs(value: Rule*): Self = StObject.set(x, "include", js.Array(value*))
+      inline def setIncludeVarargs(value: (js.RegExp | String)*): Self = StObject.set(x, "include", js.Array(value*))
       
       inline def setParallel(value: Parallel): Self = StObject.set(x, "parallel", value.asInstanceOf[js.Any])
       
@@ -393,7 +279,7 @@ object mod {
       
       inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
       
-      inline def setTestVarargs(value: Rule*): Self = StObject.set(x, "test", js.Array(value*))
+      inline def setTestVarargs(value: (js.RegExp | String)*): Self = StObject.set(x, "test", js.Array(value*))
     }
   }
   
@@ -640,25 +526,9 @@ object mod {
   type MinimizerOptions[T] = PredefinedOptions & InferDefaultType[T]
   
   @js.native
-  trait MinimizerWorker[T]
-    extends StObject
-       with typings.std.Worker {
-    
-    /* InferMemberOverrides */
-    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
-    /* InferMemberOverrides */
-    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
-    /* InferMemberOverrides */
-    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+  trait MinimizerWorker[T] extends Worker {
     
     def minify(options: InternalOptions[T]): MinimizedResult = js.native
-    
-    /* InferMemberOverrides */
-    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
-    /* InferMemberOverrides */
-    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
-    /* InferMemberOverrides */
-    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
     
     def transform(options: String): MinimizedResult = js.native
   }
@@ -691,9 +561,7 @@ object mod {
     }
   }
   
-  type Rule = js.RegExp | String
-  
-  type Rules = js.Array[Rule] | Rule
+  type Rules = String | (js.Array[js.RegExp | String]) | js.RegExp
   
   type Schema = typings.schemaUtils.declarationsValidateMod.Schema
   
@@ -703,117 +571,6 @@ object mod {
   
   type TerserOptions = typings.terserWebpackPlugin.typesUtilsMod.TerserOptions
   
-  /** @typedef {import("schema-utils/declarations/validate").Schema} Schema */
-  /** @typedef {import("webpack").Compiler} Compiler */
-  /** @typedef {import("webpack").Compilation} Compilation */
-  /** @typedef {import("webpack").WebpackError} WebpackError */
-  /** @typedef {import("webpack").Asset} Asset */
-  /** @typedef {import("./utils.js").TerserECMA} TerserECMA */
-  /** @typedef {import("./utils.js").TerserOptions} TerserOptions */
-  /** @typedef {import("jest-worker").Worker} JestWorker */
-  /** @typedef {import("@jridgewell/trace-mapping").SourceMapInput} SourceMapInput */
-  /** @typedef {RegExp | string} Rule */
-  /** @typedef {Rule[] | Rule} Rules */
-  /**
-    * @callback ExtractCommentsFunction
-    * @param {any} astNode
-    * @param {{ value: string, type: 'comment1' | 'comment2' | 'comment3' | 'comment4', pos: number, line: number, col: number }} comment
-    * @returns {boolean}
-    */
-  /**
-    * @typedef {boolean | 'all' | 'some' | RegExp | ExtractCommentsFunction} ExtractCommentsCondition
-    */
-  /**
-    * @typedef {string | ((fileData: any) => string)} ExtractCommentsFilename
-    */
-  /**
-    * @typedef {boolean | string | ((commentsFile: string) => string)} ExtractCommentsBanner
-    */
-  /**
-    * @typedef {Object} ExtractCommentsObject
-    * @property {ExtractCommentsCondition} [condition]
-    * @property {ExtractCommentsFilename} [filename]
-    * @property {ExtractCommentsBanner} [banner]
-    */
-  /**
-    * @typedef {ExtractCommentsCondition | ExtractCommentsObject} ExtractCommentsOptions
-    */
-  /**
-    * @typedef {Object} MinimizedResult
-    * @property {string} code
-    * @property {SourceMapInput} [map]
-    * @property {Array<Error | string>} [errors]
-    * @property {Array<Error | string>} [warnings]
-    * @property {Array<string>} [extractedComments]
-    */
-  /**
-    * @typedef {{ [file: string]: string }} Input
-    */
-  /**
-    * @typedef {{ [key: string]: any }} CustomOptions
-    */
-  /**
-    * @template T
-    * @typedef {T extends infer U ? U : CustomOptions} InferDefaultType
-    */
-  /**
-    * @typedef {Object} PredefinedOptions
-    * @property {boolean} [module]
-    * @property {TerserECMA} [ecma]
-    */
-  /**
-    * @template T
-    * @typedef {PredefinedOptions & InferDefaultType<T>} MinimizerOptions
-    */
-  /**
-    * @template T
-    * @callback BasicMinimizerImplementation
-    * @param {Input} input
-    * @param {SourceMapInput | undefined} sourceMap
-    * @param {MinimizerOptions<T>} minifyOptions
-    * @param {ExtractCommentsOptions | undefined} extractComments
-    * @returns {Promise<MinimizedResult>}
-    */
-  /**
-    * @typedef {object} MinimizeFunctionHelpers
-    * @property {() => string | undefined} [getMinimizerVersion]
-    */
-  /**
-    * @template T
-    * @typedef {BasicMinimizerImplementation<T> & MinimizeFunctionHelpers} MinimizerImplementation
-    */
-  /**
-    * @template T
-    * @typedef {Object} InternalOptions
-    * @property {string} name
-    * @property {string} input
-    * @property {SourceMapInput | undefined} inputSourceMap
-    * @property {ExtractCommentsOptions | undefined} extractComments
-    * @property {{ implementation: MinimizerImplementation<T>, options: MinimizerOptions<T> }} minimizer
-    */
-  /**
-    * @template T
-    * @typedef {JestWorker & { transform: (options: string) => MinimizedResult, minify: (options: InternalOptions<T>) => MinimizedResult }} MinimizerWorker
-    */
-  /**
-    * @typedef {undefined | boolean | number} Parallel
-    */
-  /**
-    * @typedef {Object} BasePluginOptions
-    * @property {Rules} [test]
-    * @property {Rules} [include]
-    * @property {Rules} [exclude]
-    * @property {ExtractCommentsOptions} [extractComments]
-    * @property {Parallel} [parallel]
-    */
-  /**
-    * @template T
-    * @typedef {T extends TerserOptions ? { minify?: MinimizerImplementation<T> | undefined, terserOptions?: MinimizerOptions<T> | undefined } : { minify: MinimizerImplementation<T>, terserOptions?: MinimizerOptions<T> | undefined }} DefinedDefaultMinimizerAndOptions
-    */
-  /**
-    * @template T
-    * @typedef {BasePluginOptions & { minimizer: { implementation: MinimizerImplementation<T>, options: MinimizerOptions<T> } }} InternalPluginOptions
-    */
   /**
     * @template [T=TerserOptions]
     */
@@ -859,6 +616,8 @@ object mod {
       inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
+  
+  type TraceMap = typings.jridgewellTraceMapping.mod.TraceMap
   
   type WebpackError = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.WebpackError */ Any
   

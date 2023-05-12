@@ -12,8 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * throughout the user's session up until completion of the assistant.
   *
   * @return {nlobjAssistant}
-  * @constructor
-  *
   * @since 2009.2
   */
 @js.native

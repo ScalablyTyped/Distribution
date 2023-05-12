@@ -1,12 +1,9 @@
 package typings.cypress.Cypress
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.cypress.anon.OmitCoreConfigOptionsinde
 import typings.cypress.anon.OpenMode
 import typings.cypress.cypressBooleans.`false`
 import typings.cypress.cypressStrings.bundled
-import typings.cypress.cypressStrings.off
-import typings.cypress.cypressStrings.on
 import typings.cypress.cypressStrings.system
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -64,7 +61,7 @@ trait ResolvedConfigOptions[ComponentDevServerOpts] extends StObject {
     * Override default config options for E2E Testing runner.
     * @default {}
     */
-  var e2e: OmitCoreConfigOptionsinde
+  var e2e: EndToEndConfigOptions
   
   /**
     * Any values to be set as [environment variables](https://docs.cypress.io/guides/guides/environment-variables.html)
@@ -73,7 +70,7 @@ trait ResolvedConfigOptions[ComponentDevServerOpts] extends StObject {
   var env: StringDictionary[Any]
   
   /**
-    * A String or Array of glob patterns used to ignore test files that would otherwise be shown in your list of tests. Cypress uses minimatch with the options: {dot: true, matchBase: true}. We suggest using http://globtester.com to test what files would match.
+    * A String or Array of glob patterns used to ignore test files that would otherwise be shown in your list of tests. Cypress uses minimatch with the options: {dot: true, matchBase: true}. We suggest using a tool to test what files would match.
     * @default "*.hot-update.js"
     */
   var excludeSpecPattern: String | js.Array[String]
@@ -96,6 +93,12 @@ trait ResolvedConfigOptions[ComponentDevServerOpts] extends StObject {
   var experimentalInteractiveRunEvents: Boolean
   
   /**
+    * Enables support for improved memory management within Chromium-based browsers.
+    * @default false
+    */
+  var experimentalMemoryManagement: Boolean
+  
+  /**
     * Whether Cypress will search for and replace obstructive code in third party .js or .html files.
     * NOTE: Setting this flag to true removes Subresource Integrity (SRI).
     * Please see https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity.
@@ -106,10 +109,15 @@ trait ResolvedConfigOptions[ComponentDevServerOpts] extends StObject {
   var experimentalModifyObstructiveThirdPartyCode: Boolean
   
   /**
-    * Enables cross-origin and improved session support, including the `cy.origin` and `cy.session` commands. See https://on.cypress.io/origin and https://on.cypress.io/session.
-    * @default false
+    * Disables setting document.domain to the applications super domain on injection.
+    * This experiment is to be used for sites that do not work with setting document.domain
+    * due to cross-origin issues. Enabling this option no longer allows for default subdomain
+    * navigations, and will require the use of cy.origin(). This option takes an array of
+    * strings/string globs.
+    * @see https://developer.mozilla.org/en-US/docs/Web/API/Document/domain
+    * @default null
     */
-  var experimentalSessionAndOrigin: Boolean
+  var experimentalSkipDomainInjection: js.Array[String] | Null
   
   /**
     * Enables AST-based JS/HTML rewriting. This may fix issues caused by the existing regex-based JS/HTML replacement algorithm.
@@ -291,8 +299,7 @@ trait ResolvedConfigOptions[ComponentDevServerOpts] extends StObject {
   var taskTimeout: Double
   
   /**
-    * The test isolation ensures a clean browser context between tests. This option is only available when
-    * `experimentalSessionAndOrigin=true`.
+    * The test isolation ensures a clean browser context between tests.
     *
     * Cypress will always reset/clear aliases, intercepts, clock, and viewport before each test
     * to ensure a clean test slate; i.e. this configuration only impacts the browser context.
@@ -300,23 +307,23 @@ trait ResolvedConfigOptions[ComponentDevServerOpts] extends StObject {
     * Note: the [`cy.session()`](https://on.cypress.io/session) command will inherent this value to determine whether
     * or not the page is cleared when the command executes. This command is only available in end-to-end testing.
     *
-    *  - on - The page is cleared before each test. Cookies, local storage and session storage in all domains are cleared
+    *  - true - The page is cleared before each test. Cookies, local storage and session storage in all domains are cleared
     *         before each test. The `cy.session()` command will also clear the page and current browser context when creating
     *         or restoring the browser session.
-    *  - off - The current browser state will persist between tests. The page does not clear before the test and cookies, local
+    *  - false - The current browser state will persist between tests. The page does not clear before the test and cookies, local
     *          storage and session storage will be available in the next test. The `cy.session()` command will only clear the
     *          current browser context when creating or restoring the browser session - the current page will not clear.
     *
     * Tradeoffs:
     *      Turning test isolation off may improve performance of end-to-end tests, however, previous tests could impact the
     *      browser state of the next test and cause inconsistency when using .only(). Be mindful to write isolated tests when
-    *      test isolation is off. If a test in the suite impacts the state of other tests and it were to fail, you could see
+    *      test isolation is false. If a test in the suite impacts the state of other tests and it were to fail, you could see
     *      misleading errors in later tests which makes debugging clunky. See the [documentation](https://on.cypress.io/test-isolation)
     *      for more information.
     *
-    * @default null, when experimentalSessionAndOrigin=false. The default is 'on' when experimentalSessionAndOrigin=true.
+    * @default true
     */
-  var testIsolation: Null | on | off
+  var testIsolation: Boolean
   
   /**
     * Whether Cypress will trash assets within the screenshotsFolder and videosFolder before headless test runs.
@@ -342,7 +349,7 @@ trait ResolvedConfigOptions[ComponentDevServerOpts] extends StObject {
   var videoCompression: Double | `false`
   
   /**
-    * Whether Cypress will upload the video to the Dashboard even if all tests are passing. This applies only when recording your runs to the Dashboard. Turn this off if you'd like the video uploaded only when there are failing tests.
+    * Whether Cypress will upload the video to Cypress Cloud even if all tests are passing. This applies only when recording your runs to Cypress Cloud. Turn this off if you'd like the video uploaded only when there are failing tests.
     * @default true
     */
   var videoUploadOnPasses: Boolean
@@ -386,14 +393,14 @@ object ResolvedConfigOptions {
     component: ComponentConfigOptions[ComponentDevServerOpts],
     defaultCommandTimeout: Double,
     downloadsFolder: String,
-    e2e: OmitCoreConfigOptionsinde,
+    e2e: EndToEndConfigOptions,
     env: StringDictionary[Any],
     excludeSpecPattern: String | js.Array[String],
     execTimeout: Double,
     experimentalFetchPolyfill: Boolean,
     experimentalInteractiveRunEvents: Boolean,
+    experimentalMemoryManagement: Boolean,
     experimentalModifyObstructiveThirdPartyCode: Boolean,
-    experimentalSessionAndOrigin: Boolean,
     experimentalSourceRewriting: Boolean,
     experimentalStudio: Boolean,
     experimentalWebKitSupport: Boolean,
@@ -421,6 +428,7 @@ object ResolvedConfigOptions {
     supportFile: String | `false`,
     supportFolder: String,
     taskTimeout: Double,
+    testIsolation: Boolean,
     trashAssetsBeforeRuns: Boolean,
     video: Boolean,
     videoCompression: Double | `false`,
@@ -431,7 +439,7 @@ object ResolvedConfigOptions {
     waitForAnimations: Boolean,
     watchForFileChanges: Boolean
   ): ResolvedConfigOptions[ComponentDevServerOpts] = {
-    val __obj = js.Dynamic.literal(animationDistanceThreshold = animationDistanceThreshold.asInstanceOf[js.Any], chromeWebSecurity = chromeWebSecurity.asInstanceOf[js.Any], clientCertificates = clientCertificates.asInstanceOf[js.Any], component = component.asInstanceOf[js.Any], defaultCommandTimeout = defaultCommandTimeout.asInstanceOf[js.Any], downloadsFolder = downloadsFolder.asInstanceOf[js.Any], e2e = e2e.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], excludeSpecPattern = excludeSpecPattern.asInstanceOf[js.Any], execTimeout = execTimeout.asInstanceOf[js.Any], experimentalFetchPolyfill = experimentalFetchPolyfill.asInstanceOf[js.Any], experimentalInteractiveRunEvents = experimentalInteractiveRunEvents.asInstanceOf[js.Any], experimentalModifyObstructiveThirdPartyCode = experimentalModifyObstructiveThirdPartyCode.asInstanceOf[js.Any], experimentalSessionAndOrigin = experimentalSessionAndOrigin.asInstanceOf[js.Any], experimentalSourceRewriting = experimentalSourceRewriting.asInstanceOf[js.Any], experimentalStudio = experimentalStudio.asInstanceOf[js.Any], experimentalWebKitSupport = experimentalWebKitSupport.asInstanceOf[js.Any], fileServerFolder = fileServerFolder.asInstanceOf[js.Any], fixturesFolder = fixturesFolder.asInstanceOf[js.Any], includeShadowDom = includeShadowDom.asInstanceOf[js.Any], indexHtmlFile = indexHtmlFile.asInstanceOf[js.Any], modifyObstructiveCode = modifyObstructiveCode.asInstanceOf[js.Any], nodeVersion = nodeVersion.asInstanceOf[js.Any], numTestsKeptInMemory = numTestsKeptInMemory.asInstanceOf[js.Any], pageLoadTimeout = pageLoadTimeout.asInstanceOf[js.Any], redirectionLimit = redirectionLimit.asInstanceOf[js.Any], reporter = reporter.asInstanceOf[js.Any], reporterOptions = reporterOptions.asInstanceOf[js.Any], requestTimeout = requestTimeout.asInstanceOf[js.Any], resolvedNodePath = resolvedNodePath.asInstanceOf[js.Any], resolvedNodeVersion = resolvedNodeVersion.asInstanceOf[js.Any], responseTimeout = responseTimeout.asInstanceOf[js.Any], screenshotOnRunFailure = screenshotOnRunFailure.asInstanceOf[js.Any], screenshotsFolder = screenshotsFolder.asInstanceOf[js.Any], scrollBehavior = scrollBehavior.asInstanceOf[js.Any], setupNodeEvents = js.Any.fromFunction2(setupNodeEvents), slowTestThreshold = slowTestThreshold.asInstanceOf[js.Any], specPattern = specPattern.asInstanceOf[js.Any], supportFile = supportFile.asInstanceOf[js.Any], supportFolder = supportFolder.asInstanceOf[js.Any], taskTimeout = taskTimeout.asInstanceOf[js.Any], trashAssetsBeforeRuns = trashAssetsBeforeRuns.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], videoCompression = videoCompression.asInstanceOf[js.Any], videoUploadOnPasses = videoUploadOnPasses.asInstanceOf[js.Any], videosFolder = videosFolder.asInstanceOf[js.Any], viewportHeight = viewportHeight.asInstanceOf[js.Any], viewportWidth = viewportWidth.asInstanceOf[js.Any], waitForAnimations = waitForAnimations.asInstanceOf[js.Any], watchForFileChanges = watchForFileChanges.asInstanceOf[js.Any], baseUrl = null, blockHosts = null, port = null, projectId = null, retries = null, testIsolation = null, userAgent = null)
+    val __obj = js.Dynamic.literal(animationDistanceThreshold = animationDistanceThreshold.asInstanceOf[js.Any], chromeWebSecurity = chromeWebSecurity.asInstanceOf[js.Any], clientCertificates = clientCertificates.asInstanceOf[js.Any], component = component.asInstanceOf[js.Any], defaultCommandTimeout = defaultCommandTimeout.asInstanceOf[js.Any], downloadsFolder = downloadsFolder.asInstanceOf[js.Any], e2e = e2e.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], excludeSpecPattern = excludeSpecPattern.asInstanceOf[js.Any], execTimeout = execTimeout.asInstanceOf[js.Any], experimentalFetchPolyfill = experimentalFetchPolyfill.asInstanceOf[js.Any], experimentalInteractiveRunEvents = experimentalInteractiveRunEvents.asInstanceOf[js.Any], experimentalMemoryManagement = experimentalMemoryManagement.asInstanceOf[js.Any], experimentalModifyObstructiveThirdPartyCode = experimentalModifyObstructiveThirdPartyCode.asInstanceOf[js.Any], experimentalSourceRewriting = experimentalSourceRewriting.asInstanceOf[js.Any], experimentalStudio = experimentalStudio.asInstanceOf[js.Any], experimentalWebKitSupport = experimentalWebKitSupport.asInstanceOf[js.Any], fileServerFolder = fileServerFolder.asInstanceOf[js.Any], fixturesFolder = fixturesFolder.asInstanceOf[js.Any], includeShadowDom = includeShadowDom.asInstanceOf[js.Any], indexHtmlFile = indexHtmlFile.asInstanceOf[js.Any], modifyObstructiveCode = modifyObstructiveCode.asInstanceOf[js.Any], nodeVersion = nodeVersion.asInstanceOf[js.Any], numTestsKeptInMemory = numTestsKeptInMemory.asInstanceOf[js.Any], pageLoadTimeout = pageLoadTimeout.asInstanceOf[js.Any], redirectionLimit = redirectionLimit.asInstanceOf[js.Any], reporter = reporter.asInstanceOf[js.Any], reporterOptions = reporterOptions.asInstanceOf[js.Any], requestTimeout = requestTimeout.asInstanceOf[js.Any], resolvedNodePath = resolvedNodePath.asInstanceOf[js.Any], resolvedNodeVersion = resolvedNodeVersion.asInstanceOf[js.Any], responseTimeout = responseTimeout.asInstanceOf[js.Any], screenshotOnRunFailure = screenshotOnRunFailure.asInstanceOf[js.Any], screenshotsFolder = screenshotsFolder.asInstanceOf[js.Any], scrollBehavior = scrollBehavior.asInstanceOf[js.Any], setupNodeEvents = js.Any.fromFunction2(setupNodeEvents), slowTestThreshold = slowTestThreshold.asInstanceOf[js.Any], specPattern = specPattern.asInstanceOf[js.Any], supportFile = supportFile.asInstanceOf[js.Any], supportFolder = supportFolder.asInstanceOf[js.Any], taskTimeout = taskTimeout.asInstanceOf[js.Any], testIsolation = testIsolation.asInstanceOf[js.Any], trashAssetsBeforeRuns = trashAssetsBeforeRuns.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], videoCompression = videoCompression.asInstanceOf[js.Any], videoUploadOnPasses = videoUploadOnPasses.asInstanceOf[js.Any], videosFolder = videosFolder.asInstanceOf[js.Any], viewportHeight = viewportHeight.asInstanceOf[js.Any], viewportWidth = viewportWidth.asInstanceOf[js.Any], waitForAnimations = waitForAnimations.asInstanceOf[js.Any], watchForFileChanges = watchForFileChanges.asInstanceOf[js.Any], baseUrl = null, blockHosts = null, experimentalSkipDomainInjection = null, port = null, projectId = null, retries = null, userAgent = null)
     __obj.asInstanceOf[ResolvedConfigOptions[ComponentDevServerOpts]]
   }
   
@@ -462,7 +470,7 @@ object ResolvedConfigOptions {
     
     inline def setDownloadsFolder(value: String): Self = StObject.set(x, "downloadsFolder", value.asInstanceOf[js.Any])
     
-    inline def setE2e(value: OmitCoreConfigOptionsinde): Self = StObject.set(x, "e2e", value.asInstanceOf[js.Any])
+    inline def setE2e(value: EndToEndConfigOptions): Self = StObject.set(x, "e2e", value.asInstanceOf[js.Any])
     
     inline def setEnv(value: StringDictionary[Any]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
@@ -476,9 +484,15 @@ object ResolvedConfigOptions {
     
     inline def setExperimentalInteractiveRunEvents(value: Boolean): Self = StObject.set(x, "experimentalInteractiveRunEvents", value.asInstanceOf[js.Any])
     
+    inline def setExperimentalMemoryManagement(value: Boolean): Self = StObject.set(x, "experimentalMemoryManagement", value.asInstanceOf[js.Any])
+    
     inline def setExperimentalModifyObstructiveThirdPartyCode(value: Boolean): Self = StObject.set(x, "experimentalModifyObstructiveThirdPartyCode", value.asInstanceOf[js.Any])
     
-    inline def setExperimentalSessionAndOrigin(value: Boolean): Self = StObject.set(x, "experimentalSessionAndOrigin", value.asInstanceOf[js.Any])
+    inline def setExperimentalSkipDomainInjection(value: js.Array[String]): Self = StObject.set(x, "experimentalSkipDomainInjection", value.asInstanceOf[js.Any])
+    
+    inline def setExperimentalSkipDomainInjectionNull: Self = StObject.set(x, "experimentalSkipDomainInjection", null)
+    
+    inline def setExperimentalSkipDomainInjectionVarargs(value: String*): Self = StObject.set(x, "experimentalSkipDomainInjection", js.Array(value*))
     
     inline def setExperimentalSourceRewriting(value: Boolean): Self = StObject.set(x, "experimentalSourceRewriting", value.asInstanceOf[js.Any])
     
@@ -550,9 +564,7 @@ object ResolvedConfigOptions {
     
     inline def setTaskTimeout(value: Double): Self = StObject.set(x, "taskTimeout", value.asInstanceOf[js.Any])
     
-    inline def setTestIsolation(value: on | off): Self = StObject.set(x, "testIsolation", value.asInstanceOf[js.Any])
-    
-    inline def setTestIsolationNull: Self = StObject.set(x, "testIsolation", null)
+    inline def setTestIsolation(value: Boolean): Self = StObject.set(x, "testIsolation", value.asInstanceOf[js.Any])
     
     inline def setTrashAssetsBeforeRuns(value: Boolean): Self = StObject.set(x, "trashAssetsBeforeRuns", value.asInstanceOf[js.Any])
     

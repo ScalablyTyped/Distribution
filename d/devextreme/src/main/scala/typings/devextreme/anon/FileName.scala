@@ -26,8 +26,6 @@ trait FileName extends StObject {
   
   var onFileSaving: js.UndefOr[js.Function] = js.undefined
   
-  var proxyUrl: js.UndefOr[String] = js.undefined
-  
   var svgToCanvas: js.UndefOr[js.Function] = js.undefined
   
   var verticalAlignment: js.UndefOr[VerticalAlignment] = js.undefined
@@ -77,10 +75,6 @@ object FileName {
     inline def setOnFileSaving(value: js.Function): Self = StObject.set(x, "onFileSaving", value.asInstanceOf[js.Any])
     
     inline def setOnFileSavingUndefined: Self = StObject.set(x, "onFileSaving", js.undefined)
-    
-    inline def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
-    
-    inline def setProxyUrlUndefined: Self = StObject.set(x, "proxyUrl", js.undefined)
     
     inline def setSvgToCanvas(value: js.Function): Self = StObject.set(x, "svgToCanvas", value.asInstanceOf[js.Any])
     

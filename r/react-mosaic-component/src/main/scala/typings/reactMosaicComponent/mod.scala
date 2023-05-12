@@ -67,7 +67,7 @@ object mod {
     def this(props: MosaicButtonProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: MosaicButtonProps, context: Any) = this()
   }
@@ -91,7 +91,7 @@ object mod {
     def this(props: MosaicProps[T]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: MosaicProps[T], context: Any) = this()
   }
@@ -119,7 +119,7 @@ object mod {
     def this(props: MosaicWindowProps[T]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: MosaicWindowProps[T], context: Any) = this()
   }
@@ -135,7 +135,7 @@ object mod {
     def this(props: MosaicProps[T]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: MosaicProps[T], context: Any) = this()
   }
@@ -161,7 +161,7 @@ object mod {
     def this(props: MosaicZeroStateProps[T]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: MosaicZeroStateProps[T], context: Any) = this()
   }
@@ -185,7 +185,7 @@ object mod {
     def this(props: MosaicButtonProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: MosaicButtonProps, context: Any) = this()
   }
@@ -209,7 +209,7 @@ object mod {
     def this(props: MosaicButtonProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: MosaicButtonProps, context: Any) = this()
   }
@@ -233,7 +233,7 @@ object mod {
     def this(props: js.Object) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: js.Object, context: Any) = this()
   }
@@ -245,7 +245,7 @@ object mod {
     def this(props: MosaicButtonProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: MosaicButtonProps, context: Any) = this()
   }

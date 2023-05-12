@@ -37,11 +37,6 @@ trait PlotPsarParamsOptions extends StObject {
     */
   var maxAccelerationFactor: js.UndefOr[Double] = js.undefined
   
-  /**
-    * (Highstock) The base period for indicator calculations. This is the
-    * number of data points which are taken into account for the indicator
-    * calculations.
-    */
   var period: js.UndefOr[String] = js.undefined
 }
 object PlotPsarParamsOptions {

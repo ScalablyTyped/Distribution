@@ -1,6 +1,6 @@
 package typings.awsSdkCredentialProviderIni
 
-import typings.awsSdkTypes.distTypesCredentialsMod.Credentials
+import typings.awsSdkTypes.distTypesIdentityAwsCredentialIdentityMod.AwsCredentialIdentity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ object distTypesResolveStaticCredentialsMod {
   
   inline def isStaticCredsProfile(arg: Any): /* is @aws-sdk/credential-provider-ini.@aws-sdk/credential-provider-ini/dist-types/resolveStaticCredentials.StaticCredsProfile */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStaticCredsProfile")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-sdk/credential-provider-ini.@aws-sdk/credential-provider-ini/dist-types/resolveStaticCredentials.StaticCredsProfile */ Boolean]
   
-  inline def resolveStaticCredentials(profile: StaticCredsProfile): js.Promise[Credentials] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveStaticCredentials")(profile.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Credentials]]
+  inline def resolveStaticCredentials(profile: StaticCredsProfile): js.Promise[AwsCredentialIdentity] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveStaticCredentials")(profile.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AwsCredentialIdentity]]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped {[ P in string ]: string | undefined} */ trait StaticCredsProfile extends StObject {

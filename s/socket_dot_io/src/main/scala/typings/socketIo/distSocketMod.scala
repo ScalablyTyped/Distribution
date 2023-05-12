@@ -6,15 +6,23 @@ import typings.node.httpMod.IncomingMessage
 import typings.socketIo.distBroadcastOperatorMod.BroadcastOperator
 import typings.socketIo.distClientMod.Client
 import typings.socketIo.distNamespaceMod.Namespace
+import typings.socketIo.distTypedEventsMod.AllButLast
+import typings.socketIo.distTypedEventsMod.DecorateAcknowledgements
+import typings.socketIo.distTypedEventsMod.DecorateAcknowledgementsWithMultipleResponses
+import typings.socketIo.distTypedEventsMod.EventNames
 import typings.socketIo.distTypedEventsMod.EventParams
 import typings.socketIo.distTypedEventsMod.EventsMap
+import typings.socketIo.distTypedEventsMod.FirstArg
+import typings.socketIo.distTypedEventsMod.Last
 import typings.socketIo.distTypedEventsMod.StrictEventEmitter
 import typings.socketIo.socketIoStrings.message
 import typings.socketIoAdapter.mod.Room
+import typings.socketIoAdapter.mod.Session
 import typings.socketIoAdapter.mod.SocketId
 import typings.socketIoParser.mod.Packet
 import typings.std.Partial
 import typings.std.ReadonlySet
+import typings.std.Record
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -40,7 +48,13 @@ object distSocketMod {
     def this(
       nsp: Namespace[ListenEvents, EmitEvents, ServerSideEvents, Any],
       client: Client[ListenEvents, EmitEvents, ServerSideEvents, Any],
-      auth: js.Object
+      auth: Record[String, Any]
+    ) = this()
+    def this(
+      nsp: Namespace[ListenEvents, EmitEvents, ServerSideEvents, Any],
+      client: Client[ListenEvents, EmitEvents, ServerSideEvents, Any],
+      auth: Record[String, Any],
+      previousSession: Session
     ) = this()
     
     /* private */ var _anyListeners: Any = js.native
@@ -67,11 +81,13 @@ object distSocketMod {
       * Called upon closing. Called by `Client`.
       *
       * @param {String} reason
+      * @param description
       * @throw {Error} optional error object
       *
       * @private
       */
     def _onclose(reason: DisconnectReason): js.UndefOr[this.type] = js.native
+    def _onclose(reason: DisconnectReason, description: Any): js.UndefOr[this.type] = js.native
     
     /**
       * Called by `Namespace` upon successful
@@ -122,7 +138,7 @@ object distSocketMod {
       *
       * @return a new {@link BroadcastOperator} instance for chaining
       */
-    def broadcast: BroadcastOperator[EmitEvents, SocketData] = js.native
+    def broadcast: BroadcastOperator[DecorateAcknowledgementsWithMultipleResponses[EmitEvents], SocketData] = js.native
     
     /**
       * Builds the `handshake` BC object
@@ -212,7 +228,30 @@ object distSocketMod {
       */
     /* private */ var dispatch: Any = js.native
     
-    def except(room: js.Array[Room]): BroadcastOperator[EmitEvents, SocketData] = js.native
+    /**
+      * Emits an event and waits for an acknowledgement
+      *
+      * @example
+      * io.on("connection", async (socket) => {
+      *   // without timeout
+      *   const response = await socket.emitWithAck("hello", "world");
+      *
+      *   // with a specific timeout
+      *   try {
+      *     const response = await socket.timeout(1000).emitWithAck("hello", "world");
+      *   } catch (err) {
+      *     // the client did not acknowledge the event in the given delay
+      *   }
+      * });
+      *
+      * @return a Promise that will be fulfilled when the client acknowledges the event
+      */
+    def emitWithAck[Ev /* <: EventNames[EmitEvents] */](
+      ev: Ev,
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type AllButLast<EventParams<EmitEvents, Ev>> is not an array type */ args: AllButLast[EventParams[EmitEvents, Ev]]
+    ): js.Promise[FirstArg[Last[EventParams[EmitEvents, Ev]]]] = js.native
+    
+    def except(room: js.Array[Room]): BroadcastOperator[DecorateAcknowledgementsWithMultipleResponses[EmitEvents], SocketData] = js.native
     /**
       * Excludes a room when broadcasting.
       *
@@ -232,7 +271,7 @@ object distSocketMod {
       * @param room - a room, or an array of rooms
       * @return a new {@link BroadcastOperator} instance for chaining
       */
-    def except(room: Room): BroadcastOperator[EmitEvents, SocketData] = js.native
+    def except(room: Room): BroadcastOperator[DecorateAcknowledgementsWithMultipleResponses[EmitEvents], SocketData] = js.native
     
     /* private */ var flags: Any = js.native
     
@@ -248,7 +287,7 @@ object distSocketMod {
       */
     val id: SocketId = js.native
     
-    def in(room: js.Array[Room]): BroadcastOperator[EmitEvents, SocketData] = js.native
+    def in(room: js.Array[Room]): BroadcastOperator[DecorateAcknowledgementsWithMultipleResponses[EmitEvents], SocketData] = js.native
     /**
       * Targets a room when broadcasting. Similar to `to()`, but might feel clearer in some cases:
       *
@@ -261,7 +300,7 @@ object distSocketMod {
       * @param room - a room, or an array of rooms
       * @return a new {@link BroadcastOperator} instance for chaining
       */
-    def in(room: Room): BroadcastOperator[EmitEvents, SocketData] = js.native
+    def in(room: Room): BroadcastOperator[DecorateAcknowledgementsWithMultipleResponses[EmitEvents], SocketData] = js.native
     
     def join(rooms: js.Array[Room]): js.Promise[Unit] | Unit = js.native
     /**
@@ -328,7 +367,7 @@ object distSocketMod {
       *
       * @return a new {@link BroadcastOperator} instance for chaining
       */
-    def local: BroadcastOperator[EmitEvents, SocketData] = js.native
+    def local: BroadcastOperator[DecorateAcknowledgementsWithMultipleResponses[EmitEvents], SocketData] = js.native
     
     /* private */ var newBroadcastOperator: Any = js.native
     
@@ -453,6 +492,13 @@ object distSocketMod {
     /* private */ var packet: Any = js.native
     
     /**
+      * The session ID, which must not be shared (unlike {@link id}).
+      *
+      * @private
+      */
+    /* private */ val pid: Any = js.native
+    
+    /**
       * Adds a listener that will be fired when any event is received. The event name is passed as the first argument to
       * the callback. The listener is added to the beginning of the listeners array.
       *
@@ -474,6 +520,12 @@ object distSocketMod {
       * @param listener
       */
     def prependAnyOutgoing(listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    
+    /**
+      * Whether the connection state was recovered after a temporary disconnection. In that case, any missed packets will
+      * be transmitted to the client, the data attribute and the rooms will be restored.
+      */
+    val recovered: Boolean = js.native
     
     /**
       * @private
@@ -547,9 +599,9 @@ object distSocketMod {
       *
       * @returns self
       */
-    def timeout(timeout: Double): this.type = js.native
+    def timeout(timeout: Double): Socket[ListenEvents, DecorateAcknowledgements[EmitEvents], ServerSideEvents, SocketData] = js.native
     
-    def to(room: js.Array[Room]): BroadcastOperator[EmitEvents, SocketData] = js.native
+    def to(room: js.Array[Room]): BroadcastOperator[DecorateAcknowledgementsWithMultipleResponses[EmitEvents], SocketData] = js.native
     /**
       * Targets a room when broadcasting.
       *
@@ -571,7 +623,7 @@ object distSocketMod {
       * @param room - a room, or an array of rooms
       * @return a new {@link BroadcastOperator} instance for chaining
       */
-    def to(room: Room): BroadcastOperator[EmitEvents, SocketData] = js.native
+    def to(room: Room): BroadcastOperator[DecorateAcknowledgementsWithMultipleResponses[EmitEvents], SocketData] = js.native
     
     /**
       * Sets up socket middleware.
@@ -763,33 +815,15 @@ object distSocketMod {
     }
   }
   
+  @js.native
   trait SocketReservedEventsMap extends StObject {
     
-    def disconnect(reason: DisconnectReason): Unit
+    def disconnect(reason: DisconnectReason): Unit = js.native
+    def disconnect(reason: DisconnectReason, description: Any): Unit = js.native
     
-    def disconnecting(reason: DisconnectReason): Unit
+    def disconnecting(reason: DisconnectReason): Unit = js.native
+    def disconnecting(reason: DisconnectReason, description: Any): Unit = js.native
     
-    def error(err: js.Error): Unit
-  }
-  object SocketReservedEventsMap {
-    
-    inline def apply(
-      disconnect: DisconnectReason => Unit,
-      disconnecting: DisconnectReason => Unit,
-      error: js.Error => Unit
-    ): SocketReservedEventsMap = {
-      val __obj = js.Dynamic.literal(disconnect = js.Any.fromFunction1(disconnect), disconnecting = js.Any.fromFunction1(disconnecting), error = js.Any.fromFunction1(error))
-      __obj.asInstanceOf[SocketReservedEventsMap]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: SocketReservedEventsMap] (val x: Self) extends AnyVal {
-      
-      inline def setDisconnect(value: DisconnectReason => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction1(value))
-      
-      inline def setDisconnecting(value: DisconnectReason => Unit): Self = StObject.set(x, "disconnecting", js.Any.fromFunction1(value))
-      
-      inline def setError(value: js.Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
-    }
+    def error(err: js.Error): Unit = js.native
   }
 }

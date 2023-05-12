@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-spring__animated
 
-Typings are for version 9.5.5
+Typings are for version 9.7.2
 
 ## Library description:
 Animated component props for React

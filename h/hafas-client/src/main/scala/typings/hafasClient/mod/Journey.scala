@@ -5,10 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A journey is a computed set of directions to get from A to B at a specific time.
-  * It would typically be the result of a route planning algorithm.
-  */
 trait Journey extends StObject {
   
   var cycle: js.UndefOr[Cycle] = js.undefined

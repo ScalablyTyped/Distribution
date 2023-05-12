@@ -13,22 +13,7 @@ object typesSrcSharedMessageHandlerMod {
   open class MessageHandler protected () extends StObject {
     def this(sourceName: Any, targetName: Any, comObj: Any) = this()
     
-    /**
-      * @private
-      */
-    /* private */ var _createStreamSink: Any = js.native
-    
-    /**
-      * @private
-      */
-    /* private */ var _deleteStreamController: Any = js.native
-    
     def _onComObjOnMessage(event: Any): Unit = js.native
-    
-    /**
-      * @private
-      */
-    /* private */ var _processStreamMessage: Any = js.native
     
     var actionHandler: Any = js.native
     
@@ -41,6 +26,8 @@ object typesSrcSharedMessageHandlerMod {
     def destroy(): Unit = js.native
     
     def on(actionName: Any, handler: Any): Unit = js.native
+    
+    /* private */ var `private`: Any = js.native
     
     /**
       * Sends a message to the comObj to invoke the action with the supplied data.

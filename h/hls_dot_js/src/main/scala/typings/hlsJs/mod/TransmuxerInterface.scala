@@ -11,6 +11,8 @@ trait TransmuxerInterface extends StObject {
   
   def destroy(): Unit = js.native
   
+  var error: js.Error | Null = js.native
+  
   def flush(chunkMeta: ChunkMetadata): Unit = js.native
   
   /* private */ var frag: Any = js.native
@@ -56,7 +58,7 @@ trait TransmuxerInterface extends StObject {
     duration: Double,
     accurateTimeOffset: Boolean,
     chunkMeta: ChunkMetadata,
-    defaultInitPTS: Double
+    defaultInitPTS: RationalTimestamp
   ): Unit = js.native
   def push(
     data: js.typedarray.ArrayBuffer,
@@ -79,7 +81,7 @@ trait TransmuxerInterface extends StObject {
     duration: Double,
     accurateTimeOffset: Boolean,
     chunkMeta: ChunkMetadata,
-    defaultInitPTS: Double
+    defaultInitPTS: RationalTimestamp
   ): Unit = js.native
   def push(
     data: js.typedarray.ArrayBuffer,
@@ -102,7 +104,7 @@ trait TransmuxerInterface extends StObject {
     duration: Double,
     accurateTimeOffset: Boolean,
     chunkMeta: ChunkMetadata,
-    defaultInitPTS: Double
+    defaultInitPTS: RationalTimestamp
   ): Unit = js.native
   def push(
     data: js.typedarray.ArrayBuffer,
@@ -125,7 +127,7 @@ trait TransmuxerInterface extends StObject {
     duration: Double,
     accurateTimeOffset: Boolean,
     chunkMeta: ChunkMetadata,
-    defaultInitPTS: Double
+    defaultInitPTS: RationalTimestamp
   ): Unit = js.native
   def push(
     data: js.typedarray.ArrayBuffer,
@@ -148,7 +150,7 @@ trait TransmuxerInterface extends StObject {
     duration: Double,
     accurateTimeOffset: Boolean,
     chunkMeta: ChunkMetadata,
-    defaultInitPTS: Double
+    defaultInitPTS: RationalTimestamp
   ): Unit = js.native
   def push(
     data: js.typedarray.ArrayBuffer,
@@ -171,7 +173,7 @@ trait TransmuxerInterface extends StObject {
     duration: Double,
     accurateTimeOffset: Boolean,
     chunkMeta: ChunkMetadata,
-    defaultInitPTS: Double
+    defaultInitPTS: RationalTimestamp
   ): Unit = js.native
   def push(
     data: js.typedarray.ArrayBuffer,
@@ -194,7 +196,7 @@ trait TransmuxerInterface extends StObject {
     duration: Double,
     accurateTimeOffset: Boolean,
     chunkMeta: ChunkMetadata,
-    defaultInitPTS: Double
+    defaultInitPTS: RationalTimestamp
   ): Unit = js.native
   def push(
     data: js.typedarray.ArrayBuffer,
@@ -217,7 +219,7 @@ trait TransmuxerInterface extends StObject {
     duration: Double,
     accurateTimeOffset: Boolean,
     chunkMeta: ChunkMetadata,
-    defaultInitPTS: Double
+    defaultInitPTS: RationalTimestamp
   ): Unit = js.native
   def push(
     data: js.typedarray.ArrayBuffer,
@@ -240,7 +242,7 @@ trait TransmuxerInterface extends StObject {
     duration: Double,
     accurateTimeOffset: Boolean,
     chunkMeta: ChunkMetadata,
-    defaultInitPTS: Double
+    defaultInitPTS: RationalTimestamp
   ): Unit = js.native
   def push(
     data: js.typedarray.ArrayBuffer,
@@ -263,7 +265,7 @@ trait TransmuxerInterface extends StObject {
     duration: Double,
     accurateTimeOffset: Boolean,
     chunkMeta: ChunkMetadata,
-    defaultInitPTS: Double
+    defaultInitPTS: RationalTimestamp
   ): Unit = js.native
   def push(
     data: js.typedarray.ArrayBuffer,
@@ -286,7 +288,7 @@ trait TransmuxerInterface extends StObject {
     duration: Double,
     accurateTimeOffset: Boolean,
     chunkMeta: ChunkMetadata,
-    defaultInitPTS: Double
+    defaultInitPTS: RationalTimestamp
   ): Unit = js.native
   def push(
     data: js.typedarray.ArrayBuffer,
@@ -309,7 +311,7 @@ trait TransmuxerInterface extends StObject {
     duration: Double,
     accurateTimeOffset: Boolean,
     chunkMeta: ChunkMetadata,
-    defaultInitPTS: Double
+    defaultInitPTS: RationalTimestamp
   ): Unit = js.native
   def push(
     data: js.typedarray.ArrayBuffer,
@@ -332,7 +334,7 @@ trait TransmuxerInterface extends StObject {
     duration: Double,
     accurateTimeOffset: Boolean,
     chunkMeta: ChunkMetadata,
-    defaultInitPTS: Double
+    defaultInitPTS: RationalTimestamp
   ): Unit = js.native
   def push(
     data: js.typedarray.ArrayBuffer,
@@ -355,7 +357,7 @@ trait TransmuxerInterface extends StObject {
     duration: Double,
     accurateTimeOffset: Boolean,
     chunkMeta: ChunkMetadata,
-    defaultInitPTS: Double
+    defaultInitPTS: RationalTimestamp
   ): Unit = js.native
   def push(
     data: js.typedarray.ArrayBuffer,
@@ -378,7 +380,7 @@ trait TransmuxerInterface extends StObject {
     duration: Double,
     accurateTimeOffset: Boolean,
     chunkMeta: ChunkMetadata,
-    defaultInitPTS: Double
+    defaultInitPTS: RationalTimestamp
   ): Unit = js.native
   def push(
     data: js.typedarray.ArrayBuffer,
@@ -401,12 +403,16 @@ trait TransmuxerInterface extends StObject {
     duration: Double,
     accurateTimeOffset: Boolean,
     chunkMeta: ChunkMetadata,
-    defaultInitPTS: Double
+    defaultInitPTS: RationalTimestamp
   ): Unit = js.native
+  
+  def resetWorker(): Unit = js.native
   
   /* private */ var transmuxer: Any = js.native
   
+  /* private */ var transmuxerError: Any = js.native
+  
   /* private */ var useWorker: Any = js.native
   
-  /* private */ var worker: Any = js.native
+  /* private */ var workerContext: Any = js.native
 }

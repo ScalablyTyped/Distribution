@@ -6,19 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PullrequestSelf extends StObject {
   
-  var html: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['link'] */ js.Any
+  var html: HrefString
   
-  var pull_request: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['link'] */ js.Any
+  var pull_request: HrefString
   
-  var self: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['link'] */ js.Any
+  var self: HrefString
 }
 object PullrequestSelf {
   
-  inline def apply(
-    html: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['link'] */ js.Any,
-    pull_request: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['link'] */ js.Any,
-    self: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['link'] */ js.Any
-  ): PullrequestSelf = {
+  inline def apply(html: HrefString, pull_request: HrefString, self: HrefString): PullrequestSelf = {
     val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any], pull_request = pull_request.asInstanceOf[js.Any], self = self.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullrequestSelf]
   }
@@ -26,16 +22,10 @@ object PullrequestSelf {
   @scala.inline
   implicit open class MutableBuilder[Self <: PullrequestSelf] (val x: Self) extends AnyVal {
     
-    inline def setHtml(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['link'] */ js.Any
-    ): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: HrefString): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    inline def setPull_request(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['link'] */ js.Any
-    ): Self = StObject.set(x, "pull_request", value.asInstanceOf[js.Any])
+    inline def setPull_request(value: HrefString): Self = StObject.set(x, "pull_request", value.asInstanceOf[js.Any])
     
-    inline def setSelf(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['link'] */ js.Any
-    ): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
+    inline def setSelf(value: HrefString): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
   }
 }

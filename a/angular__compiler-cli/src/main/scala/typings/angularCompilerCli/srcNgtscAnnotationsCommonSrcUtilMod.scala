@@ -8,14 +8,13 @@ import typings.angularCompiler.mod.R3Reference
 import typings.angularCompiler.mod.Statement
 import typings.angularCompilerCli.angularCompilerCliStrings.dynamic
 import typings.angularCompilerCli.angularCompilerCliStrings.target
+import typings.angularCompilerCli.anon.ClassDeclarationDeclarati
 import typings.angularCompilerCli.srcNgtscImportsMod.ModuleResolver
 import typings.angularCompilerCli.srcNgtscImportsMod.Reference
 import typings.angularCompilerCli.srcNgtscImportsMod.ReferenceEmitter
 import typings.angularCompilerCli.srcNgtscImportsSrcEmitterMod.ImportedFile
 import typings.angularCompilerCli.srcNgtscPartialEvaluatorMod.PartialEvaluator
 import typings.angularCompilerCli.srcNgtscPartialEvaluatorSrcInterfaceMod.ForeignFunctionResolver
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.Decorator
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ImportedTypeValueReference
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.LocalTypeValueReference
@@ -52,7 +51,9 @@ object srcNgtscAnnotationsCommonSrcUtilMod {
   
   inline def getOriginNodeForDiagnostics(expr: Expression, container: Expression): Expression = (^.asInstanceOf[js.Dynamic].applyDynamic("getOriginNodeForDiagnostics")(expr.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Expression]
   
-  inline def isAngularCore(decorator: Decorator): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAngularCore")(decorator.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isAbstractClassDeclaration(clazz: ClassDeclarationDeclarati): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAbstractClassDeclaration")(clazz.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isAngularCore(decorator: Decorator): /* is @angular/compiler-cli.anon.DecoratorimportImport */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAngularCore")(decorator.asInstanceOf[js.Any]).asInstanceOf[/* is @angular/compiler-cli.anon.DecoratorimportImport */ Boolean]
   
   inline def isAngularCoreReference(reference: Reference[Node], symbolName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAngularCoreReference")(reference.asInstanceOf[js.Any], symbolName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
@@ -62,7 +63,7 @@ object srcNgtscAnnotationsCommonSrcUtilMod {
   
   inline def isWrappedTsNodeExpr(expr: typings.angularCompiler.mod.Expression): /* is @angular/compiler.@angular/compiler.WrappedNodeExpr<typescript.typescript.Node> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWrappedTsNodeExpr")(expr.asInstanceOf[js.Any]).asInstanceOf[/* is @angular/compiler.@angular/compiler.WrappedNodeExpr<typescript.typescript.Node> */ Boolean]
   
-  inline def readBaseClass(node: ClassDeclaration[DeclarationNode], reflector: ReflectionHost, evaluator: PartialEvaluator): Reference[ClassDeclaration[DeclarationNode]] | dynamic | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("readBaseClass")(node.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any], evaluator.asInstanceOf[js.Any])).asInstanceOf[Reference[ClassDeclaration[DeclarationNode]] | dynamic | Null]
+  inline def readBaseClass(node: ClassDeclarationDeclarati, reflector: ReflectionHost, evaluator: PartialEvaluator): Reference[ClassDeclarationDeclarati] | dynamic | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("readBaseClass")(node.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any], evaluator.asInstanceOf[js.Any])).asInstanceOf[Reference[ClassDeclarationDeclarati] | dynamic | Null]
   
   inline def resolveImportedFile(
     moduleResolver: ModuleResolver,
@@ -71,18 +72,11 @@ object srcNgtscAnnotationsCommonSrcUtilMod {
     origin: SourceFile
   ): SourceFile | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveImportedFile")(moduleResolver.asInstanceOf[js.Any], importedFile.asInstanceOf[js.Any], expr.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[SourceFile | Null]
   
-  inline def resolveProvidersRequiringFactory(rawProviders: Expression, reflector: ReflectionHost, evaluator: PartialEvaluator): Set[Reference[ClassDeclaration[DeclarationNode]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveProvidersRequiringFactory")(rawProviders.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any], evaluator.asInstanceOf[js.Any])).asInstanceOf[Set[Reference[ClassDeclaration[DeclarationNode]]]]
+  inline def resolveProvidersRequiringFactory(rawProviders: Expression, reflector: ReflectionHost, evaluator: PartialEvaluator): Set[Reference[ClassDeclarationDeclarati]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveProvidersRequiringFactory")(rawProviders.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any], evaluator.asInstanceOf[js.Any])).asInstanceOf[Set[Reference[ClassDeclarationDeclarati]]]
   
   inline def toFactoryMetadata_target(meta: Omit[R3FactoryMetadata, target], target: FactoryTarget): R3FactoryMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("toFactoryMetadata")(meta.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[R3FactoryMetadata]
   
-  inline def toR3Reference(
-    origin: Node,
-    valueRef: Reference[Node],
-    typeRef: Reference[Node],
-    valueContext: SourceFile,
-    typeContext: SourceFile,
-    refEmitter: ReferenceEmitter
-  ): R3Reference = (^.asInstanceOf[js.Dynamic].applyDynamic("toR3Reference")(origin.asInstanceOf[js.Any], valueRef.asInstanceOf[js.Any], typeRef.asInstanceOf[js.Any], valueContext.asInstanceOf[js.Any], typeContext.asInstanceOf[js.Any], refEmitter.asInstanceOf[js.Any])).asInstanceOf[R3Reference]
+  inline def toR3Reference(origin: Node, ref: Reference[Node], context: SourceFile, refEmitter: ReferenceEmitter): R3Reference = (^.asInstanceOf[js.Dynamic].applyDynamic("toR3Reference")(origin.asInstanceOf[js.Any], ref.asInstanceOf[js.Any], context.asInstanceOf[js.Any], refEmitter.asInstanceOf[js.Any])).asInstanceOf[R3Reference]
   
   inline def tryUnwrapForwardRef(node: Expression, reflector: ReflectionHost): Expression | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("tryUnwrapForwardRef")(node.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any])).asInstanceOf[Expression | Null]
   
@@ -94,5 +88,5 @@ object srcNgtscAnnotationsCommonSrcUtilMod {
   
   inline def wrapFunctionExpressionsInParens(expression: Expression): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapFunctionExpressionsInParens")(expression.asInstanceOf[js.Any]).asInstanceOf[Expression]
   
-  inline def wrapTypeReference(reflector: ReflectionHost, clazz: ClassDeclaration[DeclarationNode]): R3Reference = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapTypeReference")(reflector.asInstanceOf[js.Any], clazz.asInstanceOf[js.Any])).asInstanceOf[R3Reference]
+  inline def wrapTypeReference(reflector: ReflectionHost, clazz: ClassDeclarationDeclarati): R3Reference = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapTypeReference")(reflector.asInstanceOf[js.Any], clazz.asInstanceOf[js.Any])).asInstanceOf[R3Reference]
 }

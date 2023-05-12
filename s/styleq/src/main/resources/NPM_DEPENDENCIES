@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "styleq" : "0.1.2"
+      "styleq" : "0.1.3"
     }
   ],
   "test-dependencies" : [
     {
-      "styleq" : "0.1.2"
+      "styleq" : "0.1.3"
     }
   ],
   "compile-devDependencies" : [

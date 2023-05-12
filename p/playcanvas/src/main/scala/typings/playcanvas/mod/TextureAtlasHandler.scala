@@ -17,7 +17,7 @@ open class TextureAtlasHandler protected ()
   /**
     * Create a new TextureAtlasHandler instance.
     *
-    * @param {AppBase} app - The running {@link AppBase}.
+    * @param {import('../app-base.js').AppBase} app - The running {@link AppBase}.
     * @hideconstructor
     */
   def this(app: AppBase) = this()

@@ -34,7 +34,8 @@ object mod {
     /**
       * The maximum size of message that can be sent in one go in bytes.
       * Messages larger than this will be split into multiple smaller
-      * messages (default: 1MB)
+      * messages. If we receive a message larger than this an error will
+      * be thrown and the connection closed. (default: 1MB)
       */
     var maxMsgSize: js.UndefOr[Double] = js.undefined
     
@@ -50,6 +51,27 @@ object mod {
       * be reset (default: 4MB)
       */
     var maxStreamBufferSize: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Constrains the size of the unprocessed message queue buffer.
+      * Before messages are deserialized, the raw bytes are buffered to ensure
+      * we have the complete message to deserialized. If the queue gets longer
+      * than this value an error will be thrown and the connection closed.
+      * (default: 4MB)
+      */
+    var maxUnprocessedMessageQueueSize: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Each byte array written into a multiplexed stream is converted to one or
+      * more messages which are sent as byte arrays to the remote node. Sending
+      * lots of small messages can be expensive - use this setting to batch up
+      * the serialized bytes of all messages sent during the current tick up to
+      * this limit to send in one go similar to Nagle's algorithm. N.b. you
+      * should benchmark your application carefully when using this setting as it
+      * may cause the opposite of the desired effect. Omit this setting to send
+      * all messages as they become available. (default: undefined)
+      */
+    var minSendBytes: js.UndefOr[Double] = js.undefined
   }
   object MplexInit {
     
@@ -80,6 +102,14 @@ object mod {
       inline def setMaxStreamBufferSize(value: Double): Self = StObject.set(x, "maxStreamBufferSize", value.asInstanceOf[js.Any])
       
       inline def setMaxStreamBufferSizeUndefined: Self = StObject.set(x, "maxStreamBufferSize", js.undefined)
+      
+      inline def setMaxUnprocessedMessageQueueSize(value: Double): Self = StObject.set(x, "maxUnprocessedMessageQueueSize", value.asInstanceOf[js.Any])
+      
+      inline def setMaxUnprocessedMessageQueueSizeUndefined: Self = StObject.set(x, "maxUnprocessedMessageQueueSize", js.undefined)
+      
+      inline def setMinSendBytes(value: Double): Self = StObject.set(x, "minSendBytes", value.asInstanceOf[js.Any])
+      
+      inline def setMinSendBytesUndefined: Self = StObject.set(x, "minSendBytes", js.undefined)
     }
   }
 }

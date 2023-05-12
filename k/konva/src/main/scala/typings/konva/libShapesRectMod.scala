@@ -1,5 +1,6 @@
 package typings.konva
 
+import typings.konva.libContextMod.Context
 import typings.konva.libShapeMod.Shape
 import typings.konva.libShapeMod.ShapeConfig
 import typings.konva.libTypesMod.GetSet
@@ -14,7 +15,7 @@ object libShapesRectMod {
   open class Rect () extends Shape[RectConfig] {
     def this(config: RectConfig) = this()
     
-    def _sceneFunc(context: Any): Unit = js.native
+    def _sceneFunc(context: Context): Unit = js.native
     
     def cornerRadius(): Double | js.Array[Double] = js.native
     def cornerRadius(v: js.Array[Double]): this.type = js.native

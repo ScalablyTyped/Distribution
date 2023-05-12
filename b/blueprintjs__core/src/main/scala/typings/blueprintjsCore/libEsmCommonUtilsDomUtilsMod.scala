@@ -1,5 +1,6 @@
 package typings.blueprintjsCore
 
+import typings.react.mod.KeyboardEvent
 import typings.react.mod.SyntheticEvent
 import typings.std.Element
 import typings.std.Event
@@ -16,7 +17,11 @@ object libEsmCommonUtilsDomUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def clickElementOnKeyPress(keys: js.Array[String]): js.Function1[/* e */ KeyboardEvent[Element], Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("clickElementOnKeyPress")(keys.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* e */ KeyboardEvent[Element], Boolean]]
+  
   inline def elementIsOrContains(element: HTMLElement, testElement: HTMLElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("elementIsOrContains")(element.asInstanceOf[js.Any], testElement.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def elementIsTextInput(elem: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("elementIsTextInput")(elem.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def getActiveElement(): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveElement")().asInstanceOf[Element | Null]
   inline def getActiveElement(element: Null, options: GetRootNodeOptions): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getActiveElement")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Element | Null]

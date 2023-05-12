@@ -17,7 +17,7 @@ trait EventType_ extends StObject {
   var code: js.UndefOr[eventTypeCode] = js.undefined
   
   /**
-    * The Amazon Web Services service that is affected by the event. For example, EC2, RDS.
+    * The Amazon Web Service that is affected by the event. For example, EC2, RDS.
     */
   var service: js.UndefOr[typings.awsSdk.clientsHealthMod.service] = js.undefined
 }

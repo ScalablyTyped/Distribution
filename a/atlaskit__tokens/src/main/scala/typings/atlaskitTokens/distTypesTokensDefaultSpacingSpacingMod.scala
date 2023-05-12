@@ -1,6 +1,6 @@
 package typings.atlaskitTokens
 
-import typings.atlaskitTokens.anon.Ccc
+import typings.atlaskitTokens.anon.`025`
 import typings.atlaskitTokens.atlaskitTokensStrings.value
 import typings.atlaskitTokens.distTypesTypesMod.OmitDistributive
 import org.scalablytyped.runtime.StObject
@@ -9,16 +9,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesTokensDefaultSpacingSpacingMod {
   
-  /* Inlined @atlaskit/tokens.@atlaskit/tokens/dist/types/types.AttributeSchema<@atlaskit/tokens.@atlaskit/tokens/dist/types/types.SpacingTokenSchema<@atlaskit/tokens.@atlaskit/tokens/dist/types/palettes/spacing-scale.BaseToken>> */
+  /**
+    * The spacing attribute schema governs the non-value specific metadata to apply to the
+    * spacing theme. This governs the name, description and state
+    * of a token.
+    */
+  /* Inlined @atlaskit/tokens.@atlaskit/tokens/dist/types/types.AttributeSchema<@atlaskit/tokens.@atlaskit/tokens/dist/types/types.SpacingTokenSchema> */
   object default {
     
     @JSImport("@atlaskit/tokens/dist/types/tokens/default/spacing/spacing", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/tokens/default/spacing/spacing", "default.spacing")
+    @JSImport("@atlaskit/tokens/dist/types/tokens/default/spacing/spacing", "default.space")
     @js.native
-    def spacing: OmitDistributive[Ccc, value] = js.native
-    inline def spacing_=(x: OmitDistributive[Ccc, value]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing")(x.asInstanceOf[js.Any])
+    def space: OmitDistributive[`025`, value] = js.native
+    inline def space_=(x: OmitDistributive[`025`, value]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("space")(x.asInstanceOf[js.Any])
   }
 }

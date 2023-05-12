@@ -97,7 +97,7 @@ type FieldOptionsList = js.Array[FieldOption]
   - typings.awsSdk.awsSdkStrings.Number_
   - typings.awsSdk.awsSdkStrings.Boolean_
   - typings.awsSdk.awsSdkStrings.DateTime_
-  - typings.awsSdk.awsSdkStrings.SingleSelect
+  - typings.awsSdk.awsSdkStrings.SingleSelect_
   - java.lang.String
 */
 type FieldType = _FieldType | java.lang.String
@@ -143,7 +143,7 @@ type RelatedItemId = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Contact_
-  - typings.awsSdk.awsSdkStrings.Comment
+  - typings.awsSdk.awsSdkStrings.Comment_
   - java.lang.String
 */
 type RelatedItemType = _RelatedItemType | java.lang.String

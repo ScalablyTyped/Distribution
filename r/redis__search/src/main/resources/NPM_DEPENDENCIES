@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@redis/search" : "1.1.0"
+      "@redis/search" : "1.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@redis/search" : "1.1.0"
+      "@redis/search" : "1.1.2"
     }
   ],
   "compile-devDependencies" : [

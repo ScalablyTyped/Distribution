@@ -12,7 +12,7 @@ trait CreateStateMachineInput extends StObject {
   var definition: Definition
   
   /**
-    * Defines what execution history events are logged and where they are logged.  By default, the level is set to OFF. For more information see Log Levels in the AWS Step Functions User Guide. 
+    * Defines what execution history events are logged and where they are logged.  By default, the level is set to OFF. For more information see Log Levels in the Step Functions User Guide. 
     */
   var loggingConfiguration: js.UndefOr[LoggingConfiguration] = js.undefined
   
@@ -27,12 +27,12 @@ trait CreateStateMachineInput extends StObject {
   var roleArn: Arn
   
   /**
-    * Tags to be added when creating a state machine. An array of key-value pairs. For more information, see Using Cost Allocation Tags in the AWS Billing and Cost Management User Guide, and Controlling Access Using IAM Tags. Tags may only contain Unicode letters, digits, white space, or these symbols: _ . : / = + - @.
+    * Tags to be added when creating a state machine. An array of key-value pairs. For more information, see Using Cost Allocation Tags in the Amazon Web Services Billing and Cost Management User Guide, and Controlling Access Using IAM Tags. Tags may only contain Unicode letters, digits, white space, or these symbols: _ . : / = + - @.
     */
   var tags: js.UndefOr[TagList] = js.undefined
   
   /**
-    * Selects whether AWS X-Ray tracing is enabled.
+    * Selects whether X-Ray tracing is enabled.
     */
   var tracingConfiguration: js.UndefOr[TracingConfiguration] = js.undefined
   

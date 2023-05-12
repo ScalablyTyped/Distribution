@@ -2,13 +2,15 @@ package typings.openui5.sapUiCoreLibraryMod
 
 import typings.openui5.sapUiCoreControlMod.default
 import typings.openui5.sapUiCoreLibraryMod.aria.HasPopup
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait IColumnHeaderMenu extends StObject {
   
-  var __implements__sap_ui_core_IColumnHeaderMenu: Boolean
+  var __implements__sap_ui_core_IColumnHeaderMenu: Boolean = js.native
   
   /**
     * @SINCE 1.98.0
@@ -18,39 +20,20 @@ trait IColumnHeaderMenu extends StObject {
     *
     * @returns sap.ui.core.aria.HasPopup<\code> type of the menu
     */
-  def getAriaHasPopupType(): HasPopup | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof aria.HasPopup * / any */ String)
+  def getAriaHasPopupType(): HasPopup | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof aria.HasPopup * / any */ String) = js.native
   
   /**
-    * @SINCE 1.98.0
+    * @SINCE 1.98
     * @EXPERIMENTAL (since 1.98)
     *
     * Opens the menu using the column header.
     */
   def openBy(/**
-    * Specifies the control where the menu is placed.
+    * Specifies the element where the menu is placed.
     */
-  oControl: default): Unit
-}
-object IColumnHeaderMenu {
-  
-  inline def apply(
-    __implements__sap_ui_core_IColumnHeaderMenu: Boolean,
-    getAriaHasPopupType: () => HasPopup | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof aria.HasPopup * / any */ String),
-    openBy: default => Unit
-  ): IColumnHeaderMenu = {
-    val __obj = js.Dynamic.literal(__implements__sap_ui_core_IColumnHeaderMenu = __implements__sap_ui_core_IColumnHeaderMenu.asInstanceOf[js.Any], getAriaHasPopupType = js.Any.fromFunction0(getAriaHasPopupType), openBy = js.Any.fromFunction1(openBy))
-    __obj.asInstanceOf[IColumnHeaderMenu]
-  }
-  
-  @scala.inline
-  implicit open class MutableBuilder[Self <: IColumnHeaderMenu] (val x: Self) extends AnyVal {
-    
-    inline def setGetAriaHasPopupType(
-      value: () => HasPopup | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof aria.HasPopup * / any */ String)
-    ): Self = StObject.set(x, "getAriaHasPopupType", js.Any.fromFunction0(value))
-    
-    inline def setOpenBy(value: default => Unit): Self = StObject.set(x, "openBy", js.Any.fromFunction1(value))
-    
-    inline def set__implements__sap_ui_core_IColumnHeaderMenu(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_core_IColumnHeaderMenu", value.asInstanceOf[js.Any])
-  }
+  oAnchor: default): Unit = js.native
+  def openBy(/**
+    * Specifies the element where the menu is placed.
+    */
+  oAnchor: HTMLElement): Unit = js.native
 }

@@ -7,6 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Output extends StObject {
   
   /**
+    * The ARN of the bridge that added this output.
+    */
+  var BridgeArn: js.UndefOr[string] = js.undefined
+  
+  /**
+    * The bridge output ports currently in use.
+    */
+  var BridgePorts: js.UndefOr[listOfInteger] = js.undefined
+  
+  /**
     * Percentage from 0-100 of the data transfer cost to be billed to the subscriber.
     */
   var DataTransferSubscriberFeePercent: js.UndefOr[integer] = js.undefined
@@ -80,6 +90,16 @@ object Output {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
+    
+    inline def setBridgeArn(value: string): Self = StObject.set(x, "BridgeArn", value.asInstanceOf[js.Any])
+    
+    inline def setBridgeArnUndefined: Self = StObject.set(x, "BridgeArn", js.undefined)
+    
+    inline def setBridgePorts(value: listOfInteger): Self = StObject.set(x, "BridgePorts", value.asInstanceOf[js.Any])
+    
+    inline def setBridgePortsUndefined: Self = StObject.set(x, "BridgePorts", js.undefined)
+    
+    inline def setBridgePortsVarargs(value: integer*): Self = StObject.set(x, "BridgePorts", js.Array(value*))
     
     inline def setDataTransferSubscriberFeePercent(value: integer): Self = StObject.set(x, "DataTransferSubscriberFeePercent", value.asInstanceOf[js.Any])
     

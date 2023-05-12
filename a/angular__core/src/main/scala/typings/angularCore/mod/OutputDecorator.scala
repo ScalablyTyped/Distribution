@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OutputDecorator
   extends StObject
      with Instantiable0[Any]
-     with Instantiable1[/* bindingPropertyName */ String, Any] {
+     with Instantiable1[/* hostPropertyName */ String, Any] {
   
   /**
     * Decorator that marks a class field as an output property and supplies configuration metadata.
@@ -29,5 +29,5 @@ trait OutputDecorator
     *
     */
   def apply(): Any = js.native
-  def apply(bindingPropertyName: String): Any = js.native
+  def apply(alias: String): Any = js.native
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for babylonjs
 
-Typings are for version 5.32.1
+Typings are for version 6.3.1
 
 ## Library description:
 * We recommend using the [Core ES6-supported version](https://www.npmjs.com/package/@babylonjs/core);

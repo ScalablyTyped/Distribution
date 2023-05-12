@@ -7,48 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object swiperStrings {
   
   @js.native
-  sealed trait `[slotEqualssigncontainer-end]` extends StObject
-  inline def `[slotEqualssigncontainer-end]`: `[slotEqualssigncontainer-end]` = "[slot=container-end]".asInstanceOf[`[slotEqualssigncontainer-end]`]
+  sealed trait abort extends StObject
+  inline def abort: abort = "abort".asInstanceOf[abort]
   
   @js.native
-  sealed trait `[slotEqualssigncontainer-start]` extends StObject
-  inline def `[slotEqualssigncontainer-start]`: `[slotEqualssigncontainer-start]` = "[slot=container-start]".asInstanceOf[`[slotEqualssigncontainer-start]`]
-  
-  @js.native
-  sealed trait `[slotEqualssignwrapper-end]` extends StObject
-  inline def `[slotEqualssignwrapper-end]`: `[slotEqualssignwrapper-end]` = "[slot=wrapper-end]".asInstanceOf[`[slotEqualssignwrapper-end]`]
-  
-  @js.native
-  sealed trait `[slotEqualssignwrapper-start]` extends StObject
-  inline def `[slotEqualssignwrapper-start]`: `[slotEqualssignwrapper-start]` = "[slot=wrapper-start]".asInstanceOf[`[slotEqualssignwrapper-start]`]
-  
-  @js.native
-  sealed trait _beforeBreakpoint extends StObject
-  inline def _beforeBreakpoint: _beforeBreakpoint = "_beforeBreakpoint".asInstanceOf[_beforeBreakpoint]
-  
-  @js.native
-  sealed trait _containerClasses extends StObject
-  inline def _containerClasses: _containerClasses = "_containerClasses".asInstanceOf[_containerClasses]
-  
-  @js.native
-  sealed trait _empty extends StObject
-  inline def _empty: _empty = "".asInstanceOf[_empty]
-  
-  @js.native
-  sealed trait _slideClass extends StObject
-  inline def _slideClass: _slideClass = "_slideClass".asInstanceOf[_slideClass]
-  
-  @js.native
-  sealed trait _swiper extends StObject
-  inline def _swiper: _swiper = "_swiper".asInstanceOf[_swiper]
-  
-  @js.native
-  sealed trait a11y extends StObject
-  inline def a11y: a11y = "a11y".asInstanceOf[a11y]
-  
-  @js.native
-  sealed trait activeIndexChange extends StObject
-  inline def activeIndexChange: activeIndexChange = "activeIndexChange".asInstanceOf[activeIndexChange]
+  sealed trait activeindexchange extends StObject
+  inline def activeindexchange: activeindexchange = "activeindexchange".asInstanceOf[activeindexchange]
   
   @js.native
   sealed trait additions extends StObject
@@ -63,24 +27,28 @@ object swiperStrings {
   inline def `additions text`: `additions text` = ("additions text").asInstanceOf[`additions text`]
   
   @js.native
-  sealed trait afterInit extends StObject
-  inline def afterInit: afterInit = "afterInit".asInstanceOf[afterInit]
+  sealed trait afterinit extends StObject
+  inline def afterinit: afterinit = "afterinit".asInstanceOf[afterinit]
   
   @js.native
   sealed trait all extends StObject
   inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait allowSlideNext extends StObject
-  inline def allowSlideNext: allowSlideNext = "allowSlideNext".asInstanceOf[allowSlideNext]
+  sealed trait animationcancel extends StObject
+  inline def animationcancel: animationcancel = "animationcancel".asInstanceOf[animationcancel]
   
   @js.native
-  sealed trait allowSlidePrev extends StObject
-  inline def allowSlidePrev: allowSlidePrev = "allowSlidePrev".asInstanceOf[allowSlidePrev]
+  sealed trait animationend extends StObject
+  inline def animationend: animationend = "animationend".asInstanceOf[animationend]
   
   @js.native
-  sealed trait allowTouchMove extends StObject
-  inline def allowTouchMove: allowTouchMove = "allowTouchMove".asInstanceOf[allowTouchMove]
+  sealed trait animationiteration extends StObject
+  inline def animationiteration: animationiteration = "animationiteration".asInstanceOf[animationiteration]
+  
+  @js.native
+  sealed trait animationstart extends StObject
+  inline def animationstart: animationstart = "animationstart".asInstanceOf[animationstart]
   
   @js.native
   sealed trait ascending extends StObject
@@ -95,52 +63,64 @@ object swiperStrings {
   inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait autoHeight extends StObject
-  inline def autoHeight: autoHeight = "autoHeight".asInstanceOf[autoHeight]
-  
-  @js.native
   sealed trait autoplay extends StObject
   inline def autoplay: autoplay = "autoplay".asInstanceOf[autoplay]
   
   @js.native
-  sealed trait autoplayPause extends StObject
-  inline def autoplayPause: autoplayPause = "autoplayPause".asInstanceOf[autoplayPause]
+  sealed trait autoplaypause extends StObject
+  inline def autoplaypause: autoplaypause = "autoplaypause".asInstanceOf[autoplaypause]
   
   @js.native
-  sealed trait autoplayResume extends StObject
-  inline def autoplayResume: autoplayResume = "autoplayResume".asInstanceOf[autoplayResume]
+  sealed trait autoplayresume extends StObject
+  inline def autoplayresume: autoplayresume = "autoplayresume".asInstanceOf[autoplayresume]
   
   @js.native
-  sealed trait autoplayStart extends StObject
-  inline def autoplayStart: autoplayStart = "autoplayStart".asInstanceOf[autoplayStart]
+  sealed trait autoplaystart extends StObject
+  inline def autoplaystart: autoplaystart = "autoplaystart".asInstanceOf[autoplaystart]
   
   @js.native
-  sealed trait autoplayStop extends StObject
-  inline def autoplayStop: autoplayStop = "autoplayStop".asInstanceOf[autoplayStop]
+  sealed trait autoplaystop extends StObject
+  inline def autoplaystop: autoplaystop = "autoplaystop".asInstanceOf[autoplaystop]
   
   @js.native
-  sealed trait beforeDestroy extends StObject
-  inline def beforeDestroy: beforeDestroy = "beforeDestroy".asInstanceOf[beforeDestroy]
+  sealed trait autoplaytimeleft extends StObject
+  inline def autoplaytimeleft: autoplaytimeleft = "autoplaytimeleft".asInstanceOf[autoplaytimeleft]
   
   @js.native
-  sealed trait beforeInit extends StObject
-  inline def beforeInit: beforeInit = "beforeInit".asInstanceOf[beforeInit]
+  sealed trait auxclick extends StObject
+  inline def auxclick: auxclick = "auxclick".asInstanceOf[auxclick]
   
   @js.native
-  sealed trait beforeLoopFix extends StObject
-  inline def beforeLoopFix: beforeLoopFix = "beforeLoopFix".asInstanceOf[beforeLoopFix]
+  sealed trait beforedestroy extends StObject
+  inline def beforedestroy: beforedestroy = "beforedestroy".asInstanceOf[beforedestroy]
   
   @js.native
-  sealed trait beforeResize extends StObject
-  inline def beforeResize: beforeResize = "beforeResize".asInstanceOf[beforeResize]
+  sealed trait beforeinit extends StObject
+  inline def beforeinit: beforeinit = "beforeinit".asInstanceOf[beforeinit]
   
   @js.native
-  sealed trait beforeSlideChangeStart extends StObject
-  inline def beforeSlideChangeStart: beforeSlideChangeStart = "beforeSlideChangeStart".asInstanceOf[beforeSlideChangeStart]
+  sealed trait beforeinput extends StObject
+  inline def beforeinput: beforeinput = "beforeinput".asInstanceOf[beforeinput]
   
   @js.native
-  sealed trait beforeTransitionStart extends StObject
-  inline def beforeTransitionStart: beforeTransitionStart = "beforeTransitionStart".asInstanceOf[beforeTransitionStart]
+  sealed trait beforeloopfix extends StObject
+  inline def beforeloopfix: beforeloopfix = "beforeloopfix".asInstanceOf[beforeloopfix]
+  
+  @js.native
+  sealed trait beforeresize extends StObject
+  inline def beforeresize: beforeresize = "beforeresize".asInstanceOf[beforeresize]
+  
+  @js.native
+  sealed trait beforeslidechangestart extends StObject
+  inline def beforeslidechangestart: beforeslidechangestart = "beforeslidechangestart".asInstanceOf[beforeslidechangestart]
+  
+  @js.native
+  sealed trait beforetransitionstart extends StObject
+  inline def beforetransitionstart: beforetransitionstart = "beforetransitionstart".asInstanceOf[beforetransitionstart]
+  
+  @js.native
+  sealed trait blur extends StObject
+  inline def blur: blur = "blur".asInstanceOf[blur]
   
   @js.native
   sealed trait both extends StObject
@@ -151,64 +131,64 @@ object swiperStrings {
   inline def breakpoint: breakpoint = "breakpoint".asInstanceOf[breakpoint]
   
   @js.native
-  sealed trait breakpoints extends StObject
-  inline def breakpoints: breakpoints = "breakpoints".asInstanceOf[breakpoints]
-  
-  @js.native
   sealed trait bullets extends StObject
   inline def bullets: bullets = "bullets".asInstanceOf[bullets]
+  
+  @js.native
+  sealed trait cancel extends StObject
+  inline def cancel: cancel = "cancel".asInstanceOf[cancel]
+  
+  @js.native
+  sealed trait canplay extends StObject
+  inline def canplay: canplay = "canplay".asInstanceOf[canplay]
+  
+  @js.native
+  sealed trait canplaythrough extends StObject
+  inline def canplaythrough: canplaythrough = "canplaythrough".asInstanceOf[canplaythrough]
   
   @js.native
   sealed trait cards extends StObject
   inline def cards: cards = "cards".asInstanceOf[cards]
   
   @js.native
-  sealed trait cardsEffect extends StObject
-  inline def cardsEffect: cardsEffect = "cardsEffect".asInstanceOf[cardsEffect]
+  sealed trait change extends StObject
+  inline def change: change = "change".asInstanceOf[change]
   
   @js.native
-  sealed trait centerInsufficientSlides extends StObject
-  inline def centerInsufficientSlides: centerInsufficientSlides = "centerInsufficientSlides".asInstanceOf[centerInsufficientSlides]
-  
-  @js.native
-  sealed trait centeredSlides extends StObject
-  inline def centeredSlides: centeredSlides = "centeredSlides".asInstanceOf[centeredSlides]
-  
-  @js.native
-  sealed trait centeredSlidesBounds extends StObject
-  inline def centeredSlidesBounds: centeredSlidesBounds = "centeredSlidesBounds".asInstanceOf[centeredSlidesBounds]
-  
-  @js.native
-  sealed trait changeDirection extends StObject
-  inline def changeDirection: changeDirection = "changeDirection".asInstanceOf[changeDirection]
-  
-  @js.native
-  sealed trait `class` extends StObject
-  inline def `class`: `class` = "class".asInstanceOf[`class`]
+  sealed trait changedirection extends StObject
+  inline def changedirection: changedirection = "changedirection".asInstanceOf[changedirection]
   
   @js.native
   sealed trait click extends StObject
   inline def click: click = "click".asInstanceOf[click]
   
   @js.native
+  sealed trait close extends StObject
+  inline def close: close = "close".asInstanceOf[close]
+  
+  @js.native
   sealed trait column extends StObject
   inline def column: column = "column".asInstanceOf[column]
   
   @js.native
-  sealed trait config extends StObject
-  inline def config: config = "config".asInstanceOf[config]
+  sealed trait compositionend extends StObject
+  inline def compositionend: compositionend = "compositionend".asInstanceOf[compositionend]
+  
+  @js.native
+  sealed trait compositionstart extends StObject
+  inline def compositionstart: compositionstart = "compositionstart".asInstanceOf[compositionstart]
+  
+  @js.native
+  sealed trait compositionupdate extends StObject
+  inline def compositionupdate: compositionupdate = "compositionupdate".asInstanceOf[compositionupdate]
   
   @js.native
   sealed trait container extends StObject
   inline def container: container = "container".asInstanceOf[container]
   
   @js.native
-  sealed trait containerModifierClass extends StObject
-  inline def containerModifierClass: containerModifierClass = "containerModifierClass".asInstanceOf[containerModifierClass]
-  
-  @js.native
-  sealed trait controller extends StObject
-  inline def controller: controller = "controller".asInstanceOf[controller]
+  sealed trait contextmenu extends StObject
+  inline def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
   
   @js.native
   sealed trait copy extends StObject
@@ -219,40 +199,32 @@ object swiperStrings {
   inline def coverflow: coverflow = "coverflow".asInstanceOf[coverflow]
   
   @js.native
-  sealed trait coverflowEffect extends StObject
-  inline def coverflowEffect: coverflowEffect = "coverflowEffect".asInstanceOf[coverflowEffect]
-  
-  @js.native
   sealed trait creative extends StObject
   inline def creative: creative = "creative".asInstanceOf[creative]
-  
-  @js.native
-  sealed trait creativeEffect extends StObject
-  inline def creativeEffect: creativeEffect = "creativeEffect".asInstanceOf[creativeEffect]
-  
-  @js.native
-  sealed trait cssMode extends StObject
-  inline def cssMode: cssMode = "cssMode".asInstanceOf[cssMode]
   
   @js.native
   sealed trait cube extends StObject
   inline def cube: cube = "cube".asInstanceOf[cube]
   
   @js.native
-  sealed trait cubeEffect extends StObject
-  inline def cubeEffect: cubeEffect = "cubeEffect".asInstanceOf[cubeEffect]
+  sealed trait cuechange extends StObject
+  inline def cuechange: cuechange = "cuechange".asInstanceOf[cuechange]
   
   @js.native
   sealed trait custom extends StObject
   inline def custom: custom = "custom".asInstanceOf[custom]
   
   @js.native
-  sealed trait `data-swiper-autoplay` extends StObject
-  inline def `data-swiper-autoplay`: `data-swiper-autoplay` = "data-swiper-autoplay".asInstanceOf[`data-swiper-autoplay`]
+  sealed trait cut extends StObject
+  inline def cut: cut = "cut".asInstanceOf[cut]
   
   @js.native
   sealed trait date extends StObject
   inline def date: date = "date".asInstanceOf[date]
+  
+  @js.native
+  sealed trait dblclick extends StObject
+  inline def dblclick: dblclick = "dblclick".asInstanceOf[dblclick]
   
   @js.native
   sealed trait decimal extends StObject
@@ -271,36 +243,60 @@ object swiperStrings {
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait direction extends StObject
-  inline def direction: direction = "direction".asInstanceOf[direction]
+  sealed trait doubleclick extends StObject
+  inline def doubleclick: doubleclick = "doubleclick".asInstanceOf[doubleclick]
   
   @js.native
-  sealed trait doubleClick extends StObject
-  inline def doubleClick: doubleClick = "doubleClick".asInstanceOf[doubleClick]
+  sealed trait doubletap extends StObject
+  inline def doubletap: doubletap = "doubletap".asInstanceOf[doubletap]
   
   @js.native
-  sealed trait doubleTap extends StObject
-  inline def doubleTap: doubleTap = "doubleTap".asInstanceOf[doubleTap]
+  sealed trait drag extends StObject
+  inline def drag: drag = "drag".asInstanceOf[drag]
   
   @js.native
-  sealed trait edgeSwipeDetection extends StObject
-  inline def edgeSwipeDetection: edgeSwipeDetection = "edgeSwipeDetection".asInstanceOf[edgeSwipeDetection]
+  sealed trait dragend extends StObject
+  inline def dragend: dragend = "dragend".asInstanceOf[dragend]
   
   @js.native
-  sealed trait edgeSwipeThreshold extends StObject
-  inline def edgeSwipeThreshold: edgeSwipeThreshold = "edgeSwipeThreshold".asInstanceOf[edgeSwipeThreshold]
+  sealed trait dragenter extends StObject
+  inline def dragenter: dragenter = "dragenter".asInstanceOf[dragenter]
   
   @js.native
-  sealed trait effect extends StObject
-  inline def effect: effect = "effect".asInstanceOf[effect]
+  sealed trait dragleave extends StObject
+  inline def dragleave: dragleave = "dragleave".asInstanceOf[dragleave]
+  
+  @js.native
+  sealed trait dragover extends StObject
+  inline def dragover: dragover = "dragover".asInstanceOf[dragover]
+  
+  @js.native
+  sealed trait dragstart extends StObject
+  inline def dragstart: dragstart = "dragstart".asInstanceOf[dragstart]
+  
+  @js.native
+  sealed trait drop extends StObject
+  inline def drop: drop = "drop".asInstanceOf[drop]
+  
+  @js.native
+  sealed trait durationchange extends StObject
+  inline def durationchange: durationchange = "durationchange".asInstanceOf[durationchange]
   
   @js.native
   sealed trait email extends StObject
   inline def email: email = "email".asInstanceOf[email]
   
   @js.native
-  sealed trait enabled extends StObject
-  inline def enabled: enabled = "enabled".asInstanceOf[enabled]
+  sealed trait emptied extends StObject
+  inline def emptied: emptied = "emptied".asInstanceOf[emptied]
+  
+  @js.native
+  sealed trait ended extends StObject
+  inline def ended: ended = "ended".asInstanceOf[ended]
+  
+  @js.native
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait execute extends StObject
@@ -311,40 +307,44 @@ object swiperStrings {
   inline def fade: fade = "fade".asInstanceOf[fade]
   
   @js.native
-  sealed trait fadeEffect extends StObject
-  inline def fadeEffect: fadeEffect = "fadeEffect".asInstanceOf[fadeEffect]
-  
-  @js.native
   sealed trait flip extends StObject
   inline def flip: flip = "flip".asInstanceOf[flip]
   
   @js.native
-  sealed trait flipEffect extends StObject
-  inline def flipEffect: flipEffect = "flipEffect".asInstanceOf[flipEffect]
+  sealed trait focus extends StObject
+  inline def focus: focus = "focus".asInstanceOf[focus]
   
   @js.native
-  sealed trait focusableElements extends StObject
-  inline def focusableElements: focusableElements = "focusableElements".asInstanceOf[focusableElements]
+  sealed trait focusin extends StObject
+  inline def focusin: focusin = "focusin".asInstanceOf[focusin]
   
   @js.native
-  sealed trait followFinger extends StObject
-  inline def followFinger: followFinger = "followFinger".asInstanceOf[followFinger]
+  sealed trait focusout extends StObject
+  inline def focusout: focusout = "focusout".asInstanceOf[focusout]
+  
+  @js.native
+  sealed trait formdata extends StObject
+  inline def formdata: formdata = "formdata".asInstanceOf[formdata]
   
   @js.native
   sealed trait fraction extends StObject
   inline def fraction: fraction = "fraction".asInstanceOf[fraction]
   
   @js.native
-  sealed trait freeMode extends StObject
-  inline def freeMode: freeMode = "freeMode".asInstanceOf[freeMode]
+  sealed trait fromedge extends StObject
+  inline def fromedge: fromedge = "fromedge".asInstanceOf[fromedge]
   
   @js.native
-  sealed trait fromEdge extends StObject
-  inline def fromEdge: fromEdge = "fromEdge".asInstanceOf[fromEdge]
+  sealed trait fullscreenchange extends StObject
+  inline def fullscreenchange: fullscreenchange = "fullscreenchange".asInstanceOf[fullscreenchange]
   
   @js.native
-  sealed trait grabCursor extends StObject
-  inline def grabCursor: grabCursor = "grabCursor".asInstanceOf[grabCursor]
+  sealed trait fullscreenerror extends StObject
+  inline def fullscreenerror: fullscreenerror = "fullscreenerror".asInstanceOf[fullscreenerror]
+  
+  @js.native
+  sealed trait gotpointercapture extends StObject
+  inline def gotpointercapture: gotpointercapture = "gotpointercapture".asInstanceOf[gotpointercapture]
   
   @js.native
   sealed trait grammar extends StObject
@@ -355,36 +355,16 @@ object swiperStrings {
   inline def grid: grid = "grid".asInstanceOf[grid]
   
   @js.native
-  sealed trait hashChange extends StObject
-  inline def hashChange: hashChange = "hashChange".asInstanceOf[hashChange]
+  sealed trait hashchange extends StObject
+  inline def hashchange: hashchange = "hashchange".asInstanceOf[hashchange]
   
   @js.native
-  sealed trait hashNavigation extends StObject
-  inline def hashNavigation: hashNavigation = "hashNavigation".asInstanceOf[hashNavigation]
-  
-  @js.native
-  sealed trait hashSet extends StObject
-  inline def hashSet: hashSet = "hashSet".asInstanceOf[hashSet]
-  
-  @js.native
-  sealed trait height extends StObject
-  inline def height: height = "height".asInstanceOf[height]
-  
-  @js.native
-  sealed trait history extends StObject
-  inline def history: history = "history".asInstanceOf[history]
+  sealed trait hashset extends StObject
+  inline def hashset: hashset = "hashset".asInstanceOf[hashset]
   
   @js.native
   sealed trait horizontal extends StObject
   inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
-  
-  @js.native
-  sealed trait id extends StObject
-  inline def id: id = "id".asInstanceOf[id]
-  
-  @js.native
-  sealed trait imagesReady extends StObject
-  inline def imagesReady: imagesReady = "imagesReady".asInstanceOf[imagesReady]
   
   @js.native
   sealed trait inherit extends StObject
@@ -395,32 +375,28 @@ object swiperStrings {
   inline def init: init = "init".asInstanceOf[init]
   
   @js.native
-  sealed trait initialSlide extends StObject
-  inline def initialSlide: initialSlide = "initialSlide".asInstanceOf[initialSlide]
-  
-  @js.native
   sealed trait `inline` extends StObject
   inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
-  sealed trait keyPress extends StObject
-  inline def keyPress: keyPress = "keyPress".asInstanceOf[keyPress]
+  sealed trait input extends StObject
+  inline def input: input = "input".asInstanceOf[input]
   
   @js.native
-  sealed trait keyboard extends StObject
-  inline def keyboard: keyboard = "keyboard".asInstanceOf[keyboard]
+  sealed trait invalid extends StObject
+  inline def invalid: invalid = "invalid".asInstanceOf[invalid]
   
   @js.native
-  sealed trait `lazy` extends StObject
-  inline def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
+  sealed trait keydown extends StObject
+  inline def keydown: keydown = "keydown".asInstanceOf[keydown]
   
   @js.native
-  sealed trait lazyImageLoad extends StObject
-  inline def lazyImageLoad: lazyImageLoad = "lazyImageLoad".asInstanceOf[lazyImageLoad]
+  sealed trait keypress extends StObject
+  inline def keypress: keypress = "keypress".asInstanceOf[keypress]
   
   @js.native
-  sealed trait lazyImageReady extends StObject
-  inline def lazyImageReady: lazyImageReady = "lazyImageReady".asInstanceOf[lazyImageReady]
+  sealed trait keyup extends StObject
+  inline def keyup: keyup = "keyup".asInstanceOf[keyup]
   
   @js.native
   sealed trait link extends StObject
@@ -435,6 +411,22 @@ object swiperStrings {
   inline def listbox: listbox = "listbox".asInstanceOf[listbox]
   
   @js.native
+  sealed trait load extends StObject
+  inline def load: load = "load".asInstanceOf[load]
+  
+  @js.native
+  sealed trait loadeddata extends StObject
+  inline def loadeddata: loadeddata = "loadeddata".asInstanceOf[loadeddata]
+  
+  @js.native
+  sealed trait loadedmetadata extends StObject
+  inline def loadedmetadata: loadedmetadata = "loadedmetadata".asInstanceOf[loadedmetadata]
+  
+  @js.native
+  sealed trait loadstart extends StObject
+  inline def loadstart: loadstart = "loadstart".asInstanceOf[loadstart]
+  
+  @js.native
   sealed trait location extends StObject
   inline def location: location = "location".asInstanceOf[location]
   
@@ -443,52 +435,16 @@ object swiperStrings {
   inline def lock: lock = "lock".asInstanceOf[lock]
   
   @js.native
-  sealed trait longSwipes extends StObject
-  inline def longSwipes: longSwipes = "longSwipes".asInstanceOf[longSwipes]
+  sealed trait loopfix extends StObject
+  inline def loopfix: loopfix = "loopfix".asInstanceOf[loopfix]
   
   @js.native
-  sealed trait longSwipesMs extends StObject
-  inline def longSwipesMs: longSwipesMs = "longSwipesMs".asInstanceOf[longSwipesMs]
-  
-  @js.native
-  sealed trait longSwipesRatio extends StObject
-  inline def longSwipesRatio: longSwipesRatio = "longSwipesRatio".asInstanceOf[longSwipesRatio]
-  
-  @js.native
-  sealed trait loop extends StObject
-  inline def loop: loop = "loop".asInstanceOf[loop]
-  
-  @js.native
-  sealed trait loopAdditionalSlides extends StObject
-  inline def loopAdditionalSlides: loopAdditionalSlides = "loopAdditionalSlides".asInstanceOf[loopAdditionalSlides]
-  
-  @js.native
-  sealed trait loopFillGroupWithBlank extends StObject
-  inline def loopFillGroupWithBlank: loopFillGroupWithBlank = "loopFillGroupWithBlank".asInstanceOf[loopFillGroupWithBlank]
-  
-  @js.native
-  sealed trait loopFix extends StObject
-  inline def loopFix: loopFix = "loopFix".asInstanceOf[loopFix]
-  
-  @js.native
-  sealed trait loopPreventsSlide extends StObject
-  inline def loopPreventsSlide: loopPreventsSlide = "loopPreventsSlide".asInstanceOf[loopPreventsSlide]
-  
-  @js.native
-  sealed trait loopedSlides extends StObject
-  inline def loopedSlides: loopedSlides = "loopedSlides".asInstanceOf[loopedSlides]
-  
-  @js.native
-  sealed trait loopedSlidesLimit extends StObject
-  inline def loopedSlidesLimit: loopedSlidesLimit = "loopedSlidesLimit".asInstanceOf[loopedSlidesLimit]
+  sealed trait lostpointercapture extends StObject
+  inline def lostpointercapture: lostpointercapture = "lostpointercapture".asInstanceOf[lostpointercapture]
   
   @js.native
   sealed trait ltr extends StObject
   inline def ltr: ltr = "ltr".asInstanceOf[ltr]
-  
-  @js.native
-  sealed trait maxBackfaceHiddenSlides extends StObject
-  inline def maxBackfaceHiddenSlides: maxBackfaceHiddenSlides = "maxBackfaceHiddenSlides".asInstanceOf[maxBackfaceHiddenSlides]
   
   @js.native
   sealed trait menu extends StObject
@@ -499,88 +455,76 @@ object swiperStrings {
   inline def mixed: mixed = "mixed".asInstanceOf[mixed]
   
   @js.native
-  sealed trait momentumBounce extends StObject
-  inline def momentumBounce: momentumBounce = "momentumBounce".asInstanceOf[momentumBounce]
+  sealed trait momentumbounce extends StObject
+  inline def momentumbounce: momentumbounce = "momentumbounce".asInstanceOf[momentumbounce]
   
   @js.native
-  sealed trait mousewheel extends StObject
-  inline def mousewheel: mousewheel = "mousewheel".asInstanceOf[mousewheel]
+  sealed trait mousedown extends StObject
+  inline def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
+  
+  @js.native
+  sealed trait mouseenter extends StObject
+  inline def mouseenter: mouseenter = "mouseenter".asInstanceOf[mouseenter]
+  
+  @js.native
+  sealed trait mouseleave extends StObject
+  inline def mouseleave: mouseleave = "mouseleave".asInstanceOf[mouseleave]
+  
+  @js.native
+  sealed trait mousemove extends StObject
+  inline def mousemove: mousemove = "mousemove".asInstanceOf[mousemove]
+  
+  @js.native
+  sealed trait mouseout extends StObject
+  inline def mouseout: mouseout = "mouseout".asInstanceOf[mouseout]
+  
+  @js.native
+  sealed trait mouseover extends StObject
+  inline def mouseover: mouseover = "mouseover".asInstanceOf[mouseover]
+  
+  @js.native
+  sealed trait mouseup extends StObject
+  inline def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
   
   @js.native
   sealed trait move extends StObject
   inline def move: move = "move".asInstanceOf[move]
   
   @js.native
-  sealed trait navigation extends StObject
-  inline def navigation: navigation = "navigation".asInstanceOf[navigation]
+  sealed trait navigationhide extends StObject
+  inline def navigationhide: navigationhide = "navigationhide".asInstanceOf[navigationhide]
   
   @js.native
-  sealed trait navigationHide extends StObject
-  inline def navigationHide: navigationHide = "navigationHide".asInstanceOf[navigationHide]
+  sealed trait navigationnext extends StObject
+  inline def navigationnext: navigationnext = "navigationnext".asInstanceOf[navigationnext]
   
   @js.native
-  sealed trait navigationNext extends StObject
-  inline def navigationNext: navigationNext = "navigationNext".asInstanceOf[navigationNext]
+  sealed trait navigationprev extends StObject
+  inline def navigationprev: navigationprev = "navigationprev".asInstanceOf[navigationprev]
   
   @js.native
-  sealed trait navigationPrev extends StObject
-  inline def navigationPrev: navigationPrev = "navigationPrev".asInstanceOf[navigationPrev]
+  sealed trait navigationshow extends StObject
+  inline def navigationshow: navigationshow = "navigationshow".asInstanceOf[navigationshow]
   
   @js.native
-  sealed trait navigationShow extends StObject
-  inline def navigationShow: navigationShow = "navigationShow".asInstanceOf[navigationShow]
-  
-  @js.native
-  sealed trait nested extends StObject
-  inline def nested: nested = "nested".asInstanceOf[nested]
-  
-  @js.native
-  sealed trait `ng-template[swiperSlide]` extends StObject
-  inline def `ng-template[swiperSlide]`: `ng-template[swiperSlide]` = "ng-template[swiperSlide]".asInstanceOf[`ng-template[swiperSlide]`]
-  
-  @js.native
-  sealed trait ngClass extends StObject
-  inline def ngClass: ngClass = "ngClass".asInstanceOf[ngClass]
+  sealed trait next extends StObject
+  inline def next: next = "next".asInstanceOf[next]
   
   @js.native
   sealed trait no extends StObject
   inline def no: no = "no".asInstanceOf[no]
   
   @js.native
-  sealed trait noSwiping extends StObject
-  inline def noSwiping: noSwiping = "noSwiping".asInstanceOf[noSwiping]
-  
-  @js.native
-  sealed trait noSwipingClass extends StObject
-  inline def noSwipingClass: noSwipingClass = "noSwipingClass".asInstanceOf[noSwipingClass]
-  
-  @js.native
-  sealed trait noSwipingSelector extends StObject
-  inline def noSwipingSelector: noSwipingSelector = "noSwipingSelector".asInstanceOf[noSwipingSelector]
-  
-  @js.native
   sealed trait none extends StObject
   inline def none: none = "none".asInstanceOf[none]
-  
-  @js.native
-  sealed trait normalizeSlideIndex extends StObject
-  inline def normalizeSlideIndex: normalizeSlideIndex = "normalizeSlideIndex".asInstanceOf[normalizeSlideIndex]
   
   @js.native
   sealed trait numeric extends StObject
   inline def numeric: numeric = "numeric".asInstanceOf[numeric]
   
   @js.native
-  sealed trait observeParents extends StObject
-  inline def observeParents: observeParents = "observeParents".asInstanceOf[observeParents]
-  
-  @js.native
-  sealed trait observeSlideChildren extends StObject
-  inline def observeSlideChildren: observeSlideChildren = "observeSlideChildren".asInstanceOf[observeSlideChildren]
-  
-  @js.native
-  sealed trait observerUpdate extends StObject
-  inline def observerUpdate: observerUpdate = "observerUpdate".asInstanceOf[observerUpdate]
+  sealed trait observerupdate extends StObject
+  inline def observerupdate: observerupdate = "observerupdate".asInstanceOf[observerupdate]
   
   @js.native
   sealed trait off extends StObject
@@ -603,32 +547,68 @@ object swiperStrings {
   inline def page: page = "page".asInstanceOf[page]
   
   @js.native
-  sealed trait pagination extends StObject
-  inline def pagination: pagination = "pagination".asInstanceOf[pagination]
+  sealed trait paginationhide extends StObject
+  inline def paginationhide: paginationhide = "paginationhide".asInstanceOf[paginationhide]
   
   @js.native
-  sealed trait paginationHide extends StObject
-  inline def paginationHide: paginationHide = "paginationHide".asInstanceOf[paginationHide]
+  sealed trait paginationrender extends StObject
+  inline def paginationrender: paginationrender = "paginationrender".asInstanceOf[paginationrender]
   
   @js.native
-  sealed trait paginationRender extends StObject
-  inline def paginationRender: paginationRender = "paginationRender".asInstanceOf[paginationRender]
+  sealed trait paginationshow extends StObject
+  inline def paginationshow: paginationshow = "paginationshow".asInstanceOf[paginationshow]
   
   @js.native
-  sealed trait paginationShow extends StObject
-  inline def paginationShow: paginationShow = "paginationShow".asInstanceOf[paginationShow]
+  sealed trait paginationupdate extends StObject
+  inline def paginationupdate: paginationupdate = "paginationupdate".asInstanceOf[paginationupdate]
   
   @js.native
-  sealed trait paginationUpdate extends StObject
-  inline def paginationUpdate: paginationUpdate = "paginationUpdate".asInstanceOf[paginationUpdate]
+  sealed trait paste extends StObject
+  inline def paste: paste = "paste".asInstanceOf[paste]
   
   @js.native
-  sealed trait parallax extends StObject
-  inline def parallax: parallax = "parallax".asInstanceOf[parallax]
+  sealed trait pause extends StObject
+  inline def pause: pause = "pause".asInstanceOf[pause]
   
   @js.native
-  sealed trait passiveListeners extends StObject
-  inline def passiveListeners: passiveListeners = "passiveListeners".asInstanceOf[passiveListeners]
+  sealed trait play extends StObject
+  inline def play: play = "play".asInstanceOf[play]
+  
+  @js.native
+  sealed trait playing extends StObject
+  inline def playing: playing = "playing".asInstanceOf[playing]
+  
+  @js.native
+  sealed trait pointercancel extends StObject
+  inline def pointercancel: pointercancel = "pointercancel".asInstanceOf[pointercancel]
+  
+  @js.native
+  sealed trait pointerdown extends StObject
+  inline def pointerdown: pointerdown = "pointerdown".asInstanceOf[pointerdown]
+  
+  @js.native
+  sealed trait pointerenter extends StObject
+  inline def pointerenter: pointerenter = "pointerenter".asInstanceOf[pointerenter]
+  
+  @js.native
+  sealed trait pointerleave extends StObject
+  inline def pointerleave: pointerleave = "pointerleave".asInstanceOf[pointerleave]
+  
+  @js.native
+  sealed trait pointermove extends StObject
+  inline def pointermove: pointermove = "pointermove".asInstanceOf[pointermove]
+  
+  @js.native
+  sealed trait pointerout extends StObject
+  inline def pointerout: pointerout = "pointerout".asInstanceOf[pointerout]
+  
+  @js.native
+  sealed trait pointerover extends StObject
+  inline def pointerover: pointerover = "pointerover".asInstanceOf[pointerover]
+  
+  @js.native
+  sealed trait pointerup extends StObject
+  inline def pointerup: pointerup = "pointerup".asInstanceOf[pointerup]
   
   @js.native
   sealed trait polite extends StObject
@@ -639,20 +619,8 @@ object swiperStrings {
   inline def popup: popup = "popup".asInstanceOf[popup]
   
   @js.native
-  sealed trait preloadImages extends StObject
-  inline def preloadImages: preloadImages = "preloadImages".asInstanceOf[preloadImages]
-  
-  @js.native
-  sealed trait preventClicks extends StObject
-  inline def preventClicks: preventClicks = "preventClicks".asInstanceOf[preventClicks]
-  
-  @js.native
-  sealed trait preventClicksPropagation extends StObject
-  inline def preventClicksPropagation: preventClicksPropagation = "preventClicksPropagation".asInstanceOf[preventClicksPropagation]
-  
-  @js.native
-  sealed trait preventInteractionOnTransition extends StObject
-  inline def preventInteractionOnTransition: preventInteractionOnTransition = "preventInteractionOnTransition".asInstanceOf[preventInteractionOnTransition]
+  sealed trait prev extends StObject
+  inline def prev: prev = "prev".asInstanceOf[prev]
   
   @js.native
   sealed trait progress extends StObject
@@ -663,16 +631,20 @@ object swiperStrings {
   inline def progressbar: progressbar = "progressbar".asInstanceOf[progressbar]
   
   @js.native
-  sealed trait reachBeginning extends StObject
-  inline def reachBeginning: reachBeginning = "reachBeginning".asInstanceOf[reachBeginning]
+  sealed trait ratechange extends StObject
+  inline def ratechange: ratechange = "ratechange".asInstanceOf[ratechange]
   
   @js.native
-  sealed trait reachEnd extends StObject
-  inline def reachEnd: reachEnd = "reachEnd".asInstanceOf[reachEnd]
+  sealed trait reachbeginning extends StObject
+  inline def reachbeginning: reachbeginning = "reachbeginning".asInstanceOf[reachbeginning]
   
   @js.native
-  sealed trait realIndexChange extends StObject
-  inline def realIndexChange: realIndexChange = "realIndexChange".asInstanceOf[realIndexChange]
+  sealed trait reachend extends StObject
+  inline def reachend: reachend = "reachend".asInstanceOf[reachend]
+  
+  @js.native
+  sealed trait realindexchange extends StObject
+  inline def realindexchange: realindexchange = "realindexchange".asInstanceOf[realindexchange]
   
   @js.native
   sealed trait removals extends StObject
@@ -687,28 +659,12 @@ object swiperStrings {
   inline def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
   
   @js.native
-  sealed trait resistance extends StObject
-  inline def resistance: resistance = "resistance".asInstanceOf[resistance]
-  
-  @js.native
-  sealed trait resistanceRatio extends StObject
-  inline def resistanceRatio: resistanceRatio = "resistanceRatio".asInstanceOf[resistanceRatio]
+  sealed trait reset extends StObject
+  inline def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
   sealed trait resize extends StObject
   inline def resize: resize = "resize".asInstanceOf[resize]
-  
-  @js.native
-  sealed trait resizeObserver extends StObject
-  inline def resizeObserver: resizeObserver = "resizeObserver".asInstanceOf[resizeObserver]
-  
-  @js.native
-  sealed trait rewind extends StObject
-  inline def rewind: rewind = "rewind".asInstanceOf[rewind]
-  
-  @js.native
-  sealed trait roundLengths extends StObject
-  inline def roundLengths: roundLengths = "roundLengths".asInstanceOf[roundLengths]
   
   @js.native
   sealed trait row extends StObject
@@ -719,212 +675,144 @@ object swiperStrings {
   inline def rtl: rtl = "rtl".asInstanceOf[rtl]
   
   @js.native
-  sealed trait runCallbacksOnInit extends StObject
-  inline def runCallbacksOnInit: runCallbacksOnInit = "runCallbacksOnInit".asInstanceOf[runCallbacksOnInit]
-  
-  @js.native
   sealed trait scroll extends StObject
   inline def scroll: scroll = "scroll".asInstanceOf[scroll]
   
   @js.native
-  sealed trait scrollbar extends StObject
-  inline def scrollbar: scrollbar = "scrollbar".asInstanceOf[scrollbar]
+  sealed trait scrollbardragend extends StObject
+  inline def scrollbardragend: scrollbardragend = "scrollbardragend".asInstanceOf[scrollbardragend]
   
   @js.native
-  sealed trait scrollbarDragEnd extends StObject
-  inline def scrollbarDragEnd: scrollbarDragEnd = "scrollbarDragEnd".asInstanceOf[scrollbarDragEnd]
+  sealed trait scrollbardragmove extends StObject
+  inline def scrollbardragmove: scrollbardragmove = "scrollbardragmove".asInstanceOf[scrollbardragmove]
   
   @js.native
-  sealed trait scrollbarDragMove extends StObject
-  inline def scrollbarDragMove: scrollbarDragMove = "scrollbarDragMove".asInstanceOf[scrollbarDragMove]
-  
-  @js.native
-  sealed trait scrollbarDragStart extends StObject
-  inline def scrollbarDragStart: scrollbarDragStart = "scrollbarDragStart".asInstanceOf[scrollbarDragStart]
+  sealed trait scrollbardragstart extends StObject
+  inline def scrollbardragstart: scrollbardragstart = "scrollbardragstart".asInstanceOf[scrollbardragstart]
   
   @js.native
   sealed trait search extends StObject
   inline def search: search = "search".asInstanceOf[search]
   
   @js.native
-  sealed trait setTransition extends StObject
-  inline def setTransition: setTransition = "setTransition".asInstanceOf[setTransition]
+  sealed trait securitypolicyviolation extends StObject
+  inline def securitypolicyviolation: securitypolicyviolation = "securitypolicyviolation".asInstanceOf[securitypolicyviolation]
   
   @js.native
-  sealed trait setTranslate extends StObject
-  inline def setTranslate: setTranslate = "setTranslate".asInstanceOf[setTranslate]
+  sealed trait seeked extends StObject
+  inline def seeked: seeked = "seeked".asInstanceOf[seeked]
   
   @js.native
-  sealed trait setWrapperSize extends StObject
-  inline def setWrapperSize: setWrapperSize = "setWrapperSize".asInstanceOf[setWrapperSize]
+  sealed trait seeking extends StObject
+  inline def seeking: seeking = "seeking".asInstanceOf[seeking]
   
   @js.native
-  sealed trait shortSwipes extends StObject
-  inline def shortSwipes: shortSwipes = "shortSwipes".asInstanceOf[shortSwipes]
+  sealed trait select extends StObject
+  inline def select: select = "select".asInstanceOf[select]
   
   @js.native
-  sealed trait simulateTouch extends StObject
-  inline def simulateTouch: simulateTouch = "simulateTouch".asInstanceOf[simulateTouch]
+  sealed trait selectionchange extends StObject
+  inline def selectionchange: selectionchange = "selectionchange".asInstanceOf[selectionchange]
+  
+  @js.native
+  sealed trait selectstart extends StObject
+  inline def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
+  
+  @js.native
+  sealed trait settransition extends StObject
+  inline def settransition: settransition = "settransition".asInstanceOf[settransition]
+  
+  @js.native
+  sealed trait settranslate extends StObject
+  inline def settranslate: settranslate = "settranslate".asInstanceOf[settranslate]
   
   @js.native
   sealed trait slide extends StObject
   inline def slide: slide = "slide".asInstanceOf[slide]
   
   @js.native
-  sealed trait slideActiveClass extends StObject
-  inline def slideActiveClass: slideActiveClass = "slideActiveClass".asInstanceOf[slideActiveClass]
+  sealed trait slidechange extends StObject
+  inline def slidechange: slidechange = "slidechange".asInstanceOf[slidechange]
   
   @js.native
-  sealed trait slideBlankClass extends StObject
-  inline def slideBlankClass: slideBlankClass = "slideBlankClass".asInstanceOf[slideBlankClass]
+  sealed trait slidechangetransitionend extends StObject
+  inline def slidechangetransitionend: slidechangetransitionend = "slidechangetransitionend".asInstanceOf[slidechangetransitionend]
   
   @js.native
-  sealed trait slideChange extends StObject
-  inline def slideChange: slideChange = "slideChange".asInstanceOf[slideChange]
+  sealed trait slidechangetransitionstart extends StObject
+  inline def slidechangetransitionstart: slidechangetransitionstart = "slidechangetransitionstart".asInstanceOf[slidechangetransitionstart]
   
   @js.native
-  sealed trait slideChangeTransitionEnd extends StObject
-  inline def slideChangeTransitionEnd: slideChangeTransitionEnd = "slideChangeTransitionEnd".asInstanceOf[slideChangeTransitionEnd]
+  sealed trait slidenexttransitionend extends StObject
+  inline def slidenexttransitionend: slidenexttransitionend = "slidenexttransitionend".asInstanceOf[slidenexttransitionend]
   
   @js.native
-  sealed trait slideChangeTransitionStart extends StObject
-  inline def slideChangeTransitionStart: slideChangeTransitionStart = "slideChangeTransitionStart".asInstanceOf[slideChangeTransitionStart]
+  sealed trait slidenexttransitionstart extends StObject
+  inline def slidenexttransitionstart: slidenexttransitionstart = "slidenexttransitionstart".asInstanceOf[slidenexttransitionstart]
   
   @js.native
-  sealed trait slideClass extends StObject
-  inline def slideClass: slideClass = "slideClass".asInstanceOf[slideClass]
+  sealed trait slideprevtransitionend extends StObject
+  inline def slideprevtransitionend: slideprevtransitionend = "slideprevtransitionend".asInstanceOf[slideprevtransitionend]
   
   @js.native
-  sealed trait slideDuplicateActiveClass extends StObject
-  inline def slideDuplicateActiveClass: slideDuplicateActiveClass = "slideDuplicateActiveClass".asInstanceOf[slideDuplicateActiveClass]
+  sealed trait slideprevtransitionstart extends StObject
+  inline def slideprevtransitionstart: slideprevtransitionstart = "slideprevtransitionstart".asInstanceOf[slideprevtransitionstart]
   
   @js.native
-  sealed trait slideDuplicateClass extends StObject
-  inline def slideDuplicateClass: slideDuplicateClass = "slideDuplicateClass".asInstanceOf[slideDuplicateClass]
+  sealed trait slideresettransitionend extends StObject
+  inline def slideresettransitionend: slideresettransitionend = "slideresettransitionend".asInstanceOf[slideresettransitionend]
   
   @js.native
-  sealed trait slideDuplicateNextClass extends StObject
-  inline def slideDuplicateNextClass: slideDuplicateNextClass = "slideDuplicateNextClass".asInstanceOf[slideDuplicateNextClass]
+  sealed trait slideresettransitionstart extends StObject
+  inline def slideresettransitionstart: slideresettransitionstart = "slideresettransitionstart".asInstanceOf[slideresettransitionstart]
   
   @js.native
-  sealed trait slideDuplicatePrevClass extends StObject
-  inline def slideDuplicatePrevClass: slideDuplicatePrevClass = "slideDuplicatePrevClass".asInstanceOf[slideDuplicatePrevClass]
+  sealed trait sliderfirstmove extends StObject
+  inline def sliderfirstmove: sliderfirstmove = "sliderfirstmove".asInstanceOf[sliderfirstmove]
   
   @js.native
-  sealed trait slideNextClass extends StObject
-  inline def slideNextClass: slideNextClass = "slideNextClass".asInstanceOf[slideNextClass]
+  sealed trait slidermove extends StObject
+  inline def slidermove: slidermove = "slidermove".asInstanceOf[slidermove]
   
   @js.native
-  sealed trait slideNextTransitionEnd extends StObject
-  inline def slideNextTransitionEnd: slideNextTransitionEnd = "slideNextTransitionEnd".asInstanceOf[slideNextTransitionEnd]
+  sealed trait slidesgridlengthchange extends StObject
+  inline def slidesgridlengthchange: slidesgridlengthchange = "slidesgridlengthchange".asInstanceOf[slidesgridlengthchange]
   
   @js.native
-  sealed trait slideNextTransitionStart extends StObject
-  inline def slideNextTransitionStart: slideNextTransitionStart = "slideNextTransitionStart".asInstanceOf[slideNextTransitionStart]
+  sealed trait slideslengthchange extends StObject
+  inline def slideslengthchange: slideslengthchange = "slideslengthchange".asInstanceOf[slideslengthchange]
   
   @js.native
-  sealed trait slidePrevClass extends StObject
-  inline def slidePrevClass: slidePrevClass = "slidePrevClass".asInstanceOf[slidePrevClass]
+  sealed trait slotchange extends StObject
+  inline def slotchange: slotchange = "slotchange".asInstanceOf[slotchange]
   
   @js.native
-  sealed trait slidePrevTransitionEnd extends StObject
-  inline def slidePrevTransitionEnd: slidePrevTransitionEnd = "slidePrevTransitionEnd".asInstanceOf[slidePrevTransitionEnd]
+  sealed trait snapgridlengthchange extends StObject
+  inline def snapgridlengthchange: snapgridlengthchange = "snapgridlengthchange".asInstanceOf[snapgridlengthchange]
   
   @js.native
-  sealed trait slidePrevTransitionStart extends StObject
-  inline def slidePrevTransitionStart: slidePrevTransitionStart = "slidePrevTransitionStart".asInstanceOf[slidePrevTransitionStart]
-  
-  @js.native
-  sealed trait slideResetTransitionEnd extends StObject
-  inline def slideResetTransitionEnd: slideResetTransitionEnd = "slideResetTransitionEnd".asInstanceOf[slideResetTransitionEnd]
-  
-  @js.native
-  sealed trait slideResetTransitionStart extends StObject
-  inline def slideResetTransitionStart: slideResetTransitionStart = "slideResetTransitionStart".asInstanceOf[slideResetTransitionStart]
-  
-  @js.native
-  sealed trait slideToClickedSlide extends StObject
-  inline def slideToClickedSlide: slideToClickedSlide = "slideToClickedSlide".asInstanceOf[slideToClickedSlide]
-  
-  @js.native
-  sealed trait slideVisibleClass extends StObject
-  inline def slideVisibleClass: slideVisibleClass = "slideVisibleClass".asInstanceOf[slideVisibleClass]
-  
-  @js.native
-  sealed trait sliderFirstMove extends StObject
-  inline def sliderFirstMove: sliderFirstMove = "sliderFirstMove".asInstanceOf[sliderFirstMove]
-  
-  @js.native
-  sealed trait sliderMove extends StObject
-  inline def sliderMove: sliderMove = "sliderMove".asInstanceOf[sliderMove]
-  
-  @js.native
-  sealed trait slidesEl extends StObject
-  inline def slidesEl: slidesEl = "slidesEl".asInstanceOf[slidesEl]
-  
-  @js.native
-  sealed trait slidesGridLengthChange extends StObject
-  inline def slidesGridLengthChange: slidesGridLengthChange = "slidesGridLengthChange".asInstanceOf[slidesGridLengthChange]
-  
-  @js.native
-  sealed trait slidesLengthChange extends StObject
-  inline def slidesLengthChange: slidesLengthChange = "slidesLengthChange".asInstanceOf[slidesLengthChange]
-  
-  @js.native
-  sealed trait slidesOffsetAfter extends StObject
-  inline def slidesOffsetAfter: slidesOffsetAfter = "slidesOffsetAfter".asInstanceOf[slidesOffsetAfter]
-  
-  @js.native
-  sealed trait slidesOffsetBefore extends StObject
-  inline def slidesOffsetBefore: slidesOffsetBefore = "slidesOffsetBefore".asInstanceOf[slidesOffsetBefore]
-  
-  @js.native
-  sealed trait slidesPerGroup extends StObject
-  inline def slidesPerGroup: slidesPerGroup = "slidesPerGroup".asInstanceOf[slidesPerGroup]
-  
-  @js.native
-  sealed trait slidesPerGroupSkip extends StObject
-  inline def slidesPerGroupSkip: slidesPerGroupSkip = "slidesPerGroupSkip".asInstanceOf[slidesPerGroupSkip]
-  
-  @js.native
-  sealed trait slidesPerView extends StObject
-  inline def slidesPerView: slidesPerView = "slidesPerView".asInstanceOf[slidesPerView]
-  
-  @js.native
-  sealed trait snapGridLengthChange extends StObject
-  inline def snapGridLengthChange: snapGridLengthChange = "snapGridLengthChange".asInstanceOf[snapGridLengthChange]
-  
-  @js.native
-  sealed trait snapIndexChange extends StObject
-  inline def snapIndexChange: snapIndexChange = "snapIndexChange".asInstanceOf[snapIndexChange]
-  
-  @js.native
-  sealed trait spaceBetween extends StObject
-  inline def spaceBetween: spaceBetween = "spaceBetween".asInstanceOf[spaceBetween]
-  
-  @js.native
-  sealed trait speed extends StObject
-  inline def speed: speed = "speed".asInstanceOf[speed]
+  sealed trait snapindexchange extends StObject
+  inline def snapindexchange: snapindexchange = "snapindexchange".asInstanceOf[snapindexchange]
   
   @js.native
   sealed trait spelling extends StObject
   inline def spelling: spelling = "spelling".asInstanceOf[spelling]
   
   @js.native
+  sealed trait stalled extends StObject
+  inline def stalled: stalled = "stalled".asInstanceOf[stalled]
+  
+  @js.native
   sealed trait step extends StObject
   inline def step: step = "step".asInstanceOf[step]
   
   @js.native
-  sealed trait swipeHandler extends StObject
-  inline def swipeHandler: swipeHandler = "swipeHandler".asInstanceOf[swipeHandler]
+  sealed trait submit extends StObject
+  inline def submit: submit = "submit".asInstanceOf[submit]
   
   @js.native
-  sealed trait swiper extends StObject
-  inline def swiper: swiper = "swiper".asInstanceOf[swiper]
-  
-  @js.native
-  sealed trait `swiperComma [swiper]` extends StObject
-  inline def `swiperComma [swiper]`: `swiperComma [swiper]` = ("swiper, [swiper]").asInstanceOf[`swiperComma [swiper]`]
+  sealed trait suspend extends StObject
+  inline def suspend: suspend = "suspend".asInstanceOf[suspend]
   
   @js.native
   sealed trait tap extends StObject
@@ -947,80 +835,60 @@ object swiperStrings {
   inline def `text removals`: `text removals` = ("text removals").asInstanceOf[`text removals`]
   
   @js.native
-  sealed trait threshold extends StObject
-  inline def threshold: threshold = "threshold".asInstanceOf[threshold]
-  
-  @js.native
-  sealed trait thumbs extends StObject
-  inline def thumbs: thumbs = "thumbs".asInstanceOf[thumbs]
-  
-  @js.native
   sealed trait time extends StObject
   inline def time: time = "time".asInstanceOf[time]
   
   @js.native
-  sealed trait toEdge extends StObject
-  inline def toEdge: toEdge = "toEdge".asInstanceOf[toEdge]
+  sealed trait timeupdate extends StObject
+  inline def timeupdate: timeupdate = "timeupdate".asInstanceOf[timeupdate]
   
   @js.native
-  sealed trait touchAngle extends StObject
-  inline def touchAngle: touchAngle = "touchAngle".asInstanceOf[touchAngle]
+  sealed trait toedge extends StObject
+  inline def toedge: toedge = "toedge".asInstanceOf[toedge]
   
   @js.native
-  sealed trait touchEnd extends StObject
-  inline def touchEnd: touchEnd = "touchEnd".asInstanceOf[touchEnd]
+  sealed trait toggle extends StObject
+  inline def toggle: toggle = "toggle".asInstanceOf[toggle]
   
   @js.native
-  sealed trait touchEventsTarget extends StObject
-  inline def touchEventsTarget: touchEventsTarget = "touchEventsTarget".asInstanceOf[touchEventsTarget]
+  sealed trait touchcancel extends StObject
+  inline def touchcancel: touchcancel = "touchcancel".asInstanceOf[touchcancel]
   
   @js.native
-  sealed trait touchMove extends StObject
-  inline def touchMove: touchMove = "touchMove".asInstanceOf[touchMove]
+  sealed trait touchend extends StObject
+  inline def touchend: touchend = "touchend".asInstanceOf[touchend]
   
   @js.native
-  sealed trait touchMoveOpposite extends StObject
-  inline def touchMoveOpposite: touchMoveOpposite = "touchMoveOpposite".asInstanceOf[touchMoveOpposite]
+  sealed trait touchmove extends StObject
+  inline def touchmove: touchmove = "touchmove".asInstanceOf[touchmove]
   
   @js.native
-  sealed trait touchMoveStopPropagation extends StObject
-  inline def touchMoveStopPropagation: touchMoveStopPropagation = "touchMoveStopPropagation".asInstanceOf[touchMoveStopPropagation]
+  sealed trait touchmoveopposite extends StObject
+  inline def touchmoveopposite: touchmoveopposite = "touchmoveopposite".asInstanceOf[touchmoveopposite]
   
   @js.native
-  sealed trait touchRatio extends StObject
-  inline def touchRatio: touchRatio = "touchRatio".asInstanceOf[touchRatio]
+  sealed trait touchstart extends StObject
+  inline def touchstart: touchstart = "touchstart".asInstanceOf[touchstart]
   
   @js.native
-  sealed trait touchReleaseOnEdges extends StObject
-  inline def touchReleaseOnEdges: touchReleaseOnEdges = "touchReleaseOnEdges".asInstanceOf[touchReleaseOnEdges]
+  sealed trait transitioncancel extends StObject
+  inline def transitioncancel: transitioncancel = "transitioncancel".asInstanceOf[transitioncancel]
   
   @js.native
-  sealed trait touchStart extends StObject
-  inline def touchStart: touchStart = "touchStart".asInstanceOf[touchStart]
+  sealed trait transitionend extends StObject
+  inline def transitionend: transitionend = "transitionend".asInstanceOf[transitionend]
   
   @js.native
-  sealed trait touchStartForcePreventDefault extends StObject
-  inline def touchStartForcePreventDefault: touchStartForcePreventDefault = "touchStartForcePreventDefault".asInstanceOf[touchStartForcePreventDefault]
+  sealed trait transitionrun extends StObject
+  inline def transitionrun: transitionrun = "transitionrun".asInstanceOf[transitionrun]
   
   @js.native
-  sealed trait touchStartPreventDefault extends StObject
-  inline def touchStartPreventDefault: touchStartPreventDefault = "touchStartPreventDefault".asInstanceOf[touchStartPreventDefault]
-  
-  @js.native
-  sealed trait transitionEnd extends StObject
-  inline def transitionEnd: transitionEnd = "transitionEnd".asInstanceOf[transitionEnd]
-  
-  @js.native
-  sealed trait transitionStart extends StObject
-  inline def transitionStart: transitionStart = "transitionStart".asInstanceOf[transitionStart]
+  sealed trait transitionstart extends StObject
+  inline def transitionstart: transitionstart = "transitionstart".asInstanceOf[transitionstart]
   
   @js.native
   sealed trait tree extends StObject
   inline def tree: tree = "tree".asInstanceOf[tree]
-  
-  @js.native
-  sealed trait uniqueNavElements extends StObject
-  inline def uniqueNavElements: uniqueNavElements = "uniqueNavElements".asInstanceOf[uniqueNavElements]
   
   @js.native
   sealed trait unlock extends StObject
@@ -1031,66 +899,50 @@ object swiperStrings {
   inline def update: update = "update".asInstanceOf[update]
   
   @js.native
-  sealed trait updateOnImagesReady extends StObject
-  inline def updateOnImagesReady: updateOnImagesReady = "updateOnImagesReady".asInstanceOf[updateOnImagesReady]
-  
-  @js.native
-  sealed trait updateOnWindowResize extends StObject
-  inline def updateOnWindowResize: updateOnWindowResize = "updateOnWindowResize".asInstanceOf[updateOnWindowResize]
-  
-  @js.native
   sealed trait url extends StObject
   inline def url: url = "url".asInstanceOf[url]
-  
-  @js.native
-  sealed trait userAgent extends StObject
-  inline def userAgent: userAgent = "userAgent".asInstanceOf[userAgent]
   
   @js.native
   sealed trait vertical extends StObject
   inline def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
-  sealed trait virtual extends StObject
-  inline def virtual: virtual = "virtual".asInstanceOf[virtual]
+  sealed trait volumechange extends StObject
+  inline def volumechange: volumechange = "volumechange".asInstanceOf[volumechange]
   
   @js.native
-  sealed trait virtualIndex extends StObject
-  inline def virtualIndex: virtualIndex = "virtualIndex".asInstanceOf[virtualIndex]
+  sealed trait waiting extends StObject
+  inline def waiting: waiting = "waiting".asInstanceOf[waiting]
   
   @js.native
-  sealed trait virtualTranslate extends StObject
-  inline def virtualTranslate: virtualTranslate = "virtualTranslate".asInstanceOf[virtualTranslate]
+  sealed trait webkitanimationend extends StObject
+  inline def webkitanimationend: webkitanimationend = "webkitanimationend".asInstanceOf[webkitanimationend]
   
   @js.native
-  sealed trait watchOverflow extends StObject
-  inline def watchOverflow: watchOverflow = "watchOverflow".asInstanceOf[watchOverflow]
+  sealed trait webkitanimationiteration extends StObject
+  inline def webkitanimationiteration: webkitanimationiteration = "webkitanimationiteration".asInstanceOf[webkitanimationiteration]
   
   @js.native
-  sealed trait watchSlidesProgress extends StObject
-  inline def watchSlidesProgress: watchSlidesProgress = "watchSlidesProgress".asInstanceOf[watchSlidesProgress]
+  sealed trait webkitanimationstart extends StObject
+  inline def webkitanimationstart: webkitanimationstart = "webkitanimationstart".asInstanceOf[webkitanimationstart]
   
   @js.native
-  sealed trait width extends StObject
-  inline def width: width = "width".asInstanceOf[width]
+  sealed trait webkittransitionend extends StObject
+  inline def webkittransitionend: webkittransitionend = "webkittransitionend".asInstanceOf[webkittransitionend]
+  
+  @js.native
+  sealed trait wheel extends StObject
+  inline def wheel: wheel = "wheel".asInstanceOf[wheel]
   
   @js.native
   sealed trait wrapper extends StObject
   inline def wrapper: wrapper = "wrapper".asInstanceOf[wrapper]
   
   @js.native
-  sealed trait wrapperClass extends StObject
-  inline def wrapperClass: wrapperClass = "wrapperClass".asInstanceOf[wrapperClass]
-  
-  @js.native
   sealed trait yes extends StObject
   inline def yes: yes = "yes".asInstanceOf[yes]
   
   @js.native
-  sealed trait zoom extends StObject
-  inline def zoom: zoom = "zoom".asInstanceOf[zoom]
-  
-  @js.native
-  sealed trait zoomChange extends StObject
-  inline def zoomChange: zoomChange = "zoomChange".asInstanceOf[zoomChange]
+  sealed trait zoomchange extends StObject
+  inline def zoomchange: zoomchange = "zoomchange".asInstanceOf[zoomchange]
 }

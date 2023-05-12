@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ol-mapbox-style" : "10.5.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ol-mapbox-style" : "10.5.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

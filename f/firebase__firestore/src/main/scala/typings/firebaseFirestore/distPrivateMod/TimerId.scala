@@ -16,6 +16,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* Excluded from this release type: _TestingHooks */
 /**
   * Wellknown "timer" IDs used when scheduling delayed operations on the
   * AsyncQueue. These IDs can then be used from tests to check for the presence

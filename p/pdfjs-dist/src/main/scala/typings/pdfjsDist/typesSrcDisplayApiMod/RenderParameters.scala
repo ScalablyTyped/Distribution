@@ -3,6 +3,9 @@ package typings.pdfjsDist.typesSrcDisplayApiMod
 import typings.pdfjsDist.typesSrcDisplayAnnotationStorageMod.PrintAnnotationStorage
 import typings.pdfjsDist.typesSrcDisplayDisplayUtilsMod.PageViewport
 import typings.pdfjsDist.typesSrcDisplayOptionalContentConfigMod.OptionalContentConfig
+import typings.std.CanvasGradient
+import typings.std.CanvasPattern
+import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
@@ -34,7 +37,8 @@ trait RenderParameters extends StObject {
   var annotationMode: js.UndefOr[Double] = js.undefined
   
   /**
-    * - Background to use for the canvas.
+    * - Background
+    * to use for the canvas.
     * Any valid `canvas.fillStyle` can be used: a `DOMString` parsed as CSS
     * <color> value, a `CanvasGradient` object (a linear or radial gradient) or
     * a `CanvasPattern` object (a repetitive image). The default value is
@@ -43,18 +47,13 @@ trait RenderParameters extends StObject {
     * NOTE: This option may be partially, or completely, ignored when the
     * `pageColors`-option is used.
     */
-  var background: js.UndefOr[String | js.Object] = js.undefined
+  var background: js.UndefOr[String | CanvasGradient | CanvasPattern] = js.undefined
   
   /**
-    * - A 2D context of a DOM Canvas object.
+    * - A 2D context of a DOM
+    * Canvas object.
     */
-  var canvasContext: js.Object
-  
-  /**
-    * - The factory instance that will be used
-    * when creating canvases. The default value is {new DOMCanvasFactory()}.
-    */
-  var canvasFactory: js.UndefOr[js.Object] = js.undefined
+  var canvasContext: CanvasRenderingContext2D
   
   /**
     * - Rendering intent, can be 'display', 'print',
@@ -93,7 +92,7 @@ trait RenderParameters extends StObject {
 }
 object RenderParameters {
   
-  inline def apply(canvasContext: js.Object, viewport: PageViewport): RenderParameters = {
+  inline def apply(canvasContext: CanvasRenderingContext2D, viewport: PageViewport): RenderParameters = {
     val __obj = js.Dynamic.literal(canvasContext = canvasContext.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderParameters]
   }
@@ -109,15 +108,11 @@ object RenderParameters {
     
     inline def setAnnotationModeUndefined: Self = StObject.set(x, "annotationMode", js.undefined)
     
-    inline def setBackground(value: String | js.Object): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: String | CanvasGradient | CanvasPattern): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    inline def setCanvasContext(value: js.Object): Self = StObject.set(x, "canvasContext", value.asInstanceOf[js.Any])
-    
-    inline def setCanvasFactory(value: js.Object): Self = StObject.set(x, "canvasFactory", value.asInstanceOf[js.Any])
-    
-    inline def setCanvasFactoryUndefined: Self = StObject.set(x, "canvasFactory", js.undefined)
+    inline def setCanvasContext(value: CanvasRenderingContext2D): Self = StObject.set(x, "canvasContext", value.asInstanceOf[js.Any])
     
     inline def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     

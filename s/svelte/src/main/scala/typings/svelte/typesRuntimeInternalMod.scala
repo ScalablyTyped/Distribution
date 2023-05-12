@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.AddEventListenerOptions
 import typings.std.CSSStyleSheet
 import typings.std.ChildNode
+import typings.std.Comment
 import typings.std.CustomEvent
 import typings.std.Document
 import typings.std.Element
@@ -86,6 +87,8 @@ import typings.std.ShadowRoot
 import typings.std.Text
 import typings.svelte.anon.Bubbles
 import typings.svelte.anon.End
+import typings.svelte.anon.P
+import typings.svelte.anon.R
 import typings.svelte.anon.Render
 import typings.svelte.anon.Run
 import typings.svelte.anon.`0`
@@ -270,6 +273,7 @@ import typings.svelte.typesRuntimeInternalDomMod.NodeEx
 import typings.svelte.typesRuntimeInternalLifecycleMod.DispatchOptions
 import typings.svelte.typesRuntimeInternalLoopMod.Task
 import typings.svelte.typesRuntimeInternalLoopMod.TaskCallback
+import typings.svelte.typesRuntimeInternalResizeObserverSingletonMod.ResizeObserverOptions
 import typings.svelte.typesRuntimeInternalTransitionsMod.TransitionFn
 import typings.svelte.typesRuntimeInternalTypesMod.Fragment
 import typings.svelte.typesRuntimeStoreMod.Readable_
@@ -297,6 +301,13 @@ object typesRuntimeInternalMod {
     def this(claimed_nodes: js.Array[ChildNode]) = this()
     def this(claimed_nodes: js.Array[ChildNode], is_svg: Boolean) = this()
     def this(claimed_nodes: Unit, is_svg: Boolean) = this()
+  }
+  
+  @JSImport("svelte/types/runtime/internal", "ResizeObserverSingleton")
+  @js.native
+  open class ResizeObserverSingleton ()
+    extends typings.svelte.typesRuntimeInternalDomMod.ResizeObserverSingleton {
+    def this(options: ResizeObserverOptions) = this()
   }
   
   @JSImport("svelte/types/runtime/internal", "SvelteComponent")
@@ -331,11 +342,11 @@ object typesRuntimeInternalMod {
   
   inline def addFlushCallback(fn: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add_flush_callback")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
+  inline def addIframeResizeListener(node: HTMLElement, fn: js.Function0[Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("add_iframe_resize_listener")(node.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  
   inline def addLocation(element: Any, file: Any, line: Any, column: Any, char: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add_location")(element.asInstanceOf[js.Any], file.asInstanceOf[js.Any], line.asInstanceOf[js.Any], column.asInstanceOf[js.Any], char.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def addRenderCallback(fn: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add_render_callback")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
-  inline def addResizeListener(node: HTMLElement, fn: js.Function0[Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("add_resize_listener")(node.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
   inline def addStyles(style_object: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("add_styles")(style_object.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -381,6 +392,8 @@ object typesRuntimeInternalMod {
   
   inline def children(element: Element): js.Array[ChildNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("children")(element.asInstanceOf[js.Any]).asInstanceOf[js.Array[ChildNode]]
   
+  inline def claimComment(nodes: ChildNodeArray, data: Any): Comment = (^.asInstanceOf[js.Dynamic].applyDynamic("claim_comment")(nodes.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Comment]
+  
   inline def claimComponent(block: Any, parent_nodes: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("claim_component")(block.asInstanceOf[js.Any], parent_nodes.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def claimElement(nodes: ChildNodeArray, name: String, attributes: StringDictionary[Boolean]): Element | SVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("claim_element")(nodes.asInstanceOf[js.Any], name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Element | SVGElement]
@@ -395,6 +408,8 @@ object typesRuntimeInternalMod {
   
   inline def clearLoops(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear_loops")().asInstanceOf[Unit]
   
+  inline def comment(content: String): Comment = ^.asInstanceOf[js.Dynamic].applyDynamic("comment")(content.asInstanceOf[js.Any]).asInstanceOf[Comment]
+  
   inline def componentSubscribe(component: Any, store: Any, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("component_subscribe")(component.asInstanceOf[js.Any], store.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def computeRestProps(props: Any, keys: Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("compute_rest_props")(props.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Object]
@@ -404,6 +419,10 @@ object typesRuntimeInternalMod {
   inline def constructSvelteComponent(component: Any, props: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("construct_svelte_component")(component.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def constructSvelteComponentDev(component: Any, props: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("construct_svelte_component_dev")(component.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  @JSImport("svelte/types/runtime/internal", "contenteditable_truthy_values")
+  @js.native
+  val contenteditableTruthyValues: js.Array[String | Double | Boolean] = js.native
   
   inline def createAnimation(node: Element & ElementCSSInlineStyle, from: PositionRect, fn: AnimationFn, params: Any): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("create_animation")(node.asInstanceOf[js.Any], from.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
@@ -941,6 +960,8 @@ object typesRuntimeInternalMod {
   
   inline def flush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Unit]
   
+  inline def flushRenderCallbacks(fns: js.Array[js.Function]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush_render_callbacks")(fns.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   inline def getAllContexts[T /* <: Map[Any, Any] */](): T = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllContexts")().asInstanceOf[T]
   
   inline def getAllDirtyFromScope(DollarDollarscope: Any): js.Array[Any] | `-1` = ^.asInstanceOf[js.Dynamic].applyDynamic("get_all_dirty_from_scope")(DollarDollarscope.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any] | `-1`]
@@ -998,6 +1019,10 @@ object typesRuntimeInternalMod {
     append_styles: Any,
     dirty: js.Array[Double]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(component.asInstanceOf[js.Any], options.asInstanceOf[js.Any], instance.asInstanceOf[js.Any], create_fragment.asInstanceOf[js.Any], not_equal.asInstanceOf[js.Any], props.asInstanceOf[js.Any], append_styles.asInstanceOf[js.Any], dirty.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def initBindingGroup(group: js.Array[HTMLInputElement]): P = ^.asInstanceOf[js.Dynamic].applyDynamic("init_binding_group")(group.asInstanceOf[js.Any]).asInstanceOf[P]
+  
+  inline def initBindingGroupDynamic(group: Any, indexes: js.Array[Double]): R = (^.asInstanceOf[js.Dynamic].applyDynamic("init_binding_group_dynamic")(group.asInstanceOf[js.Any], indexes.asInstanceOf[js.Any])).asInstanceOf[R]
   
   inline def insert(target: Node, node: Node): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(target.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def insert(target: Node, node: Node, anchor: Node): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(target.asInstanceOf[js.Any], node.asInstanceOf[js.Any], anchor.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -1076,9 +1101,45 @@ object typesRuntimeInternalMod {
     event: String,
     handler: EventListenerOrEventListenerObject,
     options: Boolean,
+    has_prevent_default: Boolean,
+    has_stop_propagation: Boolean,
+    has_stop_immediate_propagation: Boolean
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen_dev")(node.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any], has_prevent_default.asInstanceOf[js.Any], has_stop_propagation.asInstanceOf[js.Any], has_stop_immediate_propagation.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listenDev(
+    node: Node,
+    event: String,
+    handler: EventListenerOrEventListenerObject,
+    options: Boolean,
+    has_prevent_default: Boolean,
+    has_stop_propagation: Unit,
+    has_stop_immediate_propagation: Boolean
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen_dev")(node.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any], has_prevent_default.asInstanceOf[js.Any], has_stop_propagation.asInstanceOf[js.Any], has_stop_immediate_propagation.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listenDev(
+    node: Node,
+    event: String,
+    handler: EventListenerOrEventListenerObject,
+    options: Boolean,
     has_prevent_default: Unit,
     has_stop_propagation: Boolean
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen_dev")(node.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any], has_prevent_default.asInstanceOf[js.Any], has_stop_propagation.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listenDev(
+    node: Node,
+    event: String,
+    handler: EventListenerOrEventListenerObject,
+    options: Boolean,
+    has_prevent_default: Unit,
+    has_stop_propagation: Boolean,
+    has_stop_immediate_propagation: Boolean
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen_dev")(node.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any], has_prevent_default.asInstanceOf[js.Any], has_stop_propagation.asInstanceOf[js.Any], has_stop_immediate_propagation.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listenDev(
+    node: Node,
+    event: String,
+    handler: EventListenerOrEventListenerObject,
+    options: Boolean,
+    has_prevent_default: Unit,
+    has_stop_propagation: Unit,
+    has_stop_immediate_propagation: Boolean
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen_dev")(node.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any], has_prevent_default.asInstanceOf[js.Any], has_stop_propagation.asInstanceOf[js.Any], has_stop_immediate_propagation.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   inline def listenDev(
     node: Node,
     event: String,
@@ -1099,9 +1160,45 @@ object typesRuntimeInternalMod {
     event: String,
     handler: EventListenerOrEventListenerObject,
     options: Unit,
+    has_prevent_default: Boolean,
+    has_stop_propagation: Boolean,
+    has_stop_immediate_propagation: Boolean
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen_dev")(node.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any], has_prevent_default.asInstanceOf[js.Any], has_stop_propagation.asInstanceOf[js.Any], has_stop_immediate_propagation.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listenDev(
+    node: Node,
+    event: String,
+    handler: EventListenerOrEventListenerObject,
+    options: Unit,
+    has_prevent_default: Boolean,
+    has_stop_propagation: Unit,
+    has_stop_immediate_propagation: Boolean
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen_dev")(node.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any], has_prevent_default.asInstanceOf[js.Any], has_stop_propagation.asInstanceOf[js.Any], has_stop_immediate_propagation.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listenDev(
+    node: Node,
+    event: String,
+    handler: EventListenerOrEventListenerObject,
+    options: Unit,
     has_prevent_default: Unit,
     has_stop_propagation: Boolean
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen_dev")(node.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any], has_prevent_default.asInstanceOf[js.Any], has_stop_propagation.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listenDev(
+    node: Node,
+    event: String,
+    handler: EventListenerOrEventListenerObject,
+    options: Unit,
+    has_prevent_default: Unit,
+    has_stop_propagation: Boolean,
+    has_stop_immediate_propagation: Boolean
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen_dev")(node.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any], has_prevent_default.asInstanceOf[js.Any], has_stop_propagation.asInstanceOf[js.Any], has_stop_immediate_propagation.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listenDev(
+    node: Node,
+    event: String,
+    handler: EventListenerOrEventListenerObject,
+    options: Unit,
+    has_prevent_default: Unit,
+    has_stop_propagation: Unit,
+    has_stop_immediate_propagation: Boolean
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen_dev")(node.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any], has_prevent_default.asInstanceOf[js.Any], has_stop_propagation.asInstanceOf[js.Any], has_stop_immediate_propagation.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   inline def listenDev(
     node: Node,
     event: String,
@@ -1128,9 +1225,45 @@ object typesRuntimeInternalMod {
     event: String,
     handler: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions,
+    has_prevent_default: Boolean,
+    has_stop_propagation: Boolean,
+    has_stop_immediate_propagation: Boolean
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen_dev")(node.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any], has_prevent_default.asInstanceOf[js.Any], has_stop_propagation.asInstanceOf[js.Any], has_stop_immediate_propagation.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listenDev(
+    node: Node,
+    event: String,
+    handler: EventListenerOrEventListenerObject,
+    options: AddEventListenerOptions,
+    has_prevent_default: Boolean,
+    has_stop_propagation: Unit,
+    has_stop_immediate_propagation: Boolean
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen_dev")(node.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any], has_prevent_default.asInstanceOf[js.Any], has_stop_propagation.asInstanceOf[js.Any], has_stop_immediate_propagation.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listenDev(
+    node: Node,
+    event: String,
+    handler: EventListenerOrEventListenerObject,
+    options: AddEventListenerOptions,
     has_prevent_default: Unit,
     has_stop_propagation: Boolean
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen_dev")(node.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any], has_prevent_default.asInstanceOf[js.Any], has_stop_propagation.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listenDev(
+    node: Node,
+    event: String,
+    handler: EventListenerOrEventListenerObject,
+    options: AddEventListenerOptions,
+    has_prevent_default: Unit,
+    has_stop_propagation: Boolean,
+    has_stop_immediate_propagation: Boolean
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen_dev")(node.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any], has_prevent_default.asInstanceOf[js.Any], has_stop_propagation.asInstanceOf[js.Any], has_stop_immediate_propagation.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listenDev(
+    node: Node,
+    event: String,
+    handler: EventListenerOrEventListenerObject,
+    options: AddEventListenerOptions,
+    has_prevent_default: Unit,
+    has_stop_propagation: Unit,
+    has_stop_immediate_propagation: Boolean
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen_dev")(node.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any], has_prevent_default.asInstanceOf[js.Any], has_stop_propagation.asInstanceOf[js.Any], has_stop_immediate_propagation.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   inline def listenDev(
     node: Node,
     event: String,
@@ -1157,9 +1290,45 @@ object typesRuntimeInternalMod {
     event: String,
     handler: EventListenerOrEventListenerObject,
     options: EventListenerOptions,
+    has_prevent_default: Boolean,
+    has_stop_propagation: Boolean,
+    has_stop_immediate_propagation: Boolean
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen_dev")(node.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any], has_prevent_default.asInstanceOf[js.Any], has_stop_propagation.asInstanceOf[js.Any], has_stop_immediate_propagation.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listenDev(
+    node: Node,
+    event: String,
+    handler: EventListenerOrEventListenerObject,
+    options: EventListenerOptions,
+    has_prevent_default: Boolean,
+    has_stop_propagation: Unit,
+    has_stop_immediate_propagation: Boolean
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen_dev")(node.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any], has_prevent_default.asInstanceOf[js.Any], has_stop_propagation.asInstanceOf[js.Any], has_stop_immediate_propagation.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listenDev(
+    node: Node,
+    event: String,
+    handler: EventListenerOrEventListenerObject,
+    options: EventListenerOptions,
     has_prevent_default: Unit,
     has_stop_propagation: Boolean
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen_dev")(node.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any], has_prevent_default.asInstanceOf[js.Any], has_stop_propagation.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listenDev(
+    node: Node,
+    event: String,
+    handler: EventListenerOrEventListenerObject,
+    options: EventListenerOptions,
+    has_prevent_default: Unit,
+    has_stop_propagation: Boolean,
+    has_stop_immediate_propagation: Boolean
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen_dev")(node.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any], has_prevent_default.asInstanceOf[js.Any], has_stop_propagation.asInstanceOf[js.Any], has_stop_immediate_propagation.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listenDev(
+    node: Node,
+    event: String,
+    handler: EventListenerOrEventListenerObject,
+    options: EventListenerOptions,
+    has_prevent_default: Unit,
+    has_stop_propagation: Unit,
+    has_stop_immediate_propagation: Boolean
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen_dev")(node.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any], has_prevent_default.asInstanceOf[js.Any], has_stop_propagation.asInstanceOf[js.Any], has_stop_immediate_propagation.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
   inline def loop(callback: TaskCallback): Task = ^.asInstanceOf[js.Dynamic].applyDynamic("loop")(callback.asInstanceOf[js.Any]).asInstanceOf[Task]
   
@@ -1212,6 +1381,18 @@ object typesRuntimeInternalMod {
   def raf: js.Function0[Unit] | (js.Function1[/* cb */ Any, Double]) = js.native
   inline def raf_=(x: js.Function0[Unit] | (js.Function1[/* cb */ Any, Double])): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("raf")(x.asInstanceOf[js.Any])
   
+  @JSImport("svelte/types/runtime/internal", "resize_observer_border_box")
+  @js.native
+  val resizeObserverBorderBox: typings.svelte.typesRuntimeInternalResizeObserverSingletonMod.ResizeObserverSingleton = js.native
+  
+  @JSImport("svelte/types/runtime/internal", "resize_observer_content_box")
+  @js.native
+  val resizeObserverContentBox: typings.svelte.typesRuntimeInternalResizeObserverSingletonMod.ResizeObserverSingleton = js.native
+  
+  @JSImport("svelte/types/runtime/internal", "resize_observer_device_pixel_content_box")
+  @js.native
+  val resizeObserverDevicePixelContentBox: typings.svelte.typesRuntimeInternalResizeObserverSingletonMod.ResizeObserverSingleton = js.native
+  
   inline def run(fn: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(fn.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def runAll(fns: js.Array[js.Function]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("run_all")(fns.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -1222,7 +1403,7 @@ object typesRuntimeInternalMod {
   
   inline def selectMultipleValue(select: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("select_multiple_value")(select.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def selectOption(select: Any, value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("select_option")(select.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def selectOption(select: Any, value: Any, mounting: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("select_option")(select.asInstanceOf[js.Any], value.asInstanceOf[js.Any], mounting.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def selectOptions(select: Any, value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("select_options")(select.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -1240,9 +1421,19 @@ object typesRuntimeInternalMod {
   
   inline def setCustomElementDataMap(node: Any, data_map: Record[String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_custom_element_data_map")(node.asInstanceOf[js.Any], data_map.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def setData(text: Any, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_data")(text.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setData(text: Text, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_data")(text.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def setDataDev(text: Any, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_data_dev")(text.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setDataContenteditable(text: Text, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_data_contenteditable")(text.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def setDataContenteditableDev(text: Text, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_data_contenteditable_dev")(text.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def setDataDev(text: Text, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_data_dev")(text.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def setDataMaybeContenteditable(text: Text, data: Any, attr_value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_data_maybe_contenteditable")(text.asInstanceOf[js.Any], data.asInstanceOf[js.Any], attr_value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def setDataMaybeContenteditableDev(text: Text, data: Any, attr_value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_data_maybe_contenteditable_dev")(text.asInstanceOf[js.Any], data.asInstanceOf[js.Any], attr_value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def setDynamicElementData(tag: String): js.Function2[/* node */ Any, /* data_map */ Record[String, Any], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("set_dynamic_element_data")(tag.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* node */ Any, /* data_map */ Record[String, Any], Unit]]
   
   inline def setInputType(input: Any, `type`: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_input_type")(input.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -1260,11 +1451,16 @@ object typesRuntimeInternalMod {
   
   inline def space(): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("space")().asInstanceOf[Text]
   
+  inline def splitCssUnit(value: String): js.Tuple2[Double, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("split_css_unit")(value.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, String]]
+  inline def splitCssUnit(value: Double): js.Tuple2[Double, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("split_css_unit")(value.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, String]]
+  
   inline def spread(args: Any, attrs_to_add: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("spread")(args.asInstanceOf[js.Any], attrs_to_add.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def srcUrlEqual(element_src: Any, url: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("src_url_equal")(element_src.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def startHydrating(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start_hydrating")().asInstanceOf[Unit]
+  
+  inline def stopImmediatePropagation(fn: Any): js.Function1[/* event */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("stop_immediate_propagation")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* event */ Any, Any]]
   
   inline def stopPropagation(fn: Any): js.Function1[/* event */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("stop_propagation")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* event */ Any, Any]]
   

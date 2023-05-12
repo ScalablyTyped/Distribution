@@ -1,35 +1,51 @@
 package typings.photoshop.domConstantsMod
 
-import typings.photoshop.photoshopStrings.backgroundColor
-import typings.photoshop.photoshopStrings.black
-import typings.photoshop.photoshopStrings.foregroundColor
-import typings.photoshop.photoshopStrings.gray50
-import typings.photoshop.photoshopStrings.netscapeGray
-import typings.photoshop.photoshopStrings.white
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.photoshop.photoshopStrings.backgroundColor
-  - typings.photoshop.photoshopStrings.black
-  - typings.photoshop.photoshopStrings.foregroundColor
-  - typings.photoshop.photoshopStrings.netscapeGray
-  - typings.photoshop.photoshopStrings.gray50
-  - typings.photoshop.photoshopStrings.white
-*/
-trait MatteColor extends StObject
-object MatteColor {
+@js.native
+sealed trait MatteColor extends StObject
+@JSImport("photoshop/dom/Constants", "MatteColor")
+@js.native
+object MatteColor extends StObject {
   
-  inline def BACKGROUND: backgroundColor = "backgroundColor".asInstanceOf[backgroundColor]
+  @JSBracketAccess
+  def apply(value: String): js.UndefOr[MatteColor & String] = js.native
   
-  inline def BLACK: black = "black".asInstanceOf[black]
+  @js.native
+  sealed trait BACKGROUND
+    extends StObject
+       with MatteColor
+  /* "backgroundColor" */ val BACKGROUND: typings.photoshop.domConstantsMod.MatteColor.BACKGROUND & String = js.native
   
-  inline def FOREGROUND: foregroundColor = "foregroundColor".asInstanceOf[foregroundColor]
+  @js.native
+  sealed trait BLACK
+    extends StObject
+       with MatteColor
+  /* "black" */ val BLACK: typings.photoshop.domConstantsMod.MatteColor.BLACK & String = js.native
   
-  inline def NETSCAPE: netscapeGray = "netscapeGray".asInstanceOf[netscapeGray]
+  @js.native
+  sealed trait FOREGROUND
+    extends StObject
+       with MatteColor
+  /* "foregroundColor" */ val FOREGROUND: typings.photoshop.domConstantsMod.MatteColor.FOREGROUND & String = js.native
   
-  inline def SEMIGRAY: gray50 = "gray50".asInstanceOf[gray50]
+  @js.native
+  sealed trait NETSCAPE
+    extends StObject
+       with MatteColor
+  /* "netscapeGray" */ val NETSCAPE: typings.photoshop.domConstantsMod.MatteColor.NETSCAPE & String = js.native
   
-  inline def WHITE: white = "white".asInstanceOf[white]
+  @js.native
+  sealed trait SEMIGRAY
+    extends StObject
+       with MatteColor
+  /* "gray50" */ val SEMIGRAY: typings.photoshop.domConstantsMod.MatteColor.SEMIGRAY & String = js.native
+  
+  @js.native
+  sealed trait WHITE
+    extends StObject
+       with MatteColor
+  /* "white" */ val WHITE: typings.photoshop.domConstantsMod.MatteColor.WHITE & String = js.native
 }

@@ -1,13 +1,10 @@
 package typings.googleMaps.google.maps
 
-import typings.googleMaps.google.maps.marker.AdvancedMarkerView
+import typings.googleMaps.google.maps.marker.AdvancedMarkerElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Options for opening an InfoWindow
-  */
 trait InfoWindowOpenOptions extends StObject {
   
   /**
@@ -16,7 +13,7 @@ trait InfoWindowOpenOptions extends StObject {
     * anchor. The InfoWindow will be rendered on the same map or panorama as
     * the anchor <strong>(when available)</strong>.
     */
-  var anchor: js.UndefOr[MVCObject | Null | AdvancedMarkerView] = js.undefined
+  var anchor: js.UndefOr[MVCObject | Null | AdvancedMarkerElement] = js.undefined
   
   /**
     * The map or panorama on which to render this InfoWindow.
@@ -43,7 +40,7 @@ object InfoWindowOpenOptions {
   @scala.inline
   implicit open class MutableBuilder[Self <: InfoWindowOpenOptions] (val x: Self) extends AnyVal {
     
-    inline def setAnchor(value: MVCObject | AdvancedMarkerView): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: MVCObject | AdvancedMarkerElement): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     inline def setAnchorNull: Self = StObject.set(x, "anchor", null)
     

@@ -201,6 +201,11 @@ object BrowserAuthErrorMessage {
   def silentPromptValueError: Code = js.native
   inline def silentPromptValueError_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("silentPromptValueError")(x.asInstanceOf[js.Any])
   
+  @JSImport("@azure/msal-browser", "BrowserAuthErrorMessage.spaCodeAndNativeAccountPresent")
+  @js.native
+  def spaCodeAndNativeAccountPresent: Code = js.native
+  inline def spaCodeAndNativeAccountPresent_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spaCodeAndNativeAccountPresent")(x.asInstanceOf[js.Any])
+  
   @JSImport("@azure/msal-browser", "BrowserAuthErrorMessage.stateInteractionTypeMismatchError")
   @js.native
   def stateInteractionTypeMismatchError: Code = js.native

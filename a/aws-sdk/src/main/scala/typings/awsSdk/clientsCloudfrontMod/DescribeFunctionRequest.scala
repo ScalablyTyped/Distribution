@@ -12,7 +12,7 @@ trait DescribeFunctionRequest extends StObject {
   var Name: String
   
   /**
-    * The function’s stage, either DEVELOPMENT or LIVE.
+    * The function's stage, either DEVELOPMENT or LIVE.
     */
   var Stage: js.UndefOr[FunctionStage] = js.undefined
 }

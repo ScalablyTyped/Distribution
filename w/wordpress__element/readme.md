@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__element
 
-Typings are for version 4.19.0
+Typings are for version 5.10.0
 
 ## Library description:
 Element React module for WordPress.

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ComponentRecommendation extends StObject {
   
   /**
-    * The name of the application component.
+    * The name of the Application Component.
     */
   var appComponentName: EntityId
   

@@ -16,7 +16,7 @@ object libIconsChromeFilledMod extends Shortcut {
   @js.native
   trait ChromeFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_ChromeFilledIconType: String = js.native

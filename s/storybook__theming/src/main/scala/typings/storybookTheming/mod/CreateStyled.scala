@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateStyled[Theme /* <: js.Object */]
+trait CreateStyled
   extends StObject
-     with BaseCreateStyled[Theme]
-     with StyledTags[Theme]
+     with CreateStyled1
+     with StyledTags

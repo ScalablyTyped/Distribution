@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.firebaseUtil.distNodeEsmSrcCompatMod.Compat
 import typings.firebaseUtil.distNodeEsmSrcCryptMod.Base64_
 import typings.firebaseUtil.distNodeEsmSrcDefaultsMod.ExperimentalKey
+import typings.firebaseUtil.distNodeEsmSrcDefaultsMod.FirebaseDefaults
 import typings.firebaseUtil.distNodeEsmSrcEmulatorMod.EmulatorMockTokenOptions
 import typings.firebaseUtil.distNodeEsmSrcErrorsMod.ErrorMap
 import typings.firebaseUtil.distNodeEsmSrcJwtMod.DecodedToken
@@ -51,6 +52,11 @@ object distNodeEsmIndexDotnodeMod {
     def SDK_VERSION: String = js.native
     inline def SDK_VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SDK_VERSION")(x.asInstanceOf[js.Any])
   }
+  
+  @JSImport("@firebase/util/dist/node-esm/index.node", "DecodeBase64StringError")
+  @js.native
+  open class DecodeBase64StringError ()
+    extends typings.firebaseUtil.distNodeEsmSrcCryptMod.DecodeBase64StringError
   
   @JSImport("@firebase/util/dist/node-esm/index.node", "Deferred")
   @js.native
@@ -141,6 +147,8 @@ object distNodeEsmIndexDotnodeMod {
   inline def getDefaultEmulatorHost(productName: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultEmulatorHost")(productName.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
   inline def getDefaultEmulatorHostnameAndPort(productName: String): js.UndefOr[js.Tuple2[/* hostname */ String, /* port */ Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultEmulatorHostnameAndPort")(productName.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Tuple2[/* hostname */ String, /* port */ Double]]]
+  
+  inline def getDefaults(): js.UndefOr[FirebaseDefaults] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaults")().asInstanceOf[js.UndefOr[FirebaseDefaults]]
   
   inline def getExperimentalSetting[T /* <: ExperimentalKey */](name: T): /* import warning: importer.ImportType#apply Failed type conversion: @firebase/util.@firebase/util/dist/node-esm/src/defaults.FirebaseDefaults[/ * template literal string: _${T} * / string] */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getExperimentalSetting")(name.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: @firebase/util.@firebase/util/dist/node-esm/src/defaults.FirebaseDefaults[/ * template literal string: _${T} * / string] */ js.Any]
   

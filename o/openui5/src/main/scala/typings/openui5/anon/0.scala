@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `0` extends StObject {
   
   /**
-    * The rated value
+    * The count of the gird columns.
     */
-  var value: js.UndefOr[int] = js.undefined
+  var columns: js.UndefOr[int] = js.undefined
 }
 object `0` {
   
@@ -22,8 +22,8 @@ object `0` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
     
-    inline def setValue(value: int): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setColumns(value: int): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
   }
 }

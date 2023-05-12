@@ -17,6 +17,15 @@ trait Options extends StObject {
   var browser: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
+    * Register callbacks via a regular option - this can be used to get access the Browsersync
+    * instance in situations where you cannot provide a callback via the normal API (for example,
+    * in a Gruntfile)
+    *
+    * This 'ready' callback can be used to access the Browsersync instance
+    */
+  var callbacks: js.UndefOr[CallbacksOptions] = js.undefined
+  
+  /**
     * ¯\_(ツ)_/¯
     * Best guess, when ghostMode (or SocketIO?) is setup the events
     * listed here will be emitted and able to hook into.
@@ -35,6 +44,11 @@ trait Options extends StObject {
     * Note: Requires at least version 2.16.0.
     */
   var cors: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Current working directory
+    */
+  var cwd: js.UndefOr[String] = js.undefined
   
   /**
     * ¯\_(ツ)_/¯
@@ -91,6 +105,13 @@ trait Options extends StObject {
     * ¯\_(ツ)_/¯
     */
   var injectFileTypes: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /**
+    * Specify a host to listen on. Use this if you want to prevent binding to all interfaces.
+    *
+    * Note: When you specify this option, it overrides the 'host' option
+    */
+  var listen: js.UndefOr[String] = js.undefined
   
   /**
     * Support environments where dynamic hostnames are not required (ie: electron).
@@ -219,6 +240,11 @@ trait Options extends StObject {
     * Note: Requires at least version 2.4.0.
     */
   var rewriteRules: js.UndefOr[Boolean | js.Array[RewriteRules]] = js.undefined
+  
+  /**
+    * Configure the script domain
+    */
+  var script: js.UndefOr[ScriptOptions] = js.undefined
   
   /**
     * Alter the script path for complete control over where the Browsersync Javascript is served
@@ -381,6 +407,10 @@ object Options {
     
     inline def setBrowserVarargs(value: String*): Self = StObject.set(x, "browser", js.Array(value*))
     
+    inline def setCallbacks(value: CallbacksOptions): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
+    
+    inline def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)
+    
     inline def setClientEvents(value: js.Array[String]): Self = StObject.set(x, "clientEvents", value.asInstanceOf[js.Any])
     
     inline def setClientEventsUndefined: Self = StObject.set(x, "clientEvents", js.undefined)
@@ -394,6 +424,10 @@ object Options {
     inline def setCors(value: Boolean): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
     
     inline def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
+    
+    inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+    
+    inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
     
     inline def setExcludeFileTypes(value: js.Array[String]): Self = StObject.set(x, "excludeFileTypes", value.asInstanceOf[js.Any])
     
@@ -438,6 +472,10 @@ object Options {
     inline def setInjectFileTypesUndefined: Self = StObject.set(x, "injectFileTypes", js.undefined)
     
     inline def setInjectFileTypesVarargs(value: String*): Self = StObject.set(x, "injectFileTypes", js.Array(value*))
+    
+    inline def setListen(value: String): Self = StObject.set(x, "listen", value.asInstanceOf[js.Any])
+    
+    inline def setListenUndefined: Self = StObject.set(x, "listen", js.undefined)
     
     inline def setLocalOnly(value: Boolean): Self = StObject.set(x, "localOnly", value.asInstanceOf[js.Any])
     
@@ -525,9 +563,13 @@ object Options {
     
     inline def setRewriteRulesVarargs(value: RewriteRules*): Self = StObject.set(x, "rewriteRules", js.Array(value*))
     
+    inline def setScript(value: ScriptOptions): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+    
     inline def setScriptPath(value: /* path */ String => String): Self = StObject.set(x, "scriptPath", js.Any.fromFunction1(value))
     
     inline def setScriptPathUndefined: Self = StObject.set(x, "scriptPath", js.undefined)
+    
+    inline def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
     
     inline def setScrollElementMapping(value: js.Array[String]): Self = StObject.set(x, "scrollElementMapping", value.asInstanceOf[js.Any])
     

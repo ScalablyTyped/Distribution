@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ip-cidr" : "3.0.10"
+      "ip-cidr" : "3.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "ip-cidr" : "3.0.10"
+      "ip-cidr" : "3.1.0"
     }
   ],
   "compile-devDependencies" : [

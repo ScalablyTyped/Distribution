@@ -1,17 +1,19 @@
 package typings.firebaseFirestore
 
 import typings.firebaseFirestore.anon.AddedRemoved
+import typings.firebaseFirestore.anon.BitCount
 import typings.firebaseFirestore.anon.Fields
 import typings.firebaseFirestore.anon.KeyValue
 import typings.firebaseFirestore.anon.Removed
+import typings.firebaseFirestore.distFirestoreSrcCoreBoundMod.Bound
 import typings.firebaseFirestore.distFirestoreSrcCoreBundleMod.BundledDocuments
 import typings.firebaseFirestore.distFirestoreSrcCoreDatabaseInfoMod.DatabaseId
+import typings.firebaseFirestore.distFirestoreSrcCoreFilterMod.CompositeFilter
+import typings.firebaseFirestore.distFirestoreSrcCoreFilterMod.FieldFilter
+import typings.firebaseFirestore.distFirestoreSrcCoreFilterMod.Filter
+import typings.firebaseFirestore.distFirestoreSrcCoreOrderByMod.OrderBy
 import typings.firebaseFirestore.distFirestoreSrcCoreQueryMod.Query
 import typings.firebaseFirestore.distFirestoreSrcCoreSnapshotVersionMod.SnapshotVersion
-import typings.firebaseFirestore.distFirestoreSrcCoreTargetMod.Bound
-import typings.firebaseFirestore.distFirestoreSrcCoreTargetMod.FieldFilter
-import typings.firebaseFirestore.distFirestoreSrcCoreTargetMod.Filter
-import typings.firebaseFirestore.distFirestoreSrcCoreTargetMod.OrderBy
 import typings.firebaseFirestore.distFirestoreSrcCoreTypesMod.TargetId
 import typings.firebaseFirestore.distFirestoreSrcCoreViewMod.LimboDocumentChange
 import typings.firebaseFirestore.distFirestoreSrcCoreViewMod.View
@@ -44,6 +46,7 @@ import typings.firebaseFirestore.distFirestoreSrcModelPathMod.ResourcePath
 import typings.firebaseFirestore.distFirestoreSrcProtosFirestoreBundleProtoMod.BundleMetadata
 import typings.firebaseFirestore.distFirestoreSrcProtosFirestoreBundleProtoMod.LimitType
 import typings.firebaseFirestore.distFirestoreSrcProtosFirestoreBundleProtoMod.NamedQuery
+import typings.firebaseFirestore.distFirestoreSrcProtosFirestoreProtoApiMod.BloomFilter
 import typings.firebaseFirestore.distFirestoreSrcProtosFirestoreProtoApiMod.Value
 import typings.firebaseFirestore.distFirestoreSrcRemoteRemoteEventMod.RemoteEvent
 import typings.firebaseFirestore.distFirestoreSrcRemoteRemoteEventMod.TargetChange
@@ -98,6 +101,8 @@ object distFirestoreTestUtilHelpersMod {
   inline def ackTarget(docsOrKeys: (MutableDocument | String)*): TargetChange = ^.asInstanceOf[js.Dynamic].applyDynamic("ackTarget")(docsOrKeys.asInstanceOf[Seq[js.Any]]*).asInstanceOf[TargetChange]
   
   inline def addTargetMapping(docsOrKeys: (MutableDocument | String)*): TargetChange = ^.asInstanceOf[js.Dynamic].applyDynamic("addTargetMapping")(docsOrKeys.asInstanceOf[Seq[js.Any]]*).asInstanceOf[TargetChange]
+  
+  inline def andFilter(filters: Filter*): CompositeFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("andFilter")(filters.asInstanceOf[Seq[js.Any]]*).asInstanceOf[CompositeFilter]
   
   inline def applyDocChanges(view: View, docsOrKeys: (Document | DocumentKey)*): ViewChange = ^.asInstanceOf[js.Dynamic].applyDynamic("applyDocChanges")(scala.List(view.asInstanceOf[js.Any]).`++`(docsOrKeys.asInstanceOf[Seq[js.Any]])*).asInstanceOf[ViewChange]
   
@@ -157,7 +162,19 @@ object distFirestoreTestUtilHelpersMod {
   inline def deletedDoc(keyStr: String, ver: TestSnapshotVersion): MutableDocument = (^.asInstanceOf[js.Dynamic].applyDynamic("deletedDoc")(keyStr.asInstanceOf[js.Any], ver.asInstanceOf[js.Any])).asInstanceOf[MutableDocument]
   
   inline def doc(keyStr: String, ver: TestSnapshotVersion, jsonOrObjectValue: JsonObject[Any]): MutableDocument = (^.asInstanceOf[js.Dynamic].applyDynamic("doc")(keyStr.asInstanceOf[js.Any], ver.asInstanceOf[js.Any], jsonOrObjectValue.asInstanceOf[js.Any])).asInstanceOf[MutableDocument]
+  inline def doc(
+    keyStr: String,
+    ver: TestSnapshotVersion,
+    jsonOrObjectValue: JsonObject[Any],
+    createTime: TestSnapshotVersion
+  ): MutableDocument = (^.asInstanceOf[js.Dynamic].applyDynamic("doc")(keyStr.asInstanceOf[js.Any], ver.asInstanceOf[js.Any], jsonOrObjectValue.asInstanceOf[js.Any], createTime.asInstanceOf[js.Any])).asInstanceOf[MutableDocument]
   inline def doc(keyStr: String, ver: TestSnapshotVersion, jsonOrObjectValue: ObjectValue): MutableDocument = (^.asInstanceOf[js.Dynamic].applyDynamic("doc")(keyStr.asInstanceOf[js.Any], ver.asInstanceOf[js.Any], jsonOrObjectValue.asInstanceOf[js.Any])).asInstanceOf[MutableDocument]
+  inline def doc(
+    keyStr: String,
+    ver: TestSnapshotVersion,
+    jsonOrObjectValue: ObjectValue,
+    createTime: TestSnapshotVersion
+  ): MutableDocument = (^.asInstanceOf[js.Dynamic].applyDynamic("doc")(keyStr.asInstanceOf[js.Any], ver.asInstanceOf[js.Any], jsonOrObjectValue.asInstanceOf[js.Any], createTime.asInstanceOf[js.Any])).asInstanceOf[MutableDocument]
   
   inline def docAddedRemoteEvent(docOrDocs: js.Array[MutableDocument]): RemoteEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("docAddedRemoteEvent")(docOrDocs.asInstanceOf[js.Any]).asInstanceOf[RemoteEvent]
   inline def docAddedRemoteEvent(docOrDocs: js.Array[MutableDocument], updatedInTargets: js.Array[TargetId]): RemoteEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("docAddedRemoteEvent")(docOrDocs.asInstanceOf[js.Any], updatedInTargets.asInstanceOf[js.Any])).asInstanceOf[RemoteEvent]
@@ -265,6 +282,13 @@ object distFirestoreTestUtilHelpersMod {
   inline def documentUpdates(docsOrKeys: (Document | DocumentKey)*): DocumentMap_ = ^.asInstanceOf[js.Dynamic].applyDynamic("documentUpdates")(docsOrKeys.asInstanceOf[Seq[js.Any]]*).asInstanceOf[DocumentMap_]
   
   inline def existenceFilterEvent(targetId: Double, syncedKeys: DocumentKeySet_, remoteCount: Double, snapshotVersion: Double): RemoteEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("existenceFilterEvent")(targetId.asInstanceOf[js.Any], syncedKeys.asInstanceOf[js.Any], remoteCount.asInstanceOf[js.Any], snapshotVersion.asInstanceOf[js.Any])).asInstanceOf[RemoteEvent]
+  inline def existenceFilterEvent(
+    targetId: Double,
+    syncedKeys: DocumentKeySet_,
+    remoteCount: Double,
+    snapshotVersion: Double,
+    bloomFilter: BloomFilter
+  ): RemoteEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("existenceFilterEvent")(targetId.asInstanceOf[js.Any], syncedKeys.asInstanceOf[js.Any], remoteCount.asInstanceOf[js.Any], snapshotVersion.asInstanceOf[js.Any], bloomFilter.asInstanceOf[js.Any])).asInstanceOf[RemoteEvent]
   
   inline def expectCorrectComparisonGroups[T /* <: Any */](groups: js.Array[js.Array[T]], comp: js.Function2[/* left */ T, /* right */ T, Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expectCorrectComparisonGroups")(groups.asInstanceOf[js.Any], comp.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -297,6 +321,8 @@ object distFirestoreTestUtilHelpersMod {
   
   inline def forEachNumber[V](obj: Dict[V], fn: js.Function2[/* key */ Double, /* val */ V, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachNumber")(obj.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def generateBloomFilterProto(config: BitCount): BloomFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("generateBloomFilterProto")(config.asInstanceOf[js.Any]).asInstanceOf[BloomFilter]
+  
   inline def invalidDoc(keyStr: String): MutableDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidDoc")(keyStr.asInstanceOf[js.Any]).asInstanceOf[MutableDocument]
   
   inline def key(path: String): DocumentKey = ^.asInstanceOf[js.Dynamic].applyDynamic("key")(path.asInstanceOf[js.Any]).asInstanceOf[DocumentKey]
@@ -328,6 +354,8 @@ object distFirestoreTestUtilHelpersMod {
   
   inline def noChangeEvent(targetId: Double, snapshotVersion: Double): RemoteEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("noChangeEvent")(targetId.asInstanceOf[js.Any], snapshotVersion.asInstanceOf[js.Any])).asInstanceOf[RemoteEvent]
   inline def noChangeEvent(targetId: Double, snapshotVersion: Double, resumeToken: ByteString): RemoteEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("noChangeEvent")(targetId.asInstanceOf[js.Any], snapshotVersion.asInstanceOf[js.Any], resumeToken.asInstanceOf[js.Any])).asInstanceOf[RemoteEvent]
+  
+  inline def orFilter(filters: Filter*): CompositeFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("orFilter")(filters.asInstanceOf[Seq[js.Any]]*).asInstanceOf[CompositeFilter]
   
   inline def orderBy(path: String): OrderBy = ^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(path.asInstanceOf[js.Any]).asInstanceOf[OrderBy]
   inline def orderBy(path: String, op: String): OrderBy = (^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(path.asInstanceOf[js.Any], op.asInstanceOf[js.Any])).asInstanceOf[OrderBy]

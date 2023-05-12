@@ -9,7 +9,7 @@ trait CreateCustomerGatewayRequest extends StObject {
   /**
     * For devices that support BGP, the customer gateway's BGP ASN. Default: 65000
     */
-  var BgpAsn: Integer
+  var BgpAsn: js.UndefOr[Integer] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the customer gateway certificate.
@@ -48,8 +48,8 @@ trait CreateCustomerGatewayRequest extends StObject {
 }
 object CreateCustomerGatewayRequest {
   
-  inline def apply(BgpAsn: Integer, Type: GatewayType): CreateCustomerGatewayRequest = {
-    val __obj = js.Dynamic.literal(BgpAsn = BgpAsn.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
+  inline def apply(Type: GatewayType): CreateCustomerGatewayRequest = {
+    val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCustomerGatewayRequest]
   }
   
@@ -57,6 +57,8 @@ object CreateCustomerGatewayRequest {
   implicit open class MutableBuilder[Self <: CreateCustomerGatewayRequest] (val x: Self) extends AnyVal {
     
     inline def setBgpAsn(value: Integer): Self = StObject.set(x, "BgpAsn", value.asInstanceOf[js.Any])
+    
+    inline def setBgpAsnUndefined: Self = StObject.set(x, "BgpAsn", js.undefined)
     
     inline def setCertificateArn(value: String): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
     

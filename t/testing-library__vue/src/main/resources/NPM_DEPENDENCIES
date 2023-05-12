@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@testing-library/vue" : "6.6.1"
+      "@testing-library/vue" : "7.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@testing-library/vue" : "6.6.1"
+      "@testing-library/vue" : "7.0.0"
     }
   ],
   "compile-devDependencies" : [

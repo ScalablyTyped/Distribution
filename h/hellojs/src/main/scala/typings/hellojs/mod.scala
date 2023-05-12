@@ -374,6 +374,8 @@ object mod extends Shortcut {
     
     var auth: js.UndefOr[String] = js.undefined
     
+    var base64_state: js.UndefOr[Boolean] = js.undefined
+    
     var version: String | Double
   }
   object HelloJSOAuthDef {
@@ -389,6 +391,10 @@ object mod extends Shortcut {
       inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
       inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+      
+      inline def setBase64_state(value: Boolean): Self = StObject.set(x, "base64_state", value.asInstanceOf[js.Any])
+      
+      inline def setBase64_stateUndefined: Self = StObject.set(x, "base64_state", js.undefined)
       
       inline def setVersion(value: String | Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }

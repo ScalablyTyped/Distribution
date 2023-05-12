@@ -1,7 +1,7 @@
 
 # Scala.js typings for requestretry
 
-Typings are for version 1.12
+Typings are for version 1.13
 
 ## Library description:
 request-retry wrap nodejs request to retry http(s) requests in case of error

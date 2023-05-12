@@ -3,6 +3,8 @@ package typings.officeUiFabricReact.libIndexDotbundleMod
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
 import typings.fluentuiDomUtilities.libIvirtualelementMod.IVirtualElement
+import typings.fluentuiReactThemeProvider.libMakeStylesMod.UseStylesOptions
+import typings.fluentuiReactThemeProvider.libThemeProviderDottypesMod.ThemeProviderProps
 import typings.fluentuiReactWindowProvider.libWindowProviderMod.WindowProviderProps
 import typings.fluentuiTheme.libTypesIanimationstylesMod.IAnimationStyles
 import typings.fluentuiTheme.libTypesIanimationstylesMod.IAnimationVariables
@@ -10,6 +12,7 @@ import typings.fluentuiTheme.libTypesIeffectsMod.IEffects
 import typings.fluentuiTheme.libTypesIfontstylesMod.IFontStyles
 import typings.fluentuiTheme.libTypesIpaletteMod.IPalette
 import typings.fluentuiTheme.libTypesIschemeMod.ISchemeNames
+import typings.fluentuiTheme.libTypesIspacingMod.ISpacing
 import typings.fluentuiTheme.libTypesIthemeMod.IPartialTheme
 import typings.fluentuiTheme.libTypesIthemeMod.ITheme
 import typings.fluentuiTheme.libTypesThemeMod.PartialTheme
@@ -91,6 +94,7 @@ import typings.officeUiFabricReact.libComponentsGroupedListGroupShowAllDottypesM
 import typings.officeUiFabricReact.libComponentsGroupedListGroupSpacerDottypesMod.IGroupSpacerProps
 import typings.officeUiFabricReact.libComponentsGroupedListGroupedListDottypesMod.IGroup
 import typings.officeUiFabricReact.libComponentsGroupedListGroupedListDottypesMod.IGroupedListProps
+import typings.officeUiFabricReact.libComponentsGroupedListGroupedListV2DottypesMod.IGroupedListV2Props
 import typings.officeUiFabricReact.libComponentsHoverCardExpandingCardDottypesMod.IExpandingCardProps
 import typings.officeUiFabricReact.libComponentsHoverCardHoverCardDottypesMod.IHoverCardProps
 import typings.officeUiFabricReact.libComponentsHoverCardPlainCardPlainCardDottypesMod.IPlainCardProps
@@ -203,6 +207,7 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ComponentType
 import typings.react.mod.Context
+import typings.react.mod.FC
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.FunctionComponent
 import typings.react.mod.HTMLAttributes
@@ -337,6 +342,8 @@ inline def DefaultFontStyles: IFontStyles = ^.asInstanceOf[js.Dynamic].selectDyn
 
 inline def DefaultPalette: IPalette = ^.asInstanceOf[js.Dynamic].selectDynamic("DefaultPalette").asInstanceOf[IPalette]
 
+inline def DefaultSpacing: ISpacing = ^.asInstanceOf[js.Dynamic].selectDynamic("DefaultSpacing").asInstanceOf[ISpacing]
+
 inline def DetailsColumn: FunctionComponent[IDetailsColumnProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("DetailsColumn").asInstanceOf[FunctionComponent[IDetailsColumnProps]]
 
 inline def DetailsHeader: FunctionComponent[IDetailsHeaderBaseProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("DetailsHeader").asInstanceOf[FunctionComponent[IDetailsHeaderBaseProps]]
@@ -387,6 +394,8 @@ IFabricProps & RefAttributes[typings.officeUiFabricReact.libComponentsFabricFabr
 
 inline def Facepile: FunctionComponent[IFacepileProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Facepile").asInstanceOf[FunctionComponent[IFacepileProps]]
 
+inline def FluentTheme: ITheme = ^.asInstanceOf[js.Dynamic].selectDynamic("FluentTheme").asInstanceOf[ITheme]
+
 inline def FocusRects: FunctionComponent[RootRef] = ^.asInstanceOf[js.Dynamic].selectDynamic("FocusRects").asInstanceOf[FunctionComponent[RootRef]]
 
 inline def FocusTrapCallout: FunctionComponent[IFocusTrapCalloutProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("FocusTrapCallout").asInstanceOf[FunctionComponent[IFocusTrapCalloutProps]]
@@ -407,6 +416,19 @@ inline def GroupShowAll: FunctionComponent[IGroupShowAllProps] = ^.asInstanceOf[
 inline def GroupSpacer: FunctionComponent[IGroupSpacerProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("GroupSpacer").asInstanceOf[FunctionComponent[IGroupSpacerProps]]
 
 inline def GroupedList: FunctionComponent[IGroupedListProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("GroupedList").asInstanceOf[FunctionComponent[IGroupedListProps]]
+
+inline def GroupedListV2FC: FC[IGroupedListV2Props] = ^.asInstanceOf[js.Dynamic].selectDynamic("GroupedListV2FC").asInstanceOf[FC[IGroupedListV2Props]]
+
+/**
+  * NOTE: GroupedListV2 is "unstable" and meant for preview use. It passes
+  * the same test suite as GroupedList but it is an entirely new implementation
+  * so it may have bugs and implementation details may change without notice.
+  *
+  * GroupedListV2 is an API-compatible replacement for GroupedList with a new implementation
+  * that addresses issues GroupedList has with virtualizing nested lists under certain
+  * conditions.
+  */
+inline def GroupedListV2Unstable: FunctionComponent[IGroupedListV2Props] = ^.asInstanceOf[js.Dynamic].selectDynamic("GroupedListV2_unstable").asInstanceOf[FunctionComponent[IGroupedListV2Props]]
 
 inline def HEX_REGEX: js.RegExp = ^.asInstanceOf[js.Dynamic].selectDynamic("HEX_REGEX").asInstanceOf[js.RegExp]
 
@@ -597,6 +619,10 @@ inline def TextField: FunctionComponent[ITextFieldProps] = ^.asInstanceOf[js.Dyn
 inline def TextStyles: IStylesFunctionOrObject[ITextProps, ITextTokens, ITextStyles] = ^.asInstanceOf[js.Dynamic].selectDynamic("TextStyles").asInstanceOf[IStylesFunctionOrObject[ITextProps, ITextTokens, ITextStyles]]
 
 inline def TextView: IViewComponent[ITextProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("TextView").asInstanceOf[IViewComponent[ITextProps]]
+
+inline def ThemeContext: Context[js.UndefOr[Theme]] = ^.asInstanceOf[js.Dynamic].selectDynamic("ThemeContext").asInstanceOf[Context[js.UndefOr[Theme]]]
+
+inline def ThemeProvider: FunctionComponent[ThemeProviderProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("ThemeProvider").asInstanceOf[FunctionComponent[ThemeProviderProps]]
 
 inline def ThemeSettingName: /* "theme" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("ThemeSettingName").asInstanceOf[/* "theme" */ String]
 
@@ -1557,6 +1583,17 @@ inline def liProperties: Record[String, Double] = ^.asInstanceOf[js.Dynamic].sel
 inline def loadTheme(theme: IPartialTheme): ITheme = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[ITheme]
 inline def loadTheme(theme: IPartialTheme, depComments: Boolean): ITheme = (^.asInstanceOf[js.Dynamic].applyDynamic("loadTheme")(theme.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[ITheme]
 
+inline def makeStyles[TStyleSet /* <: StringDictionary[IStyle] */](styleOrFunction: TStyleSet): js.Function1[
+/* options */ js.UndefOr[UseStylesOptions], 
+/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof TStyleSet ]: string} */ js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeStyles")(styleOrFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+/* options */ js.UndefOr[UseStylesOptions], 
+/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof TStyleSet ]: string} */ js.Any]]
+inline def makeStyles[TStyleSet /* <: StringDictionary[IStyle] */](styleOrFunction: js.Function1[/* theme */ Theme, TStyleSet]): js.Function1[
+/* options */ js.UndefOr[UseStylesOptions], 
+/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof TStyleSet ]: string} */ js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeStyles")(styleOrFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+/* options */ js.UndefOr[UseStylesOptions], 
+/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof TStyleSet ]: string} */ js.Any]]
+
 inline def mapEnumByName[T](
   theEnum: Any,
   callback: js.Function2[
@@ -1626,6 +1663,9 @@ ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2] & ObjectOnly[TStyleSet3] & Objec
 inline def mergeStyleSets_false_TStyleSet1TStyleSet2[TStyleSet1, TStyleSet2](styleSet1: `false`): IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any]).asInstanceOf[IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
 
 inline def mergeStyles_false(args: (js.UndefOr[IStyle | IStyleBaseArray | `false` | Null])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyles")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
+
+inline def mergeThemes(theme: Theme): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeThemes")(theme.asInstanceOf[js.Any]).asInstanceOf[Theme]
+inline def mergeThemes(theme: Theme, partialTheme: PartialTheme): Theme = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeThemes")(theme.asInstanceOf[js.Any], partialTheme.asInstanceOf[js.Any])).asInstanceOf[Theme]
 
 inline def merge_false[T](target: Partial[T], args: (js.UndefOr[Partial[T] | Null | `false`])*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(scala.List(target.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
 
@@ -2021,6 +2061,8 @@ inline def useFocusRects(rootRef: RefObject[HTMLElement]): Unit = ^.asInstanceOf
 inline def useKeytipRef[TElement /* <: HTMLElement */](options: KeytipDataOptions): Ref[TElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeytipRef")(options.asInstanceOf[js.Any]).asInstanceOf[Ref[TElement]]
 
 inline def useResponsiveMode(elementRef: RefObject[HTMLElement | Null]): typings.officeUiFabricReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode = ^.asInstanceOf[js.Dynamic].applyDynamic("useResponsiveMode")(elementRef.asInstanceOf[js.Any]).asInstanceOf[typings.officeUiFabricReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode]
+
+inline def useTheme(): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("useTheme")().asInstanceOf[Theme]
 
 inline def useWindow(): js.UndefOr[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("useWindow")().asInstanceOf[js.UndefOr[Window]]
 

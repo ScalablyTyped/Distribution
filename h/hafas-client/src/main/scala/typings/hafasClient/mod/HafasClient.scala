@@ -12,28 +12,28 @@ trait HafasClient extends StObject {
     * @param station uid of station
     * @param options options
     */
-  def arrivals(station: String): js.Promise[js.Array[Alternative]] = js.native
-  def arrivals(station: String, options: DeparturesArrivalsOptions): js.Promise[js.Array[Alternative]] = js.native
-  def arrivals(station: Location): js.Promise[js.Array[Alternative]] = js.native
-  def arrivals(station: Location, options: DeparturesArrivalsOptions): js.Promise[js.Array[Alternative]] = js.native
-  def arrivals(station: Station): js.Promise[js.Array[Alternative]] = js.native
-  def arrivals(station: Station, options: DeparturesArrivalsOptions): js.Promise[js.Array[Alternative]] = js.native
-  def arrivals(station: Stop): js.Promise[js.Array[Alternative]] = js.native
-  def arrivals(station: Stop, options: DeparturesArrivalsOptions): js.Promise[js.Array[Alternative]] = js.native
+  def arrivals(station: String): js.Promise[Arrivals] = js.native
+  def arrivals(station: String, options: DeparturesArrivalsOptions): js.Promise[Arrivals] = js.native
+  def arrivals(station: Location): js.Promise[Arrivals] = js.native
+  def arrivals(station: Location, options: DeparturesArrivalsOptions): js.Promise[Arrivals] = js.native
+  def arrivals(station: Station): js.Promise[Arrivals] = js.native
+  def arrivals(station: Station, options: DeparturesArrivalsOptions): js.Promise[Arrivals] = js.native
+  def arrivals(station: Stop): js.Promise[Arrivals] = js.native
+  def arrivals(station: Stop, options: DeparturesArrivalsOptions): js.Promise[Arrivals] = js.native
   
   /**
     * Retrieves departures
     * @param station uid of station
     * @param options options
     */
-  def departures(station: String): js.Promise[js.Array[Alternative]] = js.native
-  def departures(station: String, options: DeparturesArrivalsOptions): js.Promise[js.Array[Alternative]] = js.native
-  def departures(station: Location): js.Promise[js.Array[Alternative]] = js.native
-  def departures(station: Location, options: DeparturesArrivalsOptions): js.Promise[js.Array[Alternative]] = js.native
-  def departures(station: Station): js.Promise[js.Array[Alternative]] = js.native
-  def departures(station: Station, options: DeparturesArrivalsOptions): js.Promise[js.Array[Alternative]] = js.native
-  def departures(station: Stop): js.Promise[js.Array[Alternative]] = js.native
-  def departures(station: Stop, options: DeparturesArrivalsOptions): js.Promise[js.Array[Alternative]] = js.native
+  def departures(station: String): js.Promise[Departures] = js.native
+  def departures(station: String, options: DeparturesArrivalsOptions): js.Promise[Departures] = js.native
+  def departures(station: Location): js.Promise[Departures] = js.native
+  def departures(station: Location, options: DeparturesArrivalsOptions): js.Promise[Departures] = js.native
+  def departures(station: Station): js.Promise[Departures] = js.native
+  def departures(station: Station, options: DeparturesArrivalsOptions): js.Promise[Departures] = js.native
+  def departures(station: Stop): js.Promise[Departures] = js.native
+  def departures(station: Stop, options: DeparturesArrivalsOptions): js.Promise[Departures] = js.native
   
   /**
     * Retrieves journeys
@@ -87,7 +87,7 @@ trait HafasClient extends StObject {
       /* previousStopover */ StopOver, 
       /* to */ String | Station | Stop | Location, 
       /* opt */ js.UndefOr[JourneysFromTripOptions], 
-      js.Promise[js.Array[Journey]]
+      js.Promise[Journeys]
     ]
   ] = js.native
   
@@ -97,7 +97,11 @@ trait HafasClient extends StObject {
     * @param opt LinesOptions
     */
   var lines: js.UndefOr[
-    js.Function2[/* query */ String, /* opt */ js.UndefOr[LinesOptions], js.Promise[js.Array[Line]]]
+    js.Function2[
+      /* query */ String, 
+      /* opt */ js.UndefOr[LinesOptions], 
+      js.Promise[LinesWithRealtimeData]
+    ]
   ] = js.native
   
   /**
@@ -122,11 +126,7 @@ trait HafasClient extends StObject {
     * @param options options for search
     */
   var radar: js.UndefOr[
-    js.Function2[
-      /* box */ BoundingBox, 
-      /* options */ js.UndefOr[RadarOptions], 
-      js.Promise[js.Array[Movement]]
-    ]
+    js.Function2[/* box */ BoundingBox, /* options */ js.UndefOr[RadarOptions], js.Promise[Radar]]
   ] = js.native
   
   /**
@@ -138,7 +138,7 @@ trait HafasClient extends StObject {
     js.Function2[
       /* address */ Location, 
       /* options */ js.UndefOr[ReachableFromOptions], 
-      js.Promise[js.Array[Duration]]
+      js.Promise[DurationsWithRealtimeData]
     ]
   ] = js.native
   
@@ -151,7 +151,7 @@ trait HafasClient extends StObject {
     js.Function2[
       /* refreshToken */ String, 
       /* options */ js.UndefOr[RefreshJourneyOptions], 
-      js.Promise[Journey]
+      js.Promise[JourneyWithRealtimeData]
     ]
   ] = js.native
   
@@ -160,7 +160,7 @@ trait HafasClient extends StObject {
     * @param opt RemarksOptions
     */
   var remarks: js.UndefOr[
-    js.Function1[/* opt */ js.UndefOr[RemarksOptions], js.Promise[js.Array[Warning]]]
+    js.Function1[/* opt */ js.UndefOr[RemarksOptions], js.Promise[WarningsWithRealtimeData]]
   ] = js.native
   
   /**
@@ -187,11 +187,10 @@ trait HafasClient extends StObject {
     * @param options options
     */
   var trip: js.UndefOr[
-    js.Function3[
+    js.Function2[
       /* id */ String, 
-      /* name */ String, 
       /* options */ js.UndefOr[TripOptions], 
-      js.Promise[Trip]
+      js.Promise[TripWithRealtimeData]
     ]
   ] = js.native
   
@@ -204,7 +203,7 @@ trait HafasClient extends StObject {
     js.Function2[
       /* lineNameOrFahrtNr */ String, 
       /* options */ js.UndefOr[TripsByNameOptions], 
-      js.Promise[js.Array[Trip]]
+      js.Promise[TripsWithRealtimeData]
     ]
   ] = js.native
 }

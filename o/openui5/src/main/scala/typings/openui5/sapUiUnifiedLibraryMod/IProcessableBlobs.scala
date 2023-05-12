@@ -24,13 +24,13 @@ trait IProcessableBlobs extends StObject {
     * The initial Blobs which can be used to determine a new array of Blobs for further processing.
     */
   aBlobs: js.Array[Blob]
-  ): js.Promise[Any]
+  ): js.Promise[js.Array[Blob]]
 }
 object IProcessableBlobs {
   
   inline def apply(
     __implements__sap_ui_unified_IProcessableBlobs: Boolean,
-    getProcessedBlobsFromArray: js.Array[Blob] => js.Promise[Any]
+    getProcessedBlobsFromArray: js.Array[Blob] => js.Promise[js.Array[Blob]]
   ): IProcessableBlobs = {
     val __obj = js.Dynamic.literal(__implements__sap_ui_unified_IProcessableBlobs = __implements__sap_ui_unified_IProcessableBlobs.asInstanceOf[js.Any], getProcessedBlobsFromArray = js.Any.fromFunction1(getProcessedBlobsFromArray))
     __obj.asInstanceOf[IProcessableBlobs]
@@ -39,7 +39,7 @@ object IProcessableBlobs {
   @scala.inline
   implicit open class MutableBuilder[Self <: IProcessableBlobs] (val x: Self) extends AnyVal {
     
-    inline def setGetProcessedBlobsFromArray(value: js.Array[Blob] => js.Promise[Any]): Self = StObject.set(x, "getProcessedBlobsFromArray", js.Any.fromFunction1(value))
+    inline def setGetProcessedBlobsFromArray(value: js.Array[Blob] => js.Promise[js.Array[Blob]]): Self = StObject.set(x, "getProcessedBlobsFromArray", js.Any.fromFunction1(value))
     
     inline def set__implements__sap_ui_unified_IProcessableBlobs(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_unified_IProcessableBlobs", value.asInstanceOf[js.Any])
   }

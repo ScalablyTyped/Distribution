@@ -1,7 +1,7 @@
 
 # Scala.js typings for scure__bip39
 
-Typings are for version 1.1.0
+Typings are for version 1.2.0
 
 ## Library description:
 Secure, audited & minimal implementation of BIP39 mnemonic phrases

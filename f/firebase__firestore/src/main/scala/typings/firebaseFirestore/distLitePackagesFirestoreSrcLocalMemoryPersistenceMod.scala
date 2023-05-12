@@ -177,6 +177,15 @@ object distLitePackagesFirestoreSrcLocalMemoryPersistenceMod {
     /* CompleteClass */
     override def updateLimboDocument(txn: PersistenceTransaction, doc: DocumentKey): PersistencePromise[Unit] = js.native
   }
+  /* static members */
+  object MemoryLruDelegate {
+    
+    @JSImport("@firebase/firestore/dist/lite/packages/firestore/src/local/memory_persistence", "MemoryLruDelegate")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def factory(persistence: MemoryPersistence, lruParams: LruParams): MemoryLruDelegate = (^.asInstanceOf[js.Dynamic].applyDynamic("factory")(persistence.asInstanceOf[js.Any], lruParams.asInstanceOf[js.Any])).asInstanceOf[MemoryLruDelegate]
+  }
   
   @JSImport("@firebase/firestore/dist/lite/packages/firestore/src/local/memory_persistence", "MemoryPersistence")
   @js.native

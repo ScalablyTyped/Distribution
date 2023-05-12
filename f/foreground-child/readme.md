@@ -1,7 +1,7 @@
 
 # Scala.js typings for foreground-child
 
-Typings are for version 2.0
+Typings are for version 3.1.1
 
 ## Library description:
 Run a child as if it's the foreground process.  Give it stdio.  Exit when it exits.
@@ -24,7 +24,7 @@ Run a child as if it's the foreground process.  Give it stdio.  Exit when it exi
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -353,12 +353,17 @@ object Text {
     /**
       * The font size, as a CSS size string.
       */
-    var fontSize: js.UndefOr[String] = js.undefined
+    var fontSize: js.UndefOr[Double | String] = js.undefined
     
     /**
       * Any addition font styles, such as 'strong'.
       */
     var fontStyle: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The amount to add to the font height to achieve the overall line height.
+      */
+    var lineSpacing: js.UndefOr[Double] = js.undefined
     
     /**
       * The maximum number of lines to display within the Text object.
@@ -454,7 +459,7 @@ object Text {
       
       inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
       
-      inline def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: Double | String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
       inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
@@ -463,6 +468,10 @@ object Text {
       inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
       
       inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+      
+      inline def setLineSpacing(value: Double): Self = StObject.set(x, "lineSpacing", value.asInstanceOf[js.Any])
+      
+      inline def setLineSpacingUndefined: Self = StObject.set(x, "lineSpacing", js.undefined)
       
       inline def setMaxLines(value: Double): Self = StObject.set(x, "maxLines", value.asInstanceOf[js.Any])
       
@@ -541,7 +550,9 @@ object Text {
     @scala.inline
     implicit open class MutableBuilder[Self <: TextWordWrap] (val x: Self) extends AnyVal {
       
-      inline def setCallback(value: (/* text */ String, /* textObject */ typings.phaser.Phaser.GameObjects.Text) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+      inline def setCallback(
+        value: (/* text */ String, /* textObject */ typings.phaser.Phaser.GameObjects.Text) => String | js.Array[String]
+      ): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
       inline def setCallbackScope(value: Any): Self = StObject.set(x, "callbackScope", value.asInstanceOf[js.Any])
       

@@ -7,40 +7,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Tab extends StObject {
   
   /**
-    * The group which the tab belongs to.
-    */
+  		 * The group which the tab belongs to.
+  		 */
   val group: TabGroup
   
   /**
-    * Defines the structure of the tab i.e. text, notebook, custom, etc.
-    * Resource and other useful properties are defined on the tab kind.
-    */
+  		 * Defines the structure of the tab i.e. text, notebook, custom, etc.
+  		 * Resource and other useful properties are defined on the tab kind.
+  		 */
   val input: TabInputText | TabInputTextDiff | TabInputCustom | TabInputWebview | TabInputNotebook | TabInputNotebookDiff | TabInputTerminal | Any
   
   /**
-    * Whether or not the tab is currently active.
-    * This is dictated by being the selected tab in the group.
-    */
+  		 * Whether or not the tab is currently active.
+  		 * This is dictated by being the selected tab in the group.
+  		 */
   val isActive: Boolean
   
   /**
-    * Whether or not the dirty indicator is present on the tab.
-    */
+  		 * Whether or not the dirty indicator is present on the tab.
+  		 */
   val isDirty: Boolean
   
   /**
-    * Whether or not the tab is pinned (pin icon is present).
-    */
+  		 * Whether or not the tab is pinned (pin icon is present).
+  		 */
   val isPinned: Boolean
   
   /**
-    * Whether or not the tab is in preview mode.
-    */
+  		 * Whether or not the tab is in preview mode.
+  		 */
   val isPreview: Boolean
   
   /**
-    * The text displayed on the tab.
-    */
+  		 * The text displayed on the tab.
+  		 */
   val label: String
 }
 object Tab {

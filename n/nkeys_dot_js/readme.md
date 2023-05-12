@@ -1,7 +1,7 @@
 
 # Scala.js typings for nkeys_dot_js
 
-Typings are for version 1.0.3
+Typings are for version 1.0.5
 
 ## Library description:
 A public-key signature system based on Ed25519 for the NATS ecosystem in javascript

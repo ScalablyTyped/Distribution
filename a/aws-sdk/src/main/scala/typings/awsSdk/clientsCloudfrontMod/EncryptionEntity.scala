@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EncryptionEntity extends StObject {
   
   /**
-    * Field patterns in a field-level encryption content type profile specify the fields that you want to be encrypted. You can provide the full field name, or any beginning characters followed by a wildcard (*). You can't overlap field patterns. For example, you can't have both ABC* and AB*. Note that field patterns are case-sensitive. 
+    * Field patterns in a field-level encryption content type profile specify the fields that you want to be encrypted. You can provide the full field name, or any beginning characters followed by a wildcard (*). You can't overlap field patterns. For example, you can't have both ABC* and AB*. Note that field patterns are case-sensitive.
     */
   var FieldPatterns: typings.awsSdk.clientsCloudfrontMod.FieldPatterns
   
@@ -17,7 +17,7 @@ trait EncryptionEntity extends StObject {
   var ProviderId: String
   
   /**
-    * The public key associated with a set of field-level encryption patterns, to be used when encrypting the fields that match the patterns. 
+    * The public key associated with a set of field-level encryption patterns, to be used when encrypting the fields that match the patterns.
     */
   var PublicKeyId: String
 }

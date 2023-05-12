@@ -41,7 +41,7 @@ object distSrcPeerStreamsMod {
     /**
       * Attach a raw outbound stream and setup a write stream
       */
-    def attachOutboundStream(stream: Stream): js.Promise[Pushable_[Uint8ArrayList]] = js.native
+    def attachOutboundStream(stream: Stream): js.Promise[Pushable_[Uint8ArrayList, Unit, Any]] = js.native
     
     /**
       * Closes the open connection to peer
@@ -70,7 +70,7 @@ object distSrcPeerStreamsMod {
     /**
       * Write stream - it's preferable to use the write method
       */
-    var outboundStream: js.UndefOr[Pushable_[Uint8ArrayList]] = js.native
+    var outboundStream: js.UndefOr[Pushable_[Uint8ArrayList, Unit, Any]] = js.native
     
     val protocol: String = js.native
     

@@ -133,10 +133,10 @@ object util {
   
   /**
     * This event indicates a change. It contains the old and the new value.
-    * @property target {*} - Object which triggered the event
-    * @property currentTarget {*} - Object which has listener attached
-    * @property type {string} - Name of the dispatched event
-    * @property defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
+    * target {*} - Object which triggered the event
+    * currentTarget {*} - Object which has listener attached
+    * type {string} - Name of the dispatched event
+    * defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
     */
   trait ChangeEvent
     extends StObject
@@ -159,7 +159,7 @@ object util {
   
   /**
     * This class represents a contextual information/action.
-    * @property SEPARATOR {H.util.ContextItem} - Separator for the context items
+    * SEPARATOR {H.util.ContextItem} - Separator for the context items
     */
   @js.native
   trait ContextItem
@@ -198,9 +198,9 @@ object util {
     
     /**
       * This type defines options which can be used to initialize the context item.
-      * @property label {string=} - the label of the context item
-      * @property disabled {boolean=} - flag indicatting whether context item is disabled or no, by default false
-      * @property callback {function(H.util.Event)=} - Optional callback function to call once context item is selected
+      * label {string=} - the label of the context item
+      * disabled {boolean=} - flag indicatting whether context item is disabled or no, by default false
+      * callback {function(H.util.Event)=} - Optional callback function to call once context item is selected
       */
     trait Options extends StObject {
       
@@ -252,10 +252,10 @@ object util {
   
   /**
     * Base Event class which is used for all events dispatched by any EventTarget within the api.
-    * @property target {*} - Object which triggered the event
-    * @property currentTarget {*} - Object which has listener attached
-    * @property type {string} - Name of the dispatched event
-    * @property defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
+    * target {*} - Object which triggered the event
+    * currentTarget {*} - Object which has listener attached
+    * type {string} - Name of the dispatched event
+    * defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
     */
   trait Event extends StObject {
     
@@ -563,10 +563,10 @@ object util {
     
     /**
       * The event class for events that are dispatched by OList
-      * @property target {*} - Object which triggered the event
-      * @property currentTarget {*} - Object which has listener attached
-      * @property type {string} - Name of the dispatched event
-      * @property defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
+      * target {*} - Object which triggered the event
+      * currentTarget {*} - Object which has listener attached
+      * type {string} - Name of the dispatched event
+      * defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
       */
     trait Event
       extends StObject
@@ -600,8 +600,8 @@ object util {
     
     /**
       * This interface defines kinetic move parameters used by map for kinetic drag.
-      * @property power {number} - Power multiplier. Multiplier is used to increase the speed of the kinetic move. By default map uses 1.
-      * @property duration {number} - Defines duration of the kinetic move.
+      * power {number} - Power multiplier. Multiplier is used to increase the speed of the kinetic move. By default map uses 1.
+      * duration {number} - Defines duration of the kinetic move.
       */
     trait IKinetics extends StObject {
       

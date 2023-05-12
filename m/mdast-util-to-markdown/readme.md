@@ -1,7 +1,7 @@
 
 # Scala.js typings for mdast-util-to-markdown
 
-Typings are for version 1.3.0
+Typings are for version 1.5.0
 
 ## Library description:
 mdast utility to serialize markdown

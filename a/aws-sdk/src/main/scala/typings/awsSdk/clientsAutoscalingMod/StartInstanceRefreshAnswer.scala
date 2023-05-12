@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StartInstanceRefreshAnswer extends StObject {
   
   /**
-    * A unique ID for tracking the progress of the request.
+    * A unique ID for tracking the progress of the instance refresh.
     */
   var InstanceRefreshId: js.UndefOr[XmlStringMaxLen255] = js.undefined
 }

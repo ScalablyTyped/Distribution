@@ -16,7 +16,7 @@ object libIconsVideoCameraTwoToneMod extends Shortcut {
   @js.native
   trait VideoCameraTwoToneIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_VideoCameraTwoToneIconType: String = js.native

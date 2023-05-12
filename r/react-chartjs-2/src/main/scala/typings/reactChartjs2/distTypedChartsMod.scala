@@ -1,16 +1,6 @@
 package typings.reactChartjs2
 
-import typings.react.mod.global.JSX.Element
-import typings.reactChartjs2.anon.`10`
-import typings.reactChartjs2.anon.`11`
-import typings.reactChartjs2.anon.`12`
-import typings.reactChartjs2.anon.`13`
-import typings.reactChartjs2.anon.`14`
-import typings.reactChartjs2.anon.`7`
-import typings.reactChartjs2.anon.`8`
-import typings.reactChartjs2.anon.`9`
-import typings.reactChartjs2.distTypesMod.ChartProps
-import typings.reactChartjs2.reactChartjs2Strings.`type`
+import typings.reactChartjs2.distTypesMod.TypedChartComponent
 import typings.reactChartjs2.reactChartjs2Strings.bar
 import typings.reactChartjs2.reactChartjs2Strings.bubble
 import typings.reactChartjs2.reactChartjs2Strings.doughnut
@@ -19,30 +9,41 @@ import typings.reactChartjs2.reactChartjs2Strings.pie
 import typings.reactChartjs2.reactChartjs2Strings.polarArea
 import typings.reactChartjs2.reactChartjs2Strings.radar
 import typings.reactChartjs2.reactChartjs2Strings.scatter
-import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distTypedChartsMod {
   
-  @JSImport("react-chartjs-2/dist/typedCharts", JSImport.Namespace)
+  @JSImport("react-chartjs-2/dist/typedCharts", "Bar")
   @js.native
-  val ^ : js.Any = js.native
+  val Bar: TypedChartComponent[bar] = js.native
   
-  inline def Bar[TData, TLabel](props: (Omit[ChartProps[bar, TData, TLabel], `type`]) & (`8`[TData, TLabel])): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Bar")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  @JSImport("react-chartjs-2/dist/typedCharts", "Bubble")
+  @js.native
+  val Bubble: TypedChartComponent[bubble] = js.native
   
-  inline def Bubble[TData, TLabel](props: (Omit[ChartProps[bubble, TData, TLabel], `type`]) & (`12`[TData, TLabel])): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Bubble")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  @JSImport("react-chartjs-2/dist/typedCharts", "Doughnut")
+  @js.native
+  val Doughnut: TypedChartComponent[doughnut] = js.native
   
-  inline def Doughnut[TData, TLabel](props: (Omit[ChartProps[doughnut, TData, TLabel], `type`]) & (`10`[TData, TLabel])): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Doughnut")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  @JSImport("react-chartjs-2/dist/typedCharts", "Line")
+  @js.native
+  val Line: TypedChartComponent[line] = js.native
   
-  inline def Line[TData, TLabel](props: (Omit[ChartProps[line, TData, TLabel], `type`]) & (`7`[TData, TLabel])): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Line")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  @JSImport("react-chartjs-2/dist/typedCharts", "Pie")
+  @js.native
+  val Pie: TypedChartComponent[pie] = js.native
   
-  inline def Pie[TData, TLabel](props: (Omit[ChartProps[pie, TData, TLabel], `type`]) & (`13`[TData, TLabel])): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Pie")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  @JSImport("react-chartjs-2/dist/typedCharts", "PolarArea")
+  @js.native
+  val PolarArea: TypedChartComponent[polarArea] = js.native
   
-  inline def PolarArea[TData, TLabel](props: (Omit[ChartProps[polarArea, TData, TLabel], `type`]) & (`11`[TData, TLabel])): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PolarArea")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  @JSImport("react-chartjs-2/dist/typedCharts", "Radar")
+  @js.native
+  val Radar: TypedChartComponent[radar] = js.native
   
-  inline def Radar[TData, TLabel](props: (Omit[ChartProps[radar, TData, TLabel], `type`]) & (`9`[TData, TLabel])): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Radar")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
-  
-  inline def Scatter[TData, TLabel](props: (Omit[ChartProps[scatter, TData, TLabel], `type`]) & (`14`[TData, TLabel])): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Scatter")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  @JSImport("react-chartjs-2/dist/typedCharts", "Scatter")
+  @js.native
+  val Scatter: TypedChartComponent[scatter] = js.native
 }

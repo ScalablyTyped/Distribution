@@ -12,7 +12,7 @@ open class Droppable protected ()
   def this(props: DroppableProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: DroppableProps, context: Any) = this()
 }

@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClosedDaysRule extends StObject {
   
   /**
-    * End Datetime in ISO 8601 format.
+    * End DateTime ISO 8601 format
     */
   var EndDateTime: js.UndefOr[string] = js.undefined
   
   /**
-    * Name of the rule.
+    * The name of the closed day rule.
     */
   var Name: js.UndefOr[string] = js.undefined
   
   /**
-    * Start Datetime in ISO 8601 format.
+    * Start DateTime ISO 8601 format
     */
   var StartDateTime: js.UndefOr[string] = js.undefined
 }

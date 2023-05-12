@@ -26,6 +26,8 @@ trait TimePickerOptions
   
   var interval: js.UndefOr[Double] = js.undefined
   
+  var label: js.UndefOr[String | js.Function | BaseLabel] = js.undefined
+  
   var max: js.UndefOr[js.Date] = js.undefined
   
   var min: js.UndefOr[js.Date] = js.undefined
@@ -87,6 +89,10 @@ object TimePickerOptions {
     inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
     inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    
+    inline def setLabel(value: String | js.Function | BaseLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     inline def setMax(value: js.Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

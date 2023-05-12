@@ -34,10 +34,10 @@ object guardSchemaMod {
     /* "CanDeactivate" */ val CanDeactivate: typings.schematicsAngular.guardSchemaMod.Implement.CanDeactivate & String = js.native
     
     @js.native
-    sealed trait CanLoad
+    sealed trait CanMatch
       extends StObject
          with Implement
-    /* "CanLoad" */ val CanLoad: typings.schematicsAngular.guardSchemaMod.Implement.CanLoad & String = js.native
+    /* "CanMatch" */ val CanMatch: typings.schematicsAngular.guardSchemaMod.Implement.CanMatch & String = js.native
   }
   
   trait Schema extends StObject {
@@ -48,7 +48,12 @@ object guardSchemaMod {
     var flat: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Specifies which interfaces to implement.
+      * Specifies whether to generate a guard as a function.
+      */
+    var functional: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Specifies which type of guard to create.
       */
     var implements: js.UndefOr[js.Array[Implement]] = js.undefined
     
@@ -66,7 +71,7 @@ object guardSchemaMod {
     /**
       * The name of the project.
       */
-    var project: js.UndefOr[String] = js.undefined
+    var project: String
     
     /**
       * Do not create "spec.ts" test files for the new guard.
@@ -75,8 +80,8 @@ object guardSchemaMod {
   }
   object Schema {
     
-    inline def apply(name: String): Schema = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    inline def apply(name: String, project: String): Schema = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any])
       __obj.asInstanceOf[Schema]
     }
     
@@ -86,6 +91,10 @@ object guardSchemaMod {
       inline def setFlat(value: Boolean): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
       
       inline def setFlatUndefined: Self = StObject.set(x, "flat", js.undefined)
+      
+      inline def setFunctional(value: Boolean): Self = StObject.set(x, "functional", value.asInstanceOf[js.Any])
+      
+      inline def setFunctionalUndefined: Self = StObject.set(x, "functional", js.undefined)
       
       inline def setImplements(value: js.Array[Implement]): Self = StObject.set(x, "implements", value.asInstanceOf[js.Any])
       
@@ -100,8 +109,6 @@ object guardSchemaMod {
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
       inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
-      
-      inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
       
       inline def setSkipTests(value: Boolean): Self = StObject.set(x, "skipTests", value.asInstanceOf[js.Any])
       

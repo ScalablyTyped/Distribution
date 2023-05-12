@@ -19,6 +19,9 @@ trait MediaTrackConstraintSet extends StObject {
   var deviceId: js.UndefOr[ConstrainDOMString] = js.undefined
   
   /* standard dom */
+  var displaySurface: js.UndefOr[ConstrainDOMString] = js.undefined
+  
+  /* standard dom */
   var echoCancellation: js.UndefOr[ConstrainBoolean] = js.undefined
   
   /* standard dom */
@@ -34,9 +37,6 @@ trait MediaTrackConstraintSet extends StObject {
   var height: js.UndefOr[ConstrainULong] = js.undefined
   
   /* standard dom */
-  var latency: js.UndefOr[ConstrainDouble] = js.undefined
-  
-  /* standard dom */
   var noiseSuppression: js.UndefOr[ConstrainBoolean] = js.undefined
   
   /* standard dom */
@@ -44,9 +44,6 @@ trait MediaTrackConstraintSet extends StObject {
   
   /* standard dom */
   var sampleSize: js.UndefOr[ConstrainULong] = js.undefined
-  
-  /* standard dom */
-  var suppressLocalAudioPlayback: js.UndefOr[ConstrainBoolean] = js.undefined
   
   /* standard dom */
   var width: js.UndefOr[ConstrainULong] = js.undefined
@@ -79,6 +76,12 @@ object MediaTrackConstraintSet {
     
     inline def setDeviceIdVarargs(value: java.lang.String*): Self = StObject.set(x, "deviceId", js.Array(value*))
     
+    inline def setDisplaySurface(value: ConstrainDOMString): Self = StObject.set(x, "displaySurface", value.asInstanceOf[js.Any])
+    
+    inline def setDisplaySurfaceUndefined: Self = StObject.set(x, "displaySurface", js.undefined)
+    
+    inline def setDisplaySurfaceVarargs(value: java.lang.String*): Self = StObject.set(x, "displaySurface", js.Array(value*))
+    
     inline def setEchoCancellation(value: ConstrainBoolean): Self = StObject.set(x, "echoCancellation", value.asInstanceOf[js.Any])
     
     inline def setEchoCancellationUndefined: Self = StObject.set(x, "echoCancellation", js.undefined)
@@ -103,10 +106,6 @@ object MediaTrackConstraintSet {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setLatency(value: ConstrainDouble): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
-    
-    inline def setLatencyUndefined: Self = StObject.set(x, "latency", js.undefined)
-    
     inline def setNoiseSuppression(value: ConstrainBoolean): Self = StObject.set(x, "noiseSuppression", value.asInstanceOf[js.Any])
     
     inline def setNoiseSuppressionUndefined: Self = StObject.set(x, "noiseSuppression", js.undefined)
@@ -118,10 +117,6 @@ object MediaTrackConstraintSet {
     inline def setSampleSize(value: ConstrainULong): Self = StObject.set(x, "sampleSize", value.asInstanceOf[js.Any])
     
     inline def setSampleSizeUndefined: Self = StObject.set(x, "sampleSize", js.undefined)
-    
-    inline def setSuppressLocalAudioPlayback(value: ConstrainBoolean): Self = StObject.set(x, "suppressLocalAudioPlayback", value.asInstanceOf[js.Any])
-    
-    inline def setSuppressLocalAudioPlaybackUndefined: Self = StObject.set(x, "suppressLocalAudioPlayback", js.undefined)
     
     inline def setWidth(value: ConstrainULong): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

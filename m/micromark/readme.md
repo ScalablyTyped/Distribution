@@ -1,7 +1,7 @@
 
 # Scala.js typings for micromark
 
-Typings are for version 3.0.10
+Typings are for version 3.1.0
 
 ## Library description:
 small commonmark compliant markdown parser with positional info and concrete tokens

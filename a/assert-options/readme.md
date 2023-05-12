@@ -1,7 +1,7 @@
 
 # Scala.js typings for assert-options
 
-Typings are for version 0.7.0
+Typings are for version 0.8.1
 
 ## Library description:
 Generic options parameter handling.

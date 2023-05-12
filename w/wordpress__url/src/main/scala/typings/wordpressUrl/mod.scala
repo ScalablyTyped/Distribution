@@ -63,6 +63,8 @@ object mod {
   
   inline def prependHTTP(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prependHTTP")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
+  inline def prependHTTPS(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prependHTTPS")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   inline def removeQueryArgs(url: String, args: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeQueryArgs")(scala.List(url.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
   inline def safeDecodeURI(uri: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("safeDecodeURI")(uri.asInstanceOf[js.Any]).asInstanceOf[String]

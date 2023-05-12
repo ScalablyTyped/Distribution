@@ -1,7 +1,7 @@
 
 # Scala.js typings for openapi-framework
 
-Typings are for version 12.0.2
+Typings are for version 12.1.0
 
 ## Library description:
 An OpenAPI framework for any web framework

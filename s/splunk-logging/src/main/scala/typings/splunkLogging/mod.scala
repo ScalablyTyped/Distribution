@@ -158,6 +158,8 @@ object mod {
     var source: js.UndefOr[String] = js.undefined
     
     var sourcetype: js.UndefOr[String] = js.undefined
+    
+    var time: js.UndefOr[Double] = js.undefined
   }
   object SendContextMetadata {
     
@@ -184,6 +186,10 @@ object mod {
       inline def setSourcetype(value: String): Self = StObject.set(x, "sourcetype", value.asInstanceOf[js.Any])
       
       inline def setSourcetypeUndefined: Self = StObject.set(x, "sourcetype", js.undefined)
+      
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      
+      inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     }
   }
 }

@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TaskFilter extends StObject {
   
   /**
-    * The task type to return;
-    */
+  		 * The task type to return;
+  		 */
   var `type`: js.UndefOr[String] = js.undefined
   
   /**
-    * The task version as used in the tasks.json file.
-    * The string support the package.json semver notation.
-    */
+  		 * The task version as used in the tasks.json file.
+  		 * The string support the package.json semver notation.
+  		 */
   var version: js.UndefOr[String] = js.undefined
 }
 object TaskFilter {

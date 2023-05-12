@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("@rdfjs/parser-n3", JSImport.Namespace)
+  @JSImport("@rdfjs/parser-n3", JSImport.Default)
   @js.native
-  open class ^[Q /* <: BaseQuad */] ()
+  open class default[Q /* <: BaseQuad */] ()
     extends StObject
        with Parser[Q] {
     def this(options: ParserOptions) = this()

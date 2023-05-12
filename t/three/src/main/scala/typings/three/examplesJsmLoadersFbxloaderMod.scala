@@ -36,6 +36,9 @@ object examplesJsmLoadersFbxloaderMod {
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): Unit = js.native
     
+    def loadAsync(url: String): js.Promise[Group] = js.native
+    def loadAsync(url: String, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[Group] = js.native
+    
     def parse(FBXBuffer: String, path: String): Group = js.native
     def parse(FBXBuffer: js.typedarray.ArrayBuffer, path: String): Group = js.native
   }

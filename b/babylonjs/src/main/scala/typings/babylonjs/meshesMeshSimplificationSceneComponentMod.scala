@@ -120,7 +120,7 @@ object meshesMeshSimplificationSceneComponentMod {
       
       /**
         * Gets or sets the simplification queue attached to the scene
-        * @see https://doc.babylonjs.com/how_to/in-browser_mesh_simplification
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/simplifyingMeshes
         */
       var simplificationQueue: SimplificationQueue
     }

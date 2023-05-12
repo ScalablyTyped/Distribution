@@ -1,7 +1,7 @@
 
 # Scala.js typings for tweenjs__tween_dot_js
 
-Typings are for version 18.6.4
+Typings are for version 20.0.3
 
 ## Library description:
 Super simple, fast and easy to use tweening engine which incorporates optimised Robert Penner's equations.

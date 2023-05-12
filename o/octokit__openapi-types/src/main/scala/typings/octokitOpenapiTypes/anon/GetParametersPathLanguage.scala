@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetParametersPathLanguage extends StObject {
   
   /**
-    * Gets a CodeQL database for a language in a repository.
+    * Get a CodeQL database for a repository
+    * @description Gets a CodeQL database for a language in a repository.
     *
     * By default this endpoint returns JSON metadata about the CodeQL database. To
     * download the CodeQL database binary content, set the `Accept` header of the request

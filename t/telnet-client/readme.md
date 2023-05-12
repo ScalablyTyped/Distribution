@@ -1,7 +1,7 @@
 
 # Scala.js typings for telnet-client
 
-Typings are for version 2.0.6
+Typings are for version 2.0.8
 
 ## Library description:
 A simple node.js telnet client

@@ -1,33 +1,12 @@
 package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.chartJs.typesBasicMod.AnyObject
-import typings.chartJs.typesElementMod.Element
+import typings.chartJs.distTypesBasicMod.AnyObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DoughnutController extends DatasetController[
-      ChartType, 
-      Element[AnyObject, AnyObject], 
-      Element[AnyObject, AnyObject], 
-      ParsedDataType[ChartType]
-    ] {
-  
-  def calculateCircumference(value: Double): Double = js.native
-  
-  def calculateTotal(): Double = js.native
-  
-  val innerRadius: Double = js.native
-  
-  val offsetX: Double = js.native
-  
-  val offsetY: Double = js.native
-  
-  val outerRadius: Double = js.native
-}
-/* Inlined chart.js.chart.js.ChartComponent & {  prototype :chart.js.chart.js.DoughnutController, new (chart : chart.js.chart.js.Chart<chart.js.chart.js.ChartType, chart.js.chart.js.DefaultDataPoint<chart.js.chart.js.ChartType>, unknown>, datasetIndex : number): chart.js.chart.js.DoughnutController} */
+/* Inlined chart.js.chart.js/dist/types/index.ChartComponent & {  prototype :chart.js.chart.js/dist/types/index.DoughnutController, new (chart : chart.js.chart.js/dist/types/index.Chart<chart.js.chart.js/dist/types/index.ChartType, chart.js.chart.js/dist/types/index.DefaultDataPoint<chart.js.chart.js/dist/types/index.ChartType>, unknown>, datasetIndex : number): chart.js.chart.js/dist/types/index.DoughnutController} */
 object DoughnutController {
   
   @JSImport("chart.js", "DoughnutController")

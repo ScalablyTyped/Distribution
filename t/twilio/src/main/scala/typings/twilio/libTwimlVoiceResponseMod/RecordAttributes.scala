@@ -6,28 +6,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RecordAttributes extends StObject {
   
+  /** action - Action URL */
   var action: js.UndefOr[String] = js.undefined
   
+  /** finishOnKey - Finish recording on key */
   var finishOnKey: js.UndefOr[String] = js.undefined
   
+  /** maxLength - Max time to record in seconds */
   var maxLength: js.UndefOr[Double] = js.undefined
   
+  /** method - Action URL method */
   var method: js.UndefOr[String] = js.undefined
   
+  /** playBeep - Play beep */
   var playBeep: js.UndefOr[Boolean] = js.undefined
   
+  /** recordingStatusCallback - Status callback URL */
   var recordingStatusCallback: js.UndefOr[String] = js.undefined
   
+  /** recordingStatusCallbackEvent - Recording status callback events */
   var recordingStatusCallbackEvent: js.UndefOr[js.Array[RecordRecordingEvent]] = js.undefined
   
+  /** recordingStatusCallbackMethod - Status callback URL method */
   var recordingStatusCallbackMethod: js.UndefOr[String] = js.undefined
   
+  /** timeout - Timeout to begin recording */
   var timeout: js.UndefOr[Double] = js.undefined
   
+  /** transcribe - Transcribe the recording */
   var transcribe: js.UndefOr[Boolean] = js.undefined
   
+  /** transcribeCallback - Transcribe callback URL */
   var transcribeCallback: js.UndefOr[String] = js.undefined
   
+  /** trim - Trim the recording */
   var trim: js.UndefOr[RecordTrim] = js.undefined
 }
 object RecordAttributes {

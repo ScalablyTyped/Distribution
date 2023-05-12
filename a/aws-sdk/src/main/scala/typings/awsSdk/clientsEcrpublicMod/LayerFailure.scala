@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LayerFailure extends StObject {
   
   /**
-    * The failure code associated with the failure.
+    * The failure code that's associated with the failure.
     */
   var failureCode: js.UndefOr[LayerFailureCode] = js.undefined
   
@@ -17,7 +17,7 @@ trait LayerFailure extends StObject {
   var failureReason: js.UndefOr[LayerFailureReason] = js.undefined
   
   /**
-    * The layer digest associated with the failure.
+    * The layer digest that's associated with the failure.
     */
   var layerDigest: js.UndefOr[BatchedOperationLayerDigest] = js.undefined
 }

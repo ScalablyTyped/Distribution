@@ -36,6 +36,22 @@ trait Route53Domains extends Service {
   ): Request[AcceptDomainTransferFromAnotherAwsAccountResponse, AWSError] = js.native
   
   /**
+    *  Creates a delegation signer (DS) record in the registry zone for this domain name. Note that creating DS record at the registry impacts DNSSEC validation of your DNS records. This action may render your domain name unavailable on the internet if the steps are completed in the wrong order, or with incorrect timing. For more information about DNSSEC signing, see Configuring DNSSEC signing in the Route 53 developer guide.
+    */
+  def associateDelegationSignerToDomain(): Request[AssociateDelegationSignerToDomainResponse, AWSError] = js.native
+  def associateDelegationSignerToDomain(
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateDelegationSignerToDomainResponse, Unit]
+  ): Request[AssociateDelegationSignerToDomainResponse, AWSError] = js.native
+  /**
+    *  Creates a delegation signer (DS) record in the registry zone for this domain name. Note that creating DS record at the registry impacts DNSSEC validation of your DNS records. This action may render your domain name unavailable on the internet if the steps are completed in the wrong order, or with incorrect timing. For more information about DNSSEC signing, see Configuring DNSSEC signing in the Route 53 developer guide.
+    */
+  def associateDelegationSignerToDomain(params: AssociateDelegationSignerToDomainRequest): Request[AssociateDelegationSignerToDomainResponse, AWSError] = js.native
+  def associateDelegationSignerToDomain(
+    params: AssociateDelegationSignerToDomainRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateDelegationSignerToDomainResponse, Unit]
+  ): Request[AssociateDelegationSignerToDomainResponse, AWSError] = js.native
+  
+  /**
     * Cancels the transfer of a domain from the current Amazon Web Services account to another Amazon Web Services account. You initiate a transfer betweenAmazon Web Services accounts using TransferDomainToAnotherAwsAccount.   You must cancel the transfer before the other Amazon Web Services account accepts the transfer using AcceptDomainTransferFromAnotherAwsAccount.  Use either ListOperations or GetOperationDetail to determine whether the operation succeeded. GetOperationDetail provides additional information, for example, Domain Transfer from Aws Account 111122223333 has been cancelled. 
     */
   def cancelDomainTransferToAnotherAwsAccount(): Request[CancelDomainTransferToAnotherAwsAccountResponse, AWSError] = js.native
@@ -137,6 +153,22 @@ trait Route53Domains extends Service {
     params: DisableDomainTransferLockRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisableDomainTransferLockResponse, Unit]
   ): Request[DisableDomainTransferLockResponse, AWSError] = js.native
+  
+  /**
+    * Deletes a delegation signer (DS) record in the registry zone for this domain name.
+    */
+  def disassociateDelegationSignerFromDomain(): Request[DisassociateDelegationSignerFromDomainResponse, AWSError] = js.native
+  def disassociateDelegationSignerFromDomain(
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateDelegationSignerFromDomainResponse, Unit]
+  ): Request[DisassociateDelegationSignerFromDomainResponse, AWSError] = js.native
+  /**
+    * Deletes a delegation signer (DS) record in the registry zone for this domain name.
+    */
+  def disassociateDelegationSignerFromDomain(params: DisassociateDelegationSignerFromDomainRequest): Request[DisassociateDelegationSignerFromDomainResponse, AWSError] = js.native
+  def disassociateDelegationSignerFromDomain(
+    params: DisassociateDelegationSignerFromDomainRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateDelegationSignerFromDomainResponse, Unit]
+  ): Request[DisassociateDelegationSignerFromDomainResponse, AWSError] = js.native
   
   /**
     * This operation configures Amazon Route 53 to automatically renew the specified domain before the domain registration expires. The cost of renewing your domain registration is billed to your Amazon Web Services account. The period during which you can renew a domain name varies by TLD. For a list of TLDs and their renewal policies, see Domains That You Can Register with Amazon Route 53 in the Amazon Route 53 Developer Guide. Route 53 requires that you renew before the end of the renewal period so we can complete processing before the deadline.
@@ -279,12 +311,23 @@ trait Route53Domains extends Service {
   ): Request[ListTagsForDomainResponse, AWSError] = js.native
   
   /**
-    * This operation registers a domain. Domains are registered either by Amazon Registrar (for .com, .net, and .org domains) or by our registrar associate, Gandi (for all other domains). For some top-level domains (TLDs), this operation requires extra parameters. When you register a domain, Amazon Route 53 does the following:   Creates a Route 53 hosted zone that has the same name as the domain. Route 53 assigns four name servers to your hosted zone and automatically updates your domain registration with the names of these name servers.   Enables autorenew, so your domain registration will renew automatically each year. We'll notify you in advance of the renewal date so you can choose whether to renew the registration.   Optionally enables privacy protection, so WHOIS queries return contact information either for Amazon Registrar (for .com, .net, and .org domains) or for our registrar associate, Gandi (for all other TLDs). If you don't enable privacy protection, WHOIS queries return the information that you entered for the administrative, registrant, and technical contacts.  You must specify the same privacy setting for the administrative, registrant, and technical contacts.    If registration is successful, returns an operation ID that you can use to track the progress and completion of the action. If the request is not completed successfully, the domain registrant is notified by email.   Charges your Amazon Web Services account an amount based on the top-level domain. For more information, see Amazon Route 53 Pricing.  
+    *  Moves a domain from Amazon Web Services to another registrar.  Supported actions:   Changes the IPS tags of a .uk domain, and pushes it to transit. Transit means that the domain is ready to be transferred to another registrar.  
+    */
+  def pushDomain(): Request[js.Object, AWSError] = js.native
+  def pushDomain(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    *  Moves a domain from Amazon Web Services to another registrar.  Supported actions:   Changes the IPS tags of a .uk domain, and pushes it to transit. Transit means that the domain is ready to be transferred to another registrar.  
+    */
+  def pushDomain(params: PushDomainRequest): Request[js.Object, AWSError] = js.native
+  def pushDomain(params: PushDomainRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * This operation registers a domain. Domains are registered either by Amazon Registrar (for .com, .net, and .org domains) or by our registrar associate, Gandi (for all other domains). For some top-level domains (TLDs), this operation requires extra parameters. When you register a domain, Amazon Route 53 does the following:   Creates a Route 53 hosted zone that has the same name as the domain. Route 53 assigns four name servers to your hosted zone and automatically updates your domain registration with the names of these name servers.   Enables auto renew, so your domain registration will renew automatically each year. We'll notify you in advance of the renewal date so you can choose whether to renew the registration.   Optionally enables privacy protection, so WHOIS queries return contact information either for Amazon Registrar (for .com, .net, and .org domains) or for our registrar associate, Gandi (for all other TLDs). If you don't enable privacy protection, WHOIS queries return the information that you entered for the administrative, registrant, and technical contacts.  You must specify the same privacy setting for the administrative, registrant, and technical contacts.    If registration is successful, returns an operation ID that you can use to track the progress and completion of the action. If the request is not completed successfully, the domain registrant is notified by email.   Charges your Amazon Web Services account an amount based on the top-level domain. For more information, see Amazon Route 53 Pricing.  
     */
   def registerDomain(): Request[RegisterDomainResponse, AWSError] = js.native
   def registerDomain(callback: js.Function2[/* err */ AWSError, /* data */ RegisterDomainResponse, Unit]): Request[RegisterDomainResponse, AWSError] = js.native
   /**
-    * This operation registers a domain. Domains are registered either by Amazon Registrar (for .com, .net, and .org domains) or by our registrar associate, Gandi (for all other domains). For some top-level domains (TLDs), this operation requires extra parameters. When you register a domain, Amazon Route 53 does the following:   Creates a Route 53 hosted zone that has the same name as the domain. Route 53 assigns four name servers to your hosted zone and automatically updates your domain registration with the names of these name servers.   Enables autorenew, so your domain registration will renew automatically each year. We'll notify you in advance of the renewal date so you can choose whether to renew the registration.   Optionally enables privacy protection, so WHOIS queries return contact information either for Amazon Registrar (for .com, .net, and .org domains) or for our registrar associate, Gandi (for all other TLDs). If you don't enable privacy protection, WHOIS queries return the information that you entered for the administrative, registrant, and technical contacts.  You must specify the same privacy setting for the administrative, registrant, and technical contacts.    If registration is successful, returns an operation ID that you can use to track the progress and completion of the action. If the request is not completed successfully, the domain registrant is notified by email.   Charges your Amazon Web Services account an amount based on the top-level domain. For more information, see Amazon Route 53 Pricing.  
+    * This operation registers a domain. Domains are registered either by Amazon Registrar (for .com, .net, and .org domains) or by our registrar associate, Gandi (for all other domains). For some top-level domains (TLDs), this operation requires extra parameters. When you register a domain, Amazon Route 53 does the following:   Creates a Route 53 hosted zone that has the same name as the domain. Route 53 assigns four name servers to your hosted zone and automatically updates your domain registration with the names of these name servers.   Enables auto renew, so your domain registration will renew automatically each year. We'll notify you in advance of the renewal date so you can choose whether to renew the registration.   Optionally enables privacy protection, so WHOIS queries return contact information either for Amazon Registrar (for .com, .net, and .org domains) or for our registrar associate, Gandi (for all other TLDs). If you don't enable privacy protection, WHOIS queries return the information that you entered for the administrative, registrant, and technical contacts.  You must specify the same privacy setting for the administrative, registrant, and technical contacts.    If registration is successful, returns an operation ID that you can use to track the progress and completion of the action. If the request is not completed successfully, the domain registrant is notified by email.   Charges your Amazon Web Services account an amount based on the top-level domain. For more information, see Amazon Route 53 Pricing.  
     */
   def registerDomain(params: RegisterDomainRequest): Request[RegisterDomainResponse, AWSError] = js.native
   def registerDomain(
@@ -347,12 +390,26 @@ trait Route53Domains extends Service {
   ): Request[ResendContactReachabilityEmailResponse, AWSError] = js.native
   
   /**
-    * This operation returns the AuthCode for the domain. To transfer a domain to another registrar, you provide this value to the new registrar.
+    *  Resend the form of authorization email for this operation. 
+    */
+  def resendOperationAuthorization(): Request[js.Object, AWSError] = js.native
+  def resendOperationAuthorization(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    *  Resend the form of authorization email for this operation. 
+    */
+  def resendOperationAuthorization(params: ResendOperationAuthorizationRequest): Request[js.Object, AWSError] = js.native
+  def resendOperationAuthorization(
+    params: ResendOperationAuthorizationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * This operation returns the authorization code for the domain. To transfer a domain to another registrar, you provide this value to the new registrar.
     */
   def retrieveDomainAuthCode(): Request[RetrieveDomainAuthCodeResponse, AWSError] = js.native
   def retrieveDomainAuthCode(callback: js.Function2[/* err */ AWSError, /* data */ RetrieveDomainAuthCodeResponse, Unit]): Request[RetrieveDomainAuthCodeResponse, AWSError] = js.native
   /**
-    * This operation returns the AuthCode for the domain. To transfer a domain to another registrar, you provide this value to the new registrar.
+    * This operation returns the authorization code for the domain. To transfer a domain to another registrar, you provide this value to the new registrar.
     */
   def retrieveDomainAuthCode(params: RetrieveDomainAuthCodeRequest): Request[RetrieveDomainAuthCodeResponse, AWSError] = js.native
   def retrieveDomainAuthCode(
@@ -391,12 +448,12 @@ trait Route53Domains extends Service {
   ): Request[TransferDomainToAnotherAwsAccountResponse, AWSError] = js.native
   
   /**
-    * This operation updates the contact information for a particular domain. You must specify information for at least one contact: registrant, administrator, or technical. If the update is successful, this method returns an operation ID that you can use to track the progress and completion of the action. If the request is not completed successfully, the domain registrant will be notified by email.
+    * This operation updates the contact information for a particular domain. You must specify information for at least one contact: registrant, administrator, or technical. If the update is successful, this method returns an operation ID that you can use to track the progress and completion of the operation. If the request is not completed successfully, the domain registrant will be notified by email.
     */
   def updateDomainContact(): Request[UpdateDomainContactResponse, AWSError] = js.native
   def updateDomainContact(callback: js.Function2[/* err */ AWSError, /* data */ UpdateDomainContactResponse, Unit]): Request[UpdateDomainContactResponse, AWSError] = js.native
   /**
-    * This operation updates the contact information for a particular domain. You must specify information for at least one contact: registrant, administrator, or technical. If the update is successful, this method returns an operation ID that you can use to track the progress and completion of the action. If the request is not completed successfully, the domain registrant will be notified by email.
+    * This operation updates the contact information for a particular domain. You must specify information for at least one contact: registrant, administrator, or technical. If the update is successful, this method returns an operation ID that you can use to track the progress and completion of the operation. If the request is not completed successfully, the domain registrant will be notified by email.
     */
   def updateDomainContact(params: UpdateDomainContactRequest): Request[UpdateDomainContactResponse, AWSError] = js.native
   def updateDomainContact(

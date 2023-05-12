@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("dynogels", "AWS.Response")
 @js.native
 open class Response[D, E] ()
-  extends typings.awsSdk.mod.Response[D, E]
+  extends typings.awsSdk2Types.mod.Response[D, E]

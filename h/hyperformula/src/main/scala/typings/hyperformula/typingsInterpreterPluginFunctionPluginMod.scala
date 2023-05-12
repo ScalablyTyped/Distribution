@@ -14,6 +14,7 @@ import typings.hyperformula.typingsInterpreterArithmeticHelperMod.complex
 import typings.hyperformula.typingsInterpreterInterpreterMod.Interpreter
 import typings.hyperformula.typingsInterpreterInterpreterStateMod.InterpreterState
 import typings.hyperformula.typingsInterpreterInterpreterValueMod.ExtendedNumber
+import typings.hyperformula.typingsInterpreterInterpreterValueMod.FormatInfo
 import typings.hyperformula.typingsInterpreterInterpreterValueMod.InternalScalarValue
 import typings.hyperformula.typingsInterpreterInterpreterValueMod.InterpreterValue
 import typings.hyperformula.typingsInterpreterInterpreterValueMod.NumberType
@@ -24,6 +25,7 @@ import typings.hyperformula.typingsMaybeMod.Maybe
 import typings.hyperformula.typingsParserAstMod.Ast
 import typings.hyperformula.typingsParserAstMod.ProcedureAst
 import typings.hyperformula.typingsSerializationMod.Serialization
+import typings.hyperformula.typingsSimpleRangeValueMod.SimpleRangeValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,13 +33,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object typingsInterpreterPluginFunctionPluginMod {
   
   @js.native
-  sealed trait ArgumentTypes extends StObject
-  @JSImport("hyperformula/typings/interpreter/plugin/FunctionPlugin", "ArgumentTypes")
+  sealed trait FunctionArgumentType extends StObject
+  @JSImport("hyperformula/typings/interpreter/plugin/FunctionPlugin", "FunctionArgumentType")
   @js.native
-  object ArgumentTypes extends StObject {
+  object FunctionArgumentType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[ArgumentTypes & String] = js.native
+    def apply(value: String): js.UndefOr[FunctionArgumentType & String] = js.native
     
     /**
       * Range or scalar.
@@ -45,8 +47,8 @@ object typingsInterpreterPluginFunctionPluginMod {
     @js.native
     sealed trait ANY
       extends StObject
-         with ArgumentTypes
-    /* "ANY" */ val ANY: typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.ArgumentTypes.ANY & String = js.native
+         with FunctionArgumentType
+    /* "ANY" */ val ANY: typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.FunctionArgumentType.ANY & String = js.native
     
     /**
       * Boolean type.
@@ -54,8 +56,8 @@ object typingsInterpreterPluginFunctionPluginMod {
     @js.native
     sealed trait BOOLEAN
       extends StObject
-         with ArgumentTypes
-    /* "BOOLEAN" */ val BOOLEAN: typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.ArgumentTypes.BOOLEAN & String = js.native
+         with FunctionArgumentType
+    /* "BOOLEAN" */ val BOOLEAN: typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.FunctionArgumentType.BOOLEAN & String = js.native
     
     /**
       * String representing complex number.
@@ -63,8 +65,8 @@ object typingsInterpreterPluginFunctionPluginMod {
     @js.native
     sealed trait COMPLEX
       extends StObject
-         with ArgumentTypes
-    /* "COMPLEX" */ val COMPLEX: typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.ArgumentTypes.COMPLEX & String = js.native
+         with FunctionArgumentType
+    /* "COMPLEX" */ val COMPLEX: typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.FunctionArgumentType.COMPLEX & String = js.native
     
     /**
       * Integer type.
@@ -72,8 +74,8 @@ object typingsInterpreterPluginFunctionPluginMod {
     @js.native
     sealed trait INTEGER
       extends StObject
-         with ArgumentTypes
-    /* "INTEGER" */ val INTEGER: typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.ArgumentTypes.INTEGER & String = js.native
+         with FunctionArgumentType
+    /* "INTEGER" */ val INTEGER: typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.FunctionArgumentType.INTEGER & String = js.native
     
     /**
       * Any non-range, no-error type.
@@ -81,8 +83,8 @@ object typingsInterpreterPluginFunctionPluginMod {
     @js.native
     sealed trait NOERROR
       extends StObject
-         with ArgumentTypes
-    /* "NOERROR" */ val NOERROR: typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.ArgumentTypes.NOERROR & String = js.native
+         with FunctionArgumentType
+    /* "NOERROR" */ val NOERROR: typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.FunctionArgumentType.NOERROR & String = js.native
     
     /**
       * Floating point type.
@@ -90,8 +92,8 @@ object typingsInterpreterPluginFunctionPluginMod {
     @js.native
     sealed trait NUMBER
       extends StObject
-         with ArgumentTypes
-    /* "NUMBER" */ val NUMBER: typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.ArgumentTypes.NUMBER & String = js.native
+         with FunctionArgumentType
+    /* "NUMBER" */ val NUMBER: typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.FunctionArgumentType.NUMBER & String = js.native
     
     /**
       * Range type.
@@ -99,8 +101,8 @@ object typingsInterpreterPluginFunctionPluginMod {
     @js.native
     sealed trait RANGE
       extends StObject
-         with ArgumentTypes
-    /* "RANGE" */ val RANGE: typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.ArgumentTypes.RANGE & String = js.native
+         with FunctionArgumentType
+    /* "RANGE" */ val RANGE: typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.FunctionArgumentType.RANGE & String = js.native
     
     /**
       * Any non-range value.
@@ -108,8 +110,8 @@ object typingsInterpreterPluginFunctionPluginMod {
     @js.native
     sealed trait SCALAR
       extends StObject
-         with ArgumentTypes
-    /* "SCALAR" */ val SCALAR: typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.ArgumentTypes.SCALAR & String = js.native
+         with FunctionArgumentType
+    /* "SCALAR" */ val SCALAR: typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.FunctionArgumentType.SCALAR & String = js.native
     
     /**
       * String type.
@@ -117,8 +119,8 @@ object typingsInterpreterPluginFunctionPluginMod {
     @js.native
     sealed trait STRING
       extends StObject
-         with ArgumentTypes
-    /* "STRING" */ val STRING: typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.ArgumentTypes.STRING & String = js.native
+         with FunctionArgumentType
+    /* "STRING" */ val STRING: typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.FunctionArgumentType.STRING & String = js.native
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -133,6 +135,33 @@ object typingsInterpreterPluginFunctionPluginMod {
     
     /* protected */ val arraySizePredictor: ArraySizePredictor = js.native
     
+    /* protected */ def buildMetadataForEachArgumentValue(numberOfArgumentValuesPassed: Double, metadata: FunctionMetadata): js.Array[FunctionArgument] = js.native
+    
+    /* protected */ def calculateSingleCellOfResultArray(
+      state: InterpreterState,
+      vectorizedArguments: js.Array[Maybe[InterpreterValue]],
+      argumentsMetadata: js.Array[FunctionArgument],
+      argumentIgnorableFlags: js.Array[Boolean],
+      functionImplementation: js.Function1[/* arg */ Any, InterpreterValue]
+    ): InternalScalarValue | SimpleRangeValue = js.native
+    /* protected */ def calculateSingleCellOfResultArray(
+      state: InterpreterState,
+      vectorizedArguments: js.Array[Maybe[InterpreterValue]],
+      argumentsMetadata: js.Array[FunctionArgument],
+      argumentIgnorableFlags: js.Array[Boolean],
+      functionImplementation: js.Function1[/* arg */ Any, InterpreterValue],
+      returnNumberType: NumberType
+    ): InternalScalarValue | SimpleRangeValue = js.native
+    
+    /* protected */ def calculateSizeOfVectorizedResultArray(argumentValues: js.Array[InterpreterValue], argumentMetadata: js.Array[FunctionArgument]): js.Tuple2[Double, Double] = js.native
+    
+    /* protected */ def coerceArgumentsToRequiredTypes(
+      state: InterpreterState,
+      vectorizedArguments: js.Array[Maybe[InterpreterValue]],
+      argumentsMetadata: js.Array[FunctionArgument],
+      argumentIgnorableFlags: js.Array[Boolean]
+    ): CellError | (js.Array[Maybe[InterpreterValue | complex | RawNoErrorScalarValue]]) = js.native
+    
     /* protected */ def coerceScalarToNumberOrError(arg: InternalScalarValue): ExtendedNumber | CellError = js.native
     
     /* protected */ def coerceToType(arg: InterpreterValue, coercedType: FunctionArgument, state: InterpreterState): Maybe[InterpreterValue | complex | RawNoErrorScalarValue] = js.native
@@ -145,21 +174,42 @@ object typingsInterpreterPluginFunctionPluginMod {
     
     /* protected */ val dependencyGraph: DependencyGraph = js.native
     
+    /* protected */ def evaluateArguments(args: js.Array[Ast], state: InterpreterState, metadata: FunctionMetadata): js.Array[js.Tuple2[InterpreterValue, Boolean]] = js.native
+    
     /* protected */ def evaluateAst(ast: Ast, state: InterpreterState): InterpreterValue = js.native
     
     /* protected */ val interpreter: Interpreter = js.native
+    
+    /* protected */ def isNumberOfArgumentValuesValid(argumentsMetadata: js.Array[FunctionArgument], numberOfArgumentValuesPassed: Double): Boolean = js.native
+    
+    /* protected */ def isRangePassedAsAScalarArgument(argumentValue: Maybe[InterpreterValue], argumentMetadata: Maybe[FunctionArgument]): /* is hyperformula.hyperformula/typings/SimpleRangeValue.SimpleRangeValue */ Boolean = js.native
     
     /* protected */ def listOfScalarValues(asts: js.Array[Ast], state: InterpreterState): js.Array[js.Tuple2[InternalScalarValue, Boolean]] = js.native
     
     /* protected */ def metadata(name: String): FunctionMetadata = js.native
     
-    /* private */ var returnNumberWrapper: Any = js.native
+    /* protected */ def returnNumberWrapper[T](`val`: ExtendedNumber | T): T | ExtendedNumber = js.native
+    /* protected */ def returnNumberWrapper[T](`val`: ExtendedNumber | T, `type`: Unit, format: FormatInfo): T | ExtendedNumber = js.native
+    /* protected */ def returnNumberWrapper[T](`val`: ExtendedNumber | T, `type`: NumberType): T | ExtendedNumber = js.native
+    /* protected */ def returnNumberWrapper[T](`val`: ExtendedNumber | T, `type`: NumberType, format: FormatInfo): T | ExtendedNumber = js.native
     
+    /**
+      * A method that should wrap the logic of every built-in function and custom function. It:
+      * - Evaluates the function's arguments.
+      * - Validates the number of arguments against the [`parameters` array](#function-options).
+      * - Coerces the argument values to types set in the [`parameters` array](#argument-validation-options).
+      * - Handles optional arguments and default values according to options set in the [`parameters` array](#argument-validation-options).
+      * - Validates the function's arguments against the [argument validation options](#argument-validation-options).
+      * - Duplicates the arguments according to the [`repeatLastArgs` option](#function-options).
+      * - Handles the [array arithmetic mode](arrays.md#array-arithmetic-mode).
+      * - Performs [function vectorization](arrays.md#passing-arrays-to-scalar-functions-vectorization).
+      * - Performs [argument broadcasting](arrays.md#broadcasting).
+      */
     /* protected */ def runFunction(
       args: js.Array[Ast],
       state: InterpreterState,
       metadata: FunctionMetadata,
-      fn: js.Function1[/* arg */ Any, InterpreterValue]
+      functionImplementation: js.Function1[/* arg */ Any, InterpreterValue]
     ): InterpreterValue = js.native
     
     /* protected */ def runFunctionWithReferenceArgument(
@@ -179,6 +229,16 @@ object typingsInterpreterPluginFunctionPluginMod {
     ): InterpreterValue = js.native
     
     /* protected */ val serialization: Serialization = js.native
+    
+    /* protected */ def vectorizeAndBroadcastArgumentsIfNecessary(
+      isVectorizationOn: Boolean,
+      argumentValues: js.Array[InterpreterValue],
+      argumentMetadata: js.Array[FunctionArgument],
+      row: Double,
+      col: Double
+    ): js.Array[Maybe[InterpreterValue]] = js.native
+    
+    /* protected */ def vectorizeAndBroadcastRangeArgument(argumentValue: SimpleRangeValue, rowNum: Double, colNum: Double): Maybe[InterpreterValue] = js.native
   }
   /* static members */
   object FunctionPlugin {
@@ -203,7 +263,7 @@ object typingsInterpreterPluginFunctionPluginMod {
   
   trait FunctionArgument extends StObject {
     
-    var argumentType: ArgumentTypes
+    var argumentType: FunctionArgumentType
     
     /**
       * If an argument is missing, its value defaults to `defaultValue`.
@@ -246,7 +306,7 @@ object typingsInterpreterPluginFunctionPluginMod {
   }
   object FunctionArgument {
     
-    inline def apply(argumentType: ArgumentTypes): FunctionArgument = {
+    inline def apply(argumentType: FunctionArgumentType): FunctionArgument = {
       val __obj = js.Dynamic.literal(argumentType = argumentType.asInstanceOf[js.Any])
       __obj.asInstanceOf[FunctionArgument]
     }
@@ -254,7 +314,7 @@ object typingsInterpreterPluginFunctionPluginMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: FunctionArgument] (val x: Self) extends AnyVal {
       
-      inline def setArgumentType(value: ArgumentTypes): Self = StObject.set(x, "argumentType", value.asInstanceOf[js.Any])
+      inline def setArgumentType(value: FunctionArgumentType): Self = StObject.set(x, "argumentType", value.asInstanceOf[js.Any])
       
       inline def setDefaultValue(value: InternalScalarValue | RawScalarValue): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       

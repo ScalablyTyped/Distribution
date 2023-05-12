@@ -48,7 +48,7 @@ trait Options[Result, RemoteResult] extends StObject {
   
   var dropdownCssClass: js.UndefOr[String] = js.undefined
   
-  var dropdownParent: js.UndefOr[JQuery[HTMLElement]] = js.undefined
+  var dropdownParent: js.UndefOr[HTMLElement | JQuery[HTMLElement] | String] = js.undefined
   
   var escapeMarkup: js.UndefOr[js.Function1[/* markup */ String, String]] = js.undefined
   
@@ -209,7 +209,7 @@ object Options {
     
     inline def setDropdownCssUndefined: Self = StObject.set(x, "dropdownCss", js.undefined)
     
-    inline def setDropdownParent(value: JQuery[HTMLElement]): Self = StObject.set(x, "dropdownParent", value.asInstanceOf[js.Any])
+    inline def setDropdownParent(value: HTMLElement | JQuery[HTMLElement] | String): Self = StObject.set(x, "dropdownParent", value.asInstanceOf[js.Any])
     
     inline def setDropdownParentUndefined: Self = StObject.set(x, "dropdownParent", js.undefined)
     

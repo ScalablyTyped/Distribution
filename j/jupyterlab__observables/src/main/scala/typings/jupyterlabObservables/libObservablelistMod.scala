@@ -2,8 +2,6 @@ package typings.jupyterlabObservables
 
 import typings.jupyterlabObservables.libObservablelistMod.IObservableList.IChangedArgs
 import typings.jupyterlabObservables.libObservablelistMod.ObservableList.IOptions
-import typings.luminoAlgorithm.typesIterMod.IIterator
-import typings.luminoAlgorithm.typesIterMod.IterableOrArrayLike
 import typings.luminoDisposable.mod.IDisposable
 import typings.luminoSignaling.mod.ISignal
 import org.scalablytyped.runtime.StObject
@@ -122,7 +120,10 @@ object libObservablelistMod {
       * An `index` which is non-integral.
       */
     /* CompleteClass */
-    override def insertAll(index: Double, values: IterableOrArrayLike[T]): Unit = js.native
+    override def insertAll(
+      index: Double,
+      values: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IterableOrArrayLike<T> */ Any
+    ): Unit = js.native
     
     /**
       * Test whether the object has been disposed.
@@ -150,7 +151,7 @@ object libObservablelistMod {
       * No changes.
       */
     /* CompleteClass */
-    override def iter(): IIterator[T] = js.native
+    override def iter(): Any = js.native
     
     /**
       * The length of the list.
@@ -216,7 +217,9 @@ object libObservablelistMod {
       * No changes.
       */
     /* CompleteClass */
-    override def pushAll(values: IterableOrArrayLike[T]): Double = js.native
+    override def pushAll(
+      values: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IterableOrArrayLike<T> */ Any
+    ): Double = js.native
     
     /**
       * Remove and return the value at a specific index.
@@ -323,7 +326,9 @@ object libObservablelistMod {
       /**
         * An optional initial set of values.
         */
-      var values: js.UndefOr[IterableOrArrayLike[T]] = js.undefined
+      var values: js.UndefOr[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IterableOrArrayLike<T> */ Any
+          ] = js.undefined
     }
     object IOptions {
       
@@ -339,7 +344,9 @@ object libObservablelistMod {
         
         inline def setItemCmpUndefined: Self = StObject.set(x, "itemCmp", js.undefined)
         
-        inline def setValues(value: IterableOrArrayLike[T]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+        inline def setValues(
+          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IterableOrArrayLike<T> */ Any
+        ): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
         
         inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       }
@@ -418,7 +425,10 @@ object libObservablelistMod {
       * #### Undefined Behavior.
       * An `index` which is non-integral.
       */
-    def insertAll(index: Double, values: IterableOrArrayLike[T]): Unit
+    def insertAll(
+      index: Double,
+      values: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IterableOrArrayLike<T> */ Any
+    ): Unit
     
     /**
       * Create an iterator over the values in the list.
@@ -431,7 +441,7 @@ object libObservablelistMod {
       * #### Iterator Validity
       * No changes.
       */
-    def iter(): IIterator[T]
+    def iter(): Any
     
     /**
       * The length of the list.
@@ -488,7 +498,9 @@ object libObservablelistMod {
       * #### Iterator Validity
       * No changes.
       */
-    def pushAll(values: IterableOrArrayLike[T]): Double
+    def pushAll(
+      values: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IterableOrArrayLike<T> */ Any
+    ): Double
     
     /**
       * Remove and return the value at a specific index.
@@ -576,13 +588,13 @@ object libObservablelistMod {
       dispose: () => Unit,
       get: Double => T,
       insert: (Double, T) => Unit,
-      insertAll: (Double, IterableOrArrayLike[T]) => Unit,
+      insertAll: (Double, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IterableOrArrayLike<T> */ Any) => Unit,
       isDisposed: Boolean,
-      iter: () => IIterator[T],
+      iter: () => Any,
       length: Double,
       move: (Double, Double) => Unit,
       push: T => Double,
-      pushAll: IterableOrArrayLike[T] => Double,
+      pushAll: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IterableOrArrayLike<T> */ Any => Double,
       remove: Double => js.UndefOr[T],
       removeRange: (Double, Double) => Double,
       removeValue: T => Double,
@@ -694,9 +706,11 @@ object libObservablelistMod {
       
       inline def setInsert(value: (Double, T) => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
       
-      inline def setInsertAll(value: (Double, IterableOrArrayLike[T]) => Unit): Self = StObject.set(x, "insertAll", js.Any.fromFunction2(value))
+      inline def setInsertAll(
+        value: (Double, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IterableOrArrayLike<T> */ Any) => Unit
+      ): Self = StObject.set(x, "insertAll", js.Any.fromFunction2(value))
       
-      inline def setIter(value: () => IIterator[T]): Self = StObject.set(x, "iter", js.Any.fromFunction0(value))
+      inline def setIter(value: () => Any): Self = StObject.set(x, "iter", js.Any.fromFunction0(value))
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
@@ -704,7 +718,9 @@ object libObservablelistMod {
       
       inline def setPush(value: T => Double): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
       
-      inline def setPushAll(value: IterableOrArrayLike[T] => Double): Self = StObject.set(x, "pushAll", js.Any.fromFunction1(value))
+      inline def setPushAll(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IterableOrArrayLike<T> */ Any => Double
+      ): Self = StObject.set(x, "pushAll", js.Any.fromFunction1(value))
       
       inline def setRemove(value: Double => js.UndefOr[T]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       

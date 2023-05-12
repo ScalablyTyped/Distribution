@@ -11,6 +11,8 @@ object anon {
     
     var default: js.UndefOr[Any] = js.undefined
     
+    var isConst: js.UndefOr[Boolean] = js.undefined
+    
     var local: String
   }
   object Default {
@@ -26,6 +28,10 @@ object anon {
       inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      
+      inline def setIsConst(value: Boolean): Self = StObject.set(x, "isConst", value.asInstanceOf[js.Any])
+      
+      inline def setIsConstUndefined: Self = StObject.set(x, "isConst", js.undefined)
       
       inline def setLocal(value: String): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     }

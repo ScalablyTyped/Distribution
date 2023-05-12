@@ -13,6 +13,11 @@ import typings.apolloReportingProtobuf.generatedProtobufMod.Trace.IHTTP
 import typings.apolloReportingProtobuf.generatedProtobufMod.Trace.ILocation
 import typings.apolloReportingProtobuf.generatedProtobufMod.Trace.INode
 import typings.apolloReportingProtobuf.generatedProtobufMod.Trace.IQueryPlanNode
+import typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.IConditionNode
+import typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.IDeferNode
+import typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.IDeferNodePrimary
+import typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.IDeferredNode
+import typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.IDeferredNodeDepends
 import typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.IFetchNode
 import typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.IFlattenNode
 import typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.IParallelNode
@@ -752,6 +757,473 @@ object Trace {
     @JSImport("apollo-reporting-protobuf", "Trace.QueryPlanNode")
     @js.native
     val ^ : js.Any = js.native
+    
+    /** Represents a ConditionNode. */
+    @JSImport("apollo-reporting-protobuf", "Trace.QueryPlanNode.ConditionNode")
+    @js.native
+    /**
+      * Constructs a new ConditionNode.
+      * @param [properties] Properties to set
+      */
+    open class ConditionNode ()
+      extends typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.ConditionNode {
+      def this(properties: IConditionNode) = this()
+    }
+    object ConditionNode {
+      
+      @JSImport("apollo-reporting-protobuf", "Trace.QueryPlanNode.ConditionNode")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /**
+        * Creates a new ConditionNode instance using the specified properties.
+        * @param [properties] Properties to set
+        * @returns ConditionNode instance
+        */
+      /* static member */
+      inline def create(): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.ConditionNode = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.ConditionNode]
+      inline def create(properties: IConditionNode): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.ConditionNode = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.ConditionNode]
+      
+      inline def decode(reader: js.typedarray.Uint8Array): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.ConditionNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.ConditionNode]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.ConditionNode = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.ConditionNode]
+      /**
+        * Decodes a ConditionNode message from the specified reader or buffer.
+        * @param reader Reader or buffer to decode from
+        * @param [length] Message length if known beforehand
+        * @returns ConditionNode
+        * @throws {Error} If the payload is not a reader or valid buffer
+        * @throws {$protobuf.util.ProtocolError} If required fields are missing
+        */
+      /* static member */
+      inline def decode(reader: Reader): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.ConditionNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.ConditionNode]
+      inline def decode(reader: Reader, length: Double): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.ConditionNode = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.ConditionNode]
+      
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.ConditionNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.ConditionNode]
+      /**
+        * Decodes a ConditionNode message from the specified reader or buffer, length delimited.
+        * @param reader Reader or buffer to decode from
+        * @returns ConditionNode
+        * @throws {Error} If the payload is not a reader or valid buffer
+        * @throws {$protobuf.util.ProtocolError} If required fields are missing
+        */
+      /* static member */
+      inline def decodeDelimited(reader: Reader): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.ConditionNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.ConditionNode]
+      
+      /**
+        * Encodes the specified ConditionNode message. Does not implicitly {@link Trace.QueryPlanNode.ConditionNode.verify|verify} messages.
+        * @param message ConditionNode message or plain object to encode
+        * @param [writer] Writer to encode to
+        * @returns Writer
+        */
+      /* static member */
+      inline def encode(message: IConditionNode): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encode(message: IConditionNode, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      
+      /**
+        * Encodes the specified ConditionNode message, length delimited. Does not implicitly {@link Trace.QueryPlanNode.ConditionNode.verify|verify} messages.
+        * @param message ConditionNode message or plain object to encode
+        * @param [writer] Writer to encode to
+        * @returns Writer
+        */
+      /* static member */
+      inline def encodeDelimited(message: IConditionNode): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encodeDelimited(message: IConditionNode, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      
+      /**
+        * Creates a plain object from a ConditionNode message. Also converts values to other types if specified.
+        * @param message ConditionNode
+        * @param [options] Conversion options
+        * @returns Plain object
+        */
+      /* static member */
+      inline def toObject(message: typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.ConditionNode): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(
+        message: typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.ConditionNode,
+        options: IConversionOptions
+      ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+      
+      /**
+        * Verifies a ConditionNode message.
+        * @param message Plain object to verify
+        * @returns `null` if valid, otherwise the reason why it is not
+        */
+      /* static member */
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    }
+    
+    /** Represents a DeferNode. */
+    @JSImport("apollo-reporting-protobuf", "Trace.QueryPlanNode.DeferNode")
+    @js.native
+    /**
+      * Constructs a new DeferNode.
+      * @param [properties] Properties to set
+      */
+    open class DeferNode ()
+      extends typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNode {
+      def this(properties: IDeferNode) = this()
+    }
+    object DeferNode {
+      
+      @JSImport("apollo-reporting-protobuf", "Trace.QueryPlanNode.DeferNode")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /**
+        * Creates a new DeferNode instance using the specified properties.
+        * @param [properties] Properties to set
+        * @returns DeferNode instance
+        */
+      /* static member */
+      inline def create(): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNode = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNode]
+      inline def create(properties: IDeferNode): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNode = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNode]
+      
+      inline def decode(reader: js.typedarray.Uint8Array): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNode]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNode = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNode]
+      /**
+        * Decodes a DeferNode message from the specified reader or buffer.
+        * @param reader Reader or buffer to decode from
+        * @param [length] Message length if known beforehand
+        * @returns DeferNode
+        * @throws {Error} If the payload is not a reader or valid buffer
+        * @throws {$protobuf.util.ProtocolError} If required fields are missing
+        */
+      /* static member */
+      inline def decode(reader: Reader): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNode]
+      inline def decode(reader: Reader, length: Double): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNode = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNode]
+      
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNode]
+      /**
+        * Decodes a DeferNode message from the specified reader or buffer, length delimited.
+        * @param reader Reader or buffer to decode from
+        * @returns DeferNode
+        * @throws {Error} If the payload is not a reader or valid buffer
+        * @throws {$protobuf.util.ProtocolError} If required fields are missing
+        */
+      /* static member */
+      inline def decodeDelimited(reader: Reader): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNode]
+      
+      /**
+        * Encodes the specified DeferNode message. Does not implicitly {@link Trace.QueryPlanNode.DeferNode.verify|verify} messages.
+        * @param message DeferNode message or plain object to encode
+        * @param [writer] Writer to encode to
+        * @returns Writer
+        */
+      /* static member */
+      inline def encode(message: IDeferNode): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encode(message: IDeferNode, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      
+      /**
+        * Encodes the specified DeferNode message, length delimited. Does not implicitly {@link Trace.QueryPlanNode.DeferNode.verify|verify} messages.
+        * @param message DeferNode message or plain object to encode
+        * @param [writer] Writer to encode to
+        * @returns Writer
+        */
+      /* static member */
+      inline def encodeDelimited(message: IDeferNode): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encodeDelimited(message: IDeferNode, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      
+      /**
+        * Creates a plain object from a DeferNode message. Also converts values to other types if specified.
+        * @param message DeferNode
+        * @param [options] Conversion options
+        * @returns Plain object
+        */
+      /* static member */
+      inline def toObject(message: typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNode): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(
+        message: typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNode,
+        options: IConversionOptions
+      ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+      
+      /**
+        * Verifies a DeferNode message.
+        * @param message Plain object to verify
+        * @returns `null` if valid, otherwise the reason why it is not
+        */
+      /* static member */
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    }
+    
+    /** Represents a DeferNodePrimary. */
+    @JSImport("apollo-reporting-protobuf", "Trace.QueryPlanNode.DeferNodePrimary")
+    @js.native
+    /**
+      * Constructs a new DeferNodePrimary.
+      * @param [properties] Properties to set
+      */
+    open class DeferNodePrimary ()
+      extends typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNodePrimary {
+      def this(properties: IDeferNodePrimary) = this()
+    }
+    object DeferNodePrimary {
+      
+      @JSImport("apollo-reporting-protobuf", "Trace.QueryPlanNode.DeferNodePrimary")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /**
+        * Creates a new DeferNodePrimary instance using the specified properties.
+        * @param [properties] Properties to set
+        * @returns DeferNodePrimary instance
+        */
+      /* static member */
+      inline def create(): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNodePrimary = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNodePrimary]
+      inline def create(properties: IDeferNodePrimary): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNodePrimary = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNodePrimary]
+      
+      inline def decode(reader: js.typedarray.Uint8Array): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNodePrimary = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNodePrimary]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNodePrimary = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNodePrimary]
+      /**
+        * Decodes a DeferNodePrimary message from the specified reader or buffer.
+        * @param reader Reader or buffer to decode from
+        * @param [length] Message length if known beforehand
+        * @returns DeferNodePrimary
+        * @throws {Error} If the payload is not a reader or valid buffer
+        * @throws {$protobuf.util.ProtocolError} If required fields are missing
+        */
+      /* static member */
+      inline def decode(reader: Reader): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNodePrimary = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNodePrimary]
+      inline def decode(reader: Reader, length: Double): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNodePrimary = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNodePrimary]
+      
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNodePrimary = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNodePrimary]
+      /**
+        * Decodes a DeferNodePrimary message from the specified reader or buffer, length delimited.
+        * @param reader Reader or buffer to decode from
+        * @returns DeferNodePrimary
+        * @throws {Error} If the payload is not a reader or valid buffer
+        * @throws {$protobuf.util.ProtocolError} If required fields are missing
+        */
+      /* static member */
+      inline def decodeDelimited(reader: Reader): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNodePrimary = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNodePrimary]
+      
+      /**
+        * Encodes the specified DeferNodePrimary message. Does not implicitly {@link Trace.QueryPlanNode.DeferNodePrimary.verify|verify} messages.
+        * @param message DeferNodePrimary message or plain object to encode
+        * @param [writer] Writer to encode to
+        * @returns Writer
+        */
+      /* static member */
+      inline def encode(message: IDeferNodePrimary): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encode(message: IDeferNodePrimary, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      
+      /**
+        * Encodes the specified DeferNodePrimary message, length delimited. Does not implicitly {@link Trace.QueryPlanNode.DeferNodePrimary.verify|verify} messages.
+        * @param message DeferNodePrimary message or plain object to encode
+        * @param [writer] Writer to encode to
+        * @returns Writer
+        */
+      /* static member */
+      inline def encodeDelimited(message: IDeferNodePrimary): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encodeDelimited(message: IDeferNodePrimary, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      
+      /**
+        * Creates a plain object from a DeferNodePrimary message. Also converts values to other types if specified.
+        * @param message DeferNodePrimary
+        * @param [options] Conversion options
+        * @returns Plain object
+        */
+      /* static member */
+      inline def toObject(message: typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNodePrimary): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(
+        message: typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferNodePrimary,
+        options: IConversionOptions
+      ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+      
+      /**
+        * Verifies a DeferNodePrimary message.
+        * @param message Plain object to verify
+        * @returns `null` if valid, otherwise the reason why it is not
+        */
+      /* static member */
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    }
+    
+    /** Represents a DeferredNode. */
+    @JSImport("apollo-reporting-protobuf", "Trace.QueryPlanNode.DeferredNode")
+    @js.native
+    /**
+      * Constructs a new DeferredNode.
+      * @param [properties] Properties to set
+      */
+    open class DeferredNode ()
+      extends typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNode {
+      def this(properties: IDeferredNode) = this()
+    }
+    object DeferredNode {
+      
+      @JSImport("apollo-reporting-protobuf", "Trace.QueryPlanNode.DeferredNode")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /**
+        * Creates a new DeferredNode instance using the specified properties.
+        * @param [properties] Properties to set
+        * @returns DeferredNode instance
+        */
+      /* static member */
+      inline def create(): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNode = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNode]
+      inline def create(properties: IDeferredNode): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNode = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNode]
+      
+      inline def decode(reader: js.typedarray.Uint8Array): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNode]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNode = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNode]
+      /**
+        * Decodes a DeferredNode message from the specified reader or buffer.
+        * @param reader Reader or buffer to decode from
+        * @param [length] Message length if known beforehand
+        * @returns DeferredNode
+        * @throws {Error} If the payload is not a reader or valid buffer
+        * @throws {$protobuf.util.ProtocolError} If required fields are missing
+        */
+      /* static member */
+      inline def decode(reader: Reader): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNode]
+      inline def decode(reader: Reader, length: Double): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNode = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNode]
+      
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNode]
+      /**
+        * Decodes a DeferredNode message from the specified reader or buffer, length delimited.
+        * @param reader Reader or buffer to decode from
+        * @returns DeferredNode
+        * @throws {Error} If the payload is not a reader or valid buffer
+        * @throws {$protobuf.util.ProtocolError} If required fields are missing
+        */
+      /* static member */
+      inline def decodeDelimited(reader: Reader): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNode]
+      
+      /**
+        * Encodes the specified DeferredNode message. Does not implicitly {@link Trace.QueryPlanNode.DeferredNode.verify|verify} messages.
+        * @param message DeferredNode message or plain object to encode
+        * @param [writer] Writer to encode to
+        * @returns Writer
+        */
+      /* static member */
+      inline def encode(message: IDeferredNode): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encode(message: IDeferredNode, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      
+      /**
+        * Encodes the specified DeferredNode message, length delimited. Does not implicitly {@link Trace.QueryPlanNode.DeferredNode.verify|verify} messages.
+        * @param message DeferredNode message or plain object to encode
+        * @param [writer] Writer to encode to
+        * @returns Writer
+        */
+      /* static member */
+      inline def encodeDelimited(message: IDeferredNode): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encodeDelimited(message: IDeferredNode, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      
+      /**
+        * Creates a plain object from a DeferredNode message. Also converts values to other types if specified.
+        * @param message DeferredNode
+        * @param [options] Conversion options
+        * @returns Plain object
+        */
+      /* static member */
+      inline def toObject(message: typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNode): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(
+        message: typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNode,
+        options: IConversionOptions
+      ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+      
+      /**
+        * Verifies a DeferredNode message.
+        * @param message Plain object to verify
+        * @returns `null` if valid, otherwise the reason why it is not
+        */
+      /* static member */
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    }
+    
+    /** Represents a DeferredNodeDepends. */
+    @JSImport("apollo-reporting-protobuf", "Trace.QueryPlanNode.DeferredNodeDepends")
+    @js.native
+    /**
+      * Constructs a new DeferredNodeDepends.
+      * @param [properties] Properties to set
+      */
+    open class DeferredNodeDepends ()
+      extends typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNodeDepends {
+      def this(properties: IDeferredNodeDepends) = this()
+    }
+    object DeferredNodeDepends {
+      
+      @JSImport("apollo-reporting-protobuf", "Trace.QueryPlanNode.DeferredNodeDepends")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /**
+        * Creates a new DeferredNodeDepends instance using the specified properties.
+        * @param [properties] Properties to set
+        * @returns DeferredNodeDepends instance
+        */
+      /* static member */
+      inline def create(): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNodeDepends = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNodeDepends]
+      inline def create(properties: IDeferredNodeDepends): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNodeDepends = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNodeDepends]
+      
+      inline def decode(reader: js.typedarray.Uint8Array): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNodeDepends = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNodeDepends]
+      inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNodeDepends = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNodeDepends]
+      /**
+        * Decodes a DeferredNodeDepends message from the specified reader or buffer.
+        * @param reader Reader or buffer to decode from
+        * @param [length] Message length if known beforehand
+        * @returns DeferredNodeDepends
+        * @throws {Error} If the payload is not a reader or valid buffer
+        * @throws {$protobuf.util.ProtocolError} If required fields are missing
+        */
+      /* static member */
+      inline def decode(reader: Reader): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNodeDepends = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNodeDepends]
+      inline def decode(reader: Reader, length: Double): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNodeDepends = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNodeDepends]
+      
+      inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNodeDepends = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNodeDepends]
+      /**
+        * Decodes a DeferredNodeDepends message from the specified reader or buffer, length delimited.
+        * @param reader Reader or buffer to decode from
+        * @returns DeferredNodeDepends
+        * @throws {Error} If the payload is not a reader or valid buffer
+        * @throws {$protobuf.util.ProtocolError} If required fields are missing
+        */
+      /* static member */
+      inline def decodeDelimited(reader: Reader): typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNodeDepends = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNodeDepends]
+      
+      /**
+        * Encodes the specified DeferredNodeDepends message. Does not implicitly {@link Trace.QueryPlanNode.DeferredNodeDepends.verify|verify} messages.
+        * @param message DeferredNodeDepends message or plain object to encode
+        * @param [writer] Writer to encode to
+        * @returns Writer
+        */
+      /* static member */
+      inline def encode(message: IDeferredNodeDepends): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encode(message: IDeferredNodeDepends, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      
+      /**
+        * Encodes the specified DeferredNodeDepends message, length delimited. Does not implicitly {@link Trace.QueryPlanNode.DeferredNodeDepends.verify|verify} messages.
+        * @param message DeferredNodeDepends message or plain object to encode
+        * @param [writer] Writer to encode to
+        * @returns Writer
+        */
+      /* static member */
+      inline def encodeDelimited(message: IDeferredNodeDepends): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      inline def encodeDelimited(message: IDeferredNodeDepends, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+      
+      /**
+        * Creates a plain object from a DeferredNodeDepends message. Also converts values to other types if specified.
+        * @param message DeferredNodeDepends
+        * @param [options] Conversion options
+        * @returns Plain object
+        */
+      /* static member */
+      inline def toObject(
+        message: typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNodeDepends
+      ): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+      inline def toObject(
+        message: typings.apolloReportingProtobuf.generatedProtobufMod.Trace.QueryPlanNode.DeferredNodeDepends,
+        options: IConversionOptions
+      ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+      
+      /**
+        * Verifies a DeferredNodeDepends message.
+        * @param message Plain object to verify
+        * @returns `null` if valid, otherwise the reason why it is not
+        */
+      /* static member */
+      inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    }
     
     /** Represents a FetchNode. */
     @JSImport("apollo-reporting-protobuf", "Trace.QueryPlanNode.FetchNode")

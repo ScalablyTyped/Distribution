@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Accesstoken extends StObject {
   
-  /** @description The access_token of the OAuth application. */
+  /** @description The access_token of the OAuth or GitHub application. */
   var access_token: String
 }
 object Accesstoken {

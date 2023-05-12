@@ -1,6 +1,7 @@
 package typings.vueCompilerSfc.mod
 
 import typings.babelParser.mod.ParserPlugin
+import typings.vueCompilerSfc.anon.FileExists
 import typings.vueCompilerSfc.anon.PartialSFCTemplateCompile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,6 +13,39 @@ trait SFCScriptCompileOptions extends StObject {
     * https://babeljs.io/docs/en/babel-parser#plugins
     */
   var babelParserPlugins: js.UndefOr[js.Array[ParserPlugin]] = js.undefined
+  
+  /**
+    * (**Experimental**) Enable macro `defineModel`
+    * @default false
+    */
+  var defineModel: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * File system access methods to be used when resolving types
+    * imported in SFC macros. Defaults to ts.sys in Node.js, can be overwritten
+    * to use a virtual file system for use in browsers (e.g. in REPLs)
+    */
+  var fs: js.UndefOr[FileExists] = js.undefined
+  
+  /**
+    * Generate the final component as a variable instead of default export.
+    * This is useful in e.g. @vitejs/plugin-vue where the script needs to be
+    * placed inside the main module.
+    */
+  var genDefaultAs: js.UndefOr[String] = js.undefined
+  
+  /**
+    * A list of files to parse for global types to be made available for type
+    * resolving in SFC macros. The list must be fully resolved file system paths.
+    */
+  var globalTypeFiles: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /**
+    * Hoist <script setup> static constants.
+    * - Only enables when one `<script setup>` exists.
+    * @default true
+    */
+  var hoistStatic: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Scope ID for prefixing injected CSS variables.
@@ -34,31 +68,19 @@ trait SFCScriptCompileOptions extends StObject {
   var isProd: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Experimental) Enable syntax transform for destructuring from defineProps()
-    * https://github.com/vuejs/rfcs/discussions/394
-    * @deprecated now part of `reactivityTransform`
+    * (**Experimental**) Enable reactive destructure for `defineProps`
     * @default false
     */
-  var propsDestructureTransform: js.UndefOr[Boolean] = js.undefined
+  var propsDestructure: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Experimental) Enable syntax transform for using refs without `.value` and
     * using destructured props with reactivity
+    * @deprecated the Reactivity Transform proposal has been dropped. This
+    * feature will be removed from Vue core in 3.4. If you intend to continue
+    * using it, disable this and switch to the [Vue Macros implementation](https://vue-macros.sxzz.moe/features/reactivity-transform.html).
     */
   var reactivityTransform: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * @deprecated use `reactivityTransform` instead.
-    */
-  var refSugar: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * (Experimental) Enable syntax transform for using refs without `.value`
-    * https://github.com/vuejs/rfcs/discussions/369
-    * @deprecated now part of `reactivityTransform`
-    * @default false
-    */
-  var refTransform: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable/disable source map. Defaults to true.
@@ -88,6 +110,28 @@ object SFCScriptCompileOptions {
     
     inline def setBabelParserPluginsVarargs(value: ParserPlugin*): Self = StObject.set(x, "babelParserPlugins", js.Array(value*))
     
+    inline def setDefineModel(value: Boolean): Self = StObject.set(x, "defineModel", value.asInstanceOf[js.Any])
+    
+    inline def setDefineModelUndefined: Self = StObject.set(x, "defineModel", js.undefined)
+    
+    inline def setFs(value: FileExists): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+    
+    inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
+    
+    inline def setGenDefaultAs(value: String): Self = StObject.set(x, "genDefaultAs", value.asInstanceOf[js.Any])
+    
+    inline def setGenDefaultAsUndefined: Self = StObject.set(x, "genDefaultAs", js.undefined)
+    
+    inline def setGlobalTypeFiles(value: js.Array[String]): Self = StObject.set(x, "globalTypeFiles", value.asInstanceOf[js.Any])
+    
+    inline def setGlobalTypeFilesUndefined: Self = StObject.set(x, "globalTypeFiles", js.undefined)
+    
+    inline def setGlobalTypeFilesVarargs(value: String*): Self = StObject.set(x, "globalTypeFiles", js.Array(value*))
+    
+    inline def setHoistStatic(value: Boolean): Self = StObject.set(x, "hoistStatic", value.asInstanceOf[js.Any])
+    
+    inline def setHoistStaticUndefined: Self = StObject.set(x, "hoistStatic", js.undefined)
+    
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setInlineTemplate(value: Boolean): Self = StObject.set(x, "inlineTemplate", value.asInstanceOf[js.Any])
@@ -98,21 +142,13 @@ object SFCScriptCompileOptions {
     
     inline def setIsProdUndefined: Self = StObject.set(x, "isProd", js.undefined)
     
-    inline def setPropsDestructureTransform(value: Boolean): Self = StObject.set(x, "propsDestructureTransform", value.asInstanceOf[js.Any])
+    inline def setPropsDestructure(value: Boolean): Self = StObject.set(x, "propsDestructure", value.asInstanceOf[js.Any])
     
-    inline def setPropsDestructureTransformUndefined: Self = StObject.set(x, "propsDestructureTransform", js.undefined)
+    inline def setPropsDestructureUndefined: Self = StObject.set(x, "propsDestructure", js.undefined)
     
     inline def setReactivityTransform(value: Boolean): Self = StObject.set(x, "reactivityTransform", value.asInstanceOf[js.Any])
     
     inline def setReactivityTransformUndefined: Self = StObject.set(x, "reactivityTransform", js.undefined)
-    
-    inline def setRefSugar(value: Boolean): Self = StObject.set(x, "refSugar", value.asInstanceOf[js.Any])
-    
-    inline def setRefSugarUndefined: Self = StObject.set(x, "refSugar", js.undefined)
-    
-    inline def setRefTransform(value: Boolean): Self = StObject.set(x, "refTransform", value.asInstanceOf[js.Any])
-    
-    inline def setRefTransformUndefined: Self = StObject.set(x, "refTransform", js.undefined)
     
     inline def setSourceMap(value: Boolean): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
     

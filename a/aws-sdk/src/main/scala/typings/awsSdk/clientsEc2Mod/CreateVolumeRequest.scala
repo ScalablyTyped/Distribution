@@ -9,7 +9,7 @@ trait CreateVolumeRequest extends StObject {
   /**
     * The Availability Zone in which to create the volume.
     */
-  var AvailabilityZone: String
+  var AvailabilityZone: AvailabilityZoneName
   
   /**
     * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see Ensure Idempotency.
@@ -67,13 +67,13 @@ trait CreateVolumeRequest extends StObject {
   var Throughput: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The volume type. This parameter can be one of the following values:   General Purpose SSD: gp2 | gp3    Provisioned IOPS SSD: io1 | io2    Throughput Optimized HDD: st1    Cold HDD: sc1    Magnetic: standard    For more information, see Amazon EBS volume types in the Amazon Elastic Compute Cloud User Guide. Default: gp2 
+    * The volume type. This parameter can be one of the following values:   General Purpose SSD: gp2 | gp3    Provisioned IOPS SSD: io1 | io2    Throughput Optimized HDD: st1    Cold HDD: sc1    Magnetic: standard     Throughput Optimized HDD (st1) and Cold HDD (sc1) volumes can't be used as boot volumes.  For more information, see Amazon EBS volume types in the Amazon Elastic Compute Cloud User Guide. Default: gp2 
     */
   var VolumeType: js.UndefOr[typings.awsSdk.clientsEc2Mod.VolumeType] = js.undefined
 }
 object CreateVolumeRequest {
   
-  inline def apply(AvailabilityZone: String): CreateVolumeRequest = {
+  inline def apply(AvailabilityZone: AvailabilityZoneName): CreateVolumeRequest = {
     val __obj = js.Dynamic.literal(AvailabilityZone = AvailabilityZone.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateVolumeRequest]
   }
@@ -81,7 +81,7 @@ object CreateVolumeRequest {
   @scala.inline
   implicit open class MutableBuilder[Self <: CreateVolumeRequest] (val x: Self) extends AnyVal {
     
-    inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: AvailabilityZoneName): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
     inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

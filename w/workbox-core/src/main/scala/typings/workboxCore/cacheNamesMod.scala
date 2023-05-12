@@ -6,41 +6,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object cacheNamesMod {
   
-  @JSImport("workbox-core/cacheNames", "cacheNames")
-  @js.native
-  val cacheNames: CacheNames_ = js.native
-  
-  trait CacheNames_ extends StObject {
+  /**
+    * Get the current cache names and prefix/suffix used by Workbox.
+    *
+    * `cacheNames.precache` is used for precached assets,
+    * `cacheNames.googleAnalytics` is used by `workbox-google-analytics` to
+    * store `analytics.js`, and `cacheNames.runtime` is used for everything else.
+    *
+    * `cacheNames.prefix` can be used to retrieve just the current prefix value.
+    * `cacheNames.suffix` can be used to retrieve just the current suffix value.
+    *
+    * @return {Object} An object with `precache`, `runtime`, `prefix`, and
+    *     `googleAnalytics` properties.
+    *
+    * @memberof workbox-core
+    */
+  object cacheNames {
     
-    val googleAnalytics: String
+    @JSImport("workbox-core/cacheNames", "cacheNames.googleAnalytics")
+    @js.native
+    val googleAnalytics: String = js.native
     
-    val precache: String
+    @JSImport("workbox-core/cacheNames", "cacheNames.precache")
+    @js.native
+    val precache: String = js.native
     
-    val prefix: String
+    @JSImport("workbox-core/cacheNames", "cacheNames.prefix")
+    @js.native
+    val prefix: String = js.native
     
-    val runtime: String
+    @JSImport("workbox-core/cacheNames", "cacheNames.runtime")
+    @js.native
+    val runtime: String = js.native
     
-    val suffix: String
-  }
-  object CacheNames_ {
-    
-    inline def apply(googleAnalytics: String, precache: String, prefix: String, runtime: String, suffix: String): CacheNames_ = {
-      val __obj = js.Dynamic.literal(googleAnalytics = googleAnalytics.asInstanceOf[js.Any], precache = precache.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any], suffix = suffix.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CacheNames_]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: CacheNames_] (val x: Self) extends AnyVal {
-      
-      inline def setGoogleAnalytics(value: String): Self = StObject.set(x, "googleAnalytics", value.asInstanceOf[js.Any])
-      
-      inline def setPrecache(value: String): Self = StObject.set(x, "precache", value.asInstanceOf[js.Any])
-      
-      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
-      
-      inline def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
-      
-      inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
-    }
+    @JSImport("workbox-core/cacheNames", "cacheNames.suffix")
+    @js.native
+    val suffix: String = js.native
   }
 }

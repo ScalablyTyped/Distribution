@@ -7,6 +7,7 @@ import typings.meow.meowStrings.number
 import typings.meow.meowStrings.string
 import typings.std.ImportMeta
 import typings.std.Record
+import typings.typeFest.anon.PreserveConsecutiveUppercase
 import typings.typeFest.sourceCamelCasedPropertiesMod.CamelCasedProperties
 import typings.typeFest.sourcePackageJsonMod.PackageJson
 import org.scalablytyped.runtime.StObject
@@ -30,33 +31,110 @@ object mod {
   
   type BooleanFlag = Flag[boolean, js.Array[Boolean] | Boolean, `false` | `true`]
   
-  trait Flag[Type /* <: FlagType */, Default, IsMultiple] extends StObject {
+  trait Flag[PrimitiveType /* <: FlagType */, Type, IsMultiple] extends StObject {
     
-    val default: js.UndefOr[Default] = js.undefined
+    /**
+    	Default value when the flag is not specified.
+    	@example
+    	```
+    	unicorn: {
+    		type: 'boolean',
+    		default: true
+    	}
+    	```
+    	*/
+    val default: js.UndefOr[Type] = js.undefined
     
-    val alias: js.UndefOr[String] = js.undefined
+    /**
+    	Other names for the flag.
+    	@example
+    	```
+    	unicorn: {
+    		aliases: ['unicorns', 'uni']
+    	}
+    	```
+    	*/
+    val aliases: js.UndefOr[js.Array[String]] = js.undefined
     
+    /**
+    	Limit valid values to a predefined set of choices.
+    	@example
+    	```
+    	unicorn: {
+    		isMultiple: true,
+    		choices: ['rainbow', 'cat', 'unicorn']
+    	}
+    	```
+    	*/
+    val choices: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: Type extends std.Array<unknown> ? Type : std.Array<Type> */ js.Any
+      ] = js.undefined
+    
+    /**
+    	Indicates a flag can be set multiple times. Values are turned into an array.
+    	Multiple values are provided by specifying the flag multiple times, for example, `$ foo -u rainbow -u cat`. Space- or comma-separated values [currently *not* supported](https://github.com/sindresorhus/meow/issues/164).
+    	@default false
+    	*/
     val isMultiple: js.UndefOr[IsMultiple] = js.undefined
     
+    /**
+    	Determine if the flag is required.
+    	If it's only known at runtime whether the flag is required or not you can pass a Function instead of a boolean, which based on the given flags and other non-flag arguments should decide if the flag is required.
+    	- The first argument is the **flags** object, which contains the flags converted to camel-case excluding aliases.
+    	- The second argument is the **input** string array, which contains the non-flag arguments.
+    	- The function should return a `boolean`, true if the flag is required, otherwise false.
+    	@default false
+    	@example
+    	```
+    	isRequired: (flags, input) => {
+    		if (flags.otherFlag) {
+    			return true;
+    		}
+    		return false;
+    	}
+    	```
+    	*/
     val isRequired: js.UndefOr[Boolean | IsRequiredPredicate] = js.undefined
     
-    val `type`: js.UndefOr[Type] = js.undefined
+    /**
+    	A short flag alias.
+    	@example
+    	```
+    	unicorn: {
+    		shortFlag: 'u'
+    	}
+    	```
+    	*/
+    val shortFlag: js.UndefOr[String] = js.undefined
+    
+    /**
+    	Type of value. (Possible values: `string` `boolean` `number`)
+    	*/
+    val `type`: js.UndefOr[PrimitiveType] = js.undefined
   }
   object Flag {
     
-    inline def apply[Type /* <: FlagType */, Default, IsMultiple](): Flag[Type, Default, IsMultiple] = {
+    inline def apply[PrimitiveType /* <: FlagType */, Type, IsMultiple](): Flag[PrimitiveType, Type, IsMultiple] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Flag[Type, Default, IsMultiple]]
+      __obj.asInstanceOf[Flag[PrimitiveType, Type, IsMultiple]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Flag[?, ?, ?], Type /* <: FlagType */, Default, IsMultiple] (val x: Self & (Flag[Type, Default, IsMultiple])) extends AnyVal {
+    implicit open class MutableBuilder[Self <: Flag[?, ?, ?], PrimitiveType /* <: FlagType */, Type, IsMultiple] (val x: Self & (Flag[PrimitiveType, Type, IsMultiple])) extends AnyVal {
       
-      inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
-      inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+      inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
       
-      inline def setDefault(value: Default): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value*))
+      
+      inline def setChoices(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: Type extends std.Array<unknown> ? Type : std.Array<Type> */ js.Any
+      ): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
+      
+      inline def setChoicesUndefined: Self = StObject.set(x, "choices", js.undefined)
+      
+      inline def setDefault(value: Type): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
@@ -70,7 +148,11 @@ object mod {
       
       inline def setIsRequiredUndefined: Self = StObject.set(x, "isRequired", js.undefined)
       
-      inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setShortFlag(value: String): Self = StObject.set(x, "shortFlag", value.asInstanceOf[js.Any])
+      
+      inline def setShortFlagUndefined: Self = StObject.set(x, "shortFlag", js.undefined)
+      
+      inline def setType(value: PrimitiveType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
@@ -146,16 +228,16 @@ object mod {
     			rainbow: {
     				type: 'boolean',
     				default: true,
-    				alias: 'r'
+    				shortFlag: 'r'
     			},
     				unicorn: {
     				type: 'boolean',
     				default: false,
-    				alias: 'u'
+    				shortFlag: 'u'
     			},
     			cake: {
     				type: 'boolean',
-    				alias: 'c'
+    				shortFlag: 'c'
     			},
     			sparkles: {
     				type: 'boolean',
@@ -193,20 +275,27 @@ object mod {
     	Define argument flags.
     	The key is the flag name in camel-case and the value is an object with any of:
     	- `type`: Type of value. (Possible values: `string` `boolean` `number`)
-    	- `alias`: Usually used to define a short flag alias.
+    	- `choices`: Limit valid values to a predefined set of choices.
     	- `default`: Default value when the flag is not specified.
-    	- `isRequired`: Determine if the flag is required.
-    		If it's only known at runtime whether the flag is required or not you can pass a Function instead of a boolean, which based on the given flags and other non-flag arguments should decide if the flag is required.
+    	- `shortFlag`: A short flag alias.
+    	- `aliases`: Other names for the flag.
     	- `isMultiple`: Indicates a flag can be set multiple times. Values are turned into an array. (Default: false)
-    		Multiple values are provided by specifying the flag multiple times, for example, `$ foo -u rainbow -u cat`. Space- or comma-separated values are *not* supported.
+    		- Multiple values are provided by specifying the flag multiple times, for example, `$ foo -u rainbow -u cat`. Space- or comma-separated values [currently *not* supported](https://github.com/sindresorhus/meow/issues/164).
+    	- `isRequired`: Determine if the flag is required. (Default: false)
+    		- If it's only known at runtime whether the flag is required or not, you can pass a `Function` instead of a `boolean`, which based on the given flags and other non-flag arguments, should decide if the flag is required. Two arguments are passed to the function:
+    		- The first argument is the **flags** object, which contains the flags converted to camel-case excluding aliases.
+    		- The second argument is the **input** string array, which contains the non-flag arguments.
+    		- The function should return a `boolean`, true if the flag is required, otherwise false.
     	Note that flags are always defined using a camel-case key (`myKey`), but will match arguments in kebab-case (`--my-key`).
     	@example
     	```
     	flags: {
     		unicorn: {
     			type: 'string',
-    			alias: 'u',
+    			choices: ['rainbow', 'cat', 'unicorn'],
     			default: ['rainbow', 'cat'],
+    			shortFlag: 'u',
+    			aliases: ['unicorns']
     			isMultiple: true,
     			isRequired: (flags, input) => {
     				if (flags.otherFlag) {
@@ -248,6 +337,7 @@ object mod {
     
     /**
     	`package.json` as an `Object`. Default: Closest `package.json` upwards.
+    	Note: Setting this stops `meow` from finding a package.json.
     	_You most likely don't need this option._
     	*/
     val pkg: js.UndefOr[Record[String, Any]] = js.undefined
@@ -339,7 +429,7 @@ object mod {
     /**
     	Flags converted to camelCase excluding aliases.
     	*/
-    var flags: CamelCasedProperties[TypedFlags[Flags]] & (Record[String, Any]) = js.native
+    var flags: (CamelCasedProperties[TypedFlags[Flags], PreserveConsecutiveUppercase]) & (Record[String, Any]) = js.native
     
     /**
     	The help text used with `--help`.

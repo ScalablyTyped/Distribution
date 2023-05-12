@@ -176,6 +176,8 @@ trait TypeofyandexMaps extends StObject {
   def geocode(request: js.Array[Double]): js.Promise[IGeocodeResult] = js.native
   def geocode(request: js.Array[Double], options: IGeocodeOptions): js.Promise[IGeocodeResult] = js.native
   
+  val geolocation: Typeofgeolocation = js.native
+  
   val geometry: Typeofgeometry = js.native
   
   val geometryEditor: TypeofgeometryEditor = js.native

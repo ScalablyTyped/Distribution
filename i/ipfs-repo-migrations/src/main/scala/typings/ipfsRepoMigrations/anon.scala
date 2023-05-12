@@ -17,19 +17,113 @@ object anon {
   
   trait Blocks extends StObject {
     
-    var blocks: Blockstore
+    var blocks: Blockstore[js.Object, js.Object, js.Object, js.Object, js.Object, js.Object, js.Object, js.Object]
     
-    var datastore: Datastore
+    var datastore: Datastore[
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object
+      ]
     
-    var keys: Datastore
+    var keys: Datastore[
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object
+      ]
     
-    var pins: Datastore
+    var pins: Datastore[
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object
+      ]
     
-    var root: Datastore
+    var root: Datastore[
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object
+      ]
   }
   object Blocks {
     
-    inline def apply(blocks: Blockstore, datastore: Datastore, keys: Datastore, pins: Datastore, root: Datastore): Blocks = {
+    inline def apply(
+      blocks: Blockstore[js.Object, js.Object, js.Object, js.Object, js.Object, js.Object, js.Object, js.Object],
+      datastore: Datastore[
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object
+        ],
+      keys: Datastore[
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object
+        ],
+      pins: Datastore[
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object
+        ],
+      root: Datastore[
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object
+        ]
+    ): Blocks = {
       val __obj = js.Dynamic.literal(blocks = blocks.asInstanceOf[js.Any], datastore = datastore.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], pins = pins.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
       __obj.asInstanceOf[Blocks]
     }
@@ -37,15 +131,69 @@ object anon {
     @scala.inline
     implicit open class MutableBuilder[Self <: Blocks] (val x: Self) extends AnyVal {
       
-      inline def setBlocks(value: Blockstore): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
+      inline def setBlocks(
+        value: Blockstore[js.Object, js.Object, js.Object, js.Object, js.Object, js.Object, js.Object, js.Object]
+      ): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
       
-      inline def setDatastore(value: Datastore): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
+      inline def setDatastore(
+        value: Datastore[
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object
+            ]
+      ): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
       
-      inline def setKeys(value: Datastore): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      inline def setKeys(
+        value: Datastore[
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object
+            ]
+      ): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
-      inline def setPins(value: Datastore): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
+      inline def setPins(
+        value: Datastore[
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object
+            ]
+      ): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
       
-      inline def setRoot(value: Datastore): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(
+        value: Datastore[
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object
+            ]
+      ): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }
   }
   

@@ -60,7 +60,7 @@ object nodeColonchildProcessMod {
     * need to be dealt with accordingly:
     *
     * ```js
-    * const { exec } = require('child_process');
+    * const { exec } = require('node:child_process');
     *
     * exec('"/path/to/test file/test.sh" arg1 arg2');
     * // Double quotes are used so that the space in the path is not interpreted as
@@ -86,7 +86,7 @@ object nodeColonchildProcessMod {
     * encoding, `Buffer` objects will be passed to the callback instead.
     *
     * ```js
-    * const { exec } = require('child_process');
+    * const { exec } = require('node:child_process');
     * exec('cat *.js missing_file | wc -l', (error, stdout, stderr) => {
     *   if (error) {
     *     console.error(`exec error: ${error}`);
@@ -111,8 +111,8 @@ object nodeColonchildProcessMod {
     * callback, but with two additional properties `stdout` and `stderr`.
     *
     * ```js
-    * const util = require('util');
-    * const exec = util.promisify(require('child_process').exec);
+    * const util = require('node:util');
+    * const exec = util.promisify(require('node:child_process').exec);
     *
     * async function lsExample() {
     *   const { stdout, stderr } = await exec('ls');
@@ -126,11 +126,11 @@ object nodeColonchildProcessMod {
     * the error passed to the callback will be an `AbortError`:
     *
     * ```js
-    * const { exec } = require('child_process');
+    * const { exec } = require('node:child_process');
     * const controller = new AbortController();
     * const { signal } = controller;
     * const child = exec('grep ssh', { signal }, (error) => {
-    *   console.log(error); // an AbortError
+    *   console.error(error); // an AbortError
     * });
     * controller.abort();
     * ```
@@ -208,7 +208,7 @@ object nodeColonchildProcessMod {
     * supported.
     *
     * ```js
-    * const { execFile } = require('child_process');
+    * const { execFile } = require('node:child_process');
     * const child = execFile('node', ['--version'], (error, stdout, stderr) => {
     *   if (error) {
     *     throw error;
@@ -231,8 +231,8 @@ object nodeColonchildProcessMod {
     * callback, but with two additional properties `stdout` and `stderr`.
     *
     * ```js
-    * const util = require('util');
-    * const execFile = util.promisify(require('child_process').execFile);
+    * const util = require('node:util');
+    * const execFile = util.promisify(require('node:child_process').execFile);
     * async function getVersion() {
     *   const { stdout } = await execFile('node', ['--version']);
     *   console.log(stdout);
@@ -248,11 +248,11 @@ object nodeColonchildProcessMod {
     * the error passed to the callback will be an `AbortError`:
     *
     * ```js
-    * const { execFile } = require('child_process');
+    * const { execFile } = require('node:child_process');
     * const controller = new AbortController();
     * const { signal } = controller;
     * const child = execFile('node', ['--version'], { signal }, (error) => {
-    *   console.log(error); // an AbortError
+    *   console.error(error); // an AbortError
     * });
     * controller.abort();
     * ```
@@ -593,7 +593,7 @@ object nodeColonchildProcessMod {
     *     console.log(`Hello from ${process.argv[2]}!`);
     *   }, 1_000);
     * } else {
-    *   const { fork } = require('child_process');
+    *   const { fork } = require('node:child_process');
     *   const controller = new AbortController();
     *   const { signal } = controller;
     *   const child = fork(__filename, ['child'], { signal });
@@ -626,7 +626,7 @@ object nodeColonchildProcessMod {
     * ```js
     * const defaults = {
     *   cwd: undefined,
-    *   env: process.env
+    *   env: process.env,
     * };
     * ```
     *
@@ -645,7 +645,7 @@ object nodeColonchildProcessMod {
     * exit code:
     *
     * ```js
-    * const { spawn } = require('child_process');
+    * const { spawn } = require('node:child_process');
     * const ls = spawn('ls', ['-lh', '/usr']);
     *
     * ls.stdout.on('data', (data) => {
@@ -664,7 +664,7 @@ object nodeColonchildProcessMod {
     * Example: A very elaborate way to run `ps ax | grep ssh`
     *
     * ```js
-    * const { spawn } = require('child_process');
+    * const { spawn } = require('node:child_process');
     * const ps = spawn('ps', ['ax']);
     * const grep = spawn('grep', ['ssh']);
     *
@@ -701,7 +701,7 @@ object nodeColonchildProcessMod {
     * Example of checking for failed `spawn`:
     *
     * ```js
-    * const { spawn } = require('child_process');
+    * const { spawn } = require('node:child_process');
     * const subprocess = spawn('bad_command');
     *
     * subprocess.on('error', (err) => {
@@ -712,14 +712,14 @@ object nodeColonchildProcessMod {
     * Certain platforms (macOS, Linux) will use the value of `argv[0]` for the process
     * title while others (Windows, SunOS) will use `command`.
     *
-    * Node.js currently overwrites `argv[0]` with `process.execPath` on startup, so`process.argv[0]` in a Node.js child process will not match the `argv0`parameter passed to `spawn` from the parent,
-    * retrieve it with the`process.argv0` property instead.
+    * Node.js overwrites `argv[0]` with `process.execPath` on startup, so`process.argv[0]` in a Node.js child process will not match the `argv0`parameter passed to `spawn` from the parent. Retrieve
+    * it with the`process.argv0` property instead.
     *
     * If the `signal` option is enabled, calling `.abort()` on the corresponding`AbortController` is similar to calling `.kill()` on the child process except
     * the error passed to the callback will be an `AbortError`:
     *
     * ```js
-    * const { spawn } = require('child_process');
+    * const { spawn } = require('node:child_process');
     * const controller = new AbortController();
     * const { signal } = controller;
     * const grep = spawn('grep', ['ssh'], { signal });

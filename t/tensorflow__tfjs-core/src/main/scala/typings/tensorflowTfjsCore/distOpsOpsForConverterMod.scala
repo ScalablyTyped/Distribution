@@ -34,6 +34,7 @@ import typings.tensorflowTfjsCore.distTypesMod.TensorLike4D
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike5D
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike6D
 import typings.tensorflowTfjsCore.distTypesMod.WebGLData
+import typings.tensorflowTfjsCore.distTypesMod.WebGPUData
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.NCDHW
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.NCHW
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.NCW
@@ -319,6 +320,8 @@ object distOpsOpsForConverterMod {
   inline def batchToSpaceND[T /* <: Tensor[Rank] */](x: T | TensorLike, blockShape: js.Array[Double], crops: js.Array[js.Array[Double]]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("batchToSpaceND")(x.asInstanceOf[js.Any], blockShape.asInstanceOf[js.Any], crops.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def bincount[T /* <: Tensor1D */](x: T | TensorLike, weights: T | TensorLike, size: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bincount")(x.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  inline def bitwiseAnd[R /* <: Rank */](x: Tensor[Rank], y: Tensor[Rank]): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("bitwiseAnd")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "booleanMaskAsync")
   @js.native
@@ -946,6 +949,11 @@ object distOpsOpsForConverterMod {
   
   inline def enclosingPowerOfTwo(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("enclosingPowerOfTwo")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
+  inline def ensureShape[R /* <: Rank */](
+    x: Tensor[Rank],
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureShape")(x.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  
   inline def equal[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def equal[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def equal[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
@@ -1006,7 +1014,7 @@ object distOpsOpsForConverterMod {
     * @param shape An array of integers defining the output tensor shape.
     * @param value The scalar value to fill the tensor with.
     * @param dtype The type of an element in the resulting tensor. Defaults to
-    * 'float'.
+    *     'float32' if the given param value is a number, otherwise 'string'.
     *
     * @doc {heading: 'Tensors', subheading: 'Creation'}
     */
@@ -2300,6 +2308,9 @@ object distOpsOpsForConverterMod {
     val ^ : js.Any = js.native
     
     inline def bandPart[T /* <: Tensor[Rank] */](a: T | TensorLike, numLower: Double, numUpper: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bandPart")(a.asInstanceOf[js.Any], numLower.asInstanceOf[js.Any], numUpper.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def bandPart[T /* <: Tensor[Rank] */](a: T | TensorLike, numLower: Double, numUpper: Scalar): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bandPart")(a.asInstanceOf[js.Any], numLower.asInstanceOf[js.Any], numUpper.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def bandPart[T /* <: Tensor[Rank] */](a: T | TensorLike, numLower: Scalar, numUpper: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bandPart")(a.asInstanceOf[js.Any], numLower.asInstanceOf[js.Any], numUpper.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def bandPart[T /* <: Tensor[Rank] */](a: T | TensorLike, numLower: Scalar, numUpper: Scalar): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bandPart")(a.asInstanceOf[js.Any], numLower.asInstanceOf[js.Any], numUpper.asInstanceOf[js.Any])).asInstanceOf[T]
     
     inline def gramSchmidt(xs: js.Array[Tensor1D]): Tensor2D | js.Array[Tensor1D] = ^.asInstanceOf[js.Dynamic].applyDynamic("gramSchmidt")(xs.asInstanceOf[js.Any]).asInstanceOf[Tensor2D | js.Array[Tensor1D]]
     inline def gramSchmidt(xs: Tensor2D): Tensor2D | js.Array[Tensor1D] = ^.asInstanceOf[js.Dynamic].applyDynamic("gramSchmidt")(xs.asInstanceOf[js.Any]).asInstanceOf[Tensor2D | js.Array[Tensor1D]]
@@ -3462,6 +3473,24 @@ object distOpsOpsForConverterMod {
     seed: Double
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   
+  inline def randomUniformInt[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    minval: Double,
+    maxval: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniformInt")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  inline def randomUniformInt[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    minval: Double,
+    maxval: Double,
+    seed: String
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniformInt")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  inline def randomUniformInt[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    minval: Double,
+    maxval: Double,
+    seed: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniformInt")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  
   inline def range(start: Double, stop: Double): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
   inline def range(start: Double, stop: Double, step: Double): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
   inline def range(start: Double, stop: Double, step: Double, dtype: float32 | int32): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
@@ -3855,6 +3884,11 @@ object distOpsOpsForConverterMod {
     @js.native
     val ^ : js.Any = js.native
     
+    inline def staticRegexReplace(input: Tensor[Rank], pattern: String, rewrite: String): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("staticRegexReplace")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], rewrite.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+    inline def staticRegexReplace(input: Tensor[Rank], pattern: String, rewrite: String, replaceGlobal: Boolean): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("staticRegexReplace")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], rewrite.asInstanceOf[js.Any], replaceGlobal.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+    inline def staticRegexReplace(input: TensorLike, pattern: String, rewrite: String): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("staticRegexReplace")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], rewrite.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+    inline def staticRegexReplace(input: TensorLike, pattern: String, rewrite: String, replaceGlobal: Boolean): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("staticRegexReplace")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], rewrite.asInstanceOf[js.Any], replaceGlobal.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+    
     inline def stringNGrams(
       data: Tensor1D,
       dataSplits: Tensor[Rank],
@@ -3953,6 +3987,17 @@ object distOpsOpsForConverterMod {
     dtype: DataType
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   inline def tensor[R /* <: Rank */](values: WebGLData, shape: Unit, dtype: DataType): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  inline def tensor[R /* <: Rank */](values: WebGPUData): Tensor[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(values.asInstanceOf[js.Any]).asInstanceOf[Tensor[R]]
+  inline def tensor[R /* <: Rank */](
+    values: WebGPUData,
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  inline def tensor[R /* <: Rank */](
+    values: WebGPUData,
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    dtype: DataType
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  inline def tensor[R /* <: Rank */](values: WebGPUData, shape: Unit, dtype: DataType): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   
   inline def tensor1d(values: TensorLike1D): Tensor1D = ^.asInstanceOf[js.Dynamic].applyDynamic("tensor1d")(values.asInstanceOf[js.Any]).asInstanceOf[Tensor1D]
   inline def tensor1d(values: TensorLike1D, dtype: DataType): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor1d")(values.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
@@ -3985,6 +4030,15 @@ object distOpsOpsForConverterMod {
     dtype: DataType
   ): Tensor6D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor6d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor6D]
   inline def tensor6d(values: TensorLike6D, shape: Unit, dtype: DataType): Tensor6D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor6d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor6D]
+  
+  inline def tensorScatterUpdate[R /* <: Rank */](tensor: Tensor[R], indices: Tensor[Rank], updates: Tensor[Rank]): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorScatterUpdate")(tensor.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  inline def tensorScatterUpdate[R /* <: Rank */](tensor: Tensor[R], indices: Tensor[Rank], updates: TensorLike): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorScatterUpdate")(tensor.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  inline def tensorScatterUpdate[R /* <: Rank */](tensor: Tensor[R], indices: TensorLike, updates: Tensor[Rank]): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorScatterUpdate")(tensor.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  inline def tensorScatterUpdate[R /* <: Rank */](tensor: Tensor[R], indices: TensorLike, updates: TensorLike): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorScatterUpdate")(tensor.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  inline def tensorScatterUpdate[R /* <: Rank */](tensor: TensorLike, indices: Tensor[Rank], updates: Tensor[Rank]): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorScatterUpdate")(tensor.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  inline def tensorScatterUpdate[R /* <: Rank */](tensor: TensorLike, indices: Tensor[Rank], updates: TensorLike): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorScatterUpdate")(tensor.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  inline def tensorScatterUpdate[R /* <: Rank */](tensor: TensorLike, indices: TensorLike, updates: Tensor[Rank]): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorScatterUpdate")(tensor.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  inline def tensorScatterUpdate[R /* <: Rank */](tensor: TensorLike, indices: TensorLike, updates: TensorLike): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorScatterUpdate")(tensor.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   
   inline def tile[T /* <: Tensor[Rank] */](x: T | TensorLike, reps: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("tile")(x.asInstanceOf[js.Any], reps.asInstanceOf[js.Any])).asInstanceOf[T]
   

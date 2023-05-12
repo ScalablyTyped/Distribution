@@ -71,8 +71,8 @@ trait MathNode extends StObject {
     */
   def forEach(
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  callback: js.Function3[/* node */ this.type, /* path */ String, /* parent */ this.type, Any]
-  ): js.Array[MathNode] = js.native
+  callback: js.Function3[/* node */ this.type, /* path */ String, /* parent */ this.type, scala.Unit]
+  ): scala.Unit = js.native
   
   var isNode: `true` = js.native
   
@@ -163,7 +163,7 @@ trait MathNode extends StObject {
     */
   def traverse(
     callback: js.Function3[/* node */ this.type, /* path */ String, /* parent */ this.type, scala.Unit]
-  ): Any = js.native
+  ): scala.Unit = js.native
   
   var `type`: String = js.native
 }

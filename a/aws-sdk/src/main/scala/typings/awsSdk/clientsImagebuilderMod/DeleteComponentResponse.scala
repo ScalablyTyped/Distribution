@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteComponentResponse extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the component build version that was deleted.
+    * The ARN of the component build version that this request deleted.
     */
   var componentBuildVersionArn: js.UndefOr[ComponentBuildVersionArn] = js.undefined
   

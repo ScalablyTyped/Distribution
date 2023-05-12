@@ -5,11 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../../../scene/composition/layer-composition.js').LayerComposition} LayerComposition */
-/** @typedef {import('../../../scene/materials/material.js').Material} Material */
-/** @typedef {import('../../../core/shape/bounding-box.js').BoundingBox} BoundingBox */
-/** @typedef {import('../../entity.js').Entity} Entity */
-/** @typedef {import('./system.js').ModelComponentSystem} ModelComponentSystem */
 /**
   * Enables an Entity to render a model or a primitive shape. This Component attaches additional
   * model geometry in to the scene graph below the Entity.
@@ -22,8 +17,10 @@ open class ModelComponent protected () extends Component {
   /**
     * Create a new ModelComponent instance.
     *
-    * @param {ModelComponentSystem} system - The ComponentSystem that created this Component.
-    * @param {Entity} entity - The Entity that this Component is attached to.
+    * @param {import('./system.js').ModelComponentSystem} system - The ComponentSystem that
+    * created this Component.
+    * @param {import('../../entity.js').Entity} entity - The Entity that this Component is
+    * attached to.
     */
   def this(system: ModelComponentSystem, entity: Entity) = this()
   
@@ -74,7 +71,7 @@ open class ModelComponent protected () extends Component {
   /* private */ var _clonedModel: Any = js.native
   
   /**
-    * @type {BoundingBox|null}
+    * @type {import('../../../core/shape/bounding-box.js').BoundingBox|null}
     * @private
     */
   /* private */ var _customAabb: Any = js.native
@@ -132,7 +129,7 @@ open class ModelComponent protected () extends Component {
   /* private */ var _mapping: Any = js.native
   
   /**
-    * @type {Material}
+    * @type {import('../../../scene/materials/material.js').Material}
     * @private
     */
   /* private */ var _material: Any = js.native
@@ -221,7 +218,8 @@ open class ModelComponent protected () extends Component {
   /* private */ var _receiveShadows: Any = js.native
   
   /**
-    * @param {Material} material - The material to be set.
+    * @param {import('../../../scene/materials/material.js').Material} material - The material to
+    * be set.
     * @private
     */
   /* private */ var _setMaterial: Any = js.native
@@ -298,7 +296,7 @@ open class ModelComponent protected () extends Component {
     * specified for skinned characters in order to avoid per frame bounding box computations based
     * on bone positions.
     *
-    * @type {BoundingBox|null}
+    * @type {import('../../../core/shape/bounding-box.js').BoundingBox|null}
     */
   def customAabb_=(arg: BoundingBox): Unit = js.native
   
@@ -385,7 +383,7 @@ open class ModelComponent protected () extends Component {
     * The material {@link Material} that will be used to render the model (not used on models of
     * type 'asset').
     *
-    * @type {Material}
+    * @type {import('../../../scene/materials/material.js').Material}
     */
   def material_=(arg: Material): Unit = js.native
   
@@ -421,8 +419,10 @@ open class ModelComponent protected () extends Component {
   /* private */ var onLayerRemoved: Any = js.native
   
   /**
-    * @param {LayerComposition} oldComp - The old layer composition.
-    * @param {LayerComposition} newComp - The new layer composition.
+    * @param {import('../../../scene/composition/layer-composition.js').LayerComposition} oldComp - The
+    * old layer composition.
+    * @param {import('../../../scene/composition/layer-composition.js').LayerComposition} newComp - The
+    * new layer composition.
     * @private
     */
   /* private */ var onLayersChanged: Any = js.native

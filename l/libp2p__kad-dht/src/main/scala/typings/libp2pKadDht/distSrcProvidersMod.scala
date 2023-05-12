@@ -76,11 +76,35 @@ object distSrcProvidersMod {
   
   trait ProvidersComponents extends StObject {
     
-    var datastore: Datastore
+    var datastore: Datastore[
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object
+      ]
   }
   object ProvidersComponents {
     
-    inline def apply(datastore: Datastore): ProvidersComponents = {
+    inline def apply(
+      datastore: Datastore[
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object
+        ]
+    ): ProvidersComponents = {
       val __obj = js.Dynamic.literal(datastore = datastore.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProvidersComponents]
     }
@@ -88,7 +112,20 @@ object distSrcProvidersMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: ProvidersComponents] (val x: Self) extends AnyVal {
       
-      inline def setDatastore(value: Datastore): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
+      inline def setDatastore(
+        value: Datastore[
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object
+            ]
+      ): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
     }
   }
   

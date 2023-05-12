@@ -53,7 +53,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def castBandScale[Input](scale: ScaleBand_[Input]): ScaleBand[Input] = ^.asInstanceOf[js.Dynamic].applyDynamic("castBandScale")(scale.asInstanceOf[js.Any]).asInstanceOf[ScaleBand[Input]]
+  inline def castBandScale[Input /* <: StringValue */](scale: ScaleBand_[Input]): ScaleBand[Input] = ^.asInstanceOf[js.Dynamic].applyDynamic("castBandScale")(scale.asInstanceOf[js.Any]).asInstanceOf[ScaleBand[Input]]
   
   inline def castLinearScale[Range_1, Output](scale: ScaleLinear_[Range_1, Output, scala.Nothing]): ScaleLinear[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("castLinearScale")(scale.asInstanceOf[js.Any]).asInstanceOf[ScaleLinear[Double]]
   inline def castLinearScale[Range_1, Output](scale: ScaleLinear_[Range_1, Output, scala.Nothing], stacked: Boolean): ScaleLinear[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("castLinearScale")(scale.asInstanceOf[js.Any], stacked.asInstanceOf[js.Any])).asInstanceOf[ScaleLinear[Double]]

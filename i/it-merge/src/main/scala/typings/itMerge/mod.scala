@@ -2,6 +2,7 @@ package typings.itMerge
 
 import typings.std.AsyncGenerator
 import typings.std.AsyncIterable
+import typings.std.Generator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,4 +14,6 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def default[T](sources: (AsyncIterable[T] | js.Iterable[T])*): AsyncGenerator[T, Unit, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(sources.asInstanceOf[Seq[js.Any]]*).asInstanceOf[AsyncGenerator[T, Unit, Unit]]
+  
+  inline def default_T_Generator[T](sources: js.Iterable[T]*): Generator[T, Unit, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(sources.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Generator[T, Unit, Unit]]
 }

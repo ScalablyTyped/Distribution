@@ -1,5 +1,7 @@
 package typings.fundamentalReact.mod
 
+import typings.fundamentalReact.anon.DisplayName
+import typings.fundamentalReact.anon.SelectedKey
 import typings.fundamentalReact.libAvatarAvatarMod.AvatarProps
 import typings.fundamentalReact.libBusyIndicatorBusyIndicatorMod.BusyIndicatorProps
 import typings.fundamentalReact.libComboboxInputComboboxInputMod.ComboboxInputProps
@@ -18,10 +20,15 @@ import typings.fundamentalReact.libImageImageMod.ImageProps
 import typings.fundamentalReact.libInfoLabelInfoLabelMod.InfoLabelProps
 import typings.fundamentalReact.libInlineHelpInlineHelpMod.InlineHelpProps
 import typings.fundamentalReact.libObjectStatusObjectStatusMod.ObjectStatusProps
+import typings.fundamentalReact.libSelectSelectMod.SelectProps
 import typings.fundamentalReact.libTitleTitleMod.TitleProps
 import typings.fundamentalReact.libTokenTokenMod.TokenProps
 import typings.fundamentalReact.mod.^
+import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.FunctionComponent
+import typings.react.mod.RefAttributes
+import typings.react.mod.global.JSX.Element
+import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,6 +70,8 @@ inline def InlineHelp: FunctionComponent[InlineHelpProps] = ^.asInstanceOf[js.Dy
 
 inline def ObjectStatus: FunctionComponent[ObjectStatusProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("ObjectStatus").asInstanceOf[FunctionComponent[ObjectStatusProps]]
 
+inline def Select: (js.Function1[/* props */ SelectProps[String] & SelectedKey[String], Element]) & DisplayName = ^.asInstanceOf[js.Dynamic].selectDynamic("Select").asInstanceOf[(js.Function1[/* props */ SelectProps[String] & SelectedKey[String], Element]) & DisplayName]
+
 inline def Title: FunctionComponent[TitleProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Title").asInstanceOf[FunctionComponent[TitleProps]]
 
-inline def Token: FunctionComponent[TokenProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Token").asInstanceOf[FunctionComponent[TokenProps]]
+inline def Token: ForwardRefExoticComponent[TokenProps & RefAttributes[HTMLSpanElement]] = ^.asInstanceOf[js.Dynamic].selectDynamic("Token").asInstanceOf[ForwardRefExoticComponent[TokenProps & RefAttributes[HTMLSpanElement]]]

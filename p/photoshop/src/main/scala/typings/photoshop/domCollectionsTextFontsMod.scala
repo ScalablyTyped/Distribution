@@ -18,7 +18,8 @@ object domCollectionsTextFontsMod {
        with Array[TextFont] {
     
     /**
-      * Find the first font with the given PostScript name
+      * Find the first font with the given PostScript name.
+      * @minVersion 23.0
       */
     def getByName(name: String): TextFont = js.native
     
@@ -26,13 +27,15 @@ object domCollectionsTextFontsMod {
     def handler(): Get = js.native
     
     /**
-      * Number of [[TextFont]] elements in this collection
+      * Number of [[TextFont]] elements in this collection.
+      * @minVersion 23.0
       */
     @JSName("length")
     def length_MTextFonts: Double = js.native
     
     /**
-      * The owner application of this TextFonts collection
+      * The owner application of this TextFonts collection.
+      * @minVersion 23.0
       */
     def parent: Photoshop = js.native
     
@@ -40,8 +43,9 @@ object domCollectionsTextFontsMod {
     /* private */ var proxy: Any = js.native
     
     /**
-      * The name for this object collection: TextFonts
+      * The name for this object collection: TextFonts.
+      * @minVersion 23.0
       */
-    def typename: String = js.native
+    def typename: typings.photoshop.photoshopStrings.TextFonts = js.native
   }
 }

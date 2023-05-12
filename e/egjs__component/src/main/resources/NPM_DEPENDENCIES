@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@egjs/component" : "3.0.2"
+      "@egjs/component" : "3.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@egjs/component" : "3.0.2"
+      "@egjs/component" : "3.0.4"
     }
   ],
   "compile-devDependencies" : [

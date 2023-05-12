@@ -71,7 +71,7 @@ trait GPUCommandEncoder
   
   /**
     * Encode a command into the {@link GPUCommandEncoder} that copies data from a sub-region of one or
-    * multiple continuous texture subresourcesto a sub-region of a {@link GPUBuffer}.
+    * multiple continuous texture subresources to a sub-region of a {@link GPUBuffer}.
     * @param source - Combined with `copySize`, defines the region of the source texture subresources.
     * @param destination - Combined with `copySize`, defines the region of the destination buffer.
     * 	`copySize`:

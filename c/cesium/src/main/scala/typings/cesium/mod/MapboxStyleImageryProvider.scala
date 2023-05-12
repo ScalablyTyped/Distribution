@@ -12,8 +12,7 @@ open class MapboxStyleImageryProvider protected () extends StObject {
   
   /**
     * Gets the credit to display when this imagery provider is active.  Typically this is used to credit
-    * the source of the imagery. This function should
-    * not be called before {@link MapboxStyleImageryProvider#ready} returns true.
+    * the source of the imagery.
     */
   val credit: Credit = js.native
   
@@ -99,14 +98,12 @@ open class MapboxStyleImageryProvider protected () extends StObject {
   val hasAlphaChannel: Boolean = js.native
   
   /**
-    * Gets the maximum level-of-detail that can be requested.  This function should
-    * not be called before {@link MapboxStyleImageryProvider#ready} returns true.
+    * Gets the maximum level-of-detail that can be requested.
     */
   val maximumLevel: js.UndefOr[Double] = js.native
   
   /**
-    * Gets the minimum level-of-detail that can be requested.  This function should
-    * not be called before {@link MapboxStyleImageryProvider#ready} returns true. Generally,
+    * Gets the minimum level-of-detail that can be requested. Generally,
     * a minimum level should only be used when the rectangle of the imagery is small
     * enough that the number of tiles at the minimum level is small.  An imagery
     * provider with more than a few tiles at the minimum level will lead to
@@ -116,8 +113,7 @@ open class MapboxStyleImageryProvider protected () extends StObject {
   
   /**
     * Asynchronously determines what features, if any, are located at a given longitude and latitude within
-    * a tile.  This function should not be called before {@link MapboxStyleImageryProvider#ready} returns true.
-    * This function is optional, so it may not exist on all ImageryProviders.
+    * a tile. This function is optional, so it may not exist on all ImageryProviders.
     * @param x - The tile X coordinate.
     * @param y - The tile Y coordinate.
     * @param level - The tile level.
@@ -146,14 +142,12 @@ open class MapboxStyleImageryProvider protected () extends StObject {
   val readyPromise: js.Promise[Boolean] = js.native
   
   /**
-    * Gets the rectangle, in radians, of the imagery provided by the instance.  This function should
-    * not be called before {@link MapboxStyleImageryProvider#ready} returns true.
+    * Gets the rectangle, in radians, of the imagery provided by the instance.
     */
   val rectangle: Rectangle = js.native
   
   /**
-    * Requests the image for a given tile.  This function should
-    * not be called before {@link MapboxStyleImageryProvider#ready} returns true.
+    * Requests the image for a given tile.
     * @param x - The tile X coordinate.
     * @param y - The tile Y coordinate.
     * @param level - The tile level.
@@ -167,26 +161,22 @@ open class MapboxStyleImageryProvider protected () extends StObject {
   /**
     * Gets the tile discard policy.  If not undefined, the discard policy is responsible
     * for filtering out "missing" tiles via its shouldDiscardImage function.  If this function
-    * returns undefined, no tiles are filtered.  This function should
-    * not be called before {@link MapboxStyleImageryProvider#ready} returns true.
+    * returns undefined, no tiles are filtered.
     */
   val tileDiscardPolicy: TileDiscardPolicy = js.native
   
   /**
-    * Gets the height of each tile, in pixels.  This function should
-    * not be called before {@link MapboxStyleImageryProvider#ready} returns true.
+    * Gets the height of each tile, in pixels.
     */
   val tileHeight: Double = js.native
   
   /**
-    * Gets the width of each tile, in pixels.  This function should
-    * not be called before {@link MapboxStyleImageryProvider#ready} returns true.
+    * Gets the width of each tile, in pixels.
     */
   val tileWidth: Double = js.native
   
   /**
-    * Gets the tiling scheme used by the provider.  This function should
-    * not be called before {@link MapboxStyleImageryProvider#ready} returns true.
+    * Gets the tiling scheme used by the provider.
     */
   val tilingScheme: TilingScheme = js.native
   

@@ -1,6 +1,7 @@
 package typings.tensorflowTfjsNode.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.WebGLRenderingContext
 import typings.tensorflowTfjsConverter.anon.Typeofio
 import typings.tensorflowTfjsConverter.distOperationsTypesMod.OpExecutor
 import typings.tensorflowTfjsCore.anon.Grad
@@ -53,6 +54,7 @@ import typings.tensorflowTfjsCore.distTypesMod.TensorLike4D
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike5D
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike6D
 import typings.tensorflowTfjsCore.distTypesMod.WebGLData
+import typings.tensorflowTfjsCore.distTypesMod.WebGPUData
 import typings.tensorflowTfjsLayers.distBaseCallbacksMod.BaseCallbackConstructor
 import typings.tensorflowTfjsLayers.distEngineContainerMod.ContainerArgs
 import typings.tensorflowTfjsLayers.distEngineInputLayerMod.InputConfig
@@ -124,6 +126,8 @@ inline def BatchMatMul: /* "BatchMatMul" */ String = ^.asInstanceOf[js.Dynamic].
 inline def BatchToSpaceND_ : /* "BatchToSpaceND" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("BatchToSpaceND").asInstanceOf[/* "BatchToSpaceND" */ String]
 
 inline def Bincount_ : /* "Bincount" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Bincount").asInstanceOf[/* "Bincount" */ String]
+
+inline def BitwiseAnd_ : /* "BitwiseAnd" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("BitwiseAnd").asInstanceOf[/* "BitwiseAnd" */ String]
 
 inline def BroadcastArgs_ : /* "BroadcastArgs" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("BroadcastArgs").asInstanceOf[/* "BroadcastArgs" */ String]
 
@@ -268,6 +272,8 @@ inline def LogicalXor_ : /* "LogicalXor" */ String = ^.asInstanceOf[js.Dynamic].
 
 inline def LowerBound_ : /* "LowerBound" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("LowerBound").asInstanceOf[/* "LowerBound" */ String]
 
+inline def MatrixBandPart: /* "MatrixBandPart" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("MatrixBandPart").asInstanceOf[/* "MatrixBandPart" */ String]
+
 inline def MaxPool3DGrad: /* "MaxPool3DGrad" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("MaxPool3DGrad").asInstanceOf[/* "MaxPool3DGrad" */ String]
 
 inline def MaxPool3D_ : /* "MaxPool3D" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("MaxPool3D").asInstanceOf[/* "MaxPool3D" */ String]
@@ -402,6 +408,8 @@ inline def Square_ : /* "Square" */ String = ^.asInstanceOf[js.Dynamic].selectDy
 
 inline def SquaredDifference_ : /* "SquaredDifference" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("SquaredDifference").asInstanceOf[/* "SquaredDifference" */ String]
 
+inline def StaticRegexReplace: /* "StaticRegexReplace" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("StaticRegexReplace").asInstanceOf[/* "StaticRegexReplace" */ String]
+
 inline def Step_ : /* "Step" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Step").asInstanceOf[/* "Step" */ String]
 
 inline def StridedSlice_ : /* "StridedSlice" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("StridedSlice").asInstanceOf[/* "StridedSlice" */ String]
@@ -419,6 +427,8 @@ inline def Sum_ : /* "Sum" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic(
 inline def Tan_ : /* "Tan" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Tan").asInstanceOf[/* "Tan" */ String]
 
 inline def Tanh_ : /* "Tanh" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Tanh").asInstanceOf[/* "Tanh" */ String]
+
+inline def TensorScatterUpdate_ : /* "TensorScatterUpdate" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("TensorScatterUpdate").asInstanceOf[/* "TensorScatterUpdate" */ String]
 
 inline def Tile_ : /* "Tile" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Tile").asInstanceOf[/* "Tile" */ String]
 
@@ -818,6 +828,11 @@ Tensor4D]]
 inline def batchToSpaceND[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, blockShape: js.Array[Double], crops: js.Array[js.Array[Double]]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("batchToSpaceND")(x.asInstanceOf[js.Any], blockShape.asInstanceOf[js.Any], crops.asInstanceOf[js.Any])).asInstanceOf[T]
 
 inline def bincount[T /* <: Tensor1D */](x: T | TensorLike, weights: T | TensorLike, size: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bincount")(x.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+
+inline def bitwiseAnd[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
+  x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  y: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("bitwiseAnd")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 
 inline def booleanMaskAsync: js.Function3[
 /* tensor */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
@@ -1922,6 +1937,11 @@ inline def enclosingPowerOfTwo(value: Double): Double = ^.asInstanceOf[js.Dynami
 
 inline def engine(): Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("engine")().asInstanceOf[Engine]
 
+inline def ensureShape[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
+  x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
+): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureShape")(x.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
+
 inline def env(): typings.tensorflowTfjsCore.distEnvironmentMod.Environment = ^.asInstanceOf[js.Dynamic].applyDynamic("env")().asInstanceOf[typings.tensorflowTfjsCore.distEnvironmentMod.Environment]
 
 inline def equal[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
@@ -1994,7 +2014,7 @@ inline def fill[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   * @param shape An array of integers defining the output tensor shape.
   * @param value The scalar value to fill the tensor with.
   * @param dtype The type of an element in the resulting tensor. Defaults to
-  * 'float'.
+  *     'float32' if the given param value is a number, otherwise 'string'.
   *
   * @doc {heading: 'Tensors', subheading: 'Creation'}
   */
@@ -2023,6 +2043,8 @@ inline def floorDiv[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 inline def floorDiv[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("floorDiv")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
 inline def floorDiv[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("floorDiv")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
 inline def floorDiv[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("floorDiv")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+
+inline def forceHalfFloat(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forceHalfFloat")().asInstanceOf[Unit]
 
 inline def gather[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, indices: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("gather")(x.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[T]
 inline def gather[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T | TensorLike, indices: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("gather")(x.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
@@ -3346,6 +3368,24 @@ inline def randomUniform[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */
   seed: Double
 ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 
+inline def randomUniformInt[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
+  shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+  minval: Double,
+  maxval: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniformInt")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+inline def randomUniformInt[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
+  shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+  minval: Double,
+  maxval: Double,
+  seed: String
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniformInt")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+inline def randomUniformInt[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
+  shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+  minval: Double,
+  maxval: Double,
+  seed: Double
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniformInt")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+
 inline def range(start: Double, stop: Double): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
 inline def range(start: Double, stop: Double, step: Double): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
 inline def range(start: Double, stop: Double, step: Double, dtype: float32 | int32): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
@@ -3494,6 +3534,8 @@ inline def sequential(config: SequentialArgs): Sequential = ^.asInstanceOf[js.Dy
 inline def setBackend(backendName: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("setBackend")(backendName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
 
 inline def setPlatform(platformName: String, platform: Platform): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPlatform")(platformName.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def setWebGLContext(webGLVersion: Double, gl: WebGLRenderingContext): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setWebGLContext")(webGLVersion.asInstanceOf[js.Any], gl.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def setdiff1dAsync: js.Function2[
 /* x */ Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | TensorLike, 
@@ -3743,6 +3785,17 @@ inline def tensor[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
   dtype: DataType
 ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 inline def tensor[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](values: WebGLData, shape: Unit, dtype: DataType): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+inline def tensor[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](values: WebGPUData): Tensor[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(values.asInstanceOf[js.Any]).asInstanceOf[Tensor[R]]
+inline def tensor[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
+  values: WebGPUData,
+  shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+inline def tensor[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
+  values: WebGPUData,
+  shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+  dtype: DataType
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+inline def tensor[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](values: WebGPUData, shape: Unit, dtype: DataType): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 
 inline def tensor1d(values: TensorLike1D): Tensor1D = ^.asInstanceOf[js.Dynamic].applyDynamic("tensor1d")(values.asInstanceOf[js.Any]).asInstanceOf[Tensor1D]
 inline def tensor1d(values: TensorLike1D, dtype: DataType): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor1d")(values.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
@@ -3775,6 +3828,39 @@ inline def tensor6d(
   dtype: DataType
 ): Tensor6D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor6d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor6D]
 inline def tensor6d(values: TensorLike6D, shape: Unit, dtype: DataType): Tensor6D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor6d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor6D]
+
+inline def tensorScatterUpdate[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
+  tensor: Tensor[R],
+  indices: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  updates: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorScatterUpdate")(tensor.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+inline def tensorScatterUpdate[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
+  tensor: Tensor[R],
+  indices: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  updates: TensorLike
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorScatterUpdate")(tensor.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+inline def tensorScatterUpdate[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
+  tensor: Tensor[R],
+  indices: TensorLike,
+  updates: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorScatterUpdate")(tensor.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+inline def tensorScatterUpdate[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](tensor: Tensor[R], indices: TensorLike, updates: TensorLike): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorScatterUpdate")(tensor.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+inline def tensorScatterUpdate[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
+  tensor: TensorLike,
+  indices: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  updates: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorScatterUpdate")(tensor.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+inline def tensorScatterUpdate[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
+  tensor: TensorLike,
+  indices: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+  updates: TensorLike
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorScatterUpdate")(tensor.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+inline def tensorScatterUpdate[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
+  tensor: TensorLike,
+  indices: TensorLike,
+  updates: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
+): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorScatterUpdate")(tensor.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+inline def tensorScatterUpdate[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](tensor: TensorLike, indices: TensorLike, updates: TensorLike): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorScatterUpdate")(tensor.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
 
 inline def tidy[T /* <: TensorContainer */](nameOrFn: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("tidy")(nameOrFn.asInstanceOf[js.Any]).asInstanceOf[T]
 inline def tidy[T /* <: TensorContainer */](nameOrFn: String, fn: ScopeFn[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("tidy")(nameOrFn.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[T]
@@ -4029,11 +4115,15 @@ inline def variable[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](ini
 inline def variableGrads(f: js.Function0[Scalar]): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("variableGrads")(f.asInstanceOf[js.Any]).asInstanceOf[Value]
 inline def variableGrads(f: js.Function0[Scalar], varList: js.Array[Variable[typings.tensorflowTfjsCore.distTypesMod.Rank]]): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("variableGrads")(f.asInstanceOf[js.Any], varList.asInstanceOf[js.Any])).asInstanceOf[Value]
 
-inline def versionConverter: /* "4.0.0" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("version_converter").asInstanceOf[/* "4.0.0" */ String]
+inline def versionConverter: /* "4.5.0" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("version_converter").asInstanceOf[/* "4.5.0" */ String]
 
-inline def versionCore: /* "4.0.0" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("version_core").asInstanceOf[/* "4.0.0" */ String]
+inline def versionCore: /* "4.5.0" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("version_core").asInstanceOf[/* "4.5.0" */ String]
 
-inline def versionLayers: /* "4.0.0" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("version_layers").asInstanceOf[/* "4.0.0" */ String]
+inline def versionCpu: /* "4.5.0" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("version_cpu").asInstanceOf[/* "4.5.0" */ String]
+
+inline def versionLayers: /* "4.5.0" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("version_layers").asInstanceOf[/* "4.5.0" */ String]
+
+inline def versionWebgl: /* "4.5.0" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("version_webgl").asInstanceOf[/* "4.5.0" */ String]
 
 inline def where[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](
   condition: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],

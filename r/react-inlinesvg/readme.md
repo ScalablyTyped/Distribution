@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-inlinesvg
 
-Typings are for version 3.0.1
+Typings are for version 3.0.2
 
 ## Library description:
 An SVG loader for React

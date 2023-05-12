@@ -1,7 +1,7 @@
 
 # Scala.js typings for atomically
 
-Typings are for version 1.7.0
+Typings are for version 2.0.1
 
 ## Library description:
 Read and write files atomically and reliably.

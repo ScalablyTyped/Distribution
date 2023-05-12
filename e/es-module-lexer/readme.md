@@ -1,7 +1,7 @@
 
 # Scala.js typings for es-module-lexer
 
-Typings are for version 1.1.0
+Typings are for version 1.2.1
 
 ## Library description:
 Lexes ES modules returning their import/export metadata

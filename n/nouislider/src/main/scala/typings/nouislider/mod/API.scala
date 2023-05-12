@@ -12,6 +12,12 @@ trait API extends StObject {
   
   def destroy(): Unit = js.native
   
+  def disable(): Unit = js.native
+  def disable(handleNumber: Double): Unit = js.native
+  
+  def enable(): Unit = js.native
+  def enable(handleNumber: Double): Unit = js.native
+  
   def get(): GetResult = js.native
   def get(unencoded: Boolean): GetResult = js.native
   

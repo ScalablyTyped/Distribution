@@ -1,7 +1,7 @@
 
 # Scala.js typings for pg-query-stream
 
-Typings are for version 4.2.4
+Typings are for version 4.4.0
 
 ## Library description:
 Postgres query result returned as readable stream

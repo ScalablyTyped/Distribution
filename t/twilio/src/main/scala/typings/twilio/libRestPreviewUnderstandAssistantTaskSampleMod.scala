@@ -1,188 +1,285 @@
 package typings.twilio
 
+import typings.twilio.anon.SourceChannel
 import typings.twilio.libBasePageMod.TwilioResponsePayload
-import typings.twilio.libInterfacesMod.SerializableClass
+import typings.twilio.libRestPreviewUnderstandMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libRestPreviewUnderstandAssistantTaskSampleMod {
   
-  @JSImport("twilio/lib/rest/preview/understand/assistant/task/sample", JSImport.Namespace)
+  @JSImport("twilio/lib/rest/preview/understand/assistant/task/sample", "SampleContextImpl")
   @js.native
-  val ^ : js.Any = js.native
-  
-  @JSImport("twilio/lib/rest/preview/understand/assistant/task/sample", "SampleContext")
-  @js.native
-  open class SampleContext protected () extends StObject {
-    /**
-      * Initialize the SampleContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param assistantSid - The unique ID of the Assistant.
-      * @param taskSid - The unique ID of the Task associated with this Sample.
-      * @param sid - A 34 character string that uniquely identifies this resource.
-      */
-    def this(
-      version: typings.twilio.libRestPreviewUnderstandMod.^,
-      assistantSid: String,
-      taskSid: String,
-      sid: String
-    ) = this()
+  open class SampleContextImpl protected ()
+    extends StObject
+       with SampleContext {
+    def this(_version: default, assistantSid: String, taskSid: String, sid: String) = this()
     
-    /**
-      * fetch a SampleInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def fetch(): js.Promise[SampleInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ SampleInstance, Any]): js.Promise[SampleInstance] = js.native
+    /* protected */ var _solution: SampleContextSolution = js.native
     
-    /**
-      * remove a SampleInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def remove(): js.Promise[Boolean] = js.native
-    def remove(callback: js.Function2[/* error */ js.Error | Null, /* items */ SampleInstance, Any]): js.Promise[Boolean] = js.native
+    /* protected */ var _uri: String = js.native
     
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
+    /* protected */ var _version: default = js.native
     
-    /**
-      * update a SampleInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def update(): js.Promise[SampleInstance] = js.native
-    def update(callback: js.Function2[/* error */ js.Error | Null, /* items */ SampleInstance, Any]): js.Promise[SampleInstance] = js.native
-    def update(opts: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ SampleInstance, Any]): js.Promise[SampleInstance] = js.native
-    def update(opts: SampleInstanceUpdateOptions): js.Promise[SampleInstance] = js.native
     def update(
-      opts: SampleInstanceUpdateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ SampleInstance, Any]
+      params: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[SampleInstance], Any],
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[SampleInstance], Any]
+    ): js.Promise[SampleInstance] = js.native
+    def update(
+      params: Unit,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[SampleInstance], Any]
     ): js.Promise[SampleInstance] = js.native
   }
   
   @JSImport("twilio/lib/rest/preview/understand/assistant/task/sample", "SampleInstance")
   @js.native
-  open class SampleInstance protected () extends SerializableClass {
+  open class SampleInstance protected () extends StObject {
+    def this(_version: default, payload: SampleResource, assistantSid: String, taskSid: String) = this()
+    def this(_version: default, payload: SampleResource, assistantSid: String, taskSid: String, sid: String) = this()
+    
+    /* protected */ var _context: js.UndefOr[SampleContext] = js.native
+    
+    /* private */ def _proxy: Any = js.native
+    
+    /* protected */ var _solution: SampleContextSolution = js.native
+    
+    /* protected */ var _version: default = js.native
+    
     /**
-      * Initialize the SampleContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param payload - The instance payload
-      * @param assistantSid - The unique ID of the Assistant.
-      * @param taskSid - The unique ID of the Task associated with this Sample.
-      * @param sid - A 34 character string that uniquely identifies this resource.
+      * The unique ID of the Account that created this Sample.
       */
-    def this(
-      version: typings.twilio.libRestPreviewUnderstandMod.^,
-      payload: SamplePayload,
-      assistantSid: String,
-      taskSid: String,
-      sid: String
-    ) = this()
-    
-    /* private */ var _proxy: SampleContext = js.native
-    
     var accountSid: String = js.native
     
+    /**
+      * The unique ID of the Assistant.
+      */
     var assistantSid: String = js.native
     
+    /**
+      * The date that this resource was created
+      */
     var dateCreated: js.Date = js.native
     
+    /**
+      * The date that this resource was last updated
+      */
     var dateUpdated: js.Date = js.native
     
     /**
-      * fetch a SampleInstance
+      * Fetch a SampleInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed SampleInstance
       */
     def fetch(): js.Promise[SampleInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[SampleInstance] = js.native
+    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]): js.Promise[SampleInstance] = js.native
     
+    /**
+      * An ISO language-country string of the sample.
+      */
     var language: String = js.native
     
     /**
-      * remove a SampleInstance
+      * Remove a SampleInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed boolean
       */
     def remove(): js.Promise[Boolean] = js.native
-    def remove(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[Boolean] = js.native
+    def remove(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any]): js.Promise[Boolean] = js.native
     
+    /**
+      * A 34 character string that uniquely identifies this resource.
+      */
     var sid: String = js.native
     
+    /**
+      * The communication channel the sample was captured. It can be: *voice*, *sms*, *chat*, *alexa*, *google-assistant*, or *slack*. If not included the value will be null
+      */
     var sourceChannel: String = js.native
     
+    /**
+      * The text example of how end-users may express this task. The sample may contain Field tag blocks.
+      */
     var taggedText: String = js.native
     
+    /**
+      * The unique ID of the Task associated with this Sample.
+      */
     var taskSid: String = js.native
     
     /**
-      * update a SampleInstance
+      * Provide a user-friendly representation
+      *
+      * @returns Object
+      */
+    def toJSON(): SourceChannel = js.native
+    
+    /**
+      * Update a SampleInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed SampleInstance
       */
     def update(): js.Promise[SampleInstance] = js.native
-    def update(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[SampleInstance] = js.native
-    def update(opts: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[SampleInstance] = js.native
-    def update(opts: SampleInstanceUpdateOptions): js.Promise[SampleInstance] = js.native
+    def update(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]): js.Promise[SampleInstance] = js.native
+    /**
+      * Update a SampleInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed SampleInstance
+      */
+    def update(params: SampleContextUpdateOptions): js.Promise[SampleInstance] = js.native
     def update(
-      opts: SampleInstanceUpdateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]
+      params: SampleContextUpdateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]
     ): js.Promise[SampleInstance] = js.native
     
     var url: String = js.native
   }
   
-  /**
-    * Initialize the SampleList
-    *
-    * PLEASE NOTE that this class contains preview products that are subject to
-    * change. Use them with caution. If you currently do not have developer preview
-    * access, please contact help@twilio.com.
-    *
-    * @param version - Version of the resource
-    * @param assistantSid - The unique ID of the Assistant.
-    * @param taskSid - The unique ID of the Task associated with this Sample.
-    */
-  inline def SampleList(version: typings.twilio.libRestPreviewUnderstandMod.^, assistantSid: String, taskSid: String): SampleListInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("SampleList")(version.asInstanceOf[js.Any], assistantSid.asInstanceOf[js.Any], taskSid.asInstanceOf[js.Any])).asInstanceOf[SampleListInstance]
+  @js.native
+  trait SampleListInstance extends StObject {
+    
+    def apply(sid: String): SampleContext = js.native
+    
+    var _solution: SampleSolution = js.native
+    
+    var _uri: String = js.native
+    
+    var _version: default = js.native
+    
+    /**
+      * Create a SampleInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed SampleInstance
+      */
+    def create(params: SampleListInstanceCreateOptions): js.Promise[SampleInstance] = js.native
+    def create(
+      params: SampleListInstanceCreateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[SampleInstance], Any]
+    ): js.Promise[SampleInstance] = js.native
+    
+    /**
+      * Streams SampleInstance records from the API.
+      *
+      * This operation lazily loads records as efficiently as possible until the limit
+      * is reached.
+      *
+      * The results are passed into the callback function, so this operation is memory
+      * efficient.
+      *
+      * If a function is passed as the first argument, it will be used as the callback
+      * function.
+      *
+      * @param { SampleListInstanceEachOptions } [params] - Options for request
+      * @param { function } [callback] - Function to process each record
+      */
+    def each(): Unit = js.native
+    def each(
+      callback: js.Function2[
+          /* item */ SampleInstance, 
+          /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
+          Unit
+        ]
+    ): Unit = js.native
+    def each(params: SampleListInstanceEachOptions): Unit = js.native
+    def each(
+      params: SampleListInstanceEachOptions,
+      callback: js.Function2[
+          /* item */ SampleInstance, 
+          /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
+          Unit
+        ]
+    ): Unit = js.native
+    
+    def get(sid: String): SampleContext = js.native
+    
+    /**
+      * Retrieve a single target page of SampleInstance records from the API.
+      *
+      * The request is executed immediately.
+      *
+      * @param { string } [targetUrl] - API-generated URL for the requested results page
+      * @param { function } [callback] - Callback to handle list of records
+      */
+    def getPage(targetUrl: String): js.Promise[SamplePage] = js.native
+    def getPage(
+      targetUrl: String,
+      callback: js.Function2[/* error */ js.Error | Null, /* items */ SamplePage, Any]
+    ): js.Promise[SamplePage] = js.native
+    
+    /**
+      * Lists SampleInstance records from the API as a list.
+      *
+      * If a function is passed as the first argument, it will be used as the callback
+      * function.
+      *
+      * @param { SampleListInstanceOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
+      */
+    def list(): js.Promise[js.Array[SampleInstance]] = js.native
+    def list(callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[SampleInstance], Any]): js.Promise[js.Array[SampleInstance]] = js.native
+    def list(params: SampleListInstanceOptions): js.Promise[js.Array[SampleInstance]] = js.native
+    def list(
+      params: SampleListInstanceOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[SampleInstance], Any]
+    ): js.Promise[js.Array[SampleInstance]] = js.native
+    
+    /**
+      * Retrieve a single page of SampleInstance records from the API.
+      *
+      * The request is executed immediately.
+      *
+      * If a function is passed as the first argument, it will be used as the callback
+      * function.
+      *
+      * @param { SampleListInstancePageOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
+      */
+    def page(): js.Promise[SamplePage] = js.native
+    def page(callback: js.Function2[/* error */ js.Error | Null, /* items */ SamplePage, Any]): js.Promise[SamplePage] = js.native
+    def page(params: SampleListInstancePageOptions): js.Promise[SamplePage] = js.native
+    def page(
+      params: SampleListInstancePageOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* items */ SamplePage, Any]
+    ): js.Promise[SamplePage] = js.native
+    
+    /**
+      * Provide a user-friendly representation
+      */
+    def toJSON(): Any = js.native
+  }
+  object SampleListInstance {
+    
+    @JSImport("twilio/lib/rest/preview/understand/assistant/task/sample", "SampleListInstance")
+    @js.native
+    def apply(version: default, assistantSid: String, taskSid: String): SampleListInstance = js.native
+  }
   
   @JSImport("twilio/lib/rest/preview/understand/assistant/task/sample", "SamplePage")
   @js.native
   open class SamplePage protected ()
-    extends typings.twilio.libBasePageMod.^[
-          typings.twilio.libRestPreviewUnderstandMod.^, 
-          SamplePayload, 
-          SampleResource, 
-          SampleInstance
-        ] {
+    extends typings.twilio.libBasePageMod.default[default, SamplePayload, SampleResource, SampleInstance] {
     /**
       * Initialize the SamplePage
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
       *
       * @param version - Version of the resource
       * @param response - Response from the API
       * @param solution - Path solution
       */
     def this(
-      version: typings.twilio.libRestPreviewUnderstandMod.^,
-      response: typings.twilio.libHttpResponseMod.^[String],
+      version: default,
+      response: typings.twilio.libHttpResponseMod.default[String],
       solution: SampleSolution
     ) = this()
     
@@ -191,38 +288,107 @@ object libRestPreviewUnderstandAssistantTaskSampleMod {
       *
       * @param payload - Payload response from the API
       */
-    def getInstance(payload: SamplePayload): SampleInstance = js.native
+    def getInstance(payload: SampleResource): SampleInstance = js.native
+  }
+  
+  @js.native
+  trait SampleContext extends StObject {
+    
+    /**
+      * Fetch a SampleInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed SampleInstance
+      */
+    def fetch(): js.Promise[SampleInstance] = js.native
+    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[SampleInstance], Any]): js.Promise[SampleInstance] = js.native
+    
+    /**
+      * Remove a SampleInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed boolean
+      */
+    def remove(): js.Promise[Boolean] = js.native
+    def remove(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any]): js.Promise[Boolean] = js.native
     
     /**
       * Provide a user-friendly representation
       */
     def toJSON(): Any = js.native
+    
+    /**
+      * Update a SampleInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed SampleInstance
+      */
+    def update(): js.Promise[SampleInstance] = js.native
+    def update(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[SampleInstance], Any]): js.Promise[SampleInstance] = js.native
+    /**
+      * Update a SampleInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed SampleInstance
+      */
+    def update(params: SampleContextUpdateOptions): js.Promise[SampleInstance] = js.native
+    def update(
+      params: SampleContextUpdateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[SampleInstance], Any]
+    ): js.Promise[SampleInstance] = js.native
   }
   
-  /**
-    * Options to pass to update
-    *
-    * @property language - An ISO language-country string of the sample.
-    * @property sourceChannel - The communication channel the sample was captured. It can be: voice, sms, chat, alexa, google-assistant, or slack. If not included the value will be null
-    * @property taggedText - The text example of how end-users may express this task. The sample may contain Field tag blocks.
-    */
-  trait SampleInstanceUpdateOptions extends StObject {
+  trait SampleContextSolution extends StObject {
     
-    var language: js.UndefOr[String] = js.undefined
+    var assistantSid: String
     
-    var sourceChannel: js.UndefOr[String] = js.undefined
+    var sid: String
     
-    var taggedText: js.UndefOr[String] = js.undefined
+    var taskSid: String
   }
-  object SampleInstanceUpdateOptions {
+  object SampleContextSolution {
     
-    inline def apply(): SampleInstanceUpdateOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[SampleInstanceUpdateOptions]
+    inline def apply(assistantSid: String, sid: String, taskSid: String): SampleContextSolution = {
+      val __obj = js.Dynamic.literal(assistantSid = assistantSid.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any], taskSid = taskSid.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SampleContextSolution]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: SampleInstanceUpdateOptions] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: SampleContextSolution] (val x: Self) extends AnyVal {
+      
+      inline def setAssistantSid(value: String): Self = StObject.set(x, "assistantSid", value.asInstanceOf[js.Any])
+      
+      inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
+      
+      inline def setTaskSid(value: String): Self = StObject.set(x, "taskSid", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait SampleContextUpdateOptions extends StObject {
+    
+    /** An ISO language-country string of the sample. */
+    var language: js.UndefOr[String] = js.undefined
+    
+    /** The communication channel the sample was captured. It can be: *voice*, *sms*, *chat*, *alexa*, *google-assistant*, or *slack*. If not included the value will be null */
+    var sourceChannel: js.UndefOr[String] = js.undefined
+    
+    /** The text example of how end-users may express this task. The sample may contain Field tag blocks. */
+    var taggedText: js.UndefOr[String] = js.undefined
+  }
+  object SampleContextUpdateOptions {
+    
+    inline def apply(): SampleContextUpdateOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SampleContextUpdateOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SampleContextUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
@@ -238,150 +404,15 @@ object libRestPreviewUnderstandAssistantTaskSampleMod {
     }
   }
   
-  @js.native
-  trait SampleListInstance extends StObject {
-    
-    /**
-      * @param sid - sid of instance
-      */
-    def apply(sid: String): SampleContext = js.native
-    
-    /**
-      * create a SampleInstance
-      *
-      * @param opts - Options for request
-      * @param callback - Callback to handle processed record
-      */
-    def create(opts: SampleListInstanceCreateOptions): js.Promise[SampleInstance] = js.native
-    def create(
-      opts: SampleListInstanceCreateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* item */ SampleInstance, Any]
-    ): js.Promise[SampleInstance] = js.native
-    
-    /**
-      * Streams SampleInstance records from the API.
-      *
-      * This operation lazily loads records as efficiently as possible until the limit
-      * is reached.
-      *
-      * The results are passed into the callback function, so this operation is memory
-      * efficient.
-      *
-      * If a function is passed as the first argument, it will be used as the callback
-      * function.
-      *
-      * @param callback - Function to process each record
-      */
-    def each(): Unit = js.native
-    def each(
-      callback: js.Function2[
-          /* item */ SampleInstance, 
-          /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
-          Unit
-        ]
-    ): Unit = js.native
-    def each(
-      opts: Unit,
-      callback: js.Function2[
-          /* item */ SampleInstance, 
-          /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
-          Unit
-        ]
-    ): Unit = js.native
-    def each(opts: SampleListInstanceEachOptions): Unit = js.native
-    def each(
-      opts: SampleListInstanceEachOptions,
-      callback: js.Function2[
-          /* item */ SampleInstance, 
-          /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
-          Unit
-        ]
-    ): Unit = js.native
-    
-    /**
-      * Constructs a sample
-      *
-      * @param sid - A 34 character string that uniquely identifies this resource.
-      */
-    def get(sid: String): SampleContext = js.native
-    
-    /**
-      * Retrieve a single target page of SampleInstance records from the API.
-      *
-      * The request is executed immediately.
-      *
-      * If a function is passed as the first argument, it will be used as the callback
-      * function.
-      *
-      * @param callback - Callback to handle list of records
-      */
-    def getPage(): js.Promise[SamplePage] = js.native
-    def getPage(callback: js.Function2[/* error */ js.Error | Null, /* items */ SamplePage, Any]): js.Promise[SamplePage] = js.native
-    def getPage(targetUrl: String): js.Promise[SamplePage] = js.native
-    def getPage(
-      targetUrl: String,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ SamplePage, Any]
-    ): js.Promise[SamplePage] = js.native
-    def getPage(targetUrl: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ SamplePage, Any]): js.Promise[SamplePage] = js.native
-    
-    /**
-      * Lists SampleInstance records from the API as a list.
-      *
-      * If a function is passed as the first argument, it will be used as the callback
-      * function.
-      *
-      * @param callback - Callback to handle list of records
-      */
-    def list(): js.Promise[js.Array[SampleInstance]] = js.native
-    def list(callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[SampleInstance], Any]): js.Promise[js.Array[SampleInstance]] = js.native
-    def list(
-      opts: Unit,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[SampleInstance], Any]
-    ): js.Promise[js.Array[SampleInstance]] = js.native
-    def list(opts: SampleListInstanceOptions): js.Promise[js.Array[SampleInstance]] = js.native
-    def list(
-      opts: SampleListInstanceOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[SampleInstance], Any]
-    ): js.Promise[js.Array[SampleInstance]] = js.native
-    
-    /**
-      * Retrieve a single page of SampleInstance records from the API.
-      *
-      * The request is executed immediately.
-      *
-      * If a function is passed as the first argument, it will be used as the callback
-      * function.
-      *
-      * @param callback - Callback to handle list of records
-      */
-    def page(): js.Promise[SamplePage] = js.native
-    def page(callback: js.Function2[/* error */ js.Error | Null, /* items */ SamplePage, Any]): js.Promise[SamplePage] = js.native
-    def page(opts: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ SamplePage, Any]): js.Promise[SamplePage] = js.native
-    def page(opts: SampleListInstancePageOptions): js.Promise[SamplePage] = js.native
-    def page(
-      opts: SampleListInstancePageOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ SamplePage, Any]
-    ): js.Promise[SamplePage] = js.native
-    
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
-  }
-  
-  /**
-    * Options to pass to create
-    *
-    * @property language - An ISO language-country string of the sample.
-    * @property sourceChannel - The communication channel the sample was captured. It can be: voice, sms, chat, alexa, google-assistant, or slack. If not included the value will be null
-    * @property taggedText - The text example of how end-users may express this task. The sample may contain Field tag blocks.
-    */
   trait SampleListInstanceCreateOptions extends StObject {
     
+    /** An ISO language-country string of the sample. */
     var language: String
     
+    /** The communication channel the sample was captured. It can be: *voice*, *sms*, *chat*, *alexa*, *google-assistant*, or *slack*. If not included the value will be null */
     var sourceChannel: js.UndefOr[String] = js.undefined
     
+    /** The text example of how end-users may express this task. The sample may contain Field tag blocks. */
     var taggedText: String
   }
   object SampleListInstanceCreateOptions {
@@ -404,27 +435,9 @@ object libRestPreviewUnderstandAssistantTaskSampleMod {
     }
   }
   
-  /**
-    * Options to pass to each
-    *
-    * @property callback -
-    *                         Function to process each record. If this and a positional
-    *                         callback are passed, this one will be used
-    * @property done - Function to be called upon completion of streaming
-    * @property language - An ISO language-country string of the sample.
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         each() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no pageSize is defined but a limit is defined,
-    *                         each() will attempt to read the limit with the most efficient
-    *                         page size, i.e. min(limit, 1000)
-    */
   trait SampleListInstanceEachOptions extends StObject {
     
+    /** Function to process each record. If this and a positional callback are passed, this one will be used */
     var callback: js.UndefOr[
         js.Function2[
           /* item */ SampleInstance, 
@@ -433,12 +446,16 @@ object libRestPreviewUnderstandAssistantTaskSampleMod {
         ]
       ] = js.undefined
     
+    /** Function to be called upon completion of streaming */
     var done: js.UndefOr[js.Function] = js.undefined
     
+    /** An ISO language-country string of the sample. */
     var language: js.UndefOr[String] = js.undefined
     
+    /** Upper limit for the number of records to return. each() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
   }
   object SampleListInstanceEachOptions {
@@ -475,27 +492,15 @@ object libRestPreviewUnderstandAssistantTaskSampleMod {
     }
   }
   
-  /**
-    * Options to pass to list
-    *
-    * @property language - An ISO language-country string of the sample.
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         list() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no page_size is defined but a limit is defined,
-    *                         list() will attempt to read the limit with the most
-    *                         efficient page size, i.e. min(limit, 1000)
-    */
   trait SampleListInstanceOptions extends StObject {
     
+    /** An ISO language-country string of the sample. */
     var language: js.UndefOr[String] = js.undefined
     
+    /** Upper limit for the number of records to return. list() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
   }
   object SampleListInstanceOptions {
@@ -522,22 +527,18 @@ object libRestPreviewUnderstandAssistantTaskSampleMod {
     }
   }
   
-  /**
-    * Options to pass to page
-    *
-    * @property language - An ISO language-country string of the sample.
-    * @property pageNumber - Page Number, this value is simply for client state
-    * @property pageSize - Number of records to return, defaults to 50
-    * @property pageToken - PageToken provided by the API
-    */
   trait SampleListInstancePageOptions extends StObject {
     
+    /** An ISO language-country string of the sample. */
     var language: js.UndefOr[String] = js.undefined
     
+    /** Page Number, this value is simply for client state */
     var pageNumber: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
     
+    /** PageToken provided by the API */
     var pageToken: js.UndefOr[String] = js.undefined
   }
   object SampleListInstancePageOptions {
@@ -570,30 +571,31 @@ object libRestPreviewUnderstandAssistantTaskSampleMod {
   
   trait SamplePayload
     extends StObject
-       with SampleResource
-       with TwilioResponsePayload
+       with TwilioResponsePayload {
+    
+    var samples: js.Array[SampleResource]
+  }
   object SamplePayload {
     
     inline def apply(
-      account_sid: String,
-      assistant_sid: String,
-      date_created: js.Date,
-      date_updated: js.Date,
       first_page_uri: String,
-      language: String,
       next_page_uri: String,
       page: Double,
       page_size: Double,
       previous_page_uri: String,
-      sid: String,
-      source_channel: String,
-      tagged_text: String,
-      task_sid: String,
-      uri: String,
-      url: String
+      samples: js.Array[SampleResource],
+      uri: String
     ): SamplePayload = {
-      val __obj = js.Dynamic.literal(account_sid = account_sid.asInstanceOf[js.Any], assistant_sid = assistant_sid.asInstanceOf[js.Any], date_created = date_created.asInstanceOf[js.Any], date_updated = date_updated.asInstanceOf[js.Any], first_page_uri = first_page_uri.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any], source_channel = source_channel.asInstanceOf[js.Any], tagged_text = tagged_text.asInstanceOf[js.Any], task_sid = task_sid.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(first_page_uri = first_page_uri.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], samples = samples.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[SamplePayload]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SamplePayload] (val x: Self) extends AnyVal {
+      
+      inline def setSamples(value: js.Array[SampleResource]): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
+      
+      inline def setSamplesVarargs(value: SampleResource*): Self = StObject.set(x, "samples", js.Array(value*))
     }
   }
   
@@ -664,14 +666,14 @@ object libRestPreviewUnderstandAssistantTaskSampleMod {
   
   trait SampleSolution extends StObject {
     
-    var assistantSid: js.UndefOr[String] = js.undefined
+    var assistantSid: String
     
-    var taskSid: js.UndefOr[String] = js.undefined
+    var taskSid: String
   }
   object SampleSolution {
     
-    inline def apply(): SampleSolution = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(assistantSid: String, taskSid: String): SampleSolution = {
+      val __obj = js.Dynamic.literal(assistantSid = assistantSid.asInstanceOf[js.Any], taskSid = taskSid.asInstanceOf[js.Any])
       __obj.asInstanceOf[SampleSolution]
     }
     
@@ -680,11 +682,7 @@ object libRestPreviewUnderstandAssistantTaskSampleMod {
       
       inline def setAssistantSid(value: String): Self = StObject.set(x, "assistantSid", value.asInstanceOf[js.Any])
       
-      inline def setAssistantSidUndefined: Self = StObject.set(x, "assistantSid", js.undefined)
-      
       inline def setTaskSid(value: String): Self = StObject.set(x, "taskSid", value.asInstanceOf[js.Any])
-      
-      inline def setTaskSidUndefined: Self = StObject.set(x, "taskSid", js.undefined)
     }
   }
 }

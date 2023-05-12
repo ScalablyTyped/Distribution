@@ -55,7 +55,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Webhooks themselves contain only the information necessary to deliver the
   * events to the desired target as they are generated.
-  * @class
   * @param {Dispatcher} dispatcher The API dispatcher
   */
 @js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for lumino__virtualdom
 
-Typings are for version 1.14.2
+Typings are for version 2.0.0
 
 ## Library description:
 Lumino Virtual DOM

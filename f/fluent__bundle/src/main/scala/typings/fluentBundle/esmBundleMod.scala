@@ -23,68 +23,62 @@ object esmBundleMod {
     /**
       * Create an instance of `FluentBundle`.
       *
-      * The `locales` argument is used to instantiate `Intl` formatters used by
-      * translations. The `options` object can be used to configure the bundle.
+      * @example
+      * ```js
+      * let bundle = new FluentBundle(["en-US", "en"]);
       *
-      * Examples:
+      * let bundle = new FluentBundle(locales, {useIsolating: false});
       *
-      *     let bundle = new FluentBundle(["en-US", "en"]);
+      * let bundle = new FluentBundle(locales, {
+      *   useIsolating: true,
+      *   functions: {
+      *     NODE_ENV: () => process.env.NODE_ENV
+      *   }
+      * });
+      * ```
       *
-      *     let bundle = new FluentBundle(locales, {useIsolating: false});
-      *
-      *     let bundle = new FluentBundle(locales, {
-      *       useIsolating: true,
-      *       functions: {
-      *         NODE_ENV: () => process.env.NODE_ENV
-      *       }
-      *     });
-      *
-      * Available options:
-      *
-      *   - `functions` - an object of additional functions available to
-      *     translations as builtins.
-      *
-      *   - `useIsolating` - boolean specifying whether to use Unicode isolation
-      *     marks (FSI, PDI) for bidi interpolations. Default: `true`.
-      *
-      *   - `transform` - a function used to transform string parts of patterns.
+      * @param locales - Used to instantiate `Intl` formatters used by translations.
+      * @param options - Optional configuration for the bundle.
       */
     def this(locales: String) = this()
     def this(locales: js.Array[String]) = this()
     def this(locales: String, param1: Functions) = this()
     def this(locales: js.Array[String], param1: Functions) = this()
     
+    /** @ignore */
     var _functions: Record[String, FluentFunction] = js.native
     
+    /** @ignore */
     var _intls: IntlCache = js.native
     
+    /** @ignore */
     var _messages: Map[String, Message] = js.native
     
+    /** @ignore */
     var _terms: Map[String, Term] = js.native
     
+    /** @ignore */
     def _transform(text: String): String = js.native
+    /** @ignore */
     @JSName("_transform")
     var _transform_Original: TextTransform = js.native
     
+    /** @ignore */
     var _useIsolating: Boolean = js.native
     
     /**
       * Add a translation resource to the bundle.
       *
-      * The translation resource must be an instance of `FluentResource`.
+      * @example
+      * ```js
+      * let res = new FluentResource("foo = Foo");
+      * bundle.addResource(res);
+      * bundle.getMessage("foo");
+      * // → {value: .., attributes: {..}}
+      * ```
       *
-      *     let res = new FluentResource("foo = Foo");
-      *     bundle.addResource(res);
-      *     bundle.getMessage("foo");
-      *     // → {value: .., attributes: {..}}
-      *
-      * Available options:
-      *
-      *   - `allowOverrides` - boolean specifying whether it's allowed to override
-      *     an existing message or term with a new value. Default: `false`.
-      *
-      * @param   res - FluentResource object.
-      * @param   options
+      * @param res
+      * @param options
       */
     def addResource(res: FluentResource): js.Array[js.Error] = js.native
     def addResource(res: FluentResource, param1: AllowOverrides): js.Array[js.Error] = js.native
@@ -100,21 +94,24 @@ object esmBundleMod {
       * reasons, the encountered errors are not returned but instead are appended
       * to the `errors` array passed as the third argument.
       *
-      *     let errors = [];
-      *     bundle.addResource(
-      *         new FluentResource("hello = Hello, {$name}!"));
-      *
-      *     let hello = bundle.getMessage("hello");
-      *     if (hello.value) {
-      *         bundle.formatPattern(hello.value, {name: "Jane"}, errors);
-      *         // Returns "Hello, Jane!" and `errors` is empty.
-      *
-      *         bundle.formatPattern(hello.value, undefined, errors);
-      *         // Returns "Hello, {$name}!" and `errors` is now:
-      *         // [<ReferenceError: Unknown variable: name>]
-      *     }
-      *
       * If `errors` is omitted, the first encountered error will be thrown.
+      *
+      * @example
+      * ```js
+      * let errors = [];
+      * bundle.addResource(
+      *     new FluentResource("hello = Hello, {$name}!"));
+      *
+      * let hello = bundle.getMessage("hello");
+      * if (hello.value) {
+      *     bundle.formatPattern(hello.value, {name: "Jane"}, errors);
+      *     // Returns "Hello, Jane!" and `errors` is empty.
+      *
+      *     bundle.formatPattern(hello.value, undefined, errors);
+      *     // Returns "Hello, {$name}!" and `errors` is now:
+      *     // [<ReferenceError: Unknown variable: name>]
+      * }
+      * ```
       */
     def formatPattern(pattern: Pattern): String = js.native
     def formatPattern(pattern: Pattern, args: Null, errors: js.Array[js.Error]): String = js.native
@@ -143,9 +140,7 @@ object esmBundleMod {
     var locales: js.Array[String] = js.native
   }
   
-  type FluentVariable = FluentValue | NativeValue
-  
-  type NativeValue = String | Double | js.Date
+  type FluentVariable = FluentValue | String | Double | js.Date
   
   type TextTransform = js.Function1[/* text */ String, String]
 }

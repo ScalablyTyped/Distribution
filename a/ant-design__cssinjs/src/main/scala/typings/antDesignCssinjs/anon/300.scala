@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.TextOrientation
+import typings.csstype.mod.Property.ScrollPaddingInlineStart
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `300` extends StObject {
   
   var value: js.UndefOr[
-    TextOrientation | (js.Array[
+    (ScrollPaddingInlineStart[Double | String]) | (js.Array[
       (Extract[
-        js.UndefOr[TextOrientation | js.Array[NonNullable[js.UndefOr[TextOrientation]]]], 
+        js.UndefOr[
+          (ScrollPaddingInlineStart[Double | String]) | (js.Array[NonNullable[js.UndefOr[ScrollPaddingInlineStart[Double | String]]]])
+        ], 
         String
-      ]) | NonNullable[js.UndefOr[TextOrientation]]
+      ]) | (NonNullable[js.UndefOr[ScrollPaddingInlineStart[Double | String]]])
     ])
   ] = js.native
 }

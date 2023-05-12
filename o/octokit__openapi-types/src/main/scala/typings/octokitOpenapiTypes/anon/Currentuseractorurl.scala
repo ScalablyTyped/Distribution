@@ -27,6 +27,18 @@ trait Currentuseractorurl extends StObject {
   /** @example https://github.com/octocat.private?token=abc123 */
   var current_user_url: js.UndefOr[String] = js.undefined
   
+  /**
+    * @description A feed of discussions for a given repository and category.
+    * @example https://github.com/{user}/{repo}/discussions/categories/{category}
+    */
+  var repository_discussions_category_url: js.UndefOr[String] = js.undefined
+  
+  /**
+    * @description A feed of discussions for a given repository.
+    * @example https://github.com/{user}/{repo}/discussions
+    */
+  var repository_discussions_url: js.UndefOr[String] = js.undefined
+  
   /** @example https://github.com/security-advisories */
   var security_advisories_url: js.UndefOr[String] = js.undefined
   
@@ -67,6 +79,14 @@ object Currentuseractorurl {
     inline def setCurrent_user_url(value: String): Self = StObject.set(x, "current_user_url", value.asInstanceOf[js.Any])
     
     inline def setCurrent_user_urlUndefined: Self = StObject.set(x, "current_user_url", js.undefined)
+    
+    inline def setRepository_discussions_category_url(value: String): Self = StObject.set(x, "repository_discussions_category_url", value.asInstanceOf[js.Any])
+    
+    inline def setRepository_discussions_category_urlUndefined: Self = StObject.set(x, "repository_discussions_category_url", js.undefined)
+    
+    inline def setRepository_discussions_url(value: String): Self = StObject.set(x, "repository_discussions_url", value.asInstanceOf[js.Any])
+    
+    inline def setRepository_discussions_urlUndefined: Self = StObject.set(x, "repository_discussions_url", js.undefined)
     
     inline def setSecurity_advisories_url(value: String): Self = StObject.set(x, "security_advisories_url", value.asInstanceOf[js.Any])
     

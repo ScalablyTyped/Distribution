@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcThreeMod.BufferGeometry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +10,7 @@ object examplesJsmGeometriesTeapotGeometryMod {
   
   @JSImport("three/examples/jsm/geometries/TeapotGeometry", "TeapotGeometry")
   @js.native
-  open class TeapotGeometry protected () extends BufferGeometry {
+  open class TeapotGeometry protected () extends BufferGeometry[NormalBufferAttributes] {
     def this(
       size: js.UndefOr[Double],
       segments: js.UndefOr[Double],

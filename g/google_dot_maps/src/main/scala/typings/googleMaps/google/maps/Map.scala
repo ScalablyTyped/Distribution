@@ -31,7 +31,10 @@ trait Map
     * therefore does not do anything. To change the viewport while the map is
     * hidden, set the map to <code>visibility: hidden</code>, thereby ensuring
     * the map div has an actual size. For vector maps, this method sets the
-    * map&#39;s tilt and heading to their default zero values.
+    * map&#39;s tilt and heading to their default zero values. Calling this
+    * method may cause a smooth animation as the map pans and zooms to fit the
+    * bounds. Whether or not this method animates depends on an internal
+    * heuristic.
     * @param bounds Bounds to show.
     * @param padding Padding in pixels. The bounds will be fit in the part of
     *     the map that remains after padding is removed. A number value will
@@ -74,10 +77,21 @@ trait Map
     */
   def getClickableIcons(): js.UndefOr[Boolean] = js.native
   
+  /**
+    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
+    * Returns the <code>FeatureLayer</code> for the specified
+    * <code>datasetId</code>. Dataset IDs must be configured in the Google
+    * Cloud Console. If the dataset ID is not associated with the map&#39;s map
+    * style, or if Data-driven styling is not available (no map ID, no vector
+    * tiles, no Data-Driven Styling feature layers or Datasets configured in
+    * the Map Style), this logs an error, and the resulting
+    * <code>FeatureLayer.isAvailable</code> will be false.
+    */
+  def getDatasetFeatureLayer(datasetId: String): FeatureLayer = js.native
+  
   def getDiv(): HTMLElement = js.native
   
   /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
     * Returns the <code>FeatureLayer</code> of the specific
     * <code>FeatureType</code>. A <code>FeatureLayer</code> must be enabled in
     * the Google Cloud Console. If a <code>FeatureLayer</code> of the specified
@@ -96,7 +110,6 @@ trait Map
   def getHeading(): js.UndefOr[Double] = js.native
   
   /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
     * Informs the caller of the current capabilities available to the map based
     * on the Map ID that was provided.
     */

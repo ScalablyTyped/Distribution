@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderInlineStartStyle
+import typings.csstype.mod.Property.BackgroundBlendMode
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `385` extends StObject {
   
   var value: js.UndefOr[
-    BorderInlineStartStyle | (js.Array[
+    BackgroundBlendMode | (js.Array[
       (Extract[
-        js.UndefOr[
-          BorderInlineStartStyle | js.Array[NonNullable[js.UndefOr[BorderInlineStartStyle]]]
-        ], 
+        js.UndefOr[BackgroundBlendMode | js.Array[NonNullable[js.UndefOr[BackgroundBlendMode]]]], 
         String
-      ]) | NonNullable[js.UndefOr[BorderInlineStartStyle]]
+      ]) | NonNullable[js.UndefOr[BackgroundBlendMode]]
     ])
   ] = js.native
 }

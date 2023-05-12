@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.Filter
+import typings.csstype.mod.Property.Zoom
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `387` extends StObject {
   
   var value: js.UndefOr[
-    Filter | (js.Array[
-      (Extract[js.UndefOr[Filter | js.Array[NonNullable[js.UndefOr[Filter]]]], String]) | NonNullable[js.UndefOr[Filter]]
+    Zoom | (js.Array[
+      (Extract[js.UndefOr[Zoom | js.Array[NonNullable[js.UndefOr[Zoom]]]], String]) | NonNullable[js.UndefOr[Zoom]]
     ])
   ] = js.native
 }

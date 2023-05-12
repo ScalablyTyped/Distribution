@@ -14,13 +14,13 @@ type CoerceFunction = js.Function2[/* value */ Any, /* helpers */ CustomHelpers[
 
 type ComparatorFunction = js.Function2[/* a */ Any, /* b */ Any, Boolean]
 
-type CustomValidator[V] = js.Function2[/* value */ V, /* helpers */ CustomHelpers[Any], V | ErrorReport]
+type CustomValidator[V, R] = js.Function2[/* value */ V, /* helpers */ CustomHelpers[R], R | ErrorReport]
 
 type ExtensionBoundSchema = Schema[Any] & SchemaInternals
 
 type ExtensionFactory = js.Function1[/* joi */ Root, Extension]
 
-type ExternalValidationFunction[V] = js.Function2[/* value */ V, /* helpers */ ExternalHelpers, js.UndefOr[V]]
+type ExternalValidationFunction[V, R] = js.Function2[/* value */ V, /* helpers */ ExternalHelpers[R], js.UndefOr[R]]
 
 /** NOTE: Conditional type definitions are impossible to translate to Scala.
   * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.

@@ -99,6 +99,8 @@ object sapUiCoreManifestMod {
     inline def getMetadata(): typings.openui5.sapUiBaseMetadataMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[typings.openui5.sapUiBaseMetadataMod.default]
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Function to load the manifest by URL
       *
       * @returns Manifest object or for asynchronous calls an ECMA Script 6 Promise object will be returned.

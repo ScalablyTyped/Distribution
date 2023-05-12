@@ -29,12 +29,12 @@ trait AdministrableProductDefinitionRouteOfAdministration
   var maxDosePerTreatmentPeriod: js.UndefOr[Ratio] = js.undefined
   
   /**
-    * The maximum single dose that can be administered, can be specified using a numerical value and its unit of measurement.
+    * The maximum single dose that can be administered, specified using a numerical value and its unit of measurement.
     */
   var maxSingleDose: js.UndefOr[Quantity] = js.undefined
   
   /**
-    * The maximum treatment period during which an Investigational Medicinal Product can be administered.
+    * The maximum treatment period during which the product can be administered.
     */
   var maxTreatmentPeriod: js.UndefOr[Duration] = js.undefined
   

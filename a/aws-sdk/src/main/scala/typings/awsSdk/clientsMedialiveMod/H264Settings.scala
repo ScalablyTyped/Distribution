@@ -230,6 +230,11 @@ trait H264Settings extends StObject {
   var TemporalAq: js.UndefOr[H264TemporalAq] = js.undefined
   
   /**
+    * Timecode burn-in settings
+    */
+  var TimecodeBurninSettings: js.UndefOr[typings.awsSdk.clientsMedialiveMod.TimecodeBurninSettings] = js.undefined
+  
+  /**
     * Determines how timecodes should be inserted into the video elementary stream.
   - 'disabled': Do not include timecodes
   - 'picTimingSei': Pass through picture timing SEI messages from the source specified in Timecode Config
@@ -405,6 +410,10 @@ object H264Settings {
     inline def setTemporalAq(value: H264TemporalAq): Self = StObject.set(x, "TemporalAq", value.asInstanceOf[js.Any])
     
     inline def setTemporalAqUndefined: Self = StObject.set(x, "TemporalAq", js.undefined)
+    
+    inline def setTimecodeBurninSettings(value: TimecodeBurninSettings): Self = StObject.set(x, "TimecodeBurninSettings", value.asInstanceOf[js.Any])
+    
+    inline def setTimecodeBurninSettingsUndefined: Self = StObject.set(x, "TimecodeBurninSettings", js.undefined)
     
     inline def setTimecodeInsertion(value: H264TimecodeInsertionBehavior): Self = StObject.set(x, "TimecodeInsertion", value.asInstanceOf[js.Any])
     

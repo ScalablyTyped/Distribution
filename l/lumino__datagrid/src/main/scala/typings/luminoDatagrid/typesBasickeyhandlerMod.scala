@@ -39,6 +39,11 @@ object typesBasickeyhandlerMod {
       */
     /* CompleteClass */
     override val isDisposed: Boolean = js.native
+    /**
+      * Whether the key handler is disposed.
+      */
+    @JSName("isDisposed")
+    def isDisposed_MBasicKeyHandler: Boolean = js.native
     
     /**
       * Handle the `'ArrowDown'` key press for the data grid.

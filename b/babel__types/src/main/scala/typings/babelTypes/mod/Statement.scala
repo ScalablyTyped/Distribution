@@ -119,7 +119,7 @@ object Statement {
   }
   
   inline def DeclareInterface_(body: ObjectTypeAnnotation_, id: Identifier_): typings.babelTypes.mod.DeclareInterface_ = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], end = null, implements = null, innerComments = null, leadingComments = null, loc = null, mixins = null, start = null, trailingComments = null, typeParameters = null)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("DeclareInterface")
     __obj.updateDynamic("extends")(null)
     __obj.asInstanceOf[typings.babelTypes.mod.DeclareInterface_]
@@ -242,7 +242,7 @@ object Statement {
   }
   
   inline def InterfaceDeclaration_(body: ObjectTypeAnnotation_, id: Identifier_): typings.babelTypes.mod.InterfaceDeclaration_ = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], end = null, implements = null, innerComments = null, leadingComments = null, loc = null, mixins = null, start = null, trailingComments = null, typeParameters = null)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("InterfaceDeclaration")
     __obj.updateDynamic("extends")(null)
     __obj.asInstanceOf[typings.babelTypes.mod.InterfaceDeclaration_]

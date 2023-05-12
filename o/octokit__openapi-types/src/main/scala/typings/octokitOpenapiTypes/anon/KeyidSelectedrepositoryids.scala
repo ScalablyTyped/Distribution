@@ -13,7 +13,7 @@ trait KeyidSelectedrepositoryids extends StObject {
   var key_id: String
   
   /** @description An array of repository ids that can access the user secret. You can manage the list of selected repositories using the [List selected repositories for a user secret](https://docs.github.com/rest/reference/codespaces#list-selected-repositories-for-a-user-secret), [Set selected repositories for a user secret](https://docs.github.com/rest/reference/codespaces#set-selected-repositories-for-a-user-secret), and [Remove a selected repository from a user secret](https://docs.github.com/rest/reference/codespaces#remove-a-selected-repository-from-a-user-secret) endpoints. */
-  var selected_repository_ids: js.UndefOr[js.Array[String]] = js.undefined
+  var selected_repository_ids: js.UndefOr[js.Array[Double | String]] = js.undefined
 }
 object KeyidSelectedrepositoryids {
   
@@ -31,10 +31,10 @@ object KeyidSelectedrepositoryids {
     
     inline def setKey_id(value: String): Self = StObject.set(x, "key_id", value.asInstanceOf[js.Any])
     
-    inline def setSelected_repository_ids(value: js.Array[String]): Self = StObject.set(x, "selected_repository_ids", value.asInstanceOf[js.Any])
+    inline def setSelected_repository_ids(value: js.Array[Double | String]): Self = StObject.set(x, "selected_repository_ids", value.asInstanceOf[js.Any])
     
     inline def setSelected_repository_idsUndefined: Self = StObject.set(x, "selected_repository_ids", js.undefined)
     
-    inline def setSelected_repository_idsVarargs(value: String*): Self = StObject.set(x, "selected_repository_ids", js.Array(value*))
+    inline def setSelected_repository_idsVarargs(value: (Double | String)*): Self = StObject.set(x, "selected_repository_ids", js.Array(value*))
   }
 }

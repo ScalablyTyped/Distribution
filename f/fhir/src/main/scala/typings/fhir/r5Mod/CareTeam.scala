@@ -68,7 +68,7 @@ trait CareTeam
   var status: js.UndefOr[proposed | active | suspended | inactive | `entered-in-error`] = js.undefined
   
   /**
-    * Identifies the patient or group whose intended care is handled by the team.
+    * Use Group for care provision to all members of the group (e.g. group therapy).  Use Patient for care provision to an individual patient.
     */
   var subject: js.UndefOr[Reference] = js.undefined
   

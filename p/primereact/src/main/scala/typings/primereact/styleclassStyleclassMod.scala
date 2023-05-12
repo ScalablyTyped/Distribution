@@ -1,5 +1,9 @@
 package typings.primereact
 
+import typings.primereact.primereactStrings.`@grandparent`
+import typings.primereact.primereactStrings.`@next`
+import typings.primereact.primereactStrings.`@parent`
+import typings.primereact.primereactStrings.`@prev`
 import typings.react.mod.Component
 import typings.react.mod.MutableRefObject
 import typings.react.mod.ReactNode
@@ -16,37 +20,80 @@ object styleclassStyleclassMod {
     def this(props: StyleClassProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: StyleClassProps, context: Any) = this()
     
+    /**
+      * Used to get container element.
+      * @return {HTMLElement} Container element
+      */
     def getElement(): HTMLElement = js.native
     
+    /**
+      * Used to get target element.
+      * @return {HTMLElement} Container element
+      */
     def getTarget(): HTMLElement = js.native
   }
   
   trait StyleClassProps extends StObject {
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * Style class to add during enter animation.
+      */
     var enterActiveClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Style class to add when item begins to get displayed.
+      */
     var enterClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Style class to add when item begins to get displayed.
+      */
     var enterToClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Whether to trigger leave animation when outside of the element is clicked.
+      * @defaultValue false
+      */
     var hideOnOutsideClick: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Style class to add during leave animation.
+      */
     var leaveActiveClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Style class to add when item begins to get hidden.
+      */
     var leaveClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Style class to add when leave animation is completed.
+      */
     var leaveToClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * A React reference to DOM element that need to specify. Required.
+      */
     var nodeRef: MutableRefObject[ReactNode]
     
-    var selector: js.UndefOr[StyleClassSelectorType] = js.undefined
+    /**
+      * Selector to define the target element.
+      */
+    var selector: js.UndefOr[`@next` | `@prev` | `@parent` | `@grandparent` | String] = js.undefined
     
+    /**
+      * Adds or removes a class when no enter-leave animation is required.
+      */
     var toggleClassName: js.UndefOr[String] = js.undefined
   }
   object StyleClassProps {
@@ -93,7 +140,7 @@ object styleclassStyleclassMod {
       
       inline def setNodeRef(value: MutableRefObject[ReactNode]): Self = StObject.set(x, "nodeRef", value.asInstanceOf[js.Any])
       
-      inline def setSelector(value: StyleClassSelectorType): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: `@next` | `@prev` | `@parent` | `@grandparent` | String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
       inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
       
@@ -102,15 +149,4 @@ object styleclassStyleclassMod {
       inline def setToggleClassNameUndefined: Self = StObject.set(x, "toggleClassName", js.undefined)
     }
   }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.`@next`
-    - typings.primereact.primereactStrings.`@prev`
-    - typings.primereact.primereactStrings.`@parent`
-    - typings.primereact.primereactStrings.`@grandparent`
-    - java.lang.String
-  */
-  type StyleClassSelectorType = _StyleClassSelectorType | String
-  
-  trait _StyleClassSelectorType extends StObject
 }

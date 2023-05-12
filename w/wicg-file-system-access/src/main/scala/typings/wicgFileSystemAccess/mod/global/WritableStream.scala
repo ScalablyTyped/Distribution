@@ -4,6 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+// type WriteParams =
+//     | { type: 'write'; position?: number | undefined; data: BufferSource | Blob | string }
+//     | { type: 'seek'; position: number }
+//     | { type: 'truncate'; size: number };
+// type FileSystemWriteChunkType = BufferSource | Blob | string | WriteParams;
 // TODO: remove this once https://github.com/microsoft/TSJS-lib-generator/issues/881 is fixed.
 // Native File System API especially needs this method.
 trait WritableStream extends StObject {

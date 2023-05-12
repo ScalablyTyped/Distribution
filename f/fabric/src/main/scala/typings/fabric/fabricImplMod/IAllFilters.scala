@@ -3,12 +3,14 @@ package typings.fabric.fabricImplMod
 import typings.fabric.anon.FromObject
 import typings.fabric.anon.Instantiable
 import typings.fabric.anon.InstantiableFromObject
+import typings.fabric.anon.InstantiableIBlurFilter
 import typings.fabric.anon.InstantiableIBrightnessFilter
 import typings.fabric.anon.InstantiableIColorMatrix
 import typings.fabric.anon.InstantiableIContrastFilter
 import typings.fabric.anon.InstantiableIConvoluteFilter
 import typings.fabric.anon.InstantiableIGradientTransparencyFilter
 import typings.fabric.anon.InstantiableIGrayscaleFilter
+import typings.fabric.anon.InstantiableIHueRotationFilter
 import typings.fabric.anon.InstantiableIInvertFilter
 import typings.fabric.anon.InstantiableIMaskFilter
 import typings.fabric.anon.InstantiableIMultiplyFilter
@@ -35,6 +37,8 @@ trait IAllFilters extends StObject {
   
   var BlendImage: InstantiableFromObject
   
+  var Blur: InstantiableIBlurFilter
+  
   var Brightness: InstantiableIBrightnessFilter
   
   var ColorMatrix: InstantiableIColorMatrix
@@ -46,6 +50,8 @@ trait IAllFilters extends StObject {
   var GradientTransparency: InstantiableIGradientTransparencyFilter
   
   var Grayscale: InstantiableIGrayscaleFilter
+  
+  var HueRotation: InstantiableIHueRotationFilter
   
   var Invert: InstantiableIInvertFilter
   
@@ -75,12 +81,14 @@ object IAllFilters {
     BaseFilter: Instantiable,
     BlendColor: FromObject,
     BlendImage: InstantiableFromObject,
+    Blur: InstantiableIBlurFilter,
     Brightness: InstantiableIBrightnessFilter,
     ColorMatrix: InstantiableIColorMatrix,
     Contrast: InstantiableIContrastFilter,
     Convolute: InstantiableIConvoluteFilter,
     GradientTransparency: InstantiableIGradientTransparencyFilter,
     Grayscale: InstantiableIGrayscaleFilter,
+    HueRotation: InstantiableIHueRotationFilter,
     Invert: InstantiableIInvertFilter,
     Mask: InstantiableIMaskFilter,
     Multiply: InstantiableIMultiplyFilter,
@@ -93,7 +101,7 @@ object IAllFilters {
     Sepia2: InstantiableISepia2Filter,
     Tint: InstantiableITintFilter
   ): IAllFilters = {
-    val __obj = js.Dynamic.literal(BaseFilter = BaseFilter.asInstanceOf[js.Any], BlendColor = BlendColor.asInstanceOf[js.Any], BlendImage = BlendImage.asInstanceOf[js.Any], Brightness = Brightness.asInstanceOf[js.Any], ColorMatrix = ColorMatrix.asInstanceOf[js.Any], Contrast = Contrast.asInstanceOf[js.Any], Convolute = Convolute.asInstanceOf[js.Any], GradientTransparency = GradientTransparency.asInstanceOf[js.Any], Grayscale = Grayscale.asInstanceOf[js.Any], Invert = Invert.asInstanceOf[js.Any], Mask = Mask.asInstanceOf[js.Any], Multiply = Multiply.asInstanceOf[js.Any], Noise = Noise.asInstanceOf[js.Any], Pixelate = Pixelate.asInstanceOf[js.Any], RemoveWhite = RemoveWhite.asInstanceOf[js.Any], Resize = Resize.asInstanceOf[js.Any], Saturation = Saturation.asInstanceOf[js.Any], Sepia = Sepia.asInstanceOf[js.Any], Sepia2 = Sepia2.asInstanceOf[js.Any], Tint = Tint.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(BaseFilter = BaseFilter.asInstanceOf[js.Any], BlendColor = BlendColor.asInstanceOf[js.Any], BlendImage = BlendImage.asInstanceOf[js.Any], Blur = Blur.asInstanceOf[js.Any], Brightness = Brightness.asInstanceOf[js.Any], ColorMatrix = ColorMatrix.asInstanceOf[js.Any], Contrast = Contrast.asInstanceOf[js.Any], Convolute = Convolute.asInstanceOf[js.Any], GradientTransparency = GradientTransparency.asInstanceOf[js.Any], Grayscale = Grayscale.asInstanceOf[js.Any], HueRotation = HueRotation.asInstanceOf[js.Any], Invert = Invert.asInstanceOf[js.Any], Mask = Mask.asInstanceOf[js.Any], Multiply = Multiply.asInstanceOf[js.Any], Noise = Noise.asInstanceOf[js.Any], Pixelate = Pixelate.asInstanceOf[js.Any], RemoveWhite = RemoveWhite.asInstanceOf[js.Any], Resize = Resize.asInstanceOf[js.Any], Saturation = Saturation.asInstanceOf[js.Any], Sepia = Sepia.asInstanceOf[js.Any], Sepia2 = Sepia2.asInstanceOf[js.Any], Tint = Tint.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAllFilters]
   }
   
@@ -106,6 +114,8 @@ object IAllFilters {
     
     inline def setBlendImage(value: InstantiableFromObject): Self = StObject.set(x, "BlendImage", value.asInstanceOf[js.Any])
     
+    inline def setBlur(value: InstantiableIBlurFilter): Self = StObject.set(x, "Blur", value.asInstanceOf[js.Any])
+    
     inline def setBrightness(value: InstantiableIBrightnessFilter): Self = StObject.set(x, "Brightness", value.asInstanceOf[js.Any])
     
     inline def setColorMatrix(value: InstantiableIColorMatrix): Self = StObject.set(x, "ColorMatrix", value.asInstanceOf[js.Any])
@@ -117,6 +127,8 @@ object IAllFilters {
     inline def setGradientTransparency(value: InstantiableIGradientTransparencyFilter): Self = StObject.set(x, "GradientTransparency", value.asInstanceOf[js.Any])
     
     inline def setGrayscale(value: InstantiableIGrayscaleFilter): Self = StObject.set(x, "Grayscale", value.asInstanceOf[js.Any])
+    
+    inline def setHueRotation(value: InstantiableIHueRotationFilter): Self = StObject.set(x, "HueRotation", value.asInstanceOf[js.Any])
     
     inline def setInvert(value: InstantiableIInvertFilter): Self = StObject.set(x, "Invert", value.asInstanceOf[js.Any])
     

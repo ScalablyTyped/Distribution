@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UriHandler extends StObject {
   
   /**
-    * Handle the provided system-wide {@link Uri}.
-    *
-    * @see {@link window.registerUriHandler}.
-    */
+  		 * Handle the provided system-wide {@link Uri}.
+  		 *
+  		 * @see {@link window.registerUriHandler}.
+  		 */
   def handleUri(uri: Uri): ProviderResult[Unit]
 }
 object UriHandler {

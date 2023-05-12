@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 inline def apply[Type, Props, Container, Instance, TextInstance, SuspenseInstance, HydratableInstance, PublicInstance, HostContext, UpdatePayload, ChildSet, TimeoutHandle, NoTimeout](
   config: HostConfig[
-  // tslint:disable:no-unnecessary-generics
+  /* eslint-disable no-unnecessary-generics */
 Type, 
   Props, 
   Container, 

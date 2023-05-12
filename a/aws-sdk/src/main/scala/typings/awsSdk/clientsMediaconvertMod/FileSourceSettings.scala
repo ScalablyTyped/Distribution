@@ -12,6 +12,11 @@ trait FileSourceSettings extends StObject {
   var Convert608To708: js.UndefOr[FileSourceConvert608To708] = js.undefined
   
   /**
+    * Choose the presentation style of your input SCC captions. To use the same presentation style as your input: Keep the default value, Disabled. To convert paint-on captions to pop-on: Choose Enabled. We also recommend that you choose Enabled if you notice additional repeated lines in your output captions.
+    */
+  var ConvertPaintToPop: js.UndefOr[CaptionSourceConvertPaintOnToPopOn] = js.undefined
+  
+  /**
     * Ignore this setting unless your input captions format is SCC. To have the service compensate for differing frame rates between your input captions and input video, specify the frame rate of the captions file. Specify this value as a fraction. When you work directly in your JSON job specification, use the settings framerateNumerator and framerateDenominator. For example, you might specify 24 / 1 for 24 fps, 25 / 1 for 25 fps, 24000 / 1001 for 23.976 fps, or 30000 / 1001 for 29.97 fps.
     */
   var Framerate: js.UndefOr[CaptionSourceFramerate] = js.undefined
@@ -46,6 +51,10 @@ object FileSourceSettings {
     inline def setConvert608To708(value: FileSourceConvert608To708): Self = StObject.set(x, "Convert608To708", value.asInstanceOf[js.Any])
     
     inline def setConvert608To708Undefined: Self = StObject.set(x, "Convert608To708", js.undefined)
+    
+    inline def setConvertPaintToPop(value: CaptionSourceConvertPaintOnToPopOn): Self = StObject.set(x, "ConvertPaintToPop", value.asInstanceOf[js.Any])
+    
+    inline def setConvertPaintToPopUndefined: Self = StObject.set(x, "ConvertPaintToPop", js.undefined)
     
     inline def setFramerate(value: CaptionSourceFramerate): Self = StObject.set(x, "Framerate", value.asInstanceOf[js.Any])
     

@@ -1,15 +1,17 @@
 package typings.openui5
 
+import typings.openui5.anon.Busy
 import typings.openui5.anon.CellControl
 import typings.openui5.anon.ColumnAdded
 import typings.openui5.anon.ColumnIndex
 import typings.openui5.anon.ColumnValue
+import typings.openui5.anon.FirstVisibleRow
 import typings.openui5.anon.NewPos
 import typings.openui5.anon.NewVisible
 import typings.openui5.anon.RowContext
 import typings.openui5.anon.Width
-import typings.openui5.anon.`3`
-import typings.openui5.anon.`4`
+import typings.openui5.anon.`5`
+import typings.openui5.anon.`6`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -1491,7 +1493,7 @@ object sapUiTableTableMod {
     def destroyRows(): this.type = js.native
     
     /**
-      * @deprecated (since 1.72) - Use the `extension` aggregation instead.
+      * @deprecated (since 1.72) - Use, for example, a `sap.m.Title` control in the `extension` aggregation instead.
       *
       * Destroys the title in the aggregation {@link #getTitle title}.
       *
@@ -1983,6 +1985,7 @@ object sapUiTableTableMod {
     
     /**
       * @SINCE 1.54
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:beforeOpenContextMenu beforeOpenContextMenu} to attached listeners.
       *
@@ -1999,6 +2002,7 @@ object sapUiTableTableMod {
     
     /**
       * @SINCE 1.37.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:busyStateChanged busyStateChanged} to attached listeners.
       *
@@ -2008,10 +2012,11 @@ object sapUiTableTableMod {
     def fireBusyStateChanged(/**
       * Parameters to pass along with the event
       */
-    mParameters: js.Object): this.type = js.native
+    mParameters: Busy): this.type = js.native
     
     /**
       * @SINCE 1.21.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:cellClick cellClick} to attached listeners.
       *
@@ -2029,6 +2034,7 @@ object sapUiTableTableMod {
     /**
       * @SINCE 1.21.0
       * @deprecated (since 1.54) - replaced by `beforeOpenContextMenu`.
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:cellContextmenu cellContextmenu} to attached listeners.
       *
@@ -2045,6 +2051,7 @@ object sapUiTableTableMod {
     
     /**
       * @SINCE 1.21.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:columnFreeze columnFreeze} to attached listeners.
       *
@@ -2057,9 +2064,11 @@ object sapUiTableTableMod {
     def fireColumnFreeze(/**
       * Parameters to pass along with the event
       */
-    mParameters: `3`): Boolean = js.native
+    mParameters: `5`): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:columnMove columnMove} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -2074,6 +2083,8 @@ object sapUiTableTableMod {
     mParameters: NewPos): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:columnResize columnResize} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -2088,6 +2099,8 @@ object sapUiTableTableMod {
     mParameters: Width): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:columnSelect columnSelect} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -2099,9 +2112,11 @@ object sapUiTableTableMod {
     def fireColumnSelect(/**
       * Parameters to pass along with the event
       */
-    mParameters: `3`): Boolean = js.native
+    mParameters: `5`): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:columnVisibility columnVisibility} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -2117,6 +2132,7 @@ object sapUiTableTableMod {
     
     /**
       * @SINCE 1.23.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:customFilter customFilter} to attached listeners.
       *
@@ -2126,9 +2142,11 @@ object sapUiTableTableMod {
     def fireCustomFilter(/**
       * Parameters to pass along with the event
       */
-    mParameters: js.Object): this.type = js.native
+    mParameters: ColumnValue): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:filter filter} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -2144,6 +2162,7 @@ object sapUiTableTableMod {
     
     /**
       * @SINCE 1.37.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:firstVisibleRowChanged firstVisibleRowChanged} to attached listeners.
       *
@@ -2153,9 +2172,11 @@ object sapUiTableTableMod {
     def fireFirstVisibleRowChanged(/**
       * Parameters to pass along with the event
       */
-    mParameters: js.Object): this.type = js.native
+    mParameters: FirstVisibleRow): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:group group} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -2167,10 +2188,11 @@ object sapUiTableTableMod {
     def fireGroup(/**
       * Parameters to pass along with the event
       */
-    mParameters: `3`): Boolean = js.native
+    mParameters: `5`): Boolean = js.native
     
     /**
       * @SINCE 1.60
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:paste paste} to attached listeners.
       *
@@ -2183,9 +2205,11 @@ object sapUiTableTableMod {
     def firePaste(/**
       * Parameters to pass along with the event
       */
-    mParameters: `4`): Boolean = js.native
+    mParameters: `6`): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:rowSelectionChange rowSelectionChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -2198,6 +2222,7 @@ object sapUiTableTableMod {
     
     /**
       * @SINCE 1.86
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:rowsUpdated rowsUpdated} to attached listeners.
       *
@@ -2210,6 +2235,8 @@ object sapUiTableTableMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:sort sort} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -2398,7 +2425,7 @@ object sapUiTableTableMod {
     def getEnableCustomFilter(): Boolean = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.28) - This feature has a limited functionality.
+      * @deprecated (since 1.110) - this feature has a limited functionality and should not be used anymore.
       *
       * Gets current value of property {@link #getEnableGrouping enableGrouping}.
       *
@@ -2639,6 +2666,12 @@ object sapUiTableTableMod {
       * of rows can be defined with the {@link sap.ui.table.Table#setRowActionTemplate rowActionTemplate} aggregation
       * of the table. Furthermore, row-specific settings can be defined with the {@link sap.ui.table.Table#setRowSettingsTemplate
       * rowSettingsTemplate} aggregation of the table.
+      *
+      * **Note:** During the binding of rows, the (exact) count needs to be available in the table and has to
+      * be requested. If the count is not requested, this may lead to unexpected behavior in the table, such
+      * as scrolling, accessibility, or keyboard issues. Please refer to the documentation of the used model
+      * for information on requesting the count, for example, {@link sap.ui.model.odata.v2.ODataModel} or {@link
+      * sap.ui.model.odata.v4.ODataModel}.
       */
     def getRows(): js.Array[typings.openui5.sapUiTableRowMod.default] = js.native
     
@@ -2753,7 +2786,7 @@ object sapUiTableTableMod {
     def getThreshold(): int = js.native
     
     /**
-      * @deprecated (since 1.72) - Use the `extension` aggregation instead.
+      * @deprecated (since 1.72) - Use, for example, a `sap.m.Title` control in the `extension` aggregation instead.
       *
       * Gets content of aggregation {@link #getTitle title}.
       *
@@ -3316,7 +3349,7 @@ object sapUiTableTableMod {
     bEnableCustomFilter: Boolean): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.28) - This feature has a limited functionality.
+      * @deprecated (since 1.110) - this feature has a limited functionality and should not be used anymore.
       *
       * Sets a new value for property {@link #getEnableGrouping enableGrouping}.
       *
@@ -3757,7 +3790,7 @@ object sapUiTableTableMod {
       */
     vTitle: String): this.type = js.native
     /**
-      * @deprecated (since 1.72) - Use the `extension` aggregation instead.
+      * @deprecated (since 1.72) - Use, for example, a `sap.m.Title` control in the `extension` aggregation instead.
       *
       * Sets the aggregated {@link #getTitle title}.
       *
@@ -4111,7 +4144,7 @@ object sapUiTableTableMod {
       ] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.28) - This feature has a limited functionality.
+      * @deprecated (since 1.110) - this feature has a limited functionality and should not be used anymore.
       *
       * Enables or disables grouping. If grouping is enabled, the table is grouped by the column which is defined
       * in the `groupBy` association.
@@ -4329,6 +4362,12 @@ object sapUiTableTableMod {
       * of rows can be defined with the {@link sap.ui.table.Table#setRowActionTemplate rowActionTemplate} aggregation
       * of the table. Furthermore, row-specific settings can be defined with the {@link sap.ui.table.Table#setRowSettingsTemplate
       * rowSettingsTemplate} aggregation of the table.
+      *
+      * **Note:** During the binding of rows, the (exact) count needs to be available in the table and has to
+      * be requested. If the count is not requested, this may lead to unexpected behavior in the table, such
+      * as scrolling, accessibility, or keyboard issues. Please refer to the documentation of the used model
+      * for information on requesting the count, for example, {@link sap.ui.model.odata.v2.ODataModel} or {@link
+      * sap.ui.model.odata.v4.ODataModel}.
       */
     var rows: js.UndefOr[
         js.Array[typings.openui5.sapUiTableRowMod.default] | typings.openui5.sapUiTableRowMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)
@@ -4421,7 +4460,7 @@ object sapUiTableTableMod {
     var threshold: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @deprecated (since 1.72) - Use the `extension` aggregation instead.
+      * @deprecated (since 1.72) - Use, for example, a `sap.m.Title` control in the `extension` aggregation instead.
       *
       * Control or text of title section of the Table (if not set it will be hidden)
       */

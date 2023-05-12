@@ -7,63 +7,68 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CommentThread extends StObject {
   
   /**
-    * Whether the thread supports reply.
-    * Defaults to true.
-    */
+  		 * Whether the thread supports reply.
+  		 * Defaults to true.
+  		 */
   var canReply: Boolean
   
   /**
-    * Whether the thread should be collapsed or expanded when opening the document.
-    * Defaults to Collapsed.
-    */
+  		 * Whether the thread should be collapsed or expanded when opening the document.
+  		 * Defaults to Collapsed.
+  		 */
   var collapsibleState: CommentThreadCollapsibleState
   
   /**
-    * The ordered comments of the thread.
-    */
+  		 * The ordered comments of the thread.
+  		 */
   var comments: js.Array[Comment]
   
   /**
-    * Context value of the comment thread. This can be used to contribute thread specific actions.
-    * For example, a comment thread is given a context value as `editable`. When contributing actions to `comments/commentThread/title`
-    * using `menus` extension point, you can specify context value for key `commentThread` in `when` expression like `commentThread == editable`.
-    * ```json
-    * "contributes": {
-    *   "menus": {
-    *     "comments/commentThread/title": [
-    *       {
-    *         "command": "extension.deleteCommentThread",
-    *         "when": "commentThread == editable"
-    *       }
-    *     ]
-    *   }
-    * }
-    * ```
-    * This will show action `extension.deleteCommentThread` only for comment threads with `contextValue` is `editable`.
-    */
+  		 * Context value of the comment thread. This can be used to contribute thread specific actions.
+  		 * For example, a comment thread is given a context value as `editable`. When contributing actions to `comments/commentThread/title`
+  		 * using `menus` extension point, you can specify context value for key `commentThread` in `when` expression like `commentThread == editable`.
+  		 * ```json
+  		 * "contributes": {
+  		 *   "menus": {
+  		 *     "comments/commentThread/title": [
+  		 *       {
+  		 *         "command": "extension.deleteCommentThread",
+  		 *         "when": "commentThread == editable"
+  		 *       }
+  		 *     ]
+  		 *   }
+  		 * }
+  		 * ```
+  		 * This will show action `extension.deleteCommentThread` only for comment threads with `contextValue` is `editable`.
+  		 */
   var contextValue: js.UndefOr[String] = js.undefined
   
   /**
-    * Dispose this comment thread.
-    *
-    * Once disposed, this comment thread will be removed from visible editors and Comment Panel when appropriate.
-    */
+  		 * Dispose this comment thread.
+  		 *
+  		 * Once disposed, this comment thread will be removed from visible editors and Comment Panel when appropriate.
+  		 */
   def dispose(): Unit
   
   /**
-    * The optional human-readable label describing the {@link CommentThread Comment Thread}
-    */
+  		 * The optional human-readable label describing the {@link CommentThread Comment Thread}
+  		 */
   var label: js.UndefOr[String] = js.undefined
   
   /**
-    * The range the comment thread is located within the document. The thread icon will be shown
-    * at the last line of the range.
-    */
+  		 * The range the comment thread is located within the document. The thread icon will be shown
+  		 * at the last line of the range.
+  		 */
   var range: Range
   
   /**
-    * The uri of the document the thread has been created on.
-    */
+  		 * The optional state of a comment thread, which may affect how the comment is displayed.
+  		 */
+  var state: js.UndefOr[CommentThreadState] = js.undefined
+  
+  /**
+  		 * The uri of the document the thread has been created on.
+  		 */
   val uri: Uri
 }
 object CommentThread {
@@ -102,6 +107,10 @@ object CommentThread {
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    
+    inline def setState(value: CommentThreadState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     inline def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }

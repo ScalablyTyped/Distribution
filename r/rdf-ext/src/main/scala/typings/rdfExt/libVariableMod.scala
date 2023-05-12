@@ -8,20 +8,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libVariableMod {
   
-  // tslint:disable-next-line:no-unnecessary-class
-  @JSImport("rdf-ext/lib/Variable", JSImport.Namespace)
+  @JSImport("rdf-ext/lib/Variable", JSImport.Default)
   @js.native
-  open class ^ protected ()
-    extends StObject
-       with VariableExt {
+  open class default protected () extends VariableExt {
     def this(name: String) = this()
   }
   
-  // tslint:disable-next-line:no-unnecessary-class
+  @JSImport("rdf-ext/lib/Variable", "VariableExt")
   @js.native
-  trait VariableExt
+  open class VariableExt protected ()
     extends StObject
        with Variable {
+    def this(name: String) = this()
     
     def toCanonical(): String = js.native
     

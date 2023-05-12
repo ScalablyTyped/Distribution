@@ -12,7 +12,7 @@ open class HighlightsPostProcess protected ()
   extends typings.babylonjs.indexMod.HighlightsPostProcess {
   /**
     * Extracts highlights from the image
-    * @see https://doc.babylonjs.com/how_to/how_to_use_postprocesses
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/postProcesses/usePostProcesses
     * @param name The name of the effect.
     * @param options The required width/height ratio to downsize to before computing the render pass.
     * @param camera The camera to apply the render pass to.

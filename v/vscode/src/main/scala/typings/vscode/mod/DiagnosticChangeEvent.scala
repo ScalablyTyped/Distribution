@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DiagnosticChangeEvent extends StObject {
   
   /**
-    * An array of resources for which diagnostics have changed.
-    */
+  		 * An array of resources for which diagnostics have changed.
+  		 */
   val uris: js.Array[Uri]
 }
 object DiagnosticChangeEvent {

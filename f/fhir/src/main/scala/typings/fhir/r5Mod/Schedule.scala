@@ -13,6 +13,8 @@ trait Schedule
   
   var _comment: js.UndefOr[Element] = js.undefined
   
+  var _name: js.UndefOr[Element] = js.undefined
+  
   /**
     * This element is labeled as a modifier because it may be used to mark that the resource was created in error.
     */
@@ -34,6 +36,11 @@ trait Schedule
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
+    * This MAY be used to describe what the schedule is for where it is clearer than just the name of the single actor.
+    */
+  var name: js.UndefOr[String] = js.undefined
+  
+  /**
     * The period of time that the slots that reference this Schedule resource cover (even if none exist). These  cover the amount of time that an organization's planning horizon; the interval for which they are currently accepting appointments. This does not define a "template" for planning outside these dates.
     */
   var planningHorizon: js.UndefOr[Period] = js.undefined
@@ -50,7 +57,7 @@ trait Schedule
   /**
     * The specific service that is to be performed during this appointment.
     */
-  var serviceType: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var serviceType: js.UndefOr[js.Array[CodeableReference]] = js.undefined
   
   /**
     * The specialty of a practitioner that would be required to perform the service requested in this appointment.
@@ -85,6 +92,10 @@ object Schedule {
     
     inline def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value*))
     
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
     inline def setPlanningHorizon(value: Period): Self = StObject.set(x, "planningHorizon", value.asInstanceOf[js.Any])
     
     inline def setPlanningHorizonUndefined: Self = StObject.set(x, "planningHorizon", js.undefined)
@@ -97,11 +108,11 @@ object Schedule {
     
     inline def setServiceCategoryVarargs(value: CodeableConcept*): Self = StObject.set(x, "serviceCategory", js.Array(value*))
     
-    inline def setServiceType(value: js.Array[CodeableConcept]): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
+    inline def setServiceType(value: js.Array[CodeableReference]): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
     
     inline def setServiceTypeUndefined: Self = StObject.set(x, "serviceType", js.undefined)
     
-    inline def setServiceTypeVarargs(value: CodeableConcept*): Self = StObject.set(x, "serviceType", js.Array(value*))
+    inline def setServiceTypeVarargs(value: CodeableReference*): Self = StObject.set(x, "serviceType", js.Array(value*))
     
     inline def setSpecialty(value: js.Array[CodeableConcept]): Self = StObject.set(x, "specialty", value.asInstanceOf[js.Any])
     
@@ -116,5 +127,9 @@ object Schedule {
     inline def set_comment(value: Element): Self = StObject.set(x, "_comment", value.asInstanceOf[js.Any])
     
     inline def set_commentUndefined: Self = StObject.set(x, "_comment", js.undefined)
+    
+    inline def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
+    
+    inline def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
   }
 }

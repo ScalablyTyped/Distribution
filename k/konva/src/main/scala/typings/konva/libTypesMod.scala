@@ -1,5 +1,25 @@
 package typings.konva
 
+import typings.konva.konvaStrings.A
+import typings.konva.konvaStrings.C
+import typings.konva.konvaStrings.H
+import typings.konva.konvaStrings.L
+import typings.konva.konvaStrings.M
+import typings.konva.konvaStrings.Q
+import typings.konva.konvaStrings.S
+import typings.konva.konvaStrings.T
+import typings.konva.konvaStrings.V
+import typings.konva.konvaStrings.Z
+import typings.konva.konvaStrings.a_
+import typings.konva.konvaStrings.c_
+import typings.konva.konvaStrings.h_
+import typings.konva.konvaStrings.l_
+import typings.konva.konvaStrings.m_
+import typings.konva.konvaStrings.q_
+import typings.konva.konvaStrings.s_
+import typings.konva.konvaStrings.t_
+import typings.konva.konvaStrings.v_
+import typings.konva.konvaStrings.z_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -196,6 +216,43 @@ object libTypesMod {
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
       inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait PathSegment extends StObject {
+    
+    var command: m_ | M | l_ | L | v_ | V | h_ | H | z_ | Z | c_ | C | q_ | Q | t_ | T | s_ | S | a_ | A
+    
+    var pathLength: Double
+    
+    var points: js.Array[Vector2d]
+    
+    var start: Vector2d
+  }
+  object PathSegment {
+    
+    inline def apply(
+      command: m_ | M | l_ | L | v_ | V | h_ | H | z_ | Z | c_ | C | q_ | Q | t_ | T | s_ | S | a_ | A,
+      pathLength: Double,
+      points: js.Array[Vector2d],
+      start: Vector2d
+    ): PathSegment = {
+      val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], pathLength = pathLength.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PathSegment]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathSegment] (val x: Self) extends AnyVal {
+      
+      inline def setCommand(value: m_ | M | l_ | L | v_ | V | h_ | H | z_ | Z | c_ | C | q_ | Q | t_ | T | s_ | S | a_ | A): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      
+      inline def setPathLength(value: Double): Self = StObject.set(x, "pathLength", value.asInstanceOf[js.Any])
+      
+      inline def setPoints(value: js.Array[Vector2d]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+      
+      inline def setPointsVarargs(value: Vector2d*): Self = StObject.set(x, "points", js.Array(value*))
+      
+      inline def setStart(value: Vector2d): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
   

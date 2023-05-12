@@ -31,7 +31,7 @@ object libComponentsCalloutMod {
     def this(props: ICalloutProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ICalloutProps, context: Any) = this()
   }

@@ -9,7 +9,7 @@ import typings.i18next.mod.i18n
 import typings.react.mod.ComponentType
 import typings.react.mod.FunctionComponentElement
 import typings.react.mod.ReactElement
-import typings.reactI18next.mod.TransChild
+import typings.reactI18next.transWithoutContextMod.TransChild
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,7 +46,13 @@ object anon {
     
     var shouldUnescape: js.UndefOr[Boolean] = js.undefined
     
-    var t: js.UndefOr[TFunction[N, TKPrefix]] = js.undefined
+    var t: js.UndefOr[
+        TFunction[
+          N, 
+          TKPrefix, 
+          /* import warning: importer.ImportType#apply Failed type conversion: N extends null ? i18next.i18next.DefaultNamespace : N */ js.Any
+        ]
+      ] = js.undefined
     
     // used in React.createElement if not null
     var tOptions: js.UndefOr[js.Object] = js.undefined
@@ -111,7 +117,13 @@ object anon {
       
       inline def setShouldUnescapeUndefined: Self = StObject.set(x, "shouldUnescape", js.undefined)
       
-      inline def setT(value: TFunction[N, TKPrefix]): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+      inline def setT(
+        value: TFunction[
+              N, 
+              TKPrefix, 
+              /* import warning: importer.ImportType#apply Failed type conversion: N extends null ? i18next.i18next.DefaultNamespace : N */ js.Any
+            ]
+      ): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
       
       inline def setTOptions(value: js.Object): Self = StObject.set(x, "tOptions", value.asInstanceOf[js.Any])
       
@@ -131,11 +143,23 @@ object anon {
     
     var ready: Boolean
     
-    var t: TFunction[N, TKPrefix]
+    var t: TFunction[
+        N, 
+        TKPrefix, 
+        /* import warning: importer.ImportType#apply Failed type conversion: N extends null ? i18next.i18next.DefaultNamespace : N */ js.Any
+      ]
   }
   object I18n {
     
-    inline def apply[N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix](i18n: i18n, ready: Boolean, t: TFunction[N, TKPrefix]): I18n[N, TKPrefix] = {
+    inline def apply[N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix](
+      i18n: i18n,
+      ready: Boolean,
+      t: TFunction[
+          N, 
+          TKPrefix, 
+          /* import warning: importer.ImportType#apply Failed type conversion: N extends null ? i18next.i18next.DefaultNamespace : N */ js.Any
+        ]
+    ): I18n[N, TKPrefix] = {
       val __obj = js.Dynamic.literal(i18n = i18n.asInstanceOf[js.Any], ready = ready.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
       __obj.asInstanceOf[I18n[N, TKPrefix]]
     }
@@ -147,7 +171,13 @@ object anon {
       
       inline def setReady(value: Boolean): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
       
-      inline def setT(value: TFunction[N, TKPrefix]): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+      inline def setT(
+        value: TFunction[
+              N, 
+              TKPrefix, 
+              /* import warning: importer.ImportType#apply Failed type conversion: N extends null ? i18next.i18next.DefaultNamespace : N */ js.Any
+            ]
+      ): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     }
   }
   

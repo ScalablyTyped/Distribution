@@ -17,17 +17,17 @@ trait Esam extends StObject {
   var AdAvailOffset: js.UndefOr[integerMinNegative1000Max1000] = js.undefined
   
   /**
-    * Password if credentials are required to access the POIS endpoint.  This is a reference to an AWS parameter store name from which the password can be retrieved.  AWS Parameter store format: "ssm://"
+    * Documentation update needed
     */
   var PasswordParam: js.UndefOr[string] = js.undefined
   
   /**
     * The URL of the signal conditioner endpoint on the Placement Opportunity Information System (POIS). MediaLive sends SignalProcessingEvents here when SCTE-35 messages are read.
     */
-  var PoisEndpoint: string
+  var PoisEndpoint: stringMax2048
   
   /**
-    * Username if credentials are required to access the POIS endpoint.  This can be either a plaintext username, or a reference to an AWS parameter store name from which the username can be retrieved.  AWS Parameter store format: "ssm://"
+    * Documentation update needed
     */
   var Username: js.UndefOr[string] = js.undefined
   
@@ -38,7 +38,7 @@ trait Esam extends StObject {
 }
 object Esam {
   
-  inline def apply(AcquisitionPointId: stringMax256, PoisEndpoint: string): Esam = {
+  inline def apply(AcquisitionPointId: stringMax256, PoisEndpoint: stringMax2048): Esam = {
     val __obj = js.Dynamic.literal(AcquisitionPointId = AcquisitionPointId.asInstanceOf[js.Any], PoisEndpoint = PoisEndpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[Esam]
   }
@@ -56,7 +56,7 @@ object Esam {
     
     inline def setPasswordParamUndefined: Self = StObject.set(x, "PasswordParam", js.undefined)
     
-    inline def setPoisEndpoint(value: string): Self = StObject.set(x, "PoisEndpoint", value.asInstanceOf[js.Any])
+    inline def setPoisEndpoint(value: stringMax2048): Self = StObject.set(x, "PoisEndpoint", value.asInstanceOf[js.Any])
     
     inline def setUsername(value: string): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     

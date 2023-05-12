@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.FontFeatureSettings
+import typings.csstype.mod.Property.AnimationDuration
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `99` extends StObject {
   
   var value: js.UndefOr[
-    FontFeatureSettings | (js.Array[
+    AnimationDuration[String] | (js.Array[
       (Extract[
-        js.UndefOr[FontFeatureSettings | js.Array[NonNullable[js.UndefOr[FontFeatureSettings]]]], 
+        js.UndefOr[
+          AnimationDuration[String] | js.Array[NonNullable[js.UndefOr[AnimationDuration[String]]]]
+        ], 
         String
-      ]) | NonNullable[js.UndefOr[FontFeatureSettings]]
+      ]) | NonNullable[js.UndefOr[AnimationDuration[String]]]
     ])
   ] = js.native
 }

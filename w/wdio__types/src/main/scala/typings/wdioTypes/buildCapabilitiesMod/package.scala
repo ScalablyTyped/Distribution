@@ -11,6 +11,16 @@ type AppiumXCUICommandTimeouts = StringDictionary[Any]
 
 type AppiumXCUISafariGlobalPreferences = StringDictionary[Any]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type JSONLike = {[property: string] : @wdio/types.@wdio/types/build/Capabilities.JSONLike} | std.Array<@wdio/types.@wdio/types/build/Capabilities.JSONLike> | string | number | boolean | null
+}}}
+to avoid circular code involving: 
+- @wdio/types.@wdio/types/build/Capabilities.JSONLike
+*/
+type JSONLike = StringDictionary[Any] | js.Array[Any] | String | Double | Boolean | Null
+
 /**
   * Chromium Edge
   */

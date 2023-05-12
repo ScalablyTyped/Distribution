@@ -1,6 +1,7 @@
 package typings.primereact
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.primereact.primereactStrings._empty
 import typings.primereact.primereactStrings.`additions removals`
 import typings.primereact.primereactStrings.`additions text`
 import typings.primereact.primereactStrings.`inline`
@@ -8,11 +9,16 @@ import typings.primereact.primereactStrings.`removals additions`
 import typings.primereact.primereactStrings.`removals text`
 import typings.primereact.primereactStrings.`text additions`
 import typings.primereact.primereactStrings.`text removals`
+import typings.primereact.primereactStrings.`use-credentials`
 import typings.primereact.primereactStrings.additions
 import typings.primereact.primereactStrings.all
+import typings.primereact.primereactStrings.anonymous
 import typings.primereact.primereactStrings.ascending
 import typings.primereact.primereactStrings.assertive
 import typings.primereact.primereactStrings.both
+import typings.primereact.primereactStrings.checkbox
+import typings.primereact.primereactStrings.chip
+import typings.primereact.primereactStrings.comma
 import typings.primereact.primereactStrings.copy
 import typings.primereact.primereactStrings.date
 import typings.primereact.primereactStrings.decimal
@@ -28,6 +34,7 @@ import typings.primereact.primereactStrings.grammar
 import typings.primereact.primereactStrings.grid
 import typings.primereact.primereactStrings.horizontal
 import typings.primereact.primereactStrings.inherit
+import typings.primereact.primereactStrings.lenient
 import typings.primereact.primereactStrings.link
 import typings.primereact.primereactStrings.list
 import typings.primereact.primereactStrings.listbox
@@ -35,6 +42,7 @@ import typings.primereact.primereactStrings.location
 import typings.primereact.primereactStrings.menu
 import typings.primereact.primereactStrings.mixed
 import typings.primereact.primereactStrings.move
+import typings.primereact.primereactStrings.multiple
 import typings.primereact.primereactStrings.next
 import typings.primereact.primereactStrings.no
 import typings.primereact.primereactStrings.none
@@ -50,8 +58,10 @@ import typings.primereact.primereactStrings.removals
 import typings.primereact.primereactStrings.search
 import typings.primereact.primereactStrings.self
 import typings.primereact.primereactStrings.send
+import typings.primereact.primereactStrings.single
 import typings.primereact.primereactStrings.spelling
 import typings.primereact.primereactStrings.step
+import typings.primereact.primereactStrings.strict
 import typings.primereact.primereactStrings.tel
 import typings.primereact.primereactStrings.text
 import typings.primereact.primereactStrings.time
@@ -60,6 +70,9 @@ import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.user
 import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.yes
+import typings.primereact.tsHelpersMod.FormEvent
+import typings.primereact.utilsUtilsMod.IconOptions
+import typings.primereact.utilsUtilsMod.IconType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -75,7 +88,6 @@ import typings.react.mod.DragEvent
 import typings.react.mod.DragEventHandler
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
-import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
 import typings.react.mod.HTMLInputTypeAttribute
 import typings.react.mod.Key
@@ -88,6 +100,7 @@ import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
+import typings.react.mod.Ref
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -99,6 +112,7 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
@@ -115,96 +129,46 @@ object treeselectTreeselectMod {
     def this(props: TreeSelectProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: TreeSelectProps, context: Any) = this()
     
+    /**
+      * Used to focus the component.
+      */
+    def focus(): Unit = js.native
+    
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
   }
   
-  type TreeSelectAppendToType = js.UndefOr[self | HTMLElement | Null]
+  /**
+    * Custom change event.
+    * @see {@link TreeSelectProps.onChange}
+    * @extends {FormEvent}
+    * @event
+    */
+  type TreeSelectChangeEvent = FormEvent[
+    String | TreeSelectSelectionKeysType | js.Array[TreeSelectSelectionKeysType], 
+    SyntheticEvent[Element, Event]
+  ]
   
-  trait TreeSelectChangeParams extends StObject {
-    
-    var originalEvent: SyntheticEvent[Element, Event]
-    
-    def preventDefault(): Unit
-    
-    def stopPropagation(): Unit
-    
-    var target: TreeSelectChangeTargetOptions
-    
-    var value: TreeSelectSelectionKeys
-  }
-  object TreeSelectChangeParams {
-    
-    inline def apply(
-      originalEvent: SyntheticEvent[Element, Event],
-      preventDefault: () => Unit,
-      stopPropagation: () => Unit,
-      target: TreeSelectChangeTargetOptions
-    ): TreeSelectChangeParams = {
-      val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any])
-      __obj.asInstanceOf[TreeSelectChangeParams]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: TreeSelectChangeParams] (val x: Self) extends AnyVal {
-      
-      inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
-      
-      inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
-      
-      inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
-      
-      inline def setTarget(value: TreeSelectChangeTargetOptions): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
-      
-      inline def setValue(value: TreeSelectSelectionKeys): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-      
-      inline def setValueNull: Self = StObject.set(x, "value", null)
-      
-      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
-      
-      inline def setValueVarargs(value: TreeSelectSelectionKeysType*): Self = StObject.set(x, "value", js.Array(value*))
-    }
-  }
-  
-  trait TreeSelectChangeTargetOptions extends StObject {
-    
-    var id: String
-    
-    var name: String
-    
-    var value: TreeSelectSelectionKeys
-  }
-  object TreeSelectChangeTargetOptions {
-    
-    inline def apply(id: String, name: String): TreeSelectChangeTargetOptions = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[TreeSelectChangeTargetOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: TreeSelectChangeTargetOptions] (val x: Self) extends AnyVal {
-      
-      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setValue(value: TreeSelectSelectionKeys): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-      
-      inline def setValueNull: Self = StObject.set(x, "value", null)
-      
-      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
-      
-      inline def setValueVarargs(value: TreeSelectSelectionKeysType*): Self = StObject.set(x, "value", js.Array(value*))
-    }
-  }
-  
+  /**
+    * Custom checkbox selection key type
+    */
   trait TreeSelectCheckboxSelectionKeyType extends StObject {
     
+    /**
+      * Whether the checkbox is checked or not.
+      */
     var checked: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Whether the checkbox is partially checked or not.
+      */
     var partialChecked: js.UndefOr[Boolean] = js.undefined
   }
   object TreeSelectCheckboxSelectionKeyType {
@@ -227,36 +191,35 @@ object treeselectTreeselectMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.comma
-    - typings.primereact.primereactStrings.chip
-  */
-  trait TreeSelectDisplayType extends StObject
-  object TreeSelectDisplayType {
+  /**
+    * Custom change event.
+    * @see {@link TreeSelectProps.onNodeCollapse},{@link TreeSelectProps.onNodeExpand},{@link TreeSelectProps.onNodeSelect},{@link TreeSelectProps.onNodeUnselect}
+    * @event
+    */
+  trait TreeSelectEventNodeEvent extends StObject {
     
-    inline def chip: typings.primereact.primereactStrings.chip = "chip".asInstanceOf[typings.primereact.primereactStrings.chip]
-    
-    inline def comma: typings.primereact.primereactStrings.comma = "comma".asInstanceOf[typings.primereact.primereactStrings.comma]
-  }
-  
-  trait TreeSelectEventNodeParams extends StObject {
-    
+    /**
+      * Unselected node instance.
+      */
     var node: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TreeNode */ Any
     
+    /**
+      * Browser event
+      */
     var originalEvent: SyntheticEvent[Element, Event]
   }
-  object TreeSelectEventNodeParams {
+  object TreeSelectEventNodeEvent {
     
     inline def apply(
       node: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TreeNode */ Any,
       originalEvent: SyntheticEvent[Element, Event]
-    ): TreeSelectEventNodeParams = {
+    ): TreeSelectEventNodeEvent = {
       val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any])
-      __obj.asInstanceOf[TreeSelectEventNodeParams]
+      __obj.asInstanceOf[TreeSelectEventNodeEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: TreeSelectEventNodeParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: TreeSelectEventNodeEvent] (val x: Self) extends AnyVal {
       
       inline def setNode(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TreeNode */ Any
@@ -266,23 +229,32 @@ object treeselectTreeselectMod {
     }
   }
   
-  type TreeSelectExpandedKeysType = StringDictionary[Boolean]
-  
-  trait TreeSelectExpandedParams extends StObject {
+  /**
+    * Custom toggle event.
+    * @see {@link TreeSelectProps.onToggle}
+    * @event
+    */
+  trait TreeSelectExpandedEvent extends StObject {
     
+    /**
+      * Browser event
+      */
     var originalEvent: SyntheticEvent[Element, Event]
     
+    /**
+      * Toggled node instance
+      */
     var value: TreeSelectExpandedKeysType
   }
-  object TreeSelectExpandedParams {
+  object TreeSelectExpandedEvent {
     
-    inline def apply(originalEvent: SyntheticEvent[Element, Event], value: TreeSelectExpandedKeysType): TreeSelectExpandedParams = {
+    inline def apply(originalEvent: SyntheticEvent[Element, Event], value: TreeSelectExpandedKeysType): TreeSelectExpandedEvent = {
       val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[TreeSelectExpandedParams]
+      __obj.asInstanceOf[TreeSelectExpandedEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: TreeSelectExpandedParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: TreeSelectExpandedEvent] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -290,22 +262,28 @@ object treeselectTreeselectMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.lenient
-    - typings.primereact.primereactStrings.strict
-  */
-  trait TreeSelectFilterModeType extends StObject
-  object TreeSelectFilterModeType {
-    
-    inline def lenient: typings.primereact.primereactStrings.lenient = "lenient".asInstanceOf[typings.primereact.primereactStrings.lenient]
-    
-    inline def strict: typings.primereact.primereactStrings.strict = "strict".asInstanceOf[typings.primereact.primereactStrings.strict]
-  }
+  /**
+    * Custom expanded keys type.
+    */
+  type TreeSelectExpandedKeysType = /**
+    * Extra options.
+    */
+  StringDictionary[Boolean]
   
+  /**
+    * Custom filter options.
+    */
   trait TreeSelectFilterOptions extends StObject {
     
+    /**
+      * Used to filter options
+      * @param {KeyboardEvent} event - Browser event.
+      */
     var filter: js.UndefOr[js.Function1[/* event */ js.UndefOr[KeyboardEvent], Unit]] = js.undefined
     
+    /**
+      * Used to reset the filtered options
+      */
     var reset: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object TreeSelectFilterOptions {
@@ -328,48 +306,82 @@ object treeselectTreeselectMod {
     }
   }
   
-  type TreeSelectFilterTemplateType = ReactNode | (js.Function1[/* options */ TreeSelectFilterOptions, ReactNode])
-  
-  trait TreeSelectFilterValueChangeParams extends StObject {
+  /**
+    * Custom filter change event.
+    * @see {@link TreeSelectProps.onFilterValueChange}
+    * @event
+    */
+  trait TreeSelectFilterValueChangeEvent extends StObject {
     
-    var originalEvent: FormEvent[HTMLInputElement]
+    /**
+      * Browser event
+      */
+    var originalEvent: typings.react.mod.FormEvent[HTMLInputElement]
     
+    /**
+      * The filtered value
+      */
     var value: String
   }
-  object TreeSelectFilterValueChangeParams {
+  object TreeSelectFilterValueChangeEvent {
     
-    inline def apply(originalEvent: FormEvent[HTMLInputElement], value: String): TreeSelectFilterValueChangeParams = {
+    inline def apply(originalEvent: typings.react.mod.FormEvent[HTMLInputElement], value: String): TreeSelectFilterValueChangeEvent = {
       val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[TreeSelectFilterValueChangeParams]
+      __obj.asInstanceOf[TreeSelectFilterValueChangeEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: TreeSelectFilterValueChangeParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: TreeSelectFilterValueChangeEvent] (val x: Self) extends AnyVal {
       
-      inline def setOriginalEvent(value: FormEvent[HTMLInputElement]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: typings.react.mod.FormEvent[HTMLInputElement]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
-  type TreeSelectPanelFooterTemplateType = ReactNode | (js.Function1[/* props */ TreeSelectProps, ReactNode])
-  
+  /**
+    * Custom panel header template options.
+    */
   trait TreeSelectPanelHeaderTemplateOptions extends StObject {
     
+    /**
+      * Style class of the panel.
+      */
     var className: String
     
+    /**
+      * The JSX element that represents the close of the panel.
+      */
     var closeElement: typings.react.mod.global.JSX.Element
     
+    /**
+      * Style class of the panel close element.
+      */
     var closeElementClassName: String
     
+    /**
+      * Style class of the panel close icon.
+      */
     var closeIconClassName: String
     
+    /**
+      * The JSX element that represents the panel.
+      */
     var element: typings.react.mod.global.JSX.Element
     
+    /**
+      * The JSX element that represents the filter of the panel.
+      */
     var filterElement: typings.react.mod.global.JSX.Element
     
+    /**
+      * Callback to invoke when the close button is clicked.
+      */
     def onCloseClick(): Unit
     
+    /**
+      * The props of the TreeSelect component.
+      */
     var props: TreeSelectProps
   }
   object TreeSelectPanelHeaderTemplateOptions {
@@ -409,8 +421,6 @@ object treeselectTreeselectMod {
     }
   }
   
-  type TreeSelectPanelHeaderTemplateType = ReactNode | (js.Function1[/* options */ TreeSelectPanelHeaderTemplateOptions, ReactNode])
-  
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'onChange' | 'value' | 'ref'> */
   trait TreeSelectProps extends StObject {
     
@@ -422,7 +432,11 @@ object treeselectTreeselectMod {
     
     var alt: js.UndefOr[String] = js.undefined
     
-    var appendTo: js.UndefOr[TreeSelectAppendToType] = js.undefined
+    /**
+      * DOM element instance where the overlay panel should be mounted. Valid values are any DOM Element and 'self'. The self value is used to render a component where it is located.
+      * @defaultValue document.body
+      */
+    var appendTo: js.UndefOr[self | HTMLElement | Null] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
@@ -522,8 +536,14 @@ object treeselectTreeselectMod {
     
     var `aria-valuetext`: js.UndefOr[String] = js.undefined
     
+    /**
+      * Used to define a string that labels the component.
+      */
     var ariaLabel: js.UndefOr[String] = js.undefined
     
+    /**
+      * Establishes relationships between the component and label(s) where its value should be one or more element IDs.
+      */
     var ariaLabelledBy: js.UndefOr[String] = js.undefined
     
     var autoCapitalize: js.UndefOr[String] = js.undefined
@@ -540,17 +560,28 @@ object treeselectTreeselectMod {
     
     var checked: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * Icon of the close button.
+      */
+    var closeIcon: js.UndefOr[IconType[TreeSelectProps]] = js.undefined
+    
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
@@ -562,39 +593,90 @@ object treeselectTreeselectMod {
     
     var dir: js.UndefOr[String] = js.undefined
     
+    /**
+      * When present, it specifies that the component should be disabled.
+      * @defaultValue false
+      */
     var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var display: js.UndefOr[TreeSelectDisplayType] = js.undefined
+    /**
+      * Defines how the selected items are displayed, valid values are "comma" and "chip".
+      * @defaultValue comma
+      */
+    var display: js.UndefOr[comma | chip] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
-    var dropdownIcon: js.UndefOr[String] = js.undefined
+    /**
+      * Icon of the dropdown.
+      */
+    var dropdownIcon: js.UndefOr[IconType[TreeSelectProps]] = js.undefined
     
+    /**
+      * Text to display when there is no data.
+      */
     var emptyMessage: js.UndefOr[String] = js.undefined
     
     var enterKeyHint: js.UndefOr[enter | done | go | next | previous | search | send] = js.undefined
     
+    /**
+      * An array of keys to represent the state of the treeselect expansion state in controlled mode.
+      */
     var expandedKeys: js.UndefOr[TreeSelectExpandedKeysType] = js.undefined
     
+    /**
+      * When specified, displays an input field to filter the items.
+      * @defaultValue false
+      */
     var filter: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * When filtering is enabled, filterBy decides which field or fields (comma separated) to search against.
+      * @defaultValue label
+      */
     var filterBy: js.UndefOr[String] = js.undefined
     
+    /**
+      * Icon of the filter.
+      */
+    var filterIcon: js.UndefOr[IconType[TreeSelectProps]] = js.undefined
+    
+    /**
+      * When the panel is opened, it specifies that the filter input should focus automatically.
+      * @defaultValue true
+      */
     var filterInputAutoFocus: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Locale to use in filtering. The default locale is the host environment's current locale.
+      * @defaultValue undefined
+      */
     var filterLocale: js.UndefOr[String] = js.undefined
     
-    var filterMode: js.UndefOr[TreeSelectFilterModeType] = js.undefined
+    /**
+      * Mode for filtering valid values are "lenient" and "strict". Default is lenient.
+      * @defaultValue lenient
+      */
+    var filterMode: js.UndefOr[lenient | strict] = js.undefined
     
+    /**
+      * Placeholder text to show when filter input is empty.
+      */
     var filterPlaceholder: js.UndefOr[String] = js.undefined
     
-    var filterTemplate: js.UndefOr[TreeSelectFilterTemplateType] = js.undefined
+    /**
+      * The template for filter element.
+      */
+    var filterTemplate: js.UndefOr[ReactNode | (js.Function1[/* options */ TreeSelectFilterOptions, ReactNode])] = js.undefined
     
+    /**
+      * When filtering is enabled, the value of input field.
+      */
     var filterValue: js.UndefOr[String] = js.undefined
     
     var form: js.UndefOr[String] = js.undefined
     
-    var formAction: js.UndefOr[String] = js.undefined
+    var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     var formEncType: js.UndefOr[String] = js.undefined
     
@@ -612,9 +694,17 @@ object treeselectTreeselectMod {
     
     var inlist: js.UndefOr[Any] = js.undefined
     
+    /**
+      * Identifier of the input element.
+      */
     var inputId: js.UndefOr[String] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
+    
+    /**
+      * Reference of the input element.
+      */
+    var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.undefined
     
     var is: js.UndefOr[String] = js.undefined
     
@@ -638,6 +728,10 @@ object treeselectTreeselectMod {
     
     var maxLength: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Defines how multiple items can be selected, when true metaKey needs to be pressed to select or unselect an item and when set to false selection of each item can be toggled individually. On touch enabled devices, metaKeySelection is turned off automatically.
+      * @defaultValue true
+      */
     var metaKeySelection: js.UndefOr[Boolean] = js.undefined
     
     var min: js.UndefOr[Double | String] = js.undefined
@@ -646,6 +740,9 @@ object treeselectTreeselectMod {
     
     var multiple: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Name of the input element.
+      */
     var name: js.UndefOr[String] = js.undefined
     
     var nonce: js.UndefOr[String] = js.undefined
@@ -668,7 +765,11 @@ object treeselectTreeselectMod {
     
     var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ TreeSelectChangeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when selection changes.
+      * @param {TreeSelectChangeEvent} event - Custom change event.
+      */
+    var onChange: js.UndefOr[js.Function1[/* event */ TreeSelectChangeEvent, Unit]] = js.undefined
     
     var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
@@ -712,10 +813,17 @@ object treeselectTreeselectMod {
     
     var onError: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onFilterValueChange: js.UndefOr[js.Function1[/* e */ TreeSelectFilterValueChangeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when filter value changes.
+      * @param {TreeSelectFilterValueChangeEvent} event - Custom filter change event.
+      */
+    var onFilterValueChange: js.UndefOr[js.Function1[/* event */ TreeSelectFilterValueChangeEvent, Unit]] = js.undefined
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Used to hide the overlay.
+      */
     var onHide: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
@@ -750,13 +858,29 @@ object treeselectTreeselectMod {
     
     var onMouseUp: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onNodeCollapse: js.UndefOr[js.Function1[/* e */ TreeSelectEventNodeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when a node is collapsed.
+      * @param {TreeSelectEventNodeEvent} event - Custom change event.
+      */
+    var onNodeCollapse: js.UndefOr[js.Function1[/* event */ TreeSelectEventNodeEvent, Unit]] = js.undefined
     
-    var onNodeExpand: js.UndefOr[js.Function1[/* e */ TreeSelectEventNodeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when a node is expanded.
+      * @param {TreeSelectEventNodeEvent} event - Custom change event.
+      */
+    var onNodeExpand: js.UndefOr[js.Function1[/* event */ TreeSelectEventNodeEvent, Unit]] = js.undefined
     
-    var onNodeSelect: js.UndefOr[js.Function1[/* e */ TreeSelectEventNodeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when a node is selected.
+      * @param {TreeSelectEventNodeEvent} event - Custom change event.
+      */
+    var onNodeSelect: js.UndefOr[js.Function1[/* event */ TreeSelectEventNodeEvent, Unit]] = js.undefined
     
-    var onNodeUnselect: js.UndefOr[js.Function1[/* e */ TreeSelectEventNodeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when a node is unselected.
+      * @param {TreeSelectEventNodeEvent} event - Custom change event.
+      */
+    var onNodeUnselect: js.UndefOr[js.Function1[/* event */ TreeSelectEventNodeEvent, Unit]] = js.undefined
     
     var onPaste: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
     
@@ -798,6 +922,9 @@ object treeselectTreeselectMod {
     
     var onSelect: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Used to show the overlay.
+      */
     var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onStalled: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
@@ -808,7 +935,11 @@ object treeselectTreeselectMod {
     
     var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onToggle: js.UndefOr[js.Function1[/* e */ TreeSelectExpandedParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when a node is toggled.
+      * @param {TreeSelectExpandedEvent} event - Custom toggle event.
+      */
+    var onToggle: js.UndefOr[js.Function1[/* event */ TreeSelectExpandedEvent, Unit]] = js.undefined
     
     var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
     
@@ -826,22 +957,42 @@ object treeselectTreeselectMod {
     
     var onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * An array of options to display.
+      */
     var options: js.UndefOr[
         js.Array[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TreeNode */ Any
         ]
       ] = js.undefined
     
+    /**
+      * Style class of the overlay panel element.
+      */
     var panelClassName: js.UndefOr[String] = js.undefined
     
-    var panelFooterTemplate: js.UndefOr[TreeSelectPanelFooterTemplateType] = js.undefined
+    /**
+      * The template of footer.
+      */
+    var panelFooterTemplate: js.UndefOr[ReactNode | (js.Function1[/* props */ this.type, ReactNode])] = js.undefined
     
-    var panelHeaderTemplate: js.UndefOr[TreeSelectPanelHeaderTemplateType] = js.undefined
+    /**
+      * The template of header.
+      */
+    var panelHeaderTemplate: js.UndefOr[
+        ReactNode | (js.Function1[/* options */ TreeSelectPanelHeaderTemplateOptions, ReactNode])
+      ] = js.undefined
     
+    /**
+      * Inline style of the overlay panel element.
+      */
     var panelStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var pattern: js.UndefOr[String] = js.undefined
     
+    /**
+      * Hint text for the input field.
+      */
     var placeholder: js.UndefOr[String] = js.undefined
     
     var prefix: js.UndefOr[String] = js.undefined
@@ -852,21 +1003,36 @@ object treeselectTreeselectMod {
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var required: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Clears the filter value when hiding the dropdown.
+      * @defaultValue false
+      */
     var resetFilterOnHide: js.UndefOr[Boolean] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
     
+    var rev: js.UndefOr[String] = js.undefined
+    
     var role: js.UndefOr[AriaRole] = js.undefined
     
+    /**
+      * Maximum height of the options panel.
+      * @defaultValue 400px
+      */
     var scrollHeight: js.UndefOr[String] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
-    var selectionMode: js.UndefOr[TreeSelectSelectionModeType] = js.undefined
+    /**
+      * Defines the selection mode, valid values "single", "multiple", and "checkbox".
+      */
+    var selectionMode: js.UndefOr[single | multiple | checkbox] = js.undefined
     
     var size: js.UndefOr[Double] = js.undefined
     
@@ -888,6 +1054,9 @@ object treeselectTreeselectMod {
     
     var title: js.UndefOr[String] = js.undefined
     
+    /**
+      * The properties of CSSTransition can be customized, except for "nodeRef" and "in" properties.
+      */
     var transitionOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSTransitionProps */ Any
       ] = js.undefined
@@ -900,9 +1069,25 @@ object treeselectTreeselectMod {
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
-    var value: js.UndefOr[TreeSelectSelectionKeys] = js.undefined
+    /**
+      * A single or an object of keys to control the selection state.
+      */
+    var value: js.UndefOr[
+        String | TreeSelectSelectionKeysType | js.Array[TreeSelectSelectionKeysType] | Null
+      ] = js.undefined
     
-    var valueTemplate: js.UndefOr[TreeSelectValueTemplateType] = js.undefined
+    /**
+      * The template of selected values.
+      */
+    var valueTemplate: js.UndefOr[
+        ReactNode | (js.Function2[
+          /* selectedNodes */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TreeNode */ Any) | (js.Array[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TreeNode */ Any
+          ]), 
+          /* props */ this.type, 
+          ReactNode
+        ])
+      ] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
     
@@ -934,7 +1119,7 @@ object treeselectTreeselectMod {
       
       inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
       
-      inline def setAppendTo(value: TreeSelectAppendToType): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+      inline def setAppendTo(value: self | HTMLElement): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
       
       inline def setAppendToNull: Self = StObject.set(x, "appendTo", null)
       
@@ -1178,19 +1363,29 @@ object treeselectTreeselectMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
+      inline def setCloseIcon(value: IconType[TreeSelectProps]): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
+      
+      inline def setCloseIconFunction1(value: /* options */ IconOptions[TreeSelectProps] => ReactNode): Self = StObject.set(x, "closeIcon", js.Any.fromFunction1(value))
+      
+      inline def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
+      
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
       
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -1220,7 +1415,7 @@ object treeselectTreeselectMod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setDisplay(value: TreeSelectDisplayType): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: comma | chip): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
       inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
@@ -1228,7 +1423,9 @@ object treeselectTreeselectMod {
       
       inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
-      inline def setDropdownIcon(value: String): Self = StObject.set(x, "dropdownIcon", value.asInstanceOf[js.Any])
+      inline def setDropdownIcon(value: IconType[TreeSelectProps]): Self = StObject.set(x, "dropdownIcon", value.asInstanceOf[js.Any])
+      
+      inline def setDropdownIconFunction1(value: /* options */ IconOptions[TreeSelectProps] => ReactNode): Self = StObject.set(x, "dropdownIcon", js.Any.fromFunction1(value))
       
       inline def setDropdownIconUndefined: Self = StObject.set(x, "dropdownIcon", js.undefined)
       
@@ -1250,6 +1447,12 @@ object treeselectTreeselectMod {
       
       inline def setFilterByUndefined: Self = StObject.set(x, "filterBy", js.undefined)
       
+      inline def setFilterIcon(value: IconType[TreeSelectProps]): Self = StObject.set(x, "filterIcon", value.asInstanceOf[js.Any])
+      
+      inline def setFilterIconFunction1(value: /* options */ IconOptions[TreeSelectProps] => ReactNode): Self = StObject.set(x, "filterIcon", js.Any.fromFunction1(value))
+      
+      inline def setFilterIconUndefined: Self = StObject.set(x, "filterIcon", js.undefined)
+      
       inline def setFilterInputAutoFocus(value: Boolean): Self = StObject.set(x, "filterInputAutoFocus", value.asInstanceOf[js.Any])
       
       inline def setFilterInputAutoFocusUndefined: Self = StObject.set(x, "filterInputAutoFocus", js.undefined)
@@ -1258,7 +1461,7 @@ object treeselectTreeselectMod {
       
       inline def setFilterLocaleUndefined: Self = StObject.set(x, "filterLocale", js.undefined)
       
-      inline def setFilterMode(value: TreeSelectFilterModeType): Self = StObject.set(x, "filterMode", value.asInstanceOf[js.Any])
+      inline def setFilterMode(value: lenient | strict): Self = StObject.set(x, "filterMode", value.asInstanceOf[js.Any])
       
       inline def setFilterModeUndefined: Self = StObject.set(x, "filterMode", js.undefined)
       
@@ -1266,7 +1469,7 @@ object treeselectTreeselectMod {
       
       inline def setFilterPlaceholderUndefined: Self = StObject.set(x, "filterPlaceholder", js.undefined)
       
-      inline def setFilterTemplate(value: TreeSelectFilterTemplateType): Self = StObject.set(x, "filterTemplate", value.asInstanceOf[js.Any])
+      inline def setFilterTemplate(value: ReactNode | (js.Function1[/* options */ TreeSelectFilterOptions, ReactNode])): Self = StObject.set(x, "filterTemplate", value.asInstanceOf[js.Any])
       
       inline def setFilterTemplateFunction1(value: /* options */ TreeSelectFilterOptions => ReactNode): Self = StObject.set(x, "filterTemplate", js.Any.fromFunction1(value))
       
@@ -1280,7 +1483,9 @@ object treeselectTreeselectMod {
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      
+      inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
       
       inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
@@ -1325,6 +1530,14 @@ object treeselectTreeselectMod {
       inline def setInputMode(value: none | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
       
       inline def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
+      
+      inline def setInputRef(value: Ref[HTMLInputElement]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
+      
+      inline def setInputRefFunction1(value: /* instance */ HTMLInputElement | Null => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
+      
+      inline def setInputRefNull: Self = StObject.set(x, "inputRef", null)
+      
+      inline def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
       
       inline def setIs(value: String): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
       
@@ -1416,7 +1629,7 @@ object treeselectTreeselectMod {
       
       inline def setOnAuxClickUndefined: Self = StObject.set(x, "onAuxClick", js.undefined)
       
-      inline def setOnBeforeInput(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
+      inline def setOnBeforeInput(value: typings.react.mod.FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
@@ -1432,7 +1645,7 @@ object treeselectTreeselectMod {
       
       inline def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
       
-      inline def setOnChange(value: /* e */ TreeSelectChangeParams => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* event */ TreeSelectChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -1520,7 +1733,7 @@ object treeselectTreeselectMod {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFilterValueChange(value: /* e */ TreeSelectFilterValueChangeParams => Unit): Self = StObject.set(x, "onFilterValueChange", js.Any.fromFunction1(value))
+      inline def setOnFilterValueChange(value: /* event */ TreeSelectFilterValueChangeEvent => Unit): Self = StObject.set(x, "onFilterValueChange", js.Any.fromFunction1(value))
       
       inline def setOnFilterValueChangeUndefined: Self = StObject.set(x, "onFilterValueChange", js.undefined)
       
@@ -1532,11 +1745,11 @@ object treeselectTreeselectMod {
       
       inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
       
-      inline def setOnInput(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
+      inline def setOnInput(value: typings.react.mod.FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
       
       inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
       
-      inline def setOnInvalid(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
+      inline def setOnInvalid(value: typings.react.mod.FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
       
       inline def setOnInvalidUndefined: Self = StObject.set(x, "onInvalid", js.undefined)
       
@@ -1596,19 +1809,19 @@ object treeselectTreeselectMod {
       
       inline def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
       
-      inline def setOnNodeCollapse(value: /* e */ TreeSelectEventNodeParams => Unit): Self = StObject.set(x, "onNodeCollapse", js.Any.fromFunction1(value))
+      inline def setOnNodeCollapse(value: /* event */ TreeSelectEventNodeEvent => Unit): Self = StObject.set(x, "onNodeCollapse", js.Any.fromFunction1(value))
       
       inline def setOnNodeCollapseUndefined: Self = StObject.set(x, "onNodeCollapse", js.undefined)
       
-      inline def setOnNodeExpand(value: /* e */ TreeSelectEventNodeParams => Unit): Self = StObject.set(x, "onNodeExpand", js.Any.fromFunction1(value))
+      inline def setOnNodeExpand(value: /* event */ TreeSelectEventNodeEvent => Unit): Self = StObject.set(x, "onNodeExpand", js.Any.fromFunction1(value))
       
       inline def setOnNodeExpandUndefined: Self = StObject.set(x, "onNodeExpand", js.undefined)
       
-      inline def setOnNodeSelect(value: /* e */ TreeSelectEventNodeParams => Unit): Self = StObject.set(x, "onNodeSelect", js.Any.fromFunction1(value))
+      inline def setOnNodeSelect(value: /* event */ TreeSelectEventNodeEvent => Unit): Self = StObject.set(x, "onNodeSelect", js.Any.fromFunction1(value))
       
       inline def setOnNodeSelectUndefined: Self = StObject.set(x, "onNodeSelect", js.undefined)
       
-      inline def setOnNodeUnselect(value: /* e */ TreeSelectEventNodeParams => Unit): Self = StObject.set(x, "onNodeUnselect", js.Any.fromFunction1(value))
+      inline def setOnNodeUnselect(value: /* event */ TreeSelectEventNodeEvent => Unit): Self = StObject.set(x, "onNodeUnselect", js.Any.fromFunction1(value))
       
       inline def setOnNodeUnselectUndefined: Self = StObject.set(x, "onNodeUnselect", js.undefined)
       
@@ -1668,7 +1881,7 @@ object treeselectTreeselectMod {
       
       inline def setOnRateChangeUndefined: Self = StObject.set(x, "onRateChange", js.undefined)
       
-      inline def setOnReset(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
+      inline def setOnReset(value: typings.react.mod.FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
@@ -1700,7 +1913,7 @@ object treeselectTreeselectMod {
       
       inline def setOnStalledUndefined: Self = StObject.set(x, "onStalled", js.undefined)
       
-      inline def setOnSubmit(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
+      inline def setOnSubmit(value: typings.react.mod.FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
       
       inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
       
@@ -1712,7 +1925,7 @@ object treeselectTreeselectMod {
       
       inline def setOnTimeUpdateUndefined: Self = StObject.set(x, "onTimeUpdate", js.undefined)
       
-      inline def setOnToggle(value: /* e */ TreeSelectExpandedParams => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction1(value))
+      inline def setOnToggle(value: /* event */ TreeSelectExpandedEvent => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction1(value))
       
       inline def setOnToggleUndefined: Self = StObject.set(x, "onToggle", js.undefined)
       
@@ -1764,13 +1977,13 @@ object treeselectTreeselectMod {
       
       inline def setPanelClassNameUndefined: Self = StObject.set(x, "panelClassName", js.undefined)
       
-      inline def setPanelFooterTemplate(value: TreeSelectPanelFooterTemplateType): Self = StObject.set(x, "panelFooterTemplate", value.asInstanceOf[js.Any])
+      inline def setPanelFooterTemplate(value: ReactNode | (js.Function1[TreeSelectProps, ReactNode])): Self = StObject.set(x, "panelFooterTemplate", value.asInstanceOf[js.Any])
       
-      inline def setPanelFooterTemplateFunction1(value: /* props */ TreeSelectProps => ReactNode): Self = StObject.set(x, "panelFooterTemplate", js.Any.fromFunction1(value))
+      inline def setPanelFooterTemplateFunction1(value: TreeSelectProps => ReactNode): Self = StObject.set(x, "panelFooterTemplate", js.Any.fromFunction1(value))
       
       inline def setPanelFooterTemplateUndefined: Self = StObject.set(x, "panelFooterTemplate", js.undefined)
       
-      inline def setPanelHeaderTemplate(value: TreeSelectPanelHeaderTemplateType): Self = StObject.set(x, "panelHeaderTemplate", value.asInstanceOf[js.Any])
+      inline def setPanelHeaderTemplate(value: ReactNode | (js.Function1[/* options */ TreeSelectPanelHeaderTemplateOptions, ReactNode])): Self = StObject.set(x, "panelHeaderTemplate", value.asInstanceOf[js.Any])
       
       inline def setPanelHeaderTemplateFunction1(value: /* options */ TreeSelectPanelHeaderTemplateOptions => ReactNode): Self = StObject.set(x, "panelHeaderTemplate", js.Any.fromFunction1(value))
       
@@ -1804,6 +2017,10 @@ object treeselectTreeselectMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -1820,6 +2037,10 @@ object treeselectTreeselectMod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
+      
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
@@ -1832,7 +2053,7 @@ object treeselectTreeselectMod {
       
       inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
       
-      inline def setSelectionMode(value: TreeSelectSelectionModeType): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+      inline def setSelectionMode(value: single | multiple | checkbox): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
       
       inline def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
       
@@ -1898,16 +2119,24 @@ object treeselectTreeselectMod {
       
       inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
       
-      inline def setValue(value: TreeSelectSelectionKeys): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | TreeSelectSelectionKeysType | js.Array[TreeSelectSelectionKeysType]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueNull: Self = StObject.set(x, "value", null)
       
-      inline def setValueTemplate(value: TreeSelectValueTemplateType): Self = StObject.set(x, "valueTemplate", value.asInstanceOf[js.Any])
+      inline def setValueTemplate(
+        value: ReactNode | (js.Function2[
+              /* selectedNodes */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TreeNode */ Any) | (js.Array[
+                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TreeNode */ Any
+              ]), 
+              TreeSelectProps, 
+              ReactNode
+            ])
+      ): Self = StObject.set(x, "valueTemplate", value.asInstanceOf[js.Any])
       
       inline def setValueTemplateFunction2(
         value: (/* selectedNodes */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TreeNode */ Any) | (js.Array[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TreeNode */ Any
-            ]), /* props */ TreeSelectProps) => ReactNode
+            ]), TreeSelectProps) => ReactNode
       ): Self = StObject.set(x, "valueTemplate", js.Any.fromFunction2(value))
       
       inline def setValueTemplateUndefined: Self = StObject.set(x, "valueTemplate", js.undefined)
@@ -1926,34 +2155,11 @@ object treeselectTreeselectMod {
     }
   }
   
-  type TreeSelectSelectionKeyType = Boolean | TreeSelectCheckboxSelectionKeyType
-  
-  type TreeSelectSelectionKeys = js.UndefOr[
-    String | TreeSelectSelectionKeysType | js.Array[TreeSelectSelectionKeysType] | Null
-  ]
-  
-  type TreeSelectSelectionKeysType = StringDictionary[TreeSelectSelectionKeyType]
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.single
-    - typings.primereact.primereactStrings.multiple
-    - typings.primereact.primereactStrings.checkbox
-  */
-  trait TreeSelectSelectionModeType extends StObject
-  object TreeSelectSelectionModeType {
-    
-    inline def checkbox: typings.primereact.primereactStrings.checkbox = "checkbox".asInstanceOf[typings.primereact.primereactStrings.checkbox]
-    
-    inline def multiple: typings.primereact.primereactStrings.multiple = "multiple".asInstanceOf[typings.primereact.primereactStrings.multiple]
-    
-    inline def single: typings.primereact.primereactStrings.single = "single".asInstanceOf[typings.primereact.primereactStrings.single]
-  }
-  
-  type TreeSelectValueTemplateType = ReactNode | (js.Function2[
-    /* selectedNodes */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TreeNode */ Any) | (js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TreeNode */ Any
-    ]), 
-    /* props */ TreeSelectProps, 
-    ReactNode
-  ])
+  /**
+    * Custom treeselect selection keys type
+    */
+  type TreeSelectSelectionKeysType = /**
+    * Extra options.
+    */
+  StringDictionary[Boolean | TreeSelectCheckboxSelectionKeyType]
 }

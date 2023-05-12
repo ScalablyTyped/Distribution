@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@sinonjs/commons" : "2.0.0"
+      "@sinonjs/commons" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@sinonjs/commons" : "2.0.0"
+      "@sinonjs/commons" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

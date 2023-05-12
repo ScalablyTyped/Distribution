@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 		Evaluates the given `value` expression and assigns it to the `expression` which must be a modifiable l-value.
 		The expressions have access to any variables and arguments that are in scope of the specified frame.
 		Clients should only call this request if the corresponding capability `supportsSetExpression` is true.
-		If a debug adapter implements both setExpression and setVariable, a client uses `setExpression` if the variable has an `evaluateName` property.
+		If a debug adapter implements both `setExpression` and `setVariable`, a client uses `setExpression` if the variable has an `evaluateName` property.
 	*/
 trait SetExpressionRequest
   extends StObject

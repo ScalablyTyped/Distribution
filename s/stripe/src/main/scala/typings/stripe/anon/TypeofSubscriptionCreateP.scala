@@ -10,19 +10,22 @@ trait TypeofSubscriptionCreateP extends StObject {
   
   val Item: TypeofItem
   
-  val PaymentSettings: TypeofPaymentSettingsPaymentMethodOptionsTypeofPaymentMethodOptionUsBankAccount
+  val PaymentSettings: TypeofPaymentSettingsPaymentMethodOptions
   
   val PendingInvoiceItemInterval: Any
+  
+  val TrialSettings: TypeofTrialSettings
 }
 object TypeofSubscriptionCreateP {
   
   inline def apply(
     AddInvoiceItem: TypeofAddInvoiceItem,
     Item: TypeofItem,
-    PaymentSettings: TypeofPaymentSettingsPaymentMethodOptionsTypeofPaymentMethodOptionUsBankAccount,
-    PendingInvoiceItemInterval: Any
+    PaymentSettings: TypeofPaymentSettingsPaymentMethodOptions,
+    PendingInvoiceItemInterval: Any,
+    TrialSettings: TypeofTrialSettings
   ): TypeofSubscriptionCreateP = {
-    val __obj = js.Dynamic.literal(AddInvoiceItem = AddInvoiceItem.asInstanceOf[js.Any], Item = Item.asInstanceOf[js.Any], PaymentSettings = PaymentSettings.asInstanceOf[js.Any], PendingInvoiceItemInterval = PendingInvoiceItemInterval.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AddInvoiceItem = AddInvoiceItem.asInstanceOf[js.Any], Item = Item.asInstanceOf[js.Any], PaymentSettings = PaymentSettings.asInstanceOf[js.Any], PendingInvoiceItemInterval = PendingInvoiceItemInterval.asInstanceOf[js.Any], TrialSettings = TrialSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofSubscriptionCreateP]
   }
   
@@ -33,8 +36,10 @@ object TypeofSubscriptionCreateP {
     
     inline def setItem(value: TypeofItem): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     
-    inline def setPaymentSettings(value: TypeofPaymentSettingsPaymentMethodOptionsTypeofPaymentMethodOptionUsBankAccount): Self = StObject.set(x, "PaymentSettings", value.asInstanceOf[js.Any])
+    inline def setPaymentSettings(value: TypeofPaymentSettingsPaymentMethodOptions): Self = StObject.set(x, "PaymentSettings", value.asInstanceOf[js.Any])
     
     inline def setPendingInvoiceItemInterval(value: Any): Self = StObject.set(x, "PendingInvoiceItemInterval", value.asInstanceOf[js.Any])
+    
+    inline def setTrialSettings(value: TypeofTrialSettings): Self = StObject.set(x, "TrialSettings", value.asInstanceOf[js.Any])
   }
 }

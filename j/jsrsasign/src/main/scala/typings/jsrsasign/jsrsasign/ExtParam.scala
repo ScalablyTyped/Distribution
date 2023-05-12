@@ -49,7 +49,7 @@ object ExtParam {
   }
   
   inline def ExtAuthorityKeyIdentifier(kid: Hex): typings.jsrsasign.jsrsasign.ExtAuthorityKeyIdentifier = {
-    val __obj = js.Dynamic.literal(kid = kid.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(extname = "authorityKeyIdentifier", kid = kid.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.jsrsasign.jsrsasign.ExtAuthorityKeyIdentifier]
   }
   

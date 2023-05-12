@@ -27,7 +27,7 @@ trait CaptionSourceSettings extends StObject {
   var FileSourceSettings: js.UndefOr[typings.awsSdk.clientsMediaconvertMod.FileSourceSettings] = js.undefined
   
   /**
-    * Use Source (SourceType) to identify the format of your input captions.  The service cannot auto-detect caption format.
+    * Use Source (SourceType) to identify the format of your input captions. The service cannot auto-detect caption format.
     */
   var SourceType: js.UndefOr[CaptionSourceType] = js.undefined
   

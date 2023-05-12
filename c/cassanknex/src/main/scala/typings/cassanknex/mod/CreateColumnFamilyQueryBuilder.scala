@@ -26,15 +26,30 @@ object CreateColumnFamilyQueryBuilder {
   
   inline def apply[T](
     ascii: Any => TypeMatchedValue[T, Any, String, CreateColumnFamilyQueryBuilder[T]],
-    bigint: Any => TypeMatchedValue[T, Any, typings.long.mod.^, CreateColumnFamilyQueryBuilder[T]],
+    bigint: Any => TypeMatchedValue[
+      T, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any, 
+      CreateColumnFamilyQueryBuilder[T]
+    ],
     bindings: () => js.Array[Any],
     blob: Any => TypeMatchedValue[T, Any, Buffer, CreateColumnFamilyQueryBuilder[T]],
     boolean: Any => TypeMatchedValue[T, Any, Boolean, CreateColumnFamilyQueryBuilder[T]],
-    counter: Any => TypeMatchedValue[T, Any, typings.long.mod.^, CreateColumnFamilyQueryBuilder[T]],
+    counter: Any => TypeMatchedValue[
+      T, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any, 
+      CreateColumnFamilyQueryBuilder[T]
+    ],
     cql: () => String,
     date: Any => TypeMatchedValue[T, Any, LocalDate, CreateColumnFamilyQueryBuilder[T]],
     decimal: Any => TypeMatchedValue[T, Any, BigDecimal, CreateColumnFamilyQueryBuilder[T]],
-    double: Any => TypeMatchedValue[T, Any, typings.long.mod.^, CreateColumnFamilyQueryBuilder[T]],
+    double: Any => TypeMatchedValue[
+      T, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any, 
+      CreateColumnFamilyQueryBuilder[T]
+    ],
     eachRow: (js.Function2[/* n */ Double, /* row */ Row, Any], js.Function1[/* err */ js.Error, Any]) => Unit,
     exec: ValueCallback[ResultSet] => Unit,
     float: Any => TypeMatchedValue[T, Any, Double, CreateColumnFamilyQueryBuilder[T]],

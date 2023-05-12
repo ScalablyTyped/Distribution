@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "css-has-pseudo" : "4.0.1"
+      "css-has-pseudo" : "5.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "css-has-pseudo" : "4.0.1"
+      "css-has-pseudo" : "5.0.2"
     }
   ],
   "compile-devDependencies" : [

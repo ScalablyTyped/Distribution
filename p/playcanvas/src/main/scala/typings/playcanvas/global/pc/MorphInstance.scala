@@ -15,7 +15,7 @@ open class MorphInstance protected ()
   /**
     * Create a new MorphInstance instance.
     *
-    * @param {Morph} morph - The {@link Morph} to instance.
+    * @param {import('./morph.js').Morph} morph - The {@link Morph} to instance.
     */
   def this(morph: typings.playcanvas.mod.Morph) = this()
 }

@@ -7,7 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("AFRAME.THREE.LineCurve3")
 @js.native
-open class LineCurve3 protected ()
-  extends typings.three.mod.LineCurve3 {
-  def this(v1: typings.three.srcMathVector3Mod.Vector3, v2: typings.three.srcMathVector3Mod.Vector3) = this()
-}
+/**
+  * This constructor creates a new {@link LineCurve3}.
+  * @param v1 The start point. Default is `new THREE.Vector3()`.
+  * @param v2 The end point. Default is `new THREE.Vector3()`.
+  */
+open class LineCurve3 ()
+  extends typings.three.mod.LineCurve3

@@ -1,6 +1,7 @@
 package typings.openui5
 
 import typings.openui5.sap.ClassInfo
+import typings.openui5.sapMBarInPageEnablerMod.BarContexts
 import typings.openui5.sapMLibraryMod.BarDesign
 import typings.openui5.sapMLibraryMod.IBar
 import typings.openui5.sapMLibraryMod.IBarHTMLTag
@@ -132,6 +133,8 @@ object sapMBarMod {
        with IBar {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets classes according to the context of the page. Possible contexts are header, footer and subheader.
       *
       * @returns `this` for chaining
@@ -139,6 +142,8 @@ object sapMBarMod {
     def _applyContextClassFor(): IBar = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets HTML tag according to the context of the page. Possible contexts are header, footer and subheader.
       *
       * @returns `this` for chaining
@@ -198,6 +203,8 @@ object sapMBarMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets classes and HTML tag according to the context of the page. Possible contexts are header, footer
       * and subheader.
       *
@@ -257,11 +264,13 @@ object sapMBarMod {
     def getContentRight(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Gets the available Bar contexts.
       *
       * @returns with all available contexts
       */
-    def getContext(): js.Object = js.native
+    def getContext(): BarContexts = js.native
     
     /**
       * @SINCE 1.22
@@ -293,6 +302,8 @@ object sapMBarMod {
     def getEnableFlexBox(): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Gets the HTML tag of the root element.
       *
       * @returns The HTML-tag
@@ -424,6 +435,8 @@ object sapMBarMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Determines whether the Bar is sensitive to the container context.
       *
       * Implementation of the IBar interface.
@@ -600,6 +613,8 @@ object sapMBarMod {
     sTag: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof IBarHTMLTag * / any */ String
     ): IBar = js.native
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets the HTML tag of the root element.
       *
       * @returns this for chaining

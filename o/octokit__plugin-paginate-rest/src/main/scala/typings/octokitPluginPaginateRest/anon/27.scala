@@ -1,31 +1,20 @@
 package typings.octokitPluginPaginateRest.anon
 
-import typings.octokitTypes.distTypesGeneratedEndpointsMod.ExtractOctokitResponse
-import typings.octokitTypes.distTypesGeneratedEndpointsMod.RequiredPreview
-import typings.octokitTypes.distTypesGeneratedEndpointsMod.ToOctokitParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `27` extends StObject {
   
-  var parameters: (ToOctokitParameters[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/organizations']['get'] */ js.Any
-  ]) & RequiredPreview[Any]
+  var parameters: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/actions/runner-groups/{runner_group_id}/repositories']['parameters'] */ js.Any
   
-  var response: ExtractOctokitResponse[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/organizations']['get'] */ js.Any
-  ]
+  var response: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/actions/runner-groups/{runner_group_id}/repositories']['response'] */ js.Any) & `26`
 }
 object `27` {
   
   inline def apply(
-    parameters: (ToOctokitParameters[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/organizations']['get'] */ js.Any
-    ]) & RequiredPreview[Any],
-    response: ExtractOctokitResponse[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/organizations']['get'] */ js.Any
-    ]
+    parameters: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/actions/runner-groups/{runner_group_id}/repositories']['parameters'] */ js.Any,
+    response: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/actions/runner-groups/{runner_group_id}/repositories']['response'] */ js.Any) & `26`
   ): `27` = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[`27`]
@@ -35,15 +24,11 @@ object `27` {
   implicit open class MutableBuilder[Self <: `27`] (val x: Self) extends AnyVal {
     
     inline def setParameters(
-      value: (ToOctokitParameters[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/organizations']['get'] */ js.Any
-        ]) & RequiredPreview[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/actions/runner-groups/{runner_group_id}/repositories']['parameters'] */ js.Any
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setResponse(
-      value: ExtractOctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/organizations']['get'] */ js.Any
-        ]
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/actions/runner-groups/{runner_group_id}/repositories']['response'] */ js.Any) & `26`
     ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

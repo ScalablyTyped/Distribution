@@ -1,8 +1,5 @@
 package typings.ipfsBitswap
 
-import typings.ipfsBitswap.ipfsBitswapInts.`1000`
-import typings.ipfsBitswap.ipfsBitswapInts.`1`
-import typings.ipfsBitswap.ipfsBitswapInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,11 +16,11 @@ object distSrcConstantsMod {
   
   @JSImport("ipfs-bitswap/dist/src/constants", "maxListeners")
   @js.native
-  val maxListeners: `1000` = js.native
+  val maxListeners: /* 1000 */ Double = js.native
   
   @JSImport("ipfs-bitswap/dist/src/constants", "maxProvidersPerRequest")
   @js.native
-  val maxProvidersPerRequest: `3` = js.native
+  val maxProvidersPerRequest: /* 3 */ Double = js.native
   
   @JSImport("ipfs-bitswap/dist/src/constants", "provideTimeout")
   @js.native
@@ -35,5 +32,5 @@ object distSrcConstantsMod {
   
   @JSImport("ipfs-bitswap/dist/src/constants", "wantlistSendDebounceMs")
   @js.native
-  val wantlistSendDebounceMs: `1` = js.native
+  val wantlistSendDebounceMs: /* 1 */ Double = js.native
 }

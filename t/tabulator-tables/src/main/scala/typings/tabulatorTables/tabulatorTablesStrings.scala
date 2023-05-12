@@ -74,6 +74,14 @@ object tabulatorTablesStrings {
   inline def POST: POST = "POST".asInstanceOf[POST]
   
   @js.native
+  sealed trait TooltipClosed extends StObject
+  inline def TooltipClosed: TooltipClosed = "TooltipClosed".asInstanceOf[TooltipClosed]
+  
+  @js.native
+  sealed trait TooltipOpened extends StObject
+  inline def TooltipOpened: TooltipOpened = "TooltipOpened".asInstanceOf[TooltipOpened]
+  
+  @js.native
   sealed trait active
     extends StObject
        with RowRangeLookup
@@ -828,6 +836,14 @@ object tabulatorTablesStrings {
   inline def pageLoaded: pageLoaded = "pageLoaded".asInstanceOf[pageLoaded]
   
   @js.native
+  sealed trait pageSizeChanged extends StObject
+  inline def pageSizeChanged: pageSizeChanged = "pageSizeChanged".asInstanceOf[pageSizeChanged]
+  
+  @js.native
+  sealed trait pages extends StObject
+  inline def pages: pages = "pages".asInstanceOf[pages]
+  
+  @js.native
   sealed trait paste extends StObject
   inline def paste: paste = "paste".asInstanceOf[paste]
   
@@ -989,6 +1005,10 @@ object tabulatorTablesStrings {
   inline def rowMouseUp: rowMouseUp = "rowMouseUp".asInstanceOf[rowMouseUp]
   
   @js.native
+  sealed trait rowMoveCancelled extends StObject
+  inline def rowMoveCancelled: rowMoveCancelled = "rowMoveCancelled".asInstanceOf[rowMoveCancelled]
+  
+  @js.native
   sealed trait rowMoved
     extends StObject
        with HistoryAction
@@ -1033,6 +1053,10 @@ object tabulatorTablesStrings {
     extends StObject
        with _Formatter
   inline def rownum: rownum = "rownum".asInstanceOf[rownum]
+  
+  @js.native
+  sealed trait rows extends StObject
+  inline def rows: rows = "rows".asInstanceOf[rows]
   
   @js.native
   sealed trait rtl

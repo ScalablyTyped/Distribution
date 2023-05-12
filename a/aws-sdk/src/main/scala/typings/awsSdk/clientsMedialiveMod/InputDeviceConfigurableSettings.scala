@@ -12,6 +12,11 @@ trait InputDeviceConfigurableSettings extends StObject {
   var ConfiguredInput: js.UndefOr[InputDeviceConfiguredInput] = js.undefined
   
   /**
+    * The Link device's buffer size (latency) in milliseconds (ms).
+    */
+  var LatencyMs: js.UndefOr[integer] = js.undefined
+  
+  /**
     * The maximum bitrate in bits per second. Set a value here to throttle the bitrate of the source video.
     */
   var MaxBitrate: js.UndefOr[integer] = js.undefined
@@ -29,6 +34,10 @@ object InputDeviceConfigurableSettings {
     inline def setConfiguredInput(value: InputDeviceConfiguredInput): Self = StObject.set(x, "ConfiguredInput", value.asInstanceOf[js.Any])
     
     inline def setConfiguredInputUndefined: Self = StObject.set(x, "ConfiguredInput", js.undefined)
+    
+    inline def setLatencyMs(value: integer): Self = StObject.set(x, "LatencyMs", value.asInstanceOf[js.Any])
+    
+    inline def setLatencyMsUndefined: Self = StObject.set(x, "LatencyMs", js.undefined)
     
     inline def setMaxBitrate(value: integer): Self = StObject.set(x, "MaxBitrate", value.asInstanceOf[js.Any])
     

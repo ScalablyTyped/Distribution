@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListLedgersResponse extends StObject {
   
   /**
-    * The array of ledger summaries that are associated with the current Amazon Web Services account and Region.
+    * The ledgers that are associated with the current Amazon Web Services account and Region.
     */
   var Ledgers: js.UndefOr[LedgerList] = js.undefined
   

@@ -1,33 +1,22 @@
 package typings.hlsJs.mod
 
+import typings.hlsJs.hlsJsStrings.YES
+import typings.hlsJs.hlsJsStrings._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait HlsSkip extends StObject
-@JSImport("hls.js", "HlsSkip")
-@js.native
-object HlsSkip extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.hlsJs.hlsJsStrings._empty
+  - typings.hlsJs.hlsJsStrings.YES
+  - typings.hlsJs.hlsJsStrings.v2
+*/
+trait HlsSkip extends StObject
+object HlsSkip {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[HlsSkip & String] = js.native
+  inline def No: _empty = "".asInstanceOf[_empty]
   
-  @js.native
-  sealed trait No
-    extends StObject
-       with HlsSkip
-  /* "" */ val No: typings.hlsJs.mod.HlsSkip.No & String = js.native
+  inline def Yes: YES = "YES".asInstanceOf[YES]
   
-  @js.native
-  sealed trait Yes
-    extends StObject
-       with HlsSkip
-  /* "YES" */ val Yes: typings.hlsJs.mod.HlsSkip.Yes & String = js.native
-  
-  @js.native
-  sealed trait v2
-    extends StObject
-       with HlsSkip
-  /* "v2" */ val v2: typings.hlsJs.mod.HlsSkip.v2 & String = js.native
+  inline def v2: typings.hlsJs.hlsJsStrings.v2 = "v2".asInstanceOf[typings.hlsJs.hlsJsStrings.v2]
 }

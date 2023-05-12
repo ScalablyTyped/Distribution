@@ -15,6 +15,7 @@ import typings.node.httpMod.Agent
 import typings.node.httpMod.IncomingMessage
 import typings.node.netMod.LookupFunction
 import typings.node.nodeColonnetMod.Socket
+import typings.node.tlsMod.PeerCertificate
 import typings.node.tlsMod.SecureContextOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -169,8 +170,8 @@ object mod {
     }
     
     /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-    - typings.node.httpMod.ClientRequestArgs because var conflicts: agent, auth, headers, localAddress, timeout. Inlined port, protocol, method, defaultPort, setHost, _defaultAgent, hostname, maxHeaderSize, host, socketPath, createConnection, path, family, signal, lookup
-    - typings.node.httpsMod.RequestOptions because var conflicts: agent, auth, headers, localAddress, timeout. Inlined servername, rejectUnauthorized */ trait NeedleOptions
+    - typings.node.httpMod.ClientRequestArgs because var conflicts: agent, auth, headers, localAddress, timeout. Inlined port, protocol, method, defaultPort, setHost, _defaultAgent, hostname, maxHeaderSize, insecureHTTPParser, host, socketPath, localPort, createConnection, path, hints, family, joinDuplicateHeaders, signal, lookup, uniqueHeaders
+    - typings.node.httpsMod.RequestOptions because var conflicts: agent, auth, headers, localAddress, timeout. Inlined servername, rejectUnauthorized, checkServerIdentity */ trait NeedleOptions
       extends StObject
          with RequestOptions
          with ResponseOptions
@@ -178,6 +179,10 @@ object mod {
          with SecureContextOptions {
       
       var _defaultAgent: js.UndefOr[Agent] = js.undefined
+      
+      var checkServerIdentity: js.UndefOr[
+            js.Function2[/* hostname */ String, /* cert */ PeerCertificate, js.UndefOr[js.Error]]
+          ] = js.undefined
       
       // https://github.com/nodejs/node/blob/master/lib/_http_client.js#L278
       var createConnection: js.UndefOr[
@@ -192,14 +197,22 @@ object mod {
       
       var family: js.UndefOr[Double] = js.undefined
       
+      var hints: js.UndefOr[Double] = js.undefined
+      
       var host: js.UndefOr[String | Null] = js.undefined
       
       var hostname: js.UndefOr[String | Null] = js.undefined
       
+      var insecureHTTPParser: js.UndefOr[Boolean] = js.undefined
+      
+      var joinDuplicateHeaders: js.UndefOr[Boolean] = js.undefined
+      
+      var localPort: js.UndefOr[Double] = js.undefined
+      
       var lookup: js.UndefOr[LookupFunction] = js.undefined
       
       /**
-        * @default 8192
+        * @default 16384
         */
       var maxHeaderSize: js.UndefOr[Double] = js.undefined
       
@@ -221,6 +234,8 @@ object mod {
       var signal: js.UndefOr[AbortSignal] = js.undefined
       
       var socketPath: js.UndefOr[String] = js.undefined
+      
+      var uniqueHeaders: js.UndefOr[js.Array[String | js.Array[String]]] = js.undefined
     }
     object NeedleOptions {
       
@@ -231,6 +246,10 @@ object mod {
       
       @scala.inline
       implicit open class MutableBuilder[Self <: typings.needle.mod.core.NeedleOptions] (val x: Self) extends AnyVal {
+        
+        inline def setCheckServerIdentity(value: (/* hostname */ String, /* cert */ PeerCertificate) => js.UndefOr[js.Error]): Self = StObject.set(x, "checkServerIdentity", js.Any.fromFunction2(value))
+        
+        inline def setCheckServerIdentityUndefined: Self = StObject.set(x, "checkServerIdentity", js.undefined)
         
         inline def setCreateConnection(
           value: (typings.needle.mod.core.NeedleOptions, /* oncreate */ js.Function2[/* err */ js.Error, /* socket */ Socket, Unit]) => Socket
@@ -246,6 +265,10 @@ object mod {
         
         inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
         
+        inline def setHints(value: Double): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
+        
+        inline def setHintsUndefined: Self = StObject.set(x, "hints", js.undefined)
+        
         inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
         
         inline def setHostNull: Self = StObject.set(x, "host", null)
@@ -257,6 +280,18 @@ object mod {
         inline def setHostnameNull: Self = StObject.set(x, "hostname", null)
         
         inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+        
+        inline def setInsecureHTTPParser(value: Boolean): Self = StObject.set(x, "insecureHTTPParser", value.asInstanceOf[js.Any])
+        
+        inline def setInsecureHTTPParserUndefined: Self = StObject.set(x, "insecureHTTPParser", js.undefined)
+        
+        inline def setJoinDuplicateHeaders(value: Boolean): Self = StObject.set(x, "joinDuplicateHeaders", value.asInstanceOf[js.Any])
+        
+        inline def setJoinDuplicateHeadersUndefined: Self = StObject.set(x, "joinDuplicateHeaders", js.undefined)
+        
+        inline def setLocalPort(value: Double): Self = StObject.set(x, "localPort", value.asInstanceOf[js.Any])
+        
+        inline def setLocalPortUndefined: Self = StObject.set(x, "localPort", js.undefined)
         
         inline def setLookup(
           value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit
@@ -309,6 +344,12 @@ object mod {
         inline def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
         
         inline def setSocketPathUndefined: Self = StObject.set(x, "socketPath", js.undefined)
+        
+        inline def setUniqueHeaders(value: js.Array[String | js.Array[String]]): Self = StObject.set(x, "uniqueHeaders", value.asInstanceOf[js.Any])
+        
+        inline def setUniqueHeadersUndefined: Self = StObject.set(x, "uniqueHeaders", js.undefined)
+        
+        inline def setUniqueHeadersVarargs(value: (String | js.Array[String])*): Self = StObject.set(x, "uniqueHeaders", js.Array(value*))
         
         inline def set_defaultAgent(value: Agent): Self = StObject.set(x, "_defaultAgent", value.asInstanceOf[js.Any])
         
@@ -365,40 +406,47 @@ object mod {
       /**
         * When true, Needle will only follow redirects that point to the same host
         * as the original request.
-        * false by default.
+        *
+        * @default false
         */
       var follow_if_same_host: js.UndefOr[Boolean] = js.undefined
       
       /**
-        * Unless true, Needle will not follow redirects that point to same location (as set in the response header) as the original request URL. false by default.
+        * Unless true, Needle will not follow redirects that point to same location (as set in the response header) as the original request URL.
+        *
+        * @default false
         */
       var follow_if_same_location: js.UndefOr[Boolean] = js.undefined
       
       /**
         * When true, Needle will only follow redirects that point to the same protocol
         * as the original request.
-        * false by default.
+        *
+        * @default false
         */
       var follow_if_same_protocol: js.UndefOr[Boolean] = js.undefined
       
       /**
         * If enabled, resends the request using the original verb
         * instead of being rewritten to get with no data.
-        * false by default.
+        *
+        * @default false
         */
       var follow_keep_method: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Sends the cookies received in the set-cookie header
         * as part of the following request.
-        * false by default.
+        *
+        * @default false
         */
-      var follow_set_cookie: js.UndefOr[Boolean] = js.undefined
+      var follow_set_cookies: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Sets the 'Referer' header to the requested URI
         * when following a redirect.
-        * false by default.
+        *
+        * @default false
         */
       var follow_set_referer: js.UndefOr[Boolean] = js.undefined
     }
@@ -428,9 +476,9 @@ object mod {
         
         inline def setFollow_keep_methodUndefined: Self = StObject.set(x, "follow_keep_method", js.undefined)
         
-        inline def setFollow_set_cookie(value: Boolean): Self = StObject.set(x, "follow_set_cookie", value.asInstanceOf[js.Any])
+        inline def setFollow_set_cookies(value: Boolean): Self = StObject.set(x, "follow_set_cookies", value.asInstanceOf[js.Any])
         
-        inline def setFollow_set_cookieUndefined: Self = StObject.set(x, "follow_set_cookie", js.undefined)
+        inline def setFollow_set_cookiesUndefined: Self = StObject.set(x, "follow_set_cookies", js.undefined)
         
         inline def setFollow_set_referer(value: Boolean): Self = StObject.set(x, "follow_set_referer", value.asInstanceOf[js.Any])
         

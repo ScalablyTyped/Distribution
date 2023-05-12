@@ -13,7 +13,7 @@ trait ApiGateway extends StObject {
   
   var apiKeySourceType: js.UndefOr[HEADER | AUTHORIZER | header_ | authorizer_] = js.undefined
   
-  var apiKeys: js.UndefOr[js.Array[String]] = js.undefined
+  var apiKeys: js.UndefOr[js.Array[ApiKey | String]] = js.undefined
   
   var binaryMediaTypes: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -51,11 +51,11 @@ object ApiGateway {
     
     inline def setApiKeySourceTypeUndefined: Self = StObject.set(x, "apiKeySourceType", js.undefined)
     
-    inline def setApiKeys(value: js.Array[String]): Self = StObject.set(x, "apiKeys", value.asInstanceOf[js.Any])
+    inline def setApiKeys(value: js.Array[ApiKey | String]): Self = StObject.set(x, "apiKeys", value.asInstanceOf[js.Any])
     
     inline def setApiKeysUndefined: Self = StObject.set(x, "apiKeys", js.undefined)
     
-    inline def setApiKeysVarargs(value: String*): Self = StObject.set(x, "apiKeys", js.Array(value*))
+    inline def setApiKeysVarargs(value: (ApiKey | String)*): Self = StObject.set(x, "apiKeys", js.Array(value*))
     
     inline def setBinaryMediaTypes(value: js.Array[String]): Self = StObject.set(x, "binaryMediaTypes", value.asInstanceOf[js.Any])
     

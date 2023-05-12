@@ -14,7 +14,7 @@ trait ObjectObservableKind[T]
   
   var debugObjectName: String
   
-  var newValue: Any
+  var newValue: T
   
   var `object`: IObservableValue[T]
   
@@ -24,7 +24,7 @@ trait ObjectObservableKind[T]
 }
 object ObjectObservableKind {
   
-  inline def apply[T](debugObjectName: String, newValue: Any, `object`: IObservableValue[T]): ObjectObservableKind[T] = {
+  inline def apply[T](debugObjectName: String, newValue: T, `object`: IObservableValue[T]): ObjectObservableKind[T] = {
     val __obj = js.Dynamic.literal(debugObjectName = debugObjectName.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], observableKind = "value")
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("create")
@@ -36,7 +36,7 @@ object ObjectObservableKind {
     
     inline def setDebugObjectName(value: String): Self = StObject.set(x, "debugObjectName", value.asInstanceOf[js.Any])
     
-    inline def setNewValue(value: Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: T): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
     inline def setObject(value: IObservableValue[T]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     

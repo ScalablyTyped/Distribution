@@ -110,13 +110,13 @@ object libModelDottypesMod {
     
     var actions: Prop[TModelCreators, typings.xstate.xstateStrings.actions] = js.native
     
-    def assign[TEventType /* <: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any */](assigner: Assigner[TContext, SimplisticExtractEvent[TEvent, TEventType]]): AssignAction[TContext, SimplisticExtractEvent[TEvent, TEventType]] = js.native
-    def assign[TEventType /* <: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any */](assigner: Assigner[TContext, SimplisticExtractEvent[TEvent, TEventType]], eventType: TEventType): AssignAction[TContext, SimplisticExtractEvent[TEvent, TEventType]] = js.native
-    def assign[TEventType /* <: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any */](assigner: PropertyAssigner[TContext, SimplisticExtractEvent[TEvent, TEventType]]): AssignAction[TContext, SimplisticExtractEvent[TEvent, TEventType]] = js.native
+    def assign[TEventType /* <: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any */](assigner: Assigner[TContext, SimplisticExtractEvent[TEvent, TEventType]]): AssignAction[TContext, SimplisticExtractEvent[TEvent, TEventType], TEvent] = js.native
+    def assign[TEventType /* <: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any */](assigner: Assigner[TContext, SimplisticExtractEvent[TEvent, TEventType]], eventType: TEventType): AssignAction[TContext, SimplisticExtractEvent[TEvent, TEventType], TEvent] = js.native
+    def assign[TEventType /* <: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any */](assigner: PropertyAssigner[TContext, SimplisticExtractEvent[TEvent, TEventType]]): AssignAction[TContext, SimplisticExtractEvent[TEvent, TEventType], TEvent] = js.native
     def assign[TEventType /* <: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any */](
       assigner: PropertyAssigner[TContext, SimplisticExtractEvent[TEvent, TEventType]],
       eventType: TEventType
-    ): AssignAction[TContext, SimplisticExtractEvent[TEvent, TEventType]] = js.native
+    ): AssignAction[TContext, SimplisticExtractEvent[TEvent, TEventType], TEvent] = js.native
     
     def createMachine[TServiceMap /* <: ServiceMap */, TTypesMeta /* <: TypegenConstraint */](config: MachineConfig[TContext, Any, TEvent, TAction, TServiceMap, TTypesMeta]): StateMachine[
         TContext, 
@@ -153,7 +153,7 @@ object libModelDottypesMod {
     
     var initialContext: TContext = js.native
     
-    def reset(): AssignAction[TContext, Any] = js.native
+    def reset(): AssignAction[TContext, Any, Any] = js.native
   }
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.

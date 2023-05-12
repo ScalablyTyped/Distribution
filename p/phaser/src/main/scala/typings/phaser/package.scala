@@ -6,19 +6,17 @@ import typings.phaser.Phaser.GameObjects.GameObject
 import typings.phaser.Phaser.GameObjects.Light
 import typings.phaser.Phaser.GameObjects.Text
 import typings.phaser.Phaser.Geom.Triangle
+import typings.phaser.Phaser.Math.Vector2
 import typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer
 import typings.phaser.Phaser.Tilemaps.Tile
-import typings.phaser.Phaser.Types.Physics.Arcade.GameObjectWithBody
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ArcadePhysicsCallback = js.Function2[/* object1 */ GameObjectWithBody, /* object2 */ GameObjectWithBody, Unit]
-
 type CameraRotateCallback = js.Function3[/* camera */ Camera, /* progress */ Double, /* angle */ Double, Unit]
 
-type CenterFunction = js.Function1[/* triangle */ Triangle, Unit]
+type CenterFunction = js.Function1[/* triangle */ Triangle, Vector2]
 
 type ContentLoadedCallback = js.Function0[Unit]
 
@@ -33,24 +31,27 @@ type ContextFilter = String
 
 type CreateCallback = js.Function2[/* bob */ Bob, /* index */ Double, Unit]
 
-type EachMapCallback[E] = js.Function2[/* key */ String, /* entry */ E, Unit]
+type EachMapCallback[E] = js.Function2[/* key */ String, /* entry */ E, Boolean | Null]
 
-type EachSetCallback[E] = js.Function2[/* entry */ E, /* index */ Double, Unit]
+type EachSetCallback[E] = js.Function2[/* entry */ E, /* index */ Double, Boolean | Null]
 
 type EachTileCallback = js.Function3[/* value */ Tile, /* index */ Double, /* array */ js.Array[Tile], Unit]
 
-type FindTileCallback = js.Function3[/* value */ Tile, /* index */ Double, /* array */ js.Array[Tile], Unit]
+type FindTileCallback = js.Function3[/* value */ Tile, /* index */ Double, /* array */ js.Array[Tile], Boolean]
 
 type LightForEach = js.Function1[/* light */ Light, Unit]
 
 /**
   * A custom function that will be responsible for wrapping the text.
   */
-type TextStyleWordWrapCallback = js.Function2[/* text */ String, /* textObject */ Text, Unit]
+type TextStyleWordWrapCallback = js.Function2[/* text */ String, /* textObject */ Text, String | js.Array[String]]
 
-type TilemapFilterCallback = js.Function3[/* value */ GameObject, /* index */ Double, /* array */ js.Array[GameObject], Unit]
+/**
+  * A predicate, to test each element of the array.
+  */
+type TilemapFilterCallback = js.Function3[/* value */ GameObject, /* index */ Double, /* array */ js.Array[GameObject], Boolean]
 
-type TilemapFindCallback = js.Function3[/* value */ GameObject, /* index */ Double, /* array */ js.Array[GameObject], Unit]
+type TilemapFindCallback = js.Function3[/* value */ GameObject, /* index */ Double, /* array */ js.Array[GameObject], Boolean]
 
 type WebGLContextCallback = js.Function1[/* renderer */ WebGLRenderer, Unit]
 

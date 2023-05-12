@@ -16,7 +16,7 @@ object libIconsWifiOutlinedMod extends Shortcut {
   @js.native
   trait WifiOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_WifiOutlinedIconType: String = js.native

@@ -1,97 +1,66 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.web
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Pingurl extends StObject {
   
-  /**
-    * @description Determines whether the hook is actually triggered on pushes.
-    * @example true
-    */
+  /** @description Determines whether the hook is actually triggered for the events it subscribes to. */
   var active: Boolean
   
-  var config: Room
+  /** @description Only included for GitHub Apps. When you register a new GitHub App, GitHub sends a ping event to the webhook URL you specified during registration. The GitHub App ID sent in this field is required for authenticating an app. */
+  var app_id: js.UndefOr[Double] = js.undefined
   
-  /**
-    * Format: date-time
-    * @example 2011-09-06T17:26:27Z
-    */
+  var config: ContenttypeInsecuresslSecret
+  
+  /** Format: date-time */
   var created_at: String
   
-  /**
-    * Format: uri
-    * @example https://api.github.com/repos/octocat/Hello-World/hooks/1/deliveries
-    */
+  /** Format: uri */
   var deliveries_url: js.UndefOr[String] = js.undefined
   
-  /**
-    * @description Determines what events the hook is triggered for. Default: ['push'].
-    * @example [
-    *   "push",
-    *   "pull_request"
-    * ]
-    */
+  /** @description Determines what events the hook is triggered for. Default: ['push']. */
   var events: js.Array[String]
   
-  /**
-    * @description Unique identifier of the webhook.
-    * @example 42
-    */
+  /** @description Unique identifier of the webhook. */
   var id: Double
   
-  var last_response: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['hook-response'] */ js.Any
+  var last_response: js.UndefOr[MessageStatus] = js.undefined
   
   /**
-    * @description The name of a valid service, use 'web' for a webhook.
-    * @example web
+    * @description The type of webhook. The only valid value is 'web'.
+    * @enum {string}
     */
-  var name: String
+  var name: web
   
-  /**
-    * Format: uri
-    * @example https://api.github.com/repos/octocat/Hello-World/hooks/1/pings
-    */
-  var ping_url: String
+  /** Format: uri */
+  var ping_url: js.UndefOr[String] = js.undefined
   
-  /**
-    * Format: uri
-    * @example https://api.github.com/repos/octocat/Hello-World/hooks/1/test
-    */
-  var test_url: String
+  /** Format: uri */
+  var test_url: js.UndefOr[String] = js.undefined
   
   var `type`: String
   
-  /**
-    * Format: date-time
-    * @example 2011-09-06T20:39:23Z
-    */
+  /** Format: date-time */
   var updated_at: String
   
-  /**
-    * Format: uri
-    * @example https://api.github.com/repos/octocat/Hello-World/hooks/1
-    */
-  var url: String
+  /** Format: uri */
+  var url: js.UndefOr[String] = js.undefined
 }
 object Pingurl {
   
   inline def apply(
     active: Boolean,
-    config: Room,
+    config: ContenttypeInsecuresslSecret,
     created_at: String,
     events: js.Array[String],
     id: Double,
-    last_response: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['hook-response'] */ js.Any,
-    name: String,
-    ping_url: String,
-    test_url: String,
     `type`: String,
-    updated_at: String,
-    url: String
+    updated_at: String
   ): Pingurl = {
-    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last_response = last_response.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], ping_url = ping_url.asInstanceOf[js.Any], test_url = test_url.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = "web", updated_at = updated_at.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pingurl]
   }
@@ -101,7 +70,11 @@ object Pingurl {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    inline def setConfig(value: Room): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setApp_id(value: Double): Self = StObject.set(x, "app_id", value.asInstanceOf[js.Any])
+    
+    inline def setApp_idUndefined: Self = StObject.set(x, "app_id", js.undefined)
+    
+    inline def setConfig(value: ContenttypeInsecuresslSecret): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
@@ -115,20 +88,26 @@ object Pingurl {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setLast_response(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['hook-response'] */ js.Any
-    ): Self = StObject.set(x, "last_response", value.asInstanceOf[js.Any])
+    inline def setLast_response(value: MessageStatus): Self = StObject.set(x, "last_response", value.asInstanceOf[js.Any])
     
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setLast_responseUndefined: Self = StObject.set(x, "last_response", js.undefined)
+    
+    inline def setName(value: web): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setPing_url(value: String): Self = StObject.set(x, "ping_url", value.asInstanceOf[js.Any])
     
+    inline def setPing_urlUndefined: Self = StObject.set(x, "ping_url", js.undefined)
+    
     inline def setTest_url(value: String): Self = StObject.set(x, "test_url", value.asInstanceOf[js.Any])
+    
+    inline def setTest_urlUndefined: Self = StObject.set(x, "test_url", js.undefined)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

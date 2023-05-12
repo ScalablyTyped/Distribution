@@ -36,8 +36,6 @@ object typesSrcCoreDefaultsMod {
     
     var channelAuthorization: ChannelAuthorizationOptions
     
-    var cluster: String
-    
     var dependency_suffix: js.UndefOr[String] = js.undefined
     
     var httpHost: String
@@ -71,7 +69,6 @@ object typesSrcCoreDefaultsMod {
       authEndpoint: String,
       authTransport: AuthTransport,
       channelAuthorization: ChannelAuthorizationOptions,
-      cluster: String,
       httpHost: String,
       httpPath: String,
       httpPort: Double,
@@ -84,7 +81,7 @@ object typesSrcCoreDefaultsMod {
       wsPort: Double,
       wssPort: Double
     ): DefaultConfig = {
-      val __obj = js.Dynamic.literal(PROTOCOL = PROTOCOL.asInstanceOf[js.Any], VERSION = VERSION.asInstanceOf[js.Any], activityTimeout = activityTimeout.asInstanceOf[js.Any], authEndpoint = authEndpoint.asInstanceOf[js.Any], authTransport = authTransport.asInstanceOf[js.Any], channelAuthorization = channelAuthorization.asInstanceOf[js.Any], cluster = cluster.asInstanceOf[js.Any], httpHost = httpHost.asInstanceOf[js.Any], httpPath = httpPath.asInstanceOf[js.Any], httpPort = httpPort.asInstanceOf[js.Any], httpsPort = httpsPort.asInstanceOf[js.Any], pongTimeout = pongTimeout.asInstanceOf[js.Any], stats_host = stats_host.asInstanceOf[js.Any], unavailableTimeout = unavailableTimeout.asInstanceOf[js.Any], userAuthentication = userAuthentication.asInstanceOf[js.Any], wsPath = wsPath.asInstanceOf[js.Any], wsPort = wsPort.asInstanceOf[js.Any], wssPort = wssPort.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(PROTOCOL = PROTOCOL.asInstanceOf[js.Any], VERSION = VERSION.asInstanceOf[js.Any], activityTimeout = activityTimeout.asInstanceOf[js.Any], authEndpoint = authEndpoint.asInstanceOf[js.Any], authTransport = authTransport.asInstanceOf[js.Any], channelAuthorization = channelAuthorization.asInstanceOf[js.Any], httpHost = httpHost.asInstanceOf[js.Any], httpPath = httpPath.asInstanceOf[js.Any], httpPort = httpPort.asInstanceOf[js.Any], httpsPort = httpsPort.asInstanceOf[js.Any], pongTimeout = pongTimeout.asInstanceOf[js.Any], stats_host = stats_host.asInstanceOf[js.Any], unavailableTimeout = unavailableTimeout.asInstanceOf[js.Any], userAuthentication = userAuthentication.asInstanceOf[js.Any], wsPath = wsPath.asInstanceOf[js.Any], wsPort = wsPort.asInstanceOf[js.Any], wssPort = wssPort.asInstanceOf[js.Any])
       __obj.asInstanceOf[DefaultConfig]
     }
     
@@ -106,8 +103,6 @@ object typesSrcCoreDefaultsMod {
       inline def setCdn_httpsUndefined: Self = StObject.set(x, "cdn_https", js.undefined)
       
       inline def setChannelAuthorization(value: ChannelAuthorizationOptions): Self = StObject.set(x, "channelAuthorization", value.asInstanceOf[js.Any])
-      
-      inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
       
       inline def setDependency_suffix(value: String): Self = StObject.set(x, "dependency_suffix", value.asInstanceOf[js.Any])
       

@@ -11,7 +11,7 @@ trait EntryDataOnprogressOptions extends StObject {
   
   /**
     * The function called when ending compression/decompression.
-    * 
+    *
     * @param computedSize The total number of bytes (computed).
     * @returns An empty promise or `undefined`.
     */
@@ -19,7 +19,7 @@ trait EntryDataOnprogressOptions extends StObject {
   
   /**
     * The function called during compression/decompression.
-    * 
+    *
     * @param progress The current progress in bytes.
     * @param total The total number of bytes.
     * @returns An empty promise or `undefined`.
@@ -30,7 +30,7 @@ trait EntryDataOnprogressOptions extends StObject {
   
   /**
     * The function called when starting compression/decompression.
-    * 
+    *
     * @param total The total number of bytes.
     * @returns An empty promise or `undefined`.
     */

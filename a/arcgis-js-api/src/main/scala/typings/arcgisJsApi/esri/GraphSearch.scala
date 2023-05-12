@@ -1,7 +1,8 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.both_
-import typings.arcgisJsApi.arcgisJsApiStrings.entity
+import typings.arcgisJsApi.arcgisJsApiStrings.entity_
+import typings.arcgisJsApi.arcgisJsApiStrings.relationship_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,5 +26,5 @@ trait GraphSearch
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphSearch.html#typeCategoryFilter)
     */
-  var typeCategoryFilter: entity | typings.arcgisJsApi.arcgisJsApiStrings.relationship | both_ = js.native
+  var typeCategoryFilter: entity_ | relationship_ | both_ = js.native
 }

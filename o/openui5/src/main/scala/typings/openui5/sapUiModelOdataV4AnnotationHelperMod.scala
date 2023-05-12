@@ -18,7 +18,7 @@ object sapUiModelOdataV4AnnotationHelperMod extends Shortcut {
   /**
     * @SINCE 1.43.0
     *
-    * A collection of methods which help to consume OData V4 annotations in XML template views. Every context argument must belong to a {@link sap.ui.model.odata.v4.ODataMetaModel}
+    * A collection of methods which help to consume OData V4 annotations in XML template views. Every context argument must belong to an {@link sap.ui.model.odata.v4.ODataMetaModel}
     * instance.
     */
   trait AnnotationHelper extends StObject {

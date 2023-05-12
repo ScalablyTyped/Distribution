@@ -215,6 +215,10 @@ trait WeakValidationMapButtonPr extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
   ] = js.undefined
   
+  var autoFocus: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : undefined extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : react.react.Validator<boolean | undefined> */ js.Any
+  ] = js.undefined
+  
   var autoSave: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
   ] = js.undefined
@@ -233,6 +237,10 @@ trait WeakValidationMapButtonPr extends StObject {
   
   var compact: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : undefined extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : react.react.Validator<boolean | undefined> */ js.Any
+  ] = js.undefined
+  
+  var content: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
   ] = js.undefined
   
   var contentEditable: js.UndefOr[
@@ -280,6 +288,10 @@ trait WeakValidationMapButtonPr extends StObject {
   ] = js.undefined
   
   var hidden: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : undefined extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : react.react.Validator<boolean | undefined> */ js.Any
+  ] = js.undefined
+  
+  var iconBeforeText: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : undefined extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : react.react.Validator<boolean | undefined> */ js.Any
   ] = js.undefined
   
@@ -368,7 +380,7 @@ trait WeakValidationMapButtonPr extends StObject {
   ] = js.undefined
   
   var onClick: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: null extends (event : react.react.MouseEvent<std.HTMLButtonElement, std.MouseEvent>): void | undefined ? react.react.Validator<(event : react.react.MouseEvent<std.HTMLButtonElement, std.MouseEvent>): void | undefined | null | undefined> : undefined extends (event : react.react.MouseEvent<std.HTMLButtonElement, std.MouseEvent>): void | undefined ? react.react.Validator<(event : react.react.MouseEvent<std.HTMLButtonElement, std.MouseEvent>): void | undefined | null | undefined> : react.react.Validator<(event : react.react.MouseEvent<std.HTMLButtonElement, std.MouseEvent>): void | undefined> */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.MouseEventHandler<std.HTMLButtonElement> | undefined ? react.react.Validator<react.react.MouseEventHandler<std.HTMLButtonElement> | undefined | null | undefined> : undefined extends react.react.MouseEventHandler<std.HTMLButtonElement> | undefined ? react.react.Validator<react.react.MouseEventHandler<std.HTMLButtonElement> | undefined | null | undefined> : react.react.Validator<react.react.MouseEventHandler<std.HTMLButtonElement> | undefined> */ js.Any
   ] = js.undefined
   
   var onCompositionEnd: js.UndefOr[
@@ -671,12 +683,20 @@ trait WeakValidationMapButtonPr extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.RefObject<std.HTMLButtonElement> | undefined ? react.react.Validator<react.react.RefObject<std.HTMLButtonElement> | undefined | null | undefined> : undefined extends react.react.RefObject<std.HTMLButtonElement> | undefined ? react.react.Validator<react.react.RefObject<std.HTMLButtonElement> | undefined | null | undefined> : react.react.Validator<react.react.RefObject<std.HTMLButtonElement> | undefined> */ js.Any
   ] = js.undefined
   
+  var rel: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
+  ] = js.undefined
+  
   var resource: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
   ] = js.undefined
   
   var results: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: null extends number | undefined ? react.react.Validator<number | undefined | null | undefined> : undefined extends number | undefined ? react.react.Validator<number | undefined | null | undefined> : react.react.Validator<number | undefined> */ js.Any
+  ] = js.undefined
+  
+  var rev: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
   ] = js.undefined
   
   var role: js.UndefOr[
@@ -1065,6 +1085,12 @@ object WeakValidationMapButtonPr {
     
     inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
     
+    inline def setAutoFocus(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : undefined extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : react.react.Validator<boolean | undefined> */ js.Any
+    ): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+    
     inline def setAutoSave(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
     ): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
@@ -1095,11 +1121,17 @@ object WeakValidationMapButtonPr {
     
     inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
     
+    inline def setContent(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
+    ): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
     inline def setContentEditable(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.Booleanish | 'inherit' | undefined ? react.react.Validator<react.react.Booleanish | 'inherit' | undefined | null | undefined> : undefined extends react.react.Booleanish | 'inherit' | undefined ? react.react.Validator<react.react.Booleanish | 'inherit' | undefined | null | undefined> : react.react.Validator<react.react.Booleanish | 'inherit' | undefined> */ js.Any
     ): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setContextMenu(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
@@ -1166,6 +1198,12 @@ object WeakValidationMapButtonPr {
     ): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    
+    inline def setIconBeforeText(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : undefined extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : react.react.Validator<boolean | undefined> */ js.Any
+    ): Self = StObject.set(x, "iconBeforeText", value.asInstanceOf[js.Any])
+    
+    inline def setIconBeforeTextUndefined: Self = StObject.set(x, "iconBeforeText", js.undefined)
     
     inline def setId(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
@@ -1294,7 +1332,7 @@ object WeakValidationMapButtonPr {
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     inline def setOnClick(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends (event : react.react.MouseEvent<std.HTMLButtonElement, std.MouseEvent>): void | undefined ? react.react.Validator<(event : react.react.MouseEvent<std.HTMLButtonElement, std.MouseEvent>): void | undefined | null | undefined> : undefined extends (event : react.react.MouseEvent<std.HTMLButtonElement, std.MouseEvent>): void | undefined ? react.react.Validator<(event : react.react.MouseEvent<std.HTMLButtonElement, std.MouseEvent>): void | undefined | null | undefined> : react.react.Validator<(event : react.react.MouseEvent<std.HTMLButtonElement, std.MouseEvent>): void | undefined> */ js.Any
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.MouseEventHandler<std.HTMLButtonElement> | undefined ? react.react.Validator<react.react.MouseEventHandler<std.HTMLButtonElement> | undefined | null | undefined> : undefined extends react.react.MouseEventHandler<std.HTMLButtonElement> | undefined ? react.react.Validator<react.react.MouseEventHandler<std.HTMLButtonElement> | undefined | null | undefined> : react.react.Validator<react.react.MouseEventHandler<std.HTMLButtonElement> | undefined> */ js.Any
     ): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
@@ -1749,6 +1787,12 @@ object WeakValidationMapButtonPr {
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
+    inline def setRel(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
+    ): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    
     inline def setResource(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
     ): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
@@ -1760,6 +1804,12 @@ object WeakValidationMapButtonPr {
     ): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    
+    inline def setRev(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
+    ): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     inline def setRole(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.AriaRole | undefined ? react.react.Validator<react.react.AriaRole | undefined | null | undefined> : undefined extends react.react.AriaRole | undefined ? react.react.Validator<react.react.AriaRole | undefined | null | undefined> : react.react.Validator<react.react.AriaRole | undefined> */ js.Any

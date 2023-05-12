@@ -6,32 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object webglContextEventTypeMod {
   
-  @JSImport("ol/webgl/ContextEventType", JSImport.Default)
-  @js.native
-  object default extends StObject {
+  object default {
     
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[ContextEventType & String] = js.native
-    
-    /* "webglcontextlost" */ val LOST: typings.ol.webglContextEventTypeMod.ContextEventType.LOST & String = js.native
-    
-    /* "webglcontextrestored" */ val RESTORED: typings.ol.webglContextEventTypeMod.ContextEventType.RESTORED & String = js.native
-  }
-  
-  @js.native
-  sealed trait ContextEventType extends StObject
-  @JSImport("ol/webgl/ContextEventType", "ContextEventType")
-  @js.native
-  object ContextEventType extends StObject {
-    
+    @JSImport("ol/webgl/ContextEventType", "default.LOST")
     @js.native
-    sealed trait LOST
-      extends StObject
-         with ContextEventType
+    val LOST: String = js.native
     
+    @JSImport("ol/webgl/ContextEventType", "default.RESTORED")
     @js.native
-    sealed trait RESTORED
-      extends StObject
-         with ContextEventType
+    val RESTORED: String = js.native
   }
 }

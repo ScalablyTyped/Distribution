@@ -18,7 +18,7 @@ object typesObjectMod {
   
   inline def addNonEnumerableProperty(obj: StringDictionary[Any], name: String, value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addNonEnumerableProperty")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def convertToPlainObject[V /* <: Any */](value: V): DictownProps | Message | V = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToPlainObject")(value.asInstanceOf[js.Any]).asInstanceOf[DictownProps | Message | V]
+  inline def convertToPlainObject[V](value: V): DictownProps | Message | V = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToPlainObject")(value.asInstanceOf[js.Any]).asInstanceOf[DictownProps | Message | V]
   
   inline def dropUndefinedKeys[T](inputValue: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("dropUndefinedKeys")(inputValue.asInstanceOf[js.Any]).asInstanceOf[T]
   

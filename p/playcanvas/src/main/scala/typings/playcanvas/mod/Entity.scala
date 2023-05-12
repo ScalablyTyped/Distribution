@@ -26,9 +26,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Create a new Entity.
   *
   * @param {string} [name] - The non-unique name of the entity, default is "Untitled".
-  * @param {AppBase} [app] - The application the entity belongs to, default is the current application.
+  * @param {import('./app-base.js').AppBase} [app] - The application the entity belongs to,
+  * default is the current application.
   * @example
-  * var entity = new pc.Entity();
+  * const entity = new pc.Entity();
   *
   * // Add a Component to the Entity
   * entity.addComponent("camera", {
@@ -44,11 +45,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * entity.translate(10, 0, 0);
   *
   * // Or translate it by setting its position directly
-  * var p = entity.getPosition();
+  * const p = entity.getPosition();
   * entity.setPosition(p.x + 10, p.y, p.z);
   *
   * // Change the entity's rotation in local space
-  * var e = entity.getLocalEulerAngles();
+  * const e = entity.getLocalEulerAngles();
   * entity.setLocalEulerAngles(e.x, e.y + 90, e.z);
   *
   * // Or use rotateLocal
@@ -60,7 +61,7 @@ open class Entity () extends GraphNode {
   def this(name: Unit, app: AppBase) = this()
   
   /**
-    * @type {AppBase}
+    * @type {import('./app-base.js').AppBase}
     * @private
     */
   /* private */ var _app: Any = js.native
@@ -128,10 +129,10 @@ open class Entity () extends GraphNode {
     *
     * @param {object} [data] - The initialization data for the specific component type. Refer to
     * each specific component's API reference page for details on valid values for this parameter.
-    * @returns {Component|null} The new Component that was attached to the entity or null if there
-    * was an error.
+    * @returns {import('./components/component.js').Component|null} The new Component that was
+    * attached to the entity or null if there was an error.
     * @example
-    * var entity = new pc.Entity();
+    * const entity = new pc.Entity();
     *
     * // Add a light component with default properties
     * entity.addComponent("light");
@@ -148,7 +149,7 @@ open class Entity () extends GraphNode {
   /**
     * Gets the {@link AnimComponent} attached to this entity.
     *
-    * @type {AnimComponent|undefined}
+    * @type {import('./components/anim/component.js').AnimComponent|undefined}
     * @readonly
     */
   val anim: js.UndefOr[AnimComponent] = js.native
@@ -156,7 +157,7 @@ open class Entity () extends GraphNode {
   /**
     * Gets the {@link AnimationComponent} attached to this entity.
     *
-    * @type {AnimationComponent|undefined}
+    * @type {import('./components/animation/component.js').AnimationComponent|undefined}
     * @readonly
     */
   val animation: js.UndefOr[AnimationComponent] = js.native
@@ -164,7 +165,7 @@ open class Entity () extends GraphNode {
   /**
     * Gets the {@link AudioListenerComponent} attached to this entity.
     *
-    * @type {AudioListenerComponent|undefined}
+    * @type {import('./components/audio-listener/component.js').AudioListenerComponent|undefined}
     * @readonly
     */
   val audiolistener: js.UndefOr[AudioListenerComponent] = js.native
@@ -172,7 +173,7 @@ open class Entity () extends GraphNode {
   /**
     * Gets the {@link ButtonComponent} attached to this entity.
     *
-    * @type {ButtonComponent|undefined}
+    * @type {import('./components/button/component.js').ButtonComponent|undefined}
     * @readonly
     */
   val button: js.UndefOr[ButtonComponent] = js.native
@@ -180,7 +181,7 @@ open class Entity () extends GraphNode {
   /**
     * Component storage.
     *
-    * @type {Object<string, Component>}
+    * @type {Object<string, import('./components/component.js').Component>}
     * @ignore
     */
   var c: StringDictionary[Component] = js.native
@@ -188,7 +189,7 @@ open class Entity () extends GraphNode {
   /**
     * Gets the {@link CameraComponent} attached to this entity.
     *
-    * @type {CameraComponent|undefined}
+    * @type {import('./components/camera/component.js').CameraComponent|undefined}
     * @readonly
     */
   val camera: js.UndefOr[CameraComponent] = js.native
@@ -196,7 +197,7 @@ open class Entity () extends GraphNode {
   /**
     * Gets the {@link CollisionComponent} attached to this entity.
     *
-    * @type {CollisionComponent|undefined}
+    * @type {import('./components/collision/component.js').CollisionComponent|undefined}
     * @readonly
     */
   val collision: js.UndefOr[CollisionComponent] = js.native
@@ -206,7 +207,7 @@ open class Entity () extends GraphNode {
     * recursively destroy all ancestor Entities.
     *
     * @example
-    * var firstChild = this.entity.children[0];
+    * const firstChild = this.entity.children[0];
     * firstChild.destroy(); // delete child, all components and remove from hierarchy
     */
   def destroy(): Unit = js.native
@@ -214,7 +215,7 @@ open class Entity () extends GraphNode {
   /**
     * Gets the {@link ElementComponent} attached to this entity.
     *
-    * @type {ElementComponent|undefined}
+    * @type {import('./components/element/component.js').ElementComponent|undefined}
     * @readonly
     */
   val element: js.UndefOr[ElementComponent] = js.native
@@ -231,11 +232,11 @@ open class Entity () extends GraphNode {
     * Search the entity and all of its descendants for the first component of specified type.
     *
     * @param {string} type - The name of the component type to retrieve.
-    * @returns {Component} A component of specified type, if the entity or any of its descendants
-    * has one. Returns undefined otherwise.
+    * @returns {import('./components/component.js').Component} A component of specified type, if
+    * the entity or any of its descendants has one. Returns undefined otherwise.
     * @example
     * // Get the first found light component in the hierarchy tree that starts with this entity
-    * var light = entity.findComponent("light");
+    * const light = entity.findComponent("light");
     */
   def findComponent(`type`: String): Component = js.native
   
@@ -243,11 +244,11 @@ open class Entity () extends GraphNode {
     * Search the entity and all of its descendants for all components of specified type.
     *
     * @param {string} type - The name of the component type to retrieve.
-    * @returns {Component[]} All components of specified type in the entity or any of its
-    * descendants. Returns empty array if none found.
+    * @returns {import('./components/component.js').Component[]} All components of specified type
+    * in the entity or any of its descendants. Returns empty array if none found.
     * @example
     * // Get all light components in the hierarchy tree that starts with this entity
-    * var lights = entity.findComponents("light");
+    * const lights = entity.findComponents("light");
     */
   def findComponents(`type`: String): js.Array[Component] = js.native
   
@@ -262,7 +263,7 @@ open class Entity () extends GraphNode {
   /**
     * Gets the {@link LayoutChildComponent} attached to this entity.
     *
-    * @type {LayoutChildComponent|undefined}
+    * @type {import('./components/layout-child/component.js').LayoutChildComponent|undefined}
     * @readonly
     */
   val layoutchild: js.UndefOr[LayoutChildComponent] = js.native
@@ -270,7 +271,7 @@ open class Entity () extends GraphNode {
   /**
     * Gets the {@link LayoutGroupComponent} attached to this entity.
     *
-    * @type {LayoutGroupComponent|undefined}
+    * @type {import('./components/layout-group/component.js').LayoutGroupComponent|undefined}
     * @readonly
     */
   val layoutgroup: js.UndefOr[LayoutGroupComponent] = js.native
@@ -278,7 +279,7 @@ open class Entity () extends GraphNode {
   /**
     * Gets the {@link LightComponent} attached to this entity.
     *
-    * @type {LightComponent|undefined}
+    * @type {import('./components/light/component.js').LightComponent|undefined}
     * @readonly
     */
   val light: js.UndefOr[LightComponent] = js.native
@@ -286,7 +287,7 @@ open class Entity () extends GraphNode {
   /**
     * Gets the {@link ModelComponent} attached to this entity.
     *
-    * @type {ModelComponent|undefined}
+    * @type {import('./components/model/component.js').ModelComponent|undefined}
     * @readonly
     */
   val model: js.UndefOr[ModelComponent] = js.native
@@ -294,7 +295,7 @@ open class Entity () extends GraphNode {
   /**
     * Gets the {@link ParticleSystemComponent} attached to this entity.
     *
-    * @type {ParticleSystemComponent|undefined}
+    * @type {import('./components/particle-system/component.js').ParticleSystemComponent|undefined}
     * @readonly
     */
   val particlesystem: js.UndefOr[ParticleSystemComponent] = js.native
@@ -304,7 +305,7 @@ open class Entity () extends GraphNode {
     *
     * @param {string} type - The name of the Component type.
     * @example
-    * var entity = new pc.Entity();
+    * const entity = new pc.Entity();
     * entity.addComponent("light"); // add new light component
     *
     * entity.removeComponent("light"); // remove light component
@@ -314,7 +315,7 @@ open class Entity () extends GraphNode {
   /**
     * Gets the {@link RenderComponent} attached to this entity.
     *
-    * @type {RenderComponent|undefined}
+    * @type {import('./components/render/component.js').RenderComponent|undefined}
     * @readonly
     */
   val render: js.UndefOr[RenderComponent] = js.native
@@ -322,7 +323,7 @@ open class Entity () extends GraphNode {
   /**
     * Gets the {@link RigidBodyComponent} attached to this entity.
     *
-    * @type {RigidBodyComponent|undefined}
+    * @type {import('./components/rigid-body/component.js').RigidBodyComponent|undefined}
     * @readonly
     */
   val rigidbody: js.UndefOr[RigidBodyComponent] = js.native
@@ -330,7 +331,7 @@ open class Entity () extends GraphNode {
   /**
     * Gets the {@link ScreenComponent} attached to this entity.
     *
-    * @type {ScreenComponent|undefined}
+    * @type {import('./components/screen/component.js').ScreenComponent|undefined}
     * @readonly
     */
   val screen: js.UndefOr[ScreenComponent] = js.native
@@ -338,7 +339,7 @@ open class Entity () extends GraphNode {
   /**
     * Gets the {@link ScriptComponent} attached to this entity.
     *
-    * @type {ScriptComponent|undefined}
+    * @type {import('./components/script/component.js').ScriptComponent|undefined}
     * @readonly
     */
   val script: js.UndefOr[ScriptComponent] = js.native
@@ -346,7 +347,7 @@ open class Entity () extends GraphNode {
   /**
     * Gets the {@link ScrollbarComponent} attached to this entity.
     *
-    * @type {ScrollbarComponent|undefined}
+    * @type {import('./components/scrollbar/component.js').ScrollbarComponent|undefined}
     * @readonly
     */
   val scrollbar: js.UndefOr[ScrollbarComponent] = js.native
@@ -354,7 +355,7 @@ open class Entity () extends GraphNode {
   /**
     * Gets the {@link ScrollViewComponent} attached to this entity.
     *
-    * @type {ScrollViewComponent|undefined}
+    * @type {import('./components/scroll-view/component.js').ScrollViewComponent|undefined}
     * @readonly
     */
   val scrollview: js.UndefOr[ScrollViewComponent] = js.native
@@ -371,7 +372,7 @@ open class Entity () extends GraphNode {
   /**
     * Gets the {@link SoundComponent} attached to this entity.
     *
-    * @type {SoundComponent|undefined}
+    * @type {import('./components/sound/component.js').SoundComponent|undefined}
     * @readonly
     */
   val sound: js.UndefOr[SoundComponent] = js.native
@@ -379,7 +380,7 @@ open class Entity () extends GraphNode {
   /**
     * Gets the {@link SpriteComponent} attached to this entity.
     *
-    * @type {SpriteComponent|undefined}
+    * @type {import('./components/sprite/component.js').SpriteComponent|undefined}
     * @readonly
     */
   val sprite: js.UndefOr[SpriteComponent] = js.native

@@ -10,7 +10,7 @@ open class VerticalRectSeries protected () extends AbstractSeries[VerticalRectSe
   def this(props: VerticalRectSeriesProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: VerticalRectSeriesProps, context: Any) = this()
 }

@@ -12,7 +12,7 @@ trait GroupResourcesInput extends StObject {
   var Group: GroupString
   
   /**
-    * The list of ARNs for resources to be added to the group. 
+    * The list of ARNs of the resources to be added to the group. 
     */
   var ResourceArns: ResourceArnList
 }

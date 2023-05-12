@@ -1,7 +1,7 @@
 
 # Scala.js typings for tedious
 
-Typings are for version 15.1.0
+Typings are for version 16.0.0
 
 ## Library description:
 A TDS driver, for connecting to MS SQLServer databases.

@@ -5,7 +5,6 @@ import typings.gestalt.gestaltStrings.hidden
 import typings.gestalt.gestaltStrings.md
 import typings.gestalt.gestaltStrings.sm
 import typings.gestalt.gestaltStrings.visible
-import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
 import typings.std.Event
 import typings.std.HTMLInputElement
@@ -21,11 +20,11 @@ trait CheckboxProps extends StObject {
   
   var errorMessage: js.UndefOr[String] = js.undefined
   
-  var hasError: js.UndefOr[Boolean] = js.undefined
+  var helperText: js.UndefOr[String] = js.undefined
   
   var id: String
   
-  var image: js.UndefOr[ReactNode] = js.undefined
+  var image: js.UndefOr[Node] = js.undefined
   
   var indeterminate: js.UndefOr[Boolean] = js.undefined
   
@@ -40,8 +39,6 @@ trait CheckboxProps extends StObject {
   var onClick: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLInputElement, Event], Checked]] = js.undefined
   
   var size: js.UndefOr[sm | md] = js.undefined
-  
-  var subtext: js.UndefOr[String] = js.undefined
 }
 object CheckboxProps {
   
@@ -68,13 +65,13 @@ object CheckboxProps {
     
     inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
-    inline def setHasError(value: Boolean): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
+    inline def setHelperText(value: String): Self = StObject.set(x, "helperText", value.asInstanceOf[js.Any])
     
-    inline def setHasErrorUndefined: Self = StObject.set(x, "hasError", js.undefined)
+    inline def setHelperTextUndefined: Self = StObject.set(x, "helperText", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setImage(value: ReactNode): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Node): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
@@ -107,9 +104,5 @@ object CheckboxProps {
     inline def setSize(value: sm | md): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    
-    inline def setSubtext(value: String): Self = StObject.set(x, "subtext", value.asInstanceOf[js.Any])
-    
-    inline def setSubtextUndefined: Self = StObject.set(x, "subtext", js.undefined)
   }
 }

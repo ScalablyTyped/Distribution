@@ -17,7 +17,7 @@ trait ScalarTagtestRegExp extends StObject {
     * an explicit tag. For most cases, it's unlikely that you'll actually want to
     * use this, even if you first think you do.
     */
-  var default: Boolean
+  var default: js.UndefOr[Boolean] = js.undefined
   
   var collection: js.UndefOr[scala.Nothing] = js.undefined
   
@@ -92,12 +92,8 @@ trait ScalarTagtestRegExp extends StObject {
 }
 object ScalarTagtestRegExp {
   
-  inline def apply(
-    default: Boolean,
-    resolve: (String, js.Function1[/* message */ String, Unit], ParseOptions) => Any,
-    tag: String
-  ): ScalarTagtestRegExp = {
-    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], resolve = js.Any.fromFunction3(resolve), tag = tag.asInstanceOf[js.Any])
+  inline def apply(resolve: (String, js.Function1[/* message */ String, Unit], ParseOptions) => Any, tag: String): ScalarTagtestRegExp = {
+    val __obj = js.Dynamic.literal(resolve = js.Any.fromFunction3(resolve), tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalarTagtestRegExp]
   }
   
@@ -111,6 +107,8 @@ object ScalarTagtestRegExp {
     inline def setCreateNodeUndefined: Self = StObject.set(x, "createNode", js.undefined)
     
     inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
     inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

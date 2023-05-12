@@ -23,6 +23,8 @@ object materialsNodeBlocksDualLightBlockMod {
     
     /* private */ var _lightId: Any = js.native
     
+    /* private */ var _setTarget: Any = js.native
+    
     /**
       * Gets the camera (or eye) position component
       */
@@ -37,6 +39,9 @@ object materialsNodeBlocksDualLightBlockMod {
       * Gets the diffuse output component
       */
     def diffuseOutput: NodeMaterialConnectionPoint = js.native
+    
+    /** Indicates that no code should be generated in the vertex shader. Can be useful in some specific circumstances (like when doing ray marching for eg) */
+    var generateOnlyFragmentCode: Boolean = js.native
     
     /**
       * Gets the glossiness power component
@@ -82,5 +87,17 @@ object materialsNodeBlocksDualLightBlockMod {
       * Gets the world position input component
       */
     def worldPosition: NodeMaterialConnectionPoint = js.native
+  }
+  /* static members */
+  object LightBlock {
+    
+    @JSImport("babylonjs/Materials/Node/Blocks/Dual/lightBlock", "LightBlock")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("babylonjs/Materials/Node/Blocks/Dual/lightBlock", "LightBlock._OnGenerateOnlyFragmentCodeChanged")
+    @js.native
+    def _OnGenerateOnlyFragmentCodeChanged: Any = js.native
+    inline def _OnGenerateOnlyFragmentCodeChanged_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_OnGenerateOnlyFragmentCodeChanged")(x.asInstanceOf[js.Any])
   }
 }

@@ -17,7 +17,7 @@ trait AuthorizeSecurityGroupIngressRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The start of port range for the TCP and UDP protocols, or an ICMP type number. For the ICMP type number, use -1 to specify all types. If you specify all ICMP types, you must specify all codes. Alternatively, use a set of IP permissions to specify multiple rules and a description for the rule.
+    * If the protocol is TCP or UDP, this is the start of the port range. If the protocol is ICMP, this is the type number. A value of -1 indicates all ICMP types. If you specify all ICMP types, you must specify all ICMP codes. Alternatively, use a set of IP permissions to specify multiple rules and a description for the rule.
     */
   var FromPort: js.UndefOr[Integer] = js.undefined
   
@@ -57,7 +57,7 @@ trait AuthorizeSecurityGroupIngressRequest extends StObject {
   var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
   
   /**
-    * The end of port range for the TCP and UDP protocols, or an ICMP code number. For the ICMP code number, use -1 to specify all codes. If you specify all ICMP types, you must specify all codes. Alternatively, use a set of IP permissions to specify multiple rules and a description for the rule.
+    * If the protocol is TCP or UDP, this is the end of the port range. If the protocol is ICMP, this is the code. A value of -1 indicates all ICMP codes. If you specify all ICMP types, you must specify all ICMP codes. Alternatively, use a set of IP permissions to specify multiple rules and a description for the rule.
     */
   var ToPort: js.UndefOr[Integer] = js.undefined
 }

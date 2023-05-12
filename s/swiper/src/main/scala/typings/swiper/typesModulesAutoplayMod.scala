@@ -15,12 +15,12 @@ object typesModulesAutoplayMod {
     def autoplay(swiper: default): Unit
     
     /**
-      * Event will be fired on autoplay pause (on mouse/pointer enter), when `pauseOnMouseEnter` enabled
+      * Event will be fired on autoplay pause
       */
     def autoplayPause(swiper: default): Unit
     
     /**
-      * Event will be fired on autoplay resume (on mouse/pointer leave), when `pauseOnMouseEnter` enabled
+      * Event will be fired on autoplay resume
       */
     def autoplayResume(swiper: default): Unit
     
@@ -33,6 +33,11 @@ object typesModulesAutoplayMod {
       * Event will be fired when autoplay stopped
       */
     def autoplayStop(swiper: default): Unit
+    
+    /**
+      * Event triggers continuously while autoplay is enabled. It contains time left (in ms) before transition to next slide and percentage of that time related to autoplay delay
+      */
+    def autoplayTimeLeft(swiper: default, timeLeft: Double, percentage: Double): Unit
   }
   object AutoplayEvents {
     
@@ -41,9 +46,10 @@ object typesModulesAutoplayMod {
       autoplayPause: default => Unit,
       autoplayResume: default => Unit,
       autoplayStart: default => Unit,
-      autoplayStop: default => Unit
+      autoplayStop: default => Unit,
+      autoplayTimeLeft: (default, Double, Double) => Unit
     ): AutoplayEvents = {
-      val __obj = js.Dynamic.literal(autoplay = js.Any.fromFunction1(autoplay), autoplayPause = js.Any.fromFunction1(autoplayPause), autoplayResume = js.Any.fromFunction1(autoplayResume), autoplayStart = js.Any.fromFunction1(autoplayStart), autoplayStop = js.Any.fromFunction1(autoplayStop))
+      val __obj = js.Dynamic.literal(autoplay = js.Any.fromFunction1(autoplay), autoplayPause = js.Any.fromFunction1(autoplayPause), autoplayResume = js.Any.fromFunction1(autoplayResume), autoplayStart = js.Any.fromFunction1(autoplayStart), autoplayStop = js.Any.fromFunction1(autoplayStop), autoplayTimeLeft = js.Any.fromFunction3(autoplayTimeLeft))
       __obj.asInstanceOf[AutoplayEvents]
     }
     
@@ -59,42 +65,80 @@ object typesModulesAutoplayMod {
       inline def setAutoplayStart(value: default => Unit): Self = StObject.set(x, "autoplayStart", js.Any.fromFunction1(value))
       
       inline def setAutoplayStop(value: default => Unit): Self = StObject.set(x, "autoplayStop", js.Any.fromFunction1(value))
+      
+      inline def setAutoplayTimeLeft(value: (default, Double, Double) => Unit): Self = StObject.set(x, "autoplayTimeLeft", js.Any.fromFunction3(value))
     }
   }
   
-  @js.native
   trait AutoplayMethods extends StObject {
     
     /**
       * Pause autoplay
       */
-    def pause(): Unit = js.native
-    def pause(speed: Double): Unit = js.native
+    def pause(): Unit
     
     /**
       * Whether autoplay is paused
       */
-    var paused: Boolean = js.native
+    var paused: Boolean
     
     /**
-      * Run the autoplay logic
+      * Resume autoplay
       */
-    def run(): Unit = js.native
+    def resume(): Unit
     
     /**
       * Whether autoplay enabled and running
       */
-    var running: Boolean = js.native
+    var running: Boolean
     
     /**
       * Start autoplay
       */
-    def start(): Boolean = js.native
+    def start(): Boolean
     
     /**
       * Stop autoplay
       */
-    def stop(): Boolean = js.native
+    def stop(): Boolean
+    
+    /**
+      * If autoplay is paused, it contains time left (in ms) before transition to next slide
+      */
+    var timeLeft: Double
+  }
+  object AutoplayMethods {
+    
+    inline def apply(
+      pause: () => Unit,
+      paused: Boolean,
+      resume: () => Unit,
+      running: Boolean,
+      start: () => Boolean,
+      stop: () => Boolean,
+      timeLeft: Double
+    ): AutoplayMethods = {
+      val __obj = js.Dynamic.literal(pause = js.Any.fromFunction0(pause), paused = paused.asInstanceOf[js.Any], resume = js.Any.fromFunction0(resume), running = running.asInstanceOf[js.Any], start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop), timeLeft = timeLeft.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AutoplayMethods]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoplayMethods] (val x: Self) extends AnyVal {
+      
+      inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+      
+      inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+      
+      inline def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
+      
+      inline def setRunning(value: Boolean): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
+      
+      inline def setStart(value: () => Boolean): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      
+      inline def setStop(value: () => Boolean): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      
+      inline def setTimeLeft(value: Double): Self = StObject.set(x, "timeLeft", value.asInstanceOf[js.Any])
+    }
   }
   
   trait AutoplayOptions extends StObject {
@@ -124,7 +168,7 @@ object typesModulesAutoplayMod {
     var disableOnInteraction: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * When enabled autoplay will be paused on mouse enter over Swiper container. If `disableOnInteraction` is also enabled, it will stop autoplay instead of pause
+      * When enabled autoplay will be paused on pointer (mouse) enter over Swiper container.
       *
       * @default false
       */

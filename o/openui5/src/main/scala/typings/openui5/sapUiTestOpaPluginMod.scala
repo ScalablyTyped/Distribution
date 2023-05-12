@@ -2,6 +2,7 @@ package typings.openui5
 
 import typings.openui5.anon.ControlType
 import typings.openui5.anon.Editable
+import typings.openui5.anon.FragmentId
 import typings.openui5.sap.ClassInfo
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -91,11 +92,11 @@ object sapUiTestOpaPluginMod {
       *
       * @returns an array of the found controls (can be empty)
       */
-    def getAllControls(): js.Array[Any] = js.native
+    def getAllControls(): js.Array[typings.openui5.sapUiCoreElementMod.default] = js.native
     def getAllControls(/**
       * the control type, e.g: sap.m.CheckBox
       */
-    fnConstructorType: js.Function): js.Array[Any] = js.native
+    fnConstructorType: js.Function): js.Array[typings.openui5.sapUiCoreElementMod.default] = js.native
     def getAllControls(
       /**
       * the control type, e.g: sap.m.CheckBox
@@ -105,7 +106,7 @@ object sapUiTestOpaPluginMod {
       * optional control type name, e.g: "sap.m.CheckBox"
       */
     sControlType: String
-    ): js.Array[Any] = js.native
+    ): js.Array[typings.openui5.sapUiCoreElementMod.default] = js.native
     def getAllControls(
       /**
       * the control type, e.g: sap.m.CheckBox
@@ -115,7 +116,7 @@ object sapUiTestOpaPluginMod {
       * optional control type name, e.g: "sap.m.CheckBox"
       */
     sControlType: String
-    ): js.Array[Any] = js.native
+    ): js.Array[typings.openui5.sapUiCoreElementMod.default] = js.native
     
     /**
       * Find a control by its global ID.
@@ -162,10 +163,9 @@ object sapUiTestOpaPluginMod {
       */
     def getControlInView(
       /**
-      * can contain a viewName, viewNamespace, viewId, fragmentId, id and controlType properties. oOptions.id
-      * can be string, array or regular expression
+      * can contain a viewName, viewNamespace, viewId, fragmentId, id and controlType properties.
       */
-    oOptions: js.Object
+    options: FragmentId
     ): typings.openui5.sapUiCoreElementMod.default | js.Array[typings.openui5.sapUiCoreElementMod.default] | Null = js.native
     
     /**

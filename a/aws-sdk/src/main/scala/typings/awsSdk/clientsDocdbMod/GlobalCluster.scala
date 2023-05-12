@@ -42,7 +42,7 @@ trait GlobalCluster extends StObject {
   var GlobalClusterMembers: js.UndefOr[GlobalClusterMemberList] = js.undefined
   
   /**
-    * The Amazon Web Services Region-unique, immutable identifier for the global database cluster. This identifier is found in AWS CloudTrail log entries whenever the AWS KMS customer master key (CMK) for the cluster is accessed. 
+    * The Amazon Web Services Region-unique, immutable identifier for the global database cluster. This identifier is found in CloudTrail log entries whenever the KMS customer master key (CMK) for the cluster is accessed. 
     */
   var GlobalClusterResourceId: js.UndefOr[String] = js.undefined
   

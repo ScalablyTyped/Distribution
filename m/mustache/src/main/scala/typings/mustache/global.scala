@@ -51,7 +51,8 @@ object global {
     
     @JSGlobal("Mustache.escape")
     @js.native
-    val escape: EscapeFunction = js.native
+    def escape: EscapeFunction = js.native
+    inline def escape_=(x: EscapeFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("escape")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Mustache.name")
     @js.native

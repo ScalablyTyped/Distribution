@@ -17,7 +17,7 @@ trait CallAnalyticsJob extends StObject {
   var CallAnalyticsJobStatus: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.CallAnalyticsJobStatus] = js.undefined
   
   /**
-    * Allows you to specify which speaker is on which channel in your Call Analytics job request. For example, if your agent is the first participant to speak, you would set ChannelId to 0 (to indicate the first channel) and ParticipantRole to AGENT (to indicate that it's the agent speaking).
+    * Indicates which speaker is on which channel.
     */
   var ChannelDefinitions: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.ChannelDefinitions] = js.undefined
   
@@ -32,12 +32,12 @@ trait CallAnalyticsJob extends StObject {
   var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of an IAM role that has permissions to access the Amazon S3 bucket that contains your input files. If the role you specify doesn’t have the appropriate permissions to access the specified Amazon S3 location, your request fails. IAM role ARNs have the format arn:partition:iam::account:role/role-name-with-path. For example: arn:aws:iam::111122223333:role/Admin. For more information, see IAM ARNs.
+    * The Amazon Resource Name (ARN) you included in your request.
     */
   var DataAccessRoleArn: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.DataAccessRoleArn] = js.undefined
   
   /**
-    * If CallAnalyticsJobStatus is FAILED, FailureReason contains information about why the Call Analytics job request failed. The FailureReason field contains one of the following values:    Unsupported media format. The media format specified in MediaFormat isn't valid. Refer to MediaFormat for a list of supported formats.    The media format provided does not match the detected media format. The media format specified in MediaFormat doesn't match the format of the input file. Check the media format of your media file and correct the specified value.    Invalid sample rate for audio file. The sample rate specified in MediaSampleRateHertz isn't valid. The sample rate must be between 8,000 and 48,000 Hertz.    The sample rate provided does not match the detected sample rate. The sample rate specified in MediaSampleRateHertz doesn't match the sample rate detected in your input media file. Check the sample rate of your media file and correct the specified value.    Invalid file size: file size too large. The size of your media file is larger than what Amazon Transcribe can process. For more information, refer to Guidelines and quotas.    Invalid number of channels: number of channels too large. Your audio contains more channels than Amazon Transcribe is able to process. For more information, refer to Guidelines and quotas.  
+    * If CallAnalyticsJobStatus is FAILED, FailureReason contains information about why the Call Analytics job request failed. The FailureReason field contains one of the following values:    Unsupported media format. The media format specified in MediaFormat isn't valid. Refer to MediaFormat for a list of supported formats.    The media format provided does not match the detected media format. The media format specified in MediaFormat doesn't match the format of the input file. Check the media format of your media file and correct the specified value.    Invalid sample rate for audio file. The sample rate specified in MediaSampleRateHertz isn't valid. The sample rate must be between 8,000 and 48,000 hertz.    The sample rate provided does not match the detected sample rate. The sample rate specified in MediaSampleRateHertz doesn't match the sample rate detected in your input media file. Check the sample rate of your media file and correct the specified value.    Invalid file size: file size too large. The size of your media file is larger than what Amazon Transcribe can process. For more information, refer to Guidelines and quotas.    Invalid number of channels: number of channels too large. Your audio contains more channels than Amazon Transcribe is able to process. For more information, refer to Guidelines and quotas.  
     */
   var FailureReason: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.FailureReason] = js.undefined
   
@@ -51,6 +51,9 @@ trait CallAnalyticsJob extends StObject {
     */
   var LanguageCode: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.LanguageCode] = js.undefined
   
+  /**
+    * Provides the Amazon S3 location of the media file you used in your Call Analytics request.
+    */
   var Media: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.Media] = js.undefined
   
   /**
@@ -59,12 +62,12 @@ trait CallAnalyticsJob extends StObject {
   var MediaFormat: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.MediaFormat] = js.undefined
   
   /**
-    * The sample rate, in Hertz, of the audio track in your input media file.
+    * The sample rate, in hertz, of the audio track in your input media file.
     */
   var MediaSampleRateHertz: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.MediaSampleRateHertz] = js.undefined
   
   /**
-    * Allows additional optional settings in your request, including content redaction; allows you to apply custom language models, vocabulary filters, and custom vocabularies to your Call Analytics job.
+    * Provides information on any additional settings that were included in your request. Additional settings include content redaction and language identification settings.
     */
   var Settings: js.UndefOr[CallAnalyticsJobSettings] = js.undefined
   

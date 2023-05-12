@@ -4,7 +4,6 @@ import typings.angularCompilerCli.srcNgtscCoreApiSrcInterfacesMod.ResourceHostCo
 import typings.angularCompilerCli.srcNgtscCoreApiSrcInterfacesMod.TransformResourceResult
 import typings.angularCompilerCli.srcNgtscCoreApiSrcInterfacesMod.UnifiedModulesHost
 import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.AbsoluteFsPath
-import typings.angularCompilerCli.srcNgtscShimsApiMod.FactoryTracker
 import typings.std.Set
 import typings.typescript.mod.CompilerOptions
 import typings.typescript.mod.Diagnostic
@@ -64,13 +63,6 @@ object srcNgtscCoreApiSrcAdapterMod {
       * required.
       */
     val entryPoint: AbsoluteFsPath | Null
-    
-    /**
-      * A tracker for usage of symbols in `.ngfactory` shims.
-      *
-      * This can be left `null` if such shims are not a part of the `ts.Program`.
-      */
-    val factoryTracker: FactoryTracker | Null
     
     def fileExists(fileName: String): Boolean
     @JSName("fileExists")
@@ -181,7 +173,7 @@ object srcNgtscCoreApiSrcAdapterMod {
       readFile: /* fileName */ String => js.UndefOr[String],
       rootDirs: js.Array[AbsoluteFsPath]
     ): NgCompilerAdapter = {
-      val __obj = js.Dynamic.literal(constructionDiagnostics = constructionDiagnostics.asInstanceOf[js.Any], fileExists = js.Any.fromFunction1(fileExists), getCanonicalFileName = js.Any.fromFunction1(getCanonicalFileName), ignoreForEmit = ignoreForEmit.asInstanceOf[js.Any], isResource = js.Any.fromFunction1(isResource), isShim = js.Any.fromFunction1(isShim), readFile = js.Any.fromFunction1(readFile), rootDirs = rootDirs.asInstanceOf[js.Any], entryPoint = null, factoryTracker = null, unifiedModulesHost = null)
+      val __obj = js.Dynamic.literal(constructionDiagnostics = constructionDiagnostics.asInstanceOf[js.Any], fileExists = js.Any.fromFunction1(fileExists), getCanonicalFileName = js.Any.fromFunction1(getCanonicalFileName), ignoreForEmit = ignoreForEmit.asInstanceOf[js.Any], isResource = js.Any.fromFunction1(isResource), isShim = js.Any.fromFunction1(isShim), readFile = js.Any.fromFunction1(readFile), rootDirs = rootDirs.asInstanceOf[js.Any], entryPoint = null, unifiedModulesHost = null)
       __obj.asInstanceOf[NgCompilerAdapter]
     }
     
@@ -199,10 +191,6 @@ object srcNgtscCoreApiSrcAdapterMod {
       inline def setEntryPoint(value: AbsoluteFsPath): Self = StObject.set(x, "entryPoint", value.asInstanceOf[js.Any])
       
       inline def setEntryPointNull: Self = StObject.set(x, "entryPoint", null)
-      
-      inline def setFactoryTracker(value: FactoryTracker): Self = StObject.set(x, "factoryTracker", value.asInstanceOf[js.Any])
-      
-      inline def setFactoryTrackerNull: Self = StObject.set(x, "factoryTracker", null)
       
       inline def setFileExists(value: /* fileName */ String => Boolean): Self = StObject.set(x, "fileExists", js.Any.fromFunction1(value))
       

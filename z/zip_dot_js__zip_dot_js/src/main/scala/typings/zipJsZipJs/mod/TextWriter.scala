@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 /**
   * Creates the {@link TextWriter} instance
-  * 
+  *
   * @param encoding The encoding of the text.
   */
 open class TextWriter () extends Writer[String] {

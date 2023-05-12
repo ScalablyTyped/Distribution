@@ -11,7 +11,7 @@ object libUtilAssociationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def association(node: Association_): String = ^.asInstanceOf[js.Dynamic].applyDynamic("association")(node.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def association(node: Association): String = ^.asInstanceOf[js.Dynamic].applyDynamic("association")(node.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  type Association_ = Association
+  type AssociationId = typings.mdastUtilToMarkdown.libTypesMod.AssociationId
 }

@@ -52,8 +52,6 @@ object mod extends Shortcut {
       * @kind property
       * @access public
       *
-      * @type {any}
-      *
       * @description
       * Language subtag {@link http://www.unicode.org/reports/tr35/#Language_Locale_Field_Definitions}
       */
@@ -64,8 +62,6 @@ object mod extends Shortcut {
       * @memberof cldr.Attributes
       * @kind property
       * @access public
-      *
-      * @type {any}
       *
       * @description
       * Language Id {@link http://www.unicode.org/reports/tr35/#Unicode_language_identifier}
@@ -78,8 +74,6 @@ object mod extends Shortcut {
       * @kind property
       * @access public
       *
-      * @type {any}
-      *
       * @description
       * Maximized Language Id {@link http://www.unicode.org/reports/tr35/#Likely_Subtags}
       */
@@ -90,8 +84,6 @@ object mod extends Shortcut {
       * @memberof cldr.Attributes
       * @kind property
       * @access public
-      *
-      * @type {any}
       *
       * @description
       * Minimized Language Id {@link http://www.unicode.org/reports/tr35/#Likely_Subtags}
@@ -104,8 +96,6 @@ object mod extends Shortcut {
       * @kind property
       * @access public
       *
-      * @type {any}
-      *
       * @description
       * Region subtag {@link http://www.unicode.org/reports/tr35/#Language_Locale_Field_Definitions}
       */
@@ -117,8 +107,6 @@ object mod extends Shortcut {
       * @kind property
       * @access public
       *
-      * @type {any}
-      *
       * @description
       * Script subtag {@link http://www.unicode.org/reports/tr35/#Language_Locale_Field_Definitions}
       */
@@ -129,8 +117,6 @@ object mod extends Shortcut {
       * @memberof cldr.Attributes
       * @kind property
       * @access public
-      *
-      * @type {any}
       *
       * @description
       * Region subtag (territory variant) {@link http://www.unicode.org/reports/tr35/#Language_Locale_Field_Definitions}
@@ -244,8 +230,6 @@ object mod extends Shortcut {
       * @kind property
       * @access public
       *
-      * @type {cldr.Attributes}
-      *
       * @declaration
       * The object created during instance initialization and used internally by .get()
       * to replace dynamic parts of an item path.
@@ -286,8 +270,6 @@ object mod extends Shortcut {
       * @memberof cldr.CldrStatic
       * @kind property
       * @access public
-      *
-      * @type {string}
       *
       * @declaration
       * The locale string.

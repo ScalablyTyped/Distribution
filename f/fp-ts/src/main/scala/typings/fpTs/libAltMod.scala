@@ -1,6 +1,6 @@
 package typings.fpTs
 
-import typings.fpTs.libFunctionMod.Lazy
+import typings.fpTs.libFunctionMod.LazyArg
 import typings.fpTs.libFunctorMod.Functor
 import typings.fpTs.libFunctorMod.Functor1
 import typings.fpTs.libFunctorMod.Functor2
@@ -144,7 +144,7 @@ object libAltMod {
     
     def alt[A](
       fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any,
-      that: Lazy[
+      that: LazyArg[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any
         ]
     ): Any
@@ -153,7 +153,7 @@ object libAltMod {
     
     inline def apply[F](
       URI: F,
-      alt: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any, Lazy[
+      alt: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any, LazyArg[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any
         ]) => Any,
       map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any, js.Function1[Any, Any]) => Any
@@ -166,7 +166,7 @@ object libAltMod {
     implicit open class MutableBuilder[Self <: Alt[?], F] (val x: Self & Alt[F]) extends AnyVal {
       
       inline def setAlt(
-        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any, Lazy[
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any, LazyArg[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any
             ]) => Any
       ): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
@@ -179,7 +179,7 @@ object libAltMod {
     
     def alt[A](
       fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any,
-      that: Lazy[
+      that: LazyArg[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any
         ]
     ): Any
@@ -188,7 +188,7 @@ object libAltMod {
     
     inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](
       URI: F,
-      alt: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any, Lazy[
+      alt: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any, LazyArg[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any
         ]) => Any,
       map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any, js.Function1[Any, Any]) => Any
@@ -201,7 +201,7 @@ object libAltMod {
     implicit open class MutableBuilder[Self <: Alt1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & Alt1[F]) extends AnyVal {
       
       inline def setAlt(
-        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any, Lazy[
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any, LazyArg[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any
             ]) => Any
       ): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
@@ -214,7 +214,7 @@ object libAltMod {
     
     def alt[E, A](
       fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any,
-      that: Lazy[
+      that: LazyArg[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any
         ]
     ): Any
@@ -223,7 +223,7 @@ object libAltMod {
     
     inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](
       URI: F,
-      alt: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any, Lazy[
+      alt: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any, LazyArg[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any
         ]) => Any,
       map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any, js.Function1[Any, Any]) => Any
@@ -236,7 +236,7 @@ object libAltMod {
     implicit open class MutableBuilder[Self <: Alt2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & Alt2[F]) extends AnyVal {
       
       inline def setAlt(
-        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any, Lazy[
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any, LazyArg[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any
             ]) => Any
       ): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
@@ -249,7 +249,7 @@ object libAltMod {
     
     def alt[A](
       fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any,
-      that: Lazy[
+      that: LazyArg[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any
         ]
     ): Any
@@ -259,7 +259,7 @@ object libAltMod {
     inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](
       URI: F,
       _E: E,
-      alt: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any, Lazy[
+      alt: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any, LazyArg[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any
         ]) => Any,
       map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any, js.Function1[Any, Any]) => Any
@@ -272,7 +272,7 @@ object libAltMod {
     implicit open class MutableBuilder[Self <: Alt2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (Alt2C[F, E])) extends AnyVal {
       
       inline def setAlt(
-        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any, Lazy[
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any, LazyArg[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any
             ]) => Any
       ): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
@@ -285,7 +285,7 @@ object libAltMod {
     
     def alt[R, E, A](
       fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any,
-      that: Lazy[
+      that: LazyArg[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any
         ]
     ): Any
@@ -294,7 +294,7 @@ object libAltMod {
     
     inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](
       URI: F,
-      alt: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any, Lazy[
+      alt: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any, LazyArg[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any
         ]) => Any,
       map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any, js.Function1[Any, Any]) => Any
@@ -307,7 +307,7 @@ object libAltMod {
     implicit open class MutableBuilder[Self <: Alt3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */] (val x: Self & Alt3[F]) extends AnyVal {
       
       inline def setAlt(
-        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any, Lazy[
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any, LazyArg[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any
             ]) => Any
       ): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
@@ -320,7 +320,7 @@ object libAltMod {
     
     def alt[R, A](
       fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any,
-      that: Lazy[
+      that: LazyArg[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any
         ]
     ): Any
@@ -330,7 +330,7 @@ object libAltMod {
     inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](
       URI: F,
       _E: E,
-      alt: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any, Lazy[
+      alt: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any, LazyArg[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any
         ]) => Any,
       map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any, js.Function1[Any, Any]) => Any
@@ -343,7 +343,7 @@ object libAltMod {
     implicit open class MutableBuilder[Self <: Alt3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E] (val x: Self & (Alt3C[F, E])) extends AnyVal {
       
       inline def setAlt(
-        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any, Lazy[
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any, LazyArg[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any
             ]) => Any
       ): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
@@ -356,7 +356,7 @@ object libAltMod {
     
     def alt[S, R, E, A](
       fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ Any,
-      that: Lazy[
+      that: LazyArg[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ Any
         ]
     ): Any
@@ -365,7 +365,7 @@ object libAltMod {
     
     inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](
       URI: F,
-      alt: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ Any, Lazy[
+      alt: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ Any, LazyArg[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ Any
         ]) => Any,
       map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ Any, js.Function1[Any, Any]) => Any
@@ -378,7 +378,7 @@ object libAltMod {
     implicit open class MutableBuilder[Self <: Alt4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */] (val x: Self & Alt4[F]) extends AnyVal {
       
       inline def setAlt(
-        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ Any, Lazy[
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ Any, LazyArg[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ Any
             ]) => Any
       ): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))

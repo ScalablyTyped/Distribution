@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteCustomDBEngineVersionMessage extends StObject {
   
   /**
-    * The database engine. The only supported engine is custom-oracle-ee.
+    * The database engine. The only supported engines are custom-oracle-ee and custom-oracle-ee-cdb.
     */
   var Engine: CustomEngineName
   

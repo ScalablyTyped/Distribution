@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "emotion__unitless"
-version := "0.8.0-cdcbe9"
+version := "0.8.1-8418f1"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

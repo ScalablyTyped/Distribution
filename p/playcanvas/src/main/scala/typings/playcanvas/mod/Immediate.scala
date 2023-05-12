@@ -23,7 +23,7 @@ trait Immediate extends StObject {
   
   var cubeWorldPos: Any = js.native
   
-  var depthTextureShader: Shader = js.native
+  var depthTextureShader: Any = js.native
   
   var device: Any = js.native
   
@@ -35,13 +35,17 @@ trait Immediate extends StObject {
   
   def getBatch(layer: Any, depthTest: Any): Any = js.native
   
-  def getDepthTextureShader(): Shader = js.native
+  def getDepthTextureShader(): Any = js.native
   
   def getGraphNode(matrix: Any): GraphNode = js.native
   
   def getQuadMesh(): Mesh = js.native
   
-  def getTextureShader(): Shader = js.native
+  def getShader(id: Any, fragment: Any): Any = js.native
+  
+  def getTextureShader(): Any = js.native
+  
+  def getUnfilterableTextureShader(): Any = js.native
   
   var layerMeshInstances: Map[Any, Any] = js.native
   
@@ -55,7 +59,7 @@ trait Immediate extends StObject {
   
   var quadMesh: Mesh = js.native
   
-  var textureShader: Shader = js.native
+  var textureShader: Any = js.native
   
   var updatedLayers: Set[Any] = js.native
 }

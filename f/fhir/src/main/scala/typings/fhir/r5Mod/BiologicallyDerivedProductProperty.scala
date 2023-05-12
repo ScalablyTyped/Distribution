@@ -13,42 +13,52 @@ trait BiologicallyDerivedProductProperty
   var _valueString: js.UndefOr[Element] = js.undefined
   
   /**
-    * Code that specifies the property.
+    * The element is identified by name and system URI in the type. Some types may have multiple occurrences.
     */
   var `type`: CodeableConcept
   
   /**
-    * The value should be provided as a boolean, integer, CodeableConcept, quantity, range, or attachment. The description can be a string only when these others are not available.
+    * The value should be provided as a boolean, integer, CodeableConcept, period, quantity, range, ratio, or attachment. The description can be a string only when these others are not available. The type of value will depend on the property type and is specified in ST-027.
     */
   var valueAttachment: js.UndefOr[Attachment] = js.undefined
   
   /**
-    * The value should be provided as a boolean, integer, CodeableConcept, quantity, range, or attachment. The description can be a string only when these others are not available.
+    * The value should be provided as a boolean, integer, CodeableConcept, period, quantity, range, ratio, or attachment. The description can be a string only when these others are not available. The type of value will depend on the property type and is specified in ST-027.
     */
   var valueBoolean: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The value should be provided as a boolean, integer, CodeableConcept, quantity, range, or attachment. The description can be a string only when these others are not available.
+    * The value should be provided as a boolean, integer, CodeableConcept, period, quantity, range, ratio, or attachment. The description can be a string only when these others are not available. The type of value will depend on the property type and is specified in ST-027.
     */
   var valueCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * The value should be provided as a boolean, integer, CodeableConcept, quantity, range, or attachment. The description can be a string only when these others are not available.
+    * The value should be provided as a boolean, integer, CodeableConcept, period, quantity, range, ratio, or attachment. The description can be a string only when these others are not available. The type of value will depend on the property type and is specified in ST-027.
     */
   var valueInteger: js.UndefOr[Double] = js.undefined
   
   /**
-    * The value should be provided as a boolean, integer, CodeableConcept, quantity, range, or attachment. The description can be a string only when these others are not available.
+    * The value should be provided as a boolean, integer, CodeableConcept, period, quantity, range, ratio, or attachment. The description can be a string only when these others are not available. The type of value will depend on the property type and is specified in ST-027.
+    */
+  var valuePeriod: js.UndefOr[Period] = js.undefined
+  
+  /**
+    * The value should be provided as a boolean, integer, CodeableConcept, period, quantity, range, ratio, or attachment. The description can be a string only when these others are not available. The type of value will depend on the property type and is specified in ST-027.
     */
   var valueQuantity: js.UndefOr[Quantity] = js.undefined
   
   /**
-    * The value should be provided as a boolean, integer, CodeableConcept, quantity, range, or attachment. The description can be a string only when these others are not available.
+    * The value should be provided as a boolean, integer, CodeableConcept, period, quantity, range, ratio, or attachment. The description can be a string only when these others are not available. The type of value will depend on the property type and is specified in ST-027.
     */
   var valueRange: js.UndefOr[Range] = js.undefined
   
   /**
-    * The value should be provided as a boolean, integer, CodeableConcept, quantity, range, or attachment. The description can be a string only when these others are not available.
+    * The value should be provided as a boolean, integer, CodeableConcept, period, quantity, range, ratio, or attachment. The description can be a string only when these others are not available. The type of value will depend on the property type and is specified in ST-027.
+    */
+  var valueRatio: js.UndefOr[Ratio] = js.undefined
+  
+  /**
+    * The value should be provided as a boolean, integer, CodeableConcept, period, quantity, range, ratio, or attachment. The description can be a string only when these others are not available. The type of value will depend on the property type and is specified in ST-027.
     */
   var valueString: js.UndefOr[String] = js.undefined
 }
@@ -81,6 +91,10 @@ object BiologicallyDerivedProductProperty {
     
     inline def setValueIntegerUndefined: Self = StObject.set(x, "valueInteger", js.undefined)
     
+    inline def setValuePeriod(value: Period): Self = StObject.set(x, "valuePeriod", value.asInstanceOf[js.Any])
+    
+    inline def setValuePeriodUndefined: Self = StObject.set(x, "valuePeriod", js.undefined)
+    
     inline def setValueQuantity(value: Quantity): Self = StObject.set(x, "valueQuantity", value.asInstanceOf[js.Any])
     
     inline def setValueQuantityUndefined: Self = StObject.set(x, "valueQuantity", js.undefined)
@@ -88,6 +102,10 @@ object BiologicallyDerivedProductProperty {
     inline def setValueRange(value: Range): Self = StObject.set(x, "valueRange", value.asInstanceOf[js.Any])
     
     inline def setValueRangeUndefined: Self = StObject.set(x, "valueRange", js.undefined)
+    
+    inline def setValueRatio(value: Ratio): Self = StObject.set(x, "valueRatio", value.asInstanceOf[js.Any])
+    
+    inline def setValueRatioUndefined: Self = StObject.set(x, "valueRatio", js.undefined)
     
     inline def setValueString(value: String): Self = StObject.set(x, "valueString", value.asInstanceOf[js.Any])
     

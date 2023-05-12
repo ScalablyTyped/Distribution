@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EditorVisibleElements extends StObject {
   
   /**
-    * Indicates whether to display snapping controls' `Snapping layers`.
+    * (Since 4.26) Indicates whether to display tooltips while sketching.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#VisibleElements)
     */
-  var layerList: js.UndefOr[Boolean] = js.undefined
+  var sketchTooltipControls: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether snapping controls will be displayed.
@@ -37,9 +37,9 @@ object EditorVisibleElements {
   @scala.inline
   implicit open class MutableBuilder[Self <: EditorVisibleElements] (val x: Self) extends AnyVal {
     
-    inline def setLayerList(value: Boolean): Self = StObject.set(x, "layerList", value.asInstanceOf[js.Any])
+    inline def setSketchTooltipControls(value: Boolean): Self = StObject.set(x, "sketchTooltipControls", value.asInstanceOf[js.Any])
     
-    inline def setLayerListUndefined: Self = StObject.set(x, "layerList", js.undefined)
+    inline def setSketchTooltipControlsUndefined: Self = StObject.set(x, "sketchTooltipControls", js.undefined)
     
     inline def setSnappingControls(value: Boolean): Self = StObject.set(x, "snappingControls", value.asInstanceOf[js.Any])
     

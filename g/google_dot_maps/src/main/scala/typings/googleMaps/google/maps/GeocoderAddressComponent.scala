@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A single address component within a <code>GeocoderResult</code>. A full
-  * address may consist of multiple address components.
-  */
 trait GeocoderAddressComponent extends StObject {
   
   /**

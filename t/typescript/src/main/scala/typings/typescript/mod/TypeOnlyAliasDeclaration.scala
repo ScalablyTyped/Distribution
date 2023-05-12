@@ -5,12 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.typescript.anon.ImportClausereadonlyisTyp
-  - typings.typescript.anon.ImportEqualsDeclarationre
-  - typings.typescript.anon.NamespaceImportreadonlypa
-  - typings.typescript.anon.readonlyisTypeOnlytrueImp
-  - typings.typescript.anon.readonlyparentNamedImport
-  - typings.typescript.anon.readonlyisTypeOnlytrueExp
-  - typings.typescript.anon.readonlyparentNamedExport
+  - typings.typescript.mod.TypeOnlyImportDeclaration
+  - typings.typescript.mod.TypeOnlyExportDeclaration
 */
 trait TypeOnlyAliasDeclaration extends StObject

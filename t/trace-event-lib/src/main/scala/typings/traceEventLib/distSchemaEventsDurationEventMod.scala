@@ -1,6 +1,7 @@
 package typings.traceEventLib
 
 import typings.traceEventLib.distSchemaEventsEventWithStackMod.EventWithStack
+import typings.traceEventLib.distSchemaEventsTraceEventMod.TraceEvent
 import typings.traceEventLib.traceEventLibStrings.B
 import typings.traceEventLib.traceEventLibStrings.E
 import org.scalablytyped.runtime.StObject
@@ -11,7 +12,8 @@ object distSchemaEventsDurationEventMod {
   
   trait DurationBeginEvent
     extends StObject
-       with DurationEvent {
+       with DurationEvent
+       with TraceEvent {
     
     /** @inheritDoc */
     @JSName("name")
@@ -39,7 +41,8 @@ object distSchemaEventsDurationEventMod {
   
   trait DurationEndEvent
     extends StObject
-       with DurationEvent {
+       with DurationEvent
+       with TraceEvent {
     
     @JSName("cat")
     var cat_DurationEndEvent: js.UndefOr[scala.Nothing] = js.undefined

@@ -1,5 +1,9 @@
 package typings.vegaTypings
 
+import typings.geojson.mod.Feature
+import typings.geojson.mod.FeatureCollection
+import typings.geojson.mod.GeoJsonProperties
+import typings.geojson.mod.Geometry
 import typings.vegaTypings.typesSpecSignalMod.SignalRef
 import typings.vegaTypings.typesSpecUtilMod.Vector2
 import typings.vegaTypings.typesSpecUtilMod.Vector3
@@ -277,9 +281,9 @@ object typesSpecProjectionMod {
   
   type Fit = GeoJsonFeature | GeoJsonFeatureCollection | js.Array[GeoJsonFeature]
   
-  type GeoJsonFeature = Any
+  type GeoJsonFeature = Feature[Geometry, GeoJsonProperties]
   
-  type GeoJsonFeatureCollection = Any
+  type GeoJsonFeatureCollection = FeatureCollection[Geometry, GeoJsonProperties]
   
   trait Projection
     extends StObject

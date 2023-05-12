@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetComponentOutput extends StObject {
   
   /**
-    * 
+    * The component of an application registered with AWS Systems Manager for SAP.
     */
   var Component: js.UndefOr[typings.awsSdk.clientsSsmsapMod.Component] = js.undefined
 }

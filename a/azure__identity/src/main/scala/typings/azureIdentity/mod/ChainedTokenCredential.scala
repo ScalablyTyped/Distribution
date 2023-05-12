@@ -24,10 +24,7 @@ open class ChainedTokenCredential protected ()
     */
   def this(sources: TokenCredential*) = this()
   
-  /**
-    * The message to use when the chained token fails to get a token
-    */
-  /* protected */ var UnavailableMessage: String = js.native
-  
   /* private */ var _sources: Any = js.native
+  
+  /* private */ var getTokenInternal: Any = js.native
 }

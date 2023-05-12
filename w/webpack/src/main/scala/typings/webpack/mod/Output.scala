@@ -18,6 +18,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Output extends StObject {
   
   /**
+  	 * Add a container for define/require functions in the AMD module.
+  	 */
+  var amdContainer: js.UndefOr[String] = js.undefined
+  
+  /**
   	 * The filename of asset modules as relative path inside the 'output.path' directory.
   	 */
   var assetModuleFilename: js.UndefOr[
@@ -178,6 +183,11 @@ trait Output extends StObject {
   var hotUpdateMainFilename: js.UndefOr[String] = js.undefined
   
   /**
+  	 * Ignore warnings in the browser.
+  	 */
+  var ignoreBrowserWarnings: js.UndefOr[Boolean] = js.undefined
+  
+  /**
   	 * Wrap javascript code into IIFE's to avoid leaking into global scope.
   	 */
   var iife: js.UndefOr[Boolean] = js.undefined
@@ -285,6 +295,11 @@ trait Output extends StObject {
   var workerChunkLoading: js.UndefOr[String | `false`] = js.undefined
   
   /**
+  	 * Worker public path. Much like the public path, this sets the location where the worker script file is intended to be found. If not set, webpack will use the publicPath. Don't set this option unless your worker scripts are located at a different path from your other script files.
+  	 */
+  var workerPublicPath: js.UndefOr[String] = js.undefined
+  
+  /**
   	 * The method of loading WebAssembly Modules (methods included by default are 'fetch' (web/WebWorker), 'async-node' (node.js), but others might be added by plugins).
   	 */
   var workerWasmLoading: js.UndefOr[String | `false`] = js.undefined
@@ -298,6 +313,10 @@ object Output {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
+    
+    inline def setAmdContainer(value: String): Self = StObject.set(x, "amdContainer", value.asInstanceOf[js.Any])
+    
+    inline def setAmdContainerUndefined: Self = StObject.set(x, "amdContainer", js.undefined)
     
     inline def setAssetModuleFilename(
       value: String | (js.Function2[/* pathData */ PathData, /* assetInfo */ js.UndefOr[AssetInfo], String])
@@ -445,6 +464,10 @@ object Output {
     
     inline def setHotUpdateMainFilenameUndefined: Self = StObject.set(x, "hotUpdateMainFilename", js.undefined)
     
+    inline def setIgnoreBrowserWarnings(value: Boolean): Self = StObject.set(x, "ignoreBrowserWarnings", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreBrowserWarningsUndefined: Self = StObject.set(x, "ignoreBrowserWarnings", js.undefined)
+    
     inline def setIife(value: Boolean): Self = StObject.set(x, "iife", value.asInstanceOf[js.Any])
     
     inline def setIifeUndefined: Self = StObject.set(x, "iife", js.undefined)
@@ -536,6 +559,10 @@ object Output {
     inline def setWorkerChunkLoading(value: String | `false`): Self = StObject.set(x, "workerChunkLoading", value.asInstanceOf[js.Any])
     
     inline def setWorkerChunkLoadingUndefined: Self = StObject.set(x, "workerChunkLoading", js.undefined)
+    
+    inline def setWorkerPublicPath(value: String): Self = StObject.set(x, "workerPublicPath", value.asInstanceOf[js.Any])
+    
+    inline def setWorkerPublicPathUndefined: Self = StObject.set(x, "workerPublicPath", js.undefined)
     
     inline def setWorkerWasmLoading(value: String | `false`): Self = StObject.set(x, "workerWasmLoading", value.asInstanceOf[js.Any])
     

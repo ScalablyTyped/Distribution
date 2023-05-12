@@ -60,6 +60,15 @@ object mod {
   @js.native
   val global: Boolean = js.native
   
+  /**
+    * Returns a Boolean value indicating the state of the hasIndices flag (d) used with with a regular expression.
+    * Default is false. Read-only.
+    */
+  /* standard es2022.regexp */
+  @JSImport("snowflake-regex", "hasIndices")
+  @js.native
+  val hasIndices: Boolean = js.native
+  
   /** Returns a Boolean value indicating the state of the ignoreCase flag (i) used with a regular expression. Default is false. Read-only. */
   /* standard es5 */
   @JSImport("snowflake-regex", "ignoreCase")

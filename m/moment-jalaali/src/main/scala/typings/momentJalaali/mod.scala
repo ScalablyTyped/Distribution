@@ -11,8 +11,14 @@ import typings.moment.mod.MomentFormatSpecification
 import typings.moment.mod.MomentInput
 import typings.moment.mod.MomentParsingFlagsOpt
 import typings.moment.mod.unitOfTime.All
+import typings.momentJalaali.mod.momentAugmentingMod.LoadPashtoOptions
+import typings.momentJalaali.mod.momentAugmentingMod.LoadPersianDariOptions
 import typings.momentJalaali.mod.momentAugmentingMod.LoadPersianOptions
+import typings.momentJalaali.momentJalaaliStrings.`pashto-modern`
+import typings.momentJalaali.momentJalaaliStrings.`persian-dari-modern`
+import typings.momentJalaali.momentJalaaliStrings.`persian-dari`
 import typings.momentJalaali.momentJalaaliStrings.`persian-modern`
+import typings.momentJalaali.momentJalaaliStrings.pashto
 import typings.momentJalaali.momentJalaaliStrings.persian
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -160,10 +166,22 @@ object mod {
   inline def lang(language: Unit, definition: Locale_): String = (^.asInstanceOf[js.Dynamic].applyDynamic("lang")(language.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
+    * Add pashto language.
+    */
+  inline def loadPashto(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadPashto")().asInstanceOf[Unit]
+  inline def loadPashto(options: LoadPashtoOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadPashto")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  /**
     * Add persian language.
     */
   inline def loadPersian(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadPersian")().asInstanceOf[Unit]
   inline def loadPersian(options: LoadPersianOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadPersian")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  /**
+    * Add persian-dari language.
+    */
+  inline def loadPersianDari(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadPersian_dari")().asInstanceOf[Unit]
+  inline def loadPersianDari(options: LoadPersianDariOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadPersian_dari")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def locale(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")().asInstanceOf[String]
   inline def locale(language: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")(language.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -197,9 +215,19 @@ object mod {
     inline def jIsLeapYear(year: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("jIsLeapYear")(year.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
+      * Add pashto language.
+      */
+    inline def loadPashto(options: js.UndefOr[LoadPashtoOptions]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadPashto")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    /**
       * Add persian language.
       */
     inline def loadPersian(options: js.UndefOr[LoadPersianOptions]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadPersian")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    /**
+      * Add persian-dari language.
+      */
+    inline def loadPersianDari(options: js.UndefOr[LoadPersianDariOptions]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadPersian_dari")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* Rewritten from type alias, can be one of: 
       - typings.momentJalaali.momentJalaaliStrings.jYear
@@ -211,6 +239,74 @@ object mod {
       inline def jMonth: typings.momentJalaali.momentJalaaliStrings.jMonth = "jMonth".asInstanceOf[typings.momentJalaali.momentJalaaliStrings.jMonth]
       
       inline def jYear: typings.momentJalaali.momentJalaaliStrings.jYear = "jYear".asInstanceOf[typings.momentJalaali.momentJalaaliStrings.jYear]
+    }
+    
+    trait LoadPashtoOptions extends StObject {
+      
+      /**
+        * use dialect option to change usePashto dialect, available options are:
+        *      pashto: default dialect(مرغومی، سلواغ، ...)
+        *      pashto-modern: modern dialect(وری، جمعه، ...)
+        */
+      var dialect: js.UndefOr[pashto | `pashto-modern`] = js.undefined
+      
+      /**
+        * Use persian digits as decribed by unicode
+        */
+      var usePersianDigits: js.UndefOr[Boolean] = js.undefined
+    }
+    object LoadPashtoOptions {
+      
+      inline def apply(): LoadPashtoOptions = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[LoadPashtoOptions]
+      }
+      
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LoadPashtoOptions] (val x: Self) extends AnyVal {
+        
+        inline def setDialect(value: pashto | `pashto-modern`): Self = StObject.set(x, "dialect", value.asInstanceOf[js.Any])
+        
+        inline def setDialectUndefined: Self = StObject.set(x, "dialect", js.undefined)
+        
+        inline def setUsePersianDigits(value: Boolean): Self = StObject.set(x, "usePersianDigits", value.asInstanceOf[js.Any])
+        
+        inline def setUsePersianDigitsUndefined: Self = StObject.set(x, "usePersianDigits", js.undefined)
+      }
+    }
+    
+    trait LoadPersianDariOptions extends StObject {
+      
+      /**
+        * use dialect option to change usePersian-dari dialect, available options are:
+        *      persian-dari: default dialect(ثور، حمل ...)
+        *      persian-dari-modern: modern dialect(حمل، جمعه، ...)
+        */
+      var dialect: js.UndefOr[`persian-dari` | `persian-dari-modern`] = js.undefined
+      
+      /**
+        * Use persian digits as decribed by unicode
+        */
+      var usePersianDigits: js.UndefOr[Boolean] = js.undefined
+    }
+    object LoadPersianDariOptions {
+      
+      inline def apply(): LoadPersianDariOptions = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[LoadPersianDariOptions]
+      }
+      
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LoadPersianDariOptions] (val x: Self) extends AnyVal {
+        
+        inline def setDialect(value: `persian-dari` | `persian-dari-modern`): Self = StObject.set(x, "dialect", value.asInstanceOf[js.Any])
+        
+        inline def setDialectUndefined: Self = StObject.set(x, "dialect", js.undefined)
+        
+        inline def setUsePersianDigits(value: Boolean): Self = StObject.set(x, "usePersianDigits", value.asInstanceOf[js.Any])
+        
+        inline def setUsePersianDigitsUndefined: Self = StObject.set(x, "usePersianDigits", js.undefined)
+      }
     }
     
     trait LoadPersianOptions extends StObject {

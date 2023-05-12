@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@libp2p/interface-connection" : "3.0.2"
+      "@libp2p/interface-connection" : "5.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@libp2p/interface-connection" : "3.0.2"
+      "@libp2p/interface-connection" : "5.0.2"
     }
   ],
   "compile-devDependencies" : [

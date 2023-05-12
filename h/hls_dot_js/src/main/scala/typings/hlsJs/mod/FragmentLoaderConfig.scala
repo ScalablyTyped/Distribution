@@ -6,8 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FragmentLoaderConfig extends StObject {
   
-  var fLoader: js.UndefOr[FragmentLoaderConstructor] = js.undefined
-  
   var fragLoadingMaxRetry: Double
   
   var fragLoadingMaxRetryTimeout: Double
@@ -30,10 +28,6 @@ object FragmentLoaderConfig {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: FragmentLoaderConfig] (val x: Self) extends AnyVal {
-    
-    inline def setFLoader(value: FragmentLoaderConstructor): Self = StObject.set(x, "fLoader", value.asInstanceOf[js.Any])
-    
-    inline def setFLoaderUndefined: Self = StObject.set(x, "fLoader", js.undefined)
     
     inline def setFragLoadingMaxRetry(value: Double): Self = StObject.set(x, "fragLoadingMaxRetry", value.asInstanceOf[js.Any])
     

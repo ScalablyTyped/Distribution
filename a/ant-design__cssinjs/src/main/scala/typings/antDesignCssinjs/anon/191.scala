@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderLeft
+import typings.csstype.mod.Property.FontVariantCaps
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `191` extends StObject {
   
   var value: js.UndefOr[
-    (BorderLeft[Double | String]) | (js.Array[
+    FontVariantCaps | (js.Array[
       (Extract[
-        js.UndefOr[
-          (BorderLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderLeft[Double | String]]]])
-        ], 
+        js.UndefOr[FontVariantCaps | js.Array[NonNullable[js.UndefOr[FontVariantCaps]]]], 
         String
-      ]) | (NonNullable[js.UndefOr[BorderLeft[Double | String]]])
+      ]) | NonNullable[js.UndefOr[FontVariantCaps]]
     ])
   ] = js.native
 }

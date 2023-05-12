@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetParametersQueryPerpageRef extends StObject {
   
   /**
-    * Lists all instances of the specified code scanning alert.
+    * List instances of a code scanning alert
+    * @description Lists all instances of the specified code scanning alert.
     * You must use an access token with the `security_events` scope to use this endpoint with private repos,
     * the `public_repo` scope also grants permission to read security events on public repos only.
     * GitHub Apps must have the `security_events` read permission to use this endpoint.

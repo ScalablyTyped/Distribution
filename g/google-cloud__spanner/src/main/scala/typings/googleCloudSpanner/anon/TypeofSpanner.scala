@@ -4,6 +4,7 @@ import typings.googleCloudPreciseDate.mod.PreciseDate
 import typings.googleCloudSpanner.buildSrcCodecMod.Float
 import typings.googleCloudSpanner.buildSrcCodecMod.Int
 import typings.googleCloudSpanner.buildSrcCodecMod.Numeric
+import typings.googleCloudSpanner.buildSrcCodecMod.PGJsonb
 import typings.googleCloudSpanner.buildSrcCodecMod.PGNumeric
 import typings.googleCloudSpanner.buildSrcCodecMod.Struct
 import typings.protobufjs.mod.common.ITimestamp
@@ -86,6 +87,26 @@ trait TypeofSpanner extends StObject {
     */
   /* static member */
   def numeric(value: Any): Numeric = js.native
+  
+  /**
+    * Helper function to get a Cloud Spanner pgJsonb object.
+    *
+    * @param {object|string} value The pgJsonb value as a string or object.
+    * @returns {PGJsonb}
+    *
+    * @example
+    * ```
+    * const {Spanner} = require('@google-cloud/spanner');
+    * const pgJsonb1 = Spanner.pgJsonb({rating: 6});
+    * const pgJsonb2 = Spanner.pgJsonb(`[
+    *         {
+    *           "name": null,
+    *           "open": true
+    *         }]`)
+    * ```
+    */
+  /* static member */
+  def pgJsonb(value: Any): PGJsonb = js.native
   
   /**
     * Helper function to get a Cloud Spanner pgNumeric object.

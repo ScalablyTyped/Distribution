@@ -6,53 +6,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object tileStateMod {
   
-  @JSImport("ol/TileState", JSImport.Default)
-  @js.native
-  object default extends StObject {
+  object default {
     
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[TileState & Double] = js.native
-    
-    /* 4 */ val EMPTY: typings.ol.tileStateMod.TileState.EMPTY & Double = js.native
-    
-    /* 3 */ val ERROR: typings.ol.tileStateMod.TileState.ERROR & Double = js.native
-    
-    /* 0 */ val IDLE: typings.ol.tileStateMod.TileState.IDLE & Double = js.native
-    
-    /* 2 */ val LOADED: typings.ol.tileStateMod.TileState.LOADED & Double = js.native
-    
-    /* 1 */ val LOADING: typings.ol.tileStateMod.TileState.LOADING & Double = js.native
-  }
-  
-  @js.native
-  sealed trait TileState extends StObject
-  @JSImport("ol/TileState", "TileState")
-  @js.native
-  object TileState extends StObject {
-    
+    @JSImport("ol/TileState", "default.EMPTY")
     @js.native
-    sealed trait EMPTY
-      extends StObject
-         with TileState
+    val EMPTY: Double = js.native
     
+    @JSImport("ol/TileState", "default.ERROR")
     @js.native
-    sealed trait ERROR
-      extends StObject
-         with TileState
+    val ERROR: Double = js.native
     
+    @JSImport("ol/TileState", "default.IDLE")
     @js.native
-    sealed trait IDLE
-      extends StObject
-         with TileState
+    val IDLE: Double = js.native
     
+    @JSImport("ol/TileState", "default.LOADED")
     @js.native
-    sealed trait LOADED
-      extends StObject
-         with TileState
+    val LOADED: Double = js.native
     
+    @JSImport("ol/TileState", "default.LOADING")
     @js.native
-    sealed trait LOADING
-      extends StObject
-         with TileState
+    val LOADING: Double = js.native
   }
 }

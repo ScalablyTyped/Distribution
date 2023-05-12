@@ -34,6 +34,11 @@ type AppCreator = js.Function1[/* moduleData */ AppData, AppMethods]
 type AttributeDictionary = StringDictionary[Name]
 
 /**
+  * A callback with no arguments.
+  */ 
+type Callback = js.Function0[Unit]
+
+/**
   * A callback to receive `Contact` API object instances.
   *
   * @param contact A `Contact` API object instance.

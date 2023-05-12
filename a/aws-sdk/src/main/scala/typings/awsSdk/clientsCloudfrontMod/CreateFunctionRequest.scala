@@ -12,7 +12,7 @@ trait CreateFunctionRequest extends StObject {
   var FunctionCode: FunctionBlob
   
   /**
-    * Configuration information about the function, including an optional comment and the function’s runtime.
+    * Configuration information about the function, including an optional comment and the function's runtime.
     */
   var FunctionConfig: typings.awsSdk.clientsCloudfrontMod.FunctionConfig
   

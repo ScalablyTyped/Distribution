@@ -16,6 +16,8 @@ trait FeatureLayerEditsEvent extends StObject {
   
   var editedFeatures: EditedFeatureResult
   
+  var exceededTransferLimit: Boolean
+  
   var updatedAttachments: js.Array[FeatureEditResult]
   
   var updatedFeatures: js.Array[FeatureEditResult]
@@ -28,10 +30,11 @@ object FeatureLayerEditsEvent {
     deletedAttachments: js.Array[FeatureEditResult],
     deletedFeatures: js.Array[FeatureEditResult],
     editedFeatures: EditedFeatureResult,
+    exceededTransferLimit: Boolean,
     updatedAttachments: js.Array[FeatureEditResult],
     updatedFeatures: js.Array[FeatureEditResult]
   ): FeatureLayerEditsEvent = {
-    val __obj = js.Dynamic.literal(addedAttachments = addedAttachments.asInstanceOf[js.Any], addedFeatures = addedFeatures.asInstanceOf[js.Any], deletedAttachments = deletedAttachments.asInstanceOf[js.Any], deletedFeatures = deletedFeatures.asInstanceOf[js.Any], editedFeatures = editedFeatures.asInstanceOf[js.Any], updatedAttachments = updatedAttachments.asInstanceOf[js.Any], updatedFeatures = updatedFeatures.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addedAttachments = addedAttachments.asInstanceOf[js.Any], addedFeatures = addedFeatures.asInstanceOf[js.Any], deletedAttachments = deletedAttachments.asInstanceOf[js.Any], deletedFeatures = deletedFeatures.asInstanceOf[js.Any], editedFeatures = editedFeatures.asInstanceOf[js.Any], exceededTransferLimit = exceededTransferLimit.asInstanceOf[js.Any], updatedAttachments = updatedAttachments.asInstanceOf[js.Any], updatedFeatures = updatedFeatures.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureLayerEditsEvent]
   }
   
@@ -55,6 +58,8 @@ object FeatureLayerEditsEvent {
     inline def setDeletedFeaturesVarargs(value: FeatureEditResult*): Self = StObject.set(x, "deletedFeatures", js.Array(value*))
     
     inline def setEditedFeatures(value: EditedFeatureResult): Self = StObject.set(x, "editedFeatures", value.asInstanceOf[js.Any])
+    
+    inline def setExceededTransferLimit(value: Boolean): Self = StObject.set(x, "exceededTransferLimit", value.asInstanceOf[js.Any])
     
     inline def setUpdatedAttachments(value: js.Array[FeatureEditResult]): Self = StObject.set(x, "updatedAttachments", value.asInstanceOf[js.Any])
     

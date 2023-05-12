@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetFindingsResponse extends StObject {
   
   /**
-    * An array of objects, one for each finding that meets the criteria specified in the request.
+    * An array of objects, one for each finding that matches the criteria specified in the request.
     */
   var findings: js.UndefOr[listOfFinding] = js.undefined
 }

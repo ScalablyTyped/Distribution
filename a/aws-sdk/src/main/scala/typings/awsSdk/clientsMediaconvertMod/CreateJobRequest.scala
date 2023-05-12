@@ -17,7 +17,7 @@ trait CreateJobRequest extends StObject {
   var BillingTagsSource: js.UndefOr[typings.awsSdk.clientsMediaconvertMod.BillingTagsSource] = js.undefined
   
   /**
-    * Optional. Idempotency token for CreateJob operation.
+    * Prevent duplicate jobs from being created and ensure idempotency for your requests. A client request token can be any string that includes up to 64 ASCII characters. If you reuse a client request token within one minute of a successful request, the API returns the job details of the original request instead. For more information see https://docs.aws.amazon.com/mediaconvert/latest/apireference/idempotency.html.
     */
   var ClientRequestToken: js.UndefOr[string] = js.undefined
   

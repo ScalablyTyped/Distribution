@@ -16,22 +16,22 @@ object geomFlatFlipMod {
     offset: Double,
     end: Double,
     stride: Double,
-    opt_dest: js.Array[Double]
-  ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("flipXY")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], opt_dest.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    dest: js.Array[Double]
+  ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("flipXY")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   inline def flipXY(
     flatCoordinates: js.Array[Double],
     offset: Double,
     end: Double,
     stride: Double,
-    opt_dest: js.Array[Double],
-    opt_destOffset: Double
-  ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("flipXY")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], opt_dest.asInstanceOf[js.Any], opt_destOffset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    dest: js.Array[Double],
+    destOffset: Double
+  ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("flipXY")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], destOffset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   inline def flipXY(
     flatCoordinates: js.Array[Double],
     offset: Double,
     end: Double,
     stride: Double,
-    opt_dest: Unit,
-    opt_destOffset: Double
-  ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("flipXY")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], opt_dest.asInstanceOf[js.Any], opt_destOffset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    dest: Unit,
+    destOffset: Double
+  ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("flipXY")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], destOffset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
 }

@@ -1,6 +1,6 @@
 package typings.openui5
 
-import typings.openui5.anon.Data
+import typings.openui5.anon.`4`
 import typings.openui5.sap.ClassInfo
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -121,6 +121,8 @@ object sapUiModelBindingMod {
     extends typings.openui5.sapUiBaseEventProviderMod.default {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Attaches event handler `fnFunction` to the {@link #event:AggregatedDataStateChange AggregatedDataStateChange}
       * event of this `sap.ui.model.Binding`.
       *
@@ -206,6 +208,8 @@ object sapUiModelBindingMod {
     ): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Attaches the `fnFunction` event handler to the {@link #event:DataStateChange DataStateChange} event of
       * thi `sap.ui.model.Binding`.
       *
@@ -228,6 +232,8 @@ object sapUiModelBindingMod {
     ): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Attach multiple events.
       *
       * @returns A reference to itself
@@ -238,6 +244,8 @@ object sapUiModelBindingMod {
     oEvents: Record[String, js.Function]): Binding = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Attaches event handler `fnFunction` to the {@link #event:refresh refresh} event of this `sap.ui.model.Binding`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -259,6 +267,8 @@ object sapUiModelBindingMod {
     ): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Detaches event handler `fnFunction` from the {@link #event:AggregatedDataStateChange AggregatedDataStateChange}
       * event of this `sap.ui.model.Binding`.
       */
@@ -333,6 +343,8 @@ object sapUiModelBindingMod {
     ): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Detaches event handler `fnFunction` from the {@link #event:DataStateChange DataStateChange} event of
       * this `sap.ui.model.Binding`.
       */
@@ -352,6 +364,8 @@ object sapUiModelBindingMod {
     ): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Detach multiple events.
       *
       * @returns A reference to itself
@@ -362,6 +376,8 @@ object sapUiModelBindingMod {
     oEvents: Record[String, js.Function]): Binding = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Detaches event handler `fnFunction` from the {@link #event:refresh refresh} event of this `sap.ui.model.Binding`.
       */
     def detachRefresh(/**
@@ -380,6 +396,8 @@ object sapUiModelBindingMod {
     ): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:dataReceived dataReceived} to attached listeners.
       *
       * This event may also be fired when an error occurred.
@@ -387,9 +405,11 @@ object sapUiModelBindingMod {
     def fireDataReceived(/**
       * Parameters to pass along with the event
       */
-    oParameters: Data): Unit = js.native
+    oParameters: `4`): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:dataRequested dataRequested} to attached listeners.
       */
     def fireDataRequested(/**
@@ -451,6 +471,8 @@ object sapUiModelBindingMod {
     def getResolvedPath(): js.UndefOr[String] = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Initialize the binding. The message should be called when creating a binding. The default implementation
       * calls checkUpdate(true).
       */
@@ -551,6 +573,8 @@ object sapUiModelBindingMod {
     def suspend(): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Determines if the binding should be updated by comparing the current model against a specified model.
       *
       * @returns Whether this binding should be updated

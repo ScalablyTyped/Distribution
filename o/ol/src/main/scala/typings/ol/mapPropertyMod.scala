@@ -6,46 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mapPropertyMod {
   
-  @JSImport("ol/MapProperty", JSImport.Default)
-  @js.native
-  object default extends StObject {
+  object default {
     
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[MapProperty & String] = js.native
-    
-    /* "layergroup" */ val LAYERGROUP: typings.ol.mapPropertyMod.MapProperty.LAYERGROUP & String = js.native
-    
-    /* "size" */ val SIZE: typings.ol.mapPropertyMod.MapProperty.SIZE & String = js.native
-    
-    /* "target" */ val TARGET: typings.ol.mapPropertyMod.MapProperty.TARGET & String = js.native
-    
-    /* "view" */ val VIEW: typings.ol.mapPropertyMod.MapProperty.VIEW & String = js.native
-  }
-  
-  @js.native
-  sealed trait MapProperty extends StObject
-  @JSImport("ol/MapProperty", "MapProperty")
-  @js.native
-  object MapProperty extends StObject {
-    
+    @JSImport("ol/MapProperty", "default.LAYERGROUP")
     @js.native
-    sealed trait LAYERGROUP
-      extends StObject
-         with MapProperty
+    val LAYERGROUP: String = js.native
     
+    @JSImport("ol/MapProperty", "default.SIZE")
     @js.native
-    sealed trait SIZE
-      extends StObject
-         with MapProperty
+    val SIZE: String = js.native
     
+    @JSImport("ol/MapProperty", "default.TARGET")
     @js.native
-    sealed trait TARGET
-      extends StObject
-         with MapProperty
+    val TARGET: String = js.native
     
+    @JSImport("ol/MapProperty", "default.VIEW")
     @js.native
-    sealed trait VIEW
-      extends StObject
-         with MapProperty
+    val VIEW: String = js.native
   }
 }

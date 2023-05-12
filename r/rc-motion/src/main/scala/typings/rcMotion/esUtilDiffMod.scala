@@ -40,6 +40,7 @@ object esUtilDiffMod {
   inline def parseKeys(): js.Array[Status] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseKeys")().asInstanceOf[js.Array[Status]]
   inline def parseKeys(keys: js.Array[Any]): js.Array[Status] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseKeys")(keys.asInstanceOf[js.Any]).asInstanceOf[js.Array[Status]]
   
+  inline def wrapKeyToObject(key: KeyObject): Status = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapKeyToObject")(key.asInstanceOf[js.Any]).asInstanceOf[Status]
   inline def wrapKeyToObject(key: Key): Status = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapKeyToObject")(key.asInstanceOf[js.Any]).asInstanceOf[Status]
   
   /* Rewritten from type alias, can be one of: 

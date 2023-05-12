@@ -1,6 +1,6 @@
 package typings.openui5.anon
 
-import typings.openui5.sapMMessagePopoverItemMod.default
+import typings.openui5.sapMMessageItemMod.default
 import typings.openui5.sapUiCoreLibraryMod.MessageType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MessageTypeFilter extends StObject {
   
   /**
-    * Refers to the `MessagePopover` item that is being presented.
+    * Refers to the message item that is being presented.
     */
   var item: js.UndefOr[default] = js.undefined
   
   /**
-    * Refers to the type of messages being shown.
+    * Refers to the type of messages being shown. See sap.ui.core.MessageType values for types.
     */
   var messageTypeFilter: js.UndefOr[
     MessageType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MessageType * / any */ String)

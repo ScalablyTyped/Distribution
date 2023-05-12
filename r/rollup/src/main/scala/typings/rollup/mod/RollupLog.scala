@@ -9,7 +9,7 @@ trait RollupLog extends StObject {
   
   var binding: js.UndefOr[String] = js.undefined
   
-  var cause: js.UndefOr[js.Error] = js.undefined
+  var cause: js.UndefOr[Any] = js.undefined
   
   var code: js.UndefOr[String] = js.undefined
   
@@ -55,7 +55,7 @@ object RollupLog {
     
     inline def setBindingUndefined: Self = StObject.set(x, "binding", js.undefined)
     
-    inline def setCause(value: js.Error): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+    inline def setCause(value: Any): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
     inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
     

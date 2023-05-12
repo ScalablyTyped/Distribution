@@ -13,7 +13,7 @@ trait SubstanceDefinitionStructure
   var _molecularFormulaByMoiety: js.UndefOr[Element] = js.undefined
   
   /**
-    * Molecular formula of this substance, typically using the Hill system.
+    * An expression which states the number and type of atoms present in a molecule of a substance.
     */
   var molecularFormula: js.UndefOr[String] = js.undefined
   
@@ -33,12 +33,12 @@ trait SubstanceDefinitionStructure
   var opticalActivity: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * A depiction of the structure or characterization of the substance.
+    * A depiction of the structure of the substance.
     */
   var representation: js.UndefOr[js.Array[SubstanceDefinitionStructureRepresentation]] = js.undefined
   
   /**
-    * Supporting literature about the source of information.
+    * The source of information about the structure.
     */
   var sourceDocument: js.UndefOr[js.Array[Reference]] = js.undefined
   
@@ -48,7 +48,7 @@ trait SubstanceDefinitionStructure
   var stereochemistry: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * The method used to elucidate the structure or characterization of the drug substance. Examples: X-ray, HPLC, NMR, Peptide mapping, Ligand binding assay.
+    * The method used to elucidate the structure of the drug substance. Examples: X-ray, NMR, Peptide mapping, Ligand binding assay.
     */
   var technique: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
 }

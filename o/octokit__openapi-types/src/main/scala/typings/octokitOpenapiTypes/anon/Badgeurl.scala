@@ -2,16 +2,13 @@ package typings.octokitOpenapiTypes.anon
 
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.active
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.deleted_
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.disabled_fork
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.disabled_inactivity
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.disabled_manually
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Badgeurl extends StObject {
   
-  /** @example https://github.com/actions/setup-ruby/workflows/CI/badge.svg */
+  /** @example https://github.com/sample-org/sample-repo/workflows/required/sample-org/source-repo/.github/workflows/required_ci.yaml/badge.svg */
   var badge_url: String
   
   /**
@@ -20,32 +17,28 @@ trait Badgeurl extends StObject {
     */
   var created_at: String
   
-  /**
-    * Format: date-time
-    * @example 2019-12-06T14:20:20.000Z
-    */
-  var deleted_at: js.UndefOr[String] = js.undefined
-  
-  /** @example https://github.com/actions/setup-ruby/blob/master/.github/workflows/ruby.yaml */
+  /** @example https://github.com/sample-org/source-repo/blob/main/.github/workflows/required_ci.yaml */
   var html_url: String
   
   /** @example 5 */
   var id: Double
   
-  /** @example CI */
+  /** @example Required CI */
   var name: String
   
   /** @example MDg6V29ya2Zsb3cxMg== */
   var node_id: String
   
-  /** @example ruby.yaml */
+  /** @example .github/workflows/required_ci.yaml */
   var path: String
+  
+  var source_repository: Branchesurl
   
   /**
     * @example active
     * @enum {string}
     */
-  var state: active | deleted_ | disabled_fork | disabled_inactivity | disabled_manually
+  var state: active | deleted_
   
   /**
     * Format: date-time
@@ -53,7 +46,7 @@ trait Badgeurl extends StObject {
     */
   var updated_at: String
   
-  /** @example https://api.github.com/repos/actions/setup-ruby/workflows/5 */
+  /** @example https://api.github.com/repos/sample-org/sample-repo/actions/required_workflows/5 */
   var url: String
 }
 object Badgeurl {
@@ -66,11 +59,12 @@ object Badgeurl {
     name: String,
     node_id: String,
     path: String,
-    state: active | deleted_ | disabled_fork | disabled_inactivity | disabled_manually,
+    source_repository: Branchesurl,
+    state: active | deleted_,
     updated_at: String,
     url: String
   ): Badgeurl = {
-    val __obj = js.Dynamic.literal(badge_url = badge_url.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(badge_url = badge_url.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], source_repository = source_repository.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Badgeurl]
   }
   
@@ -80,10 +74,6 @@ object Badgeurl {
     inline def setBadge_url(value: String): Self = StObject.set(x, "badge_url", value.asInstanceOf[js.Any])
     
     inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
-    
-    inline def setDeleted_at(value: String): Self = StObject.set(x, "deleted_at", value.asInstanceOf[js.Any])
-    
-    inline def setDeleted_atUndefined: Self = StObject.set(x, "deleted_at", js.undefined)
     
     inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     
@@ -95,7 +85,9 @@ object Badgeurl {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setState(value: active | deleted_ | disabled_fork | disabled_inactivity | disabled_manually): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setSource_repository(value: Branchesurl): Self = StObject.set(x, "source_repository", value.asInstanceOf[js.Any])
+    
+    inline def setState(value: active | deleted_): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     

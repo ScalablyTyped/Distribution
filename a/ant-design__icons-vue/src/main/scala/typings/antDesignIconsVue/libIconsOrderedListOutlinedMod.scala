@@ -16,7 +16,7 @@ object libIconsOrderedListOutlinedMod extends Shortcut {
   @js.native
   trait OrderedListOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_OrderedListOutlinedIconType: String = js.native

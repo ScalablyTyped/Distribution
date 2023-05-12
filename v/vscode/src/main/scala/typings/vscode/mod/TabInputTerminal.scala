@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("vscode", "TabInputTerminal")
 @js.native
 /**
-  * Constructs a terminal tab input.
-  */
+		 * Constructs a terminal tab input.
+		 */
 open class TabInputTerminal () extends StObject

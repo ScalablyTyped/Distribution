@@ -26,6 +26,7 @@ import typings.carbonComponentsReact.carbonComponentsReactStrings.br
 import typings.carbonComponentsReact.carbonComponentsReactStrings.button
 import typings.carbonComponentsReact.carbonComponentsReactStrings.canvas
 import typings.carbonComponentsReact.carbonComponentsReactStrings.caption
+import typings.carbonComponentsReact.carbonComponentsReactStrings.center
 import typings.carbonComponentsReact.carbonComponentsReactStrings.circle
 import typings.carbonComponentsReact.carbonComponentsReactStrings.cite
 import typings.carbonComponentsReact.carbonComponentsReactStrings.clipPath
@@ -244,6 +245,8 @@ object libComponentsHeadingMod {
   inline def Section_canvas(props: SectionIntrinsicProps[canvas]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Section_caption(props: SectionIntrinsicProps[caption]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Section_center(props: SectionIntrinsicProps[center]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Section_circle(props: SectionIntrinsicProps[circle]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
@@ -587,5 +590,5 @@ object libComponentsHeadingMod {
     }
   }
   
-  type SectionIntrinsicProps[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.carbonComponentsReact.carbonComponentsReactStrings.a, typings.carbonComponentsReact.carbonComponentsReactStrings.abbr, typings.carbonComponentsReact.carbonComponentsReactStrings.address */ Any */] = (SafeProps[JSXIntrinsicElementProps[K, `false`]]) & As[K]
+  type SectionIntrinsicProps[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.carbonComponentsReact.carbonComponentsReactStrings.a, typings.carbonComponentsReact.carbonComponentsReactStrings.abbr, typings.carbonComponentsReact.carbonComponentsReactStrings.address */ Any */] = (SafeProps[JSXIntrinsicElementProps[K, `false`]]) & As[K]
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for multiformats__mafmt
 
-Typings are for version 11.0.3
+Typings are for version 12.1.0
 
 ## Library description:
 A multiaddr validator

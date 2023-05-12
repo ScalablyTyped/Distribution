@@ -1,5 +1,6 @@
 package typings.handsontable
 
+import typings.handsontable.`3rdpartyWalkontableSrcCellRangeMod`.DirectionType
 import typings.handsontable.`3rdpartyWalkontableSrcMod`.OverlayType
 import typings.handsontable.cellTypesMod.CellType
 import typings.handsontable.commonMod.ChangeSource
@@ -8,6 +9,7 @@ import typings.handsontable.editorsMod.EditorType
 import typings.handsontable.pluginsAutofillAutofillMod.Direction
 import typings.handsontable.pluginsColumnSortingColumnSortingMod.SortOrderType
 import typings.handsontable.pluginsContextMenuContextMenuMod.PredefinedMenuItemKey
+import typings.handsontable.pluginsCopyPasteCopyPasteMod.CopyModeType
 import typings.handsontable.pluginsCopyPasteCopyPasteMod.PasteModeType
 import typings.handsontable.pluginsFiltersConditionCollectionMod.ConditionName
 import typings.handsontable.pluginsFiltersFiltersMod._ConditionName
@@ -102,6 +104,42 @@ object handsontableStrings {
   inline def Dot: Dot = ".".asInstanceOf[Dot]
   
   @js.native
+  sealed trait `E-W` extends StObject
+  inline def `E-W`: `E-W` = "E-W".asInstanceOf[`E-W`]
+  
+  @js.native
+  sealed trait `N-S` extends StObject
+  inline def `N-S`: `N-S` = "N-S".asInstanceOf[`N-S`]
+  
+  @js.native
+  sealed trait `NE-SW`
+    extends StObject
+       with DirectionType
+  inline def `NE-SW`: `NE-SW` = "NE-SW".asInstanceOf[`NE-SW`]
+  
+  @js.native
+  sealed trait `NW-SE`
+    extends StObject
+       with DirectionType
+  inline def `NW-SE`: `NW-SE` = "NW-SE".asInstanceOf[`NW-SE`]
+  
+  @js.native
+  sealed trait `S-N` extends StObject
+  inline def `S-N`: `S-N` = "S-N".asInstanceOf[`S-N`]
+  
+  @js.native
+  sealed trait `SE-NW`
+    extends StObject
+       with DirectionType
+  inline def `SE-NW`: `SE-NW` = "SE-NW".asInstanceOf[`SE-NW`]
+  
+  @js.native
+  sealed trait `SW-NE`
+    extends StObject
+       with DirectionType
+  inline def `SW-NE`: `SW-NE` = "SW-NE".asInstanceOf[`SW-NE`]
+  
+  @js.native
   sealed trait Semicolon extends StObject
   inline def Semicolon: Semicolon = ";".asInstanceOf[Semicolon]
   
@@ -124,6 +162,10 @@ object handsontableStrings {
   @js.native
   sealed trait Verticalline extends StObject
   inline def Verticalline: Verticalline = "|".asInstanceOf[Verticalline]
+  
+  @js.native
+  sealed trait `W-E` extends StObject
+  inline def `W-E`: `W-E` = "W-E".asInstanceOf[`W-E`]
   
   @js.native
   sealed trait _empty extends StObject
@@ -172,6 +214,10 @@ object handsontableStrings {
   inline def afterColumnExpand: afterColumnExpand = "afterColumnExpand".asInstanceOf[afterColumnExpand]
   
   @js.native
+  sealed trait afterColumnFreeze extends StObject
+  inline def afterColumnFreeze: afterColumnFreeze = "afterColumnFreeze".asInstanceOf[afterColumnFreeze]
+  
+  @js.native
   sealed trait afterColumnMove extends StObject
   inline def afterColumnMove: afterColumnMove = "afterColumnMove".asInstanceOf[afterColumnMove]
   
@@ -182,6 +228,10 @@ object handsontableStrings {
   @js.native
   sealed trait afterColumnSort extends StObject
   inline def afterColumnSort: afterColumnSort = "afterColumnSort".asInstanceOf[afterColumnSort]
+  
+  @js.native
+  sealed trait afterColumnUnfreeze extends StObject
+  inline def afterColumnUnfreeze: afterColumnUnfreeze = "afterColumnUnfreeze".asInstanceOf[afterColumnUnfreeze]
   
   @js.native
   sealed trait afterContextMenuDefaultOptions extends StObject
@@ -610,6 +660,10 @@ object handsontableStrings {
   inline def beforeColumnExpand: beforeColumnExpand = "beforeColumnExpand".asInstanceOf[beforeColumnExpand]
   
   @js.native
+  sealed trait beforeColumnFreeze extends StObject
+  inline def beforeColumnFreeze: beforeColumnFreeze = "beforeColumnFreeze".asInstanceOf[beforeColumnFreeze]
+  
+  @js.native
   sealed trait beforeColumnMove extends StObject
   inline def beforeColumnMove: beforeColumnMove = "beforeColumnMove".asInstanceOf[beforeColumnMove]
   
@@ -620,6 +674,10 @@ object handsontableStrings {
   @js.native
   sealed trait beforeColumnSort extends StObject
   inline def beforeColumnSort: beforeColumnSort = "beforeColumnSort".asInstanceOf[beforeColumnSort]
+  
+  @js.native
+  sealed trait beforeColumnUnfreeze extends StObject
+  inline def beforeColumnUnfreeze: beforeColumnUnfreeze = "beforeColumnUnfreeze".asInstanceOf[beforeColumnUnfreeze]
   
   @js.native
   sealed trait beforeContextMenuSetItems extends StObject
@@ -897,6 +955,12 @@ object handsontableStrings {
   inline def cell: cell = "cell".asInstanceOf[cell]
   
   @js.native
+  sealed trait `cells-only`
+    extends StObject
+       with CopyModeType
+  inline def `cells-only`: `cells-only` = "cells-only".asInstanceOf[`cells-only`]
+  
+  @js.native
   sealed trait change extends StObject
   inline def change: change = "change".asInstanceOf[change]
   
@@ -933,6 +997,12 @@ object handsontableStrings {
   @js.native
   sealed trait collapsibleColumns extends StObject
   inline def collapsibleColumns: collapsibleColumns = "collapsibleColumns".asInstanceOf[collapsibleColumns]
+  
+  @js.native
+  sealed trait `column-headers-only`
+    extends StObject
+       with CopyModeType
+  inline def `column-headers-only`: `column-headers-only` = "column-headers-only".asInstanceOf[`column-headers-only`]
   
   @js.native
   sealed trait columnSorting extends StObject
@@ -998,6 +1068,24 @@ object handsontableStrings {
   @js.native
   sealed trait copyPaste extends StObject
   inline def copyPaste: copyPaste = "copyPaste".asInstanceOf[copyPaste]
+  
+  @js.native
+  sealed trait copy_column_headers_only
+    extends StObject
+       with PredefinedMenuItemKey
+  inline def copy_column_headers_only: copy_column_headers_only = "copy_column_headers_only".asInstanceOf[copy_column_headers_only]
+  
+  @js.native
+  sealed trait copy_with_column_group_headers
+    extends StObject
+       with PredefinedMenuItemKey
+  inline def copy_with_column_group_headers: copy_with_column_group_headers = "copy_with_column_group_headers".asInstanceOf[copy_with_column_group_headers]
+  
+  @js.native
+  sealed trait copy_with_column_headers
+    extends StObject
+       with PredefinedMenuItemKey
+  inline def copy_with_column_headers: copy_with_column_headers = "copy_with_column_headers".asInstanceOf[copy_with_column_headers]
   
   @js.native
   sealed trait count extends StObject
@@ -1485,6 +1573,10 @@ object handsontableStrings {
   inline def modifyColumnHeaderHeight: modifyColumnHeaderHeight = "modifyColumnHeaderHeight".asInstanceOf[modifyColumnHeaderHeight]
   
   @js.native
+  sealed trait modifyColumnHeaderValue extends StObject
+  inline def modifyColumnHeaderValue: modifyColumnHeaderValue = "modifyColumnHeaderValue".asInstanceOf[modifyColumnHeaderValue]
+  
+  @js.native
   sealed trait modifyCopyableRange extends StObject
   inline def modifyCopyableRange: modifyCopyableRange = "modifyCopyableRange".asInstanceOf[modifyCopyableRange]
   
@@ -1853,6 +1945,18 @@ object handsontableStrings {
     extends StObject
        with Direction
   inline def vertical: vertical = "vertical".asInstanceOf[vertical]
+  
+  @js.native
+  sealed trait `with-all-column-headers`
+    extends StObject
+       with CopyModeType
+  inline def `with-all-column-headers`: `with-all-column-headers` = "with-all-column-headers".asInstanceOf[`with-all-column-headers`]
+  
+  @js.native
+  sealed trait `with-column-headers`
+    extends StObject
+       with CopyModeType
+  inline def `with-column-headers`: `with-column-headers` = "with-column-headers".asInstanceOf[`with-column-headers`]
   
   @js.native
   sealed trait `zh-CN` extends StObject

@@ -9,7 +9,10 @@ trait EncounterParticipant
      with BackboneElement {
   
   /**
-    * Persons involved in the encounter, the patient/group is also included here to indicate that the patient was actually participating in the encounter. Not including the patient here covers use cases such as a case meeting between practitioners about a patient - non contact times.
+    * For planning purposes, Appointments may include a CareTeam participant to indicate that one specific person from the CareTeam will be assigned, but that assignment might not happen until the Encounter begins. Hence CareTeam is not included in Encounter.participant, as the specific individual should be assigned and represented as a Practitioner or other person resource.
+    * Similarly, Location can be included in Appointment.participant to assist with planning.  However, the patient location is tracked on the Encounter in the Encounter.location property to allow for additional metadata and history to be recorded.
+    * The role of the participant can be used to declare what the actor will be doing in the scope of this encounter participation.
+    * If the individual is not specified during planning, then it is expected that the individual will be filled in at a later stage prior to the encounter commencing.
     */
   var actor: js.UndefOr[Reference] = js.undefined
   

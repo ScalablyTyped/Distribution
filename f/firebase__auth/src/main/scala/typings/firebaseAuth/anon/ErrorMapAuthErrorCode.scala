@@ -91,7 +91,15 @@ trait ErrorMapAuthErrorCode extends StObject {
   
   val `invalid-provider-id`: String
   
+  val `invalid-recaptcha-action`: String
+  
+  val `invalid-recaptcha-token`: String
+  
+  val `invalid-recaptcha-version`: String
+  
   val `invalid-recipient-email`: String
+  
+  val `invalid-req-type`: String
   
   val `invalid-sender`: String
   
@@ -111,6 +119,8 @@ trait ErrorMapAuthErrorCode extends StObject {
   
   val `missing-app-credential`: String
   
+  val `missing-client-type`: String
+  
   val `missing-continue-uri`: String
   
   val `missing-iframe-start`: String
@@ -123,7 +133,13 @@ trait ErrorMapAuthErrorCode extends StObject {
   
   val `missing-or-invalid-nonce`: String
   
+  val `missing-password`: String
+  
   val `missing-phone-number`: String
+  
+  val `missing-recaptcha-token`: String
+  
+  val `missing-recaptcha-version`: String
   
   val `missing-verification-code`: String
   
@@ -152,6 +168,8 @@ trait ErrorMapAuthErrorCode extends StObject {
   val `provider-already-linked`: String
   
   val `quota-exceeded`: String
+  
+  val `recaptcha-not-enabled`: String
   
   val `redirect-cancelled-by-user`: String
   
@@ -244,7 +262,11 @@ object ErrorMapAuthErrorCode {
     `invalid-persistence-type`: String,
     `invalid-phone-number`: String,
     `invalid-provider-id`: String,
+    `invalid-recaptcha-action`: String,
+    `invalid-recaptcha-token`: String,
+    `invalid-recaptcha-version`: String,
     `invalid-recipient-email`: String,
+    `invalid-req-type`: String,
     `invalid-sender`: String,
     `invalid-tenant-id`: String,
     `invalid-user-token`: String,
@@ -254,13 +276,17 @@ object ErrorMapAuthErrorCode {
     `maximum-second-factor-count-exceeded`: String,
     `missing-android-pkg-name`: String,
     `missing-app-credential`: String,
+    `missing-client-type`: String,
     `missing-continue-uri`: String,
     `missing-iframe-start`: String,
     `missing-ios-bundle-id`: String,
     `missing-multi-factor-info`: String,
     `missing-multi-factor-session`: String,
     `missing-or-invalid-nonce`: String,
+    `missing-password`: String,
     `missing-phone-number`: String,
+    `missing-recaptcha-token`: String,
+    `missing-recaptcha-version`: String,
     `missing-verification-code`: String,
     `missing-verification-id`: String,
     `multi-factor-auth-required`: String,
@@ -275,6 +301,7 @@ object ErrorMapAuthErrorCode {
     `popup-closed-by-user`: String,
     `provider-already-linked`: String,
     `quota-exceeded`: String,
+    `recaptcha-not-enabled`: String,
     `redirect-cancelled-by-user`: String,
     `redirect-operation-pending`: String,
     `rejected-credential`: String,
@@ -342,7 +369,11 @@ object ErrorMapAuthErrorCode {
     __obj.updateDynamic("invalid-persistence-type")(`invalid-persistence-type`.asInstanceOf[js.Any])
     __obj.updateDynamic("invalid-phone-number")(`invalid-phone-number`.asInstanceOf[js.Any])
     __obj.updateDynamic("invalid-provider-id")(`invalid-provider-id`.asInstanceOf[js.Any])
+    __obj.updateDynamic("invalid-recaptcha-action")(`invalid-recaptcha-action`.asInstanceOf[js.Any])
+    __obj.updateDynamic("invalid-recaptcha-token")(`invalid-recaptcha-token`.asInstanceOf[js.Any])
+    __obj.updateDynamic("invalid-recaptcha-version")(`invalid-recaptcha-version`.asInstanceOf[js.Any])
     __obj.updateDynamic("invalid-recipient-email")(`invalid-recipient-email`.asInstanceOf[js.Any])
+    __obj.updateDynamic("invalid-req-type")(`invalid-req-type`.asInstanceOf[js.Any])
     __obj.updateDynamic("invalid-sender")(`invalid-sender`.asInstanceOf[js.Any])
     __obj.updateDynamic("invalid-tenant-id")(`invalid-tenant-id`.asInstanceOf[js.Any])
     __obj.updateDynamic("invalid-user-token")(`invalid-user-token`.asInstanceOf[js.Any])
@@ -352,13 +383,17 @@ object ErrorMapAuthErrorCode {
     __obj.updateDynamic("maximum-second-factor-count-exceeded")(`maximum-second-factor-count-exceeded`.asInstanceOf[js.Any])
     __obj.updateDynamic("missing-android-pkg-name")(`missing-android-pkg-name`.asInstanceOf[js.Any])
     __obj.updateDynamic("missing-app-credential")(`missing-app-credential`.asInstanceOf[js.Any])
+    __obj.updateDynamic("missing-client-type")(`missing-client-type`.asInstanceOf[js.Any])
     __obj.updateDynamic("missing-continue-uri")(`missing-continue-uri`.asInstanceOf[js.Any])
     __obj.updateDynamic("missing-iframe-start")(`missing-iframe-start`.asInstanceOf[js.Any])
     __obj.updateDynamic("missing-ios-bundle-id")(`missing-ios-bundle-id`.asInstanceOf[js.Any])
     __obj.updateDynamic("missing-multi-factor-info")(`missing-multi-factor-info`.asInstanceOf[js.Any])
     __obj.updateDynamic("missing-multi-factor-session")(`missing-multi-factor-session`.asInstanceOf[js.Any])
     __obj.updateDynamic("missing-or-invalid-nonce")(`missing-or-invalid-nonce`.asInstanceOf[js.Any])
+    __obj.updateDynamic("missing-password")(`missing-password`.asInstanceOf[js.Any])
     __obj.updateDynamic("missing-phone-number")(`missing-phone-number`.asInstanceOf[js.Any])
+    __obj.updateDynamic("missing-recaptcha-token")(`missing-recaptcha-token`.asInstanceOf[js.Any])
+    __obj.updateDynamic("missing-recaptcha-version")(`missing-recaptcha-version`.asInstanceOf[js.Any])
     __obj.updateDynamic("missing-verification-code")(`missing-verification-code`.asInstanceOf[js.Any])
     __obj.updateDynamic("missing-verification-id")(`missing-verification-id`.asInstanceOf[js.Any])
     __obj.updateDynamic("multi-factor-auth-required")(`multi-factor-auth-required`.asInstanceOf[js.Any])
@@ -373,6 +408,7 @@ object ErrorMapAuthErrorCode {
     __obj.updateDynamic("popup-closed-by-user")(`popup-closed-by-user`.asInstanceOf[js.Any])
     __obj.updateDynamic("provider-already-linked")(`provider-already-linked`.asInstanceOf[js.Any])
     __obj.updateDynamic("quota-exceeded")(`quota-exceeded`.asInstanceOf[js.Any])
+    __obj.updateDynamic("recaptcha-not-enabled")(`recaptcha-not-enabled`.asInstanceOf[js.Any])
     __obj.updateDynamic("redirect-cancelled-by-user")(`redirect-cancelled-by-user`.asInstanceOf[js.Any])
     __obj.updateDynamic("redirect-operation-pending")(`redirect-operation-pending`.asInstanceOf[js.Any])
     __obj.updateDynamic("rejected-credential")(`rejected-credential`.asInstanceOf[js.Any])
@@ -485,7 +521,15 @@ object ErrorMapAuthErrorCode {
     
     inline def `setInvalid-provider-id`(value: String): Self = StObject.set(x, "invalid-provider-id", value.asInstanceOf[js.Any])
     
+    inline def `setInvalid-recaptcha-action`(value: String): Self = StObject.set(x, "invalid-recaptcha-action", value.asInstanceOf[js.Any])
+    
+    inline def `setInvalid-recaptcha-token`(value: String): Self = StObject.set(x, "invalid-recaptcha-token", value.asInstanceOf[js.Any])
+    
+    inline def `setInvalid-recaptcha-version`(value: String): Self = StObject.set(x, "invalid-recaptcha-version", value.asInstanceOf[js.Any])
+    
     inline def `setInvalid-recipient-email`(value: String): Self = StObject.set(x, "invalid-recipient-email", value.asInstanceOf[js.Any])
+    
+    inline def `setInvalid-req-type`(value: String): Self = StObject.set(x, "invalid-req-type", value.asInstanceOf[js.Any])
     
     inline def `setInvalid-sender`(value: String): Self = StObject.set(x, "invalid-sender", value.asInstanceOf[js.Any])
     
@@ -505,6 +549,8 @@ object ErrorMapAuthErrorCode {
     
     inline def `setMissing-app-credential`(value: String): Self = StObject.set(x, "missing-app-credential", value.asInstanceOf[js.Any])
     
+    inline def `setMissing-client-type`(value: String): Self = StObject.set(x, "missing-client-type", value.asInstanceOf[js.Any])
+    
     inline def `setMissing-continue-uri`(value: String): Self = StObject.set(x, "missing-continue-uri", value.asInstanceOf[js.Any])
     
     inline def `setMissing-iframe-start`(value: String): Self = StObject.set(x, "missing-iframe-start", value.asInstanceOf[js.Any])
@@ -517,7 +563,13 @@ object ErrorMapAuthErrorCode {
     
     inline def `setMissing-or-invalid-nonce`(value: String): Self = StObject.set(x, "missing-or-invalid-nonce", value.asInstanceOf[js.Any])
     
+    inline def `setMissing-password`(value: String): Self = StObject.set(x, "missing-password", value.asInstanceOf[js.Any])
+    
     inline def `setMissing-phone-number`(value: String): Self = StObject.set(x, "missing-phone-number", value.asInstanceOf[js.Any])
+    
+    inline def `setMissing-recaptcha-token`(value: String): Self = StObject.set(x, "missing-recaptcha-token", value.asInstanceOf[js.Any])
+    
+    inline def `setMissing-recaptcha-version`(value: String): Self = StObject.set(x, "missing-recaptcha-version", value.asInstanceOf[js.Any])
     
     inline def `setMissing-verification-code`(value: String): Self = StObject.set(x, "missing-verification-code", value.asInstanceOf[js.Any])
     
@@ -546,6 +598,8 @@ object ErrorMapAuthErrorCode {
     inline def `setProvider-already-linked`(value: String): Self = StObject.set(x, "provider-already-linked", value.asInstanceOf[js.Any])
     
     inline def `setQuota-exceeded`(value: String): Self = StObject.set(x, "quota-exceeded", value.asInstanceOf[js.Any])
+    
+    inline def `setRecaptcha-not-enabled`(value: String): Self = StObject.set(x, "recaptcha-not-enabled", value.asInstanceOf[js.Any])
     
     inline def `setRedirect-cancelled-by-user`(value: String): Self = StObject.set(x, "redirect-cancelled-by-user", value.asInstanceOf[js.Any])
     

@@ -13,9 +13,9 @@ object libUtilCheckFenceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def checkFence(context: Context): Exclude[js.UndefOr[Tilde | Graveaccent], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkFence")(context.asInstanceOf[js.Any]).asInstanceOf[Exclude[js.UndefOr[Tilde | Graveaccent], Unit]]
-  
-  type Context = typings.mdastUtilToMarkdown.libTypesMod.Context
+  inline def checkFence(state: State): Exclude[js.UndefOr[Tilde | Graveaccent | Null], js.UndefOr[Null]] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkFence")(state.asInstanceOf[js.Any]).asInstanceOf[Exclude[js.UndefOr[Tilde | Graveaccent | Null], js.UndefOr[Null]]]
   
   type Options = typings.mdastUtilToMarkdown.libTypesMod.Options
+  
+  type State = typings.mdastUtilToMarkdown.libTypesMod.State
 }

@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.AnimationComposition
+import typings.csstype.mod.Property.GridTemplateAreas
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `48` extends StObject {
   
   var value: js.UndefOr[
-    AnimationComposition | (js.Array[
+    GridTemplateAreas | (js.Array[
       (Extract[
-        js.UndefOr[AnimationComposition | js.Array[NonNullable[js.UndefOr[AnimationComposition]]]], 
+        js.UndefOr[GridTemplateAreas | js.Array[NonNullable[js.UndefOr[GridTemplateAreas]]]], 
         String
-      ]) | NonNullable[js.UndefOr[AnimationComposition]]
+      ]) | NonNullable[js.UndefOr[GridTemplateAreas]]
     ])
   ] = js.native
 }

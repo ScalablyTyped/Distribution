@@ -16,12 +16,12 @@ object sapUiModelOdataTypeByteMod {
     */
   open class default () extends Byte {
     def this(/**
-      * format options as defined in {@link sap.ui.core.format.NumberFormat}
+      * Format options as defined in {@link sap.ui.core.format.NumberFormat.getIntegerInstance}
       */
     oFormatOptions: js.Object) = this()
     def this(
       /**
-      * format options as defined in {@link sap.ui.core.format.NumberFormat}
+      * Format options as defined in {@link sap.ui.core.format.NumberFormat.getIntegerInstance}
       */
     oFormatOptions: js.Object,
       /**
@@ -32,7 +32,7 @@ object sapUiModelOdataTypeByteMod {
     ) = this()
     def this(
       /**
-      * format options as defined in {@link sap.ui.core.format.NumberFormat}
+      * Format options as defined in {@link sap.ui.core.format.NumberFormat.getIntegerInstance}
       */
     oFormatOptions: Unit,
       /**
@@ -115,6 +115,8 @@ object sapUiModelOdataTypeByteMod {
     extends typings.openui5.sapUiModelOdataTypeIntMod.default {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns the type's supported range as object with properties `minimum` and `maximum`.
       *
       * @returns the range

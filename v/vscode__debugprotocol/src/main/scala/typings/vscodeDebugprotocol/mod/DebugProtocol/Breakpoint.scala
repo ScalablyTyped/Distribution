@@ -4,13 +4,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Information about a Breakpoint created in setBreakpoints, setFunctionBreakpoints, setInstructionBreakpoints, or setDataBreakpoints. */
+/** Information about a breakpoint created in `setBreakpoints`, `setFunctionBreakpoints`, `setInstructionBreakpoints`, or `setDataBreakpoints` requests. */
 trait Breakpoint extends StObject {
   
-  /** The start column of the actual range covered by the breakpoint. */
+  /** Start position of the source range covered by the breakpoint. It is measured in UTF-16 code units and the client capability `columnsStartAt1` determines whether it is 0- or 1-based. */
   var column: js.UndefOr[Double] = js.undefined
   
-  /** The end column of the actual range covered by the breakpoint.
+  /** End position of the source range covered by the breakpoint. It is measured in UTF-16 code units and the client capability `columnsStartAt1` determines whether it is 0- or 1-based.
   			If no end line is given, then the end column is assumed to be in the start line.
   		*/
   var endColumn: js.UndefOr[Double] = js.undefined

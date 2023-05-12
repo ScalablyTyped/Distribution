@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "it-stream-types" : "1.0.4"
+      "it-stream-types" : "2.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "it-stream-types" : "1.0.4"
+      "it-stream-types" : "2.0.1"
     }
   ],
   "compile-devDependencies" : [

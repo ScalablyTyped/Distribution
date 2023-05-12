@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "longest-streak" : "3.0.1"
+      "longest-streak" : "3.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "longest-streak" : "3.0.1"
+      "longest-streak" : "3.1.0"
     }
   ],
   "compile-devDependencies" : [

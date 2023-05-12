@@ -194,6 +194,10 @@ object viteStrings {
   inline def drop: drop = "drop".asInstanceOf[drop]
   
   @js.native
+  sealed trait dropRequest extends StObject
+  inline def dropRequest: dropRequest = "dropRequest".asInstanceOf[dropRequest]
+  
+  @js.native
   sealed trait econnreset extends StObject
   inline def econnreset: econnreset = "econnreset".asInstanceOf[econnreset]
   
@@ -538,6 +542,10 @@ object viteStrings {
   @js.native
   sealed trait upgrade extends StObject
   inline def upgrade: upgrade = "upgrade".asInstanceOf[upgrade]
+  
+  @js.native
+  sealed trait version extends StObject
+  inline def version: version = "version".asInstanceOf[version]
   
   @js.native
   sealed trait warn

@@ -35,14 +35,9 @@ trait ResearchStudy
   var associatedParty: js.UndefOr[js.Array[ResearchStudyAssociatedParty]] = js.undefined
   
   /**
-    * Codes categorizing the type of study such as investigational vs. observational, type of blinding, type of randomization, safety vs. efficacy, etc.
+    * Additional grouping mechanism or categorization of a research study. Example: FDA regulated device, FDA regulated drug, MPG Paragraph 23b (a German legal requirement), IRB-exempt, etc. Implementation Note: do not use the classifier element to support existing semantics that are already supported thru explicit elements in the resource.
     */
-  var category: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
-  
-  /**
-    * Classification for the study.
-    */
-  var classification: js.UndefOr[js.Array[ResearchStudyClassification]] = js.undefined
+  var classifier: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * In many clinical trials this is refered to as the ARM of the study, but such a term is not used in other sorts of trials even when there is a comparison between two or more groups.
@@ -55,34 +50,24 @@ trait ResearchStudy
   var condition: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
-    * Contact details to assist a user in learning more about or engaging with the study.
-    */
-  var contact: js.UndefOr[js.Array[ContactDetail]] = js.undefined
-  
-  /**
-    * Current status of the study.
-    */
-  var currentState: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
-  
-  /**
-    * Date the resource last changed.
+    * The date (and optionally time) when the ResearchStudy Resource was last significantly changed. The date must change when the business version changes and it must change if the status code changes. In addition, it should change when the substantive content of the ResearchStudy Resource changes.
     */
   var date: js.UndefOr[String] = js.undefined
   
   /**
-    * A full description of how the study is being conducted.  For a description of what the study objectives are see ResearchStudy.objective.description.
+    * A detailed and human-readable narrative of the study. E.g., study abstract.
     */
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * A brief summary of the study description.
+    * A brief text for explaining the study.
     */
   var descriptionSummary: js.UndefOr[String] = js.undefined
   
   /**
     * The medication(s), food(s), therapy(ies), device(s) or other concerns or interventions that the study is seeking to gain more information about.
     */
-  var focus: js.UndefOr[js.Array[ResearchStudyFocus]] = js.undefined
+  var focus: js.UndefOr[js.Array[CodeableReference]] = js.undefined
   
   /**
     * Identifiers assigned to this research study by the sponsor or other systems.
@@ -100,11 +85,6 @@ trait ResearchStudy
   var label: js.UndefOr[js.Array[ResearchStudyLabel]] = js.undefined
   
   /**
-    * Indicates a country, state or other region where the study is taking place.
-    */
-  var location: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
-  
-  /**
     * Name for this study (computer friendly).
     */
   var name: js.UndefOr[String] = js.undefined
@@ -120,7 +100,7 @@ trait ResearchStudy
   var objective: js.UndefOr[js.Array[ResearchStudyObjective]] = js.undefined
   
   /**
-    * An outcome or planned variable to measure during the study.
+    * A study may have multiple distinct outcome measures that can be used to assess the overall goal for a study. The goal of a study is in the objective whereas the metric by which the goal is assessed is the outcomeMeasure. Examples: Time to Local Recurrence (TLR), Disease-free Survival (DFS), 30 Day Mortality, Systolic BP
     */
   var outcomeMeasure: js.UndefOr[js.Array[ResearchStudyOutcomeMeasure]] = js.undefined
   
@@ -145,9 +125,9 @@ trait ResearchStudy
   var primaryPurposeType: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * A researcher in a study who oversees multiple aspects of the study, such as concept development, protocol writing, protocol submission for IRB approval, participant recruitment, informed consent, data collection, analysis, interpretation and presentation.
+    * Status of study with time for that status.
     */
-  var principalInvestigator: js.UndefOr[Reference] = js.undefined
+  var progressStatus: js.UndefOr[js.Array[ResearchStudyProgressStatus]] = js.undefined
   
   /**
     * The set of steps expected to be performed as part of the execution of the study.
@@ -160,7 +140,12 @@ trait ResearchStudy
   var recruitment: js.UndefOr[ResearchStudyRecruitment] = js.undefined
   
   /**
-    * Citations, references and other related documents.
+    * A country, state or other area where the study is taking place rather than its precise geographic location or address.
+    */
+  var region: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  
+  /**
+    * Citations, references, URLs and other related documents.  When using relatedArtifact to share URLs, the relatedArtifact.type will often be set to one of "documentation" or "supported-with" and the URL value will often be in relatedArtifact.document.url but another possible location is relatedArtifact.resource when it is a canonical URL.
     */
   var relatedArtifact: js.UndefOr[js.Array[RelatedArtifact]] = js.undefined
   
@@ -179,22 +164,17 @@ trait ResearchStudy
   var site: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * An organization that initiates the investigation and is legally responsible for the study.
-    */
-  var sponsor: js.UndefOr[Reference] = js.undefined
-  
-  /**
     * The publication state of the resource (not of the study).
     */
   var status: draft | active | retired | unknown
   
   /**
-    * Status of study with time for that status.
+    * Codes categorizing the type of study such as investigational vs. observational, type of blinding, type of randomization, safety vs. efficacy, etc.
     */
-  var statusDate: js.UndefOr[js.Array[ResearchStudyStatusDate]] = js.undefined
+  var studyDesign: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
-    * A short, descriptive label for the study particularly for compouter use.
+    * The human readable name of the research study.
     */
   var title: js.UndefOr[String] = js.undefined
   
@@ -204,14 +184,9 @@ trait ResearchStudy
   var url: js.UndefOr[String] = js.undefined
   
   /**
-    * Business identifier for the study record.
+    * The business version for the study record.
     */
   var version: js.UndefOr[String] = js.undefined
-  
-  /**
-    * A general storage or archive location for the study.  This may contain an assortment of content which is not specified in advance.
-    */
-  var webLocation: js.UndefOr[js.Array[ResearchStudyWebLocation]] = js.undefined
   
   /**
     * A description and/or code explaining the premature termination of the study.
@@ -234,17 +209,11 @@ object ResearchStudy {
     
     inline def setAssociatedPartyVarargs(value: ResearchStudyAssociatedParty*): Self = StObject.set(x, "associatedParty", js.Array(value*))
     
-    inline def setCategory(value: js.Array[CodeableConcept]): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setClassifier(value: js.Array[CodeableConcept]): Self = StObject.set(x, "classifier", value.asInstanceOf[js.Any])
     
-    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    inline def setClassifierUndefined: Self = StObject.set(x, "classifier", js.undefined)
     
-    inline def setCategoryVarargs(value: CodeableConcept*): Self = StObject.set(x, "category", js.Array(value*))
-    
-    inline def setClassification(value: js.Array[ResearchStudyClassification]): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
-    
-    inline def setClassificationUndefined: Self = StObject.set(x, "classification", js.undefined)
-    
-    inline def setClassificationVarargs(value: ResearchStudyClassification*): Self = StObject.set(x, "classification", js.Array(value*))
+    inline def setClassifierVarargs(value: CodeableConcept*): Self = StObject.set(x, "classifier", js.Array(value*))
     
     inline def setComparisonGroup(value: js.Array[ResearchStudyComparisonGroup]): Self = StObject.set(x, "comparisonGroup", value.asInstanceOf[js.Any])
     
@@ -258,18 +227,6 @@ object ResearchStudy {
     
     inline def setConditionVarargs(value: CodeableConcept*): Self = StObject.set(x, "condition", js.Array(value*))
     
-    inline def setContact(value: js.Array[ContactDetail]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
-    
-    inline def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
-    
-    inline def setContactVarargs(value: ContactDetail*): Self = StObject.set(x, "contact", js.Array(value*))
-    
-    inline def setCurrentState(value: js.Array[CodeableConcept]): Self = StObject.set(x, "currentState", value.asInstanceOf[js.Any])
-    
-    inline def setCurrentStateUndefined: Self = StObject.set(x, "currentState", js.undefined)
-    
-    inline def setCurrentStateVarargs(value: CodeableConcept*): Self = StObject.set(x, "currentState", js.Array(value*))
-    
     inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
@@ -282,11 +239,11 @@ object ResearchStudy {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setFocus(value: js.Array[ResearchStudyFocus]): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+    inline def setFocus(value: js.Array[CodeableReference]): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
     inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
     
-    inline def setFocusVarargs(value: ResearchStudyFocus*): Self = StObject.set(x, "focus", js.Array(value*))
+    inline def setFocusVarargs(value: CodeableReference*): Self = StObject.set(x, "focus", js.Array(value*))
     
     inline def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
@@ -305,12 +262,6 @@ object ResearchStudy {
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     inline def setLabelVarargs(value: ResearchStudyLabel*): Self = StObject.set(x, "label", js.Array(value*))
-    
-    inline def setLocation(value: js.Array[CodeableConcept]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
-    
-    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
-    
-    inline def setLocationVarargs(value: CodeableConcept*): Self = StObject.set(x, "location", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -352,9 +303,11 @@ object ResearchStudy {
     
     inline def setPrimaryPurposeTypeUndefined: Self = StObject.set(x, "primaryPurposeType", js.undefined)
     
-    inline def setPrincipalInvestigator(value: Reference): Self = StObject.set(x, "principalInvestigator", value.asInstanceOf[js.Any])
+    inline def setProgressStatus(value: js.Array[ResearchStudyProgressStatus]): Self = StObject.set(x, "progressStatus", value.asInstanceOf[js.Any])
     
-    inline def setPrincipalInvestigatorUndefined: Self = StObject.set(x, "principalInvestigator", js.undefined)
+    inline def setProgressStatusUndefined: Self = StObject.set(x, "progressStatus", js.undefined)
+    
+    inline def setProgressStatusVarargs(value: ResearchStudyProgressStatus*): Self = StObject.set(x, "progressStatus", js.Array(value*))
     
     inline def setProtocol(value: js.Array[Reference]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
@@ -365,6 +318,12 @@ object ResearchStudy {
     inline def setRecruitment(value: ResearchStudyRecruitment): Self = StObject.set(x, "recruitment", value.asInstanceOf[js.Any])
     
     inline def setRecruitmentUndefined: Self = StObject.set(x, "recruitment", js.undefined)
+    
+    inline def setRegion(value: js.Array[CodeableConcept]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    
+    inline def setRegionVarargs(value: CodeableConcept*): Self = StObject.set(x, "region", js.Array(value*))
     
     inline def setRelatedArtifact(value: js.Array[RelatedArtifact]): Self = StObject.set(x, "relatedArtifact", value.asInstanceOf[js.Any])
     
@@ -386,17 +345,13 @@ object ResearchStudy {
     
     inline def setSiteVarargs(value: Reference*): Self = StObject.set(x, "site", js.Array(value*))
     
-    inline def setSponsor(value: Reference): Self = StObject.set(x, "sponsor", value.asInstanceOf[js.Any])
-    
-    inline def setSponsorUndefined: Self = StObject.set(x, "sponsor", js.undefined)
-    
     inline def setStatus(value: draft | active | retired | unknown): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    inline def setStatusDate(value: js.Array[ResearchStudyStatusDate]): Self = StObject.set(x, "statusDate", value.asInstanceOf[js.Any])
+    inline def setStudyDesign(value: js.Array[CodeableConcept]): Self = StObject.set(x, "studyDesign", value.asInstanceOf[js.Any])
     
-    inline def setStatusDateUndefined: Self = StObject.set(x, "statusDate", js.undefined)
+    inline def setStudyDesignUndefined: Self = StObject.set(x, "studyDesign", js.undefined)
     
-    inline def setStatusDateVarargs(value: ResearchStudyStatusDate*): Self = StObject.set(x, "statusDate", js.Array(value*))
+    inline def setStudyDesignVarargs(value: CodeableConcept*): Self = StObject.set(x, "studyDesign", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
@@ -409,12 +364,6 @@ object ResearchStudy {
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
-    
-    inline def setWebLocation(value: js.Array[ResearchStudyWebLocation]): Self = StObject.set(x, "webLocation", value.asInstanceOf[js.Any])
-    
-    inline def setWebLocationUndefined: Self = StObject.set(x, "webLocation", js.undefined)
-    
-    inline def setWebLocationVarargs(value: ResearchStudyWebLocation*): Self = StObject.set(x, "webLocation", js.Array(value*))
     
     inline def setWhyStopped(value: CodeableConcept): Self = StObject.set(x, "whyStopped", value.asInstanceOf[js.Any])
     

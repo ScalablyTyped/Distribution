@@ -12,6 +12,11 @@ trait LoadOptions[T] extends StObject {
   var customQueryParams: js.UndefOr[Any] = js.undefined
   
   /**
+    * 
+    */
+  var endDate: js.UndefOr[js.Date] = js.undefined
+  
+  /**
     * An array of strings that represent the names of navigation properties to be loaded simultaneously with the ODataStore.
     */
   var expand: js.UndefOr[js.Array[String]] = js.undefined
@@ -77,6 +82,11 @@ trait LoadOptions[T] extends StObject {
   var sort: js.UndefOr[SortDescriptor[T] | js.Array[SortDescriptor[T]]] = js.undefined
   
   /**
+    * 
+    */
+  var startDate: js.UndefOr[js.Date] = js.undefined
+  
+  /**
     * The number of data objects to be loaded. In conjunction with skip, used to implement paging.
     */
   var take: js.UndefOr[Double] = js.undefined
@@ -104,6 +114,10 @@ object LoadOptions {
     inline def setCustomQueryParams(value: Any): Self = StObject.set(x, "customQueryParams", value.asInstanceOf[js.Any])
     
     inline def setCustomQueryParamsUndefined: Self = StObject.set(x, "customQueryParams", js.undefined)
+    
+    inline def setEndDate(value: js.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    
+    inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
     inline def setExpand(value: js.Array[String]): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     
@@ -180,6 +194,10 @@ object LoadOptions {
     inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     inline def setSortVarargs(value: SortDescriptor[T]*): Self = StObject.set(x, "sort", js.Array(value*))
+    
+    inline def setStartDate(value: js.Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    
+    inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
     
     inline def setTake(value: Double): Self = StObject.set(x, "take", value.asInstanceOf[js.Any])
     

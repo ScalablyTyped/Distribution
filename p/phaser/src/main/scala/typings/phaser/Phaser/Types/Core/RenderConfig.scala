@@ -17,6 +17,11 @@ trait RenderConfig extends StObject {
   var antialiasGL: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Automatically enable the Mobile Pipeline if iOS or Android detected?
+    */
+  var autoMobilePipeline: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * The default WebGL batch size. Represents the number of _quads_ that can be added to a single batch.
     */
   var batchSize: js.UndefOr[Double] = js.undefined
@@ -25,6 +30,11 @@ trait RenderConfig extends StObject {
     * Whether the game canvas will be cleared between each rendering frame.
     */
   var clearBeforeRender: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The WebGL Pipeline that Game Objects will use by default. Set to 'MultiPipeline' as standard.
+    */
+  var defaultPipeline: js.UndefOr[String] = js.undefined
   
   /**
     * When set to `true` it will create a desynchronized context for both 2D and WebGL. See https://developers.google.com/web/updates/2019/05/desynchronized for details.
@@ -104,6 +114,10 @@ object RenderConfig {
     
     inline def setAntialiasUndefined: Self = StObject.set(x, "antialias", js.undefined)
     
+    inline def setAutoMobilePipeline(value: Boolean): Self = StObject.set(x, "autoMobilePipeline", value.asInstanceOf[js.Any])
+    
+    inline def setAutoMobilePipelineUndefined: Self = StObject.set(x, "autoMobilePipeline", js.undefined)
+    
     inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     
     inline def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
@@ -111,6 +125,10 @@ object RenderConfig {
     inline def setClearBeforeRender(value: Boolean): Self = StObject.set(x, "clearBeforeRender", value.asInstanceOf[js.Any])
     
     inline def setClearBeforeRenderUndefined: Self = StObject.set(x, "clearBeforeRender", js.undefined)
+    
+    inline def setDefaultPipeline(value: String): Self = StObject.set(x, "defaultPipeline", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultPipelineUndefined: Self = StObject.set(x, "defaultPipeline", js.undefined)
     
     inline def setDesynchronized(value: Boolean): Self = StObject.set(x, "desynchronized", value.asInstanceOf[js.Any])
     

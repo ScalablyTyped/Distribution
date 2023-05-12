@@ -8,7 +8,6 @@ trait TargetuserUsername extends StObject {
   
   var target_user: String
   
-  /** The handle for the GitHub user account. */
   var username: String
 }
 object TargetuserUsername {

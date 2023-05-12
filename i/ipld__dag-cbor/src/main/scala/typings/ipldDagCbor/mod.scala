@@ -24,5 +24,5 @@ object mod {
   @js.native
   val name: `dag-cbor` = js.native
   
-  type ByteView[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.ByteView<T> */ Any
+  type ByteView[T] = typings.multiformats.distTypesSrcBlockInterfaceMod.ByteView[T]
 }

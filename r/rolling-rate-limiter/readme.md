@@ -1,7 +1,7 @@
 
 # Scala.js typings for rolling-rate-limiter
 
-Typings are for version 0.3.0
+Typings are for version 0.4.2
 
 ## Library description:
 Rate limiter that supports a rolling window, either in-memory or backed by Redis

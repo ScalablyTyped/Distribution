@@ -8,23 +8,15 @@ object libRestLookupsMod {
   
   @JSImport("twilio/lib/rest/Lookups", JSImport.Namespace)
   @js.native
-  open class ^ protected () extends Lookups {
-    /**
-      * Initialize lookups domain
-      *
-      * @param twilio - The twilio client
-      */
-    def this(twilio: typings.twilio.libRestTwilioMod.^) = this()
-  }
+  open class ^ () extends Lookups
   
   @js.native
   trait Lookups
-    extends typings.twilio.libBaseDomainMod.^ {
+    extends typings.twilio.libRestLookupsBaseMod.^ {
     
-    val phoneNumbers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PhoneNumberListInstance */ Any = js.native
-    
-    val v1: typings.twilio.libRestLookupsV1Mod.^ = js.native
-    
-    val v2: typings.twilio.libRestLookupsV2Mod.^ = js.native
+    /**
+      * @deprecated - Use v1.phoneNumbers instead
+      */
+    def phoneNumbers: Any = js.native
   }
 }

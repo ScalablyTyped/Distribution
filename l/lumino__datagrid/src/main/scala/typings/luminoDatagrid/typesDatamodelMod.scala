@@ -31,7 +31,7 @@ object typesDatamodelMod {
     /**
       * A signal emitted when the data model has changed.
       */
-    val changed: ISignal[this.type, ChangedArgs] = js.native
+    def changed: ISignal[this.type, ChangedArgs] = js.native
     
     /**
       * Get the column count for a region in the data model.

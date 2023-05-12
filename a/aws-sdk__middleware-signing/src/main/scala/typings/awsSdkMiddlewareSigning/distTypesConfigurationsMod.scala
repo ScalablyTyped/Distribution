@@ -5,8 +5,9 @@ import typings.awsSdkSignatureV4.distTypesSignatureV4Mod.SignatureV4CryptoInit
 import typings.awsSdkSignatureV4.distTypesSignatureV4Mod.SignatureV4Init
 import typings.awsSdkTypes.anon.ForceRefresh
 import typings.awsSdkTypes.distTypesAuthMod.AuthScheme
-import typings.awsSdkTypes.distTypesCredentialsMod.Credentials
+import typings.awsSdkTypes.distTypesChecksumMod.ChecksumConstructor
 import typings.awsSdkTypes.distTypesCryptoMod.HashConstructor
+import typings.awsSdkTypes.distTypesIdentityAwsCredentialIdentityMod.AwsCredentialIdentity
 import typings.awsSdkTypes.distTypesLoggerMod.Logger
 import typings.awsSdkTypes.distTypesSignatureMod.RequestSigner
 import typings.awsSdkTypes.distTypesUtilMod.MemoizedProvider
@@ -33,7 +34,7 @@ object distTypesConfigurationsMod {
     /**
       * The credentials used to sign requests.
       */
-    var credentials: js.UndefOr[Credentials | Provider[Credentials]] = js.undefined
+    var credentials: js.UndefOr[AwsCredentialIdentity | Provider[AwsCredentialIdentity]] = js.undefined
     
     /**
       * The signer to use when signing requests.
@@ -77,9 +78,9 @@ object distTypesConfigurationsMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: AwsAuthInputConfig] (val x: Self) extends AnyVal {
       
-      inline def setCredentials(value: Credentials | Provider[Credentials]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: AwsCredentialIdentity | Provider[AwsCredentialIdentity]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      inline def setCredentialsFunction0(value: () => js.Promise[Credentials]): Self = StObject.set(x, "credentials", js.Any.fromFunction0(value))
+      inline def setCredentialsFunction0(value: () => js.Promise[AwsCredentialIdentity]): Self = StObject.set(x, "credentials", js.Any.fromFunction0(value))
       
       inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
@@ -117,15 +118,15 @@ object distTypesConfigurationsMod {
       * This provider MAY memoize the loaded credentials for certain period.
       * See {@link MemoizedProvider} for more information.
       */
-    def credentials(): js.Promise[Credentials] = js.native
-    def credentials(options: ForceRefresh): js.Promise[Credentials] = js.native
+    def credentials(): js.Promise[AwsCredentialIdentity] = js.native
+    def credentials(options: ForceRefresh): js.Promise[AwsCredentialIdentity] = js.native
     /**
       * Resolved value for input config {@link AwsAuthInputConfig.credentials}
       * This provider MAY memoize the loaded credentials for certain period.
       * See {@link MemoizedProvider} for more information.
       */
     @JSName("credentials")
-    var credentials_Original: MemoizedProvider[Credentials] = js.native
+    var credentials_Original: MemoizedProvider[AwsCredentialIdentity] = js.native
     
     /**
       * Resolved value for input config {@link AwsAuthInputConfig.signer}
@@ -146,7 +147,7 @@ object distTypesConfigurationsMod {
   
   trait PreviouslyResolved extends StObject {
     
-    def credentialDefaultProvider(input: Any): MemoizedProvider[Credentials]
+    def credentialDefaultProvider(input: Any): MemoizedProvider[AwsCredentialIdentity]
     
     var defaultSigningName: js.UndefOr[String] = js.undefined
     
@@ -156,7 +157,7 @@ object distTypesConfigurationsMod {
     
     var serviceId: String
     
-    var sha256: HashConstructor
+    var sha256: ChecksumConstructor | HashConstructor
     
     var signingName: js.UndefOr[String] = js.undefined
     
@@ -171,10 +172,10 @@ object distTypesConfigurationsMod {
   object PreviouslyResolved {
     
     inline def apply(
-      credentialDefaultProvider: Any => MemoizedProvider[Credentials],
+      credentialDefaultProvider: Any => MemoizedProvider[AwsCredentialIdentity],
       region: String | Provider[String],
       serviceId: String,
-      sha256: HashConstructor,
+      sha256: ChecksumConstructor | HashConstructor,
       useDualstackEndpoint: () => js.Promise[Boolean],
       useFipsEndpoint: () => js.Promise[Boolean]
     ): PreviouslyResolved = {
@@ -185,7 +186,7 @@ object distTypesConfigurationsMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: PreviouslyResolved] (val x: Self) extends AnyVal {
       
-      inline def setCredentialDefaultProvider(value: Any => MemoizedProvider[Credentials]): Self = StObject.set(x, "credentialDefaultProvider", js.Any.fromFunction1(value))
+      inline def setCredentialDefaultProvider(value: Any => MemoizedProvider[AwsCredentialIdentity]): Self = StObject.set(x, "credentialDefaultProvider", js.Any.fromFunction1(value))
       
       inline def setDefaultSigningName(value: String): Self = StObject.set(x, "defaultSigningName", value.asInstanceOf[js.Any])
       
@@ -203,7 +204,7 @@ object distTypesConfigurationsMod {
       
       inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
       
-      inline def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
+      inline def setSha256(value: ChecksumConstructor | HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
       
       inline def setSigningName(value: String): Self = StObject.set(x, "signingName", value.asInstanceOf[js.Any])
       
@@ -220,7 +221,7 @@ object distTypesConfigurationsMod {
     /**
       * The credentials used to sign requests.
       */
-    var credentials: js.UndefOr[Credentials | Provider[Credentials]] = js.undefined
+    var credentials: js.UndefOr[AwsCredentialIdentity | Provider[AwsCredentialIdentity]] = js.undefined
     
     /**
       * The signer to use when signing requests.
@@ -249,9 +250,9 @@ object distTypesConfigurationsMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: SigV4AuthInputConfig] (val x: Self) extends AnyVal {
       
-      inline def setCredentials(value: Credentials | Provider[Credentials]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: AwsCredentialIdentity | Provider[AwsCredentialIdentity]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      inline def setCredentialsFunction0(value: () => js.Promise[Credentials]): Self = StObject.set(x, "credentials", js.Any.fromFunction0(value))
+      inline def setCredentialsFunction0(value: () => js.Promise[AwsCredentialIdentity]): Self = StObject.set(x, "credentials", js.Any.fromFunction0(value))
       
       inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
@@ -277,22 +278,22 @@ object distTypesConfigurationsMod {
   
   trait SigV4PreviouslyResolved extends StObject {
     
-    def credentialDefaultProvider(input: Any): MemoizedProvider[Credentials]
+    def credentialDefaultProvider(input: Any): MemoizedProvider[AwsCredentialIdentity]
     
     var logger: js.UndefOr[Logger] = js.undefined
     
     var region: String | Provider[String]
     
-    var sha256: HashConstructor
+    var sha256: ChecksumConstructor | HashConstructor
     
     var signingName: String
   }
   object SigV4PreviouslyResolved {
     
     inline def apply(
-      credentialDefaultProvider: Any => MemoizedProvider[Credentials],
+      credentialDefaultProvider: Any => MemoizedProvider[AwsCredentialIdentity],
       region: String | Provider[String],
-      sha256: HashConstructor,
+      sha256: ChecksumConstructor | HashConstructor,
       signingName: String
     ): SigV4PreviouslyResolved = {
       val __obj = js.Dynamic.literal(credentialDefaultProvider = js.Any.fromFunction1(credentialDefaultProvider), region = region.asInstanceOf[js.Any], sha256 = sha256.asInstanceOf[js.Any], signingName = signingName.asInstanceOf[js.Any])
@@ -302,7 +303,7 @@ object distTypesConfigurationsMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: SigV4PreviouslyResolved] (val x: Self) extends AnyVal {
       
-      inline def setCredentialDefaultProvider(value: Any => MemoizedProvider[Credentials]): Self = StObject.set(x, "credentialDefaultProvider", js.Any.fromFunction1(value))
+      inline def setCredentialDefaultProvider(value: Any => MemoizedProvider[AwsCredentialIdentity]): Self = StObject.set(x, "credentialDefaultProvider", js.Any.fromFunction1(value))
       
       inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
@@ -312,7 +313,7 @@ object distTypesConfigurationsMod {
       
       inline def setRegionFunction0(value: () => js.Promise[String]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
       
-      inline def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
+      inline def setSha256(value: ChecksumConstructor | HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
       
       inline def setSigningName(value: String): Self = StObject.set(x, "signingName", value.asInstanceOf[js.Any])
     }

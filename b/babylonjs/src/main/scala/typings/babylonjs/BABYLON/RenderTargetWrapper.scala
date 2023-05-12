@@ -20,6 +20,8 @@ trait RenderTargetWrapper extends StObject {
   
   /* protected */ var _engine: ThinEngine = js.native
   
+  /* private */ var _faceIndices: Any = js.native
+  
   /** @internal */
   var _generateDepthBuffer: Boolean = js.native
   
@@ -29,6 +31,8 @@ trait RenderTargetWrapper extends StObject {
   /* private */ var _isCube: Any = js.native
   
   /* private */ var _isMulti: Any = js.native
+  
+  /* private */ var _layerIndices: Any = js.native
   
   /** @internal */
   def _rebuild(): Unit = js.native
@@ -61,135 +65,16 @@ trait RenderTargetWrapper extends StObject {
     * @param generateStencil true if the stencil aspect should also be created
     * @param samples sample count to use when creating the texture
     * @param format format of the depth texture
+    * @param label defines the label to use for the texture (for debugging purpose only)
     * @returns the depth/stencil created texture
     */
-  def createDepthStencilTexture(): InternalTexture = js.native
-  def createDepthStencilTexture(comparisonFunction: Double): InternalTexture = js.native
-  def createDepthStencilTexture(comparisonFunction: Double, bilinearFiltering: Boolean): InternalTexture = js.native
-  def createDepthStencilTexture(comparisonFunction: Double, bilinearFiltering: Boolean, generateStencil: Boolean): InternalTexture = js.native
-  def createDepthStencilTexture(comparisonFunction: Double, bilinearFiltering: Boolean, generateStencil: Boolean, samples: Double): InternalTexture = js.native
   def createDepthStencilTexture(
-    comparisonFunction: Double,
-    bilinearFiltering: Boolean,
-    generateStencil: Boolean,
-    samples: Double,
-    format: Double
-  ): InternalTexture = js.native
-  def createDepthStencilTexture(
-    comparisonFunction: Double,
-    bilinearFiltering: Boolean,
-    generateStencil: Boolean,
-    samples: Unit,
-    format: Double
-  ): InternalTexture = js.native
-  def createDepthStencilTexture(comparisonFunction: Double, bilinearFiltering: Boolean, generateStencil: Unit, samples: Double): InternalTexture = js.native
-  def createDepthStencilTexture(
-    comparisonFunction: Double,
-    bilinearFiltering: Boolean,
-    generateStencil: Unit,
-    samples: Double,
-    format: Double
-  ): InternalTexture = js.native
-  def createDepthStencilTexture(
-    comparisonFunction: Double,
-    bilinearFiltering: Boolean,
-    generateStencil: Unit,
-    samples: Unit,
-    format: Double
-  ): InternalTexture = js.native
-  def createDepthStencilTexture(comparisonFunction: Double, bilinearFiltering: Unit, generateStencil: Boolean): InternalTexture = js.native
-  def createDepthStencilTexture(comparisonFunction: Double, bilinearFiltering: Unit, generateStencil: Boolean, samples: Double): InternalTexture = js.native
-  def createDepthStencilTexture(
-    comparisonFunction: Double,
-    bilinearFiltering: Unit,
-    generateStencil: Boolean,
-    samples: Double,
-    format: Double
-  ): InternalTexture = js.native
-  def createDepthStencilTexture(
-    comparisonFunction: Double,
-    bilinearFiltering: Unit,
-    generateStencil: Boolean,
-    samples: Unit,
-    format: Double
-  ): InternalTexture = js.native
-  def createDepthStencilTexture(comparisonFunction: Double, bilinearFiltering: Unit, generateStencil: Unit, samples: Double): InternalTexture = js.native
-  def createDepthStencilTexture(
-    comparisonFunction: Double,
-    bilinearFiltering: Unit,
-    generateStencil: Unit,
-    samples: Double,
-    format: Double
-  ): InternalTexture = js.native
-  def createDepthStencilTexture(
-    comparisonFunction: Double,
-    bilinearFiltering: Unit,
-    generateStencil: Unit,
-    samples: Unit,
-    format: Double
-  ): InternalTexture = js.native
-  def createDepthStencilTexture(comparisonFunction: Unit, bilinearFiltering: Boolean): InternalTexture = js.native
-  def createDepthStencilTexture(comparisonFunction: Unit, bilinearFiltering: Boolean, generateStencil: Boolean): InternalTexture = js.native
-  def createDepthStencilTexture(comparisonFunction: Unit, bilinearFiltering: Boolean, generateStencil: Boolean, samples: Double): InternalTexture = js.native
-  def createDepthStencilTexture(
-    comparisonFunction: Unit,
-    bilinearFiltering: Boolean,
-    generateStencil: Boolean,
-    samples: Double,
-    format: Double
-  ): InternalTexture = js.native
-  def createDepthStencilTexture(
-    comparisonFunction: Unit,
-    bilinearFiltering: Boolean,
-    generateStencil: Boolean,
-    samples: Unit,
-    format: Double
-  ): InternalTexture = js.native
-  def createDepthStencilTexture(comparisonFunction: Unit, bilinearFiltering: Boolean, generateStencil: Unit, samples: Double): InternalTexture = js.native
-  def createDepthStencilTexture(
-    comparisonFunction: Unit,
-    bilinearFiltering: Boolean,
-    generateStencil: Unit,
-    samples: Double,
-    format: Double
-  ): InternalTexture = js.native
-  def createDepthStencilTexture(
-    comparisonFunction: Unit,
-    bilinearFiltering: Boolean,
-    generateStencil: Unit,
-    samples: Unit,
-    format: Double
-  ): InternalTexture = js.native
-  def createDepthStencilTexture(comparisonFunction: Unit, bilinearFiltering: Unit, generateStencil: Boolean): InternalTexture = js.native
-  def createDepthStencilTexture(comparisonFunction: Unit, bilinearFiltering: Unit, generateStencil: Boolean, samples: Double): InternalTexture = js.native
-  def createDepthStencilTexture(
-    comparisonFunction: Unit,
-    bilinearFiltering: Unit,
-    generateStencil: Boolean,
-    samples: Double,
-    format: Double
-  ): InternalTexture = js.native
-  def createDepthStencilTexture(
-    comparisonFunction: Unit,
-    bilinearFiltering: Unit,
-    generateStencil: Boolean,
-    samples: Unit,
-    format: Double
-  ): InternalTexture = js.native
-  def createDepthStencilTexture(comparisonFunction: Unit, bilinearFiltering: Unit, generateStencil: Unit, samples: Double): InternalTexture = js.native
-  def createDepthStencilTexture(
-    comparisonFunction: Unit,
-    bilinearFiltering: Unit,
-    generateStencil: Unit,
-    samples: Double,
-    format: Double
-  ): InternalTexture = js.native
-  def createDepthStencilTexture(
-    comparisonFunction: Unit,
-    bilinearFiltering: Unit,
-    generateStencil: Unit,
-    samples: Unit,
-    format: Double
+    comparisonFunction: js.UndefOr[Double],
+    bilinearFiltering: js.UndefOr[Boolean],
+    generateStencil: js.UndefOr[Boolean],
+    samples: js.UndefOr[Double],
+    format: js.UndefOr[Double],
+    label: js.UndefOr[String]
   ): InternalTexture = js.native
   
   /**
@@ -208,6 +93,11 @@ trait RenderTargetWrapper extends StObject {
     */
   def dispose(): Unit = js.native
   def dispose(disposeOnlyFramebuffers: Boolean): Unit = js.native
+  
+  /**
+    * Gets the face indices that correspond to the list of render textures. If we are not in a multi render target, the list will be null
+    */
+  def faceIndices: Nullable[js.Array[Double]] = js.native
   
   /**
     * Gets the height of the render target wrapper
@@ -230,7 +120,12 @@ trait RenderTargetWrapper extends StObject {
   def isMulti: Boolean = js.native
   
   /**
-    * Gets the number of layers of the render target wrapper (only used if is2DArray is true)
+    * Gets the layer indices that correspond to the list of render textures. If we are not in a multi render target, the list will be null
+    */
+  def layerIndices: Nullable[js.Array[Double]] = js.native
+  
+  /**
+    * Gets the number of layers of the render target wrapper (only used if is2DArray is true and wrapper is not a multi render target)
     */
   def layers: Double = js.native
   
@@ -243,6 +138,28 @@ trait RenderTargetWrapper extends StObject {
     * Gets the sample count of the render target
     */
   def samples: Double = js.native
+  
+  /**
+    * Sets the layer and face indices of a texture in the textures array that should be bound to each color attachment
+    * @param index The index of the texture in the textures array to modify
+    * @param layer The layer of the texture to be set
+    * @param face The face of the texture to be set
+    */
+  def setLayerAndFaceIndex(): Unit = js.native
+  def setLayerAndFaceIndex(index: Double): Unit = js.native
+  def setLayerAndFaceIndex(index: Double, layer: Double): Unit = js.native
+  def setLayerAndFaceIndex(index: Double, layer: Double, face: Double): Unit = js.native
+  def setLayerAndFaceIndex(index: Double, layer: Unit, face: Double): Unit = js.native
+  def setLayerAndFaceIndex(index: Unit, layer: Double): Unit = js.native
+  def setLayerAndFaceIndex(index: Unit, layer: Double, face: Double): Unit = js.native
+  def setLayerAndFaceIndex(index: Unit, layer: Unit, face: Double): Unit = js.native
+  
+  /**
+    * Sets the layer and face indices of every render target texture bound to each color attachment
+    * @param layers The layers of each texture to be set
+    * @param faces The faces of each texture to be set
+    */
+  def setLayerAndFaceIndices(layers: js.Array[Double], faces: js.Array[Double]): Unit = js.native
   
   /**
     * Sets the sample count of the render target
@@ -258,8 +175,8 @@ trait RenderTargetWrapper extends StObject {
   
   /**
     * Set a texture in the textures array
-    * @param texture the texture to set
-    * @param index the index in the textures array to set
+    * @param texture The texture to set
+    * @param index The index in the textures array to set
     * @param disposePrevious If this function should dispose the previous texture
     */
   def setTexture(texture: InternalTexture): Unit = js.native

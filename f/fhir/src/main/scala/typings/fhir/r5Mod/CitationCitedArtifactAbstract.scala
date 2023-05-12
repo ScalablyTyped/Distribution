@@ -13,12 +13,12 @@ trait CitationCitedArtifactAbstract
   var _text: js.UndefOr[Element] = js.undefined
   
   /**
-    * Copyright notice for the abstract.
+    * There is also a copyright element in the publicationForm element, so this copyright element is intended for copyright of the abstract.
     */
   var copyright: js.UndefOr[String] = js.undefined
   
   /**
-    * Used to express the specific language.
+    * Used to express the specific language of the abstract.
     */
   var language: js.UndefOr[CodeableConcept] = js.undefined
   
@@ -28,7 +28,7 @@ trait CitationCitedArtifactAbstract
   var text: String
   
   /**
-    * Used to express the reason or specific aspect for the abstract.
+    * Used to express the reason for or classification of the abstract.
     */
   var `type`: js.UndefOr[CodeableConcept] = js.undefined
 }

@@ -6,10 +6,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This interface defines the map type, and is typically used for custom map
-  * types. Immutable.
-  */
 @js.native
 trait MapType extends StObject {
   

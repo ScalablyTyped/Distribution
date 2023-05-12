@@ -9,6 +9,8 @@ trait TransportMultiOptions[TransportOptions]
   extends StObject
      with TransportBaseOptions[TransportOptions] {
   
+  var dedupe: js.UndefOr[Boolean] = js.undefined
+  
   var levels: js.UndefOr[Record[String, Double]] = js.undefined
   
   var targets: js.Array[TransportTargetOptions[TransportOptions]]
@@ -22,6 +24,10 @@ object TransportMultiOptions {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: TransportMultiOptions[?], TransportOptions] (val x: Self & TransportMultiOptions[TransportOptions]) extends AnyVal {
+    
+    inline def setDedupe(value: Boolean): Self = StObject.set(x, "dedupe", value.asInstanceOf[js.Any])
+    
+    inline def setDedupeUndefined: Self = StObject.set(x, "dedupe", js.undefined)
     
     inline def setLevels(value: Record[String, Double]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     

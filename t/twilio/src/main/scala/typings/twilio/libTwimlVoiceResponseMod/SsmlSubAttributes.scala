@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SsmlSubAttributes extends StObject {
   
+  /** alias - Substitute a different word (or pronunciation) for selected text such as an acronym or abbreviation */
   var alias: js.UndefOr[String] = js.undefined
 }
 object SsmlSubAttributes {

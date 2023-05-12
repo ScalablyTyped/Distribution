@@ -15,6 +15,18 @@ object distributionTypesRetryMod {
     var afterStatusCodes: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
+      The upper limit of the delay per retry in milliseconds.
+      To clamp the delay, set `backoffLimit` to 1000, for example.
+      By default, the delay is calculated in the following way:
+      ```
+      0.3 * (2 ** (attemptCount - 1)) * 1000
+      ```
+      The delay increases exponentially.
+      @default Infinity
+      */
+    var backoffLimit: js.UndefOr[Double] = js.undefined
+    
+    /**
       The number of times to retry failed requests.
       @default 2
       */
@@ -53,6 +65,10 @@ object distributionTypesRetryMod {
       inline def setAfterStatusCodesUndefined: Self = StObject.set(x, "afterStatusCodes", js.undefined)
       
       inline def setAfterStatusCodesVarargs(value: Double*): Self = StObject.set(x, "afterStatusCodes", js.Array(value*))
+      
+      inline def setBackoffLimit(value: Double): Self = StObject.set(x, "backoffLimit", value.asInstanceOf[js.Any])
+      
+      inline def setBackoffLimitUndefined: Self = StObject.set(x, "backoffLimit", js.undefined)
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       

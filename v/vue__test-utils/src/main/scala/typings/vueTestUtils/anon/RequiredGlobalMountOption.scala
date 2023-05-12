@@ -5,7 +5,7 @@ import typings.vueRuntimeCore.mod.ComponentOptions
 import typings.vueRuntimeCore.mod.ComputedOptions
 import typings.vueRuntimeCore.mod.Directive
 import typings.vueRuntimeCore.mod.MethodOptions
-import typings.vueRuntimeCore.mod.Plugin2
+import typings.vueRuntimeCore.mod.Plugin
 import typings.vueTestUtils.distTypesMod.Stubs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,11 +23,11 @@ trait RequiredGlobalMountOption extends StObject {
   
   var directives: Record[String, Directive[Any, Any]]
   
-  var mixins: js.Array[ComponentOptions[js.Object, Any, Any, Any, Any, Any, Any, Any]]
+  var mixins: js.Array[ComponentOptions[js.Object, Any, Any, Any, Any, Any, Any, Any, Any]]
   
   var mocks: Record[String, Any]
   
-  var plugins: js.Array[Plugin2 | (Array[Plugin2 | Any])]
+  var plugins: js.Array[Plugin[js.Array[Any]] | (Array[Plugin[js.Array[Any]] | Any])]
   
   var provide: Record[Any, Any]
   
@@ -44,9 +44,9 @@ object RequiredGlobalMountOption {
     ],
     config: PartialOmitAppConfigisNat,
     directives: Record[String, Directive[Any, Any]],
-    mixins: js.Array[ComponentOptions[js.Object, Any, Any, Any, Any, Any, Any, Any]],
+    mixins: js.Array[ComponentOptions[js.Object, Any, Any, Any, Any, Any, Any, Any, Any]],
     mocks: Record[String, Any],
-    plugins: js.Array[Plugin2 | (Array[Plugin2 | Any])],
+    plugins: js.Array[Plugin[js.Array[Any]] | (Array[Plugin[js.Array[Any]] | Any])],
     provide: Record[Any, Any],
     renderStubDefaultSlot: Boolean,
     stubs: Stubs
@@ -69,15 +69,15 @@ object RequiredGlobalMountOption {
     
     inline def setDirectives(value: Record[String, Directive[Any, Any]]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     
-    inline def setMixins(value: js.Array[ComponentOptions[js.Object, Any, Any, Any, Any, Any, Any, Any]]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
+    inline def setMixins(value: js.Array[ComponentOptions[js.Object, Any, Any, Any, Any, Any, Any, Any, Any]]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
     
-    inline def setMixinsVarargs(value: (ComponentOptions[js.Object, Any, Any, Any, Any, Any, Any, Any])*): Self = StObject.set(x, "mixins", js.Array(value*))
+    inline def setMixinsVarargs(value: (ComponentOptions[js.Object, Any, Any, Any, Any, Any, Any, Any, Any])*): Self = StObject.set(x, "mixins", js.Array(value*))
     
     inline def setMocks(value: Record[String, Any]): Self = StObject.set(x, "mocks", value.asInstanceOf[js.Any])
     
-    inline def setPlugins(value: js.Array[Plugin2 | (Array[Plugin2 | Any])]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    inline def setPlugins(value: js.Array[Plugin[js.Array[Any]] | (Array[Plugin[js.Array[Any]] | Any])]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
-    inline def setPluginsVarargs(value: (Plugin2 | (Array[Plugin2 | Any]))*): Self = StObject.set(x, "plugins", js.Array(value*))
+    inline def setPluginsVarargs(value: (Plugin[js.Array[Any]] | (Array[Plugin[js.Array[Any]] | Any]))*): Self = StObject.set(x, "plugins", js.Array(value*))
     
     inline def setProvide(value: Record[Any, Any]): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
     

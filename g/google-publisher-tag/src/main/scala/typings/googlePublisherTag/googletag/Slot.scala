@@ -14,7 +14,7 @@ trait Slot extends StObject {
     * Adds a {@link Service} to this slot.
     *
     * @example
-    *   googletag.defineSlot('/1234567/sports', [160, 600])
+    *   googletag.defineSlot('/1234567/sports', [160, 600], 'div')!
     *            .addService(googletag.pubads());
     *
     * @see [Get Started with Google Publisher Tags](https://developers.google.com/publisher-tag/guides/get-started)
@@ -29,9 +29,9 @@ trait Slot extends StObject {
     *
     * @example
     *   // Set category exclusion to exclude ads with 'AirlineAd' labels.
-    *   var slot = googletag.defineSlot('/1234567/sports', [160, 600], 'div-1')
-    *                       .setCategoryExclusion('AirlineAd')
-    *                       .addService(googletag.pubads());
+    *   const slot = googletag.defineSlot('/1234567/sports', [160, 600], 'div')!
+    *                         .setCategoryExclusion('AirlineAd')
+    *                         .addService(googletag.pubads());
     *
     *   // Make an ad request. No ad with 'AirlineAd' label will be returned
     *   // for the slot.
@@ -50,11 +50,11 @@ trait Slot extends StObject {
     * slot.
     *
     * @example
-    *   var slot = googletag.defineSlot('/1234567/sports', [160, 600], 'div-1')
-    *                       .setTargeting('allow_expandable', 'true')
-    *                       .setTargeting('interests', ['sports', 'music'])
-    *                       .setTargeting('color', 'red')
-    *                       .addService(googletag.pubads());
+    *   const slot = googletag.defineSlot('/1234567/sports', [160, 600], 'div')!
+    *                         .setTargeting('allow_expandable', 'true')
+    *                         .setTargeting('interests', ['sports', 'music'])
+    *                         .setTargeting('color', 'red')
+    *                         .addService(googletag.pubads());
     *
     *   slot.clearTargeting('color');
     *   // Targeting 'allow_expandable' and 'interests' are still present,
@@ -76,15 +76,15 @@ trait Slot extends StObject {
     * for this slot.
     *
     * @example
-    *   var slot = googletag.defineSlot('/1234567/sports', [160, 600], 'div-1')
-    *                       .addService(googletag.pubads());
+    *   const slot = googletag.defineSlot('/1234567/sports', [160, 600], 'div')!
+    *                         .addService(googletag.pubads());
     *
-    *   var mapping = googletag.sizeMapping()
-    *                          .addSize([100, 100], [88, 31])
-    *                          .addSize([320, 400], [[320, 50], [300, 50]])
-    *                          .build();
+    *   const mapping = googletag.sizeMapping()
+    *                            .addSize([100, 100], [88, 31])
+    *                            .addSize([320, 400], [[320, 50], [300, 50]])
+    *                            .build();
     *
-    *   slot.defineSizeMapping(mapping);
+    *   slot.defineSizeMapping(mapping!);
     *
     * @see [Ad sizes: Responsive ads](https://developers.google.com/publisher-tag/guides/ad-sizes#responsive_ads)
     * @param sizeMapping Array of size mappings. You can use
@@ -100,12 +100,12 @@ trait Slot extends StObject {
     * this slot, use {@link PubAdsService.get}.
     *
     * @example
-    *   var slot = googletag.defineSlot('/1234567/sports', [160, 600], 'div-1')
-    *                       .set('adsense_background_color', '#FFFFFF')
-    *                       .addService(googletag.pubads());
+    *   const slot = googletag.defineSlot('/1234567/sports', [160, 600], 'div')!
+    *                         .set('adsense_background_color', '#FFFFFF')
+    *                         .addService(googletag.pubads());
     *
-    *   var color = slot.get('adsense_background_color');
-    *   // color == '#FFFFFF'.
+    *   slot.get('adsense_background_color');
+    *   // Returns '#FFFFFF'.
     *
     * @see [AdSense Attributes](https://developers.google.com/publisher-tag/adsense_attributes)
     * @param key Name of the attribute to look for.
@@ -119,11 +119,11 @@ trait Slot extends StObject {
     * path.
     *
     * @example
-    *   var slot = googletag.defineSlot('/1234567/sports', [160, 600], 'div-1')
-    *                       .addService(googletag.pubads());
+    *   const slot = googletag.defineSlot('/1234567/sports', [160, 600], 'div')!
+    *                         .addService(googletag.pubads());
     *
-    *   var path = slot.getAdUnitPath();
-    *   // path is '/1234567/sports'
+    *   slot.getAdUnitPath();
+    *   // Returns '/1234567/sports'.
     *
     * @return Ad unit path.
     */
@@ -135,13 +135,13 @@ trait Slot extends StObject {
     * {@link PubAdsService.getAttributeKeys}.
     *
     * @example
-    *   var slot = googletag.defineSlot('/1234567/sports', [160, 600], 'div-1')
-    *                       .set('adsense_background_color', '#FFFFFF')
-    *                       .set('adsense_border_color', '#AABBCC')
-    *                       .addService(googletag.pubads());
+    *   const slot = googletag.defineSlot('/1234567/sports', [160, 600], 'div')!
+    *                         .set('adsense_background_color', '#FFFFFF')
+    *                         .set('adsense_border_color', '#AABBCC')
+    *                         .addService(googletag.pubads());
     *
-    *   var keys = slot.getAttributeKeys();
-    *   // Keys are ['adsense_background_color', 'adsense_border_color'].
+    *   slot.getAttributeKeys();
+    *   // Returns ['adsense_background_color', 'adsense_border_color'].
     *
     * @return Array of attribute keys. Ordering is undefined.
     */
@@ -151,13 +151,13 @@ trait Slot extends StObject {
     * Returns the ad category exclusion labels for this slot.
     *
     * @example
-    *   var slot = googletag.defineSlot('/1234567/sports', [160, 600], 'div-1')
-    *                       .setCategoryExclusion('AirlineAd')
-    *                       .setCategoryExclusion('TrainAd')
-    *                       .addService(googletag.pubads());
+    *   const slot = googletag.defineSlot('/1234567/sports', [160, 600], 'div')!
+    *                         .setCategoryExclusion('AirlineAd')
+    *                         .setCategoryExclusion('TrainAd')
+    *                         .addService(googletag.pubads());
     *
-    *   var exclusions = slot.getCategoryExclusions();
-    *   // exclusions are ['AirlineAd', 'TrainAd']
+    *   slot.getCategoryExclusions();
+    *   // Returns ['AirlineAd', 'TrainAd'].
     *
     * @return The ad category exclusion labels for this slot, or an empty array
     *     if none have been set.
@@ -179,11 +179,11 @@ trait Slot extends StObject {
     * defined.
     *
     * @example
-    *   var slot = googletag.defineSlot('/1234567/sports', [160, 600], 'div-1')
-    *                       .addService(googletag.pubads());
+    *   const slot = googletag.defineSlot('/1234567/sports', [160, 600], 'div')!
+    *                         .addService(googletag.pubads());
     *
-    *   var slotElementId = slot.getSlotElementId();
-    *   // slotElementId is 'div-1'
+    *   slot.getSlotElementId();
+    *   // Returns 'div-1'.
     *
     * @return Slot `div` ID.
     */
@@ -194,15 +194,15 @@ trait Slot extends StObject {
     * Service-level targeting parameters are not included.
     *
     * @example
-    *   var slot = googletag.defineSlot('/1234567/sports', [160, 600], 'div-1')
-    *                       .setTargeting('allow_expandable', 'true')
-    *                       .addService(googletag.pubads());
+    *   const slot = googletag.defineSlot('/1234567/sports', [160, 600], 'div')!
+    *                         .setTargeting('allow_expandable', 'true')
+    *                         .addService(googletag.pubads());
     *
-    *   var param = slot.getTargeting('allow_expandable');
-    *   // param is ['true']
+    *   slot.getTargeting('allow_expandable');
+    *   // Returns ['true'].
     *
-    *   var param = slot.getTargeting('age');
-    *   // param is [] (empty array)
+    *   slot.getTargeting('age');
+    *   // Returns [] (empty array).
     *
     * @param key The targeting key to look for.
     * @return The values associated with this key, or an empty array if there
@@ -215,13 +215,13 @@ trait Slot extends StObject {
     * Service-level targeting keys are not included.
     *
     * @example
-    *   var slot = googletag.defineSlot('/1234567/sports', [160, 600], 'div-1')
-    *                       .setTargeting('allow_expandable', 'true')
-    *                       .setTargeting('interests', ['sports', 'music'])
-    *                       .addService(googletag.pubads());
+    *   const slot = googletag.defineSlot('/1234567/sports', [160, 600], 'div')!
+    *                         .setTargeting('allow_expandable', 'true')
+    *                         .setTargeting('interests', ['sports', 'music'])
+    *                         .addService(googletag.pubads());
     *
-    *   var keys = slot.getTargetingKeys();
-    *   // keys are ['interests', 'allow_expandable'].
+    *   slot.getTargetingKeys();
+    *   // Returns ['interests', 'allow_expandable'].
     *
     * @return Array of targeting keys. Ordering is undefined.
     */
@@ -237,7 +237,7 @@ trait Slot extends StObject {
     *
     * @example
     *   // Setting an attribute on a single ad slot.
-    *   googletag.defineSlot('/1234567/sports', [160, 600], 'div-1')
+    *   googletag.defineSlot('/1234567/sports', [160, 600], 'div')!
     *            .set('adsense_background_color', '#FFFFFF')
     *            .addService(googletag.pubads());
     *
@@ -253,7 +253,7 @@ trait Slot extends StObject {
     *
     * @example
     *   // Label = AirlineAd
-    *   googletag.defineSlot('/1234567/sports', [160, 600], 'div-1')
+    *   googletag.defineSlot('/1234567/sports', [160, 600], 'div')!
     *            .setCategoryExclusion('AirlineAd')
     *            .addService(googletag.pubads());
     *
@@ -273,7 +273,7 @@ trait Slot extends StObject {
     * overwrite the value. This works only for non-SRA requests.
     *
     * @example
-    *   googletag.defineSlot('/1234567/sports', [160, 600], 'div-1')
+    *   googletag.defineSlot('/1234567/sports', [160, 600], 'div')!
     *            .setClickUrl('http://www.example.com?original_click_url=')
     *            .addService(googletag.pubads());
     *
@@ -287,13 +287,13 @@ trait Slot extends StObject {
     * ad in the slot. This overrides the service-level settings.
     *
     * @example
-    *   googletag.defineSlot('/1234567/sports', [160, 600], 'div-1')
+    *   googletag.defineSlot('/1234567/sports', [160, 600], 'div-1')!
     *            .setCollapseEmptyDiv(true, true)
     *            .addService(googletag.pubads());
     *   // The above will cause the div for this slot to be collapsed
     *   // when the page is loaded, before ads are requested.
     *
-    *   googletag.defineSlot('/1234567/sports', [160, 600], 'div-2')
+    *   googletag.defineSlot('/1234567/sports', [160, 600], 'div-2')!
     *            .setCollapseEmptyDiv(true)
     *            .addService(googletag.pubads());
     *   // The above will cause the div for this slot to be collapsed
@@ -337,7 +337,7 @@ trait Slot extends StObject {
     *   them being rendered directly in a publishers page.
     *
     * @example
-    *   googletag.defineSlot('/1234567/sports', [160, 600], 'div-1')
+    *   googletag.defineSlot('/1234567/sports', [160, 600], 'div')!
     *            .setForceSafeFrame(true)
     *            .addService(googletag.pubads());
     *
@@ -363,12 +363,12 @@ trait Slot extends StObject {
     *
     *   // The following slot will have a sandboxed safeframe that only
     *   // disallows top-level navigation.
-    *   googletag.defineSlot('/1234567/sports', [160, 600], 'div-1')
+    *   googletag.defineSlot('/1234567/sports', [160, 600], 'div-1')!
     *            .setSafeFrameConfig({sandbox: true})
     *            .addService(googletag.pubads());
     *
     *   // The following slot will inherit page-level settings.
-    *   googletag.defineSlot('/1234567/news', [160, 600], 'div-2')
+    *   googletag.defineSlot('/1234567/news', [160, 600], 'div-2')!
     *            .addService(googletag.pubads());
     *
     *   googletag.display('div-1');
@@ -388,8 +388,8 @@ trait Slot extends StObject {
     * keys are defined in your Google Ad Manager account.
     *
     * @example
-    *   var slot = googletag.defineSlot('/1234567/sports', [160, 600], 'div-1')
-    *                       .addService(googletag.pubads());
+    *   const slot = googletag.defineSlot('/1234567/sports', [160, 600], 'div')!
+    *                         .addService(googletag.pubads());
     *
     *   // Example with a single value for a key.
     *   slot.setTargeting('allow_expandable', 'true');
@@ -420,8 +420,7 @@ trait Slot extends StObject {
     *   service-level.
     *
     * @example
-    *   var slot = googletag.defineSlot('/1234567/sports', [160, 600],
-    *                                   'div-1');
+    *   const slot = googletag.defineSlot('/1234567/sports', [160, 600], 'div')!;
     *
     *   slot.updateTargetingFromMap({
     *     'color': 'red',

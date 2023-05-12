@@ -90,7 +90,7 @@ object applicationSchemaMod {
     var minimal: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * The name of the new app.
+      * The name of the new application.
       */
     var name: String
     
@@ -100,7 +100,7 @@ object applicationSchemaMod {
     var prefix: js.UndefOr[String] = js.undefined
     
     /**
-      * The root directory of the new app.
+      * The root directory of the new application.
       */
     var projectRoot: js.UndefOr[String] = js.undefined
     
@@ -123,6 +123,11 @@ object applicationSchemaMod {
       * Do not create "spec.ts" test files for the application.
       */
     var skipTests: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Creates an application based upon the standalone API, without NgModules.
+      */
+    var standalone: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Creates an application with stricter bundle budgets settings.
@@ -186,6 +191,10 @@ object applicationSchemaMod {
       inline def setSkipTests(value: Boolean): Self = StObject.set(x, "skipTests", value.asInstanceOf[js.Any])
       
       inline def setSkipTestsUndefined: Self = StObject.set(x, "skipTests", js.undefined)
+      
+      inline def setStandalone(value: Boolean): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
+      
+      inline def setStandaloneUndefined: Self = StObject.set(x, "standalone", js.undefined)
       
       inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       

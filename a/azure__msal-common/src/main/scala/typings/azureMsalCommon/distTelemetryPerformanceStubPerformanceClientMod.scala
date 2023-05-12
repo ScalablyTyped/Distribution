@@ -34,6 +34,8 @@ object distTelemetryPerformanceStubPerformanceClientMod {
     ) = this()
     
     def startPerformanceMeasuremeant(): IPerformanceMeasurement = js.native
+    
+    def startPerformanceMeasurement(): IPerformanceMeasurement = js.native
   }
   
   @JSImport("@azure/msal-common/dist/telemetry/performance/StubPerformanceClient", "StubPerformanceMeasurement")

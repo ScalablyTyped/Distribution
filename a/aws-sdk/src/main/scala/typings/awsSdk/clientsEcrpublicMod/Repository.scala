@@ -12,12 +12,12 @@ trait Repository extends StObject {
   var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The AWS account ID associated with the public registry that contains the repository.
+    * The Amazon Web Services account ID that's associated with the public registry that contains the repository.
     */
   var registryId: js.UndefOr[RegistryId] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) that identifies the repository. The ARN contains the arn:aws:ecr namespace, followed by the region of the repository, AWS account ID of the repository owner, repository namespace, and repository name. For example, arn:aws:ecr:region:012345678910:repository/test.
+    * The Amazon Resource Name (ARN) that identifies the repository. The ARN contains the arn:aws:ecr namespace, followed by the region of the repository, Amazon Web Services account ID of the repository owner, repository namespace, and repository name. For example, arn:aws:ecr:region:012345678910:repository/test.
     */
   var repositoryArn: js.UndefOr[Arn] = js.undefined
   

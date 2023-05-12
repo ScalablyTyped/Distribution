@@ -13,6 +13,8 @@ type AccountId = String
 
 type AdvancedBackupSettings = js.Array[AdvancedBackupSetting]
 
+type BackupJobChildJobsInState = StringDictionary[Long_]
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATED
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -22,6 +24,7 @@ type AdvancedBackupSettings = js.Array[AdvancedBackupSetting]
   - typings.awsSdk.awsSdkStrings.COMPLETED
   - typings.awsSdk.awsSdkStrings.FAILED
   - typings.awsSdk.awsSdkStrings.EXPIRED
+  - typings.awsSdk.awsSdkStrings.PARTIAL
   - java.lang.String
 */
 type BackupJobState = _BackupJobState | String
@@ -98,11 +101,14 @@ type ControlName = String
 
 type CopyActions = js.Array[CopyAction]
 
+type CopyJobChildJobsInState = StringDictionary[Long_]
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATED
   - typings.awsSdk.awsSdkStrings.RUNNING
   - typings.awsSdk.awsSdkStrings.COMPLETED
   - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.PARTIAL
   - java.lang.String
 */
 type CopyJobState = _CopyJobState | String
@@ -132,6 +138,17 @@ type IAMPolicy = String
 type IAMRoleArn = String
 
 type IsEnabled = scala.Boolean
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CREATING
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - typings.awsSdk.awsSdkStrings.CANCELING
+  - typings.awsSdk.awsSdkStrings.CANCELED
+  - java.lang.String
+*/
+type LegalHoldStatus = _LegalHoldStatus | String
+
+type LegalHoldsList = js.Array[LegalHold]
 
 type ListOfTags = js.Array[Condition]
 
@@ -166,6 +183,8 @@ type RecoveryPointByResourceList = js.Array[RecoveryPointByResource]
 */
 type RecoveryPointStatus = _RecoveryPointStatus | String
 
+type RecoveryPointsList = js.Array[RecoveryPointMember]
+
 type ReportJobId = String
 
 type ReportJobList = js.Array[ReportJob]
@@ -177,6 +196,8 @@ type ReportPlanList = js.Array[ReportPlan]
 type ReportPlanName = String
 
 type ResourceArns = js.Array[ARN]
+
+type ResourceIdentifiers = js.Array[String]
 
 type ResourceType = String
 
@@ -217,6 +238,8 @@ type TagKeyList = js.Array[String]
 type TagValue = String
 
 type Tags = StringDictionary[TagValue]
+
+type VaultNames = js.Array[String]
 
 type WindowMinutes = Double
 

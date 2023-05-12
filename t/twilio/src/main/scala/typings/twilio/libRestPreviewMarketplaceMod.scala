@@ -1,8 +1,7 @@
 package typings.twilio
 
-import typings.twilio.libRestPreviewMarketplaceAvailableAddOnMod.AvailableAddOnContext
+import typings.twilio.libRestPreviewBaseMod.^
 import typings.twilio.libRestPreviewMarketplaceAvailableAddOnMod.AvailableAddOnListInstance
-import typings.twilio.libRestPreviewMarketplaceInstalledAddOnMod.InstalledAddOnContext
 import typings.twilio.libRestPreviewMarketplaceInstalledAddOnMod.InstalledAddOnListInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,33 +9,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libRestPreviewMarketplaceMod {
   
-  @JSImport("twilio/lib/rest/preview/Marketplace", JSImport.Namespace)
+  @JSImport("twilio/lib/rest/preview/Marketplace", JSImport.Default)
   @js.native
-  open class ^ protected () extends Marketplace {
+  open class default protected () extends Marketplace {
     /**
       * Initialize the Marketplace version of Preview
       *
-      * @param domain - The twilio domain
+      * @param domain - The Twilio (Twilio.Preview) domain
       */
-    def this(domain: typings.twilio.libRestPreviewMod.^) = this()
+    def this(domain: ^) = this()
   }
   
   @js.native
   trait Marketplace
-    extends typings.twilio.libBaseVersionMod.^ {
+    extends typings.twilio.libBaseVersionMod.default {
     
-    /**
-      * @param sid - sid of instance
-      */
-    def availableAddOns(sid: String): AvailableAddOnContext = js.native
-    @JSName("availableAddOns")
-    val availableAddOns_Original: AvailableAddOnListInstance = js.native
+    /** availableAddOns - { Twilio.Preview.Marketplace.AvailableAddOnListInstance } resource */
+    /* protected */ var _availableAddOns: js.UndefOr[AvailableAddOnListInstance] = js.native
     
-    /**
-      * @param sid - sid of instance
-      */
-    def installedAddOns(sid: String): InstalledAddOnContext = js.native
-    @JSName("installedAddOns")
-    val installedAddOns_Original: InstalledAddOnListInstance = js.native
+    /** installedAddOns - { Twilio.Preview.Marketplace.InstalledAddOnListInstance } resource */
+    /* protected */ var _installedAddOns: js.UndefOr[InstalledAddOnListInstance] = js.native
+    
+    /** Getter for availableAddOns resource */
+    def availableAddOns: AvailableAddOnListInstance = js.native
+    
+    /** Getter for installedAddOns resource */
+    def installedAddOns: InstalledAddOnListInstance = js.native
   }
 }

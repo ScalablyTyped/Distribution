@@ -22,7 +22,7 @@ trait SpotFleetRequestConfigData extends StObject {
   var Context: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates whether running Spot Instances should be terminated if you decrease the target capacity of the Spot Fleet request below the current size of the Spot Fleet.
+    * Indicates whether running instances should be terminated if you decrease the target capacity of the Spot Fleet request below the current size of the Spot Fleet. Supported only for fleets of type maintain.
     */
   var ExcessCapacityTerminationPolicy: js.UndefOr[typings.awsSdk.clientsEc2Mod.ExcessCapacityTerminationPolicy] = js.undefined
   
@@ -112,7 +112,7 @@ trait SpotFleetRequestConfigData extends StObject {
   var TargetCapacity: Integer
   
   /**
-    * The unit for the target capacity. Default: units (translates to number of instances)
+    * The unit for the target capacity. TargetCapacityUnitType can only be specified when InstanceRequirements is specified. Default: units (translates to number of instances)
     */
   var TargetCapacityUnitType: js.UndefOr[typings.awsSdk.clientsEc2Mod.TargetCapacityUnitType] = js.undefined
   

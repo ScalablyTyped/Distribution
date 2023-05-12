@@ -2,10 +2,10 @@ package typings.pixiCore
 
 import typings.pixiConstants.mod.DRAW_MODES
 import typings.pixiCore.libIrendererMod.IRenderingContext
+import typings.pixiCore.libRendererMod.Renderer
+import typings.pixiCore.libShaderShaderMod.Shader
 import typings.pixiCore.libSystemIsystemMod.ISystem
 import typings.pixiCore.libTransformFeedbackTransformFeedbackMod.TransformFeedback
-import typings.pixiCore.mod.Renderer
-import typings.pixiCore.mod.Shader
 import typings.pixiExtensions.mod.ExtensionMetadata
 import typings.std.WebGLTransformFeedback
 import org.scalablytyped.runtime.StObject

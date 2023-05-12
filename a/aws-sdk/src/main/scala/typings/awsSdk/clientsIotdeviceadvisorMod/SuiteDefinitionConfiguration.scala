@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SuiteDefinitionConfiguration extends StObject {
   
   /**
-    * Gets the device permission ARN.
+    * Gets the device permission ARN. This is a required parameter.
     */
-  var devicePermissionRoleArn: js.UndefOr[AmazonResourceName] = js.undefined
+  var devicePermissionRoleArn: AmazonResourceName
   
   /**
     * Gets the devices configured.
@@ -22,29 +22,33 @@ trait SuiteDefinitionConfiguration extends StObject {
   var intendedForQualification: js.UndefOr[IntendedForQualificationBoolean] = js.undefined
   
   /**
-    *  Verifies if the test suite is a long duration test. 
+    * Verifies if the test suite is a long duration test.
     */
   var isLongDurationTest: js.UndefOr[IsLongDurationTestBoolean] = js.undefined
   
   /**
-    *  Gets the MQTT protocol that is configured in the suite definition.
+    * Sets the MQTT protocol that is configured in the suite definition.
     */
   var protocol: js.UndefOr[Protocol] = js.undefined
   
   /**
-    * Gets test suite root group.
+    * Gets the test suite root group. This is a required parameter.
     */
-  var rootGroup: js.UndefOr[RootGroup] = js.undefined
+  var rootGroup: RootGroup
   
   /**
-    * Gets Suite Definition Configuration name.
+    * Gets the suite definition name. This is a required parameter.
     */
-  var suiteDefinitionName: js.UndefOr[SuiteDefinitionName] = js.undefined
+  var suiteDefinitionName: SuiteDefinitionName
 }
 object SuiteDefinitionConfiguration {
   
-  inline def apply(): SuiteDefinitionConfiguration = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    devicePermissionRoleArn: AmazonResourceName,
+    rootGroup: RootGroup,
+    suiteDefinitionName: SuiteDefinitionName
+  ): SuiteDefinitionConfiguration = {
+    val __obj = js.Dynamic.literal(devicePermissionRoleArn = devicePermissionRoleArn.asInstanceOf[js.Any], rootGroup = rootGroup.asInstanceOf[js.Any], suiteDefinitionName = suiteDefinitionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuiteDefinitionConfiguration]
   }
   
@@ -52,8 +56,6 @@ object SuiteDefinitionConfiguration {
   implicit open class MutableBuilder[Self <: SuiteDefinitionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDevicePermissionRoleArn(value: AmazonResourceName): Self = StObject.set(x, "devicePermissionRoleArn", value.asInstanceOf[js.Any])
-    
-    inline def setDevicePermissionRoleArnUndefined: Self = StObject.set(x, "devicePermissionRoleArn", js.undefined)
     
     inline def setDevices(value: DeviceUnderTestList): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     
@@ -75,10 +77,6 @@ object SuiteDefinitionConfiguration {
     
     inline def setRootGroup(value: RootGroup): Self = StObject.set(x, "rootGroup", value.asInstanceOf[js.Any])
     
-    inline def setRootGroupUndefined: Self = StObject.set(x, "rootGroup", js.undefined)
-    
     inline def setSuiteDefinitionName(value: SuiteDefinitionName): Self = StObject.set(x, "suiteDefinitionName", value.asInstanceOf[js.Any])
-    
-    inline def setSuiteDefinitionNameUndefined: Self = StObject.set(x, "suiteDefinitionName", js.undefined)
   }
 }

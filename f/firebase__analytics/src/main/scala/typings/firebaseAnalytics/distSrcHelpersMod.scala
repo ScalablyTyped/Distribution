@@ -1,6 +1,8 @@
 package typings.firebaseAnalytics
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.firebaseAnalytics.anon.PartialTrustedTypePolicy
+import typings.firebaseAnalytics.anon.PartialTrustedTypePolicyO
 import typings.firebaseAnalytics.anon.WrappedGtag
 import typings.firebaseAnalytics.distSrcTypesMod.DataLayer
 import typings.firebaseAnalytics.distSrcTypesMod.DynamicConfig
@@ -15,6 +17,10 @@ object distSrcHelpersMod {
   @JSImport("@firebase/analytics/dist/src/helpers", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def createGtagTrustedTypesScriptURL(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createGtagTrustedTypesScriptURL")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def createTrustedTypesPolicy(policyName: String, policyOptions: PartialTrustedTypePolicyO): js.UndefOr[PartialTrustedTypePolicy] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTrustedTypesPolicy")(policyName.asInstanceOf[js.Any], policyOptions.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[PartialTrustedTypePolicy]]
   
   inline def findGtagScriptOnPage(dataLayerName: String): HTMLScriptElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findGtagScriptOnPage")(dataLayerName.asInstanceOf[js.Any]).asInstanceOf[HTMLScriptElement | Null]
   

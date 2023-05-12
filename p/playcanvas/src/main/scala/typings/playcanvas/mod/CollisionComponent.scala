@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../../../core/math/vec3.js').Vec3} Vec3 */
-/** @typedef {import('../../../scene/model.js').Model} Model */
-/** @typedef {import('../../entity.js').Entity} Entity */
-/** @typedef {import('./system.js').CollisionComponentSystem} CollisionComponentSystem */
 /**
   * A collision volume. Use this in conjunction with a {@link RigidBodyComponent} to make a
   * collision volume that can be simulated using the physics engine.
@@ -37,8 +33,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * - "sphere": A sphere-shaped collision volume.
   *
   * Defaults to "box".
-  * @property {Vec3} halfExtents The half-extents of the box-shaped collision volume in the x, y and
-  * z axes. Defaults to [0.5, 0.5, 0.5].
+  * @property {Vec3} halfExtents The half-extents of the
+  * box-shaped collision volume in the x, y and z axes. Defaults to [0.5, 0.5, 0.5].
+  * @property {Vec3} linearOffset The positional offset of the collision shape from the Entity position along the local axes.
+  * Defaults to [0, 0, 0].
+  * @property {Quat} angularOffset The rotational offset of the collision shape from the Entity rotation in local space.
+  * Defaults to identity.
   * @property {number} radius The radius of the sphere, capsule, cylinder or cone-shaped collision
   * volumes. Defaults to 0.5.
   * @property {number} axis The local space axis with which the capsule, cylinder or cone-shaped
@@ -49,8 +49,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * be an asset id. Defaults to null.
   * @property {Asset|number} renderAsset The render asset of the mesh collision volume - can also be
   * an asset id. Defaults to null. If not set then the asset property will be checked instead.
-  * @property {Model} model The model that is added to the scene graph for the mesh collision
-  * volume.
+  * @property {import('../../../scene/model.js').Model} model The model that is added to the scene
+  * graph for the mesh collision volume.
   * @augments Component
   */
 @JSImport("playcanvas", "CollisionComponent")
@@ -59,8 +59,10 @@ open class CollisionComponent protected () extends Component {
   /**
     * Create a new CollisionComponent.
     *
-    * @param {CollisionComponentSystem} system - The ComponentSystem that created this Component.
-    * @param {Entity} entity - The Entity that this Component is attached to.
+    * @param {import('./system.js').CollisionComponentSystem} system - The ComponentSystem that
+    * created this Component.
+    * @param {import('../../entity.js').Entity} entity - The Entity that this Component is
+    * attached to.
     */
   def this(system: CollisionComponentSystem, entity: Entity) = this()
   
@@ -73,6 +75,8 @@ open class CollisionComponent protected () extends Component {
     * @private
     */
   /* private */ var _getCompoundChildShapeIndex: Any = js.native
+  
+  var _hasOffset: Boolean = js.native
   
   /**
     * @param {GraphNode} parent - The parent node.
@@ -87,6 +91,18 @@ open class CollisionComponent protected () extends Component {
   
   def axis: Double = js.native
   def axis_=(arg: Double): Unit = js.native
+  
+  /**
+    * @description Returns the world position for the collision shape taking into account of any offsets.
+    * @returns {Vec3} The world position for the collision shape.
+    */
+  def getShapePosition(): Vec3 = js.native
+  
+  /**
+    * @description Returns the world rotation for the collision shape taking into account of any offsets.
+    * @returns {Quat} The world rotation for the collision.
+    */
+  def getShapeRotation(): Quat = js.native
   
   def halfExtents: Vec3 = js.native
   def halfExtents_=(arg: Vec3): Unit = js.native
@@ -158,6 +174,14 @@ open class CollisionComponent protected () extends Component {
     * @param {*} newValue - New value of the property.
     * @private
     */
+  /* private */ var onSetOffset: Any = js.native
+  
+  /**
+    * @param {string} name - Property name.
+    * @param {*} oldValue - Previous value of the property.
+    * @param {*} newValue - New value of the property.
+    * @private
+    */
   /* private */ var onSetRadius: Any = js.native
   
   /**
@@ -192,19 +216,19 @@ open class CollisionComponent protected () extends Component {
     * Fired two rigid-bodies stop touching.
     *
     * @event CollisionComponent#collisionend
-    * @param {Entity} other - The {@link Entity} that stopped touching this collision volume.
+    * @param {import('../../entity.js').Entity} other - The {@link Entity} that stopped touching this collision volume.
     */
   /**
     * Fired when a rigid body enters a trigger volume.
     *
     * @event CollisionComponent#triggerenter
-    * @param {Entity} other - The {@link Entity} that entered this collision volume.
+    * @param {import('../../entity.js').Entity} other - The {@link Entity} that entered this collision volume.
     */
   /**
     * Fired when a rigid body exits a trigger volume.
     *
     * @event CollisionComponent#triggerleave
-    * @param {Entity} other - The {@link Entity} that exited this collision volume.
+    * @param {import('../../entity.js').Entity} other - The {@link Entity} that exited this collision volume.
     */
   /**
     * @param {string} name - Property name.

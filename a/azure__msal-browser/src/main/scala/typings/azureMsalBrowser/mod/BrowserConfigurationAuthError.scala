@@ -18,6 +18,11 @@ object BrowserConfigurationAuthError {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    * Creates an error thrown when a crypto interface that requires entropy is initialized without entropy
+    */
+  inline def createEntropyNotProvided(): typings.azureMsalBrowser.distErrorBrowserConfigurationAuthErrorMod.BrowserConfigurationAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createEntropyNotProvided")().asInstanceOf[typings.azureMsalBrowser.distErrorBrowserConfigurationAuthErrorMod.BrowserConfigurationAuthError]
+  
   inline def createInMemoryRedirectUnavailableError(): typings.azureMsalBrowser.distErrorBrowserConfigurationAuthErrorMod.BrowserConfigurationAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMemoryRedirectUnavailableError")().asInstanceOf[typings.azureMsalBrowser.distErrorBrowserConfigurationAuthErrorMod.BrowserConfigurationAuthError]
   
   /**

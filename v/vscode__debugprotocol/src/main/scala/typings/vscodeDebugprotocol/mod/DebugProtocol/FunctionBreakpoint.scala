@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Properties of a breakpoint passed to the setFunctionBreakpoints request. */
+/** Properties of a breakpoint passed to the `setFunctionBreakpoints` request. */
 trait FunctionBreakpoint extends StObject {
   
   /** An expression for conditional breakpoints.

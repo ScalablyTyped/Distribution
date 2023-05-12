@@ -8,11 +8,11 @@ trait ParametersPathOrgOwner extends StObject {
   
   var parameters: PathOrgOwner
   
-  var responses: `200ContentApplicationjsonContributorsurl`
+  var responses: `200ContentApplicationjsonGittagsurl`
 }
 object ParametersPathOrgOwner {
   
-  inline def apply(parameters: PathOrgOwner, responses: `200ContentApplicationjsonContributorsurl`): ParametersPathOrgOwner = {
+  inline def apply(parameters: PathOrgOwner, responses: `200ContentApplicationjsonGittagsurl`): ParametersPathOrgOwner = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathOrgOwner]
   }
@@ -22,6 +22,6 @@ object ParametersPathOrgOwner {
     
     inline def setParameters(value: PathOrgOwner): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200ContentApplicationjsonContributorsurl`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200ContentApplicationjsonGittagsurl`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "kdbush" : "4.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "kdbush" : "4.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

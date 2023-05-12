@@ -15,18 +15,36 @@ object formatWfsMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    * @classdesc
+    * Feature format for reading and writing data in the WFS format.
+    * By default, supports WFS version 1.1.0. You can pass a GML format
+    * as option to override the default.
+    * Also see {@link module:ol/format/GMLBase~GMLBase} which is used by this format.
+    *
+    * @api
+    */
   @JSImport("ol/format/WFS", JSImport.Default)
   @js.native
+  /**
+    * @param {Options} [options] Optional configuration object.
+    */
   open class default () extends WFS {
-    def this(opt_options: Options) = this()
+    def this(options: Options) = this()
   }
   
   inline def writeFilter(filter: typings.ol.formatFilterFilterMod.default, version: String): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFilter")(filter.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Node]
   
   trait FeatureCollectionMetadata extends StObject {
     
+    /**
+      * Bounds.
+      */
     var bounds: Extent
     
+    /**
+      * NumberOfFeatures.
+      */
     var numberOfFeatures: Double
   }
   object FeatureCollectionMetadata {
@@ -41,16 +59,27 @@ object formatWfsMod {
       
       inline def setBounds(value: Extent): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
+      inline def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value*))
+      
       inline def setNumberOfFeatures(value: Double): Self = StObject.set(x, "numberOfFeatures", value.asInstanceOf[js.Any])
     }
   }
   
   trait FeatureType extends StObject {
     
+    /**
+      * Extent to use for the BBOX filter.
+      */
     var bbox: Extent
     
+    /**
+      * Geometry name to use in the BBOX filter.
+      */
     var geometryName: String
     
+    /**
+      * The feature type name.
+      */
     var name: String
   }
   object FeatureType {
@@ -65,6 +94,8 @@ object formatWfsMod {
       
       inline def setBbox(value: Extent): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
       
+      inline def setBboxVarargs(value: Double*): Self = StObject.set(x, "bbox", js.Array(value*))
+      
       inline def setGeometryName(value: String): Self = StObject.set(x, "geometryName", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
@@ -73,14 +104,30 @@ object formatWfsMod {
   
   trait Options extends StObject {
     
-    var featureNS: js.UndefOr[StringDictionary[String] | String] = js.undefined
+    /**
+      * The namespace URI used for features.
+      */
+    var featureNS: js.UndefOr[String | StringDictionary[String]] = js.undefined
     
-    var featureType: js.UndefOr[js.Array[String] | String] = js.undefined
+    /**
+      * The feature type to parse. Only used for read operations.
+      */
+    var featureType: js.UndefOr[String | js.Array[String]] = js.undefined
     
+    /**
+      * The GML format to use to parse the response.
+      * Default is `ol/format/GML2` for WFS 1.0.0, `ol/format/GML3` for WFS 1.1.0 and `ol/format/GML32` for WFS 2.0.0.
+      */
     var gmlFormat: js.UndefOr[typings.ol.formatGmlbaseMod.default] = js.undefined
     
+    /**
+      * Optional schemaLocation to use for serialization, this will override the default.
+      */
     var schemaLocation: js.UndefOr[String] = js.undefined
     
+    /**
+      * WFS version to use. Can be either `1.0.0`, `1.1.0` or `2.0.0`.
+      */
     var version: js.UndefOr[String] = js.undefined
   }
   object Options {
@@ -93,11 +140,11 @@ object formatWfsMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
-      inline def setFeatureNS(value: StringDictionary[String] | String): Self = StObject.set(x, "featureNS", value.asInstanceOf[js.Any])
+      inline def setFeatureNS(value: String | StringDictionary[String]): Self = StObject.set(x, "featureNS", value.asInstanceOf[js.Any])
       
       inline def setFeatureNSUndefined: Self = StObject.set(x, "featureNS", js.undefined)
       
-      inline def setFeatureType(value: js.Array[String] | String): Self = StObject.set(x, "featureType", value.asInstanceOf[js.Any])
+      inline def setFeatureType(value: String | js.Array[String]): Self = StObject.set(x, "featureType", value.asInstanceOf[js.Any])
       
       inline def setFeatureTypeUndefined: Self = StObject.set(x, "featureType", js.undefined)
       
@@ -119,12 +166,24 @@ object formatWfsMod {
   
   trait TransactionResponse extends StObject {
     
+    /**
+      * InsertIds.
+      */
     var insertIds: js.Array[String]
     
+    /**
+      * TotalDeleted.
+      */
     var totalDeleted: Double
     
+    /**
+      * TotalInserted.
+      */
     var totalInserted: Double
     
+    /**
+      * TotalUpdated.
+      */
     var totalUpdated: Double
   }
   object TransactionResponse {
@@ -149,104 +208,248 @@ object formatWfsMod {
     }
   }
   
+  /**
+    * @classdesc
+    * Feature format for reading and writing data in the WFS format.
+    * By default, supports WFS version 1.1.0. You can pass a GML format
+    * as option to override the default.
+    * Also see {@link module:ol/format/GMLBase~GMLBase} which is used by this format.
+    *
+    * @api
+    */
   @js.native
   trait WFS
     extends typings.ol.formatXmlfeatureMod.default {
     
     /**
       * Create a bbox filter and combine it with another optional filter.
+      *
+      * @param {!string} geometryName Geometry name to use.
+      * @param {!import("../extent.js").Extent} extent Extent.
+      * @param {string} [srsName] SRS name. No srsName attribute will be
+      *    set on geometries when this is not provided.
+      * @param {import("./filter/Filter.js").default} [filter] Filter condition.
+      * @return {import("./filter/Filter.js").default} The filter.
       */
     def combineBboxAndFilter(geometryName: String, extent: Extent): typings.ol.formatFilterFilterMod.default = js.native
-    def combineBboxAndFilter(geometryName: String, extent: Extent, opt_srsName: String): typings.ol.formatFilterFilterMod.default = js.native
+    def combineBboxAndFilter(geometryName: String, extent: Extent, srsName: String): typings.ol.formatFilterFilterMod.default = js.native
     def combineBboxAndFilter(
       geometryName: String,
       extent: Extent,
-      opt_srsName: String,
-      opt_filter: typings.ol.formatFilterFilterMod.default
+      srsName: String,
+      filter: typings.ol.formatFilterFilterMod.default
     ): typings.ol.formatFilterFilterMod.default = js.native
     def combineBboxAndFilter(
       geometryName: String,
       extent: Extent,
-      opt_srsName: Unit,
-      opt_filter: typings.ol.formatFilterFilterMod.default
+      srsName: Unit,
+      filter: typings.ol.formatFilterFilterMod.default
     ): typings.ol.formatFilterFilterMod.default = js.native
     
+    /**
+      * @private
+      * @type {Object<string, string>|string|undefined}
+      */
+    /* private */ var featureNS_ : Any = js.native
+    
+    /**
+      * @private
+      * @type {Array<string>|string|undefined}
+      */
+    /* private */ var featureType_ : Any = js.native
+    
+    /**
+      * @return {Array<string>|string|undefined} featureType
+      */
     def getFeatureType(): js.UndefOr[js.Array[String] | String] = js.native
     
+    /**
+      * @private
+      * @type {GMLBase}
+      */
+    /* private */ var gmlFormat_ : Any = js.native
+    
     def readFeatureCollectionMetadata(source: String): js.UndefOr[FeatureCollectionMetadata] = js.native
-    def readFeatureCollectionMetadata(source: js.Object): js.UndefOr[FeatureCollectionMetadata] = js.native
+    def readFeatureCollectionMetadata(source: Any): js.UndefOr[FeatureCollectionMetadata] = js.native
     /**
       * Read feature collection metadata of the source.
+      *
+      * @param {Document|Element|Object|string} source Source.
+      * @return {FeatureCollectionMetadata|undefined}
+      *     FeatureCollection metadata.
+      * @api
       */
     def readFeatureCollectionMetadata(source: Document): js.UndefOr[FeatureCollectionMetadata] = js.native
     def readFeatureCollectionMetadata(source: Element): js.UndefOr[FeatureCollectionMetadata] = js.native
     
+    /**
+      * @param {Document} doc Document.
+      * @return {FeatureCollectionMetadata|undefined}
+      *     FeatureCollection metadata.
+      */
     def readFeatureCollectionMetadataFromDocument(doc: Document): js.UndefOr[FeatureCollectionMetadata] = js.native
     
+    /**
+      * @param {Element} node Node.
+      * @return {FeatureCollectionMetadata|undefined}
+      *     FeatureCollection metadata.
+      */
     def readFeatureCollectionMetadataFromNode(node: Element): js.UndefOr[FeatureCollectionMetadata] = js.native
     
     def readTransactionResponse(source: String): js.UndefOr[TransactionResponse] = js.native
-    def readTransactionResponse(source: js.Object): js.UndefOr[TransactionResponse] = js.native
+    def readTransactionResponse(source: Any): js.UndefOr[TransactionResponse] = js.native
     /**
       * Read transaction response of the source.
+      *
+      * @param {Document|Element|Object|string} source Source.
+      * @return {TransactionResponse|undefined} Transaction response.
+      * @api
       */
     def readTransactionResponse(source: Document): js.UndefOr[TransactionResponse] = js.native
     def readTransactionResponse(source: Element): js.UndefOr[TransactionResponse] = js.native
     
+    /**
+      * @param {Document} doc Document.
+      * @return {TransactionResponse|undefined} Transaction response.
+      */
     def readTransactionResponseFromDocument(doc: Document): js.UndefOr[TransactionResponse] = js.native
     
+    /**
+      * @param {Element} node Node.
+      * @return {TransactionResponse|undefined} Transaction response.
+      */
     def readTransactionResponseFromNode(node: Element): js.UndefOr[TransactionResponse] = js.native
     
+    /**
+      * @private
+      * @type {string}
+      */
+    /* private */ var schemaLocation_ : Any = js.native
+    
+    /**
+      * @param {Array<string>|string|undefined} featureType Feature type(s) to parse.
+      */
     def setFeatureType(): Unit = js.native
     def setFeatureType(featureType: String): Unit = js.native
     def setFeatureType(featureType: js.Array[String]): Unit = js.native
     
     /**
-      * Encode format as WFS GetFeature and return the Node.
+      * @private
+      * @type {string}
+      */
+    /* private */ var version_ : Any = js.native
+    
+    /**
+      * Encode format as WFS `GetFeature` and return the Node.
+      *
+      * @param {WriteGetFeatureOptions} options Options.
+      * @return {Node} Result.
+      * @api
       */
     def writeGetFeature(options: WriteGetFeatureOptions): Node = js.native
     
     /**
-      * Encode format as WFS Transaction and return the Node.
+      * Encode format as WFS `Transaction` and return the Node.
+      *
+      * @param {Array<import("../Feature.js").default>} inserts The features to insert.
+      * @param {Array<import("../Feature.js").default>} updates The features to update.
+      * @param {Array<import("../Feature.js").default>} deletes The features to delete.
+      * @param {WriteTransactionOptions} options Write options.
+      * @return {Node} Result.
+      * @api
       */
     def writeTransaction(
-      inserts: js.Array[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]],
-      updates: js.Array[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]],
-      deletes: js.Array[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]],
+      inserts: js.Array[typings.ol.renderFeatureMod.default],
+      updates: js.Array[typings.ol.renderFeatureMod.default],
+      deletes: js.Array[typings.ol.renderFeatureMod.default],
       options: WriteTransactionOptions
     ): Node = js.native
   }
   
   trait WriteGetFeatureOptions extends StObject {
     
+    /**
+      * Extent to use for the BBOX filter. The `geometryName`
+      * option must be set.
+      */
     var bbox: js.UndefOr[Extent] = js.undefined
     
+    /**
+      * Number of features to retrieve when paging. This is a
+      * WFS 2.0 feature backported to WFS 1.1.0 by some Web Feature Services. Please note that some
+      * Web Feature Services have repurposed `maxfeatures` instead.
+      */
     var count: js.UndefOr[Double] = js.undefined
     
+    /**
+      * The namespace URI used for features.
+      */
     var featureNS: String
     
+    /**
+      * The prefix for the feature namespace.
+      */
     var featurePrefix: String
     
+    /**
+      * The feature type names or FeatureType objects to
+      * define a unique bbox filter per feature type name (in this case, options `bbox` and `geometryName` are
+      * ignored.).
+      */
     var featureTypes: js.Array[String | FeatureType]
     
+    /**
+      * Filter condition. See
+      * {@link module :ol/format/filter} for more information.
+      */
     var filter: js.UndefOr[typings.ol.formatFilterFilterMod.default] = js.undefined
     
+    /**
+      * Geometry name to use in a BBOX filter.
+      */
     var geometryName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Handle.
+      */
     var handle: js.UndefOr[String] = js.undefined
     
+    /**
+      * Maximum number of features to fetch.
+      */
     var maxFeatures: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Output format.
+      */
     var outputFormat: js.UndefOr[String] = js.undefined
     
+    /**
+      * Optional list of property names to serialize.
+      */
     var propertyNames: js.UndefOr[js.Array[String]] = js.undefined
     
+    /**
+      * Indicates what response should be returned,
+      * e.g. `hits` only includes the `numberOfFeatures` attribute in the response and no features.
+      */
     var resultType: js.UndefOr[String] = js.undefined
     
+    /**
+      * SRS name. No srsName attribute will be set on
+      * geometries when this is not provided.
+      */
     var srsName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Start index to use for WFS paging. This is a
+      * WFS 2.0 feature backported to WFS 1.1.0 by some Web Feature Services.
+      */
     var startIndex: js.UndefOr[Double] = js.undefined
     
+    /**
+      * viewParams GeoServer vendor parameter.
+      */
     var viewParams: js.UndefOr[String] = js.undefined
   }
   object WriteGetFeatureOptions {
@@ -262,6 +465,8 @@ object formatWfsMod {
       inline def setBbox(value: Extent): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
       
       inline def setBboxUndefined: Self = StObject.set(x, "bbox", js.undefined)
+      
+      inline def setBboxVarargs(value: Double*): Self = StObject.set(x, "bbox", js.Array(value*))
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -321,28 +526,57 @@ object formatWfsMod {
   
   trait WriteTransactionOptions extends StObject {
     
+    /**
+      * The namespace URI used for features.
+      */
     var featureNS: String
     
+    /**
+      * The prefix for the feature namespace.
+      */
     var featurePrefix: String
     
+    /**
+      * The feature type name.
+      */
     var featureType: String
     
+    /**
+      * GML options for the WFS transaction writer.
+      */
     var gmlOptions: js.UndefOr[typings.ol.formatGmlbaseMod.Options] = js.undefined
     
+    /**
+      * Handle.
+      */
     var handle: js.UndefOr[String] = js.undefined
     
+    /**
+      * Must be set to true if the transaction is for
+      * a 3D layer. This will allow the Z coordinate to be included in the transaction.
+      */
     var hasZ: js.UndefOr[Boolean] = js.undefined
     
-    var nativeElements: js.UndefOr[js.Array[js.Object]] = js.undefined
+    /**
+      * Native elements. Currently not supported.
+      */
+    var nativeElements: js.Array[Any]
     
+    /**
+      * SRS name. No srsName attribute will be set on
+      * geometries when this is not provided.
+      */
     var srsName: js.UndefOr[String] = js.undefined
     
+    /**
+      * WFS version to use for the transaction. Can be either `1.0.0`, `1.1.0` or `2.0.0`.
+      */
     var version: js.UndefOr[String] = js.undefined
   }
   object WriteTransactionOptions {
     
-    inline def apply(featureNS: String, featurePrefix: String, featureType: String): WriteTransactionOptions = {
-      val __obj = js.Dynamic.literal(featureNS = featureNS.asInstanceOf[js.Any], featurePrefix = featurePrefix.asInstanceOf[js.Any], featureType = featureType.asInstanceOf[js.Any])
+    inline def apply(featureNS: String, featurePrefix: String, featureType: String, nativeElements: js.Array[Any]): WriteTransactionOptions = {
+      val __obj = js.Dynamic.literal(featureNS = featureNS.asInstanceOf[js.Any], featurePrefix = featurePrefix.asInstanceOf[js.Any], featureType = featureType.asInstanceOf[js.Any], nativeElements = nativeElements.asInstanceOf[js.Any])
       __obj.asInstanceOf[WriteTransactionOptions]
     }
     
@@ -367,11 +601,9 @@ object formatWfsMod {
       
       inline def setHasZUndefined: Self = StObject.set(x, "hasZ", js.undefined)
       
-      inline def setNativeElements(value: js.Array[js.Object]): Self = StObject.set(x, "nativeElements", value.asInstanceOf[js.Any])
+      inline def setNativeElements(value: js.Array[Any]): Self = StObject.set(x, "nativeElements", value.asInstanceOf[js.Any])
       
-      inline def setNativeElementsUndefined: Self = StObject.set(x, "nativeElements", js.undefined)
-      
-      inline def setNativeElementsVarargs(value: js.Object*): Self = StObject.set(x, "nativeElements", js.Array(value*))
+      inline def setNativeElementsVarargs(value: Any*): Self = StObject.set(x, "nativeElements", js.Array(value*))
       
       inline def setSrsName(value: String): Self = StObject.set(x, "srsName", value.asInstanceOf[js.Any])
       

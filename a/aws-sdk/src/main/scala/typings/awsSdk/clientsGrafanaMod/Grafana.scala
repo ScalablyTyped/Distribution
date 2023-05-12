@@ -43,12 +43,12 @@ trait Grafana extends Service {
   ): Request[CreateWorkspaceResponse, AWSError] = js.native
   
   /**
-    * Creates an API key for the workspace. This key can be used to authenticate requests sent to the workspace's HTTP API. See  https://docs.aws.amazon.com/grafana/latest/userguide/Using-Grafana-APIs.html for available APIs and example requests.
+    * Creates a Grafana API key for the workspace. This key can be used to authenticate requests sent to the workspace's HTTP API. See https://docs.aws.amazon.com/grafana/latest/userguide/Using-Grafana-APIs.html for available APIs and example requests.
     */
   def createWorkspaceApiKey(): Request[CreateWorkspaceApiKeyResponse, AWSError] = js.native
   def createWorkspaceApiKey(callback: js.Function2[/* err */ AWSError, /* data */ CreateWorkspaceApiKeyResponse, Unit]): Request[CreateWorkspaceApiKeyResponse, AWSError] = js.native
   /**
-    * Creates an API key for the workspace. This key can be used to authenticate requests sent to the workspace's HTTP API. See  https://docs.aws.amazon.com/grafana/latest/userguide/Using-Grafana-APIs.html for available APIs and example requests.
+    * Creates a Grafana API key for the workspace. This key can be used to authenticate requests sent to the workspace's HTTP API. See https://docs.aws.amazon.com/grafana/latest/userguide/Using-Grafana-APIs.html for available APIs and example requests.
     */
   def createWorkspaceApiKey(params: CreateWorkspaceApiKeyRequest): Request[CreateWorkspaceApiKeyResponse, AWSError] = js.native
   def createWorkspaceApiKey(
@@ -71,12 +71,12 @@ trait Grafana extends Service {
   ): Request[DeleteWorkspaceResponse, AWSError] = js.native
   
   /**
-    * Deletes an API key for a workspace.
+    * Deletes a Grafana API key for the workspace.
     */
   def deleteWorkspaceApiKey(): Request[DeleteWorkspaceApiKeyResponse, AWSError] = js.native
   def deleteWorkspaceApiKey(callback: js.Function2[/* err */ AWSError, /* data */ DeleteWorkspaceApiKeyResponse, Unit]): Request[DeleteWorkspaceApiKeyResponse, AWSError] = js.native
   /**
-    * Deletes an API key for a workspace.
+    * Deletes a Grafana API key for the workspace.
     */
   def deleteWorkspaceApiKey(params: DeleteWorkspaceApiKeyRequest): Request[DeleteWorkspaceApiKeyResponse, AWSError] = js.native
   def deleteWorkspaceApiKey(
@@ -113,6 +113,22 @@ trait Grafana extends Service {
     params: DescribeWorkspaceAuthenticationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeWorkspaceAuthenticationResponse, Unit]
   ): Request[DescribeWorkspaceAuthenticationResponse, AWSError] = js.native
+  
+  /**
+    * Gets the current configuration string for the given workspace.
+    */
+  def describeWorkspaceConfiguration(): Request[DescribeWorkspaceConfigurationResponse, AWSError] = js.native
+  def describeWorkspaceConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeWorkspaceConfigurationResponse, Unit]
+  ): Request[DescribeWorkspaceConfigurationResponse, AWSError] = js.native
+  /**
+    * Gets the current configuration string for the given workspace.
+    */
+  def describeWorkspaceConfiguration(params: DescribeWorkspaceConfigurationRequest): Request[DescribeWorkspaceConfigurationResponse, AWSError] = js.native
+  def describeWorkspaceConfiguration(
+    params: DescribeWorkspaceConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeWorkspaceConfigurationResponse, Unit]
+  ): Request[DescribeWorkspaceConfigurationResponse, AWSError] = js.native
   
   /**
     * Removes the Grafana Enterprise license from a workspace.
@@ -213,12 +229,12 @@ trait Grafana extends Service {
   ): Request[UpdatePermissionsResponse, AWSError] = js.native
   
   /**
-    * Modifies an existing Amazon Managed Grafana workspace. If you use this operation and omit any optional parameters, the existing values of those parameters are not changed. To modify the user authentication methods that the workspace uses, such as SAML or Amazon Web Services SSO, use UpdateWorkspaceAuthentication. To modify which users in the workspace have the Admin and Editor Grafana roles, use UpdatePermissions.
+    * Modifies an existing Amazon Managed Grafana workspace. If you use this operation and omit any optional parameters, the existing values of those parameters are not changed. To modify the user authentication methods that the workspace uses, such as SAML or IAM Identity Center, use UpdateWorkspaceAuthentication. To modify which users in the workspace have the Admin and Editor Grafana roles, use UpdatePermissions.
     */
   def updateWorkspace(): Request[UpdateWorkspaceResponse, AWSError] = js.native
   def updateWorkspace(callback: js.Function2[/* err */ AWSError, /* data */ UpdateWorkspaceResponse, Unit]): Request[UpdateWorkspaceResponse, AWSError] = js.native
   /**
-    * Modifies an existing Amazon Managed Grafana workspace. If you use this operation and omit any optional parameters, the existing values of those parameters are not changed. To modify the user authentication methods that the workspace uses, such as SAML or Amazon Web Services SSO, use UpdateWorkspaceAuthentication. To modify which users in the workspace have the Admin and Editor Grafana roles, use UpdatePermissions.
+    * Modifies an existing Amazon Managed Grafana workspace. If you use this operation and omit any optional parameters, the existing values of those parameters are not changed. To modify the user authentication methods that the workspace uses, such as SAML or IAM Identity Center, use UpdateWorkspaceAuthentication. To modify which users in the workspace have the Admin and Editor Grafana roles, use UpdatePermissions.
     */
   def updateWorkspace(params: UpdateWorkspaceRequest): Request[UpdateWorkspaceResponse, AWSError] = js.native
   def updateWorkspace(
@@ -227,16 +243,30 @@ trait Grafana extends Service {
   ): Request[UpdateWorkspaceResponse, AWSError] = js.native
   
   /**
-    * Use this operation to define the identity provider (IdP) that this workspace authenticates users from, using SAML. You can also map SAML assertion attributes to workspace user information and define which groups in the assertion attribute are to have the Admin and Editor roles in the workspace.
+    * Use this operation to define the identity provider (IdP) that this workspace authenticates users from, using SAML. You can also map SAML assertion attributes to workspace user information and define which groups in the assertion attribute are to have the Admin and Editor roles in the workspace.  Changes to the authentication method for a workspace may take a few minutes to take effect. 
     */
   def updateWorkspaceAuthentication(): Request[UpdateWorkspaceAuthenticationResponse, AWSError] = js.native
   def updateWorkspaceAuthentication(callback: js.Function2[/* err */ AWSError, /* data */ UpdateWorkspaceAuthenticationResponse, Unit]): Request[UpdateWorkspaceAuthenticationResponse, AWSError] = js.native
   /**
-    * Use this operation to define the identity provider (IdP) that this workspace authenticates users from, using SAML. You can also map SAML assertion attributes to workspace user information and define which groups in the assertion attribute are to have the Admin and Editor roles in the workspace.
+    * Use this operation to define the identity provider (IdP) that this workspace authenticates users from, using SAML. You can also map SAML assertion attributes to workspace user information and define which groups in the assertion attribute are to have the Admin and Editor roles in the workspace.  Changes to the authentication method for a workspace may take a few minutes to take effect. 
     */
   def updateWorkspaceAuthentication(params: UpdateWorkspaceAuthenticationRequest): Request[UpdateWorkspaceAuthenticationResponse, AWSError] = js.native
   def updateWorkspaceAuthentication(
     params: UpdateWorkspaceAuthenticationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateWorkspaceAuthenticationResponse, Unit]
   ): Request[UpdateWorkspaceAuthenticationResponse, AWSError] = js.native
+  
+  /**
+    * Updates the configuration string for the given workspace
+    */
+  def updateWorkspaceConfiguration(): Request[UpdateWorkspaceConfigurationResponse, AWSError] = js.native
+  def updateWorkspaceConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ UpdateWorkspaceConfigurationResponse, Unit]): Request[UpdateWorkspaceConfigurationResponse, AWSError] = js.native
+  /**
+    * Updates the configuration string for the given workspace
+    */
+  def updateWorkspaceConfiguration(params: UpdateWorkspaceConfigurationRequest): Request[UpdateWorkspaceConfigurationResponse, AWSError] = js.native
+  def updateWorkspaceConfiguration(
+    params: UpdateWorkspaceConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateWorkspaceConfigurationResponse, Unit]
+  ): Request[UpdateWorkspaceConfigurationResponse, AWSError] = js.native
 }

@@ -1,5 +1,28 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.esriFieldTypeBigInteger
+import typings.arcgisJsApi.arcgisJsApiStrings.esriFieldTypeBlob
+import typings.arcgisJsApi.arcgisJsApiStrings.esriFieldTypeDate
+import typings.arcgisJsApi.arcgisJsApiStrings.esriFieldTypeDouble
+import typings.arcgisJsApi.arcgisJsApiStrings.esriFieldTypeGUID
+import typings.arcgisJsApi.arcgisJsApiStrings.esriFieldTypeGeometry
+import typings.arcgisJsApi.arcgisJsApiStrings.esriFieldTypeGlobalID
+import typings.arcgisJsApi.arcgisJsApiStrings.esriFieldTypeInteger
+import typings.arcgisJsApi.arcgisJsApiStrings.esriFieldTypeOID
+import typings.arcgisJsApi.arcgisJsApiStrings.esriFieldTypeRaster
+import typings.arcgisJsApi.arcgisJsApiStrings.esriFieldTypeSingle
+import typings.arcgisJsApi.arcgisJsApiStrings.esriFieldTypeSmallInteger
+import typings.arcgisJsApi.arcgisJsApiStrings.esriFieldTypeString
+import typings.arcgisJsApi.arcgisJsApiStrings.esriFieldTypeXML
+import typings.arcgisJsApi.arcgisJsApiStrings.esriGraphPropertyDocumentContentType
+import typings.arcgisJsApi.arcgisJsApiStrings.esriGraphPropertyDocumentFileExtension
+import typings.arcgisJsApi.arcgisJsApiStrings.esriGraphPropertyDocumentKeywords
+import typings.arcgisJsApi.arcgisJsApiStrings.esriGraphPropertyDocumentMetadata
+import typings.arcgisJsApi.arcgisJsApiStrings.esriGraphPropertyDocumentName
+import typings.arcgisJsApi.arcgisJsApiStrings.esriGraphPropertyDocumentText
+import typings.arcgisJsApi.arcgisJsApiStrings.esriGraphPropertyDocumentTitle
+import typings.arcgisJsApi.arcgisJsApiStrings.esriGraphPropertyDocumentUrl
+import typings.arcgisJsApi.arcgisJsApiStrings.esriGraphPropertyRegular
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,7 +69,7 @@ trait GraphProperty
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html#fieldType)
     */
-  var fieldType: String = js.native
+  var fieldType: esriFieldTypeSmallInteger | esriFieldTypeInteger | esriFieldTypeSingle | esriFieldTypeDouble | esriFieldTypeString | esriFieldTypeDate | esriFieldTypeOID | esriFieldTypeGeometry | esriFieldTypeBlob | esriFieldTypeRaster | esriFieldTypeGUID | esriFieldTypeGlobalID | esriFieldTypeXML | esriFieldTypeBigInteger = js.native
   
   /**
     * Specifies the geometry type for the property.
@@ -95,13 +118,11 @@ trait GraphProperty
   var required: Boolean = js.native
   
   /**
-    * Specifies if the property can be searched and included in search results.
+    * Specifies the role of the property.
     *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html#searchable)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html#role)
     */
-  var searchable: Boolean = js.native
+  var role: esriGraphPropertyRegular | esriGraphPropertyDocumentName | esriGraphPropertyDocumentTitle | esriGraphPropertyDocumentUrl | esriGraphPropertyDocumentText | esriGraphPropertyDocumentKeywords | esriGraphPropertyDocumentContentType | esriGraphPropertyDocumentMetadata | esriGraphPropertyDocumentFileExtension = js.native
   
   /**
     * Specifies if the property is system maintained.

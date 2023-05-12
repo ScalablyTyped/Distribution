@@ -12,7 +12,7 @@ open class SplitterSide protected () extends Component[Animation, Any] {
   def this(props: HTMLAttributesidclassName & Animation) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: HTMLAttributesidclassName & Animation, context: Any) = this()
 }

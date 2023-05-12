@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo-constants
 
-Typings are for version 14.0.2
+Typings are for version 14.2.1
 
 
 

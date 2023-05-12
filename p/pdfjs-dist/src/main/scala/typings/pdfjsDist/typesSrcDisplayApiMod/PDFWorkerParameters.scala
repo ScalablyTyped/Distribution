@@ -1,5 +1,6 @@
 package typings.pdfjsDist.typesSrcDisplayApiMod
 
+import typings.std.Worker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ trait PDFWorkerParameters extends StObject {
   /**
     * - The `workerPort` object.
     */
-  var port: js.UndefOr[js.Object] = js.undefined
+  var port: js.UndefOr[Worker] = js.undefined
   
   /**
     * - Controls the logging level;
@@ -36,7 +37,7 @@ object PDFWorkerParameters {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setPort(value: js.Object): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Worker): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     

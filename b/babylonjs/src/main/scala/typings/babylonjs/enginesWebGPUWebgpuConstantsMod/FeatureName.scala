@@ -20,12 +20,6 @@ object FeatureName extends StObject {
   /* "bgra8unorm-storage" */ val BGRA8UnormStorage: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.FeatureName.BGRA8UnormStorage & String = js.native
   
   @js.native
-  sealed trait Depth24UnormStencil8
-    extends StObject
-       with FeatureName
-  /* "depth24unorm-stencil8" */ val Depth24UnormStencil8: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.FeatureName.Depth24UnormStencil8 & String = js.native
-  
-  @js.native
   sealed trait Depth32FloatStencil8
     extends StObject
        with FeatureName
@@ -38,10 +32,22 @@ object FeatureName extends StObject {
   /* "depth-clip-control" */ val DepthClipControl: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.FeatureName.DepthClipControl & String = js.native
   
   @js.native
+  sealed trait Float32Filterable
+    extends StObject
+       with FeatureName
+  /* "float32-filterable" */ val Float32Filterable: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.FeatureName.Float32Filterable & String = js.native
+  
+  @js.native
   sealed trait IndirectFirstInstance
     extends StObject
        with FeatureName
   /* "indirect-first-instance" */ val IndirectFirstInstance: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.FeatureName.IndirectFirstInstance & String = js.native
+  
+  @js.native
+  sealed trait RG11B10UFloatRenderable
+    extends StObject
+       with FeatureName
+  /* "rg11b10ufloat-renderable" */ val RG11B10UFloatRenderable: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.FeatureName.RG11B10UFloatRenderable & String = js.native
   
   @js.native
   sealed trait ShaderF16

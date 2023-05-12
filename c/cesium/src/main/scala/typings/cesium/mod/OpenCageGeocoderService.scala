@@ -15,6 +15,12 @@ open class OpenCageGeocoderService protected () extends StObject {
   def this(url: Resource, apiKey: String, params: Abbrv) = this()
   
   /**
+    * Gets the credit to display after a geocode is performed. Typically this is used to credit
+    * the geocoder service.
+    */
+  val credit: js.UndefOr[Credit] = js.native
+  
+  /**
     * @param query - The query to be sent to the geocoder service
     */
   def geocode(query: String): js.Promise[js.Array[Result]] = js.native

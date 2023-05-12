@@ -142,6 +142,26 @@ trait UniformBuffer extends StObject {
   
   /* private */ var _updateMatrixForUniform: Any = js.native
   
+  /* private */ var _updateUInt2ForEffect: Any = js.native
+  
+  /* private */ var _updateUInt2ForUniform: Any = js.native
+  
+  /* private */ var _updateUInt3ForEffect: Any = js.native
+  
+  /* private */ var _updateUInt3ForUniform: Any = js.native
+  
+  /* private */ var _updateUInt4ForEffect: Any = js.native
+  
+  /* private */ var _updateUInt4ForUniform: Any = js.native
+  
+  /* private */ var _updateUIntArrayForEffect: Any = js.native
+  
+  /* private */ var _updateUIntArrayForUniform: Any = js.native
+  
+  /* private */ var _updateUIntForEffect: Any = js.native
+  
+  /* private */ var _updateUIntForUniform: Any = js.native
+  
   /* private */ var _updateVector3ForEffect: Any = js.native
   
   /* private */ var _updateVector3ForUniform: Any = js.native
@@ -240,6 +260,9 @@ trait UniformBuffer extends StObject {
     * Effectively creates the WebGL Uniform Buffer, once layout is completed with `addUniform`.
     */
   def create(): Unit = js.native
+  
+  /** Gets the current effect */
+  def currentEffect: Nullable[Effect] = js.native
   
   /**
     * Disposes the uniform buffer.
@@ -437,6 +460,45 @@ trait UniformBuffer extends StObject {
     * You will need to pass the name of the uniform as well as the value.
     */
   def updateMatrix3x3(name: String, matrix: js.typedarray.Float32Array): Unit = js.native
+  
+  /**
+    * Lambda to Update a unsigned int a uniform buffer.
+    * This is dynamic to allow compat with webgl 1 and 2.
+    * You will need to pass the name of the uniform as well as the value.
+    */
+  def updateUInt(name: String, x: Double): Unit = js.native
+  def updateUInt(name: String, x: Double, suffix: String): Unit = js.native
+  
+  /**
+    * Lambda to Update a vec2 of unsigned int in a uniform buffer.
+    * This is dynamic to allow compat with webgl 1 and 2.
+    * You will need to pass the name of the uniform as well as the value.
+    */
+  def updateUInt2(name: String, x: Double, y: Double): Unit = js.native
+  def updateUInt2(name: String, x: Double, y: Double, suffix: String): Unit = js.native
+  
+  /**
+    * Lambda to Update a vec3 of unsigned int in a uniform buffer.
+    * This is dynamic to allow compat with webgl 1 and 2.
+    * You will need to pass the name of the uniform as well as the value.
+    */
+  def updateUInt3(name: String, x: Double, y: Double, z: Double): Unit = js.native
+  def updateUInt3(name: String, x: Double, y: Double, z: Double, suffix: String): Unit = js.native
+  
+  /**
+    * Lambda to Update a vec4 of unsigned int in a uniform buffer.
+    * This is dynamic to allow compat with webgl 1 and 2.
+    * You will need to pass the name of the uniform as well as the value.
+    */
+  def updateUInt4(name: String, x: Double, y: Double, z: Double, w: Double): Unit = js.native
+  def updateUInt4(name: String, x: Double, y: Double, z: Double, w: Double, suffix: String): Unit = js.native
+  
+  /**
+    * Lambda to Update an array of number in a uniform buffer.
+    * This is dynamic to allow compat with webgl 1 and 2.
+    * You will need to pass the name of the uniform as well as the value.
+    */
+  def updateUIntArray(name: String, array: js.typedarray.Uint32Array): Unit = js.native
   
   /**
     * Updates the value of an uniform. The `update` method must be called afterwards to make it effective in the GPU.

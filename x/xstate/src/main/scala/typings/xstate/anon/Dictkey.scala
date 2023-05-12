@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Dictkey
   extends StObject
-     with /* other */ StringDictionary[Any] {
+     with /* key */ StringDictionary[Any] {
   
   var `type`: String
 }

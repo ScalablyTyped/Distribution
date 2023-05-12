@@ -8,11 +8,11 @@ trait PathOrg extends StObject {
   
   var path: Org
   
-  var query: Page
+  var query: Lastusedafter
 }
 object PathOrg {
   
-  inline def apply(path: Org, query: Page): PathOrg = {
+  inline def apply(path: Org, query: Lastusedafter): PathOrg = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathOrg]
   }
@@ -22,6 +22,6 @@ object PathOrg {
     
     inline def setPath(value: Org): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setQuery(value: Page): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Lastusedafter): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

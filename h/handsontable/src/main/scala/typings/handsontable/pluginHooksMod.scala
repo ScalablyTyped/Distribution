@@ -3,6 +3,7 @@ package typings.handsontable
 import org.scalablytyped.runtime.NumberDictionary
 import typings.handsontable.`3rdpartyWalkontableSrcCalculatorViewportColumnsMod`.ViewportColumnsCalculator
 import typings.handsontable.`3rdpartyWalkontableSrcCellRangeMod`.default
+import typings.handsontable.anon.ColumnHeadersCount
 import typings.handsontable.anon.SkipRender
 import typings.handsontable.anon.Value
 import typings.handsontable.anon.ValueAny
@@ -22,9 +23,11 @@ import typings.handsontable.handsontableStrings.afterChange
 import typings.handsontable.handsontableStrings.afterChangesObserved
 import typings.handsontable.handsontableStrings.afterColumnCollapse
 import typings.handsontable.handsontableStrings.afterColumnExpand
+import typings.handsontable.handsontableStrings.afterColumnFreeze
 import typings.handsontable.handsontableStrings.afterColumnMove
 import typings.handsontable.handsontableStrings.afterColumnResize
 import typings.handsontable.handsontableStrings.afterColumnSort
+import typings.handsontable.handsontableStrings.afterColumnUnfreeze
 import typings.handsontable.handsontableStrings.afterContextMenuDefaultOptions
 import typings.handsontable.handsontableStrings.afterContextMenuHide
 import typings.handsontable.handsontableStrings.afterContextMenuShow
@@ -115,9 +118,11 @@ import typings.handsontable.handsontableStrings.beforeChange
 import typings.handsontable.handsontableStrings.beforeChangeRender
 import typings.handsontable.handsontableStrings.beforeColumnCollapse
 import typings.handsontable.handsontableStrings.beforeColumnExpand
+import typings.handsontable.handsontableStrings.beforeColumnFreeze
 import typings.handsontable.handsontableStrings.beforeColumnMove
 import typings.handsontable.handsontableStrings.beforeColumnResize
 import typings.handsontable.handsontableStrings.beforeColumnSort
+import typings.handsontable.handsontableStrings.beforeColumnUnfreeze
 import typings.handsontable.handsontableStrings.beforeContextMenuSetItems
 import typings.handsontable.handsontableStrings.beforeContextMenuShow
 import typings.handsontable.handsontableStrings.beforeCopy
@@ -194,6 +199,7 @@ import typings.handsontable.handsontableStrings.modifyAutofillRange
 import typings.handsontable.handsontableStrings.modifyColHeader
 import typings.handsontable.handsontableStrings.modifyColWidth
 import typings.handsontable.handsontableStrings.modifyColumnHeaderHeight
+import typings.handsontable.handsontableStrings.modifyColumnHeaderValue
 import typings.handsontable.handsontableStrings.modifyCopyableRange
 import typings.handsontable.handsontableStrings.modifyData
 import typings.handsontable.handsontableStrings.modifyGetCellCoords
@@ -965,6 +971,32 @@ object pluginHooksMod {
       context: typings.handsontable.coreMod.default
     ): Hooks = js.native
     @JSName("add")
+    def add_afterColumnFreeze(
+      key: afterColumnFreeze,
+      callback: js.UndefOr[js.Function2[/* columnIndex */ Double, /* isFreezingPerformed */ Boolean, Unit]]
+    ): Hooks = js.native
+    @JSName("add")
+    def add_afterColumnFreeze(
+      key: afterColumnFreeze,
+      callback: js.UndefOr[js.Function2[/* columnIndex */ Double, /* isFreezingPerformed */ Boolean, Unit]],
+      context: typings.handsontable.coreMod.default
+    ): Hooks = js.native
+    @JSName("add")
+    def add_afterColumnFreeze(
+      key: afterColumnFreeze,
+      callback: js.Array[
+          js.UndefOr[js.Function2[/* columnIndex */ Double, /* isFreezingPerformed */ Boolean, Unit]]
+        ]
+    ): Hooks = js.native
+    @JSName("add")
+    def add_afterColumnFreeze(
+      key: afterColumnFreeze,
+      callback: js.Array[
+          js.UndefOr[js.Function2[/* columnIndex */ Double, /* isFreezingPerformed */ Boolean, Unit]]
+        ],
+      context: typings.handsontable.coreMod.default
+    ): Hooks = js.native
+    @JSName("add")
     def add_afterColumnMove(
       key: afterColumnMove,
       callback: js.UndefOr[
@@ -1106,6 +1138,40 @@ object pluginHooksMod {
               /* destinationSortConfigs */ js.Array[Config], 
               Unit
             ]
+          ]
+        ],
+      context: typings.handsontable.coreMod.default
+    ): Hooks = js.native
+    @JSName("add")
+    def add_afterColumnUnfreeze(
+      key: afterColumnUnfreeze,
+      callback: js.UndefOr[
+          js.Function2[/* columnIndex */ Double, /* isUnfreezingPerformed */ Boolean, Unit]
+        ]
+    ): Hooks = js.native
+    @JSName("add")
+    def add_afterColumnUnfreeze(
+      key: afterColumnUnfreeze,
+      callback: js.UndefOr[
+          js.Function2[/* columnIndex */ Double, /* isUnfreezingPerformed */ Boolean, Unit]
+        ],
+      context: typings.handsontable.coreMod.default
+    ): Hooks = js.native
+    @JSName("add")
+    def add_afterColumnUnfreeze(
+      key: afterColumnUnfreeze,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function2[/* columnIndex */ Double, /* isUnfreezingPerformed */ Boolean, Unit]
+          ]
+        ]
+    ): Hooks = js.native
+    @JSName("add")
+    def add_afterColumnUnfreeze(
+      key: afterColumnUnfreeze,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function2[/* columnIndex */ Double, /* isUnfreezingPerformed */ Boolean, Unit]
           ]
         ],
       context: typings.handsontable.coreMod.default
@@ -1186,14 +1252,24 @@ object pluginHooksMod {
     def add_afterCopy(
       key: afterCopy,
       callback: js.UndefOr[
-          js.Function2[/* data */ js.Array[js.Array[CellValue]], /* coords */ js.Array[RangeType], Unit]
+          js.Function3[
+            /* data */ js.Array[js.Array[CellValue]], 
+            /* coords */ js.Array[RangeType], 
+            /* copiedHeadersCount */ ColumnHeadersCount, 
+            Unit
+          ]
         ]
     ): Hooks = js.native
     @JSName("add")
     def add_afterCopy(
       key: afterCopy,
       callback: js.UndefOr[
-          js.Function2[/* data */ js.Array[js.Array[CellValue]], /* coords */ js.Array[RangeType], Unit]
+          js.Function3[
+            /* data */ js.Array[js.Array[CellValue]], 
+            /* coords */ js.Array[RangeType], 
+            /* copiedHeadersCount */ ColumnHeadersCount, 
+            Unit
+          ]
         ],
       context: typings.handsontable.coreMod.default
     ): Hooks = js.native
@@ -1202,7 +1278,12 @@ object pluginHooksMod {
       key: afterCopy,
       callback: js.Array[
           js.UndefOr[
-            js.Function2[/* data */ js.Array[js.Array[CellValue]], /* coords */ js.Array[RangeType], Unit]
+            js.Function3[
+              /* data */ js.Array[js.Array[CellValue]], 
+              /* coords */ js.Array[RangeType], 
+              /* copiedHeadersCount */ ColumnHeadersCount, 
+              Unit
+            ]
           ]
         ]
     ): Hooks = js.native
@@ -1211,7 +1292,12 @@ object pluginHooksMod {
       key: afterCopy,
       callback: js.Array[
           js.UndefOr[
-            js.Function2[/* data */ js.Array[js.Array[CellValue]], /* coords */ js.Array[RangeType], Unit]
+            js.Function3[
+              /* data */ js.Array[js.Array[CellValue]], 
+              /* coords */ js.Array[RangeType], 
+              /* copiedHeadersCount */ ColumnHeadersCount, 
+              Unit
+            ]
           ]
         ],
       context: typings.handsontable.coreMod.default
@@ -4239,6 +4325,40 @@ object pluginHooksMod {
       context: typings.handsontable.coreMod.default
     ): Hooks = js.native
     @JSName("add")
+    def add_beforeColumnFreeze(
+      key: beforeColumnFreeze,
+      callback: js.UndefOr[
+          js.Function2[/* columnIndex */ Double, /* isFreezingPerformed */ Boolean, Unit | Boolean]
+        ]
+    ): Hooks = js.native
+    @JSName("add")
+    def add_beforeColumnFreeze(
+      key: beforeColumnFreeze,
+      callback: js.UndefOr[
+          js.Function2[/* columnIndex */ Double, /* isFreezingPerformed */ Boolean, Unit | Boolean]
+        ],
+      context: typings.handsontable.coreMod.default
+    ): Hooks = js.native
+    @JSName("add")
+    def add_beforeColumnFreeze(
+      key: beforeColumnFreeze,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function2[/* columnIndex */ Double, /* isFreezingPerformed */ Boolean, Unit | Boolean]
+          ]
+        ]
+    ): Hooks = js.native
+    @JSName("add")
+    def add_beforeColumnFreeze(
+      key: beforeColumnFreeze,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function2[/* columnIndex */ Double, /* isFreezingPerformed */ Boolean, Unit | Boolean]
+          ]
+        ],
+      context: typings.handsontable.coreMod.default
+    ): Hooks = js.native
+    @JSName("add")
     def add_beforeColumnMove(
       key: beforeColumnMove,
       callback: js.UndefOr[
@@ -4376,6 +4496,40 @@ object pluginHooksMod {
               /* destinationSortConfigs */ js.Array[Config], 
               Unit | Boolean
             ]
+          ]
+        ],
+      context: typings.handsontable.coreMod.default
+    ): Hooks = js.native
+    @JSName("add")
+    def add_beforeColumnUnfreeze(
+      key: beforeColumnUnfreeze,
+      callback: js.UndefOr[
+          js.Function2[/* columnIndex */ Double, /* isUnfreezingPerformed */ Boolean, Unit | Boolean]
+        ]
+    ): Hooks = js.native
+    @JSName("add")
+    def add_beforeColumnUnfreeze(
+      key: beforeColumnUnfreeze,
+      callback: js.UndefOr[
+          js.Function2[/* columnIndex */ Double, /* isUnfreezingPerformed */ Boolean, Unit | Boolean]
+        ],
+      context: typings.handsontable.coreMod.default
+    ): Hooks = js.native
+    @JSName("add")
+    def add_beforeColumnUnfreeze(
+      key: beforeColumnUnfreeze,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function2[/* columnIndex */ Double, /* isUnfreezingPerformed */ Boolean, Unit | Boolean]
+          ]
+        ]
+    ): Hooks = js.native
+    @JSName("add")
+    def add_beforeColumnUnfreeze(
+      key: beforeColumnUnfreeze,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function2[/* columnIndex */ Double, /* isUnfreezingPerformed */ Boolean, Unit | Boolean]
           ]
         ],
       context: typings.handsontable.coreMod.default
@@ -4425,9 +4579,10 @@ object pluginHooksMod {
     def add_beforeCopy(
       key: beforeCopy,
       callback: js.UndefOr[
-          js.Function2[
+          js.Function3[
             /* data */ js.Array[js.Array[CellValue]], 
             /* coords */ js.Array[RangeType], 
+            /* copiedHeadersCount */ ColumnHeadersCount, 
             Unit | Boolean
           ]
         ]
@@ -4436,9 +4591,10 @@ object pluginHooksMod {
     def add_beforeCopy(
       key: beforeCopy,
       callback: js.UndefOr[
-          js.Function2[
+          js.Function3[
             /* data */ js.Array[js.Array[CellValue]], 
             /* coords */ js.Array[RangeType], 
+            /* copiedHeadersCount */ ColumnHeadersCount, 
             Unit | Boolean
           ]
         ],
@@ -4449,9 +4605,10 @@ object pluginHooksMod {
       key: beforeCopy,
       callback: js.Array[
           js.UndefOr[
-            js.Function2[
+            js.Function3[
               /* data */ js.Array[js.Array[CellValue]], 
               /* coords */ js.Array[RangeType], 
+              /* copiedHeadersCount */ ColumnHeadersCount, 
               Unit | Boolean
             ]
           ]
@@ -4462,9 +4619,10 @@ object pluginHooksMod {
       key: beforeCopy,
       callback: js.Array[
           js.UndefOr[
-            js.Function2[
+            js.Function3[
               /* data */ js.Array[js.Array[CellValue]], 
               /* coords */ js.Array[RangeType], 
+              /* copiedHeadersCount */ ColumnHeadersCount, 
               Unit | Boolean
             ]
           ]
@@ -6733,6 +6891,60 @@ object pluginHooksMod {
       context: typings.handsontable.coreMod.default
     ): Hooks = js.native
     @JSName("add")
+    def add_modifyColumnHeaderValue(
+      key: modifyColumnHeaderValue,
+      callback: js.UndefOr[
+          js.Function3[
+            /* headerValue */ String, 
+            /* visualColumnIndex */ Double, 
+            /* headerLevel */ Double, 
+            Unit | String
+          ]
+        ]
+    ): Hooks = js.native
+    @JSName("add")
+    def add_modifyColumnHeaderValue(
+      key: modifyColumnHeaderValue,
+      callback: js.UndefOr[
+          js.Function3[
+            /* headerValue */ String, 
+            /* visualColumnIndex */ Double, 
+            /* headerLevel */ Double, 
+            Unit | String
+          ]
+        ],
+      context: typings.handsontable.coreMod.default
+    ): Hooks = js.native
+    @JSName("add")
+    def add_modifyColumnHeaderValue(
+      key: modifyColumnHeaderValue,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function3[
+              /* headerValue */ String, 
+              /* visualColumnIndex */ Double, 
+              /* headerLevel */ Double, 
+              Unit | String
+            ]
+          ]
+        ]
+    ): Hooks = js.native
+    @JSName("add")
+    def add_modifyColumnHeaderValue(
+      key: modifyColumnHeaderValue,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function3[
+              /* headerValue */ String, 
+              /* visualColumnIndex */ Double, 
+              /* headerLevel */ Double, 
+              Unit | String
+            ]
+          ]
+        ],
+      context: typings.handsontable.coreMod.default
+    ): Hooks = js.native
+    @JSName("add")
     def add_modifyCopyableRange(
       key: modifyCopyableRange,
       callback: js.UndefOr[js.Function1[/* copyableRanges */ js.Array[RangeType], Unit]]
@@ -7049,23 +7261,23 @@ object pluginHooksMod {
     def getBucket(context: typings.handsontable.coreMod.default): Bucket = js.native
     
     def getRegistered(): js.Array[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179, starting with typings.handsontable.handsontableStrings.afterAddChild, typings.handsontable.handsontableStrings.afterAutofill, typings.handsontable.handsontableStrings.afterBeginEditing */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 184, starting with typings.handsontable.handsontableStrings.afterAddChild, typings.handsontable.handsontableStrings.afterAutofill, typings.handsontable.handsontableStrings.afterBeginEditing */ Any
       ] = js.native
     
     def has(
-      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179, starting with typings.handsontable.handsontableStrings.afterAddChild, typings.handsontable.handsontableStrings.afterAutofill, typings.handsontable.handsontableStrings.afterBeginEditing */ Any
+      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 184, starting with typings.handsontable.handsontableStrings.afterAddChild, typings.handsontable.handsontableStrings.afterAutofill, typings.handsontable.handsontableStrings.afterBeginEditing */ Any
     ): Boolean = js.native
     def has(
-      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179, starting with typings.handsontable.handsontableStrings.afterAddChild, typings.handsontable.handsontableStrings.afterAutofill, typings.handsontable.handsontableStrings.afterBeginEditing */ Any,
+      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 184, starting with typings.handsontable.handsontableStrings.afterAddChild, typings.handsontable.handsontableStrings.afterAutofill, typings.handsontable.handsontableStrings.afterBeginEditing */ Any,
       context: typings.handsontable.coreMod.default
     ): Boolean = js.native
     
     def isDeprecated(
-      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179, starting with typings.handsontable.handsontableStrings.afterAddChild, typings.handsontable.handsontableStrings.afterAutofill, typings.handsontable.handsontableStrings.afterBeginEditing */ Any
+      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 184, starting with typings.handsontable.handsontableStrings.afterAddChild, typings.handsontable.handsontableStrings.afterAutofill, typings.handsontable.handsontableStrings.afterBeginEditing */ Any
     ): Boolean = js.native
     
     def isRegistered(
-      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179, starting with typings.handsontable.handsontableStrings.afterAddChild, typings.handsontable.handsontableStrings.afterAutofill, typings.handsontable.handsontableStrings.afterBeginEditing */ Any
+      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 184, starting with typings.handsontable.handsontableStrings.afterAddChild, typings.handsontable.handsontableStrings.afterAutofill, typings.handsontable.handsontableStrings.afterBeginEditing */ Any
     ): Boolean = js.native
     
     def once(
@@ -7797,6 +8009,32 @@ object pluginHooksMod {
       context: typings.handsontable.coreMod.default
     ): Unit = js.native
     @JSName("once")
+    def once_afterColumnFreeze(
+      key: afterColumnFreeze,
+      callback: js.UndefOr[js.Function2[/* columnIndex */ Double, /* isFreezingPerformed */ Boolean, Unit]]
+    ): Unit = js.native
+    @JSName("once")
+    def once_afterColumnFreeze(
+      key: afterColumnFreeze,
+      callback: js.UndefOr[js.Function2[/* columnIndex */ Double, /* isFreezingPerformed */ Boolean, Unit]],
+      context: typings.handsontable.coreMod.default
+    ): Unit = js.native
+    @JSName("once")
+    def once_afterColumnFreeze(
+      key: afterColumnFreeze,
+      callback: js.Array[
+          js.UndefOr[js.Function2[/* columnIndex */ Double, /* isFreezingPerformed */ Boolean, Unit]]
+        ]
+    ): Unit = js.native
+    @JSName("once")
+    def once_afterColumnFreeze(
+      key: afterColumnFreeze,
+      callback: js.Array[
+          js.UndefOr[js.Function2[/* columnIndex */ Double, /* isFreezingPerformed */ Boolean, Unit]]
+        ],
+      context: typings.handsontable.coreMod.default
+    ): Unit = js.native
+    @JSName("once")
     def once_afterColumnMove(
       key: afterColumnMove,
       callback: js.UndefOr[
@@ -7938,6 +8176,40 @@ object pluginHooksMod {
               /* destinationSortConfigs */ js.Array[Config], 
               Unit
             ]
+          ]
+        ],
+      context: typings.handsontable.coreMod.default
+    ): Unit = js.native
+    @JSName("once")
+    def once_afterColumnUnfreeze(
+      key: afterColumnUnfreeze,
+      callback: js.UndefOr[
+          js.Function2[/* columnIndex */ Double, /* isUnfreezingPerformed */ Boolean, Unit]
+        ]
+    ): Unit = js.native
+    @JSName("once")
+    def once_afterColumnUnfreeze(
+      key: afterColumnUnfreeze,
+      callback: js.UndefOr[
+          js.Function2[/* columnIndex */ Double, /* isUnfreezingPerformed */ Boolean, Unit]
+        ],
+      context: typings.handsontable.coreMod.default
+    ): Unit = js.native
+    @JSName("once")
+    def once_afterColumnUnfreeze(
+      key: afterColumnUnfreeze,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function2[/* columnIndex */ Double, /* isUnfreezingPerformed */ Boolean, Unit]
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("once")
+    def once_afterColumnUnfreeze(
+      key: afterColumnUnfreeze,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function2[/* columnIndex */ Double, /* isUnfreezingPerformed */ Boolean, Unit]
           ]
         ],
       context: typings.handsontable.coreMod.default
@@ -8018,14 +8290,24 @@ object pluginHooksMod {
     def once_afterCopy(
       key: afterCopy,
       callback: js.UndefOr[
-          js.Function2[/* data */ js.Array[js.Array[CellValue]], /* coords */ js.Array[RangeType], Unit]
+          js.Function3[
+            /* data */ js.Array[js.Array[CellValue]], 
+            /* coords */ js.Array[RangeType], 
+            /* copiedHeadersCount */ ColumnHeadersCount, 
+            Unit
+          ]
         ]
     ): Unit = js.native
     @JSName("once")
     def once_afterCopy(
       key: afterCopy,
       callback: js.UndefOr[
-          js.Function2[/* data */ js.Array[js.Array[CellValue]], /* coords */ js.Array[RangeType], Unit]
+          js.Function3[
+            /* data */ js.Array[js.Array[CellValue]], 
+            /* coords */ js.Array[RangeType], 
+            /* copiedHeadersCount */ ColumnHeadersCount, 
+            Unit
+          ]
         ],
       context: typings.handsontable.coreMod.default
     ): Unit = js.native
@@ -8034,7 +8316,12 @@ object pluginHooksMod {
       key: afterCopy,
       callback: js.Array[
           js.UndefOr[
-            js.Function2[/* data */ js.Array[js.Array[CellValue]], /* coords */ js.Array[RangeType], Unit]
+            js.Function3[
+              /* data */ js.Array[js.Array[CellValue]], 
+              /* coords */ js.Array[RangeType], 
+              /* copiedHeadersCount */ ColumnHeadersCount, 
+              Unit
+            ]
           ]
         ]
     ): Unit = js.native
@@ -8043,7 +8330,12 @@ object pluginHooksMod {
       key: afterCopy,
       callback: js.Array[
           js.UndefOr[
-            js.Function2[/* data */ js.Array[js.Array[CellValue]], /* coords */ js.Array[RangeType], Unit]
+            js.Function3[
+              /* data */ js.Array[js.Array[CellValue]], 
+              /* coords */ js.Array[RangeType], 
+              /* copiedHeadersCount */ ColumnHeadersCount, 
+              Unit
+            ]
           ]
         ],
       context: typings.handsontable.coreMod.default
@@ -11071,6 +11363,40 @@ object pluginHooksMod {
       context: typings.handsontable.coreMod.default
     ): Unit = js.native
     @JSName("once")
+    def once_beforeColumnFreeze(
+      key: beforeColumnFreeze,
+      callback: js.UndefOr[
+          js.Function2[/* columnIndex */ Double, /* isFreezingPerformed */ Boolean, Unit | Boolean]
+        ]
+    ): Unit = js.native
+    @JSName("once")
+    def once_beforeColumnFreeze(
+      key: beforeColumnFreeze,
+      callback: js.UndefOr[
+          js.Function2[/* columnIndex */ Double, /* isFreezingPerformed */ Boolean, Unit | Boolean]
+        ],
+      context: typings.handsontable.coreMod.default
+    ): Unit = js.native
+    @JSName("once")
+    def once_beforeColumnFreeze(
+      key: beforeColumnFreeze,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function2[/* columnIndex */ Double, /* isFreezingPerformed */ Boolean, Unit | Boolean]
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("once")
+    def once_beforeColumnFreeze(
+      key: beforeColumnFreeze,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function2[/* columnIndex */ Double, /* isFreezingPerformed */ Boolean, Unit | Boolean]
+          ]
+        ],
+      context: typings.handsontable.coreMod.default
+    ): Unit = js.native
+    @JSName("once")
     def once_beforeColumnMove(
       key: beforeColumnMove,
       callback: js.UndefOr[
@@ -11208,6 +11534,40 @@ object pluginHooksMod {
               /* destinationSortConfigs */ js.Array[Config], 
               Unit | Boolean
             ]
+          ]
+        ],
+      context: typings.handsontable.coreMod.default
+    ): Unit = js.native
+    @JSName("once")
+    def once_beforeColumnUnfreeze(
+      key: beforeColumnUnfreeze,
+      callback: js.UndefOr[
+          js.Function2[/* columnIndex */ Double, /* isUnfreezingPerformed */ Boolean, Unit | Boolean]
+        ]
+    ): Unit = js.native
+    @JSName("once")
+    def once_beforeColumnUnfreeze(
+      key: beforeColumnUnfreeze,
+      callback: js.UndefOr[
+          js.Function2[/* columnIndex */ Double, /* isUnfreezingPerformed */ Boolean, Unit | Boolean]
+        ],
+      context: typings.handsontable.coreMod.default
+    ): Unit = js.native
+    @JSName("once")
+    def once_beforeColumnUnfreeze(
+      key: beforeColumnUnfreeze,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function2[/* columnIndex */ Double, /* isUnfreezingPerformed */ Boolean, Unit | Boolean]
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("once")
+    def once_beforeColumnUnfreeze(
+      key: beforeColumnUnfreeze,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function2[/* columnIndex */ Double, /* isUnfreezingPerformed */ Boolean, Unit | Boolean]
           ]
         ],
       context: typings.handsontable.coreMod.default
@@ -11257,9 +11617,10 @@ object pluginHooksMod {
     def once_beforeCopy(
       key: beforeCopy,
       callback: js.UndefOr[
-          js.Function2[
+          js.Function3[
             /* data */ js.Array[js.Array[CellValue]], 
             /* coords */ js.Array[RangeType], 
+            /* copiedHeadersCount */ ColumnHeadersCount, 
             Unit | Boolean
           ]
         ]
@@ -11268,9 +11629,10 @@ object pluginHooksMod {
     def once_beforeCopy(
       key: beforeCopy,
       callback: js.UndefOr[
-          js.Function2[
+          js.Function3[
             /* data */ js.Array[js.Array[CellValue]], 
             /* coords */ js.Array[RangeType], 
+            /* copiedHeadersCount */ ColumnHeadersCount, 
             Unit | Boolean
           ]
         ],
@@ -11281,9 +11643,10 @@ object pluginHooksMod {
       key: beforeCopy,
       callback: js.Array[
           js.UndefOr[
-            js.Function2[
+            js.Function3[
               /* data */ js.Array[js.Array[CellValue]], 
               /* coords */ js.Array[RangeType], 
+              /* copiedHeadersCount */ ColumnHeadersCount, 
               Unit | Boolean
             ]
           ]
@@ -11294,9 +11657,10 @@ object pluginHooksMod {
       key: beforeCopy,
       callback: js.Array[
           js.UndefOr[
-            js.Function2[
+            js.Function3[
               /* data */ js.Array[js.Array[CellValue]], 
               /* coords */ js.Array[RangeType], 
+              /* copiedHeadersCount */ ColumnHeadersCount, 
               Unit | Boolean
             ]
           ]
@@ -13565,6 +13929,60 @@ object pluginHooksMod {
       context: typings.handsontable.coreMod.default
     ): Unit = js.native
     @JSName("once")
+    def once_modifyColumnHeaderValue(
+      key: modifyColumnHeaderValue,
+      callback: js.UndefOr[
+          js.Function3[
+            /* headerValue */ String, 
+            /* visualColumnIndex */ Double, 
+            /* headerLevel */ Double, 
+            Unit | String
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("once")
+    def once_modifyColumnHeaderValue(
+      key: modifyColumnHeaderValue,
+      callback: js.UndefOr[
+          js.Function3[
+            /* headerValue */ String, 
+            /* visualColumnIndex */ Double, 
+            /* headerLevel */ Double, 
+            Unit | String
+          ]
+        ],
+      context: typings.handsontable.coreMod.default
+    ): Unit = js.native
+    @JSName("once")
+    def once_modifyColumnHeaderValue(
+      key: modifyColumnHeaderValue,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function3[
+              /* headerValue */ String, 
+              /* visualColumnIndex */ Double, 
+              /* headerLevel */ Double, 
+              Unit | String
+            ]
+          ]
+        ]
+    ): Unit = js.native
+    @JSName("once")
+    def once_modifyColumnHeaderValue(
+      key: modifyColumnHeaderValue,
+      callback: js.Array[
+          js.UndefOr[
+            js.Function3[
+              /* headerValue */ String, 
+              /* visualColumnIndex */ Double, 
+              /* headerLevel */ Double, 
+              Unit | String
+            ]
+          ]
+        ],
+      context: typings.handsontable.coreMod.default
+    ): Unit = js.native
+    @JSName("once")
     def once_modifyCopyableRange(
       key: modifyCopyableRange,
       callback: js.UndefOr[js.Function1[/* copyableRanges */ js.Array[RangeType], Unit]]
@@ -13873,18 +14291,18 @@ object pluginHooksMod {
     def register(key: String): Unit = js.native
     
     def remove(
-      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179, starting with typings.handsontable.handsontableStrings.afterAddChild, typings.handsontable.handsontableStrings.afterAutofill, typings.handsontable.handsontableStrings.afterBeginEditing */ Any,
+      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 184, starting with typings.handsontable.handsontableStrings.afterAddChild, typings.handsontable.handsontableStrings.afterAutofill, typings.handsontable.handsontableStrings.afterBeginEditing */ Any,
       callback: js.Function0[Unit]
     ): Boolean = js.native
     def remove(
-      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179, starting with typings.handsontable.handsontableStrings.afterAddChild, typings.handsontable.handsontableStrings.afterAutofill, typings.handsontable.handsontableStrings.afterBeginEditing */ Any,
+      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 184, starting with typings.handsontable.handsontableStrings.afterAddChild, typings.handsontable.handsontableStrings.afterAutofill, typings.handsontable.handsontableStrings.afterBeginEditing */ Any,
       callback: js.Function0[Unit],
       context: typings.handsontable.coreMod.default
     ): Boolean = js.native
     
     def run(
       context: typings.handsontable.coreMod.default,
-      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179, starting with typings.handsontable.handsontableStrings.afterAddChild, typings.handsontable.handsontableStrings.afterAutofill, typings.handsontable.handsontableStrings.afterBeginEditing */ Any,
+      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 184, starting with typings.handsontable.handsontableStrings.afterAddChild, typings.handsontable.handsontableStrings.afterAutofill, typings.handsontable.handsontableStrings.afterBeginEditing */ Any,
       p1: js.UndefOr[Any],
       p2: js.UndefOr[Any],
       p3: js.UndefOr[Any],
@@ -13966,6 +14384,12 @@ object pluginHooksMod {
         ]
       ] = js.undefined
     
+    var afterColumnFreeze: js.UndefOr[
+        js.Array[
+          js.UndefOr[js.Function2[/* columnIndex */ Double, /* isFreezingPerformed */ Boolean, Unit]]
+        ]
+      ] = js.undefined
+    
     var afterColumnMove: js.UndefOr[
         js.Array[
           js.UndefOr[
@@ -14001,6 +14425,14 @@ object pluginHooksMod {
         ]
       ] = js.undefined
     
+    var afterColumnUnfreeze: js.UndefOr[
+        js.Array[
+          js.UndefOr[
+            js.Function2[/* columnIndex */ Double, /* isUnfreezingPerformed */ Boolean, Unit]
+          ]
+        ]
+      ] = js.undefined
+    
     var afterContextMenuDefaultOptions: js.UndefOr[
         js.Array[
           js.UndefOr[
@@ -14016,7 +14448,12 @@ object pluginHooksMod {
     var afterCopy: js.UndefOr[
         js.Array[
           js.UndefOr[
-            js.Function2[/* data */ js.Array[js.Array[CellValue]], /* coords */ js.Array[RangeType], Unit]
+            js.Function3[
+              /* data */ js.Array[js.Array[CellValue]], 
+              /* coords */ js.Array[RangeType], 
+              /* copiedHeadersCount */ ColumnHeadersCount, 
+              Unit
+            ]
           ]
         ]
       ] = js.undefined
@@ -14755,6 +15192,14 @@ object pluginHooksMod {
         ]
       ] = js.undefined
     
+    var beforeColumnFreeze: js.UndefOr[
+        js.Array[
+          js.UndefOr[
+            js.Function2[/* columnIndex */ Double, /* isFreezingPerformed */ Boolean, Unit | Boolean]
+          ]
+        ]
+      ] = js.undefined
+    
     var beforeColumnMove: js.UndefOr[
         js.Array[
           js.UndefOr[
@@ -14789,6 +15234,14 @@ object pluginHooksMod {
         ]
       ] = js.undefined
     
+    var beforeColumnUnfreeze: js.UndefOr[
+        js.Array[
+          js.UndefOr[
+            js.Function2[/* columnIndex */ Double, /* isUnfreezingPerformed */ Boolean, Unit | Boolean]
+          ]
+        ]
+      ] = js.undefined
+    
     var beforeContextMenuSetItems: js.UndefOr[
         js.Array[js.UndefOr[js.Function1[/* menuItems */ js.Array[MenuItemConfig], Unit]]]
       ] = js.undefined
@@ -14798,9 +15251,10 @@ object pluginHooksMod {
     var beforeCopy: js.UndefOr[
         js.Array[
           js.UndefOr[
-            js.Function2[
+            js.Function3[
               /* data */ js.Array[js.Array[CellValue]], 
               /* coords */ js.Array[RangeType], 
+              /* copiedHeadersCount */ ColumnHeadersCount, 
               Unit | Boolean
             ]
           ]
@@ -15323,6 +15777,19 @@ object pluginHooksMod {
     
     var modifyColumnHeaderHeight: js.UndefOr[js.Array[js.UndefOr[js.Function0[Unit]]]] = js.undefined
     
+    var modifyColumnHeaderValue: js.UndefOr[
+        js.Array[
+          js.UndefOr[
+            js.Function3[
+              /* headerValue */ String, 
+              /* visualColumnIndex */ Double, 
+              /* headerLevel */ Double, 
+              Unit | String
+            ]
+          ]
+        ]
+      ] = js.undefined
+    
     var modifyCopyableRange: js.UndefOr[
         js.Array[js.UndefOr[js.Function1[/* copyableRanges */ js.Array[RangeType], Unit]]]
       ] = js.undefined
@@ -15562,6 +16029,18 @@ object pluginHooksMod {
             ])*
       ): Self = StObject.set(x, "afterColumnExpand", js.Array(value*))
       
+      inline def setAfterColumnFreeze(
+        value: js.Array[
+              js.UndefOr[js.Function2[/* columnIndex */ Double, /* isFreezingPerformed */ Boolean, Unit]]
+            ]
+      ): Self = StObject.set(x, "afterColumnFreeze", value.asInstanceOf[js.Any])
+      
+      inline def setAfterColumnFreezeUndefined: Self = StObject.set(x, "afterColumnFreeze", js.undefined)
+      
+      inline def setAfterColumnFreezeVarargs(
+        value: (js.UndefOr[js.Function2[/* columnIndex */ Double, /* isFreezingPerformed */ Boolean, Unit]])*
+      ): Self = StObject.set(x, "afterColumnFreeze", js.Array(value*))
+      
       inline def setAfterColumnMove(
         value: js.Array[
               js.UndefOr[
@@ -15632,6 +16111,22 @@ object pluginHooksMod {
             ])*
       ): Self = StObject.set(x, "afterColumnSort", js.Array(value*))
       
+      inline def setAfterColumnUnfreeze(
+        value: js.Array[
+              js.UndefOr[
+                js.Function2[/* columnIndex */ Double, /* isUnfreezingPerformed */ Boolean, Unit]
+              ]
+            ]
+      ): Self = StObject.set(x, "afterColumnUnfreeze", value.asInstanceOf[js.Any])
+      
+      inline def setAfterColumnUnfreezeUndefined: Self = StObject.set(x, "afterColumnUnfreeze", js.undefined)
+      
+      inline def setAfterColumnUnfreezeVarargs(
+        value: (js.UndefOr[
+              js.Function2[/* columnIndex */ Double, /* isUnfreezingPerformed */ Boolean, Unit]
+            ])*
+      ): Self = StObject.set(x, "afterColumnUnfreeze", js.Array(value*))
+      
       inline def setAfterContextMenuDefaultOptions(
         value: js.Array[
               js.UndefOr[
@@ -15663,7 +16158,12 @@ object pluginHooksMod {
       inline def setAfterCopy(
         value: js.Array[
               js.UndefOr[
-                js.Function2[/* data */ js.Array[js.Array[CellValue]], /* coords */ js.Array[RangeType], Unit]
+                js.Function3[
+                  /* data */ js.Array[js.Array[CellValue]], 
+                  /* coords */ js.Array[RangeType], 
+                  /* copiedHeadersCount */ ColumnHeadersCount, 
+                  Unit
+                ]
               ]
             ]
       ): Self = StObject.set(x, "afterCopy", value.asInstanceOf[js.Any])
@@ -15700,7 +16200,12 @@ object pluginHooksMod {
       
       inline def setAfterCopyVarargs(
         value: (js.UndefOr[
-              js.Function2[/* data */ js.Array[js.Array[CellValue]], /* coords */ js.Array[RangeType], Unit]
+              js.Function3[
+                /* data */ js.Array[js.Array[CellValue]], 
+                /* coords */ js.Array[RangeType], 
+                /* copiedHeadersCount */ ColumnHeadersCount, 
+                Unit
+              ]
             ])*
       ): Self = StObject.set(x, "afterCopy", js.Array(value*))
       
@@ -17182,6 +17687,22 @@ object pluginHooksMod {
             ])*
       ): Self = StObject.set(x, "beforeColumnExpand", js.Array(value*))
       
+      inline def setBeforeColumnFreeze(
+        value: js.Array[
+              js.UndefOr[
+                js.Function2[/* columnIndex */ Double, /* isFreezingPerformed */ Boolean, Unit | Boolean]
+              ]
+            ]
+      ): Self = StObject.set(x, "beforeColumnFreeze", value.asInstanceOf[js.Any])
+      
+      inline def setBeforeColumnFreezeUndefined: Self = StObject.set(x, "beforeColumnFreeze", js.undefined)
+      
+      inline def setBeforeColumnFreezeVarargs(
+        value: (js.UndefOr[
+              js.Function2[/* columnIndex */ Double, /* isFreezingPerformed */ Boolean, Unit | Boolean]
+            ])*
+      ): Self = StObject.set(x, "beforeColumnFreeze", js.Array(value*))
+      
       inline def setBeforeColumnMove(
         value: js.Array[
               js.UndefOr[
@@ -17250,6 +17771,22 @@ object pluginHooksMod {
             ])*
       ): Self = StObject.set(x, "beforeColumnSort", js.Array(value*))
       
+      inline def setBeforeColumnUnfreeze(
+        value: js.Array[
+              js.UndefOr[
+                js.Function2[/* columnIndex */ Double, /* isUnfreezingPerformed */ Boolean, Unit | Boolean]
+              ]
+            ]
+      ): Self = StObject.set(x, "beforeColumnUnfreeze", value.asInstanceOf[js.Any])
+      
+      inline def setBeforeColumnUnfreezeUndefined: Self = StObject.set(x, "beforeColumnUnfreeze", js.undefined)
+      
+      inline def setBeforeColumnUnfreezeVarargs(
+        value: (js.UndefOr[
+              js.Function2[/* columnIndex */ Double, /* isUnfreezingPerformed */ Boolean, Unit | Boolean]
+            ])*
+      ): Self = StObject.set(x, "beforeColumnUnfreeze", js.Array(value*))
+      
       inline def setBeforeContextMenuSetItems(value: js.Array[js.UndefOr[js.Function1[/* menuItems */ js.Array[MenuItemConfig], Unit]]]): Self = StObject.set(x, "beforeContextMenuSetItems", value.asInstanceOf[js.Any])
       
       inline def setBeforeContextMenuSetItemsUndefined: Self = StObject.set(x, "beforeContextMenuSetItems", js.undefined)
@@ -17265,9 +17802,10 @@ object pluginHooksMod {
       inline def setBeforeCopy(
         value: js.Array[
               js.UndefOr[
-                js.Function2[
+                js.Function3[
                   /* data */ js.Array[js.Array[CellValue]], 
                   /* coords */ js.Array[RangeType], 
+                  /* copiedHeadersCount */ ColumnHeadersCount, 
                   Unit | Boolean
                 ]
               ]
@@ -17278,9 +17816,10 @@ object pluginHooksMod {
       
       inline def setBeforeCopyVarargs(
         value: (js.UndefOr[
-              js.Function2[
+              js.Function3[
                 /* data */ js.Array[js.Array[CellValue]], 
                 /* coords */ js.Array[RangeType], 
+                /* copiedHeadersCount */ ColumnHeadersCount, 
                 Unit | Boolean
               ]
             ])*
@@ -18336,6 +18875,32 @@ object pluginHooksMod {
       
       inline def setModifyColumnHeaderHeightVarargs(value: js.UndefOr[js.Function0[Unit]]*): Self = StObject.set(x, "modifyColumnHeaderHeight", js.Array(value*))
       
+      inline def setModifyColumnHeaderValue(
+        value: js.Array[
+              js.UndefOr[
+                js.Function3[
+                  /* headerValue */ String, 
+                  /* visualColumnIndex */ Double, 
+                  /* headerLevel */ Double, 
+                  Unit | String
+                ]
+              ]
+            ]
+      ): Self = StObject.set(x, "modifyColumnHeaderValue", value.asInstanceOf[js.Any])
+      
+      inline def setModifyColumnHeaderValueUndefined: Self = StObject.set(x, "modifyColumnHeaderValue", js.undefined)
+      
+      inline def setModifyColumnHeaderValueVarargs(
+        value: (js.UndefOr[
+              js.Function3[
+                /* headerValue */ String, 
+                /* visualColumnIndex */ Double, 
+                /* headerLevel */ Double, 
+                Unit | String
+              ]
+            ])*
+      ): Self = StObject.set(x, "modifyColumnHeaderValue", js.Array(value*))
+      
       inline def setModifyCopyableRange(value: js.Array[js.UndefOr[js.Function1[/* copyableRanges */ js.Array[RangeType], Unit]]]): Self = StObject.set(x, "modifyCopyableRange", value.asInstanceOf[js.Any])
       
       inline def setModifyCopyableRangeUndefined: Self = StObject.set(x, "modifyCopyableRange", js.undefined)
@@ -18567,6 +19132,8 @@ object pluginHooksMod {
         ]
       ] = js.undefined
     
+    var afterColumnFreeze: js.UndefOr[js.Function2[/* columnIndex */ Double, /* isFreezingPerformed */ Boolean, Unit]] = js.undefined
+    
     var afterColumnMove: js.UndefOr[
         js.Function5[
           /* movedColumns */ js.Array[Double], 
@@ -18590,6 +19157,10 @@ object pluginHooksMod {
         ]
       ] = js.undefined
     
+    var afterColumnUnfreeze: js.UndefOr[
+        js.Function2[/* columnIndex */ Double, /* isUnfreezingPerformed */ Boolean, Unit]
+      ] = js.undefined
+    
     var afterContextMenuDefaultOptions: js.UndefOr[
         js.Function1[/* predefinedItems */ js.Array[PredefinedMenuItemKey | MenuItemConfig], Unit]
       ] = js.undefined
@@ -18599,7 +19170,12 @@ object pluginHooksMod {
     var afterContextMenuShow: js.UndefOr[js.Function1[/* context */ ContextMenu, Unit]] = js.undefined
     
     var afterCopy: js.UndefOr[
-        js.Function2[/* data */ js.Array[js.Array[CellValue]], /* coords */ js.Array[RangeType], Unit]
+        js.Function3[
+          /* data */ js.Array[js.Array[CellValue]], 
+          /* coords */ js.Array[RangeType], 
+          /* copiedHeadersCount */ ColumnHeadersCount, 
+          Unit
+        ]
       ] = js.undefined
     
     var afterCopyLimit: js.UndefOr[
@@ -19098,6 +19674,10 @@ object pluginHooksMod {
         ]
       ] = js.undefined
     
+    var beforeColumnFreeze: js.UndefOr[
+        js.Function2[/* columnIndex */ Double, /* isFreezingPerformed */ Boolean, Unit | Boolean]
+      ] = js.undefined
+    
     var beforeColumnMove: js.UndefOr[
         js.Function4[
           /* movedColumns */ js.Array[Double], 
@@ -19120,14 +19700,19 @@ object pluginHooksMod {
         ]
       ] = js.undefined
     
+    var beforeColumnUnfreeze: js.UndefOr[
+        js.Function2[/* columnIndex */ Double, /* isUnfreezingPerformed */ Boolean, Unit | Boolean]
+      ] = js.undefined
+    
     var beforeContextMenuSetItems: js.UndefOr[js.Function1[/* menuItems */ js.Array[MenuItemConfig], Unit]] = js.undefined
     
     var beforeContextMenuShow: js.UndefOr[js.Function1[/* context */ ContextMenu, Unit]] = js.undefined
     
     var beforeCopy: js.UndefOr[
-        js.Function2[
+        js.Function3[
           /* data */ js.Array[js.Array[CellValue]], 
           /* coords */ js.Array[RangeType], 
+          /* copiedHeadersCount */ ColumnHeadersCount, 
           Unit | Boolean
         ]
       ] = js.undefined
@@ -19478,6 +20063,15 @@ object pluginHooksMod {
     
     var modifyColumnHeaderHeight: js.UndefOr[js.Function0[Unit]] = js.undefined
     
+    var modifyColumnHeaderValue: js.UndefOr[
+        js.Function3[
+          /* headerValue */ String, 
+          /* visualColumnIndex */ Double, 
+          /* headerLevel */ Double, 
+          Unit | String
+        ]
+      ] = js.undefined
+    
     var modifyCopyableRange: js.UndefOr[js.Function1[/* copyableRanges */ js.Array[RangeType], Unit]] = js.undefined
     
     var modifyData: js.UndefOr[
@@ -19587,6 +20181,10 @@ object pluginHooksMod {
       
       inline def setAfterColumnExpandUndefined: Self = StObject.set(x, "afterColumnExpand", js.undefined)
       
+      inline def setAfterColumnFreeze(value: (/* columnIndex */ Double, /* isFreezingPerformed */ Boolean) => Unit): Self = StObject.set(x, "afterColumnFreeze", js.Any.fromFunction2(value))
+      
+      inline def setAfterColumnFreezeUndefined: Self = StObject.set(x, "afterColumnFreeze", js.undefined)
+      
       inline def setAfterColumnMove(
         value: (/* movedColumns */ js.Array[Double], /* finalIndex */ Double, /* dropIndex */ js.UndefOr[Double], /* movePossible */ Boolean, /* orderChanged */ Boolean) => Unit
       ): Self = StObject.set(x, "afterColumnMove", js.Any.fromFunction5(value))
@@ -19603,6 +20201,10 @@ object pluginHooksMod {
       
       inline def setAfterColumnSortUndefined: Self = StObject.set(x, "afterColumnSort", js.undefined)
       
+      inline def setAfterColumnUnfreeze(value: (/* columnIndex */ Double, /* isUnfreezingPerformed */ Boolean) => Unit): Self = StObject.set(x, "afterColumnUnfreeze", js.Any.fromFunction2(value))
+      
+      inline def setAfterColumnUnfreezeUndefined: Self = StObject.set(x, "afterColumnUnfreeze", js.undefined)
+      
       inline def setAfterContextMenuDefaultOptions(value: /* predefinedItems */ js.Array[PredefinedMenuItemKey | MenuItemConfig] => Unit): Self = StObject.set(x, "afterContextMenuDefaultOptions", js.Any.fromFunction1(value))
       
       inline def setAfterContextMenuDefaultOptionsUndefined: Self = StObject.set(x, "afterContextMenuDefaultOptions", js.undefined)
@@ -19615,7 +20217,9 @@ object pluginHooksMod {
       
       inline def setAfterContextMenuShowUndefined: Self = StObject.set(x, "afterContextMenuShow", js.undefined)
       
-      inline def setAfterCopy(value: (/* data */ js.Array[js.Array[CellValue]], /* coords */ js.Array[RangeType]) => Unit): Self = StObject.set(x, "afterCopy", js.Any.fromFunction2(value))
+      inline def setAfterCopy(
+        value: (/* data */ js.Array[js.Array[CellValue]], /* coords */ js.Array[RangeType], /* copiedHeadersCount */ ColumnHeadersCount) => Unit
+      ): Self = StObject.set(x, "afterCopy", js.Any.fromFunction3(value))
       
       inline def setAfterCopyLimit(
         value: (/* selectedRows */ Double, /* selectedColumns */ Double, /* copyRowsLimit */ Double, /* copyColumnsLimit */ Double) => Unit
@@ -20033,6 +20637,10 @@ object pluginHooksMod {
       
       inline def setBeforeColumnExpandUndefined: Self = StObject.set(x, "beforeColumnExpand", js.undefined)
       
+      inline def setBeforeColumnFreeze(value: (/* columnIndex */ Double, /* isFreezingPerformed */ Boolean) => Unit | Boolean): Self = StObject.set(x, "beforeColumnFreeze", js.Any.fromFunction2(value))
+      
+      inline def setBeforeColumnFreezeUndefined: Self = StObject.set(x, "beforeColumnFreeze", js.undefined)
+      
       inline def setBeforeColumnMove(
         value: (/* movedColumns */ js.Array[Double], /* finalIndex */ Double, /* dropIndex */ js.UndefOr[Double], /* movePossible */ Boolean) => Unit | Boolean
       ): Self = StObject.set(x, "beforeColumnMove", js.Any.fromFunction4(value))
@@ -20049,6 +20657,10 @@ object pluginHooksMod {
       
       inline def setBeforeColumnSortUndefined: Self = StObject.set(x, "beforeColumnSort", js.undefined)
       
+      inline def setBeforeColumnUnfreeze(value: (/* columnIndex */ Double, /* isUnfreezingPerformed */ Boolean) => Unit | Boolean): Self = StObject.set(x, "beforeColumnUnfreeze", js.Any.fromFunction2(value))
+      
+      inline def setBeforeColumnUnfreezeUndefined: Self = StObject.set(x, "beforeColumnUnfreeze", js.undefined)
+      
       inline def setBeforeContextMenuSetItems(value: /* menuItems */ js.Array[MenuItemConfig] => Unit): Self = StObject.set(x, "beforeContextMenuSetItems", js.Any.fromFunction1(value))
       
       inline def setBeforeContextMenuSetItemsUndefined: Self = StObject.set(x, "beforeContextMenuSetItems", js.undefined)
@@ -20058,8 +20670,8 @@ object pluginHooksMod {
       inline def setBeforeContextMenuShowUndefined: Self = StObject.set(x, "beforeContextMenuShow", js.undefined)
       
       inline def setBeforeCopy(
-        value: (/* data */ js.Array[js.Array[CellValue]], /* coords */ js.Array[RangeType]) => Unit | Boolean
-      ): Self = StObject.set(x, "beforeCopy", js.Any.fromFunction2(value))
+        value: (/* data */ js.Array[js.Array[CellValue]], /* coords */ js.Array[RangeType], /* copiedHeadersCount */ ColumnHeadersCount) => Unit | Boolean
+      ): Self = StObject.set(x, "beforeCopy", js.Any.fromFunction3(value))
       
       inline def setBeforeCopyUndefined: Self = StObject.set(x, "beforeCopy", js.undefined)
       
@@ -20358,6 +20970,12 @@ object pluginHooksMod {
       inline def setModifyColumnHeaderHeight(value: () => Unit): Self = StObject.set(x, "modifyColumnHeaderHeight", js.Any.fromFunction0(value))
       
       inline def setModifyColumnHeaderHeightUndefined: Self = StObject.set(x, "modifyColumnHeaderHeight", js.undefined)
+      
+      inline def setModifyColumnHeaderValue(
+        value: (/* headerValue */ String, /* visualColumnIndex */ Double, /* headerLevel */ Double) => Unit | String
+      ): Self = StObject.set(x, "modifyColumnHeaderValue", js.Any.fromFunction3(value))
+      
+      inline def setModifyColumnHeaderValueUndefined: Self = StObject.set(x, "modifyColumnHeaderValue", js.undefined)
       
       inline def setModifyCopyableRange(value: /* copyableRanges */ js.Array[RangeType] => Unit): Self = StObject.set(x, "modifyCopyableRange", js.Any.fromFunction1(value))
       

@@ -12,7 +12,7 @@ trait RequestSpotLaunchSpecification extends StObject {
   var AddressingType: js.UndefOr[String] = js.undefined
   
   /**
-    * One or more block device mapping entries. You can't specify both a snapshot ID and an encryption value. This is because only blank volumes can be encrypted on creation. If a snapshot is the basis for a volume, it is not blank and its encryption status is used for the volume encryption status.
+    * The block device mapping entries. You can't specify both a snapshot ID and an encryption value. This is because only blank volumes can be encrypted on creation. If a snapshot is the basis for a volume, it is not blank and its encryption status is used for the volume encryption status.
     */
   var BlockDeviceMappings: js.UndefOr[BlockDeviceMappingList] = js.undefined
   
@@ -52,7 +52,7 @@ trait RequestSpotLaunchSpecification extends StObject {
   var Monitoring: js.UndefOr[RunInstancesMonitoringEnabled] = js.undefined
   
   /**
-    * One or more network interfaces. If you specify a network interface, you must specify subnet IDs and security group IDs using the network interface.
+    * The network interfaces. If you specify a network interface, you must specify subnet IDs and security group IDs using the network interface.
     */
   var NetworkInterfaces: js.UndefOr[InstanceNetworkInterfaceSpecificationList] = js.undefined
   
@@ -67,12 +67,12 @@ trait RequestSpotLaunchSpecification extends StObject {
   var RamdiskId: js.UndefOr[typings.awsSdk.clientsEc2Mod.RamdiskId] = js.undefined
   
   /**
-    * One or more security group IDs.
+    * The IDs of the security groups.
     */
   var SecurityGroupIds: js.UndefOr[RequestSpotLaunchSpecificationSecurityGroupIdList] = js.undefined
   
   /**
-    * One or more security groups. When requesting instances in a VPC, you must specify the IDs of the security groups. When requesting instances in EC2-Classic, you can specify the names or the IDs of the security groups.
+    * Not supported.
     */
   var SecurityGroups: js.UndefOr[RequestSpotLaunchSpecificationSecurityGroupList] = js.undefined
   
@@ -82,9 +82,9 @@ trait RequestSpotLaunchSpecification extends StObject {
   var SubnetId: js.UndefOr[typings.awsSdk.clientsEc2Mod.SubnetId] = js.undefined
   
   /**
-    * The Base64-encoded user data for the instance. User data is limited to 16 KB.
+    * The base64-encoded user data that instances use when starting up. User data is limited to 16 KB.
     */
-  var UserData: js.UndefOr[String] = js.undefined
+  var UserData: js.UndefOr[SensitiveUserData] = js.undefined
 }
 object RequestSpotLaunchSpecification {
   
@@ -164,7 +164,7 @@ object RequestSpotLaunchSpecification {
     
     inline def setSubnetIdUndefined: Self = StObject.set(x, "SubnetId", js.undefined)
     
-    inline def setUserData(value: String): Self = StObject.set(x, "UserData", value.asInstanceOf[js.Any])
+    inline def setUserData(value: SensitiveUserData): Self = StObject.set(x, "UserData", value.asInstanceOf[js.Any])
     
     inline def setUserDataUndefined: Self = StObject.set(x, "UserData", js.undefined)
   }

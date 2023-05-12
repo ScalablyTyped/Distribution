@@ -119,7 +119,7 @@ object telemetry {
   
   /* telemetry functions */
   /**
-    * Submits a custom ping to the Telemetry back-end. See `submitExternalPing` inside TelemetryController.jsm for more details.
+    * Submits a custom ping to the Telemetry back-end. See `submitExternalPing` inside TelemetryController.sys.mjs for more details.
     * @param type The type of the ping.
     * @param message The data payload for the ping.
     * @param options Options object.

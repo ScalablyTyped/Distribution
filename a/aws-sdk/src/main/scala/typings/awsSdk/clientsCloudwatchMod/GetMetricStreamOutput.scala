@@ -22,7 +22,7 @@ trait GetMetricStreamOutput extends StObject {
   var ExcludeFilters: js.UndefOr[MetricStreamFilters] = js.undefined
   
   /**
-    * The ARN of the Amazon Kinesis Firehose delivery stream that is used by this metric stream.
+    * The ARN of the Amazon Kinesis Data Firehose delivery stream that is used by this metric stream.
     */
   var FirehoseArn: js.UndefOr[AmazonResourceName] = js.undefined
   
@@ -30,6 +30,11 @@ trait GetMetricStreamOutput extends StObject {
     * If this array of metric namespaces is present, then these namespaces are the only metric namespaces that are streamed by this metric stream.
     */
   var IncludeFilters: js.UndefOr[MetricStreamFilters] = js.undefined
+  
+  /**
+    * If this is true and this metric stream is in a monitoring account, then the stream includes metrics from source accounts that the monitoring account is linked to.
+    */
+  var IncludeLinkedAccountsMetrics: js.UndefOr[typings.awsSdk.clientsCloudwatchMod.IncludeLinkedAccountsMetrics] = js.undefined
   
   /**
     * The date of the most recent update to the metric stream's configuration.
@@ -94,6 +99,10 @@ object GetMetricStreamOutput {
     inline def setIncludeFiltersUndefined: Self = StObject.set(x, "IncludeFilters", js.undefined)
     
     inline def setIncludeFiltersVarargs(value: MetricStreamFilter*): Self = StObject.set(x, "IncludeFilters", js.Array(value*))
+    
+    inline def setIncludeLinkedAccountsMetrics(value: IncludeLinkedAccountsMetrics): Self = StObject.set(x, "IncludeLinkedAccountsMetrics", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeLinkedAccountsMetricsUndefined: Self = StObject.set(x, "IncludeLinkedAccountsMetrics", js.undefined)
     
     inline def setLastUpdateDate(value: js.Date): Self = StObject.set(x, "LastUpdateDate", value.asInstanceOf[js.Any])
     

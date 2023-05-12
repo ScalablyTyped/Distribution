@@ -1,7 +1,8 @@
 package typings.shiki.mod
 
 import typings.shiki.mod.^
-import typings.vscodeTextmate.mod.IRawTheme
+import typings.std.Response
+import typings.vscodeTextmate.releaseThemeMod.IRawTheme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,11 +40,12 @@ inline def setOnigasmWASM(path: js.typedarray.ArrayBuffer): Unit = ^.asInstanceO
 
 /**
   * Explicitly set the source for loading the oniguruma web assembly module.
-  *
-  * Accepts Url or ArrayBuffer
+  *  *
+  * Accepts ArrayBuffer or Response (usage of string is deprecated)
   */
-inline def setWasm(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setWasm")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
-inline def setWasm(path: js.typedarray.ArrayBuffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setWasm")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def setWasm(data: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setWasm")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def setWasm(data: js.typedarray.ArrayBuffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setWasm")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def setWasm(data: Response): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setWasm")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
 inline def toShikiTheme(rawTheme: IRawTheme): IShikiTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("toShikiTheme")(rawTheme.asInstanceOf[js.Any]).asInstanceOf[IShikiTheme]
 
@@ -56,4 +58,4 @@ type IThemeRegistration = IShikiTheme | (StringLiteralUnion[Theme, String])
   * This has auto completion whereas `'foo' | string` doesn't
   * Adapted from https://github.com/microsoft/TypeScript/issues/29729
   */
-type StringLiteralUnion[T /* <: U */, U] = T | U
+type StringLiteralUnion[T /* <: U */, U] = T | (U & Nothing)

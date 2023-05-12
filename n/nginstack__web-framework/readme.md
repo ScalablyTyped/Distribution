@@ -1,7 +1,7 @@
 
 # Scala.js typings for nginstack__web-framework
 
-Typings are for version 65.0
+Typings are for version 71.0
 
 ## Library description:
 Nginstack Web Framework. See the [nginstack site](https://nginstack.com) for more information.

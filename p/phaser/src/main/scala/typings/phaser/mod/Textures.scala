@@ -1,6 +1,7 @@
 package typings.phaser.mod
 
 import typings.phaser.Phaser.GameObjects.RenderTexture
+import typings.phaser.Phaser.Types.Textures.CompressedTextureData
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
@@ -52,6 +53,55 @@ object Textures {
     ) = this()
   }
   
+  /**
+    * A Dynamic Texture is a special texture that allows you to draw textures, frames and most kind of
+    * Game Objects directly to it.
+    * 
+    * You can take many complex objects and draw them to this one texture, which can then be used as the
+    * base texture for other Game Objects, such as Sprites. Should you then update this texture, all
+    * Game Objects using it will instantly be updated as well, reflecting the changes immediately.
+    * 
+    * It's a powerful way to generate dynamic textures at run-time that are WebGL friendly and don't invoke
+    * expensive GPU uploads on each change.
+    * 
+    * ```js
+    * const t = this.textures.addDynamicTexture('player', 64, 128);
+    * // draw objects to t
+    * this.add.sprite(x, y, 'player');
+    * ```
+    * 
+    * Because this is a standard Texture within Phaser, you can add frames to it, meaning you can use it
+    * to generate sprite sheets, texture atlases or tile sets.
+    * 
+    * Under WebGL1, a FrameBuffer, which is what this Dynamic Texture uses internally, cannot be anti-aliased.
+    * This means that when drawing objects such as Shapes or Graphics instances to this texture, they may appear
+    * to be drawn with no aliasing around the edges. This is a technical limitation of WebGL1. To get around it,
+    * create your shape as a texture in an art package, then draw that to this texture.
+    * 
+    * Based on the assumption that you will be using this Dynamic Texture as a source for Sprites, it will
+    * automatically invert any drawing done to it on the y axis. If you do not require this, please call the
+    * `setIsSpriteTexture()` method and pass it `false` as its parameter. Do this before you start drawing
+    * to this texture, otherwise you will get vertically inverted frames under WebGL. This isn't required
+    * for Canvas.
+    */
+  @JSImport("phaser", "Textures.DynamicTexture")
+  @js.native
+  open class DynamicTexture protected ()
+    extends StObject
+       with typings.phaser.Phaser.Textures.DynamicTexture {
+    /**
+      * 
+      * @param manager A reference to the Texture Manager this Texture belongs to.
+      * @param key The unique string-based key of this Texture.
+      * @param width The width of this Dymamic Texture in pixels. Defaults to 256 x 256. Default 256.
+      * @param height The height of this Dymamic Texture in pixels. Defaults to 256 x 256. Default 256.
+      */
+    def this(manager: typings.phaser.Phaser.Textures.TextureManager, key: String) = this()
+    def this(manager: typings.phaser.Phaser.Textures.TextureManager, key: String, width: Double) = this()
+    def this(manager: typings.phaser.Phaser.Textures.TextureManager, key: String, width: Double, height: Double) = this()
+    def this(manager: typings.phaser.Phaser.Textures.TextureManager, key: String, width: Unit, height: Double) = this()
+  }
+  
   object Events {
     
     /**
@@ -63,7 +113,18 @@ object Textures {
       */
     @JSImport("phaser", "Textures.Events.ADD")
     @js.native
-    val ADD: Any = js.native
+    val ADD: String = js.native
+    
+    /**
+      * The Texture Add Key Event.
+      * 
+      * This event is dispatched by the Texture Manager when a texture with the given key is added to it.
+      * 
+      * Listen to this event from within a Scene using: `this.textures.on('addtexture-key', listener)`.
+      */
+    @JSImport("phaser", "Textures.Events.ADD_KEY")
+    @js.native
+    val ADD_KEY: String = js.native
     
     /**
       * The Texture Load Error Event.
@@ -75,7 +136,7 @@ object Textures {
       */
     @JSImport("phaser", "Textures.Events.ERROR")
     @js.native
-    val ERROR: Any = js.native
+    val ERROR: String = js.native
     
     /**
       * The Texture Load Event.
@@ -89,7 +150,7 @@ object Textures {
       */
     @JSImport("phaser", "Textures.Events.LOAD")
     @js.native
-    val LOAD: Any = js.native
+    val LOAD: String = js.native
     
     /**
       * This internal event signifies that the Texture Manager is now ready and the Game can continue booting.
@@ -100,7 +161,7 @@ object Textures {
       */
     @JSImport("phaser", "Textures.Events.READY")
     @js.native
-    val READY: Any = js.native
+    val READY: String = js.native
     
     /**
       * The Texture Remove Event.
@@ -114,7 +175,21 @@ object Textures {
       */
     @JSImport("phaser", "Textures.Events.REMOVE")
     @js.native
-    val REMOVE: Any = js.native
+    val REMOVE: String = js.native
+    
+    /**
+      * The Texture Remove Key Event.
+      * 
+      * This event is dispatched by the Texture Manager when a texture with the given key is removed from it.
+      * 
+      * Listen to this event from within a Scene using: `this.textures.on('removetexture-key', listener)`.
+      * 
+      * If you have any Game Objects still using the removed texture, they will start throwing
+      * errors the next time they try to render. Be sure to clear all use of the texture in this event handler.
+      */
+    @JSImport("phaser", "Textures.Events.REMOVE_KEY")
+    @js.native
+    val REMOVE_KEY: String = js.native
   }
   
   /**
@@ -183,6 +258,25 @@ object Textures {
   @JSImport("phaser", "Textures.NEAREST")
   @js.native
   val NEAREST: Double = js.native
+  
+  object Parsers {
+    
+    @JSImport("phaser", "Textures.Parsers")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Parses a KTX format Compressed Texture file and generates texture data suitable for WebGL from it.
+      * @param data The data object created by the Compressed Texture File Loader.
+      */
+    inline def KTXParser(data: js.typedarray.ArrayBuffer): CompressedTextureData = ^.asInstanceOf[js.Dynamic].applyDynamic("KTXParser")(data.asInstanceOf[js.Any]).asInstanceOf[CompressedTextureData]
+    
+    /**
+      * Parses a PVR format Compressed Texture file and generates texture data suitable for WebGL from it.
+      * @param data The data object created by the Compressed Texture File Loader.
+      */
+    inline def PVRParser(data: js.typedarray.ArrayBuffer): CompressedTextureData = ^.asInstanceOf[js.Dynamic].applyDynamic("PVRParser")(data.asInstanceOf[js.Any]).asInstanceOf[CompressedTextureData]
+  }
   
   /**
     * A Texture consists of a source, usually an Image from the Cache, and a collection of Frames.
@@ -281,12 +375,16 @@ object Textures {
   }
   
   /**
-    * Textures are managed by the global TextureManager. This is a singleton class that is
-    * responsible for creating and delivering Textures and their corresponding Frames to Game Objects.
+    * When Phaser boots it will create an instance of this Texture Manager class.
     * 
-    * Sprites and other Game Objects get the texture data they need from the TextureManager.
+    * It is a global manager that handles all textures in your game. You can access it from within
+    * a Scene via the `this.textures` property.
     * 
-    * Access it via `scene.textures`.
+    * Its role is as a manager for all textures that your game uses. It can create, update and remove
+    * textures globally, as well as parse texture data from external files, such as sprite sheets
+    * and texture atlases.
+    * 
+    * Sprites and other texture-based Game Objects get their texture data directly from this class.
     */
   @JSImport("phaser", "Textures.TextureManager")
   @js.native
@@ -312,8 +410,6 @@ object Textures {
   open class TextureSource protected ()
     extends StObject
        with typings.phaser.Phaser.Textures.TextureSource {
-    def this(texture: typings.phaser.Phaser.Textures.Texture, source: RenderTexture) = this()
-    def this(texture: typings.phaser.Phaser.Textures.Texture, source: HTMLCanvasElement) = this()
     /**
       * 
       * @param texture The Texture this TextureSource belongs to.
@@ -322,208 +418,12 @@ object Textures {
       * @param height Optional height of the source image. If not given it's derived from the source itself.
       * @param flipY Sets the `UNPACK_FLIP_Y_WEBGL` flag the WebGL Texture uses during upload. Default false.
       */
-    def this(texture: typings.phaser.Phaser.Textures.Texture, source: HTMLImageElement) = this()
-    def this(texture: typings.phaser.Phaser.Textures.Texture, source: HTMLVideoElement) = this()
-    def this(texture: typings.phaser.Phaser.Textures.Texture, source: WebGLTexture) = this()
-    def this(texture: typings.phaser.Phaser.Textures.Texture, source: RenderTexture, width: Double) = this()
-    def this(texture: typings.phaser.Phaser.Textures.Texture, source: HTMLCanvasElement, width: Double) = this()
-    def this(texture: typings.phaser.Phaser.Textures.Texture, source: HTMLImageElement, width: Double) = this()
-    def this(texture: typings.phaser.Phaser.Textures.Texture, source: HTMLVideoElement, width: Double) = this()
-    def this(texture: typings.phaser.Phaser.Textures.Texture, source: WebGLTexture, width: Double) = this()
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
-      source: RenderTexture,
-      width: Double,
-      height: Double
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: RenderTexture,
-      width: Unit,
-      height: Double
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: HTMLCanvasElement,
-      width: Double,
-      height: Double
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: HTMLCanvasElement,
-      width: Unit,
-      height: Double
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: HTMLImageElement,
-      width: Double,
-      height: Double
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: HTMLImageElement,
-      width: Unit,
-      height: Double
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: HTMLVideoElement,
-      width: Double,
-      height: Double
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: HTMLVideoElement,
-      width: Unit,
-      height: Double
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: WebGLTexture,
-      width: Double,
-      height: Double
-    ) = this()
-    def this(texture: typings.phaser.Phaser.Textures.Texture, source: WebGLTexture, width: Unit, height: Double) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: RenderTexture,
-      width: Double,
-      height: Double,
-      flipY: Boolean
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: RenderTexture,
-      width: Double,
-      height: Unit,
-      flipY: Boolean
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: RenderTexture,
-      width: Unit,
-      height: Double,
-      flipY: Boolean
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: RenderTexture,
-      width: Unit,
-      height: Unit,
-      flipY: Boolean
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: HTMLCanvasElement,
-      width: Double,
-      height: Double,
-      flipY: Boolean
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: HTMLCanvasElement,
-      width: Double,
-      height: Unit,
-      flipY: Boolean
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: HTMLCanvasElement,
-      width: Unit,
-      height: Double,
-      flipY: Boolean
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: HTMLCanvasElement,
-      width: Unit,
-      height: Unit,
-      flipY: Boolean
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: HTMLImageElement,
-      width: Double,
-      height: Double,
-      flipY: Boolean
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: HTMLImageElement,
-      width: Double,
-      height: Unit,
-      flipY: Boolean
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: HTMLImageElement,
-      width: Unit,
-      height: Double,
-      flipY: Boolean
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: HTMLImageElement,
-      width: Unit,
-      height: Unit,
-      flipY: Boolean
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: HTMLVideoElement,
-      width: Double,
-      height: Double,
-      flipY: Boolean
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: HTMLVideoElement,
-      width: Double,
-      height: Unit,
-      flipY: Boolean
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: HTMLVideoElement,
-      width: Unit,
-      height: Double,
-      flipY: Boolean
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: HTMLVideoElement,
-      width: Unit,
-      height: Unit,
-      flipY: Boolean
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: WebGLTexture,
-      width: Double,
-      height: Double,
-      flipY: Boolean
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: WebGLTexture,
-      width: Double,
-      height: Unit,
-      flipY: Boolean
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: WebGLTexture,
-      width: Unit,
-      height: Double,
-      flipY: Boolean
-    ) = this()
-    def this(
-      texture: typings.phaser.Phaser.Textures.Texture,
-      source: WebGLTexture,
-      width: Unit,
-      height: Unit,
-      flipY: Boolean
+      source: HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | RenderTexture | WebGLTexture | CompressedTextureData | typings.phaser.Phaser.Textures.DynamicTexture,
+      width: js.UndefOr[Double],
+      height: js.UndefOr[Double],
+      flipY: js.UndefOr[Boolean]
     ) = this()
   }
 }

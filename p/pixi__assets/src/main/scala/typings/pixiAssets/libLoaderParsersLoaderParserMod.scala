@@ -3,7 +3,6 @@ package typings.pixiAssets
 import typings.pixiAssets.libLoaderLoaderMod.Loader
 import typings.pixiAssets.libLoaderTypesMod.LoadAsset
 import typings.pixiExtensions.mod.ExtensionMetadata
-import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,10 +40,10 @@ object libLoaderParsersLoaderParserMod {
     /* 1 */ val Normal: typings.pixiAssets.libLoaderParsersLoaderParserMod.LoaderParserPriority.Normal & Double = js.native
   }
   
-  trait LoaderParser[ASSET, META_DATA] extends StObject {
+  trait LoaderParser[ASSET, META_DATA, CONFIG] extends StObject {
     
     /** A config to adjust the parser */
-    var config: js.UndefOr[Record[String, Any]] = js.undefined
+    var config: js.UndefOr[CONFIG] = js.undefined
     
     var `extension`: js.UndefOr[ExtensionMetadata] = js.undefined
     
@@ -63,6 +62,9 @@ object libLoaderParsersLoaderParserMod {
           js.Promise[Any]
         ]
       ] = js.undefined
+    
+    /** The name of the parser (this can be used when specifying loadParser in a LoadAsset) */
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Gets called on the asset it testParse passes. Useful to convert a raw asset into something more useful than
@@ -130,15 +132,15 @@ object libLoaderParsersLoaderParserMod {
   }
   object LoaderParser {
     
-    inline def apply[ASSET, META_DATA](): LoaderParser[ASSET, META_DATA] = {
+    inline def apply[ASSET, META_DATA, CONFIG](): LoaderParser[ASSET, META_DATA, CONFIG] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[LoaderParser[ASSET, META_DATA]]
+      __obj.asInstanceOf[LoaderParser[ASSET, META_DATA, CONFIG]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: LoaderParser[?, ?], ASSET, META_DATA] (val x: Self & (LoaderParser[ASSET, META_DATA])) extends AnyVal {
+    implicit open class MutableBuilder[Self <: LoaderParser[?, ?, ?], ASSET, META_DATA, CONFIG] (val x: Self & (LoaderParser[ASSET, META_DATA, CONFIG])) extends AnyVal {
       
-      inline def setConfig(value: Record[String, Any]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: CONFIG): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
       inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
@@ -151,6 +153,10 @@ object libLoaderParsersLoaderParserMod {
       ): Self = StObject.set(x, "load", js.Any.fromFunction3(value))
       
       inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       inline def setParse(
         value: (/* asset */ ASSET, /* loadAsset */ js.UndefOr[LoadAsset[META_DATA]], /* loader */ js.UndefOr[Loader]) => js.Promise[Any]

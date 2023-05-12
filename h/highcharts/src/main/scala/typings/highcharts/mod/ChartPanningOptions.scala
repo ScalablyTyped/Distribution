@@ -12,10 +12,13 @@ trait ChartPanningOptions extends StObject {
   var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) Decides in what dimensions the
-    * user can pan the chart. Can be one of `x`, `y`, or `xy`.
+    * (Highcharts, Highstock, Gantt) Decides in what dimensions the user can
+    * pan the chart. Can be one of `x`, `y`, or `xy`.
+    *
+    * When this option is set to `y` or `xy`, yAxis.startOnTick and
+    * yAxis.endOnTick are overwritten to `false`.
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[OptionsChartPanningTypeValue] = js.undefined
 }
 object ChartPanningOptions {
   
@@ -31,7 +34,7 @@ object ChartPanningOptions {
     
     inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: OptionsChartPanningTypeValue): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

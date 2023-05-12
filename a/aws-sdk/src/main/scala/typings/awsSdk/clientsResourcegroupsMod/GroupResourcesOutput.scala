@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GroupResourcesOutput extends StObject {
   
   /**
-    * A list of ARNs of any resources that failed to be added to the group by this operation.
+    * A list of ARNs of any resources that this operation failed to add to the group.
     */
   var Failed: js.UndefOr[FailedResourceList] = js.undefined
   
   /**
-    * A list of ARNs of any resources that are still in the process of being added to the group by this operation. These pending additions continue asynchronously. You can check the status of pending additions by using the  ListGroupResources  operation, and checking the Resources array in the response and the Status field of each object in that array. 
+    * A list of ARNs of any resources that this operation is still in the process adding to the group. These pending additions continue asynchronously. You can check the status of pending additions by using the  ListGroupResources  operation, and checking the Resources array in the response and the Status field of each object in that array. 
     */
   var Pending: js.UndefOr[PendingResourceList] = js.undefined
   
   /**
-    * A list of ARNs of resources that were successfully added to the group by this operation.
+    * A list of ARNs of the resources that this operation successfully added to the group.
     */
   var Succeeded: js.UndefOr[ResourceArnList] = js.undefined
 }

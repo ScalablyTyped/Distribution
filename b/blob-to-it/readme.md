@@ -1,7 +1,7 @@
 
 # Scala.js typings for blob-to-it
 
-Typings are for version 2.0.0
+Typings are for version 2.0.3
 
 ## Library description:
 Turns a blob into an async iterator

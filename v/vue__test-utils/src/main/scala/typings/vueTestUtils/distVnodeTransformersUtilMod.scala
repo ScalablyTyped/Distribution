@@ -15,6 +15,10 @@ object distVnodeTransformersUtilMod {
   
   inline def createVNodeTransformer(param0: Transformers): VNodeArgsTransformerFn = ^.asInstanceOf[js.Dynamic].applyDynamic("createVNodeTransformer")(param0.asInstanceOf[js.Any]).asInstanceOf[VNodeArgsTransformerFn]
   
+  inline def isKeepAlive(`type`: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKeepAlive")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isTeleport(`type`: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTeleport")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
     * This RHS of the type alias is guess work. You should cast if it's not correct in your case.

@@ -59,6 +59,13 @@ type BundleList = js.Array[WorkspaceBundle]
 
 type BundleOwner = String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.REGULAR
+  - typings.awsSdk.awsSdkStrings.STANDBY
+  - java.lang.String
+*/
+type BundleType = _BundleType | String
+
 type CertificateAuthorityArn = String
 
 /* Rewritten from type alias, can be one of: 
@@ -193,6 +200,8 @@ type Ec2ImageId = String
 
 type ErrorType = String
 
+type FailedCreateStandbyWorkspacesRequestList = js.Array[FailedCreateStandbyWorkspacesRequest]
+
 type FailedCreateWorkspaceRequests = js.Array[FailedCreateWorkspaceRequest]
 
 type FailedRebootWorkspaceRequests = js.Array[FailedWorkspaceChangeRequest]
@@ -281,6 +290,8 @@ type OperatingSystemType = _OperatingSystemType | String
 
 type PaginationToken = String
 
+type PendingCreateStandbyWorkspacesRequestList = js.Array[PendingCreateStandbyWorkspacesRequest]
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PCOIP
   - typings.awsSdk.awsSdkStrings.WSP
@@ -304,6 +315,8 @@ type ReconnectEnum = _ReconnectEnum | String
 type Region = String
 
 type RegistrationCode = String
+
+type RelatedWorkspaces = js.Array[RelatedWorkspaceProperties]
 
 type ResourceIdList = js.Array[NonEmptyString]
 
@@ -332,6 +345,15 @@ type SamlUserAccessUrl = String
 type SecurityGroupId = String
 
 type SnapshotList = js.Array[Snapshot]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PRIMARY
+  - typings.awsSdk.awsSdkStrings.STANDBY
+  - java.lang.String
+*/
+type StandbyWorkspaceRelationshipType = _StandbyWorkspaceRelationshipType | String
+
+type StandbyWorkspacesList = js.Array[StandbyWorkspace]
 
 type StartWorkspaceRequests = js.Array[StartRequest]
 
@@ -378,6 +400,14 @@ type VolumeEncryptionKey = String
 type WorkspaceBundleDescription = String
 
 type WorkspaceBundleName = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AVAILABLE
+  - typings.awsSdk.awsSdkStrings.PENDING
+  - typings.awsSdk.awsSdkStrings.ERROR
+  - java.lang.String
+*/
+type WorkspaceBundleState = _WorkspaceBundleState | String
 
 type WorkspaceConnectionStatusList = js.Array[WorkspaceConnectionStatus]
 

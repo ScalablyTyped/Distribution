@@ -50,8 +50,6 @@ trait PlanDefinitionAction
   
   var _selectionBehavior: js.UndefOr[Element] = js.undefined
   
-  var _subjectCanonical: js.UndefOr[Element] = js.undefined
-  
   var _textEquivalent: js.UndefOr[Element] = js.undefined
   
   var _timingDateTime: js.UndefOr[Element] = js.undefined
@@ -71,7 +69,7 @@ trait PlanDefinitionAction
   var cardinalityBehavior: js.UndefOr[single | multiple] = js.undefined
   
   /**
-    * A code that provides a meaning, grouping, or classification for the action or action group. For example, a section may have a LOINC code for the section of a documentation template. In pharmaceutical quality, an action (Test) such as pH could be classified as a physical property.
+    * A code that provides meaning for the action or action group. For example, a section may have a LOINC code for the section of a documentation template.
     */
   var code: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
@@ -106,7 +104,7 @@ trait PlanDefinitionAction
   var dynamicValue: js.UndefOr[js.Array[PlanDefinitionActionDynamicValue]] = js.undefined
   
   /**
-    * Identifies goals that this action supports. The reference must be to a goal element defined within this plan definition. In pharmaceutical quality, a goal represents acceptance criteria (Goal) for a given action (Test), so the goalId would be the unique id of a defined goal element establishing the acceptance criteria for the action.
+    * Identifies goals that this action supports. The reference must be to a goal element defined within this plan definition.
     */
   var goalId: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -169,12 +167,6 @@ trait PlanDefinitionAction
     * The subject of an action overrides the subject at a parent action or on the root of the PlanDefinition if specified.
     * In addition, because the subject needs to be resolved during realization, use of subjects in actions (or in the ActivityDefinition referenced by the action) resolves based on the set of subjects supplied in context and by type (i.e. the patient subject would resolve to a resource of type Patient).
     */
-  var subjectCanonical: js.UndefOr[String] = js.undefined
-  
-  /**
-    * The subject of an action overrides the subject at a parent action or on the root of the PlanDefinition if specified.
-    * In addition, because the subject needs to be resolved during realization, use of subjects in actions (or in the ActivityDefinition referenced by the action) resolves based on the set of subjects supplied in context and by type (i.e. the patient subject would resolve to a resource of type Patient).
-    */
   var subjectCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
@@ -219,7 +211,7 @@ trait PlanDefinitionAction
   var timingTiming: js.UndefOr[Timing] = js.undefined
   
   /**
-    * The textual description of the action displayed to a user. For example, when the action is a test to be performed, the title would be the title of the test such as Assay by HPLC.
+    * The title of the action displayed to a user.
     */
   var title: js.UndefOr[String] = js.undefined
   
@@ -354,10 +346,6 @@ object PlanDefinitionAction {
     
     inline def setSelectionBehaviorUndefined: Self = StObject.set(x, "selectionBehavior", js.undefined)
     
-    inline def setSubjectCanonical(value: String): Self = StObject.set(x, "subjectCanonical", value.asInstanceOf[js.Any])
-    
-    inline def setSubjectCanonicalUndefined: Self = StObject.set(x, "subjectCanonical", js.undefined)
-    
     inline def setSubjectCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "subjectCodeableConcept", value.asInstanceOf[js.Any])
     
     inline def setSubjectCodeableConceptUndefined: Self = StObject.set(x, "subjectCodeableConcept", js.undefined)
@@ -457,10 +445,6 @@ object PlanDefinitionAction {
     inline def set_selectionBehavior(value: Element): Self = StObject.set(x, "_selectionBehavior", value.asInstanceOf[js.Any])
     
     inline def set_selectionBehaviorUndefined: Self = StObject.set(x, "_selectionBehavior", js.undefined)
-    
-    inline def set_subjectCanonical(value: Element): Self = StObject.set(x, "_subjectCanonical", value.asInstanceOf[js.Any])
-    
-    inline def set_subjectCanonicalUndefined: Self = StObject.set(x, "_subjectCanonical", js.undefined)
     
     inline def set_textEquivalent(value: Element): Self = StObject.set(x, "_textEquivalent", value.asInstanceOf[js.Any])
     

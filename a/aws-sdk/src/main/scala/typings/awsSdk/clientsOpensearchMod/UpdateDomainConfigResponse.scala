@@ -12,7 +12,12 @@ trait UpdateDomainConfigResponse extends StObject {
   var DomainConfig: typings.awsSdk.clientsOpensearchMod.DomainConfig
   
   /**
-    * Results of a dry run performed in an update domain request.
+    * The status of the dry run being performed on the domain, if any.
+    */
+  var DryRunProgressStatus: js.UndefOr[typings.awsSdk.clientsOpensearchMod.DryRunProgressStatus] = js.undefined
+  
+  /**
+    * Results of the dry run performed in the update domain request.
     */
   var DryRunResults: js.UndefOr[typings.awsSdk.clientsOpensearchMod.DryRunResults] = js.undefined
 }
@@ -27,6 +32,10 @@ object UpdateDomainConfigResponse {
   implicit open class MutableBuilder[Self <: UpdateDomainConfigResponse] (val x: Self) extends AnyVal {
     
     inline def setDomainConfig(value: DomainConfig): Self = StObject.set(x, "DomainConfig", value.asInstanceOf[js.Any])
+    
+    inline def setDryRunProgressStatus(value: DryRunProgressStatus): Self = StObject.set(x, "DryRunProgressStatus", value.asInstanceOf[js.Any])
+    
+    inline def setDryRunProgressStatusUndefined: Self = StObject.set(x, "DryRunProgressStatus", js.undefined)
     
     inline def setDryRunResults(value: DryRunResults): Self = StObject.set(x, "DryRunResults", value.asInstanceOf[js.Any])
     

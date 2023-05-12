@@ -576,13 +576,13 @@ object typingsServicesDisputesMod {
       * @param repudiationId
       * @param options
       */
-    def getRepudiation(data: String): js.Promise[js.Array[RepudiationData]] = js.native
+    def getRepudiation(data: String): js.Promise[RepudiationData] = js.native
     /**
       * Gets repudiation
       * @param repudiationId
       * @param options
       */
-    def getRepudiation(data: String, callback: js.Function1[/* data */ js.Array[RepudiationData], Unit]): Unit = js.native
+    def getRepudiation(data: String, callback: js.Function1[/* data */ RepudiationData, Unit]): Unit = js.native
     /**
       * Gets repudiation
       * @param repudiationId
@@ -590,12 +590,12 @@ object typingsServicesDisputesMod {
       */
     def getRepudiation(
       data: String,
-      callback: js.Function1[/* data */ WithResponse[js.Array[RepudiationData]], Unit],
+      callback: js.Function1[/* data */ WithResponse[RepudiationData], Unit],
       options: MethodOptionWithResponse
     ): Unit = js.native
     def getRepudiation(
       data: String,
-      callback: js.Function1[/* data */ js.Array[RepudiationData], Unit],
+      callback: js.Function1[/* data */ RepudiationData, Unit],
       options: MethodOptionWithoutResponse
     ): Unit = js.native
     /**
@@ -603,15 +603,15 @@ object typingsServicesDisputesMod {
       * @param repudiationId
       * @param options
       */
-    def getRepudiation(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[js.Array[RepudiationData]]] = js.native
-    def getRepudiation(data: String, options: MethodOptionWithoutResponse): js.Promise[js.Array[RepudiationData]] = js.native
+    def getRepudiation(data: String, options: MethodOptionWithResponse): js.Promise[WithResponse[RepudiationData]] = js.native
+    def getRepudiation(data: String, options: MethodOptionWithoutResponse): js.Promise[RepudiationData] = js.native
     /**
       * Gets repudiation
       * @param repudiationId
       * @param options
       */
     @JSName("getRepudiation")
-    var getRepudiation_Original: MethodOverload[String, js.Array[RepudiationData]] = js.native
+    var getRepudiation_Original: MethodOverload[String, RepudiationData] = js.native
     
     /**
       * Gets settlement transfer

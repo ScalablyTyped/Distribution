@@ -8,11 +8,11 @@ trait PathOrgStringUsernameString extends StObject {
   
   var path: OrgStringUsernameString
   
-  var query: `407`
+  var query: `473`
 }
 object PathOrgStringUsernameString {
   
-  inline def apply(path: OrgStringUsernameString, query: `407`): PathOrgStringUsernameString = {
+  inline def apply(path: OrgStringUsernameString, query: `473`): PathOrgStringUsernameString = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathOrgStringUsernameString]
   }
@@ -22,6 +22,6 @@ object PathOrgStringUsernameString {
     
     inline def setPath(value: OrgStringUsernameString): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setQuery(value: `407`): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: `473`): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

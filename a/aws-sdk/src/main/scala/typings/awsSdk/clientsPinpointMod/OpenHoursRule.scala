@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OpenHoursRule extends StObject {
   
   /**
-    * Local start time in ISO 8601 format.
+    * The end of the scheduled time, in ISO 8601 format, when the channel can't send messages.
     */
   var EndTime: js.UndefOr[string] = js.undefined
   
   /**
-    * Local start time in ISO 8601 format.
+    * The start of the scheduled time, in ISO 8601 format, when the channel can send messages.
     */
   var StartTime: js.UndefOr[string] = js.undefined
 }

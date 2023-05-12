@@ -13,7 +13,7 @@ open class Typeahead[T /* <: TypeaheadModel */] protected ()
   def this(props: TypeaheadProps[T]) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: TypeaheadProps[T], context: Any) = this()
   

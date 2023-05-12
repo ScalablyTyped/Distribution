@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PutSipMediaApplicationLoggingConfigurationResponse extends StObject {
   
+  /**
+    * The logging configuration of the SIP media application.
+    */
   var SipMediaApplicationLoggingConfiguration: js.UndefOr[typings.awsSdk.clientsChimeMod.SipMediaApplicationLoggingConfiguration] = js.undefined
 }
 object PutSipMediaApplicationLoggingConfigurationResponse {

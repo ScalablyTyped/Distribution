@@ -25,6 +25,11 @@ trait UpdateDomainConfigurationRequest extends StObject {
     * Removes the authorization configuration from a domain.
     */
   var removeAuthorizerConfig: js.UndefOr[RemoveAuthorizerConfig] = js.undefined
+  
+  /**
+    * An object that specifies the TLS configuration for a domain.
+    */
+  var tlsConfig: js.UndefOr[TlsConfig] = js.undefined
 }
 object UpdateDomainConfigurationRequest {
   
@@ -49,5 +54,9 @@ object UpdateDomainConfigurationRequest {
     inline def setRemoveAuthorizerConfig(value: RemoveAuthorizerConfig): Self = StObject.set(x, "removeAuthorizerConfig", value.asInstanceOf[js.Any])
     
     inline def setRemoveAuthorizerConfigUndefined: Self = StObject.set(x, "removeAuthorizerConfig", js.undefined)
+    
+    inline def setTlsConfig(value: TlsConfig): Self = StObject.set(x, "tlsConfig", value.asInstanceOf[js.Any])
+    
+    inline def setTlsConfigUndefined: Self = StObject.set(x, "tlsConfig", js.undefined)
   }
 }

@@ -3,6 +3,7 @@ package typings.azureMsalNode
 import typings.azureMsalCommon.distConfigClientConfigurationMod.AzureCloudOptions
 import typings.azureMsalCommon.distResponseDeviceCodeResponseMod.DeviceCodeResponse
 import typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme
+import typings.azureMsalCommon.distUtilsMsalTypesMod.StringDict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,6 +26,10 @@ object distRequestDeviceCodeRequestMod {
     var correlationId: js.UndefOr[String] = js.undefined
     
     def deviceCodeCallback(response: DeviceCodeResponse): Unit
+    
+    var extraQueryParameters: js.UndefOr[StringDict] = js.undefined
+    
+    var maxAge: js.UndefOr[Double] = js.undefined
     
     var scopes: js.Array[String]
     
@@ -73,6 +78,14 @@ object distRequestDeviceCodeRequestMod {
       inline def setCorrelationIdUndefined: Self = StObject.set(x, "correlationId", js.undefined)
       
       inline def setDeviceCodeCallback(value: DeviceCodeResponse => Unit): Self = StObject.set(x, "deviceCodeCallback", js.Any.fromFunction1(value))
+      
+      inline def setExtraQueryParameters(value: StringDict): Self = StObject.set(x, "extraQueryParameters", value.asInstanceOf[js.Any])
+      
+      inline def setExtraQueryParametersUndefined: Self = StObject.set(x, "extraQueryParameters", js.undefined)
+      
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
       inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       

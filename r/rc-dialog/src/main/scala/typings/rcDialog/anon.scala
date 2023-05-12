@@ -2,7 +2,7 @@ package typings.rcDialog
 
 import typings.rcDialog.esDialogContentPanelMod.ContentRef
 import typings.rcDialog.rcDialogBooleans.`false`
-import typings.rcUtil.libPortalWrapperMod.GetContainer
+import typings.rcUtil.esPortalWrapperMod.GetContainer
 import typings.react.mod.CSSProperties
 import typings.react.mod.Key
 import typings.react.mod.MouseEvent
@@ -71,6 +71,8 @@ object anon {
     
     var afterClose: js.UndefOr[js.Function0[Any]] = js.undefined
     
+    var afterOpenChange: js.UndefOr[js.Function1[/* open */ Boolean, Unit]] = js.undefined
+    
     var animation: js.UndefOr[Any] = js.undefined
     
     var ariaId: String
@@ -133,6 +135,11 @@ object anon {
     
     var prefixCls: String
     
+    /**
+      * Allows getting a ref to the component instance.
+      * Once the component unmounts, React will set `ref.current` to `null` (or call the ref with `null` if you passed a callback ref).
+      * @see https://react.dev/learn/referencing-values-with-refs#refs-and-the-dom
+      */
     var ref: js.UndefOr[Ref[ContentRef]] = js.undefined
     
     var rootClassName: js.UndefOr[String] = js.undefined
@@ -168,6 +175,10 @@ object anon {
       inline def setAfterClose(value: () => Any): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
       
       inline def setAfterCloseUndefined: Self = StObject.set(x, "afterClose", js.undefined)
+      
+      inline def setAfterOpenChange(value: /* open */ Boolean => Unit): Self = StObject.set(x, "afterOpenChange", js.Any.fromFunction1(value))
+      
+      inline def setAfterOpenChangeUndefined: Self = StObject.set(x, "afterOpenChange", js.undefined)
       
       inline def setAnimation(value: Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

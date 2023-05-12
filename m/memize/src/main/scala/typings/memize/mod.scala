@@ -1,57 +1,20 @@
 package typings.memize
 
+import typings.std.Parameters
+import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  /**
-    * Memize options object.
-    *
-    * @typedef MemizeOptions
-    *
-    * @property {number} [maxSize] Maximum size of the cache.
-    */
-  /**
-    * Internal cache entry.
-    *
-    * @typedef MemizeCacheNode
-    *
-    * @property {?MemizeCacheNode|undefined} [prev] Previous node.
-    * @property {?MemizeCacheNode|undefined} [next] Next node.
-    * @property {Array<*>}                   args   Function arguments for cache
-    *                                               entry.
-    * @property {*}                          val    Function result.
-    */
-  /**
-    * Properties of the enhanced function for controlling cache.
-    *
-    * @typedef MemizeMemoizedFunction
-    *
-    * @property {()=>void} clear Clear the cache.
-    */
-  /**
-    * Accepts a function to be memoized, and returns a new memoized function, with
-    * optional options.
-    *
-    * @template {Function} F
-    *
-    * @param {F}             fn        Function to memoize.
-    * @param {MemizeOptions} [options] Options object.
-    *
-    * @return {F & MemizeMemoizedFunction} Memoized function.
-    */
-  inline def apply[F /* <: js.Function */](fn: F): F & MemizeMemoizedFunction = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[F & MemizeMemoizedFunction]
-  inline def apply[F /* <: js.Function */](fn: F, options: MemizeOptions): F & MemizeMemoizedFunction = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[F & MemizeMemoizedFunction]
-  
   @JSImport("memize", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-    * Internal cache entry.
-    */
+  inline def default[F /* <: js.Function1[/* repeated */ Any, Any] */](fn: F): (js.Function1[/* args */ Parameters[F], ReturnType[F]]) & MemizeMemoizedFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any]).asInstanceOf[(js.Function1[/* args */ Parameters[F], ReturnType[F]]) & MemizeMemoizedFunction]
+  inline def default[F /* <: js.Function1[/* repeated */ Any, Any] */](fn: F, options: MemizeOptions): (js.Function1[/* args */ Parameters[F], ReturnType[F]]) & MemizeMemoizedFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[(js.Function1[/* args */ Parameters[F], ReturnType[F]]) & MemizeMemoizedFunction]
+  
   trait MemizeCacheNode extends StObject {
     
     /**
@@ -106,9 +69,6 @@ object mod {
     }
   }
   
-  /**
-    * Properties of the enhanced function for controlling cache.
-    */
   trait MemizeMemoizedFunction extends StObject {
     
     /**
@@ -130,9 +90,6 @@ object mod {
     }
   }
   
-  /**
-    * Memize options object.
-    */
   trait MemizeOptions extends StObject {
     
     /**

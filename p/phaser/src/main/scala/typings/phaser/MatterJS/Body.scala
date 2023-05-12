@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Factories for commonly used body configurations (such as rectangles, circles and other polygons) can be found in the module `Matter.Bodies`.
   *
   * See the included usage [examples](https://github.com/liabru/matter-js/tree/master/examples).
-  * 
+  *
   * @class Body
   */
 trait Body extends StObject

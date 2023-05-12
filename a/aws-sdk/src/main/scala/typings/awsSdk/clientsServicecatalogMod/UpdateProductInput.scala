@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateProductInput extends StObject {
   
   /**
-    * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
+    * The language code.    jp - Japanese    zh - Chinese  
     */
   var AcceptLanguage: js.UndefOr[typings.awsSdk.clientsServicecatalogMod.AcceptLanguage] = js.undefined
   
@@ -45,6 +45,11 @@ trait UpdateProductInput extends StObject {
     * The tags to remove from the product.
     */
   var RemoveTags: js.UndefOr[TagKeys] = js.undefined
+  
+  /**
+    * Specifies connection details for the updated product and syncs the product to the connection source artifact. This automatically manages the product's artifacts based on changes to the source. The SourceConnection parameter consists of the following sub-fields.    Type     ConnectionParamters   
+    */
+  var SourceConnection: js.UndefOr[typings.awsSdk.clientsServicecatalogMod.SourceConnection] = js.undefined
   
   /**
     * The updated support description for the product.
@@ -104,6 +109,10 @@ object UpdateProductInput {
     inline def setRemoveTagsUndefined: Self = StObject.set(x, "RemoveTags", js.undefined)
     
     inline def setRemoveTagsVarargs(value: TagKey*): Self = StObject.set(x, "RemoveTags", js.Array(value*))
+    
+    inline def setSourceConnection(value: SourceConnection): Self = StObject.set(x, "SourceConnection", value.asInstanceOf[js.Any])
+    
+    inline def setSourceConnectionUndefined: Self = StObject.set(x, "SourceConnection", js.undefined)
     
     inline def setSupportDescription(value: SupportDescription): Self = StObject.set(x, "SupportDescription", value.asInstanceOf[js.Any])
     

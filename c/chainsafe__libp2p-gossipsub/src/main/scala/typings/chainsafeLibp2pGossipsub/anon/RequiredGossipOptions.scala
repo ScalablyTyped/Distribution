@@ -79,6 +79,10 @@ trait RequiredGossipOptions extends StObject {
   
   var heartbeatInterval: Double
   
+  var ignoreDuplicatePublishError: Boolean
+  
+  var maxInboundDataLength: Double
+  
   var maxInboundStreams: Double
   
   var maxOutboundBufferSize: Double
@@ -152,6 +156,8 @@ object RequiredGossipOptions {
     gossipsubIWantFollowupMs: Double,
     graftFloodThreshold: Double,
     heartbeatInterval: Double,
+    ignoreDuplicatePublishError: Boolean,
+    maxInboundDataLength: Double,
     maxInboundStreams: Double,
     maxOutboundBufferSize: Double,
     maxOutboundStreams: Double,
@@ -172,7 +178,7 @@ object RequiredGossipOptions {
     scoreThresholds: PeerScoreThresholds,
     seenTTL: Double
   ): RequiredGossipOptions = {
-    val __obj = js.Dynamic.literal(D = D.asInstanceOf[js.Any], Dhi = Dhi.asInstanceOf[js.Any], Dlazy = Dlazy.asInstanceOf[js.Any], Dlo = Dlo.asInstanceOf[js.Any], Dout = Dout.asInstanceOf[js.Any], Dscore = Dscore.asInstanceOf[js.Any], allowPublishToZeroPeers = allowPublishToZeroPeers.asInstanceOf[js.Any], allowedTopics = allowedTopics.asInstanceOf[js.Any], asyncValidation = asyncValidation.asInstanceOf[js.Any], awaitRpcHandler = awaitRpcHandler.asInstanceOf[js.Any], awaitRpcMessageHandler = awaitRpcMessageHandler.asInstanceOf[js.Any], canRelayMessage = canRelayMessage.asInstanceOf[js.Any], dataTransform = dataTransform.asInstanceOf[js.Any], debugName = debugName.asInstanceOf[js.Any], decodeRpcLimits = decodeRpcLimits.asInstanceOf[js.Any], directConnectTicks = directConnectTicks.asInstanceOf[js.Any], directPeers = directPeers.asInstanceOf[js.Any], doPX = doPX.asInstanceOf[js.Any], emitSelf = emitSelf.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], fallbackToFloodsub = fallbackToFloodsub.asInstanceOf[js.Any], fanoutTTL = fanoutTTL.asInstanceOf[js.Any], fastMsgIdFn = js.Any.fromFunction1(fastMsgIdFn), floodPublish = floodPublish.asInstanceOf[js.Any], globalSignaturePolicy = globalSignaturePolicy.asInstanceOf[js.Any], gossipsubIWantFollowupMs = gossipsubIWantFollowupMs.asInstanceOf[js.Any], graftFloodThreshold = graftFloodThreshold.asInstanceOf[js.Any], heartbeatInterval = heartbeatInterval.asInstanceOf[js.Any], maxInboundStreams = maxInboundStreams.asInstanceOf[js.Any], maxOutboundBufferSize = maxOutboundBufferSize.asInstanceOf[js.Any], maxOutboundStreams = maxOutboundStreams.asInstanceOf[js.Any], mcacheGossip = mcacheGossip.asInstanceOf[js.Any], mcacheLength = mcacheLength.asInstanceOf[js.Any], messageCache = messageCache.asInstanceOf[js.Any], messageProcessingConcurrency = messageProcessingConcurrency.asInstanceOf[js.Any], metricsRegister = metricsRegister.asInstanceOf[js.Any], metricsTopicStrToLabel = metricsTopicStrToLabel.asInstanceOf[js.Any], msgIdFn = js.Any.fromFunction1(msgIdFn), msgIdToStrFn = js.Any.fromFunction1(msgIdToStrFn), multicodecs = multicodecs.asInstanceOf[js.Any], opportunisticGraftPeers = opportunisticGraftPeers.asInstanceOf[js.Any], opportunisticGraftTicks = opportunisticGraftTicks.asInstanceOf[js.Any], pruneBackoff = pruneBackoff.asInstanceOf[js.Any], prunePeers = prunePeers.asInstanceOf[js.Any], scoreParams = scoreParams.asInstanceOf[js.Any], scoreThresholds = scoreThresholds.asInstanceOf[js.Any], seenTTL = seenTTL.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(D = D.asInstanceOf[js.Any], Dhi = Dhi.asInstanceOf[js.Any], Dlazy = Dlazy.asInstanceOf[js.Any], Dlo = Dlo.asInstanceOf[js.Any], Dout = Dout.asInstanceOf[js.Any], Dscore = Dscore.asInstanceOf[js.Any], allowPublishToZeroPeers = allowPublishToZeroPeers.asInstanceOf[js.Any], allowedTopics = allowedTopics.asInstanceOf[js.Any], asyncValidation = asyncValidation.asInstanceOf[js.Any], awaitRpcHandler = awaitRpcHandler.asInstanceOf[js.Any], awaitRpcMessageHandler = awaitRpcMessageHandler.asInstanceOf[js.Any], canRelayMessage = canRelayMessage.asInstanceOf[js.Any], dataTransform = dataTransform.asInstanceOf[js.Any], debugName = debugName.asInstanceOf[js.Any], decodeRpcLimits = decodeRpcLimits.asInstanceOf[js.Any], directConnectTicks = directConnectTicks.asInstanceOf[js.Any], directPeers = directPeers.asInstanceOf[js.Any], doPX = doPX.asInstanceOf[js.Any], emitSelf = emitSelf.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], fallbackToFloodsub = fallbackToFloodsub.asInstanceOf[js.Any], fanoutTTL = fanoutTTL.asInstanceOf[js.Any], fastMsgIdFn = js.Any.fromFunction1(fastMsgIdFn), floodPublish = floodPublish.asInstanceOf[js.Any], globalSignaturePolicy = globalSignaturePolicy.asInstanceOf[js.Any], gossipsubIWantFollowupMs = gossipsubIWantFollowupMs.asInstanceOf[js.Any], graftFloodThreshold = graftFloodThreshold.asInstanceOf[js.Any], heartbeatInterval = heartbeatInterval.asInstanceOf[js.Any], ignoreDuplicatePublishError = ignoreDuplicatePublishError.asInstanceOf[js.Any], maxInboundDataLength = maxInboundDataLength.asInstanceOf[js.Any], maxInboundStreams = maxInboundStreams.asInstanceOf[js.Any], maxOutboundBufferSize = maxOutboundBufferSize.asInstanceOf[js.Any], maxOutboundStreams = maxOutboundStreams.asInstanceOf[js.Any], mcacheGossip = mcacheGossip.asInstanceOf[js.Any], mcacheLength = mcacheLength.asInstanceOf[js.Any], messageCache = messageCache.asInstanceOf[js.Any], messageProcessingConcurrency = messageProcessingConcurrency.asInstanceOf[js.Any], metricsRegister = metricsRegister.asInstanceOf[js.Any], metricsTopicStrToLabel = metricsTopicStrToLabel.asInstanceOf[js.Any], msgIdFn = js.Any.fromFunction1(msgIdFn), msgIdToStrFn = js.Any.fromFunction1(msgIdToStrFn), multicodecs = multicodecs.asInstanceOf[js.Any], opportunisticGraftPeers = opportunisticGraftPeers.asInstanceOf[js.Any], opportunisticGraftTicks = opportunisticGraftTicks.asInstanceOf[js.Any], pruneBackoff = pruneBackoff.asInstanceOf[js.Any], prunePeers = prunePeers.asInstanceOf[js.Any], scoreParams = scoreParams.asInstanceOf[js.Any], scoreThresholds = scoreThresholds.asInstanceOf[js.Any], seenTTL = seenTTL.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequiredGossipOptions]
   }
   
@@ -238,6 +244,10 @@ object RequiredGossipOptions {
     inline def setGraftFloodThreshold(value: Double): Self = StObject.set(x, "graftFloodThreshold", value.asInstanceOf[js.Any])
     
     inline def setHeartbeatInterval(value: Double): Self = StObject.set(x, "heartbeatInterval", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreDuplicatePublishError(value: Boolean): Self = StObject.set(x, "ignoreDuplicatePublishError", value.asInstanceOf[js.Any])
+    
+    inline def setMaxInboundDataLength(value: Double): Self = StObject.set(x, "maxInboundDataLength", value.asInstanceOf[js.Any])
     
     inline def setMaxInboundStreams(value: Double): Self = StObject.set(x, "maxInboundStreams", value.asInstanceOf[js.Any])
     

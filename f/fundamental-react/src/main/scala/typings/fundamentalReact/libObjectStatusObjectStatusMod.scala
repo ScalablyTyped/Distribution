@@ -28,6 +28,9 @@ object libObjectStatusObjectStatusMod extends Shortcut {
     extends StObject
        with HTMLAttributes[HTMLAnchorElement | HTMLSpanElement] {
     
+    /** aria-label is required for a11y, when object status has only icon */
+    var ariaLabel: js.UndefOr[String] = js.undefined
+    
     var glyph: js.UndefOr[String] = js.undefined
     
     var indication: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`] = js.undefined
@@ -47,6 +50,10 @@ object libObjectStatusObjectStatusMod extends Shortcut {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: ObjectStatusProps] (val x: Self) extends AnyVal {
+      
+      inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+      
+      inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
       inline def setGlyph(value: String): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
       

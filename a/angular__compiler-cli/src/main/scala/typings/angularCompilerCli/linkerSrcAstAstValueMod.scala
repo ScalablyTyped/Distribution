@@ -105,7 +105,7 @@ object linkerSrcAstAstValueMod {
       * Converts the AstObject to a raw JavaScript object, mapping each property value (as an
       * `AstValue`) to the generic type (`T`) via the `mapper` function.
       */
-    def toLiteral[V](mapper: js.Function1[/* value */ AstValue[ObjectValueType[T], TExpression], V]): Record[String, V] = js.native
+    def toLiteral[V](mapper: js.Function2[/* value */ AstValue[ObjectValueType[T], TExpression], /* key */ String, V]): Record[String, V] = js.native
     
     /**
       * Converts the AstObject to a JavaScript Map, mapping each property value (as an
@@ -244,19 +244,6 @@ object linkerSrcAstAstValueMod {
     }}}
     */
   type ConformsTo[This, Actual, Expected] = This
-  
-  /**
-    * Ensures that `This` is an `AstValue` whose generic type conforms to `Expected`, to disallow
-    * calling a method if the value's type does not conform.
-    */
-  /** NOTE: Conditional type definitions are impossible to translate to Scala.
-    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
-    * TS definition: {{{
-    This extends @angular/compiler-cli.@angular/compiler-cli/linker/src/ast/ast_value.AstValue<infer Actual, any> ? @angular/compiler-cli.@angular/compiler-cli/linker/src/ast/ast_value.ConformsTo<This, Actual, Expected> : never
-    }}}
-    */
-  type HasValueType[This, Expected] = This
   
   /**
     * Represents only those types in `T` that are object types.

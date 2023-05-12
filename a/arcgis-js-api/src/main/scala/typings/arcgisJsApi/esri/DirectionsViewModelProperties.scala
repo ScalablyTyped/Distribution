@@ -59,7 +59,7 @@ trait DirectionsViewModelProperties
   var routeSymbol: js.UndefOr[SimpleLineSymbolProperties] = js.undefined
   
   /**
-    * The selected travel mode.
+    * The travel mode that will be used by [getDirections()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#getDirections) when requesting the route and directions.
     *
     * @default null
     *

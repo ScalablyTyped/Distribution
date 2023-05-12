@@ -190,6 +190,64 @@ object mlmappings {
     *
     * @ignore
     *
+    * In version 9.22.0: introduced
+    */
+  @JSImport("mendixmodelsdk", "mlmappings.MLModelMetadata")
+  @js.native
+  open class MLModelMetadata protected ()
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.mlmappings.MLModelMetadata {
+    def this(
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
+      structureTypeName: String,
+      id: String,
+      isPartial: Boolean,
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
+    ) = this()
+  }
+  object MLModelMetadata {
+    
+    @JSImport("mendixmodelsdk", "mlmappings.MLModelMetadata")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Creates and returns a new MLModelMetadata instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
+    /* static member */
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenMlmappingsMod.mlmappings.MLModelMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMlmappingsMod.mlmappings.MLModelMetadata]
+    
+    /**
+      * Creates and returns a new MLModelMetadata instance in the SDK and on the server.
+      * The new MLModelMetadata will be automatically stored in the 'mlModelMetadata' property
+      * of the parent MLMappingDocument element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.22.0 and higher
+      */
+    /* static member */
+    inline def createIn(container: typings.mendixmodelsdk.srcGenMlmappingsMod.mlmappings.MLMappingDocument): typings.mendixmodelsdk.srcGenMlmappingsMod.mlmappings.MLModelMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMlmappingsMod.mlmappings.MLModelMetadata]
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "mlmappings.MLModelMetadata.structureTypeName")
+    @js.native
+    def structureTypeName: String = js.native
+    inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "mlmappings.MLModelMetadata.versionInfo")
+    @js.native
+    def versionInfo: typings.mendixmodelsdk.srcGenMlmappingsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenMlmappingsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  }
+  
+  /**
+    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+    *
+    * @ignore
+    *
     * In version 9.17.0: introduced
     */
   @JSImport("mendixmodelsdk", "mlmappings.TensorDimension")
@@ -225,10 +283,21 @@ object mlmappings {
       * of the parent TensorMappingElement element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  9.17.0 and higher
+      *  9.17.0 to 9.20.0
       */
     /* static member */
     inline def createInTensorMappingElementUnderAttributeShape(container: typings.mendixmodelsdk.srcGenMlmappingsMod.mlmappings.TensorMappingElement): typings.mendixmodelsdk.srcGenMlmappingsMod.mlmappings.TensorDimension = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTensorMappingElementUnderAttributeShape")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMlmappingsMod.mlmappings.TensorDimension]
+    
+    /**
+      * Creates and returns a new TensorDimension instance in the SDK and on the server.
+      * The new TensorDimension will be automatically stored in the 'staticTensorShape' property
+      * of the parent TensorMappingElement element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.21.0 and higher
+      */
+    /* static member */
+    inline def createInTensorMappingElementUnderStaticTensorShape(container: typings.mendixmodelsdk.srcGenMlmappingsMod.mlmappings.TensorMappingElement): typings.mendixmodelsdk.srcGenMlmappingsMod.mlmappings.TensorDimension = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTensorMappingElementUnderStaticTensorShape")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMlmappingsMod.mlmappings.TensorDimension]
     
     /**
       * Creates and returns a new TensorDimension instance in the SDK and on the server.

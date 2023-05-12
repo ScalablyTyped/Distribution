@@ -9,7 +9,7 @@ trait ConnectorProfileConfig extends StObject {
   /**
     *  The connector-specific credentials required by each connector. 
     */
-  var connectorProfileCredentials: ConnectorProfileCredentials
+  var connectorProfileCredentials: js.UndefOr[ConnectorProfileCredentials] = js.undefined
   
   /**
     *  The connector-specific properties of the profile configuration. 
@@ -18,11 +18,8 @@ trait ConnectorProfileConfig extends StObject {
 }
 object ConnectorProfileConfig {
   
-  inline def apply(
-    connectorProfileCredentials: ConnectorProfileCredentials,
-    connectorProfileProperties: ConnectorProfileProperties
-  ): ConnectorProfileConfig = {
-    val __obj = js.Dynamic.literal(connectorProfileCredentials = connectorProfileCredentials.asInstanceOf[js.Any], connectorProfileProperties = connectorProfileProperties.asInstanceOf[js.Any])
+  inline def apply(connectorProfileProperties: ConnectorProfileProperties): ConnectorProfileConfig = {
+    val __obj = js.Dynamic.literal(connectorProfileProperties = connectorProfileProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectorProfileConfig]
   }
   
@@ -30,6 +27,8 @@ object ConnectorProfileConfig {
   implicit open class MutableBuilder[Self <: ConnectorProfileConfig] (val x: Self) extends AnyVal {
     
     inline def setConnectorProfileCredentials(value: ConnectorProfileCredentials): Self = StObject.set(x, "connectorProfileCredentials", value.asInstanceOf[js.Any])
+    
+    inline def setConnectorProfileCredentialsUndefined: Self = StObject.set(x, "connectorProfileCredentials", js.undefined)
     
     inline def setConnectorProfileProperties(value: ConnectorProfileProperties): Self = StObject.set(x, "connectorProfileProperties", value.asInstanceOf[js.Any])
   }

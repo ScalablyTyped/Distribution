@@ -19,6 +19,13 @@ trait ILinkHandler extends StObject {
   def activate(event: MouseEvent, text: String, range: IBufferRange): Unit
   
   /**
+    * Whether to receive non-HTTP URLs from LinkProvider. When false, any usage of non-HTTP URLs
+    * will be ignored. Enabling this option without proper protection in `activate` function
+    * may cause security issues such as XSS.
+    */
+  var allowNonHttpProtocols: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Called when the mouse hovers the link. To use this to create a DOM-based hover tooltip,
     * create the hover element within `Terminal.element` and add the `xterm-hover` class to it,
     * that will cause mouse events to not fall through and activate other links.
@@ -51,6 +58,10 @@ object ILinkHandler {
   implicit open class MutableBuilder[Self <: ILinkHandler] (val x: Self) extends AnyVal {
     
     inline def setActivate(value: (MouseEvent, String, IBufferRange) => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction3(value))
+    
+    inline def setAllowNonHttpProtocols(value: Boolean): Self = StObject.set(x, "allowNonHttpProtocols", value.asInstanceOf[js.Any])
+    
+    inline def setAllowNonHttpProtocolsUndefined: Self = StObject.set(x, "allowNonHttpProtocols", js.undefined)
     
     inline def setHover(value: (/* event */ MouseEvent, /* text */ String, /* range */ IBufferRange) => Unit): Self = StObject.set(x, "hover", js.Any.fromFunction3(value))
     

@@ -10,7 +10,7 @@ open class DialogTitle protected () extends _MDLComponent[DialogTitleProps] {
   def this(props: DialogTitleProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: DialogTitleProps, context: Any) = this()
 }

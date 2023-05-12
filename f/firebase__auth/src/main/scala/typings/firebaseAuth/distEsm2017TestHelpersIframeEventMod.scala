@@ -1,6 +1,6 @@
 package typings.firebaseAuth
 
-import typings.firebaseAuth.anon.PartialAuthEventError
+import typings.firebaseAuth.anon.PartialAuthEventEventId
 import typings.firebaseAuth.distEsm2017SrcModelPopupRedirectMod.AuthEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,5 +17,5 @@ object distEsm2017TestHelpersIframeEventMod {
   val BASE_AUTH_EVENT: AuthEvent = js.native
   
   inline def authEvent(): AuthEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("authEvent")().asInstanceOf[AuthEvent]
-  inline def authEvent(event: PartialAuthEventError): AuthEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("authEvent")(event.asInstanceOf[js.Any]).asInstanceOf[AuthEvent]
+  inline def authEvent(event: PartialAuthEventEventId): AuthEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("authEvent")(event.asInstanceOf[js.Any]).asInstanceOf[AuthEvent]
 }

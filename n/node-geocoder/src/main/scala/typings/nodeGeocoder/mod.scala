@@ -1,15 +1,15 @@
 package typings.nodeGeocoder
 
+import typings.nodeFetch.mod.RequestInfo
+import typings.nodeFetch.mod.RequestInit
+import typings.nodeFetch.mod.Response
 import typings.nodeGeocoder.anon.Confidence
 import typings.nodeGeocoder.anon.Level1long
 import typings.nodeGeocoder.nodeGeocoderStrings.agol
 import typings.nodeGeocoder.nodeGeocoderStrings.google
 import typings.nodeGeocoder.nodeGeocoderStrings.here
-import typings.nodeGeocoder.nodeGeocoderStrings.http
-import typings.nodeGeocoder.nodeGeocoderStrings.https
 import typings.nodeGeocoder.nodeGeocoderStrings.opendatafrance
 import typings.nodeGeocoder.nodeGeocoderStrings.openstreetmap
-import typings.nodeGeocoder.nodeGeocoderStrings.request
 import typings.nodeGeocoder.nodeGeocoderStrings.smartyStreet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -74,11 +74,17 @@ object mod {
   
   trait BaseOptions extends StObject {
     
+    var fetch: js.UndefOr[
+        js.Function2[
+          /* url */ RequestInfo, 
+          /* init */ js.UndefOr[RequestInit], 
+          js.UndefOr[js.Promise[Response]]
+        ]
+      ] = js.undefined
+    
     var formatter: js.UndefOr[Any] = js.undefined
     
     var formatterPattern: js.UndefOr[String] = js.undefined
-    
-    var httpAdapter: js.UndefOr[https | http | request] = js.undefined
     
     var provider: String
     
@@ -94,6 +100,12 @@ object mod {
     @scala.inline
     implicit open class MutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
       
+      inline def setFetch(
+        value: (/* url */ RequestInfo, /* init */ js.UndefOr[RequestInit]) => js.UndefOr[js.Promise[Response]]
+      ): Self = StObject.set(x, "fetch", js.Any.fromFunction2(value))
+      
+      inline def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
+      
       inline def setFormatter(value: Any): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
       
       inline def setFormatterPattern(value: String): Self = StObject.set(x, "formatterPattern", value.asInstanceOf[js.Any])
@@ -101,10 +113,6 @@ object mod {
       inline def setFormatterPatternUndefined: Self = StObject.set(x, "formatterPattern", js.undefined)
       
       inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
-      
-      inline def setHttpAdapter(value: https | http | request): Self = StObject.set(x, "httpAdapter", value.asInstanceOf[js.Any])
-      
-      inline def setHttpAdapterUndefined: Self = StObject.set(x, "httpAdapter", js.undefined)
       
       inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
@@ -522,6 +530,7 @@ object mod {
     - typings.nodeGeocoder.nodeGeocoderStrings.yandex
     - typings.nodeGeocoder.nodeGeocoderStrings.teleport
     - typings.nodeGeocoder.nodeGeocoderStrings.pickpoint
+    - typings.nodeGeocoder.nodeGeocoderStrings.virtualearth
   */
   trait Providers extends StObject
   object Providers {
@@ -549,6 +558,8 @@ object mod {
     inline def teleport: typings.nodeGeocoder.nodeGeocoderStrings.teleport = "teleport".asInstanceOf[typings.nodeGeocoder.nodeGeocoderStrings.teleport]
     
     inline def tomtom: typings.nodeGeocoder.nodeGeocoderStrings.tomtom = "tomtom".asInstanceOf[typings.nodeGeocoder.nodeGeocoderStrings.tomtom]
+    
+    inline def virtualearth: typings.nodeGeocoder.nodeGeocoderStrings.virtualearth = "virtualearth".asInstanceOf[typings.nodeGeocoder.nodeGeocoderStrings.virtualearth]
     
     inline def yandex: typings.nodeGeocoder.nodeGeocoderStrings.yandex = "yandex".asInstanceOf[typings.nodeGeocoder.nodeGeocoderStrings.yandex]
   }

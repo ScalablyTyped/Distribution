@@ -3,6 +3,23 @@ package typings.std.global
 import typings.std.AddEventListenerOptions
 import typings.std.EventListenerOptions
 import typings.std.EventListenerOrEventListenerObject
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`10`
+import typings.std.stdInts.`11`
+import typings.std.stdInts.`12`
+import typings.std.stdInts.`13`
+import typings.std.stdInts.`14`
+import typings.std.stdInts.`15`
+import typings.std.stdInts.`16`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
+import typings.std.stdInts.`4`
+import typings.std.stdInts.`5`
+import typings.std.stdInts.`6`
+import typings.std.stdInts.`7`
+import typings.std.stdInts.`8`
+import typings.std.stdInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,10 +66,6 @@ open class SVGFEBlendElement ()
   /* standard dom */
   /* CompleteClass */
   var ariaColIndex: java.lang.String | Null = js.native
-  
-  /* standard dom */
-  /* CompleteClass */
-  var ariaColIndexText: java.lang.String | Null = js.native
   
   /* standard dom */
   /* CompleteClass */
@@ -148,10 +161,6 @@ open class SVGFEBlendElement ()
   
   /* standard dom */
   /* CompleteClass */
-  var ariaRowIndexText: java.lang.String | Null = js.native
-  
-  /* standard dom */
-  /* CompleteClass */
   var ariaRowSpan: java.lang.String | Null = js.native
   
   /* standard dom */
@@ -244,85 +253,85 @@ object SVGFEBlendElement {
   /* standard dom */
   @JSGlobal("SVGFEBlendElement.SVG_FEBLEND_MODE_COLOR")
   @js.native
-  val SVG_FEBLEND_MODE_COLOR: Double = js.native
+  val SVG_FEBLEND_MODE_COLOR: `15` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFEBlendElement.SVG_FEBLEND_MODE_COLOR_BURN")
   @js.native
-  val SVG_FEBLEND_MODE_COLOR_BURN: Double = js.native
+  val SVG_FEBLEND_MODE_COLOR_BURN: `8` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFEBlendElement.SVG_FEBLEND_MODE_COLOR_DODGE")
   @js.native
-  val SVG_FEBLEND_MODE_COLOR_DODGE: Double = js.native
+  val SVG_FEBLEND_MODE_COLOR_DODGE: `7` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFEBlendElement.SVG_FEBLEND_MODE_DARKEN")
   @js.native
-  val SVG_FEBLEND_MODE_DARKEN: Double = js.native
+  val SVG_FEBLEND_MODE_DARKEN: `4` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFEBlendElement.SVG_FEBLEND_MODE_DIFFERENCE")
   @js.native
-  val SVG_FEBLEND_MODE_DIFFERENCE: Double = js.native
+  val SVG_FEBLEND_MODE_DIFFERENCE: `11` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFEBlendElement.SVG_FEBLEND_MODE_EXCLUSION")
   @js.native
-  val SVG_FEBLEND_MODE_EXCLUSION: Double = js.native
+  val SVG_FEBLEND_MODE_EXCLUSION: `12` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFEBlendElement.SVG_FEBLEND_MODE_HARD_LIGHT")
   @js.native
-  val SVG_FEBLEND_MODE_HARD_LIGHT: Double = js.native
+  val SVG_FEBLEND_MODE_HARD_LIGHT: `9` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFEBlendElement.SVG_FEBLEND_MODE_HUE")
   @js.native
-  val SVG_FEBLEND_MODE_HUE: Double = js.native
+  val SVG_FEBLEND_MODE_HUE: `13` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFEBlendElement.SVG_FEBLEND_MODE_LIGHTEN")
   @js.native
-  val SVG_FEBLEND_MODE_LIGHTEN: Double = js.native
+  val SVG_FEBLEND_MODE_LIGHTEN: `5` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFEBlendElement.SVG_FEBLEND_MODE_LUMINOSITY")
   @js.native
-  val SVG_FEBLEND_MODE_LUMINOSITY: Double = js.native
+  val SVG_FEBLEND_MODE_LUMINOSITY: `16` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFEBlendElement.SVG_FEBLEND_MODE_MULTIPLY")
   @js.native
-  val SVG_FEBLEND_MODE_MULTIPLY: Double = js.native
+  val SVG_FEBLEND_MODE_MULTIPLY: `2` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFEBlendElement.SVG_FEBLEND_MODE_NORMAL")
   @js.native
-  val SVG_FEBLEND_MODE_NORMAL: Double = js.native
+  val SVG_FEBLEND_MODE_NORMAL: `1` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFEBlendElement.SVG_FEBLEND_MODE_OVERLAY")
   @js.native
-  val SVG_FEBLEND_MODE_OVERLAY: Double = js.native
+  val SVG_FEBLEND_MODE_OVERLAY: `6` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFEBlendElement.SVG_FEBLEND_MODE_SATURATION")
   @js.native
-  val SVG_FEBLEND_MODE_SATURATION: Double = js.native
+  val SVG_FEBLEND_MODE_SATURATION: `14` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFEBlendElement.SVG_FEBLEND_MODE_SCREEN")
   @js.native
-  val SVG_FEBLEND_MODE_SCREEN: Double = js.native
+  val SVG_FEBLEND_MODE_SCREEN: `3` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFEBlendElement.SVG_FEBLEND_MODE_SOFT_LIGHT")
   @js.native
-  val SVG_FEBLEND_MODE_SOFT_LIGHT: Double = js.native
+  val SVG_FEBLEND_MODE_SOFT_LIGHT: `10` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFEBlendElement.SVG_FEBLEND_MODE_UNKNOWN")
   @js.native
-  val SVG_FEBLEND_MODE_UNKNOWN: Double = js.native
+  val SVG_FEBLEND_MODE_UNKNOWN: `0` = js.native
 }

@@ -29,7 +29,7 @@ trait CreateForCommitComment extends StObject {
     * Create a reaction to a [commit comment](https://docs.github.com/rest/reference/repos#comments). A response with an HTTP `200` status means that you already added the reaction type to this commit comment.
     */
   @JSName("createForCommitComment")
-  var createForCommitComment_Original: `509`
+  var createForCommitComment_Original: `526`
   
   /**
     * Create a reaction to an [issue](https://docs.github.com/rest/reference/issues/). A response with an HTTP `200` status means that you already added the reaction type to this issue.
@@ -64,13 +64,13 @@ trait CreateForCommitComment extends StObject {
     * Create a reaction to an [issue comment](https://docs.github.com/rest/reference/issues#comments). A response with an HTTP `200` status means that you already added the reaction type to this issue comment.
     */
   @JSName("createForIssueComment")
-  var createForIssueComment_Original: `511`
+  var createForIssueComment_Original: `528`
   
   /**
     * Create a reaction to an [issue](https://docs.github.com/rest/reference/issues/). A response with an HTTP `200` status means that you already added the reaction type to this issue.
     */
   @JSName("createForIssue")
-  var createForIssue_Original: `510`
+  var createForIssue_Original: `527`
   
   /**
     * Create a reaction to a [pull request review comment](https://docs.github.com/rest/reference/pulls#comments). A response with an HTTP `200` status means that you already added the reaction type to this pull request review comment.
@@ -90,7 +90,7 @@ trait CreateForCommitComment extends StObject {
     * Create a reaction to a [pull request review comment](https://docs.github.com/rest/reference/pulls#comments). A response with an HTTP `200` status means that you already added the reaction type to this pull request review comment.
     */
   @JSName("createForPullRequestReviewComment")
-  var createForPullRequestReviewComment_Original: `512`
+  var createForPullRequestReviewComment_Original: `529`
   
   /**
     * Create a reaction to a [release](https://docs.github.com/rest/reference/repos#releases). A response with a `Status: 200 OK` means that you already added the reaction type to this release.
@@ -110,7 +110,7 @@ trait CreateForCommitComment extends StObject {
     * Create a reaction to a [release](https://docs.github.com/rest/reference/repos#releases). A response with a `Status: 200 OK` means that you already added the reaction type to this release.
     */
   @JSName("createForRelease")
-  var createForRelease_Original: `513`
+  var createForRelease_Original: `530`
   
   /**
     * Create a reaction to a [team discussion comment](https://docs.github.com/rest/reference/teams#discussion-comments). OAuth access tokens require the `write:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/). A response with an HTTP `200` status means that you already added the reaction type to this team discussion comment.
@@ -134,7 +134,7 @@ trait CreateForCommitComment extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `POST /organizations/:org_id/team/:team_id/discussions/:discussion_number/comments/:comment_number/reactions`.
     */
   @JSName("createForTeamDiscussionCommentInOrg")
-  var createForTeamDiscussionCommentInOrg_Original: `514`
+  var createForTeamDiscussionCommentInOrg_Original: `531`
   
   /**
     * Create a reaction to a [team discussion](https://docs.github.com/rest/reference/teams#discussions). OAuth access tokens require the `write:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/). A response with an HTTP `200` status means that you already added the reaction type to this team discussion.
@@ -158,7 +158,7 @@ trait CreateForCommitComment extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `POST /organizations/:org_id/team/:team_id/discussions/:discussion_number/reactions`.
     */
   @JSName("createForTeamDiscussionInOrg")
-  var createForTeamDiscussionInOrg_Original: `515`
+  var createForTeamDiscussionInOrg_Original: `532`
   
   /**
     * **Note:** You can also specify a repository by `repository_id` using the route `DELETE /repositories/:repository_id/comments/:comment_id/reactions/:reaction_id`.
@@ -182,7 +182,7 @@ trait CreateForCommitComment extends StObject {
     * Delete a reaction to a [commit comment](https://docs.github.com/rest/reference/repos#comments).
     */
   @JSName("deleteForCommitComment")
-  var deleteForCommitComment_Original: `516`
+  var deleteForCommitComment_Original: `533`
   
   /**
     * **Note:** You can also specify a repository by `repository_id` using the route `DELETE /repositories/:repository_id/issues/:issue_number/reactions/:reaction_id`.
@@ -223,7 +223,7 @@ trait CreateForCommitComment extends StObject {
     * Delete a reaction to an [issue comment](https://docs.github.com/rest/reference/issues#comments).
     */
   @JSName("deleteForIssueComment")
-  var deleteForIssueComment_Original: `518`
+  var deleteForIssueComment_Original: `535`
   
   /**
     * **Note:** You can also specify a repository by `repository_id` using the route `DELETE /repositories/:repository_id/issues/:issue_number/reactions/:reaction_id`.
@@ -231,7 +231,7 @@ trait CreateForCommitComment extends StObject {
     * Delete a reaction to an [issue](https://docs.github.com/rest/reference/issues/).
     */
   @JSName("deleteForIssue")
-  var deleteForIssue_Original: `517`
+  var deleteForIssue_Original: `534`
   
   /**
     * **Note:** You can also specify a repository by `repository_id` using the route `DELETE /repositories/:repository_id/pulls/comments/:comment_id/reactions/:reaction_id.`
@@ -255,7 +255,7 @@ trait CreateForCommitComment extends StObject {
     * Delete a reaction to a [pull request review comment](https://docs.github.com/rest/reference/pulls#review-comments).
     */
   @JSName("deleteForPullRequestComment")
-  var deleteForPullRequestComment_Original: `519`
+  var deleteForPullRequestComment_Original: `536`
   
   /**
     * **Note:** You can also specify a repository by `repository_id` using the route `DELETE delete /repositories/:repository_id/releases/:release_id/reactions/:reaction_id`.
@@ -279,7 +279,7 @@ trait CreateForCommitComment extends StObject {
     * Delete a reaction to a [release](https://docs.github.com/rest/reference/repos#releases).
     */
   @JSName("deleteForRelease")
-  var deleteForRelease_Original: `520`
+  var deleteForRelease_Original: `537`
   
   /**
     * **Note:** You can also specify a team or organization with `team_id` and `org_id` using the route `DELETE /organizations/:org_id/team/:team_id/discussions/:discussion_number/reactions/:reaction_id`.
@@ -320,7 +320,7 @@ trait CreateForCommitComment extends StObject {
     * Delete a reaction to a [team discussion comment](https://docs.github.com/rest/reference/teams#discussion-comments). OAuth access tokens require the `write:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     */
   @JSName("deleteForTeamDiscussionComment")
-  var deleteForTeamDiscussionComment_Original: `522`
+  var deleteForTeamDiscussionComment_Original: `539`
   
   /**
     * **Note:** You can also specify a team or organization with `team_id` and `org_id` using the route `DELETE /organizations/:org_id/team/:team_id/discussions/:discussion_number/reactions/:reaction_id`.
@@ -328,7 +328,7 @@ trait CreateForCommitComment extends StObject {
     * Delete a reaction to a [team discussion](https://docs.github.com/rest/reference/teams#discussions). OAuth access tokens require the `write:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     */
   @JSName("deleteForTeamDiscussion")
-  var deleteForTeamDiscussion_Original: `521`
+  var deleteForTeamDiscussion_Original: `538`
   
   /**
     * List the reactions to a [commit comment](https://docs.github.com/rest/reference/repos#comments).
@@ -348,7 +348,7 @@ trait CreateForCommitComment extends StObject {
     * List the reactions to a [commit comment](https://docs.github.com/rest/reference/repos#comments).
     */
   @JSName("listForCommitComment")
-  var listForCommitComment_Original: `523`
+  var listForCommitComment_Original: `540`
   
   /**
     * List the reactions to an [issue](https://docs.github.com/rest/reference/issues).
@@ -383,13 +383,13 @@ trait CreateForCommitComment extends StObject {
     * List the reactions to an [issue comment](https://docs.github.com/rest/reference/issues#comments).
     */
   @JSName("listForIssueComment")
-  var listForIssueComment_Original: `525`
+  var listForIssueComment_Original: `542`
   
   /**
     * List the reactions to an [issue](https://docs.github.com/rest/reference/issues).
     */
   @JSName("listForIssue")
-  var listForIssue_Original: `524`
+  var listForIssue_Original: `541`
   
   /**
     * List the reactions to a [pull request review comment](https://docs.github.com/rest/reference/pulls#review-comments).
@@ -409,7 +409,7 @@ trait CreateForCommitComment extends StObject {
     * List the reactions to a [pull request review comment](https://docs.github.com/rest/reference/pulls#review-comments).
     */
   @JSName("listForPullRequestReviewComment")
-  var listForPullRequestReviewComment_Original: `526`
+  var listForPullRequestReviewComment_Original: `543`
   
   /**
     * List the reactions to a [release](https://docs.github.com/rest/reference/repos#releases).
@@ -429,7 +429,7 @@ trait CreateForCommitComment extends StObject {
     * List the reactions to a [release](https://docs.github.com/rest/reference/repos#releases).
     */
   @JSName("listForRelease")
-  var listForRelease_Original: `527`
+  var listForRelease_Original: `544`
   
   /**
     * List the reactions to a [team discussion comment](https://docs.github.com/rest/reference/teams#discussion-comments/). OAuth access tokens require the `read:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
@@ -453,7 +453,7 @@ trait CreateForCommitComment extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/:org_id/team/:team_id/discussions/:discussion_number/comments/:comment_number/reactions`.
     */
   @JSName("listForTeamDiscussionCommentInOrg")
-  var listForTeamDiscussionCommentInOrg_Original: `528`
+  var listForTeamDiscussionCommentInOrg_Original: `545`
   
   /**
     * List the reactions to a [team discussion](https://docs.github.com/rest/reference/teams#discussions). OAuth access tokens require the `read:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
@@ -477,32 +477,32 @@ trait CreateForCommitComment extends StObject {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/:org_id/team/:team_id/discussions/:discussion_number/reactions`.
     */
   @JSName("listForTeamDiscussionInOrg")
-  var listForTeamDiscussionInOrg_Original: `529`
+  var listForTeamDiscussionInOrg_Original: `546`
 }
 object CreateForCommitComment {
   
   inline def apply(
-    createForCommitComment: `509`,
-    createForIssue: `510`,
-    createForIssueComment: `511`,
-    createForPullRequestReviewComment: `512`,
-    createForRelease: `513`,
-    createForTeamDiscussionCommentInOrg: `514`,
-    createForTeamDiscussionInOrg: `515`,
-    deleteForCommitComment: `516`,
-    deleteForIssue: `517`,
-    deleteForIssueComment: `518`,
-    deleteForPullRequestComment: `519`,
-    deleteForRelease: `520`,
-    deleteForTeamDiscussion: `521`,
-    deleteForTeamDiscussionComment: `522`,
-    listForCommitComment: `523`,
-    listForIssue: `524`,
-    listForIssueComment: `525`,
-    listForPullRequestReviewComment: `526`,
-    listForRelease: `527`,
-    listForTeamDiscussionCommentInOrg: `528`,
-    listForTeamDiscussionInOrg: `529`
+    createForCommitComment: `526`,
+    createForIssue: `527`,
+    createForIssueComment: `528`,
+    createForPullRequestReviewComment: `529`,
+    createForRelease: `530`,
+    createForTeamDiscussionCommentInOrg: `531`,
+    createForTeamDiscussionInOrg: `532`,
+    deleteForCommitComment: `533`,
+    deleteForIssue: `534`,
+    deleteForIssueComment: `535`,
+    deleteForPullRequestComment: `536`,
+    deleteForRelease: `537`,
+    deleteForTeamDiscussion: `538`,
+    deleteForTeamDiscussionComment: `539`,
+    listForCommitComment: `540`,
+    listForIssue: `541`,
+    listForIssueComment: `542`,
+    listForPullRequestReviewComment: `543`,
+    listForRelease: `544`,
+    listForTeamDiscussionCommentInOrg: `545`,
+    listForTeamDiscussionInOrg: `546`
   ): CreateForCommitComment = {
     val __obj = js.Dynamic.literal(createForCommitComment = createForCommitComment.asInstanceOf[js.Any], createForIssue = createForIssue.asInstanceOf[js.Any], createForIssueComment = createForIssueComment.asInstanceOf[js.Any], createForPullRequestReviewComment = createForPullRequestReviewComment.asInstanceOf[js.Any], createForRelease = createForRelease.asInstanceOf[js.Any], createForTeamDiscussionCommentInOrg = createForTeamDiscussionCommentInOrg.asInstanceOf[js.Any], createForTeamDiscussionInOrg = createForTeamDiscussionInOrg.asInstanceOf[js.Any], deleteForCommitComment = deleteForCommitComment.asInstanceOf[js.Any], deleteForIssue = deleteForIssue.asInstanceOf[js.Any], deleteForIssueComment = deleteForIssueComment.asInstanceOf[js.Any], deleteForPullRequestComment = deleteForPullRequestComment.asInstanceOf[js.Any], deleteForRelease = deleteForRelease.asInstanceOf[js.Any], deleteForTeamDiscussion = deleteForTeamDiscussion.asInstanceOf[js.Any], deleteForTeamDiscussionComment = deleteForTeamDiscussionComment.asInstanceOf[js.Any], listForCommitComment = listForCommitComment.asInstanceOf[js.Any], listForIssue = listForIssue.asInstanceOf[js.Any], listForIssueComment = listForIssueComment.asInstanceOf[js.Any], listForPullRequestReviewComment = listForPullRequestReviewComment.asInstanceOf[js.Any], listForRelease = listForRelease.asInstanceOf[js.Any], listForTeamDiscussionCommentInOrg = listForTeamDiscussionCommentInOrg.asInstanceOf[js.Any], listForTeamDiscussionInOrg = listForTeamDiscussionInOrg.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateForCommitComment]
@@ -511,46 +511,46 @@ object CreateForCommitComment {
   @scala.inline
   implicit open class MutableBuilder[Self <: CreateForCommitComment] (val x: Self) extends AnyVal {
     
-    inline def setCreateForCommitComment(value: `509`): Self = StObject.set(x, "createForCommitComment", value.asInstanceOf[js.Any])
+    inline def setCreateForCommitComment(value: `526`): Self = StObject.set(x, "createForCommitComment", value.asInstanceOf[js.Any])
     
-    inline def setCreateForIssue(value: `510`): Self = StObject.set(x, "createForIssue", value.asInstanceOf[js.Any])
+    inline def setCreateForIssue(value: `527`): Self = StObject.set(x, "createForIssue", value.asInstanceOf[js.Any])
     
-    inline def setCreateForIssueComment(value: `511`): Self = StObject.set(x, "createForIssueComment", value.asInstanceOf[js.Any])
+    inline def setCreateForIssueComment(value: `528`): Self = StObject.set(x, "createForIssueComment", value.asInstanceOf[js.Any])
     
-    inline def setCreateForPullRequestReviewComment(value: `512`): Self = StObject.set(x, "createForPullRequestReviewComment", value.asInstanceOf[js.Any])
+    inline def setCreateForPullRequestReviewComment(value: `529`): Self = StObject.set(x, "createForPullRequestReviewComment", value.asInstanceOf[js.Any])
     
-    inline def setCreateForRelease(value: `513`): Self = StObject.set(x, "createForRelease", value.asInstanceOf[js.Any])
+    inline def setCreateForRelease(value: `530`): Self = StObject.set(x, "createForRelease", value.asInstanceOf[js.Any])
     
-    inline def setCreateForTeamDiscussionCommentInOrg(value: `514`): Self = StObject.set(x, "createForTeamDiscussionCommentInOrg", value.asInstanceOf[js.Any])
+    inline def setCreateForTeamDiscussionCommentInOrg(value: `531`): Self = StObject.set(x, "createForTeamDiscussionCommentInOrg", value.asInstanceOf[js.Any])
     
-    inline def setCreateForTeamDiscussionInOrg(value: `515`): Self = StObject.set(x, "createForTeamDiscussionInOrg", value.asInstanceOf[js.Any])
+    inline def setCreateForTeamDiscussionInOrg(value: `532`): Self = StObject.set(x, "createForTeamDiscussionInOrg", value.asInstanceOf[js.Any])
     
-    inline def setDeleteForCommitComment(value: `516`): Self = StObject.set(x, "deleteForCommitComment", value.asInstanceOf[js.Any])
+    inline def setDeleteForCommitComment(value: `533`): Self = StObject.set(x, "deleteForCommitComment", value.asInstanceOf[js.Any])
     
-    inline def setDeleteForIssue(value: `517`): Self = StObject.set(x, "deleteForIssue", value.asInstanceOf[js.Any])
+    inline def setDeleteForIssue(value: `534`): Self = StObject.set(x, "deleteForIssue", value.asInstanceOf[js.Any])
     
-    inline def setDeleteForIssueComment(value: `518`): Self = StObject.set(x, "deleteForIssueComment", value.asInstanceOf[js.Any])
+    inline def setDeleteForIssueComment(value: `535`): Self = StObject.set(x, "deleteForIssueComment", value.asInstanceOf[js.Any])
     
-    inline def setDeleteForPullRequestComment(value: `519`): Self = StObject.set(x, "deleteForPullRequestComment", value.asInstanceOf[js.Any])
+    inline def setDeleteForPullRequestComment(value: `536`): Self = StObject.set(x, "deleteForPullRequestComment", value.asInstanceOf[js.Any])
     
-    inline def setDeleteForRelease(value: `520`): Self = StObject.set(x, "deleteForRelease", value.asInstanceOf[js.Any])
+    inline def setDeleteForRelease(value: `537`): Self = StObject.set(x, "deleteForRelease", value.asInstanceOf[js.Any])
     
-    inline def setDeleteForTeamDiscussion(value: `521`): Self = StObject.set(x, "deleteForTeamDiscussion", value.asInstanceOf[js.Any])
+    inline def setDeleteForTeamDiscussion(value: `538`): Self = StObject.set(x, "deleteForTeamDiscussion", value.asInstanceOf[js.Any])
     
-    inline def setDeleteForTeamDiscussionComment(value: `522`): Self = StObject.set(x, "deleteForTeamDiscussionComment", value.asInstanceOf[js.Any])
+    inline def setDeleteForTeamDiscussionComment(value: `539`): Self = StObject.set(x, "deleteForTeamDiscussionComment", value.asInstanceOf[js.Any])
     
-    inline def setListForCommitComment(value: `523`): Self = StObject.set(x, "listForCommitComment", value.asInstanceOf[js.Any])
+    inline def setListForCommitComment(value: `540`): Self = StObject.set(x, "listForCommitComment", value.asInstanceOf[js.Any])
     
-    inline def setListForIssue(value: `524`): Self = StObject.set(x, "listForIssue", value.asInstanceOf[js.Any])
+    inline def setListForIssue(value: `541`): Self = StObject.set(x, "listForIssue", value.asInstanceOf[js.Any])
     
-    inline def setListForIssueComment(value: `525`): Self = StObject.set(x, "listForIssueComment", value.asInstanceOf[js.Any])
+    inline def setListForIssueComment(value: `542`): Self = StObject.set(x, "listForIssueComment", value.asInstanceOf[js.Any])
     
-    inline def setListForPullRequestReviewComment(value: `526`): Self = StObject.set(x, "listForPullRequestReviewComment", value.asInstanceOf[js.Any])
+    inline def setListForPullRequestReviewComment(value: `543`): Self = StObject.set(x, "listForPullRequestReviewComment", value.asInstanceOf[js.Any])
     
-    inline def setListForRelease(value: `527`): Self = StObject.set(x, "listForRelease", value.asInstanceOf[js.Any])
+    inline def setListForRelease(value: `544`): Self = StObject.set(x, "listForRelease", value.asInstanceOf[js.Any])
     
-    inline def setListForTeamDiscussionCommentInOrg(value: `528`): Self = StObject.set(x, "listForTeamDiscussionCommentInOrg", value.asInstanceOf[js.Any])
+    inline def setListForTeamDiscussionCommentInOrg(value: `545`): Self = StObject.set(x, "listForTeamDiscussionCommentInOrg", value.asInstanceOf[js.Any])
     
-    inline def setListForTeamDiscussionInOrg(value: `529`): Self = StObject.set(x, "listForTeamDiscussionInOrg", value.asInstanceOf[js.Any])
+    inline def setListForTeamDiscussionInOrg(value: `546`): Self = StObject.set(x, "listForTeamDiscussionInOrg", value.asInstanceOf[js.Any])
   }
 }

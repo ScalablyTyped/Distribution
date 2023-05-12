@@ -1,7 +1,7 @@
 package typings.devextreme.mod.DevExpress.viz
 
 import typings.devextreme.anon.Blur
-import typings.devextreme.anon.CornerRadius
+import typings.devextreme.anon.Color
 import typings.devextreme.anon.Url
 import typings.devextreme.mod.DevExpress.common.charts.AnnotationType
 import typings.devextreme.mod.DevExpress.common.charts.TextOverflow
@@ -30,7 +30,7 @@ trait BaseWidgetAnnotationConfig extends StObject {
   /**
     * Configures the appearance of the annotation&apos;s border.
     */
-  var border: js.UndefOr[CornerRadius] = js.undefined
+  var border: js.UndefOr[Color] = js.undefined
   
   /**
     * Specifies the color that fills the annotation.
@@ -154,7 +154,7 @@ object BaseWidgetAnnotationConfig {
     
     inline def setArrowWidthUndefined: Self = StObject.set(x, "arrowWidth", js.undefined)
     
-    inline def setBorder(value: CornerRadius): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: Color): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     

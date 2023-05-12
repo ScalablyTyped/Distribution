@@ -8,7 +8,7 @@ trait Dash extends StObject {
   
   var color: js.UndefOr[String] = js.undefined
   
-  var dash: js.UndefOr[typings.plotlyJs.libTracesOhclMod.Dash] = js.undefined
+  var dash: js.UndefOr[typings.plotlyJs.libTracesOhlcMod.Dash] = js.undefined
   
   var width: js.UndefOr[Double] = js.undefined
 }
@@ -26,7 +26,7 @@ object Dash {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setDash(value: typings.plotlyJs.libTracesOhclMod.Dash): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
+    inline def setDash(value: typings.plotlyJs.libTracesOhlcMod.Dash): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
     
     inline def setDashUndefined: Self = StObject.set(x, "dash", js.undefined)
     

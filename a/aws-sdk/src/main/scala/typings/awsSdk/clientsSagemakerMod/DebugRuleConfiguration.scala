@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DebugRuleConfiguration extends StObject {
   
   /**
-    * The instance type to deploy a Debugger custom rule for debugging a training job.
+    * The instance type to deploy a custom rule for debugging a training job.
     */
   var InstanceType: js.UndefOr[ProcessingInstanceType] = js.undefined
   

@@ -9,7 +9,6 @@ import typings.babylonjs.gizmosGizmoMod.IGizmo
 import typings.babylonjs.gizmosScaleGizmoMod.ScaleGizmo
 import typings.babylonjs.materialsStandardMaterialMod.StandardMaterial
 import typings.babylonjs.mathsMathDotcolorMod.Color3
-import typings.babylonjs.mathsMathDotvectorMod.Matrix
 import typings.babylonjs.mathsMathDotvectorMod.Vector3
 import typings.babylonjs.meshesAbstractMeshMod.AbstractMesh
 import typings.babylonjs.meshesMeshMod.Mesh
@@ -26,7 +25,7 @@ object gizmosAxisScaleGizmoMod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.babylonjs.sceneMod.IDisposable because Already inherited
   - typings.babylonjs.gizmosGizmoMod.IGizmo because Already inherited
-  - typings.babylonjs.gizmosAxisScaleGizmoMod.IAxisScaleGizmo because var conflicts: _rootMesh, attachedMesh, attachedNode, customRotationQuaternion, gizmoLayer, isHovered, scaleRatio, updateGizmoPositionToMatchAttachedMesh, updateGizmoRotationToMatchAttachedMesh, updateScale. Inlined dragBehavior, snapDistance, onSnapObservable, uniformScaling, sensitivity, dragScale, isEnabled */ @JSImport("babylonjs/Gizmos/axisScaleGizmo", "AxisScaleGizmo")
+  - typings.babylonjs.gizmosAxisScaleGizmoMod.IAxisScaleGizmo because var conflicts: _rootMesh, attachedMesh, attachedNode, customRotationQuaternion, gizmoLayer, isHovered, scaleRatio, updateGizmoPositionToMatchAttachedMesh, updateGizmoRotationToMatchAttachedMesh, updateScale. Inlined dragBehavior, snapDistance, onSnapObservable, uniformScaling, sensitivity, dragScale, isEnabled, coloredMaterial, hoverMaterial, disableMaterial */ @JSImport("babylonjs/Gizmos/axisScaleGizmo", "AxisScaleGizmo")
   @js.native
   open class AxisScaleGizmo protected () extends Gizmo {
     /**
@@ -103,11 +102,19 @@ object gizmosAxisScaleGizmoMod {
     
     /* protected */ var _pointerObserver: Nullable[Observer[PointerInfo]] = js.native
     
-    /* protected */ var _tmpMatrix: Matrix = js.native
+    /* private */ var _tmpVector: Any = js.native
     
-    /* protected */ var _tmpMatrix2: Matrix = js.native
+    /** Default material used to render when gizmo is not disabled or hovered */
+    def coloredMaterial: StandardMaterial = js.native
+    /** Default material used to render when gizmo is not disabled or hovered */
+    @JSName("coloredMaterial")
+    var coloredMaterial_FAxisScaleGizmo: StandardMaterial = js.native
     
-    /* protected */ var _tmpVector: Vector3 = js.native
+    /** Material used to render when gizmo is disabled. typically grey.*/
+    def disableMaterial: StandardMaterial = js.native
+    /** Material used to render when gizmo is disabled. typically grey.*/
+    @JSName("disableMaterial")
+    var disableMaterial_FAxisScaleGizmo: StandardMaterial = js.native
     
     /**
       * Drag behavior responsible for the gizmos dragging interactions
@@ -118,6 +125,12 @@ object gizmosAxisScaleGizmoMod {
       * The magnitude of the drag strength (scaling factor)
       */
     var dragScale: Double = js.native
+    
+    /** Material used to render when gizmo is hovered with mouse*/
+    def hoverMaterial: StandardMaterial = js.native
+    /** Material used to render when gizmo is hovered with mouse*/
+    @JSName("hoverMaterial")
+    var hoverMaterial_FAxisScaleGizmo: StandardMaterial = js.native
     
     def isEnabled: Boolean = js.native
     /**
@@ -156,11 +169,20 @@ object gizmosAxisScaleGizmoMod {
     extends StObject
        with IGizmo {
     
+    /** Default material used to render when gizmo is not disabled or hovered */
+    var coloredMaterial: StandardMaterial
+    
+    /** Material used to render when gizmo is disabled. typically grey.*/
+    var disableMaterial: StandardMaterial
+    
     /** Drag behavior responsible for the gizmos dragging interactions */
     var dragBehavior: PointerDragBehavior
     
     /** The magnitude of the drag strength (scaling factor) */
     var dragScale: Double
+    
+    /** Material used to render when gizmo is hovered with mouse*/
+    var hoverMaterial: StandardMaterial
     
     /** If the gizmo is enabled */
     var isEnabled: Boolean
@@ -184,10 +206,13 @@ object gizmosAxisScaleGizmoMod {
     
     inline def apply(
       _rootMesh: Mesh,
+      coloredMaterial: StandardMaterial,
+      disableMaterial: StandardMaterial,
       dispose: () => Unit,
       dragBehavior: PointerDragBehavior,
       dragScale: Double,
       gizmoLayer: UtilityLayerRenderer,
+      hoverMaterial: StandardMaterial,
       isEnabled: Boolean,
       isHovered: Boolean,
       onSnapObservable: Observable[SnapDistance],
@@ -200,16 +225,22 @@ object gizmosAxisScaleGizmoMod {
       updateGizmoRotationToMatchAttachedMesh: Boolean,
       updateScale: Boolean
     ): IAxisScaleGizmo = {
-      val __obj = js.Dynamic.literal(_rootMesh = _rootMesh.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), dragBehavior = dragBehavior.asInstanceOf[js.Any], dragScale = dragScale.asInstanceOf[js.Any], gizmoLayer = gizmoLayer.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], isHovered = isHovered.asInstanceOf[js.Any], onSnapObservable = onSnapObservable.asInstanceOf[js.Any], scaleRatio = scaleRatio.asInstanceOf[js.Any], sensitivity = sensitivity.asInstanceOf[js.Any], setCustomMesh = js.Any.fromFunction1(setCustomMesh), snapDistance = snapDistance.asInstanceOf[js.Any], uniformScaling = uniformScaling.asInstanceOf[js.Any], updateGizmoPositionToMatchAttachedMesh = updateGizmoPositionToMatchAttachedMesh.asInstanceOf[js.Any], updateGizmoRotationToMatchAttachedMesh = updateGizmoRotationToMatchAttachedMesh.asInstanceOf[js.Any], updateScale = updateScale.asInstanceOf[js.Any], attachedMesh = null, attachedNode = null, customRotationQuaternion = null)
+      val __obj = js.Dynamic.literal(_rootMesh = _rootMesh.asInstanceOf[js.Any], coloredMaterial = coloredMaterial.asInstanceOf[js.Any], disableMaterial = disableMaterial.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), dragBehavior = dragBehavior.asInstanceOf[js.Any], dragScale = dragScale.asInstanceOf[js.Any], gizmoLayer = gizmoLayer.asInstanceOf[js.Any], hoverMaterial = hoverMaterial.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], isHovered = isHovered.asInstanceOf[js.Any], onSnapObservable = onSnapObservable.asInstanceOf[js.Any], scaleRatio = scaleRatio.asInstanceOf[js.Any], sensitivity = sensitivity.asInstanceOf[js.Any], setCustomMesh = js.Any.fromFunction1(setCustomMesh), snapDistance = snapDistance.asInstanceOf[js.Any], uniformScaling = uniformScaling.asInstanceOf[js.Any], updateGizmoPositionToMatchAttachedMesh = updateGizmoPositionToMatchAttachedMesh.asInstanceOf[js.Any], updateGizmoRotationToMatchAttachedMesh = updateGizmoRotationToMatchAttachedMesh.asInstanceOf[js.Any], updateScale = updateScale.asInstanceOf[js.Any], attachedMesh = null, attachedNode = null, customRotationQuaternion = null)
       __obj.asInstanceOf[IAxisScaleGizmo]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: IAxisScaleGizmo] (val x: Self) extends AnyVal {
       
+      inline def setColoredMaterial(value: StandardMaterial): Self = StObject.set(x, "coloredMaterial", value.asInstanceOf[js.Any])
+      
+      inline def setDisableMaterial(value: StandardMaterial): Self = StObject.set(x, "disableMaterial", value.asInstanceOf[js.Any])
+      
       inline def setDragBehavior(value: PointerDragBehavior): Self = StObject.set(x, "dragBehavior", value.asInstanceOf[js.Any])
       
       inline def setDragScale(value: Double): Self = StObject.set(x, "dragScale", value.asInstanceOf[js.Any])
+      
+      inline def setHoverMaterial(value: StandardMaterial): Self = StObject.set(x, "hoverMaterial", value.asInstanceOf[js.Any])
       
       inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
       

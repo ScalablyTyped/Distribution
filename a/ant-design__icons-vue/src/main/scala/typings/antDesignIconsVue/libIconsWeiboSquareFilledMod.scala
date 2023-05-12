@@ -16,7 +16,7 @@ object libIconsWeiboSquareFilledMod extends Shortcut {
   @js.native
   trait WeiboSquareFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_WeiboSquareFilledIconType: String = js.native

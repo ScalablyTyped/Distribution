@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetParametersQueryClientipRef extends StObject {
   
   /**
-    * Gets the default attributes for codespaces created by the user with the repository.
+    * Get default attributes for a codespace
+    * @description Gets the default attributes for codespaces created by the user with the repository.
     *
     * You must authenticate using an access token with the `codespace` scope to use this endpoint.
     *

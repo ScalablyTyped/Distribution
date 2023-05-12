@@ -401,5 +401,49 @@ object sapUiModelOdataOdatametamodelMod {
       * @returns a Promise
       */
     def loaded(): js.Promise[Any] = js.native
+    
+    /**
+      * @SINCE 1.88.0
+      *
+      * Requests the currency customizing based on the code list reference given in the entity container's `com.sap.vocabularies.CodeList.v1.CurrencyCodes`
+      * annotation. The corresponding HTTP request uses the HTTP headers obtained via {@link sap.ui.model.odata.v2.ODataModel#getHeaders}
+      * from this meta model's data model.
+      * See:
+      * 	{@link #requestUnitsOfMeasure}
+      *
+      * @returns A promise resolving with the currency customizing, which is a map from the currency key to an
+      * object with the following properties:
+      * 	`StandardCode`: The language-independent standard code (e.g. ISO) for the currency as referred to via
+      * the `com.sap.vocabularies.CodeList.v1.StandardCode` annotation on the currency's key, if present `Text`:
+      * The language-dependent text for the currency as referred to via the `com.sap.vocabularies.Common.v1.Text`
+      * annotation on the currency's key `UnitSpecificScale`: The decimals for the currency as referred to
+      * via the `com.sap.vocabularies.Common.v1.UnitSpecificScale` annotation on the currency's key; entries
+      * where this would be `null` are ignored, and an error is logged  It resolves with `null` if no `com.sap.vocabularies.CodeList.v1.CurrencyCodes`
+      * annotation is found. It is rejected if the code list URL is not "./$metadata", there is not exactly one
+      * code key, or if the customizing cannot be loaded.
+      */
+    def requestCurrencyCodes(): js.Promise[Any] = js.native
+    
+    /**
+      * @SINCE 1.88.0
+      *
+      * Requests the unit customizing based on the code list reference given in the entity container's `com.sap.vocabularies.CodeList.v1.UnitOfMeasure`
+      * annotation. The corresponding HTTP request uses the HTTP headers obtained via {@link sap.ui.model.odata.v2.ODataModel#getHeaders}
+      * from this meta model's data model.
+      * See:
+      * 	{@link #requestCurrencyCodes}
+      *
+      * @returns A promise resolving with the unit customizing, which is a map from the unit key to an object
+      * with the following properties:
+      * 	`StandardCode`: The language-independent standard code (e.g. ISO) for the unit as referred to via the
+      * `com.sap.vocabularies.CodeList.v1.StandardCode` annotation on the unit's key, if present `Text`:
+      * The language-dependent text for the unit as referred to via the `com.sap.vocabularies.Common.v1.Text`
+      * annotation on the unit's key `UnitSpecificScale`: The decimals for the unit as referred to via the
+      * `com.sap.vocabularies.Common.v1.UnitSpecificScale` annotation on the unit's key; entries where this would
+      * be `null` are ignored, and an error is logged  It resolves with `null` if no `com.sap.vocabularies.CodeList.v1.UnitOfMeasure`
+      * annotation is found. It is rejected if the code list URL is not "./$metadata", there is not exactly one
+      * code key, or if the customizing cannot be loaded.
+      */
+    def requestUnitsOfMeasure(): js.Promise[Any] = js.native
   }
 }

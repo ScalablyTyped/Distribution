@@ -28,7 +28,8 @@ object ɵEmptyOutletComponent {
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `true`
+    `true`, 
+    scala.Nothing
   ] = js.native
   inline def ɵcmp_=(
     x: ɵɵComponentDeclaration[
@@ -39,7 +40,8 @@ object ɵEmptyOutletComponent {
       js.Object, 
       scala.Nothing, 
       scala.Nothing, 
-      `true`
+      `true`, 
+      scala.Nothing
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275cmp")(x.asInstanceOf[js.Any])
   

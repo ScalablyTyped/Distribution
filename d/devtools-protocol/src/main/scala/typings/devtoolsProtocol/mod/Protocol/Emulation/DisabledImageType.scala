@@ -6,15 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Rewritten from type alias, can be one of: 
   - typings.devtoolsProtocol.devtoolsProtocolStrings.avif
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.jxl
   - typings.devtoolsProtocol.devtoolsProtocolStrings.webp
 */
 trait DisabledImageType extends StObject
 object DisabledImageType {
   
   inline def avif: typings.devtoolsProtocol.devtoolsProtocolStrings.avif = "avif".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.avif]
-  
-  inline def jxl: typings.devtoolsProtocol.devtoolsProtocolStrings.jxl = "jxl".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.jxl]
   
   inline def webp: typings.devtoolsProtocol.devtoolsProtocolStrings.webp = "webp".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.webp]
 }

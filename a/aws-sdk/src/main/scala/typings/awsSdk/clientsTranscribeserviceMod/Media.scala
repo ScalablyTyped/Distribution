@@ -12,7 +12,7 @@ trait Media extends StObject {
   var MediaFileUri: js.UndefOr[Uri] = js.undefined
   
   /**
-    * The Amazon S3 location of the media file you want to redact. For example:    s3://DOC-EXAMPLE-BUCKET/my-media-file.flac     s3://DOC-EXAMPLE-BUCKET/media-files/my-media-file.flac    Note that the Amazon S3 bucket that contains your input media must be located in the same Amazon Web Services Region where you're making your transcription request.   RedactedMediaFileUri is only supported for Call Analytics (StartCallAnalyticsJob) transcription requests. 
+    * The Amazon S3 location of the media file you want to redact. For example:    s3://DOC-EXAMPLE-BUCKET/my-media-file.flac     s3://DOC-EXAMPLE-BUCKET/media-files/my-media-file.flac    Note that the Amazon S3 bucket that contains your input media must be located in the same Amazon Web Services Region where you're making your transcription request.   RedactedMediaFileUri produces a redacted audio file in addition to a redacted transcript. It is only supported for Call Analytics (StartCallAnalyticsJob) transcription requests. 
     */
   var RedactedMediaFileUri: js.UndefOr[Uri] = js.undefined
 }

@@ -9,7 +9,7 @@ trait PushMaterial
   extends StObject
      with Material {
   
-  /* protected */ var _activeEffect: Effect = js.native
+  /* protected */ var _activeEffect: js.UndefOr[Effect] = js.native
   
   /* protected */ def _isReadyForSubMesh(subMesh: SubMesh): Boolean = js.native
   

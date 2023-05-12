@@ -1,7 +1,7 @@
 
 # Scala.js typings for mparticle__web-sdk
 
-Typings are for version 2.16
+Typings are for version 2.20
 
 ## Library description:
 mParticle core SDK for web applications

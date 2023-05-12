@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@tensorflow-models/face-detection" : "1.0.1"
+      "@tensorflow-models/face-detection" : "1.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@tensorflow-models/face-detection" : "1.0.1"
+      "@tensorflow-models/face-detection" : "1.0.2"
     }
   ],
   "compile-devDependencies" : [

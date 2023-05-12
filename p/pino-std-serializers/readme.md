@@ -1,7 +1,7 @@
 
 # Scala.js typings for pino-std-serializers
 
-Typings are for version 6.0.0
+Typings are for version 6.2.1
 
 ## Library description:
 A collection of standard object serializers for Pino

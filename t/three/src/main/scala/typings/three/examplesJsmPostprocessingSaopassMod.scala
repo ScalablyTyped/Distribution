@@ -1,6 +1,8 @@
 package typings.three
 
+import typings.three.examplesJsmPostprocessingPassMod.FullScreenQuad
 import typings.three.examplesJsmPostprocessingPassMod.Pass
+import typings.three.srcMathColorMod.ColorRepresentation
 import typings.three.srcThreeMod.Camera
 import typings.three.srcThreeMod.Color
 import typings.three.srcThreeMod.Material
@@ -11,7 +13,6 @@ import typings.three.srcThreeMod.ShaderMaterial
 import typings.three.srcThreeMod.Vector2
 import typings.three.srcThreeMod.WebGLRenderTarget
 import typings.three.srcThreeMod.WebGLRenderer
-import typings.three.srcUtilsMod.ColorRepresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -82,7 +83,7 @@ object examplesJsmPostprocessingSaopassMod {
     
     var depthRenderTarget: WebGLRenderTarget = js.native
     
-    var fsQuad: js.Object = js.native
+    var fsQuad: FullScreenQuad = js.native
     
     var hBlurMaterial: ShaderMaterial = js.native
     

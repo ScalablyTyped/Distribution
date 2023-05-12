@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "hast-util-whitespace" : "2.0.0"
+      "hast-util-whitespace" : "2.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "hast-util-whitespace" : "2.0.0"
+      "hast-util-whitespace" : "2.0.1"
     }
   ],
   "compile-devDependencies" : [

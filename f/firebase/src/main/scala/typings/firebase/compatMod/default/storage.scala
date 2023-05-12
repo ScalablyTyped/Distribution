@@ -40,6 +40,64 @@ object storage {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("firebase/compat", "default.storage.StorageErrorCode")
+  @js.native
+  object StorageErrorCode extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.firebase.compatMod.firebase.storage.StorageErrorCode & String] = js.native
+    
+    /* "app-deleted" */ val APP_DELETED: typings.firebase.compatMod.firebase.storage.StorageErrorCode.APP_DELETED & String = js.native
+    
+    /* "bucket-not-found" */ val BUCKET_NOT_FOUND: typings.firebase.compatMod.firebase.storage.StorageErrorCode.BUCKET_NOT_FOUND & String = js.native
+    
+    /* "canceled" */ val CANCELED: typings.firebase.compatMod.firebase.storage.StorageErrorCode.CANCELED & String = js.native
+    
+    /* "cannot-slice-blob" */ val CANNOT_SLICE_BLOB: typings.firebase.compatMod.firebase.storage.StorageErrorCode.CANNOT_SLICE_BLOB & String = js.native
+    
+    /* "internal-error" */ val INTERNAL_ERROR: typings.firebase.compatMod.firebase.storage.StorageErrorCode.INTERNAL_ERROR & String = js.native
+    
+    /* "invalid-argument" */ val INVALID_ARGUMENT: typings.firebase.compatMod.firebase.storage.StorageErrorCode.INVALID_ARGUMENT & String = js.native
+    
+    /* "invalid-argument-count" */ val INVALID_ARGUMENT_COUNT: typings.firebase.compatMod.firebase.storage.StorageErrorCode.INVALID_ARGUMENT_COUNT & String = js.native
+    
+    /* "invalid-checksum" */ val INVALID_CHECKSUM: typings.firebase.compatMod.firebase.storage.StorageErrorCode.INVALID_CHECKSUM & String = js.native
+    
+    /* "invalid-default-bucket" */ val INVALID_DEFAULT_BUCKET: typings.firebase.compatMod.firebase.storage.StorageErrorCode.INVALID_DEFAULT_BUCKET & String = js.native
+    
+    /* "invalid-event-name" */ val INVALID_EVENT_NAME: typings.firebase.compatMod.firebase.storage.StorageErrorCode.INVALID_EVENT_NAME & String = js.native
+    
+    /* "invalid-format" */ val INVALID_FORMAT: typings.firebase.compatMod.firebase.storage.StorageErrorCode.INVALID_FORMAT & String = js.native
+    
+    /* "invalid-root-operation" */ val INVALID_ROOT_OPERATION: typings.firebase.compatMod.firebase.storage.StorageErrorCode.INVALID_ROOT_OPERATION & String = js.native
+    
+    /* "invalid-url" */ val INVALID_URL: typings.firebase.compatMod.firebase.storage.StorageErrorCode.INVALID_URL & String = js.native
+    
+    /* "no-default-bucket" */ val NO_DEFAULT_BUCKET: typings.firebase.compatMod.firebase.storage.StorageErrorCode.NO_DEFAULT_BUCKET & String = js.native
+    
+    /* "no-download-url" */ val NO_DOWNLOAD_URL: typings.firebase.compatMod.firebase.storage.StorageErrorCode.NO_DOWNLOAD_URL & String = js.native
+    
+    /* "object-not-found" */ val OBJECT_NOT_FOUND: typings.firebase.compatMod.firebase.storage.StorageErrorCode.OBJECT_NOT_FOUND & String = js.native
+    
+    /* "project-not-found" */ val PROJECT_NOT_FOUND: typings.firebase.compatMod.firebase.storage.StorageErrorCode.PROJECT_NOT_FOUND & String = js.native
+    
+    /* "quota-exceeded" */ val QUOTA_EXCEEDED: typings.firebase.compatMod.firebase.storage.StorageErrorCode.QUOTA_EXCEEDED & String = js.native
+    
+    /* "retry-limit-exceeded" */ val RETRY_LIMIT_EXCEEDED: typings.firebase.compatMod.firebase.storage.StorageErrorCode.RETRY_LIMIT_EXCEEDED & String = js.native
+    
+    /* "server-file-wrong-size" */ val SERVER_FILE_WRONG_SIZE: typings.firebase.compatMod.firebase.storage.StorageErrorCode.SERVER_FILE_WRONG_SIZE & String = js.native
+    
+    /* "unauthenticated" */ val UNAUTHENTICATED: typings.firebase.compatMod.firebase.storage.StorageErrorCode.UNAUTHENTICATED & String = js.native
+    
+    /* "unauthorized" */ val UNAUTHORIZED: typings.firebase.compatMod.firebase.storage.StorageErrorCode.UNAUTHORIZED & String = js.native
+    
+    /* "unauthorized-app" */ val UNAUTHORIZED_APP: typings.firebase.compatMod.firebase.storage.StorageErrorCode.UNAUTHORIZED_APP & String = js.native
+    
+    /* "unknown" */ val UNKNOWN: typings.firebase.compatMod.firebase.storage.StorageErrorCode.UNKNOWN & String = js.native
+    
+    /* "unsupported-environment" */ val UNSUPPORTED_ENVIRONMENT: typings.firebase.compatMod.firebase.storage.StorageErrorCode.UNSUPPORTED_ENVIRONMENT & String = js.native
+  }
+  
   object StringFormat {
     
     @JSImport("firebase/compat", "default.storage.StringFormat")

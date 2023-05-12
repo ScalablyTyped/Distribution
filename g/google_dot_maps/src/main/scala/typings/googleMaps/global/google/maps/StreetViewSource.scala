@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Identifiers to limit Street View searches to selected sources. These values
-  * are specified as strings. For example, <code>'outdoor'</code>.
-  */
 @JSGlobal("google.maps.StreetViewSource")
 @js.native
 object StreetViewSource extends StObject {

@@ -12,10 +12,10 @@ import typings.meteor.anon.ArrayFilters
 import typings.meteor.anon.CaseSensitive
 import typings.meteor.anon.DefineMutationMethods
 import typings.meteor.anon.Fetch
-import typings.meteor.anon.Id
 import typings.meteor.anon.InsertedId
 import typings.meteor.anon.Multi
 import typings.meteor.anon.NonMutatingCallbacks
+import typings.meteor.anon.`1`
 import typings.meteor.meteorStrings._id
 import typings.meteor.meteorStrings.limit
 import typings.mongodb.mod.CreateIndexesOptions
@@ -73,7 +73,7 @@ object mongoMod {
       
       def dropCollectionAsync(): js.Promise[Unit] = js.native
       
-      def dropIndexAsync(indexName: String): Unit = js.native
+      def dropIndexAsync(indexName: String): js.Promise[Unit] = js.native
       
       /**
         * Find the documents in a collection that match the selector.
@@ -1269,7 +1269,7 @@ object mongoMod {
         /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
       ]
     
-    type OptionalId[TSchema] = (typings.meteor.mongoMod.UnionOmit[TSchema, _id]) & Id
+    type OptionalId[TSchema] = (typings.meteor.mongoMod.UnionOmit[TSchema, _id]) & `1`
     
     trait Options[T] extends StObject {
       

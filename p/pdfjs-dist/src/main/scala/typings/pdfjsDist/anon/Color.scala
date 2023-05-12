@@ -16,7 +16,7 @@ trait Color extends StObject {
   
   var paths: js.Array[Bezier]
   
-  var rect: js.Array[Double]
+  var rect: js.Array[Any]
   
   var rotation: Any
   
@@ -30,7 +30,7 @@ object Color {
     opacity: Any,
     pageIndex: Double,
     paths: js.Array[Bezier],
-    rect: js.Array[Double],
+    rect: js.Array[Any],
     rotation: Any,
     thickness: Any
   ): Color = {
@@ -55,9 +55,9 @@ object Color {
     
     inline def setPathsVarargs(value: Bezier*): Self = StObject.set(x, "paths", js.Array(value*))
     
-    inline def setRect(value: js.Array[Double]): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
+    inline def setRect(value: js.Array[Any]): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
     
-    inline def setRectVarargs(value: Double*): Self = StObject.set(x, "rect", js.Array(value*))
+    inline def setRectVarargs(value: Any*): Self = StObject.set(x, "rect", js.Array(value*))
     
     inline def setRotation(value: Any): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     

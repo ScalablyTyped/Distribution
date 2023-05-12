@@ -14,12 +14,17 @@ trait CreateDashboardRequest extends StObject {
   /**
     * The ID for the dashboard, also added to the IAM policy.
     */
-  var DashboardId: RestrictiveResourceId
+  var DashboardId: ShortRestrictiveResourceId
   
   /**
     * Options for publishing the dashboard when you create it:    AvailabilityStatus for AdHocFilteringOption - This status can be either ENABLED or DISABLED. When this is set to DISABLED, Amazon QuickSight disables the left filter pane on the published dashboard, which can be used for ad hoc (one-time) filtering. This option is ENABLED by default.     AvailabilityStatus for ExportToCSVOption - This status can be either ENABLED or DISABLED. The visual option to export data to .CSV format isn't enabled when this is set to DISABLED. This option is ENABLED by default.     VisibilityState for SheetControlsOption - This visibility state can be either COLLAPSED or EXPANDED. This option is COLLAPSED by default.   
     */
   var DashboardPublishOptions: js.UndefOr[typings.awsSdk.clientsQuicksightMod.DashboardPublishOptions] = js.undefined
+  
+  /**
+    * The definition of a dashboard. A definition is the data model of all features in a Dashboard, Template, or Analysis. Either a SourceEntity or a Definition must be provided in order for the request to be valid.
+    */
+  var Definition: js.UndefOr[DashboardVersionDefinition] = js.undefined
   
   /**
     * The display name of the dashboard.
@@ -37,9 +42,9 @@ trait CreateDashboardRequest extends StObject {
   var Permissions: js.UndefOr[ResourcePermissionList] = js.undefined
   
   /**
-    * The entity that you are using as a source when you create the dashboard. In SourceEntity, you specify the type of object you're using as source. You can only create a dashboard from a template, so you use a SourceTemplate entity. If you need to create a dashboard from an analysis, first convert the analysis to a template by using the  CreateTemplate  API operation. For SourceTemplate, specify the Amazon Resource Name (ARN) of the source template. The SourceTemplateARN can contain any Amazon Web Services account and any Amazon QuickSight-supported Amazon Web Services Region.  Use the DataSetReferences entity within SourceTemplate to list the replacement datasets for the placeholders listed in the original. The schema in each dataset must match its placeholder. 
+    * The entity that you are using as a source when you create the dashboard. In SourceEntity, you specify the type of object you're using as source. You can only create a dashboard from a template, so you use a SourceTemplate entity. If you need to create a dashboard from an analysis, first convert the analysis to a template by using the  CreateTemplate  API operation. For SourceTemplate, specify the Amazon Resource Name (ARN) of the source template. The SourceTemplateARN can contain any Amazon Web Services account and any Amazon QuickSight-supported Amazon Web Services Region.  Use the DataSetReferences entity within SourceTemplate to list the replacement datasets for the placeholders listed in the original. The schema in each dataset must match its placeholder.  Either a SourceEntity or a Definition must be provided in order for the request to be valid.
     */
-  var SourceEntity: DashboardSourceEntity
+  var SourceEntity: js.UndefOr[DashboardSourceEntity] = js.undefined
   
   /**
     * Contains a map of the key-value pairs for the resource tag or tags assigned to the dashboard.
@@ -58,13 +63,8 @@ trait CreateDashboardRequest extends StObject {
 }
 object CreateDashboardRequest {
   
-  inline def apply(
-    AwsAccountId: AwsAccountId,
-    DashboardId: RestrictiveResourceId,
-    Name: DashboardName,
-    SourceEntity: DashboardSourceEntity
-  ): CreateDashboardRequest = {
-    val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], DashboardId = DashboardId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], SourceEntity = SourceEntity.asInstanceOf[js.Any])
+  inline def apply(AwsAccountId: AwsAccountId, DashboardId: ShortRestrictiveResourceId, Name: DashboardName): CreateDashboardRequest = {
+    val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], DashboardId = DashboardId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDashboardRequest]
   }
   
@@ -73,11 +73,15 @@ object CreateDashboardRequest {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    inline def setDashboardId(value: RestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
+    inline def setDashboardId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
     
     inline def setDashboardPublishOptions(value: DashboardPublishOptions): Self = StObject.set(x, "DashboardPublishOptions", value.asInstanceOf[js.Any])
     
     inline def setDashboardPublishOptionsUndefined: Self = StObject.set(x, "DashboardPublishOptions", js.undefined)
+    
+    inline def setDefinition(value: DashboardVersionDefinition): Self = StObject.set(x, "Definition", value.asInstanceOf[js.Any])
+    
+    inline def setDefinitionUndefined: Self = StObject.set(x, "Definition", js.undefined)
     
     inline def setName(value: DashboardName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
@@ -92,6 +96,8 @@ object CreateDashboardRequest {
     inline def setPermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "Permissions", js.Array(value*))
     
     inline def setSourceEntity(value: DashboardSourceEntity): Self = StObject.set(x, "SourceEntity", value.asInstanceOf[js.Any])
+    
+    inline def setSourceEntityUndefined: Self = StObject.set(x, "SourceEntity", js.undefined)
     
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,16 @@ trait UserAgentMetadata extends StObject {
   
   var bitness: js.UndefOr[String] = js.undefined
   
+  /**
+    * Brands appearing in Sec-CH-UA.
+    */
   var brands: js.UndefOr[js.Array[UserAgentBrandVersion]] = js.undefined
   
   var fullVersion: js.UndefOr[String] = js.undefined
   
+  /**
+    * Brands appearing in Sec-CH-UA-Full-Version-List.
+    */
   var fullVersionList: js.UndefOr[js.Array[UserAgentBrandVersion]] = js.undefined
   
   var mobile: Boolean

@@ -21,7 +21,7 @@ object buildComponentsStderrContextMod extends Shortcut {
     /**
       * Stderr stream passed to `render()` in `options.stderr` or `process.stderr` by default.
       */
-    val stderr: js.UndefOr[WriteStream] = js.undefined
+    val stderr: WriteStream
     
     /**
       * Write any string to stderr, while preserving Ink's output.
@@ -32,8 +32,8 @@ object buildComponentsStderrContextMod extends Shortcut {
   }
   object Props {
     
-    inline def apply(write: String => Unit): Props = {
-      val __obj = js.Dynamic.literal(write = js.Any.fromFunction1(write))
+    inline def apply(stderr: WriteStream, write: String => Unit): Props = {
+      val __obj = js.Dynamic.literal(stderr = stderr.asInstanceOf[js.Any], write = js.Any.fromFunction1(write))
       __obj.asInstanceOf[Props]
     }
     
@@ -41,8 +41,6 @@ object buildComponentsStderrContextMod extends Shortcut {
     implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setStderr(value: WriteStream): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
-      
-      inline def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
       
       inline def setWrite(value: String => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }

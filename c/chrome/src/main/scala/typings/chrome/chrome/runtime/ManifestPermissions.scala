@@ -24,11 +24,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.chrome.chromeStrings.desktopCapture
   - typings.chrome.chromeStrings.documentScan
   - typings.chrome.chromeStrings.downloads
+  - typings.chrome.chromeStrings.downloadsDotshelf
+  - typings.chrome.chromeStrings.downloadsDotui
   - typings.chrome.chromeStrings.enterpriseDotdeviceAttributes
   - typings.chrome.chromeStrings.enterpriseDothardwarePlatform
   - typings.chrome.chromeStrings.enterpriseDotnetworkingAttributes
   - typings.chrome.chromeStrings.enterpriseDotplatformKeys
   - typings.chrome.chromeStrings.experimental
+  - typings.chrome.chromeStrings.favicon
   - typings.chrome.chromeStrings.fileBrowserHandler
   - typings.chrome.chromeStrings.fileSystemProvider
   - typings.chrome.chromeStrings.fontSettings
@@ -42,6 +45,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.chrome.chromeStrings.management
   - typings.chrome.chromeStrings.nativeMessaging
   - typings.chrome.chromeStrings.notifications
+  - typings.chrome.chromeStrings.offscreen
   - typings.chrome.chromeStrings.pageCapture
   - typings.chrome.chromeStrings.platformKeys
   - typings.chrome.chromeStrings.power
@@ -114,6 +118,10 @@ object ManifestPermissions {
   
   inline def downloads: typings.chrome.chromeStrings.downloads = "downloads".asInstanceOf[typings.chrome.chromeStrings.downloads]
   
+  inline def downloadsDotshelf: typings.chrome.chromeStrings.downloadsDotshelf = "downloads.shelf".asInstanceOf[typings.chrome.chromeStrings.downloadsDotshelf]
+  
+  inline def downloadsDotui: typings.chrome.chromeStrings.downloadsDotui = "downloads.ui".asInstanceOf[typings.chrome.chromeStrings.downloadsDotui]
+  
   inline def enterpriseDotdeviceAttributes: typings.chrome.chromeStrings.enterpriseDotdeviceAttributes = "enterprise.deviceAttributes".asInstanceOf[typings.chrome.chromeStrings.enterpriseDotdeviceAttributes]
   
   inline def enterpriseDothardwarePlatform: typings.chrome.chromeStrings.enterpriseDothardwarePlatform = "enterprise.hardwarePlatform".asInstanceOf[typings.chrome.chromeStrings.enterpriseDothardwarePlatform]
@@ -123,6 +131,8 @@ object ManifestPermissions {
   inline def enterpriseDotplatformKeys: typings.chrome.chromeStrings.enterpriseDotplatformKeys = "enterprise.platformKeys".asInstanceOf[typings.chrome.chromeStrings.enterpriseDotplatformKeys]
   
   inline def experimental: typings.chrome.chromeStrings.experimental = "experimental".asInstanceOf[typings.chrome.chromeStrings.experimental]
+  
+  inline def favicon: typings.chrome.chromeStrings.favicon = "favicon".asInstanceOf[typings.chrome.chromeStrings.favicon]
   
   inline def fileBrowserHandler: typings.chrome.chromeStrings.fileBrowserHandler = "fileBrowserHandler".asInstanceOf[typings.chrome.chromeStrings.fileBrowserHandler]
   
@@ -149,6 +159,8 @@ object ManifestPermissions {
   inline def nativeMessaging: typings.chrome.chromeStrings.nativeMessaging = "nativeMessaging".asInstanceOf[typings.chrome.chromeStrings.nativeMessaging]
   
   inline def notifications: typings.chrome.chromeStrings.notifications = "notifications".asInstanceOf[typings.chrome.chromeStrings.notifications]
+  
+  inline def offscreen: typings.chrome.chromeStrings.offscreen = "offscreen".asInstanceOf[typings.chrome.chromeStrings.offscreen]
   
   inline def pageCapture: typings.chrome.chromeStrings.pageCapture = "pageCapture".asInstanceOf[typings.chrome.chromeStrings.pageCapture]
   

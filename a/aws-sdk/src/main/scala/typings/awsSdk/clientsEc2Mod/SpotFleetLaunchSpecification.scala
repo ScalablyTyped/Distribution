@@ -72,7 +72,7 @@ trait SpotFleetLaunchSpecification extends StObject {
   var RamdiskId: js.UndefOr[String] = js.undefined
   
   /**
-    * One or more security groups. When requesting instances in a VPC, you must specify the IDs of the security groups. When requesting instances in EC2-Classic, you can specify the names or the IDs of the security groups.
+    * The security groups.
     */
   var SecurityGroups: js.UndefOr[GroupIdentifierList] = js.undefined
   
@@ -92,9 +92,9 @@ trait SpotFleetLaunchSpecification extends StObject {
   var TagSpecifications: js.UndefOr[SpotFleetTagSpecificationList] = js.undefined
   
   /**
-    * The Base64-encoded user data that instances use when starting up.
+    * The base64-encoded user data that instances use when starting up. User data is limited to 16 KB.
     */
-  var UserData: js.UndefOr[String] = js.undefined
+  var UserData: js.UndefOr[SensitiveUserData] = js.undefined
   
   /**
     * The number of units provided by the specified instance type. These are the same units that you chose to set the target capacity in terms of instances, or a performance characteristic such as vCPUs, memory, or I/O. If the target capacity divided by this value is not a whole number, Amazon EC2 rounds the number of instances to the next whole number. If this value is not specified, the default is 1.
@@ -187,7 +187,7 @@ object SpotFleetLaunchSpecification {
     
     inline def setTagSpecificationsVarargs(value: SpotFleetTagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value*))
     
-    inline def setUserData(value: String): Self = StObject.set(x, "UserData", value.asInstanceOf[js.Any])
+    inline def setUserData(value: SensitiveUserData): Self = StObject.set(x, "UserData", value.asInstanceOf[js.Any])
     
     inline def setUserDataUndefined: Self = StObject.set(x, "UserData", js.undefined)
     

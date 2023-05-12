@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@libp2p/prometheus-metrics" : "1.1.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@libp2p/prometheus-metrics" : "1.1.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

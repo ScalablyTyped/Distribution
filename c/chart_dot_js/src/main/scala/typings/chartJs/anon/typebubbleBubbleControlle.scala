@@ -5,25 +5,25 @@ import typings.chartJs.chartJsBooleans.`false`
 import typings.chartJs.chartJsStrings.bubble
 import typings.chartJs.chartJsStrings.x
 import typings.chartJs.chartJsStrings.y
-import typings.chartJs.mod.ScriptableAndArray
-import typings.chartJs.mod.ScriptableContext
-import typings.chartJs.typesBasicMod.AnyObject
-import typings.chartJs.typesGeometricMod.ChartArea
+import typings.chartJs.distTypesBasicMod.AnyObject
+import typings.chartJs.distTypesGeometricMod.ChartArea
+import typings.chartJs.distTypesIndexMod.ScriptableAndArray
+import typings.chartJs.distTypesIndexMod.ScriptableContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  type :'bubble'} & chart.js.chart.js.BubbleControllerDatasetOptions */
+/* Inlined {  type :'bubble'} & chart.js.chart.js/dist/types/index.BubbleControllerDatasetOptions */
 trait typebubbleBubbleControlle extends StObject {
   
-  var backgroundColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bubble]]
+  var backgroundColor: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[bubble]]
   
-  var borderColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bubble]]
+  var borderColor: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[bubble]]
   
   var borderWidth: ScriptableAndArray[Double, ScriptableContext[bubble]]
   
   /**
-    * How to clip relative to chartArea. Positive value allows overflow, negative value clips that many pixels inside chartArea. 0 = clip at chartArea. Clipping can also be configured per side: clip: {left: 5, top: false, right: -2, bottom: 0}
+    * How to clip relative to chartArea. Positive value allows overflow, negative value clips that many pixels inside chartArea. 0 = clip at chartArea. Clipping can also be configured per side: `clip: {left: 5, top: false, right: -2, bottom: 0}`
     */
   var clip: Double | ChartArea | `false`
   
@@ -37,9 +37,9 @@ trait typebubbleBubbleControlle extends StObject {
   
   var hitRadius: ScriptableAndArray[Double, ScriptableContext[bubble]]
   
-  var hoverBackgroundColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bubble]]
+  var hoverBackgroundColor: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[bubble]]
   
-  var hoverBorderColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bubble]]
+  var hoverBorderColor: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[bubble]]
   
   var hoverBorderWidth: ScriptableAndArray[Double, ScriptableContext[bubble]]
   
@@ -71,7 +71,7 @@ trait typebubbleBubbleControlle extends StObject {
     */
   var parsing: StringDictionary[String] | `false`
   
-  var pointStyle: ScriptableAndArray[typings.chartJs.mod.PointStyle, ScriptableContext[bubble]]
+  var pointStyle: ScriptableAndArray[typings.chartJs.distTypesIndexMod.PointStyle, ScriptableContext[bubble]]
   
   var radius: ScriptableAndArray[Double, ScriptableContext[bubble]]
   
@@ -83,19 +83,29 @@ trait typebubbleBubbleControlle extends StObject {
   var stack: String
   
   var `type`: bubble
+  
+  /**
+    * The ID of the x axis to plot this dataset on.
+    */
+  var xAxisID: String
+  
+  /**
+    * The ID of the y axis to plot this dataset on.
+    */
+  var yAxisID: String
 }
 object typebubbleBubbleControlle {
   
   inline def apply(
-    backgroundColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bubble]],
-    borderColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bubble]],
+    backgroundColor: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[bubble]],
+    borderColor: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[bubble]],
     borderWidth: ScriptableAndArray[Double, ScriptableContext[bubble]],
     clip: Double | ChartArea | `false`,
     drawActiveElementsOnTop: ScriptableAndArray[Boolean, ScriptableContext[bubble]],
     hidden: Boolean,
     hitRadius: ScriptableAndArray[Double, ScriptableContext[bubble]],
-    hoverBackgroundColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bubble]],
-    hoverBorderColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bubble]],
+    hoverBackgroundColor: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[bubble]],
+    hoverBorderColor: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[bubble]],
     hoverBorderWidth: ScriptableAndArray[Double, ScriptableContext[bubble]],
     hoverRadius: ScriptableAndArray[Double, ScriptableContext[bubble]],
     indexAxis: x | y,
@@ -103,12 +113,14 @@ object typebubbleBubbleControlle {
     normalized: Boolean,
     order: Double,
     parsing: StringDictionary[String] | `false`,
-    pointStyle: ScriptableAndArray[typings.chartJs.mod.PointStyle, ScriptableContext[bubble]],
+    pointStyle: ScriptableAndArray[typings.chartJs.distTypesIndexMod.PointStyle, ScriptableContext[bubble]],
     radius: ScriptableAndArray[Double, ScriptableContext[bubble]],
     rotation: ScriptableAndArray[Double, ScriptableContext[bubble]],
-    stack: String
+    stack: String,
+    xAxisID: String,
+    yAxisID: String
   ): typebubbleBubbleControlle = {
-    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], borderColor = borderColor.asInstanceOf[js.Any], borderWidth = borderWidth.asInstanceOf[js.Any], clip = clip.asInstanceOf[js.Any], drawActiveElementsOnTop = drawActiveElementsOnTop.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], hitRadius = hitRadius.asInstanceOf[js.Any], hoverBackgroundColor = hoverBackgroundColor.asInstanceOf[js.Any], hoverBorderColor = hoverBorderColor.asInstanceOf[js.Any], hoverBorderWidth = hoverBorderWidth.asInstanceOf[js.Any], hoverRadius = hoverRadius.asInstanceOf[js.Any], indexAxis = indexAxis.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], normalized = normalized.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], parsing = parsing.asInstanceOf[js.Any], pointStyle = pointStyle.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], borderColor = borderColor.asInstanceOf[js.Any], borderWidth = borderWidth.asInstanceOf[js.Any], clip = clip.asInstanceOf[js.Any], drawActiveElementsOnTop = drawActiveElementsOnTop.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], hitRadius = hitRadius.asInstanceOf[js.Any], hoverBackgroundColor = hoverBackgroundColor.asInstanceOf[js.Any], hoverBorderColor = hoverBorderColor.asInstanceOf[js.Any], hoverBorderWidth = hoverBorderWidth.asInstanceOf[js.Any], hoverRadius = hoverRadius.asInstanceOf[js.Any], indexAxis = indexAxis.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], normalized = normalized.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], parsing = parsing.asInstanceOf[js.Any], pointStyle = pointStyle.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any], xAxisID = xAxisID.asInstanceOf[js.Any], yAxisID = yAxisID.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("bubble")
     __obj.asInstanceOf[typebubbleBubbleControlle]
   }
@@ -116,21 +128,21 @@ object typebubbleBubbleControlle {
   @scala.inline
   implicit open class MutableBuilder[Self <: typebubbleBubbleControlle] (val x: Self) extends AnyVal {
     
-    inline def setBackgroundColor(value: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bubble]]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[bubble]]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     inline def setBackgroundColorFunction2(
-      value: (ScriptableContext[bubble], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
+      value: (ScriptableContext[bubble], /* options */ AnyObject) => js.UndefOr[typings.chartJs.distTypesColorMod.Color]
     ): Self = StObject.set(x, "backgroundColor", js.Any.fromFunction2(value))
     
-    inline def setBackgroundColorVarargs(value: typings.chartJs.typesColorMod.Color*): Self = StObject.set(x, "backgroundColor", js.Array(value*))
+    inline def setBackgroundColorVarargs(value: typings.chartJs.distTypesColorMod.Color*): Self = StObject.set(x, "backgroundColor", js.Array(value*))
     
-    inline def setBorderColor(value: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bubble]]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[bubble]]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     inline def setBorderColorFunction2(
-      value: (ScriptableContext[bubble], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
+      value: (ScriptableContext[bubble], /* options */ AnyObject) => js.UndefOr[typings.chartJs.distTypesColorMod.Color]
     ): Self = StObject.set(x, "borderColor", js.Any.fromFunction2(value))
     
-    inline def setBorderColorVarargs(value: typings.chartJs.typesColorMod.Color*): Self = StObject.set(x, "borderColor", js.Array(value*))
+    inline def setBorderColorVarargs(value: typings.chartJs.distTypesColorMod.Color*): Self = StObject.set(x, "borderColor", js.Array(value*))
     
     inline def setBorderWidth(value: ScriptableAndArray[Double, ScriptableContext[bubble]]): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
@@ -154,21 +166,21 @@ object typebubbleBubbleControlle {
     
     inline def setHitRadiusVarargs(value: Double*): Self = StObject.set(x, "hitRadius", js.Array(value*))
     
-    inline def setHoverBackgroundColor(value: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bubble]]): Self = StObject.set(x, "hoverBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setHoverBackgroundColor(value: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[bubble]]): Self = StObject.set(x, "hoverBackgroundColor", value.asInstanceOf[js.Any])
     
     inline def setHoverBackgroundColorFunction2(
-      value: (ScriptableContext[bubble], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
+      value: (ScriptableContext[bubble], /* options */ AnyObject) => js.UndefOr[typings.chartJs.distTypesColorMod.Color]
     ): Self = StObject.set(x, "hoverBackgroundColor", js.Any.fromFunction2(value))
     
-    inline def setHoverBackgroundColorVarargs(value: typings.chartJs.typesColorMod.Color*): Self = StObject.set(x, "hoverBackgroundColor", js.Array(value*))
+    inline def setHoverBackgroundColorVarargs(value: typings.chartJs.distTypesColorMod.Color*): Self = StObject.set(x, "hoverBackgroundColor", js.Array(value*))
     
-    inline def setHoverBorderColor(value: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bubble]]): Self = StObject.set(x, "hoverBorderColor", value.asInstanceOf[js.Any])
+    inline def setHoverBorderColor(value: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[bubble]]): Self = StObject.set(x, "hoverBorderColor", value.asInstanceOf[js.Any])
     
     inline def setHoverBorderColorFunction2(
-      value: (ScriptableContext[bubble], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
+      value: (ScriptableContext[bubble], /* options */ AnyObject) => js.UndefOr[typings.chartJs.distTypesColorMod.Color]
     ): Self = StObject.set(x, "hoverBorderColor", js.Any.fromFunction2(value))
     
-    inline def setHoverBorderColorVarargs(value: typings.chartJs.typesColorMod.Color*): Self = StObject.set(x, "hoverBorderColor", js.Array(value*))
+    inline def setHoverBorderColorVarargs(value: typings.chartJs.distTypesColorMod.Color*): Self = StObject.set(x, "hoverBorderColor", js.Array(value*))
     
     inline def setHoverBorderWidth(value: ScriptableAndArray[Double, ScriptableContext[bubble]]): Self = StObject.set(x, "hoverBorderWidth", value.asInstanceOf[js.Any])
     
@@ -192,13 +204,13 @@ object typebubbleBubbleControlle {
     
     inline def setParsing(value: StringDictionary[String] | `false`): Self = StObject.set(x, "parsing", value.asInstanceOf[js.Any])
     
-    inline def setPointStyle(value: ScriptableAndArray[typings.chartJs.mod.PointStyle, ScriptableContext[bubble]]): Self = StObject.set(x, "pointStyle", value.asInstanceOf[js.Any])
+    inline def setPointStyle(value: ScriptableAndArray[typings.chartJs.distTypesIndexMod.PointStyle, ScriptableContext[bubble]]): Self = StObject.set(x, "pointStyle", value.asInstanceOf[js.Any])
     
     inline def setPointStyleFunction2(
-      value: (ScriptableContext[bubble], /* options */ AnyObject) => js.UndefOr[typings.chartJs.mod.PointStyle]
+      value: (ScriptableContext[bubble], /* options */ AnyObject) => js.UndefOr[typings.chartJs.distTypesIndexMod.PointStyle]
     ): Self = StObject.set(x, "pointStyle", js.Any.fromFunction2(value))
     
-    inline def setPointStyleVarargs(value: typings.chartJs.mod.PointStyle*): Self = StObject.set(x, "pointStyle", js.Array(value*))
+    inline def setPointStyleVarargs(value: typings.chartJs.distTypesIndexMod.PointStyle*): Self = StObject.set(x, "pointStyle", js.Array(value*))
     
     inline def setRadius(value: ScriptableAndArray[Double, ScriptableContext[bubble]]): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
@@ -215,5 +227,9 @@ object typebubbleBubbleControlle {
     inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
     inline def setType(value: bubble): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setXAxisID(value: String): Self = StObject.set(x, "xAxisID", value.asInstanceOf[js.Any])
+    
+    inline def setYAxisID(value: String): Self = StObject.set(x, "yAxisID", value.asInstanceOf[js.Any])
   }
 }

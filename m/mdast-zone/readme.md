@@ -1,7 +1,7 @@
 
 # Scala.js typings for mdast-zone
 
-Typings are for version 5.1.0
+Typings are for version 5.1.1
 
 ## Library description:
 mdast utility to treat HTML comments as ranges or markers

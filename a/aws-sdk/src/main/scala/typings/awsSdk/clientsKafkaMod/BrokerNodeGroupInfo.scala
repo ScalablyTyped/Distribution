@@ -49,6 +49,13 @@ trait BrokerNodeGroupInfo extends StObject {
     
     */
   var StorageInfo: js.UndefOr[typings.awsSdk.clientsKafkaMod.StorageInfo] = js.undefined
+  
+  /**
+    * 
+    The list of zoneIds for the cluster in the virtual private cloud (VPC).
+    
+    */
+  var ZoneIds: js.UndefOr[listOfString] = js.undefined
 }
 object BrokerNodeGroupInfo {
   
@@ -83,5 +90,11 @@ object BrokerNodeGroupInfo {
     inline def setStorageInfo(value: StorageInfo): Self = StObject.set(x, "StorageInfo", value.asInstanceOf[js.Any])
     
     inline def setStorageInfoUndefined: Self = StObject.set(x, "StorageInfo", js.undefined)
+    
+    inline def setZoneIds(value: listOfString): Self = StObject.set(x, "ZoneIds", value.asInstanceOf[js.Any])
+    
+    inline def setZoneIdsUndefined: Self = StObject.set(x, "ZoneIds", js.undefined)
+    
+    inline def setZoneIdsVarargs(value: string*): Self = StObject.set(x, "ZoneIds", js.Array(value*))
   }
 }

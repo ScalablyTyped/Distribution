@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SidewalkSendDataToDevice extends StObject {
   
   /**
-    * The duration of time in seconds for which you want to retry sending the ACK.
+    * The duration of time in seconds to retry sending the ACK.
     */
   var AckModeRetryDurationSecs: js.UndefOr[typings.awsSdk.clientsIotwirelessMod.AckModeRetryDurationSecs] = js.undefined
   

@@ -10,7 +10,7 @@ trait Pushpin
      with Component[PushpinOptions] {
   
   /**
-    * Original offsetTop of element
+    * Original offsetTop of element.
     */
   var originalOffset: Double
 }

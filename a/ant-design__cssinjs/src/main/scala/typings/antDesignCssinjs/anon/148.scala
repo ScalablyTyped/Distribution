@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BoxFlexGroup
+import typings.csstype.mod.Property.MsScrollSnapPointsX
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `148` extends StObject {
   
   var value: js.UndefOr[
-    BoxFlexGroup | (js.Array[
-      (Extract[js.UndefOr[BoxFlexGroup | js.Array[NonNullable[js.UndefOr[BoxFlexGroup]]]], String]) | NonNullable[js.UndefOr[BoxFlexGroup]]
+    MsScrollSnapPointsX | (js.Array[
+      (Extract[
+        js.UndefOr[MsScrollSnapPointsX | js.Array[NonNullable[js.UndefOr[MsScrollSnapPointsX]]]], 
+        String
+      ]) | NonNullable[js.UndefOr[MsScrollSnapPointsX]]
     ])
   ] = js.native
 }

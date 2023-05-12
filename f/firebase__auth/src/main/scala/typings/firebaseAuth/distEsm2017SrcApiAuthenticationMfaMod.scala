@@ -2,6 +2,7 @@ package typings.firebaseAuth
 
 import typings.firebaseAuth.anon.RecaptchaToken
 import typings.firebaseAuth.anon.SessionInfo
+import typings.firebaseAuth.anon.VerificationCode
 import typings.firebaseAuth.distEsm2017SrcApiAccountManagementMfaMod.MfaEnrollment
 import typings.firebaseAuth.distEsm2017SrcApiAuthenticationSmsMod.SignInWithPhoneNumberRequest
 import typings.firebaseAuth.distEsm2017SrcModelIdTokenMod.IdTokenResponse
@@ -17,6 +18,8 @@ object distEsm2017SrcApiAuthenticationMfaMod {
   val ^ : js.Any = js.native
   
   inline def finalizeSignInPhoneMfa(auth: Auth, request: FinalizePhoneMfaSignInRequest): js.Promise[FinalizePhoneMfaSignInResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("finalizeSignInPhoneMfa")(auth.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FinalizePhoneMfaSignInResponse]]
+  
+  inline def finalizeSignInTotpMfa(auth: Auth, request: FinalizeTotpMfaSignInRequest): js.Promise[FinalizeTotpMfaSignInResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("finalizeSignInTotpMfa")(auth.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FinalizeTotpMfaSignInResponse]]
   
   inline def startSignInPhoneMfa(auth: Auth, request: StartPhoneMfaSignInRequest): js.Promise[StartPhoneMfaSignInResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("startSignInPhoneMfa")(auth.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StartPhoneMfaSignInResponse]]
   
@@ -71,6 +74,40 @@ object distEsm2017SrcApiAuthenticationMfaMod {
   }
   
   type FinalizePhoneMfaSignInResponse = FinalizeMfaResponse
+  
+  trait FinalizeTotpMfaSignInRequest extends StObject {
+    
+    var mfaEnrollmentId: String
+    
+    var mfaPendingCredential: String
+    
+    var tenantId: js.UndefOr[String] = js.undefined
+    
+    var totpVerificationInfo: VerificationCode
+  }
+  object FinalizeTotpMfaSignInRequest {
+    
+    inline def apply(mfaEnrollmentId: String, mfaPendingCredential: String, totpVerificationInfo: VerificationCode): FinalizeTotpMfaSignInRequest = {
+      val __obj = js.Dynamic.literal(mfaEnrollmentId = mfaEnrollmentId.asInstanceOf[js.Any], mfaPendingCredential = mfaPendingCredential.asInstanceOf[js.Any], totpVerificationInfo = totpVerificationInfo.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FinalizeTotpMfaSignInRequest]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FinalizeTotpMfaSignInRequest] (val x: Self) extends AnyVal {
+      
+      inline def setMfaEnrollmentId(value: String): Self = StObject.set(x, "mfaEnrollmentId", value.asInstanceOf[js.Any])
+      
+      inline def setMfaPendingCredential(value: String): Self = StObject.set(x, "mfaPendingCredential", value.asInstanceOf[js.Any])
+      
+      inline def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
+      
+      inline def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
+      
+      inline def setTotpVerificationInfo(value: VerificationCode): Self = StObject.set(x, "totpVerificationInfo", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type FinalizeTotpMfaSignInResponse = FinalizeMfaResponse
   
   trait IdTokenMfaResponse
     extends StObject

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ramda
 
-Typings are for version 0.27
+Typings are for version 0.29
 
 ## Library description:
 A practical functional library for JavaScript programmers.
@@ -10,10 +10,10 @@ A practical functional library for JavaScript programmers.
 | ------------------ | :-------------: |
 | Full name          | ramda |
 | Keywords           | ramda, functional, utils, utilities, toolkit, fp, tacit, point-free, curried, pure, fantasy-land |
-| # releases         | 3 |
-| # dependents       | 5636 |
-| # downloads        | 219978609 |
-| # stars            | 134 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 4.5025817E7 |
+| # stars            | 22334.0 |
 
 ## Links
 - [Homepage](https://ramdajs.com/)

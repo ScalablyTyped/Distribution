@@ -14,7 +14,7 @@ trait PractitionerQualification
   var code: CodeableConcept
   
   /**
-    * An identifier that applies to this person's qualification in this role.
+    * An identifier that applies to this person's qualification.
     */
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   

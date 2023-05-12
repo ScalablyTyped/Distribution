@@ -6,9 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Cweid extends StObject {
   
-  var cwe_id: String
+  /** @description The unique CWE ID. */
+  val cwe_id: String
   
-  var name: String
+  /** @description The short, plain text name of the CWE. */
+  val name: String
 }
 object Cweid {
   

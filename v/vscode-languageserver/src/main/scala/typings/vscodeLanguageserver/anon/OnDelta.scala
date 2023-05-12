@@ -23,7 +23,7 @@ trait OnDelta extends StObject {
     handler: ServerRequestHandler[
       SemanticTokensDeltaParams, 
       SemanticTokensDelta | SemanticTokens, 
-      SemanticTokensDeltaPartialResult, 
+      SemanticTokensDeltaPartialResult | SemanticTokensPartialResult, 
       Unit
     ]
   ): Disposable
@@ -41,7 +41,7 @@ object OnDelta {
     onDelta: ServerRequestHandler[
       SemanticTokensDeltaParams, 
       SemanticTokensDelta | SemanticTokens, 
-      SemanticTokensDeltaPartialResult, 
+      SemanticTokensDeltaPartialResult | SemanticTokensPartialResult, 
       Unit
     ] => Disposable,
     onRange: ServerRequestHandler[SemanticTokensRangeParams, SemanticTokens, SemanticTokensPartialResult, Unit] => Disposable,
@@ -62,7 +62,7 @@ object OnDelta {
       value: ServerRequestHandler[
           SemanticTokensDeltaParams, 
           SemanticTokensDelta | SemanticTokens, 
-          SemanticTokensDeltaPartialResult, 
+          SemanticTokensDeltaPartialResult | SemanticTokensPartialResult, 
           Unit
         ] => Disposable
     ): Self = StObject.set(x, "onDelta", js.Any.fromFunction1(value))

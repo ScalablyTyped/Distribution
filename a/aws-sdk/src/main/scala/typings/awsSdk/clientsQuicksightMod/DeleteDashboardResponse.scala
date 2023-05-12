@@ -14,7 +14,7 @@ trait DeleteDashboardResponse extends StObject {
   /**
     * The ID of the dashboard.
     */
-  var DashboardId: js.UndefOr[RestrictiveResourceId] = js.undefined
+  var DashboardId: js.UndefOr[ShortRestrictiveResourceId] = js.undefined
   
   /**
     * The Amazon Web Services request ID for this operation.
@@ -40,7 +40,7 @@ object DeleteDashboardResponse {
     
     inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    inline def setDashboardId(value: RestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
+    inline def setDashboardId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
     
     inline def setDashboardIdUndefined: Self = StObject.set(x, "DashboardId", js.undefined)
     

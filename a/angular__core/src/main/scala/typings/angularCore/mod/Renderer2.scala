@@ -102,7 +102,6 @@ open class Renderer2 () extends StObject {
     * Implement this callback to get the next sibling node of a given node
     * in the host element's DOM.
     * @returns The sibling node, or null if there is no sibling.
-    * For WebWorkers, always returns a value.
     * This is because the check is synchronous,
     * and the caller can't rely on checking for null.
     */
@@ -113,7 +112,6 @@ open class Renderer2 () extends StObject {
     * in the host element's DOM.
     * @param node The child node to query.
     * @returns The parent node, or null if there is no parent.
-    * For WebWorkers, always returns true.
     * This is because the check is synchronous,
     * and the caller can't rely on checking for null.
     */

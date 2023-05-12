@@ -6,10 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait FeatureType extends StObject
-/**
-  * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-  * Identifiers for feature types.
-  */
 @JSGlobal("google.maps.FeatureType")
 @js.native
 object FeatureType extends StObject {
@@ -31,26 +27,18 @@ object FeatureType extends StObject {
        with FeatureType
   
   /**
-    * Indicates a third-order civil entity below the country level.
-    */
-  @js.native
-  sealed trait ADMINISTRATIVE_AREA_LEVEL_3
-    extends StObject
-       with FeatureType
-  
-  /**
-    * Indicates a fourth-order civil entity below the country level.
-    */
-  @js.native
-  sealed trait ADMINISTRATIVE_AREA_LEVEL_4
-    extends StObject
-       with FeatureType
-  
-  /**
     * Indicates the national political entity.
     */
   @js.native
   sealed trait COUNTRY
+    extends StObject
+       with FeatureType
+  
+  /**
+    * Indicates a third-party dataset.
+    */
+  @js.native
+  sealed trait DATASET
     extends StObject
        with FeatureType
   
@@ -63,27 +51,11 @@ object FeatureType extends StObject {
        with FeatureType
   
   /**
-    * Indicates a named neighborhood.
-    */
-  @js.native
-  sealed trait NEIGHBORHOOD
-    extends StObject
-       with FeatureType
-  
-  /**
     * Indicates a postal code as used to address postal mail within the
     * country.
     */
   @js.native
   sealed trait POSTAL_CODE
-    extends StObject
-       with FeatureType
-  
-  /**
-    * Indicates a first-order civil entity below a locality.
-    */
-  @js.native
-  sealed trait SUBLOCALITY_LEVEL_1
     extends StObject
        with FeatureType
 }

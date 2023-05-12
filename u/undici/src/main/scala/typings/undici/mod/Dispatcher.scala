@@ -8,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("undici", "Dispatcher")
 @js.native
 open class Dispatcher ()
-  extends typings.undici.typesDispatcherMod.^
+  extends typings.undici.typesDispatcherMod.default

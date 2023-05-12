@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-ws
 
-Typings are for version 5.0.3
+Typings are for version 6.0.1
 
 ## Library description:
 Simple async iterables for websocket client connections

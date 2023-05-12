@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ci-info" : "3.6.1"
+      "ci-info" : "3.8.0"
     }
   ],
   "test-dependencies" : [
     {
-      "ci-info" : "3.6.1"
+      "ci-info" : "3.8.0"
     }
   ],
   "compile-devDependencies" : [

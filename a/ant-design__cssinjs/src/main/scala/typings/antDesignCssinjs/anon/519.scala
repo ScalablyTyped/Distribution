@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BreakBefore
+import typings.csstype.mod.Property.Rotate
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `519` extends StObject {
   
   var value: js.UndefOr[
-    BreakBefore | (js.Array[
-      (Extract[js.UndefOr[BreakBefore | js.Array[NonNullable[js.UndefOr[BreakBefore]]]], String]) | NonNullable[js.UndefOr[BreakBefore]]
+    Rotate | (js.Array[
+      (Extract[js.UndefOr[Rotate | js.Array[NonNullable[js.UndefOr[Rotate]]]], String]) | NonNullable[js.UndefOr[Rotate]]
     ])
   ] = js.native
 }

@@ -24,7 +24,11 @@ trait SearchRequest extends StObject {
   
   var queryAlterationOptions: js.UndefOr[NullableOption[SearchAlterationOptions]] = js.undefined
   
+  var region: js.UndefOr[NullableOption[String]] = js.undefined
+  
   var resultTemplateOptions: js.UndefOr[NullableOption[ResultTemplateOption]] = js.undefined
+  
+  var sharePointOneDriveOptions: js.UndefOr[NullableOption[SharePointOneDriveOptions]] = js.undefined
   
   var size: js.UndefOr[Double] = js.undefined
   
@@ -100,11 +104,23 @@ object SearchRequest {
     
     inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
+    inline def setRegion(value: NullableOption[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    
+    inline def setRegionNull: Self = StObject.set(x, "region", null)
+    
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    
     inline def setResultTemplateOptions(value: NullableOption[ResultTemplateOption]): Self = StObject.set(x, "resultTemplateOptions", value.asInstanceOf[js.Any])
     
     inline def setResultTemplateOptionsNull: Self = StObject.set(x, "resultTemplateOptions", null)
     
     inline def setResultTemplateOptionsUndefined: Self = StObject.set(x, "resultTemplateOptions", js.undefined)
+    
+    inline def setSharePointOneDriveOptions(value: NullableOption[SharePointOneDriveOptions]): Self = StObject.set(x, "sharePointOneDriveOptions", value.asInstanceOf[js.Any])
+    
+    inline def setSharePointOneDriveOptionsNull: Self = StObject.set(x, "sharePointOneDriveOptions", null)
+    
+    inline def setSharePointOneDriveOptionsUndefined: Self = StObject.set(x, "sharePointOneDriveOptions", js.undefined)
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

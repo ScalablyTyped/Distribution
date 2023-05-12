@@ -2,6 +2,8 @@ package typings.octokitOpenapiTypes.anon
 
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.admin
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.closed
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.notifications_disabled
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.notifications_enabled
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.pull
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.push
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.secret
@@ -15,7 +17,15 @@ trait Parentteamid extends StObject {
   var description: js.UndefOr[String] = js.undefined
   
   /** @description The name of the team. */
-  var name: js.UndefOr[String] = js.undefined
+  var name: String
+  
+  /**
+    * @description The notification setting the team has chosen. Editing teams without specifying this parameter leaves `notification_setting` intact. The options are:
+    *  * `notifications_enabled` - team members receive notifications when the team is @mentioned.
+    *  * `notifications_disabled` - no one receives notifications.
+    * @enum {string}
+    */
+  var notification_setting: js.UndefOr[notifications_enabled | notifications_disabled] = js.undefined
   
   /** @description The ID of a team to set as the parent team. */
   var parent_team_id: js.UndefOr[Double | Null] = js.undefined
@@ -28,20 +38,20 @@ trait Parentteamid extends StObject {
   var permission: js.UndefOr[pull | push | admin] = js.undefined
   
   /**
-    * @description The level of privacy this team should have. Editing teams without specifying this parameter leaves `privacy` intact. When a team is nested, the `privacy` for parent teams cannot be `secret`. The options are:
+    * @description The level of privacy this team should have. Editing teams without specifying this parameter leaves `privacy` intact. The options are:
     * **For a non-nested team:**
-    * \* `secret` - only visible to organization owners and members of this team.
-    * \* `closed` - visible to all members of this organization.
+    *  * `secret` - only visible to organization owners and members of this team.
+    *  * `closed` - visible to all members of this organization.
     * **For a parent or child team:**
-    * \* `closed` - visible to all members of this organization.
+    *  * `closed` - visible to all members of this organization.
     * @enum {string}
     */
   var privacy: js.UndefOr[secret | closed] = js.undefined
 }
 object Parentteamid {
   
-  inline def apply(): Parentteamid = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(name: String): Parentteamid = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parentteamid]
   }
   
@@ -54,7 +64,9 @@ object Parentteamid {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNotification_setting(value: notifications_enabled | notifications_disabled): Self = StObject.set(x, "notification_setting", value.asInstanceOf[js.Any])
+    
+    inline def setNotification_settingUndefined: Self = StObject.set(x, "notification_setting", js.undefined)
     
     inline def setParent_team_id(value: Double): Self = StObject.set(x, "parent_team_id", value.asInstanceOf[js.Any])
     

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jridgewell/sourcemap-codec" : "1.4.14"
+      "@jridgewell/sourcemap-codec" : "1.4.15"
     }
   ],
   "test-dependencies" : [
     {
-      "@jridgewell/sourcemap-codec" : "1.4.14"
+      "@jridgewell/sourcemap-codec" : "1.4.15"
     }
   ],
   "compile-devDependencies" : [

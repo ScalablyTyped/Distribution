@@ -980,6 +980,12 @@ object Math {
     def normalizeRightHand(): Vector2 = js.native
     
     /**
+      * Project this Vector onto another.
+      * @param src The vector to project onto.
+      */
+    def project(src: Vector2): Vector2 = js.native
+    
+    /**
       * Reflect this Vector off a line defined by a normal.
       * @param normal A vector perpendicular to the line.
       */

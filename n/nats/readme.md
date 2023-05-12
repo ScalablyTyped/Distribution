@@ -1,7 +1,7 @@
 
 # Scala.js typings for nats
 
-Typings are for version 2.9.0
+Typings are for version 2.13.1
 
 ## Library description:
 Node.js client for NATS, a lightweight, high-performance cloud native messaging system

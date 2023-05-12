@@ -1,14 +1,13 @@
 organization := "org.scalablytyped"
 name := "pixi__utils"
-version := "7.0.4-afffb5"
+version := "7.2.4-9551e2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "eventemitter3" % "5.0.0-78e12d",
-  "org.scalablytyped" %%% "pixi__constants" % "7.0.4-d787af",
-  "org.scalablytyped" %%% "pixi__settings" % "7.0.4-9fffea",
-  "org.scalablytyped" %%% "std" % "4.9-ecb5eb")
+  "org.scalablytyped" %%% "eventemitter3" % "5.0.1-abf8ed",
+  "org.scalablytyped" %%% "pixi__settings" % "7.2.4-3a7e7e",
+  "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

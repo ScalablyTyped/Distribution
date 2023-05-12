@@ -5,6 +5,7 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ReactNode
+import typings.reactPaginate.anon.Backward
 import typings.reactPaginate.anon.Event
 import typings.reactPaginate.anon.Selected
 import org.scalablytyped.runtime.StObject
@@ -40,6 +41,14 @@ object mod extends Shortcut {
       * The method is called to generate the `aria-label` attribute value on each page link
       */
     var ariaLabelBuilder: js.UndefOr[js.Function2[/* pageIndex */ Double, /* selectedPage */ Double, Unit]] = js.undefined
+    
+    /**
+      * By default the pagination link will have an 'aria-label' attribute of 'Jump forward'
+      * when the break is after the current index, and an 'aria-label' attribute of 'Jump
+      * backward' when the break is before the current index. This optional prop can be used
+      * to provide alternative 'aria-label' attributes.
+      */
+    var breakAriaLabels: js.UndefOr[Backward] = js.undefined
     
     /**
       * The classname on tag `li` of the ellipsis element.
@@ -235,7 +244,7 @@ object mod extends Shortcut {
       * A render function called when `pageCount` is zero. Let the Previous / Next buttons displayed by default (`undefined`).
       * Display nothing when `null` is provided.
       */
-    var renderOnZeroPageCount: js.UndefOr[js.Function1[/* props */ this.type, Unit | Null]] = js.undefined
+    var renderOnZeroPageCount: js.UndefOr[(js.Function1[/* props */ this.type, Unit]) | Null] = js.undefined
     
     /**
       * The `rel` propery on the `a` tag for the selected page.
@@ -264,6 +273,10 @@ object mod extends Shortcut {
       inline def setAriaLabelBuilder(value: (/* pageIndex */ Double, /* selectedPage */ Double) => Unit): Self = StObject.set(x, "ariaLabelBuilder", js.Any.fromFunction2(value))
       
       inline def setAriaLabelBuilderUndefined: Self = StObject.set(x, "ariaLabelBuilder", js.undefined)
+      
+      inline def setBreakAriaLabels(value: Backward): Self = StObject.set(x, "breakAriaLabels", value.asInstanceOf[js.Any])
+      
+      inline def setBreakAriaLabelsUndefined: Self = StObject.set(x, "breakAriaLabels", js.undefined)
       
       inline def setBreakClassName(value: String): Self = StObject.set(x, "breakClassName", value.asInstanceOf[js.Any])
       
@@ -411,7 +424,9 @@ object mod extends Shortcut {
       
       inline def setPreviousLinkClassNameUndefined: Self = StObject.set(x, "previousLinkClassName", js.undefined)
       
-      inline def setRenderOnZeroPageCount(value: ReactPaginateProps => Unit | Null): Self = StObject.set(x, "renderOnZeroPageCount", js.Any.fromFunction1(value))
+      inline def setRenderOnZeroPageCount(value: ReactPaginateProps => Unit): Self = StObject.set(x, "renderOnZeroPageCount", js.Any.fromFunction1(value))
+      
+      inline def setRenderOnZeroPageCountNull: Self = StObject.set(x, "renderOnZeroPageCount", null)
       
       inline def setRenderOnZeroPageCountUndefined: Self = StObject.set(x, "renderOnZeroPageCount", js.undefined)
       

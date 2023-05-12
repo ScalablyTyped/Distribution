@@ -27,7 +27,8 @@ trait AppConfig extends StObject {
         js.Object, 
         js.Object, 
         `false`, 
-        ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+        ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+        js.Object, 
         js.Object
       ]) | Null, 
       /* info */ String, 
@@ -50,7 +51,7 @@ trait AppConfig extends StObject {
   
   /**
     * Temporary config for opt-in to unwrap injected refs.
-    * TODO deprecate in 3.3
+    * @deprecated this no longer has effect. 3.3 always unwraps injected refs.
     */
   var unwrapInjectedRef: js.UndefOr[Boolean] = js.undefined
   
@@ -67,7 +68,8 @@ trait AppConfig extends StObject {
         js.Object, 
         js.Object, 
         `false`, 
-        ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+        ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+        js.Object, 
         js.Object
       ]) | Null, 
       /* trace */ String, 
@@ -103,7 +105,8 @@ object AppConfig {
           js.Object, 
           js.Object, 
           `false`, 
-          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+          js.Object, 
           js.Object
         ]) | Null, /* info */ String) => Unit
     ): Self = StObject.set(x, "errorHandler", js.Any.fromFunction3(value))
@@ -139,7 +142,8 @@ object AppConfig {
           js.Object, 
           js.Object, 
           `false`, 
-          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+          js.Object, 
           js.Object
         ]) | Null, /* trace */ String) => Unit
     ): Self = StObject.set(x, "warnHandler", js.Any.fromFunction3(value))

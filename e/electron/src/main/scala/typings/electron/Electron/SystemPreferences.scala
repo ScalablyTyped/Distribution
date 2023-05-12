@@ -92,7 +92,7 @@ trait SystemPreferences
     * information about how to set these in the context of Electron.
     *
     * This user consent was not required until macOS 10.14 Mojave, so this method will
-    * always return `true` if your system is running 10.13 High Sierra or lower.
+    * always return `true` if your system is running 10.13 High Sierra.
     *
     * @platform darwin
     */
@@ -100,9 +100,6 @@ trait SystemPreferences
   
   /**
     * whether or not this device has the ability to use Touch ID.
-    *
-    * **NOTE:** This API will return `false` on macOS systems older than Sierra
-    * 10.12.2.
     *
     * @platform darwin
     */
@@ -180,10 +177,10 @@ trait SystemPreferences
   /**
     * Can be `not-determined`, `granted`, `denied`, `restricted` or `unknown`.
     *
-    * This user consent was not required on macOS 10.13 High Sierra or lower so this
-    * method will always return `granted`. macOS 10.14 Mojave or higher requires
-    * consent for `microphone` and `camera` access. macOS 10.15 Catalina or higher
-    * requires consent for `screen` access.
+    * This user consent was not required on macOS 10.13 High Sierra so this method
+    * will always return `granted`. macOS 10.14 Mojave or higher requires consent for
+    * `microphone` and `camera` access. macOS 10.15 Catalina or higher requires
+    * consent for `screen` access.
     *
     * Windows 10 has a global setting controlling `microphone` and `camera` access for
     * all win32 applications. It will always return `granted` for `screen` and for all
@@ -377,9 +374,6 @@ trait SystemPreferences
     * auto-prompt for Touch ID biometric consent. This could be done with
     * `node-keytar`, such that one would store an encryption key with `node-keytar`
     * and only fetch it if `promptTouchID()` resolves.
-    *
-    * **NOTE:** This API will return a rejected Promise on macOS systems older than
-    * Sierra 10.12.2.
     *
     * @platform darwin
     */

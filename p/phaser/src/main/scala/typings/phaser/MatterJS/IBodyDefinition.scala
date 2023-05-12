@@ -276,7 +276,7 @@ trait IBodyDefinition extends StObject {
   
   /**
     * A callback that is invoked for the duration that this Body is colliding with any other Body.
-    * 
+    *
     * You can register callbacks by providing a function of type `( pair: Matter.Pair) => void`.
     *
     * @property onCollideActiveCallback
@@ -287,7 +287,7 @@ trait IBodyDefinition extends StObject {
   
   /**
     * A callback that is invoked when this Body starts colliding with any other Body.
-    * 
+    *
     * You can register callbacks by providing a function of type `( pair: Matter.Pair) => void`.
     *
     * @property onCollideCallback
@@ -298,7 +298,7 @@ trait IBodyDefinition extends StObject {
   
   /**
     * A callback that is invoked when this Body stops colliding with any other Body.
-    * 
+    *
     * You can register callbacks by providing a function of type `( pair: Matter.Pair) => void`.
     *
     * @property onCollideEndCallback

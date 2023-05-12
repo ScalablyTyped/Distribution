@@ -136,6 +136,9 @@ object materialsTexturesBaseTextureMod {
     /* private */ var _hasAlpha: Any = js.native
     
     /** @internal */
+    var _internalMetadata: Any = js.native
+    
+    /** @internal */
     var _isCube: Boolean = js.native
     
     /* protected */ var _loadingError: Boolean = js.native
@@ -355,6 +358,13 @@ object materialsTexturesBaseTextureMod {
     def getReflectionTextureMatrix(): Matrix = js.native
     
     /**
+      * Gets a suitable rotate/transform matrix when the texture is used for refraction.
+      * There's a separate function from getReflectionTextureMatrix because refraction requires a special configuration of the matrix in right-handed mode.
+      * @returns The refraction matrix
+      */
+    def getRefractionTextureMatrix(): Matrix = js.native
+    
+    /**
       * Get the scene the texture belongs to.
       * @returns the scene or null if undefined
       */
@@ -516,9 +526,11 @@ object materialsTexturesBaseTextureMod {
     
     /**
       * Serialize the texture into a JSON representation that can be parsed later on.
+      * @param allowEmptyName True to force serialization even if name is empty. Default: false
       * @returns the JSON representation of the texture
       */
     def serialize(): Any = js.native
+    def serialize(allowEmptyName: Boolean): Any = js.native
     
     /**
       * Get the polynomial representation of the texture data.

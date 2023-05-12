@@ -3,7 +3,7 @@ package typings.floatingUiCore
 import typings.floatingUiCore.anon.PartialOptions
 import typings.floatingUiCore.srcTypesMod.Boundary
 import typings.floatingUiCore.srcTypesMod.ElementContext
-import typings.floatingUiCore.srcTypesMod.MiddlewareArguments
+import typings.floatingUiCore.srcTypesMod.MiddlewareState
 import typings.floatingUiCore.srcTypesMod.Padding
 import typings.floatingUiCore.srcTypesMod.RootBoundary
 import typings.floatingUiCore.srcTypesMod.SideObject
@@ -17,8 +17,8 @@ object srcDetectOverflowMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def detectOverflow(middlewareArguments: MiddlewareArguments): js.Promise[SideObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("detectOverflow")(middlewareArguments.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SideObject]]
-  inline def detectOverflow(middlewareArguments: MiddlewareArguments, options: PartialOptions): js.Promise[SideObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("detectOverflow")(middlewareArguments.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SideObject]]
+  inline def detectOverflow(state: MiddlewareState): js.Promise[SideObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("detectOverflow")(state.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SideObject]]
+  inline def detectOverflow(state: MiddlewareState, options: PartialOptions): js.Promise[SideObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("detectOverflow")(state.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SideObject]]
   
   trait Options extends StObject {
     
@@ -30,7 +30,7 @@ object srcDetectOverflowMod {
     var altBoundary: Boolean
     
     /**
-      * The clipping element(s) in which overflow will be checked.
+      * The clipping element(s) or area in which overflow will be checked.
       * @default 'clippingAncestors'
       */
     var boundary: Boundary
@@ -42,13 +42,13 @@ object srcDetectOverflowMod {
     var elementContext: ElementContext
     
     /**
-      * Virtual padding for the resolved overflow offsets.
+      * Virtual padding for the resolved overflow detection offsets.
       * @default 0
       */
     var padding: Padding
     
     /**
-      * The root clipping element in which overflow will be checked.
+      * The root clipping area in which overflow will be checked.
       * @default 'viewport'
       */
     var rootBoundary: RootBoundary

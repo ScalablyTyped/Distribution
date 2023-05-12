@@ -7,23 +7,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IndentationRule extends StObject {
   
   /**
-    * If a line matches this pattern, then all the lines after it should be unindented once (until another rule matches).
-    */
+  		 * If a line matches this pattern, then all the lines after it should be unindented once (until another rule matches).
+  		 */
   var decreaseIndentPattern: js.RegExp
   
   /**
-    * If a line matches this pattern, then all the lines after it should be indented once (until another rule matches).
-    */
+  		 * If a line matches this pattern, then all the lines after it should be indented once (until another rule matches).
+  		 */
   var increaseIndentPattern: js.RegExp
   
   /**
-    * If a line matches this pattern, then **only the next line** after it should be indented once.
-    */
+  		 * If a line matches this pattern, then **only the next line** after it should be indented once.
+  		 */
   var indentNextLinePattern: js.UndefOr[js.RegExp] = js.undefined
   
   /**
-    * If a line matches this pattern, then its indentation should not be changed and it should not be evaluated against the other rules.
-    */
+  		 * If a line matches this pattern, then its indentation should not be changed and it should not be evaluated against the other rules.
+  		 */
   var unIndentedLinePattern: js.UndefOr[js.RegExp] = js.undefined
 }
 object IndentationRule {

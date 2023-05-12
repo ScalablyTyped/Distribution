@@ -7,5 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("THREE.CurvePath")
 @js.native
+/**
+  * The constructor take no parameters.
+  */
 open class CurvePath[T /* <: Vector */] ()
   extends typings.three.mod.CurvePath[T]

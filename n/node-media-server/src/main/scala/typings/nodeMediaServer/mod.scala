@@ -300,6 +300,8 @@ object mod {
     
     var app: String
     
+    var appendName: js.UndefOr[Boolean] = js.undefined
+    
     var edge: String
     
     var mode: String
@@ -319,6 +321,10 @@ object mod {
     implicit open class MutableBuilder[Self <: RelayTaskConfig] (val x: Self) extends AnyVal {
       
       inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+      
+      inline def setAppendName(value: Boolean): Self = StObject.set(x, "appendName", value.asInstanceOf[js.Any])
+      
+      inline def setAppendNameUndefined: Self = StObject.set(x, "appendName", js.undefined)
       
       inline def setEdge(value: String): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
       

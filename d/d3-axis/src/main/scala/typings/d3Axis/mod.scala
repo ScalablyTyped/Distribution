@@ -55,7 +55,7 @@ object mod {
     /**
       * Gets the current scale underlying the axis.
       */
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def scale[A /* <: AxisScale[Domain] */](): A = js.native
     
     /**

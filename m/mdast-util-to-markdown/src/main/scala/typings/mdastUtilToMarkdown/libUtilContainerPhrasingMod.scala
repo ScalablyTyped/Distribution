@@ -1,5 +1,6 @@
 package typings.mdastUtilToMarkdown
 
+import typings.mdastUtilToMarkdown.anon.`1`
 import typings.mdastUtilToMarkdown.mdastUtilToMarkdownStrings.children
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,14 +12,16 @@ object libUtilContainerPhrasingMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def containerPhrasing(parent: Parent, context: Context, safeOptions: SafeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("containerPhrasing")(parent.asInstanceOf[js.Any], context.asInstanceOf[js.Any], safeOptions.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def containerPhrasing(parent: typings.mdastUtilToMarkdown.libTypesMod.Parent & `1`, state: State, info: Info): String = (^.asInstanceOf[js.Dynamic].applyDynamic("containerPhrasing")(parent.asInstanceOf[js.Any], state.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  type Context = typings.mdastUtilToMarkdown.libTypesMod.Context
+  type Handle = typings.mdastUtilToMarkdown.libTypesMod.Handle
   
-  type Node = typings.mdastUtilToMarkdown.libTypesMod.Node
+  type Info = typings.mdastUtilToMarkdown.libTypesMod.Info
   
   /* Inlined mdast-util-to-markdown.mdast-util-to-markdown/lib/types.Parent */
   type Parent = children
   
-  type SafeOptions = typings.mdastUtilToMarkdown.libTypesMod.SafeOptions
+  type PhrasingContent = typings.mdastUtilToMarkdown.libTypesMod.PhrasingContent
+  
+  type State = typings.mdastUtilToMarkdown.libTypesMod.State
 }

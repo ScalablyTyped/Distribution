@@ -2,7 +2,6 @@ package typings.forkTsCheckerWebpackPlugin
 
 import typings.forkTsCheckerWebpackPlugin.libFormatterFormatterConfigMod.FormatterConfig
 import typings.forkTsCheckerWebpackPlugin.libIssueIssueConfigMod.IssueConfig
-import typings.forkTsCheckerWebpackPlugin.libIssueIssueMod.Issue
 import typings.forkTsCheckerWebpackPlugin.libLoggerMod.Logger
 import typings.forkTsCheckerWebpackPlugin.libPluginOptionsMod.ForkTsCheckerWebpackPluginOptions
 import typings.forkTsCheckerWebpackPlugin.libTypescriptTypeScriptWorkerConfigMod.TypeScriptWorkerConfig
@@ -26,9 +25,7 @@ object libPluginConfigMod {
     
     var devServer: Boolean
     
-    def formatter(issue: Issue): String
-    @JSName("formatter")
-    var formatter_Original: FormatterConfig
+    var formatter: FormatterConfig
     
     var issue: IssueConfig
     
@@ -41,12 +38,12 @@ object libPluginConfigMod {
     inline def apply(
       async: Boolean,
       devServer: Boolean,
-      formatter: /* issue */ Issue => String,
+      formatter: FormatterConfig,
       issue: IssueConfig,
       logger: Logger,
       typescript: TypeScriptWorkerConfig
     ): ForkTsCheckerWebpackPluginConfig = {
-      val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], devServer = devServer.asInstanceOf[js.Any], formatter = js.Any.fromFunction1(formatter), issue = issue.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any], typescript = typescript.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], devServer = devServer.asInstanceOf[js.Any], formatter = formatter.asInstanceOf[js.Any], issue = issue.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any], typescript = typescript.asInstanceOf[js.Any])
       __obj.asInstanceOf[ForkTsCheckerWebpackPluginConfig]
     }
     
@@ -57,7 +54,7 @@ object libPluginConfigMod {
       
       inline def setDevServer(value: Boolean): Self = StObject.set(x, "devServer", value.asInstanceOf[js.Any])
       
-      inline def setFormatter(value: /* issue */ Issue => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+      inline def setFormatter(value: FormatterConfig): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
       
       inline def setIssue(value: IssueConfig): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
       

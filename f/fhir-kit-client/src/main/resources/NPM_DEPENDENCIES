@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "fhir-kit-client" : "1.9.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "fhir-kit-client" : "1.9.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

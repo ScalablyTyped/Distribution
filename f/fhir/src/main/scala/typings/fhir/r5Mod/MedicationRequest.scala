@@ -34,13 +34,11 @@ trait MedicationRequest
   
   var _doNotPerform: js.UndefOr[Element] = js.undefined
   
-  var _instantiatesCanonical: js.UndefOr[js.Array[Element]] = js.undefined
-  
-  var _instantiatesUri: js.UndefOr[js.Array[Element]] = js.undefined
-  
   var _intent: js.UndefOr[Element] = js.undefined
   
   var _priority: js.UndefOr[Element] = js.undefined
+  
+  var _renderedDosageInstruction: js.UndefOr[Element] = js.undefined
   
   var _reported: js.UndefOr[Element] = js.undefined
   
@@ -59,7 +57,7 @@ trait MedicationRequest
   var basedOn: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * The category can be used to include where the medication is expected to be consumed or other types of requests.
+    * The category can be used to include where the medication is expected to be consumed or other types of requests.  The examplar value set represents where the meds are intended to be administered and is just one example of request categorization.
     */
   var category: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
@@ -69,9 +67,9 @@ trait MedicationRequest
   var courseOfTherapyType: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * This element can include a detected issue that has been identified either by a decision support system or by a clinician and may include information on the steps that were taken to address the issue.
+    * The intended type of device that is to be used for the administration of the medication (for example, PCA Pump).
     */
-  var detectedIssue: js.UndefOr[js.Array[Reference]] = js.undefined
+  var device: js.UndefOr[js.Array[CodeableReference]] = js.undefined
   
   /**
     * Indicates the specific details for the dispense or medication supply part of a medication request (also known as a Medication Prescription or Medication Order).  Note that this information is not always sent with the order.  There may be in some settings (e.g. hospitals) institutional or system support for completing the dispense details in the pharmacy department.
@@ -84,9 +82,21 @@ trait MedicationRequest
   var doNotPerform: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates how the medication is to be used by the patient.
+    * There are examples where a medication request may include the option of an oral dose or an Intravenous or Intramuscular dose.  For example, "Ondansetron 8mg orally or IV twice a day as needed for nausea" or "Compazine® (prochlorperazine) 5-10mg PO or 25mg PR bid prn nausea or vomiting".  In these cases, two medication requests would be created that could be grouped together.  The decision on which dose and route of administration to use is based on the patient's condition at the time the dose is needed. In general, each prescribed drug will be a separate Medication Request.
+    * When drug orders are grouped together at the time of order entry,  but each of the drugs can be manipulated independently e.g. changing the status of one order to "completed" or "cancelled", changing another order status to "on-hold", the method to "group" all of the medication requests together is to use  MedicationRequest.groupIdentifier element.  All of the orders grouped together in this manner will have the same groupIdentifier, and separately, each order in the group may have a unique identifier.
+    * There are cases that require grouping of Medication orders together when it is necessary to specify optionality e.g. order two drugs at one time, but stating either of these drugs may be used to treat the patient.  The use of a RequestOrchestration should be used as a parent for the Medication orders that require this type of grouping. An example when it may be necessary to group medication orders together is when you specify timing relationships e.g. order drug "xyz" with dose 123, then taper the same drug to a different dose after some interval of time
+    * precedence:
+    * e.g. give drug "abc" followed by drug "def"
+    * e.g. give drug 30 minutes before some procedure was performed
+    * more generically this supports - hierarchical groups of actions, where each specific action references the action to be performed (in terms of a Request resource), and each group describes additional behavior, relationships, and applicable conditions between the actions in the overall group.
+    * Note that one should NOT use the List or Composition resource to accomplish the above requirements.  You may use List or Composition for other business requirements, but not to address the specific requirements of grouping medication orders.
     */
-  var dose: js.UndefOr[MedicationRequestDose] = js.undefined
+  var dosageInstruction: js.UndefOr[js.Array[Dosage]] = js.undefined
+  
+  /**
+    * The period over which the medication is to be taken.  Where there are multiple dosageInstruction lines (for example, tapering doses), this is the earliest date and the latest end date of the dosageInstructions.
+    */
+  var effectiveDosePeriod: js.UndefOr[Period] = js.undefined
   
   /**
     * This will typically be the encounter the event occurred within, but some activities may be initiated prior to or after the official completion of an encounter but still be tied to the context of the encounter."    If there is a need to link to episodes of care they will be handled with an extension.
@@ -94,12 +104,12 @@ trait MedicationRequest
   var encounter: js.UndefOr[Reference] = js.undefined
   
   /**
-    * This might not include provenances for all versions of the request – only those deemed “relevant” or important. This SHALL NOT include the provenance associated with this current version of the resource. (If that provenance is deemed to be a “relevant” change, it will need to be added as part of a later update. Until then, it can be queried directly as the provenance that points to this version using _revinclude All Provenances should have some historical version of this Request as their subject.).
+    * This might not include provenances for all versions of the request – only those deemed "relevant" or important. This SHALL NOT include the provenance associated with this current version of the resource. (If that provenance is deemed to be a "relevant" change, it will need to be added as part of a later update. Until then, it can be queried directly as the provenance that points to this version using _revinclude All Provenances should have some historical version of this Request as their subject.).
     */
   var eventHistory: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * A shared identifier common to all requests that were authorized more or less simultaneously by a single author, representing the identifier of the requisition or prescription.
+    * A shared identifier common to multiple independent Request instances that were activated/authorized more or less simultaneously by a single author.  The presence of the same identifier on each request ties those requests together and may have business ramifications in terms of reporting of results, billing, etc.  E.g. a requisition number shared by a set of lab tests ordered together, or a prescription number shared by all meds ordered at one time.
     */
   var groupIdentifier: js.UndefOr[Identifier] = js.undefined
   
@@ -111,17 +121,7 @@ trait MedicationRequest
   /**
     * The person or organization who provided the information about this request, if the source is someone other than the requestor.  This is often used when the MedicationRequest is reported by another person.
     */
-  var informationSource: js.UndefOr[Reference] = js.undefined
-  
-  /**
-    * The URL pointing to a protocol, guideline, orderset, or other definition that is adhered to in whole or in part by this MedicationRequest.
-    */
-  var instantiatesCanonical: js.UndefOr[js.Array[String]] = js.undefined
-  
-  /**
-    * The URL pointing to an externally maintained protocol, guideline, orderset or other definition that is adhered to in whole or in part by this MedicationRequest.
-    */
-  var instantiatesUri: js.UndefOr[js.Array[String]] = js.undefined
+  var informationSource: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Insurance plans, coverage extensions, pre-authorizations and/or pre-determinations that may be required for delivering the requested service.
@@ -146,9 +146,9 @@ trait MedicationRequest
   var note: js.UndefOr[js.Array[Annotation]] = js.undefined
   
   /**
-    * The specified desired performer of the medication treatment (e.g. the performer of the medication administration).
+    * The specified desired performer of the medication treatment (e.g. the performer of the medication administration).  For devices, this is the device that is intended to perform the administration of the medication.  An IV Pump would be an example of a device that is performing the administration.  Both the IV Pump and the practitioner that set the rate or bolus on the pump can be listed as performers.
     */
-  var performer: js.UndefOr[Reference] = js.undefined
+  var performer: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * If specified without indicating a performer, this indicates that the performer must be of the specified type. If specified with a performer then it indicates the requirements of the performer if the designated performer is not available.
@@ -156,7 +156,7 @@ trait MedicationRequest
   var performerType: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * A link to a resource representing an earlier order related order or prescription.
+    * Reference to an order/prescription that is being replaced by this MedicationRequest.
     */
   var priorPrescription: js.UndefOr[Reference] = js.undefined
   
@@ -176,7 +176,12 @@ trait MedicationRequest
   var recorder: js.UndefOr[Reference] = js.undefined
   
   /**
-    * Indicates if this record was captured as a secondary 'reported' record rather than as an original primary source-of-truth record.  It may also indicate the source of the report.
+    * The full representation of the dose of the medication included in all dosage instructions.  To be used when multiple dosage instructions are included to represent complex dosing such as increasing or tapering doses.
+    */
+  var renderedDosageInstruction: js.UndefOr[String] = js.undefined
+  
+  /**
+    * If not populated, then assume that this is the original record and not reported
     */
   var reported: js.UndefOr[Boolean] = js.undefined
   
@@ -216,7 +221,7 @@ trait MedicationRequest
   var substitution: js.UndefOr[MedicationRequestSubstitution] = js.undefined
   
   /**
-    * This attribute can be used to reference a MedicationUsage about the patients' medication use.
+    * This attribute can be used to reference a MedicationStatement about the patients' medication use.
     */
   var supportingInformation: js.UndefOr[js.Array[Reference]] = js.undefined
 }
@@ -255,11 +260,11 @@ object MedicationRequest {
     
     inline def setCourseOfTherapyTypeUndefined: Self = StObject.set(x, "courseOfTherapyType", js.undefined)
     
-    inline def setDetectedIssue(value: js.Array[Reference]): Self = StObject.set(x, "detectedIssue", value.asInstanceOf[js.Any])
+    inline def setDevice(value: js.Array[CodeableReference]): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
-    inline def setDetectedIssueUndefined: Self = StObject.set(x, "detectedIssue", js.undefined)
+    inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
-    inline def setDetectedIssueVarargs(value: Reference*): Self = StObject.set(x, "detectedIssue", js.Array(value*))
+    inline def setDeviceVarargs(value: CodeableReference*): Self = StObject.set(x, "device", js.Array(value*))
     
     inline def setDispenseRequest(value: MedicationRequestDispenseRequest): Self = StObject.set(x, "dispenseRequest", value.asInstanceOf[js.Any])
     
@@ -269,9 +274,15 @@ object MedicationRequest {
     
     inline def setDoNotPerformUndefined: Self = StObject.set(x, "doNotPerform", js.undefined)
     
-    inline def setDose(value: MedicationRequestDose): Self = StObject.set(x, "dose", value.asInstanceOf[js.Any])
+    inline def setDosageInstruction(value: js.Array[Dosage]): Self = StObject.set(x, "dosageInstruction", value.asInstanceOf[js.Any])
     
-    inline def setDoseUndefined: Self = StObject.set(x, "dose", js.undefined)
+    inline def setDosageInstructionUndefined: Self = StObject.set(x, "dosageInstruction", js.undefined)
+    
+    inline def setDosageInstructionVarargs(value: Dosage*): Self = StObject.set(x, "dosageInstruction", js.Array(value*))
+    
+    inline def setEffectiveDosePeriod(value: Period): Self = StObject.set(x, "effectiveDosePeriod", value.asInstanceOf[js.Any])
+    
+    inline def setEffectiveDosePeriodUndefined: Self = StObject.set(x, "effectiveDosePeriod", js.undefined)
     
     inline def setEncounter(value: Reference): Self = StObject.set(x, "encounter", value.asInstanceOf[js.Any])
     
@@ -293,21 +304,11 @@ object MedicationRequest {
     
     inline def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value*))
     
-    inline def setInformationSource(value: Reference): Self = StObject.set(x, "informationSource", value.asInstanceOf[js.Any])
+    inline def setInformationSource(value: js.Array[Reference]): Self = StObject.set(x, "informationSource", value.asInstanceOf[js.Any])
     
     inline def setInformationSourceUndefined: Self = StObject.set(x, "informationSource", js.undefined)
     
-    inline def setInstantiatesCanonical(value: js.Array[String]): Self = StObject.set(x, "instantiatesCanonical", value.asInstanceOf[js.Any])
-    
-    inline def setInstantiatesCanonicalUndefined: Self = StObject.set(x, "instantiatesCanonical", js.undefined)
-    
-    inline def setInstantiatesCanonicalVarargs(value: String*): Self = StObject.set(x, "instantiatesCanonical", js.Array(value*))
-    
-    inline def setInstantiatesUri(value: js.Array[String]): Self = StObject.set(x, "instantiatesUri", value.asInstanceOf[js.Any])
-    
-    inline def setInstantiatesUriUndefined: Self = StObject.set(x, "instantiatesUri", js.undefined)
-    
-    inline def setInstantiatesUriVarargs(value: String*): Self = StObject.set(x, "instantiatesUri", js.Array(value*))
+    inline def setInformationSourceVarargs(value: Reference*): Self = StObject.set(x, "informationSource", js.Array(value*))
     
     inline def setInsurance(value: js.Array[Reference]): Self = StObject.set(x, "insurance", value.asInstanceOf[js.Any])
     
@@ -327,13 +328,15 @@ object MedicationRequest {
     
     inline def setNoteVarargs(value: Annotation*): Self = StObject.set(x, "note", js.Array(value*))
     
-    inline def setPerformer(value: Reference): Self = StObject.set(x, "performer", value.asInstanceOf[js.Any])
+    inline def setPerformer(value: js.Array[Reference]): Self = StObject.set(x, "performer", value.asInstanceOf[js.Any])
     
     inline def setPerformerType(value: CodeableConcept): Self = StObject.set(x, "performerType", value.asInstanceOf[js.Any])
     
     inline def setPerformerTypeUndefined: Self = StObject.set(x, "performerType", js.undefined)
     
     inline def setPerformerUndefined: Self = StObject.set(x, "performer", js.undefined)
+    
+    inline def setPerformerVarargs(value: Reference*): Self = StObject.set(x, "performer", js.Array(value*))
     
     inline def setPriorPrescription(value: Reference): Self = StObject.set(x, "priorPrescription", value.asInstanceOf[js.Any])
     
@@ -352,6 +355,10 @@ object MedicationRequest {
     inline def setRecorder(value: Reference): Self = StObject.set(x, "recorder", value.asInstanceOf[js.Any])
     
     inline def setRecorderUndefined: Self = StObject.set(x, "recorder", js.undefined)
+    
+    inline def setRenderedDosageInstruction(value: String): Self = StObject.set(x, "renderedDosageInstruction", value.asInstanceOf[js.Any])
+    
+    inline def setRenderedDosageInstructionUndefined: Self = StObject.set(x, "renderedDosageInstruction", js.undefined)
     
     inline def setReported(value: Boolean): Self = StObject.set(x, "reported", value.asInstanceOf[js.Any])
     
@@ -395,18 +402,6 @@ object MedicationRequest {
     
     inline def set_doNotPerformUndefined: Self = StObject.set(x, "_doNotPerform", js.undefined)
     
-    inline def set_instantiatesCanonical(value: js.Array[Element]): Self = StObject.set(x, "_instantiatesCanonical", value.asInstanceOf[js.Any])
-    
-    inline def set_instantiatesCanonicalUndefined: Self = StObject.set(x, "_instantiatesCanonical", js.undefined)
-    
-    inline def set_instantiatesCanonicalVarargs(value: Element*): Self = StObject.set(x, "_instantiatesCanonical", js.Array(value*))
-    
-    inline def set_instantiatesUri(value: js.Array[Element]): Self = StObject.set(x, "_instantiatesUri", value.asInstanceOf[js.Any])
-    
-    inline def set_instantiatesUriUndefined: Self = StObject.set(x, "_instantiatesUri", js.undefined)
-    
-    inline def set_instantiatesUriVarargs(value: Element*): Self = StObject.set(x, "_instantiatesUri", js.Array(value*))
-    
     inline def set_intent(value: Element): Self = StObject.set(x, "_intent", value.asInstanceOf[js.Any])
     
     inline def set_intentUndefined: Self = StObject.set(x, "_intent", js.undefined)
@@ -414,6 +409,10 @@ object MedicationRequest {
     inline def set_priority(value: Element): Self = StObject.set(x, "_priority", value.asInstanceOf[js.Any])
     
     inline def set_priorityUndefined: Self = StObject.set(x, "_priority", js.undefined)
+    
+    inline def set_renderedDosageInstruction(value: Element): Self = StObject.set(x, "_renderedDosageInstruction", value.asInstanceOf[js.Any])
+    
+    inline def set_renderedDosageInstructionUndefined: Self = StObject.set(x, "_renderedDosageInstruction", js.undefined)
     
     inline def set_reported(value: Element): Self = StObject.set(x, "_reported", value.asInstanceOf[js.Any])
     

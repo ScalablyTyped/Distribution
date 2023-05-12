@@ -28,6 +28,14 @@ trait Currentuseractor extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['link-with-type'] */ js.Any
   ] = js.undefined
   
+  var repository_discussions: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['link-with-type'] */ js.Any
+  ] = js.undefined
+  
+  var repository_discussions_category: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['link-with-type'] */ js.Any
+  ] = js.undefined
+  
   var security_advisories: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['link-with-type'] */ js.Any
   ] = js.undefined
@@ -84,6 +92,18 @@ object Currentuseractor {
     ): Self = StObject.set(x, "current_user_public", value.asInstanceOf[js.Any])
     
     inline def setCurrent_user_publicUndefined: Self = StObject.set(x, "current_user_public", js.undefined)
+    
+    inline def setRepository_discussions(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['link-with-type'] */ js.Any
+    ): Self = StObject.set(x, "repository_discussions", value.asInstanceOf[js.Any])
+    
+    inline def setRepository_discussionsUndefined: Self = StObject.set(x, "repository_discussions", js.undefined)
+    
+    inline def setRepository_discussions_category(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['link-with-type'] */ js.Any
+    ): Self = StObject.set(x, "repository_discussions_category", value.asInstanceOf[js.Any])
+    
+    inline def setRepository_discussions_categoryUndefined: Self = StObject.set(x, "repository_discussions_category", js.undefined)
     
     inline def setSecurity_advisories(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['link-with-type'] */ js.Any

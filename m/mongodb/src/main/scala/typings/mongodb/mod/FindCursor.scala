@@ -26,7 +26,7 @@ open class FindCursor[TSchema] () extends AbstractCursor[TSchema, AbstractCursor
     * Allows disk use for blocking sort operations exceeding 100MB memory. (MongoDB 3.2 or higher)
     *
     * @remarks
-    * {@link https://docs.mongodb.com/manual/reference/command/find/#find-cmd-allowdiskuse | find command allowDiskUse documentation}
+    * {@link https://www.mongodb.com/docs/manual/reference/command/find/#find-cmd-allowdiskuse | find command allowDiskUse documentation}
     */
   def allowDiskUse(): this.type = js.native
   def allowDiskUse(allow: Boolean): this.type = js.native
@@ -52,17 +52,10 @@ open class FindCursor[TSchema] () extends AbstractCursor[TSchema, AbstractCursor
     * @deprecated Use `collection.estimatedDocumentCount` or `collection.countDocuments` instead
     */
   def count(): js.Promise[scala.Double] = js.native
-  /** @deprecated Use `collection.estimatedDocumentCount` or `collection.countDocuments` instead. Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  def count(callback: Callback[scala.Double]): Unit = js.native
-  /** @deprecated Use `collection.estimatedDocumentCount` or `collection.countDocuments` instead. */
   def count(options: CountOptions): js.Promise[scala.Double] = js.native
-  /** @deprecated Use `collection.estimatedDocumentCount` or `collection.countDocuments` instead. Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  def count(options: CountOptions, callback: Callback[scala.Double]): Unit = js.native
   
   /** Execute the explain for the cursor */
   def explain(): js.Promise[Document] = js.native
-  /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  def explain(callback: Callback[Any]): Unit = js.native
   def explain(verbosity: ExplainVerbosityLike): js.Promise[Document] = js.native
   
   /** Set the cursor query */

@@ -38,6 +38,9 @@ object srcLoadersMaterialLoaderMod {
       onError: js.Function1[/* event */ js.Error | ErrorEvent, Unit]
     ): Unit = js.native
     
+    def loadAsync(url: String): js.Promise[Material] = js.native
+    def loadAsync(url: String, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[Material] = js.native
+    
     def parse(json: Any): Material = js.native
     
     def setTextures(textures: StringDictionary[Texture]): this.type = js.native

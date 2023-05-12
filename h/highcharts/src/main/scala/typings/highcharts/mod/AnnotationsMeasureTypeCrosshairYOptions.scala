@@ -21,7 +21,7 @@ trait AnnotationsMeasureTypeCrosshairYOptions extends StObject {
     * (Highstock) The marker-end defines the arrowhead that will be drawn at
     * the final vertex of the given crosshair's path.
     */
-  var markerEnd: js.UndefOr[String] = js.undefined
+  var markerEnd: js.UndefOr[OptionsMarkerEndValue] = js.undefined
   
   /**
     * (Highstock) The Z index of the crosshair in annotation.
@@ -46,7 +46,7 @@ object AnnotationsMeasureTypeCrosshairYOptions {
     
     inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    inline def setMarkerEnd(value: String): Self = StObject.set(x, "markerEnd", value.asInstanceOf[js.Any])
+    inline def setMarkerEnd(value: OptionsMarkerEndValue): Self = StObject.set(x, "markerEnd", value.asInstanceOf[js.Any])
     
     inline def setMarkerEndUndefined: Self = StObject.set(x, "markerEnd", js.undefined)
     

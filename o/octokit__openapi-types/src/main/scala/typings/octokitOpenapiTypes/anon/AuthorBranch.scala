@@ -9,7 +9,7 @@ trait AuthorBranch extends StObject {
   /** @description object containing information about the author. */
   var author: js.UndefOr[EmailName] = js.undefined
   
-  /** @description The branch name. Default: the repository’s default branch (usually `master`) */
+  /** @description The branch name. Default: the repository’s default branch */
   var branch: js.UndefOr[String] = js.undefined
   
   /** @description object containing information about the committer. */

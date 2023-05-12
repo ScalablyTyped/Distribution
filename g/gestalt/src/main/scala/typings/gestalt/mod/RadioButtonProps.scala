@@ -3,7 +3,6 @@ package typings.gestalt.mod
 import typings.gestalt.anon.Checked
 import typings.gestalt.gestaltStrings.md
 import typings.gestalt.gestaltStrings.sm
-import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
 import typings.std.Event
 import typings.std.HTMLInputElement
@@ -19,7 +18,7 @@ trait RadioButtonProps extends StObject {
   
   var id: String
   
-  var image: js.UndefOr[ReactNode] = js.undefined
+  var image: js.UndefOr[Node] = js.undefined
   
   var label: js.UndefOr[String] = js.undefined
   
@@ -57,7 +56,7 @@ object RadioButtonProps {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setImage(value: ReactNode): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Node): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     

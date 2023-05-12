@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Identifiers for common MapTypes. Specify these by value, or by using the
-  * constant&#39;s name. For example, <code>'satellite'</code> or
-  * <code>google.maps.MapTypeId.SATELLITE</code>.
-  */
 @JSGlobal("google.maps.MapTypeId")
 @js.native
 object MapTypeId extends StObject {

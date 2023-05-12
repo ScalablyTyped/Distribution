@@ -22,12 +22,12 @@ trait InstalledComponent extends StObject {
   var isRoot: js.UndefOr[IsRoot] = js.undefined
   
   /**
-    * The most recent deployment source that brought the component to the Greengrass core device. For a thing group deployment or thing deployment, the source will be the The ID of the deployment. and for local deployments it will be LOCAL.
+    * The most recent deployment source that brought the component to the Greengrass core device. For a thing group deployment or thing deployment, the source will be the The ID of the deployment. and for local deployments it will be LOCAL.  Any deployment will attempt to reinstall currently broken components on the device, which will update the last installation source. 
     */
   var lastInstallationSource: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The last time the Greengrass core device sent a message containing a certain component to the Amazon Web Services Cloud. A component does not need to see a state change for this field to update.
+    * The last time the Greengrass core device sent a message containing a component's state to the Amazon Web Services Cloud. A component does not need to see a state change for this field to update.
     */
   var lastReportedTimestamp: js.UndefOr[js.Date] = js.undefined
   

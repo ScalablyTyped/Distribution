@@ -22,7 +22,8 @@ trait TypeofCheckboxControlValu
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    `false`, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[CheckboxControlValueAccessor, scala.Nothing] = js.native

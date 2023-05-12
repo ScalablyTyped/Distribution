@@ -1,6 +1,6 @@
 package typings.undici.mod
 
-import typings.undici.typesMockClientMod.Options
+import typings.undici.typesMockClientMod.MockClient.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("undici", "MockClient")
 @js.native
 open class MockClient protected ()
-  extends typings.undici.typesMockClientMod.^ {
+  extends typings.undici.typesMockClientMod.default {
   def this(origin: String, options: Options) = this()
 }

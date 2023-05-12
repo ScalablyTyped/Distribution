@@ -82,6 +82,8 @@ object mod extends Shortcut {
     
     def flush(): Unit = js.native
     def flush(callback: js.Function): Unit = js.native
+    @JSName("flush")
+    def flush_Promise(): js.Promise[Unit] = js.native
     
     def getServiceName(): js.UndefOr[String] = js.native
     
@@ -269,6 +271,8 @@ object mod extends Shortcut {
     
     var containerId: js.UndefOr[String] = js.undefined
     
+    var contextManager: js.UndefOr[String] = js.undefined
+    
     var contextPropagationOnly: js.UndefOr[Boolean] = js.undefined
     
     var disableInstrumentations: js.UndefOr[String | js.Array[String]] = js.undefined
@@ -329,6 +333,8 @@ object mod extends Shortcut {
     
     // Also support `number`, but as we're removing this functionality soon, there's no need to advertise it
     var metricsLimit: js.UndefOr[Double] = js.undefined
+    
+    var opentelemetryBridgeEnabled: js.UndefOr[Boolean] = js.undefined
     
     var payloadLogFile: js.UndefOr[String] = js.undefined
     
@@ -466,6 +472,10 @@ object mod extends Shortcut {
       
       inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
       
+      inline def setContextManager(value: String): Self = StObject.set(x, "contextManager", value.asInstanceOf[js.Any])
+      
+      inline def setContextManagerUndefined: Self = StObject.set(x, "contextManager", js.undefined)
+      
       inline def setContextPropagationOnly(value: Boolean): Self = StObject.set(x, "contextPropagationOnly", value.asInstanceOf[js.Any])
       
       inline def setContextPropagationOnlyUndefined: Self = StObject.set(x, "contextPropagationOnly", js.undefined)
@@ -593,6 +603,10 @@ object mod extends Shortcut {
       inline def setMetricsLimit(value: Double): Self = StObject.set(x, "metricsLimit", value.asInstanceOf[js.Any])
       
       inline def setMetricsLimitUndefined: Self = StObject.set(x, "metricsLimit", js.undefined)
+      
+      inline def setOpentelemetryBridgeEnabled(value: Boolean): Self = StObject.set(x, "opentelemetryBridgeEnabled", value.asInstanceOf[js.Any])
+      
+      inline def setOpentelemetryBridgeEnabledUndefined: Self = StObject.set(x, "opentelemetryBridgeEnabled", js.undefined)
       
       inline def setPayloadLogFile(value: String): Self = StObject.set(x, "payloadLogFile", value.asInstanceOf[js.Any])
       
@@ -1217,11 +1231,16 @@ object mod extends Shortcut {
   
   trait TransactionOptions extends StObject {
     
+    // `childOf` is a W3C trace-context 'traceparent' string. Passing a
+    // Transaction or Span is deprecated.
     var childOf: js.UndefOr[Transaction | Span | String] = js.undefined
     
+    // A W3C trace-context 'tracestate' string.
     var links: js.UndefOr[js.Array[Link]] = js.undefined
     
     var startTime: js.UndefOr[Double] = js.undefined
+    
+    var tracestate: js.UndefOr[String] = js.undefined
   }
   object TransactionOptions {
     
@@ -1246,6 +1265,10 @@ object mod extends Shortcut {
       inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
       inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+      
+      inline def setTracestate(value: String): Self = StObject.set(x, "tracestate", value.asInstanceOf[js.Any])
+      
+      inline def setTracestateUndefined: Self = StObject.set(x, "tracestate", js.undefined)
     }
   }
   

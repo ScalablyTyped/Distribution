@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /** Event message for 'stopped' event type.
 		The event indicates that the execution of the debuggee has stopped due to some condition.
-		This can be caused by a break point previously set, a stepping request has completed, by executing a debugger statement etc.
+		This can be caused by a breakpoint previously set, a stepping request has completed, by executing a debugger statement etc.
 	*/
 trait StoppedEvent
   extends StObject

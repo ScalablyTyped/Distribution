@@ -16,7 +16,8 @@ open class Path () extends Layer {
   
   def getElement(): js.UndefOr[Element] = js.native
   
-  var options: PathOptions = js.native
+  @JSName("options")
+  var options_Path: PathOptions = js.native
   
   def redraw(): this.type = js.native
   

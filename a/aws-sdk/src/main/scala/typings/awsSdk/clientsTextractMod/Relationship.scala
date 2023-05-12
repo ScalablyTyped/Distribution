@@ -12,7 +12,7 @@ trait Relationship extends StObject {
   var Ids: js.UndefOr[IdList] = js.undefined
   
   /**
-    * The type of relationship that the blocks in the IDs array have with the current block. The relationship can be VALUE or CHILD. A relationship of type VALUE is a list that contains the ID of the VALUE block that's associated with the KEY of a key-value pair. A relationship of type CHILD is a list of IDs that identify WORD blocks in the case of lines Cell blocks in the case of Tables, and WORD blocks in the case of Selection Elements.
+    * The type of relationship between the blocks in the IDs array and the current block. The following list describes the relationship types that can be returned.     VALUE - A list that contains the ID of the VALUE block that's associated with the KEY of a key-value pair.    CHILD - A list of IDs that identify blocks found within the current block object. For example, WORD blocks have a CHILD relationship to the LINE block type.    MERGED_CELL - A list of IDs that identify each of the MERGED_CELL block types in a table.    ANSWER - A list that contains the ID of the QUERY_RESULT block that’s associated with the corresponding QUERY block.     TABLE - A list of IDs that identify associated TABLE block types.     TABLE_TITLE - A list that contains the ID for the TABLE_TITLE block type in a table.     TABLE_FOOTER - A list of IDs that identify the TABLE_FOOTER block types in a table.   
     */
   var Type: js.UndefOr[RelationshipType] = js.undefined
 }

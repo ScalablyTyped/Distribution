@@ -1,8 +1,5 @@
 package typings.fhir.r5Mod
 
-import typings.fhir.fhirStrings.changes
-import typings.fhir.fhirStrings.snapshot
-import typings.fhir.fhirStrings.working
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,8 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CompositionSection
   extends StObject
      with BackboneElement {
-  
-  var _mode: js.UndefOr[Element] = js.undefined
   
   var _title: js.UndefOr[Element] = js.undefined
   
@@ -40,11 +35,6 @@ trait CompositionSection
     * Typically, sections in a doument are about the subject of the document, whether that is a  patient, or group of patients, location, or device, or whatever. For some kind of documents, some sections actually contain data about related entities. Typical examples are  a section in a newborn discharge summary concerning the mother, or family history documents, with a section about each family member, though there are many other examples.
     */
   var focus: js.UndefOr[Reference] = js.undefined
-  
-  /**
-    * This element is labeled as a modifier because a change list must not be misunderstood as a complete list.
-    */
-  var mode: js.UndefOr[working | snapshot | changes] = js.undefined
   
   /**
     * Applications SHOULD render ordered lists in the order provided, but MAY allow users to re-order based on their own preferences as well. If there is no order specified, the order is unknown, though there may still be some order.
@@ -100,10 +90,6 @@ object CompositionSection {
     
     inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
     
-    inline def setMode(value: working | snapshot | changes): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
-    
-    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
-    
     inline def setOrderedBy(value: CodeableConcept): Self = StObject.set(x, "orderedBy", value.asInstanceOf[js.Any])
     
     inline def setOrderedByUndefined: Self = StObject.set(x, "orderedBy", js.undefined)
@@ -121,10 +107,6 @@ object CompositionSection {
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
-    
-    inline def set_mode(value: Element): Self = StObject.set(x, "_mode", value.asInstanceOf[js.Any])
-    
-    inline def set_modeUndefined: Self = StObject.set(x, "_mode", js.undefined)
     
     inline def set_title(value: Element): Self = StObject.set(x, "_title", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,21 @@ trait LayerInfo extends StObject {
   var allowAttachments: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to enable or disable attribute update from the feature's form.
+    * _(Since 4.26)_ Indicates whether to enable or disable attachments while creating features.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
+    */
+  var attachmentsOnCreateEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * _(Since 4.26)_ Indicates whether to enable or disable attachments while updating existing features.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
+    */
+  var attachmentsOnUpdateEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Indicates whether to enable or disable attribute updates from the feature's form.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
     */
@@ -86,6 +100,14 @@ object LayerInfo {
     inline def setAllowAttachments(value: Boolean): Self = StObject.set(x, "allowAttachments", value.asInstanceOf[js.Any])
     
     inline def setAllowAttachmentsUndefined: Self = StObject.set(x, "allowAttachments", js.undefined)
+    
+    inline def setAttachmentsOnCreateEnabled(value: Boolean): Self = StObject.set(x, "attachmentsOnCreateEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setAttachmentsOnCreateEnabledUndefined: Self = StObject.set(x, "attachmentsOnCreateEnabled", js.undefined)
+    
+    inline def setAttachmentsOnUpdateEnabled(value: Boolean): Self = StObject.set(x, "attachmentsOnUpdateEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setAttachmentsOnUpdateEnabledUndefined: Self = StObject.set(x, "attachmentsOnUpdateEnabled", js.undefined)
     
     inline def setAttributeUpdatesEnabled(value: Boolean): Self = StObject.set(x, "attributeUpdatesEnabled", value.asInstanceOf[js.Any])
     

@@ -25,6 +25,8 @@ trait ReadonlyRequiredOmitToStr extends StObject {
   
   val falseStr: String
   
+  val flowCollectionPadding: Boolean
+  
   val indentSeq: Boolean
   
   val lineWidth: Double
@@ -52,6 +54,7 @@ object ReadonlyRequiredOmitToStr {
     doubleQuotedAsJSON: Boolean,
     doubleQuotedMinMultiLineLength: Double,
     falseStr: String,
+    flowCollectionPadding: Boolean,
     indentSeq: Boolean,
     lineWidth: Double,
     minContentWidth: Double,
@@ -61,7 +64,7 @@ object ReadonlyRequiredOmitToStr {
     trueStr: String,
     verifyAliasOrder: Boolean
   ): ReadonlyRequiredOmitToStr = {
-    val __obj = js.Dynamic.literal(blockQuote = blockQuote.asInstanceOf[js.Any], commentString = js.Any.fromFunction1(commentString), defaultKeyType = defaultKeyType.asInstanceOf[js.Any], defaultStringType = defaultStringType.asInstanceOf[js.Any], directives = directives.asInstanceOf[js.Any], doubleQuotedAsJSON = doubleQuotedAsJSON.asInstanceOf[js.Any], doubleQuotedMinMultiLineLength = doubleQuotedMinMultiLineLength.asInstanceOf[js.Any], falseStr = falseStr.asInstanceOf[js.Any], indentSeq = indentSeq.asInstanceOf[js.Any], lineWidth = lineWidth.asInstanceOf[js.Any], minContentWidth = minContentWidth.asInstanceOf[js.Any], nullStr = nullStr.asInstanceOf[js.Any], simpleKeys = simpleKeys.asInstanceOf[js.Any], singleQuote = singleQuote.asInstanceOf[js.Any], trueStr = trueStr.asInstanceOf[js.Any], verifyAliasOrder = verifyAliasOrder.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(blockQuote = blockQuote.asInstanceOf[js.Any], commentString = js.Any.fromFunction1(commentString), defaultKeyType = defaultKeyType.asInstanceOf[js.Any], defaultStringType = defaultStringType.asInstanceOf[js.Any], directives = directives.asInstanceOf[js.Any], doubleQuotedAsJSON = doubleQuotedAsJSON.asInstanceOf[js.Any], doubleQuotedMinMultiLineLength = doubleQuotedMinMultiLineLength.asInstanceOf[js.Any], falseStr = falseStr.asInstanceOf[js.Any], flowCollectionPadding = flowCollectionPadding.asInstanceOf[js.Any], indentSeq = indentSeq.asInstanceOf[js.Any], lineWidth = lineWidth.asInstanceOf[js.Any], minContentWidth = minContentWidth.asInstanceOf[js.Any], nullStr = nullStr.asInstanceOf[js.Any], simpleKeys = simpleKeys.asInstanceOf[js.Any], singleQuote = singleQuote.asInstanceOf[js.Any], trueStr = trueStr.asInstanceOf[js.Any], verifyAliasOrder = verifyAliasOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlyRequiredOmitToStr]
   }
   
@@ -83,6 +86,8 @@ object ReadonlyRequiredOmitToStr {
     inline def setDoubleQuotedMinMultiLineLength(value: Double): Self = StObject.set(x, "doubleQuotedMinMultiLineLength", value.asInstanceOf[js.Any])
     
     inline def setFalseStr(value: String): Self = StObject.set(x, "falseStr", value.asInstanceOf[js.Any])
+    
+    inline def setFlowCollectionPadding(value: Boolean): Self = StObject.set(x, "flowCollectionPadding", value.asInstanceOf[js.Any])
     
     inline def setIndentSeq(value: Boolean): Self = StObject.set(x, "indentSeq", value.asInstanceOf[js.Any])
     

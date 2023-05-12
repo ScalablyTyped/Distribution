@@ -12,7 +12,7 @@ open class Radio protected () extends Component[Checked, Any] {
   def this(props: HTMLAttributesidclassName & Checked) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: HTMLAttributesidclassName & Checked, context: Any) = this()
 }

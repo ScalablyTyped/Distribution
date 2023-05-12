@@ -1,6 +1,6 @@
 package typings.itWs
 
-import typings.std.AsyncIterable
+import typings.std.AsyncGenerator
 import typings.ws.mod.WebSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,7 +17,7 @@ object distSrcSourceMod {
   @js.native
   trait ConnectedSource
     extends StObject
-       with AsyncIterable[js.typedarray.Uint8Array] {
+       with AsyncGenerator[js.typedarray.Uint8Array, Any, Any] {
     
     def connected(): js.Promise[Unit] = js.native
   }

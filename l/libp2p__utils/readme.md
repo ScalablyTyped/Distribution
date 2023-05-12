@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__utils
 
-Typings are for version 3.0.2
+Typings are for version 3.0.11
 
 ## Library description:
 Package to aggregate shared logic and dependencies for the libp2p ecosystem

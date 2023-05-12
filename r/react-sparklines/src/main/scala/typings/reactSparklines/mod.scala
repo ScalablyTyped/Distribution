@@ -29,7 +29,7 @@ object mod {
     def this(props: SparklinesProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SparklinesProps, context: Any) = this()
   }
@@ -41,7 +41,7 @@ object mod {
     def this(props: SparklinesBarsProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SparklinesBarsProps, context: Any) = this()
   }
@@ -53,7 +53,7 @@ object mod {
     def this(props: SparklinesCurveProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SparklinesCurveProps, context: Any) = this()
   }
@@ -65,7 +65,7 @@ object mod {
     def this(props: SparklinesLineProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SparklinesLineProps, context: Any) = this()
   }
@@ -77,7 +77,7 @@ object mod {
     def this(props: SparklinesNormalBandProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SparklinesNormalBandProps, context: Any) = this()
   }
@@ -89,7 +89,7 @@ object mod {
     def this(props: SparklinesReferenceLineProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SparklinesReferenceLineProps, context: Any) = this()
   }
@@ -101,7 +101,7 @@ object mod {
     def this(props: SparklinesSpotsProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SparklinesSpotsProps, context: Any) = this()
   }
@@ -113,7 +113,7 @@ object mod {
     def this(props: SparklinesTextProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SparklinesTextProps, context: Any) = this()
   }

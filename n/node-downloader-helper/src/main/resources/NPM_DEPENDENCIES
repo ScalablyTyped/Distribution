@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "node-downloader-helper" : "2.1.4"
+      "node-downloader-helper" : "2.1.7"
     }
   ],
   "test-dependencies" : [
     {
-      "node-downloader-helper" : "2.1.4"
+      "node-downloader-helper" : "2.1.7"
     }
   ],
   "compile-devDependencies" : [

@@ -3,7 +3,6 @@ package typings.jsSdsl
 import typings.jsSdsl.distEsmContainerContainerBaseMod.IteratorType
 import typings.jsSdsl.distEsmContainerContainerBaseMod.initContainer
 import typings.jsSdsl.distEsmContainerSequentialContainerBaseRandomIteratorMod.RandomIterator
-import typings.std.Generator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,8 +19,14 @@ object distEsmContainerSequentialContainerDequeMod {
   
   @JSImport("js-sdsl/dist/esm/container/SequentialContainer/Deque", "DequeIterator")
   @js.native
-  /* protected */ open class DequeIterator[T] () extends RandomIterator[T] {
-    /* protected */ def this(iteratorType: IteratorType) = this()
+  open class DequeIterator[T] protected () extends RandomIterator[T] {
+    def this(node: Double, container: Deque[T]) = this()
+    def this(node: Double, container: Deque[T], iteratorType: IteratorType) = this()
+    
+    @JSName("container")
+    val container_DequeIterator: Deque[T] = js.native
+    
+    def equals(iter: DequeIterator[T]): Boolean = js.native
   }
   
   @js.native
@@ -30,26 +35,27 @@ object distEsmContainerSequentialContainerDequeMod {
     
     /**
       * @description Remove all elements after the specified position (excluding the specified position).
-      * @param pos The previous position of the _first removed element.
-      * @example deque.cut(1); // Then deque's size will be 2. deque -> [0, 1]
+      * @param pos - The previous position of the first removed element.
+      * @returns The size of the container after cutting.
+      * @example
+      * deque.cut(1); // Then deque's size will be 2. deque -> [0, 1]
       */
-    def cut(pos: Double): Unit = js.native
+    def cut(pos: Double): Double = js.native
     
     def eraseElementByIterator(iter: DequeIterator[T]): DequeIterator[T] = js.native
     
-    @JSName(js.Symbol.iterator)
-    var iterator_Deque: js.Function0[Generator[T, Unit, Any]] = js.native
-    
     /**
       * @description Remove the _first element.
+      * @returns The element you popped.
       */
-    def popFront(): Unit = js.native
+    def popFront(): js.UndefOr[T] = js.native
     
     /**
       * @description Push the element to the front.
-      * @param element The element you want to push.
+      * @param element - The element you want to push.
+      * @returns The size of queue after pushing.
       */
-    def pushFront(element: T): Unit = js.native
+    def pushFront(element: T): Double = js.native
     
     /**
       * @description Remove as much useless space as possible.

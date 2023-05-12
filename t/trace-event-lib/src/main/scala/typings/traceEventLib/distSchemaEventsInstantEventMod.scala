@@ -1,6 +1,7 @@
 package typings.traceEventLib
 
 import typings.traceEventLib.distSchemaEventsEventWithStackMod.EventWithStack
+import typings.traceEventLib.distSchemaEventsTraceEventMod.TraceEvent
 import typings.traceEventLib.traceEventLibStrings.g
 import typings.traceEventLib.traceEventLibStrings.i
 import typings.traceEventLib.traceEventLibStrings.p
@@ -13,7 +14,8 @@ object distSchemaEventsInstantEventMod {
   
   trait GlobalInstantEvent
     extends StObject
-       with InstantEvent {
+       with InstantEvent
+       with TraceEvent {
     
     /** @inheritDoc */
     @JSName("s")
@@ -74,7 +76,8 @@ object distSchemaEventsInstantEventMod {
   
   trait ProcessInstantEvent
     extends StObject
-       with InstantEvent {
+       with InstantEvent
+       with TraceEvent {
     
     /** @inheritDoc */
     @JSName("s")
@@ -96,7 +99,8 @@ object distSchemaEventsInstantEventMod {
   
   trait ThreadInstantEvent
     extends StObject
-       with InstantEvent {
+       with InstantEvent
+       with TraceEvent {
     
     /** @inheritDoc */
     @JSName("s")

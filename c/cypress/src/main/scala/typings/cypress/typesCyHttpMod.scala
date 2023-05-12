@@ -66,7 +66,7 @@ object typesCyHttpMod {
     *   hostname: 'localhost',
     *   port: 80,
     *   path: '/',
-    *   agent: false  // Create a new agent just for this one request
+    *   agent: false,  // Create a new agent just for this one request
     * }, (res) => {
     *   // Do stuff with response
     * });
@@ -104,8 +104,11 @@ object typesCyHttpMod {
     *
     * For backward compatibility, `res` will only emit `'error'` if there is an`'error'` listener registered.
     *
-    * Node.js does not check whether Content-Length and the length of the
-    * body which has been transmitted are equal or not.
+    * Set `Content-Length` header to limit the response body size.
+    * If `response.strictContentLength` is set to `true`, mismatching the`Content-Length` header value will result in an `Error` being thrown,
+    * identified by `code:``'ERR_HTTP_CONTENT_LENGTH_MISMATCH'`.
+    *
+    * `Content-Length` value should be in bytes, not characters. Use `Buffer.byteLength()` to determine the length of the body in bytes.
     * @since v0.1.17
     */
   @JSImport("cypress/types/cy-http", "ClientRequest")
@@ -123,7 +126,7 @@ object typesCyHttpMod {
   /**
     * An `IncomingMessage` object is created by {@link Server} or {@link ClientRequest} and passed as the first argument to the `'request'` and `'response'` event respectively. It may be used to
     * access response
-    * status, headers and data.
+    * status, headers, and data.
     *
     * Different from its `socket` value which is a subclass of `stream.Duplex`, the`IncomingMessage` itself extends `stream.Readable` and is created separately to
     * parse and emit the incoming HTTP headers and payload, as the underlying socket
@@ -142,8 +145,8 @@ object typesCyHttpMod {
   val METHODS: js.Array[String] = js.native
   
   /**
-    * This class serves as the parent class of {@link ClientRequest} and {@link ServerResponse}. It is an abstract of outgoing message from
-    * the perspective of the participants of HTTP transaction.
+    * This class serves as the parent class of {@link ClientRequest} and {@link ServerResponse}. It is an abstract outgoing message from
+    * the perspective of the participants of an HTTP transaction.
     * @since v0.1.17
     */
   @JSImport("cypress/types/cy-http", "OutgoingMessage")
@@ -255,7 +258,7 @@ object typesCyHttpMod {
     * const server = http.createServer((req, res) => {
     *   res.writeHead(200, { 'Content-Type': 'application/json' });
     *   res.end(JSON.stringify({
-    *     data: 'Hello World!'
+    *     data: 'Hello World!',
     *   }));
     * });
     *
@@ -317,10 +320,10 @@ object typesCyHttpMod {
     * upload a file with a POST request, then write to the `ClientRequest` object.
     *
     * ```js
-    * const http = require('http');
+    * const http = require('node:http');
     *
     * const postData = JSON.stringify({
-    *   'msg': 'Hello World!'
+    *   'msg': 'Hello World!',
     * });
     *
     * const options = {
@@ -330,8 +333,8 @@ object typesCyHttpMod {
     *   method: 'POST',
     *   headers: {
     *     'Content-Type': 'application/json',
-    *     'Content-Length': Buffer.byteLength(postData)
-    *   }
+    *     'Content-Length': Buffer.byteLength(postData),
+    *   },
     * };
     *
     * const req = http.request(options, (res) => {
@@ -418,7 +421,7 @@ object typesCyHttpMod {
     *    * `'data'` any number of times, on the `res` object
     * * (connection closed here)
     * * `'aborted'` on the `res` object
-    * * `'error'` on the `res` object with an error with message`'Error: aborted'` and code `'ECONNRESET'`.
+    * * `'error'` on the `res` object with an error with message`'Error: aborted'` and code `'ECONNRESET'`
     * * `'close'`
     * * `'close'` on the `res` object
     *
@@ -426,7 +429,7 @@ object typesCyHttpMod {
     * events will be emitted in the following order:
     *
     * * (`req.destroy()` called here)
-    * * `'error'` with an error with message `'Error: socket hang up'` and code`'ECONNRESET'`
+    * * `'error'` with an error with message `'Error: socket hang up'` and code`'ECONNRESET'`, or the error with which `req.destroy()` was called
     * * `'close'`
     *
     * If `req.destroy()` is called before the connection succeeds, the following
@@ -434,7 +437,7 @@ object typesCyHttpMod {
     *
     * * `'socket'`
     * * (`req.destroy()` called here)
-    * * `'error'` with an error with message `'Error: socket hang up'` and code`'ECONNRESET'`
+    * * `'error'` with an error with message `'Error: socket hang up'` and code`'ECONNRESET'`, or the error with which `req.destroy()` was called
     * * `'close'`
     *
     * If `req.destroy()` is called after the response is received, the following
@@ -445,7 +448,7 @@ object typesCyHttpMod {
     *    * `'data'` any number of times, on the `res` object
     * * (`req.destroy()` called here)
     * * `'aborted'` on the `res` object
-    * * `'error'` on the `res` object with an error with message`'Error: aborted'` and code `'ECONNRESET'`.
+    * * `'error'` on the `res` object with an error with message `'Error: aborted'`and code `'ECONNRESET'`, or the error with which `req.destroy()` was called
     * * `'close'`
     * * `'close'` on the `res` object
     *
@@ -481,8 +484,9 @@ object typesCyHttpMod {
     * Setting the `timeout` option or using the `setTimeout()` function will
     * not abort the request or do anything besides add a `'timeout'` event.
     *
-    * Passing an `AbortSignal` and then calling `abort` on the corresponding`AbortController` will behave the same way as calling `.destroy()` on the
-    * request itself.
+    * Passing an `AbortSignal` and then calling `abort()` on the corresponding`AbortController` will behave the same way as calling `.destroy()` on the
+    * request. Specifically, the `'error'` event will be emitted with an error with
+    * the message `'AbortError: The operation was aborted'`, the code `'ABORT_ERR'`and the `cause`, if one was provided.
     * @since v0.3.6
     */
   inline def request(options: RequestOptions): typings.node.httpMod.ClientRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any]).asInstanceOf[typings.node.httpMod.ClientRequest]
@@ -506,28 +510,75 @@ object typesCyHttpMod {
   ): typings.node.httpMod.ClientRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.node.httpMod.ClientRequest]
   
   /**
-    * Set the maximum number of idle HTTP parsers. Default: 1000.
-    * @param count
+    * Set the maximum number of idle HTTP parsers.
     * @since v18.8.0, v16.18.0
+    * @param [max=1000]
     */
-  inline def setMaxIdleHTTPParsers(count: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxIdleHTTPParsers")(count.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setMaxIdleHTTPParsers(max: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxIdleHTTPParsers")(max.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
-    * Performs the low-level validations on the provided name that are done when `res.setHeader(name, value)` is called.
-    * Passing illegal value as name will result in a TypeError being thrown, identified by `code: 'ERR_INVALID_HTTP_TOKEN'`.
-    * @param name Header name
+    * Performs the low-level validations on the provided `name` that are done when`res.setHeader(name, value)` is called.
+    *
+    * Passing illegal value as `name` will result in a `TypeError` being thrown,
+    * identified by `code: 'ERR_INVALID_HTTP_TOKEN'`.
+    *
+    * It is not necessary to use this method before passing headers to an HTTP request
+    * or response. The HTTP module will automatically validate such headers.
+    * Examples:
+    *
+    * Example:
+    *
+    * ```js
+    * const { validateHeaderName } = require('node:http');
+    *
+    * try {
+    *   validateHeaderName('');
+    * } catch (err) {
+    *   console.error(err instanceof TypeError); // --> true
+    *   console.error(err.code); // --> 'ERR_INVALID_HTTP_TOKEN'
+    *   console.error(err.message); // --> 'Header name must be a valid HTTP token [""]'
+    * }
+    * ```
     * @since v14.3.0
+    * @param [label='Header name'] Label for error message.
     */
   inline def validateHeaderName(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateHeaderName")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
-    * Performs the low-level validations on the provided value that are done when `res.setHeader(name, value)` is called.
-    * Passing illegal value as value will result in a TypeError being thrown.
-    * - Undefined value error is identified by `code: 'ERR_HTTP_INVALID_HEADER_VALUE'`.
-    * - Invalid value character error is identified by `code: 'ERR_INVALID_CHAR'`.
+    * Performs the low-level validations on the provided `value` that are done when`res.setHeader(name, value)` is called.
+    *
+    * Passing illegal value as `value` will result in a `TypeError` being thrown.
+    *
+    * * Undefined value error is identified by `code: 'ERR_HTTP_INVALID_HEADER_VALUE'`.
+    * * Invalid value character error is identified by `code: 'ERR_INVALID_CHAR'`.
+    *
+    * It is not necessary to use this method before passing headers to an HTTP request
+    * or response. The HTTP module will automatically validate such headers.
+    *
+    * Examples:
+    *
+    * ```js
+    * const { validateHeaderValue } = require('node:http');
+    *
+    * try {
+    *   validateHeaderValue('x-my-header', undefined);
+    * } catch (err) {
+    *   console.error(err instanceof TypeError); // --> true
+    *   console.error(err.code === 'ERR_HTTP_INVALID_HEADER_VALUE'); // --> true
+    *   console.error(err.message); // --> 'Invalid value "undefined" for header "x-my-header"'
+    * }
+    *
+    * try {
+    *   validateHeaderValue('x-my-header', 'oʊmɪɡə');
+    * } catch (err) {
+    *   console.error(err instanceof TypeError); // --> true
+    *   console.error(err.code === 'ERR_INVALID_CHAR'); // --> true
+    *   console.error(err.message); // --> 'Invalid character in header content ["x-my-header"]'
+    * }
+    * ```
+    * @since v14.3.0
     * @param name Header name
     * @param value Header value
-    * @since v14.3.0
     */
   inline def validateHeaderValue(name: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateHeaderValue")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

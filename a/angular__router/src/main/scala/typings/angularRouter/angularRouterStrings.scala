@@ -2,6 +2,7 @@ package typings.angularRouter
 
 import typings.angularRouter.mod.InitialNavigation
 import typings.angularRouter.mod.NavigationTrigger
+import typings.angularRouter.mod.OnSameUrlNavigation
 import typings.angularRouter.mod.QueryParamsHandling
 import typings.angularRouter.mod._RunGuardsAndResolvers
 import org.scalablytyped.runtime.StObject
@@ -15,14 +16,14 @@ object angularRouterStrings {
   inline def `[routerLinkActive]`: `[routerLinkActive]` = "[routerLinkActive]".asInstanceOf[`[routerLinkActive]`]
   
   @js.native
+  sealed trait `[routerLink]` extends StObject
+  inline def `[routerLink]`: `[routerLink]` = "[routerLink]".asInstanceOf[`[routerLink]`]
+  
+  @js.native
   sealed trait _empty
     extends StObject
        with QueryParamsHandling
   inline def _empty: _empty = "".asInstanceOf[_empty]
-  
-  @js.native
-  sealed trait `a[routerLink]Commaarea[routerLink]` extends StObject
-  inline def `a[routerLink]Commaarea[routerLink]`: `a[routerLink]Commaarea[routerLink]` = "a[routerLink],area[routerLink]".asInstanceOf[`a[routerLink]Commaarea[routerLink]`]
   
   @js.native
   sealed trait activate extends StObject
@@ -45,10 +46,6 @@ object angularRouterStrings {
   @js.native
   sealed trait computed extends StObject
   inline def computed: computed = "computed".asInstanceOf[computed]
-  
-  @js.native
-  sealed trait corrected extends StObject
-  inline def corrected: corrected = "corrected".asInstanceOf[corrected]
   
   @js.native
   sealed trait date extends StObject
@@ -119,7 +116,9 @@ object angularRouterStrings {
   inline def hashchange: hashchange = "hashchange".asInstanceOf[hashchange]
   
   @js.native
-  sealed trait ignore extends StObject
+  sealed trait ignore
+    extends StObject
+       with OnSameUrlNavigation
   inline def ignore: ignore = "ignore".asInstanceOf[ignore]
   
   @js.native
@@ -137,16 +136,8 @@ object angularRouterStrings {
   inline def isActiveChange: isActiveChange = "isActiveChange".asInstanceOf[isActiveChange]
   
   @js.native
-  sealed trait legacy extends StObject
-  inline def legacy: legacy = "legacy".asInstanceOf[legacy]
-  
-  @js.native
   sealed trait links extends StObject
   inline def links: links = "links".asInstanceOf[links]
-  
-  @js.native
-  sealed trait linksWithHrefs extends StObject
-  inline def linksWithHrefs: linksWithHrefs = "linksWithHrefs".asInstanceOf[linksWithHrefs]
   
   @js.native
   sealed trait location extends StObject
@@ -235,7 +226,9 @@ object angularRouterStrings {
   inline def relativeTo: relativeTo = "relativeTo".asInstanceOf[relativeTo]
   
   @js.native
-  sealed trait reload extends StObject
+  sealed trait reload
+    extends StObject
+       with OnSameUrlNavigation
   inline def reload: reload = "reload".asInstanceOf[reload]
   
   @js.native

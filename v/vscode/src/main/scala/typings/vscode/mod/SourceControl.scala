@@ -7,71 +7,71 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SourceControl extends StObject {
   
   /**
-    * Optional accept input command.
-    *
-    * This command will be invoked when the user accepts the value
-    * in the Source Control input.
-    */
+  		 * Optional accept input command.
+  		 *
+  		 * This command will be invoked when the user accepts the value
+  		 * in the Source Control input.
+  		 */
   var acceptInputCommand: js.UndefOr[Command] = js.undefined
   
   /**
-    * Optional commit template string.
-    *
-    * The Source Control viewlet will populate the Source Control
-    * input with this value when appropriate.
-    */
+  		 * Optional commit template string.
+  		 *
+  		 * The Source Control viewlet will populate the Source Control
+  		 * input with this value when appropriate.
+  		 */
   var commitTemplate: js.UndefOr[String] = js.undefined
   
   /**
-    * The UI-visible count of {@link SourceControlResourceState resource states} of
-    * this source control.
-    *
-    * If undefined, this source control will
-    * - display its UI-visible count as zero, and
-    * - contribute the count of its {@link SourceControlResourceState resource states} to the UI-visible aggregated count for all source controls
-    */
+  		 * The UI-visible count of {@link SourceControlResourceState resource states} of
+  		 * this source control.
+  		 *
+  		 * If undefined, this source control will
+  		 * - display its UI-visible count as zero, and
+  		 * - contribute the count of its {@link SourceControlResourceState resource states} to the UI-visible aggregated count for all source controls
+  		 */
   var count: js.UndefOr[Double] = js.undefined
   
   /**
-    * Create a new {@link SourceControlResourceGroup resource group}.
-    */
+  		 * Create a new {@link SourceControlResourceGroup resource group}.
+  		 */
   def createResourceGroup(id: String, label: String): SourceControlResourceGroup
   
   /**
-    * Dispose this source control.
-    */
+  		 * Dispose this source control.
+  		 */
   def dispose(): Unit
   
   /**
-    * The id of this source control.
-    */
+  		 * The id of this source control.
+  		 */
   val id: String
   
   /**
-    * The {@link SourceControlInputBox input box} for this source control.
-    */
+  		 * The {@link SourceControlInputBox input box} for this source control.
+  		 */
   val inputBox: SourceControlInputBox
   
   /**
-    * The human-readable label of this source control.
-    */
+  		 * The human-readable label of this source control.
+  		 */
   val label: String
   
   /**
-    * An optional {@link QuickDiffProvider quick diff provider}.
-    */
+  		 * An optional {@link QuickDiffProvider quick diff provider}.
+  		 */
   var quickDiffProvider: js.UndefOr[QuickDiffProvider] = js.undefined
   
   /**
-    * The (optional) Uri of the root of this source control.
-    */
+  		 * The (optional) Uri of the root of this source control.
+  		 */
   val rootUri: js.UndefOr[Uri] = js.undefined
   
   /**
-    * Optional status bar commands.
-    *
-    * These commands will be displayed in the editor's status bar.
-    */
+  		 * Optional status bar commands.
+  		 *
+  		 * These commands will be displayed in the editor's status bar.
+  		 */
   var statusBarCommands: js.UndefOr[js.Array[Command]] = js.undefined
 }
 object SourceControl {

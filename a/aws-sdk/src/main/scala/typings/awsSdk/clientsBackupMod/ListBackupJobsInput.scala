@@ -37,6 +37,11 @@ trait ListBackupJobsInput extends StObject {
   var ByCreatedBefore: js.UndefOr[js.Date] = js.undefined
   
   /**
+    * This is a filter to list child (nested) jobs based on parent job ID.
+    */
+  var ByParentJobId: js.UndefOr[String] = js.undefined
+  
+  /**
     * Returns only backup jobs that match the specified resource Amazon Resource Name (ARN).
     */
   var ByResourceArn: js.UndefOr[ARN] = js.undefined
@@ -94,6 +99,10 @@ object ListBackupJobsInput {
     inline def setByCreatedBefore(value: js.Date): Self = StObject.set(x, "ByCreatedBefore", value.asInstanceOf[js.Any])
     
     inline def setByCreatedBeforeUndefined: Self = StObject.set(x, "ByCreatedBefore", js.undefined)
+    
+    inline def setByParentJobId(value: String): Self = StObject.set(x, "ByParentJobId", value.asInstanceOf[js.Any])
+    
+    inline def setByParentJobIdUndefined: Self = StObject.set(x, "ByParentJobId", js.undefined)
     
     inline def setByResourceArn(value: ARN): Self = StObject.set(x, "ByResourceArn", value.asInstanceOf[js.Any])
     

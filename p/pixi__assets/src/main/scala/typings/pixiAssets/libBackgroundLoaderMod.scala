@@ -40,10 +40,10 @@ object libBackgroundLoaderMod {
     /* private */ var _next: Any = js.native
     
     /**
+      * Activate/Deactivate the loading. If set to true then it will immediately continue to load the next asset.
       * @returns whether the class is active
       */
     def active: Boolean = js.native
-    /** Activate/Deactivate the loading. If set to true then it will immediately continue to load the next asset. */
     def active_=(value: Boolean): Unit = js.native
     
     /**

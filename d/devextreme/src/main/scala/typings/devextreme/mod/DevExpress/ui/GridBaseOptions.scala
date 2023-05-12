@@ -1,53 +1,59 @@
 package typings.devextreme.mod.DevExpress.ui
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.devextreme.mod.DevExpress.DOMComponent.OptionChangedEventInfo
 import typings.devextreme.mod.DevExpress.common.Mode
+import typings.devextreme.mod.DevExpress.common.grids.AdaptiveDetailRowPreparingInfo
+import typings.devextreme.mod.DevExpress.common.grids.ColumnBase
 import typings.devextreme.mod.DevExpress.common.grids.ColumnChooser
 import typings.devextreme.mod.DevExpress.common.grids.ColumnFixing
+import typings.devextreme.mod.DevExpress.common.grids.ColumnResizeMode
+import typings.devextreme.mod.DevExpress.common.grids.DataChangeInfo
+import typings.devextreme.mod.DevExpress.common.grids.DataErrorOccurredInfo
+import typings.devextreme.mod.DevExpress.common.grids.EditingBase
+import typings.devextreme.mod.DevExpress.common.grids.FilterPanel
 import typings.devextreme.mod.DevExpress.common.grids.FilterRow
 import typings.devextreme.mod.DevExpress.common.grids.HeaderFilter
+import typings.devextreme.mod.DevExpress.common.grids.KeyDownInfo
 import typings.devextreme.mod.DevExpress.common.grids.KeyboardNavigation
 import typings.devextreme.mod.DevExpress.common.grids.LoadPanel
+import typings.devextreme.mod.DevExpress.common.grids.NewRowInfo
 import typings.devextreme.mod.DevExpress.common.grids.Pager
+import typings.devextreme.mod.DevExpress.common.grids.PagingBase
+import typings.devextreme.mod.DevExpress.common.grids.RowDragging
+import typings.devextreme.mod.DevExpress.common.grids.RowInsertedInfo
+import typings.devextreme.mod.DevExpress.common.grids.RowInsertingInfo
+import typings.devextreme.mod.DevExpress.common.grids.RowKeyInfo
+import typings.devextreme.mod.DevExpress.common.grids.RowRemovedInfo
+import typings.devextreme.mod.DevExpress.common.grids.RowRemovingInfo
+import typings.devextreme.mod.DevExpress.common.grids.RowUpdatedInfo
+import typings.devextreme.mod.DevExpress.common.grids.RowUpdatingInfo
+import typings.devextreme.mod.DevExpress.common.grids.RowValidatingInfo
+import typings.devextreme.mod.DevExpress.common.grids.SavingInfo
+import typings.devextreme.mod.DevExpress.common.grids.ScrollingBase
 import typings.devextreme.mod.DevExpress.common.grids.SearchPanel
+import typings.devextreme.mod.DevExpress.common.grids.SelectionBase
+import typings.devextreme.mod.DevExpress.common.grids.SelectionChangedInfo
 import typings.devextreme.mod.DevExpress.common.grids.Sorting
 import typings.devextreme.mod.DevExpress.common.grids.StateStoring
+import typings.devextreme.mod.DevExpress.common.grids.ToolbarPreparingInfo
 import typings.devextreme.mod.DevExpress.data.DataSource.DataSourceLike
 import typings.devextreme.mod.DevExpress.events.Cancelable
 import typings.devextreme.mod.DevExpress.events.EventInfo
+import typings.devextreme.mod.DevExpress.events.InitializedEventInfo
 import typings.devextreme.mod.DevExpress.events.NativeEventInfo
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.AdaptiveDetailRowPreparingInfo
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.ColumnBase
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.ColumnResizeMode
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.DataChangeInfo
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.DataErrorOccurredInfo
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.EditingBase
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.FilterPanel
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.KeyDownInfo
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.NewRowInfo
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.PagingBase
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.RowDragging
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.RowInsertedInfo
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.RowInsertingInfo
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.RowKeyInfo
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.RowRemovedInfo
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.RowRemovingInfo
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.RowUpdatedInfo
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.RowUpdatingInfo
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.RowValidatingInfo
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.SavingInfo
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.ScrollingBase
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.SelectionBase
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.SelectionChangedInfo
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.ToolbarPreparingInfo
-import typings.devextreme.mod.DevExpress.ui.dxPopup.Properties
+import typings.devextreme.mod.DevExpress.ui.dxFilterBuilder.Properties
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridBaseOptions[TComponent /* <: GridBase[TRowData, TKey] */, TRowData, TKey]
-  extends StObject
-     with WidgetOptions[TComponent] {
+/* Inlined devextreme.devextreme.DevExpress.common.grids.GridBaseOptions<TComponent, TRowData, TKey> */
+trait GridBaseOptions[TComponent /* <: GridBase[TRowData, TKey] */, TRowData, TKey] extends StObject {
+  
+  var accessKey: js.UndefOr[String] = js.undefined
+  
+  var activeStateEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies whether a user can reorder columns.
@@ -63,6 +69,8 @@ trait GridBaseOptions[TComponent /* <: GridBase[TRowData, TKey] */, TRowData, TK
     * Automatically scrolls to the focused row when the focusedRowKey is changed.
     */
   var autoNavigateToFocusedRow: js.UndefOr[Boolean] = js.undefined
+  
+  var bindingOptions: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   /**
     * Specifies whether data should be cached.
@@ -124,10 +132,14 @@ trait GridBaseOptions[TComponent /* <: GridBase[TRowData, TKey] */, TRowData, TK
     */
   var dateSerializationFormat: js.UndefOr[String] = js.undefined
   
+  var disabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Overriden.
     */
   var editing: js.UndefOr[EditingBase[TRowData, TKey]] = js.undefined
+  
+  var elementAttr: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   /**
     * Indicates whether to show the error row.
@@ -137,12 +149,12 @@ trait GridBaseOptions[TComponent /* <: GridBase[TRowData, TKey] */, TRowData, TK
   /**
     * Configures the integrated filter builder.
     */
-  var filterBuilder: js.UndefOr[dxFilterBuilderOptions] = js.undefined
+  var filterBuilder: js.UndefOr[Properties] = js.undefined
   
   /**
     * Configures the popup in which the integrated filter builder is shown.
     */
-  var filterBuilderPopup: js.UndefOr[Properties] = js.undefined
+  var filterBuilderPopup: js.UndefOr[typings.devextreme.mod.DevExpress.ui.dxPopup.Properties] = js.undefined
   
   /**
     * Configures the filter panel.
@@ -189,10 +201,16 @@ trait GridBaseOptions[TComponent /* <: GridBase[TRowData, TKey] */, TRowData, TK
     */
   var headerFilter: js.UndefOr[HeaderFilter] = js.undefined
   
+  var height: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
+  
   /**
     * Specifies whether to highlight rows and cells with edited data. repaintChangesOnly should be true.
     */
   var highlightChanges: js.UndefOr[Boolean] = js.undefined
+  
+  var hint: js.UndefOr[String] = js.undefined
+  
+  var hoverStateEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Configures keyboard navigation.
@@ -216,10 +234,14 @@ trait GridBaseOptions[TComponent /* <: GridBase[TRowData, TKey] */, TRowData, TK
     js.Function1[/* e */ EventInfo[TComponent] & AdaptiveDetailRowPreparingInfo, Unit]
   ] = js.undefined
   
+  var onContentReady: js.UndefOr[js.Function1[/* e */ EventInfo[TComponent], Unit]] = js.undefined
+  
   /**
     * A function that is executed when an error occurs in the data source.
     */
   var onDataErrorOccurred: js.UndefOr[js.Function1[/* e */ EventInfo[TComponent] & DataErrorOccurredInfo, Unit]] = js.undefined
+  
+  var onDisposing: js.UndefOr[js.Function1[/* e */ EventInfo[TComponent], Unit]] = js.undefined
   
   /**
     * A function that is executed after row changes are discarded.
@@ -243,12 +265,16 @@ trait GridBaseOptions[TComponent /* <: GridBase[TRowData, TKey] */, TRowData, TK
     */
   var onInitNewRow: js.UndefOr[js.Function1[/* e */ EventInfo[TComponent] & NewRowInfo[TRowData], Unit]] = js.undefined
   
+  var onInitialized: js.UndefOr[js.Function1[/* e */ InitializedEventInfo[TComponent], Unit]] = js.undefined
+  
   /**
     * A function that is executed when the UI component is in focus and a key has been pressed down.
     */
   var onKeyDown: js.UndefOr[
     js.Function1[/* e */ (NativeEventInfo[TComponent, KeyboardEvent]) & KeyDownInfo, Unit]
   ] = js.undefined
+  
+  var onOptionChanged: js.UndefOr[js.Function1[/* e */ OptionChangedEventInfo[TComponent], Unit]] = js.undefined
   
   /**
     * A function that is executed after a row is collapsed.
@@ -375,6 +401,8 @@ trait GridBaseOptions[TComponent /* <: GridBase[TRowData, TKey] */, TRowData, TK
     */
   var rowDragging: js.UndefOr[RowDragging[TComponent, TRowData, TKey]] = js.undefined
   
+  var rtlEnabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * 
     */
@@ -430,10 +458,16 @@ trait GridBaseOptions[TComponent /* <: GridBase[TRowData, TKey] */, TRowData, TK
     */
   var syncLookupFilterValues: js.UndefOr[Boolean] = js.undefined
   
+  var tabIndex: js.UndefOr[Double] = js.undefined
+  
   /**
     * Specifies whether to enable two-way data binding.
     */
   var twoWayBindingEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  var visible: js.UndefOr[Boolean] = js.undefined
+  
+  var width: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
   
   /**
     * Specifies whether text that does not fit into a column should be wrapped.
@@ -450,6 +484,14 @@ object GridBaseOptions {
   @scala.inline
   implicit open class MutableBuilder[Self <: GridBaseOptions[?, ?, ?], TComponent /* <: GridBase[TRowData, TKey] */, TRowData, TKey] (val x: Self & (GridBaseOptions[TComponent, TRowData, TKey])) extends AnyVal {
     
+    inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
+    
+    inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
+    
+    inline def setActiveStateEnabled(value: Boolean): Self = StObject.set(x, "activeStateEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setActiveStateEnabledUndefined: Self = StObject.set(x, "activeStateEnabled", js.undefined)
+    
     inline def setAllowColumnReordering(value: Boolean): Self = StObject.set(x, "allowColumnReordering", value.asInstanceOf[js.Any])
     
     inline def setAllowColumnReorderingUndefined: Self = StObject.set(x, "allowColumnReordering", js.undefined)
@@ -461,6 +503,10 @@ object GridBaseOptions {
     inline def setAutoNavigateToFocusedRow(value: Boolean): Self = StObject.set(x, "autoNavigateToFocusedRow", value.asInstanceOf[js.Any])
     
     inline def setAutoNavigateToFocusedRowUndefined: Self = StObject.set(x, "autoNavigateToFocusedRow", js.undefined)
+    
+    inline def setBindingOptions(value: StringDictionary[Any]): Self = StObject.set(x, "bindingOptions", value.asInstanceOf[js.Any])
+    
+    inline def setBindingOptionsUndefined: Self = StObject.set(x, "bindingOptions", js.undefined)
     
     inline def setCacheEnabled(value: Boolean): Self = StObject.set(x, "cacheEnabled", value.asInstanceOf[js.Any])
     
@@ -516,17 +562,25 @@ object GridBaseOptions {
     
     inline def setDateSerializationFormatUndefined: Self = StObject.set(x, "dateSerializationFormat", js.undefined)
     
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
     inline def setEditing(value: EditingBase[TRowData, TKey]): Self = StObject.set(x, "editing", value.asInstanceOf[js.Any])
     
     inline def setEditingUndefined: Self = StObject.set(x, "editing", js.undefined)
+    
+    inline def setElementAttr(value: StringDictionary[Any]): Self = StObject.set(x, "elementAttr", value.asInstanceOf[js.Any])
+    
+    inline def setElementAttrUndefined: Self = StObject.set(x, "elementAttr", js.undefined)
     
     inline def setErrorRowEnabled(value: Boolean): Self = StObject.set(x, "errorRowEnabled", value.asInstanceOf[js.Any])
     
     inline def setErrorRowEnabledUndefined: Self = StObject.set(x, "errorRowEnabled", js.undefined)
     
-    inline def setFilterBuilder(value: dxFilterBuilderOptions): Self = StObject.set(x, "filterBuilder", value.asInstanceOf[js.Any])
+    inline def setFilterBuilder(value: Properties): Self = StObject.set(x, "filterBuilder", value.asInstanceOf[js.Any])
     
-    inline def setFilterBuilderPopup(value: Properties): Self = StObject.set(x, "filterBuilderPopup", value.asInstanceOf[js.Any])
+    inline def setFilterBuilderPopup(value: typings.devextreme.mod.DevExpress.ui.dxPopup.Properties): Self = StObject.set(x, "filterBuilderPopup", value.asInstanceOf[js.Any])
     
     inline def setFilterBuilderPopupUndefined: Self = StObject.set(x, "filterBuilderPopup", js.undefined)
     
@@ -570,9 +624,23 @@ object GridBaseOptions {
     
     inline def setHeaderFilterUndefined: Self = StObject.set(x, "headerFilter", js.undefined)
     
+    inline def setHeight(value: Double | String | (js.Function0[Double | String])): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightFunction0(value: () => Double | String): Self = StObject.set(x, "height", js.Any.fromFunction0(value))
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
     inline def setHighlightChanges(value: Boolean): Self = StObject.set(x, "highlightChanges", value.asInstanceOf[js.Any])
     
     inline def setHighlightChangesUndefined: Self = StObject.set(x, "highlightChanges", js.undefined)
+    
+    inline def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
+    
+    inline def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
+    
+    inline def setHoverStateEnabled(value: Boolean): Self = StObject.set(x, "hoverStateEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setHoverStateEnabledUndefined: Self = StObject.set(x, "hoverStateEnabled", js.undefined)
     
     inline def setKeyboardNavigation(value: KeyboardNavigation): Self = StObject.set(x, "keyboardNavigation", value.asInstanceOf[js.Any])
     
@@ -590,9 +658,17 @@ object GridBaseOptions {
     
     inline def setOnAdaptiveDetailRowPreparingUndefined: Self = StObject.set(x, "onAdaptiveDetailRowPreparing", js.undefined)
     
+    inline def setOnContentReady(value: /* e */ EventInfo[TComponent] => Unit): Self = StObject.set(x, "onContentReady", js.Any.fromFunction1(value))
+    
+    inline def setOnContentReadyUndefined: Self = StObject.set(x, "onContentReady", js.undefined)
+    
     inline def setOnDataErrorOccurred(value: /* e */ EventInfo[TComponent] & DataErrorOccurredInfo => Unit): Self = StObject.set(x, "onDataErrorOccurred", js.Any.fromFunction1(value))
     
     inline def setOnDataErrorOccurredUndefined: Self = StObject.set(x, "onDataErrorOccurred", js.undefined)
+    
+    inline def setOnDisposing(value: /* e */ EventInfo[TComponent] => Unit): Self = StObject.set(x, "onDisposing", js.Any.fromFunction1(value))
+    
+    inline def setOnDisposingUndefined: Self = StObject.set(x, "onDisposing", js.undefined)
     
     inline def setOnEditCanceled(value: /* e */ EventInfo[TComponent] & (DataChangeInfo[TRowData, TKey]) => Unit): Self = StObject.set(x, "onEditCanceled", js.Any.fromFunction1(value))
     
@@ -606,9 +682,17 @@ object GridBaseOptions {
     
     inline def setOnInitNewRowUndefined: Self = StObject.set(x, "onInitNewRow", js.undefined)
     
+    inline def setOnInitialized(value: /* e */ InitializedEventInfo[TComponent] => Unit): Self = StObject.set(x, "onInitialized", js.Any.fromFunction1(value))
+    
+    inline def setOnInitializedUndefined: Self = StObject.set(x, "onInitialized", js.undefined)
+    
     inline def setOnKeyDown(value: /* e */ (NativeEventInfo[TComponent, KeyboardEvent]) & KeyDownInfo => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
     
     inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+    
+    inline def setOnOptionChanged(value: /* e */ OptionChangedEventInfo[TComponent] => Unit): Self = StObject.set(x, "onOptionChanged", js.Any.fromFunction1(value))
+    
+    inline def setOnOptionChangedUndefined: Self = StObject.set(x, "onOptionChanged", js.undefined)
     
     inline def setOnRowCollapsed(value: /* e */ EventInfo[TComponent] & RowKeyInfo[TKey] => Unit): Self = StObject.set(x, "onRowCollapsed", js.Any.fromFunction1(value))
     
@@ -694,6 +778,10 @@ object GridBaseOptions {
     
     inline def setRowDraggingUndefined: Self = StObject.set(x, "rowDragging", js.undefined)
     
+    inline def setRtlEnabled(value: Boolean): Self = StObject.set(x, "rtlEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setRtlEnabledUndefined: Self = StObject.set(x, "rtlEnabled", js.undefined)
+    
     inline def setScrolling(value: ScrollingBase): Self = StObject.set(x, "scrolling", value.asInstanceOf[js.Any])
     
     inline def setScrollingUndefined: Self = StObject.set(x, "scrolling", js.undefined)
@@ -740,9 +828,23 @@ object GridBaseOptions {
     
     inline def setSyncLookupFilterValuesUndefined: Self = StObject.set(x, "syncLookupFilterValues", js.undefined)
     
+    inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+    
+    inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+    
     inline def setTwoWayBindingEnabled(value: Boolean): Self = StObject.set(x, "twoWayBindingEnabled", value.asInstanceOf[js.Any])
     
     inline def setTwoWayBindingEnabledUndefined: Self = StObject.set(x, "twoWayBindingEnabled", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    
+    inline def setWidth(value: Double | String | (js.Function0[Double | String])): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthFunction0(value: () => Double | String): Self = StObject.set(x, "width", js.Any.fromFunction0(value))
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     inline def setWordWrapEnabled(value: Boolean): Self = StObject.set(x, "wordWrapEnabled", value.asInstanceOf[js.Any])
     

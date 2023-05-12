@@ -25,8 +25,14 @@ object IonResource {
   /**
     * Asynchronously creates an instance.
     * @example
-    * //Load a Cesium3DTileset with asset ID of 124624234
-    * viewer.scene.primitives.add(new Cesium.Cesium3DTileset({ url: Cesium.IonResource.fromAssetId(124624234) }));
+    * // Load a Cesium3DTileset with asset ID of 124624234
+    * try {
+    *   const resource = await Cesium.IonResource.fromAssetId(124624234);
+    *   const tileset = await Cesium.Cesium3DTileset.fromUrl(resource);
+    *   scene.primitives.add(tileset);
+    * } catch (error) {
+    *   console.error(`Error creating tileset: ${error}`);
+    * }
     * @example
     * //Load a CZML file with asset ID of 10890
     * Cesium.IonResource.fromAssetId(10890)

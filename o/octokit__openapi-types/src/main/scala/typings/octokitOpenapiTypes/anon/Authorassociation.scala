@@ -36,6 +36,7 @@ trait Authorassociation extends StObject {
   var html_url: String
   
   /**
+    * Format: int64
     * @description Unique identifier of the issue comment
     * @example 42
     */

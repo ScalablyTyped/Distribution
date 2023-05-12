@@ -17,12 +17,12 @@ trait CreateTaskRequest extends StObject {
   var DestinationLocationArn: LocationArn
   
   /**
-    * A list of filter rules that determines which files to exclude from a task. The list should contain a single filter string that consists of the patterns to exclude. The patterns are delimited by "|" (that is, a pipe), for example, "/folder1|/folder2".   
+    * Specifies a list of filter rules that exclude specific data during your transfer. For more information and examples, see Filtering data transferred by DataSync.
     */
   var Excludes: js.UndefOr[FilterList] = js.undefined
   
   /**
-    * A list of filter rules that determines which files to include when running a task. The pattern contains a single filter string that consists of the patterns to include. The patterns are delimited by "|" (that is, a pipe), for example, "/folder1|/folder2".
+    * Specifies a list of filter rules that include specific data during your transfer. For more information and examples, see Filtering data transferred by DataSync.
     */
   var Includes: js.UndefOr[FilterList] = js.undefined
   
@@ -32,7 +32,7 @@ trait CreateTaskRequest extends StObject {
   var Name: js.UndefOr[TagValue] = js.undefined
   
   /**
-    * The set of configuration options that control the behavior of a single execution of the task that occurs when you call StartTaskExecution. You can configure these options to preserve metadata such as user ID (UID) and group ID (GID), file permissions, data integrity verification, and so on. For each individual task execution, you can override these options by specifying the OverrideOptions before starting the task execution. For more information, see the StartTaskExecution operation. 
+    * Specifies the configuration options for a task. Some options include preserving file or object metadata and verifying data integrity. You can also override these options before starting an individual run of a task (also known as a task execution). For more information, see StartTaskExecution.
     */
   var Options: js.UndefOr[typings.awsSdk.clientsDatasyncMod.Options] = js.undefined
   
@@ -47,7 +47,7 @@ trait CreateTaskRequest extends StObject {
   var SourceLocationArn: LocationArn
   
   /**
-    * The key-value pair that represents the tag that you want to add to the resource. The value can be an empty string. 
+    * Specifies the tags that you want to apply to the Amazon Resource Name (ARN) representing the task.  Tags are key-value pairs that help you manage, filter, and search for your DataSync resources.
     */
   var Tags: js.UndefOr[InputTagList] = js.undefined
 }

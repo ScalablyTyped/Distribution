@@ -16,7 +16,7 @@ object libIconsMailFilledMod extends Shortcut {
   @js.native
   trait MailFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_MailFilledIconType: String = js.native

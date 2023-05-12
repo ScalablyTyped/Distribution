@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.Flex
+import typings.csstype.mod.Property.MsScrollbarArrowColor
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `302` extends StObject {
   
   var value: js.UndefOr[
-    (Flex[Double | String]) | (js.Array[
+    MsScrollbarArrowColor | (js.Array[
       (Extract[
-        js.UndefOr[
-          (Flex[Double | String]) | (js.Array[NonNullable[js.UndefOr[Flex[Double | String]]]])
-        ], 
+        js.UndefOr[MsScrollbarArrowColor | js.Array[NonNullable[js.UndefOr[MsScrollbarArrowColor]]]], 
         String
-      ]) | (NonNullable[js.UndefOr[Flex[Double | String]]])
+      ]) | NonNullable[js.UndefOr[MsScrollbarArrowColor]]
     ])
   ] = js.native
 }

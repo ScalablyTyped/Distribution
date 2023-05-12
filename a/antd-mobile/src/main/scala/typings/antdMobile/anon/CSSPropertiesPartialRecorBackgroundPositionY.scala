@@ -115,7 +115,9 @@ import typings.csstype.mod.Property.BreakAfter
 import typings.csstype.mod.Property.BreakBefore
 import typings.csstype.mod.Property.BreakInside
 import typings.csstype.mod.Property.CaptionSide
+import typings.csstype.mod.Property.Caret
 import typings.csstype.mod.Property.CaretColor
+import typings.csstype.mod.Property.CaretShape
 import typings.csstype.mod.Property.Clip
 import typings.csstype.mod.Property.ClipPath
 import typings.csstype.mod.Property.ClipRule
@@ -134,6 +136,14 @@ import typings.csstype.mod.Property.ColumnSpan
 import typings.csstype.mod.Property.ColumnWidth
 import typings.csstype.mod.Property.Columns
 import typings.csstype.mod.Property.Contain
+import typings.csstype.mod.Property.ContainIntrinsicBlockSize
+import typings.csstype.mod.Property.ContainIntrinsicHeight
+import typings.csstype.mod.Property.ContainIntrinsicInlineSize
+import typings.csstype.mod.Property.ContainIntrinsicSize
+import typings.csstype.mod.Property.ContainIntrinsicWidth
+import typings.csstype.mod.Property.Container
+import typings.csstype.mod.Property.ContainerName
+import typings.csstype.mod.Property.ContainerType
 import typings.csstype.mod.Property.Content
 import typings.csstype.mod.Property.ContentVisibility
 import typings.csstype.mod.Property.CounterIncrement
@@ -164,6 +174,7 @@ import typings.csstype.mod.Property.FontFeatureSettings
 import typings.csstype.mod.Property.FontKerning
 import typings.csstype.mod.Property.FontLanguageOverride
 import typings.csstype.mod.Property.FontOpticalSizing
+import typings.csstype.mod.Property.FontPalette
 import typings.csstype.mod.Property.FontSize
 import typings.csstype.mod.Property.FontSizeAdjust
 import typings.csstype.mod.Property.FontSmooth
@@ -174,6 +185,7 @@ import typings.csstype.mod.Property.FontVariant
 import typings.csstype.mod.Property.FontVariantAlternates
 import typings.csstype.mod.Property.FontVariantCaps
 import typings.csstype.mod.Property.FontVariantEastAsian
+import typings.csstype.mod.Property.FontVariantEmoji
 import typings.csstype.mod.Property.FontVariantLigatures
 import typings.csstype.mod.Property.FontVariantNumeric
 import typings.csstype.mod.Property.FontVariantPosition
@@ -203,6 +215,7 @@ import typings.csstype.mod.Property.GridTemplateRows
 import typings.csstype.mod.Property.HangingPunctuation
 import typings.csstype.mod.Property.Height
 import typings.csstype.mod.Property.HyphenateCharacter
+import typings.csstype.mod.Property.HyphenateLimitChars
 import typings.csstype.mod.Property.Hyphens
 import typings.csstype.mod.Property.ImageOrientation
 import typings.csstype.mod.Property.ImageRendering
@@ -245,6 +258,7 @@ import typings.csstype.mod.Property.MarginInlineStart
 import typings.csstype.mod.Property.MarginLeft
 import typings.csstype.mod.Property.MarginRight
 import typings.csstype.mod.Property.MarginTop
+import typings.csstype.mod.Property.MarginTrim
 import typings.csstype.mod.Property.Marker
 import typings.csstype.mod.Property.MarkerEnd
 import typings.csstype.mod.Property.MarkerMid
@@ -356,6 +370,7 @@ import typings.csstype.mod.Property.Offset
 import typings.csstype.mod.Property.OffsetAnchor
 import typings.csstype.mod.Property.OffsetDistance
 import typings.csstype.mod.Property.OffsetPath
+import typings.csstype.mod.Property.OffsetPosition
 import typings.csstype.mod.Property.OffsetRotate
 import typings.csstype.mod.Property.Opacity
 import typings.csstype.mod.Property.Order
@@ -390,6 +405,7 @@ import typings.csstype.mod.Property.PaddingInlineStart
 import typings.csstype.mod.Property.PaddingLeft
 import typings.csstype.mod.Property.PaddingRight
 import typings.csstype.mod.Property.PaddingTop
+import typings.csstype.mod.Property.Page
 import typings.csstype.mod.Property.PageBreakAfter
 import typings.csstype.mod.Property.PageBreakBefore
 import typings.csstype.mod.Property.PageBreakInside
@@ -443,6 +459,9 @@ import typings.csstype.mod.Property.ScrollSnapStop
 import typings.csstype.mod.Property.ScrollSnapType
 import typings.csstype.mod.Property.ScrollSnapTypeX
 import typings.csstype.mod.Property.ScrollSnapTypeY
+import typings.csstype.mod.Property.ScrollTimeline
+import typings.csstype.mod.Property.ScrollTimelineAxis
+import typings.csstype.mod.Property.ScrollTimelineName
 import typings.csstype.mod.Property.ScrollbarColor
 import typings.csstype.mod.Property.ScrollbarGutter
 import typings.csstype.mod.Property.ScrollbarWidth
@@ -503,6 +522,7 @@ import typings.csstype.mod.Property.UnicodeBidi
 import typings.csstype.mod.Property.UserSelect
 import typings.csstype.mod.Property.VectorEffect
 import typings.csstype.mod.Property.VerticalAlign
+import typings.csstype.mod.Property.ViewTransitionName
 import typings.csstype.mod.Property.Visibility
 import typings.csstype.mod.Property.WebkitAppearance
 import typings.csstype.mod.Property.WebkitBorderBefore
@@ -727,7 +747,7 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
   var MozAnimationIterationCount: js.UndefOr[AnimationIterationCount] = js.undefined
   
   /**
-    * The **`animation-name`** CSS property specifies the names of one or more `@keyframes` at-rules describing the animation or animations to apply to the element.
+    * The **`animation-name`** CSS property specifies the names of one or more `@keyframes` at-rules that describe the animation to apply to an element. Multiple `@keyframe` at-rules are specified as a comma-separated list of names. If the specified name does not match any `@keyframe` at-rule, no properties are animated.
     *
     * **Syntax**: `[ none | <keyframes-name> ]#`
     *
@@ -754,7 +774,7 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
   var MozAnimationTimingFunction: js.UndefOr[AnimationTimingFunction] = js.undefined
   
   /**
-    * The **`appearance`** CSS property is used to display an element using platform-native styling, based on the operating system's theme. The **`-moz-appearance`** and **`-webkit-appearance`** properties are non-standard versions of this property, used (respectively) by Gecko (Firefox) and by WebKit-based (e.g., Safari) and Blink-based (e.g., Chrome, Opera) browsers to achieve the same thing. Note that Firefox and Edge also support **`-webkit-appearance`**, for compatibility reasons.
+    * The **`appearance`** CSS property is used to control native appearance of UI controls, that are based on operating system's theme.
     *
     * **Syntax**: `none | button | button-arrow-down | button-arrow-next | button-arrow-previous | button-arrow-up | button-bevel | button-focus | caret | checkbox | checkbox-container | checkbox-label | checkmenuitem | dualbutton | groupbox | listbox | listitem | menuarrow | menubar | menucheckbox | menuimage | menuitem | menuitemtext | menulist | menulist-button | menulist-text | menulist-textfield | menupopup | menuradio | menuseparator | meterbar | meterchunk | progressbar | progressbar-vertical | progresschunk | progresschunk-vertical | radio | radio-container | radio-label | radiomenuitem | range | range-thumb | resizer | resizerpanel | scale-horizontal | scalethumbend | scalethumb-horizontal | scalethumbstart | scalethumbtick | scalethumb-vertical | scale-vertical | scrollbarbutton-down | scrollbarbutton-left | scrollbarbutton-right | scrollbarbutton-up | scrollbarthumb-horizontal | scrollbarthumb-vertical | scrollbartrack-horizontal | scrollbartrack-vertical | searchfield | separator | sheet | spinner | spinner-downbutton | spinner-textfield | spinner-upbutton | splitter | statusbar | statusbarpanel | tab | tabpanel | tabpanels | tab-scroll-arrow-back | tab-scroll-arrow-forward | textfield | textfield-multiline | toolbar | toolbarbutton | toolbarbutton-dropdown | toolbargripper | toolbox | tooltip | treeheader | treeheadercell | treeheadersortarrow | treeitem | treeline | treetwisty | treetwistyopen | treeview | -moz-mac-unified-toolbar | -moz-win-borderless-glass | -moz-win-browsertabbar-toolbox | -moz-win-communicationstext | -moz-win-communications-toolbox | -moz-win-exclude-glass | -moz-win-glass | -moz-win-mediatext | -moz-win-media-toolbox | -moz-window-button-box | -moz-window-button-box-maximized | -moz-window-button-close | -moz-window-button-maximize | -moz-window-button-minimize | -moz-window-button-restore | -moz-window-frame-bottom | -moz-window-frame-left | -moz-window-frame-right | -moz-window-titlebar | -moz-window-titlebar-maximized`
     *
@@ -821,8 +841,6 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     * **Syntax**: `<url> | none`
     *
     * **Initial value**: `none`
-    *
-    * @deprecated
     */
   var MozBinding: js.UndefOr[typings.csstype.mod.Property.MozBinding] = js.undefined
   
@@ -1236,7 +1254,7 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
   var MozOsxFontSmoothing: js.UndefOr[FontSmooth[String | Double]] = js.undefined
   
   /**
-    * The **`outline`** CSS shorthand property set all the outline properties in a single declaration.
+    * The **`outline`** CSS shorthand property sets most of the outline properties in a single declaration.
     *
     * **Syntax**: `[ <'outline-color'> || <'outline-style'> || <'outline-width'> ]`
     *
@@ -1628,7 +1646,7 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
   var OAnimationIterationCount: js.UndefOr[AnimationIterationCount] = js.undefined
   
   /**
-    * The **`animation-name`** CSS property specifies the names of one or more `@keyframes` at-rules describing the animation or animations to apply to the element.
+    * The **`animation-name`** CSS property specifies the names of one or more `@keyframes` at-rules that describe the animation to apply to an element. Multiple `@keyframe` at-rules are specified as a comma-separated list of names. If the specified name does not match any `@keyframe` at-rule, no properties are animated.
     *
     * **Syntax**: `[ none | <keyframes-name> ]#`
     *
@@ -1879,7 +1897,7 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
   var WebkitAnimationIterationCount: js.UndefOr[AnimationIterationCount] = js.undefined
   
   /**
-    * The **`animation-name`** CSS property specifies the names of one or more `@keyframes` at-rules describing the animation or animations to apply to the element.
+    * The **`animation-name`** CSS property specifies the names of one or more `@keyframes` at-rules that describe the animation to apply to an element. Multiple `@keyframe` at-rules are specified as a comma-separated list of names. If the specified name does not match any `@keyframe` at-rule, no properties are animated.
     *
     * **Syntax**: `[ none | <keyframes-name> ]#`
     *
@@ -1906,7 +1924,7 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
   var WebkitAnimationTimingFunction: js.UndefOr[AnimationTimingFunction] = js.undefined
   
   /**
-    * The **`appearance`** CSS property is used to display an element using platform-native styling, based on the operating system's theme. The **`-moz-appearance`** and **`-webkit-appearance`** properties are non-standard versions of this property, used (respectively) by Gecko (Firefox) and by WebKit-based (e.g., Safari) and Blink-based (e.g., Chrome, Opera) browsers to achieve the same thing. Note that Firefox and Edge also support **`-webkit-appearance`**, for compatibility reasons.
+    * The **`appearance`** CSS property is used to control native appearance of UI controls, that are based on operating system's theme.
     *
     * **Syntax**: `none | button | button-bevel | caret | checkbox | default-button | inner-spin-button | listbox | listitem | media-controls-background | media-controls-fullscreen-background | media-current-time-display | media-enter-fullscreen-button | media-exit-fullscreen-button | media-fullscreen-button | media-mute-button | media-overlay-play-button | media-play-button | media-seek-back-button | media-seek-forward-button | media-slider | media-sliderthumb | media-time-remaining-display | media-toggle-closed-captions-button | media-volume-slider | media-volume-slider-container | media-volume-sliderthumb | menulist | menulist-button | menulist-text | menulist-textfield | meter | progress-bar | progress-bar-value | push-button | radio | searchfield | searchfield-cancel-button | searchfield-decoration | searchfield-results-button | searchfield-results-decoration | slider-horizontal | slider-vertical | sliderthumb-horizontal | sliderthumb-vertical | square-button | textarea | textfield | -apple-pay-button`
     *
@@ -2406,7 +2424,7 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
   var WebkitLineBreak: js.UndefOr[LineBreak] = js.undefined
   
   /**
-    * The **`-webkit-line-clamp`** CSS property allows limiting of the contents of a block container to the specified number of lines.
+    * The **`-webkit-line-clamp`** CSS property allows limiting of the contents of a block to the specified number of lines.
     *
     * **Syntax**: `none | <integer>`
     *
@@ -2440,7 +2458,7 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
   var WebkitMask: js.UndefOr[typings.csstype.mod.Property.WebkitMask[String | Double]] = js.undefined
   
   /**
-    * If a `-webkit-mask-image` is specified, `-webkit-mask-attachment` determines whether the mask image's position is fixed within the viewport, or scrolls along with its containing block.
+    * If a `mask-image` is specified, `-webkit-mask-attachment` determines whether the mask image's position is fixed within the viewport, or scrolls along with its containing block.
     *
     * **Syntax**: `<attachment>#`
     *
@@ -3054,7 +3072,7 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
   var alignmentBaseline: js.UndefOr[AlignmentBaseline] = js.undefined
   
   /**
-    * The **`all`** shorthand CSS property resets all of an element's properties except `unicode-bidi`, `direction`, and CSS Custom Properties. It can set properties to their initial or inherited values, or to the values specified in another stylesheet origin.
+    * The **`all`** shorthand CSS property resets all of an element's properties except `unicode-bidi`, `direction`, and CSS Custom Properties. It can set properties to their initial or inherited values, or to the values specified in another cascade layer or stylesheet origin.
     *
     * **Syntax**: `initial | inherit | unset | revert | revert-layer`
     *
@@ -3089,9 +3107,9 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     *
     * **Initial value**: `replace`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * |   No   |   n/a   |   No   | n/a  | No  |
+    * | Chrome  | Firefox | Safari | Edge | IE  |
+    * | :-----: | :-----: | :----: | :--: | :-: |
+    * | **112** |   n/a   | **16** | n/a  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/animation-composition
     */
@@ -3178,7 +3196,7 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
   var animationIterationCount: js.UndefOr[AnimationIterationCount] = js.undefined
   
   /**
-    * The **`animation-name`** CSS property specifies the names of one or more `@keyframes` at-rules describing the animation or animations to apply to the element.
+    * The **`animation-name`** CSS property specifies the names of one or more `@keyframes` at-rules that describe the animation to apply to an element. Multiple `@keyframe` at-rules are specified as a comma-separated list of names. If the specified name does not match any `@keyframe` at-rule, no properties are animated.
     *
     * **Syntax**: `[ none | <keyframes-name> ]#`
     *
@@ -3210,7 +3228,7 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
   var animationPlayState: js.UndefOr[AnimationPlayState] = js.undefined
   
   /**
-    * The **`animation-timeline`** CSS property specifies the names of one or more `@scroll-timeline` at-rules describing the scroll animations to apply to the element.
+    * The **`animation-timeline`** CSS property specifies the timeline that is used to control the progress of an animation.
     *
     * **Syntax**: `<single-animation-timeline>#`
     *
@@ -3241,7 +3259,7 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
   var animationTimingFunction: js.UndefOr[AnimationTimingFunction] = js.undefined
   
   /**
-    * The **`appearance`** CSS property is used to display an element using platform-native styling, based on the operating system's theme. The **`-moz-appearance`** and **`-webkit-appearance`** properties are non-standard versions of this property, used (respectively) by Gecko (Firefox) and by WebKit-based (e.g., Safari) and Blink-based (e.g., Chrome, Opera) browsers to achieve the same thing. Note that Firefox and Edge also support **`-webkit-appearance`**, for compatibility reasons.
+    * The **`appearance`** CSS property is used to control native appearance of UI controls, that are based on operating system's theme.
     *
     * **Syntax**: `none | auto | textfield | menulist-button | <compat-auto>`
     *
@@ -3882,7 +3900,7 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
   var borderImageOutset: js.UndefOr[BorderImageOutset[String | Double]] = js.undefined
   
   /**
-    * The **`border-image-repeat`** CSS property defines how the edge regions of a source image are adjusted to fit the dimensions of an element's border image.
+    * The **`border-image-repeat`** CSS property defines how the edge regions and middle region of a source image are adjusted to fit the dimensions of an element's border image. The middle region can be displayed by using the keyword "fill" in the border-image-slice property.
     *
     * **Syntax**: `[ stretch | repeat | round | space ]{1,2}`
     *
@@ -4251,7 +4269,7 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
   var borderRightWidth: js.UndefOr[BorderRightWidth[String | Double]] = js.undefined
   
   /**
-    * The **`border-spacing`** CSS property sets the distance between the borders of adjacent `<table>` cells. This property applies only when `border-collapse` is `separate`.
+    * The **`border-spacing`** CSS property sets the distance between the borders of adjacent cells in a `<table>`. This property applies only when `border-collapse` is `separate`.
     *
     * **Syntax**: `<length> <length>?`
     *
@@ -4621,6 +4639,9 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     */
   var captionSide: js.UndefOr[CaptionSide] = js.undefined
   
+  /** **Syntax**: `<'caret-color'> || <'caret-shape'>` */
+  var caret: js.UndefOr[Caret] = js.undefined
+  
   /**
     * The **`caret-color`** CSS property sets the color of the **insertion caret**, the visible marker where the next character typed will be inserted. This is sometimes referred to as the **text input cursor**. The caret appears in elements such as `<input>` or those with the `contenteditable` attribute. The caret is typically a thin vertical line that flashes to help make it more noticeable. By default, it is black, but its color can be altered with this property.
     *
@@ -4635,6 +4656,13 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/caret-color
     */
   var caretColor: js.UndefOr[CaretColor] = js.undefined
+  
+  /**
+    * **Syntax**: `auto | bar | block | underscore`
+    *
+    * **Initial value**: `auto`
+    */
+  var caretShape: js.UndefOr[CaretShape] = js.undefined
   
   /**
     * The **`clear`** CSS property sets whether an element must be moved below (cleared) floating elements that precede it. The `clear` property applies to floating and non-floating elements.
@@ -4681,7 +4709,7 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
   var clipRule: js.UndefOr[ClipRule] = js.undefined
   
   /**
-    * The **`color`** CSS property sets the foreground color value of an element's text and text decorations, and sets the `<currentcolor>` value. `currentcolor` may be used as an indirect value on _other_ properties and is the default for other color properties, such as `border-color`.
+    * The **`color`** CSS property sets the foreground color value of an element's text and text decorations, and sets the `currentcolor` value. `currentcolor` may be used as an indirect value on _other_ properties and is the default for other color properties, such as `border-color`.
     *
     * **Syntax**: `<color>`
     *
@@ -4886,7 +4914,7 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
   var columns: js.UndefOr[Columns[String | Double]] = js.undefined
   
   /**
-    * The **`contain`** CSS property allows an author to indicate that an element and its contents are, as much as possible, _independent_ of the rest of the document tree. This allows the browser to recalculate layout, style, paint, size, or any combination of them for a limited area of the DOM and not the entire page, leading to obvious performance benefits.
+    * The **`contain`** CSS property indicates that an element and its contents are, as much as possible, independent from the rest of the document tree. Containment enables isolating a subsection of the DOM, providing performance benefits by limiting calculations of layout, style, paint, size, or any combination to a DOM subtree rather than the entire page. Containment can also be used to scope CSS counters and quotes.
     *
     * **Syntax**: `none | strict | content | [ [ size || inline-size ] || layout || style || paint ]`
     *
@@ -4899,6 +4927,122 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/contain
     */
   var contain: js.UndefOr[Contain] = js.undefined
+  
+  /**
+    * The **`contain-intrinsic-block-size`** CSS logical property defines the block size of an element that a browser can use for layout when the element is subject to size containment.
+    *
+    * **Syntax**: `none | <length> | auto <length>`
+    *
+    * **Initial value**: `none`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * | **95** | **107** |   No   | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/contain-intrinsic-contain-intrinsic-block-size
+    */
+  var containIntrinsicBlockSize: js.UndefOr[ContainIntrinsicBlockSize[String | Double]] = js.undefined
+  
+  /**
+    * The **`contain-intrinsic-length`** CSS property sets the height of an element that a browser can use for layout when the element is subject to size containment.
+    *
+    * **Syntax**: `none | <length> | auto <length>`
+    *
+    * **Initial value**: `none`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * | **83** | **107** |   No   | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/contain-intrinsic-height
+    */
+  var containIntrinsicHeight: js.UndefOr[ContainIntrinsicHeight[String | Double]] = js.undefined
+  
+  /**
+    * The **`contain-intrinsic-inline-size`** CSS logical property defines the inline-size of an element that a browser can use for layout when the element is subject to size containment.
+    *
+    * **Syntax**: `none | <length> | auto <length>`
+    *
+    * **Initial value**: `none`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * | **95** | **107** |   No   | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/contain-intrinsic-contain-intrinsic-inline-size
+    */
+  var containIntrinsicInlineSize: js.UndefOr[ContainIntrinsicInlineSize[String | Double]] = js.undefined
+  
+  /**
+    * The **`contain-intrinsic-size`** CSS shorthand property sets the size of an element that a browser will use for layout when the element is subject to size containment.
+    *
+    * **Syntax**: `[ none | <length> | auto <length> ]{1,2}`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * | **83** | **107** |   No   | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/contain-intrinsic-size
+    */
+  var containIntrinsicSize: js.UndefOr[ContainIntrinsicSize[String | Double]] = js.undefined
+  
+  /**
+    * The **`contain-intrinsic-width`** CSS property sets the width of an element that a browser will use for layout when the element is subject to size containment.
+    *
+    * **Syntax**: `none | <length> | auto <length>`
+    *
+    * **Initial value**: `none`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * | **83** | **107** |   No   | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/contain-intrinsic-width
+    */
+  var containIntrinsicWidth: js.UndefOr[ContainIntrinsicWidth[String | Double]] = js.undefined
+  
+  /**
+    * The **container** shorthand CSS property establishes the element as a query container and specifies the name or name for the containment context used in a container query.
+    *
+    * **Syntax**: `<'container-name'> [ / <'container-type'> ]?`
+    *
+    * | Chrome  | Firefox | Safari | Edge | IE  |
+    * | :-----: | :-----: | :----: | :--: | :-: |
+    * | **105** | **110** | **16** | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/container
+    */
+  var container: js.UndefOr[Container] = js.undefined
+  
+  /**
+    * The **container-name** CSS property specifies a list of query container names used by the @container at-rule in a container query. A container query will apply styles to elements based on the size of the nearest ancestor with a containment context. When a containment context is given a name, it can be specifically targeted using the `@container` at-rule instead of the nearest ancestor with containment.
+    *
+    * **Syntax**: `none | <custom-ident>+`
+    *
+    * **Initial value**: `none`
+    *
+    * | Chrome  | Firefox | Safari | Edge | IE  |
+    * | :-----: | :-----: | :----: | :--: | :-: |
+    * | **105** | **110** | **16** | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/container-name
+    */
+  var containerName: js.UndefOr[ContainerName] = js.undefined
+  
+  /**
+    * The **container-type** CSS property is used to define the type of containment used in a container query.
+    *
+    * **Syntax**: `normal | size | inline-size`
+    *
+    * **Initial value**: `normal`
+    *
+    * | Chrome  | Firefox | Safari | Edge | IE  |
+    * | :-----: | :-----: | :----: | :--: | :-: |
+    * | **105** | **110** | **16** | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/container-type
+    */
+  var containerType: js.UndefOr[ContainerType] = js.undefined
   
   /**
     * The **`content`** CSS property replaces an element with a generated value. Objects inserted using the `content` property are **anonymous replaced elements**.
@@ -4916,7 +5060,7 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
   var content: js.UndefOr[Content] = js.undefined
   
   /**
-    * The **`content-visibility`** CSS property controls whether or not an element renders its contents at all, along with forcing a strong set of containments, allowing user agents to potentially omit large swathes of layout and rendering work until it becomes needed. Basically it enables the user agent to skip an element's rendering work (including layout and painting) until it is needed — which makes the initial page load much faster.
+    * The **`content-visibility`** CSS property controls whether or not an element renders its contents at all, along with forcing a strong set of containments, allowing user agents to potentially omit large swathes of layout and rendering work until it becomes needed. It enables the user agent to skip an element's rendering work (including layout and painting) until it is needed — which makes the initial page load much faster.
     *
     * **Syntax**: `visible | auto | hidden`
     *
@@ -4924,7 +5068,7 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **85** |   No    |   No   | n/a  | No  |
+    * | **85** |   n/a   |   No   | n/a  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/content-visibility
     */
@@ -5278,6 +5422,19 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
   var fontOpticalSizing: js.UndefOr[FontOpticalSizing] = js.undefined
   
   /**
+    * **Syntax**: `normal | light | dark | <palette-identifier>`
+    *
+    * **Initial value**: `normal`
+    *
+    * | Chrome  | Firefox |  Safari  | Edge | IE  |
+    * | :-----: | :-----: | :------: | :--: | :-: |
+    * | **101** | **107** | **15.4** | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/font-palette
+    */
+  var fontPalette: js.UndefOr[FontPalette] = js.undefined
+  
+  /**
     * The **`font-size`** CSS property sets the size of the font. Changing the font size also updates the sizes of the font size-relative `<length>` units, such as `em`, `ex`, and so forth.
     *
     * **Syntax**: `<absolute-size> | <relative-size> | <length-percentage>`
@@ -5299,9 +5456,9 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     *
     * **Initial value**: `none`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * |   No   |  **3**  |   No   | n/a  | No  |
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * |   No   |  **3**  | **16.4** | n/a  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/font-size-adjust
     */
@@ -5426,6 +5583,19 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/font-variant-east-asian
     */
   var fontVariantEastAsian: js.UndefOr[FontVariantEastAsian] = js.undefined
+  
+  /**
+    * **Syntax**: `normal | text | emoji | unicode`
+    *
+    * **Initial value**: `normal`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |   No   | **108** |   No   | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/font-variant-emoji
+    */
+  var fontVariantEmoji: js.UndefOr[FontVariantEmoji] = js.undefined
   
   /**
     * The **`font-variant-ligatures`** CSS property controls which ligatures and contextual forms are used in textual content of the elements it applies to. This leads to more harmonized forms in the resulting text.
@@ -5669,7 +5839,7 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
   var gridGap: js.UndefOr[GridGap[String | Double]] = js.undefined
   
   /**
-    * The **`grid-row`** CSS shorthand property specifies a grid item's size and location within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-start and inline-end edge of its grid area.
+    * The **`grid-row`** CSS shorthand property specifies a grid item's size and location within a grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-start and inline-end edge of its grid area.
     *
     * **Syntax**: `<grid-line> [ / <grid-line> ]?`
     *
@@ -5697,7 +5867,7 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
   var gridRowEnd: js.UndefOr[GridRowEnd] = js.undefined
   
   /**
-    * The **`row-gap`** CSS property sets the size of the gap (gutter) between an element's grid rows.
+    * The **`row-gap`** CSS property sets the size of the gap (gutter) between an element's rows.
     *
     * **Syntax**: `<length-percentage>`
     *
@@ -5723,7 +5893,7 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
   var gridRowStart: js.UndefOr[GridRowStart] = js.undefined
   
   /**
-    * The **`grid-template`** CSS property is a shorthand property for defining grid columns, rows, and areas.
+    * The **`grid-template`** CSS property is a shorthand property for defining grid columns, grid rows, and grid areas.
     *
     * **Syntax**: `none | [ <'grid-template-rows'> / <'grid-template-columns'> ] | [ <line-names>? <string> <track-size>? <line-names>? ]+ [ / <explicit-track-list> ]?`
     *
@@ -5820,13 +5990,27 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     *
     * **Initial value**: `auto`
     *
-    * |   Chrome    | Firefox |    Safari     | Edge | IE  |
-    * | :---------: | :-----: | :-----------: | :--: | :-: |
-    * | **6** _-x-_ | **98**  | **5.1** _-x-_ | n/a  | No  |
+    * | Chrome  | Firefox |    Safari     | Edge | IE  |
+    * | :-----: | :-----: | :-----------: | :--: | :-: |
+    * | **106** | **98**  | **5.1** _-x-_ | n/a  | No  |
+    * | 6 _-x-_ |         |               |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/hyphenate-character
     */
   var hyphenateCharacter: js.UndefOr[HyphenateCharacter] = js.undefined
+  
+  /**
+    * The **`hyphenate-limit-chars`** CSS property specifies the minimum word length to allow hyphenation of words as well as the the minimum number of characters before and after the hyphen.
+    *
+    * **Syntax**: `[ auto | <integer> ]{1,3}`
+    *
+    * **Initial value**: `auto`
+    *
+    * | Chrome  | Firefox | Safari | Edge | IE  |
+    * | :-----: | :-----: | :----: | :--: | :-: |
+    * | **109** |   No    |   No   | n/a  | No  |
+    */
+  var hyphenateLimitChars: js.UndefOr[HyphenateLimitChars] = js.undefined
   
   /**
     * The **`hyphens`** CSS property specifies how words should be hyphenated when text wraps across multiple lines. It can prevent hyphenation entirely, hyphenate at manually-specified points within the text, or let the browser automatically insert hyphens where appropriate.
@@ -5899,9 +6083,9 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     *
     * **Initial value**: `normal`
     *
-    * | Chrome | Firefox |   Safari    | Edge | IE  |
-    * | :----: | :-----: | :---------: | :--: | :-: |
-    * |   No   |   No    | **9** _-x-_ | n/a  | No  |
+    * | Chrome  | Firefox |   Safari    | Edge | IE  |
+    * | :-----: | :-----: | :---------: | :--: | :-: |
+    * | **110** |   No    | **9** _-x-_ | n/a  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/initial-letter
     */
@@ -5934,8 +6118,6 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     *
     * **Syntax**: `<'top'>{1,4}`
     *
-    * **Initial value**: `auto`
-    *
     * | Chrome | Firefox |  Safari  | Edge | IE  |
     * | :----: | :-----: | :------: | :--: | :-: |
     * | **87** | **66**  | **14.1** | n/a  | No  |
@@ -5948,8 +6130,6 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     * The **`inset-block`** CSS property defines the logical block start and end offsets of an element, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top` and `bottom`, or `right` and `left` properties depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Syntax**: `<'top'>{1,2}`
-    *
-    * **Initial value**: `auto`
     *
     * | Chrome | Firefox |  Safari  | Edge | IE  |
     * | :----: | :-----: | :------: | :--: | :-: |
@@ -5993,8 +6173,6 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     * The **`inset-inline`** CSS property defines the logical start and end offsets of an element in the inline direction, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top` and `bottom`, or `right` and `left` properties depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Syntax**: `<'top'>{1,2}`
-    *
-    * **Initial value**: `auto`
     *
     * | Chrome | Firefox |  Safari  | Edge | IE  |
     * | :----: | :-----: | :------: | :--: | :-: |
@@ -6271,8 +6449,6 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     *
     * **Syntax**: `<'margin-left'>{1,2}`
     *
-    * **Initial value**: `0`
-    *
     * | Chrome | Firefox |  Safari  | Edge | IE  |
     * | :----: | :-----: | :------: | :--: | :-: |
     * | **87** | **66**  | **14.1** | n/a  | No  |
@@ -6330,8 +6506,6 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     * The **`margin-inline`** CSS shorthand property is a shorthand property that defines both the logical inline start and end margins of an element, which maps to physical margins depending on the element's writing mode, directionality, and text orientation.
     *
     * **Syntax**: `<'margin-left'>{1,2}`
-    *
-    * **Initial value**: `0`
     *
     * | Chrome | Firefox |  Safari  | Edge | IE  |
     * | :----: | :-----: | :------: | :--: | :-: |
@@ -6417,6 +6591,21 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/margin-top
     */
   var marginTop: js.UndefOr[MarginTop[String | Double]] = js.undefined
+  
+  /**
+    * The `margin-trim` property allows the container to trim the margins of its children where they adjoin the container's edges.
+    *
+    * **Syntax**: `none | in-flow | all`
+    *
+    * **Initial value**: `none`
+    *
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * |   No   |   No    | **16.4** | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/margin-trim
+    */
+  var marginTrim: js.UndefOr[MarginTrim] = js.undefined
   
   var marker: js.UndefOr[Marker] = js.undefined
   
@@ -6635,7 +6824,7 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     *
     * **Syntax**: `<repeat-style>#`
     *
-    * **Initial value**: `no-repeat`
+    * **Initial value**: `repeat`
     *
     * |   Chrome    | Firefox |  Safari   | Edge  | IE  |
     * | :---------: | :-----: | :-------: | :---: | :-: |
@@ -6684,9 +6873,9 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     *
     * **Initial value**: `0`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   |   n/a   |   No   | n/a  | No  |
+    * | Chrome  | Firefox | Safari | Edge | IE  |
+    * | :-----: | :-----: | :----: | :--: | :-: |
+    * | **109** |   n/a   |   No   | n/a  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/math-depth
     */
@@ -6699,9 +6888,9 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     *
     * **Initial value**: `normal`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   |   No    |   No   | n/a  | No  |
+    * | Chrome  | Firefox | Safari | Edge | IE  |
+    * | :-----: | :-----: | :----: | :--: | :-: |
+    * | **109** |   No    |   No   | n/a  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/math-shift
     */
@@ -6714,9 +6903,9 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     *
     * **Initial value**: `normal`
     *
-    * | Chrome | Firefox |  Safari  | Edge | IE  |
-    * | :----: | :-----: | :------: | :--: | :-: |
-    * |  n/a   |   n/a   | **14.1** | n/a  | No  |
+    * | Chrome  | Firefox |  Safari  | Edge | IE  |
+    * | :-----: | :-----: | :------: | :--: | :-: |
+    * | **109** |   n/a   | **14.1** | n/a  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/math-style
     */
@@ -6886,10 +7075,10 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     *
     * **Initial value**: `0`
     *
-    * |         Chrome         | Firefox | Safari | Edge | IE  |
-    * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **55**         | **72**  |   No   | n/a  | No  |
-    * | 46 _(motion-distance)_ |         |        |      |     |
+    * |         Chrome         | Firefox |   Safari    | Edge | IE  |
+    * | :--------------------: | :-----: | :---------: | :--: | :-: |
+    * |         **55**         | **72**  | **preview** | n/a  | No  |
+    * | 46 _(motion-distance)_ |         |             |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-distance
     */
@@ -6918,10 +7107,10 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     *
     * **Initial value**: `auto`
     *
-    * |         Chrome         | Firefox | Safari | Edge | IE  |
-    * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **56**         | **72**  |   No   | n/a  | No  |
-    * | 46 _(motion-rotation)_ |         |        |      |     |
+    * |         Chrome         | Firefox |   Safari    | Edge | IE  |
+    * | :--------------------: | :-----: | :---------: | :--: | :-: |
+    * |         **56**         | **72**  | **preview** | n/a  | No  |
+    * | 46 _(motion-rotation)_ |         |             |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-rotate
     */
@@ -7483,7 +7672,7 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
   var msTransitionTimingFunction: js.UndefOr[TransitionTimingFunction] = js.undefined
   
   /**
-    * The `**user-select**` CSS property controls whether the user can select text. This doesn't have any effect on content loaded as chrome, except in textboxes.
+    * The **`user-select`** CSS property controls whether the user can select text. This doesn't have any effect on content loaded as part of a browser's user interface (its chrome), except in textboxes.
     *
     * **Syntax**: `none | element | text`
     *
@@ -7585,9 +7774,9 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     *
     * **Initial value**: `auto`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * |   No   | **72**  |   No   | n/a  | No  |
+    * | Chrome | Firefox |   Safari    | Edge | IE  |
+    * | :----: | :-----: | :---------: | :--: | :-: |
+    * |   No   | **72**  | **preview** | n/a  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-anchor
     */
@@ -7597,8 +7786,6 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     * The **`inset-block`** CSS property defines the logical block start and end offsets of an element, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top` and `bottom`, or `right` and `left` properties depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Syntax**: `<'top'>{1,2}`
-    *
-    * **Initial value**: `auto`
     *
     * @deprecated
     */
@@ -7633,10 +7820,10 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     *
     * **Initial value**: `0`
     *
-    * |         Chrome         | Firefox | Safari | Edge | IE  |
-    * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **55**         | **72**  |   No   | n/a  | No  |
-    * | 46 _(motion-distance)_ |         |        |      |     |
+    * |         Chrome         | Firefox |   Safari    | Edge | IE  |
+    * | :--------------------: | :-----: | :---------: | :--: | :-: |
+    * |         **55**         | **72**  | **preview** | n/a  | No  |
+    * | 46 _(motion-distance)_ |         |             |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-distance
     */
@@ -7646,8 +7833,6 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     * The **`inset-inline`** CSS property defines the logical start and end offsets of an element in the inline direction, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top` and `bottom`, or `right` and `left` properties depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Syntax**: `<'top'>{1,2}`
-    *
-    * **Initial value**: `auto`
     *
     * @deprecated
     */
@@ -7692,16 +7877,29 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
   var offsetPath: js.UndefOr[OffsetPath] = js.undefined
   
   /**
+    * **Syntax**: `auto | <position>`
+    *
+    * **Initial value**: `auto`
+    *
+    * | Chrome | Firefox |   Safari    | Edge | IE  |
+    * | :----: | :-----: | :---------: | :--: | :-: |
+    * |   No   |   No    | **preview** | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/offset-position
+    */
+  var offsetPosition: js.UndefOr[OffsetPosition[String | Double]] = js.undefined
+  
+  /**
     * The **`offset-rotate`** CSS property defines the orientation/direction of the element as it is positioned along the `offset-path`.
     *
     * **Syntax**: `[ auto | reverse ] || <angle>`
     *
     * **Initial value**: `auto`
     *
-    * |         Chrome         | Firefox | Safari | Edge | IE  |
-    * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **56**         | **72**  |   No   | n/a  | No  |
-    * | 46 _(motion-rotation)_ |         |        |      |     |
+    * |         Chrome         | Firefox |   Safari    | Edge | IE  |
+    * | :--------------------: | :-----: | :---------: | :--: | :-: |
+    * |         **56**         | **72**  | **preview** | n/a  | No  |
+    * | 46 _(motion-rotation)_ |         |             |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-rotate
     */
@@ -7714,10 +7912,10 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     *
     * **Initial value**: `auto`
     *
-    * |         Chrome         | Firefox | Safari | Edge | IE  |
-    * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **56**         | **72**  |   No   | n/a  | No  |
-    * | 46 _(motion-rotation)_ |         |        |      |     |
+    * |         Chrome         | Firefox |   Safari    | Edge | IE  |
+    * | :--------------------: | :-----: | :---------: | :--: | :-: |
+    * |         **56**         | **72**  | **preview** | n/a  | No  |
+    * | 46 _(motion-rotation)_ |         |             |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-rotate
     */
@@ -7770,13 +7968,13 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
   var orphans: js.UndefOr[Orphans] = js.undefined
   
   /**
-    * The **`outline`** CSS shorthand property set all the outline properties in a single declaration.
+    * The **`outline`** CSS shorthand property sets most of the outline properties in a single declaration.
     *
     * **Syntax**: `[ <'outline-color'> || <'outline-style'> || <'outline-width'> ]`
     *
     * | Chrome | Firefox | Safari  |  Edge  |  IE   |
     * | :----: | :-----: | :-----: | :----: | :---: |
-    * | **1**  | **1.5** | **1.2** | **12** | **8** |
+    * | **94** | **88**  | **1.2** | **94** | **8** |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/outline
     */
@@ -7905,7 +8103,7 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **90** |   No    |   No   | n/a  | No  |
+    * | **90** | **102** |   No   | n/a  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/overflow-clip-margin
     */
@@ -8063,8 +8261,6 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     *
     * **Syntax**: `<'padding-left'>{1,2}`
     *
-    * **Initial value**: `0`
-    *
     * | Chrome | Firefox |  Safari  | Edge | IE  |
     * | :----: | :-----: | :------: | :--: | :-: |
     * | **87** | **66**  | **14.1** | n/a  | No  |
@@ -8122,8 +8318,6 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     * The **`padding-inline`** CSS shorthand property defines the logical inline start and end padding of an element, which maps to physical padding properties depending on the element's writing mode, directionality, and text orientation.
     *
     * **Syntax**: `<'padding-left'>{1,2}`
-    *
-    * **Initial value**: `0`
     *
     * | Chrome | Firefox |  Safari  | Edge | IE  |
     * | :----: | :-----: | :------: | :--: | :-: |
@@ -8209,6 +8403,21 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/padding-top
     */
   var paddingTop: js.UndefOr[PaddingTop[String | Double]] = js.undefined
+  
+  /**
+    * The **`page`** CSS property is used to specify the named page, a specific type of page defined by the `@page` at-rule.
+    *
+    * **Syntax**: `auto | <custom-ident>`
+    *
+    * **Initial value**: `auto`
+    *
+    * | Chrome | Firefox |   Safari    | Edge | IE  |
+    * | :----: | :-----: | :---------: | :--: | :-: |
+    * | **85** | **110** | **preview** | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/page
+    */
+  var page: js.UndefOr[Page] = js.undefined
   
   /**
     * The **`page-break-after`** CSS property adjusts page breaks _after_ the current element.
@@ -8306,8 +8515,6 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     * The **`place-content`** CSS shorthand property allows you to align content along both the block and inline directions at once (i.e. the `align-content` and `justify-content` properties) in a relevant layout system such as Grid or Flexbox.
     *
     * **Syntax**: `<'align-content'> <'justify-content'>?`
-    *
-    * **Initial value**: `normal`
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
@@ -8450,7 +8657,7 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
   var rotate: js.UndefOr[Rotate] = js.undefined
   
   /**
-    * The **`row-gap`** CSS property sets the size of the gap (gutter) between an element's grid rows.
+    * The **`row-gap`** CSS property sets the size of the gap (gutter) between an element's rows.
     *
     * **Syntax**: `normal | <length-percentage>`
     *
@@ -8537,8 +8744,6 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     *
     * **Syntax**: `<length>{1,4}`
     *
-    * **Initial value**: `0`
-    *
     * | Chrome | Firefox |          Safari           | Edge | IE  |
     * | :----: | :-----: | :-----------------------: | :--: | :-: |
     * | **69** | **90**  |         **14.1**          | n/a  | No  |
@@ -8552,8 +8757,6 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     * The `scroll-margin-block` shorthand property sets the scroll margins of an element in the block dimension.
     *
     * **Syntax**: `<length>{1,2}`
-    *
-    * **Initial value**: `0`
     *
     * | Chrome | Firefox |  Safari  | Edge | IE  |
     * | :----: | :-----: | :------: | :--: | :-: |
@@ -8613,8 +8816,6 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     * The `scroll-margin-inline` shorthand property sets the scroll margins of an element in the inline dimension.
     *
     * **Syntax**: `<length>{1,2}`
-    *
-    * **Initial value**: `0`
     *
     * | Chrome | Firefox |  Safari  | Edge | IE  |
     * | :----: | :-----: | :------: | :--: | :-: |
@@ -8707,8 +8908,6 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     *
     * **Syntax**: `[ auto | <length-percentage> ]{1,4}`
     *
-    * **Initial value**: `auto`
-    *
     * | Chrome | Firefox |  Safari  | Edge | IE  |
     * | :----: | :-----: | :------: | :--: | :-: |
     * | **69** | **68**  | **14.1** | n/a  | No  |
@@ -8721,8 +8920,6 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     * The `scroll-padding-block` shorthand property sets the scroll padding of an element in the block dimension.
     *
     * **Syntax**: `[ auto | <length-percentage> ]{1,2}`
-    *
-    * **Initial value**: `auto`
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
@@ -8781,8 +8978,6 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     * The `scroll-padding-inline` shorthand property sets the scroll padding of an element in the inline dimension.
     *
     * **Syntax**: `[ auto | <length-percentage> ]{1,2}`
-    *
-    * **Initial value**: `auto`
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
@@ -8909,8 +9104,6 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     *
     * **Syntax**: `<length>{1,4}`
     *
-    * **Initial value**: `0`
-    *
     * | Chrome | Firefox |          Safari           | Edge | IE  |
     * | :----: | :-----: | :-----------------------: | :--: | :-: |
     * | **69** |  68-90  |         **14.1**          | n/a  | No  |
@@ -9007,7 +9200,7 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
   var scrollSnapPointsY: js.UndefOr[ScrollSnapPointsY] = js.undefined
   
   /**
-    * The **`scroll-snap-stop`** CSS property defines whether the scroll container is allowed to "pass over" possible snap positions.
+    * The **`scroll-snap-stop`** CSS property defines whether or not the scroll container is allowed to "pass over" possible snap positions.
     *
     * **Syntax**: `normal | always`
     *
@@ -9058,6 +9251,49 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     * @deprecated
     */
   var scrollSnapTypeY: js.UndefOr[ScrollSnapTypeY] = js.undefined
+  
+  /**
+    * The **`scroll-timeline`** CSS shorthand property defines a name that can be used to identify the source element of a scroll timeline, along with the scrollbar axis that should provide the timeline.
+    *
+    * **Syntax**: `[<'scroll-timeline-name'> <'scroll-timeline-axis'>?]#`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |   No   |   n/a   |   No   | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/scroll-timeline
+    */
+  var scrollTimeline: js.UndefOr[ScrollTimeline] = js.undefined
+  
+  /**
+    * The **`scroll-timeline-axis`** CSS property can be used to specify the scrollbar that will be used to provide the timeline for a scroll-timeline animation.
+    *
+    * **Syntax**: `[ block | inline | vertical | horizontal ]#`
+    *
+    * **Initial value**: `block`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |   No   |   n/a   |   No   | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/scroll-timeline-axis
+    */
+  var scrollTimelineAxis: js.UndefOr[ScrollTimelineAxis] = js.undefined
+  
+  /**
+    * The **`scroll-timeline-name`** CSS property defines a name that can be used to identify an element as the source of a scroll timeline for an animation.
+    *
+    * **Syntax**: `none | <custom-ident>#`
+    *
+    * **Initial value**: `none`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |   No   |   n/a   |   No   | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/scroll-timeline-name
+    */
+  var scrollTimelineName: js.UndefOr[ScrollTimelineName] = js.undefined
   
   /**
     * The **`scrollbar-color`** CSS property sets the color of the scrollbar track and thumb.
@@ -9203,7 +9439,7 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
   var tableLayout: js.UndefOr[TableLayout] = js.undefined
   
   /**
-    * The **`text-align`** CSS property sets the horizontal alignment of the content inside a block element or table-cell box. This means it works like `vertical-align` but in the horizontal direction.
+    * The **`text-align`** CSS property sets the horizontal alignment of the inline-level content inside a block element or table-cell box. This means it works like `vertical-align` but in the horizontal direction.
     *
     * **Syntax**: `start | end | left | right | center | justify | match-parent`
     *
@@ -9241,10 +9477,10 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
     *
     * **Initial value**: `none`
     *
-    * |           Chrome           | Firefox |              Safari              | Edge  |                   IE                   |
-    * | :------------------------: | :-----: | :------------------------------: | :---: | :------------------------------------: |
-    * |           **48**           | **48**  | **5.1** _(-webkit-text-combine)_ | 15-79 | **11** _(-ms-text-combine-horizontal)_ |
-    * | 9 _(-webkit-text-combine)_ |         |                                  |       |                                        |
+    * |           Chrome           | Firefox |            Safari            | Edge  |                   IE                   |
+    * | :------------------------: | :-----: | :--------------------------: | :---: | :------------------------------------: |
+    * |           **48**           | **48**  |         **preview**          | 15-79 | **11** _(-ms-text-combine-horizontal)_ |
+    * | 9 _(-webkit-text-combine)_ |         | 5.1 _(-webkit-text-combine)_ |       |                                        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-combine-upright
     */
@@ -9619,7 +9855,7 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
   var transform: js.UndefOr[Transform] = js.undefined
   
   /**
-    * The **`transform-box`** CSS property defines the layout box to which the `transform` and `transform-origin` properties relate.
+    * The **`transform-box`** CSS property defines the layout box to which the `transform`, individual transform properties `translate`,`scale`, and `rotate`, and `transform-origin` properties relate.
     *
     * **Syntax**: `content-box | border-box | fill-box | stroke-box | view-box`
     *
@@ -9807,6 +10043,21 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
   var verticalAlign: js.UndefOr[VerticalAlign[String | Double]] = js.undefined
   
   /**
+    * The **`view-transition-name`** CSS property provides the selected element with a distinct identifying name (a `<custom-ident>`) and causes it to participate in a separate view transition from the root view transition — or no view transition if the `none` value is specified.
+    *
+    * **Syntax**: `none | <custom-ident>`
+    *
+    * **Initial value**: `none`
+    *
+    * | Chrome  | Firefox | Safari | Edge | IE  |
+    * | :-----: | :-----: | :----: | :--: | :-: |
+    * | **111** |   No    |   No   | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/view-transition-name
+    */
+  var viewTransitionName: js.UndefOr[ViewTransitionName] = js.undefined
+  
+  /**
     * The **`visibility`** CSS property shows or hides an element without changing the layout of a document. The property can also hide rows or columns in a `<table>`.
     *
     * **Syntax**: `visible | hidden | collapse`
@@ -9952,7 +10203,7 @@ trait CSSPropertiesPartialRecorBackgroundPositionY extends StObject {
   var zIndex: js.UndefOr[ZIndex] = js.undefined
   
   /**
-    * The non-standard **_`zoom`_** CSS property can be used to control the magnification level of an element. `transform: scale()` should be used instead of this property, if possible. However, unlike CSS Transforms, `zoom` affects the layout size of the element.
+    * The non-standard **`zoom`** CSS property can be used to control the magnification level of an element. `transform: scale()` should be used instead of this property, if possible. However, unlike CSS Transforms, `zoom` affects the layout size of the element.
     *
     * **Syntax**: `normal | reset | <number> | <percentage>`
     *
@@ -10444,9 +10695,17 @@ object CSSPropertiesPartialRecorBackgroundPositionY {
     
     inline def setCaptionSideUndefined: Self = StObject.set(x, "captionSide", js.undefined)
     
+    inline def setCaret(value: Caret): Self = StObject.set(x, "caret", value.asInstanceOf[js.Any])
+    
     inline def setCaretColor(value: CaretColor): Self = StObject.set(x, "caretColor", value.asInstanceOf[js.Any])
     
     inline def setCaretColorUndefined: Self = StObject.set(x, "caretColor", js.undefined)
+    
+    inline def setCaretShape(value: CaretShape): Self = StObject.set(x, "caretShape", value.asInstanceOf[js.Any])
+    
+    inline def setCaretShapeUndefined: Self = StObject.set(x, "caretShape", js.undefined)
+    
+    inline def setCaretUndefined: Self = StObject.set(x, "caret", js.undefined)
     
     inline def setClear(value: typings.csstype.mod.Property.Clear): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     
@@ -10526,7 +10785,39 @@ object CSSPropertiesPartialRecorBackgroundPositionY {
     
     inline def setContain(value: Contain): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
     
+    inline def setContainIntrinsicBlockSize(value: ContainIntrinsicBlockSize[String | Double]): Self = StObject.set(x, "containIntrinsicBlockSize", value.asInstanceOf[js.Any])
+    
+    inline def setContainIntrinsicBlockSizeUndefined: Self = StObject.set(x, "containIntrinsicBlockSize", js.undefined)
+    
+    inline def setContainIntrinsicHeight(value: ContainIntrinsicHeight[String | Double]): Self = StObject.set(x, "containIntrinsicHeight", value.asInstanceOf[js.Any])
+    
+    inline def setContainIntrinsicHeightUndefined: Self = StObject.set(x, "containIntrinsicHeight", js.undefined)
+    
+    inline def setContainIntrinsicInlineSize(value: ContainIntrinsicInlineSize[String | Double]): Self = StObject.set(x, "containIntrinsicInlineSize", value.asInstanceOf[js.Any])
+    
+    inline def setContainIntrinsicInlineSizeUndefined: Self = StObject.set(x, "containIntrinsicInlineSize", js.undefined)
+    
+    inline def setContainIntrinsicSize(value: ContainIntrinsicSize[String | Double]): Self = StObject.set(x, "containIntrinsicSize", value.asInstanceOf[js.Any])
+    
+    inline def setContainIntrinsicSizeUndefined: Self = StObject.set(x, "containIntrinsicSize", js.undefined)
+    
+    inline def setContainIntrinsicWidth(value: ContainIntrinsicWidth[String | Double]): Self = StObject.set(x, "containIntrinsicWidth", value.asInstanceOf[js.Any])
+    
+    inline def setContainIntrinsicWidthUndefined: Self = StObject.set(x, "containIntrinsicWidth", js.undefined)
+    
     inline def setContainUndefined: Self = StObject.set(x, "contain", js.undefined)
+    
+    inline def setContainer(value: Container): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerName(value: ContainerName): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+    
+    inline def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
+    
+    inline def setContainerType(value: ContainerType): Self = StObject.set(x, "containerType", value.asInstanceOf[js.Any])
+    
+    inline def setContainerTypeUndefined: Self = StObject.set(x, "containerType", js.undefined)
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     inline def setContent(value: Content): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
@@ -10646,6 +10937,10 @@ object CSSPropertiesPartialRecorBackgroundPositionY {
     
     inline def setFontOpticalSizingUndefined: Self = StObject.set(x, "fontOpticalSizing", js.undefined)
     
+    inline def setFontPalette(value: FontPalette): Self = StObject.set(x, "fontPalette", value.asInstanceOf[js.Any])
+    
+    inline def setFontPaletteUndefined: Self = StObject.set(x, "fontPalette", js.undefined)
+    
     inline def setFontSize(value: FontSize[String | Double]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     inline def setFontSizeAdjust(value: FontSizeAdjust): Self = StObject.set(x, "fontSizeAdjust", value.asInstanceOf[js.Any])
@@ -10685,6 +10980,10 @@ object CSSPropertiesPartialRecorBackgroundPositionY {
     inline def setFontVariantEastAsian(value: FontVariantEastAsian): Self = StObject.set(x, "fontVariantEastAsian", value.asInstanceOf[js.Any])
     
     inline def setFontVariantEastAsianUndefined: Self = StObject.set(x, "fontVariantEastAsian", js.undefined)
+    
+    inline def setFontVariantEmoji(value: FontVariantEmoji): Self = StObject.set(x, "fontVariantEmoji", value.asInstanceOf[js.Any])
+    
+    inline def setFontVariantEmojiUndefined: Self = StObject.set(x, "fontVariantEmoji", js.undefined)
     
     inline def setFontVariantLigatures(value: FontVariantLigatures): Self = StObject.set(x, "fontVariantLigatures", value.asInstanceOf[js.Any])
     
@@ -10807,6 +11106,10 @@ object CSSPropertiesPartialRecorBackgroundPositionY {
     inline def setHyphenateCharacter(value: HyphenateCharacter): Self = StObject.set(x, "hyphenateCharacter", value.asInstanceOf[js.Any])
     
     inline def setHyphenateCharacterUndefined: Self = StObject.set(x, "hyphenateCharacter", js.undefined)
+    
+    inline def setHyphenateLimitChars(value: HyphenateLimitChars): Self = StObject.set(x, "hyphenateLimitChars", value.asInstanceOf[js.Any])
+    
+    inline def setHyphenateLimitCharsUndefined: Self = StObject.set(x, "hyphenateLimitChars", js.undefined)
     
     inline def setHyphens(value: Hyphens): Self = StObject.set(x, "hyphens", value.asInstanceOf[js.Any])
     
@@ -11017,6 +11320,10 @@ object CSSPropertiesPartialRecorBackgroundPositionY {
     inline def setMarginTop(value: MarginTop[String | Double]): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
     inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
+    
+    inline def setMarginTrim(value: MarginTrim): Self = StObject.set(x, "marginTrim", value.asInstanceOf[js.Any])
+    
+    inline def setMarginTrimUndefined: Self = StObject.set(x, "marginTrim", js.undefined)
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
@@ -11954,6 +12261,10 @@ object CSSPropertiesPartialRecorBackgroundPositionY {
     
     inline def setOffsetPathUndefined: Self = StObject.set(x, "offsetPath", js.undefined)
     
+    inline def setOffsetPosition(value: OffsetPosition[String | Double]): Self = StObject.set(x, "offsetPosition", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetPositionUndefined: Self = StObject.set(x, "offsetPosition", js.undefined)
+    
     inline def setOffsetRotate(value: OffsetRotate): Self = StObject.set(x, "offsetRotate", value.asInstanceOf[js.Any])
     
     inline def setOffsetRotateUndefined: Self = StObject.set(x, "offsetRotate", js.undefined)
@@ -12096,6 +12407,8 @@ object CSSPropertiesPartialRecorBackgroundPositionY {
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
+    inline def setPage(value: Page): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    
     inline def setPageBreakAfter(value: PageBreakAfter): Self = StObject.set(x, "pageBreakAfter", value.asInstanceOf[js.Any])
     
     inline def setPageBreakAfterUndefined: Self = StObject.set(x, "pageBreakAfter", js.undefined)
@@ -12107,6 +12420,8 @@ object CSSPropertiesPartialRecorBackgroundPositionY {
     inline def setPageBreakInside(value: PageBreakInside): Self = StObject.set(x, "pageBreakInside", value.asInstanceOf[js.Any])
     
     inline def setPageBreakInsideUndefined: Self = StObject.set(x, "pageBreakInside", js.undefined)
+    
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
     inline def setPaintOrder(value: PaintOrder): Self = StObject.set(x, "paintOrder", value.asInstanceOf[js.Any])
     
@@ -12327,6 +12642,18 @@ object CSSPropertiesPartialRecorBackgroundPositionY {
     inline def setScrollSnapTypeY(value: ScrollSnapTypeY): Self = StObject.set(x, "scrollSnapTypeY", value.asInstanceOf[js.Any])
     
     inline def setScrollSnapTypeYUndefined: Self = StObject.set(x, "scrollSnapTypeY", js.undefined)
+    
+    inline def setScrollTimeline(value: ScrollTimeline): Self = StObject.set(x, "scrollTimeline", value.asInstanceOf[js.Any])
+    
+    inline def setScrollTimelineAxis(value: ScrollTimelineAxis): Self = StObject.set(x, "scrollTimelineAxis", value.asInstanceOf[js.Any])
+    
+    inline def setScrollTimelineAxisUndefined: Self = StObject.set(x, "scrollTimelineAxis", js.undefined)
+    
+    inline def setScrollTimelineName(value: ScrollTimelineName): Self = StObject.set(x, "scrollTimelineName", value.asInstanceOf[js.Any])
+    
+    inline def setScrollTimelineNameUndefined: Self = StObject.set(x, "scrollTimelineName", js.undefined)
+    
+    inline def setScrollTimelineUndefined: Self = StObject.set(x, "scrollTimeline", js.undefined)
     
     inline def setScrollbarColor(value: ScrollbarColor): Self = StObject.set(x, "scrollbarColor", value.asInstanceOf[js.Any])
     
@@ -12567,6 +12894,10 @@ object CSSPropertiesPartialRecorBackgroundPositionY {
     inline def setVerticalAlign(value: VerticalAlign[String | Double]): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
     inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+    
+    inline def setViewTransitionName(value: ViewTransitionName): Self = StObject.set(x, "viewTransitionName", value.asInstanceOf[js.Any])
+    
+    inline def setViewTransitionNameUndefined: Self = StObject.set(x, "viewTransitionName", js.undefined)
     
     inline def setVisibility(value: Visibility): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     

@@ -47,8 +47,6 @@ open class ElementDragHelper protected () extends EventHandler {
   
   var _enabled: Boolean = js.native
   
-  var _handleMouseUpOrTouchEnd: Any = js.native
-  
   var _hasDragListeners: Boolean = js.native
   
   var _isDragging: Boolean = js.native
@@ -60,7 +58,7 @@ open class ElementDragHelper protected () extends EventHandler {
   /**
     * This method is linked to `_element` events: `mousemove` and `touchmove`
     *
-    * @param {ElementTouchEvent} event - The event.
+    * @param {import('../../input/element-input').ElementTouchEvent} event - The event.
     * @private
     */
   /* private */ var _onMove: Any = js.native
@@ -69,14 +67,18 @@ open class ElementDragHelper protected () extends EventHandler {
     * This method calculates the `Vec3` intersection point of plane/ray intersection based on
     * the mouse/touch input event. If there is no intersection, it returns `null`.
     *
-    * @param {ElementTouchEvent} event - The event.
+    * @param {import('../../input/element-input').ElementTouchEvent | import('../../input/element-input').ElementMouseEvent | import('../../input/element-input').ElementSelectEvent} event - The event.
     * @returns {Vec3|null} The `Vec3` intersection point of plane/ray intersection, if there
     * is an intersection, otherwise `null`
     * @private
     */
   /* private */ var _screenToLocal: Any = js.native
   
-  def _toggleDragListeners(onOrOff: Any): Unit = js.native
+  /**
+    * @param {'on'|'off'} onOrOff - Either 'on' or 'off'.
+    * @private
+    */
+  /* private */ var _toggleDragListeners: Any = js.native
   
   /**
     * Fired when a new drag operation starts.

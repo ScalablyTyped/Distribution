@@ -1,7 +1,7 @@
 
 # Scala.js typings for emotion__unitless
 
-Typings are for version 0.8.0
+Typings are for version 0.8.1
 
 ## Library description:
 An object of css properties that don't accept values with units

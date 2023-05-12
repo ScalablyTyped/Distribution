@@ -9,18 +9,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait InputManager extends StObject {
   
+  /** @internal */
+  def _addCameraPointerObserver(observer: js.Function2[/* p */ PointerInfo, /* s */ EventState, Unit]): Nullable[Observer[PointerInfo]] = js.native
+  def _addCameraPointerObserver(observer: js.Function2[/* p */ PointerInfo, /* s */ EventState, Unit], mask: Double): Nullable[Observer[PointerInfo]] = js.native
+  
   /** This is a defensive check to not allow control attachment prior to an already active one. If already attached, previous control is unattached before attaching the new one. */
   /* private */ var _alreadyAttached: Any = js.native
   
   /* private */ var _alreadyAttachedTo: Any = js.native
   
+  /* private */ var _cameraObserverCount: Any = js.native
+  
+  /* private */ var _checkForPicking: Any = js.native
+  
   /* private */ var _checkPrePointerObservable: Any = js.native
   
   /* private */ var _currentPickResult: Any = js.native
   
-  /* private */ var _delayedSimpleClick: Any = js.native
+  /* private */ var _delayedClicks: Any = js.native
   
-  /* private */ var _delayedSimpleClickTimeout: Any = js.native
+  /* private */ var _delayedSimpleClick: Any = js.native
   
   /* private */ var _deviceSourceManager: Any = js.native
   
@@ -35,6 +43,8 @@ trait InputManager extends StObject {
     * @internal
     */
   def _invalidateMesh(mesh: AbstractMesh): Unit = js.native
+  
+  /* private */ var _isMultiTouchGesture: Any = js.native
   
   /**
     * @internal
@@ -61,7 +71,7 @@ trait InputManager extends StObject {
   /* private */ var _onPointerUp: Any = js.native
   
   /** @internal */
-  def _pickMove(pointerId: Double): PickingInfo = js.native
+  def _pickMove(evt: IPointerEvent): PickingInfo = js.native
   
   /* private */ var _pickedDownMesh: Any = js.native
   
@@ -77,8 +87,6 @@ trait InputManager extends StObject {
   
   /* private */ var _previousButtonPressed: Any = js.native
   
-  /* private */ var _previousDelayedSimpleClickTimeout: Any = js.native
-  
   /* private */ var _previousPickResult: Any = js.native
   
   /* private */ var _previousStartingPointerPosition: Any = js.native
@@ -91,12 +99,17 @@ trait InputManager extends StObject {
   
   /* private */ var _processPointerUp: Any = js.native
   
+  /** @internal */
+  def _removeCameraPointerObserver(observer: Observer[PointerInfo]): Boolean = js.native
+  
   /* private */ var _scene: Any = js.native
   
   /* private */ var _setCursorAndPointerOverMesh: Any = js.native
   
   /** @internal */
   def _setRayOnPointerInfo(pickInfo: Nullable[PickingInfo], event: IMouseEvent): Unit = js.native
+  
+  /* private */ var _skipPointerTap: Any = js.native
   
   /* private */ var _startingPointerPosition: Any = js.native
   
@@ -192,11 +205,26 @@ trait InputManager extends StObject {
     * @param mesh - defines the mesh to use
     * @param pointerId - optional pointer id when using more than one pointer. Defaults to 0
     * @param pickResult - optional pickingInfo data used to find mesh
+    * @param evt - optional pointer event
     */
   def setPointerOverMesh(mesh: Nullable[AbstractMesh]): Unit = js.native
   def setPointerOverMesh(mesh: Nullable[AbstractMesh], pointerId: Double): Unit = js.native
+  def setPointerOverMesh(mesh: Nullable[AbstractMesh], pointerId: Double, pickResult: Unit, evt: IPointerEvent): Unit = js.native
   def setPointerOverMesh(mesh: Nullable[AbstractMesh], pointerId: Double, pickResult: Nullable[PickingInfo]): Unit = js.native
+  def setPointerOverMesh(
+    mesh: Nullable[AbstractMesh],
+    pointerId: Double,
+    pickResult: Nullable[PickingInfo],
+    evt: IPointerEvent
+  ): Unit = js.native
+  def setPointerOverMesh(mesh: Nullable[AbstractMesh], pointerId: Unit, pickResult: Unit, evt: IPointerEvent): Unit = js.native
   def setPointerOverMesh(mesh: Nullable[AbstractMesh], pointerId: Unit, pickResult: Nullable[PickingInfo]): Unit = js.native
+  def setPointerOverMesh(
+    mesh: Nullable[AbstractMesh],
+    pointerId: Unit,
+    pickResult: Nullable[PickingInfo],
+    evt: IPointerEvent
+  ): Unit = js.native
   
   /**
     * Use this method to simulate a pointer down on a mesh

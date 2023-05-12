@@ -12,7 +12,7 @@ open class CustomGesture protected ()
   def this(props: CustomGestureProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: CustomGestureProps, context: Any) = this()
 }

@@ -107,17 +107,17 @@ object Structs {
       */
     def getAll(): js.Array[T] = js.native
     def getAll(property: String): js.Array[T] = js.native
-    def getAll(property: String, value: T): js.Array[T] = js.native
-    def getAll(property: String, value: T, startIndex: Double): js.Array[T] = js.native
-    def getAll(property: String, value: T, startIndex: Double, endIndex: Double): js.Array[T] = js.native
-    def getAll(property: String, value: T, startIndex: Unit, endIndex: Double): js.Array[T] = js.native
+    def getAll(property: String, value: Any): js.Array[T] = js.native
+    def getAll(property: String, value: Any, startIndex: Double): js.Array[T] = js.native
+    def getAll(property: String, value: Any, startIndex: Double, endIndex: Double): js.Array[T] = js.native
+    def getAll(property: String, value: Any, startIndex: Unit, endIndex: Double): js.Array[T] = js.native
     def getAll(property: String, value: Unit, startIndex: Double): js.Array[T] = js.native
     def getAll(property: String, value: Unit, startIndex: Double, endIndex: Double): js.Array[T] = js.native
     def getAll(property: String, value: Unit, startIndex: Unit, endIndex: Double): js.Array[T] = js.native
-    def getAll(property: Unit, value: T): js.Array[T] = js.native
-    def getAll(property: Unit, value: T, startIndex: Double): js.Array[T] = js.native
-    def getAll(property: Unit, value: T, startIndex: Double, endIndex: Double): js.Array[T] = js.native
-    def getAll(property: Unit, value: T, startIndex: Unit, endIndex: Double): js.Array[T] = js.native
+    def getAll(property: Unit, value: Any): js.Array[T] = js.native
+    def getAll(property: Unit, value: Any, startIndex: Double): js.Array[T] = js.native
+    def getAll(property: Unit, value: Any, startIndex: Double, endIndex: Double): js.Array[T] = js.native
+    def getAll(property: Unit, value: Any, startIndex: Unit, endIndex: Double): js.Array[T] = js.native
     def getAll(property: Unit, value: Unit, startIndex: Double): js.Array[T] = js.native
     def getAll(property: Unit, value: Unit, startIndex: Double, endIndex: Double): js.Array[T] = js.native
     def getAll(property: Unit, value: Unit, startIndex: Unit, endIndex: Double): js.Array[T] = js.native
@@ -476,6 +476,24 @@ object Structs {
     def getActive(): js.Array[T] = js.native
     
     /**
+      * Checks the given item to see if it is already active within this Process Queue.
+      * @param item The item to check.
+      */
+    def isActive(item: T): ProcessQueue[T] = js.native
+    
+    /**
+      * Checks the given item to see if it is already pending destruction from this Process Queue.
+      * @param item The item to check.
+      */
+    def isDestroying(item: T): ProcessQueue[T] = js.native
+    
+    /**
+      * Checks the given item to see if it is already pending addition to this Process Queue.
+      * @param item The item to check.
+      */
+    def isPending(item: T): ProcessQueue[T] = js.native
+    
+    /**
       * The number of entries in the active list.
       */
     val length: Double = js.native
@@ -483,7 +501,7 @@ object Structs {
     /**
       * Removes an item from the Process Queue.
       * 
-      * The item is added to the pending destroy and fully removed in the next update.
+      * The item is added to the 'destroy' list and is fully removed in the next update.
       * @param item The item to be removed from the queue.
       */
     def remove(item: T): ProcessQueue[T] = js.native
@@ -587,7 +605,12 @@ object Structs {
     
     /**
       * Passes each value in this Set to the given callback.
+      * 
       * For when you absolutely know this Set won't be modified during the iteration.
+      * 
+      * The callback must return a boolean. If it returns `false` then it will abort
+      * the Set iteration immediately. If it returns `true`, it will carry on
+      * iterating the next child in the Set.
       * @param callback The callback to be invoked and passed each value this Set contains.
       * @param callbackScope The scope of the callback.
       */

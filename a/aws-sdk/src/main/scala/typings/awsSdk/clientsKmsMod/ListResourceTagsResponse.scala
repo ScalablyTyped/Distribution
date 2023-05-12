@@ -12,7 +12,7 @@ trait ListResourceTagsResponse extends StObject {
   var NextMarker: js.UndefOr[MarkerType] = js.undefined
   
   /**
-    * A list of tags. Each tag consists of a tag key and a tag value.  Tagging or untagging a KMS key can allow or deny permission to the KMS key. For details, see ABAC in KMS in the Key Management Service Developer Guide. 
+    * A list of tags. Each tag consists of a tag key and a tag value.  Tagging or untagging a KMS key can allow or deny permission to the KMS key. For details, see ABAC for KMS in the Key Management Service Developer Guide. 
     */
   var Tags: js.UndefOr[TagList] = js.undefined
   

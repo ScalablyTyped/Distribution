@@ -17,9 +17,14 @@ trait CreateAppInstanceUserRequest extends StObject {
   var AppInstanceUserId: UserId
   
   /**
-    * The token assigned to the user requesting an AppInstance.
+    * The unique ID of the request. Use different tokens to request additional AppInstances.
     */
   var ClientRequestToken: typings.awsSdk.clientsChimesdkidentityMod.ClientRequestToken
+  
+  /**
+    * Settings that control the interval after which the AppInstanceUser is automatically deleted.
+    */
+  var ExpirationSettings: js.UndefOr[typings.awsSdk.clientsChimesdkidentityMod.ExpirationSettings] = js.undefined
   
   /**
     * The request's metadata. Limited to a 1KB string in UTF-8.
@@ -56,6 +61,10 @@ object CreateAppInstanceUserRequest {
     inline def setAppInstanceUserId(value: UserId): Self = StObject.set(x, "AppInstanceUserId", value.asInstanceOf[js.Any])
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+    
+    inline def setExpirationSettings(value: ExpirationSettings): Self = StObject.set(x, "ExpirationSettings", value.asInstanceOf[js.Any])
+    
+    inline def setExpirationSettingsUndefined: Self = StObject.set(x, "ExpirationSettings", js.undefined)
     
     inline def setMetadata(value: Metadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
     

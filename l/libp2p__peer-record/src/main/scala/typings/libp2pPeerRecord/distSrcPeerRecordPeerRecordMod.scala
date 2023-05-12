@@ -1,5 +1,7 @@
 package typings.libp2pPeerRecord
 
+import typings.libp2pPeerRecord.anon.PartialAddressInfo
+import typings.libp2pPeerRecord.anon.PartialPeerRecord
 import typings.libp2pPeerRecord.distSrcPeerRecordPeerRecordMod.PeerRecord.AddressInfo
 import typings.protonsRuntime.distSrcCodecMod.Codec
 import typings.uint8arraylist.mod.Uint8ArrayList
@@ -48,7 +50,7 @@ object distSrcPeerRecordPeerRecordMod {
       inline def decode(buf: js.typedarray.Uint8Array): AddressInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[AddressInfo]
       inline def decode(buf: Uint8ArrayList): AddressInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[AddressInfo]
       
-      inline def encode(obj: AddressInfo): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+      inline def encode(obj: PartialAddressInfo): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
       
       @scala.inline
       implicit open class MutableBuilder[Self <: AddressInfo] (val x: Self) extends AnyVal {
@@ -62,7 +64,7 @@ object distSrcPeerRecordPeerRecordMod {
     inline def decode(buf: js.typedarray.Uint8Array): PeerRecord = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[PeerRecord]
     inline def decode(buf: Uint8ArrayList): PeerRecord = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[PeerRecord]
     
-    inline def encode(obj: PeerRecord): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def encode(obj: PartialPeerRecord): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     @scala.inline
     implicit open class MutableBuilder[Self <: PeerRecord] (val x: Self) extends AnyVal {

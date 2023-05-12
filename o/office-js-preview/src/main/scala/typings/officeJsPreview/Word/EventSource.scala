@@ -10,7 +10,7 @@ sealed trait EventSource extends StObject
   * An enum that specifies an event's source. It can be local or remote (through coauthoring).
   *
   * @remarks
-  * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+  * [Api set: WordApi BETA (PREVIEW ONLY)]
   * @beta
   */
 @JSGlobal("Word.EventSource")
@@ -19,7 +19,7 @@ object EventSource extends StObject {
   
   /**
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
     */
   @js.native
   sealed trait local
@@ -28,7 +28,7 @@ object EventSource extends StObject {
   
   /**
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
     */
   @js.native
   sealed trait remote

@@ -1,49 +1,27 @@
 package typings.octokitPluginPaginateRest.anon
 
-import typings.octokitTypes.distTypesGeneratedEndpointsMod.ExtractOctokitResponse
-import typings.octokitTypes.distTypesGeneratedEndpointsMod.RequiredPreview
-import typings.octokitTypes.distTypesGeneratedEndpointsMod.ToOctokitParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `137` extends StObject {
   
-  var parameters: (ToOctokitParameters[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/contributors']['get'] */ js.Any
-  ]) & RequiredPreview[Any]
-  
-  var response: ExtractOctokitResponse[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/contributors']['get'] */ js.Any
-  ]
+  var data: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.ExtractOctokitResponse<@octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/commits/{ref}/status']['get']>['data']['statuses'] */ js.Any
 }
 object `137` {
   
   inline def apply(
-    parameters: (ToOctokitParameters[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/contributors']['get'] */ js.Any
-    ]) & RequiredPreview[Any],
-    response: ExtractOctokitResponse[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/contributors']['get'] */ js.Any
-    ]
+    data: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.ExtractOctokitResponse<@octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/commits/{ref}/status']['get']>['data']['statuses'] */ js.Any
   ): `137` = {
-    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[`137`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `137`] (val x: Self) extends AnyVal {
     
-    inline def setParameters(
-      value: (ToOctokitParameters[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/contributors']['get'] */ js.Any
-        ]) & RequiredPreview[Any]
-    ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
-    
-    inline def setResponse(
-      value: ExtractOctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/contributors']['get'] */ js.Any
-        ]
-    ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setData(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.ExtractOctokitResponse<@octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/commits/{ref}/status']['get']>['data']['statuses'] */ js.Any
+    ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

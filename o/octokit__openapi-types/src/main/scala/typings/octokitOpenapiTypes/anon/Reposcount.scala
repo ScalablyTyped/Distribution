@@ -1,6 +1,8 @@
 package typings.octokitOpenapiTypes.anon
 
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.closed
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.notifications_disabled
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.notifications_enabled
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.secret
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -49,6 +51,13 @@ trait Reposcount extends StObject {
   
   /** @example MDQ6VGVhbTE= */
   var node_id: String
+  
+  /**
+    * @description The notification setting the team has set
+    * @example notifications_enabled
+    * @enum {string}
+    */
+  var notification_setting: js.UndefOr[notifications_enabled | notifications_disabled] = js.undefined
   
   var organization: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['team-organization'] */ js.Any
   
@@ -140,6 +149,10 @@ object Reposcount {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
+    
+    inline def setNotification_setting(value: notifications_enabled | notifications_disabled): Self = StObject.set(x, "notification_setting", value.asInstanceOf[js.Any])
+    
+    inline def setNotification_settingUndefined: Self = StObject.set(x, "notification_setting", js.undefined)
     
     inline def setOrganization(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['team-organization'] */ js.Any

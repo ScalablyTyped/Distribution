@@ -1,7 +1,6 @@
 package typings.dialogflow.protosProtosMod.google.protobuf
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.long.mod.^
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
@@ -27,7 +26,7 @@ open class Timestamp ()
   
   /** Timestamp seconds. */
   @JSName("seconds")
-  var seconds_Timestamp: Double | ^ | String = js.native
+  var seconds_Timestamp: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ scala.Any) | String = js.native
   
   /**
     * Converts this Timestamp to JSON.

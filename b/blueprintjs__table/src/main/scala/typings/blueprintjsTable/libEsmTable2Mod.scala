@@ -2,6 +2,7 @@ package typings.blueprintjsTable
 
 import typings.blueprintjsCore.mod.AbstractComponent2
 import typings.blueprintjsTable.anon.ChildrenArray
+import typings.blueprintjsTable.anon.Left
 import typings.blueprintjsTable.libEsmCommonGridMod.Grid
 import typings.blueprintjsTable.libEsmCommonGridMod.ICellMapper
 import typings.blueprintjsTable.libEsmLocatorMod.Locator
@@ -142,6 +143,19 @@ object libEsmTable2Mod {
     
     /* private */ var renderRowHeader: Any = js.native
     
+    /**
+      * Renders a scroll indicator overlay on top of the table body inside the quadrant stack.
+      * This component is offset by the headers and scrollbar, and it provides the overlay which
+      * we use to render automatic scrolling indicator linear gradients.
+      *
+      * @param scrollBarWidth the calculated scroll bar width to be passed in by the quadrant stack
+      * @param columnHeaderHeight the calculated column header height to be passed in by the quadrant stack
+      * @returns A jsx element which will render a linear gradient with smooth transitions based on
+      *          state of the scroll (will not render if we are already at the top/left/right/bottom)
+      *           and the state of "scroll direction"
+      */
+    /* private */ var renderScrollIndicatorOverlay: Any = js.native
+    
     /* private */ var renderTableContents: Any = js.native
     
     /**
@@ -174,6 +188,15 @@ object libEsmTable2Mod {
     
     /* private */ var rowHeaderWidth: Any = js.native
     
+    /**
+      * Scrolls the table by a specified number of offset pixels in either the horizontal or vertical dimension.
+      * Will set a scroll indicator gradient which can be cleared by calling scrollByOffset(null);
+      *
+      * @param relativeOffset - How much to scroll the table body in pixels relative to the current scroll offset
+      */
+    def scrollByOffset(): Unit = js.native
+    def scrollByOffset(relativeOffset: Left): Unit = js.native
+    
     /* private */ var scrollContainerElement: Any = js.native
     
     /**
@@ -203,6 +226,8 @@ object libEsmTable2Mod {
     /* private */ var shouldDisableHorizontalScroll: Any = js.native
     
     /* private */ var shouldDisableVerticalScroll: Any = js.native
+    
+    /* private */ var shouldRenderScrollDirection: Any = js.native
     
     /* private */ var styleBodyRegion: Any = js.native
     

@@ -1,12 +1,13 @@
 package typings.inferno.distCoreTypesMod.Inferno
 
+import typings.inferno.distCoreTypesMod.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait InfernoElement[P] extends StObject {
   
-  var key: Key | Null
+  var key: js.UndefOr[Key] = js.undefined
   
   var props: P
   
@@ -15,7 +16,7 @@ trait InfernoElement[P] extends StObject {
 object InfernoElement {
   
   inline def apply[P](props: P, `type`: String | ComponentClass[P] | SFC[P]): InfernoElement[P] = {
-    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], key = null)
+    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InfernoElement[P]]
   }
@@ -26,6 +27,8 @@ object InfernoElement {
     inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyNull: Self = StObject.set(x, "key", null)
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     inline def setProps(value: P): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

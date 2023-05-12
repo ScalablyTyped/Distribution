@@ -11,16 +11,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UIEventtargetHTMLInputEle extends StObject {
   
   /* standard dom */
-  val AT_TARGET: Double = js.native
+  val AT_TARGET: typings.devextreme.devextremeInts.`2` = js.native
   
   /* standard dom */
-  val BUBBLING_PHASE: Double = js.native
+  val BUBBLING_PHASE: typings.devextreme.devextremeInts.`3` = js.native
   
   /* standard dom */
-  val CAPTURING_PHASE: Double = js.native
+  val CAPTURING_PHASE: typings.devextreme.devextremeInts.`1` = js.native
   
   /* standard dom */
-  val NONE: Double = js.native
+  val NONE: typings.devextreme.devextremeInts.`0` = js.native
   
   /** Returns true or false depending on how event was initialized. True if event goes through its target's ancestors in reverse tree order, and false otherwise. */
   /* standard dom */

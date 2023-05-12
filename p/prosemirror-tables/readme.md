@@ -1,7 +1,7 @@
 
 # Scala.js typings for prosemirror-tables
 
-Typings are for version 1.2.5
+Typings are for version 1.3.2
 
 ## Library description:
 ProseMirror's rowspan/colspan tables component

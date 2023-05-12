@@ -2,6 +2,9 @@ package typings.wordpressViewport
 
 import typings.react.mod.ComponentType
 import typings.std.Record
+import typings.wordpressData.buildTypesTypesMod.DataRegistry
+import typings.wordpressData.buildTypesTypesMod.StoreDescriptor
+import typings.wordpressData.buildTypesTypesMod.StoreInstance
 import typings.wordpressViewport.anon.TypeofimportedActions
 import typings.wordpressViewport.anon.TypeofimportedSelectors
 import typings.wordpressViewport.wordpressViewportStrings.coreSlashviewport
@@ -38,6 +41,10 @@ object mod {
     /* component */ ComponentType[Any], 
     /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentType<any> extends react.react.ComponentType<infer U> ? react.react.ComponentType<U> : never */ js.Any
   ]]
+  
+  @JSImport("@wordpress/viewport", "store")
+  @js.native
+  val store: ViewportStoreDescriptor = js.native
   
   /**
     * Higher-order component creator, creating a new component which renders with the given prop names,
@@ -77,5 +84,26 @@ object mod {
     inline def dispatch_coreviewport(key: coreSlashviewport): TypeofimportedActions = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(key.asInstanceOf[js.Any]).asInstanceOf[TypeofimportedActions]
     
     inline def select_coreviewport(key: coreSlashviewport): TypeofimportedSelectors = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(key.asInstanceOf[js.Any]).asInstanceOf[TypeofimportedSelectors]
+  }
+  
+  trait ViewportStoreDescriptor
+    extends StObject
+       with StoreDescriptor[Any] {
+    
+    @JSName("name")
+    var name_ViewportStoreDescriptor: coreSlashviewport
+  }
+  object ViewportStoreDescriptor {
+    
+    inline def apply(instantiate: DataRegistry => StoreInstance[Any]): ViewportStoreDescriptor = {
+      val __obj = js.Dynamic.literal(instantiate = js.Any.fromFunction1(instantiate), name = "core/viewport")
+      __obj.asInstanceOf[ViewportStoreDescriptor]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewportStoreDescriptor] (val x: Self) extends AnyVal {
+      
+      inline def setName(value: coreSlashviewport): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    }
   }
 }

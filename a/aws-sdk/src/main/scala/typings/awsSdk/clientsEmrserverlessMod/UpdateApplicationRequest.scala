@@ -12,6 +12,11 @@ trait UpdateApplicationRequest extends StObject {
   var applicationId: ApplicationId
   
   /**
+    * The CPU architecture of an application.
+    */
+  var architecture: js.UndefOr[Architecture] = js.undefined
+  
+  /**
     * The configuration for an application to automatically start on job submission.
     */
   var autoStartConfiguration: js.UndefOr[AutoStartConfig] = js.undefined
@@ -27,6 +32,11 @@ trait UpdateApplicationRequest extends StObject {
   var clientToken: ClientToken
   
   /**
+    * The image configuration to be used for all worker types. You can either set this parameter or imageConfiguration for each worker type in WorkerTypeSpecificationInput.
+    */
+  var imageConfiguration: js.UndefOr[ImageConfigurationInput] = js.undefined
+  
+  /**
     * The capacity to initialize when the application is updated.
     */
   var initialCapacity: js.UndefOr[InitialCapacityConfigMap] = js.undefined
@@ -37,6 +47,11 @@ trait UpdateApplicationRequest extends StObject {
   var maximumCapacity: js.UndefOr[MaximumAllowedResources] = js.undefined
   
   var networkConfiguration: js.UndefOr[NetworkConfiguration] = js.undefined
+  
+  /**
+    * The key-value pairs that specify worker type to WorkerTypeSpecificationInput. This parameter must contain all valid worker types for a Spark or Hive application. Valid worker types include Driver and Executor for Spark applications and HiveDriver and TezTask for Hive applications. You can either set image details in this parameter for each worker type, or in imageConfiguration for all worker types.
+    */
+  var workerTypeSpecifications: js.UndefOr[WorkerTypeSpecificationInputMap] = js.undefined
 }
 object UpdateApplicationRequest {
   
@@ -50,6 +65,10 @@ object UpdateApplicationRequest {
     
     inline def setApplicationId(value: ApplicationId): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
     
+    inline def setArchitecture(value: Architecture): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
+    
+    inline def setArchitectureUndefined: Self = StObject.set(x, "architecture", js.undefined)
+    
     inline def setAutoStartConfiguration(value: AutoStartConfig): Self = StObject.set(x, "autoStartConfiguration", value.asInstanceOf[js.Any])
     
     inline def setAutoStartConfigurationUndefined: Self = StObject.set(x, "autoStartConfiguration", js.undefined)
@@ -59,6 +78,10 @@ object UpdateApplicationRequest {
     inline def setAutoStopConfigurationUndefined: Self = StObject.set(x, "autoStopConfiguration", js.undefined)
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    
+    inline def setImageConfiguration(value: ImageConfigurationInput): Self = StObject.set(x, "imageConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setImageConfigurationUndefined: Self = StObject.set(x, "imageConfiguration", js.undefined)
     
     inline def setInitialCapacity(value: InitialCapacityConfigMap): Self = StObject.set(x, "initialCapacity", value.asInstanceOf[js.Any])
     
@@ -71,5 +94,9 @@ object UpdateApplicationRequest {
     inline def setNetworkConfiguration(value: NetworkConfiguration): Self = StObject.set(x, "networkConfiguration", value.asInstanceOf[js.Any])
     
     inline def setNetworkConfigurationUndefined: Self = StObject.set(x, "networkConfiguration", js.undefined)
+    
+    inline def setWorkerTypeSpecifications(value: WorkerTypeSpecificationInputMap): Self = StObject.set(x, "workerTypeSpecifications", value.asInstanceOf[js.Any])
+    
+    inline def setWorkerTypeSpecificationsUndefined: Self = StObject.set(x, "workerTypeSpecifications", js.undefined)
   }
 }

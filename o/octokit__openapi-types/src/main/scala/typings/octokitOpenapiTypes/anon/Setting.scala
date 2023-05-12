@@ -6,13 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Setting extends StObject {
   
-  /** @description The `id` of the GitHub App. */
   var app_id: Double
   
-  /**
-    * @description Set to `true` to enable automatic creation of CheckSuite events upon pushes to the repository, or `false` to disable them.
-    * @default true
-    */
   var setting: Boolean
 }
 object Setting {

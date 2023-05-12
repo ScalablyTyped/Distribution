@@ -12,5 +12,5 @@ object distPackageMetadataMod {
   
   @JSImport("@azure/msal-common/dist/packageMetadata", "version")
   @js.native
-  val version: /* "7.4.1" */ String = js.native
+  val version: /* "13.0.0" */ String = js.native
 }

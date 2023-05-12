@@ -17,7 +17,7 @@ trait Length extends StObject {
   /**
     * Any unit which represents length.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-quantity.html#Length)
+    * [Read more...](global.html#unit)
     */
   var unit: LengthUnit
   

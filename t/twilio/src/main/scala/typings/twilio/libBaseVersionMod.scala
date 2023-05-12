@@ -1,102 +1,26 @@
 package typings.twilio
 
-import typings.twilio.libRestTwilioMod.RequestOptions
+import typings.twilio.libBaseBaseTwilioMod.RequestOpts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libBaseVersionMod {
   
-  @JSImport("twilio/lib/base/Version", JSImport.Namespace)
+  @JSImport("twilio/lib/base/Version", JSImport.Default)
   @js.native
-  open class ^ protected ()
+  open class default protected ()
     extends StObject
        with Version {
-    def this(solutelydomain: typings.twilio.libBaseDomainMod.^, version: String) = this()
-    
     /**
-      * Generate absolute url from a uri
       *
-      * @param  uri uri to transform
-      * @return transformed url
-      */
-    /* CompleteClass */
-    override def absoluteUrl(uri: String): String = js.native
-    
-    /**
-      * Create a new record
-      * @throws {Error} If response returns non 2xx or 201 status code
+      * Base version object
       *
-      * @param  opts request options
-      * @return promise that resolves to created record
+      * @param domain - twilio domain
+      * @param version - api version
       */
-    /* CompleteClass */
-    override def create(opts: RequestOptions): js.Promise[Any] = js.native
-    
-    /**
-      * Fetch a instance of a record
-      * @throws {Error} If response returns non 2xx or 3xx status code
-      *
-      * @param  opts request options
-      * @return promise that resolves to fetched result
-      */
-    /* CompleteClass */
-    override def fetch(opts: RequestOptions): js.Promise[Any] = js.native
-    
-    /**
-      * Fetch a page of records
-      *
-      * @param  opts request options
-      * @return promise that resolves to page of records
-      */
-    /* CompleteClass */
-    override def page(opts: RequestOptions): js.Promise[Any] = js.native
-    
-    /**
-      * Process limits for list requests
-      *
-      * @param opts Page limit options passed to the request
-      */
-    /* CompleteClass */
-    override def readLimits(opts: PageLimitOptions): PageLimit = js.native
-    
-    /**
-      * Generate relative url from a uri
-      *
-      * @param  uri uri to transform
-      * @return transformed url
-      */
-    /* CompleteClass */
-    override def relativeUrl(uri: String): String = js.native
-    
-    /**
-      * Delete a record
-      * @throws {Error} If response returns a 5xx status
-      *
-      * @param  opts request options
-      * @return promise that resolves to true if record was deleted
-      */
-    /* CompleteClass */
-    override def remove(opts: RequestOptions): js.Promise[Boolean] = js.native
-    
-    /**
-      * Make a request against the domain
-      *
-      * @param  opts request options
-      * @return promise that resolves to request response
-      */
-    /* CompleteClass */
-    override def request(opts: RequestOptions): js.Promise[Any] = js.native
-    
-    /**
-      * Update a record
-      * @throws {Error} If response returns non 2xx status code
-      *
-      * @param  opts request options
-      * @return promise that resolves to updated result
-      */
-    /* CompleteClass */
-    override def update(opts: RequestOptions): js.Promise[Any] = js.native
+    def this(domain: typings.twilio.libBaseDomainMod.default, version: String) = this()
+    def this(domain: typings.twilio.libBaseDomainMod.default, version: Version) = this()
   }
   
   trait PageLimit extends StObject {
@@ -149,120 +73,137 @@ object libBaseVersionMod {
     }
   }
   
+  @js.native
   trait Version extends StObject {
+    
+    var _domain: typings.twilio.libBaseDomainMod.default = js.native
+    
+    var _version: Version | String = js.native
     
     /**
       * Generate absolute url from a uri
       *
-      * @param  uri uri to transform
-      * @return transformed url
+      * @param uri - uri to transform
+      * @returns transformed url
       */
-    def absoluteUrl(uri: String): String
+    def absoluteUrl(uri: String): String = js.native
     
     /**
       * Create a new record
-      * @throws {Error} If response returns non 2xx or 201 status code
       *
-      * @param  opts request options
-      * @return promise that resolves to created record
+      * @param opts - request options
+      *
+      * @throws Error If response returns non 2xx or 201 status code
+      *
+      * @returns promise that resolves to created record
       */
-    def create(opts: RequestOptions): js.Promise[Any]
+    def create(opts: RequestOpts): js.Promise[Any] = js.native
+    
+    def domain: typings.twilio.libBaseDomainMod.default = js.native
     
     /**
-      * Fetch a instance of a record
-      * @throws {Error} If response returns non 2xx or 3xx status code
+      * For each record instance, executes a provided callback function with that
+      * instance
       *
-      * @param  opts request options
-      * @return promise that resolves to fetched result
+      * @param params - Parameters (Optional)
+      * @param params.limit - Optional maximum number of record instances to
+      *  fetch
+      * @param params.pageSize - Optional maximum number of records to return
+      *  with every request
+      * @param params.callback - Callback function to call with each
+      *  record instance
+      * @param params.done - Optional done function to call when all
+      *  records are processed, the limit is reached, or an error occurs.
+      *  Receives an error argument if an error occurs.
+      * @param callback - Callback function to call with each record.
+      *  Receives a done function argument that will short-circuit the for-each
+      *  loop that may accept an error argument.
+      * @returns Returns a promise that resolves when all records
+      *  processed or if the limit is reached, and rejects with an error if an
+      *  error occurs and is not handled in the user provided done function.
       */
-    def fetch(opts: RequestOptions): js.Promise[Any]
+    def each[T](): js.Promise[Unit] = js.native
+    def each[T](params: Any): js.Promise[Unit] = js.native
+    def each[T](
+      params: Any,
+      callback: js.Function2[/* item */ T, /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], Unit]
+    ): js.Promise[Unit] = js.native
+    def each[T](
+      params: Unit,
+      callback: js.Function2[/* item */ T, /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], Unit]
+    ): js.Promise[Unit] = js.native
+    
+    /**
+      * Fetch an instance of a record
+      *
+      * @param opts - request options
+      *
+      * @throws Error If response returns non 2xx or 3xx status code
+      *
+      * @returns promise that resolves to fetched result
+      */
+    def fetch(opts: RequestOpts): js.Promise[Any] = js.native
+    
+    def list[T](): js.Promise[Any] = js.native
+    def list[T](params: Any): js.Promise[Any] = js.native
+    def list[T](params: Any, callback: js.Function2[/* error */ js.Error | Null, /* items */ T, Any]): js.Promise[Any] = js.native
+    def list[T](params: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ T, Any]): js.Promise[Any] = js.native
     
     /**
       * Fetch a page of records
       *
-      * @param  opts request options
-      * @return promise that resolves to page of records
+      * @param opts - request options
+      * @returns promise that resolves to page of records
       */
-    def page(opts: RequestOptions): js.Promise[Any]
+    def page(opts: RequestOpts): js.Promise[Any] = js.native
     
     /**
       * Process limits for list requests
       *
-      * @param opts Page limit options passed to the request
+      * @param opts.limit - The maximum number of items to fetch
+      * @param opts.pageSize - The maximum number of items to return with every request
+      *
       */
-    def readLimits(opts: PageLimitOptions): PageLimit
+    def readLimits(opts: PageLimitOptions): PageLimit = js.native
     
     /**
       * Generate relative url from a uri
       *
-      * @param  uri uri to transform
-      * @return transformed url
+      * @param uri - uri to transform
+      * @returns transformed url
       */
-    def relativeUrl(uri: String): String
+    def relativeUrl(uri: String): String = js.native
     
     /**
       * Delete a record
-      * @throws {Error} If response returns a 5xx status
       *
-      * @param  opts request options
-      * @return promise that resolves to true if record was deleted
+      * @param opts - request options
+      *
+      * @throws Error If response returns a 5xx status
+      *
+      * @returns promise that resolves to true if record was deleted
       */
-    def remove(opts: RequestOptions): js.Promise[Boolean]
+    def remove(opts: RequestOpts): js.Promise[Boolean] = js.native
     
     /**
       * Make a request against the domain
       *
-      * @param  opts request options
-      * @return promise that resolves to request response
+      * @param opts - request options
+      * @returns promise that resolves to request response
       */
-    def request(opts: RequestOptions): js.Promise[Any]
+    def request(opts: RequestOpts): js.Promise[Any] = js.native
+    
+    def setPromiseCallback(operationPromise: Any, callback: Any): js.Promise[Any] = js.native
     
     /**
       * Update a record
-      * @throws {Error} If response returns non 2xx status code
       *
-      * @param  opts request options
-      * @return promise that resolves to updated result
+      * @param opts - request options
+      *
+      * @throws Error If response returns non 2xx status code
+      *
+      * @returns promise that resolves to updated result
       */
-    def update(opts: RequestOptions): js.Promise[Any]
-  }
-  object Version {
-    
-    inline def apply(
-      absoluteUrl: String => String,
-      create: RequestOptions => js.Promise[Any],
-      fetch: RequestOptions => js.Promise[Any],
-      page: RequestOptions => js.Promise[Any],
-      readLimits: PageLimitOptions => PageLimit,
-      relativeUrl: String => String,
-      remove: RequestOptions => js.Promise[Boolean],
-      request: RequestOptions => js.Promise[Any],
-      update: RequestOptions => js.Promise[Any]
-    ): Version = {
-      val __obj = js.Dynamic.literal(absoluteUrl = js.Any.fromFunction1(absoluteUrl), create = js.Any.fromFunction1(create), fetch = js.Any.fromFunction1(fetch), page = js.Any.fromFunction1(page), readLimits = js.Any.fromFunction1(readLimits), relativeUrl = js.Any.fromFunction1(relativeUrl), remove = js.Any.fromFunction1(remove), request = js.Any.fromFunction1(request), update = js.Any.fromFunction1(update))
-      __obj.asInstanceOf[Version]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Version] (val x: Self) extends AnyVal {
-      
-      inline def setAbsoluteUrl(value: String => String): Self = StObject.set(x, "absoluteUrl", js.Any.fromFunction1(value))
-      
-      inline def setCreate(value: RequestOptions => js.Promise[Any]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
-      
-      inline def setFetch(value: RequestOptions => js.Promise[Any]): Self = StObject.set(x, "fetch", js.Any.fromFunction1(value))
-      
-      inline def setPage(value: RequestOptions => js.Promise[Any]): Self = StObject.set(x, "page", js.Any.fromFunction1(value))
-      
-      inline def setReadLimits(value: PageLimitOptions => PageLimit): Self = StObject.set(x, "readLimits", js.Any.fromFunction1(value))
-      
-      inline def setRelativeUrl(value: String => String): Self = StObject.set(x, "relativeUrl", js.Any.fromFunction1(value))
-      
-      inline def setRemove(value: RequestOptions => js.Promise[Boolean]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
-      
-      inline def setRequest(value: RequestOptions => js.Promise[Any]): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
-      
-      inline def setUpdate(value: RequestOptions => js.Promise[Any]): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
-    }
+    def update(opts: RequestOpts): js.Promise[Any] = js.native
   }
 }

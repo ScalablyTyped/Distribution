@@ -22,6 +22,11 @@ trait ProductViewDetail extends StObject {
   var ProductViewSummary: js.UndefOr[typings.awsSdk.clientsServicecatalogMod.ProductViewSummary] = js.undefined
   
   /**
+    * A top level ProductViewDetail response containing details about the product’s connection. Service Catalog returns this field for the CreateProduct, UpdateProduct, DescribeProductAsAdmin, and SearchProductAsAdmin APIs. This response contains the same fields as the ConnectionParameters request, with the addition of the LastSync response.
+    */
+  var SourceConnection: js.UndefOr[SourceConnectionDetail] = js.undefined
+  
+  /**
     * The status of the product.    AVAILABLE - The product is ready for use.    CREATING - Product creation has started; the product is not ready for use.    FAILED - An action failed.  
     */
   var Status: js.UndefOr[typings.awsSdk.clientsServicecatalogMod.Status] = js.undefined
@@ -47,6 +52,10 @@ object ProductViewDetail {
     inline def setProductViewSummary(value: ProductViewSummary): Self = StObject.set(x, "ProductViewSummary", value.asInstanceOf[js.Any])
     
     inline def setProductViewSummaryUndefined: Self = StObject.set(x, "ProductViewSummary", js.undefined)
+    
+    inline def setSourceConnection(value: SourceConnectionDetail): Self = StObject.set(x, "SourceConnection", value.asInstanceOf[js.Any])
+    
+    inline def setSourceConnectionUndefined: Self = StObject.set(x, "SourceConnection", js.undefined)
     
     inline def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

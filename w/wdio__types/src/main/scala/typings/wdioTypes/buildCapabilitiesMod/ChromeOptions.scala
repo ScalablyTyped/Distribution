@@ -1,6 +1,7 @@
 package typings.wdioTypes.buildCapabilitiesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Record
 import typings.wdioTypes.anon.BufferUsageReportingInterval
 import typings.wdioTypes.anon.DeviceMetrics
 import org.scalablytyped.runtime.StObject
@@ -60,8 +61,8 @@ trait ChromeOptions extends StObject {
   var minidumpPath: js.UndefOr[String] = js.undefined
   
   /**
-    * A dictionary with either a value for “deviceName,” or values for “deviceMetrics” and
-    * “userAgent.” Refer to Mobile Emulation for more information.
+    * A dictionary with either a value for "deviceName", or values for "deviceMetrics" and
+    * "userAgent". Refer to Mobile Emulation for more information.
     */
   var mobileEmulation: js.UndefOr[DeviceMetrics] = js.undefined
   
@@ -77,7 +78,7 @@ trait ChromeOptions extends StObject {
     * These preferences are only applied to the user profile in use. See the 'Preferences'
     * file in Chrome's user data directory for examples.
     */
-  var prefs: js.UndefOr[StringDictionary[js.Array[String] | String | Double | Boolean]] = js.undefined
+  var prefs: js.UndefOr[Record[String, JSONLike]] = js.undefined
   
   /**
     * A list of window types that will appear in the list of window handles. For access
@@ -141,7 +142,7 @@ object ChromeOptions {
     
     inline def setPerfLoggingPrefsUndefined: Self = StObject.set(x, "perfLoggingPrefs", js.undefined)
     
-    inline def setPrefs(value: StringDictionary[js.Array[String] | String | Double | Boolean]): Self = StObject.set(x, "prefs", value.asInstanceOf[js.Any])
+    inline def setPrefs(value: Record[String, JSONLike]): Self = StObject.set(x, "prefs", value.asInstanceOf[js.Any])
     
     inline def setPrefsUndefined: Self = StObject.set(x, "prefs", js.undefined)
     

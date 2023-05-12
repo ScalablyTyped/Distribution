@@ -2,16 +2,24 @@ package typings.rcPicker
 
 import typings.rcPicker.anon.Label
 import typings.rcPicker.esGenerateMod.GenerateConfig
+import typings.rcPicker.rcPickerStrings.end
+import typings.rcPicker.rcPickerStrings.hour
 import typings.rcPicker.rcPickerStrings.key
+import typings.rcPicker.rcPickerStrings.meridiem
+import typings.rcPicker.rcPickerStrings.minute
 import typings.rcPicker.rcPickerStrings.mouse
+import typings.rcPicker.rcPickerStrings.second
+import typings.rcPicker.rcPickerStrings.start
 import typings.rcPicker.rcPickerStrings.submit
 import typings.react.mod.ComponentType
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MutableRefObject
+import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.std.Element
+import typings.std.Exclude
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,11 +27,56 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object esInterfaceMod {
   
+  type CellRender[DateType, CurrentType] = js.Function2[/* current */ CurrentType, /* info */ CellRenderInfo[DateType], ReactNode]
+  
+  trait CellRenderInfo[DateType] extends StObject {
+    
+    var locale: js.UndefOr[Locale] = js.undefined
+    
+    var originNode: ReactElement
+    
+    var range: js.UndefOr[start | end] = js.undefined
+    
+    var subType: js.UndefOr[hour | minute | second | meridiem] = js.undefined
+    
+    var today: DateType
+    
+    var `type`: PanelMode
+  }
+  object CellRenderInfo {
+    
+    inline def apply[DateType](originNode: ReactElement, today: DateType, `type`: PanelMode): CellRenderInfo[DateType] = {
+      val __obj = js.Dynamic.literal(originNode = originNode.asInstanceOf[js.Any], today = today.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CellRenderInfo[DateType]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellRenderInfo[?], DateType] (val x: Self & CellRenderInfo[DateType]) extends AnyVal {
+      
+      inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      
+      inline def setOriginNode(value: ReactElement): Self = StObject.set(x, "originNode", value.asInstanceOf[js.Any])
+      
+      inline def setRange(value: start | end): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      
+      inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+      
+      inline def setSubType(value: hour | minute | second | meridiem): Self = StObject.set(x, "subType", value.asInstanceOf[js.Any])
+      
+      inline def setSubTypeUndefined: Self = StObject.set(x, "subType", js.undefined)
+      
+      inline def setToday(value: DateType): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: PanelMode): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Components extends StObject {
     
     var button: js.UndefOr[ComponentType[js.Object] | String] = js.undefined
-    
-    var rangeItem: js.UndefOr[ComponentType[js.Object] | String] = js.undefined
   }
   object Components {
     
@@ -38,10 +91,6 @@ object esInterfaceMod {
       inline def setButton(value: ComponentType[js.Object] | String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
       inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
-      
-      inline def setRangeItem(value: ComponentType[js.Object] | String): Self = StObject.set(x, "rangeItem", value.asInstanceOf[js.Any])
-      
-      inline def setRangeItemUndefined: Self = StObject.set(x, "rangeItem", js.undefined)
     }
   }
   
@@ -81,7 +130,19 @@ object esInterfaceMod {
     }
   }
   
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately.
+    * TS definition: {{{
+    Acc['length'] extends N ? Acc[number] : rc-picker.rc-picker/es/interface.Enumerate<N, [...Acc, Acc['length']]>
+    }}}
+    */
+  @js.native
+  trait Enumerate[N /* <: Double */, Acc /* <: js.Array[Double] */] extends StObject
+  
   type EventValue[DateType] = DateType | Null
+  
+  type IntRange[F /* <: Double */, T /* <: Double */] = Exclude[Enumerate[T, js.Array[Any]], Enumerate[F, js.Array[Any]]]
   
   trait Locale extends StObject {
     
@@ -393,6 +454,30 @@ object esInterfaceMod {
     inline def week: typings.rcPicker.rcPickerStrings.week = "week".asInstanceOf[typings.rcPicker.rcPickerStrings.week]
     
     inline def year: typings.rcPicker.rcPickerStrings.year = "year".asInstanceOf[typings.rcPicker.rcPickerStrings.year]
+  }
+  
+  trait PresetDate[T] extends StObject {
+    
+    var label: ReactNode
+    
+    var value: T
+  }
+  object PresetDate {
+    
+    inline def apply[T](value: T): PresetDate[T] = {
+      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PresetDate[T]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PresetDate[?], T] (val x: Self & PresetDate[T]) extends AnyVal {
+      
+      inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    }
   }
   
   type RangeList = js.Array[Label]

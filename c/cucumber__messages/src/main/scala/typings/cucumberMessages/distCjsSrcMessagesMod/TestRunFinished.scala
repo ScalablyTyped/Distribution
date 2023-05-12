@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class TestRunFinished () extends StObject {
   
+  var exception: js.UndefOr[Exception] = js.native
+  
   var message: js.UndefOr[String] = js.native
   
   var success: Boolean = js.native

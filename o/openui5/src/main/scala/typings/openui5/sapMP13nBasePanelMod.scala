@@ -1,5 +1,6 @@
 package typings.openui5
 
+import typings.openui5.anon.ItemReason
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.p13n.IContent
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -231,6 +232,8 @@ object sapMP13nBasePanelMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -239,7 +242,7 @@ object sapMP13nBasePanelMod {
     def fireChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: js.Object): this.type = js.native
+    mParameters: ItemReason): this.type = js.native
     
     /**
       * Gets current value of property {@link #getEnableReorder enableReorder}.

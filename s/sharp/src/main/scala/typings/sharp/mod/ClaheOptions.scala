@@ -9,7 +9,7 @@ trait ClaheOptions extends StObject {
   /** height of the region */
   var height: Double
   
-  /** max slope of the cumulative contrast. (optional, default 3) */
+  /** max slope of the cumulative contrast. A value of 0 disables contrast limiting. Valid values are integers in the range 0-100 (inclusive) (optional, default 3) */
   var maxSlope: js.UndefOr[Double] = js.undefined
   
   /** width of the region */

@@ -1,7 +1,7 @@
 
 # Scala.js typings for highlight_dot_js
 
-Typings are for version 11.6.0
+Typings are for version 11.8.0
 
 ## Library description:
 Syntax highlighting with language autodetection.

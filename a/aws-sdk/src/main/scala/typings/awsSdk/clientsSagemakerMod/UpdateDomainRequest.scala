@@ -7,6 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateDomainRequest extends StObject {
   
   /**
+    * The entity that creates and manages the required security groups for inter-app communication in VPCOnly mode. Required when CreateDomain.AppNetworkAccessType is VPCOnly and DomainSettings.RStudioServerProDomainSettings.DomainExecutionRoleArn is provided. If setting up the domain for use with RStudio, this value must be set to Service.
+    */
+  var AppSecurityGroupManagement: js.UndefOr[typings.awsSdk.clientsSagemakerMod.AppSecurityGroupManagement] = js.undefined
+  
+  /**
+    * The default settings used to create a space within the Domain.
+    */
+  var DefaultSpaceSettings: js.UndefOr[typings.awsSdk.clientsSagemakerMod.DefaultSpaceSettings] = js.undefined
+  
+  /**
     * A collection of settings.
     */
   var DefaultUserSettings: js.UndefOr[UserSettings] = js.undefined
@@ -30,6 +40,14 @@ object UpdateDomainRequest {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: UpdateDomainRequest] (val x: Self) extends AnyVal {
+    
+    inline def setAppSecurityGroupManagement(value: AppSecurityGroupManagement): Self = StObject.set(x, "AppSecurityGroupManagement", value.asInstanceOf[js.Any])
+    
+    inline def setAppSecurityGroupManagementUndefined: Self = StObject.set(x, "AppSecurityGroupManagement", js.undefined)
+    
+    inline def setDefaultSpaceSettings(value: DefaultSpaceSettings): Self = StObject.set(x, "DefaultSpaceSettings", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultSpaceSettingsUndefined: Self = StObject.set(x, "DefaultSpaceSettings", js.undefined)
     
     inline def setDefaultUserSettings(value: UserSettings): Self = StObject.set(x, "DefaultUserSettings", value.asInstanceOf[js.Any])
     

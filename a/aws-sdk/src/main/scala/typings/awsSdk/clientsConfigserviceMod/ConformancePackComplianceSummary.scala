@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConformancePackComplianceSummary extends StObject {
   
   /**
-    * The status of the conformance pack. The allowed values are COMPLIANT, NON_COMPLIANT and INSUFFICIENT_DATA.
+    * The status of the conformance pack.
     */
   var ConformancePackComplianceStatus: ConformancePackComplianceType
   

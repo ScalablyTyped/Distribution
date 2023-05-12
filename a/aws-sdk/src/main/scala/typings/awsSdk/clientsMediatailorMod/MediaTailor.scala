@@ -15,6 +15,20 @@ trait MediaTailor extends Service {
   var config_MediaTailor: ConfigBase & ClientConfiguration = js.native
   
   /**
+    * Configures Amazon CloudWatch log settings for a channel.
+    */
+  def configureLogsForChannel(): Request[ConfigureLogsForChannelResponse, AWSError] = js.native
+  def configureLogsForChannel(callback: js.Function2[/* err */ AWSError, /* data */ ConfigureLogsForChannelResponse, Unit]): Request[ConfigureLogsForChannelResponse, AWSError] = js.native
+  /**
+    * Configures Amazon CloudWatch log settings for a channel.
+    */
+  def configureLogsForChannel(params: ConfigureLogsForChannelRequest): Request[ConfigureLogsForChannelResponse, AWSError] = js.native
+  def configureLogsForChannel(
+    params: ConfigureLogsForChannelRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ConfigureLogsForChannelResponse, Unit]
+  ): Request[ConfigureLogsForChannelResponse, AWSError] = js.native
+  
+  /**
     * Amazon CloudWatch log settings for a playback configuration.
     */
   def configureLogsForPlaybackConfiguration(): Request[ConfigureLogsForPlaybackConfigurationResponse, AWSError] = js.native
@@ -572,6 +586,20 @@ trait MediaTailor extends Service {
     params: UpdateLiveSourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateLiveSourceResponse, Unit]
   ): Request[UpdateLiveSourceResponse, AWSError] = js.native
+  
+  /**
+    * Updates a program within a channel.
+    */
+  def updateProgram(): Request[UpdateProgramResponse, AWSError] = js.native
+  def updateProgram(callback: js.Function2[/* err */ AWSError, /* data */ UpdateProgramResponse, Unit]): Request[UpdateProgramResponse, AWSError] = js.native
+  /**
+    * Updates a program within a channel.
+    */
+  def updateProgram(params: UpdateProgramRequest): Request[UpdateProgramResponse, AWSError] = js.native
+  def updateProgram(
+    params: UpdateProgramRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateProgramResponse, Unit]
+  ): Request[UpdateProgramResponse, AWSError] = js.native
   
   /**
     * Updates a source location. A source location is a container for sources. For more information about source locations, see Working with source locations in the MediaTailor User Guide.

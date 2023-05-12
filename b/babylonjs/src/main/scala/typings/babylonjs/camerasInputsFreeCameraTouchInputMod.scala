@@ -12,7 +12,7 @@ object camerasInputsFreeCameraTouchInputMod {
   @js.native
   /**
     * Manage the touch inputs to control the movement of a free camera.
-    * @see https://doc.babylonjs.com/how_to/customizing_camera_inputs
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/cameras/customizingCameraInputs
     * @param allowMouse Defines if mouse events can be treated as touch events
     */
   open class FreeCameraTouchInput ()

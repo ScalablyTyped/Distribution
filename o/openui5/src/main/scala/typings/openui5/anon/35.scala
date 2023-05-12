@@ -7,9 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `35` extends StObject {
   
   /**
-    * Optional scope for lookup of aliases for computed annotations (since 1.43.0)
+    * @since 1.60 if it's set to true, the focused element won't be shifted into the viewport if it's not completely
+    * visible before the focus is set
     */
-  var scope: js.UndefOr[js.Object] = js.undefined
+  var preventScroll: js.UndefOr[Boolean] = js.undefined
 }
 object `35` {
   
@@ -21,8 +22,8 @@ object `35` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `35`] (val x: Self) extends AnyVal {
     
-    inline def setScope(value: js.Object): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setPreventScroll(value: Boolean): Self = StObject.set(x, "preventScroll", value.asInstanceOf[js.Any])
     
-    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setPreventScrollUndefined: Self = StObject.set(x, "preventScroll", js.undefined)
   }
 }

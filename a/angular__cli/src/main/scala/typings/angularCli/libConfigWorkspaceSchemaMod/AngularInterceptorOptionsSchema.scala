@@ -12,6 +12,11 @@ trait AngularInterceptorOptionsSchema extends StObject {
   var flat: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Creates the interceptor as a `HttpInterceptorFn`.
+    */
+  var functional: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * The name of the interceptor.
     */
   var name: String
@@ -24,7 +29,7 @@ trait AngularInterceptorOptionsSchema extends StObject {
   /**
     * The name of the project.
     */
-  var project: js.UndefOr[String] = js.undefined
+  var project: String
   
   /**
     * Do not create "spec.ts" test files for the new interceptor.
@@ -33,8 +38,8 @@ trait AngularInterceptorOptionsSchema extends StObject {
 }
 object AngularInterceptorOptionsSchema {
   
-  inline def apply(name: String): AngularInterceptorOptionsSchema = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  inline def apply(name: String, project: String): AngularInterceptorOptionsSchema = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any])
     __obj.asInstanceOf[AngularInterceptorOptionsSchema]
   }
   
@@ -45,6 +50,10 @@ object AngularInterceptorOptionsSchema {
     
     inline def setFlatUndefined: Self = StObject.set(x, "flat", js.undefined)
     
+    inline def setFunctional(value: Boolean): Self = StObject.set(x, "functional", value.asInstanceOf[js.Any])
+    
+    inline def setFunctionalUndefined: Self = StObject.set(x, "functional", js.undefined)
+    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
@@ -52,8 +61,6 @@ object AngularInterceptorOptionsSchema {
     inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
-    
-    inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
     
     inline def setSkipTests(value: Boolean): Self = StObject.set(x, "skipTests", value.asInstanceOf[js.Any])
     

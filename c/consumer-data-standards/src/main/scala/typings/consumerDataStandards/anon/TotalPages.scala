@@ -10,12 +10,12 @@ trait TotalPages
      with /* k */ StringDictionary[Any] {
   
   /**
-    * The total number of pages in the full set
+    * The total number of pages in the full set. See [pagination](#pagination).
     */
   var totalPages: Double
   
   /**
-    * The total number of records in the full set
+    * The total number of records in the full set. See [pagination](#pagination).
     */
   var totalRecords: Double
 }

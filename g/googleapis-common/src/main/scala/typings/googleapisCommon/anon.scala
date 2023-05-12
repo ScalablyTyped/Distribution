@@ -1,12 +1,15 @@
 package typings.googleapisCommon
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.googleAuthLibrary.anon.TypeofDefaultTransporter
 import typings.googleAuthLibrary.buildSrcAuthAuthclientMod.AuthClient
+import typings.googleAuthLibrary.buildSrcAuthAwsclientMod.AwsClientOptions
 import typings.googleAuthLibrary.buildSrcAuthBaseexternalclientMod.BaseExternalAccountClient
 import typings.googleAuthLibrary.buildSrcAuthExternalclientMod.ExternalAccountClientOptions
 import typings.googleAuthLibrary.buildSrcAuthOauth2clientMod.RefreshOptions
+import typings.googleAuthLibrary.mod.AwsClient
 import typings.googleAuthLibrary.mod.ExternalAccountClient
 import typings.googleAuthLibrary.mod.GoogleAuth
 import typings.googleAuthLibrary.mod.OAuth2Client
@@ -159,6 +162,16 @@ object anon {
       
       inline def setSimple(value: Path): Self = StObject.set(x, "simple", value.asInstanceOf[js.Any])
     }
+  }
+  
+  @js.native
+  trait TypeofAwsClient
+    extends StObject
+       with Instantiable1[/* options */ AwsClientOptions, AwsClient] {
+    
+    var AWS_EC2_METADATA_IPV4_ADDRESS: String = js.native
+    
+    var AWS_EC2_METADATA_IPV6_ADDRESS: String = js.native
   }
   
   @js.native

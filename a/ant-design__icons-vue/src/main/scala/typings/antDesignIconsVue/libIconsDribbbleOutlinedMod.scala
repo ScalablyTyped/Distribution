@@ -16,7 +16,7 @@ object libIconsDribbbleOutlinedMod extends Shortcut {
   @js.native
   trait DribbbleOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_DribbbleOutlinedIconType: String = js.native

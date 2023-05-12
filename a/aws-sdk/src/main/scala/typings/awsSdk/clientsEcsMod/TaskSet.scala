@@ -87,7 +87,7 @@ trait TaskSet extends StObject {
   var serviceRegistries: js.UndefOr[ServiceRegistries] = js.undefined
   
   /**
-    * The stability status. This indicates whether the task set has reached a steady state. If the following conditions are met, the task set sre in STEADY_STATE:   The task runningCount is equal to the computedDesiredCount.   The pendingCount is 0.   There are no tasks that are running on container instances in the DRAINING status.   All tasks are reporting a healthy status from the load balancers, service discovery, and container health checks.   If any of those conditions aren't met, the stability status returns STABILIZING.
+    * The stability status. This indicates whether the task set has reached a steady state. If the following conditions are met, the task set are in STEADY_STATE:   The task runningCount is equal to the computedDesiredCount.   The pendingCount is 0.   There are no tasks that are running on container instances in the DRAINING status.   All tasks are reporting a healthy status from the load balancers, service discovery, and container health checks.   If any of those conditions aren't met, the stability status returns STABILIZING.
     */
   var stabilityStatus: js.UndefOr[StabilityStatus] = js.undefined
   

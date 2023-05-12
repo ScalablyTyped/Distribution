@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@ckeditor/ckeditor5-indent" : "37.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@ckeditor/ckeditor5-indent" : "37.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

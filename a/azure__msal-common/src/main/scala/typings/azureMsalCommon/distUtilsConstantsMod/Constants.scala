@@ -15,6 +15,11 @@ object Constants {
   def AAD_INSTANCE_DISCOVERY_ENDPT: String = js.native
   inline def AAD_INSTANCE_DISCOVERY_ENDPT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AAD_INSTANCE_DISCOVERY_ENDPT")(x.asInstanceOf[js.Any])
   
+  @JSImport("@azure/msal-common/dist/utils/Constants", "Constants.AAD_TENANT_DOMAIN_SUFFIX")
+  @js.native
+  def AAD_TENANT_DOMAIN_SUFFIX: String = js.native
+  inline def AAD_TENANT_DOMAIN_SUFFIX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AAD_TENANT_DOMAIN_SUFFIX")(x.asInstanceOf[js.Any])
+  
   @JSImport("@azure/msal-common/dist/utils/Constants", "Constants.ADFS")
   @js.native
   def ADFS: String = js.native
@@ -34,6 +39,11 @@ object Constants {
   @js.native
   def CACHE_PREFIX: String = js.native
   inline def CACHE_PREFIX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CACHE_PREFIX")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@azure/msal-common/dist/utils/Constants", "Constants.CIAM_AUTH_URL")
+  @js.native
+  def CIAM_AUTH_URL: String = js.native
+  inline def CIAM_AUTH_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CIAM_AUTH_URL")(x.asInstanceOf[js.Any])
   
   @JSImport("@azure/msal-common/dist/utils/Constants", "Constants.CLAIMS")
   @js.native
@@ -69,6 +79,11 @@ object Constants {
   @js.native
   def DEFAULT_COMMON_TENANT: String = js.native
   inline def DEFAULT_COMMON_TENANT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_COMMON_TENANT")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@azure/msal-common/dist/utils/Constants", "Constants.DSTS")
+  @js.native
+  def DSTS: String = js.native
+  inline def DSTS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DSTS")(x.asInstanceOf[js.Any])
   
   @JSImport("@azure/msal-common/dist/utils/Constants", "Constants.EMAIL_SCOPE")
   @js.native
@@ -110,6 +125,11 @@ object Constants {
   def IMDS_VERSION: String = js.native
   inline def IMDS_VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IMDS_VERSION")(x.asInstanceOf[js.Any])
   
+  @JSImport("@azure/msal-common/dist/utils/Constants", "Constants.INVALID_INSTANCE")
+  @js.native
+  def INVALID_INSTANCE: String = js.native
+  inline def INVALID_INSTANCE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_INSTANCE")(x.asInstanceOf[js.Any])
+  
   @JSImport("@azure/msal-common/dist/utils/Constants", "Constants.KNOWN_PUBLIC_CLOUDS")
   @js.native
   def KNOWN_PUBLIC_CLOUDS: js.Array[String] = js.native
@@ -119,6 +139,11 @@ object Constants {
   @js.native
   def LIBRARY_NAME: String = js.native
   inline def LIBRARY_NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIBRARY_NAME")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@azure/msal-common/dist/utils/Constants", "Constants.NOT_APPLICABLE")
+  @js.native
+  def NOT_APPLICABLE: String = js.native
+  inline def NOT_APPLICABLE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOT_APPLICABLE")(x.asInstanceOf[js.Any])
   
   @JSImport("@azure/msal-common/dist/utils/Constants", "Constants.NOT_DEFINED")
   @js.native
@@ -144,6 +169,11 @@ object Constants {
   @js.native
   def PROFILE_SCOPE: String = js.native
   inline def PROFILE_SCOPE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROFILE_SCOPE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@azure/msal-common/dist/utils/Constants", "Constants.REGIONAL_AUTH_NON_MSI_QUERY_STRING")
+  @js.native
+  def REGIONAL_AUTH_NON_MSI_QUERY_STRING: String = js.native
+  inline def REGIONAL_AUTH_NON_MSI_QUERY_STRING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REGIONAL_AUTH_NON_MSI_QUERY_STRING")(x.asInstanceOf[js.Any])
   
   @JSImport("@azure/msal-common/dist/utils/Constants", "Constants.REGIONAL_AUTH_PUBLIC_CLOUD_SUFFIX")
   @js.native

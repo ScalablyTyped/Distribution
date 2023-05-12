@@ -8,11 +8,11 @@ trait ParametersQueryRole extends StObject {
   
   var parameters: QueryRole
   
-  var responses: `200Content69Headers`
+  var responses: `200HeadersLink`
 }
 object ParametersQueryRole {
   
-  inline def apply(parameters: QueryRole, responses: `200Content69Headers`): ParametersQueryRole = {
+  inline def apply(parameters: QueryRole, responses: `200HeadersLink`): ParametersQueryRole = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryRole]
   }
@@ -22,6 +22,6 @@ object ParametersQueryRole {
     
     inline def setParameters(value: QueryRole): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content69Headers`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200HeadersLink`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

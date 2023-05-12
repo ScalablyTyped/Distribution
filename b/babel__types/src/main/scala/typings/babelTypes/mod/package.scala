@@ -743,6 +743,12 @@ inline def assertImportNamespaceSpecifier(node: js.Object, opts: js.Object): Uni
 inline def assertImportNamespaceSpecifier(node: Null, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertImportNamespaceSpecifier")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def assertImportNamespaceSpecifier(node: Unit, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertImportNamespaceSpecifier")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
+inline def assertImportOrExportDeclaration(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertImportOrExportDeclaration")().asInstanceOf[Unit]
+inline def assertImportOrExportDeclaration(node: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertImportOrExportDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def assertImportOrExportDeclaration(node: js.Object, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertImportOrExportDeclaration")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def assertImportOrExportDeclaration(node: Null, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertImportOrExportDeclaration")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def assertImportOrExportDeclaration(node: Unit, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertImportOrExportDeclaration")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
 inline def assertImportSpecifier(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertImportSpecifier")().asInstanceOf[Unit]
 inline def assertImportSpecifier(node: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertImportSpecifier")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
 inline def assertImportSpecifier(node: js.Object, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertImportSpecifier")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -3327,6 +3333,12 @@ inline def isImportNamespaceSpecifier(node: js.Object, opts: js.Object): /* is @
 inline def isImportNamespaceSpecifier(node: Null, opts: js.Object): /* is @babel/types.@babel/types.ImportNamespaceSpecifier */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isImportNamespaceSpecifier")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.ImportNamespaceSpecifier */ Boolean]
 inline def isImportNamespaceSpecifier(node: Unit, opts: js.Object): /* is @babel/types.@babel/types.ImportNamespaceSpecifier */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isImportNamespaceSpecifier")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.ImportNamespaceSpecifier */ Boolean]
 
+inline def isImportOrExportDeclaration(): /* is @babel/types.@babel/types.ImportOrExportDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImportOrExportDeclaration")().asInstanceOf[/* is @babel/types.@babel/types.ImportOrExportDeclaration */ Boolean]
+inline def isImportOrExportDeclaration(node: js.Object): /* is @babel/types.@babel/types.ImportOrExportDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImportOrExportDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types.ImportOrExportDeclaration */ Boolean]
+inline def isImportOrExportDeclaration(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.ImportOrExportDeclaration */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isImportOrExportDeclaration")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.ImportOrExportDeclaration */ Boolean]
+inline def isImportOrExportDeclaration(node: Null, opts: js.Object): /* is @babel/types.@babel/types.ImportOrExportDeclaration */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isImportOrExportDeclaration")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.ImportOrExportDeclaration */ Boolean]
+inline def isImportOrExportDeclaration(node: Unit, opts: js.Object): /* is @babel/types.@babel/types.ImportOrExportDeclaration */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isImportOrExportDeclaration")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.ImportOrExportDeclaration */ Boolean]
+
 inline def isImportSpecifier(): /* is @babel/types.@babel/types.ImportSpecifier */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImportSpecifier")().asInstanceOf[/* is @babel/types.@babel/types.ImportSpecifier */ Boolean]
 inline def isImportSpecifier(node: js.Object): /* is @babel/types.@babel/types.ImportSpecifier */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImportSpecifier")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types.ImportSpecifier */ Boolean]
 inline def isImportSpecifier(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.ImportSpecifier */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isImportSpecifier")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.ImportSpecifier */ Boolean]
@@ -5752,6 +5764,7 @@ type Accessor = ClassAccessorProperty_
   - typings.babelTypes.mod.ImportDeclaration_
   - typings.babelTypes.mod.ImportDefaultSpecifier_
   - typings.babelTypes.mod.ImportNamespaceSpecifier_
+  - typings.babelTypes.mod.ImportOrExportDeclaration
   - typings.babelTypes.mod.ImportSpecifier_
   - typings.babelTypes.mod.IndexedAccessType_
   - typings.babelTypes.mod.InferredPredicate_

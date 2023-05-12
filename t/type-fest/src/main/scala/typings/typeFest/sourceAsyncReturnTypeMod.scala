@@ -11,7 +11,7 @@ object sourceAsyncReturnTypeMod {
   @js.native
   trait AsyncFunction extends StObject {
     
-    def apply(args: Any*): js.Promise[Any] = js.native
+    def apply(arguments_ : Any*): js.Promise[Any] = js.native
   }
   
   type AsyncReturnType[Target /* <: AsyncFunction */] = Awaited[ReturnType[Target]]

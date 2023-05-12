@@ -39,7 +39,7 @@ trait AssociateAddressRequest extends StObject {
   /**
     * [EC2-Classic] The Elastic IP address to associate with the instance. This is required for EC2-Classic.
     */
-  var PublicIp: js.UndefOr[String] = js.undefined
+  var PublicIp: js.UndefOr[EipAllocationPublicIp] = js.undefined
 }
 object AssociateAddressRequest {
   
@@ -75,7 +75,7 @@ object AssociateAddressRequest {
     
     inline def setPrivateIpAddressUndefined: Self = StObject.set(x, "PrivateIpAddress", js.undefined)
     
-    inline def setPublicIp(value: String): Self = StObject.set(x, "PublicIp", value.asInstanceOf[js.Any])
+    inline def setPublicIp(value: EipAllocationPublicIp): Self = StObject.set(x, "PublicIp", value.asInstanceOf[js.Any])
     
     inline def setPublicIpUndefined: Self = StObject.set(x, "PublicIp", js.undefined)
   }

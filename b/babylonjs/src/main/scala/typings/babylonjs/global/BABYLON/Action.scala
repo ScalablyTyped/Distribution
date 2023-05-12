@@ -30,6 +30,7 @@ object Action {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def _GetTargetProperty(target: typings.babylonjs.BABYLON.Material): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetTargetProperty")(target.asInstanceOf[js.Any]).asInstanceOf[Name]
   inline def _GetTargetProperty(target: typings.babylonjs.BABYLON.Node): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetTargetProperty")(target.asInstanceOf[js.Any]).asInstanceOf[Name]
   /**
     * Internal only

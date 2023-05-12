@@ -1,5 +1,6 @@
 package typings.azureMsalBrowser
 
+import typings.azureMsalBrowser.distConfigConfigurationMod.CryptoOptions
 import typings.azureMsalBrowser.distNavigationInavigationclientMod.INavigationClient
 import typings.azureMsalBrowser.distUtilsBrowserConstantsMod.BrowserCacheLocation
 import typings.azureMsalCommon.distAuthorityProtocolModeMod.ProtocolMode
@@ -8,6 +9,8 @@ import typings.azureMsalCommon.distConfigClientConfigurationMod.AzureCloudOption
 import typings.azureMsalCommon.distConfigClientConfigurationMod.LoggerOptions
 import typings.azureMsalCommon.distNetworkInetworkmoduleMod.INetworkModule
 import typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme
+import typings.azureMsalCommon.distUtilsMsalTypesMod.StringDict
+import typings.std.SubtleCrypto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,6 +57,25 @@ object anon {
     }
   }
   
+  /* Inlined std.Crypto & {initPrng (entropy : std.Uint8Array | std.Array<number>): void} */
+  @js.native
+  trait CryptoinitPrngentropyUint extends StObject {
+    
+    /* standard dom */
+    def getRandomValues[T /* <: js.typedarray.ArrayBufferView | Null */](array: T): T = js.native
+    
+    def initPrng(entropy: js.Array[Double]): Unit = js.native
+    def initPrng(entropy: js.typedarray.Uint8Array): Unit = js.native
+    
+    /** Available only in secure contexts. */
+    /* standard dom */
+    def randomUUID(): /* template literal string: ${string}-${string}-${string}-${string}-${string} */ String = js.native
+    
+    /** Available only in secure contexts. */
+    /* standard dom */
+    val subtle: SubtleCrypto = js.native
+  }
+  
   /* Inlined std.Partial<@azure/msal-common.@azure/msal-common.BaseAuthRequest> */
   trait PartialBaseAuthRequest extends StObject {
     
@@ -66,6 +88,8 @@ object anon {
     var claims: js.UndefOr[String] = js.undefined
     
     var correlationId: js.UndefOr[String] = js.undefined
+    
+    var maxAge: js.UndefOr[Double] = js.undefined
     
     var requestedClaimsHash: js.UndefOr[String] = js.undefined
     
@@ -82,6 +106,8 @@ object anon {
     var sshJwk: js.UndefOr[String] = js.undefined
     
     var sshKid: js.UndefOr[String] = js.undefined
+    
+    var tokenQueryParameters: js.UndefOr[StringDict] = js.undefined
   }
   object PartialBaseAuthRequest {
     
@@ -112,6 +138,10 @@ object anon {
       inline def setCorrelationId(value: String): Self = StObject.set(x, "correlationId", value.asInstanceOf[js.Any])
       
       inline def setCorrelationIdUndefined: Self = StObject.set(x, "correlationId", js.undefined)
+      
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
       inline def setRequestedClaimsHash(value: String): Self = StObject.set(x, "requestedClaimsHash", value.asInstanceOf[js.Any])
       
@@ -146,6 +176,10 @@ object anon {
       inline def setSshKid(value: String): Self = StObject.set(x, "sshKid", value.asInstanceOf[js.Any])
       
       inline def setSshKidUndefined: Self = StObject.set(x, "sshKid", js.undefined)
+      
+      inline def setTokenQueryParameters(value: StringDict): Self = StObject.set(x, "tokenQueryParameters", value.asInstanceOf[js.Any])
+      
+      inline def setTokenQueryParametersUndefined: Self = StObject.set(x, "tokenQueryParameters", js.undefined)
     }
   }
   
@@ -295,6 +329,8 @@ object anon {
     
     var asyncPopups: Boolean
     
+    var cryptoOptions: CryptoOptions
+    
     var iframeHashTimeout: Double
     
     var loadFrameTimeout: Double
@@ -309,9 +345,9 @@ object anon {
     
     var networkClient: INetworkModule
     
-    var preventCorsPreflight: Boolean
+    var pollIntervalMilliseconds: Double
     
-    var proxyUrl: String
+    var preventCorsPreflight: Boolean
     
     var redirectNavigationTimeout: Double
     
@@ -325,6 +361,7 @@ object anon {
       allowNativeBroker: Boolean,
       allowRedirectInIframe: Boolean,
       asyncPopups: Boolean,
+      cryptoOptions: CryptoOptions,
       iframeHashTimeout: Double,
       loadFrameTimeout: Double,
       loggerOptions: LoggerOptions,
@@ -332,13 +369,13 @@ object anon {
       navigateFrameWait: Double,
       navigationClient: INavigationClient,
       networkClient: INetworkModule,
+      pollIntervalMilliseconds: Double,
       preventCorsPreflight: Boolean,
-      proxyUrl: String,
       redirectNavigationTimeout: Double,
       tokenRenewalOffsetSeconds: Double,
       windowHashTimeout: Double
     ): RequiredBrowserSystemOpti = {
-      val __obj = js.Dynamic.literal(allowNativeBroker = allowNativeBroker.asInstanceOf[js.Any], allowRedirectInIframe = allowRedirectInIframe.asInstanceOf[js.Any], asyncPopups = asyncPopups.asInstanceOf[js.Any], iframeHashTimeout = iframeHashTimeout.asInstanceOf[js.Any], loadFrameTimeout = loadFrameTimeout.asInstanceOf[js.Any], loggerOptions = loggerOptions.asInstanceOf[js.Any], nativeBrokerHandshakeTimeout = nativeBrokerHandshakeTimeout.asInstanceOf[js.Any], navigateFrameWait = navigateFrameWait.asInstanceOf[js.Any], navigationClient = navigationClient.asInstanceOf[js.Any], networkClient = networkClient.asInstanceOf[js.Any], preventCorsPreflight = preventCorsPreflight.asInstanceOf[js.Any], proxyUrl = proxyUrl.asInstanceOf[js.Any], redirectNavigationTimeout = redirectNavigationTimeout.asInstanceOf[js.Any], tokenRenewalOffsetSeconds = tokenRenewalOffsetSeconds.asInstanceOf[js.Any], windowHashTimeout = windowHashTimeout.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(allowNativeBroker = allowNativeBroker.asInstanceOf[js.Any], allowRedirectInIframe = allowRedirectInIframe.asInstanceOf[js.Any], asyncPopups = asyncPopups.asInstanceOf[js.Any], cryptoOptions = cryptoOptions.asInstanceOf[js.Any], iframeHashTimeout = iframeHashTimeout.asInstanceOf[js.Any], loadFrameTimeout = loadFrameTimeout.asInstanceOf[js.Any], loggerOptions = loggerOptions.asInstanceOf[js.Any], nativeBrokerHandshakeTimeout = nativeBrokerHandshakeTimeout.asInstanceOf[js.Any], navigateFrameWait = navigateFrameWait.asInstanceOf[js.Any], navigationClient = navigationClient.asInstanceOf[js.Any], networkClient = networkClient.asInstanceOf[js.Any], pollIntervalMilliseconds = pollIntervalMilliseconds.asInstanceOf[js.Any], preventCorsPreflight = preventCorsPreflight.asInstanceOf[js.Any], redirectNavigationTimeout = redirectNavigationTimeout.asInstanceOf[js.Any], tokenRenewalOffsetSeconds = tokenRenewalOffsetSeconds.asInstanceOf[js.Any], windowHashTimeout = windowHashTimeout.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequiredBrowserSystemOpti]
     }
     
@@ -350,6 +387,8 @@ object anon {
       inline def setAllowRedirectInIframe(value: Boolean): Self = StObject.set(x, "allowRedirectInIframe", value.asInstanceOf[js.Any])
       
       inline def setAsyncPopups(value: Boolean): Self = StObject.set(x, "asyncPopups", value.asInstanceOf[js.Any])
+      
+      inline def setCryptoOptions(value: CryptoOptions): Self = StObject.set(x, "cryptoOptions", value.asInstanceOf[js.Any])
       
       inline def setIframeHashTimeout(value: Double): Self = StObject.set(x, "iframeHashTimeout", value.asInstanceOf[js.Any])
       
@@ -365,9 +404,9 @@ object anon {
       
       inline def setNetworkClient(value: INetworkModule): Self = StObject.set(x, "networkClient", value.asInstanceOf[js.Any])
       
-      inline def setPreventCorsPreflight(value: Boolean): Self = StObject.set(x, "preventCorsPreflight", value.asInstanceOf[js.Any])
+      inline def setPollIntervalMilliseconds(value: Double): Self = StObject.set(x, "pollIntervalMilliseconds", value.asInstanceOf[js.Any])
       
-      inline def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
+      inline def setPreventCorsPreflight(value: Boolean): Self = StObject.set(x, "preventCorsPreflight", value.asInstanceOf[js.Any])
       
       inline def setRedirectNavigationTimeout(value: Double): Self = StObject.set(x, "redirectNavigationTimeout", value.asInstanceOf[js.Any])
       
@@ -401,18 +440,24 @@ object anon {
     
     var cacheLocation: BrowserCacheLocation | String
     
+    var cacheMigrationEnabled: Boolean
+    
     var secureCookies: Boolean
     
     var storeAuthStateInCookie: Boolean
+    
+    var temporaryCacheLocation: BrowserCacheLocation | String
   }
   object RequiredCacheOptions {
     
     inline def apply(
       cacheLocation: BrowserCacheLocation | String,
+      cacheMigrationEnabled: Boolean,
       secureCookies: Boolean,
-      storeAuthStateInCookie: Boolean
+      storeAuthStateInCookie: Boolean,
+      temporaryCacheLocation: BrowserCacheLocation | String
     ): RequiredCacheOptions = {
-      val __obj = js.Dynamic.literal(cacheLocation = cacheLocation.asInstanceOf[js.Any], secureCookies = secureCookies.asInstanceOf[js.Any], storeAuthStateInCookie = storeAuthStateInCookie.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(cacheLocation = cacheLocation.asInstanceOf[js.Any], cacheMigrationEnabled = cacheMigrationEnabled.asInstanceOf[js.Any], secureCookies = secureCookies.asInstanceOf[js.Any], storeAuthStateInCookie = storeAuthStateInCookie.asInstanceOf[js.Any], temporaryCacheLocation = temporaryCacheLocation.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequiredCacheOptions]
     }
     
@@ -421,9 +466,36 @@ object anon {
       
       inline def setCacheLocation(value: BrowserCacheLocation | String): Self = StObject.set(x, "cacheLocation", value.asInstanceOf[js.Any])
       
+      inline def setCacheMigrationEnabled(value: Boolean): Self = StObject.set(x, "cacheMigrationEnabled", value.asInstanceOf[js.Any])
+      
       inline def setSecureCookies(value: Boolean): Self = StObject.set(x, "secureCookies", value.asInstanceOf[js.Any])
       
       inline def setStoreAuthStateInCookie(value: Boolean): Self = StObject.set(x, "storeAuthStateInCookie", value.asInstanceOf[js.Any])
+      
+      inline def setTemporaryCacheLocation(value: BrowserCacheLocation | String): Self = StObject.set(x, "temporaryCacheLocation", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined std.Required<std.Pick<@azure/msal-browser.@azure/msal-browser/dist/config/Configuration.BrowserSystemOptions, 'navigateFrameWait' | 'pollIntervalMilliseconds'>> */
+  trait RequiredPickBrowserSystem extends StObject {
+    
+    var navigateFrameWait: Double
+    
+    var pollIntervalMilliseconds: Double
+  }
+  object RequiredPickBrowserSystem {
+    
+    inline def apply(navigateFrameWait: Double, pollIntervalMilliseconds: Double): RequiredPickBrowserSystem = {
+      val __obj = js.Dynamic.literal(navigateFrameWait = navigateFrameWait.asInstanceOf[js.Any], pollIntervalMilliseconds = pollIntervalMilliseconds.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RequiredPickBrowserSystem]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredPickBrowserSystem] (val x: Self) extends AnyVal {
+      
+      inline def setNavigateFrameWait(value: Double): Self = StObject.set(x, "navigateFrameWait", value.asInstanceOf[js.Any])
+      
+      inline def setPollIntervalMilliseconds(value: Double): Self = StObject.set(x, "pollIntervalMilliseconds", value.asInstanceOf[js.Any])
     }
   }
 }

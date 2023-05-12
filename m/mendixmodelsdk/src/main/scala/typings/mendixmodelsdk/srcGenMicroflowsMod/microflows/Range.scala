@@ -27,6 +27,8 @@ open class Range protected () extends Element[IModel] {
   def containerAsDatabaseRetrieveSource: DatabaseRetrieveSource = js.native
   
   def containerAsImportMappingCall: ImportMappingCall = js.native
+  
+  def containerAsListRange: ListRange = js.native
 }
 object Range {
   

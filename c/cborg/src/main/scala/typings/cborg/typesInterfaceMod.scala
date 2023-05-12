@@ -23,6 +23,8 @@ object typesInterfaceMod {
     
     var coerceUndefinedToNull: js.UndefOr[Boolean] = js.undefined
     
+    var rejectDuplicateMapKeys: js.UndefOr[Boolean] = js.undefined
+    
     var retainStringBytes: js.UndefOr[Boolean] = js.undefined
     
     var strict: js.UndefOr[Boolean] = js.undefined
@@ -66,6 +68,10 @@ object typesInterfaceMod {
       inline def setCoerceUndefinedToNull(value: Boolean): Self = StObject.set(x, "coerceUndefinedToNull", value.asInstanceOf[js.Any])
       
       inline def setCoerceUndefinedToNullUndefined: Self = StObject.set(x, "coerceUndefinedToNull", js.undefined)
+      
+      inline def setRejectDuplicateMapKeys(value: Boolean): Self = StObject.set(x, "rejectDuplicateMapKeys", value.asInstanceOf[js.Any])
+      
+      inline def setRejectDuplicateMapKeysUndefined: Self = StObject.set(x, "rejectDuplicateMapKeys", js.undefined)
       
       inline def setRetainStringBytes(value: Boolean): Self = StObject.set(x, "retainStringBytes", value.asInstanceOf[js.Any])
       

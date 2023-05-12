@@ -1,10 +1,13 @@
 package typings.ipldCar
 
-import typings.ipldCar.distSrcIndexerMod.BlockIndex
+import typings.ipldCar.anon.ByteLength
+import typings.ipldCar.anon.Resize
+import typings.ipldCar.anon.Roots
+import typings.ipldCar.distSrcBufferReaderBrowserMod.CarHeader
+import typings.ipldCar.distSrcBufferReaderBrowserMod.CarV2Header
+import typings.ipldCar.distSrcBufferReaderMod.BlockIndex
 import typings.ipldCar.distSrcIteratorMod.Block
 import typings.ipldCar.distSrcIteratorMod.CID
-import typings.ipldCar.distSrcReaderBrowserMod.CarHeader
-import typings.ipldCar.distSrcReaderBrowserMod.CarV2Header
 import typings.ipldCar.distSrcWriterBrowserMod.CarEncoder
 import typings.ipldCar.distSrcWriterBrowserMod.WriterChannel
 import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
@@ -62,6 +65,85 @@ object distSrcIndexBrowserMod {
       * @returns {Promise<CarBlockIterator>}
       */
     inline def fromIterable(asyncIterable: AsyncIterable[js.typedarray.Uint8Array]): js.Promise[typings.ipldCar.distSrcIteratorMod.CarBlockIterator] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIterable")(asyncIterable.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.ipldCar.distSrcIteratorMod.CarBlockIterator]]
+  }
+  
+  @JSImport("@ipld/car/dist/src/index-browser", "CarBufferReader")
+  @js.native
+  open class CarBufferReader protected ()
+    extends typings.ipldCar.distSrcBufferReaderMod.CarBufferReader {
+    /**
+      * @constructs CarBufferReader
+      * @param {CarHeader|CarV2Header} header
+      * @param {Block[]} blocks
+      */
+    def this(header: CarHeader, blocks: js.Array[typings.ipldCar.distSrcBufferReaderBrowserMod.Block]) = this()
+    def this(header: CarV2Header, blocks: js.Array[typings.ipldCar.distSrcBufferReaderBrowserMod.Block]) = this()
+  }
+  /* static members */
+  object CarBufferReader {
+    
+    @JSImport("@ipld/car/dist/src/index-browser", "CarBufferReader")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Reads a block directly from a file descriptor for an open CAR file. This
+      * function is **only available in Node.js** and not a browser environment.
+      *
+      * This function can be used in connection with {@link CarIndexer} which emits
+      * the `BlockIndex` objects that are required by this function.
+      *
+      * The user is responsible for opening and closing the file used in this call.
+      *
+      * @static
+      * @memberof CarBufferReader
+      * @param {number} fd - A file descriptor from the
+      * Node.js `fs` module. An integer, from `fs.open()`.
+      * @param {BlockIndex} blockIndex - An index pointing to the location of the
+      * Block required. This `BlockIndex` should take the form:
+      * `{cid:CID, blockLength:number, blockOffset:number}`.
+      * @returns {Block} A `{ cid:CID, bytes:Uint8Array }` pair.
+      */
+    inline def readRaw(fd: Double, blockIndex: BlockIndex): typings.ipldCar.distSrcBufferReaderMod.Block = (^.asInstanceOf[js.Dynamic].applyDynamic("readRaw")(fd.asInstanceOf[js.Any], blockIndex.asInstanceOf[js.Any])).asInstanceOf[typings.ipldCar.distSrcBufferReaderMod.Block]
+  }
+  
+  object CarBufferWriter {
+    
+    @JSImport("@ipld/car/dist/src/index-browser", "CarBufferWriter")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def addBlock(
+      writer: typings.ipldCar.distSrcBufferWriterMod.CarBufferWriter,
+      param1: typings.ipldCar.distSrcBufferWriterMod.Block
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBlock")(writer.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def addRoot(
+      writer: typings.ipldCar.distSrcBufferWriterMod.CarBufferWriter,
+      root: typings.ipldCar.distSrcBufferWriterMod.CID
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addRoot")(writer.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addRoot(
+      writer: typings.ipldCar.distSrcBufferWriterMod.CarBufferWriter,
+      root: typings.ipldCar.distSrcBufferWriterMod.CID,
+      options: Resize
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addRoot")(writer.asInstanceOf[js.Any], root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def blockLength(param0: typings.ipldCar.distSrcBufferWriterMod.Block): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("blockLength")(param0.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    inline def calculateHeaderLength(rootLengths: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateHeaderLength")(rootLengths.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    inline def close(writer: typings.ipldCar.distSrcBufferWriterMod.CarBufferWriter): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(writer.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def close(writer: typings.ipldCar.distSrcBufferWriterMod.CarBufferWriter, options: Resize): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("close")(writer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+    
+    inline def createWriter(buffer: js.typedarray.ArrayBuffer): typings.ipldCar.distSrcBufferWriterMod.CarBufferWriter = ^.asInstanceOf[js.Dynamic].applyDynamic("createWriter")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.ipldCar.distSrcBufferWriterMod.CarBufferWriter]
+    inline def createWriter(buffer: js.typedarray.ArrayBuffer, options: ByteLength): typings.ipldCar.distSrcBufferWriterMod.CarBufferWriter = (^.asInstanceOf[js.Dynamic].applyDynamic("createWriter")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.ipldCar.distSrcBufferWriterMod.CarBufferWriter]
+    
+    inline def estimateHeaderLength(rootCount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("estimateHeaderLength")(rootCount.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def estimateHeaderLength(rootCount: Double, rootByteLength: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("estimateHeaderLength")(rootCount.asInstanceOf[js.Any], rootByteLength.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    inline def headerLength(param0: Roots): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("headerLength")(param0.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    inline def resizeHeader(writer: typings.ipldCar.distSrcBufferWriterMod.CarBufferWriter, byteLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeHeader")(writer.asInstanceOf[js.Any], byteLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("@ipld/car/dist/src/index-browser", "CarCIDIterator")
@@ -139,7 +221,7 @@ object distSrcIndexBrowserMod {
     def this(
       version: Double,
       roots: js.Array[typings.ipldCar.distSrcIndexerMod.CID],
-      iterator: AsyncGenerator[BlockIndex, Any, Any]
+      iterator: AsyncGenerator[typings.ipldCar.distSrcIndexerMod.BlockIndex, Any, Any]
     ) = this()
   }
   /* static members */
@@ -186,8 +268,14 @@ object distSrcIndexBrowserMod {
       * @param {CarHeader|CarV2Header} header
       * @param {Block[]} blocks
       */
-    def this(header: CarHeader, blocks: js.Array[typings.ipldCar.distSrcReaderBrowserMod.Block]) = this()
-    def this(header: CarV2Header, blocks: js.Array[typings.ipldCar.distSrcReaderBrowserMod.Block]) = this()
+    def this(
+      header: typings.ipldCar.distSrcReaderBrowserMod.CarHeader,
+      blocks: js.Array[typings.ipldCar.distSrcReaderBrowserMod.Block]
+    ) = this()
+    def this(
+      header: typings.ipldCar.distSrcReaderBrowserMod.CarV2Header,
+      blocks: js.Array[typings.ipldCar.distSrcReaderBrowserMod.Block]
+    ) = this()
   }
   /* static members */
   object CarReader {
@@ -205,7 +293,7 @@ object distSrcIndexBrowserMod {
       * @static
       * @memberof CarReader
       * @param {Uint8Array} bytes
-      * @returns {Promise<CarReader>} blip blop
+      * @returns {Promise<CarReader>}
       */
     inline def fromBytes(bytes: js.typedarray.Uint8Array): js.Promise[typings.ipldCar.distSrcReaderBrowserMod.CarReader] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(bytes.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.ipldCar.distSrcReaderBrowserMod.CarReader]]
     

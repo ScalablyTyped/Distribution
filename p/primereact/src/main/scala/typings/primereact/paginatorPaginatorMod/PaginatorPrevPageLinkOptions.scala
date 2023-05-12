@@ -7,18 +7,40 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Custom paginator prev page link options
+  */
 trait PaginatorPrevPageLinkOptions extends StObject {
   
+  /**
+    * Style class of the prev page link.
+    */
   var className: String
   
+  /**
+    * Whether the link is disabled.
+    */
   var disabled: Boolean
   
+  /**
+    * JSX element to be used as the prev page link.
+    */
   var element: Element
   
+  /**
+    * Icon classname of the prev page link.
+    */
   var iconClassName: String
   
+  /**
+    * Callback to invoke on click.
+    * @param {React.SyntheticEvent} event - Browser event.
+    */
   def onClick(event: SyntheticEvent[typings.std.Element, Event]): Unit
   
+  /**
+    * The props of Paginator component
+    */
   var props: PaginatorProps
 }
 object PaginatorPrevPageLinkOptions {

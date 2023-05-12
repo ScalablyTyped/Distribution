@@ -83,6 +83,11 @@ object mod {
   open class ClientClosedError ()
     extends typings.redis.mod.ClientClosedError
   
+  @JSImport("redis-mock", "ClientOfflineError")
+  @js.native
+  open class ClientOfflineError ()
+    extends typings.redis.mod.ClientOfflineError
+  
   @JSImport("redis-mock", "ConnectionTimeoutError")
   @js.native
   open class ConnectionTimeoutError ()
@@ -126,6 +131,18 @@ object mod {
   open class ReconnectStrategyError protected ()
     extends typings.redis.mod.ReconnectStrategyError {
     def this(originalError: js.Error, socketError: Any) = this()
+  }
+  
+  @JSImport("redis-mock", "RedisFlushModes")
+  @js.native
+  object RedisFlushModes extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.redisClient.distLibCommandsFlushallMod.RedisFlushModes & String] = js.native
+    
+    /* "ASYNC" */ val ASYNC: typings.redisClient.distLibCommandsFlushallMod.RedisFlushModes.ASYNC & String = js.native
+    
+    /* "SYNC" */ val SYNC: typings.redisClient.distLibCommandsFlushallMod.RedisFlushModes.SYNC & String = js.native
   }
   
   @JSImport("redis-mock", "RootNodesUnavailableError")

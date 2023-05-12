@@ -17,9 +17,9 @@ trait GameSessionConnectionInfo extends StObject {
   var GameSessionArn: js.UndefOr[ArnStringModel] = js.undefined
   
   /**
-    * The IP address of the game session. To connect to a GameLift game server, an app needs both the IP address and port number.
+    * The IP address of the game session. To connect to a Amazon GameLift game server, an app needs both the IP address and port number.
     */
-  var IpAddress: js.UndefOr[StringModel] = js.undefined
+  var IpAddress: js.UndefOr[typings.awsSdk.clientsGameliftMod.IpAddress] = js.undefined
   
   /**
     * A collection of player session IDs, one for each player ID that was included in the original matchmaking request. 
@@ -27,7 +27,7 @@ trait GameSessionConnectionInfo extends StObject {
   var MatchedPlayerSessions: js.UndefOr[MatchedPlayerSessionList] = js.undefined
   
   /**
-    * The port number for the game session. To connect to a GameLift game server, an app needs both the IP address and port number.
+    * The port number for the game session. To connect to a Amazon GameLift game server, an app needs both the IP address and port number.
     */
   var Port: js.UndefOr[PositiveInteger] = js.undefined
 }
@@ -49,7 +49,7 @@ object GameSessionConnectionInfo {
     
     inline def setGameSessionArnUndefined: Self = StObject.set(x, "GameSessionArn", js.undefined)
     
-    inline def setIpAddress(value: StringModel): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
+    inline def setIpAddress(value: IpAddress): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
     
     inline def setIpAddressUndefined: Self = StObject.set(x, "IpAddress", js.undefined)
     

@@ -6,32 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object collectionEventTypeMod {
   
-  @JSImport("ol/CollectionEventType", JSImport.Default)
-  @js.native
-  object default extends StObject {
+  object default {
     
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[CollectionEventType & String] = js.native
-    
-    /* "add" */ val ADD: typings.ol.collectionEventTypeMod.CollectionEventType.ADD & String = js.native
-    
-    /* "remove" */ val REMOVE: typings.ol.collectionEventTypeMod.CollectionEventType.REMOVE & String = js.native
-  }
-  
-  @js.native
-  sealed trait CollectionEventType extends StObject
-  @JSImport("ol/CollectionEventType", "CollectionEventType")
-  @js.native
-  object CollectionEventType extends StObject {
-    
+    @JSImport("ol/CollectionEventType", "default.ADD")
     @js.native
-    sealed trait ADD
-      extends StObject
-         with CollectionEventType
+    val ADD: String = js.native
     
+    @JSImport("ol/CollectionEventType", "default.REMOVE")
     @js.native
-    sealed trait REMOVE
-      extends StObject
-         with CollectionEventType
+    val REMOVE: String = js.native
   }
 }

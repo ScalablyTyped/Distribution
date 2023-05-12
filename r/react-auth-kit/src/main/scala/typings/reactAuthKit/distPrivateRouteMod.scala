@@ -9,6 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distPrivateRouteMod extends Shortcut {
   
+  /**
+    * Private Route for Components
+    *
+    * @remarks
+    * This Component is based on {@link https://reactrouter.com/web/api/Route | reactrouter.Route}.
+    * So you need to install react-route-dom before use it
+    *
+    * @param props
+    */
   @JSImport("react-auth-kit/dist/PrivateRoute", JSImport.Default)
   @js.native
   val default: FunctionComponent[RequireAuthProps] = js.native

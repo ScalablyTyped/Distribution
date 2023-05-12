@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "file-type" : "18.0.0"
+      "file-type" : "18.4.0"
     }
   ],
   "test-dependencies" : [
     {
-      "file-type" : "18.0.0"
+      "file-type" : "18.4.0"
     }
   ],
   "compile-devDependencies" : [

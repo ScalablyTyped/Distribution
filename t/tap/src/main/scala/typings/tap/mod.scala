@@ -583,6 +583,40 @@ object mod extends Shortcut {
         var hasFields_Original: Match = js.native
         
         /**
+          * Verify that the found object contains the provided property and that it is not undefined. Searches the prototype chain as well as "own" properties.
+          *
+          * @example t.hasProp({ a: 1, b: 2 }, 'a') would succeed, while both t.hasProp({ a: 1, b: 2 }, 'c') and t.hasProp({ a: undefined, b: 2 }, 'a') would fail.
+          */
+        def hasProp(found: Any, pattern: Any): Boolean = js.native
+        def hasProp(found: Any, pattern: Any, message: String): Boolean = js.native
+        def hasProp(found: Any, pattern: Any, message: String, extra: Assert): Boolean = js.native
+        def hasProp(found: Any, pattern: Any, message: Unit, extra: Assert): Boolean = js.native
+        /**
+          * Verify that the found object contains the provided property and that it is not undefined. Searches the prototype chain as well as "own" properties.
+          *
+          * @example t.hasProp({ a: 1, b: 2 }, 'a') would succeed, while both t.hasProp({ a: 1, b: 2 }, 'c') and t.hasProp({ a: undefined, b: 2 }, 'a') would fail.
+          */
+        @JSName("hasProp")
+        var hasProp_Original: Match = js.native
+        
+        /**
+          * Verifies that the object found contains each of the property names in propertyList, and that they are not undefined. Searches prototype chain as well as "own" properties.
+          *
+          * @example t.hasProps({ a: 1, b: 2 }, ['a', 'b']) would succeed, while both t.hasProp({ a: 1, b: 2 }, ['a', 'c']) and t.hasProp({ a: undefined, b: 2 }, ['a', 'b']) would fail.
+          */
+        def hasProps(found: Any, pattern: Any): Boolean = js.native
+        def hasProps(found: Any, pattern: Any, message: String): Boolean = js.native
+        def hasProps(found: Any, pattern: Any, message: String, extra: Assert): Boolean = js.native
+        def hasProps(found: Any, pattern: Any, message: Unit, extra: Assert): Boolean = js.native
+        /**
+          * Verifies that the object found contains each of the property names in propertyList, and that they are not undefined. Searches prototype chain as well as "own" properties.
+          *
+          * @example t.hasProps({ a: 1, b: 2 }, ['a', 'b']) would succeed, while both t.hasProp({ a: 1, b: 2 }, ['a', 'c']) and t.hasProp({ a: undefined, b: 2 }, ['a', 'b']) would fail.
+          */
+        @JSName("hasProps")
+        var hasProps_Original: Match = js.native
+        
+        /**
           * Verify that the found object contains all of the provided fields,
           * and that they are of the same type and value as the pattern provided.
           *

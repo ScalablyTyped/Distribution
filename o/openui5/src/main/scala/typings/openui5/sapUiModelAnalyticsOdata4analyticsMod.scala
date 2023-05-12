@@ -1828,7 +1828,11 @@ object sapUiModelAnalyticsOdata4analyticsMod extends Shortcut {
       /**
       * sorting order used for the condition
       */
-    sSortOrder: SortOrder
+    sSortOrder: SortOrder,
+      /**
+      * If there is already a sorter for that property, ignore this call.
+      */
+    bIgnoreIfAlreadySorted: Boolean
     ): SortExpression = js.native
     
     /**
@@ -1912,6 +1916,7 @@ object sapUiModelAnalyticsOdata4analyticsMod extends Shortcut {
   
   /**
     * @EXPERIMENTAL - This module is only for experimental use!
+    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * The OData4Analytics API is purely experimental, not yet functionally complete and not meant for productive
     * usage. At present, its only purpose is to demonstrate how easy analytical extensions of OData4SAP can

@@ -12,7 +12,7 @@ open class Token protected ()
   def this(props: TokenProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: TokenProps, context: Any) = this()
 }

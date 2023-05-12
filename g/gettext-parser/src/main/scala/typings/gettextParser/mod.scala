@@ -2,6 +2,7 @@ package typings.gettextParser
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.bufferMod.global.Buffer
+import typings.readableStream.mod.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ object mod {
   
   @JSImport("gettext-parser", "po")
   @js.native
-  val po: MoParser = js.native
+  val po: PoParser = js.native
   
   trait GetTextComment extends StObject {
     
@@ -140,8 +141,8 @@ object mod {
     def compile(table: GetTextTranslations): Buffer = js.native
     def compile(table: GetTextTranslations, options: Any): Buffer = js.native
     
-    def createParseStream(buffer: Any): Any = js.native
-    def createParseStream(buffer: Any, defaultCharset: String): Any = js.native
+    def createParseStream(buffer: Any): Transform = js.native
+    def createParseStream(buffer: Any, defaultCharset: String): Transform = js.native
     
     def parse(buffer: String): GetTextTranslations = js.native
     def parse(buffer: String, defaultCharset: String): GetTextTranslations = js.native

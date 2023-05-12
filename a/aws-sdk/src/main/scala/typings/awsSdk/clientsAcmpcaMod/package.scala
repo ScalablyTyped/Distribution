@@ -94,6 +94,8 @@ type CertificateChainBlob = Buffer | js.typedarray.Uint8Array | Blob | java.lang
 
 type CertificatePolicyList = js.Array[PolicyInformation]
 
+type CnameString = java.lang.String
+
 type CountryCodeString = java.lang.String
 
 type CsrBlob = Buffer | js.typedarray.Uint8Array | Blob | java.lang.String
@@ -190,6 +192,8 @@ type RevocationReason = _RevocationReason | java.lang.String
 
 type S3BucketName = java.lang.String
 
+type S3BucketName3To255 = java.lang.String
+
 type S3Key = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
@@ -225,8 +229,6 @@ type String256 = java.lang.String
 type String3 = java.lang.String
 
 type String39 = java.lang.String
-
-type String3To255 = java.lang.String
 
 type String40 = java.lang.String
 

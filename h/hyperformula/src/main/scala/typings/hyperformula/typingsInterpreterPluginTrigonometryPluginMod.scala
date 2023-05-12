@@ -1,10 +1,10 @@
 package typings.hyperformula
 
-import typings.hyperformula.anon.ACOS
 import typings.hyperformula.typingsInterpreterInterpreterMod.Interpreter
 import typings.hyperformula.typingsInterpreterInterpreterStateMod.InterpreterState
 import typings.hyperformula.typingsInterpreterInterpreterValueMod.InterpreterValue
 import typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.FunctionPlugin
+import typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.ImplementedFunctions
 import typings.hyperformula.typingsParserAstMod.ProcedureAst
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -77,7 +77,7 @@ object typingsInterpreterPluginTrigonometryPluginMod {
     
     @JSImport("hyperformula/typings/interpreter/plugin/TrigonometryPlugin", "TrigonometryPlugin.implementedFunctions")
     @js.native
-    def implementedFunctions: ACOS = js.native
-    inline def implementedFunctions_=(x: ACOS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("implementedFunctions")(x.asInstanceOf[js.Any])
+    def implementedFunctions: ImplementedFunctions = js.native
+    inline def implementedFunctions_=(x: ImplementedFunctions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("implementedFunctions")(x.asInstanceOf[js.Any])
   }
 }

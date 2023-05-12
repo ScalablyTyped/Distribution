@@ -1,12 +1,9 @@
 package typings.cypress.Cypress
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.cypress.anon.OmitCoreConfigOptionsinde
 import typings.cypress.anon.OpenMode
 import typings.cypress.cypressBooleans.`false`
 import typings.cypress.cypressStrings.bundled
-import typings.cypress.cypressStrings.off
-import typings.cypress.cypressStrings.on
 import typings.cypress.cypressStrings.system
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -32,7 +29,7 @@ trait UserConfigOptions[ComponentDevServerOpts] extends StObject {
   
   var downloadsFolder: String
   
-  var e2e: OmitCoreConfigOptionsinde
+  var e2e: EndToEndConfigOptions
   
   var env: StringDictionary[Any]
   
@@ -42,9 +39,11 @@ trait UserConfigOptions[ComponentDevServerOpts] extends StObject {
   
   var experimentalInteractiveRunEvents: Boolean
   
+  var experimentalMemoryManagement: Boolean
+  
   var experimentalModifyObstructiveThirdPartyCode: Boolean
   
-  var experimentalSessionAndOrigin: Boolean
+  var experimentalSkipDomainInjection: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   var experimentalSourceRewriting: Boolean
   
@@ -106,7 +105,7 @@ trait UserConfigOptions[ComponentDevServerOpts] extends StObject {
   
   var taskTimeout: Double
   
-  var testIsolation: js.UndefOr[Null | on | off] = js.undefined
+  var testIsolation: Boolean
   
   var trashAssetsBeforeRuns: Boolean
   
@@ -137,13 +136,13 @@ object UserConfigOptions {
     component: ComponentConfigOptions[ComponentDevServerOpts],
     defaultCommandTimeout: Double,
     downloadsFolder: String,
-    e2e: OmitCoreConfigOptionsinde,
+    e2e: EndToEndConfigOptions,
     env: StringDictionary[Any],
     execTimeout: Double,
     experimentalFetchPolyfill: Boolean,
     experimentalInteractiveRunEvents: Boolean,
+    experimentalMemoryManagement: Boolean,
     experimentalModifyObstructiveThirdPartyCode: Boolean,
-    experimentalSessionAndOrigin: Boolean,
     experimentalSourceRewriting: Boolean,
     experimentalStudio: Boolean,
     experimentalWebKitSupport: Boolean,
@@ -168,6 +167,7 @@ object UserConfigOptions {
     slowTestThreshold: Double,
     supportFolder: String,
     taskTimeout: Double,
+    testIsolation: Boolean,
     trashAssetsBeforeRuns: Boolean,
     video: Boolean,
     videoCompression: Double | `false`,
@@ -178,7 +178,7 @@ object UserConfigOptions {
     waitForAnimations: Boolean,
     watchForFileChanges: Boolean
   ): UserConfigOptions[ComponentDevServerOpts] = {
-    val __obj = js.Dynamic.literal(animationDistanceThreshold = animationDistanceThreshold.asInstanceOf[js.Any], chromeWebSecurity = chromeWebSecurity.asInstanceOf[js.Any], clientCertificates = clientCertificates.asInstanceOf[js.Any], component = component.asInstanceOf[js.Any], defaultCommandTimeout = defaultCommandTimeout.asInstanceOf[js.Any], downloadsFolder = downloadsFolder.asInstanceOf[js.Any], e2e = e2e.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], execTimeout = execTimeout.asInstanceOf[js.Any], experimentalFetchPolyfill = experimentalFetchPolyfill.asInstanceOf[js.Any], experimentalInteractiveRunEvents = experimentalInteractiveRunEvents.asInstanceOf[js.Any], experimentalModifyObstructiveThirdPartyCode = experimentalModifyObstructiveThirdPartyCode.asInstanceOf[js.Any], experimentalSessionAndOrigin = experimentalSessionAndOrigin.asInstanceOf[js.Any], experimentalSourceRewriting = experimentalSourceRewriting.asInstanceOf[js.Any], experimentalStudio = experimentalStudio.asInstanceOf[js.Any], experimentalWebKitSupport = experimentalWebKitSupport.asInstanceOf[js.Any], fileServerFolder = fileServerFolder.asInstanceOf[js.Any], fixturesFolder = fixturesFolder.asInstanceOf[js.Any], includeShadowDom = includeShadowDom.asInstanceOf[js.Any], modifyObstructiveCode = modifyObstructiveCode.asInstanceOf[js.Any], nodeVersion = nodeVersion.asInstanceOf[js.Any], numTestsKeptInMemory = numTestsKeptInMemory.asInstanceOf[js.Any], pageLoadTimeout = pageLoadTimeout.asInstanceOf[js.Any], redirectionLimit = redirectionLimit.asInstanceOf[js.Any], reporter = reporter.asInstanceOf[js.Any], reporterOptions = reporterOptions.asInstanceOf[js.Any], requestTimeout = requestTimeout.asInstanceOf[js.Any], resolvedNodePath = resolvedNodePath.asInstanceOf[js.Any], resolvedNodeVersion = resolvedNodeVersion.asInstanceOf[js.Any], responseTimeout = responseTimeout.asInstanceOf[js.Any], screenshotOnRunFailure = screenshotOnRunFailure.asInstanceOf[js.Any], screenshotsFolder = screenshotsFolder.asInstanceOf[js.Any], scrollBehavior = scrollBehavior.asInstanceOf[js.Any], setupNodeEvents = js.Any.fromFunction2(setupNodeEvents), slowTestThreshold = slowTestThreshold.asInstanceOf[js.Any], supportFolder = supportFolder.asInstanceOf[js.Any], taskTimeout = taskTimeout.asInstanceOf[js.Any], trashAssetsBeforeRuns = trashAssetsBeforeRuns.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], videoCompression = videoCompression.asInstanceOf[js.Any], videoUploadOnPasses = videoUploadOnPasses.asInstanceOf[js.Any], videosFolder = videosFolder.asInstanceOf[js.Any], viewportHeight = viewportHeight.asInstanceOf[js.Any], viewportWidth = viewportWidth.asInstanceOf[js.Any], waitForAnimations = waitForAnimations.asInstanceOf[js.Any], watchForFileChanges = watchForFileChanges.asInstanceOf[js.Any], retries = null)
+    val __obj = js.Dynamic.literal(animationDistanceThreshold = animationDistanceThreshold.asInstanceOf[js.Any], chromeWebSecurity = chromeWebSecurity.asInstanceOf[js.Any], clientCertificates = clientCertificates.asInstanceOf[js.Any], component = component.asInstanceOf[js.Any], defaultCommandTimeout = defaultCommandTimeout.asInstanceOf[js.Any], downloadsFolder = downloadsFolder.asInstanceOf[js.Any], e2e = e2e.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], execTimeout = execTimeout.asInstanceOf[js.Any], experimentalFetchPolyfill = experimentalFetchPolyfill.asInstanceOf[js.Any], experimentalInteractiveRunEvents = experimentalInteractiveRunEvents.asInstanceOf[js.Any], experimentalMemoryManagement = experimentalMemoryManagement.asInstanceOf[js.Any], experimentalModifyObstructiveThirdPartyCode = experimentalModifyObstructiveThirdPartyCode.asInstanceOf[js.Any], experimentalSourceRewriting = experimentalSourceRewriting.asInstanceOf[js.Any], experimentalStudio = experimentalStudio.asInstanceOf[js.Any], experimentalWebKitSupport = experimentalWebKitSupport.asInstanceOf[js.Any], fileServerFolder = fileServerFolder.asInstanceOf[js.Any], fixturesFolder = fixturesFolder.asInstanceOf[js.Any], includeShadowDom = includeShadowDom.asInstanceOf[js.Any], modifyObstructiveCode = modifyObstructiveCode.asInstanceOf[js.Any], nodeVersion = nodeVersion.asInstanceOf[js.Any], numTestsKeptInMemory = numTestsKeptInMemory.asInstanceOf[js.Any], pageLoadTimeout = pageLoadTimeout.asInstanceOf[js.Any], redirectionLimit = redirectionLimit.asInstanceOf[js.Any], reporter = reporter.asInstanceOf[js.Any], reporterOptions = reporterOptions.asInstanceOf[js.Any], requestTimeout = requestTimeout.asInstanceOf[js.Any], resolvedNodePath = resolvedNodePath.asInstanceOf[js.Any], resolvedNodeVersion = resolvedNodeVersion.asInstanceOf[js.Any], responseTimeout = responseTimeout.asInstanceOf[js.Any], screenshotOnRunFailure = screenshotOnRunFailure.asInstanceOf[js.Any], screenshotsFolder = screenshotsFolder.asInstanceOf[js.Any], scrollBehavior = scrollBehavior.asInstanceOf[js.Any], setupNodeEvents = js.Any.fromFunction2(setupNodeEvents), slowTestThreshold = slowTestThreshold.asInstanceOf[js.Any], supportFolder = supportFolder.asInstanceOf[js.Any], taskTimeout = taskTimeout.asInstanceOf[js.Any], testIsolation = testIsolation.asInstanceOf[js.Any], trashAssetsBeforeRuns = trashAssetsBeforeRuns.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], videoCompression = videoCompression.asInstanceOf[js.Any], videoUploadOnPasses = videoUploadOnPasses.asInstanceOf[js.Any], videosFolder = videosFolder.asInstanceOf[js.Any], viewportHeight = viewportHeight.asInstanceOf[js.Any], viewportWidth = viewportWidth.asInstanceOf[js.Any], waitForAnimations = waitForAnimations.asInstanceOf[js.Any], watchForFileChanges = watchForFileChanges.asInstanceOf[js.Any], retries = null)
     __obj.asInstanceOf[UserConfigOptions[ComponentDevServerOpts]]
   }
   
@@ -207,7 +207,7 @@ object UserConfigOptions {
     
     inline def setDownloadsFolder(value: String): Self = StObject.set(x, "downloadsFolder", value.asInstanceOf[js.Any])
     
-    inline def setE2e(value: OmitCoreConfigOptionsinde): Self = StObject.set(x, "e2e", value.asInstanceOf[js.Any])
+    inline def setE2e(value: EndToEndConfigOptions): Self = StObject.set(x, "e2e", value.asInstanceOf[js.Any])
     
     inline def setEnv(value: StringDictionary[Any]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
@@ -217,9 +217,17 @@ object UserConfigOptions {
     
     inline def setExperimentalInteractiveRunEvents(value: Boolean): Self = StObject.set(x, "experimentalInteractiveRunEvents", value.asInstanceOf[js.Any])
     
+    inline def setExperimentalMemoryManagement(value: Boolean): Self = StObject.set(x, "experimentalMemoryManagement", value.asInstanceOf[js.Any])
+    
     inline def setExperimentalModifyObstructiveThirdPartyCode(value: Boolean): Self = StObject.set(x, "experimentalModifyObstructiveThirdPartyCode", value.asInstanceOf[js.Any])
     
-    inline def setExperimentalSessionAndOrigin(value: Boolean): Self = StObject.set(x, "experimentalSessionAndOrigin", value.asInstanceOf[js.Any])
+    inline def setExperimentalSkipDomainInjection(value: js.Array[String]): Self = StObject.set(x, "experimentalSkipDomainInjection", value.asInstanceOf[js.Any])
+    
+    inline def setExperimentalSkipDomainInjectionNull: Self = StObject.set(x, "experimentalSkipDomainInjection", null)
+    
+    inline def setExperimentalSkipDomainInjectionUndefined: Self = StObject.set(x, "experimentalSkipDomainInjection", js.undefined)
+    
+    inline def setExperimentalSkipDomainInjectionVarargs(value: String*): Self = StObject.set(x, "experimentalSkipDomainInjection", js.Array(value*))
     
     inline def setExperimentalSourceRewriting(value: Boolean): Self = StObject.set(x, "experimentalSourceRewriting", value.asInstanceOf[js.Any])
     
@@ -287,11 +295,7 @@ object UserConfigOptions {
     
     inline def setTaskTimeout(value: Double): Self = StObject.set(x, "taskTimeout", value.asInstanceOf[js.Any])
     
-    inline def setTestIsolation(value: on | off): Self = StObject.set(x, "testIsolation", value.asInstanceOf[js.Any])
-    
-    inline def setTestIsolationNull: Self = StObject.set(x, "testIsolation", null)
-    
-    inline def setTestIsolationUndefined: Self = StObject.set(x, "testIsolation", js.undefined)
+    inline def setTestIsolation(value: Boolean): Self = StObject.set(x, "testIsolation", value.asInstanceOf[js.Any])
     
     inline def setTrashAssetsBeforeRuns(value: Boolean): Self = StObject.set(x, "trashAssetsBeforeRuns", value.asInstanceOf[js.Any])
     

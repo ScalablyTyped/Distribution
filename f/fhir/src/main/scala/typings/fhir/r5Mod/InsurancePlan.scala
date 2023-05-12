@@ -30,9 +30,9 @@ trait InsurancePlan
   var alias: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Where multiple contacts for the same purpose are provided there is a standard extension that can be used to determine which one is the preferred contact to use.
+    * The address/telecom use code 'home' are not to be used.
     */
-  var contact: js.UndefOr[js.Array[InsurancePlanContact]] = js.undefined
+  var contact: js.UndefOr[js.Array[ExtendedContactDetail]] = js.undefined
   
   /**
     * Details about the coverage offered by the insurance product.
@@ -113,11 +113,11 @@ object InsurancePlan {
     
     inline def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value*))
     
-    inline def setContact(value: js.Array[InsurancePlanContact]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
+    inline def setContact(value: js.Array[ExtendedContactDetail]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
     inline def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
     
-    inline def setContactVarargs(value: InsurancePlanContact*): Self = StObject.set(x, "contact", js.Array(value*))
+    inline def setContactVarargs(value: ExtendedContactDetail*): Self = StObject.set(x, "contact", js.Array(value*))
     
     inline def setCoverage(value: js.Array[InsurancePlanCoverage]): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
     

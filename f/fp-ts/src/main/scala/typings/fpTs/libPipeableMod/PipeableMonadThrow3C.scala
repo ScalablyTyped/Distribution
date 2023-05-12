@@ -1,7 +1,7 @@
 package typings.fpTs.libPipeableMod
 
 import typings.fpTs.libEitherMod.Either_
-import typings.fpTs.libFunctionMod.Lazy
+import typings.fpTs.libFunctionMod.LazyArg
 import typings.fpTs.libOptionMod.Option_
 import typings.fpTs.libPredicateMod.Predicate
 import typings.fpTs.libRefinementMod.Refinement
@@ -24,7 +24,7 @@ trait PipeableMonadThrow3C[F /* <: /* import warning: transforms.QualifyReferenc
   
   def fromEither[R, A](ma: Either_[E, A]): Any = js.native
   
-  def fromOption(onNone: Lazy[E]): js.Function1[
+  def fromOption(onNone: LazyArg[E]): js.Function1[
     /* ma */ Option_[Any], 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any
   ] = js.native

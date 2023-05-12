@@ -12,13 +12,21 @@ trait Draft extends StObject {
   /** @description The contents of the pull request. */
   var body: js.UndefOr[String] = js.undefined
   
-  /** @description Indicates whether the pull request is a draft. See "[Draft Pull Requests](https://docs.github.com/en/articles/about-pull-requests#draft-pull-requests)" in the GitHub Help documentation to learn more. */
+  /** @description Indicates whether the pull request is a draft. See "[Draft Pull Requests](https://docs.github.com/articles/about-pull-requests#draft-pull-requests)" in the GitHub Help documentation to learn more. */
   var draft: js.UndefOr[Boolean] = js.undefined
   
   /** @description The name of the branch where your changes are implemented. For cross-repository pull requests in the same network, namespace `head` with a user like this: `username:branch`. */
   var head: String
   
   /**
+    * Format: repo.nwo
+    * @description The name of the repository where the changes in the pull request were made. This field is required for cross-repository pull requests if both repositories are owned by the same organization.
+    * @example octo-org/octo-repo
+    */
+  var head_repo: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Format: int64
     * @description An issue in the repository to convert to a pull request. The issue title, body, and comments will become the title, body, and comments on the new pull request. Required unless `title` is specified.
     * @example 1
     */
@@ -51,6 +59,10 @@ object Draft {
     inline def setDraftUndefined: Self = StObject.set(x, "draft", js.undefined)
     
     inline def setHead(value: String): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+    
+    inline def setHead_repo(value: String): Self = StObject.set(x, "head_repo", value.asInstanceOf[js.Any])
+    
+    inline def setHead_repoUndefined: Self = StObject.set(x, "head_repo", js.undefined)
     
     inline def setIssue(value: Double): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
     

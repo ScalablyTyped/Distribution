@@ -15,7 +15,8 @@ object Min {
     __obj.asInstanceOf[Min]
   }
   
-  extension [Self <: Min](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Min] (val x: Self) extends AnyVal {
     
     inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
   }

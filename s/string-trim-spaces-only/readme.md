@@ -1,7 +1,7 @@
 
 # Scala.js typings for string-trim-spaces-only
 
-Typings are for version 4.1.6
+Typings are for version 5.0.7
 
 ## Library description:
 Like String.trim() but you can choose granularly what to trim

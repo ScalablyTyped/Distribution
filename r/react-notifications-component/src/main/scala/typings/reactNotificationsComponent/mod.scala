@@ -41,7 +41,7 @@ object mod {
     def this(props: ReactNotificationProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ReactNotificationProps, context: Any) = this()
   }

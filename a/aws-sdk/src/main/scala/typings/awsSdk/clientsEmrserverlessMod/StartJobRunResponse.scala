@@ -12,7 +12,7 @@ trait StartJobRunResponse extends StObject {
   var applicationId: ApplicationId
   
   /**
-    * The output lists the execution role ARN of the job run.
+    * This output displays the ARN of the job run..
     */
   var arn: JobArn
   

@@ -122,6 +122,8 @@ object sapUiUnifiedCalendarDateIntervalMod {
     extends typings.openui5.sapUiUnifiedCalendarMod.default {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * If more than this number of days are displayed, start and end month are displayed on the button.
       *
       * @returns The number of days to determine how the start and end of month are displayed
@@ -223,18 +225,14 @@ object sapUiUnifiedCalendarDateIntervalMod {
     bShowDayNamesLine: Boolean): this.type = js.native
     
     /**
-      * Sets a new value for property {@link #getStartDate startDate}.
+      * Set start date for the interval.
       *
-      * Start date of the Interval
-      *
-      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
-      *
-      * @returns Reference to `this` in order to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def setStartDate(/**
-      * New value for property `startDate`
+      * A JavaScript Date
       */
-    oStartDate: js.Object): this.type = js.native
+    oStartDate: js.Date): this.type = js.native
   }
   
   trait CalendarDateIntervalSettings

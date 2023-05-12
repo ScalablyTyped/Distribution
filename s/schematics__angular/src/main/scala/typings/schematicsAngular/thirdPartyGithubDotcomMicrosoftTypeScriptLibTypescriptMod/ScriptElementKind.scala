@@ -176,6 +176,13 @@ object ScriptElementKind extends StObject {
        with ScriptElementKind
   /* "local var" */ val localVariableElement: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ScriptElementKind.localVariableElement & java.lang.String = js.native
   
+  /** class X { [public|private]* accessor foo: number; } */
+  @js.native
+  sealed trait memberAccessorVariableElement
+    extends StObject
+       with ScriptElementKind
+  /* "accessor" */ val memberAccessorVariableElement: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ScriptElementKind.memberAccessorVariableElement & java.lang.String = js.native
+  
   /** class X { [public|private]* foo() {} } */
   @js.native
   sealed trait memberFunctionElement

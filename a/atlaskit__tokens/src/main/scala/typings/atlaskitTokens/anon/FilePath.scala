@@ -18,7 +18,7 @@ trait FilePath extends StObject {
   
   var path: js.Array[String]
   
-  var value: Double
+  var value: String
 }
 object FilePath {
   
@@ -29,7 +29,7 @@ object FilePath {
     name: String,
     original: Attributes,
     path: js.Array[String],
-    value: Double
+    value: String
   ): FilePath = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], isSource = isSource.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], original = original.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilePath]
@@ -52,6 +52,6 @@ object FilePath {
     
     inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value*))
     
-    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

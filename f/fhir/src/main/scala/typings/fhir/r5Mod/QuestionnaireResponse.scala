@@ -32,17 +32,17 @@ trait QuestionnaireResponse
   var authored: js.UndefOr[String] = js.undefined
   
   /**
-    * The order, proposal or plan that is fulfilled in whole or in part by this QuestionnaireResponse.  For example, a ServiceRequest seeking an intake assessment or a decision support recommendation to assess for post-partum depression.
+    * A plan, proposal or order that is fulfilled in whole or in part by this questionnaire response.  For example, a ServiceRequest seeking an intake assessment or a decision support recommendation to assess for post-partum depression.
     */
   var basedOn: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * This will typically be the encounter the event occurred within, but some activities may be initiated prior to or after the official completion of an encounter but still be tied to the context of the encounter. A questionnaire that was initiated during an encounter but not fully completed during the encounter would still generally be associated with the encounter.
+    * This will typically be the encounter the questionnaire response was created during, but some questionnaire responses may be initiated prior to or after the official completion of an encounter but still be tied to the context of the encounter (e.g. pre-admission forms).  A questionnaire that was initiated during an encounter but not fully completed during the encounter would still generally be associated with the encounter.
     */
   var encounter: js.UndefOr[Reference] = js.undefined
   
   /**
-    * A business identifier assigned to a particular completed (or partially completed) questionnaire.
+    * Note: This is a business identifier, not a resource identifier (see [discussion](resource.html#identifiers)).
     */
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
@@ -52,14 +52,15 @@ trait QuestionnaireResponse
   var item: js.UndefOr[js.Array[QuestionnaireResponseItem]] = js.undefined
   
   /**
-    * Composition of questionnaire responses will be handled by the parent questionnaire having answers that reference the child questionnaire.  For relationships to referrals, and other types of requests, use basedOn.
+    * Not to be used to link an questionnaire response to an Encounter - use 'context' for that.
+    * Composition of questionnaire responses will be handled using the Assemble operation defined in the SDC IG.  For relationships to referrals, and other types of requests, use basedOn.
     */
   var partOf: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * If a QuestionnaireResponse references a Questionnaire, then the QuestionnaireResponse structure must be consistent with the Questionnaire (i.e. questions must be organized into the same groups, nested questions must still be nested, etc.).
+    * If a QuestionnaireResponse references a Questionnaire that can be resolved, then the QuestionnaireResponse structure must be consistent with the Questionnaire (i.e. questions must be organized into the same groups, nested questions must still be nested, etc.).  It is possible to have a QuestionnaireResponse whose 'questionnaire' element does not resolve.  It is also possible for the questionnaire element to not have a value but only extensions (e.g. conveying the title or identifier for the questionnaire).  This may happen for legacy data.  If there is no formally defined Questionnaire, it is undefined what the 'correct' values for the linkId elements should be and it is possible that linkIds might be inconsistent for QuestionnaireResponses for the same form if captured by distinct systems.
     */
-  var questionnaire: js.UndefOr[String] = js.undefined
+  var questionnaire: String
   
   /** Resource Type Name (for serialization) */
   @JSName("resourceType")
@@ -71,7 +72,7 @@ trait QuestionnaireResponse
   var source: js.UndefOr[Reference] = js.undefined
   
   /**
-    * This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.
+    * Unknown does not represent "other" - one of the defined statuses must apply.  Unknown is used when the authoring system is not sure what the current status is.
     */
   var status: `in-progress` | completed | amended | `entered-in-error` | stopped
   
@@ -82,8 +83,8 @@ trait QuestionnaireResponse
 }
 object QuestionnaireResponse {
   
-  inline def apply(status: `in-progress` | completed | amended | `entered-in-error` | stopped): QuestionnaireResponse = {
-    val __obj = js.Dynamic.literal(resourceType = "QuestionnaireResponse", status = status.asInstanceOf[js.Any])
+  inline def apply(questionnaire: String, status: `in-progress` | completed | amended | `entered-in-error` | stopped): QuestionnaireResponse = {
+    val __obj = js.Dynamic.literal(questionnaire = questionnaire.asInstanceOf[js.Any], resourceType = "QuestionnaireResponse", status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuestionnaireResponse]
   }
   
@@ -127,8 +128,6 @@ object QuestionnaireResponse {
     inline def setPartOfVarargs(value: Reference*): Self = StObject.set(x, "partOf", js.Array(value*))
     
     inline def setQuestionnaire(value: String): Self = StObject.set(x, "questionnaire", value.asInstanceOf[js.Any])
-    
-    inline def setQuestionnaireUndefined: Self = StObject.set(x, "questionnaire", js.undefined)
     
     inline def setResourceType(value: typings.fhir.fhirStrings.QuestionnaireResponse): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     

@@ -6,10 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object constants {
   
-  @JSImport("crypto", "constants.ALPN_ENABLED")
-  @js.native
-  val ALPN_ENABLED: Double = js.native
-  
   @JSImport("crypto", "constants.DH_CHECK_P_NOT_PRIME")
   @js.native
   val DH_CHECK_P_NOT_PRIME: Double = js.native
@@ -70,7 +66,7 @@ object constants {
   @js.native
   val ENGINE_METHOD_RSA: Double = js.native
   
-  // https://nodejs.org/dist/latest-v10.x/docs/api/crypto.html#crypto_crypto_constants
+  // https://nodejs.org/dist/latest-v20.x/docs/api/crypto.html#crypto-constants
   @JSImport("crypto", "constants.OPENSSL_VERSION_NUMBER")
   @js.native
   val OPENSSL_VERSION_NUMBER: Double = js.native
@@ -181,44 +177,10 @@ object constants {
   @js.native
   val SSL_OP_DONT_INSERT_EMPTY_FRAGMENTS: Double = js.native
   
-  /** Instructs OpenSSL to always use the tmp_rsa key when performing RSA operations. */
-  @JSImport("crypto", "constants.SSL_OP_EPHEMERAL_RSA")
-  @js.native
-  val SSL_OP_EPHEMERAL_RSA: Double = js.native
-  
   /** Allows initial connection to servers that do not support RI. */
   @JSImport("crypto", "constants.SSL_OP_LEGACY_SERVER_CONNECT")
   @js.native
   val SSL_OP_LEGACY_SERVER_CONNECT: Double = js.native
-  
-  @JSImport("crypto", "constants.SSL_OP_MICROSOFT_BIG_SSLV3_BUFFER")
-  @js.native
-  val SSL_OP_MICROSOFT_BIG_SSLV3_BUFFER: Double = js.native
-  
-  @JSImport("crypto", "constants.SSL_OP_MICROSOFT_SESS_ID_BUG")
-  @js.native
-  val SSL_OP_MICROSOFT_SESS_ID_BUG: Double = js.native
-  
-  /** Instructs OpenSSL to disable the workaround for a man-in-the-middle protocol-version vulnerability in the SSL 2.0 server implementation. */
-  @JSImport("crypto", "constants.SSL_OP_MSIE_SSLV2_RSA_PADDING")
-  @js.native
-  val SSL_OP_MSIE_SSLV2_RSA_PADDING: Double = js.native
-  
-  @JSImport("crypto", "constants.SSL_OP_NETSCAPE_CA_DN_BUG")
-  @js.native
-  val SSL_OP_NETSCAPE_CA_DN_BUG: Double = js.native
-  
-  @JSImport("crypto", "constants.SSL_OP_NETSCAPE_CHALLENGE_BUG")
-  @js.native
-  val SSL_OP_NETSCAPE_CHALLENGE_BUG: Double = js.native
-  
-  @JSImport("crypto", "constants.SSL_OP_NETSCAPE_DEMO_CIPHER_CHANGE_BUG")
-  @js.native
-  val SSL_OP_NETSCAPE_DEMO_CIPHER_CHANGE_BUG: Double = js.native
-  
-  @JSImport("crypto", "constants.SSL_OP_NETSCAPE_REUSE_CIPHER_CHANGE_BUG")
-  @js.native
-  val SSL_OP_NETSCAPE_REUSE_CIPHER_CHANGE_BUG: Double = js.native
   
   /** Instructs OpenSSL to disable support for SSL/TLS compression. */
   @JSImport("crypto", "constants.SSL_OP_NO_COMPRESSION")
@@ -237,40 +199,6 @@ object constants {
   @JSImport("crypto", "constants.SSL_OP_NO_TICKET")
   @js.native
   val SSL_OP_NO_TICKET: Double = js.native
-  
-  @JSImport("crypto", "constants.SSL_OP_PKCS1_CHECK_1")
-  @js.native
-  val SSL_OP_PKCS1_CHECK_1: Double = js.native
-  
-  @JSImport("crypto", "constants.SSL_OP_PKCS1_CHECK_2")
-  @js.native
-  val SSL_OP_PKCS1_CHECK_2: Double = js.native
-  
-  /** Instructs OpenSSL to always create a new key when using temporary/ephemeral DH parameters. */
-  @JSImport("crypto", "constants.SSL_OP_SINGLE_DH_USE")
-  @js.native
-  val SSL_OP_SINGLE_DH_USE: Double = js.native
-  
-  /** Instructs OpenSSL to always create a new key when using temporary/ephemeral ECDH parameters. */
-  @JSImport("crypto", "constants.SSL_OP_SINGLE_ECDH_USE")
-  @js.native
-  val SSL_OP_SINGLE_ECDH_USE: Double = js.native
-  
-  @JSImport("crypto", "constants.SSL_OP_SSLEAY_080_CLIENT_DH_BUG")
-  @js.native
-  val SSL_OP_SSLEAY_080_CLIENT_DH_BUG: Double = js.native
-  
-  @JSImport("crypto", "constants.SSL_OP_SSLREF2_REUSE_CERT_TYPE_BUG")
-  @js.native
-  val SSL_OP_SSLREF2_REUSE_CERT_TYPE_BUG: Double = js.native
-  
-  @JSImport("crypto", "constants.SSL_OP_TLS_BLOCK_PADDING_BUG")
-  @js.native
-  val SSL_OP_TLS_BLOCK_PADDING_BUG: Double = js.native
-  
-  @JSImport("crypto", "constants.SSL_OP_TLS_D5_BUG")
-  @js.native
-  val SSL_OP_TLS_D5_BUG: Double = js.native
   
   /** Instructs OpenSSL to disable version rollback attack detection. */
   @JSImport("crypto", "constants.SSL_OP_TLS_ROLLBACK_BUG")

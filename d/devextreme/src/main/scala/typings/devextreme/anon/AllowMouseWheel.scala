@@ -26,7 +26,7 @@ trait AllowMouseWheel extends StObject {
   /**
     * Configures the box that appears when users zoom the chart by selecting an area with the drag gesture. Applies only if dragToZoom is true.
     */
-  var dragBoxStyle: js.UndefOr[`4`] = js.undefined
+  var dragBoxStyle: js.UndefOr[`5`] = js.undefined
   
   /**
     * Enables users to zoom the chart by selecting an area with the drag gesture. Applies only on devices that use a mouse.
@@ -65,7 +65,7 @@ object AllowMouseWheel {
     
     inline def setArgumentAxisUndefined: Self = StObject.set(x, "argumentAxis", js.undefined)
     
-    inline def setDragBoxStyle(value: `4`): Self = StObject.set(x, "dragBoxStyle", value.asInstanceOf[js.Any])
+    inline def setDragBoxStyle(value: `5`): Self = StObject.set(x, "dragBoxStyle", value.asInstanceOf[js.Any])
     
     inline def setDragBoxStyleUndefined: Self = StObject.set(x, "dragBoxStyle", js.undefined)
     

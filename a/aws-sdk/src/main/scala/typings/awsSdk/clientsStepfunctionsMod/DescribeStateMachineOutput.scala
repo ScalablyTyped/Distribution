@@ -16,6 +16,11 @@ trait DescribeStateMachineOutput extends StObject {
     */
   var definition: Definition
   
+  /**
+    * A user-defined or an auto-generated string that identifies a Map state. This parameter is present only if the stateMachineArn specified in input is a qualified state machine ARN.
+    */
+  var label: js.UndefOr[MapRunLabel] = js.undefined
+  
   var loggingConfiguration: js.UndefOr[LoggingConfiguration] = js.undefined
   
   /**
@@ -24,7 +29,7 @@ trait DescribeStateMachineOutput extends StObject {
   var name: Name
   
   /**
-    * The Amazon Resource Name (ARN) of the IAM role used when creating this state machine. (The IAM role maintains security by granting Step Functions access to AWS resources.)
+    * The Amazon Resource Name (ARN) of the IAM role used when creating this state machine. (The IAM role maintains security by granting Step Functions access to Amazon Web Services resources.)
     */
   var roleArn: Arn
   
@@ -39,7 +44,7 @@ trait DescribeStateMachineOutput extends StObject {
   var status: js.UndefOr[StateMachineStatus] = js.undefined
   
   /**
-    * Selects whether AWS X-Ray tracing is enabled.
+    * Selects whether X-Ray tracing is enabled.
     */
   var tracingConfiguration: js.UndefOr[TracingConfiguration] = js.undefined
   
@@ -69,6 +74,10 @@ object DescribeStateMachineOutput {
     inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     inline def setDefinition(value: Definition): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    
+    inline def setLabel(value: MapRunLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     inline def setLoggingConfiguration(value: LoggingConfiguration): Self = StObject.set(x, "loggingConfiguration", value.asInstanceOf[js.Any])
     

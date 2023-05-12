@@ -6,7 +6,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Not allowed in: Content scripts, Devtools pages */
+/**
+  * Not supported on manifest versions above 2.
+  *
+  * Not allowed in: Content scripts, Devtools pages
+  */
 object contentScripts {
   
   @JSGlobal("browser.contentScripts")

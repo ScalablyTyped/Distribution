@@ -23,7 +23,6 @@ import typings.leafletDraw.leafletDrawStrings.drawColonmarkercontext
 import typings.leafletDraw.leafletDrawStrings.drawColontoolbarclosed
 import typings.leafletDraw.leafletDrawStrings.drawColontoolbaropened
 import typings.leafletDraw.leafletMod.DrawOptions.CircleOptions
-import typings.leafletDraw.leafletMod.DrawOptions.EditHandlerOptions
 import typings.leafletDraw.leafletMod.DrawOptions.MarkerOptions
 import typings.leafletDraw.leafletMod.DrawOptions.PolygonOptions
 import typings.leafletDraw.leafletMod.DrawOptions.PolylineOptions
@@ -121,13 +120,11 @@ object Draw {
   open class Feature protected () extends Handler {
     def this(map: Map_) = this()
     
-    def initialize(map: DrawMap, options: EditHandlerOptions): Unit = js.native
     def initialize(map: DrawMap, options: MarkerOptions): Unit = js.native
     def initialize(map: DrawMap, options: PolygonOptions): Unit = js.native
     def initialize(map: DrawMap, options: PolylineOptions): Unit = js.native
     def initialize(map: DrawMap, options: RectangleOptions): Unit = js.native
     
-    def setOptions(options: EditHandlerOptions): Unit = js.native
     def setOptions(options: MarkerOptions): Unit = js.native
     def setOptions(options: PolygonOptions): Unit = js.native
     def setOptions(options: PolylineOptions): Unit = js.native

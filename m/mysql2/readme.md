@@ -1,7 +1,7 @@
 
 # Scala.js typings for mysql2
 
-Typings are for version 2.3.3
+Typings are for version 3.3.1
 
 ## Library description:
 fast mysql driver. Implements core protocol, prepared statements, ssl and compression in native JS

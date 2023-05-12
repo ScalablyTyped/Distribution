@@ -22,7 +22,7 @@ open class Layer () extends StObject {
   def this(options: js.Object) = this()
   
   /**
-    * @param {MeshInstance[]} drawCalls - Array of mesh instances.
+    * @param {import('./mesh-instance.js').MeshInstance[]} drawCalls - Array of mesh instances.
     * @param {number} drawCallsCount - Number of mesh instances.
     * @param {Vec3} camPos - Camera position.
     * @param {Vec3} camFwd - Camera forward vector.
@@ -51,7 +51,7 @@ open class Layer () extends StObject {
   /**
     * Set of light used by clustered lighting (omni and spot, but no directional).
     *
-    * @type {Set<Light>}
+    * @type {Set<import('./light.js').Light>}
     * @private
     */
   /* private */ var _clusteredLightsSet: Any = js.native
@@ -82,13 +82,13 @@ open class Layer () extends StObject {
   var _lightHash: Double = js.native
   
   /**
-    * @type {Light[]}
+    * @type {import('./light.js').Light[]}
     * @private
     */
   /* private */ var _lights: Any = js.native
   
   /**
-    * @type {Set<Light>}
+    * @type {Set<import('./light.js').Light>}
     * @private
     */
   /* private */ var _lightsSet: Any = js.native
@@ -101,12 +101,6 @@ open class Layer () extends StObject {
     */
   /* private */ var _refCounter: Any = js.native
   
-  /**
-    * @type {RenderTarget}
-    * @private
-    */
-  /* private */ var _renderTarget: Any = js.native
-  
   var _renderTime: Double = js.native
   
   var _shaderVersion: Double = js.native
@@ -117,7 +111,8 @@ open class Layer () extends StObject {
   
   /**
     * @param {boolean} transparent - True if transparent sorting should be used.
-    * @param {GraphNode} cameraNode - Graph node that the camera is attached to.
+    * @param {import('./graph-node.js').GraphNode} cameraNode - Graph node that the camera is
+    * attached to.
     * @param {number} cameraPass - Camera pass.
     * @ignore
     */
@@ -126,7 +121,7 @@ open class Layer () extends StObject {
   /**
     * Lights separated by light type.
     *
-    * @type {Light[][]}
+    * @type {import('./light.js').Light[][]}
     * @ignore
     */
   var _splitLights: js.Array[js.Array[Light]] = js.native
@@ -138,14 +133,16 @@ open class Layer () extends StObject {
   /**
     * Adds a camera to this layer.
     *
-    * @param {CameraComponent} camera - A {@link CameraComponent}.
+    * @param {import('../framework/components/camera/component.js').CameraComponent} camera - A
+    * {@link CameraComponent}.
     */
   def addCamera(camera: CameraComponent): Unit = js.native
   
   /**
     * Adds a light to this layer.
     *
-    * @param {LightComponent} light - A {@link LightComponent}.
+    * @param {import('../framework/components/light/component.js').LightComponent} light - A
+    * {@link LightComponent}.
     */
   def addLight(light: LightComponent): Unit = js.native
   
@@ -153,7 +150,8 @@ open class Layer () extends StObject {
     * Adds an array of mesh instances to this layer.
     *1
     *
-    * @param {MeshInstance[]} meshInstances - Array of {@link MeshInstance}.
+    * @param {import('./mesh-instance.js').MeshInstance[]} meshInstances - Array of
+    * {@link MeshInstance}.
     * @param {boolean} [skipShadowCasters] - Set it to true if you don't want these mesh instances
     * to cast shadows in this layer.
     */
@@ -164,12 +162,13 @@ open class Layer () extends StObject {
     * Adds an array of mesh instances to this layer, but only as shadow casters (they will not be
     * rendered anywhere, but only cast shadows on other objects).
     *
-    * @param {MeshInstance[]} meshInstances - Array of {@link MeshInstance}.
+    * @param {import('./mesh-instance.js').MeshInstance[]} meshInstances - Array of
+    * {@link MeshInstance}.
     */
   def addShadowCasters(meshInstances: js.Array[MeshInstance]): Unit = js.native
   
   /**
-    * @type {CameraComponent[]}
+    * @type {import('../framework/components/camera/component.js').CameraComponent[]}
     * @ignore
     */
   var cameras: js.Array[CameraComponent] = js.native
@@ -220,7 +219,7 @@ open class Layer () extends StObject {
   /**
     * Returns lights used by clustered lighting in a set.
     *
-    * @type {Set<Light>}
+    * @type {Set<import('./light.js').Light>}
     * @ignore
     */
   def clusteredLightsSet: Set[Light] = js.native
@@ -432,7 +431,7 @@ open class Layer () extends StObject {
   var onPreRenderTransparent: js.Function = js.native
   
   /**
-    * @type {MeshInstance[]}
+    * @type {import('./mesh-instance.js').MeshInstance[]}
     * @ignore
     */
   var opaqueMeshInstances: js.Array[MeshInstance] = js.native
@@ -465,22 +464,25 @@ open class Layer () extends StObject {
   /**
     * Removes a camera from this layer.
     *
-    * @param {CameraComponent} camera - A {@link CameraComponent}.
+    * @param {import('../framework/components/camera/component.js').CameraComponent} camera - A
+    * {@link CameraComponent}.
     */
   def removeCamera(camera: CameraComponent): Unit = js.native
   
   /**
     * Removes a light from this layer.
     *
-    * @param {LightComponent} light - A {@link LightComponent}.
+    * @param {import('../framework/components/light/component.js').LightComponent} light - A
+    * {@link LightComponent}.
     */
   def removeLight(light: LightComponent): Unit = js.native
   
   /**
     * Internal function to remove a mesh instance from an array.
     *
-    * @param {MeshInstance} m - Mesh instance to remove.
-    * @param {MeshInstance[]} arr - Array of mesh instances to remove from.
+    * @param {import('./mesh-instance.js').MeshInstance} m - Mesh instance to remove.
+    * @param {import('./mesh-instance.js').MeshInstance[]} arr - Array of mesh instances to remove
+    * from.
     * @private
     */
   /* private */ var removeMeshInstanceFromArray: Any = js.native
@@ -488,8 +490,8 @@ open class Layer () extends StObject {
   /**
     * Removes multiple mesh instances from this layer.
     *
-    * @param {MeshInstance[]} meshInstances - Array of {@link MeshInstance}. If they were added to
-    * this layer, they will be removed.
+    * @param {import('./mesh-instance.js').MeshInstance[]} meshInstances - Array of
+    * {@link MeshInstance}. If they were added to this layer, they will be removed.
     * @param {boolean} [skipShadowCasters] - Set it to true if you want to still cast shadows from
     * removed mesh instances or if they never did cast shadows before.
     */
@@ -500,17 +502,12 @@ open class Layer () extends StObject {
     * Removes multiple mesh instances from the shadow casters list of this layer, meaning they
     * will stop casting shadows.
     *
-    * @param {MeshInstance[]} meshInstances - Array of {@link MeshInstance}. If they were added to
-    * this layer, they will be removed.
+    * @param {import('./mesh-instance.js').MeshInstance[]} meshInstances - Array of
+    * {@link MeshInstance}. If they were added to this layer, they will be removed.
     */
   def removeShadowCasters(meshInstances: js.Array[MeshInstance]): Unit = js.native
   
-  def renderTarget: RenderTarget = js.native
-  /**
-    * @type {RenderTarget}
-    * @ignore
-    */
-  def renderTarget_=(arg: RenderTarget): Unit = js.native
+  var renderTarget: Any = js.native
   
   /**
     * A type of shader to use during rendering. Possible values are:
@@ -528,7 +525,7 @@ open class Layer () extends StObject {
   var shaderPass: Double = js.native
   
   /**
-    * @type {MeshInstance[]}
+    * @type {import('./mesh-instance.js').MeshInstance[]}
     * @ignore
     */
   var shadowCasters: js.Array[MeshInstance] = js.native
@@ -536,7 +533,7 @@ open class Layer () extends StObject {
   var skipRenderAfter: Double = js.native
   
   /**
-    * @type {MeshInstance[]}
+    * @type {import('./mesh-instance.js').MeshInstance[]}
     * @ignore
     */
   var transparentMeshInstances: js.Array[MeshInstance] = js.native

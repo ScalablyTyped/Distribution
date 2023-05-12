@@ -21,6 +21,8 @@ object mod {
     
     /* private */ var _del: Any = js.native
     
+    /* private */ var _encode: Any = js.native
+    
     /**
       * Adds a socket to a list of room.
       *
@@ -131,6 +133,18 @@ object mod {
     
     val nsp: Any = js.native
     
+    /**
+      * Save the client session in order to restore it upon reconnection.
+      */
+    def persistSession(session: SessionToPersist): Unit = js.native
+    
+    /**
+      * Restore the session and find the packets that were missed by the client.
+      * @param pid
+      * @param offset
+      */
+    def restoreSession(pid: PrivateSessionId, offset: String): js.Promise[Session] = js.native
+    
     var rooms: Map[Room, Set[SocketId]] = js.native
     
     /**
@@ -161,6 +175,18 @@ object mod {
       * @param {Set<Room>} rooms   the explicit set of rooms to check.
       */
     def sockets(rooms: Set[Room]): js.Promise[Set[SocketId]] = js.native
+  }
+  
+  @JSImport("socket.io-adapter", "SessionAwareAdapter")
+  @js.native
+  open class SessionAwareAdapter protected () extends Adapter {
+    def this(nsp: Any) = this()
+    
+    /* private */ val maxDisconnectionDuration: Any = js.native
+    
+    /* private */ var packets: Any = js.native
+    
+    /* private */ var sessions: Any = js.native
   }
   
   trait BroadcastFlags extends StObject {
@@ -215,7 +241,7 @@ object mod {
   
   trait BroadcastOptions extends StObject {
     
-    var except: js.UndefOr[Set[SocketId]] = js.undefined
+    var except: js.UndefOr[Set[Room]] = js.undefined
     
     var flags: js.UndefOr[BroadcastFlags] = js.undefined
     
@@ -231,7 +257,7 @@ object mod {
     @scala.inline
     implicit open class MutableBuilder[Self <: BroadcastOptions] (val x: Self) extends AnyVal {
       
-      inline def setExcept(value: Set[SocketId]): Self = StObject.set(x, "except", value.asInstanceOf[js.Any])
+      inline def setExcept(value: Set[Room]): Self = StObject.set(x, "except", value.asInstanceOf[js.Any])
       
       inline def setExceptUndefined: Self = StObject.set(x, "except", js.undefined)
       
@@ -243,7 +269,69 @@ object mod {
     }
   }
   
+  type PrivateSessionId = String
+  
   type Room = String
+  
+  trait Session
+    extends StObject
+       with SessionToPersist {
+    
+    var missedPackets: js.Array[js.Array[Any]]
+  }
+  object Session {
+    
+    inline def apply(
+      data: Any,
+      missedPackets: js.Array[js.Array[Any]],
+      pid: PrivateSessionId,
+      rooms: js.Array[Room],
+      sid: SocketId
+    ): Session = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], missedPackets = missedPackets.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], rooms = rooms.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Session]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Session] (val x: Self) extends AnyVal {
+      
+      inline def setMissedPackets(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "missedPackets", value.asInstanceOf[js.Any])
+      
+      inline def setMissedPacketsVarargs(value: js.Array[Any]*): Self = StObject.set(x, "missedPackets", js.Array(value*))
+    }
+  }
+  
+  trait SessionToPersist extends StObject {
+    
+    var data: Any
+    
+    var pid: PrivateSessionId
+    
+    var rooms: js.Array[Room]
+    
+    var sid: SocketId
+  }
+  object SessionToPersist {
+    
+    inline def apply(data: Any, pid: PrivateSessionId, rooms: js.Array[Room], sid: SocketId): SessionToPersist = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], rooms = rooms.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SessionToPersist]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionToPersist] (val x: Self) extends AnyVal {
+      
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setPid(value: PrivateSessionId): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+      
+      inline def setRooms(value: js.Array[Room]): Self = StObject.set(x, "rooms", value.asInstanceOf[js.Any])
+      
+      inline def setRoomsVarargs(value: Room*): Self = StObject.set(x, "rooms", js.Array(value*))
+      
+      inline def setSid(value: SocketId): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
+    }
+  }
   
   type SocketId = String
 }

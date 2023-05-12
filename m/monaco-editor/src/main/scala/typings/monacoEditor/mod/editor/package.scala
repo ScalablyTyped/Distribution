@@ -17,6 +17,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
+inline def EditorZoom: IEditorZoom = ^.asInstanceOf[js.Dynamic].selectDynamic("EditorZoom").asInstanceOf[IEditorZoom]
+
 inline def addCommand(descriptor: ICommandDescriptor): IDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("addCommand")(descriptor.asInstanceOf[js.Any]).asInstanceOf[IDisposable]
 
 inline def addEditorAction(descriptor: IActionDescriptor): IDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("addEditorAction")(descriptor.asInstanceOf[js.Any]).asInstanceOf[IDisposable]
@@ -86,11 +88,15 @@ inline def onWillDisposeModel(listener: js.Function1[/* model */ ITextModel, Uni
 
 inline def registerCommand(id: String, handler: js.Function2[/* accessor */ Any, /* repeated */ Any, Unit]): IDisposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCommand")(id.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[IDisposable]
 
+inline def registerEditorOpener(opener: ICodeEditorOpener): IDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("registerEditorOpener")(opener.asInstanceOf[js.Any]).asInstanceOf[IDisposable]
+
+inline def registerLinkOpener(opener: ILinkOpener): IDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("registerLinkOpener")(opener.asInstanceOf[js.Any]).asInstanceOf[IDisposable]
+
 inline def remeasureFonts(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remeasureFonts")().asInstanceOf[Unit]
 
 inline def removeAllMarkers(owner: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllMarkers")(owner.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def setModelLanguage(model: ITextModel, languageId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setModelLanguage")(model.asInstanceOf[js.Any], languageId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def setModelLanguage(model: ITextModel, mimeTypeOrLanguageId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setModelLanguage")(model.asInstanceOf[js.Any], mimeTypeOrLanguageId.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def setModelMarkers(model: ITextModel, owner: String, markers: js.Array[IMarkerData]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setModelMarkers")(model.asInstanceOf[js.Any], owner.asInstanceOf[js.Any], markers.asInstanceOf[js.Any])).asInstanceOf[Unit]
 

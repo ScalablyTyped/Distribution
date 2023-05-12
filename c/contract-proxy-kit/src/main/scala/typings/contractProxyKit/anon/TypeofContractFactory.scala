@@ -2,12 +2,9 @@ package typings.contractProxyKit.anon
 
 import org.scalablytyped.runtime.Instantiable2
 import typings.ethers.mod.ethers.ContractFactory
-import typings.ethersprojectAbi.mod.Interface
-import typings.ethersprojectAbstractSigner.mod.Signer
-import typings.ethersprojectBytes.mod.BytesLike
-import typings.ethersprojectContracts.anon.Nonce
-import typings.ethersprojectContracts.mod.Contract
-import typings.ethersprojectContracts.mod.ContractInterface
+import typings.ethers.typesAbiMod.Interface
+import typings.ethers.typesProvidersContractsMod.ContractRunner
+import typings.ethers.typesUtilsDataMod.BytesLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,15 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TypeofContractFactory
   extends StObject
-     with Instantiable2[/* contractInterface */ ContractInterface, /* bytecode */ BytesLike, ContractFactory] {
+     with Instantiable2[
+      /* abi */ Interface, 
+      /* bytecode */ BytesLike, 
+      ContractFactory[js.Array[Any], js.Object]
+    ] {
   
-  def fromSolidity(compilerOutput: Any): typings.ethersprojectContracts.mod.ContractFactory = js.native
-  def fromSolidity(compilerOutput: Any, signer: Signer): typings.ethersprojectContracts.mod.ContractFactory = js.native
-  
-  def getContract(address: String, contractInterface: ContractInterface): Contract = js.native
-  def getContract(address: String, contractInterface: ContractInterface, signer: Signer): Contract = js.native
-  
-  def getContractAddress(tx: Nonce): String = js.native
-  
-  def getInterface(contractInterface: ContractInterface): Interface = js.native
+  def fromSolidity[A /* <: js.Array[Any] */, I](output: Any): typings.ethers.typesContractFactoryMod.ContractFactory[A, I] = js.native
+  def fromSolidity[A /* <: js.Array[Any] */, I](output: Any, runner: ContractRunner): typings.ethers.typesContractFactoryMod.ContractFactory[A, I] = js.native
 }

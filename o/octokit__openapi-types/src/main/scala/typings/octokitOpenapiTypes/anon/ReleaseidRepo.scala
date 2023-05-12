@@ -6,16 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ReleaseidRepo extends StObject {
   
-  /** The account owner of the repository. The name is not case sensitive. */
   var owner: String
   
-  /** The unique identifier of the reaction. */
   var reaction_id: Double
   
-  /** The unique identifier of the release. */
   var release_id: Double
   
-  /** The name of the repository. The name is not case sensitive. */
   var repo: String
 }
 object ReleaseidRepo {

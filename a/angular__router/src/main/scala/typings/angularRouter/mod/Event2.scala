@@ -38,7 +38,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @publicApi
   */
 /* Rewritten from type alias, can be one of: 
-  - typings.angularRouter.mod.RouterEvent
   - typings.angularRouter.mod.NavigationStart
   - typings.angularRouter.mod.NavigationEnd
   - typings.angularRouter.mod.NavigationCancel
@@ -55,5 +54,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.angularRouter.mod.Scroll
   - typings.angularRouter.mod.ResolveStart
   - typings.angularRouter.mod.ResolveEnd
+  - typings.angularRouter.mod.NavigationSkipped
 */
 trait Event2 extends StObject

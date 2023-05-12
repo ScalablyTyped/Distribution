@@ -2,16 +2,17 @@ package typings.three
 
 import typings.std.ArrayLike
 import typings.three.anon.Call
-import typings.three.examplesJsmNodesCoreCodeNodeMod.CodeNodeInclude
+import typings.three.examplesJsmNodesCodeCodeNodeMod.CodeNodeInclude
+import typings.three.examplesJsmNodesCodeFunctionNodeMod.FunctionNodeArguments
 import typings.three.examplesJsmNodesCoreConstantsMod.NodeTypeOption
 import typings.three.examplesJsmNodesCoreConstantsMod.NodeUserData
 import typings.three.examplesJsmNodesCoreConstantsMod.NodeValueOption
-import typings.three.examplesJsmNodesCoreFunctionNodeMod.FunctionNodeArguments
 import typings.three.examplesJsmNodesCoreNodeBuilderMod.NodeBuilderContext
 import typings.three.examplesJsmNodesCoreNodeMod.default
 import typings.three.examplesJsmNodesNodesMod.BitangentNode
 import typings.three.examplesJsmNodesNodesMod.BufferNode
 import typings.three.examplesJsmNodesNodesMod.BypassNode
+import typings.three.examplesJsmNodesNodesMod.CacheNode
 import typings.three.examplesJsmNodesNodesMod.CameraNode
 import typings.three.examplesJsmNodesNodesMod.CodeNode
 import typings.three.examplesJsmNodesNodesMod.ComputeNode
@@ -24,6 +25,7 @@ import typings.three.examplesJsmNodesNodesMod.InstanceIndexNode
 import typings.three.examplesJsmNodesNodesMod.MaterialNode
 import typings.three.examplesJsmNodesNodesMod.MaterialReferenceNode
 import typings.three.examplesJsmNodesNodesMod.MathNode
+import typings.three.examplesJsmNodesNodesMod.MaxMipLevelNode
 import typings.three.examplesJsmNodesNodesMod.ModelNode
 import typings.three.examplesJsmNodesNodesMod.ModelViewProjectionNode
 import typings.three.examplesJsmNodesNodesMod.Node
@@ -37,7 +39,7 @@ import typings.three.examplesJsmNodesNodesMod.TangentNode
 import typings.three.examplesJsmNodesNodesMod.UVNode
 import typings.three.examplesJsmNodesNodesMod.UserDataNode
 import typings.three.examplesJsmNodesNodesMod.VarNode
-import typings.three.examplesJsmNodesNodesMod.VaryNode
+import typings.three.examplesJsmNodesNodesMod.VaryingNode
 import typings.three.examplesJsmNodesShadernodeShaderNodeMod.ConstructedNode
 import typings.three.examplesJsmNodesShadernodeShaderNodeMod.ConvertType
 import typings.three.examplesJsmNodesShadernodeShaderNodeMod.GetConstructors
@@ -178,6 +180,9 @@ object examplesJsmNodesShadernodeShaderNodeBaseElementsMod {
   val bvec4: ConvertType = js.native
   
   inline def bypass(returnNode: NodeRepresentation[Node], callNode: NodeRepresentation[Node]): Swizzable[BypassNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("bypass")(returnNode.asInstanceOf[js.Any], callNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[BypassNode]]
+  
+  inline def cache(node: default): Swizzable[CacheNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("cache")(node.asInstanceOf[js.Any]).asInstanceOf[Swizzable[CacheNode]]
+  inline def cache(node: default, cache: typings.three.examplesJsmNodesCoreNodeCacheMod.default): Swizzable[CacheNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("cache")(node.asInstanceOf[js.Any], cache.asInstanceOf[js.Any])).asInstanceOf[Swizzable[CacheNode]]
   
   inline def call[P /* <: FunctionNodeArguments */](): Swizzable[FunctionCallNode[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("call")().asInstanceOf[Swizzable[FunctionCallNode[P]]]
   inline def call[P /* <: FunctionNodeArguments */](functionNode: Unit, parameters: ProxiedObject[P]): Swizzable[FunctionCallNode[P]] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(functionNode.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Swizzable[FunctionCallNode[P]]]
@@ -440,6 +445,8 @@ object examplesJsmNodesShadernodeShaderNodeBaseElementsMod {
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "max")
   @js.native
   val max: Binary = js.native
+  
+  inline def maxMipLevel(texture: Texture): Swizzable[MaxMipLevelNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("maxMipLevel")(texture.asInstanceOf[js.Any]).asInstanceOf[Swizzable[MaxMipLevelNode]]
   
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "metalness")
   @js.native
@@ -747,8 +754,8 @@ object examplesJsmNodesShadernodeShaderNodeBaseElementsMod {
   @js.native
   val uvec4: ConvertType = js.native
   
-  inline def vary(node: NodeRepresentation[Node]): Swizzable[VaryNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("vary")(node.asInstanceOf[js.Any]).asInstanceOf[Swizzable[VaryNode]]
-  inline def vary(node: NodeRepresentation[Node], name: String): Swizzable[VaryNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("vary")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Swizzable[VaryNode]]
+  inline def vary(node: NodeRepresentation[Node]): Swizzable[VaryingNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("vary")(node.asInstanceOf[js.Any]).asInstanceOf[Swizzable[VaryingNode]]
+  inline def vary(node: NodeRepresentation[Node], name: String): Swizzable[VaryingNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("vary")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Swizzable[VaryingNode]]
   
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "vec2")
   @js.native

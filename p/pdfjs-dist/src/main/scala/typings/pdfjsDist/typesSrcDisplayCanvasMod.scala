@@ -2,6 +2,7 @@ package typings.pdfjsDist
 
 import typings.pdfjsDist.anon.Background
 import typings.pdfjsDist.anon.Img
+import typings.pdfjsDist.anon.MarkedContentStack
 import typings.pdfjsDist.anon.OffsetX
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
@@ -18,7 +19,8 @@ object typesSrcDisplayCanvasMod {
       commonObjs: Any,
       objs: Any,
       canvasFactory: Any,
-      optionalContentConfig: Any,
+      filterFactory: Any,
+      param5: MarkedContentStack,
       annotationCanvasMap: Any,
       pageColors: Any
     ) = this()
@@ -39,7 +41,9 @@ object typesSrcDisplayCanvasMod {
     
     var annotationCanvasMap: Any = js.native
     
-    var backgroundColor: Any = js.native
+    def applyTransferMapsToBitmap(imgData: Any): Any = js.native
+    
+    def applyTransferMapsToCanvas(ctx: Any): Any = js.native
     
     var baseTransform: Any = js.native
     
@@ -132,11 +136,12 @@ object typesSrcDisplayCanvasMod {
     
     def executeOperatorList(operatorList: Any, executionStartIdx: Any, continueCallback: Any, stepper: Any): Any = js.native
     
-    def fill(consumePath: Any): Unit = js.native
+    def fill(): Unit = js.native
+    def fill(consumePath: Boolean): Unit = js.native
     
     def fillStroke(): Unit = js.native
     
-    var foregroundColor: Any = js.native
+    var filterFactory: Any = js.native
     
     def getColorN_Pattern(IR: Any): Any = js.native
     
@@ -160,7 +165,7 @@ object typesSrcDisplayCanvasMod {
     
     def markPointProps(tag: Any, properties: Any): Unit = js.native
     
-    var markedContentStack: js.Array[Any] = js.native
+    var markedContentStack: js.Array[scala.Nothing] = js.native
     
     def moveText(x: Any, y: Any): Unit = js.native
     
@@ -173,6 +178,8 @@ object typesSrcDisplayCanvasMod {
     var outputScaleX: Double = js.native
     
     var outputScaleY: Double = js.native
+    
+    var pageColors: Any = js.native
     
     def paintChar(character: Any, x: Any, y: Any, patternTransform: Any): Unit = js.native
     
@@ -216,8 +223,6 @@ object typesSrcDisplayCanvasMod {
     def restore(): Unit = js.native
     
     def save(): Unit = js.native
-    
-    var selectColor: js.UndefOr[js.Function3[/* r */ Any, /* g */ Any, /* b */ Any, Any]] = js.native
     
     def setCharSpacing(spacing: Any): Unit = js.native
     
@@ -277,7 +282,8 @@ object typesSrcDisplayCanvasMod {
     
     var stateStack: js.Array[Any] = js.native
     
-    def stroke(consumePath: Any): Unit = js.native
+    def stroke(): Unit = js.native
+    def stroke(consumePath: Boolean): Unit = js.native
     
     var suspendedCtx: Any = js.native
     
@@ -397,7 +403,7 @@ object typesSrcDisplayCanvasMod {
     
     var textRise: Double = js.native
     
-    var transferMaps: Any = js.native
+    var transferMaps: String = js.native
     
     def updateClipFromPath(): Unit = js.native
     

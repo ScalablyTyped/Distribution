@@ -25,7 +25,7 @@ open class ProgressPlugin () extends StObject {
   
   var modulesCount: js.UndefOr[Double] = js.native
   
-  var percentBy: js.UndefOr[Null | modules | dependencies | entries] = js.native
+  var percentBy: js.UndefOr[Null | entries | modules | dependencies] = js.native
   
   var profile: js.UndefOr[Null | Boolean] = js.native
   

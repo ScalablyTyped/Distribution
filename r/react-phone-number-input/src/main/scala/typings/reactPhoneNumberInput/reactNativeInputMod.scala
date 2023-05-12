@@ -2,7 +2,8 @@ package typings.reactPhoneNumberInput
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.mod.global.JSX.Element
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.RefAttributes
 import typings.reactPhoneNumberInput.anon.OnChangeText
 import typings.reactPhoneNumberInput.anon.`0`
 import typings.reactPhoneNumberInput.inputMod.PropsWithoutSmartCaret
@@ -27,7 +28,7 @@ object reactNativeInputMod extends Shortcut {
   // to the input component.
   type DefaultInputComponentProps = StringDictionary[Any]
   
-  type PhoneInputComponentType[InputComponentProps] = js.Function1[/* props */ Props[InputComponentProps], Element]
+  type PhoneInputComponentType[InputComponentProps] = ForwardRefExoticComponent[Props[InputComponentProps] & RefAttributes[Any]]
   
   type Props[InputComponentProps] = PropsWithoutSmartCaret[UnderlyingInputComponentProps[InputComponentProps]] & `0`
   

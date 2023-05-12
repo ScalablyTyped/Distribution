@@ -1,18 +1,18 @@
 package typings.hapiHapi
 
-import typings.hapiHapi.mod.AccessEntity
-import typings.hapiHapi.mod.AuthMode
-import typings.hapiHapi.mod.Lifecycle._FailAction
-import typings.hapiHapi.mod.PayloadOutput
-import typings.hapiHapi.mod.ReferrerPolicy
-import typings.hapiHapi.mod.RequestEventType
-import typings.hapiHapi.mod.RouteRequestExtType
-import typings.hapiHapi.mod.SameSitePolicy
-import typings.hapiHapi.mod.ServerExtType
-import typings.hapiHapi.mod.ServerRequestExtType
-import typings.hapiHapi.mod.Util.HTTP_METHODS
-import typings.hapiHapi.mod.Util.HTTP_METHODS_PARTIAL
-import typings.hapiHapi.mod.Util.HTTP_METHODS_PARTIAL_LOWERCASE
+import typings.hapiHapi.libTypesMod.Utils.HTTP_METHODS_PARTIAL_LOWERCASE
+import typings.hapiHapi.libTypesMod.Utils._HTTP_METHODS
+import typings.hapiHapi.libTypesRequestMod.AuthMode
+import typings.hapiHapi.libTypesRequestMod.RequestEventType
+import typings.hapiHapi.libTypesRouteMod.AccessEntity
+import typings.hapiHapi.libTypesRouteMod.PayloadOutput
+import typings.hapiHapi.libTypesRouteMod.ReferrerPolicy
+import typings.hapiHapi.libTypesServerExtMod.RouteRequestExtType
+import typings.hapiHapi.libTypesServerExtMod.ServerExtType
+import typings.hapiHapi.libTypesServerExtMod.ServerRequestExtType
+import typings.hapiHapi.libTypesUtilsMod.HTTP_METHODS
+import typings.hapiHapi.libTypesUtilsMod.HTTP_METHODS_PARTIAL
+import typings.hapiHapi.libTypesUtilsMod.Lifecycle._FailAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,19 +45,8 @@ object hapiHapiStrings {
   sealed trait HEAD
     extends StObject
        with HTTP_METHODS
+       with _HTTP_METHODS
   inline def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
-  
-  @js.native
-  sealed trait Lax
-    extends StObject
-       with SameSitePolicy
-  inline def Lax: Lax = "Lax".asInstanceOf[Lax]
-  
-  @js.native
-  sealed trait None
-    extends StObject
-       with SameSitePolicy
-  inline def None: None = "None".asInstanceOf[None]
   
   @js.native
   sealed trait OPTIONS
@@ -86,12 +75,6 @@ object hapiHapiStrings {
        with HTTP_METHODS
        with HTTP_METHODS_PARTIAL
   inline def PUT: PUT = "PUT".asInstanceOf[PUT]
-  
-  @js.native
-  sealed trait Strict
-    extends StObject
-       with SameSitePolicy
-  inline def Strict: Strict = "Strict".asInstanceOf[Strict]
   
   @js.native
   sealed trait _empty
@@ -151,6 +134,7 @@ object hapiHapiStrings {
        with HTTP_METHODS
        with HTTP_METHODS_PARTIAL
        with HTTP_METHODS_PARTIAL_LOWERCASE
+       with typings.hapiHapi.libTypesUtilsMod.HTTP_METHODS_PARTIAL_LOWERCASE
   inline def delete_ : delete_ = "delete".asInstanceOf[delete_]
   
   @js.native
@@ -158,10 +142,18 @@ object hapiHapiStrings {
   inline def deny: deny = "deny".asInstanceOf[deny]
   
   @js.native
+  sealed trait disabled extends StObject
+  inline def disabled: disabled = "disabled".asInstanceOf[disabled]
+  
+  @js.native
   sealed trait disconnect
     extends StObject
        with RequestEventType
   inline def disconnect: disconnect = "disconnect".asInstanceOf[disconnect]
+  
+  @js.native
+  sealed trait enabled extends StObject
+  inline def enabled: enabled = "enabled".asInstanceOf[enabled]
   
   @js.native
   sealed trait error
@@ -191,6 +183,7 @@ object hapiHapiStrings {
        with HTTP_METHODS
        with HTTP_METHODS_PARTIAL
        with HTTP_METHODS_PARTIAL_LOWERCASE
+       with typings.hapiHapi.libTypesUtilsMod.HTTP_METHODS_PARTIAL_LOWERCASE
   inline def get_ : get_ = "get".asInstanceOf[get_]
   
   @js.native
@@ -205,6 +198,7 @@ object hapiHapiStrings {
   sealed trait head_
     extends StObject
        with HTTP_METHODS
+       with _HTTP_METHODS
   inline def head_ : head_ = "head".asInstanceOf[head_]
   
   @js.native
@@ -256,8 +250,8 @@ object hapiHapiStrings {
   inline def `no-referrer-when-downgrade`: `no-referrer-when-downgrade` = "no-referrer-when-downgrade".asInstanceOf[`no-referrer-when-downgrade`]
   
   @js.native
-  sealed trait none_ extends StObject
-  inline def none_ : none_ = "none".asInstanceOf[none_]
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait onCredentials
@@ -350,6 +344,7 @@ object hapiHapiStrings {
        with HTTP_METHODS
        with HTTP_METHODS_PARTIAL
        with HTTP_METHODS_PARTIAL_LOWERCASE
+       with typings.hapiHapi.libTypesUtilsMod.HTTP_METHODS_PARTIAL_LOWERCASE
   inline def options_ : options_ = "options".asInstanceOf[options_]
   
   @js.native
@@ -370,6 +365,7 @@ object hapiHapiStrings {
        with HTTP_METHODS
        with HTTP_METHODS_PARTIAL
        with HTTP_METHODS_PARTIAL_LOWERCASE
+       with typings.hapiHapi.libTypesUtilsMod.HTTP_METHODS_PARTIAL_LOWERCASE
   inline def patch_ : patch_ = "patch".asInstanceOf[patch_]
   
   @js.native
@@ -392,6 +388,7 @@ object hapiHapiStrings {
        with HTTP_METHODS
        with HTTP_METHODS_PARTIAL
        with HTTP_METHODS_PARTIAL_LOWERCASE
+       with typings.hapiHapi.libTypesUtilsMod.HTTP_METHODS_PARTIAL_LOWERCASE
   inline def post_ : post_ = "post".asInstanceOf[post_]
   
   @js.native
@@ -408,7 +405,12 @@ object hapiHapiStrings {
        with HTTP_METHODS
        with HTTP_METHODS_PARTIAL
        with HTTP_METHODS_PARTIAL_LOWERCASE
+       with typings.hapiHapi.libTypesUtilsMod.HTTP_METHODS_PARTIAL_LOWERCASE
   inline def put_ : put_ = "put".asInstanceOf[put_]
+  
+  @js.native
+  sealed trait remove extends StObject
+  inline def remove: remove = "remove".asInstanceOf[remove]
   
   @js.native
   sealed trait request extends StObject

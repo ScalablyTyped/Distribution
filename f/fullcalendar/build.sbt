@@ -1,16 +1,14 @@
 organization := "org.scalablytyped"
 name := "fullcalendar"
-version := "3.10.2-0551df"
-scalaVersion := "2.13.2"
+version := "6.1.7-ea6d86"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jquery" % "3.5-dt-20200621Z-33c88a",
-  "org.scalablytyped" %%% "moment" % "2.27.0-da83b2",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20200515Z-775559",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "fullcalendar__core" % "6.1.7-1438fd",
+  "org.scalablytyped" %%% "fullcalendar__interaction" % "6.1.7-a060b3",
+  "org.scalablytyped" %%% "preact" % "10.13.2-13e901",
+  "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalablyTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

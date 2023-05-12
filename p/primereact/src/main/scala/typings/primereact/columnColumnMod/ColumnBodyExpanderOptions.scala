@@ -7,13 +7,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ColumnBodyExpanderOptions extends StObject {
   
+  /**
+    * Class name of the options.
+    */
   var className: js.UndefOr[String] = js.undefined
   
+  /**
+    * Custom JSX element for the options.
+    */
   var element: js.UndefOr[Element] = js.undefined
   
+  /**
+    * Class name of the options icon.
+    */
   var iconClassName: js.UndefOr[String] = js.undefined
   
-  var onClick: js.UndefOr[js.Function1[/* e */ Any, Unit]] = js.undefined
+  /**
+    * Event on click of the expander.
+    * @param {*} event -  Browser event.
+    */
+  var onClick: js.UndefOr[js.Function1[/* event */ Any, Unit]] = js.undefined
 }
 object ColumnBodyExpanderOptions {
   
@@ -37,7 +50,7 @@ object ColumnBodyExpanderOptions {
     
     inline def setIconClassNameUndefined: Self = StObject.set(x, "iconClassName", js.undefined)
     
-    inline def setOnClick(value: /* e */ Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: /* event */ Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
   }

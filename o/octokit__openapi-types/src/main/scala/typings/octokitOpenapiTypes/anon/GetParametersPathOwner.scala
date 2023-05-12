@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersPathOwner extends StObject {
   
+  /** List public events for a network of repositories */
   var get: ParametersPathOwner
 }
 object GetParametersPathOwner {

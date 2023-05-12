@@ -1,6 +1,5 @@
 package typings.metro
 
-import typings.metro.libReportingMod.GlobalCacheDisabledReason
 import typings.metro.metroStrings.debug
 import typings.metro.metroStrings.group
 import typings.metro.metroStrings.groupCollapsed
@@ -9,7 +8,7 @@ import typings.metro.metroStrings.info
 import typings.metro.metroStrings.log
 import typings.metro.metroStrings.trace
 import typings.metro.metroStrings.warn
-import typings.metroCore.mod.Terminal
+import typings.metro.srcLibReportingMod.GlobalCacheDisabledReason
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,14 +18,16 @@ object srcLibTerminalReporterMod {
   @JSImport("metro/src/lib/TerminalReporter", "TerminalReporter")
   @js.native
   open class TerminalReporter protected () extends StObject {
-    def this(terminal: Terminal) = this()
+    def this(terminal: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Terminal */ Any) = this()
+    
+    val terminal: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Terminal */ Any = js.native
     
     def update(event: TerminalReportableEvent): Unit = js.native
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.metro.libReportingMod.ReportableEvent
-    - typings.metro.anon.TransformedFileCount
+    - typings.metro.srcLibReportingMod.ReportableEvent
+    - typings.metro.anon.BuildID
   */
   trait TerminalReportableEvent extends StObject
   object TerminalReportableEvent {
@@ -43,13 +44,37 @@ object srcLibTerminalReporterMod {
       __obj.asInstanceOf[typings.metro.anon.`1`]
     }
     
-    inline def BuildID(buildID: String): typings.metro.anon.BuildID = {
-      val __obj = js.Dynamic.literal(buildID = buildID.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("bundle_build_done")
+    inline def `2`(): typings.metro.anon.`2` = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("type")("transformer_load_started")
+      __obj.asInstanceOf[typings.metro.anon.`2`]
+    }
+    
+    inline def `3`(): typings.metro.anon.`3` = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("type")("transformer_load_done")
+      __obj.asInstanceOf[typings.metro.anon.`3`]
+    }
+    
+    inline def `4`(error: js.Error): typings.metro.anon.`4` = {
+      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("transformer_load_failed")
+      __obj.asInstanceOf[typings.metro.anon.`4`]
+    }
+    
+    inline def BuildID(buildID: String, totalFileCount: Double, transformedFileCount: Double): typings.metro.anon.BuildID = {
+      val __obj = js.Dynamic.literal(buildID = buildID.asInstanceOf[js.Any], totalFileCount = totalFileCount.asInstanceOf[js.Any], transformedFileCount = transformedFileCount.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("bundle_transform_progressed_throttled")
       __obj.asInstanceOf[typings.metro.anon.BuildID]
     }
     
-    inline def BundleDetails(buildID: String, bundleDetails: typings.metro.libReportingMod.BundleDetails): typings.metro.anon.BundleDetails = {
+    inline def BuildIDType(buildID: String): typings.metro.anon.BuildIDType = {
+      val __obj = js.Dynamic.literal(buildID = buildID.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("bundle_build_failed")
+      __obj.asInstanceOf[typings.metro.anon.BuildIDType]
+    }
+    
+    inline def BundleDetails(buildID: String, bundleDetails: typings.metro.srcLibReportingMod.BundleDetails): typings.metro.anon.BundleDetails = {
       val __obj = js.Dynamic.literal(buildID = buildID.asInstanceOf[js.Any], bundleDetails = bundleDetails.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("bundle_build_started")
       __obj.asInstanceOf[typings.metro.anon.BundleDetails]
@@ -115,21 +140,31 @@ object srcLibTerminalReporterMod {
       __obj.asInstanceOf[typings.metro.anon.Reason]
     }
     
+    inline def Result(
+      result: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HealthCheckResult */ Any
+    ): typings.metro.anon.Result = {
+      val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("watcher_health_check_result")
+      __obj.asInstanceOf[typings.metro.anon.Result]
+    }
+    
+    inline def Status(
+      status: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WatcherStatus */ Any
+    ): typings.metro.anon.Status = {
+      val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("watcher_status")
+      __obj.asInstanceOf[typings.metro.anon.Status]
+    }
+    
     inline def TotalFileCount(buildID: String, totalFileCount: Double, transformedFileCount: Double): typings.metro.anon.TotalFileCount = {
       val __obj = js.Dynamic.literal(buildID = buildID.asInstanceOf[js.Any], totalFileCount = totalFileCount.asInstanceOf[js.Any], transformedFileCount = transformedFileCount.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("bundle_transform_progressed")
       __obj.asInstanceOf[typings.metro.anon.TotalFileCount]
     }
     
-    inline def TransformedFileCount(buildID: String, totalFileCount: Double, transformedFileCount: Double): typings.metro.anon.TransformedFileCount = {
-      val __obj = js.Dynamic.literal(buildID = buildID.asInstanceOf[js.Any], totalFileCount = totalFileCount.asInstanceOf[js.Any], transformedFileCount = transformedFileCount.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("bundle_transform_progressed_throttled")
-      __obj.asInstanceOf[typings.metro.anon.TransformedFileCount]
-    }
-    
     inline def Type(buildID: String): typings.metro.anon.Type = {
       val __obj = js.Dynamic.literal(buildID = buildID.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("bundle_build_failed")
+      __obj.updateDynamic("type")("bundle_build_done")
       __obj.asInstanceOf[typings.metro.anon.Type]
     }
   }

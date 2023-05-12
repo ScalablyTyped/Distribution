@@ -3,7 +3,7 @@ package typings.swiper
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
-import typings.swiper.anon.eventinkeyofSwiperEventsS
+import typings.swiper.anon.eventinkeyofSwiperEventsSActiveIndexChange
 import typings.swiper.swiperStrings.auto
 import typings.swiper.swiperStrings.cards
 import typings.swiper.swiperStrings.container
@@ -30,7 +30,6 @@ import typings.swiper.typesModulesGridMod.GridOptions
 import typings.swiper.typesModulesHashNavigationMod.HashNavigationOptions
 import typings.swiper.typesModulesHistoryMod.HistoryOptions
 import typings.swiper.typesModulesKeyboardMod.KeyboardOptions
-import typings.swiper.typesModulesLazyMod.LazyOptions
 import typings.swiper.typesModulesMousewheelMod.MousewheelOptions
 import typings.swiper.typesModulesNavigationMod.NavigationOptions
 import typings.swiper.typesModulesPaginationMod.PaginationOptions
@@ -112,7 +111,7 @@ object typesSwiperOptionsMod {
     var autoplay: js.UndefOr[AutoplayOptions | Boolean] = js.undefined
     
     /**
-      * Allows to set different parameter for different responsive breakpoints (screen sizes). Not all parameters can be changed in breakpoints, only those which are not required different layout and logic, like `slidesPerView`, `slidesPerGroup`, `spaceBetween`, `grid.rows`. Such parameters like `loop` and `effect` won't work
+      * Allows to set different parameter for different responsive breakpoints (screen sizes). Not all parameters can be changed in breakpoints, only those which do not require different layout and logic, like `slidesPerView`, `slidesPerGroup`, `spaceBetween`, `grid.rows`. Such parameters like `loop` and `effect` won't work
       *
       * @example
       * ```js
@@ -171,7 +170,7 @@ object typesSwiperOptionsMod {
       *
       * @default 'window'
       *
-      * @note Currently in beta and not supported by Swiper Angular, React, Svelte and Vue components
+      * @note Currently in beta and not supported by Swiper React and Vue components
       */
     var breakpointsBase: js.UndefOr[String] = js.undefined
     
@@ -287,7 +286,7 @@ object typesSwiperOptionsMod {
       *
       * This is what is not supported when it is enabled:
       *
-      * - Cube and Cards effects
+      * - Cube effect
       * - `speed` parameter may not have no effect
       * - All transition start/end related events (use `slideChange` instead)
       * - `slidesPerGroup` has limited support
@@ -296,6 +295,29 @@ object typesSwiperOptionsMod {
       * - `allowSlidePrev/Next`
       * - `swipeHandler`
       * - `freeMode` and all relevant features
+      *
+      * In case if you use it with other effects, especially 3D effects, it is required to wrap slide's content with `<div class="swiper-slide-transform">` element. And if you use any custom styles on slides (like background colors, border radius, border, etc.), they should be set on `swiper-slide-transform` element instead.
+      *
+      * * @example
+      * ```html
+      * <div class="swiper">
+      *   <div class="swiper-wrapper">
+      *     <div class="swiper-slide">
+      *       <!-- wrap slide content with transform element -->
+      *       <div class="swiper-slide">
+      *         ... slide content ...
+      *       </div>
+      *     </div>
+      *     ...
+      *   </div>
+      * </div>
+      * <script>
+      * const swiper = new Swiper('.swiper', {
+      *    effect: 'flip',
+      *    cssMode: true,
+      *  });
+      * </script>
+      * ```
       *
       * @default false
       */
@@ -498,6 +520,18 @@ object typesSwiperOptionsMod {
     var initialSlide: js.UndefOr[Double] = js.undefined
     
     /**
+      * Inject text styles to the shadow DOM. Only for usage with Swiper Element
+      *
+      */
+    var injectStyles: js.UndefOr[js.Array[String]] = js.undefined
+    
+    /**
+      * Inject styles `<link>`s to the shadow DOM. Only for usage with Swiper Element
+      *
+      */
+    var injectStylesUrls: js.UndefOr[js.Array[String]] = js.undefined
+    
+    /**
       * Enables navigation through slides using keyboard. Object with keyboard parameters or boolean `true` to enable with default settings
       *
       * @example
@@ -513,18 +547,18 @@ object typesSwiperOptionsMod {
     var keyboard: js.UndefOr[KeyboardOptions | Boolean] = js.undefined
     
     /**
-      * Enables images lazy loading. Object with lazy loading parameters or boolean `true` to enable with default settings
+      * Number of next and previous slides to preload. Only applicable if using lazy loading.
       *
-      * @example
-      * ```js
-      * const swiper = new Swiper('.swiper', {
-      *   lazy: {
-      *     loadPrevNext: true,
-      *   },
-      * });
-      * ```
+      * @default 0
       */
-    var `lazy`: js.UndefOr[LazyOptions | Boolean] = js.undefined
+    var lazyPreloadPrevNext: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * CSS class name of lazy preloader
+      *
+      * @default 'swiper-lazy-preloader'
+      */
+    var lazyPreloaderClass: js.UndefOr[String] = js.undefined
     
     /**
       * Set to `false` if you want to disable long swipes
@@ -550,52 +584,26 @@ object typesSwiperOptionsMod {
     /**
       * Set to `true` to enable continuous loop mode
       *
-      * Because of nature of how the loop mode works, it will add duplicated slides. Such duplicated slides will have additional classes:
-      * - `swiper-slide-duplicate` - represents duplicated slide
-      * - `swiper-slide-duplicate-active` - represents slide duplicated to the currently active slide
-      * - `swiper-slide-duplicate-next` - represents slide duplicated to the slide next to active
-      * - `swiper-slide-duplicate-prev` - represents slide duplicated to the slide previous to active
+      * Because of nature of how the loop mode works (it will rearrange slides), total number of slides must be >= slidesPerView * 2
       *
       * @default false
       *
-      * @note If you use it along with `slidesPerView: 'auto'` then you need to specify `loopedSlides` parameter with amount of slides to loop (duplicate). Should not be used together with `rewind` mode
       */
     var loop: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Addition number of slides that will be cloned after creating of loop
-      *
-      * @default 0
-      */
-    var loopAdditionalSlides: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Enable and loop mode will fill groups with insufficient number of slides with blank slides. Good to be used with `slidesPerGroup` parameter
-      *
-      * @default false
-      */
-    var loopFillGroupWithBlank: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * When enabled it prevents Swiper slide prev/next transitions when transitions is already in progress (has effect when `loop` enabled)
+      * If enabled then slideNext/Prev will do nothing while slider is animating in loop mode
       *
       * @default true
       */
-    var loopPreventsSlide: js.UndefOr[Boolean] = js.undefined
+    var loopPreventsSliding: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * If you use `slidesPerView:'auto'` with loop mode you should tell to Swiper how many slides it should loop (duplicate) using this parameter
+      * Defines how many slides before end/beginning it should rearrange (loop) slides. If not specified, defaults to `slidesPerView`
       *
       * @default null
       */
     var loopedSlides: js.UndefOr[Double | Null] = js.undefined
-    
-    /**
-      * When enabled then amount of duplicated slides will not exceed amount of original slides. Useful to disable and increase `loopedSlides` when you have a lot of slides per view and not sufficient amount of original slides
-      *
-      * @default true
-      */
-    var loopedSlidesLimit: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If total number of slides less than specified here value, then Swiper will enable `backface-visibility: hidden` on slide elements to reduce visual "flicker" in Safari.
@@ -711,7 +719,7 @@ object typesSwiperOptionsMod {
     /**
       * Register event handlers
       */
-    var on: js.UndefOr[eventinkeyofSwiperEventsS] = js.undefined
+    var on: js.UndefOr[eventinkeyofSwiperEventsSActiveIndexChange] = js.undefined
     
     /**
       * Add event listener that will be fired on all events
@@ -729,6 +737,13 @@ object typesSwiperOptionsMod {
     var onAny: js.UndefOr[
         js.Function1[/* handler */ js.Function2[/* eventName */ String, /* repeated */ Any, Unit], Unit]
       ] = js.undefined
+    
+    /**
+      * When enabled, will swipe slides only forward (one-way) regardless of swipe direction
+      *
+      * @default false
+      */
+    var oneWayMovement: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Object with pagination parameters or boolean `true` to enable with default settings.
@@ -764,14 +779,6 @@ object typesSwiperOptionsMod {
       * @default true
       */
     var passiveListeners: js.UndefOr[Boolean] = js.undefined
-    
-    // Images
-    /**
-      * When enabled Swiper will force to load all images
-      *
-      * @default true
-      */
-    var preloadImages: js.UndefOr[Boolean] = js.undefined
     
     // Clicks
     /**
@@ -887,20 +894,9 @@ object typesSwiperOptionsMod {
       *
       * @note By changing classes you will also need to change Swiper's CSS to reflect changed classes
       *
-      * @note Not supported in Swiper Angular/React/Svelte/Vue components
+      * @note Not supported in Swiper React/Vue components
       */
     var slideActiveClass: js.UndefOr[String] = js.undefined
-    
-    /**
-      * CSS class name of blank slide append to fill groups in loop mode when `loopFillGroupWithBlank` is also enabled
-      *
-      * @default 'swiper-slide-invisible-blank'
-      *
-      * @note By changing classes you will also need to change Swiper's CSS to reflect changed classes
-      *
-      * @note Not supported in Swiper Angular/React/Svelte/Vue
-      */
-    var slideBlankClass: js.UndefOr[String] = js.undefined
     
     /**
       * CSS class name of slide
@@ -909,53 +905,9 @@ object typesSwiperOptionsMod {
       *
       * @note By changing classes you will also need to change Swiper's CSS to reflect changed classes
       *
-      * @note Not supported in Swiper Angular/React/Svelte/Vue components
+      * @note Not supported in Swiper React/Vue components
       */
     var slideClass: js.UndefOr[String] = js.undefined
-    
-    /**
-      * CSS class name of duplicated slide which represents the currently active slide
-      *
-      * @default 'swiper-slide-duplicate-active'
-      *
-      * @note By changing classes you will also need to change Swiper's CSS to reflect changed classes
-      *
-      * @note Not supported in Swiper Angular/React/Svelte/Vue components
-      */
-    var slideDuplicateActiveClass: js.UndefOr[String] = js.undefined
-    
-    /**
-      * CSS class name of slide duplicated by loop mode
-      *
-      * @default 'swiper-slide-duplicate'
-      *
-      * @note By changing classes you will also need to change Swiper's CSS to reflect changed classes
-      *
-      * @note Not supported in Swiper Angular/React/Svelte/Vue
-      */
-    var slideDuplicateClass: js.UndefOr[String] = js.undefined
-    
-    /**
-      * CSS class name of duplicated slide which represents the slide next to active slide
-      *
-      * @default 'swiper-slide-duplicate-next'
-      *
-      * @note By changing classes you will also need to change Swiper's CSS to reflect changed classes
-      *
-      * @note Not supported in Swiper Angular/React/Svelte/Vue
-      */
-    var slideDuplicateNextClass: js.UndefOr[String] = js.undefined
-    
-    /**
-      * CSS class name of duplicated slide which represents the slide previous to active slide
-      *
-      * @default 'swiper-slide-duplicate-prev'
-      *
-      * @note By changing classes you will also need to change Swiper's CSS to reflect changed classes
-      *
-      * @note Not supported in Swiper Angular/React/Svelte/Vue
-      */
-    var slideDuplicatePrevClass: js.UndefOr[String] = js.undefined
     
     /**
       * CSS class name of slide which is right after currently active slide
@@ -964,7 +916,7 @@ object typesSwiperOptionsMod {
       *
       * @note By changing classes you will also need to change Swiper's CSS to reflect changed classes
       *
-      * @note Not supported in Swiper Angular/React/Svelte/Vue
+      * @note Not supported in Swiper React/Vue
       */
     var slideNextClass: js.UndefOr[String] = js.undefined
     
@@ -975,7 +927,7 @@ object typesSwiperOptionsMod {
       *
       * @note By changing classes you will also need to change Swiper's CSS to reflect changed classes
       *
-      * @note Not supported in Swiper Angular/React/Svelte/Vue
+      * @note Not supported in Swiper React/Vue
       */
     var slidePrevClass: js.UndefOr[String] = js.undefined
     
@@ -993,7 +945,7 @@ object typesSwiperOptionsMod {
       *
       * @note By changing classes you will also need to change Swiper's CSS to reflect changed classes
       *
-      * @note Not supported in Swiper Angular/React/Svelte/Vue
+      * @note Not supported in Swiper React/Vue
       */
     var slideVisibleClass: js.UndefOr[String] = js.undefined
     
@@ -1036,7 +988,6 @@ object typesSwiperOptionsMod {
     
     /**
       * Number of slides per view (slides visible at the same time on slider's container).
-      * @note If you use it with "auto" value and along with `loop: true` then you need to specify `loopedSlides` parameter with amount of slides to loop (duplicate)
       * @note `slidesPerView: 'auto'` is currently not compatible with multirow mode, when `grid.rows` > 1
       *
       * @default 1
@@ -1051,7 +1002,7 @@ object typesSwiperOptionsMod {
       *
       * @note If you use "margin" css property to the elements which go into Swiper in which you pass "spaceBetween" into, navigation might not work properly.
       */
-    var spaceBetween: js.UndefOr[Double] = js.undefined
+    var spaceBetween: js.UndefOr[Double | String] = js.undefined
     
     /**
       * Duration of transition between slides (in ms)
@@ -1070,7 +1021,7 @@ object typesSwiperOptionsMod {
     /**
       * Threshold value in px. If "touch distance" will be lower than this value then swiper will not move
       *
-      * @default 0
+      * @default 5
       */
     var threshold: js.UndefOr[Double] = js.undefined
     
@@ -1133,7 +1084,7 @@ object typesSwiperOptionsMod {
     var touchStartForcePreventDefault: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * If disabled, `touchstart` (`pointerdown`) event won't be prevented
+      * If disabled, `pointerdown` event won't be prevented
       *
       * @default true
       */
@@ -1147,13 +1098,6 @@ object typesSwiperOptionsMod {
       * @default true
       */
     var uniqueNavElements: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * When enabled Swiper will be reinitialized after all inner images (<img> tags) are loaded. Required `preloadImages: true`
-      *
-      * @default true
-      */
-    var updateOnImagesReady: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Swiper will recalculate slides position on window resize (orientationchange)
@@ -1231,7 +1175,7 @@ object typesSwiperOptionsMod {
       *
       * @note By changing classes you will also need to change Swiper's CSS to reflect changed classes
       *
-      * @note Not supported in Swiper Angular/React/Svelte/Vue
+      * @note Not supported in Swiper React/Vue
       *
       */
     var wrapperClass: js.UndefOr[String] = js.undefined
@@ -1406,13 +1350,29 @@ object typesSwiperOptionsMod {
       
       inline def setInitialSlideUndefined: Self = StObject.set(x, "initialSlide", js.undefined)
       
+      inline def setInjectStyles(value: js.Array[String]): Self = StObject.set(x, "injectStyles", value.asInstanceOf[js.Any])
+      
+      inline def setInjectStylesUndefined: Self = StObject.set(x, "injectStyles", js.undefined)
+      
+      inline def setInjectStylesUrls(value: js.Array[String]): Self = StObject.set(x, "injectStylesUrls", value.asInstanceOf[js.Any])
+      
+      inline def setInjectStylesUrlsUndefined: Self = StObject.set(x, "injectStylesUrls", js.undefined)
+      
+      inline def setInjectStylesUrlsVarargs(value: String*): Self = StObject.set(x, "injectStylesUrls", js.Array(value*))
+      
+      inline def setInjectStylesVarargs(value: String*): Self = StObject.set(x, "injectStyles", js.Array(value*))
+      
       inline def setKeyboard(value: KeyboardOptions | Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
       
       inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
       
-      inline def setLazy(value: LazyOptions | Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
+      inline def setLazyPreloadPrevNext(value: Double): Self = StObject.set(x, "lazyPreloadPrevNext", value.asInstanceOf[js.Any])
       
-      inline def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
+      inline def setLazyPreloadPrevNextUndefined: Self = StObject.set(x, "lazyPreloadPrevNext", js.undefined)
+      
+      inline def setLazyPreloaderClass(value: String): Self = StObject.set(x, "lazyPreloaderClass", value.asInstanceOf[js.Any])
+      
+      inline def setLazyPreloaderClassUndefined: Self = StObject.set(x, "lazyPreloaderClass", js.undefined)
       
       inline def setLongSwipes(value: Boolean): Self = StObject.set(x, "longSwipes", value.asInstanceOf[js.Any])
       
@@ -1428,25 +1388,13 @@ object typesSwiperOptionsMod {
       
       inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       
-      inline def setLoopAdditionalSlides(value: Double): Self = StObject.set(x, "loopAdditionalSlides", value.asInstanceOf[js.Any])
+      inline def setLoopPreventsSliding(value: Boolean): Self = StObject.set(x, "loopPreventsSliding", value.asInstanceOf[js.Any])
       
-      inline def setLoopAdditionalSlidesUndefined: Self = StObject.set(x, "loopAdditionalSlides", js.undefined)
-      
-      inline def setLoopFillGroupWithBlank(value: Boolean): Self = StObject.set(x, "loopFillGroupWithBlank", value.asInstanceOf[js.Any])
-      
-      inline def setLoopFillGroupWithBlankUndefined: Self = StObject.set(x, "loopFillGroupWithBlank", js.undefined)
-      
-      inline def setLoopPreventsSlide(value: Boolean): Self = StObject.set(x, "loopPreventsSlide", value.asInstanceOf[js.Any])
-      
-      inline def setLoopPreventsSlideUndefined: Self = StObject.set(x, "loopPreventsSlide", js.undefined)
+      inline def setLoopPreventsSlidingUndefined: Self = StObject.set(x, "loopPreventsSliding", js.undefined)
       
       inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
       
       inline def setLoopedSlides(value: Double): Self = StObject.set(x, "loopedSlides", value.asInstanceOf[js.Any])
-      
-      inline def setLoopedSlidesLimit(value: Boolean): Self = StObject.set(x, "loopedSlidesLimit", value.asInstanceOf[js.Any])
-      
-      inline def setLoopedSlidesLimitUndefined: Self = StObject.set(x, "loopedSlidesLimit", js.undefined)
       
       inline def setLoopedSlidesNull: Self = StObject.set(x, "loopedSlides", null)
       
@@ -1502,13 +1450,17 @@ object typesSwiperOptionsMod {
       
       inline def setObserverUndefined: Self = StObject.set(x, "observer", js.undefined)
       
-      inline def setOn(value: eventinkeyofSwiperEventsS): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+      inline def setOn(value: eventinkeyofSwiperEventsSActiveIndexChange): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
       
       inline def setOnAny(value: /* handler */ js.Function2[/* eventName */ String, /* repeated */ Any, Unit] => Unit): Self = StObject.set(x, "onAny", js.Any.fromFunction1(value))
       
       inline def setOnAnyUndefined: Self = StObject.set(x, "onAny", js.undefined)
       
       inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
+      
+      inline def setOneWayMovement(value: Boolean): Self = StObject.set(x, "oneWayMovement", value.asInstanceOf[js.Any])
+      
+      inline def setOneWayMovementUndefined: Self = StObject.set(x, "oneWayMovement", js.undefined)
       
       inline def setPagination(value: PaginationOptions | Boolean): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
       
@@ -1521,10 +1473,6 @@ object typesSwiperOptionsMod {
       inline def setPassiveListeners(value: Boolean): Self = StObject.set(x, "passiveListeners", value.asInstanceOf[js.Any])
       
       inline def setPassiveListenersUndefined: Self = StObject.set(x, "passiveListeners", js.undefined)
-      
-      inline def setPreloadImages(value: Boolean): Self = StObject.set(x, "preloadImages", value.asInstanceOf[js.Any])
-      
-      inline def setPreloadImagesUndefined: Self = StObject.set(x, "preloadImages", js.undefined)
       
       inline def setPreventClicks(value: Boolean): Self = StObject.set(x, "preventClicks", value.asInstanceOf[js.Any])
       
@@ -1582,29 +1530,9 @@ object typesSwiperOptionsMod {
       
       inline def setSlideActiveClassUndefined: Self = StObject.set(x, "slideActiveClass", js.undefined)
       
-      inline def setSlideBlankClass(value: String): Self = StObject.set(x, "slideBlankClass", value.asInstanceOf[js.Any])
-      
-      inline def setSlideBlankClassUndefined: Self = StObject.set(x, "slideBlankClass", js.undefined)
-      
       inline def setSlideClass(value: String): Self = StObject.set(x, "slideClass", value.asInstanceOf[js.Any])
       
       inline def setSlideClassUndefined: Self = StObject.set(x, "slideClass", js.undefined)
-      
-      inline def setSlideDuplicateActiveClass(value: String): Self = StObject.set(x, "slideDuplicateActiveClass", value.asInstanceOf[js.Any])
-      
-      inline def setSlideDuplicateActiveClassUndefined: Self = StObject.set(x, "slideDuplicateActiveClass", js.undefined)
-      
-      inline def setSlideDuplicateClass(value: String): Self = StObject.set(x, "slideDuplicateClass", value.asInstanceOf[js.Any])
-      
-      inline def setSlideDuplicateClassUndefined: Self = StObject.set(x, "slideDuplicateClass", js.undefined)
-      
-      inline def setSlideDuplicateNextClass(value: String): Self = StObject.set(x, "slideDuplicateNextClass", value.asInstanceOf[js.Any])
-      
-      inline def setSlideDuplicateNextClassUndefined: Self = StObject.set(x, "slideDuplicateNextClass", js.undefined)
-      
-      inline def setSlideDuplicatePrevClass(value: String): Self = StObject.set(x, "slideDuplicatePrevClass", value.asInstanceOf[js.Any])
-      
-      inline def setSlideDuplicatePrevClassUndefined: Self = StObject.set(x, "slideDuplicatePrevClass", js.undefined)
       
       inline def setSlideNextClass(value: String): Self = StObject.set(x, "slideNextClass", value.asInstanceOf[js.Any])
       
@@ -1646,7 +1574,7 @@ object typesSwiperOptionsMod {
       
       inline def setSlidesPerViewUndefined: Self = StObject.set(x, "slidesPerView", js.undefined)
       
-      inline def setSpaceBetween(value: Double): Self = StObject.set(x, "spaceBetween", value.asInstanceOf[js.Any])
+      inline def setSpaceBetween(value: Double | String): Self = StObject.set(x, "spaceBetween", value.asInstanceOf[js.Any])
       
       inline def setSpaceBetweenUndefined: Self = StObject.set(x, "spaceBetween", js.undefined)
       
@@ -1699,10 +1627,6 @@ object typesSwiperOptionsMod {
       inline def setUniqueNavElements(value: Boolean): Self = StObject.set(x, "uniqueNavElements", value.asInstanceOf[js.Any])
       
       inline def setUniqueNavElementsUndefined: Self = StObject.set(x, "uniqueNavElements", js.undefined)
-      
-      inline def setUpdateOnImagesReady(value: Boolean): Self = StObject.set(x, "updateOnImagesReady", value.asInstanceOf[js.Any])
-      
-      inline def setUpdateOnImagesReadyUndefined: Self = StObject.set(x, "updateOnImagesReady", js.undefined)
       
       inline def setUpdateOnWindowResize(value: Boolean): Self = StObject.set(x, "updateOnWindowResize", value.asInstanceOf[js.Any])
       

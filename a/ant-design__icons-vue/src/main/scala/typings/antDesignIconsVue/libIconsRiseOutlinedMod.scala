@@ -16,7 +16,7 @@ object libIconsRiseOutlinedMod extends Shortcut {
   @js.native
   trait RiseOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_RiseOutlinedIconType: String = js.native

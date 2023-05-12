@@ -39,6 +39,14 @@ object steamUserStrings {
   inline def appUpdate: appUpdate = "appUpdate".asInstanceOf[appUpdate]
   
   @js.native
+  sealed trait authTicketStatus extends StObject
+  inline def authTicketStatus: authTicketStatus = "authTicketStatus".asInstanceOf[authTicketStatus]
+  
+  @js.native
+  sealed trait authTicketValidation extends StObject
+  inline def authTicketValidation: authTicketValidation = "authTicketValidation".asInstanceOf[authTicketValidation]
+  
+  @js.native
   sealed trait autoRelogin extends StObject
   inline def autoRelogin: autoRelogin = "autoRelogin".asInstanceOf[autoRelogin]
   
@@ -81,6 +89,10 @@ object steamUserStrings {
   @js.native
   sealed trait dataDirectory extends StObject
   inline def dataDirectory: dataDirectory = "dataDirectory".asInstanceOf[dataDirectory]
+  
+  @js.native
+  sealed trait debug extends StObject
+  inline def debug: debug = "debug".asInstanceOf[debug]
   
   @js.native
   sealed trait disconnected extends StObject
@@ -269,6 +281,10 @@ object steamUserStrings {
   @js.native
   sealed trait singleSentryfile extends StObject
   inline def singleSentryfile: singleSentryfile = "singleSentryfile".asInstanceOf[singleSentryfile]
+  
+  @js.native
+  sealed trait socksProxy extends StObject
+  inline def socksProxy: socksProxy = "socksProxy".asInstanceOf[socksProxy]
   
   @js.native
   sealed trait `steam-user` extends StObject

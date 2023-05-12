@@ -17,6 +17,11 @@ trait GetComponentTypeResponse extends StObject {
   var componentTypeId: ComponentTypeId
   
   /**
+    * The component type name.
+    */
+  var componentTypeName: js.UndefOr[ComponentTypeName] = js.undefined
+  
+  /**
     * The date and time when the component type was created.
     */
   var creationDateTime: js.Date
@@ -57,9 +62,19 @@ trait GetComponentTypeResponse extends StObject {
   var propertyDefinitions: js.UndefOr[PropertyDefinitionsResponse] = js.undefined
   
   /**
+    * The maximum number of results to return at one time. The default is 25. Valid Range: Minimum value of 1. Maximum value of 250.
+    */
+  var propertyGroups: js.UndefOr[PropertyGroupsResponse] = js.undefined
+  
+  /**
     * The current status of the component type.
     */
   var status: js.UndefOr[Status] = js.undefined
+  
+  /**
+    * The syncSource of the SyncJob, if this entity was created by a SyncJob.
+    */
+  var syncSource: js.UndefOr[SyncSource] = js.undefined
   
   /**
     * The date and time when the component was last updated.
@@ -90,6 +105,10 @@ object GetComponentTypeResponse {
     inline def setArn(value: TwinMakerArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     inline def setComponentTypeId(value: ComponentTypeId): Self = StObject.set(x, "componentTypeId", value.asInstanceOf[js.Any])
+    
+    inline def setComponentTypeName(value: ComponentTypeName): Self = StObject.set(x, "componentTypeName", value.asInstanceOf[js.Any])
+    
+    inline def setComponentTypeNameUndefined: Self = StObject.set(x, "componentTypeName", js.undefined)
     
     inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
     
@@ -123,9 +142,17 @@ object GetComponentTypeResponse {
     
     inline def setPropertyDefinitionsUndefined: Self = StObject.set(x, "propertyDefinitions", js.undefined)
     
+    inline def setPropertyGroups(value: PropertyGroupsResponse): Self = StObject.set(x, "propertyGroups", value.asInstanceOf[js.Any])
+    
+    inline def setPropertyGroupsUndefined: Self = StObject.set(x, "propertyGroups", js.undefined)
+    
     inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    
+    inline def setSyncSource(value: SyncSource): Self = StObject.set(x, "syncSource", value.asInstanceOf[js.Any])
+    
+    inline def setSyncSourceUndefined: Self = StObject.set(x, "syncSource", js.undefined)
     
     inline def setUpdateDateTime(value: js.Date): Self = StObject.set(x, "updateDateTime", value.asInstanceOf[js.Any])
     

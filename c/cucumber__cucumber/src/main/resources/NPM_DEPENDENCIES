@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@cucumber/cucumber" : "9.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@cucumber/cucumber" : "9.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

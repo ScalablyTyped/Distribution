@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AdditionalResources extends StObject {
   
   /**
-    * The URLs for additional resources, either helpful resources or improvement plans. Up to five additional URLs can be specified.
+    * The URLs for additional resources, either helpful resources or improvement plans, for a custom lens. Up to five additional URLs can be specified.
     */
   var Content: js.UndefOr[Urls] = js.undefined
   
   /**
-    * Type of additional resource.
+    * Type of additional resource for a custom lens.
     */
   var Type: js.UndefOr[AdditionalResourceType] = js.undefined
 }

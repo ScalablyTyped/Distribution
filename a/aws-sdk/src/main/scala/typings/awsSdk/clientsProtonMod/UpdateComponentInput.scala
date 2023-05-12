@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateComponentInput extends StObject {
   
   /**
+    * The client token for the updated component.
+    */
+  var clientToken: js.UndefOr[ClientToken] = js.undefined
+  
+  /**
     * The deployment type. It defines the mode for updating a component, as follows:     NONE  In this mode, a deployment doesn't occur. Only the requested metadata parameters are updated. You can only specify description in this mode.     CURRENT_VERSION  In this mode, the component is deployed and updated with the new serviceSpec, templateSource, and/or type that you provide. Only requested parameters are updated.  
     */
   var deploymentType: ComponentDeploymentUpdateType
@@ -50,6 +55,10 @@ object UpdateComponentInput {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: UpdateComponentInput] (val x: Self) extends AnyVal {
+    
+    inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    
+    inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
     inline def setDeploymentType(value: ComponentDeploymentUpdateType): Self = StObject.set(x, "deploymentType", value.asInstanceOf[js.Any])
     

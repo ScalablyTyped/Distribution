@@ -27,5 +27,9 @@ open class Consumer () extends StObject {
   def receive(): js.Promise[Message] = js.native
   def receive(timeout: Double): js.Promise[Message] = js.native
   
+  def seek(messageId: MessageId): js.Promise[Null] = js.native
+  
+  def seekTimestamp(timestamp: Double): js.Promise[Null] = js.native
+  
   def unsubscribe(): js.Promise[Null] = js.native
 }

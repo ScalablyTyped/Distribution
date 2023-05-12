@@ -1,10 +1,10 @@
 package typings.hapiBasic
 
 import org.scalablytyped.runtime.Shortcut
-import typings.hapiHapi.mod.Plugin
-import typings.hapiHapi.mod.ReqRefDefaults
-import typings.hapiHapi.mod.Request
-import typings.hapiHapi.mod.ResponseToolkit
+import typings.hapiHapi.libTypesPluginMod.Plugin
+import typings.hapiHapi.libTypesRequestMod.ReqRefDefaults
+import typings.hapiHapi.libTypesRequestMod.Request
+import typings.hapiHapi.libTypesResponseMod.ResponseToolkit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ object mod extends Shortcut {
   
   @JSImport("@hapi/basic", JSImport.Namespace)
   @js.native
-  val ^ : Plugin[js.Object] = js.native
+  val ^ : Plugin[js.Object, Unit] = js.native
   
   type Validate = js.Function4[
     /* request */ Request[ReqRefDefaults], 
@@ -65,8 +65,8 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = Plugin[js.Object]
+  type _To = Plugin[js.Object, Unit]
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Plugin[js.Object] = ^
+  override def _to: Plugin[js.Object, Unit] = ^
 }

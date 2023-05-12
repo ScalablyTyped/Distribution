@@ -16,7 +16,7 @@ object libIconsInstagramFilledMod extends Shortcut {
   @js.native
   trait InstagramFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_InstagramFilledIconType: String = js.native

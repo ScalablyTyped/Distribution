@@ -59,7 +59,7 @@ object meteorMongoMod {
         * when creating new items.
         */
       def helpers[allowPartial /* <: `false` | AllowPartial */](
-        // tslint:disable-next-line no-unnecessary-generics
+        // eslint-disable-next-line no-unnecessary-generics
       helpers: /* import warning: importer.ImportType#apply Failed type conversion: allowPartial extends meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.AllowPartial ? meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.PartialHelpers<T> : meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.Helpers<T> */ js.Any
       ): Unit = js.native
       

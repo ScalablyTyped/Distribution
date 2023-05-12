@@ -9,7 +9,7 @@ trait ScheduleEntry extends StObject {
   /**
     * The approximate duration of this program, in seconds.
     */
-  var ApproximateDurationSeconds: js.UndefOr[long] = js.undefined
+  var ApproximateDurationSeconds: js.UndefOr[_Long] = js.undefined
   
   /**
     * The approximate time that the program will start playing.
@@ -66,7 +66,7 @@ object ScheduleEntry {
   @scala.inline
   implicit open class MutableBuilder[Self <: ScheduleEntry] (val x: Self) extends AnyVal {
     
-    inline def setApproximateDurationSeconds(value: long): Self = StObject.set(x, "ApproximateDurationSeconds", value.asInstanceOf[js.Any])
+    inline def setApproximateDurationSeconds(value: _Long): Self = StObject.set(x, "ApproximateDurationSeconds", value.asInstanceOf[js.Any])
     
     inline def setApproximateDurationSecondsUndefined: Self = StObject.set(x, "ApproximateDurationSeconds", js.undefined)
     

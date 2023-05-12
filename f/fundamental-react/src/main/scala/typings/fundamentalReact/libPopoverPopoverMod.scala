@@ -4,6 +4,7 @@ import typings.fundamentalReact.fundamentalReactStrings.menu_
 import typings.react.mod.Component
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactNode
+import typings.std.Element
 import typings.std.FocusEvent
 import typings.std.HTMLDivElement
 import typings.std.MouseEvent
@@ -33,9 +34,18 @@ object libPopoverPopoverMod {
     
     var disableKeyPressHandler: js.UndefOr[Boolean] = js.undefined
     
-    var disableStyles: js.UndefOr[Boolean] = js.undefined
+    var disableTriggerOnClick: js.UndefOr[Boolean] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
+    
+    /** Index of the focusable item to focus first within the Popover */
+    var firstFocusIndex: js.UndefOr[Double] = js.undefined
+    
+    /** The bounding container to use when determining if the popover is out of bounds */
+    var flipContainer: js.UndefOr[js.Array[Element]] = js.undefined
+    
+    /** If Popover is to be rendered in a modal, the parent modal manager can be passed as a prop */
+    var modalManager: js.UndefOr[js.Object] = js.undefined
     
     var noArrow: js.UndefOr[Boolean] = js.undefined
     
@@ -48,6 +58,9 @@ object libPopoverPopoverMod {
     var popperClassName: js.UndefOr[String] = js.undefined
     
     var popperProps: js.UndefOr[Any] = js.undefined
+    
+    /** Handling for show/hide popover if true show the popover */
+    var show: js.UndefOr[Boolean] = js.undefined
     
     var `type`: js.UndefOr[PopoverTypes] = js.undefined
     
@@ -81,13 +94,27 @@ object libPopoverPopoverMod {
       
       inline def setDisableKeyPressHandlerUndefined: Self = StObject.set(x, "disableKeyPressHandler", js.undefined)
       
-      inline def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
+      inline def setDisableTriggerOnClick(value: Boolean): Self = StObject.set(x, "disableTriggerOnClick", value.asInstanceOf[js.Any])
       
-      inline def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
+      inline def setDisableTriggerOnClickUndefined: Self = StObject.set(x, "disableTriggerOnClick", js.undefined)
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      
+      inline def setFirstFocusIndex(value: Double): Self = StObject.set(x, "firstFocusIndex", value.asInstanceOf[js.Any])
+      
+      inline def setFirstFocusIndexUndefined: Self = StObject.set(x, "firstFocusIndex", js.undefined)
+      
+      inline def setFlipContainer(value: js.Array[Element]): Self = StObject.set(x, "flipContainer", value.asInstanceOf[js.Any])
+      
+      inline def setFlipContainerUndefined: Self = StObject.set(x, "flipContainer", js.undefined)
+      
+      inline def setFlipContainerVarargs(value: Element*): Self = StObject.set(x, "flipContainer", js.Array(value*))
+      
+      inline def setModalManager(value: js.Object): Self = StObject.set(x, "modalManager", value.asInstanceOf[js.Any])
+      
+      inline def setModalManagerUndefined: Self = StObject.set(x, "modalManager", js.undefined)
       
       inline def setNoArrow(value: Boolean): Self = StObject.set(x, "noArrow", value.asInstanceOf[js.Any])
       
@@ -112,6 +139,10 @@ object libPopoverPopoverMod {
       inline def setPopperProps(value: Any): Self = StObject.set(x, "popperProps", value.asInstanceOf[js.Any])
       
       inline def setPopperPropsUndefined: Self = StObject.set(x, "popperProps", js.undefined)
+      
+      inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+      
+      inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
       
       inline def setType(value: PopoverTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

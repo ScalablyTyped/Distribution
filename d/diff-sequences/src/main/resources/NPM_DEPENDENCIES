@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "diff-sequences" : "29.3.1"
+      "diff-sequences" : "29.4.3"
     }
   ],
   "test-dependencies" : [
     {
-      "diff-sequences" : "29.3.1"
+      "diff-sequences" : "29.4.3"
     }
   ],
   "compile-devDependencies" : [

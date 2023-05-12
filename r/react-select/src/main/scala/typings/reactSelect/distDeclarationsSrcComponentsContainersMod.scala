@@ -28,7 +28,7 @@ object distDeclarationsSrcComponentsContainersMod {
   
   inline def indicatorsContainerCSS(): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("indicatorsContainerCSS")().asInstanceOf[CSSObjectWithLabel]
   
-  inline def valueContainerCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: ValueContainerProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("valueContainerCSS")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  inline def valueContainerCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: ValueContainerProps[Option, IsMulti, Group], unstyled: Boolean): CSSObjectWithLabel = (^.asInstanceOf[js.Dynamic].applyDynamic("valueContainerCSS")(param0.asInstanceOf[js.Any], unstyled.asInstanceOf[js.Any])).asInstanceOf[CSSObjectWithLabel]
   
   @js.native
   trait ContainerProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */]

@@ -63,7 +63,11 @@ trait MultiSelectOptions
   
   var itemTemplate: js.UndefOr[String | js.Function] = js.undefined
   
+  var label: js.UndefOr[String | js.Function | BaseLabel] = js.undefined
+  
   var maxSelectedItems: js.UndefOr[Double] = js.undefined
+  
+  var messages: js.UndefOr[MultiSelectMessages] = js.undefined
   
   var minLength: js.UndefOr[Double] = js.undefined
   
@@ -211,9 +215,17 @@ object MultiSelectOptions {
     
     inline def setItemTemplateUndefined: Self = StObject.set(x, "itemTemplate", js.undefined)
     
+    inline def setLabel(value: String | js.Function | BaseLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
     inline def setMaxSelectedItems(value: Double): Self = StObject.set(x, "maxSelectedItems", value.asInstanceOf[js.Any])
     
     inline def setMaxSelectedItemsUndefined: Self = StObject.set(x, "maxSelectedItems", js.undefined)
+    
+    inline def setMessages(value: MultiSelectMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     

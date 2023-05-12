@@ -14,12 +14,10 @@ trait Property extends StObject {
   var element: js.UndefOr[ManagedObject] = js.undefined
   
   /**
-    * Localized message describing the validation issues
-    */
-  var message: js.UndefOr[String] = js.undefined
-  
-  /**
-    * New value (external representation) as parsed and validated by the binding.
+    * New value (external representation) as propagated to the model.
+    *
+    * **Note: **the model might modify (normalize) the value again and this modification will be stored in
+    * the ManagedObject. The 'newValue' parameter of this event contains the value **before** such a normalization.
     */
   var newValue: js.UndefOr[Any] = js.undefined
   
@@ -29,7 +27,7 @@ trait Property extends StObject {
   var oldValue: js.UndefOr[Any] = js.undefined
   
   /**
-    * Name of the property for which the bound model property should have been been updated.
+    * Name of the property for which the bound model property has been updated.
     */
   var property: js.UndefOr[String] = js.undefined
   
@@ -51,10 +49,6 @@ object Property {
     inline def setElement(value: ManagedObject): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
-    
-    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
-    
-    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     inline def setNewValue(value: Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     

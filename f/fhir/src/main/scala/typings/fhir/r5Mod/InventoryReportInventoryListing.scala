@@ -16,14 +16,14 @@ trait InventoryReportInventoryListing
   var countingDateTime: js.UndefOr[String] = js.undefined
   
   /**
+    * The item or items in this listing.
+    */
+  var item: js.UndefOr[js.Array[InventoryReportInventoryListingItem]] = js.undefined
+  
+  /**
     * The status of the items.
     */
   var itemStatus: js.UndefOr[CodeableConcept] = js.undefined
-  
-  /**
-    * The item or items in this listing.
-    */
-  var items: js.UndefOr[js.Array[InventoryReportInventoryListingItems]] = js.undefined
   
   /**
     * Location of the inventory items.
@@ -44,15 +44,15 @@ object InventoryReportInventoryListing {
     
     inline def setCountingDateTimeUndefined: Self = StObject.set(x, "countingDateTime", js.undefined)
     
+    inline def setItem(value: js.Array[InventoryReportInventoryListingItem]): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    
     inline def setItemStatus(value: CodeableConcept): Self = StObject.set(x, "itemStatus", value.asInstanceOf[js.Any])
     
     inline def setItemStatusUndefined: Self = StObject.set(x, "itemStatus", js.undefined)
     
-    inline def setItems(value: js.Array[InventoryReportInventoryListingItems]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
-    
-    inline def setItemsVarargs(value: InventoryReportInventoryListingItems*): Self = StObject.set(x, "items", js.Array(value*))
+    inline def setItemVarargs(value: InventoryReportInventoryListingItem*): Self = StObject.set(x, "item", js.Array(value*))
     
     inline def setLocation(value: Reference): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

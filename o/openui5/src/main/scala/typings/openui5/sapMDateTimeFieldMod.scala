@@ -224,6 +224,7 @@ object sapMDateTimeFieldMod {
     
     /**
       * @SINCE 1.104.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:liveChange liveChange} to attached listeners.
       *
@@ -236,6 +237,8 @@ object sapMDateTimeFieldMod {
     mParameters: PreviousValue): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Gets the inner input DOM value.
       *
       * @returns The value of the input.
@@ -300,23 +303,16 @@ object sapMDateTimeFieldMod {
     oEvent: Event): Unit = js.native
     
     /**
-      * Sets a new value for property {@link #getDateValue dateValue}.
+      * Setter for property `dateValue`.
       *
-      * Holds a reference to a JavaScript Date Object. The `value` (string) property will be set according to
-      * it. Alternatively, if the `value` and `valueFormat` pair properties are supplied instead, the `dateValue`
-      * will be instantiated according to the parsed `value`. Use `dateValue` as a helper property to easily
-      * obtain the day, month, year, hours, minutes and seconds of the chosen date and time. Although possible
-      * to bind it, the recommendation is not to do it. When binding is needed, use `value` property instead.
+      * The date and time in DateTimeField as JavaScript Date object.
       *
-      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
-      *
-      * @returns Reference to `this` in order to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
-    def setDateValue(): this.type = js.native
     def setDateValue(/**
-      * New value for property `dateValue`
+      * A JavaScript Date
       */
-    oDateValue: js.Object): this.type = js.native
+    oDate: js.Date): this.type = js.native
     
     /**
       * Sets a new value for property {@link #getDisplayFormat displayFormat}.

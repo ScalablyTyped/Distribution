@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateQuerySuggestionsBlockListResponse extends StObject {
   
   /**
-    * The unique identifier of the created block list.
+    * The identifier of the block list.
     */
   var Id: js.UndefOr[QuerySuggestionsBlockListId] = js.undefined
 }

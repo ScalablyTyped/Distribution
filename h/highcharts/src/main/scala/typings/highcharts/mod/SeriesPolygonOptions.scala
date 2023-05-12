@@ -1,6 +1,6 @@
 package typings.highcharts.mod
 
-import typings.highcharts.highchartsStrings.polygon
+import typings.highcharts.highchartsStrings.polygon_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,6 +34,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var data: js.UndefOr[
     js.Array[Double | (js.Tuple2[Double | String, Double | Null]) | Null | PointOptionsObject]
   ] = js.undefined
+  
+  /**
+    * Not available
+    */
+  var dataParser: Unit
+  
+  /**
+    * Not available
+    */
+  var dataURL: Unit
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
@@ -70,19 +80,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highcharts, Highstock) This option allows grouping series in a stacked
-    * chart. The stack option can be a string or anything else, as long as the
-    * grouped series' stack options match each other after conversion into a
-    * string.
+    * Not available
     */
-  var stack: js.UndefOr[Double | String] = js.undefined
+  var stack: js.UndefOr[Double | String | Unit]
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
     * TypeScript non-optional and might be `undefined` in series objects from
     * unknown sources.
     */
-  var `type`: String | polygon
+  var `type`: String | polygon_
   
   /**
     * (Highcharts, Highstock) When using dual or multiple x axes, this number
@@ -102,8 +109,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object SeriesPolygonOptions {
   
-  inline def apply(`type`: String | polygon): SeriesPolygonOptions = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(dataParser: Unit, dataURL: Unit, `type`: String | polygon_): SeriesPolygonOptions = {
+    val __obj = js.Dynamic.literal(dataParser = dataParser.asInstanceOf[js.Any], dataURL = dataURL.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesPolygonOptions]
   }
@@ -112,6 +119,10 @@ object SeriesPolygonOptions {
   implicit open class MutableBuilder[Self <: SeriesPolygonOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[Double | (js.Tuple2[Double | String, Double | Null]) | Null | PointOptionsObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataParser(value: Unit): Self = StObject.set(x, "dataParser", value.asInstanceOf[js.Any])
+    
+    inline def setDataURL(value: Unit): Self = StObject.set(x, "dataURL", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -139,11 +150,11 @@ object SeriesPolygonOptions {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setStack(value: Double | String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    inline def setStack(value: Double | String | Unit): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
     inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     
-    inline def setType(value: String | polygon): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String | polygon_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setXAxis(value: Double | String): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     

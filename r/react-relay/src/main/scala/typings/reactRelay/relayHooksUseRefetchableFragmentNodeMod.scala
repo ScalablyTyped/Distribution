@@ -21,8 +21,8 @@ object relayHooksUseRefetchableFragmentNodeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useRefetchableFragmentNode[TQuery /* <: OperationType */, TKey /* <: KeyType[Any] | Null */](fragmentNode: ReaderFragment, parentFragmentRef: Any, componentDisplayName: String): // tslint:disable-next-line:no-unnecessary-generics
-  ReturnTypeNode[TQuery, TKey, InternalOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("useRefetchableFragmentNode")(fragmentNode.asInstanceOf[js.Any], parentFragmentRef.asInstanceOf[js.Any], componentDisplayName.asInstanceOf[js.Any])).asInstanceOf[// tslint:disable-next-line:no-unnecessary-generics
+  inline def useRefetchableFragmentNode[TQuery /* <: OperationType */, TKey /* <: KeyType[Any] | Null */](fragmentNode: ReaderFragment, parentFragmentRef: Any, componentDisplayName: String): // eslint-disable-next-line no-unnecessary-generics
+  ReturnTypeNode[TQuery, TKey, InternalOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("useRefetchableFragmentNode")(fragmentNode.asInstanceOf[js.Any], parentFragmentRef.asInstanceOf[js.Any], componentDisplayName.asInstanceOf[js.Any])).asInstanceOf[// eslint-disable-next-line no-unnecessary-generics
   ReturnTypeNode[TQuery, TKey, InternalOptions]]
   
   /* Rewritten from type alias, can be one of: 

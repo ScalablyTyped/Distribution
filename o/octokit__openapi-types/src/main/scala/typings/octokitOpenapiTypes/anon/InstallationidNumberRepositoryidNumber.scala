@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait InstallationidNumberRepositoryidNumber extends StObject {
   
-  /** The unique identifier of the installation. */
   var installation_id: Double
   
-  /** The unique identifier of the repository. */
   var repository_id: Double
 }
 object InstallationidNumberRepositoryidNumber {

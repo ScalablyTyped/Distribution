@@ -35,5 +35,8 @@ object srcLoadersCompressedTextureLoaderMod {
       onProgress: Unit,
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): CompressedTexture = js.native
+    
+    def loadAsync(url: String): js.Promise[CompressedTexture] = js.native
+    def loadAsync(url: String, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[CompressedTexture] = js.native
   }
 }

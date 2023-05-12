@@ -17,9 +17,14 @@ trait DescribeLogStreamsRequest extends StObject {
   var limit: js.UndefOr[DescribeLimit] = js.undefined
   
   /**
-    * The name of the log group.
+    * Specify either the name or ARN of the log group to view. If the log group is in a source account and you are using a monitoring account, you must use the log group ARN.   You must include either logGroupIdentifier or logGroupName, but not both.  
     */
-  var logGroupName: LogGroupName
+  var logGroupIdentifier: js.UndefOr[LogGroupIdentifier] = js.undefined
+  
+  /**
+    * The name of the log group.   You must include either logGroupIdentifier or logGroupName, but not both.  
+    */
+  var logGroupName: js.UndefOr[LogGroupName] = js.undefined
   
   /**
     * The prefix to match. If orderBy is LastEventTime, you cannot specify this parameter.
@@ -38,8 +43,8 @@ trait DescribeLogStreamsRequest extends StObject {
 }
 object DescribeLogStreamsRequest {
   
-  inline def apply(logGroupName: LogGroupName): DescribeLogStreamsRequest = {
-    val __obj = js.Dynamic.literal(logGroupName = logGroupName.asInstanceOf[js.Any])
+  inline def apply(): DescribeLogStreamsRequest = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeLogStreamsRequest]
   }
   
@@ -54,7 +59,13 @@ object DescribeLogStreamsRequest {
     
     inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
+    inline def setLogGroupIdentifier(value: LogGroupIdentifier): Self = StObject.set(x, "logGroupIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setLogGroupIdentifierUndefined: Self = StObject.set(x, "logGroupIdentifier", js.undefined)
+    
     inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
+    
+    inline def setLogGroupNameUndefined: Self = StObject.set(x, "logGroupName", js.undefined)
     
     inline def setLogStreamNamePrefix(value: LogStreamName): Self = StObject.set(x, "logStreamNamePrefix", value.asInstanceOf[js.Any])
     

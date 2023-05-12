@@ -10,6 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OutputInfo extends StObject {
   
+  /** When using the attention crop strategy, the focal point of the cropped region */
+  var attentionX: js.UndefOr[Double] = js.undefined
+  
+  var attentionY: js.UndefOr[Double] = js.undefined
+  
   var channels: `1` | `2` | `3` | `4`
   
   /** Only defined when using a crop strategy */
@@ -54,6 +59,14 @@ object OutputInfo {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: OutputInfo] (val x: Self) extends AnyVal {
+    
+    inline def setAttentionX(value: Double): Self = StObject.set(x, "attentionX", value.asInstanceOf[js.Any])
+    
+    inline def setAttentionXUndefined: Self = StObject.set(x, "attentionX", js.undefined)
+    
+    inline def setAttentionY(value: Double): Self = StObject.set(x, "attentionY", value.asInstanceOf[js.Any])
+    
+    inline def setAttentionYUndefined: Self = StObject.set(x, "attentionY", js.undefined)
     
     inline def setChannels(value: `1` | `2` | `3` | `4`): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     

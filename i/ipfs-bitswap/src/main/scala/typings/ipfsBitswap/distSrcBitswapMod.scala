@@ -1,149 +1,112 @@
 package typings.ipfsBitswap
 
-import typings.ipfsBitswap.anon.DebuggererrorDebugger
-import typings.ipfsBitswap.anon.HashLoader
-import typings.ipfsBitswap.anon.IncomingStreamTimeout
-import typings.ipfsBitswap.anon.Key
-import typings.ipfsBitswap.anon.Signal
+import typings.interfaceBlockstore.mod.Blockstore
+import typings.interfaceBlockstore.mod.Pair
+import typings.interfaceStore.mod.AwaitIterable
 import typings.ipfsBitswap.distSrcDecisionEngineMod.DecisionEngine
+import typings.ipfsBitswap.distSrcMessageMod.BitswapMessage
 import typings.ipfsBitswap.distSrcNetworkMod.Network
 import typings.ipfsBitswap.distSrcNotificationsMod.Notifications
 import typings.ipfsBitswap.distSrcStatsMod.Stats
 import typings.ipfsBitswap.distSrcWantManagerMod.WantManager
-import typings.ipfsBitswap.distSrcWantlistEntryMod.WantListEntry
-import typings.libp2p.mod.Libp2p
+import typings.ipfsBitswap.mod.Bitswap
+import typings.ipfsBitswap.mod.BitswapOptions
+import typings.ipfsBitswap.mod.BitswapWantProgressEvents
+import typings.ipfsBitswap.mod.WantListEntry
+import typings.libp2pInterfaceLibp2p.mod.Libp2p
+import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.multiformats.cidMod.CID
 import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
-import typings.std.AsyncGenerator
+import typings.multiformatsMultiaddr.mod.AbortOptions
+import typings.progressEvents.mod.ProgressOptions
 import typings.std.AsyncIterable
 import typings.std.Map
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distSrcBitswapMod {
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BaseBlockstore * / any */ @JSImport("ipfs-bitswap/dist/src/bitswap", "Bitswap")
+  @JSImport("ipfs-bitswap/dist/src/bitswap", "DefaultBitswap")
   @js.native
-  open class Bitswap protected ()
+  open class DefaultBitswap protected ()
     extends StObject
-       with typings.ipfsBitswap.distSrcTypesMod.IPFSBitswap {
-    /**
-      * @param {import('libp2p').Libp2p} libp2p
-      * @param {Blockstore} blockstore
-      * @param {object} [options]
-      * @param {boolean} [options.statsEnabled=false]
-      * @param {number} [options.statsComputeThrottleTimeout=1000]
-      * @param {number} [options.statsComputeThrottleMaxQueueSize=1000]
-      * @param {number} [options.maxInboundStreams=32]
-      * @param {number} [options.maxOutboundStreams=32]
-      * @param {number} [options.incomingStreamTimeout=30000]
-      * @param {MultihashHasherLoader} [options.hashLoader]
-      */
-    def this(libp2p: Libp2p, blockstore: Blockstore) = this()
-    def this(libp2p: Libp2p, blockstore: Blockstore, options: HashLoader) = this()
+       with Bitswap {
+    def this(
+      libp2p: Libp2p[Record[String, Any]],
+      blockstore: Blockstore[js.Object, js.Object, js.Object, js.Object, js.Object, js.Object, js.Object, js.Object]
+    ) = this()
+    def this(
+      libp2p: Libp2p[Record[String, Any]],
+      blockstore: Blockstore[js.Object, js.Object, js.Object, js.Object, js.Object, js.Object, js.Object, js.Object],
+      options: BitswapOptions
+    ) = this()
     
-    /**
-      * @private
-      * @param {PeerId} peerId
-      * @param {CID} cid
-      * @param {Uint8Array} data
-      * @param {boolean} wasWanted
-      */
-    /* private */ var _handleReceivedBlock: Any = js.native
+    def _handleReceivedBlock(
+      peerId: PeerId,
+      cid: CID[Any, Double, Double, Version],
+      data: js.typedarray.Uint8Array,
+      wasWanted: Boolean
+    ): js.Promise[Unit] = js.native
     
-    var _libp2p: Libp2p = js.native
+    /* private */ val _libp2p: Any = js.native
     
-    def _log(formatter: Any, args: Any*): Unit = js.native
-    @JSName("_log")
-    var _log_Original: DebuggererrorDebugger = js.native
+    /* private */ val _log: Any = js.native
     
     /**
       * handle new peers
-      *
-      * @param {PeerId} peerId
       */
     def _onPeerConnected(peerId: PeerId): Unit = js.native
     
     /**
       * handle peers being disconnected
-      *
-      * @param {PeerId} peerId
       */
     def _onPeerDisconnected(peerId: PeerId): Unit = js.native
     
-    var _options: IncomingStreamTimeout = js.native
-    
     /**
       * handle errors on the receiving channel
-      *
-      * @param {Error} err
       */
     def _receiveError(err: js.Error): Unit = js.native
     
     /**
       * handle messages received through the network
-      *
-      * @param {PeerId} peerId
-      * @param {BitswapMessage} incoming
       */
     def _receiveMessage(peerId: PeerId, incoming: BitswapMessage): js.Promise[Unit] = js.native
     
-    /**
-      * Sends notifications about the arrival of a block
-      *
-      * @private
-      * @param {CID} cid
-      * @param {Uint8Array} data
-      */
-    /* private */ var _sendHaveBlockNotifications: Any = js.native
+    def _updateReceiveCounters(
+      peerIdStr: String,
+      cid: CID[Any, Double, Double, Version],
+      data: js.typedarray.Uint8Array,
+      exists: Boolean
+    ): Unit = js.native
     
-    var _stats: Stats = js.native
+    var blockstore: Blockstore[js.Object, js.Object, js.Object, js.Object, js.Object, js.Object, js.Object, js.Object] = js.native
     
-    /**
-      * @private
-      * @param {string} peerIdStr
-      * @param {CID} cid
-      * @param {Uint8Array} data
-      * @param {boolean} exists
-      */
-    /* private */ var _updateReceiveCounters: Any = js.native
+    def disableStats(): Unit = js.native
     
-    var blockstore: typings.interfaceBlockstore.mod.Blockstore = js.native
+    def enableStats(): Unit = js.native
     
     var engine: DecisionEngine = js.native
     
-    def getMany(cids: js.Iterable[CID[Any, Double, Double, Version]]): AsyncGenerator[js.typedarray.Uint8Array, Unit, Any] = js.native
-    def getMany(cids: js.Iterable[CID[Any, Double, Double, Version]], options: Signal): AsyncGenerator[js.typedarray.Uint8Array, Unit, Any] = js.native
-    /**
-      * Fetch a a list of blocks by cid. If the blocks are in the local
-      * blockstore they are returned, otherwise the blocks are added to the wantlist and returned once another node sends them to us.
-      *
-      * @param {AsyncIterable<CID>|Iterable<CID>} cids
-      * @param {object} [options]
-      * @param {AbortSignal} [options.signal]
-      */
-    def getMany(cids: AsyncIterable[CID[Any, Double, Double, Version]]): AsyncGenerator[js.typedarray.Uint8Array, Unit, Any] = js.native
-    def getMany(cids: AsyncIterable[CID[Any, Double, Double, Version]], options: Signal): AsyncGenerator[js.typedarray.Uint8Array, Unit, Any] = js.native
+    /* CompleteClass */
+    override def isStarted(): Boolean = js.native
     
     var network: Network = js.native
     
     var notifications: Notifications = js.native
     
+    def peerId: PeerId = js.native
+    
     /**
-      * @type {PeerId}
+      * Get the current list of partners
       */
-    @JSName("peerId")
-    def peerId_MBitswap: typings.libp2pInterfacePeerId.mod.PeerId = js.native
+    @JSName("peers")
+    def peers_MDefaultBitswap: js.Array[PeerId] = js.native
     
     /**
       * Put the given block to the underlying blockstore and
       * send it to nodes that have it in their wantlist.
-      *
-      * @param {CID} cid
-      * @param {Uint8Array} block
-      * @param {any} [_options]
       */
     def put(cid: CID[Any, Double, Double, Version], block: js.typedarray.Uint8Array): js.Promise[Unit] = js.native
     def put(cid: CID[Any, Double, Double, Version], block: js.typedarray.Uint8Array, _options: Any): js.Promise[Unit] = js.native
@@ -151,33 +114,40 @@ object distSrcBitswapMod {
     /**
       * Put the given blocks to the underlying blockstore and
       * send it to nodes that have it them their wantlist.
-      *
-      * @param {Iterable<Pair> | AsyncIterable<Pair>} source
-      * @param {Options} [options]
       */
-    def putMany(source: js.Iterable[Pair]): AsyncGenerator[Key, Unit, Any] = js.native
-    def putMany(source: js.Iterable[Pair], options: typings.interfaceBlockstore.mod.Options): AsyncGenerator[Key, Unit, Any] = js.native
-    def putMany(source: AsyncIterable[Pair]): AsyncGenerator[Key, Unit, Any] = js.native
-    def putMany(source: AsyncIterable[Pair], options: typings.interfaceBlockstore.mod.Options): AsyncGenerator[Key, Unit, Any] = js.native
+    def putMany(source: js.Iterable[Pair]): AwaitIterable[CID[Any, Double, Double, Version]] = js.native
+    def putMany(source: js.Iterable[Pair], options: AbortOptions): AwaitIterable[CID[Any, Double, Double, Version]] = js.native
+    def putMany(source: AsyncIterable[Pair]): AwaitIterable[CID[Any, Double, Double, Version]] = js.native
+    def putMany(source: AsyncIterable[Pair], options: AbortOptions): AwaitIterable[CID[Any, Double, Double, Version]] = js.native
     
-    var started: Boolean = js.native
+    /**
+      * This method will be invoked to start the component.
+      *
+      * It should not assume that any other components have been started.
+      */
+    /* CompleteClass */
+    override def start(): Unit | js.Promise[Unit] = js.native
+    
+    /* private */ var started: Any = js.native
+    
+    @JSName("stats")
+    val stats_DefaultBitswap: Stats = js.native
+    
+    /**
+      * This method will be invoked to stop the component.
+      *
+      * It should not assume any other components are running when it is called.
+      */
+    /* CompleteClass */
+    override def stop(): Unit | js.Promise[Unit] = js.native
+    
+    def want(
+      cid: CID[Any, Double, Double, Version],
+      options: AbortOptions & ProgressOptions[BitswapWantProgressEvents]
+    ): js.Promise[js.typedarray.Uint8Array] = js.native
     
     def wantlistForPeer(peerId: PeerId, _options: Any): Map[String, WantListEntry] = js.native
     
     var wm: WantManager = js.native
   }
-  
-  type BitswapMessage = typings.ipfsBitswap.distSrcMessageMod.BitswapMessage
-  
-  type Blockstore = typings.interfaceBlockstore.mod.Blockstore
-  
-  type IPFSBitswap = typings.ipfsBitswap.distSrcTypesMod.IPFSBitswap
-  
-  type MultihashHasherLoader = typings.ipfsBitswap.distSrcTypesMod.MultihashHasherLoader
-  
-  type Options = typings.interfaceBlockstore.mod.Options
-  
-  type Pair = typings.interfaceBlockstore.mod.Pair
-  
-  type PeerId = typings.libp2pInterfacePeerId.mod.PeerId
 }

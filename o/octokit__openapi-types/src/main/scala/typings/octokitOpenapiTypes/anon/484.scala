@@ -6,21 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `484` extends StObject {
   
-  /** Page number of the results to fetch. */
-  var page: js.UndefOr[Double] = js.undefined
+  var content: ApplicationjsonNodeidUpdatedat
 }
 object `484` {
   
-  inline def apply(): `484` = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(content: ApplicationjsonNodeidUpdatedat): `484` = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[`484`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `484`] (val x: Self) extends AnyVal {
     
-    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
-    
-    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setContent(value: ApplicationjsonNodeidUpdatedat): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }
 }

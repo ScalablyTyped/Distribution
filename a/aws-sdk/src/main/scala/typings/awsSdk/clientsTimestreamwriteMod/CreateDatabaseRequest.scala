@@ -12,7 +12,7 @@ trait CreateDatabaseRequest extends StObject {
   var DatabaseName: ResourceCreateAPIName
   
   /**
-    * The KMS key for the database. If the KMS key is not specified, the database will be encrypted with a Timestream managed KMS key located in your account. Refer to Amazon Web Services managed KMS keys for more info.
+    * The KMS key for the database. If the KMS key is not specified, the database will be encrypted with a Timestream managed KMS key located in your account. For more information, see Amazon Web Services managed keys.
     */
   var KmsKeyId: js.UndefOr[StringValue2048] = js.undefined
   

@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DocumentSymbolProvider extends StObject {
   
   /**
-    * Provide symbol information for the given document.
-    *
-    * @param document The document in which the command was invoked.
-    * @param token A cancellation token.
-    * @return An array of document highlights or a thenable that resolves to such. The lack of a result can be
-    * signaled by returning `undefined`, `null`, or an empty array.
-    */
+  		 * Provide symbol information for the given document.
+  		 *
+  		 * @param document The document in which the command was invoked.
+  		 * @param token A cancellation token.
+  		 * @return An array of document highlights or a thenable that resolves to such. The lack of a result can be
+  		 * signaled by returning `undefined`, `null`, or an empty array.
+  		 */
   def provideDocumentSymbols(document: TextDocument, token: CancellationToken): ProviderResult[js.Array[DocumentSymbol | SymbolInformation]]
 }
 object DocumentSymbolProvider {

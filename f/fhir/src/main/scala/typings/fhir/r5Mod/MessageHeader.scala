@@ -11,10 +11,10 @@ trait MessageHeader
   
   var _definition: js.UndefOr[Element] = js.undefined
   
-  var _eventUri: js.UndefOr[Element] = js.undefined
+  var _eventCanonical: js.UndefOr[Element] = js.undefined
   
   /**
-    * Usually only for the request but can be used in a response.
+    * Usually only for the request but can be used in a response.Proposing to remove and rely on Task to convey this information.
     */
   var author: js.UndefOr[Reference] = js.undefined
   
@@ -29,19 +29,14 @@ trait MessageHeader
   var destination: js.UndefOr[js.Array[MessageHeaderDestination]] = js.undefined
   
   /**
-    * Usually only for the request but can be used in a response.
+    * The time of the event will be found in the focus resource. The time of the message will be found in [Bundle.timestamp](bundle-definitions.html#Bundle.timestamp).
     */
-  var enterer: js.UndefOr[Reference] = js.undefined
+  var eventCanonical: js.UndefOr[String] = js.undefined
   
   /**
     * The time of the event will be found in the focus resource. The time of the message will be found in [Bundle.timestamp](bundle-definitions.html#Bundle.timestamp).
     */
   var eventCoding: js.UndefOr[Coding] = js.undefined
-  
-  /**
-    * The time of the event will be found in the focus resource. The time of the message will be found in [Bundle.timestamp](bundle-definitions.html#Bundle.timestamp).
-    */
-  var eventUri: js.UndefOr[String] = js.undefined
   
   /**
     * The data is defined where the transaction type is defined. The transaction data is always included in the bundle that is the full message.  Only the root resource is specified.  The resources it references should be contained in the bundle but are not also listed here.  Multiple repetitions are allowed to cater for merges and other situations with multiple focal targets.
@@ -63,12 +58,12 @@ trait MessageHeader
   var response: js.UndefOr[MessageHeaderResponse] = js.undefined
   
   /**
-    * Usually only for the request but can be used in a response.
+    * Usually only for the request but can be used in a response.Proposing to remove and rely on Task to convey this information.
     */
   var responsible: js.UndefOr[Reference] = js.undefined
   
   /**
-    * Use case is for where a (trusted) sending system is responsible for multiple organizations, and therefore cannot differentiate based on source endpoint / authentication alone.
+    * Use case is for where a (trusted) sending system is responsible for multiple organizations, and therefore cannot differentiate based on source endpoint / authentication alone. Proposing to remove and rely on Task to convey this information.
     */
   var sender: js.UndefOr[Reference] = js.undefined
   
@@ -101,17 +96,13 @@ object MessageHeader {
     
     inline def setDestinationVarargs(value: MessageHeaderDestination*): Self = StObject.set(x, "destination", js.Array(value*))
     
-    inline def setEnterer(value: Reference): Self = StObject.set(x, "enterer", value.asInstanceOf[js.Any])
+    inline def setEventCanonical(value: String): Self = StObject.set(x, "eventCanonical", value.asInstanceOf[js.Any])
     
-    inline def setEntererUndefined: Self = StObject.set(x, "enterer", js.undefined)
+    inline def setEventCanonicalUndefined: Self = StObject.set(x, "eventCanonical", js.undefined)
     
     inline def setEventCoding(value: Coding): Self = StObject.set(x, "eventCoding", value.asInstanceOf[js.Any])
     
     inline def setEventCodingUndefined: Self = StObject.set(x, "eventCoding", js.undefined)
-    
-    inline def setEventUri(value: String): Self = StObject.set(x, "eventUri", value.asInstanceOf[js.Any])
-    
-    inline def setEventUriUndefined: Self = StObject.set(x, "eventUri", js.undefined)
     
     inline def setFocus(value: js.Array[Reference]): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
@@ -143,8 +134,8 @@ object MessageHeader {
     
     inline def set_definitionUndefined: Self = StObject.set(x, "_definition", js.undefined)
     
-    inline def set_eventUri(value: Element): Self = StObject.set(x, "_eventUri", value.asInstanceOf[js.Any])
+    inline def set_eventCanonical(value: Element): Self = StObject.set(x, "_eventCanonical", value.asInstanceOf[js.Any])
     
-    inline def set_eventUriUndefined: Self = StObject.set(x, "_eventUri", js.undefined)
+    inline def set_eventCanonicalUndefined: Self = StObject.set(x, "_eventCanonical", js.undefined)
   }
 }

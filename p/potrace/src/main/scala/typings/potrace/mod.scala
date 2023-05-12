@@ -1,6 +1,6 @@
 package typings.potrace
 
-import typings.jimp.mod.DepreciatedJimp
+import typings.jimp.mod.Jimp
 import typings.node.bufferMod.global.Buffer
 import typings.potrace.potraceStrings.auto
 import typings.potrace.potraceStrings.black
@@ -34,10 +34,7 @@ object mod {
       image: String,
       callback: js.Function2[/* posterizer */ this.type, /* error */ js.Error | Null, Unit]
     ): Unit = js.native
-    def loadImage(
-      image: DepreciatedJimp,
-      callback: js.Function2[/* posterizer */ this.type, /* error */ js.Error | Null, Unit]
-    ): Unit = js.native
+    def loadImage(image: Jimp, callback: js.Function2[/* posterizer */ this.type, /* error */ js.Error | Null, Unit]): Unit = js.native
     def loadImage(
       image: Buffer,
       callback: js.Function2[/* posterizer */ this.type, /* error */ js.Error | Null, Unit]
@@ -58,10 +55,7 @@ object mod {
     def getSymbol(id: String): String = js.native
     
     def loadImage(image: String, callback: js.Function2[/* potrace */ this.type, /* error */ js.Error | Null, Unit]): Unit = js.native
-    def loadImage(
-      image: DepreciatedJimp,
-      callback: js.Function2[/* potrace */ this.type, /* error */ js.Error | Null, Unit]
-    ): Unit = js.native
+    def loadImage(image: Jimp, callback: js.Function2[/* potrace */ this.type, /* error */ js.Error | Null, Unit]): Unit = js.native
     def loadImage(image: Buffer, callback: js.Function2[/* potrace */ this.type, /* error */ js.Error | Null, Unit]): Unit = js.native
     
     def setParameters(params: PotraceOptions): Unit = js.native
@@ -77,11 +71,11 @@ object mod {
     cb: js.Function3[/* error */ js.Error | Null, /* svg */ String, /* posterizer */ Posterizer, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("posterize")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def posterize(
-    file: DepreciatedJimp,
+    file: Jimp,
     cb: js.Function3[/* error */ js.Error | Null, /* svg */ String, /* posterizer */ Posterizer, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("posterize")(file.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def posterize(
-    file: DepreciatedJimp,
+    file: Jimp,
     options: PosterizerOptions,
     cb: js.Function3[/* error */ js.Error | Null, /* svg */ String, /* posterizer */ Posterizer, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("posterize")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -105,11 +99,11 @@ object mod {
     cb: js.Function3[/* error */ js.Error | Null, /* svg */ String, /* potrace */ Potrace, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trace")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def trace(
-    file: DepreciatedJimp,
+    file: Jimp,
     cb: js.Function3[/* error */ js.Error | Null, /* svg */ String, /* potrace */ Potrace, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trace")(file.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def trace(
-    file: DepreciatedJimp,
+    file: Jimp,
     options: PotraceOptions,
     cb: js.Function3[/* error */ js.Error | Null, /* svg */ String, /* potrace */ Potrace, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trace")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]

@@ -7,27 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OpenHours extends StObject {
   
   /**
-    * Rules for Custom Channel.
+    * Specifies the schedule settings for the custom channel.
     */
   var CUSTOM: js.UndefOr[MapOfListOfOpenHoursRules] = js.undefined
   
   /**
-    * Rules for Email Channel.
+    * Specifies the schedule settings for the email channel.
     */
   var EMAIL: js.UndefOr[MapOfListOfOpenHoursRules] = js.undefined
   
   /**
-    * Rules for Push Channel.
+    * Specifies the schedule settings for the push channel.
     */
   var PUSH: js.UndefOr[MapOfListOfOpenHoursRules] = js.undefined
   
   /**
-    * Rules for SMS Channel.
+    * Specifies the schedule settings for the SMS channel.
     */
   var SMS: js.UndefOr[MapOfListOfOpenHoursRules] = js.undefined
   
   /**
-    * Rules for Voice Channel.
+    * Specifies the schedule settings for the voice channel.
     */
   var VOICE: js.UndefOr[MapOfListOfOpenHoursRules] = js.undefined
 }

@@ -1,8 +1,10 @@
 package typings.pixiGraphics
 
+import typings.pixiColor.libColorMod.ColorSource
 import typings.pixiConstants.mod.BLEND_MODES
 import typings.pixiCore.libTexturesResourcesResourceMod.Resource
 import typings.pixiCore.mod.BatchDrawCall
+import typings.pixiCore.mod.Color
 import typings.pixiCore.mod.Matrix
 import typings.pixiCore.mod.Point
 import typings.pixiCore.mod.Polygon
@@ -11,6 +13,7 @@ import typings.pixiCore.mod.Shader
 import typings.pixiCore.mod.Texture
 import typings.pixiDisplay.libDisplayObjectMod.DisplayObject
 import typings.pixiDisplay.mod.Container
+import typings.pixiGraphics.anon.Adaptive
 import typings.pixiGraphics.libConstMod.LINE_CAP
 import typings.pixiGraphics.libConstMod.LINE_JOIN
 import typings.pixiGraphics.libGraphicsGeometryMod.GraphicsGeometry
@@ -85,7 +88,7 @@ object libGraphicsMod {
       */
     /* protected */ def _resolveDirectShader(renderer: Renderer): Shader = js.native
     
-    /* protected */ var _tint: Double = js.native
+    /* protected */ var _tintColor: Color = js.native
     
     /* protected */ var _transformID: Double = js.native
     
@@ -113,13 +116,16 @@ object libGraphicsMod {
     ): this.type = js.native
     
     /**
-      * The arcTo() method creates an arc/curve between two tangents on the canvas.
+      * The `arcTo` method creates an arc/curve between two tangents on the canvas.
+      * The first tangent is from the start point to the first control point,
+      * and the second tangent is from the first control point to the second control point.
+      * Note that the second control point is not necessarily the end point of the arc.
       *
       * "borrowed" from https://code.google.com/p/fxcanvas/ - thanks google!
-      * @param x1 - The x-coordinate of the first tangent point of the arc
-      * @param y1 - The y-coordinate of the first tangent point of the arc
-      * @param x2 - The x-coordinate of the end of the arc
-      * @param y2 - The y-coordinate of the end of the arc
+      * @param x1 - The x-coordinate of the first control point of the arc
+      * @param y1 - The y-coordinate of the first control point of the arc
+      * @param x2 - The x-coordinate of the second control point of the arc
+      * @param y2 - The y-coordinate of the second control point of the arc
       * @param radius - The radius of the arc
       * @returns - This Graphics object. Good for chaining method calls
       */
@@ -137,14 +143,14 @@ object libGraphicsMod {
     /**
       * Specifies a simple one-color fill that subsequent calls to other Graphics methods
       * (such as lineTo() or drawCircle()) use when drawing.
-      * @param color - the color of the fill
-      * @param alpha - the alpha of the fill
-      * @returns - This Graphics object. Good for chaining method calls
+      * @param {PIXI.ColorSource} color - the color of the fill
+      * @param alpha - the alpha of the fill, will override the color's alpha
+      * @returns - This Graphics object. Suitable for chaining method calls
       */
     def beginFill(): this.type = js.native
-    def beginFill(color: Double): this.type = js.native
-    def beginFill(color: Double, alpha: Double): this.type = js.native
     def beginFill(color: Unit, alpha: Double): this.type = js.native
+    def beginFill(color: ColorSource): this.type = js.native
+    def beginFill(color: ColorSource, alpha: Double): this.type = js.native
     
     /**
       * Begin adding holes to the last draw shape
@@ -159,10 +165,10 @@ object libGraphicsMod {
     /**
       * Begin the texture fill.
       * Note: The wrap mode of the texture is forced to REPEAT on render.
-      * @param options - Object object.
+      * @param options - Fill style object.
       * @param {PIXI.Texture} [options.texture=PIXI.Texture.WHITE] - Texture to fill
-      * @param {number} [options.color=0xffffff] - Background to fill behind texture
-      * @param {number} [options.alpha=1] - Alpha of fill
+      * @param {PIXI.ColorSource} [options.color=0xffffff] - Background to fill behind texture
+      * @param {number} [options.alpha] - Alpha of fill, overrides the color's alpha
       * @param {PIXI.Matrix} [options.matrix=null] - Transform matrix
       * @returns {PIXI.Graphics} This Graphics object. Good for chaining method calls
       */
@@ -325,8 +331,8 @@ object libGraphicsMod {
       * method or the drawCircle() method.
       * @param options - Line style options
       * @param {number} [options.width=0] - width of the line to draw, will update the objects stored style
-      * @param {number} [options.color=0x0] - color of the line to draw, will update the objects stored style
-      * @param {number} [options.alpha=1] - alpha of the line to draw, will update the objects stored style
+      * @param {PIXI.ColorSource} [options.color=0x0] - color of the line to draw, will update the objects stored style
+      * @param {number} [options.alpha] - alpha of the line to draw, will update the objects stored style
       * @param {number} [options.alignment=0.5] - alignment of the line to draw, (0 = inner, 0.5 = middle, 1 = outer).
       *        WebGL only.
       * @param {boolean} [options.native=false] - If true the lines will be draw using LINES instead of TRIANGLE_STRIP
@@ -349,14 +355,6 @@ object libGraphicsMod {
       * @returns - This Graphics object. Good for chaining method calls
       */
     def lineStyle(width: Double): this.type = js.native
-    def lineStyle(width: Double, color: Double): this.type = js.native
-    def lineStyle(width: Double, color: Double, alpha: Double): this.type = js.native
-    def lineStyle(width: Double, color: Double, alpha: Double, alignment: Double): this.type = js.native
-    def lineStyle(width: Double, color: Double, alpha: Double, alignment: Double, native: Boolean): this.type = js.native
-    def lineStyle(width: Double, color: Double, alpha: Double, alignment: Unit, native: Boolean): this.type = js.native
-    def lineStyle(width: Double, color: Double, alpha: Unit, alignment: Double): this.type = js.native
-    def lineStyle(width: Double, color: Double, alpha: Unit, alignment: Double, native: Boolean): this.type = js.native
-    def lineStyle(width: Double, color: Double, alpha: Unit, alignment: Unit, native: Boolean): this.type = js.native
     def lineStyle(width: Double, color: Unit, alpha: Double): this.type = js.native
     def lineStyle(width: Double, color: Unit, alpha: Double, alignment: Double): this.type = js.native
     def lineStyle(width: Double, color: Unit, alpha: Double, alignment: Double, native: Boolean): this.type = js.native
@@ -364,13 +362,21 @@ object libGraphicsMod {
     def lineStyle(width: Double, color: Unit, alpha: Unit, alignment: Double): this.type = js.native
     def lineStyle(width: Double, color: Unit, alpha: Unit, alignment: Double, native: Boolean): this.type = js.native
     def lineStyle(width: Double, color: Unit, alpha: Unit, alignment: Unit, native: Boolean): this.type = js.native
+    def lineStyle(width: Double, color: ColorSource): this.type = js.native
+    def lineStyle(width: Double, color: ColorSource, alpha: Double): this.type = js.native
+    def lineStyle(width: Double, color: ColorSource, alpha: Double, alignment: Double): this.type = js.native
+    def lineStyle(width: Double, color: ColorSource, alpha: Double, alignment: Double, native: Boolean): this.type = js.native
+    def lineStyle(width: Double, color: ColorSource, alpha: Double, alignment: Unit, native: Boolean): this.type = js.native
+    def lineStyle(width: Double, color: ColorSource, alpha: Unit, alignment: Double): this.type = js.native
+    def lineStyle(width: Double, color: ColorSource, alpha: Unit, alignment: Double, native: Boolean): this.type = js.native
+    def lineStyle(width: Double, color: ColorSource, alpha: Unit, alignment: Unit, native: Boolean): this.type = js.native
     
     /**
       * Like line style but support texture for line fill.
       * @param [options] - Collection of options for setting line style.
       * @param {number} [options.width=0] - width of the line to draw, will update the objects stored style
       * @param {PIXI.Texture} [options.texture=PIXI.Texture.WHITE] - Texture to use
-      * @param {number} [options.color=0x0] - color of the line to draw, will update the objects stored style.
+      * @param {PIXI.ColorSource} [options.color=0x0] - color of the line to draw, will update the objects stored style.
       *  Default 0xFFFFFF if texture present.
       * @param {number} [options.alpha=1] - alpha of the line to draw, will update the objects stored style
       * @param {PIXI.Matrix} [options.matrix=null] - Texture matrix to transform texture
@@ -401,6 +407,12 @@ object libGraphicsMod {
       * @returns - This Graphics object. Good for chaining method calls
       */
     def moveTo(x: Double, y: Double): this.type = js.native
+    
+    /**
+      * Normalize the color input from options for line style or fill
+      * @param {PIXI.IFillStyleOptions} options - Fill style object.
+      */
+    /* private */ var normalizeColor: Any = js.native
     
     /** Renderer plugin for batching */
     var pluginName: String = js.native
@@ -446,8 +458,8 @@ object libGraphicsMod {
       * 0xFFFFFF will remove any tint effect.
       * @default 0xFFFFFF
       */
-    def tint: Double = js.native
-    def tint_=(value: Double): Unit = js.native
+    def tint: ColorSource = js.native
+    def tint_=(value: ColorSource): Unit = js.native
     
     /** Copy of the object vertex data. */
     /* protected */ var vertexData: js.typedarray.Float32Array = js.native
@@ -467,13 +479,28 @@ object libGraphicsMod {
     @js.native
     def _TEMP_POINT: Point = js.native
     inline def _TEMP_POINT_=(x: Point): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TEMP_POINT")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Graphics curves resolution settings. If `adaptive` flag is set to `true`,
+      * the resolution is calculated based on the curve's length to ensure better visual quality.
+      * Adaptive draw works with `bezierCurveTo` and `quadraticCurveTo`.
+      * @static
+      * @property {boolean} [adaptive=true] - flag indicating if the resolution should be adaptive
+      * @property {number} [maxLength=10] - maximal length of a single segment of the curve (if adaptive = false, ignored)
+      * @property {number} [minSegments=8] - minimal number of segments in the curve (if adaptive = false, ignored)
+      * @property {number} [maxSegments=2048] - maximal number of segments in the curve (if adaptive = false, ignored)
+      * @property {number} [epsilon=0.0001] - precision of the curve fitting
+      */
+    @JSImport("@pixi/graphics/lib/Graphics", "Graphics.curves")
+    @js.native
+    val curves: Adaptive = js.native
   }
   
   trait IFillStyleOptions extends StObject {
     
     var alpha: js.UndefOr[Double] = js.undefined
     
-    var color: js.UndefOr[Double] = js.undefined
+    var color: js.UndefOr[ColorSource] = js.undefined
     
     var matrix: js.UndefOr[Matrix] = js.undefined
     
@@ -493,9 +520,11 @@ object libGraphicsMod {
       
       inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
       
-      inline def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: ColorSource): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      
+      inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
       
       inline def setMatrix(value: Matrix): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
       

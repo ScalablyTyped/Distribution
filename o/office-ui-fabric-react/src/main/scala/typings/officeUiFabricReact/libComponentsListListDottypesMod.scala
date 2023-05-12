@@ -315,6 +315,28 @@ object libComponentsListListDottypesMod {
       ] = js.undefined
     
     /**
+      * Method to call when trying to render an item conditionally.
+      *
+      * When this method returns `null` the cell will be skipped in the render.
+      *
+      * This prop is mutually exclusive with `onRenderCell` and when `onRenderCellConditional` is set,
+      * `onRenderCell` will not be called.
+      *
+      * @param item - The data associated with the cell that is being rendered.
+      * @param index - The index of the cell being rendered.
+      * @param isScrolling - True if the list is being scrolled. May be useful for rendering a placeholder if your cells
+      * are complex.
+      */
+    var onRenderCellConditional: js.UndefOr[
+        js.Function3[
+          /* item */ js.UndefOr[T], 
+          /* index */ js.UndefOr[Double], 
+          /* isScrolling */ js.UndefOr[Boolean], 
+          ReactNode | Null
+        ]
+      ] = js.undefined
+    
+    /**
       * Called when the List will render a page.
       * Override this to control how cells are rendered within a page.
       */
@@ -444,6 +466,12 @@ object libComponentsListListDottypesMod {
       inline def setOnRenderCell(
         value: (/* item */ js.UndefOr[T], /* index */ js.UndefOr[Double], /* isScrolling */ js.UndefOr[Boolean]) => ReactNode
       ): Self = StObject.set(x, "onRenderCell", js.Any.fromFunction3(value))
+      
+      inline def setOnRenderCellConditional(
+        value: (/* item */ js.UndefOr[T], /* index */ js.UndefOr[Double], /* isScrolling */ js.UndefOr[Boolean]) => ReactNode | Null
+      ): Self = StObject.set(x, "onRenderCellConditional", js.Any.fromFunction3(value))
+      
+      inline def setOnRenderCellConditionalUndefined: Self = StObject.set(x, "onRenderCellConditional", js.undefined)
       
       inline def setOnRenderCellUndefined: Self = StObject.set(x, "onRenderCell", js.undefined)
       

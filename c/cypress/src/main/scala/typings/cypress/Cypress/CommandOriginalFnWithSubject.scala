@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommandOriginalFnWithSubject[T /* <: /* keyof cypress.Cypress.ChainableMethods<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 88, starting with typings.cypress.cypressStrings.as, typings.cypress.cypressStrings.title, typings.cypress.cypressStrings.clearLocalStorage */ Any */, S] extends CallableFunction {
+trait CommandOriginalFnWithSubject[T /* <: /* keyof cypress.Cypress.ChainableMethods<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 93, starting with typings.cypress.cypressStrings.as, typings.cypress.cypressStrings.title, typings.cypress.cypressStrings.clearAllCookies */ Any */, S] extends CallableFunction {
   
   def apply(
     prevSubject: S,

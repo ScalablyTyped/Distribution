@@ -12,6 +12,10 @@ object buildSrcCommonTimeMod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def addHrTimes(time1: HrTime, time2: HrTime): HrTime = (^.asInstanceOf[js.Dynamic].applyDynamic("addHrTimes")(time1.asInstanceOf[js.Any], time2.asInstanceOf[js.Any])).asInstanceOf[HrTime]
+  
+  inline def getTimeOrigin(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimeOrigin")().asInstanceOf[Double]
+  
   inline def hrTime(): HrTime = ^.asInstanceOf[js.Dynamic].applyDynamic("hrTime")().asInstanceOf[HrTime]
   inline def hrTime(performanceNow: Double): HrTime = ^.asInstanceOf[js.Dynamic].applyDynamic("hrTime")(performanceNow.asInstanceOf[js.Any]).asInstanceOf[HrTime]
   
@@ -28,6 +32,8 @@ object buildSrcCommonTimeMod {
   inline def isTimeInput(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTimeInput")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isTimeInputHrTime(value: Any): /* is @opentelemetry/api.@opentelemetry/api/build/src/common/Time.HrTime */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTimeInputHrTime")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @opentelemetry/api.@opentelemetry/api/build/src/common/Time.HrTime */ Boolean]
+  
+  inline def millisToHrTime(epochMillis: Double): HrTime = ^.asInstanceOf[js.Dynamic].applyDynamic("millisToHrTime")(epochMillis.asInstanceOf[js.Any]).asInstanceOf[HrTime]
   
   inline def timeInputToHrTime(time: TimeInput): HrTime = ^.asInstanceOf[js.Dynamic].applyDynamic("timeInputToHrTime")(time.asInstanceOf[js.Any]).asInstanceOf[HrTime]
 }

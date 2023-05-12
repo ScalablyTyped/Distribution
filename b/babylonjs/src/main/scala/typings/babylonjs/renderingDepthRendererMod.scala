@@ -3,6 +3,7 @@ package typings.babylonjs
 import typings.babylonjs.camerasCameraMod.Camera
 import typings.babylonjs.materialsMaterialMod.Material
 import typings.babylonjs.materialsTexturesRenderTargetTextureMod.RenderTargetTexture
+import typings.babylonjs.mathsMathDotcolorMod.Color4
 import typings.babylonjs.meshesAbstractMeshMod.AbstractMesh
 import typings.babylonjs.meshesSubMeshMod.SubMesh
 import typings.babylonjs.sceneMod.Scene
@@ -22,58 +23,32 @@ object renderingDepthRendererMod {
       * @param type The texture type of the depth map (default: Engine.TEXTURETYPE_FLOAT)
       * @param camera The camera to be used to render the depth map (default: scene's active camera)
       * @param storeNonLinearDepth Defines whether the depth is stored linearly like in Babylon Shadows or directly like glFragCoord.z
-      * @param samplingMode The sampling mode to be used with the render target (Linear, Nearest...)
+      * @param samplingMode The sampling mode to be used with the render target (Linear, Nearest...) (default: TRILINEAR_SAMPLINGMODE)
+      * @param storeCameraSpaceZ Defines whether the depth stored is the Z coordinate in camera space. If true, storeNonLinearDepth has no effect. (Default: false)
+      * @param name Name of the render target (default: DepthRenderer)
       */
-    def this(scene: Scene) = this()
-    def this(scene: Scene, `type`: Double) = this()
-    def this(scene: Scene, `type`: Double, camera: Nullable[Camera]) = this()
-    def this(scene: Scene, `type`: Unit, camera: Nullable[Camera]) = this()
-    def this(scene: Scene, `type`: Double, camera: Unit, storeNonLinearDepth: Boolean) = this()
-    def this(scene: Scene, `type`: Double, camera: Nullable[Camera], storeNonLinearDepth: Boolean) = this()
-    def this(scene: Scene, `type`: Unit, camera: Unit, storeNonLinearDepth: Boolean) = this()
-    def this(scene: Scene, `type`: Unit, camera: Nullable[Camera], storeNonLinearDepth: Boolean) = this()
-    def this(scene: Scene, `type`: Double, camera: Unit, storeNonLinearDepth: Boolean, samplingMode: Double) = this()
-    def this(scene: Scene, `type`: Double, camera: Unit, storeNonLinearDepth: Unit, samplingMode: Double) = this()
     def this(
       scene: Scene,
-      `type`: Double,
-      camera: Nullable[Camera],
-      storeNonLinearDepth: Boolean,
-      samplingMode: Double
-    ) = this()
-    def this(
-      scene: Scene,
-      `type`: Double,
-      camera: Nullable[Camera],
-      storeNonLinearDepth: Unit,
-      samplingMode: Double
-    ) = this()
-    def this(scene: Scene, `type`: Unit, camera: Unit, storeNonLinearDepth: Boolean, samplingMode: Double) = this()
-    def this(scene: Scene, `type`: Unit, camera: Unit, storeNonLinearDepth: Unit, samplingMode: Double) = this()
-    def this(
-      scene: Scene,
-      `type`: Unit,
-      camera: Nullable[Camera],
-      storeNonLinearDepth: Boolean,
-      samplingMode: Double
-    ) = this()
-    def this(
-      scene: Scene,
-      `type`: Unit,
-      camera: Nullable[Camera],
-      storeNonLinearDepth: Unit,
-      samplingMode: Double
+      `type`: js.UndefOr[Double],
+      camera: js.UndefOr[Nullable[Camera]],
+      storeNonLinearDepth: js.UndefOr[Boolean],
+      samplingMode: js.UndefOr[Double],
+      storeCameraSpaceZ: js.UndefOr[Boolean],
+      name: js.UndefOr[String]
     ) = this()
     
     /* private */ var _camera: Any = js.native
-    
-    /* private */ val _clearColor: Any = js.native
     
     /* private */ var _depthMap: Any = js.native
     
     /* private */ var _scene: Any = js.native
     
+    /* private */ val _storeCameraSpaceZ: Any = js.native
+    
     /* private */ val _storeNonLinearDepth: Any = js.native
+    
+    /** Color used to clear the depth texture. Default: (1,0,0,1) */
+    var clearColor: Color4 = js.native
     
     /**
       * Disposes of the depth renderer.
@@ -102,6 +77,11 @@ object renderingDepthRendererMod {
       * @returns if the depth renderer is ready to render the depth map
       */
     def isReady(subMesh: SubMesh, useInstances: Boolean): Boolean = js.native
+    
+    /** If true, reverse the culling of materials before writing to the depth texture.
+      * So, basically, when "true", back facing instead of front facing faces are rasterized into the texture
+      */
+    var reverseCulling: Boolean = js.native
     
     def setMaterialForRendering(mesh: js.Array[AbstractMesh]): Unit = js.native
     def setMaterialForRendering(mesh: js.Array[AbstractMesh], material: Material): Unit = js.native

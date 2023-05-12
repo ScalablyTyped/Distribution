@@ -9,7 +9,7 @@ trait OriginAccessControlConfig extends StObject {
   /**
     * A description of the origin access control.
     */
-  var Description: String
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * A name to identify the origin access control.
@@ -17,7 +17,7 @@ trait OriginAccessControlConfig extends StObject {
   var Name: String
   
   /**
-    * The type of origin that this origin access control is for. The only valid value is s3.
+    * The type of origin that this origin access control is for.
     */
   var OriginAccessControlOriginType: OriginAccessControlOriginTypes
   
@@ -34,13 +34,12 @@ trait OriginAccessControlConfig extends StObject {
 object OriginAccessControlConfig {
   
   inline def apply(
-    Description: String,
     Name: String,
     OriginAccessControlOriginType: OriginAccessControlOriginTypes,
     SigningBehavior: OriginAccessControlSigningBehaviors,
     SigningProtocol: OriginAccessControlSigningProtocols
   ): OriginAccessControlConfig = {
-    val __obj = js.Dynamic.literal(Description = Description.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], OriginAccessControlOriginType = OriginAccessControlOriginType.asInstanceOf[js.Any], SigningBehavior = SigningBehavior.asInstanceOf[js.Any], SigningProtocol = SigningProtocol.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], OriginAccessControlOriginType = OriginAccessControlOriginType.asInstanceOf[js.Any], SigningBehavior = SigningBehavior.asInstanceOf[js.Any], SigningProtocol = SigningProtocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[OriginAccessControlConfig]
   }
   
@@ -48,6 +47,8 @@ object OriginAccessControlConfig {
   implicit open class MutableBuilder[Self <: OriginAccessControlConfig] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

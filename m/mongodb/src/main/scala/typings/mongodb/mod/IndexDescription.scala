@@ -2,6 +2,7 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.bson.mod.Document
+import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +26,7 @@ trait IndexDescription extends StObject {
   
   var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var key: StringDictionary[IndexDirection] | (typings.std.Map[String, IndexDirection])
+  var key: StringDictionary[IndexDirection] | (Map[String, IndexDirection])
   
   var language_override: js.UndefOr[String] = js.undefined
   
@@ -53,7 +54,7 @@ trait IndexDescription extends StObject {
 }
 object IndexDescription {
   
-  inline def apply(key: StringDictionary[IndexDirection] | (typings.std.Map[String, IndexDirection])): IndexDescription = {
+  inline def apply(key: StringDictionary[IndexDirection] | (Map[String, IndexDirection])): IndexDescription = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexDescription]
   }
@@ -93,7 +94,7 @@ object IndexDescription {
     
     inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
-    inline def setKey(value: StringDictionary[IndexDirection] | (typings.std.Map[String, IndexDirection])): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: StringDictionary[IndexDirection] | (Map[String, IndexDirection])): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setLanguage_override(value: String): Self = StObject.set(x, "language_override", value.asInstanceOf[js.Any])
     

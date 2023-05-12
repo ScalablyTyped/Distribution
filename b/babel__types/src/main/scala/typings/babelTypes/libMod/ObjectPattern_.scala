@@ -16,6 +16,8 @@ trait ObjectPattern_
   
   var decorators: js.UndefOr[js.Array[Decorator_] | Null] = js.undefined
   
+  var optional: js.UndefOr[Boolean | Null] = js.undefined
+  
   var properties: js.Array[RestElement_ | ObjectProperty_]
   
   var typeAnnotation: js.UndefOr[TypeAnnotation_ | TSTypeAnnotation__ | Noop_ | Null] = js.undefined
@@ -41,6 +43,12 @@ object ObjectPattern_ {
     inline def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)
     
     inline def setDecoratorsVarargs(value: Decorator_ *): Self = StObject.set(x, "decorators", js.Array(value*))
+    
+    inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    
+    inline def setOptionalNull: Self = StObject.set(x, "optional", null)
+    
+    inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
     
     inline def setProperties(value: js.Array[RestElement_ | ObjectProperty_]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     

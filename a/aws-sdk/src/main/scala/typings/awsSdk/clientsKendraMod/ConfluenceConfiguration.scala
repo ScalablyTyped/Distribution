@@ -42,7 +42,7 @@ trait ConfluenceConfiguration extends StObject {
   var ProxyConfiguration: js.UndefOr[typings.awsSdk.clientsKendraMod.ProxyConfiguration] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of an Secrets Manager secret that contains the user name and password required to connect to the Confluence instance. If you use Confluence Cloud, you use a generated API token as the password. For more information, see Using a Confluence data source. You can also provide authentication credentials in the form of a personal access token. For more information, see Authentication for a Confluence data source.
+    * The Amazon Resource Name (ARN) of an Secrets Manager secret that contains the user name and password required to connect to the Confluence instance. If you use Confluence Cloud, you use a generated API token as the password. You can also provide authentication credentials in the form of a personal access token. For more information, see Using a Confluence data source.
     */
   var SecretArn: typings.awsSdk.clientsKendraMod.SecretArn
   

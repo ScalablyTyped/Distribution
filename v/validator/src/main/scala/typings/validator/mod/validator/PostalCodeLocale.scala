@@ -30,10 +30,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.validator.validatorStrings.IE
   - typings.validator.validatorStrings.IL
   - typings.validator.validatorStrings.IN
+  - typings.validator.validatorStrings.IR
   - typings.validator.validatorStrings.IS
   - typings.validator.validatorStrings.IT
   - typings.validator.validatorStrings.JP
   - typings.validator.validatorStrings.KE
+  - typings.validator.validatorStrings.KR
   - typings.validator.validatorStrings.LI
   - typings.validator.validatorStrings.LT
   - typings.validator.validatorStrings.LU
@@ -112,6 +114,8 @@ object PostalCodeLocale {
   
   inline def IN: typings.validator.validatorStrings.IN = "IN".asInstanceOf[typings.validator.validatorStrings.IN]
   
+  inline def IR: typings.validator.validatorStrings.IR = "IR".asInstanceOf[typings.validator.validatorStrings.IR]
+  
   inline def IS: typings.validator.validatorStrings.IS = "IS".asInstanceOf[typings.validator.validatorStrings.IS]
   
   inline def IT: typings.validator.validatorStrings.IT = "IT".asInstanceOf[typings.validator.validatorStrings.IT]
@@ -119,6 +123,8 @@ object PostalCodeLocale {
   inline def JP: typings.validator.validatorStrings.JP = "JP".asInstanceOf[typings.validator.validatorStrings.JP]
   
   inline def KE: typings.validator.validatorStrings.KE = "KE".asInstanceOf[typings.validator.validatorStrings.KE]
+  
+  inline def KR: typings.validator.validatorStrings.KR = "KR".asInstanceOf[typings.validator.validatorStrings.KR]
   
   inline def LI: typings.validator.validatorStrings.LI = "LI".asInstanceOf[typings.validator.validatorStrings.LI]
   

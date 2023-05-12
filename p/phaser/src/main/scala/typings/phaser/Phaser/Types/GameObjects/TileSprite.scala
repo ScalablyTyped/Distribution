@@ -1,5 +1,6 @@
 package typings.phaser.Phaser.Types.GameObjects
 
+import typings.phaser.Phaser.Textures.Frame
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ object TileSprite {
     /**
       * An optional frame from the Texture this Tile Sprite is rendering with.
       */
-    var frame: js.UndefOr[String] = js.undefined
+    var frame: js.UndefOr[Double | String | Frame] = js.undefined
     
     /**
       * The height of the Tile Sprite. If zero it will use the size of the texture frame.
@@ -52,7 +53,7 @@ object TileSprite {
     @scala.inline
     implicit open class MutableBuilder[Self <: TileSpriteConfig] (val x: Self) extends AnyVal {
       
-      inline def setFrame(value: String): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+      inline def setFrame(value: Double | String | Frame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
       
       inline def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
       

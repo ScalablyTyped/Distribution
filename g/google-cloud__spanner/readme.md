@@ -1,7 +1,7 @@
 
 # Scala.js typings for google-cloud__spanner
 
-Typings are for version 6.1.4
+Typings are for version 6.9.0
 
 ## Library description:
 Cloud Spanner Client Library for Node.js

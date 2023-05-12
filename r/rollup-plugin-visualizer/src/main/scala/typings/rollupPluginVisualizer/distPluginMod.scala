@@ -1,6 +1,5 @@
 package typings.rollupPluginVisualizer
 
-import typings.open.mod.Options
 import typings.rollup.mod.OutputOptions
 import typings.rollup.mod.Plugin
 import typings.rollupPluginVisualizer.distPluginTemplateTypesMod.TemplateType
@@ -67,7 +66,9 @@ object distPluginMod {
       */
     var open: js.UndefOr[Boolean] = js.undefined
     
-    var openOptions: js.UndefOr[Options] = js.undefined
+    var openOptions: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify opn.Options */ Any
+      ] = js.undefined
     
     /**
       * Absolute path where project is located. It is used to cut prefix from file's paths.
@@ -131,7 +132,9 @@ object distPluginMod {
       
       inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      inline def setOpenOptions(value: Options): Self = StObject.set(x, "openOptions", value.asInstanceOf[js.Any])
+      inline def setOpenOptions(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify opn.Options */ Any
+      ): Self = StObject.set(x, "openOptions", value.asInstanceOf[js.Any])
       
       inline def setOpenOptionsUndefined: Self = StObject.set(x, "openOptions", js.undefined)
       

@@ -1,6 +1,7 @@
 package typings.azureMsalNode
 
 import typings.azureMsalCommon.distAuthorityProtocolModeMod.ProtocolMode
+import typings.azureMsalCommon.distBrokerNativeBrokerInativebrokerpluginMod.INativeBrokerPlugin
 import typings.azureMsalCommon.distCacheInterfaceIcachepluginMod.ICachePlugin
 import typings.azureMsalCommon.distConfigClientConfigurationMod.ApplicationTelemetry
 import typings.azureMsalCommon.distConfigClientConfigurationMod.AzureCloudOptions
@@ -10,6 +11,7 @@ import typings.azureMsalNode.anon.PrivateKey
 import typings.azureMsalNode.anon.RequiredNodeAuthOptions
 import typings.azureMsalNode.anon.RequiredNodeSystemOptions
 import typings.azureMsalNode.anon.RequiredNodeTelemetryOpti
+import typings.node.httpMod.AgentOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,6 +23,26 @@ object distConfigConfigurationMod {
   val ^ : js.Any = js.native
   
   inline def buildAppConfiguration(param0: Configuration): NodeConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("buildAppConfiguration")(param0.asInstanceOf[js.Any]).asInstanceOf[NodeConfiguration]
+  
+  trait BrokerOptions extends StObject {
+    
+    var nativeBrokerPlugin: js.UndefOr[INativeBrokerPlugin] = js.undefined
+  }
+  object BrokerOptions {
+    
+    inline def apply(): BrokerOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[BrokerOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrokerOptions] (val x: Self) extends AnyVal {
+      
+      inline def setNativeBrokerPlugin(value: INativeBrokerPlugin): Self = StObject.set(x, "nativeBrokerPlugin", value.asInstanceOf[js.Any])
+      
+      inline def setNativeBrokerPluginUndefined: Self = StObject.set(x, "nativeBrokerPlugin", js.undefined)
+    }
+  }
   
   trait CacheOptions extends StObject {
     
@@ -46,6 +68,8 @@ object distConfigConfigurationMod {
     
     var auth: NodeAuthOptions
     
+    var broker: js.UndefOr[BrokerOptions] = js.undefined
+    
     var cache: js.UndefOr[CacheOptions] = js.undefined
     
     var system: js.UndefOr[NodeSystemOptions] = js.undefined
@@ -63,6 +87,10 @@ object distConfigConfigurationMod {
     implicit open class MutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: NodeAuthOptions): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      
+      inline def setBroker(value: BrokerOptions): Self = StObject.set(x, "broker", value.asInstanceOf[js.Any])
+      
+      inline def setBrokerUndefined: Self = StObject.set(x, "broker", js.undefined)
       
       inline def setCache(value: CacheOptions): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -170,6 +198,8 @@ object distConfigConfigurationMod {
     
     var auth: RequiredNodeAuthOptions
     
+    var broker: BrokerOptions
+    
     var cache: CacheOptions
     
     var system: RequiredNodeSystemOptions
@@ -180,11 +210,12 @@ object distConfigConfigurationMod {
     
     inline def apply(
       auth: RequiredNodeAuthOptions,
+      broker: BrokerOptions,
       cache: CacheOptions,
       system: RequiredNodeSystemOptions,
       telemetry: RequiredNodeTelemetryOpti
     ): NodeConfiguration = {
-      val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any], telemetry = telemetry.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], broker = broker.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any], telemetry = telemetry.asInstanceOf[js.Any])
       __obj.asInstanceOf[NodeConfiguration]
     }
     
@@ -192,6 +223,8 @@ object distConfigConfigurationMod {
     implicit open class MutableBuilder[Self <: NodeConfiguration] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: RequiredNodeAuthOptions): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      
+      inline def setBroker(value: BrokerOptions): Self = StObject.set(x, "broker", value.asInstanceOf[js.Any])
       
       inline def setCache(value: CacheOptions): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -202,6 +235,8 @@ object distConfigConfigurationMod {
   }
   
   trait NodeSystemOptions extends StObject {
+    
+    var customAgentOptions: js.UndefOr[AgentOptions | typings.node.httpsMod.AgentOptions] = js.undefined
     
     var loggerOptions: js.UndefOr[LoggerOptions] = js.undefined
     
@@ -218,6 +253,10 @@ object distConfigConfigurationMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: NodeSystemOptions] (val x: Self) extends AnyVal {
+      
+      inline def setCustomAgentOptions(value: AgentOptions | typings.node.httpsMod.AgentOptions): Self = StObject.set(x, "customAgentOptions", value.asInstanceOf[js.Any])
+      
+      inline def setCustomAgentOptionsUndefined: Self = StObject.set(x, "customAgentOptions", js.undefined)
       
       inline def setLoggerOptions(value: LoggerOptions): Self = StObject.set(x, "loggerOptions", value.asInstanceOf[js.Any])
       

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@expo/prebuild-config" : "5.0.7"
+      "@expo/prebuild-config" : "6.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@expo/prebuild-config" : "5.0.7"
+      "@expo/prebuild-config" : "6.0.1"
     }
   ],
   "compile-devDependencies" : [

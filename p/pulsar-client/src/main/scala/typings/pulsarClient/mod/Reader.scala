@@ -16,4 +16,8 @@ open class Reader () extends StObject {
   
   def readNext(): js.Promise[Message] = js.native
   def readNext(timeout: Double): js.Promise[Message] = js.native
+  
+  def seek(messageId: MessageId): js.Promise[Null] = js.native
+  
+  def seekTimestamp(timestamp: Double): js.Promise[Null] = js.native
 }

@@ -42,12 +42,12 @@ trait CreateServiceRequest extends StObject {
   var enableECSManagedTags: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Determines whether the execute command functionality is enabled for the service. If true, this enables execute command functionality on all containers in the service tasks.
+    * Determines whether the execute command functionality is turned on for the service. If true, this enables execute command functionality on all containers in the service tasks.
     */
   var enableExecuteCommand: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The period of time, in seconds, that the Amazon ECS service scheduler ignores unhealthy Elastic Load Balancing target health checks after a task has first started. This is only used when your service is configured to use a load balancer. If your service has a load balancer defined and you don't specify a health check grace period value, the default value of 0 is used. If you do not use an Elastic Load Balancing, we recomend that you use the startPeriod in the task definition healtch check parameters. For more information, see Health check. If your service's tasks take a while to start and respond to Elastic Load Balancing health checks, you can specify a health check grace period of up to 2,147,483,647 seconds (about 69 years). During that time, the Amazon ECS service scheduler ignores health check status. This grace period can prevent the service scheduler from marking tasks as unhealthy and stopping them before they have time to come up.
+    * The period of time, in seconds, that the Amazon ECS service scheduler ignores unhealthy Elastic Load Balancing target health checks after a task has first started. This is only used when your service is configured to use a load balancer. If your service has a load balancer defined and you don't specify a health check grace period value, the default value of 0 is used. If you do not use an Elastic Load Balancing, we recommend that you use the startPeriod in the task definition health check parameters. For more information, see Health check. If your service's tasks take a while to start and respond to Elastic Load Balancing health checks, you can specify a health check grace period of up to 2,147,483,647 seconds (about 69 years). During that time, the Amazon ECS service scheduler ignores health check status. This grace period can prevent the service scheduler from marking tasks as unhealthy and stopping them before they have time to come up.
     */
   var healthCheckGracePeriodSeconds: js.UndefOr[BoxedInteger] = js.undefined
   
@@ -97,6 +97,11 @@ trait CreateServiceRequest extends StObject {
   var schedulingStrategy: js.UndefOr[SchedulingStrategy] = js.undefined
   
   /**
+    * The configuration for this service to discover and connect to services, and be discovered by, and connected from, other services within a namespace. Tasks that run in a namespace can use short names to connect to services in the namespace. Tasks can connect to services across all of the clusters in the namespace. Tasks connect through a managed proxy container that collects logs and metrics for increased visibility. Only the tasks that Amazon ECS services create are supported with Service Connect. For more information, see Service Connect in the Amazon Elastic Container Service Developer Guide.
+    */
+  var serviceConnectConfiguration: js.UndefOr[ServiceConnectConfiguration] = js.undefined
+  
+  /**
     * The name of your service. Up to 255 letters (uppercase and lowercase), numbers, underscores, and hyphens are allowed. Service names must be unique within a cluster, but you can have similarly named services in multiple clusters within a Region or across multiple Regions.
     */
   var serviceName: String
@@ -112,7 +117,7 @@ trait CreateServiceRequest extends StObject {
   var tags: js.UndefOr[Tags] = js.undefined
   
   /**
-    * The family and revision (family:revision) or full ARN of the task definition to run in your service. If a revision isn't specified, the latest ACTIVE revision is used. A task definition must be specified if the service uses either the ECS or CODE_DEPLOY deployment controllers.
+    * The family and revision (family:revision) or full ARN of the task definition to run in your service. If a revision isn't specified, the latest ACTIVE revision is used. A task definition must be specified if the service uses either the ECS or CODE_DEPLOY deployment controllers. For more information about deployment types, see Amazon ECS deployment types.
     */
   var taskDefinition: js.UndefOr[String] = js.undefined
 }
@@ -205,6 +210,10 @@ object CreateServiceRequest {
     inline def setSchedulingStrategy(value: SchedulingStrategy): Self = StObject.set(x, "schedulingStrategy", value.asInstanceOf[js.Any])
     
     inline def setSchedulingStrategyUndefined: Self = StObject.set(x, "schedulingStrategy", js.undefined)
+    
+    inline def setServiceConnectConfiguration(value: ServiceConnectConfiguration): Self = StObject.set(x, "serviceConnectConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setServiceConnectConfigurationUndefined: Self = StObject.set(x, "serviceConnectConfiguration", js.undefined)
     
     inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     

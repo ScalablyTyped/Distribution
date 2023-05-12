@@ -13,18 +13,30 @@ object WRAP_MODES extends StObject {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WRAP_MODES & Double] = js.native
   
+  /**
+    * The textures uvs are clamped
+    * @default 33071
+    */
   @js.native
   sealed trait CLAMP
     extends StObject
        with WRAP_MODES
   /* 33071 */ val CLAMP: typings.pixiConstants.mod.WRAP_MODES.CLAMP & Double = js.native
   
+  /**
+    * The texture uvs tile and repeat with mirroring
+    * @default 33648
+    */
   @js.native
   sealed trait MIRRORED_REPEAT
     extends StObject
        with WRAP_MODES
   /* 33648 */ val MIRRORED_REPEAT: typings.pixiConstants.mod.WRAP_MODES.MIRRORED_REPEAT & Double = js.native
   
+  /**
+    * The texture uvs tile and repeat
+    * @default 10497
+    */
   @js.native
   sealed trait REPEAT
     extends StObject

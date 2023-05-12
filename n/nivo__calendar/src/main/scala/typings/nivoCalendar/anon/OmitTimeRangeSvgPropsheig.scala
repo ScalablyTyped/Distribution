@@ -6,6 +6,7 @@ import typings.nivoCalendar.distTypesTypesMod.CalendarTooltipProps
 import typings.nivoCalendar.distTypesTypesMod.ColorScale
 import typings.nivoCalendar.distTypesTypesMod.DateOrString
 import typings.nivoCalendar.distTypesTypesMod.TimeRangeDayData
+import typings.nivoCalendar.distTypesTypesMod.Weekday
 import typings.nivoCalendar.nivoCalendarInts.`0`
 import typings.nivoCalendar.nivoCalendarInts.`1`
 import typings.nivoCalendar.nivoCalendarInts.`2`
@@ -52,6 +53,8 @@ trait OmitTimeRangeSvgPropsheig extends StObject {
   var direction: js.UndefOr[horizontal | vertical] = js.undefined
   
   var emptyColor: js.UndefOr[String] = js.undefined
+  
+  var firstWeekday: js.UndefOr[Weekday] = js.undefined
   
   var from: js.UndefOr[DateOrString] = js.undefined
   
@@ -176,6 +179,10 @@ object OmitTimeRangeSvgPropsheig {
     inline def setEmptyColor(value: String): Self = StObject.set(x, "emptyColor", value.asInstanceOf[js.Any])
     
     inline def setEmptyColorUndefined: Self = StObject.set(x, "emptyColor", js.undefined)
+    
+    inline def setFirstWeekday(value: Weekday): Self = StObject.set(x, "firstWeekday", value.asInstanceOf[js.Any])
+    
+    inline def setFirstWeekdayUndefined: Self = StObject.set(x, "firstWeekday", js.undefined)
     
     inline def setFrom(value: DateOrString): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

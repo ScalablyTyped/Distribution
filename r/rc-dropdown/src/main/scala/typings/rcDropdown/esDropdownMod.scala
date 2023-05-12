@@ -1,10 +1,16 @@
 package typings.rcDropdown
 
 import org.scalablytyped.runtime.Shortcut
-import typings.rcTrigger.esInterfaceMod.ActionType
-import typings.rcTrigger.esInterfaceMod.AlignType
-import typings.rcTrigger.esInterfaceMod.AnimationType
-import typings.rcTrigger.esInterfaceMod.BuildInPlacements
+import typings.rcComponentTrigger.esInterfaceMod.ActionType
+import typings.rcComponentTrigger.esInterfaceMod.AlignType
+import typings.rcComponentTrigger.esInterfaceMod.AnimationType
+import typings.rcComponentTrigger.esInterfaceMod.BuildInPlacements
+import typings.rcDropdown.rcDropdownStrings.bottom
+import typings.rcDropdown.rcDropdownStrings.bottomLeft
+import typings.rcDropdown.rcDropdownStrings.bottomRight
+import typings.rcDropdown.rcDropdownStrings.top
+import typings.rcDropdown.rcDropdownStrings.topLeft
+import typings.rcDropdown.rcDropdownStrings.topRight
 import typings.react.mod.CSSProperties
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.ReactElement
@@ -21,7 +27,7 @@ object esDropdownMod extends Shortcut {
   @js.native
   val default: ForwardRefExoticComponent[DropdownProps & RefAttributes[Any]] = js.native
   
-  /* Inlined parent std.Pick<rc-trigger.rc-trigger.TriggerProps, 'getPopupContainer' | 'children' | 'mouseEnterDelay' | 'mouseLeaveDelay' | 'onPopupAlign' | 'builtinPlacements'> */
+  /* Inlined parent std.Pick<@rc-component/trigger.@rc-component/trigger.TriggerProps, 'getPopupContainer' | 'children' | 'mouseEnterDelay' | 'mouseLeaveDelay' | 'onPopupAlign' | 'builtinPlacements'> */
   trait DropdownProps extends StObject {
     
     var align: js.UndefOr[AlignType] = js.undefined
@@ -62,7 +68,7 @@ object esDropdownMod extends Shortcut {
     
     var overlayStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var placement: js.UndefOr[String] = js.undefined
+    var placement: js.UndefOr[topLeft | top | topRight | bottomLeft | bottom | bottomRight] = js.undefined
     
     var placements: js.UndefOr[BuildInPlacements] = js.undefined
     
@@ -164,7 +170,7 @@ object esDropdownMod extends Shortcut {
       
       inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
       
-      inline def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: topLeft | top | topRight | bottomLeft | bottom | bottomRight): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
       inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       

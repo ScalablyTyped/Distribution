@@ -34,7 +34,7 @@ object libEsmComponentsFormsTextAreaMod {
   @JSImport("@blueprintjs/core/lib/esm/components/forms/textArea", "TextArea")
   @js.native
   open class TextArea protected ()
-    extends AbstractPureComponent2[TextAreaProps, ITextAreaState, js.Object] {
+    extends AbstractPureComponent2[TextAreaProps, TextAreaState, js.Object] {
     def this(props: TextAreaProps) = this()
     def this(props: TextAreaProps, context: Any) = this()
     
@@ -47,6 +47,8 @@ object libEsmComponentsFormsTextAreaMod {
     /* private */ var handleChange: Any = js.native
     
     /* private */ var handleRef: Any = js.native
+    
+    /* private */ var maybeSyncHeightToScrollHeight: Any = js.native
     
     var textareaElement: HTMLTextAreaElement | Null = js.native
   }
@@ -64,8 +66,8 @@ object libEsmComponentsFormsTextAreaMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.react.mod.HTMLAttributes because var conflicts: className. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, nonce, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, placeholder, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, unselectable, role, datatype, itemProp, title, autoCorrect, results
-  - typings.react.mod.TextareaHTMLAttributes because var conflicts: className. Inlined required, cols, wrap, maxLength, form, value, minLength, readOnly, name, disabled, dirName, rows, autoFocus, onChange_TextareaHTMLAttributes, autoComplete */ trait ITextAreaProps
+  - typings.react.mod.HTMLAttributes because var conflicts: className. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, content, nonce, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, rev, placeholder, rel, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, autoFocus, unselectable, role, datatype, itemProp, title, autoCorrect, results
+  - typings.react.mod.TextareaHTMLAttributes because var conflicts: className. Inlined required, cols, wrap, maxLength, form, value, minLength, readOnly, name, disabled, dirName, rows, onChange_TextareaHTMLAttributes, autoComplete */ trait ITextAreaProps
     extends StObject
        with IIntentProps
        with IProps
@@ -92,6 +94,8 @@ object libEsmComponentsFormsTextAreaMod {
     var color: js.UndefOr[String] = js.undefined
     
     var cols: js.UndefOr[Double] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -187,11 +191,15 @@ object libEsmComponentsFormsTextAreaMod {
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var required: js.UndefOr[Boolean] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     // <command>, <menuitem>
     // WAI-ARIA
@@ -278,9 +286,13 @@ object libEsmComponentsFormsTextAreaMod {
       
       inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -424,6 +436,10 @@ object libEsmComponentsFormsTextAreaMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -435,6 +451,10 @@ object libEsmComponentsFormsTextAreaMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -508,25 +528,25 @@ object libEsmComponentsFormsTextAreaMod {
     }
   }
   
-  trait ITextAreaState extends StObject {
+  type TextAreaProps = ITextAreaProps
+  
+  trait TextAreaState extends StObject {
     
     var height: js.UndefOr[Double] = js.undefined
   }
-  object ITextAreaState {
+  object TextAreaState {
     
-    inline def apply(): ITextAreaState = {
+    inline def apply(): TextAreaState = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ITextAreaState]
+      __obj.asInstanceOf[TextAreaState]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: ITextAreaState] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: TextAreaState] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     }
   }
-  
-  type TextAreaProps = ITextAreaProps
 }

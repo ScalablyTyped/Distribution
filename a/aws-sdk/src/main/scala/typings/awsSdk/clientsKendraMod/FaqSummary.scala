@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FaqSummary extends StObject {
   
   /**
-    * The UNIX datetime that the FAQ was added to the index.
+    * The Unix timestamp when the FAQ was created.
     */
   var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
@@ -17,7 +17,7 @@ trait FaqSummary extends StObject {
   var FileFormat: js.UndefOr[FaqFileFormat] = js.undefined
   
   /**
-    * The unique identifier of the FAQ.
+    * The identifier of the FAQ.
     */
   var Id: js.UndefOr[FaqId] = js.undefined
   
@@ -37,7 +37,7 @@ trait FaqSummary extends StObject {
   var Status: js.UndefOr[FaqStatus] = js.undefined
   
   /**
-    * The UNIX datetime that the FAQ was last updated.
+    * The Unix timestamp when the FAQ was last updated.
     */
   var UpdatedAt: js.UndefOr[js.Date] = js.undefined
 }

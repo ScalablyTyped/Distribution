@@ -12,7 +12,7 @@ open class Curve protected ()
   def this(props: CurveProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: CurveProps, context: Any) = this()
 }

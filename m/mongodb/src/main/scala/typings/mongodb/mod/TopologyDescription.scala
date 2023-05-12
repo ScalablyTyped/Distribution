@@ -1,5 +1,6 @@
 package typings.mongodb.mod
 
+import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ open class TopologyDescription protected () extends StObject {
     */
   def this(
     topologyType: TopologyType,
-    serverDescriptions: js.UndefOr[(typings.std.Map[String, ServerDescription]) | Null],
+    serverDescriptions: js.UndefOr[(Map[String, ServerDescription]) | Null],
     setName: js.UndefOr[String | Null],
     maxSetVersion: js.UndefOr[scala.Double | Null],
     maxElectionId: js.UndefOr[typings.bson.mod.ObjectId | Null],
@@ -50,7 +51,7 @@ open class TopologyDescription protected () extends StObject {
   
   var maxSetVersion: scala.Double | Null = js.native
   
-  var servers: typings.std.Map[String, ServerDescription] = js.native
+  var servers: Map[String, ServerDescription] = js.native
   
   var setName: String | Null = js.native
   

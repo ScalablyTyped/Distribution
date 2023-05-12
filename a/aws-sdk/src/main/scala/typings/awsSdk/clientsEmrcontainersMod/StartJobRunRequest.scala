@@ -47,6 +47,11 @@ trait StartJobRunRequest extends StObject {
   var releaseLabel: js.UndefOr[ReleaseLabel] = js.undefined
   
   /**
+    * The retry policy configuration for the job run.
+    */
+  var retryPolicyConfiguration: js.UndefOr[RetryPolicyConfiguration] = js.undefined
+  
+  /**
     * The tags assigned to job runs.
     */
   var tags: js.UndefOr[TagMap] = js.undefined
@@ -95,6 +100,10 @@ object StartJobRunRequest {
     inline def setReleaseLabel(value: ReleaseLabel): Self = StObject.set(x, "releaseLabel", value.asInstanceOf[js.Any])
     
     inline def setReleaseLabelUndefined: Self = StObject.set(x, "releaseLabel", js.undefined)
+    
+    inline def setRetryPolicyConfiguration(value: RetryPolicyConfiguration): Self = StObject.set(x, "retryPolicyConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setRetryPolicyConfigurationUndefined: Self = StObject.set(x, "retryPolicyConfiguration", js.undefined)
     
     inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

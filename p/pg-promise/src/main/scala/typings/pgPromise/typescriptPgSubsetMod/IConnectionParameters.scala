@@ -1,6 +1,7 @@
 package typings.pgPromise.typescriptPgSubsetMod
 
 import org.scalablytyped.runtime.Instantiable1
+import typings.node.processMod.global.NodeJS.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,6 +37,10 @@ trait IConnectionParameters[C /* <: IClient */] extends StObject {
   
   var idleTimeoutMillis: js.UndefOr[Double] = js.undefined
   
+  // Terminate any session with an open transaction that has been idle for longer than
+  // the specified duration in milliseconds; false = unlimited
+  var idle_in_transaction_session_timeout: js.UndefOr[Boolean | Double] = js.undefined
+  
   var isDomainSocket: js.UndefOr[Boolean] = js.undefined
   
   var keepAlive: js.UndefOr[Boolean] = js.undefined
@@ -45,6 +50,10 @@ trait IConnectionParameters[C /* <: IClient */] extends StObject {
   var keepalives: js.UndefOr[Double] = js.undefined
   
   var keepalives_idle: js.UndefOr[Double] = js.undefined
+  
+  // Abort any statement that waits longer than the specified duration in milliseconds
+  // while attempting to acquire a lock; false = unlimited
+  var lock_timeout: js.UndefOr[Boolean | Double] = js.undefined
   
   var max: js.UndefOr[Double] = js.undefined
   
@@ -64,7 +73,11 @@ trait IConnectionParameters[C /* <: IClient */] extends StObject {
   
   var ssl: js.UndefOr[Boolean | ISSLConfig] = js.undefined
   
+  // Max milliseconds any query using this connection will execute for before timing out in error.
+  // false = unlimited
   var statement_timeout: js.UndefOr[Boolean | Double] = js.undefined
+  
+  var stream: js.UndefOr[Socket | (js.Function1[/* cn */ IConnectionParameters[IClient], Socket])] = js.undefined
   
   var types: js.UndefOr[ITypeOverrides] = js.undefined
   
@@ -128,6 +141,10 @@ object IConnectionParameters {
     
     inline def setIdleTimeoutMillisUndefined: Self = StObject.set(x, "idleTimeoutMillis", js.undefined)
     
+    inline def setIdle_in_transaction_session_timeout(value: Boolean | Double): Self = StObject.set(x, "idle_in_transaction_session_timeout", value.asInstanceOf[js.Any])
+    
+    inline def setIdle_in_transaction_session_timeoutUndefined: Self = StObject.set(x, "idle_in_transaction_session_timeout", js.undefined)
+    
     inline def setIsDomainSocket(value: Boolean): Self = StObject.set(x, "isDomainSocket", value.asInstanceOf[js.Any])
     
     inline def setIsDomainSocketUndefined: Self = StObject.set(x, "isDomainSocket", js.undefined)
@@ -147,6 +164,10 @@ object IConnectionParameters {
     inline def setKeepalives_idle(value: Double): Self = StObject.set(x, "keepalives_idle", value.asInstanceOf[js.Any])
     
     inline def setKeepalives_idleUndefined: Self = StObject.set(x, "keepalives_idle", js.undefined)
+    
+    inline def setLock_timeout(value: Boolean | Double): Self = StObject.set(x, "lock_timeout", value.asInstanceOf[js.Any])
+    
+    inline def setLock_timeoutUndefined: Self = StObject.set(x, "lock_timeout", js.undefined)
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
@@ -193,6 +214,12 @@ object IConnectionParameters {
     inline def setStatement_timeout(value: Boolean | Double): Self = StObject.set(x, "statement_timeout", value.asInstanceOf[js.Any])
     
     inline def setStatement_timeoutUndefined: Self = StObject.set(x, "statement_timeout", js.undefined)
+    
+    inline def setStream(value: Socket | (js.Function1[/* cn */ IConnectionParameters[IClient], Socket])): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    
+    inline def setStreamFunction1(value: /* cn */ IConnectionParameters[IClient] => Socket): Self = StObject.set(x, "stream", js.Any.fromFunction1(value))
+    
+    inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
     
     inline def setTypes(value: ITypeOverrides): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     

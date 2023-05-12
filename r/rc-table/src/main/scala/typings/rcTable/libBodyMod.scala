@@ -1,24 +1,33 @@
 package typings.rcTable
 
-import org.scalablytyped.runtime.Shortcut
-import typings.rcTable.anon.FnCall
 import typings.rcTable.libInterfaceMod.GetComponentProps
 import typings.rcTable.libInterfaceMod.GetRowKey
 import typings.rcTable.libInterfaceMod.Key
 import typings.react.mod.HTMLAttributes
-import typings.react.mod.MemoExoticComponent
 import typings.react.mod.ReactNode
 import typings.react.mod.TdHTMLAttributes
+import typings.react.mod.global.JSX.Element
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object libBodyMod extends Shortcut {
+object libBodyMod {
   
-  @JSImport("rc-table/lib/Body", JSImport.Default)
-  @js.native
-  val default: MemoExoticComponent[FnCall] = js.native
+  /* was `typeof Body` */
+  object default {
+    
+    inline def apply[RecordType](props: BodyProps[RecordType]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @JSImport("rc-table/lib/Body", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("rc-table/lib/Body", "default.displayName")
+    @js.native
+    def displayName: String = js.native
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+  }
   
   trait BodyProps[RecordType] extends StObject {
     
@@ -77,9 +86,4 @@ object libBodyMod extends Shortcut {
       inline def setRowExpandable(value: RecordType => Boolean): Self = StObject.set(x, "rowExpandable", js.Any.fromFunction1(value))
     }
   }
-  
-  type _To = MemoExoticComponent[FnCall]
-  
-  /* This means you don't have to write `default`, but can instead just say `libBodyMod.foo` */
-  override def _to: MemoExoticComponent[FnCall] = default
 }

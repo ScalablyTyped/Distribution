@@ -1,6 +1,6 @@
 package typings.openui5
 
-import typings.openui5.anon.Control
+import typings.openui5.anon.ControlDefault
 import typings.openui5.sap.ClassInfo
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -15,7 +15,7 @@ object sapMP13nSortControllerMod {
     * Constructor for a new `SortController`.
     */
   open class default ()
-    extends typings.openui5.sapUiBaseObjectMod.default {
+    extends typings.openui5.sapMP13nSelectionControllerMod.default {
     def this(/**
       * ID for the new control, generated automatically if no ID is given
       */
@@ -28,7 +28,7 @@ object sapMP13nSortControllerMod {
       /**
       * Initial settings for the new control
       */
-    mSettings: Control
+    mSettings: ControlDefault
     ) = this()
     def this(
       /**
@@ -38,7 +38,7 @@ object sapMP13nSortControllerMod {
       /**
       * Initial settings for the new control
       */
-    mSettings: Control
+    mSettings: ControlDefault
     ) = this()
   }
   /* static members */
@@ -52,7 +52,7 @@ object sapMP13nSortControllerMod {
       * Creates a new subclass of class sap.m.p13n.SortController with name `sClassName` and enriches it with
       * the information contained in `oClassInfo`.
       *
-      * `oClassInfo` might contain the same kind of information as described in {@link sap.ui.base.Object.extend}.
+      * `oClassInfo` might contain the same kind of information as described in {@link sap.m.p13n.SelectionController.extend}.
       *
       * @returns Created class / constructor function
       */
@@ -109,5 +109,5 @@ object sapMP13nSortControllerMod {
     inline def getMetadata(): typings.openui5.sapUiBaseMetadataMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[typings.openui5.sapUiBaseMetadataMod.default]
   }
   
-  type SortController = typings.openui5.sapUiBaseObjectMod.default
+  type SortController = typings.openui5.sapMP13nSelectionControllerMod.default
 }

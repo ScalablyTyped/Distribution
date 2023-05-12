@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "conf" : "10.2.0"
+      "conf" : "11.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "conf" : "10.2.0"
+      "conf" : "11.0.1"
     }
   ],
   "compile-devDependencies" : [

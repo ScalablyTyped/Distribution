@@ -1,7 +1,7 @@
 
 # Scala.js typings for socket_dot_io-client
 
-Typings are for version 4.5.3
+Typings are for version 4.6.1
 
 ## Library description:
 Realtime application framework client

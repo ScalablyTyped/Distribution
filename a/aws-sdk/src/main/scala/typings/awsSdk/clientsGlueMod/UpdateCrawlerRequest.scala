@@ -12,7 +12,7 @@ trait UpdateCrawlerRequest extends StObject {
   var Classifiers: js.UndefOr[ClassifierNameList] = js.undefined
   
   /**
-    * Crawler configuration information. This versioned JSON string allows users to specify aspects of a crawler's behavior. For more information, see Configuring a Crawler.
+    * Crawler configuration information. This versioned JSON string allows users to specify aspects of a crawler's behavior. For more information, see Setting crawler configuration options.
     */
   var Configuration: js.UndefOr[CrawlerConfiguration] = js.undefined
   

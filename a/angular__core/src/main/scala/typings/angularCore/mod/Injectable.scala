@@ -12,7 +12,8 @@ trait Injectable extends StObject {
   /**
     * Determines which injectors will provide the injectable.
     *
-    * - `Type<any>` - associates the injectable with an `@NgModule` or other `InjectorType`,
+    * - `Type<any>` - associates the injectable with an `@NgModule` or other `InjectorType`. This
+    * option is DEPRECATED.
     * - 'null' : Equivalent to `undefined`. The injectable is not provided in any scope automatically
     * and must be added to a `providers` array of an [@NgModule](api/core/NgModule#providers),
     * [@Component](api/core/Directive#providers) or [@Directive](api/core/Directive#providers).
@@ -23,7 +24,7 @@ trait Injectable extends StObject {
     * - 'platform' : A special singleton platform injector shared by all
     * applications on the page.
     * - 'any' : Provides a unique instance in each lazy loaded module while all eagerly loaded
-    * modules share one instance.
+    * modules share one instance. This option is DEPRECATED.
     *
     */
   var providedIn: js.UndefOr[Type[Any] | root | platform | any | Null] = js.undefined

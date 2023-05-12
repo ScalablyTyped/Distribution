@@ -77,7 +77,7 @@ type GrpcGatewayRouteMetadataList = js.Array[GrpcGatewayRouteMetadata]
   - typings.awsSdk.awsSdkStrings.`deadline-exceeded`
   - typings.awsSdk.awsSdkStrings.internal_
   - typings.awsSdk.awsSdkStrings.`resource-exhausted`
-  - typings.awsSdk.awsSdkStrings.unavailable__
+  - typings.awsSdk.awsSdkStrings.unavailable___
   - java.lang.String
 */
 type GrpcRetryPolicyEvent = _GrpcRetryPolicyEvent | java.lang.String
@@ -209,8 +209,8 @@ type PortNumber = Double
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.http_
   - typings.awsSdk.awsSdkStrings.tcp_
-  - typings.awsSdk.awsSdkStrings.http2
-  - typings.awsSdk.awsSdkStrings.grpc
+  - typings.awsSdk.awsSdkStrings.http2_
+  - typings.awsSdk.awsSdkStrings.grpc_
   - java.lang.String
 */
 type PortProtocol = _PortProtocol | java.lang.String
@@ -285,8 +285,8 @@ type VirtualGatewayListeners = js.Array[VirtualGatewayListener]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.http_
-  - typings.awsSdk.awsSdkStrings.http2
-  - typings.awsSdk.awsSdkStrings.grpc
+  - typings.awsSdk.awsSdkStrings.http2_
+  - typings.awsSdk.awsSdkStrings.grpc_
   - java.lang.String
 */
 type VirtualGatewayPortProtocol = _VirtualGatewayPortProtocol | java.lang.String

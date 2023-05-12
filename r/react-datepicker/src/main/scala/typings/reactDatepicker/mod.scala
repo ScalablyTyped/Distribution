@@ -39,7 +39,7 @@ object mod {
     def this(props: ReactDatePickerProps[CustomModifierNames, WithRange]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ReactDatePickerProps[CustomModifierNames, WithRange], context: Any) = this()
   }
@@ -53,7 +53,7 @@ object mod {
     def this(props: ReactDatePickerProps[CustomModifierNames, WithRange]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ReactDatePickerProps[CustomModifierNames, WithRange], context: Any) = this()
     
@@ -276,7 +276,7 @@ object mod {
     
     var forceShowMonthNavigation: js.UndefOr[Boolean] = js.native
     
-    var formatWeekDay: js.UndefOr[js.Function1[/* formattedDate */ String, ReactNode]] = js.native
+    var formatWeekDay: js.UndefOr[js.Function1[/* day */ String, ReactNode]] = js.native
     
     var formatWeekNumber: js.UndefOr[js.Function1[/* date */ js.Date, String | Double]] = js.native
     
@@ -430,6 +430,8 @@ object mod {
     var showFourColumnMonthYearPicker: js.UndefOr[Boolean] = js.native
     
     var showFullMonthYearPicker: js.UndefOr[Boolean] = js.native
+    
+    var showIcon: js.UndefOr[Boolean] = js.native
     
     var showMonthDropdown: js.UndefOr[Boolean] = js.native
     

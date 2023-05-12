@@ -2,6 +2,7 @@ package typings.vscodeDebugprotocol.mod.DebugProtocol
 
 import typings.vscodeDebugprotocol.vscodeDebugprotocolStrings.cancelled
 import typings.vscodeDebugprotocol.vscodeDebugprotocolStrings.event
+import typings.vscodeDebugprotocol.vscodeDebugprotocolStrings.notStopped
 import typings.vscodeDebugprotocol.vscodeDebugprotocolStrings.request
 import typings.vscodeDebugprotocol.vscodeDebugprotocolStrings.response
 import org.scalablytyped.runtime.StObject
@@ -23,10 +24,11 @@ trait Response
   			This raw error might be interpreted by the client and is not shown in the UI.
   			Some predefined values exist.
   			Values: 
-  			'cancelled': request was cancelled.
+  			'cancelled': the request was cancelled.
+  			'notStopped': the request may be retried once the adapter is in a 'stopped' state.
   			etc.
   		*/
-  var message: js.UndefOr[cancelled | String] = js.undefined
+  var message: js.UndefOr[cancelled | notStopped | String] = js.undefined
   
   // type: 'response';
   /** Sequence number of the corresponding request. */
@@ -61,7 +63,7 @@ object Response {
     
     inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    inline def setMessage(value: cancelled | String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: cancelled | notStopped | String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     

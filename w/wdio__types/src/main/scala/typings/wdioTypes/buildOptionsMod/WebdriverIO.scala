@@ -36,7 +36,7 @@ trait WebdriverIO extends StObject {
     * @example
     * ```js
     * // wdio.conf.js
-    * exports.config
+    * export const config = {
     *   // ...
     *   capabilities: {
     *     browserName: 'safari',
@@ -49,7 +49,7 @@ trait WebdriverIO extends StObject {
     * @example
     * ```
     * // wdio.conf.js
-    * exports.config
+    * export const config = {
     *   // ...
     *   capabilities: {
     *     browserA: {

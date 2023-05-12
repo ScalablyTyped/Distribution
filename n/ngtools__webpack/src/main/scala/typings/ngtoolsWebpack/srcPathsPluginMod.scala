@@ -38,8 +38,8 @@ object srcPathsPluginMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped std.Parameters<std.Parameters<(context : object, path : string, request : string, resolveContext : webpack.webpack.ResolveContext, callback : (arg0 : null | std.Error, arg1 : string | false | undefined, arg2 : webpack.webpack.ResolveRequest | undefined): void): void>[4]>[2]
-  - Lifted 0 members from Set(std.NonNullable<std.Parameters<std.Parameters<(context : object, path : string, request : string, resolveContext : webpack.webpack.ResolveContext, callback : (arg0 : null | std.Error, arg1 : string | false | undefined, arg2 : webpack.webpack.ResolveRequest | undefined): void): void>[4]>[2]>) */ trait PathPluginResolverRequest extends StObject {
+  - Dropped std.Parameters<std.Parameters<(context : object, path : string, request : string, resolveContext : webpack.webpack.ResolveContext, callback : (err : null | webpack.webpack.ErrorWithDetail, res : string | false | undefined, req : webpack.webpack.ResolveRequest | undefined): void): void>[4]>[2]
+  - Lifted 0 members from Set(std.NonNullable<std.Parameters<std.Parameters<(context : object, path : string, request : string, resolveContext : webpack.webpack.ResolveContext, callback : (err : null | webpack.webpack.ErrorWithDetail, res : string | false | undefined, req : webpack.webpack.ResolveRequest | undefined): void): void>[4]>[2]>) */ trait PathPluginResolverRequest extends StObject {
     
     var context: js.UndefOr[Issuer] = js.undefined
     
@@ -66,7 +66,7 @@ object srcPathsPluginMod {
   }
   
   type ResolverRequest = NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<std.Parameters<(context : object, path : string, request : string, resolveContext : webpack.webpack.ResolveContext, callback : (arg0 : null | std.Error, arg1 : string | false | undefined, arg2 : webpack.webpack.ResolveRequest | undefined): void): void>[4]>[2] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<std.Parameters<(context : object, path : string, request : string, resolveContext : webpack.webpack.ResolveContext, callback : (err : null | webpack.webpack.ErrorWithDetail, res : string | false | undefined, req : webpack.webpack.ResolveRequest | undefined): void): void>[4]>[2] */ js.Any
   ]
   
   /* Inlined parent std.Pick<typescript.typescript.CompilerOptions, 'paths' | 'baseUrl'> */

@@ -138,7 +138,7 @@ object mod {
   @JSImport("sat", "Vector")
   @js.native
   /**
-    * @class Vector has two properties
+    * Vector has two properties
     * @param {number} x The x-coordinate of the Vector.
     * @param {number} y The y-coordinate of the Vector.
     */

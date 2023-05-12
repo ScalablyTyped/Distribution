@@ -1,23 +1,27 @@
 package typings.libp2p
 
 import typings.itStreamTypes.mod.Duplex
+import typings.itStreamTypes.mod.Source
 import typings.libp2p.anon.MuxerFactory
 import typings.libp2p.libp2pStrings.inbound
 import typings.libp2p.libp2pStrings.outbound
 import typings.libp2pInterfaceConnection.mod.Connection
-import typings.libp2pInterfaceConnection.mod.ConnectionGater
 import typings.libp2pInterfaceConnection.mod.ConnectionProtector
 import typings.libp2pInterfaceConnection.mod.MultiaddrConnection
 import typings.libp2pInterfaceConnection.mod.Stream
 import typings.libp2pInterfaceConnectionEncrypter.mod.ConnectionEncrypter
 import typings.libp2pInterfaceConnectionEncrypter.mod.SecuredConnection
+import typings.libp2pInterfaceConnectionGater.mod.ConnectionGater
 import typings.libp2pInterfaceConnectionManager.mod.ConnectionManager
+import typings.libp2pInterfaceLibp2p.mod.Libp2pEvents
 import typings.libp2pInterfaceMetrics.mod.Metrics
 import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pInterfacePeerStore.mod.PeerStore
 import typings.libp2pInterfaceRegistrar.mod.Registrar
 import typings.libp2pInterfaceStreamMuxer.mod.StreamMuxerFactory
 import typings.libp2pInterfaceTransport.mod.Upgrader
+import typings.libp2pInterfaces.eventsMod.EventEmitter
+import typings.std.AsyncGenerator
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -27,23 +31,32 @@ object distSrcUpgraderMod {
   
   @JSImport("libp2p/dist/src/upgrader", "DefaultUpgrader")
   @js.native
-  open class DefaultUpgrader protected () extends Upgrader {
+  open class DefaultUpgrader protected ()
+    extends StObject
+       with Upgrader {
     def this(components: DefaultUpgraderComponents, init: UpgraderInit) = this()
     
     /**
       * A convenience method for generating a new `Connection`
       */
-    def _createConnection(opts: CreateConectionOptions): Connection = js.native
+    def _createConnection(opts: CreateConnectionOptions): Connection = js.native
     
     /**
       * Attempts to encrypt the incoming `connection` with the provided `cryptos`
       */
-    def _encryptInbound(connection: Duplex[js.typedarray.Uint8Array, js.typedarray.Uint8Array, js.Promise[Unit]]): js.Promise[CryptoResult] = js.native
+    def _encryptInbound(
+      connection: Duplex[
+          AsyncGenerator[js.typedarray.Uint8Array, Any, Any], 
+          Source[js.typedarray.Uint8Array], 
+          Any
+        ]
+    ): js.Promise[CryptoResult] = js.native
     
     /**
       * Attempts to encrypt the given `connection` with the provided connection encrypters.
       * The first `ConnectionEncrypter` module to succeed will be used
       */
+    def _encryptOutbound(connection: MultiaddrConnection): js.Promise[CryptoResult] = js.native
     def _encryptOutbound(connection: MultiaddrConnection, remotePeerId: PeerId): js.Promise[CryptoResult] = js.native
     
     /**
@@ -67,12 +80,38 @@ object distSrcUpgraderMod {
     
     /* private */ val connectionEncryption: Any = js.native
     
+    /* private */ val events: Any = js.native
+    
     /* private */ val inboundUpgradeTimeout: Any = js.native
     
     /* private */ val muxers: Any = js.native
+    
+    def shouldBlockConnection(remotePeer: PeerId, maConn: MultiaddrConnection, connectionType: ConnectionDeniedType): js.Promise[Unit] = js.native
   }
   
-  trait CreateConectionOptions extends StObject {
+  /* Inlined keyof std.Pick<@libp2p/interface-connection-gater.@libp2p/interface-connection-gater.ConnectionGater, 'denyOutboundConnection' | 'denyInboundEncryptedConnection' | 'denyOutboundEncryptedConnection' | 'denyInboundUpgradedConnection' | 'denyOutboundUpgradedConnection'> */
+  /* Rewritten from type alias, can be one of: 
+    - typings.libp2p.libp2pStrings.denyOutboundConnection
+    - typings.libp2p.libp2pStrings.denyOutboundEncryptedConnection
+    - typings.libp2p.libp2pStrings.denyOutboundUpgradedConnection
+    - typings.libp2p.libp2pStrings.denyInboundEncryptedConnection
+    - typings.libp2p.libp2pStrings.denyInboundUpgradedConnection
+  */
+  trait ConnectionDeniedType extends StObject
+  object ConnectionDeniedType {
+    
+    inline def denyInboundEncryptedConnection: typings.libp2p.libp2pStrings.denyInboundEncryptedConnection = "denyInboundEncryptedConnection".asInstanceOf[typings.libp2p.libp2pStrings.denyInboundEncryptedConnection]
+    
+    inline def denyInboundUpgradedConnection: typings.libp2p.libp2pStrings.denyInboundUpgradedConnection = "denyInboundUpgradedConnection".asInstanceOf[typings.libp2p.libp2pStrings.denyInboundUpgradedConnection]
+    
+    inline def denyOutboundConnection: typings.libp2p.libp2pStrings.denyOutboundConnection = "denyOutboundConnection".asInstanceOf[typings.libp2p.libp2pStrings.denyOutboundConnection]
+    
+    inline def denyOutboundEncryptedConnection: typings.libp2p.libp2pStrings.denyOutboundEncryptedConnection = "denyOutboundEncryptedConnection".asInstanceOf[typings.libp2p.libp2pStrings.denyOutboundEncryptedConnection]
+    
+    inline def denyOutboundUpgradedConnection: typings.libp2p.libp2pStrings.denyOutboundUpgradedConnection = "denyOutboundUpgradedConnection".asInstanceOf[typings.libp2p.libp2pStrings.denyOutboundUpgradedConnection]
+  }
+  
+  trait CreateConnectionOptions extends StObject {
     
     var cryptoProtocol: String
     
@@ -84,23 +123,31 @@ object distSrcUpgraderMod {
     
     var remotePeer: PeerId
     
-    var upgradedConn: Duplex[js.typedarray.Uint8Array, js.typedarray.Uint8Array, js.Promise[Unit]]
+    var upgradedConn: Duplex[
+        AsyncGenerator[js.typedarray.Uint8Array, Any, Any], 
+        Source[js.typedarray.Uint8Array], 
+        js.Promise[Unit]
+      ]
   }
-  object CreateConectionOptions {
+  object CreateConnectionOptions {
     
     inline def apply(
       cryptoProtocol: String,
       direction: inbound | outbound,
       maConn: MultiaddrConnection,
       remotePeer: PeerId,
-      upgradedConn: Duplex[js.typedarray.Uint8Array, js.typedarray.Uint8Array, js.Promise[Unit]]
-    ): CreateConectionOptions = {
+      upgradedConn: Duplex[
+          AsyncGenerator[js.typedarray.Uint8Array, Any, Any], 
+          Source[js.typedarray.Uint8Array], 
+          js.Promise[Unit]
+        ]
+    ): CreateConnectionOptions = {
       val __obj = js.Dynamic.literal(cryptoProtocol = cryptoProtocol.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], maConn = maConn.asInstanceOf[js.Any], remotePeer = remotePeer.asInstanceOf[js.Any], upgradedConn = upgradedConn.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CreateConectionOptions]
+      __obj.asInstanceOf[CreateConnectionOptions]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: CreateConectionOptions] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: CreateConnectionOptions] (val x: Self) extends AnyVal {
       
       inline def setCryptoProtocol(value: String): Self = StObject.set(x, "cryptoProtocol", value.asInstanceOf[js.Any])
       
@@ -114,7 +161,13 @@ object distSrcUpgraderMod {
       
       inline def setRemotePeer(value: PeerId): Self = StObject.set(x, "remotePeer", value.asInstanceOf[js.Any])
       
-      inline def setUpgradedConn(value: Duplex[js.typedarray.Uint8Array, js.typedarray.Uint8Array, js.Promise[Unit]]): Self = StObject.set(x, "upgradedConn", value.asInstanceOf[js.Any])
+      inline def setUpgradedConn(
+        value: Duplex[
+              AsyncGenerator[js.typedarray.Uint8Array, Any, Any], 
+              Source[js.typedarray.Uint8Array], 
+              js.Promise[Unit]
+            ]
+      ): Self = StObject.set(x, "upgradedConn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -127,7 +180,11 @@ object distSrcUpgraderMod {
   object CryptoResult {
     
     inline def apply(
-      conn: Duplex[js.typedarray.Uint8Array, js.typedarray.Uint8Array, js.Promise[Unit]],
+      conn: Duplex[
+          AsyncGenerator[js.typedarray.Uint8Array, Any, Any], 
+          Source[js.typedarray.Uint8Array], 
+          js.Promise[Unit]
+        ],
       protocol: String,
       remotePeer: PeerId
     ): CryptoResult = {
@@ -150,6 +207,8 @@ object distSrcUpgraderMod {
     
     var connectionProtector: js.UndefOr[ConnectionProtector] = js.undefined
     
+    var events: EventEmitter[Libp2pEvents]
+    
     var metrics: js.UndefOr[Metrics] = js.undefined
     
     var peerId: PeerId
@@ -163,11 +222,12 @@ object distSrcUpgraderMod {
     inline def apply(
       connectionGater: ConnectionGater,
       connectionManager: ConnectionManager,
+      events: EventEmitter[Libp2pEvents],
       peerId: PeerId,
       peerStore: PeerStore,
       registrar: Registrar
     ): DefaultUpgraderComponents = {
-      val __obj = js.Dynamic.literal(connectionGater = connectionGater.asInstanceOf[js.Any], connectionManager = connectionManager.asInstanceOf[js.Any], peerId = peerId.asInstanceOf[js.Any], peerStore = peerStore.asInstanceOf[js.Any], registrar = registrar.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(connectionGater = connectionGater.asInstanceOf[js.Any], connectionManager = connectionManager.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], peerId = peerId.asInstanceOf[js.Any], peerStore = peerStore.asInstanceOf[js.Any], registrar = registrar.asInstanceOf[js.Any])
       __obj.asInstanceOf[DefaultUpgraderComponents]
     }
     
@@ -181,6 +241,8 @@ object distSrcUpgraderMod {
       inline def setConnectionProtector(value: ConnectionProtector): Self = StObject.set(x, "connectionProtector", value.asInstanceOf[js.Any])
       
       inline def setConnectionProtectorUndefined: Self = StObject.set(x, "connectionProtector", js.undefined)
+      
+      inline def setEvents(value: EventEmitter[Libp2pEvents]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
       inline def setMetrics(value: Metrics): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
       
@@ -228,18 +290,14 @@ object distSrcUpgraderMod {
       * An amount of ms by which an inbound connection upgrade
       * must complete
       */
-    var inboundUpgradeTimeout: Double
+    var inboundUpgradeTimeout: js.UndefOr[Double] = js.undefined
     
     var muxers: js.Array[StreamMuxerFactory]
   }
   object UpgraderInit {
     
-    inline def apply(
-      connectionEncryption: js.Array[ConnectionEncrypter[Any]],
-      inboundUpgradeTimeout: Double,
-      muxers: js.Array[StreamMuxerFactory]
-    ): UpgraderInit = {
-      val __obj = js.Dynamic.literal(connectionEncryption = connectionEncryption.asInstanceOf[js.Any], inboundUpgradeTimeout = inboundUpgradeTimeout.asInstanceOf[js.Any], muxers = muxers.asInstanceOf[js.Any])
+    inline def apply(connectionEncryption: js.Array[ConnectionEncrypter[Any]], muxers: js.Array[StreamMuxerFactory]): UpgraderInit = {
+      val __obj = js.Dynamic.literal(connectionEncryption = connectionEncryption.asInstanceOf[js.Any], muxers = muxers.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpgraderInit]
     }
     
@@ -251,6 +309,8 @@ object distSrcUpgraderMod {
       inline def setConnectionEncryptionVarargs(value: ConnectionEncrypter[Any]*): Self = StObject.set(x, "connectionEncryption", js.Array(value*))
       
       inline def setInboundUpgradeTimeout(value: Double): Self = StObject.set(x, "inboundUpgradeTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setInboundUpgradeTimeoutUndefined: Self = StObject.set(x, "inboundUpgradeTimeout", js.undefined)
       
       inline def setMuxers(value: js.Array[StreamMuxerFactory]): Self = StObject.set(x, "muxers", value.asInstanceOf[js.Any])
       

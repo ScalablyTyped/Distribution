@@ -6,11 +6,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A <code><a href="#LatLngBounds">LatLngBounds</a></code> instance represents
-  * a rectangle in geographical coordinates, including one that crosses the 180
-  * degrees longitudinal meridian.
-  */
 @js.native
 trait LatLngBounds
   extends StObject

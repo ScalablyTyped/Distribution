@@ -28,8 +28,6 @@ object distBuilderMod {
   @js.native
   open class AbstractEventBuilder () extends StObject {
     
-    /* private */ val _callSend: Any = js.native
-    
     def begin(event: SimplifiedDurationBeginEv): Unit = js.native
     
     def beginAsync(event: SimplifiedAsyncStartEvent): Unit = js.native
@@ -44,6 +42,8 @@ object distBuilderMod {
     def end(event: SimplifiedDurationEndEven): Unit = js.native
     
     def endAsync(event: SimplifiedAsyncEndEvent): Unit = js.native
+    
+    def event[T /* <: Event */](event: Completable[T]): Unit = js.native
     
     def instant(event: SimplifiedInstantEvent): Unit = js.native
     

@@ -1,7 +1,7 @@
 package typings.metro.anon
 
-import typings.metro.libReportingMod.ReportableEvent
 import typings.metro.metroStrings.initialize_failed
+import typings.metro.srcLibReportingMod.ReportableEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

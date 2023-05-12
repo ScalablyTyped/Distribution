@@ -16,7 +16,7 @@ object libIconsGoogleCircleFilledMod extends Shortcut {
   @js.native
   trait GoogleCircleFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_GoogleCircleFilledIconType: String = js.native

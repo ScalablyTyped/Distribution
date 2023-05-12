@@ -1,35 +1,35 @@
 package typings.countriesAndTimezones.anon
 
-import typings.countriesAndTimezones.countriesAndTimezonesInts.`-60`
-import typings.countriesAndTimezones.countriesAndTimezonesStrings.PT
+import typings.countriesAndTimezones.countriesAndTimezonesStrings.AsiaSlashBangkok
+import typings.countriesAndTimezones.countriesAndTimezonesStrings.LA
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `221` extends StObject {
   
-  var c: js.Array[PT]
+  var a: AsiaSlashBangkok
   
-  var d: typings.countriesAndTimezones.countriesAndTimezonesInts.`0`
+  var c: js.Array[LA]
   
-  var u: `-60`
+  var r: typings.countriesAndTimezones.countriesAndTimezonesInts.`1`
 }
 object `221` {
   
-  inline def apply(c: js.Array[PT]): `221` = {
-    val __obj = js.Dynamic.literal(c = c.asInstanceOf[js.Any], d = 0, u = -60)
+  inline def apply(c: js.Array[LA]): `221` = {
+    val __obj = js.Dynamic.literal(a = "Asia/Bangkok", c = c.asInstanceOf[js.Any], r = 1)
     __obj.asInstanceOf[`221`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `221`] (val x: Self) extends AnyVal {
     
-    inline def setC(value: js.Array[PT]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+    inline def setA(value: AsiaSlashBangkok): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
-    inline def setCVarargs(value: PT*): Self = StObject.set(x, "c", js.Array(value*))
+    inline def setC(value: js.Array[LA]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     
-    inline def setD(value: typings.countriesAndTimezones.countriesAndTimezonesInts.`0`): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+    inline def setCVarargs(value: LA*): Self = StObject.set(x, "c", js.Array(value*))
     
-    inline def setU(value: `-60`): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
+    inline def setR(value: typings.countriesAndTimezones.countriesAndTimezonesInts.`1`): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
   }
 }

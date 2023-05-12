@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@csstools/postcss-is-pseudo-class" : "2.0.7"
+      "@csstools/postcss-is-pseudo-class" : "3.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@csstools/postcss-is-pseudo-class" : "2.0.7"
+      "@csstools/postcss-is-pseudo-class" : "3.2.0"
     }
   ],
   "compile-devDependencies" : [

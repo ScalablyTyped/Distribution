@@ -5,21 +5,24 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+	 * A CSS syntax error.
+	 */
 trait CssSyntaxError extends StObject {
   
   /**
-  			 * The column of the inclusive start position of the error.
-  			 */
+  		 * The column of the inclusive start position of the error.
+  		 */
   var column: Double
   
   /**
-  			 * The column of the exclusive end position of the error.
-  			 */
+  		 * The column of the exclusive end position of the error.
+  		 */
   var endColumn: js.UndefOr[Double] = js.undefined
   
   /**
-  			 * The line of the exclusive end position of the error.
-  			 */
+  		 * The line of the exclusive end position of the error.
+  		 */
   var endLine: js.UndefOr[Double] = js.undefined
   
   var file: js.UndefOr[String] = js.undefined
@@ -27,8 +30,8 @@ trait CssSyntaxError extends StObject {
   var input: Column
   
   /**
-  			 * The line of the inclusive start position of the error.
-  			 */
+  		 * The line of the inclusive start position of the error.
+  		 */
   var line: Double
   
   var message: String

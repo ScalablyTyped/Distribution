@@ -27,7 +27,7 @@ trait BundleEntry[BundleContentType]
   var request: js.UndefOr[BundleEntryRequest] = js.undefined
   
   /**
-    * The Resource for the entry. The purpose/meaning of the resource is determined by the Bundle.type.
+    * The Resource for the entry. The purpose/meaning of the resource is determined by the Bundle.type. This is allowed to be a Parameters resource if and only if it is referenced by something else within the Bundle that provides context/meaning.
     */
   var resource: js.UndefOr[BundleContentType] = js.undefined
   

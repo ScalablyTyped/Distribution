@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetParametersPathDeliveryid extends StObject {
   
   /**
-    * Returns a delivery for the webhook configured for a GitHub App.
+    * Get a delivery for an app webhook
+    * @description Returns a delivery for the webhook configured for a GitHub App.
     *
     * You must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */

@@ -18,8 +18,7 @@ trait Addin extends StObject {
     * This API is only supported in Excel.
     *
     * @remarks
-    * [Api set: SharedRuntime BETA (PREVIEW ONLY)]
-    * @beta
+    * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.2}
     */
   var beforeDocumentCloseNotification: BeforeDocumentCloseNotification
   

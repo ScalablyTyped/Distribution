@@ -123,7 +123,7 @@ trait FacebookInstantGamesPlugin
     * 
     * This value is populated automatically during boot.
     */
-  var contextType: String = js.native
+  var contextType: String | Null = js.native
   
   /**
     * Attempts to create or switch into a context between a specified player and the current player.
@@ -253,25 +253,25 @@ trait FacebookInstantGamesPlugin
     * Use this to determine what languages the current game should be localized with.
     * It is only populated if `getLocale` is in the list of supported APIs.
     */
-  def getLocale(): String = js.native
+  def getLocale(): String | Null = js.native
   
   /**
     * Returns the platform on which the game is currently running, i.e. `IOS`.
     * It is only populated if `getPlatform` is in the list of supported APIs.
     */
-  def getPlatform(): String = js.native
+  def getPlatform(): String | Null = js.native
   
   /**
     * Returns the id of the player. This is a string based ID, the same as `FBInstant.player.getID()`.
     * It is only populated if `playerGetID` is in the list of supported APIs.
     */
-  def getPlayerID(): String = js.native
+  def getPlayerID(): String | Null = js.native
   
   /**
     * Returns the player's localized display name.
     * It is only populated if `playerGetName` is in the list of supported APIs.
     */
-  def getPlayerName(): String = js.native
+  def getPlayerName(): String | Null = js.native
   
   /**
     * Returns the url to the player's public profile photo. The photo will always be a square, and with dimensions
@@ -279,7 +279,7 @@ trait FacebookInstantGamesPlugin
     * It's recommended to always scale the image to a desired size before rendering.
     * It is only populated if `playerGetPhoto` is in the list of supported APIs.
     */
-  def getPlayerPhotoURL(): String = js.native
+  def getPlayerPhotoURL(): String | Null = js.native
   
   /**
     * Fetches an array of ConnectedPlayer objects containing information about active players
@@ -303,7 +303,7 @@ trait FacebookInstantGamesPlugin
     * Use this to look-up product details based on a purchase list.
     * @param productID The Product ID of the item to get from the catalog.
     */
-  def getProduct(productID: String): Product = js.native
+  def getProduct(productID: String): Product | Null = js.native
   
   /**
     * Fetches all of the player's unconsumed purchases. The game must fetch the current player's purchases
@@ -324,7 +324,7 @@ trait FacebookInstantGamesPlugin
     * Returns the string representation of the Facebook Instant Games SDK version being used.
     * It is only populated if `getSDKVersion` is in the list of supported APIs.
     */
-  def getSDKVersion(): String = js.native
+  def getSDKVersion(): String | Null = js.native
   
   /**
     * Retrieve stats from the designated cloud storage of the current player.
@@ -350,7 +350,7 @@ trait FacebookInstantGamesPlugin
     * 
     * It is only populated if `contextGetType` is in the list of supported APIs.
     */
-  def getType(): String = js.native
+  def getType(): String | Null = js.native
   
   /**
     * Has the Facebook Instant Games API loaded yet?
@@ -426,7 +426,7 @@ trait FacebookInstantGamesPlugin
     * Use this to determine what languages the current game should be localized with.
     * This value is populated automatically during boot.
     */
-  var locale: String = js.native
+  var locale: String | Null = js.native
   
   /**
     * Log an app event with FB Analytics.
@@ -548,7 +548,7 @@ trait FacebookInstantGamesPlugin
     * The platform on which the game is currently running, i.e. `IOS`.
     * This value is populated automatically during boot.
     */
-  var platform: String = js.native
+  var platform: String | Null = js.native
   
   /**
     * Whether a player can subscribe to the game bot or not.
@@ -559,13 +559,13 @@ trait FacebookInstantGamesPlugin
     * Holds the id of the player. This is a string based ID, the same as `FBInstant.player.getID()`.
     * This value is populated automatically during boot if the API is supported.
     */
-  var playerID: String = js.native
+  var playerID: String | Null = js.native
   
   /**
     * The player's localized display name.
     * This value is populated automatically during boot if the API is supported.
     */
-  var playerName: String = js.native
+  var playerName: String | Null = js.native
   
   /**
     * A url to the player's public profile photo. The photo will always be a square, and with dimensions
@@ -573,7 +573,7 @@ trait FacebookInstantGamesPlugin
     * It's recommended to always scale the image to a desired size before rendering.
     * This value is populated automatically during boot if the API is supported.
     */
-  var playerPhotoURL: String = js.native
+  var playerPhotoURL: String | Null = js.native
   
   /**
     * Attempt to create an instance of an interstitial ad.
@@ -776,6 +776,7 @@ trait FacebookInstantGamesPlugin
     * @param updateData The update data object payload.
     */
   def update(cta: String, text: js.Object, key: String, frame: String, template: String, updateData: js.Object): this.type = js.native
+  def update(cta: String, text: js.Object, key: String, frame: Unit, template: String, updateData: js.Object): this.type = js.native
   def update(cta: String, text: js.Object, key: String, frame: integer, template: String, updateData: js.Object): this.type = js.native
   
   /**
@@ -806,11 +807,12 @@ trait FacebookInstantGamesPlugin
     * @param updateData The update data object payload.
     */
   def updateLeaderboard(cta: String, text: js.Object, key: String, frame: String, template: String, updateData: js.Object): this.type = js.native
+  def updateLeaderboard(cta: String, text: js.Object, key: String, frame: Unit, template: String, updateData: js.Object): this.type = js.native
   def updateLeaderboard(cta: String, text: js.Object, key: String, frame: integer, template: String, updateData: js.Object): this.type = js.native
   
   /**
     * The string representation of the Facebook Instant Games SDK version being used.
     * This value is populated automatically during boot.
     */
-  var version: String = js.native
+  var version: String | Null = js.native
 }

@@ -1,6 +1,6 @@
 package typings.workboxPrecaching
 
-import typings.workboxCore.typesWorkboxPluginMod.WorkboxPlugin
+import typings.workboxCore.typesMod.WorkboxPlugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,5 +11,12 @@ object addPluginsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def addPlugins(newPlugins: js.Array[WorkboxPlugin]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addPlugins")(newPlugins.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  /**
+    * Adds plugins to the precaching strategy.
+    *
+    * @param {Array<Object>} plugins
+    *
+    * @memberof workbox-precaching
+    */
+  inline def addPlugins(plugins: js.Array[WorkboxPlugin]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addPlugins")(plugins.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

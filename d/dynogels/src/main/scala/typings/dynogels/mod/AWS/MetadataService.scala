@@ -1,6 +1,6 @@
 package typings.dynogels.mod.AWS
 
-import typings.awsSdk.libMetadataServiceMod.MetadataServiceOptions
+import typings.awsSdk2Types.libMetadataServiceMod.MetadataServiceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creates a new MetadataService object with a given set of options.
   */
 open class MetadataService ()
-  extends typings.awsSdk.mod.MetadataService {
+  extends typings.awsSdk2Types.mod.MetadataService {
   def this(options: MetadataServiceOptions) = this()
 }
 /* static members */

@@ -26,6 +26,7 @@ import typings.carbonComponentsReact.carbonComponentsReactStrings.br
 import typings.carbonComponentsReact.carbonComponentsReactStrings.button
 import typings.carbonComponentsReact.carbonComponentsReactStrings.canvas
 import typings.carbonComponentsReact.carbonComponentsReactStrings.caption
+import typings.carbonComponentsReact.carbonComponentsReactStrings.center
 import typings.carbonComponentsReact.carbonComponentsReactStrings.circle
 import typings.carbonComponentsReact.carbonComponentsReactStrings.cite
 import typings.carbonComponentsReact.carbonComponentsReactStrings.clipPath
@@ -460,6 +461,8 @@ object global {
     
     inline def AspectRatio_caption(props: AspectRatioIntrinsicProps[caption]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     
+    inline def AspectRatio_center(props: AspectRatioIntrinsicProps[center]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+    
     inline def AspectRatio_circle(props: AspectRatioIntrinsicProps[circle]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     
     inline def AspectRatio_cite(props: AspectRatioIntrinsicProps[cite]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
@@ -846,6 +849,8 @@ object global {
     
     inline def Button_caption[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[caption] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     
+    inline def Button_center[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[center] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+    
     inline def Button_circle[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[circle] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     
     inline def Button_cite[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[cite] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
@@ -1169,7 +1174,7 @@ object global {
       def this(props: ClickableTileProps) = this()
       /**
         * @deprecated
-        * @see https://reactjs.org/docs/legacy-context.html
+        * @see https://legacy.reactjs.org/docs/legacy-context.html
         */
       def this(props: ClickableTileProps, context: Any) = this()
     }
@@ -1225,6 +1230,8 @@ object global {
     inline def Column_canvas(props: ColumnIntrinsicProps[canvas]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     
     inline def Column_caption(props: ColumnIntrinsicProps[caption]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+    
+    inline def Column_center(props: ColumnIntrinsicProps[center]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     
     inline def Column_circle(props: ColumnIntrinsicProps[circle]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     
@@ -1589,6 +1596,8 @@ object global {
     inline def Content_canvas(props: ContentIntrinsicProps[canvas]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     
     inline def Content_caption(props: ContentIntrinsicProps[caption]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+    
+    inline def Content_center(props: ContentIntrinsicProps[center]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     
     inline def Content_circle(props: ContentIntrinsicProps[circle]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     
@@ -1960,6 +1969,8 @@ object global {
     
     inline def DangerButton_caption(props: FCProps[ButtonIntrinsicProps[caption]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     
+    inline def DangerButton_center(props: FCProps[ButtonIntrinsicProps[center]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+    
     inline def DangerButton_circle(props: FCProps[ButtonIntrinsicProps[circle]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     
     inline def DangerButton_cite(props: FCProps[ButtonIntrinsicProps[cite]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
@@ -2301,7 +2312,7 @@ object global {
       inline def TableBatchAction[R /* <: HTMLElement */](
         props: ForwardRefProps[
               R, 
-              ButtonIntrinsicProps[a] & ButtonKindProps & ButtonIntrinsicProps[abbr] & ButtonIntrinsicProps[address] & ButtonIntrinsicProps[area] & ButtonIntrinsicProps[article] & ButtonIntrinsicProps[aside] & ButtonIntrinsicProps[audio] & ButtonIntrinsicProps[b] & ButtonIntrinsicProps[base] & ButtonIntrinsicProps[bdi] & ButtonIntrinsicProps[bdo] & ButtonIntrinsicProps[big] & ButtonIntrinsicProps[blockquote] & ButtonIntrinsicProps[body] & ButtonIntrinsicProps[br] & ButtonIntrinsicProps[button] & ButtonIntrinsicProps[canvas] & ButtonIntrinsicProps[caption] & ButtonIntrinsicProps[cite] & ButtonIntrinsicProps[code] & ButtonIntrinsicProps[col] & ButtonIntrinsicProps[colgroup] & ButtonIntrinsicProps[data] & ButtonIntrinsicProps[datalist] & ButtonIntrinsicProps[dd] & ButtonIntrinsicProps[del] & ButtonIntrinsicProps[details] & ButtonIntrinsicProps[dfn] & ButtonIntrinsicProps[dialog] & ButtonIntrinsicProps[div] & ButtonIntrinsicProps[dl] & ButtonIntrinsicProps[dt] & ButtonIntrinsicProps[em] & ButtonIntrinsicProps[embed] & ButtonIntrinsicProps[fieldset] & ButtonIntrinsicProps[figcaption] & ButtonIntrinsicProps[figure] & ButtonIntrinsicProps[footer] & ButtonIntrinsicProps[form] & ButtonIntrinsicProps[h1] & ButtonIntrinsicProps[h2] & ButtonIntrinsicProps[h3] & ButtonIntrinsicProps[h4] & ButtonIntrinsicProps[h5] & ButtonIntrinsicProps[h6] & ButtonIntrinsicProps[head] & ButtonIntrinsicProps[header] & ButtonIntrinsicProps[hgroup] & ButtonIntrinsicProps[hr] & ButtonIntrinsicProps[html] & ButtonIntrinsicProps[i] & ButtonIntrinsicProps[iframe] & ButtonIntrinsicProps[img] & ButtonIntrinsicProps[input] & ButtonIntrinsicProps[ins] & ButtonIntrinsicProps[kbd] & ButtonIntrinsicProps[keygen] & ButtonIntrinsicProps[label] & ButtonIntrinsicProps[legend] & ButtonIntrinsicProps[li] & ButtonIntrinsicProps[link] & ButtonIntrinsicProps[main] & ButtonIntrinsicProps[map] & ButtonIntrinsicProps[mark] & ButtonIntrinsicProps[menu] & ButtonIntrinsicProps[menuitem] & ButtonIntrinsicProps[meta] & ButtonIntrinsicProps[meter] & ButtonIntrinsicProps[nav] & ButtonIntrinsicProps[noindex] & ButtonIntrinsicProps[noscript] & ButtonIntrinsicProps[`object`] & ButtonIntrinsicProps[ol] & ButtonIntrinsicProps[optgroup] & ButtonIntrinsicProps[option] & ButtonIntrinsicProps[output] & ButtonIntrinsicProps[p] & ButtonIntrinsicProps[param] & ButtonIntrinsicProps[picture] & ButtonIntrinsicProps[pre] & ButtonIntrinsicProps[progress] & ButtonIntrinsicProps[q] & ButtonIntrinsicProps[rp] & ButtonIntrinsicProps[rt] & ButtonIntrinsicProps[ruby] & ButtonIntrinsicProps[s] & ButtonIntrinsicProps[samp] & ButtonIntrinsicProps[slot] & ButtonIntrinsicProps[script] & ButtonIntrinsicProps[section] & ButtonIntrinsicProps[select] & ButtonIntrinsicProps[small] & ButtonIntrinsicProps[source] & ButtonIntrinsicProps[span] & ButtonIntrinsicProps[strong] & ButtonIntrinsicProps[style] & ButtonIntrinsicProps[sub] & ButtonIntrinsicProps[summary] & ButtonIntrinsicProps[sup] & ButtonIntrinsicProps[table] & ButtonIntrinsicProps[template] & ButtonIntrinsicProps[tbody] & ButtonIntrinsicProps[td] & ButtonIntrinsicProps[textarea] & ButtonIntrinsicProps[tfoot] & ButtonIntrinsicProps[th] & ButtonIntrinsicProps[thead] & ButtonIntrinsicProps[time] & ButtonIntrinsicProps[title] & ButtonIntrinsicProps[tr] & ButtonIntrinsicProps[track] & ButtonIntrinsicProps[u] & ButtonIntrinsicProps[ul] & ButtonIntrinsicProps[`var`] & ButtonIntrinsicProps[video] & ButtonIntrinsicProps[wbr] & ButtonIntrinsicProps[webview] & ButtonIntrinsicProps[svg] & ButtonIntrinsicProps[animate] & ButtonIntrinsicProps[animateMotion] & ButtonIntrinsicProps[animateTransform] & ButtonIntrinsicProps[circle] & ButtonIntrinsicProps[clipPath] & ButtonIntrinsicProps[defs] & ButtonIntrinsicProps[desc_] & ButtonIntrinsicProps[ellipse] & ButtonIntrinsicProps[feBlend] & ButtonIntrinsicProps[feColorMatrix] & ButtonIntrinsicProps[feComponentTransfer] & ButtonIntrinsicProps[feComposite] & ButtonIntrinsicProps[feConvolveMatrix] & ButtonIntrinsicProps[feDiffuseLighting] & ButtonIntrinsicProps[feDisplacementMap] & ButtonIntrinsicProps[feDistantLight] & ButtonIntrinsicProps[feDropShadow] & ButtonIntrinsicProps[feFlood] & ButtonIntrinsicProps[feFuncA] & ButtonIntrinsicProps[feFuncB] & ButtonIntrinsicProps[feFuncG] & ButtonIntrinsicProps[feFuncR] & ButtonIntrinsicProps[feGaussianBlur] & ButtonIntrinsicProps[feImage] & ButtonIntrinsicProps[feMerge] & ButtonIntrinsicProps[feMergeNode] & ButtonIntrinsicProps[feMorphology] & ButtonIntrinsicProps[feOffset] & ButtonIntrinsicProps[fePointLight] & ButtonIntrinsicProps[feSpecularLighting] & ButtonIntrinsicProps[feSpotLight] & ButtonIntrinsicProps[feTile] & ButtonIntrinsicProps[feTurbulence] & ButtonIntrinsicProps[filter] & ButtonIntrinsicProps[foreignObject] & ButtonIntrinsicProps[g] & ButtonIntrinsicProps[image] & ButtonIntrinsicProps[line] & ButtonIntrinsicProps[linearGradient] & ButtonIntrinsicProps[marker] & ButtonIntrinsicProps[mask] & ButtonIntrinsicProps[metadata] & ButtonIntrinsicProps[mpath] & ButtonIntrinsicProps[path] & ButtonIntrinsicProps[pattern] & ButtonIntrinsicProps[polygon] & ButtonIntrinsicProps[polyline] & ButtonIntrinsicProps[radialGradient] & ButtonIntrinsicProps[rect] & ButtonIntrinsicProps[stop] & ButtonIntrinsicProps[switch] & ButtonIntrinsicProps[symbol] & ButtonIntrinsicProps[text] & ButtonIntrinsicProps[textPath] & ButtonIntrinsicProps[tspan] & ButtonIntrinsicProps[use] & ButtonIntrinsicProps[view]
+              ButtonIntrinsicProps[a] & ButtonKindProps & ButtonIntrinsicProps[abbr] & ButtonIntrinsicProps[address] & ButtonIntrinsicProps[area] & ButtonIntrinsicProps[article] & ButtonIntrinsicProps[aside] & ButtonIntrinsicProps[audio] & ButtonIntrinsicProps[b] & ButtonIntrinsicProps[base] & ButtonIntrinsicProps[bdi] & ButtonIntrinsicProps[bdo] & ButtonIntrinsicProps[big] & ButtonIntrinsicProps[blockquote] & ButtonIntrinsicProps[body] & ButtonIntrinsicProps[br] & ButtonIntrinsicProps[button] & ButtonIntrinsicProps[canvas] & ButtonIntrinsicProps[caption] & ButtonIntrinsicProps[center] & ButtonIntrinsicProps[cite] & ButtonIntrinsicProps[code] & ButtonIntrinsicProps[col] & ButtonIntrinsicProps[colgroup] & ButtonIntrinsicProps[data] & ButtonIntrinsicProps[datalist] & ButtonIntrinsicProps[dd] & ButtonIntrinsicProps[del] & ButtonIntrinsicProps[details] & ButtonIntrinsicProps[dfn] & ButtonIntrinsicProps[dialog] & ButtonIntrinsicProps[div] & ButtonIntrinsicProps[dl] & ButtonIntrinsicProps[dt] & ButtonIntrinsicProps[em] & ButtonIntrinsicProps[embed] & ButtonIntrinsicProps[fieldset] & ButtonIntrinsicProps[figcaption] & ButtonIntrinsicProps[figure] & ButtonIntrinsicProps[footer] & ButtonIntrinsicProps[form] & ButtonIntrinsicProps[h1] & ButtonIntrinsicProps[h2] & ButtonIntrinsicProps[h3] & ButtonIntrinsicProps[h4] & ButtonIntrinsicProps[h5] & ButtonIntrinsicProps[h6] & ButtonIntrinsicProps[head] & ButtonIntrinsicProps[header] & ButtonIntrinsicProps[hgroup] & ButtonIntrinsicProps[hr] & ButtonIntrinsicProps[html] & ButtonIntrinsicProps[i] & ButtonIntrinsicProps[iframe] & ButtonIntrinsicProps[img] & ButtonIntrinsicProps[input] & ButtonIntrinsicProps[ins] & ButtonIntrinsicProps[kbd] & ButtonIntrinsicProps[keygen] & ButtonIntrinsicProps[label] & ButtonIntrinsicProps[legend] & ButtonIntrinsicProps[li] & ButtonIntrinsicProps[link] & ButtonIntrinsicProps[main] & ButtonIntrinsicProps[map] & ButtonIntrinsicProps[mark] & ButtonIntrinsicProps[menu] & ButtonIntrinsicProps[menuitem] & ButtonIntrinsicProps[meta] & ButtonIntrinsicProps[meter] & ButtonIntrinsicProps[nav] & ButtonIntrinsicProps[noindex] & ButtonIntrinsicProps[noscript] & ButtonIntrinsicProps[`object`] & ButtonIntrinsicProps[ol] & ButtonIntrinsicProps[optgroup] & ButtonIntrinsicProps[option] & ButtonIntrinsicProps[output] & ButtonIntrinsicProps[p] & ButtonIntrinsicProps[param] & ButtonIntrinsicProps[picture] & ButtonIntrinsicProps[pre] & ButtonIntrinsicProps[progress] & ButtonIntrinsicProps[q] & ButtonIntrinsicProps[rp] & ButtonIntrinsicProps[rt] & ButtonIntrinsicProps[ruby] & ButtonIntrinsicProps[s] & ButtonIntrinsicProps[samp] & ButtonIntrinsicProps[slot] & ButtonIntrinsicProps[script] & ButtonIntrinsicProps[section] & ButtonIntrinsicProps[select] & ButtonIntrinsicProps[small] & ButtonIntrinsicProps[source] & ButtonIntrinsicProps[span] & ButtonIntrinsicProps[strong] & ButtonIntrinsicProps[style] & ButtonIntrinsicProps[sub] & ButtonIntrinsicProps[summary] & ButtonIntrinsicProps[sup] & ButtonIntrinsicProps[table] & ButtonIntrinsicProps[template] & ButtonIntrinsicProps[tbody] & ButtonIntrinsicProps[td] & ButtonIntrinsicProps[textarea] & ButtonIntrinsicProps[tfoot] & ButtonIntrinsicProps[th] & ButtonIntrinsicProps[thead] & ButtonIntrinsicProps[time] & ButtonIntrinsicProps[title] & ButtonIntrinsicProps[tr] & ButtonIntrinsicProps[track] & ButtonIntrinsicProps[u] & ButtonIntrinsicProps[ul] & ButtonIntrinsicProps[`var`] & ButtonIntrinsicProps[video] & ButtonIntrinsicProps[wbr] & ButtonIntrinsicProps[webview] & ButtonIntrinsicProps[svg] & ButtonIntrinsicProps[animate] & ButtonIntrinsicProps[animateMotion] & ButtonIntrinsicProps[animateTransform] & ButtonIntrinsicProps[circle] & ButtonIntrinsicProps[clipPath] & ButtonIntrinsicProps[defs] & ButtonIntrinsicProps[desc_] & ButtonIntrinsicProps[ellipse] & ButtonIntrinsicProps[feBlend] & ButtonIntrinsicProps[feColorMatrix] & ButtonIntrinsicProps[feComponentTransfer] & ButtonIntrinsicProps[feComposite] & ButtonIntrinsicProps[feConvolveMatrix] & ButtonIntrinsicProps[feDiffuseLighting] & ButtonIntrinsicProps[feDisplacementMap] & ButtonIntrinsicProps[feDistantLight] & ButtonIntrinsicProps[feDropShadow] & ButtonIntrinsicProps[feFlood] & ButtonIntrinsicProps[feFuncA] & ButtonIntrinsicProps[feFuncB] & ButtonIntrinsicProps[feFuncG] & ButtonIntrinsicProps[feFuncR] & ButtonIntrinsicProps[feGaussianBlur] & ButtonIntrinsicProps[feImage] & ButtonIntrinsicProps[feMerge] & ButtonIntrinsicProps[feMergeNode] & ButtonIntrinsicProps[feMorphology] & ButtonIntrinsicProps[feOffset] & ButtonIntrinsicProps[fePointLight] & ButtonIntrinsicProps[feSpecularLighting] & ButtonIntrinsicProps[feSpotLight] & ButtonIntrinsicProps[feTile] & ButtonIntrinsicProps[feTurbulence] & ButtonIntrinsicProps[filter] & ButtonIntrinsicProps[foreignObject] & ButtonIntrinsicProps[g] & ButtonIntrinsicProps[image] & ButtonIntrinsicProps[line] & ButtonIntrinsicProps[linearGradient] & ButtonIntrinsicProps[marker] & ButtonIntrinsicProps[mask] & ButtonIntrinsicProps[metadata] & ButtonIntrinsicProps[mpath] & ButtonIntrinsicProps[path] & ButtonIntrinsicProps[pattern] & ButtonIntrinsicProps[polygon] & ButtonIntrinsicProps[polyline] & ButtonIntrinsicProps[radialGradient] & ButtonIntrinsicProps[rect] & ButtonIntrinsicProps[stop] & ButtonIntrinsicProps[switch] & ButtonIntrinsicProps[symbol] & ButtonIntrinsicProps[text] & ButtonIntrinsicProps[textPath] & ButtonIntrinsicProps[tspan] & ButtonIntrinsicProps[use] & ButtonIntrinsicProps[view]
             ]
       ): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
       /* static member */
@@ -2456,7 +2467,7 @@ object global {
       def this(props: ExpandableTileProps) = this()
       /**
         * @deprecated
-        * @see https://reactjs.org/docs/legacy-context.html
+        * @see https://legacy.reactjs.org/docs/legacy-context.html
         */
       def this(props: ExpandableTileProps, context: Any) = this()
     }
@@ -2468,7 +2479,7 @@ object global {
       def this(props: FileUploaderProps) = this()
       /**
         * @deprecated
-        * @see https://reactjs.org/docs/legacy-context.html
+        * @see https://legacy.reactjs.org/docs/legacy-context.html
         */
       def this(props: FileUploaderProps, context: Any) = this()
     }
@@ -2562,6 +2573,8 @@ object global {
     inline def Grid_canvas(props: GridIntrinsicProps[canvas]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     
     inline def Grid_caption(props: GridIntrinsicProps[caption]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+    
+    inline def Grid_center(props: GridIntrinsicProps[center]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     
     inline def Grid_circle(props: GridIntrinsicProps[circle]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     
@@ -2952,7 +2965,7 @@ object global {
       def this(props: ModalFooterProps) = this()
       /**
         * @deprecated
-        * @see https://reactjs.org/docs/legacy-context.html
+        * @see https://legacy.reactjs.org/docs/legacy-context.html
         */
       def this(props: ModalFooterProps, context: Any) = this()
     }
@@ -2964,7 +2977,7 @@ object global {
       def this(props: ModalHeaderProps) = this()
       /**
         * @deprecated
-        * @see https://reactjs.org/docs/legacy-context.html
+        * @see https://legacy.reactjs.org/docs/legacy-context.html
         */
       def this(props: ModalHeaderProps, context: Any) = this()
     }
@@ -3087,6 +3100,8 @@ object global {
     inline def PrimaryButton_canvas(props: FCProps[ButtonIntrinsicProps[canvas]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     
     inline def PrimaryButton_caption(props: FCProps[ButtonIntrinsicProps[caption]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+    
+    inline def PrimaryButton_center(props: FCProps[ButtonIntrinsicProps[center]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     
     inline def PrimaryButton_circle(props: FCProps[ButtonIntrinsicProps[circle]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     
@@ -3403,7 +3418,7 @@ object global {
       def this(props: ProgressIndicatorProps) = this()
       /**
         * @deprecated
-        * @see https://reactjs.org/docs/legacy-context.html
+        * @see https://legacy.reactjs.org/docs/legacy-context.html
         */
       def this(props: ProgressIndicatorProps, context: Any) = this()
     }
@@ -3477,6 +3492,8 @@ object global {
     inline def Row_canvas(props: RowIntrinsicProps[canvas]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     
     inline def Row_caption(props: RowIntrinsicProps[caption]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+    
+    inline def Row_center(props: RowIntrinsicProps[center]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     
     inline def Row_circle(props: RowIntrinsicProps[circle]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     
@@ -3856,6 +3873,8 @@ object global {
     inline def SecondaryButton_canvas(props: FCProps[ButtonIntrinsicProps[canvas]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     
     inline def SecondaryButton_caption(props: FCProps[ButtonIntrinsicProps[caption]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+    
+    inline def SecondaryButton_center(props: FCProps[ButtonIntrinsicProps[center]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     
     inline def SecondaryButton_circle(props: FCProps[ButtonIntrinsicProps[circle]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     
@@ -4375,6 +4394,8 @@ object global {
     
     inline def TableBatchAction_caption[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[caption] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     
+    inline def TableBatchAction_center[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[center] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+    
     inline def TableBatchAction_circle[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[circle] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     
     inline def TableBatchAction_cite[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[cite] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
@@ -4790,7 +4811,7 @@ object global {
       def this(props: TileProps) = this()
       /**
         * @deprecated
-        * @see https://reactjs.org/docs/legacy-context.html
+        * @see https://legacy.reactjs.org/docs/legacy-context.html
         */
       def this(props: TileProps, context: Any) = this()
     }
@@ -4802,7 +4823,7 @@ object global {
       def this(props: TileAboveTheFoldContentProps) = this()
       /**
         * @deprecated
-        * @see https://reactjs.org/docs/legacy-context.html
+        * @see https://legacy.reactjs.org/docs/legacy-context.html
         */
       def this(props: TileAboveTheFoldContentProps, context: Any) = this()
     }
@@ -4814,7 +4835,7 @@ object global {
       def this(props: TileBelowTheFoldContentProps) = this()
       /**
         * @deprecated
-        * @see https://reactjs.org/docs/legacy-context.html
+        * @see https://legacy.reactjs.org/docs/legacy-context.html
         */
       def this(props: TileBelowTheFoldContentProps, context: Any) = this()
     }
@@ -4987,6 +5008,8 @@ object global {
     inline def unstableSection_canvas(props: SectionIntrinsicProps[canvas]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     
     inline def unstableSection_caption(props: SectionIntrinsicProps[caption]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+    
+    inline def unstableSection_center(props: SectionIntrinsicProps[center]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     
     inline def unstableSection_circle(props: SectionIntrinsicProps[circle]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     

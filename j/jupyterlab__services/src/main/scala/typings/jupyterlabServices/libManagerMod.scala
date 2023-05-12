@@ -89,6 +89,12 @@ object libManagerMod {
     override def dispose(): Unit = js.native
     
     /**
+      * The event manager instance.
+      */
+    @JSName("events")
+    val events_ServiceManager: typings.jupyterlabServices.libEventMod.Event.IManager = js.native
+    
+    /**
       * Test whether the object has been disposed.
       *
       * #### Notes
@@ -186,6 +192,12 @@ object libManagerMod {
     val terminals_ServiceManager: TerminalManager = js.native
     
     /**
+      * Get the user manager instance.
+      */
+    @JSName("user")
+    val user_ServiceManager: typings.jupyterlabServices.libUserMod.User.IManager = js.native
+    
+    /**
       * The workspace manager for the manager.
       */
     /* CompleteClass */
@@ -219,6 +231,14 @@ object libManagerMod {
         * The contents manager for the manager.
         */
       val contents: typings.jupyterlabServices.libContentsMod.Contents.IManager
+      
+      /**
+        * The events service manager.
+        *
+        * #### Notes
+        * The events manager is optional until JupyterLab 4.
+        */
+      val events: js.UndefOr[typings.jupyterlabServices.libEventMod.Event.IManager] = js.undefined
       
       /**
         * Test whether the manager is ready.
@@ -261,6 +281,11 @@ object libManagerMod {
       val terminals: typings.jupyterlabServices.libTerminalTerminalMod.IManager
       
       /**
+        * The user manager for the manager.
+        */
+      val user: js.UndefOr[typings.jupyterlabServices.libUserMod.User.IManager] = js.undefined
+      
+      /**
         * The workspace manager for the manager.
         */
       val workspaces: typings.jupyterlabServices.libWorkspaceMod.Workspace.IManager
@@ -296,6 +321,10 @@ object libManagerMod {
         
         inline def setContents(value: typings.jupyterlabServices.libContentsMod.Contents.IManager): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
         
+        inline def setEvents(value: typings.jupyterlabServices.libEventMod.Event.IManager): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+        
+        inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+        
         inline def setIsReady(value: Boolean): Self = StObject.set(x, "isReady", value.asInstanceOf[js.Any])
         
         inline def setKernelspecs(value: typings.jupyterlabServices.libKernelspecKernelspecMod.IManager): Self = StObject.set(x, "kernelspecs", value.asInstanceOf[js.Any])
@@ -311,6 +340,10 @@ object libManagerMod {
         inline def setSettings(value: typings.jupyterlabServices.libSettingMod.Setting.IManager): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
         
         inline def setTerminals(value: typings.jupyterlabServices.libTerminalTerminalMod.IManager): Self = StObject.set(x, "terminals", value.asInstanceOf[js.Any])
+        
+        inline def setUser(value: typings.jupyterlabServices.libUserMod.User.IManager): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+        
+        inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
         
         inline def setWorkspaces(value: typings.jupyterlabServices.libWorkspaceMod.Workspace.IManager): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
       }

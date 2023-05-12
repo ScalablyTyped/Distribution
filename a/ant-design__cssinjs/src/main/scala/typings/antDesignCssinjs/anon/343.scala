@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.DominantBaseline
+import typings.csstype.mod.Property.MsWrapMargin
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `343` extends StObject {
   
   var value: js.UndefOr[
-    DominantBaseline | (js.Array[
+    (MsWrapMargin[Double | String]) | (js.Array[
       (Extract[
-        js.UndefOr[DominantBaseline | js.Array[NonNullable[js.UndefOr[DominantBaseline]]]], 
+        js.UndefOr[
+          (MsWrapMargin[Double | String]) | (js.Array[NonNullable[js.UndefOr[MsWrapMargin[Double | String]]]])
+        ], 
         String
-      ]) | NonNullable[js.UndefOr[DominantBaseline]]
+      ]) | (NonNullable[js.UndefOr[MsWrapMargin[Double | String]]])
     ])
   ] = js.native
 }

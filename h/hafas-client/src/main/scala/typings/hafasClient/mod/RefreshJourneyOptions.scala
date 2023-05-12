@@ -31,6 +31,12 @@ trait RefreshJourneyOptions extends StObject {
   var remarks: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * parse & expose dates the journey is valid on?
+    * @default false
+    */
+  var scheduledDays: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * return stations on the way?
     * @default false
     */
@@ -73,6 +79,10 @@ object RefreshJourneyOptions {
     inline def setRemarks(value: Boolean): Self = StObject.set(x, "remarks", value.asInstanceOf[js.Any])
     
     inline def setRemarksUndefined: Self = StObject.set(x, "remarks", js.undefined)
+    
+    inline def setScheduledDays(value: Boolean): Self = StObject.set(x, "scheduledDays", value.asInstanceOf[js.Any])
+    
+    inline def setScheduledDaysUndefined: Self = StObject.set(x, "scheduledDays", js.undefined)
     
     inline def setStopovers(value: Boolean): Self = StObject.set(x, "stopovers", value.asInstanceOf[js.Any])
     

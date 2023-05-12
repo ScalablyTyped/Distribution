@@ -197,16 +197,20 @@ trait Color3 extends StObject {
   
   /**
     * Computes a new Color3 converted from the current one to gamma space
+    * @param exact defines if the conversion will be done in an exact way which is slower but more accurate (default is false)
     * @returns a new Color3 object
     */
   def toGammaSpace(): Color3 = js.native
+  def toGammaSpace(exact: Boolean): Color3 = js.native
   
   /**
     * Converts the Color3 values to gamma space and stores the result in "convertedColor"
     * @param convertedColor defines the Color3 object where to store the gamma space version
+    * @param exact defines if the conversion will be done in an exact way which is slower but more accurate (default is false)
     * @returns the unmodified Color3
     */
   def toGammaSpaceToRef(convertedColor: Color3): Color3 = js.native
+  def toGammaSpaceToRef(convertedColor: Color3, exact: Boolean): Color3 = js.native
   
   /**
     * Converts current color in rgb space to HSV values
@@ -228,16 +232,20 @@ trait Color3 extends StObject {
   
   /**
     * Computes a new Color3 converted from the current one to linear space
+    * @param exact defines if the conversion will be done in an exact way which is slower but more accurate (default is false)
     * @returns a new Color3 object
     */
   def toLinearSpace(): Color3 = js.native
+  def toLinearSpace(exact: Boolean): Color3 = js.native
   
   /**
     * Converts the Color3 values to linear space and stores the result in "convertedColor"
     * @param convertedColor defines the Color3 object where to store the linear space version
+    * @param exact defines if the conversion will be done in an exact way which is slower but more accurate (default is false)
     * @returns the unmodified Color3
     */
   def toLinearSpaceToRef(convertedColor: Color3): Color3 = js.native
+  def toLinearSpaceToRef(convertedColor: Color3, exact: Boolean): Color3 = js.native
   
   /**
     * Returns the luminance value

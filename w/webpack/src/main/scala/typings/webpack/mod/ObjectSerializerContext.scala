@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ObjectSerializerContext extends StObject {
   
+  def setCircularReference(): Unit = js.native
+  def setCircularReference(arg0: Any): Unit = js.native
+  
   def write(): Unit = js.native
   def write(arg0: Any): Unit = js.native
 }

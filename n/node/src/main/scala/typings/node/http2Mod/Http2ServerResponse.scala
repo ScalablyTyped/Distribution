@@ -250,7 +250,7 @@ open class Http2ServerResponse protected () extends StObject {
   def removeHeader(name: String): Unit = js.native
   
   /**
-    * A reference to the original HTTP2 request object.
+    * A reference to the original HTTP2 `request` object.
     * @since v15.7.0
     */
   val req: Http2ServerRequest = js.native
@@ -332,7 +332,7 @@ open class Http2ServerResponse protected () extends StObject {
     * All other interactions will be routed directly to the socket.
     *
     * ```js
-    * const http2 = require('http2');
+    * const http2 = require('node:http2');
     * const server = http2.createServer((req, res) => {
     *   const ip = req.socket.remoteAddress;
     *   const port = req.socket.remotePort;
@@ -378,7 +378,7 @@ open class Http2ServerResponse protected () extends StObject {
     * This sends a chunk of the response body. This method may
     * be called multiple times to provide successive parts of the body.
     *
-    * In the `http` module, the response body is omitted when the
+    * In the `node:http` module, the response body is omitted when the
     * request is a HEAD request. Similarly, the `204` and `304` responses _must not_ include a message body.
     *
     * `chunk` can be a string or a buffer. If `chunk` is a string,
@@ -425,7 +425,7 @@ open class Http2ServerResponse protected () extends StObject {
     * The `hints` is an object containing the values of headers to be sent with
     * early hints message.
     *
-    * Example:
+    * **Example**
     *
     * ```js
     * const earlyHintsLink = '</styles.css>; rel=preload; as=style';
@@ -439,12 +439,9 @@ open class Http2ServerResponse protected () extends StObject {
     * ];
     * response.writeEarlyHints({
     *   'link': earlyHintsLinks,
-    *   'x-trace-id': 'id for diagnostics'
     * });
     * ```
-    *
     * @since v18.11.0
-    * @param hints An object containing the values of headers
     */
   def writeEarlyHints(hints: Record[String, String | js.Array[String]]): Unit = js.native
   

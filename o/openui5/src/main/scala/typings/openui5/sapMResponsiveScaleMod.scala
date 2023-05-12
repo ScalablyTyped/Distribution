@@ -54,11 +54,8 @@ object sapMResponsiveScaleMod {
     var __implements__sap_m_IScale: Boolean = js.native
     
     /**
-      * Returns how many tickmarks would be drawn on the screen.
-      *
-      * **Note:** There would always be a tickmark in the beginning and in the end of the slider, regardless
-      * of the value this method returns. The start and the end tickmark are taken into account for the later
-      * calculations.
+      * Returns how many tickmarks would be drawn on the screen. The start and the end tickmark should be specified
+      * in this method.
       *
       * @returns The number of tickmarks
       */
@@ -81,16 +78,10 @@ object sapMResponsiveScaleMod {
     /**
       * Returns the number of tickmarks, which should be placed between labels.
       *
-      * **Note:** There would always be a tickmark in the beginning and in the end of the slider, regardless
-      * of the value that this method returns.
-      *
       * @returns The number of tickmarks
       */
     /* CompleteClass */
-    override def getTickmarksBetweenLabels(/**
-      * The option array
-      */
-    mOptions: js.Object): int = js.native
+    override def getTickmarksBetweenLabels(): int = js.native
   }
   /* static members */
   object default {
@@ -164,17 +155,6 @@ object sapMResponsiveScaleMod {
   trait ResponsiveScale
     extends typings.openui5.sapUiCoreElementMod.default
        with IScale {
-    
-    /**
-      * Gets current value of property {@link #getTickmarksBetweenLabels tickmarksBetweenLabels}.
-      *
-      * Put a label on every N-th tickmark.
-      *
-      * Default value is `0`.
-      *
-      * @returns Value of property `tickmarksBetweenLabels`
-      */
-    def getTickmarksBetweenLabels(): int = js.native
     
     /**
       * Sets a new value for property {@link #getTickmarksBetweenLabels tickmarksBetweenLabels}.

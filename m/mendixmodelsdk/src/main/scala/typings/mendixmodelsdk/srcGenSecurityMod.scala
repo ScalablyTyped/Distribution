@@ -5,9 +5,11 @@ import typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AccessRule
 import typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.IEntity
 import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.IMicroflow
 import typings.mendixmodelsdk.srcGenProjectsMod.projects.IModule
+import typings.mendixmodelsdk.srcGenProjectsMod.projects.IModuleDocument
 import typings.mendixmodelsdk.srcGenProjectsMod.projects.IProject
 import typings.mendixmodelsdk.srcGenProjectsMod.projects.IProjectDocument
 import typings.mendixmodelsdk.srcGenProjectsMod.projects.Module
+import typings.mendixmodelsdk.srcGenProjectsMod.projects.ModuleDocument
 import typings.mendixmodelsdk.srcGenProjectsMod.projects.Project
 import typings.mendixmodelsdk.srcGenProjectsMod.projects.ProjectDocument
 import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
@@ -20,7 +22,6 @@ import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
 import typings.mendixmodelsdk.srcSdkInternalMod.Element
 import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
 import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
-import typings.mendixmodelsdk.srcSdkInternalUnitsMod.IModelUnit
 import typings.mendixmodelsdk.srcSdkInternalVersionChecksMod.ILifeCycle
 import typings.mendixmodelsdk.srcSdkInternalVersionChecksMod.IStructureVersionInfo
 import typings.mendixmodelsdk.srcSdkInternalVersionChecksMod.StructureType
@@ -328,9 +329,10 @@ object srcGenSecurityMod {
     - typings.mendixmodelsdk.srcSdkInternalElementsMod.IAbstractElement because Already inherited
     - typings.mendixmodelsdk.srcSdkInternalUnitsMod.IAbstractUnit because Already inherited
     - typings.mendixmodelsdk.srcSdkInternalUnitsMod.IModelUnit because Already inherited
-    - typings.mendixmodelsdk.srcGenSecurityMod.security.IModuleSecurity because var conflicts: id, isLoadable, isLoaded, isReadOnly, model, structureTypeName, unit. Inlined containerAsModule, moduleRoles */ @JSImport("mendixmodelsdk/src/gen/security", "security.ModuleSecurity")
+    - typings.mendixmodelsdk.srcGenProjectsMod.projects.IModuleDocument because Already inherited
+    - typings.mendixmodelsdk.srcGenSecurityMod.security.IModuleSecurity because var conflicts: containerAsFolderBase, containerAsModule, id, isLoaded, model, structureTypeName, unit. Inlined moduleRoles */ @JSImport("mendixmodelsdk/src/gen/security", "security.ModuleSecurity")
     @js.native
-    open class ModuleSecurity protected () extends ModelUnit[IModel] {
+    open class ModuleSecurity protected () extends ModuleDocument {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -339,9 +341,8 @@ object srcGenSecurityMod {
         container: IModule
       ) = this()
       
-      def containerAsModule: Module = js.native
       @JSName("containerAsModule")
-      val containerAsModule_FModuleSecurity: IModule = js.native
+      def containerAsModule_MModuleSecurity: Module = js.native
       
       def moduleRoles: IList[ModuleRole] = js.native
       @JSName("moduleRoles")
@@ -510,6 +511,12 @@ object srcGenSecurityMod {
       def signInMicroflowQualifiedName: String | Null = js.native
       
       def signInMicroflow_=(newValue: IMicroflow | Null): Unit = js.native
+      
+      /**
+        * In version 9.24.0: introduced
+        */
+      def strictMode: Boolean = js.native
+      def strictMode_=(newValue: Boolean): Unit = js.native
       
       /**
         * In version 9.8.0: introduced
@@ -700,12 +707,7 @@ object srcGenSecurityMod {
     @js.native
     trait IModuleSecurity
       extends StObject
-         with IModelUnit {
-      
-      val containerAsModule: IModule = js.native
-      
-      @JSName("model")
-      val model_IModuleSecurity: IModel = js.native
+         with IModuleDocument {
       
       val moduleRoles: IList[IModuleRole] = js.native
     }

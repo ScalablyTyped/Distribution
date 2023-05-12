@@ -17,7 +17,7 @@ trait CreateEnvironmentAccountConnectionInput extends StObject {
   var codebuildRoleArn: js.UndefOr[RoleArn] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of an IAM service role in the environment account. Proton uses this role to provision directly defined components in the associated environment account. It determines the scope of infrastructure that a component can provision in the account. You must specify componentRoleArn to allow directly defined components to be associated with any environments running in this account. For more information about components, see Proton components in the Proton User Guide.
+    * The Amazon Resource Name (ARN) of the IAM service role that Proton uses when provisioning directly defined components in the associated environment account. It determines the scope of infrastructure that a component can provision in the account. You must specify componentRoleArn to allow directly defined components to be associated with any environments running in this account. For more information about components, see Proton components in the Proton User Guide.
     */
   var componentRoleArn: js.UndefOr[RoleArn] = js.undefined
   
@@ -32,9 +32,9 @@ trait CreateEnvironmentAccountConnectionInput extends StObject {
   var managementAccountId: AwsAccountId
   
   /**
-    * The Amazon Resource Name (ARN) of an IAM service role in the environment account. Proton uses this role to provision infrastructure resources using Amazon Web Services-managed provisioning and CloudFormation in the associated environment account.
+    * The Amazon Resource Name (ARN) of the IAM service role that's created in the environment account. Proton uses this role to provision infrastructure resources in the associated environment account.
     */
-  var roleArn: RoleArn
+  var roleArn: js.UndefOr[RoleArn] = js.undefined
   
   /**
     * An optional list of metadata items that you can associate with the Proton environment account connection. A tag is a key-value pair. For more information, see Proton resources and tagging in the Proton User Guide.
@@ -43,8 +43,8 @@ trait CreateEnvironmentAccountConnectionInput extends StObject {
 }
 object CreateEnvironmentAccountConnectionInput {
   
-  inline def apply(environmentName: ResourceName, managementAccountId: AwsAccountId, roleArn: RoleArn): CreateEnvironmentAccountConnectionInput = {
-    val __obj = js.Dynamic.literal(environmentName = environmentName.asInstanceOf[js.Any], managementAccountId = managementAccountId.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
+  inline def apply(environmentName: ResourceName, managementAccountId: AwsAccountId): CreateEnvironmentAccountConnectionInput = {
+    val __obj = js.Dynamic.literal(environmentName = environmentName.asInstanceOf[js.Any], managementAccountId = managementAccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateEnvironmentAccountConnectionInput]
   }
   
@@ -68,6 +68,8 @@ object CreateEnvironmentAccountConnectionInput {
     inline def setManagementAccountId(value: AwsAccountId): Self = StObject.set(x, "managementAccountId", value.asInstanceOf[js.Any])
     
     inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    
+    inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
     
     inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

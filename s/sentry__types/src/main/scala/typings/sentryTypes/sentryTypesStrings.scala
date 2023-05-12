@@ -2,14 +2,15 @@ package typings.sentryTypes
 
 import typings.sentryTypes.typesClientreportMod.EventDropReason
 import typings.sentryTypes.typesDatacategoryMod.DataCategory
-import typings.sentryTypes.typesDebugMetaMod.DebugImageType
 import typings.sentryTypes.typesDsnMod.DsnProtocol
 import typings.sentryTypes.typesEnvelopeMod.EnvelopeItemType
+import typings.sentryTypes.typesEventMod._EventType
 import typings.sentryTypes.typesInstrumenterMod.Instrumenter
 import typings.sentryTypes.typesMeasurementMod.DurationUnit
 import typings.sentryTypes.typesMeasurementMod.FractionUnit
 import typings.sentryTypes.typesMeasurementMod.InformationUnit
 import typings.sentryTypes.typesMeasurementMod.NoneUnit
+import typings.sentryTypes.typesReplayMod.ReplayRecordingMode
 import typings.sentryTypes.typesSessionMod.RequestSessionStatus
 import typings.sentryTypes.typesSessionMod.SessionStatus
 import typings.sentryTypes.typesSeverityMod.SeverityLevel
@@ -58,10 +59,22 @@ object sentryTypesStrings {
   inline def bit: bit = "bit".asInstanceOf[bit]
   
   @js.native
+  sealed trait buffer
+    extends StObject
+       with ReplayRecordingMode
+  inline def buffer: buffer = "buffer".asInstanceOf[buffer]
+  
+  @js.native
   sealed trait byte
     extends StObject
        with InformationUnit
   inline def byte: byte = "byte".asInstanceOf[byte]
+  
+  @js.native
+  sealed trait check_in
+    extends StObject
+       with EnvelopeItemType
+  inline def check_in: check_in = "check_in".asInstanceOf[check_in]
   
   @js.native
   sealed trait client_report
@@ -83,6 +96,10 @@ object sentryTypesStrings {
   inline def crashed: crashed = "crashed".asInstanceOf[crashed]
   
   @js.native
+  sealed trait crontab extends StObject
+  inline def crontab: crontab = "crontab".asInstanceOf[crontab]
+  
+  @js.native
   sealed trait custom
     extends StObject
        with TransactionSource
@@ -99,12 +116,6 @@ object sentryTypesStrings {
     extends StObject
        with SeverityLevel
   inline def debug: debug = "debug".asInstanceOf[debug]
-  
-  @js.native
-  sealed trait elf
-    extends StObject
-       with DebugImageType
-  inline def elf: elf = "elf".asInstanceOf[elf]
   
   @js.native
   sealed trait error
@@ -156,6 +167,10 @@ object sentryTypesStrings {
   inline def fatal: fatal = "fatal".asInstanceOf[fatal]
   
   @js.native
+  sealed trait finishTransaction extends StObject
+  inline def finishTransaction: finishTransaction = "finishTransaction".asInstanceOf[finishTransaction]
+  
+  @js.native
   sealed trait gigabyte
     extends StObject
        with InformationUnit
@@ -180,6 +195,10 @@ object sentryTypesStrings {
   inline def https: https = "https".asInstanceOf[https]
   
   @js.native
+  sealed trait in_progress extends StObject
+  inline def in_progress: in_progress = "in_progress".asInstanceOf[in_progress]
+  
+  @js.native
   sealed trait info
     extends StObject
        with SeverityLevel
@@ -190,6 +209,16 @@ object sentryTypesStrings {
     extends StObject
        with DataCategory
   inline def internal: internal = "internal".asInstanceOf[internal]
+  
+  @js.native
+  sealed trait internal_sdk_error
+    extends StObject
+       with EventDropReason
+  inline def internal_sdk_error: internal_sdk_error = "internal_sdk_error".asInstanceOf[internal_sdk_error]
+  
+  @js.native
+  sealed trait interval extends StObject
+  inline def interval: interval = "interval".asInstanceOf[interval]
   
   @js.native
   sealed trait kibibyte
@@ -212,12 +241,6 @@ object sentryTypesStrings {
     extends StObject
        with SeverityLevel
   inline def log: log = "log".asInstanceOf[log]
-  
-  @js.native
-  sealed trait macho
-    extends StObject
-       with DebugImageType
-  inline def macho: macho = "macho".asInstanceOf[macho]
   
   @js.native
   sealed trait mebibyte
@@ -248,6 +271,16 @@ object sentryTypesStrings {
     extends StObject
        with DurationUnit
   inline def minute: minute = "minute".asInstanceOf[minute]
+  
+  @js.native
+  sealed trait monitor
+    extends StObject
+       with DataCategory
+  inline def monitor: monitor = "monitor".asInstanceOf[monitor]
+  
+  @js.native
+  sealed trait month extends StObject
+  inline def month: month = "month".asInstanceOf[month]
   
   @js.native
   sealed trait nanosecond
@@ -281,12 +314,6 @@ object sentryTypesStrings {
   inline def otel: otel = "otel".asInstanceOf[otel]
   
   @js.native
-  sealed trait pe
-    extends StObject
-       with DebugImageType
-  inline def pe: pe = "pe".asInstanceOf[pe]
-  
-  @js.native
   sealed trait percent
     extends StObject
        with FractionUnit
@@ -301,6 +328,14 @@ object sentryTypesStrings {
   @js.native
   sealed trait portrait extends StObject
   inline def portrait: portrait = "portrait".asInstanceOf[portrait]
+  
+  @js.native
+  sealed trait profile
+    extends StObject
+       with DataCategory
+       with EnvelopeItemType
+       with _EventType
+  inline def profile: profile = "profile".asInstanceOf[profile]
   
   @js.native
   sealed trait queue_overflow
@@ -319,6 +354,25 @@ object sentryTypesStrings {
     extends StObject
        with FractionUnit
   inline def ratio: ratio = "ratio".asInstanceOf[ratio]
+  
+  @js.native
+  sealed trait replay
+    extends StObject
+       with DataCategory
+  inline def replay: replay = "replay".asInstanceOf[replay]
+  
+  @js.native
+  sealed trait replay_event
+    extends StObject
+       with EnvelopeItemType
+       with _EventType
+  inline def replay_event: replay_event = "replay_event".asInstanceOf[replay_event]
+  
+  @js.native
+  sealed trait replay_recording
+    extends StObject
+       with EnvelopeItemType
+  inline def replay_recording: replay_recording = "replay_recording".asInstanceOf[replay_recording]
   
   @js.native
   sealed trait route
@@ -345,6 +399,12 @@ object sentryTypesStrings {
   inline def security: security = "security".asInstanceOf[security]
   
   @js.native
+  sealed trait send_error
+    extends StObject
+       with EventDropReason
+  inline def send_error: send_error = "send_error".asInstanceOf[send_error]
+  
+  @js.native
   sealed trait sentry
     extends StObject
        with Instrumenter
@@ -355,6 +415,7 @@ object sentryTypesStrings {
     extends StObject
        with DataCategory
        with EnvelopeItemType
+       with ReplayRecordingMode
   inline def session: session = "session".asInstanceOf[session]
   
   @js.native
@@ -362,6 +423,14 @@ object sentryTypesStrings {
     extends StObject
        with EnvelopeItemType
   inline def sessions: sessions = "sessions".asInstanceOf[sessions]
+  
+  @js.native
+  sealed trait sourcemap extends StObject
+  inline def sourcemap: sourcemap = "sourcemap".asInstanceOf[sourcemap]
+  
+  @js.native
+  sealed trait startTransaction extends StObject
+  inline def startTransaction: startTransaction = "startTransaction".asInstanceOf[startTransaction]
   
   @js.native
   sealed trait task
@@ -386,6 +455,7 @@ object sentryTypesStrings {
     extends StObject
        with DataCategory
        with EnvelopeItemType
+       with _EventType
   inline def transaction: transaction = "transaction".asInstanceOf[transaction]
   
   @js.native
@@ -413,9 +483,7 @@ object sentryTypesStrings {
   inline def warning: warning = "warning".asInstanceOf[warning]
   
   @js.native
-  sealed trait wasm
-    extends StObject
-       with DebugImageType
+  sealed trait wasm extends StObject
   inline def wasm: wasm = "wasm".asInstanceOf[wasm]
   
   @js.native
@@ -423,4 +491,8 @@ object sentryTypesStrings {
     extends StObject
        with DurationUnit
   inline def week: week = "week".asInstanceOf[week]
+  
+  @js.native
+  sealed trait year extends StObject
+  inline def year: year = "year".asInstanceOf[year]
 }

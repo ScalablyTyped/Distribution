@@ -309,7 +309,7 @@ trait Http2Stream extends StObject {
     * trailers can be sent.
     *
     * ```js
-    * const http2 = require('http2');
+    * const http2 = require('node:http2');
     * const server = http2.createServer();
     * server.on('stream', (stream) => {
     *   stream.respond(undefined, { waitForTrailers: true });
@@ -354,7 +354,7 @@ trait Http2Stream extends StObject {
   
   /**
     * ```js
-    * const http2 = require('http2');
+    * const http2 = require('node:http2');
     * const client = http2.connect('http://example.org:8000');
     * const { NGHTTP2_CANCEL } = http2.constants;
     * const req = client.request({ ':path': '/' });

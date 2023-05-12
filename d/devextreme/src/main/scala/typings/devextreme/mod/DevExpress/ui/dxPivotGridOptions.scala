@@ -13,9 +13,7 @@ import typings.devextreme.mod.DevExpress.data.PivotGridDataSource.Options
 import typings.devextreme.mod.DevExpress.ui.dxPivotGrid.CellClickEvent
 import typings.devextreme.mod.DevExpress.ui.dxPivotGrid.CellPreparedEvent
 import typings.devextreme.mod.DevExpress.ui.dxPivotGrid.ContextMenuPreparingEvent
-import typings.devextreme.mod.DevExpress.ui.dxPivotGrid.ExportedEvent
 import typings.devextreme.mod.DevExpress.ui.dxPivotGrid.ExportingEvent
-import typings.devextreme.mod.DevExpress.ui.dxPivotGrid.FileSavingEvent
 import typings.devextreme.mod.DevExpress.ui.dxPivotGrid.PivotGridDataFieldArea
 import typings.devextreme.mod.DevExpress.ui.dxPivotGrid.PivotGridRowHeaderLayout
 import typings.devextreme.mod.DevExpress.ui.dxPivotGrid.PivotGridTotalDisplayMode
@@ -108,21 +106,9 @@ trait dxPivotGridOptions
   var onContextMenuPreparing: js.UndefOr[js.Function1[/* e */ ContextMenuPreparingEvent, Unit]] = js.undefined
   
   /**
-    * A function that is executed after data is exported.
-    * @deprecated Since v20.2, we recommend ExcelJS-based export which does not use this property.
-    */
-  var onExported: js.UndefOr[js.Function1[/* e */ ExportedEvent, Unit]] = js.undefined
-  
-  /**
     * A function that is executed before data is exported.
     */
   var onExporting: js.UndefOr[js.Function1[/* e */ ExportingEvent, Unit]] = js.undefined
-  
-  /**
-    * A function that is executed before a file with exported data is saved to the user&apos;s local storage.
-    * @deprecated Since v20.2, we recommend ExcelJS-based export which does not use this property.
-    */
-  var onFileSaving: js.UndefOr[js.Function1[/* e */ FileSavingEvent, Unit]] = js.undefined
   
   /**
     * Specifies the layout of items in the row header.
@@ -257,17 +243,9 @@ object dxPivotGridOptions {
     
     inline def setOnContextMenuPreparingUndefined: Self = StObject.set(x, "onContextMenuPreparing", js.undefined)
     
-    inline def setOnExported(value: /* e */ ExportedEvent => Unit): Self = StObject.set(x, "onExported", js.Any.fromFunction1(value))
-    
-    inline def setOnExportedUndefined: Self = StObject.set(x, "onExported", js.undefined)
-    
     inline def setOnExporting(value: /* e */ ExportingEvent => Unit): Self = StObject.set(x, "onExporting", js.Any.fromFunction1(value))
     
     inline def setOnExportingUndefined: Self = StObject.set(x, "onExporting", js.undefined)
-    
-    inline def setOnFileSaving(value: /* e */ FileSavingEvent => Unit): Self = StObject.set(x, "onFileSaving", js.Any.fromFunction1(value))
-    
-    inline def setOnFileSavingUndefined: Self = StObject.set(x, "onFileSaving", js.undefined)
     
     inline def setRowHeaderLayout(value: PivotGridRowHeaderLayout): Self = StObject.set(x, "rowHeaderLayout", value.asInstanceOf[js.Any])
     

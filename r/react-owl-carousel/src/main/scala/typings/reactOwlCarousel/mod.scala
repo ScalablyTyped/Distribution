@@ -38,6 +38,7 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
+import typings.reactOwlCarousel.reactOwlCarouselStrings._empty
 import typings.reactOwlCarousel.reactOwlCarouselStrings.`additions removals`
 import typings.reactOwlCarousel.reactOwlCarouselStrings.`additions text`
 import typings.reactOwlCarousel.reactOwlCarouselStrings.`inline`
@@ -45,8 +46,10 @@ import typings.reactOwlCarousel.reactOwlCarouselStrings.`removals additions`
 import typings.reactOwlCarousel.reactOwlCarouselStrings.`removals text`
 import typings.reactOwlCarousel.reactOwlCarouselStrings.`text additions`
 import typings.reactOwlCarousel.reactOwlCarouselStrings.`text removals`
+import typings.reactOwlCarousel.reactOwlCarouselStrings.`use-credentials`
 import typings.reactOwlCarousel.reactOwlCarouselStrings.additions
 import typings.reactOwlCarousel.reactOwlCarouselStrings.all
+import typings.reactOwlCarousel.reactOwlCarouselStrings.anonymous
 import typings.reactOwlCarousel.reactOwlCarouselStrings.ascending
 import typings.reactOwlCarousel.reactOwlCarouselStrings.assertive
 import typings.reactOwlCarousel.reactOwlCarouselStrings.both
@@ -94,6 +97,7 @@ import typings.reactOwlCarousel.umdOptionsMod.HandlerCallback
 import typings.reactOwlCarousel.umdOptionsMod.Options
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -121,7 +125,7 @@ object mod {
     
     val accessKey: js.UndefOr[String] = js.undefined
     
-    val action: js.UndefOr[String] = js.undefined
+    val action: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     val allowFullScreen: js.UndefOr[Boolean] = js.undefined
     
@@ -281,7 +285,7 @@ object mod {
     
     val coords: js.UndefOr[String] = js.undefined
     
-    val crossOrigin: js.UndefOr[String] = js.undefined
+    val crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
     val dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
@@ -309,7 +313,7 @@ object mod {
     
     val form: js.UndefOr[String] = js.undefined
     
-    val formAction: js.UndefOr[String] = js.undefined
+    val formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     val formEncType: js.UndefOr[String] = js.undefined
     
@@ -593,6 +597,8 @@ object mod {
     
     val results: js.UndefOr[Double] = js.undefined
     
+    val rev: js.UndefOr[String] = js.undefined
+    
     val reversed: js.UndefOr[Boolean] = js.undefined
     
     val role: js.UndefOr[AriaRole] = js.undefined
@@ -699,7 +705,9 @@ object mod {
       
       inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      
+      inline def setActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
@@ -1013,7 +1021,7 @@ object mod {
       
       inline def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
       
-      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -1073,7 +1081,9 @@ object mod {
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      
+      inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
       
       inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
@@ -1643,6 +1653,10 @@ object mod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
+      
       inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
       
       inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
@@ -1822,7 +1836,7 @@ object mod {
     
     val accessKey: js.UndefOr[String] = js.undefined
     
-    val action: js.UndefOr[String] = js.undefined
+    val action: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     val allowFullScreen: js.UndefOr[Boolean] = js.undefined
     
@@ -2004,7 +2018,7 @@ object mod {
     
     val coords: js.UndefOr[String] = js.undefined
     
-    val crossOrigin: js.UndefOr[String] = js.undefined
+    val crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
     val dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
@@ -2054,7 +2068,7 @@ object mod {
     
     val form: js.UndefOr[String] = js.undefined
     
-    val formAction: js.UndefOr[String] = js.undefined
+    val formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     val formEncType: js.UndefOr[String] = js.undefined
     
@@ -2418,6 +2432,8 @@ object mod {
     
     val results: js.UndefOr[Double] = js.undefined
     
+    val rev: js.UndefOr[String] = js.undefined
+    
     val reversed: js.UndefOr[Boolean] = js.undefined
     
     var rewind: js.UndefOr[Boolean] = js.undefined
@@ -2550,7 +2566,9 @@ object mod {
       
       inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      
+      inline def setActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
@@ -2904,7 +2922,7 @@ object mod {
       
       inline def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
       
-      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -3008,7 +3026,9 @@ object mod {
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      
+      inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
       
       inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
@@ -3741,6 +3761,10 @@ object mod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
       

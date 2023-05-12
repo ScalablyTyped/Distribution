@@ -13,6 +13,8 @@ object sapUiMdcFilterbarVhFilterContainerMod {
   @JSImport("sap/ui/mdc/filterbar/vh/FilterContainer", JSImport.Default)
   @js.native
   /**
+    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    *
     * Constructor for a new filterBar/vh/FilterContainer.
     *
     * Accepts an object literal `mSettings` that defines initial property values, aggregated and associated
@@ -56,6 +58,8 @@ object sapUiMdcFilterbarVhFilterContainerMod {
     val ^ : js.Any = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Creates a new subclass of class sap.ui.mdc.filterbar.vh.FilterContainer with name `sClassName` and enriches
       * it with the information contained in `oClassInfo`.
       *
@@ -109,6 +113,8 @@ object sapUiMdcFilterbarVhFilterContainerMod {
     ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any], FNMetaImpl.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns a metadata object for class sap.ui.mdc.filterbar.vh.FilterContainer.
       *
       * @returns Metadata object describing this class

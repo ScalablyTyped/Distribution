@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@hapi/wreck" : "18.0.0"
+      "@hapi/wreck" : "18.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@hapi/wreck" : "18.0.0"
+      "@hapi/wreck" : "18.0.1"
     }
   ],
   "compile-devDependencies" : [

@@ -1,7 +1,6 @@
 package typings.angularRouter.mod
 
-import typings.angularCore.mod.ImportedNgModuleProviders
-import typings.angularCore.mod.InjectionToken
+import typings.angularCore.mod.EnvironmentProviders
 import typings.angularCore.mod.NgModuleFactory
 import typings.angularCore.mod.Provider
 import typings.angularCore.mod.Type
@@ -22,7 +21,7 @@ trait Route extends StObject {
     * When using a function rather than DI tokens, the function can call `inject` to get any required
     * dependencies. This `inject` call must be done in a synchronous context.
     */
-  var canActivate: js.UndefOr[js.Array[CanActivateFn | Any]] = js.undefined
+  var canActivate: js.UndefOr[js.Array[CanActivateFn | DeprecatedGuard]] = js.undefined
   
   /**
     * An array of `CanActivateChildFn` or DI tokens used to look up `CanActivateChild()` handlers,
@@ -32,7 +31,7 @@ trait Route extends StObject {
     * When using a function rather than DI tokens, the function can call `inject` to get any required
     * dependencies. This `inject` call must be done in a synchronous context.
     */
-  var canActivateChild: js.UndefOr[js.Array[CanActivateChildFn | Any]] = js.undefined
+  var canActivateChild: js.UndefOr[js.Array[CanActivateChildFn | DeprecatedGuard]] = js.undefined
   
   /**
     * An array of `CanDeactivateFn` or DI tokens used to look up `CanDeactivate()`
@@ -42,7 +41,7 @@ trait Route extends StObject {
     * When using a function rather than DI tokens, the function can call `inject` to get any required
     * dependencies. This `inject` call must be done in a synchronous context.
     */
-  var canDeactivate: js.UndefOr[js.Array[CanDeactivateFn[Any] | Any]] = js.undefined
+  var canDeactivate: js.UndefOr[js.Array[CanDeactivateFn[Any] | DeprecatedGuard]] = js.undefined
   
   /**
     * An array of `CanLoadFn` or DI tokens used to look up `CanLoad()`
@@ -51,8 +50,9 @@ trait Route extends StObject {
     *
     * When using a function rather than DI tokens, the function can call `inject` to get any required
     * dependencies. This `inject` call must be done in a synchronous context.
+    * @deprecated Use `canMatch` instead
     */
-  var canLoad: js.UndefOr[js.Array[CanLoadFn | Any]] = js.undefined
+  var canLoad: js.UndefOr[js.Array[CanLoadFn | DeprecatedGuard]] = js.undefined
   
   /**
     * An array of `CanMatchFn` or DI tokens used to look up `CanMatch()`
@@ -62,7 +62,7 @@ trait Route extends StObject {
     * When using a function rather than DI tokens, the function can call `inject` to get any required
     * dependencies. This `inject` call must be done in a synchronous context.
     */
-  var canMatch: js.UndefOr[js.Array[Type[CanMatch] | InjectionToken[CanMatchFn] | CanMatchFn]] = js.undefined
+  var canMatch: js.UndefOr[js.Array[CanMatchFn | DeprecatedGuard]] = js.undefined
   
   /**
     * An array of child `Route` objects that specifies a nested route
@@ -90,7 +90,11 @@ trait Route extends StObject {
   /**
     * An object specifying a lazy-loaded component.
     */
-  var loadComponent: js.UndefOr[js.Function0[Type[Any] | Observable_[Type[Any]] | js.Promise[Type[Any]]]] = js.undefined
+  var loadComponent: js.UndefOr[
+    js.Function0[
+      Type[Any] | (Observable_[Type[Any] | DefaultExport[Type[Any]]]) | (js.Promise[Type[Any] | DefaultExport[Type[Any]]])
+    ]
+  ] = js.undefined
   
   /**
     * A custom URL-matching function. Cannot be used together with `path`.
@@ -141,7 +145,7 @@ trait Route extends StObject {
     * route also has a `loadChildren` function which returns an `NgModuleRef`, this injector will be
     * used as the parent of the lazy loaded module.
     */
-  var providers: js.UndefOr[js.Array[Provider | ImportedNgModuleProviders]] = js.undefined
+  var providers: js.UndefOr[js.Array[Provider | EnvironmentProviders]] = js.undefined
   
   /**
     * A URL to redirect to when the path matches.
@@ -159,13 +163,21 @@ trait Route extends StObject {
   var resolve: js.UndefOr[ResolveData] = js.undefined
   
   /**
-    * Defines when guards and resolvers will be run. One of
-    * - `paramsOrQueryParamsChange` : Run when query parameters change.
-    * - `always` : Run on every execution.
-    * By default, guards and resolvers run only when the matrix
-    * parameters of the route change.
+    * A policy for when to run guards and resolvers on a route.
     *
-    * @see RunGuardsAndResolvers
+    * Guards and/or resolvers will always run when a route is activated or deactivated. When a route
+    * is unchanged, the default behavior is the same as `paramsChange`.
+    *
+    * `paramsChange` : Rerun the guards and resolvers when path or
+    * path param changes. This does not include query parameters. This option is the default.
+    * - `always` : Run on every execution.
+    * - `pathParamsChange` : Rerun guards and resolvers when the path params
+    * change. This does not compare matrix or query parameters.
+    * - `paramsOrQueryParamsChange` : Run when path, matrix, or query parameters change.
+    * - `pathParamsOrQueryParamsChange` : Rerun guards and resolvers when the path params
+    * change or query params have changed. This does not include matrix parameters.
+    *
+    * @see `RunGuardsAndResolvers`
     */
   var runGuardsAndResolvers: js.UndefOr[RunGuardsAndResolvers] = js.undefined
   
@@ -187,35 +199,35 @@ object Route {
   @scala.inline
   implicit open class MutableBuilder[Self <: Route] (val x: Self) extends AnyVal {
     
-    inline def setCanActivate(value: js.Array[CanActivateFn | Any]): Self = StObject.set(x, "canActivate", value.asInstanceOf[js.Any])
+    inline def setCanActivate(value: js.Array[CanActivateFn | DeprecatedGuard]): Self = StObject.set(x, "canActivate", value.asInstanceOf[js.Any])
     
-    inline def setCanActivateChild(value: js.Array[CanActivateChildFn | Any]): Self = StObject.set(x, "canActivateChild", value.asInstanceOf[js.Any])
+    inline def setCanActivateChild(value: js.Array[CanActivateChildFn | DeprecatedGuard]): Self = StObject.set(x, "canActivateChild", value.asInstanceOf[js.Any])
     
     inline def setCanActivateChildUndefined: Self = StObject.set(x, "canActivateChild", js.undefined)
     
-    inline def setCanActivateChildVarargs(value: (CanActivateChildFn | Any)*): Self = StObject.set(x, "canActivateChild", js.Array(value*))
+    inline def setCanActivateChildVarargs(value: (CanActivateChildFn | DeprecatedGuard)*): Self = StObject.set(x, "canActivateChild", js.Array(value*))
     
     inline def setCanActivateUndefined: Self = StObject.set(x, "canActivate", js.undefined)
     
-    inline def setCanActivateVarargs(value: (CanActivateFn | Any)*): Self = StObject.set(x, "canActivate", js.Array(value*))
+    inline def setCanActivateVarargs(value: (CanActivateFn | DeprecatedGuard)*): Self = StObject.set(x, "canActivate", js.Array(value*))
     
-    inline def setCanDeactivate(value: js.Array[CanDeactivateFn[Any] | Any]): Self = StObject.set(x, "canDeactivate", value.asInstanceOf[js.Any])
+    inline def setCanDeactivate(value: js.Array[CanDeactivateFn[Any] | DeprecatedGuard]): Self = StObject.set(x, "canDeactivate", value.asInstanceOf[js.Any])
     
     inline def setCanDeactivateUndefined: Self = StObject.set(x, "canDeactivate", js.undefined)
     
-    inline def setCanDeactivateVarargs(value: (CanDeactivateFn[Any] | Any)*): Self = StObject.set(x, "canDeactivate", js.Array(value*))
+    inline def setCanDeactivateVarargs(value: (CanDeactivateFn[Any] | DeprecatedGuard)*): Self = StObject.set(x, "canDeactivate", js.Array(value*))
     
-    inline def setCanLoad(value: js.Array[CanLoadFn | Any]): Self = StObject.set(x, "canLoad", value.asInstanceOf[js.Any])
+    inline def setCanLoad(value: js.Array[CanLoadFn | DeprecatedGuard]): Self = StObject.set(x, "canLoad", value.asInstanceOf[js.Any])
     
     inline def setCanLoadUndefined: Self = StObject.set(x, "canLoad", js.undefined)
     
-    inline def setCanLoadVarargs(value: (CanLoadFn | Any)*): Self = StObject.set(x, "canLoad", js.Array(value*))
+    inline def setCanLoadVarargs(value: (CanLoadFn | DeprecatedGuard)*): Self = StObject.set(x, "canLoad", js.Array(value*))
     
-    inline def setCanMatch(value: js.Array[Type[CanMatch] | InjectionToken[CanMatchFn] | CanMatchFn]): Self = StObject.set(x, "canMatch", value.asInstanceOf[js.Any])
+    inline def setCanMatch(value: js.Array[CanMatchFn | DeprecatedGuard]): Self = StObject.set(x, "canMatch", value.asInstanceOf[js.Any])
     
     inline def setCanMatchUndefined: Self = StObject.set(x, "canMatch", js.undefined)
     
-    inline def setCanMatchVarargs(value: (Type[CanMatch] | InjectionToken[CanMatchFn] | CanMatchFn)*): Self = StObject.set(x, "canMatch", js.Array(value*))
+    inline def setCanMatchVarargs(value: (CanMatchFn | DeprecatedGuard)*): Self = StObject.set(x, "canMatch", js.Array(value*))
     
     inline def setChildren(value: Routes): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
@@ -232,12 +244,14 @@ object Route {
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     inline def setLoadChildren(
-      value: () => Type[Any] | NgModuleFactory[Any] | Routes | (Observable_[Type[Any] | Routes]) | (js.Promise[NgModuleFactory[Any] | Type[Any] | Routes])
+      value: () => Type[Any] | NgModuleFactory[Any] | Routes | (Observable_[Type[Any] | Routes | (DefaultExport[Routes | Type[Any]])]) | (js.Promise[NgModuleFactory[Any] | Type[Any] | Routes | (DefaultExport[Routes | Type[Any]])])
     ): Self = StObject.set(x, "loadChildren", js.Any.fromFunction0(value))
     
     inline def setLoadChildrenUndefined: Self = StObject.set(x, "loadChildren", js.undefined)
     
-    inline def setLoadComponent(value: () => Type[Any] | Observable_[Type[Any]] | js.Promise[Type[Any]]): Self = StObject.set(x, "loadComponent", js.Any.fromFunction0(value))
+    inline def setLoadComponent(
+      value: () => Type[Any] | (Observable_[Type[Any] | DefaultExport[Type[Any]]]) | (js.Promise[Type[Any] | DefaultExport[Type[Any]]])
+    ): Self = StObject.set(x, "loadComponent", js.Any.fromFunction0(value))
     
     inline def setLoadComponentUndefined: Self = StObject.set(x, "loadComponent", js.undefined)
     
@@ -259,11 +273,11 @@ object Route {
     
     inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    inline def setProviders(value: js.Array[Provider | ImportedNgModuleProviders]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
+    inline def setProviders(value: js.Array[Provider | EnvironmentProviders]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
     inline def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
     
-    inline def setProvidersVarargs(value: (Provider | ImportedNgModuleProviders)*): Self = StObject.set(x, "providers", js.Array(value*))
+    inline def setProvidersVarargs(value: (Provider | EnvironmentProviders)*): Self = StObject.set(x, "providers", js.Array(value*))
     
     inline def setRedirectTo(value: String): Self = StObject.set(x, "redirectTo", value.asInstanceOf[js.Any])
     

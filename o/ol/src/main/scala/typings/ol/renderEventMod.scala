@@ -1,9 +1,9 @@
 package typings.ol
 
-import typings.ol.pluggableMapMod.FrameState
-import typings.ol.renderEventTypeMod.EventType
+import typings.ol.mapMod.FrameState
 import typings.ol.transformMod.Transform
 import typings.std.CanvasRenderingContext2D
+import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,34 +13,50 @@ object renderEventMod {
   @JSImport("ol/render/Event", JSImport.Default)
   @js.native
   open class default protected () extends RenderEvent {
-    def this(`type`: EventType) = this()
-    def this(`type`: EventType, opt_inversePixelTransform: Transform) = this()
-    def this(`type`: EventType, opt_inversePixelTransform: Unit, opt_frameState: FrameState) = this()
-    def this(`type`: EventType, opt_inversePixelTransform: Transform, opt_frameState: FrameState) = this()
+    /**
+      * @param {import("./EventType.js").default} type Type.
+      * @param {import("../transform.js").Transform} [inversePixelTransform] Transform for
+      *     CSS pixels to rendered pixels.
+      * @param {import("../Map.js").FrameState} [frameState] Frame state.
+      * @param {?(CanvasRenderingContext2D|WebGLRenderingContext)} [context] Context.
+      */
+    def this(`type`: Any) = this()
+    def this(`type`: Any, inversePixelTransform: js.Array[Double]) = this()
+    def this(`type`: Any, inversePixelTransform: js.Array[Double], frameState: FrameState) = this()
+    def this(`type`: Any, inversePixelTransform: Unit, frameState: FrameState) = this()
     def this(
-      `type`: EventType,
-      opt_inversePixelTransform: Unit,
-      opt_frameState: Unit,
-      opt_context: CanvasRenderingContext2D
+      `type`: Any,
+      inversePixelTransform: js.Array[Double],
+      frameState: Unit,
+      context: CanvasRenderingContext2D
     ) = this()
     def this(
-      `type`: EventType,
-      opt_inversePixelTransform: Unit,
-      opt_frameState: FrameState,
-      opt_context: CanvasRenderingContext2D
+      `type`: Any,
+      inversePixelTransform: js.Array[Double],
+      frameState: Unit,
+      context: WebGLRenderingContext
     ) = this()
     def this(
-      `type`: EventType,
-      opt_inversePixelTransform: Transform,
-      opt_frameState: Unit,
-      opt_context: CanvasRenderingContext2D
+      `type`: Any,
+      inversePixelTransform: js.Array[Double],
+      frameState: FrameState,
+      context: CanvasRenderingContext2D
     ) = this()
     def this(
-      `type`: EventType,
-      opt_inversePixelTransform: Transform,
-      opt_frameState: FrameState,
-      opt_context: CanvasRenderingContext2D
+      `type`: Any,
+      inversePixelTransform: js.Array[Double],
+      frameState: FrameState,
+      context: WebGLRenderingContext
     ) = this()
+    def this(`type`: Any, inversePixelTransform: Unit, frameState: Unit, context: CanvasRenderingContext2D) = this()
+    def this(`type`: Any, inversePixelTransform: Unit, frameState: Unit, context: WebGLRenderingContext) = this()
+    def this(
+      `type`: Any,
+      inversePixelTransform: Unit,
+      frameState: FrameState,
+      context: CanvasRenderingContext2D
+    ) = this()
+    def this(`type`: Any, inversePixelTransform: Unit, frameState: FrameState, context: WebGLRenderingContext) = this()
   }
   
   @js.native
@@ -48,20 +64,27 @@ object renderEventMod {
     extends typings.ol.eventsEventMod.default {
     
     /**
-      * Canvas context. Not available when the event is dispatched by the map. Only available
-      * when a Canvas renderer is used, null otherwise.
+      * Canvas context. Not available when the event is dispatched by the map. For Canvas 2D layers,
+      * the context will be the 2D rendering context.  For WebGL layers, the context will be the WebGL
+      * context.
+      * @type {CanvasRenderingContext2D|WebGLRenderingContext|undefined}
+      * @api
       */
-    var context: CanvasRenderingContext2D | Null = js.native
+    var context: js.UndefOr[CanvasRenderingContext2D | WebGLRenderingContext] = js.native
     
     /**
       * An object representing the current render frame state.
+      * @type {import("../Map.js").FrameState|undefined}
+      * @api
       */
-    var frameState: FrameState = js.native
+    var frameState: js.UndefOr[FrameState] = js.native
     
     /**
       * Transform from CSS pixels (relative to the top-left corner of the map viewport)
-      * to rendered pixels on this event's context. Only available when a Canvas renderer is used, null otherwise.
+      * to rendered pixels on this event's `context`. Only available when a Canvas renderer is used, null otherwise.
+      * @type {import("../transform.js").Transform|undefined}
+      * @api
       */
-    var inversePixelTransform: Transform = js.native
+    var inversePixelTransform: js.UndefOr[Transform] = js.native
   }
 }

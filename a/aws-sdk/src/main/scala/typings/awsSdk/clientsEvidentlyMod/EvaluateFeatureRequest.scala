@@ -12,7 +12,7 @@ trait EvaluateFeatureRequest extends StObject {
   var entityId: EntityId
   
   /**
-    * A JSON object of attributes that you can optionally pass in as part of the evaluation event sent to Evidently from the user session. Evidently can use this value to match user sessions with defined audience segments. For more information, see Use segments to focus your audience.  &lt;p&gt;If you include this parameter, the value must be a JSON object. A JSON array is not supported.&lt;/p&gt; 
+    * A JSON object of attributes that you can optionally pass in as part of the evaluation event sent to Evidently from the user session. Evidently can use this value to match user sessions with defined audience segments. For more information, see Use segments to focus your audience. If you include this parameter, the value must be a JSON object. A JSON array is not supported.
     */
   var evaluationContext: js.UndefOr[JsonValue] = js.undefined
   

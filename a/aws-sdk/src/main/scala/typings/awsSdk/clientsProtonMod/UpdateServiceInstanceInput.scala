@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateServiceInstanceInput extends StObject {
   
   /**
+    * The client token of the service instance to update.
+    */
+  var clientToken: js.UndefOr[ClientToken] = js.undefined
+  
+  /**
     * The deployment type. It defines the mode for updating a service instance, as follows:     NONE  In this mode, a deployment doesn't occur. Only the requested metadata parameters are updated.     CURRENT_VERSION  In this mode, the service instance is deployed and updated with the new spec that you provide. Only requested parameters are updated. Don’t include major or minor version parameters when you use this deployment type.     MINOR_VERSION  In this mode, the service instance is deployed and updated with the published, recommended (latest) minor version of the current major version in use, by default. You can also specify a different minor version of the current major version in use.     MAJOR_VERSION  In this mode, the service instance is deployed and updated with the published, recommended (latest) major and minor version of the current template, by default. You can specify a different major version that's higher than the major version in use and a minor version.  
     */
   var deploymentType: DeploymentUpdateType
@@ -45,6 +50,10 @@ object UpdateServiceInstanceInput {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: UpdateServiceInstanceInput] (val x: Self) extends AnyVal {
+    
+    inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    
+    inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
     inline def setDeploymentType(value: DeploymentUpdateType): Self = StObject.set(x, "deploymentType", value.asInstanceOf[js.Any])
     

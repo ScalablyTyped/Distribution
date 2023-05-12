@@ -24,7 +24,7 @@ trait IframeHTMLAttributes
   
   var name: js.UndefOr[String] = js.undefined
   
-  var referrerpolicy: js.UndefOr[String] = js.undefined
+  var referrerpolicy: js.UndefOr[HTMLAttributeReferrerPolicy] = js.undefined
   
   var sandbox: js.UndefOr[String] = js.undefined
   
@@ -80,7 +80,7 @@ object IframeHTMLAttributes {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setReferrerpolicy(value: String): Self = StObject.set(x, "referrerpolicy", value.asInstanceOf[js.Any])
+    inline def setReferrerpolicy(value: HTMLAttributeReferrerPolicy): Self = StObject.set(x, "referrerpolicy", value.asInstanceOf[js.Any])
     
     inline def setReferrerpolicyUndefined: Self = StObject.set(x, "referrerpolicy", js.undefined)
     

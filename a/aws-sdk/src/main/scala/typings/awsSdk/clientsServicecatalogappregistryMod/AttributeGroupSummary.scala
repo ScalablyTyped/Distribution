@@ -12,6 +12,11 @@ trait AttributeGroupSummary extends StObject {
   var arn: js.UndefOr[AttributeGroupArn] = js.undefined
   
   /**
+    * The service principal that created the attribute group.
+    */
+  var createdBy: js.UndefOr[CreatedBy] = js.undefined
+  
+  /**
     * The ISO-8601 formatted timestamp of the moment the attribute group was created.
     */
   var creationTime: js.UndefOr[js.Date] = js.undefined
@@ -49,6 +54,10 @@ object AttributeGroupSummary {
     inline def setArn(value: AttributeGroupArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    
+    inline def setCreatedBy(value: CreatedBy): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     

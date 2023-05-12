@@ -612,6 +612,12 @@ object Curves {
     def getBounds[O /* <: Vector2 */](out: Unit, accuracy: Double): O = js.native
     
     /**
+      * Returns the Curve that forms the Path at the given normalized location (between 0 and 1).
+      * @param t The normalized location on the Path, between 0 and 1.
+      */
+    def getCurveAt(t: Double): Curve | Null = js.native
+    
+    /**
       * Returns an array containing the length of the Path at the end of each Curve.
       * 
       * The result of this method will be cached to avoid recalculating it in subsequent calls. The cache is only invalidated when the {@link #curves} array changes in length, leading to potential inaccuracies if a Curve in the Path is changed, or if a Curve is removed and another is added in its place.

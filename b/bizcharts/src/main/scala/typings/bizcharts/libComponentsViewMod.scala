@@ -15,7 +15,7 @@ object libComponentsViewMod {
     def this(props: IViewProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: IViewProps, context: Any) = this()
   }
@@ -39,7 +39,7 @@ object libComponentsViewMod {
     def this(props: IViewProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: IViewProps, context: Any) = this()
     

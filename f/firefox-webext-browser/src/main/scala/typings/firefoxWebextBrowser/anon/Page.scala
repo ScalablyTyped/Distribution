@@ -1,7 +1,6 @@
 package typings.firefoxWebextBrowser.anon
 
 import typings.firefoxWebextBrowser.browser.manifest.ExtensionURL
-import typings.firefoxWebextBrowser.browser.manifest.PersistentBackgroundProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,8 @@ trait Page extends StObject {
   
   var page: ExtensionURL
   
-  var persistent: js.UndefOr[PersistentBackgroundProperty] = js.undefined
+  /** Not supported on manifest versions above 2. */
+  var persistent: js.UndefOr[Boolean] = js.undefined
 }
 object Page {
   
@@ -24,7 +24,7 @@ object Page {
     
     inline def setPage(value: ExtensionURL): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    inline def setPersistent(value: PersistentBackgroundProperty): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
+    inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
     
     inline def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
   }

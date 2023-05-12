@@ -35,14 +35,12 @@ object tabGroups {
   inline def get(groupId: Double): js.Promise[TabGroup] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(groupId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TabGroup]]
   inline def get(groupId: Double, callback: js.Function1[/* group */ TabGroup, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(groupId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def move(groupId: Double, moveProperties: MoveProperties): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(groupId.asInstanceOf[js.Any], moveProperties.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def move(groupId: Double, moveProperties: MoveProperties): js.Promise[TabGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(groupId.asInstanceOf[js.Any], moveProperties.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TabGroup]]
   inline def move(
     groupId: Double,
     moveProperties: MoveProperties,
     callback: js.Function1[/* group */ TabGroup, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(groupId.asInstanceOf[js.Any], moveProperties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def move_Promise(groupId: Double, moveProperties: MoveProperties): js.Promise[TabGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(groupId.asInstanceOf[js.Any], moveProperties.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TabGroup]]
   
   @JSGlobal("chrome.tabGroups.onCreated")
   @js.native
@@ -67,12 +65,10 @@ object tabGroups {
   inline def query(queryInfo: QueryInfo): js.Promise[js.Array[TabGroup]] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(queryInfo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[TabGroup]]]
   inline def query(queryInfo: QueryInfo, callback: js.Function1[/* result */ js.Array[TabGroup], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(queryInfo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def update(groupId: Double, updateProperties: UpdateProperties): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(groupId.asInstanceOf[js.Any], updateProperties.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def update(groupId: Double, updateProperties: UpdateProperties): js.Promise[TabGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(groupId.asInstanceOf[js.Any], updateProperties.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TabGroup]]
   inline def update(
     groupId: Double,
     updateProperties: UpdateProperties,
     callback: js.Function1[/* group */ TabGroup, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(groupId.asInstanceOf[js.Any], updateProperties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def update_Promise(groupId: Double, updateProperties: UpdateProperties): js.Promise[TabGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(groupId.asInstanceOf[js.Any], updateProperties.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TabGroup]]
 }

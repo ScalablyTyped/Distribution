@@ -14,6 +14,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
+inline def default: Nightwatch = ^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[Nightwatch]
+
 inline def ELEMENT_KEY: /* "element-6066-11e4-a52e-4f735466cecf" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("ELEMENT_KEY").asInstanceOf[/* "element-6066-11e4-a52e-4f735466cecf" */ String]
 
 inline def globalElement(locator: Definition): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("globalElement")(locator.asInstanceOf[js.Any]).asInstanceOf[Element]
@@ -45,6 +47,13 @@ type ExclusiveSuiteFunction = js.Function2[
 /* title */ String, 
 /* fn */ js.UndefOr[js.ThisFunction0[/* this */ DescribeInstance, Unit]], 
 this.type]
+
+type ExecuteAsyncScriptFunction[ArgType /* <: js.Array[Any] */, ReturnValue] = js.ThisFunction1[
+/* this */ StringDictionary[Any], 
+/* import warning: importer.ImportType#apply c repeated non-array type: ArgType */ /* innerArgs */ /* args */ js.Array[ArgType], 
+Unit]
+
+type ExecuteScriptFunction[ArgType /* <: js.Array[Any] */, ReturnValue] = js.ThisFunction1[/* this */ StringDictionary[Any], /* args */ ArgType, ReturnValue]
 
 type ExtendDescribeThis[T] = DescribeInstance & (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]:? T[P]} */ js.Any)
 
@@ -94,3 +103,13 @@ type PendingSuiteFunction = js.Function2[
 /* title */ String, 
 /* fn */ js.UndefOr[js.ThisFunction0[/* this */ DescribeInstance, Unit]], 
 this.type | Unit]
+
+// tslint:disable-next-line
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends void ? null : T
+  }}}
+  */
+type VoidToNull[T] = T

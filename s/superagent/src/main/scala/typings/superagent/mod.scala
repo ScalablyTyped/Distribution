@@ -16,6 +16,7 @@ import typings.std.Promise
 import typings.std.Record
 import typings.superagent.anon.ContentType
 import typings.superagent.anon.Deadline
+import typings.superagent.anon.Host
 import typings.superagent.anon.Passphrase
 import typings.superagent.anon.Type
 import typings.superagent.anon.`0`
@@ -151,6 +152,10 @@ object mod extends Shortcut {
     
     def clearTimeout(): this.type = js.native
     
+    def connect(`override`: String): this.type = js.native
+    @JSName("connect")
+    def connect_false(`override`: StringDictionary[`false` | String | Host]): this.type = js.native
+    
     def disableTLSCerts(): this.type = js.native
     
     def end(): Unit = js.native
@@ -228,6 +233,7 @@ object mod extends Shortcut {
     def use(fn: Plugin): this.type = js.native
     
     def withCredentials(): this.type = js.native
+    def withCredentials(on: Boolean): this.type = js.native
     
     def write(data: String): Boolean = js.native
     def write(data: String, encoding: String): Boolean = js.native

@@ -12,6 +12,11 @@ trait ChannelMessageCallback extends StObject {
   var Content: js.UndefOr[NonEmptyContent] = js.undefined
   
   /**
+    * The content type of the call-back message.
+    */
+  var ContentType: js.UndefOr[typings.awsSdk.clientsChimesdkmessagingMod.ContentType] = js.undefined
+  
+  /**
     * The attributes for the message, used for message filtering along with a FilterRule defined in the PushNotificationPreferences. 
     */
   var MessageAttributes: js.UndefOr[MessageAttributeMap] = js.undefined
@@ -47,6 +52,10 @@ object ChannelMessageCallback {
   implicit open class MutableBuilder[Self <: ChannelMessageCallback] (val x: Self) extends AnyVal {
     
     inline def setContent(value: NonEmptyContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    
+    inline def setContentType(value: ContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
+    
+    inline def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
     
     inline def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
     

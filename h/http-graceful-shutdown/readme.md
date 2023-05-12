@@ -1,7 +1,7 @@
 
 # Scala.js typings for http-graceful-shutdown
 
-Typings are for version 3.1.9
+Typings are for version 3.1.13
 
 ## Library description:
 gracefully shuts downs http server

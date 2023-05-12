@@ -35,6 +35,9 @@ object examplesJsmLoadersTtfloaderMod {
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): Unit = js.native
     
+    def loadAsync(url: String): js.Promise[js.Object] = js.native
+    def loadAsync(url: String, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[js.Object] = js.native
+    
     def parse(arraybuffer: js.typedarray.ArrayBuffer): js.Object = js.native
     
     var reversed: Boolean = js.native

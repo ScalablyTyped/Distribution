@@ -1,7 +1,7 @@
 
 # Scala.js typings for selderee
 
-Typings are for version 0.9.0
+Typings are for version 0.11.0
 
 ## Library description:
 Selectors decision tree - choose matching selectors, fast

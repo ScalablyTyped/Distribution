@@ -6,9 +6,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The options that can be set on a <code>SearchBox</code> object.
-  */
 trait SearchBoxOptions extends StObject {
   
   /**

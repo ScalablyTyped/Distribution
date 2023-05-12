@@ -3,7 +3,7 @@ package typings.babylonjs.BABYLON
 import typings.babylonjs.anon.PartialIWebXRControllerPoCustomLasterPointerMeshGenerator
 import typings.babylonjs.anon.PartialIWebXRInputOptionsControllerOptions
 import typings.babylonjs.anon.PartialIWebXRNearInteractCustomUtilityLayerScene
-import typings.babylonjs.anon.PartialIWebXRTeleportatioCustomUtilityLayerScene
+import typings.babylonjs.anon.PartialIWebXRTeleportatioBlockedRayColor
 import typings.babylonjs.anon.PartialWebXREnterExitUIOpCustomButtons
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -79,7 +79,7 @@ trait WebXRDefaultExperienceOptions extends StObject {
   /**
     * optional configuration for teleportation
     */
-  var teleportationOptions: js.UndefOr[PartialIWebXRTeleportatioCustomUtilityLayerScene] = js.undefined
+  var teleportationOptions: js.UndefOr[PartialIWebXRTeleportatioBlockedRayColor] = js.undefined
   
   /**
     * optional UI options. This can be used among other to change session mode and reference space type
@@ -153,7 +153,7 @@ object WebXRDefaultExperienceOptions {
     
     inline def setRenderingGroupIdUndefined: Self = StObject.set(x, "renderingGroupId", js.undefined)
     
-    inline def setTeleportationOptions(value: PartialIWebXRTeleportatioCustomUtilityLayerScene): Self = StObject.set(x, "teleportationOptions", value.asInstanceOf[js.Any])
+    inline def setTeleportationOptions(value: PartialIWebXRTeleportatioBlockedRayColor): Self = StObject.set(x, "teleportationOptions", value.asInstanceOf[js.Any])
     
     inline def setTeleportationOptionsUndefined: Self = StObject.set(x, "teleportationOptions", js.undefined)
     

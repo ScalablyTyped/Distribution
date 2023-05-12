@@ -1,6 +1,7 @@
 package typings.yandexMaps.mod
 
 import typings.std.AnimationEvent
+import typings.std.ClipboardEvent
 import typings.std.CompositionEvent
 import typings.std.Document
 import typings.std.DragEvent
@@ -40,7 +41,9 @@ import typings.yandexMaps.yandexMapsStrings.compositionend
 import typings.yandexMaps.yandexMapsStrings.compositionstart
 import typings.yandexMaps.yandexMapsStrings.compositionupdate
 import typings.yandexMaps.yandexMapsStrings.contextmenu
+import typings.yandexMaps.yandexMapsStrings.copy
 import typings.yandexMaps.yandexMapsStrings.cuechange
+import typings.yandexMaps.yandexMapsStrings.cut
 import typings.yandexMaps.yandexMapsStrings.dblclick
 import typings.yandexMaps.yandexMapsStrings.drag
 import typings.yandexMaps.yandexMapsStrings.dragend
@@ -75,6 +78,7 @@ import typings.yandexMaps.yandexMapsStrings.mousemove
 import typings.yandexMaps.yandexMapsStrings.mouseout
 import typings.yandexMaps.yandexMapsStrings.mouseover
 import typings.yandexMaps.yandexMapsStrings.mouseup
+import typings.yandexMaps.yandexMapsStrings.paste
 import typings.yandexMaps.yandexMapsStrings.pause
 import typings.yandexMaps.yandexMapsStrings.play
 import typings.yandexMaps.yandexMapsStrings.playing
@@ -1168,6 +1172,56 @@ object domEvent {
       capture: Boolean
     ): this.type = js.native
     @JSName("add")
+    def add_copy(htmlElement: Document, types: copy, callback: js.Function1[/* event */ ClipboardEvent, Unit]): this.type = js.native
+    @JSName("add")
+    def add_copy(
+      htmlElement: Document,
+      types: copy,
+      callback: js.Function1[/* event */ ClipboardEvent, Unit],
+      context: js.Object
+    ): this.type = js.native
+    @JSName("add")
+    def add_copy(
+      htmlElement: Document,
+      types: copy,
+      callback: js.Function1[/* event */ ClipboardEvent, Unit],
+      context: js.Object,
+      capture: Boolean
+    ): this.type = js.native
+    @JSName("add")
+    def add_copy(
+      htmlElement: Document,
+      types: copy,
+      callback: js.Function1[/* event */ ClipboardEvent, Unit],
+      context: Unit,
+      capture: Boolean
+    ): this.type = js.native
+    @JSName("add")
+    def add_copy(htmlElement: HTMLElement, types: copy, callback: js.Function1[/* event */ ClipboardEvent, Unit]): this.type = js.native
+    @JSName("add")
+    def add_copy(
+      htmlElement: HTMLElement,
+      types: copy,
+      callback: js.Function1[/* event */ ClipboardEvent, Unit],
+      context: js.Object
+    ): this.type = js.native
+    @JSName("add")
+    def add_copy(
+      htmlElement: HTMLElement,
+      types: copy,
+      callback: js.Function1[/* event */ ClipboardEvent, Unit],
+      context: js.Object,
+      capture: Boolean
+    ): this.type = js.native
+    @JSName("add")
+    def add_copy(
+      htmlElement: HTMLElement,
+      types: copy,
+      callback: js.Function1[/* event */ ClipboardEvent, Unit],
+      context: Unit,
+      capture: Boolean
+    ): this.type = js.native
+    @JSName("add")
     def add_cuechange(htmlElement: Document, types: cuechange, callback: js.Function1[/* event */ Event, Unit]): this.type = js.native
     @JSName("add")
     def add_cuechange(
@@ -1214,6 +1268,56 @@ object domEvent {
       htmlElement: HTMLElement,
       types: cuechange,
       callback: js.Function1[/* event */ Event, Unit],
+      context: Unit,
+      capture: Boolean
+    ): this.type = js.native
+    @JSName("add")
+    def add_cut(htmlElement: Document, types: cut, callback: js.Function1[/* event */ ClipboardEvent, Unit]): this.type = js.native
+    @JSName("add")
+    def add_cut(
+      htmlElement: Document,
+      types: cut,
+      callback: js.Function1[/* event */ ClipboardEvent, Unit],
+      context: js.Object
+    ): this.type = js.native
+    @JSName("add")
+    def add_cut(
+      htmlElement: Document,
+      types: cut,
+      callback: js.Function1[/* event */ ClipboardEvent, Unit],
+      context: js.Object,
+      capture: Boolean
+    ): this.type = js.native
+    @JSName("add")
+    def add_cut(
+      htmlElement: Document,
+      types: cut,
+      callback: js.Function1[/* event */ ClipboardEvent, Unit],
+      context: Unit,
+      capture: Boolean
+    ): this.type = js.native
+    @JSName("add")
+    def add_cut(htmlElement: HTMLElement, types: cut, callback: js.Function1[/* event */ ClipboardEvent, Unit]): this.type = js.native
+    @JSName("add")
+    def add_cut(
+      htmlElement: HTMLElement,
+      types: cut,
+      callback: js.Function1[/* event */ ClipboardEvent, Unit],
+      context: js.Object
+    ): this.type = js.native
+    @JSName("add")
+    def add_cut(
+      htmlElement: HTMLElement,
+      types: cut,
+      callback: js.Function1[/* event */ ClipboardEvent, Unit],
+      context: js.Object,
+      capture: Boolean
+    ): this.type = js.native
+    @JSName("add")
+    def add_cut(
+      htmlElement: HTMLElement,
+      types: cut,
+      callback: js.Function1[/* event */ ClipboardEvent, Unit],
       context: Unit,
       capture: Boolean
     ): this.type = js.native
@@ -2930,6 +3034,56 @@ object domEvent {
       htmlElement: HTMLElement,
       types: mouseup,
       callback: js.Function1[/* event */ MouseEvent, Unit],
+      context: Unit,
+      capture: Boolean
+    ): this.type = js.native
+    @JSName("add")
+    def add_paste(htmlElement: Document, types: paste, callback: js.Function1[/* event */ ClipboardEvent, Unit]): this.type = js.native
+    @JSName("add")
+    def add_paste(
+      htmlElement: Document,
+      types: paste,
+      callback: js.Function1[/* event */ ClipboardEvent, Unit],
+      context: js.Object
+    ): this.type = js.native
+    @JSName("add")
+    def add_paste(
+      htmlElement: Document,
+      types: paste,
+      callback: js.Function1[/* event */ ClipboardEvent, Unit],
+      context: js.Object,
+      capture: Boolean
+    ): this.type = js.native
+    @JSName("add")
+    def add_paste(
+      htmlElement: Document,
+      types: paste,
+      callback: js.Function1[/* event */ ClipboardEvent, Unit],
+      context: Unit,
+      capture: Boolean
+    ): this.type = js.native
+    @JSName("add")
+    def add_paste(htmlElement: HTMLElement, types: paste, callback: js.Function1[/* event */ ClipboardEvent, Unit]): this.type = js.native
+    @JSName("add")
+    def add_paste(
+      htmlElement: HTMLElement,
+      types: paste,
+      callback: js.Function1[/* event */ ClipboardEvent, Unit],
+      context: js.Object
+    ): this.type = js.native
+    @JSName("add")
+    def add_paste(
+      htmlElement: HTMLElement,
+      types: paste,
+      callback: js.Function1[/* event */ ClipboardEvent, Unit],
+      context: js.Object,
+      capture: Boolean
+    ): this.type = js.native
+    @JSName("add")
+    def add_paste(
+      htmlElement: HTMLElement,
+      types: paste,
+      callback: js.Function1[/* event */ ClipboardEvent, Unit],
       context: Unit,
       capture: Boolean
     ): this.type = js.native

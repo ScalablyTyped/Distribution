@@ -1,84 +1,91 @@
 package typings.undici.mod
 
-import typings.undici.typesMockAgentMod.Options
+import typings.undici.typesMockAgentMod.MockAgent.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Undici {
   
-  /* was `typeof imported_agent` */
-  type Agent = typings.undici.typesAgentMod.^
+  /* was `typeof imported_agent.default` */
+  type Agent = typings.undici.typesAgentMod.default
   
-  /* was `typeof imported_balanced-pool` */
-  type BalancedPool = typings.undici.typesBalancedPoolMod.^
+  /* was `typeof imported_balanced-pool.default` */
+  type BalancedPool = typings.undici.typesBalancedPoolMod.default
   
-  /** A basic HTTP/1.1 client, mapped on top a single TCP/TLS connection. Pipelining is disabled by default. */
-  /* was `typeof imported_client` */
-  type Client = typings.undici.typesClientMod.^
+  /* was `typeof imported_client.default` */
+  type Client = typings.undici.typesClientMod.default
   
   /* was `typeof imported_handlers.DecoratorHandler` */
   type DecoratorHandler = typings.undici.typesHandlersMod.DecoratorHandler
   
   /** Dispatcher is the core API used to dispatch requests. */
-  /* was `typeof imported_dispatcher` */
-  type Dispatcher = typings.undici.typesDispatcherMod.^
+  /* was `typeof imported_dispatcher.default` */
+  type Dispatcher = typings.undici.typesDispatcherMod.default
   
   /** A mocked Agent class that implements the Agent API. It allows one to intercept HTTP requests made through undici and return mocked responses instead. */
-  /* was `typeof imported_mock-agent` */
-  type MockAgent[TMockAgentOptions /* <: Options */] = typings.undici.typesMockAgentMod.^[TMockAgentOptions]
+  /* was `typeof imported_mock-agent.default` */
+  type MockAgent[TMockAgentOptions /* <: Options */] = typings.undici.typesMockAgentMod.default[TMockAgentOptions]
   
   /** MockClient extends the Client API and allows one to mock requests. */
-  /* was `typeof imported_mock-client` */
-  type MockClient = typings.undici.typesMockClientMod.^
+  /* was `typeof imported_mock-client.default` */
+  type MockClient = typings.undici.typesMockClientMod.default
   
   /** MockPool extends the Pool API and allows one to mock requests. */
-  /* was `typeof imported_mock-pool` */
-  type MockPool = typings.undici.typesMockPoolMod.^
+  /* was `typeof imported_mock-pool.default` */
+  type MockPool = typings.undici.typesMockPoolMod.default
   
-  /* was `typeof imported_pool` */
-  type Pool = typings.undici.typesPoolMod.^
+  /* was `typeof imported_pool.default` */
+  type Pool = typings.undici.typesPoolMod.default
   
   /* was `typeof imported_handlers.RedirectHandler` */
   type RedirectHandler = typings.undici.typesHandlersMod.RedirectHandler
   
-  /* was `typeof imported_errors` */
+  /* was `typeof imported_errors.default` */
   object errors {
     
-    type BodyTimeoutError = typings.undici.typesErrorsMod.BodyTimeoutError
+    type BalancedPoolMissingUpstreamError = typings.undici.typesErrorsMod.default.BalancedPoolMissingUpstreamError
     
-    type ClientClosedError = typings.undici.typesErrorsMod.ClientClosedError
+    type BodyTimeoutError = typings.undici.typesErrorsMod.default.BodyTimeoutError
     
-    type ClientDestroyedError = typings.undici.typesErrorsMod.ClientDestroyedError
+    type ClientClosedError = typings.undici.typesErrorsMod.default.ClientClosedError
     
-    type HeadersTimeoutError = typings.undici.typesErrorsMod.HeadersTimeoutError
+    type ClientDestroyedError = typings.undici.typesErrorsMod.default.ClientDestroyedError
     
-    type InformationalError = typings.undici.typesErrorsMod.InformationalError
+    type ConnectTimeoutError = typings.undici.typesErrorsMod.default.ConnectTimeoutError
     
-    type InvalidArgumentError = typings.undici.typesErrorsMod.InvalidArgumentError
+    type HTTPParserError = typings.undici.typesErrorsMod.default.HTTPParserError
     
-    type InvalidReturnError = typings.undici.typesErrorsMod.InvalidReturnError
+    type HeadersOverflowError = typings.undici.typesErrorsMod.default.HeadersOverflowError
     
-    type NotSupportedError = typings.undici.typesErrorsMod.NotSupportedError
+    type HeadersTimeoutError = typings.undici.typesErrorsMod.default.HeadersTimeoutError
     
-    type RequestAbortedError = typings.undici.typesErrorsMod.RequestAbortedError
+    type InformationalError = typings.undici.typesErrorsMod.default.InformationalError
     
-    type RequestContentLengthMismatchError = typings.undici.typesErrorsMod.RequestContentLengthMismatchError
+    type InvalidArgumentError = typings.undici.typesErrorsMod.default.InvalidArgumentError
     
-    type ResponseExceededMaxSizeError = typings.undici.typesErrorsMod.ResponseExceededMaxSizeError
+    type InvalidReturnValueError = typings.undici.typesErrorsMod.default.InvalidReturnValueError
     
-    type ResponseStatusCodeError = typings.undici.typesErrorsMod.ResponseStatusCodeError
+    type NotSupportedError = typings.undici.typesErrorsMod.default.NotSupportedError
     
-    type SocketError = typings.undici.typesErrorsMod.SocketError
+    type RequestAbortedError = typings.undici.typesErrorsMod.default.RequestAbortedError
     
-    type SocketTimeoutError = typings.undici.typesErrorsMod.SocketTimeoutError
+    type RequestContentLengthMismatchError = typings.undici.typesErrorsMod.default.RequestContentLengthMismatchError
     
-    type UndiciError = typings.undici.typesErrorsMod.UndiciError
+    type ResponseContentLengthMismatchError = typings.undici.typesErrorsMod.default.ResponseContentLengthMismatchError
+    
+    type ResponseExceededMaxSizeError = typings.undici.typesErrorsMod.default.ResponseExceededMaxSizeError
+    
+    type ResponseStatusCodeError = typings.undici.typesErrorsMod.default.ResponseStatusCodeError
+    
+    type SocketError = typings.undici.typesErrorsMod.default.SocketError
+    
+    type UndiciError = typings.undici.typesErrorsMod.default.UndiciError
   }
   
-  /* was `typeof imported_mock-errors` */
+  /* was `typeof imported_mock-errors.default` */
   object mockErrors {
     
-    type MockNotMatchedError = typings.undici.typesMockErrorsMod.MockNotMatchedError
+    type MockNotMatchedError = typings.undici.typesMockErrorsMod.default.MockNotMatchedError
   }
 }

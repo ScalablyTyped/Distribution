@@ -83,9 +83,10 @@ object distSrcUtilsUpdatesMod {
   
   inline def convertUpdateFormat(
     update: js.typedarray.Uint8Array,
+    blockTransformer: js.Function1[GC | Item | Skip, GC | Item | Skip],
     YDecoder: Instantiable0[UpdateDecoderV1 | UpdateDecoderV2],
     YEncoder: Instantiable0[UpdateEncoderV1 | UpdateEncoderV2]
-  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("convertUpdateFormat")(update.asInstanceOf[js.Any], YDecoder.asInstanceOf[js.Any], YEncoder.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("convertUpdateFormat")(update.asInstanceOf[js.Any], blockTransformer.asInstanceOf[js.Any], YDecoder.asInstanceOf[js.Any], YEncoder.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   inline def convertUpdateFormatV1ToV2(update: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("convertUpdateFormatV1ToV2")(update.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
@@ -155,8 +156,49 @@ object distSrcUtilsUpdatesMod {
     YEncoder: Instantiable0[UpdateEncoderV1 | UpdateEncoderV2]
   ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeUpdatesV2")(updates.asInstanceOf[js.Any], YDecoder.asInstanceOf[js.Any], YEncoder.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
+  inline def obfuscateUpdate(update: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("obfuscateUpdate")(update.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def obfuscateUpdate(update: js.typedarray.Uint8Array, opts: ObfuscatorOptions): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("obfuscateUpdate")(update.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  
+  inline def obfuscateUpdateV2(update: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("obfuscateUpdateV2")(update.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def obfuscateUpdateV2(update: js.typedarray.Uint8Array, opts: ObfuscatorOptions): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("obfuscateUpdateV2")(update.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  
   inline def parseUpdateMeta(update: js.typedarray.Uint8Array): From = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUpdateMeta")(update.asInstanceOf[js.Any]).asInstanceOf[From]
   
   inline def parseUpdateMetaV2(update: js.typedarray.Uint8Array): From = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUpdateMetaV2")(update.asInstanceOf[js.Any]).asInstanceOf[From]
   inline def parseUpdateMetaV2(update: js.typedarray.Uint8Array, YDecoder: Instantiable0[UpdateDecoderV1 | UpdateDecoderV2]): From = (^.asInstanceOf[js.Dynamic].applyDynamic("parseUpdateMetaV2")(update.asInstanceOf[js.Any], YDecoder.asInstanceOf[js.Any])).asInstanceOf[From]
+  
+  trait ObfuscatorOptions extends StObject {
+    
+    var formatting: js.UndefOr[Boolean] = js.undefined
+    
+    var subdocs: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Whether to obfuscate nodeName / hookName
+      */
+    var yxml: js.UndefOr[Boolean] = js.undefined
+  }
+  object ObfuscatorOptions {
+    
+    inline def apply(): ObfuscatorOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ObfuscatorOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObfuscatorOptions] (val x: Self) extends AnyVal {
+      
+      inline def setFormatting(value: Boolean): Self = StObject.set(x, "formatting", value.asInstanceOf[js.Any])
+      
+      inline def setFormattingUndefined: Self = StObject.set(x, "formatting", js.undefined)
+      
+      inline def setSubdocs(value: Boolean): Self = StObject.set(x, "subdocs", value.asInstanceOf[js.Any])
+      
+      inline def setSubdocsUndefined: Self = StObject.set(x, "subdocs", js.undefined)
+      
+      inline def setYxml(value: Boolean): Self = StObject.set(x, "yxml", value.asInstanceOf[js.Any])
+      
+      inline def setYxmlUndefined: Self = StObject.set(x, "yxml", js.undefined)
+    }
+  }
 }

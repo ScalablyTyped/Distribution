@@ -4,10 +4,11 @@ import typings.awsSdkSignatureV4.anon.HttpRequestqueryQueryPara
 import typings.awsSdkSignatureV4.anon.UnhoistableHeaders
 import typings.awsSdkSignatureV4.distTypesSignatureV4Mod.SignatureV4CryptoInit
 import typings.awsSdkSignatureV4.distTypesSignatureV4Mod.SignatureV4Init
-import typings.awsSdkTypes.distTypesCredentialsMod.Credentials
+import typings.awsSdkTypes.distTypesChecksumMod.ChecksumConstructor
 import typings.awsSdkTypes.distTypesCryptoMod.HashConstructor
 import typings.awsSdkTypes.distTypesHttpMod.HeaderBag
 import typings.awsSdkTypes.distTypesHttpMod.HttpRequest
+import typings.awsSdkTypes.distTypesIdentityAwsCredentialIdentityMod.AwsCredentialIdentity
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -37,11 +38,19 @@ object mod {
   
   inline def getCanonicalQuery(param0: HttpRequest): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCanonicalQuery")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
   
+  inline def getPayloadHash(param0: HttpRequest, hashConstructor: ChecksumConstructor): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPayloadHash")(param0.asInstanceOf[js.Any], hashConstructor.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   inline def getPayloadHash(param0: HttpRequest, hashConstructor: HashConstructor): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPayloadHash")(param0.asInstanceOf[js.Any], hashConstructor.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   inline def getSigningKey(
+    sha256Constructor: ChecksumConstructor,
+    credentials: AwsCredentialIdentity,
+    shortDate: String,
+    region: String,
+    service: String
+  ): js.Promise[js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSigningKey")(sha256Constructor.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], shortDate.asInstanceOf[js.Any], region.asInstanceOf[js.Any], service.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
+  inline def getSigningKey(
     sha256Constructor: HashConstructor,
-    credentials: Credentials,
+    credentials: AwsCredentialIdentity,
     shortDate: String,
     region: String,
     service: String

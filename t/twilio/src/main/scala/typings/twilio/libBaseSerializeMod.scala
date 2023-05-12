@@ -1,5 +1,6 @@
 package typings.twilio
 
+import typings.twilio.libTwimlTwiMLMod.default
 import typings.twilio.twilioStrings.`false`
 import typings.twilio.twilioStrings.`true`
 import org.scalablytyped.runtime.StObject
@@ -12,35 +13,24 @@ object libBaseSerializeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def bool(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bool")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def bool(input: Boolean): `true` | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("bool")(input.asInstanceOf[js.Any]).asInstanceOf[`true` | `false`]
+  inline def bool(input: String): String | `true` | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("bool")(input.asInstanceOf[js.Any]).asInstanceOf[String | `true` | `false`]
+  inline def bool(input: Boolean): String | `true` | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("bool")(input.asInstanceOf[js.Any]).asInstanceOf[String | `true` | `false`]
   
-  inline def iso8601Date(date: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("iso8601Date")(date.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def iso8601Date[T](data: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("iso8601Date")(data.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def iso8601Date[T](date: T): T | String = ^.asInstanceOf[js.Dynamic].applyDynamic("iso8601Date")(date.asInstanceOf[js.Any]).asInstanceOf[T | String]
+  inline def iso8601Date[T](date: js.Date): T | String = ^.asInstanceOf[js.Dynamic].applyDynamic("iso8601Date")(date.asInstanceOf[js.Any]).asInstanceOf[T | String]
   
-  inline def iso8601DateTime(date: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("iso8601DateTime")(date.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def iso8601DateTime[T](data: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("iso8601DateTime")(data.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def iso8601DateTime[T](date: T): T | String = ^.asInstanceOf[js.Dynamic].applyDynamic("iso8601DateTime")(date.asInstanceOf[js.Any]).asInstanceOf[T | String]
+  inline def iso8601DateTime[T](date: js.Date): T | String = ^.asInstanceOf[js.Dynamic].applyDynamic("iso8601DateTime")(date.asInstanceOf[js.Any]).asInstanceOf[T | String]
   
-  inline def map[T](input: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(input.asInstanceOf[js.Any]).asInstanceOf[T]
-  inline def map[T](input: T, transform: Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(input.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def map[TInput, TOutput](input: js.Array[TInput], transform: MapFunction[TInput, TOutput]): js.Array[TOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(input.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[js.Array[TOutput]]
   
-  inline def `object`(o: js.Array[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("object")(o.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def `object`(o: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("object")(o.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def `object`[T](o: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("object")(o.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  inline def prefixedCollapsibleMap[T](m: T): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("prefixedCollapsibleMap")(m.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-  inline def prefixedCollapsibleMap[T](m: T, prefix: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("prefixedCollapsibleMap")(m.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def prefixedCollapsibleMap[T /* <: js.Object */](m: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("prefixedCollapsibleMap")(m.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def prefixedCollapsibleMap[T /* <: js.Object */](m: T, prefix: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prefixedCollapsibleMap")(m.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  inline def prefixedCollapsibleMap_T_T[T /* <: js.Object */](m: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("prefixedCollapsibleMap")(m.asInstanceOf[js.Any]).asInstanceOf[T]
-  inline def prefixedCollapsibleMap_T_T[T /* <: js.Object */](m: T, prefix: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prefixedCollapsibleMap")(m.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def twiml(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("twiml")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def twiml(input: default): String = ^.asInstanceOf[js.Dynamic].applyDynamic("twiml")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  /**
-    * Maps transform over each element in input if input is an array
-    *
-    * @param input array to map transform over, if not an array then it is
-    * returned as is.
-    * @returns new array with transform applied to each element.
-    */
   type MapFunction[TInput, TOutput] = js.Function1[/* input */ TInput, TOutput]
 }

@@ -1,85 +1,50 @@
 package typings.twilio
 
+import typings.twilio.anon.DataEnabled
 import typings.twilio.libBasePageMod.TwilioResponsePayload
-import typings.twilio.libInterfacesMod.SerializableClass
+import typings.twilio.libRestPreviewWirelessMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libRestPreviewWirelessRatePlanMod {
   
-  @JSImport("twilio/lib/rest/preview/wireless/ratePlan", JSImport.Namespace)
+  @JSImport("twilio/lib/rest/preview/wireless/ratePlan", "RatePlanContextImpl")
   @js.native
-  val ^ : js.Any = js.native
-  
-  @JSImport("twilio/lib/rest/preview/wireless/ratePlan", "RatePlanContext")
-  @js.native
-  open class RatePlanContext protected () extends StObject {
-    /**
-      * Initialize the RatePlanContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param sid - The sid
-      */
-    def this(version: typings.twilio.libRestPreviewWirelessMod.^, sid: String) = this()
+  open class RatePlanContextImpl protected ()
+    extends StObject
+       with RatePlanContext {
+    def this(_version: default, sid: String) = this()
     
-    /**
-      * fetch a RatePlanInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def fetch(): js.Promise[RatePlanInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ RatePlanInstance, Any]): js.Promise[RatePlanInstance] = js.native
+    /* protected */ var _solution: RatePlanContextSolution = js.native
     
-    /**
-      * remove a RatePlanInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def remove(): js.Promise[Boolean] = js.native
-    def remove(callback: js.Function2[/* error */ js.Error | Null, /* items */ RatePlanInstance, Any]): js.Promise[Boolean] = js.native
+    /* protected */ var _uri: String = js.native
     
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
+    /* protected */ var _version: default = js.native
     
-    /**
-      * update a RatePlanInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def update(): js.Promise[RatePlanInstance] = js.native
-    def update(callback: js.Function2[/* error */ js.Error | Null, /* items */ RatePlanInstance, Any]): js.Promise[RatePlanInstance] = js.native
-    def update(opts: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ RatePlanInstance, Any]): js.Promise[RatePlanInstance] = js.native
-    def update(opts: RatePlanInstanceUpdateOptions): js.Promise[RatePlanInstance] = js.native
     def update(
-      opts: RatePlanInstanceUpdateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ RatePlanInstance, Any]
+      params: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[RatePlanInstance], Any],
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[RatePlanInstance], Any]
+    ): js.Promise[RatePlanInstance] = js.native
+    def update(
+      params: Unit,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[RatePlanInstance], Any]
     ): js.Promise[RatePlanInstance] = js.native
   }
   
   @JSImport("twilio/lib/rest/preview/wireless/ratePlan", "RatePlanInstance")
   @js.native
-  open class RatePlanInstance protected () extends SerializableClass {
-    /**
-      * Initialize the RatePlanContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param payload - The instance payload
-      * @param sid - The sid
-      */
-    def this(version: typings.twilio.libRestPreviewWirelessMod.^, payload: RatePlanPayload, sid: String) = this()
+  open class RatePlanInstance protected () extends StObject {
+    def this(_version: default, payload: RatePlanResource) = this()
+    def this(_version: default, payload: RatePlanResource, sid: String) = this()
     
-    /* private */ var _proxy: RatePlanContext = js.native
+    /* protected */ var _context: js.UndefOr[RatePlanContext] = js.native
+    
+    /* private */ def _proxy: Any = js.native
+    
+    /* protected */ var _solution: RatePlanContextSolution = js.native
+    
+    /* protected */ var _version: default = js.native
     
     var accountSid: String = js.native
     
@@ -94,12 +59,14 @@ object libRestPreviewWirelessRatePlanMod {
     var dateUpdated: js.Date = js.native
     
     /**
-      * fetch a RatePlanInstance
+      * Fetch a RatePlanInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed RatePlanInstance
       */
     def fetch(): js.Promise[RatePlanInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[RatePlanInstance] = js.native
+    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]): js.Promise[RatePlanInstance] = js.native
     
     var friendlyName: String = js.native
     
@@ -110,29 +77,47 @@ object libRestPreviewWirelessRatePlanMod {
     var nationalRoamingEnabled: Boolean = js.native
     
     /**
-      * remove a RatePlanInstance
+      * Remove a RatePlanInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed boolean
       */
     def remove(): js.Promise[Boolean] = js.native
-    def remove(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[Boolean] = js.native
+    def remove(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any]): js.Promise[Boolean] = js.native
     
     var sid: String = js.native
+    
+    /**
+      * Provide a user-friendly representation
+      *
+      * @returns Object
+      */
+    def toJSON(): DataEnabled = js.native
     
     var uniqueName: String = js.native
     
     /**
-      * update a RatePlanInstance
+      * Update a RatePlanInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed RatePlanInstance
       */
     def update(): js.Promise[RatePlanInstance] = js.native
-    def update(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[RatePlanInstance] = js.native
-    def update(opts: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[RatePlanInstance] = js.native
-    def update(opts: RatePlanInstanceUpdateOptions): js.Promise[RatePlanInstance] = js.native
+    def update(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]): js.Promise[RatePlanInstance] = js.native
+    /**
+      * Update a RatePlanInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed RatePlanInstance
+      */
+    def update(params: RatePlanContextUpdateOptions): js.Promise[RatePlanInstance] = js.native
     def update(
-      opts: RatePlanInstanceUpdateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]
+      params: RatePlanContextUpdateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]
     ): js.Promise[RatePlanInstance] = js.native
     
     var url: String = js.native
@@ -140,108 +125,38 @@ object libRestPreviewWirelessRatePlanMod {
     var voiceEnabled: Boolean = js.native
   }
   
-  /**
-    * Initialize the RatePlanList
-    *
-    * PLEASE NOTE that this class contains preview products that are subject to
-    * change. Use them with caution. If you currently do not have developer preview
-    * access, please contact help@twilio.com.
-    *
-    * @param version - Version of the resource
-    */
-  inline def RatePlanList(version: typings.twilio.libRestPreviewWirelessMod.^): RatePlanListInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("RatePlanList")(version.asInstanceOf[js.Any]).asInstanceOf[RatePlanListInstance]
-  
-  @JSImport("twilio/lib/rest/preview/wireless/ratePlan", "RatePlanPage")
-  @js.native
-  open class RatePlanPage protected ()
-    extends typings.twilio.libBasePageMod.^[
-          typings.twilio.libRestPreviewWirelessMod.^, 
-          RatePlanPayload, 
-          RatePlanResource, 
-          RatePlanInstance
-        ] {
-    /**
-      * Initialize the RatePlanPage
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param response - Response from the API
-      * @param solution - Path solution
-      */
-    def this(
-      version: typings.twilio.libRestPreviewWirelessMod.^,
-      response: typings.twilio.libHttpResponseMod.^[String],
-      solution: RatePlanSolution
-    ) = this()
-    
-    /**
-      * Build an instance of RatePlanInstance
-      *
-      * @param payload - Payload response from the API
-      */
-    def getInstance(payload: RatePlanPayload): RatePlanInstance = js.native
-    
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
-  }
-  
-  /**
-    * Options to pass to update
-    *
-    * @property friendlyName - The friendly_name
-    * @property uniqueName - The unique_name
-    */
-  trait RatePlanInstanceUpdateOptions extends StObject {
-    
-    var friendlyName: js.UndefOr[String] = js.undefined
-    
-    var uniqueName: js.UndefOr[String] = js.undefined
-  }
-  object RatePlanInstanceUpdateOptions {
-    
-    inline def apply(): RatePlanInstanceUpdateOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[RatePlanInstanceUpdateOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: RatePlanInstanceUpdateOptions] (val x: Self) extends AnyVal {
-      
-      inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
-      
-      inline def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
-      
-      inline def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
-      
-      inline def setUniqueNameUndefined: Self = StObject.set(x, "uniqueName", js.undefined)
-    }
-  }
-  
   @js.native
   trait RatePlanListInstance extends StObject {
     
-    /**
-      * @param sid - sid of instance
-      */
     def apply(sid: String): RatePlanContext = js.native
     
+    var _solution: RatePlanSolution = js.native
+    
+    var _uri: String = js.native
+    
+    var _version: default = js.native
+    
     /**
-      * create a RatePlanInstance
+      * Create a RatePlanInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed RatePlanInstance
       */
     def create(): js.Promise[RatePlanInstance] = js.native
-    def create(callback: js.Function2[/* error */ js.Error | Null, /* item */ RatePlanInstance, Any]): js.Promise[RatePlanInstance] = js.native
-    def create(opts: Unit, callback: js.Function2[/* error */ js.Error | Null, /* item */ RatePlanInstance, Any]): js.Promise[RatePlanInstance] = js.native
-    def create(opts: RatePlanListInstanceCreateOptions): js.Promise[RatePlanInstance] = js.native
+    def create(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[RatePlanInstance], Any]): js.Promise[RatePlanInstance] = js.native
+    /**
+      * Create a RatePlanInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed RatePlanInstance
+      */
+    def create(params: RatePlanListInstanceCreateOptions): js.Promise[RatePlanInstance] = js.native
     def create(
-      opts: RatePlanListInstanceCreateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* item */ RatePlanInstance, Any]
+      params: RatePlanListInstanceCreateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[RatePlanInstance], Any]
     ): js.Promise[RatePlanInstance] = js.native
     
     /**
@@ -256,7 +171,8 @@ object libRestPreviewWirelessRatePlanMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Function to process each record
+      * @param { RatePlanListInstanceEachOptions } [params] - Options for request
+      * @param { function } [callback] - Function to process each record
       */
     def each(): Unit = js.native
     def each(
@@ -266,17 +182,9 @@ object libRestPreviewWirelessRatePlanMod {
           Unit
         ]
     ): Unit = js.native
+    def each(params: RatePlanListInstanceEachOptions): Unit = js.native
     def each(
-      opts: Unit,
-      callback: js.Function2[
-          /* item */ RatePlanInstance, 
-          /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
-          Unit
-        ]
-    ): Unit = js.native
-    def each(opts: RatePlanListInstanceEachOptions): Unit = js.native
-    def each(
-      opts: RatePlanListInstanceEachOptions,
+      params: RatePlanListInstanceEachOptions,
       callback: js.Function2[
           /* item */ RatePlanInstance, 
           /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
@@ -284,11 +192,6 @@ object libRestPreviewWirelessRatePlanMod {
         ]
     ): Unit = js.native
     
-    /**
-      * Constructs a rate_plan
-      *
-      * @param sid - The sid
-      */
     def get(sid: String): RatePlanContext = js.native
     
     /**
@@ -296,20 +199,12 @@ object libRestPreviewWirelessRatePlanMod {
       *
       * The request is executed immediately.
       *
-      * If a function is passed as the first argument, it will be used as the callback
-      * function.
-      *
-      * @param callback - Callback to handle list of records
+      * @param { string } [targetUrl] - API-generated URL for the requested results page
+      * @param { function } [callback] - Callback to handle list of records
       */
-    def getPage(): js.Promise[RatePlanPage] = js.native
-    def getPage(callback: js.Function2[/* error */ js.Error | Null, /* items */ RatePlanPage, Any]): js.Promise[RatePlanPage] = js.native
     def getPage(targetUrl: String): js.Promise[RatePlanPage] = js.native
     def getPage(
       targetUrl: String,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ RatePlanPage, Any]
-    ): js.Promise[RatePlanPage] = js.native
-    def getPage(
-      targetUrl: Unit,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ RatePlanPage, Any]
     ): js.Promise[RatePlanPage] = js.native
     
@@ -319,17 +214,14 @@ object libRestPreviewWirelessRatePlanMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { RatePlanListInstanceOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def list(): js.Promise[js.Array[RatePlanInstance]] = js.native
     def list(callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[RatePlanInstance], Any]): js.Promise[js.Array[RatePlanInstance]] = js.native
+    def list(params: RatePlanListInstanceOptions): js.Promise[js.Array[RatePlanInstance]] = js.native
     def list(
-      opts: Unit,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[RatePlanInstance], Any]
-    ): js.Promise[js.Array[RatePlanInstance]] = js.native
-    def list(opts: RatePlanListInstanceOptions): js.Promise[js.Array[RatePlanInstance]] = js.native
-    def list(
-      opts: RatePlanListInstanceOptions,
+      params: RatePlanListInstanceOptions,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[RatePlanInstance], Any]
     ): js.Promise[js.Array[RatePlanInstance]] = js.native
     
@@ -341,14 +233,14 @@ object libRestPreviewWirelessRatePlanMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { RatePlanListInstancePageOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def page(): js.Promise[RatePlanPage] = js.native
     def page(callback: js.Function2[/* error */ js.Error | Null, /* items */ RatePlanPage, Any]): js.Promise[RatePlanPage] = js.native
-    def page(opts: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ RatePlanPage, Any]): js.Promise[RatePlanPage] = js.native
-    def page(opts: RatePlanListInstancePageOptions): js.Promise[RatePlanPage] = js.native
+    def page(params: RatePlanListInstancePageOptions): js.Promise[RatePlanPage] = js.native
     def page(
-      opts: RatePlanListInstancePageOptions,
+      params: RatePlanListInstancePageOptions,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ RatePlanPage, Any]
     ): js.Promise[RatePlanPage] = js.native
     
@@ -357,41 +249,166 @@ object libRestPreviewWirelessRatePlanMod {
       */
     def toJSON(): Any = js.native
   }
+  object RatePlanListInstance {
+    
+    @JSImport("twilio/lib/rest/preview/wireless/ratePlan", "RatePlanListInstance")
+    @js.native
+    def apply(version: default): RatePlanListInstance = js.native
+  }
   
-  /**
-    * Options to pass to create
-    *
-    * @property commandsEnabled - The commands_enabled
-    * @property dataEnabled - The data_enabled
-    * @property dataLimit - The data_limit
-    * @property dataMetering - The data_metering
-    * @property friendlyName - The friendly_name
-    * @property internationalRoaming - The international_roaming
-    * @property messagingEnabled - The messaging_enabled
-    * @property nationalRoamingEnabled - The national_roaming_enabled
-    * @property uniqueName - The unique_name
-    * @property voiceEnabled - The voice_enabled
-    */
-  trait RatePlanListInstanceCreateOptions extends StObject {
+  @JSImport("twilio/lib/rest/preview/wireless/ratePlan", "RatePlanPage")
+  @js.native
+  open class RatePlanPage protected ()
+    extends typings.twilio.libBasePageMod.default[default, RatePlanPayload, RatePlanResource, RatePlanInstance] {
+    /**
+      * Initialize the RatePlanPage
+      *
+      * @param version - Version of the resource
+      * @param response - Response from the API
+      * @param solution - Path solution
+      */
+    def this(
+      version: default,
+      response: typings.twilio.libHttpResponseMod.default[String],
+      solution: RatePlanSolution
+    ) = this()
     
-    var commandsEnabled: js.UndefOr[Boolean] = js.undefined
+    /**
+      * Build an instance of RatePlanInstance
+      *
+      * @param payload - Payload response from the API
+      */
+    def getInstance(payload: RatePlanResource): RatePlanInstance = js.native
+  }
+  
+  @js.native
+  trait RatePlanContext extends StObject {
     
-    var dataEnabled: js.UndefOr[Boolean] = js.undefined
+    /**
+      * Fetch a RatePlanInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed RatePlanInstance
+      */
+    def fetch(): js.Promise[RatePlanInstance] = js.native
+    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[RatePlanInstance], Any]): js.Promise[RatePlanInstance] = js.native
     
-    var dataLimit: js.UndefOr[Double] = js.undefined
+    /**
+      * Remove a RatePlanInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed boolean
+      */
+    def remove(): js.Promise[Boolean] = js.native
+    def remove(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any]): js.Promise[Boolean] = js.native
     
-    var dataMetering: js.UndefOr[String] = js.undefined
+    /**
+      * Provide a user-friendly representation
+      */
+    def toJSON(): Any = js.native
     
+    /**
+      * Update a RatePlanInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed RatePlanInstance
+      */
+    def update(): js.Promise[RatePlanInstance] = js.native
+    def update(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[RatePlanInstance], Any]): js.Promise[RatePlanInstance] = js.native
+    /**
+      * Update a RatePlanInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed RatePlanInstance
+      */
+    def update(params: RatePlanContextUpdateOptions): js.Promise[RatePlanInstance] = js.native
+    def update(
+      params: RatePlanContextUpdateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[RatePlanInstance], Any]
+    ): js.Promise[RatePlanInstance] = js.native
+  }
+  
+  trait RatePlanContextSolution extends StObject {
+    
+    var sid: String
+  }
+  object RatePlanContextSolution {
+    
+    inline def apply(sid: String): RatePlanContextSolution = {
+      val __obj = js.Dynamic.literal(sid = sid.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RatePlanContextSolution]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RatePlanContextSolution] (val x: Self) extends AnyVal {
+      
+      inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait RatePlanContextUpdateOptions extends StObject {
+    
+    /**  */
     var friendlyName: js.UndefOr[String] = js.undefined
     
-    var internationalRoaming: js.UndefOr[String | js.Array[String]] = js.undefined
+    /**  */
+    var uniqueName: js.UndefOr[String] = js.undefined
+  }
+  object RatePlanContextUpdateOptions {
     
+    inline def apply(): RatePlanContextUpdateOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[RatePlanContextUpdateOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RatePlanContextUpdateOptions] (val x: Self) extends AnyVal {
+      
+      inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
+      
+      inline def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
+      
+      inline def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
+      
+      inline def setUniqueNameUndefined: Self = StObject.set(x, "uniqueName", js.undefined)
+    }
+  }
+  
+  trait RatePlanListInstanceCreateOptions extends StObject {
+    
+    /**  */
+    var commandsEnabled: js.UndefOr[Boolean] = js.undefined
+    
+    /**  */
+    var dataEnabled: js.UndefOr[Boolean] = js.undefined
+    
+    /**  */
+    var dataLimit: js.UndefOr[Double] = js.undefined
+    
+    /**  */
+    var dataMetering: js.UndefOr[String] = js.undefined
+    
+    /**  */
+    var friendlyName: js.UndefOr[String] = js.undefined
+    
+    /**  */
+    var internationalRoaming: js.UndefOr[js.Array[String]] = js.undefined
+    
+    /**  */
     var messagingEnabled: js.UndefOr[Boolean] = js.undefined
     
+    /**  */
     var nationalRoamingEnabled: js.UndefOr[Boolean] = js.undefined
     
+    /**  */
     var uniqueName: js.UndefOr[String] = js.undefined
     
+    /**  */
     var voiceEnabled: js.UndefOr[Boolean] = js.undefined
   }
   object RatePlanListInstanceCreateOptions {
@@ -424,7 +441,7 @@ object libRestPreviewWirelessRatePlanMod {
       
       inline def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
       
-      inline def setInternationalRoaming(value: String | js.Array[String]): Self = StObject.set(x, "internationalRoaming", value.asInstanceOf[js.Any])
+      inline def setInternationalRoaming(value: js.Array[String]): Self = StObject.set(x, "internationalRoaming", value.asInstanceOf[js.Any])
       
       inline def setInternationalRoamingUndefined: Self = StObject.set(x, "internationalRoaming", js.undefined)
       
@@ -448,26 +465,9 @@ object libRestPreviewWirelessRatePlanMod {
     }
   }
   
-  /**
-    * Options to pass to each
-    *
-    * @property callback -
-    *                         Function to process each record. If this and a positional
-    *                         callback are passed, this one will be used
-    * @property done - Function to be called upon completion of streaming
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         each() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no pageSize is defined but a limit is defined,
-    *                         each() will attempt to read the limit with the most efficient
-    *                         page size, i.e. min(limit, 1000)
-    */
   trait RatePlanListInstanceEachOptions extends StObject {
     
+    /** Function to process each record. If this and a positional callback are passed, this one will be used */
     var callback: js.UndefOr[
         js.Function2[
           /* item */ RatePlanInstance, 
@@ -476,10 +476,13 @@ object libRestPreviewWirelessRatePlanMod {
         ]
       ] = js.undefined
     
+    /** Function to be called upon completion of streaming */
     var done: js.UndefOr[js.Function] = js.undefined
     
+    /** Upper limit for the number of records to return. each() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
   }
   object RatePlanListInstanceEachOptions {
@@ -512,24 +515,12 @@ object libRestPreviewWirelessRatePlanMod {
     }
   }
   
-  /**
-    * Options to pass to list
-    *
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         list() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no page_size is defined but a limit is defined,
-    *                         list() will attempt to read the limit with the most
-    *                         efficient page size, i.e. min(limit, 1000)
-    */
   trait RatePlanListInstanceOptions extends StObject {
     
+    /** Upper limit for the number of records to return. list() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
   }
   object RatePlanListInstanceOptions {
@@ -552,19 +543,15 @@ object libRestPreviewWirelessRatePlanMod {
     }
   }
   
-  /**
-    * Options to pass to page
-    *
-    * @property pageNumber - Page Number, this value is simply for client state
-    * @property pageSize - Number of records to return, defaults to 50
-    * @property pageToken - PageToken provided by the API
-    */
   trait RatePlanListInstancePageOptions extends StObject {
     
+    /** Page Number, this value is simply for client state */
     var pageNumber: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
     
+    /** PageToken provided by the API */
     var pageToken: js.UndefOr[String] = js.undefined
   }
   object RatePlanListInstancePageOptions {
@@ -593,34 +580,31 @@ object libRestPreviewWirelessRatePlanMod {
   
   trait RatePlanPayload
     extends StObject
-       with RatePlanResource
-       with TwilioResponsePayload
+       with TwilioResponsePayload {
+    
+    var rate_plans: js.Array[RatePlanResource]
+  }
   object RatePlanPayload {
     
     inline def apply(
-      account_sid: String,
-      data_enabled: Boolean,
-      data_limit: Double,
-      data_metering: String,
-      date_created: js.Date,
-      date_updated: js.Date,
       first_page_uri: String,
-      friendly_name: String,
-      international_roaming: js.Array[String],
-      messaging_enabled: Boolean,
-      national_roaming_enabled: Boolean,
       next_page_uri: String,
       page: Double,
       page_size: Double,
       previous_page_uri: String,
-      sid: String,
-      unique_name: String,
-      uri: String,
-      url: String,
-      voice_enabled: Boolean
+      rate_plans: js.Array[RatePlanResource],
+      uri: String
     ): RatePlanPayload = {
-      val __obj = js.Dynamic.literal(account_sid = account_sid.asInstanceOf[js.Any], data_enabled = data_enabled.asInstanceOf[js.Any], data_limit = data_limit.asInstanceOf[js.Any], data_metering = data_metering.asInstanceOf[js.Any], date_created = date_created.asInstanceOf[js.Any], date_updated = date_updated.asInstanceOf[js.Any], first_page_uri = first_page_uri.asInstanceOf[js.Any], friendly_name = friendly_name.asInstanceOf[js.Any], international_roaming = international_roaming.asInstanceOf[js.Any], messaging_enabled = messaging_enabled.asInstanceOf[js.Any], national_roaming_enabled = national_roaming_enabled.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any], unique_name = unique_name.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], voice_enabled = voice_enabled.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(first_page_uri = first_page_uri.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], rate_plans = rate_plans.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[RatePlanPayload]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RatePlanPayload] (val x: Self) extends AnyVal {
+      
+      inline def setRate_plans(value: js.Array[RatePlanResource]): Self = StObject.set(x, "rate_plans", value.asInstanceOf[js.Any])
+      
+      inline def setRate_plansVarargs(value: RatePlanResource*): Self = StObject.set(x, "rate_plans", js.Array(value*))
     }
   }
   

@@ -1,31 +1,43 @@
 package typings.redisClient.anon
 
-import typings.redisClient.distLibCommandOptionsMod.CommandOptions_
-import typings.redisClient.distLibCommandsMod.RedisCommandArguments
+import typings.redisClient.distLibCommandsMod.RedisCommandArgument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Args[T] extends StObject {
+trait Args extends StObject {
   
-  var args: RedisCommandArguments
+  var args: js.Array[RedisCommandArgument]
   
-  var options: js.UndefOr[CommandOptions_[T]] = js.undefined
+  var channelsCounter: Double
+  
+  def reject(): Unit
+  
+  def resolve(): Unit
 }
 object Args {
   
-  inline def apply[T](args: RedisCommandArguments): Args[T] = {
-    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Args[T]]
+  inline def apply(
+    args: js.Array[RedisCommandArgument],
+    channelsCounter: Double,
+    reject: () => Unit,
+    resolve: () => Unit
+  ): Args = {
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], channelsCounter = channelsCounter.asInstanceOf[js.Any], reject = js.Any.fromFunction0(reject), resolve = js.Any.fromFunction0(resolve))
+    __obj.asInstanceOf[Args]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: Args[?], T] (val x: Self & Args[T]) extends AnyVal {
+  implicit open class MutableBuilder[Self <: Args] (val x: Self) extends AnyVal {
     
-    inline def setArgs(value: RedisCommandArguments): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[RedisCommandArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    inline def setOptions(value: CommandOptions_[T]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setArgsVarargs(value: RedisCommandArgument*): Self = StObject.set(x, "args", js.Array(value*))
     
-    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setChannelsCounter(value: Double): Self = StObject.set(x, "channelsCounter", value.asInstanceOf[js.Any])
+    
+    inline def setReject(value: () => Unit): Self = StObject.set(x, "reject", js.Any.fromFunction0(value))
+    
+    inline def setResolve(value: () => Unit): Self = StObject.set(x, "resolve", js.Any.fromFunction0(value))
   }
 }

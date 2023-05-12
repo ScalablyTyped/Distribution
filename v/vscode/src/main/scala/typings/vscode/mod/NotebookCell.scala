@@ -8,40 +8,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NotebookCell extends StObject {
   
   /**
-    * The {@link TextDocument text} of this cell, represented as text document.
-    */
+  		 * The {@link TextDocument text} of this cell, represented as text document.
+  		 */
   val document: TextDocument
   
   /**
-    * The most recent {@link NotebookCellExecutionSummary execution summary} for this cell.
-    */
+  		 * The most recent {@link NotebookCellExecutionSummary execution summary} for this cell.
+  		 */
   val executionSummary: js.UndefOr[NotebookCellExecutionSummary] = js.undefined
   
   /**
-    * The index of this cell in its {@link NotebookDocument.cellAt containing notebook}. The
-    * index is updated when a cell is moved within its notebook. The index is `-1`
-    * when the cell has been removed from its notebook.
-    */
+  		 * The index of this cell in its {@link NotebookDocument.cellAt containing notebook}. The
+  		 * index is updated when a cell is moved within its notebook. The index is `-1`
+  		 * when the cell has been removed from its notebook.
+  		 */
   val index: Double
   
   /**
-    * The kind of this cell.
-    */
+  		 * The kind of this cell.
+  		 */
   val kind: NotebookCellKind
   
   /**
-    * The metadata of this cell. Can be anything but must be JSON-stringifyable.
-    */
+  		 * The metadata of this cell. Can be anything but must be JSON-stringifyable.
+  		 */
   val metadata: StringDictionary[Any]
   
   /**
-    * The {@link NotebookDocument notebook} that contains this cell.
-    */
+  		 * The {@link NotebookDocument notebook} that contains this cell.
+  		 */
   val notebook: NotebookDocument
   
   /**
-    * The outputs of this cell.
-    */
+  		 * The outputs of this cell.
+  		 */
   val outputs: js.Array[NotebookCellOutput]
 }
 object NotebookCell {

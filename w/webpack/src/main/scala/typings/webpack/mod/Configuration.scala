@@ -86,6 +86,11 @@ trait Configuration extends StObject {
   var experiments: js.UndefOr[Experiments_] = js.undefined
   
   /**
+  	 * Extend configuration from another configuration (only works when using webpack-cli).
+  	 */
+  var `extends`: js.UndefOr[String | js.Array[String]] = js.undefined
+  
+  /**
   	 * Specify dependencies that shouldn't be resolved by webpack, but should become dependencies of the resulting bundle. The kind of the dependency depends on `output.libraryTarget`.
   	 */
   var externals: js.UndefOr[
@@ -286,6 +291,12 @@ object Configuration {
     inline def setExperiments(value: Experiments_): Self = StObject.set(x, "experiments", value.asInstanceOf[js.Any])
     
     inline def setExperimentsUndefined: Self = StObject.set(x, "experiments", js.undefined)
+    
+    inline def setExtends(value: String | js.Array[String]): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
+    
+    inline def setExtendsUndefined: Self = StObject.set(x, "extends", js.undefined)
+    
+    inline def setExtendsVarargs(value: String*): Self = StObject.set(x, "extends", js.Array(value*))
     
     inline def setExternals(
       value: String | js.RegExp | js.Array[ExternalItem] | (ExternalItemObjectKnown & ExternalItemObjectUnknown) | (js.Function2[

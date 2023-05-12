@@ -12,12 +12,12 @@ trait DeliveryStreamEncryptionConfiguration extends StObject {
   var FailureDescription: js.UndefOr[typings.awsSdk.clientsFirehoseMod.FailureDescription] = js.undefined
   
   /**
-    * If KeyType is CUSTOMER_MANAGED_CMK, this field contains the ARN of the customer managed CMK. If KeyType is AWS_OWNED_CMK, DeliveryStreamEncryptionConfiguration doesn't contain a value for KeyARN.
+    * If KeyType is CUSTOMER_MANAGED_CMK, this field contains the ARN of the customer managed CMK. If KeyType is Amazon Web Services_OWNED_CMK, DeliveryStreamEncryptionConfiguration doesn't contain a value for KeyARN.
     */
   var KeyARN: js.UndefOr[AWSKMSKeyARN] = js.undefined
   
   /**
-    * Indicates the type of customer master key (CMK) that is used for encryption. The default setting is AWS_OWNED_CMK. For more information about CMKs, see Customer Master Keys (CMKs).
+    * Indicates the type of customer master key (CMK) that is used for encryption. The default setting is Amazon Web Services_OWNED_CMK. For more information about CMKs, see Customer Master Keys (CMKs).
     */
   var KeyType: js.UndefOr[typings.awsSdk.clientsFirehoseMod.KeyType] = js.undefined
   

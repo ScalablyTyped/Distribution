@@ -1,10 +1,10 @@
 package typings.libp2pKadDht
 
 import typings.interfaceDatastore.mod.Datastore
-import typings.libp2pInterfaceDht.mod.Validators
 import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pKadDht.distSrcMessageMod.Message
 import typings.libp2pKadDht.distSrcRpcMod.DHTMessageHandler
+import typings.libp2pKadDht.mod.Validators
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,11 +30,35 @@ object distSrcRpcHandlersPutValueMod {
   
   trait PutValueHandlerComponents extends StObject {
     
-    var datastore: Datastore
+    var datastore: Datastore[
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object, 
+        js.Object
+      ]
   }
   object PutValueHandlerComponents {
     
-    inline def apply(datastore: Datastore): PutValueHandlerComponents = {
+    inline def apply(
+      datastore: Datastore[
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object
+        ]
+    ): PutValueHandlerComponents = {
       val __obj = js.Dynamic.literal(datastore = datastore.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutValueHandlerComponents]
     }
@@ -42,7 +66,20 @@ object distSrcRpcHandlersPutValueMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: PutValueHandlerComponents] (val x: Self) extends AnyVal {
       
-      inline def setDatastore(value: Datastore): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
+      inline def setDatastore(
+        value: Datastore[
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object, 
+              js.Object
+            ]
+      ): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
     }
   }
   

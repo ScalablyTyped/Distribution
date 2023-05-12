@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListDatabasesOutput extends StObject {
   
   /**
-    * 
+    * The SAP HANA databases of an application.
     */
   var Databases: js.UndefOr[DatabaseSummaryList] = js.undefined
   
   /**
-    * 
+    * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
     */
   var NextToken: js.UndefOr[typings.awsSdk.clientsSsmsapMod.NextToken] = js.undefined
 }

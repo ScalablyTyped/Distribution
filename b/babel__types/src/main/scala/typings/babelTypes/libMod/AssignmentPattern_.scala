@@ -18,6 +18,8 @@ trait AssignmentPattern_
   
   var left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression__ | TSSatisfiesExpression__ | TSTypeAssertion__ | TSNonNullExpression__
   
+  var optional: js.UndefOr[Boolean | Null] = js.undefined
+  
   var right: Expression
   
   var typeAnnotation: js.UndefOr[TypeAnnotation_ | TSTypeAnnotation__ | Noop_ | Null] = js.undefined
@@ -50,6 +52,12 @@ object AssignmentPattern_ {
     inline def setLeft(
       value: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression__ | TSSatisfiesExpression__ | TSTypeAssertion__ | TSNonNullExpression__
     ): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    
+    inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    
+    inline def setOptionalNull: Self = StObject.set(x, "optional", null)
+    
+    inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
     
     inline def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     

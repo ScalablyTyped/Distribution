@@ -15,7 +15,15 @@ trait OpenDirOptions extends StObject {
     */
   var bufferSize: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @default 'utf8'
+    */
   var encoding: js.UndefOr[BufferEncoding] = js.undefined
+  
+  /**
+    * @default false
+    */
+  var recursive: js.UndefOr[Boolean] = js.undefined
 }
 object OpenDirOptions {
   
@@ -34,5 +42,9 @@ object OpenDirOptions {
     inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    
+    inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    
+    inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
   }
 }

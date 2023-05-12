@@ -1,6 +1,12 @@
 package typings.pixiAssets
 
 import typings.pixiAssets.libLoaderParsersLoaderParserMod.LoaderParser
+import typings.pixiAssets.pixiAssetsStrings.loadJson
+import typings.pixiAssets.pixiAssetsStrings.loadSVG
+import typings.pixiAssets.pixiAssetsStrings.loadTextures
+import typings.pixiAssets.pixiAssetsStrings.loadTxt
+import typings.pixiAssets.pixiAssetsStrings.loadWebFont
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,12 +15,19 @@ object libLoaderTypesMod {
   
   trait LoadAsset[T] extends StObject {
     
+    /** Aliases associated with asset */
     var alias: js.UndefOr[js.Array[String]] = js.undefined
     
+    /** Optional data */
     var data: js.UndefOr[T] = js.undefined
     
+    /** Format, ususally the file extension */
     var format: js.UndefOr[String] = js.undefined
     
+    /** An override that will ensure that the asset is loaded with a specific parser */
+    var loadParser: js.UndefOr[loadTextures | loadJson | loadTxt | loadWebFont | loadSVG | String] = js.undefined
+    
+    /** The URL or relative path to the asset */
     var src: String
   }
   object LoadAsset {
@@ -41,19 +54,23 @@ object libLoaderTypesMod {
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
+      inline def setLoadParser(value: loadTextures | loadJson | loadTxt | loadWebFont | loadSVG | String): Self = StObject.set(x, "loadParser", value.asInstanceOf[js.Any])
+      
+      inline def setLoadParserUndefined: Self = StObject.set(x, "loadParser", js.undefined)
+      
       inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     }
   }
   
   trait PromiseAndParser extends StObject {
     
-    var parser: LoaderParser[Any, Any]
+    var parser: LoaderParser[Any, Any, Record[String, Any]]
     
     var promise: js.Promise[Any]
   }
   object PromiseAndParser {
     
-    inline def apply(parser: LoaderParser[Any, Any], promise: js.Promise[Any]): PromiseAndParser = {
+    inline def apply(parser: LoaderParser[Any, Any, Record[String, Any]], promise: js.Promise[Any]): PromiseAndParser = {
       val __obj = js.Dynamic.literal(parser = parser.asInstanceOf[js.Any], promise = promise.asInstanceOf[js.Any])
       __obj.asInstanceOf[PromiseAndParser]
     }
@@ -61,7 +78,7 @@ object libLoaderTypesMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: PromiseAndParser] (val x: Self) extends AnyVal {
       
-      inline def setParser(value: LoaderParser[Any, Any]): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
+      inline def setParser(value: LoaderParser[Any, Any, Record[String, Any]]): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
       
       inline def setPromise(value: js.Promise[Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     }

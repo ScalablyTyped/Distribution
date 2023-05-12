@@ -192,5 +192,10 @@ object distDeclarationsSrcBaseMod {
     @js.native
     def tabSelectsValue: Boolean = js.native
     inline def tabSelectsValue_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tabSelectsValue")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-select/dist/declarations/src/base", "defaultProps.unstyled")
+    @js.native
+    def unstyled: Boolean = js.native
+    inline def unstyled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unstyled")(x.asInstanceOf[js.Any])
   }
 }

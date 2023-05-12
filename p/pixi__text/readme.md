@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi__text
 
-Typings are for version 7.0.4
+Typings are for version 7.2.4
 
 ## Library description:
 Text via the Canvas API

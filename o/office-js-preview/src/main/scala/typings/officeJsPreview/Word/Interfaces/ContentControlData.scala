@@ -148,11 +148,11 @@ trait ContentControlData extends StObject {
     * [Api set: WordApi 1.3]
     */
   var styleBuiltIn: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150, starting with typings.officeJsPreview.Word.Style, typings.officeJsPreview.officeJsPreviewStrings.Other, typings.officeJsPreview.officeJsPreviewStrings.Normal */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150, starting with typings.officeJsPreview.Word.BuiltInStyleName, typings.officeJsPreview.officeJsPreviewStrings.Other, typings.officeJsPreview.officeJsPreviewStrings.Normal */ Any
   ] = js.undefined
   
   /**
-    * Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls.
+    * Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls, or 'PlainTextInline' and 'PlainTextParagraph' for plain text content controls.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -194,7 +194,7 @@ trait ContentControlData extends StObject {
   var title: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets the content control type. Only rich text content controls are supported currently.
+    * Gets the content control type. Only rich text and plain text content controls are supported currently.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -278,7 +278,7 @@ object ContentControlData {
     inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleBuiltIn(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150, starting with typings.officeJsPreview.Word.Style, typings.officeJsPreview.officeJsPreviewStrings.Other, typings.officeJsPreview.officeJsPreviewStrings.Normal */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150, starting with typings.officeJsPreview.Word.BuiltInStyleName, typings.officeJsPreview.officeJsPreviewStrings.Other, typings.officeJsPreview.officeJsPreviewStrings.Normal */ Any
     ): Self = StObject.set(x, "styleBuiltIn", value.asInstanceOf[js.Any])
     
     inline def setStyleBuiltInUndefined: Self = StObject.set(x, "styleBuiltIn", js.undefined)

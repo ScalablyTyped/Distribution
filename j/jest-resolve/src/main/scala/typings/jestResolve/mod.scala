@@ -398,6 +398,9 @@ object mod {
     
     /* private */ var _throwModNotFoundError: Any = js.native
     
+    def getGlobalPaths(): js.Array[String] = js.native
+    def getGlobalPaths(moduleName: String): js.Array[String] = js.native
+    
     def getMockModule(from: String, name: String): String | Null = js.native
     
     def getMockModuleAsync(from: String, name: String): js.Promise[String | Null] = js.native

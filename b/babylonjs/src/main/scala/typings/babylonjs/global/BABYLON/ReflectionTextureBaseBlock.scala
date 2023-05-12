@@ -15,3 +15,12 @@ open class ReflectionTextureBaseBlock protected ()
     */
   def this(name: String) = this()
 }
+/* static members */
+object ReflectionTextureBaseBlock {
+  
+  @JSGlobal("BABYLON.ReflectionTextureBaseBlock")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def _OnGenerateOnlyFragmentCodeChanged(block: typings.babylonjs.BABYLON.NodeMaterialBlock, _propertyName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("_OnGenerateOnlyFragmentCodeChanged")(block.asInstanceOf[js.Any], _propertyName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+}

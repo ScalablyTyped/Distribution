@@ -27,7 +27,7 @@ trait CreateJobRequest extends StObject {
   var documentParameters: js.UndefOr[ParameterMap] = js.undefined
   
   /**
-    * An S3 link to the job document. Required if you don't specify a value for document.  If the job document resides in an S3 bucket, you must use a placeholder link when specifying the document. The placeholder link is of the following form:  ${aws:iot:s3-presigned-url:https://s3.amazonaws.com/bucket/key}  where bucket is your bucket name and key is the object in the bucket to which you are linking. 
+    * An S3 link, or S3 object URL, to the job document. The link is an Amazon S3 object URL and is required if you don't specify a value for document. For example, --document-source https://s3.region-code.amazonaws.com/example-firmware/device-firmware.1.0. For more information, see Methods for accessing a bucket.
     */
   var documentSource: js.UndefOr[JobDocumentSource] = js.undefined
   
@@ -60,6 +60,11 @@ trait CreateJobRequest extends StObject {
     * Configuration information for pre-signed S3 URLs.
     */
   var presignedUrlConfig: js.UndefOr[PresignedUrlConfig] = js.undefined
+  
+  /**
+    * The configuration that allows you to schedule a job for a future date and time in addition to specifying the end behavior for each job execution.
+    */
+  var schedulingConfig: js.UndefOr[SchedulingConfig] = js.undefined
   
   /**
     * Metadata which can be used to manage the job.
@@ -132,6 +137,10 @@ object CreateJobRequest {
     inline def setPresignedUrlConfig(value: PresignedUrlConfig): Self = StObject.set(x, "presignedUrlConfig", value.asInstanceOf[js.Any])
     
     inline def setPresignedUrlConfigUndefined: Self = StObject.set(x, "presignedUrlConfig", js.undefined)
+    
+    inline def setSchedulingConfig(value: SchedulingConfig): Self = StObject.set(x, "schedulingConfig", value.asInstanceOf[js.Any])
+    
+    inline def setSchedulingConfigUndefined: Self = StObject.set(x, "schedulingConfig", js.undefined)
     
     inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

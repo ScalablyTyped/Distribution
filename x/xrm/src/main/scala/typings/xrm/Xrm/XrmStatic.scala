@@ -11,20 +11,20 @@ trait XrmStatic extends StObject {
   
   /**
     * Provides app-related methods.
-    * @see {@link https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/xrm-app External Link: Xrm.App (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-app External Link: Xrm.App (Client API reference)}
     */
   var App: typings.xrm.Xrm.App
   
   /**
     * Provides methods to use native device capabilities of mobile devices.
     *
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-device External Link: Xrm.Device (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-device External Link: Xrm.Device (Client API reference)}
     */
   var Device: typings.xrm.Xrm.Device
   
   /**
     * Provides methods to encode strings.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-encoding External Link: Xrm.Encoding (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-encoding External Link: Xrm.Encoding (Client API reference)}
     */
   var Encoding: typings.xrm.Xrm.Encoding
   
@@ -41,29 +41,29 @@ trait XrmStatic extends StObject {
   /**
     * Provides a namespace container for the context, data and ui objects.
     * @deprecated Deprecated in v9.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
+    * @see {@link https://learn.microsoft.com/en-us/power-platform/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     */
   var Page: typings.xrm.Xrm.Page
   
   /**
     * Provides a method to display a web page in the side pane of the Customer Engagement form.
     *
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-panel External Link: Xrm.Panel}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-panel External Link: Xrm.Panel}
     */
   var Panel: typings.xrm.Xrm.Panel
   
   /**
     * Provides a container for useful functions not directly related to the current page.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-utility External Link: Xrm.Utility (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-utility External Link: Xrm.Utility (Client API reference)}
     */
   var Utility: typings.xrm.Xrm.Utility
   
   /**
     * Provides properties and methods to use Web API to create and manage records and execute Web API actions and functions in Customer Engagement.
     *
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-webapi External Link: Xrm.WebApi (Client API reference)}
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api External Link: Use the Customer Engagement Web API}
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/webapi/get-started-web-api-client-side-javascript External Link: Get started with the Customer Engagement Web API (client-side JavaScript)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-webapi External Link: Xrm.WebApi (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/data-platform/webapi/overview External Link: Use the Microsoft Dataverse Web API}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/client-scripting External Link: Apply business logic using client scripting in model-driven apps using JavaScript}
     */
   var WebApi: typings.xrm.Xrm.WebApi
 }

@@ -10,16 +10,16 @@ object libResourcesMod {
   
   /* note: abstract class */ @JSImport("@pixi/compressed-textures/lib/resources", "BlobResource")
   @js.native
-  open class BlobResource protected ()
+  /**
+    * @param source - the buffer/URL of the texture file
+    * @param {PIXI.IBlobOptions} options
+    * @param {boolean}[options.autoLoad] - whether to fetch the data immediately;
+    *  you can fetch it later via {@link PIXI.BlobResource#load}
+    * @param {boolean}[options.width] - the width in pixels.
+    * @param {boolean}[options.height] - the height in pixels.
+    */
+  open class BlobResource ()
     extends typings.pixiCompressedTextures.libResourcesBlobResourceMod.BlobResource {
-    /**
-      * @param {string} source - the URL of the texture file
-      * @param {PIXI.IBlobOptions} options
-      * @param {boolean}[options.autoLoad] - whether to fetch the data immediately;
-      *  you can fetch it later via {@link BlobResource#load}
-      * @param {boolean}[options.width] - the width in pixels.
-      * @param {boolean}[options.height] - the height in pixels.
-      */
     def this(source: String) = this()
     def this(source: js.typedarray.Float32Array) = this()
     def this(source: js.typedarray.Uint32Array) = this()
@@ -28,6 +28,7 @@ object libResourcesMod {
     def this(source: js.typedarray.Float32Array, options: IBlobOptions) = this()
     def this(source: js.typedarray.Uint32Array, options: IBlobOptions) = this()
     def this(source: js.typedarray.Uint8Array, options: IBlobOptions) = this()
+    def this(source: Null, options: IBlobOptions) = this()
   }
   
   @JSImport("@pixi/compressed-textures/lib/resources", "CompressedTextureResource")

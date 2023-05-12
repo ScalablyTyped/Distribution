@@ -14,8 +14,8 @@ object CompletionItemTag extends StObject {
   def apply(value: Double): js.UndefOr[CompletionItemTag & Double] = js.native
   
   /**
-    * Render a completion as obsolete, usually using a strike-out.
-    */
+  		 * Render a completion as obsolete, usually using a strike-out.
+  		 */
   @js.native
   sealed trait Deprecated
     extends StObject

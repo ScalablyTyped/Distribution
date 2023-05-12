@@ -12,7 +12,7 @@ open class PickerItem protected ()
   def this(props: PickerItemProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: PickerItemProps, context: Any) = this()
 }

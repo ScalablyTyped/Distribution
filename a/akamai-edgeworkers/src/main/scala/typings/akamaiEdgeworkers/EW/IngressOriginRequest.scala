@@ -12,4 +12,5 @@ trait IngressOriginRequest
      with ReadsHeaders
      with ReadsVariables
      with Request
+     with HasRespondWith
      with MutatesVariables

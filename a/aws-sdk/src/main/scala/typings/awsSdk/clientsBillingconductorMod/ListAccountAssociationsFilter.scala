@@ -12,6 +12,11 @@ trait ListAccountAssociationsFilter extends StObject {
   var AccountId: js.UndefOr[typings.awsSdk.clientsBillingconductorMod.AccountId] = js.undefined
   
   /**
+    *  The list of Amazon Web Services IDs to retrieve their associated billing group for a given time range. 
+    */
+  var AccountIds: js.UndefOr[AccountIdFilterList] = js.undefined
+  
+  /**
     *  MONITORED: linked accounts that are associated to billing groups.  UNMONITORED: linked accounts that are not associated to billing groups.  Billing Group Arn: linked accounts that are associated to the provided Billing Group Arn. 
     */
   var Association: js.UndefOr[typings.awsSdk.clientsBillingconductorMod.Association] = js.undefined
@@ -29,6 +34,12 @@ object ListAccountAssociationsFilter {
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
     inline def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
+    
+    inline def setAccountIds(value: AccountIdFilterList): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
+    
+    inline def setAccountIdsUndefined: Self = StObject.set(x, "AccountIds", js.undefined)
+    
+    inline def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value*))
     
     inline def setAssociation(value: Association): Self = StObject.set(x, "Association", value.asInstanceOf[js.Any])
     

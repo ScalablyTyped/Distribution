@@ -9,8 +9,11 @@ trait PropertyAccessExpression
   extends StObject
      with MemberExpression
      with NamedDeclaration
+     with JSDocContainer
+     with FlowContainer
      with AccessExpression
      with BindingOrAssignmentElementTarget
+     with HasJSDoc
      with _ArrayBindingOrAssignmentElement {
   
   val expression: LeftHandSideExpression = js.native

@@ -26,7 +26,7 @@ trait OmitDOMWrapperElementexisAttributes extends StObject {
   var classes_Original: js.Function0[js.Array[String]]
   
   @JSName("constructor")
-  var constructor_Original: js.Function1[/* element */ Element, Any]
+  var constructor_Original: js.Function1[/* element */ js.UndefOr[Element | Null], Any]
   
   var element: Node
   
@@ -142,7 +142,7 @@ object OmitDOMWrapperElementexisAttributes {
   inline def apply(
     attributes: () => StringDictionary[String],
     classes: () => js.Array[String],
-    constructor: /* element */ Element => Any,
+    constructor: /* element */ js.UndefOr[Element | Null] => Any,
     element: Node,
     find: /* selector */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111, starting with typings.vueTestUtils.vueTestUtilsStrings.a, typings.vueTestUtils.vueTestUtilsStrings.abbr, typings.vueTestUtils.vueTestUtilsStrings.address */ Any => DOMWrapper[
       /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementTagNameMap['a' | 'abbr' | 'address' | 'area' | 'article' | 'aside' | 'audio' | 'b' | 'base' | 'bdi' | 'bdo' | 'blockquote' | 'body' | 'br' | 'button' | 'canvas' | 'caption' | 'cite' | 'code' | 'col' | 'colgroup' | 'data' | 'datalist' | 'dd' | 'del' | 'details' | 'dfn' | 'dialog' | 'div' | 'dl' | 'dt' | 'em' | 'embed' | 'fieldset' | 'figcaption' | 'figure' | 'footer' | 'form' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'head' | 'header' | 'hgroup' | 'hr' | 'html' | 'i' | 'iframe' | 'img' | 'input' | 'ins' | 'kbd' | 'label' | 'legend' | 'li' | 'link' | 'main' | 'map' | 'mark' | 'menu' | 'meta' | 'meter' | 'nav' | 'noscript' | 'object' | 'ol' | 'optgroup' | 'option' | 'output' | 'p' | 'picture' | 'pre' | 'progress' | 'q' | 'rp' | 'rt' | 'ruby' | 's' | 'samp' | 'script' | 'section' | 'select' | 'slot' | 'small' | 'source' | 'span' | 'strong' | 'style' | 'sub' | 'summary' | 'sup' | 'table' | 'tbody' | 'td' | 'template' | 'textarea' | 'tfoot' | 'th' | 'thead' | 'time' | 'title' | 'tr' | 'track' | 'u' | 'ul' | 'var' | 'video' | 'wbr'] */ js.Any
@@ -185,7 +185,7 @@ object OmitDOMWrapperElementexisAttributes {
     
     inline def setClasses(value: () => js.Array[String]): Self = StObject.set(x, "classes", js.Any.fromFunction0(value))
     
-    inline def setConstructor(value: /* element */ Element => Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
+    inline def setConstructor(value: /* element */ js.UndefOr[Element | Null] => Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
     
     inline def setElement(value: Node): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

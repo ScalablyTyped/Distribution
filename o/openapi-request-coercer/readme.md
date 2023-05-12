@@ -1,7 +1,7 @@
 
 # Scala.js typings for openapi-request-coercer
 
-Typings are for version 12.0.2
+Typings are for version 12.1.0
 
 ## Library description:
 Coerce request properties according to an openapi parameter list.

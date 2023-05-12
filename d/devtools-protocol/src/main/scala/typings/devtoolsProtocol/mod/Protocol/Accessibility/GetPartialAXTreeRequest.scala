@@ -15,7 +15,7 @@ trait GetPartialAXTreeRequest extends StObject {
   var backendNodeId: js.UndefOr[BackendNodeId] = js.undefined
   
   /**
-    * Whether to fetch this nodes ancestors, siblings and children. Defaults to true.
+    * Whether to fetch this node's ancestors, siblings and children. Defaults to true.
     */
   var fetchRelatives: js.UndefOr[Boolean] = js.undefined
   

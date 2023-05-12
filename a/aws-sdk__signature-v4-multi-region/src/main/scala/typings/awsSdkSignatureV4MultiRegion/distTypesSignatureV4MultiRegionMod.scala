@@ -1,7 +1,7 @@
 package typings.awsSdkSignatureV4MultiRegion
 
 import typings.awsSdkSignatureV4.distTypesSignatureV4Mod.SignatureV4Init
-import typings.awsSdkTypes.distTypesCredentialsMod.Credentials
+import typings.awsSdkTypes.distTypesIdentityAwsCredentialIdentityMod.AwsCredentialIdentity
 import typings.awsSdkTypes.distTypesSignatureMod.RequestPresigner
 import typings.awsSdkTypes.distTypesSignatureMod.RequestSigner
 import typings.awsSdkTypes.distTypesUtilMod.Provider
@@ -38,7 +38,7 @@ object distTypesSignatureV4MultiRegionMod {
   object SignatureV4MultiRegionInit {
     
     inline def apply(
-      credentials: Credentials | Provider[Credentials],
+      credentials: AwsCredentialIdentity | Provider[AwsCredentialIdentity],
       region: String | Provider[String],
       service: String
     ): SignatureV4MultiRegionInit = {

@@ -1,6 +1,6 @@
 package typings.nodemailerSesTransport
 
-import typings.awsSdk.mod.SES
+import typings.awsSdk2Types.mod.SES
 import typings.nodemailer.mod.Transport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +16,7 @@ object mod {
   
   trait SesOptions extends StObject {
     
-    var SES: typings.awsSdk.mod.SES
+    var SES: typings.awsSdk2Types.mod.SES
     
     var component: js.UndefOr[String] = js.undefined
     

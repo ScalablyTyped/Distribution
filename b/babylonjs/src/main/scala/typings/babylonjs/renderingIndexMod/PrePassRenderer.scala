@@ -1,5 +1,6 @@
 package typings.babylonjs.renderingIndexMod
 
+import typings.babylonjs.anon.Format
 import typings.babylonjs.sceneMod.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,12 +24,15 @@ object PrePassRenderer {
   val ^ : js.Any = js.native
   
   /**
+    * Describes the types and formats of the textures used by the pre-pass renderer
+    */
+  @JSImport("babylonjs/Rendering/index", "PrePassRenderer.TextureFormats")
+  @js.native
+  def TextureFormats: js.Array[Format] = js.native
+  inline def TextureFormats_=(x: js.Array[Format]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TextureFormats")(x.asInstanceOf[js.Any])
+  
+  /**
     * @internal
     */
   inline def _SceneComponentInitialization(scene: Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
-  @JSImport("babylonjs/Rendering/index", "PrePassRenderer._TextureFormats")
-  @js.native
-  def _TextureFormats: Any = js.native
-  inline def _TextureFormats_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TextureFormats")(x.asInstanceOf[js.Any])
 }

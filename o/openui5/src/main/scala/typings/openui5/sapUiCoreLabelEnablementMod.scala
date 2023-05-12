@@ -14,6 +14,7 @@ object sapUiCoreLabelEnablementMod extends Shortcut {
   
   /**
     * @SINCE 1.28.0
+    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * Helper functionality for enhancement of a `Label` with common label functionality.
     * See:
@@ -22,6 +23,8 @@ object sapUiCoreLabelEnablementMod extends Shortcut {
   trait LabelEnablement extends StObject {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * This function should be called on a label control to enrich its functionality.
       *
       * **Usage:** The function can be called with a control prototype: ` sap.ui.core.LabelEnablement.enrich(my.Label.prototype);
@@ -35,7 +38,7 @@ object sapUiCoreLabelEnablementMod extends Shortcut {
       * **What does this function do?**
       *
       * A mechanism is added that ensures that a bidirectional reference between the label and its labeled control
-      * is established: The label references the labeled control via the HTML 'for' attribute (@see sap.ui.core.LabelEnablement#writeLabelForAttribute).
+      * is established: The label references the labeled control via the HTML 'for' attribute (see {@link sap.ui.core.LabelEnablement#writeLabelForAttribute}).
       * If the labeled control supports the aria-labelledby attribute, a reference to the label is added automatically.
       *
       * In addition an alternative to apply a 'for' reference without influencing the labelFor association of
@@ -78,6 +81,8 @@ object sapUiCoreLabelEnablementMod extends Shortcut {
     ): Boolean
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Helper function for the `Label` control to render the HTML 'for' attribute.
       *
       * This function should be called at the desired location in the renderer code of the `Label` control. It

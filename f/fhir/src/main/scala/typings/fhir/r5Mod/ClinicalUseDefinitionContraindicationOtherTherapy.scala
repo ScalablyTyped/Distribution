@@ -14,14 +14,14 @@ trait ClinicalUseDefinitionContraindicationOtherTherapy
   var relationshipType: CodeableConcept
   
   /**
-    * Reference to a specific medication (active substance, medicinal product or class of products) as part of an indication or contraindication.
+    * Reference to a specific medication (active substance, medicinal product or class of products, biological, food etc.) as part of an indication or contraindication.
     */
-  var therapy: CodeableReference
+  var treatment: CodeableReference
 }
 object ClinicalUseDefinitionContraindicationOtherTherapy {
   
-  inline def apply(relationshipType: CodeableConcept, therapy: CodeableReference): ClinicalUseDefinitionContraindicationOtherTherapy = {
-    val __obj = js.Dynamic.literal(relationshipType = relationshipType.asInstanceOf[js.Any], therapy = therapy.asInstanceOf[js.Any])
+  inline def apply(relationshipType: CodeableConcept, treatment: CodeableReference): ClinicalUseDefinitionContraindicationOtherTherapy = {
+    val __obj = js.Dynamic.literal(relationshipType = relationshipType.asInstanceOf[js.Any], treatment = treatment.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClinicalUseDefinitionContraindicationOtherTherapy]
   }
   
@@ -30,6 +30,6 @@ object ClinicalUseDefinitionContraindicationOtherTherapy {
     
     inline def setRelationshipType(value: CodeableConcept): Self = StObject.set(x, "relationshipType", value.asInstanceOf[js.Any])
     
-    inline def setTherapy(value: CodeableReference): Self = StObject.set(x, "therapy", value.asInstanceOf[js.Any])
+    inline def setTreatment(value: CodeableReference): Self = StObject.set(x, "treatment", value.asInstanceOf[js.Any])
   }
 }

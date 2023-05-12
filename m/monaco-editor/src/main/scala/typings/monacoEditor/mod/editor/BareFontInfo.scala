@@ -16,6 +16,8 @@ open class BareFontInfo () extends StObject {
   
   val fontSize: Double = js.native
   
+  val fontVariationSettings: String = js.native
+  
   val fontWeight: String = js.native
   
   val letterSpacing: Double = js.native

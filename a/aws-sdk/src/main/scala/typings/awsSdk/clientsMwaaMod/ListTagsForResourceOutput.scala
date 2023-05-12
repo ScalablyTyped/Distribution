@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListTagsForResourceOutput extends StObject {
   
   /**
-    * The key-value tag pairs associated to your environment. To learn more, see Tagging Amazon Web Services resources.
+    * The key-value tag pairs associated to your environment. For more information, see Tagging Amazon Web Services resources.
     */
   var Tags: js.UndefOr[TagMap] = js.undefined
 }

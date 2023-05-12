@@ -60,6 +60,8 @@ import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsStrings.rotatest
 import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsStrings.sa
 import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsStrings.sourcedata
 import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsStrings.sourcedataloading
+import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsStrings.styleChange
+import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsStrings.styleChanging
 import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsStrings.styledata
 import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsStrings.styledataloading
 import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsStrings.tiledataloading
@@ -424,6 +426,10 @@ open class Map () extends Evented {
   @JSName("off")
   def off_sourcedataloading(`type`: sourcedataloading, listener: js.Function1[/* ev */ MapSourceDataEvent & EventData, Unit]): this.type = js.native
   @JSName("off")
+  def off_styleChange(`type`: styleChange, listener: js.Function1[/* ev */ MapStyleChangeEvent & EventData, Unit]): this.type = js.native
+  @JSName("off")
+  def off_styleChanging(`type`: styleChanging, listener: js.Function1[/* ev */ MapStyleChangeEvent & EventData, Unit]): this.type = js.native
+  @JSName("off")
   def off_styledata(`type`: styledata, listener: js.Function1[/* ev */ MapStyleDataEvent & EventData, Unit]): this.type = js.native
   @JSName("off")
   def off_styledataloading(`type`: styledataloading, listener: js.Function1[/* ev */ MapStyleDataEvent & EventData, Unit]): this.type = js.native
@@ -664,6 +670,10 @@ open class Map () extends Evented {
   @JSName("on")
   def on_sourcedataloading(`type`: sourcedataloading, listener: js.Function1[/* ev */ MapSourceDataEvent & EventData, Unit]): this.type = js.native
   @JSName("on")
+  def on_styleChange(`type`: styleChange, listener: js.Function1[/* ev */ MapStyleChangeEvent & EventData, Unit]): this.type = js.native
+  @JSName("on")
+  def on_styleChanging(`type`: styleChanging, listener: js.Function1[/* ev */ MapStyleChangeEvent & EventData, Unit]): this.type = js.native
+  @JSName("on")
   def on_styledata(`type`: styledata, listener: js.Function1[/* ev */ MapStyleDataEvent & EventData, Unit]): this.type = js.native
   @JSName("on")
   def on_styledataloading(`type`: styledataloading, listener: js.Function1[/* ev */ MapStyleDataEvent & EventData, Unit]): this.type = js.native
@@ -903,6 +913,10 @@ open class Map () extends Evented {
   def once_sourcedata(`type`: sourcedata, listener: js.Function1[/* ev */ MapSourceDataEvent & EventData, Unit]): this.type = js.native
   @JSName("once")
   def once_sourcedataloading(`type`: sourcedataloading, listener: js.Function1[/* ev */ MapSourceDataEvent & EventData, Unit]): this.type = js.native
+  @JSName("once")
+  def once_styleChange(`type`: styleChange, listener: js.Function1[/* ev */ MapStyleChangeEvent & EventData, Unit]): this.type = js.native
+  @JSName("once")
+  def once_styleChanging(`type`: styleChanging, listener: js.Function1[/* ev */ MapStyleChangeEvent & EventData, Unit]): this.type = js.native
   @JSName("once")
   def once_styledata(`type`: styledata, listener: js.Function1[/* ev */ MapStyleDataEvent & EventData, Unit]): this.type = js.native
   @JSName("once")
@@ -1209,6 +1223,8 @@ open class Map () extends Evented {
   def triggerRepaint(): Unit = js.native
   
   def unproject(point: PointLike): LngLat = js.native
+  
+  val version: String = js.native
   
   def zoomIn(): this.type = js.native
   def zoomIn(options: Unit, eventData: EventData): this.type = js.native

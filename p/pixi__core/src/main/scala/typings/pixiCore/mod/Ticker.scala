@@ -26,4 +26,13 @@ object Ticker {
   @js.native
   def _system: Any = js.native
   inline def _system_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_system")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Target frames per millisecond.
+    * @static
+    */
+  @JSImport("@pixi/core", "Ticker.targetFPMS")
+  @js.native
+  def targetFPMS: Double = js.native
+  inline def targetFPMS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("targetFPMS")(x.asInstanceOf[js.Any])
 }

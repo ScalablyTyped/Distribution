@@ -17,17 +17,17 @@ trait CloudFrontOriginAccessIdentityList extends StObject {
   var Items: js.UndefOr[CloudFrontOriginAccessIdentitySummaryList] = js.undefined
   
   /**
-    * Use this when paginating results to indicate where to begin in your list of origin access identities. The results include identities in the list that occur after the marker. To get the next page of results, set the Marker to the value of the NextMarker from the current page's response (which is also the ID of the last identity on that page). 
+    * Use this when paginating results to indicate where to begin in your list of origin access identities. The results include identities in the list that occur after the marker. To get the next page of results, set the Marker to the value of the NextMarker from the current page's response (which is also the ID of the last identity on that page).
     */
   var Marker: String
   
   /**
-    * The maximum number of origin access identities you want in the response body. 
+    * The maximum number of origin access identities you want in the response body.
     */
   var MaxItems: integer
   
   /**
-    * If IsTruncated is true, this element is present and contains the value you can use for the Marker request parameter to continue listing your origin access identities where they left off. 
+    * If IsTruncated is true, this element is present and contains the value you can use for the Marker request parameter to continue listing your origin access identities where they left off.
     */
   var NextMarker: js.UndefOr[String] = js.undefined
   

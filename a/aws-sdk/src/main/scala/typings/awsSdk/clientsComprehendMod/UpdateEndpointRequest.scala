@@ -25,6 +25,11 @@ trait UpdateEndpointRequest extends StObject {
     * The Amazon Resource Number (ARN) of the endpoint being updated.
     */
   var EndpointArn: ComprehendEndpointArn
+  
+  /**
+    * The Amazon Resource Number (ARN) of the flywheel
+    */
+  var FlywheelArn: js.UndefOr[ComprehendFlywheelArn] = js.undefined
 }
 object UpdateEndpointRequest {
   
@@ -49,5 +54,9 @@ object UpdateEndpointRequest {
     inline def setDesiredModelArnUndefined: Self = StObject.set(x, "DesiredModelArn", js.undefined)
     
     inline def setEndpointArn(value: ComprehendEndpointArn): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
+    
+    inline def setFlywheelArn(value: ComprehendFlywheelArn): Self = StObject.set(x, "FlywheelArn", value.asInstanceOf[js.Any])
+    
+    inline def setFlywheelArnUndefined: Self = StObject.set(x, "FlywheelArn", js.undefined)
   }
 }

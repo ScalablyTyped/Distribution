@@ -426,6 +426,8 @@ object sapMIconTabFilterMod {
     vItem: IconTab): IconTab | Null = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Renders this item in the IconTabHeader.
       */
     def render(
@@ -444,6 +446,8 @@ object sapMIconTabFilterMod {
     ): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Renders this item in the IconTabSelectList.
       */
     def renderInSelectList(

@@ -223,8 +223,8 @@ trait Range
   def copyFrom(sourceRange: String, copyType: RangeCopyType, skipBlanks: Boolean, transpose: Boolean): Unit = js.native
   def copyFrom(sourceRange: String, copyType: RangeCopyType, skipBlanks: Unit, transpose: Boolean): Unit = js.native
   /**
-    * Copies cell data or formatting from the source range or `RangeAreas` to the current range.
-    The destination range can be a different size than the source range or `RangeAreas`. The destination will be expanded automatically if it is smaller than the source.
+    * Copies cell data or formatting from the source range or `RangeAreas` to the current range. The destination range can be a different size than the source range or `RangeAreas`. The destination is expanded automatically if it's smaller than the source.
+    Note: Like the copy functionality in the Excel UI, if the destination range is an exact multiple greater than the source range in either rows or columns, then the source content is replicated multiple times. For example, a 2x2 range copy into a 2x6 range will result in 3 copies of the original 2x2 range.
     *
     * @remarks
     * [Api set: ExcelApi 1.9]
@@ -471,7 +471,7 @@ trait Range
   
   /**
     * Returns a `WorkbookRangeAreas` object that represents the range containing all the direct dependent cells of a specified range in the same worksheet or across multiple worksheets.
-    * 
+    *
     * @remarks
     * [Api set: ExcelApi 1.13]
     */

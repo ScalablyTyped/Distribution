@@ -3,8 +3,10 @@ package typings.awsSdk.clientsIotwirelessMod
 import typings.awsSdk.awsSdkStrings.GNSS
 import typings.awsSdk.awsSdkStrings.LoRaWAN
 import typings.awsSdk.awsSdkStrings.Semtech
+import typings.awsSdk.awsSdkStrings.SemtechGeolocation
 import typings.awsSdk.awsSdkStrings.Sidewalk
 import typings.awsSdk.awsSdkStrings.UPDATE
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,6 +22,8 @@ type AmazonId = String
 
 type AmazonResourceName = String
 
+type ApId = String
+
 type AppEui = String
 
 type AppKey = String
@@ -28,7 +32,25 @@ type AppSKey = String
 
 type AppServerPrivateKey = String
 
+type ApplicationConfigType = SemtechGeolocation | String
+
+type ApplicationServerPublicKey = String
+
+type Applications = js.Array[ApplicationConfig]
+
+type AssistPosition = js.Array[Coordinate]
+
 type AutoCreateTasks = Boolean
+
+type BCCH = scala.Double
+
+type BSIC = scala.Double
+
+type BaseLat = scala.Double
+
+type BaseLng = scala.Double
+
+type BaseStationId = scala.Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.normal_
@@ -43,6 +65,16 @@ type BeaconingDataRate = scala.Double
 type BeaconingFrequencies = js.Array[BeaconingFrequency]
 
 type BeaconingFrequency = scala.Double
+
+type CaptureTimeAccuracy = scala.Double
+
+type CdmaChannel = scala.Double
+
+type CdmaList = js.Array[CdmaObj]
+
+type CdmaNmrList = js.Array[CdmaNmrObj]
+
+type CellParams = scala.Double
 
 type CertificatePEM = String
 
@@ -63,9 +95,19 @@ type ClientRequestToken = String
 */
 type ConnectionStatus = _ConnectionStatus | String
 
+type Coordinate = scala.Double
+
 type Crc = scala.Double
 
 type CreatedAt = js.Date
+
+type CreationDate = js.Date
+
+type CreationTime = js.Date
+
+type DakCertificateId = String
+
+type DakCertificateMetadataList = js.Array[DakCertificateMetadata]
 
 type Description = String
 
@@ -83,6 +125,12 @@ type DevStatusReqFreq = scala.Double
 
 type DeviceCertificateList = js.Array[CertificateList]
 
+type DeviceCreationFile = String
+
+type DeviceCreationFileList = js.Array[DeviceCreationFile]
+
+type DeviceName = String
+
 type DeviceProfileArn = String
 
 type DeviceProfileId = String
@@ -92,6 +140,13 @@ type DeviceProfileList = js.Array[DeviceProfile]
 type DeviceProfileName = String
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Sidewalk
+  - typings.awsSdk.awsSdkStrings.LoRaWAN
+  - java.lang.String
+*/
+type DeviceProfileType = _DeviceProfileType | String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Provisioned_
   - typings.awsSdk.awsSdkStrings.RegisteredNotSeen
   - typings.awsSdk.awsSdkStrings.RegisteredReachable
@@ -99,6 +154,8 @@ type DeviceProfileName = String
   - java.lang.String
 */
 type DeviceState = _DeviceState | String
+
+type DeviceTypeId = String
 
 type DlBucketSize = scala.Double
 
@@ -139,10 +196,14 @@ type DrMin = scala.Double
 
 type DrMinBox = scala.Double
 
+type EARFCN = scala.Double
+
 type EndPoint = String
 
+type EutranCid = scala.Double
+
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.discovered_
+  - typings.awsSdk.awsSdkStrings.discovered__
   - typings.awsSdk.awsSdkStrings.lost
   - typings.awsSdk.awsSdkStrings.ack_
   - typings.awsSdk.awsSdkStrings.nack
@@ -187,11 +248,17 @@ type FPort = scala.Double
 
 type FactoryPresetFreqsList = js.Array[PresetFreq]
 
+type FactorySupport = Boolean
+
 type Fingerprint = String
 
 type FirmwareUpdateImage = String
 
 type FirmwareUpdateRole = String
+
+type FragmentIntervalMS = scala.Double
+
+type FragmentSizeBytes = scala.Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Initial_
@@ -227,15 +294,33 @@ type FuotaTaskName = String
 */
 type FuotaTaskStatus = _FuotaTaskStatus | String
 
+type GPST = scala.Double
+
 type GatewayEui = String
 
 type GatewayList = js.Array[GatewayListItem]
 
+type GatewayMaxEirp = scala.Double
+
 type GenAppKey = String
+
+type GeoJsonPayload = Buffer | js.typedarray.Uint8Array | Blob | String
+
+type GeranCid = scala.Double
+
+type GnssNav = String
+
+type GsmList = js.Array[GsmObj]
+
+type GsmNmrList = js.Array[GsmNmrObj]
+
+type GsmTimingAdvance = scala.Double
 
 type HorizontalAccuracy = scala.Double
 
 type HrAllowed = Boolean
+
+type IPAddress = String
 
 type ISODateTimeString = String
 
@@ -251,6 +336,25 @@ type Identifier = String
 */
 type IdentifierType = _IdentifierType | String
 
+type ImportTaskArn = String
+
+type ImportTaskId = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.INITIALIZING
+  - typings.awsSdk.awsSdkStrings.INITIALIZED
+  - typings.awsSdk.awsSdkStrings.PENDING
+  - typings.awsSdk.awsSdkStrings.COMPLETE
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.DELETING
+  - java.lang.String
+*/
+type ImportTaskStatus = _ImportTaskStatus | String
+
+type ImportedWirelessDeviceCount = scala.Double
+
+type ImportedWirelessDeviceList = js.Array[ImportedWirelessDevice]
+
 type Integer = scala.Double
 
 type IotCertificateId = String
@@ -260,6 +364,10 @@ type JoinEui = String
 type JoinEuiFilters = js.Array[JoinEuiRange]
 
 type JoinEuiRange = js.Array[JoinEui]
+
+type LAC = scala.Double
+
+type LastUpdateTime = js.Date
 
 type LoRaWANGatewayMetadataList = js.Array[LoRaWANGatewayMetadata]
 
@@ -271,7 +379,21 @@ type LoRaWANGatewayMetadataList = js.Array[LoRaWANGatewayMetadata]
 */
 type LogLevel = _LogLevel | String
 
+type LteList = js.Array[LteObj]
+
+type LteNmrList = js.Array[LteNmrObj]
+
+type LteTimingAdvance = scala.Double
+
+type MCC = scala.Double
+
+type MNC = scala.Double
+
+type MacAddress = String
+
 type MacVersion = String
+
+type MaxAllowedSignature = scala.Double
 
 type MaxDutyCycle = scala.Double
 
@@ -312,6 +434,8 @@ type MulticastGroupName = String
 
 type MulticastGroupStatus = String
 
+type NRCapable = Boolean
+
 type NetId = String
 
 type NetIdFilters = js.Array[NetId]
@@ -321,6 +445,8 @@ type NetworkAnalyzerConfigurationArn = String
 type NetworkAnalyzerConfigurationList = js.Array[NetworkAnalyzerConfigurations]
 
 type NetworkAnalyzerConfigurationName = String
+
+type NetworkId = scala.Double
 
 type NextToken = String
 
@@ -336,6 +462,21 @@ type NwkSEncKey = String
 
 type NwkSKey = String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.INITIALIZED
+  - typings.awsSdk.awsSdkStrings.PENDING
+  - typings.awsSdk.awsSdkStrings.ONBOARDED
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - java.lang.String
+*/
+type OnboardStatus = _OnboardStatus | String
+
+type OnboardStatusReason = String
+
+type PCI = scala.Double
+
+type PSC = scala.Double
+
 type PackageVersion = String
 
 type PartnerAccountArn = String
@@ -344,13 +485,19 @@ type PartnerAccountId = String
 
 type PartnerType = Sidewalk | String
 
+type PathLoss = scala.Double
+
 type PayloadData = String
+
+type PilotPower = scala.Double
 
 type PingSlotDr = scala.Double
 
 type PingSlotFreq = scala.Double
 
 type PingSlotPeriod = scala.Double
+
+type PnOffset = scala.Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ROSE
@@ -387,15 +534,38 @@ type PositionSolverType = GNSS | String
 
 type PositionSolverVersion = String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Enabled_
+  - typings.awsSdk.awsSdkStrings.Disabled_
+  - java.lang.String
+*/
+type PositioningConfigStatus = _PositioningConfigStatus | String
+
 type PrAllowed = Boolean
 
 type PresetFreq = scala.Double
 
+type PrivateKeysList = js.Array[CertificateList]
+
+type QualificationStatus = Boolean
+
 type QueryString = String
+
+type RSCP = scala.Double
+
+type RSRP = scala.Double
+
+type RSRQ = scala.Double
+
+type RSS = scala.Double
 
 type RaAllowed = Boolean
 
+type RedundancyPercent = scala.Double
+
 type RegParamsRevision = String
+
+type RegistrationZone = scala.Double
 
 type ReportDevStatusBattery = Boolean
 
@@ -409,6 +579,8 @@ type Result = String
 
 type RfRegion = String
 
+type Role = String
+
 type RoleArn = String
 
 type RxDataRate2 = scala.Double
@@ -418,6 +590,8 @@ type RxDelay1 = scala.Double
 type RxDrOffset1 = scala.Double
 
 type RxFreq2 = scala.Double
+
+type RxLevel = scala.Double
 
 type SNwkSIntKey = String
 
@@ -452,6 +626,8 @@ type StartTime = js.Date
 
 type Station = String
 
+type StatusReason = String
+
 type SubBand = scala.Double
 
 type SubBands = js.Array[SubBand]
@@ -461,6 +637,15 @@ type SubBands = js.Array[SubBand]
   - typings.awsSdk.awsSdkStrings.US915
   - typings.awsSdk.awsSdkStrings.AU915
   - typings.awsSdk.awsSdkStrings.`AS923-1`
+  - typings.awsSdk.awsSdkStrings.`AS923-2`
+  - typings.awsSdk.awsSdkStrings.`AS923-3`
+  - typings.awsSdk.awsSdkStrings.`AS923-4`
+  - typings.awsSdk.awsSdkStrings.EU433
+  - typings.awsSdk.awsSdkStrings.CN470
+  - typings.awsSdk.awsSdkStrings.CN779
+  - typings.awsSdk.awsSdkStrings.RU864
+  - typings.awsSdk.awsSdkStrings.KR920
+  - typings.awsSdk.awsSdkStrings.IN865
   - java.lang.String
 */
 type SupportedRfRegion = _SupportedRfRegion | String
@@ -473,6 +658,10 @@ type SupportsClassC = Boolean
 
 type SupportsJoin = Boolean
 
+type SystemId = scala.Double
+
+type TAC = scala.Double
+
 type TagKey = String
 
 type TagKeyList = js.Array[TagKey]
@@ -483,6 +672,12 @@ type TagValue = String
 
 type TargetPer = scala.Double
 
+type TdscdmaList = js.Array[TdscdmaObj]
+
+type TdscdmaNmrList = js.Array[TdscdmaNmrObj]
+
+type TdscdmaTimingAdvance = scala.Double
+
 type ThingArn = String
 
 type ThingName = String
@@ -490,6 +685,10 @@ type ThingName = String
 type TransmissionInterval = scala.Double
 
 type TransmitMode = scala.Double
+
+type UARFCN = scala.Double
+
+type UARFCNDL = scala.Double
 
 type UlBucketSize = scala.Double
 
@@ -501,7 +700,17 @@ type UpdateDataSource = String
 
 type UpdateSignature = String
 
+type Use2DSolver = Boolean
+
+type UtranCid = scala.Double
+
 type VerticalAccuracy = scala.Double
+
+type WcdmaList = js.Array[WcdmaObj]
+
+type WcdmaNmrList = js.Array[WcdmaNmrObj]
+
+type WiFiAccessPoints = js.Array[WiFiAccessPoint]
 
 type WirelessDeviceArn = String
 
@@ -535,11 +744,22 @@ type WirelessDeviceId = String
 */
 type WirelessDeviceIdType = _WirelessDeviceIdType | String
 
+type WirelessDeviceImportTaskList = js.Array[WirelessDeviceImportTask]
+
 type WirelessDeviceList = js.Array[WirelessDeviceId]
 
 type WirelessDeviceLogOptionList = js.Array[WirelessDeviceLogOption]
 
 type WirelessDeviceName = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PROVISIONED
+  - typings.awsSdk.awsSdkStrings.REGISTERED
+  - typings.awsSdk.awsSdkStrings.ACTIVATED
+  - typings.awsSdk.awsSdkStrings.UNKNOWN
+  - java.lang.String
+*/
+type WirelessDeviceSidewalkStatus = _WirelessDeviceSidewalkStatus | String
 
 type WirelessDeviceStatisticsList = js.Array[WirelessDeviceStatistics]
 

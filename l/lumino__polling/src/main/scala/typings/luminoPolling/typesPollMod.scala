@@ -40,6 +40,10 @@ object typesPollMod {
     
     /* private */ var _frequency: Any = js.native
     
+    /* private */ var _linger: Any = js.native
+    
+    /* private */ var _lingered: Any = js.native
+    
     /* private */ var _standby: Any = js.native
     
     /* private */ var _state: Any = js.native
@@ -69,24 +73,37 @@ object typesPollMod {
       */
     /* InferMemberOverrides */
     override val disposed: ISignal[this.type, Unit] = js.native
+    /**
+      * A signal emitted when the poll is disposed.
+      */
+    @JSName("disposed")
+    def disposed_MPoll: ISignal[this.type, Unit] = js.native
+    
+    def frequency_=(frequency: Frequency): Unit = js.native
+    /**
+      * The polling frequency parameters.
+      */
+    @JSName("frequency")
+    def frequency_MPoll: Frequency = js.native
     
     /**
-      * The polling frequency data.
+      * Whether the poll is hidden.
+      *
+      * #### Notes
+      * This property is only relevant in a browser context.
       */
-    /* CompleteClass */
-    override val frequency: Frequency = js.native
+    /* protected */ def hidden: Boolean = js.native
     
     /**
       * Whether the poll is disposed.
       */
     /* InferMemberOverrides */
     override val isDisposed: Boolean = js.native
-    
     /**
-      * The name of the poll.
+      * Whether the poll is disposed.
       */
-    /* CompleteClass */
-    override val name: String = js.native
+    @JSName("isDisposed")
+    def isDisposed_MPoll: Boolean = js.native
     
     /**
       * Refreshes the poll. Schedules `refreshed` tick if necessary.
@@ -119,7 +136,8 @@ object typesPollMod {
     /**
       * Indicates when the poll switches to standby.
       */
-    var standby: Standby | (js.Function0[Boolean | Standby]) = js.native
+    def standby: Standby | (js.Function0[Boolean | Standby]) = js.native
+    def standby_=(standby: Standby | (js.Function0[Boolean | Standby])): Unit = js.native
     
     /**
       * Starts the poll. Schedules `started` tick if necessary.
@@ -129,10 +147,10 @@ object typesPollMod {
     def start(): js.Promise[Unit] = js.native
     
     /**
-      * The poll state, which is the content of the currently-scheduled poll tick.
+      * The poll state, which is the content of the current poll tick.
       */
-    /* CompleteClass */
-    override val state: State[T, U, V] = js.native
+    @JSName("state")
+    def state_MPoll: State[T, U, V] = js.native
     
     /**
       * Stops the poll. Schedules `stopped` tick if necessary.
@@ -142,36 +160,21 @@ object typesPollMod {
     def stop(): js.Promise[Unit] = js.native
     
     /**
-      * A promise that resolves when the currently-scheduled tick completes.
-      *
-      * #### Notes
-      * Usually this will resolve after `state.interval` milliseconds from
-      * `state.timestamp`. It can resolve earlier if the user starts or refreshes the
-      * poll, etc.
-      */
-    /* CompleteClass */
-    override val tick: js.Promise[IPoll[T, U, V]] = js.native
-    /**
       * A promise that resolves when the poll next ticks.
       */
     @JSName("tick")
-    val tick_Poll: js.Promise[this.type] = js.native
+    def tick_MPoll: js.Promise[this.type] = js.native
     
-    /**
-      * A signal emitted when the poll state changes, i.e., a new tick is scheduled.
-      */
-    /* CompleteClass */
-    override val ticked: ISignal[IPoll[T, U, V], State[T, U, V]] = js.native
     /**
       * A signal emitted when the poll ticks and fires off a new request.
       */
     @JSName("ticked")
-    val ticked_Poll: ISignal[this.type, State[T, U, V]] = js.native
+    def ticked_MPoll: ISignal[this.type, State[T, U, V]] = js.native
   }
   object Poll {
     
     /**
-      * An interval value that indicates the poll should tick immediately.
+      * An interval value in ms that indicates the poll should tick immediately.
       */
     @JSImport("@lumino/polling/types/poll", "Poll.IMMEDIATE")
     @js.native
@@ -237,6 +240,12 @@ object typesPollMod {
       var frequency: js.UndefOr[PartialFrequency] = js.undefined
       
       /**
+        * The number of ticks to linger if poll switches to standby `when-hidden`.
+        * Defaults to `1`.
+        */
+      var linger: js.UndefOr[Double] = js.undefined
+      
+      /**
         * The name of the poll.
         * Defaults to `'unknown'`.
         */
@@ -273,6 +282,10 @@ object typesPollMod {
         inline def setFrequency(value: PartialFrequency): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
         
         inline def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
+        
+        inline def setLinger(value: Double): Self = StObject.set(x, "linger", value.asInstanceOf[js.Any])
+        
+        inline def setLingerUndefined: Self = StObject.set(x, "linger", js.undefined)
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         

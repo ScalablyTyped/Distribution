@@ -9,14 +9,14 @@ trait CompositesFactory extends StObject {
   /**
     * Creates a composite with simple car setup of bodies and constraints.
     * @method car
-    * @param {number} xx
-    * @param {number} yy
+    * @param {number} x
+    * @param {number} y
     * @param {number} width
     * @param {number} height
     * @param {number} wheelSize
     * @return {composite} A new composite car body
     */
-  def car(xx: Double, yy: Double, width: Double, height: Double, wheelSize: Double): CompositeType
+  def car(x: Double, y: Double, width: Double, height: Double, wheelSize: Double): CompositeType
   
   /**
     * Chains all bodies in the given composite together using constraints.
@@ -53,21 +53,21 @@ trait CompositesFactory extends StObject {
   /**
     * Creates a composite with a Newton's Cradle setup of bodies and constraints.
     * @method newtonsCradle
-    * @param {number} xx
-    * @param {number} yy
+    * @param {number} x
+    * @param {number} y
     * @param {number} number
     * @param {number} size
     * @param {number} length
     * @return {composite} A new composite newtonsCradle body
     */
-  def newtonsCradle(xx: Double, yy: Double, number: Double, size: Double, length: Double): CompositeType
+  def newtonsCradle(x: Double, y: Double, number: Double, size: Double, length: Double): CompositeType
   
   /**
     * Create a new composite containing bodies created in the callback in a pyramid arrangement.
     * This function uses the body's bounds to prevent overlaps.
     * @method pyramid
-    * @param {number} xx
-    * @param {number} yy
+    * @param {number} x
+    * @param {number} y
     * @param {number} columns
     * @param {number} rows
     * @param {number} columnGap
@@ -76,8 +76,8 @@ trait CompositesFactory extends StObject {
     * @return {composite} A new composite containing objects created in the callback
     */
   def pyramid(
-    xx: Double,
-    yy: Double,
+    x: Double,
+    y: Double,
     columns: Double,
     rows: Double,
     columnGap: Double,
@@ -88,8 +88,8 @@ trait CompositesFactory extends StObject {
   /**
     * Creates a simple soft body like object.
     * @method softBody
-    * @param {number} xx
-    * @param {number} yy
+    * @param {number} x
+    * @param {number} y
     * @param {number} columns
     * @param {number} rows
     * @param {number} columnGap
@@ -101,8 +101,8 @@ trait CompositesFactory extends StObject {
     * @return {composite} A new composite softBody
     */
   def softBody(
-    xx: Double,
-    yy: Double,
+    x: Double,
+    y: Double,
     columns: Double,
     rows: Double,
     columnGap: Double,
@@ -117,8 +117,8 @@ trait CompositesFactory extends StObject {
     * Create a new composite containing bodies created in the callback in a grid arrangement.
     * This function uses the body's bounds to prevent overlaps.
     * @method stack
-    * @param {number} xx
-    * @param {number} yy
+    * @param {number} x
+    * @param {number} y
     * @param {number} columns
     * @param {number} rows
     * @param {number} columnGap
@@ -127,8 +127,8 @@ trait CompositesFactory extends StObject {
     * @return {composite} A new composite containing objects created in the callback
     */
   def stack(
-    xx: Double,
-    yy: Double,
+    x: Double,
+    y: Double,
     columns: Double,
     rows: Double,
     columnGap: Double,

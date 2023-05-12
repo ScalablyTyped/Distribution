@@ -755,7 +755,11 @@ trait VictoryStyleObjecttypestr extends StObject {
   
   var captionSide: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
+  var caret: js.UndefOr[StringOrNumberOrCallback] = js.undefined
+  
   var caretColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
+  
+  var caretShape: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
   var clear: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
@@ -796,6 +800,22 @@ trait VictoryStyleObjecttypestr extends StObject {
   var columns: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
   var contain: js.UndefOr[StringOrNumberOrCallback] = js.undefined
+  
+  var containIntrinsicBlockSize: js.UndefOr[StringOrNumberOrCallback] = js.undefined
+  
+  var containIntrinsicHeight: js.UndefOr[StringOrNumberOrCallback] = js.undefined
+  
+  var containIntrinsicInlineSize: js.UndefOr[StringOrNumberOrCallback] = js.undefined
+  
+  var containIntrinsicSize: js.UndefOr[StringOrNumberOrCallback] = js.undefined
+  
+  var containIntrinsicWidth: js.UndefOr[StringOrNumberOrCallback] = js.undefined
+  
+  var container: js.UndefOr[StringOrNumberOrCallback] = js.undefined
+  
+  var containerName: js.UndefOr[StringOrNumberOrCallback] = js.undefined
+  
+  var containerType: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
   var content: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
@@ -857,6 +877,8 @@ trait VictoryStyleObjecttypestr extends StObject {
   
   var fontOpticalSizing: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
+  var fontPalette: js.UndefOr[StringOrNumberOrCallback] = js.undefined
+  
   var fontSize: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
   var fontSizeAdjust: js.UndefOr[StringOrNumberOrCallback] = js.undefined
@@ -876,6 +898,8 @@ trait VictoryStyleObjecttypestr extends StObject {
   var fontVariantCaps: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
   var fontVariantEastAsian: js.UndefOr[StringOrNumberOrCallback] = js.undefined
+  
+  var fontVariantEmoji: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
   var fontVariantLigatures: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
@@ -936,6 +960,8 @@ trait VictoryStyleObjecttypestr extends StObject {
   var height: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
   var hyphenateCharacter: js.UndefOr[StringOrNumberOrCallback] = js.undefined
+  
+  var hyphenateLimitChars: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
   var hyphens: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
@@ -1020,6 +1046,8 @@ trait VictoryStyleObjecttypestr extends StObject {
   var marginRight: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
   var marginTop: js.UndefOr[StringOrNumberOrCallback] = js.undefined
+  
+  var marginTrim: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
   var marker: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
@@ -1259,6 +1287,8 @@ trait VictoryStyleObjecttypestr extends StObject {
   
   var offsetPath: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
+  var offsetPosition: js.UndefOr[StringOrNumberOrCallback] = js.undefined
+  
   var offsetRotate: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
   var offsetRotation: js.UndefOr[StringOrNumberOrCallback] = js.undefined
@@ -1328,6 +1358,8 @@ trait VictoryStyleObjecttypestr extends StObject {
   var paddingRight: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
   var paddingTop: js.UndefOr[StringOrNumberOrCallback] = js.undefined
+  
+  var page: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
   var pageBreakAfter: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
@@ -1444,6 +1476,12 @@ trait VictoryStyleObjecttypestr extends StObject {
   var scrollSnapTypeX: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
   var scrollSnapTypeY: js.UndefOr[StringOrNumberOrCallback] = js.undefined
+  
+  var scrollTimeline: js.UndefOr[StringOrNumberOrCallback] = js.undefined
+  
+  var scrollTimelineAxis: js.UndefOr[StringOrNumberOrCallback] = js.undefined
+  
+  var scrollTimelineName: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
   var scrollbarColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
@@ -1566,6 +1604,8 @@ trait VictoryStyleObjecttypestr extends StObject {
   var vectorEffect: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
   var verticalAlign: js.UndefOr[StringOrNumberOrCallback] = js.undefined
+  
+  var viewTransitionName: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
   var visibility: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
@@ -2289,11 +2329,23 @@ object VictoryStyleObjecttypestr {
     
     inline def setCaptionSideUndefined: Self = StObject.set(x, "captionSide", js.undefined)
     
+    inline def setCaret(value: StringOrNumberOrCallback): Self = StObject.set(x, "caret", value.asInstanceOf[js.Any])
+    
     inline def setCaretColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "caretColor", value.asInstanceOf[js.Any])
     
     inline def setCaretColorFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "caretColor", js.Any.fromFunction1(value))
     
     inline def setCaretColorUndefined: Self = StObject.set(x, "caretColor", js.undefined)
+    
+    inline def setCaretFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "caret", js.Any.fromFunction1(value))
+    
+    inline def setCaretShape(value: StringOrNumberOrCallback): Self = StObject.set(x, "caretShape", value.asInstanceOf[js.Any])
+    
+    inline def setCaretShapeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "caretShape", js.Any.fromFunction1(value))
+    
+    inline def setCaretShapeUndefined: Self = StObject.set(x, "caretShape", js.undefined)
+    
+    inline def setCaretUndefined: Self = StObject.set(x, "caret", js.undefined)
     
     inline def setClear(value: StringOrNumberOrCallback): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     
@@ -2413,7 +2465,55 @@ object VictoryStyleObjecttypestr {
     
     inline def setContainFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "contain", js.Any.fromFunction1(value))
     
+    inline def setContainIntrinsicBlockSize(value: StringOrNumberOrCallback): Self = StObject.set(x, "containIntrinsicBlockSize", value.asInstanceOf[js.Any])
+    
+    inline def setContainIntrinsicBlockSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "containIntrinsicBlockSize", js.Any.fromFunction1(value))
+    
+    inline def setContainIntrinsicBlockSizeUndefined: Self = StObject.set(x, "containIntrinsicBlockSize", js.undefined)
+    
+    inline def setContainIntrinsicHeight(value: StringOrNumberOrCallback): Self = StObject.set(x, "containIntrinsicHeight", value.asInstanceOf[js.Any])
+    
+    inline def setContainIntrinsicHeightFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "containIntrinsicHeight", js.Any.fromFunction1(value))
+    
+    inline def setContainIntrinsicHeightUndefined: Self = StObject.set(x, "containIntrinsicHeight", js.undefined)
+    
+    inline def setContainIntrinsicInlineSize(value: StringOrNumberOrCallback): Self = StObject.set(x, "containIntrinsicInlineSize", value.asInstanceOf[js.Any])
+    
+    inline def setContainIntrinsicInlineSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "containIntrinsicInlineSize", js.Any.fromFunction1(value))
+    
+    inline def setContainIntrinsicInlineSizeUndefined: Self = StObject.set(x, "containIntrinsicInlineSize", js.undefined)
+    
+    inline def setContainIntrinsicSize(value: StringOrNumberOrCallback): Self = StObject.set(x, "containIntrinsicSize", value.asInstanceOf[js.Any])
+    
+    inline def setContainIntrinsicSizeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "containIntrinsicSize", js.Any.fromFunction1(value))
+    
+    inline def setContainIntrinsicSizeUndefined: Self = StObject.set(x, "containIntrinsicSize", js.undefined)
+    
+    inline def setContainIntrinsicWidth(value: StringOrNumberOrCallback): Self = StObject.set(x, "containIntrinsicWidth", value.asInstanceOf[js.Any])
+    
+    inline def setContainIntrinsicWidthFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "containIntrinsicWidth", js.Any.fromFunction1(value))
+    
+    inline def setContainIntrinsicWidthUndefined: Self = StObject.set(x, "containIntrinsicWidth", js.undefined)
+    
     inline def setContainUndefined: Self = StObject.set(x, "contain", js.undefined)
+    
+    inline def setContainer(value: StringOrNumberOrCallback): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "container", js.Any.fromFunction1(value))
+    
+    inline def setContainerName(value: StringOrNumberOrCallback): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+    
+    inline def setContainerNameFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "containerName", js.Any.fromFunction1(value))
+    
+    inline def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
+    
+    inline def setContainerType(value: StringOrNumberOrCallback): Self = StObject.set(x, "containerType", value.asInstanceOf[js.Any])
+    
+    inline def setContainerTypeFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "containerType", js.Any.fromFunction1(value))
+    
+    inline def setContainerTypeUndefined: Self = StObject.set(x, "containerType", js.undefined)
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     inline def setContent(value: StringOrNumberOrCallback): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
@@ -2593,6 +2693,12 @@ object VictoryStyleObjecttypestr {
     
     inline def setFontOpticalSizingUndefined: Self = StObject.set(x, "fontOpticalSizing", js.undefined)
     
+    inline def setFontPalette(value: StringOrNumberOrCallback): Self = StObject.set(x, "fontPalette", value.asInstanceOf[js.Any])
+    
+    inline def setFontPaletteFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "fontPalette", js.Any.fromFunction1(value))
+    
+    inline def setFontPaletteUndefined: Self = StObject.set(x, "fontPalette", js.undefined)
+    
     inline def setFontSize(value: StringOrNumberOrCallback): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     inline def setFontSizeAdjust(value: StringOrNumberOrCallback): Self = StObject.set(x, "fontSizeAdjust", value.asInstanceOf[js.Any])
@@ -2650,6 +2756,12 @@ object VictoryStyleObjecttypestr {
     inline def setFontVariantEastAsianFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "fontVariantEastAsian", js.Any.fromFunction1(value))
     
     inline def setFontVariantEastAsianUndefined: Self = StObject.set(x, "fontVariantEastAsian", js.undefined)
+    
+    inline def setFontVariantEmoji(value: StringOrNumberOrCallback): Self = StObject.set(x, "fontVariantEmoji", value.asInstanceOf[js.Any])
+    
+    inline def setFontVariantEmojiFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "fontVariantEmoji", js.Any.fromFunction1(value))
+    
+    inline def setFontVariantEmojiUndefined: Self = StObject.set(x, "fontVariantEmoji", js.undefined)
     
     inline def setFontVariantFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "fontVariant", js.Any.fromFunction1(value))
     
@@ -2834,6 +2946,12 @@ object VictoryStyleObjecttypestr {
     inline def setHyphenateCharacterFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "hyphenateCharacter", js.Any.fromFunction1(value))
     
     inline def setHyphenateCharacterUndefined: Self = StObject.set(x, "hyphenateCharacter", js.undefined)
+    
+    inline def setHyphenateLimitChars(value: StringOrNumberOrCallback): Self = StObject.set(x, "hyphenateLimitChars", value.asInstanceOf[js.Any])
+    
+    inline def setHyphenateLimitCharsFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "hyphenateLimitChars", js.Any.fromFunction1(value))
+    
+    inline def setHyphenateLimitCharsUndefined: Self = StObject.set(x, "hyphenateLimitChars", js.undefined)
     
     inline def setHyphens(value: StringOrNumberOrCallback): Self = StObject.set(x, "hyphens", value.asInstanceOf[js.Any])
     
@@ -3150,6 +3268,12 @@ object VictoryStyleObjecttypestr {
     inline def setMarginTopFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "marginTop", js.Any.fromFunction1(value))
     
     inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
+    
+    inline def setMarginTrim(value: StringOrNumberOrCallback): Self = StObject.set(x, "marginTrim", value.asInstanceOf[js.Any])
+    
+    inline def setMarginTrimFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "marginTrim", js.Any.fromFunction1(value))
+    
+    inline def setMarginTrimUndefined: Self = StObject.set(x, "marginTrim", js.undefined)
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
@@ -4555,6 +4679,12 @@ object VictoryStyleObjecttypestr {
     
     inline def setOffsetPathUndefined: Self = StObject.set(x, "offsetPath", js.undefined)
     
+    inline def setOffsetPosition(value: StringOrNumberOrCallback): Self = StObject.set(x, "offsetPosition", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetPositionFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "offsetPosition", js.Any.fromFunction1(value))
+    
+    inline def setOffsetPositionUndefined: Self = StObject.set(x, "offsetPosition", js.undefined)
+    
     inline def setOffsetRotate(value: StringOrNumberOrCallback): Self = StObject.set(x, "offsetRotate", value.asInstanceOf[js.Any])
     
     inline def setOffsetRotateFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "offsetRotate", js.Any.fromFunction1(value))
@@ -4767,6 +4897,8 @@ object VictoryStyleObjecttypestr {
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
+    inline def setPage(value: StringOrNumberOrCallback): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    
     inline def setPageBreakAfter(value: StringOrNumberOrCallback): Self = StObject.set(x, "pageBreakAfter", value.asInstanceOf[js.Any])
     
     inline def setPageBreakAfterFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "pageBreakAfter", js.Any.fromFunction1(value))
@@ -4784,6 +4916,10 @@ object VictoryStyleObjecttypestr {
     inline def setPageBreakInsideFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "pageBreakInside", js.Any.fromFunction1(value))
     
     inline def setPageBreakInsideUndefined: Self = StObject.set(x, "pageBreakInside", js.undefined)
+    
+    inline def setPageFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "page", js.Any.fromFunction1(value))
+    
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
     inline def setPaintOrder(value: StringOrNumberOrCallback): Self = StObject.set(x, "paintOrder", value.asInstanceOf[js.Any])
     
@@ -5114,6 +5250,24 @@ object VictoryStyleObjecttypestr {
     inline def setScrollSnapTypeYFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollSnapTypeY", js.Any.fromFunction1(value))
     
     inline def setScrollSnapTypeYUndefined: Self = StObject.set(x, "scrollSnapTypeY", js.undefined)
+    
+    inline def setScrollTimeline(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollTimeline", value.asInstanceOf[js.Any])
+    
+    inline def setScrollTimelineAxis(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollTimelineAxis", value.asInstanceOf[js.Any])
+    
+    inline def setScrollTimelineAxisFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollTimelineAxis", js.Any.fromFunction1(value))
+    
+    inline def setScrollTimelineAxisUndefined: Self = StObject.set(x, "scrollTimelineAxis", js.undefined)
+    
+    inline def setScrollTimelineFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollTimeline", js.Any.fromFunction1(value))
+    
+    inline def setScrollTimelineName(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollTimelineName", value.asInstanceOf[js.Any])
+    
+    inline def setScrollTimelineNameFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "scrollTimelineName", js.Any.fromFunction1(value))
+    
+    inline def setScrollTimelineNameUndefined: Self = StObject.set(x, "scrollTimelineName", js.undefined)
+    
+    inline def setScrollTimelineUndefined: Self = StObject.set(x, "scrollTimeline", js.undefined)
     
     inline def setScrollbarColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "scrollbarColor", value.asInstanceOf[js.Any])
     
@@ -5478,6 +5632,12 @@ object VictoryStyleObjecttypestr {
     inline def setVerticalAlignFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "verticalAlign", js.Any.fromFunction1(value))
     
     inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+    
+    inline def setViewTransitionName(value: StringOrNumberOrCallback): Self = StObject.set(x, "viewTransitionName", value.asInstanceOf[js.Any])
+    
+    inline def setViewTransitionNameFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "viewTransitionName", js.Any.fromFunction1(value))
+    
+    inline def setViewTransitionNameUndefined: Self = StObject.set(x, "viewTransitionName", js.undefined)
     
     inline def setVisibility(value: StringOrNumberOrCallback): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     

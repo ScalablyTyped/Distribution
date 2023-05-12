@@ -8,37 +8,55 @@ object libRestSupersimMod {
   
   @JSImport("twilio/lib/rest/Supersim", JSImport.Namespace)
   @js.native
-  open class ^ protected () extends Supersim {
-    /**
-      * Initialize supersim domain
-      *
-      * @param twilio - The twilio client
-      */
-    def this(twilio: typings.twilio.libRestTwilioMod.^) = this()
-  }
+  open class ^ () extends Supersim
   
   @js.native
   trait Supersim
-    extends typings.twilio.libBaseDomainMod.^ {
+    extends typings.twilio.libRestSupersimBaseMod.^ {
     
-    val esimProfiles: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EsimProfileListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.esimProfiles instead
+      */
+    def esimProfiles: Any = js.native
     
-    val fleets: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FleetListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.fleets instead
+      */
+    def fleets: Any = js.native
     
-    val ipCommands: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IpCommandListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.ipCommands instead
+      */
+    def ipCommands: Any = js.native
     
-    val networkAccessProfiles: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NetworkAccessProfileListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.networkAccessProfiles instead
+      */
+    def networkAccessProfiles: Any = js.native
     
-    val networks: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NetworkListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.networks instead
+      */
+    def networks: Any = js.native
     
-    val settingsUpdates: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SettingsUpdateListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.settingsUpdates instead
+      */
+    def settingsUpdates: Any = js.native
     
-    val sims: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.sims instead
+      */
+    def sims: Any = js.native
     
-    val smsCommands: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SmsCommandListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.smsCommands instead
+      */
+    def smsCommands: Any = js.native
     
-    val usageRecords: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UsageRecordListInstance */ Any = js.native
-    
-    val v1: typings.twilio.libRestSupersimV1Mod.^ = js.native
+    /**
+      * @deprecated - Use v1.usageRecords instead
+      */
+    def usageRecords: Any = js.native
   }
 }

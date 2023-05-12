@@ -1,5 +1,7 @@
 package typings.firebaseAuth
 
+import typings.firebaseAuth.distEsm2017SrcApiMod.RecaptchaClientType
+import typings.firebaseAuth.distEsm2017SrcApiMod.RecaptchaVersion
 import typings.firebaseAuth.distEsm2017SrcModelIdTokenMod.IdToken
 import typings.firebaseAuth.distEsm2017SrcModelIdTokenMod.IdTokenResponse
 import typings.firebaseAuth.distEsm2017SrcModelPublicTypesMod.Auth
@@ -31,8 +33,14 @@ object distEsm2017SrcApiAuthenticationEmailAndPasswordMod {
     extends StObject
        with GetOobCodeRequest {
     
+    var captchaResp: js.UndefOr[String] = js.undefined
+    
+    var clientType: js.UndefOr[RecaptchaClientType] = js.undefined
+    
     @JSName("email")
     var email_EmailSignInRequest: String
+    
+    var recaptchaVersion: js.UndefOr[RecaptchaVersion] = js.undefined
     
     var requestType: EMAIL_SIGNIN
   }
@@ -46,7 +54,19 @@ object distEsm2017SrcApiAuthenticationEmailAndPasswordMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: EmailSignInRequest] (val x: Self) extends AnyVal {
       
+      inline def setCaptchaResp(value: String): Self = StObject.set(x, "captchaResp", value.asInstanceOf[js.Any])
+      
+      inline def setCaptchaRespUndefined: Self = StObject.set(x, "captchaResp", js.undefined)
+      
+      inline def setClientType(value: RecaptchaClientType): Self = StObject.set(x, "clientType", value.asInstanceOf[js.Any])
+      
+      inline def setClientTypeUndefined: Self = StObject.set(x, "clientType", js.undefined)
+      
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      
+      inline def setRecaptchaVersion(value: RecaptchaVersion): Self = StObject.set(x, "recaptchaVersion", value.asInstanceOf[js.Any])
+      
+      inline def setRecaptchaVersionUndefined: Self = StObject.set(x, "recaptchaVersion", js.undefined)
       
       inline def setRequestType(value: EMAIL_SIGNIN): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
     }
@@ -158,8 +178,12 @@ object distEsm2017SrcApiAuthenticationEmailAndPasswordMod {
     
     var captchaResp: js.UndefOr[String] = js.undefined
     
+    var clientType: js.UndefOr[RecaptchaClientType] = js.undefined
+    
     @JSName("email")
     var email_PasswordResetRequest: String
+    
+    var recaptchaVersion: js.UndefOr[RecaptchaVersion] = js.undefined
     
     var requestType: PASSWORD_RESET
   }
@@ -177,7 +201,15 @@ object distEsm2017SrcApiAuthenticationEmailAndPasswordMod {
       
       inline def setCaptchaRespUndefined: Self = StObject.set(x, "captchaResp", js.undefined)
       
+      inline def setClientType(value: RecaptchaClientType): Self = StObject.set(x, "clientType", value.asInstanceOf[js.Any])
+      
+      inline def setClientTypeUndefined: Self = StObject.set(x, "clientType", js.undefined)
+      
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      
+      inline def setRecaptchaVersion(value: RecaptchaVersion): Self = StObject.set(x, "recaptchaVersion", value.asInstanceOf[js.Any])
+      
+      inline def setRecaptchaVersionUndefined: Self = StObject.set(x, "recaptchaVersion", js.undefined)
       
       inline def setRequestType(value: PASSWORD_RESET): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
     }
@@ -187,9 +219,15 @@ object distEsm2017SrcApiAuthenticationEmailAndPasswordMod {
   
   trait SignInWithPasswordRequest extends StObject {
     
+    var captchaResponse: js.UndefOr[String] = js.undefined
+    
+    var clientType: js.UndefOr[RecaptchaClientType] = js.undefined
+    
     var email: String
     
     var password: String
+    
+    var recaptchaVersion: js.UndefOr[RecaptchaVersion] = js.undefined
     
     var returnSecureToken: js.UndefOr[Boolean] = js.undefined
     
@@ -205,9 +243,21 @@ object distEsm2017SrcApiAuthenticationEmailAndPasswordMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: SignInWithPasswordRequest] (val x: Self) extends AnyVal {
       
+      inline def setCaptchaResponse(value: String): Self = StObject.set(x, "captchaResponse", value.asInstanceOf[js.Any])
+      
+      inline def setCaptchaResponseUndefined: Self = StObject.set(x, "captchaResponse", js.undefined)
+      
+      inline def setClientType(value: RecaptchaClientType): Self = StObject.set(x, "clientType", value.asInstanceOf[js.Any])
+      
+      inline def setClientTypeUndefined: Self = StObject.set(x, "clientType", js.undefined)
+      
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      
+      inline def setRecaptchaVersion(value: RecaptchaVersion): Self = StObject.set(x, "recaptchaVersion", value.asInstanceOf[js.Any])
+      
+      inline def setRecaptchaVersionUndefined: Self = StObject.set(x, "recaptchaVersion", js.undefined)
       
       inline def setReturnSecureToken(value: Boolean): Self = StObject.set(x, "returnSecureToken", value.asInstanceOf[js.Any])
       

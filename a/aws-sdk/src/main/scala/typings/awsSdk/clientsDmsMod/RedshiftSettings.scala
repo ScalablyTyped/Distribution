@@ -77,6 +77,11 @@ trait RedshiftSettings extends StObject {
   var LoadTimeout: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
+    * When true, lets Redshift migrate the boolean type as boolean. By default, Redshift migrates booleans as varchar(1).
+    */
+  var MapBooleanAsBoolean: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
     * The maximum size (in KB) of any .csv file used to load data on an S3 bucket and transfer data to Amazon Redshift. It defaults to 1048576KB (1 GB).
     */
   var MaxFileSize: js.UndefOr[IntegerOptional] = js.undefined
@@ -221,6 +226,10 @@ object RedshiftSettings {
     inline def setLoadTimeout(value: IntegerOptional): Self = StObject.set(x, "LoadTimeout", value.asInstanceOf[js.Any])
     
     inline def setLoadTimeoutUndefined: Self = StObject.set(x, "LoadTimeout", js.undefined)
+    
+    inline def setMapBooleanAsBoolean(value: BooleanOptional): Self = StObject.set(x, "MapBooleanAsBoolean", value.asInstanceOf[js.Any])
+    
+    inline def setMapBooleanAsBooleanUndefined: Self = StObject.set(x, "MapBooleanAsBoolean", js.undefined)
     
     inline def setMaxFileSize(value: IntegerOptional): Self = StObject.set(x, "MaxFileSize", value.asInstanceOf[js.Any])
     

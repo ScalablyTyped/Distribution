@@ -2,13 +2,15 @@ package typings.octokitOpenapiTypes.anon
 
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.LEFT
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.RIGHT
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.file_
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.line_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Inreplytoid extends StObject {
   
-  var _links: HtmlPullrequest
+  var _links: PullrequestSelf
   
   var author_association: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['author-association'] */ js.Any
   
@@ -89,7 +91,7 @@ trait Inreplytoid extends StObject {
     * @description The index of the original line in the diff to which the comment applies. This field is deprecated; use `original_line` instead.
     * @example 4
     */
-  var original_position: Double
+  var original_position: js.UndefOr[Double] = js.undefined
   
   /**
     * @description The first line of the range for a multi-line comment.
@@ -107,7 +109,7 @@ trait Inreplytoid extends StObject {
     * @description The line index in the diff to which the comment applies. This field is deprecated; use `line` instead.
     * @example 1
     */
-  var position: Double
+  var position: js.UndefOr[Double] = js.undefined
   
   /**
     * @description The ID of the pull request review to which the comment belongs.
@@ -147,6 +149,12 @@ trait Inreplytoid extends StObject {
   var start_side: js.UndefOr[LEFT | RIGHT | Null] = js.undefined
   
   /**
+    * @description The level at which the comment is targeted, can be a diff line or a file.
+    * @enum {string}
+    */
+  var subject_type: js.UndefOr[line_ | file_] = js.undefined
+  
+  /**
     * Format: date-time
     * @example 2011-04-14T16:00:49Z
     */
@@ -163,7 +171,7 @@ trait Inreplytoid extends StObject {
 object Inreplytoid {
   
   inline def apply(
-    _links: HtmlPullrequest,
+    _links: PullrequestSelf,
     author_association: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['author-association'] */ js.Any,
     body: String,
     commit_id: String,
@@ -173,15 +181,13 @@ object Inreplytoid {
     id: Double,
     node_id: String,
     original_commit_id: String,
-    original_position: Double,
     path: String,
-    position: Double,
     pull_request_url: String,
     updated_at: String,
     url: String,
     user: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
   ): Inreplytoid = {
-    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], author_association = author_association.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], commit_id = commit_id.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], diff_hunk = diff_hunk.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], original_commit_id = original_commit_id.asInstanceOf[js.Any], original_position = original_position.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], pull_request_url = pull_request_url.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], pull_request_review_id = null)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], author_association = author_association.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], commit_id = commit_id.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], diff_hunk = diff_hunk.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], original_commit_id = original_commit_id.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pull_request_url = pull_request_url.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], pull_request_review_id = null)
     __obj.asInstanceOf[Inreplytoid]
   }
   
@@ -230,6 +236,8 @@ object Inreplytoid {
     
     inline def setOriginal_position(value: Double): Self = StObject.set(x, "original_position", value.asInstanceOf[js.Any])
     
+    inline def setOriginal_positionUndefined: Self = StObject.set(x, "original_position", js.undefined)
+    
     inline def setOriginal_start_line(value: Double): Self = StObject.set(x, "original_start_line", value.asInstanceOf[js.Any])
     
     inline def setOriginal_start_lineNull: Self = StObject.set(x, "original_start_line", null)
@@ -239,6 +247,8 @@ object Inreplytoid {
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     inline def setPull_request_review_id(value: Double): Self = StObject.set(x, "pull_request_review_id", value.asInstanceOf[js.Any])
     
@@ -268,6 +278,10 @@ object Inreplytoid {
     
     inline def setStart_sideUndefined: Self = StObject.set(x, "start_side", js.undefined)
     
+    inline def setSubject_type(value: line_ | file_): Self = StObject.set(x, "subject_type", value.asInstanceOf[js.Any])
+    
+    inline def setSubject_typeUndefined: Self = StObject.set(x, "subject_type", js.undefined)
+    
     inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
@@ -276,6 +290,6 @@ object Inreplytoid {
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
     ): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: HtmlPullrequest): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: PullrequestSelf): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

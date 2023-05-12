@@ -8,11 +8,11 @@ trait ParametersQueryPagePermission extends StObject {
   
   var parameters: QueryPagePermission
   
-  var responses: `200Content497`
+  var responses: `200Content566`
 }
 object ParametersQueryPagePermission {
   
-  inline def apply(parameters: QueryPagePermission, responses: `200Content497`): ParametersQueryPagePermission = {
+  inline def apply(parameters: QueryPagePermission, responses: `200Content566`): ParametersQueryPagePermission = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryPagePermission]
   }
@@ -22,6 +22,6 @@ object ParametersQueryPagePermission {
     
     inline def setParameters(value: QueryPagePermission): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content497`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content566`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

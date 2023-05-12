@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__interface-peer-routing
 
-Typings are for version 1.0.1
+Typings are for version 1.1.1
 
 ## Library description:
 Peer Routing interface for libp2p

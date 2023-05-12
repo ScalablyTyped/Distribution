@@ -1,34 +1,35 @@
 package typings.countriesAndTimezones.anon
 
-import typings.countriesAndTimezones.countriesAndTimezonesStrings.GR
+import typings.countriesAndTimezones.countriesAndTimezonesStrings.EuropeSlashBrussels
+import typings.countriesAndTimezones.countriesAndTimezonesStrings.NL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `298` extends StObject {
   
-  var c: js.Array[GR]
+  var a: EuropeSlashBrussels
   
-  var d: typings.countriesAndTimezones.countriesAndTimezonesInts.`180`
+  var c: js.Array[NL]
   
-  var u: typings.countriesAndTimezones.countriesAndTimezonesInts.`120`
+  var r: typings.countriesAndTimezones.countriesAndTimezonesInts.`1`
 }
 object `298` {
   
-  inline def apply(c: js.Array[GR]): `298` = {
-    val __obj = js.Dynamic.literal(c = c.asInstanceOf[js.Any], d = 180, u = 120)
+  inline def apply(c: js.Array[NL]): `298` = {
+    val __obj = js.Dynamic.literal(a = "Europe/Brussels", c = c.asInstanceOf[js.Any], r = 1)
     __obj.asInstanceOf[`298`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `298`] (val x: Self) extends AnyVal {
     
-    inline def setC(value: js.Array[GR]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+    inline def setA(value: EuropeSlashBrussels): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
-    inline def setCVarargs(value: GR*): Self = StObject.set(x, "c", js.Array(value*))
+    inline def setC(value: js.Array[NL]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     
-    inline def setD(value: typings.countriesAndTimezones.countriesAndTimezonesInts.`180`): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+    inline def setCVarargs(value: NL*): Self = StObject.set(x, "c", js.Array(value*))
     
-    inline def setU(value: typings.countriesAndTimezones.countriesAndTimezonesInts.`120`): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
+    inline def setR(value: typings.countriesAndTimezones.countriesAndTimezonesInts.`1`): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
   }
 }

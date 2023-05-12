@@ -11,7 +11,7 @@ object libIsUUIDMod {
   val ^ : js.Any = js.native
   
   /**
-    * Check if the string is a UUID (version 3, 4 or 5).
+    * Check if the string is a UUID (version 1, 2, 3, 4 or 5).
     *
     * @param [version="all"] - UUID version
     */

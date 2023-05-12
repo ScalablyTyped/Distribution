@@ -1,6 +1,7 @@
 package typings.babylonjs
 
 import typings.babylonjs.enginesEngineMod.Engine
+import typings.babylonjs.miscObservableMod.Observable
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
@@ -33,6 +34,15 @@ object enginesEngineStoreMod {
     @js.native
     def Instances: js.Array[Engine] = js.native
     inline def Instances_=(x: js.Array[Engine]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Instances")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Notifies when an engine was disposed.
+      * Mainly used for static/cache cleanup
+      */
+    @JSImport("babylonjs/Engines/engineStore", "EngineStore.OnEnginesDisposedObservable")
+    @js.native
+    def OnEnginesDisposedObservable: Observable[Engine] = js.native
+    inline def OnEnginesDisposedObservable_=(x: Observable[Engine]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OnEnginesDisposedObservable")(x.asInstanceOf[js.Any])
     
     /**
       * Gets or sets a global variable indicating if fallback texture must be used when a texture cannot be loaded

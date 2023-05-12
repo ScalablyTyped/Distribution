@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** @internal */
 trait DisableOptions extends StObject {
   
   var except: js.UndefOr[js.Array[String | js.RegExp]] = js.undefined

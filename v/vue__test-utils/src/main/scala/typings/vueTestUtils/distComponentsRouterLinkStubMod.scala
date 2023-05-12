@@ -27,6 +27,7 @@ object distComponentsRouterLinkStubMod {
     String, 
     VNodeProps & AllowedComponentProps & ComponentCustomProps, 
     js.Object, 
-    CustomBoolean
+    CustomBoolean, 
+    js.Object
   ] = js.native
 }

@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class CallHierarchyIncomingCall protected ()
   extends typings.vscode.mod.CallHierarchyIncomingCall {
   /**
-    * Create a new call object.
-    *
-    * @param item The item making the call.
-    * @param fromRanges The ranges at which the calls appear.
-    */
+  		 * Create a new call object.
+  		 *
+  		 * @param item The item making the call.
+  		 * @param fromRanges The ranges at which the calls appear.
+  		 */
   def this(item: typings.vscode.mod.CallHierarchyItem, fromRanges: js.Array[typings.vscode.mod.Range]) = this()
 }

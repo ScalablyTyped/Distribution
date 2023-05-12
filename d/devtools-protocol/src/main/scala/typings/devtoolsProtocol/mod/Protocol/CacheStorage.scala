@@ -253,14 +253,20 @@ object CacheStorage {
   trait RequestCacheNamesRequest extends StObject {
     
     /**
+      * At least and at most one of securityOrigin, storageKey must be specified.
       * Security origin.
       */
-    var securityOrigin: String
+    var securityOrigin: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Storage key.
+      */
+    var storageKey: js.UndefOr[String] = js.undefined
   }
   object RequestCacheNamesRequest {
     
-    inline def apply(securityOrigin: String): RequestCacheNamesRequest = {
-      val __obj = js.Dynamic.literal(securityOrigin = securityOrigin.asInstanceOf[js.Any])
+    inline def apply(): RequestCacheNamesRequest = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestCacheNamesRequest]
     }
     
@@ -268,6 +274,12 @@ object CacheStorage {
     implicit open class MutableBuilder[Self <: RequestCacheNamesRequest] (val x: Self) extends AnyVal {
       
       inline def setSecurityOrigin(value: String): Self = StObject.set(x, "securityOrigin", value.asInstanceOf[js.Any])
+      
+      inline def setSecurityOriginUndefined: Self = StObject.set(x, "securityOrigin", js.undefined)
+      
+      inline def setStorageKey(value: String): Self = StObject.set(x, "storageKey", value.asInstanceOf[js.Any])
+      
+      inline def setStorageKeyUndefined: Self = StObject.set(x, "storageKey", js.undefined)
     }
   }
   

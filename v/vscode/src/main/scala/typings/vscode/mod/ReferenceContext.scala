@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReferenceContext extends StObject {
   
   /**
-    * Include the declaration of the current symbol.
-    */
+  		 * Include the declaration of the current symbol.
+  		 */
   val includeDeclaration: Boolean
 }
 object ReferenceContext {
